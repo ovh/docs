@@ -24,7 +24,7 @@ En ese caso, puede conectarse a su servidor a través del modo de rescate de OVH
 ## Requisitos
 
 - Tener un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/) o un [VPS](https://www.ovhcloud.com/es/vps/) en su cuenta de OVHcloud
-- Estar conectado a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
+- Estar conectado a su [área de cliente de OVHcloud](/links/manager)
 
 > [!primary]
 > Esta guía no se aplica a las instalaciones de **Windows** Server. Consulte nuestras guías "[Cómo cambiar la contraseña de administrador en un servidor dedicado Windows](/pages/bare_metal_cloud/dedicated_servers/rcw-changing-admin-password-on-windows)" y "[Cómo cambiar la contraseña de administrador en un VPS Windows](/pages/bare_metal_cloud/virtual_private_servers/resetting_a_windows_password)".
@@ -85,7 +85,7 @@ Retype new password:
 passwd: password updated successfully
 ```
 
-Recuerde utilizar el modo de arranque **normal** del servidor al reiniciarlo desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+Recuerde utilizar el modo de arranque **normal** del servidor al reiniciarlo desde el [área de cliente de OVHcloud](/links/manager).
 
 Consulte la [guía del modo de rescate](#step1) si es necesario.
 

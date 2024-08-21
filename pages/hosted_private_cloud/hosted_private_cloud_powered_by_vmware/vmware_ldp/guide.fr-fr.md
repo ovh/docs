@@ -6,7 +6,7 @@ updated: 2024-06-28
 
 > [!primary]
 >
-> VCD on OVHcloud est actuellement en phase Bêta. Ce guide peut donc être incomplet. Notre équipe reste disponible sur notre canal Discord dédié : <https://discord.gg/ovhcloud>.
+> Cette fonctionnalité est actuellement en phase Bêta. Ce guide peut donc être incomplet. Notre équipe reste disponible sur notre canal Discord dédié : <https://discord.gg/ovhcloud>.
 >
 
 ## Objectif
@@ -42,7 +42,7 @@ Pour plus d'informations concernant les caractéristiques techniques de Logs Dat
 
 ### Les logs et labels
 
-#### Les *kinds* dispnibles
+#### Les *kinds* disponibles
 
 Un *kind* est un « type » de logs que votre produit génère.
 

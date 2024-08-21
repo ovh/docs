@@ -36,7 +36,7 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie
 
 Die angezeigte Tabelle stellt die DNS-Zone Ihrer Domain dar. Dort finden Sie die Liste der darin enthaltenen DNS-Einträge. Rechts in der Tabelle finden Sie mehrere Schaltflächen, mit denen Sie Aktionen in Ihrer DNS-Zone durchführen können. 
 
-![DNS history tool](images/dns-zone-history.png){.thumbnail}
+![DNS history tool](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-history.png){.thumbnail}
 
 Klicken Sie auf `Den Verlauf meiner DNS-Zone einsehen`{.action}. 
 
@@ -59,11 +59,11 @@ Auf der neu geöffneten Seite wird eine Tabelle mit dem Versionsverlauf Ihrer DN
 
 Um die gewünschte DNS-Zone anzuzeigen, geben Sie die Zeile in der Tabelle an und klicken Sie auf das Symbol in der Spalte `Anzeigen`{.action}.
 
-![DNS Zone anzeigen](images/visualize-dns-eyes.png){.thumbnail}
+![DNS Zone anzeigen](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/visualize-dns-eyes.png){.thumbnail}
 
 Die Einträge der ausgewählten DNS-Zone werden angezeigt.
 
-![Details einer DNS-Zone](images/details-dns-zone.png){.thumbnail}
+![Details einer DNS-Zone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/details-dns-zone.png){.thumbnail}
 
 Klicken Sie auf `Schließen`{.action}, um zur Hauptseite „History der DNS-Zone“ zurückzukehren.
 
@@ -71,7 +71,7 @@ Klicken Sie auf `Schließen`{.action}, um zur Hauptseite „History der DNS-Zone
 
 Um die gewünschte DNS-Zone herunterzuladen, identifizieren Sie die entsprechende Zeile in der Tabelle und klicken Sie dann auf das Symbol in der Spalte `Herunterladen`{.action}.
 
-![DNS-Zone herunterladen](images/download-dns-zone.png){.thumbnail}
+![DNS-Zone herunterladen](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/download-dns-zone.png){.thumbnail}
 
 Die DNS Zone wird im Format *.txt* heruntergeladen.
 
@@ -79,11 +79,11 @@ Die DNS Zone wird im Format *.txt* heruntergeladen.
 
 Wenn Sie Ihre aktuelle DNS-Zone durch eine andere ersetzen möchten, stellen Sie einfach eine ältere DNS-Zone wieder her. Suchen Sie in der Tabelle mit dem Verlauf Ihrer DNS-Zonen die Zeile für die DNS-Zone, die Sie wiederherstellen möchten (überprüfen Sie bitte das Datum links in der Zeile), und klicken Sie dann auf das Symbol in der Spalte `Wiederherstellen`{.action}.
 
-![DNS-Zone wiederherstellen](images/restore-dns-zone.png){.thumbnail}
+![DNS-Zone wiederherstellen](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/restore-dns-zone.png){.thumbnail}
 
 Das folgende Fenster wird angezeigt.
 
-![Bestätigung DNS-Zone wiederherstellen](images/confirmation-restore-dns-zone.png){.thumbnail}
+![Bestätigung DNS-Zone wiederherstellen](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/confirmation-restore-dns-zone.png){.thumbnail}
 
 Stellen Sie sicher, dass das Datum in der Nachricht mit der DNS-Zone übereinstimmt, die Sie wiederherstellen möchten. Wie das gelbe Banner zeigt, wird die aktuelle DNS-Zone (die in der Liste der DNS-Zonenversionen ganz oben angezeigt wird) gelöscht und durch die DNS-Zone ersetzt, die Sie wiederherstellen.
 
@@ -98,7 +98,7 @@ Klicken Sie auf `Wiederherstellen`{.action}, um die Wiederherstellung zu bestät
 
 Sie können den Inhalt zweier DNS-Zonen vergleichen. Suchen Sie in der Tabelle mit der History Ihrer DNS-Zone die beiden Zeilen, die den beiden DNS-Zonen entsprechen, die Sie vergleichen möchten (überprüfen Sie das Datum links neben jeder Zeile), und wählen Sie diese aus. Um diese beiden Versionen der DNS-Zone zu vergleichen, klicken Sie oben links auf `Versionen vergleichen`{.action}.
 
-![Zwei DNS-Zonen vergleichen](images/compare-two-dns-zone.png){.thumbnail}
+![Zwei DNS-Zonen vergleichen](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/compare-two-dns-zone.png){.thumbnail}
 
 Es wird eine neue Seite mit dem Inhalt der beiden DNS-Zonen angezeigt. Über jeder Version wird das zugehörige Datum angezeigt. Standardmäßig befindet sich die neueste Version der DNS-Zone links und die älteste rechts. Eine Farbcodierung hilft Ihnen dabei, Unterschiede im Inhalt zu erkennen.<br>
 Auf der linken Seite wurde der rot markierte Inhalt in der neueren Version geändert oder entfernt.<br>
@@ -106,7 +106,7 @@ Auf der rechten Seite wurde der grün hervorgehobene Inhalt im Vergleich zur äl
 
 Sie können auch die Datumsangaben der Versionen, die Sie vergleichen möchten, mithilfe der beiden Dropdownlisten aktualisieren.
 
-![Details zum Vergleich zweier DNS-Zonen](images/compare-dns-zone-details.png){.thumbnail}
+![Details zum Vergleich zweier DNS-Zonen](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/compare-dns-zone-details.png){.thumbnail}
 
 Mit dieser Anleitung können Sie nun zwei DNS-Zonen vergleichen sowie eine DNS-Zone anzeigen, herunterladen, wiederherstellen und löschen.
 

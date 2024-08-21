@@ -169,15 +169,15 @@ Guarde el cambio.
 
 En la sección `Alojamientos`{.action} del área de cliente, acceda a la pestaña `Bases de datos`{.action} que aparece a la derecha de la pantalla.
 
-![database-password-step1](images/tab.png){.thumbnail}
+![database-password-step1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
 
 Haga clic en los tres puntos situados al final de la línea correspondiente a la base de datos del sitio web y seleccione `Cambiar la contraseña`{.action}.
 
-![database-password-step2](images/change-password.png){.thumbnail}
+![database-password-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password.png){.thumbnail}
 
 Se abrirá una ventana en la que deberá introducir la nueva contraseña de la base de datos (definida en el [Etapa 3](#step3)). Confírmela y haga clic en `Aceptar`{.action}.
 
-![database-password-step3](images/change-password-window.png){.thumbnail}
+![database-password-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password-window.png){.thumbnail}
 
 ## Más información <a name="go-further"></a>
 

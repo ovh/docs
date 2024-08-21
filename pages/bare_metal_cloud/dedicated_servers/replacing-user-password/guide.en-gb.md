@@ -21,7 +21,7 @@ To recover access to a server that you log in to with an SSH key, refer to our g
 ## Requirements
 
 - A [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) or a [VPS](https://www.ovhcloud.com/en-gb/vps/) with a Linux-based OS in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!primary]
 > This guide is not applicable for **Windows** server installations. Please refer to our guides on [How to change the admin password on a Windows dedicated server](/pages/bare_metal_cloud/dedicated_servers/rcw-changing-admin-password-on-windows) and [How to change the admin password on a Windows VPS](/pages/bare_metal_cloud/virtual_private_servers/resetting_a_windows_password).
@@ -80,7 +80,7 @@ Retype new password:
 passwd: password updated successfully
 ```
 
-Remember to use the regular boot mode of your server when restarting it in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+Remember to use the regular boot mode of your server when restarting it in your [OVHcloud Control Panel](/links/manager).
 
 Refer to the corresponding [rescue mode guide](#step1) if necessary.
 
@@ -97,4 +97,4 @@ You have now access to the server with your new password.
 
 [How to configure user accounts and root access on a server](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

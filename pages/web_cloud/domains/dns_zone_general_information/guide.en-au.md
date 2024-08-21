@@ -48,7 +48,7 @@ Refer to our guide on [DNS records](/pages/web_cloud/domains/dns_zone_records) f
 
 To better represent what a DNS zone is, below is an example of a DNS zone hosted at OVHcloud for the domain name *domain.tld*. This is configured on the *dnsXX.ovh.ca* and *nsXX.ovh.ca* OVHcloud DNS servers:
 
-![DNS zone dashboard](images/dns-zone-dashboard-ca.png){.thumbnail}
+![DNS zone dashboard](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-dashboard-ca.png){.thumbnail}
 
 In comparison, here is its equivalent in text mode:
 

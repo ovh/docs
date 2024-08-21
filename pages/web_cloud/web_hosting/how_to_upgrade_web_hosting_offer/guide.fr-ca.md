@@ -44,7 +44,7 @@ Pour modifier votre abonnement, rendez-vous dans votre [espace client OVHcloud](
 
 Dans le cadre `Abonnement`, cliquez sur le bouton `...`{.action} à droite de `Offre` puis sur `Changer d'offre`{.action}.
 
-![change_plan](images/pro-change-plan.png){.thumbnail}
+![change_plan](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/pro-change-plan.png){.thumbnail}
 
 Sélectionnez ensuite votre nouvel abonnement, ainsi que sa durée. Validez les contrats correspondants puis cliquez sur `Envoyer`{.action}.
 
@@ -64,13 +64,13 @@ Si l'option **Boost** convient à votre besoin, vous trouverez ci-dessous les in
 > **Activer l'option Boost**
 >>
 >> Pour activer l'option Boost, connectez-vous à votre [espace client OVHcloud](/links/manager) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Hébergements`{.action} puis sélectionnez l'hébergement web concerné. Dans l'encadré `Informations générales` de la page qui s'affiche, cliquez sur le bouton `...`{.action} à droite de `Boost` puis sur `Booster mon offre`{.action}.<br><br>
->> ![boost](images/boost-my-hosting-plan.png){.thumbnail}<br>
+>> ![boost](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/boost-my-hosting-plan.png){.thumbnail}<br>
 >>
 > **Désactiver l'option Boost**
 >>
 >> Pour désactiver l'option Boost, connectez-vous à votre [espace client OVHcloud](/links/manager) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Hébergements`{.action} puis sélectionnez l'hébergement web concerné. Sur la page qui s'affiche, rendez-vous dans l'onglet `Plus` puis cliquez sur `Booster mon offre`{.action}.<br>
 >> Le tableau d'utilisation de l'option Boost s'affiche, cliquez sur `Désactiver l'offre boost`{.action}.<br><br>
->> ![boost](images/deactivate-the-boost-plan.png){.thumbnail}<br>
+>> ![boost](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/boost-my-hosting-plan/deactivate-the-boost-plan.png){.thumbnail}<br>
 
 #### La facturation en cas de changement d'offre <a name="billing"></a>
 

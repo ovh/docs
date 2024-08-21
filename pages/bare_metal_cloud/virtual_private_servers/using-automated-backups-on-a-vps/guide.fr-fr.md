@@ -18,13 +18,13 @@ Cette option vous offre un moyen pratique de disposer fréquemment de sauvegarde
 
 ## Prérequis
 
-- Être connecté à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être connecté à [l'espace client OVHcloud](/links/manager)
 - Un VPS OVHcloud déjà configuré
 - Un accès administrateur (sudo) en SSH à votre VPS (facultatif)
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveur privés virtuels`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveur privés virtuels`{.action}.
 
 ### Étape 1 : Activer l’option de sauvegarde automatisée
 

@@ -37,7 +37,7 @@ Diese Anleitung erklärt, wie Sie einen OpenStack-Token anfordern, für Aktionen
 
 ## Voraussetzungen 
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - [Vorbereitung der Umgebung für die Verwendung der OpenStack-API](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api).
 
 > [!primary]
@@ -62,7 +62,7 @@ Windows-Benutzer können dieser Anleitung folgen, um die Umgebungsvariablen zu e
 
 ### Schritt 1: OpenRC-Datei herunterladen und sourcen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus.
 
 Klicken Sie auf `Users & Roles`{.action} im Bereich `Project Management` und dann auf `...`{.action} rechts neben Ihrem OpenStack-Benutzer.<br>
 Laden Sie die OpenRC-Datei dieses Benutzers herunter und geben Sie die Region an, in der Sie Aktionen durchführen möchten.

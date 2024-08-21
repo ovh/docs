@@ -135,7 +135,7 @@ Danach muss der Server mit dem regulären Betriebssystem neu gestartet werden.
 
 Wechseln Sie wieder zum Fenster der KVM-Sitzung und wählen Sie die Herunterfahren-Option `Neustart`{.action} über den Windows-Button unten links aus. 
 
-![reboot](/pages/assets/screens/control_panel/bare-metal-dedicated/cp_dedicated_restart.png){.thumbnail}
+![reboot](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/dedicated-servers/general-information/cp_dedicated_restart.png){.thumbnail}
 
 ### Schritt 4 - Ein neues Passwort einrichten (IPMI) <a name="step4"></a>
 

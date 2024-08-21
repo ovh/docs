@@ -37,7 +37,7 @@ To check the logs for your Web Cloud Databases solution in real time, perform th
 4. Select the Web Cloud Databases solution concerned.
 5. On the page that appears, click on the `Logs`{.action} tab.
 
-![Web Cloud Databases](images/tab-with-logs.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/logs/tab-with-logs.png){.thumbnail}
 
 This integrated console provides you with real-time logs for your Web Cloud Databases solution.
 
@@ -73,7 +73,7 @@ To retrieve the SFTP connection information for your Web Cloud Databases solutio
 > If you do not know the `Server password`, click the `...`{.action} button on the right to modify it.
 >
 
-![Web Cloud Databases](images/sftp-login.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/sftp-login.png){.thumbnail}
 
 Once you have retrieved the SFTP login credentials, log in via an FTP client (FileZilla, Cyberduck, WinSCP, etc.).
 
@@ -81,7 +81,7 @@ For FileZilla, go to the top left in the `File`{.action} menu, then click `Site 
 
 Click `New site`{.action}, then enter the settings listed above.
 
-![Web Cloud Databases](images/site-manager.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/other/web-tools/filezilla/site-manager.png){.thumbnail}
 
 The log file `stdout.log` is located at the root.
 

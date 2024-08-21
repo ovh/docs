@@ -1,7 +1,7 @@
 ---
 title: 'Konfiguracja sieci na ESXi w ofercie High Grade & SCALE'
 excerpt: 'Dowiedz się, jak skonfigurować sieć na ESXi w ofercie High Grade & SCALE'
-updated: 2022-05-09
+updated: 2024-07-08
 ---
 
 > [!primary]
@@ -14,6 +14,8 @@ W ofercie High Grade & SCALE nie jest możliwe działanie adresów Additional IP
 
 > [!primary]
 >
+> Do końca 2024 roku funkcja ta zostanie dostarczona dla wszystkich gam High Grade, SCALE & ADVANCE.
+>
 > Do tej pory dokumentacja obejmuje jedynie rozwiązanie dostępne w sieci vRack.
 >
 
@@ -25,7 +27,7 @@ W ofercie High Grade & SCALE nie jest możliwe działanie adresów Additional IP
 * Przygotowanie Twojego zakresu wybranych prywatnych adresów IP
 * Posiadanie [serwera dedykowanego kompatybilnego z vRack](https://www.ovhcloud.com/pl/bare-metal/){.external}.
 * Aktywacja usługi [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external}
-* Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+* Dostęp do [panelu klienta OVHcloud](/links/manager){.external}.
 
 ## W praktyce
 
@@ -44,7 +46,7 @@ W ofercie High Grade & SCALE nie jest możliwe działanie adresów Additional IP
 
 ### Additional IP w sieci vRack
 
-Po pierwsze, dodaj blok publicznych adresów IP do sieci vRack. W tym celu przejdź do sekcji `Bare Metal Cloud`{.action} w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i otwórz menu `vRack`{.action}.
+Po pierwsze, dodaj blok publicznych adresów IP do sieci vRack. W tym celu przejdź do sekcji `Bare Metal Cloud`{.action} w [Panelu klienta OVHcloud](/links/manager){.external} i otwórz menu `vRack`{.action}.
 
 Wybierz z listy usługę vRack, aby wyświetlić listę usług, które chcesz zamówić. Kliknij publiczny blok adresów IP, który chcesz dodać do sieci vRack, następnie kliknij przycisk `Dodaj`{.action}.
 
@@ -61,7 +63,7 @@ Pierwszy vSwitch istnieje, ale zawiera tylko jeden interfejs `vmnic2`.
 
 > [!primary]
 >
-> Sprawdź, czy Twoja konfiguracja jest podobna. Informacje na temat publicznych lub prywatnych interfejsów MAC są dostępne w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) lub poprzez API OVHcloud.
+> Sprawdź, czy Twoja konfiguracja jest podobna. Informacje na temat publicznych lub prywatnych interfejsów MAC są dostępne w [Panelu klienta OVHcloud](/links/manager) lub poprzez API OVHcloud.
 >
 
 #### Wyjaśnienia

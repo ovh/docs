@@ -242,7 +242,7 @@ openstack_compute_instance_v2.test_terraform_instance: Creation complete after 2
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 ```
 
-Now, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), go to the `Public Cloud`{.action} section and click on `Instances`{.action}.
+Now, log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and click on `Instances`{.action}.
 As you can see, your compute instance named "terraform_instance" is creating.
 
 > [!primary]
@@ -589,7 +589,7 @@ Nevertheless, two conditions apply:
 - You must have created a Public Cloud project during the last 3 months.
 
 If one of these business rules is not met, you will receive the following error: `"Found eligibility issues: challengePaymentMethod"`.<br>
-In that case, the only solution is to use the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) to create a project.<br>
+In that case, the only solution is to use the [OVHcloud Control Panel](/links/manager) to create a project.<br>
 You will then be challenged to validate that you are indeed the owner of the payment means used on your account (this challenge depends on the payment means and other parameters).
 
 Please understand these rules and extra human steps have been put in place as an extra safety for customers that might have leaked their OVHcloud credentials.<br>
@@ -633,4 +633,4 @@ terraform destroy
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

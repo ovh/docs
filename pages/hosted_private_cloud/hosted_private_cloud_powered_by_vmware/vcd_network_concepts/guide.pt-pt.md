@@ -219,7 +219,7 @@ VCD Edge Gateway allows an organization vDC network to route connectivity to int
 
 - **VCD supports**: `IPv4 and IPv6`{action} Edge Gateways.
 
-### ![VCD Network Edge Overview Gif](images/vcd_network_edge_overview.gif)
+![VCD Network Edge Overview Gif](images/vcd_network_edge_overview.gif)
 
 #### DHCP mode (optional)
 

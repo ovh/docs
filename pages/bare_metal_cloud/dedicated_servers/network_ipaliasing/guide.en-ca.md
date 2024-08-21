@@ -559,4 +559,4 @@ It is necessary to provide:
 
 [Configuring a network bridge](/pages/bare_metal_cloud/dedicated_servers/network_bridging)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

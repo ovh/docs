@@ -126,4 +126,4 @@ To verify that your IP address is authorised, use the following call:
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

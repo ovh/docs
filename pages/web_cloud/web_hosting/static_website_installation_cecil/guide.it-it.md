@@ -71,7 +71,7 @@ Inserisci gli elementi richiesti:
 - l'URL del tuo sito Web (ad esempio, `https://mywebsite.ovh`)
 - una descrizione del tuo sito Web
 
-![Installazione Cecil](images/static_website_installation_cecil01.png){.thumbnail}
+![Installazione Cecil](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil01.png){.thumbnail}
 
 Una volta inseriti questi elementi, è necessario implementare il sito digitando questo comando:
 
@@ -81,11 +81,11 @@ php cecil.phar build
 
 Visualizzando il contenuto della directory, vedrete la presenza di una directory `_site`. La directory conterrà tutti i file HTML e gli assets:
 
-![Installazione Cecil](images/static_website_installation_cecil02.png){.thumbnail}
+![Installazione Cecil](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil02.png){.thumbnail}
 
 Puoi visualizzare il risultato accedendo al tuo dominio:
 
-![Installazione Cecil](images/static_website_installation_cecil03.png){.thumbnail}
+![Installazione Cecil](/pages/assets/screens/other/browsers/web-pages/static_website_installation_cecil03.png){.thumbnail}
 
 #### Configurazione del puntamento del dominio o sottodominio
 
@@ -103,7 +103,7 @@ nano config.yml
 
 Sostituisci le informazioni predefinite con le tue e salva il file.
 
-![File di configurazione YAML](images/static_website_installation_cecil04.png){.thumbnail}
+![File di configurazione YAML](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil04.png){.thumbnail}
 
 ### Crea una nuova pagina
 
@@ -129,7 +129,7 @@ Alla radice della directory `/pages` viene creato un file `mypage.md`.
 
 Sostituisci `mypage` con il nome della tua pagina.
 
-![Installazione Cecil](images/static_website_installation_cecil05.png){.thumbnail}
+![Installazione Cecil](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil05.png){.thumbnail}
 
 #### Genera i file statici
 
@@ -141,11 +141,11 @@ php cecil.phar build
 
 Il tuo file si trova nella directory `_site/mypage/`:
 
-![Installazione Cecil](images/static_website_installation_cecil06.png){.thumbnail}
+![Installazione Cecil](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil06.png){.thumbnail}
 
 Lo si può visualizzare sul server digitando l'URL del sito, seguito da `/mypage/`:
 
-![Risultato browser](images/static_website_installation_cecil07.png){.thumbnail}
+![Risultato browser](/pages/assets/screens/other/browsers/web-pages/static_website_installation_cecil07.png){.thumbnail}
 
 ### Personalizza i file del tuo sito
 
@@ -162,11 +162,11 @@ Modifica il file `mypage.md` nella directory `pages` digitando questo comando se
 
 Sostituisci `mypage` con il nome della tua pagina.
 
-![Modifica del file in GNU nano](images/static_website_installation_cecil08.png){.thumbnail}
+![Modifica del file in GNU nano](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil08.png){.thumbnail}
 
 Aggiungi alcune linee rispettando la sintassi _Markdown_:
 
-![Aggiunta di contenuto nel file](images/static_website_installation_cecil09.png){.thumbnail}
+![Aggiunta di contenuto nel file](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil09.png){.thumbnail}
 
 Elimina i file nella cache con il comando seguente:
 
@@ -182,17 +182,17 @@ php cecil.phar build
 
 torna alla pagina per visualizzare il risultato:
 
-![Pagina aggiornata](images/static_website_installation_cecil10.png){.thumbnail}
+![Pagina aggiornata](/pages/assets/screens/other/browsers/web-pages/static_website_installation_cecil10.png){.thumbnail}
 
 #### Modifica la tua postazione di lavoro
 
 Se preferisci utilizzare il tuo editore di codice abituale, collegati con un client FTP al tuo server per recuperare i file sul tuo computer:
 
-![Scarica con FileZilla](images/cecil-folder.png){.thumbnail}
+![Scarica con FileZilla](/pages/assets/screens/other/web-tools/filezilla/cecil-folder.png){.thumbnail}
 
 Ora puoi modificare i file nel tuo I.D.E.:
 
-![Visualizzazione in Visual Studio Code](images/static_website_installation_cecil12.png){.thumbnail}
+![Visualizzazione in Visual Studio Code](/pages/assets/screens/other/web-tools/vscode/static_website_installation_cecil12.png){.thumbnail}
 
 È sufficiente inviare i file modificati o i nuovi file sul tuo server e di *rebuilder* per avere online le tue pagine.
 

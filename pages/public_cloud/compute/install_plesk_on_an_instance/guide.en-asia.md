@@ -93,4 +93,4 @@ Once you have added the new key, you can view the type of licence installed at t
 
 [Official Plesk documentation](https://docs.plesk.com/en-US/onyx/){.external}.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

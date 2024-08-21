@@ -1,7 +1,7 @@
 ---
 title: 'Configurar IPv6 em servidores dedicados'
 excerpt: 'Saiba como configurar endereços IPv6 na nossa infraestrutura'
-updated: 2024-03-05
+updated: 2024-07-15
 ---
 
 > [!primary]
@@ -57,7 +57,7 @@ O primeiro passo consiste em recuperar a gateway (gateway) IPv6 associada ao seu
 
 #### Através da Área de Cliente <a name="viacontrolpanel"></a>
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na secção 'Servidor dedicado`{.action}.
+Aceda à [Área de Cliente OVHcloud](/links/manager), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na secção 'Servidor dedicado`{.action}.
 
 A gateway IPv6 associada ao seu servidor é apresentada na secção "Rede" do separador "Informações gerais" {.action}. Depois de copiar, prossiga para o passo 2 « [Aplicar configuração IPv6](#applyipv6) ».
 

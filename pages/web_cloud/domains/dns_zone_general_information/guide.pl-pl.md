@@ -52,7 +52,7 @@ Więcej informacji na temat różnych typów rekordów opisanych powyżej znajdz
 
 Aby lepiej zrozumieć, czym jest strefa DNS, zapoznaj się z przykładem strefy DNS hostowanej w OVHcloud dla domeny *domain.tld*. Jest ona skonfigurowana na serwerach DNS *dns200.anycast.me* i *ns200.anycast.me* OVHcloud:
 
-![DNS zone dashboard](images/dns-zone-dashboard.png){.thumbnail}
+![DNS zone dashboard](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-dashboard.png){.thumbnail}
 
 Poniżej znajdziesz jego odpowiednik w "trybie tekstowym":
 

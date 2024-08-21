@@ -1,7 +1,7 @@
 ---
 title: AI Training - Tutorial - Turn a video into a 3D model using NVIDIA Neuralangelo
 excerpt: How to use AI Training to run NVIDIA Neuralangelo research project to extract a 3D model from a video
-updated: 2024-07-02
+updated: 2024-07-03
 ---
 
 ## Objective
@@ -93,13 +93,15 @@ gdown 1yWoZ4Hk3FgmV3pd34ZbW7jEqgqyJgzHy -O neuralangelo/input/
 To be able to share data between the AI Training jobs we will run as well as providing code and data to our workloads, we need to configure an AI datastore pointing to an S3 endpoint.
 
 ```shell
-ovhai datastore add NEURALANGELO <s3_endpoint_url> <s3_region> <s3_access_key> --store-credentials-locally
+ovhai datastore add s3 NEURALANGELO <s3_endpoint_url> <s3_region> <s3_access_key> --store-credentials-locally
 ```
 
 > [!primary]
 > Data store information (endpoint, region, access_key and secret key) can refer to an OVHcloud S3 bucket or any other provider.
 >
 > Using `--store-credentials-locally` is needed here to be able to push/pull data from a bucket, using ovhai CLI in the next steps.
+>
+> See [this page](/pages/public_cloud/ai_machine_learning/gi_08_s3_compliance) for help about S3 usage.
 >
 
 ### Prepare model input using COLMAP

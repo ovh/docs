@@ -35,7 +35,7 @@ When the address **sender@otherdomain.ovh** sends an email to **contact@mydomain
 - **(1)** Query the DNS zone of the domain name **mydomain.ovh** and read the **MX** records.
 - **(2)** Forward the email to the URL of the **MX** record it has found.
 
-![email](/pages/assets/schemas/dns/mx-dns-resolution-apac-ca.png){.thumbnail}
+![email](/pages/assets/schemas/emails/mx-dns-resolution-apac-ca.png){.thumbnail}
 
 The email will be sent to the target **mx0.mail.ovh.ca**, which is preceded by a value of **0**. This value is called *priority*. The lowest value is queried first and the highest value is queried last. This means that the presence of several records makes it possible to compensate for an absence of response from the MX record having the lowest priority.
 

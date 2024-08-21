@@ -64,7 +64,7 @@ Im Tab `Allgemeine Informationen`{.action} finden Sie den Regler `Transfer-Schut
 >
 > Wenn der Button `Transfer-Schutz` nicht vorhanden ist, bedeutet dies, dass Ihre Domainendung keinen Transfer-Code erfordert. Sie können dann direkt mit dem Transfer beginnen.
 
-![Schutz aktiviert](images/protection-against-domain-name-transfert-enabled.png){.thumbnail}
+![Schutz aktiviert](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-enabled.png){.thumbnail}
 
 Klicken Sie auf den Slider-Button und bestätigen Sie im Popup-Fenster, dass Sie diesen Schutz entfernen möchten. Warten Sie einige Minuten, bis der Status sich auf `Deaktiviert`{.action} ändert.
 
@@ -79,7 +79,7 @@ Klicken Sie auf den Slider-Button und bestätigen Sie im Popup-Fenster, dass Sie
 > Bestimmte Transfer-Codes werden direkt seitens der Registry der entsprechenden Domainendung verwaltet. Die Registry ist die Organisation, die eine oder mehrere TLDs und damit alle Domainnamen mit dieser Endung verwaltet. Zum Beispiel verwaltet die **AFNIC** alle Domainnamen mit der Endung *.fr*. In diesem Fall kontaktieren Sie die zuständige *Registry*, um Ihren Transfer-Code zu erhalten.
 >
 
-![Deaktivierung](images/protection-against-domain-name-transfert-deactivating.png){.thumbnail}
+![Deaktivierung](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-deactivating.png){.thumbnail}
 
 > [!primary]
 >
@@ -97,7 +97,7 @@ Sobald der Transfer-Schutz aufgehoben ist, können Sie den Transfer-Code Ihres D
 
 Es öffnet sich ein Fenster mit Ihrem AUTH/INFO-Code (auch Transfer-Code, Domainpasswort, AUTH-CODE oder EPP-Code genannt).
 
-![outgoingtransfer](images/protection-against-domain-name-transfert-disabled.png){.thumbnail}
+![outgoingtransfer](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-disabled.png){.thumbnail}
 
 Dieser Code wird von Ihrem neuen Registrar angefordert werden, um den Transfer abzuschließen. Sie können die Details bei Ihrem Provider überprüfen.
 

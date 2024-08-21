@@ -19,7 +19,7 @@ La [vRack](https://www.ovh.it/soluzioni/vrack/){.external} OVHcloud è una rete 
 * Aver creato un'[istanza Public Cloud OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps)
 * Aver attivato un servizio [vRack](https://www.ovh.it/soluzioni/vrack/)
 * Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/) compatibile con la vRack
-* Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+* Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 * Una gamma di indirizzi IP privati di tua scelta
 
 > [!warning]

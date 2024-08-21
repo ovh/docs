@@ -1,7 +1,7 @@
 ---
 title: FAQ sobre a gestão da conta OVHcloud
 excerpt: Encontre as questões mais frequentes sobre a gestão da conta OVHcloud
-updated: 2022-11-21
+updated: 2024-07-04
 ---
 
 ## Objetivo
@@ -163,6 +163,22 @@ Um membro da nossa equipa irá responder-lhe o mais rapidamente possível.
 ### Respondi ao e-mail de Abuse da OVHcloud, mas o meu serviço continua bloqueado. O que posso fazer?
 
 A partir da Área de Cliente OVHcloud, pode abrir um pedido de assistência junto do Serviço de Clientes da OVHcloud, de modo a obter informações complementares sobre o tratamento do seu ticket Abuse. Para facilitar o tratamento do seu pedido, queira mencionar no pedido de assistência a referência do ticket Abuse.
+
+### Como eliminar a minha conta OVHcloud?
+
+O encerramento da sua conta de cliente OVHcloud e a eliminação dos seus dados pessoais só é possível se:
+
+1. Já não tem serviços visíveis na secção [O meus Serviços](https://www.ovh.com/manager/dedicated/#/billing/autoRenew). Caso contrário, deverá começar por solicitar a sua rescisão e aguardar a sua eliminação.
+2. Não possui faturas com pagamento pendente. Caso contrário, deverá proceder ao seu pagamento clicando no botão `Pagar imediatamente`{.action} nas ações de massas da página [As minhas faturas](https://www.ovh.com/manager/#/dedicated/billing/history).
+3. Não possui encomendas em curso. Verifique-o em [esta página](https://www.ovh.com/manager/#/dedicated/billing/orders/orders).
+4. A sua conta pré-paga não é positiva. Verifique-o em [esta página](https://www.ovh.com/manager/#/dedicated/billing/payment/ovhaccount).
+
+Se as condições acima estiverem preenchidas, pode pedir para eliminar a sua conta OVHcloud e os dados associados seguindo estas etapas:
+
+1. Aceder a [Centro de Ajuda da OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
+2. Clique no botão `Criar um ticket`{.action}.
+3. Selecione o motivo `Gerir a sua conta de cliente OVHcloud`{.action}.
+4. Especifique `Quero encerrar a minha conta de cliente OVHcloud`{.action} e siga as etapas descritas.
 
 ## Quer saber mais?
  

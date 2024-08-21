@@ -14,7 +14,7 @@ This is generally the most secure and convenient connection method.
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - A [dedicated server](https://www.ovhcloud.com/en-ca/bare-metal/) or a [VPS](https://www.ovhcloud.com/en-ca/vps/) in your OVHcloud account
 - An SSH client application (command line or GUI)
 - Administrative access (sudo) via SSH to your server
@@ -32,6 +32,8 @@ Be sure to consult our "Getting started" guides: <a name="getstarted"></a>
 - For a [VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
 
 We recommend reading the [SSH introduction guide](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) as well.
+
+<a name="create-ssh-key"></a>
 
 ### Creating an SSH key pair
 
@@ -389,31 +391,6 @@ To configure another server connection, repeat the steps:
 - [Create the key pair](#useputty).
 - [Add the public key to your server](#addserverkey).
 - [Enter the server details and add the key file in `PuTTY`](#puttykeys).
-
-### Importing your SSH key into the OVHcloud Control Panel <a name="importkey"></a>
-
-The OVHcloud Control Panel allows you to store public keys, if they were created with one of the supported encryption types. This feature can save you some time when you configure a new server or reinstall one because you do not have to [add the public key to your server](#addserverkey) manually. 
-
-Open the sidebar navigation by clicking on your name in the top right corner and use the shortcut `Products and services`{.action}.
-
-![SSH key control panel](images/SSH_keys_panel_2022.png){.thumbnail}
-
-In `My services`, switch to the `SSH keys`{.action} tab and click on `Add an SSH key`{.action}.
-
-![SSH key control panel](images/SSH_keys_panel_2.1.png){.thumbnail}
-
-Select `Dedicated` from the drop-down menu.
-
-In the new window, enter an ID (a name of your choice) for the key. Paste the key string (copied from [your `.pub` file](#publickey) or [the `PuTTYgen` window](#useputty)) into the `Key` field.
-
-![SSH key control panel](images/SSH_keys_panel_3.png){.thumbnail}
-
-If you have copied the full output, the identifier after the key should already be appended. Note that in order to store your key, you will need to specify your local identifier after the pasted key. (See the example format above.) This is a requirement of the OVHcloud Control Panel. Click `Confirm`{.action} to store your public key.
-
-> [!primary]
->
-> All keys saved in the `Dedicated` section are available to preinstall on a dedicated server or a VPS. Regarding SSH keys for Public Cloud services, please refer to [this guide](/pages/public_cloud/compute/public-cloud-first-steps).
->
 
 
 ## Go further <a name="gofurther"></a>

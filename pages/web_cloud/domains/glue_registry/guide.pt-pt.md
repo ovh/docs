@@ -47,7 +47,7 @@ Nas opções disponíveis, clique diretamente no botão `Fetch NS from parent zo
 
 Surge um resultado:
 
-![glue-zonemaster](images/nameservers.png){.thumbnail}
+![glue-zonemaster](/pages/assets/screens/other/web-tools/zonemaster/nameservers.png){.thumbnail}
 
 Recupere os *servidores DNS* e conserve **todos** os seus endereços IPv4 (sob a forma *X.X.X.X* em que os *X* estão compreendidos entre *0* e *255*) e IPv6 (os outros IPs que não são IPv4) associados. Poderá precisar dela para o resto deste guia.
 
@@ -83,7 +83,7 @@ Na nova página, clique no separador `GLUE`{.action}.
 
 Aparecerá uma tabela com os registos « GLUE » atualmente configurados na OVHcloud para o seu domínio (se existirem). Para adicionar um novo registo « GLUE », clique no botão `Adicionar`{.action}.
 
-![glueregistry](images/add.png){.thumbnail}
+![glueregistry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/glue/add.png){.thumbnail}
 
 Na janela que se abre no seu ecrã, complete as informações pedidas:
 
@@ -92,7 +92,7 @@ Na janela que se abre no seu ecrã, complete as informações pedidas:
 |Nome do host|Personalize o nome do host que pretende utilizar enquanto servidor DNS personalizado.|
 |IP(s) de destino|Especifique o(s) endereço(s) de IP (IPv4 e / ou IPv6) ao(s) qual(is) o nome do host deve ser associado. Trata-se do(s) endereço(s) de IP do servidor DNS atualmente utilizado(s) pelo seu domínio. Se houver vários endereços IP, separe-os por *vírgulas*.|
 
-![glueregistry](images/add-another-glue-record-step-1.png){.thumbnail}
+![glueregistry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/glue/add-another-glue-record-step-1.png){.thumbnail}
 
 Na imagem acima, ao retomar o exemplo do [etapa 1](#step1), o « GLUE » que se deseja adicionar aqui (a partir do nome de domínio *domain.tld*) é **dns1.domain.tld**. 
 
@@ -113,7 +113,7 @@ Esta operação é realizada através da interface do prestador responsável pel
 - **o seu domínio não utiliza uma zona DNS ativa na OVHcloud** : contacte o prestador responsável por esta última. Depois de realizar esta operação, avance para o passo seguinte.
 - **O seu domínio utiliza uma zona DNS ativa na OVHcloud**: aceda à [Área de Cliente OVHcloud](/links/manager){.external} e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Nomes de domínio`{.action} e selecione o domínio que utilizou para criar os « GLUE » durante a [etapa 2](#step2). Aceda ao separador `Zona DNS`{.action} e clique em `Adicionar uma entrada`{.action}. Selecione a entrada do tipo *A* ou *AAAA* em função do tipo de IP associado que pretende adicionar. Siga os passos indicados para introduzir o *subdomínio* e o endereço *IPv4* (A) ou *IPv6* (AAAA). Se necessário, consulte as instruções descritas na nossa documentação « [Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
 
-![glueregistry](images/add-an-entry.png){.thumbnail}
+![glueregistry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-2.png){.thumbnail}
 
 > [!primary]
 >
@@ -153,7 +153,7 @@ Conclua os passos e, se necessário, consulte as instruções descritas na nossa
 > Se tiver personalizado servidores DNS num domínio para os utilizar com um outro domínio que não esteja registado na OVHcloud, contacte o fornecedor onde está registado o outro domínio para modificar os servidores DNS.
 >
 
-![glueregistry](images/modify-dns-servers.png){.thumbnail}
+![glueregistry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/modify-dns-servers.png){.thumbnail}
 
 > [!primary]
 >
@@ -173,7 +173,7 @@ Esta operação é realizada através da interface do prestador responsável pel
 
 Uma janela com a zona DNS em modo *textual* aparece:
 
-![glueregistry](images/change-in-text-format-step-1.png){.thumbnail}
+![glueregistry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/change-in-text-format-step-1.png){.thumbnail}
 
 > [!warning]
 >

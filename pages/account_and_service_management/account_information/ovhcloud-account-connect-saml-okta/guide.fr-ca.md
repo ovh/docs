@@ -1,7 +1,7 @@
 ---
 title: Activer les connexions Okta SSO avec votre compte OVHcloud
 excerpt: "Apprenez à associer votre service Okta à votre compte OVHcloud via SAML 2.0"
-updated: 2024-06-25
+updated: 2024-07-05
 ---
 
 ## Objectif
@@ -43,7 +43,7 @@ Cliquez sur `Create App Integration`{.action} et sélectionnez `SAML 2.0`{.actio
 
 ![Ajouter une application SAML, étape 3](images/OKTA_add_application_step3.png){.thumbnail}
 
-À l'étape « Configure SAML », complétez les champs `Single sign-on URL` et `Audience URI` avec les valeurs de votre région : 
+À l'étape « Configure SAML », complétez les champs `Single sign-on URL` et `Audience URI` avec les valeurs de votre région :
 
 - Région UE : **URL** d'authentification unique : `https://www.ovhcloud.com/eu/auth/saml/acs` et **Audience URI** : `https://www.ovhcloud.com/eu/auth/`
 - Région CA : **URL** d'authentification unique : `https://www.ovhcloud.com/ca/auth/saml/acs` et **Audience URI** : `https://www.ovhcloud.com/ca/auth/`
@@ -94,7 +94,7 @@ Cliquez ensuite sur l'onglet `Identités`{.action} pour accéder à la gestion d
 
 ![Connexion SSO OVHcloud étape 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 
-Renseignez les métadonnées XML de votre service Okta. Complétez le champ « Nom d'attribut de groupe » avec la valeur `groups`. Cliquez sur `Confirmer`{.action}.
+Renseignez les métadonnées XML de votre service Okta. Complétez le champ « Nom d'attribut d'utilisateur » avec la valeur `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn` et le champ « Nom d'attribut de groupe » avec la valeur `groups`. Cliquez sur `Confirmer`{.action}.
 
 Il est possible de conserver les utilisateurs locaux en cochant la case `Conserver les utilisateurs OVHcloud actifs`.
 

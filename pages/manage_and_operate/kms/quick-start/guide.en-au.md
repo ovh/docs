@@ -1,7 +1,7 @@
 ---
 title: "Getting started with OVHcloud Key Management Service (KMS)"
 excerpt: "Discover the steps you need to take to set up your first Key Management Service (KMS), create a key, and access it"
-updated: 2024-06-26
+updated: 2024-07-04
 ---
 
 > [!warning]
@@ -30,7 +30,7 @@ Since the billing for a KMS is based on the number of keys stored on it, orderin
 You can order a KMS from the [OVHcloud Control Panel](/links/manager) by going to one of the following menus:
 
 - Click `Bare Metal Cloud`{.action} then `Identity, Security & Operations`{.action}. Click `Key Management Service`{.action} then the `Order a KMS`{.action} button.
-- Click `Hosted Private Metal Cloud`{.action} then `Identity, Security & Operations`{.action}. Click `Key Management Service`{.action} then the `Order a KMS`{.action} button.
+- Click `Hosted Private Cloud`{.action} then `Identity, Security & Operations`{.action}. Click `Key Management Service`{.action} then the `Order a KMS`{.action} button.
 
 ![Access to the KMS menu](images/access_to_the_KMS_menu_01.png){.thumbnail}
 
@@ -73,30 +73,43 @@ The following information is required:
 - **description**: certificate description (optional)
 - **validity**: certificate validity duration in days - 365 days by default (optional)
 
-**Example of certificate creation:**
+**Example of certificate creation with root account:**
 
 ```json
 {
-  "description": "My reader credential",
+  "description": "My root access credential",
   "identityURNs": [
-    "urn:v1:eu:identity:user:xx1111-ovh/reader1",
-    "urn:v1:eu:identity:group:xx1111-ovh/reader"
+    "urn:v1:eu:identity:account:xx1111-ovh"
   ],
-  "name": "reader",
+  "name": "root",
   "validity": 30
 }
 ```
 
-The API then returns the certificate creation status
+**Example of certificate creation with local user:**
+
+```json
+{
+  "description": "My access credential",
+  "identityURNs": [
+    "urn:v1:eu:identity:user:xx1111-ovh/john.smith",
+    "urn:v1:eu:identity:group:xx1111-ovh/my_group"
+  ],
+  "name": "John Smith",
+  "validity": 30
+}
+```
+
+The API then returns the certificate creation status:
 
 ```json
 {
   "id": "f18b5e0d-75b8-40a3-9b0e-XXXXXX",
-  "name": "reader",
-  "description": "My reader credential",
+  "name": "John Smith",
+  "description": "My access credential",
   "identityURNs": [
-    "urn:v1:eu:identity:user:xx1111-ovh/reader1",
-    "urn:v1:eu:identity:group:xx1111-ovh/reader"
+    "urn:v1:eu:identity:user:xx1111-ovh/john.smith",
+    "urn:v1:eu:identity:group:xx1111-ovh/my_group"
   ],
   "status": "CREATING",
   "fromCSR": false,
@@ -120,16 +133,16 @@ Then copy the certificate ID and access its details via the API:
 > @api {v2} /okms GET /okms/resource/{okmsId}/credential/{credentialId}
 >
 
-The API now returns the public key of the certificate:
+The API returns the certificate in PEM:
 
 ```json
 {
   "id": "f18b5e0d-75b8-40a3-9b0e-XXXXXX",
-  "name": "reader",
-  "description": "My reader credential",
+  "name": "John Smith",
+  "description": "My access credential",
   "identityURNs": [
-    "urn:v1:eu:identity:user:xx1111-ovh/reader1",
-    "urn:v1:eu:identity:group:xx1111-ovh/reader"
+    "urn:v1:eu:identity:user:xx1111-ovh/john.smith",
+    "urn:v1:eu:identity:group:xx1111-ovh/my_group"
   ],
   "status": "READY",
   "fromCSR": false,
@@ -139,7 +152,7 @@ The API now returns the public key of the certificate:
 }
 ```
 
-Copy the value of the **certificatePEM** field to a **client.tls** file.
+Copy the value of the **certificatePEM** field to a **client.cert** file.
 
 #### With a CSR
 
@@ -165,12 +178,12 @@ The following information is required:
 ```json
 {
   "csr": "-----BEGIN CERTIFICATE REQUEST-----\nMIICvDCCAaQCAQAwdzELMAkGA1UEBhMCVVMxDTALBgNVBAgMBFV0YWgxDzANBgNV\nBAcMBkxpbmRvbjEWMBQGA1UECgwNRGlnaUNlcnQgSW5jLjERMA8GA1UECwwIRGln\naUNlcnQxHTAbBgNVBAMMFGV4YW1wbGUuZGlnaWNlcnQuY29tMIIBIjANBgkqhkiG\n9w0BAQEFAAOCAQ8AMIIBCgKCAQEA8+To7d+2kPWeBv/orU3LVbJwDrSQbeKamCmo\nwp5bqDxIwV20zqRb7APUOKYoVEFFOEQs6T6gImnIolhbiH6m4zgZ/CPvWBOkZc+c\n1Po2EmvBz+AD5sBdT5kzGQA6NbWyZGldxRthNLOs1efOhdnWFuhI162qmcflgpiI\nWDuwq4C9f+YkeJhNn9dF5+owm8cOQmDrV8NNdiTqin8q3qYAHHJRW28glJUCZkTZ\nwIaSR6crBQ8TbYNE0dc+Caa3DOIkz1EOsHWzTx+n0zKfqcbgXi4DJx+C1bjptYPR\nBPZL8DAeWuA8ebudVT44yEp82G96/Ggcf7F33xMxe0yc+Xa6owIDAQABoAAwDQYJ\nKoZIhvcNAQEFBQADggEBAB0kcrFccSmFDmxox0Ne01UIqSsDqHgL+XmHTXJwre6D\nhJSZwbvEtOK0G3+dr4Fs11WuUNt5qcLsx5a8uk4G6AKHMzuhLsJ7XZjgmQXGECpY\nQ4mC3yT3ZoCGpIXbw+iP3lmEEXgaQL0Tx5LFl/okKbKYwIqNiyKWOMj7ZR/wxWg/\nZDGRs55xuoeLDJ/ZRFf9bI+IaCUd1YrfYcHIl3G87Av+r49YVwqRDT0VDV7uLgqn\n29XI1PpVUNCPQGn9p/eX6Qo7vpDaPybRtA2R7XLKjQaF9oXWeCUqy1hvJac9QFO2\n97Ob1alpHPoZ7mWiEXXXXXXXXXXXXX\n-----END CERTIFICATE REQUEST-----",
-  "description": "My reader credential",
+  "description": "My access credential",
   "identityURNs": [
-    "urn:v1:eu:identity:user:xx1111-ovh/reader1",
-    "urn:v1:eu:identity:group:xx1111-ovh/reader"
+    "urn:v1:eu:identity:user:xx1111-ovh/john.smith",
+    "urn:v1:eu:identity:group:xx1111-ovh/my_group"
   ],
-  "name": "reader",
+  "name": "John Smith",
   "validity": 30
 }
 ```
@@ -180,11 +193,11 @@ The API then returns the certificate creation status:
 ```json
 {
   "id": "f18b5e0d-75b8-40a3-9b0e-XXXXXX",
-  "name": "reader",
-  "description": "My reader credential",
+  "name": "John Smith",
+  "description": "My access credential",
   "identityURNs": [
-    "urn:v1:eu:identity:user:xx1111-ovh/reader1",
-    "urn:v1:eu:identity:group:xx1111-ovh/reader"
+    "urn:v1:eu:identity:user:xx1111-ovh/john.smith",
+    "urn:v1:eu:identity:group:xx1111-ovh/my_group"
   ],
   "status": "CREATING",
   "fromCSR": true,
@@ -200,16 +213,16 @@ Copy the ID of the certificate and access its details via the API:
 > @api {v2} /okms GET /okms/resource/{okmsId}/credential/{credentialId}
 >
 
-The API now returns the public key of the certificate:
+The API returns the certificate in PEM:
 
 ```json
 {
   "id": "f18b5e0d-75b8-40a3-9b0e-XXXXXX",
-  "name": "reader",
-  "description": "My reader credential",
+  "name": "John Smith",
+  "description": "My access credential",
   "identityURNs": [
-    "urn:v1:eu:identity:user:xx1111-ovh/reader1",
-    "urn:v1:eu:identity:group:xx1111-ovh/reader"
+    "urn:v1:eu:identity:user:xx1111-ovh/john.smith",
+    "urn:v1:eu:identity:group:xx1111-ovh/my_group"
   ],
   "status": "READY",
   "fromCSR": true,
@@ -219,7 +232,7 @@ The API now returns the public key of the certificate:
 }
 ```
 
-Copy the value of the **certificatePEM** field to a **client.tls** file.
+Copy the value of the **certificatePEM** field to a **client.cert** file.
 
 ### Contact the KMS
 
@@ -232,7 +245,7 @@ For example, for a KMS created in the **eu-west-rbx** region: <https://eu-west-r
 If you are using a browser, you will need to convert the certificate to pkcs12 format:
 
 ```bash
-openssl pkcs12 -export -inkey cert_key_pem.txt -in cert_key_pem.txt -out cert_key.p12
+openssl pkcs12 -export -inkey client.key -in client.cert -out client.p12
 ```
 
 #### Creating an encryption key
@@ -318,7 +331,7 @@ Depending on the key type, the possible sizes and operations are:
 
 When you create a key, you can import an existing key.
 
-To do this, you can add an additional **keys** field in the body of the API:
+To do this, you can add an additional **keys** field in the body of the request:
 
 ```json
 {
@@ -363,7 +376,7 @@ In order to manage encryption keys, several APIs are available:
 |POST|/v1/servicekey/{keyId}/deactivate|Deactivates an encryption key|
 
 Disabling an encryption key means that it will no longer be usable, even though the key remains in the KMS.<br>
-Deleting an encryption key is only possible on a key that has been previously disabled
+Deleting an encryption key is only possible on a key that has been previously disabled.
 
 > [!warning]
 >
@@ -375,7 +388,7 @@ Deleting an encryption key is only possible on a key that has been previously di
 #### KMS encryption
 
 The OVHcloud KMS has a dedicated encryption API for encrypting small volumes of data (less than 4 kB).<br>
-This is the fastest method, but it does not have the best performance.
+This is the easiest method, but it does not have the best performance.
 
 |**Method**|**Path**|**Description**|
 | :-: | :-: | :-: |
@@ -418,7 +431,7 @@ The API expects the following values:
 |ciphertext|string|Data to decrypt|
 |context|string|Additional identification data to verify data authenticity|
 
-The **context** field must contain the same information as that given during encryption.
+The **context** field must have the same value as the one given during encryption.
 
 #### Encryption with a Data Key (DK)
 
@@ -480,7 +493,7 @@ And it returns the decrypted Data Key in a **plaintext** field.
 
 ### Sign with the KMS
 
-File signing is done using an asymmetric key
+File signing is done using the private key of an asymmetric key pair.
 
 #### Supported algorithms
 

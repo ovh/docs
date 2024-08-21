@@ -44,7 +44,7 @@ Several error returns may appear on your browser if your website becomes inacces
 
 To check that your domain name subscription is valid, click on your name at the top right-hand corner of your [OVHcloud Control Panel](/links/manager), then click on `Products and services`{.action} within the right-hand menu.
 
-![control-panel](/pages/assets/screens/control_panel/product-selection/web-cloud/right-column/right-menu-product-and-services.png){.thumbnail}|
+![control-panel](/pages/assets/screens/control_panel/product-selection/right-column/right-menu-product-and-services.png){.thumbnail}|
 
 Renew your domain if necessary with the `...`{.action} button, then click on `Renew service`{.action}.
 

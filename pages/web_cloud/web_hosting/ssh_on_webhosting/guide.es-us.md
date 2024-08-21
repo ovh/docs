@@ -32,7 +32,7 @@ En primer lugar, conéctese al [área de cliente de OVHcloud](/links/manager) en
 
 En la columna «SSH» podrá consultar si el usuario SSH (o «Login SSH») dispone de un acceso SSH activo. En caso de que no esté activado, aparecerá la mención «Desactivado».
 
-![usessh](images/tab-ssh.png){.thumbnail}
+![usessh](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-ssh.png){.thumbnail}
 
 Para activarlo, haga clic en el botón `(...)`{.action} situado al final de la línea correspondiente al usuario y seleccione `Editar`{.action}. Aparecerá una ventana en la que podrá activar el acceso SSH. Si no tiene la opción de activarlo, asegúrese de que su [plan de hosting de OVHcloud](/links/web/hosting) dispone de un acceso SSH.
 
@@ -68,7 +68,7 @@ ssh yourlogin@ssh.cluster000.hosting.ovh.net -p 22
 
 Después de ejecutar el comando, el sistema le pedirá que introduzca la contraseña del usuario SSH. Una vez conectado, vaya al siguiente paso: [Interactuar por SSH con su espacio de almacenamiento](./#4-interactuar-por-ssh-con-su-espacio-de-almacenamiento).
 
-![usessh](images/terminal-ssh-login.png){.thumbnail}
+![usessh](/pages/assets/screens/other/web-tools/terminal/terminal-ssh-login.png){.thumbnail}
 
 #### 3.2\. Desde un software
 

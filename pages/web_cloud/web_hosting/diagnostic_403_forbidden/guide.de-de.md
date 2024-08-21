@@ -32,7 +32,7 @@ Mit der automatisierten Sperrung werden Sie auch vor möglichen rechtlichen Kons
  
 *Wenn Sie von dieser Sperrung betroffen sind, erhalten Sie eine Benachrichtigung an die E-Mail-Adresse des "Administrator"-Kontakts Ihres Webhostings*.
 
-![http-403](images/http-403.png){.thumbnail}
+![http-403](/pages/assets/screens/other/browsers/errors/http-403.png){.thumbnail}
 
 **Diese Anleitung erklärt, wie Sie im Fall einer Anzeige von “403 forbidden“ den Zugang zu Ihrer Seite entsperren.**
 
@@ -135,7 +135,7 @@ Wenn Ihr Hosting vor mehr als zwei Wochen gesperrt wurde, kontaktieren Sie einen
 
 Öffnen Sie FileZilla und [verbinden Sie sich mit Ihrem FTP-Speicherplatz](/pages/web_cloud/web_hosting/ftp_connection). Klicken Sie anschließend im Menü auf `Server`{.action} und dann auf `Benutzerdefinierten Befehl eingeben`{.action}. (Je nach der Version von FileZilla kann die Bezeichnung variieren.)
 
-![command_filezilla1](images/enter-custom-command-step-1.png){.thumbnail}
+![command_filezilla1](/pages/assets/screens/other/web-tools/filezilla/enter-custom-command-step-1.png){.thumbnail}
 
 Geben Sie im angezeigten Fenster folgenden Befehl ein und bestätigen Sie:
 
@@ -143,7 +143,7 @@ Geben Sie im angezeigten Fenster folgenden Befehl ein und bestätigen Sie:
 SITE CHMOD 705 /
 ```
 
-![command_filezilla2](images/enter-custom-command-step-2.png){.thumbnail}
+![command_filezilla2](/pages/assets/screens/other/web-tools/filezilla/enter-custom-command-step-2.png){.thumbnail}
 
 Die Ausgabe "**200 Permissions changed on /**" bestätigt, dass die Änderung erfolgreich durchgeführt wurde. Um dies zu überprüfen, versuchen Sie erneut, auf Ihre Website zuzugreifen.
 
@@ -168,7 +168,7 @@ Klicken Sie auf den Button `FTP-Explorer`{.action} und [loggen Sie sich in Ihren
 
 Klicken Sie auf `Erweitert`{.action} und dann auf den Button `Weiter`{.action} neben "**Sende benutzerdefinierte FTP-Kommandos zum FTP-Server**".
 
-![net2ftp](images/advanced-ftp-functions.png){.thumbnail}
+![net2ftp](/pages/assets/screens/other/web-tools/net2ftp/advanced-ftp-functions.png){.thumbnail}
 
 Geben Sie im oberen Bereich der Seite den folgenden Befehl ein:
 
@@ -178,7 +178,7 @@ SITE CHMOD 705 /
 
 Klicken Sie dann auf den grünen "Haken".
 
-![result_command_on_net2ftp](images/ftp-command-result.png){.thumbnail}
+![result_command_on_net2ftp](/pages/assets/screens/other/web-tools/net2ftp/ftp-command-result.png){.thumbnail}
 
 Die Ausgabe "**200 Permissions changed on /**" bestätigt, dass die Änderung erfolgreich durchgeführt wurde. Um dies zu überprüfen, versuchen Sie erneut, auf Ihre Website zuzugreifen.
 

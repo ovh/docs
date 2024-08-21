@@ -1,7 +1,7 @@
 ---
 title: "Monitoring and managing automated emails in your web hosting plan"
 excerpt: "Find out how to monitor and manage automated emails sent from your OVHcloud web hosting plan"
-updated: 2023-12-04
+updated: 2024-08-20
 ---
 
 ## Objective
@@ -125,7 +125,7 @@ This state occurs when spam emails are sent from your hosting.
 
 Generally, this block is accompanied by the sending of an email titled **“Abuse with your domain.tld hosting”**, generated automatically by our security robots.
 
-![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/email-sending-to-customer/webhosting/email-script-disabled.png){.thumbnail}
+![hosting](/pages/assets/screens/email-sending-to-customer/webhosting/email-script-disabled.png){.thumbnail}
 
 There are three possible scenarios for this situation:
 

@@ -26,7 +26,7 @@ Możesz jednak zalogować się do swojego serwera w [trybie Rescue OVHcloud](/pa
 ## Wymagania początkowe
 
 - Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/) lub [VPS](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud
-- Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dostęp do [Panelu client OVHcloud](/links/manager)
 
 ## W praktyce
 
@@ -60,7 +60,7 @@ EEFFFFFFFFFFFFFGGGGGGGGGGGGGhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
 
 Ze względów bezpieczeństwa usuń z pliku ciąg klucza "old" (obecnie przestarzały). Zapisz i wyjdź z edytora.
 
-Przywróć tryb "normalny" i zrestartuj serwer w [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W razie potrzeby zapoznaj się z przewodnikiem ["Aktywuj i użyj trybu Rescue"](#step2).
+Przywróć tryb "normalny" i zrestartuj serwer w [Panelu client OVHcloud](/links/manager). W razie potrzeby zapoznaj się z przewodnikiem ["Aktywuj i użyj trybu Rescue"](#step2).
 
 Teraz masz dostęp do serwera z nową parą kluczy SSH.
 

@@ -19,12 +19,12 @@ Un snapshot ne constitue pas pour autant une sauvegarde complète du système.
 
 ## Prérequis
 
-- Avoir accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Avoir accès à votre [espace client OVHcloud](/links/manager).
 - Un [VPS OVHcloud](https://www.ovhcloud.com/fr/vps/) déjà configuré.
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveur privés virtuels`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveur privés virtuels`{.action}.
 
 ### Étape 1 : souscrire l'option snapshot
 
@@ -61,7 +61,7 @@ Le snapshot en cours peut être récupéré via un lien de téléchargement. Cli
 
 > [!primary]
 >
-> Si votre VPS est issu d'une ancienne gamme, il est possible que vous receviez un message d'erreur car l'option n'est pas disponible sur les anciens VPS. Votre VPS est issu d'une ancienne gamme si le nom du modèle est nommé de cette façon : *vpsXXXX.ovh.net* (les *X* représentent le numéro de votre modèle). Vous pouvez vérifier cette référence de serveur dans l'onglet `Accueil`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+> Si votre VPS est issu d'une ancienne gamme, il est possible que vous receviez un message d'erreur car l'option n'est pas disponible sur les anciens VPS. Votre VPS est issu d'une ancienne gamme si le nom du modèle est nommé de cette façon : *vpsXXXX.ovh.net* (les *X* représentent le numéro de votre modèle). Vous pouvez vérifier cette référence de serveur dans l'onglet `Accueil`{.action} de votre [espace client OVHcloud](/links/manager).
 >
 
 Dans la fenêtre qui s'affiche, cliquez sur `Générer le lien de téléchargement`{.action}.

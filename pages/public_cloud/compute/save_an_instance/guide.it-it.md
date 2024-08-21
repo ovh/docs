@@ -1,7 +1,7 @@
 ---
 title: "Effettuare il backup di un'istanza"
 excerpt: "Come eseguire le prime operazioni su un'istanza Public Cloud dallo Spazio Cliente OVHcloud"
-updated: 2024-05-06
+updated: 2024-07-03
 ---
 
 > [!primary]
@@ -36,6 +36,10 @@ Clicca sul pulsante `...`{.action} a destra dell'istanza e seleziona `Crea un ba
 Assegna un nome al backup nella nuova pagina. Leggi le tariffe e clicca su `Conferma`{.action}.
 
 ![public-cloud-instance-backup](images/createbackup2.png){.thumbnail}
+
+Non è possibile monitorare l'avanzamento del backup in tempo reale. Tuttavia, nella sezione `Instance Backup`{.action} sotto `Storage`{.action} nel menu di sinistra, lo stato `Backup in corso...` verrà visualizzato durante il processo.
+
+![public-cloud-instance-backup](images/backup_in_progress.png){.thumbnail}
 
 Una volta terminato il backup, sarà disponibile nella sezione `Instance Backup`{.action} sotto `Storage`{.action} nel menu di sinistra.
 

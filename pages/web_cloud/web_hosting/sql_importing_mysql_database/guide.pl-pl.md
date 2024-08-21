@@ -48,13 +48,13 @@ Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](/links/manager){.e
 
 Tabela, która się wyświetla zawiera listę wszystkich baz danych utworzonych w ramach Twojego pakietu hostingowego. Kliknij trzy kropki po prawej stronie bazy danych, którą chcesz przywrócić do wcześniejszej daty, a następnie kliknij `Przywróć kopię zapasową`{.action}. Pamiętaj, że operacja ta spowoduje zastąpienie zawartości aktualnej bazy danych zawartością kopii zapasowej.
 
-![import bazy danych ovh](images/restore-backup.png){.thumbnail}
+![import bazy danych ovh](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/restore-backup.png){.thumbnail}
 
 Wyświetlą się wówczas wszystkie dostępne kopie zapasowe wybranej bazy danych. Będziesz mógł sprawdzić dokładną datę wykonanych kopii zapasowych, a także datę, w której zostaną one usunięte z narzędzia OVHcloud.
 
 Kliknij trzy kropki po prawej stronie kopii zapasowej, którą chcesz przywrócić, po czym kliknij `Przywróć kopię zapasową`{.action}. Upewnij się, że informacje, które wyświetlają się w oknie są poprawne, a następnie kliknij `Zatwierdź`{.action}. Teraz zaczekaj, aż przywracanie kopii zapasowej się zakończy.
 
-![import bazy danych ovh](images/restore-the-backup.png){.thumbnail}
+![import bazy danych ovh](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/restore-the-backup.png){.thumbnail}
 
 ### Import Twojej kopii zapasowej w Panelu klienta.
 
@@ -62,7 +62,7 @@ Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](/links/manager){.e
 
 Tabela, która się wyświetla zawiera listę wszystkich baz danych utworzonych w ramach Twojego pakietu hostingowego. Kliknij trzy kropki po prawej stronie bazy danych, do której chcesz importować dane, a następnie kliknij `Importuj plik`{.action}.
 
-![import bazy danych ovh](images/import-file.png){.thumbnail}
+![import bazy danych ovh](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/import-file.png){.thumbnail}
 
 W oknie, które się wyświetli zaznacz kratkę Zaimportuj plik, po czym kliknij Dalej.
 
@@ -71,13 +71,13 @@ W oknie, które się wyświetli zaznacz kratkę Zaimportuj plik, po czym kliknij
 > Przycisk `Użyj istniejącego pliku`{.action} umożliwia ponowny import danych już wcześniej wysłanych do narzędzia służącego do importu. 
 >
 
-![import bazy danych ovh](images/database-import-step-1-new-file.png){.thumbnail}
+![import bazy danych ovh](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/database-import-step-1-new-file.png){.thumbnail}
 
 Wprowadź nazwę pliku (która pozwoli Ci zidentyfikować tę kopię zapasową, jeśli będziesz chciał przywrócić ją ponownie w późniejszym terminie), następnie, z listy widniejącej obok pola `Nazwa pliku`, wybierz plik kopii zapasowej bazy danych na Twoim komputerze. Kliknij `Wyślij`{.action}.
 
 Odczekaj, aż interfejs wskaże, że plik został pomyślnie wysłany, następnie kliknij przycisk Dalej.
 
-![import bazy danych ovh](images/database-import-step-2-new-file.png){.thumbnail}
+![import bazy danych ovh](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/database-import-step-2-new-file.png){.thumbnail}
 
 Następnie zdecyduj, czy chcesz zastosować dodatkowe opcje, które się wyświetlają:
 
@@ -87,7 +87,7 @@ Następnie zdecyduj, czy chcesz zastosować dodatkowe opcje, które się wyświe
 
 Po dokonaniu wyboru, kliknij przycisk `Zatwierdź`{.action}, następnie zaczekaj, aż import zostanie ukończony.  
 
-![import bazy danych ovh](images/database-import-step-3.png){.thumbnail}
+![import bazy danych ovh](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/database-import-step-3.png){.thumbnail}
 
 ### Import za pomocą interfejsu phpMyAdmin
 
@@ -95,7 +95,7 @@ W celu przeprowadzenia operacji zaloguj się do phpMyAdmin. Aby uzyskać link do
 
 Tabela, która się wyświetla zawiera listę wszystkich baz danych utworzonych w ramach Twojego pakietu hostingowego. Kliknij trzy kropki po prawej stronie odpowiedniej bazy danych, po czym kliknij `Dostęp do phpMyAdmin`{.action}.
 
-![import bazy danych ovh](images/go-to-phpmyadmin.png){.thumbnail}
+![import bazy danych ovh](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
 
 Po uzyskaniu dostępu do strony phpMyAdmin wprowadź informacje dotyczące bazy danych, po czym zaznacz na rozwijanym menu opcję dostępu do aktualnych danych bazy, następnie zaloguj się.  Po zalogowaniu przejdź do zakładki `Import`{.action} i uzupełnij dane. Pamiętaj, że plik kopii zapasowej nie może przekraczać określonego rozmiaru.
 

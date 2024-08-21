@@ -15,7 +15,7 @@ updated: 2024-02-27
 > Questo articolo è destinato agli utenti esperti che hanno almeno conoscenze di base sull'[innesco PXE](https://en.wikipedia.org/wiki/Preboot_Execution_Environment) e sull'implementazione utilizzata in OVHcloud: [PXE](https://ipxe.org/).
 >
 
-Nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), è possibile specificare una modalità di avvio tra una lista predefinita: disco principale o rescue.
+Nello [Spazio Cliente OVHcloud](/links/manager), è possibile specificare una modalità di avvio tra una lista predefinita: disco principale o rescue.
 Tramite l'[API OVHcloud](https://api.ovh.com/) è possibile definire gli script personalizzati.
 
 Utilizza uno script personalizzato che potrebbe essere interessante nei seguenti casi:
@@ -86,7 +86,7 @@ Puoi riavviare il tuo server e questo utilizzerà il tuo script [iPXE](https://i
 
 ### Altre modalità di boot <a name="leaveIpxeScript"></a>
 
-In qualsiasi momento è possibile reinstallare il disco o la modalità Rescue dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) (consulta la guida [Attiva e utilizza la modalità Rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)) o tramite l'[API OVHcloud](https://api.ovh.com/).
+In qualsiasi momento è possibile reinstallare il disco o la modalità Rescue dallo [Spazio Cliente OVHcloud](/links/manager) (consulta la guida [Attiva e utilizza la modalità Rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)) o tramite l'[API OVHcloud](https://api.ovh.com/).
 
 #### Sposta su disco <a name="switchToDisk"></a>
 

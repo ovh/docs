@@ -84,7 +84,7 @@ Une fois la zone DNS créée, accédez à sa gestion à l'aide de notre guide «
 
 Si elles ne sont pas présentes, renseignez les entrées suivantes :
 
-**Exemple**  (pour le nom de domaine « domain.tld ») :
+**Exemple** (pour le nom de domaine « domain.tld ») :
 
 |Domaine|Type d'enregistrement|Priorité|Cible|
 |---|---|---|---|
@@ -147,7 +147,7 @@ Déclarez/autorisez votre nom de domaine externe sur votre hébergement web OVHc
 > Contactez, si nécessaire, le gestionnaire actuel de votre zone DNS pour effectuer la manipulation.
 >
 
-**Exemple** : pour le nom de domaine « domain.tld » :
+**Exemple** pour le nom de domaine « domain.tld » :
 
 ![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-a-txt-cname.png){.thumbnail}
 

@@ -44,7 +44,7 @@ Pour mettre en place un firewall restrictif, notamment sur l'ICMP, et continuer 
 
 ### Activer ou désactiver le monitoring
 
-Tout d’abord, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et sélectionnez l'onglet `Bare Metal Cloud`{.action}. Sélectionnez le serveur concerné dans le menu déroulant `Serveurs dédiés`{.action}.
+Tout d’abord, connectez-vous à votre [espace client OVHcloud](/links/manager){.external} et sélectionnez l'onglet `Bare Metal Cloud`{.action}. Sélectionnez le serveur concerné dans le menu déroulant `Serveurs dédiés`{.action}.
 
 Vous pouvez activer ou désactiver le monitoring d'un serveur dédié à partir de l'onglet `Informations générales`{.action}. L'option se situe dans la section `État des services`.
 

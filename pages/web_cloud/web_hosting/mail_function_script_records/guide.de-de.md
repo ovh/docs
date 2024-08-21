@@ -1,7 +1,7 @@
 ---
 title: "Automatische E-Mails eines Webhostings verwalten"
 excerpt: "Erfahren Sie hier, wie Sie über ein Webhosting versendete automatische E-Mails verwalten"
-updated: 2023-12-04
+updated: 2024-08-20
 ---
 
 > [!primary]
@@ -129,7 +129,7 @@ Dieser Zustand tritt ein, wenn Ihr Hosting E-Mails sendet, die als SPAM eingestu
 
 Normalerweise wird diese Sperrung begleitet von einer E-Mail der Art **"Missbrauch mit Ihrem Hosting domain.tld"**, die automatisch von unseren Sicherheitsrobotern generiert wird.
 
-![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/email-sending-to-customer/webhosting/email-script-disabled.png){.thumbnail}
+![hosting](/pages/assets/screens/email-sending-to-customer/webhosting/email-script-disabled.png){.thumbnail}
 
 Drei Szenarien sind möglich:
 
@@ -206,7 +206,7 @@ $mail->Host = "eigener.smtp.server";
 $mail->SMTPAuth = true; 
 $mail->SMTPSecure = "ssl";
 $mail->Port = 465; 
-$mail->Username = "email@adresse.tld"; 
+$mail->Username = "email@addresse.tld"; 
 $mail->Password = "IhrPasswort"; 
 ```
 

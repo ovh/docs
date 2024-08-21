@@ -1,7 +1,7 @@
 ---
 title: 'Charger les variables d’environnement OpenStack'
 excerpt: 'Apprenez à charger vos variables d’environnement pour utiliser l’API d’OpenStack'
-updated: 2023-11-29
+updated: 2024-07-15
 ---
 
 ## Objectif
@@ -10,7 +10,7 @@ Charger les variables d'environnement OpenStack sur votre poste vous permettra d
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 - Avoir créé un utilisateur OpenStack. Consultez [le guide qui y est dédié](/pages/public_cloud/compute/create_and_delete_a_user)
 - Avoir préparé l'environnement pour utiliser OpenStack. Consultez pour cela le guide suivant : [Préparer l’environnement pour utiliser l’API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
 
@@ -20,7 +20,7 @@ Charger les variables d'environnement OpenStack sur votre poste vous permettra d
 
 Afin de récupérer vos variables d'environnement, vous pouvez télécharger le fichier OpenRC de votre utilisateur OpenStack créé au préalable.
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, accédez à la section `Public Cloud`{.action} et sélectionnez votre projet Public Cloud en haut à gauche.
+Connectez-vous à votre [espace client OVHcloud](/links/manager){.external}, accédez à la section `Public Cloud`{.action} et sélectionnez votre projet Public Cloud en haut à gauche.
 <br> Dans la rubrique `Project Management`, cliquez sur `Users & Roles`{.action}, puis sur les `...`{.action} à droite de votre utilisateur et sélectionnez `Télécharger le fichier RC d'OpenStack`{.action}.
 
 ![openstack-variables](images/pciopenstackvariables1e.png){.thumbnail}
@@ -54,24 +54,6 @@ Si les CLI ont déjà été installés, vérifiez simplement le bon fonctionneme
 +--------------------------------------+------------+--------+-----------------------------------------------+-----------+--------+
 ```
 
-Il est possible de stocker en dur le mot de passe de l'utilisateur Horizon. Pour cela, remplacez :
-
-```bash
-echo "Please enter your OpenStack Password: "
-read -sr OS_PASSWORD_INPUT
-export OS_PASSWORD=$OS_PASSWORD_INPUT
-```
-
-Par :
-
-```bash
-#echo "Please enter your OpenStack Password: "
-#read -sr OS_PASSWORD_INPUT
-export OS_PASSWORD="Mot de passe de l'utilisateur Horizon"
-```
-
-Par défaut, il faudra charger cet environnement après chaque ouverture de session dans l'environnement courant. Il est possible de rendre cela permanent en ajoutant le source openrc.sh au fichier bashrc. Cela requiert de fixer le mot de passe dans le fichier.
-
 #### **Sous Windows**
 
 Le fichier OpenRC n'est pas conçu pour être lancé sur Windows.
@@ -92,4 +74,4 @@ set OS_PASSWORD="Mot de passe de l'utilisateur Horizon"
 
 Pour apprendre à utiliser OpenStack : [Documentation OpenStack](https://docs.openstack.org/){.external}
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

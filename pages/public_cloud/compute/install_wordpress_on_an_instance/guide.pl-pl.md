@@ -27,7 +27,7 @@ Tutorial ten przedstawia podstawowe etapy ręcznej instalacji WordPressa na inst
 
 - Projekt [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na Twoim koncie OVHcloud
 - Posiadanie zainstalowanej [instancji Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) z systemem Debian lub Ubuntu
-- Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dostęp do [Panelu client OVHcloud](/links/manager)
 - Dostęp administratora (sudo) do Twojej instancji przez SSH
 
 ## W praktyce
@@ -37,7 +37,7 @@ Tutorial ten przedstawia podstawowe etapy ręcznej instalacji WordPressa na inst
 > Poniższe instrukcje są sprawdzane dla dystrybucji Debian 11. Ubuntu opiera się na Debianie i dlatego tutorial powinien również działać dla bieżącej dystrybucji Ubuntu.
 >
 
-Aby uzyskać dostęp do Twojej instalacji za pomocą nazwy domeny, powiąż ją z Twoją instancją. W tym celu edytuj strefę DNS dostępną w [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), pod warunkiem, że OVHcloud jest Twoim operatorem, a nazwa domeny wykorzystuje serwery DNS OVHcloud.
+Aby uzyskać dostęp do Twojej instalacji za pomocą nazwy domeny, powiąż ją z Twoją instancją. W tym celu edytuj strefę DNS dostępną w [Panelu client OVHcloud](/links/manager), pod warunkiem, że OVHcloud jest Twoim operatorem, a nazwa domeny wykorzystuje serwery DNS OVHcloud.
 
 Aby dowiedzieć się więcej, zapoznaj się z przewodnikiem [Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit). Jeśli domena jest aktualnie używana, skonfiguruj DNS dopiero po zainstalowaniu nowego WordPress i uruchomieniu Twojej strony WWW.
 

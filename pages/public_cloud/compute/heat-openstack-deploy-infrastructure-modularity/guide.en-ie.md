@@ -12,7 +12,7 @@ We recommend starting off by reading our guide on [Deploying a basic infrastruct
 
 ## Requirements
 
-- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
+- access to the [OVH Control Panel](/links/manager){.external}
 - a Public Cloud project
 - an OpenStack user account
 - how to manipulate YAML files
@@ -180,4 +180,4 @@ You can find out more by reading the [official OpenStack documentation](https://
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

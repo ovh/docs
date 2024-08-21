@@ -1,7 +1,7 @@
 ---
 title: 'Gestionar y utilizar las listas de difusión'
 excerpt: 'Cómo utilizar las listas de difusión'
-updated: 2023-08-01
+updated: 2024-08-07
 ---
 
 ## Objetivo
@@ -40,6 +40,10 @@ El remitente (<i>sender</i>) transmite el correo electrónico a la lista de difu
 ## Procedimiento
 
 ### Crear una lista de difusión
+
+> [!success]
+>
+> Una lista de difusión se comporta como una dirección de correo electrónico, no es posible modificar su nombre. Si el nombre de una lista de difusión ya no le conviene, debe crear una nueva y eliminar la antigua.
 
 Para crear una lista de difusión, inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y, seguidamente, seleccione la pestaña `Web Cloud`{.action} en la parte superior.
 

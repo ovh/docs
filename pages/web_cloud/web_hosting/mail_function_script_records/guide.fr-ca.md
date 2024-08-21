@@ -1,7 +1,7 @@
 ---
 title: "Suivre et gérer les e-mails automatisés de son hébergement web"
 excerpt: "Découvrez comment suivre et gérer les e-mails automatisés envoyés depuis votre hébergement web OVHcloud"
-updated: 2023-12-04
+updated: 2024-08-20
 ---
 
 ## Objectif
@@ -74,7 +74,7 @@ Si vous constatez que les e-mails générés depuis vos scripts ne sont plus env
 
 ```bash
 <?php
-$to = "RecipientEmail@adress.tld"; 
+$to = "RecipientEmail@address.tld"; 
 $subject = "Test mail PHP"; 
 $content = "The body/content of the Email";
 $headers = "From: Website <SendingEmail@address.tld>\r\nReply-To: SendingEmail@address.tld";
@@ -125,7 +125,7 @@ Cet état survient lorsque des mails considérés comme du SPAM ont été émis 
 
 Généralement, ce blocage est accompagné par l'envoi d'un e-mail intitulé **« Abus avec votre hébergement domain.tld »** généré automatiquement par nos robots de sécurité :
 
-![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/email-sending-to-customer/webhosting/email-script-disabled.png){.thumbnail}
+![hosting](/pages/assets/screens/email-sending-to-customer/webhosting/email-script-disabled.png){.thumbnail}
 
 Trois cas de figure sont possibles par rapport à cette situation :
 
@@ -202,7 +202,7 @@ $mail->Host = "your.smtp.server";
 $mail->SMTPAuth = true; 
 $mail->SMTPSecure = "ssl";
 $mail->Port = 465; 
-$mail->Username = "e-mail@adress.tld"; 
+$mail->Username = "e-mail@address.tld"; 
 $mail->Password = "YourEmailPassword"; 
 ```
 

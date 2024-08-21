@@ -89,4 +89,4 @@ For information about restoring a Bare Metal Server, please check out our [Resto
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

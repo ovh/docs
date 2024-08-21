@@ -15,7 +15,7 @@ The OVHcloud [vRack](https://www.ovh.com.au/solutions/vrack/) allows you to conf
 - An [OVHcloud Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps)
 - A [vRack](https://www.ovh.com.au/solutions/vrack/) service activated in your account
 - A [Dedicated Server](https://www.ovhcloud.com/en-au/bare-metal/){.external} compatible with the vRack
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - A private IP address range of your choice
 
 > [!warning]
@@ -101,4 +101,4 @@ Next, configure the network interfaces on your new [Public Cloud instance](https
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

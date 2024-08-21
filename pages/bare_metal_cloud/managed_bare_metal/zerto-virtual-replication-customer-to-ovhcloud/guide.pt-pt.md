@@ -16,7 +16,7 @@ Para facilitar as explicações, vamos descrever a configuração mais simples d
 - Um endereço de IP público disponível na Managed Bare Metal de destino, para o ponto de conexão VPN.
 - Uma plataforma Zerto instalada e operacional na infraestrutura do cliente.
 - As máquinas de replicação Zerto (VRA: Virtual Replication Appliance), tanto do lado do cliente quanto do lado da OVHcloud, devem poder comunicar-se pelas portas TCP 4007 e 4008.
-- As máquinas de gestão Zerto (ZVM: Zerto Virtual Manager), tanto do lado do cliente quanto do lado da OVHcloud, devem poder comunicar-se pelas portas TCP 9081.
+- As máquinas de gestão Zerto (ZVM: Zerto Virtual Manager), tanto do lado do cliente quanto do lado da OVHcloud, devem poder comunicar-se pelas portas TCP 9071.
 
 ## Instruções
 
@@ -215,7 +215,7 @@ Pode igualmente consultar o ficheiro de registo IPSec em /var/log/ipsec.log.
 
 O emparelhamento da infraestrutura do cliente com a da OVHcloud requer a autorização do tráfego entre:
 
-- a porta 9081 e as ZVM;
+- a porta 9071 e as ZVM;
 - as portas 4007/4008 e as vRA.
 
 #### 4.1. Abertura de portas em ZVM
@@ -240,7 +240,7 @@ As secções Source e Destination são do tipo «Single host or Network» e faze
 
 ![Zerto VPN](images/image-EN-28.png){.thumbnail}
 
-A porta TCP de destino autorizada é a 9081.
+A porta TCP de destino autorizada é a 9071.
 
 Guarde a regra e aplique-a.
 
@@ -316,7 +316,7 @@ De seguida, será conduzido ao ecrã de conexão da ZVM através desta mensagem 
 
 ![Zerto VPN](images/image-EN-40.png){.thumbnail}
 
-A causa mais provável é que a ZVM OVHcloud não consegue comunicar com a ZVM cliente pela porta TCP 9081. É necessário que se estabeleça a conexão.
+A causa mais provável é que a ZVM OVHcloud não consegue comunicar com a ZVM cliente pela porta TCP 9071. É necessário que se estabeleça a conexão.
 
 ## Quer saber mais?
 

@@ -32,7 +32,7 @@ Loggen Sie sich zunächst in Ihr [OVHcloud Kundencenter](/links/manager){.extern
 
 Gehen Sie in der angezeigten Tabelle zur Spalte „SSH“ und überprüfen Sie, dass der betreffende SSH-Benutzer (oder „Login“) über einen aktiven SSH-Zugang verfügt. Ist das nicht der Fall, wird der Status „Deaktiviert“ angezeigt.
 
-![SSH verwenden](images/tab-ssh.png){.thumbnail}
+![SSH verwenden](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-ssh.png){.thumbnail}
 
 Ist der SSH-Zugang nicht aktiv, klicken Sie rechts neben dem betreffenden Benutzer auf den Button `...`{.action} und dann auf `Bearbeiten`{.action}. Aktivieren Sie im daraufhin angezeigten Fenster den SSH-Zugang und schließen Sie die Änderung ab. Wenn Sie den Zugang nicht aktivieren können, überprüfen Sie, dass [Ihr OVHcloud Webhosting](/links/web/hosting){.external} über einen SSH-Zugang verfügt.
 
@@ -68,7 +68,7 @@ ssh yourlogin@ssh.cluster000.hosting.ovh.net -p 22
 
 Nach Senden des Befehls werden Sie dazu aufgefordert, das Passwort des SSH-Benutzers einzugeben. Wenn Sie eingeloggt sind, können Sie zum nächsten Schritt „[Via SSH mit Ihrem Speicherplatz interagieren](./#schritt-4-via-ssh-mit-ihrem-speicherplatz-interagieren)“ übergehen.
 
-![SSH verwenden](images/terminal-ssh-login.png){.thumbnail}
+![SSH verwenden](/pages/assets/screens/other/web-tools/terminal/terminal-ssh-login.png){.thumbnail}
 
 #### 3.2 Über eine Anwendung
 

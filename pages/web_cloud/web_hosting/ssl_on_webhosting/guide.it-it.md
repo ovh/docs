@@ -83,9 +83,9 @@ Prima di procedere con questa configurazione, assicurati che lo step precedente 
 >
 > Prima di proseguire, assicurati anche che il record o i record multisito per i quali attivi l'opzione SSL puntino verso l'indirizzo IP dell'hosting Web. Questa configurazione viene proposta automaticamente quando aggiungi o modifichi un record multisito, ma deve essere fatta manualmente per un dominio non gestito nel tuo Spazio Cliente.<br>
 > - Nella scheda `Informazioni generali`{.action}, clicca su `IPv4` e seleziona l'indirizzo IP del tuo hosting.
-> ![managessl](images/find-ipv4.png){.thumbnail}
+> ![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4.png){.thumbnail}
 > - Configura la zona DNS del dominio dichiarato su multisito, dalla sezione `Domini`{.action}, nella scheda `Zona DNS`{.action}. Modifica o aggiungi un record di tipo `A` corrispondente al tuo record multisito e inserisci l'indirizzo IP del tuo hosting nella `Cible`.
-> ![managessl](images/modify-an-entry.png){.thumbnail}
+> ![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/modify-an-entry.png){.thumbnail}
 >
 > Per maggiori informazioni, consulta le nostre guide [sulla configurazione di un record multisito](/pages/web_cloud/web_hosting/multisites_configure_multisite) o su [la configurazione di una zona DNS](/pages/web_cloud/domains/dns_zone_edit).
 
@@ -101,11 +101,11 @@ Clicca sui tre puntini `...`{.action} in corrispondenza di "Certificato SSL" e s
 
 Nel caso che invece compaia la voce “Sì”, significa che sull’hosting Web è già installato un certificato e non sarà possibile ordinarne un altro fino a quando quello esistente risulterà attivo.
 
-![Gestione SSL](images/order-an-ssl-certificate.png){.thumbnail}
+![Gestione SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-an-ssl-certificate.png){.thumbnail}
 
 Nella nuova finestra, seleziona il certificato che vuoi generare. Ti ricordiamo che, in base al [piano di hosting Web](/links/web/hosting){.external} attivo e alla sua configurazione, alcune delle soluzioni elencate in questa guida potrebbero non essere disponibili. Una volta effettuata la scelta, clicca sul pulsante `Seguente`{.action}.
 
-![Gestione SSL](images/order-an-ssl-certificate-step-1-le.png){.thumbnail}
+![Gestione SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-an-ssl-certificate-step-1-le.png){.thumbnail}
 
 A seconda dell’opzione selezionata, potrebbero essere necessari alcuni step aggiuntivi:
 
@@ -117,7 +117,7 @@ A seconda dell’opzione selezionata, potrebbero essere necessari alcuni step ag
 
 In base alla tipologia di certificato scelta, l’installazione può durare da pochi minuti a diversi giorni. Per verificare che l’operazione sia stata effettuata correttamente, ritorna alla scheda `Informazioni generali`{.action} dello Spazio Cliente OVHcloud e verifica che nel riquadro **Configurazione** sotto **Certificato SSL** compaia la voce “Sì”.
 
-![Gestione SSL](images/tab-ssl-le.png){.thumbnail}
+![Gestione SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/tab-ssl-le.png){.thumbnail}
 
 ### 3. Rigenerare un certificato SSL di un hosting Web <a name="regeneratessl"></a>
 
@@ -130,13 +130,13 @@ Una volta attivata la connessione SSL su uno o più dei tuoi multisiti, lo stato
 
 Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external} e seleziona `Web Cloud`{.action}. Nella sezione `Hosting`{.action}, Assicurati di trovarti nella scheda `Informazioni generali`{.action}. Clicca sui tre puntini `...`{.action} in corrispondenza di "Certificato SSL" e `seleziona Rigenera il certificato SSL`{.action}.
 
-![Gestione SSL](images/regenerate-ssl-certificate.png){.thumbnail}
+![Gestione SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/regenerate-ssl-certificate.png){.thumbnail}
 
 Leggi le informazioni che compaiono nella nuova finestra, clicca su `Conferma`{.action} e attendi il tempo necessario alla rigenerazione del certificato. Questa operazione potrebbe durare anche diverse ore.
 
 Ti ricordiamo che Let's Encrypt, l’autorità che fornisce i certificati SSL sugli hosting Web OVHcloud, impone un [limite di cinque rigenerazioni a settimana](https://letsencrypt.org/docs/rate-limits/){.external}. Ti consigliamo quindi di verificare attentamente il numero di rigenerazioni settimanali da eseguire, per evitare qualsiasi impatto sulla tua attività.
 
-![Gestione SSL](images/ssl-regeneration.png){.thumbnail}
+![Gestione SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ssl-regeneration.png){.thumbnail}
 
 ### Eliminare un certificato SSL da un hosting Web <a name="deletessl"></a>
 
@@ -148,7 +148,7 @@ Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external} e seleziona `We
 
 Nella nuova pagina, conferma l’eliminazione: l’operazione diventerà effettiva entro poche ore.
 
-![Gestione SSL](images/delete-ssl.png){.thumbnail}
+![Gestione SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/delete-ssl.png){.thumbnail}
 
 > [!warning]
 >

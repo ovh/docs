@@ -18,11 +18,11 @@ Un **nom de domaine** est composé de niveaux. Ces niveaux sont eux-mêmes gén�
     - Les **new** **g**eneric **T**op **L**evel **D**omains (**new gTLDs**), nouvelles extensions créées à partir de 2012 par l'**I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) afin de répondre à la forte hausse des demandes de création de noms de domaine. Elles peuvent correspondre à des thèmes génériques, des marques, des régions ou des villes. Par exemple, les extensions *.love*, *.ovh* ou encore *.paris* sont des new gTLDs.
     - Les **Corp**oration **T**op **L**evel **D**omains (**CorpTLDs**). Il s'agit en réalité d'une sous catégorie des new GTLDs. Sur demande auprès de l'ICANN, les entreprises ou organisations peuvent demander la création de leur propre TLD. Par exemple, l'extension *.ovh* est une CorpTLD créée par OVHcloud il y a quelques années.
 
-- **S**econd **L**evel **D**omain (**SLD**) représente les domaines de *deuxième niveau*. Nous les appelons plus communément les **labels**. Lorsque vous commandez un nom de domaine, c'est le labelque vous pouvez définir librement (sous réserve que celui-ci n'ait pas déjà été enregistré par un autre utilisateur sur la même extension et dans la limite de 63 caractères). Par exemple, *ovhcloud* correspond au label du nom de domaine *ovhcloud.com*.
+- **S**econd **L**evel **D**omain (**SLD**) représente les domaines de *deuxième niveau*. Nous les appelons plus communément les **labels**. Lorsque vous commandez un nom de domaine, c'est le label que vous pouvez définir librement (sous réserve que celui-ci n'ait pas déjà été enregistré par un autre utilisateur sur la même extension et dans la limite de 63 caractères). Par exemple, *ovhcloud* correspond au label du nom de domaine *ovhcloud.com*.
 
 - Third Level Domain (**subdomain**). C'est à partir de ce troisième niveau que l'on parle de **sous-domaine**. Nous allons détailler sa définition dans ce guide et vous expliquer comment le mettre en place avec vos différents services.
 
-![URL content](images/url-composition.png){.thumbnail}
+![URL content](/pages/assets/schemas/domains/url-composition.png){.thumbnail}
 
 **Découvrez les sous-domaines et comment en créer chez OVHcloud.**
 

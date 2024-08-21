@@ -56,7 +56,7 @@ Conéctese al [área de cliente de OVHcloud](/links/manager){.external} en la se
 
 Se mostrará una tabla con todos los registros DNS del dominio seleccionado.
 
-![Zona DNS](images/tab.png){.thumbnail}
+![Zona DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/tab-mydomain-anycast.png){.thumbnail}
 
 Cada registro DNS puede modificarse haciendo clic en el botón `...`{.action} a la derecha de la fila de la tabla correspondiente y haciendo clic en `Modificar el registro`{.action}.
 
@@ -66,7 +66,7 @@ Siga los pasos en el orden indicado en las fichas siguientes:
 > **Paso 1**
 >> **Registro A**<br><br>
 >> Para identificar los registros "A" existentes, haga clic en el menú de filtros situado en la parte superior de la tabla de registros DNS y seleccione `A`.<br>
->> ![Zona DNS](images/filter-a.png){.thumbnail}
+>> ![Zona DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-a.png){.thumbnail}
 >>
 >> - Haga clic en el botón `...`{.action} a la derecha de la fila de la tabla que corresponde a su nombre de dominio solo, sin subdominio (por ejemplo: `mydomain.ovh.`) y haga clic en `Editar el registro`{.action}.
 >> - Si hay un registro para el subdominio "www." (por ejemplo: `www.mydomain.ovh.`), deberá eliminarlo para que no entre en conflicto con el registro CNAME que vaya a introducir en el paso 3. Haga clic en el botón `...`{.action} a la derecha de la fila correspondiente a su nombre de dominio solo y con el subdominio "www." y haga clic en `Eliminar el registro`{.action}.
@@ -76,19 +76,19 @@ Siga los pasos en el orden indicado en las fichas siguientes:
 > **Paso 2**
 >> **Registro AAAA**<br><br>
 >> Para identificar los registros "AAAA" existentes, haga clic en el menú de filtros situado en la parte superior de la tabla de registros DNS y seleccione `AAAA`.<br>
->> ![Zona DNS](images/filter-aaaa.png){.thumbnail}
+>> ![Zona DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png){.thumbnail}
 >>
 >> - Si existen registros "AAAA" para el dominio solo (por ejemplo, `mydomain.ovh.`) y para su subdominio "www" (por ejemplo, `www.mydomain.ovh.`), deberá eliminarlos para que no entren en conflicto con los registros "A" y "CNAME" que vaya a introducir en el paso 4. Haga clic en el botón `...`{.action} a la derecha de la fila correspondiente a su nombre de dominio solo y con el subdominio "www." y haga clic en `Eliminar el registro`{.action}.<br>
 > **Paso 3**
 >> **Registro TXT**<br><br>
 >>  Para identificar los registros "TXT" existentes, haga clic en el menú de filtros situado en la parte superior de la tabla de registros DNS y seleccione `TXT`.<br>
->> ![Zona DNS](images/filter-txt.png){.thumbnail}
+>> ![Zona DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-txt.png){.thumbnail}
 >>
 >> - Si existen registros "TXT" para el dominio solo (p. ej.: `mydomain.ovh.`) y para su subdominio "www" (p. ej.: `www.mydomain.ovh.`), deberá eliminarlos para que no entren en conflicto con el registro CNAME que vaya a introducir en el paso 4. Haga clic en el botón `...`{.action} a la derecha de la fila correspondiente a su nombre de dominio solo con el subdominio "www." y haga clic en `Eliminar el registro`{.action}.<br>
 > **Paso 4**
 >> **Registro CNAME**<br><br>
 >>  Para identificar los registros "CNAME" existentes, haga clic en el menú de filtros situado en la parte superior de la tabla de registros DNS y seleccione `CNAME`.<br>
->> ![Zona DNS](images/filter-cname.png){.thumbnail}
+>> ![Zona DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-cname.png){.thumbnail}
 >>
 >> - Haga clic en el botón `...`{.action} a la derecha de la fila de la tabla correspondiente a su subdominio en "www." (por ejemplo: `mydomain.ovh.`) y haga clic en `Modificar el registro`{.action}.
 >> - Si no tiene un registro "CNAME" existente, haga clic en el botón `Añadir un registro`{.action} en la parte superior derecha de su pantalla y seleccione el "Campo de registro" `CNAME`{.action}.

@@ -42,7 +42,7 @@ Log in to your [OVHcloud Control Panel](/links/manager) with an administrator ac
 
 Select your infrastructure under `VMware`{.action} then click on the `Operations`{.action} tab.
 
-![Maintenance Operation](/pages/assets/screens/manager/hosted_private_cloud/VMware/private_cloud/pcc/Maintenance.png){.thumbnail}
+![Maintenance Operation](/pages/assets/screens/control_panel/product-selection/hosted-private-cloud/vmware/operations/maintenance.png){.thumbnail}
 
 To see the operations in progress or refresh the old operations, use the `Refresh`{.action} button located in the top right-hand corner of the operations table.
 
@@ -52,7 +52,7 @@ For more information on rescheduling a maintenance operation, please read our gu
 
 You can also filter operations by status via the dropdown menu above the table on the left.
 
-![Maintenance Operation Filter](/pages/assets/screens/manager/hosted_private_cloud/VMware/private_cloud/operation/Maintenance-filter.png){.thumbnail}
+![Maintenance Operation Filter](/pages/assets/screens/control_panel/product-selection/hosted-private-cloud/vmware/operations/maintenance-filter.png){.thumbnail}
 
 ### Access to details of maintenance operations
 

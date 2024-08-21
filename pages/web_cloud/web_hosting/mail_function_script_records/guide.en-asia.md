@@ -1,7 +1,7 @@
 ---
 title: "Monitoring and managing automated emails in your web hosting plan"
 excerpt: "Find out how to monitor and manage automated emails sent from your OVHcloud web hosting plan"
-updated: 2023-12-04
+updated: 2024-08-20
 ---
 
 ## Objective 
@@ -74,7 +74,7 @@ If you notice that the emails generated from your scripts are no longer sent, bu
 
 ```bash
 <?php
-$to = "RecipientEmail@adress.tld"; 
+$to = "RecipientEmail@address.tld"; 
 $subject = "Test mail PHP"; 
 $content = "The body/content of the Email";
 $headers = "From: Website <SendingEmail@address.tld>\r\nReply-To: SendingEmail@address.tld";
@@ -125,7 +125,7 @@ This state occurs when spam emails are sent from your hosting.
 
 Generally, this block is accompanied by the sending of an email titled **“Abuse with your domain.tld hosting”**, generated automatically by our security robots.
 
-![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/email-sending-to-customer/webhosting/email-script-disabled.png){.thumbnail}
+![hosting](/pages/assets/screens/email-sending-to-customer/webhosting/email-script-disabled.png){.thumbnail}
 
 There are three possible scenarios for this situation:
 
@@ -202,7 +202,7 @@ $mail->Host = "your.smtp.server";
 $mail->SMTPAuth = true; 
 $mail->SMTPSecure = "ssl";
 $mail->Port = 465; 
-$mail->Username = "e-mail@adress.tld"; 
+$mail->Username = "e-mail@address.tld"; 
 $mail->Password = "YourEmailPassword"; 
 ```
 

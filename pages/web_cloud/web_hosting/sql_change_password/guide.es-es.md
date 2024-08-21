@@ -199,29 +199,29 @@ De nuevo, existen dos posibles situaciones:
 
 En la sección `Alojamientos`{.action} del área de cliente, acceda a la pestaña `Bases de datos`{.action} que aparece a la derecha de la pantalla.
 
-![database-password-step1](images/tab.png){.thumbnail}
+![database-password-step1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
 
 Haga clic en los tres puntos situados al final de la línea correspondiente a la base de datos del sitio web y seleccione `Cambiar la contraseña`{.action}.
 
-![database-password-step2](images/change-password.png){.thumbnail}
+![database-password-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password.png){.thumbnail}
 
 Se abrirá una ventana en la que deberá introducir la nueva contraseña de la base de datos (definida en el [etapa 3](#step3)). Confírmela y haga clic en `Aceptar`{.action}.
 
-![database-password-step3](images/change-password-window.png){.thumbnail}
+![database-password-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password-window.png){.thumbnail}
 
 #### Caso n° 2: la base de datos de su sitio web forma parte de una solución Web Cloud Databases. <a name="case2"></a>
 
 Acceda a la sección `Bases de datos`{.action} del área de cliente y haga clic en el servidor correspondiente en la pestaña `Usuarios y permisos`{.action}.
 
-![userDBpassword-step1](images/wcdb-tab.png){.thumbnail}
+![userDBpassword-step1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-tab.png){.thumbnail}
 
 Para cambiar la contraseña de la base de datos en el servidor, haga clic en los tres puntos situados al final de la línea correspondiente al `Nombre de usuario`{.action} que se haya identificado en [el etapa 2](#step2) y seleccione `Cambiar la contraseña`{.action}.
 
-![userDBpassword-step2](images/wcdb-change-password.png){.thumbnail}
+![userDBpassword-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-change-password.png){.thumbnail}
 
 Se abrirá una ventana en la que deberá introducir la nueva contraseña de la base de datos (definida en [el etapa 3](#step3)). Confírmela y haga clic en `Aceptar`{.action}.
 
-![userDBpassword-step3](images/wcdb-change-password-window.png){.thumbnail}
+![userDBpassword-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-change-password-window.png){.thumbnail}
 
 ## Más información <a name="go-further"></a>
 

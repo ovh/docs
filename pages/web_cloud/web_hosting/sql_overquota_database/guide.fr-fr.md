@@ -58,13 +58,13 @@ Connectez-vous à votre [espace client OVHcloud](/links/manager) et sélectionne
 
 Un tableau listant vos bases de données s'affiche sur la partie basse de l'écran.
 
-![phpMyAdmin Access](images/go-to-phpmyadmin.png){.thumbnail}
+![phpMyAdmin Access](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
 
 Notez, **pour votre base de données saturée**, son `Nom d'utilisateur` et son `Adresse du serveur` présents dans le tableau listant vos bases de données. 
 
 Toujours depuis l'onglet `Bases de données`{.action}, cliquez sur le bouton `...`{.action} à droite de la base de données qui est saturée puis sur `Accéder à phpMyAdmin`{.action}.
 
-![phpMyAdmin Go Login](images/pma-interface-login.png){.thumbnail}
+![phpMyAdmin Go Login](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
 
 Renseignez les informations d'accès à votre base de données puis cliquez sur `Connexion`{.action}.
 
@@ -79,11 +79,11 @@ Renseignez les informations d'accès à votre base de données puis cliquez sur 
 
 Une fois connecté, la page suivante s'affiche :
 
-![phpMyAdmin Login](images/pma-main-page.png){.thumbnail}
+![phpMyAdmin Login](/pages/assets/screens/other/web-tools/phpmyadmin/pma-main-page-2.png){.thumbnail}
 
 Cliquez sur le `« Nom de votre base de données »`{.action} dans la colonne de gauche puis sur `Taille`{.action} en haut à droite du tableau qui s'affiche :
 
-![phpMyAdmin Tables](images/pma-check-size.png){.thumbnail}
+![phpMyAdmin Tables](/pages/assets/screens/other/web-tools/phpmyadmin/pma-check-size.png){.thumbnail}
 
 Les tables les plus volumineuses apparaissent en haut du tableau. Identifiez celles-ci puis passez à l'**étape 2**.
 
@@ -158,7 +158,7 @@ Dans le cas d'un overquota ou d'une table volumineuse, **trois commandes** sont 
 
 Vous pouvez directement effectuer ces requêtes depuis l'interface **phpMyAdmin**, via l'onglet `SQL`{.action} :
 
-![phpMyAdmin SQL request](images/pma-sql-menu.png){.thumbnail}
+![phpMyAdmin SQL request](/pages/assets/screens/other/web-tools/phpmyadmin/pma-sql-menu.png){.thumbnail}
 
 - La commande **DELETE** : 
 

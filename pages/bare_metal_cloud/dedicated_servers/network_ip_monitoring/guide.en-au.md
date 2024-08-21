@@ -45,7 +45,7 @@ Reverse|IP|Protocol|
 
 ### Server monitoring
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external} and select the `Bare Metal Cloud`{.action} tab. Select the server concerned in the `Dedicated servers`{.action} menu.
+Log in to the [OVHcloud Control Panel](/links/manager){.external} and select the `Bare Metal Cloud`{.action} tab. Select the server concerned in the `Dedicated servers`{.action} menu.
 
 You can set the monitoring status for a dedicated server from the `General information`{.action} tab (section **Service status**).
 
@@ -65,4 +65,4 @@ Click on `Confirm`{.action} to update your monitoring configuration.
 
 [Configure the Network Firewall.](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

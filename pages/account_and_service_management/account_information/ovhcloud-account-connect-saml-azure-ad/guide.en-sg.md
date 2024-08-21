@@ -1,7 +1,7 @@
 ---
 title: Enabling Entra ID SSO connections with your OVHcloud account
 excerpt: "Find out how to associate your Entra ID (formerly Azure Active Directory) to your OVHcloud account using SAML 2.0"
-updated: 2024-06-25
+updated: 2024-07-05
 ---
 
 ## Objective
@@ -219,7 +219,7 @@ Click on the `SSO connection`{.action} button.
 
 ![OVHcloud connect SSO step 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 
-Fill in the **Group Attribute Name** field with the Entra ID application groups **Claim name** value saved before.
+Fill in the field **User Attribute Name** with the Entra ID application **UPN** claim name and enter the **groups** claim name value saved before into the field **Group Attribute Name**. 
 
 Fill in the XML metadata of your Entra ID application from the file saved before.
 

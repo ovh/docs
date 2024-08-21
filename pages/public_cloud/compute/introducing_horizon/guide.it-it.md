@@ -23,7 +23,7 @@ L'interfaccia Horizon, originariamente proposta con OpenStack, è stata adattata
 
 ### Connettersi a OpenStack Horizon
 
-* Per accedere con l’autenticazione unica OVHcloud, clicca sul link `Horizon`{.action} nel menu di sinistra sotto "Management Interfaces" dopo aver aperto il tuo progetto `Public Cloud`{.action} nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+* Per accedere con l’autenticazione unica OVHcloud, clicca sul link `Horizon`{.action} nel menu di sinistra sotto "Management Interfaces" dopo aver aperto il tuo progetto `Public Cloud`{.action} nel tuo [Spazio Cliente OVHcloud](/links/manager).
 
 * Per accedere con un utente OpenStack specifico: apri la pagina di accesso a [Horizon](https://horizon.cloud.ovh.net/auth/login/) e inserisci le [credenziali OpenStack](/pages/public_cloud/compute/create_and_delete_a_user) precedentemente create, poi clicca su `Connect`{.action}.
 

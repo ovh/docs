@@ -1,7 +1,7 @@
 ---
 title: "Web hosting : entorno, versión PHP, .ovhconfig"
 excerpt: "Descubra cómo cambiar el entorno de ejecución, la versión PHP, el firewall de aplicaciones, el motor, el modo y el .ovhconfig de un alojamiento web"
-updated: 2024-03-12
+updated: 2024-07-16
 ---
 
 > [!primary]
@@ -11,6 +11,8 @@ updated: 2024-03-12
 ## Objetivo
 
 Los planes de [hosting de OVHcloud](/links/web/hosting){.external} permiten alojar el sitio web que usted quiera, siempre que sea compatible con la [configuración de nuestras infraestructuras compartidas](https://webhosting-infos.hosting.ovh.net){.external}.
+
+La modificación del archivo **php.ini** no está disponible en los planes de hosting. Esto se debe a que la configuración PHP es global en el conjunto de la infraestructura compartida.
 No obstante, en nuestras infraestructuras compartidas, puede modificar los siguientes parámetros para su alojamiento web:
 
 - [El entorno de ejecución](#runtime-environment)

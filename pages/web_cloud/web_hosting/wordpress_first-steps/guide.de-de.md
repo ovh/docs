@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Erste Schritte mit WordPress"
 excerpt: "Erfahren Sie hier, wie Sie eine Website mit dem CMS WordPress erstellen"
-updated: 2023-02-17
+updated: 2024-07-15
 ---
 
 > [!primary]
@@ -41,7 +41,7 @@ Bei der Installation Ihres CMS als 1-Klick Modul erhalten Sie eine E-Mail mit de
 
 Klicken Sie auf den Zugangslink zur Verwaltungsoberfläche, der bei der Installation des CMS per E-Mail übermittelt wurde. Diese URL endet mit auf `wp-admin`. Wenn Sie nicht eingeloggt sind, wird **WordPress** Sie automatisch auf eine URL umleiten, die mit einem `wp-login` endet:
 
-![WordPress - Admin Login](images/admin-login.png){.thumbnail}
+![WordPress - Admin Login](/pages/assets/screens/other/cms/wordpress/admin-login.png){.thumbnail}
 
 > [!primary]
 > 
@@ -50,7 +50,7 @@ Klicken Sie auf den Zugangslink zur Verwaltungsoberfläche, der bei der Installa
 
 Geben Sie den Login (Username) ein, der Ihnen per E-Mail gesendet wurde, sowie das in derselben E-Mail angegebene WordPress-Passwort. So gelangen Sie auf Ihr Dashboard:
 
-![WordPress - Dashboard](images/dashboard.png){.thumbnail}
+![WordPress - Dashboard](/pages/assets/screens/other/cms/wordpress/dashboard.png){.thumbnail}
 
 ### Das Layout Ihrer Website ändern
 
@@ -58,11 +58,11 @@ Geben Sie den Login (Username) ein, der Ihnen per E-Mail gesendet wurde, sowie d
 
 Um Ihr *Theme* zu ändern, klicken Sie im linken Menü Ihres Dashboards auf `Design`{.action} und dann auf `Themes`{.action}:
 
-![WordPress - Appearance/Themes](images/dashboard-themes.png){.thumbnail}
+![WordPress - Appearance/Themes](/pages/assets/screens/other/cms/wordpress/dashboard-themes.png){.thumbnail}
 
 Wählen Sie aus den angebotenen *Themes* eines aus und klicken Sie auf `Aktivieren`{.action}:
 
-![WordPress - Appearance/Themes](images/themes.png){.thumbnail}
+![WordPress - Appearance/Themes](/pages/assets/screens/other/cms/wordpress/themes.png){.thumbnail}
 
 Sie können sich das Ergebnis anzeigen lassen, indem Sie den Domainnamen Ihrer Website im Browser aufrufen.
 
@@ -72,19 +72,19 @@ Mit WordPress können Sie Inhalte erstellen, ohne über Kenntnisse in der Webent
 
 Um einen Artikel zu erstellen, gehen Sie in den Bereich `Beiträge`{.action} im Menü links und klicken Sie dann auf `Erstellen`{.action}:
 
-![WordPress - Posts/Add New](images/dashboard-add-new-post.png){.thumbnail}
+![WordPress - Posts/Add New](/pages/assets/screens/other/cms/wordpress/dashboard-add-new-post.png){.thumbnail}
 
 Seit Version 5 bietet **WordPress** ein Interface an, um die Erstellung und Bearbeitung von Artikeln zu vereinfachen: **Gutenberg**. Es handelt sich um einen WYSIWYG-Editor ("*what you see is what you get*"). Sie können damit Ihre Seite konstruieren, indem Sie Elemente wie Titel, Absätze, Listen, Bilder usw. hinzufügen.
 
-![WordPress - Gutenberg](images/post-editor.png){.thumbnail}
+![WordPress - Gutenberg](/pages/assets/screens/other/cms/wordpress/post-editor.png){.thumbnail}
 
 Klicken Sie auf `Titel hier eingeben`{.action} ein, um einen Titel zu Ihrer Seite hinzuzufügen:
 
-![WordPress - Gutenberg, add title](images/post-editor-2.png){.thumbnail}
+![WordPress - Gutenberg, add title](/pages/assets/screens/other/cms/wordpress/post-editor-2.png){.thumbnail}
 
 Um Inhalte hinzuzufügen, klicken Sie auf `+`{.action} und wählen Sie aus, was Sie einfügen möchten:
 
-![WordPress - Gutenberg, add block](images/post-editor-3.png){.thumbnail}
+![WordPress - Gutenberg, add block](/pages/assets/screens/other/cms/wordpress/post-editor-3.png){.thumbnail}
 
 Rechts auf der Seite können Sie über drei Links folgende Aktionen ausführen:
 
@@ -94,7 +94,7 @@ Rechts auf der Seite können Sie über drei Links folgende Aktionen ausführen:
 
 Klicken Sie auf `Vorschau`{.action} und dann auf `Vorshau in neuem Tab`{.action}. Wählen Sie den Gerätetyp aus, für den die Vorschau durchgeführt werden soll (PC, Tablet oder Smartphone):
 
-![WordPress - Preview](images/post-view.png){.thumbnail}
+![WordPress - Preview](/pages/assets/screens/other/cms/wordpress/post-view.png){.thumbnail}
 
 Um zum Verwaltungsinterface von **WordPress** zurückzukehren klicken Sie oben links auf das Icon.
 
@@ -102,7 +102,7 @@ Um zum Verwaltungsinterface von **WordPress** zurückzukehren klicken Sie oben l
 
 **WordPress** erlaubt es, Kategorien zu definieren und Ihre Artikel mit einer oder mehreren Kategorien zu verbinden. Um die Kategorien Ihrer Website zu verwalten, gehen Sie in den Bereich `Beiträge`{.action} und dann in den Bereich `Kategorien`{.action}:
 
-![WordPress - Kategorien](images/categories.png){.thumbnail}
+![WordPress - Kategorien](/pages/assets/screens/other/cms/wordpress/categories.png){.thumbnail}
 
 Geben Sie nun das Formular ein, um eine neue Kategorie hinzuzufügen:
 
@@ -111,25 +111,25 @@ Geben Sie nun das Formular ein, um eine neue Kategorie hinzuzufügen:
 - **Parent category**: Erlaubt die Hierarchisierung Ihrer Kategorien (Kategorien können Unterkategorien einer bestehenden Kategorie sein).
 - **Description**: Die Beschreibung Ihrer Kategorie ist standardmäßig nicht sichtbar, kann aber in anderen *Themes* sichtbar sein.
 
-![WordPress - Categories filled](images/categories-2.png){.thumbnail}
+![WordPress - Categories filled](/pages/assets/screens/other/cms/wordpress/categories-2.png){.thumbnail}
 
 Wenn Sie diese Informationen eingegeben haben, klicken Sie auf den Button `Neue Kategorie erstellen`{.action}:
 
-![WordPress - Added Categories](images/categories-3.png){.thumbnail}
+![WordPress - Added Categories](/pages/assets/screens/other/cms/wordpress/categories-3.png){.thumbnail}
 
 Sie können die Hierarchie Ihrer Kategorien verwalten. Eine neue Kategorie kann mit einer bestehenden Kategorie verknüpft werden:
 
-![WordPress - Sub-Categorie added](images/categories-4.png){.thumbnail}
+![WordPress - Sub-Categorie added](/pages/assets/screens/other/cms/wordpress/categories-4.png){.thumbnail}
 
 ### Eine Kategorie einem Artikel zuweisen
 
 Um einen Artikel einer oder mehreren Kategorien zuzuweisen klicken Sie auf `Beiträge`{.action}. Sie erhalten die Liste mit allen Artikeln und deren Status. Navigieren Sie über den Titel des Artikels, den Sie klassifizieren möchten, und klicken Sie auf `QuickEdit`{.action}:
 
-![WordPress - Categorize a post](images/posts-lists.png){.thumbnail}
+![WordPress - Categorize a post](/pages/assets/screens/other/cms/wordpress/posts-lists.png){.thumbnail}
 
 Ändern Sie die Kategorien, indem Sie die in `Kategorien`{.action} aufgeführten Elemente ankreuzen oder entfernen:
 
-![WordPress - Set new categories to an existing post](images/posts.png){.thumbnail}
+![WordPress - Set new categories to an existing post](/pages/assets/screens/other/cms/wordpress/posts.png){.thumbnail}
 
 > [!warning]
 >
@@ -142,7 +142,7 @@ Seiten sind von Artikeln zu unterscheiden. Sie dienen hauptsächlich dazu, stati
 
 Gehen Sie auf `Seiten`{.action}:
 
-![WordPress - GB to Pages](images/pages.png){.thumbnail}
+![WordPress - GB to Pages](/pages/assets/screens/other/cms/wordpress/pages.png){.thumbnail}
 
 > [!primary]
 >
@@ -151,15 +151,15 @@ Gehen Sie auf `Seiten`{.action}:
 
 Klicken Sie auf `Erstellen`{.action}; dies öffnet den Gutenberg-Editor:
 
-![WordPress - Pages, Gutenberg page builder](images/pages-editor.png){.thumbnail}
+![WordPress - Pages, Gutenberg page builder](/pages/assets/screens/other/cms/wordpress/pages-editor.png){.thumbnail}
 
 Erstellen Sie den Inhalt Ihrer Seite und veröffentlichen Sie ihn:
 
-![WordPress - Seiten, content](images/post-editor-4.png){.thumbnail}
+![WordPress - Seiten, content](/pages/assets/screens/other/cms/wordpress/post-editor-4.png){.thumbnail}
 
 Wenn Sie zur Startseite Ihrer Website zurückkehren, sehen Sie den Link zu Ihrer neuen Seite:
 
-![WordPress - Home page with new page link](images/main-page-view.png){.thumbnail}
+![WordPress - Home page with new page link](/pages/assets/screens/other/cms/wordpress/main-page-view.png){.thumbnail}
 
 ### Permalinks verbessern
 
@@ -167,11 +167,11 @@ Die Links zu Ihren in **WordPress** veröffentlichten Webseiten werden mit einer
 
 Gehen Sie auf der Startseite des Dashboards auf den Bereich `Einstellungen`{.action} und dann auf `Permalinks`{.action}:
 
-![WordPress - Settings/Permalinks](images/dashboard-users-permalinks.png){.thumbnail}
+![WordPress - Settings/Permalinks](/pages/assets/screens/other/cms/wordpress/dashboard-users-permalinks.png){.thumbnail}
 
 Sie haben dann die Wahl zwischen verschiedenen Permalink-Typen. Wählen Sie den "Publication title" und bestätigen Sie am Ende der Seite:
 
-![WordPress - Settings/Permalinks, select post name pattern](images/permalink-settings.png){.thumbnail}
+![WordPress - Settings/Permalinks, select post name pattern](/pages/assets/screens/other/cms/wordpress/permalink-settings.png){.thumbnail}
 
 Ihre Links werden auf dem *Slug* basierend erstellt, der zuvor beim Editieren Ihrer Artikel und Seiten angegeben wurde.
 
@@ -185,6 +185,7 @@ Ihre Links werden auf dem *Slug* basierend erstellt, der zuvor beim Editieren Ih
     - [Elegant Themes](https://www.elegantthemes.com/){.external}
     - [Elementor](https://elementor.com/){.external}
 - Finden Sie mehr Informationen auf der offiziellen Website von [WordPress](https://wordpress.org/){.external}.
+- [Verwenden Sie SFTP, um Dateien oder Seiten auf Ihr WordPress zu übertragen](https://wordpress.com/de/support/sftp/){.external}.
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 

@@ -1,7 +1,7 @@
 ---
-title: Zmiana klucza SSH w przypadku utraty
-excerpt: Zmiana klucza SSH w przypadku utraty
-updated: 2022-02-10
+title: "Jak zastąpić parę kluczy SSH na instancji Public Cloud"
+excerpt: "Dowiedz się, jak przywrócić dostęp do serwera, zastępując parę kluczy SSH nową parą w przypadku utraty klucza prywatnego"
+updated: 2024-06-13
 ---
 
 > [!primary]
@@ -10,81 +10,74 @@ updated: 2022-02-10
 
 ## Wprowadzenie
 
-W przypadku utraty klucza SSH, niezależnie od tego, czy nastąpiła zmiana instalacji poczty czy innego typu, możliwe jest, że nie będziesz mógł się zalogować do instancji, jeśli nie skonfigurowałeś żadnego innego sposobu logowania się do instancji.
+Utrata prywatnego klucza SSH spowoduje utratę dostępu do instancji, jeśli nie skonfigurowałeś innych metod dostępu.
 
-Aby odzyskać dostęp, udostępniliśmy [tryb Rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode), który pozwala na zalogowanie się przy użyciu hasła i na zmianę plików.
+Nadal jednak możesz logować się do Twojej instancji w trybie Rescue OVHcloud, który pozwala na zalogowanie się przy użyciu tymczasowego hasła i na modyfikację plików.
 
-**Niniejszy przewodnik wyjaśnia, jak skonfigurować plik *authorized_keys* użytkownika *admin*, aby móc dodać nowy klucz SSH, aby uzyskać dostęp do instancji.**
+**Ten przewodnik wyjaśnia, jak wymienić klucze SSH w przypadku utraty dostępu do instancji.**
+
+> [!warning]
+> OVHcloud zapewnia usługi, ale to użytkownik ponosi odpowiedzialność za zarządzanie nimi oraz ich konfigurację. Do Twoich obowiązków należy zatem upewnienie się, że działają one prawidłowo.
+>
+> Ten przewodnik ułatwi Ci realizację bieżących zadań. Niemniej jednak w przypadku problemów zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](/links/partner) lub [naszą społecznością użytkowników](/links/community).
+>
 
 ## Wymagania początkowe
 
-- Posiadanie [instancji Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na Twoim koncie OVHcloud
-- Dostęp do Twojej instancji przez SSH w [tryb Rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode)
-- Utwórz klucz SSH
+- [Instancja Public Cloud](/links/public-cloud/public-cloud) na koncie OVHcloud
+- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 
 ## W praktyce
 
-> [!primary]
->
-Jeśli chcesz zapisać klucz SSH w Panelu klienta OVHcloud, zalecamy użycie szyfrowania RSA lub ECDSA. ED25519 nie jest aktualnie obsługiwany.
->
+### Etap 1: tworzenie nowej pary kluczy
 
-Po zamontowaniu dysku Twojej instancji w [trybie Rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode#dostep-do-danych), będziesz mógł uzyskać dostęp do wszystkich Twoich plików.
+Utwórz nową parę kluczy SSH na Twoim lokalnym urządzeniu, postępując zgodnie z instrukcjami z pierwszej części [przewodnika dotyczącego tworzenia klucza SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 
-Plik zawierający klucze SSH to:
+### Etap 2: dostęp do instancji w trybie Rescue
 
-```sh
-/mnt/home/USER_NAME/.ssh/authorized_keys
+Postępuj zgodnie z instrukcjami zawartymi w [Przewodniku po trybie ratunkowym](/pages/public_cloud/compute/put_an_instance_in_rescue_mode), aby uruchomić instancję w trybie ratunkowym, połączyć się z nią i zamontować partycje.
+
+Po wpisaniu komendy `mount` (zgodnie z opisem w przewodniku) i uzyskaniu dostępu do partycji systemowej, możesz użyć następującej komendy:
+
+```bash
+chroot path/to/partition/mountpoint
 ```
 
-Jeśli chcesz dodać nowy klucz SSH, wystarczy edytować ten plik i dodać nowy klucz:
+Ścieżka pliku zależy od użytego punktu instalacji. Jeśli zamontowałeś partycję w `/mnt`, wprowadź:
 
-```sh
-sudo vim /mnt/home/USER_NAME/.ssh/authorized_keys
-ssh-rsa 1111111111122222222222333333333333444444444555555555556666666666777777777778888888888999999900000000000000000000000000= old@sshkey
-hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh= new@sshkey
+```bash
+chroot /mnt/
 ```
 
-### Zmień klucz SSH użytkownika domyślnie
+W tym folderze powinieneś teraz mieć pełny dostęp z prawem zapisu do plików.
 
-Aby zmienić klucz SSH domyślnego użytkownika, wystarczy przejść do jego osobistego folderu. Na przykład, dla użytkownika administratora, plik, który ma być odnaleziony, znajduje się w następującym folderze:
+### Etap 3: wymiana klucza
 
-```sh
-/home/admin/.ssh/authorized_keys
+Otwórz odpowiedni plik "authorized_keys" w edytorze tekstu. Ten plik przechowuje klucze SSH i znajduje się w folderze `home` użytkownika, z którym łączysz się do instancji.
+
+Przykład:
+
+```bash
+nano /mnt/home/USER_NAME/.ssh/authorized_keys
 ```
 
-W przypadku instancji z Ubuntu domyślnym użytkownikiem będzie Ubuntu, plik będzie więc w następującym folderze:
+Zastąp `USER_NAME` rzeczywistą nazwą użytkownika.
 
-```sh
-/home/ubuntu/.ssh/authorized_keys
+Skopiuj i wklej nowy klucz publiczny (utworzony w etapie 1) do pliku. Powinna wyglądać jak poniższy przykład:
+
+```console
+ssh-rsa 1111111111122222222222333333333333444444444555555555556666666666
+777777777778888888888999999900000000000000000000000000== old@sshkey
+ssh-rsa AAAAAAAAABBBBBBBBBBBCCCCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDEEEEEEEEE
+EEFFFFFFFFFFFFFGGGGGGGGGGGGGhhhhhhhhhhhhhhhhhhhhhhhhhh== new@sshkey
 ```
 
-### Zmiana domyślnego hasła użytkownika
+Ze względów bezpieczeństwa usuń z pliku przestarzały ciąg klucza "old". Zapisz zmiany i zamknij edytor.
 
-Możesz również zmienić domyślne hasło użytkownika, używając trybu Rescue i następujących poleceń (w przypadku gdy użytkownik jest admin):
+Uruchom ponownie instancję w trybie "normalnym" z poziomu [panelu klienta OVHcloud](/links/manager). W razie potrzeby skorzystaj z instrukcji zawartych w [Przewodniku o trybie ratunkowym](/pages/public_cloud/compute/put_an_instance_in_rescue_mode).
 
-Zmieniamy katalog główny i umieszczamy go bezpośrednio na dysku instancji:
-
-> [!primary]
->
-W poniższym przykładzie jako punkt montowania użyliśmy vdb1 jako nazwy dysku serwera.
->
-
-```sh
-/home/admin# mount /dev/vdb1 /mnt/
-/home/admin# chroot /mnt/
-```
-
-Zmiana hasła administratora:
-
-```sh
-passwd admin
-```
-
-Po wykonaniu modyfikacji i zapisaniu jej zawartości wystarczy zrestartować instancję na dysku, aby móc połączyć się z instancją za pomocą nowego klucza SSH.
+Teraz masz dostęp do instancji za pomocą nowej pary kluczy SSH.
 
 ## Sprawdź również
 
-[Zostań użytkownikiem root i wybierz hasło](/pages/public_cloud/compute/become_root_and_change_password)
-
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

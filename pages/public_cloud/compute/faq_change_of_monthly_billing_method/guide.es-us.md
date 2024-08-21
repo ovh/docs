@@ -1,6 +1,6 @@
 ---
 title: FAQ - Modificación de las modalidades de facturación mensual
-excerp: ""
+excerpt: ""
 updated: 2024-03-21
 ---
 
@@ -36,6 +36,6 @@ Así pues, con un compromiso mensual, cada mes comenzado deberá abonarse en su 
 
 ## Más información <a name="go-further"></a>
 
-Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
+Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](/links/professional-services) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

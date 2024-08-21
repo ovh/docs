@@ -28,7 +28,7 @@ Un **nombre de dominio** se compone de niveles. Estos niveles suelen estar separ
 
 - Third Level Domain (**subdomain**): A partir de este tercer nivel, hablamos de **subdominio**. Esta guía explica en detalle su definición y cómo utilizarla con los distintos servicios.
 
-![URL content](images/url-composition.png){.thumbnail}
+![URL content](/pages/assets/schemas/domains/url-composition.png){.thumbnail}
   
 **Descubra los subdominios y cómo crearlos en OVHcloud.**
 

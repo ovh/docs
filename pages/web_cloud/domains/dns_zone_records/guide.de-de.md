@@ -1,7 +1,7 @@
 ---
 title: "Alle Informationen zu DNS-Einträgen"
 excerpt: "Entdecken Sie die verschiedenen Arten von DNS-Einträgen, die in einer OVHcloud DNS-Zone verfügbar sind"
-updated: 2024-06-17
+updated: 2024-07-17
 ---
 
 > [!primary]
@@ -171,7 +171,14 @@ Wählen Sie den gewünschten Eintrag in den Tabs aus:
 >>
 > **TLSA**
 >> **T**ransport **L**ayer **S**ecurity **A**uthentification <br><br>
->> Verwendet, um den Fingerprint eines SSL/TLS-Zertifikats einzugeben.
+>> Verwendet, um den Fingerprint eines SSL/TLS-Zertifikats einzugeben. Damit können Sie den *Hash* eines Zertifikats direkt in der DNS-Zone Ihrer Domain über einen DNS-Eintrag speichern.
+>>
+>> Dieser Eintrag wird im Rahmen des Protokolls **D**NS-based **A**uthentication of **N**amed **E**ntities (DANE) verwendet.
+>>
+>> Mit dem DANE-Protokoll kann ein Client (Webbrowser, E-Mail-Client, FTP-Client, SSH-Client usw.) auf den TLSA-Eintrag zugreifen. So stellt er sicher, dass ein für einen Domainnamen verwendetes SSL/TLS-Zertifikat mit dem Zertifikat des gleichen Domainnamens identisch ist.
+>>
+>> Weitere Informationen finden Sie bei Bedarf auf der Website der [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc6698){.external} (EN).
+>>
 
 #### Anwendungsbeispiel: Verwendung von CNAME-Einträgen <a name="cnameusecase"></a>
 

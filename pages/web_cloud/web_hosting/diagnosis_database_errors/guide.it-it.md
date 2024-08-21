@@ -30,7 +30,7 @@ L'utilizzo dei database può provocare alcune anomalie sul tuo sito o sul tuo [S
 
 ### "Error establishing a database connection"
 
-![error_establishing_a_DB_connection](images/error-establishing-a-db-connection.png){.thumbnail}
+![error_establishing_a_DB_connection](/pages/assets/screens/other/browsers/errors/error-establishing-a-db-connection.png){.thumbnail}
 
 #### Verifica gli incidenti in corso
 
@@ -95,7 +95,7 @@ Nello Spazio Cliente OVHcloud (/links/manager), sezione `Hosting`{.action}, clic
 
 Hai ricevuto un'email dai nostri servizi che indica che la quantità di dati sul tuo database supera il limite autorizzato. Il tuo database è quindi passato in sola lettura. In questo modo il sito non può essere modificato.
 
-![database-overquota-notification-email](images/overquota-db.png){.thumbnail}
+![database-overquota-notification-email](/pages/assets/screens/email-sending-to-customer/databases/overquota-db.png){.thumbnail}
 
 Tre metodi ti permettono di sbloccare il tuo database:
 
@@ -152,7 +152,7 @@ Superamento della capacità della RAM
 
 Nella sezione `Database`{.action} del tuo [Spazio Cliente OVHcloud](/links/manager) è riportato che il tuo server [Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/) ha consumato troppe risorse sull'infrastruttura OVHcloud:
 
-![ram-exceeded](images/ram-exceeded.png){.thumbnail}
+![ram-exceeded](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/ram-exceeded.png){.thumbnail}
 
 In questa situazione è possibile aumentare la [quantità di memoria RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#monitora-la-ram-consumata) disponibile nella sezione `Database`{.action} del tuo [Spazio Cliente OVHcloud](/links/manager). Nella scheda `Informazioni generali`{.action}, clicca sul pulsante `...`{.action} nella sezione `RAM`.
 
@@ -183,7 +183,7 @@ Per prima cosa, assicurati che il database sia vuoto dalla scheda `Database`{.ac
 
 Seleziona la casella `Svuota il database attuale`{.action} immediatamente prima di [avviare l'importazione](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server):
 
-![import-empty-current-db](images/import-empty-current-db.png){.thumbnail}
+![import-empty-current-db](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/import-empty-current-db.png){.thumbnail}
 
 Questo messaggio di errore significa che il database che stai cercando di importare contiene elementi non autorizzati sull'infrastruttura condivisa OVHcloud. Contatta, se necessario, la nostra [Community di utenti](/links/community) o un [provider specializzato](/links/partner). Non saremo in grado di fornirti assistenza sulla correzione di questa anomalia.
 
@@ -232,7 +232,7 @@ Per risolvere questa anomalia, puoi:
 
 Questo messaggio di errore può comparire durante la connessione al tuo database da [PhpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database). Essa indica che gli identificativi indicati sono errati.
 
-![access_denied_for_user](images/pma-error-hy000-1045.png){.thumbnail}
+![access_denied_for_user](/pages/assets/screens/other/web-tools/phpmyadmin/pma-error-hy000-1045.png){.thumbnail}
 
 In questa situazione, [verifica le credenziali inserite](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server) e, se necessario, modifica la [password del tuo database](/pages/web_cloud/web_hosting/sql_change_password).
 
@@ -263,7 +263,7 @@ Per ridurre il numero di connessioni attive, è necessario [ottimizzare i tuoi d
 
 Questo messaggio di errore compare durante la [connessione a PhpMyAdmin](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server) quando il nome del server inserito non è corretto.
 
-![name_or_service_not_known](images/pma-error-hy000-1045.png){.thumbnail}
+![name_or_service_not_known](/pages/assets/screens/other/web-tools/phpmyadmin/pma-error-hy000-2002.png){.thumbnail}
 
 Verifica il nome del server da iscrivere nel tuo [Spazio Cliente OVHcloud](/links/manager).
 

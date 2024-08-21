@@ -61,7 +61,7 @@ Il n'existe pas de RAID meilleur que les autres, tous répondent à des besoins 
 
 ### Étape 2 : installez et configurez le serveur
 
-Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et installez votre serveur. Comme indiqué au début, nous allons utiliser Debian 9.4. Référez-vous à notre guide des [premiers pas sur un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#installation-ou-reinstallation-de-votre-serveur-dedie){.external} pour plus d'informations.
+Rendez-vous dans votre [espace client OVHcloud](/links/manager){.external} et installez votre serveur. Comme indiqué au début, nous allons utiliser Debian 9.4. Référez-vous à notre guide des [premiers pas sur un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#installation-ou-reinstallation-de-votre-serveur-dedie){.external} pour plus d'informations.
 
 Une fois le système sélectionné pour l'installation, cochez la case `Personnaliser la configuration des partitions`{.action}.
 

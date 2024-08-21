@@ -31,7 +31,7 @@ W związku z tym upewnij się, że umieściłeś w rekordzie SPF źródła wysy�
 > - Ponieważ w rekordzie SPF znajduje się serwer poczty wychodzącej **A** (Outgoing Mail Server **A**), wiadomość e-mail zostanie wysłana do skrzynki odbiorczej odbiorcy.
 > - Ponieważ serwer poczty wychodzącej **B** (Outgoing Mail Server **B**) nie jest wymieniony w rekordzie SPF, e-mail wysyłany z tego serwera będzie oznaczony jako podejrzany w skrzynce e-mail z recepcją. Może to oznaczać wskazanie `[SPAM]` w temacie wiadomości e-mail, umieszczenie w folderze `Poczta` lub bezpośrednie usunięcie, zgodnie z zasadami serwera odbierającego.
 >
-> ![domena](images/spf_records_diagram.png){.thumbnail}
+> ![domena](/pages/assets/schemas/emails/spf_records_diagram.png){.thumbnail}
 
 > [!primary]
 >
@@ -78,7 +78,7 @@ W tabeli, aby odnaleźć wiersz odpowiadający SPF OVHcloud, można użyć filtr
 > SPF zawsze składa się z następującej formy: "v=spf1 `sources` `qualifieur`". Na przykład, SPF OVHcloud to: "v=spf1 include:mx.ovh.com ~all".
 >
 
-![domena](images/spf_records_check_OVH_configuration.png){.thumbnail}
+![domena](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_check_OVH_configuration.png){.thumbnail}
 
 ### Konfiguracja rekordu SPF
 
@@ -86,7 +86,7 @@ Aby dodać rekord SPF w konfiguracji OVHcloud Twojej domeny, zaloguj się do [Pa
 
 Aby dodać rekord SPF, kliknij przycisk `Dodaj rekord`{.action}.
 
-![domena](images/spf_records_add_entry_step1.png){.thumbnail}
+![domena](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_add_entry_step1.png){.thumbnail}
 
 W oknie, które się wyświetli, pojawi się kilka rekordów DNS. Jeśli chcesz dodać SPF, masz dwie możliwości:
 
@@ -94,7 +94,7 @@ W oknie, które się wyświetli, pojawi się kilka rekordów DNS. Jeśli chcesz 
 - [Dodaj rekord SPF](#spfrecord): dla użytkowników, którzy nie posiadają całego rekordu. Na przykład dysponujesz tylko adresem IP lub nazwą hosta serwera e-mail.
 - [Dodaj rekord TXT](#txtrecord): dla użytkowników, którzy są ostrzeżeni lub mają już pełny wpis. Na przykład, dostawca rozwiązania poczty elektronicznej przekazuje Ci wartość.
 
-![domena](images/spf_records_add_entry.png){.thumbnail}
+![domena](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_add_entry.png){.thumbnail}
 
 #### Korzystanie z rekordu SPF OVHcloud <a name="spfrecordovhcloud"></a>
 
@@ -108,7 +108,7 @@ Wybrałeś rekord `SPF`{.action} i chcesz zastosować konfigurację OVHcloud. Po
 
 Kliknij na przycisk `Użyj SPF na hostingu OVHcloud`{.action} na górze okna informacyjnego. Wyświetlą się informacje dotyczące SPF OVHcloud. Kliknij przycisk `Zatwierdź`{.action}, aby przeprowadzić modyfikację.
 
-![domena](images/spf_records_add_entry_step2.png){.thumbnail}
+![domena](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_add_entry_step2.png){.thumbnail}
 
 > [!primary]
 >
@@ -123,7 +123,7 @@ Asystent konfiguracji pozwoli Ci na personalizację SPF. W tym celu należy odpo
 
 Będziemy je stopniowo rozwiązywać.
 
-![domena](images/spf_records_add_entry_personnalize_step1.png){.thumbnail}
+![domena](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_add_entry_personnalize_step1.png){.thumbnail}
 
 |Szczegóły|Opis|
 |---|---|
@@ -170,7 +170,7 @@ Aby zakończyć operację, kliknij `Dalej`{.action}. Upewnij się, że wyświetl
 > W związku z wprowadzoną zmianą, należy wziąć pod uwagę czas propagacji, który wynosi od 4 do 24 godzin maksimum. Po tym czasie zmiana będzie aktywna.
 >
 
-![domena](images/spf_records_add_TXT_entry.png){.thumbnail}
+![domena](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_add_TXT_entry.png){.thumbnail}
 
 ### Zmień rekord SPF
 
@@ -212,15 +212,15 @@ mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ip6:5555:66a7:88:b999::1000:2233 i
 >
 > W zakładce `Informacje ogólne`{.action} kliknij na `A` i `AAAA` w sekcji `Diagnostyka serwera`. W wyświetlonym oknie odczytaj wartość.
 >
-> ![domena](images/spf_records_ip.png){.thumbnail}
+> ![domena](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/general-information/spf_records_ip.png){.thumbnail}
 >
 > Jeśli przyciski `A` i `AAAA` są zielone, adresów IP nie zobaczysz klikając na nie. Dane pobrane ze strefy DNS domeny powiązanej z Twoją platformą Private Exchange. W tym celu pobierz link do interfejsu webmail w zakładce `Informacje ogólne`{.action}, w ramach `Połączenie`.
 >
-> ![domena](images/spf_records_ip2.png){.thumbnail}
+> ![domena](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/general-information/spf_records_ip2.png){.thumbnail}
 >
 > Przejdź następnie do sekcji `Domeny`{.action}, wybierz domenę powiązaną z Twoją platformą Private Exchange, następnie kliknij w zakładkę `Strefa DNS`{.action}. Pobierz adresy IPv4 (rekord `A`) i IPv6 (rekord `AAAA`) odpowiadające adresowi URL interfejsu webmail.
 >
-> ![domena](images/spf_records_ip3.png){.thumbnail}
+> ![domena](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_ip3.png){.thumbnail}
 >
 
 ## Sprawdź również
@@ -229,4 +229,4 @@ mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ip6:5555:66a7:88:b999::1000:2233 i
 
 [Zmiana serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_edit){.external}.
 
-Dołącz do [grona naszych użytkowników](/links/community)
+Dołącz do [grona naszych użytkowników](/links/community).

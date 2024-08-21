@@ -41,7 +41,7 @@ Ci affideremo alle funzioni embedded offerte da VMware, ma anche a quelle offert
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 - Disporre di un server dedicato con ESXi attivo
 - Disporre di un'offerta compatibile con la funzionalità [Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network) per eseguire il filtraggio
 

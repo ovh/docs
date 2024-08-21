@@ -27,7 +27,7 @@ Este tutorial explica cómo instalar WordPress manualmente en una instancia de P
 
 - Un [proyecto de Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/) en su cuenta de OVHcloud.
 - Tener una [instancia de Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) con Debian o Ubuntu instalado.
-- Tienes acceso a tu [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Tienes acceso a tu [Panel de configuración de OVHcloud](/links/manager).
 - Acceso de administrador (sudo) a su instancia a través de SSH.
 
 ## Procedimiento
@@ -37,7 +37,7 @@ Este tutorial explica cómo instalar WordPress manualmente en una instancia de P
 > Debian 11 cumple las siguientes instrucciones: Ubuntu está basado en Debian, por lo que el tutorial también debería funcionar para una distribución Ubuntu actual.
 >
 
-Para acceder a la instalación a través de un dominio, deberá asociarlo a su instancia. Para ello, edite la zona DNS accesible desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), siempre que OVHcloud sea su agente registrador **y** que el dominio utilice los servidores DNS de OVHcloud.
+Para acceder a la instalación a través de un dominio, deberá asociarlo a su instancia. Para ello, edite la zona DNS accesible desde el [área de cliente de OVHcloud](/links/manager), siempre que OVHcloud sea su agente registrador **y** que el dominio utilice los servidores DNS de OVHcloud.
 
 Para más información, consulte la guía [Editar una zona DNS](/pages/web_cloud/domains/dns_zone_edit). Si el dominio está en uso, solo podrá configurar los DNS después de instalar el nuevo WordPress y de iniciar el sitio web.
 

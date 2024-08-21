@@ -1,12 +1,12 @@
 ---
 title: 'Configurer IPv6 sur un serveur dédié'
 excerpt: 'Découvrez comment configurer des adresses IPv6 sur notre infrastructure.'
-updated: 2024-02-15
+updated: 2024-07-15
 ---
 
 ## Objectif
 
-Internet Protocol version 6 (IPv6) est le successeur d'Internet Protocol version 4 (IPv4). Mis en place pour résoudre l’épuisement des adresses IPv4, IPv6 utilise des adresses de 128 bits au lieu d’adresses de 32 bits. La plupart des serveurs dédiés OVHcloud sont livrés avec un bloc /64 IPv6, à l'exception des serveurs High Grade et Scale qui sont livrés avec un bloc /56 IPv6. Ceci représente plus de 18 quintillions d’adresses IP dont vous pouvez disposer à votre guise.
+Internet Protocol version 6 (IPv6) est le successeur d'Internet Protocol version 4 (IPv4). Mis en place pour résoudre l’épuisement des adresses IPv4, IPv6 utilise des adresses de 128 bits au lieu d’adresses de 32 bits. Les serveurs des gammes High Grade, Scale et Advance (depuis juillet 2024) sont livrés avec un bloc /56 IPv6. Les anciens serveurs sont quant à eux livrés avec un bloc/64 IPv6. Un serveur livré avec un bloc /56 IPv6 permet de disposer jusqu'à 18 quintillions d’adresses IP.
 
 **Ce guide vous explique comment configurer des adresses IPv6 sur votre serveur.**
 
@@ -53,7 +53,7 @@ La première étape consiste à récupérer la passerelle (gateway) IPv6 assign�
 
 #### Via votre espace client <a name="viacontrolpanel"></a>
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveur dédiés`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveur dédiés`{.action}.
 
 La passerelle IPv6 assignée à votre serveur est affichée dans la section `Réseau` de l'onglet `Informations générales`{.action}. Une fois copié, poursuivez vers l'étape 2 « [Appliquer la configuration IPv6](#applyipv6) ».
 
@@ -622,4 +622,4 @@ Dans tous les cas, n'hésitez pas à [contacter notre équipe de support](https:
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

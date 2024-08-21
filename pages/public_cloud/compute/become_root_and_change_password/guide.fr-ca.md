@@ -13,7 +13,7 @@ Pour exécuter certaines fonctions administratives sur votre serveur (l’instal
 ## Prérequis
 
 * [Avoir créé une instance Public Cloud dans votre compte](/pages/public_cloud/compute/public-cloud-first-steps#etape-3-creer-une-instance)
-* Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}
+* Être connecté à votre [espace client OVHcloud](/links/manager){.external}
 
 ## En pratique
 
@@ -120,6 +120,6 @@ Une fois cette étape effectuée, vous devriez pouvoir accéder à votre serveur
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services. 
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services. 
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

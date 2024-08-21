@@ -1,7 +1,7 @@
 ---
 title: "Activating email addresses included in your Web Hosting plan"
 excerpt: "Find out how to activate the email addresses included in your Web Hosting plan"
-updated: 2024-03-21
+updated: 2024-07-17
 ---
 
 ## Objective

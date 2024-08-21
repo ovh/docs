@@ -158,7 +158,7 @@ Depending on your requirements for security, mobility and convenience, SSH keys 
 
 Once the installation is completed, you will receive an email with your Windows login credentials. You can then connect to your server via RDP (**R**emote **D**esktop **P**rotocol). On your local Windows device, open the `Remote Desktop Connection` client application.
 
-![Windows remote](images/windows-connect-03.png){.thumbnail}
+![Windows remote](/pages/assets/screens/other/windows/windows_rdp.png){.thumbnail}
 
 Enter the IPv4 address of your server, then your username and passphrase. Usually a warning message will appear, asking to confirm the connection because of an unknown certificate. Click on `Yes`{.action} to log in.
 
@@ -185,17 +185,17 @@ To activate them, follow the steps below by navigating through the tabs:
 > 2. **Open the "Run" utility**
 >>
 >> Open the Windows start menu and click on `Run`{.action}.<br><br>
->>![IPMI](images/windowsboot1.png){.thumbnail}<br>
+>>![IPMI](/pages/assets/screens/other/windows/windows_start_run.png){.thumbnail}<br>
 >>
 > 3. **Open "msconfig"**
 >>
 >> Enter "msconfig" and click on `OK`{.action}.<br><br>
->>![IPMI](images/windowsboot2.png){.thumbnail}<br>
+>>![IPMI](/pages/assets/screens/other/windows/windows_msconfig.png){.thumbnail}<br>
 >>
 > 4. **Activate logs**
 >>
 >> In the new window, activate the logs option next to `Boot log`. Click on `OK`{.action}.<br><br>
->>![IPMI](images/windowsboot3.png){.thumbnail}<br>
+>>![IPMI](/pages/assets/screens/other/windows/windows_log.png){.thumbnail}<br>
 >>
 
 The next time your server boots, logs will be saved into a `.txt` file. The file path is: `C:\Windows\ntbtlog.txt`.
@@ -302,4 +302,4 @@ To activate and use the backup storage, please refer to [this guide](/pages/bare
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

@@ -105,4 +105,4 @@ rsync -av -P --stats --human-readable -e 'ssh -p X' --exclude="Folder_Name" --ex
 
 You now know how to copy your data easily from one server to another with rsync.
 
-To go further, you can join our community of users on <https://community.ovh.com/en/>.
+To go further, you can Join our [community of users](/links/community).

@@ -48,7 +48,7 @@ W przypadku niedostępności Twojej strony WWW może pojawić się kilka zwrotó
 
 Aby sprawdzić poprawność subskrypcji Twojej domeny, w prawym górnym rogu [Panelu klienta OVHcloud](/links/manager) kliknij Twoją nazwę, aby wyświetlić menu PPM, następnie `Produkty i usługi`{.action}.
 
-![control-panel](/pages/assets/screens/control_panel/product-selection/web-cloud/right-column/right-menu-product-and-services.png){.thumbnail}|
+![control-panel](/pages/assets/screens/control_panel/product-selection/right-column/right-menu-product-and-services.png){.thumbnail}|
 
 Odnów Twoją domenę, jeśli to konieczne, za pomocą przycisku `...`{.action}. po prawej stronie ekranu, a następnie `Odnów usługę`{.action}.
 

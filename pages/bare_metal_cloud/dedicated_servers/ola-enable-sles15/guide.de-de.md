@@ -17,13 +17,13 @@ Die OVHcloud Link Aggregation (OLA) wurde von unseren Teams entwickelt, um die V
 ## Voraussetzungen
 
 - Sie haben Ihre [Netzwerkkarte für die OVHcloud Link Aggregation im OVHcloud Kundencenter konfiguriert](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
 Da die NICs in OLA privat-zu-privat konfiguriert sind, ist es nicht möglich, sich via SSH mit dem Server zu verbinden. Verwenden Sie daher das IPMI-Tool, um auf den Server zuzugreifen.
 
-Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wechseln Sie zum Bereich `Bare Metal Cloud`{.action}. Klicken Sie auf `Dedicated Server`{.action} und wählen Sie Ihren Server aus der Liste aus.
+Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](/links/manager) ein und wechseln Sie zum Bereich `Bare Metal Cloud`{.action}. Klicken Sie auf `Dedicated Server`{.action} und wählen Sie Ihren Server aus der Liste aus.
 
 Klicken Sie anschließend auf den Tab `IPMI`{.action} (1) und dann auf den Button `Mit einem Java-Applet (KVM)`{.action} (2).
 

@@ -28,7 +28,7 @@ Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca sulla sezione `We
 
 La tabella di questa sezione contiene tutti i database creati con il tuo hosting Web.
 
-![databasecreation](images/tab.png){.thumbnail}
+![databasecreation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
 
 Nella tabella, i database possono avere diversi tipi:
 
@@ -52,7 +52,7 @@ Per creare un nuovo database è possibile procedere in due modi:
 
 Nella nuova finestra, seleziona le informazioni richieste:
 
-![database-creation-step1](images/create-a-database-step-1.png){.thumbnail}
+![database-creation-step1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-step-1.png){.thumbnail}
 
 |Informazione|Descrizione|  
 |---|---| 
@@ -64,7 +64,7 @@ Clicca su `Continua`{.action}.
 
 Si apre una nuova finestra:
 
-![database-creation-step2](images/create-a-database-step-2.png){.thumbnail}
+![database-creation-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-step-2.png){.thumbnail}
 
 |Informazione|Descrizione|
 |---|---| 
@@ -92,7 +92,7 @@ Si apre una nuova finestra:
 
 Inserisci le informazioni richieste e clicca su `Continua`{.action}.
 
-![database-creation-step3](images/create-a-database-step-3.png){.thumbnail}
+![database-creation-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-step-3.png){.thumbnail}
 
 Verificare che tutte le informazioni visualizzate nel riepilogo siano corrette. In questo caso, clicca su `Conferma`{.action} per avviare la creazione del database.
 
@@ -148,7 +148,7 @@ In base al software utilizzato, è possibile che questa connessione richieda una
 
 OVHcloud fornisce uno strumento online per la gestione dei database, "phpMyAdmin". Per trovare il link di accesso a questa applicazione, accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e clicca sulla sezione `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna a sinistra, scegli l’offerta di hosting su cui vuoi recuperare le informazioni di connessione al tuo database e poi clicca sulla scheda `Database`{.action}. Nella tabella che appare, clicca sul pulsante `...`{.action} a destra del database interessato e poi su `Accedi a phpMyAdmin`{.action} nel menu a tendina.
 
-![phpMyAdmin Go Login](images/pma-interface-login.png){.thumbnail}
+![phpMyAdmin Go Login](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
 
 Inserisci le informazioni di accesso al database e clicca su `Connetti`{.action}.
 

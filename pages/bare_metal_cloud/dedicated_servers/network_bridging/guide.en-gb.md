@@ -1,7 +1,7 @@
 ---
 title: 'Configuring a network bridge'
 excerpt: 'Find out how to configure your virtual machines for access to the public internet'
-updated: 2024-06-17
+updated: 2024-07-15
 ---
 
 > [!primary]
@@ -28,7 +28,7 @@ Bridged networking can be used to configure your virtual machines. Some tweaking
 >
 > Please visit our [comparison page](/links/bare-metal/eco-compare) for more information.
 >
-> This guide is not applicable to servers of the ranges [Scale](https://www.ovhcloud.com/en-gb/bare-metal/scale/) and [High Grade](https://www.ovhcloud.com/en-gb/bare-metal/high-grade/).
+> This guide is not applicable to servers of the ranges [Scale](https://www.ovhcloud.com/en-gb/bare-metal/scale/) and [High Grade](https://www.ovhcloud.com/en-gb/bare-metal/high-grade/). The same goes for the latest Advance server range (since July 2024), based on CPU AMD Epyc 4K and 8K CPUs.
 > 
 > Refer to the following guides instead: [Configuring the network on ESXi on the High Grade & SCALE ranges](/pages/bare_metal_cloud/dedicated_servers/esxi-network-HG-Scale), [Configuring the network on Proxmox VE on the High Grade & SCALE ranges](/pages/bare_metal_cloud/dedicated_servers/proxmox-network-HG-Scale) and [Configuring the network on Windows Server with Hyper-V on the High Grade & SCALE ranges](/pages/bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale).
 >
@@ -621,4 +621,4 @@ Next, ping your Additional IP address from an external device.
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

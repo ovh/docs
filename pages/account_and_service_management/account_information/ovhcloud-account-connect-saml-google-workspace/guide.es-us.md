@@ -1,7 +1,7 @@
 ---
 title: Activar las conexiones SSO de Google Workspace con su cuenta OVHcloud
 excerpt: "Cómo asociar el servicio Google Workspace a su cuenta de OVHcloud a través de SAML 2.0"
-updated: 2024-06-25
+updated: 2024-07-05
 ---
 
 > [!primary]
@@ -101,7 +101,7 @@ Haga clic en el botón `Conexión SSO`{.action}.
 
 ![OVHcloud conexión SSO etapa 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 
-Introduzca los metadatos XML del servicio Google Workspace. Rellene el campo "Nombre de atributo de grupo" con el valor `Group`. Haga clic en `Confirmar`{.action}.
+Introduzca los metadatos XML del servicio Google Workspace. Rellene el campo "Nombre de atributo de usuario" con el valor `Name` y el campo "Nombre de atributo de grupo" con el valor `Group`. Haga clic en `Confirmar`{.action}.
 
 Es posible conservar los usuarios locales marcando la casilla `Mantener los usuarios de OVHcloud activos`.
 

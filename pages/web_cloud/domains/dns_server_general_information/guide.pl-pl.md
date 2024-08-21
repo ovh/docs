@@ -26,7 +26,7 @@ Ta sieć DNS ułatwia użytkownikom dostęp do Internetu i różnych usług z ni
 
 Umożliwiają one w szczególności korzystanie z [domen](/links/web/domains) w celu uzyskania dostępu do ulubionej strony WWW bez konieczności zachowywania adresu IP serwera, na którym hostowana jest ta strona.
 
-![DNS resolution](images/dns-resolution.png){.thumbnail}
+![DNS resolution](/pages/assets/schemas/dns/dns-resolution.png){.thumbnail}
 
 Istnieją 4 rodzaje serwerów DNS.
 
@@ -61,7 +61,7 @@ Strefa DNS zawiera informacje techniczne nazywane *rekordami DNS*. Strefa DNS je
 
 Oznacza to, że należy zadeklarować **serwery DNS (Authoritative)** (u rejestratora domeny), aby korzystać ze strefy DNS, którą hostują.
 
-![DNS](images/dns-server.png){.thumbnail}
+![DNS](/pages/assets/schemas/dns/dns-server.png){.thumbnail}
 
 ### Działanie serwera DNS (Authoritative) z nazwą domeny
 

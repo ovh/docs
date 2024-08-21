@@ -164,15 +164,15 @@ Save this change.
 
 In the `Hosting Plans`{.action} section of the OVHcloud Control Panel, go to the `Databases`{.action} tab on the right-hand side of your screen:
 
-![database-password-step1](images/tab.png){.thumbnail}
+![database-password-step1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
 
 Next, click on the three dots to the right of your website’s database, then on `Change password`{.action}.
 
-![database-password-step2](images/change-password.png){.thumbnail}
+![database-password-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password.png){.thumbnail}
 
 In the window that pops up, enter your database’s new password (defined at [step 3](#step3)), confirm it, then click on `Confirm`{.action}.
 
-![database-password-step3](images/change-password-window.png){.thumbnail}
+![database-password-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password-window.png){.thumbnail}
 
 ## Go further <a name="go-further"></a>
 

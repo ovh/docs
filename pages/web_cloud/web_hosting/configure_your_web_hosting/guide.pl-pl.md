@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW : środowisko, wersja PHP, .ovhconfig"
 excerpt: "Dowiedz się, jak zmienić środowisko uruchomieniowe, wersję PHP, zaporę aplikacyjną, silnik, tryb i .ovhconfig na hostingu WWW"
-updated: 2024-03-12
+updated: 2024-07-16
 ---
 
 > [!primary]
@@ -11,6 +11,8 @@ updated: 2024-03-12
 ## Wprowadzenie
 
 Oferty hostingu [OVHcloud](/links/web/hosting){.external} umożliwiają hostowanie wybranej strony WWW, o ile jest ona kompatybilna z [konfiguracją infrastruktury współdzielonej](https://webhosting-infos.hosting.ovh.net){.external}.
+
+Modyfikacja pliku **php.ini** nie jest dostępna w ofercie hostingu. Wynika to z faktu, że konfiguracja PHP jest globalna dla całej infrastruktury współdzielonej.
 Na serwerach współdzielonych możesz zmienić następujące parametry hostingu:
 
 - [środowisko uruchomieniowe](#runtime-environment)

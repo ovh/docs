@@ -22,7 +22,7 @@ Może to być przydatne w następujących przypadkach:
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dostęp do [Panelu client OVHcloud](/links/manager)
 - Posiadanie instancji [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external} na koncie OVHcloud
 - Dostęp administratora (sudo) do Twojej instancji przez SSH
 
@@ -35,7 +35,7 @@ Może to być przydatne w następujących przypadkach:
 
 ### Przypisz nowy wolumen
 
-Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Następnie otwórz `Block Storage`{.action} w menu po lewej stronie.
+Zaloguj się do [Panelu client OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Następnie otwórz `Block Storage`{.action} w menu po lewej stronie.
 
 W tej części kliknij przycisk `Utwórz wolumen`{.action}.
 

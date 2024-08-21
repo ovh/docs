@@ -41,11 +41,11 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und klicken S
 
 Im Tab `Allgemeine Informationen` finden Sie den Zugangslink zu phpMyAdmin im Rahmen **„Administration der Datenbank“** unter „Benutzer-Interface“.
 
-![web-cloud-databases](images/database-administration.png){.thumbnail}
+![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/database-administration.png){.thumbnail}
 
 Damit gelangen Sie zur Loginseite von phpMyAdmin.
 
-![web-cloud-databases](images/pma-login-web-cloud-db.png){.thumbnail}
+![web-cloud-databases](/pages/assets/screens/other/web-tools/phpmyadmin/pma-login-web-cloud-db.png){.thumbnail}
 
 Tragen Sie die folgenden Angaben ein, um sich mit Ihrer Datenbank zu verbinden:
 
@@ -62,7 +62,7 @@ Tragen Sie die folgenden Angaben ein, um sich mit Ihrer Datenbank zu verbinden:
 
 Wenn die Verbindung erfolgreich ist, erscheint die phpMyAdmin-Startseite.
 
-![web-cloud-databases](images/pma-main-page-web-cloud-db.png){.thumbnail}
+![web-cloud-databases](/pages/assets/screens/other/web-tools/phpmyadmin/pma-main-page-web-cloud-db.png){.thumbnail}
 
 > [!warning]
 >
@@ -107,7 +107,7 @@ mysql --host=server --user=benutzername --port=port --password=passwort datenban
 
 - Starten Sie SQuirreL und klicken Sie auf `Aliases`{.action} und dann auf `+`{.action}.
 
-![launch SQuirreL SQL](images/aliases.png){.thumbnail}
+![launch SQuirreL SQL](/pages/assets/screens/other/web-tools/squirrel/aliases.png){.thumbnail}
 
 - Füllen Sie die folgenden Felder aus und bestätigen Sie mit dem Button `OK`{.action}:
     - **Name**: Wählen Sie den Namen aus.
@@ -116,15 +116,15 @@ mysql --host=server --user=benutzername --port=port --password=passwort datenban
     - **User Name**: Geben Sie den Benutzernamen ein.
     - **Password**: Geben Sie das Passwort ein.
 
-![config](images/add-alias.png){.thumbnail}
+![config](/pages/assets/screens/other/web-tools/squirrel/add-alias.png){.thumbnail}
 
 - Bestätigen Sie erneut mit dem Button `Connect`{.action}.
 
-![valid connection](images/connect-to-mysql.png){.thumbnail}
+![valid connection](/pages/assets/screens/other/web-tools/squirrel/connect-to-mysql.png){.thumbnail}
 
 Sie sind nun mit Ihrer Datenbank verbunden.
 
-![config](images/general-dashboard.png){.thumbnail}
+![config](/pages/assets/screens/other/web-tools/squirrel/general-dashboard.png){.thumbnail}
 
 ##### 4\. phpMyAdmin Verbindung
 
@@ -162,7 +162,7 @@ psql --host=server --port=port --user=benutzername --password=passwort datenbank
 
 - Starten Sie SQuirreL und klicken Sie auf `Aliases`{.action} und dann auf `+`{.action}.
 
-![launch SQuirreL SQL](images/aliases.png){.thumbnail}
+![launch SQuirreL SQL](/pages/assets/screens/other/web-tools/squirrel/aliases.png){.thumbnail}
 
 - Füllen Sie die folgenden Felder aus und bestätigen Sie mit dem Button `OK`{.action}:
     - **Name**: Wählen Sie den Namen aus.
@@ -171,15 +171,15 @@ psql --host=server --port=port --user=benutzername --password=passwort datenbank
     - **User Name**: Geben Sie den Benutzernamen ein.
     - **Password**: Geben Sie das Passwort ein.
 
-![config](images/add-alias.png){.thumbnail}
+![config](/pages/assets/screens/other/web-tools/squirrel/add-alias.png){.thumbnail}
 
 - Bestätigen Sie erneut mit dem Button `Connect`{.action}.
 
-![valid connection](images/connect-to-mysql.png){.thumbnail}
+![valid connection](/pages/assets/screens/other/web-tools/squirrel/connect-to-mysql.png){.thumbnail}
 
 Sie sind nun mit Ihrer Datenbank verbunden.
 
-![config](images/general-dashboard.png){.thumbnail}
+![config](/pages/assets/screens/other/web-tools/squirrel/general-dashboard.png){.thumbnail}
 
 ## Weiterführende Informationen
 

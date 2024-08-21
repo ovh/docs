@@ -48,7 +48,7 @@ En caso de que su sitio web no sea accesible, pueden aparecer varios errores en 
 
 Para comprobar la validez de la suscripción relativa a su nombre de dominio, haga clic en su nombre en la esquina superior derecha del [área de cliente de OVHcloud](/links/manager) y seleccione `Productos y servicios`{.action}.
 
-![control-panel](/pages/assets/screens/control_panel/product-selection/web-cloud/right-column/right-menu-product-and-services.png){.thumbnail}|
+![control-panel](/pages/assets/screens/control_panel/product-selection/right-column/right-menu-product-and-services.png){.thumbnail}|
 
 Renueve su dominio si es necesario a través del botón `...`{.action} a la derecha de la pantalla y luego `Renovar el servicio`{.action}.
 

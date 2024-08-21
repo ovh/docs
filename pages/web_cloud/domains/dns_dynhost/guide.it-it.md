@@ -1,7 +1,7 @@
 ---
 title: "Impostare un DNS dinamico (DynHost/DynDNS) per il tuo dominio"
 excerpt: "Questa guida ti mostra come configurare un record DNS dinamico per il tuo dominio OVHcloud"
-updated: 2024-06-26
+updated: 2024-07-12
 ---
 
 > [!primary]
@@ -55,7 +55,7 @@ Ad esempio, il **DynHost** può essere utilizzato se *auto-hosting* (nei locali 
 
 Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external} e seleziona la sezione `Web cloud`{.action}. Nella colonna di sinistra, clicca sulla scheda `Domini`{.action} e seleziona il dominio interessato. Nella nuova pagina clicca sulla scheda `DynHost`{.action}.
 
-![dynhost](images/tab.png){.thumbnail}
+![dynhost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/tab.png){.thumbnail}
 
 Clicca sul pulsante `Gestisci gli accessi`{.action} e poi su `Crea un identificativo`{.action}. Nella nuova finestra, inserisci le informazioni richieste:
 
@@ -72,7 +72,7 @@ Clicca sul pulsante `Gestisci gli accessi`{.action} e poi su `Crea un identifica
 
 Dopo aver completato tutti i campi, clicca su `Conferma`{.action}. L’identificativo compare nella tabella della pagina corrente. Ripeti questa operazione per ogni identificativo DynHost da aggiungere.
 
-![dynhost](images/create-a-dynhost-username.png){.thumbnail}
+![dynhost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/create-a-dynhost-username.png){.thumbnail}
 
 ### Step 2: crea il record DNS dinamico (DynHost) <a name="step2"></a>
 
@@ -85,7 +85,12 @@ Una volta che tutto è pronto per creare il record, torna alla pagina principale
 |Sottodominio|Inserisci il nome del sottodominio a cui è associato il record DNS da aggiornare dinamicamente. Questo sottodominio deve coincidere con quello inserito durante la creazione dell’utente DynHost. **Se vuoi installare un DynHost direttamente per il tuo dominio, lascia vuoto questo modulo di inserimento**|
 |IP di destinazione|Inserisci l'indirizzo IP (IPv4 o IPv6) che deve essere utilizzato dal record DNS. È generalmente l'indirizzo IP pubblico del tuo *box* Internet o del tuo server auto-ospitato. In base al principio del DynHost, verrà aggiornato automaticamente in seguito.|
 
-![dynhost](images/create-a-dynhost.png){.thumbnail}
+> [!warning]
+>
+> Per creare un record DNS dinamico (DynHost), l’utilizzo di una *wildcard* (inserendo solo il carattere `*`) nel modulo `Sottodominio`{.action} non è disponibile.
+>
+
+![dynhost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/create-a-dynhost.png){.thumbnail}
 
 Dopo aver completato tutti i campi, clicca su `Conferma`{.action}. Il record DynHost dovrebbe comparire nella tabella della pagina corrente.  Ripeti questa operazione per ogni record DynHost che da aggiungere.
 
@@ -124,7 +129,7 @@ Verifica che l'indirizzo IP di destinazione sia stato aggiornato correttamente. 
 > Le modifiche apportate nella zona DNS attiva di un dominio tramite DynDNS possono provocare un ritardo di alcuni minuti nella propagazione dell'aggiornamento.
 >
 
-![dynhost](images/target.png){.thumbnail}
+![dynhost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/target.png){.thumbnail}
 
 ## Per saperne di più <a name="go-further"></a>
 

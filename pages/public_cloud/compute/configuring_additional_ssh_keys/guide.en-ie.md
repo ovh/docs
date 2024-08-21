@@ -1,5 +1,5 @@
 ---
-title: 'Configuring additional SSH keys'
+title: "How to configure additional SSH keys on an instance"
 excerpt: 'Find out how to configure additional SSH keys for your Public Cloud instance'
 updated: 2024-01-08
 ---
@@ -13,7 +13,7 @@ When creating an instance, only one SSH key for the initial connection can be co
 ## Requirements
 
 - A [Public Cloud instance](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - Administrative access (sudo) to your instance via SSH
 
 ## Instructions
@@ -86,4 +86,4 @@ user2@server:~$
 
 [Replacing your lost SSH key pair](/pages/public_cloud/compute/replacing_lost_ssh_key)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

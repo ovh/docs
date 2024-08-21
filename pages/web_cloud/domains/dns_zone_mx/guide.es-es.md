@@ -40,7 +40,7 @@ Cuando la dirección **sender@otherdomain.ovh** envía un correo electrónico a 
 - **(1)** consultar la zona DNS del dominio **mydomain.ovh** y leer los registros **MX**.
 - **(2)** reenviar el mensaje de correo electrónico a la URL del registro **MX** leído.
 
-![Correo electrónico](/pages/assets/schemas/dns/mx-dns-resolution.png){.thumbnail}
+![Correo electrónico](/pages/assets/schemas/emails/mx-dns-resolution.png){.thumbnail}
 
 El mensaje se enviará al destino **mx0.mail.ovh.net**, precedido del valor **0**. Este valor se denomina prioridad. El valor más bajo se consulta primero y el más alto después. Esto significa que la presencia de varios registros permite paliar la falta de respuesta del registro MX de menor prioridad.
 

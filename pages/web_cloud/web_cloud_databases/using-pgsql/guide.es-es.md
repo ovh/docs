@@ -57,7 +57,7 @@ psql --host=servidor --port=puerto --user=usuario --contraseña=contraseña nomb
 ### Conexion a traves de la aplicacion SQuirreL SQL
 Ejecute SQuirreL SQL, abra el menú `Aliases`{.action} y haga clic en `+`{.action}.
 
-![ejecutar SQuirreL SQL](images/aliases.png){.thumbnail}
+![ejecutar SQuirreL SQL](/pages/assets/screens/other/web-tools/squirrel/aliases.png){.thumbnail}
 
 Cumplimente los campos como se indica a continuación y acepte con el botón `OK`{.action}:
 
@@ -67,15 +67,15 @@ Cumplimente los campos como se indica a continuación y acepte con el botón `OK
 - **User Name**: Indique el nombre de usuario.
 - **Password**: Indique la contraseña.
 
-![configuración de la conexión](images/add-alias-pgsql.png){.thumbnail}
+![configuración de la conexión](/pages/assets/screens/other/web-tools/squirrel/add-alias-pgsql.png){.thumbnail}
 
 Confirme con el botón `Connect`{.action}.
 
-![confirmación de la conexión](images/connect-to-pgsql.png){.thumbnail}
+![confirmación de la conexión](/pages/assets/screens/other/web-tools/squirrel/connect-to-pgsql.png){.thumbnail}
 
 Se establecerá la conexión a la base de datos:
 
-![conexión a la base de datos](images/general-dashboard-pgsql.png){.thumbnail}
+![conexión a la base de datos](/pages/assets/screens/other/web-tools/squirrel/general-dashboard-pgsql.png){.thumbnail}
 
 ### Conexion mediante phppgAdmin
 *Próximamente disponible en otra guía.*

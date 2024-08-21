@@ -26,7 +26,7 @@ No obstante, podrá conectarse al servidor utilizando el [modo de rescate de OVH
 ## Requisitos
 
 - Tener un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/) o un [VPS](https://www.ovhcloud.com/es/vps/) en su cuenta de OVHcloud
-- Tienes acceso a tu [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Tienes acceso a tu [Panel de configuración de OVHcloud](/links/manager).
 
 ## Procedimiento
 
@@ -60,7 +60,7 @@ EEFFFFFFFFFFFFFGGGGGGGGGGGGGhhhhhhhhhhhhhhhhhhhhhhhhhh== new@sshkey
 
 Por motivos de seguridad, elimine la cadena de clave "old" (ahora obsoleta) del archivo. Guarde y salga del editor.
 
-Cambie al modo de arranque "normal" y reinicie el servidor desde el [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Consulte la guía "[Activar y utilizar el modo de rescate](#step2)" si es necesario.
+Cambie al modo de arranque "normal" y reinicie el servidor desde el [Panel de configuración de OVHcloud](/links/manager). Consulte la guía "[Activar y utilizar el modo de rescate](#step2)" si es necesario.
 
 Ahora tiene acceso al servidor con su nuevo par de llaves SSH.
 

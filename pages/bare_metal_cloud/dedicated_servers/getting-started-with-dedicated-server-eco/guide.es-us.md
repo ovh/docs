@@ -18,7 +18,7 @@ Un servidor dedicado es un servidor físico ("bare metal") situado en uno de nue
 
 - Tener un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/) de las gamas Kimsufi, So you Start o Rise en el área de cliente de OVHcloud.
 - Estar conectado al servidor por SSH en Linux o a través de un escritorio remoto en Windows.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 
@@ -43,7 +43,7 @@ Un servidor dedicado es un servidor físico ("bare metal") situado en uno de nue
 > Más información sobre los sistemas operativos de los servidores en [nuestra página web](https://www.ovhcloud.com/es/bare-metal/os/).
 >
 
-Puede reinstalar fácilmente su servidor o elegir otra imagen de SO para instalar en su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). En la pestaña `Información general`{.action}, haga clic en `...`{.action} delante del sistema operativo y seleccione `Instalar`{.action}.
+Puede reinstalar fácilmente su servidor o elegir otra imagen de SO para instalar en su [área de cliente de OVHcloud](/links/manager). En la pestaña `Información general`{.action}, haga clic en `...`{.action} delante del sistema operativo y seleccione `Instalar`{.action}.
 
 ![Reinstalar](images/reinstalling-your-server-01.png){.thumbnail}
 
@@ -55,7 +55,7 @@ En la nueva ventana, seleccione una de las opciones de instalación:
 
 > [!primary]
 >
-> Algunos sistemas operativos o plataformas propietarias, como Plesk o Windows, necesitan licencias que generan costes adicionales. Puede adquirir licencias [con OVHcloud](https://www.ovhcloud.com/es/bare-metal/os/) o con un revendedor externo. A continuación, deberá aplicar la licencia en el propio sistema operativo o desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+> Algunos sistemas operativos o plataformas propietarias, como Plesk o Windows, necesitan licencias que generan costes adicionales. Puede adquirir licencias [con OVHcloud](https://www.ovhcloud.com/es/bare-metal/os/) o con un revendedor externo. A continuación, deberá aplicar la licencia en el propio sistema operativo o desde el [área de cliente de OVHcloud](/links/manager).
 >
 > Puede gestionar todas sus licencias en la sección `Bare Metal Cloud`{.action}, con `Licencias`{.action}. En esta sección también puede contratar licencias o añadir licencias existentes a través del botón `Acciones`{.action}.
 >
@@ -149,7 +149,7 @@ En función de sus necesidades en materia de seguridad, movilidad y comodidad, l
 
 Una vez finalizada la instalación, recibirá por correo electrónico las claves de acceso de Windows. A continuación, puede conectarse al servidor mediante RDP (**R**emote **D**esktop **P**rotocol). En su dispositivo Windows local, abra la aplicación `Remote Desktop Connection`.
 
-![Windows Remote](images/windows-connect-03.png){.thumbnail}
+![Windows Remote](/pages/assets/screens/other/windows/windows_rdp.png){.thumbnail}
 
 Introduzca la dirección IPv4 del servidor, su nombre de usuario y su contraseña. Normalmente, aparece un mensaje de advertencia solicitándole que confirme la conexión debido a un certificado desconocido. Haga clic en `Sí`{.action} para conectarse.
 
@@ -176,17 +176,17 @@ Para activarlas, siga los pasos que se indican a continuación en las fichas:
 > 2. **Abrir la utilidad "Run"**
 >>
 >> Abra el menú Inicio de Windows y haga clic en `Ejecutar`{.action}.<br><br>
->>![IPMI](images/windowsboot1.png){.thumbnail}<br>
+>>![IPMI](/pages/assets/screens/other/windows/windows_start_run.png){.thumbnail}<br>
 >>
 > 3. **Abrir "msconfig"**
 >>
 >> Escriba "msconfig" y haga clic en `OK`{.action}.<br><br>
->>![IPMI](images/windowsboot2.png){.thumbnail}<br>
+>>![IPMI](/pages/assets/screens/other/windows/windows_msconfig.png){.thumbnail}<br>
 >>
 > 4. **Activar los logs**
 >>
 >> En la nueva ventana, active la opción logs junto a `Boot log`. Haga clic en `OK`{.action}.<br><br>
->>![IPMI](images/windowsboot3.png){.thumbnail}<br>
+>>![IPMI](/pages/assets/screens/other/windows/windows_log.png){.thumbnail}<br>
 >>
 
 La próxima vez que inicie el servidor, los logs se guardarán en un archivo `.txt`. La ruta del archivo es: `C:\Windows\ntbtlog.txt`.
@@ -203,7 +203,7 @@ Es posible que necesite reiniciar para aplicar configuraciones actualizadas o re
 reboot
 ```
 
-No obstante, puede realizar "hard reboot" en cualquier momento desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). En la pestaña `Información general`{.action}, haga clic en `...`{.action} frente a "Estado" en la zona **Estado de los servicios** y seleccione `Reiniciar`{.action} y `Aceptar`{.action} en la ventana emergente.
+No obstante, puede realizar "hard reboot" en cualquier momento desde el [área de cliente de OVHcloud](/links/manager). En la pestaña `Información general`{.action}, haga clic en `...`{.action} frente a "Estado" en la zona **Estado de los servicios** y seleccione `Reiniciar`{.action} y `Aceptar`{.action} en la ventana emergente.
 
 ![Reinicio](images/rebooting-your-server.png){.thumbnail}
 
@@ -219,7 +219,7 @@ Si utiliza un servidor Windows, consulte [esta guía](/pages/bare_metal_cloud/de
 
 ### Monitorización OVHcloud
 
-Puede activar o desactivar la monitorización de un servidor dedicado desde la pestaña `Información general`{.action} de su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). La opción se encuentra en la sección `Estado de los servicios`.
+Puede activar o desactivar la monitorización de un servidor dedicado desde la pestaña `Información general`{.action} de su [área de cliente de OVHcloud](/links/manager). La opción se encuentra en la sección `Estado de los servicios`.
 
 ![Monitoring](images/monitoring-your-server.png){.thumbnail}
 
@@ -271,7 +271,7 @@ Todos los servidores dedicados de OVHcloud se entregan con un bloque /64 IPv6. P
 
 ### Modo de rescate
 
-Para cualquier problema, el primer paso para solucionarlo es reiniciar el servidor en modo de rescate desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Es importante identificar los problemas del servidor en este modo para excluir los problemas relacionados con el software antes de contactar con nuestro equipo de soporte.
+Para cualquier problema, el primer paso para solucionarlo es reiniciar el servidor en modo de rescate desde el [área de cliente de OVHcloud](/links/manager). Es importante identificar los problemas del servidor en este modo para excluir los problemas relacionados con el software antes de contactar con nuestro equipo de soporte.
 
 Para más información, consulte la guía "[Activar y utilizar el modo de rescate"](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)".
 

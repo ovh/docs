@@ -427,4 +427,4 @@ Ce contrôleur RAID est déprécié et devient instable. Nous vous suggérons fo
 
 [Remplacement à chaud - RAID logiciel](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_soft)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

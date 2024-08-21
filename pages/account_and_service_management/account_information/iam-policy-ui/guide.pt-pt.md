@@ -1,7 +1,7 @@
 ---
 title: Como utilizar as políticas IAM a partir do seu Espaço Cliente
 excerpt: Descubra como dar direitos de acesso específicos aos utilizadores a partir de uma conta OVHcloud
-updated: 2024-06-25
+updated: 2024-07-04
 ---
 
 > [!primary]
@@ -71,6 +71,7 @@ Clique no botão `Criar uma política`{.action}.
 ![Criar uma política](images/create_a_policy_01.png){.thumbnail}
 
 - **Nome da política** (obrigatório): trata-se do nome que aparecerá nas interfaces. O nome deve ser único e não deve conter qualquer espaço.
+- **Identidades**: Selecione as identidades abrangidas por esta política. É possível apontar mais do que um tipo de identidade.
 - **Tipos de produtos**: selecione os tipos de produtos para definir o âmbito de aplicação da política. Um ou mais tipos de produto podem ser incluídos na mesma política.
 - **Recursos**: adicione recursos ou grupos de recursos a serem cobertos pela política. Os recursos disponíveis são filtrados por tipo de produto previamente selecionado.
 - **Ações**.
@@ -140,16 +141,6 @@ A seguir, poderá alterar o âmbito da política.
 Para eliminar uma política existente, clique no botão `...`{.action} à direita da política, e por `Eliminar a política`{.action}.
 
 Uma janela contextual irá pedir-lhe que confirme a eliminação.
-
-### Associar uma identidade a uma política
-
-Para associar uma identidade a uma política, clique no botão `...`{.action} à direita da política, e depois `Gerir as identidades associadas`{.action}.
-
-![Modificar uma política](images/editing_a_policy.png){.thumbnail}
-
-Isto permitir-lhe-á adicionar e eliminar utilizadores ou grupos aos quais a política deve ser aplicada.
-
-![Associar uma identidade](images/link_identity_to_policy.png){.thumbnail}
 
 ### Gestão das identidades
 

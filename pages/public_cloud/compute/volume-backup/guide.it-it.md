@@ -29,12 +29,12 @@ Il Volume Snapshot e il Volume Backup ti permettono di:
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Un volume [Block Storage](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) creato nel tuo progetto [Public Cloud](https://www.ovhcloud.com/it/public-cloud/)
 
 ## Procedura
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo nome utente in alto a destra e seleziona `Public Cloud`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca sul tuo nome utente in alto a destra e seleziona `Public Cloud`{.action}.
 
 Apri il menu `Block Storage`{.action} nella barra di navigazione a sinistra con **Storage**.
 

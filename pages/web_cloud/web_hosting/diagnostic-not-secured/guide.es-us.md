@@ -96,7 +96,7 @@ Si ha contratado uno de los **certificados SSL de pago** de nuestro partner [SEC
 >
 > Para consultar todos los mensajes enviados por nuestros servicios, haga clic en el botón superior derecha de su [área de cliente de OVHcloud](/links/manager) y seleccione `Emails de servicio`{.action}.
 >
->![right-menu-email-button](/pages/assets/screens/control_panel/product-selection/web-cloud/right-column/right-menu-email-button.png){.thumbnail}
+>![right-menu-email-button](/pages/assets/screens/control_panel/product-selection/right-column/right-menu-email-button.png){.thumbnail}
 >
 
 ## Más información <a name="go-further"></a>

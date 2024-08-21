@@ -1,7 +1,7 @@
 ---
 title: "Premiers pas avec OVHcloud Key Management Service (KMS)"
 excerpt: "Mettez en oeuvre votre OVHcloud KMS"
-updated: 2024-06-26
+updated: 2024-07-04
 ---
 
 > [!warning]
@@ -25,12 +25,12 @@ L'objectif de ce guide est de présenter les différentes étapes pour mettre en
 Chaque KMS est associé à une région, ainsi les clés qui y sont stockées ont la garantie de rester dans cette région.<br>
 Il est possible de commander plusieurs KMS, que ce soit dans des régions différentes ou dans une même région.
 
-La facturation d'un KMS étant basée sur le nombre de clés y étant stocké, la commande d'un KMS ne génère pas de facturation en elle-même.
+La facturation d'un KMS étant basée sur le nombre de clés y étant stockées, la commande d'un KMS ne génère pas de facturation en elle-même.
 
 Vous pouvez commander un KMS depuis [l'espace client OVHcloud](/links/manager) en vous rendant sur l'un des menus suivants :
 
 - Cliquez sur `Bare Metal Cloud`{.action} puis sur `Identité, Sécurité & Opérations`{.action}. Cliquez sur `Key Management Service`{.action} puis sur le bouton `Commander un KMS`{.action}.
-- Cliquez sur `Hosted Private Metal Cloud`{.action} puis sur `Identité, Sécurité & Opérations`{.action}. Cliquez sur `Key Management Service`{.action} puis sur le bouton `Commander un KMS`{.action}.
+- Cliquez sur `Hosted Private Cloud`{.action} puis sur `Identité, Sécurité & Opérations`{.action}. Cliquez sur `Key Management Service`{.action} puis sur le bouton `Commander un KMS`{.action}.
 
 ![Accès au menu KMS](images/access_to_the_KMS_menu_01.png){.thumbnail}
 
@@ -73,30 +73,43 @@ Il est nécessaire d'indiquer les informations suivantes :
 - **description** : description du certificat (optionnel)
 - **validity** : durée de validité du certificat en jours - 365 jours par défaut (optionnel)
 
-**Exemple de création de certificat :**
+**Exemple de création de certificat avec le compte root :**
 
 ```json
 {
-  "description": "My reader credential",
+  "description": "My root access credential",
   "identityURNs": [
-    "urn:v1:eu:identity:user:xx1111-ovh/reader1",
-    "urn:v1:eu:identity:group:xx1111-ovh/reader"
+    "urn:v1:eu:identity:account:xx1111-ovh"
   ],
-  "name": "reader",
+  "name": "root",
   "validity": 30
 }
 ```
 
-L'API retourne ensuite l'état de création du certificat
+**Exemple de création de certificat avec un compte utilisateur local :**
+
+```json
+{
+  "description": "My access credential",
+  "identityURNs": [
+    "urn:v1:eu:identity:user:xx1111-ovh/john.smith",
+    "urn:v1:eu:identity:group:xx1111-ovh/my_group"
+  ],
+  "name": "John Smith",
+  "validity": 30
+}
+```
+
+L'API retourne ensuite l'état de création du certificat :
 
 ```json
 {
   "id": "f18b5e0d-75b8-40a3-9b0e-XXXXXX",
-  "name": "reader",
-  "description": "My reader credential",
+  "name": "John Smith",
+  "description": "My access credential",
   "identityURNs": [
-    "urn:v1:eu:identity:user:xx1111-ovh/reader1",
-    "urn:v1:eu:identity:group:xx1111-ovh/reader"
+    "urn:v1:eu:identity:user:xx1111-ovh/john.smith",
+    "urn:v1:eu:identity:group:xx1111-ovh/my_group"
   ],
   "status": "CREATING",
   "fromCSR": false,
@@ -120,16 +133,16 @@ Copiez ensuite l'ID du certificat et accédez au détail de ce dernier via l'API
 > @api {v2} /okms GET /okms/resource/{okmsId}/credential/{credentialId}
 >
 
-L'API renvoie maintenant la clé publique du certificat :
+L'API renvoie le certificat au format PEM :
 
 ```json
 {
   "id": "f18b5e0d-75b8-40a3-9b0e-XXXXXX",
-  "name": "reader",
-  "description": "My reader credential",
+  "name": "John Smith",
+  "description": "My access credential",
   "identityURNs": [
-    "urn:v1:eu:identity:user:xx1111-ovh/reader1",
-    "urn:v1:eu:identity:group:xx1111-ovh/reader"
+    "urn:v1:eu:identity:user:xx1111-ovh/john.smith",
+    "urn:v1:eu:identity:group:xx1111-ovh/my_group"
   ],
   "status": "READY",
   "fromCSR": false,
@@ -139,7 +152,7 @@ L'API renvoie maintenant la clé publique du certificat :
 }
 ```
 
-Copiez la valeur du champ **certificatePEM** dans un fichier **client.tls**.
+Copiez la valeur du champ **certificatePEM** dans un fichier **client.cert**.
 
 #### Avec une CSR
 
@@ -165,12 +178,12 @@ Il est nécessaire d'indiquer les informations suivantes :
 ```json
 {
   "csr": "-----BEGIN CERTIFICATE REQUEST-----\nMIICvDCCAaQCAQAwdzELMAkGA1UEBhMCVVMxDTALBgNVBAgMBFV0YWgxDzANBgNV\nBAcMBkxpbmRvbjEWMBQGA1UECgwNRGlnaUNlcnQgSW5jLjERMA8GA1UECwwIRGln\naUNlcnQxHTAbBgNVBAMMFGV4YW1wbGUuZGlnaWNlcnQuY29tMIIBIjANBgkqhkiG\n9w0BAQEFAAOCAQ8AMIIBCgKCAQEA8+To7d+2kPWeBv/orU3LVbJwDrSQbeKamCmo\nwp5bqDxIwV20zqRb7APUOKYoVEFFOEQs6T6gImnIolhbiH6m4zgZ/CPvWBOkZc+c\n1Po2EmvBz+AD5sBdT5kzGQA6NbWyZGldxRthNLOs1efOhdnWFuhI162qmcflgpiI\nWDuwq4C9f+YkeJhNn9dF5+owm8cOQmDrV8NNdiTqin8q3qYAHHJRW28glJUCZkTZ\nwIaSR6crBQ8TbYNE0dc+Caa3DOIkz1EOsHWzTx+n0zKfqcbgXi4DJx+C1bjptYPR\nBPZL8DAeWuA8ebudVT44yEp82G96/Ggcf7F33xMxe0yc+Xa6owIDAQABoAAwDQYJ\nKoZIhvcNAQEFBQADggEBAB0kcrFccSmFDmxox0Ne01UIqSsDqHgL+XmHTXJwre6D\nhJSZwbvEtOK0G3+dr4Fs11WuUNt5qcLsx5a8uk4G6AKHMzuhLsJ7XZjgmQXGECpY\nQ4mC3yT3ZoCGpIXbw+iP3lmEEXgaQL0Tx5LFl/okKbKYwIqNiyKWOMj7ZR/wxWg/\nZDGRs55xuoeLDJ/ZRFf9bI+IaCUd1YrfYcHIl3G87Av+r49YVwqRDT0VDV7uLgqn\n29XI1PpVUNCPQGn9p/eX6Qo7vpDaPybRtA2R7XLKjQaF9oXWeCUqy1hvJac9QFO2\n97Ob1alpHPoZ7mWiEXXXXXXXXXXXXX\n-----END CERTIFICATE REQUEST-----",
-  "description": "My reader credential",
+  "description": "My access credential",
   "identityURNs": [
-    "urn:v1:eu:identity:user:xx1111-ovh/reader1",
-    "urn:v1:eu:identity:group:xx1111-ovh/reader"
+    "urn:v1:eu:identity:user:xx1111-ovh/john.smith",
+    "urn:v1:eu:identity:group:xx1111-ovh/my_group"
   ],
-  "name": "reader",
+  "name": "John Smith",
   "validity": 30
 }
 ```
@@ -180,11 +193,11 @@ L'API retourne ensuite l'état de création du certificat :
 ```json
 {
   "id": "f18b5e0d-75b8-40a3-9b0e-XXXXXX",
-  "name": "reader",
-  "description": "My reader credential",
+  "name": "John Smith",
+  "description": "My access credential",
   "identityURNs": [
-    "urn:v1:eu:identity:user:xx1111-ovh/reader1",
-    "urn:v1:eu:identity:group:xx1111-ovh/reader"
+    "urn:v1:eu:identity:user:xx1111-ovh/john.smith",
+    "urn:v1:eu:identity:group:xx1111-ovh/my_group"
   ],
   "status": "CREATING",
   "fromCSR": true,
@@ -200,16 +213,16 @@ Copiez l'ID du certificat et accédez au détail de ce dernier via l'API :
 > @api {v2} /okms GET /okms/resource/{okmsId}/credential/{credentialId}
 >
 
-L'API renvoie maintenant la clé publique du certificat :
+L'API renvoie le certificat au format PEM :
 
 ```json
 {
   "id": "f18b5e0d-75b8-40a3-9b0e-XXXXXX",
-  "name": "reader",
-  "description": "My reader credential",
+  "name": "John Smith",
+  "description": "My access credential",
   "identityURNs": [
-    "urn:v1:eu:identity:user:xx1111-ovh/reader1",
-    "urn:v1:eu:identity:group:xx1111-ovh/reader"
+    "urn:v1:eu:identity:user:xx1111-ovh/john.smith",
+    "urn:v1:eu:identity:group:xx1111-ovh/my_group"
   ],
   "status": "READY",
   "fromCSR": true,
@@ -219,7 +232,7 @@ L'API renvoie maintenant la clé publique du certificat :
 }
 ```
 
-Copiez la valeur du champ **certificatePEM** dans un fichier **client.tls**.
+Copiez la valeur du champ **certificatePEM** dans un fichier **client.cert**.
 
 ### Communiquer avec le KMS
 
@@ -232,7 +245,7 @@ Par exemple, pour un KMS créé sur la région **eu-west-rbx** : <https://eu-wes
 En cas d'utilisation d'un navigateur, il est nécessaire de convertir le certificat en format pkcs12 :
 
 ```bash
-openssl pkcs12 -export -inkey cert_key_pem.txt -in cert_key_pem.txt -out cert_key.p12
+openssl pkcs12 -export -inkey client.key -in client.cert -out client.p12
 ```
 
 #### Créer une clé de chiffrement
@@ -318,7 +331,7 @@ Les tailles et opérations possibles en fonction du type de clé sont les suivan
 
 A la création d'une clé, il est possible d'importer une clé existante.
 
-Pour cela il est possible d'ajouter un champ complémentaire **keys** dans le corps de l'API :
+Pour cela il est possible d'ajouter un champ complémentaire **keys** dans le corps de la requête :
 
 ```json
 {
@@ -362,8 +375,8 @@ Afin de gérer les clés de chiffrement, plusieurs API sont disponibles :
 |POST|/v1/servicekey/{keyId}/activate|Active une clé de chiffrement|
 |POST|/v1/servicekey/{keyId}/deactivate|Désactive une clé de chiffrement|
 
-La désactivation d'une clé de chiffrement implique que celle-ce ne sera plus utilisable, bien que la clé reste présente dans le KMS.<br>
-La suppression d'une clé de chiffrement n'est possible que sur une clé préalablement désactivée
+La désactivation d'une clé de chiffrement implique que celle-ci ne sera plus utilisable, bien que la clé reste présente dans le KMS.<br>
+La suppression d'une clé de chiffrement n'est possible que sur une clé préalablement désactivée.
 
 > [!warning]
 >
@@ -375,7 +388,7 @@ La suppression d'une clé de chiffrement n'est possible que sur une clé préala
 #### Chiffrement sur le KMS
 
 Le KMS OVHcloud dispose d'une API de chiffrement dédiée pour le chiffrement de petits volumes de données (moins de 4 kB).<br>
-Il s'agit de la méthode la plus rapide, mais qui ne présente pas les meilleures performances.
+Il s'agit de la méthode la plus simple, mais qui ne présente pas les meilleures performances.
 
 |**Méthode**|**Chemin**|**Description**|
 | :-: | :-: | :-: |
@@ -418,7 +431,7 @@ L'API attend les valeurs suivantes :
 |ciphertext|string|Donnée à déchiffrer|
 |context|string|Donnée d'identification complémentaire permettant de vérifier l'authenticité de la donnée|
 
-Le champ **context** devant contenir la même information que celle donnée lors du chiffrement.
+Le champ **context** devant avoir la même valeur que celle donnée lors du chiffrement.
 
 #### Chiffrement avec une Data Key (DK)
 
@@ -480,7 +493,7 @@ Et renvoie la Data Key déchiffrée dans un champ **plaintext**.
 
 ### Signer avec le KMS
 
-La signature de fichier se fait à l'aide de clé asymétrique
+La signature de fichier se fait à l'aide de la clé privée d'une paire de clés asymétriques.
 
 #### Algorithmes supportés
 
@@ -518,7 +531,7 @@ Suivant la documentation de la [RFC 7518](https://www.rfc-editor.org/rfc/rfc7518
 
 #### Signature d'un message
 
-Etant donné que la clé privée ne peut être extraite du KMS ,la signature ne peut se faire que directement auprès du KMS.
+Etant donné que la clé privée ne peut être extraite du KMS, la signature ne peut se faire que directement auprès du KMS.
 
 |**Méthode**|**Chemin**|**Description**|
 | :-: | :-: | :-: |

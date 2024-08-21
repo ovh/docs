@@ -26,7 +26,7 @@ Esta red DNS permite facilitar a los usuarios el acceso a Internet y a los disti
 
 Permiten, entre otras cosas, el uso de los [dominios](/links/web/domains) para acceder a su sitio web preferido sin tener que conservar la dirección IP del servidor en el que está alojado este sitio web.
 
-![DNS resolution](images/dns-resolution.png){.thumbnail}
+![DNS resolution](/pages/assets/schemas/dns/dns-resolution.png){.thumbnail}
 
 Hay 4 tipos de servidores DNS.
 
@@ -61,7 +61,7 @@ Una zona DNS contiene información técnica, denominada *registros DNS*. La zona
 
 Por lo tanto, los **servidores DNS (Authoritative)** deben estar declarados (en el registrador del dominio) para utilizar la zona DNS que alojan.
 
-![DNS](images/dns-server.png){.thumbnail}
+![DNS](/pages/assets/schemas/dns/dns-server.png){.thumbnail}
 
 ### Funcionamiento de un servidor DNS (Authoritative) con un dominio
 

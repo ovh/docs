@@ -65,11 +65,11 @@ No separador `Informações gerais`{.action}, pode verificar se as condições e
 
 Clique no link `Tag de transferência que sai`{.action} na secção intitulada **Segurança**.
 
-![transferência de saída](images/outgoing-transfer-tag.jpg){.thumbnail}
+![transferência de saída](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/outgoing-transfer-tag.jpg){.thumbnail}
 
 Na nova janela, introduza a TAG do novo agente de registo e clique em `Confirmar`{.action}.
 
-![transferência de saída](images/outgoing-transfer-tag-confirmation.jpg){.thumbnail}
+![transferência de saída](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/outgoing-transfer-tag-confirmation.jpg){.thumbnail}
 
 Se não conseguir alterar a TAG do domínio a partir da Área de Cliente, pode solicitá-la ao registry Nominet. Encontre mais informações no [site oficial da Nominet](https://www.nominet.uk/domain-support/).
 

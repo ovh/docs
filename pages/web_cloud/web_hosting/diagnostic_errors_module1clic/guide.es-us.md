@@ -37,7 +37,7 @@ No obstante, si la configuración de estos últimos no se realiza correctamente,
 
 ### Su dominio no está incluido al crear el "módulo en un clic"
 
-![domainenotproposed](images/domain-unavailable.png){.thumbnail}
+![domainenotproposed](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/domain-unavailable.png){.thumbnail}
 
 Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action} de la página. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. En la nueva página, haga clic en la pestaña `Multisitio`{.action} y realice las siguientes comprobaciones:
 
@@ -48,7 +48,7 @@ Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sec
 
 ### "Se ha producido un error al cargar la información (You need at least one free database)"
 
-![No databases available](images/message-no-db-available.png){.thumbnail}
+![No databases available](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/message-no-db-available.png){.thumbnail}
 
 Este mensaje aparece al iniciar la instalación de su "módulo en un clic" cuando no tiene la posibilidad de crear una nueva base de datos asociada a su alojamiento web.
 
@@ -58,7 +58,7 @@ Si ya no tiene bases de datos incluidas con su alojamiento web, puede contratar 
 
 En su [área de cliente de OVHcloud](/links/manager), acceda a la sección `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento web al que quiera añadir una base de datos adicional. En la nueva página, haga clic en la pestaña `Bases de datos`{.action} y seleccione `Acciones`{.action} para contratar una base de datos adicional:
 
-![order_a_database](images/order-a-db.png){.thumbnail}
+![order_a_database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/order-a-db.png){.thumbnail}
 
 Una vez finalizado, podrá instalar un nuevo "módulo en un clic".
 
@@ -76,7 +76,7 @@ Una vez finalizado, podrá instalar un nuevo "módulo en un clic".
 
 En su [área de cliente de OVHcloud](/links/manager), haga clic en `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. Haga clic en el botón `...`{.action} de la sección `Suscripción` > `Solución` > `Cambiar de plan`{.action} :
 
-![upgrade_hosting](images/upgrade-perso.png){.thumbnail}
+![upgrade_hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/upgrade-perso.png){.thumbnail}
 
 Los planes [Pro](/links/web/hosting-professional-offer) y [Performance](/links/web/hosting-performance-offer) le permitirán crear hasta tres "módulos en un clic" adicionales con una base de datos independiente para cada uno de ellos. Los planes de hosting **Performance** también le permitirán activar gratuitamente un servidor [Web Cloud Databases](/links/web/databases).
 
@@ -93,7 +93,7 @@ Para eliminar una base de datos de su [área de cliente de OVHcloud](/links/mana
 
 A continuación, abra la pestaña `Bases de datos`{.action}. En la tabla que aparece, haga clic en el botón `...`{.action} a la derecha de la fila correspondiente a la base de datos que desea suprimir y seleccione `Eliminar la base de datos`{.action}:
 
-![delete_a_database](images/sharedsql-deletion.png){.thumbnail}
+![delete_a_database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/sharedsql-deletion.png){.thumbnail}
 
 Una vez finalizado, podrá instalar un nuevo "módulo en un clic".
 
@@ -117,13 +117,13 @@ Una vez finalizado, podrá instalar un nuevo "módulo en un clic".
 
 ### Su "módulo en un clic" se muestra en una dirección web de tipo "xxxxx.cluster0xx.hosting.ovh.net"
 
-![url-cluster](images/url-cluster.png){.thumbnail}
+![url-cluster](/pages/assets/screens/other/browsers/urls/url-cluster.png){.thumbnail}
 
 Después de realizar todas las copias de seguridad necesarias, [elimine el "módulo en un clic"](#delete-the-module) y, a continuación, su [base de datos](#delete-the-database). A continuación, vuelva a instalar el "módulo en un clic" en el dominio deseado.
 
 ### "El directorio de instalación no está vacío"
 
-![folder_not_empty](images/folder-not-empty.png){.thumbnail}
+![folder_not_empty](/pages/assets/screens/email-sending-to-customer/webhosting/folder-not-empty.png){.thumbnail}
 
 Después de haber iniciado la creación de su "módulo en un clic", ha recibido un mensaje de correo electrónico indicándole que el directorio de instalación de su "módulo en un clic" no está vacío.
 
@@ -145,7 +145,7 @@ Para más información, consulte nuestra guía "[Cambiar la configuración de un
 
 ### "Se ha producido un error al cargar la información (There is not enough space on your hosting (you need at least xxx MB)"
 
-![not_enough_space](images/message-not-enough-ftp-space.png){.thumbnail}
+![not_enough_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/message-not-enough-ftp-space.png){.thumbnail}
 
 Este mensaje indica que el [espacio de almacenamiento FTP](/pages/web_cloud/web_hosting/ftp_connection) de su alojamiento web tiene un volumen de datos demasiado elevado. 
 
@@ -170,13 +170,13 @@ En este caso, [conéctese por FTP](/pages/web_cloud/web_hosting/ftp_connection) 
 
 En su [área de cliente de OVHcloud](/links/manager), acceda a la sección `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. Haga clic en el botón `...`{.action} de la sección `Suscripción` > `Solución` > `Cambiar de plan`{.action}:
 
-![upgrade_hosting](images/upgrade-perso.png){.thumbnail}
+![upgrade_hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/upgrade-perso.png){.thumbnail}
 
 Los planes [Pro](/links/web/hosting-professional-offer) y [Performance](/links/web/hosting-performance-offer) le permitirán crear hasta tres "módulos en un clic" adicionales con una base de datos independiente para cada uno de ellos. Los planes de hosting **Performance** también le permitirán activar gratuitamente un servidor [Web Cloud Databases](/links/web/databases).
 
 ### "No se puede conectar a la base de datos" <a name="delete-the-module"></a>
 
-![wrong_id_database](images/db-connection-failed.png){.thumbnail}
+![wrong_id_database](/pages/assets/screens/email-sending-to-customer/databases/db-connection-failed.png){.thumbnail}
 
 Tras instalar el "módulo en un clic" en modo avanzado, recibirá un mensaje de correo electrónico indicándole que el "módulo en un clic" no se puede conectar a la base de datos indicada.
 
@@ -184,7 +184,7 @@ Por lo tanto, compruebe las claves de la base de datos. Para más información, 
 
 A continuación, elimine el "módulo en un clic". Para ello, conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. A continuación, abra la pestaña `Módulos en un clic`{.action}. En la tabla que aparece, haga clic en el botón `...`{.action} a la derecha de la línea correspondiente al dominio y seleccione `Eliminar el módulo`{.action}.
 
-![delete_a_module](images/delete-a-module.png){.thumbnail}
+![delete_a_module](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/delete-a-module-2.png){.thumbnail}
 
 > [!warning]
 >
@@ -197,7 +197,7 @@ A continuación, vuelva a instalar un nuevo "módulo en un clic".
 
 ### "You have insufficient rights on this database."
 
-![insufficient_rights](images/db-insufficient-rights.png){.thumbnail}
+![insufficient_rights](/pages/assets/screens/email-sending-to-customer/databases/db-insufficient-rights.png){.thumbnail}
 
 Este mensaje aparece únicamente al instalar un "módulo en un clic" en **modo avanzado**. La base de datos no se puede modificar porque la cantidad de datos que contiene supera el límite permitido. En este caso, la base de datos está bloqueada como de sólo lectura.
 
@@ -215,7 +215,7 @@ Si no dispone de otras bases de datos y no desea contratar una solución adicion
 
 ### "Can't connect to database 'xxxxxxxx' at 'xxxxxx-xxx.eu.clouddb.ovh.net'. The error is: Access denied for user 'xxxx'@'xxxxxxxx' (using password: YES)"
 
-![cant_connect](images/db-cant-connect-access-denied.png){.thumbnail}
+![cant_connect](/pages/assets/screens/email-sending-to-customer/databases/db-cant-connect-access-denied.png){.thumbnail}
 
 Ha iniciado la instalación de un "módulo en un clic" en [modo avanzado](/pages/web_cloud/web_hosting/cms_install_1_click_modules) en una base de datos situada en un servidor [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). Ha recibido este mensaje de error por correo electrónico. Esto significa que el usuario indicado durante la instalación no tiene suficientes derechos sobre la base de datos o que las claves indicadas son incorrectas.
 
@@ -225,7 +225,7 @@ Compruebe también sus claves [conectándose directamente](/pages/web_cloud/web_
 
 ### "Can't connect to database 'xxxxxxxx' at 'xxxxxxxx.mysql.db'. The error is: Unknown MySQL server host 'xxxxxxxx.mysql.db'"
 
-![cant_connect_server](images/db-cant-connect-server.png){.thumbnail}
+![cant_connect_server](/pages/assets/screens/email-sending-to-customer/databases/db-cant-connect-server.png){.thumbnail}
 
 Ha iniciado la instalación de un "módulo en un clic" en [modo avanzado](/pages/web_cloud/web_hosting/cms_install_1_click_modules) en una base de datos situada en un servidor [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). Ha recibido este mensaje de error por correo electrónico. Significa que el nombre del servidor de bases de datos que ha especificado es incorrecto.
 

@@ -98,11 +98,11 @@ Tenga en cuenta que OVHcloud no es el agente registrador del dominio al iniciar 
 
 Una vez desbloqueado el dominio, y con el código obtenido, puede solicitar la transferencia a OVHcloud desde [nuestro sitio web](/links/web/domains){.external}. Para ello, introduzca el dominio en el campo de registro de un dominio y continúe con el pedido.
 
-![domain](images/Domain_transfer_order.png){.thumbnail}
+![domain](/pages/assets/screens/website/order/domain-transfer-order.png){.thumbnail}
 
 Cuando se le pida el código de transferencia, introdúzcalo en el campo situado junto al dominio. Si todavía no tiene el código de transferencia, puede marcar la casilla `Introducir código de transferencia más adelante`{.action}. No obstante, le recomendamos que, antes de continuar, se asegure previamente de que podrá obtener el código. Tenga en cuenta que la transferencia no se iniciará hasta que se haya proporcionado un código válido.
 
-![domain](images/step_authinfo_add.png){.thumbnail}
+![domain](/pages/assets/screens/website/order/step_authinfo_add.png){.thumbnail}
 
 También puede completar el pedido con un [alojamiento web](/links/web/hosting){.external} y otras soluciones de OVHcloud. Esto le puede interesar si quiere migrar sus servicios a OVHcloud. Nuestra guía [Migrar un sitio web y el correo a OVHcloud ](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external} explica cómo hacerlo.
 
@@ -123,7 +123,7 @@ También puede completar el pedido con un [alojamiento web](/links/web/hosting){
 
 - En algunos casos, es posible que sea necesario disponer de información adicional sobre el propietario del dominio. Para añadir esta información, haga clic en la opción `Gestionar los contactos o el propietario`{.action}.
 
-![dominio](images/Order_summary.png){.thumbnail}
+![dominio](/pages/assets/screens/website/order/order-summary.png){.thumbnail}
 
 #### Seguimiento de la transferencia tras el pedido
 

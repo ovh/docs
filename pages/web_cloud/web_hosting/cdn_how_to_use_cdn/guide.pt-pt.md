@@ -44,7 +44,7 @@ Aceda à Área de [Cliente OVHcloud](/links/manager) e selecione a opção `Web 
 > 
 > Se possui uma opção CDN anterior a 19/11/2020, pode encomendar a nova oferta Shared CDN clicando em `Atualizar o CDN para a versão superior`{.action}.
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/order.png){.thumbnail}
+![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-a-cdn.png){.thumbnail}
 
 Será então redirecionado para a página onde será gerada a nota de encomenda. Uma vez efetuada e paga a encomenda, o serviço ficará disponível em apenas alguns minutos.
 
@@ -54,7 +54,7 @@ Aceda à Área de [Cliente OVHcloud](/links/manager) e selecione a opção `Web 
 
 Assinale a opção "Ativar o CDN", clique em `Seguinte`{.action} e depois em `Validar`{.action}.
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/activation.png){.thumbnail}
+![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/cdn-activation.png){.thumbnail}
 
 > [!warning]
 > 
@@ -74,7 +74,7 @@ No que diz respeito ao SEO (referenciamento nos motores de pesquisa), a velocida
 
 Dirija-se ao separador `Multisite`{.action} do seu alojamento, clique em `...`{.action} à direita da entrada multisite e, a seguir, `Purgar o CDN`{.action}.
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/sharedcdn-modify-cdn.png){.thumbnail}
+![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/sharedcdn-modify-cdn.png){.thumbnail}
 
 #### Configurar as opções do Shared CDN
 
@@ -84,7 +84,7 @@ Dirija-se ao separador `Multisite`{.action} do seu alojamento, clique em `...`{.
 > 
 > Algumas opções estão bloqueadas na oferta Basic e requerem a subscrição do [CDN security](/links/web/hosting-options-cdn) ou do [CDN Advanced](/links/web/hosting-options-cdn).
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/sharedcdn-modify-cdn.png){.thumbnail}
+![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/sharedcdn-modify-cdn.png){.thumbnail}
 
 - **Ainda online**: Permite a manutenção dos dados do CDN online em caso de falha do servidor.
 
@@ -98,7 +98,7 @@ Dirija-se ao separador `Multisite`{.action} do seu alojamento, clique em `...`{.
 
 Depois de escolher as opções, clique em `Aplicar configuração`{.action} e, a seguir, em `Validar a configuração`{.action} na janela seguinte.
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/sharedcdn-option-settings.png){.thumbnail}
+![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/sharedcdn-option-settings.png){.thumbnail}
 
 ##### **Criar uma regra de implementação de cache** <a name="cacherules"></a>
 
@@ -106,7 +106,7 @@ Para adicionar uma regra de cache num dos elementos do seu site, clique no separ
 
 Sob a menção **Regras de cache**, clique no botão `Adicionar uma regra`{.action}.
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/sharedcdn-create-cache-rule.png){.thumbnail}
+![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/sharedcdn-create-cache-rule.png){.thumbnail}
 
 - **Nome de regra**: Atribua um nome à sua regra.
 
@@ -120,7 +120,7 @@ Depois de escolher, clique no botão `Criar a regra`{.action}.
 
 As regras aparecem numa lista. Pode alterar uma regra clicando em `...`{.action} à direita desta e, a seguir, em `Alterar a regra`{.action}; ou eliminá-la clicando em `Eliminar a regra`{.action}.
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/sharedcdn-cache-rules.png){.thumbnail}
+![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/sharedcdn-cache-rules.png){.thumbnail}
 
 Depois de configurar as regras e selecionar as opções, clique em `Aplicar configuração`{.action} e, a seguir, em `Validar a configuração`{.action} na janela seguinte.
 
@@ -139,7 +139,7 @@ Dirija-se ao separador `Multisite`{.action} do seu alojamento, clique em `...`{.
 
 	Depois de ativar a função, clique em `Editar a lista de recursos externos`{.action} para adicionar os nomes de domínio autorizados a partilhar os seus recursos.
 
-	![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/security-cors.png){.thumbnail}
+	![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/security-cors.png){.thumbnail}
 
 	Depois de preencher a lista, clique em `Confirmar`{.action}.
 
@@ -151,13 +151,13 @@ Dirija-se ao separador `Multisite`{.action} do seu alojamento, clique em `...`{.
 
 	Depois de ativar a função, clique no menu pendente para escolher entre o `Reencaminhamento permanente (301)` ou o `Reencaminhamento temporário (302)`.
 
-	![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/security-https-redirect.png){.thumbnail}
+	![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/security-https-redirect.png){.thumbnail}
 
 - **HTTP Strict Transport Security (HSTS)**: Imponha o acesso ao seu website unicamente em HTTPS. Desta forma, a sua solução web fica protegida contra os ataques de degradação (ou ataques de replicação).
 
 	Uma vez a função ativada, determine o período de vida útil durante o qual o browser irá aplicar a função HSTS no seu website.
 
-	![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/security-hsts.png){.thumbnail}
+	![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/security-hsts.png){.thumbnail}
 
 > [!primary]
 > 
@@ -202,7 +202,7 @@ Dirija-se ao separador `Multisite`{.action} do seu alojamento, clique em `...`{.
 
 	No separador Multisite, clique no botão `...`{.action} à direita da entrada multisite e, a seguir, em `Purger o CDN`{.action}. 
 
-	![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/advanced-clear-cache-step-1.png){.thumbnail}
+	![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/advanced-cdn-clear-cache-step-1.png){.thumbnail}
 
 - **Query String**: Gestão da colocação em cache de conteúdo, baseada nos parâmetros (também designados por *Query String*) do pedido URL. Em função da sua configuração, escolha o comportamento da cache CDN:
 	- *Desativado*: O recurso é colocado em cache com os seus parâmetros não triados. O que vai criar, por exemplo, 2 iterações na cache do CDN para 2 URL com os mesmos parâmetros numa ordem diferente.
@@ -217,7 +217,7 @@ Dirija-se ao separador `Multisite`{.action} do seu alojamento, clique em `...`{.
 
 	Uma lista forma-se no quadro inferior, com o conjunto dos links que listou, pode eliminar o da sua escolha selecionando-o e clicando em `Retirar`{.action}.
 
-	![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/advanced-prewarm.png){.thumbnail}
+	![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/advanced-prewarm.png){.thumbnail}
 
 - **Cache rule**: Crie até 100 regras. Elas definem a frequência de atualização de cache para certos recursos precisos no seu site. Consulte o manual [na próxima etapa](#cacherulesadv) para obter mais informações.
 
@@ -229,7 +229,7 @@ Para adicionar uma regra de cache num dos elementos do seu site, clique no separ
 
 Sob a menção **Regras de cache**, clique no botão `Adicionar uma regra`{.action}.
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/advanced-create-cache-rule.png){.thumbnail}
+![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/advanced-create-cache-rule.png){.thumbnail}
 
 * **Nome da regra**: Atribua um nome à sua regra.
 * **Tipo de recurso**: Escolha entre as opções seguintes:
@@ -245,7 +245,7 @@ Depois de escolher, clique no botão `Criar a regra`{.action}.
 
 As regras aparecem numa lista. Pode alterar uma regra clicando em `...`{.action} à direita desta e, a seguir, em `Alterar a regra`{.action}. Pode eliminá la clicando em `Eliminar a regra`{.action}.
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/advanced-cache-rules.png){.thumbnail}
+![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/advanced-cache-rules.png){.thumbnail}
 
 Depois de configurar as regras e selecionar as opções, clique em `Aplicar configuração`{.action} e, a seguir, em `Validar a configuração`{.action} na janela seguinte.
 
@@ -253,7 +253,7 @@ Depois de configurar as regras e selecionar as opções, clique em `Aplicar conf
 
 No separador `Multisite`{.action} do seu alojamento, abaixo da tabela, pode visualizar as estatísticas do seu CDN, indicando o número de pedidos por minuto medidos no mesmo.
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/statistics.png){.thumbnail}
+![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/statistics.png){.thumbnail}
 
 ### Como colocar em cache os meus ficheiros no CDN?
 
@@ -303,7 +303,7 @@ Aceda à [Área de Cliente OVHcloud](/links/manager) e selecione a opção `Web 
 
 Desmarque a opção "Ativar o CDN", clique em `Seguinte`{.action} e depois em `Validar`{.action}.
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/deactivation.png){.thumbnail}
+![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/cdn-deactivation.png){.thumbnail}
 
 ### Eliminar a opção CDN no seu alojamento
 
@@ -311,7 +311,7 @@ Esta ação tem como objetivo eliminar a opção CDN para a totalidade do seu al
 
 Aceda à Área de [Cliente OVHcloud](/links/manager) e selecione a opção `Web Cloud`{.action}. Clique em `Alojamentos`{.action} e selecione o plano correspondente. Clique em `...`{.action} à direita de "Opção CDN" e depois em `Eliminar CDN`{.action}.
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/cdn/resiliation.png){.thumbnail}
+![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/cancel-the-cdn.png){.thumbnail}
 
 Clique em `Validar`{.action} para confirmar a eliminação.
 

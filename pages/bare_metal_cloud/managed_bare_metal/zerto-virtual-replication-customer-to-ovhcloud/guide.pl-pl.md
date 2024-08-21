@@ -15,7 +15,7 @@ Dla ułatwienia opiszemy najprostszą konfigurację, w której brama VPN ma poł
 - Docelowe PCC musi mieć co najmniej jeden publiczny adres IP dostępny dla punktu połączenia VPN.
 - Lokalizacja klienta musi dysponować działającą instalacją Zerto.
 - Maszyny replikacji Zerto (VRA: Virtual Réplication Appliance) po stronie klienta i po stronie OVHCloud muszą mieć możliwość wymiany informacji na portach TCP 4007 i 4008.
-- Maszyny administracji Zerto (ZVM: Zerto Virtual Manager) po stronie klienta i po stronie OVHCloud muszą mieć możliwość wymiany informacji na portach TCP 9081.
+- Maszyny administracji Zerto (ZVM: Zerto Virtual Manager) po stronie klienta i po stronie OVHCloud muszą mieć możliwość wymiany informacji na portach TCP 9071.
 
 ## W praktyce
 
@@ -214,7 +214,7 @@ Możesz również sprawdzić plik dziennika IPSec w /var/log/ipsec.log.
 
 Aby umożliwić powiązanie między lokalizacją klienta a lokalizacją OVHcloud, musisz odblokować:
 
-- Port 9081 między maszynami ZVM
+- Port 9071 między maszynami ZVM
 - Porty 4007 i 4008 między maszynami vRA
 
 #### 4.1 Otwieranie połączeń dla ZVM
@@ -239,7 +239,7 @@ Sekcje Source i Destination są typu “Single host or Network” i oznaczają o
 
 ![zerto vpn](images/image-EN-28.png){.thumbnail}
 
-Dozwolony docelowy port TCP to 9081.
+Dozwolony docelowy port TCP to 9071.
 
 Zapisz regułę i zastosuj ją.
 
@@ -315,7 +315,7 @@ Nastąpi przekierowanie do ekranu połączenia ZVM i pojawi się następujący k
 
 ![zerto vpn](images/image-EN-40.png){.thumbnail}
 
-Najbardziej prawdopodobną przyczyną jest to, że ZVM OVHCloud nie może nawiązać połączenia z ZVM klienta na porcie TCP 9081. Jest to niezbędne dla otwarcia połączenia.
+Najbardziej prawdopodobną przyczyną jest to, że ZVM OVHCloud nie może nawiązać połączenia z ZVM klienta na porcie TCP 9071. Jest to niezbędne dla otwarcia połączenia.
 
 ## Sprawdź również
 

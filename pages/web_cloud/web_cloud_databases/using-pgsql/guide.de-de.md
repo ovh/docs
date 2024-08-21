@@ -52,7 +52,7 @@ psql --host=server --port=port --user=user --password=password database_name
 ### Per Software (SQuirreL SQL) verbinden
 - Starten Sie SQuirreL SQL und klicken Sie auf `Aliases`{.action}, danach auf `+`{.action}
 
-![launch SQuirreL SQL](images/aliases.png){.thumbnail}
+![launch SQuirreL SQL](/pages/assets/screens/other/web-tools/squirrel/aliases.png){.thumbnail}
 
 - Füllen Sie die untenstehenden Felder aus und klicken Sie dann auf `OK`{.action}
     - **Name**: Geben Sie einen Namen ein
@@ -61,15 +61,15 @@ psql --host=server --port=port --user=user --password=password database_name
     - **User Name**: Geben Sie den Benutzernamen ein
     - **Password**: Geben Sie das Passwort ein
 
-![config connection](images/add-alias-pgsql.png){.thumbnail}
+![config connection](/pages/assets/screens/other/web-tools/squirrel/add-alias-pgsql.png){.thumbnail}
 
 - Bestätigen Sie erneut, indem Sie auf den Button `Connect`{.action} klicken
 
-![valid connection](images/connect-to-pgsql.png){.thumbnail}
+![valid connection](/pages/assets/screens/other/web-tools/squirrel/connect-to-pgsql.png){.thumbnail}
 
 Sie sind jetzt mit Ihrer Datenbank verbunden:
 
-![config connection](images/general-dashboard-pgsql.png){.thumbnail}
+![config connection](/pages/assets/screens/other/web-tools/squirrel/general-dashboard-pgsql.png){.thumbnail}
 
 ### Per phpPgAdmin verbinden
 *In Kürze in einer anderen Anleitung verfügbar*
