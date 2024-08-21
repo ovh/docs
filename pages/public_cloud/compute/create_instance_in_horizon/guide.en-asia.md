@@ -21,9 +21,9 @@ You can create multiple Instances directly in the Horizon interface, and also co
 
 As a general rule, we recommend creating a private network before creating an instance. You can later attach this network to your instance.
 
-To start creating an Instance, log in to the Horizon interface. If you are unsure about how to do this, please refer to our [guide](/pages/public_cloud/compute/introducing_horizon).
+To begin, log in to the Horizon interface. If you are unsure about how to do this, please refer to our [guide](/pages/public_cloud/compute/introducing_horizon).
 
-Next, click `Network`{.action} in the left-hand menu, then `Networks`{.action}.
+Next, click on `Network`{.action} in the left-hand menu, then `Networks`{.action}.
 
 ![network](images/create-network.png){.thumbnail}
 
@@ -60,7 +60,7 @@ Click on `Create Network`{.action}
 
 ### Create Instance
 
-In the horizon interface, click `Compute`{.action} in the left-hand menu, then `Instances`{.action}.
+In the horizon interface, click on `Compute`{.action} in the left-hand menu, then `Instances`{.action}.
 
 ![createinstance](images/create-instance-step1.png){.thumbnail}
 
@@ -90,7 +90,7 @@ You will then need to fill in the information requested. Please note that this g
 |---|---|
 |Select Boot Source|Click on the drop-down arrown to select the source for launching an instance (e.g. "Image" or "Instance snapshot").|
 |Create New Volume|You may choose to check this option if you wish to create a volume into which the specified operating system image is copied.|
-|Volume size (GB)|If you have choosen to create a volume, all the system to determine the size for you.|
+|Volume size (GB)|If you have choosen to create a volume, allo the system to determine the size for you.|
 |Delete Volume on Instance Delete|You can leave the default option **No**. If **Yes** is selected, when the instance is deleted, so is the volume.|
 |Image name (only when launching from an image)|Select the Instance image by clicking on the upward arrow next to the image of your choice. In our example, we use selected Centos 7.|
 |Instance snapshot (only for launching from a snapshot)|Choose an Instance snapshot by clicking on the upward arrow next to the instance snapshot image of your choice.|
@@ -117,10 +117,9 @@ Pre-built flavors are available for you, select the flavor of your choice undern
 
 For more information, consult the following [guide](/pages/public_cloud/compute/setup_security_group).
 
-
 **Key Pair**
 
-> [!warning] 
+> [!warning]
 >
 > Although the "Key Pair" field is not mandatory in the Horizon interface when creating an instance, registering an SSH key is absolutely necessary to be able to connect to an instance. Without an SSH key, you will be required to reboot the instance in rescue mode to either create a password or add an SSH key to the appropriate file (for more information, please refer to the guide on [Replacing your lost SSH key pair](/pages/public_cloud/compute/replacing_lost_ssh_key#instructions)).
 >
@@ -131,15 +130,14 @@ In this section, you have the option to create a keypair, import a keypair or us
 
 For more information on how to create an SSH key, consult this [guide](/pages/public_cloud/compute/public-cloud-first-steps#step-1-creating-ssh-keys).
 
-
 > [!tabs]
 > **+ Create Key Pair**
 >> 
 >> To create a Keypair, click on the `+ Create Key Pair`{.action} button. Please note that with this option, additional steps have to be made before you are able to connect to the instance, especially if you are using the software Putty to connect to your instance. 
 >>
 >> **Key Pair Name:** Enter a name for your key.<br>
->> **Key Type:** Click on the `drop down arrow` and `Select SSH Key`.<br>
->> Next, click on `Create Keypair` to begin the creation of the key pair.<br>
+>> **Key Type:** Click on the `drop down arrow` and select `SSH Key`.<br>
+>> Next, click on `Create Keypair`{.action} to begin the creation of the key pair.<br>
 >>
 >> Once the Key Pair is created, click on `Copy Private Key to Clipboard`{.action}, then on `Done`{.action}.<br><br>
 >>![create ssh key](images/create-ssh-key-1.png){.thumbnail}<br>
@@ -152,7 +150,7 @@ For more information on how to create an SSH key, consult this [guide](/pages/pu
 >> If you prefer to import a previously created SSH key, click on the `Import Key Pair`{.action} button.
 >>
 >> **Key Pair Name:** Enter a name for your key.<br>
->> **Key Type:** Click on the `drop down arrow` and `Select SSH Key`.<br>
+>> **Key Type:** Click on the `drop down arrow` and select `SSH Key`.<br>
 >> **Load Public Key from a file:**  Click on `Browse`{.action} to specify the location of the public key on your computer.<br>
 >> **Public Key:** Copy and paste your public key here.<br>
 >> Click on `Import Key Pair`{.action} to import the key.<br><br>
