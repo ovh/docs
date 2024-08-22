@@ -162,7 +162,7 @@ For more information on how to create an SSH key, consult this [guide](/pages/pu
 
 **Other options**
 
-Please note that these options are not mandatory for the creation of a basic instance. If you wish to explore these options further, consult the official [Openstack documentation](https://docs.openstack.org/horizon/latest/user/launch-instances.html).
+Please note that these options are not mandatory for the creation of a basic instance. If you wish to explore these options further, consult the official [OpenStack documentation](https://docs.openstack.org/horizon/latest/user/launch-instances.html).
 
 |Information|Details|
 |---|---|
