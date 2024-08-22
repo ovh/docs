@@ -45,7 +45,7 @@ Click on `Create Network`{.action}
 >> **Subnet Name:** Enter a name for your subnet.<br>
 >> **Network Address:** Choose a private network range. For example: `192.168.0.0/24`.<br>
 >> **IP Version:** Leave this value at IPv4.<br>
->> **Gateway IP:** This option is optional. If it is not defined, a Gateway IP is automatically selected.<br>
+>> **Gateway IP:** This is optional. If it is not defined, a Gateway IP is automatically selected.<br>
 >> **Disable Gateway:** Leave this unchecked.<br><br>
 >>![subnet](images/subnet_information.png){.thumbnail}<br>
 >>
