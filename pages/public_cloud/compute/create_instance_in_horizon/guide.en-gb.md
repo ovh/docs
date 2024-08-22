@@ -168,7 +168,7 @@ Please note that these options are not mandatory for the creation of a basic ins
 |---|---|
 |Custom script source|Specify the source between a "direct entry" or a "file".|
 |Script data|Enter the script code in the input field (16KB maximum).|
-|Script file|Click ‘browse’ to select the post-installation script.|
+|Script file|Click `Browse`{.action} to select the post-installation script.|
 |Disk partitioning|Choose between "automatic" or "manual".|
 |Configuration disk|Configure OpenStack to write metadata on to a specific configuration disk that will be attached to the Instance when it is launched.|
 
