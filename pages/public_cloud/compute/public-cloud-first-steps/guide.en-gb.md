@@ -210,7 +210,7 @@ Note that you can **upgrade** your instance after creation to have more resource
 
 **Regions**
 
-A **region** is defined as a location in the world comprised of one or several data centres where OVHcloud services are hosted. You can find more information on regions, geographical division and availability of services on our [region web page](/links/public-cloud/regions-pci) and our [infrastructure web page](/links/infrastructure).
+A **region** is defined as a location in the world comprised of one or several data centres where OVHcloud services are hosted. You can find more information on regions, geographical division and availability of services on our [region web page](/links/public-cloud/regions-pci) and our [infrastructure web page](/links/infrareg).
 
 **Local Zones**
 
