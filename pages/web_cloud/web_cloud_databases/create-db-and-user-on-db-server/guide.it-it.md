@@ -29,6 +29,11 @@ Clicca sulla scheda `Database` e infine su `Aggiungi un database`{.action}
 
 ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database.png){.thumbnail}
 
+> [!primary]
+>
+> La creazione di schemi PostgreSQL non è al momento disponibile sui server Web Cloud Databases.
+>
+
 Inserisci i campi rispettando i criteri indicati. È possibile creare un utente direttamente selezionando la casella **Creare un utente**:
 
 - **Nome del database** (obbligatorio): il nome del tuo futuro database
