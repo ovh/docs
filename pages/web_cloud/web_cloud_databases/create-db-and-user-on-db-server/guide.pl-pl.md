@@ -29,6 +29,11 @@ Przejdź do karty `Bazy danych`, a następnie `Dodaj bazę danych`{.action}.
 
 ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database.png){.thumbnail}
 
+> [!primary]
+>
+> Tworzenie schematów PostgreSQL jest aktualnie niedostępne na serwerach Web Cloud Databases.
+>
+
 Wypełnij pola zgodnie z podanymi kryteriami. Możesz utworzyć użytkownika bezpośrednio zaznaczając okienko **"Utwórz użytkownika"**:
 
 - **Nazwa bazy** (obowiązkowa): nazwa Twojej przyszłej bazy danych.
