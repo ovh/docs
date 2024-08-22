@@ -1,8 +1,21 @@
 ---
 title: "VMware Cloud Director - Sauvegarde avec Veeam Data Platform"
 excerpt: "Découvrez comment effectuer des sauvegardes et des restaurations avec Veeam (Plug-In) Data Platform / Protection pour votre VCD managé on OVHcloud"
-updated: 2024-08-12
+updated: 2024-08-22
 ---
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objectif
 
@@ -16,7 +29,7 @@ updated: 2024-08-12
     - [Les concepts fondamentaux](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts)
     - [Comment se connecter à son organisation](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging)
     - [Comment utiliser l'interface utilisateur](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-getting-started)
-- Avoir une connaissance du fonctionnement de Veeam Backup
+- Avoir une connaissance du fonctionnement de Veeam et de l'impact financière consécutive aux différents paramètres de charge qui s'applique lors de la mise en place de cette solution à VCD (cf. grille tarifaire des sauvegardes Veeam vCD on OVHcloud à [ce lien](/links/hosted-private-cloud/vmware/veeam-managed-backup/).
 
 ## En pratique
 
@@ -29,13 +42,15 @@ Le service Veeam Data Platform est disponible et prêt à l'emploi pour les 3 of
 > Pour que les options de traitement d'image et d'indexation du système de fichiers invité (compatibles avec l'application Veeam) fonctionnent avec les machines virtuelles Windows®, les outils VMware les plus récents doivent être installés. Les VMs Linux ne prennent pas en charge la reconnaissance des applications ou l'indexation du système de fichiers invité.
 >
 > Si vous utilisez le traitement d'images supportant les applications pour les sauvegardes de base de données MS SQL ou Oracle, les options compatibles avec les applications et restaurations d'éléments ne seront pas prises en charge. Une restauration complète de la machine virtuelle doit être réalisée, cela implique une fenêtre de temps d'arrêt pour tous les utilisateurs de la base de données. Il est impossible de relancer manuellement un échec de sauvegarde immuable. Vous devez exécuter une sauvegarde complète active ou attendre l'exécution de la prochaine sauvegarde planifiée (consultez la [documentation Veeam pour en savoir plus](https://helpcenter.veeam.com/docs/backup/vsphere/vcloud_manage_backup.html?ver=120)).
+>
+> La console Veeam VCD est à ce jour disponible uniquement en anglais.
+>
 
-
-### Étape 1 - Sauvegarde
-
-#### Accéder à la console d'administration Veeam Data Platform
+### Étape 1 - Sauvegarder avec Veeam Data Platform
 
 Le service **Veeam Data Platform** dispose d’un plugin VCD pour sauvegarder des VMs et des vApp à partir de n’importe quel Virtual Data Center (VDC) de l’organisation. Il est disponible au niveau de l'organisation pour tout utilisateur VMware Cloud Director ayant le rôle d'administrateur de l'organisation.
+
+/// details | Accéder à la console d'administration Veeam Data Platform.
 
 Lorsque vous utilisez l'intégration VCD Protection des données avec Veeam pour créer des tâches de sauvegarde, vous pouvez choisir n'importe quelle instance de machine virtuelle à partir de n'importe quel datacenter virtuel de l'organisation.
 
@@ -48,8 +63,6 @@ Dans le menu de la barre centrale supérieure, cliquez sur `Plus`{.action} et s�
 La fenêtre du Plugin Veeam VCD s'ouvrira avec un bandeau gris/noir.
 
 ![VCD access to Veeam Backup](images/vcd_veeam_backup_repo_2.png){.thumbnail}
-
-### Sauvegarder avec Veeam Data Platform
 
 #### Repository
 
@@ -66,7 +79,7 @@ Depuis votre espace client, vous pouvez activer le "Gold Repository".
 
 Tous ces repository ont un quota de stockage de 100 To. Vous pouvez contacter les [équipes de support](https://help.ovhcloud.com/csm?id=csm_get_help) pour augmenter ce quota.
 
-#### Données incluses dans les sauvegardes
+**Données incluses dans les sauvegardes**
 
 Lorsque Veeam Backup & Replication réalise des sauvegardes de vApp et de VM, il capture en plus les métadonnées de vApp.
 
@@ -82,7 +95,7 @@ Les métadonnées des applications virtuelles (vApp) et VM incluent :
 
 Les métadonnées vApp/VM sont stockées avec le contenu de la machine virtuelle. La capture des métadonnées vApp/VM est importante pour la restauration : sans elle, vous ne serez pas en mesure de restaurer les vApp et les VM vers VMware Cloud Director.
 
-#### Les tâches de sauvegardes (*jobs*)
+**Les tâches de sauvegardes (jobs)**
 
 Les tâches de sauvegarde nécessitent 4 paramètres par défaut :
 
@@ -93,9 +106,7 @@ Les tâches de sauvegarde nécessitent 4 paramètres par défaut :
 
 Pour les machines virtuelles gérées par VMware Cloud Director, Veeam Backup & Replication offre un type spécial de tâche de sauvegarde : les tâches de sauvegarde VMware Cloud Director. Les tâches de sauvegarde de VMware Cloud Director traitent les objets VMware Cloud Director, assurent leur restauration correcte et la prise en charge des fonctionnalités spécifiques à Cloud Director.
 
-Il est recommandé d'utiliser les tâches de sauvegarde de VMware Cloud Director pour sauvegarder les machines virtuelles gérées par VMware Cloud Director. Si vous sauvegardez des machines virtuelles gérées par VMware Cloud Director à l'aide d'une tâche de sauvegarde régulière, Veeam Backup & Replication effectuera une sauvegarde au niveau du serveur vCenter sous-jacent et ne capturera pas les métadonnées vApp. Par conséquent, vous ne serez pas en mesure de restaurer une machine virtuelle pleinement opérationnelle sur VMware Cloud Director.
-
-#### Comment créer une tâche de sauvegarde avec Veeam Data Platform ?
+**Comment créer une tâche de sauvegarde avec Veeam Data Platform** ?
 
 Vous allez créer votre premiere tâche de sauvegarde depuis le plugin VCD Veeam Data Platform  :
 
@@ -134,7 +145,7 @@ Cliquez sur `Next.`{.action}
 >
 > Si vous avez des clés SSH à ajouter pour Linux, vous pouvez le faire.
 >
-> Pour Windows vous pouvez choisir un compte standard ou un compte de service managé.
+> Pour Windows, vous pouvez choisir un compte standard ou un compte de service managé.
 
 Cliquez sur `Next`{.action}
 
@@ -146,7 +157,9 @@ Si nécessaire, vous pouvez ajouter des options de monitoring pour vos tâches d
 
 La tâche de sauvegarde apparait dans la liste.
 
-### Comment sauvegarder une machine virtuelle avec Veeam ?
+#### Sauvegarde VM
+
+**Comment sauvegarder une machine virtuelle avec Veeam** ?
 
 > [!primary]
 >
@@ -163,20 +176,20 @@ Choisissez une VM. Cliquez sur `Actions`{.action}, puis sur `Protection des donn
 
 ![Backup VM](images/vcd_veeam_backup_vm.png){.thumbnail}
 
-### Étape 2 - Restauration
+///
 
-#### Comment restaurer une VM ?
+### Étape 2 - Restauration avec Veeam Data Platform
+
+/// details | Comment restaurer une VM ?
 
 Veeam Backup dispose de plusieurs fonctionnalités de restauration :
 
 - La connaissance des applications (Application Awareness)
 - La stratégie par VM (Policies)
 
-#### Données incluses dans les restaurations
+**Données incluses dans les restaurations**
 
 Veeam Backup & Replication permet une restauration complète des VM vers VMware Cloud Director. Vous pouvez restaurer des VM distinctes vers des vApps, ainsi que des données de VM.
-
-Pour la restauration, Veeam Backup & Replication utilise les métadonnées de la VM enregistrées dans un fichier de sauvegarde et restaure des attributs spécifiques de la VM. En conséquence, vous obtenez une machine virtuelle pleinement opérationnelle dans VMware Cloud Director, vous n'avez pas besoin d'importer la machine virtuelle restaurée dans VMware Cloud Director et d'ajuster les paramètres manuellement.
 
 La restauration inclut les options suivantes :
 
@@ -186,7 +199,9 @@ La restauration inclut les options suivantes :
 
 Dans ce cas, faites une restauration de type **Full (entière/complète)**.
 
-#### Restauration entière "Full" d'une VM (machine virtuelle)
+#### Restauration VM
+
+**Restauration entière "Full" d'une VM (machine virtuelle)**
 
 Le service backup managé par OVHcloud vous permet de restaurer des VMs classiques qui font partie de vApps et des VM autonomes qui ont été créées dans votre portail OVHcloud VMware Cloud Director.
 
@@ -195,7 +210,7 @@ Lorsque vous restaurez des VMs normales ou autonomes dans la hiérarchie vCloud 
 - Veeam utilise les métadonnées vApp capturées pour définir les paramètres vApp et l'emplacement d'origine de la machine virtuelle dans la hiérarchie VMware Cloud Director. 
 - Veeam restaure les VMs du fichier de sauvegarde à leur emplacement d'origine ou à un autre emplacement. De plus, Veeam restaure tous les paramètres des VM.
 
-#### Comment restaurer une machine virtuelle depuis le plugin Veeam Data Platform VCD ?
+**Comment restaurer une machine virtuelle depuis le plugin Veeam Data Platform VCD** ?
 
 Pour effectuer une restauration complète, cliquez sur `Entire VM Restore`{.action}
 
@@ -212,6 +227,12 @@ Dans la dernière étape, cliquez sur `Finish`{.action}. Si vous le souhaitez, v
 ![VCD_Veeam_restore_vm_3](images/vcd_veeam_restore_vm_3.png){.thumbnail}
 
 Ce processus est simplifié grâce à VCD, Veeam et OVHcloud.
+
+**Comment restaurer un fichier depuis le plugin Veeam Data Platform VCD** ?
+
+- **File level restore** : Cette option n'est pas disponible encore à ce jour.
+
+///
 
 ## Aller plus loin
 
