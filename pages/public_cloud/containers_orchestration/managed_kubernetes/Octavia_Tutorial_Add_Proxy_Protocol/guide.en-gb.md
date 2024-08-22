@@ -11,19 +11,18 @@ updated: 2024-08-05
 
 ## Requirements
 
-- Access to an OpenStack environment on OVHcloud with Public Cloud Load Balancer configured. [Step-by-Step Guide](pages/public_cloud/public_cloud_network_services/getting-started-01-create-lb-service/)  & [Getting started with Load Balancer on Public Cloud](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
+- Access to an OpenStack environment on OVHcloud with Public Cloud Load Balancer configured. [Step-by-Step Guide](pages/public_cloud/public_cloud_network_services/getting-started-01-create-lb-service/) & [Getting started with Load Balancer on Public Cloud](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
 - Administrative rights to create and modify Public Cloud LoadBalancer services.
-    - Administrative Rights Needed:
-    
-    Root Access on Backend Servers: Ensure you have root or superuser access to the backend servers. This is essential for installing and configuring software (like NGINX) and for making necessary changes to the server’s settings.
-    Project Admin Role in OVHcloud: Ensure you are assigned the Project Admin role within your OVHcloud OpenStack project. This role allows you to create, modify, and manage Public Cloud LoadBalancer services.
-    Administrative Access to the OVHcloud Environment: Ensure you have sufficient permissions to interact with network and compute resources within your OVHcloud environment. This includes creating instances, modifying network settings, and managing security groups.
-
-     - Where to Check/Assign Rights:
-    
-    OVHcloud Control Panel: Verify that you have the appropriate roles and permissions in your OVHcloud Control Panel under the "Users & Roles" section of your project. If additional permissions are needed, consult with your project administrator to ensure you have the necessary access.
   
-- Create an instance on OVHcloud and install a web server that will serve as the backend. For example, we will use an NGINX server.
+    - **Administrative Rights Needed:**
+      - **Root Access on Backend Servers:** Ensure you have root or superuser access to the backend servers. This is essential for installing and configuring software (like NGINX) and for making necessary changes to the server’s settings.
+      - **Project Admin Role in OVHcloud:** Ensure you are assigned the Project Admin role within your OVHcloud OpenStack project. This role allows you to create, modify, and manage Public Cloud LoadBalancer services.
+      - **Administrative Access to the OVHcloud Environment:** Ensure you have sufficient permissions to interact with network and compute resources within your OVHcloud environment. This includes creating instances, modifying network settings, and managing security groups.
+
+    - **Where to Check/Assign Rights:**
+      - **OVHcloud Control Panel:** Verify that you have the appropriate roles and permissions in your OVHcloud Control Panel under the "Users & Roles" section of your project. If additional permissions are needed, consult with your project administrator to ensure you have the necessary access.
+
+- **Create two instances** on OVHcloud and install web servers that will serve as the backend. For example, you can use NGINX servers.[Creating an instance on OVHcloud & connect to the instance via SSH](/pages/public_cloud/compute/public-cloud-first-steps)).
 
 ## Instructions
 
@@ -33,11 +32,11 @@ In this guide you will create an instance on OVHcloud and install a web server (
 
 #### 1. Create an instance on OVHcloud
    
-Access your [OVHcloud Control Panel](/links/manager), go to the "Public Cloud" section and create a new instance. For detailed instructions, see the official documentation: [Creating an instance on OVHcloud](https://docs.ovh.com/en/public-cloud/create-vm/).
+Access your [OVHcloud Control Panel](/[links/manager](https://www.ovh.com/manager/#/hub), go to the "Public Cloud" section and create a new instance. For detailed instructions, see the official documentation: [Creating an instance on OVHcloud & connect to the instance via SSH](/pages/public_cloud/compute/public-cloud-first-steps)).
 
 #### 2. Install NGINX on the instance
 
-Connect to the instance via SSH
+Connect to the instance via SSH.
    
 Update packages and install NGINX:
 
@@ -170,20 +169,23 @@ openstack loadbalancer member create --subnet-id <subnet-id> --address <instance
 
 #### 1. Get the VIP address of the Public Cloud LoadBalancer:
 
-```bash
-openstack loadbalancer show my-loadbalancer -c vip_address -f value
-```
+The **VIP (Virtual IP)** address is the IP address assigned to the LoadBalancer that clients will use to access your services. It is a public-facing IP that routes traffic to your backend instances through the LoadBalancer. You can find this VIP address in the LoadBalancer settings in your OVHcloud Control Panel.
 
+
+```bash
+VIP_ADDRESS=$(openstack loadbalancer show my-loadbalancer -c vip_address -f value)
+echo $VIP_ADDRESS
+```
 **Example Result:**
 
 ```plaintext
-192.168.0.57
+$VIP_ADDRESS
 ```
 
 #### 2. Send an HTTP request to the LoadBalancer's VIP address
 
 ```bash
-curl http://192.168.0.57
+curl $VIP_ADDRESS
 ```
 
 **Example Result:**
@@ -195,8 +197,8 @@ Headers: <forwarded_headers>
 
 ## Go further
 
-- [Creating and connecting to your first Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps/).
-- [Managing subnets in OpenStack](https://docs.openstack.org/neutron/latest/admin/deploy-ovs-selfservice.html){.external}.
-- [Public Cloud Load Balancer](https://docs.openstack.org/octavia/latest/){.external}.
+- [Managing subnets in OpenStack](https://docs.openstack.org/neutron/latest/admin/deploy-ovs-selfservice.html){:target="_blank"}{.external}
+- [Getting started with Load Balancer on Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-01-create-lb-service)
+- [Prepare the environment for using the OpenStack API](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
 
 Join our [community of users](/links/community).
