@@ -92,7 +92,7 @@ Legen Sie einen Namen für Ihr Repository fest und geben Sie die angeforderten I
 
 Klicken Sie abschließend auf `Create Repository`{.action}.
 
-Kopieren Sie die Adresse Ihres GitHub Repositorys. Diese muss im Format `https://github.com/<username>/<repository_name>`{.action} vorliegen. Kehren Sie zum Git-Zuordnungsformular zurück und fügen Sie die Adresse Ihres GitHub-Repositorys in das Feld `Repository`{.action} ein. Wenn das Adressformat nicht korrekt ist, wird die folgende Fehlermeldung angezeigt:
+Kopieren Sie die Adresse Ihres GitHub Repositorys. Diese muss im Format `https://github.com/<username>/<repository_name.git>`{.action} vorliegen. Kehren Sie zum Git-Zuordnungsformular zurück und fügen Sie die Adresse Ihres GitHub-Repositorys in das Feld `Repository`{.action} ein. Wenn das Adressformat nicht korrekt ist, wird die folgende Fehlermeldung angezeigt:
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/error-wrong-git-repository-name.png){.thumbnail}
 
@@ -116,7 +116,7 @@ Am unteren Rand des Git-Zuordnungsformulars wird ein Abschnitt `Automatische Ber
 Bevor Sie das Git-Zuordnungsformular bestätigen, stellen Sie sicher, dass:
 
 - Ihr SSH-Schlüssel wurde erfolgreich in Ihrem GitHub-Konto gespeichert.
-- Die Adresse Ihres GitHub-Repositorys ist korrekt. Sie muss im Format `https://github.com/<username>/<repository_name>`{.action} vorliegen.
+- Die Adresse Ihres GitHub-Repositorys ist korrekt. Sie muss im Format `https://github.com/<username>/<repository_name.git>`{.action} vorliegen.
 - Der Zweigname des GitHub-Repositorys ist korrekt.
 - Das Installationsverzeichnis ist leer.
 
