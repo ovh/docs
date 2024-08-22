@@ -189,7 +189,7 @@ Le total de vos ressources Public Cloud sera initialement limité pour des raiso
 Notez que vous pouvez **mettre à niveau** votre instance après sa création pour avoir plus de ressources disponibles. Le passage à un modèle plus petit n'est cependant pas possible avec une instance régulière. Vous trouverez plus d'informations sur ce sujet à l'**étape 4.4** ci-dessous.
 >
 
-#### Informations complémentaires - modèles d'instance
+#### Informations complémentaires
 
 /// details | Catégories de modèles d'instance
 
