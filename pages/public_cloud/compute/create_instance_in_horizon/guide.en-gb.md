@@ -60,7 +60,7 @@ Click on `Create Network`{.action}
 
 ### Create Instance
 
-In the horizon interface, click on `Compute`{.action} in the left-hand menu, then `Instances`{.action}.
+In the Horizon interface, click on `Compute`{.action} in the left-hand menu, then `Instances`{.action}.
 
 ![createinstance](images/create-instance-step1.png){.thumbnail}
 
