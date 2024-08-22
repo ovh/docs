@@ -1,7 +1,7 @@
 ---
 title: Crea i tuoi database e i tuoi utenti sul tuo database server
 excerpt: Come creare un database sul tuo database server
-updated: 2023-02-15
+updated: 2024-08-22
 ---
 
 > [!primary]

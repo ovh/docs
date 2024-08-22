@@ -1,7 +1,7 @@
 ---
 title: 'Tworzenie baz danych i użytkowników na serwerze bazy danych'
 excerpt: 'Dowiedz się, jak utworzyć bazę danych na serwerze baz danych'
-updated: 2023-02-15
+updated: 2024-08-22
 ---
 
 > [!primary]

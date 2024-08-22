@@ -1,7 +1,7 @@
 ---
 title: 'Criar bases de dados e utilizadores no servidor de bases de dados'
 excerpt: 'Saiba como criar uma base de dados no servidor de bases de dados.'
-updated: 2023-02-15
+updated: 2024-08-22
 ---
 
 > [!primary]

@@ -1,7 +1,7 @@
 ---
 title: 'Datenbanken und Benutzer auf Ihrem Datenbankserver erstellen'
 excerpt: 'Erfahren Sie hier, wie Sie eine Datenbank auf Ihrem Datenbankserver erstellen'
-updated: 2023-02-15
+updated: 2024-08-22
 ---
 
 > [!primary]
@@ -26,6 +26,11 @@ In einer Datenbank (DB) können sogenannte dynamische Elemente, wie zum Beispiel
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und klicken Sie im Bereich `Web Cloud`{.action} auf `Web Cloud Databases`{.action}. Wählen Sie den Datenbanknamen aus, wechseln Sie zum Tab `Datenbanken`{.action} und klicken Sie dann auf `Datenbank hinzufügen`{.action}.
 
 ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database.png){.thumbnail}
+
+> [!primary]
+>
+> Die Erstellung von PostgreSQL-Schemas ist derzeit für die Web Cloud Databases Server nicht verfügbar.
+>
 
 Füllen Sie die Felder gemäß den angegebenen Kriterien ein. Sie können direkt einen Benutzer erstellen, indem Sie **Benutzer erstellen** anhaken.
 
