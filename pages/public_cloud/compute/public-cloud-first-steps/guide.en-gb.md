@@ -190,7 +190,7 @@ Your Public Cloud resources total will initially be limited for cost control and
 Note that you can **upgrade** your instance after creation to have more resources available. Switching to a smaller model however is not possible with a regular instance. You can find more information on this topic in **Step 4.4** below.
 >
 
-##### Additional information - instance models
+##### Additional information
 
 /// details | Instance model categories
 
