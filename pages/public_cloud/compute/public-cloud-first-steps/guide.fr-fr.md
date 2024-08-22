@@ -316,7 +316,7 @@ Dans cette étape, vous devez appliquer le mode de réseau Public Cloud que vous
 
 Cliquez sur `Suivant`{.action} pour passer à la dernière étape.
 
-#### Local Zones
+##### Local Zones
 
 Vous pouvez choisir d'attacher l'instance à un réseau privé, de la rendre accessible publiquement ou les deux.
 
