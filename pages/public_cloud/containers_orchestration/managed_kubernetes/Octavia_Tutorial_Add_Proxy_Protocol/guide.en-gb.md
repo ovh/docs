@@ -7,11 +7,11 @@ updated: 2024-08-05
 ## Objective
 
 **This guide explains how to configure Public Cloud Load Balancer to obtain the client source IP in the context of OVHcloud without using Kubernetes CCM.**
-- The Public Cloud Load Balancer (based on Octavia OpenStack project) provides a lot of features, follow [the guide](pages/public_cloud/public_cloud_network_services/getting-started-01-create-lb-service/) to learn more.
+- The Public Cloud Load Balancer (based on Octavia OpenStack project) provides a lot of features, follow [the guide](/pages/public_cloud/public_cloud_network_services/getting-started-01-create-lb-service) to learn more.
 
 ## Requirements
 
-- Access to an OpenStack environment on OVHcloud with Public Cloud Load Balancer configured. [Step-by-Step Guide](pages/public_cloud/public_cloud_network_services/getting-started-01-create-lb-service/)  & [Getting started with Load Balancer on Public Cloud](pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api/)
+- Access to an OpenStack environment on OVHcloud with Public Cloud Load Balancer configured. [Step-by-Step Guide](pages/public_cloud/public_cloud_network_services/getting-started-01-create-lb-service/)  & [Getting started with Load Balancer on Public Cloud](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
 - Administrative rights to create and modify Public Cloud LoadBalancer services.
     - Administrative Rights Needed:
     
