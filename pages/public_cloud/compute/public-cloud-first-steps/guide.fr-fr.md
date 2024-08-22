@@ -136,7 +136,7 @@ Avant de créer votre instance, nous vous recommandons de considérer la manièr
 
 Les instances en mode public sont exposées à l’Internet public directement via IPv4/IPv6. Les adresses IP ne peuvent pas être modifiées, mais les instances peuvent avoir des adresses [Additional IP](/links/network/additional-ip) attachées ([y compris la vôtre](/links/public-cloud/byoip)) et elles peuvent être connectées à un [vRack](/links/network/vrack).
 
-***Mode Privé**
+**Mode Privé**
 
 Les instances en mode privé peuvent uniquement être exposées à l’Internet public via un service [Gateway](/links/public-cloud/gateway) ou [Load Balancer](/links/public-cloud/load-balancer) et des adresses [Floating IP](/links/public-cloud/floating-ip).
 
