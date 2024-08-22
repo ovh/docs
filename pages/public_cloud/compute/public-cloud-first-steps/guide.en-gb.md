@@ -468,7 +468,7 @@ You will then need to complete the initial setup of your Windows OS. Follow the 
 > 4. **Administrator login**
 >>
 >> Enter the `Administrator` password you have created in the previous step and click on the `Arrow` button.<br><br>
->>![VNC](/pages/assets/screens/other/windows/windows_login.png){.thumbnail}<br>
+>>![VNC](/pages/assets/screens/other/windows/windows_login.png){.thumbnail}
 >>
 
 <a name="login-windows"></a>
@@ -477,7 +477,7 @@ You will then need to complete the initial setup of your Windows OS. Follow the 
 
 On your local Windows device, you can use the `Remote Desktop Connection` client application to connect to your instance.
 
-![rdp connection](/pages/assets/screens/other/windows/windows_rdp.png){.thumbnail}<br>
+![rdp connection](/pages/assets/screens/other/windows/windows_rdp.png){.thumbnail}
 
 Enter the IPv4 address of your instance, then your username and passphrase. Usually a warning message will appear, asking to confirm the connection because of an unknown certificate. Click on `Yes`{.action} to log in.
 
@@ -514,7 +514,7 @@ The free and open-source software `Remmina Remote Desktop Client` is available f
 > 3. **Settings**
 >>
 >> You can find some useful items in the left-hand toolbar. For example, click on on the icon `Toggle dynamic resolution update`{.action} to improve the window resolution.<br><br>
->>![linux remote](images/24-rem-connect04.png){.thumbnail}<br>
+>>![linux remote](images/24-rem-connect04.png){.thumbnail}
 >>
 
 <a name="vnc-console"></a>
@@ -527,7 +527,7 @@ Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`
 
 ![control panel](/pages/assets/screens/control_panel/product-selection/public-cloud/tpl-pci-en.png){.thumbnail}
 
-Select `Instances`{.action} in the left-hand navigation bar under **Compute**. Click on the instance name and open the tab `VNC console`{.action}
+Select `Instances`{.action} in the left-hand navigation bar under **Compute**. Click on the instance name and open the tab `VNC console`{.action}.
 
 ![vnc console](/pages/assets/screens/control_panel/product-selection/public-cloud/cp-pci-vnc-login.png){.thumbnail}
 
