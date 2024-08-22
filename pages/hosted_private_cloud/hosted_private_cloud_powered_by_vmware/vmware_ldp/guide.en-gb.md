@@ -1,7 +1,7 @@
 ---
-title: "Logs Data Platform - VMware logs forwarding"
-excerpt: "Find out how to enable logs forwarding in a managed VMware vSphere on OVHcloud to a Logs Data Platform stream" 
-updated: 2024-08-20
+title: "Logs Data Platform - Managed VMware Logs Forwarding"
+excerpt: "Find out how to enable Logs Forwarding from a managed VMware vSphere on OVHcloud to a Logs Data Platform stream" 
+updated: 2024-08-22
 ---
 
 > [!primary]
@@ -11,7 +11,7 @@ updated: 2024-08-20
 
 ## Objective
 
-**The goal is to show you how to enable log forwarding from managed VMware vSphere on OVHcloud to a Logs Data Platform stream.**
+**The goal is to show you how to enable Log Forwarding on managed VMware vSphere to a Logs Data Platform stream.**
 
 ## Requirements
 
@@ -19,7 +19,7 @@ updated: 2024-08-20
 - One or more Hosted Private Cloud resources.
 - An active Logs Data Platform stream with the same account and security level as your Hosted Private Cloud VMware on OVHcloud.
 - You need to have followed the guide [Introduction to the Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP)
-- You must have `logForwarder` enabled. To check launch [this](#security-options) API call.
+- You must have `logForwarder` enabled. To check, launch [this](#security-options) API call.
 
 ## Instructions
 
@@ -74,25 +74,23 @@ To check the options required to enable the `logForwarder` feature to work withi
 
 Leave the 2 booleans "showIncompatible", "showInternal", available empty.
 
-> [!warning]
->
-> Here is an example of a return, if the option required to work is not enabled:
->
-> ```Shell
-> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/securityOptions/compatibilityMatrix
->
-> [
->  {
->   description: "Deploy a syslog forwarder to gather all VMware logs of a Private Cloud"
->   state: "disabled"
->   name: "logForwarder"
->   compatible: true
->   enabled: false
->   reason: null
->  }
-> ]
-> ```
-> 
+
+Here is an example of a return, if the option required to work is not enabled:
+
+```json
+@api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/securityOptions/compatibilityMatrix
+
+[
+ {
+  description: "Deploy a syslog forwarder to gather all VMware logs of a Private Cloud"
+  state: "disabled"
+  name: "logForwarder"
+  compatible: true
+  enabled: false
+  reason: null
+ }
+]
+```
 
 ### Step 2 - Logs Data Platform subscription for managed vSphere
 
@@ -119,14 +117,15 @@ To retrieve the **streamId** of your LDP account, read our guide [Getting starte
 > - `kind`: Name of the subscription log filter type, e.g. (`esxi`, `nsxtManager`, `vcsa`, `nsxtEdge`).
 > - `StreamId`: The destination stream identifier, e.g.  (uuid:`ggb8d894-c491-433e-9c87-50a8bf6fe773`).
 >
-> ```shell
-> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/log/subscription
->
-> {
->  "kind": "esxi", // The VMware label, the values currently supported are: `esxi`, `nsxtManager`, `vcsa`, `nsxtEdge`.
->  "streamId": "ggb8d894-c491-433e-9c87-50a8bf6fe773", // The Logs Data Platfrom stream ID.
-> }
-> ```
+
+```json
+@api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/log/subscription
+
+{
+ "kind": "esxi", // The VMware label, the values currently supported are: `esxi`, `nsxtManager`, `vcsa`, `nsxtEdge`.
+ "streamId": "ggb8d894-c491-433e-9c87-50a8bf6fe773", // The Logs Data Platfrom stream ID.
+}
+```
 
 The GET request allows you to list your subscriptions IDs.
 
@@ -181,11 +180,12 @@ Use the following API calls to list subscriptions to your Hosted Private Cloud a
 >
 > Return example:
 >
-> ```shell
-> [
-> "9a36b2ec-c7d2-411d-acf8-qb64ccffdb54"
-> ]
-> ```
+
+```json
+[
+ "9a36b2ec-c7d2-411d-acf8-qb64ccffdb54"
+]
+```
 
 **How to disable your Hosted Private Cloud Log Data Platform subscription**?
 
@@ -206,14 +206,15 @@ Use the following API calls to list subscriptions to your Hosted Private Cloud a
 > - `serviceName`: Service name of your VMware Hosted Private Cloud on OVHcloud, in the form `pcc-XXX-XXX-XXX-XXX`.
 > - `subscriptionId`: The log type name of the subscription (e.g. "esxi").
 >
-> Return:
->
-> ```shell
-> {
->  "operationId": "456eb42e-58r6-4cfd-8r5c-ccr97273712r",
->  "serviceName": "ldp-vg-XXXX"
-> }
-> ```
+
+Return:
+
+```json
+{
+ "operationId": "456eb42e-58r6-4cfd-8r5c-ccr97273712r",
+ "serviceName": "ldp-vg-XXXX"
+}
+```
 
 You will get the **operationId**, which is the identifier that confirms that the deactivation operation has been successful.
 

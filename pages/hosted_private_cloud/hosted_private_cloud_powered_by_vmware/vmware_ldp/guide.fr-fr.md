@@ -1,7 +1,7 @@
 ---
-title: "Logs Data Platform - Transfert de logs VMware"
-excerpt: "Découvrez comment activer le transfert de logs (logs forwarding) dans un VMware vSphere managé on OVHcloud vers un stream Logs Data Platform"
-updated: 2024-08-21
+title: "Logs Data Platform - Transfert des Logs VMware managé"
+excerpt: "Découvrez comment activer le transfert de logs (logs forwarding) depuis VMware vSphere managé on OVHcloud vers un flux (stream) Logs Data Platform"
+updated: 2024-08-22
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2024-08-21
 
 ## Objectif
 
-**L'objectif est de vous montrer comment activer le transfert des logs de votre VMware vSphere managé on OVHcloud vers un stream Logs Data Platform**.
+**L'objectif est de vous montrer comment activer le transfert des logs VMware vSphere managé vers un stream Logs Data Platform.**
 
 ## Prérequis
 
@@ -71,29 +71,26 @@ Pour vérifier les options exigées pour permettre le fonctionnement de la fonct
 > @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/securityOptions/compatibilityMatrix
 >
 
-Laissez les 2 booléens "showIncompatible", "showInternal" disponible vide.
+Laissez les 2 booléens "showIncompatible", "showInternal" disponible vide. 
 
-> [!warning]
->
-> Voici un exemple de retour, si l'option exigée pour fonctionner n'est pas activé :
->
-> ```Shell
-> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/securityOptions/compatibilityMatrix
->
-> [
->  {
->   description: "Deploy a syslog forwarder to gather all VMware logs of a Private Cloud"
->   state: "disabled"
->   name: "logForwarder"
->   compatible: true
->   enabled: false
->   reason: null
->  }
-> ]
-> ```
-> 
+Voici un exemple de retour, si l'option exigée pour fonctionner n'est pas activé :
 
-### Étape 2 - Souscription de l'abonnement Logs Data Platform pour un vSphere managé
+```json
+@api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/securityOptions/compatibilityMatrix
+
+[
+ {
+  description: "Deploy a syslog forwarder to gather all VMware logs of a Private Cloud"
+  state: "disabled"
+  name: "logForwarder"
+  compatible: true
+  enabled: false
+  reason: null
+ }
+]
+```
+
+### Étape 2 - Souscription de l'abonnement Logs Data Platform
 
 #### Via l'espace client OVHcloud
 
@@ -118,7 +115,7 @@ Pour récupérer le **streamId** de votre compte LDP, consultez le guide « [Pre
 > - `kind` : Type de filtrage journal VMware, e.g. (`esxi`, `nsxtManager`, `vcsa`, `nsxtEdge`).
 > - `streamId` : Identifiant du flux (stream) de destination, e.g. (uuid : `ggb8d894-c491-433e-9c87-50a8bf6fe773`).
 >
-> ```shell
+> ```json
 > @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/log/subscription
 >
 > {
@@ -132,7 +129,7 @@ La requête GET permet de lister vos IDs de souscriptions.
 ### Étape 3 - Création d'un stream Logs Data Platform HPC
 
 > [!primary]
-> Les ressources Hosted Private Cloud et LDP doivent bien appartenir au même compte OVHcloud.
+> Les ressources Hosted Private Cloud et Logs Data Platform doivent bien appartenir au même compte OVHcloud.
 >
 
 Vous pouvez vous référer à ce guide pour retrouver comment administrer vos flux (streams) depuis l'interface Logs Data Platform : « [Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) » (EN).
@@ -177,7 +174,7 @@ Utilisez les appels API suivants pour établir la liste des abonnements de votre
 >
 > Exemple de retour :
 >
-> ```shell
+> ```json
 > [
 >  "9a36b2ec-c7d2-411d-acf8-qb64ccffdb54"
 > ]
@@ -189,8 +186,7 @@ Utilisez les appels API suivants pour établir la liste des abonnements de votre
 > La résiliation de votre abonnement Hosted Private Cloud LDP ne signifie pas la suppression de vos streams. Le stockage consommé au moment de la désactivation reste soumis à facturation.
 >
 > **Note** : Il n'est possible (à ce jour) que de supprimer un stream dans son intégralité.
-
-
+>
 
 > [!api]
 >
@@ -202,14 +198,15 @@ Utilisez les appels API suivants pour établir la liste des abonnements de votre
 > - `serviceName` : nom de service de votre Hosted Private Cloud VMware on OVHcloud sous la forme "pcc-XXX-XXX-XXX-XXX".
 > - `subscriptionId` : nom du type de log de l'abonnement (par exemple `esxi`).
 >
-> Retour :
->
-> ```shell
-> {
->  "operationId": "456eb42e-58r6-4cfd-8r5c-ccr97273712r",
->  "serviceName": "ldp-vg-XXXX"
-> }
-> ```
+
+Retour :
+
+```json
+ {
+  "operationId": "456eb42e-58r6-4cfd-8r5c-ccr97273712r",
+  "serviceName": "ldp-vg-XXXX"
+ }
+```
 
 Vous obtiendrez un `operationId` qui est l'identifiant qui permet de confirmer que l'opération de désactivation s'est bien réalisée.
 
