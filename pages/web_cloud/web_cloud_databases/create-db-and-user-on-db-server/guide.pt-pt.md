@@ -29,6 +29,11 @@ Clique no separador `Bases de dados` e em `Adicionar uma base de dados`{.action}
 
 ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database.png){.thumbnail}
 
+> [!primary]
+>
+> A criação de esquemas PostgreSQL está atualmente indisponível nos servidores Web Cloud Databases.
+>
+
 Preencha os campos respeitando os critérios indicados. Pode criar diretamente um utilizador ao selecionar a caixa **«Criar um utilizador»**:
 
 - **Nome da base de dados** (obrigatório): nome da futura base de dados.
