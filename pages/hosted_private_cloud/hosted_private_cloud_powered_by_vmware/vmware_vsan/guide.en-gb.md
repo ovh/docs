@@ -1,39 +1,35 @@
 ---
-title: Using VMware Hyperconvergence with vSAN
-excerpt: Use the power of Hyperconvergence with vSAN
-updated: 2022-09-07
+title: "Hyper-Convergence with vSAN"
+excerpt: "Find out how to implement vSAN Hyper-Convergence with managed Hosted Private Cloud VMware services on OVHcloud"
+updated: 2024-08-22
 ---
 
 ## Objective
 
-Find out how to use the power of Hyperconvergence for your virtual machines with vSAN.
-
-**This guide explains how to set up VMware vSAN on OVHcloud Hosted Private Cloud.**
+**The purpose of this guide is to set up vSAN Hyper-Convergence from Hosted Private Cloud VMware on OVHcloud managed infrastructure.**
 
 ## Requirements
 
-- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
-- A user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
-- At least three vSAN hosts
-
-> [!warning]
->
-> The **vSAN Data-At-Rest Encryption** and **vSAN Data-In-Transit Encryption** encryption options are not supported by default on vSAN clusters. If you would like to implement these solutions, please contact your **Technical Account Manager**.
-> 
-> Encryption is still possible at the VM and its data level, as described in the guide [Enabling VM Encryption with vSphere Native Key Provider](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vm_encrypt-vnkp).
->
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials.
+- A user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)).
+- At least three vSAN hosts.
+- If you use an OVHcloud KMS (OKMS), you need a KMS subscription within Hosted Private Cloud. To do this check [the guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt).
 
 ## Instructions
 
-### What is vSAN?
+Find out how to use the power of Hyperconvergence for your virtual machines with vSAN.
+
+### Step 1 - What is vSAN?
 
 vSAN is an object storage solution offered by VMware. It gathers a set of disks situated directly on your VMware hosts, and presents them as a single datastore. This is known as Software-Defined Storage or SDS. One of the advantages of vSAN is that it is fully integrated into vSphere, and can be managed directly from vCenter.
 
 For full concept review and technical specifications, check out the [Official VMware VSAN page](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vsan-planning.doc/GUID-18F531E9-FF08-49F5-9879-8E46583D4C70.html){.external}
 
-### Setting up vSAN
+### Step 2 - Setting up vSAN
 
-#### Turn off vSphere HA
+#### Via the control panel
+
+**Turn off vSphere HA**
 
 vSAN relies on the cluster’s high-availability features. Before you start any operation, you have to ensure that you have turned it off.
 
@@ -50,7 +46,7 @@ Turn off vSphere HA and click `OK`{.action}.
 
 ![HA](images/en03ha.png){.thumbnail}
 
-#### Turn on vSAN Service
+**Turn on vSAN Service**
 
 In the Cluster configuration menu, go down to `vSAN`{.action} / `Services`{.action} and click on `Configure`{.action}.
 
@@ -90,14 +86,14 @@ Your datastore is visible in the storage section and available to use.
 > For performance and resilience reasons, VMware recommends not using more than 70% of the volume of a vSAN datastore.
 >
 
-### Turn off vSAN
+**Turn off vSAN**
 
 Before turning off vSAN, make sure to evacuate all of the virtual machines hosted on the datastore, or delete the machines you are no longer using.
 Click on the ‘Datastore’ tab, and check that there are no virtual machines set up on the vSAN datastore.
 
 ![VSAN](images/en11vsanvm.png){.thumbnail}
 
-#### Delete disk groups.
+**Delete disk groups**
 
 To delete all of the vSAN configuration details for your disks, you need to delete the group of disks created by vSAN when you turned it on.<br>
 In the Cluster configuration menu, go down to `vSAN`{.action} / `Disk Management`{.action}.<br>
@@ -113,7 +109,7 @@ Click on `Remove`{.action}.
 Repeat for each of the nodes in the cluster, until the entire disk group has been cleared.<br>
 You can safely ignore  error messages regarding the health of the disk group.
 
-#### Turn off Services.
+**Turn off Services**
 
 The same way you turned off the high-availability feature to set up vSAN, you will need to turn it off before you stop vSAN.
 
@@ -131,4 +127,6 @@ vSan is now off.
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+- [Introduction to VM encryption with OKMS](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_overall_vm-encrypt)
+
+Join our [community of users](/links/community).

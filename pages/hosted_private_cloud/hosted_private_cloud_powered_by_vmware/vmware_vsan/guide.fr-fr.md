@@ -1,39 +1,39 @@
 ---
-title: "Mettre en oeuvre l'hyperconvergence VMware avec vSAN"
-excerpt: "Utiliser la puissance de l'hyperconvergence avec vSAN"
-updated: 2022-09-07
+title: "Hyper-Convergence avec vSAN"
+excerpt: "Découvrez comment mettre en oeuvre de Hyper-Convergence vSAN avec les produits Hosted Private Cloud VMware managé on OVHcloud"
+updated: 2024-08-22
 ---
 
 ## Objectif
 
-Découvrez comment mettre en oeuvre la puissance de l'hyperconvergence pour vos machines virtuelles avec vSAN.
-
-**Ce guide explique comment mettre en place VMware vSAN dans le OVH Private Cloud.**
+**L'objectif de ce guide est de mettre en place de l'Hyper-Convergence vSAN depuis une infrastructure managé Hosted Private Cloud VMware on OVHcloud.**
 
 ## Prérequis
 
 - Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir des identifiants de connexion.
-- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
-- Avoir au minimum trois hôtes vSAN
+- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)).
+- Avoir au minimum trois hôtes vSAN.
 
-> [!warning]
+> [!success]
 >
-> Les options de chiffrements **vSAN Data-At-Rest Encryption** et **vSAN Data-In-Transit Encryption** ne sont pas supportées par défaut sur les clusters vSAN. Si toutefois vous souhaitez mettre en œuvre ces solutions veuillez contacter votre **Technical Account Manager**.
-> 
-> Le chiffrement reste possible au niveau de la machine virtuelle et de ses données, comme indiqué dans le guide « [Activation du chiffrement des machines virtuelles avec vSphere Native Key Provider](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vm_encrypt-vnkp) ».
+> Les options de chiffrements **vSAN Data-At-Rest Encryption** et **vSAN Data-In-Transit Encryption** sont maintenant supportées avec le service de gestion de clé OVHcloud OKMS, pour plus d'informations consultez le guide [d'introduction des solutions de chiffrement avec OKMS](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_overall_vm-encrypt).
 >
 
 ## En pratique
 
-### Qu'est-ce que vSAN ?
+Découvrez comment mettre en oeuvre la puissance de l'hyper-convergence pour vos machines virtuelles avec vSAN et KMIP.
+
+### Étape 1 - Qu'est-ce que vSAN ?
 
 vSAN est une solution de stockage objet proposée par VMware. Elle agrège un ensemble de disques situés directement dans les hôtes VMware et les présente comme un datastore unique. C'est ce que l'on appelle du Software Defined Storage ou SDS. Un des avantages de vSAN est d'être complétement intégré à vSphere et géré directement depuis vCenter.
 
 Pour une vue complète des concepts et des spécifications techniques, rendez-vous sur la [page officielle VMware VSAN](https://docs.vmware.com/fr/VMware-vSphere/6.7/com.vmware.vsphere.vsan-planning.doc/GUID-18F531E9-FF08-49F5-9879-8E46583D4C70.html){.external}
 
-### Paramétrer vSAN
+### Étape 2 - Paramétrer vSAN
 
-#### Désactiver vSphere HA
+#### Via l'espace client
+
+**Désactiver vSphere HA**
 
 vSAN s'appuie sur les fonctionnalités de haute disponibilité du cluster. Cependant, avant toute opération, il est nécessaire que ce mode soit désactivé.
 
@@ -50,7 +50,7 @@ Désactivez vSphere HA puis cliquez sur `OK`{.action}.
 
 ![HA](images/en03ha.png){.thumbnail}
 
-#### Activer le service vSAN
+**Activer le service vSAN**
 
 Dans le menu de configuration du cluster, descendez dans `vSAN`{.action} / `Services`{.action} et cliquez sur `Configurer`{.action}.
 
@@ -90,14 +90,14 @@ Votre datastore est visible dans le menu Stockage.
 > Pour des raisons de performance et de résilience, VMware recommande de ne pas dépasser 70% de remplissage sur un datastore vSAN.
 >
 
-### Désactiver vSAN
+**Désactiver vSAN**
 
 Avant de désactiver vSAN, assurez-vous d'évacuer toutes les machines virtuelles résidant sur le datastore ou supprimer celles qui ne vous servent plus.<br>
 Cliquez sur l'onglet `Datastore`{.action} et vérifiez qu'aucune machine virtuelle n'est installée sur le datastore vSAN.
 
 ![VSAN](images/en11vsanvm.png){.thumbnail}
 
-#### Suppression des groupes de disques
+**Suppression des groupes de disques**
 
 Pour supprimer toutes les informations de configuration vSAN de vos disques, vous pouvez effacer le groupe de disques créé par vSAN lors de l’activation.<br>
 Dans le menu de configuration du cluster, allez dans `vSAN`{.action} / `Gestion de disques`{.action}.<br>
@@ -113,7 +113,7 @@ Cliquez sur `Supprimer`{.action}.
 Répétez l’opération sur chacun des nœuds du cluster, jusqu’à la suppression totale des groupe de disques.<br>
 Vous pouvez ignorer les messages d'erreur concernant la santé du groupe de disques.
 
-#### Désactiver les Services.
+**Désactiver les Services**
 
 Comme vous aviez désactivé vSphere HA pour paramétrer vSAN, il vous faut à nouveau la désactiver avant d'arrêter vSAN.
 
@@ -131,6 +131,6 @@ vSan est désormais désactivé.
 
 ## Aller plus loin
 
-[Activation du chiffrement des machines virtuelles avec vSphere Native Key Provider](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vm_encrypt-vnkp).
+- [Introduction au chiffrement de VM avec OKMS](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_overall_vm-encrypt)
 
-Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d’utilisateurs](/links/community).
