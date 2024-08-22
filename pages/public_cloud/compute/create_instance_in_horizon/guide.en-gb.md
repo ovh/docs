@@ -90,7 +90,7 @@ You will then need to fill in the information requested. Please note that this g
 |---|---|
 |Select Boot Source|Click on the drop-down arrow to select the source for launching an instance (e.g. "Image" or "Instance snapshot").|
 |Create New Volume|You may choose to check this option if you wish to create a volume into which the specified operating system image is copied.|
-|Volume size (GB)|If you have choosen to create a volume, allow the system to determine the size for you.|
+|Volume size (GB)|If you have chosen to create a volume, allow the system to determine the size for you.|
 |Delete Volume on Instance Delete|You can leave the default option **No**. If **Yes** is selected, when the instance is deleted, so is the volume.|
 |Image name (only when launching from an image)|Select the Instance image by clicking on the upward arrow next to the image of your choice. In our example, we use selected Centos 7.|
 |Instance snapshot (only for launching from a snapshot)|Choose an Instance snapshot by clicking on the upward arrow next to the instance snapshot image of your choice.|
