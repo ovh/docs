@@ -1747,7 +1747,7 @@
             + [Object Storage - Endpoints and Object Storage geoavailability](storage_and_backup/object_storage/s3_location)
             + [Object Storage - Shared Responsibility RACI](storage_and_backup/object_storage/s3_object_storage_responsibility_model)
             + [Object Storage - FAQ](storage_and_backup/object_storage/s3_faq)
-            + [Object Storage - Local Zones limitations](storage_and_backup/object_storage/s3_local_zones_limitations)
+            + [Object Storage - Local Zones specifications](storage_and_backup/object_storage/s3_local_zones_limitations)
         + [General guides to start](storage-object-storage-general-guides-to-start)
             + [Object Storage - Getting started with Object Storage](storage_and_backup/object_storage/s3_getting_started_with_object_storage)
             + [Object Storage - Identity and access management](storage_and_backup/object_storage/s3_identity_and_access_management)
