@@ -467,7 +467,7 @@ Il vous faudra ensuite finaliser la configuration initiale de votre système d�
 > 4. **Login administrateur**
 >>
 >> Entrez le mot de passe `Administrator` que vous avez créé à l'étape précédente et cliquez sur le bouton « Arrow ».<br><br>
->>![VNC](/pages/assets/screens/other/windows/windows_login.png){.thumbnail}<br>
+>>![VNC](/pages/assets/screens/other/windows/windows_login.png){.thumbnail}
 >>
 
 <a name="login-windows"></a>
@@ -476,7 +476,7 @@ Il vous faudra ensuite finaliser la configuration initiale de votre système d�
 
 Sur votre appareil Windows local, vous pouvez utiliser l'application cliente `Remote Desktop Connection` pour vous connecter à votre instance.
 
-![rdp connection](/pages/assets/screens/other/windows/windows_rdp.png){.thumbnail}<br>
+![rdp connection](/pages/assets/screens/other/windows/windows_rdp.png){.thumbnail}
 
 Renseignez l'adresse IPv4 de votre instance, puis votre identifiant et votre passphrase. Généralement, un message d'avertissement apparaît, vous demandant de confirmer la connexion en raison d'un certificat inconnu. Cliquez sur `Oui`{.action} pour vous connecter.
 
@@ -513,7 +513,7 @@ Le logiciel libre et open source `Remmina Remote Desktop Client` est disponible 
 > 3. **Paramètres**
 >>
 >> Vous pouvez trouver des éléments utiles dans la barre d'outils de gauche. Par exemple, cliquez sur l'icône `Toggle dynamic resolution update`{.action} pour améliorer la résolution de la fenêtre.<br><br>
->>![linux remote](images/24-rem-connect04.png){.thumbnail}<br>
+>>![linux remote](images/24-rem-connect04.png){.thumbnail}
 >>
 
 <a name="vnc-console"></a>
@@ -526,7 +526,7 @@ Connectez-vous au [espace client OVHcloud](/links/manager), rendez-vous dans la 
 
 ![espace client](/pages/assets/screens/control_panel/product-selection/public-cloud/tpl-pci-en.png){.thumbnail}
 
-Sélectionnez `Instances`{.action} dans la barre de navigation de gauche sous **Compute**. Cliquez sur le nom de l'instance et ouvrez l'onglet `Console VNC`{.action}
+Sélectionnez `Instances`{.action} dans la barre de navigation de gauche sous **Compute**. Cliquez sur le nom de l'instance et ouvrez l'onglet `Console VNC`{.action}.
 
 ![console vnc](/pages/assets/screens/control_panel/product-selection/public-cloud/cp-pci-vnc-login.png){.thumbnail}
 
