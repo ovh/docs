@@ -20,16 +20,18 @@ updated: 2024-07-22
 The official "[Securing my OVHcloud account and managing my personal information](/pages/account_and_service_management/account_information/all_about_username)" guide provides general best practices for account management and is a good place to start.
 
 #### Enable Two-Factor Authentication (2FA)
+
 - **What it does**: Adds an extra layer of security by requiring a second form of verification (e.g., mobile app, security key) in addition to your password.
-- **How to enable**: Log in to your OVHcloud Control Panel, go to the Security tab, and follow the steps to set up 2FA using a mobile app or security key. Ensure you store your backup codes securely. More details on the [2FA guide](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa/).
+- **How to enable**: Log in to your OVHcloud Control Panel, go to the Security tab, and follow the steps to set up 2FA using a mobile app or security key. Ensure you store your backup codes securely. More details on the [2FA guide](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
 - **Example**: If you use a U2F security key, you will plug it into your USB port each time you log in, providing an additional security measure beyond your password.
 
 #### Set Strong Passwords
 The [Password management guide](/pages/account_and_service_management/account_information/manage-ovh-password) provides best practices with regards to the password management.
 
 #### Add a Backup Email Address
+
 - **Importance**: Helps recover access to your account if the primary email is inaccessible.
-- **Configuration**: Add a backup email in the OVHcloud Control Panel under your profile settings, ensuring it differs from your primary email address. see [Guide on managing personal information](pages/account_and_service_management/account_information/all_about_username/).
+- **Configuration**: Add a backup email in the OVHcloud Control Panel under your profile settings, ensuring it differs from your primary email address. see [Guide on managing personal information](pages/account_and_service_management/account_information/all_about_username).
 
 ### Step 2: Understanding Identity and Access Management (IAM) and creating Identities
 
@@ -43,14 +45,15 @@ The [Password management guide](/pages/account_and_service_management/account_in
 3. **Policies**: Rules that define what actions users and groups can perform on which resources.
 
 **Examples**:
-- **Managing identities**: 3 types of identities are supported and presented in that [documentation page](https://help.ovhcloud.com/csm/en-ie-account-identities-management?id=kb_article_view&sysparm_article=KB0061998)
-    * 'local users' which are identities representing a person in your organisation and associated to your OVHcloud account.  See [Creating and managing local users on an OVHcloud account](https://help.ovhcloud.com/csm/en-gb-account-managing-users?id=kb_article_view&sysparm_article=KB0030017)
-    * 'service accounts' which are used for 'machine to machine' interaction. Service account are also associated to your OVHcloud account
-    * 'Federated identities': multiple federation protocols / providers are supported and documented : [AD FS](https://help.ovhcloud.com/csm/en-gb-connect-saml-sso-adfs?id=kb_article_view&sysparm_article=KB0043008), [Google Workspace](https://help.ovhcloud.com/csm/en-gb-connect-saml-sso-googleworkspace?id=kb_article_view&sysparm_article=KB0057482), [Entra ID](https://help.ovhcloud.com/csm/en-gb-connect-saml-sso-azure-ad?id=kb_article_view&sysparm_article=KB0057535) or [OKTA](https://help.ovhcloud.com/csm/en-gb-connect-saml-sso-okta?id=kb_article_view&sysparm_article=KB0057681)
-    
-- **Grouping Users**: Create groups such as "Developers", "Admins", and "Auditors" to simplify permissions management. If you have chosen to create local users, then use this [documentation page](https://help.ovhcloud.com/csm/en-gb-account-managing-users?id=kb_article_view&sysparm_article=KB0030017#group-management) to create local user groups. If you have chosen Identity Federation, then the group shall be defined in your identity provider, provided in the SAML ticket and mapped to an OVHcloud group. This step is detailed in each Identity provider documentation page.
 
-- **Defining Policies**: Assign policies to identities and groups to restrict or grant access. For example, a developer might have permissions to deploy applications but not to manage billing information. This [documentation page](https://help.ovhcloud.com/csm/en-gb-customer-iam-policies-ui?id=kb_article_view&sysparm_article=KB0058725) defines how to use IAM policies using the OVHcloud Control Panel
+- **Managing identities**: 3 types of identities are supported and presented in that [documentation page](/pages/manage_and_operate/iam/identities-management)
+    * 'local users' which are identities representing a person in your organisation and associated to your OVHcloud account.  See [Creating and managing local users on an OVHcloud account](/pages/account_and_service_management/account_information/ovhcloud-users-management)
+    * 'service accounts' which are used for 'machine to machine' interaction. Service account are also associated to your OVHcloud account
+    * 'Federated identities': multiple federation protocols / providers are supported and documented : [AD FS](/pages/account_and_service_management/account_information/ovhcloud-account-connect-saml-adfs), [Google Workspace](/pages/account_and_service_management/account_information/ovhcloud-account-connect-saml-google-workspace), [Entra ID](/pages/account_and_service_management/account_information/ovhcloud-account-connect-saml-azure-ad) or [OKTA](/pages/account_and_service_management/account_information/ovhcloud-account-connect-saml-okta)
+    
+- **Grouping Users**: Create groups such as "Developers", "Admins", and "Auditors" to simplify permissions management. If you have chosen to create local users, then use this [documentation page](/pages/account_and_service_management/account_information/ovhcloud-users-management) to create local user groups. If you have chosen Identity Federation, then the group shall be defined in your identity provider, provided in the SAML ticket and mapped to an OVHcloud group. This step is detailed in each Identity provider documentation page.
+
+- **Defining Policies**: Assign policies to identities and groups to restrict or grant access. For example, a developer might have permissions to deploy applications but not to manage billing information. This [documentation page](/pages/account_and_service_management/account_information/iam-policy-ui) defines how to use IAM policies using the OVHcloud Control Panel
 
 
 ### Step 3: Best Practices for Structuring Public Cloud Projects
@@ -96,7 +99,7 @@ The following table sums up the access rights we will provide to each groups in 
 
 
 #### Provide Control Panel access
-In order to provide access to OVHCloud control Panel, you need to create a specific policy as described in that [page](../../../../pages/account_and_service_management/account_information/iam-control-panel-access/) and in the `Add user groups`, choose the groups `finance_developer_group` and `finance_SRE_group`.
+In order to provide access to OVHCloud control Panel, you need to create a specific policy as described in that [page](/pages/account_and_service_management/account_information/iam-control-panel-access/) and in the `Add user groups`, choose the groups `finance_developer_group` and `finance_SRE_group`.
 ![Add user groups](img/Add_user_groups.png){.thumbnail}
 
 Thanks to that policy, the user belonging to those 2 groups will have access to the Control Panel but only with that policy they do not have the right to see / manage any resources. The following chapter adds that. 
@@ -120,7 +123,7 @@ Here is a step by step guide to create the first policy:
 * Then click on `Add user groups`, choose the group `finance_developer_group`.
 * Under `Product types`, choose `Public Cloud project`
 * Under `Resources`, select the target public cloud project `cloud_project_finance_fpa_dev`
-![Add Product types & resources](img/Product_types_resources.png){.thumbnail}
+![Add Product types & resources](images/Product_types_resources.png){.thumbnail}
 * Under `Actions` in `Managed permission groups`, leave `Authorize all actions` unchecked and choose `globalWriteAccess`
 ![Actions](img/Actions.png){.thumbnail}
 
