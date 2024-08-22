@@ -1,8 +1,22 @@
 ---
 title: 'Sécuriser son compte OVHcloud avec la double authentification'
 excerpt: 'Découvrez comment améliorer la sécurité de votre compte OVHcloud en activant la double authentification (2FA)'
-updated: 2024-03-18
+updated: 2024-08-22
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objectif
 
@@ -193,19 +207,36 @@ Une fois tous vos périphériques supprimés, désactivez les codes de secours e
 
 #### Si vous n'avez plus accès à votre espace client OVHcloud <a name="2FA-deletion"></a>
 
-Si vous ne disposez plus de périphériques valides et si vous ne disposez plus de codes de secours valides, vous pouvez demander la désactivation de la double authentification en contactant nos équipes support.
+Si vous ne disposez plus de périphériques valides ni de codes de secours valides, vous devez alors demander la désactivation de la double authentification en fournissant des documents de justification d'identité correspondant à votre compte OVHcloud.
 
-Avant de nous contacter, vous devez réunir les éléments justificatifs suivants :
+Tout d'abord, accédez à [la page d'authentification à l'espace client OVHcloud](/links/manager).
+
+Renseignez votre identifiant OVHcloud et votre mot de passe pour accéder à l'étape de la double authentification. Cliquez alors sur le bouton `Je n’ai plus accès à mon mobile, à la clé de sécurité U2F ou à mes codes de secours`{.action}.<br>
+Si vous ne voyez pas ce bouton, cliquez sur le bouton `Essayer une autre méthode`{.action} puis sur `Je n’ai plus accès à mon mobile, à la clé de sécurité U2F ou à mes codes de secours`{.action}.
+
+L'interface suivante vous permet de téléverser et d'envoyer à nos équipes les documents nécessaires pour désactiver la double authentification sur votre compte.
+
+> [!warning]
+>
+> - Attention, veuillez vous assurer que tous vos documents sont corrects et lisibles avant envoi.
+> - **Formats acceptés** : jpg, jpeg, pdf, png. La taille maximale du fichier pour chaque document est de 10 Mo.
+> - En cas de documents non valides, cette procédure sera annulée et vous devrez en effectuer une nouvelle.
+
+Dans un délai de 72 heures, sous réserve que vos documents soient sont corrects et lisibles, vous recevrez la confirmation de la désactivation de la double authentification par e-mail.
+
+/// details | Liste des justificatifs
 
 |Type de compte OVHcloud|Justificatifs à fournir|
 |---|---|
 |Particulier|- Justificatif d’identité (carte d’identité, permis de conduire, passeport) mentionnant le nom complet, la date de naissance et la date d’expiration, au nom du titulaire du compte OVHcloud.<br><br>- Justificatif de domicile correspondant à celui enregistré sur le compte OVHcloud, datant de moins de deux mois.<br>**Si, suite à un déménagement, vous n'avez pas mis à jour votre adresse dans votre espace client OVHcloud, vous devrez fournir :**<br>- Un justificatif de domicile à l'ancienne adresse<br>- Un justificatif de domicile à la nouvelle adresse, datant de moins de 3 mois<br>Si vous vivez à présent chez un tiers, vous devrez fournir :<br>- Un justificatif de domicile au nom de la personne vous hébergeant, datant de moins de 3 mois<br>- Une attestation d'hébergement sur l'honneur|
 |Société|- Justificatif d’identité (carte d’identité, permis de conduire, passeport) mentionnant le nom complet, la date de naissance et la date d’expiration, au nom du titulaire du compte OVHcloud, ou au nom d'une personne autorisée à représenter l'entreprise.<br><br>- Justificatif de domicile de l'entreprise datant de moins de deux mois, correspondant à l'adresse enregistrée sur le compte OVHcloud.|
 
-Une fois vos justificatifs réunis, contactez le support OVHcloud par téléphone:
+///
 
-- **Canada** : 1-855-684-5463.
-- **France** : 1007 (composez le 0033 9 72 10 10 07 depuis une ligne en dehors de la France).
+En cas de difficultés, après avoir réuni vos documents justificatifs, vous pouvez contacter le support OVHcloud par téléphone :
+
+- Canada : 1-855-684-5463. (ouvert 24h/24, 7j/7)
+- France : 1007 (composez le 0033 9 72 10 10 07 depuis une ligne en dehors de la France) (ouvert de 09h à 18h du lundi au vendredi).
 
 > [!warning]
 >
@@ -214,7 +245,8 @@ Une fois vos justificatifs réunis, contactez le support OVHcloud par téléphon
 Après vérification de vos documents, un conseiller pourra désactiver manuellement la double authentification sur votre compte OVHcloud et reviendra vers vous une fois cette action effectuée.
 
 > [!success]
-> A des fins de sécurité, une fois l'accès à votre compte rétabli, nous vous recommandons de réactiver la double authentification dès que possible.
+>
+> À des fins de sécurité, une fois l'accès à votre compte rétabli, nous vous recommandons de réactiver la double authentification dès que possible.
 
 ## Aller plus loin
 
