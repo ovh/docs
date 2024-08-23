@@ -61,9 +61,9 @@ Sélectionnez l'option « Authentification par clé SSH » puis saisissez votre 
 
 ![Authentification par clé SSH](images/rescue-mode-08.png){.thumbnail}
 
-> [!info]
+> [!primary]
 > 
-> Vous pouvez ajouter une clé SSH par défaut pour le mode rescue à un serveur via l'API OVHcloud. Pour plus d'informations, consultez la [section guide ci-dessous](#rescuessh).
+> Vous pouvez ajouter une clé SSH par défaut pour le mode rescue d'un serveur via l'API OVHcloud. Pour plus d'informations, consultez [cette partie de ce guide](#rescuessh).
 >
 
 #### Authentification par mot de passe
@@ -233,7 +233,7 @@ Les outils suivants sont déjà installés dans ce mode :
 
 ### Comment ajouter une clé SSH par défaut pour le mode rescue
 
-Pour accélérer le processus, vous pouvez ajouter une clé SSH par défaut pour le mode rescue à votre serveur via l'[API OVHcloud](/pages/manage_and_operation/api/first-steps).
+Pour accélérer le processus, vous pouvez ajouter une clé SSH par défaut pour le mode rescue de votre serveur via l'[API OVHcloud](/pages/manage_and_operation/api/first-steps).
 
 Pour ce faire, dans la console Web API, ouvrez le point de terminaison API suivant :
 
@@ -246,7 +246,7 @@ Renseignez le nom interne de votre serveur dans le champ approprié.
 
 Modifiez ensuite le champ de texte ci-dessous comme suit :
 
-```
+```bash
 {
   "rescueSshKey": "string"
 }
