@@ -278,28 +278,28 @@ Log in to your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/configure-git-button.png){.thumbnail}
 
-At the bottom of the form that opens, identify the address of the `Webhook URL`{.action} field, and copy it. You will now need to save the URL and configure the webhook on your GitHub account.
+Na parte inferior do formulário, identifique o endereço do campo `URL do webhook`{.action} e copie-o. Agora você deve salvar o URL e configurar o webhook em sua conta do GitHub.
 
-#### Configure the <a name="configureWebhook"></a> webhook
+#### Configurar o webhook <a name="configureWebhook"></a>
 
-Log in to your GitHub account, and go to the repository where you want to configure the webhook. Go to the `Settings`{.action} tab, then in the settings side menu, click `Webhooks`{.action}. Click the `Add webhook`{.action} button to access the form:
+Aceda à sua conta GitHub e ao repositório onde pretende configurar o webhook. Aceda ao separador `Settings`{.action} e, no menu lateral dos parâmetros, clique em `Webhooks`{.action}". Clique no botão `Add webhook`{.action} para aceder ao formulário:
 
-- **Payload URL**: Enter the URL provided in the Git association form (`Webhook URL`{.action}).
-- **Content type**: Choose `application/json`{.action} as the content type for the data sent.
-- **Secret**: The secret is optional. GitHub will use it to sign messages sent by the webhook, enhancing security.
-- **SSL verification**: If your website supports HTTPS, leave this option enabled for increased security.
-- **Which events would you like to trigger this webhook?**: Select the events that will trigger the webhook to be sent. For automatic deployment, `Just the push event`{.action} is often enough, but you can choose `Send me everything`{.action} to receive notifications for all events.
-- **Active**: Make sure that the box is ticked to enable the webhook.
+- **Payload URL** : introduza o URL fornecido no formulário de associação de Git (`URL do webhook`{.action}).
+- **Content type** : escolha `application/json`{.action} como tipo de conteúdo para os dados enviados.
+- **Secret** : o segredo é facultativo. O GitHub irá utilizá-lo para assinar as mensagens enviadas pelo webhook, reforçando assim a segurança.
+- **SSL verification** : se o seu website suporta o HTTPS, deixe esta opção ativada para uma segurança acrescida.
+- **Which events would you like to trigger this webhook?** : selecione os eventos que irão despoletar o envio do webhook. Para uma implementação automática, `Just the push event`{.action} (apenas o evento push) é frequentemente suficiente, mas pode escolher `Send me everything`{.action} para receber notificações para todos os eventos.
+- **Active** : certifique-se de que a caixa está selecionada para ativar o webhook.
 
-Click `Add webhook`{.action} to save and activate your new webhook.
+Clique em `Add webhook`{.action} para guardar e ativar o seu novo webhook.
 
-#### Test your webhook
+#### Testar o seu webhook
 
-Once you have created your webhook in GitHub, go to the list of your webhooks and select the one you have just created, or click `Edit`{.action}.
+Depois de criar o seu webhook no GitHub, vá à lista dos seus webhooks e selecione o que acabou de criar, ou clique em `Edit`{.action}.
 
-On the screen that appears, click on the `Recent Deliveries`{.action} tab. To send a test event specifically, GitHub usually sends a `ping` event when creating the webhook, and you can use the `Redeliver`{.action} button next to this event to test it.
+No ecrã que vai aparecer, clique no separador `Recent Deliveries`{.action}. Para enviar um evento de teste especificamente, o GitHub normalmente envia um evento `ping` quando o webhook é criado, e você pode usar o botão `Redeliver`{.action} ao lado deste evento para testá-lo.
 
-If the test has worked, the `Response`{.action} tab returns a code of 200. If an error code is returned (usually 500 or 400), this means that your webhook has been misconfigured. Return to the form for adding a webhook, and check the information, specifically the webhook URL provided by OVHcloud.
+Se o teste tiver sido executado, o separador `Response`{.action} devolve um código 200. Se um código de erro for devolvido (geralmente 500 ou 400), isso significa que o webhook foi mal configurado. Volte para o formulário de adição de um webhook e verifique as informações, especificamente o URL do webhook fornecido pela OVHcloud.
 
 #### Utilizar o webhook
 
