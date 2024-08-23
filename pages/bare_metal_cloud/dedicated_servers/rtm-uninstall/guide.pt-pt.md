@@ -106,6 +106,6 @@ rm -f /etc/yum.repos.d/OVH-metrics.repo /etc/yum.repos.d/OVH-rtm.repo
 
 ## Quer saber mais?
 
-Se precisar de uma formação ou de uma assistência técnica para implementar as nossas soluções, contacte o seu comercial ou clique em [este link](https://www.ovhcloud.com/pt/professional-services/) para obter um orçamento e pedir uma análise personalizada do seu projeto aos nossos peritos da equipa Professional Services.
+Se precisar de uma formação ou de uma assistência técnica para implementar as nossas soluções, contacte o seu comercial ou clique em [este link](/links/professional-services) para obter um orçamento e pedir uma análise personalizada do seu projeto aos nossos peritos da equipa Professional Services.
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
