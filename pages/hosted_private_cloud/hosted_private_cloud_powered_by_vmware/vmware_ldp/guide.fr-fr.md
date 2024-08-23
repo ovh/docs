@@ -16,7 +16,7 @@ updated: 2024-08-23
 
 - Disposer d'un [compte client OVHcloud](/links/manager).
 - Disposer d'une ou plusieurs ressources Hosted Private Cloud.
-- Disposer d'un flux (stream) Logs Data Platform actif sur le même compte et avec le même niveau de sécurité que votre Hosted Private Cloud VMware on OVHcloud (pour le vérifier, exécutez [l'appel API suivant](#security-options))
+- Disposer d'un flux (stream) Logs Data Platform actif sur le même compte et avec le même niveau de sécurité que votre Hosted Private Cloud VMware on OVHcloud.
 - Avoir suivi le guide « [Introduction à Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP) ».
 - Vous devez avoir le `logForwarder` activé. Pour le vérifier, exécutez [l'appel API suivant](#security-options).
 
