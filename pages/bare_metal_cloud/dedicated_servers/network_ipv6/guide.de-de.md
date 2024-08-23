@@ -1,7 +1,7 @@
 ---
 title: "IPv6 auf einem Dedicated Server konfigurieren"
 excerpt: "Erfahren Sie hier, wie Sie IPv6-Adressen auf unserer Infrastruktur konfigurieren"
-updated: 2024-03-05
+updated: 2024-07-15
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2024-03-05
 
 ## Ziel
 
-Internet Protocol Version 6 (IPv6) ist die neueste Version des Internet Protocol (IP). Die Ausschöpfung der verfügbaren IPv4-Adressen wird schon lange erwartet. Hier soll die neue Version Abhilfe schaffen, indem statt der bisherigen 32 Bit der IPv4-Adressen 128-Bit-Adressen verwendet werden. Die meisten OVHcloud Dedicated Server werden mit einem /64 IPv6-Block geliefert, mit Ausnahme von High Grade und Scale, die mit einem /56 IPv6-Block geliefert werden. Das entspricht über 18 Trillionen IP-Adressen, aus denen Sie wählen können.
+Internet Protocol Version 6 (IPv6) ist die neueste Version des Internet Protocol (IP). Die Ausschöpfung der verfügbaren IPv4-Adressen wird schon lange erwartet. Hier soll die neue Version Abhilfe schaffen, indem statt der bisherigen 32 Bit der IPv4-Adressen 128-Bit-Adressen verwendet werden. Die Server der Reihen High Grade, Scale und Advance (seit Juli 2024) werden mit einem /56 IPv6 Block geliefert, ältere Server mit einem /64 IPv6 Block. Ein Server, der mit einem /56 IPv6 Block geliefert wird, erlaubt es, bis zu 18 Trillionen IP-Adressen zu verwenden.
 
 **Diese Anleitung erklärt anhand verschiedener Beispiele, wie Sie IPv6-Adressen auf Ihrem Server konfigurieren.**
 
@@ -57,7 +57,7 @@ Der erste Schritt besteht darin, das Ihrem Server zugewiesene IPv6-Gateway abzur
 
 #### Über Ihr Kundencenter <a name="viacontrolpanel"></a>
 
-Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren Server im Bereich `Dedicated Server`{.action} aus.
+Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager), gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren Server im Bereich `Dedicated Server`{.action} aus.
 
 Das Ihrem Server zugewiesene IPv6-Gateway wird im Bereich `Netzwerk` des Tab `Allgemeine Informationen`{.action} angezeigt. Nachdem Sie die Datei kopiert haben, fahren Sie mit Schritt 2 "[IPv6-Konfiguration anwenden](#applyipv6)" fort.
 

@@ -67,13 +67,13 @@ Um den Versand zu optimieren und das Risiko einer Blockierung Ihrer E-Mails zu v
 
 Erstellen Sie zunächst einen A-Eintrag in der DNS-Zone Ihres Domainnamens mit der IP-Adresse Ihres Servers als Ziel.
 
-Wenn Ihre DNS-Server von OVHcloud verwaltet werden, Sie dazu unsere [Anleitung zur Bearbeitung der OVHcloud DNS-Zone über Ihr Kundencenter](/pages/web_cloud/domains/dns_zone_edit#zugang-zur-verwaltung-einer-ovhcloud-dns-zone).
+Wenn Ihre DNS-Server von OVHcloud verwaltet werden, Sie dazu unsere [Anleitung zur Bearbeitung der OVHcloud DNS-Zone über Ihr Kundencenter](/pages/web_cloud/domains/dns_zone_edit).
 
 Nach der Änderung der DNS-Zone Ihres Domainnamens ist eine Propagationszeit von maximal 24 Stunden erforderlich, bis die Änderungen wirksam sind.
 
 Anschließend fügen Sie den PTR-Eintrag (auch *Reverse* genannt) hinzu:
 
-Gehen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} auf den Tab `Bare Metal Cloud`{.action} und öffnen Sie `Network`{.action}. Klicken Sie dann auf `IP`{.action}.
+Gehen Sie in Ihrem [OVHcloud Kundencenter](/links/manager){.external} auf den Tab `Bare Metal Cloud`{.action} und öffnen Sie `Network`{.action}. Klicken Sie dann auf `IP`{.action}.
 
 Wenn Sie den *Reverse DNS* auf eine Additional IP-Adresse konfigurieren möchten, klicken Sie auf den Tab `Additional IP`{.action}.
 
@@ -152,11 +152,11 @@ Es kann hilfreich sein, eine Seite wie [Mail Tester](http://www.mail-tester.com/
 
 ## Weiterführende Informationen
 
-[DKIM-Eintrag konfigurieren](/pages/web_cloud/domains/dns_zone_dkim)
+[E-Mail-Sicherheit durch DKIM-Eintrag verbessern](/pages/web_cloud/domains/dns_zone_dkim)
 
-[SPF-Eintrag konfigurieren](/pages/web_cloud/domains/dns_zone_spf)
+[E-Mail-Sicherheit durch SPF-Eintrag verbessern](/pages/web_cloud/domains/dns_zone_spf)
 
-[DMARC-Eintrag konfigurieren](/pages/web_cloud/domains/dns_zone_dmarc)
+[E-Mail-Sicherheit durch DMARC-Eintrag verbessern](/pages/web_cloud/domains/dns_zone_dmarc)
 
 Kontaktieren Sie unser [OVHcloud Partner-Netzwerk](https://partner.ovhcloud.com/de/directory/), wenn Sie beim Einsatz Ihrer OVHcloud Lösungen Unterstützung benötigen.
 

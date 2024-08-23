@@ -12,7 +12,7 @@ updated: 2023-11-22
 
 Błędy 500 "Internal Server Error" mogą dotyczyć całości lub części Twojej strony, być losowe lub stałe. Mogą również pojawić się w postaci białej strony.
 
-![error500](images/http-500.png){.thumbnail}
+![error500](/pages/assets/screens/other/browsers/errors/http-500.png){.thumbnail}
 
 Zdarza się to również w wyniku aktualizacji przeprowadzonej **automatycznie** przez komponent Twojej strony WWW.
 
@@ -117,4 +117,4 @@ Jeśli po aktualizacji wersji PHP na Twoim hostingu wystąpił błąd 500, zapoz
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

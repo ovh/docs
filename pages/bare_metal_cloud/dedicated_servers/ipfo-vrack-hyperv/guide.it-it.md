@@ -20,7 +20,7 @@ Segui il processo di installazione di Hyper-V, l'associazione di uno switch virt
 - Un'immagine ISO per il sistema operativo che verrà installato sulla tua macchina virtuale (CentOS 7 sarà utilizzato come esempio in questa guida).
 - Una vRack consegnata sul tuo account OVHcloud.
 - Blocco IP di 4 o più indirizzi IP.
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 
 > [!warning]
 > Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](https://eco.ovhcloud.com/it/about/).

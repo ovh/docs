@@ -1,7 +1,7 @@
 ---
 title: "Monitoring i zarządzanie automatycznymi wiadomościami e-mail na Twoim hostingu"
 excerpt: "Dowiedz się, jak monitorować i zarządzać automatycznymi wiadomościami e-mail wysyłanymi z hostingu OVHcloud"
-updated: 2023-12-04
+updated: 2024-08-20
 ---
 
 > [!primary]
@@ -35,13 +35,13 @@ Zautomatyzowane e-maile to wiadomości wysyłane za pomocą skryptów. Zazwyczaj
 
 Monitorowanie i zarządzanie automatycznymi wiadomościami e-mail na Twoim hostingu odbywa się z poziomu [Panelu klienta OVHcloud](/links/manager){.external}. Po zalogowaniu się przejdź do sekcji `Web Cloud`{.action}, kliknij `Hosting`{.action}, następnie wybierz odpowiedni hosting z listy. Następnie kliknij zakładkę `Plus`{.action}, następnie `Scripts e-mail`{.action}.
 
-![hosting](images/go-to-email-scripts-tab.png){.thumbnail}
+![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/email-scripts/go-to-email-scripts-tab.png){.thumbnail}
 
 Wyświetli się strona, na której możesz monitorować i zarządzać automatycznymi wiadomościami e-mail wysyłanymi z [hostingu OVHcloud](/links/web/hosting).
 
 ### Prezentacja części "Skrypty e-mail"
 
-![hosting](images/tab.png){.thumbnail}
+![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/email-scripts/tab.png){.thumbnail}
 
 Na stronie wyświetla się kilka informacji umożliwiających wyświetlenie aktywności wysyłanych z skryptów automatycznych wiadomości e-mail:
 
@@ -78,7 +78,7 @@ Jeśli Twoje e-maile nie są wysyłane za pomocą skryptów, podczas gdy status 
 
 ```bash
 <?php
-$to = "RecipientEmail@adress.tld"; 
+$to = "RecipientEmail@address.tld"; 
 $subject = "Test mail PHP"; 
 $content = "The body/content of the Email";
 $headers = "From: Website <SendingEmail@address.tld>\r\nReply-To: SendingEmail@address.tld";
@@ -129,7 +129,7 @@ Status ten występuje, gdy e-maile uznawane za SPAM zostały wysłane z Twojego 
 
 Na ogół blokadą tą towarzyszy wysłanie e-maila o nazwie **"Nadużycie na hostingu domain.tld"** wygenerowanego automatycznie przez nasze roboty związane z bezpieczeństwem:
 
-![hosting](images/email-script-disabled.png){.thumbnail}
+![hosting](/pages/assets/screens/email-sending-to-customer/webhosting/email-script-disabled.png){.thumbnail}
 
 W porównaniu z tą sytuacją możliwe są trzy przypadki:
 
@@ -206,7 +206,7 @@ $mail->Host = "your.smtp.server";
 $mail->SMTPAuth = true; 
 $mail->SMTPSecure = "ssl";
 $mail->Port = 465; 
-$mail->Username = "e-mail@adress.tld"; 
+$mail->Username = "e-mail@address.tld"; 
 $mail->Password = "YourEmailPassword"; 
 ```
 
@@ -227,4 +227,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z [naszymi ofertami pomocy](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>
+Dołącz do [grona naszych użytkowników](/links/community)

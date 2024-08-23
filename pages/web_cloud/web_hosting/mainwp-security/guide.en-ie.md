@@ -36,7 +36,7 @@ Click on the `Security`{.action} tab to view the list of security-related extens
 
 In the MainWP main menu, click `Extensions`{.action} then `Manage Extensions`{.action}. The previously installed Sucuri extension appears.
 
-![mainWP security](images/sucuri_extension.png){.thumbnail}
+![mainWP security](/pages/assets/screens/other/cms/wordpress/mainwp/sucuri_extension.png){.thumbnail}
 
 If you have not already done so, click `Enable`{.action}, then `License`{.action} to use the extension.
 
@@ -44,19 +44,19 @@ If you have not already done so, click `Enable`{.action}, then `License`{.action
 
 In the main menu of MainWP, click `Sites`{.action} then select the child site of your choice. At the top of the screen, click on the `Security`{.action} tab.
 
-![mainWP security](images/security_tab.png){.thumbnail}
+![mainWP security](/pages/assets/screens/other/cms/wordpress/mainwp/security_tab.png){.thumbnail}
 
 To perform a security scan on your website, click `Scan Website`{.action}.
 
-![mainWP](images/sucuri_scanner.png){.thumbnail}
+![mainWP](/pages/assets/screens/other/cms/wordpress/mainwp/sucuri_scanner.png){.thumbnail}
 
 Once the security scan is complete, a new line will appear, corresponding to the security scan report.
 
-![mainWP security](images/report_security_line.png){.thumbnail}
+![mainWP security](/pages/assets/screens/other/cms/wordpress/mainwp/report_security_line.png){.thumbnail}
 
 Click `Show Report`{.action} to view the security report.
 
-![mainWP security](images/security_report_details.png){.thumbnail}
+![mainWP security](/pages/assets/screens/other/cms/wordpress/mainwp/security_report_details.png){.thumbnail}
 
 The security scan report provides a lot of important information about the security of your website:
 
@@ -72,15 +72,15 @@ Remember to carry out regular security scans. With Sucuri, you can enable a remi
 
 In the main menu of MainWP, click `Sites`{.action} then select the child site of your choice. At the top of the screen, click the `Security`{.action} tab. On the dashboard that pops up, you can see if any security issues have been identified by Sucuri.
 
-![mainWP security](images/security_overview.png){.thumbnail}
+![mainWP security](/pages/assets/screens/other/cms/wordpress/mainwp/security_overview.png){.thumbnail}
 
 In our example, Sucuri tells us that three security issues have been identified. Click `Fix all issues`{.action} to resolve all security issues. If you would like to find out more about the issues identified, click the `Security`{.action} tab at the top of the interface. A list of security issues is displayed.
 
-![mainWP security](images/security_list.png){.thumbnail}
+![mainWP security](/pages/assets/screens/other/cms/wordpress/mainwp/security_list.png){.thumbnail}
 
 To resolve an issue, identify the corresponding line and click the `Fix`{.action} button to the right of the line.
 
-![mainWP security](images/security_unfix.png){.thumbnail}
+![mainWP security](/pages/assets/screens/other/cms/wordpress/mainwp/security_unfix.png){.thumbnail}
 
 Once the problem has been resolved, you can cancel the changes made by clicking the `Unfix`{.action} button.
 
@@ -94,4 +94,4 @@ Once the problem has been resolved, you can cancel the changes made by clicking 
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

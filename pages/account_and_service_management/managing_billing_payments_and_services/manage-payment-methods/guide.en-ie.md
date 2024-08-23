@@ -50,7 +50,7 @@ Follow the steps for saving a payment method. In the first step, you are asked t
 
 > [!warning]
 >
-> - The use of direct debit is only possible for Dutch, French, German, Irish, Italian and Spanish customer accounts.
+> - The use of direct debit is only possible for Dutch, French, Belgian, German, Irish, Italian and Spanish customer accounts.
 >
 > - The owner of the bank account must be the same as the owner of the OVHcloud account.
 

@@ -1,7 +1,7 @@
 ---
 title: 'Delegar permisos en una cuenta de correo'
 excerpt: 'Cómo delegar permisos de su cuenta de correo en otra cuenta'
-updated: 2020-10-24
+updated: 2024-06-19
 ---
 
 ## Objetivo
@@ -12,9 +12,14 @@ Los servicios Exchange y Email Pro permiten disfrutar de direcciones de correo p
 
 ## Requisitos
 
-- Tener una solución [Exchange](https://www.ovhcloud.com/es-es/emails/hosted-exchange/) o [Email Pro](https://www.ovhcloud.com/es-es/emails/email-pro/) ya configuradas.
+- Tener una solución [Exchange](/links/web/emails-hosted-exchange) o [Email Pro](/links/web/email-pro) ya configuradas.
+
+> [!warning]
+>
+> **Para la oferta [Email Pro](/links/web/email-pro)** las funcionalidades de delegación descritas en esta guía solo se utilizan a través del [Webmail](/links/web/email). Los protocolos que permiten su uso a través de un programa de mensajería requieren disponer de una cuenta de [Exchange](/links/web/emails-hosted-exchange).
+
 - Tener al menos dos cuentas de correo activas configuradas en una misma plataforma de correo de OVHcloud.
-- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Estar conectado al [área de cliente de OVHcloud](/links/manager).
 - Tener las claves de la cuenta de correo que disfrutará de los nuevos permisos delegados.
 
 ## Procedimiento
@@ -23,9 +28,9 @@ Antes de empezar, debe decidir qué permisos quiere delegar. Le recordamos que u
 
 |Permisos|Descripción|
 |---|---|
-|Permiso de «enviar como»|Permite realizar un envío como si se tratase de otra persona. El que aparece como remitente del mensaje no es la cuenta que realiza el envío, sino la cuenta sobre la que se tienen permisos de «enviar como». El destinatario no sabrá que el mensaje se ha enviado desde otra cuenta, ya que no hay ninguna indicación al respecto.|
-|Permiso de «enviar en nombre de»|Permite realizar un envío en nombre de otra persona. El que aparece como remitente del mensaje es la cuenta que efectivamente realiza el envío, en la que han delegado permisos de «enviar en nombre de». Se incluye una mención indicando que el mensaje se ha enviado en nombre de otra persona.|
-|Permiso de acceso completo|Otorga acceso de solo lectura a la cuenta en la que se ha delegado este permiso. Este acceso permite consultar el contenido, pero no realizar envíos.|
+|**Permiso de "enviar como"**|Permite realizar un envío como si se tratase de otra persona. El que aparece como remitente del mensaje no es la cuenta que realiza el envío, sino la cuenta sobre la que se tienen permisos de "enviar como". El destinatario no sabrá que el mensaje se ha enviado desde otra cuenta, ya que no hay ninguna indicación al respecto.|
+|**Permiso de "enviar en nombre de"**|Permite realizar un envío en nombre de otra persona. El que aparece como remitente del mensaje es la cuenta que efectivamente realiza el envío, en la que han delegado permisos de "enviar en nombre de". Se incluye una mención indicando que el mensaje se ha enviado en nombre de otra persona.|
+|**Permiso de acceso completo**|Otorga acceso de solo lectura a la cuenta en la que se ha delegado este permiso. Este acceso permite consultar el contenido, pero no realizar envíos.|
 
 > [!warning]
 >
@@ -36,7 +41,7 @@ Una vez que haya identificado la cuenta cuyos permisos quiere delegar y que haya
 
 ### 1. Activar la delegación
 
-Para acceder a la gestión del servicio, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}:
+Para acceder a la gestión del servicio, conéctese al [área de cliente de OVHcloud](/links/manager){.external}:
 
 - **Exchange**: Haga clic en `Microsoft`{.action} y seleccione `Exchange`{.action}. 
 - **Email Pro**: Haga clic en `Email Pro`{.action}.
@@ -82,7 +87,11 @@ En la nueva ventana, indique el nombre de la cuenta para la que tiene el permiso
 
 **Desde Outlook para Windows**
 
-En Outlook 2016, haga clic en `Archivo`{.action} en el menú situado en la parte superior de la pantalla y luego en `Configuración de la cuenta`{.action}. En el menú desplegable, seleccione `Configuración de la cuenta`{.action}. Seleccione la cuenta que disfruta del permiso delegado y haga clic en `Cambiar`{.action}. 
+> [!warning]
+>
+> El uso de esta funcionalidad **a través de Outlook** solo está disponible para una cuenta de correo [Exchange](/links/web/emails-hosted-exchange).
+
+En Outlook, haga clic en `Archivo`{.action} en el menú situado en la parte superior de la pantalla y luego en `Configuración de la cuenta`{.action}. En el menú desplegable, seleccione `Configuración de la cuenta`{.action}. Seleccione la cuenta que disfruta del permiso delegado y haga clic en `Cambiar`{.action}.
 
 ![Delegación de permisos](images/delegation-step4.png){.thumbnail}
 
@@ -96,19 +105,23 @@ A continuación, haga clic en `Más configuraciones`{.action}. En la nueva venta
 
 Vaya a la dirección <https://www.ovh.es/mail/> e introduzca las claves de la cuenta de correo que dispone del permiso delegado. Una vez que se haya conectado, puede empezar a redactar un nuevo mensaje haciendo clic en el botón `+ Nuevo`{.action}.
 
-En la ventana de redacción, haga clic en el botón `···`{.action} (Más acciones) y seleccione `Mostrar De`{.action}. A continuación, haga clic en `De`{.action} y seleccione la dirección que quiera que aparezca como remitente (y para la que usted debe disponer del permiso delegado). Si dicha dirección no aparece, elimine la dirección predeterminada e introduzca la nueva dirección. 
+En la ventana de redacción, haga clic en el botón `···`{.action} (Más acciones) y seleccione `Mostrar De`{.action}. A continuación, haga clic en `De`{.action} y seleccione la dirección que quiera que aparezca como remitente (y para la que usted debe disponer del permiso delegado). Si dicha dirección no aparece, elimine la dirección predeterminada e introduzca la nueva dirección.
 
-Ya puede redactar su mensaje y enviarlo. 
+Ya puede redactar su mensaje y enviarlo.
 
 ![Delegación de permisos](images/delegation-step6.png){.thumbnail}
 
 **Desde Outlook para Windows**
 
-En Outlook 2016, abra la ventana de redacción de un nuevo mensaje. Compruebe si aparece el botón `De`{.action}. Si no aparece, abra la pestaña `Opciones`{.action} y seleccione `De`{.action} en el grupo **Mostrar campos**.
+> [!warning]
+>
+> El uso de esta funcionalidad **a través de Outlook** solo está disponible para una cuenta de correo [Exchange](/links/web/emails-hosted-exchange).
 
-A continuación, haga clic en `De`{.action} y seleccione la dirección que quiera que aparezca como remitente (y para la que usted debe disponer del permiso delegado). Si la dirección no aparece, haga clic en `Otra dirección de correo electrónico`{.action}, introduzca la dirección deseada y acepte. 
+En Outlook, abra la ventana de redacción de un nuevo mensaje. Compruebe si aparece el botón `De`{.action}. Si no aparece, abra la pestaña `Opciones`{.action} y seleccione `De`{.action} en el grupo **Mostrar campos**.
 
-Ya puede redactar su mensaje y enviarlo. 
+A continuación, haga clic en `De`{.action} y seleccione la dirección que quiera que aparezca como remitente (y para la que usted debe disponer del permiso delegado). Si la dirección no aparece, haga clic en `Otra dirección de correo electrónico`{.action}, introduzca la dirección deseada y acepte.
+
+Ya puede redactar su mensaje y enviarlo.
 
 ![Delegación de permisos](images/delegation-step7.png){.thumbnail}
 
@@ -118,22 +131,36 @@ Ya puede redactar su mensaje y enviarlo.
 
 Vaya a la dirección <https://www.ovh.es/mail/> e introduzca las claves de la cuenta de correo que dispone del permiso delegado. Una vez que se haya conectado, puede empezar a redactar un nuevo mensaje haciendo clic en el botón `+ Nuevo`{.action}.
 
-En la ventana de redacción, haga clic en el botón `···`{.action} (Más acciones) y seleccione `Mostrar De`{.action}. A continuación, haga clic en `De`{.action} y seleccione la dirección que quiera que aparezca como remitente (y para la que usted debe disponer del permiso delegado). Si dicha dirección no aparece, elimine la dirección predeterminada e introduzca la nueva dirección. 
+En la ventana de redacción, haga clic en el botón `···`{.action} (Más acciones) y seleccione `Mostrar De`{.action}. A continuación, haga clic en `De`{.action} y seleccione la dirección que quiera que aparezca como remitente (y para la que usted debe disponer del permiso delegado). Si dicha dirección no aparece, elimine la dirección predeterminada e introduzca la nueva dirección.
 
-Ya puede redactar su mensaje y enviarlo. 
+Ya puede redactar su mensaje y enviarlo.
 
 ![Delegación de permisos](images/delegation-step6.png){.thumbnail}
 
 **Desde Outlook para Windows**
 
-En Outlook 2016, abra la ventana de redacción de un nuevo mensaje. Compruebe si aparece el botón `De`{.action}. Si no aparece, abra la pestaña `Opciones`{.action} y seleccione `De`{.action} en el grupo **Mostrar campos**.
+> [!warning]
+>
+> El uso de esta funcionalidad **a través de Outlook** solo está disponible para una cuenta de correo [Exchange](/links/web/emails-hosted-exchange).
 
-A continuación, haga clic en `De`{.action} y seleccione la dirección que quiera que aparezca como remitente (y para la que usted debe disponer del permiso delegado). Si la dirección no aparece, haga clic en `Otra dirección de correo electrónico`{.action}, introduzca la dirección deseada y acepte. 
+En Outlook, abra la ventana de redacción de un nuevo mensaje. Compruebe si aparece el botón `De`{.action}. Si no aparece, abra la pestaña `Opciones`{.action} y seleccione `De`{.action} en el grupo **Mostrar campos**.
 
-Ya puede redactar su mensaje y enviarlo. 
+A continuación, haga clic en `De`{.action} y seleccione la dirección que quiera que aparezca como remitente (y para la que usted debe disponer del permiso delegado). Si la dirección no aparece, haga clic en `Otra dirección de correo electrónico`{.action}, introduzca la dirección deseada y acepte.
+
+Ya puede redactar su mensaje y enviarlo.
 
 ![Delegación de permisos](images/delegation-step7.png){.thumbnail}
 
-## Más información
+## Más información <a name="go-further"></a>
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
+
+[Utilizar una dirección de correo desde Outlook en la Web](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+
+[Compartir carpetas en OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_directory_sharing)
+
+[Crear grupos de contactos](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_groups)
+
+Interactúe con nuestra [comunidad de usuarios](/links/community).

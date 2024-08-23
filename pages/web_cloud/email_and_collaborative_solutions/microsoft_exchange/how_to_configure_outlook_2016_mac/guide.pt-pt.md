@@ -1,6 +1,6 @@
 ---
-title: 'Configurar uma conta Exchange no Outlook 2016 para Mac'
-excerpt: 'Saiba como configurar uma conta Exchange no Outlook 2016 para Mac'
+title: 'Exchange - Configure sua conta de e-mail no Outlook para macOS'
+excerpt: 'Saiba como configurar uma conta Exchange no Outlook para macOS'
 updated: 2018-06-01
 ---
 
@@ -16,9 +16,7 @@ As contas Exchange podem ser usadas com vários softwares de e-mail (desde que s
 
 > [!primary]
 >
-> Se utiliza uma versão anterior do Outlook para Mac, consulte o nosso manual [Configurar uma conta Exchange no Outlook 2011 para Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac){.external} (versão em francês).
->
-> Se utilizar o Outlook 2016 para Windows, consulte o nosso manual [Configurar uma conta Exchange no Outlook 2016 para Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016){.external}.
+> Se utilizar o Outlook para Windows, consulte o nosso manual [Configurar uma conta Exchange no Outlook para Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016){.external}.
 >
 
 ## Instruções
@@ -57,8 +55,8 @@ A OVHcloud disponibiliza uma aplicação web que tem [funcionalidades de colabor
 
 ## Quer saber mais?
 
-[Configurar um endereço de e-mail no Outlook 2016 para Mac ](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac){.external}
+[Configurar um endereço de e-mail no Outlook para Mac ](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac){.external}
 
-[Configurar uma conta Email Pro no Outlook 2016 para Mac](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016_mac){.external}
+[Configurar uma conta Email Pro no Outlook para Mac](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016_mac){.external}
 
 Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}

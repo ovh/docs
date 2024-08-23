@@ -1,7 +1,7 @@
 ---
 title: 'Filtrer et renvoyer ses appels'
 excerpt: 'Découvrez comment filtrer et renvoyer les appels entrants et sortants de votre ligne SIP OVHcloud'
-updated: 2023-12-22
+updated: 2024-06-18
 ---
 
 ## Objectif
@@ -83,12 +83,24 @@ Pour activer une configuration, cochez la case à côté de cette dernière puis
 
 Vous avez la possibilité d'appliquer vos choix de configuration à plusieurs lignes, grâce au bouton `Appliquer à plusieurs lignes`{.action}. Cliquez enfin sur le bouton `Valider`{.action} pour terminer l'opération.
 
-> [!primary]
+> [!success]
 >
 > Si vous disposez d'un grand nombre de lignes et/ou de numéros, vous avez la possibilité de réduire les résultats qui s'affichent dans les champs de recherche. Pour cela, appliquez un filtrage via la section « Filtrer les numéros » à droite de la page.
 >
 
 ![gerer-appels-renvoi](images/manage-calls-fowarding-step2.png){.thumbnail}
+
+> [!primary]
+>
+> **Présentation du numéro**
+>
+> Si vous renvoyez les appels de votre ligne OVHcloud vers un numéro externe (hors OVHcloud), la présentation du numéro sur le téléphone externe dépendra des paramètres de son opérateur de téléphonie.
+>
+> **Exemple :**
+>
+> - Vous avez configuré, sur votre ligne OVHcloud **A**, un renvoi de tous les appels vers un numéro de mobile **B**
+> - Un interlocuteur (**C**) vous appelle sur la ligne OVHcloud **A**.
+> - Vous recevez l'appel (via le renvoi d'appels) sur le mobile **B**. Peuvent alors être présentés à l'écran, suivant votre opérateur de téléphonie mobile, le numéro de l'appelant (**C**) et/ou le numéro de la ligne appelée (**B**).
 
 ### Activer le filtrage d'appels <a name="filtrage"></a>
 
@@ -149,4 +161,4 @@ Enfin, dans la partie « Configuration actuelle », vous pouvez visualiser les f
 
 [Configurer des plages horaires et des fermetures exceptionnelles sur une ligne](/pages/web_cloud/phone_and_fax/voip/configure-time-slot-and-closing-time)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

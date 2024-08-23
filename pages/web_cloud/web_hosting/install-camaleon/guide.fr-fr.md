@@ -27,7 +27,7 @@ Pour accéder aux moteurs d’exécution de votre hébergement Cloud Web, connec
 
 Le tableau qui apparaît affiche les moteurs d’exécution ajoutés actuellement. Assurez-vous alors que le moteur d’exécution Ruby est bien activé. Si tel est le cas, poursuivez vers l’étape 2  *Associer Ruby à un multisite* 
 
-![Le moteur d'exécution Ruby doit être présent](images/tab-phpfpm7-4.png){.thumbnail} 
+![Le moteur d'exécution Ruby doit être présent](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/tab-phpfpm7-4.png){.thumbnail} 
 
 Si ce n’est pas le cas, ajoutez-en un nouveau (si votre offre vous le permet) ou modifiez le moteur d’exécutionexistant.
 
@@ -46,13 +46,13 @@ Dans la fenêtre qui s’affiche, complétez les informations demandées avec le
 
 Une fois les informations complétées, cliquez sur `Valider`{.action}. Si vous souhaitez obtenir plus d’informations sur la gestion des moteurs d’exécution, reportez-vous à notre guide *[Gérer les moteurs d’exécution de Cloud Web](/pages/web_cloud/web_hosting/manage-runtime)*. 
 
-![Ajouter le moteur d'exécution Ruby](images/modify-a-runtime-software-application-ruby2-6.png){.thumbnail} 
+![Ajouter le moteur d'exécution Ruby](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/modify-a-runtime-software-application-ruby2-6.png){.thumbnail} 
 
 ### Étape 2 : associer Ruby à un multisite
 
 Maintenant que Ruby est activé en tant que moteur d’exécution, vous devez l’associer à l’un de vos multisites. Pour cela, positionnez-vous sur l’onglet `Multisite`{.action}. Le tableau qui s’affiche contient tous les noms de domaine qui ont été ajoutés en tant que multisite. 
 
-![Associer Ruby à un multisite](images/tab-phpfpm7-4-full-disabled.png){.thumbnail} 
+![Associer Ruby à un multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/multisite/tab-phpfpm7-4-full-disabled.png){.thumbnail} 
 
 Deux colonnes doivent retenir votre attention dans le tableau ci-dessus. Vérifiez alors que le moteur d’exécution Ruby est bien lié aux domaines concernés et que le dossier racine est correct. Aidez-vous des informations ci-dessous si nécessaire. Si tel est le cas, poursuivez vers l’étape 3 [Se connecter à votre Cloud Web via SSH](#sshconnexion).
 
@@ -76,7 +76,7 @@ Dans la fenêtre qui s’affiche, complétez les informations demandées selon v
 
 En ce qui concerne les options supplémentaires, choisissez celles que vous souhaitez activer. Une fois les informations complétées, cliquez sur `Suivant`{.action}, puis finalisez la manipulation. Cet ajout peut prendre jusqu’à une heure. Cependant, la modification de la configuration DNS peut prendre jusqu’à 24 heures avant d’être pleinement effective. Si vous souhaitez obtenir plus d’informations sur la gestion des multisites, reportez-vous à notre guide « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) ». 
 
-![Partager son hébergement entre plusieurs sites](images/add-a-domain-or-sub-domain-step-2-django.png){.thumbnail} 
+![Partager son hébergement entre plusieurs sites](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/multisite/add-a-domain-or-sub-domain-step-2-django.png){.thumbnail} 
 
 ### Étape 3 : se connecter à votre Cloud Web via SSH <a name="sshconnexion"></a>
 
@@ -90,7 +90,7 @@ Récupérez d’abord les informations vous permettant de vous connecter. Pour c
 
 Si vous ne connaissez plus le mot de passe de l’utilisateur SSH, cliquez sur le bouton `...`{.action} à droite de l’utilisateur concerné dans le tableau, puis sur `Changer le mot de passe`{.action}. 
 
-![Se connecter à votre Cloud Web viaSSH](images/change-password.png){.thumbnail} 
+![Se connecter à votre Cloud Web viaSSH](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/change-password.png){.thumbnail} 
 
 À présent, pour vous connecter en SSH, vous devez utiliser un terminal. Cet outil est installé par défaut sur macOS ou Linux. Un environnement Windows nécessitera l’installation d’un logiciel comme PuTTY ou l’ajout de la fonctionnalité « OpenSSH ». Cette démarche étant spécifique au système d’exploitation que vous utilisez, nous ne pouvons pas la détailler dans cettedocumentation. 
 
@@ -229,9 +229,7 @@ democld@cloudweb-ssh:~/camaleon $ RAILS_ENV=production rake assets:precompile
 
 Pour redémarrer le *daemon* Ruby, retournez sur votre [espace client OVHcloud](/links/manager). Positionnez-vous sur l’onglet `Multisite`{.action}, cliquez à droite du nom de domaine concerné sur le bouton `...`{.action}, puis sur `Redémarrer`{.action}. 
 
-Une fois ceci fait, l’application sera accessible via le nom de domaine choisi dans la configuration de votremultisite. 
-
-![Redémarrer le *daemon* Ruby](images/change-password.png){.thumbnail} 
+Une fois ceci fait, l’application sera accessible via le nom de domaine choisi dans la configuration de votre multisite. 
 
 Félicitation, votre site utilisant Camaleon CMS est maintenant disponible ! Il ne vous reste plus qu'à le configurer.  
 
@@ -263,4 +261,4 @@ Pour des prestations spécialisées (référencement, développement, etc), cont
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

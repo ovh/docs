@@ -45,13 +45,13 @@ Ao nível da coluna **«Backups»**, o algarismo corresponde ao número de salva
 
 Clique no botão `...`{.action} à direita da base de dados e, a seguir, em `Fazer backup agora`{.action}.
 
-![Web Cloud Databases](images/back-up-now.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/back-up-now.png){.thumbnail}
 
 #### 2. Exportar um backup
 
 Clique no botão `...`{.action} à direita da base de dados e, a seguir, em `Exibir os backups`{.action}.
 
-![Web Cloud Databases](images/show-backups.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/show-backups.png){.thumbnail}
 
 Quando surgir a lista dos backups, clique no botão `...`{.action} à direita do backup escolhido e em `Descarregar o backup`{.action} para o obter.
 
@@ -69,7 +69,7 @@ Depois de se conectar ao phpMyAdmin, clique no nome da base de dados que deseja 
 
 Há dois modos de exportação. Se não tem necessidades específicas, sugerimos que utilize o modo **rápido** no formato **SQL**.
 
-![Web Cloud Databases](images/pma-export-backup-web-cloud-db.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/other/web-tools/phpmyadmin/pma-export-backup-web-cloud-db.png){.thumbnail}
 
 ##### 1.2\. Exportar uma base MySQL ou MariaDB a partir da linha de comandos
 
@@ -123,4 +123,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 
+Fale com nossa [comunidade de utilizadores](/links/community). 

@@ -1,7 +1,7 @@
 ---
 title: 'Installer et configurer Softcall (Bêta)'
 excerpt: 'Découvrez comment installer et configurer Softcall afin de profiter de la solution Softphone'
-updated: 2024-05-29
+updated: 2024-08-14
 ---
 
 > [!primary]
@@ -45,21 +45,16 @@ Cliquez sur l'icône de l'application Softcall. Au premier démarrage, vous ête
 > [!tabs]
 > **Android**
 >>
->> ![Install Softcall](images/assistant_android.jpg){.thumbnail}
+>> ![Install Softcall](images/assistant_ios_android.png){.thumbnail}
 >>
 > **iOS**
 >>
->> ![Install Softcall](images/assistant_ios.jpg){.thumbnail}
+>> ![Install Softcall](images/assistant_ios_android.png){.thumbnail}
 >>
 
-Récupérez l'URL ou le QR CODE de configuration vous permettant de télécharger votre configuration Softcall. Retrouvez l'URL et le QR CODE de configuration dans l'e-mail que vous avez reçu après avoir souscrit à l'offre Softcall.
+Récupérez le code ou le QR CODE de configuration vous permettant de télécharger votre configuration Softcall. Retrouvez le code et le QR CODE de configuration dans l'e-mail que vous avez reçu après avoir souscrit à l'offre Softcall.
 
-> [!warning]
-> 
-> Si vous cliquez sur l'URL de configuration, vous ne pourrez pas télécharger votre configuration Softcall. Veuillez uniquement copier l'URL ou scanner le QR CODE pour plus de sécurité.
->
-
-Dans l'écran `Assistant`{.action} de l'application Softcall, entrez l'URL de configuration ou appuyez sur le bouton QR CODE pour scanner le QR CODE. Cliquez sur `Télécharger et appliquer`{.action} pour valider.
+Dans l'écran `Assistant`{.action} de l'application Softcall, entrez le code de configuration ou appuyez sur le bouton QR CODE pour scanner le QR CODE. Cliquez sur `Télécharger et appliquer`{.action} pour valider.
 
 Votre compte Softcall est désormais configuré. Dans le menu principal de Softcall, retrouvez votre numéro de téléphone (au format international) tout en haut du menu.
 
@@ -70,21 +65,16 @@ Votre compte Softcall est désormais configuré. Dans le menu principal de Softc
 > [!tabs]
 > **Windows**
 >>
->> ![Install Softcall](images/assistant_windows.png){.thumbnail}
+>> ![Install Softcall](images/assistant_windows_macos.png){.thumbnail}
 >>
 > **macOS**
 >>
->> ![Install Softcall](images/assistant_macos.png){.thumbnail}
+>> ![Install Softcall](images/assistant_windows_macos.png){.thumbnail}
 >>
 
-Récupérez l'URL de configuration vous permettant de télécharger votre configuration Softcall. Retrouvez l'URL de configuration dans l'e-mail que vous avez reçu après avoir souscrit à l'offre Softcall.
+Récupérez le code de configuration vous permettant de télécharger votre configuration Softcall. Retrouvez le code de configuration dans l'e-mail que vous avez reçu après avoir souscrit à l'offre Softcall.
 
-> [!warning]
-> 
-> Si vous cliquez sur l'URL de configuration, vous ne pourrez pas télécharger votre configuration Softcall. Veuillez uniquement copier le lien.
->
-
-Dans l'écran `Assistant`{.action} de l'application Softcall, entrez l'URL de configuration puis cliquez sur `Télécharger`{.action}. Un message de confirmation s'affiche.
+Dans l'écran `Assistant`{.action} de l'application Softcall, entrez le code de configuration puis cliquez sur `Télécharger`{.action}. Un message de confirmation s'affiche.
 
 ![Install Softcall](images/confirm_dl_config_windows.png){.thumbnail}
 
@@ -112,15 +102,6 @@ Dans le menu principal en bas de l'écran, cliquez sur l'icône représentant un
 
 Entrez le numéro de votre contact et cliquez sur l'icône représentant un téléphone pour passer l'appel.
 
-#### Gérer les contacts
-
-Dans le menu principal en bas de l'écran, cliquez sur l'icône des contacts. Sur l'écran qui s'affiche, vous pouvez :
-
-- Accéder à vos contacts
-- Rechercher un contact
-- Ajouter des nouveaux contacts
-- Modifier et supprimer des contacts
-
 ##### Application de bureau (Windows et macOS)
 
 Pour passer un appel téléphonique, entrez le numéro dans le champ en haut de l'interface, ou cliquez sur l'icône représentant un clavier numérique pour tapper le numéro. Cliquez sur l'icône représentant un téléphone pour passer l'appel.
@@ -137,6 +118,20 @@ Dans le menu principal à gauche de l'interface, cliquez sur l'icône des contac
 - Rechercher un contact
 - Ajouter des nouveaux contacts
 - Modifier et supprimer des contacts
+
+#### Supprimer le compte Softcall sur l'appareil
+
+> [!primary]
+> Cette fonctionalité permet de supprimer votre compte Softcall uniquement sur votre appareil. Votre compte Softcall sera supprimé uniquement en local, et vous pourrez à nouveau le configurer sur votre appareil quand vous le souhaiterez. 
+>
+
+Effectuez les actions suivantes pour supprimer votre compte Softcall de votre appareil :
+
+- Dans le menu principal, cliquez sur `Options`{.action}.
+- Cliquez sur le numéro du compte Softcall que vous voulez supprimer.
+- Cliquez sur `Supprimer le compte`{.action}.
+- Un message de confirmation s'affiche : cliquez sur `Supprimer`{.action} pour confirmer la suppression locale de votre compte Softcall.
+
 
 ## Aller plus loin
 

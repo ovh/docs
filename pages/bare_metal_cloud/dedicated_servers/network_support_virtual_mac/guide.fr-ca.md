@@ -51,4 +51,4 @@ Vous obtenez alors une liste avec une entrée « vmac / supported » qui sera à
 
 [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

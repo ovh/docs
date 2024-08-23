@@ -33,7 +33,7 @@ Cuando visita un sitio web que dispone de una conexión segura, su navegador le 
 
 Cada vez es más fácil ver si un sitio web dispone o no de una conexión segura.
 
-![httpswebsite](images/url-not-secure.png){.thumbnail}
+![httpswebsite](/pages/assets/screens/other/browsers/urls/url-not-secure.png){.thumbnail}
 
 **Habilitar HTTPS en un sitio web puede ser una operación delicada**. En efecto, la mayoría de las acciones a realizar se realizarán en el código fuente de su sitio web. Si no se efectúan correctamente, existe el riesgo de que los resultados de los motores de búsqueda (Google, Yahoo!, bing...) muestren un nivel de SEO inferior o, incluso, de que el sitio web deje de estar disponible.
 
@@ -75,7 +75,7 @@ Es posible que se den dos casos de *Mixed Content*:
 
 Asegúrese de que todo el contenido cargado desde el sitio web proviene de una fuente segura.
 
-![httpswebsite](images/connection-isnt-secure.png){.thumbnail}
+![httpswebsite](/pages/assets/screens/other/browsers/urls/connection-isnt-secure.png){.thumbnail}
 
 Tenga en cuenta que, aunque su alojamiento disponga de un certificado SSL, el contenido alojado en él puede cargarse en *HTTP* o en *HTTPS*. Depende de cómo haya identificado dicho contenido en el código de su sitio web. Por lo tanto, asegúrese de que todo el contenido cargado desde su sitio web utiliza el protocolo *HTTPS*.
 
@@ -165,4 +165,4 @@ Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con 
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

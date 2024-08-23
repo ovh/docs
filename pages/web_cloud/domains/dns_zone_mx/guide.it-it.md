@@ -1,6 +1,6 @@
 ---
-title: Configura un record MX
-excerpt: Come configurare un record MX su un dominio in OVHcloud
+title: "Configurare un record MX per la gestione delle email"
+excerpt: "Come configurare un record MX su un dominio in OVHcloud"
 updated: 2024-02-29
 ---
 
@@ -27,7 +27,7 @@ Il record MX permette di collegare un dominio al server della sua piattaforma di
 >
 > - Se il dominio è registrato presso OVHcloud, è possibile verificarne la configurazione attraverso lo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=it). Una volta effettuato il login sul dominio interessato, accedi alla sezione `Informazioni Generali`{.action} della scheda `Server DNS`{.action} e clicca su `Attivo` in "**server DNS**" per utilizzare i server DNS di OVHcloud.
 >
-> ![email](images/dns-servers-enabled.png){.thumbnail}
+> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/dns-servers-enabled.png){.thumbnail}
 
 ## Procedura
 
@@ -40,7 +40,7 @@ Quando l'indirizzo **sender@otherdomain.ovh** invia un’email a **contact@mydom
 - **(1)** interrogare la zona DNS del dominio **mydomain.ovh** e leggere i record **MX**.
 - **(2)** trasmettere l’email verso l’URL del record **MX** letto.
 
-![email](images/mx-dns-resolution.png){.thumbnail}
+![email](/pages/assets/schemas/emails/mx-dns-resolution.png){.thumbnail}
 
 L’email sarà inviata verso la destinazione **mx0.mail.ovh.net**, preceduta dal valore **0**. Questo valore viene denominato priorità. Il valore più basso viene interrogato per primo e il valore più alto per ultimo. Ciò significa che la presenza di più record consente di compensare un'assenza di risposta da parte del record MX con la priorità più bassa.
 
@@ -74,14 +74,14 @@ Visualizzi una tabella con la configurazione OVHcloud del tuo dominio. ogni riga
 Per prima cosa, è necessario verificare se esistono record MX nella configurazione DNS OVHcloud del dominio utilizzando l’elenco di filtri disponibile sopra la tabella della zona DNS.<br>
 Seleziona il tipo **MX** e poi conferma per visualizzare solo i record MX DNS della zona DNS. Consulta lo screenshot qui sotto.
 
-![dnsmxrecord](images/mx-entries-research.png){.thumbnail}
+![dnsmxrecord](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/mx-entries-research.png){.thumbnail}
 
 - Se esistono record MX e vuoi modificarli, clicca sui tre puntini `...`{.action} a destra di ogni riga della tabella e poi clicca su `Modifica record`{.action}.
 - Se non sono presenti record MX, clicca sul pulsante `Aggiungi un record`{.action} a destra della tabella e seleziona `MX`{.action}. In base alla soluzione email scelta, inserisci le informazioni richieste:
 
 **Se disponi di una soluzione email OVHcloud**, consulta le informazioni fornite nello step "[Conoscere la configurazione MX di OVHcloud](#mxovhcloud)".
 
-![dnsmxrecord](images/modify-a-dns-zone-record-mx-step-1.png){.thumbnail}
+![dnsmxrecord](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/modify-a-dns-zone-record-mx-step-1.png){.thumbnail}
 
 Una volta inserite le informazioni, prosegui con gli step successivi e clicca su `Conferma`{.action}.
 
@@ -98,12 +98,12 @@ Una volta inserite le informazioni, prosegui con gli step successivi e clicca su
 
 [Modificare una zona DNS in OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-[Configurare un record SPF su un dominio](/pages/web_cloud/domains/dns_zone_spf)
+[Migliora la sicurezza delle email con un record SPF](/pages/web_cloud/domains/dns_zone_spf)
 
-[Configura un record DKIM](/pages/web_cloud/domains/dns_zone_dkim)
+[Migliora la sicurezza delle email con un record DKIM](/pages/web_cloud/domains/dns_zone_dkim)
 
 Per prestazioni specializzate (referenziazione, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
 Per usufruire di un'assistenza per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [offerte di supporto](/links/support).
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

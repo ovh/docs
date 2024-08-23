@@ -82,7 +82,7 @@ Kliknij przycisk `Dalej`{.action}, aby kontynuować proces dodawania domeny.
 
 - **SRV**: rekord DNS umożliwiający automatyczną konfigurację Twojego programu pocztowego podczas dodawania adresu e-mail.
 - **MX**: rekord DNS definiujący serwery e-mail, niezbędny do odbierania e-maili w danej domenie.
-- **DKIM**: Wdrożenie zaszyfrowanego podpisu cyfrowego w celu zabezpieczenia wymiany e-maili. Więcej informacji zawiera przewodnik "[Konfiguracja rekordu DKIM](/pages/web_cloud/domains/dns_zone_dkim)".
+- **DKIM**: Wdrożenie zaszyfrowanego podpisu cyfrowego w celu zabezpieczenia wymiany e-maili. Więcej informacji zawiera przewodnik "[Poprawa bezpieczeństwa e-maili poprzez rekord DKIM](/pages/web_cloud/domains/dns_zone_dkim)".
 
 **W przypadku domeny, która nie jest zarządzana w OVHcloud**, przejdź do etapu 3.
 
@@ -100,8 +100,8 @@ W kolumnie `Diagnostyka`{.action} możesz sprawdzić konfigurację DNS domeny. J
     - *W przypadku rekordu CNAME*, skorzystaj z naszego przewodnika "[Tworzenie pola CNAME po dodaniu przypisanej domeny](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)".
     - *W przypadku rekordu MX* zapoznaj się z naszym przewodnikiem "[Dodawanie rekordu MX do konfiguracji domeny](/pages/web_cloud/domains/dns_zone_mx)".
     - *W przypadku rekordu SRV* po kliknięciu czerwonego przycisku uzupełnij strefę DNS o informacje. Możesz zapoznać się z przewodnikiem "[Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)", aby dodać ten rekord.
-    - *W przypadku rekordu SPF* uzupełnij strefę DNS o informacje, które są wyświetlane po kliknięciu przycisku. Możesz zapoznać się z przewodnikiem "[Konfigurowanie rekordu SPF](/pages/web_cloud/domains/dns_zone_spf)", aby dodać ten rekord.
-    *W przypadku rekordu DKIM* uzupełnij strefę DNS, używając informacji, które wyświetlają się po kliknięciu przycisku. Możesz zapoznać się z przewodnikiem "[Konfigurowanie rekordu DKIM](/pages/web_cloud/domains/dns_zone_dkim)", aby dodać ten rekord.
+    - *W przypadku rekordu SPF* uzupełnij strefę DNS o informacje, które są wyświetlane po kliknięciu przycisku. Możesz zapoznać się z przewodnikiem "[Poprawa bezpieczeństwa e-maili poprzez rekord SPF](/pages/web_cloud/domains/dns_zone_spf)", aby dodać ten rekord.
+    *W przypadku rekordu DKIM* uzupełnij strefę DNS, używając informacji, które wyświetlają się po kliknięciu przycisku. Możesz zapoznać się z przewodnikiem "[Poprawa bezpieczeństwa e-maili poprzez rekord DKIM](/pages/web_cloud/domains/dns_zone_dkim)", aby dodać ten rekord.
 
 ![emailpro](images/emailpro-04.png){.thumbnail}
 

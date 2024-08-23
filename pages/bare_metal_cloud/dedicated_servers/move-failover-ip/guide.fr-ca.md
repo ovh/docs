@@ -26,7 +26,7 @@ Cette technologie vous permet d’échanger les adresses IP d'une solution à l'
 
 - Disposer d'un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/){.external} dans votre espace client OVHcloud.
 - Disposer d'une [adresse Additional IP](https://www.ovhcloud.com/fr-ca/bare-metal/ip/).
-- Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
+- Être connecté à l'[espace client OVHcloud](/links/manager){.external}.
 
 > [!warning]
 > Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](https://eco.ovhcloud.com/fr-ca/about/).
@@ -56,7 +56,7 @@ Cette technologie vous permet d’échanger les adresses IP d'une solution à l'
 > Seul un bloc de taille unique (/32) pourra être déplacé depuis un serveur dédié vers un VPS.
 >
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), cliquez sur le menu `Bare Metal Cloud`{.action} puis ouvrez la section `Network`{.action}. Ensuite, cliquez sur `IP`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur le menu `Bare Metal Cloud`{.action} puis ouvrez la section `Network`{.action}. Ensuite, cliquez sur `IP`{.action}.
 
 Cliquez sur l'onglet `Additional IP`{.action}.
 
@@ -99,4 +99,4 @@ Pour déplacer l'adresse IP, utilisez l'appel suivant :
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

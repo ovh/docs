@@ -49,14 +49,14 @@ The table displays active redirections for your domain name. You can manage your
 
 Click the `Add Redirection`{.action} button.
 
-![Introduction to the redirection menu](images/add-a-redirection.png){.thumbnail}
+![Introduction to the redirection menu](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection.png){.thumbnail}
 
 Three redirection options are available from the [OVHcloud Control Panel](/links/manager), and each of them is made up of **5 successive steps**. 
 
 > The `Redirection`{.action} tab contains a fourth option that allows your domain to be quickly pointed to DNS A, AAAA and CNAME records.<br>
 > Since this is not strictly a "redirection", this option will not be detailed in this guide.
 >
-> For more information on DNS records, see our [DNS records](/pages/web_cloud/domains/dns_zone_edit).
+> For more information on DNS records, see our guide "[Everything you need to know about DNS records](/pages/web_cloud/domains/dns_zone_records)".
 >
 
 Below are the three types of redirections detailed step by step.
@@ -71,7 +71,7 @@ After entering the domain which is being redirected into a browser's address bar
 
 - **Example**: if you redirect `domain1.tld` to `domain2.tld`, `domain2.tld` will appear in the address bar in your browser.
 
-![Gif1](images/visible-redirection.gif){.thumbnail}
+![Gif1](/pages/assets/schemas/domains/visible-redirection.gif){.thumbnail}
 
 > This "standard" redirection will return a HTTP 301 code.
 
@@ -85,7 +85,7 @@ After entering the domain which is being redirected into a browser's address bar
 >>
 >> The `Also redirect`{.action} box can be checked to also redirect the `www` subdomain to the same target you choose for your domain/subdomain.
 >>
->> ![Step 1](images/add-a-redirection-step-1.png){.thumbnail}
+>> ![Step 1](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-1.png){.thumbnail}
 >>
 >> Click `Next`{.action} to proceed to step 2.
 >>
@@ -93,7 +93,7 @@ After entering the domain which is being redirected into a browser's address bar
 >>
 >> Select `To a web address`{.action}.
 >>
->> ![Step 2](images/add-a-redirection-step-2-to-a-web-adress.png){.thumbnail}
+>> ![Step 2](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-2-to-a-web-adress.png){.thumbnail}
 >>
 >> Click `Next`{.action} to proceed to step 3.
 >>
@@ -101,7 +101,7 @@ After entering the domain which is being redirected into a browser's address bar
 >>
 >> Select `A visible redirection`{.action} from the two choices shown.
 >>
->> ![Step 3](images/add-a-redirection-step-3-a-visible-redirection.png){.thumbnail}
+>> ![Step 3](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-3-a-visible-redirection.png){.thumbnail}
 >>
 >> Click `Next`{.action} to proceed to step 4.
 >>
@@ -109,7 +109,7 @@ After entering the domain which is being redirected into a browser's address bar
 >>
 >> Select `Permanent (301)`{.action} from the two choices listed, then enter the target domain or URL for your redirection in the `Web address`{.action} form that appears.
 >>
->> ![Step 4](images/add-a-redirection-step-4-permanent.png){.thumbnail}
+>> ![Step 4](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-4-permanent.png){.thumbnail}
 >>
 >> Click `Next`{.action} to proceed to step 5.
 >>
@@ -117,7 +117,7 @@ After entering the domain which is being redirected into a browser's address bar
 >>
 >> In this last step, check that the information displayed is correct.
 >>
->> ![Step 5](images/add-a-redirection-step-5-permanent.png){.thumbnail}
+>> ![Step 5](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-5-permanent.png){.thumbnail}
 >>
 >> Click on `Confirm`{.action} to confirm your configuration.
 >> 
@@ -138,7 +138,7 @@ Positioning on search engines is less efficient than with a **permanent visible*
 
 - **Example**: if you redirect `domain1.tld` to `domain2.tld`, `domain2.tld` will appear in the address bar in your browser.
 
-![Gif1](images/visible-redirection.gif){.thumbnail}
+![Gif1](/pages/assets/schemas/domains/visible-redirection.gif){.thumbnail}
 
 > This redirection will return a HTTP 302 code.
 
@@ -152,7 +152,7 @@ Positioning on search engines is less efficient than with a **permanent visible*
 >>
 >> The `Also redirect`{.action} box can be checked to also redirect the `www` subdomain to the same target you choose for your domain/subdomain.
 >>
->> ![Step 1](images/add-a-redirection-step-1.png){.thumbnail}
+>> ![Step 1](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-1.png){.thumbnail}
 >>
 >> Click `Next`{.action} to proceed to step 2.
 >>
@@ -160,7 +160,7 @@ Positioning on search engines is less efficient than with a **permanent visible*
 >>
 >> Select `To a web address`{.action}.
 >>
->> ![Step 2](images/add-a-redirection-step-2-to-a-web-adress.png){.thumbnail}
+>> ![Step 2](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-2-to-a-web-adress.png){.thumbnail}
 >>
 >> Click `Next`{.action} to proceed to step 3.
 >>
@@ -168,7 +168,7 @@ Positioning on search engines is less efficient than with a **permanent visible*
 >>
 >> Select `A visible redirection`{.action} from the two choices shown.
 >>
->> ![Step 3](images/add-a-redirection-step-3-a-visible-redirection.png){.thumbnail}
+>> ![Step 3](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-3-a-visible-redirection.png){.thumbnail}
 >>
 >> Click `Next`{.action} to proceed to step 4.
 >>
@@ -176,7 +176,7 @@ Positioning on search engines is less efficient than with a **permanent visible*
 >>
 >> Select `Temporary (302)`{.action} from the two choices listed, then enter the target domain or URL for your redirection in the `Web Address`{.action} form that appears.
 >>
->> ![Step 4](images/add-a-redirection-step-4-temporary.png){.thumbnail}
+>> ![Step 4](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-4-temporary.png){.thumbnail}
 >>
 >> Click `Next`{.action} to proceed to step 5.
 >>
@@ -184,7 +184,7 @@ Positioning on search engines is less efficient than with a **permanent visible*
 >>
 >> In this last step, check that the information displayed is correct.
 >>
->> ![Step 5](images/add-a-redirection-step-5-temporary.png){.thumbnail}
+>> ![Step 5](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-5-temporary.png){.thumbnail}
 >>
 >> Click on `Confirm`{.action} to confirm your configuration.
 >> 
@@ -203,7 +203,7 @@ With this redirection, you can keep the redirected domain in your browser’s ad
 
 - **Example**: if you redirect `domain1.tld` to `domain2.tld`, `domain1.tld` will appear in the address bar in your browser.
 
-![Gif2](images/invisible-redirection.gif){.thumbnail}
+![Gif2](/pages/assets/schemas/domains/invisible-redirection.gif){.thumbnail}
 
 Invisible redirection works with an *iFrame* HTML tag. This allows your redirected domain to integrate the content of the other page corresponding to the target domain into its own HTML page.
 
@@ -227,7 +227,7 @@ This type of embedded content prevents your site visitors from viewing the targe
 >>
 >> The `Also redirect`{.action} box can be checked to also redirect the `www` subdomain to the same target you choose for your domain/subdomain.
 >>
->> ![Step 1](images/add-a-redirection-step-1.png){.thumbnail}
+>> ![Step 1](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-1.png){.thumbnail}
 >>
 >> Click `Next`{.action} to proceed to step 2.
 >>
@@ -235,7 +235,7 @@ This type of embedded content prevents your site visitors from viewing the targe
 >>
 >> Select `To a web address`{.action}.
 >>
->> ![Step 2](images/add-a-redirection-step-2-to-a-web-adress.png){.thumbnail}
+>> ![Step 2](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-2-to-a-web-adress.png){.thumbnail}
 >>
 >> Click `Next`{.action} to proceed to step 3.
 >>
@@ -243,7 +243,7 @@ This type of embedded content prevents your site visitors from viewing the targe
 >>
 >> Select `With an invisible redirection`{.action} from the two choices shown.
 >>
->> ![Step 3](images/add-a-redirection-step-3-with-an-invisible-redirection.png){.thumbnail}
+>> ![Step 3](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-3-with-an-invisible-redirection.png){.thumbnail}
 >>
 >> Click `Next`{.action} to proceed to step 4.
 >>
@@ -251,7 +251,7 @@ This type of embedded content prevents your site visitors from viewing the targe
 >>
 >> Select `Temporary (iframe)`{.action} from the two choices listed, then enter the target domain or URL for your redirection in the `Web Address`{.action} form that appears.
 >>
->> ![Step 4](images/add-a-redirection-step-4-iframe.png){.thumbnail}
+>> ![Step 4](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-4-iframe.png){.thumbnail}
 >>
 >> Three optional settings are available at this stage:
 >>
@@ -265,7 +265,7 @@ This type of embedded content prevents your site visitors from viewing the targe
 >>
 >> In this last step, check that the information displayed is correct.
 >>
->> ![Step 5](images/add-a-redirection-step-5-iframe.png){.thumbnail}
+>> ![Step 5](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-5-iframe.png){.thumbnail}
 >>
 >> Click on `Confirm`{.action} to confirm your configuration.
 >> 
@@ -394,4 +394,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

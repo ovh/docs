@@ -71,7 +71,7 @@ Introduza os elementos solicitados:
 - o URL do seu website (por exemplo, `https://mywebsite.ovh`)
 - uma descrição do seu website
 
-![Instalação Cecil](images/static_website_installation_cecil01.png){.thumbnail}
+![Instalação Cecil](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil01.png){.thumbnail}
 
 Depois de inserir estes elementos, deverá implementar o website utilizando o seguinte comando:
 
@@ -81,11 +81,11 @@ php cecil.phar build
 
 Ao visualizar o conteúdo do diretório, verificará a presença de um diretório `_site`. Este diretório deve conter todos os ficheiros HTML e bases de dados:
 
-![Instalação Cecil](images/static_website_installation_cecil02.png){.thumbnail}
+![Instalação Cecil](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil02.png){.thumbnail}
 
 Agora pode ver o resultado ao aceder ao seu domínio:
 
-![Instalação Cecil](images/static_website_installation_cecil03.png){.thumbnail}
+![Instalação Cecil](/pages/assets/screens/other/browsers/web-pages/static_website_installation_cecil03.png){.thumbnail}
 
 #### Configuração do apontamento do domínio ou subdomínio
 
@@ -103,7 +103,7 @@ nano config.yml
 
 Substitua as informações predefinidas pelos seus e guarde o ficheiro.
 
-![Ficheiro de configuração YAML](images/static_website_installation_cecil04.png){.thumbnail}
+![Ficheiro de configuração YAML](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil04.png){.thumbnail}
 
 ### Criar uma nova página
 
@@ -129,7 +129,7 @@ Um ficheiro `mypage.md` é criado na raiz do diretório `/pages`.
 
 Substitua `mypage` por um nome próprio.
 
-![Instalação Cecil](images/static_website_installation_cecil05.png){.thumbnail}
+![Instalação Cecil](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil05.png){.thumbnail}
 
 #### Gerar os ficheiros estáticos
 
@@ -141,11 +141,11 @@ php cecil.phar build
 
 O seu ficheiro encontra-se no diretório `_site/mypage/`:
 
-![Instalação Cecil](images/static_website_installation_cecil06.png){.thumbnail}
+![Instalação Cecil](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil06.png){.thumbnail}
 
 Pode visualizá-lo no seu servidor introduzindo o URL do seu site, seguido de `/mypage/`:
 
-![Resultado browser](images/static_website_installation_cecil07.png){.thumbnail}
+![Resultado browser](/pages/assets/screens/other/browsers/web-pages/static_website_installation_cecil07.png){.thumbnail}
 
 ### Personalizar os ficheiros do seu site
 
@@ -162,11 +162,11 @@ Editar o ficheiro `mypage.md` situado no diretório `pages` o seguinte comando s
 
 Substitua `mypage` por um nome próprio.
 
-![Edição do ficheiro em GNU nano](images/static_website_installation_cecil08.png){.thumbnail}
+![Edição do ficheiro em GNU nano](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil08.png){.thumbnail}
 
 Adicione algumas linhas respeitando a syntaxe _Markdown_:
 
-![Adicionar conteúdo ao ficheiro](images/static_website_installation_cecil09.png){.thumbnail}
+![Adicionar conteúdo ao ficheiro](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil09.png){.thumbnail}
 
 Elimine os ficheiros na cache através do seguinte comando:
 
@@ -182,17 +182,17 @@ php cecil.phar build
 
 De seguida, volte à página para ver o resultado:
 
-![Página atualizada](images/static_website_installation_cecil10.png){.thumbnail}
+![Página atualizada](/pages/assets/screens/other/browsers/web-pages/static_website_installation_cecil10.png){.thumbnail}
 
 #### Modificação do seu posto de trabalho
 
 Se preferir utilizar o seu editor de código habitual, ligue-se com um cliente FTP no seu servidor para recuperar os ficheiros no seu computador:
 
-![Descarregamento com FileZilla](images/cecil-folder.png){.thumbnail}
+![Descarregamento com FileZilla](/pages/assets/screens/other/web-tools/filezilla/cecil-folder.png){.thumbnail}
 
 Pode agora editar os ficheiros no seu I.D.E.:
 
-![Visual Studio Code](images/static_website_installation_cecil12.png){.thumbnail}
+![Visual Studio Code](/pages/assets/screens/other/web-tools/vscode/static_website_installation_cecil12.png){.thumbnail}
 
 Basta-lhe reencaminhar os seus ficheiros alterados ou os seus novos ficheiros para o seu servidor e de *rebuilder* para ter as suas páginas online.
 
@@ -221,4 +221,4 @@ Nosso [guia sobre a utilização do FileZilla](/pages/web_cloud/web_hosting/ftp_
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

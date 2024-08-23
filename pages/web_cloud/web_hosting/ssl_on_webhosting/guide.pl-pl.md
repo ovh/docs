@@ -38,7 +38,7 @@ W zależności od [certyfikatu SSL](/links/web/hosting-options-ssl){.external}, 
 
 Tabela, która się wyświetla zawiera wszystkie nazwy domen dodanych do Twojego hostingu. W kolumnie "SSL" możesz sprawdzić stan aktywacji bezpiecznego połączenia SSL dla Twoich stron podpiętych w opcji MultiSite.
 
-![managessl](images/ssls.png){.thumbnail}
+![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/ssls.png){.thumbnail}
 
 Mogą pojawić się wówczas trzy statusy:
 
@@ -59,7 +59,7 @@ Aby aktywować certyfikat SSL na stronie podpiętej w opcji MultiSite, kliknij p
 > Niektóre certyfikaty SSL **Zewnętrzne** mogą być ważne dla kilku domen jednocześnie. Jeśli korzystasz z jednej z domen, informacja *Aktywny* nie pojawi się również dla wszystkich domen zadeklarowanych w tabeli "MultiSite". Certyfikat SSL będzie ważny dla domen, które *zawiera*.
 >
 
-![managessl](images/modify-domain.png){.thumbnail}
+![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-2.png){.thumbnail}
 
 Po zatwierdzeniu, status bezpiecznego połączenia SSL dla strony podpiętej w opcji MultiSite zaktualizuje się w ciągu kilku sekund, po czym zostaje wyświetlony komunikat "Do wygenerowania". Powtórz operację, jeśli chcesz aktywować SSL na innych stronach podpiętych w opcji MultiSite.
 
@@ -83,9 +83,9 @@ Przed przeprowadzeniem tej konfiguracji upewnij się, że poprzedni etap [aktywa
 >
 > Przed kontynuowaniem upewnij się również, że wpis lub wpisy MultiSite, dla których aktywujesz opcję SSL, wskazują na adres IP hostingu. Konfiguracja ta jest automatycznie proponowana podczas dodawania lub modyfikowania wpisu w opcji MultiSite, ale musi być wykonywana ręcznie dla domeny, która nie jest zarządzana w Twoim Panelu klienta.<br>
 > - Znajdź adres IP Twojego hostingu w zakładce `Informacje ogólne`{.action}, z adnotacją `IPv4`.
-> ![managessl](images/find-ipv4.png){.thumbnail}
+> ![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4.png){.thumbnail}
 > - Konfiguracja strefy DNS domeny w opcji MultiSite w sekcji `Domeny`{.action}, w zakładce `Strefa DNS`{.action}. Zmień lub dodaj rekord typu `A` odpowiadający Twojemu rekordowi w opcji MultiSite i wprowadź adres IP Twojego hostingu w `Adres docelowy`.
-> ![managessl](images/modify-an-entry.png){.thumbnail}
+> ![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/modify-an-entry.png){.thumbnail}
 >
 > Aby uzyskać więcej informacji, zapoznaj się z naszymi przewodnikami [dotyczącymi konfiguracji wpisu w opcji MultiSite](/pages/web_cloud/web_hosting/multisites_configure_multisite) lub [konfiguracji strefy DNS](/pages/web_cloud/domains/dns_zone_edit).
 
@@ -101,11 +101,11 @@ Kliknij przycisk `...`{.action} obok napisu „Certyfikat SSL”, a następnie `
 
 Jeśli pojawi się informacja „Tak”, oznacza to, że certyfikat SSL jest już zainstalowany i skonfigurowany na hostingu. Nie będziesz mógł więc zamówić nowego, dopóki na hostingu będzie zainstalowany poprzedni.
 
-![managessl](images/order-an-ssl-certificate.png){.thumbnail}
+![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-an-ssl-certificate.png){.thumbnail}
 
 W oknie, które się pojawi wybierz certyfikat SSL, który chcesz zamówić. Nie wszystkie rozwiązania wymienione powyżej mogą być dostępne. Zależy to od wykupionego przez Ciebie [pakietu hostingowego](/links/web/hosting){.external} lub konfiguracji. Po wybraniu opcji kliknij `Dalej`{.action}.
 
-![managessl](images/order-an-ssl-certificate-step-1-le.png){.thumbnail}
+![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-an-ssl-certificate-step-1-le.png){.thumbnail}
 
 W zależności od wybranego rozwiązania mogą pojawić się dodatkowe etapy:
 
@@ -117,7 +117,7 @@ W zależności od wybranego rozwiązania mogą pojawić się dodatkowe etapy:
 
 Wdrożenie certyfikatu może zająć od kilku minut do kilku dni, w zależności od typu wybranego certyfikatu. Aby sprawdzić, czy certyfikat SSL jest zainstalowany na Twoim hostingu, przejdź do zakładki `Informacje ogólne`{.action} w Twoim Panelu klienta. Informacja „Tak” powinna pojawić się poniżej sekcji „Certyfikat SSL”.
 
-![managessl](images/tab-ssl-le.png){.thumbnail}
+![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/tab-ssl-le.png){.thumbnail}
 
 ### 3. Ponowne wygenerowanie certyfikatu SSL na hostingu <a name="regeneratessl"></a>
 
@@ -130,13 +130,13 @@ Po aktywowaniu bezpiecznego połączenia SSL na jednej lub kilku stronach podpi�
 
 Zaloguj się do [Panelu klienta](/links/manager){.external} i wybierz `Web Cloud`{.action}. Kliknij `Hosting`{.action}, po czym wybierz odpowiedni hosting. Następnie przejdź do sekcji `Informacje ogólne`{.action}. Kliknij trzy kropki obok napisu „Certyfikat SSL”, a następnie kliknij `Wygeneruj ponownie certyfikat SSL`{.action}.
 
-![managessl](images/regenerate-ssl-certificate.png){.thumbnail}
+![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/regenerate-ssl-certificate.png){.thumbnail}
 
 Zapoznaj się z informacjami w oknie, które się wyświetli, po czym kliknij `Zatwierdź`{.action}. Zaczekaj następnie, aż certyfikat SSL zostanie odnowiony. Może to potrwać kilka godzin.
 
 Pamiętaj jednak, że Let's Encrypt, organizacja dostarczająca certyfikat SSL zawarty w Twoim hostingu, [ogranicza liczbę dopuszczalnych odnowień certyfikatu do pięciu tygodniowo](https://letsencrypt.org/docs/rate-limits/){.external}. Zalecamy ostrożność, gdyż zbyt duża liczba odnowień w krótkim czasie może spowodować czasową blokadę możliwości odnowienia certyfikatów.
 
-![managessl](images/ssl-regeneration.png){.thumbnail}
+![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ssl-regeneration.png){.thumbnail}
 
 ### Usunięcie certyfikatu SSL na hostingu <a name="deletessl"></a>
 
@@ -148,7 +148,7 @@ Gdy będziesz gotowy do usunięcia certyfikatu SSL zaloguj się do [Panelu klien
 
 Na stronie, która się wyświetli, zatwierdź usunięcie certyfikatu. Certyfikat zostanie usunięty maksymalnie w ciągu kilku godzin.
 
-![managessl](images/delete-ssl.png){.thumbnail}
+![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/delete-ssl.png){.thumbnail}
 
 > [!warning]
 >
@@ -228,4 +228,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

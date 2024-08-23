@@ -1,7 +1,7 @@
 ---
 title: "Configurar la IPv6 en un VPS"
 excerpt: "Cómo configurar la IPv6 en un VPS de OVHcloud"
-updated: 2024-03-05
+updated: 2024-08-08
 ---
 
 > [!primary]
@@ -24,7 +24,7 @@ El protocolo de internet versión 6 (IPv6) es la última versión del protocolo 
 - Tener un [VPS de OVHcloud](https://www.ovhcloud.com/es/vps/){.external}.
 - Estar conectado al VPS por SSH (acceso root) o a través de un escritorio remoto (Windows).
 - Tener conocimientos básicos de redes.
-- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} o a la [API de OVHcloud](https://api.ovh.com/).
+- Estar conectado al [área de cliente de OVHcloud](/links/manager){.external} o a la [API de OVHcloud](https://api.ovh.com/).
 
 ## Procedimiento
 
@@ -55,7 +55,7 @@ En primer lugar, es necesario conocer la dirección IPV6 y la puerta de enlace I
 
 #### Desde el área de cliente <a name="viacontrolpanel"></a>
 
-Conéctese al [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en la sección `Servidores Privados Virtuales`{.action}.
+Conéctese al [Panel de configuración de OVHcloud](/links/manager), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en la sección `Servidores Privados Virtuales`{.action}.
 
 En el apartado IP podrá ver la dirección IPv6 y la puerta de enlace IPv6 asignadas al VPS. Anótelas y continúe en el apartado 2 « [Aplicar la configuración IPv6](#applyipv6). »
 
@@ -226,11 +226,14 @@ network:
             addresses:
               - YOUR_IPV6/IPv6_PREFIX
             routes:
+# If IPV6_PREFIX is 128 then add link route to gateway
+#              - to: IPv6_GATEWAY
+#                scope: link
               - to: ::/0
                 via: IPv6_GATEWAY
 ```
 
-A continuación ofrecemos un ejemplo concreto:
+A continuación ofrecemos un ejemplo concreto (con prefijo /128):
 
 ```yaml
 network:
@@ -243,6 +246,8 @@ network:
             addresses:
               - 2607:5300:201:abcd::7c5/128
             routes:
+              - to: 2607:5300:201:abcd::1
+                scope: link
               - to: ::/0
                 via: 2607:5300:201:abcd::1
 ```

@@ -109,4 +109,4 @@ To delete a security group, select it by ticking the corresponding box on the le
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

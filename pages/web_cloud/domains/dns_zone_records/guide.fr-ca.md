@@ -1,14 +1,14 @@
 ---
-title: "Les enregistrements DNS"
+title: "Tout savoir sur les enregistrements DNS"
 excerpt: "Découvrez les différents types d'enregistrements DNS disponibles dans une zone DNS OVHcloud"
-updated: 2024-06-12
+updated: 2024-07-17
 ---
 
 ## Objectif
 
 Le sigle **DNS**, signifiant **D**omain **N**ame **S**ystem, est un ensemble d'éléments (serveurs DNS, zones DNS, etc.) permettant de faire correspondre un nom de domaine avec une adresse IP.
 
-Au préalable, nous vous recommandons de consulter nos guides « [Qu'est ce qu'un serveur DNS ?](/pages/web_cloud/domains/dns_server_general_information) » et « [Qu'est ce qu'une zone DNS ?](/pages/web_cloud/domains/dns_zone_general_information) » dans cet ordre.
+Au préalable, nous vous recommandons de consulter nos guides « [Tout savoir sur les serveurs DNS](/pages/web_cloud/domains/dns_server_general_information) » et « [Tout savoir sur la zone DNS](/pages/web_cloud/domains/dns_zone_general_information) » dans cet ordre.
 
 La zone DNS d’un nom de domaine constitue le fichier de configuration de ce dernier. Elle se compose d’informations techniques, appelées *enregistrements DNS*. La zone DNS est, en quelque sorte, un centre d'aiguillage pour un nom de domaine.
 
@@ -47,7 +47,7 @@ Sélectionnez l'enregistrement de votre choix en cliquant sur chacun des onglets
 >> >
 >> > Cependant, si votre serveur dispose déjà d'une IPv4, nous vous recommandons de privilégier l'utilisation de celle-ci à votre IPv6.<br>
 >> > En effet, les IPv6 ne sont pas encore correctement interprétées sur l'ensemble du réseau Internet, ce qui peut engendrer des perturbations d'affichage ou d'accès.
->
+>>
 > **CNAME**
 >> **C**anonical **NAME**<br><br>
 >> Utilise l'adresse IP d'un autre nom de domaine en créant un lien appelé alias. Par exemple, si *www.domain.tld* est un alias de *domain.tld*, cela indique que *www.domain.tld* utilisera l'adresse IP de *domain.tld*.
@@ -67,7 +67,11 @@ Sélectionnez l'enregistrement de votre choix en cliquant sur chacun des onglets
 >>
 > **Champ DNAME**
 >> **D**elegation **NAME**<br><br>
->> Permet de générer un « alias » pour l’ensemble des sous-domaines d’un domaine. Cet enregistrement évite de créer une multitude d’enregistrements CNAME. En effet, un champ CNAME ne redirige indépendamment qu'un seul sous-domaine vers une seule cible. Exemple : en créant un enregistrement DNAME de *domain.tld* vers *ovh.com*, tous les sous-domaines de *domain.tld* (tels que *dname.domain.tld* et *xxx.domain.tld*) seront redirigés respectivement vers les sous-domaines de *ovh.com* (tels que *dname.ovh.com* et *xxx.ovh.com*). En d’autres termes, l’enregistrement DNAME indique que *dname.domain.tld* et *xxx.domain.tld* doivent respectivement afficher les résultats de *dname.ovh.com* et *xxx.ovh.com*.
+>> Permet de générer un « alias » pour l’ensemble des sous-domaines d’un domaine. Cet enregistrement évite de créer une multitude d’enregistrements CNAME. En effet, un champ CNAME ne redirige indépendamment qu'un seul sous-domaine vers une seule cible.
+>>
+>> Exemple : en créant un enregistrement DNAME de *domain.tld* vers *ovh.com*, tous les sous-domaines de *domain.tld* (tels que *dname.domain.tld* et *xxx.domain.tld*) seront redirigés respectivement vers les sous-domaines de *ovh.com* (tels que *dname.ovh.com* et *xxx.ovh.com*).
+>>
+>> En d’autres termes, l’enregistrement DNAME indique que *dname.domain.tld* et *xxx.domain.tld* doivent respectivement afficher les résultats de *dname.ovh.com* et *xxx.ovh.com*.
 >>
 >> > [!warning]
 >> >
@@ -101,6 +105,7 @@ Sélectionnez l'enregistrement de votre choix en cliquant sur chacun des onglets
 >> >
 >> > De manière générale, il est recommandé de n’utiliser qu’un ou plusieurs serveurs d’un même fournisseur e-mail dans votre zone DNS.
 >> > En effet, si vous disposez déjà de services e-mail chez un autre fournisseur e-mail et que vous ajoutez en parallèle (sans remplacer) les serveurs e-mail de votre nouveau fournisseur e-mail, vous risquez de recevoir aléatoirement vos e-mails chez l’un ou l’autre de vos deux fournisseurs.
+>>
 > **SPF**
 >> **S**ender **P**olicy **F**ramework <br><br>
 >> Permet d'éviter les potentielles usurpations d’identité sur les adresses e-mail utilisant votre nom de domaine (*spoofing*). Par exemple, l'enregistrement `v=spf1 include:mx.ovh.ca ~all` indique que seuls les serveurs d'envoi liés à votre offre mail OVHCloud peuvent être considérés comme légitimes par le serveur de réception. Vous pouvez renseigner cet enregistrement sous la forme d'un champ TXT ou via notre système de configuration automatique.
@@ -119,7 +124,7 @@ Sélectionnez l'enregistrement de votre choix en cliquant sur chacun des onglets
 >>
 >> Consultez notre documentation « [Configurer un enregistrement DMARC sur votre nom de domaine](/pages/web_cloud/domains/dns_zone_dmarc) » pour en savoir plus.
 
-#### Enregistrements étendus <a name="extented-records"></a>
+#### Enregistrements étendus <a name="extended-records"></a>
 
 Sélectionnez l'enregistrement de votre choix en cliquant sur chacun des onglets suivants.
 
@@ -132,7 +137,7 @@ Sélectionnez l'enregistrement de votre choix en cliquant sur chacun des onglets
 >> >
 >> > L'enregistrement TXT est limité à 255 caractères. Il est néanmoins possible, dans certains cas, de scinder votre valeur en plusieurs enregistrements. Renseignez-vous auprès de votre prestataire lorsque celui-ci vous demande de renseigner une valeur dépassant le quota des 255 caractères.
 >> >
->> > Cette limite n'est cependant pas existante si vous passez par la fonctionnalité `Modifier en mode textuel`{.action} décrite dans notre guide « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_dmarc) » (pour les utilisateurs avertis).
+>> > Cette limite n'est cependant pas existante si vous passez par la fonctionnalité `Modifier en mode textuel`{.action} décrite dans notre guide « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) » (pour les utilisateurs avertis).
 >>
 > **SRV**
 >> **S**e**RV**ice resource<br><br>
@@ -162,7 +167,14 @@ Sélectionnez l'enregistrement de votre choix en cliquant sur chacun des onglets
 >>
 > **TLSA**
 >> **T**ransport **L**ayer **S**ecurity **A**uthentification<br><br>
->> Utilisé pour renseigner l'empreinte d'un certificat SSL/TLS.
+>> Utilisé pour renseigner l'empreinte d'un certificat SSL/TLS. Il va permettre de conserver le *hash* d'un certificat directement dans la zone DNS de votre nom de domaine via un enregistrement DNS. 
+>>
+>> Cet enregistrement est utilisé dans le cadre du protocole **D**NS-based **A**uthentication of **N**amed **E**ntities (DANE).
+>>
+>> Le protocole DANE permet a un client (navigateur internet, client de messagerie e-mail, client FTP, client SSH, etc.) de consulter l'enregistrement TLSA. Ainsi, il s'assure qu'un certificat SSL/TLS utilisé pour un nom de domaine est bien celui certifiant ce même nom de domaine.
+>>
+>> Si besoin, retrouvez plus de détails sur le site de l' [**I**nternet **E**ngineering **T**ask **F**orce (**IETF**)](https://datatracker.ietf.org/doc/html/rfc6698){.external} (EN).
+>>
 
 #### Cas particulier d'usage : l'utilisation des enregistrements CNAME <a name="cnameusecase"></a>
 

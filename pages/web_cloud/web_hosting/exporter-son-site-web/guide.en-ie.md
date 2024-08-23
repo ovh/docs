@@ -30,7 +30,7 @@ To log in to your storage space, you will need the following:
 
 This information was included in the email informing you that your web hosting plan has been set up. If you don’t have this information, log in to the [OVHcloud Control Panel](/links/manager){.external}, go to the `Web Cloud`{.action} section, then click on `Hosting`{.action}. Select the name of the web hosting plan, and click on the `FTP - SSH`{.action} tab. 
 
-![export-website](images/tab-pro.png){.thumbnail}
+![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
 
 The information associated with your storage space will now appear. You should be able to find the information you need to log in to it. If you need help with this, please refer to our guide on [Logging in to your Web Hosting plan’s storage space](/pages/web_cloud/web_hosting/ftp_connection){.external}. If you are no longer in possession of the password, refer to the instructions set out in our documentation on [Modifying a FTP user password](/pages/web_cloud/web_hosting/ftp_change_password){.external}.
 
@@ -46,7 +46,7 @@ Once you have logged in to your storage space, all you need to do upload your we
 
 To identify the folder that the website is stored on, go to the `Multi-site`{.action} tab in the OVHcloud Control Panel. In the table shown, check the `Root folder`{.action} listed for the domain in question.
 
-![export-website](images/root-folders.png){.thumbnail}
+![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
 ### Step 2: Retrieve your database backup (optional).
 
@@ -70,7 +70,7 @@ If you would like to download your website’s logs, you can do so via your web 
 
 Click `Hosting plans`{.action}, then click on the solution concerned. Click the `Statistics and logs`{.action} tab. Then click on the link under `View logs`{.action}:
 
-![export-website](images/view-logs.png){.thumbnail}
+![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-logs.png){.thumbnail}
 
 A window will appear with the different types of logs you can access. They are classed by month:
 
@@ -84,11 +84,11 @@ A window will appear with the different types of logs you can access. They are c
 | ssh   	| These logs indicate the different connections made with SSH protocol.                                                                                                                      	|
 | cron  	| These are the result of any jobs you have scheduled.                                                                                                                                                	|
 
-![export-website](images/raw-logs-general.png){.thumbnail}
+![export-website](/pages/assets/screens/other/web-tools/logs/raw-logs-general.png){.thumbnail}
 
 When you have selected the log types and month you want to view, the logs are archived by the day:
 
-![export-website](images/raw-logs.png){.thumbnail}
+![export-website](/pages/assets/screens/other/web-tools/logs/raw-logs.png){.thumbnail}
 
 ## Go further
 
@@ -108,4 +108,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

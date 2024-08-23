@@ -1,7 +1,7 @@
 ---
-title: 'Konfiguracja sieci na Proxmox VE w ofercie High Grade & SCALE'
-excerpt: 'Dowiedz się, jak skonfigurować sieć na Proxmox VE w ofercie High Grade & SCALE'
-updated: 2023-05-11
+title: 'Konfiguracja sieci na Proxmox VE'
+excerpt: 'Dowiedz się, jak skonfigurować sieć na Proxmox VE'
+updated: 2024-07-16
 ---
 
 > [!primary]
@@ -15,7 +15,12 @@ updated: 2023-05-11
 
 ## Wprowadzenie
 
-W ofercie High Grade & SCALE nie jest możliwe działanie adresów Additional IP w trybie bridged (poprzez wirtualne maszyny MAC). Konieczne jest zatem skonfigurowanie Additional IP w trybie routera lub vRack.
+W ofercie High Grade & SCALE nie jest możliwe działanie adresów Additional IP w trybie bridged (poprzez wirtualne maszyny MAC). To samo dotyczy serwerów nowej generacji, które są dostarczane z procesorami AMD Epyc 4K i 8K. Konieczne jest zatem skonfigurowanie Additional IP w trybie routera lub vRack.
+
+> [!primary]
+>
+> Do końca 2024 roku funkcja ta zostanie dostarczona dla wszystkich gam High Grade, SCALE & ADVANCE.
+>
 
 **Dowiedz się, jak skonfigurować sieć w programie Proxmox VE.**
 
@@ -23,7 +28,7 @@ W ofercie High Grade & SCALE nie jest możliwe działanie adresów Additional IP
 
 - Posiadanie [serwera dedykowanego OVHcloud](https://www.ovhcloud.com/pl/bare-metal/)
 - Posiadanie adresu [Additional IP](https://www.ovhcloud.com/pl/bare-metal/ip/)
-- Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dostęp do [Panelu client OVHcloud](/links/manager)
 
 > [!warning]
 >
@@ -203,7 +208,7 @@ Konfiguracja ta jest bardziej elastyczna. Nie musisz przypisywać żadnego Addit
 * Przygotowanie Twojego zakresu wybranych prywatnych adresów IP
 * Posiadanie [serwera kompatybilnego z vRack](https://www.ovhcloud.com/pl/bare-metal/){.external}
 * Aktywacja usługi [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external}
-* Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+* Dostęp do [Panelu client OVHcloud](/links/manager)
 
 #### Schemat konfiguracji docelowej
 

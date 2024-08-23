@@ -56,7 +56,7 @@ Entscheiden Sie sich für eine Wiederherstellungsmethode, die Sie verwenden möc
 >
 > Die Speicherplatzbelegung erscheint auf dieser Seite:
 >
->![ftp quota](images/find-disk-space.png){.thumbnail}
+>![ftp quota](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
 >
 > Wenn mehr als die Hälfte des gesamten FTP-Speicherplatzes Ihres Webhostings belegt ist, können Sie zum Beispiel große Dateien Ihrer Website auswählen und lokal sichern. (Sie können dazu [Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) verwenden). Löschen Sie diese anschließend aus Ihrem FTP-Speicherplatz. Dadurch verringert sich die Größe des genutzten FTP-Speicherplatzes und Sie können die Wiederherstellung über das OVHcloud-Kundencenter starten.
 >
@@ -89,7 +89,7 @@ Folgen Sie dieser Anleitung nun entsprechend der ausgewählten Wiederherstellung
 
 Loggen Sie sich in Ihr [OVHcloudcloud Kundencenter](/links/manager){.external} ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Hosting-Pakete`{.action} das betreffende Hosting aus. Gehen Sie dann zum Tab `FTP - SSH`{.action} und klicken Sie auf den Button `Backup wiederherstellen`{.action}.
 
-![FTP-Backup](images/restore-backup.png){.thumbnail}
+![FTP-Backup](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup.png){.thumbnail}
 
 Wählen Sie im angezeigten Fenster über das Dropdown-Menü mithilfe folgender Informationen das gewünschte Backup-Datum aus:
 
@@ -103,7 +103,7 @@ Wählen Sie im angezeigten Fenster über das Dropdown-Menü mithilfe folgender I
 
 Klicken Sie nach der Auswahl auf den Button `Weiter`{.action}. 
 
-![FTP-Backup](images/restore-backup-step-1.png){.thumbnail}
+![FTP-Backup](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup-step-1.png){.thumbnail}
 
 Vergewissern Sie sich, dass bei der Wiederherstellung keine Datei verloren geht. Das könnte beispielsweise mit einer Datei passieren, die nach dem ausgewählten Datum in Ihren Speicherplatz hochgeladen wurde. Beachten Sie, dass bei der Wiederherstellung die aktuellen Daten vollständig mit den Backup-Daten überschrieben werden.
 
@@ -135,7 +135,7 @@ Entscheiden Sie sich zunächst, welche Software oder welches Interface Sie verwe
 
 Gehen Sie zum nächsten Schritt über, um mit der Wiederherstellung fortzufahren.
 
-![FTP-Backup](images/ftp-explorer.png){.thumbnail}
+![FTP-Backup](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/ftp-explorer.png){.thumbnail}
 
 #### Schritt 2: Auf das Backup zugreifen
 
@@ -143,7 +143,7 @@ Mithilfe der ausgewählten Software bzw. über das Interface können Sie sich nu
 
 Diese Login-Informationen finden Sie über den Tab `FTP - SSH`{.action} Ihres Webhostings. Wenn Sie kein FTP-Passwort besitzen, lesen Sie die Anleitung [„Passwort eines FTP-Benutzers ändern“](/pages/web_cloud/web_hosting/ftp_change_password).
 
-![FTP-Backup](images/login-infos.png){.thumbnail}
+![FTP-Backup](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/login-infos.png){.thumbnail}
 
 Ergänzen Sie Ihren Haupt-FTP-Benutzernamen (bzw. „FTP-Login“) mit einem Suffix, das sich auf das betreffende Backup bezieht. Verwenden Sie die folgenden Tabelle, um das korrekte Backup auszuwählen:
 
@@ -159,7 +159,7 @@ Denken Sie daran, „ftpbenutzer“ mit Ihrem eigenen FTP-Benutzernamen zu erset
 
 Wie Sie sich in Ihren Speicherplatz einloggen, hängt von der verwendeten Software bzw. dem Interface ab. Die folgende Abbildung zeigt den Login über das Interface des FTP-Explorers.
 
-![FTP-Backup](images/login-interface-snap0.png){.thumbnail}
+![FTP-Backup](/pages/assets/screens/other/web-tools/net2ftp/login-interface-snap0.png){.thumbnail}
 
 #### Schritt 3: Eine oder mehrere Backup-Dateien wiederherstellen
 
@@ -199,4 +199,4 @@ Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

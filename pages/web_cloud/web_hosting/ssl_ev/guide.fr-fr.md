@@ -61,7 +61,7 @@ Consultez notre guide sur comment [gérer un certificat SSL sur son hébergement
 
 Renseignez avec exactitude les informations demandées par **Sectigo** avant que ne vous soit délivré le certificat SSL EV. 
 
-![SSL EV form](images/ssl-ev-step-2.png){.thumbnail}
+![SSL EV form](/pages/assets/screens/website/order/ssl-ev-step-2.png){.thumbnail}
 
 Cliquez sur `Continuer`{.action} une fois **tous les éléments** correctement renseignés.
 
@@ -80,19 +80,19 @@ Poursuivez la commande jusqu'au paiement afin de valider la demande de création
 
 Si vous n'avez pas encore commandé votre nom de domaine et l'hébergement associé, rendez-vous sur notre [page d'accueil OVHcloud](/links/website), saisissez un nom de domaine dans le **formulaire de recherche prévu à cet effet** puis cliquez sur `Rechercher`{.action} pour démarrer votre commande.
 
-![SSL EV select domain](images/ssl-ev-search-bar.png){.thumbnail}
+![SSL EV select domain](/pages/assets/screens/website/order/ssl-ev-search-bar.png){.thumbnail}
 
 Sélectionnez ensuite votre nom de domaine, choisissez votre hébergement ainsi que vos options jusqu'à arriver à l'étape `Configurez votre hébergement web`.
 
 Sélectionnez vos choix d'installation de `module en 1 clic`{.action} et de `CDN`{.action} puis descendez tout en bas de la page jusqu'à la section `Sécurisez votre site web avec nos certificats SSL`{.action}.
 
-![SSL EV order](images/ssl-ev-selection.png){.thumbnail}
+![SSL EV order](/pages/assets/screens/website/order/ssl-ev-selection.png){.thumbnail}
 
 Choisissez `Sectigo EV SSL`{.action} puis cliquez sur `Continuer`{.action}.
 
 Sur la nouvelle page qui s'affiche, renseignez avec exactitude les informations demandées par **Sectigo** avant que ne vous soit délivré le certificat SSL EV :
 
-![SSL EV form](images/ssl-ev-step-2.png){.thumbnail}
+![SSL EV form](/pages/assets/screens/website/order/ssl-ev-step-2.png){.thumbnail}
 
 Cliquez sur `Continuer`{.action} une fois **tous les éléments** correctement renseignés.
 
@@ -179,4 +179,4 @@ Pour des prestations spécialisées (référencement, développement, etc), cont
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

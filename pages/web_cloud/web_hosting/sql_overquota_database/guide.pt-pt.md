@@ -62,13 +62,13 @@ Aceda à [Área de Cliente OVHcloud](/links/manager) e selecione `Web Cloud`{.ac
 
 Na parte inferior do ecrã será apresentada uma tabela com a lista das bases de dados.
 
-![phpMyAdmin Access](images/go-to-phpmyadmin.png){.thumbnail}
+![phpMyAdmin Access](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
 
 Anote, **para a sua base de dados saturada**, o seu `Nome de utilizador` e o seu `Endereço do servidor` presentes na tabela que lista as suas bases de dados. 
 
 Ainda no separador `Bases de dados`{.action}", clique no botão `...`{.action} à direita da base de dados que está saturada e, a seguir, em `Aceder ao phpMyAdmin`{.action}".
 
-![phpMyAdmin Go Login](images/pma-interface-login.png){.thumbnail}
+![phpMyAdmin Go Login](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
 
 Introduza as informações de acesso à sua base de dados e depois clique em `Entrada`{.action}.
 
@@ -83,11 +83,11 @@ Introduza as informações de acesso à sua base de dados e depois clique em `En
 
 Uma vez ligado, aparecerá a seguinte página:
 
-![phpMyAdmin Login](images/pma-main-page.png){.thumbnail}
+![phpMyAdmin Login](/pages/assets/screens/other/web-tools/phpmyadmin/pma-main-page-2.png){.thumbnail}
 
 Clique em `"Nome da sua base de dados"`{.action} na coluna da esquerda, depois em `Taille`{.action} no canto superior direito da tabela que aparece:
 
-![phpMyAdmin Tables](images/pma-check-size.png){.thumbnail}
+![phpMyAdmin Tables](/pages/assets/screens/other/web-tools/phpmyadmin/pma-check-size.png){.thumbnail}
 
 As tabelas mais volumosas figuram no topo da tabela. Identifique-as e passe à **etapa 2**.
 
@@ -162,7 +162,7 @@ No caso de uma overquota ou de uma tabela volumosa, estão disponíveis **três 
 
 Pode efetuar diretamente estes pedidos a partir da interface **phpMyAdmin**, através do separador `SQL`{.action}:
 
-![phpMyAdmin SQL request](images/pma-sql-menu.png){.thumbnail}
+![phpMyAdmin SQL request](/pages/assets/screens/other/web-tools/phpmyadmin/pma-sql-menu.png){.thumbnail}
 
 - A encomenda **DELETE**: 
 
@@ -208,4 +208,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 
+Fale com nossa [comunidade de utilizadores](/links/community). 

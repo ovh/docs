@@ -1,6 +1,6 @@
 ---
-title: Konfiguracja rekordu DMARC w Twojej domenie
-excerpt: Dowiedz się, jak działa DMARC i jak wdrożyć go dla Twojej usługi e-mail
+title: "Poprawa bezpieczeństwa e-maili dzięki rejestracji DMARC"
+excerpt: "Dowiedz się, jak działa DMARC i jak wdrożyć go dla Twojej usługi e-mail"
 updated: 2023-12-13
 ---
 
@@ -48,7 +48,7 @@ Rekord DMARC informuje o polityce, jaką należy przyjąć w zależności od wyn
 
 Po przeczytaniu instrukcji rejestracji DMARC domeny **mydomain.ovh** przez serwer poczty przychodzącej "**otherdomain.ovh"** wiadomości e-mail będą dostarczane na adres **recipient@otherdomain.ovh** albo oznaczone jako "SPAM" lub odrzucone.
 
-![DMARC](images/dns-dmarc-diagram.png){.thumbnail}
+![DMARC](/pages/assets/schemas/emails/dns-dmarc-diagram.png){.thumbnail}
 
 ### Konfiguracja DMARC
 
@@ -98,7 +98,7 @@ Poniżej znajduje się wyczerpujący opis tagów używanych do **rejestracji DMA
 > - **Częściowo wyrównany**: gdy adres *john.smith@subdomain.mydomain.ovh* przekazuje wiadomość z usługi e-mail powiązanej z domeną *mydomain.ovh*, ale mechanizmy uwierzytelniania SPF i DKIM zostały skonfigurowane tylko dla domeny głównej (czyli *mydomain.ovh*), otrzymujemy częściowo wyrównany wynik.
 > - **Niepowodzenie mechanizmów uwierzytelniania**: nadawca próbuje wysłać wiadomość e-mail jako *john.smith@mydomain.ovh*, korzystając z innego adresu (np. *robert@example.com*) lub korzystając z usługi wysyłki e-maili, która nie jest wymieniona w SPF. W takim przypadku mechanizmy uwierzytelniania SPF i DKIM zwracają błąd jako wynik.
 
-![DMARC](images/dns-dmarc-01.png){.thumbnail}
+![DMARC](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-dmarc-01.png){.thumbnail}
 
 #### Rekord TXT <a name="txt-record"></a>
 
@@ -126,7 +126,7 @@ Poniżej znajduje się lista znaczników używanych do tworzenia **rekordu TXT**
 
 - **ri** (32-bitowa liczba całkowita niepodpisana jako zwykły tekst; domyślnie 86400): wymagany interwał w sekundach między raportami zagregowanymi. Ten znacznik określa częstotliwość, z jaką odbiorcy wiadomości e-mail mają generować zbiorcze raporty dotyczące wyników oceny DMARC dla danej domeny.
 
-![DMARC](images/dns-dmarc-02.png){.thumbnail}
+![DMARC](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-dmarc-02.png){.thumbnail}
 
 #### Przykłady rejestracji <a name="record-example"></a>
 
@@ -140,7 +140,7 @@ Poniżej znajduje się lista znaczników używanych do tworzenia **rekordu TXT**
 
 Aby zilustrować ten pierwszy przykład, użyliśmy [rekordu DMARC](#dmarc-record) w strefie DNS i zastosowaliśmy do niego następujące ustawienia:
 
-![DMARC](images/dns-dmarc-03.png){.thumbnail}
+![DMARC](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-dmarc-03.png){.thumbnail}
 
 Otrzymujemy następujący wynik:
 
@@ -154,7 +154,7 @@ Wszystkie wysłane e-maile (**pct=100**) są przetwarzane przez mechanizmy uwier
 
 W tym drugim przykładzie użyliśmy [rekordu TXT](#txt-record), aby użyć tagów, które nie są dostępne za pośrednictwem uproszczonego [rekordu DMARC](#dmarc-record).
 
-![DMARC](images/dns-dmarc-04.png){.thumbnail}
+![DMARC](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-dmarc-04.png){.thumbnail}
 
 Otrzymujemy następujący wynik:
 
@@ -184,4 +184,4 @@ Jeśli potrzebujesz specjalistycznych usług (SEO, programowanie, etc.), skontak
 
 Jeśli chcesz uzyskać wsparcie w zakresie użytkowania i konfiguracji Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami wsparcia](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

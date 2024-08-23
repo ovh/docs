@@ -28,7 +28,7 @@ Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sec
 
 La tabla de esta sección contiene todas las bases de datos creadas con su alojamiento web.
 
-![databasecreation](images/tab.png){.thumbnail}
+![databasecreation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
 
 En la tabla, las bases de datos pueden tener varios tipos diferentes:
 
@@ -52,7 +52,7 @@ Existen dos formas de crear una nueva base de datos:
 
 En la nueva ventana, seleccione la siguiente información:
 
-![database-creation-step1](images/create-a-database-step-1.png){.thumbnail}
+![database-creation-step1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-step-1.png){.thumbnail}
 
 |Información|Descripción|  
 |---|---|
@@ -64,7 +64,7 @@ A continuación, haga clic en `Siguiente`{.action}.
 
 Se abrirá una nueva ventana:
 
-![database-creation-step2](images/create-a-database-step-2.png){.thumbnail}
+![database-creation-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-step-2.png){.thumbnail}
 
 |Información|Descripción|
 |---|---|
@@ -92,7 +92,7 @@ crear una contraseña que no contenga datos personales (nombre, apellidos, fecha
 
 Complete la información solicitada y haga clic en `Siguiente`{.action}.
 
-![database-creation-step3](images/create-a-database-step-3.png){.thumbnail}
+![database-creation-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-step-3.png){.thumbnail}
 
 Asegúrese de que toda la información mostrada en el resumen es correcta. En ese caso, haga clic en `Aceptar`{.action} para iniciar la creación de la base de datos.
 
@@ -148,7 +148,7 @@ Según el programa utilizado, es posible que esta conexión necesite ser configu
 
 OVHcloud ofrece una herramienta en línea para la gestión de bases de datos llamada phpMyAdmin. Para acceder a la aplicación, conéctese al [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} en la columna izquierda, seleccione el alojamiento en el que desea recuperar la información de conexión a la base de datos y abra la pestaña `Bases de datos`{.action}. En la tabla que se abre, haga clic en el botón `...`{.action} a la derecha de la base de datos correspondiente y, a continuación, haga clic en `Acceder a phpMyAdmin`{.action} en el menú desplegable.
 
-![phpMyAdmin Go Login](images/pma-interface-login.png){.thumbnail}
+![phpMyAdmin Go Login](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
 
 Introduzca los datos de acceso a la base de datos y haga clic en `Initiar sesión`{.action}.
 
@@ -192,4 +192,4 @@ Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con 
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

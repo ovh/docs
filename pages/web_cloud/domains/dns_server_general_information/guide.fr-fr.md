@@ -1,7 +1,7 @@
 ---
-title: "Qu'est ce qu'un serveur DNS ?"
+title: "Tout savoir sur les serveurs DNS"
 excerpt: "Découvrez le rôle des serveurs DNS, ce qu'ils contiennent et comment ils fonctionnent avec un nom de domaine"
-updated: 2024-06-12
+updated: 2024-06-17
 ---
 
 ## Objectif
@@ -22,7 +22,7 @@ Ce réseau DNS permet de faciliter, pour les utilisateurs, l'accès à Internet 
 
 Ils permettent notamment l'utilisation des [noms de domaine](/links/web/domains) pour accéder à votre site web préféré sans être obligé de retenir l'adresse IP du serveur où est hébergé ce site web.
 
-![DNS resolution](images/dns-resolution.png){.thumbnail}
+![DNS resolution](/pages/assets/schemas/dns/dns-resolution.png){.thumbnail}
 
 Il existe 4 types de serveurs DNS.
 
@@ -51,13 +51,13 @@ Une zone DNS contient des informations techniques, appelées *enregistrements DN
 
 > [!success]
 >
-> - Pour plus d'informations sur les zones DNS, consultez notre guide « [Qu'est ce qu'une zone DNS ?](/pages/web_cloud/domains/dns_zone_general_information) ».
-> - Consultez ensuite notre guide sur [Les enregistrements DNS](/pages/web_cloud/domains/dns_zone_general_information) pour une meilleure compréhension de l'ensemble.
+> - Pour plus d'informations sur les zones DNS, consultez notre guide « [Tout savoir sur la zone DNS](/pages/web_cloud/domains/dns_zone_general_information) ».
+> - Consultez ensuite notre guide sur [Tout savoir sur les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records) pour une meilleure compréhension de l'ensemble.
 >
 
 De ce fait, ce sont les **serveurs DNS (Authoritative)** qui doivent être déclarés (auprès du bureau d'enregistrement d'un nom de domaine) pour utiliser la zone DNS qu'ils hébergent. 
 
-![DNS](images/dns-server.png){.thumbnail}
+![DNS](/pages/assets/schemas/dns/dns-server.png){.thumbnail}
 
 ### Fonctionnement d'un serveur DNS (Authoritative) avec un nom de domaine
 
@@ -71,9 +71,9 @@ Parfois, certains fournisseurs DNS proposent plus de 2 **serveurs DNS (Authorita
 
 ## Aller plus loin
 
-[Qu'est ce qu'une zone DNS ?](/pages/web_cloud/domains/dns_zone_general_information)
+[Tout savoir sur la zone DNS](/pages/web_cloud/domains/dns_zone_general_information).
 
-[Les enregitrements DNS](/pages/web_cloud/domains/dns_zone_records)
+[Tout savoir sur les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records).
 
 [Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_edit).
 

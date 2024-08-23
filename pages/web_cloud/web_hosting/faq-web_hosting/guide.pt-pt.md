@@ -1,7 +1,7 @@
 ---
 title: "FAQ Web Hosting"
 excerpt: "Encontre aqui as questões mais comuns sobre os alojamentos web da OVHcloud"
-updated: 2023-04-24
+updated: 2024-06-27
 ---
 
 > [!primary]
@@ -36,9 +36,9 @@ Para seguir os passos necessários para construir o seu website, consulte esta [
 
 **Truques e dicas**: Para o ajudar a criar o seu site, a OVHcloud permite-lhe instalar no seu alojamento um software de assistência à criação de sites (WordPress, PrestaShop, Joomla! e Drupal), graças à funcionalidade [Módulos 1 clique](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
-### Como transferir o meu site e os meus e-mails para os servidores OVHcloud? 
+### Como transferir sem interrupção de serviço o meu website, a minha base de dados, o meu domínio e os meus e-mails para os servidores OVHcloud?
 
-Consulte o guia [Como migrar um site e e-mails para a OVH?](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh).
+Consulte o guia "[Migrar o seu website e os seus serviços associados para a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)" para obter o conjunto das etapas a seguir.
 
 ### Como alojar vários sites num alojamento partilhado?
 
@@ -90,7 +90,7 @@ Consulte os [eventos em curso na nossa infraestrutura](https://www.status-ovhclo
 
 ### O que fazer se, depois de colocar o meu site online, a página "Site em construção" da OVHcloud ficar apresentada?
 
-![site-en-construction](images/site-en-construction.png){.thumbnail}
+![site-en-construction](/pages/assets/screens/other/browsers/errors/site-en-construction.png){.thumbnail}
 
 Aquando da instalação do seu alojamento, a OVHcloud implementa esta página de espera sob a forma de um ficheiro **index.html** contido na pasta `www` do seu servidor FTP.
 
@@ -100,7 +100,7 @@ Se escolheu instalar o seu site [de forma manual](/pages/web_cloud/web_hosting/c
 
 ### O que fazer se o meu site for apresentado num endereço web do tipo "xxxx.cluster0xx.hosting.ovh.net"?
 
-![cluster url](images/url-cluster.png){.thumbnail}
+![cluster url](/pages/assets/screens/other/browsers/urls/url-cluster.png){.thumbnail}
 
 São possíveis dois cenários. Ou o seu site foi criado com este endereço web ou este surgiu após uma modificação.
 
@@ -113,11 +113,11 @@ São possíveis dois cenários. Ou o seu site foi criado com este endereço web 
 
 No primeiro caso, depois de realizar todos os backups necessários, elimine o módulo a partir da parte `Alojamentos` da Área de Cliente OVHcloud:
 
-![delete-a-module](images/delete-a-module.png){.thumbnail}
+![delete-a-module](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/delete-a-module.png){.thumbnail}
 
 De seguida, elimine a base de dados a partir do separador do mesmo nome situado à direita do seu ecrã, na secção `Alojamentos`:
 
-![delete_a_database](images/sharedsql-deletion.png){.thumbnail}
+![delete_a_database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/sharedsql-deletion.png){.thumbnail}
  
 Reinicie a sua instalação no domínio pretendido, utilizando a funcionalidade [Módulo 1 clique](/pages/web_cloud/web_hosting/cms_manage_1_click_module).
 
@@ -138,9 +138,9 @@ Se o seu site tiver uma base de dados, consulte o nosso manual [Importar um back
 
 ### O que fazer se o meu webmail-login-interface for redirecionado para o webmail-login-interface OVHcloud?
 
-![webmail-login-interface](images/webmail-login-interface.png){.thumbnail}
+![webmail-login-interface](/pages/assets/screens/website/webmail/webmail-login-interface.png){.thumbnail}
 
-Esta anomalia indica uma configuração errada dos [servidores DNS](/pages/web_cloud/domains/dns_server_general_information) ou da [zona DNS](/pages/web_cloud/domains/dns_zone_edit) associados ao seu domínio.
+Esta anomalia indica uma configuração errada dos [servidores DNS](/pages/web_cloud/domains/dns_server_edit) ou da [zona DNS](/pages/web_cloud/domains/dns_zone_edit) associados ao seu domínio.
 
 O caso mais comum é o seguinte: encomendou separadamente o seu nome de domínio e o seu alojamento, pelo que não estão ligados entre si através da sua zona DNS.
 
@@ -150,15 +150,15 @@ De seguida, tome nota dos servidores DNS indicados e aceda ao separador `Zona DN
 
 Compare os `Alvo` das entradas do tipo `NS` indicadas no separador `Zona DNS`{.action} com os `Servidores DNS` indicados no separador do mesmo nome:
 
-- Se os elementos forem idênticos, substitua o alvo `213.186.33.5` pelo código de quatro números indicado no separador `Informações gerais` com a menção `IPv4` (para mais informações sobre as operações a efetuar, siga as instruções [deste guia](/pages/web_cloud/domains/dns_zone_edit#instrucoes)).
+- Se os elementos forem idênticos, substitua o alvo `213.186.33.5` pelo código de quatro números indicado no separador `Informações gerais` com a menção `IPv4` (para mais informações sobre as operações a efetuar, siga as instruções [deste guia](/pages/web_cloud/domains/dns_zone_edit)).
 
-- Se os elementos não forem idênticos mas os `Servidores DNS` indicados no separador do mesmo nome aparecerem na [lista](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), efetue uma reinicialização de acordo com as instruções [deste manual](/pages/web_cloud/domains/dns_server_general_information#reinicializar-os-servidores-dns).
+- Se os elementos não forem idênticos mas os `Servidores DNS` indicados no separador do mesmo nome aparecerem na [lista](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), efetue uma reinicialização de acordo com as instruções [deste manual](/pages/web_cloud/domains/dns_server_edit).
 
 - Se os elementos não forem idênticos e os `Servidores DNS` indicados no separador do mesmo nome não aparecerem [nesta lista](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), contacte o seu Webmaster ou procure um fornecedor especializado através da página dos [parceiros OVHcloud](/links/partner).
 
 ### O que fazer se o meu website apresentar um erro "A página não se redirige corretamente"?
 
-![the-page-isnt-redirecting-properly](images/the-page-isnt-redirecting-properly.png){.thumbnail}
+![the-page-isnt-redirecting-properly](/pages/assets/screens/other/browsers/errors/the-page-isnt-redirecting-properly.png){.thumbnail}
 
 > [!alert]
 >
@@ -177,7 +177,7 @@ Se os restauros não lhe permitem restabelecer o acesso ao seu site, contacte o 
 
 ### O que fazer se o meu website apresentar um erro "503 error Backend fetch failed (Varnish cache)"?
 
-![503_varnish](images/http-503-backend-varnish.png){.thumbnail}
+![503_varnish](/pages/assets/screens/other/browsers/errors/http-503-backend-varnish.png){.thumbnail}
 
 Se ativou a [opção CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn) do seu alojamento, desative o modo *Manutenção* no seu site WordPress ou PrestaShop.
 
@@ -185,7 +185,7 @@ Se não ativou esta opção nem utilizou o modo *Maintenance*, contacte o seu We
 
 ### O que fazer se o meu site apresentar um erro "Your request has been blocked"?
 
-![your-request-has-been-blocked](images/your-request-has-been-blocked.png){.thumbnail}
+![your-request-has-been-blocked](/pages/assets/screens/other/browsers/errors/your-request-has-been-blocked.png){.thumbnail}
 
 Esta mensagem indica que o tipo de pedido HTTP que pretende realizar no seu site é proibido por um período de tempo limitado. Nesta situação, [verifique os logs](/pages/web_cloud/web_hosting/logs_and_statistics) do seu site para determinar quais os pedidos que provocaram este bloqueio.
 
@@ -193,7 +193,7 @@ Para o ajudar a corrigir estas anomalias, contacte o seu Webmaster ou um dos nos
 
 ### O que fazer se o meu site apresentar um erro "Your IP has been baned"?
 
-![your-ip-has-been-banned](images/your-ip-has-been-banned.png){.thumbnail}
+![your-ip-has-been-banned](/pages/assets/screens/other/browsers/errors/your-ip-has-been-banned.png){.thumbnail}
 
 Esta mensagem indica que o endereço IP que utiliza para se ligar ao seu site está bloqueado por um período de tempo limitado. 
 
@@ -203,7 +203,7 @@ Por fim, pode contactar um dos nossos parceiros (/links/partner), para que este 
 
 ### Eu encomendei um domínio com acentos e ele escreve de forma estranha na minha Área de Cliente. O que devo fazer?
 
-![notação_idn](images/idn-notation.png){.thumbnail}
+![notação_idn](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/idn-notation.png){.thumbnail}
 
 Não tem nada a fazer nesta situação. Mesmo que o seu domínio seja apresentado em [notação internacionalizada (IDN)](https://en.wikipedia.org/wiki/Internationalized_domain_name){.external} na sua Área de Cliente, funcionará e apresentará-se de forma perfeitamente normal noutro local. O endereço Web do seu site será apresentado conforme solicitado. Os seus endereços de e-mail aparecerão também conforme o seu desejo.
 
@@ -218,4 +218,4 @@ Não tem nada a fazer nesta situação. Mesmo que o seu domínio seja apresentad
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

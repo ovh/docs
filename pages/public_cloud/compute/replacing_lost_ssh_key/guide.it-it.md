@@ -1,7 +1,7 @@
 ---
-title: Sostituisci la tua chiave SSH in caso di perdita
-excerpt: Sostituisci la tua chiave SSH in caso di perdita
-updated: 2022-02-10
+title: "Come sostituire un paio di chiavi SSH su un'istanza Public Cloud"
+excerpt: "Scopri come ripristinare l'accesso al server sostituendo una coppia di chiavi SSH con una nuova in caso di perdita della chiave privata"
+updated: 2024-06-13
 ---
 
 > [!primary]
@@ -10,83 +10,74 @@ updated: 2022-02-10
 
 ## Obiettivo
 
-In caso di perdita di chiave SSH, sia in seguito a reinstallazione di un dispositivo che in seguito ad altre operazioni, è possibile che non sia più possibile connettersi alla tua istanza se non hai configurato alcun metodo alternativo per connetterti alla tua istanza.
+La perdita della chiave SSH privata comporta la perdita dell'accesso alla tua istanza se non hai configurato altri mezzi di accesso.
 
-Per recuperare l'accesso, abbiamo messo a tua disposizione una [modalità Rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) che ti permette di connetterti tramite una password e modificare i tuoi file.
+La modalità Rescue di OVHcloud consente comunque di accedere con una password provvisoria e modificare i file.
 
-**Questa guida ti mostra come configurare il file *authorized_keys* dell'utente *admin* per poter aggiungere una nuova chiave SSH per recuperare l'accesso alla tua istanza.**
+**Questa guida ti mostra come sostituire le chiavi SSH in caso di perdita di accesso all’istanza.**
+
+> [!warning]
+> OVHcloud fornisce servizi la cui configurazione e gestione sono di vostra responsabilità. È quindi vostra responsabilità assicurarvi che funzionino correttamente.
+>
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di problemi, ti consigliamo di contattare un [provider di servizi specializzato](/links/partner) o [la nostra Community di utenti](/links/community).
+>
 
 ## Prerequisiti
 
-- Disporre di una [Istanza Public Cloud](https://www.ovhcloud.com/it/public-cloud/) nel tuo account OVHcloud
-- Avere accesso alla tua istanza via SSH in [modalità Rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode)
-- Creare una chiave SSH
+- Un’ [istanza Public Cloud](/links/public-cloud/public-cloud) nel tuo account OVHcloud
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
-> [!primary]
->
-Per salvare una chiave SSH nello Spazio Cliente OVHcloud, ti consigliamo di utilizzare la cifratura RSA o ECDSA. ED25519 non è attualmente supportato.
->
+### Step 1: crea una nuova coppia di chiavi
 
-Dopo aver montato il disco della tua istanza in [modalità Rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode#accedi-ai-tuoi-dati), sarai in grado di accedere a tutti i tuoi file.
+Crea una nuova coppia di chiavi SSH sul tuo dispositivo locale, seguendo le istruzioni contenute nella prima parte della [guida alla creazione di una chiave SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 
-Il file contenente le tue chiavi SSH è il file:
+### Step 2: accedi all’istanza in modalità Rescue
 
-```sh
-/mnt/home/USER_NAME/.ssh/authorized_keys
+Segui gli step della [guida del Rescue mode](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) per riavviare l’istanza in Rescue mode, connetterti e montare le tue partizioni.
+
+Una volta utilizzato il comando `mount` (come descritto nella guida) e che la partizione di sistema è accessibile, è possibile utilizzare il seguente comando:
+
+```bash
+chroot path/to/partition/mountpoint
 ```
 
-Per aggiungere la nuova chiave SSH, è sufficiente modificare questo file e aggiungere la nuova chiave:
+Il percorso del file dipende dal punto di mount utilizzato. Se la partizione è stata montata su `/mnt`, è necessario immettere quanto segue:
 
-```sh
-sudo vim /mnt/home/USER_NAME/.ssh/authorized_keys
+```bash
+chroot /mnt/
+```
+
+A questo punto dovresti avere accesso completo in scrittura ai tuoi file in questa cartella.
+
+### Step 3: sostituisci la chiave
+
+Aprire il file "authorized_keys" con un editor di testo. Questo file memorizza le chiavi SSH ed è situato nella cartella `home` dell’utente con il quale ti connetti alla tua istanza.
+
+Esempio:
+
+```bash
+nano /mnt/home/USER_NAME/.ssh/authorized_keys
+```
+
+Sostituire `USER_NAME` con il nome utente effettivo.
+
+Copia e incolla nel file la nuova chiave pubblica (creata nel passaggio 1). Dovrebbe essere simile all'esempio seguente:
+
+```console
 ssh-rsa 1111111111122222222222333333333333444444444555555555556666666666
 777777777778888888888999999900000000000000000000000000== old@sshkey
 ssh-rsa AAAAAAAAABBBBBBBBBBBCCCCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDEEEEEEEEE
 EEFFFFFFFFFFFFFGGGGGGGGGGGGGhhhhhhhhhhhhhhhhhhhhhhhhhh== new@sshkey
 ```
 
-### Modifica la chiave SSH utente predefinita
+Per motivi di sicurezza, rimuovere la stringa di chiave "old" dal file. Salvare le modifiche e uscire dall'editor.
 
-Per modificare la chiave SSH del tuo utente predefinito, dovrai semplicemente collegarti alla cartella personale del tuo utente. Ad esempio, per l'utente admin, il file da trovare sarà nella cartella seguente:
+Riavvia l’istanza in modalità "normale" dallo [Spazio Cliente OVHcloud](/links/manager). Se necessario, consulta le istruzioni nella [guida sulla modalità rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode).
 
-```sh
-/home/admin/.ssh/authorized_keys
-```
-
-Per un'istanza con Ubuntu, l'utente di default viene pubblicato. Il file sarà quindi nella cartella seguente:
-
-```sh
-/home/ubuntu/.ssh/authorized_keys
-```
-
-### Modifica la password utente predefinita
-
-Puoi anche modificare la password dell'utente di default utilizzando la modalità Rescue e i comandi seguenti (nel caso in cui l'utente sia admin):
-
-La directory di root viene modificata per posizionarsi direttamente sul disco dell'istanza:
-
-> [!primary]
->
-Nell'esempio qui sotto, abbiamo utilizzato vdb1 come nome del disco del server e montato come punto di mount.
->
-
-```sh
-/home/admin# mount /dev/vdb1 /mnt/
-/home/admin# chroot /mnt/
-```
-
-Modifica la password amministratore:
-
-```sh
-passwd admin
-```
-
-Una volta effettuata la modifica e salvata, è sufficiente riavviare la tua istanza sul disco per poter connetterti alla tua istanza con la nuova chiave SSH.
+A questo punto, avrai accesso all’istanza con la tua nuova coppia di chiavi SSH.
 
 ## Per saperne di più
 
-[Devenire utente root e selezionare una password](/pages/public_cloud/compute/become_root_and_change_password)
-
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

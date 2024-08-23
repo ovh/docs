@@ -237,29 +237,29 @@ Pour finaliser la configuration initiale de votre VPS Windows, suivez les étape
 > 1. **Paramètres régionaux**
 >>
 >> Une fois la session KVM établie, vous pouvez terminer la configuration initiale de Windows en configurant votre **pays/région**, la **langue de Windows** préférée et votre **disposition de clavier**. Cliquez ensuite sur le bouton `Suivant`{.action} en bas à droite.<br><br>
->>![KVM](images/setup-03.png){.thumbnail}<br>
+>>![KVM](/pages/assets/screens/other/windows/windows_locale.png){.thumbnail}<br>
 >>
 > 2. **Mot de passe administrateur**
 >>
 >> Définissez un mot de passe pour votre compte Windows `Administrator` / `admin` et confirmez-le, puis cliquez sur `Terminer`{.action}.<br><br>
->>![KVM](images/setup-04.png){.thumbnail}<br>
+>>![KVM](/pages/assets/screens/other/windows/windows_admin.png){.thumbnail}<br>
 >>
 > 3. **Ecran de connexion**
 >>
 >> Windows appliquera vos paramètres, puis affichera l'écran de connexion. Cliquez sur le bouton `Send CtrlAltDel`{.action} en haut à droite pour vous connecter.<br><br>
->>![KVM](images/setup-05.png){.thumbnail}<br>
+>>![KVM](/pages/assets/screens/other/windows/windows_vnc.png){.thumbnail}<br>
 >>
 > 4. **Login administrateur**
 >>
 >> Entrez le mot de passe `Administrator` que vous avez créé à l'étape précédente et cliquez sur la `flèche`.<br><br>
->>![KVM](images/setup-06.png){.thumbnail}<br>
+>>![KVM](/pages/assets/screens/other/windows/windows_login.png){.thumbnail}<br>
 >>
 
 #### Étape 2 : se connecter au serveur avec RDP
 
 Sur votre équipement Windows local, vous pouvez utiliser l'application cliente « Connexion Bureau à distance » pour vous connecter au VPS.
 
-![Windows remote](images/windows-connect-03.png){.thumbnail}
+![Windows remote](/pages/assets/screens/other/windows/windows_rdp.png){.thumbnail}
 
 Renseignez l'adresse IPv4 de votre VPS, puis votre identifiant et votre mot de passe. Généralement, un message d'avertissement apparaît, vous demandant de confirmer la connexion en raison d'un certificat inconnu. Cliquez sur `Oui`{.action} pour vous connecter.
 
@@ -284,17 +284,17 @@ Pour les activer, suivez les étapes ci-dessous en parcourant les onglets :
 > 2. **Ouvrir l'utilitaire « Exécuter »**
 >>
 >> Ouvrez le menu Démarrer de Windows et cliquez sur `Exécuter`{.action}.<br><br>
->>![KVM](images/windowsboot1.png){.thumbnail}<br>
+>>![KVM](/pages/assets/screens/other/windows/windows_start_run.png){.thumbnail}<br>
 >>
 > 3. **Ouvrir « msconfig »**
 >>
 >> Entrez « msconfig » et cliquez sur `OK`{.action}.<br><br>
->>![KVM](images/windowsboot2.png){.thumbnail}<br>
+>>![KVM](/pages/assets/screens/other/windows/windows_msconfig.png){.thumbnail}<br>
 >>
 > 4. **Activer les logs**
 >>
 >> Dans la nouvelle fenêtre, activez l'option logs à côté de `Boot log`. Cliquez sur `OK`{.action}.<br><br>
->>![KVM](images/windowsboot3.png){.thumbnail}<br>
+>>![KVM](/pages/assets/screens/other/windows/windows_log.png){.thumbnail}<br>
 >>
 
 Au prochain démarrage de votre serveur, les logs seront enregistrés dans un fichier `.txt`. Le chemin d'accès au fichier est : `C:\Windows\ntbtlog.txt`.

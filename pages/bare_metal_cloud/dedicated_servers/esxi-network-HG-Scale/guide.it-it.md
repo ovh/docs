@@ -1,7 +1,7 @@
 ---
 title: Configurare la rete su ESXi sulle gamme High Grade & SCALE
 excerpt: Come configurare la rete su ESXi sulle gamme High Grade & SCALE
-updated: 2022-05-09
+updated: 2024-07-08
 ---
 
 > [!primary]
@@ -14,6 +14,8 @@ Sulle gamme High Grade & SCALE, il funzionamento degli Additional IP in modalitÃ
 
 > [!primary]
 >
+> Entro la fine del 2024 questa funzionalitÃ  sarÃ  consegnata per tutte le gamme High Grade, SCALE & ADVANCE.
+>
 > Ad oggi, la documentazione include solo la soluzione tramite la vRack.
 >
 
@@ -25,7 +27,7 @@ Sulle gamme High Grade & SCALE, il funzionamento degli Additional IP in modalitÃ
 * Aver selezionato un intervallo di indirizzi IP privati
 * Disporre di un [server dedicato compatibile con la vRack](https://www.ovhcloud.com/it/bare-metal/){.external}
 * Aver attivato un servizio [vRack](https://www.ovh.it/soluzioni/vrack/){.external}
-* Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+* Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 
 ## Procedura
 
@@ -44,7 +46,7 @@ Sulle gamme High Grade & SCALE, il funzionamento degli Additional IP in modalitÃ
 
 ### Additional IP via vRack
 
-Per prima cosa, aggiungi il tuo blocco pubblico di indirizzi IP alla vRack. Accedi alla sezione `Bare Metal Cloud`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e apri il menu `vRack`{.action}.
+Per prima cosa, aggiungi il tuo blocco pubblico di indirizzi IP alla vRack. Accedi alla sezione `Bare Metal Cloud`{.action} del tuo [Spazio Cliente OVHcloud](/links/manager){.external} e apri il menu `vRack`{.action}.
 
 Seleziona la tua vRack nella lista per visualizzare la lista dei servizi ammissibili. Clicca sul blocco pubblico di indirizzi IP che vuoi aggiungere alla vRack e poi clicca su `Aggiungi`{.action}.
 
@@ -61,7 +63,7 @@ Un primo vSwitch esiste ma comporta solo un'interfaccia `vmnic2`.
 
 > [!primary]
 >
-> Verifica che la tua configurazione sia analoga. Le informazioni relative ai MAC e alle interfacce pubbliche o private sono disponibili nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) o tramite l'API OVHcloud.
+> Verifica che la tua configurazione sia analoga. Le informazioni relative ai MAC e alle interfacce pubbliche o private sono disponibili nello [Spazio Cliente OVHcloud](/links/manager) o tramite l'API OVHcloud.
 >
 
 #### Spiegazioni

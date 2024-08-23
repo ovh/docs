@@ -1,6 +1,6 @@
 ---
-title: "Tutoriel - Installer manuellement Grav"
-excerpt: "Découvrez comment installer le CMS Grav sur un hébergement web OVHcloud"
+title: "Tutoriel - Installer Grav sur son hébergement web OVHcloud"
+excerpt: "Découvrez comment installer manuellement le CMS Grav sur un hébergement web OVHcloud"
 updated: 2024-03-28
 ---
 
@@ -37,7 +37,7 @@ Saisissez votre nom de domaine dans la barre de recherche de votre navigateur In
 
 Si les fichiers source de Grav ont été placés correctement dans votre dossier racine, la page `your-domain/admin` s'affiche :
 
-![Grav installation](images/first_page_config.png){.thumbnail}
+![Grav installation](/pages/assets/screens/other/cms/grav/first_page_config.png){.thumbnail}
 
 Remplissez le formulaire pour créer un utilisateur admin, puis cliquez sur `Create User`{.action} pour confirmer.
 
@@ -55,7 +55,7 @@ Dans le menu principal de Grav, cliquez sur `Configuration`{.action}, puis dans 
 
 Pour améliorer les performances de votre site web, activez le cache. Cliquez sur l'onglet `System`{.action} puis sur `Caching`{.action}. Identifiez la ligne `Caching`{.action} et cochez `Yes`{.action}.
 
-![Grav installation](images/activate_cache.png){.thumbnail}
+![Grav installation](/pages/assets/screens/other/cms/grav/activate_cache.png){.thumbnail}
 
 ##### Configuration des médias
 
@@ -69,7 +69,7 @@ Dans le menu principal de Grav, cliquez sur `Pages`{.action} pour voir la liste 
 
 Pour voir et modifier le contenu d'une page, cliquez sur le nom de la page dans la liste. Par exemple, cliquez sur `Home`{.action} pour modifier le titre de la page principale de votre site web ainsi que son contenu.
 
-![Grav installation](images/list_pages.png){.thumbnail}
+![Grav installation](/pages/assets/screens/other/cms/grav/list_pages.png){.thumbnail}
 
 ##### Thèmes
 
@@ -77,7 +77,7 @@ Dans le menu principal de Grav, cliquez sur `Themes`{.action} pour changer l'app
 
 Pour modifier le thème actif, cliquez sur le thème possédant l'étiquette `Active Theme`.
 
-![Grav installation](images/theme_active.png){.thumbnail}
+![Grav installation](/pages/assets/screens/other/cms/grav/theme_active.png){.thumbnail}
 
 Sur la page qui s'affiche, personnalisez votre thème actif.
 
@@ -89,7 +89,7 @@ Sauvegarder votre site web permet de le restaurer à un état antérieur en cas 
 
 Dans le menu principal de Grav, cliquez sur `Tools`{.action}, sélectionnez `Backup Now`{.action} en haut à droite de l'écran qui s'affiche, puis `Download Backup`{.action} pour télécharger la sauvegarde de votre site web sur votre ordinateur. En actualisant la page `Backup`, votre sauvegarde s'affiche dans la liste `Backup History`{.action}.
 
-![Grav installation](images/backup_history.png){.thumbnail}
+![Grav installation](/pages/assets/screens/other/cms/grav/backup_history.png){.thumbnail}
 
 ##### Mise à jour
 
@@ -109,14 +109,14 @@ Vous venez d'installer manuellement le CMS Grav sur votre hébergement web OVHcl
 
 [Tutoriel - Installer manuellement PrestaShop](/pages/web_cloud/web_hosting/cms_manual_installation_prestashop)
 
-[Tutoriel - Installer manuellement Pico](/pages/web_cloud/web_hosting/cms_manual_installation_pico)
+[Tutoriel - Installer Pico sur son hébergement web OVHcloud](/pages/web_cloud/web_hosting/cms_manual_installation_pico)
 
-[Tutoriel - Installer manuellement Typo3](/pages/web_cloud/web_hosting/cms_manual_installation_typo3)
+[Tutoriel - Installer Typo3 sur son hébergement web OVHcloud](/pages/web_cloud/web_hosting/cms_manual_installation_typo3)
 
-[Tutoriel - Installer manuellement SPIP](/pages/web_cloud/web_hosting/cms_manual_installation_spip)
+[Tutoriel - Installer Spip sur son hébergement web OVHcloud](/pages/web_cloud/web_hosting/cms_manual_installation_spip)
 
 [Tutoriel - Installer manuellement un CMS sur mon hébergement](/pages/web_cloud/web_hosting/cms_manual_installation)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

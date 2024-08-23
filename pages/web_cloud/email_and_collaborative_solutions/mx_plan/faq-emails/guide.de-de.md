@@ -1,6 +1,6 @@
 ---
 title: FAQ OVHcloud E-Mails
-updated: 2024-06-13
+updated: 2024-06-27
 ---
 
 ## E-Mails FAQ
@@ -59,6 +59,14 @@ Das **Passwort** muss folgende Bedingungen erfüllen:
 > [!warning]
 > Aus Sicherheitsgründen empfehlen wir Ihnen, nicht zweimal das gleiche Passwort zu verwenden, sondern ein Passwort auszuwählen, das keinen Bezug zu Ihren persönlichen Daten hat (vermeiden Sie beispielsweise Ihren Namen, Vornamen und Ihr Geburtsdatum) und dieses regelmäßig zu erneuern.
 
+### Wie setze ich ein vergessenes Passwort zurück?
+
+Aus Gründen der Sicherheit und der Vertraulichkeit ist es nicht möglich, ein Passwort **wiederherzustellen**. Wie in der [Anleitung zum Ändern eines E-Mail-Account-Passworts](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)“ beschrieben, muss Ihr Passwort zurückgesetzt werden, wenn Sie es nicht mehr kennen.
+
+> [!primary]
+>
+> Wenn Sie ein Kennwort speichern möchten, sollten Sie einen Kennwort-Manager verwenden, z. B. **Keepass**.
+
 ### Wie kann ich die Anzahl der empfangenen Spam-Mails reduzieren?
 
 Um den Empfang von Spam-Mails einzuschränken, können Sie Eingangsregeln für Ihre E-Mails einrichten (bei MX Plan als „Filter“ bezeichnet). Ihr Ziel ist es, E-Mails bei Empfang in den Spam-Ordner zu verschieben oder direkt zu löschen.
@@ -86,10 +94,14 @@ Sie möchten zu einem anderen [E-Mail-Angebot](/links/web/emails) wechseln, um m
 
 Das Office 365 Pro Plus Angebot beinhaltet keine Skype-Lizenz. Nur die Skype for Business Software ist inklusive.
 
+### Wie übertrage ich meine E-Mails, Websites, Datenbanken und Domains ohne Dienstunterbrechung auf die Server von OVHcloud?
+
+In der Anleitung "[Website und zugehörige Dienste zu OVHcloud migrieren](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)" finden Sie alle notwendigen Schritte.
+
 ## Weiterführende Informationen <a name="go-further"></a>
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
-Treten Sie unserer [User Community](/https://community.ovh.com/en/) bei.
+Treten Sie unserer [User Community](/links/community) bei.

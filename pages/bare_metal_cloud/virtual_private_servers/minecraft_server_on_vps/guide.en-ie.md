@@ -34,7 +34,7 @@ You can rent a pre-built Minecraft server or you can set it up yourself on a [VP
 ### Step 1: Prepare the server
 
 The first step is to set up your VPS for a Minecraft installation.
-<br>It is recommended to order a new VPS or reinstall an existing one from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), using the latest available release of Ubuntu or Debian. Please refer to our [Getting started guide](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps#reinstallvps) if necessary.
+<br>It is recommended to order a new VPS or reinstall an existing one from your [OVHcloud Control Panel](/links/manager), using the latest available release of Ubuntu or Debian. Please refer to our [Getting started guide](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps#reinstallvps) if necessary.
 
 Once the OS is installed, connect to your VPS with SSH as described in the [Getting started guide](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps). 
 
@@ -170,4 +170,4 @@ Please note that this installation guide should also work on an OVHcloud [dedica
 
 For add-ons, mods and to personalise your Minecraft experience, please consult this official documentation: <https://help.mojang.com/>.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Getting started with WordPress"
 excerpt: "Find out how to create a website with the WordPress CMS"
-updated: 2023-02-17
+updated: 2024-07-15
 ---
 
 ## Objective
@@ -40,7 +40,7 @@ Retrieve these items before continuing.
 
 Go to the admin interface access link sent by email when you installed the CMS. By default, the URL ends with `wp-admin`. If you have not logged in to your admin interface, **WordPress** will automatically redirect you to a URL ending with `wp-login`:
 
-![WordPress - Admin login](images/admin-login.png){.thumbnail}
+![WordPress - Admin login](/pages/assets/screens/other/cms/wordpress/admin-login.png){.thumbnail}
 
 > [!primary]
 > 
@@ -49,7 +49,7 @@ Go to the admin interface access link sent by email when you installed the CMS. 
 
 Enter the login (Administrator's username) that was provided to you by email and the WordPress password indicated in the same email. You will then land on your dashboard:
 
-![WordPress - Dashboard](images/dashboard.png){.thumbnail}
+![WordPress - Dashboard](/pages/assets/screens/other/cms/wordpress/dashboard.png){.thumbnail}
 
 ### Change the theme of your WordPress website
 
@@ -57,11 +57,11 @@ Enter the login (Administrator's username) that was provided to you by email and
 
 To change your theme, go to the left-hand menu in your Dashboard, click on `Appearance`{.action} then `Themes`{.action}:
 
-![WordPress - Appearance/Themes](images/dashboard-themes.png){.thumbnail}
+![WordPress - Appearance/Themes](/pages/assets/screens/other/cms/wordpress/dashboard-themes.png){.thumbnail}
 
 Choose a theme from the list and click on `Activate`{.action}:
 
-![WordPress - Appearance/Themes](images/themes.png){.thumbnail}
+![WordPress - Appearance/Themes](/pages/assets/screens/other/cms/wordpress/themes.png){.thumbnail}
 
 You can view the result by opening your website in a browser via your domain name.
 
@@ -71,19 +71,19 @@ WordPress allows you to easily create content without having any web development
 
 To create an article, go to the `Posts`{.action} section on the left-hand menu, then click on `Add new`{.action}:
 
-![WordPress - Posts/Add New](images/dashboard-add-new-post.png){.thumbnail}
+![WordPress - Posts/Add New](/pages/assets/screens/other/cms/wordpress/dashboard-add-new-post.png){.thumbnail}
 
 Since version 5, **WordPress** offers an interface to simplify the writing and formatting of articles: **Gutenberg**. This is a WYSIWYG editor ("*what you see is what you get*"). It allows you to compose your page directly by adding items such as titles, paragraphs, lists, images, etc.:
 
-![WordPress - Gutenberg](images/post-editor.png){.thumbnail}
+![WordPress - Gutenberg](/pages/assets/screens/other/cms/wordpress/post-editor.png){.thumbnail}
 
 Click `Add title`{.action} to add a title to your page:
 
-![WordPress - Gutenberg, add title](images/post-editor-2.png){.thumbnail}
+![WordPress - Gutenberg, add title](/pages/assets/screens/other/cms/wordpress/post-editor-2.png){.thumbnail}
 
 To add content, click the `+`{.action} symbol and choose what you want to insert:
 
-![WordPress - Gutenberg, add block](images/post-editor-3.png){.thumbnail}
+![WordPress - Gutenberg, add block](/pages/assets/screens/other/cms/wordpress/post-editor-3.png){.thumbnail}
 
 On the right side of your page, you can find three links to do the following:
 
@@ -93,7 +93,7 @@ On the right side of your page, you can find three links to do the following:
 
 Click on `Preview`{.action}, then `Preview in New Tab`{.action}. Choose the type of device to render on (PC, tablet or smartphone).
 
-![WordPress - Preview](images/post-view.png){.thumbnail}
+![WordPress - Preview](/pages/assets/screens/other/cms/wordpress/post-view.png){.thumbnail}
 
 To return to the **WordPress** administration interface, click on the icon in the top left-hand corner.
 
@@ -101,7 +101,7 @@ To return to the **WordPress** administration interface, click on the icon in th
 
 **WordPress** allows you to define categories and associate your articles with one or more of them. To manage categories for your website, go to the `Posts`{.action} section, then to the `Categories`{.action} section:
 
-![WordPress - Categories](images/categories.png){.thumbnail}
+![WordPress - Categories](/pages/assets/screens/other/cms/wordpress/categories.png){.thumbnail}
 
 Now fill in the form to add a new category:
 
@@ -110,25 +110,25 @@ Now fill in the form to add a new category:
 - **Parent category**: Allows you to prioritise your categories (the category you create can be a subcategory of an existing category).
 - **Description**: Not visible by default, however, the description of your category can be made visible by certain themes.
 
-![WordPress - Categories filled](images/categories-2.png){.thumbnail}
+![WordPress - Categories filled](/pages/assets/screens/other/cms/wordpress/categories-2.png){.thumbnail}
 
 Once you have entered this information, click the `Add new category`{.action} button:
 
-![WordPress - Categories added](images/categories-3.png){.thumbnail}
+![WordPress - Categories added](/pages/assets/screens/other/cms/wordpress/categories-3.png){.thumbnail}
 
 You can manage the hierarchy of your categories. A new category can be linked to an existing category:
 
-![WordPress - Sub-category added](images/categories-4.png){.thumbnail}
+![WordPress - Sub-category added](/pages/assets/screens/other/cms/wordpress/categories-4.png){.thumbnail}
 
 ### Assign a category to an item
 
 To assign an item to one or more categories, click `Posts`{.action}. You will have the list containing all the articles and their statuses. Hover over the title of the item you want to classify and click `Quick Edit`{.action}:
 
-![WordPress - Categorise a post](images/posts-lists.png){.thumbnail}
+![WordPress - Categorise a post](/pages/assets/screens/other/cms/wordpress/posts-lists.png){.thumbnail}
 
 You can then edit the categories by checking or unchecking the items listed in the `Categories`{.action} column:
 
-![WordPress - Set new categories to an existing post](images/posts.png){.thumbnail}
+![WordPress - Set new categories to an existing post](/pages/assets/screens/other/cms/wordpress/posts.png){.thumbnail}
 
 > [!warning]
 >
@@ -141,7 +141,7 @@ Pages are to be distinguished from articles. They are mainly used to publish con
 
 Go to the `Pages`{.action} page:
 
-![WordPress - Go to pages](images/pages.png){.thumbnail}
+![WordPress - Go to pages](/pages/assets/screens/other/cms/wordpress/pages.png){.thumbnail}
 
 > [!primary]
 >
@@ -150,15 +150,15 @@ Go to the `Pages`{.action} page:
 
 Click `Add new`{.action}. You will see the Gutenberg editor:
 
-![WordPress - Pages, Gutenberg page builder](images/pages-editor.png){.thumbnail}
+![WordPress - Pages, Gutenberg page builder](/pages/assets/screens/other/cms/wordpress/pages-editor.png){.thumbnail}
 
 Create and publish your page content:
 
-![WordPress - Pages, content](images/post-editor-4.png){.thumbnail}
+![WordPress - Pages, content](/pages/assets/screens/other/cms/wordpress/post-editor-4.png){.thumbnail}
 
 If you go back to your website's homepage, you will see a link to your new page:
 
-![WordPress - Home page with new page link](images/main-page-view.png){.thumbnail}
+![WordPress - Home page with new page link](/pages/assets/screens/other/cms/wordpress/main-page-view.png){.thumbnail}
 
 ### Improve permalinks
 
@@ -166,11 +166,11 @@ By default, links on your **WordPress** pages are written with a syntax of the t
 
 On the dashboard home page, go to `Settings`{.action} then `Permalinks`{.action}:
 
-![WordPress - Settings/Permalinks](images/dashboard-users-permalinks.png){.thumbnail}
+![WordPress - Settings/Permalinks](/pages/assets/screens/other/cms/wordpress/dashboard-users-permalinks.png){.thumbnail}
 
 You can choose between several types of permalinks. Select the “Publication title”, then confirm at the bottom of the page:
 
-![WordPress - Settings/Permalinks, select post name pattern](images/permalink-settings.png){.thumbnail}
+![WordPress - Settings/Permalinks, select post name pattern](/pages/assets/screens/other/cms/wordpress/permalink-settings.png){.thumbnail}
 
 Your links will then be built from the slug you entered when you edited your articles and pages.
 
@@ -184,9 +184,10 @@ Your links will then be built from the slug you entered when you edited your art
     - [Elegant Themes](https://www.elegantthemes.com/){.external}, editor of the theme builder Divi
     - [Elementor](https://elementor.com/){.external}, another theme editor
 - Find more resources on the official [WordPress] website (https://wordpress.org/){.external}.
+- [Use SFTP to transfer files or pages to your WordPress](https://developer.wordpress.com/docs/developer-tools/sftp/){.external}.
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

@@ -10,7 +10,7 @@ updated: 2024-02-20
 
 ## Wprowadzenie
 
-Możesz zarządzać instancjami Public Cloud w [Panelu client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+Możesz zarządzać instancjami Public Cloud w [Panelu client](/links/manager).
 
 **Niniejszy przewodnik opisuje działania dostępne w Panelu klienta OVHcloud dla instancji Public Cloud.**
 
@@ -18,11 +18,11 @@ Możesz zarządzać instancjami Public Cloud w [Panelu client](https://www.ovh.c
 
 - Projekt [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na Twoim koncie OVHcloud
 - Instancja [Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) w Twoim projekcie
-- Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dostęp do [Panelu client OVHcloud](/links/manager)
 
 ## W praktyce
 
-Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i otwórz swój projekt `Public Cloud`{.action}. 
+Zaloguj się do [Panelu client OVHcloud](/links/manager) i otwórz swój projekt `Public Cloud`{.action}. 
 
 ### Korzystanie z interfejsu zarządzania instancjami
 
@@ -145,6 +145,6 @@ Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem "[Tworzeni
 
 [Prezentacja programu "Horyzont"](/pages/public_cloud/compute/introducing_horizon)
 
-Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
+Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](/links/professional-services), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

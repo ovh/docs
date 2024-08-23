@@ -43,7 +43,7 @@ Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}, sezione `Web C
 
 Visualizzi una tabella con tutti i record DNS del dominio selezionato.
 
-![dnszone](images/tab.png){.thumbnail}
+![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/tab-mydomain-anycast.png){.thumbnail}
 
 Ogni record DNS può essere modificato cliccando sul pulsante `...`{.action} a destra della riga della tabella in questione e poi su `Modifica il record`{.action}.
 
@@ -53,7 +53,7 @@ Segui i passaggi in sequenza nelle seguenti schede:
 > **Step 1**
 >> **Record A**<br><br>
 >> Per identificare i record "A" esistenti, fare clic sul menu dei filtri nella parte superiore della tabella dei record DNS e selezionare `A`.<br>
->> ![dnszone](images/filter-a.png){.thumbnail}<br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-a.png){.thumbnail}<br>
 >> - Clicca sul pulsante `...`{.action} a destra della riga della tabella che corrisponde al tuo dominio senza sottodominio (esempio: `mydomain.ovh.`) e poi clicca su `Modifica il record`{.action}.<br>
 >> - Se è presente un record per il sottodominio "www." (esempio: `www.mydomain.ovh.`), è necessario eliminarlo affinché non entri in conflitto con il record CNAME che inserirai allo Step 4. Clicca sul pulsante `...`{.action} a destra della riga della tabella corrispondente al tuo dominio con il sottodominio "www." e poi clicca su `Elimina il record`{.action}.<br>
 >> - Se non disponi di un record "A", clicca sul pulsante `Aggiungi un record`{.action} in alto a destra e seleziona il "Campo di puntamento" `A`{.action}<br><br>
@@ -63,23 +63,23 @@ Segui i passaggi in sequenza nelle seguenti schede:
 > **Step 2**
 >> **Record AAAA**<br><br>
 >>  Per identificare i record AAAA esistenti, fare clic sul menu dei filtri nella parte superiore della tabella dei record DNS e selezionare `AAAA`.<br>
->> ![dnszone](images/filter-aaaa.png){.thumbnail}<br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png){.thumbnail}<br>
 >> - Clicca sul pulsante `...`{.action} a destra della riga della tabella che corrisponde al tuo dominio, senza sottodominio (esempio: `mydomain.ovh.`), poi clicca su `Elimina il record`{.action}.<br>
 >> - Se è presente un record per il sottodominio "www" (esempio: `wwww.mydomain.ovh.`), eliminalo in modo che non entri in conflitto con il record CNAME che inserirai allo Step 4. Clicca sul pulsante `...`{.action} a destra della riga della tabella corrispondente al tuo dominio con il sottodominio "www" e poi clicca su `Elimina il record`{.action}.<br>
 >> - Se non disponi di un record "AAAA" esistente, passa allo Step 3.
 > **Step 3**
 >> **Record TXT**<br><br>
 >> Per identificare i record TXT esistenti, fare clic sul menu dei filtri nella parte superiore della tabella dei record DNS e selezionare `TXT`.<br>
->> ![dnszone](images/filter-txt.png){.thumbnail}<br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-txt.png){.thumbnail}<br>
 >> - Se sono presenti record "TXT" solo per il dominio (esempio: `mydomain.ovh.`) e per il suo sottodominio in "www" (esempio: `wwww.mydomain.ovh.`), è necessario eliminarli affinché non entrino in conflitto con il record CNAME che inserirai allo Step 4. Clicca sul pulsante `...`{.action} a destra della riga della tabella corrispondente al tuo dominio con il sottodominio "www" e poi clicca su `Elimina il record`{.action}.<br>
 > **Step 4**
 >> **Record CNAME**<br><br>
 >> Per identificare i record "CNAME" esistenti, clicca sul menu dei filtri in alto nella tabella dei record DNS e seleziona `CNAME`.<br>
->> ![dnszone](images/filter-cname.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-cname.png){.thumbnail}
 >> - Clicca sul pulsante `...`{.action} a destra della riga della tabella corrispondente al tuo sottodominio in "www" (esempio: `mydomain.ovh.`) e poi clicca su `Modifica il record`{.action}.<br>
 >> - Se non disponi di un record "CNAME", clicca sul pulsante `Aggiungi un record`{.action} in alto a destra e seleziona il "Campo di puntamento" `CNAME`{.action}.
 >> Inserisci nel campo **Sottodominio** il valore `www` e inserisci `verify.squarespace.com.` nel campo **Destinazione**.<br>
->> ![cname-entry](images/add-an-entry-to-the-dns-zone-cname-squarespace.png){.thumbnail}
+>> ![cname-entry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-to-the-dns-zone-cname-squarespace.png){.thumbnail}
 >> Clicca su `Seguente`{.action} e conferma la registrazione "CNAME".
 >> Aggiungere il secondo record CNAME digitando `ext-cust.squarespace.com.` nel campo **Destinazione**.<br>
 
@@ -108,7 +108,7 @@ Se utilizzi un servizio di posta elettronica OVHcloud o intendi sottoscrivere un
 
 ## Per saperne di più <a name="go-further"></a>
 
-[Modificare i server DNS di un dominio OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
+[Modificare i server DNS di un dominio OVHcloud](/pages/web_cloud/domains/dns_server_edit)
 
 [Creare una zona DNS OVHcloud per un dominio](/pages/web_cloud/domains/dns_zone_create)
 
@@ -120,4 +120,4 @@ Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [p
  
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
  
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

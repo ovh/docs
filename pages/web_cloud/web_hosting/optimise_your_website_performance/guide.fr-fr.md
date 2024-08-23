@@ -12,7 +12,7 @@ Il vous permettra d’acquérir des connaissances fondamentales au sujet des fac
 **Découvrez comment améliorer le rendement de votre site web.**
 
 > [!warning]
-> Ce cas d’application vous montrera comment utiliser une ou plusieurs solutions OVHcloud avec des outils externes. Il décrit les mesures à appliquer dans un contexte précis. Veuillez noter que ces mesures doivent être adaptées à votre cas particulier. Si vous éprouvez des difficultés à appliquer ces mesures, veuillez contacter un prestataire de services spécialisés et/ou posez la question à notre communauté sur <https://community.ovh.com/>. OVHcloud ne peut pas vous fournir d’assistance technique à ce sujet.
+> Ce cas d’application vous montrera comment utiliser une ou plusieurs solutions OVHcloud avec des outils externes. Il décrit les mesures à appliquer dans un contexte précis. Veuillez noter que ces mesures doivent être adaptées à votre cas particulier. Si vous éprouvez des difficultés à appliquer ces mesures, veuillez contacter un prestataire de services spécialisés et/ou posez la question à notre [communauté d'utilisateurs](/links/community). OVHcloud ne peut pas vous fournir d’assistance technique à ce sujet.
 
 ## Prérequis
 
@@ -101,7 +101,7 @@ Comment accéder aux statistiques et logs :
 2. Sur la page qui s'affiche, cliquez sur l’onglet `Statistiques et logs`{.action}.
 3. Cliquez ensuite sur le bouton `Voir les statistiques`{.action} affiché pour accéder aux statistiques de visite du site web ou sur `Voir les logs`{.action} pour consulter les logs disponibles pour votre hébergement web.
 
-![logs](images/tab.png){.thumbnail}
+![logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
 
 Comment accéder aux graphiques :
 
@@ -109,7 +109,7 @@ Comment accéder aux graphiques :
 2. Sur la page qui s'affiche, cliquez sur l’onglet `Statistiques et logs`{.action}. Défilez jusqu’au bas de la page où se trouve le graphique lié à l’utilisation de votre hébergement.
 3. Sélectionnez le **type** d’information ainsi que la **période** des données affichées.
 
-![graphs](images/infrastructure-statistics-graph.png){.thumbnail}
+![graphs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/infrastructure-statistics-graph.png){.thumbnail}
 
 Quels sont les différents types de renseignements qui peuvent être affichés ?
 
@@ -247,4 +247,4 @@ Pour des prestations spécialisées (référencement, développement, etc), cont
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -1,6 +1,6 @@
 ---
 title: Tutorial - Verwendung von Zonemaster
-updated: 2024-03-08
+updated: 2024-06-18
 ---
 
 > [!primary]
@@ -19,7 +19,7 @@ updated: 2024-03-08
 
 > [!primary]
 >
-> Um mehr über DNS zu erfahren, lesen Sie die Einführung unserer Anleitung zur [Konfiguration einer DNS-Zone](/pages/web_cloud/domains/dns_zone_edit).
+> Weitere Informationen zum Begriff DNS finden Sie in unserer Anleitung „[Alle Informationen zu DNS-Zonen](/pages/web_cloud/domains/dns_zone_general_information)“.
 
 ## Voraussetzungen
 
@@ -33,7 +33,7 @@ Mit dem Zonemaster Tool können Sie entweder eine vorhandene DNS-Konfiguration e
 
 Um die aktuelle Konfiguration einer Domain zu überprüfen, geben Sie Ihren Domainnamen ein und klicken Sie dann auf `Run`{.action}.
 
-![Screenshot aus dem Zonemaster-Formular. Die Domain "domain.tld" wurde eingegeben und ist bereit, getestet zu werden.](images/run-domain-test.png){.thumbnail}
+![Screenshot aus dem Zonemaster-Formular. Die Domain "domain.tld" wurde eingegeben und ist bereit, getestet zu werden.](/pages/assets/screens/other/web-tools/zonemaster/run-domain-test.png){.thumbnail}
 
 Um eine DNS-Konfiguration zu überprüfen, die für die betreffende Domain erstellt, aber noch nicht angewandt wurde, aktivieren Sie das Feld `Options`{.action} und geben Sie folgende Angaben ein:
 
@@ -47,12 +47,12 @@ Sie können auch die Überprüfung eines bestimmten IP-Protokolls erzwingen, ind
 > Sie haben eine DNS-Zone für diese Domain auf den DNS-Servern "dns1.test.tld"und "dns2.test.tld" konfiguriert.<br>
 > Bevor Sie die DNS-Server ändern, können Sie eine erweiterte Suche mithilfe des Feldes `Options`{.action} durchführen, indem Sie "dns1.test.tld"und "dns2.test.tld" jeweils als DNS-Server in `Nameservers` eingeben.<br>
 > Zonemaster führt einen Test durch und simuliert dabei die Nutzung der Server "dns1.test.tld" und "dns2.test.tld" mit "domain.tld".<br>
-> ![Screenshot der erweiterten Optionen des Zonemaster-Formulars. Die beiden Namensserver "dns1.test.tld" und "dns2.test.tld" wurden im Abschnitt "Namensserver" des Formulars eingetragen.](images/run-domain-test-nameservers-option.png){.thumbnail}
+> ![Screenshot der erweiterten Optionen des Zonemaster-Formulars. Die beiden Namensserver "dns1.test.tld" und "dns2.test.tld" wurden im Abschnitt "Namensserver" des Formulars eingetragen.](/pages/assets/screens/other/web-tools/zonemaster/run-domain-test-nameservers-option.png){.thumbnail}
 
 > [!primary]
 >
 > Wenn Sie eine Domain angeben und auf die Buttons `Fetch NS from parent zone`{.action} und `Fetch DS from parent zone`{.action} klicken, erscheinen die der Domain zugewiesenen DNS-Server sowie die Informationen zum DS-Eintrag (DNSSEC), wenn dieser konfiguriert ist.
-> ![Screenshot der erweiterten Optionen des Zonemaster-Formulars. Die Schaltfläche „Fetch NS from parent zone“ ist hervorgehoben und die Nameserver der Domain „domain.tld“ sind im Abschnitt „Nameservers“ des Formulars vorab ausgefüllt.](images/fetch-ns-from-parent-zone.png){.thumbnail}
+> ![Screenshot der erweiterten Optionen des Zonemaster-Formulars. Die Schaltfläche „Fetch NS from parent zone“ ist hervorgehoben und die Nameserver der Domain „domain.tld“ sind im Abschnitt „Nameservers“ des Formulars vorab ausgefüllt.](/pages/assets/screens/other/web-tools/zonemaster/fetch-ns-from-parent-zone.png){.thumbnail}
 
 ### Ergebnis
 
@@ -65,7 +65,7 @@ Sobald das Formular validiert wurde, werden die Ergebnisse nach Testgruppen ange
 
 Für jeden Test können weitere Einzelheiten ermittelt werden, zum Beispiel zum Verständnis des Fehlers bei einer Fehlfunktion, oder nur zur Information.
 
-![Screenshot der Ergebnisseite von Zonemaster für die Domain „domain.tld“. Der Abschnitt „Address“ wird erweitert.](images/domain-analysis.png){.thumbnail}
+![Screenshot der Ergebnisseite von Zonemaster für die Domain „domain.tld“. Der Abschnitt „Address“ wird erweitert.](/pages/assets/screens/other/web-tools/zonemaster/domain-analysis.png){.thumbnail}
 
 ### Nützliche Informationen
 
@@ -83,4 +83,4 @@ Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

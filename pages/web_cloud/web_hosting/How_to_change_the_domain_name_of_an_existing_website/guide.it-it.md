@@ -73,7 +73,7 @@ Per superare lo Step 1 sono necessarie diverse condizioni:
 
 Se tutte le operazioni sono state eseguite correttamente, le dichiarazioni multisito dei tuoi domini devono essere rigorosamente identiche **tranne nel caso in cui tu utilizzi un certificato SSL a pagamento di tipo *Sectigo DV*, *Sectigo EV* o *custom***.
 
-![multisito](images/all-domain-same-config-enable.png){.thumbnail}
+![multisito](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
 
 > [!primary]
 >
@@ -151,4 +151,4 @@ Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [p
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

@@ -31,7 +31,7 @@ Aby uzyskać dostęp do frameworków Twojego hostingu Cloud Web, zaloguj się do
 
 Wyświetli się tabela z listą frameworków obecnie dodanych do Twojego hostingu Cloud Web. Framework jest automatycznie tworzony podczas instalacji hostingu.
 
-![cloud web hosting ssd](images/tab-phpfpm7-4.png){.thumbnail}
+![cloud web hosting ssd](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/tab-phpfpm7-4.png){.thumbnail}
 
 ### Etap 2: zarządzanie frameworkami
 
@@ -82,7 +82,7 @@ Po uzupełnieniu informacji, kliknij przycisk `Zatwierdź`{.action}. Upewnij si�
 
 Po uzupełnieniu informacji, kliknij przycisk `Zatwierdź`{.action}. Upewnij się teraz, czy framework jest używany przez odpowiednie strony podpięte w opcji MultiSite. W tym celu przejdź do etapu 3: [Powiązanie frameworka ze stroną podpiętą w opcji MultiSite](./#etap-3-powiazanie-frameworka-ze-strona-podpieta-w-opcji-multisite){.external}.
 
-![cloud web hosting ssd](images/modify-a-runtime-software-application-nodejs8.png){.thumbnail}
+![cloud web hosting ssd](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/modify-a-runtime-software-application-nodejs8.png){.thumbnail}
 
 ##### **Ruby**
 
@@ -96,7 +96,7 @@ Po uzupełnieniu informacji, kliknij przycisk `Zatwierdź`{.action}. Upewnij si�
 
 Po uzupełnieniu informacji, kliknij przycisk `Zatwierdź`{.action}. Upewnij się teraz, czy framework jest używany przez odpowiednie strony podpięte w opcji MultiSite. W tym celu przejdź do etapu 3: [Powiązanie frameworka ze stroną podpiętą w opcji MultiSite](./#etap-3-powiazanie-frameworka-ze-strona-podpieta-w-opcji-multisite){.external}.
 
-![cloud web hosting ssd](images/modify-a-runtime-software-application-ruby2-6.png){.thumbnail}
+![cloud web hosting ssd](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/modify-a-runtime-software-application-ruby2-6.png){.thumbnail}
 
 ##### **Python**
 
@@ -110,7 +110,7 @@ Po uzupełnieniu informacji, kliknij przycisk `Zatwierdź`{.action}. Upewnij si�
 
 Po uzupełnieniu informacji, kliknij przycisk `Zatwierdź`{.action}. Upewnij się teraz, czy framework jest używany przez odpowiednie strony podpięte w opcji MultiSite. W tym celu przejdź do etapu 3: [Powiązanie frameworka ze stroną podpiętą w opcji MultiSite](./#etap-3-powiazanie-frameworka-ze-strona-podpieta-w-opcji-multisite){.external}.
 
-![cloud web hosting ssd](images/modify-a-runtime-software-application-python3.png){.thumbnail}
+![cloud web hosting ssd](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/modify-a-runtime-software-application-python3.png){.thumbnail}
 
 ### Etap 3: powiązanie frameworka ze stroną podpiętą w opcji MultiSite
 
@@ -125,7 +125,7 @@ Po wybraniu jednego lub kilku frameworków niezbędnych do Twojego projektu, upe
 
 Sprawdź w tabeli, w kolumnie `Framework`, czy dla poszczególnych domen wyświetla się prawidłowy framework. Wyświetlane nazwy odpowiadają „nazwie spersonalizowanej” przez Ciebie .
 
-![cloud web hosting ssd](images/runtime-software-applications.png){.thumbnail}
+![cloud web hosting ssd](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/runtime-software-applications.png){.thumbnail}
 
 Jeśli chcesz zmienić framework powiązany ze stroną podpiętą w opcji MultiSite, kliknij koło zębate po prawej stronie odpowiedniej domeny, po czym kliknij `Zmień`{.action}.
 
@@ -133,7 +133,7 @@ W oknie, które się wyświetla wybierz odpowiedni framework w polu `Framework`.
 
 Po dokonaniu wyboru wykonaj poszczególne kroki aż do zakończenia operacji.
 
-![cloud web hosting ssd](images/modify-a-domain-step-1.png){.thumbnail}
+![cloud web hosting ssd](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/multisite/modify-a-domain-step-1.png){.thumbnail}
 
 ## Sprawdź również
 
@@ -141,4 +141,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 
+Dołącz do [grona naszych użytkowników](/links/community). 

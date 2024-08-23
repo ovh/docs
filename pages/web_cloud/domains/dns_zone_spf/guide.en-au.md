@@ -1,6 +1,6 @@
 ---
-title: Adding an SPF record to the configuration of your domain name
-excerpt: Find out how to configure an SPF record for your OVHcloud domain name
+title: How to improve email security with an SPF record
+excerpt: Find out how to configure an SPF record on your domain name to improve email security
 updated: 2023-07-25
 ---
 
@@ -27,7 +27,7 @@ You should therefore ensure that you enter the sending sources you use to send e
 > - Outgoing Mail Server **A** is listed in the SPF record, so the email will arrive normally in the recipient's inbox.
 > - Outgoing Mail Server **B** is not listed in the SPF record, so the email sent from this server will be marked as suspicious in the inbox. This can result in `[SPAM]` being added in the subject of the email, being placed in a `Junk` mail folder, or being deleted directly, depending on the rules of the receiving server.
 >
-> ![domain](images/spf_records_diagram.png){.thumbnail}
+> ![domain](/pages/assets/schemas/emails/spf_records_diagram.png){.thumbnail}
 
 > [!primary]
 >
@@ -74,7 +74,7 @@ To find the row for the OVHcloud SPF record, a display filter can be applied to 
 > An SPF record always follows this form: "v=spf1 `sources` `qualifier`". For example, the OVHcloud SPF is: "v=spf1 include:mx.ovh.ca ~all".
 >
 
-![domain](images/spf_records_check_OVH_configuration_ca.png){.thumbnail}
+![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_check_OVH_configuration_ca.png){.thumbnail}
 
 ### Configuring a new SPF record
 
@@ -82,7 +82,7 @@ Log in to the [OVHcloud Control Panel](/links/manager) and switch to `Web Cloud`
 
 To add an SPF record, click on `Add an entry`{.action} in the right-hand menu.
 
-![domain](images/spf_records_add_entry_step1.png){.thumbnail}
+![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_add_entry_step1.png){.thumbnail}
 
 In the window that pops up, the configuration assistant offers several different types of DNS records. There are two ways of adding an SPF record:
 
@@ -90,7 +90,7 @@ In the window that pops up, the configuration assistant offers several different
 - [Add an SPF record](#spfrecord): For users who do not have the entire record. For example, you only have an IP address or the host name of the email server.
 - [Add a TXT record](#txtrecord): For users who are experienced or already have the full record. For example, your email solution provider will send you the value.
 
-![domain](images/spf_records_add_entry.png){.thumbnail}
+![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_add_entry.png){.thumbnail}
 
 #### Use OVHcloud SPF record <a name="spfrecordovhcloud"></a>
 
@@ -103,7 +103,7 @@ You have chosen the `SPF`{.action} record and would like to apply the OVHcloud c
 
 Choose the `SPF`{.action} type record and then click on the button `Use the SPF for OVHcloud web hosting`{.action}. In the following step, click on `Confirm`{.action} to approve the action.
 
-![domain](images/spf_records_add_entry_step2_ca.png){.thumbnail}
+![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_add_entry_step2_ca.png){.thumbnail}
 
 > [!primary]
 >
@@ -114,7 +114,7 @@ Choose the `SPF`{.action} type record and then click on the button `Use the SPF 
 
 The configuration wizard enables you to customise your SPF record according to your needs. In order to apply your settings, answer the questions on this page. Some information requested may be aimed at advanced users. Please refer to the tables below for details.
 
-![domain](images/spf_records_add_entry_personnalize_step1_ca.png){.thumbnail}
+![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_add_entry_personnalize_step1_ca.png){.thumbnail}
 
 |Details|Description|
 |---|---|
@@ -161,7 +161,7 @@ Click on `Next`{.action} and verify that the SPF you have entered is correct by 
 > It can take between 4 and 24 hours until the configuration is fully effectual.
 >
 
-![domain](images/spf_records_add_TXT_entry_ca.png){.thumbnail}
+![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_add_TXT_entry_ca.png){.thumbnail}
 
 ### Modifying an SPF record <a name="modifyspf"></a>
 
@@ -204,12 +204,12 @@ mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ip6:5555:66a7:88:b999::1000:2233 i
 >
 > In the `General Information`{.action} tab, click on the `A` and `AAAA` in the `Server Diagnostics` section. In the window that appears, read the value.
 >
-> ![domain](images/spf_records_ip.png){.thumbnail}
+> ![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/general-information/spf_records_ip.png){.thumbnail}
 
 ## Go further
 
 [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
 
-[Editing the DNS servers for an OVHcloud domain name](/pages/web_cloud/domains/dns_server_general_information)
+[Editing the DNS servers for an OVHcloud domain name](/pages/web_cloud/domains/dns_server_edit)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

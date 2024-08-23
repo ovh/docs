@@ -1,7 +1,7 @@
 ---
-title: 'Configurar la red en Proxmox VE en las gamas High Grade & SCALE'
-excerpt: 'Cómo configurar la red en Proxmox VE en las gamas High Grade & SCALE'
-updated: 2023-05-11
+title: 'Configurar la red en Proxmox VE'
+excerpt: 'Cómo configurar la red en Proxmox VE'
+updated: 2024-07-16
 ---
 
 > [!primary]
@@ -15,7 +15,12 @@ updated: 2023-05-11
 
 ## Objetivo
 
-En las gamas High Grade & SCALE, no es posible el funcionamiento de las Additional IP en modo bridged (a través de MAC Virtuales). Por lo tanto, es necesario configurar las Additional IP en modo enrutado o a través del vRack.
+En las gamas High Grade & SCALE, no es posible el funcionamiento de las Additional IP en modo bridged (a través de MAC Virtuales). Lo mismo ocurre con los nuevos servidores de última generación que se entregan con las CPU AMD Epyc 4K y 8K. Por lo tanto, es necesario configurar las Additional IP en modo enrutado o a través del vRack.
+
+> [!primary]
+>
+> A finales de 2024, esta funcionalidad se entregará para todas las gamas High Grade, SCALE y ADVANCE.
+>
 
 **Esta guía explica cómo configurar la red en Proxmox VE.**
 
@@ -23,7 +28,7 @@ En las gamas High Grade & SCALE, no es posible el funcionamiento de las Addition
 
 - Tener un [servidor dedicado de OVHcloud](https://www.ovhcloud.com/es-es/bare-metal/).
 - Disponer de [Additional IP](https://www.ovhcloud.com/es-es/bare-metal/ip/).
-- Tienes acceso a tu [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Tienes acceso a tu [Panel de configuración de OVHcloud](/links/manager).
 
 > [!warning]
 >
@@ -203,7 +208,7 @@ Esta configuración es más flexible. No tiene que asociar ninguna Aditional IP 
 - Haber elegido un rango de direcciones IP privadas.
 - Tener un [servidor compatible con el vRack](https://www.ovhcloud.com/es-es/bare-metal/).
 - Haber activado un servicio [vRack](https://www.ovh.es/soluciones/vrack/).
-- Tienes acceso a tu [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Tienes acceso a tu [área de cliente de OVHcloud](/links/manager).
 
 #### Esquema de la configuración de destino
 

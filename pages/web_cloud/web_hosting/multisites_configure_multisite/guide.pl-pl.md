@@ -26,7 +26,7 @@ Na jednym hostingu możesz zainstalować kilka stron WWW, nawet jeśli domeny ni
 
 - Posiadanie kompatybilnego [hostingu OVHcloud](/links/web/hosting){.external}.
 - Zarejestrowana domena lub kilka [domen](/links/web/domains){.external}.
-- Możliwość modyfikacji konfiguracji Twoich domen ([strefy DNS](/pages/web_cloud/domains/dns_zone_edit#zrozumienie-pojecia-dns))
+- Możliwość modyfikacji konfiguracji Twoich domen ([strefy DNS](/pages/web_cloud/domains/dns_zone_edit))
 - Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
 
 ## W praktyce
@@ -49,13 +49,13 @@ Tabela, która się wyświetla zawiera listę wszystkich domen i subdomen dodany
 > Jeśli chcesz przenieść Twoją stronę WWW i uniknąć przerwy w działaniu usługi, postępuj zgodnie z [krokiem 3: umieszczenie strony WWW online](#site-online).
 >
 
-![MultiSite](images/tab.png){.thumbnail}
+![MultiSite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/tab.png){.thumbnail}
 
 ### Etap 2: dodanie domeny lub subdomeny <a name="add-domain"></a>
 
 Aby dodać nową domenę lub subdomenę do Twojego hostingu, kliknij przycisk `Operacje`{.action} po lewej stronie ekranu, a następnie `Dodaj domenę lub subdomenę`{.action} i wybierz domenę w oknie, które się wyświetli.
 
-![akcje](images/actions-menu.png){.thumbnail}
+![akcje](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/actions-menu.png){.thumbnail}
 
 - **Dodaj domenę zarejestrowaną w OVHcloud**:
 
@@ -65,7 +65,7 @@ W tym miejscu wyświetlają się jedynie domeny OVHcloud, dla których jesteś [
 
 W przypadku nazwy domeny zewnętrznej (inny identyfikator klienta) lub zewnętrznej dla OVHcloud (inny dostawca domeny) wybierz `Dodaj domenę zewnętrzną`{.action}, a następnie kliknij `Dalej`{.action}. Przejdź następnie do [etapu 2.2: „dodanie domeny zewnętrznej”](#add-external-domain).
 
-![MultiSite](images/add-a-domain-or-sub-domain-ovh-step-1.png){.thumbnail}
+![MultiSite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-ovh-step-1.png){.thumbnail}
 
 #### Etap 2.1: dodaj domenę zarejestrowaną w OVHcloud <a name="add-ovhcloud-domain"></a>
 
@@ -77,7 +77,7 @@ Teraz spersonalizuj dodanie domeny lub subdomeny. W zależności od wykupionego 
 > [!primary]
 > Aby dodać subdomenę, najpierw wybierz domenę główną z listy (przykład: domain.tld). Na kolejnym etapie podasz subdomenę (przykład: **blog**.domain.tld).
 
-![MultiSite](images/add-a-domain-or-sub-domain-ovh-step-2.png){.thumbnail}
+![MultiSite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-ovh-step-2.png){.thumbnail}
 
 |Informacja|Opis|
 |---|---|
@@ -96,7 +96,7 @@ Teraz spersonalizuj dodanie domeny lub subdomeny. W zależności od wykupionego 
 
 Po uzupełnieniu informacji, kliknij przycisk `Dalej`{.action}{.action}. Następnie sprawdź podsumowanie, które się wyświetli.
 
-![MultiSite](images/add-a-domain-or-sub-domain-ovh-step-3.png){.thumbnail}
+![MultiSite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-ovh-step-3.png){.thumbnail}
 
 Po wybraniu domeny zarejestrowanej w OVHcloud możesz automatycznie lub ręcznie zmienić jej konfigurację DNS:
 
@@ -121,15 +121,15 @@ Po dodaniu domeny przejdź do [etapu 3: umieszczenie strony WWW online](#site-on
 >
 > |Pole|Gdzie znaleźć informację?|Działania|
 > |---|---|---|
-> |TXT|Zakładka `MultiSite`{.action}, następnie kliknij `Konfiguracja tokena ovhcontrol`{.action}|Pozwala OVHcloud upewnić się, że dodanie każdej domeny zewnętrznej jest uprawnione. Utwórz pole TXT z subdomeną ovhcontrol (na przykład ovhcontrol.domain.tld) w strefie DNS, która ma uprawnienia do dodawania domeny.<br></br>Pamiętaj, że jeśli chcesz dodać `blog.domain.tld`, powinieneś utworzyć rekord dla subdomeny `ovhcontrol.domain.tld` i nie `ovhcontrol.blog.domain.tld`.<br></br>Aby odnaleźć domenę, znajdziesz [serwery DNS](/pages/web_cloud/domains/dns_server_general_information#zrozumienie-pojecia-dns), z którymi powiązana jest Twoja domena. Zatwierdź tylko domenę główną, nie wszystkie subdomeny.|
+> |TXT|Zakładka `MultiSite`{.action}, następnie kliknij `Konfiguracja tokena ovhcontrol`{.action}|Pozwala OVHcloud upewnić się, że dodanie każdej domeny zewnętrznej jest uprawnione. Utwórz pole TXT z subdomeną ovhcontrol (na przykład ovhcontrol.domain.tld) w strefie DNS, która ma uprawnienia do dodawania domeny.<br></br>Pamiętaj, że jeśli chcesz dodać `blog.domain.tld`, powinieneś utworzyć rekord dla subdomeny `ovhcontrol.domain.tld` i nie `ovhcontrol.blog.domain.tld`.<br></br>Aby odnaleźć domenę, znajdziesz [serwery DNS](/pages/web_cloud/domains/dns_server_edit), z którymi powiązana jest Twoja domena. Zatwierdź tylko domenę główną, nie wszystkie subdomeny.|
 >
-> ![MultiSite](images/find-token.png){.thumbnail}
+> ![MultiSite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/find-token.png){.thumbnail}
 >
 > |Pole|Gdzie znaleźć informację?|Działania|
 > |---|---|---|
 > |A i AAAA|Zakładka `Informacje ogólne`{.action}, następnie **IPv4** i **IPv6**|Umożliwia Twojej domenie wyświetlanie strony WWW, którą zamieścisz w Internecie na Twoim hostingu. Przypisz domenę lub subdomenę do adresu IP hostingu.|
 >
-> ![MultiSite](images/find-ipv4-and-ipv6.png){.thumbnail}
+> ![MultiSite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 >
 
  Teraz spersonalizuj dodanie domeny. Niektóre opcje zawarte w Twojej usłudze hostingu nie mogą być aktywowane podczas tej operacji. Aby je aktywować, zakończ operację i zmodyfikuj ustawienia opcji MultiSite, kiedy ta zostanie dodana.
@@ -142,11 +142,11 @@ Po dodaniu domeny przejdź do [etapu 3: umieszczenie strony WWW online](#site-on
 
 Po uzupełnieniu informacji, kliknij przycisk `Dalej`{.action}{.action}. Następnie sprawdź podsumowanie, które się wyświetli.
 
-![MultiSite](images/add-a-domain-or-sub-domain-external-step-2.png){.thumbnail}
+![MultiSite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-external-step-2.png){.thumbnail}
 
 Dodanie domeny zewnętrznej wymaga obowiązkowej dodatkowej weryfikacji. Dzięki temu możemy upewnić się, że dodanie domeny zewnętrznej jest uprawnione. Pojawi się komunikat, w którym zostaniesz poproszony o zmianę konfiguracji DNS domeny.
 
-![MultiSite](images/add-a-domain-or-sub-domain-external-step-3.png){.thumbnail}
+![MultiSite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/add-a-domain-or-sub-domain-external-step-3.png){.thumbnail}
 
 Zanotuj elementy, które się wyświetlą, następnie kliknij przycisk `Zatwierdź`{.action}. Domena jest dodana tymczasowo, abyś mógł zmodyfikować jej konfigurację DNS.
 
@@ -182,4 +182,4 @@ Jeśli chcesz zainstalować ręcznie Twoją stronę WWW, przygotuj pliki, a nast
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i korzystania z rozwiązań OVHcloud, sprawdź naszą [ofertę wsparcia](/links/support).
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

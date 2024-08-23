@@ -137,7 +137,7 @@ Para verificar e/ou alterar a ligação entre o seu nome de domínio e o seu alo
 - [Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite): este manual explica como adicionar vários domínios a um alojamento web. Pode também ajudá-lo a verificar se a declaração do seu domínio no separador `Multisite`{.action} do seu alojamento web está correta. Se necessário, poderá alterá-la e fazer o necessário ao nível da zona DNS ativa do seu domínio.
 - [Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit): este manual explica como editar uma zona DNS presente na OVHcloud. Será útil se a zona DNS ativa do seu domínio estiver presente numa conta de cliente OVHcloud diferente da sua. Pode também servir para aceder à zona DNS da OVHcloud do seu domínio, de forma a verificar se o endereço IP (entrada(s) do tipo *A* e/ou *AAAA*) declarado para o seu nome de domínio na zona DNS corresponde ao endereço IP do seu alojamento web.
 
-Para verificar e/ou alterar a ligação entre o seu nome de domínio e o seu serviço de e-mail OVHcloud, consulte o guia "[Configurar um registo MX](/pages/web_cloud/domains/dns_zone_mx)": encontrará lá os nomes dos servidores de e-mail OVHcloud, mas também o procedimento a seguir para fazer apontar o seu nome de domínio para os mesmos servidores.
+Para verificar e/ou alterar a ligação entre o seu nome de domínio e o seu serviço de e-mail OVHcloud, consulte o guia "[Configurar um registo MX para a gestão dos e-mails](/pages/web_cloud/domains/dns_zone_mx)": encontrará lá os nomes dos servidores de e-mail OVHcloud, mas também o procedimento a seguir para fazer apontar o seu nome de domínio para os mesmos servidores.
 
 > [!primary]
 >
@@ -145,7 +145,7 @@ Para verificar e/ou alterar a ligação entre o seu nome de domínio e o seu ser
 > 
 > - **Para obter a ligação entre o domínio e o alojamento web**: consulte apenas os guias "[Lista dos endereços IP dos clusters e alojamentos web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)" e "[Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)" citados acima para obter o endereço IP do alojamento web e, em seguida, declare o domínio no seu alojamento web com exatidão. De seguida, contacte o organismo que gere a zona DNS ativa do seu domínio para que aponte o domínio para o seu alojamento web.
 >
-> - **Para obter o serviço de ligação entre o domínio e o serviço de e-mail OVHcloud**, consulte apenas o guia "[Configurar um registo MX](/pages/web_cloud/domains/dns_zone_mx)" para obter os nomes dos servidores de e-mail OVHcloud que deve introduzir na zona DNS ativa do seu domínio. De seguida, contacte o organismo que gere a zona DNS ativa do seu domínio para o apontar para os servidores de e-mail OVHcloud.
+> - **Para obter o serviço de ligação entre o domínio e o serviço de e-mail OVHcloud**, consulte apenas o guia "[Configurar um registo MX para a gestão dos e-mails](/pages/web_cloud/domains/dns_zone_mx)" para obter os nomes dos servidores de e-mail OVHcloud que deve introduzir na zona DNS ativa do seu domínio. De seguida, contacte o organismo que gere a zona DNS ativa do seu domínio para o apontar para os servidores de e-mail OVHcloud.
 >
 
 ### Etapa 5 - Outras opções disponíveis com os alojamentos web <a name="other-options"></a>
@@ -212,4 +212,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

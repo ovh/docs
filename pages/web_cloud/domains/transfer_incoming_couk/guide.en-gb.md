@@ -1,7 +1,7 @@
 ---
 title: 'Transferring a .uk domain name to OVHcloud'
 excerpt: 'Find out how to transfer a .uk or related domain name to OVHcloud'
-updated: 2022-10-19
+updated: 2024-06-28
 ---
 
 ## Objective
@@ -23,6 +23,12 @@ Transferring a .uk (or similar) domain name requires a specific approach.
 > To transfer the domain name management to another OVHcloud customer account, a *change of contacts* must be made instead. The procedure is described in [this guide](/pages/account_and_service_management/account_information/managing_contacts).
 >
 > If you also need to change the **domain name holder**, you should do so **before** you change the domain name contacts. To do this, use our [change of ownership for domain names](/pages/web_cloud/domains/trade_domain) instructions.
+>
+> If, in addition to transferring your domain name, you would like to migrate the services associated with it (website, email, etc.), please read our guide on [Migrating your website and associated services to OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh), before continuing.
+> This guide explains in detail how to migrate all your services without any service interruptions.
+>
+> If you only transfer your domain name without moving your other services, please ensure that you retrieve the active DNS servers for your domain name from your current **registrar**, to enter them directly in step 3 of our guide on [Transferring your domain name to OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain).
+> This will prevent the separation of your domain name from your associated external services.
 >
 
 ## Requirements
@@ -88,4 +94,4 @@ The transfer being free, the domain's expiry date after changing registrars will
 
 [Transferring a domain name to OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

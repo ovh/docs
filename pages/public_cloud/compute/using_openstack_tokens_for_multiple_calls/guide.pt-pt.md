@@ -37,7 +37,7 @@ Este manual explica-lhe como emitir um token OpenStack, como utilizá-lo para as
 
 ## Requisitos 
 
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
 - Este guia requer a instalação da ferramenta OpenStack CLI na sua máquina.
 
 > [!primary]
@@ -62,7 +62,7 @@ sudo yum install python3-openstackclient
 
 ### Etapa 1: descarregue e descarregue o seu ficheiro OpenRC
 
-Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e abra o seu projeto `Public Cloud`{.action}.
+Ligue-se à sua [Área de Cliente OVHcloud](/links/manager) e abra o seu projeto `Public Cloud`{.action}.
 
 Clique em `Users & Roles`{.action} na secção `Project Management` e no botão `...`{.action} à direita do seu utilizador OpenStack.<br>
 Faça o download do ficheiro OpenRC deste utilizador e especifique a região na qual deseja efetuar ações.

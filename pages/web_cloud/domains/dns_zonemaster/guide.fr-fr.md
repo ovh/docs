@@ -1,6 +1,6 @@
 ---
 title: 'Tutoriel - Utilisation de Zonemaster'
-updated: 2024-03-08
+updated: 2024-06-18
 ---
 
 > [!warning]
@@ -16,7 +16,7 @@ updated: 2024-03-08
 
 > [!primary]
 >
-> Pour mieux comprendre la notion de DNS, consultez notre guide sur la [configuration d'une zone DNS](/pages/web_cloud/domains/dns_zone_general_information).
+> Pour mieux comprendre la notion de DNS, consultez notre guide « [Tout savoir sur la zone DNS](/pages/web_cloud/domains/dns_zone_general_information) ».
 
 ## Prérequis
 
@@ -30,7 +30,7 @@ L'outil Zonemaster permet de vérifier une configuration DNS en place sur un nom
 
 Pour vérifier la configuration actuelle d'un nom de domaine, saisissez votre nom de domaine puis cliquez sur `Lancer`{.action}
 
-![Capture d'écran du formulaire de Zonemaster. Le domaine « domain.tld » a été saisi et est prêt à être testé.](images/run-domain-test.png){.thumbnail}
+![Capture d'écran du formulaire de Zonemaster. Le domaine « domain.tld » a été saisi et est prêt à être testé.](/pages/assets/screens/other/web-tools/zonemaster/run-domain-test.png){.thumbnail}
 
 Pour vérifier une configuration DNS que vous avez préparée mais pas encore appliquée au nom de domaine concerné, cochez la case `Options`{.action}, puis saisissez les informations suivantes :
 
@@ -44,13 +44,13 @@ Vous pouvez également forcer les vérifications sur un protocole IP spécifique
 >Vous avez configuré une zone DNS pour ce nom domaine sur les serveurs DNS « dns1.test.tld » et « dns2.test.tld ».<br>
 > Avant de changer les serveurs DNS, vous pouvez effectuer une recherche avancée à la l'aide de la case `Options`{.action} en saisissant « dns1.test.tld » et « dns2.test.tld » dans les cases `Serveurs DNS`.<br>
 > Zonemaster réalisera un test comme si vous utilisiez les serveurs « dns1.test.tld » et « dns2.test.tld » sur « domain.tld ».<br>
-> ![Capture d'écran des options avancées du formulaire de Zonemaster. Les deux serveurs de noms « dns1.test.tld » et « dns2.test.tld » ont été saisis dans la section « Serveurs de noms » du formulaire.](images/run-domain-test-nameservers-option.png){.thumbnail}
+> ![Capture d'écran des options avancées du formulaire de Zonemaster. Les deux serveurs de noms « dns1.test.tld » et « dns2.test.tld » ont été saisis dans la section « Serveurs de noms » du formulaire.](/pages/assets/screens/other/web-tools/zonemaster/run-domain-test-nameservers-option.png){.thumbnail}
 
 > [!primary]
 >
 > Lorsque vous saisissez un nom de domaine et que vous cliquez sur les boutons `Récupérer les NS depuis la zone parente`{.action} et `Récupérer les DS depuis la zone parente`{.action}, les serveurs DNS associés au nom de domaine apparaitront ainsi que les informations de l'enregistrement DS (DNSSEC) si celui-ci a été configuré.
 >
-> ![Capture d'écran de la page de résultats de Zonemaster pour le domaine « domain.tld ». La section « Adresses » est développée.](images/fetch-ns-from-parent-zone.png){.thumbnail}
+> ![Capture d'écran de la page de résultats de Zonemaster pour le domaine « domain.tld ». La section « Adresses » est développée.](/pages/assets/screens/other/web-tools/zonemaster/fetch-ns-from-parent-zone.png){.thumbnail}
 
 ### Résultat
 
@@ -63,7 +63,7 @@ Une fois le formulaire validé, les résultats sont affichés par groupe de test
 
 Pour chaque test, il est possible d'obtenir plus de détails, par example pour comprendre l'erreur dans le cas d'un dysfonctionnement, ou simplement à titre indicatif.
 
-![domains](images/domain-analysis.png){.thumbnail}
+![domains](/pages/assets/screens/other/web-tools/zonemaster/domain-analysis.png){.thumbnail}
 
 ### Informations utiles
 
@@ -81,4 +81,4 @@ Pour des prestations spécialisées (référencement, développement, etc), cont
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
+Échangez avec notre [communauté d'utilisateurs](/links/community)

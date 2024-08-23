@@ -23,7 +23,7 @@ A **domain name** is made up of levels. These levels are usually separated by a 
 
 - Third Level Domain (**subdomain**): Labels from this third level on are called **subdomain**. In this guide, we will describe its definition, and explain how you can implement it with your various services.
 
-![URL content](images/url-composition.png){.thumbnail}
+![URL content](/pages/assets/schemas/domains/url-composition.png){.thumbnail}
   
 **Find out more about subdomains and how to create one with OVHcloud.**
 
@@ -87,7 +87,7 @@ There are two possible scenarios:
 >
 > The active DNS zone for your domain name is not necessarily managed by the same provider as your domain name.
 >
-> 1: To identify the location of the active DNS zone for a domain name registered with OVHcloud, you can use our guide “[Modifying the DNS servers for an OVHcloud domain name](/pages/web_cloud/domains/dns_server_general_information)”.
+> 1: To identify the location of the active DNS zone for a domain name registered with OVHcloud, you can use our guide “[Modifying the DNS servers for an OVHcloud domain name](/pages/web_cloud/domains/dns_server_edit)”.
 >
 > 2: If your domain name is not registered with OVHcloud, contact your domain name’s current *registrar* to find out where the active DNS zone is hosted. Please note that you can use our guide on [Transferring a domain name to OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain) if you would like to perform this action.
 >
@@ -176,7 +176,7 @@ For more details on configuring an Email Pro platform, please refer to the follo
 
 [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
 
-[Modifying the DNS servers of an OVHcloud domain name](/pages/web_cloud/domains/dns_server_general_information)
+[Modifying the DNS servers of an OVHcloud domain name](/pages/web_cloud/domains/dns_server_edit)
 
 [Hosting multiple websites on your web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite)
 
@@ -192,4 +192,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

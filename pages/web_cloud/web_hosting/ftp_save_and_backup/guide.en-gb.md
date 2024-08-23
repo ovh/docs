@@ -54,7 +54,7 @@ Once you are ready to do so, carry on reading the section of this guide that is 
 >
 > The quota used appears on the page that appears:
 >
-> ![ftp quota](images/find-disk-space.png){.thumbnail}
+> ![ftp quota](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
 >
 > If the FTP storage space used is more than half of the total FTP storage space of your hosting package, retrieve locally some of the large items from your website (you can use [Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)). Then remove them from your FTP storage. This will reduce the size of the FTP storage space you are using and you will then be able to launch your restoration from the OVHcloud Control Panel.
 >
@@ -86,7 +86,7 @@ Once you are ready to do so, carry on reading the section of this guide that is 
 
 Log in to the [OVHcloud Control Panel](/links/manager){.external}, click `Hosting plans`{.action}, then select the plan concerned. Go to the `FTP - SSH`{.action} tab, and click `Retrieve backup`{.action}.
 
-![backupftp](images/restore-backup.png){.thumbnail}
+![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup.png){.thumbnail}
 
 In the popup window that appears, select the restore date you want in the dropdown menu, using the information below:
 
@@ -100,7 +100,7 @@ In the popup window that appears, select the restore date you want in the dropdo
 
 Once you have selected a date, click `Next`{.action}. 
 
-![backupftp](images/restore-backup-step-1.png){.thumbnail}
+![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup-step-1.png){.thumbnail}
 
 Take a few minutes to check that none of your files will be lost after the restoration, e.g. any files saved on your storage space after the restore date you have selected. As a reminder, the restoration will effectively overwrite all of your current data, and replace it with the backup data.
 
@@ -132,7 +132,7 @@ First of all, decide which software or interface you would like to use in order 
 
 Once you are ready to start making changes, continue to the next step.
 
-![backupftp](images/ftp-explorer.png){.thumbnail}
+![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/ftp-explorer.png){.thumbnail}
 
 #### Step 2: Connect to your backup.
 
@@ -140,7 +140,7 @@ To access the backup data you would like to restore, you will need to log in to 
 
 You can find this information in the `FTP - SSH`{.action} tab of your Web Hosting plan. If you no longer have the FTP user password, please refer to our guide on instructions set out in our documentation on [Modifying a FTP user password](/pages/web_cloud/web_hosting/ftp_change_password){.external}.
 
-![backupftp](images/login-infos.png){.thumbnail}
+![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/login-infos.png){.thumbnail}
 
 You will need to enter your primary username (or FTP login) with a suffix determining the backup you want to connect to. Please use the information below to find out how to access the backup you want:
 
@@ -156,7 +156,7 @@ Please ensure that you replace ‘ftpuser’ with your own primary FTP username 
 
 The method for connecting to your storage space will differ depending on the interface or software you are using. Below, we have included an image showing how to connect via the FTP Explorer interface.
 
-![backupftp](images/login-interface-snap0.png){.thumbnail}
+![backupftp](/pages/assets/screens/other/web-tools/net2ftp/login-interface-snap0.png){.thumbnail}
 
 #### Step 3: Gather the files you want to restore.
 
@@ -194,4 +194,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

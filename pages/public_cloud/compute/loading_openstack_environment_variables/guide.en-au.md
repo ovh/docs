@@ -1,7 +1,7 @@
 ---
 title: 'Setting OpenStack environment variables'
 excerpt: 'Find out how to set your environment variables to use the OpenStack API'
-updated: 2023-11-29
+updated: 2024-07-15
 ---
 
 ## Objective
@@ -10,7 +10,7 @@ By setting OpenStack environment variables on your desktop, you can use the Open
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - An [OpenStack user account](/pages/public_cloud/compute/create_and_delete_a_user)
 - OpenStack [installed on your system](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
 
@@ -20,7 +20,7 @@ By setting OpenStack environment variables on your desktop, you can use the Open
 
 To retrieve your environment variables, you can download the OpenRC file from the OpenStack user account you have created.
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) and switch to the `Public Cloud`{.action} section. Select your Public Cloud project at the top of the left-hand sidebar.
+Log in to the [OVHcloud Control Panel](/links/manager) and switch to the `Public Cloud`{.action} section. Select your Public Cloud project at the top of the left-hand sidebar.
 
 Click on `Users & Roles`{.action}, then click on the `...`{.action} to the right of your user, then select `Download OpenStack's RC file`{.action}.
 
@@ -55,24 +55,6 @@ If the CLIs are already installed, check if they are working properly:
 +--------------------------------------+------------+--------+-----------------------------------------------+-----------+--------+
 ```
 
-You can hard-store the Horizon user password. For example, replace:
-
-```bash
-echo "Please enter your OpenStack Password: "
-read -sr OS_PASSWORD_INPUT
-export OS_PASSWORD=$OS_PASSWORD_INPUT
-```
-
-With the following:
-
-```bash
-#echo "Please enter your OpenStack Password: "
-#read -sr OS_PASSWORD_INPUT
-export OS_PASSWORD="Your Horizon user password"
-```
-
-By default, you will need to set this environment each time you open a session in the current environment. You can make this permanent by adding the openrc.sh source in the bashrc file. You would need to add the password in the file.
-
 #### **On Windows**
 
 The OpenRC file is not designed to be launched on Windows.
@@ -93,4 +75,4 @@ set OS_PASSWORD="Your Horizon user password"
 
 To learn how to use OpenStack: [OpenStack documentation](https://docs.openstack.org/){.external}
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

@@ -46,35 +46,35 @@ Dependendo da sua situação, o caminho para aceder à base de dados de origem �
 
 Na sua [Área de Cliente OVHcloud](/links/manager), selecione `Web Cloud`{.action} no menu no topo da interface. Na coluna da esquerda, aceda ao separador `Alojamentos`{.action} e clique no alojamento web onde se encontra a base de dados de origem cujo conteúdo deve ser copiado.
 
-![Lista dos alojamentos](images/web-hosting-selection.png){.thumbnail}
+![Lista dos alojamentos](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/web-hosting-selection.png){.thumbnail}
 
 Ao clicar no separador `Bases de dados`{.action}, será apresentada uma lista das suas bases de dados Start SQL.
 
-![Lista das BDD Start SQL](images/sharedsql-dashboard-db-list.png){.thumbnail}
+![Lista das BDD Start SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/sharedsql-dashboard-db-list.png){.thumbnail}
 
 #### Web Cloud Databases
 
 Na sua [Área de Cliente OVHcloud](/links/manager), selecione `Web Cloud`{.action} no menu no topo da interface. Na coluna da esquerda, aceda ao separador `Web Cloud Databases`{.action} e selecione o servidor Web Cloud Databases onde se encontra a base de dados de origem cujo conteúdo deve ser copiado.
 
-![Lista dos servidores WCD](images/wcdb-server-selection.png){.thumbnail}
+![Lista dos servidores WCD](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/wcdb-server-selection.png){.thumbnail}
 
 Ao clicar no separador `Bases de dados`{.action}, será apresentada uma lista das bases de dados presentes no servidor Web Cloud Databases.
 
-![Lista das BDDs WCD](images/wcdb-dashboard-db-list.png){.thumbnail}
+![Lista das BDDs WCD](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/wcdb-dashboard-db-list.png){.thumbnail}
 
 ### Copiar o conteúdo de uma base de dados
 
 Ainda no separador `Bases de dados`{.action}, e qualquer que seja a sua oferta, clique no botão `...`{.action} à direita da linha correspondente à base de dados cujo conteúdo pretende copiar e, a seguir, selecione `Copiar a base de dados`{.action}".
 
-![CTA_copiar_BDD](images/copy-db-tool.png){.thumbnail}
+![CTA_copiar_BDD](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/copy-db-tool.png){.thumbnail}
 
 Aparecerá uma janela a fim de identificar a base de dados de destino.
 
-![Interface copiar BDD](images/copy-db-tool-step-1.png){.thumbnail}
+![Interface copiar BDD](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-step-1.png){.thumbnail}
 
 Se você não tiver um banco de dados de destino e nos mostrar a captura de tela abaixo, clique no link presente para comprar um novo banco de dados:
 
-![Lista das BDDs WCD](images/copy-db-tool-link-to-buy-db.png){.thumbnail}
+![Lista das BDDs WCD](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-link-to-buy-db.png){.thumbnail}
 
 Poderá escolher entre comprar uma oferta "[start SQL](/links/web/hosting-options-startsql)" ou um servidor de bases de dados "[Web Cloud Databases](/links/web/databases)".
 
@@ -97,17 +97,17 @@ Acaba de selecionar `Copiar para uma base de dados`{.action}. Aparecem duas list
 
 Clique em `Seguinte`{.action}. Surge a seguinte mensagem de confirmação:
 
-![Mensagem de confirmação copiar BDD](images/copy-db-tool-step-2.png){.thumbnail}
+![Mensagem de confirmação copiar BDD](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-step-2.png){.thumbnail}
 
 Se não pretender substituir a base de dados de destino escolhida, clique em `Anterior`{.action} para alterar a sua escolha ou em `Cancelar`{.action} para cancelar tudo. Caso contrário, clique em `Validar`{.action} para confirmar a duplicação do conteúdo da base de dados de origem para a base de dados de destino.
 
 Surge a seguinte mensagem de confirmação:
 
-![Mensagem de sucesso BDD](images/copy-db-tool-copied-successfull.png){.thumbnail}
+![Mensagem de sucesso BDD](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-copied-successfull.png){.thumbnail}
 
 A cópia da base de dados pode demorar alguns minutos. Para verificar se a cópia foi registada, aceda ao separador `Operações em curso`{.action}. Na tabela, é apresentada uma nova linha para a cópia com um estado "planeado". Quando a operação for concluída, a linha desaparecerá.
 
-![Tarefas em curso](images/copy-db-tool-ongoing-tasks.png){.thumbnail}
+![Tarefas em curso](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-ongoing-tasks.png){.thumbnail}
 
 #### Escolha 2 - Copiar para uma base de dados presente num servidor Web Cloud Databases
 
@@ -115,13 +115,13 @@ Acaba de selecionar `Copiar para um Web Cloud Databases`{.action}. Aparecem duas
 
 Clique em `Seguinte`{.action}. Surge a seguinte mensagem de confirmação:
 
-![Mensagem de confirmação copiar BDD](images/copy-db-tool-step-2.png){.thumbnail}
+![Mensagem de confirmação copiar BDD](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-step-2.png){.thumbnail}
 
 Se não pretender substituir a base de dados de destino escolhida, clique em `Anterior`{.action} para alterar a sua escolha ou em `Cancelar`{.action} para cancelar tudo. Caso contrário, clique em `Validar`{.action} para confirmar a duplicação do conteúdo da base de dados de origem para a base de dados de destino.
 
 A cópia da base de dados pode demorar alguns minutos. Para verificar se a cópia foi registada, aceda ao separador `Operações em curso`{.action}. Na tabela, é apresentada uma nova linha para a cópia com um estado "planeado". Quando a operação for concluída, a linha desaparecerá.
 
-![Tarefas em curso](images/copy-db-tool-ongoing-tasks.png){.thumbnail}
+![Tarefas em curso](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/copy-db-tool-ongoing-tasks.png){.thumbnail}
 
 ### Configurar o seu website com a sua nova base de dados
 
@@ -194,4 +194,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

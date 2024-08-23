@@ -22,7 +22,7 @@ To protect customer services exposed on public IP addresses, OVHcloud offers a s
 ## Requirements
 
 - An OVHcloud service exposed on a dedicated public IP address ([Dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/), [VPS](https://www.ovhcloud.com/en-gb/vps/), [Public Cloud instance](https://www.ovhcloud.com/en-gb/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/), [Additional IP](https://www.ovhcloud.com/en-gb/network/additional-ip/), etc.)
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
 > This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-gb/about/).
@@ -203,4 +203,4 @@ After reading this tutorial, you should be able to configure the Edge Network Fi
 
 - [Protecting a game server with the application firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_game_ddos)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

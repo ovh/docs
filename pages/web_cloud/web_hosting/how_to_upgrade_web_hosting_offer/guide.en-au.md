@@ -43,7 +43,7 @@ To modify your subscription, go to your [OVHcloud Control Panel](/links/manager)
 
 In the `Plan` box, click the `...`{.action} button to the right of `Solution`, then `Change plan`{.action}.
 
-![change_plan](images/pro-change-plan.png){.thumbnail}
+![change_plan](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/pro-change-plan.png){.thumbnail}
 
 Then select your new subscription and its duration. Confirm the corresponding contracts, then click `Send`{.action}.
 
@@ -63,13 +63,13 @@ If the **Boost** option is right for you, please find instructions below on how 
 > **Enable the Boost option**
 >>
 >> To enable the Boost option, log in to your [OVHcloud Control Panel](/links/manager) then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then select the Web Hosting plan concerned. In the `General information` box on the page that opens, click the `...`{.action} button to the right of `Boost`, then `Boost my hosting plan`{.action}.<br><br>
->>![boost](images/boost-my-hosting-plan.png){.thumbnail}<br>
+>>![boost](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/boost-my-hosting-plan.png){.thumbnail}<br>
 >>
 > **Disable the Boost option**
 >>
 >> To disable the Boost option, log in to your [OVHcloud Control Panel](/links/manager) then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action} , then select the Web Hosting plan concerned. On the page that pops up, go to the `More` tab, then click `Boost my hosting plan`{.action}.<br>
 >> The usage table for the Boost option will appear. Click `Disable boost plan`{.action}.<br><br>
->>![boost](images/deactivate-the-boost-plan.png){.thumbnail}<br>
+>>![boost](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/boost-my-hosting-plan/deactivate-the-boost-plan.png){.thumbnail}<br>
 
 #### Billing when you change plans <a name="billing"></a>
 
@@ -97,4 +97,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

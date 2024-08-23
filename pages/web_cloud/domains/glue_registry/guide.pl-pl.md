@@ -47,7 +47,7 @@ W dostępnych opcjach kliknij przycisk `Fetch NS from parent zone`{.action}.
 
 Wyświetli się wynik:
 
-![glue-zonemaster](images/nameservers.png){.thumbnail}
+![glue-zonemaster](/pages/assets/screens/other/web-tools/zonemaster/nameservers.png){.thumbnail}
 
 Pobierz *serwery DNS* i zachowaj **wszystkie** swoje adresy IPv4 (w formie *X.X.X.X*, gdzie *X* jest zawarty między *0* i *255*) i IPv6 (inne adresy IP, które nie są przypisanymi adresami IPv4). Będziesz potrzebował więcej informacji na temat tego przewodnika.
 
@@ -83,7 +83,7 @@ Na nowej stronie kliknij zakładkę `GLUE`{.action}.
 
 W tabeli wyświetlają się wówczas rekordy "GLUE" aktualnie skonfigurowane w OVHcloud dla Twojej domeny (jeśli są dostępne). Aby dodać nowy rekord "GLUE", kliknij przycisk `Dodaj`{.action}.
 
-![glueregistry](images/add.png){.thumbnail}
+![glueregistry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/glue/add.png){.thumbnail}
 
 W oknie, które się otworzy na ekranie, wprowadź wymagane informacje:
 
@@ -92,7 +92,7 @@ W oknie, które się otworzy na ekranie, wprowadź wymagane informacje:
 |Nazwa hosta|Dostosuj nazwę hosta, którego chcesz użyć jako spersonalizowanego serwera DNS.|
 |IP docelowe|Wskaż adres lub adresy IP (IPv4 i / lub IPv6), do których należy przypisać nazwę hosta. Jest to adres lub adresy IP serwera DNS aktualnie używanego przez Twoją domenę. Jeśli istnieje kilka adresów IP, należy je oddzielić przecinkami*.|
 
-![glueregistry](images/add-another-glue-record-step-1.png){.thumbnail}
+![glueregistry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/glue/add-another-glue-record-step-1.png){.thumbnail}
 
 Na powyższym obrazie, korzystając z przykładu z [etap 1](#step1), GLUE, którą chcemy tu dodać (od nazwy domeny *domain.tld*) jest **dns1.domain.tld**. 
 
@@ -113,7 +113,7 @@ Operacja ta zostanie przeprowadzona w interfejsie dostawcy zarządzającego konf
 - **Twoja domena nie używa aktywnej strefy DNS w OVHcloud**: skontaktuj się z dostawcą zarządzającym usługą. Po zakończeniu operacji przejdź do kolejnego etapu.
 - **Twoja domena używa aktywnej strefy DNS w OVHcloud**: zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external} i przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij przycisk `Domeny`{.action}, a następnie wybierz nazwę domeny, której użyłeś do utworzenia GLUE podczas [etapu 2](#step2). Przejdź do zakładki `Strefa DNS`{.action} i kliknij `Dodaj rekord`{.action}. Wybierz wpis typu *A* lub *AAAA* w zależności od typu IP, który chcesz dodać. Postępuj zgodnie z kolejnymi instrukcjami, wprowadzając *subdomenę* i adres *IPv4* (A) lub *IPv6* (AAAA) i kontynuuj aż do zatwierdzenia dodania subdomeny. Jeśli potrzebujesz pomocy, skorzystaj z instrukcji zawartych w przewodniku OVHcloud [Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
-![glueregistry](images/add-an-entry.png){.thumbnail}
+![glueregistry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-2.png){.thumbnail}
 
 > [!primary]
 >
@@ -146,14 +146,14 @@ Przejdź do zakładki `Serwery DNS`{.action}, następnie kliknij polecenie `Zmie
 > W przeciwnym razie spersonalizowane serwery DNS nie zostaną uwzględnione prawidłowo i nie będą działać z Twoją domeną.
 >
 
-Zakończ ostatni etap i, jeśli potrzebujesz więcej informacji, skorzystaj z instrukcji zawartych w naszej dokumentacji "[Zmiana serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_general_information)".
+Zakończ ostatni etap i, jeśli potrzebujesz więcej informacji, skorzystaj z instrukcji zawartych w naszej dokumentacji "[Zmiana serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
 
 > [!primary]
 > 
 > Jeśli masz ustawiony serwery DNS na jednej domenie i korzystasz z innej domeny, która nie jest zarejestrowana w OVHcloud, skontaktuj się z dostawcą, który zarejestrował Twoją inną domenę, aby zmienić serwery DNS.
 >
 
-![glueregistry](images/modify-dns-servers.png){.thumbnail}
+![glueregistry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/modify-dns-servers.png){.thumbnail}
 
 > [!primary]
 >
@@ -173,7 +173,7 @@ Operacja ta zostanie przeprowadzona w interfejsie dostawcy zarządzającego konf
 
 Pojawi się okno zawierające strefę DNS w trybie *tekstowym*:
 
-![glueregistry](images/change-in-text-format-step-1.png){.thumbnail}
+![glueregistry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/change-in-text-format-step-1.png){.thumbnail}
 
 > [!warning]
 >

@@ -32,7 +32,7 @@ Rozpocznij od zalogowania się do [panelu klienta OVHcloud](/links/manager) w se
 
 Odnajdź w tabeli kolumnę „SSH”, aby sprawdzić, czy dany użytkownik SSH (lub „Login”) posiada aktywny dostęp przez protokół SSH. Jeżeli tak nie jest, pojawi się informacja „Wyłączony”.
 
-![usessh](images/tab-ssh.png){.thumbnail}
+![usessh](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-ssh.png){.thumbnail}
 
 Jeżeli dostęp nie jest aktywny, kliknij przycisk `...`{.action} po prawej stronie wybranego użytkownika, a następnie `Zmień`{.action}. W oknie, które się wyświetli, włącz dostęp SSH, a następnie dokończ procedurę zmiany ustawienia. Jeżeli nie znajdujesz opcji aktywacji, sprawdź, czy [Twoja oferta hostingowa www OVHcloud](/links/web/hosting) posiada dostęp przez protokół SSH.
 
@@ -68,7 +68,7 @@ ssh yourlogin@ssh.cluster000.hosting.ovh.net -p 22
 
 Po wysłaniu polecenia zostaniesz poproszony(-a) o wpisanie hasła użytkownika SSH. Po zalogowaniu przejdź do etapu kolejnego: „[Operacje na przestrzeni dyskowej za pomocą SSH](./#etap-4-przeprowadzanie-operacji-na-przestrzeni-dyskowej-z-wykorzystaniem-ssh)”.
 
-![usessh](images/terminal-ssh-login.png){.thumbnail}
+![usessh](/pages/assets/screens/other/web-tools/terminal/terminal-ssh-login.png){.thumbnail}
 
 #### 3.2 Za pomocą oprogramowania
 
@@ -127,4 +127,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 
+Dołącz do [grona naszych użytkowników](/links/community). 

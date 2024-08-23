@@ -26,7 +26,7 @@ You can find this information in your control panel. Go to the FTP section or fo
 - Check SSH.
 - Click Open.
 
-![putty](images/configuration.png){.thumbnail}
+![putty](/pages/assets/screens/other/web-tools/putty/configuration.png){.thumbnail}
 
 ## Log on
 A command prompt will appear
@@ -44,4 +44,4 @@ To use SSH you should now refer to [this guide](/pages/web_cloud/web_hosting/ssh
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

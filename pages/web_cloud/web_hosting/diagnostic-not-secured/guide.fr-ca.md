@@ -10,10 +10,10 @@ Plusieurs messages d'erreur peuvent apparaître en cas d'inaccessibilité de vot
 
 |Navigateur|Message d'erreur concerné|
 |-|---|
-|Chrome :<br>« Votre connexion n'est pas privée »|![notsecured_chrome](images/notsecured-chrome.png){.thumbnail}|
-|Firefox :<br>« Attention : risque probable de sécurité »|![notsecured_firefox](images/notsecured-firefox.png){.thumbnail}|
-|Edge :<br>« Votre connexion n’est pas privée »|![notsecured_edge](images/notsecured-edge.png){.thumbnail}|
-|Safari :<br>« Cette connexion n'est pas privée »|![notsecured_safari](images/notsecured-safari.png){.thumbnail}|
+|Chrome :<br>« Votre connexion n'est pas privée »|![notsecured_chrome](/pages/assets/screens/other/browsers/errors/notsecured-chrome.png){.thumbnail}|
+|Firefox :<br>« Attention : risque probable de sécurité »|![notsecured_firefox](/pages/assets/screens/other/browsers/errors/notsecured-firefox.png){.thumbnail}|
+|Edge :<br>« Votre connexion n’est pas privée »|![notsecured_edge](/pages/assets/screens/other/browsers/errors/notsecured-edge.png){.thumbnail}|
+|Safari :<br>« Cette connexion n'est pas privée »|![notsecured_safari](/pages/assets/screens/other/browsers/errors/notsecured-safari.png){.thumbnail}|
 
 **Découvrez comment résoudre les erreurs du type « Votre connexion n'est pas privée ».**
 
@@ -46,7 +46,7 @@ Pour retrouver l'adresse IP de votre [hébergement OVHcloud](/links/web/hosting)
 
 Dans l'onglet `Informations générales`{.action}, notez l'adresse IPV4 et/ou IPV6 de votre hébergement.
 
-![hosting-general-informations](images/find-ipv4-and-ipv6.png){.thumbnail}
+![hosting-general-informations](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 
 #### Vérifier l'adresse IP dans la zone DNS
 
@@ -56,7 +56,7 @@ Cliquez sur `Noms de domaine`{.action} dans votre [espace client OVHcloud](/link
 
 Sélectionnez l'onglet `Zone DNS`{.action} et notez la cible de l'entrée de type `A` pour votre domaine :
 
-![zone-dns-ip](images/dashboard-entry-a.png){.thumbnail}
+![zone-dns-ip](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-entry-a.png){.thumbnail}
 
 #### Effectuer les actions nécessaires
 
@@ -65,15 +65,15 @@ Sélectionnez l'onglet `Zone DNS`{.action} et notez la cible de l'entrée de typ
 |L'adresse IP indiquée dans la [Zone DNS](/pages/web_cloud/domains/dns_zone_edit) correspond à celle de votre hébergement mutualisé.|Passez à [l'étape 2](#etape2).|
 |L'adresse IP indiquée dans la zone ne concerne aucun hébergement de votre [compte OVHcloud](/links/manager), mais elle apparaît dans la [liste des serveurs Web Cloud](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).|Vérifiez que vous ne possédez pas un hébergement possédant cette adresse IP dans l'un de vos autres [comptes OVHcloud](/links/manager) si vous en avez créé plusieurs. Si besoin, contactez votre webmaster ou les [partenaires OVHcloud](/links/partner) à ce sujet.|
 |L'adresse IP indiquée dans la zone n'est pas celle de votre hébergement et elle n'apparaît pas non plus dans la [liste des serveurs Web Cloud](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).|Contactez votre webmaster ou les [partenaires OVHcloud](/links/partner) à ce sujet.|
-|Dans l'onglet `Zone DNS`{.action}, un message indique que votre domaine utilise d'autres serveurs [DNS](/pages/web_cloud/domains/dns_zone_edit) et ceux-ci apparaissent sous la forme « ns **?** .ovh.net » ou « dns **?** .ovh.net » (remplacez le « **?** » par le numéro de serveur DNS concerné) :<br><br>![warning_other_ovh_dns_srv](images/message-other-ovh-dns-servers.png){.thumbnail}|Modifiez les serveurs DNS de votre domaine, afin qu'ils correspondent à ceux inscrits dans les entrées de type `NS` de la zone. Pour effectuer cette opération, suivez les instructions de [ce guide](/pages/web_cloud/domains/dns_server_edit).|
-|Dans l'onglet `Zone DNS`{.action}, un message indique que votre domaine utilise d'autres serveurs [DNS](/pages/web_cloud/domains/dns_zone_edit) et ceux-ci n'apparaissent pas sous la forme « ns **?** .ovh.net » ou « dns **?** .ovh.net » :<br><br>![warning_external_dns_srv](images/message-external-dns-servers.png){.thumbnail}|Contactez votre webmaster ou les [partenaires OVHcloud](/links/partner) à ce sujet.|
-|Votre nom de domaine n'apparaît pas dans la partie `Noms de domaine`{.action} de votre [espace client OVHcloud](/links/manager).<br><br>Ou l'onglet `Zone DNS`{.action} de votre domaine s'affiche de la façon suivante :<br><br>![zonedns_ndd_pas_sur_lec2](images/zone-without-domain-top-of-the-page.png){.thumbnail}|Cela signifie que votre domaine n'est pas géré depuis votre [espace client OVHcloud](/links/manager).<br><br>Vérifiez qu'il n'est pas géré depuis l'un de vos autres [comptes OVHcloud](/links/manager), si vous en avez créé plusieurs.<br><br>Vous pouvez également déterminer son bureau d'enregistrement et les serveurs DNS auxquels il est lié via notre outil [WHOIS](https://www.ovh.com/fr/support/outils/check_whois.pl).<br><br>Si besoin, contactez votre webmaster ou les [partenaires OVHcloud](/links/partner) à ce sujet.|
+|Dans l'onglet `Zone DNS`{.action}, un message indique que votre domaine utilise d'autres serveurs [DNS](/pages/web_cloud/domains/dns_zone_edit) et ceux-ci apparaissent sous la forme « ns **?** .ovh.net » ou « dns **?** .ovh.net » (remplacez le « **?** » par le numéro de serveur DNS concerné) :<br><br>![warning_other_ovh_dns_srv](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-other-ovh-dns-servers.png){.thumbnail}|Modifiez les serveurs DNS de votre domaine, afin qu'ils correspondent à ceux inscrits dans les entrées de type `NS` de la zone. Pour effectuer cette opération, suivez les instructions de [ce guide](/pages/web_cloud/domains/dns_server_edit).|
+|Dans l'onglet `Zone DNS`{.action}, un message indique que votre domaine utilise d'autres serveurs [DNS](/pages/web_cloud/domains/dns_zone_edit) et ceux-ci n'apparaissent pas sous la forme « ns **?** .ovh.net » ou « dns **?** .ovh.net » :<br><br>![warning_external_dns_srv](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/message-external-dns-servers.png){.thumbnail}|Contactez votre webmaster ou les [partenaires OVHcloud](/links/partner) à ce sujet.|
+|Votre nom de domaine n'apparaît pas dans la partie `Noms de domaine`{.action} de votre [espace client OVHcloud](/links/manager).<br><br>Ou l'onglet `Zone DNS`{.action} de votre domaine s'affiche de la façon suivante :<br><br>![zonedns_ndd_pas_sur_lec2](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/zone-without-domain-top-of-the-page.png){.thumbnail}|Cela signifie que votre domaine n'est pas géré depuis votre [espace client OVHcloud](/links/manager).<br><br>Vérifiez qu'il n'est pas géré depuis l'un de vos autres [comptes OVHcloud](/links/manager), si vous en avez créé plusieurs.<br><br>Vous pouvez également déterminer son bureau d'enregistrement et les serveurs DNS auxquels il est lié via notre outil [WHOIS](https://www.ovh.com/fr/support/outils/check_whois.pl).<br><br>Si besoin, contactez votre webmaster ou les [partenaires OVHcloud](/links/partner) à ce sujet.|
 
 ### Étape 2 : vérifier le certificat SSL de votre hébergement <a name="etape2"></a>
 
 Dans l'onglet `Informations générales`{.action} de votre hébergement OVHcloud, vérifiez la partie `Certificat SSL` :
 
-![ssl-certificate-in-general-tab](images/no-ssl-certificate.png){.thumbnail}
+![ssl-certificate-in-general-tab](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/no-ssl-certificate.png){.thumbnail}
 
 #### Scénario 1 : votre hébergement ne contient pas de certificat SSL
 
@@ -92,7 +92,7 @@ Si vous avez commandé l'un des **certificats SSL payants** de notre partenaire 
 >
 > Pour retrouver l'ensemble des e-mails envoyés par nos services, cliquez en haut à droite de votre [espace client OVHcloud](/links/manager), puis sur `E-mails de service`{.action}) :
 >
->![right-menu-email-button](images/right-menu-email-button.png){.thumbnail}
+>![right-menu-email-button](/pages/assets/screens/control_panel/product-selection/right-column/right-menu-email-button.png){.thumbnail}
 >
 
 ## Aller plus loin <a name="go-further"></a>
@@ -111,4 +111,4 @@ Pour des prestations spécialisées (référencement, développement, etc), cont
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

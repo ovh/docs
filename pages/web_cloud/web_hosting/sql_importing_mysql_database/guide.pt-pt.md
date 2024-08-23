@@ -48,13 +48,13 @@ Aceda à [Área de Cliente OVHcloud](/links/manager){.external}, clique em `Aloj
 
 Aparecerá uma tabela com todas as bases de dados criadas com o plano de alojamento. Clique nos três pontos à direita da linha correspondente à base de dados que pretende restaurar numa data anterior e selecione `Restaurar um backup`{.action}. Tenha em atenção que esta ação substituirá o conteúdo atual da base de dados pelo backup.
 
-![databaseimport](images/restore-backup.png){.thumbnail}
+![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/restore-backup.png){.thumbnail}
 
 Todos os backups ficarão disponíveis na base de dados selecionada.  Poderá consultar a data exata das cópias de segurança, assim como a data em que estas cópias de segurança serão eliminadas da ferramenta da OVHcloud.
 
 Clique nos três pontos à direita da linha correspondente à base de dados que pretende restaurar e selecione `Restaurar um backup`{.action}. Na janela que aparece, certifique-se de que as informações estão corretas e clique em `Confirmar`{.action}. Aguarde uns instantes para que a restauração seja realizada. 
 
-![databaseimport](images/restore-the-backup.png){.thumbnail}
+![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/restore-the-backup.png){.thumbnail}
 
 ### Importar o seu próprio backup a partir da Área de Cliente
 
@@ -62,7 +62,7 @@ Aceda à [Área de Cliente OVHcloud](/links/manager){.external}, clique em `Aloj
 
 Aparecerá uma tabela com todas as bases de dados criadas com o plano de alojamento. Clique nos três pontos à direita da linha correspondente à base de dados na qual pretende importar dados e selecione `Importar ficheiro`{.action}.
 
-![databaseimport](images/import-file.png){.thumbnail}
+![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/import-file.png){.thumbnail}
 
 Na nova janela, selecione `Importar um novo ficheiro`{.action} e clique em `Seguinte`{.action}.
 
@@ -71,13 +71,13 @@ Na nova janela, selecione `Importar um novo ficheiro`{.action} e clique em `Segu
 > A opção `Utilizar um ficheiro existente`{.action} permite importar novamente os dados de um ficheiro que já foi enviado na ferramenta de importação.
 >
 
-![databaseimport](images/database-import-step-1-new-file.png){.thumbnail}
+![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/database-import-step-1-new-file.png){.thumbnail}
 
 Introduza o nome do ficheiro (que lhe permitirá identificar este backup mais tarde, caso pretenda voltar a restaurá-lo) e selecione o ficheiro de backup no seu computador. Clique em `Enviar`{.action}.
 
 Aguarde a confirmação de envio e, de seguida, clique em `Seguinte`{.action}.
 
-![databaseimport](images/database-import-step-2-new-file.png){.thumbnail}
+![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/database-import-step-2-new-file.png){.thumbnail}
 
 Por último, selecione as opções adicionais que pretende aplicar:
 
@@ -87,7 +87,7 @@ Por último, selecione as opções adicionais que pretende aplicar:
 
 Uma vez selecionada a opção, clique em `Confirmar`{.action} e aguarde até que a importação seja concluída.
 
-![databaseimport](images/database-import-step-3.png){.thumbnail}
+![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/database-import-step-3.png){.thumbnail}
 
 ### Realizar a importação a partir da interface phpMyAdmin
 
@@ -95,7 +95,7 @@ Em primeiro lugar, deverá aceder a phpMyAdmin. Para isso, aceda à [Área de Cl
 
 Aparecerá uma tabela com todas as bases de dados criadas com o plano de alojamento. Clique nos três pontos à direita da linha correspondente à base de dados e selecione `Aceder ao phpMyAdmin`{.action}.
 
-![databaseimport](images/go-to-phpmyadmin.png){.thumbnail}
+![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
 
 Uma vez na página de phpMyAdmin, introduza as informações da base de dados, selecione a opção de aceder aos dados atuais da base de dados no menu pendente e, em seguida, conecte-se.  Depois de se conectar, na barra superior direita, selecione a opção `Importar`{.action} e introduza a informação que lhe é solicitada. Recordamos que existe um limite para o tamanho do ficheiro de configuração.
 
@@ -170,4 +170,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

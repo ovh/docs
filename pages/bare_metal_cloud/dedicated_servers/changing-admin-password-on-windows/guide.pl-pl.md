@@ -1,7 +1,7 @@
 ---
 title: 'Zmiana hasła administratora na serwerze dedykowanym z systemem Windows'
 excerpt: 'Dowiedz się, jak zmienić hasło administratora na serwerze dedykowanym z systemem Windows'
-updated: 2023-09-18
+updated: 2024-06-26
 ---
 
 > [!primary]
@@ -14,10 +14,17 @@ Podczas instalacji lub reinstalacji systemu operacyjnego Windows otrzymujesz has
 
 **Niniejszy przewodnik ułatwi Ci przeprowadzenie przez cały proces zmiany hasła administratora Twojego serwera poprzez konfiguracje trybu Rescue dostępne dla systemu operacyjnego Windows.**
 
+> [!warning]
+>
+> Ten przewodnik nie dotyczy uruchamiania w trybie rescue o nazwie `Windows Customer Rescue System`.
+>
+> Sprawdź [ten przewodnik](/pages/bare_metal_cloud/dedicated_servers/rcw-changing-admin-password-on-windows), gdy w Panelu klienta OVHcloud jest używana opcja `Windows Customer Rescue System (Windows2022-based)`.
+>
+
 ## Wymagania początkowe
 
-* Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/){.external} z zainstalowanym systemem Windows
-* Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/){.external} z zainstalowanym systemem Windows
+- Dostęp do [panelu klienta OVHcloud](/links/manager){.external}.
 
 ## W praktyce
 
@@ -231,7 +238,7 @@ Write hive files? (y/n) [n]: tam
 
 ### Etap 4: restart serwera 
 
-Zacznij od zastąpienia netbootu **Uruchom z dysku twardego** w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) (patrz [Etap 1](./#etap-1-restart-serwera-w-trybie-rescue)). 
+Zacznij od zastąpienia netbootu **Uruchom z dysku twardego** w Panelu [klienta OVHcloud](/links/manager) (patrz [Etap 1](./#etap-1-restart-serwera-w-trybie-rescue)). 
 
 Wróć do wiersza poleceń, odmontuj partycję i zrestartuj serwer, używając następujących poleceń:
 
@@ -255,7 +262,7 @@ System is going down for reboot NOW!
 
 ### Etap 5: zdefiniowanie nowego hasła (IPMI)
 
-W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) przejdź do zakładki `IPMI`{.action}, aby otworzyć sesję KVM.
+W [Panelu klienta OVHcloud](/links/manager) przejdź do zakładki `IPMI`{.action}, aby otworzyć sesję KVM.
 
 ![IPMI](images/adminpw_win_03.png){.thumbnail}
 
@@ -301,7 +308,7 @@ Więcej informacji o trybie Rescue znajdziesz w [tym przewodniku](/pages/bare_me
 
 #### Etap 2: usuń aktualne hasło
 
-W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) przejdź do zakładki `IPMI`{.action}, aby otworzyć sesję KVM.
+W [Panelu klienta OVHcloud](/links/manager) przejdź do zakładki `IPMI`{.action}, aby otworzyć sesję KVM.
 
 ![IPMI](images/adminpw_win_03.png){.thumbnail}
 
@@ -323,7 +330,7 @@ Serwer musi zostać zrestartowany.
 
 #### Etap 3: zrestartuj serwer 
 
-Zacznij od zastąpienia netbootu **Uruchom z dysku twardego** w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) (patrz [Etap 1](./#etap-1-restart-serwera-w-trybie-rescue)).
+Zacznij od zastąpienia netbootu **Uruchom z dysku twardego** w Panelu [klienta OVHcloud](/links/manager) (patrz [Etap 1](./#etap-1-restart-serwera-w-trybie-rescue)).
 
 W oknie KVM wybierz opcję zatrzymania `Wykonaj restart`{.action} za pomocą przycisku Windows "Uruchom" w lewym dolnym rogu.
 

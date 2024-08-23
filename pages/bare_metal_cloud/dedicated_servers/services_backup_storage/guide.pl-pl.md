@@ -1,7 +1,7 @@
 ---
 title: 'Korzystanie z Backup Storage na serwerze dedykowanym'
 excerpt: 'Dowiedz się, jak aktywować i uzyskać dostęp do dodatkowej przestrzeni dyskowej'
-updated: 2023-07-28
+updated: 2024-07-09
 ---
 
 > [!primary]
@@ -23,7 +23,7 @@ Serwery dedykowane OVHcloud dysponują dodatkową przestrzenią do przechowywani
 ## Wymagania początkowe
 
 * Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/){.external} na koncie OVHcloud
-* Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+* Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
 
 > [!warning]
 > Funkcja ta może być niedostępna lub ograniczona na [serwerach dedykowanych **Eco**](https://eco.ovhcloud.com/pl/about/).
@@ -35,7 +35,7 @@ Serwery dedykowane OVHcloud dysponują dodatkową przestrzenią do przechowywani
 
 ### Włącz Backup Storage
 
-Zaloguj się do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Wybierz serwer, przechodząc do części `Bare Metal Cloud`{.action}, a następnie `Serwery dedykowane`{.action}. W zakładce `Backup Storage`{.action} kliknij przycisk `Aktywuj Backup Storage`{.action}.
+Zaloguj się do [panelu klienta OVHcloud](/links/manager){.external}. Wybierz serwer, przechodząc do części `Bare Metal Cloud`{.action}, a następnie `Serwery dedykowane`{.action}. W zakładce `Backup Storage`{.action} kliknij przycisk `Aktywuj Backup Storage`{.action}.
 
 ![Włącz Backup Storage](images/backup-storage01.png){.thumbnail}
 
@@ -51,7 +51,7 @@ Dostęp do Twojej przestrzeni dyskowej jest ograniczony do adresów IP z listą 
 
 #### Dodaj dostęp do backupu
 
-Zaloguj się do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Wybierz serwer, przechodząc do części `Bare Metal Cloud`{.action}, a następnie `Serwery dedykowane`{.action}. Następnie wybierz kartę `Backup Storage`{.action}, po czym kliknij przycisk `Dodaj dostęp`{.action}.
+Zaloguj się do [panelu klienta OVHcloud](/links/manager){.external}. Wybierz serwer, przechodząc do części `Bare Metal Cloud`{.action}, a następnie `Serwery dedykowane`{.action}. Następnie wybierz kartę `Backup Storage`{.action}, po czym kliknij przycisk `Dodaj dostęp`{.action}.
 
 ![Dodaj dostęp do backupu](images/backup-storage03.png){.thumbnail}
 
@@ -117,19 +117,19 @@ Aby sprawdzić, czy Twój adres IP jest poprawnie autoryzowany, użyj następuj�
 
 ### Zresetuj hasło
 
-Zaloguj się do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Wybierz serwer, przechodząc do części `Bare Metal Cloud`{.action}, a następnie `Serwery dedykowane`{.action}. Następnie wybierz kartę `Backup Storage`{.action} i kliknij przycisk `Zapomniałeś hasła?`{.action}.
+Zaloguj się do [panelu klienta OVHcloud](/links/manager){.external}. Wybierz serwer, przechodząc do części `Bare Metal Cloud`{.action}, a następnie `Serwery dedykowane`{.action}. Następnie wybierz kartę `Backup Storage`{.action} i kliknij przycisk `Zapomniałeś hasła?`{.action}.
 
 Po kliknięciu `Potwierdź`{.action} w oknie, które się wyświetli, otrzymasz e-mail z hasłem wysłany na adres e-mail zarejestrowany na Twoim koncie administratora. Postępuj zgodnie z instrukcjami zawartymi w tej instrukcji, aby zresetować Twoje hasło.
 
 ### Usuń Backup Storage
 
-Zaloguj się do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Wybierz serwer, przechodząc do części `Bare Metal Cloud`{.action}, a następnie `Serwery dedykowane`{.action}. Następnie wybierz kartę `Backup Storage`{.action}, po czym kliknij przycisk `Usuń Backup Storage`{.action}.
+Zaloguj się do [panelu klienta OVHcloud](/links/manager){.external}. Wybierz serwer, przechodząc do części `Bare Metal Cloud`{.action}, a następnie `Serwery dedykowane`{.action}. Następnie wybierz kartę `Backup Storage`{.action}, po czym kliknij przycisk `Usuń Backup Storage`{.action}.
 
 Kliknij `Zatwierdź`{.action} komunikat ostrzegawczy, aby przystąpić do usunięcia. Twój Backup Storage zostanie usunięty po kilku minutach. Wszystkie dane z przestrzeni dyskowej zostaną usunięte.
 
 ### Zamawianie dodatkowej przestrzeni dyskowej
 
-Zaloguj się do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Wybierz serwer, przechodząc do części `Bare Metal Cloud`{.action}, a następnie `Serwery dedykowane`{.action}. Następnie wybierz kartę `Backup Storage`{.action} i kliknij przycisk `Zamów przestrzeń dyskową`{.action}.
+Zaloguj się do [panelu klienta OVHcloud](/links/manager){.external}. Wybierz serwer, przechodząc do części `Bare Metal Cloud`{.action}, a następnie `Serwery dedykowane`{.action}. Następnie wybierz kartę `Backup Storage`{.action} i kliknij przycisk `Zamów przestrzeń dyskową`{.action}.
 
 ![Zamawianie dodatkowej przestrzeni dyskowej](images/backup-storage06.png){.thumbnail}
 
@@ -249,7 +249,7 @@ Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi
 * **LocalFolder**\: ścieżka dostępu do katalogu lokalnego, w którym zamierzasz zapisać plik. 
 * **File**\: ścieżka dostępu pliku do pobrania
 
-####lftp (na Linux)
+#### lftp (na Linux)
 
 > [!primary]
 >
@@ -355,7 +355,7 @@ Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi
 * **LocalFolder**: ścieżka dostępu do katalogu lokalnego, w którym zamierzasz zapisać plik. 
 * **File**: ścieżka dostępu pliku do pobrania. 
 
-####lftp (Linux)
+#### lftp (Linux)
 
 > [!primary]
 >
@@ -442,6 +442,16 @@ Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi
 
 * **HostName**: nazwa Twojej usługi Backup Storage.
 * **ServiceName**: nazwa Twojego serwera (np: ns0000000.ip-123-123-123.net).
+
+Może pojawić się następujący komunikat o błędzie:
+
+```console
+System error 1272 has occurred.
+
+You can't access this shared folder because your organization's security policies block unauthenticated guest access. These policies help protect your PC from unsafe or malicious devices on the network.
+```
+
+Ten problem można rozwiązać, modyfikując rejestr systemu Windows: otwórz narzędzie systemu Windows *regedit* i wyszukaj wpis `HKLM\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters`. Ustaw dla parametru `AllowInsecureGuestAuth` wartość "1". Więcej informacji na ten temat można znaleźć na [stronach pomocy technicznej firmy Microsoft](https://answer.microsoft.com/en-us/windows/forum/all/you-cant-access-this-shared-folder-because-your/01d15775-2cbe-41f8-beb8-84ce588b34ab).
 
 ##### Linux
 

@@ -1,12 +1,8 @@
 ---
 title: Object Storage - Maîtrisez la réplication asynchrone sur vos buckets
 excerpt: Apprenez à automatiser et à gérer la réplication d'objets entre des buckets pour améliorer la disponibilité, la redondance et la conformité des données
-updated: 2024-04-15
+updated: 2024-07-08
 ---
-
-> [!warning]
-> La fonctionnalité de réplication asynchrone entre buckets est actuellement en phase bêta.
-> Ce guide peut donc être incomplet et sera mis à jour lors de la bêta. Notre équipe reste disponible sur notre canal Discord dédié. N’hésitez pas à nous rejoindre et à nous contacter : https://discord.gg/ovhcloud. Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit nos services Object Storage.
 
 ## Introduction
 
@@ -14,7 +10,7 @@ La réplication d'objets est une fonctionnalité puissante qui facilite la répl
 
 Les buckets de destination peuvent résider dans une seule région ou être répartis sur plusieurs régions, en fonction de vos besoins spécifiques. Cette flexibilité permet le placement et la gestion stratégiques des données sur les réseaux d'infrastructure mondiaux.
 
-## Objectif
+## Objectifs
 
 Ce guide vise à vous doter des connaissances et des compétences pour :
 
@@ -80,18 +76,11 @@ La réplication asynchrone d’OVHcloud S3 Object Storage est conçue pour facil
 
 ### Ce qui est répliqué et ce qui ne l’est pas
 
-Le tableau suivant présente le comportement par défaut de la fonctionnalité de réplication asynchrone d’OVHcloud Object Storage :
+Le tableau suivant présente le comportement **par défaut** de la fonctionnalité de réplication asynchrone d’OVHcloud Object Storage :
 
 | Ce qui est répliqué                                       | Ce qui n'est pas répliqué                                    |
 |-----------------------------------------------------------|--------------------------------------------------------------|
-| Objets créés *après* l'application de la configuration de réplication | Les marqueurs de suppression, c'est-à-dire que les objets supprimés dans le bucket source ne sont pas automatiquement supprimés dans le bucket destinataire |
-| Objets non chiffrés | Les réplicas d’objets, c’est-à-dire les objets résultant d’une opération de réplication précédente |
-|  | Objets déjà répliqués vers une destination précédente |
-| Métadonnées d'objet des objets sources vers les réplicas | Objets stockés dans le stockage temporaire Cold Archive |
-| Les objets du bucket source dont le propriétaire dispose des autorisations nécessaires pour lire et accéder aux ACL | Configurations de buckets, c’est-à-dire configuration du cycle de vie, configuration CORS, ACL de buckets, etc. |
-| Mises à jour de la liste de contrôle d'accès des objets | Actions résultant des actions de configuration du cycle de vie |
-| Tags d'objets | Objets créés *avant* l'upload de la configuration de réplication |
-| Configuration de la rétention des verrous d'objet S3 | Réplication vers un bucket dans un autre projet Public Cloud, c'est-à-dire que les buckets source et de destination doivent se trouver dans le même projet |
+| - Objets créés *après* l'application de la configuration de réplication<br> - Objets non chiffrés et objets chiffrés avec SSE-S3 (clés managées par OVHcloud)<br> - Les objets du bucket source dont le propriétaire dispose des autorisations nécessaires pour lire et accéder aux ACL<br> - Métadonnées d'objet des objets sources vers les réplicas<br> - Configuration de la rétention des verrous d'objet S3<br> - Mises à jour de la liste de contrôle d'accès des objets<br> - Tags d'objets<br><br><br><br>| - Objets créés *avant* l'upload de la configuration de réplication<br> - Objets déjà répliqués vers une destination précédente<br> - Les réplicas d’objets, c’est-à-dire les objets résultant d’une opération de réplication précédente<br> - Objets chiffrés avec SSE-C (clés fournies par le client)<br> - Configurations de buckets, c’est-à-dire configuration du cycle de vie, configuration CORS, ACL de buckets, etc.<br> - Actions résultant des actions de configuration du cycle de vie<br> - Les marqueurs de suppression, c'est-à-dire que les objets supprimés dans le bucket source ne sont pas automatiquement supprimés par défaut dans le bucket destinataire<br> - Objets stockés dans le stockage temporaire Cold Archive<br> - Réplication vers un bucket dans un autre projet Public Cloud, c'est-à-dire que les buckets source et de destination doivent se trouver dans le même projet |
 
 ### Configuration de la réplication
 
@@ -272,7 +261,7 @@ Cette configuration répliquera tous les objets (indiqués par le champ `Filter`
       "Destination": {
         "Bucket": "arn:aws:s3:::destination-bucket"
       },
-      "DeleteMarkerReplication": { "Status": "Disabled" },
+      "DeleteMarkerReplication": { "Status": "Enabled" },
     }
   ]
 }
@@ -361,28 +350,33 @@ Supposons que le bucket source, le bucket `region1-destination-bucket` et le buc
 
 ### Utilisation de la CLI
 
-#### Créer le bucket source
+#### Créer les buckets source et destinataire
 
-Le bucket source est le bucket dont les objets sont automatiquement répliqués.
+Le bucket source est le bucket dont les objets sont automatiquement répliqués et le bucket destinataire est le bucket qui va contenir vos copies d'objet.
 
 ```bash
 $ aws s3 mb s3://<bucket_name>
-aws --endpoint-url https://s3.<region_in_lowercase>.<storage_class>.cloud.ovh.net --profile default s3 mb s3://<bucket_name>
 ```
 
-**_Exemple:_** Création d'un bucket source dans la région SBG et dans la classe de stockage « Standard ».
+**_Exemple :_** Création d'un bucket source et d'un bucket destinataire.
 
 ```bash
 $ aws s3 mb s3://my-source-bucket
-aws --endpoint-url https://s3.sbg.io.cloud.ovh.net --profile default s3 mb s3://my-source-bucket
+$ aws s3 mb s3://my-destination-bucket
 ```
 
 #### Activer le versioning dans le bucket de destination et la source
 
 ```bash
-$ aws --endpoint-url https://s3.<region_in_lowercase>.<storage_class>.cloud.ovh.net --profile default s3api put-bucket-versioning --bucket my-destination-bucket --versioning-configuration Status=Enabled
-$ aws --endpoint-url https://s3.<region_in_lowercase>.<storage_class>.cloud.ovh.net --profile default s3api put-bucket-versioning --bucket my-source-bucket --versioning-configuration Status=Enabled
+$ aws s3api put-bucket-versioning --bucket <bucket_name> --versioning-configuration Status=Enabled
 
+```
+
+**_Exemple :_** Activation du versioning dans les buckets source et destinataire précédemment créés
+
+```bash
+$ aws s3api put-bucket-versioning --bucket my-source-bucket --versioning-configuration Status=Enabled
+$ aws s3api put-bucket-versioning --bucket my-destination-bucket --versioning-configuration Status=Enabled
 ```
 
 #### Appliquer la configuration de réplication
@@ -390,10 +384,10 @@ $ aws --endpoint-url https://s3.<region_in_lowercase>.<storage_class>.cloud.ovh.
 À l'aide de la CLI AWS, la configuration de réplication est appliquée au bucket source.
 
 ```bash
-$ aws --endpoint-url https://s3.gra.io.cloud.ovh.net --profile default s3api put-bucket-replication --bucket <source> --replication-configuration file://<<conf.json>
+$ aws s3api put-bucket-replication --bucket <source> --replication-configuration file://<conf.json>
 ```
 
-**_Exemple:_** : Répliquer tous les objets avec le préfixe « docs » ayant un tag « importance » avec la valeur « high » vers `my-destination-bucket` et répliquer les marqueurs de suppression, c'est-à-dire que les objets marqués comme supprimés dans la source seront marqués comme supprimés dans la destination.
+**_Exemple :_** : Répliquer tous les objets avec le préfixe « docs » ayant un tag « importance » avec la valeur « high » vers `my-destination-bucket` et répliquer les marqueurs de suppression, c'est-à-dire que les objets marqués comme supprimés dans la source seront marqués comme supprimés dans la destination.
 
 ```bash
 {
@@ -405,7 +399,13 @@ $ aws --endpoint-url https://s3.gra.io.cloud.ovh.net --profile default s3api put
       "Priority": 1,
       "Filter": {
         "And": {
-          "Prefix": "docs"
+          "Prefix": "docs",
+          "Tags": [
+            {
+              "Key": "importance",
+              "Value": "high"
+            }
+          ]
         }
       },
       "Destination": {

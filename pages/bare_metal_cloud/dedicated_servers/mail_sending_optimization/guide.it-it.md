@@ -66,13 +66,13 @@ Per ottimizzare l'invio e ridurre i rischi di blocco delle tue email, è necessa
 
 Per prima cosa, crea un record A nella zona DNS del tuo dominio con l'indirizzo IP del tuo server come destinazione.
 
-Se i server DNS sono gestiti da OVHcloud, consulta la nostra guida [sulla modifica di una zona DNS OVHcloud dallo Spazio Cliente](/pages/web_cloud/domains/dns_zone_edit#accedere-alla-gestione-di-una-zona-dns-ovhcloud).
+Se i server DNS sono gestiti da OVHcloud, consulta la nostra guida [sulla modifica di una zona DNS OVHcloud dallo Spazio Cliente](/pages/web_cloud/domains/dns_zone_edit).
 
 Una volta modificata la zona DNS del dominio, la propagazione delle modifiche potrebbe richiedere fino a 24 ore.
 
 Aggiungi il record PTR (alias noto come reverse):
 
-Nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, accedi alla sezione `Bare Metal Cloud`{.action} e apri `Network`{.action}. Clicca su `IP`{.action}. 
+Nello [Spazio Cliente OVHcloud](/links/manager){.external}, accedi alla sezione `Bare Metal Cloud`{.action} e apri `Network`{.action}. Clicca su `IP`{.action}. 
 
 Per configurare il Reverse DNS su un indirizzo Additional IP, clicca sulla scheda `Additional IP`{.action}.
 
@@ -151,11 +151,11 @@ Potrebbe essere utile utilizzare un sito come [Mail Tester](http://www.mail-test
 
 ## Per saperne di più
 
-[Configura un record DKIM](/pages/web_cloud/domains/dns_zone_dkim)
+[Migliorare la sicurezza delle email tramite un record DKIM](/pages/web_cloud/domains/dns_zone_dkim)
 
-[Configura un record SPF](/pages/web_cloud/domains/dns_zone_spf)
+[Migliorare la sicurezza delle email tramite un record SPF](/pages/web_cloud/domains/dns_zone_spf)
 
-[Configura un record DMARC](/pages/web_cloud/domains/dns_zone_dmarc)
+[Migliorare la sicurezza delle email tramite un record DMARC](/pages/web_cloud/domains/dns_zone_dmarc)
 
 Per essere accompagnato sull'implementazione delle soluzioni OVHcloud, contatta la nostra [rete di partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 

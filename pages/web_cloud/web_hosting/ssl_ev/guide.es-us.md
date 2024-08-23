@@ -65,7 +65,7 @@ Consulte nuestra guía sobre cómo [gestionar un certificado SSL en su alojamien
 
 Introduzca con exactitud la información solicitada por **Sectigo** antes de que se le emita el certificado SSL EV. 
 
-![SSL EV form](images/ssl-ev-step-2.png){.thumbnail}
+![SSL EV form](/pages/assets/screens/website/order/ssl-ev-step-2.png){.thumbnail}
 
 Haga clic en `Continuar`{.action} una vez **todos los elementos** correctamente introducidos.
 
@@ -84,19 +84,19 @@ Continúe con el pedido hasta que abone el importe pendiente para validar la sol
 
 Si todavía no ha contratado su dominio y el alojamiento asociado, acceda a nuestra [página de inicio de OVHcloud](/links/website), introduzca un dominio en el **formulario de búsqueda previsto a tal efecto** y haga clic en `Buscar`{.action} para iniciar el pedido.
 
-![SSL EV select domain](images/ssl-ev-search-bar.png){.thumbnail}
+![SSL EV select domain](/pages/assets/screens/website/order/ssl-ev-search-bar.png){.thumbnail}
 
 Seleccione el dominio y elija el alojamiento y las opciones hasta que se abra la pestaña `Configure su alojamiento web`.
 
 Seleccione su elección de instalación de `módulo en 1 clic`{.action} y de `CDN`{.action} y descienda al final de la página hasta la sección `Proteja su sitio web con nuestros certificados SSL`{.action}.
 
-![SSL EV order](images/ssl-ev-selection.png){.thumbnail}
+![SSL EV order](/pages/assets/screens/website/order/ssl-ev-selection.png){.thumbnail}
 
 Seleccione `Sectigo EV SSL`{.action} y haga clic en `Siguiente`{.action}.
 
 Introduzca la información solicitada por **Sectigo** antes de expedir el certificado SSL EV en la nueva página.
 
-![SSL EV form](images/ssl-ev-step-2.png){.thumbnail}
+![SSL EV form](/pages/assets/screens/website/order/ssl-ev-step-2.png){.thumbnail}
 
 Haga clic en `Siguiente`{.action} una vez **todos los elementos** correctamente introducidos.
 
@@ -183,4 +183,4 @@ Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con 
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

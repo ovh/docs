@@ -45,11 +45,11 @@ Depending on which OVHcloud [Web Hosting plan](/links/web/hosting) you have, the
 
 - **For Web Hosting plans that do not allow you to create a second FTP user** (*100M free hosting* and *Personal hosting*): Click on the *pencil icon* in the `Password`{.action} column of the table that appears, enter the new password **in accordance with the password policy**, then confirm the change by clicking on the *green* validation button.
 
-![change-ftp-password-step1-perso](images/change-password-perso.png){.thumbnail}
+![change-ftp-password-step1-perso](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/change-password-perso.png){.thumbnail}
 
 - **For plans that allow you to create multiple FTP users** (*Pro* and *Performance*): Click on the `...`{.action} button to the right of the FTP user concerned, then `Change password`{.action}. In the window that pops up, enter the new password you want **by following the password policy**, enter it again and click the `Confirm`{.action} button.
 
-![change-ftp-password-pro](images/change-password-pro.png){.thumbnail}
+![change-ftp-password-pro](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/change-password-pro.png){.thumbnail}
 
 > [primary]
 >
@@ -80,4 +80,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

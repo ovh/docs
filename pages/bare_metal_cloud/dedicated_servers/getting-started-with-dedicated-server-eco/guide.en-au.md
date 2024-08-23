@@ -12,7 +12,7 @@ A dedicated server is a physical server ("bare metal") located in one of our dat
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - A [dedicated server](https://www.ovhcloud.com/en-au/bare-metal/) of the ranges Kimsufi, So You Start or Rise in your OVHcloud account
 - Administrative access via SSH or remote desktop (Windows) to your server
 
@@ -39,7 +39,7 @@ A dedicated server is a physical server ("bare metal") located in one of our dat
 > Find more information about server operating systems on [our web page](https://www.ovhcloud.com/en-au/bare-metal/os/).
 >
 
-You can easily reinstall your server or choose a different OS image to install in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au). From the `General information`{.action} tab, click on `...`{.action} next to the operating system and then click `Install`{.action}.
+You can easily reinstall your server or choose a different OS image to install in your [OVHcloud Control Panel](/links/manager). From the `General information`{.action} tab, click on `...`{.action} next to the operating system and then click `Install`{.action}.
 
 ![Reinstall button](images/reinstalling-your-server-01.png){.thumbnail}
 
@@ -51,7 +51,7 @@ In the popup window, select one of the installation options:
 
 > [!primary]
 >
-> Some proprietary operating systems or platforms such as Plesk and Windows require licences which generate additional fees. You can buy licences [via OVHcloud](https://www.ovhcloud.com/en-au/bare-metal/os/) or from an external reseller. You will then need to apply your licence, in the operating system itself or by using your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
+> Some proprietary operating systems or platforms such as Plesk and Windows require licences which generate additional fees. You can buy licences [via OVHcloud](https://www.ovhcloud.com/en-au/bare-metal/os/) or from an external reseller. You will then need to apply your licence, in the operating system itself or by using your [OVHcloud Control Panel](/links/manager).
 >
 You can manage all your licences in the `Bare Metal Cloud`{.action} section under `Licences`{.action}. In this section, you can also order licences or add existing ones via the `Actions`{.action} button.
 >
@@ -145,7 +145,7 @@ Depending on your requirements for security, mobility and convenience, SSH keys 
 
 Once the installation is completed, you will receive an email with your Windows login credentials. You can then connect to your server via RDP (**R**emote **D**esktop **P**rotocol). On your local Windows device, open the `Remote Desktop Connection` client application.
 
-![Windows remote](images/windows-connect-03.png){.thumbnail}
+![Windows remote](/pages/assets/screens/other/windows/windows_rdp.png){.thumbnail}
 
 Enter the IPv4 address of your server, then your username and passphrase. Usually a warning message will appear, asking to confirm the connection because of an unknown certificate. Click on `Yes`{.action} to log in.
 
@@ -172,17 +172,17 @@ To activate them, follow the steps below by navigating through the tabs:
 > 2. **Open the "Run" utility**
 >>
 >> Open the Windows start menu and click on `Run`{.action}.<br><br>
->>![IPMI](images/windowsboot1.png){.thumbnail}<br>
+>>![IPMI](/pages/assets/screens/other/windows/windows_start_run.png){.thumbnail}<br>
 >>
 > 3. **Open "msconfig"**
 >>
 >> Enter "msconfig" and click on `OK`{.action}.<br><br>
->>![IPMI](images/windowsboot2.png){.thumbnail}<br>
+>>![IPMI](/pages/assets/screens/other/windows/windows_msconfig.png){.thumbnail}<br>
 >>
 > 4. **Activate logs**
 >>
 >> In the new window, activate the logs option next to `Boot log`. Click on `OK`{.action}.<br><br>
->>![IPMI](images/windowsboot3.png){.thumbnail}<br>
+>>![IPMI](/pages/assets/screens/other/windows/windows_log.png){.thumbnail}<br>
 >>
 
 The next time your server boots, logs will be saved into a `.txt` file. The file path is: `C:\Windows\ntbtlog.txt`.
@@ -198,7 +198,7 @@ A reboot might become necessary in order to apply updated configurations or to f
 reboot
 ```
 
-However, you can carry out a "hard reboot" at any time in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au). From the `General information`{.action} tab, click on `...`{.action} next to "Status" in the **Service status** box, then click `Restart`{.action} and `Confirm`{.action} the action in the popup window.
+However, you can carry out a "hard reboot" at any time in your [OVHcloud Control Panel](/links/manager). From the `General information`{.action} tab, click on `...`{.action} next to "Status" in the **Service status** box, then click `Restart`{.action} and `Confirm`{.action} the action in the popup window.
 
 ![Rebooting](images/rebooting-your-server.png){.thumbnail}
 
@@ -214,7 +214,7 @@ If your server runs Windows, use [this guide](/pages/bare_metal_cloud/dedicated_
 
 ### OVHcloud Monitoring
 
-You can set the monitoring status for a dedicated server from the `General information`{.action} tab in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) (section **Service status**).
+You can set the monitoring status for a dedicated server from the `General information`{.action} tab in your [OVHcloud Control Panel](/links/manager) (section **Service status**).
 
 ![Monitoring](images/monitoring-your-server.png){.thumbnail}
 
@@ -266,7 +266,7 @@ OVHcloud dedicated servers are delivered with a /64 IPv6 block. To use the addre
 
 ### Rescue mode
 
-For any kind of issue, the first general troubleshooting step to take is rebooting your server into rescue mode from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au). It is important to identify server issues in this mode to exclude software-related problems before contacting our support teams.
+For any kind of issue, the first general troubleshooting step to take is rebooting your server into rescue mode from your [OVHcloud Control Panel](/links/manager). It is important to identify server issues in this mode to exclude software-related problems before contacting our support teams.
 
 Please refer to the [rescue mode guide](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
 
@@ -308,4 +308,4 @@ To activate and use the backup storage, please refer to [this guide](/pages/bare
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-au/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

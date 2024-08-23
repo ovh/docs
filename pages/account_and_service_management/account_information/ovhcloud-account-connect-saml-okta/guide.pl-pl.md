@@ -1,7 +1,7 @@
 ---
 title: "Włącz połączenia Okta SSO z Twoim kontem OVHcloud"
 excerpt: "Dowiedz się, jak powiązać usługę Okta z kontem OVHcloud przy użyciu SAML 2.0"
-updated: 2024-03-05
+updated: 2024-07-05
 ---
 
 ## Wprowadzenie
@@ -43,7 +43,7 @@ W etapie "General Settings" dodasz nazwę dla tej aplikacji, na przykład **OVHc
 
 ![Dodaj aplikację SAML, etap 3](images/OKTA_add_application_step3.png){.thumbnail}
 
-Na etapie "Configure SAML" uzupełnij pola `Single sign-on URL` i `Audience URI` wartościami Twojego regionu: 
+Na etapie "Configure SAML" uzupełnij pola `Single sign-on URL` i `Audience URI` wartościami Twojego regionu:
 
 - Region UE: **Single sign-on URL**: `https://www.ovhcloud.com/eu/auth/saml/acs` i **URI**: `https://www.ovhcloud.com/eu/auth/`
 - Region CA: **Single sign-on URL**: `https://www.ovhcloud.com/ca/auth/saml/acs` i **URI**: `https://www.ovhcloud.com/ca/auth/`
@@ -80,23 +80,23 @@ Twoja usługa Okta jest od tej pory zaufana w OVHcloud jako dostawca usług. Nas
 
 Aby dodać Okta jako zaufanego dostawcę tożsamości, należy dostarczyć metadane dostawcy tożsamości w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
-Po zalogowaniu kliknij Twój profil w prawym górnym rogu.
+Kliknij nazwę konta w prawym górnym rogu, a następnie ponownie na pasku bocznym.
 
-![Top menu OVHcloud](images/ovhcloud_top_menu.png){.thumbnail}
+![Dostęp do menu IAM](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-Kliknij Twoją nazwę, aby przejść do strony zarządzania profilem.
+Aby uzyskać dostęp do menu IAM, przejdź do Panelu klienta.
 
-![User Informacje OVHcloud](images/ovhcloud_user_infos.png){.thumbnail}
+![Dostęp do menu IAM](images/access_to_the_IAM_menu_02.png){.thumbnail}
 
-Otwórz zakładkę `Zarządzanie użytkownikami`{.action}.
+Następnie kliknij zakładkę `Tożsamości`{.action}, aby zarządzać użytkownikami lokalnymi.
 
-![OVHcloud menu profile](images/ovhcloud_profile_menu.png){.thumbnail}
+![Dostęp do menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
 Kliknij przycisk `Logowanie SSO`{.action}.
 
 ![Połączenie SSO OVHcloud etap 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 
-Wpisz metadane XML usługi Okta. Uzupełnij pole "Nazwa atrybutu grupy" wartością `groups`. Kliknij na `Zatwierdź`{.action}.
+Wpisz metadane XML usługi Okta. Uzupełnij pole "Nazwa atrybutu użytkownika" wartością `Name` i pole "Nazwa atrybutu grupy" wartością `Group`. Kliknij na `Zatwierdź`{.action}.
 
 Użytkowników lokalnych można zachować, zaznaczając pole `Zachowaj status „aktywny” dla użytkowników OVHcloud`.
 

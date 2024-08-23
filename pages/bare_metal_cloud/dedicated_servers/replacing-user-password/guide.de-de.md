@@ -24,11 +24,11 @@ In diesem Fall können Sie sich über den OVHcloud Rescue-Modus mit Ihrem Server
 ## Voraussetzungen
 
 - Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) oder einen [VPS](https://www.ovhcloud.com/de/vps/) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 > [!primary]
 >
-> Diese Anleitung gilt nicht für Installationen von **Windows** Server. Folgen Sie stattdessen unserer Anleitung zum [Ändern des Administratorpassworts auf einem Windows Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/changing-admin-password-on-windows) oder [Ändern des Administratorpassworts auf einem Windows VPS](/pages/bare_metal_cloud/virtual_private_servers/resetting_a_windows_password).
+> Diese Anleitung gilt nicht für Installationen von **Windows** Server. Folgen Sie stattdessen unserer Anleitung zum [Ändern des Administratorpassworts auf einem Windows Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/rcw-changing-admin-password-on-windows) oder [Ändern des Administratorpassworts auf einem Windows VPS](/pages/bare_metal_cloud/virtual_private_servers/resetting_a_windows_password).
 >
 
 ## In der praktischen Anwendung
@@ -85,7 +85,7 @@ Retype new password:
 passwd: password updated successfully
 ```
 
-Denken Sie daran, den regulären Startmodus zu verwenden, wenn Sie Ihren Server im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) neu starten.
+Denken Sie daran, den regulären Startmodus zu verwenden, wenn Sie Ihren Server im [OVHcloud Kundencenter](/links/manager) neu starten.
 
 Folgen Sie bei Bedarf der passenden [Anleitung zum Rescue-Modus](#step1).
 

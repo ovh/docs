@@ -17,13 +17,13 @@ You can make use of these instance backups for two basic purposes:
 ## Requirements
 
 - A backup of a [Public Cloud instance](https://www.ovhcloud.com/en/public-cloud/instance-backup/)
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
 ### Creating an instance from a backup
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and open your `Public Cloud`{.action} project. Then Click `Instance backup`{.action} under the `Storage` section.
+Log in to the [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project. Then Click `Instance backup`{.action} under the `Storage` section.
 
 ![public-cloud-instance-backup](images/restorebackup01.png){.thumbnail}
 
@@ -52,7 +52,7 @@ For further information on creating an instance, please refer to [this guide](/p
 
 ### Restoring an instance from a backup
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and switch to the `Public Cloud`{.action} section. Click on `Instances`{.action} in the left-hand sidebar.
+Log in to the [OVHcloud Control Panel](/links/manager) and switch to the `Public Cloud`{.action} section. Click on `Instances`{.action} in the left-hand sidebar.
 
 ![public-cloud-instance-backup](images/restorebackup04.png){.thumbnail}
 
@@ -84,4 +84,4 @@ The instance will have the status `Re-installation` until the process is complet
 
 [Creating instance backups](/pages/public_cloud/compute/save_an_instance)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

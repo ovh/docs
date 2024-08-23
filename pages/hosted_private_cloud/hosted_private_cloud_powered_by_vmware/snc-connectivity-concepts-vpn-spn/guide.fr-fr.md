@@ -5,7 +5,7 @@ updated: 2021-11-18
 ---
 
 > [!primary]
-> Une version en langue anglaise de cette page est disponible [ici](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/snc-connectivity-concepts-vpn-spn).
+> Une version en langue anglaise de cette page est disponible [ici](https://help.ovhcloud.com/csm/en-gb-networking-secnumcloud-connectivity-vpn-spn-concept?id=kb_article_view&sysparm_article=KB0044874).
 >
 
 ## Objectif

@@ -28,7 +28,7 @@ Suite à la détection d'un fonctionnement suspect, nos robots de sécurité peu
  
  *Si vous êtes concerné par ce type de blocage, une notification vous est envoyée sur l'adresse e-mail du contact « administrateur » de votre hébergement web*
 
-![http-403](images/http-403.png){.thumbnail}
+![http-403](/pages/assets/screens/other/browsers/errors/http-403.png){.thumbnail}
 
 **Découvrez comment débloquer l'accès à votre site web en cas d’affichage d'une page « 403 forbidden ».**
 
@@ -36,7 +36,7 @@ Suite à la détection d'un fonctionnement suspect, nos robots de sécurité peu
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou d'échanger avec notre [communauté d'utilisateurs](https://community.ovh.com) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou d'échanger avec notre [communauté d'utilisateurs](/links/community) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
 >
 
 ## Prérequis
@@ -131,7 +131,7 @@ Si votre hébergement a été fermé il y a plus de deux semaines, contactez un 
 
 Ouvrez le logiciel FileZilla puis [connectez-vous à votre espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_connection). Cliquez ensuite sur `Serveur`{.action} dans la barre de menu, puis sur `Entrer une commande FTP`{.action} (l'intitulé peut être différent suivant la version de FileZilla que vous utilisez) :
 
-![command_filezilla1](images/enter-custom-command-step-1.png){.thumbnail}
+![command_filezilla1](/pages/assets/screens/other/web-tools/filezilla/enter-custom-command-step-1.png){.thumbnail}
 
 Dans la fenêtre qui s'affiche, renseignez la commande ci-dessous puis validez-la :
 
@@ -139,7 +139,7 @@ Dans la fenêtre qui s'affiche, renseignez la commande ci-dessous puis validez-l
 SITE CHMOD 705 /
 ```
 
-![command_filezilla2](images/enter-custom-command-step-2.png){.thumbnail}
+![command_filezilla2](/pages/assets/screens/other/web-tools/filezilla/enter-custom-command-step-2.png){.thumbnail}
 
 Une réponse **« 200 Permissions changed on / »** confirme que la manipulation s'est bien effectuée. Pour le vérifier, essayez à nouveau d'accéder à votre site web.
 
@@ -164,7 +164,7 @@ Appuyez sur le bouton `FTP Explorer`{.action} et connectez-vous à votre [espace
 
 Cliquez sur le bouton `Avancé`{.action} puis sur le bouton `Go`{.action} à côté de « Envoyer des commandes FTP arbitraires au serveur FTP ».
 
-![net2ftp](images/advanced-ftp-functions.png){.thumbnail}
+![net2ftp](/pages/assets/screens/other/web-tools/net2ftp/advanced-ftp-functions.png){.thumbnail}
 
 Dans la partie supérieure de la page, renseignez la commande ci-dessous :
 
@@ -174,7 +174,7 @@ SITE CHMOD 705 /
 
 puis cliquez sur le bouton représentant un « V » vert.
 
-![result_command_on_net2ftp](images/ftp-command-result.png){.thumbnail}
+![result_command_on_net2ftp](/pages/assets/screens/other/web-tools/net2ftp/ftp-command-result.png){.thumbnail}
 
 Une réponse **« 200 Permissions changed on / »** confirme que la manipulation s'est bien effectuée. Pour le vérifier, essayez à nouveau d'accéder à votre site web.
 
@@ -197,4 +197,4 @@ Pour des prestations spécialisées (référencement, développement, etc), cont
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

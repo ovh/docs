@@ -1,7 +1,7 @@
 ---
 title: "Annunci di fine vendita/vita database SQL"
 excerpt: "Annunci di fine vendita/vita database SQL"
-updated: 2024-06-06
+updated: 2024-07-11
 ---
 
 > [!primary]
@@ -13,6 +13,7 @@ I prodotti coperti da questi annunci di fine vendita e di fine ciclo di vita son
 |Versione|Fine del ciclo di vita|Fine vendita|Fine supporto|
 |---|---|---|---|
 |MySQL 5.7|2023-11-16|2024-02-16|2024-05-17|
+|MySQL 8.0|Da definire|Da definire|Da definire|
 
 ## Per saperne di più
 
@@ -28,4 +29,4 @@ Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [p
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

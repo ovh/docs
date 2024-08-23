@@ -59,7 +59,7 @@ Zaloguj się do [Panelu klienta OVHcloud](/links/manager) w sekcji `Web Cloud`{.
 
 W karcie `Informacje ogólne`{.action} przejdź do sekcji **Abonament** w prawym dolnym rogu. Kliknij `...`{.action} przed **kontaktami**, po czym kliknij `Zmień właściciela`{.action}.
 
-![zmiana właściciela](images/change-domain-name-holder.png){.thumbnail}
+![zmiana właściciela](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/change-domain-name-holder.png){.thumbnail}
 
 > [!warning]
 >
@@ -70,7 +70,7 @@ W karcie `Informacje ogólne`{.action} przejdź do sekcji **Abonament** w prawym
 
 Otworzy się nowa zakładka przeglądarki z wszystkimi domenami uprawnionymi do zmiany właściciela. Wybierz z listy nazwę domeny, zaznaczając kratkę po lewej stronie. Etap ten może być również wykorzystany do rozpoczęcia operacji zbiorczej: można zainicjować zmianę właściciela dla kilku domen jednocześnie, na przykład w celu zmiany właściciela dla wszystkich domen *.ovh*. Po dokonaniu wyboru kliknij `Dalej`{.action}.
 
-![zmiana właściciela](images/available-domains.png){.thumbnail}
+![zmiana właściciela](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/available-domains.png){.thumbnail}
 
 W formularzu szczegółów właściciela wprowadź poprawne informacje we wszystkich obowiązkowych polach. Uważaj na błędy podczas wprowadzania danych i unikaj używania [znaków ASCII](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm), jeśli to możliwe. Należy pamiętać, że wszelkie niedokładne lub błędne informacje mogą powodować błąd techniczny, a tym samym opóźnienie w całym procesie wymiany informacji.
 
@@ -98,7 +98,7 @@ Jeśli musisz zaktualizować niektóre informacje uboczne, takie jak numer telef
 
 W sekcji **Abonament** w zakładce `Informacje ogólne`{.action} kliknij `...`{.action} przed **kontaktami**, a następnie kliknij `Aktualizuj dane właściciela`{.action}.
 
-![zmiana właściciela](images/refresh-owner-information.png){.thumbnail}
+![zmiana właściciela](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/refresh-owner-information.png){.thumbnail}
 
 W przypadku tej operacji nie musisz potwierdzać modyfikacji za pomocą e-maila.
 
@@ -110,4 +110,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 
+Dołącz do [grona naszych użytkowników](/links/community). 

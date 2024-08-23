@@ -201,11 +201,11 @@ Algunos consejos para que sus archivos sean lo más ligeros posible:
 
 Por motivos de legibilidad, es conveniente almacenar sus imágenes en un directorio dedicado:
 
-![Árbol de archivos y carpetas](images/create_your_personal_webpage_1.png){.thumbnail}
+![Árbol de archivos y carpetas](/pages/assets/screens/other/web-tools/vscode/create_your_personal_webpage_1.png){.thumbnail}
 
 Consideremos un archivo en formato *PNG*. Sitúcelo en el directorio "Imágenes":
 
-![Árbol de archivos y carpetas con imágenes](images/create_your_personal_webpage_2.png){.thumbnail}
+![Árbol de archivos y carpetas con imágenes](/pages/assets/screens/other/web-tools/vscode/create_your_personal_webpage_2.png){.thumbnail}
 
 Ahora vamos a crear un nuevo párrafo en el que colocar la imagen (en este ejemplo no explicamos el tamaño de la imagen en píxeles). El navegador lo mostrará según su tamaño original (en forma de archivo).
 
@@ -229,7 +229,7 @@ Ahora vamos a crear un nuevo párrafo en el que colocar la imagen (en este ejemp
 
 El resultado en su navegador debería ser el siguiente:
 
-![Resultado de código HTML en el navegador](images/create_your_personal_webpage_3_es.png){.thumbnail}
+![Resultado de código HTML en el navegador](/pages/assets/screens/other/browsers/web-pages/create_your_personal_webpage_3_es.png){.thumbnail}
 
 ### Dar formato a su contenido utilizando los estilos CSS
 
@@ -242,7 +242,7 @@ Las hojas de estilo permiten cambiar la apariencia y el comportamiento de los el
 
 Al igual que con los archivos HTML, los archivos CSS se pueden crear con cualquier editor de texto. La extensión de estos archivos debe estar en *.css*.
 
-![Colocación de archivo CSS](images/create_your_personal_webpage_4.png){.thumbnail}
+![Colocación de archivo CSS](/pages/assets/screens/other/web-tools/vscode/create_your_personal_webpage_4.png){.thumbnail}
 
 Ahora debemos asociar este archivo CSS, que hemos nombrado por convenio *style.css*, a nuestra página HTML. Este enlace se realiza añadiendo una etiqueta `<link>` en la etiqueta `<head>` del archivo index.html :
 
@@ -301,7 +301,7 @@ Comprobará que los textos se pegan ahora a los bordes del navegador.
 
 La propiedad padding define el borde giratorio (margen interior), es decir, el espacio fuera del bloque que contiene el texto (o cualquier elemento). El siguiente esquema ilustra la correspondencia de estos términos en el llamado "modelo de cajas" en CSS:
 
-![Modelo de la caja CSS](images/create_your_personal_webpage_5.png){.thumbnail}
+![Modelo de la caja CSS](/pages/assets/schemas/web-hosting/create_your_personal_webpage_5.png){.thumbnail}
 
 ### Mejorar la estructura HTML del documento
 
@@ -449,4 +449,4 @@ Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con 
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte](/links/support).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

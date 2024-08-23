@@ -58,25 +58,25 @@ Visualizzi una tabella con tutti i database creati per la tua soluzione di hosti
 
 Sempre nella scheda `Database`{.action}, clicca sul pulsante `...`{.action} a destra del database di cui vuoi effettuare il backup e seleziona `Crea un backup`{.action}.
 
-![databasedump](images/create-a-backup.png){.thumbnail}
+![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-backup.png){.thumbnail}
 
 Nella nuova finestra, seleziona la data in cui effettuare il backup e clicca sul pulsante `Avanti`{.action}. Verifica la correttezza delle informazioni e clicca su `Conferma`{.action} per avviare l’operazione.
 
 Attendi il completamento del processo. appena il backup diventerà disponibile, sarà possibile recuperarlo.
 
-![databasedump](images/create-a-database-backup-step-1.png){.thumbnail}
+![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-backup-step-1.png){.thumbnail}
 
 #### Step 2: recupera un backup del database
 
 Sempre nella scheda `Database`{.action}, clicca sul pulsante `...`{.action} a destra del database di cui vuoi effettuare il backup e seleziona `Ripristina un backup`{.action}.
 
-![databasedump](images/restore-backup.png){.thumbnail}
+![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/restore-backup.png){.thumbnail}
 
 Visualizzi una tabella con tutti i backup disponibili per il database selezionato. di cui viene mostrata la data di creazione e di rimozione dei backup dallo strumento OVHcloud.
 
 Per scaricare un backup, clicca sul pulsante `...`{.action} a destra del backup che vuoi ripristinare e poi su `Scarica il backup`{.action}. Viene visualizzata una finestra in cui è possibile salvare il file nel computer. Conferma e attendi il completamento dell’operazione.
 
-![databasedump](images/download-the-backup.png){.thumbnail}
+![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/download-the-backup.png){.thumbnail}
 
 ### Recupera un backup dall'interfaccia web phpMyAdmin
 
@@ -84,7 +84,7 @@ Per effettuare l’operazione, accedi a *phpMyAdmin*. Per conoscere il link di a
 
 Visualizzi una tabella con tutti i database creati per la tua soluzione di hosting. Clicca sul pulsante `...`{.action} in corrispondenza del database interessato e seleziona `Accedi a phpMyAdmin`{.action}.
 
-![databasedump](images/go-to-phpmyadmin.png){.thumbnail}
+![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
 
 Accedi all’interfaccia di connessione a *phpMyAdmin*, inserisci le informazioni del database ed effettua l’accesso. Accedi alla scheda `Esporta`{.action}, in cui sono proposti due metodi di esportazione:
 
@@ -182,4 +182,4 @@ Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [p
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

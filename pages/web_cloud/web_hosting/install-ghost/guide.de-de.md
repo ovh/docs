@@ -37,7 +37,7 @@ Um auf die Runtime Engines Ihres Cloud Web Hostings zuzugreifen, loggen Sie sich
 
 Es wird eine Tabelle angezeigt, die alle aktuell hinzugefügten Runtime Engines enthält. Vergewissern Sie sich, dass Node.js als Runtime Engine aktiviert ist. Ist das der Fall, gehen Sie zu Schritt 2 „[Node.js mit einer Multisite verbinden](./#schritt-2-nodejs-mit-einer-multisite-verbinden)“ über.
 
-![ghost cloud web](images/tab-nodejs8.png){.thumbnail}
+![ghost cloud web](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/tab-nodejs8.png){.thumbnail}
 
 Ist das nicht der Fall, fügen Sie eine neue Engine hinzu (falls Ihr Hosting Angebot dies erlaubt) oder ändern Sie die vorhandene Runtime Engine.
 
@@ -56,13 +56,13 @@ Geben Sie im angezeigten Fenster die folgenden Werte aus unserem Beispiel ein od
 
 Nachdem Sie diese Informationen eingegeben haben, klicken Sie auf `Bestätigen`{.action}. Für weitere Informationen zur Verwaltung der Runtime Engines lesen Sie unsere Anleitung „[Cloud Web Runtime Engines verwalten](/pages/web_cloud/web_hosting/manage-runtime){.external}“.
 
-![ghost cloud web](images/modify-a-runtime-software-application-nodejs8.png){.thumbnail}
+![ghost cloud web](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/modify-a-runtime-software-application-nodejs8.png){.thumbnail}
 
 ### Schritt 2: Node.js mit einer Multisite verbinden
 
 Nun, da Node.js als Runtime Engine aktiviert ist, muss es mit einer Ihrer Multisites verbunden werden. Gehen Sie zunächst zum Tab `Multisite`{.action}. Die angezeigte Tabelle listet alle Domains auf, die Ihrem Hosting als Multisite zugewiesen sind. 
 
-![ghost cloud web](images/tab-nodejs8-full-disabled.png){.thumbnail}
+![ghost cloud web](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/multisite/tab-nodejs8-full-disabled-2.png){.thumbnail}
 
 Zwei Spalten enthalten für uns wichtige Informationen. Stellen Sie sicher, dass die Runtime Engine Node.js mit den betreffenden Domains verbunden und dass das Wurzelverzeichnis korrekt ist. Verwenden Sie wenn nötig die nachstehenden Informationen. Ist beides der Fall, gehen Sie weiter zu Schritt 3 „[MySQL-Datenbank erstellen](./#schritt-3-mysql-datenbank-erstellen)“.
 
@@ -86,7 +86,7 @@ Geben Sie im angezeigten Fenster die für Ihre Situation notwendigen Information
 
 Wählen Sie aus den zusätzlichen Optionen diejenigen aus, die Sie aktivieren möchten. Wenn Sie alle Informationen eingegeben haben, klicken Sie auf `Weiter`{.action} und schließen Sie den Vorgang ab. Das Hinzufügen der Multisite kann bis zu einer Stunde dauern. Die Änderung der DNS-Konfiguration kann jedoch bis zu 24 Stunden in Anspruch nehmen, bis sie effektiv ist. Weitere Informationen zur Verwaltung von Multisites finden Sie in der Anleitung „[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external}“.
 
-![ghost cloud web](images/add-a-domain-or-sub-domain-step-2-ghost.png){.thumbnail}
+![ghost cloud web](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/multisite/add-a-domain-or-sub-domain-step-2-ghost.png){.thumbnail}
 
 ### Schritt 3: MySQL-Datenbank erstellen
 
@@ -96,13 +96,13 @@ Gehen Sie jetzt auf den Tab `Datenbanken`{.action}. Wird dieser nicht angezeigt,
 
 - **Wenn Sie bereits eine Datenbank erstellt haben**: Klicken Sie auf den Button `Aktionen`{.action} und anschließend auf `Datenbank erstellen`{.action}.
 
-![ghost cloud web](images/tab.png){.thumbnail}
+![ghost cloud web](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/databases/tab.png){.thumbnail}
 
 Im angezeigten Fenster ist nur "MySQL"in der Version "5.6"verfügbar. Wählen Sie nun „In Ihrer Cloud Web Instanz gespeichert“ aus und klicken Sie auf `Weiter`{.action}.
 
 Geben Sie anschließend einen angepassten Benutzernamen ein und legen Sie ein Passwort fest. Wenn Sie fertig sind, klicken Sie auf `Weiter`{.action}. Bestätigen Sie anschließend die Erstellung der Datenbank, indem Sie auf `Bestätigen`{.action} klicken. Warten Sie einige Minuten ab, bis der Vorgang abgeschlossen ist.
 
-![ghost cloud web](images/create-a-database-step-2.png){.thumbnail}
+![ghost cloud web](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/databases/create-a-database-step-2.png){.thumbnail}
 
 ### Schritt 4: Umgebungsvariablen erstellen
 
@@ -112,7 +112,7 @@ In diesem Tutorial erstellen wir Umgebungsvariablen, in denen wir die Verbindung
 
 Gehen Sie hierzu zum Tab `Umgebungsvariablen`{.action}. Die Tabelle enthält die bereits erstellten Umgebungsvariablen. Um eine neue Variable hinzuzufügen, klicken Sie über der Tabelle auf den Button `Aktionen`{.action} und anschließend auf `Umgebungsvariable hinzufügen`{.action}.
 
-![ghost cloud web](images/add-an-environment-variable.png){.thumbnail}
+![ghost cloud web](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/environment-variables/add-an-environment-variable.png){.thumbnail}
 
 Geben Sie im angezeigten Fenster die für Ihre Situation notwendigen Informationen ein und klicken Sie dann auf den Button `Bestätigen`{.action}, um die Variable zu erstellen. Hier die Variablen, die wir für dieses Tutorial erstellt haben:
 
@@ -137,7 +137,7 @@ Stellen Sie zunächst sicher, dass Sie die erforderlichen Informationen haben, u
 
 Wenn Sie das Passwort des SSH-Benutzers vergessen haben, klicken Sie rechts neben dem betreffenden Benutzer auf den Button `...`{.action} und dann auf `Passwort ändern`{.action}.
 
-![ghost cloud web](images/change-password.png){.thumbnail}
+![ghost cloud web](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/change-password.png){.thumbnail}
 
 Verwenden Sie ein Terminal, um sich nun via SSH zu verbinden. Dieses Tool ist standardmäßig auf macOs oder Linux installiert. Bei einer Windows-Umgebung muss ein Programm wie PuTTY installiert oder die Funktion „OpenSSH“ hinzugefügt werden. Dieser Vorgang variiert je nach verwendetem Betriebssystem. Wir können die Vorgehensweise daher in dieser Anleitung nicht im Detail beschreiben.
 
@@ -251,7 +251,7 @@ Um den Node.js-*Daemon* neu zu starten, gehen Sie zunächst in Ihr [Kundencenter
 
 Nach dem Neustart ist die Anwendung über die in der Konfiguration Ihrer Multisite ausgewählte Domain erreichbar.
 
-![ghost cloud web](images/tab-nodejs8.png){.thumbnail}
+![ghost cloud web](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/tab-nodejs8.png){.thumbnail}
 
 ### Schritt 8: HTTPS verwenden
 
@@ -280,4 +280,4 @@ Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

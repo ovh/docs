@@ -1,5 +1,5 @@
 ---
-title: Configure a DMARC record on your domain name
+title: How to improve email security with a DMARC record
 excerpt: Find out how DMARC works, and how to set it up for your email service
 updated: 2023-12-13
 ---
@@ -44,7 +44,7 @@ The DMARC record communicates the policy based on the SPF and DKIM test results.
 
 After reading the instructions of the **mydomain.ovh** domain name DMARC record by the **“otherdomain.ovh”** receiving server, emails will either be delivered to the address **recipient@otherdomain.ovh**, or marked as "SPAM" or rejected.
 
-![dmarc](images/dns-dmarc-diagram.png){.thumbnail}
+![dmarc](/pages/assets/schemas/emails/dns-dmarc-diagram.png){.thumbnail}
 
 ### Configure DMARC 
 
@@ -96,7 +96,7 @@ Below is a full description of the tags used for the OVHcloud **DMARC record**:
 > - **Partially aligned**: When the address *john.smith@subdomain.mydomain.ovh* transmits a message from the email service attached to the domain name *mydomain.ovh*, but the SPF and DKIM authentication mechanisms have been configured only on the primary domain (i.e. *mydomain.ovh*), a partially aligned result is obtained.
 > - **Authentication failed**: the sender attempts to send an email as *john.smith@mydomain.ovh* via another address (such as *robert@example.com*) or using an email service that is not listed in the SPF. In this case, the SPF and DKIM authentication mechanisms return a failure as a result.
 
-![dmarc](images/dns-dmarc-01.png){.thumbnail}
+![dmarc](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-dmarc-01.png){.thumbnail}
 
 #### TXT record <a name="txt-record"></a>
 
@@ -124,7 +124,7 @@ The following is a list of tags used to create a **TXT record** with DMARC setti
 
 - **ri** (an unsigned 32-bit integer in plain text, the default is 86400): The required interval, in seconds, between aggregated reports. This tag specifies how often email recipients should generate aggregated reports on the DMARC assessment results for the domain.
 
-![dmarc](images/dns-dmarc-02.png){.thumbnail}
+![dmarc](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-dmarc-02.png){.thumbnail}
 
 #### Records examples<a name="record-example"></a>
 
@@ -138,7 +138,7 @@ The following is a list of tags used to create a **TXT record** with DMARC setti
 
 To illustrate this first example, we used the [DMARC record](#dmarc-record) in the DNS zone and applied the following settings to it:
 
-![dmarc](images/dns-dmarc-03.png){.thumbnail}
+![dmarc](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-dmarc-03.png){.thumbnail}
 
 The result is:
 
@@ -154,7 +154,7 @@ The result is:
 
 For this second example, we used a [TXT record](#txt-record) to use tags that are not available through the simplified [DMARC record](#dmarc-record).
 
-![dmarc](images/dns-dmarc-04.png){.thumbnail}
+![dmarc](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-dmarc-04.png){.thumbnail}
 
 The result is:
 
@@ -184,4 +184,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

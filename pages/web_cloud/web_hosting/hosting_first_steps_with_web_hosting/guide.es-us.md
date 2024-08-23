@@ -137,7 +137,7 @@ Para comprobar y/o modificar la conexión entre su dominio y su alojamiento web,
 - [Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite): esta guía explica cómo añadir varios dominios a un alojamiento web. También puede ayudarle a comprobar que la declaración de su dominio en la pestaña `Multisitio`{.action} de su alojamiento web es correcta. Si lo necesita, puede modificarla y, a continuación, hacer lo necesario en la zona DNS activa del dominio.
 - [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit): Esta guía explica cómo editar una zona DNS que tenga presencia en OVHcloud. Este servicio le será útil en caso de que la zona DNS activa de su dominio esté presente en una cuenta de cliente de OVHcloud diferente a la suya. También puede utilizarlo para acceder a la zona DNS de OVHcloud de su dominio, con el fin de comprobar que la dirección IP (entrada(s) de tipo *A* y/o *AAAA*) declarada para su dominio en la zona DNS corresponde a la dirección IP de su alojamiento web.
 
-Para comprobar o modificar la conexión entre su dominio y su solución de correo de OVHcloud, consulte la guía "[Configurar un registro MX](/pages/web_cloud/domains/dns_zone_mx)", en la que encontrará los nombres de los servidores de correo de OVHcloud, así como el procedimiento a seguir para que su dominio apunte hacia esos mismos servidores.
+Para comprobar o modificar la conexión entre su dominio y su solución de correo de OVHcloud, consulte la guía "[Configurar un registro MX para la gestión del correo](/pages/web_cloud/domains/dns_zone_mx)", en la que encontrará los nombres de los servidores de correo de OVHcloud, así como el procedimiento a seguir para que su dominio apunte hacia esos mismos servidores.
 
 > [!primary]
 >
@@ -145,7 +145,7 @@ Para comprobar o modificar la conexión entre su dominio y su solución de corre
 > 
 > - **Para la conexión entre su nombre de dominio y su alojamiento web**, consulte únicamente las guías "[Direcciones IP de los clusters y alojamientos web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)" y "[Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite)", antes citadas, para obtener la dirección IP de su alojamiento web y, a continuación, declare correctamente el dominio en su alojamiento web. A continuación, póngase en contacto con el organismo que gestiona la zona DNS activa de su dominio para que apunte hacia su alojamiento web.
 >
-> - **Para la conexión entre su nombre de dominio y su solución de correo electrónico de OVHcloud**, consulte únicamente la guía "[Configurar un registro MX](/pages/web_cloud/domains/dns_zone_mx)" para obtener los nombres de los servidores de correo de OVHcloud que deben introducirse en la zona DNS activa de su dominio. A continuación, póngase en contacto con el organismo que gestiona la zona DNS activa de su dominio para que este apunte hacia los servidores de correo de OVHcloud.
+> - **Para la conexión entre su nombre de dominio y su solución de correo electrónico de OVHcloud**, consulte únicamente la guía "[Configurar un registro MX para la gestión del correo](/pages/web_cloud/domains/dns_zone_mx)" para obtener los nombres de los servidores de correo de OVHcloud que deben introducirse en la zona DNS activa de su dominio. A continuación, póngase en contacto con el organismo que gestiona la zona DNS activa de su dominio para que este apunte hacia los servidores de correo de OVHcloud.
 >
 
 ### Etapa 5 - Otras opciones disponibles con los alojamientos web <a name="other-options"></a>
@@ -212,4 +212,4 @@ Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con 
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

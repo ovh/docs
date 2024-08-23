@@ -42,7 +42,7 @@ Jeśli posiadasz hosting od OVHcloud, zyskasz dostęp do przestrzeni dyskowej um
 
 Po uruchomieniu Visual Studio Code przejdź do poziomego menu na górze interfejsu, kliknij `View`{.action}, a następnie `Extensions`{.action}.
 
-![hosting](images/view_extensions.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/vscode/view_extensions.png){.thumbnail}
 
 Aby wykonać tę samą akcję ze skrótem klawiaturowym, wybierz:
 
@@ -51,7 +51,7 @@ Aby wykonać tę samą akcję ze skrótem klawiaturowym, wybierz:
 
 W lewym górnym rogu wpisz nazwę rozszerzenia "SFTP/FTP sync" *Natizyskunk* i kliknij na `Install`{.action}.
 
-![hosting](images/extensions.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/vscode/extensions.png){.thumbnail}
 
 Można również zainstalować [rozszerzenie "SFTP/FTP sync"](https://marketplace.visualstudio.com/items?itemName=Natizyskunk.sftp#sftp-sync-extension-for-vs-code) z marketplace Visual Studio.
   
@@ -68,19 +68,19 @@ Aby wykonać tę samą akcję ze skrótem klawiaturowym, wybierz:
 
 Wprowadź następującą komendę: `SFTP: Config`.
 
-![hosting](images/SFTP_config.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/vscode/SFTP_config.png){.thumbnail}
 
 Dzięki temu poleceniu program Visual Studio Code utworzy plik konfiguracyjny "sftp.json" w katalogu głównym utworzonego wcześniej folderu lokalnego. Ponieważ jednak Visual Studio Code nie zna jeszcze lokalizacji Twojego projektu lokalnie, powinien pojawić się następujący komunikat:
 
-![hosting](images/SFTP_folder.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/vscode/SFTP_folder.png){.thumbnail}
 
 Kliknij `Open Folder`{.action}, przejdź do wybranego katalogu lokalnego i kliknij `Wybierz folder`{.action}, aby potwierdzić.
 
-![hosting](images/select_folder.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/vscode/select_folder.png){.thumbnail}
 
 W Visual Studio Code wprowadź ponownie komendę `SFTP: Config`. Plik konfiguracyjny o nazwie "sftp.json" pojawi się w kodzie Visual Studio Code.
 
-![hosting](images/sftp_json_default.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/vscode/sftp_json_default.png){.thumbnail}
 
 Plik ten znajduje się w folderze .vscode, który jest umieszczony w katalogu głównym projektu lokalnego.
 
@@ -94,7 +94,7 @@ W pliku "sftp.json" wprowadź wartości dla następujących wpisów:
 
 Odnajdziesz go w dwóch miejscach, które są wyróżnione na pomarańczowo.
 
-![hosting](images/hosting_name.png){.thumbnail}
+![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/hosting_name.png){.thumbnail}
 
 > [!primary]
 >
@@ -105,7 +105,7 @@ Odnajdziesz go w dwóch miejscach, które są wyróżnione na pomarańczowo.
 
 W zakładce `FTP-SSH`{.action} nazwa hosta (`host`) jest widoczna pod napisem `Serwer FTP i SFTP`{.action}.
 
-![hosting](images/hostname.png){.thumbnail}
+![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/hostname.png){.thumbnail}
 
 #### username
 
@@ -151,11 +151,11 @@ Po skonfigurowaniu pliku "sftp.json" pobierz zawartość Twojego projektu, aby p
 
 Program Visual Studio Code wymaga wybrania folderu, który chcesz pobrać na hosting WWW. Wpisz poprzednio zdefiniowaną wartość `name` w pliku "sftp.json".
 
-![hosting](images/download_project.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/vscode/download_project.png){.thumbnail}
 
 Jeśli zostanie wyświetlony monit, wprowadź hasło powiązane z danym użytkownikiem w pliku "sftp.json", a następnie kliknij `enter`. Po pobraniu pliku wszystkie foldery i pliki projektu będą wyświetlane w Eksploratorze plików znajdującym się w kolumnie po lewej stronie interfejsu Visual Studio Code.
 
-![hosting](images/explorer.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/vscode/explorer.png){.thumbnail}
 
 > [!primary]
 >
@@ -172,7 +172,7 @@ Aby wyłączyć tę funkcję, pozostawiając ją w pliku "sftp.json", zmień war
 
 Do tej pory wspomnieliśmy tylko polecenia: `SFTP: Config` i `SFTP: Download Project`. Istnieją inne polecenia, które możesz obejrzeć przez autouzupełnianie, wprowadzając `SFTP:` w edytorze poleceń.
 
-![hosting](images/list_commands.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/vscode/list_commands.png){.thumbnail}
 
 Listę poleceń [tutaj](https://github.com/Natizyskunk/vscode-sftp/wiki/Commands){.external}.
 
@@ -191,4 +191,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 
+Dołącz do [grona naszych użytkowników](/links/community). 

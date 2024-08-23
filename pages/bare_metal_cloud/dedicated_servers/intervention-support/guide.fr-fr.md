@@ -201,7 +201,7 @@ options=403bb<RXCSUM,TXCSUM,VLAN_MTU,VLAN_HWTAGGING,JUMBO_MTU,VLAN_HWCSUM,TSO4,T
 ether xx:xx:xx:xx:xx:xx
 ```
 
-3\. Exécutez la commmande `gpart show`, vous pouvez repérer et associer les partitions/noms :
+3\. Exécutez la commande `gpart show`, vous pouvez repérer et associer les partitions/noms :
 
 ```bash
 root@rescue-bsd:~ # gpart show
@@ -510,7 +510,7 @@ root@rescue:~#
 2\. Créez à nouveau le fichier `70-persistent-net.rules` et ajoutez :  
 
 - Le nom de l'interface réseau trouvé dans le fichier `/mnt/etc/network/interfaces`.
-- La nouvelle adresse MAC (visible dans l'onglet `Interfaces réseau`{.action} de l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou dans le retour de la commande `ip link`).
+- La nouvelle adresse MAC (visible dans l'onglet `Interfaces réseau`{.action} de l'[espace client OVHcloud](/links/manager) ou dans le retour de la commande `ip link`).
 
 ```bash
 root@rescue:~# cat /mnt/etc/udev/rules.d/70-persistent-net.rules
@@ -899,4 +899,4 @@ L'image ci-dessous est un résumé des actions citées plus haut :
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

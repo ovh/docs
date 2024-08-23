@@ -18,7 +18,7 @@ Neste caso, deverá ativar a licença manualmente para ter acesso a todos os ser
 ## Requisitos
 
 - Dispor de um [projeto Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project)
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 - [Ter criado um utilizador OpenStack](/pages/public_cloud/compute/create_and_delete_a_user)
 
 Recomendamos que consulte o guia "[Aceder à interface Horizon](/pages/public_cloud/compute/introducing_horizon)" para se familiarizar com o Horizon.
@@ -183,6 +183,6 @@ slmgr.vbs -dli
 
 [Saiba como alterar a chave de produto do Windows Server](/pages/bare_metal_cloud/dedicated_servers/windows_key).
 
-Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](https://www.ovhcloud.com/pt/professional-services/) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
+Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](/links/professional-services) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

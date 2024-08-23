@@ -17,7 +17,7 @@ Um bestimmte Verwaltungsfunktionen auf Ihrer Instanz auszuführen (zum Beispiel 
 ## Voraussetzungen
 
 - Sie haben eine [Public Cloud Instanz](/pages/public_cloud/compute/public-cloud-first-steps#schritt-3-instanz-erstellen) erstellt.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
@@ -117,6 +117,6 @@ Sobald die Operation abgeschlossen ist, sollten Sie mit Root-Benutzer und Passwo
 
 ## Weiterführende Informationen
 
-Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](https://www.ovhcloud.com/de/professional-services/), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
+Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 
 Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

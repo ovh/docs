@@ -1,14 +1,16 @@
 ---
 title: 'Configuring the network on ESXi on the High Grade & SCALE ranges'
 excerpt: 'Find out how to configure the network on VMware ESXi on the High Grade & SCALE ranges'
-updated: 2022-05-09
+updated: 2024-07-08
 ---
 
 ## Objective
 
-On the High Grade & SCALE ranges, it is not possible to manage Additional IPs in *bridged* mode (via virtual MACs). It is therefore necessary to configure Additional IPs in routed mode or via the vRack.
+On the High Grade & SCALE ranges, it is not possible to manage Additional IPs in *bridged* mode (via virtual MACs). The same goes for the latest generation servers delivered with AMD Epyc 4K and 8K CPUs. It is therefore necessary to configure Additional IPs in routed mode or via the vRack.
 
 > [!primary]
+>
+> By the end of 2024 this feature will be delivered for all the High Grade, SCALE & ADVANCE ranges.
 >
 > To date, the documentation only covers the solution via the vRack.
 >
@@ -21,7 +23,7 @@ On the High Grade & SCALE ranges, it is not possible to manage Additional IPs in
 - Your chosen private IP address range.
 - A [vRack compatible dedicated server](https://www.ovhcloud.com/en-ca/bare-metal/){.external}.
 - A [vRack](https://www.ovh.com/ca/en/solutions/vrack/){.external} service activated in your account.
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
+- Access to the [OVHcloud Control Panel](/links/manager).
 
 ## Instructions
 
@@ -40,7 +42,7 @@ On the High Grade & SCALE ranges, it is not possible to manage Additional IPs in
 
 ### Additional IP via vRack
 
-First, add your public block of IP addresses to the vRack. To do so, go to the `Bare Metal Cloud`{.action} section of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) and open the `vRack`{.action} menu.
+First, add your public block of IP addresses to the vRack. To do so, go to the `Bare Metal Cloud`{.action} section of your [OVHcloud Control Panel](/links/manager) and open the `vRack`{.action} menu.
 
 Select your vRack from the list to display the list of eligible services. Click on the IP block you want to add to the vRack and then click the `Add`{.action} button.
 
@@ -57,7 +59,7 @@ A first vSwitch exists but only has a `vmnic2` interface.
 
 > [!primary]
 >
-> Check that your configuration is similar. You can access information on MACs and public or private interfaces in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) or via the OVHcloud API.
+> Check that your configuration is similar. You can access information on MACs and public or private interfaces in your [OVHcloud Control Panel](/links/manager) or via the OVHcloud API.
 >
 
 #### Explanations
@@ -158,4 +160,4 @@ iface ens18 inet static
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

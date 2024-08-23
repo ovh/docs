@@ -49,7 +49,7 @@ Ligue-se ao seu [Área de Cliente OVHcloud](/links/manager){.external}. Na parte
 
 No quadro **IPv6**, copie a entrada e passe ao passo seguinte.
 
-![IPv6](images/find-ipv6.png){.thumbnail}
+![IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv6.png){.thumbnail}
 
 ### Etapa 2: configurar a zona DNS ativa do seu domínio
 
@@ -60,20 +60,20 @@ No quadro **IPv6**, copie a entrada e passe ao passo seguinte.
 > Além disso, a adição, modificação ou supressão de uma entrada DNS na zona DNS ativa de um nome de domínio leva a um atraso de propagação de **4 à 24 horas** para ser plenamente efetivo.
 >
 
-Para que o seu browser encontre o endereço IPv6 com o seu nome de domínio, modifique a zona DNS ativa do seu domínio. Utilize o nosso guia "[Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit#editar-a-zona-dns-da-ovhcloud-do-seu-dominio)" para criar uma entrada DNS do tipo **AAAA**.
+Para que o seu browser encontre o endereço IPv6 com o seu nome de domínio, modifique a zona DNS ativa do seu domínio. Utilize o nosso guia "[Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)" para criar uma entrada DNS do tipo **AAAA**.
 
 Na parte `Web Cloud`{.action}, clique nos `Nomes de domínio`{.action}. Escolha o seu nome de domínio e aceda ao separador `Zona DNS`{.action}. Clique no botão `Para Adicionar uma entrada`{.action} à direita da tabela. 
 
 Introduza o endereço IPv6 previamente copiado utilizando o tipo de registo **AAAA**.
 
-![IPv6](images/add-dns-zone-entry-aaaa.png){.thumbnail}
+![IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-dns-zone-entry-aaaa.png){.thumbnail}
 
 ## Quer saber mais? <a name="go-further"></a>
 
-[Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit#editar-a-zona-dns-da-ovhcloud-do-seu-dominio)
+[Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 
+Fale com nossa [comunidade de utilizadores](/links/community). 

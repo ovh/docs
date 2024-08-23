@@ -63,13 +63,13 @@ Para más información, consulte nuestra guía sobre la [configuración de un re
 
 Para optimizar el envío de correos electrónicos y evitar que sus correos sean bloqueado, usted puede configurar il *Reverse IP* con su nombre de dominio.
 
-Si sus servidores DNS son gestionados por OVHcloud, consulte nuestra guía sobre [la edición de una zona DNS en OVHcloud desde el área de cliente](/pages/web_cloud/domains/dns_zone_edit#acceder-a-la-gestion-de-una-zona-dns-de-ovhcloud).
+Si sus servidores DNS son gestionados por OVHcloud, consulte nuestra guía sobre [la edición de una zona DNS en OVHcloud desde el área de cliente](/pages/web_cloud/domains/dns_zone_edit).
 
 Una vez que haya editado la zona DNS del dominio, los cambios tardarán un máximo de 24 horas en propagarse.
 
 A continuación, añada el registro PTR (también conocido como registro inverso):
 
-En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, acceda a la pestaña `Bare Metal Cloud`{.action} y abra `Network`{.action}. Haga clic en `IP`{.action}.
+En el [área de cliente de OVHcloud](/links/manager){.external}, acceda a la pestaña `Bare Metal Cloud`{.action} y abra `Network`{.action}. Haga clic en `IP`{.action}.
 
 Si desea configurar el Registro DNS inverso  en una dirección Additional IP, abra la pestaña `Additional IP`{.action}.
 
@@ -148,11 +148,11 @@ Usted puede utilizar un sitio web como [Mail Tester](http://www.mail-tester.com/
 
 ## Más información
 
-[Configurar un registro DKIM](/pages/web_cloud/domains/dns_zone_dkim)
+[Mejorar la seguridad del correo electrónico mediante un registro DKIM](/pages/web_cloud/domains/dns_zone_dkim)
 
-[Configurar un registro SPF](/pages/web_cloud/domains/dns_zone_spf)
+[Mejorar la seguridad del correo electrónico mediante un registro SPF](/pages/web_cloud/domains/dns_zone_spf)
 
-[Configurar un registro DMARC](/pages/web_cloud/domains/dns_zone_dmarc)
+[Mejorar la seguridad del correo electrónico mediante un registro DMARC](/pages/web_cloud/domains/dns_zone_dmarc)
 
 Para recibir soporte y configurar sus soluciones OVHcloud, contacte con nuestra [red de partners OVHcloud](https://partner.ovhcloud.com/es/directory/).
 

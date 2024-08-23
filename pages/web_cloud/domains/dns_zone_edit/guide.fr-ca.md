@@ -1,7 +1,7 @@
 ---
 title: "Éditer une zone DNS OVHcloud"
 excerpt: "Découvrez comment éditer une zone DNS OVHcloud via votre espace client OVHcloud"
-updated: 2024-06-12
+updated: 2024-06-17
 ---
 
 ## Objectif
@@ -10,7 +10,7 @@ updated: 2024-06-12
 
 Le sigle **DNS**, signifiant **D**omain **N**ame **S**ystem, est un ensemble d'éléments (serveurs DNS, zones DNS, etc.) permettant de faire correspondre un nom de domaine avec une adresse IP.
 
-Pour plus d'explications, consultez nos guides « [Qu'est ce qu'un serveur DNS ?](/pages/web_cloud/domains/dns_server_general_information) » et « [Qu'est ce qu'une zone DNS ?](/pages/web_cloud/domains/dns_zone_general_information) » 
+Pour plus d'explications, consultez nos guides « [Tout savoir sur les serveurs DNS](/pages/web_cloud/domains/dns_server_general_information) » et « [Tout savoir sur la zone DNS](/pages/web_cloud/domains/dns_zone_general_information) ».
 
 **Découvrez comment éditer votre zone DNS OVHcloud via votre espace client OVHcloud.**
 
@@ -48,7 +48,7 @@ Pour accéder à la gestion d'une zone DNS OVHcloud, effectuez les actions suiva
 
 Le tableau qui apparaît affiche pour chaque ligne un enregistrement DNS lié à votre nom de domaine chez OVHCloud. Vous avez la possibilité d'en filtrer le contenu par type d'enregistrement ou par domaine.
 
-![dnszone](images/tab-ca.png){.thumbnail}
+![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/tab-ca.png){.thumbnail}
 
 ### Éditer la zone DNS OVHcloud de votre nom de domaine
 
@@ -65,7 +65,6 @@ Comprendre ces différents enregistrements vous permettra de mieux appréhender 
 
 Vous pouvez éditer la zone DNS OVHcloud de votre nom de domaine en ajoutant, modifiant ou en supprimant un enregistrement DNS.<br>
 Pour effectuer cela, vous pouvez soit modifier manuellement la zone en mode textuel, soit utiliser nos assistants de configuration.
-
 
 #### Modifier manuellement la zone en mode textuel <a name="txtmod"></a>
 
@@ -110,7 +109,7 @@ Pour modifier en mode textuel une zone DNS OVHcloud, effectuez les actions suiva
 >>
 >> Nous vous invitons à vérifier au préalable si cet enregistrement n'existe pas déjà et ne pointe pas vers une cible différente. Pour cela, filtrez le contenu du tableau par type d'enregistrement ou par domaine. Si l'enregistrement existe déjà, nous vous invitons à le modifier grâce à la manipulation décrite juste après.
 >>
->> ![dnszone](images/add-an-entry-ca.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-ca.png){.thumbnail}
 >>
 >> > Lorsque la cible de votre enregistrement est une URL, pensez à ponctuer celle-ci. En effet, si vous ne le faites pas, votre nom de domaine sera automatiquement ajouté à la fin de votre cible.
 >> >
@@ -130,7 +129,7 @@ Pour modifier en mode textuel une zone DNS OVHcloud, effectuez les actions suiva
 >> 6. Dans le tableau qui apparaît, cliquez sur le pictogramme `...`{.action} à droite de l'entrée concernée.
 >> 7. Cliquez ensuite sur `Modifier l'entrée`{.action} et suivez les étapes qui s'affichent.
 >>
->> ![dnszone](images/modify-record-ca.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/modify-record-ca.png){.thumbnail}
 >>
 > **Supprimer un enregistrement DNS**
 >>
@@ -146,7 +145,7 @@ Pour modifier en mode textuel une zone DNS OVHcloud, effectuez les actions suiva
 >>
 >> Vous pouvez supprimer plusieurs entrées en une seule fois en les cochant depuis la partie gauche du tableau, puis en cliquant sur le bouton `Supprimer`{.action}.
 >>
->> ![dnszone](images/delete-record-ca.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/delete-record-ca.png){.thumbnail}
 >>
 > **Réinitialiser la zone DNS**
 >>
@@ -166,7 +165,7 @@ Pour modifier en mode textuel une zone DNS OVHcloud, effectuez les actions suiva
 >> 5. Sur la page qui s'affiche, cliquez sur l'onglet `Zone DNS`{.action}.
 >> 6. Sur la droite ou en dessous du tableau, cliquez sur `Réinitialiser ma zone DNS`{.action} puis suivez les 2 étapes qui s'affichent.
 >>
->> ![dnszone](images/reset-my-dns-zone-ca.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/reset-my-dns-zone-ca.png){.thumbnail}
 >>
 >> **Étape 1**
 >>
@@ -186,14 +185,14 @@ Pour modifier en mode textuel une zone DNS OVHcloud, effectuez les actions suiva
 >> - `Redirection` : votre nom de domaine pointera vers le serveur de redirection OVHcloud. Cela permet d'afficher une page d'accueil OVHcloud et ainsi éviter une erreur DNS.<br>
 >> - `Hébergement Web OVHcloud` : votre nom de domaine pointera vers l'adresse IP de l'hébergement Web associé au nom de domaine.<br>
 >> - `Personnalisé` : définissez la valeur IPv4 ([enregistrement A](/pages/web_cloud/domains/dns_zone_records#pointer-records)) de l'hébergement Web que vous souhaitez pointer.<br><br>
->> ![dnszone](images/dns-zone-reset-01.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-reset-01.png){.thumbnail}
 >>
 >> **Adresse de votre serveur e-mail**
 >>
 >> - `Redirection` : votre nom de domaine pointera vers les serveurs de redirections e-mail. Ce choix est particulièrement utile si vous n'avez aucune offre e-mail mais que vous souhaitez renvoyer les e-mails vers une ou plusieurs adresses e-mail en dehors de votre nom de domaine.<br>
 >> - `Serveur E-mail OVHcloud` : à définir lorsque que vous possédez une offre e-mail mutualisée.<br>
 >> - `Personnalisé` : définissez l'URL et la priorité du serveur e-mail ([enregistrement MX](/pages/web_cloud/domains/dns_zone_records#mail-records)) que vous souhaitez pointer.<br><br>
->> ![dnszone](images/dns-zone-reset-01.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-reset-02.png){.thumbnail}
 >>
 
 ### Le temps de propagation
@@ -217,7 +216,7 @@ Vous pouvez aussi modifier le TTL d'un enregistrement DNS. Cependant, cette mani
 
 [Qu'est ce qu'une zone DNS?](/pages/web_cloud/domains/dns_zone_general_information)
 
-[Les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records)
+[Tout savoir sur les enregistrements DNS](/pages/web_cloud/domains/dns_zone_records)
 
 [Ajouter un champ SPF à la configuration de son nom de domaine](/pages/web_cloud/domains/dns_zone_spf)
 

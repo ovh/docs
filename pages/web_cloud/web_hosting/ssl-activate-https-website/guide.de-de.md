@@ -33,7 +33,7 @@ Wenn Sie eine Website mit einer sicheren Verbindung besuchen, zeigt Ihnen Ihr We
 
 Es wird dadurch leicht überprüfbar, ob Ihre Website über eine sichere Verbindung verfügt.
 
-![httpswebsite](images/url-not-secure.png){.thumbnail}
+![httpswebsite](/pages/assets/screens/other/browsers/urls/url-not-secure.png){.thumbnail}
 
 **Die Umstellung Ihrer Website auf *HTTPS* kann ein heikler Vorgang sein**. Die meisten Aktionen werden im Quellcode der Website ausgeführt. Wenn diese nicht korrekt durchgeführt werden, kann es zu negativen SEO-Auswirkungen für Suchmaschinen (Google, Yahoo!, Bing, etc.) oder sogar zu einer völligen Nichterreichbarkeit Ihrer Website kommen.
 
@@ -74,7 +74,7 @@ Es gibt zwei mögliche Szenarien für *Mixed Content*:
 
 Stellen Sie sicher, dass der gesamte Inhalt, der von Ihrer Website geladen wird, aus einer sicheren Quelle stammt.
 
-![httpswebsite](images/connection-isnt-secure.png){.thumbnail}
+![httpswebsite](/pages/assets/screens/other/browsers/urls/connection-isnt-secure.png){.thumbnail}
 
 Beachten Sie, dass auch wenn Ihr Hosting über ein SSL-Zertifikat verfügt, die darauf gehosteten Inhalte über *HTTP* oder *HTTPS* geladen werden können. Dies hängt davon ab, wie Sie diese Inhalte im Code Ihrer Website identifiziert haben. Überprüfen Sie daher, dass alle Inhalte, die Sie von Ihrer Website laden, das *HTTPS*-Protokoll verwenden.
 
@@ -164,4 +164,4 @@ Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

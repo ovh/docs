@@ -17,7 +17,7 @@ Mit der Einrichtung eines Webservers und verwandter Software kann Ihr Cloud Serv
 ## Voraussetzungen
 
 - Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/), [VPS](https://www.ovhcloud.com/de/vps/) oder eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/) in Ihrem Kunden-Account (ausgenommen Windows-Systeme).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben administrativen Zugriff (sudo) auf Ihren Dienst über SSH.
 
 > [!warning]
@@ -28,7 +28,7 @@ Mit der Einrichtung eines Webservers und verwandter Software kann Ihr Cloud Serv
 
 ## In der praktischen Anwendung
 
-Wenn eine Debian oder Ubuntu Distribution noch nicht auf Ihrem Server installiert ist, führen Sie zunächst eine Reinstallation über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de). Das ist die beste Vorgehensweise, um ein stabiles System für die Webserver-Installation und darauf laufende Anwendungen zu erhalten.
+Wenn eine Debian oder Ubuntu Distribution noch nicht auf Ihrem Server installiert ist, führen Sie zunächst eine Reinstallation über Ihr [OVHcloud Kundencenter](/links/manager). Das ist die beste Vorgehensweise, um ein stabiles System für die Webserver-Installation und darauf laufende Anwendungen zu erhalten.
 
 Folgen Sie der passenden Anleitung, um eine Distribution auf Ihrem OVHcloud Dienst zu installieren und sich mittels [SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) zu verbinden:
 
@@ -229,7 +229,7 @@ Sie können mit UFW noch weitere Maßnahmen umsetzen, beispielsweise um DOS-Angr
 
 ### Schritt 6: DNS-Konfiguration (optional)
 
-Um über einen Domainnamen auf Ihre Webserver-Installation zuzugreifen, muss dieser mit Ihrem Dienst verbunden werden. Dazu müssen Sie die DNS-Zone bearbeiten, auf die Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) zugreifen können, vorausgesetzt OVHcloud ist Ihr Domain-Registrar **und** der Domainname verwendet die OVHcloud DNS-Server. 
+Um über einen Domainnamen auf Ihre Webserver-Installation zuzugreifen, muss dieser mit Ihrem Dienst verbunden werden. Dazu müssen Sie die DNS-Zone bearbeiten, auf die Sie in Ihrem [OVHcloud Kundencenter](/links/manager) zugreifen können, vorausgesetzt OVHcloud ist Ihr Domain-Registrar **und** der Domainname verwendet die OVHcloud DNS-Server. 
 
 Weitere Informationen finden Sie in der [Anleitung zum Bearbeiten der DNS-Zone](/pages/web_cloud/domains/dns_zone_edit). Wenn der Domainname aktuell verwendet wird, konfigurieren Sie DNS erst nachdem Ihre neue Website oder Anwendung bereit ist.
 

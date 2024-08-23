@@ -17,7 +17,7 @@ Um servidor privado virtual (VPS) é um servidor dedicado virtualizado. Ao contr
 ## Requisitos
 
 - Ter um [VPS](https://www.ovhcloud.com/pt/vps/) na Área de Cliente OVHcloud
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 
 ## Instruções
 
@@ -30,7 +30,7 @@ Um servidor privado virtual (VPS) é um servidor dedicado virtualizado. Ao contr
 - [Como proteger o VPS](#secure)
 - [Associar um nome de domínio](#domain)
 
-Aceda à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na secção `Servidores privados virtuais`{.action}.
+Aceda à sua [Área de Cliente OVHcloud](/links/manager), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na secção `Servidores privados virtuais`{.action}.
 
 <a name="controlpanel"></a>
 
@@ -137,7 +137,7 @@ As reinstalações podem ser efetuadas a partir da Área de Cliente. Clique em `
 
 Na janela que aparece, escolha um sistema operativo da lista suspensa. As opções propostas são imagens [compatíveis com um VPS OVHcloud](/pages/public_cloud/compute/image-life-cycle) e são imediatamente funcionais após a instalação.
 
-Pode também selecionar uma **chave SSH** a instalar no sistema, se tiver armazenado uma anteriormente na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Para saber tudo sobre este assumpto, consulte o guia [Criar e utilizar chaves SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
+Pode também selecionar uma **chave SSH** a instalar no sistema, se tiver armazenado uma anteriormente na sua [Área de Cliente OVHcloud](/links/manager). Para saber tudo sobre este assumpto, consulte o guia [Criar e utilizar chaves SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 
 > [!primary]
 >
@@ -158,7 +158,7 @@ Pode ser necessário reiniciar para aplicar configurações atualizadas ou resol
 sudo reboot
 ```
 
-No entanto, pode efetuar um « de reinício de hardware » a qualquer momento a partir da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). No separador `Página Inicial`{.action}, clique em `...`{.action} junto de `Boot` na secção **O seu VPS**. Selecione `Reiniciar o meu VPS`{.action} e clique em `Validar`{.action} na janela que se abrir.
+No entanto, pode efetuar um « de reinício de hardware » a qualquer momento a partir da sua [Área de Cliente OVHcloud](/links/manager). No separador `Página Inicial`{.action}, clique em `...`{.action} junto de `Boot` na secção **O seu VPS**. Selecione `Reiniciar o meu VPS`{.action} e clique em `Validar`{.action} na janela que se abrir.
 
 ![Reboot](images/reboot-vps01.png){.thumbnail}
 
@@ -240,29 +240,29 @@ Para finalizar a configuração inicial do seu VPS Windows, consulte os separado
 > 1. **Regionais**
 >>
 >> Depois de estabelecida a sessão KVM, pode concluir a configuração inicial do Windows configurando o seu **país/região**, o **idioma do Windows** preferido e a **configuração do teclado**. A seguir, clique no botão `Seguinte`{.action} no canto inferior direito.<br><br>
->>![KVM](images/setup-03.png){.thumbnail}<br>
+>>![KVM](/pages/assets/screens/other/windows/windows_locale.png){.thumbnail}<br>
 >>
 > 2. **Palavra-passe de administrador**
 >>
 >> Defina uma palavra-passe para a sua conta Windows `Administrator` / `admin` e confirme-a e clique em `Finish`{.action}.<br><br>
->>![KVM](images/setup-04.png){.thumbnail}<br>
+>>![KVM](/pages/assets/screens/other/windows/windows_admin.png){.thumbnail}<br>
 >>
 > 3. **Ecrã de ligação**
 >>
 >> O Windows aplicará as suas configurações e, em seguida, exibirá a tela de login. Clique no botão `Send CtrlAltDel`{.action} no canto superior direito para iniciar sessão.<br><br>
->>![KVM](images/setup-05.png){.thumbnail}<br>
+>>![KVM](/pages/assets/screens/other/windows/windows_vnc.png){.thumbnail}<br>
 >>
 > 4. **Login de administrador**
 >>
 >> Introduza a palavra-passe `Administrator` que criou no passo anterior e clique na `seta`.<br><br>
->>![KVM](images/setup-06.png){.thumbnail}<br>
+>>![KVM](/pages/assets/screens/other/windows/windows_login.png){.thumbnail}<br>
 >>
 
 #### Etapa 2: ligar-se ao servidor com RDP
 
 No seu equipamento Windows local, pode utilizar a aplicação cliente `Remote Desktop Connection` para se ligar ao VPS.
 
-![Windows remote](images/windows-connect-03.png){.thumbnail}
+![Windows remote](/pages/assets/screens/other/windows/windows_rdp.png){.thumbnail}
 
 Introduza o endereço IPv4 do seu VPS, depois o seu identificador e a sua palavra-passe. Normalmente, é apresentada uma mensagem a avisar-lhe para confirmar a ligação devido a um certificado desconhecido. Clique em `Sim`{.action} para iniciar sessão.
 
@@ -287,17 +287,17 @@ Para os ativar, percorra os separadores abaixo:
 > 2. **Abrir utilitário "Executar"**
 >>
 >> Abra o Menu Iniciar do Windows e clique em `Executar`{.action}.<br><br>
->>![KVM](images/windowsboot1.png){.thumbnail}<br>
+>>![KVM](/pages/assets/screens/other/windows/windows_start_run.png){.thumbnail}<br>
 >>
 > 3. **Abrir "msconfig"**
 >>
 >> Introduza "msconfig" e clique em `OK`{.action}.<br><br>
->>![KVM](images/windowsboot2.png){.thumbnail}<br>
+>>![KVM](/pages/assets/screens/other/windows/windows_msconfig.png){.thumbnail}<br>
 >>
 > 4. **Ativar os logs**
 >>
 >> Na nova janela, ative a opção logs ao lado de `Boot log`. Clique em `OK`{.action}.<br><br>
->>![KVM](images/windowsboot3.png){.thumbnail}<br>
+>>![KVM](/pages/assets/screens/other/windows/windows_log.png){.thumbnail}<br>
 >>
 
 Na próxima vez que iniciar o seu servidor, os logs serão guardados num ficheiro `.txt`. O caminho para o ficheiro é: `C:\Windows\ntbtlog.txt`.

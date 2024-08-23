@@ -29,7 +29,7 @@ Die Verwendung von FTP-Software beim Login auf Ihr [Hosting-Pakete](/links/web/h
 
 ### “Dieser Server unterstützt FTP auf TLS nicht“ (FileZilla)
 
-![doesnt-support-ftp-on-tls](images/doesnt-support-ftp-on-tls.png){.thumbnail}
+![doesnt-support-ftp-on-tls](/pages/assets/screens/other/web-tools/filezilla/doesnt-support-ftp-on-tls.png){.thumbnail}
 
 Diese Nachricht im [FileZilla-Programm](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) zeigt an, dass Sie die SFTP- oder SSH-Option in Ihrem [OVHcloud Kundencenter](/links/manager) nicht aktiviert haben. Daher werden die zwischen Ihrem OVHcloud Hosting-Server und Ihrem Computer ausgetauschten Informationen nicht verschlüsselt.
 
@@ -52,7 +52,7 @@ Wählen Sie `SFTP`{.action} oder `Aktiviert`{.action} aus (um das SSH-Protokoll 
 
 Überprüfen Sie zunächst, dass die Dateien und Ordner Ihrer Website im [Wurzelverzeichnis](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online#3-dateien-auf-ihren-speicherplatz-hochladen) Ihres Hostings enthalten sind.
 
-Wenn Sie vor weniger als 48 Stunden eine Änderung an Ihren [DNS-Servern oder der DNS-Zone](/pages/web_cloud/domains/dns_zone_edit#dns-konzept-verstehen) vorgenommen haben, warten Sie ab und starten Sie Ihre Geräte regelmäßig neu, um deren Cache zu leeren.
+Wenn Sie vor weniger als 48 Stunden eine Änderung an Ihren [DNS-Servern](/pages/web_cloud/domains/dns_server_edit) oder Ihrer [DNS-Zone](/pages/web_cloud/domains/dns_zone_edit) vorgenommen haben, warten Sie ab und starten Sie Ihre Geräte regelmäßig neu, um ihren Cache zu leeren.
 
 ### Meine FTP-Zugangsdaten funktionieren nicht.
 
@@ -66,7 +66,7 @@ Um den verbleibenden Speicherplatz auf Ihrem Hosting zu überprüfen, loggen Sie
 
 Die auf Ihrem Hosting-Server gespeicherte Datenmenge (ausgenommen Datenbanken) erscheint im Bereich `Allgemeine Informationen`{.action} unter `Speicherplatz`.
 
-![disk_space](images/find-disk-space.png){.thumbnail}
+![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
 
 ### Ich kann meine Dateien nicht auf den FTP Server übertragen
 
@@ -82,7 +82,7 @@ Wenn Sie über eine [Pro](/links/web/hosting-professional-offer) oder [Performan
 
 Dieser Link ist standardmäßig auf den Shared Hosting Paketen von OVHcloud installiert. Er zeigt die unten abgebildete Seite an:
 
-![site-under-construction](images/site-under-construction.png){.thumbnail}
+![site-under-construction](/pages/assets/screens/other/browsers/errors/site-under-construction.png){.thumbnail}
 
 Wenn Sie die Funktion “[1-Klick-Modul](/pages/web_cloud/web_hosting/cms_install_1_click_modules)“ nicht für Ihre Website verwendet haben, müssen Sie das über das [OVHcloud Kundencenter](/links/manager) zugängliche [Net2FTP-Programm](/pages/web_cloud/web_hosting/ftp_connection#1-via-ftp-explorer-verbinden) verwenden, um die Seite “Site under construction“ manuell zu löschen.
 
@@ -94,4 +94,4 @@ Für spezialisierte Dienstleistungen (Referenzierung, Entwicklung etc.) kontakti
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, lesen Sie unsere [Support-Angebote](/links/support).
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

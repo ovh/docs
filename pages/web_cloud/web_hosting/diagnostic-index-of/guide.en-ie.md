@@ -11,7 +11,7 @@ An "**Index of**" page appears in at least one of the following cases:
 - Your domain name’s [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) configuration has not been correctly set to your target directory.
 - The target folder to which your domain name points does not contain **index.html** or **index.php** files.
 
-![index_of](images/index-of.png){.thumbnail}
+![index_of](/pages/assets/screens/other/browsers/errors/index-of.png){.thumbnail}
 
 **This guide explains how to troubleshoot the display of an "Index of" page.**
 
@@ -47,11 +47,11 @@ To view your website, you will need to link your domain to the `Root folder` con
 
 You have imported the files of your website **mydomain.ovh** into the `www` folder on your OVHcloud Web Hosting plan through an [FTP connection](/pages/web_cloud/web_hosting/ftp_connection). Your domain name however is not linked to this folder in the `Root folder` column of your `Multisite` configuration.
 
-![index_of_multisite](images/root-folders-empty.png){.thumbnail}
+![index_of_multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-empty.png){.thumbnail}
 
 Modify the `Root folder` by clicking on the `...`{.action} button in the row of the domain name concerned, then `Modify domain`{.action}:
 
-![modify_domain](images/modify-domain.png){.thumbnail}
+![modify_domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain.png){.thumbnail}
 
 In the window that opens:
 
@@ -59,7 +59,7 @@ In the window that opens:
 - Specify the directory containing your site's **index.php** or **index.html** file as `Root folder` (2).
 - Click on `Next`{.action} (3).
 
-![change_root_folder](images/change-root-folder-step-1.png){.thumbnail}
+![change_root_folder](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/change-root-folder-step-1.png){.thumbnail}
 
 > [!primary]
 >
@@ -68,11 +68,11 @@ In the window that opens:
 
 In the next window, click on `Confirm`{.action}.
 
-![modify_root_folder_confirm](images/change-root-folder-step-2.png){.thumbnail}
+![modify_root_folder_confirm](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/change-root-folder-step-2.png){.thumbnail}
 
 In a few minutes (remember to refresh your browser), you will see the following result: esult: 
 
-![multisite_modified](images/root-folders-full-www.png){.thumbnail}
+![multisite_modified](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders-full-www.png){.thumbnail}
 
 Finally, check that your website appears correctly. Otherwise, reboot your device and clear your browser cache if necessary.
 
@@ -90,4 +90,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

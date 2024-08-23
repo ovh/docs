@@ -43,7 +43,7 @@ Folgen Sie dieser Anleitung nun entsprechend der von Ihnen ausgewählten Backup-
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen an die [OVHcloud Community](https://community.ovh.com/en/) zu richten. Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen an die [OVHcloud Community](/links/community) zu richten. Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 ### Backup mit dem OVHcloud Backup-Tool exportieren
@@ -56,25 +56,25 @@ Die angezeigte Tabelle enthält alle Datenbanken, die im Rahmen Ihres Webhosting
 
 Bleiben Sie im Tab `Datenbanken`{.action} und klicken Sie auf den Button `...`{.action} rechts neben der zu sichernden Datenbank und dann auf `Backup erstellen`{.action}.
 
-![databaseDump](images/create-a-backup.png){.thumbnail}
+![databaseDump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-backup.png){.thumbnail}
 
 Wählen Sie im angezeigten Fenster das gewünschte Backup-Datum aus und klicken Sie auf den Button `Weiter`{.action}. Stellen Sie sicher, dass die Informationen in der Übersicht korrekt sind, und klicken Sie auf `Bestätigen`{.action}, um den Vorgang zu starten.
 
 Warten Sie, bis die Sicherung abgeschlossen ist. Sobald diese verfügbar ist, können Sie sie abrufen.
 
-![databaseDump](images/create-a-database-backup-step-1.png){.thumbnail}
+![databaseDump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-backup-step-1.png){.thumbnail}
 
 #### Schritt 2: Datenbank-Backup exportieren
 
 Bleiben Sie im Tab `Datenbanken`{.action} und klicken Sie auf den Button `...`{.action} rechts neben der zu sichernden Datenbank und dann auf `Backup wiederherstellen`{.action}.
 
-![databaseDump](images/restore-backup.png){.thumbnail}
+![databaseDump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/restore-backup.png){.thumbnail}
 
 Die angezeigte Tabelle enthält alle verfügbaren Backups der ausgewählten Datenbank. Dort sehen Sie das genaue Datum, an dem die Backups erstellt wurden, sowie das Datum, an dem diese aus dem Tool von OVHcloud gelöscht werden.
 
 Um ein Backup herunterzuladen klicken Sie auf den Button `...`{.action} rechts von dem Backup, das Sie wiederherstellen möchten, und dann auf `Backup herunterladen`{.action}. Es erscheint ein Fenster, in dem Sie dazu aufgefordert werden, das Backup auf Ihrem Rechner zu speichern. Akzeptieren und warten, bis die Sicherung heruntergeladen wurde.
 
-![databaseDump](images/download-the-backup.png){.thumbnail}
+![databaseDump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/download-the-backup.png){.thumbnail}
 
 ### Backup über das phpMyAdmin-Webinterface exportieren
 
@@ -82,7 +82,7 @@ Loggen Sie sich hierzu auf *phpMyAdmin* ein. Um den Link für den Zugriff darauf
 
 Die angezeigte Tabelle enthält alle Datenbanken, die im Rahmen Ihres Webhosting Angebots erstellt wurden. Klicken Sie auf den Button `...`{.action} rechts neben der betreffenden Datenbank und dann auf `Zugang zu phpMyAdmin`{.action}.
 
-![databaseDump](images/go-to-phpmyadmin.png){.thumbnail}
+![databaseDump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
 
 Geben Sie im Login-Interface von *phpMyAdmin* die Informationen zu Ihrer Datenbank ein, um sich einzuloggen. Gehen Sie nach dem Login auf den Tab `Exportieren`{.action} und wählen Sie eine Exportmethode aus:
 
@@ -180,4 +180,4 @@ Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

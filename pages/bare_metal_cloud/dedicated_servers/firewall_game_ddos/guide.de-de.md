@@ -25,7 +25,7 @@ Unsere Bare Metal Game Dedicated Server sind mit einem DDoS-Schutz ausgestattet,
 ## Voraussetzungen 
 
 - Sie haben einen [OVHcloud **Game** Dedicated Server](https://www.ovhcloud.com/de/bare-metal/prices/#filterType=range_element&filterValue=game)
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 > [!warning]
 > Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](https://eco.ovhcloud.com/de/about/) eingesetzt wird.

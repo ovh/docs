@@ -41,13 +41,13 @@ Au niveau de la colonne **« Sauvegardes »**, le chiffre correspond au nombre d
 
 Cliquez sur le bouton `...`{.action} à droite de la base de données, puis sur `Sauvegarder maintenant`{.action}.
 
-![Web Cloud Databases](images/back-up-now.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/back-up-now.png){.thumbnail}
 
 #### 2\. Exporter une sauvegarde
 
 Cliquez sur le bouton `...`{.action} à droite de la base de données, puis sur `Afficher les sauvegardes`{.action}
 
-![Web Cloud Databases](images/show-backups.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/show-backups.png){.thumbnail}
 
 La liste des sauvegardes disponibles apparaît,  cliquez sur le bouton `...`{.action} à droite de la sauvegarde choisie, puis sur `Télécharger la sauvegarde`{.action} pour récupérer cette sauvegarde.
 
@@ -65,7 +65,7 @@ Une fois connecté sur phpMyAdmin, cliquez sur le nom de la base de données que
 
 Vous avez deux modes d'exportation possibles. Si vous n'avez pas de besoin spécifique, nous vous conseillons d'utiliser le mode **rapide** au format **SQL**.
 
-![Web Cloud Databases](images/pma-export-backup-web-cloud-db.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/other/web-tools/phpmyadmin/pma-export-backup-web-cloud-db.png){.thumbnail}
 
 ##### 1\.2 Exporter ma base MySQL ou MariaDB en ligne de commande
 
@@ -121,4 +121,4 @@ Pour des prestations spécialisées (référencement, développement, etc), cont
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

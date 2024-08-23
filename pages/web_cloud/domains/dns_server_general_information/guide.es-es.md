@@ -1,135 +1,90 @@
 ---
-title: 'Cambiar los servidores DNS de un dominio en OVHcloud'
-excerpt: 'Descubra cómo cambiar los servidores DNS de un dominio registrado en OVHcloud'
-updated: 2023-08-25
+title: "Todo sobre los servidores DNS"
+excerpt: "Descubra el papel de los servidores DNS, su contenido y cómo funcionan con un dominio"
+updated: 2024-06-17
 ---
 
 > [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
-> 
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
+>
 
 ## Objetivo
 
-### Entender la noción de DNS 
+Las siglas **DNS**, que significan **D**omain **N**ame **S**ystem, son un conjunto de elementos (servidores DNS, zonas DNS, etc.) que permiten asociar un dominio a una dirección IP.
 
-La sigla DNS, que significa **D**omain **N**ame **S**ystem, es un conjunto de elementos (servidores DNS, zonas DNS, etc.) que permiten hacer coincidir un dominio con una dirección IP.
-
-### Los servidores DNS 
-
-Los **servidores DNS** contienen archivos de configuración DNS para los nombres de dominio, denominados **zonas DNS**.
-
-Una zona DNS contiene información técnica, denominada *registros DNS*.
-
-Por ejemplo, puede especificar lo siguiente:
-
-- La dirección IP (registros DNS de tipo *A* y *AAAA*) de su alojamiento web para mostrar su sitio web con su nombre de dominio.
-- Los servidores de correo (registros DNS de tipo *MX*) a los que el dominio debe redirigir los emails que recibe. Esto le permite consultarlos en su dirección de correo personalizada con su nombre de dominio.
-- Información relativa a la seguridad y la autenticación de los servicios (alojamiento web, servidor web, servidor de correo, etc.) asociados a su dominio (registros DNS de tipo *SPF*, *DKIM*, *DMARC*, etc.).
-
-Para más información sobre las zonas DNS, consulte nuestra guía "[Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)"»".
-
-Por lo tanto, los **servidores DNS** deben estar declarados con el nombre de dominio para utilizar la zona DNS que alojan. 
-
-![DNS](images/dns-server.png){.thumbnail}
-
-Los **servidores DNS** suelen funcionar por pares:
-
-- Un servidor DNS *principal* que redirige los flujos de consultas recibidos por el dominio hacia la zona DNS que aloja para este último. La zona DNS efectúa así la *resolución DNS* para redirigir los flujos hacia los buenos servicios (servidores, sitio web, correo, etc.) asociados al dominio.
-- Un servidor DNS *secundario* denominado *de reserva* que se utiliza si el servidor *principal* está saturado, no está disponible o responde con menos rapidez que el servidor *secundario*.
-
-En ocasiones, algunos proveedores DNS ofrecen más de 2 **servidores DNS** para que los declare su dominio. En ese caso, introduzca todos los servidores DNS ofrecidos por su proveedor DNS.
-
-**Descubra cómo cambiar los servidores DNS de un dominio en OVHcloud.**
+**Descubra el papel de los servidores DNS, su contenido y cómo funcionan con un dominio.**
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Requisitos
-
-- Tener un [dominio](/links/web/domains) registrado en OVHcloud.
-- Disponer de permisos [adecuados para gestionar](/pages/account_and_service_management/account_information/managing_contacts) el nombre de dominio desde el [área de cliente de OVHcloud](/links/manager){.external}.
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager){.external}.
-
-> [!primary]
->
-> Un *registrar* es una organización autorizada a vender dominios. OVHcloud forma parte de estos *registrars*.
->
-> Si su dominio no está registrado con OVHcloud, deberá modificar los servidores DNS en el *registrar* en el que esté registrado su dominio.
->
-
 ## Procedimiento
 
-> [!warning]
->
-> **Tenga cuidado al modificar los servidores DNS de un dominio.** Un error de manipulación puede inhabilitar el acceso al sitio web o impedir que las direcciones de correo electrónico reciban nuevos mensajes de correo electrónico. A continuación explicamos lo que ocurre cuando se cambia la contraseña para que entienda las consecuencias que ello implica.
->
+### Función de los servidores DNS
 
-Al modificar los servidores DNS de un dominio, también se modifica su configuración DNS. La nueva configuración DNS sustituye a la antigua y se almacena en los servidores DNS recién definidos. Técnicamente, el dominio utiliza una nueva zona DNS.
+Todos los **servidores DNS** forman juntos lo que se denomina red DNS.
 
-Sin embargo, es importante tener en cuenta que:
+Esta red DNS permite facilitar a los usuarios el acceso a Internet y a los distintos servicios asociados (sitios web, servicios de mensajería en línea, etc.).
 
-- Al cambiar de servidor DNS (p.ej. DNS externo por DNS de OVHcloud), el contenido de la antigua configuración / zona DNS no se replica automáticamente en la nueva. Asegúrese de que la nueva zona DNS contiene todos los registros DNS necesarios para que los servicios asociados al dominio funcionen correctamente (por ejemplo, el sitio web y las direcciones de correo electrónico).
+Permiten, entre otras cosas, el uso de los [dominios](/links/web/domains) para acceder a su sitio web preferido sin tener que conservar la dirección IP del servidor en el que está alojado este sitio web.
 
-- Si quiere modificar, no los servidores DNS, sino uno o varios registros de su configuración / zona DNS actual, consulte nuestra guía: "[Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
+![DNS resolution](/pages/assets/schemas/dns/dns-resolution.png){.thumbnail}
 
-- Algunas organizaciones, los registros, que gestionan las extensiones de dominios, tienen requisitos particulares relativos a los servidores DNS (cantidad de servidores de nombres, valor de los registros, etc.). En caso de duda, consulte con el registro responsable del dominio.
+Hay 4 tipos de servidores DNS.
 
-Asegúrese de que los cambios no inhabilitarán el dominio. Si no está seguro, póngase en contacto con la persona que le pide que realice los cambios.
+A continuación, se muestra una tabla con los cuatro tipos de servidores DNS y sus interacciones. Los ejemplos que se ofrecen en la tabla se basan en una consulta DNS enviada desde un navegador web para conocer la dirección IP del sitio web *domain.tld*.
 
-### Acceder a la gestión de los servidores DNS de OVHcloud
+|Tipo de servidor DNS|Descripción|Ejemplo|
+|---|---|---|
+|Resolución DNS (resolución DNS o DNS recursiva)|Primer servidor que recibe la consulta DNS de un cliente (explorador de Internet, software de mensajería, etc.). Este paso se representa mediante el paso **1** del diagrama anterior. Este servidor actúa como puerta de enlace entre el cliente y el resto de la red DNS. Consulta los otros tres tipos de servidores DNS hasta que recupera la dirección IP solicitada por la consulta DNS del servidor DNS de referencia. El cliente envía la consulta DNS para conocer la dirección IP del dominio *domain.tld*. |El navegador web envía una petición DNS para conocer la dirección IP del dominio *domain.tld*. Esto permite conocer el servidor en el que está alojado el sitio web asociado al dominio *domain.tld*.|
+|Servidor DNS raíz (DNS root)|Contiene un directorio para todos los TLD (dominios de nivel superior como *.com*, *.net*, *.es*, etc.). Va a indicar a la resolución DNS la dirección del servidor DNS TLD correspondiente a la extensión presente en la consulta DNS solicitada por el cliente (pasos **2** y **3** del esquema anterior).|La resolución DNS pasa la consulta DNS que ha recibido para *domain.tld* al servidor DNS raíz y recibe en respuesta la dirección del servidor DNS TLD que gestiona la extensión *.tld*.|
+|Servidores DNS de extensión/nombres de dominio de nivel superior (DNS TLD)|Contiene un directorio de nombres de dominio para una extensión dada. Va a indicar a la resolución DNS la dirección del servidor DNS de referencia correspondiente al nombre de dominio presente en la consulta DNS solicitada por el cliente (pasos **4** y **5** del esquema anterior).|A continuación, la resolución DNS pasa la consulta DNS que ha recibido para *domain.tld* al servidor DNS TLD que gestiona las extensiones en *.tld* y recibe en respuesta la dirección del servidor DNS de referencia que gestiona la zona DNS del nombre de dominio *domain.tld*.|
+|Servidores DNS autoritativos (referencia)|Último servidor DNS consultado por la resolución DNS (pasos **6** y **7** del esquema anterior). Contiene la zona DNS activa para el nombre de dominio presente en la consulta DNS solicitada por el cliente. A continuación explicamos el contenido de este tipo de servidor DNS.|La resolución DNS transmite la consulta DNS que ha recibido para *domain.tld* al servidor DNS de referencia que gestiona la zona DNS del dominio *domain.tld* y recibe en respuesta la dirección IP (ejemplo 203.0.113.0) del servidor que aloja el sitio web del dominio *domain.tld*.|
 
-Conéctese a su [área de cliente de OVHcloud](/links/manager){.external} y acceda a la sección `Web Cloud`{.action} de la página. En la columna izquierda, haga clic en `Dominios`{.action} y seleccione el dominio correspondiente. Por último, abra la pestaña Servidores DNS`{.action}.
+Una vez que la resolución DNS haya recuperado la dirección IP del servidor que se buscaba a través de la consulta DNS solicitada por el cliente, devolverá dicha dirección IP al cliente (paso **8** del esquema anterior).
 
-Se mostrará una tabla con los servidores DNS actualmente definidos por OVHcloud para su dominio. Es posible mostrar varios servidores DNS, cada uno con su propia fila en la tabla.
+A continuación, el cliente envía otra petición directamente al servidor asociado a la dirección IP recuperada mediante la resolución DNS (paso **9** del esquema anterior). Esto le permite conectarse o recuperar los elementos que necesita para resolver esta segunda consulta (paso **10** del esquema anterior). En nuestro ejemplo, el cliente (navegador web) consulta al servidor con la dirección IP 203.0.113.0 para obtener el contenido que quiere mostrar para el sitio web *domain.tld*.
 
-> [!primary]
->
-> Al utilizar los servidores DNS de OVHcloud, los números que aparecen en los nombres de los servidores no tienen relación con los servicios que utiliza. Solo la opción [DNS anycast](/links/web/domains-options) utiliza servidores DNS específicos que se le asignan automáticamente. 
+Si necesita realizar esta acción para un dominio registrado con OVHcloud, consulte nuestra guía "[Cambiar los servidores DNS de un dominio en OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
 
-![dns-server](images/tab.png){.thumbnail}
+### Contenido de un servidor DNS (Authoritative)
 
-### Cambiar los servidores DNS
+Un **servidor DNS (Authoritative)** contiene un directorio de nombres de dominio que pueden tener extensiones (TLD) diferentes.
 
-Si deseas utilizar servidores DNS externos, debes sustituir los servidores DNS de OVHcloud por estos servidores DNS externos, y no sumar ambos.
+Para cada dominio incluido en el directorio hay una **zona DNS** que contiene la configuración DNS que se aplicará al dominio.
 
-Haga clic en `Cambiar los servidores DNS`{.action} a la derecha.
-
-En los formularios de datos, **sustituya** los valores actuales de los servidores DNS por la información relativa a los nuevos servidores DNS que quiera definir. Para añadir más servidores a la lista actual, haga clic en el botón `+`{.action} situado a la derecha de la última fila de la tabla. En la tabla se mostrará una fila adicional que podrá completar.
-
-> [!warning]
->
-> No mezcle un grupo de servidores DNS con otro. 
->
-> Por ejemplo, *dns19.ovh.net* y *ns19.ovh.net* corresponden a un grupo de servidores DNS de OVHcloud, van de la mano y están sincronizados. Si añade servidores DNS externos a OVHcloud (o a un grupo diferente de OVHcloud), la resolución DNS se realizará de forma aleatoria entre los servidores DNS de OVHcloud y los servidores DNS externos que introduzca.
->
-> En OVHcloud, los grupos de servidores DNS pueden identificarse mediante el número que figura en los nombres de los servidores. Dos servidores DNS de OVHcloud forman parte de un mismo grupo de servidores desde el momento en que comparten el mismo número. Por ejemplo, *dns19.ovh.net* y *ns19.ovh.net*.
->
-
-Una vez que haya introducido los datos, haga clic en `Aplicar la configuración`{.action}. Los estados de los servidores DNS se actualizarán en la tabla mostrando la nueva información que acaba de proporcionar.
-
-![dns-server](images/edit-dns-servers.png){.thumbnail}
+Una zona DNS contiene información técnica, denominada *registros DNS*. La zona DNS es como un puesto de referencia.
 
 > [!success]
 >
-> La modificación de los servidores DNS asociados a un dominio conlleva un plazo de propagación de **24** a **48** horas máximo para que esta sea efectiva.
+> - Para más información sobre las zonas DNS, consulte nuestra guía "[Todo sobre la zona DNS](/pages/web_cloud/domains/dns_zone_general_information)".
+> - Consulte nuestra guía sobre Todo sobre los registros DNS](/pages/web_cloud/domains/dns_zone_records) para una mejor comprensión del conjunto.
 >
 
-#### Caso particular: Restaurar los servidores DNS 
+Por lo tanto, los **servidores DNS (Authoritative)** deben estar declarados (en el registrador del dominio) para utilizar la zona DNS que alojan.
 
-El botón `Restaurar los servidores DNS`{.action} permite restaurar los servidores DNS actuales sustituyéndolos automáticamente por los servidores DNS de OVHcloud de origen. Utilice esta opción **únicamente** si quiere reutilizar los servidores DNS de OVHcloud (y la zona DNS de OVHcloud asociada a sus servidores DNS). 
+![DNS](/pages/assets/schemas/dns/dns-server.png){.thumbnail}
 
-![dns-server](images/reset-the-dns-servers.png){.thumbnail}
+### Funcionamiento de un servidor DNS (Authoritative) con un dominio
 
-Una vez realizados los cambios necesarios, debe esperar a que los cambios surtan efecto. Hay que tener en cuenta dos períodos sucesivos:
+#### Declaración de los servidores DNS (Authoritative) ante el agente registrador
 
-- el *registre* que gestiona la extensión del dominio (por ejemplo, el registro de extensiones en *.es*) debe aplicar los cambios realizados por OVHcloud. Puede consultar el progreso en el [área de cliente de OVHcloud](/links/manager){.external}. Para ello, acceda a la sección `Web Cloud`{.action}, acceda a la sección `dominios`{.action} en la columna de la izquierda y haga clic en `Operaciones en curso`{.action}.
-- Una vez que la organización que gestiona la extensión del dominio haya aplicado el cambio, deberá esperar un máximo de **48 horas** para que los cambios que haya realizado se propaguen por completo.
+Para que la zona DNS asociada a un nombre de dominio presente en el directorio de un servidor DNS esté activa, es necesario que dicho servidor DNS esté declarado ante el agente registrador del nombre de dominio.
+
+Por precaución, se declara como mínimo 2 **servidores DNS (Authoritative)** (un servidor DNS primario y un servidor DNS secundario) ante el agente registrador de un dominio. Ambos funcionan de la misma manera. Sin embargo, si uno de ellos responde más rápidamente, los solucionadores DNS lo consultarán primero. Si uno de los dos no responde o más, el otro servidor DNS estará allí para responder a la consulta DNS.
+
+A veces, algunos proveedores DNS ofrecen más de 2 **servidores DNS (Authoritative)** para declarar en su dominio. En ese caso, introduzca todos los servidores DNS ofrecidos por su proveedor DNS.
 
 ## Más información
 
-[Modificación de una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
+[Todo sobre la zona DNS](/pages/web_cloud/domains/dns_zone_general_information).
+
+Todo sobre los registros DNS](/pages/web_cloud/domains/dns_zone_records).
+
+[Modificar los servidores DNS de un dominio de OVHcloud](/pages/web_cloud/domains/dns_server_edit).
+
+[Modificar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
-
+ 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
-
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+ 
+Interactúe con nuestra [comunidad de usuarios](/links/community).

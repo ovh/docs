@@ -1,6 +1,6 @@
 ---
 title: Tutorial - Utilizzo di Zonemaster
-updated: 2024-03-08
+updated: 2024-06-18
 ---
 
 > [!primary]
@@ -20,7 +20,7 @@ updated: 2024-03-08
 
 > [!primary]
 >
-> Per una migliore comprensione del concetto di DNS, consulta l'introduzione della nostra guida sulla [configurazione di una zona DNS](/pages/web_cloud/domains/dns_zone_edit).
+> Per comprendere meglio il concetto di DNS, consulta la nostra guida "[Sapere tutto sulla zona DNS](/pages/web_cloud/domains/dns_zone_general_information)".
 
 ## Prerequisiti
 
@@ -34,7 +34,7 @@ Il tool Zonemaster permette di verificare una configurazione DNS installata su u
 
 Per verificare l'attuale configurazione di un dominio, inserisci il tuo dominio e clicca su `Run`{.action}
 
-![Screenshot dal modulo di Zonemaster. Il dominio "domain.tld" è stato inserito ed è pronto per essere testato.](images/run-domain-test.png){.thumbnail}
+![Screenshot dal modulo di Zonemaster. Il dominio "domain.tld" è stato inserito ed è pronto per essere testato.](/pages/assets/screens/other/web-tools/zonemaster/run-domain-test.png){.thumbnail}
 
 Per verificare una configurazione DNS preparata ma non ancora applicata al dominio interessato, seleziona la casella `Options`{.action} e inserisci le seguenti informazioni:
 
@@ -47,13 +47,13 @@ Per verificare una configurazione DNS preparata ma non ancora applicata al domin
 >
 > Prima di modificare i server DNS, puoi effettuare una ricerca avanzata utilizzando la casella `Options`{.action} inserendo "dns1.test.tld" e "dns2.test.tld" nelle caselle `Nameservers`.<br>
 > Zonemaster eseguirà un test come se utilizzaste i server "dns1.test.tld" e "dns2.test.tld" su "domain.tld".<br>
-> ![Screenshot delle opzioni avanzate del modulo di Zonemaster. I due server con i nomi "dns1.test.tld" e "dns2.test.tld" sono stati inseriti nella sezione "Server con i nomi" del form.](images/run-domain-test-nameservers-option.png){.thumbnail}
+> ![Screenshot delle opzioni avanzate del modulo di Zonemaster. I due server con i nomi "dns1.test.tld" e "dns2.test.tld" sono stati inseriti nella sezione "Server con i nomi" del form.](/pages/assets/screens/other/web-tools/zonemaster/run-domain-test-nameservers-option.png){.thumbnail}
 
 > [!primary]
 >
 > Quando inserisci un dominio e clicca sui pulsanti `Fetch NS from parent zone`{.action} principale e `Fetch DS from parent zone`{.action} principale, se configurato, i server DNS associati al dominio appariranno insieme alle informazioni del record DS (DNSSEC).
 >
-> ![Captura de pantalla de la página de resultados de Zonemaster para el dominio "domain.tld". Se desarrolla la sección "Address".](images/fetch-ns-from-parent-zone.png){.thumbnail}
+> ![Captura de pantalla de la página de resultados de Zonemaster para el dominio "domain.tld". Se desarrolla la sección "Address".](/pages/assets/screens/other/web-tools/zonemaster/fetch-ns-from-parent-zone.png){.thumbnail}
 
 ### I Risultati
 
@@ -66,7 +66,7 @@ Una volta convalidato il modulo, i risultati sono classificati per codice colore
 
 Per ciascun test è possibile ottenere maggiori dettagli, ad esempio per comprendere l'errore nel caso di un malfunzionamento, o semplicemente a titolo indicativo.
 
-![Screenshot della pagina dei risultati di Zonemaster per il dominio "domain.tld". La sezione "Address" viene espansa.](images/domain-analysis.png){.thumbnail}
+![Screenshot della pagina dei risultati di Zonemaster per il dominio "domain.tld". La sezione "Address" viene espansa.](/pages/assets/screens/other/web-tools/zonemaster/domain-analysis.png){.thumbnail}
 
 ### Informazioni utili
 
@@ -84,4 +84,4 @@ Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [p
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [soluzioni di supporto](/links/support).
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

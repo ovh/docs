@@ -52,7 +52,7 @@ Al instalar el alojamiento, se crea automáticamente un motor, que aparece en la
 
 Según el plan [Cloud Web](/links/web/hosting-cloud-web-offer) del que disponga, también puede añadir motores de ejecución adicionales haciendo clic en el botón `Acciones`{.action} y seleccionando `Añadir un motor de ejecución`{.action}. Tenga en cuenta que el número máximo de motores de ejecución depende del plan Cloud Web que tenga contratado. Por lo tanto, asegúrese de disponer del motor o motores de ejecución necesarios para su proyecto antes de continuar.
 
-![Cloud Web](images/edit-runtime.png){.thumbnail}
+![Cloud Web](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/edit-runtime.png){.thumbnail}
 
 ### 3. Crear variables de entorno (opcional)
 
@@ -62,7 +62,7 @@ Esto permite, por ejemplo, no definir un archivo «.env» en el framework PHP La
 
 Para añadir una variable de entorno, una vez seleccionado el alojamiento Cloud Web en el área de cliente de OVHcloud, abra la pestaña `Variables de entorno`{.action}. Se mostrará una tabla que contiene las variables de entorno creadas en su alojamiento. Para añadir una nueva, haga clic en el botón `Acciones`{.action} y seleccione `Añadir una variable de entorno`{.action}. Siga las indicaciones en función de la variable que desee crear.
 
-![Cloud Web](images/add-environment-variable.png){.thumbnail}
+![Cloud Web](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/environment-variables/add-an-environment-variable.png){.thumbnail}
 
 Si no utiliza ningún framework de desarrollo que incluya las variables de entorno, o si simplemente quiere comprobar que las variables funcionen correctamente, puede crear un script que realice dicha comprobación. A continuación ofrecemos dos ejemplos que le ayudarán en esta tarea (sin que estos sustituyan la ayuda de un webmaster).
 
@@ -107,7 +107,7 @@ Cuando introduzca los datos, tenga en cuenta lo siguiente:
 
 Repita la operación para cada dominio que quiera añadir a su hosting Cloud Web, en su caso. Para más información sobre cómo añadir un dominio como multisitio, consulte la guía [Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external}.
 
-![Cloud Web](images/add-domain-or-subdomain.png){.thumbnail}
+![Cloud Web](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/multisite/add-domain-or-subdomain.png){.thumbnail}
 
 ### 5. Instalar el proyecto en el hosting Cloud Web
 
@@ -126,7 +126,7 @@ Si desea más información sobre los módulos en un clic de OVHcloud, consulte l
 > Para utilizar los módulos, es necesario utilizar el motor de ejecución PHP.
 >
 
-![Cloud Web](images/add-a-module.png){.thumbnail}
+![Cloud Web](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/1-click-modules/add-a-module.png){.thumbnail}
 
 #### 5.2. Instalar el proyecto manualmente
 
@@ -197,4 +197,4 @@ Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con 
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

@@ -1,7 +1,7 @@
 ---
-title: 'Netzwerk auf Proxmox VE für die High Grade & SCALE Reihen konfigurieren'
-excerpt: 'Erfahren Sie, wie Sie das Netzwerk auf Proxmox VE für die High Grade & SCALE Reihen einrichten'
-updated: 2023-05-11
+title: 'Netzwerk auf Proxmox VE einrichten'
+excerpt: 'Erfahren Sie hier, wie Sie das Netzwerk auf Proxmox VE konfigurieren'
+updated: 2024-07-16
 ---
 
 > [!primary]
@@ -15,7 +15,12 @@ updated: 2023-05-11
 
 ## Ziel
 
-Bei den High Grade & SCALE Server-Reihen ist der Betrieb von Additional IPs im *Bridged*-Modus (über virtuelle MAC-Adressen) nicht möglich. Es ist deshalb notwendig, die Additional IPs im *Routed*-Modus oder über das vRack zu konfigurieren.
+Bei den High Grade & SCALE Server-Reihen ist der Betrieb von Additional IPs im *Bridged*-Modus (über virtuelle MAC-Adressen) nicht möglich. Das Gleiche gilt für neue Server der neuesten Generation, die mit AMD Epyc 4K und 8K CPUs ausgeliefert werden. Es ist deshalb notwendig, die Additional IPs im *Routed*-Modus oder über das vRack zu konfigurieren.
+
+> [!primary]
+>
+> Bis Ende 2024 wird diese Funktion für die Reihen High Grade, SCALE und ADVANCE verfügbar sein.
+>
 
 **Diese Anleitung erklärt, wie Sie das Netzwerk mit Proxmox VE konfigurieren.**
 
@@ -23,7 +28,7 @@ Bei den High Grade & SCALE Server-Reihen ist der Betrieb von Additional IPs im *
 
 - Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account.
 - Sie verfügen über eine [Additional IP](https://www.ovhcloud.com/de/bare-metal/ip/)-Adresse oder einen Additional IP-Block.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 > [!warning]
 >
@@ -203,7 +208,7 @@ Diese Konfiguration ist flexibler. Sie verbinden die Additional IP nicht mit ein
 - Sie haben Ihren gewünschten privaten IP-Adressbereich festgelegt.
 - Sie verfügen über einen mit vRack kompatiblen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/).
 - Sie haben ein [vRack](https://www.ovh.de/loesungen/vrack/) in Ihrem Kunden-Account eingerichtet.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 #### Schema der Zielkonfiguration
 

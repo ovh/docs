@@ -1,6 +1,6 @@
 ---
 title: FAQ soluciones de correo electrónico de OVHcloud
-updated: 2024-06-13
+updated: 2024-06-27
 ---
 
 ## FAQ
@@ -55,6 +55,14 @@ La contraseña **contraseña** debe cumplir las siguientes reglas:
 > [!warning]
 > Por motivos de seguridad, le recomendamos que no utilice dos veces la misma contraseña, que la contraseña no guarde ninguna relación con sus datos personales (evite mencionar su nombre, apellidos o fecha de nacimiento, por ejemplo) y que la cambie periódicamente.
 
+### ¿Cómo recuperar mi contraseña olvidada?
+
+Por motivos de seguridad y confidencialidad, no es posible **recuperar** una contraseña. Como se describe en nuestra guía «[Cambiar la contraseña de una dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)», es necesario restaurar su contraseña si ya no la conoce.
+
+> [!primary]
+>
+> Si desea almacenar una contraseña, le recomendamos que utilice un gestor de contraseñas, como **Keepass**.
+
 ### ¿Cómo limitar la recepción de spam?
 
 Si desea limitar la recepción del spam, puede configurar filtros de correo (llamados «Filtros» en la solución MX Plan) para eliminar o mover estos mensajes de correo a la carpeta de correo no deseado. Para ello, desde su [área de cliente de OVHcloud](/links/manager), acceda a la sección `Correo electrónico` en la columna de la izquierda y seleccione el dominio correspondiente. A continuación, abra la pestaña `Correo electrónico`{.action} y, en la columna «Filtros», haga clic en el icono de «Gestión de los filtros de la cuenta».
@@ -81,10 +89,14 @@ Si quiere cambiar [de plan de correo](/links/web/emails) para disfrutar de más 
 
 La solución Office 365 Pro Plus no incluye licencia Skype. Solo se incluye Skype for Business.
 
+### ¿Cómo transferir sin interrupción del servicio mi correo, sitio web, base de datos y dominio a los servidores de OVHcloud?
+
+Para más información, consulte la guía "[Migrar un sitio web y los servicios asociados a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)".
+
 ## Más información <a name="go-further"></a>
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
-Interactúe con nuestra [comunidad de usuarios](/https://community.ovh.com/en/).
+Interactúe con nuestra [comunidad de usuarios](/links/community).

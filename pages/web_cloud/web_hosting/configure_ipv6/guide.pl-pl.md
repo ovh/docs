@@ -49,7 +49,7 @@ Zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external}. W sekcji `
 
 W ramce **IPv6** skopiuj wpis i przejdź do kolejnego etapu.
 
-![IPv6](images/find-ipv6.png){.thumbnail}
+![IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv6.png){.thumbnail}
 
 ### Etap 2: skonfiguruj aktywną strefę DNS Twojej domeny
 
@@ -60,20 +60,20 @@ W ramce **IPv6** skopiuj wpis i przejdź do kolejnego etapu.
 > Dodanie, zmiana lub usunięcie wpisu DNS w strefie DNS domeny powoduje, że czas propagacji wynosi od **4 do 24 godzin**, aby stało się w pełni skuteczne.
 >
 
-Aby przeglądarka znalazła adres IPv6 z Twoją domeną, zmodyfikuj aktywną strefę DNS Twojej domeny. Skorzystaj z naszego przewodnika "[Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit#modyfikacja-strefy-dns-ovhcloud)", aby utworzyć wpis DNS typu **AAAA**.
+Aby przeglądarka znalazła adres IPv6 z Twoją domeną, zmodyfikuj aktywną strefę DNS Twojej domeny. Skorzystaj z naszego przewodnika "[Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)", aby utworzyć wpis DNS typu **AAAA**.
 
 W części `Web Cloud`{.action} kliknij `Domeny`{.action}. Wybierz nazwę domeny i przejdź do zakładki `Strefa DNS`{.action}. Kliknij przycisk `Dodaj rekord`{.action} po prawej stronie tabeli. 
 
 Wpisz wcześniej skopiowany adres IPv6, używając typu rekordu **AAAA**.
 
-![IPv6](images/add-dns-zone-entry-aaaa.png){.thumbnail}
+![IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-dns-zone-entry-aaaa.png){.thumbnail}
 
 ## Przejdź dalej <a name="go-further"></a>
 
-[Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit#modyfikacja-strefy-dns-ovhcloud)
+[Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 
+Dołącz do [grona naszych użytkowników](/links/community). 

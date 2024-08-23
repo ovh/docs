@@ -1,7 +1,7 @@
 ---
 title: Backing up an instance
 excerpt: Find out how to back up a Public Cloud instance in the OVHcloud Control Panel
-updated: 2024-05-06
+updated: 2024-07-03
 ---
 
 ## Objective
@@ -32,6 +32,10 @@ Click on the `...`{.action} button to the right of the instance and select `Crea
 Enter a name for the backup on the next page. Take note of the pricing information and click on `Confirm`{.action}.
 
 ![public-cloud-instance-backup](images/createbackup2.png){.thumbnail}
+
+It is not possible to track the progress of the backup in real time, however, in the `Instance Backup`{.action} section under `Storage`{.action} in the left-hand menu, the status will be displayed as "Backup in progress" during the process.
+
+![public-cloud-instance-backup](images/backup_in_progress.png){.thumbnail}
 
 Once the backup is complete, it will be available in the `Instance Backup`{.action} section under `Storage`{.action} in the left-hand menu.
 
@@ -95,4 +99,4 @@ Find out how to use backups to clone or restore instances in [this guide](/pages
 
 [Using instance backups to create or restore an instance](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

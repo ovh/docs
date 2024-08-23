@@ -1,7 +1,7 @@
 ---
 title: "Gestionar los mensajes de correo automatizados"
 excerpt: "Descubra cómo realizar el seguimiento y la gestión de los emails automatizados enviados desde un alojamiento web de OVHcloud"
-updated: 2023-12-04
+updated: 2024-08-20
 ---
 
 > [!primary]
@@ -35,13 +35,13 @@ Los emails automatizados son mensajes enviados a través de scripts. Generalment
 
 El seguimiento y la gestión del correo automatizado de su alojamiento web de OVHcloud se realizan desde su [área de cliente de OVHcloud](/links/manager){.external}. Una vez que se haya conectado, acceda al apartado `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Más`{.action} y haga clic en `Scripts de correo electrónico`{.action}.
 
-![hosting](images/go-to-email-scripts-tab.png){.thumbnail}
+![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/email-scripts/go-to-email-scripts-tab.png){.thumbnail}
 
 Se abrirá una página en la que podrá consultar y gestionar los mensajes de correo automatizados enviados desde su [alojamiento web de OVHcloud](/links/web/hosting).
 
 ### Presentación del apartado "Scripts de correo electrónico"
 
-![hosting](images/tab.png){.thumbnail}
+![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/email-scripts/tab.png){.thumbnail}
 
 La página muestra varios datos que le permiten visualizar la actividad del envío de mensajes de correo automatizados generados desde sus scripts:
 
@@ -78,7 +78,7 @@ Si el estado del servicio permite el envío de mensajes de correo electrónico g
 
 ```bash
 <?php
-$to = "RecipientEmail@adress.tld"; 
+$to = "RecipientEmail@address.tld"; 
 $subject = "Test mail PHP"; 
 $content = "The body/content of the Email";
 $headers = "From: Website <SendingEmail@address.tld>\r\nReply-To: SendingEmail@address.tld";
@@ -129,7 +129,7 @@ Este estado se produce cuando se han enviado mensajes considerados de spam desde
 
 Por lo general, el bloqueo se acompaña por el envío de un email titulado **"Abuso con su alojamiento dominio.tld"** generado automáticamente por nuestros robots de seguridad:
 
-![hosting](images/email-script-disabled.png){.thumbnail}
+![hosting](/pages/assets/screens/email-sending-to-customer/webhosting/email-script-disabled.png){.thumbnail}
 
 Existen tres posibles situaciones en relación con esta situación:
 
@@ -206,7 +206,7 @@ $mail->Host = "your.smtp.server";
 $mail->SMTPAuth = true; 
 $mail->SMTPSecure = "ssl";
 $mail->Port = 465; 
-$mail->Username = "e-mail@adress.tld"; 
+$mail->Username = "e-mail@address.tld"; 
 $mail->Password = "YourEmailPassword"; 
 ```
 
@@ -227,4 +227,4 @@ Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con 
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

@@ -45,13 +45,13 @@ W kolumnie **"Kopie zapasowe"** liczba ta odpowiada liczbie kopii zapasowych dos
 
 Kliknij przycisk `...`{.action} po prawej stronie bazy danych, a następnie `Zapisz teraz`{.action}.
 
-![Web Cloud Databases](images/back-up-now.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/back-up-now.png){.thumbnail}
 
 #### 2\. Eksport kopii zapasowej
 
 Kliknij przycisk `...`{.action} po prawej stronie bazy danych, a następnie `Wyświetl kopie zapasowe.`{.action}
 
-![Web Cloud Databases](images/show-backups.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/show-backups.png){.thumbnail}
 
 Pojawi się lista dostępnych kopii zapasowych, kliknij przycisk `...`{.action} po prawej stronie wybranej kopii zapasowej, a następnie `Pobierz kopię zapasową`{.action}, aby pobrać kopię zapasową.
 
@@ -69,7 +69,7 @@ Po zalogowaniu się do phpMyAdmin kliknij nazwę bazy danych, którą chcesz wye
 
 Masz dwa możliwe sposoby eksportu. Jeśli nie potrzebujesz określonego trybu, zalecamy użycie trybu **szybkiego** w formacie **SQL**.
 
-![Web Cloud Databases](images/pma-export-backup-web-cloud-db.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/other/web-tools/phpmyadmin/pma-export-backup-web-cloud-db.png){.thumbnail}
 
 ##### 1\.2 Eksportowanie bazy MySQL lub MariaDB z wiersza poleceń
 
@@ -125,4 +125,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 
+Dołącz do [grona naszych użytkowników](/links/community). 

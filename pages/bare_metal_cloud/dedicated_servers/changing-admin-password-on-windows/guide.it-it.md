@@ -1,7 +1,7 @@
 ---
 title: 'Modificare la password amministratore su un server dedicato Windows'
 excerpt: 'Come impostare una nuova password amministratore su un server Windows'
-updated: 2023-09-18
+updated: 2024-06-26
 ---
 
 > [!primary]
@@ -14,10 +14,17 @@ Durante l’installazione o la reinstallazione di una distribuzione Windows, vie
 
 **Questa guida ti mostra come modificare la password admin del tuo server utilizzando le configurazioni della modalità Rescue disponibili con un sistema operativo Windows.**
 
+> [!warning]
+>
+> Questa guida non si applica all’avvio in Rescue mode denominato `Windows Customer Rescue System`.
+>
+> Consulta [questa guida](/pages/bare_metal_cloud/dedicated_servers/rcw-changing-admin-password-on-windows) quando utilizzi l’opzione `Windows Customer Rescue System (Windows2022-based)` nello Spazio Cliente OVHcloud.
+>
+
 ## Prerequisiti
 
-* Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/){.external} Windows
-* Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/){.external} Windows
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 
 ## Procedura
 
@@ -232,7 +239,7 @@ Write hive files? (y/n) [n] : y
 
 ### Step 4: Riavviare il server 
 
-Sostituisci il netboot con **Avviare da hard disk** nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) (vedi [Step 1](./#step-1-riavvia-il-server-in-modalita-rescue)). 
+Sostituisci il netboot con **Avviare da hard disk** nello [Spazio Cliente OVHcloud](/links/manager) (vedi [Step 1](./#step-1-riavvia-il-server-in-modalita-rescue)). 
 
 Di ritorno da riga di comando, smonta la partizione e riavvia il server con questi comandi:
 
@@ -256,7 +263,7 @@ The system is going down for reboot NOW!
 
 ### Step 5: definire una nuova password (IPMI)
 
-Nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sulla scheda `IPMI`{.action} per aprire una sessione KVM.
+Nello [Spazio Cliente OVHcloud](/links/manager), clicca sulla scheda `IPMI`{.action} per aprire una sessione KVM.
 
 ![IPMI](images/adminpw_win_03.png){.thumbnail}
 
@@ -302,7 +309,7 @@ Per maggiori informazioni sulla modalità Rescue, consulta [questa guida](/pages
 
 #### Step 2: eliminare la password corrente
 
-Nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sulla scheda `IPMI`{.action} per aprire una sessione KVM.
+Nello [Spazio Cliente OVHcloud](/links/manager), clicca sulla scheda `IPMI`{.action} per aprire una sessione KVM.
 
 ![IPMI](images/adminpw_win_03.png){.thumbnail}
 
@@ -324,7 +331,7 @@ Il server deve essere riavviato
 
 #### Step 3: riavvia il server 
 
-Sostituisci il netboot con **Avviare da hard disk** nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) (vedi [Step 1](./#step-1-riavvia-il-server-in-modalita-rescue)). 
+Sostituisci il netboot con **Avviare da hard disk** nello [Spazio Cliente OVHcloud](/links/manager) (vedi [Step 1](./#step-1-riavvia-il-server-in-modalita-rescue)). 
 
 Nella finestra KVM, seleziona l'opzione di arresto `Riavvia`{.action} utilizzando il pulsante Windows "Avvia" in basso a sinistra.
 

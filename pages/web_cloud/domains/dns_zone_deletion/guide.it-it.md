@@ -1,7 +1,7 @@
 ---
-title: "Come eliminare una zona DNS?"
+title: "Come eliminare una zona DNS OVHcloud?"
 excerpt: "Questa guida ti mostra come eliminare una zona DNS per il tuo dominio dallo Spazio Cliente OVHcloud"
-updated: 2024-02-20
+updated: 2024-06-26
 ---
 
 > [!primary]
@@ -14,9 +14,9 @@ La zona **D**omain **N**ame **S**ystem (**DNS**) di un dominio è il suo file di
 
 Per maggiori informazioni sulle zone e i server DNS, consulta le guide seguenti: 
 
-- [Creare una zona DNS in OVHcloud](/pages/web_cloud/domains/dns_zone_create).
-- [Modificare una zona DNS in OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
-- [Modificare i server DNS di un dominio OVHcloud](/pages/web_cloud/domains/dns_server_general_information).
+- [Scopri tutto sui server DNS](/pages/web_cloud/domains/dns_server_general_information)
+- [Sapere tutto sulla zona DNS](/pages/web_cloud/domains/dns_zone_general_information)
+- [Scopri tutto sui record DNS](/pages/web_cloud/domains/dns_zone_records)
 
 Ad esempio, una zona DNS per un dominio può essere eliminata in OVHcloud nei seguenti casi (elenco non esaustivo):
 
@@ -47,7 +47,7 @@ Ad esempio, una zona DNS per un dominio può essere eliminata in OVHcloud nei se
 >
 > Effettua un [WHOIS](/links/web/domains-whois) del dominio per sapere se la zona DNS attiva del dominio è quella presente in OVHcloud o meno.
 >
-> Se la zona DNS attiva per il tuo nome di dominio è quella presente in OVHcloud e vuoi sostituirla con una zona DNS ospitata altrove, consulta la nostra guida "[Modificare i server DNS di un nome di dominio OVHcloud](/pages/web_cloud/domains/dns_server_general_information)" prima di effettuare qualsiasi eliminazione di zona DNS.
+> Se la zona DNS attiva per il tuo nome di dominio è quella presente in OVHcloud e vuoi sostituirla con una zona DNS ospitata altrove, consulta la nostra guida "[Modificare i server DNS di un nome di dominio OVHcloud](/pages/web_cloud/domains/dns_server_edit)" prima di effettuare qualsiasi eliminazione di zona DNS.
 >
 
 ### Step 1 - Inizia a eliminare una zona DNS OVHcloud
@@ -61,11 +61,11 @@ Per avviare l’eliminazione di una zona DNS OVHcloud, esegui queste operazioni:
 5. Nella nuova pagina, clicca sulla scheda `Zona DNS`{.action} per accedere alla tabella con tutti i record DNS della zona DNS.
 6. Sul lato destro (o sotto la tabella in base alla risoluzione dello schermo), clicca sul pulsante `Elimina la zona DNS`{.action}.
 
-![delete the DNS zone](images/delete-the-dns-zone.png){.thumbnail}
+![delete the DNS zone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/delete-the-dns-zone.png){.thumbnail}
 
 Nella nuova finestra, consulta i messaggi indicati all’interno.
 
-![delete the DNS zone validation](images/delete-the-dns-zone-confirmation.png){.thumbnail}
+![delete the DNS zone validation](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/delete-the-dns-zone-confirmation.png){.thumbnail}
 
 Clicca sul pulsante `Conferma`{.action} per completare il primo step di eliminazione della zona DNS.
 
@@ -89,7 +89,7 @@ Clicca sul **link di conferma** per continuare l’eliminazione della zona DNS O
 
 Cliccando sul link di conferma verrai reindirizzato a una nuova pagina OVHcloud in cui sarà richiesto il motivo o i motivi dell’eliminazione della zona DNS.
 
-![cancel the service](images/cancel-my-service.png){.thumbnail}
+![cancel the service](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/cancel-my-service.png){.thumbnail}
 
 Una volta completato il modulo e se vuoi davvero eliminare definitivamente la zona DNS OVHcloud, clicca sul pulsante `Conferma`{.action} in fondo alla pagina.
 
@@ -101,7 +101,7 @@ Verrà inviata un’ultima email di conferma all’indirizzo email del contatto 
 
 [Modificare una zona DNS in OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-[Modificare i server DNS di un dominio OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
+[Modificare i server DNS di un dominio OVHcloud](/pages/web_cloud/domains/dns_server_edit)
 
 [Creare una zona DNS in OVHcloud](/pages/web_cloud/domains/dns_zone_create)
  
@@ -109,4 +109,4 @@ Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [p
  
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
  
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

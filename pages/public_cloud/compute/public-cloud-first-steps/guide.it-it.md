@@ -17,7 +17,7 @@ Le istanze di OVHcloud Public Cloud richiedono un approccio diverso da quello di
 ## Prerequisiti
 
 - Aver già creato un progetto [Public Cloud](https://www.ovhcloud.com/it/public-cloud/) nel tuo account OVHcloud
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
@@ -163,7 +163,7 @@ Clicca sul pulsante `Aggiungi una chiave SSH`{.action}. Nella nuova pagina, inse
 > È preferibile creare una rete privata prima di procedere alla creazione di un’istanza. Per maggiori informazioni sulla creazione di una rete privata, consulta la guida [Configurazione della vRack sul Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
 >
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), vai alla sezione `Public Cloud`{.action} e seleziona il tuo progetto Public Cloud. Nella Home page, clicca su `Crea un’istanza`{.action}. (È possibile trovare la stessa funzionalità nella pagina "Istanze", cliccando su `Istanze`{.action} nella barra di navigazione a sinistra sotto alla voce “Compute”.)
+Accedi allo [Spazio Cliente OVHcloud](/links/manager), vai alla sezione `Public Cloud`{.action} e seleziona il tuo progetto Public Cloud. Nella Home page, clicca su `Crea un’istanza`{.action}. (È possibile trovare la stessa funzionalità nella pagina "Istanze", cliccando su `Istanze`{.action} nella barra di navigazione a sinistra sotto alla voce “Compute”.)
 
 ![instance select](images/instance-creation-2024.png){.thumbnail}
 
@@ -270,7 +270,7 @@ Se hai creato un'istanza senza chiave SSH tramite l'API OVHcloud o l'interfaccia
 
 #### Connettersi a un’istanza Linux da Linux/Mac
 
-È possibile accedere all’istanza tramite interfaccia a riga di comando (Terminal) via SSH. Sostituisci il “nome utente” negli esempi seguenti con il tuo utente predefinito come spiegato in precedenza. Puoi semplicemente copiare l’intero comando di login dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Per farlo, clicca sul comando in questione nella Dashboard delle Istanze e poi incollalo nel tuo Terminal.
+È possibile accedere all’istanza tramite interfaccia a riga di comando (Terminal) via SSH. Sostituisci il “nome utente” negli esempi seguenti con il tuo utente predefinito come spiegato in precedenza. Puoi semplicemente copiare l’intero comando di login dallo [Spazio Cliente OVHcloud](/links/manager). Per farlo, clicca sul comando in questione nella Dashboard delle Istanze e poi incollalo nel tuo Terminal.
 
 ![instances page](images/instance-connect-02.png){.thumbnail}
 
@@ -288,7 +288,7 @@ New password:
 Retype new password:
 passwd: password updated successfully
 ```
-A questo punto, puoi utilizzare queste credenziali per effettuare il login tramite la `console VNC`{.action} nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Quindi passa all’utente “root” e imposta una password sicura, dopodiché torna all’utente precedente.
+A questo punto, puoi utilizzare queste credenziali per effettuare il login tramite la `console VNC`{.action} nel tuo [Spazio Cliente OVHcloud](/links/manager). Quindi passa all’utente “root” e imposta una password sicura, dopodiché torna all’utente precedente.
 
 ```bash
 $ sudo su -
@@ -308,7 +308,7 @@ Apri PuTTY ed espandi “SSH” nel menu a sinistra, quindi clicca su “Auth”
 
 ![using putty](images/puttyconnect-01.png){.thumbnail}
 
-Clicca sul pulsante `Browse`{.action} per accedere alla cartella in cui si trova il file di chiave privata (.ppk) e aprilo. A questo punto, passa a “Session” tramite il menu a sinistra e inserisci le tue credenziali di accesso (nomeutente@IPv4_indirizzo). Nella schermata di esempio, sostituisci “ubuntu” con l’utente predefinito adeguato in base alla Dashboard dell’istanza nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). (Clicca su `Istanze`{.action} nella barra di navigazione a sinistra, poi seleziona il nome dell’istanza).
+Clicca sul pulsante `Browse`{.action} per accedere alla cartella in cui si trova il file di chiave privata (.ppk) e aprilo. A questo punto, passa a “Session” tramite il menu a sinistra e inserisci le tue credenziali di accesso (nomeutente@IPv4_indirizzo). Nella schermata di esempio, sostituisci “ubuntu” con l’utente predefinito adeguato in base alla Dashboard dell’istanza nel tuo [Spazio Cliente OVHcloud](/links/manager). (Clicca su `Istanze`{.action} nella barra di navigazione a sinistra, poi seleziona il nome dell’istanza).
 
 Per le successive connessioni, è ora possibile salvare questa sessione per renderla disponibile nell’elenco di questa interfaccia.  Inserisci un nome descrittivo nel campo “Saved Sessions” e clicca su `Salva`{.action} per aggiungerlo.
 
@@ -352,7 +352,7 @@ In caso di difficoltà, verifica che il tuo dispositivo autorizzi la connessione
 
 ##### **Da Linux**
 
-È possibile accedere alle istanze Public Cloud tramite la console VNC integrata nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Dal tuo dispositivo locale, la connessione può essere stabilita tramite un’applicazione client compatibile con il Remote Desktop Protocol (RDP).
+È possibile accedere alle istanze Public Cloud tramite la console VNC integrata nello [Spazio Cliente OVHcloud](/links/manager). Dal tuo dispositivo locale, la connessione può essere stabilita tramite un’applicazione client compatibile con il Remote Desktop Protocol (RDP).
 
 Ad esempio, Remmina Remote Desktop Client è un’applicazione compatibile inclusa nell’installazione Ubuntu Desktop. Se non riesci a trovare Remmina nel tuo ambiente, puoi ottenerla dal [sito ufficiale](https://remmina.org/).
 

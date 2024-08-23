@@ -15,7 +15,7 @@ Pour faciliter les explications, nous décrirons la configuration la plus simple
 - Le PCC de destination doit disposer d'au moins une adresse IP publique disponible pour le point de connexion VPN.
 - Le site client doit disposer d’une installation Zerto opérationnelle.
 - Les machines de réplication Zerto (VRA : Virtual Réplication Appliance) coté client et coté OVHCloud doivent pouvoir échanger entre elles sur les ports TCP 4007 et 4008
-- Les machines d’administration Zerto (ZVM : Zerto Virtual Manager) coté client et coté OVHCloud doivent pouvoir échanger entre elles sur les ports TCP 9081
+- Les machines d’administration Zerto (ZVM : Zerto Virtual Manager) coté client et coté OVHCloud doivent pouvoir échanger entre elles sur les ports TCP 9071
 
 ## En pratique
 

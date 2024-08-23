@@ -16,7 +16,7 @@ As well as private IP addressing, the [vRack](https://www.ovh.com.au/solutions/v
 - Your chosen private IP address range
 - A [vRack compatible server](https://www.ovh.com.au/dedicated-servers/){.external}
 - A [vRack](https://www.ovh.com.au/solutions/vrack/){.external} service activated in your account
-- Access to the OVHcloud [Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}
+- Access to the OVHcloud [Control Panel](/links/manager){.external}
 
 > [!warning]
 > This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-au/about/).
@@ -40,7 +40,7 @@ As well as private IP addressing, the [vRack](https://www.ovh.com.au/solutions/v
 > This setup allows you to configure IPs of the same block on multiple servers, provided that these servers are all in the same vRack as the IP block. The IP block must have at least 2 usable IPs or more for this to be possible.
 >
 
-In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), go to the `Bare Metal Cloud`{.action} section and click on `Network`{.action}. Next, open the `vRack`{.action} menu.
+In your [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and click on `Network`{.action}. Next, open the `vRack`{.action} menu.
 
 Select your vRack from the list to display the list of eligible services. Click the IP block you wish to add to the vRack and click on the `Add`{.action} button.
 
@@ -147,4 +147,4 @@ Now reboot your server to apply the changes.
 
 [Configuring the vRack between the Public Cloud and a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/configuring-the-vrack-between-the-public-cloud-and-a-dedicated-server){.external}
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

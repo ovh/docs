@@ -17,7 +17,7 @@ Uruchomienie serwera www i powiązanych z nim aplikacji pozwala serwerowi cloud 
 ## Wymagania początkowe
 
 - Serwer [dedykowany](https://www.ovhcloud.com/pl/bare-metal/), [VPS](https://www.ovhcloud.com/pl/vps/) lub instancja [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na Twoim koncie OVHcloud (z wyłączeniem systemu Windows)
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 - Dostęp administracyjny do Twojej usługi przez SSH
 
 > [!warning]
@@ -28,7 +28,7 @@ Uruchomienie serwera www i powiązanych z nim aplikacji pozwala serwerowi cloud 
 
 ## W praktyce
 
-Jeśli dystrybucja Debian lub Ubuntu nie jest już zainstalowana na Twoim serwerze, przeprowadź wstępną instalację w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Jest to najlepszy sposób na posiadanie własnego systemu dla Twojego serwera www i aplikacji, które go wykonują.
+Jeśli dystrybucja Debian lub Ubuntu nie jest już zainstalowana na Twoim serwerze, przeprowadź wstępną instalację w [Panelu klienta OVHcloud](/links/manager). Jest to najlepszy sposób na posiadanie własnego systemu dla Twojego serwera www i aplikacji, które go wykonują.
 
 Zapoznaj się z przewodnikiem dotyczącym instalacji dystrybucji w Twojej usłudze OVHcloud i połącz się z nią przez [SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction):
 
@@ -227,7 +227,7 @@ Możesz pójść o krok dalej z UFW, na przykład, jeśli chcesz ograniczyć ata
 
 ### Etap 6: konfiguracja DNS (opcjonalnie)
 
-Aby uzyskać dostęp do instalacji serwera www za pomocą domeny, należy przypisać go do Twojej usługi. W tym celu edytuj strefę DNS dostępną w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), pod warunkiem, że OVHcloud jest Twoim operatorem rekordu **i** że nazwa domeny wykorzystuje serwery DNS OVHcloud.
+Aby uzyskać dostęp do instalacji serwera www za pomocą domeny, należy przypisać go do Twojej usługi. W tym celu edytuj strefę DNS dostępną w [Panelu klienta OVHcloud](/links/manager), pod warunkiem, że OVHcloud jest Twoim operatorem rekordu **i** że nazwa domeny wykorzystuje serwery DNS OVHcloud.
 
 Aby dowiedzieć się więcej, zapoznaj się z przewodnikiem "[Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit)". Jeśli nazwa domeny jest aktualnie używana, skonfiguruj serwery DNS tylko po tym, jak Twoja strona WWW lub aplikacja są gotowe.
 

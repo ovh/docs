@@ -1,7 +1,7 @@
 ---
 title: Local Zone Compute - Funzionalità, capacità e limiti
 excerpt: Scopri le funzionalità, le capacità e i limiti attuali delle istanze Local Zones
-updated: 2024-04-08
+updated: 2024-07-10
 ---
 
 > [!primary]
@@ -10,7 +10,8 @@ updated: 2024-04-08
 
 ## Obiettivo
 
-Le istanze Local Zones sono un'estensione delle regioni che avvicinano i servizi OVHcloud a luoghi specifici, offrendo latenza ridotta e performance migliorate per le applicazioni.
+Le istanze Local Zones sono un'estensione delle [regioni](/links/public-cloud/regions-pci) che avvicinano i servizi OVHcloud a luoghi specifici, offrendo latenza ridotta e performance migliorate per le applicazioni.
+
 Le istanze Local Zones sono strategicamente posizionate in prossimità delle zone a forte richiesta degli utenti. Il loro obiettivo principale è ridurre al minimo il tempo necessario al trasferimento dei dati tra utente e Cloud, per rendere i servizi più rapidi e più reattivi e rispondere ai requisiti di Data residency.
 
 Per maggiori informazioni, accedi alla nostra [pagina dedicata alle istanze Local Zone](https://www.ovhcloud.com/it/public-cloud/local-zone-compute/).
@@ -19,7 +20,7 @@ Per maggiori informazioni, accedi alla nostra [pagina dedicata alle istanze Loca
 
 ## Funzionalità disponibili
 
-| Azione | Disponibilità generale (marzo 2024) |
+| Azione | Disponibilità generale |
 | --- | --- |
 | Istanze | Sì |
 | Supporto user-data/cloud-init | Sì|
@@ -33,6 +34,7 @@ Per maggiori informazioni, accedi alla nostra [pagina dedicata alle istanze Loca
 | Snapshot dei volumi | No |
 | Backup dei volumi | No |
 | Object Storage | No |
+| Immagini Windows | No |
 
 ## Funzionalità e limiti
 

@@ -37,7 +37,7 @@ Zaloguj się do swojego [panelu klienta OVHcloud](/links/manager){.external} i w
 
 Następnie przejdź do zakładki `Informacje ogólne`{.action}. Aktualna `wersja globalna PHP` wyświetla się w strefie **Konfiguracja**. Kliknij przycisk `...`{.action} i wybierz `Zmień konfigurację`{.action}. W oknie, które się otworzy wybierz element `Zmień bieżącą`{.action} konfigurację i kliknij przycisk `Dalej`{.action}.
 
-![managephpconfig](images/application-firewall-step-2.png){.thumbnail}
+![managephpconfig](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/application-firewall-step-2.png){.thumbnail}
 
 W nowym oknie upewnij się, że **Aplikacja firewall** jest ustawiona na `Włącz`{.action}. Aby potwierdzić konfigurację, kliknij przycisk `Potwierdź`{.action}.
 
@@ -45,17 +45,17 @@ W nowym oknie upewnij się, że **Aplikacja firewall** jest ustawiona na `Włąc
 
 Kliknij zakładkę `MultiSite`{.action} w Twoim pakiecie hostingowym. Kliknij przycisk `...`{.action} po prawej stronie wybranej domeny i wybierz opcję `Zmień domenę`{.action}.
 
-![zapalenie skóry](images/modify-a-domain.png){.thumbnail}
+![zapalenie skóry](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-2.png){.thumbnail}
 
 W oknie konfiguracji zaznacz kratkę `Włącz firewall`{.action}. Możesz również włączyć subdomenę `www` do tej konfiguracji, zaznaczając kratkę na górze.
 
 Kliknij `Dalej`{.action}, a następnie `Zatwierdź`{.action}, aby zmienić ustawienia MultiSite.
 
-![modyfydomain](images/modify-a-domain-enable-firewall-step-1.png){.thumbnail}
+![modyfydomain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-enable-firewall-step-1.png){.thumbnail}
 
 ### Sprawdź stan zadania aktywacji
 
-![zarządzanie w trakcie](images/firewall-planned.png){.thumbnail}
+![zarządzanie w trakcie](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/firewall-planned.png){.thumbnail}
 
 Zadania związane z aktualizacją konfiguracji MultiSite zostaną wymienione w zakładce `Operacje w toku`{.action} (status początkowy to "Zaplanowany"). Firewall będzie aktywny, gdy jego zadanie aktualizacji nie pojawi się już na liście.
 
@@ -63,7 +63,7 @@ Zadania związane z aktualizacją konfiguracji MultiSite zostaną wymienione w z
 
 Zakładka `MultiSite`{.action} w Twoim pakiecie hostingowym zawiera informacje o domenach, dla których aktywowana jest opcja firewalla.
 
-![gerageenabled](images/firewall-enabled.png){.thumbnail}
+![gerageenabled](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/firewall-enabled.png){.thumbnail}
 
 Wyświetlana tabela zawiera wszystkie nazwy domen dodanych do Twojego hostingu. W kolumnie "Firewall" wyświetla się status aktywacji każdej domeny.
 
@@ -73,4 +73,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

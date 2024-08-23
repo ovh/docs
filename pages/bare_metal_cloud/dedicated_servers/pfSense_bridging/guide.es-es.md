@@ -12,7 +12,7 @@ Bridged networking can be used to configure your pfSense virtual machine to be a
 
 - A dedicated server with a hypervisor installed (e.g. [VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, [Citrix Xenserver](https://www.citrix.com/products/citrix-hypervisor/){.external}, [Proxmox](https://www.proxmox.com/en/proxmox-ve){.external}, etc.)
 - At least one [Additional IP](https://www.ovhcloud.com/es-es/bare-metal/ip/) address attached to the server 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Recommendations for your pfSense virtual machine
 
@@ -39,7 +39,7 @@ For the pfSense virtual machines network configuration, we will use the followin
 
 #### Assigning a virtual MAC address
 
-In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), go to the `Bare Metal Cloud`{.action} section and click on `Network`{.action}. Next, open the `IP`{.action} menu. 
+In the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and click on `Network`{.action}. Next, open the `IP`{.action} menu. 
 
 Click the `Additional IP`{.action} tab.
 
@@ -220,4 +220,4 @@ For choosing the correct virtual interfaces, OS type, etc. for Proxmox, we were 
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

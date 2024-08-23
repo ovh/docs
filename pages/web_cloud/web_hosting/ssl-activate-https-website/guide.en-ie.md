@@ -29,7 +29,7 @@ When you visit a website with a secure connection, your web browser will show th
 
 These indicators help to determine whether your website has a secure connection or not.
 
-![httpswebsite](images/url-not-secure.png){.thumbnail}
+![httpswebsite](/pages/assets/screens/other/browsers/urls/url-not-secure.png){.thumbnail}
 
 **Changing your website to *HTTPS* may be a tricky task.**. Most of the actions you need to perform will be carried out in your website’s source code. If they are not carried out correctly, you run the risk of your website's SEO (Google, Yahoo!, bing, etc.) dropping, or becoming completely inaccessible.
 
@@ -71,7 +71,7 @@ There are two possible scenarios for *Mixed Content*:
 
 Make sure that all content loaded from your website comes from a secure source.
 
-![httpswebsite](images/connection-isnt-secure.png){.thumbnail}
+![httpswebsite](/pages/assets/screens/other/browsers/urls/connection-isnt-secure.png){.thumbnail}
 
 Please note that even if your Web Hosting plan has an SSL certificate, the content hosted on it can be loaded in *HTTP* or *HTTPS*. This depends on how you have identified this content in your website’s code. This way, you can ensure that all of the content loaded from your website uses the *HTTPS* protocol.
 
@@ -161,4 +161,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

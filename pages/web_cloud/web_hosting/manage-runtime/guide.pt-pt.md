@@ -33,7 +33,7 @@ Para aceder aos motores de execução do seu alojamento Cloud Web, aceda à [Ár
 
 A tabela que aparece indica os motores de execução adicionados atualmente ao seu alojamento Cloud Web. Ao instalar um alojamento, um motor será automaticamente criado.
 
-![cloudweb](images/tab-phpfpm7-4.png){.thumbnail}
+![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/tab-phpfpm7-4.png){.thumbnail}
 
 ### Etapa 2: gerir os motores de execução
 
@@ -84,7 +84,7 @@ Concluída esta etapa, clique no botão `Validar`{.action}. Certifique-se de que
 
 Concluída esta etapa, clique no botão `Validar`{.action}. Certifique-se de que este motor de execução está a ser utilizado pelo(s) multi-site(s) pretendido(s). Para isso, passe para a etapa 3 [“ Associar o motor de execução a um multi-site ”](./#etapa-3-associar-o-motor-de-execucao-a-um-multi-site){.external}.
 
-![cloudweb](images/modify-a-runtime-software-application-nodejs8.png){.thumbnail}
+![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/modify-a-runtime-software-application-nodejs8.png){.thumbnail}
 
 ##### **Ruby**
 
@@ -98,7 +98,7 @@ Concluída esta etapa, clique no botão `Validar`{.action}. Certifique-se de que
 
 Concluída esta etapa, clique no botão `Validar`{.action}. Certifique-se de que este motor de execução está a ser utilizado pelo(s) multi-site(s) pretendido(s). Para isso, passe para a etapa 3 [“ Associar o motor de execução a um multi-site ”](./#etapa-3-associar-o-motor-de-execucao-a-um-multi-site){.external}.
 
-![cloudweb](images/modify-a-runtime-software-application-ruby2-6.png){.thumbnail}
+![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/modify-a-runtime-software-application-ruby2-6.png){.thumbnail}
 
 ##### **Python**
 
@@ -112,7 +112,7 @@ Concluída esta etapa, clique no botão `Validar`{.action}. Certifique-se de que
 
 Concluída esta etapa, clique no botão `Validar`{.action}. Certifique-se de que este motor de execução está a ser utilizado pelo(s) multi-site(s) pretendido(s). Para isso, passe para a etapa 3 [“ Associar o motor de execução a um multi-site ”](./#etapa-3-associar-o-motor-de-execucao-a-um-multi-site){.external}.
 
-![cloudweb](images/modify-a-runtime-software-application-python3.png){.thumbnail}
+![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/modify-a-runtime-software-application-python3.png){.thumbnail}
 
 ### Etapa 3: associar o motor de execução a um multi-site
 
@@ -127,7 +127,7 @@ Uma vez que dispõe dos motores de execução necessários para o seu projeto, c
 
 Na tabela, consulte a coluna `Motor de execução` para verificar se o motor apresentado para os domínios em questão é o correto. Os nomes que aparecem correspondem ao “nome personalizado” que definiu.
 
-![cloudweb](images/runtime-software-applications.png){.thumbnail}
+![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/runtime-software-applications.png){.thumbnail}
 
 Se pretender alterar um motor associado a um multi-site, clique no ícone em forma de roda dentada à direita do domínio em questão e, em seguida, em `Alterar`{.action}.
 
@@ -135,7 +135,7 @@ De seguida, selecione o motor certo junto da opção `Motor de execução` na ja
 
 Depois de selecionado, siga os passos até ao fim.
 
-![cloudweb](images/modify-a-domain-step-1.png){.thumbnail}
+![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/multisite/modify-a-domain-step-1.png){.thumbnail}
 
 ## Quer saber mais?
 
@@ -143,4 +143,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

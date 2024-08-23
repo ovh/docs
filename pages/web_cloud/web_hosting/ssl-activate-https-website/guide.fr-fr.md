@@ -29,7 +29,7 @@ Lorsque vous visitez un site web disposant d'une connexion sécurisée, votre na
 
 Le fait que votre site web possède ou non une connexion sécurisée devient de plus en plus visible.
 
-![httpswebsite](images/url-not-secure.png){.thumbnail}
+![httpswebsite](/pages/assets/screens/other/browsers/urls/url-not-secure.png){.thumbnail}
 
 **Passer son site web en *HTTPS* peut être une manipulation sensible**. En effet, l'essentiel des actions à réaliser s'effectueront dans le code source de votre site web. Si elles ne sont pas effectuées correctement, vous risquez une baisse de référencement (SEO) dans les résultats proposés par les moteurs de recherche (Google, Yahoo!, bing, etc.), voire une inaccessibilité totale de votre site web.
 
@@ -71,7 +71,7 @@ Deux cas de figure de *Mixed Content* peuvent être rencontrés :
 
 Vérifiez que l'intégralité du contenu chargé depuis votre site web provient d'une source sécurisée.
 
-![httpswebsite](images/connection-isnt-secure.png){.thumbnail}
+![httpswebsite](/pages/assets/screens/other/browsers/urls/connection-isnt-secure.png){.thumbnail}
 
 Sachez que même si votre hébergement dispose d'un certificat SSL, le contenu hébergé sur ce dernier peut être chargé en *HTTP* ou en *HTTPS*. Ceci dépend de la manière dont vous avez identifié ces contenus dans le code de votre site web. Ainsi, vérifiez que tout le contenu chargé depuis votre site web utilise bien le protocole *HTTPS*.
 
@@ -161,4 +161,4 @@ Pour des prestations spécialisées (référencement, développement, etc), cont
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

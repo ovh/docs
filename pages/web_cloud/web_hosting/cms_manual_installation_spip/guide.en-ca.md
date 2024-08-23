@@ -35,23 +35,23 @@ Follow the **full set of steps** described in our tutorial on [installing a CMS 
 
 Enter `your_domain/ecrire` in the search bar of your web browser to start the installation of your SPIP website. The following page appears:
 
-![Spip installation](images/installation_first_step.png){.thumbnail}
+![Spip installation](/pages/assets/screens/other/cms/spip/installation_first_step.png){.thumbnail}
 
 Select the language of your SPIP website and click `Next`{.action} to confirm. The following screen appears:
 
-![Spip installation](images/installation_second_step.png){.thumbnail}
+![Spip installation](/pages/assets/screens/other/cms/spip/installation_second_step.png){.thumbnail}
 
 Enter the information to connect to your DBMS (MySQL, for example). Once you have successfully connected your database, the following screen will appear:
 
-![Spip installation](images/installation_third_step.png){.thumbnail}
+![Spip installation](/pages/assets/screens/other/cms/spip/installation_third_step.png){.thumbnail}
 
 Select the database you want to use for your website or [create a new one](/pages/web_cloud/web_hosting/sql_create_database). Choose a prefix for your database tables. By default, the prefix `spip` is used. Click `Next`{.action} to confirm. The following screen appears:
 
-![Spip installation](images/installation_fourth_step.png){.thumbnail}
+![Spip installation](/pages/assets/screens/other/cms/spip/installation_fourth_step.png){.thumbnail}
 
 Enter the information requested and click `Next`{.action} to confirm. The following screen appears:
 
-![Spip installation](images/installation_fifth_step.png){.thumbnail}
+![Spip installation](/pages/assets/screens/other/cms/spip/installation_fifth_step.png){.thumbnail}
 
 The screen displays a list of plugins available for your website, and informs you that the installation of SPIP has been successful.
 
@@ -81,4 +81,4 @@ You have just manually installed the SPIP CMS on your OVHcloud web hosting plan.
  
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
  
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

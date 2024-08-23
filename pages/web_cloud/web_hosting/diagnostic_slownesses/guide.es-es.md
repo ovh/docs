@@ -100,11 +100,11 @@ Para asegurarse de que sus servicios (alojamiento compartido **et** de la base d
 
 Para conocer el cluster y el filer en el que se encuentra su alojamiento compartido, conéctese a su [área de cliente OVHcloud](/links/manager), acceda al apartado `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. En la pestaña `Información general`{.action}, consulte el `datacenter` de su alojamiento compartido y el `filer` en el que se encuentra.
 
-![Obtener Filer](images/find-filer.png){.thumbnail}
+![Obtener Filer](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-filer.png){.thumbnail}
 
 A continuación, abra la pestaña `Multisitios`{.action} para obtener el número del cluster en el que se encuentra el alojamiento compartido.
 
-![Obtener cluster](images/find-cluster.png){.thumbnail}
+![Obtener cluster](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/find-cluster.png){.thumbnail}
 
 > [!success]
 >
@@ -159,7 +159,7 @@ Si utiliza una base de datos en una solución **Web Cloud Databases**, consulte 
 
 Si la conexión se ha realizado correctamente, acceda a la siguiente interfaz:
 
-![PHPMyAdmin](images/pma-main-page.png){.thumbnail}
+![PHPMyAdmin](/pages/assets/screens/other/web-tools/phpmyadmin/pma-main-page.png){.thumbnail}
 
 > [!warning]
 >
@@ -242,7 +242,7 @@ Cuanto menor sea el número de peticiones, menos se solicitarán los recursos de
 >
 > Para ello, pulse la tecla `F12` cuando esté en su navegador Firefox y seleccione la pestaña `Red`. Recargue su página web con las teclas `Ctrl + Mayús + R` para que la herramienta muestre las peticiones que se ejecutan para cargar su página. Identifique los elementos más largos a cargar para luego optimizarlos.
 >
->![Análisis de red Firefox](images/F12.png){.thumbnail}
+>![Análisis de red Firefox](/pages/assets/screens/other/browsers/diagnostic-tools/F12.png){.thumbnail}
 >
 
 Para reducir el flujo de peticiones a cada una de las cargas de sus páginas, también puede crear una Content Delivery Network (CDN). que permite almacenar en caché el contenido estático de su sitio web. Su alojamiento web tendrá menos carga y dispondrá de más recursos para tratar el resto de las peticiones que no puedan ser puestas en caché.
@@ -302,4 +302,4 @@ Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con 
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

@@ -1,7 +1,7 @@
 ---
 title: Crear y utilizar llaves SSH
 excerpt: Cómo crear un par de llaves SSH en su puesto de trabajo y cómo utilizarlas para establecer una conexión segura con su servidor
-updated: 2023-11-22
+updated: 2024-06-26
 ---
 
 > [!primary]
@@ -18,7 +18,7 @@ Este suele ser el método de conexión más seguro y práctico.
 
 ## Requisitos
 
-- Estar conectado a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
+- Estar conectado a su [área de cliente de OVHcloud](/links/manager)
 - Tener un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/) o un [VPS](https://www.ovhcloud.com/es/vps/) en su cuenta de OVHcloud
 - Instalar previamente una aplicación cliente SSH (línea de comandos o GUI)
 - Tener acceso de administrador (sudo) por SSH
@@ -36,6 +36,8 @@ No olvide consultar nuestras guías Primeros pasos: <a name="getstarted"></a>
 - para un [VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps).
 
 Para más información, consulte la guía de presentación del [protocolo SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
+
+<a name="create-ssh-key"></a>
 
 ### Crear un par de claves SSH
 
@@ -186,7 +188,7 @@ La clave está lista cuando la barra de progreso está llena.
 
 ![clave PuTTy](images/puttygen_03.png){.thumbnail}
 
-Copie la cadena de clave completa en el Portapapeles para [añadirla al servidor](#addserverkey) y, opcionalmente, para [importarla al área de cliente](#importkey). Guarde ambas claves como archivos haciendo clic en los botones correspondientes y, a continuación, escriba una frase de contraseña (*passphrase*) para protegerlas.
+Copie la cadena de clave completa en el Portapapeles para [añadirla al servidor](#addserverkey). Guarde ambas claves como archivos haciendo clic en los botones correspondientes y, a continuación, escriba una frase de contraseña (*passphrase*) para protegerlas.
 
 > [!warning]
 >
@@ -392,54 +394,6 @@ Para configurar otra conexión con el servidor, repita los siguientes pasos:
 - [Añada la clave pública a su servidor](#addserverkey).
 - [Introduzca los detalles del servidor y añada el archivo de clave en `PuTTY`](#puttykeys).
 
-### Importar su llave SSH en el área de cliente <a name="importkey"></a>
-
-El área de cliente de OVHcloud permite almacenar claves públicas si se han creado con uno de los tipos de cifrado admitidos. Esta funcionalidad puede ahorrarle tiempo al configurar o reinstalar un nuevo servidor, ya que no necesita [añadir manualmente la clave pública a su servidor](#addserverkey). 
-
-Abra la barra de navegación lateral haciendo clic en su nombre en la esquina superior derecha y utilice el acceso directo `Productos y servicios`{.action}.
-
-![Espacio de gestión de claves SSH](images/SSH_keys_panel_2022.png){.thumbnail}
-
-En `Mis servicios`, abra la pestaña `Llaves SSH`{.action} y haga clic en `Añadir una llave SSH`{.action}.
-
-![Espacio de gestión de claves SSH](images/SSH_keys_panel_2.1.png){.thumbnail}
-
-Seleccione `Dedicado` en el menú desplegable.
-
-En la nueva ventana, introduzca un identificador (un nombre de su elección) para la llave. Pegue la cadena de clave (copiada de [su archivo `.pub`](#publickey) o [la ventana `PuTTYgen`](#useputty) en el campo `Key`).
-
-![Espacio de gestión de claves SSH](images/SSH_keys_panel_3.png){.thumbnail}
-
-Si ha copiado el resultado completo, el identificador después de la clave ya debe añadirse. Tenga en cuenta que para almacenar su clave, deberá especificar su identificador local después de la clave *pegada*. (Consulte el ejemplo de formato anterior). Es un requisito del área de cliente de OVHcloud. Haga clic en `Confirmar`{.action} para almacenar su clave pública.
-
-> [!primary]
->
-> Todas las claves registradas en la sección Dedicado están disponibles para preinstalación en un servidor dedicado o un VPS. Para más información sobre las claves SSH para los servicios Public Cloud, consulte [esta guía](/pages/public_cloud/compute/public-cloud-first-steps).
->
-
-### Establecer una llave SSH predeterminada (solo para la sección «Dedicado») <a name="cpsshkey"></a>
-
-Si ha añadido varias llaves SSH en el área de cliente de OVHcloud, es posible definir una llave que deberá utilizar como llave por defecto en la cuenta. 
-
-> [!warning]
-> Tenga en cuenta que, una vez configurada la llave por defecto, también se utilizará como medio de conexión al reiniciar un servidor en modo de rescate. Para recibir una contraseña en su lugar, la clave por defecto debe ser [desactivada](#disablesshkey) antes de reiniciar el servidor en modo de rescate. Para más información, consulte la sección [Más información](#gofurther) de esta guía.
-> 
-
-Abra la barra de navegación lateral haciendo clic en el nombre de su cuenta en la esquina superior derecha y utilice el acceso directo `Productos y servicios`{.action} para acceder a la sección `Llaves SSH`{.action}.
-
-![Espacio de gestión de claves SSH](images/SSH_keys_panel_2022.png){.thumbnail}
-
-En la lista de claves, haga clic en el icono « `Clave`» situado junto a la llave SSH que desee para definirla como llave por defecto.
-
-![Espacio de gestión de claves SSH](images/defaultsshkey.png){.thumbnail}
-
-Una vez hecho esto, aparecerá un mensaje confirmando que la llave se ha definido por defecto y el icono `Clave` se resaltará.
-
-![Espacio de gestión de claves SSH](images/defaultsshkey1.png){.thumbnail}
-
-### Desactivar la llave SSH predeterminada <a name="disablesshkey"></a>
-
-Para desactivar la llave SSH por default actual, acceda a la sección `Llaves SSH`{.action} como se ha descrito anteriormente. Haga clic en el icono `Llave` azul situado junto a la llave SSH correspondiente para desactivar la opción por defecto.
 
 ## Más información <a name="gofurther"></a>
 

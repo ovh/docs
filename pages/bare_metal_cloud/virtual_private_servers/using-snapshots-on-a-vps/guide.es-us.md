@@ -21,12 +21,12 @@ Antes de aplicar las opciones de copia de seguridad, le recomendamos que consult
 
 ## Requisitos
 
-- Tener acceso al [panel de control de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Tener acceso al [panel de control de OVHcloud](/links/manager).
 - Tener un [servicio de servidor virtual privado (VPS)](https://www.ovhcloud.com/es/vps/) de OVHcloud configurado.
 
 ## Procedimiento
 
-Conéctese al [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en la sección `Servidores Privados Virtuales`{.action}.
+Conéctese al [Panel de configuración de OVHcloud](/links/manager), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en la sección `Servidores Privados Virtuales`{.action}.
 
 ### Paso 1: Suscribirse a la opción «Instantáneas»
 
@@ -63,7 +63,7 @@ El snapshot actual puede recuperarse mediante un enlace de descarga. Haga clic e
 
 > [!primary]
 >
-> Si su VPS proviene de una antigua gama, es posible que reciba un mensaje de error, ya que la opción no está disponible en los antiguos VPS. Su VPS procede de una antigua gama si su modelo de denominación es similar a: *vpsXXXX.ovh.net* (donde *X* representa un número). Puede consultar esta referencia del servidor en la pestaña `Inicio`{.action} del [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+> Si su VPS proviene de una antigua gama, es posible que reciba un mensaje de error, ya que la opción no está disponible en los antiguos VPS. Su VPS procede de una antigua gama si su modelo de denominación es similar a: *vpsXXXX.ovh.net* (donde *X* representa un número). Puede consultar esta referencia del servidor en la pestaña `Inicio`{.action} del [área de cliente de OVHcloud](/links/manager).
 >
 
 En la nueva ventana, haga clic en `Generar el enlace de descarga`{.action}.

@@ -1,7 +1,7 @@
 ---
 title: "Configurare IPv6 su un server VPS"
 excerpt: "Come configurare IPv6 sul tuo VPS OVHcloud"
-updated: 2024-03-05
+updated: 2024-08-08
 ---
 
 > [!primary]
@@ -24,7 +24,7 @@ L’IPv6 è la versione più recente dell’*Internet Protocol*(IP). Ogni server
 - Disporre di un [server VPS OVHcloud](https://www.ovhcloud.com/it/vps/){.external}
 - Essere connesso al tuo VPS in SSH (accesso root) o tramite desktop remoto (Windows)
 - Possedere conoscenze base di rete
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} o all'[API OVHcloud](https://api.ovh.com/)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external} o all'[API OVHcloud](https://api.ovh.com/)
 
 ## Procedura
 
@@ -54,7 +54,7 @@ Per prima cosa, è necessario avere a disposizione l’indirizzo IPV6 e il gatew
 
 #### Dallo Spazio Cliente OVHcloud <a name="viacontrolpanel"></a>
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca su `Bare Metal Cloud`{.action} e seleziona il tuo server nella sezione `Server Privati Virtuali`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Bare Metal Cloud`{.action} e seleziona il tuo server nella sezione `Server Privati Virtuali`{.action}.
 
 Nel riquadro `IP` è possibile visualizzare l’indirizzo IP e il gateway IPv6 assegnato al server. Una volta recuperate queste informazioni è possibile passare allo [Step 2: applica la configurazione IPv6](#applyipv6).
 
@@ -225,11 +225,14 @@ network:
             addresses:
               - YOUR_IPV6/IPv6_PREFIX
             routes:
+# If IPV6_PREFIX is 128 then add link route to gateway
+#              - to: IPv6_GATEWAY
+#                scope: link
               - to: ::/0
                 via: IPv6_GATEWAY
 ```
 
-Ecco un esempio concreto:
+Ecco un esempio concreto (con prefisso /128):
 
 ```yaml
 network:
@@ -242,6 +245,8 @@ network:
             addresses:
               - 2607:5300:201:abcd::7c5/128
             routes:
+              - to: 2607:5300:201:abcd::1
+                scope: link
               - to: ::/0
                 via: 2607:5300:201:abcd::1
 ```

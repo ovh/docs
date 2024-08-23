@@ -1,8 +1,12 @@
 ---
-title: 'Añadir un registro SPF a la configuración del dominio'
-excerpt: 'Cómo añadir un registro SPF a la configuración de un dominio en OVHcloud'
+title: "Mejorar la seguridad del correo electrónico mediante el registro SPF"
+excerpt: "Descubra cómo configurar un registro SPF en un dominio para mejorar la seguridad del correo"
 updated: 2023-08-04
 ---
+
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
+>
 
 ## Objetivo
 
@@ -27,7 +31,7 @@ Así pues, usted deberá asegurarse de indicar en el SPF los orígenes de envío
 > - Dado que el servidor saliente **A** (Outgoing Mail Server **A**) está bien listado en el registro SPF, el mensaje se enviará normalmente a la bandeja de entrada del destinatario.
 > - Al no estar incluido en el registro SPF el servidor saliente **B** (Outgoing Mail Server **B**), el mensaje enviado desde este servidor se marcará como sospechoso en la bandeja de correo entrante. Esto puede traducirse en una mención `[SPAM]` en el asunto del e-mail, la colocación en una carpeta `Correo indeseable`, o una supresión directa, según las reglas del servidor de recepción.
 >
-> ![Dominio](images/spf_records_diagram.png){.thumbnail}
+> ![Dominio](/pages/assets/schemas/emails/spf_records_diagram.png){.thumbnail}
 
 > [!primary]
 >
@@ -75,7 +79,7 @@ Para encontrar la línea correspondiente al SPF de OVHcloud, puede utilizar un f
 > Un SPF se compone siempre de la forma siguiente : "v=spf1 `orígenes` `calificador`". Por ejemplo, el SPF de OVHcloud es: "v=spf1 include:mx.ovh.ca ~all".
 >
 
-![Dominio](images/spf_records_check_OVH_configuration_ca.png){.thumbnail}
+![Dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_check_OVH_configuration_ca.png){.thumbnail}
 
 ### Configurar el registro SPF
 
@@ -83,7 +87,7 @@ Para añadir un registro SPF a la configuración de OVHcloud de su dominio, con�
 
 Para añadir un registro SPF, haga clic en `Añadir un registro`{.action}.
 
-![Dominio](images/spf_records_add_entry_step1.png){.thumbnail}
+![Dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_add_entry_step1.png){.thumbnail}
 
 Se abrirá una ventana en la que podrá elegir entre varios registros DNS. Para añadir un SPF, existen dos posibilidades:
 
@@ -91,7 +95,7 @@ Se abrirá una ventana en la que podrá elegir entre varios registros DNS. Para 
 - [Añadir un registro SPF](#spfrecord) : para los usuarios que no dispongan del registro completo. Por ejemplo, solo tiene una dirección IP o el nombre del host del servidor de correo.
 - [Añadir un registro TXT](#txtrecord) : para usuarios avanzados o que ya dispongan del registro completo. Por ejemplo, su proveedor de soluciones de correo electrónico transmite el valor.
 
-![Dominio](images/spf_records_add_entry.png){.thumbnail}
+![Dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_add_entry.png){.thumbnail}
 
 #### Utilizar el registro SPF de OVHcloud <a name="spfrecordovhcloud"></a>
 
@@ -104,7 +108,7 @@ Ha elegido el registro `SPF`{.action} y quiere aplicar la configuración de OVHc
 
 Haga clic en el botón `Utilizar el SPF para hosting compartido OVHcloud`{.action}, situado en la parte superior de la ventana de asistencia. Se mostrará la información relativa al SPF de OVHcloud. Haga clic en `Aceptar`{.action} para aplicar los cambios.
 
-![Dominio](images/spf_records_add_entry_step2_ca.png){.thumbnail}
+![Dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_add_entry_step2_ca.png){.thumbnail}
 
 > [!primary]
 >
@@ -119,7 +123,7 @@ El asistente de configuración le ayudará a personalizar el SPF. Para ello, deb
 
 A continuación, los explicamos en detalle:
 
-![Dominio](images/spf_records_add_entry_personnalize_step1_ca.png){.thumbnail}
+![Dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_add_entry_personnalize_step1_ca.png){.thumbnail}
 
 |Detalles|Descripción|
 |---|---|
@@ -166,7 +170,7 @@ Para finalizar, haga clic en `Siguiente`{.action}. Asegúrese de que la informac
 > Los cambios tardan entre 4 y 24 horas en propagarse y ser efectivos.
 >
 
-![Dominio](images/spf_records_add_TXT_entry_ca.png){.thumbnail}
+![Dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_add_TXT_entry_ca.png){.thumbnail}
 
 ### Editar un registro SPF
 
@@ -207,21 +211,21 @@ mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ip6:5555:66a7:88:b999::1000:2233 i
 >
 > En la ficha `Información general`{.action}, haga clic en `A` y `AAAA` en la sección `Diagnóstico del servidor`. En la ventana que aparece, lea el valor
 >
-> ![Dominio](images/spf_records_ip.png){.thumbnail}
+> ![Dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/general-information/spf_records_ip.png){.thumbnail}
 >
 > Si las etiquetas `A` y `AAAA` son verdes, no verá las direcciones IP al hacer clic en ellas. Deberá recuperarlas desde la zona DNS del dominio asociado a su plataforma Private Exchange. Para ello, consulte el enlace del webmail en la pestaña `Información general`{.action}, en el recuadro `Conexión`.
 >
-> ![domain](images/spf_records_ip2.png){.thumbnail}
+> ![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/general-information/spf_records_ip2.png){.thumbnail}
 >
 > Acceda a la sección `Nombres de dominio`{.action} de la columna izquierda y seleccione el dominio asociado a su plataforma Private Exchange. A continuación, abra la pestaña de la columna izquierda y haga clic en `Zona DNS`{.action}. Obtenga las direcciones IPv4 (registro `A`) y IPv6 (registro `AAAA`) correspondientes a la URL del webmail.
 >
-> ![domain](images/spf_records_ip3.png){.thumbnail}
+> ![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_ip3.png){.thumbnail}
 >
 
 ## Más información
 
 [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit){.external}.
 
-[Cambiar los servidores DNS de un dominio de OVHcloud](/pages/web_cloud/domains/dns_server_general_information){.external}.
+[Cambiar los servidores DNS de un dominio de OVHcloud](/pages/web_cloud/domains/dns_server_edit){.external}.
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

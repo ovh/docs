@@ -1,6 +1,6 @@
 ---
 title: 'Tutorial - Uso de Zonemaster'
-updated: 2024-03-08
+updated: 2024-06-18
 ---
 
 > [!primary]
@@ -20,7 +20,7 @@ updated: 2024-03-08
 
 > [!primary]
 >
-> Para entender mejor el concepto de DNS, consulte la introducción de nuestra guía sobre la [configuración de una zona DNS](/pages/web_cloud/domains/dns_zone_edit).
+> Para entender mejor la noción de DNS, consulte nuestra guía "[Todo sobre la zona DNS](/pages/web_cloud/domains/dns_zone_general_information)".
 
 ## Requisitos
 
@@ -34,7 +34,7 @@ La herramienta Zonemaster permite comprobar una configuración DNS en un dominio
 
 Para comprobar la configuración actual de un dominio, introduzca el dominio y haga clic en `Ejecutar`{.action}.
 
-![Captura de pantalla del formulario de Zonemaster. El dominio "domain.tld" se ha introducido y está listo para ser probado.](images/run-domain-test.png){.thumbnail}
+![Captura de pantalla del formulario de Zonemaster. El dominio "domain.tld" se ha introducido y está listo para ser probado.](/pages/assets/screens/other/web-tools/zonemaster/run-domain-test.png){.thumbnail}
 
 Para comprobar que la configuración DNS se haya preparado, pero todavía no se haya aplicado al dominio, marque la casilla `Opciones`{.action} e introduzca la siguiente información:
 
@@ -47,13 +47,13 @@ También puede forzar la verificación de un protocolo IP específico mediante l
 > Ha configurado una zona DNS para este dominio en los servidores DNS "dns1.test.tld" y "dns2.test.tld". <br>
 > Antes de cambiar los servidores DNS, puede realizar una búsqueda avanzada en la casilla `Opciones`{.action} introduciendo "dns1.test.tld" y "dns2.test.tld" en las casillas de `servidores de nombres`.<br>
 > Zonemaster realizará una prueba como si utilizara los servidores "dns1.test.tld" y "dns2.test.tld" en "domain.tld".<br>
-> ![Captura de pantalla de las opciones avanzadas del formulario de Zonemaster. Los dos servidores de nombres "dns1.test.tld" y "dns2.test.tld" se han introducido en la sección "Servidores de nombres" del formulario.](images/run-domain-test-nameservers-option.png){.thumbnail}
+> ![Captura de pantalla de las opciones avanzadas del formulario de Zonemaster. Los dos servidores de nombres "dns1.test.tld" y "dns2.test.tld" se han introducido en la sección "Servidores de nombres" del formulario.](/pages/assets/screens/other/web-tools/zonemaster/run-domain-test-nameservers-option.png){.thumbnail}
 
 > [!primary]
 >
 > Cuando introduzca un dominio y haga clic en los botones `Obtener datos desde la zona padre`{.action} y `Obtener DS desde la zona padre`{.action}, aparecerán los servidores DNS asociados al dominio, así como la información del registro DS (DNSSEC), en caso de que haya sido configurado.
 >
-> ![Captura de pantalla de la página de resultados de Zonemaster para el dominio "domain.tld". Se desarrolla la sección "Direcciones".](images/fetch-ns-from-parent-zone.png){.thumbnail}
+> ![Captura de pantalla de la página de resultados de Zonemaster para el dominio "domain.tld". Se desarrolla la sección "Direcciones".](/pages/assets/screens/other/web-tools/zonemaster/fetch-ns-from-parent-zone.png){.thumbnail}
 
 ### Resultado
 
@@ -66,7 +66,7 @@ Una vez validado el formulario, los resultados se muestran por grupo de pruebas.
 
 Para cada prueba, es posible obtener más detalles, por ejemplo, para entender el error en caso de fallo, o simplemente a título indicativo.
 
-![Captura de pantalla de la página de resultados de Zonemaster para el dominio "domain.tld". La sección "Address" se expande.](images/domain-analysis.png){.thumbnail}
+![Captura de pantalla de la página de resultados de Zonemaster para el dominio "domain.tld". La sección "Address" se expande.](/pages/assets/screens/other/web-tools/zonemaster/domain-analysis.png){.thumbnail}
 
 ### Información útil
 
@@ -84,4 +84,4 @@ Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con 
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte](/links/support).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>
+Interactúe con nuestra [comunidad de usuarios](/links/community)

@@ -42,7 +42,7 @@ You can do this by using two Apache configuration files (HTTP) to place in [the 
 >
 > If you have any questions regarding the creation, use or programming of your website, OVHcloud support will not be able to provide you with assistance in this regard.
 >
-> To do this, contact our [user community](https://community.ovh.com/en/) or [OVHcloud partners](/links/partner).
+> To do this, contact our [user community](/links/community) or [OVHcloud partners](/links/partner).
 >
 
 We will explain the 4 main steps to take to protect access to a directory or all or part of your website:
@@ -70,11 +70,11 @@ Log in to [the FTP storage space](/pages/web_cloud/web_hosting/ftp_connection) o
 
 Create a "crypt.php" file in this root folder.
 
-![root_folder](images/root-folder.png){.thumbnail}
+![root_folder](/pages/assets/screens/other/web-tools/net2ftp/root-folder.png){.thumbnail}
 
 Open or create the website folder you want to protect. In our example below, it will be the "admin" folder. Create a ".htpasswd" file and a ".htaccess" file in this directory.
 
-![admin-folder](images/admin-folder.png){.thumbnail}
+![admin-folder](/pages/assets/screens/other/web-tools/net2ftp/admin-folder.png){.thumbnail}
 
 To use the ".htaccess" and ".htpasswd" files correctly, you need to follow the following rules:
 
@@ -256,4 +256,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

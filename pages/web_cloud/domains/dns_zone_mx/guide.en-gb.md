@@ -1,5 +1,5 @@
 ---
-title: Configure an MX record
+title: "Configure an MX record for email management"
 excerpt: Find out how to configure an MX record on your domain name at OVHcloud
 updated: 2024-02-29
 ---
@@ -23,7 +23,7 @@ With an MX record, you can link a domain name to the server on your email platfo
 >
 > - If your domain name is registered with OVHcloud, you can verify that it uses the OVHcloud configuration in the [OVHcloud Control Panel](/links/manager). Once you have selected the domain name concerned and the `General information`{.action} tab is displayed, check the entry **DNS servers**: If you see `Enabled` underneath it, your domain name is using the OVHcloud DNS servers.
 >
-> ![email](images/dns-servers-enabled.png){.thumbnail}
+> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/dns-servers-enabled.png){.thumbnail}
 
 ## Instructions
 
@@ -35,7 +35,7 @@ When the address **sender@otherdomain.ovh** sends an email to **contact@mydomain
 - **(1)** Query the DNS zone of the domain name **mydomain.ovh** and read the **MX** records.
 - **(2)** Forward the email to the URL of the **MX** record it has found.
 
-![email](images/mx-dns-resolution.png){.thumbnail}
+![email](/pages/assets/schemas/emails/mx-dns-resolution.png){.thumbnail}
 
 The email will be sent to the target **mx0.mail.ovh.net**, which is preceded by a value of **0**. This value is called *priority*. The lowest value is queried first and the highest value is queried last. This means that the presence of several records makes it possible to compensate for an absence of response from the MX record having the lowest priority.
 
@@ -69,14 +69,14 @@ The table shows your domain name’s OVHcloud configuration. Each row correspond
 As a first step, please check whether any MX records already exist in your domain name’s OVHcloud DNS configuration. You can do this using the filtering list located above the table for your DNS zone.<br>
 Select the **MX** type, then confirm to display only the MX DNS records for your DNS zone. Use the screenshot below.
 
-![dnsmxrecord](images/mx-entries-research.png){.thumbnail}
+![dnsmxrecord](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/mx-entries-research.png){.thumbnail}
 
 - If MX records already exist and you want to edit them, click the `...`{.action} button to the right of each table row, and then click `Edit Entry`{.action}.
 - If no MX record is present, click the `Add record`{.action} button to the right of the table, then choose `MX`{.action}. Enter the information requested, depending on the email solution you have chosen:
 
 **If you have an OVHcloud email solution**, please refer to the information provided in the [OVHcloud MX configuration](#mxovhcloud) step.
 
-![dnsmxrecord](images/modify-a-dns-zone-record-mx-step-1.png){.thumbnail}
+![dnsmxrecord](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/modify-a-dns-zone-record-mx-step-1.png){.thumbnail}
 
 Fill in the values, complete the steps, then click `Confirm`{.action}.
 
@@ -93,12 +93,12 @@ Fill in the values, complete the steps, then click `Confirm`{.action}.
 
 [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
 
-[Configuring an SPF record on your domain name](/pages/web_cloud/domains/dns_zone_spf)
+[How to improve email security with an SPF record](/pages/web_cloud/domains/dns_zone_spf)
 
-[Configuring a DKIM record](/pages/web_cloud/domains/dns_zone_dkim)
+[How to improve email security with a DKIM record](/pages/web_cloud/domains/dns_zone_dkim)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

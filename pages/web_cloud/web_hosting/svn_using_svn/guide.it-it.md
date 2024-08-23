@@ -52,7 +52,7 @@ ls -la
 
 È necessario ottenere le directory come indicato nell'immagine seguente:
 
-![hosting](images/terminal-ls-la-svn.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/terminal/terminal-ls-la-svn.png){.thumbnail}
 
 ### Crea chiavi pubbliche/private
 
@@ -86,7 +86,7 @@ Segui la chiave precedentemente creata, il tutto sulla stessa linea.
 > Per maggiori informazioni, consulta la guida [Utilizzare l'accesso SSH di un hosting Web](/pages/web_cloud/web_hosting/ssh_on_webhosting).
 > 
 
-![hosting](images/terminal-homez-folder.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/terminal/terminal-homez-folder.png){.thumbnail}
 
 È possibile recuperare il contenuto del deposito senza connettersi direttamente in SSH sulla macchina.
 
@@ -113,7 +113,7 @@ svn checkout svn+ssh://loginFTP@clusterXXX/depot_test
 - Crea una directory, clicca con il tasto destro e seleziona "SVN Checkout". 
 - Inserisci `svn+ssh://loginFTP@xxplan.ovh.net/depot_test` nel campo "URL of repository" e clicca su `OK`:
 
-![hosting](images/checkout.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/tortoisesvn/checkout.png){.thumbnail}
 
 Per Subversion esiste una documentazione molto buona in inglese: [http://svnbook.red-bean.com/en/1.5/index.html](http://svnbook.red-bean.com/en/1.5/index.html){.external}
 
@@ -153,4 +153,4 @@ svn+ssh://login@ftp.nom-du-site.tld/home.XXX/login/svn/depot_test
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

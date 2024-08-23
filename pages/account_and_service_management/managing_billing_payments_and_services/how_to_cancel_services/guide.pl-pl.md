@@ -47,7 +47,7 @@ Oznacza to, że przed rozwiązaniem umowy musisz być **pewny**:
 
 Procedura rezygnacji jest taka sama w przypadku większości usług OVHcloud.
 
-Istnieją jednak **przypadki szczególne**, które są opisane [poniżej] (#specific-cases) w tym przewodniku.
+Istnieją jednak **przypadki szczególne**, które są opisane [poniżej](#specific-cases) w tym przewodniku.
 
 ### Jak zrezygnować z abonamentu? <a name="terminate"></a>
 
@@ -106,7 +106,7 @@ Nie można przed terminem rozwiązania umowy dla ofert [SSL sectigo](https://www
 
 #### SMS <a name="sms"></a>
 
-Nie istnieje procedura rozwiązania umowy w odniesieniu do [ofert SMS] (https://www.ovhtelecom.fr/sms/). Konto SMS nie generuje miesięcznej subskrypcji ani opłat. Kredyty SMS są ważne bezterminowo.
+Nie istnieje procedura rozwiązania umowy w odniesieniu do [ofert SMS](https://www.ovhcloud.com/pl/sms/). Konto SMS nie generuje miesięcznej subskrypcji ani opłat. Kredyty SMS są ważne bezterminowo.
 
 Jeśli chcesz usunąć konto SMS, otwierając zgłoszenie w [Centrum pomocy](https://help.ovhcloud.com/csm?id=csm_get_help).
 

@@ -1,7 +1,7 @@
 ---
 title: Object Storage - FAQ
 excerpt: "FAQ sur la solution Object Storage"
-updated: 2024-06-11
+updated: 2024-06-21
 ---
 
 ## Questions générales
@@ -58,7 +58,7 @@ L'Object Storage est facturé en fonction de l'espace de stockage utilisé, avec
 
 ### Par quels API avoir accès aux offres de stockage ?
 
-Nous avons conçu les classes de stockage S3 pour qu’il soit **compatible avec l’API S3**, considérée comme une référence dans le marché du stockage d’objets. Vous pouvez donc utiliser Object Storage avec la plupart des outils de gestion de données via les endpoints définis par région et par classe de stockage.
+Nous avons conçu les classes de stockage S3 pour qu’il soit **compatible avec l’API S3**, considérée comme une référence dans le marché du stockage d’objets. Vous pouvez donc utiliser Object Storage avec la plupart des outils de gestion de données via les endpoints définis par région.
 
 Munissez-vous de vos clés d'accès S3 et accédez en ligne de commande aux différentes classes de stockage par commandes AWS-CLI, s3cmd ou autres.
 

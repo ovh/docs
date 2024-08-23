@@ -199,11 +199,11 @@ Einige Tipps, um Webseiten-Dateien so einfach wie möglich zu gestalten:
 
 Aus Gründen der Übersichtlichkeit sollten die Bilder in einem dedizierten Verzeichnis gespeichert werden:
 
-![Ordner und Ordner](images/create_your_personal_webpage_1.png){.thumbnail}
+![Ordner und Ordner](/pages/assets/screens/other/web-tools/vscode/create_your_personal_webpage_1.png){.thumbnail}
 
 Fügen Sie Dateien zum Beispiel in das Verzeichnis "Bilder" ein:
 
-![Ordnerstruktur mit Bildern](images/create_your_personal_webpage_2.png){.thumbnail}
+![Ordnerstruktur mit Bildern](/pages/assets/screens/other/web-tools/vscode/create_your_personal_webpage_2.png){.thumbnail}
 
 Wir werden nun einen neuen Absatz erstellen, in den wir ein Bild hinzufügen (in diesem Beispiel wird keine Anzeigegröße in Pixeln spezifiziert. Der Browser zeigt deshalb das Bild in der originalen Größe an.)
 
@@ -227,7 +227,7 @@ Wir werden nun einen neuen Absatz erstellen, in den wir ein Bild hinzufügen (in
 
 Das Ergebnis in Ihrem Browser sollte folgendermaßen aussehen:
 
-![HTML-Code-Ergebnis im Browser](images/create_your_personal_webpage_3_de.png){.thumbnail}
+![HTML-Code-Ergebnis im Browser](/pages/assets/screens/other/browsers/web-pages/create_your_personal_webpage_3_de.png){.thumbnail}
 
 ### Gestalten Sie Ihren Inhalt mit CSS
 
@@ -241,7 +241,7 @@ Style Sheets ermöglichen es, das Aussehen und Verhalten der HTML-codierten Elem
 
 Wie bei HTML können CSS-Dateien mit jedem beliebigen Texteditor erstellt werden. Die Dateiendung muss *.css* sein.
 
-![CSS Datei platzieren](images/create_your_personal_webpage_4.png){.thumbnail}
+![CSS Datei platzieren](/pages/assets/screens/other/web-tools/vscode/create_your_personal_webpage_4.png){.thumbnail}
 
 Wir müssen nun diese CSS-Datei, die wir konventionell *style.css* benannt haben, mit unserer HTML-Seite verbinden. Dieser Link wird durch Hinzufügen eines `<link>` Tags innerhalb vom `<head>` der index.html Datei hergestellt:
 
@@ -300,7 +300,7 @@ Sie werden sehen, dass die Texte nun an die Ecken des Browserfensters gebunden s
 
 Die Eigenschaft *padding* definiert den rotierenden Rand (Innenrand), d. h. den Raum außerhalb des Blocks, der den Text (oder irgendein Element) enthält. Das folgende Diagramm veranschaulicht die Übereinstimmung dieser Begriffe mit dem so genannten CSS-Boxmodell:
 
-![CSS-Modell](images/create_your_personal_webpage_5.png){.thumbnail}
+![CSS-Modell](/pages/assets/schemas/web-hosting/create_your_personal_webpage_5.png){.thumbnail}
 
 ### HTML-Struktur des Dokuments verbessern
 
@@ -448,4 +448,4 @@ Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

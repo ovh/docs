@@ -43,7 +43,7 @@ In the available options, click on the button `Fetch NS from parent zone`{.actio
 
 A result is displayed:
 
-![glue-zonemaster](images/nameservers.png){.thumbnail}
+![glue-zonemaster](/pages/assets/screens/other/web-tools/zonemaster/nameservers.png){.thumbnail}
 
 Retrieve the *DNS servers* information including **all** their associated IPv4 addresses (in the form of *X.X.X.X* where *X* is a number between *0* and *255*) and IPv6 (other addresses that are not IPv4). You will need them for the rest of this guide.
 
@@ -80,7 +80,7 @@ On the new page, click on the `GLUE`{.action} tab.
 
 A table will display the glue records currently configured at OVHcloud for your domain name. To add a new glue record, click the `Add`{.action} button.
 
-![glueregistry](images/add.png){.thumbnail}
+![glueregistry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/glue/add.png){.thumbnail}
 
 In the window that opens, enter the information requested:
 
@@ -89,7 +89,7 @@ In the window that opens, enter the information requested:
 |Host Name|Customise the host name you want to use as a custom DNS server.|
 |Target IP(s)|Specify the IP address(es) (IPv4 and/or IPv6) to which the host name should resolve. This is the IP address(es) of the DNS server currently used by your domain name. If there are multiple IP addresses, separate them with *commas*.|
 
-![glueregistry](images/add-another-glue-record-step-1.png){.thumbnail}
+![glueregistry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/glue/add-another-glue-record-step-1.png){.thumbnail}
 
 In the image above, taking the example from [step 1](#step1), the glue record you want to add here (from the domain name *domain.tld*) is **dns1.domain.tld**. 
 
@@ -110,7 +110,7 @@ You can do this via the interface given by the service provider managing your do
 - **If your domain name does not use an active DNS zone with OVHcloud**: Contact the service provider managing it. Once you have made the required changes, please move on to the next step.
 - **Your domain name uses an active DNS zone at OVHcloud**: Log in to your [OVHcloud Control Panel](/links/manager){.external} then go to the `Web Cloud`{.action} section. In the left-hand column, click `Domain names`{.action}, then select the domain name you used to create the glue record in [step 2](#step2). Go to the `DNS Zone`{.action} tab, then click `Add an entry`{.action}. Select the entry of type *A* or *AAAA* depending on the type of associated IP you want to add. Follow the steps by entering the *subdomain* and the address *IPv4* (A) or *IPv6* (AAAA) then proceed until the addition has been validated. If necessary, please refer to our guide on [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit).
 
-![glueregistry](images/add-an-entry.png){.thumbnail}
+![glueregistry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-2.png){.thumbnail}
 
 > [!primary]
 >
@@ -141,14 +141,14 @@ Go to the `DNS servers`{.action} tab, then click `Modify DNS servers`{.action}. 
 > Without this, custom DNS servers will not be registered correctly, and will not work with your domain name.
 >
 
-Finalise the steps and, if necessary, refer to the instructions set out in our documentation "[Modifying an OVHcloud domain name’s DNS servers](/pages/web_cloud/domains/dns_server_general_information)”.
+Finalise the steps and, if necessary, refer to the instructions set out in our documentation "[Modifying an OVHcloud domain name’s DNS servers](/pages/web_cloud/domains/dns_server_edit)”.
 
 > [!primary]
 > 
 > If you have customised DNS servers on one domain name for use with another domain name that is not registered with OVHcloud, contact the service provider where your other domain name is registered to modify the DNS servers.
 >
 
-![glueregistry](images/modify-dns-servers.png){.thumbnail}
+![glueregistry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/modify-dns-servers.png){.thumbnail}
 
 > [!primary]
 >
@@ -168,7 +168,7 @@ You can do this via the interface given by the service provider managing your do
 
 A window will appear with your DNS zone in *text* mode:
 
-![glueregistry](images/change-in-text-format-step-1.png){.thumbnail}
+![glueregistry](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/change-in-text-format-step-1.png){.thumbnail}
 
 > [!warning]
 >

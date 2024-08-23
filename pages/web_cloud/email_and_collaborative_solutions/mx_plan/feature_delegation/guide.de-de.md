@@ -1,5 +1,5 @@
 ---
-title: 'Die Verwaltung Ihrer E-Mail-Accounts einer anderen Person übertragen'
+title: 'MX Plan - Die Verwaltung Ihrer E-Mail-Accounts einer anderen Person übertragen'
 excerpt: Erfahren Sie hier, wie Sie die Verwaltung der E-Mail-Accounts Ihres MX Plan Angebots delegieren
 updated: 2021-10-08
 ---

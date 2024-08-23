@@ -43,7 +43,7 @@ Aceda à [Área de Cliente OVHcloud](/links/manager){.external}, secção `Web C
 
 Aparecerá uma tabela com a lista de todos os registos DNS do nome de domínio selecionado.
 
-![dnszone](images/tab.png){.thumbnail}
+![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/tab-mydomain-anycast.png){.thumbnail}
 
 Cada registo DNS pode ser alterado clicando no botão `...`{.action} à direita da linha da tabela em causa e, a seguir, clicando em `Modificar entrada`{.action}.
 
@@ -53,36 +53,36 @@ Siga as etapas em ordem nas seguintes guias:
 > **Etapa 1**
 >> **Registo A**<br><br>
 >> Para identificar os registos "A" existentes, clique no menu Filtros na parte superior da tabela de registos DNS e selecione `A`.<br>
->> ![dnszone](images/filter-a.png){.thumbnail}<br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-a.png){.thumbnail}<br>
 >> - Clique no botão `...`{.action} à direita da linha da tabela que corresponde ao seu nome de domínio apenas, sem um subdomínio (exemplo: `mydomain.ovh.`), e depois clique em `Modificar entrada`{.action}.<br>
 >> - Se existir um registo para o subdomínio "www." (exemplo: `www.mydomain.ovh.`), deverá eliminá-lo para que não entre em conflito com o registo CNAME que vai introduzir no etapa 4. Clique no botão `...`{.action} à direita da linha correspondente ao seu nome de domínio apenas com o subdomínio "www." e clique em `Eliminar entrada`{.action}.<br>
 >> - Se não possui um registo "A" existente, clique no botão `Adicionar uma entrada`{.action} no canto superior direito do ecrã e selecione o "Campo de apontamento" `A`{.action}<br><br>
 >> Deixe o campo **Subdomínio** em branco e insira o endereço IPv4 do Shopify `23.227.38.65` no campo de **Alvo**.
->> ![dnszone](images/field-a.png){.thumbnail}<br><br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-to-the-dns-zone-a-shopify.png){.thumbnail}<br><br>
 >> Clique em `Seguinte`{.action}, valide o seu registo "A" e passe à etapa 2.
 > **Etapa 2**
 >> **Registo AAAA**<br><br>
 >>  Para identificar os registos "AAAA", clique no menu Filtros na parte superior da tabela de registos DNS e selecione `AAAA`.<br>
->> ![dnszone](images/filter-aaaa.png){.thumbnail}<br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png){.thumbnail}<br>
 >> - Clique no botão `...`{.action} à direita da linha da tabela correspondente ao seu nome de domínio apenas sem um subdomínio (exemplo: `mydomain.ovh.`) e, em seguida, clique em `Modificar entrada`{.action}.<br>
 >> - Se existir um registo para o subdomínio "www." (exemplo: `www.mydomain.ovh.`), deverá eliminá-lo para que não entre em conflito com o registo CNAME que vai introduzir no etapa 4. Clique no botão `...`{.action} à direita da linha correspondente ao seu nome de domínio apenas com o subdomínio "www." e clique em `Eliminar entrada`{.action}.<br>
 >> - Se não possui um registo "AAAA" existente, clique no botão `Adicionar uma entrada`{.action} no canto superior direito do ecrã e selecione o "Campo de apontamento" `AAAA`{.action}<br><br>
 >> Deixe o campo **Subdomínio** vazio e insira o endereço IPv6 do Shopify `2620:0127:f00f:5::` no campo de **Alvo**.
->> ![dnszone](images/field-aaaa.png){.thumbnail}<br><br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-to-the-dns-zone-aaaa-shopify.png){.thumbnail}<br><br>
 >> Clique em `Seguinte`{.action}, valide o registo "AAAA" e passe à etapa 3.
 > **Etapa 3**
 >> **Registo TXT**<br><br>
 >>  Para identificar os registos "TXT" existentes, clique no menu Filtros na parte superior da tabela de registos DNS e selecione `TXT`.<br>
->> ![dnszone](images/filter-txt.png){.thumbnail}<br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-txt.png){.thumbnail}<br>
 >> - Se existirem registos "TXT" apenas para o nome de domínio (exemplo: `mydomain.ovh.`) e para o seu subdomínio em "www." (exemplo: `www.mydomain.ovh.`), deve eliminá-los para que não entrem em conflito com o registo CNAME que vai introduzir no etapa 4. Clique no botão `...`{.action} à direita da linha correspondente ao seu nome de domínio apenas com o subdomínio "www." e clique em `Eliminar entrada`{.action}.<br>
 > **Etapa 4**
 >> **Registo CNAME**<br><br>
 >>  Para identificar os registos "CNAME" existentes, clique no menu Filtros na parte superior da tabela de registos DNS e selecione `CNAME`.<br>
->> ![dnszone](images/filter-cname.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-cname.png){.thumbnail}
 >> - Clique no botão `...`{.action} à direita da linha da tabela correspondente ao seu subdomínio em "www." (exemplo: `mydomain.ovh.`) e depois clique em `Modificar entrada`{.action}.<br>
 >> - Se não possui um registo "CNAME" existente, clique no botão `Adicionar uma entrada`{.action} no canto superior direito do seu ecrã e selecione o "Campo de apontamento" `CNAME`{.action}.
 >> Preencha o campo **Subdomínio** com o valor `www` e introduza `shops.myshopify.com.` no campo **Alvo**.<br>
->> ![dnszone](images/field-cname.png){.thumbnail}<br><br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-to-the-dns-zone-cname-shopify.png){.thumbnail}<br><br>
 >> Clique em `Seguinte`{.action} e valide o seu registo "CNAME".
 
 A zona DNS está agora configurada para fazer a ligação a um alojamento Shopify.
@@ -99,7 +99,7 @@ Se utiliza uma oferta de e-mail da OVHcloud ou pretende subscrever uma das [noss
 
 ## Quer saber mais? <a name="go-further"></a>
 
-[Modificar os servidores DNS de um domínio OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
+[Modificar os servidores DNS de um domínio OVHcloud](/pages/web_cloud/domains/dns_server_edit)
 
 [Criar uma zona DNS da OVHcloud para um domínio](/pages/web_cloud/domains/dns_zone_create)
 
@@ -111,4 +111,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
  
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
  
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

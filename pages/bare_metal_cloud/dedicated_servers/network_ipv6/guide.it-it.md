@@ -1,7 +1,7 @@
 ---
 title: 'Configurare IPv6 sur un server dedicato'
 excerpt: 'Scopri come configurare indirizzi IPv6 sulla nostra infrastruttura'
-updated: 2024-03-05
+updated: 2024-07-15
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2024-03-05
 
 ## Obiettivo
 
-La versione 6 del Protocollo Internet (IPv6) è l’ultima versione del Protocollo Internet (IP). È stata studiata per sopperire alla prevista saturazione degli indirizzi del suo predecessore, IPv4, utilizzando indirizzi a 128-bit invece che a 32-bit. La maggior parte dei server dedicati OVHcloud vengono consegnati con un blocco /64 IPv6, ad eccezione dei server High Grade e Scale che vengono consegnati con un blocco /56 IPv6. Si tratta di più di 18 quintiplici di indirizzi IP di cui puoi disporre a tua scelta. Ciò equivale a oltre 18 quintilioni di indirizzi IP che puoi utilizzare a tuo piacimento.
+La versione 6 del Protocollo Internet (IPv6) è l’ultima versione del Protocollo Internet (IP). È stata studiata per sopperire alla prevista saturazione degli indirizzi del suo predecessore, IPv4, utilizzando indirizzi a 128-bit invece che a 32-bit. I server di gamma High Grade, Scale e Advance (da luglio 2024) vengono consegnati con un blocco /56 IPv6, mentre i vecchi server con un blocco/64 IPv6. Un server consegnato con un blocco /56 IPv6, permette di disporre fino a 18 quintilioni di indirizzi IP.
 
 **Questa guida spiega con vari esempi come configurare indirizzi IPv6 sul tuo server.**
 
@@ -57,7 +57,7 @@ Il primo step consiste nel recuperare il gateway IPv6 assegnato al tuo server. �
 
 #### Dallo Spazio Cliente OVHcloud <a name="viacontrolpanel"></a>
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca su `Bare Metal Cloud`{.action} e seleziona il tuo server nella sezione `Server dedicati`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Bare Metal Cloud`{.action} e seleziona il tuo server nella sezione `Server dedicati`{.action}.
 
 
 Il gateway IPv6 assegnato al tuo server è visualizzato nella sezione `Rete` della scheda `Informazioni generali`{.action}. Una volta effettuata la copia, passa allo [Step 2: applica la configurazione IPv6](#applyipv6).

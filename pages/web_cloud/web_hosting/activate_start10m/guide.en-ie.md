@@ -28,11 +28,11 @@ Log in to the [OVHcloud Control Panel](/links/manager){.external}, click `Domain
 
 In the **General information** box , you will see *Free web hosting and email*. Click `...`{.action} on the right-hand side, then `Enable`{.action}.
 
-![enable 100m](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/web-cloud/domain-dns/general-information/enable-100m.png){.thumbnail}
+![enable 100m](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/enable-100m.png){.thumbnail}
 
 The activation window will appear. **Step 1** will detail the plan and its price — click `Next`{.action}. For **step 2**, choose the changes you need to make to your DNS zone:
 
-![activate100m](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/web-cloud/order/order-100m-step-2.png){.thumbnail}
+![activate100m](/pages/assets/screens/control_panel/product-selection/web-cloud/order/order-100m-step-2.png){.thumbnail}
 
 > [!warning]
 >
@@ -79,4 +79,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

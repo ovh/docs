@@ -54,25 +54,25 @@ The table that opens will contain all of the databases created as part of your W
 
 In the `Databases`{.action} tab, click the `...`{.action} button to the right of the database you want to back up, then `Create a backup`{.action}.
 
-![databasedump](images/create-a-backup.png){.thumbnail}
+![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-backup.png){.thumbnail}
 
 In the window that pops up, select the date you want to back up, then click the `Next`{.action} button. Check that the information in the summary is correct, then click `Confirm`{.action} to begin the procedure.
 
 Wait for the backup to complete. Once it is available, you can retrieve it.
 
-![databasedump](images/create-a-database-backup-step-1.png){.thumbnail}
+![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-backup-step-1.png){.thumbnail}
 
 #### Step 2: Retrieve a backup of the database
 
 In the `Databases`{.action} tab, click the `...`{.action} button to the right of the database you want to back up, then `Restore a backup`{.action}.
 
-![databasedump](images/restore-backup.png){.thumbnail}
+![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/restore-backup.png){.thumbnail}
 
 The table that opens contains all of the available backups for the selected database. You can view the exact date on which backups were taken, as well as the date on which they will be deleted from the OVHcloud tool.
 
 To download a backup, click on the `...`{.action} button to the right of the backup you want to retrieve, then on `Download the backup`{.action}. A window will pop up, prompting you to save it to your machine. Accept, then wait for the backup to be downloaded.
 
-![databasedump](images/download-the-backup.png){.thumbnail}
+![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/download-the-backup.png){.thumbnail}
 
 ### Retrieve a backup via the phpMyAdmin web interface
 
@@ -80,7 +80,7 @@ To do this, log in to *phpMyAdmin*. To find the access link for this interface, 
 
 The table that opens will contain all of the databases created as part of your Web Hosting plan. In this window, click the `...`{.action} button to the right of the database concerned, then `Go to phpMyAdmin`{.action}.
 
-![databasedump](images/go-to-phpmyadmin.png){.thumbnail}
+![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
 
 Once you have reached the interface for connecting to *phpMyAdmin*, enter the information for the database, then log in. Once you have logged in, go to the `Export`{.action} tab, where you can choose from two export methods:
 
@@ -177,4 +177,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

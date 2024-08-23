@@ -30,7 +30,7 @@ El nivel de RAID por defecto de los servidores de OVHcloud es el RAID 1. duplica
 
 ### Utilizar el área de cliente de OVHcloud
 
-En el [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), seleccione el servidor en la sección `Barra Metal Cloud`{.action} y seleccione `servidores dedicados`{.action}. 
+En el [Panel de configuración de OVHcloud](/links/manager), seleccione el servidor en la sección `Barra Metal Cloud`{.action} y seleccione `servidores dedicados`{.action}. 
 
 En la pestaña `Información general`{.action}, haga clic en `...`{.action} delante del sistema operativo y seleccione `Instalar`{.action}.
 
@@ -64,7 +64,7 @@ df -h
 
 ### Utilizar el modo de rescate
 
-En el [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), seleccione el servidor en la sección `Barra Metal Cloud`{.action} y seleccione `servidores dedicados`{.action}.
+En el [Panel de configuración de OVHcloud](/links/manager), seleccione el servidor en la sección `Barra Metal Cloud`{.action} y seleccione `servidores dedicados`{.action}.
 
 Busque "Boot" en la zona **Información general** y haga clic en `...`{.action} y luego en `Editar`{.action} para cambiar el sistema de arranque.
 

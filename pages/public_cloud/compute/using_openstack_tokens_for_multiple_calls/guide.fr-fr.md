@@ -33,7 +33,7 @@ Ce guide vous montrera comment émettre un jeton OpenStack, l'utiliser pour les 
 
 ## Prérequis 
 
-- Être connecté à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+- Être connecté à l’[espace client OVHcloud](/links/manager){.external}.
 - Ce guide nécessite l'installation de l'outil OpenStack CLI sur votre machine.
 
 > [!primary]
@@ -58,7 +58,7 @@ sudo yum install python3-openstackclient
 
 ### Étape 1 : téléchargez et sourcez votre fichier OpenRC
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et ouvrez votre projet `Public Cloud`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager) et ouvrez votre projet `Public Cloud`{.action}.
 
 Cliquez sur `Users & Roles`{.action} dans la section `Project Management` puis sur le bouton `...`{.action} à droite de votre utilisateur OpenStack.<br>
 Téléchargez le fichier OpenRC de cet utilisateur et spécifiez la région dans laquelle vous voulez effectuer des actions.

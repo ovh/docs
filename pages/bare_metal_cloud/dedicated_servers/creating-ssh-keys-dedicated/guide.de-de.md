@@ -1,7 +1,7 @@
 ---
 title: SSH-Schlüssel erstellen und verwenden
 excerpt: Erfahren Sie hier, wie Sie SSH-Schlüssel auf Ihrem lokalen Gerät konfigurieren und für eine sichere Verbindung zu Ihrem Server verwenden
-updated: 2023-11-22
+updated: 2024-06-26
 ---
 
 > [!primary]
@@ -18,7 +18,7 @@ Dies ist in der Regel die sicherste und bequemste Verbindungsmethode.
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) oder einen [VPS](https://www.ovhcloud.com/de/vps/) in Ihrem Kunden-Account.
 - Sie haben eine SSH-Client-Anwendung installiert (Befehlszeile oder GUI).
 - Sie haben administrativen Zugang (sudo) über SSH auf Ihren Server.
@@ -36,6 +36,8 @@ Beachten Sie auch unsere Anleitungen zu "Ersten Schritten": <a name="getstarted"
 - Für einen [VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
 
 Lesen Sie auch die Einführung zum [SSH Protokoll](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
+
+<a name="create-ssh-key"></a>
 
 ### SSH-Schlüsselpaar erzeugen
 
@@ -202,7 +204,7 @@ Der Schlüssel ist bereit, sobald die Statusanzeige voll ist.
 
 ![PuTTy Key](images/puttygen_03.png){.thumbnail}
 
-Kopieren Sie die vollständige Schlüsselzeichenfolge in die Zwischenablage, um sie [zum Server hinzufügen](#addserverkey) und optional [in Ihr Kundencenter importieren](#importkey). Speichern Sie beide Schlüssel als Dateien, indem Sie auf die entsprechenden Schaltflächen klicken. Geben Sie eine Passphrase ein, um die Dateien abzusichernn.
+Kopieren Sie die vollständige Schlüsselzeichenfolge in die Zwischenablage, um sie [zum Server hinzufügen](#addserverkey). Speichern Sie beide Schlüssel als Dateien, indem Sie auf die entsprechenden Schaltflächen klicken. Geben Sie eine Passphrase ein, um die Dateien abzusichernn.
 
 > [!warning]
 >
@@ -409,55 +411,6 @@ Um eine weitere Serververbindung einzurichten, wiederholen Sie die folgenden Sch
 - [Schlüsselpaar erstellen](#useputty).
 - [Den öffentlichen Schlüssel zu Ihrem Server hinzufügen](#addserverkey).
 - [Details des Servers eingeben und die Schlüsseldatei zu `PuTTY` hinzufügen](#puttykeys).
-
-### SSH-Schlüssel in das Kundencenter importieren <a name="importkey"></a>
-
-Im OVHcloud Kundencenter können Sie öffentliche Schlüssel speichern, wenn diese mit einem der unterstützten Verschlüsselungstypen erstellt wurden. Diese Funktion kann Ihnen bei der Konfiguration oder Neuinstallation eines neuen Servers Zeit sparen, da Sie [den öffentlichen Schlüssel nicht manuell zu Ihrem Server hinzufügen](#addserverkey) müssen. 
-
-Öffnen Sie die seitliche Navigationsleiste, indem Sie oben rechts auf Ihren Namen klicken und die Verknüpfung `Produkte und Dienstleistungen`{.action} verwenden.
-
-![SSH-Schlüsselverwaltungsbereich](images/SSH_keys_panel_2022.png){.thumbnail}
-
-Gehen Sie in `Meine Dienste` auf den Tab `SSH-Schlüssel`{.action} und klicken Sie auf `SSH-Schlüssel hinzufügen`{.action}.
-
-![SSH-Schlüsselverwaltungsbereich](images/SSH_keys_panel_2.1.png){.thumbnail}
-
-Wählen Sie im Drop-down-Menü die Option `Dedicated` aus.
-
-Geben Sie im neuen Fenster eine Kennung (einen Namen Ihrer Wahl) für den Schlüssel ein. Fügen Sie die Schlüsselzeichenfolge (kopiert aus [Ihrer `.pub`-Datei](#publickey) oder aus dem [`PuTTYgen`-Fenster)](#useputty) in das `Key`-Feld ein).
-
-![SSH-Schlüsselverwaltungsbereich](images/SSH_keys_panel_3.png){.thumbnail}
-
-Wenn Sie die vollständige Ausgabe kopiert haben, sollte die Benutzer-Information hinter dem Schlüssel bereits angefügt sein. Beachten Sie, dass Sie zum Import Ihres Schlüssels nach der Zeichenfolge eine (lokale) Benutzer-Identifikation angeben müssen. (Siehe oben stehendes Beispielformat.) Dies ist eine Anforderung des OVHcloud Kundencenters. Klicken Sie auf `Bestätigen`{.action}, um Ihren öffentlichen Schlüssel zu speichern.
-
-> [!primary]
->
-> Alle unter `Dedicated` registrierten Schlüssel sind zur Vorinstallation auf einem Dedicated Server oder VPS verfügbar. Informationen zu SSH-Schlüsseln für Public-Cloud-Dienste finden Sie in [dieser Anleitung](/pages/public_cloud/compute/public-cloud-first-steps).
->
-
-### Standard-SSH-Schlüssel festlegen (nur für den Bereich "Dedicated") <a name="cpsshkey"></a>
-
-Wenn Sie in Ihrem OVHcloud Kundencenter mehrere SSH-Schlüssel hinzugefügt haben, können Sie einen auswählen, der als Standardschlüssel für den Account verwendet werden soll. 
-
-> [!warning]
-> Hinweis: Sobald der Standardschlüssel festgelegt ist, wird er auch als Verbindungsmethode verwendet, wenn ein Server im Rescue-Modus neu gestartet wird. Um stattdessen ein Kennwort zu erhalten, muss der Standardschlüssel [deaktiviert](#disablesshkey) sein, bevor der Server im Rescue-Modus neu gestartet wird. Weitere Informationen hierzu finden Sie im Abschnitt [Weiterführende Informationen](#gofurther) dieser Anleitung.
-> 
-
-Öffnen Sie die seitliche Navigationsleiste, indem Sie oben rechts auf den Namen Ihres Accounts klicken und die Verknüpfung `Produkte und Dienstleistungen`{.action} verwenden, um zum Bereich `SSH-Schlüssel`{.action} zu gelangen.
-
-![SSH-Schlüsselverwaltungsbereich](images/SSH_keys_panel_2022.png){.thumbnail}
-
-Klicken Sie in der Liste auf das `Schlüssel`-Symbol neben dem gewünschten SSH-Schlüssel, um diesen als Standardschlüssel festzulegen.
-
-![SSH-Schlüsselverwaltungsbereich](images/defaultsshkey.png){.thumbnail}
-
-Sobald dies erfolgt ist, wird eine Meldung angezeigt, die bestätigt, dass der Schlüssel als Standard eingestellt wurde, und das `Schlüssel`-Symbol wird hervorgehoben.
-
-![SSH-Schlüsselverwaltungsbereich](images/defaultsshkey1.png){.thumbnail}
-
-### Standard-SSH-Schlüssel <a name="disablesshkey"></a> deaktivieren
-
-Um den aktuellen **Standard**-SSH-Schlüssel zu deaktivieren, gehen Sie wie oben beschrieben in den Bereich `SSH-Schlüssel`{.action}. Klicken Sie auf das blaue `Schlüssel`-Symbol neben dem entsprechenden SSH-Schlüssel, um diese Einstellung zu ändern.
 
 ## Weiterführende Informationen <a name="gofurther"></a> 
 

@@ -36,7 +36,7 @@ Permette, da un terminale e con l’aiuto di un comando Linux, di copiare un fil
   
 ## Procedura
 
-Questa guida ti mostra in modo dettagliato le funzionalità disponibili con il comando `scp`. Per maggiori informazioni, contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Questa guida ti mostra in modo dettagliato le funzionalità disponibili con il comando `scp`. Per maggiori informazioni, contatta la nostra [Community di utenti](/links/community).
 
 ### Step 1 - Recupera gli accessi SSH del tuo hosting Web
 
@@ -145,4 +145,4 @@ Per verificare che il contenuto dell’hosting Web sia stato copiato localmente 
  
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
  
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

@@ -140,7 +140,7 @@ To create an instance, you need at least:
 - A flavor
 - An SSH key
 
-For example purposes, we will create a simple instance on **Debian 10** with the flavour **s1-2**, and import an SSH key. Add the following lines to a file named `simple_instance.tf`:
+For example purposes, we will create a simple instance on **Debian 10** with the flavour **d2-2**, and import an SSH key. Add the following lines to a file named `simple_instance.tf`:
 
 ```python
 # Creating an SSH key pair resource
@@ -155,7 +155,7 @@ resource "openstack_compute_instance_v2" "test_terraform_instance" {
   name        = "terraform_instance" # Instance name
   provider    = openstack.ovh  # Provider name
   image_name  = "Debian 10" # Image name
-  flavor_name = "s1-2" # Instance type name
+  flavor_name = "d2-2" # Instance type name
   # Name of openstack_compute_keypair_v2 resource named keypair_test
   key_pair    = openstack_compute_keypair_v2.test_keypair.name
   network {
@@ -202,7 +202,7 @@ Terraform will perform the following actions:
       + all_tags            = (known after apply)
       + availability_zone   = (known after apply)
       + flavor_id           = (known after apply)
-      + flavor_name         = "s1-2"
+      + flavor_name         = "d2-2"
       + force_delete        = false
       + id                  = (known after apply)
       + image_id            = (known after apply)
@@ -242,7 +242,7 @@ openstack_compute_instance_v2.test_terraform_instance: Creation complete after 2
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 ```
 
-Now, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the `Public Cloud`{.action} section and click on `Instances`{.action}.
+Now, log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and click on `Instances`{.action}.
 As you can see, your compute instance named "terraform_instance" is creating.
 
 > [!primary]
@@ -252,7 +252,7 @@ As you can see, your compute instance named "terraform_instance" is creating.
 
 #### Creating multiple instances
 
-In this section, we will create an Ubuntu instance of the flavor "s1-2" in three different regions.
+In this section, we will create an Ubuntu instance of the flavor "d2-2" in three different regions.
 
 You can find all region names by checking this OVHcloud API endpoint:
 
@@ -298,7 +298,7 @@ To do this, we will create a file named `multiple_instance.tf`. In it, we first 
    count = length(var.region)
    provider = openstack.ovh # Provider name
    name = "terraform_instances" # Instance name
-   flavor_name = "s1-2" # Instance flavor
+   flavor_name = "d2-2" # Instance flavor
    image_name = "Debian 10" # Image name
    # element is a function that accesses the element at the position
    # count.index of the list var.region. It allows to iterate between regions
@@ -412,7 +412,7 @@ variable "region" {
    provider     = openstack.ovh # Provider name
    name         = "proxy_instance" # Instance name
    image_name   = "Debian 10" # Image name
-   flavor_name  = "s1-2" # Flavor name
+   flavor_name  = "d2-2" # Flavor name
    # Name of openstack_compute_keypair_v2 resource named keypair_test
    key_pair     = openstack_compute_keypair_v2.test_keypair.name
    # Add public and private network
@@ -504,7 +504,7 @@ resource "openstack_compute_instance_v2" "front" {
   provider        = openstack.ovh # Provider name
   name            = "front" # Instance name
   key_pair        = openstack_compute_keypair_v2.test_keypair.name
-  flavor_name     = "s1-2" # Instance type name
+  flavor_name     = "d2-2" # Instance type name
   image_id        = data.openstack_images_image_v2.archlinux.id # Instance image ID
   security_groups = ["default"] # Adds the instance to the security group
   network {
@@ -531,7 +531,7 @@ resource "openstack_compute_instance_v2" "back" {
   provider        = openstack.ovh # Provider name
   name            = "back" # Instance name
   key_pair        = openstack_compute_keypair_v2.test_keypair.name
-  flavor_name     = "s1-2" # Instance type name
+  flavor_name     = "d2-2" # Instance type name
   image_id        = data.openstack_images_image_v2.archlinux.id # Instance image ID
   security_groups = ["default"] # Adds the instance to the security group
   network {
@@ -589,7 +589,7 @@ Nevertheless, two conditions apply:
 - You must have created a Public Cloud project during the last 3 months.
 
 If one of these business rules is not met, you will receive the following error: `"Found eligibility issues: challengePaymentMethod"`.<br>
-In that case, the only solution is to use the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) to create a project.<br>
+In that case, the only solution is to use the [OVHcloud Control Panel](/links/manager) to create a project.<br>
 You will then be challenged to validate that you are indeed the owner of the payment means used on your account (this challenge depends on the payment means and other parameters).
 
 Please understand these rules and extra human steps have been put in place as an extra safety for customers that might have leaked their OVHcloud credentials.<br>
@@ -633,4 +633,4 @@ terraform destroy
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

@@ -1,7 +1,7 @@
 ---
 title: Configuring the firewall on Linux with iptables
 excerpt: Find out how to secure a server with iptables
-updated: 2024-05-30
+updated: 2024-07-12
 ---
 
 ## Objective
@@ -59,10 +59,8 @@ sudo apt-get install iptables-persistent
 
 Once this is installed, the iptables folder will contain two files for IPV4 and IPV6 rules:
 
-```bash
-sudo /etc/iptables/rules.v4
-sudo /etc/iptables/rules.v6
-```
+- /etc/iptables/rules.v4
+- /etc/iptables/rules.v6
 
 Typically, an *iptables* command is as follows:
 
@@ -237,4 +235,4 @@ Feel free to experiment because you can always delete the rules you don't need, 
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

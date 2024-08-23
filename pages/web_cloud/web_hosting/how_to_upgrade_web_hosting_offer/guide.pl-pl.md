@@ -44,7 +44,7 @@ Aby zmienić abonament, przejdź do [Panelu klienta OVHcloud](/links/manager) w 
 
 W polu `Abonament` kliknij przycisk`...`{.action} po prawej stronie `Usługa`, a następnie `Zmień ofertę`{.action}.
 
-![change_plan](images/pro-change-plan.png){.thumbnail}
+![change_plan](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/pro-change-plan.png){.thumbnail}
 
 Następnie wybierz nową subskrypcję i jej czas trwania. Zaakceptuj regulaminy i kliknij na `Wyślij`{.action}.
 
@@ -66,7 +66,7 @@ W przeciwnym razie usuń nieużywane bazy danych i w razie potrzeby zmniejsz ilo
 
 Po usunięciu danych z Twoich baz, ponownie oblicz wykorzystany limit. W tym celu zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij opcję `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Na stronie, która się wyświetli przejdź do zakładki `Bazy danych`{.action}, następnie kliknij przycisk`...`{.action} po prawej stronie odpowiedniej bazy danych, a następnie `Przelicz rozmiar bazy`{.action}.
 
-![quota](images/recalculate-quota.png){.thumbnail}
+![quota](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota.png){.thumbnail}
 
 > [!primary]
 >
@@ -78,7 +78,7 @@ Po usunięciu danych z Twoich baz, ponownie oblicz wykorzystany limit. W tym cel
 Jeśli korzystasz z oferty [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) zawartej w Twoim hostingu [Performance](/links/web/hosting-performance-offer) i chcesz przenieść swój hosting na ofertę [Pro](/links/web/hosting-professional-offer), musisz najpierw oddzielić ofertę Web Cloud Databases od hostingu.
 W tym celu zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij opcję `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Na stronie, która się wyświetli pozostań w zakładce `Informacje ogólne`{.action}. W kolumnie środkowej `Konfiguracja` kliknij przycisk `...`{.action} po prawej stronie pozycji `Web Cloud Databases`{.action}, a następnie `Odłącz`{.action}.
 
-![Web Cloud Databases](images/wcdb-detach.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/wcdb-detach.png){.thumbnail}
 
 Dzięki temu będziesz mógł zamówić ofertę Web Cloud Databases niezależną od abonamentu *Performance*. Dane z Twojego serwera zostaną zachowane.
 
@@ -93,7 +93,7 @@ Upewnij się, czy nowa oferta zawiera wystarczającą [przestrzeń dyskową FTP]
 
 Aby sprawdzić rozmiar przestrzeni dyskowej FTP użytej na Twoim hostingu, zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Na stronie `Informacje ogólne`{.action}, która się wyświetla, znajdź limit w sekcji `Przestrzeń dyskowa`.
 
-![ftp](images/find-disk-space.png){.thumbnail}
+![ftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
 
 #### 4 - Adresy e-mail
 
@@ -101,7 +101,7 @@ Upewnij się, że w nowym pakiecie jest dostępna wystarczająca liczba dostępn
 
 Jeśli chcesz zachować tę samą liczbę kont e-mail i **przed zmianą hostingu na niższą ofertę**, możesz również zamówić nową usługę poczty elektronicznej **MX Plan**. W tym celu zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij `E-maile`{.action}, po czym wybierz odpowiednią ofertę e-mail. Na stronie, która się wyświetla w ramce `Abonament`{.action} i po prawej stronie wzmianki `Usługa`{.action} kliknij przycisk `...`{.action} następnie `Zmień ofertę`{.action}.
 
-![mxplan](images/change-solution.png){.thumbnail}
+![mxplan](/pages/assets/screens/control_panel/product-selection/web-cloud/emails/general-information/change-solution.png){.thumbnail}
 
 >[!primary]
 >
@@ -131,7 +131,7 @@ W dolnej części strony, która się wyświetli, znajduje się tabela zawieraj�
 
 Aby usunąć użytkowników FTP, kliknij przycisk `...`{.action} po prawej stronie użytkownika FTP, którego chcesz usunąć, a następnie kliknij `Usuń`{.action}.
 
-![user FTP deletion](images/edit-ftp-user-2.png){.thumbnail}
+![user FTP deletion](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/edit-ftp-user-2.png){.thumbnail}
 
 ### Zakończenie
 
@@ -159,13 +159,13 @@ Jeśli opcja **Boost** odpowiada Twoim potrzebom, poniżej znajdziesz instrukcje
 > **Włącz opcję Boost**
 >>
 >> Aby aktywować opcję Boost, zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij `Hosting`{.action}, a następnie wybierz odpowiedni hosting. W ramce `Informacje ogólne` na stronie, która się wyświetli kliknij przycisk`...`{.action} po prawej stronie `Boost`, a następnie `Skorzystaj z opcji Boost`{.action}.<br><br>
->> ![boost](images/boost-my-hosting-plan.png){.thumbnail}<br>
+>> ![boost](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/boost-my-hosting-plan.png){.thumbnail}<br>
 >>
 > **Wyłącz opcję Boost**
 >>
 >> Aby wyłączyć opcję Boost, zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Na stronie, która się wyświetli przejdź do zakładki `Więcej` i kliknij `Skorzystaj z opcji Boost`{.action}.<br>
 >> Pojawi się tabela wykorzystania opcji Boost. Kliknij `Wyłącz ofertę Boost`{.action}.<br><br>
->> ![boost](images/deactivate-the-boost-plan.png){.thumbnail}<br>
+>> ![boost](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/boost-my-hosting-plan/deactivate-the-boost-plan.png){.thumbnail}<br>
 
 ### Płatności w przypadku zmiany oferty <a name="billing"></a>
 
@@ -193,4 +193,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

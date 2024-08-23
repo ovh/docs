@@ -1,7 +1,7 @@
 ---
 title: "Powiadomienia o zakończeniu sprzedaży/utrzymanie bazy danych SQL"
 excerpt: "Powiadomienia o zakończeniu sprzedaży/utrzymanie bazy danych SQL"
-updated: 2024-06-06
+updated: 2024-07-11
 ---
 
 > [!primary]
@@ -13,6 +13,7 @@ Produkty objęte ogłoszeniami o zakończeniu sprzedaży i wycofaniu z eksploata
 |Wersja|Powiadomienie o zakończeniu cyklu życia|Zakończenie sprzedaży|Zakończenie obsługi|
 |---|---|---|---|
 |MySQL 5.7|2023-11-16|2024-02-16|2024-05-17|
+|MySQL 8.0|Do określenia|Do określenia|Do określenia|
 
 ## Sprawdź również
 
@@ -28,4 +29,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

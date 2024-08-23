@@ -42,13 +42,13 @@ En la columna **"Copias de seguridad"**, la cifra corresponde al número de copi
 
 Haga clic en el botón `...`{.action} a la derecha de la base de datos y, a continuación, en `Guardar`{.action}.
 
-![Web Cloud Databases](images/back-up-now.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/back-up-now.png){.thumbnail}
 
 #### 2\. Exportar una copia de seguridad
 
 Haga clic en el botón `...`{.action} a la derecha de la base de datos y, seguidamente, en `Mostrar las copias de seguridad`{.action}.
 
-![Web Cloud Databases](images/show-backups.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/show-backups.png){.thumbnail}
 
 Se mostrará una lista de las copias de seguridad disponibles. Haga clic en el botón `...`{.action} a la derecha de la copia de seguridad seleccionada y, seguidamente, en `Descargar la copia de seguridad`{.action} para descargar la copia de seguridad.
 
@@ -66,7 +66,7 @@ Una vez conectado a phpMyAdmin, haga clic en el nombre de la base de datos que q
 
 Hay dos modos de exportación posibles. Si no necesita ayuda específica, le recomendamos que utilice el modo **rápido** en formato **SQL**.
 
-![Web Cloud Databases](images/pma-export-backup-web-cloud-db.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/other/web-tools/phpmyadmin/pma-export-backup-web-cloud-db.png){.thumbnail}
 
 ##### 1\.2 Exportar la base de datos MySQL o MariaDB en línea de comandos
 
@@ -122,4 +122,4 @@ Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con 
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

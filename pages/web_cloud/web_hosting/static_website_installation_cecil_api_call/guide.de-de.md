@@ -56,7 +56,7 @@ Für dieses Tutorial verwenden wir eine API, die von [OpenWeather](https://openw
 Erstellen Sie einen Account auf <https://home.openweathermap.org/users/sign_up>.<br>
 Sobald Ihr Account validiert wurde (per E-Mail), gehen Sie auf zum Menü "My API keys". Es wurde ein Schlüssel erstellt, den Sie hier kopieren und für die Fortsetzung dieses Tutorials speichern können.
 
-![Open Weather API key](images/static_website_installation_cecil_api_call01.png){.thumbnail}
+![Open Weather API key](/pages/assets/screens/other/browsers/web-pages/static_website_installation_cecil_api_call01.png){.thumbnail}
 
 ### HTML-Code hinzufügen
 
@@ -108,7 +108,7 @@ php cecil.phar build
 
 Überprüfen Sie das Ergebnis in Ihrem Browser und klicken Sie auf den Link "Weather", der im Hauptmenü hinzugefügt wurde:
 
-![Test new page](images/static_website_installation_cecil_api_call02.png){.thumbnail}
+![Test new page](/pages/assets/screens/other/browsers/web-pages/static_website_installation_cecil_api_call02.png){.thumbnail}
 
 ### JavaScript-Code hinzufügen
 
@@ -124,11 +124,11 @@ ls -la layouts
 
 Die Datei enthält das Verzeichnis `blog` und die Datei `index.html.twig`:
 
-![Layouts Directory](images/static_website_installation_cecil_api_call03.png){.thumbnail}
+![Layouts Directory](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil_api_call03.png){.thumbnail}
 
 Öffnen Sie die Datei `index.html.twig`:
 
-![Cecil layouts index file](images/static_website_installation_cecil_api_call04.png){.thumbnail}
+![Cecil layouts index file](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil_api_call04.png){.thumbnail}
 
 Die Datei bezieht sich auf ein Template, das nicht im Verzeichnis vorhanden ist. Diese und weitere Dateien sind in `cecil.phar` enthalten. Dateien mit der Erweiterung `.phar` sind PHP-Archivdateien, die ohne Dekomprimierung bearbeitet werden können.
 
@@ -140,7 +140,7 @@ php cecil.phar util:extract
 
 Anzeige des Inhalts von `layouts`:
 
-![Cecil layouts directory including unkompriessed files](images/static_website_installation_cecil_api_call05.png){.thumbnail}
+![Cecil layouts directory including unkompriessed files](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil_api_call05.png){.thumbnail}
 
 Ändern Sie das Standard-Template, um einen `<skript>` Tag einzufügen, der den Code für den API-Aufruf enthält:
 
@@ -230,13 +230,13 @@ function getTemperature(city) {
 
 Rufen Sie Ihre Website nun in einem Webbrowser auf.
 
-![Web page with JavaScript running](images/static_website_installation_cecil_api_call06.png){.thumbnail}
+![Web page with JavaScript running](/pages/assets/screens/other/browsers/web-pages/static_website_installation_cecil_api_call06.png){.thumbnail}
 
 Klicken Sie auf "Change City" und geben Sie den Namen einer Stadt ein:
 
-![Select a new city](images/static_website_installation_cecil_api_call07.png){.thumbnail}
+![Select a new city](/pages/assets/screens/other/browsers/web-pages/static_website_installation_cecil_api_call07.png){.thumbnail}
 
-![Updated](images/static_website_installation_cecil_api_call08.png){.thumbnail}
+![Updated](/pages/assets/screens/other/browsers/web-pages/static_website_installation_cecil_api_call08.png){.thumbnail}
 
 ### Fazit
 
@@ -256,4 +256,4 @@ Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

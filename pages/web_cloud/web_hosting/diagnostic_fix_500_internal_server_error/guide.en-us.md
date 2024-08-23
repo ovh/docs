@@ -8,7 +8,7 @@ updated: 2023-11-22
 
 The "500 Internal Server Error" can affect your entire website or only parts of it. It can be permanent, appear sporadically, or result in a blank page.
 
-![error500](images/http-500.png){.thumbnail}
+![error500](/pages/assets/screens/other/browsers/errors/http-500.png){.thumbnail}
 
 These errors may also come from updates carried out **automatically** by components of your website and therefore occur without any action taken on your side.
 
@@ -113,4 +113,4 @@ If your website uses a database, read our guide [Importing a backup into a Web H
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

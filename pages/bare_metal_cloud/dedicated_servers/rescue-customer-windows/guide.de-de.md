@@ -14,7 +14,7 @@ Der Modus *rescue-customer-windows* ist ein von OVHcloud zur Verfügung gestellt
 
 Der Rescue-Modus ist generell für folgende Aufgaben einzusetzen:
 
-- [Administrator-Passwort zurücksetzen](/pages/bare_metal_cloud/dedicated_servers/changing-admin-password-on-windows)
+- [Administrator-Passwort zurücksetzen](/pages/bare_metal_cloud/dedicated_servers/rcw-changing-admin-password-on-windows)
 - Reparatur eines beschädigten Betriebssystems
 - Korrektur einer fehlerhaften Konfiguration einer Software-Firewall
 

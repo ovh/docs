@@ -59,7 +59,7 @@ Aceda à [Área de Cliente OVHcloud](/links/manager), na secção `Web Cloud`{.a
 
 No separador `Informações gerais`{.action}, aceda à secção **Subscrição** no canto inferior direito. Clique em `...`{.action} à frente de **Contactos** e, a seguir, em `Mudar de proprietário`{.action}.
 
-![alteração do proprietário](images/change-domain-name-holder.png){.thumbnail}
+![alteração do proprietário](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/change-domain-name-holder.png){.thumbnail}
 
 > [!warning]
 >
@@ -70,7 +70,7 @@ No separador `Informações gerais`{.action}, aceda à secção **Subscrição**
 
 Irá surgir uma nova janela do seu browser com todos os domínios elegíveis para a mudança de proprietário. Selecione um domínio na lista selecionando a opção situada à esquerda. Esta etapa pode igualmente ser utilizada para lançar uma operação agrupada: é possível iniciar uma mudança de proprietário para vários nomes de domínio de cada vez, por exemplo para mudar o proprietário de todos os domínios *.ovh*. Depois de fazer as suas escolhas, clique em `Continuar`{.action}.
 
-![alteração do proprietário](images/available-domains.png){.thumbnail}
+![alteração do proprietário](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/available-domains.png){.thumbnail}
 
 No formulário dos detalhes do proprietário, queira introduzir informações válidas em todos os campos obrigatórios. Tenha cuidado com os erros de introdução e, sempre que possível, utilize [caracteres ASCII](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm). Tenha em conta que qualquer informação incorreta ou falsa pode provocar um erro técnico e, por conseguinte, um atraso no conjunto do processo de intercâmbio.
 
@@ -98,7 +98,7 @@ Se precisar de atualizar algumas informações secundárias como o número de te
 
 Na secção **Subscrição** do separador `Informações gerais`{.action}, clique em `...`{.action} em **Contactos** e, a seguir, em `Atualizar as informações do proprietário`{.action}.
 
-![alteração do proprietário](images/refresh-owner-information.png){.thumbnail}
+![alteração do proprietário](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/refresh-owner-information.png){.thumbnail}
 
 Para esta operação, não precisa de confirmar as modificações por e-mail.
 
@@ -110,4 +110,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 
+Fale com nossa [comunidade de utilizadores](/links/community). 

@@ -1,6 +1,6 @@
 ---
 title: FAQ e-mail OVHcloud
-updated: 2024-06-13
+updated: 2024-06-27
 ---
 
 ## Najczęściej zadawane pytania dotyczące kont e-mail
@@ -59,6 +59,14 @@ Utworzenie adresu e-mail nie jest skomplikowane, ale należy przestrzegać pewny
 > [!warning]
 > Ze względów bezpieczeństwa zalecamy nie używać dwa razy tego samego hasła. Najlepiej wybrać hasło nie mające żadnego związku z Twoimi danymi osobistymi (należy unikać używania imienia, nazwiska, daty urodzenia, etc.) i regularnie je zmieniać.
 
+### Jak odzyskać zapomniane hasło?
+
+Ze względów bezpieczeństwa i prywatności nie jest możliwe **odzyskanie** hasła. Zgodnie z opisem w sekcji "[Zmiana hasła do konta e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)" należy zresetować hasło, jeśli nie jest ono już znane.
+
+> [!primary]
+>
+> Jeśli chcesz zachować hasło, zalecane jest użycie menedżera haseł, takiego jak **Keepass**.
+
 ### Jak ograniczyć ilość otrzymywanego spamu?
 
 Aby ograniczyć liczbę wiadomości-śmieci, możesz skonfigurować filtry dla poczty e-mail (w ofercie MXPlan — „Filtrowanie”). Ich celem jest usunięcie lub przeniesienie tego typu wiadomości do folderu „Spam” w momencie ich odebrania.
@@ -86,10 +94,14 @@ Chcesz zmienić [ofertę e-mail](/links/web/emails) na większą przestrzeń i w
 
 Oferta Office 365 Pro Plus nie zawiera licencji Skype. W ofercie zawarty jest jedynie program Skype for Business.
 
+### Jak mogę przenieść na serwery OVHcloud moje e-maile, stronę WWW, bazę danych i domenę bez przerwy w dostępności usług?
+
+Wszystkie kolejne etapy znajdują się w przewodniku "[Przeniesienie strony WWW i powiązanych z nią usług do OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)".
+
 ## Sprawdź również <a name="go-further"></a>
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Dołącz do [grona naszych użytkowników](/https://community.ovh.com/en/).
+Dołącz do [grona naszych użytkowników](/links/community).

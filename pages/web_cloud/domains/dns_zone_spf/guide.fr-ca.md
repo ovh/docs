@@ -1,6 +1,6 @@
 ---
-title: Configurer un enregistrement SPF sur son nom de domaine
-excerpt: Découvrez comment configurer un enregistrement SPF sur votre nom de domaine chez OVHcloud
+title: Améliorer la sécurité des e-mails via un enregistrement SPF
+excerpt: Découvrez comment configurer un enregistrement SPF sur votre nom de domaine afin d'améliorer la sécurité de vos e-mails
 updated: 2023-08-04
 ---
 
@@ -27,7 +27,7 @@ Vous devrez donc vous assurer de mettre dans l'enregistrement SPF les sources d'
 > - Le serveur sortant **A** (Outgoing Mail Server **A**) étant bien listé dans l'enregistrement SPF, alors l'e-mail sera transmis normalement dans la boite de réception du destinataire.
 > - Le serveur sortant **B** (Outgoing Mail Server **B**) n'étant pas listé dans l'enregistrement SPF, alors l'e-mail envoyé depuis ce serveur sera marqué comme suspect dans la boite mail de réception. Cela peut se traduire par une mention `[SPAM]` dans l'objet de l'e-mail, le placement dans un dossier `Courrier indésirable`, ou une suppression directe, selon les règles du serveur de réception.
 >
-> ![domain](images/spf_records_diagram.png){.thumbnail}
+> ![domain](/pages/assets/schemas/emails/spf_records_diagram.png){.thumbnail}
 
 > [!primary]
 >
@@ -75,7 +75,7 @@ Dans le tableau, pour retrouver la ligne correspondante au SPF OVHcloud, un filt
 > Un SPF se compose toujours de la forme suivante : "v=spf1 `sources` `qualifieur`". Par exemple, le SPF OVHcloud est : "v=spf1 include:mx.ovh.ca ~all".
 >
 
-![domain](images/spf_records_check_OVH_configuration_ca.png){.thumbnail}
+![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_check_OVH_configuration_ca.png){.thumbnail}
 
 ### Configurer l'enregistrement SPF
 
@@ -83,7 +83,7 @@ Pour ajouter un enregistrement SPF dans la configuration OVHcloud de votre nom d
 
 Pour ajouter un enregistrement SPF, cliquez sur `Ajouter une entrée`{.action}.
 
-![domain](images/spf_records_add_entry_step1.png){.thumbnail}
+![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_add_entry_step1.png){.thumbnail}
 
 Dans la fenêtre qui s’affiche, plusieurs enregistrements DNS vous sont proposés. Concernant l’ajout d’un SPF, deux possibilités s’offrent à vous :
 
@@ -91,7 +91,7 @@ Dans la fenêtre qui s’affiche, plusieurs enregistrements DNS vous sont propos
 - [Ajouter un enregistrement SPF](#spfrecord) : pour les utilisateurs ne possédant pas l'intégralité de l'enregistrement. Par exemple, vous disposez uniquement d'une adresse IP ou du nom d'hôte du serveur e-mail.
 - [Ajouter un enregistrement TXT](#txtrecord) : pour les utilisateurs avertis ou disposant déjà de l'enregistrement complet. Par exemple, votre fournisseur de solution e-mail vous transmet la valeur.
 
-![domain](images/spf_records_add_entry.png){.thumbnail}
+![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_add_entry.png){.thumbnail}
 
 #### Utiliser l'enregistrement SPF OVHcloud <a name="spfrecordovhcloud"></a>
 
@@ -104,7 +104,7 @@ Vous avez choisi l'enregistrement `SPF`{.action} et souhaitez appliquer la confi
 
 Cliquez sur le bouton `Utiliser le SPF pour mutualisé OVHcloud`{.action} en haut de la fenêtre d'assistance. Les informations relatives au SPF OVHcloud s'afficheront. Cliquez sur le bouton `Valider`{.action} pour réaliser la modification.
 
-![domain](images/spf_records_add_entry_step2_ca.png){.thumbnail}
+![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_add_entry_step2_ca.png){.thumbnail}
 
 > [!primary]
 >
@@ -119,7 +119,7 @@ L'assistant de configuration vous permettra de personnaliser au fur et à mesure
 
 Nous allons les aborder progressivement.
 
-![domain](images/spf_records_add_entry_personnalize_step1_ca.png){.thumbnail}
+![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_add_entry_personnalize_step1_ca.png){.thumbnail}
 
 |Détails|Description|
 |---|---|
@@ -166,7 +166,7 @@ Pour finaliser l'action, cliquez sur `Suivant`{.action}. Assurez-vous que les in
 > La modification nécessite un temps de propagation de 4 à 24 heures avant d’être pleinement effective.
 >
 
-![domain](images/spf_records_add_TXT_entry_ca.png){.thumbnail}
+![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_add_TXT_entry_ca.png){.thumbnail}
 
 ### Modifier un enregistrement SPF
 
@@ -221,15 +221,15 @@ mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ip6:5555:66a7:88:b999::1000:2233 i
 >
 > Dans l'onglet `Informations générales`{.action}, cliquez sur le `A` et le `AAAA` dans la partie `Diagnostic serveur`. Dans la fenêtre qui s'affiche, relevez la valeur.
 >
-> ![domain](images/spf_records_ip.png){.thumbnail}
+> ![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/general-information/spf_records_ip.png){.thumbnail}
 >
 > Si les pastilles `A` et `AAAA` sont vertes, vous ne verrez pas les adresses IP en cliquant dessus. Vous devrez récupérer celles-ci depuis la zone DNS du nom de domaine attaché à votre plateforme Private Exchange. Pour cela, récupérez le lien du webmail depuis l'onglet `Informations générales`{.action}, dans le cadre `Connexion`.
 >
-> ![domain](images/spf_records_ip2.png){.thumbnail}
+> ![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/general-information/spf_records_ip2.png){.thumbnail}
 >
 > Dirigez-vous ensuite dans la section `Noms de domaine`{.action}, sélectionnez le nom de domaine attaché à votre plateforme Private Exchange, puis cliquez sur l'onglet `Zone DNS`{.action}. Récupérez les adresses IPv4 (enregistrement `A`) et IPv6 (enregistrement `AAAA`) correspondant à l'URL du webmail.
 >
-> ![domain](images/spf_records_ip3.png){.thumbnail}
+> ![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_ip3.png){.thumbnail}
 >
 
 ## Aller plus loin
@@ -238,4 +238,4 @@ mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ip6:5555:66a7:88:b999::1000:2233 i
 
 [Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_edit){.external}.
 
-Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

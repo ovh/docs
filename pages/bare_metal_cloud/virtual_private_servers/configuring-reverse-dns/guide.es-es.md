@@ -20,11 +20,11 @@ La configuración de la resolución **inversa DNS** de un VPS resulta especialme
 
 - Tener un [VPS](https://www.ovhcloud.com/es-es/vps/) en su cuenta de OVHcloud.
 - Un nombre de dominio con su campo `A` que apunta al VPS.
-- Tienes acceso a tu [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Tienes acceso a tu [Panel de configuración de OVHcloud](/links/manager).
 
 ## Procedimiento
 
-Conéctese al [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Bare Metal Cloud`{.action} y haga clic en `IP`{.action} en el menú de la izquierda.
+Conéctese al [Panel de configuración de OVHcloud](/links/manager), acceda a la sección `Bare Metal Cloud`{.action} y haga clic en `IP`{.action} en el menú de la izquierda.
 
 El menú desplegable **Mis direcciones IP públicas y servicios asociados** le permite filtrar sus servicios por categoría.
 

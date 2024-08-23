@@ -42,7 +42,7 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie
 
 Die Tabelle listet alle DNS-Einträge des ausgewählten Domainnamens auf.
 
-![dnszone](images/tab.png){.thumbnail}
+![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/tab-mydomain-anycast.png){.thumbnail}
 
 Jeder DNS-Eintrag kann geändert werden, indem Sie rechts in der Zeile auf den Button `...`{.action} und dann auf `Eintrag bearbeiten`{.action} klicken.
 
@@ -52,36 +52,36 @@ Folgen Sie den in den Tabs aufgeführten Schritten:
 > **Schritt 1**
 >> **A-Eintrag**<br><br>
 >> Um die vorhandenen Einträge vom Typ A zu identifizieren, klicken Sie oben in der Tabelle mit den DNS-Einträgen auf das Filtermenü und wählen Sie `A` aus.<br>
->> ![dnszone](images/filter-a.png){.thumbnail}<br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-a.png){.thumbnail}<br>
 >> - Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile, die Ihrem Domainnamen ohne Subdomain entspricht (Beispiel: `mydomain.ovh.`), und klicken Sie dann auf `Eintrag bearbeiten`{.action}.<br>
 >> - Wenn ein Eintrag für die Subdomain "www" vorhanden ist (Beispiel: `www.mydomain.ovh.`), müssen Sie diesen löschen, damit er nicht mit dem in Schritt 4 angegebenen CNAME-Eintrag in Konflikt steht. Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile für Ihren Domainnamen mit der Subdomain "www." und klicken Sie dann auf `Eintrag löschen`{.action}.<br>
 >> - Wenn Sie noch keinen A-Eintrag haben, klicken Sie auf den Button `Eintrag hinzufügen`{.action} rechts oben und wählen Sie `A`{.action}<br><br>
 >> Lassen Sie das Feld **Subdomain** leer und geben Sie die Shopify IPv4-Adresse `23.227.38.65` in das Feld **Ziel** ein.
->> ![dnszone](images/field-a.png){.thumbnail}<br><br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-to-the-dns-zone-a-shopify.png){.thumbnail}<br><br>
 >> Klicken Sie auf `Weiter`{.action}, bestätigen Sie Ihren A-Eintrag und fahren Sie mit Schritt 2 fort.
 > **Schritt 2**
 >> **AAAA-Eintrag**<br><br>
 >>  Um vorhandene AAAA-Einträge zu identifizieren, klicken Sie oben in der Tabelle mit DNS-Einträgen auf das Filtermenü und wählen Sie `AAAA` aus.<br>
->> ![dnszone](images/filter-aaaa.png){.thumbnail}<br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png){.thumbnail}<br>
 >> - Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile für Ihren Domainnamen ohne Subdomain (Beispiel: `mydomain.ovh.`) und klicken Sie dann auf `Eintrag bearbeiten`{.action}.<br>
 >> - Wenn ein Eintrag für die Subdomain "www" vorhanden ist (Beispiel: `www.mydomain.ovh.`), müssen Sie diesen löschen, damit er nicht mit dem in Schritt 4 angegebenen CNAME-Eintrag in Konflikt steht. Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile für Ihren Domainnamen mit der Subdomain "www" und klicken Sie dann auf `Eintrag löschen`{.action}.<br>
 >> - Wenn Sie noch keinen AAAA-Eintrag haben, klicken Sie auf den Button `Eintrag hinzufügen`{.action} rechts oben und wählen Sie `AAAA`{.action}<br><br>
 >> Lassen Sie das Feld **Subdomain** leer und geben Sie die Shopify IPv6-Adresse `2620:0127:f00f:5::` in das Feld **Ziel** ein.
->> ![dnszone](images/field-aaaa.png){.thumbnail}<br><br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-to-the-dns-zone-aaaa-shopify.png){.thumbnail}<br><br>
 >> Klicken Sie auf `Weiter`{.action}, bestätigen Sie Ihren AAAA-Eintrag und fahren Sie mit Schritt 3 fort.
 > **Schritt 3**
 >> **TXT-Eintrag**<br><br>
 >>  Um vorhandene TXT-Einträge zu identifizieren, klicken Sie oben in der Tabelle mit DNS-Einträgen auf das Filtermenü und wählen Sie `TXT` aus.<br>
->> ![dnszone](images/filter-txt.png){.thumbnail}<br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-txt.png){.thumbnail}<br>
 >> - Wenn TXT-Einträge für den Domainnamen (Beispiel: `mydomain.ovh.`) und die Subdomain "www" (Beispiel: `www.mydomain.ovh.`) vorhanden sind, müssen diese gelöscht werden, damit sie nicht im Konflikt mit dem CNAME-Eintrag stehen, den Sie in Schritt 4 eingeben. Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile für Ihren Domainnamen mit der Subdomain "www" und klicken Sie dann auf `Eintrag löschen`{.action}.<br>
 > **Schritt 4**
 >> **CNAME-Eintrag**<br><br>
 >>  Um vorhandene CNAME-Einträge zu identifizieren, klicken Sie oben in der DNS-Tabelle auf das Filtermenü und wählen Sie `CNAME` aus.<br>
->> ![dnszone](images/filter-cname.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-cname.png){.thumbnail}
 >> - Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile zu Ihrer Subdomain "www" (Beispiel: `mydomain.ovh.`) und klicken Sie dann auf `Eintrag bearbeiten`{.action}.<br>
 >> - Wenn Sie keinen existierenden CNAME-Eintrag haben, klicken Sie auf den Button `Eintrag hinzufügen`{.action} rechts oben und wählen Sie `CNAME`{.action}.
 >> Vervollständigen Sie das Feld **Subdomain** mit dem Wert `www` und geben Sie `shops.myshopify.com.` in das Feld **Ziel** ein.<br>
->> ![dnszone](images/field-cname.png){.thumbnail}<br><br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-to-the-dns-zone-cname-shopify.png){.thumbnail}<br><br>
 >> Klicken Sie auf `Weiter`{.action} und bestätigen Sie Ihren CNAME-Eintrag.
 
 Die DNS-Zone ist nun zur Verwendung mit einem Shopify Hosting konfiguriert.
@@ -98,7 +98,7 @@ Wenn Sie einen E-Mail-Dienst von OVHcloud nutzen oder eines [unserer E-Mail-Ange
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
-[DNS-Server von OVHcloud Domainnamen ändern](/pages/web_cloud/domains/dns_server_general_information)
+[DNS-Server von OVHcloud Domainnamen ändern](/pages/web_cloud/domains/dns_server_edit)
 
 [OVHcloud DNS-Zone für einen Domainnamen erstellen](/pages/web_cloud/domains/dns_zone_create)
 
@@ -110,4 +110,4 @@ Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.
  
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
  
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

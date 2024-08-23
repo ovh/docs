@@ -36,11 +36,11 @@ Para utilizar la opción de geolocalización por IP, conéctese a su [área de c
 Una vez conectado, acceda al apartado `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente en la lista.<br>
 A continuación, abra la pestaña `Multisitio`{.action} y haga clic en el botón `...`{.action} situado a la derecha del dominio de la tabla. Por último, haga clic en `Modificar el dominio`{.action}.
 
-![hosting multisitio](images/modify-a-domain.png){.thumbnail}
+![hosting multisitio](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain.png){.thumbnail}
 
 En la nueva ventana, marque la casilla `IP del país`{.action} para mostrar el menú desplegable.
 
-![geolocación option](images/country-ip-selection.png){.thumbnail}
+![geolocación option](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/country-ip-selection.png){.thumbnail}
 
 Seleccione la dirección IP del país para el que quiere geolocalizar su sitio web, de los 12 países propuestos: *República Checa, Finlandia, Francia, Alemania, Irlanda, Italia, Lituania, Países Bajos, Polonia, Portugal, España, Reino Unido*.
 
@@ -61,4 +61,4 @@ Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con 
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

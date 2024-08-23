@@ -1,6 +1,6 @@
 ---
-title: Konfiguracja rekordu MX
-excerpt: Dowiedz się, jak skonfigurować rekord MX dla Twojej domeny w OVHcloud
+title: "Konfiguracja rekordu MX dla emaili"
+excerpt: "Dowiedz się, jak skonfigurować rekord MX dla Twojej domeny w OVHcloud"
 updated: 2024-02-29
 ---
 
@@ -27,7 +27,7 @@ Rekord MX umożliwia powiązanie domeny z serwerem platformy e-mail. Jest to nie
 >
 > - Jeśli Twoja domena jest zarejestrowana w OVHcloud, możesz sprawdzić, czy używa ona konfiguracji OVHcloud w Twoim [Panelu klienta](/links/manager). Po wybraniu domeny w zakładce `Informacje ogólne`{.action} w sekcji `Serwery DNS`{.action}, jeśli pozycja `Aktywne` znajduje się pod adresem "**Serwery DNS**", korzystasz z serwerów DNS OVHcloud.
 >
-> ![email](images/dns-servers-enabled.png){.thumbnail}
+> ![email](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/dns-servers-enabled.png){.thumbnail}
 
 ## W praktyce
 
@@ -40,7 +40,7 @@ Gdy adres **sender@otherdomain.ovh** wysyła wiadomość na adres **contact@modo
 - **(1)** odpytywanie strefy DNS domeny **mydomain.ovh** i odczytywanie rekordów **MX**.
 - **(2)** Prześlij wiadomość e-mail na adres URL odczytanego rekordu **MX**.
 
-![email](images/mx-dns-resolution.png){.thumbnail}
+![email](/pages/assets/schemas/emails/mx-dns-resolution.png){.thumbnail}
 
 Wiadomość e-mail zostanie wysłana na adres docelowy **mx0.mail.ovh.net** poprzedzony wartością **0**. Ta wartość jest nazywana priorytetem. Najniższa jest odpytywana w pierwszej kolejności, a najwyższa w ostatniej. Oznacza to, że obecność wielu rekordów może zapobiec brakowi odpowiedzi rekordu MX o najniższym priorytecie.
 
@@ -74,14 +74,14 @@ W tabeli, która się wyświetli znajdziesz konfigurację Twojej domeny OVHcloud
 W pierwszym kroku sprawdź, czy jakieś rekordy MX zostały już wcześniej dodane do konfiguracji DNS OVHcloud Twojej domeny. Pomoże Ci w tym lista filtrów znajdująca się nad tabelą Twojej strefy DNS.<br>
 Wybierz typ **MX**, a następnie potwierdź, aby wyświetlić tylko wpisy DNS MX strefy DNS. Pomóż w zrzucie ekranu poniżej.
 
-![dnsmxrecord](images/mx-entries-research.png){.thumbnail}
+![dnsmxrecord](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/mx-entries-research.png){.thumbnail}
 
 - Jeśli rekordy MX już istnieją i chcesz je zmienić, kliknij przycisk `...`{.action} po prawej stronie każdego wiersza w tabeli odpowiadającego rekordowi, a następnie kliknij `Zmień rekord`{.action}.
 - Jeśli rekord MX nie jest obecny, kliknij przycisk `Dodaj rekord`{.action} po prawej stronie tabeli i wybierz `MX`{.action}. Uzupełnij wymagane informacje w zależności od wybranego rozwiązania poczty elektronicznej:
 
 **Jeśli dysponujesz rozwiązaniem e-mail OVHcloud**, zapoznaj się z informacjami podanymi w etapie "[Wiedza na temat konfiguracji MX OVHcloud](#mxovhcloud)".
 
-![dnsmxrecord](images/modify-a-dns-zone-record-mx-step-1.png){.thumbnail}
+![dnsmxrecord](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/modify-a-dns-zone-record-mx-step-1.png){.thumbnail}
 
 Po wpisaniu informacji zakończ ostatni etap, następnie kliknij `Zatwierdź`{.action}.
 
@@ -98,12 +98,12 @@ Po wpisaniu informacji zakończ ostatni etap, następnie kliknij `Zatwierdź`{.a
 
 [Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-[Konfiguracja rekordu SPF w domenie](/pages/web_cloud/domains/dns_zone_spf)
+[Poprawa bezpieczeństwa e-maili poprzez rekord SPF](/pages/web_cloud/domains/dns_zone_spf)
 
-[Skonfiguruj rekord DKIM](/pages/web_cloud/domains/dns_zone_dkim)
+[Poprawa bezpieczeństwa e-maili poprzez rekord DKIM](/pages/web_cloud/domains/dns_zone_dkim)
 
 Jeśli potrzebujesz specjalistycznych usług (SEO, programowanie, etc.), skontaktuj się z [partnerami OVHcloud](/links/partner).
 
 Jeśli chcesz uzyskać wsparcie w zakresie użytkowania i konfiguracji Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami wsparcia](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

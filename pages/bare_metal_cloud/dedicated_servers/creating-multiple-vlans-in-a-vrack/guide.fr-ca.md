@@ -215,4 +215,4 @@ Pour finir, cliquez sur le bouton `OK`{.action} pour sauvegarder les modificatio
 
 [Configurer plusieurs serveurs dédiés dans le vRack](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server){.external}
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -53,14 +53,14 @@ Se mostrará una tabla con las redirecciones activas para el dominio. Puede gest
 
 Haga clic en el botón `Añadir una redirección`{.action}.
 
-![Presentación del menú redirección](images/add-a-redirection.png){.thumbnail}
+![Presentación del menú redirección](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection.png){.thumbnail}
 
 Hay tres opciones de redirección disponibles en el [área de cliente de OVHcloud](/links/manager), cada una de las cuales se compone de **5 etapas** sucesivas. 
 
 > La pestaña `Redirección`{.action} presenta una cuarta opción que permite hacer que su dominio apunte rápidamente a los registros DNS A, AAAA y CNAME.<br>
 > Debido a que no se trata de una "redirección", esta opción no se explicará en esta guía.
 >
-> Para más información sobre los registros DNS, consulte nuestra documentación sobre los [registros DNS](/pages/web_cloud/domains/dns_zone_edit).
+> Para más información sobre los registros DNS, consulte nuestra documentación sobre los [registros DNS](/pages/web_cloud/domains/dns_zone_records).
 >
 
 A continuación se describen los tres tipos de redirecciones, que se explican paso a paso.
@@ -75,7 +75,7 @@ Esta opción permite, una vez introducido el dominio redirigido, mostrar el domi
 
 - **Ejemplo**: si redirige `domain1.tld` hacia `domain2.tld`, se mostrará `domain2.tld` en la barra de direcciones de su navegador.
 
-![Gif1](images/visible-redirection.gif){.thumbnail}
+![Gif1](/pages/assets/schemas/domains/visible-redirection.gif){.thumbnail}
 
 > Esta redirección "estándar" devolverá un código HTTP 301.
 
@@ -89,7 +89,7 @@ Esta opción permite, una vez introducido el dominio redirigido, mostrar el domi
 >>
 >> La casilla `Redirigir también`{.action} puede estar marcada para redirigir igualmente su subdominio en `www` hacia el mismo destino que elija para su dominio/subdominio.
 >>
->> ![Etapa 1](images/add-a-redirection-step-1.png){.thumbnail}
+>> ![Etapa 1](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-1.png){.thumbnail}
 >>
 >> Haga clic en `Siguiente`{.action} para ir al etapa 2.
 >>
@@ -97,7 +97,7 @@ Esta opción permite, una vez introducido el dominio redirigido, mostrar el domi
 >>
 >> Seleccione `Hacia una dirección Web`{.action}.
 >>
->> ![Etapa 2](images/add-a-redirection-step-2-to-a-web-adress.png){.thumbnail}
+>> ![Etapa 2](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-2-to-a-web-adress.png){.thumbnail}
 >>
 >> Haga clic en `Siguiente`{.action} para ir al etapa 3.
 >>
@@ -105,7 +105,7 @@ Esta opción permite, una vez introducido el dominio redirigido, mostrar el domi
 >>
 >> Seleccione `Con una redirección visible`{.action} de las dos opciones indicadas.
 >>
->> ![Etapa 3](images/add-a-redirection-step-3-a-visible-redirection.png){.thumbnail}
+>> ![Etapa 3](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-3-a-visible-redirection.png){.thumbnail}
 >>
 >> Haga clic en `Siguiente`{.action} para ir al etapa 4.
 >>
@@ -113,7 +113,7 @@ Esta opción permite, una vez introducido el dominio redirigido, mostrar el domi
 >>
 >> Seleccione `Permanente (301)`{.action} de las dos opciones indicadas y, seguidamente, introduzca el dominio o la URL de destino de su redirección en el formulario `Dirección web`{.action} que aparece.
 >>
->> ![Etapa 4](images/add-a-redirection-step-4-permanent.png){.thumbnail}
+>> ![Etapa 4](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-4-permanent.png){.thumbnail}
 >>
 >> Haga clic en `Siguiente`{.action} para pasar a la etapa 5.
 >>
@@ -121,7 +121,7 @@ Esta opción permite, una vez introducido el dominio redirigido, mostrar el domi
 >>
 >> En esta última etapa, asegúrese de que la información mostrada es correcta.
 >>
->> ![Etapa 5](images/add-a-redirection-step-5-permanent.png){.thumbnail}
+>> ![Etapa 5](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-5-permanent.png){.thumbnail}
 >>
 >> Haga clic en `Confirmar`{.action} para validar su configuración.
 >> 
@@ -142,7 +142,7 @@ En efecto, el posicionamiento en los motores de búsqueda es menos potente que c
 
 - **Ejemplo**: si redirige `domain1.tld` hacia `domain2.tld`, se mostrará `domain2.tld` en la barra de direcciones de su navegador.
 
-![Gif1](images/visible-redirection.gif){.thumbnail}
+![Gif1](/pages/assets/schemas/domains/visible-redirection.gif){.thumbnail}
 
 > Esta redirección devolverá un código HTTP 302.
 
@@ -156,7 +156,7 @@ En efecto, el posicionamiento en los motores de búsqueda es menos potente que c
 >>
 >> La casilla `Redirigir también`{.action} puede estar marcada para redirigir igualmente su subdominio en `www` hacia el mismo destino que elija para su dominio/subdominio.
 >>
->> ![Etapa 1](images/add-a-redirection-step-1.png){.thumbnail}
+>> ![Etapa 1](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-1.png){.thumbnail}
 >>
 >> Haga clic en `Siguiente`{.action} para ir al etapa 2.
 >>
@@ -164,7 +164,7 @@ En efecto, el posicionamiento en los motores de búsqueda es menos potente que c
 >>
 >> Seleccione `Hacia una dirección Web`{.action}.
 >>
->> ![Etapa 2](images/add-a-redirection-step-2-to-a-web-adress.png){.thumbnail}
+>> ![Etapa 2](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-2-to-a-web-adress.png){.thumbnail}
 >>
 >> Haga clic en `Siguiente`{.action} para ir al etapa 3.
 >>
@@ -172,7 +172,7 @@ En efecto, el posicionamiento en los motores de búsqueda es menos potente que c
 >>
 >> Seleccione `Con una redirección visible`{.action} de las dos opciones indicadas.
 >>
->> ![Etapa 3](images/add-a-redirection-step-3-a-visible-redirection.png){.thumbnail}
+>> ![Etapa 3](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-3-a-visible-redirection.png){.thumbnail}
 >>
 >> Haga clic en `Siguiente`{.action} para ir al etapa 4.
 >>
@@ -180,7 +180,7 @@ En efecto, el posicionamiento en los motores de búsqueda es menos potente que c
 >>
 >> Seleccione `Temporal (302)`{.action} de las dos opciones indicadas y luego introduzca el dominio o la URL de destino de su redirección en el formulario `Dirección web`{.action} que aparece.
 >>
->> ![Etapa 4](images/add-a-redirection-step-4-temporary.png){.thumbnail}
+>> ![Etapa 4](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-4-temporary.png){.thumbnail}
 >>
 >> Haga clic en `Siguiente`{.action} para pasar a la etapa 5.
 >>
@@ -188,7 +188,7 @@ En efecto, el posicionamiento en los motores de búsqueda es menos potente que c
 >>
 >> En esta última etapa, asegúrese de que la información mostrada es correcta.
 >>
->> ![Etapa 5](images/add-a-redirection-step-5-temporary.png){.thumbnail}
+>> ![Etapa 5](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-5-temporary.png){.thumbnail}
 >>
 >> Haga clic en `Confirmar`{.action} para validar su configuración.
 >> 
@@ -207,7 +207,7 @@ Esta redirección permite, una vez introducido el dominio redirigido, dejarlo vi
 
 - **Ejemplo**: si redirige `domain1.tld` hacia `domain2.tld`, se mostrará `domain1.tld` en la barra de direcciones de su navegador.
 
-![Gif2](images/invisible-redirection.gif){.thumbnail}
+![Gif2](/pages/assets/schemas/domains/invisible-redirection.gif){.thumbnail}
 
 La redirección invisible funciona con una etiqueta HTML *iFrame*. que permite que el dominio redirigido integre en su propia página HTML el contenido de la otra página correspondiente al dominio de destino.
 
@@ -231,7 +231,7 @@ Esta encapsulación permite impedir que los visitantes del sitio web visualicen 
 >>
 >> La casilla `Redirigir también`{.action} puede estar marcada para redirigir igualmente su subdominio en `www` hacia el mismo destino que elija para su dominio/subdominio.
 >>
->> ![Etapa 1](images/add-a-redirection-step-1.png){.thumbnail}
+>> ![Etapa 1](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-1.png){.thumbnail}
 >>
 >> Haga clic en `Siguiente`{.action} para ir al etapa 2.
 >>
@@ -239,7 +239,7 @@ Esta encapsulación permite impedir que los visitantes del sitio web visualicen 
 >>
 >> Seleccione `Hacia una dirección Web`{.action}.
 >>
->> ![2](images/add-a-redirection-step-2-to-a-web-adress.png){.thumbnail}
+>> ![2](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-2-to-a-web-adress.png){.thumbnail}
 >>
 >> Haga clic en `Siguiente`{.action} para ir al etapa 3.
 >>
@@ -247,7 +247,7 @@ Esta encapsulación permite impedir que los visitantes del sitio web visualicen 
 >>
 >> Seleccione `Con una redirección invisible`{.action} de las dos opciones indicadas.
 >>
->> ![Etapa 3](images/add-a-redirection-step-3-with-an-invisible-redirection.png){.thumbnail}
+>> ![Etapa 3](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-3-with-an-invisible-redirection.png){.thumbnail}
 >>
 >> Haga clic en `Siguiente`{.action} para ir al etapa 4.
 >>
@@ -255,7 +255,7 @@ Esta encapsulación permite impedir que los visitantes del sitio web visualicen 
 >>
 >> Seleccione `Temporal (iframe)`{.action} de las dos opciones indicadas e introduzca el dominio o la URL de destino de su redirección en el formulario `Dirección web`{.action} que aparece.
 >>
->> ![Etapa 4](images/add-a-redirection-step-4-iframe.png){.thumbnail}
+>> ![Etapa 4](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-4-iframe.png){.thumbnail}
 >>
 >> Tres parámetros opcionales están a su disposición en esta etapa :
 >>
@@ -269,7 +269,7 @@ Esta encapsulación permite impedir que los visitantes del sitio web visualicen 
 >>
 >> En esta última etapa, asegúrese de que la información mostrada es correcta.
 >>
->> ![Etapa 5](images/add-a-redirection-step-5-iframe.png){.thumbnail}
+>> ![Etapa 5](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-5-iframe.png){.thumbnail}
 >>
 >> Haga clic en `Confirmar`{.action} para validar su configuración.
 >> 
@@ -398,4 +398,4 @@ Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con 
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones (pestañas de soporte)(/links/support).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

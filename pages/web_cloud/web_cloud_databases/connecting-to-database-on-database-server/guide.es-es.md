@@ -40,11 +40,11 @@ Conéctese a su [área de cliente de OVHcloud](/links/manager){.external} y acce
 
 En la pestaña `Información general`, encontrará el enlace de acceso a phpMyAdmin en el recuadro **"Administración de la base de datos"**, bajo la indicación "Interfaz de usuario".
 
-![web-cloud-databases](images/database-administration.png){.thumbnail}
+![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/database-administration.png){.thumbnail}
 
 Acceda a la página de conexión de phpMyAdmin.
 
-![web-cloud-databases](images/pma-login-web-cloud-db.png){.thumbnail}
+![web-cloud-databases](/pages/assets/screens/other/web-tools/phpmyadmin/pma-login-web-cloud-db.png){.thumbnail}
 
 Introduzca los siguientes datos para conectarse a la base de datos:
 
@@ -61,7 +61,7 @@ Introduzca los siguientes datos para conectarse a la base de datos:
 
 Si la conexión se ha completado, se mostrará la siguiente página de phpMyAdmin.
 
-![web-cloud-databases](images/pma-main-page-web-cloud-db.png){.thumbnail}
+![web-cloud-databases](/pages/assets/screens/other/web-tools/phpmyadmin/pma-main-page-web-cloud-db.png){.thumbnail}
 
 > [!warning]
 >
@@ -107,7 +107,7 @@ mysql --host=servidor --user=usuario --port=puerto --contraseña nombre_de_la_BD
 
 - Ejecute SQuirreL SQL, abra el menú `{.action}Aliases`{.action} y haga clic en +.
 
-![](images/aliases.png){.thumbnail} ejecutar SQuirreL SQL
+![](/pages/assets/screens/other/web-tools/squirrel/aliases.png){.thumbnail} ejecutar SQuirreL SQL
 
 - Cumplimente los campos como se indica a continuación y acepte con el botón `{.action}OK:
     - **Name**: Indique un nombre.
@@ -116,15 +116,15 @@ mysql --host=servidor --user=usuario --port=puerto --contraseña nombre_de_la_BD
     - **User name**: Indique el nombre de usuario.
     - **Password**: Indique la contraseña.
 
-![](images/add-alias.png){.thumbnail} conexión a la base de datos
+![](/pages/assets/screens/other/web-tools/squirrel/add-alias.png){.thumbnail} conexión a la base de datos
 
 - Confirme con el botón `{.action}Connect.
 
-![](images/connect-to-mysql.png){.thumbnail} confirmación de la conexión
+![](/pages/assets/screens/other/web-tools/squirrel/connect-to-mysql.png){.thumbnail} confirmación de la conexión
 
 Se establecerá la conexión a la base de datos:
 
-![](images/general-dashboard.png){.thumbnail} conexión a la base de datos
+![](/pages/assets/screens/other/web-tools/squirrel/general-dashboard.png){.thumbnail} conexión a la base de datos
 
 ##### 3.4. Conexión mediante phpMyAdmin
 
@@ -166,7 +166,7 @@ mysql --host=servidor --user=nombre_de_usuario --port=puerto --password=contrase
 
 - Ejecute SQuirreL SQL, abra el menú `{.action}Aliases`{.action} y haga clic en +.
 
-![](images/aliases.png){.thumbnail} ejecutar SQuirreL SQL
+![](/pages/assets/screens/other/web-tools/squirrel/aliases.png){.thumbnail} ejecutar SQuirreL SQL
 
 - Cumplimente los campos como se indica a continuación y acepte con el botón `{.action}OK:
     - **Name**: Indique un nombre.
@@ -175,15 +175,15 @@ mysql --host=servidor --user=nombre_de_usuario --port=puerto --password=contrase
     - **User name**: Indique el nombre de usuario.
     - **Password**: Indique la contraseña.
 
-![](images/add-alias.png){.thumbnail} conexión a la base de datos
+![](/pages/assets/screens/other/web-tools/squirrel/add-alias.png){.thumbnail} conexión a la base de datos
 
 - Confirme con el botón `{.action}Connect.
 
-![](images/connect-to-mysql.png){.thumbnail} confirmación de la conexión
+![](/pages/assets/screens/other/web-tools/squirrel/connect-to-mysql.png){.thumbnail} confirmación de la conexión
 
 Se establecerá la conexión a la base de datos:
 
-![](images/general-dashboard.png){.thumbnail} conexión a la base de datos
+![](/pages/assets/screens/other/web-tools/squirrel/general-dashboard.png){.thumbnail} conexión a la base de datos
 
 ## Más información
 
@@ -191,4 +191,4 @@ Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con 
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

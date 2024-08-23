@@ -56,7 +56,7 @@ Wpisz swoją domenę na pasku wyszukiwania przeglądarki internetowej.
 
 Jeśli pliki źródłowe WordPress zostały poprawnie umieszczone w katalogu głównym, pojawi się strona WordPress pozwalająca na wybór języka:
 
-![hosting](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/wordpress/installation-select-language.png){.thumbnail}
+![hosting](/pages/assets/screens/other/cms/wordpress/installation-select-language.png){.thumbnail}
 
 Wybierz język strony i kliknij na `Continue`{.action}.
 
@@ -64,13 +64,13 @@ Wybierz język strony i kliknij na `Continue`{.action}.
 
 WordPress poprosi Cię o pobranie danych do logowania do bazy danych:
 
-![hosting](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/wordpress/installation-start.png){.thumbnail}
+![hosting](/pages/assets/screens/other/cms/wordpress/installation-start.png){.thumbnail}
 
 Przygotuj dane do logowania do bazy danych (w razie potrzeby sprawdź **etap 1.4** tutoriala na stronie [ręczna instalacja CMS](/pages/web_cloud/web_hosting/cms_manual_installation)), następnie kliknij na `Let's go !`{.action}, aby kontynuować.
 
 Pojawi się następująca strona:
 
-![hosting](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/wordpress/installation-config-db.png){.thumbnail}
+![hosting](/pages/assets/screens/other/cms/wordpress/installation-config-db.png){.thumbnail}
 
 Wpisz wymagane informacje dotyczące bazy danych:
 
@@ -96,7 +96,7 @@ Kliknij polecenie `Submit`{.action}, aby potwierdzić dane do logowania do bazy 
 
 Jeśli wszystko przebiegło pomyślnie, wyświetli się następna strona:
 
-![hosting](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/wordpress/installation-step-after-db-1.png){.thumbnail}
+![hosting](/pages/assets/screens/other/cms/wordpress/installation-step-after-db-1.png){.thumbnail}
 
 Kliknij polecenie `Run the installation`{.action}.
 
@@ -106,7 +106,7 @@ Po zainstalowaniu modułu WordPress pojawi się problem z informacjami o przysz�
 
 Następnie będziesz mógł przejść do panelu administracyjnego, znanego jako "Back-office", Twojego CMS WordPress.
 
-![hosting](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/wordpress/installation-config-admin-user.png){.thumbnail}
+![hosting](/pages/assets/screens/other/cms/wordpress/installation-config-admin-user.png){.thumbnail}
 
 Wpisz wymagane informacje:
 
@@ -122,7 +122,7 @@ Kliknij polecenie `Install WordPress`{.action} jak tylko wszystko jest poprawnie
 
 Instalacja zostanie zakończona, jeśli pojawi się następna strona:
 
-![hosting](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/wordpress/installation-successfull.png){.thumbnail}
+![hosting](/pages/assets/screens/other/cms/wordpress/installation-successfull.png){.thumbnail}
 
 Teraz kliknij przycisk `Log in`{.action}, aby przetestować dostęp do "Back-office" Twojego nowego CMS WordPress za pomocą identyfikatorów administratora utworzonych przed etapem 3.3.
 
@@ -135,7 +135,7 @@ Teraz kliknij przycisk `Log in`{.action}, aby przetestować dostęp do "Back-off
 
 Po zalogowaniu pojawi się następująca strona:
 
-![hosting](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/wordpress/admin-interface.png){.thumbnail}
+![hosting](/pages/assets/screens/other/cms/wordpress/admin-interface.png){.thumbnail}
 
 > [!success]
 >
@@ -150,4 +150,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 
+Dołącz do [grona naszych użytkowników](/links/community). 

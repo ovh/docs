@@ -57,7 +57,7 @@ Wpisz nazwę domeny na pasku wyszukiwania przeglądarki internetowej.
 
 Jeśli pliki źródłowe Drupal zostały poprawnie umieszczone w katalogu głównym, wyświetli się strona z listą wyboru języka dla Drupal:
 
-![Drupal instalacja step 1](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/drupal/install-language-1.png){.thumbnail}
+![Drupal instalacja step 1](/pages/assets/screens/other/cms/drupal/install-language-1.png){.thumbnail}
 
 Wybierz język strony i kliknij na `Save and Continue`{.action}.
 
@@ -69,7 +69,7 @@ Drupal oferuje kilka poziomów instalacji:
 - wersja minimalna
 - wersja prezentacji 
 
-![Drupal instalacja step 2](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/drupal/install-profil-2.png){.thumbnail}
+![Drupal instalacja step 2](/pages/assets/screens/other/cms/drupal/install-profil-2.png){.thumbnail}
 
 Zalecamy przeprowadzenie instalacji **Standard**. Następnie kliknij polecenie `Save and Continue`{.action}.
 
@@ -77,7 +77,7 @@ Zalecamy przeprowadzenie instalacji **Standard**. Następnie kliknij polecenie `
 
 Wpisz wymagane informacje dotyczące bazy danych:
 
-![Drupal instalacja step 3](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/drupal/install-db-config-3.png){.thumbnail}
+![Drupal instalacja step 3](/pages/assets/screens/other/cms/drupal/install-db-config-3.png){.thumbnail}
 
 Przygotuj dane dostępowe do bazy danych (w razie potrzeby sprawdź **etap 1.4** w przewodniku dotyczącym [ręczna instalacja CMS](/pages/web_cloud/web_hosting/cms_manual_installation).
 
@@ -108,13 +108,13 @@ Kliknij polecenie `Save and Continue`{.action}.
 
 Jeśli wszystko zostało poprawnie zrealizowane, Drupal zostanie uruchomiony:
 
-![Drupal instalacja step 4](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/drupal/install-4.png){.thumbnail}
+![Drupal instalacja step 4](/pages/assets/screens/other/cms/drupal/install-4.png){.thumbnail}
 
 #### 2.4 - Skonfiguruj informacje o stronie WWW i dostęp "Administrator"
 
 Po zakończeniu poprzedniego etapu wyświetli się następująca strona:
 
-![Drupal instalacja step 5-1](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/drupal/install-configure-site-5-1.png){.thumbnail}
+![Drupal instalacja step 5-1](/pages/assets/screens/other/cms/drupal/install-configure-site-5-1.png){.thumbnail}
 
 Wpisz wymagane elementy:
 
@@ -128,7 +128,7 @@ Wpisz wymagane elementy:
 
 Następnie przejdź do dołu strony:
 
-![Drupal instalacja step 5-1](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/drupal/install-configure-site-5-2.png){.thumbnail}
+![Drupal instalacja step 5-1](/pages/assets/screens/other/cms/drupal/install-configure-site-5-2.png){.thumbnail}
 
 - *Email address*: wprowadź Twój adres e-mail. W idealnym przypadku wprowadź ten sam adres, który został wskazany powyżej w formularzu *Adres e-mail strony*.
 
@@ -140,7 +140,7 @@ Kliknij polecenie `Save and Continue`{.action}.
 
 Jeśli wszystko przebiegło pomyślnie, wyświetli się następna strona:
 
-![Drupal instalacja step 6](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/drupal/install-ending-6.png){.thumbnail}
+![Drupal instalacja step 6](/pages/assets/screens/other/cms/drupal/install-ending-6.png){.thumbnail}
 
 > [!success]
 >
@@ -155,4 +155,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
  
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
  
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

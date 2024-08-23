@@ -1,7 +1,7 @@
 ---
-title: 'Configurar la red en Windows Server con Hyper-V en las gamas High Grade & SCALE'
-excerpt: 'Cómo configurar la red en Windows Server con Hyper-V en las gamas High Grade & SCALE'
-updated: 2023-08-31
+title: 'Configurar la red en Windows Server con Hyper-V'
+excerpt: 'Cómo configurar la red en Windows Server con Hyper-V'
+updated: 2024-08-07
 ---
 
 > [!primary]
@@ -10,15 +10,25 @@ updated: 2023-08-31
 
 ## Objetivo
 
+**Esta guía explica cómo configurar la red en Windows Server con Hyper-V.**
+
+### Gamas High Grade y SCALE
+
 En las gamas High Grade & SCALE, no es posible el funcionamiento de las Additional IP en modo *bridged* (a través de MAC Virtuales). Por lo tanto, es necesario configurar las Additional IP en modo enrutado o a través del vRack.
 
-**Esta guía explica cómo configurar la red en Windows Server con Hyper-V.**
+### Gama Advance
+
+Debido a que los servidores Advance sólo disponen de dos interfaces de red, es recomendable configurar el servidor en modo privado creando un teaming con las dos interfaces conectadas al vRack. Un segundo servidor puede servir de puerta de enlace a internet con una interfaz conectada a la red privada y otra conectada a la red pública.
+
+Para este tipo de configuración, es posible utilizar la funcionalidad IP en alias descrita en el artículo [Configurar una IP como alias](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing).
+
+Esta configuración también puede implementarse en cada uno de los servidores Hyper-V (una interfaz privada o una interfaz pública en cada servidor) y no puede configurarse la agregación de puertos. No obstante, en este caso, la red privada dispondrá de menos ancho de banda y ninguna alta disponibilidad de las interfaces de red.
 
 ## Requisitos
 
 * Tener un [servidor dedicado de OVHcloud.](https://www.ovhcloud.com/es/bare-metal/)
 * Disponer de una dirección [Additional IP.](https://www.ovhcloud.com/es/bare-metal/ip/)
-* Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+* Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 > [!warning]
 >
@@ -64,7 +74,7 @@ En este ejemplo:
 
 > [!primary]
 >
-> Compruebe que la configuración es similar. Si dispone de información relativa a las MAC e interfaces públicas o privadas, puede hacerlo desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) o a través de la API de OVHcloud.
+> Compruebe que la configuración es similar. Si dispone de información relativa a las MAC e interfaces públicas o privadas, puede hacerlo desde el [área de cliente de OVHcloud](/links/manager) o a través de la API de OVHcloud.
 >
 
 Vuelva al servidor, acceda a `Local Server`{.action} y haga clic en `Disabled`{.action} junto al NIC Teaming.
@@ -242,7 +252,7 @@ network:
 - Haber elegido un rango de direcciones IP privadas.
 - Tener un [servidor compatible con el vRack](https://www.ovhcloud.com/es/bare-metal/){.external}.
 - Haber activado un servicio [vRack]https://www.ovhcloud.com/es/network/vrack/){.external}.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
 
 #### Explicaciones
 
@@ -273,7 +283,7 @@ En este ejemplo:
 
 > [!primary]
 >
-> Compruebe que la configuración es similar. Si dispone de información relativa a las MAC e interfaces públicas o privadas, puede hacerlo desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) o a través de la API de OVHcloud.
+> Compruebe que la configuración es similar. Si dispone de información relativa a las MAC e interfaces públicas o privadas, puede hacerlo desde el [área de cliente de OVHcloud](/links/manager) o a través de la API de OVHcloud.
 >
 
 Vuelva al servidor, acceda a `Local Server`{.action} y haga clic en `Disabled`{.action} junto al NIC Teaming.

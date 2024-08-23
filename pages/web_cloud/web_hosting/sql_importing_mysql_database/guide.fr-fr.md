@@ -48,13 +48,13 @@ Pour effectuer la manipulation, connectez-vous à votre [espace client OVHcloud]
 
 Le tableau qui s'affiche contient toutes les bases de données créées dans le cadre de votre offre d'hébergement web. Dès lors, cliquez sur les trois points à droite de la base de données que vous souhaitez restaurer à une date antérieure, puis sur `Restaurer une sauvegarde`{.action}. Sachez que cette action remplacera le contenu actuel de la base de données par celui de la sauvegarde.
 
-![databaseimport](images/restore-backup.png){.thumbnail}
+![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/restore-backup.png){.thumbnail}
 
 Toutes les sauvegardes disponibles de la base de données sélectionnée s'affichent alors. Vous pourrez y visionner la date précise des sauvegardes ainsi que la date à laquelle ces dernières seront supprimées de l'outil d'OVHcloud.
 
 Cliquez sur les trois points à droite de la sauvegarde que vous souhaitez restaurer, puis sur `Restaurer la sauvegarde`{.action}. Sur la fenêtre qui apparaît, assurez-vous que les informations sont correctes puis cliquez sur `Valider`{.action}. Patientez maintenant le temps que la restauration se réalise.
 
-![databaseimport](images/restore-the-backup.png){.thumbnail}
+![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/restore-the-backup.png){.thumbnail}
 
 ### Importer votre propre sauvegarde depuis l'espace client
 
@@ -62,7 +62,7 @@ Pour effectuer la manipulation, connectez-vous à votre [espace client OVHcloud]
 
 Le tableau qui s'affiche contient toutes les bases de données créées dans le cadre de votre offre d'hébergement web. Dès lors, cliquez sur les trois points à droite de la base de données dans laquelle vous souhaitez importer des données, puis sur `Importer un fichier`{.action}.
 
-![databaseimport](images/import-file.png){.thumbnail}
+![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/import-file.png){.thumbnail}
 
 Dans la fenêtre qui apparaît, sélectionnez `Importer un nouveau fichier`{.action} puis cliquez sur `Suivant`{.action}.
 
@@ -71,13 +71,13 @@ Dans la fenêtre qui apparaît, sélectionnez `Importer un nouveau fichier`{.act
 > Le bouton `Utiliser un fichier existant`{.action} permet d'importer de nouveau les données d'un fichier déjà envoyé dans l'outil d'import.
 >
 
-![databaseimport](images/database-import-step-1-new-file.png){.thumbnail}
+![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/database-import-step-1-new-file.png){.thumbnail}
 
 Renseignez un nom de fichier (qui vous permettra d’identifier cette sauvegarde plus tard si vous souhaitez de nouveau la restaurer), puis à côté de `Fichier`, sélectionnez le fichier de sauvegarde de la base de données sur votre ordinateur. Cliquez sur `Envoyer`{.action}.
 
 Patientez le temps que l’interface vous indique que le fichier a été envoyé avec succès, puis cliquez sur le bouton `Suivant`{.action}.
 
-![databaseimport](images/database-import-step-2-new-file.png){.thumbnail}
+![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/database-import-step-2-new-file.png){.thumbnail}
 
 Enfin, choisissez d’appliquer ou non les options additionnelles affichées :
 
@@ -87,7 +87,7 @@ Enfin, choisissez d’appliquer ou non les options additionnelles affichées :
 
 Une fois votre choix fait, cliquez sur le bouton `Valider`{.action} puis patientez le temps que l'importation arrive à son terme.
 
-![databaseimport](images/database-import-step-3.png){.thumbnail}
+![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/database-import-step-3.png){.thumbnail}
 
 ### Réaliser l'import depuis l'interface web phpMyAdmin
 
@@ -95,7 +95,7 @@ Pour réaliser la manipulation, vous devez vous connecter à phpMyAdmin. Pour co
 
 Le tableau qui s'affiche contient toutes les bases de données créées dans le cadre de votre offre d'hébergement web. Cliquez dans ce dernier sur les trois points à droite de la base de données concernée, puis sur `Accéder à phpMyAdmin`{.action}.
 
-![databaseimport](images/go-to-phpmyadmin.png){.thumbnail}
+![databaseimport](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
 
 Une fois sur la page de phpMyAdmin, renseignez les informations de la base de données, choisissez dans le menu déroulant d'accéder aux données actuelles de la base de données, puis connectez-vous. Une fois connecté, rendez-vous à présent sur l'onglet `Importer`{.action} et complétez les informations demandées. Pour rappel, une limite de taille sur le fichier de sauvegarde vous est imposée.
 
@@ -170,4 +170,4 @@ Pour des prestations spécialisées (référencement, développement, etc), cont
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

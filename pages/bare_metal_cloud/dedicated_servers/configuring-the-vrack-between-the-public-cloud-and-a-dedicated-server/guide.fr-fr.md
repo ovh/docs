@@ -15,7 +15,7 @@ Le [vRack](https://www.ovh.com/fr/solutions/vrack/) OVHcloud est un réseau priv
 * Avoir créé une [instance Public Cloud OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps)
 * Avoir activé un service [vRack](https://www.ovh.com/fr/solutions/vrack)
 * Posséder un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/) compatible avec le vRack
-* Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+* Être connecté à l'[espace client OVHcloud](/links/manager)
 * Une plage d'adresses IP privées de votre choix
 
 > [!warning]
@@ -101,4 +101,4 @@ Configurez ensuite les interfaces réseau sur votre nouvelle instance Public Clo
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

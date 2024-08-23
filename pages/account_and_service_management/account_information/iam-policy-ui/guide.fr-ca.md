@@ -1,7 +1,7 @@
 ---
 title: Comment utiliser les politiques IAM depuis votre espace client
 excerpt: "Découvrez comment donner des droits d'accès spécifiques aux utilisateurs depuis un compte OVHcloud"
-updated: 2024-02-19
+updated: 2024-07-04
 ---
 
 ## Objectif
@@ -68,6 +68,7 @@ Le formulaire suivant s'affiche :
 ![Créer une politique](images/create_a_policy_01.png){.thumbnail}
 
 - **Nom de la politique** (obligatoire) : il s'agit du nom qui apparaîtra dans les interfaces. Le nom doit être unique et ne doit contenir aucun espace.
+- **Identités** : sélectionnez les identités concernées par cette politique. Il est possible d'indiquer plusieurs types d'identités.
 - **Types de produits** : sélectionnez les types de produits pour définir le champ d'application de la politique. Un ou plusieurs types de produit peuvent être inclus dans la même politique.
 - **Ressources** : ajoutez des ressources ou des groupes de ressources à couvrir par la politique. Les ressources disponibles sont filtrées par type de produit préalablement sélectionné.
 - **Actions**.
@@ -138,21 +139,9 @@ Pour supprimer une politique existante, cliquez sur le bouton `...`{.action} à 
 
 Une fenêtre contextuelle vous demandera de confirmer la suppression.
 
-### Associer une identité à une politique
-
-Pour lier une identité à une politique, cliquez sur le bouton `...`{.action} à droite de la politique puis sur `Gérer les identités associées`{.action}.
-
-![Modifier une politique](images/editing_a_policy.png){.thumbnail}
-
-Cela vous permettra d'ajouter et de supprimer les utilisateurs ou les groupes auxquels la politique doit s'appliquer.
-
-![Lier une identité](images/link_identity_to_policy.png){.thumbnail}
-
 ### Gestion des identités
 
-Les identités disponibles pour les politiques sont gérées via l'onglet `Gestion des utilisateurs`{.action}, dans le menu `Mon compte`{.action}.
-
-L'onglet `Identités`{.action} du menu IAM vous redirige vers ce menu.
+Les identités disponibles pour les politiques sont gérées via l'onglet `Identités`{.action}.
 
 Retrouvez les détails de la gestion des utilisateurs dans la [documentation dédiée](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 

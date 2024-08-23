@@ -1,7 +1,7 @@
 ---
-title: 'Configurar a rede em Proxmox VE nas gamas High Grade & SCALE'
-excerpt: 'Saiba como configurar a rede em Proxmox VE nas gamas High Grade & SCALE.'
-updated: 2023-05-11
+title: 'Configurar a rede em Proxmox VE'
+excerpt: 'Saiba como configurar a rede em Proxmox VE'
+updated: 2024-07-16
 ---
 
 > [!primary]
@@ -15,7 +15,12 @@ updated: 2023-05-11
 
 ## Objetivo
 
-Nas gamas High Grade & SCALE, o funcionamento dos Additional IP em modo bridged (através de MAC virtuais) não é possível. Por isso, é necessário configurar os Additional IP em modo roteado ou através do vRack.
+Nas gamas High Grade & SCALE, o funcionamento dos Additional IP em modo bridged (através de MAC virtuais) não é possível. O mesmo acontece para os novos servidores de última geração entregues com os CPU AMD Epyc 4K e 8K. Por isso, é necessário configurar os Additional IP em modo roteado ou através do vRack.
+
+> [!primary]
+>
+> Até ao final de 2024, esta funcionalidade será fornecida para o conjunto das gamas High Grade, SCALE & ADVANCE.
+>
 
 **Saiba como configurar a rede em Proxmox VE.**
 
@@ -23,7 +28,7 @@ Nas gamas High Grade & SCALE, o funcionamento dos Additional IP em modo bridged 
 
 - Dispor de um [servidor dedicado OVHcloud](https://www.ovhcloud.com/pt/bare-metal/)
 - Dispor de [Additional IP](https://www.ovhcloud.com/pt/bare-metal/ip/)
-- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+- Estar ligado à [Área de Cliente OVHcloud](/links/manager)
 
 > [!warning]
 >
@@ -203,7 +208,7 @@ Esta configuração é mais flexível, não precisa de associar um IP adicional 
 * Ter acesso ao intervalo de endereços de IP privados escolhidos.
 * Dispor de um [servidor compatível com o vRack](https://www.ovhcloud.com/pt/bare-metal/){.external}.
 * Ter ativado um serviço [vRack](https://www.ovh.pt/solucoes/vrack/){.external}.
-* Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+* Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 #### Esquema da configuração alvo
 

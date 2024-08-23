@@ -24,7 +24,7 @@ W [Panelu klienta OVHcloud](/links/manager) przejdź do sekcji `Web Cloud`{.acti
 
 W tabeli możesz sprawdzić operacje związane z domenami w Twoim Panelu klienta.
 
-![domena](images/domain-name-operations-header.png){.thumbnail}
+![domena](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/domain-name-operations-header.png){.thumbnail}
 
 - `Domena`: Domena, której dotyczy operacja.
 - `Operacja`: Trwa wykonywanie operacji dla domeny.
@@ -37,7 +37,7 @@ W tabeli możesz sprawdzić operacje związane z domenami w Twoim Panelu klienta
 Wszystkie operacje wymienione w tej tabeli nie wymagają interwencji, aby były przeprowadzane w normalnych warunkach.<br>
 W niniejszym przewodniku przyjrzymy się operacjom **z błędem**, posługując się przykładami, które się powtarzają.
 
-![domena](images/domain-name-operations-error-creating-domain-name-with-registry.png){.thumbnail}
+![domena](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/domain-name-operations-error-creating-domain-name-with-registry.png){.thumbnail}
 
 ### Przykłady
 
@@ -56,43 +56,43 @@ W niniejszym przewodniku przyjrzymy się operacjom **z błędem**, posługując 
 
 Niektóre rozszerzenia domen muszą uzasadnić ich użycie udostępniając dokumenty. W takim przypadku należy przesłać dokumenty w oknie `Operacje w toku`{.action}.
 
-![domena](images/contacts-update-provide-us-with-the-documents-required.png){.thumbnail}
+![domena](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/contacts-update-provide-us-with-the-documents-required.png){.thumbnail}
 
 Aby dostarczyć niezbędne dokumenty, kliknij przycisk `...`{.action} po prawej stronie wybranej operacji.<br>
 Pojawi się poniższe okno, w części "Opis" otrzymasz szczegółowe informacje na temat dokumentu, który ma być dostarczony, oraz przycisk do pobrania dokumentu.
 
-![domena](images/operation-data-provide-us-with-the-documents-required.png){.thumbnail}
+![domena](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/operation-data-provide-us-with-the-documents-required.png){.thumbnail}
 
 #### Brakujące informacje
 
 Podczas rejestracji domeny konieczne jest czasem uzupełnienie danych kontaktowych. Jeśli nie odpowiadają kryteriom nazwy domeny, możesz otrzymać błąd.
 
-![domena](images/domain-name-operations-complete-nic-admin-es-tld.png){.thumbnail}
+![domena](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/domain-name-operations-complete-nic-admin-es-tld.png){.thumbnail}
 
 Kliknij przycisk `...`{.action} po prawej stronie operacji.<br>
 Pojawi się poniższe okno. Wpisz pola informacjami dotyczącymi wybranego kontaktu.
 
-![domena](images/operation-data-complete-nic-admin-es-tld.png){.thumbnail}
+![domena](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/operation-data-complete-nic-admin-es-tld.png){.thumbnail}
 
 #### Nieprawidłowy kod transferu 
 
 Po przeniesieniu domeny do OVHcloud należy wprowadzić kod transferu (**authInfo**) podczas składania zamówienia. Jeśli ten kod jest nieprawidłowy, operacja zostaje zawieszona, ale możesz wznowić operację, wprowadzając poprawny kod.
 
-![domena](images/domain-name-operations-auth-code-missing.png){.thumbnail}
+![domena](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/domain-name-operations-auth-code-missing.png){.thumbnail}
 
 Kliknij przycisk `...`{.action} po prawej stronie operacji.<br>
 Pojawi się poniższe okno, wprowadź kod transferu (**authInfo**) i uruchom ponownie operację.
 
-![domena](images/operation-data-auth-code-missing.png){.thumbnail}
+![domena](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/operation-data-auth-code-missing.png){.thumbnail}
 
 #### Błąd związany z serwerami DNS
 
 Błąd może wystąpić, jeśli serwery DNS przypisane do domeny nie działają.<br>
 W poniższym przykładzie adres IP serwera DNS nie odpowiada.
 
-![domena](images/domain-name-operations-dns-update-unable-to-retrieve-dns-ip.png){.thumbnail}
+![domena](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/domain-name-operations-dns-update-unable-to-retrieve-dns-ip.png){.thumbnail}
 
-W sekcji `Domeny`{.action} wybierz odpowiednią domenę, a następnie kliknij zakładkę `Serwery DNS`{.action}. W tej zakładce [zmień serwery DNS](/pages/web_cloud/domains/dns_server_general_information). 
+W sekcji `Domeny`{.action} wybierz odpowiednią domenę, a następnie kliknij zakładkę `Serwery DNS`{.action}. W tej zakładce [zmień serwery DNS](/pages/web_cloud/domains/dns_server_edit). 
 
 #### Błąd dotyczący domeny **.ie**,.**de** lub **.it** po aktualizacji DNS
 
@@ -104,7 +104,7 @@ Kiedy modyfikujesz serwery DNS, registry może sprawdzić nowe serwery DNS i str
 
 Aby sprawdzić, czy Twoja domena jest zablokowana, zapoznaj się z tabelą `Operacje w toku`{.action}.
 
-![domena](images/domain-name-operations-dns-update-error-occured-updating-domain.png){.thumbnail}
+![domena](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/domain-name-operations-dns-update-error-occured-updating-domain.png){.thumbnail}
 
 W celu sprawdzenia nazwy Twojej domeny zalecamy użycie narzędzia weryfikacyjnego dostarczonego przez registry:
 
@@ -128,7 +128,7 @@ Sprawdź najpierw, czy Twoja domena i serwery DNS są aktywne.
 
 Jeśli zauważysz problem, który nie jest związany z konfiguracją serwerów DNS lub strefy DNS, skontaktuj się z pomocą OVHcloud, w celu zidentyfikowania źródła awarii.
 
-![domena](images/domain-name-operations-renewal-internal-error.png){.thumbnail}
+![domena](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ongoing-operations/domain-name-operations-renewal-internal-error.png){.thumbnail}
 
 ## Sprawdź również
 
@@ -136,10 +136,10 @@ Jeśli zauważysz problem, który nie jest związany z konfiguracją serwerów D
 
 [Transfer domeny do innego operatora](/pages/web_cloud/domains/transfer_outgoing_domain)
 
-[Zmiana serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
+[Zmiana serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_edit)
  
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 
+Dołącz do [grona naszych użytkowników](/links/community). 

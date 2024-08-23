@@ -1,7 +1,7 @@
 ---
 title: 'Sauvegarder une instance'
 excerpt: 'Découvrez comment sauvegarder une instance Public Cloud depuis votre espace client OVHcloud'
-updated: 2024-05-06
+updated: 2024-07-03
 ---
 
 ## Objectif
@@ -32,6 +32,10 @@ Cliquez sur le bouton `...`{.action} à droite de l'instance et sélectionnez `C
 Renseignez un nom pour la sauvegarde sur la page suivante. Prenez connaissance des informations tarifaires et cliquez sur `Confirmer`{.action}.
 
 ![public-cloud-instance-backup](images/createbackup2.png){.thumbnail}
+
+Il n'est pas possible de suivre la progression de la sauvegarde en temps réel. Cependant, dans la section `Instance Backup`{.action} sous la rubrique `Storage`{.action} dans le menu de gauche, le statut `Backup en cours` sera affiché pendant le processus.
+
+![public-cloud-instance-backup](images/backup_in_progress.png){.thumbnail}
 
 Une fois la sauvegarde terminée, celle-ci sera disponible dans la section `Instance Backup`{.action} sous la rubrique `Storage`{.action} dans le menu de gauche.
 
@@ -95,4 +99,4 @@ Découvrez comment utiliser les sauvegardes pour cloner ou restaurer des instanc
 
 [Créer / restaurer un serveur virtuel a partir d’une sauvegarde](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

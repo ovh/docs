@@ -1,7 +1,7 @@
 ---
 title: 'Managing and using mailing lists'
 excerpt: 'Find out how to use mailing lists'
-updated: 2023-08-01
+updated: 2024-08-07
 ---
 
 ## Objective
@@ -40,6 +40,10 @@ The sender sends an email to the mailing list. The moderator receives an email w
 ## Instructions
 
 ### Create a mailing list
+
+> [!success]
+>
+> A mailing list behaves like an email address. You cannot change its name. If you no longer like the name of a mailing list, you will need to create a new one and delete the old one.
 
 To create a mailing list, go to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} and click on the `Web Cloud`{.action} tab at the top.
 

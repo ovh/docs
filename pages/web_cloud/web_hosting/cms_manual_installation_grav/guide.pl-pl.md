@@ -41,7 +41,7 @@ Wpisz nazwę domeny w pasku wyszukiwania przeglądarki internetowej.
 
 Jeśli pliki źródłowe Grav zostały poprawnie umieszczone w katalogu głównym, pojawi się strona `your-domain/admin`:
 
-![Grav installation](images/first_page_config.png){.thumbnail}
+![Grav installation](/pages/assets/screens/other/cms/grav/first_page_config.png){.thumbnail}
 
 Wypełnij formularz, aby utworzyć użytkownika administracyjnego, a następnie kliknij przycisk `Create User`{.action}, aby potwierdzić.
 
@@ -59,7 +59,7 @@ W menu głównym Grav kliknij przycisk `Configuration`{.action}, a następnie w 
 
 Włącz pamięć podręczną, aby zwiększyć wydajność witryny internetowej. Kliknij zakładkę `System`{.action}, a następnie `Caching`{.action}. Zidentyfikuj linię `Caching`{.action} i zaznacz `Yes`{.action}.
 
-![Grav installation](images/activate_cache.png){.thumbnail}
+![Grav installation](/pages/assets/screens/other/cms/grav/activate_cache.png){.thumbnail}
 
 ##### Konfiguracja multimediów
 
@@ -73,7 +73,7 @@ W menu głównym Grav kliknij przycisk `Pages`{.action}, aby wyświetlić listę
 
 Aby wyświetlić i edytować zawartość strony, kliknij jej nazwę na liście. Na przykład kliknij przycisk `Home`{.action}, aby zmienić tytuł strony głównej i jej zawartość.
 
-![Grav installation](images/list_pages.png){.thumbnail}
+![Grav installation](/pages/assets/screens/other/cms/grav/list_pages.png){.thumbnail}
 
 ##### Motywów
 
@@ -81,7 +81,7 @@ W menu głównym Grav kliknij na `Theme`{.action}, aby zmienić wygląd swojej s
 
 Aby zmienić aktywny motyw, kliknij motyw z etykietą `Active Theme`.
 
-![Grav installation](images/theme_active.png){.thumbnail}
+![Grav installation](/pages/assets/screens/other/cms/grav/theme_active.png){.thumbnail}
 
 Na stronie, która się wyświetla spersonalizuj swój aktywny motyw.
 
@@ -93,7 +93,7 @@ Zapisanie strony WWW pozwala na przywrócenie jej do wcześniejszego stanu w prz
 
 W menu głównym Grav kliknij `Tools`{.action}, wybierz `Backup Now`{.action} na górze po prawej stronie ekranu, a następnie `Download Backup`{.action}, aby pobrać kopię zapasową strony www na Twój komputer. Po odświeżeniu strony `Backup` kopia zapasowa pojawi się na liście `Backup History`{.action}.
 
-![Grav installation](images/backup_history.png){.thumbnail}
+![Grav installation](/pages/assets/screens/other/cms/grav/backup_history.png){.thumbnail}
 
 ##### Aktualizacja
 
@@ -123,4 +123,4 @@ Właśnie ręcznie zainstalowałeś CMS Grav na Twoim hostingu OVHcloud. Po skon
  
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
  
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

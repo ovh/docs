@@ -34,7 +34,7 @@ Téléchargez, installez et créez une licence pour votre serveur de sauvegarde 
 
 ### Configuration de l’Object Storage
 
-La création et la configuration de l’Object Storage peuvent être effectuées dans la section `Public Cloud`{.action} de l’[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+La création et la configuration de l’Object Storage peuvent être effectuées dans la section `Public Cloud`{.action} de l’[espace client OVHcloud](/links/manager).
 
 Si vous n'avez pas encore de projet Public Cloud dans votre compte OVHcloud, consultez notre guide [Créer votre premier projet Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project).
 
@@ -74,7 +74,7 @@ Donnez à l'utilisateur S3 des droits sur le conteneur en copiant-collant le cod
 
 Veillez à remplacer `container name` par le nom réel de votre conteneur Object Storage.
 
-Dans l’[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), sélectionnez `Public Cloud`{.action} puis `Object Storage`{.action} dans la section `Storage` . Cliquez sur le bouton Plus d'options `...`{.action} à droite de l'utilisateur S3 et choisissez `Importer S3 Policy (JSON)`{.action}.
+Dans l’[espace client OVHcloud](/links/manager), sélectionnez `Public Cloud`{.action} puis `Object Storage`{.action} dans la section `Storage` . Cliquez sur le bouton Plus d'options `...`{.action} à droite de l'utilisateur S3 et choisissez `Importer S3 Policy (JSON)`{.action}.
 
 Sélectionnez le fichier JSON que vous venez de modifier et cliquez sur `Importer`{.action}.
 
@@ -100,7 +100,7 @@ Attribuez un **Nom** au nouveau référentiel et cliquez sur `Next`{.action}.
 
 Renseignez les informations **Service point** (Endpoint) et **Region** de votre service de stockage S3.
 
-> Vous pouvez retrouver ces informations dans la section `Public Cloud`{.action} de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+> Vous pouvez retrouver ces informations dans la section `Public Cloud`{.action} de votre [espace client OVHcloud](/links/manager).
 > Cliquez sur `Object Storage`{.action} puis cliquez sur le bouton `...`{.action} à droite de votre conteneur et cliquez sur `Voir les objets`{.action}.
 >
 > ![Object storage - display objects](images/backup-preparation-06.png){.thumbnail}

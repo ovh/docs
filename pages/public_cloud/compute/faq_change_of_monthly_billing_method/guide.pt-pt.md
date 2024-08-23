@@ -1,6 +1,6 @@
 ---
 title: FAQ - Alteração do regime de faturação mensal
-excerp: ""
+excerpt: ""
 updated: 2023-12-15
 ---
 
@@ -36,6 +36,6 @@ Com um compromisso mensal, todos os meses iniciados são devidos na íntegra. No
 
 ## Quer saber mais? <a name="go-further"></a>
 
-Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](https://www.ovhcloud.com/pt/professional-services/) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
+Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](/links/professional-services) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

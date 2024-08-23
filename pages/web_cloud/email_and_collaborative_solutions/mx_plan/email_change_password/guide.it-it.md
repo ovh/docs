@@ -1,7 +1,7 @@
 ---
 title: 'Modifica la password di un indirizzo email'
 excerpt: 'Come modificare la password di un indirizzo email OVHcloud'
-updated: 2023-01-03
+updated: 2024-06-18
 ---
 
 ## Obiettivo
@@ -100,6 +100,14 @@ Si apre una finestra: inserisci prima la password corrente e poi quella nuova, c
 
 ![email](images/mxplan-password-new-step5.png){.thumbnail}
 
+### Recupera una password
+
+Per motivi di sicurezza e riservatezza non è possibile **recuperare** una password. Come descritto nei passaggi precedenti, è necessario reimpostare la password nel caso in cui non sia più nota.
+
+> [!primary]
+>
+> Se vuoi salvare una password, ti consigliamo di utilizzare un gestore di password come **Keepass** ad esempio.
+
 #### Identifica la tua offerta MXplan <a name="whichmxplan"></a>
 
 Nella tabella qui sotto trovi le informazioni necessarie per identificare la tua offerta MXplan.
@@ -107,6 +115,7 @@ Nella tabella qui sotto trovi le informazioni necessarie per identificare la tua
 |Vecchia versione della soluzione MX Plan|Nuova versione della soluzione MX Plan|
 |---|---|
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> L'offerta appare nel riquadro "**Abbonamento**" sulla destra, l'offerta storica *non* possiede un server di riferimento.|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>La nuova offerta possiede un "Server **Referenza**", nel riquadro "**Riassunto**" a sinistra.|
+
 
 ## Per saperne di più
 

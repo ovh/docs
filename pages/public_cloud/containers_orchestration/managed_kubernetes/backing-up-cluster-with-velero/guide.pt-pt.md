@@ -1,7 +1,7 @@
 ---
 title: Backing-up an OVHcloud Managed Kubernetes cluster using Velero
 excerpt: Find out how to back-up an OVHcloud Managed Kubernetes cluster using Velero, including Persistent Volumes
-updated: 2024-06-17
+updated: 2024-06-21
 ---
 
 ## Objective
@@ -80,7 +80,7 @@ $ openstack ec2 credentials create
 Install the `awscli` client:
 
 ```bash
-pip3 install awscli awscli-plugin-endpoint
+pip3 install awscli
 ```
 
 Create the credentials file into `~/.aws/credentials`:

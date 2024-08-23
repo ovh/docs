@@ -53,21 +53,21 @@ Para generar el enlace de recuperación, conéctese al [área de cliente de OVHc
 
 Seleccione la pestaña `FTP - SSH`{.action} y haga clic en el botón `Generar una copia de seguridad`{.action} a la derecha.
 
-![backupftpcw](images/generate-a-backup.png){.thumbnail}
+![backupftpcw](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup.png){.thumbnail}
 
 En la nueva ventana, seleccione una de las copias de seguridad disponibles y haga clic en `Siguiente`{.action}.
 
-![backupftpcw](images/generate-a-backup-step-1.png){.thumbnail}
+![backupftpcw](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup-step-1.png){.thumbnail}
 
 Se abrirá una segunda ventana en la que deberá indicar que el enlace de recuperación del archivo de backup se enviará por correo electrónico y que OVHcloud no restaurará el alojamiento Cloud Web automáticamente.
 
-![backupftpcw](images/generate-a-backup-step-2.png){.thumbnail}
+![backupftpcw](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup-step-2.png){.thumbnail}
 
 Haga clic en `Confirmar`{.action} para aceptar su solicitud.
 
 Si la generación de la copia de seguridad se ha iniciado correctamente, aparecerá el siguiente mensaje en el [área de cliente de OVHcloud](/links/manager){.external}:
 
-![backupftpcw](images/message-backup-progress.png){.thumbnail}
+![backupftpcw](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/message-backup-progress.png){.thumbnail}
 
 La generación de la copia de seguridad tarda entre 10 y 15 minutos en realizarse.
 
@@ -76,7 +76,7 @@ La generación de la copia de seguridad tarda entre 10 y 15 minutos en realizars
 Una vez finalizada la generación del backup, recibirá un mensaje de correo electrónico en la dirección asociada al usuario de administrador de su hosting Cloud Web.<br>
 El mensaje de correo electrónico incluye un enlace de descarga **válido durante 9 días** desde la recepción del mensaje de correo electrónico:
 
-![backupftpcw](images/backup-information.png){.thumbnail}
+![backupftpcw](/pages/assets/screens/email-sending-to-customer/cloud-web/backup-information.png){.thumbnail}
 
 El archivo así descargado está en formato *.tar.gz*.
 
@@ -99,4 +99,4 @@ Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con 
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte](/links/support).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>
+Interactúe con nuestra [comunidad de usuarios](/links/community)

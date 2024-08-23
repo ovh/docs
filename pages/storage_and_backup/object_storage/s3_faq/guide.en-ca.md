@@ -1,7 +1,7 @@
 ---
 title: Object Storage - FAQ
 excerpt: "Frequently Asked Questions on the Object Storage solution"
-updated: 2024-06-11
+updated: 2024-06-21
 ---
 
 ## General questions
@@ -58,7 +58,7 @@ Object Storage is billed according to the storage space used, with a granularity
 
 ### Which APIs should I use to access storage solutions?
 
-We designed S3 storage classes to be **compatible with the S3** API, considered a benchmark in the object storage market. You can use Object Storage with most data management tools via endpoints defined by region and by storage class.
+We designed S3 storage classes to be **compatible with the S3** API, considered a benchmark in the object storage market. You can use Object Storage with most data management tools via endpoints defined by region.
 
 Get your S3 access keys and access the various storage classes via the command line using AWS-CLI, s3cmd or other commands.
 

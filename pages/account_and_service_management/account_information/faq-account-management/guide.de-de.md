@@ -1,7 +1,7 @@
 ---
 title: FAQ zur Verwaltung des OVHcloud Accounts
 excerpt: Hier finden Sie die häufigsten Fragen zur Verwaltung des OVHcloud Accounts 
-updated: 2022-11-21
+updated: 2024-07-04
 ---
 
 ## Ziel
@@ -167,6 +167,22 @@ Ein Mitarbeiter aus unserem Team wird Ihnen dann schnellstmöglich antworten.
 ### Ich habe der Abteilung „Abuse“ von OVHcloud geantwortet, aber mein Dienst ist immer noch blockiert. Was kann ich tun?
 
 Sie haben die Möglichkeit, in Ihrem OVHcloud Kundencenter eine Support-Anfrage zu stellen und so weitere Informationen zur Bearbeitung Ihres Abuse-Tickets einzuholen. Sie erleichtern und beschleunigen die Bearbeitung Ihrer Support-Anfrage, wenn Sie darin die Referenznummer dieses Abuse-Tickets angeben.
+
+### Wie kann ich meinen OVHcloud Kunden-Account löschen?
+
+Die Schließung Ihres OVHcloud Kunden-Accounts und die Löschung Ihrer personenbezogenen Daten ist nur unter diesen Voraussetzungen möglich:
+
+1. Sie haben keine Dienstleistungen mehr im Bereich "[Meine Dienste](https://www.ovh.com/manager/dedicated/#/billing/autoRenew)". Ist dies nicht der Fall, müssen Sie zunächst deren Kündigung beantragen und auf deren Löschung warten.
+2. Sie haben keine ausstehenden Rechnungen. Ist das nicht der Fall, müssen Sie die Zahlung vornehmen, indem Sie in den Massenaktionen auf der Seite "[Meine Rechnungen](https://www.ovh.com/manager/#/dedicated/billing/history)" auf den Button `Sofort zahlen`{.action} klicken.
+3. Sie haben keine laufenden Bestellungen. Prüfen Sie diese auf [dieser Seite](https://www.ovh.com/manager/#/dedicated/billing/orders/orders).
+4. Ihr Prepaid-Konto ist ausgeglichen (Saldo 0,00€). Prüfen Sie dies auf [dieser Seite](https://www.ovh.com/manager/#/dedicated/billing/payment/ovhaccount).
+
+Wenn die oben genannten Bedingungen erfüllt sind, können Sie die Löschung Ihres OVHcloud Accounts und der zugehörigen Daten beantragen, indem Sie folgende Schritte ausführen:
+
+1. Loggen Sie sich ein und gehen Sie zum [OVHcloud Help Center](https://help.ovhcloud.com/csm?id=csm_get_help).
+2. Klicken Sie auf den Button `Ticket erstellen`{.action}.
+3. Wählen Sie den Zweck `Verwalten Sie IhrenOVHcloud Kunden-Account`{.action} aus.
+4. Geben Sie `Ich möchte meinen OVHcloud Account schließen`{.action} an und folgen Sie den angezeigten Schritten.
 
 ## Weiterführende Informationen
 

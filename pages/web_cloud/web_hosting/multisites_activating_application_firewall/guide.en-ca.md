@@ -33,7 +33,7 @@ Click on `Hosting Plans`{.action} and select the plan concerned.
 
 Click on the `General information`{.action} tab. The current `Global PHP version` is displayed in the **Configuration** box.  Click on the `...`{.action} icon and select `Modify configuration`{.action}. In the popup window, select the item `Modify the current configuration`{.action} and click on the `Next`{.action} button.
 
-![managephpconfig](images/application-firewall-step-2.png){.thumbnail}
+![managephpconfig](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/application-firewall-step-2.png){.thumbnail}
 
 In the new window, make sure that **Application firewall** is set to `activated`{.action}. To confirm the configuration, click on the `Confirm`{.action} button.
 
@@ -41,16 +41,16 @@ In the new window, make sure that **Application firewall** is set to `activated`
 
 Switch to the `Multisite`{.action} tab of your hosting plan. Click on the `...`{.action} button in the row of the respecive domain and select the `Modify domain`{.action} option. 
 
-![managemultisite](images/modify-a-domain.png){.thumbnail}
+![managemultisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-2.png){.thumbnail}
 
 In the configuration window, check the `Enable the firewall`{.action} box. You can also include the www subdomain in this configuration by checking the box at the top.
 Click on `Next`{.action} and then on `Confirm`{.action} to modify the Multisite settings.
 
-![modifydomain](images/modify-a-domain-enable-firewall-step-1.png){.thumbnail}
+![modifydomain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-enable-firewall-step-1.png){.thumbnail}
 
 ### Checking the status of the activation task
 
-![manageongoing](images/firewall-planned.png){.thumbnail}
+![manageongoing](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/firewall-planned.png){.thumbnail}
 
 Tasks to update your Multisite configuration will be listed in the `Ongoing jobs`{.action} tab (initial status is `Planned`). The firewall will be active once its update task no longer appears in the list.
 
@@ -58,7 +58,7 @@ Tasks to update your Multisite configuration will be listed in the `Ongoing jobs
 
 The `Multisite`{.action} tab of your hosting plan provides information on which domains have the firewall option turned on.
 
-![manageenabled](images/firewall-enabled.png){.thumbnail}
+![manageenabled](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/firewall-enabled.png){.thumbnail}
 
 The table displayed contains all of the domain names that have been added to your Web Hosting plan. In the "Firewall" column, you will see the activation status for each domain. 
 
@@ -68,4 +68,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

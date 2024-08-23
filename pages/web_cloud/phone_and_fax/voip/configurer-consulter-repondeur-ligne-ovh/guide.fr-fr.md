@@ -1,7 +1,7 @@
 ---
 title: 'Configurer et consulter le répondeur de sa ligne'
 excerpt: 'Apprenez à configurer et utiliser le répondeur de votre ligne téléphonique OVHcloud'
-updated: 2024-01-03
+updated: 2024-06-18
 ---
 
 ## Objectif
@@ -142,6 +142,8 @@ Retournez vers la gestion du répondeur et positionnez-vous maintenant sur l'ong
 
 Sélectionnez, pour les renvois vers le répondeur, le même numéro de ligne sélectionné précédemment. Assurez-vous de faire correspondre les numéros. Si besoin, aidez-vous de notre documentation intitulée « [Filtrer et renvoyer ses appels](/pages/web_cloud/phone_and_fax/voip/comment_configurer_les_renvois_d_appels){.external} ».
 
+Vous pouvez notamment définir le délai (en secondes) au bout duquel un apppel sera renvoyé vers le répondeur.
+
 Vous avez la possibilité d’appliquer vos choix de configuration à plusieurs lignes, grâce au bouton `Appliquer à plusieurs lignes`{.action}. Cliquez sur le bouton `Valider`{.action} pour terminer l'opération.
 
 ![repondeur](images/voicemail-step10.png){.thumbnail}
@@ -149,6 +151,6 @@ Vous avez la possibilité d’appliquer vos choix de configuration à plusieurs 
 ## Aller plus loin
 
 - [Filtrer et renvoyer ses appels](/pages/web_cloud/phone_and_fax/voip/comment_configurer_les_renvois_d_appels)
-- [Configurer des plages horaires et des fermetures exceptionnelles sur une ligne](/pages/web_cloud/phone_and_fax/voip/configure-time-slot-and-closing-time)
+- Pour associer le déclenchement d'un répondeur à des conditions particulières (respect de certaines plages horaires, fermeture lors des jours fériés, etc.), consultez le guide « [Configurer des plages horaires et des fermetures exceptionnelles sur une ligne](/pages/web_cloud/phone_and_fax/voip/configure-time-slot-and-closing-time) ».
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

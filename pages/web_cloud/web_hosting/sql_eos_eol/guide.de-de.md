@@ -1,7 +1,7 @@
 ---
 title: "SQL Database Web Hosting EOL und EOS Ankündigungen"
 excerpt: "SQL Database Web Hosting EOL und EOS Ankündigungen"
-updated: 2024-06-06
+updated: 2024-07-11
 ---
 
 > [!primary]
@@ -15,6 +15,7 @@ Weitere Informationen finden Sie auf der Seite zur [EOL Policy für Managed Data
 |Version|EOL Ankündigung|End-of-Sale|End-of-Support|
 |---|---|---|---|
 |MySQL 5.7|2023-11-16|2024-02-16|2024-05-17|
+|MySQL 8.0|Noch festzulegen|Noch festzulegen|Noch festzulegen|
 
 ## Weiterführende Informationen
 
@@ -30,4 +31,4 @@ Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

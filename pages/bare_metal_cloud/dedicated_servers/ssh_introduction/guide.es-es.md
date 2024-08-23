@@ -37,7 +37,7 @@ Existen varios métodos para autentificar una conexión a un periférico remoto 
 Las instrucciones siguientes se refieren al método de autenticación a través de un nombre de usuario y una contraseña.<br>
 También puede configurar llaves SSH para activar las conexiones seguras sin contraseña. Para más información, consulte nuestra [guía sobre llaves SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 
-Las claves de conexión (usuario y contraseña) se envían por correo electrónico después de instalar o reinstalar el servidor desde su [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+Las claves de conexión (usuario y contraseña) se envían por correo electrónico después de instalar o reinstalar el servidor desde su [Panel de configuración de OVHcloud](/links/manager).
 El nombre de usuario corresponde al sistema operativo, por ejemplo `ubuntu` o `debian`.<br>
 Para conectarse, también debe especificar la dirección IPv4 o el nombre del host del servidor. Esta información está disponible en el email de instalación y en el área de cliente.
 

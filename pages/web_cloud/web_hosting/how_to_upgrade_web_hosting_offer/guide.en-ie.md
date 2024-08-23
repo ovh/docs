@@ -39,7 +39,7 @@ To modify your subscription, go to your [OVHcloud Control Panel](/links/manager)
 
 In the `Plan` box, click the `...`{.action} button to the right of `Solution`, then `Change plan`{.action}.
 
-![change_plan](images/pro-change-plan.png){.thumbnail}
+![change_plan](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/pro-change-plan.png){.thumbnail}
 
 Then select your new subscription and its duration. Confirm the corresponding contracts, then click `Send`{.action}.
 
@@ -61,7 +61,7 @@ Otherwise, delete unused databases and reduce the amount of data in them, if nec
 
 Once you have deleted data from your databarrrrrses, recalculate the quota used. To do this, log in to your [OVHcloud Control Panel](/links/manager) and go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action} , then select the Web Hosting plan concerned. On the page that pops up, go to the `Databases`{.action} tab, then click the `...`{.action} button to the right of the database concerned, then `Recalculate the quota`{.action}.
 
-![quota](images/recalculate-quota.png){.thumbnail}
+![quota](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota.png){.thumbnail}
 
 > [!primary]
 >
@@ -73,7 +73,7 @@ Once you have deleted data from your databarrrrrses, recalculate the quota used.
 If you are using the [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) solution included with your web hosting plan [Performance](/links/web/hosting-performance-offer), and you want to change your web hosting plan to a [Pro](/links/web/hosting-professional-offer) solution, you will need to detach the Web Cloud Databases solution from your web hosting plan.<br>
 To do this, log in to your [OVHcloud Control Panel](/links/manager) and go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action} , then select the Web Hosting plan concerned. On the page that pops up, stay in the `General information`{.action} tab. In the central `Configuration` column, click the `...`{.action}' button to the right of the `Web Cloud Databases`{.action} heading, then `Detach`{.action}.
 
-![Web Cloud Databases](images/wcdb-detach.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/wcdb-detach.png){.thumbnail}
 
 With this action, you can order a Web Cloud Databases solution that is independent of your *Performance* subscription. Your server data will be stored.
 
@@ -88,7 +88,7 @@ Make sure that the new solution offers enough [FTP storage space](/pages/web_clo
 
 To check the FTP storage space quota used on your web hosting plan, log in to your [OVHcloud Control Panel](/links/manager) then go to the `Web Cloud`{.action} section. In the left-hand column, click `Web Hosting`{.action} , then select the Web Hosting plan concerned. On the `General information`{.action} page that pops up, you will find the quota under the heading `Disk space`.
 
-![ftp](images/find-disk-space.png){.thumbnail}
+![ftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
 
 #### 4 - Email accounts
 
@@ -96,7 +96,7 @@ Check that your new solution has a sufficient number of available email accounts
 
 If you would like to keep the same number of mailboxes and **before downgrading your web hosting plan to a lower plan**, you can also order a new **MX Plan** email solution. To do this, log in to your [OVHcloud Control Panel](/links/manager) and go to the `Web Cloud`{.action} section. In the left-hand column, click `Emails`{.action}, then select the email solution concerned. On the page that opens, in the `Subscription`{.action} box, to the right of `Solution`{.action}, click the `...`{.action} button, then `Change solution`{.action}.
 
-![mxplan](images/change-solution.png){.thumbnail}
+![mxplan](/pages/assets/screens/control_panel/product-selection/web-cloud/emails/general-information/change-solution.png){.thumbnail}
 
 >[!primary]
 >
@@ -126,7 +126,7 @@ At the bottom of the page that pops up, a table will appear listing all of the F
 
 To delete FTP users, click the `...`{.action} button to the right of the FTP user you want to delete, then `Delete`{.action}.
 
-![user FTP deletion](images/edit-ftp-user-2.png){.thumbnail} 
+![user FTP deletion](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/edit-ftp-user-2.png){.thumbnail} 
 
 #### Finalisation
 
@@ -154,13 +154,13 @@ If the **Boost** option is right for you, please find instructions below on how 
 > **Enable the Boost option**
 >>
 >> To enable the Boost option, log in to your [OVHcloud Control Panel](/links/manager) then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then select the Web Hosting plan concerned. In the `General information` box on the page that opens, click the `...`{.action} button to the right of `Boost`, then `Boost my hosting plan`{.action}.<br><br>
->>![boost](images/boost-my-hosting-plan.png){.thumbnail}<br>
+>>![boost](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/boost-my-hosting-plan.png){.thumbnail}<br>
 >>
 > **Disable the Boost option**
 >>
 >> To disable the Boost option, log in to your [OVHcloud Control Panel](/links/manager) then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then select the Web Hosting plan concerned. On the page that pops up, go to the `More` tab, then click `Boost my hosting plan`{.action}.<br>
 >> The usage table for the Boost option will appear. Click `Disable boost plan`{.action}.<br><br>
->>![boost](images/deactivate-the-boost-plan.png){.thumbnail}<br>
+>>![boost](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/boost-my-hosting-plan/deactivate-the-boost-plan.png){.thumbnail}<br>
 
 #### Billing when you change plans <a name="billing"></a>
 
@@ -188,4 +188,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

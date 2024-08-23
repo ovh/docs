@@ -35,7 +35,7 @@ Para ver los motores de ejecución de su hosting Cloud Web, conéctese al [área
 
 Se mostrará una tabla con los motores de ejecución que haya añadido hasta ese momento. Asegúrese de que el motor de ejecución Node.js esté activado. Si lo está, vaya al apartado [2. Asociar Node.js a un multisitio](./#2-asociar-nodejs-a-un-multisitio).
 
-![ghostcloudweb](images/tab-nodejs8.png){.thumbnail}
+![ghostcloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/tab-nodejs8.png){.thumbnail}
 
 De lo contrario, añada un nuevo motor de ejecución (si su plan lo permite) o modifique el motor existente.
 
@@ -54,13 +54,13 @@ En la nueva ventana, cumplimente los campos con los valores que indicamos a cont
 
 Una vez que haya introducido toda la información, haga clic en `Aceptar`{.action}. Para más información sobre los motores de ejecución, consulte nuestra guía [Gestionar los motores de ejecución en un hosting Cloud Web](/pages/web_cloud/web_hosting/manage-runtime){.external}.
 
-![ghostcloudweb](images/modify-a-runtime-software-application-nodejs8.png){.thumbnail}
+![ghostcloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/modify-a-runtime-software-application-nodejs8.png){.thumbnail}
 
 ### 2. Asociar Node.js a un multisitio
 
 Ahora que Node.js está activado como motor de ejecución, ya puede asociarlo a un multisitio. Para ello, abra la pestaña `Multisitio`{.action}. Se mostrará una tabla que contiene todos los dominios añadidos como multisitio. 
 
-![ghostcloudweb](images/tab-nodejs8-full-disabled.png){.thumbnail}
+![ghostcloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/multisite/tab-nodejs8-full-disabled-2.png){.thumbnail}
 
 Preste especial atención a las columnas de la tabla que indican la carpeta raíz y el motor de ejecución, y compruebe que, para el dominio en cuestión, la carpeta sea la correcta y el motor de ejecución sea Node.js. Si necesita ayuda, a continuación explicamos estos valores en mayor profundidad. Si todo es correcto, vaya directamente al apartado [3. Crear una base de datos MySQL](./#3-crear-una-base-de-datos-mysql).
 
@@ -84,7 +84,7 @@ En la nueva ventana, cumplimente los campos según su caso particular. La siguie
 
 Active las opciones que desee. Una vez que haya introducido toda la información, haga clic en `Siguiente`{.action} y acepte. El dominio puede tardar un máximo de una hora en añadirse. Sin embargo, la modificación de la configuración DNS puede tardar hasta 24 horas en ser efectiva. Para más información sobre la gestión de multisitios, consulte nuestra guía [Alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external}.
 
-![ghostcloudweb](images/add-a-domain-or-sub-domain-step-2-ghost.png){.thumbnail}
+![ghostcloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/multisite/add-a-domain-or-sub-domain-step-2-ghost.png){.thumbnail}
 
 ### 3. Crear una base de datos MySQL
 
@@ -93,13 +93,13 @@ Abra la pestaña `Bases de datos`{.action} (si no puede verla, haga clic en el b
 - **Si todavía no ha creado ninguna base de datos**, haga clic en el botón `Crear una base de datos`{.action}.
 - **Si ya ha creado alguna base de datos**, haga clic en el botón `Acciones`{.action} situado sobre la tabla y seleccione `Crear una base de datos`{.action}.
 
-![ghostcloudweb](images/tab.png){.thumbnail}
+![ghostcloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/databases/tab.png){.thumbnail}
 
 En la nueva ventana, solo está disponible la versión 5.6 del MySQL.. A continuación, seleccione «**Almacenada en la instancia Cloud Web**» y haga clic en `Siguiente`{.action}.
 
 Indique un nombre de usuario y una contraseña. Haga clic en `Siguiente`{.action} y confirme haciendo clic en `Aceptar`{.action}. La base de datos tardará unos minutos en crearse.
 
-![ghostcloudweb](images/create-a-database-step-2.png){.thumbnail}
+![ghostcloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/databases/create-a-database-step-2.png){.thumbnail}
 
 ### 4. Crear las variables de entorno
 
@@ -109,7 +109,7 @@ En este tutorial vamos a crear variables de entorno para los datos de conexión 
 
 Para ello, abra la pestaña `Variables de entorno`{.action}. La tabla muestra las variables que haya creado hasta ese momento. Para añadir una nueva, haga clic en el botón `Acciones`{.action} situado sobre la tabla y seleccione `Añadir una variable de entorno`{.action}.
 
-![ghostcloudweb](images/add-an-environment-variable.png){.thumbnail}
+![ghostcloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/environment-variables/add-an-environment-variable.png){.thumbnail}
 
 En la nueva ventana, introduzca la información solicitada en función de su caso particular y, a continuación, haga clic en el botón `Aceptar`{.action} para crear la variable. Estas son las variables que hemos creado en este tutorial:
 
@@ -134,7 +134,7 @@ Para conectarse al hosting Cloud Web, necesitará los datos de conexión. Para o
 
 Si ha olvidado la contraseña del usuario SSH, haga clic en el botón `···`{.action} situado al final de la línea correspondiente y seleccione `Cambiar la contraseña`{.action}.
 
-![ghostcloudweb](images/change-password.png){.thumbnail}
+![ghostcloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/change-password.png){.thumbnail}
 
 Para conectarse por SSH, es necesario tener un terminal. En MacOS y Linux, esta herramienta está instalada por defecto. Si tiene Windows, deberá instalar un programa como PuTTY o añadir la funcionalidad OpenSSH. Esta operación depende del sistema operativo que utilice, por lo que no podemos detallar todos los casos en este tutorial.
 
@@ -248,7 +248,7 @@ Para reiniciar el demonio Node.js, vuelva al [área de cliente de OVHcloud](/lin
 
 A continuación, la aplicación estará accesible desde el dominio indicado en la configuración del multisitio.
 
-![ghostcloudweb](images/tab-nodejs8.png){.thumbnail}
+![ghostcloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/tab-nodejs8.png){.thumbnail}
 
 ### 8. Utilizar HTTPS
 
@@ -277,4 +277,4 @@ Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con 
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

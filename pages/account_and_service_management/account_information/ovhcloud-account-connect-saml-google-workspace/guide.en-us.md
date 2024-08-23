@@ -1,7 +1,7 @@
 ---
 title: Enabling Google Workspace SSO connections with your OVHcloud account
 excerpt: "Learn how to associate your Google Workspace service with your OVHcloud account via SAML 2.0"
-updated: 2024-03-05
+updated: 2024-07-05
 ---
 
 ## Objective
@@ -81,23 +81,23 @@ Your Google Workspace service now trusts OVHcloud as a service provider. The nex
 
 To add Google workspace as a trusted identity provider, you need to provide the identity provider metadata in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we).
 
-Once logged in, click your profile at the top right.
+Click your account name in the top-right corner, then on your name again in the sidebar.
 
-![Top menu OVHcloud](images/ovhcloud_top_menu.png){.thumbnail}
+![Access to the IAM menu](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-Click on your name to access your profile management page.
+You can access the IAM menu via the dedicated entry in your Control Panel.
 
-![OVHcloud User Information](images/ovhcloud_user_infos.png){.thumbnail}
+![Access to the IAM menu](images/access_to_the_IAM_menu_02.png){.thumbnail}
 
-Open the `User Management`{.action} tab.
+Then click on the `Identities`{.action} tab to access local users management.
 
-![OVHcloud menu profile](images/ovhcloud_profile_menu.png){.thumbnail}
+![Access to the IAM menu](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
 Click the `SSO connection`{.action} button.
 
 ![OVHcloud SSO connection step 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 
-Fill in the XML metadata of your Google Workspace service. Enter `Group` as the "Group Attribute Name". Click `Confirm`{.action}.
+Fill in the XML metadata of your Google Workspace service. Enter `Name` as the "User Attribute Name" and `Group` as the "Group Attribute Name". Click `Confirm`{.action}.
 
 You can keep local users by ticking the `Keep active OVHcloud users` box.
 

@@ -1,7 +1,7 @@
 ---
 title: 'Sécuriser votre nom de domaine avec DNSSEC'
 excerpt: 'Découvrez comment protéger votre nom de domaine du Cache Poisoning en activant le DNSSEC'
-updated: 2023-07-24
+updated: 2024-08-20
 ---
 
 ## Objectif 
@@ -15,6 +15,11 @@ Ainsi, ils peuvent rediriger les flux entrants de votre nom de domaine vers leur
 Le **D**omain **N**ame **S**ystem **SEC**urity extensions (**DNSSEC**), permet de protéger la configuration DNS de votre nom de domaine contre le « Cache poisoning » en vérifiant et en authentifiant les réponses DNS.
 
 **Découvrez comment activer le DNSSEC pour votre nom de domaine afin de le protéger contre le « Cache poisoning ».**
+
+> [!primary]
+>
+> L'option DNSSEC est indisponible pour les noms de domaine dont l'extension est en **.it**.
+>
 
 Pour plus d'informations sur le fonctionnement du **DNSSEC**, consultez notre page « [Comprendre le DNSSEC](/links/web/domains-dnssec){.external} ».
 
@@ -55,11 +60,11 @@ Toujours dans l'onglet `Informations générales`{.action}, suite à l'[étape 1
 
 Pour cela, dans le cadre « Sécurité », vérifiez l'état à côté de la mention « Délégation Sécurisée - DNSSEC ».
 
-![dnssec](images/activate-dnssec.png){.thumbnail}
+![dnssec](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/activate-dnssec.png){.thumbnail}
 
 Grâce au bouton d'activation situé en dessus de la mention `Déléguation sécurisée - DNSSEC`{.action}, vous pouvez activer ou désactiver le **DNSSEC** sur votre nom de domaine. En réalisant cette actions, une nouvelle fenêtre apparaît depuis laquelle vous pouvez valider la modification.
 
-![dnssec](images/activate-dnssec-confirmation.png){.thumbnail}
+![dnssec](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/activate-dnssec-confirmation.png){.thumbnail}
 
 > [!primary]
 >
@@ -80,4 +85,4 @@ Pour des prestations spécialisées (référencement, développement, etc), cont
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -65,7 +65,7 @@ W zakładce `Informacje ogólne`{.action} znajdziesz suwak `Ochrona przed transf
 >
 > Jeśli przycisk `Ochrona przed transferem` nie jest widoczny, oznacza to, że rozszerzenie domeny nie wymaga kodu transferu. Będziesz mógł wówczas rozpocząć transfer domeny.
 
-![ochrona włączona](images/protection-against-domain-name-transfert-enabled.png){.thumbnail}
+![ochrona włączona](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-enabled.png){.thumbnail}
 
 Kliknij kursor i potwierdź w oknie, które się wyświetli, że chcesz usunąć tę ochronę. Odczekaj kilka minut, aż stan się `Wyłączone`{.action}.
 
@@ -80,7 +80,7 @@ Kliknij kursor i potwierdź w oknie, które się wyświetli, że chcesz usunąć
 > Niektóre *kody transferu* są zarządzane bezpośrednio przez *registry* przy rozszerzaniu domeny. *Rejestr* to organizacja, która zarządza wszystkimi domenami dla wybranego rozszerzenia. Na przykład,**AFNIC** zarządza wszystkimi domenami, których rozszerzenie oznacza "*.fr*". W takim przypadku należy skontaktować się bezpośrednio z repozytorium*, które zarządza rozszerzeniem Twojej domeny, aby pobrać *kod transferu*.
 >
 
-![dezaktywacja](images/protection-against-domain-name-transfert-deactivating.png){.thumbnail}
+![dezaktywacja](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-deactivating.png){.thumbnail}
 
 > [!primary]
 >
@@ -98,7 +98,7 @@ Po odblokowaniu Twojej domeny do transferu, pobierz jej kod transferu.  W tym ce
 
 Wyświetli się wówczas okno zawierające kod AUTH/INFO (zwany również kodem transferu, hasłem domeny, AUTH-CODE lub EPP-Code).
 
-![outgoingtransfer](images/protection-against-domain-name-transfert-disabled.png){.thumbnail}
+![outgoingtransfer](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/protection-against-domain-name-transfert-disabled.png){.thumbnail}
 
 Kod zostanie poproszony przez nowego operatora o zakończenie procesu transferu. Szczegóły możesz sprawdzić u nowego operatora.
 
@@ -125,4 +125,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 
+Dołącz do [grona naszych użytkowników](/links/community). 

@@ -1,6 +1,6 @@
 ---
 title: 'Tutorial - Korzystanie z opcji Zonemaster'
-updated: 2024-03-08
+updated: 2024-06-18
 ---
 
 > [!primary]
@@ -20,7 +20,7 @@ updated: 2024-03-08
 
 > [!primary]
 >
-> Aby lepiej zrozumieć pojęcie DNS, zapoznaj się z wprowadzeniem naszego przewodnika dotyczącego [konfiguracji strefy DNS](/pages/web_cloud/domains/dns_server_general_information).
+> Zapoznaj się z koncepcją DNS w przewodniku "[Wszystko o strefie DNS](/pages/web_cloud/domains/dns_zone_general_information) ".
 
 ## Wymagania początkowe
 
@@ -34,7 +34,7 @@ Narzędzie Zonemaster umożliwia sprawdzenie konfiguracji DNS w Twojej domenie l
 
 Aby sprawdzić aktualną konfigurację domeny, wpisz nazwę domeny, następnie kliknij `Run`{.action}
 
-![Zrzut ekranu z formularza Zonemaster. Domena "domain.tld" została zarejestrowana i jest gotowa do przetestowania.](images/run-domain-test.png){.thumbnail}
+![Zrzut ekranu z formularza Zonemaster. Domena "domain.tld" została zarejestrowana i jest gotowa do przetestowania.](/pages/assets/screens/other/web-tools/zonemaster/run-domain-test.png){.thumbnail}
 
 Aby sprawdzić konfigurację DNS, która została przygotowana, ale nie została jeszcze zastosowana dla danej domeny, zaznacz kratkę `Options`{.action}, następnie wprowadź następujące informacje:
 
@@ -47,12 +47,12 @@ Możesz również wymusić weryfikację przy użyciu wybranego protokołu IP pop
 >
 > Przed zmianą serwerów DNS, możesz przeprowadzić zaawansowane wyszukiwanie w polu `Options`{.action}, wprowadzając "dns1.test.tld" i "dns2.test.tld" w rubrykach `Nameservers`.<br>
 > Zonemaster przeprowadzi test tak, jakby korzystał z serwerów "dns1.test.tld" i "dns2.test.tld" na "domain.tld".<br>
-> ![Zrzut ekranu z zaawansowanych opcji formularza Zonemaster. Dwa serwery nazw "dns1.test.tld" i "dns2.test.tld" zostały wpisane w sekcji "Serwery nazw" formularza.](images/run-domain-test-nameservers-option.png){.thumbnail}
+> ![Zrzut ekranu z zaawansowanych opcji formularza Zonemaster. Dwa serwery nazw "dns1.test.tld" i "dns2.test.tld" zostały wpisane w sekcji "Serwery nazw" formularza.](/pages/assets/screens/other/web-tools/zonemaster/run-domain-test-nameservers-option.png){.thumbnail}
 
 > [!primary]
 >
 > Po wpisaniu nazwy domeny i kliknięciu na przycisk `Fetch NS from parent zone`{.action} i `Fetch DS from parent zone`{.action}, pojawią się serwery DNS przypisane do domeny wraz z informacjami o rekordzie DS (DNSSEC), jeśli domena została skonfigurowana.
-> ![Zrzut ekranu przedstawiający zaawansowane opcje formularza Zonemaster. Przycisk "Fetch NS from parent zone" jest podświetlony, a serwery nazw domeny „domain.tld” są wstępnie wypełnione w sekcji Serwery nazw formularza.](images/fetch-ns-from-parent-zone.png){.thumbnail}
+> ![Zrzut ekranu przedstawiający zaawansowane opcje formularza Zonemaster. Przycisk "Fetch NS from parent zone" jest podświetlony, a serwery nazw domeny „domain.tld” są wstępnie wypełnione w sekcji Serwery nazw formularza.](/pages/assets/screens/other/web-tools/zonemaster/fetch-ns-from-parent-zone.png){.thumbnail}
 
 ### Rezultat
 
@@ -65,7 +65,7 @@ Po zatwierdzeniu formularza wyniki są klasyfikowane według kodu koloru:
 
 Dla każdego testu możesz uzyskać więcej informacji, na przykład, aby zrozumieć błąd w przypadku awarii lub tylko w celach informacyjnych.
 
-![Zrzut ekranu strony wyników Zonemaster dla domeny "domain.tld". Sekcja "Address" jest rozwinięta.](images/domain-analysis.png){.thumbnail}
+![Zrzut ekranu strony wyników Zonemaster dla domeny "domain.tld". Sekcja "Address" jest rozwinięta.](/pages/assets/screens/other/web-tools/zonemaster/domain-analysis.png){.thumbnail}
 
 ### Przydatne informacje
 
@@ -83,4 +83,4 @@ Skontaktuj się z [partnerami OVHcloud](/links/partner), jeśli szukasz zaawanso
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i korzystania z rozwiązań OVHcloud, sprawdź naszą [ofertę wsparcia](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>
+Dołącz do [grona naszych użytkowników](/links/community)

@@ -1,7 +1,7 @@
 ---
 title: "Aktywacja kont e-mail zawartych w hostingu"
 excerpt: "Dowiedz się, jak aktywować konta e-mail zawarte w hostingu"
-updated: 2024-03-21
+updated: 2024-07-17
 ---
 
 > [!primary]
@@ -17,7 +17,7 @@ Jeśli zamówiłeś hosting i nie powiązałeś go bezpośrednio z nazwą domeny
 ## Wymagania początkowe
 
 - Posiadanie [domeny](/links/web/domains){.external}i możliwość zarządzania nią w Panelu klienta
-- Posiadanie [hostingu WWW](/links/web/hosting){.external}.
+- Posiadanie [hostingu WWW](/links/web/hosting){.external} (poza ofertami "Darmowy hosting 100M" i "Start 10M").
 - Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
 
 > [!warning]
@@ -37,11 +37,11 @@ Zaloguj się do [Panelu klienta](/links/manager){.external}, kliknij `Hosting`{.
 
 W polu `Konfiguracja` znajduje się wzmianka `Konta e-mail`. Kliknij przycisk `…`{.action} po prawej stronie, a następnie przycisk `Aktywuj rozwiązanie e-mail`{.action}.
 
-![email-activation](images/enable-email-included-webhosting.png){.thumbnail}
+![email-activation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/enable-email-included-webhosting.png){.thumbnail}
 
 Pojawi się okno aktywacyjne. Wybierz nazwę domeny, z którą chcesz powiązać konta e-mail i potwierdź swój wybór.
 
-![email-activation](images/order-activate-email-included-webhosting-step-1.png){.thumbnail}
+![email-activation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-activate-email-included-webhosting-step-1.png){.thumbnail}
 
 > [!primary]
 > Jeśli chcesz korzystać z większej liczby kont e-mail zawartych w ofercie, zachęcamy do zamówienia wyższej [oferty hostingu www](/links/web/hosting){.external} na naszej stronie handlowej.
@@ -57,7 +57,7 @@ Zaloguj się do [Panelu klienta](/links/manager){.external}, kliknij `Hosting`{.
 
 W polu `Konfiguracja` kliknij przycisk `...`{.action} po prawej stronie wzmianki `Konta e-mail`, a następnie kliknij przycisk `Odłącz opcję e-mail`{.action}.
 
-![email-activation](images/detach-email-included-webhosting.png){.thumbnail}
+![email-activation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/detach-email-included-webhosting.png){.thumbnail}
 
 Odpowiednia oferta MX zostanie Ci zaproponowana w momencie zakupu. Kiedy opłacisz zamówienie, Twoje konta e-mail będą nadal działać po zawieszeniu hostingu.
  
@@ -73,7 +73,7 @@ Zaloguj się do [Panelu klienta](/links/manager){.external}, kliknij `Hosting`{.
 
 W polu `Konfiguracja` kliknij przycisk `...`{.action} po prawej stronie wzmianki `Konta e-mail`, a następnie kliknij przycisk `Rezygnacja z opcji e-mail`{.action}.
 
-![email-activation](images/cancel-email-included-webhosting.png){.thumbnail}
+![email-activation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/cancel-email-included-webhosting.png){.thumbnail}
 
 > [!warning]
 >
@@ -85,4 +85,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

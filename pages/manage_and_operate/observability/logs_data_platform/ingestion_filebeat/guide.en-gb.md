@@ -1,15 +1,20 @@
 ---
 title: Pushing logs with a forwarder - Filebeat (Linux)
-updated: 2022-06-13
+updated: 2024-06-24
 ---
 
 ## Objective
 
 [Filebeat](https://github.com/elastic/beats/tree/master/filebeat){.external} is an open source file harvester, used to fetch logs files and can be easily setup to feed them into Logs Data Platform.
 
-The main benefits of Filebeat are it's resilient protocol to send logs, and a variety of modules ready-to-use for most of the common applications.
+The main benefits of Filebeat are its resilient protocol to send logs, and a variety of ready-to-use modules for most of the common applications.
 
 This guide will describe how to setup Filebeat OSS on your system for forwarding your logs on Logs Data Platform. It will also present you with some configuration setup useful to further structure your logs.
+
+> [!warning]
+>
+> As a consequence of the upcoming [OpenSearch 2.X upgrade](/pages/manage_and_operate/observability/logs_data_platform/upgrade_upgrade_to_opensearch_2), we recommend using an alternative such as [Fluent Bit](/pages/manage_and_operate/observability/logs_data_platform/ingestion_kubernetes_fluent_bit/).
+>
 
 ## Requirements
 
@@ -202,8 +207,17 @@ output.elasticsearch:
   username: "<username>"
   password: "<password>"
   index: "ldp-logs"
+  # Header for OpenSearch 2.X
+  headers:
+    X-Es-Compat: "7.10"
 
 ```
+
+> [!warning]
+>
+> The headers section of the output configuration is mandatory to ensure compatibility with OpenSearch 2.X.
+>
+
 
 This configuration deactivates the template configuration (unneeded for our endpoint). You need to provide your credentials **<username>** and **<password>** of your account. Like all Logs Data Platform APIs you can also use [tokens](/pages/manage_and_operate/observability/logs_data_platform/security_tokens). Don't change **ldp-logs** since it is our special destination index.
 

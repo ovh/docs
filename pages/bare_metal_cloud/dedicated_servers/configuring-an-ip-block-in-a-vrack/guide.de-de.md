@@ -16,7 +16,7 @@ Neben Private IP Addressing ist es mit dem [vRack](https://www.ovh.de/loesungen/
 - Sie haben den gewünschten privaten IP-Adressbereich vorbereitet.
 - Sie verfügen über einen mit vRack kompatiblen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/).
 - Sie haben einen [vRack](https://www.ovh.de/loesungen/vrack/){.external} Dienst aktiviert.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 > [!warning]
 > Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](https://eco.ovhcloud.com/de/about/) eingesetzt wird.
@@ -40,7 +40,7 @@ Neben Private IP Addressing ist es mit dem [vRack](https://www.ovh.de/loesungen/
 > Mit dieser Konfiguration können IP-Adressen eines Blocks auf mehreren Servern konfiguriert werden, sofern sich alle Server im selben vRack befinden wie der IP-Block. Der IP-Block muss über mindestens 2 IP-Adressen oder mehr verfügen, damit dies möglich ist.
 >
 
-Gehen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) in den Bereich `Bare Metal Cloud`{.action} und klicken Sie auf `Network`{.action}. Öffnen Sie anschließend das Menü `vRack`{.action}.
+Gehen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) in den Bereich `Bare Metal Cloud`{.action} und klicken Sie auf `Network`{.action}. Öffnen Sie anschließend das Menü `vRack`{.action}.
 
 Wählen Sie in der Liste Ihr vRack aus, um die Liste der verfügbaren Dienstleistungen anzuzeigen. Klicken Sie auf den IP-Block, den Sie zum vRack hinzufügen möchten, und klicken Sie auf den Button `Hinzufügen`{.action}.
 

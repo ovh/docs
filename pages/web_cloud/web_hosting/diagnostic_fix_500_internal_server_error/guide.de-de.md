@@ -12,7 +12,7 @@ updated: 2023-11-22
 
 Der Fehlertyp "500 Internal Server Error" kann Ihre gesamte Website oder nur Teile davon betreffen. Er kann dauerhaft sein, sporadisch auftreten oder zu einer leeren Seite führen.
 
-![error500](images/http-500.png){.thumbnail}
+![error500](/pages/assets/screens/other/browsers/errors/http-500.png){.thumbnail}
 
 Diese Fehler können auch durch Updates entstehen, die **automatisch** von Komponenten Ihrer Website durchgeführt werden und daher ohne jegliche Änderung Ihrerseits auftreten.
 
@@ -22,7 +22,7 @@ Diese Fehler können auch durch Updates entstehen, die **automatisch** von Kompo
 >
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister](/links/partner) und/oder stellen Ihre Fragen in der OVHcloud Community unter [https://community.ovh.com/en/](https://community.ovh.com/en/) (Englisch). Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten.
+> Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister](/links/partner) und/oder stellen Ihre Fragen in der [OVHcloud Community](/links/community) (Englisch). Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten.
 >
 
 ## Voraussetzungen
@@ -117,4 +117,4 @@ Wenn Ihre Website eine Datenbank nutzt, lesen Sie unsere Anleitung "[Backup in e
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

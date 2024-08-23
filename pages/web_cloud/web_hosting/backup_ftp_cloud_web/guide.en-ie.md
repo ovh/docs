@@ -48,21 +48,21 @@ To generate the recovery link, log in to the [OVHcloud Control Panel](/links/man
 
 Select the `FTP - SSH`{.action} tab and click the `Generate a backup`{.action} button on the right.
 
-![backupftpcw](images/generate-a-backup.png){.thumbnail}
+![backupftpcw](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup.png){.thumbnail}
 
 In the window that opens, select one of the available backups, then click `Next`{.action}.
 
-![backupftpcw](images/generate-a-backup-step-1.png){.thumbnail}
+![backupftpcw](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup-step-1.png){.thumbnail}
 
 A second window will appear, notifying you that the link to retrieve the backup file will be sent to you by email, and that no automatic restore on your Cloud Web hosting plan will be done by OVHcloud.
 
-![backupftpcw](images/generate-a-backup-step-2.png){.thumbnail}
+![backupftpcw](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup-step-2.png){.thumbnail}
 
 Click `Confirm`{.action} to confirm your request.
 
 If you have successfully generated the backup, the following message will appear in your [OVHcloud Control Panel](/links/manager):
 
-![backupftpcw](images/message-backup-progress.png){.thumbnail}
+![backupftpcw](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/message-backup-progress.png){.thumbnail}
 
 The backup takes between 10 and 15 minutes to be generated.
 
@@ -71,7 +71,7 @@ The backup takes between 10 and 15 minutes to be generated.
 When the backup is ready, you will receive an email via the email address associated with the admin NIC handle for your Cloud Web hosting plan.<br>
 This email contains a download link **valid for 9 days** from receipt of the email:
 
-![backupftpcw](images/backup-information.png){.thumbnail}
+![backupftpcw](/pages/assets/screens/email-sending-to-customer/cloud-web/backup-information.png){.thumbnail}
 
 The downloaded file is in the format *.tar.gz*.
 
@@ -94,4 +94,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

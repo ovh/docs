@@ -14,7 +14,7 @@ If you have reached the maximum capacity on your additional disk, you can add mo
 
 - A [Public Cloud instance](https://www.ovhcloud.com/en/public-cloud/) in your Public Cloud project
 - An [additional disk](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) created in your project
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - Administrative (sudo) access to your instance via SSH (Linux) or RDP (Windows)
 
 ## Instructions
@@ -23,7 +23,7 @@ The following steps presume that you have configured an additional disk accordin
 
 ### Modifying the size of the disk
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and open your `Public Cloud`{.action} project. Then click on `Block Storage`{.action} in the left-hand menu.
+Log in to the [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project. Then click on `Block Storage`{.action} in the left-hand menu.
 
 If the volume is attached to a **Windows instance**, click on `...`{.action} in the row of the volume and select `Detach from instance`{.action}.
 
@@ -157,4 +157,4 @@ The resized volume now includes the additional disk space.
 
 [Creating and configuring an additional disk on an instance](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

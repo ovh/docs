@@ -43,7 +43,7 @@ Si vous ne disposez pas de ces éléments, connectez-vous à votre [espace clien
 
 Les informations liées à votre espace de stockage apparaissent alors, ainsi qu'un tableau listant les utilisateurs FTP et SSH créés sur votre hébergement web.
 
-![ftpconnect](images/tab-pro.png){.thumbnail}
+![ftpconnect](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
 
 > [!primary]
 >
@@ -73,7 +73,7 @@ Retrouvez ci-dessous un descriptif des informations essentielles affichées sur 
 
 Si vous ne connaissez plus le mot de passe d'un utilisateur FTP ou SSH, consultez notre guide « [Modifier le mot de passe d’un utilisateur FTP](/pages/web_cloud/web_hosting/ftp_change_password) ».
 
-![ftpconnect](images/change-password.png){.thumbnail}
+![ftpconnect](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/change-password.png){.thumbnail}
 
 À ce stade, vous disposez de tous les éléments permettant de vous connecter à votre espace de stockage FTP.
 
@@ -94,11 +94,11 @@ Pour vous connecter à votre espace de stockage FTP via le « FTP Explorer »,
 
 Cliquez sur la section `Hébergements`{.action} dans la colonne de gauche. Choisissez le nom de l'hébergement web concerné, positionnez-vous sur l'onglet `FTP - SSH`{.action} puis cliquez sur le bouton `FTP Explorer`{.action}. 
 
-![ftpconnect](images/ftp-explorer.png){.thumbnail}
+![ftpconnect](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/ftp-explorer.png){.thumbnail}
 
 Sur la nouvelle page qui apparaît, renseignez votre identifiant FTP ainsi que son mot de passe, puis connectez-vous. Si les informations sont correctes, votre espace de stockage apparaît.
 
-![ftpconnect](images/login-interface.png){.thumbnail}
+![ftpconnect](/pages/assets/screens/other/web-tools/net2ftp/login-interface.png){.thumbnail}
 
 #### 2. Connexion via un logiciel FTP <a name="ftpsoftware"></a>
 
@@ -157,7 +157,7 @@ Si les informations sont correctes, vous serez connecté à votre espace de stoc
 
 Aidez-vous de notre documentation « [Utiliser une connexion SSH sur un hébergement web](/pages/web_cloud/web_hosting/ssh_on_webhosting) » si nécessaire.
 
-![ftpconnect](images/terminal-ssh-connected.png){.thumbnail}
+![ftpconnect](/pages/assets/screens/other/web-tools/terminal/terminal-ssh-connected.png){.thumbnail}
 
 ## Aller plus loin
 
@@ -175,4 +175,4 @@ Pour des prestations spécialisées (référencement, développement, etc), cont
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

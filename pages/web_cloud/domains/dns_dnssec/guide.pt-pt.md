@@ -1,7 +1,7 @@
 ---
 title: "Proteger o seu nome de domínio com DNSSEC"
 excerpt: "Saiba como proteger o seu domínio do Cache Poisoning ativando o DNSSEC"
-updated: 2023-07-26
+updated: 2024-08-20
 ---
 
 > [!primary]
@@ -19,6 +19,11 @@ Desta forma, podem reencaminhar os fluxos de entrada do seu domínio para os seu
 O **D**omain **N**ame **S**ystem **SEC**urity tensions (**DNSSEC**), permite proteger a configuração DNS do seu domínio contra o « Cache poisoning » verificando e autenticando as respostas DNS.
 
 **Saiba como ativar o DNSSEC para o seu domínio para o proteger do « Cache poisoning ».**
+
+> [!primary]
+>
+> A opção DNSSEC não está disponível para os nomes de domínio que tenham uma extensão em **.it**.
+>
 
 Para mais informações sobre o funcionamento do **DNSSEC**, consulte a nossa página « [Compreender o DNSSEC](/links/web/domains-dnssec){.external} ».
 
@@ -59,11 +64,11 @@ Ainda no separador `Informações gerais`{.action}, na sequência da [etapa 1](#
 
 Para isso, no quadro « Segurança », verifique o estado junto da menção « Delegação Segura - DNSSEC ».
 
-![dnssec](images/activate-dnssec.png){.thumbnail}
+![dnssec](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/activate-dnssec.png){.thumbnail}
 
 Graças ao botão de ativação situado por cima da menção `Delegação Segura - DNSSEC`{.action}, poderá ativar ou desativar o **DNSSEC** no seu domínio. Ao realizar esta ação, aparecerá uma nova janela a partir da qual poderá validar a modificação.
 
-![dnssec](images/activate-dnssec-confirmation.png){.thumbnail}
+![dnssec](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/activate-dnssec-confirmation.png){.thumbnail}
 
 > [!primary]
 >
@@ -84,4 +89,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 
+Fale com nossa [comunidade de utilizadores](/links/community). 

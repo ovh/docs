@@ -37,7 +37,7 @@ Istnieje kilka metod autoryzacji połączenia z zdalnym urządzeniem przez SSH.<
 Poniższe instrukcje dotyczą metody uwierzytelniania za pomocą nazwy użytkownika i hasła.<br>
 Możesz również skonfigurować klucze SSH, aby aktywować bezpieczne połączenia bez hasła. Więcej informacji znajdziesz w naszym [przewodniku po kluczach SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 
-Dane do logowania (identyfikator klienta i hasło) są wysyłane e-mailem po zainstalowaniu lub zainstalowaniu serwera z poziomu [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+Dane do logowania (identyfikator klienta i hasło) są wysyłane e-mailem po zainstalowaniu lub zainstalowaniu serwera z poziomu [Panelu client OVHcloud](/links/manager).
 Nazwa użytkownika odpowiada systemowi operacyjnemu, na przykład `ubuntu` lub `debian`.<br>
 Aby się zalogować, podaj również adres IPv4 lub nazwę hosta serwera. Informacje te są dostępne w e-mailu instalacyjnym oraz w panelu klienta.
 

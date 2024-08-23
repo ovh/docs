@@ -1,7 +1,7 @@
 ---
-title: 'Zmiana serwerów DNS domeny w OVHcloud'
-excerpt: 'Dowiedz się, jak zmodyfikować serwery DNS Twojej domeny w OVHcloud'
-updated: 2023-08-25
+title: "Wszystko o serwerach DNS"
+excerpt: "Sprawdź rolę serwerów DNS, ich zawartość oraz sposób działania z domeną"
+updated: 2024-06-17
 ---
 
 > [!primary]
@@ -10,126 +10,81 @@ updated: 2023-08-25
 
 ## Wprowadzenie
 
-### Zrozumienie pojęcia DNS 
+Skrót **DNS** oznaczający **D**omain **N**ame **S**ystem to zbiór elementów (serwery DNS, strefy DNS, etc.) pozwalających na dopasowanie nazwy domeny do adresu IP.
 
-Skrót DNS oznaczający **D**omain **N**ame **S**ystem, to zbiór elementów (serwery DNS, strefy DNS itp.) pozwalających na dopasowanie nazwy domeny z adresem IP.
-
-### Serwery DNS 
-
-**Serwery DNS** zawierają pliki konfiguracyjne DNS dla domen, nazywane **strefami DNS**.
-
-Strefa DNS zawiera informacje techniczne nazywane *rekordami DNS*.
-
-Możesz na przykład sprecyzować:
-
-- Adres IP (rekordy DNS typu *A* i *AAAA*) Twojego hostingu, aby wyświetlał Twoją stronę WWW wraz z domeną.
-- Serwery email (rekordy DNS typu *MX*), na które Twoja domena powinna przekierowywać wiadomości e-mail. Możesz wyświetlić je na Twoim (Twoich) spersonalizowanym(ych) adresie(ach) e-mail(ów) wraz z nazwą domeny.
-- Informacje związane z bezpieczeństwem / uwierzytelnianie Twoich usług (hosting, serwer www, serwer e-mail, etc.) przypisane do Twojej domeny (rekordy DNS typu *SPF*, *DKIM*, *DMARC*, etc.).
-
-Więcej informacji o strefach DNS znajdziesz w przewodniku "[Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
-
-W związku z tym należy zadeklarować serwery **DNS**, aby móc korzystać ze strefy DNS, którą hostują. 
-
-![DNS](images/dns-server.png){.thumbnail}
-
-**Serwery DNS** działają w parach:
-
-- Serwer DNS *główny*, który przekierowuje strumienie zapytań otrzymywanych przez nazwę domeny do strefy DNS, którą hostuje dla domeny. Strefa DNS dokonuje również *rozdzielczości DNS*, aby przekierować ruch na właściwe usługi (serwery, strona www, e-maile, itp.) przypisane do domeny.
-- Serwer DNS *secondary* oznacza *zapasowy*, który jest używany, jeśli serwer *główny* jest wysycony, niedostępny lub odpowiada wolniej niż serwer *secondary*.
-
-Niektórzy dostawcy DNS proponują czasem więcej niż 2 **serwery DNS* do zadeklarowania w Twojej domenie. W takim przypadku wprowadź wszystkie serwery DNS proponowane przez Twojego dostawcę DNS.
-
-**Dowiedz się, jak modyfikować serwery DNS Twojej domeny OVHcloud.**
+**Dowiedz się więcej o rolach serwerów DNS, ich zawartości oraz ich sposobie działania z nazwą domeny.**
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Wymagania początkowe
-
-- Posiadanie [domeny](/links/web/domains) zarejestrowanej w OVHcloud.
-- Posiadanie uprawnień [do zarządzania](/pages/account_and_service_management/account_information/managing_contacts) domeny z poziomu [Panelu klienta OVHcloud](/links/manager){.external}.
-- Dostęp do [panelu klienta OVHcloud](/links/manager){.external}.
-
-> [!primary]
->
-> *Registrar* to firma upoważniona do sprzedaży domen. OVHcloud jest jednym z tych *Registrars*.
->
-> Jeśli Twoja domena nie jest zarejestrowana w OVHcloud, zmodyfikuj serwery DNS u *Registrar*, u którego zarejestrowana jest aktualnie Twoja domena.
->
-
 ## W praktyce
 
-> [!warning]
->
-> **Należy zachować ostrożność podczas modyfikacji serwerów DNS domeny.** Błąd podczas obsługi może spowodować niedostępność Twojej strony WWW lub uniemożliwić otrzymywanie nowych wiadomości e-mail. Zrozumienie konsekwencji takiej zmiany pozwoli Ci lepiej zrozumieć, jaką zmianę wprowadzisz.
->
+### Rola serwerów DNS
 
-Kiedy zmieniasz serwery DNS Twojej domeny, zmieniasz jej konfigurację DNS. Nowa konfiguracja DNS zastępuje poprzednią i jest przechowywana na nowych serwerach DNS. Z technicznego punktu widzenia domena używa nowej strefy DNS.
+Wszystkie **serwery DNS** tworzą razem sieć DNS.
 
-Należy jednak pamiętać, że:
+Ta sieć DNS ułatwia użytkownikom dostęp do Internetu i różnych usług z nim związanych (strony WWW, usługi poczty elektronicznej, itp.).
 
-- Podczas zmiany serwera DNS (np. DNS zewnętrzny (DNS OVHCloud), zawartość starej konfiguracji / strefy DNS nie jest automatycznie kopiowana do nowej. Upewnij się, że nowa strefa DNS zawiera wszystkie rekordy DNS wymagane do prawidłowego działania usług powiązanych z Twoją domeną (np. strona WWW i konta e-mail).
+Umożliwiają one w szczególności korzystanie z [domen](/links/web/domains) w celu uzyskania dostępu do ulubionej strony WWW bez konieczności zachowywania adresu IP serwera, na którym hostowana jest ta strona.
 
-- Jeśli chcesz zmienić nie serwery DNS, ale jeden lub więcej rekordów aktualnej konfiguracji / strefy DNS, zapoznaj się z naszym przewodnikiem: "[Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
+![DNS resolution](/pages/assets/schemas/dns/dns-resolution.png){.thumbnail}
 
-- Niektóre organizacje lub operatorzy zarządzający rozszerzeniami domen mają określone wymagania dotyczące serwerów DNS (liczba serwerów nazw, wartość rekordów, etc.). W razie wątpliwości sprawdź wymagania u operatora domeny.
+Istnieją 4 rodzaje serwerów DNS.
 
-Upewnij się, że wprowadzone zmiany nie uniemożliwią dostępu do Twojej domeny. Jeśli nie jesteś tego pewien, skontaktuj się z osobą, która poprosiła Cię o wprowadzenie tych zmian.
+Zapoznaj się z poniższą tabelą przedstawiającą 4 typy serwerów DNS i ich interakcje. Przykłady podane w tabeli pochodzą z zapytania DNS wysyłanego z przeglądarki internetowej w celu sprawdzenia adresu IP strony internetowej *domain.tld*.
 
-### Dostęp do zarządzania serwerami DNS OVHcloud
+|Typ serwera DNS|Opis|Przykład|
+|---|---|---| 
+|Resolver DNS (lub DNS recursive)|Pierwszy serwer, który otrzymuje zapytanie DNS od klienta (przeglądarka internetowa, program pocztowy, etc.). Ten etap jest reprezentowany przez etap **1** schematu powyżej. Ten serwer pełni rolę bramy pomiędzy klientem a pozostałą częścią sieci DNS. Odpytuje on pozostałe trzy typy serwerów DNS, dopóki nie pobierze adresu IP żądanego przez zapytanie DNS z referencyjnego serwera DNS. Klient wysyła zapytanie DNS, aby poznać adres IP domeny *domain.tld*. |Przeglądarka internetowa wysyła zapytanie DNS, aby poznać adres IP domeny *domain.tld*. Dzięki temu znasz serwer, na którym hostowana jest strona WWW powiązana z domeną *domain.tld*.|
+|Główny serwer DNS (DNS root)|Zawiera katalog wszystkich TLD (nazwy domen najwyższego poziomu, takie jak *.com*, *.net*, *.fr*, etc.). Polecenie resolwer DNS wskaże adres serwera DNS TLD odpowiadający rozszerzeniu obecnemu w żądaniu DNS zażądanym przez klienta (kroki **2** i **3** powyższego schematu).|Resolwer DNS przekazuje zapytanie DNS odebrane dla domeny *domain.tld* do głównego serwera DNS i w odpowiedzi otrzymuje adres serwera DNS TLD zarządzającego rozszerzeniem *.tld*.|
+|Serwery DNS rozszerzeń/nazwy domen najwyższego poziomu (DNS TLD)|Zawiera katalog nazw domen dla danego rozszerzenia. Polecenie resolwera DNS wskaże adres referencyjnego serwera DNS odpowiadający nazwie domeny obecnej w zapytaniu DNS zażądanym przez klienta (kroki **4** i **5** powyższego schematu).|Następnie resolwer DNS przekazuje zapytanie DNS, które otrzymał dla *domain.tld* do serwera DNS TLD zarządzającego rozszerzeniami *.tld* i otrzymuje w odpowiedzi adres referencyjnego serwera DNS zarządzającego strefą DNS domeny *domain.tld*.|
+|Referencyjne serwery DNS (Authoritative DNS)|Ostatni serwer DNS zapytany przez rozwiązanie DNS (kroki **6** i **7** powyższego schematu). Zawiera strefę DNS aktywną dla nazwy domeny obecnej w żądaniu DNS zgłoszonym przez klienta. Poniżej znajdziesz zawartość tego typu serwera DNS, którą opiszemy w dalszej części tego przewodnika.|Następnie resolwer DNS przekazuje zapytanie DNS, które otrzymał dla *domain.tld* do referencyjnego serwera DNS, który zarządza strefą DNS domeny *domain.tld* i otrzymuje w odpowiedzi adres IP (przykład 203.0.113.0) serwera hostującego stronę www dla domeny *domain.tld*.|
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external} i przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij `Domeny`{.action}, następnie wybierz odpowiednią domenę. Wybierz zakładkę `Serwery DNS`{.action}.
+Po pobraniu przez program rozpoznawania nazw DNS adresu IP serwera wyszukiwania za pośrednictwem zapytania DNS żądanego przez klienta, zwraca on ten adres IP klientowi (krok **8** z powyższego schematu).
 
-Tabela, która się wyświetla zawiera listę serwerów DNS zdefiniowanych aktualnie przez OVHcloud dla Twojej domeny. Może pojawić się kilka serwerów DNS, przy czym jeden serwer odpowiada jednej linii w tabeli.
+Następnie klient wysyła kolejne zapytanie bezpośrednio do serwera skojarzonego z adresem IP uzyskanym dzięki rozpoznawaniu DNS (etap **9** z powyższego schematu). Dzięki temu użytkownik może zalogować się lub pobrać elementy potrzebne do rozwiązania tego drugiego żądania (etap **10** z powyższego schematu). W podanym przykładzie klient (przeglądarka internetowa) odpytuje serwer o adresie IP 203.0.113.0, aby pobrać treści do wyświetlenia dla strony www *domain.tld*.
 
-> [!primary]
->
-> Gdy korzystasz z serwerów DNS OVHcloud, numery zawarte w nazwach serwerów nie mają żadnego związku z używanymi przez Ciebie usługami. Tylko opcja [DNS anycast](/links/web/domains-options) używa określonych serwerów DNS, które są automatycznie przypisywane. 
+Zapoznaj się z naszym przewodnikiem "[Modyfikacja serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_edit)", jeśli chcesz wykonać tę akcję dla domeny zarejestrowanej w OVHcloud.
 
-![dns-server](images/tab.png){.thumbnail}
+### Treść serwera DNS (Authoritative)
 
-### Zmień serwery DNS
+**Serwer DNS (Authoritative)** zawiera katalog nazw domen z różnymi rozszerzeniami (TLD).
 
-Jeśli chcesz korzystać z zewnętrznych serwerów DNS, musisz zastąpić serwery DNS OVHcloud tymi zewnętrznymi serwerami DNS, a nie dodawać oba razem.
+Dla każdej nazwy domeny zawartej w katalogu przypisana jest **strefa DNS** zawierająca konfigurację DNS, która zostanie zastosowana do nazwy domeny.
 
-Kliknij przycisk `Zmień serwery DNS`{.action} po prawej stronie.
-
-W formularzach wprowadzania należy **zastąpić** aktualne wartości serwerów DNS informacjami o nowych serwerach DNS, które mają zostać ustawione. Aby dodać nowe serwery do aktualnej listy, kliknij przycisk `+`{.action} po prawej stronie w ostatniej linii tabeli. W tabeli, którą możesz uzupełnić, pojawi się dodatkowy wiersz.
-
-> [!warning]
->
-> Nie mieszaj grupy serwerów DNS z innymi serwerami. 
->
-> Na przykład *dns19.ovh.net* i *ns19.ovh.net* odpowiadają grupie serwerów DNS OVHcloud, idą w parze i są synchronizowane. Jeśli dodajesz do tego zewnętrzne serwery DNS OVHcloud (lub inną grupę OVHcloud), rozdzielczość DNS będzie losowa między serwerami DNS OVHcloud i wskazanymi zewnętrznymi serwerami DNS.
->
-> W OVHCloud grupy serwerów DNS są identyfikowane przy użyciu numeru obecnego w nazwach serwerów. Dwa serwery DNS OVHcloud należą do tej samej grupy serwerów, jeśli dzielą one ten sam numer. Na przykład *dns19.ovh.net* i *ns19.ovh.net*.
->
-
-Po wpisaniu informacji, kliknij przycisk `Zastosuj konfigurację`{.action}. Statusy serwerów DNS zostaną zaktualizowane w tabeli i pojawią się nowe informacje, które właśnie podałeś.
-
-![dns-server](images/edit-dns-servers.png){.thumbnail}
+Strefa DNS zawiera informacje techniczne nazywane *rekordami DNS*. Strefa DNS jest jak nagłówek.
 
 > [!success]
 >
-> Zmiana serwerów DNS przypisanych do domeny spowoduje maksymalną propagację w czasie od **24** do **48** godzin, zanim efekty tej modyfikacji staną się widoczne.
+> - Więcej informacji na temat stref DNS znajdziesz w przewodniku "[Wszystko o strefie DNS](/pages/web_cloud/domains/dns_zone_general_information) ".
+> - Zapoznaj się z przewodnikiem dotyczącym [Wszystko o rekordach DNS](/pages/web_cloud/domains/dns_zone_records), aby lepiej zrozumieć całość.
 >
 
-### Przypadki szczególne: Zresetuj serwery DNS 
+Oznacza to, że należy zadeklarować **serwery DNS (Authoritative)** (u rejestratora domeny), aby korzystać ze strefy DNS, którą hostują.
 
-Przycisk `Resetuj serwery DNS`{.action} pozwala zresetować aktualne serwery DNS, zastępując je automatycznie serwerami DNS OVHcloud, z których pochodzą. Użyj tej opcji **tylko**, jeśli chcesz ponownie korzystać z serwerów DNS OVHcloud (oraz strefy DNS OVHcloud powiązanej z serwerami DNS OVHcloud). 
+![DNS](/pages/assets/schemas/dns/dns-server.png){.thumbnail}
 
-![dns-server](images/reset-the-dns-servers.png){.thumbnail}
+### Działanie serwera DNS (Authoritative) z nazwą domeny
 
-Po zakończeniu operacji należy odczekać określony czas, zanim zmiany staną się widoczne. Na czas oczekiwania składają się dwa czynniki:
+#### Deklaracja serwerów DNS (Authoritative) u rejestratora domeny
 
-- zmiana wprowadzona w OVHcloud musi zostać uwzględniona przez *registry* zarządzający rozszerzeniem Twojej domeny (na przykład rejestr rozszerzeń *.pl*). Możesz śledzić postęp operacji w [Panelu klienta OVHcloud](/links/manager){.external}. W tym celu przejdź do sekcji `Web Cloud`{.action}, przejdź do sekcji `Domeny`{.action} w kolumnie po lewej stronie, następnie kliknij `Operacje w toku`{.action}.
-- po uwzględnieniu zmiany przez organizację zarządzającą rozszerzeniem domeny konieczny jest maksymalny czas propagacji wynoszący **48 godzin**, aby modyfikacje stały się w pełni widoczne.
+Aby strefa DNS skojarzona z nazwą domeny znajdującą się w katalogu serwera DNS była aktywna, ten serwer DNS musi zostać zadeklarowany u rejestratora domeny.
+
+Jako środek ostrożności należy zadeklarować u rejestratora domeny co najmniej 2 **serwery DNS (Authoritative)** (podstawowy serwer DNS i zapasowy serwer DNS). Oba działają w taki sam sposób. Jeśli jednak jeden z serwerów zareaguje szybciej, zostanie on zapytany w pierwszej kolejności przez serwery DNS. Jeśli jeden z serwerów nie odpowiada lub przestał odpowiadać, inny serwer DNS odpowiada na zapytanie DNS.
+
+Niektórzy dostawcy DNS proponują czasem więcej niż 2 **serwery DNS (Authoritative)** do zadeklarowania w Twojej domenie. W takim przypadku wprowadź wszystkie serwery DNS proponowane przez Twojego dostawcę DNS.
 
 ## Sprawdź również
 
-[Modyfikacja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
+[Wszystko o strefie DNS](/pages/web_cloud/domains/dns_zone_general_information).
 
+[Wszystko o rekordach DNS](/pages/web_cloud/domains/dns_zone_records).
+
+[Zmień serwery DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_edit).
+
+[Modyfikuj strefę DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
+ 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
-
+ 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
-
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 
+ 
+Dołącz do [grona naszych użytkowników](/links/community).

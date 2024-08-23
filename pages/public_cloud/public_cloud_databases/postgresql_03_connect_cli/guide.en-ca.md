@@ -71,7 +71,7 @@ Don't forget you need to modify the username, password, hostname and port.
 In our example, it will look like this:
 
 ```console
-$ psql "postgre://avnadmin:Mysup3rs3cur3p4ssw0rd@postgresql-ab123456-cd7891011.database.cloud.ovh.net:20184/defaultdb?sslmode=require"
+$ psql "postgres://avnadmin:Mysup3rs3cur3p4ssw0rd@postgresql-ab123456-cd7891011.database.cloud.ovh.net:20184/defaultdb?sslmode=require"
 ```
 
 Once connected correctly, you should see something similar to:

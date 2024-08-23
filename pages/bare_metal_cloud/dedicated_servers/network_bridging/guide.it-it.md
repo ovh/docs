@@ -1,7 +1,7 @@
 ---
 title: 'Modalità bridge IP'
 excerpt: Come configurare l'accesso a Internet delle macchine virtuali utilizzando la modalità bridge
-updated: 2023-11-24
+updated: 2024-07-15
 ---
 
 > [!primary]
@@ -25,16 +25,16 @@ La connessione di rete in modalità bridge può essere utilizzata per configurar
 
 - Disporre di un server dedicato con un hypervisor installato (ad esempio [VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox)
 - Disporre di almeno un indirizzo [Additional IP](https://www.ovhcloud.com/it/bare-metal/ip/) connesso al server
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 > [!warning]
-> Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](https://eco.ovhcloud.com/it/about/).
+> Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](/links/bare-metal/eco-about).
 >
-> Per maggiori informazioni, consulta la nostra [a confronto](https://eco.ovhcloud.com/it/compare/).
+> Per maggiori informazioni, consulta la nostra [a confronto](/links/bare-metal/eco-compare).
 >
-> Questa guida non si applica ai server di gamma [Scale](https://www.ovhcloud.com/it/bare-metal/scale/) e [High Grade](https://www.ovhcloud.com/it/bare-metal/high-grade/).
+> Questa guida non si applica ai server di gamma [Scale](https://www.ovhcloud.com/it/bare-metal/scale/) e [High Grade](https://www.ovhcloud.com/it/bare-metal/high-grade/). Lo stesso vale per la gamma di server Advance con le cpu AMD Epyc 4K e 8K lanciate a partire dal luglio 2024.
 >
-> Accedi alla [pagina di configurazione dedicata](/pages/bare_metal_cloud/dedicated_servers/proxmox-network-HG-Scale).
+> Consulta le guide seguenti: [Configurare la rete su ESXi sulle gamme High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/esxi-network-HG-Scale), [Configurare la rete su Proxmox VE sulle gamme High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/proxmox-network-HG-Scale) e [Configurare la rete su Windows Server con Hyper-V sulle gamme High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale).
 
 ## Procedura
 
@@ -42,7 +42,7 @@ Gli step di base sono sempre gli stessi, indipendentemente dai sistemi utilizzat
 
 - creazione di un indirizzo MAC virtuale per un indirizzo IP di trasferimento
 - regolare l'indirizzo MAC della macchina virtuale (VM) su questo nuovo indirizzo
-- configurare l'indirizzo IP, la maschera di rete, il gateway e la strada verso il gateway all'interno della macchina virtuale.
+- configurare **l'indirizzo IP**, **la maschera di rete**, **il gateway** e **la strada verso il gateway** all'interno della macchina virtuale.
 
 Per questo esempio, nei nostri esempi di codice utilizzeremo i seguenti valori: che dovranno essere sostituiti dai tuoi valori:
 
@@ -52,7 +52,7 @@ Per questo esempio, nei nostri esempi di codice utilizzeremo i seguenti valori: 
 
 ### Assegna un indirizzo MAC virtuale
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca sul menu `Bare Metal Cloud`{.action} e apri il menu `Network`{.action}. Clicca su `IP`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca sul menu `Bare Metal Cloud`{.action} e apri il menu `Network`{.action}. Clicca su `IP`{.action}.
 
 Clicca sulla scheda `Additional IP`{.action}.
 
@@ -68,21 +68,21 @@ Seleziona "ovh" nel menu a tendina "Tipo", inserisci un nome nel campo "Nome del
 
 Dopo qualche secondo, nella colonna "MAC virtuale" della riga indirizzo Additional IP aggiuntivo apparirà un indirizzo MAC virtuale. Questo indirizzo MAC virtuale sarà necessario per la configurazione della macchina virtuale sull'host.
 
-### Determinare l'indirizzo del gateway
+### Determinare l'indirizzo del gateway <a name="determinegateway"></a>
 
 Per configurare le tue macchine virtuali per l'accesso a Internet, devi conoscere il gateway della tua macchina host, cioè il tuo server dedicato. L'indirizzo del gateway è composto dai primi tre byte dell'indirizzo IP principale del tuo server, l'ultimo byte è di 254. Ad esempio, se l'indirizzo IP principale del tuo server è:
 
-- 169.254.10.20
+- 203.0.113.1
 
 L'indirizzo del gateway sarà:
 
-- 169.254.10.254
+- 203.0.113.**254**
 
 È inoltre possibile recuperare l’indirizzo del gateway tramite [il tuo Spazio Cliente OVHcloud](#viacontrolpanel) o l’[API OVHcloud](#viaapi).
 
 #### Dallo Spazio Cliente OVHcloud <a name="viacontrolpanel"></a>
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca su `Bare Metal Cloud`{.action} e seleziona il tuo server nella sezione `Server dedicati`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Bare Metal Cloud`{.action} e seleziona il tuo server nella sezione `Server dedicati`{.action}.
 
 L’indirizzo gateway IPv4 assegnato al tuo server è visualizzato nella sezione `Rete` della scheda `Informazioni generali`{.action}. Una volta effettuata la copia, prosegui con l’applicazione della configurazione.
 
@@ -90,7 +90,7 @@ L’indirizzo gateway IPv4 assegnato al tuo server è visualizzato nella sezione
 
 #### Tramite le API OVHcloud <a name="viaapi"></a>
 
-Nella [pagina API OVHcloud](https://api.ovh.com/console/), clicca in alto a destra su `Login`{.action}. Nella pagina successiva, inserisci il tuo identificativo cliente OVHcloud.
+Nella [pagina API OVHcloud](https://eu.api.ovh.com/console/), clicca in alto a destra su `Login`{.action}. Nella pagina successiva, inserisci il tuo identificativo cliente OVHcloud.
 
 Eseguire la chiamata API seguente, indicando il nome interno del server (esempio: `ns3956771.ip-169-254-10.eu`):
 
@@ -103,10 +103,15 @@ Eseguire la chiamata API seguente, indicando il nome interno del server (esempio
 
 > [!primary]
 >
-Per tutti i sistemi operativi e le distribuzioni, è necessario configurare la propria macchina virtuale con l'indirizzo MAC virtuale creato nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
+Per tutti i sistemi operativi e le distribuzioni, è necessario configurare la propria macchina virtuale con l'indirizzo MAC virtuale creato nello [Spazio Cliente OVHcloud](/links/manager).
 >
 
 #### Proxmox
+
+> [!warning]
+>
+> Le istruzioni seguenti sono valide per le macchine virtuali create in precedenza con un sistema operativo preinstallato. Se non hai creato delle VM, consulta le opzioni disponibili alla pagina [Qemu/KVM Virtual Machine](https://pve.proxmox.com/wiki/Qemu/KVM_Virtual_Machines){.external} (EN) di Proxmox.
+>
 
 Dopo aver creato la macchina virtuale e quando è ancora spenta:
 
@@ -124,142 +129,311 @@ In seguito aggiungi l'indirizzo MAC che hai creato precedentemente.
 A questo punto puoi avviare la tua macchina virtuale e passare agli step successivi, in base al sistema operativo scelto.
 
 #### VMware ESXi
+
+> [!warning]
+>
+> Le istruzioni seguenti sono valide per le macchine virtuali create in precedenza con un sistema operativo preinstallato. Se non hai creato una VM, consulta la guida [Creare una macchina virtuale nel client host VMware](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID-77AB6625-F968-4983-A230-A020C0A70326.html){.external} (EN) sulla pagina VMware.
+>
+
+
 Una volta creata la macchina virtuale e disattivata, clicca con il tasto destro sul pulsante `Modifica le impostazioni`{.action}.
 
 ![Menu contestuale VM](images/vmware_01.png){.thumbnail}
 
-Imposta `Netwok Adapter 1`{.action} e modifica il valore nel menu a tendina `Indirizzo MAC`{.action} in modalità "Manuel" e inserisci l'indirizzo MAC VMware creato precedentemente.
+Imposta `Network Adapter 1`{.action} e modifica il valore nel menu a tendina `Indirizzo MAC`{.action} in modalità "Manuel" e inserisci l'indirizzo MAC VMware creato precedentemente.
 
 ![Modifica le impostazioni](images/vmware_02.png){.thumbnail}
 
 A questo punto puoi avviare la tua macchina virtuale e passare agli step successivi, secondo il tuo sistema operativo.
 
-### Configura le macchine virtuali
+### Configura le macchine virtuali <a name="configurationsteps"></a>
 
 #### Debian
 
-Accedi all'interfaccia di sistema (o *shell*) della tua macchina virtuale. Una volta connesso, apri il file di configurazione di rete della macchina virtuale, situato in `/etc/network/interfaces`.
-Modifica il file in modo che rispecchi la configurazione qui sotto. Ricordati di sostituire le variabili con i tuoi valori:
+> [!warning]
+>
+> Si noti che gli esempi seguenti presuppongono che l'utente abbia effettuato l'accesso con privilegi limitati, da cui l'utilizzo di *sudo* prima di ogni ordine. Se sei connesso come *root*, non è necessario farlo.
+>
 
-- Distribuzioni vecchie:
+Di default, il file di configurazione di rete della macchina virtuale si trova in `/etc/network/interfaces`.
 
-```console
-auto lo eth0
-iface lo inet loopback
-iface eth0 inet static
-    address ADDITIONAL_IP
-    netmask 255.255.255.255
-    broadcast ADDITIONAL_IP
-    post-up route add GATEWAY_IP dev eth0
-    post-up route add default gw GATEWAY_IP
-    pre-down route del GATEWAY_IP dev eth0
-    pre-down route del default gw GATEWAY_IP
-```
-
-- Distribuzioni recenti:
-
-```console
-auto lo eth0
-iface lo inet loopback
-iface eth0 inet static
-    address ADDITIONAL_IP
-    netmask 255.255.255.255
-    broadcast ADDITIONAL_IP
-    post-up ip route add GATEWAY_IP dev eth0
-    post-up ip route add default via GATEWAY_IP
-    pre-down ip route del GATEWAY_IP dev eth0
-    pre-down ip route del default via GATEWAY_IP
-```
-
-Sostituisci anche `eth0` se il tuo sistema utilizza nomi di interfaccia di rete prevedibili. Per trovare i nomi di interfaccia di rete, esegui questo comando:
+Una volta connesso alla shell della macchina virtuale, esegui questo comando per identificare il nome dell’interfaccia:
 
 ```bash
 ls /sys/class/net
 ```
 
-Salva e chiudi il file e riavvia la macchina virtuale.
+Esegui una copia del file di configurazione per poter ripristinare la versione precedente se necessario:
 
-#### Sistemi operativi Red Hat basati su Red Hat (CentOS 6, Scientific Linux, ClearOS, ecc...)
+```bash
+sudo cp /etc/network/interfaces /etc/network/interfaces.bak
+```
 
-Apri un terminale sulla tua macchina virtuale. Una volta connesso, apri il file di configurazione di rete della macchina virtuale. che si trova in `/etc/network/interfaces`. Modifica il file in modo che rispecchi la configurazione qui sotto. Ricordati di sostituire le variabili con i tuoi valori:
+In caso di errore, puoi annullare l’operazione eseguendo questi comandi:
+
+```bash
+sudo rm -f /etc/network/interfaces
+sudo cp /etc/network/interfaces.bak /etc/network/interfaces
+```
+
+Modifica il file in modo che rifletta la configurazione riportata di seguito, sostituisci `INTERFACE_NAME`, `ADDITIONAL_IP` e `GATEWAY_IP` con i tuoi valori.
+
+```bash
+sudo nano /etc/network/interfaces
+```
 
 ```console
-DEVICE=eth0
+auto lo
+iface lo inet loopback
+
+# The primary network interface
+auto INTERFACE_NAME
+iface INTERFACE_NAME inet static
+address ADDITIONAL_IP
+netmask 255.255.255.255
+gateway GATEWAY_IP
+```
+
+**Esempio**
+
+```console
+auto lo
+iface lo inet loopback
+
+# The primary network interface
+auto ens192
+iface ens192 inet static
+address 192.0.2.1
+netmask 255.255.255.255
+gateway 203.0.113.254
+```
+
+Salvare e chiudere il file.<br>
+Successivamente, modifica o crea il file `/etc/resolv.conf`:
+
+```bash
+sudo nano /etc/resolv.conf
+```
+
+Aggiungi questa riga:
+
+```console
+nameserver 213.186.33.99
+```
+
+Salvare e chiudere il file.<br>
+A questo punto, è necessario mettere online l’interfaccia di rete. Per farlo, inserisci questo comando (sostituisci `ens192` con i tuoi valori):
+
+```bash
+sudo ip link set ens192 up
+```
+
+Riavvia il servizio di rete eseguendo il comando:
+
+```bash
+sudo systemctl restart networking
+```
+
+Per verificare che la macchina virtuale sia completamente connessa a Internet, esegui il comando:
+
+```bash
+ping -c 4 example.com
+PING example.com (93.184.215.14) 56(84) bytes of data.
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=1 ttl=55 time=29.3 ms
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=2 ttl=55 time=24.9 ms
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=3 ttl=55 time=30.8 ms
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=4 ttl=55 time=27.0 ms
+
+--- example.com ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 24.925/28.028/30.840/2.254 ms
+```
+
+Se ricevi una risposta, significa che l’Additional IP è stato configurato correttamente. In caso contrario, riavvia la macchina virtuale e riavvia il ping.
+
+#### Sistemi operativi Red Hat e basati su Red Hat (CentOS, Rocky Linux 8, Alma Linux 8, ecc.)
+
+Di default, il file di configurazione di rete della macchina virtuale si trova in `/etc/sysconfig/network-scripts/`. A titolo dimostrativo, il nostro file si chiama `ifcfg-eth0`:
+
+Una volta connesso alla shell della macchina virtuale, esegui questo comando per identificare il nome dell’interfaccia:
+
+```bash
+ls /sys/class/net
+```
+
+Esegui una copia del file di configurazione per poter ripristinare la versione precedente se necessario:
+
+```bash
+sudo cp /etc/sysconfig/network-scripts/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0.bak
+```
+
+In caso di errore, puoi annullare l’operazione eseguendo questi comandi:
+
+```bash
+sudo rm -f etc/sysconfig/network-scripts/ifcfg-eth0
+sudo cp /etc/sysconfig/network-scripts/ifcfg-eth0.bak etc/sysconfig/network-scripts/ifcfg-eth0
+```
+
+Modificare il file in modo che rifletta la configurazione seguente, sostituire `ADDITIONAL_IP`, `GATEWAY_IP` e `MY:VI:RT:UA:LM:AC` con i propri valori. Inoltre, è necessario modificare i parametri BOOTPROTO, ONBOOT e DNS (o aggiungerli se mancanti). Non è necessario modificare altre righe.
+
+```bash
+sudo vi /etc/sysconfig/network-scripts/ifcfg-eth0
+```
+
+```console
+PROXY_METHOD=none
+BROWSER_ONLY=no
 BOOTPROTO=none
+DEFROUTE=yes
+IPV4_FAILURE_FATAL=no
+IPV6INIT=yes
+IPV6_AUTOCONF=yes
+IPV6_DEFROUTE=yes
+IPV6_FAILURE_FATAL=no
+IPV6_ADDR_GEN_MODE=stable-privacy
+NAME=eth0
+UUID=120ae2c6-4aa6-xxxx-xxxx-xxxxxxxxxx
+DEVICE=eth0
 ONBOOT=yes
-USERCTL=no
-IPV6INIT=no
-PEERDNS=yes
-TYPE=Ethernet
 NETMASK=255.255.255.255
 IPADDR=ADDITIONAL_IP
 GATEWAY=GATEWAY_IP
-ARP=yes
 HWADDR=MY:VI:RT:UA:LM:AC
+DNS=213.186.33.99
 ```
 
-Ora, registra e chiudi il file.
+Salvare e chiudere il file.<br>
+Creare quindi un nuovo file, `route-(interface_name)`, nella directory `/etc/sysconfig/network-scripts/` e impostare i seguenti percorsi predefiniti per l'interfaccia utilizzando il gateway definito nel [passo 2](#determinegateway).
 
-In seguito apri il file di routing della macchina virtuale. che si trova in `/etc/sysconfig/network-scripts/route-eth0`. Modifica il file in modo che rispecchi la configurazione qui sotto. Ricordati di sostituire le variabili con i tuoi valori:
+Nel nostro esempio, il nostro file si chiama `route-eth0` (sostituisci `eth0` con i tuoi valori):
+
+```bash
+sudo vi /etc/sysconfig/network-scripts/route-eth0
+```
+
+Modifica il file in modo che rifletta la configurazione riportata di seguito, sostituisci `GATEWAY_IP` con il tuo valore.
 
 ```console
 GATEWAY_IP dev eth0
 default via GATEWAY_IP dev eth0
 ```
 
-Salva e chiudi il file e riavvia la macchina virtuale.
+Salvare e chiudere il file.
 
-#### CentOS 7
+Riavvia la rete eseguendo il comando:
 
-> [!primary]
-> 
-> Per CentOS 7 il nome della scheda di rete varia in base alle opzioni di installazione. Dovrai verificare il nome dell'adattatore e utilizzarlo per configurare la tua macchina virtuale. Puoi trovare i nomi di interfaccia di rete con il comando `ls /sys/class/net`.
-> 
+Per verificare che la macchina virtuale sia completamente connessa a Internet, esegui il comando:
 
-Apri un terminale sulla tua macchina virtuale. Una volta connesso, apri il file di configurazione di rete della macchina virtuale, che si trova in `/etc/sysconfig/network-scripts/ifcfg-(nome dell'interfaccia)`. Modifica il file in modo che rispecchi la configurazione qui sotto. Ricordati di sostituire le variabili con i tuoi valori:
-
-```console
-DEVICE=(interfaccia-name)
-BOOTPROTO=none
-ONBOOT=yes
-USERCTL=no
-IPV6INIT=no
-PEERDNS=yes
-TYPE=Ethernet
-NETMASK=255.255.255.255
-IPADDR=ADDITIONAL_IP
-GATEWAY=GATEWAY_IP
-ARP=yes
-HWADDR=MY:VI:RT:UA:LM:AC
+```bash
+sudo systemctl restart network
 ```
 
-Salva e chiudi il file
+Per verificare che la macchina virtuale sia completamente connessa a Internet, esegui il comando:
 
-Apri il file di routing della macchina virtuale, che si trova in `/etc/sysconfig/network-scripts/route-(nome dell'interfaccia)`. Modifica il file in modo che rispecchi la configurazione qui sotto. Ricordati di sostituire le variabili con i tuoi valori:
+```bash
+ping -c 4 example.com
+PING example.com (93.184.215.14) 56(84) bytes of data.
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=1 ttl=55 time=29.3 ms
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=2 ttl=55 time=24.9 ms
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=3 ttl=55 time=30.8 ms
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=4 ttl=55 time=27.0 ms
 
-```console
-GATEWAY_IP - 169.254.10.254 (nome-interfaccia)
-NETWORK_GW_VM - 255.255.255.0 (inserisci il nome dell'interfaccia)
-default GATEWAY_IP
+--- example.com ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 24.925/28.028/30.840/2.254 ms
 ```
 
-Salva e chiudi il file.
+Se ricevi una risposta, significa che l’Additional IP è stato configurato correttamente. In caso contrario, riavvia la macchina virtuale e riavvia il ping.
 
-In seguito apri il file di routing della macchina virtuale. Il sito è disponibile all’indirizzo `/etc/sysconfig/network/resolv.conf`.
+#### Rocky Linux 9 e Alma Linux 9
 
-```console
-nameserver 213.186.33.99
+Nelle versioni precedenti di Rocky Linux e Alma Linux, i profili di rete erano archiviati in formato ifcfg in questa directory: `/etc/sysconfig/network-scripts/`. Tuttavia, il formato ifcfg non è più consigliato ed è stato modificato in keyfiles. Il file di configurazione si trova nella directory `/etc/NetworkManager/system-connections/`.
+
+Una volta connesso alla shell della macchina virtuale, esegui questo comando per identificare il nome dell’interfaccia:
+
+```bash
+ls /sys/class/net
 ```
 
-Dopo aver salvato e chiuso il file, riavvia la tua rete o la tua macchina virtuale.
+Esegui una copia del file di configurazione per poter ripristinare la versione precedente se necessario.
+
+Ad esempio, il nostro file si chiama `ens18-nmconnection`:
+
+```bash
+sudo cp /etc/NetworkManager/system-connections/ens18-nmconnection /etc/NetworkManager/system-connections/ens18-nmconnection.bak
+```
+
+In caso di errore, puoi annullare l’operazione eseguendo questi comandi:
+
+
+```bash
+sudo rm -f /etc/NetworkManager/system-connections/ens18-nmconnection
+sudo cp /etc/NetworkManager/system-connections/ens18-nmconnection.bak /etc/NetworkManager/system-connections/ens18-nmconnection
+```
+
+Modificare il file in modo che rifletta la configurazione riportata di seguito, sostituire `ADDITIONAL_IP` e `GATEWAY_IP` con i propri valori. In questo esempio, il nome dell’interfaccia è `ens18`. Sostituire questo valore se non è applicabile.
+
+```console
+[ipv4]
+method=auto
+may-fail=false
+address1=ADDITIONAL_IP/32
+gateway=GATEWAY_IP
+```
+
+Salvare e chiudere il file.<br>
+Riavvia l’interfaccia di rete con questo comando:
+
+```bash
+sudo systemctl restart NetworkManager
+```
+
+Per verificare che la macchina virtuale sia completamente connessa a Internet, esegui il comando:
+
+```bash
+ping -c 4 example.com
+PING example.com (93.184.215.14) 56(84) bytes of data.
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=1 ttl=55 time=29.3 ms
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=2 ttl=55 time=24.9 ms
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=3 ttl=55 time=30.8 ms
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=4 ttl=55 time=27.0 ms
+
+--- example.com ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 24.925/28.028/30.840/2.254 ms
+```
+
+Se ricevi una risposta, significa che l’Additional IP è stato configurato correttamente. In caso contrario, riavvia la macchina virtuale e riavvia il ping.
+
 
 #### FreeBSD
 
-Apri un terminale sulla tua macchina virtuale. Una volta connesso, apri il file di configurazione di rete della macchina virtuale, che si trova nella cartella `/etc/rc.conf`. Modifica il file in modo che rispecchi la configurazione qui sotto. In questo esempio, il nome dell'interfaccia è "em0". Se necessario, è possibile modificarlo.
+Per impostazione predefinita, il file di configurazione di rete della macchina virtuale si trova in `/etc/rc.conf`.
+
+Una volta connesso alla shell della macchina virtuale, esegui questo comando per identificare il nome dell’interfaccia:
+
+```bash
+ls /sys/class/net
+```
+
+Esegui una copia del file di configurazione per poter ripristinare la versione precedente se necessario:
+
+```bash
+sudo cp /etc/rc.conf /etc/rc.conf.bak
+```
+
+In caso di errore, puoi annullare l’operazione eseguendo questi comandi:
+
+```bash
+sudo rm -f /etc/rc.conf
+sudo cp /etc/rc.conf.bak /etc/rc.conf
+```
+
+Modificare il file in modo che rifletta la configurazione riportata di seguito, sostituire `ADDITIONAL_IP` e `GATEWAY_IP` con i propri valori. In questo esempio, il nome dell’interfaccia è `em0`. Sostituire questo valore se non è applicabile.
 
 ```console
 ifconfig_em0="inet ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP"
-static_route="net1 net2"
+static_routes="net1 net2"
 route_net1="-net GATEWAY_IP/32 -interface em0"
 route_net2="default GATEWAY_IP"
 ```
@@ -272,49 +446,116 @@ nameserver 213.186.33.99
 
 Salva e chiudi il file e riavvia la macchina virtuale.
 
-#### Ubuntu 18.04
-
-Per prima cosa connetti SSH alla tua macchina virtuale e apri il file di configurazione di rete situato in `/etc/netplan/`utilizzando il comando seguente. Per dimostrarlo, il nostro file si chiama "50-cloud-init.yaml".
-
 ```bash
-# nano /etc/netplan/50-cloud-init.yaml
+ping -c 4 example.com
+PING example.com (93.184.215.14) 56(84) bytes of data.
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=1 ttl=55 time=29.3 ms
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=2 ttl=55 time=24.9 ms
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=3 ttl=55 time=30.8 ms
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=4 ttl=55 time=27.0 ms
+
+--- example.com ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 24.925/28.028/30.840/2.254 ms
 ```
 
-Una volta avviato il file, modifica con questo codice:
+Se ricevi una risposta, significa che l’Additional IP è stato configurato correttamente. In caso contrario, riavvia la macchina virtuale e riavvia il ping.
+
+#### Ubuntu
+
+Accedi alla console per accedere alla macchina virtuale ed esegui questo comando per identificare il nome dell’interfaccia:
+
+```bash
+ip addr
+```
+
+Copiare quindi il file di configurazione per poter ripristinare la versione precedente in qualsiasi momento. A titolo dimostrativo, il nostro file si chiama `00-installer-config.yaml`:
+
+```bash
+sudo cp /etc/netplan/00-installer-config.yaml /etc/netplan/00-installer-config.yaml.bak
+```
+
+In caso di errore, puoi annullare l’operazione eseguendo questi comandi:
+
+```bash
+sudo rm -f /etc/netplan/00-installer-config.yaml
+sudo cp /etc/netplan/00-installer-config.yaml.bak /etc/netplan/00-installer-config.yaml
+```
+
+Apri il file di configurazione di rete in `/etc/netplan/` con il comando:
+
+```bash
+sudo nano /etc/netplan/00-installer-config.yaml
+```
+
+Una volta aperto il file per la modifica, modificalo con il codice seguente, sostituendo `INTERFACE-NAME`, `ADDITIONAL_IP` e `GATEWAY_IP` con i tuoi valori.
 
 ```yaml
 network:
-    ethernets:
-        (nome dell'interfaccia):
-            addresses:
-                - ADDITIONAL_IP/32
-            nameservers:
-                addresses:
-                    - 213.186.33.99
-                search: []
-            optional: true
-            strade:
-                - to: 0.0.0.0/0
-                  via: GATEWAY_IP
-                  on-link: true
-    Versione: 2
+  ethernets:
+    INTERFACE-NAME:
+      dhcp4: true
+      addresses:
+          - ADDITIONAL_IP/32
+      nameservers:
+          addresses:
+              - 213.186.33.99   
+      routes:
+           - to: 0.0.0.0/0
+             via: GATEWAY_IP
+             on-link: true
+  version: 2
 ```
 
-Dopo aver effettuato le modifiche, salva e chiudi il file ed esegui il comando:
+**Esempio**
+
+```yaml
+network:
+  ethernets:
+    ens18:
+      dhcp4: true
+      addresses:
+          - 192.0.2.1/32
+      nameservers:
+          addresses:
+              - 213.186.33.99
+      routes:
+           - to: 0.0.0.0/0
+             via: 203.0.113.254
+             on-link: true
+  version: 2
+```
+
+Salvare e chiudere il file. Per testare la configurazione esegui questo comando:
 
 ```bash
-# netplan try
-Warning: Stopping systemd-networkd.service, but it can still be activated by:
-  systemd-networkd.socket
-Do you want to keep these settings?
-
-Press ENTER before the timeout to accept the new configuration
-
-Changes will revert in 120 secondi
-Configurazione accetted.
+sudo netplan try
 ```
 
-#### Windows Server 2012/Hyper-V
+Se è corretta, applicala utilizzando il comando seguente:
+
+```bash
+sudo netplan apply
+```
+
+Per verificare che la macchina virtuale sia completamente connessa a Internet, esegui il comando:
+
+```bash
+ping -c 4 example.com
+PING example.com (93.184.215.14) 56(84) bytes of data.
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=1 ttl=55 time=29.3 ms
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=2 ttl=55 time=24.9 ms
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=3 ttl=55 time=30.8 ms
+64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=4 ttl=55 time=27.0 ms
+
+--- example.com ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 24.925/28.028/30.840/2.254 ms
+```
+
+Se ricevi una risposta, significa che l’Additional IP è stato configurato correttamente. In caso contrario, riavvia la macchina virtuale e riavvia il ping.
+
+#### Windows Server/Hyper-V
 
 Prima di configurare la tua macchina virtuale, è necessario creare un commutatore virtuale.
 
@@ -328,7 +569,7 @@ Seleziona l'adattatore con l'indirizzo IP del server e spunta `Autorizza il sist
 
 > [!primary]
 > 
->Questo step è necessario una sola volta per un server Hyper-V. Per tutte le macchine virtuali è necessario un interruttore virtuale per collegare le schede di rete virtuali della macchina virtuale alla scheda fisica del server.
+> Questo step è necessario una sola volta per un server Hyper-V. Per tutte le macchine virtuali è necessario un interruttore virtuale per collegare le schede di rete virtuali della macchina virtuale alla scheda fisica del server.
 > 
 
 In seguito, seleziona la macchina virtuale alla quale vuoi aggiungere l'Additional IP. Utilizza il pannello di configurazione Hyper-V per modificare le impostazioni della macchina virtuale e chiudilo.
@@ -368,7 +609,7 @@ ip addr add ADDITIONAL_IP/32 dev test-bridge
 
 Sostituisci "MAC_ADDRESS" con l'indirizzo MAC virtuale generato nel pannello di configurazione e "ADDITIONAL_IP" con l'Additional IP reale.
 
-In seguito, è sufficiente effettuare un ping sul tuo Additional IP dall'esterno. Se funziona, significa probabilmente che sulla macchina virtuale o sull'host si è verificato un errore di configurazione che impedisce all'Additional IP di funzionare in modalità normale. Se invece l'IP non funziona ancora, apri un ticket al team di assistenza tramite il tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} per ulteriori indagini.
+In seguito, è sufficiente effettuare un ping sul tuo Additional IP dall'esterno. Se funziona, significa probabilmente che sulla macchina virtuale o sull'host si è verificato un errore di configurazione che impedisce all'Additional IP di funzionare in modalità normale.  Se, al contrario, l'IP non funziona ancora, apri un ticket di assistenza tramite il [centro assistenza](https://help.ovhcloud.com/csm?id=csm_cases_requests).
 
 ## Per saperne di più
 

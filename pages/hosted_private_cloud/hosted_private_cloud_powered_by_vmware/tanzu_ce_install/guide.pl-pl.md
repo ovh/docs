@@ -209,7 +209,7 @@ The VM is now ready for TCE deployment.
 
 #### [Tanzu CLI](https://tanzucommunityedition.io/docs/latest/cli-installation/)
 
-In a terminal window, run the CLI install commmand:
+In a terminal window, run the CLI install command:
 
 ```bash
 brew install vmware-tanzu/tanzu/tanzu-community-edition

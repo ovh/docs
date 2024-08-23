@@ -61,13 +61,13 @@ Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und wählen
 
 Unten auf dem Bildschirm wird eine Tabelle mit den Datenbanken angezeigt.
 
-![phpMyAdmin Access](images/go-to-phpmyadmin.png){.thumbnail}
+![phpMyAdmin Access](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
 
 Beachten Sie für Ihre **überlastete Datenbank** den `Benutzernamen` und die `Server-Adresse` in der Tabelle Ihrer Datenbanken. 
 
 Klicken Sie auf den Button `...`{.action} rechts neben der relevanten Datenbank und dann auf `Zugang zu phpMyAdmin`{.action}.
 
-![phpMyAdmin Go Login](images/pma-interface-login.png){.thumbnail}
+![phpMyAdmin Go Login](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
 
 Geben Sie die Zugangsdaten für Ihre Datenbank ein und klicken Sie auf `Anmeldung`{.action}.
 
@@ -82,11 +82,11 @@ Geben Sie die Zugangsdaten für Ihre Datenbank ein und klicken Sie auf `Anmeldun
 
 Sobald die Verbindung hergestellt wurde, wird die folgende Seite angezeigt:
 
-![phpMyAdmin Login](images/pma-main-page.png){.thumbnail}
+![phpMyAdmin Login](/pages/assets/screens/other/web-tools/phpmyadmin/pma-main-page-2.png){.thumbnail}
 
 Klicken Sie in der linken Spalte auf `"Ihr Datenbankname"`{.action} und dann in der rechten oberen Ecke der Tabelle auf `Size`{.action}:
 
-![phpMyAdmin Tables](images/pma-check-size.png){.thumbnail}
+![phpMyAdmin Tables](/pages/assets/screens/other/web-tools/phpmyadmin/pma-check-size.png){.thumbnail}
 
 Die größten Tabellen werden oben in der sortierten Liste angezeigt. Identifizieren Sie diese, und fahren Sie mit **Schritt 2** fort.
 
@@ -161,7 +161,7 @@ Bei **overquota** oder einer großen Tabelle sind **drei Befehle** verfügbar.
 
 Sie können diese Anfragen über das **phpMyAdmin** Interface, über den Tab `SQL`{.action} durchführen:
 
-![SQL PHPMyAdmin Anfrage](images/pma-sql-menu.png){.thumbnail}
+![SQL PHPMyAdmin Anfrage](/pages/assets/screens/other/web-tools/phpmyadmin/pma-sql-menu.png){.thumbnail}
 
 - Der Befehl **DELETE**:
 
@@ -207,4 +207,4 @@ Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

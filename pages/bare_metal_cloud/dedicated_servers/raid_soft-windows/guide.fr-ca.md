@@ -400,4 +400,4 @@ Il est préférable de ne pas redémarrer le serveur tant que le processus de re
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

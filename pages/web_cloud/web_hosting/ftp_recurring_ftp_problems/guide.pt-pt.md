@@ -30,7 +30,7 @@ A utilização de software FTP durante a ligação ao seu [alojamento Web Cloud]
 
 ### "Este servidor não suporta FTP em TLS" (FileZilla)
 
-![doesnt-support-ftp-on-tls](images/doesnt-support-ftp-on-tls.png){.thumbnail}
+![doesnt-support-ftp-on-tls](/pages/assets/screens/other/web-tools/filezilla/doesnt-support-ftp-on-tls.png){.thumbnail}
 
 Esta mensagem no software [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) indica que não ativou a opção SFTP ou SSH a partir da [Área de Cliente OVHcloud](/links/manager). Assim, as informações trocadas entre o seu servidor de alojamento OVHcloud e o seu computador não serão encriptadas.
 
@@ -53,7 +53,7 @@ Escolha `SFTP`{.action} ou `Ativado`{.action} (para ativar o protocolo SSH no se
 
 Em primeiro lugar, verifique se os ficheiros e as pastas do seu site estão presentes na [pasta raiz](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online#23-carregar-os-ficheiros-para-o-espaco-de-armazenamento) do seu alojamento.
 
-Se fez uma modificação nos seus [servidores ou zona DNS](/pages/web_cloud/domains/dns_zone_edit#compreender-a-nocao-de-dns) há menos de 48 horas, aguarde e reinicie regularmente os seus dispositivos para esvaziar a sua cache.
+Se efetuou uma alteração no seu [servidores DNS](/pages/web_cloud/domains/dns_server_edit) ou [zona DNS](/pages/web_cloud/domains/dns_zone_edit) há menos de 48 horas, aguarde e reinicie regularmente os seus dispositivos para limpar a cache.
 
 ### As minhas credenciais FTP não funcionam.
 
@@ -67,7 +67,7 @@ Para verificar o espaço de armazenamento restante no alojamento, aceda à [Áre
 
 A quantidade de dados registada no seu servidor de alojamento (exceto bases de dados) aparece na secção `Informações gerais`{.action} > `Espaço de disco`.
 
-![disk_space](images/find-disk-space.png){.thumbnail}
+![disk_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
 
 ### Não consigo transferir os meus ficheiros para o servidor FTP.
 
@@ -83,7 +83,7 @@ Se dispõe de uma fórmula [Pro](/links/web/hosting-professional-offer) ou [Perf
 
 Esta ligação é instalada de forma padrão nos alojamentos partilhados da OVHcloud. Ele dá a seguinte apresentação:
 
-![site-under-construction](images/site-under-construction.png){.thumbnail}
+![site-under-construction](/pages/assets/screens/other/browsers/errors/site-under-construction.png){.thumbnail}
 
 Se não utilizou a funcionalidade "[Módulo 1 clique](/pages/web_cloud/web_hosting/cms_install_1_click_modules)" para criar o seu site, deverá utilizar o software [Net2FTP](/pages/web_cloud/web_hosting/ftp_connection#1-ligacao-atraves-de-ftp-explorer) acessível através da [Área de Cliente OVHcloud](/links/manager) para eliminar manualmente a página "Site em construção".
 
@@ -95,4 +95,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, convidamo-lo a consultar as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

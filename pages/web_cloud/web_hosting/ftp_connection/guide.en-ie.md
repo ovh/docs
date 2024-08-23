@@ -41,7 +41,7 @@ If you do not have this information at hand, log in to your [OVHcloud Control Pa
 
 The information associated with your storage space will then appear, along with a table listing the FTP and SSH users created on your web hosting plan.
 
-![ftpconnect](images/tab-pro.png){.thumbnail}
+![ftpconnect](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
 
 > [!primary]
 >
@@ -71,7 +71,7 @@ Below is a description of the essential information displayed on the `FTP-SSH` p
 
 If you have forgotten your FTP or SSH user password, please refer to our guide on [Modifying a FTP user password](/pages/web_cloud/web_hosting/ftp_change_password).
 
-![ftpconnect](images/change-password.png){.thumbnail}
+![ftpconnect](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/change-password.png){.thumbnail}
 
 At this stage, you have everything you need to log in to your FTP storage space.
 
@@ -92,11 +92,11 @@ To log in to your FTP storage space via FTP Explorer, log in to [OVHcloud Contro
 
 Click on the `Hosting`{.action} section in the left-hand column. Select the name of the web hosting plan concerned, go to the `FTP - SSH`{.action} tab, then click the `FTP Explorer`{.action} button.
 
-![ftpconnect](images/ftp-explorer.png){.thumbnail}
+![ftpconnect](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/ftp-explorer.png){.thumbnail}
 
 On the new page that pops up, enter your FTP username and password, then log in. If the information is correct, your storage space will appear.
 
-![ftpconnect](images/login-interface.png){.thumbnail}
+![ftpconnect](/pages/assets/screens/other/web-tools/net2ftp/login-interface.png){.thumbnail}
 
 #### 2. Logging in via FTP software <a name="ftpsoftware"></a>
 
@@ -155,7 +155,7 @@ If the information you have entered is correct, you will be logged in to your FT
 
 Please refer to our guide on [Using an SSH connection on a web hosting plan](/pages/web_cloud/web_hosting/ssh_on_webhosting) if you need help with this.
 
-![ftpconnect](images/terminal-ssh-connected.png){.thumbnail}
+![ftpconnect](/pages/assets/screens/other/web-tools/terminal/terminal-ssh-connected.png){.thumbnail}
 
 ## Go further
 
@@ -173,4 +173,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

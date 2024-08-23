@@ -28,7 +28,7 @@ Log in to the [OVHcloud Control Panel](/links/manager){.external}, go to the `We
 
 Find the table in the ‘SSH’ column to check if the SSH user (or ‘login’) concerned has SSH access enabled. A ‘Disabled’ label will be present if this is not the case.
 
-![usessh](images/tab-ssh.png){.thumbnail}
+![usessh](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-ssh.png){.thumbnail}
 
 If SSH access is disabled, click `...`{.action} to the right of the user concerned, then `Modify`{.action}. In the window that pops up, enable SSH access, then confirm the modification. If you cannot enable it, ensure that your [OVHcloud web hosting plan](/links/web/hosting){.external} offers SSH access.
 
@@ -64,7 +64,7 @@ ssh yourlogin@ssh.cluster000.hosting.ovh.net -p 22
 
 When you run the command, you will be prompted to enter the SSH user password. Once you have connected, follow the next step: [Interact with your storage space via SSH](./#step-4-interact-with-your-storage-space-via-ssh).
 
-![usessh](images/terminal-ssh-login.png){.thumbnail}
+![usessh](/pages/assets/screens/other/web-tools/terminal/terminal-ssh-login.png){.thumbnail}
 
 #### 3.2 From a software application
 
@@ -123,4 +123,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>. 
+Join our [community of users](/links/community). 

@@ -1,7 +1,7 @@
 ---
 title: "Ionos-Domainnamen zu OVHcloud transferieren"
 excerpt: "Erfahren Sie hier, wie Sie einen Ionos-Domainnamen zu OVHcloud transferieren"
-updated: 2024-03-28
+updated: 2024-06-28
 ---
 
 > [!primary]
@@ -59,6 +59,12 @@ Für den Transfer eines Ionos-Domainnamens ist ein spezieller Ansatz erforderlic
 >
 > Stellen Sie außerdem sicher, dass Ihr aktueller Registrar nicht andere Dienste abstellt, z.B. die E-Mail-Adressen, die mit Ihrem Domainnamen verknüpft sind.
 >
+> Wenn Sie neben dem Transfer Ihrer Domain auch die dazugehörigen Dienste (Website, E-Mail, etc.) migrieren möchten, lesen Sie zuerst unsere Anleitung „[Website und dazugehörige Dienste zu OVHcloud migrieren](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)“, bevor Sie fortfahren.
+> In dieser Anleitung erfahren Sie, wie Sie alle Ihre Dienstleistungen ohne Unterbrechung migrieren.
+>
+> Wenn Sie Ihren Domainnamen nur transferieren, ohne Ihre anderen Dienste zu verlegen, stellen Sie sicher, dass Sie die aktiven DNS-Server für Ihren Domainnamen von Ihrem **aktuellen Registrar** erfahren, um diese direkt in Schritt 3 der Anleitung „[Domainnamen zu OVHcloud transferieren](/pages/web_cloud/domains/transfer_incoming_generic_domain)“ einzugeben.
+> So wird vermieden, dass die Zuordnung zwischen Ihrem Domainnamen und den zugehörigen externen Diensten unterbrochen wird.
+>
 
 ### Schritt 1 - Private Registrierung deaktivieren
 
@@ -89,4 +95,4 @@ Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.
  
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
  
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

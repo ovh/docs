@@ -23,7 +23,7 @@ Quando aggiungi un dominio sulla tua piattaforma di posta, potrebbe esserti rich
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione `Web Cloud`{.action}.
 - Disporre di una soluzione [Exchange](https://www.ovhcloud.com/it/emails/) o [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/).
 - Aver aggiunto un dominio sulla piattaforma di posta. Per maggiori informazioni, consulta la guida "[Aggiungere un dominio su una piattaforma email](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)".
-- Essere in grado di configurare la zona DNS del dominio dallo [Spazio Cliente OVHcloud](/pages/web_cloud/domains/dns_zone_edit) o dall’interfaccia di gestione in cui è registrato.
+- Essere in grado di [configurare la zona DNS](/pages/web_cloud/domains/dns_zone_edit) del dominio dallo Spazio Cliente OVHcloud o dall’interfaccia di gestione in cui è registrato.
 
 ## Procedura
 

@@ -1,7 +1,7 @@
 ---
 title: 'Delegare i diritti su un account email'
 excerpt: 'Come assegnare i diritti del tuo email a un altro account'
-updated: 2020-10-24
+updated: 2024-06-19
 ---
 
 ## Obiettivo
@@ -12,9 +12,14 @@ I servizi Exchange ed Email Pro permettono di usufruire di indirizzi email profe
 
 ## Prerequisiti
 
-- Disporre di una [soluzione Exchange OVHcloud](https://www.ovhcloud.com/it/emails/hosted-exchange/) o [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/) attive 
+- Disporre di una [soluzione Exchange OVHcloud](/links/web/emails-hosted-exchange) o [Email Pro](/links/web/email-pro) attive
+
+> [!warning]
+>
+> **Per l'offerta [Email Pro](/links/web/email-pro)** le funzionalità di delega descritte in questa guida possono essere utilizzate esclusivamente tramite [Webmail](/links/web/email). Per utilizzare i protocolli tramite un client di posta elettronica è necessario disporre di un account [Exchange](/links/web/emails-hosted-exchange).
+
 - Disporre di almeno due account attivi e configurati sulla stessa piattaforma email OVHcloud
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Disporre delle credenziali dell’account email a cui verranno delegati i diritti
 
 ## Procedura
@@ -36,7 +41,7 @@ Una volta individuato l’account per cui vuoi delegare i diritti, definito i pe
 
 ### Step 1: crea la delega
 
-Per effettuare questa operazione, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}:
+Per effettuare questa operazione, accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}:
 
 - **Exchange**: Clicca su `Microsoft`{.action} > `Exchange`{.action}. 
 - **Email Pro**: Clicca su `Email Pro`{.action}.
@@ -84,7 +89,11 @@ Nella nuova finestra, inserisci il nome dell’account con i diritti delegati e 
 
 - **Dal client Outlook per Windows**
 
-Se utilizzi Outlook 2016, seleziona la scheda `File`{.action} in alto a sinistra e clicca su `Impostazioni account`{.action}. Nel menu a tendina, seleziona di nuovo `Impostazioni account...`{.action}. Nella nuova finestra, seleziona l’account a cui sono stati delegati i diritti e clicca su `Cambia...`{.action}. 
+> [!warning]
+>
+> L'utilizzo di questa funzionalità **via Outlook** è disponibile esclusivamente per un account email [Exchange](/links/web/emails-hosted-exchange).
+
+Se utilizzi Outlook, seleziona la scheda `File`{.action} in alto a sinistra e clicca su `Impostazioni account`{.action}. Nel menu a tendina, seleziona di nuovo `Impostazioni account...`{.action}. Nella nuova finestra, seleziona l’account a cui sono stati delegati i diritti e clicca su `Cambia...`{.action}.
 
 ![Delega](images/delegation-step4.png){.thumbnail}
 
@@ -98,19 +107,23 @@ Clicca su `Altre impostazioni...`{.action}. Nella nuova finestra, seleziona la s
 
 Accedi all’indirizzo <https://www.ovh.it/mail/> utilizzando le credenziali dell’account email con i diritti delegati. Inizia a scrivere un nuovo messaggio cliccando sul pulsante `+ Nuovo`{.action}.
 
-Nella finestra di redazione, clicca sui tre puntini e seleziona `Mostra Da`{.action}. Clicca sul pulsante `Da`{.action} e seleziona l’indirizzo che verrà visualizzato come mittente (per cui disponi del diritto di delega). Se non compare, elimina l’account già inserito e digita quello che desideri. 
+Nella finestra di redazione, clicca sui tre puntini e seleziona `Mostra Da`{.action}. Clicca sul pulsante `Da`{.action} e seleziona l’indirizzo che verrà visualizzato come mittente (per cui disponi del diritto di delega). Se non compare, elimina l’account già inserito e digita quello che desideri.
 
-A questo punto scrivi il tuo messaggio e invialo. 
+A questo punto scrivi il tuo messaggio e invialo.
 
 ![Delega](images/delegation-step6.png){.thumbnail}
 
 - **Dal client Outlook per Windows**
 
-Se utilizzi Outlook 2016, inizia a scrivere un nuovo messaggio assicurandoti che il pulsante `Da`{.action} venga mostrato nella casella di testo. In caso contrario seleziona la scheda `Opzioni`{.action} e, nella sezione “Mostra campi”, clicca su `Da`{.action}.
+> [!warning]
+>
+> L'utilizzo di questa funzionalità **via Outlook** è disponibile esclusivamente per un account email [Exchange](/links/web/emails-hosted-exchange).
+
+Se utilizzi Outlook, inizia a scrivere un nuovo messaggio assicurandoti che il pulsante `Da`{.action} venga mostrato nella casella di testo. In caso contrario seleziona la scheda `Opzioni`{.action} e, nella sezione “Mostra campi”, clicca su `Da`{.action}.
 
 Clicca sul pulsante `Da`{.action} e seleziona l’indirizzo che verrà visualizzato come mittente (per cui disponi del diritto di delega). Se non compare, clicca su `Altro`{.action}, inserisci l’indirizzo che desideri e conferma l’operazione. 
 
-A questo punto scrivi il tuo messaggio e invialo. 
+A questo punto scrivi il tuo messaggio e invialo.
 
 ![Delega](images/delegation-step7.png){.thumbnail}
 
@@ -120,22 +133,36 @@ A questo punto scrivi il tuo messaggio e invialo.
 
 Accedi all’indirizzo <https://www.ovh.it/mail/> utilizzando le credenziali dell’account email con i diritti delegati. Inizia a scrivere un nuovo messaggio cliccando sul pulsante `+ Nuovo`{.action}.
 
-Nella finestra di redazione, clicca sui tre puntini e seleziona `Mostra Da`{.action}. Clicca sul pulsante `Da`{.action} e seleziona l’indirizzo che verrà visualizzato come mittente (per cui disponi del diritto di delega). Se non compare, elimina l’account già inserito e digita quello che desideri. 
+Nella finestra di redazione, clicca sui tre puntini e seleziona `Mostra Da`{.action}. Clicca sul pulsante `Da`{.action} e seleziona l’indirizzo che verrà visualizzato come mittente (per cui disponi del diritto di delega). Se non compare, elimina l’account già inserito e digita quello che desideri.
 
-A questo punto scrivi il tuo messaggio e invialo. 
+A questo punto scrivi il tuo messaggio e invialo.
 
 ![Delega](images/delegation-step6.png){.thumbnail}
 
 - **Dal client Outlook per Windows**
 
-Se utilizzi Outlook 2016, inizia a scrivere un nuovo messaggio assicurandoti che il pulsante `Da`{.action} venga mostrato nella casella di testo. In caso contrario seleziona la scheda `Opzioni`{.action} e, nella sezione “Mostra campi”, clicca su `Da`{.action}.
+> [!warning]
+>
+> L'utilizzo di questa funzionalità **via Outlook** è disponibile esclusivamente per un account email [Exchange](/links/web/emails-hosted-exchange).
 
-Clicca sul pulsante `Da`{.action} e seleziona l’indirizzo che verrà visualizzato come mittente (per cui disponi del diritto di delega). Se non compare, clicca su `Altro`{.action}, inserisci l’indirizzo che desideri e conferma l’operazione. 
+Se utilizzi Outlook, inizia a scrivere un nuovo messaggio assicurandoti che il pulsante `Da`{.action} venga mostrato nella casella di testo. In caso contrario seleziona la scheda `Opzioni`{.action} e, nella sezione “Mostra campi”, clicca su `Da`{.action}.
 
-A questo punto scrivi il tuo messaggio e invialo. 
+Clicca sul pulsante `Da`{.action} e seleziona l’indirizzo che verrà visualizzato come mittente (per cui disponi del diritto di delega). Se non compare, clicca su `Altro`{.action}, inserisci l’indirizzo che desideri e conferma l’operazione.
+
+A questo punto scrivi il tuo messaggio e invialo.
 
 ![Delega](images/delegation-step7.png){.thumbnail}
 
-## Per saperne di più
+## Per saperne di più <a name="go-further"></a>
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
+
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
+
+[Utilizzare un account di posta da "Outlook on the web"](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+
+[Condividere una cartella con la Webmail OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_directory_sharing)
+
+[Utilizzo dei gruppi (mailing list)](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_groups)
+
+Contatta la nostra [Community di utenti](/links/community).

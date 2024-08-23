@@ -30,7 +30,7 @@ Bei der Nutzung von Datenbanken können Unregelmäßigkeiten auftreten. Fehler b
 
 ### Verbindungsfehler "Error establishing a database connection"
 
-![error_establishing_a_DB_connection](images/error-establishing-a-db-connection.png){.thumbnail}
+![error_establishing_a_DB_connection](/pages/assets/screens/other/browsers/errors/error-establishing-a-db-connection.png){.thumbnail}
 
 #### Auf aktuelle Störungen überprüfen
 
@@ -97,7 +97,7 @@ In Ihrem [OVHcloud Kundencenter](/links/manager) klicken Sie im Bereich `Hosting
 
 Sie haben eine E-Mail darüber erhalten, dass die Datenmenge Ihrer Datenbank die erlaubte Grenze überschreitet. Ihre Datenbank wurde deshalb auf Read-only gesetzt, was Änderungen an der Website verhindert.
 
-![overquota](images/overquota-db.png){.thumbnail}
+![overquota](/pages/assets/screens/email-sending-to-customer/databases/overquota-db.png){.thumbnail}
 
 Sie können Ihre Datenbank mit drei Methoden entsperren:
 
@@ -148,14 +148,14 @@ Um Ihre Datenbank zu optimieren, folgen Sie den Anweisungen in unserer Anleitung
 
 > [!warning]
 >
-> Wenn die Optimierung Ihrer Datenbank nicht ausreicht, um den Zugriff auf Ihre Website zu entsperren, empfehlen wir Ihnen, unsere [User Community](https://community.ovh.com/en/) oder die [OVHcloud Partner](/links/partner) zu kontaktieren. Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
+> Wenn die Optimierung Ihrer Datenbank nicht ausreicht, um den Zugriff auf Ihre Website zu entsperren, empfehlen wir Ihnen, unsere [User Community](/links/community) oder die [OVHcloud Partner](/links/partner) zu kontaktieren. Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
 >
 
 ### Überschreitungen der RAM-Kapazität
 
 In der unten abgebildeten Nachricht im Bereich `Datenbanken`{.action} in Ihrem [OVHcloud Kundencenter](/links/manager) wird darauf hingewiesen, dass Ihre [Web Cloud Databases](https://www.ovh.de/cloud/cloud-databases/) zu viele Ressourcen auf der OVHcloud Infrastruktur verbraucht hat:
 
-![ram-exceeded](images/ram-exceeded.png){.thumbnail}
+![ram-exceeded](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/ram-exceeded.png){.thumbnail}
 
 In diesem Fall können Sie die [RAM-Kapazität](/pages/web_cloud/web_cloud_databases/configure-database-server#wechseln-des-datenbank-angebots) im Bereich `Datenbanken`{.action} Ihres [OVHcloud Kundencenters](/links/manager) erhöhen. Klicken Sie im Tab `Allgemeine Informationen`{.action} auf die Schaltfläche `...`{.action} im Bereich `RAM`.
 
@@ -172,7 +172,7 @@ Sie können Ihre Datenbank auch weiter optimieren, indem Sie die Anweisungen in 
 
 > [!primary]
 >
-> Wenn Sie Schwierigkeiten haben, die Ressourcennutzung auf Ihrem Datenbankserver zu reduzieren, und diese nicht erhöhen möchten, kontaktieren Sie unsere [User Community](https://community.ovh.com/en/) oder die [OVHcloud Partner](/links/partner). Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
+> Wenn Sie Schwierigkeiten haben, die Ressourcennutzung auf Ihrem Datenbankserver zu reduzieren, und diese nicht erhöhen möchten, kontaktieren Sie unsere [User Community](/links/community) oder die [OVHcloud Partner](/links/partner). Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
 >
 
 ### Fehler beim Import von Datenbanken
@@ -189,9 +189,9 @@ Vergewissern Sie sich zunächst, dass Ihre Datenbank leer ist. Klicken Sie auf `
 
 Sie können beim [Datenbank-Import](/pages/web_cloud/web_hosting/sql_importing_mysql_database#eigene-backup-datei-uber-das-kundencenter-importieren) auch die Option `Datenbank leeren`{.action} anhaken. 
 
-![database-import](images/import-empty-current-db.png){.thumbnail}
+![database-import](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/import-empty-current-db.png){.thumbnail}
 
-Kontaktieren Sie gegebenenfalls unsere [Community](https://community.ovh.com/en/) oder einen [[spezialisierten Dienstleister](/links/partner)](/links/partner). Wir werden Sie in diesem Fall nicht unterstützen können.
+Kontaktieren Sie gegebenenfalls unsere [Community](/links/community) oder einen [[spezialisierten Dienstleister](/links/partner)](/links/partner). Wir werden Sie in diesem Fall nicht unterstützen können.
 
 > [!success]
 >
@@ -223,7 +223,7 @@ Um dieses Problem zu beheben können Sie Maßnahmen anwenden:
 
 - Erhöhung der [Arbeitsspeicherkapazität (RAM)](/pages/web_cloud/web_cloud_databases/configure-database-server#wechseln-des-datenbank-angebots). Gehen Sie hierzu zum [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) im Bereich `Datenbanken`{.action} Ihres [OVHcloud Kundencenters](/links/manager). Klicken Sie dann auf die Schaltfläche `...`{.action} im Bereich `RAM` und wählen Sie `RAM-Menge ändern`{.action}.
 
-- Splitten Sie Ihre Datenbank, um sie dann über mehrere Operationen zu importieren. (Für Fragen zu den durchzuführenden Operationen kontaktieren Sie unsere [User Community](https://community.ovh.com/en/) oder die [OVHcloud Partner](/links/partner). Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.)
+- Splitten Sie Ihre Datenbank, um sie dann über mehrere Operationen zu importieren. (Für Fragen zu den durchzuführenden Operationen kontaktieren Sie unsere [User Community](/links/community) oder die [OVHcloud Partner](/links/partner). Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.)
 
 - [Optimieren](/pages/web_cloud/web_cloud_databases/configure-database-server#ihre-datenbanken-optimieren) Sie die Datenbank und wiederholen Sie die Export/Import-Operationen.
 
@@ -237,7 +237,7 @@ Um dieses Problem zu beheben können Sie Maßnahmen anwenden:
 
 Diese Fehlermeldung kann bei der Verbindung zu Ihrer Datenbank mit [phpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#auf-das-phpmyadmin-interface-zugreifen) angezeigt werden. Sie gibt an, dass die eingegebenen Login-Daten falsch sind.
 
-![access_denied_for_user](images/pma-error-hy000-1045.png){.thumbnail}
+![access_denied_for_user](/pages/assets/screens/other/web-tools/phpmyadmin/pma-error-hy000-1045.png){.thumbnail}
 
 Überprüfen Sie in diesem Fall die [Login-Daten](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#in-der-praktischen-anwendung) und ändern Sie bei Bedarf das [Passwort Ihrer Datenbank](/pages/web_cloud/web_hosting/sql_change_password).
 
@@ -257,7 +257,7 @@ In dieser Situation müssen Sie [Ihre Datenbanken optimieren](/pages/web_cloud/w
 
 > [!warning]
 >
-> Wenn Sie Fragen zu den notwendigen Schritten zur Reduzierung der Anzahl aktiver Verbindungen auf Ihrer Datenbank haben, kontaktieren Sie unsere [User Community](https://community.ovh.com/en/) oder die [OVHcloud Partner](/links/partner). Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
+> Wenn Sie Fragen zu den notwendigen Schritten zur Reduzierung der Anzahl aktiver Verbindungen auf Ihrer Datenbank haben, kontaktieren Sie unsere [User Community](/links/community) oder die [OVHcloud Partner](/links/partner). Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
 >
 
 #### “Name or service not known“
@@ -268,7 +268,7 @@ In dieser Situation müssen Sie [Ihre Datenbanken optimieren](/pages/web_cloud/w
 
 Diese Fehlermeldung wird bei der [Verbindung über phpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#auf-das-phpmyadmin-interface-zugreifen) angezeigt, wenn der angegebene Servername nicht korrekt ist.
 
-![name_or_service_not_known](images/pma-error-hy000-1045.png){.thumbnail}
+![name_or_service_not_known](/pages/assets/screens/other/web-tools/phpmyadmin/pma-error-hy000-2002.png){.thumbnail}
 
 Überprüfen Sie den Servernamen des betroffenen Dienstes in Ihrem [OVHcloud Kundencenter](/links/manager).
 
@@ -285,4 +285,4 @@ Diese Fehlermeldung wird bei der [Verbindung über phpMyAdmin](/pages/web_cloud/
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

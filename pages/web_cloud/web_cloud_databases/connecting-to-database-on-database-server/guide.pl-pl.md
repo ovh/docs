@@ -41,11 +41,11 @@ Zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external} i przejdź 
 
 W zakładce `Informacje ogólne` link dostępowy do phpMyAdmin znajduje się w polu **"Administrowanie bazą danych"** pod napisem " Panel użytkownika ".
 
-![web-cloud-databases](images/database-administration.png){.thumbnail}
+![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/database-administration.png){.thumbnail}
 
 Zostaniesz przekierowany na stronę logowania phpMyAdmin.
 
-![web-cloud-databases](images/pma-login-web-cloud-db.png){.thumbnail}
+![web-cloud-databases](/pages/assets/screens/other/web-tools/phpmyadmin/pma-login-web-cloud-db.png){.thumbnail}
 
 Aby zalogować się do bazy danych, wprowadź następujące informacje:
 
@@ -62,7 +62,7 @@ Aby zalogować się do bazy danych, wprowadź następujące informacje:
 
 Jeśli połączenie zakończy się pomyślnie, wyświetli się następna strona phpMyAdmin.
 
-![web-cloud-databases](images/pma-main-page-web-cloud-db.png){.thumbnail}
+![web-cloud-databases](/pages/assets/screens/other/web-tools/phpmyadmin/pma-main-page-web-cloud-db.png){.thumbnail}
 
 > [!warning]
 >
@@ -107,7 +107,7 @@ mysql —host=serwer —user=uzytkownik —port=port —password=password nazwa_
 
 - Uruchom SQuirreL SQL i kliknij `Aliasy`{.action}, a następnie `+`{.action}
 
-![launch SQL](images/aliases.png){.thumbnail}
+![launch SQL](/pages/assets/screens/other/web-tools/squirrel/aliases.png){.thumbnail}
 
 - Wypełnij poniższe pola i zatwierdź przyciskiem `OK`{.action}:
     - **Name**: Wybierz nazwę
@@ -116,15 +116,15 @@ mysql —host=serwer —user=uzytkownik —port=port —password=password nazwa_
     - **User Name**: Wpisz nazwę użytkownika
     - **Password**: Wpisz hasło
 
-![config connection](images/add-alias.png){.thumbnail}
+![config connection](/pages/assets/screens/other/web-tools/squirrel/add-alias.png){.thumbnail}
 
 - Zatwierdź ponownie za pomocą przycisku `Connect`{.action}
 
-![valid connection](images/connect-to-mysql.png){.thumbnail}
+![valid connection](/pages/assets/screens/other/web-tools/squirrel/connect-to-mysql.png){.thumbnail}
 
 Jesteś teraz zalogowany do bazy danych:
 
-![config connection](images/general-dashboard.png){.thumbnail}
+![config connection](/pages/assets/screens/other/web-tools/squirrel/general-dashboard.png){.thumbnail}
 
 ##### 4. Logowanie przez phpMyAdmin
 
@@ -162,7 +162,7 @@ psql --host=serveur --port=port --user=utilisateur --password=password nom_de_la
 
 - Uruchom SQuirreL SQL i kliknij `Aliasy`{.action}, a następnie `+`{.action}
 
-![launch SQL](images/aliases.png){.thumbnail}
+![launch SQL](/pages/assets/screens/other/web-tools/squirrel/aliases.png){.thumbnail}
 
 - Wypełnij poniższe pola i zatwierdź przyciskiem `OK`{.action}:
     - **Name**: Wybierz nazwę
@@ -171,15 +171,15 @@ psql --host=serveur --port=port --user=utilisateur --password=password nom_de_la
     - **User Name**: Wpisz nazwę użytkownika
     - **Password**: Wpisz hasło
 
-![config connection](images/add-alias.png){.thumbnail}
+![config connection](/pages/assets/screens/other/web-tools/squirrel/add-alias.png){.thumbnail}
 
 - Zatwierdź ponownie za pomocą przycisku `Connect`{.action}
 
-![valid connection](images/connect-to-mysql.png){.thumbnail}
+![valid connection](/pages/assets/screens/other/web-tools/squirrel/connect-to-mysql.png){.thumbnail}
 
 Jesteś teraz zalogowany do bazy danych:
 
-![config connection](images/general-dashboard.png){.thumbnail}
+![config connection](/pages/assets/screens/other/web-tools/squirrel/general-dashboard.png){.thumbnail}
 
 ## Sprawdź również
 
@@ -187,4 +187,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 
+Dołącz do [grona naszych użytkowników](/links/community). 

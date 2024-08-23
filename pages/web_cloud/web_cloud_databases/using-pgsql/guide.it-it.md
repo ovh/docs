@@ -52,7 +52,7 @@ psql --host=server --port=porta --user=utente --password=password nome_database
 ### Connessione da software (SQuirreL SQL)
 - Avvia SQuirreL SQL, clicca su `Aliases`{.action} e poi su `+`{.action}
 
-![launch SQuirreL SQL](images/aliases.png){.thumbnail}
+![launch SQuirreL SQL](/pages/assets/screens/other/web-tools/squirrel/aliases.png){.thumbnail}
 
 - Completa i campi qui sotto e clicca su `OK`{.action} per confermare:
     - **Name**: scegli un nome
@@ -61,15 +61,15 @@ psql --host=server --port=porta --user=utente --password=password nome_database
     - **User Name**: inserisci il nome utente
     - **Password**: inserisci la password
 
-![config connection](images/add-alias-pgsql.png){.thumbnail}
+![config connection](/pages/assets/screens/other/web-tools/squirrel/add-alias-pgsql.png){.thumbnail}
 
 - Clicca su `Connect`{.action} per confermare
 
-![valid connection](images/connect-to-pgsql.png){.thumbnail}
+![valid connection](/pages/assets/screens/other/web-tools/squirrel/connect-to-pgsql.png){.thumbnail}
 
 A questo punto, sei connesso al tuo database:
 
-![config connection](images/general-dashboard-pgsql.png){.thumbnail}
+![config connection](/pages/assets/screens/other/web-tools/squirrel/general-dashboard-pgsql.png){.thumbnail}
 
 ### Connessione con phpPgAdmin
 *Presto disponibile in un’altra guida.*
@@ -96,4 +96,4 @@ Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [p
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com>.
+Contatta la nostra [Community di utenti](/links/community).
