@@ -142,7 +142,7 @@ Wenn die Git-Zuordnung abgeschlossen ist, wird der Status `Aktiviert`{.action} i
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/success-git-activation.png){.thumbnail}
 
-### Fehler bei der Git-Zuordnung
+#### Fehler bei der Git-Zuordnung
 
 Suchen Sie in der Tabelle der Registerkarte `Multisite`{.action} die Zeilen für das Verzeichnis, das Sie mit Git verknüpfen möchten. Wenn in der Spalte `Git` der Eintrag `Fehler` angezeigt wird, ist mindestens einer der folgenden Fehler aufgetreten:
 
