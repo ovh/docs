@@ -92,7 +92,7 @@ Nadaj nazwę repozytorium i podaj wymagane informacje.
 
 Na koniec kliknij przycisk `Create Repository`{.action}.
 
-Skopiuj adres repozytorium GitHub. Musi mieć formę `https://github.com/<username>/<repository_name.git>`{.action}. Wróć do formularza kojarzenia Git i wklej adres Twojego repozytorium GitHub w polu `Repozytorium`{.action}. Jeśli adres ma niepoprawny format, wyświetlany jest następujący komunikat o błędzie:
+Skopiuj adres repozytorium GitHub. Musi mieć formę `https://github.com/<username>/<repository_name.git>. Wróć do formularza kojarzenia Git i wklej adres Twojego repozytorium GitHub w polu `Repozytorium`{.action}. Jeśli adres ma niepoprawny format, wyświetlany jest następujący komunikat o błędzie:
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/error-wrong-git-branch-name.png){.thumbnail}
 
@@ -116,7 +116,7 @@ W dolnej części formularza kojarzenia Git, wyświetla się sekcja `Skonfiguruj
 Przed zatwierdzeniem formularza skojarzenia Git, upewnij się, że:
 
 - Twój klucz SSH został zarejestrowany na koncie GitHub.
-- Adres repozytorium GitHub jest poprawny. Musi mieć formę `https://github.com/<username>/<repository_name.git>`{.action}.
+- Adres repozytorium GitHub jest poprawny. Musi mieć formę `https://github.com/<username>/<repository_name.git>`.
 - Nazwa gałęzi repozytorium GitHub jest poprawna.
 - Twój katalog instalacyjny jest pusty.
 

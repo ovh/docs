@@ -92,7 +92,7 @@ Definisci un nome per il tuo deposito e inserisci le informazioni richieste.
 
 Infine clicca su `Create Repository`{.action}.
 
-Copia l'indirizzo del tuo repository GitHub. Il formato deve essere `https://github.com/<username>/<repository_name.git>`{.action}. Tornare al modulo di associazione di Git e incollare l'indirizzo del repository GitHub nel campo `Repository`{.action}. Se il formato dell'indirizzo non è corretto, viene visualizzato il seguente messaggio di errore:
+Copia l'indirizzo del tuo repository GitHub. Il formato deve essere `https://github.com/<username>/<repository_name.git>`. Tornare al modulo di associazione di Git e incollare l'indirizzo del repository GitHub nel campo `Repository`{.action}. Se il formato dell'indirizzo non è corretto, viene visualizzato il seguente messaggio di errore:
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/error-wrong-git-branch-name.png){.thumbnail}
 
@@ -116,7 +116,7 @@ Nella parte inferiore del modulo di associazione di Git, viene visualizzata la s
 Prima di convalidare il modulo di associazione di Git, assicurarsi che:
 
 - La chiave SSH è stata registrata correttamente nel tuo account GitHub.
-- L'indirizzo del tuo repository GitHub è corretto. Il formato deve essere `https://github.com/<username>/<repository_name.git>`{.action}.
+- L'indirizzo del tuo repository GitHub è corretto. Il formato deve essere `https://github.com/<username>/<repository_name.git>`.
 - Il nome del ramo del repository GitHub è corretto.
 - La directory di installazione è vuota.
 

@@ -92,7 +92,7 @@ Introduzca un nombre para el depósito e introduzca la información solicitada.
 
 Haga clic en `Create Repository`{.action}.
 
-Copie la dirección de su repositorio de GitHub. Debe tener el formato `https://github.com/<username>/<repository_name.git>`{.action}. Vuelva al formulario de asociación de Git y pegue la dirección de su repositorio de GitHub en el campo `Repositorio`{.action}. Si el formato de la dirección no es correcto, aparecerá el siguiente mensaje de error:
+Copie la dirección de su repositorio de GitHub. Debe tener el formato `https://github.com/<username>/<repository_name.git>`. Vuelva al formulario de asociación de Git y pegue la dirección de su repositorio de GitHub en el campo `Repositorio`{.action}. Si el formato de la dirección no es correcto, aparecerá el siguiente mensaje de error:
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/error-wrong-git-repository-name.png){.thumbnail}
 
@@ -116,7 +116,7 @@ En la parte inferior del formulario de asociación de Git, aparece la sección `
 Antes de validar el formulario de asociación de Git, asegúrese de que:
 
 - La llave SSH se ha registrado correctamente en su cuenta de GitHub.
-- La dirección de su repositorio de GitHub es correcta. Debe tener el formato `https://github.com/<username>/<repository_name.git>`{.action}.
+- La dirección de su repositorio de GitHub es correcta. Debe tener el formato `https://github.com/<username>/<repository_name.git>`.
 - El nombre de la rama del repositorio de GitHub es correcto.
 - El directorio de instalación está vacío.
 
