@@ -1,30 +1,34 @@
 ---
 title: "Logs Data Platform - Managed VMware Logs Forwarding"
-excerpt: "Find out how to enable Logs Forwarding from a managed VMware vSphere on OVHcloud to a Logs Data Platform stream" 
-updated: 2024-08-22
+excerpt: "Find out how to enable Logs Forwarding from a managed VMware vSphere on OVHcloud towards a Logs Data Platform stream" 
+updated: 2024-08-23
 ---
 
 > [!primary]
 > 
-> This feature is currently in Beta phase. This guide may be incomplete and updated.
+> This feature is currently in Beta phase. This guide may be incomplete and might be updated regularly.
 >
 
 ## Objective
 
-**The goal is to show you how to enable Log Forwarding on managed VMware vSphere to a Logs Data Platform stream.**
+**Learn how to enable Log Forwarding on managed VMware vSphere towards a Logs Data Platform stream.**
 
 ## Requirements
 
 - An [OVHcloud customer account](/links/manager).
 - One or more Hosted Private Cloud resources.
-- An active Logs Data Platform stream with the same account and security level as your Hosted Private Cloud VMware on OVHcloud.
+- An active Logs Data Platform stream with the same account and security level as your Hosted Private Cloud VMware on OVHcloud. To check it, launch [this API call](#security-options).
 - You need to have followed the guide [Introduction to the Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP)
-- You must have `logForwarder` enabled. To check, launch [this](#security-options) API call.
+- You must have `logForwarder` enabled. To check it, launch [this API call](#security-options).
+
+> [!primary]
+>
+> Read the [Getting started with OVHcloud APIs](/pages/manage_and_operate/api/first-steps) guide to get familiar with using OVHcloud APIv6.
 
 ## Instructions
 
 > [!primary]
-> Please note that enabling **log forwarding** is free to enable, but you will be billed for using a Logs Data Platform stream, based on the standard rate for storing logs in a "Database as a Service" (dbaas).
+> Please note that enabling **log forwarding** is free, but you will be billed for using a Logs Data Platform stream, based on the standard rate for storing logs in a "Database as a Service" (dbaas).
 >
 > Your logs are manipulated for security and observability reasons in the Logs Data Platform private clusters. For more information on LDP pricing, see the page LDP on [this link](/links/manage-operate/ldp).
 >
@@ -48,13 +52,15 @@ These are the types of logs you want to transfer to your Logs Data Platform. Her
 
 ### Step 1 - Enable Log Forwarder in managed vSphere
 
-> [!alert]
-> If the `logForwarder` pack is not enabled within your pack options (base or advanced security), contact OVHcloud support.
+> [!warning]
+> If the `logForwarder` pack is not enabled within your pack options (base or advanced security), [contact the OVHcloud support teams](https://help.ovhcloud.com/csm?id=csm_get_help).
 >
-> If you want the `logForwarder` feature without the advanced security and base packs, contact OVHcloud support to enable it manually.
+> If you want the `logForwarder` feature without the advanced security and base packs, contact OVHcloud support teams to enable it manually.
 >
 
-#### Via the OVHcloud API <a name="security-options"></a>
+<a name="security-options"></a>
+
+#### Via the OVHcloud API
 
 **Referencing all API calls for security packs**:
 
@@ -72,7 +78,7 @@ To check the options required to enable the `logForwarder` feature to work withi
 > @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/securityOptions/compatibilityMatrix
 >
 
-Leave the 2 booleans "showIncompatible", "showInternal", available empty.
+Leave the 2 available booleans `showIncompatible`, `showInternal` empty.
 
 
 Here is an example of a return, if the option required to work is not enabled:
@@ -100,10 +106,6 @@ This feature is not yet available in the Hosted Private Cloud control panel.
 
 #### Via the OVHcloud API <a name="activation"></a>
 
-> [!primary]
->
-> Read the [Getting started with OVHcloud APIs](/pages/manage_and_operate/api/first-steps) guide to get familiar with using OVHcloud APIv6.
-
 To retrieve the **streamId** of your LDP account, read our guide [Getting started with the Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
 
 > [!api]
@@ -113,9 +115,9 @@ To retrieve the **streamId** of your LDP account, read our guide [Getting starte
 
 > **Parameters:**
 > 
-> - `serviceName`: Your Hosted Private Cloud reference, e.g. (`pcc-XXX-XXX-XXX-XXX`).
-> - `kind`: Name of the subscription log filter type, e.g. (`esxi`, `nsxtManager`, `vcsa`, `nsxtEdge`).
-> - `StreamId`: The destination stream identifier, e.g.  (uuid:`ggb8d894-c491-433e-9c87-50a8bf6fe773`).
+> - `serviceName`: Your Hosted Private Cloud reference, e.g. `pcc-XXX-XXX-XXX-XXX`.
+> - `kind`: Name of the subscription log filter type, e.g. `esxi`, `nsxtManager`, `vcsa`, `nsxtEdge`.
+> - `StreamId`: The destination stream identifier, e.g. uuid:`ggb8d894-c491-433e-9c87-50a8bf6fe773`.
 >
 
 ```json
@@ -129,7 +131,7 @@ To retrieve the **streamId** of your LDP account, read our guide [Getting starte
 
 The GET request allows you to list your subscriptions IDs.
 
-### Step 3 - Create Logs Data Platform stream
+### Step 3 - Create a Logs Data Platform stream
 
 > [!primary]
 > Hosted Private Cloud and LDP resources must belong to the same OVHcloud account.
@@ -137,17 +139,17 @@ The GET request allows you to list your subscriptions IDs.
 
 #### Via the OVHcloud control panel
 
-You can refer to this guide to find out how to manage your streams via the Logs Data Platform control panel: “[Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)” (EN).
+You can refer to this guide to find out how to manage your streams via the Logs Data Platform control panel: [Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
 
-Retrieve the **streamId** and save (copy and paste) it. You will need it to activate your Hosted Private Cloud subscription with the Logs Data Platform stream in question.
+Retrieve the **streamId** and save (copy/paste) it. You will need it to activate your Hosted Private Cloud subscription with the Logs Data Platform stream in question.
 
 In the next step, we will look at how to create a stream.
 
-### Step 4 - Administer your Data Logs Platform streams
+### Step 4 - Manage your Data Logs Platform streams
 
 #### Via the OVHcloud Control Panel
 
-You can refer to this guide to find out how to manage your streams from the Logs Data Platform section of the OVHcloud Control Panel: [Getting started with the Logs Data Platform.](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
+You can refer to this guide to find out how to manage your streams from the Logs Data Platform section of the OVHcloud Control Panel: [Getting started with the Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
 
 #### Via the OVHcloud API
 
@@ -193,7 +195,7 @@ Use the following API calls to list subscriptions to your Hosted Private Cloud a
 > 
 > Canceling your Hosted Private Cloud LDP subscription will not delete your streams. The storage used at the time of deactivation is subject to billing.
 > 
-> **Note**: It is only possible (for now) to delete a stream in full.
+> **Note**: It is only possible (for now) to delete an entire stream.
 >
 
 > [!api]

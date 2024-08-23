@@ -1,11 +1,11 @@
 ---
 title: "Logs Data Platform - Transfert des Logs VMware managé"
 excerpt: "Découvrez comment activer le transfert de logs (logs forwarding) depuis VMware vSphere managé on OVHcloud vers un flux (stream) Logs Data Platform"
-updated: 2024-08-22
+updated: 2024-08-23
 ---
 
 > [!primary]
-> Cette fonctionnalité est actuellement en phase Bêta. Ce guide peut donc être incomplet et mise à jour.
+> Cette fonctionnalité est actuellement en phase Bêta. Ce guide peut donc être incomplet et pourra faire l'objet de mises à jour.
 > 
 
 ## Objectif
@@ -16,9 +16,13 @@ updated: 2024-08-22
 
 - Disposer d'un [compte client OVHcloud](/links/manager).
 - Disposer d'une ou plusieurs ressources Hosted Private Cloud.
-- Disposer d'un flux (stream) Logs Data Platform actif sur le même compte et avec le même niveau de sécurité que votre Hosted Private Cloud VMware on OVHcloud (pour vérifier lancer l'appel API [suivant](#security-options))
+- Disposer d'un flux (stream) Logs Data Platform actif sur le même compte et avec le même niveau de sécurité que votre Hosted Private Cloud VMware on OVHcloud (pour le vérifier, exécutez [l'appel API suivant](#security-options))
 - Avoir suivi le guide « [Introduction à Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP) ».
-- Vous devez avoir le `logForwarder` activé. Pour vérifier, lancez l'appel API [suivant](#security-options).
+- Vous devez avoir le `logForwarder` activé. Pour le vérifier, exécutez [l'appel API suivant](#security-options).
+
+> [!primary]
+> Consultez le guide [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
+>
 
 ## En pratique
 
@@ -47,13 +51,15 @@ Ils sont les types de logs que vous voulez transférer à votre stream Logs Data
 
 ### Étape 1 - Activer le Log Forwarder dans un vSphere managé
 
-> [!alert]
-> Si le pack `logForwarder` n'est pas activé au sein de votre pack de base d'options (base ou advanced security), contactez le support OVHcloud.
+> [!warning]
+> Si le pack `logForwarder` n'est pas activé au sein de votre pack de base d'options (base ou advanced security), [contactez le support OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
 > 
 > Si vous voulez la fonctionnalité `logForwarder` sans les packs de base et de sécurité avancées, contactez le support OVHcloud pour l'activer manuellement.
 >
 
-#### Via l'API OVHcloud <a name="security-options"></a>
+<a name="security-options"></a>
+
+#### Via l'API OVHcloud
 
 **Référencement de tous les appels API les packs de sécurités** :
 
@@ -64,16 +70,16 @@ Ils sont les types de logs que vous voulez transférer à votre stream Logs Data
 |     GET     | /dedicatedCloud/{serviceName}/securityOptions/pendingOptions        | Obtenir les options de sécurité  en attente  d'activation                   |
 |    POST     | /dedicatedCloud/{serviceName}/securityOptions/resumePendingEnabling | Réessayer l'activation de l'option de sécurité en attente                   |
 
-Pour vérifier les options exigées pour permettre le fonctionnement de la fonctionnalité `logForwarder` au sein de votre VMware vSphere managé on OVHcloud. Lancer l'appel API suivant :
+Pour vérifier les options exigées pour permettre le fonctionnement de la fonctionnalité `logForwarder` au sein de votre VMware vSphere managé on OVHcloud, exécutez l'appel API suivant :
 
 > [!api]
 >
 > @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/securityOptions/compatibilityMatrix
 >
 
-Laissez les 2 booléens "showIncompatible", "showInternal" disponible vide. 
+Laissez vides les 2 booléens `showIncompatible` et `showInternal` disponibles.
 
-Voici un exemple de retour, si l'option exigée pour fonctionner n'est pas activé :
+Voici un exemple de retour, si l'option exigée pour fonctionner n'est pas activée :
 
 ```json
 @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/securityOptions/compatibilityMatrix
@@ -98,10 +104,6 @@ Cette fonctionnalité n'est pas encore disponible dans la section Hosted Private
 
 #### Via l’API OVHcloud <a name="activation"></a>
 
-> [!primary]
-> Consultez le guide [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
->
-
 Pour récupérer le **streamId** de votre compte LDP, consultez le guide « [Premiers pas Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) ».
 
 > [!api]
@@ -111,18 +113,20 @@ Pour récupérer le **streamId** de votre compte LDP, consultez le guide « [Pre
 
 > **Paramètres** :
 >
-> - `serviceName` : Nom de service, e.g. (`pcc-XXX-XXX-XXX-XXX`).
-> - `kind` : Type de filtrage journal VMware, e.g. (`esxi`, `nsxtManager`, `vcsa`, `nsxtEdge`).
-> - `streamId` : Identifiant du flux (stream) de destination, e.g. (uuid : `ggb8d894-c491-433e-9c87-50a8bf6fe773`).
->
-> ```json
-> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/log/subscription
->
-> {
->  "kind": "esxi", // Le label VMware, les valeurs supportées actuellement sont : `esxi`, `nsxtManager`, `vcsa`, `nsxtEdge`.
->  "streamId": "ggb8d894-c491-433e-9c87-50a8bf6fe773", // L'identifiant du stream Logs Data Platform.
-> }
-> ```
+> - `serviceName` : Nom du service, par exemple: `pcc-XXX-XXX-XXX-XXX`.
+> - `kind` : Type de filtrage journal VMware, par exemple: `esxi`, `nsxtManager`, `vcsa`, `nsxtEdge`.
+> - `streamId` : Identifiant du flux (stream) de destination, par exemple: (uuid : `ggb8d894-c491-433e-9c87-50a8bf6fe773`).
+
+Retour :
+
+```json
+@api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/log/subscription
+
+{
+ "kind": "esxi", // Le label VMware, les valeurs supportées actuellement sont : `esxi`, `nsxtManager`, `vcsa`, `nsxtEdge`.
+ "streamId": "ggb8d894-c491-433e-9c87-50a8bf6fe773", // L'identifiant du stream Logs Data Platform.
+}
+```
 
 La requête GET permet de lister vos IDs de souscriptions.
 
@@ -172,13 +176,14 @@ Utilisez les appels API suivants pour établir la liste des abonnements de votre
 > - `serviceName` : nom de service de votre Hosted Private Cloud VMware on OVHcloud sous la forme "pcc-XXX-XXX-XXX-XXX".
 > - `kind` : nom du type de log de l'abonnement Hosted Private Cloud (par exemple `esxi`).
 >
-> Exemple de retour :
->
-> ```json
-> [
->  "9a36b2ec-c7d2-411d-acf8-qb64ccffdb54"
-> ]
-> ```
+
+Exemple de retour :
+
+```json
+[
+ "9a36b2ec-c7d2-411d-acf8-qb64ccffdb54"
+]
+```
 
 **Comment désactiver votre abonnement de souscription Hosted Private Cloud Log Data Platform** ?
 
@@ -202,10 +207,10 @@ Utilisez les appels API suivants pour établir la liste des abonnements de votre
 Retour :
 
 ```json
- {
-  "operationId": "456eb42e-58r6-4cfd-8r5c-ccr97273712r",
-  "serviceName": "ldp-vg-XXXX"
- }
+{
+ "operationId": "456eb42e-58r6-4cfd-8r5c-ccr97273712r",
+ "serviceName": "ldp-vg-XXXX"
+}
 ```
 
 Vous obtiendrez un `operationId` qui est l'identifiant qui permet de confirmer que l'opération de désactivation s'est bien réalisée.
