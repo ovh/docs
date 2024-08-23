@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Objectif
 
-Les instances Public Cloud sont faciles à déployer et à gérer. Cependant, en tant que membre de l’écosystème Public Cloud d’OVHcloud, les instances offrent de nombreuses options de configuration et peuvent être adaptées à différents cas d'utilisation. Les instructions suivantes incluent toutes les étapes nécessaires (et aussi les étapes facultatives) pour créer une instance dans l’espace client OVHcloud et y accéder à distance.
+Les instances Public Cloud sont faciles à déployer et à gérer. Cependant, en tant que membre de l’écosystème Public Cloud d’OVHcloud, les instances offrent de nombreuses options de configuration et peuvent être adaptées à différents cas d'utilisation. Les instructions suivantes incluent toutes les étapes nécessaires (et aussi les étapes facultatives) pour créer une instance dans l’espace client OVHcloud et y accéder à distance.  
 Vous pourrez ensuite aller plus loin avec votre projet Public Cloud en fonction de vos besoins.
 
 **Ce guide vous détaille les premiers pas avec une instance Public Cloud.**
@@ -32,7 +32,8 @@ Vous pourrez ensuite aller plus loin avec votre projet Public Cloud en fonction 
 
 ## En pratique
 
-> [!info]
+[!primary]
+>
 > Si vous n'avez pas encore créé de projet Public Cloud, commencez par notre [guide sur la création d'un projet](/pages/public_cloud/compute/create_a_public_cloud_project).
 >
 > **Les détails techniques** importants concernant le Public Cloud d’OVHcloud sont disponibles sur [cette page](/pages/public_cloud/compute/00-essential-info-to-get-started-on-public-cloud).
@@ -133,7 +134,7 @@ Avant de créer votre instance, nous vous recommandons d'étudier la manière do
 
 **Mode Public**
 
-Les instances en mode public sont exposées à Internet directement via IPv4/IPv6. Les adresses IP ne peuvent pas être modifiées, mais les instances peuvent avoir des adresses [Additional IP](/links/network/additional-ip) attachées ([y compris votre propre IP](/links/public-cloud/byoip)) et elles peuvent être connectées à un [vRack](/links/network/vrack).
+Les instances en mode public sont exposées à Internet directement via IPv4/IPv6. Les adresses IP ne peuvent pas être modifiées, mais les instances peuvent avoir des adresses [Additional IP](/links/network/additional-ip) attachées ([y compris votre propre IP](/links/network/byoip)) et elles peuvent être connectées à un [vRack](/links/network/vrack).
 
 **Mode Privé**
 
@@ -352,7 +353,7 @@ Cliquez sur `Suivant`{.action} pour passer à la dernière étape.
 >>
 > **Facturation à l’heure**
 >>
->> La facturation à l'heure est le meilleur choix si vous n'avez pas clairement déterminé la durée de la période d'utilisation. Si vous décidez de conserver l’instance pour une utilisation à long terme, vous pouvez toujours [passer à un abonnement mensuel](/pages/public_cloud/compute/changing_hourly_monthly_billing).<br>
+>> La facturation à l'heure est le meilleur choix si vous n'avez pas clairement déterminé la durée de la période d'utilisation. Si vous décidez de conserver l’instance pour une utilisation à long terme, vous pouvez toujours [passer à un abonnement mensuel](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing).<br>
 >> L'instance sera facturée tant qu'elle n'est **pas supprimée**, quelle que soit l'utilisation réelle de l'instance.
 >>
 
@@ -413,9 +414,9 @@ Si votre [paire de clés SSH est correctement configurée](#create-ssh), vous po
 > [!primary]
 >
 > Si vous recevez des messages d’erreur concernant vos **clés SSH**, vérifiez que votre appareil local dispose d’une clé SSH privée correctement configurée en utilisant les informations de [ce guide](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#create-ssh-key).</br>
-> Si vous rencontrez toujours des difficultés, vous pouvez remplacer la paire de clés à l'aide de [ce guide](/pages/public_cloud/compute/replacement_lost_ssh_key).
+> Si vous rencontrez toujours des difficultés, vous pouvez remplacer la paire de clés à l'aide de [ce guide](/pages/public_cloud/compute/replacing_lost_ssh_key).
 >
-> Si vous avez créé une instance sans clé SSH, via l’[API OVHcloud](/pages/manage_and_operation/api/first-steps) ou l’[interface OpenStack Horizon](/pages/public_cloud/compute/create_instance_in_horizon), vous ne pouvez ajouter une clé SSH à votre instance que via le [mode rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) en suivant les instructions décrites dans [ce guide](/pages/public_cloud/compute/replacement_lost_ssh_key).
+> Si vous avez créé une instance sans clé SSH, via l’[API OVHcloud](/pages/manage_and_operate/api/first-steps) ou l’[interface OpenStack Horizon](/pages/public_cloud/compute/create_instance_in_horizon), vous ne pouvez ajouter une clé SSH à votre instance que via le [mode rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) en suivant les instructions décrites dans [ce guide](/pages/public_cloud/compute/replacing_lost_ssh_key).
 >
 
 Vous pouvez accéder à votre instance immédiatement après sa création via l'interface de ligne de commande de votre poste de travail local (`Terminal`, `Command prompt`, `Powershell`, etc.) via SSH.
@@ -649,7 +650,7 @@ Consultez notre [guide dédié](/pages/public_cloud/compute/configuring_addition
 
 [Comment démarrer avec OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
 
-[Comment démarrer avec Horizon](/pages/public_cloud/compute/presentation_horizon)
+[Comment démarrer avec Horizon](/pages/public_cloud/compute/introducing_horizon)
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 

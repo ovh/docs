@@ -32,7 +32,8 @@ You can then go further with your Public Cloud project according to your needs.
 
 ## Instructions
 
-> [!info]
+> [!primary]
+>
 > If you have not created a Public Cloud project yet, start with our [guide on how to create a project](/pages/public_cloud/compute/create_a_public_cloud_project).
 > 
 > Important **technical details** about the OVHcloud Public Cloud are available on [this guide page](/pages/public_cloud/compute/00-essential-info-to-get-started-on-public-cloud).
@@ -135,7 +136,7 @@ Before creating your instance, we recommend to consider the way the instance wil
 
 **Public mode**
 
-Instances in Public Mode are exposed to the public internet directly via IPv4/IPv6. IP addresses cannot be modified but instances can have [Additional IP](/links/network/additional-ip) addresses attached ([including your own](/links/public-cloud/byoip)) and they can be connected to a [vRack](/links/network/vrack).
+Instances in Public Mode are exposed to the public internet directly via IPv4/IPv6. IP addresses cannot be modified but instances can have [Additional IP](/links/network/additional-ip) addresses attached ([including your own](/links/network/byoip)) and they can be connected to a [vRack](/links/network/vrack).
 
 **Private mode**
 
@@ -355,7 +356,7 @@ Click `Next`{.action} to proceed to the final step.
 >>
 > **Hourly billing**
 >>
->> Hourly billing is the better choice if it is unclear how long the usage period will be. If you decide to keep the instance for long-term use, you can still [switch to a monthly subscription](/pages/public_cloud/compute/changing_hourly_monthly_billing).<br>
+>> Hourly billing is the better choice if it is unclear how long the usage period will be. If you decide to keep the instance for long-term use, you can still [switch to a monthly subscription](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing).<br>
 >> The instance will be billed as long as it is **not deleted**, regardless of the actual usage of the instance.
 >>
 
@@ -443,7 +444,7 @@ Continue with [Step 6 below](#manage-access).
 
 #### 5.3: Windows instances
 
-##### 5.3.1: Finish the installation of a Windows instance
+##### 5.3.1: Finish the installation of the Windows instance
 
 After verifying that the Windows instance is [installed](#verify-status), open the tab `VNC console`{.action} in your [OVHcloud Control Panel](/links/manager).
 
