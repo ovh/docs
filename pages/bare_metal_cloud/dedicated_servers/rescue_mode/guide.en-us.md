@@ -61,7 +61,7 @@ Select the “Authentication via SSH key” option, then enter your **public** S
 
 ![Linux SSH Key authentication](images/rescue-mode-08.png){.thumbnail}
 
-> [!info]
+> [!primary]
 > 
 > You can add a default SSH key for rescue mode to a server via the OVHcloud API. See the [guide section below](#rescuessh) for details.
 >
