@@ -130,151 +130,151 @@ Nachdem Sie das Git-Zuordnungsformular bestätigt haben, werden Sie zum Tab Mult
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/banner-git-activation-ongoing.png){.thumbnail}
 
-A green banner will show you that Git is being enabled. Follow the activation of Git by clicking on the `Current tasks`{.action} link.
+Ein grünes Banner zeigt an, dass Git aktiviert wird. Verfolgen Sie die Aktivierung von Git, indem Sie auf den Link `aktuellen Tasks`{.action} klicken.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/ongoing-task-git-activation.png){.thumbnail}
 
-The status `Running`{.action} indicates that the Git association is in progress. The process may take several minutes. When the task is complete, the status `Enabled`{.action} is displayed.
+Der Status `Wird ausgeführt`{.action} zeigt an, dass die Git-Zuordnung in Bearbeitung ist. Dieser Vorgang kann einige Minuten dauern. Wenn die Aufgabe abgeschlossen ist, wird der Status `Aktiviert`{.action} angezeigt.
 
-You can also track the progress of Git activation from the `Multisite`{.action} tab. In the table, identify the rows that correspond to the directory you want to associate with Git. For each of the rows concerned, in the `Git`{.action} column, the phrase `In progress`{.action} tells you that Git is being enabled.
+Sie können den Fortschritt der Git-Aktivierung auch im Tab `Multisite`{.action} verfolgen. Suchen Sie in der Tabelle die Zeilen für das Verzeichnis, das Sie mit Git verknüpfen möchten. In der Spalte `Git`{.action} wird für jede der betroffenen Zeilen durch den Eintrag `Wird ausgeführt`{.action} angezeigt, dass Git aktiviert ist.
 
-When the Git association is complete, the status `Enabled`{.action} appears in the `Git`{.action} column for the rows concerned.
+Wenn die Git-Zuordnung abgeschlossen ist, wird der Status `Aktiviert`{.action} in der Spalte `Git`{.action} für die betreffenden Zeilen angezeigt.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/success-git-activation.png){.thumbnail}
 
-#### Git association errors
+### Fehler bei der Git-Zuordnung
 
-In the table in the `Multisite`{.action} tab, identify the rows corresponding to the directory you want to associate with Git. In the `Git` column, if the word `Error` appears, this means that at least one of the following errors has occurred:
+Suchen Sie in der Tabelle der Registerkarte `Multisite`{.action} die Zeilen für das Verzeichnis, das Sie mit Git verknüpfen möchten. Wenn in der Spalte `Git` der Eintrag `Fehler` angezeigt wird, ist mindestens einer der folgenden Fehler aufgetreten:
 
-- The SSH key has not been saved in your GitHub account.
-- The installation directory is not empty.
-- The GitHub repository address does not exist or is incorrect.
-- The branch of the GitHub repository does not exist or its name is incorrect.
+- Der SSH-Schlüssel wurde nicht in Ihrem GitHub-Konto gespeichert.
+- Das Installationsverzeichnis ist nicht leer.
+- Die GitHub-Repository-Adresse ist nicht vorhanden oder falsch.
+- Der Zweig des GitHub-Repositorys ist nicht vorhanden, oder der Name ist falsch.
 
-For the exact cause of the error, see the information from the last deployment. In the table, identify the row corresponding to the domain name for which you want to view the logs for the last deployment. To the right of the line, click on the `...`{.action} button, then on `Latest deployment information`{.action}.
+Die genaue Fehlerursache finden Sie in den Informationen zur letzten Bereitstellung. Suchen Sie in der Tabelle die Zeile für den Domainnamen, dessen Logs Sie für die letzte Bereitstellung anzeigen möchten. Rechts in der Zeile klicken Sie auf den Button `...`{.action} und dann auf `Informationen zur lezten Bereitstellung`{.action}.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/info-last-deployment-button.png){.thumbnail}
 
-Once you have identified the error(s), associate Git again. Retry the operation by clicking on the `...`{.action} button on the corresponding line, then on `Link Git`{.action}.
+Wenn Sie den/die Fehler(s) identifiziert haben, ordnen Sie Git erneut zu. Wiederholen Sie den Vorgang, indem Sie auf die Schaltfläche `...`{.action} in der entsprechenden Zeile und dann auf `Git zuordnen`{.action} klicken.
 
-### Deploy your GitHub repository on your OVHcloud web hosting plan
+### Deployment Ihres GitHub-Repositorys auf Ihrem OVHcloud Webhosting
 
-Log in to your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, click `Hosting plans`{.action}, then choose the name of the web hosting plan concerned. Select the `Multisite`{.action} tab. In the table that appears, identify the row for the domain name that you want to deploy with Git. Ensure that the status of the Git column is `Enabled`{.action}. Click the `...`{.action} button, then `Deploy Git`{.action}.
+Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager), gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Wählen Sie die Registerkarte `Multisite`{.action}. Suchen Sie in der angezeigten Tabelle die Zeile für den Domainnamen, den Sie mit Git deployen möchten. Stellen Sie sicher, dass der Status der Git-Spalte `Aktiviert`{.action} ist. Klicken Sie auf den Button `...`{.action} und dann auf `Git deployen`{.action}.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/deploy-git-button.png){.thumbnail}
 
-A confirmation message appears, along with a check box telling you that if there is a conflict during deployment, you can force remote (GitHub repository) changes on your local repository. Tick or untick the box depending on your choice, then click `Confirm`{.action} to validate the deployment.
+Es wird eine Bestätigungsmeldung angezeigt, und Sie erhalten ein Kontrollkästchen, das Ihnen mitteilt, dass Sie bei einem Konflikt während der Bereitstellung Remote-Änderungen (aus dem GitHub-Repository) in Ihrem lokalen Repository erzwingen können. Aktivieren oder deaktivieren Sie das Kontrollkästchen, und klicken Sie auf `Bestätigen`{.action}, um die Bereitstellung zu bestätigen.
 
 > [!warning]
 >
-> To avoid losing your local changes, remember to save them before overwriting them with changes from the remote branch.
+> Um den Verlust lokaler Änderungen zu vermeiden, sollten Sie diese speichern, bevor Sie die Änderungen in der Remote-Verzweigung überschreiben.
 >
 
-The new version of your website has been deployed on your OVHcloud hosting plan. If other people are working on the same project and they make changes on the GitHub repository, then you can [configure a webhook on GitHub](#configureWebhook) so that their changes are automatically deployed to your web hosting plan. This avoids having to deploy Git manually, and your web hosting plan will always be up-to-date.
+Die neue Version Ihrer Website wurde erfolgreich auf Ihrem OVHcloud Hosting bereitgestellt. Wenn andere Personen am gleichen Projekt arbeiten und Änderungen am GitHub-Repository vornehmen, dann können Sie [einen Webhook auf GitHub einrichten](#configureWebhook), damit die Änderungen automatisch auf Ihrem Webhosting bereitgestellt werden. So müssen Sie Git nicht manuell bereitstellen, und Ihr Webhosting bleibt immer auf dem neuesten Stand.
 
-### Modify a domain name
+### Domainnamen bearbeiten
 
-Log in to your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, click `Hosting plans`{.action}, then choose the name of the web hosting plan concerned. Select the `Multisite`{.action} tab. In the table that appears, identify the row for the domain you want to modify. Click the `...`{.action} button, then `Modify domain`{.action}. There are two possible scenarios:
+Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager), gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Wählen Sie die Registerkarte `Multisite`{.action}. Suchen Sie in der angezeigten Tabelle die Zeile für die Domain, die Sie ändern möchten. Klicken Sie auf den Button `...`{.action} und dann auf `Domain bearbeiten`{.action}. Es gibt zwei mögliche Szenarien:
 
-#### The domain name is not the only one attached to the same directory
+#### Der Domainname ist nicht der einzige, der an dasselbe Verzeichnis angehängt ist
 
-The following window appears:
+Das folgende Fenster wird angezeigt:
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-step1.png){.thumbnail}
 
-Modify the information of your choice and click `Next`{.action}.
+Bearbeiten Sie die gewünschten Informationen und klicken Sie auf `Weiter`{.action}.
 
-A second confirmation window will appear, with a summary of your changes.
+Ein zweites Bestätigungsfenster mit einer Zusammenfassung Ihrer Änderungen wird angezeigt.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-step2.png){.thumbnail}
 
-Click `Confirm`{.action} to confirm your domain name changes.
+Klicken Sie auf `Bestätigen`{.action}, um die Änderungen Ihrer Domain zu bestätigen.
 
-#### The domain name is the only one attached to the directory
+#### Der Domainname ist der einzige, der dem Verzeichnis zugeordnet ist
 
-The following window appears:
+Das folgende Fenster wird angezeigt:
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-alone-domain-step1.png){.thumbnail}
 
-As the message states, [delete your Git association](#deleteGitAssociation) first before changing your domain name.
+Wie in der Nachricht bereits erwähnt, [löschen Sie bitte Ihre Git-Assoziation](#deleteGitAssociation), bevor Sie Ihren Domainnamen ändern.
 
-### Detach a domain name
+### Trennen eines Domainnamens
 
-Log in to your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, click `Hosting plans`{.action}, then choose the name of the web hosting plan concerned. Select the `Multisite`{.action} tab. In the table that appears, identify the line corresponding to the domain that you want to detach from your OVHcloud web hosting plan. Click the `...`{.action} button, then `Detach domain`{.action}. There are two possible scenarios:
+Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager), gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Wählen Sie die Registerkarte `Multisite`{.action}. Identifizieren Sie in der angezeigten Tabelle die Zeile für die Domain, die Sie von Ihrem OVHcloud Webhosting trennen möchten. Klicken Sie auf den Button `...`{.action} und dann auf `Domain abtrennen`{.action}. Es gibt zwei mögliche Szenarien:
 
-#### The domain name is not the only one attached to the same directory
+#### Der Domainname ist nicht der einzige, der an dasselbe Verzeichnis angehängt ist
 
-The following window will appear.
+Das folgende Fenster wird angezeigt.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/detach-domain-popup.png){.thumbnail}
 
-Click `Confirm`{.action} to confirm the detachment of your domain name.
+Klicken Sie auf `Bestätigen`{.action}, um die Abtrennung Ihrer Domain zu bestätigen.
 
-#### The domain name is the only one attached to the directory
+#### Der Domainname ist der einzige, der dem Verzeichnis zugeordnet ist
 
-The following window appears:
+Das folgende Fenster wird angezeigt:
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/detach-alone-domain.png){.thumbnail}
 
-As the message states, [delete your Git association](#deleteGitAssociation) first before detaching your domain name.
+Wie es in der Nachricht heißt, [löschen Sie bitte Ihre Git-Assoziation](#deleteGitAssociation), bevor Sie Ihren Domainnamen freigeben.
 
-### Configure Git
+### Git konfigurieren
 
-Log in to your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, click `Hosting plans`{.action}, then choose the name of the web hosting plan concerned. Select the `Multisite`{.action} tab. In the table that appears, identify the row corresponding to the directory you want to configure with Git. Click the `...`{.action} button, then `Configure Git`{.action}.
+Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager), gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Wählen Sie die Registerkarte `Multisite`{.action}. Suchen Sie in der angezeigten Tabelle die Zeile für das Verzeichnis, das Sie mit Git konfigurieren möchten. Klicken Sie auf `...`{.action} und dann auf `Git konfigurieren`{.action}.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/configure-git-button.png){.thumbnail}
 
-The following information is displayed:
+Die folgenden Informationen werden angezeigt:
 
-- SSH key: If you have not already done so, [save your SSH key in your GitHub account](#linkSSHKey).
-- Deposit: Address of your Git deposit. This field is grayed out because you cannot change the address of the Git repository. To change the Git repository URL, you must [remove Git association from your directory](#deleteGitAssociation) and then [associate directory to Git](#associateGitRepo) again.
-- Branch: Name of the branch of the GitHub repository. You can edit this field.
-- Webhook URL: If you want to optimise your deployments on Git, [configure the webhook on GitHub](#configureWebhook).
+- SSH-Schlüssel: Wenn Sie dies noch nicht getan haben, [speichern Sie Ihren SSH-Schlüssel in Ihrem GitHub-Konto](#linkSSHKey).
+- Repository: Die Adresse Ihres Git Repositorys. Dieses Feld ist abgeblendet, da Sie die Adresse des Git-Repositorys nicht ändern können. Um die URL des Git-Repositorys zu ändern, müssen Sie [die Git-Zuordnung aus Ihrem Verzeichnis entfernen](#deleteGitAssociation) und anschließend [das Verzeichnis erneut mit Git zuordnen](#associateGitRepo).
+- Verzweigung: Der Name der Verzweigung des GitHub-Repositorys. Sie können dieses Feld bearbeiten.
+- Webhook-URL: Wenn Sie Ihre Bereitstellungen auf Git optimieren möchten, [konfigurieren Sie den Webhook auf GitHub](#configureWebhook).
 
-### Latest deployment information
+### Informationen zur letzten Bereitstellung
 
-Once you have deployed your GitHub repository on your web hosting plan, you can view information on the latest deployment, such as errors, tests and any useful information. 
+Nachdem Sie Ihr GitHub-Repository auf Ihrem Webhosting eingerichtet haben, können Sie die Informationen zur letzten Bereitstellung wie Fehler, Tests oder andere nützliche Informationen einsehen.
 
-Log in to your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, click `Hosting plans`{.action}, then choose the name of the web hosting plan concerned. Select the `Multisite`{.action} tab. In the table that appears, identify the row for the domain whose logs you want to view from the last deployment. To the right of the line, click the `...`{.action} button, then `Latest deployment information`{.action}.
+Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager), gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Wählen Sie die Registerkarte `Multisite`{.action}. Geben Sie in der angezeigten Tabelle die Zeile für die Domäne an, für die Sie die Logs der letzten Bereitstellung anzeigen möchten. Rechts in der Zeile klicken Sie auf den Button `...`{.action} und dann auf `Informationen zur lezten Bereitstellung`{.action}.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/informations-last-git-deployment-button.png){.thumbnail}
 
-On this screen, you can view all the information related to the latest deployment.
+Auf diesem Bildschirm finden Sie alle Informationen zur letzten Bereitstellung.
 
-### Delete Git <a name="deleteGitAssociation"></a> association
+### Zuordnung von Git entfernen <a name="deleteGitAssociation"></a>
 
-Log in to your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, click `Hosting plans`{.action}, then choose the name of the web hosting plan concerned. Select the `Multisite`{.action} tab. In the table that opens, identify the row corresponding to the directory whose association with Git you want to remove. Click the `...`{.action} button, then `Delete Git`{.action}.
+Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager), gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Wählen Sie die Registerkarte `Multisite`{.action}. Geben Sie in der angezeigten Tabelle die Zeile an, die dem Verzeichnis entspricht, dessen Zuordnung zu Git Sie aufheben möchten. Klicken Sie auf den Button `...`{.action} und dann auf `Git löschen`{.action}.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/delete-git-association-button.png){.thumbnail}
 
-The following window appears:
+Das folgende Fenster wird angezeigt:
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/delete-git-association-popup.png){.thumbnail}
 
-The message informs you that the deletion will apply to all domain names attached to your directory. Tick the `Do you want to empty the contents of the <your_directory> directory?`{.action} option if you also want to delete the contents (folders and files) of the directory.
+Die Meldung informiert Sie darüber, dass die Löschung für alle Domainnamen gilt, die mit Ihrem Verzeichnis verbunden sind. Aktivieren Sie das Kontrollkästchen `Möchten Sie den Inhalt des Verzeichnisses <your_directory> leeren?`{.action} leeren, wenn Sie auch den Inhalt (Ordner und Dateien) des Verzeichnisses löschen möchten.
 
-1\.	If you select the check box, the following window appears:
+1\.	Wenn Sie das Kontrollkästchen aktivieren, wird das folgende Fenster angezeigt:
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/delete-git-association-with-folder-popup-confirm.png){.thumbnail}
 
-Click `Confirm`{.action} to confirm the deletion of the Git association from your directory, as well as its contents.
+Klicken Sie auf `Bestätigen`{.action}, um das Löschen der Git-Zuordnung aus Ihrem Verzeichnis und deren Inhalt zu bestätigen.
 
-2\.	If you do not select the check box, the following window appears:
+2\.	Wenn Sie das Kontrollkästchen nicht aktivieren, wird das folgende Fenster angezeigt:
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/delete-git-association-popup-confirm.png){.thumbnail}
 
-Click `Confirm`{.action} to confirm the deletion of the Git association from your directory.
+Klicken Sie auf `Bestätigen`{.action}, um das Löschen der Git-Zuordnung aus Ihrem Verzeichnis zu bestätigen.
 
-### Configure a webhook on GitHub
+### Webhook auf GitHub konfigurieren
 
-#### Retrieve the webhook URL
+#### Webhook-URL abrufen
 
 > [!primary]
 >
-> If you are already in the Git association form, copy the webhook URL and go to the step “[Configure the webhook](#configureWebhook)”.
+> Wenn Sie sich bereits im Git-Zuordnungsformular befinden, kopieren Sie die Webhook-URL und fahren Sie mit „[Webhook konfigurieren](#configureWebhook)“ fort.
 >
 
-Log in to your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, click `Hosting plans`{.action}, then choose the name of the web hosting plan concerned. Select the `Multisite`{.action} tab. In the table that opens, identify the row that corresponds to the directory where you want to configure a webhook. Click the `...`{.action} button, then `Configure Git`{.action}.
+Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager), gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Wählen Sie die Registerkarte `Multisite`{.action}. Geben Sie in der angezeigten Tabelle die Zeile an, die dem Verzeichnis entspricht, in dem Sie einen Webhook konfigurieren möchten. Klicken Sie auf `...`{.action} und dann auf `Git konfigurieren`{.action}.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/configure-git-button.png){.thumbnail}
 
