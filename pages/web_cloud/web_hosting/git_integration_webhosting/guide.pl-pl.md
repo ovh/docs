@@ -301,20 +301,20 @@ On the screen that appears, click on the `Recent Deliveries`{.action} tab. To se
 
 If the test has worked, the `Response`{.action} tab returns a code of 200. If an error code is returned (usually 500 or 400), this means that your webhook has been misconfigured. Return to the form for adding a webhook, and check the information, specifically the webhook URL provided by OVHcloud.
 
-#### Use the webhook
+#### Korzystanie z funkcji webhook
 
-Once your webhook has been set up, your website’s code will be updated automatically whenever changes occur on the GitHub repository. For example, if changes are made by one of your colleagues on the GitHub repository, then your website code will be updated locally (on your OVHcloud hosting plan).
+Po skonfigurowaniu elementu webhook kod Twojej strony WWW będzie aktualizowany automatycznie za każdym razem, gdy pojawią się zmiany w repozytorium GitHub. Na przykład jeśli w repozytorium GitHub jedna ze współpracowników wprowadzi zmiany, kod Twojej strony WWW zostanie zaktualizowany lokalnie (na Twoim hostingu OVHcloud).
 
-### Conclusion
+### Zakończenie
 
-You have just linked your website code with Git, via your GitHub repository. You can now deploy the changes made on the GitHub repository to your web hosting plan, or deploy them in an automated way using the webhook. You can also view your deployment logs and perform multiple actions in just a few clicks via the OVHcloud Control Panel.
+Powiązałeś kod Twojej strony WWW z Git za pomocą repozytorium GitHub. Możesz teraz wdrożyć zmiany w repozytorium GitHub na Twoim hostingu lub wdrożyć je automatycznie za pomocą interfejsu webhook, sprawdzić logi wdrożeń i wykonywać wiele operacji - wszystko to za pomocą kilku kliknięć w Panelu klienta.
 
-## Go further
+## Sprawdź również
 
-[Putting a website online on your web hosting plan](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)
-
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
+[Uruchomienie strony WWW na hostingu](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)
  
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
  
-Join our [community of users](/links/community).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
+ 
+Dołącz do [grona naszych użytkowników](/links/community).
