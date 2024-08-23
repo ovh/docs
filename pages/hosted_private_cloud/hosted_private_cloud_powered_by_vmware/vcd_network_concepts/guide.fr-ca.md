@@ -1,6 +1,6 @@
 ---
-title: 'VMware Cloud Director - Concepts réseau'
-excerpt: 'Découvrez les puissantes capacités de mise en réseau de VMware Cloud Director on OVHcloud avec ce guide complet sur les concepts et fonctionnalités clés'
+title: "VMware Cloud Director - Concepts réseau et bonnes pratiques"
+excerpt: "Découvrez les puissantes capacités de mise en réseau de VMware Cloud Director on OVHcloud avec ce guide complet sur les concepts et fonctionnalités clés"
 updated: 2024-08-23
 ---
 
