@@ -231,7 +231,7 @@ Les outils suivants sont déjà installés dans ce mode :
 
 <a name="rescuessh"></a>
 
-### How to add a default SSH key for rescue mode
+### Comment ajouter une clé SSH par défaut pour le mode rescue
 
 Pour accélérer le processus, vous pouvez ajouter une clé SSH par défaut pour le mode rescue à votre serveur via l'[API OVHcloud](/pages/manage_and_operation/api/first-steps).
 
