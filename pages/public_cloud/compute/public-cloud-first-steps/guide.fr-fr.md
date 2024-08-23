@@ -32,7 +32,7 @@ Vous pourrez ensuite aller plus loin avec votre projet Public Cloud en fonction 
 
 ## En pratique
 
-[!primary]
+> [!primary]
 >
 > Si vous n'avez pas encore créé de projet Public Cloud, commencez par notre [guide sur la création d'un projet](/pages/public_cloud/compute/create_a_public_cloud_project).
 >
