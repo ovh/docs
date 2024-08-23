@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - Network concepts and best practices"
 excerpt: "Discover the powerful networking capabilities of VMware Cloud Director on OVHcloud with this comprehensive guide (key concepts and features)"
-updated: 2024-08-19
+updated: 2024-08-23
 ---
 
 <style>
@@ -20,12 +20,12 @@ details[open]>summary::before {
 
 > [!primary]
 > 
-> VCD on OVHcloud is currently in Alpha phase. This guide may be incomplete and updated.
+> VCD on OVHcloud is currently in Alpha phase. This guide may be incomplete.
 >
 
 ## Objective
 
-**Develop the fundamental principles and notions of networking within VMware Cloud Director on OVHcloud.**
+**The guide details the fundamental principles and notions of networking within VMware Cloud Director on OVHcloud.**
 
 ## Requirements
 
@@ -61,7 +61,7 @@ The VCD control panel has a network banner with 6 sections:
 - `Network`
 - `Edge Gateways`
 - `Provider Gateways`
-- `IP Spaces`{.action}.
+- `IP Spaces`.
 - `Data Center Groups`
 - `Security Tags`
 

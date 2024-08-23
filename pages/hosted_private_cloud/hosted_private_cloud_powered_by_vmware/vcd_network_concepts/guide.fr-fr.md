@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - Concepts réseau et bonnes pratiques"
 excerpt: "Découvrez les puissantes capacités de mise en réseau de VMware Cloud Director on OVHcloud avec ce guide complet sur les concepts et fonctionnalités clés"
-updated: 2024-08-19
+updated: 2024-08-23
 ---
 
 <style>
@@ -25,7 +25,7 @@ details[open]>summary::before {
 
 ## Objectif
 
-**Développer les principes et les notions fondamentales du réseau au sein de VMware Cloud Director on OVHcloud.**
+**Ce guide expose les principes et les notions fondamentales du réseau au sein de VMware Cloud Director on OVHcloud.**
 
 ## Prérequis
 
@@ -216,7 +216,7 @@ Les passerelles Edge (obligatoire)**
 
 La passerelle Edge de VCD permet à un réseau vDC d'organisation d'acheminer la connectivité aux réseaux internes, la translation d'adresses réseau (NAT), le pare-feu, le montage de tunnel IPsec.
 
-VCD prend en charge les passerelles Edge `IPv4 et IPv6`
+VCD prend en charge les passerelles Edge `IPv4 et IPv6`.
 
 ![VCD Network Edge Overview Gif](images/vcd_network_edge_overview.gif)
 
@@ -247,7 +247,7 @@ Les réseaux vApp permettent aux machines virtuelles de communiquer entre elles 
 
 ### Étape 3 - Limitations
 
-/// details | Quelles sont les limitations réseau connu ?
+/// details | Quelles sont les limitations réseau connues ?
 
 D'un point de vue général, les seules limitations que vous pouvez retrouver au sein de VCD on OVHcloud sont celles d'un service managé. 
 
@@ -289,7 +289,7 @@ Vous pouvez maintenant suivre les étapes du guide suivant : [« Guide 2 - VMwar
 - **Bientôt disponible** : « Guide 4 : VMware Cloud Director on OVHcloud - Network - Comment exploiter un block IP avec VCD on OVHcloud ? »
 - **Bientôt disponible** : « Guide 5 : VMware Cloud Director on OVHcloud - Network - Comment utiliser le distributed firewalling (East - Ouest) ? »
 
-**Notions réseau utiles OVHcloud**
+**Notions réseau OVHcloud utiles**
 
 Pour renforcer vos connaissances réseau au sein de l'univers OVHcloud consultez la page <https://www.ovhcloud.com/fr/network/>.
 
