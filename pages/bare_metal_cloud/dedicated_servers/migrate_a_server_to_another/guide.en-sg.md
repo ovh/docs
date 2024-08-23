@@ -14,7 +14,7 @@ As your needs and OVHcloud ranges are constantly evolving, it is sometimes neces
 >
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and security. Since we have no administrative access to your devices, it is your responsibility to manage the software and to ensure they function correctly.
 >
-> This guide is designed to help you with the most common tasks. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-sg/directory/) if you have difficulties or doubts concerning the administration, usage or implementation of security measures on a server.
+> This guide is designed to help you with the most common tasks. Nevertheless, we recommend that you contact a [specialist service provider](/links/partner) if you have difficulties or doubts concerning the administration, usage or implementation of security measures on a server.
 >
 
 ## Requirements
@@ -85,7 +85,7 @@ For more information, please read our documentation on [domains and Dns](/produc
 
 ## Go further
 
-If you would like assistance migrating your server, please contact our network of [OVHcloud partners](https://partner.ovhcloud.com/en-sg/directory/).
+If you would like assistance migrating your server, please contact our network of [OVHcloud partners](/links/partner).
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-sg/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
