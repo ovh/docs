@@ -23,7 +23,7 @@ La modalità Rescue permette di accedere ai tuoi dati in modo permanente, anche 
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
 >
-> Questa guida ti mostra come eseguire le operazioni necessarie alla gestione del tuo account. Tuttavia, in caso di difficoltà o dubbi relativi all'amministrazione, all'utilizzo o alla creazione di servizi su un server, ti consigliamo di rivolgerti a un [fornitore specializzato](https://partner.ovhcloud.com/it/directory/) o di contattare la [nostra community](https://community.ovh.com/en/).
+> Questa guida ti mostra come eseguire le operazioni necessarie alla gestione del tuo account. Tuttavia, in caso di difficoltà o dubbi relativi all'amministrazione, all'utilizzo o alla creazione di servizi su un server, ti consigliamo di rivolgerti a un [fornitore specializzato](/links/partner) o di contattare la [nostra community](https://community.ovh.com/en/).
 >
 
 ## Procedura

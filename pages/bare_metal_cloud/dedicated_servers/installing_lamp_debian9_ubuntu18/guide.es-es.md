@@ -23,7 +23,7 @@ La creación de un servidor web y los programas asociados permiten que su servid
 > [!warning]
 > Este tutorial explica cómo utilizar una solución de OVHcloud con herramientas externas en un contexto concreto. Puede que necesite adaptar las indicaciones a su situación.
 >
-> Le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) o con [nuestra comunidad](https://community.ovh.com/en/) si tiene problemas o dudas relativos a la administración, el uso o la instalación de servicios en un servidor.
+> Le recomendamos que contacte con un [proveedor especializado](/links/partner) o con [nuestra comunidad](https://community.ovh.com/en/) si tiene problemas o dudas relativos a la administración, el uso o la instalación de servicios en un servidor.
 >
 
 ## Procedimiento

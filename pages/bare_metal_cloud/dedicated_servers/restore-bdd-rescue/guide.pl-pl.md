@@ -23,7 +23,7 @@ Tryb Rescue pozwala na stały dostęp do Twoich danych, nawet jeśli system oper
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 >
-> Celem tego tutoriala jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności lub wątpliwości związanych z administrowaniem, użytkowaniem lub wdrażaniem usług na serwerze zalecamy skorzystanie z pomocy wyspecjalizowanego [usługodawcy](https://partner.ovhcloud.com/pl/directory/) lub zbliżenie się do [naszej społeczności](https://community.ovh.com/en/).
+> Celem tego tutoriala jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności lub wątpliwości związanych z administrowaniem, użytkowaniem lub wdrażaniem usług na serwerze zalecamy skorzystanie z pomocy wyspecjalizowanego [usługodawcy](/links/partner) lub zbliżenie się do [naszej społeczności](https://community.ovh.com/en/).
 >
 
 ## W praktyce

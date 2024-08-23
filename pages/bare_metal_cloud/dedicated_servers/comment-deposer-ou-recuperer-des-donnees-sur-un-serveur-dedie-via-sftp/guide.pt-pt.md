@@ -17,7 +17,7 @@ Se precisar de migrar os seus dados, é possível que tenha de os descarregar do
 > [!warning]
 >Este tutorial explica-lhe como utilizar uma ou várias soluções da OVHcloud com ferramentas externas e descreve as ações a efetuar num contexto específico. Poderá ter de adaptar as instruções à sua situação.
 >
->Se tiver dificuldades em aplicar estas instruções, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/). Para mais informações, consulte a secção [Quer saber mais?](#gofurther) deste guia.
+>Se tiver dificuldades em aplicar estas instruções, recomendamos que recorra a um [fornecedor especializado](/links/partner). Para mais informações, consulte a secção [Quer saber mais?](#gofurther) deste guia.
 >
 
 ## Requisitos

@@ -23,7 +23,7 @@ La realizzazione di un server Web e dei software associati permette al tuo serve
 > [!warning]
 > Questa guida ti mostra come utilizzare una o più soluzioni OVHcloud con tool esterni per descrivere le operazioni eseguite in un contesto preciso. Forse dovrai adattare le istruzioni alla tua situazione.
 >
-> In caso di difficoltà o dubbi relativi all'amministrazione, all'utilizzo o alla creazione di servizi su un server, ti consigliamo di rivolgerti a un [fornitore specializzato](https://partner.ovhcloud.com/it/directory/) o di contattare la [nostra community](https://community.ovh.com/en/).
+> In caso di difficoltà o dubbi relativi all'amministrazione, all'utilizzo o alla creazione di servizi su un server, ti consigliamo di rivolgerti a un [fornitore specializzato](/links/partner) o di contattare la [nostra community](https://community.ovh.com/en/).
 >
 
 ## Procedura

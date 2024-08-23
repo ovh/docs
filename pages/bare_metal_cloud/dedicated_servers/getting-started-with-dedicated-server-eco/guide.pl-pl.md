@@ -93,7 +93,7 @@ Kliknij przycisk `Potwierdź`{.action}, aby rozpocząć instalację systemu oper
 > [!warning]
 > OVHcloud udostępnia Ci usługi, ale to użytkownik ponosi odpowiedzialność za zarządzanie nimi oraz ich konfigurację. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 >
-> Ten przewodnik ułatwi Ci realizację bieżących zadań. Niemniej jednak w przypadku jakichkolwiek trudności lub wątpliwości związanych z administrowaniem, użytkowaniem lub wdrażaniem usług na serwerze, zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/directory/).
+> Ten przewodnik ułatwi Ci realizację bieżących zadań. Niemniej jednak w przypadku jakichkolwiek trudności lub wątpliwości związanych z administrowaniem, użytkowaniem lub wdrażaniem usług na serwerze, zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](/links/partner).
 >
 
 ### Linux

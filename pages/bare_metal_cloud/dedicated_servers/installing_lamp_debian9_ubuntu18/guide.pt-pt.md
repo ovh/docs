@@ -23,7 +23,7 @@ A implementação de um servidor web e dos softwares associados permite ao seu s
 > [!warning]
 > Este tutorial explica a utilização de uma ou várias soluções da OVHcloud com ferramentas externas e descreve as operações realizadas num contexto preciso. Talvez tenha de adaptar as instruções à sua situação.
 >
-> Recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) ou que contacte a [nossa comunidade](https://community.ovh.com/en/) se encontrar dificuldades ou dúvidas relativamente à administração, utilização ou implementação de serviços num servidor.
+> Recomendamos que recorra a um [prestador de serviços especializado](/links/partner) ou que contacte a [nossa comunidade](https://community.ovh.com/en/) se encontrar dificuldades ou dúvidas relativamente à administração, utilização ou implementação de serviços num servidor.
 >
 
 ## Instruções

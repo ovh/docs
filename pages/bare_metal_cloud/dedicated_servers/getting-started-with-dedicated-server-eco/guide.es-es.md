@@ -93,7 +93,7 @@ Por último, haga clic en `Confirmar`{.action} para instalar el sistema operativ
 > [!warning]
 > OVHcloud pone a su disposición servicios cuya configuración y gestión son responsabilidad suya. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 >
-> Esta guía explica las tareas más habituales. No obstante, le recomendamos que contacte con un [proveedor de servicios especializado](https://partner.ovhcloud.com/es-es/directory/) si tiene problemas o dudas sobre la administración, el uso o la implementación de servicios en un servidor.
+> Esta guía explica las tareas más habituales. No obstante, le recomendamos que contacte con un [proveedor de servicios especializado](/links/partner) si tiene problemas o dudas sobre la administración, el uso o la implementación de servicios en un servidor.
 >
 
 #### Linux

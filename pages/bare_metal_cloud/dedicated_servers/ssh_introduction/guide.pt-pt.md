@@ -19,7 +19,7 @@ O protocolo de comunicação SSH (Secure Shell) é a ferramenta principal para e
 > [!warning]
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, é da sua responsabilidade assegurar o seu bom funcionamento.
 >
-> Se encontrar dificuldades durante a execução destas ações, convidamo-lo a contactar um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou a trocar informações com a nossa comunidade de utilizadores em https://community.ovh.com/en/. A OVHcloud não lhe pode fornecer assistência técnica a este respeito.
+> Se encontrar dificuldades durante a execução destas ações, convidamo-lo a contactar um [prestador de serviços especializado](/links/partner) e/ou a trocar informações com a nossa comunidade de utilizadores em https://community.ovh.com/en/. A OVHcloud não lhe pode fornecer assistência técnica a este respeito.
 >
 
 ## Requisitos

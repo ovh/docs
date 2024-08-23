@@ -23,7 +23,7 @@ Uruchomienie serwera www i powiązanych z nim aplikacji pozwala serwerowi cloud 
 > [!warning]
 > Tutorial przedstawia zastosowanie jednego lub kilku rozwiązań OVHcloud w powiązaniu z zewnętrznymi narzędziami i opisuje operacje, jakie należy wykonać w konkretnym przypadku. Być może będziesz musiał dostosować instrukcję do Twojego przypadku.
 >
-> W przypadku trudności lub wątpliwości związanych z administrowaniem, użytkowaniem lub wdrażaniem usług na serwerze zalecamy skorzystanie z pomocy [wyspecjalizowanego](https://partner.ovhcloud.com/pl/directory/) usługodawcy lub zbliżenie się do [naszej społeczności](https://community.ovh.com/en/).
+> W przypadku trudności lub wątpliwości związanych z administrowaniem, użytkowaniem lub wdrażaniem usług na serwerze zalecamy skorzystanie z pomocy [wyspecjalizowanego](/links/partner) usługodawcy lub zbliżenie się do [naszej społeczności](https://community.ovh.com/en/).
 >
 
 ## W praktyce

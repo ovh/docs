@@ -93,7 +93,7 @@ Por fim, clique em `Confirmar`{.action} para lançar a instalação do sistema o
 > [!warning]
 > A OVHcloud oferece-lhe serviços cuja configuração e gestão são da sua responsabilidade. Por isso, é da responsabilidade do cliente assegurar o seu bom funcionamento.
 >
-> Este guia fornece as instruções necessárias para realizar as operações mais habituais. Contudo, recomendamos que contacte um [fornecedor de serviços especializado](https://partner.ovhcloud.com/pt/directory/) se tiver dificuldades ou dúvidas relativamente à administração, utilização ou implementação de serviços num servidor.
+> Este guia fornece as instruções necessárias para realizar as operações mais habituais. Contudo, recomendamos que contacte um [fornecedor de serviços especializado](/links/partner) se tiver dificuldades ou dúvidas relativamente à administração, utilização ou implementação de serviços num servidor.
 >
 
 ### Linux

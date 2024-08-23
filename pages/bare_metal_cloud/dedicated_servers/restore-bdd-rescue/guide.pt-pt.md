@@ -23,7 +23,7 @@ O modo Rescue permite aceder aos seus dados de forma permanente, mesmo que o sis
 >
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 >
-> Este tutorial tem como objetivo acompanhá-lo o melhor possível em tarefas comuns. No entanto, se encontrar dificuldades ou dúvidas relativamente à administração, utilização ou implementação de serviços num servidor, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) ou que contacte a [nossa comunidade](https://community.ovh.com/en/).
+> Este tutorial tem como objetivo acompanhá-lo o melhor possível em tarefas comuns. No entanto, se encontrar dificuldades ou dúvidas relativamente à administração, utilização ou implementação de serviços num servidor, recomendamos que recorra a um [prestador de serviços especializado](/links/partner) ou que contacte a [nossa comunidade](https://community.ovh.com/en/).
 >
 
 ## Instruções

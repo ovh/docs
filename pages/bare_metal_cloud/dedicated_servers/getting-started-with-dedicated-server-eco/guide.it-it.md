@@ -93,7 +93,7 @@ Clicca su `Conferma`{.action} per avviare l’installazione del sistema operativ
 > [!warning]
 > OVHcloud mette a disposizione i servizi la cui configurazione e gestione sono di vostra responsabilità. È quindi responsabilità dell’utente garantirne il corretto funzionamento.
 >
-> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi relativamente all’amministrazione, all’utilizzo o all’implementazione dei servizi di un server, ti consigliamo di contattare un [provider di servizi specializzato](https://partner.ovhcloud.com/it/directory/).
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi relativamente all’amministrazione, all’utilizzo o all’implementazione dei servizi di un server, ti consigliamo di contattare un [provider di servizi specializzato](/links/partner).
 >
 
 #### Linux

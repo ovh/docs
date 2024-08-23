@@ -17,7 +17,7 @@ Durante una migrazione potresti aver bisogno di recuperare i dati da un server d
 > [!warning]
 >Questa guida ti mostra come utilizzare una o più soluzioni OVHcloud con strumenti esterni e descrive le azioni da effettuare in un contesto specifico. Potrai adattare le istruzioni in base alla tua situazione.
 >
->In caso di difficoltà nell'applicazione di queste istruzioni, ti consigliamo di rivolgerti a un [professionista specializzato](https://partner.ovhcloud.com/it/directory/). Per maggiori informazioni, consulta la sezione [Per saperne di più](#gofurther) di questa guida.
+>In caso di difficoltà nell'applicazione di queste istruzioni, ti consigliamo di rivolgerti a un [professionista specializzato](/links/partner). Per maggiori informazioni, consulta la sezione [Per saperne di più](#gofurther) di questa guida.
 >
 
 ## Prerequisiti
