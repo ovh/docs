@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - Audit des cas complexes de migration"
-excerpt: "Découvrez les méthodes d'examen des scénarios les plus complexes au sein de vos services VMware on OVHcloud dans le but de vous préparer à migrer vers VCD"
-updated: 2024-08-19
+excerpt: "Découvrez des solutions aux étapes de verification des scénarios les plus complexes afin de simplifier votre migration vers VMware Cloud Director on OVHcloud"
+updated: 2024-08-23
 ---
 
 
@@ -16,9 +16,8 @@ updated: 2024-08-19
 
 ## Prérequis
 
-- Posséder un produit Hosted Private Cloud managé on OVHcloud.
-- Access au [control panel](/links/manager) OVHcloud.
-- Avoir effectué les étapes de verifications du guide suivant avant le lancement d'une migration vers VCD.
+- Posséder une offre de produits [Hosted Private Cloud VMware](/links/hosted-private-cloud/vmware) managé on OVHcloud.
+- Access à [l'espace client OVHcloud](/links/manager) OVHcloud.
 
 ## En pratique
 
@@ -35,9 +34,9 @@ Ce document détaille également les prérequis pour chaque cas d'utilisation et
 
 Une fois que vous aurez rempli ces exigences, les équipes de OVHcloud migreront les VMs du datacenter principal en utilisant un chemin de migration à chaud.
 
-Cela permettra de limiter au minimum les micro-coupures de vos réseaux publics ou privés. Les réseaux privés étant les plus susceptibles d'être impactés, de l'ordre de quelques minutes.
+Afin de limiter au minimum les micro-coupures de vos réseaux publics ou privés. Les réseaux privés étant les plus susceptibles d'être impactés, de l'ordre de quelques minutes.
 
-##### Tableau - Cas particuliers
+##### Tableau - Étapes de cas particuliers
 
 /// details | Le tableau ci-dessous vous présente chacun des points bloquants à la migration, ainsi que leur niveau de criticité, qu'il convient de mettre en conformité avant que la migration ne puisse débuter.
 
@@ -61,7 +60,7 @@ Cela permettra de limiter au minimum les micro-coupures de vos réseaux publics 
 
 ## Aller plus loin
 
-Découvrez ces guides VCD pour mieux connaitre les avantages de Cloud Director on OVHcloud dans la gestion de votre architecture privée :
+Vous pouvez aller plus loin en lisant ces guides, afin mieux connaitre les avantages de **VMware Cloud Director** dans la gestion de votre architecture privée **Hosted Private Cloud** :
 
 - [VMware Cloud Director - Premiers pas](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-getting-started)
 - [VMware Cloud Director - Les concepts fondamentaux de VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts)
