@@ -1,8 +1,9 @@
 ---
 title: "VMware Cloud Director - Sauvegarde avec Veeam Data Platform"
 excerpt: "Découvrez comment effectuer des sauvegardes et des restaurations avec Veeam (Plug-In) Data Platform / Protection pour votre VCD managé on OVHcloud"
-updated: 2024-08-22
+updated: 2024-08-23
 ---
+
 <style>
 details>summary {
     color:rgb(33, 153, 232) !important;
@@ -29,7 +30,7 @@ details[open]>summary::before {
     - [Les concepts fondamentaux](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts)
     - [Comment se connecter à son organisation](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging)
     - [Comment utiliser l'interface utilisateur](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-getting-started)
-- Avoir une connaissance du fonctionnement de Veeam et de l'impact financière consécutive aux différents paramètres de charge qui s'applique lors de la mise en place de cette solution à VCD (cf. grille tarifaire des sauvegardes Veeam vCD on OVHcloud à [ce lien](/links/hosted-private-cloud/vmware/veeam-managed-backup/).
+- Avoir une connaissance du fonctionnement de Veeam et de l'impact financier consécutif aux différents paramètres de charge qui s'appliquent lors de la mise en place de cette solution à VCD (cf. grille tarifaire des sauvegardes Veeam vCD on OVHcloud disponible via [ce lien](/links/hosted-private-cloud/vmware/veeam-managed-backup).
 
 ## En pratique
 
@@ -50,7 +51,7 @@ Le service Veeam Data Platform est disponible et prêt à l'emploi pour les 3 of
 
 Le service **Veeam Data Platform** dispose d’un plugin VCD pour sauvegarder des VMs et des vApp à partir de n’importe quel Virtual Data Center (VDC) de l’organisation. Il est disponible au niveau de l'organisation pour tout utilisateur VMware Cloud Director ayant le rôle d'administrateur de l'organisation.
 
-/// details | Accéder à la console d'administration Veeam Data Platform.
+/// details | Accéder à la console d'administration Veeam Data Platform
 
 Lorsque vous utilisez l'intégration VCD Protection des données avec Veeam pour créer des tâches de sauvegarde, vous pouvez choisir n'importe quelle instance de machine virtuelle à partir de n'importe quel datacenter virtuel de l'organisation.
 
@@ -66,20 +67,17 @@ La fenêtre du Plugin Veeam VCD s'ouvrira avec un bandeau gris/noir.
 
 #### Repository
 
-Par défaut, vous disposez des repository suivants :
+Par défaut, vous disposez des *repositories* (dépôts) suivants :
 
 - **Bronze Repository** : Ce repository est basé sur la classe [OVHcloud Object Storage Standard](/links/public-cloud/object-storage). Nous utiliserons un bucket le plus proche de votre environnement VCD.
-- **Silver Repository** : Ce repository est basé sur la classe [OVHcloud Object Storage Standard](/links/public-cloud/object-storage). Nous utiliserons un Veeam SOBR (Scale-out Backup Repository) avec des compartiments de niveau de performance plus proches de votre environnement VCD et un niveau de capacité "tier" à partir de buckets d'une autre région OVHcloud. Nous utilisons également le mode de copie Veeam SOBR pour ajouter les sauvegardes des « performance extents » aux « capacity extents » dès leur création.
-
-Troisième choix : Ce repository (Gold) inclut les options précédentes + OVHcloud Object Storage "High performance".
-
-- **Gold Repository** : Ce repository est basé sur la classe [OVHcloud Object Storage High performance](/links/public-cloud/object-storage).
+- **Silver Repository** : Ce repository est basé sur la classe [OVHcloud Object Storage Standard](/links/public-cloud/object-storage). Nous utiliserons un Veeam SOBR (Scale-Out Backup Repository) avec des buckets de niveau de performance plus proches de votre environnement VCD et un niveau de capacité "tier" à partir de buckets d'une autre région OVHcloud. Nous utilisons également le mode de copie Veeam SOBR pour ajouter les sauvegardes des « performance extents » aux « capacity extents » dès leur création.
+- **Gold Repository** : Ce repository est basé sur la classe [OVHcloud Object Storage High performance](/links/public-cloud/object-storage). Il inclut les options précédentes + OVHcloud Object Storage "High performance".
 
 Depuis votre espace client, vous pouvez activer le "Gold Repository".
 
-Tous ces repository ont un quota de stockage de 100 To. Vous pouvez contacter les [équipes de support](https://help.ovhcloud.com/csm?id=csm_get_help) pour augmenter ce quota.
+Tous ces repositories ont un quota de stockage de 100 To. Vous pouvez contacter les [équipes de support](https://help.ovhcloud.com/csm?id=csm_get_help) pour augmenter ce quota.
 
-**Données incluses dans les sauvegardes**
+- **Données incluses dans les sauvegardes :**
 
 Lorsque Veeam Backup & Replication réalise des sauvegardes de vApp et de VM, il capture en plus les métadonnées de vApp.
 
@@ -95,7 +93,7 @@ Les métadonnées des applications virtuelles (vApp) et VM incluent :
 
 Les métadonnées vApp/VM sont stockées avec le contenu de la machine virtuelle. La capture des métadonnées vApp/VM est importante pour la restauration : sans elle, vous ne serez pas en mesure de restaurer les vApp et les VM vers VMware Cloud Director.
 
-**Les tâches de sauvegardes (jobs)**
+- **Les tâches de sauvegardes (jobs) :**
 
 Les tâches de sauvegarde nécessitent 4 paramètres par défaut :
 
@@ -106,7 +104,7 @@ Les tâches de sauvegarde nécessitent 4 paramètres par défaut :
 
 Pour les machines virtuelles gérées par VMware Cloud Director, Veeam Backup & Replication offre un type spécial de tâche de sauvegarde : les tâches de sauvegarde VMware Cloud Director. Les tâches de sauvegarde de VMware Cloud Director traitent les objets VMware Cloud Director, assurent leur restauration correcte et la prise en charge des fonctionnalités spécifiques à Cloud Director.
 
-**Comment créer une tâche de sauvegarde avec Veeam Data Platform** ?
+**Comment créer une tâche de sauvegarde avec Veeam Data Platform ?**
 
 Vous allez créer votre premiere tâche de sauvegarde depuis le plugin VCD Veeam Data Platform  :
 
@@ -157,9 +155,9 @@ Si nécessaire, vous pouvez ajouter des options de monitoring pour vos tâches d
 
 La tâche de sauvegarde apparait dans la liste.
 
-#### Sauvegarde VM
+#### Sauvegarde d'une VM
 
-**Comment sauvegarder une machine virtuelle avec Veeam** ?
+**Comment sauvegarder une machine virtuelle avec Veeam ?**
 
 > [!primary]
 >
@@ -187,7 +185,7 @@ Veeam Backup dispose de plusieurs fonctionnalités de restauration :
 - La connaissance des applications (Application Awareness)
 - La stratégie par VM (Policies)
 
-**Données incluses dans les restaurations**
+**Données incluses dans les restaurations :**
 
 Veeam Backup & Replication permet une restauration complète des VM vers VMware Cloud Director. Vous pouvez restaurer des VM distinctes vers des vApps, ainsi que des données de VM.
 
@@ -199,7 +197,7 @@ La restauration inclut les options suivantes :
 
 Dans ce cas, faites une restauration de type **Full (entière/complète)**.
 
-#### Restauration VM
+#### Restauration d'une VM
 
 **Restauration entière "Full" d'une VM (machine virtuelle)**
 
@@ -210,7 +208,7 @@ Lorsque vous restaurez des VMs normales ou autonomes dans la hiérarchie vCloud 
 - Veeam utilise les métadonnées vApp capturées pour définir les paramètres vApp et l'emplacement d'origine de la machine virtuelle dans la hiérarchie VMware Cloud Director. 
 - Veeam restaure les VMs du fichier de sauvegarde à leur emplacement d'origine ou à un autre emplacement. De plus, Veeam restaure tous les paramètres des VM.
 
-**Comment restaurer une machine virtuelle depuis le plugin Veeam Data Platform VCD** ?
+**Comment restaurer une machine virtuelle depuis le plugin Veeam Data Platform VCD ?**
 
 Pour effectuer une restauration complète, cliquez sur `Entire VM Restore`{.action}
 
@@ -228,9 +226,9 @@ Dans la dernière étape, cliquez sur `Finish`{.action}. Si vous le souhaitez, v
 
 Ce processus est simplifié grâce à VCD, Veeam et OVHcloud.
 
-**Comment restaurer un fichier depuis le plugin Veeam Data Platform VCD** ?
+**Comment restaurer un fichier depuis le plugin Veeam Data Platform VCD ?**
 
-- **File level restore** : Cette option n'est pas disponible encore à ce jour.
+- **File level restore** : cette option n'est pas encore disponible à ce jour.
 
 ///
 
