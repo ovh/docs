@@ -1,7 +1,7 @@
 ---
 title: "Rescue-Modus aktivieren und verwenden"
 excerpt: "Erfahren Sie hier, wie Sie den OVHcloud Rescue-Modus zur Fehlerbehebung bei einem Dedicated Server einsetzen"
-updated: 2024-05-21
+updated: 2024-08-23
 ---
 
 > [!primary]
@@ -64,6 +64,11 @@ In diesem Fall stehen Ihnen zwei Authentifizierungsoptionen zur Verfügung:
 Wählen Sie die Option "Authentifizierung per SSH-Schlüssel" und geben Sie Ihren **Public** SSH-Schlüssel in das dafür vorgesehene Textfeld ein.
 
 ![Authentifizierung per SSH-Schlüssel](images/rescue-mode-08.png){.thumbnail}
+
+> [!primary]
+> 
+> Sie können über die OVHcloud API einen Standard-SSH-Schlüssel für den Rescue-Modus eines Servers hinzufügen. Weitere Informationen finden Sie im Abschnitt [am Ende in dieser Anleitung](#rescuessh).
+>
 
 #### Authentifizierung mit Passwort
 
@@ -227,6 +232,39 @@ Folgende Anwendungen sind bereits in diesem Modus installiert:
 |TestDisk|Eine leistungsstarke Anwendung zur Datenwiederherstellung. Mit diesem Tool können Sie beschädigte Partitionen wiederherstellen und bearbeiten, verlorene Partitionen wiederfinden, einen Bootsektor reparieren oder sogar einen fehlerhaften MBR rekonstruieren.|
 |FileZilla|Ein Open-Source-FTP-Client. Er unterstützt SSH- und SSL-Protokolle und verfügt über ein intuitives Drag-and-Drop-Interface. Es kann verwendet werden, um Ihre Daten auf einen FTP-Server zu übertragen, zum Beispiel das FTP-Backup, das mit den meisten OVHcloud-Servermodellen bereitgestellt wird.|
 |7-ZIP|Ein Datenkomprimierungs- und Datenarchivierungstool, das die folgenden Formate liest: ARJ, CAB, CHM, CPIO, CramFS, DEB, DMG, FAT, HFS, ISO, LZH, LZMA, MBR, MSI, NSIS, NTFS, RAR, RPM, SquashFS, UDF, VHD, WIM, XAR und Z. Außerdem können Sie mit diesem Tool Ihre eigenen Archive in den folgenden Formaten anlegen: BZIP2, GZIP, TAR, WIM, XZ, Z und ZIP.|
+
+<a name="rescuessh"></a>
+
+### Hinzufügen eines Standard-SSH-Schlüssels für den Rescue-Modus
+
+Um den Vorgang zu beschleunigen, können Sie über die [OVHcloud API](/pages/manage_and_operate/api/first-steps) einen Standard-SSH-Schlüssel für den Rescue-Modus Ihres Servers hinzufügen.
+
+Öffnen Sie hierzu in der Web API-Konsole den folgenden API-Endpunkt:
+
+> [!api]
+>
+> @api {v1} /dedicated/server PUT /dedicated/server/{serviceName}
+>
+
+Geben Sie den internen Namen Ihres Servers in das entsprechende Feld ein.
+
+Ändern Sie anschließend das folgende Textfeld wie folgt:
+
+```bash
+{
+  "rescueSshKey": "string"
+}
+```
+
+Ersetzen Sie `string` durch Ihren öffentlichen SSH-Schlüssel.
+
+Das Ergebnis sollte wie im folgenden Beispiel aussehen:
+
+![rescue key example](images/rescuekey.png){.thumbnail}
+
+Wenn Sie die Werte korrekt eingegeben haben, klicken Sie auf `TRY`{.action}.
+
+Das Feld für den SSH-Schlüssel wird jetzt beim Bearbeiten des Netboot-Modus automatisch mit dieser Schlüsselzeichenfolge aufgefüllt.
 
 ## Weiterführende Informationen
 

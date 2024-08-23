@@ -251,7 +251,7 @@ Enter the internal name of your server in the appropriate field.
 
 Then edit the text field below as follows:
 
-```
+```bash
 {
   "rescueSshKey": "string"
 }
