@@ -19,7 +19,7 @@ Si vous constatez un défaut de disque ou que notre système vous a envoyé une 
 
 ## Prérequis
 
-- Être connecté en SSH à votre [serveur dédié OVHcloud](https://www.ovh.com/ca/fr/serveurs-dedies/){.external} avec l'accès *root* (Linux).
+- Être connecté en SSH à votre [serveur dédié OVHcloud](/links/bare-metal/bare-metal/){.external} avec l'accès *root* (Linux).
 
 ## En pratique
 
@@ -147,7 +147,7 @@ Comme précisé précédemment, les numéros de tous les disques sont importants
 
 > [!primary]
 >
-> Ce type de remplacement n'est possible que pour les serveurs [Big-HG](https://www.ovh.com/ca/fr/serveurs-dedies/hg/){.external} disposant d'une carte RAID.
+> Ce type de remplacement n'est possible que pour les serveurs [Big-HG](/links/bare-metal/bare-metal/hg/){.external} disposant d'une carte RAID.
 > 
 
 Dans le cas d'un remplacement à chaud sur un serveur avec une carte MegaRAID, il vous est demandé de faire clignoter la LED du disque à remplacer une fois l'intervention programmée pour faciliter le travail de nos équipes.

@@ -12,7 +12,7 @@ Sur un serveur disposant d'une configuration RAID matériel, la matrice RAID est
 
 ## Prérequis
 
-- Posséder un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external} avec une configuration RAID matériel.
+- Posséder un [serveur dédié](/links/bare-metal/bare-metal/){.external} avec une configuration RAID matériel.
 - Avoir accès à votre serveur via SSH en tant qu'administrateur (sudo).
 
 > [!warning]

@@ -21,7 +21,7 @@ Utiliser un script personnalisé peut-être intéressant dans les cas suivants :
 
 ## Prérequis
 
-- Un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) **prêt à être booté/rebooté** sur votre compte OVHcloud.
+- Un [serveur dédié](/links/bare-metal/bare-metal/) **prêt à être booté/rebooté** sur votre compte OVHcloud.
 - Avoir accès à l'[API OVHcloud](https://api.ovh.com/).
 
 > [!warning]

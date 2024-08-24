@@ -16,7 +16,7 @@ Even if the server is not used for a purpose that requires the administration of
 
 ## Requirements
 
-- A [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) or a [VPS](https://www.ovhcloud.com/en-gb/vps/) with a Linux-based OS in your OVHcloud account
+- A [dedicated server](/links/bare-metal/bare-metal/) or a [VPS](https://www.ovhcloud.com/en-gb/vps/) with a Linux-based OS in your OVHcloud account
 - Login credentials received via email after the installation
 
 

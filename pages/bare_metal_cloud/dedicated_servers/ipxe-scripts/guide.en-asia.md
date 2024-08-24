@@ -22,7 +22,7 @@ Using a custom script can be useful in the following use cases:
 
 ## Requirements
 
-- A [dedicated server](https://www.ovhcloud.com/asia/bare-metal/) **ready to be booted/rebooted** in your OVHcloud account.
+- A [dedicated server](/links/bare-metal/bare-metal/) **ready to be booted/rebooted** in your OVHcloud account.
 - Access to the [OVHcloud API](https://ca.api.ovh.com/).
 
 > [!warning]

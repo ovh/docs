@@ -20,7 +20,7 @@ Le protocole de communication SSH (Secure Shell) est l'outil principal pour éta
 
 ## Prérequis
 
-- Avoir un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) ou un [VPS](https://www.ovhcloud.com/fr/vps/) dans votre compte OVHcloud.
+- Avoir un [serveur dédié](/links/bare-metal/bare-metal/) ou un [VPS](https://www.ovhcloud.com/fr/vps/) dans votre compte OVHcloud.
 - Une application cliente SSH (en ligne de commande ou en interface graphique).
 
 > [!primary]

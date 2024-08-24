@@ -19,7 +19,7 @@ Firewalls work by defining rules that govern both authorised and blocked traffic
 
 ## Requirements
 
-- A [dedicated server](https://www.ovhcloud.com/en-au/bare-metal/) in your OVHcloud account
+- A [dedicated server](/links/bare-metal/bare-metal/) in your OVHcloud account
 - Administrative access (root/sudo) to your server via SSH
 
 ## Instructions

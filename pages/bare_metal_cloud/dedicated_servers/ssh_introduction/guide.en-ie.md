@@ -11,14 +11,14 @@ The SSH (Secure Shell) communication protocol is the main practice to establish 
 **This guide explains how to securely access your server with SSH.**
 
 > [!warning]
->OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+> OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->If you encounter any difficulties performing these actions, please contact a [specialist service provider](/links/partner) and/or discuss the issue with our community on https://community.ovh.com/en/. OVHcloud cannot provide you with technical support in this regard.
+> If you encounter any difficulties performing these actions, please contact a [specialist service provider](/links/partner) and/or discuss the issue with our community on https://community.ovh.com/en/. OVHcloud cannot provide you with technical support in this regard.
 >
 
 ## Requirements
 
-- A [dedicated server](https://www.ovhcloud.com/en-ie/bare-metal/) or a [VPS](https://www.ovhcloud.com/en-ie/vps/) in your OVHcloud account
+- A [dedicated server](/links/bare-metal/bare-metal/) or a [VPS](https://www.ovhcloud.com/en-ie/vps/) in your OVHcloud account
 - An SSH client application (command line or GUI)
 
 > [!primary]

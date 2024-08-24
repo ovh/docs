@@ -18,7 +18,7 @@ Internet Protocol version 6 (IPv6) is the latest version of the Internet Protoco
 
 ## Requirements
 
-- A [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) in your OVHcloud account
+- A [dedicated server](/links/bare-metal/bare-metal/) in your OVHcloud account
 - All your IPv6 information (prefix, gateway etc.)
 - Basic knowledge of [SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) and networking
 

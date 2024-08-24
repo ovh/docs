@@ -12,7 +12,7 @@ Si vous configurez votre serveur dédié en tant que serveur DNS, vous pouvez ut
 
 ## Prérequis
 
-* Disposer d'un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}.
+* Disposer d'un [serveur dédié](/links/bare-metal/bare-metal/){.external}.
 * Disposer d'un [nom de domaine](https://www.ovh.com/fr/domaines/){.external} dont vous avez la gestion administrative ou technique.
 * Être connecté à l’[espace client OVHcloud](/links/manager){.external}.
 

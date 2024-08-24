@@ -18,7 +18,7 @@ To best protect your system, your Windows Server dedicated server has its own bu
 
 ## Requirements
 
-- A [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) with Windows installed in your OVHcloud account
+- A [dedicated server](/links/bare-metal/bare-metal/) with Windows installed in your OVHcloud account
 - Administrative access via remote desktop to your server
 
 ## Instructions

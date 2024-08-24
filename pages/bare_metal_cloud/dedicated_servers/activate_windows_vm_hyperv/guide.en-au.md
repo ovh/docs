@@ -16,7 +16,7 @@ updated: 2022-01-06
 
 ## Requirements
 
-- A [dedicated server](https://www.ovhcloud.com/en-au/bare-metal/){.external} with Windows Server installed
+- A [dedicated server](/links/bare-metal/bare-metal/){.external} with Windows Server installed
 - The Hyper-V role installed
 - A Windows License provided by OVHcloud
 

@@ -13,7 +13,7 @@ Elle a pour objectif de vous accompagner et faire en sorte qu'il y ait le moins 
 
 ## Prérequis
 
-- Posséder un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/){.external}.
+- Posséder un [serveur dédié](/links/bare-metal/bare-metal/){.external}.
 
 ## En pratique
 

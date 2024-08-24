@@ -11,7 +11,7 @@ updated: 2023-08-31
 > This article is intended for experimented users that have at least basic Linux knowledge, but more importantly deeper technical knowledge on storage and especially on RAID software as well as Logical volume management (LVM)
 >
 
-With [OVHcloud Dedicated Servers](https://www.ovhcloud.com/en-au/bare-metal/), you can configure Partitions, [software RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft), LVM, ZFS, etc. during [OS installation](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server) from the [OVHcloud API](https://ca.api.ovh.com/) as well as the [OVHcloud Control Panel](https://www.ovh.com/manager/#/dedicated/configuration). In this article, we will focus on the [OVHcloud API](https://ca.api.ovh.com/). This will give us more details about the engine that is running in the background in order to create the partitioning on the dedicated server from the input data passed on to the OVHcloud API.
+With [OVHcloud Dedicated Servers](/links/bare-metal/bare-metal/), you can configure Partitions, [software RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft), LVM, ZFS, etc. during [OS installation](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server) from the [OVHcloud API](https://ca.api.ovh.com/) as well as the [OVHcloud Control Panel](https://www.ovh.com/manager/#/dedicated/configuration). In this article, we will focus on the [OVHcloud API](https://ca.api.ovh.com/). This will give us more details about the engine that is running in the background in order to create the partitioning on the dedicated server from the input data passed on to the OVHcloud API.
 
 Providing in-depth details about partitioning can help customers understand why:
 
@@ -20,7 +20,7 @@ Providing in-depth details about partitioning can help customers understand why:
 
 ## Requirements
 
-* A [dedicated server](https://www.ovhcloud.com/en-au/bare-metal/) **ready to be installed/re-installed** in your OVHcloud account.
+* A [dedicated server](/links/bare-metal/bare-metal/) **ready to be installed/re-installed** in your OVHcloud account.
 * Access to the [OVHcloud API](https://ca.api.ovh.com/).
 
 > [!warning]

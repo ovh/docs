@@ -22,9 +22,9 @@ It is also possible to set up such configuration (one interface on private netwo
 
 ## Requirements
 
-- An [OVHcloud dedicated server](https://www.ovhcloud.com/en-au/bare-metal/)
+- An [OVHcloud dedicated server](/links/bare-metal/bare-metal/)
 - Access to the [OVHcloud Control Panel](/links/manager)
-- An [Additional IP](https://www.ovhcloud.com/en-au/bare-metal/ip/)
+- An [Additional IP](/links/bare-metal/bare-metal/ip/)
 
 > [!warning]
 >
@@ -246,7 +246,7 @@ network:
 
 - A public block of IP addresses in your account, with a minimum of four addresses
 - Your chosen private IP address range
-- A [vRack compatible server](https://www.ovhcloud.com/en-au/bare-metal/){.external}
+- A [vRack compatible server](/links/bare-metal/bare-metal/){.external}
 - A [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} service activated in your account
 - Access to the [OVHcloud Control Panel](/links/manager)
 

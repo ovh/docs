@@ -19,7 +19,7 @@ If you notice that a disk is faulty, or receive a notification email about a fau
 
 ## Requirements
 
-- a [Dedicated Server](https://www.ovh.co.uk/dedicated_servers/){.external}
+- a [Dedicated Server](/links/bare-metal/bare-metal/){.external}
 - administrative (sudo) access to the server via SSH
 
 ## Instructions
@@ -152,7 +152,7 @@ As a reminder, it’s important to include the serial numbers of all the disks. 
 
 > [!primary]
 >
-> This replacement type is only possible for [FS-48T](https://www.ovh.co.uk/dedicated_servers/storage/1901fs03.xml){.external}, [STOR-72T](https://www.ovh.co.uk/dedicated_servers/storage/1801fs09.xml){.external}, [FS-MAX](https://www.ovh.co.uk/dedicated_servers/storage/1801fs05.xml){.external}, [mHG](https://www.ovh.co.uk/dedicated_servers/hg/1801mhg03.xml){.external}(2019 range only), [HG](https://www.ovh.co.uk/dedicated_servers/hg/1801hg03.xml){.external} and [BHG](https://www.ovh.co.uk/dedicated_servers/hg/1801bhg03.xml){.external} 
+> This replacement type is only possible for [FS-48T](/links/bare-metal/bare-metal/storage/1901fs03.xml){.external}, [STOR-72T](/links/bare-metal/bare-metal/storage/1801fs09.xml){.external}, [FS-MAX](/links/bare-metal/bare-metal/storage/1801fs05.xml){.external}, [mHG](/links/bare-metal/bare-metal/hg/1801mhg03.xml){.external}(2019 range only), [HG](/links/bare-metal/bare-metal/hg/1801hg03.xml){.external} and [BHG](/links/bare-metal/bare-metal/hg/1801bhg03.xml){.external} 
 > 
 
 If you are hot-swapping a disk on a server with a MegaRAID card you can refer to our [Hot Swap - Hardware RAID](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_hard){.external} guide. 

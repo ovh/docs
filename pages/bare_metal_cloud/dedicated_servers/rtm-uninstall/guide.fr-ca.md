@@ -12,7 +12,7 @@ Le système de monitoring OVHcloud RTM v2 est désormais déprécié et les dép
 
 ## Prérequis
 
-- Un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/) sur lequel RTM v2 a été installé
+- Un [serveur dédié](/links/bare-metal/bare-metal/) sur lequel RTM v2 a été installé
 - Avoir un accès administrateur (sudo) à votre serveur via SSH
 
 ## En pratique

@@ -14,7 +14,7 @@ Its goal is to support you and ensure that there is as little impact as possible
 
 ## Requirements
 
-- A [dedicated server](https://www.ovhcloud.com/en-au/bare-metal/) in your OVHcloud account
+- A [dedicated server](/links/bare-metal/bare-metal/) in your OVHcloud account
 
 ## Instructions
 

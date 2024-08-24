@@ -20,7 +20,7 @@ La mise en réseau en mode bridge peut être utilisée pour configurer vos machi
 ## Prérequis
 
 * Posséder un serveur dédié avec un hyperviseur installé ([VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox, par exemple).
-* Bénéficier d'au moins une adresse [Additional IP](https://www.ovhcloud.com/fr-ca/bare-metal/ip/) connectée au serveur.
+* Bénéficier d'au moins une adresse [Additional IP](/links/bare-metal/bare-metal/ip/) connectée au serveur.
 * Être connecté à votre [espace client OVHcloud](/links/manager).
 
 > [!warning]
@@ -28,7 +28,7 @@ La mise en réseau en mode bridge peut être utilisée pour configurer vos machi
 >
 > Consultez notre [comparatif](/links/bare-metal/eco-compare) pour plus d’informations.
 >
-> Ce guide n'est pas applicable aux serveurs des gammes [Scale](https://www.ovhcloud.com/fr-ca/bare-metal/scale/) et [High Grade](https://www.ovhcloud.com/fr-ca/bare-metal/high-grade/). Il en est de même pour la gamme de serveurs Advance disposant des CPU AMD Epyc 4K et 8K lancée depuis juillet 2024.
+> Ce guide n'est pas applicable aux serveurs des gammes [Scale](/links/bare-metal/bare-metal/scale/) et [High Grade](/links/bare-metal/bare-metal/high-grade/). Il en est de même pour la gamme de serveurs Advance disposant des CPU AMD Epyc 4K et 8K lancée depuis juillet 2024.
 >
 > Reportez-vous plutôt aux guides suivants : [Configurer le réseau sur ESXi sur les gammes High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/esxi-network-HG-Scale), [Configurer le réseau sur Proxmox VE sur les gammes High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/proxmox-network-HG-Scale) et [Configurer le réseau sur Windows Server avec Hyper-V sur les gammes High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale).
 

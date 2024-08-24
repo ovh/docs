@@ -9,7 +9,7 @@ L'installation de CUDA (Compute Unified Device Architecture) sur un serveur GPU 
 
 ## Prérequis
 
-- Avoir un [serveur GPU](https://www.ovhcloud.com/fr/bare-metal/).
+- Avoir un [serveur GPU](/links/bare-metal/bare-metal/).
 - Être connecté en SSH sur son serveur
 
 ## En pratique

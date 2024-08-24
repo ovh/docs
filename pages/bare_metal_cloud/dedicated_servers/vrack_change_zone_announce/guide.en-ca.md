@@ -6,7 +6,7 @@ updated: 2019-03-12
 
 ## Objective
 
-The [vRack](https://www.ovh.com/ca/en/solutions/vrack/){.external} is a private network that allows you to configure the address between two or more [OVHcloud dedicated servers](https://www.ovhcloud.com/en-ca/bare-metal/){.external}.
+The [vRack](https://www.ovh.com/ca/en/solutions/vrack/){.external} is a private network that allows you to configure the address between two or more [OVHcloud dedicated servers](/links/bare-metal/bare-metal/){.external}.
 
 **Learn how to set the announcement zone of an IP block in vRack.**
 

@@ -15,7 +15,7 @@ Our High Grade and Scale servers offer a scalable option that allows you increas
 
 ## Requirements
 
-- A [High Grade](https://www.ovhcloud.com/en-gb/bare-metal/high-grade/) or [SCALE](https://www.ovhcloud.com/en-gb/bare-metal/scale/) server 
+- A [High Grade](/links/bare-metal/bare-metal/high-grade/) or [SCALE](/links/bare-metal/bare-metal/scale/) server 
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions

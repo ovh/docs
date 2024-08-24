@@ -8,7 +8,7 @@ updated: 2018-09-12
 
 Vos données informatiques sont sensibles : une perte ou une altération de celles-ci peut vite entraîner des situations problématiques pour votre activité. Le risque zéro n'existant pas, il est conseillé de réaliser des sauvegardes au moins quotidiennement et, de préférence, dans un serveur ou une solution de stockage différent de vos infrastructures de production.
 
-OVHcloud propose une gamme de [serveurs dédiés](https://www.ovhcloud.com/fr-ca/bare-metal/storage/){.external} adaptés à vos opérations de stockage et dotés au minimum de quatre disques durs. Il est possible d'utiliser ces ressources pour sauvegarder une infrastructure hébergée chez OVHcloud ou chez un autre prestataire, via le réseau Internet public.
+OVHcloud propose une gamme de [serveurs dédiés](/links/bare-metal/bare-metal/storage/){.external} adaptés à vos opérations de stockage et dotés au minimum de quatre disques durs. Il est possible d'utiliser ces ressources pour sauvegarder une infrastructure hébergée chez OVHcloud ou chez un autre prestataire, via le réseau Internet public.
 
 Dans ce tutoriel, vous configurerez un serveur de stockage OVHcloud pour répondre à vos besoins, créerez l'arborescence de réception des sauvegardes, puis automatiserez la sauvegarde des données de deux serveurs distants via le protocole SCP.
 
@@ -24,8 +24,8 @@ Dans ce tutoriel, vous configurerez un serveur de stockage OVHcloud pour répond
 
 ### Ce que vous devez avoir
 
-- Un [serveur de stockage OVHcloud](https://www.ovhcloud.com/fr-ca/bare-metal/storage/){.external}.
-- Une infrastructure de production ([VPS](https://www.ovhcloud.com/fr-ca/vps/){.external}, [serveurs dédiés](https://www.ovhcloud.com/fr-ca/bare-metal/){.external}, [Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/){.external}…).
+- Un [serveur de stockage OVHcloud](/links/bare-metal/bare-metal/storage/){.external}.
+- Une infrastructure de production ([VPS](https://www.ovhcloud.com/fr-ca/vps/){.external}, [serveurs dédiés](/links/bare-metal/bare-metal/){.external}, [Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/){.external}…).
 - Une connexion SSH configurée entre le serveur de stockage et l'infrastructure de production.
 - Conseillé : un réseau privé entre vos serveurs ([OVHcloud vRack](https://www.ovh.com/ca/fr/solutions/vrack/){.external}).
 
@@ -33,7 +33,7 @@ Dans ce tutoriel, vous configurerez un serveur de stockage OVHcloud pour répond
 
 ### Étape 1 : choisissez le mode RAID approprié
 
-OVHcloud dispose d'une gamme de [serveurs de stockage](https://www.ovhcloud.com/fr-ca/bare-metal/storage/){.external} dont les configurations matérielles contiennent plusieurs disques durs. Dans notre exemple, nous possédons un RAID logiciel (ou _soft RAID_) de quatre disques d'une capacité de 6 To chacun.
+OVHcloud dispose d'une gamme de [serveurs de stockage](/links/bare-metal/bare-metal/storage/){.external} dont les configurations matérielles contiennent plusieurs disques durs. Dans notre exemple, nous possédons un RAID logiciel (ou _soft RAID_) de quatre disques d'une capacité de 6 To chacun.
 
 OVHcloud vous permet de choisir la configuration de stockage des données, en proposant les RAID 0, 1, 5, 6 et 10. Chacun de ces modes a ses avantages et inconvénients en matière de performance et de résilience. Ainsi, avec quatre disques, nous pouvons stocker des informations efficacement en RAID 5, 6 ou 10 (les RAID 0 et 1 ne sont ici pas pertinents).
 

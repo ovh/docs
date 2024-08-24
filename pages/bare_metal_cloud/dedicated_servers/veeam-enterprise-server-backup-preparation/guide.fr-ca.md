@@ -12,7 +12,7 @@ La sauvegarde d’un serveur Bare Metal avec Veeam Enterprise implique plusieurs
 
 ## Prérequis
 
-- Un [serveur Bare Metal OVHcloud](https://www.ovhcloud.com/fr-ca/bare-metal/)
+- Un [serveur Bare Metal OVHcloud](/links/bare-metal/bare-metal/)
 - Une solution de sauvegarde [Veeam Enterprise](https://www.ovhcloud.com/fr-ca/storage-solutions/veeam-enterprise/)
 - Un service [OVHcloud Standard S3 Object Storage](https://www.ovhcloud.com/fr-ca/public-cloud/object-storage/) (facultatif)
 

@@ -6,9 +6,9 @@ updated: 2024-01-31
 
 ## Objectif
 
-Malgré [les nombreux Systèmes d'Exploitation (OS) disponibles dans le catalogue OVHcloud pour les serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/os/), vous pouvez avoir de bonnes raisons d'installer un OS personnalisé :
+Malgré [les nombreux Systèmes d'Exploitation (OS) disponibles dans le catalogue OVHcloud pour les serveurs dédiés](/links/bare-metal/bare-metal/os/), vous pouvez avoir de bonnes raisons d'installer un OS personnalisé :
 
-- l'OS que vous souhaitez installer ne fait pas partie [du catalogue OVHcloud](https://www.ovhcloud.com/fr/bare-metal/os/) ;
+- l'OS que vous souhaitez installer ne fait pas partie [du catalogue OVHcloud](/links/bare-metal/bare-metal/os/) ;
 - vous souhaitez avoir une version de build spécifique de l'OS ;
 - vous souhaitez un OS avec une version bien spécifique du noyau.
 

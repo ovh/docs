@@ -6,7 +6,7 @@ updated: 2023-09-08
 
 ## Objectif
 
-Avec les [serveurs dédiés OVHcloud](https://www.ovhcloud.com/fr-ca/bare-metal/), vous pouvez [personnaliser le partitionnement](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh). Cela vous donne des possibilités de configuration assez vastes lors de l'installation du système d'exploitation. ESXi ne le permet pas à cause de ses spécificités car il s'agit d'un système propriétaire UNIX avec un installateur propriétaire. Par conséquent, OVHcloud est dépendant de l'éditeur pour l'installation de l'OS. Depuis ESXi 7.0, il est possible de choisir entre 4 schémas de partitionnement prédéfinis par l'éditeur.
+Avec les [serveurs dédiés OVHcloud](/links/bare-metal/bare-metal/), vous pouvez [personnaliser le partitionnement](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh). Cela vous donne des possibilités de configuration assez vastes lors de l'installation du système d'exploitation. ESXi ne le permet pas à cause de ses spécificités car il s'agit d'un système propriétaire UNIX avec un installateur propriétaire. Par conséquent, OVHcloud est dépendant de l'éditeur pour l'installation de l'OS. Depuis ESXi 7.0, il est possible de choisir entre 4 schémas de partitionnement prédéfinis par l'éditeur.
 
 **Cet article a pour objectif de vous montrer comment choisir un schéma de partitionnement dans l'[espace client OVHcloud](/links/manager) ou l'[API OVHcloud](https://ca.api.ovh.com/).**
 
@@ -17,7 +17,7 @@ Avec les [serveurs dédiés OVHcloud](https://www.ovhcloud.com/fr-ca/bare-metal/
 
 ## Prérequis
 
-- Un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/) dans votre compte OVHcloud, **prêt à être installé/réinstallé**.
+- Un [serveur dédié](/links/bare-metal/bare-metal/) dans votre compte OVHcloud, **prêt à être installé/réinstallé**.
 - Avoir accès à l'[espace client OVHcloud](/links/manager) et/ou à l'[API OVHcloud](https://ca.api.ovh.com/).
 
 > [!alert]

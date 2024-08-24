@@ -16,7 +16,7 @@ updated: 2022-01-06
 
 ## Prérequis
 
-- [Un serveur dédié](https://www.ovhcloud.com/fr/bare-metal/){.external} avec Windows Server installé
+- [Un serveur dédié](/links/bare-metal/bare-metal/){.external} avec Windows Server installé
 - Le rôle Hyper-V installé
 - Une licence Windows fournie par OVHcloud
 

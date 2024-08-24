@@ -20,7 +20,7 @@ Bridged networking can be used to configure your virtual machines. Some tweaking
 ## Requirements
 
 - A dedicated server with a hypervisor installed (e.g. [VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox, etc.)
-- At least one [Additional IP address](https://www.ovhcloud.com/en-au/bare-metal/ip/) attached to the server
+- At least one [Additional IP address](/links/bare-metal/bare-metal/ip/) attached to the server
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
@@ -28,7 +28,7 @@ Bridged networking can be used to configure your virtual machines. Some tweaking
 >
 > Please visit our [comparison page](/links/bare-metal/eco-compare) for more information.
 >
-> This guide is not applicable to servers of the ranges [Scale](https://www.ovhcloud.com/en-au/bare-metal/scale/) and [High Grade](https://www.ovhcloud.com/en-au/bare-metal/high-grade/). The same goes for the latest Advance server range (since July 2024), based on CPU AMD Epyc 4K and 8K CPUs.
+> This guide is not applicable to servers of the ranges [Scale](/links/bare-metal/bare-metal/scale/) and [High Grade](/links/bare-metal/bare-metal/high-grade/). The same goes for the latest Advance server range (since July 2024), based on CPU AMD Epyc 4K and 8K CPUs.
 > 
 > Refer to the following guides instead: [Configuring the network on ESXi on the High Grade & SCALE ranges](/pages/bare_metal_cloud/dedicated_servers/esxi-network-HG-Scale), [Configuring the network on Proxmox VE on the High Grade & SCALE ranges](/pages/bare_metal_cloud/dedicated_servers/proxmox-network-HG-Scale) and [Configuring the network on Windows Server with Hyper-V on the High Grade & SCALE ranges](/pages/bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale).
 >

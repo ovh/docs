@@ -9,7 +9,7 @@ You can install Compute Unified Device Architecture (CUDA) on a GPU server, but 
 
 ## Requirements:
 
-- You must own a [GPU server](https://www.ovhcloud.com/en-au/bare-metal/).
+- You must own a [GPU server](/links/bare-metal/bare-metal/).
 - You must be logged into your server via SSH
 
 ## Instructions
