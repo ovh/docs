@@ -12,7 +12,7 @@ The standard [vRack configuration](/pages/bare_metal_cloud/dedicated_servers/vra
 
 ## Requirements
 
-* An active [vRack](https://www.ovh.com.au/solutions/vrack/){.external} service in your account
+* An active [vRack](https://www.ovhcloud.com/en-au/network/vrack/){.external} service in your account
 * Two or more [vRack-compatible servers](https://www.ovh.com.au/dedicated-servers/){.external}
 * Administrative (sudo) access to the server via SSH
 * Access to the [OVHcloud Control Panel](/links/manager){.external}

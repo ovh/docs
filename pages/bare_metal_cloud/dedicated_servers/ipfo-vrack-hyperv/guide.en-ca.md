@@ -10,7 +10,7 @@ updated: 2021-02-25
 
 ## Requirements
 
-- A [vRack](https://www.ovh.com/ca/en/solutions/vrack/) compatible dedicated server with Windows Server installed
+- A [vRack](https://www.ovhcloud.com/en-ca/network/vrack/) compatible dedicated server with Windows Server installed
 - An ISO for the OS that will be installed on your VM (CentOS 7 will be used as an example in this guide)
 - A vRack delivered to your OVHcloud account
 - An Additional IP block of 4 or more IPs
