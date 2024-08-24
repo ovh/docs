@@ -16,7 +16,7 @@ Jeśli skonfigurujesz serwer dedykowany jako serwer DNS, możesz użyć DNS seco
 
 ## Wymagania początkowe
 
-- Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/){.external}
+- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal){.external}
 - Posiadanie [domeny](https://www.ovh.pl/domeny/){.external} podlegającej administracjom lub zarządzaniu technicznym
 - Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
 

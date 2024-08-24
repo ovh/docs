@@ -12,7 +12,7 @@ Istnieje możliwość, że podczas instalacji systemu operacyjnego Windows Serve
 
 ## Wymagania początkowe
 
-- Posiadanie [Serwer dedykowany](https://www.ovhcloud.com/pl/bare-metal/os/server-windows/) z zainstalowanym systemem Windows na koncie OVHcloud
+- Posiadanie [Serwer dedykowany](/links/bare-metal/bare-metalos/server-windows/) z zainstalowanym systemem Windows na koncie OVHcloud
 - Posiadanie licencja SPLA systemu Windows na koncie OVHcloud
 - Dostęp administracyjny do serwera za pośrednictwem połączenia pulpitu zdalnego
 

@@ -22,7 +22,7 @@ Durante una migrazione potresti aver bisogno di recuperare i dati da un server d
 
 ## Prerequisiti
 
-- Un [server dedicato](https://www.ovhcloud.com/it/bare-metal/){.external} su cui è installata una distribuzione GNU/Linux.
+- Un [server dedicato](/links/bare-metal/bare-metal){.external} su cui è installata una distribuzione GNU/Linux.
 - Un client FTP che supporta le connessioni SFTP (questa guida documenta l'utilizzo di [FileZilla](https://filezilla-project.org/){.external}).
 - Un accesso amministrativo via SSH al tuo server.
 

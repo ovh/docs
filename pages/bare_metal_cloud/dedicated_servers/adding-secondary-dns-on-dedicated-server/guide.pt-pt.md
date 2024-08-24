@@ -16,7 +16,7 @@ Se configurar o seu servidor dedicado como servidor DNS, pode utilizar o DNS sec
 
 ## Requisitos
 
-- Dispor de um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/){.external}.
+- Dispor de um [servidor dedicado](/links/bare-metal/bare-metal){.external}.
 - Dispor de um [nome de domínio](https://www.ovh.pt/dominios/){.external} para o qual tem a gestão administrativa ou técnica.
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
 

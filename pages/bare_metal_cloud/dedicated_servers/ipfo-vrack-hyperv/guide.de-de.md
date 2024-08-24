@@ -14,7 +14,7 @@ updated: 2021-02-25
 
 ## Voraussetzungen
 
-- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account (vRack-kompatibel), auf dem Windows Server installiert ist.
+- Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) in Ihrem Kunden-Account (vRack-kompatibel), auf dem Windows Server installiert ist.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben ein ISO-Image für das zu installierende Betriebssystem der VM (CentOS 7 wird in dieser Anleitung beispielhaft verwendet).
 - Sie haben ein [vRack](https://www.ovh.de/loesungen/vrack/) in Ihrem Kunden-Account eingerichtet.

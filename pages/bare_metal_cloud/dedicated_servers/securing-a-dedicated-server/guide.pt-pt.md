@@ -22,7 +22,7 @@ Quando encomendar o seu servidor dedicado, pode escolher uma distribuição ou u
 
 ## Requisitos
 
-- Um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/) na sua conta OVHcloud
+- Um [servidor dedicado](/links/bare-metal/bare-metal) na sua conta OVHcloud
 - Ter acesso de administrador (sudo) ao seu servidor através de SSH
 
 ## Instruções

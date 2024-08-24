@@ -24,7 +24,7 @@ Quando instalar ou reiniciar um sistema operativo Windows, irá receber uma pala
 
 ## Requisitos
 
-- Possuir um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/){.external} com o Windows instalado.
+- Possuir um [servidor dedicado](/links/bare-metal/bare-metal){.external} com o Windows instalado.
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
 
 ## Instruções

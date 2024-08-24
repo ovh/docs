@@ -24,7 +24,7 @@ Firewall działa poprzez określenie zasad regulujących dozwolony ruch i zablok
 
 ## Wymagania początkowe
 
-- Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/) na koncie OVHcloud
+- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal) na koncie OVHcloud
 - Dostęp administratora (root/sudo) do serwera przez SSH
 
 ## W praktyce

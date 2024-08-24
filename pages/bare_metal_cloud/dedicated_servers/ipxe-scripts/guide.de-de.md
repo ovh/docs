@@ -25,7 +25,7 @@ Personalisierte Skripte können in folgenden Fällen interessant sein:
 
 ## Voraussetzungen
 
-- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account, der zum **Boot oder Reboot** bereit ist.
+- Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) in Ihrem Kunden-Account, der zum **Boot oder Reboot** bereit ist.
 - Sie haben Zugriff auf die [OVHcloud API](https://api.ovh.com/).
 
 > [!warning]

@@ -18,7 +18,7 @@ Das RAID Level für OVHcloud Server-Installationen ist standardmäßig RAID-1, w
 
 ## Voraussetzungen
 
-- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) mit Software-RAID-Konfiguration.
+- Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) mit Software-RAID-Konfiguration.
 - Sie haben administrativen Zugriff (sudo) auf Ihren Server über SSH.
 
 ## In der praktischen Anwendung

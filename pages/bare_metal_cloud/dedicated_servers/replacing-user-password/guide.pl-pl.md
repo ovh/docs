@@ -24,7 +24,7 @@ W takim przypadku możesz zalogować się do Twojego serwera za pomocą trybu Re
 
 ## Wymagania początkowe
 
-- Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/) lub [VPS](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud
+- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal) lub [VPS](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud
 - Dostęp do [Panelu klienta OVHcloud](/links/manager)
 
 > [!primary]

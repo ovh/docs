@@ -24,7 +24,7 @@ Unsere Bare Metal Game Dedicated Server sind mit einem DDoS-Schutz ausgestattet,
 
 ## Voraussetzungen 
 
-- Sie haben einen [OVHcloud **Game** Dedicated Server](https://www.ovhcloud.com/de/bare-metal/prices/#filterType=range_element&filterValue=game)
+- Sie haben einen [OVHcloud **Game** Dedicated Server](/links/bare-metal/bare-metalprices/#filterType=range_element&filterValue=game)
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 > [!warning]
@@ -99,7 +99,7 @@ Aus diesem Grund planen wir nicht, für FiveM ein Game Firewall-Profil zum Layer
 
 #### Rust
 
-Die GAME Firewall unterstützt Rust mit einem detaillierten Profil. Weitere Informationen zum Hosting von Rust auf OVHcloud Servern [hier](https://www.ovhcloud.com/de/bare-metal/game/rust-server/).
+Die GAME Firewall unterstützt Rust mit einem detaillierten Profil. Weitere Informationen zum Hosting von Rust auf OVHcloud Servern [hier](/links/bare-metal/bare-metalgame/rust-server/).
 
 #### Minecraft
 

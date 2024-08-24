@@ -26,8 +26,8 @@ Puoi installare questa configurazione su ogni server Hyper-V (un'interfaccia pri
 
 ## Prerequisiti
 
-* Disporre di un [server dedicato OVHcloud](https://www.ovhcloud.com/it/bare-metal/)
-* Disporre di un indirizzo [Additional IP](https://www.ovhcloud.com/it/bare-metal/ip/)
+* Disporre di un [server dedicato OVHcloud](/links/bare-metal/bare-metal)
+* Disporre di un indirizzo [Additional IP](/links/bare-metal/bare-metalip/)
 * Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 > [!warning]
@@ -250,7 +250,7 @@ network:
 
 - Disporre di un blocco pubblico di indirizzi IP nel proprio account, con almeno quattro indirizzi
 - Aver selezionato un intervallo di indirizzi IP privati
-- Disporre di un [server compatibile con la vRack](https://www.ovhcloud.com/it/bare-metal/){.external}
+- Disporre di un [server compatibile con la vRack](/links/bare-metal/bare-metal){.external}
 - Aver attivato un servizio [vRack](https://www.ovh.it/soluzioni/vrack/){.external}
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 

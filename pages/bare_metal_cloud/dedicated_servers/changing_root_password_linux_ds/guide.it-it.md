@@ -19,7 +19,7 @@ Anche se il server non viene utilizzato per scopi che richiedono l'amministrazio
 
 ## Prerequisiti
 
-- Un [server dedicato](https://www.ovhcloud.com/it/bare-metal/) o un [VPS](https://www.ovhcloud.com/it/vps/) con un sistema operativo Linux nel tuo account OVHcloud
+- Un [server dedicato](/links/bare-metal/bare-metal) o un [VPS](https://www.ovhcloud.com/it/vps/) con un sistema operativo Linux nel tuo account OVHcloud
 - Disporre delle credenziali di accesso ricevute via email in seguito all’installazione
 
 ## Procedura

@@ -16,7 +16,7 @@ Serwer dedykowany to fizyczny serwer ("bare metal") zlokalizowany w jednym z nas
 
 ## Wymagania początkowe
 
-- Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/) z oferty Kimsufi, So You Start lub Rise na Twoim koncie OVHcloud.
+- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal) z oferty Kimsufi, So You Start lub Rise na Twoim koncie OVHcloud.
 - Połączenie przez SSH z systemem Linux lub jako administrator z systemem Windows.
 - Zalogowanie do [Panelu klienta OVHcloud](/links/manager).
 
@@ -40,7 +40,7 @@ Serwer dedykowany to fizyczny serwer ("bare metal") zlokalizowany w jednym z nas
 
 > [!success]
 >
-> Więcej informacji na temat systemów operacyjnych serwerów znajdziesz na [naszej stronie internetowej](https://www.ovhcloud.com/pl/bare-metal/os/).
+> Więcej informacji na temat systemów operacyjnych serwerów znajdziesz na [naszej stronie internetowej](/links/bare-metal/bare-metalos/).
 >
 
 Możesz w prosty sposób przeprowadzić reinstalację serwera lub wybrać inny obraz systemu operacyjnego do zainstalowania w [Panelu klienta](/links/manager). W zakładce `Informacje ogólne`{.action} kliknij `...`{.action} naprzeciwko systemu operacyjnego, a następnie wybierz `Zainstaluj`{.action}.
@@ -55,7 +55,7 @@ W oknie, które się pojawi wybierz jedną z opcji instalacji:
 
 > [!primary]
 >
-> Niektóre zastrzeżone systemy operacyjne lub platformy, takie jak Plesk lub Windows, wymagają licencji, które generują dodatkowe koszty. Licencje możesz kupić [u OVHcloud](https://www.ovhcloud.com/pl/bare-metal/os/) lub u zewnętrznego resellera. Następnie zastosuj Twoją licencję do systemu operacyjnego lub za pomocą Panelu [klienta](/links/manager).
+> Niektóre zastrzeżone systemy operacyjne lub platformy, takie jak Plesk lub Windows, wymagają licencji, które generują dodatkowe koszty. Licencje możesz kupić [u OVHcloud](/links/bare-metal/bare-metalos/) lub u zewnętrznego resellera. Następnie zastosuj Twoją licencję do systemu operacyjnego lub za pomocą Panelu [klienta](/links/manager).
 >
 > Wszystkie licencje możesz zarządzać w sekcji `Bare Metal Cloud`{.action} z `licencjami `{.action}. W tej sekcji możesz również zamawiać licencje lub dodawać istniejące licencje za pomocą przycisku `Operacje`{.action}.
 >
@@ -241,7 +241,7 @@ Więcej informacji na temat monitoringu OVHcloud znajdziesz w [tym przewodniku](
 
 > [!primary]
 >
-> Pamiętaj, że [dodatkowe](https://www.ovhcloud.com/pl/bare-metal/ip/) adresy IP nie są kompatybilne z ofertą **Kimsufi**.
+> Pamiętaj, że [dodatkowe](/links/bare-metal/bare-metalip/) adresy IP nie są kompatybilne z ofertą **Kimsufi**.
 >
 
 #### Network Bridging

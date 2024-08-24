@@ -24,7 +24,7 @@ Protokół komunikacji SSH (Secure Shell) jest głównym narzędziem do tworzeni
 
 ## Wymagania początkowe
 
-- Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/) lub [VPS](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud
+- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal) lub [VPS](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud
 - Aplikacja kliencka SSH (w wierszu poleceń lub w interfejsie graficznym)
 
 > [!primary]

@@ -23,8 +23,8 @@ Bridged Networking kann verwendet werden, um Ihre virtuellen Maschinen zu konfig
 
 ## Voraussetzungen
 
-- Sie verfügen über einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) mit installiertem Hypervisor ([VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox, etc.).
-- Sie verfügen über mindestens eine mit dem Server verbundene [Additional IP](https://www.ovhcloud.com/de/bare-metal/ip/).
+- Sie verfügen über einen [Dedicated Server](/links/bare-metal/bare-metal) mit installiertem Hypervisor ([VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox, etc.).
+- Sie verfügen über mindestens eine mit dem Server verbundene [Additional IP](/links/bare-metal/bare-metalip/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 > [!warning]
@@ -32,7 +32,7 @@ Bridged Networking kann verwendet werden, um Ihre virtuellen Maschinen zu konfig
 >
 > Weitere Informationen finden Sie auf der [Vergleichsseite](/links/bare-metal/eco-compare).
 >
-> Diese Anleitung gilt nicht für Server der Reihen [Scale](https://www.ovhcloud.com/de/bare-metal/scale/) und [High Grade](https://www.ovhcloud.com/de/bare-metal/high-grade/), sowie für die Advance Server mit AMD Epyc 4K und 8K CPUs, die seit Juli 2024 angeboten werden.
+> Diese Anleitung gilt nicht für Server der Reihen [Scale](/links/bare-metal/bare-metalscale/) und [High Grade](/links/bare-metal/bare-metalhigh-grade/), sowie für die Advance Server mit AMD Epyc 4K und 8K CPUs, die seit Juli 2024 angeboten werden.
 >
 > Weitere Informationen finden Sie in den folgenden Anleitungen: [Netzwerk auf ESXi auf den High Grade & SCALE-Reihen konfigurieren](/pages/bare_metal_cloud/dedicated_servers/esxi-network-HG-Scale), [Netzwerk auf Proxmox VE auf den High Grade & SCALE-Reihen konfigurieren](/pages/bare_metal_cloud/dedicated_servers/proxmox-network-HG-Scale) und [Netzwerk auf Windows Server mit Hyper-V auf den High Grade & SCALE-Reihen konfigurieren](/pages/bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale).
 

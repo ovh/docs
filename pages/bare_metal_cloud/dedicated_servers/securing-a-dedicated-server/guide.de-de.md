@@ -22,7 +22,7 @@ Wenn Sie Ihren Dedicated Server bestellen, können Sie eine Distribution oder ei
 
 ## Voraussetzungen
 
-- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account.
+- Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) in Ihrem Kunden-Account.
 - Sie haben administrativen Zugriff (sudo) auf Ihren Server über SSH.
 
 ## In der praktischen Anwendung

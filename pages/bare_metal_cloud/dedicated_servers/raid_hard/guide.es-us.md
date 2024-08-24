@@ -10,7 +10,7 @@ On a server with a hardware RAID configuration, the RAID array is managed by a p
 
 ## Requirements
 
-- a [dedicated server](https://www.ovhcloud.com/es/bare-metal/){.external} with a hardware RAID configuration
+- a [dedicated server](/links/bare-metal/bare-metal/){.external} with a hardware RAID configuration
 - administrative (sudo) access to the server via SSH
 
 > [!warning]

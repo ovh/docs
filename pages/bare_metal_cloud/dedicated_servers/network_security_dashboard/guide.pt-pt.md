@@ -14,7 +14,7 @@ Este guia explica o Dashboard de Segurança de Rede e fornece uma visão geral d
 
 ## Requisitos
 
-- Um serviço OVHcloud exposto num endereço IP público dedicado ([Servidor Dedicado](https://www.ovhcloud.com/pt/bare-metal/), [VPS](https://www.ovhcloud.com/pt/vps/), [Instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/), [IP adicional](https://www.ovhcloud.com/pt/network/additional-ip/), etc.)
+- Um serviço OVHcloud exposto num endereço IP público dedicado ([Servidor Dedicado](/links/bare-metal/bare-metal), [VPS](https://www.ovhcloud.com/pt/vps/), [Instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/), [IP adicional](https://www.ovhcloud.com/pt/network/additional-ip/), etc.)
 - Acesso à [Área de Cliente OVHcloud](/links/manager)
 
 ## Instruções
@@ -61,7 +61,7 @@ As colunas correspondem ao estado de limpeza anti-DDoS (**Mitigação**), a Edge
     - **Desativado** - A firewall está **desativado** para este IP.
     - **(sem estado)** - A configuração da firewall não foi criada. Para configurar regras, clique no botão `...`{.action} e selecione `Criar Firewall`{.action}.
 
-- O estado **GAME firewall** (apenas disponível para servidores dedicados [OVHcloud **Game*](https://www.ovhcloud.com/pt/bare-metal/prices/#filterType=range_element&filterValue=game)) pode ser:
+- O estado **GAME firewall** (apenas disponível para servidores dedicados [OVHcloud **Game*](/links/bare-metal/bare-metalprices/#filterType=range_element&filterValue=game)) pode ser:
     - **Ativado** - A proteção GAME DDoS é **ativado** para este IP.
     - **Desligado** - A firewall GAME está **disponível** mas **desativada** nesse IP.
     - **(sem estado)** - A firewall GAME não está disponível para este IP. Isto significa que o IP listado não está configurado numa gama de produtos suportada.

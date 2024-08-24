@@ -14,7 +14,7 @@ Firmware changelog : <https://last-public-ovh-baremetal.snap.mirrors.ovh.net/har
 
 ## Requirements
 
-- An [Advance Dedicated Server](https://www.ovhcloud.com/pt/bare-metal/advance/) with NVMe Samsung PM9A1, from the following:
+- An [Advance Dedicated Server](/links/bare-metal/bare-metaladvance/) with NVMe Samsung PM9A1, from the following:
     - Advance-1
     - Advance-2
     - Advance-3

@@ -22,7 +22,7 @@ Kiedy zamawiasz serwer dedykowany, możesz wybrać dystrybucję lub system opera
 
 ## Wymagania początkowe
 
-- Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/){.external}
+- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal){.external}
 - Dostęp administratora (sudo) do serwera przez SSH
 
 ## W praktyce

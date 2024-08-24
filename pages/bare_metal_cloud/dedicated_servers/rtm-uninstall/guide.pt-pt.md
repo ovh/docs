@@ -16,7 +16,7 @@ O sistema de monitoring OVHcloud RTM v2 está agora depreciado e os depósitos d
 
 ## Requisitos
 
-- Um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/) no qual RTM v2 foi instalado
+- Um [servidor dedicado](/links/bare-metal/bare-metal) no qual RTM v2 foi instalado
 - Ter acesso de administrador (sudo) ao seu servidor através de SSH
 
 ## Instruções

@@ -16,7 +16,7 @@ Si configura su servidor dedicado como servidor DNS, puede utilizar el DNS de OV
 
 ## Requisitos
 
-- Tener un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/){.external}.
+- Tener un [servidor dedicado](/links/bare-metal/bare-metal/){.external}.
 - Tener un [dominio](https://www.ovhcloud.com/es/domains/){.external} gestionado administrativa o técnicamente.
 - Estar conectado al [área de cliente de OVHcloud](/links/manager){.external}.
 

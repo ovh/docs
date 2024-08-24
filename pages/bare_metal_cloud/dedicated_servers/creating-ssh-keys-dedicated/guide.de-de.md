@@ -19,7 +19,7 @@ Dies ist in der Regel die sicherste und bequemste Verbindungsmethode.
 ## Voraussetzungen
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
-- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) oder einen [VPS](https://www.ovhcloud.com/de/vps/) in Ihrem Kunden-Account.
+- Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) oder einen [VPS](https://www.ovhcloud.com/de/vps/) in Ihrem Kunden-Account.
 - Sie haben eine SSH-Client-Anwendung installiert (Befehlszeile oder GUI).
 - Sie haben administrativen Zugang (sudo) über SSH auf Ihren Server.
 

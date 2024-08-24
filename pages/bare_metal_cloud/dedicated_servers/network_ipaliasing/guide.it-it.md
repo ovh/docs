@@ -28,8 +28,8 @@ L'alias IP (o IP aliasing) è un tipo di configurazione del tuo server dedicato 
 
 ## Prerequisiti
 
-- Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/){.external}
-- Disporre di uno o più [Additional IP](https://www.ovhcloud.com/it/bare-metal/ip/){.external}
+- Disporre di un [server dedicato](/links/bare-metal/bare-metal){.external}
+- Disporre di uno o più [Additional IP](/links/bare-metal/bare-metalip/){.external}
 - Essere connesso al server in SSH (accesso *sudo*)
 
 > [!warning]

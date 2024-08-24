@@ -22,7 +22,7 @@ IPv6 (Internet Protocol version 6) jest najnowszą wersją protokołu internetow
 
 ## Wymagania początkowe
 
-- [Serwer dedykowany](https://www.ovhcloud.com/pl/bare-metal/) w ramach konta OVHcloud.
+- [Serwer dedykowany](/links/bare-metal/bare-metal) w ramach konta OVHcloud.
 - Wszystkie informacje o protokole IPv6 (prefiks, brama itd.).
 - Podstawowa wiedza z zakresu [protokołu SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) i sieci.
 

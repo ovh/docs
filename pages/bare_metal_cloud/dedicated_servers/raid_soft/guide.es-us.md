@@ -18,7 +18,7 @@ El nivel de RAID por defecto en los servidores de OVHcloud es RAID 1. Con este n
 
 ## Requisitos
 
-- Tener un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/){.external} con RAID por software.
+- Tener un [servidor dedicado](/links/bare-metal/bare-metal/){.external} con RAID por software.
 - Tener acceso al servidor por SSH como administrador (sudo).
 
 ## Procedimiento

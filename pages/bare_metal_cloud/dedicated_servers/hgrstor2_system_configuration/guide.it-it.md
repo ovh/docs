@@ -28,7 +28,7 @@ This documentation details:
 
 ## Requirements
 
-- An [HGR-STOR-2 server](https://www.ovhcloud.com/it/bare-metal/high-grade/hgr-stor-2/)
+- An [HGR-STOR-2 server](/links/bare-metal/bare-metalhigh-grade/hgr-stor-2/)
 
 ## Instructions
 

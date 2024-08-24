@@ -6,7 +6,7 @@ updated: 2019-03-12
 
 ## Wprowadzenie
 
-Rozwiązanie [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external} umożliwia konfigurację sieci między dwoma lub więcej [serwerami dedykowanymi](https://www.ovhcloud.com/pl/bare-metal/){.external} OVHcloud.
+Rozwiązanie [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external} umożliwia konfigurację sieci między dwoma lub więcej [serwerami dedykowanymi](/links/bare-metal/bare-metal){.external} OVHcloud.
 
 **Dowiedz się, jak zmienić strefę rozgłaszania bloku IP w sieci vRack.**
 

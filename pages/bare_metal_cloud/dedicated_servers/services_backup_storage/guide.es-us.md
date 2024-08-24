@@ -15,14 +15,14 @@ Los servidores dedicados de OVHcloud incluyen un espacio de backup adicional par
 **Esta guía explica cómo activar y utilizar el espacio de backup**.
 
 > [!primary]
-> Para más información, le recomendamos consultar la [página comercial](https://www.ovhcloud.com/es/bare-metal/backup-storage/) de la opción Backup Storage.
+> Para más información, le recomendamos consultar la [página comercial](/links/bare-metal/bare-metal/backup-storage/) de la opción Backup Storage.
 >
 > Esta guía no es aplicable a los servicios de OVHcloud en Estados Unidos.
 >
 
 ## Requisitos
 
-- Tener un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/){.external} en su cuenta de OVHcloud.
+- Tener un [servidor dedicado](/links/bare-metal/bare-metal/){.external} en su cuenta de OVHcloud.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
 
 > [!warning]

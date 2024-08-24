@@ -23,7 +23,7 @@ Aby optymalnie chronić system, serwer z systemem Windows Server dysponuje włas
 
 ## Wymagania początkowe
 
-- Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/) z systemem Windows na koncie OVHcloud
+- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal) z systemem Windows na koncie OVHcloud
 - Dostęp administratora do serwera przez zdalny pulpit w systemie Windows 
 
 ## W praktyce

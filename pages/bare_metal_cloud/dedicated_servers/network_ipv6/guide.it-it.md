@@ -22,7 +22,7 @@ La versione 6 del Protocollo Internet (IPv6) è l’ultima versione del Protocol
 
 ## Prerequisiti
 
-- Un [server dedicato](https://www.ovhcloud.com/it/bare-metal/) nel tuo account OVHcloud.
+- Un [server dedicato](/links/bare-metal/bare-metal) nel tuo account OVHcloud.
 - Tutti i dati del tuo IPv6 (prefisso, gateway, etc.).
 - Una conoscenza basilare di reti e [SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
 

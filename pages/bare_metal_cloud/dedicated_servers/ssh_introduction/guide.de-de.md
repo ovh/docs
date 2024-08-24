@@ -25,7 +25,7 @@ Das Kommunikationsprotokoll SSH (*Secure Shell*) ist das meistgenutzte Verfahren
 
 ## Voraussetzungen
 
-- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) oder [VPS](https://www.ovhcloud.com/de/vps/) in Ihrem Kunden-Account.
+- Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) oder [VPS](https://www.ovhcloud.com/de/vps/) in Ihrem Kunden-Account.
 - Eine Client-Anwendung für SSH (Kommandozeilenanwendung oder grafisches Interface) ist auf Ihrem lokalen Gerät installiert.
 
 > [!primary]

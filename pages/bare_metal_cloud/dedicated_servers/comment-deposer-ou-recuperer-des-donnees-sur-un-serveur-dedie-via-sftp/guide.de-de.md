@@ -22,7 +22,7 @@ Bei einer Migration kann es erforderlich werden, eine große Datenmenge von eine
 
 ## Voraussetzungen
 
-- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account, auf dem eine GNU/Linux Distribution installiert ist.
+- Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) in Ihrem Kunden-Account, auf dem eine GNU/Linux Distribution installiert ist.
 - Ein FTP-Client, der SFTP-Verbindungen unterstützt (diese Anleitung dokumentiert die Verwendung von [FileZilla](https://filezilla-project.org/){.external}).
 - Sie haben administrativen Zugriff über SSH auf Ihren Server.
 

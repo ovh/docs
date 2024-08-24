@@ -16,7 +16,7 @@ El sistema de monitorización de OVHcloud RTM v2 ya está deteriorado y los dep�
 
 ## Requisitos
 
-- Un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/) en el que se haya instalado RTM v2
+- Un [servidor dedicado](/links/bare-metal/bare-metal/) en el que se haya instalado RTM v2
 - Tener acceso de administrador (sudo) a su servidor a través de SSH
 
 ## Procedimiento

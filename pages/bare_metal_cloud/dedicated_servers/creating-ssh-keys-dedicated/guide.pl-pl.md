@@ -19,7 +19,7 @@ Jest to zazwyczaj najbezpieczniejsza i najwygodniejsza metoda połączenia.
 ## Wymagania początkowe
 
 - Dostęp do [panelu klienta OVHcloud](/links/manager)
-- Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/) lub [VPS](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud
+- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal) lub [VPS](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud
 - Zainstaluj najpierw aplikację klienta SSH (wiersz poleceń lub GUI)
 - Dostęp administratora (sudo) przez SSH
 

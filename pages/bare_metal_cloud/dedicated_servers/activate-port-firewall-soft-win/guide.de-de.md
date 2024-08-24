@@ -22,7 +22,7 @@ Um Ihr System optimal zu schützen, verfügt Ihr Windows Server über eine integ
 
 ## Voraussetzungen
 
-- Sie verfügen über einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account.
+- Sie verfügen über einen [Dedicated Server](/links/bare-metal/bare-metal) in Ihrem Kunden-Account.
 - Sie haben administrativen Zugriff (root/sudo) auf Ihren Server über. 
 
 ## In der praktischen Anwendung

@@ -11,7 +11,7 @@ Bridged networking can be used to configure your pfSense virtual machine to be a
 ## Requirements
 
 - A dedicated server with a hypervisor installed (e.g. [VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, [Citrix Xenserver](https://www.citrix.com/products/citrix-hypervisor/){.external}, [Proxmox](https://www.proxmox.com/en/proxmox-ve){.external}, etc.)
-- At least one [Additional IP](https://www.ovhcloud.com/it/bare-metal/ip/) address attached to the server 
+- At least one [Additional IP](/links/bare-metal/bare-metalip/) address attached to the server 
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Recommendations for your pfSense virtual machine

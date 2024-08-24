@@ -16,7 +16,7 @@ System monitoringu OVHcloud RTM v2 uległ deprecjacji i został usunięty. Zalec
 
 ## Wymagania początkowe
 
-- Jeden [serwer dedykowany](https://www.ovhcloud.com/pl/bare-metal/), na którym zainstalowano RTM v2
+- Jeden [serwer dedykowany](/links/bare-metal/bare-metal), na którym zainstalowano RTM v2
 - Dostęp administratora (sudo) do serwera przez SSH
 
 ## W praktyce

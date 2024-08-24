@@ -16,7 +16,7 @@ Das OVHcloud RTM v2 Monitoringsystem wurde eingestellt und die entsprechenden Re
 
 ## Voraussetzungen
 
-- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/), auf dem RTM v2 installiert wurde.
+- Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal), auf dem RTM v2 installiert wurde.
 - Sie haben administrativen Zugriff auf Ihren Server über SSH.
 
 ## In der praktischen Anwendung

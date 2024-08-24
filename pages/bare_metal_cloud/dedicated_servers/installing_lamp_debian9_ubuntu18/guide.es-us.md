@@ -16,7 +16,7 @@ La creación de un servidor web y los programas asociados permiten que su servid
 
 ## Requisitos
 
-- Un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/), un [VPS](https://www.ovhcloud.com/es/vps/) o una instancia de [Public Cloud](https://www.ovhcloud.com/es/public-cloud/) en su cuenta de OVHcloud (excepto sistemas Windows)
+- Un [servidor dedicado](/links/bare-metal/bare-metal/), un [VPS](https://www.ovhcloud.com/es/vps/) o una instancia de [Public Cloud](https://www.ovhcloud.com/es/public-cloud/) en su cuenta de OVHcloud (excepto sistemas Windows)
 - Tienes acceso a tu [área de cliente de OVHcloud](/links/manager)
 - Acceso administrativo al servicio por SSH
 

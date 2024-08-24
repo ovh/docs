@@ -12,7 +12,7 @@ Cuando instala Windows en un servidor con una configuración RAID de hardware, l
 
 ## Requisitos
 
-- un [servidor dedicado](https://www.ovh.com/world/es/servidores_dedicados/ {.external} con Windows instalado y una tarjeta RAID de hardware (LSI MegaRaid)
+- un [servidor dedicado](/links/bare-metal/bare-metal/){.external} con Windows instalado y una tarjeta RAID de hardware (LSI MegaRaid)
 - al menos dos discos idénticos
 - acceso al [panel de control de OVHcloud](/links/manager){.external}
 

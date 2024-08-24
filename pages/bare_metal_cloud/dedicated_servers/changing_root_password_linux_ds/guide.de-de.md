@@ -19,7 +19,7 @@ Auch wenn der Server nicht für Zwecke verwendet wird, die die Verwaltung von re
 
 ## Voraussetzungen
 
-- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) oder [VPS](https://www.ovhcloud.com/de/vps/) mit einem Linux-Betriebssystem Ihrem Kunden-Account.
+- Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) oder [VPS](https://www.ovhcloud.com/de/vps/) mit einem Linux-Betriebssystem Ihrem Kunden-Account.
 - Sie verfügen über die Zugangsdaten, die Sie nach der Installation per E-Mail erhalten haben.
 
 ## In der praktischen Anwendung

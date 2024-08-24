@@ -24,7 +24,7 @@ As firewalls funcionam definindo regras que regulem o tráfego autorizado e o qu
 
 ## Requisitos
 
-- Ter um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/) na sua conta OVHcloud
+- Ter um [servidor dedicado](/links/bare-metal/bare-metal) na sua conta OVHcloud
 - Dispor de um acesso administrador (root/sudo) ao seu servidor através de SSH
 
 ## Instruções

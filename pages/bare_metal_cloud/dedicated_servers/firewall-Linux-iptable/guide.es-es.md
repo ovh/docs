@@ -24,7 +24,7 @@ Los cortafuegos funcionan estableciendo reglas que regulan el tráfico autorizad
 
 ## Requisitos
 
-- Tener un [servidor dedicado](https://www.ovhcloud.com/es-es/bare-metal/) en su cuenta de OVHcloud.
+- Tener un [servidor dedicado](/links/bare-metal/bare-metal/) en su cuenta de OVHcloud.
 - Tener acceso de administrador (root/sudo) a su servidor por SSH.
 
 ## Procedimiento

@@ -22,7 +22,7 @@ Si necesita migrar sus datos, es posible que tenga que descargarlos desde su ser
 
 ## Requisitos
 
-- Un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/){.external} en el que se instala una distribución GNU/Linux.
+- Un [servidor dedicado](/links/bare-metal/bare-metal/){.external} en el que se instala una distribución GNU/Linux.
 - Cliente FTP encargado de las conexiones SFTP (esta guía explica el uso de [FileZilla](https://filezilla-project.org/){.external}).
 - Acceso administrativo a su servidor por SSH.
 

@@ -16,7 +16,7 @@ La realizzazione di un server Web e dei software associati permette al tuo serve
 
 ## Prerequisiti
 
-- Un [server dedicato](https://www.ovhcloud.com/it/bare-metal/), un [VPS](https://www.ovhcloud.com/it/vps/) o un'istanza [Public Cloud](https://www.ovhcloud.com/it/public-cloud/) nel tuo account OVHcloud (Windows escluso)
+- Un [server dedicato](/links/bare-metal/bare-metal), un [VPS](https://www.ovhcloud.com/it/vps/) o un'istanza [Public Cloud](https://www.ovhcloud.com/it/public-cloud/) nel tuo account OVHcloud (Windows escluso)
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Un accesso amministrativo al tuo servizio tramite SSH
 

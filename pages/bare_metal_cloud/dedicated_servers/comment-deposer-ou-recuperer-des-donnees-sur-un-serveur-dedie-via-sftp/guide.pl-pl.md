@@ -22,7 +22,7 @@ W procesie migracji może być konieczne pobranie danych z serwera dedykowanego,
 
 ## Wymagania początkowe
 
-- Serwer [dedykowany](https://www.ovhcloud.com/pl/bare-metal/){.external}, na którym zainstalowana jest dystrybucja GNU/Linux.
+- Serwer [dedykowany](/links/bare-metal/bare-metal){.external}, na którym zainstalowana jest dystrybucja GNU/Linux.
 - Klient FTP, który obsługuje połączenia SFTP (ten przewodnik dokumentuje korzystanie z [FileZilla](https://filezilla-project.org/){.external}).
 - Dostęp administracyjny przez SSH do Twojego serwera.
 

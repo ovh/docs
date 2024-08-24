@@ -16,7 +16,7 @@ Uruchomienie serwera www i powiązanych z nim aplikacji pozwala serwerowi cloud 
 
 ## Wymagania początkowe
 
-- Serwer [dedykowany](https://www.ovhcloud.com/pl/bare-metal/), [VPS](https://www.ovhcloud.com/pl/vps/) lub instancja [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na Twoim koncie OVHcloud (z wyłączeniem systemu Windows)
+- Serwer [dedykowany](/links/bare-metal/bare-metal), [VPS](https://www.ovhcloud.com/pl/vps/) lub instancja [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na Twoim koncie OVHcloud (z wyłączeniem systemu Windows)
 - Dostęp do [Panelu klienta OVHcloud](/links/manager)
 - Dostęp administracyjny do Twojej usługi przez SSH
 

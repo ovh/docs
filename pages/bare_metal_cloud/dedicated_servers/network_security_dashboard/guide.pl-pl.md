@@ -14,7 +14,7 @@ Z tego przewodnika dowiesz się, jak korzystać z Dashboardu zabezpieczeń sieci
 
 ## Wymagania początkowe
 
-- Usługa OVHcloud udostępniona na dedykowanym publicznym adresie IP ([Dedicated Server](https://www.ovhcloud.com/pl/bare-metal/), [VPS](https://www.ovhcloud.com/pl/vps/), [Public Cloud instance](https://www.ovhcloud.com/pl/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/), [Additional IP](https://www.ovhcloud.com/pl/network/additional-ip/) itd.)
+- Usługa OVHcloud udostępniona na dedykowanym publicznym adresie IP ([Dedicated Server](/links/bare-metal/bare-metal), [VPS](https://www.ovhcloud.com/pl/vps/), [Public Cloud instance](https://www.ovhcloud.com/pl/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/), [Additional IP](https://www.ovhcloud.com/pl/network/additional-ip/) itd.)
 - Dostęp do [OVHcloud Control Panel](/links/manager)
 
 ## W praktyce
@@ -61,7 +61,7 @@ Kolumny odpowiadają statusowi oczyszczania Anty-DDoS (**Mitygacja**), Edge Netw
     - **Disabled** - Firewall dla tego IP jest **disabled**.
     - **(brak stanu)** - Konfiguracja firewalla nie została utworzona. Aby skonfigurować reguły, kliknij `...`{.action} Przycisk wybierz `Utwórz zaporę`{.action}.
 
-- Stan **GAME firewall** (dostępny tylko dla [OVHcloud **Game** dedicated servers](https://www.ovhcloud.com/pl/bare-metal/prices/#filterType=range_element&filterValue=game)) może być następujący:
+- Stan **GAME firewall** (dostępny tylko dla [OVHcloud **Game** dedicated servers](/links/bare-metal/bare-metalprices/#filterType=range_element&filterValue=game)) może być następujący:
     - **On** - Ochrona Anty-DDoS GAME dla tego IP jest **włączona**.
     - **Wyłączone** - Zapora GAME jest **dostępna**, ale **wyłączone** dla tego IP.
     - **(no status)** - Firewall game nie jest dostępny dla tego IP. Oznacza to, że podany adres IP nie jest skonfigurowany dla obsługiwanej gamy produktów.

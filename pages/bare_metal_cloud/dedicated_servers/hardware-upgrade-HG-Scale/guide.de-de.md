@@ -19,7 +19,7 @@ Dedicated Server der Reihen High Grade und SCALE bieten Ihnen eine Skalierungsop
 
 ## Voraussetzungen
 
-- Sie haben einen [High Grade Dedicated Server](https://www.ovhcloud.com/de/bare-metal/high-grade/) oder [SCALE Dedicated Server](https://www.ovhcloud.com/de/bare-metal/scale/).
+- Sie haben einen [High Grade Dedicated Server](/links/bare-metal/bare-metalhigh-grade/) oder [SCALE Dedicated Server](/links/bare-metal/bare-metalscale/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung

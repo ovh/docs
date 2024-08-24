@@ -24,7 +24,7 @@ I firewall funzionano definendo regole che disciplinano il traffico autorizzato 
 
 ## Prerequisiti
 
-- Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/) nel proprio account OVHcloud
+- Disporre di un [server dedicato](/links/bare-metal/bare-metal) nel proprio account OVHcloud
 - Avere accesso amministratore (root/sudo) al server via SSH
 
 ## Procedura

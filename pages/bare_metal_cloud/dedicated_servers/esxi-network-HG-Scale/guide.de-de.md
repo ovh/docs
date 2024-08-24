@@ -25,7 +25,7 @@ Bei den High Grade & SCALE Reihen ist der Betrieb von Additional IPs im *Bridged
 
 - Sie haben einen öffentlichen IP-Adressblock mit mindestens vier Adressen in Ihrem Kunden-Account. Der IP-Adressblock muss auf das vRack zeigen.
 - Sie haben Ihren gewünschten privaten IP-Adressbereich festgelegt.
-- Sie verfügen über einen mit vRack kompatiblen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/).
+- Sie verfügen über einen mit vRack kompatiblen [Dedicated Server](/links/bare-metal/bare-metal).
 - Sie haben ein [vRack](https://www.ovh.de/loesungen/vrack/) in Ihrem Kunden-Account eingerichtet.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 

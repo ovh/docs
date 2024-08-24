@@ -26,8 +26,8 @@ Também é possível implementar esta configuração em cada um dos servidores H
 
 ## Requisitos
 
-* Dispor de um [servidor dedicado OVHcloud](https://www.ovhcloud.com/pt/bare-metal/)
-* Dispor de um endereço [Additional IP](https://www.ovhcloud.com/pt/bare-metal/ip/)
+* Dispor de um [servidor dedicado OVHcloud](/links/bare-metal/bare-metal)
+* Dispor de um endereço [Additional IP](/links/bare-metal/bare-metalip/)
 * Estar ligado à [Área de Cliente OVHcloud](/links/manager)
 
 > [!warning]
@@ -250,7 +250,7 @@ network:
 
 - Ter reservado um bloco público de endereços IP na sua conta, com um mínimo de quatro endereços.
 - Ter acesso ao intervalo de endereços de IP privados escolhidos.
-- Dispor de um [servidor compatível com o vRack](https://www.ovhcloud.com/pt/bare-metal/){.external}.
+- Dispor de um [servidor compatível com o vRack](/links/bare-metal/bare-metal){.external}.
 - Ter ativado um serviço [vRack](https://www.ovh.pt/solucoes/vrack/){.external}.
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
 
