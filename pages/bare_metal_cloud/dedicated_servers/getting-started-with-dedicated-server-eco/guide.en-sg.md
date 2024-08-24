@@ -13,7 +13,7 @@ A dedicated server is a physical server ("bare metal") located in one of our dat
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](/links/manager)
-- A [dedicated server](/links/bare-metal/bare-metal/) of the ranges Kimsufi, So You Start or Rise in your OVHcloud account
+- A [dedicated server](/links/bare-metal/bare-metal) of the ranges Kimsufi, So You Start or Rise in your OVHcloud account
 - Administrative access via SSH or remote desktop (Windows) to your server
 
 ## Instructions

@@ -16,7 +16,7 @@ Le niveau RAID par défaut pour les installations de serveurs OVHcloud est RAID 
 
 ## Prérequis
 
-- Posséder un [serveur dédié](/links/bare-metal/bare-metal/){.external} avec une configuration RAID logiciel.
+- Posséder un [serveur dédié](/links/bare-metal/bare-metal){.external} avec une configuration RAID logiciel.
 - Avoir accès à votre serveur via SSH en tant qu'administrateur (sudo).
 
 ## En pratique

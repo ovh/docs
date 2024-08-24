@@ -18,7 +18,7 @@ Dans le cadre d'une migration, vous pouvez être amené à devoir récupérer le
 
 ## Prérequis
 
-- Un [serveur dédié](/links/bare-metal/bare-metal/){.external} sur lequel une distribution GNU/Linux est installée.
+- Un [serveur dédié](/links/bare-metal/bare-metal){.external} sur lequel une distribution GNU/Linux est installée.
 - Un client FTP qui prend en charge les connexions SFTP (ce guide documente l'utilisation de [FileZilla](https://filezilla-project.org/){.external}).
 - Un accès administratif via SSH à votre serveur.
 

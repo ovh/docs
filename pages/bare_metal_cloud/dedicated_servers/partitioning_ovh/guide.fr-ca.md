@@ -11,7 +11,7 @@ updated: 2023-08-31
 > Cet article est destiné aux utilisateurs expérimentés qui ont au minimum des connaissances de base sur Linux, mais surtout des connaissances plus approfondies sur le stockage et en particulier sur les logiciels RAID ainsi que sur la gestion logique des volumes (LVM).
 >
 
-Les [serveurs dédiés](/links/bare-metal/bare-metal/) OVHcloud vous permettent de configurer des partitions, le [RAID logiciel](/pages/bare_metal_cloud/dedicated_servers/raid_soft), LVM, ZFS, etc. pendant [l’installation](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server) de votre système d'exploitation depuis l’[API OVHcloud](https://ca.api.ovh.com/) ou depuis votre [espace client OVHcloud](https://www.ovh.com/manager/#/dedicated/configuration). Dans cet article, nous allons nous concentrer sur l'[API OVHcloud](https://ca.api.ovh.com/).<br>
+Les [serveurs dédiés](/links/bare-metal/bare-metal) OVHcloud vous permettent de configurer des partitions, le [RAID logiciel](/pages/bare_metal_cloud/dedicated_servers/raid_soft), LVM, ZFS, etc. pendant [l’installation](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server) de votre système d'exploitation depuis l’[API OVHcloud](https://ca.api.ovh.com/) ou depuis votre [espace client OVHcloud](https://www.ovh.com/manager/#/dedicated/configuration). Dans cet article, nous allons nous concentrer sur l'[API OVHcloud](https://ca.api.ovh.com/).<br>
 Cela vous donnera plus de détails sur le moteur qui s'exécute en arrière-plan, afin de créer le partitionnement sur le serveur dédié à partir des données d'entrée transmises à l'API OVHcloud.
 
 Fournir des détails avancés sur le partitionnement peut vous aider à comprendre pourquoi :
@@ -21,7 +21,7 @@ Fournir des détails avancés sur le partitionnement peut vous aider à comprend
 
 ## Prérequis
 
-* Un [serveur dédié](/links/bare-metal/bare-metal/) **prêt à être installé/réinstallé** sur votre compte OVHcloud.
+* Un [serveur dédié](/links/bare-metal/bare-metal) **prêt à être installé/réinstallé** sur votre compte OVHcloud.
 * Avoir accès à l'[API OVHcloud](https://ca.api.ovh.com/).
 
 > [!warning]

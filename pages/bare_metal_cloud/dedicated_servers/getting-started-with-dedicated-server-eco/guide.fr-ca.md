@@ -12,7 +12,7 @@ Un serveur dédié est un serveur physique (« bare metal ») situé dans l’un
 
 ## Prérequis
 
-- Disposer d'un [serveur dédié](/links/bare-metal/bare-metal/) des gammes Kimsufi, So You Start ou Rise dans votre espace client OVHcloud.
+- Disposer d'un [serveur dédié](/links/bare-metal/bare-metal) des gammes Kimsufi, So You Start ou Rise dans votre espace client OVHcloud.
 - Être connecté à votre serveur en SSH sous Linux ou via un bureau distant sous Windows.
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 

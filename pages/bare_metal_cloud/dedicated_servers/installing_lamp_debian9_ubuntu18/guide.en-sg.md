@@ -12,7 +12,7 @@ Setting up a web server and related software enables your cloud server to host d
 
 ## Requirements
 
-- A [dedicated server](/links/bare-metal/bare-metal/), a [VPS](https://www.ovhcloud.com/en-sg/vps/) or a [Public Cloud instance](https://www.ovhcloud.com/en-sg/public-cloud/) in your OVHcloud account (excluding Windows systems)
+- A [dedicated server](/links/bare-metal/bare-metal), a [VPS](https://www.ovhcloud.com/en-sg/vps/) or a [Public Cloud instance](https://www.ovhcloud.com/en-sg/public-cloud/) in your OVHcloud account (excluding Windows systems)
 - Access to the [OVHcloud Control Panel](/links/manager)
 - Administrative access to your service via SSH
 

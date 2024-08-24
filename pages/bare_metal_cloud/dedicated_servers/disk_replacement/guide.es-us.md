@@ -23,7 +23,7 @@ Si detecta un fallo en un disco o nuestro sistema le ha enviado una notificació
 
 ## Requisitos
 
-- Estar conectado al [servidor dedicado de OVHcloud](/links/bare-metal/bare-metal/){.external} por SSH con acceso root (Linux).
+- Estar conectado al [servidor dedicado de OVHcloud](/links/bare-metal/bare-metal){.external} por SSH con acceso root (Linux).
 
 ## Procedimiento
 

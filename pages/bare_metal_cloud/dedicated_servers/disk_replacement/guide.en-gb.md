@@ -19,7 +19,7 @@ If you notice that a disk is faulty, or receive a notification email about a fau
 
 ## Requirements
 
-- a [Dedicated Server](/links/bare-metal/bare-metal/){.external}
+- a [Dedicated Server](/links/bare-metal/bare-metal){.external}
 - administrative (sudo) access to the server via SSH
 
 ## Instructions

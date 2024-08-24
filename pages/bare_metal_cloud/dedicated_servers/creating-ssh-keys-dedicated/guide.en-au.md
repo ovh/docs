@@ -15,7 +15,7 @@ This is generally the most secure and convenient connection method.
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](/links/manager)
-- A [dedicated server](/links/bare-metal/bare-metal/) or a [VPS](https://www.ovhcloud.com/en-au/vps/) in your OVHcloud account
+- A [dedicated server](/links/bare-metal/bare-metal) or a [VPS](https://www.ovhcloud.com/en-au/vps/) in your OVHcloud account
 - An SSH client application (command line or GUI)
 - Administrative access (sudo) via SSH to your server
 

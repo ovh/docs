@@ -10,7 +10,7 @@ Ce guide a pour but de présenter le tableau de bord de sécurité réseau (*Net
 
 ## Prérequis
 
-- Un service OVHcloud exposé sur une adresse IP publique dédiée ([Serveur dédié](/links/bare-metal/bare-metal/), [VPS](https://www.ovhcloud.com/fr-ca/vps/), [Instance Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/), [Additional IP](https://www.ovhcloud.com/fr-ca/network/additional-ip/), etc.)
+- Un service OVHcloud exposé sur une adresse IP publique dédiée ([Serveur dédié](/links/bare-metal/bare-metal), [VPS](https://www.ovhcloud.com/fr-ca/vps/), [Instance Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/), [Additional IP](https://www.ovhcloud.com/fr-ca/network/additional-ip/), etc.)
 - Être connecté à votre [espace client OVHcloud](/links/manager)
 
 ## En pratique

@@ -12,7 +12,7 @@ With rescue mode, you can always access your data, even if the server's OS or th
 
 ## Requirements
 
-- A [dedicated server](/links/bare-metal/bare-metal/), a [VPS](https://www.ovhcloud.com/en-sg/vps/) or a [Public Cloud instance](https://www.ovhcloud.com/en-sg/public-cloud/) in your OVHcloud account (excluding Windows systems)
+- A [dedicated server](/links/bare-metal/bare-metal), a [VPS](https://www.ovhcloud.com/en-sg/vps/) or a [Public Cloud instance](https://www.ovhcloud.com/en-sg/public-cloud/) in your OVHcloud account (excluding Windows systems)
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]

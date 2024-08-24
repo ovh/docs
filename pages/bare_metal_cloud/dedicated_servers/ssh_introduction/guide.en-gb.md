@@ -18,7 +18,7 @@ The SSH (Secure Shell) communication protocol is the main practice to establish 
 
 ## Requirements
 
-- A [dedicated server](/links/bare-metal/bare-metal/) or a [VPS](https://www.ovhcloud.com/en-gb/vps/) in your OVHcloud account
+- A [dedicated server](/links/bare-metal/bare-metal) or a [VPS](https://www.ovhcloud.com/en-gb/vps/) in your OVHcloud account
 - An SSH client application (command line or GUI)
 
 > [!primary]

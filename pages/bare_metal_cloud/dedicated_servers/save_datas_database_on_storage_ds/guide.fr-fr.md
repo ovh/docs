@@ -25,7 +25,7 @@ Dans ce tutoriel, vous configurerez un serveur de stockage OVHcloud pour répond
 ### Ce que vous devez avoir
 
 - Un [serveur de stockage OVHcloud](/links/bare-metal/bare-metal/storage/){.external}.
-- Une infrastructure de production ([VPS](https://www.ovhcloud.com/fr/vps/){.external}, [serveurs dédiés](/links/bare-metal/bare-metal/){.external}, [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/){.external}…).
+- Une infrastructure de production ([VPS](https://www.ovhcloud.com/fr/vps/){.external}, [serveurs dédiés](/links/bare-metal/bare-metal){.external}, [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/){.external}…).
 - Une connexion SSH configurée entre le serveur de stockage et l'infrastructure de production.
 - Conseillé : un réseau privé entre vos serveurs ([OVHcloud vRack](https://www.ovh.com/fr/solutions/vrack/){.external}).
 

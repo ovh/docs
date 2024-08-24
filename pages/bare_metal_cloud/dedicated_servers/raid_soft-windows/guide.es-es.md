@@ -16,7 +16,7 @@ En un sistema Windows, la redundancia de los datos se garantiza poniendo en espe
 
 ## Requisitos
 
-- Un [servidor dedicado Windows](/links/bare-metal/bare-metal/) con espejo de software
+- Un [servidor dedicado Windows](/links/bare-metal/bare-metal) con espejo de software
 - Acceso administrativo al servidor a través de RDP
 
 ## Procedimiento

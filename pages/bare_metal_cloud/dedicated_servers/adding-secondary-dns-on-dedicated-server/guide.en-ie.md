@@ -13,7 +13,7 @@ If you are configuring your dedicated server as a DNS server, you can make use o
 ## Requirements
 
 - A domain name to which you have administrative access
-- A [dedicated server](/links/bare-metal/bare-metal/) in your OVHcloud account
+- A [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]

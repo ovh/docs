@@ -12,7 +12,7 @@ Backing up a Bare Metal server with Veeam Enterprise involves several applicatio
 
 ## Requirements
 
-- An [OVHcloud Bare Metal server](/links/bare-metal/bare-metal/)
+- An [OVHcloud Bare Metal server](/links/bare-metal/bare-metal)
 - A [Veeam Enterprise Backup solution](https://www.ovhcloud.com/en-ie/storage-solutions/veeam-enterprise/)
 - [OVHcloud Standard S3 Object Storage](https://www.ovhcloud.com/en-ie/public-cloud/object-storage/) (optional)
 

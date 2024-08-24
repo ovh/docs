@@ -19,7 +19,7 @@ Lors de l’installation ou de la réinstallation d’un système d’exploitati
 
 ## Prérequis
 
-- Posséder un [serveur dédié](/links/bare-metal/bare-metal/){.external} avec Windows installé.
+- Posséder un [serveur dédié](/links/bare-metal/bare-metal){.external} avec Windows installé.
 - Être connecté à l'[espace client OVHcloud](/links/manager){.external}.
 
 ## En pratique

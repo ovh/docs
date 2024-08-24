@@ -14,7 +14,7 @@ En plus de l'adressage IP privé, le [vRack](https://www.ovh.com/fr/solutions/vr
 
 - Avoir réservé un bloc public d'adresses IP dans votre compte, avec un minimum de quatre adresses.
 - Préparer votre plage d'adresses IP privées choisies.
-- Posséder un [serveur compatible vRack](/links/bare-metal/bare-metal/){.external}.
+- Posséder un [serveur compatible vRack](/links/bare-metal/bare-metal){.external}.
 - Activer un service [vRack](https://www.ovh.com/fr/solutions/vrack/){.external}.
 - Être connecté à l'[espace client OVHcloud](/links/manager){.external}.
 

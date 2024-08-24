@@ -14,7 +14,7 @@ Le support de cette fonctionalité est un pré-requis de toutes les actions conc
 
 ## Prérequis
 
-* Posséder [un serveur dédié](/links/bare-metal/bare-metal/){.external}.
+* Posséder [un serveur dédié](/links/bare-metal/bare-metal){.external}.
 * Être connecté à l'[API OVHcloud](https://ca.api.ovh.com/){.external}.
 
 > [!primary]

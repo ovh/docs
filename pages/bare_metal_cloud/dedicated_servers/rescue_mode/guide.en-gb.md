@@ -28,7 +28,7 @@ Usual tasks the rescue mode is appropriate for include:
 
 ## Requirements
 
-- A [dedicated server](/links/bare-metal/bare-metal/) in your OVHcloud account
+- A [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions

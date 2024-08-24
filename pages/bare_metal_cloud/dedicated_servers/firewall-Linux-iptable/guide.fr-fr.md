@@ -20,7 +20,7 @@ Les pare-feux fonctionnent en définissant des règles qui régissent le trafic 
 
 ## Prérequis
 
-- Disposer d’un [serveur dédié](/links/bare-metal/bare-metal/) dans votre compte OVHcloud
+- Disposer d’un [serveur dédié](/links/bare-metal/bare-metal) dans votre compte OVHcloud
 - Disposer d'un accès administrateur (root/sudo) à votre serveur via SSH
 
 ## En pratique

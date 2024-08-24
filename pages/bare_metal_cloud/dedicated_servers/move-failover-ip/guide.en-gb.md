@@ -24,7 +24,7 @@ With this technology, you can switch IP addresses from one solution to another i
 
 ## Requirements
 
-- A [dedicated server](/links/bare-metal/bare-metal/) in your OVHcloud account
+- A [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account
 - An [Additional IP address](/links/bare-metal/bare-metal/ip/)
 - Access to the [OVHcloud Control Panel](/links/manager)
 

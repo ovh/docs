@@ -15,7 +15,7 @@ Qu'il s'agisse d'une panne matérielle ou de la suppression accidentelle d'un fi
 
 ## Prérequis
 
-- Un [serveur Bare Metal Linux OVHcloud](/links/bare-metal/bare-metal/)
+- Un [serveur Bare Metal Linux OVHcloud](/links/bare-metal/bare-metal)
 - [Veeam Backup & Replication installé et enregistré](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication)
 
 > [!warning]

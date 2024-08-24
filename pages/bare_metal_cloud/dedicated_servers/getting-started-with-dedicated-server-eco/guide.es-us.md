@@ -16,7 +16,7 @@ Un servidor dedicado es un servidor físico ("bare metal") situado en uno de nue
 
 ## Requisitos
 
-- Tener un [servidor dedicado](/links/bare-metal/bare-metal/) de las gamas Kimsufi, So you Start o Rise en el área de cliente de OVHcloud.
+- Tener un [servidor dedicado](/links/bare-metal/bare-metal) de las gamas Kimsufi, So you Start o Rise en el área de cliente de OVHcloud.
 - Estar conectado al servidor por SSH en Linux o a través de un escritorio remoto en Windows.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
