@@ -305,7 +305,7 @@ Votre interface Zimbra dispose de 2 menus de configuration :
 >>
 >> **Rappels d'évènements**
 >>
->> - **Envoyer des rappels par courrier électronique à** : envoyer les rappels d'évènements à une adresse e-mail
+>> - **Envoyer des rappels par courrier électronique à** : envoyer les rappels d'évènements à une adresse e-mail.
 >> - **Afficher les notifications du navigateur** : être notifié par votre navigateur internet pour vos évènements.
 >> - **Délai de rappel par défaut** : délai de rappel appliqué par défaut lorsque vous l'activez sur un évènement.
 >> - **Afficher les rappels pour des évènements échus** : continuer d'envoyer des rappels après un évènement.
@@ -387,7 +387,7 @@ Sélectionnez l'un des deux onglets suivants :
 
 Cliquez sur l'icône `Agenda`, dans la barre supérieure, pour accéder au carnet de contacts. Celui-ci est divisé en **3 parties** :
 
-- **(1) Liste des calendriers** (à gauche) : gérez vos différents calendriers et sous-calendriers
+- **(1) Liste des calendriers** (à gauche) : gérez vos différents calendriers et sous-calendriers.
 - **(2) Contenu des calendriers** (au centre) : visualisez le contenu des calendriers et sous-calendriers sélectionnés.
 - **(3) Liste des tâches** (à droite) : gérez vos tâches et listes de tâches.
 
@@ -414,16 +414,16 @@ Il est également possible de créer des sous-calendriers.
 
 ![Zimbra - calendar](images/zimbra-calendar-event-add-01.png){.thumbnail .w-400}
 
-- **Début** : la date et l'heure de début de votre évènement. Si vous cochez `Toute la journée`, vous n'aurez pas d'heure de début et de fin à saisir car l'ensemble de la journée sera prise en compte.
+- **Début** : la date et l'heure de début de votre évènement. Si vous cochez `Toute la journée`, vous n'aurez pas d'heure de début et de fin à saisir car l'ensemble de la journée sera pris en compte.
 - **Fin** : la date et l'heure de fin de votre évènement.
 - **Répétition** : s'il s'agit d'un évènement récurrent, définissez sa fréquence.
 - **Équipement** : en cliquant sur `Afficher l'équipement`{.action}, vous faites apparaître cette ligne pour définir un équipement partagé que vous allez utiliser pour votre évènement.
-- **Lieu** : le lieu ou va se dérouler l'évènement, comme le nom d'une salle de réunion par exemple.
+- **Lieu** : le lieu où va se dérouler l'évènement, comme le nom d'une salle de réunion par exemple.
 - **Invités** : les adresses e-mail des participants à l'évènement.
-- **Remarques** : message qui sera transmis aux invités de l'évènement
-- **Rappel** : être prévenu avant le début de l'évènement
+- **Remarques** : message qui sera transmis aux invités de l'évènement.
+- **Rappel** : être prévenu avant le début de l'évènement.
 - **Afficher comme** : définir si l'évènement rend ses invités disponibles ou indisponibles pendant son déroulement
-- **Agenda** : définir à quel calendrier est associé l'évènement
+- **Agenda** : définir à quel calendrier est associé l'évènement.
 
 Une fois votre évènement défini, cliquez sur `Enregistrer`{.action}.
 
@@ -433,9 +433,9 @@ Une fois votre évènement défini, cliquez sur `Enregistrer`{.action}.
 
 #### Tâches <a name="tasks"></a>
 
-Les tâches sont des éléments dissociés de vos calendriers. Ils ont pour objectif de lister des tâches à effectuer sans pour autant y attacher une date d'exécution ou de temporalité. Ces tâches sont complémentaires aux calendriers.
+Les tâches sont des éléments dissociés de vos calendriers. Elles ont pour objectif de lister des tâches à effectuer sans pour autant y attacher une date d'exécution ou de temporalité. Ces tâches sont complémentaires aux calendriers.
 
-Par défaut il existe la liste « Tâches », celle-ci ne peut pas être supprimée, mais il est possible de créer vos propres listes de tâches.
+La liste « Tâches » existe par défaut, elle ne peut pas être supprimée mais vous pouvez créer vos propres listes de tâches.
 
 - **(1)** : Pour créer une tâche, cliquez sur le bouton `...`{.action} puis sur `Nouvelle tâche`{.action}  ou simplement sur le bouton `+`{.action} à côté de votre liste de tâches.
 
@@ -443,7 +443,7 @@ Par défaut il existe la liste « Tâches », celle-ci ne peut pas être supprim
 
 ![Zimbra - calendar](images/zimbra-calendar-task-01.png){.thumbnail .w-400}
 
-Lorsque vous créez une tâche, il est possible de définir une date d'échéance, une priorité qui vous permettra de les classer selon leur importance et un menu déroulant pour sélectionner la liste de tâches correspondante.
+Lorsque vous créez une tâche, il est possible de définir une date d'échéance et une priorité qui vous permettront de les classer selon leur importance, ainsi qu'un menu déroulant pour sélectionner la liste de tâches correspondante.
 
 Cliquez ensuite sur `Enregistrer`{.action} pour finaliser la création de votre tâche.
 
