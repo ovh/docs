@@ -1,4 +1,4 @@
----
+****---
 title: 'Die Abrechnung für Ihre Exchange Accounts verwalten'
 excerpt: 'Erfahren Sie hier, wie Sie die Abrechnung für OVHcloud Exchange im Kundencenter verwalten'
 updated: 2020-04-20
@@ -70,6 +70,10 @@ Gehen Sie auf den Tab `E-Mail-Accounts`{.action}. Klicken Sie dann links auf den
 ![billing_exchange](images/billing-exchange-06.png){.thumbnail}
 
 #### Accounts entfernen
+
+> [!warning]
+>
+> Um einen E-Mail-Account auf einer Private Exchange Plattform löschen zu können, **muss dieser erstellt worden sein** (verbunden mit einem Domainnamen Ihrer Exchange Plattform). Ein nicht konfiguriertes Konto kann nicht gelöscht werden.
 
 Gehen Sie auf den Tab `E-Mail-Accounts`{.action}. Klicken Sie auf `...`{.action} rechts des betreffenden Accounts und schließlich auf `Löschen`{.action}. Der Account wird sofort von der Plattform gelöscht; es erfolgt keine Kündigung.
 

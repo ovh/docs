@@ -71,6 +71,10 @@ Clique no separador `Contas de e-mail`{.action} e, depois, no botão `Ações`{.
 
 #### Eliminar contas
 
+> [!warning]
+>
+> Para poder eliminar uma conta de e-mail numa plataforma Private Exchange, **é necessário que esta tenha sido criada** (associada a um domínio da sua plataforma Exchange). Uma conta não configurada não pode ser eliminada.
+
 No separador `Contas de e-mail`{.action}, clique em `...`{.action} à direita da conta em causa e, a seguir, clique em `Eliminar`{.action}.  A conta será imediatamente retirada da plataforma, pelo que não haverá nenhum cancelamento a realizar.
 
 ![billing_exchange](images/billing-exchange-07.png){.thumbnail}

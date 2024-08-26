@@ -71,6 +71,10 @@ Przejdź do karty `Konta e-mail`{.action}, następnie kliknij przycisk `Akcje`{.
 
 #### Usuwanie kont
 
+> [!warning]
+>
+> Aby móc usunąć konto e-mail z platformy Private Exchange, **konieczne jest, aby zostało ono utworzone** (przypisane do nazwy domeny Twojej platformy Exchange). Nie można usunąć nieskonfigurowanego konta.
+
 W karcie `Konta e-mail`{.action} kliknij `...`{.action} z prawej strony danego konta i wybierz `Usuń`{.action}. Konto zostanie natychmiastowo usunięte z usługi, nie ma więc potrzeby przeprowadzenia procesu rezygnacji.
 
 ![billing_exchange](images/billing-exchange-07.png){.thumbnail}

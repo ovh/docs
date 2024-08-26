@@ -71,6 +71,10 @@ Clicca sulla scheda `Account email`{.action}, poi sul pulsante `Azioni`{.action}
 
 #### Elimina account
 
+> [!warning]
+>
+> Per poter eliminare un account email su una piattaforma Private Exchange, **è necessario che sia stato creato** (associato a un dominio della piattaforma Exchange). Impossibile eliminare un account non configurato.
+
 Dalla scheda `Account email`{.action}, clicca su `...`{.action} in corrispondenza dell’account interessato e poi clicca su `Elimina`{.action}.  L’account sarà rimosso dalla piattaforma immediatamente, quindi non sarà necessario disattivarlo.
 
 ![billing_exchange](images/billing-exchange-07.png){.thumbnail}
