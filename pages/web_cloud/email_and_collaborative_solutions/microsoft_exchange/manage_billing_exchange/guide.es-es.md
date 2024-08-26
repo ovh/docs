@@ -71,7 +71,7 @@ Acceda a la pestaña `Cuentas de correo`{.action}, haga clic en el botón `Accio
 
 > [!warning]
 >
-> Para poder eliminar una cuenta de correo en una plataforma Private Exchange, es necesario que esta haya sido creada** (asociada al dominio de su plataforma Exchange). No se puede eliminar una cuenta no configurada.
+> Para poder eliminar una cuenta de correo en una plataforma Private Exchange, **es necesario que esta haya sido creada** (asociada al dominio de su plataforma Exchange). No se puede eliminar una cuenta no configurada.
 
 En la pestaña `Cuentas de correo electrónico`{.action}, haga clic en `...`{.action} a la derecha de la cuenta correspondiente y luego en `Eliminar`{.action}. La cuenta se eliminará de la plataforma de inmediato, por lo que no será necesario darla de baja.
 
