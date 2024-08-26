@@ -1,6 +1,6 @@
 ---
-title: "KMS - Présentation des solutions pour chiffrer des VM"
-excerpt: "Découvrez les solutions qui s'offrent à vous pour chiffrer des VM avec ou sans KMS OVHcloud au sein de Hosted Private Cloud VMware on OVHcloud"
+title: "KMS for VMware on OVHcloud - Solution et cas d'usages pour chiffrer des VM"
+excerpt: "Découvrez les solutions qui s'offrent à vous pour le chiffrement de VM avec ou sans OKMS au sein de votre Hosted Private Cloud VMware vSphere managé on OVHcloud"
 updated: 2024-08-26
 ---
 
@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 > [!primary]
 >
-> Cette fonctionnalité est disponible en version bêta. Ce guide peut donc être incomplet et sera mis à jour pendant cette période.
+> Cette fonctionnalité est disponible en version bêta.
 >
 
 ## Objectif
@@ -47,7 +47,7 @@ details[open]>summary::before {
 
 ### Introduction
 
-/// details | Les avantages du chiffrement de VM avec le KMS OVHcloud (OKMS)
+/// details | Les avantages du chiffrement de VM avec le KMS OVHcloud (OKMS).
 
 Le KMS OVHcloud est un service managé conçu pour :
 

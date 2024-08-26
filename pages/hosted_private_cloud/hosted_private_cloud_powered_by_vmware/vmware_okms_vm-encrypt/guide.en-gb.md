@@ -1,6 +1,6 @@
 ---
-title: "KMS - VM encryption with OKMS"
-excerpt: "Find out how to enable VM encryption within your managed Hosted Private Cloud VMware vSphere with the OVHcloud KMS (OKMS) solution"
+title: "KMS for VMware on OVHcloud - Configuring VM encryption"
+excerpt: "Find out how to enable VM encryption in your managed Hosted Private Cloud VMware vSphere with the OVHcloud KMS (OKMS) solution managed as a service"
 updated: 2024-08-26
 ---
 
@@ -20,7 +20,7 @@ content:'\25BC';
 
 > [!primary]
 >
-> This feature is available in beta version. This guide may be incomplete, and will be updated during this period.
+> This feature is available in beta version.
 >
 
 ## Objective

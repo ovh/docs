@@ -1,6 +1,6 @@
 ---
-title: "KMS - Chiffrement de VM avec OKMS"
-excerpt: "Découvrez comment activer le chiffrement de vos VMs au sein de votre VMware vSphere managé Hosted Private Cloud grâce à la solution KMS OVHcloud (OKMS)"
+title: "KMS for VMware on OVHcloud - Configuration du chiffrement de VM"
+excerpt: "Découvrez comment activer le chiffrement de vos VMs au sein de votre VMware vSphere managé Hosted Private Cloud grâce à la solution KMS OVHcloud (OKMS) gérer comme un service managé"
 updated: 2024-08-26
 ---
 
@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 > [!primary]
 >
-> Cette fonctionnalité est disponible en version bêta. Ce guide peut donc être incomplet et sera mis à jour pendant cette période.
+> Cette fonctionnalité est disponible en version bêta.
 >
 
 ## Objectif

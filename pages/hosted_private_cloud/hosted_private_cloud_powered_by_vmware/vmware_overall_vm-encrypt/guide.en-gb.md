@@ -1,7 +1,7 @@
 ---
-title: "KMS - Overview of solutions for encrypting VMs"
-excerpt: "Discover the solutions available to you for encrypting VMs with or without OVHcloud KMS in Hosted Private Cloud VMware on OVHcloud"
-updated: 2024-08-09
+title: "KMS for VMware on OVHcloud - VM encryption use case scenarios"
+excerpt: "Discover the solutions available to you for encrypting VMs with or without OKMS in your managed OVHcloud Hosted Private Cloud VMware vSphere"
+updated: 2024-08-26
 ---
 
 <style>
@@ -20,7 +20,7 @@ content:'\25BC';
 
 > [!primary]
 >
-> This feature is available in beta version. This guide may be incomplete, and will be updated during this period.
+> This feature is available in beta version.
 >
 
 ## Objective
