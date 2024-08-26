@@ -293,23 +293,25 @@ Votre interface Zimbra dispose de 2 menus de configuration :
 >> Retrouvez ici les paramètres liés à vos [calendriers](#calendar).
 >>
 >> **Paramètres généraux des agendas**
->> - **Agenda par défaut** : définissez le calendrier utiliser par défaut lorsque vous créez un évenement dans vos calendriers.
+>>
+>> - **Agenda par défaut** : définissez le calendrier utilisé par défaut lorsque vous créez un évènement dans vos calendriers.
 >> - **Début de semaine** : le jour qui apparaît en premier dans la grille de votre calendrier.
 >> - **Début de journée** : l'heure qui apparaît en haut de l'amplitude horaire affichée.
->> - **Fin de journée** : l'heure qui apparaît en haut de l'amplitude horaire affichée.
+>> - **Fin de journée** : l'heure qui apparaît en bas de l'amplitude horaire affichée.
 >> - **Fuseau horaire** utilisé pour vos calendriers.
->> - **Lors de la création ou l’édition d’événements** : Afficher les fuseaux horaires pour les heures de début et de fin.
->> - **Partage** : `Activer la délégation pour les clients CALDav`, cette option vous permet de gérer vos calendriers au travers d'un logiciel prenant en charge le protocole CALdav.
->> - **Événements refusés** : afficher un événement dans le calendrier, même si il a été refusé.
+>> - **Lors de la création ou l’édition d’évènements** : afficher les fuseaux horaires pour les heures de début et de fin.
+>> - **Partage** : `Activer la délégation pour les clients CALDav`. Cette option vous permet de gérer vos calendriers par le biais d'un logiciel prenant en charge le protocole CALdav.
+>> - **Événements refusés** : afficher un évènement dans le calendrier, même si il a été refusé.
 >>
->> **Rappels d'événements**
->> - **Envoyer des rappels par courrier électronique à** : envoyer les rappels d'événements à une adresse e-mail
->> - **Afficher les notifications du navigateur** : être notifié par votre navigateur internet concernant vos événements
->> - **Délai de rappel par défaut** : délai de rappel appliqué par défaut lorsque vous l'activez sur un événement.
->> - **Afficher les rappels pour des événements échus** : continuer d'envoyer des rappels après un événement.
+>> **Rappels d'évènements**
+>>
+>> - **Envoyer des rappels par courrier électronique à** : envoyer les rappels d'évènements à une adresse e-mail
+>> - **Afficher les notifications du navigateur** : être notifié par votre navigateur internet pour vos évènements.
+>> - **Délai de rappel par défaut** : délai de rappel appliqué par défaut lorsque vous l'activez sur un évènement.
+>> - **Afficher les rappels pour des évènements échus** : continuer d'envoyer des rappels après un évènement.
 >>
 >> **Autorisation d’occupation gratuite**
->> - **Autorisation pour** : ce paramètre concerne uniquement l'état de disponibilité lié aux calendriers de votre adresse e-mail. Cela signifie que vous pouvez partager avec d'autres adresses e-mails si vous être « Occupé » ou « Disponible ».
+>> - **Autorisation pour** : ce paramètre concerne uniquement l'état de disponibilité lié aux calendriers de votre adresse e-mail. Cela signifie que vous pouvez partager votre statut « Occupé » ou « Disponible » avec d'autres adresses e-mail.
 
 ### Contacts <a name="contacts"></a>
 
@@ -385,15 +387,15 @@ Sélectionnez l'un des deux onglets suivants :
 
 Cliquez sur l'icône `Agenda`, dans la barre supérieure, pour accéder au carnet de contacts. Celui-ci est divisé en **3 parties** :
 
-- **(1) Liste des calendriers** (à gauche) : gérer vos différents calendriers et sous-calendriers
+- **(1) Liste des calendriers** (à gauche) : gérez vos différents calendriers et sous-calendriers
 - **(2) Contenu des calendriers** (au centre) : visualisez le contenu des calendriers et sous-calendriers sélectionnés.
-- **(3) Liste des tâches** (à droite) : gérer vos tâches et listes de tâches.
+- **(3) Liste des tâches** (à droite) : gérez vos tâches et listes de tâches.
 
 ![Zimbra - calendar](images/zimbra-calendar-view.png){.thumbnail}
 
 #### Gestion des calendriers <a name="calendar-management"></a>
 
-Par défaut, dans la liste `Mes agendas`, vous avez `Calendrier` qui est créé par défaut. Ce calendrier par défaut ne peut pas être supprimé, vous verez cependant qu'il est possible de créer vos propres calendriers dans le paragraphe suivant.
+Par défaut, dans la liste `Mes agendas`, vous avez un `Calendrier` créé par défaut. Ce calendrier par défaut ne peut pas être supprimé mais vous verrez cependant qu'il est possible de créer vos propres calendriers dans le paragraphe suivant.
 
 ##### 1- Créer un calendrier <a name="calendar-add-calendar"></a>
 
@@ -401,43 +403,51 @@ Par défaut, dans la liste `Mes agendas`, vous avez `Calendrier` qui est créé 
 
 Il est également possible de créer des sous-calendriers.
 
-- **(2)** : Pour créer un sous-calendrier, passez votre curseur sur le calendrier pour lequel vous souhaitez en créer un, puis cliquez sur le bouton droit pour afficher le menu déroulant. Cliquez sur `Ajouter un sous-calendrier`. Saisissez un nom et définissez une couleur, puis cliquez sur `Enregistrer`{.action}
+- **(2)** : Pour créer un sous-calendrier, passez votre curseur sur le calendrier pour lequel vous souhaitez en créer un, puis faites un clic droit pour afficher le menu déroulant. Cliquez sur `Ajouter un sous-calendrier`. Saisissez un nom et définissez une couleur, puis cliquez sur `Enregistrer`{.action}
 
 ![Zimbra - calendar](images/zimbra-calendar-add.png){.thumbnail .w-400}
 
-##### 2- Ajouter un événement <a name="calendar-add-event"></a>
+##### 2- Ajouter un évènement <a name="calendar-add-event"></a>
 
-- **(1)** : Cliquez `Nouvel événement`{.action} dans le coin supérieur gauche.
-- **(2)** : Cliquez sur une tranche horaire de votre calendrier dans laquelle vous souhaitez ajouter un événement. Pour un ajout simplifié, il vous suffit de définir un titre à l'événement et un lieu puis cliquez sur `Enregistrer`{.action}. Pour définir plus de détails à votre événement cliquez sur `Ajouter d'autres détails`{.action}
+- **(1)** : Cliquez sur `Nouvel évènement`{.action} dans le coin supérieur gauche.
+- **(2)** : Cliquez sur la plage horaire de votre calendrier dans laquelle vous souhaitez ajouter un événement. Pour un ajout simplifié, il vous suffit de définir un titre pour l'évènement et un lieu puis de cliquer sur `Enregistrer`{.action}. Pour ajouter plus de détails sur votre évènement, cliquez sur `Ajouter d'autres détails`{.action}
 
 ![Zimbra - calendar](images/zimbra-calendar-event-add-01.png){.thumbnail .w-400}
 
-- **Début** : la date de début de votre événement et son heure de début. Si vous cochez `Toute la journée`, vous n'aurez pas d'heure de début et de fin à saisir car l'ensemble de la journée sera prise en compte.
-- **Fin** : la date de fin de votre événement et son heure de fin
-- **Répétition** : Si il s'agit d'un événement récurrent, définissez la fréquence de celle-ci
-- **Équipement** : en cliquant sur `Afficher l'équipement`{.action}, vous faites apparaître cette ligne pour définir un équipement partagé que vous allez utiliser pour votre événement.
-- **Lieu** : le lieu ou va être 
-- **Invités** : les adresses e-mail des participants à l'événement.
-- **Remarques** : message qui sera transmis aux invités de l'événement 
-- **Rappel** : être prévenu avant le début de l'événement
-- **Afficher comme** : définir si l'événement rend ses invités disponible ou indisponible pendant son déroulement
-- **Agenda** : associer à quel calendrier est associé
+- **Début** : la date et l'heure de début de votre évènement. Si vous cochez `Toute la journée`, vous n'aurez pas d'heure de début et de fin à saisir car l'ensemble de la journée sera prise en compte.
+- **Fin** : la date et l'heure de fin de votre évènement.
+- **Répétition** : s'il s'agit d'un évènement récurrent, définissez sa fréquence.
+- **Équipement** : en cliquant sur `Afficher l'équipement`{.action}, vous faites apparaître cette ligne pour définir un équipement partagé que vous allez utiliser pour votre évènement.
+- **Lieu** : le lieu ou va se dérouler l'évènement, comme le nom d'une salle de réunion par exemple.
+- **Invités** : les adresses e-mail des participants à l'évènement.
+- **Remarques** : message qui sera transmis aux invités de l'évènement
+- **Rappel** : être prévenu avant le début de l'évènement
+- **Afficher comme** : définir si l'évènement rend ses invités disponibles ou indisponibles pendant son déroulement
+- **Agenda** : définir à quel calendrier est associé l'évènement
 
-Une fois votre événement défini, cliquez sur `Enregistrer`{.action}.
+Une fois votre évènement défini, cliquez sur `Enregistrer`{.action}.
 
 ![Zimbra - calendar](images/zimbra-calendar-event-add-02.png){.thumbnail .w-400}
 
-##### 3- Modifier un événement <a name="calendar-modify-event"></a>
+##### 3- Modifier un évènement <a name="calendar-modify-event"></a>
 
 #### Tâches <a name="tasks"></a>
 
 Les tâches sont des éléments dissociés de vos calendriers. Ils ont pour objectif de lister des tâches à effectuer sans pour autant y attacher une date d'exécution ou de temporalité. Ces tâches sont complémentaires aux calendriers.
 
-`Nouvelle tâche`{.action}
+Par défaut il existe la liste « Tâches », celle-ci ne peut pas être supprimée, mais il est possible de créer vos propres listes de tâches.
 
-`Créer une liste`{.action}
+- **(1)** : Pour créer une tâche, cliquez sur le bouton `...`{.action} puis sur `Nouvelle tâche`{.action}  ou simplement sur le bouton `+`{.action} à côté de votre liste de tâches.
 
-`Enregistrer`{.action}
+- **(2)** : Pour créer une nouvelle liste de tâches, cliquez sur le bouton `...`{.action} puis sur`Créer une liste`{.action}.
+
+![Zimbra - calendar](images/zimbra-calendar-task-01.png){.thumbnail .w-400}
+
+Lorsque vous créez une tâche, il est possible de définir une date d'échéance, une priorité qui vous permettra de les classer selon leur importance et un menu déroulant pour sélectionner la liste de tâches correspondante.
+
+Cliquez ensuite sur `Enregistrer`{.action} pour finaliser la création de votre tâche.
+
+![Zimbra - calendar](images/zimbra-calendar-task-02.png){.thumbnail .w-400}
 
 #### Filtres <a name="filters"></a>
 
