@@ -1,8 +1,9 @@
 ---
 title: "KMS - Chiffrement de VM avec OKMS"
 excerpt: "Découvrez comment activer le chiffrement de vos VMs au sein de votre VMware vSphere managé Hosted Private Cloud grâce à la solution KMS OVHcloud (OKMS)"
-updated: 2024-08-09
+updated: 2024-08-26
 ---
+
 <style>
 details>summary {
     color:rgb(33, 153, 232) !important;
@@ -29,11 +30,11 @@ details[open]>summary::before {
 ## Prérequis
 
 - Être connecté à [l'espace client OVHcloud](/links/manager).
-- Disposer d'une offre [VMware on OVHcloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/).
+- Disposer d'une offre [VMware on OVHcloud](/links/hosted-private-cloud/vmware).
 - Disposer des droits nécessaires pour manipuler les ressources HPC VMware et KMS OVHcloud avec IAM.
 - Avoir lu les guides : 
-  - [Intégration d'un KMS pour VMware on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/kms_vmware_overall).
-  - [Premiers pas avec OKMS](/pages/manage_and_operate/kms/quick-start).
+    - [Intégration d'un KMS pour VMware on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/kms_vmware_overall).
+    - [Premiers pas avec OKMS](/pages/manage_and_operate/kms/quick-start).
 - Le certificat public du KMS OVHcloud (OKMS) (étape [vCenter Trust KMS](#trust-okms)).
 - Une demande de signature de certificat (CSR) généré par vSphere et signé par OKMS pour valider/truster l'import ainsi que les échanges entre le KMS OVHcloud et vCenter.
 
@@ -49,8 +50,6 @@ details[open]>summary::before {
 - [Étape 5 - Création d'une stratégie de stockage VM (obligatoire)](#storage-policy)
 - [Étape 6 - Activation du chiffrement sur une VM (obligatoire)](#activation-encryption)
 - [Étape 7 - Informations utiles TLS OKMS](#useful-information)
-- [Aller plus loin](#going-further)
-
 
 ### Introduction <a name="introduction"></a>
 
@@ -60,9 +59,9 @@ Pour plus d'informations sur les choix qui s'offrent à vous avec KMS et Hosted 
 
 #### URLs OKMS
 
-> [!Primary]
+> [!primary]
 >
-> Ces liens peuvent être changés et mis à jour.
+> Ces liens peuvent faire l'objet de mises à jour ultérieures.
 > 
 
 | **Type**    | **URL**                          | **Région**          | **OKMS Région enum** | **IP**         |
@@ -78,9 +77,9 @@ Pour plus d'informations sur les choix qui s'offrent à vous avec KMS et Hosted 
 
 #### Liste des appels API v1 et v2 KMS  <a name="listing-api"></a>
 
-> [!Primary]
+> [!primary]
 >
-> Ces appels API peuvent être changés et mis à jour.
+> Ces appels API peuvent faire l'objet de mises à jour ultérieures.
 >
 
 | **Methode**           | **API** | **Path**                                                                | **Commentaires**                                                |
@@ -127,18 +126,18 @@ Afin d'accéder au KMS OVHcloud, connectez-vous à votre [espace client OVHcloud
 
 Pour commander un nouveau serveur KMS, cliquez sur le bouton `Commander un KMS`{.action}, puis `Sélectionnez une région`{.action} parmi les deux disponibles actuellement :
 
-Vous disposez à ce jour des régions suivantes disponibles :
+Vous disposez à ce jour des régions suivantes :
 
 - `Europe - France Roubaix`{.action}.
 - `Europe - France Strasbourg`{.action}.
 
-Les clés de chiffrement et certificats d’accès de ce KMS seront stockées dans la région indiquée. Ils pourront être utilisés dans tous les produits OVHcloud sans distinction de région.
+Les clés de chiffrement et certificats d’accès de ce KMS seront stockés dans la région indiquée. Ils pourront être utilisés dans tous les produits OVHcloud sans distinction de région.
 
 Une fois votre choix fait, cliquez sur le bouton `Commander`{.action}.
 
 > [!primary]
 > 
-> Si vous n'arrivez pas à completer la commande, relancez là manuellement en cliquant sur [ce lien](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(productId~'okms~planCode~'okms~duration~'P1M~pricingMode~'default~configuration~(~(label~'region~value~'EU_WEST_RBX))))).
+> Si vous n'arrivez pas à completer la commande, relancez-la manuellement en cliquant sur [ce lien](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(productId~'okms~planCode~'okms~duration~'P1M~pricingMode~'default~configuration~(~(label~'region~value~'EU_WEST_RBX))))).
 >
 
 Enfin, cliquez sur `Terminer`{.action} pour finaliser la commande.
@@ -153,10 +152,10 @@ Copiez votre "**ID**" OKMS.
 
 ![Manager KMS Menu](images/manager_okms_copy_id-optim-resize.png){.thumbnail}
 
-L'ID resemble à un **UUID** classique. Il vous sera utile par la suite pour :
+L'ID ressemble à un **UUID** classique. Il vous sera utile par la suite pour :
 
 - Lister vos ressources OKMS.
-- Lister toutes les informations d'accès (credentialId)
+- Lister toutes les informations d'accès (credentialId).
 - Générer le "credentialId" avec votre CSR (le credentialId étant l'ID de la preuve de signature de votre CSR, votre demande de nouvelles informations d'identification d'accès).
 - Lister toutes les clés OKMS.
 
@@ -166,10 +165,10 @@ Vous pouvez consulter [le tableau ci-dessus](#listing-api).
 > 
 > @api {v2} /okms POST /okms/resource/{okmsId}/credential
 >
->
+
 > **Paramètres** :
 >
-> - `okmsId` : L'ID de votre KMS OVHcloud (OKMS).
+> - `okmsId` : l'ID de votre KMS OVHcloud (OKMS).
 >
 
 Nous verrons dans l'étape 3 comment effectuer ces requêtes.
@@ -188,15 +187,15 @@ Pour lister vos commandes KMS OVHcloud, utilisez l'appel API suivant :
 >
 > @api {v2} /okms GET /okms/resource
 >
->
+
 > **Paramètres** :
 >
-> - `okmsId` : L'ID de votre KMS OVHcloud (Okms).
+> - `okmsId` : l'ID de votre KMS OVHcloud (Okms).
 >
 
 Exemple de retour :
 
-```Shell
+```shell
 [
   {
     "id": "Null",
@@ -235,21 +234,21 @@ Pour créer ou Importer un service de gestion de clé KMS, connectez-vous à vot
 
 Rendez-vous ensuite plus bas dans la section `Virtual Machine Encryption Key Management Servers`{.action}.
 
-L'ajout du KMS depuis le [control panel](/links/manager) doit être réalisé en **immédiatement** après l'achat et la livraison de votre KMS OVHcloud. Ceci pour permettre l'autorisation des flux au sein des pare-feux OVHcloud.
+L'ajout du KMS depuis l'[espace client](/links/manager) doit être réalisé en **immédiatement** après l'achat et la livraison de votre KMS OVHcloud. Ceci pour permettre l'autorisation des flux au sein des pare-feux OVHcloud.
 
 ![Manager Hpc Security KMS](images/manager_hpc_kms_add-optimized.png){.thumbnail}
 
-Vous pouvez ajouter votre OKMS depuis le control panel HPC, en cliquant sur `Ajouter un nouveau serveur KMS`{.action}
+Vous pouvez ajouter votre OKMS depuis la section HPC, en cliquant sur `Ajouter un nouveau serveur KMS`{.action}
 
 Dans la nouvelle fenêtre qui s'affiche, remplissez les formulaires suivants :
 
-- **IP** : Privilégiez l'adresse IP, car le nom de domaine ne peut pas être ajouté. Par exemple, utilisez l'adresse IP `137.74.127.152` pour la région de **Strasbourg** et l'adresse IP `91.134.128.102` pour la région de **Roubaix**.
-- **Description** : Saisissez une description pour votre OKMS.
-- **SSL Thumbprint** : Renseignez la Thumbprint SSL/TLS de votre OKMS.
+- **IP** : privilégiez l'adresse IP, car le nom de domaine ne peut pas être ajouté. Par exemple, utilisez l'adresse IP `137.74.127.152` pour la région de **Strasbourg** et l'adresse IP `91.134.128.102` pour la région de **Roubaix**.
+- **Description** : saisissez une description pour votre OKMS.
+- **SSL Thumbprint** : renseignez la Thumbprint SSL/TLS de votre OKMS.
 
-Pour récupérer l'empreinte TLS, Lancer la commande OpenSSL suivante (adapter votre endpoint OKMS avec la bonne région (par exemple : eu-west-rbx/sbg) dont fait partie votre KMS OVHcloud):
+Pour récupérer l'empreinte TLS, lancez la commande OpenSSL suivante (adaptez votre endpoint OKMS avec la bonne région (par exemple : `eu-west-rbx/sbg`) dont fait partie votre KMS OVHcloud) :
 
-```Shell
+```shell
 openssl s_client -connect eu-west-rbx.okms.ovh.net:5696 < /dev/null 2>/dev/null | openssl x509 -fingerprint -noout -in /dev/stdin
 ---
 Retour:
@@ -258,7 +257,7 @@ Retour:
 
 Pour récupérer l'IP publique du serveur KMS OVHcloud, lancez un ping. Par exemple :
 
-```Shell
+```shell
 ping eu-west-rbx.okms.ovh.net
 ```
 
@@ -266,11 +265,11 @@ Il s'agit ici de l'IP du KMS de Roubaix et de son empreinte TLS. Adaptez la comm
 
 ![Manager HPC Security KMS Add 02](images/manager_hpc_kms_add_2-optim-resize.png){.thumbnail}
 
-Vérifiez bien que la confirmation de lecture : **"J’ai lu et j’ai compris la documentation chiffrement de VMs et les actions que je vais devoir effectuer de mon côté"** et bien cochée avant de poursuivre.
+Vérifiez bien que la confirmation de lecture : **"J’ai lu et j’ai compris la documentation chiffrement de VMs et les actions que je vais devoir effectuer de mon côté"** est bien cochée avant de poursuivre.
 
 ![Manager HPC Security KMS Add 02_2](images/manager_hpc_kms_add_2_2.png){.thumbnail}
 
-Attendez que l'ouverture des flux s'effectue et passe le statut en vert `livré`.
+Attendez que l'ouverture des flux s'effectue et passe le statut en `livré` vert.
 
 En parallèle, vérifiez vos droits au sein de IAM. En effet, pour manipuler KMS, vous aurez besoin de droits supplémentaires.
 
@@ -278,7 +277,7 @@ Pour cela, rendez_vous dans l'onglet `Utilisateurs`{.action} de votre vSphere ma
 
 ![Manager HPC Security KMS Add 02](images/manager_users_edit.png){.thumbnail}
 
-Vérifiez que la `gestion du chiffrement`{.action} est activé.
+Vérifiez que la `gestion du chiffrement`{.action} est activée.
 
 ![Manager HPC Security KMS Add 02](images/manager_users_edit_encryption.png){.thumbnail}
 
@@ -298,7 +297,7 @@ Exemple de politique IAM :
 
 #### Via les API OVHcloud (optionnel)
 
-Si vous avez déjà réalisé l'ouverture des flux depuis le [control panel](/links/manager), vous pouvez passer l'appel API suivant (optionnel).
+Si vous avez déjà réalisé l'ouverture des flux depuis l'[espace client](/links/manager), vous pouvez utiliser l'appel API suivant (facultatif).
 
 **Étape d'ouverture des flux** :
 
@@ -309,16 +308,15 @@ Si vous avez déjà réalisé l'ouverture des flux depuis le [control panel](/li
 >
 > **Paramètres** :
 > 
-> - `serviceName` : Saisissez la référence de votre vSphere managé. Exemple : **pcc-XX-XX-XX-XX**.
-> - `description` : Renseignez la description de votre OKMS.
-> - `ip` : Saisissez l'adresse IP publique de votre OKMS.
-> - `sslThumbprint` : Renseignez l'empreinte TLS de votre OKMS.
+> - `serviceName` : saisissez la référence de votre vSphere managé. Exemple : **pcc-XX-XX-XX-XX**.
+> - `description` : renseignez la description de votre OKMS.
+> - `ip` : saisissez l'adresse IP publique de votre OKMS.
+> - `sslThumbprint` : renseignez l'empreinte TLS de votre OKMS.
 > 
 
 Copier-coller (avec les paramètres KMS) :
 
-  
-```Shell
+```shell
 {
 "description": "Okms demo",
 "ip": "91.134.128.102",
@@ -326,9 +324,9 @@ Copier-coller (avec les paramètres KMS) :
 }
 ```
 
-Pour récupérer l'empreinte TLS du KMS, lancer la commande **OpenSSL** suivante en adaptant la commande à la région où se trouve votre KMS :
+Pour récupérer l'empreinte TLS du KMS, lancez la commande **OpenSSL** suivante en adaptant la commande à la région où se trouve votre KMS :
 
-```Shell
+```shell
 openssl s_client -connect eu-west-rbx.okms.ovh.net:5696 < /dev/null 2>/dev/null | openssl x509 -fingerprint -noout -in /dev/stdin
 ---
 Retour:
@@ -337,7 +335,7 @@ Retour:
 
 Pour récupérer l'IP publique du KMS OVHcloud, effectuez un ping en adaptant la commande à la région où se trouve votre KMS :
 
-```Shell
+```shell
 ping eu-west-rbx.okms.ovh.net
 ```
 
@@ -347,27 +345,27 @@ Pour mettre à jour votre KMS avec un KMS OVHcloud :
 >
 > @api {v1} /dedicatedCloud  POST /dedicatedCloud/{serviceName}/vmEncryption/kms/{kmsId}/changeProperties
 >
->
+
 > **Paramètres** :
 >
-> - `kmsId` : Saisissez l'ID de votre serveur OKMS. (Exemple : 350)
-> - `serviceName` : Renseignez le nom de votre vSphere managé. Exemple : pcc-XX-XX-XX-XX.
+> - `kmsId` : saisissez l'ID de votre serveur OKMS. (Exemple : 350)
+> - `serviceName` : renseignez le nom de votre vSphere managé. Exemple : pcc-XX-XX-XX-XX.
 >
 
 Exemple :
 
-```Shell
+```shell
 {
 "description": "Description test",
 "sslThumbprint": "FE:21:E2:DE:B7:51:34:E9:9A:AB:E0:27:FF:1E:42:3A:15:9C:76:47"
 }
-> ```
+```
 
 Retour :
 
 Après exécution de l'API, vous devriez retrouver en réponse le résultat suivant :
 
-```Shell
+```shell
 {
   "kmsId": XXX,
   "kmsTcpPort": 5696,
@@ -378,7 +376,7 @@ Après exécution de l'API, vous devriez retrouver en réponse le résultat suiv
 }
 ```
 
-Attendez (statut : updating) que l'ouverture des flux s'effectue et que le statut passe en état `livré` (optionnel).
+Attendez (statut : updating) que l'ouverture des flux s'effectue et que le statut passe en état `livré` (facultatif).
 
 ![Manager HPC Security KMS Delivered](images/manager_hpc_kms_add_delivered.png){.thumbnail}
 
@@ -390,25 +388,23 @@ Attendez (statut : updating) que l'ouverture des flux s'effectue et que le statu
 
 Pour activer le chiffrement au sein de vSphere, vous devez disposer des droits suffisant au sein de vos ressources KMS et de votre compte OVHcloud.
 
-Si vous n'avez pas déja de politique IAM crée, nous allons en créer une afin de lister les étapes nécessaires.
+Si vous n'avez pas déjà de politique IAM crée, nous allons en créer une afin de lister les étapes nécessaires.
 
-Il faut vous connecter à votre [OVHcloud control panel](/links/manager).
+Il faut vous connecter à votre [espace client OVHcloud](/links/manager).
 
-Aller dans IAM en cliquant en haut à droite sur `Mon compte > mon utilisateur > IAM > Créer une politique`{.action}.
+Rendez-vous dans IAM en cliquant en haut à droite sur `Mon compte > mon utilisateur > IAM > Créer une politique`{.action}.
 
 ![Manager IAM Policy](images/manager_iam-resize-optim.png){.thumbnail}
 
-Ajoutez le nom de votre politique sinon vous ne pourrez pas la créer à la fin.
+Ajoutez le nom de votre politique sinon vous ne pourrez pas la créer à la fin, ainsi qu'une description intelligente de votre stratégie IAM.
 
-Ainsi qu'une description intelligente de votre stratégie IAM.
-
-Dans `Identités`{.action}, ajoutez votre utilisateur local OVHcloud. Celui avec lequel vous avez généré le CSR depuis l'api. En cliquant sur `Ajouter un utilisateur`{.action}.
+Dans `Identités`{.action}, ajoutez votre utilisateur local OVHcloud. Celui avec lequel vous avez généré le CSR depuis l'API. Pour cela, cliquez sur `Ajouter un utilisateur`{.action}.
 
 ![Manager IAM Policy 02](images/manager_iam_2.png){.thumbnail}
 
-Vous devez ensuite, ajouter les actions afin de pouvoir générer les clés pour votre politique de chiffrement vSphere.
+Vous devez ensuite ajouter les actions afin de pouvoir générer les clés pour votre politique de chiffrement vSphere.
 
-Cliquez dans le champ Type de produits, puis ajouter `iam_ressource_type_okms`{.action}
+Cliquez dans le champ « Type de produits », puis ajoutez `iam_ressource_type_okms`{.action}.
 
 Vous pouvez choisir d'ajouter toutes les actions ou filtrer plus finement selon vos besoins utilisateurs.
 
@@ -420,7 +416,7 @@ Pour terminer, cliquez sur `Créer la politique`{.action}.
 
 Votre politique est créée, vous pouvez maintenant activer le chiffrement au sein de PCC en changeant la **"stratégie VM"** de vos machines virtuelles.
 
-Si vous ne disposez d'aucune stratégie préétablie, je vous invite à consulter le control panel API et determiner les IAM actions nécessaires à la politique. Si vous disposez déja d'un politique IAM vous pouvez la modifier et ajouter les actions indispensables. 
+Si vous ne disposez d'aucune stratégie préétablie, consultez l'inteface API et determinez les IAM actions nécessaires à la politique. Si vous disposez déjà d'une politique IAM, vous pouvez la modifier et ajouter les actions indispensables. 
 
 ///
 
@@ -428,13 +424,12 @@ Si vous ne disposez d'aucune stratégie préétablie, je vous invite à consulte
 
 /// details | Comment ajouter le KMS OVHcloud dans votre vSphere managé OVHcloud ?
 
-Après avoir commandé votre OKMS, ouvert les flux au sein de votre vSphere managé OVHcloud. Il ne vous reste plus qu'à configurer l'import au sein de vSphere et installer la relation de confiance entre vCenter et OKMS.
+Après avoir commandé votre OKMS, ouvert les flux au sein de votre vSphere managé OVHcloud, il ne vous reste plus qu'à configurer l'import au sein de vSphere et installer la relation de confiance entre vCenter et OKMS.
 
 > [!tabs]
->
 > **Ajout du KMS à vSphere**
 >>
->> Pour que vCenter puisse truster votre serveur KMS OVHcloud, connectez-vous à votre [control panel](/links/manager), puis allez dans la partie `Hosted Private Cloud`{.action}. Dans la colonne de gauche, cliquez sur `VMware`{.action} et sélectionnez le datacentre concerné.
+>> Pour que vCenter puisse truster votre serveur KMS OVHcloud, connectez-vous à votre [espace client OVHcloud](/links/manager), puis allez dans la partie `Hosted Private Cloud`{.action}. Dans la colonne de gauche, cliquez sur `VMware`{.action} et sélectionnez le datacentre concerné.
 >>
 >> ![Manager HPC General Information Web Interface](images/manager_hpc_vsphere.png){.thumbnail}
 >>
@@ -448,7 +443,7 @@ Après avoir commandé votre OKMS, ouvert les flux au sein de votre vSphere mana
 >>
 >> - `<https://pcc-x.x.x.x.ovh.de/ui/>`
 >> 
->> Connectez-vous avec un **utilisateur local** ou avec **un utilisateur IAM** selon les droits que vous avez mis en place au sein de votre [control panel](/links/manager) et de votre vSphere managé HPC on OVHcloud.
+>> Connectez-vous avec un **utilisateur local** ou avec **un utilisateur IAM** selon les droits que vous avez mis en place au sein de votre [espace client OVHcloud](/links/manager) et de votre vSphere managé HPC on OVHcloud.
 >>
 >> Vous êtes maintenant connecté au sein de votre vSphere managé on OVHcloud.
 >> 
@@ -475,17 +470,15 @@ Après avoir commandé votre OKMS, ouvert les flux au sein de votre vSphere mana
 >>
 >> Patientez quelques minutes le temps que vSphere établisse la connexion avec le fournisseur de clés que vous venez d'ajouter. Vous devriez voir apparaitre un message confirmant que l'ajout a été établi avec succès.
 >>
->
 > **APPROUVER LE KMS** <a name="trust-okms"></a>
->
 >>
 >> > [!primary]
 >> >
 >> > L'approbation entre vCenter et KMS peut être conflictuelle, patientez quelques minutes avant de recommencer ou rafraichissez votre page vSphere avec le bouton en forme de flèche circulaire situé en haut et légèrement à droite.
 >> >
->> > Si ça ne fonctionne toujours pas faite un upload manuel (optionnel).
+>> > Si ça ne fonctionne toujours pas, faites un upload manuel (facultatif).
 >> 
->> Une fois votre KMS ajouté, ajoutez le par défaut si vous avez plusieurs fournisseurs de clés.
+>> Une fois votre KMS ajouté, ajoutez-le par défaut si vous avez plusieurs fournisseurs de clés.
 >> 
 >> Passez sur la partie inférieure `Provider OKMS 1 - Serveurs de gestion de clés` en cliquant sur le petit rond et aussi sur la flèche de droite afin de dérouler et faire apparaitre votre KMS. 
 >> 
@@ -493,7 +486,7 @@ Après avoir commandé votre OKMS, ouvert les flux au sein de votre vSphere mana
 >>
 >> ![TRUST KMS](images/trust_kms.png){.thumbnail}
 >>
->> Ensuite, sur `APPROUVER`{.action}
+>> Ensuite, cliquez sur `APPROUVER`{.action}
 >> 
 >> ![TRUST KMS](images/okms_vsphere_vcenter_trust_kms-optim-resize.png){.thumbnail}
 >>
@@ -503,7 +496,7 @@ Après avoir commandé votre OKMS, ouvert les flux au sein de votre vSphere mana
 >> 
 >> Vous pouvez le récupérer depuis les endpoints fournis avec ce snippet :
 >>
->> ```Shell
+>> ```shell
 >> openssl s_client -showcerts -connect eu-west-rbx.okms.ovh.net:443 </dev/null 2>/dev/null|openssl x509 -outform PEM | python3 -c "
 >> import sys
 >> import json
@@ -518,7 +511,7 @@ Après avoir commandé votre OKMS, ouvert les flux au sein de votre vSphere mana
 >> " | openssl x509 -text; echo $?
 >> ```
 >>
->> Copiez le retour depuis `-----BEGIN CERTIFICATE-----...-----END CERTIFICATE-----` dans votre web interface vSphere managé.
+>> Copiez le retour depuis `-----BEGIN CERTIFICATE-----...-----END CERTIFICATE-----` dans votre interface web vSphere managé.
 >>
 >> Puis cliquez sur `Établir une relation de confiance > Télécharger le certificat KMS`{.action}.
 >>
@@ -528,29 +521,27 @@ Après avoir commandé votre OKMS, ouvert les flux au sein de votre vSphere mana
 >>
 >> ![KMS Key Provider](images/okms_vsphere_upload_kms_cert_2-optim-resize.png){.thumbnail}
 >>
->> Attendez un petit moment et rafraichissez la page web vSphere comme expliqué auparavant. 
->> 
->
+>> Attendez un petit moment et rafraichissez la page web vSphere comme expliqué auparavant.
+>>
 > **APPROUVER L'INSTANCE DE VCENTER (Avec CSR)**
->
 >>
 >> Sélectionnez votre **Fournisseur de clés** KMS (OKMS) que vous venez d'ajouter et cliquez sur le bouton `Approuver l'instance de vCenter`{.action}.
 >>
 >> Nous recommandons la méthode "Avec CSR" (plus sécurisée) en cliquant sur `Nouvelle demande de signature de certificat (CSR)`{.action). Cependant, libre à vous de choisir celle qui vous convient le mieux et qui est compatible avec votre façon de faire.
 >>
->> Pour plus d'information sur les avantages et inconvénients de l'utilisation d'un CSR, lisez la documentation [KMS](/pages/manage_and_operate/kms/quick-start).
+>> Pour plus d'informations sur les avantages et inconvénients de l'utilisation d'un CSR, lisez la documentation [KMS](/pages/manage_and_operate/kms/quick-start).
 >>
 >> **Avec CSR (recommandé)** :
 >>
->> Afin de communiquer avec votre KMS, vous devez créer une demande de signature de certificat d'accès (CSR). Celle-ci sera utilisé pour l'ensemble des interactions avec le KMS OVHcloud et vSphere, que ce soit pour créer des clés de chiffrement ou effectuer des opérations avec ceux-ci.
+>> Afin de communiquer avec votre KMS, vous devez créer une demande de signature de certificat d'accès (CSR). Celle-ci sera utilisée pour l'ensemble des interactions avec le KMS OVHcloud et vSphere, que ce soit pour créer des clés de chiffrement ou effectuer des opérations avec ceux-ci.
 >>
 >> Chaque certificat contient une [identité OVHcloud](/pages/manage_and_operate/iam/identities-management) permettant de calculer les droits d'accès via l'[IAM OVHcloud](/pages/account_and_service_management/account_information/iam-policy-ui).
 >> 
 >> Il est possible de générer ce certificat en fournissant votre propre clé de sécurité privée ("credentialId") via une **"Demande de signature de certificat (CSR)"**.
 >>
->> Une fois que votre KMS est commandé et que vCenter approuve le KMS. Lancez la génération du `CSR` afin que KMS approuve vCenter et signe le CSR.
+>> Une fois que votre KMS est commandé et que vCenter approuve le KMS, lancez la génération du `CSR` afin que KMS approuve vCenter et signe le CSR.
 >>
->> Cliquez sur `APPROUVER L'INSTANCE DE VCENTER`{.action} ou alors `ÉTABLIR UNE RELATION DE CONFIANCE > Faire que KMS approuve vCenter`{.action}
+>> Cliquez sur `APPROUVER L'INSTANCE DE VCENTER`{.action} ou alors `ÉTABLIR UNE RELATION DE CONFIANCE > Faire que KMS approuve vCenter`{.action}.
 >>
 >> Sélectionnez `Nouvelle demande de signature de certificat (CSR)`{.action}, puis copiez ou téléchargez le CSR ci-dessous. Mettez-le à disposition du KMS OVHcloud depuis l'API v2 /okms et demandez à ce dernier de signer le certificat.
 >>
@@ -558,11 +549,11 @@ Après avoir commandé votre OKMS, ouvert les flux au sein de votre vSphere mana
 >>
 >> ![Trust KMS server with CSR](images/kms_trust_vcenter_csr_2.png){.thumbnail}
 >>
->> Copiez votre CSR dans un fichier `csr.pem` afin de pouvoir le faire signer par le KMS OVHcloud (le format n'a pas d'importance sauf si vous souhaitez executer des commandes OpenSSL).
+>> Copiez votre CSR dans un fichier `csr.pem` afin de pouvoir le faire signer par le KMS OVHcloud (le format n'a pas d'importance sauf si vous souhaitez exécuter des commandes OpenSSL).
 >>
 >> Pour formater le CSR en json afin de fonctionner dans la console API OVHcloud, lancez la commande **AWK** ci-dessous :
 >>
->> ```Shell
+>> ```shell
 >> awk '{printf "%s\\n", $0}' csr.pem
 >> ```
 >>
@@ -574,13 +565,13 @@ Après avoir commandé votre OKMS, ouvert les flux au sein de votre vSphere mana
 >> >
 >> > @api {v2} /okms POST /okms/resource/{okmsId}/credential
 >> >
->> >
+>>
 >> > **Paramètres** :
 >> >
 >> > - `okmsId`: ID de votre KMS OVHcloud (OKMS).
 >> > - `Avec CSR fourni` : Chaine de confiance entre OKMS et VCenter avec ou sans CSR.
->> >
->> > ```Shell
+>> 
+>> > ```shell
 >> > {
 >> > "csr": "-----BEGIN CERTIFICATE REQUEST-----\nMIICvDCCAaQCAQAwdzELMAkGA1UEBhMCVVMxDTALBgNVBAgMBFV0YWgxDzANBgNV\nBAcMBkxpbmRvbjEWMBQGA1UECgwNRGlnaUNlcnQgSW5jLjERMA8GA1UECwwIRGln\naUNlcnQxHTAbBgNVBAMMFGV4YW1wbGUuZGlnaWNlcnQuY29tMIIBIjANBgkqhkiG\n9w0BAQEFAAOCAQ8AMIIBCgKCAQEA8+To7d+2kPWeBv/orU3LVbJwDrSQbeKamCmo\nwp5bqDxIwV20zqRb7APUOKYoVEFFOEQs6T6gImnIolhbiH6m4zgZ/CPvWBOkZc+c\n1Po2EmvBz+AD5sBdT5kzGQA6NbWyZGldxRthNLOs1efOhdnWFuhI162qmcflgpiI\nWDuwq4C9f+YkeJhNn9dF5+owm8cOQmDrV8NNdiTqin8q3qYAHHJRW28glJUCZkTZ\nwIaSR6crBQ8TbYNE0dc+Caa3DOIkz1EOsHWzTx+n0zKfqcbgXi4DJx+C1bjptYPR\nBPZL8DAeWuA8ebudVT44yEp82G96/Ggcf7F33xMxe0yc+Xa6owIDAQABoAAwDQYJ\nKoZIhvcNAQEFBQADggEBAB0kcrFccSmFDmxox0Ne01UIqSsDqHgL+XmHTXJwre6D\nhJSZwbvEtOK0G3+dr4Fs11WuUNt5qcLsx5a8uk4G6AKHMzuhLsJ7XZjgmQXGECpY\nQ4mC3yT3ZoCGpIXbw+iP3lmEEXgaQL0Tx5LFl/okKbKYwIqNiyKWOMj7ZR/wxWg/\nZDGRs55xuoeLDJ/ZRFf9bI+IaCUd1YrfYcHIl3G87Av+r49YVwqRDT0VDV7uLgqn\n29XI1PpVUNCPQGn9p/eX6Qo7vpDaPybRtA2R7XLKjQaF9oXWeCUqy1hvJac9QFO2\n97Ob1alpHPoZ7mWiEuJwjBPii6a9M9G30nUo39lBi1w=\n-----END CERTIFICATE REQUEST-----",
 >> > "description": "My user reader credential",
@@ -602,18 +593,19 @@ Après avoir commandé votre OKMS, ouvert les flux au sein de votre vSphere mana
 >> > [!api]
 >> >
 >> > @api v2 /okms GET /okms/resource/{okmsId}/credential/{credentialId}
->> >
+>>
+>>
 >> > **Paramètres** :
 >> >
 >> > - `credentialId` : ID généré lors de votre appel API POST /okms/resource/{okmsId}/credential avec CSR ("fromCSR": true,)
 >> > - `okmsId` : ID de votre KMS OVHcloud.
 >> >
 >>
->> Copier le **"certificatePEM"** (CSR signé) à partir de  `-----BEGIN CERTIFICATE-----...XXX...-----END CERTIFICATE-----`.
+>> Copiez le **"certificatePEM"** (CSR signé) à partir de  `-----BEGIN CERTIFICATE-----...XXX...-----END CERTIFICATE-----`.
 >> 
 >> Lancez ensuite la commande **AWK** ci-dessous pour le formater afin que vSphere puisse le lire :
 >>
->> ```Shell
+>> ```shell
 >>  awk '{gsub(/\\n/,"\n")}1' csr_signé.pem
 >> ```
 >>
@@ -625,7 +617,7 @@ Après avoir commandé votre OKMS, ouvert les flux au sein de votre vSphere mana
 >>
 >> Vérifiez que la connexion a bien été établie en sélectionnant votre fournisseur de clé KMS OVHcloud.
 >>
->> L'option `Connecté` doit être confirmé avec un crochet de validation vert (comme sur la capture ci-dessous)
+>> L'option `Connecté` doit être confirmée avec un crochet de validation vert (comme sur la capture ci-dessous)
 >>
 >> ![Trust KMS server with CSR](images/okms_vsphere_okms_validation.png){.thumbnail}
 >>
@@ -640,9 +632,9 @@ Dans l'étape 6, vous accomplirez la finalisation de l'activation du chiffrement
 
 Cette politique de stockage utilise des règles basées au niveau de l'hôte. Vous devez donc bien avoir activé `Règles basées sur l'hôte`{.action} puis avoir aussi activé les composants de stratégie de stockage. 
 
-Pour créer une politique de stockage, il vous faut accéder au vSphere de votre PCC. Si vous avez suivi les étapes précédentes, vous devez être deja connectez au [control panel](/links/manager). Après avoir ajouté votre KMS OVHcloud dans [l'étape 4](#add-okms).
+Pour créer une politique de stockage, il vous faut accéder au vSphere de votre PCC. Si vous avez suivi les étapes précédentes, vous devez être déjà connecté à l'[espace client OVHcloud](/links/manager), après avoir ajouté votre KMS OVHcloud dans [l'étape 4](#add-okms).
 
-Vous devez maintenant, aller dans `Politiques et profiles > Stratégies de stockage VM`{.action}.
+Vous devez maintenant aller dans `Politiques et profils > Stratégies de stockage VM`{.action}.
 
 ![VM Storage Policies Creation](images/vsphere_vm_policie.png){.thumbnail}
 
@@ -654,9 +646,9 @@ La fenêtre de création de stratégie s'ouvre maintenant, vous êtes à l'étap
 
 Vous devez determiner votre serveur vCenter, qui est le PCC sur lequel vous voulez créer votre stratégie de stockage.
 
-Une fois votre `PCC-XXX-XXX-XXX-XXX.ovh.XX`{.action} choisie, votre `Nom`{.action} et `Description`{.action}.
+Une fois votre `PCC-XXX-XXX-XXX-XXX.ovh.XX`{.action} choisi, donnez un `Nom`{.action} et une `Description`{.action}.
 
-Vous pouvez cliquer sur `SUIVANT`{.action} pour continuer.
+Cliquez sur `SUIVANT`{.action} pour continuer.
 
 ![VM Storage Policies Creation](images/vsphere_vm_policie-optim-resize.png){.thumbnail}
 
@@ -668,9 +660,9 @@ Pour continuer, cliquez sur `SUIVANT`{.action}.
 
 ![VM Storage Policies Creation 02](images/vsphere_vm_policie_2-optim-resize.png){.thumbnail}
 
-Pour l'étape 3, vous devez confirmer les choix de l'étape précédente en activant la validation du composant de stratégie de stockages (le chiffrement).
+Pour l'étape 3, vous devez confirmer les choix de l'étape précédente en activant la validation du composant de stratégie de stockage (le chiffrement).
 
-Nous allons pour les besoins de ce guide, laisser le réglage par défaut `Default encryption properties`{.action}.
+Pour les besoins de ce guide, nous allons laisser le réglage par défaut `Default encryption properties`{.action}.
 
 Vous devez donc cliquer sur `Chiffrement`{.action}.
 
@@ -687,13 +679,13 @@ Pour terminer l'étape 3, cliquez sur `SUIVANT`{.action}.
 
 ![VM Storage Policies Creation 03](images/vsphere_vm_policie_3-optim-resize.png){.thumbnail}
 
-Pour l'étape 4, compatibilité de stockage. Vous avez la compatibilité et l'incompatibilité de votre centre de données (PCC) Hosted Private Cloud VMware on OVHcloud.
+Pour l'étape 4 (compatibilité de stockage), vous avez la compatibilité et l'incompatibilité de votre centre de données (PCC) Hosted Private Cloud VMware on OVHcloud.
 
-Quand vous avez terminé de verifier les compatibilités de votre espace de stockage, cliquez sur `SUIVANT`{action}.
+Quand vous avez terminé de vérifier les compatibilités de votre espace de stockage, cliquez sur `SUIVANT`{action}.
 
 ![VM Storage Policies Creation 04](images/vsphere_vm_policie_4-optim-resize.png){.thumbnail}
 
-Et pour terminer à la dernière étape, l'étape 5, cliquez sur `TERMINER`{.action}.
+Pour terminer la dernière étape (étape 5), cliquez sur `TERMINER`{.action}.
 
 Votre stratégie étant créée, vous pouvez maintenance procéder à l'activation du chiffrement sur une de vos machines virtuelles.
 
@@ -705,16 +697,16 @@ Votre stratégie étant créée, vous pouvez maintenance procéder à l'activati
 
 /// details | Comment activer le chiffrement dans une VM avec la politique de stockage ?
 
-Localisez la machine virtuelle (VM) que vous souhaitez chiffrer. Éteignez là si elle est allumé (obligatoire).
+Localisez la machine virtuelle (VM) que vous souhaitez chiffrer. Éteignez-la si elle est allumée (obligatoire).
 
-Et faites un clic droit sur la machine virtuelle sélectionnée pour afficher le menu contextuel ou cliquez sur `ACTIONS`{.action}. 
+Faites un clic droit sur la machine virtuelle sélectionnée pour afficher le menu contextuel ou cliquez sur `ACTIONS`{.action}. 
 
-Puis, sélectionnez `Stratégies de VM`{.action}.
+Puis sélectionnez `Stratégies de VM`{.action}.
 
-À la suite de ça, choisissez `Modifier les stratégies de stockage VM`{.action}. 
+À la suite de ça, choisissez `Modifier les stratégies de stockage VM`{.action}.
 
 Cela ouvrira une fenêtre ou un panneau où vous pourrez modifier les politiques de stockage de la VM sélectionnée.
- 
+
 ![VM Storage Policies Encryption](images/okms_vsphere_vm_policies-optim-resize.png){.thumbnail}
 
 Recherchez les options de chiffrement ou de sécurité dans les politiques de stockage pour activer le chiffrement KMS pour cette VM.
@@ -722,13 +714,14 @@ Recherchez les options de chiffrement ou de sécurité dans les politiques de st
 ![VM Storage Policies Encryption 03](images/okms_vsphere_vm_policies_3-optim-resize.png){.thumbnail}
 
 Si vous déployez une nouvelle VM depuis un template OVHcloud OVF, vous avez plusieurs choix pour chiffrer votre VM :
+
 - **Thick Provision Lazy Zeroed.**
 - **Thin Provision.**
 - **Thick Provision Eager Zeroed.**
 
-Choisissez celle qui vous convient le mieux, si vous avez un doute, vous pouvez aller voir le guide : [Quel format de disque choisir](/pages/bare_metal_cloud/managed_bare_metal/choosing-disk-type).
+Choisissez celle qui vous convient le mieux. En cas de doute, consultez le guide « [Quel format de disque choisir](/pages/bare_metal_cloud/managed_bare_metal/choosing-disk-type) ».
 
-Et cocher la case `Chiffrer cette VM`{.action}.
+Cochez la case `Chiffrer cette VM`{.action}.
 
 Pour en revenir au cas d'une VM déja existante et éteinte.
 
@@ -736,11 +729,9 @@ Pour en revenir au cas d'une VM déja existante et éteinte.
 
 Après avoir apporté les modifications nécessaires, enregistrez les modifications et fermez la fenêtre.
 
-Vous avez maintenant édité les politiques de stockage de la VM et activer le chiffrement KMS pour votre serveur. Un petit cadenas sur le résumé des informations de votre machine virtuelle le confirme.
+Vous avez maintenant édité les politiques de stockage de la VM et activé le chiffrement KMS pour votre serveur. Un petit cadenas sur le résumé des informations de votre machine virtuelle le confirme.
 
-Et vous constatez bien un petit cadenas dans la vue général de votre VM ainsi que dans la description du chiffrement.
-
-Ceci confirme que votre politique fonctionne avec le serveur OKMS et que le chiffrement est **activé**.
+Le même cadenas est aussi présent dans la vue générale de votre VM ainsi que dans la description du chiffrement., ce qui confirme que votre politique fonctionne avec le serveur OKMS et que le chiffrement est **activé**.
 
 ![VM Storage Policies Encryption Confirmation 04](images/okms_vsphere_vm_policies_4-optim-resize.png){.thumbnail}
 
@@ -754,25 +745,25 @@ Attention quand vous copiez-coller votre CSR, il doit être formaté pour foncti
 
 Des **\n** doivent être ajoutés à chaque saut de ligne. Pour ça vous pouvez lancer cette commande OpenSSL afin de convertir votre certificat en format pkcs12 :
 
-`openssl pkcs12 -export -inkey client.key -in client.crt -out cert_key.p12`{.action}.
+- `openssl pkcs12 -export -inkey client.key -in client.crt -out cert_key.p12`
 
 **CSR decode** :
 
 Pour décoder votre CSR, vous pouvez exécuter cette commande OpenSSL avec votre CSR:
 
-- `openssl req -in mycsr.csr -noout -text`{.action}.
+- `openssl req -in mycsr.csr -noout -text`.
 
-Ou alors utiliser un outil web plus graphique, tel que : [sslshopper](https://www.sslshopper.com/csr-decoder.html).
+Ou alors utiliser un outil web plus graphique, tel que [sslshopper](https://www.sslshopper.com/csr-decoder.html).
 
 **Certificate decode** :
 
-- `openssl x509 -in certificate.crt -text -noout`{.action}.
+- `openssl x509 -in certificate.crt -text -noout`.
 
 **Certificate Key Matcher** :
 
-Afin de verifier si le CSR match votre certificat, vous pouvez le faire avec ces commandes OpenSSL :
+Afin de verifier si le CSR correspond à votre certificat, vous pouvez le faire avec ces commandes OpenSSL :
 
-```Shell
+```shell
 openssl pkey -in privateKey.key -pubout -outform pem | sha256sum
 openssl x509 -in certificate.crt -pubkey -noout -outform pem | sha256sum
 openssl req -in CSR.csr -pubkey -noout -outform pem | sha256sum 
@@ -782,34 +773,34 @@ openssl req -in CSR.csr -pubkey -noout -outform pem | sha256sum
 
 **OpenSSL Convert PEM** :
 
-- Convert PEM to DER : `openssl x509 -outform der -in certificate.pem -out certificate.der`{.action}.
-- Convert PEM to P7B : `openssl crl2pkcs7 -nocrl -certfile certificate.cer -out certificate.p7b -certfile CACert.cer`{.action}.
-- Convert PEM to PFX : `openssl pkcs12 -export -out certificate.pfx -inkey privateKey.key -in certificate.crt -certfile CACert.crt`{.action}.
+- Convert PEM to DER : `openssl x509 -outform der -in certificate.pem -out certificate.der`.
+- Convert PEM to P7B : `openssl crl2pkcs7 -nocrl -certfile certificate.cer -out certificate.p7b -certfile CACert.cer`.
+- Convert PEM to PFX : `openssl pkcs12 -export -out certificate.pfx -inkey privateKey.key -in certificate.crt -certfile CACert.crt`.
 
 **OpenSSL Convert DER**
 
 Convert DER to PEM :
 
-- `openssl x509 -inform der -in certificate.cer -out certificate.pem`{.action}.
+- `openssl x509 -inform der -in certificate.cer -out certificate.pem`.
 
 **OpenSSL Convert P7B** :
 
-- Convert P7B to PEM : `openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer`{.action}.
+- Convert P7B to PEM : `openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer`.
 
 **Convert P7B to PFX** :
 
-- `openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer`{.action}.
-- `openssl pkcs12 -export -in certificate.cer -inkey privateKey.key -out certificate.pfx -certfile CACert.cer`{.action}.
+- `openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer`.
+- `openssl pkcs12 -export -in certificate.cer -inkey privateKey.key -out certificate.pfx -certfile CACert.cer`.
 
 **OpenSSL Convert PFX** :
 
-- Convert PFX to PEM : `openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes`{.action}.
+- Convert PFX to PEM : `openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes`.
 
 #### Formater les CSR pour VMware
 
 Adaptez la commande avec votre fichier CSR.
 
-```Shell
+```shell
 # Formater pour l'OVHcloud api :
 awk '{printf "%s\\n", $0}' file
 
@@ -817,15 +808,15 @@ awk '{printf "%s\\n", $0}' file
 awk '{gsub(/\\n/,"\n")}1' file
 ```
 
-#### Récupérer le certificat public OKMS manuellement (non-obligatoire)
+#### Récupérer le certificat public OKMS manuellement (facultatif)
 
-Si vous rencontrez des difficultés lors de l'étape 4 [Faire que vCenter fasse confiance à KMS](#trust-okms), vous pouvez le télécharger (upload manuellement : copier depuis un shell le retour snippet et le coller dans l'interface web vSphere "Télécharger le certificat KMS").
+Si vous rencontrez des difficultés lors de l'étape 4 ([faire en sorte que vCenter fasse confiance à KMS](#trust-okms)), vous pouvez le télécharger manuellement : copiez depuis un shell le retour snippet et collez-le dans l'interface web vSphere "Télécharger le certificat KMS".
 
-Vous pouvez lancer ce snippet (il faut avoir python et OpenSSL d'installé). Il permet d'exporter et formater le certificat public OKMS.
+Vous pouvez lancer ce snippet (il faut avoir python et OpenSSL installés). Il permet d'exporter et formater le certificat public OKMS.
 
-Changez l'input OKMS avec l'url de la bone région. Vous devez avoir Python et OpenSSL installé :
+Changez l'input OKMS avec l'URL de la bone région.
 
-```Shell
+```shell
 openssl s_client -showcerts -connect eu-west-rbx.okms.ovh.net:443 </dev/null 2>/dev/null|openssl x509 -outform PEM | python3 -c "
 import sys
 import json
@@ -842,6 +833,8 @@ print(body['cert'])
 
 ///
 
-## Allez plus loin
+## Aller plus loin <a name="go-further"></a>
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre Technical Account Manager ou [rendez-vous ici](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
