@@ -16,7 +16,7 @@ This tutorial will show you how to automate some actions on S3 Object Storage wi
 
 - Have terraform command line installed (see this [tutorial](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli) from Hashicorp, the company behind Terraform). 
 - Have git command line installed
-- You will need to have set up an account to interact with the OVHcloud API (see this [tutorial](/pages/manage_and_operate/api/first-steps)). From the application keys created, you will need to export the 4 environment variables :
+- You will need to have set up an account to interact with the OVHcloud API (see this [tutorial](/pages/manage_and_operate/api/first-steps)): depending on your needs in terms of permissions (http verbs PUT/GET/POST/DELETE), enter the route “/cloud/project/{serviceName}/region/{regionName}/storage/*” to target S3 object storage where *{serviceName}* corresponds to your public cloud project id and *{regionName}* corresponds to the region where your resources will be located. From the application keys created, you will need to export the 4 environment variables :
 
 ```bash
 $ export OVH_ENDPOINT=ovh-eu
