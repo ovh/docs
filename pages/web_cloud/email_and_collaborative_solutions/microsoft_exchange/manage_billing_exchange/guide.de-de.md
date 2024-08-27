@@ -1,7 +1,7 @@
 ---
 title: 'Die Abrechnung für Ihre Exchange Accounts verwalten'
 excerpt: 'Erfahren Sie hier, wie Sie die Abrechnung für OVHcloud Exchange im Kundencenter verwalten'
-updated: 2020-04-20
+updated: 2024-08-27
 ---
 
 ## Ziel
@@ -12,14 +12,14 @@ Die Dienste Hosted Exchange und Private Exchange bieten hinsichtlich der Abrechn
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie haben bereits einen [OVHcloud Exchange](https://www.ovhcloud.com/de/emails/) Dienst eingerichtet.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+- Sie haben bereits einen [OVHcloud Exchange](/web/emails-hosted-exchange) Dienst eingerichtet.
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie unter `Microsoft`{.action} und `Exchange`{.action} Ihren Exchange Dienst aus.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und wählen Sie unter `Microsoft`{.action} und `Exchange`{.action} Ihren Exchange Dienst aus.
 
-### Hosted Exchange 
+### Hosted Exchange
 
 #### Zusätzliche Accounts bestellen
 
@@ -39,7 +39,7 @@ Klicken Sie in der Tabelle auf `...`{.action} und danach auf `Abrechnung bearbei
 
 ![billing_exchange](images/billing-exchange-02.png){.thumbnail}
 
-In der neuen Ansicht können Sie die Abrechnungsintervalle für jeden Ihrer Accounts anzeigen und ändern. Es ist möglich, Änderungen in der Spalte „**Verlängerung**“ bei einem oder mehreren Accounts gleichzeitig vorzunehmen. Jede Änderung an einem Account wird an dem Datum wirksam, das in der Spalte „**Ablaufdatum**“ angegeben ist. 
+In der neuen Ansicht können Sie die Abrechnungsintervalle für jeden Ihrer Accounts anzeigen und ändern. Es ist möglich, Änderungen in der Spalte „**Verlängerung**“ bei einem oder mehreren Accounts gleichzeitig vorzunehmen. Jede Änderung an einem Account wird an dem Datum wirksam, das in der Spalte „**Ablaufdatum**“ angegeben ist.
 
 Im folgenden Beispiel sind die notwendigen Schritte aufgeführt, um einen Acccount auf die monatliche Verlängerung einzustellen:
 
@@ -51,7 +51,7 @@ Im folgenden Beispiel sind die notwendigen Schritte aufgeführt, um einen Acccou
 
 #### Accounts entfernen
 
-Um einen Account von der Hosted Exchange Plattform zu löschen, müssen Sie ihn zunächst kündigen, indem Sie die Konfiguration für die Verlängerung auf „**Zum Ablaufdatum schließen**“ ändern. Informationen hierzu finden Sie im Abschnitt [Den Verlängerungszeitraum Ihrer Accounts ändern](./#den-verlngerungszeitraum-ihrer-accounts-ndern).
+Um einen Account von der Hosted Exchange Plattform zu löschen, müssen Sie ihn zunächst kündigen, indem Sie die Konfiguration für die Verlängerung auf „**Zum Ablaufdatum schließen**“ ändern. Informationen hierzu finden Sie im Abschnitt [Den Verlängerungszeitraum Ihrer Accounts ändern](#periodicity).
 
 Hiernach wird der Account am Ablaufdatum gesperrt. Wenn Sie die vom Account verwendete E-Mail-Adresse vor dem Ablaufdatum löschen möchten (etwa, weil diese Adresse direkt weiter verwendet werden soll), setzen Sie noch den Account zurück.
 
@@ -71,10 +71,18 @@ Gehen Sie auf den Tab `E-Mail-Accounts`{.action}. Klicken Sie dann links auf den
 
 #### Accounts entfernen
 
+> [!warning]
+>
+> Um einen E-Mail-Account auf einer Private Exchange Plattform löschen zu können, **muss dieser konfiguriert worden sein** (verbunden mit einem Domainnamen Ihrer Exchange Plattform). Ein unkonfigurierter Account kann nicht gelöscht werden.
+
 Gehen Sie auf den Tab `E-Mail-Accounts`{.action}. Klicken Sie auf `...`{.action} rechts des betreffenden Accounts und schließlich auf `Löschen`{.action}. Der Account wird sofort von der Plattform gelöscht; es erfolgt keine Kündigung.
 
 ![billing_exchange](images/billing-exchange-07.png){.thumbnail}
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
+
+Treten Sie unserer [User Community](/links/community) bei.

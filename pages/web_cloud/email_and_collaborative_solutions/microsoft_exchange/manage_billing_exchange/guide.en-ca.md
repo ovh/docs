@@ -1,7 +1,7 @@
 ---
 title: 'Managing the billing for Exchange accounts'
 excerpt: 'Find out how to manage the billing for your Exchange service'
-updated: 2020-04-20
+updated: 2024-08-27
 ---
 
 ## Objective
@@ -12,14 +12,14 @@ The Hosted Exchange and Private Exchange services offer flexible management for 
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}
-- a subscription to an [Exchange](https://www.ovhcloud.com/en-ca/emails/hosted-exchange/){.external} solution
+- access to the [OVHcloud Control Panel](/links/manager).
+- a subscription to an [Exchange](/web/emails-hosted-exchange) solution.
 
 ## Instructions
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) and select `Web Cloud`{.action}. Click `Microsoft`{.action}, then `Exchange`{.action}. Next, select the Exchange service concerned.
+Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action}. Click `Microsoft`{.action}, then `Exchange`{.action}. Next, select the Exchange service concerned.
 
-### Hosted Exchange 
+### Hosted Exchange
 
 #### Ordering additional accounts
 
@@ -29,7 +29,7 @@ Go to the `Email accounts`{.action} tab, then click on the `Actions`{.action} bu
 
 #### Changing the renewal frequency for your accounts <a name="periodicity"></a>
 
-In the window for managing your Exchange platform, click on the `Actions`{.action} button in the top right-hand corner, then click `Renewal configuration`{.action}. 
+In the window for managing your Exchange platform, click on the `Actions`{.action} button in the top right-hand corner, then click `Renewal configuration`{.action}.
 
 ![billing_exchange](images/billing-exchange-01.png){.thumbnail}
 
@@ -39,7 +39,7 @@ Click `...`{.action} to the right of the Exchange platform, then `Modify billing
 
 ![billing_exchange](images/billing-exchange-02.png){.thumbnail}
 
-In this new window, you can view and modify the billing for each of your accounts. You can make changes via the **Renewal** column for one or more accounts at once. Each modification on an account will be applied on the date listed in the **Expiry** column. 
+In this new window, you can view and modify the billing for each of your accounts. You can make changes via the **Renewal** column for one or more accounts at once. Each modification on an account will be applied on the date listed in the **Expiry** column.
 
 In the example below, you will see the actions you need to take in order to set an account to monthly renewal:
 
@@ -51,7 +51,7 @@ In the example below, you will see the actions you need to take in order to set 
 
 #### Deleting accounts
 
-To delete an account on your Hosted Exchange platform, you will need to cancel it by setting its renewal configuration to **Cancel on expiry**. To do this, refer to the step on [changing the renewal frequency for your accounts](./#change-the-renewal-frequency-for-your-accounts){.external}.
+To delete an account on your Hosted Exchange platform, you will need to cancel it by setting its renewal configuration to **Cancel on expiry**. To do this, refer to the step on [changing the renewal frequency for your accounts](#periodicity).
 
 Once you have cancelled it, the account will be suspended on its expiry date. If you would like to delete the email address hosted by the account before its expiry date, you can reset it.
 
@@ -70,6 +70,10 @@ Go to the `Email accounts`{.action} tab, then click on the `Actions`{.action} bu
 ![billing_exchange](images/billing-exchange-06.png){.thumbnail}
 
 #### Deleting accounts
+
+> [!warning]
+>
+> To delete an email account on a Private Exchange platform, **it is necessary that it has been created** (attached to a domain name on your Exchange platform). An unconfigured account cannot be deleted.
 
 In the `Email accounts`{.action} tab, click `...`{.action} to the right of the account concerned, then click `Delete`{.action}. The account will be immediately removed from the platform, and you will not need to cancel it.
 
