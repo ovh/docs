@@ -80,7 +80,7 @@ Vous devrez ensuite compléter les informations demandées. Attention, cette gri
 |Nom de l'instance (*Instance name*)|Spécifiez le nom souhaité pour l'instance qui sera lancée.|
 |Description|Facultatif. Ajoutez une description si nécessaire.|
 |Zone de disponibilité (*Availability zone*)|Laissez « nova » (choix par défaut).|
-|Nombre|Spécifier le nombre d'instances à créer.|
+|Nombre|Spécifiez le nombre d'instances à créer.|
 
 **Source**
 
