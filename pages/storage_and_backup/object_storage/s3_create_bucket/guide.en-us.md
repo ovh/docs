@@ -28,7 +28,7 @@ To create an Object Storage bucket, first log in to your [OVHcloud Control Panel
 
 Click `Create Object Container`{.action} and select your storage class:
 
-![Select your solution](images/highperf-create-container-20220928081750384.png)
+![Select your solution](images/highperf-create-container-20240827.png)
 
 Select a region:
 
