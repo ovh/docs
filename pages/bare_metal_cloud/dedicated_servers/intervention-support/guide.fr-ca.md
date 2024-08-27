@@ -145,13 +145,15 @@ root@rescue:~# mount /dev/my_system_disk /mnt
 ```
 
 3\. Vérifiez le fichier de configuration `/mnt/etc/sysconfig/network-scripts/ifcfg-eth0`.
+
 4\. Sauvegardez les fichiers et éditez-les afin de corriger l'adresse MAC :
 
 ```bash
 root@rescue:~# cp /mnt/etc/sysconfig/network-scripts/ifcfg-eth0 /mnt/etc/sysconfig/network-scripts/ifcfg-eth0.`date +%s`
 ```
 
-5\. Renseignez la nouvelle adresse MAC à la ligne `HWADDR=xx.xx.xx.xx.xx.xx`.
+5\. Renseignez la nouvelle adresse MAC à la ligne `HWADDR=xx:xx:xx:xx:xx:xx`.
+
 6\. N'oubliez pas de démonter la partition `/` avant de redémarrer le serveur.
 
 <a name="smartos"></a>
