@@ -274,7 +274,7 @@ This configuration is more flexible. You do not need to associate an Additional 
 * You must have reserved a public block of IP addresses in your account, with a minimum of four addresses. The block must be pointed to the vRack.
 * Prepare your chosen range of private IP addresses.
 * You must have a [server compatible with vRack](/links/bare-metal/bare-metal).
-* Activate a [vRack service](https://www.ovhcloud.com/en-sg/network/vrack/).
+* Activate a [vRack service](/links/network/vrack).
 * You must be logged in to the [OVHcloud Control Panel](/links/manager).
 
 #### Target configuration schema

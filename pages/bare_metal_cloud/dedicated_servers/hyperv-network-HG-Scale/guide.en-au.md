@@ -247,7 +247,7 @@ network:
 - A public block of IP addresses in your account, with a minimum of four addresses
 - Your chosen private IP address range
 - A [vRack compatible server](/links/bare-metal/bare-metal){.external}
-- A [vRack](https://www.ovhcloud.com/en-au/network/vrack/){.external} service activated in your account
+- A [vRack](/links/network/vrack){.external} service activated in your account
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 #### Explanations
