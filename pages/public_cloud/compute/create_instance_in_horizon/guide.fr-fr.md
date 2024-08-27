@@ -107,7 +107,7 @@ Des *flavors* pré-construites sont disponibles pour vous, sélectionnez la *fla
 
 |Informations|Détails|
 |---|---|
-|Réseau (*Network*)|Sélectionnez le(s) réseau(x) de l'Instance que vous souhaitez créer dans la liste des réseaux disponibles.|
+|Réseau (*Network*)|Sélectionnez, dans la liste des réseaux disponibles, le(s) réseau(x) pour l'Instance que vous souhaitez créer |
 |Ext-Net|Représente le réseau public.|
 |Mynewnetwork|Représente le réseau privé créé au début de ce guide.|
 
