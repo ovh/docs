@@ -1,7 +1,7 @@
 ---
 title: 'Zarządzanie fakturowaniem kont Exchange'
 excerpt: 'Dowiedz się, jak zarządzać fakturowaniem usługi Exchange'
-updated: 2024-08-26
+updated: 2024-08-27
 ---
 
 ## Wprowadzenie
@@ -51,7 +51,7 @@ Poniższy przykład zawiera działania, które należy przeprowadzić, aby przej
 
 #### Usuwanie kont
 
-Aby usunąć konto z usługi Hosted, należy najpierw zrezygnować z niego, przechodząc procedurę konfiguracji jego odnawiania w sekcji „**Wygasa z końcem**”. W tym celu należy zapoznać się z etapem [„zmiana częstotliwości odnawiania kont”](./#modifier-la-periodicite-de-vos-comptes).
+Aby usunąć konto z usługi Hosted, należy najpierw zrezygnować z niego, przechodząc procedurę konfiguracji jego odnawiania w sekcji „**Wygasa z końcem**”. W tym celu należy zapoznać się z etapem [„zmiana częstotliwości odnawiania kont”](#periodicity).
 
 Po rezygnacji konto będzie zawieszone do daty wygaśnięcia. Jeśli chcesz usunąć adres e-mail obsługiwany na koncie przed jego datą wygaśnięcia, należy go zresetować.
 

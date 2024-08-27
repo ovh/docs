@@ -1,7 +1,7 @@
 ---
 title: 'Gérer la facturation de vos comptes Exchange'
 excerpt: 'Découvrez comment gérer la facturation de votre service Exchange'
-updated: 2024-08-26
+updated: 2024-08-27
 ---
 
 ## Objectif
@@ -17,7 +17,7 @@ Les services Hosted Exchange et Private Exchange disposent d'une gestion flexibl
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager) et dirigez-vous dans la section `Webcloud`{.action}. Cliquez sur `Microsoft`{.action} puis sur `Exchange`{.action} et sélectionnez la plateforme Exchange concernée.
+Connectez-vous à votre [espace client OVHcloud](/links/manager) et dirigez-vous dans la section `Web Cloud`{.action}. Cliquez sur `Microsoft`{.action} puis sur `Exchange`{.action} et sélectionnez la plateforme Exchange concernée.
 
 ### Hosted Exchange
 
@@ -51,7 +51,7 @@ Dans l'exemple ci-dessous, voici les actions à mener pour passer un compte en r
 
 #### Supprimer des comptes
 
-Pour supprimer un compte de votre plateforme Hosted, il faut d'abord le résilier en passant la configuration de son renouvellement sur « **Expire au terme** ». Pour cela consultez l'étape [« modifier la périodicité de vos comptes »](./#modifier-la-periodicite-de-vos-comptes).
+Pour supprimer un compte de votre plateforme Hosted, il faut d'abord le résilier en passant la configuration de son renouvellement sur « **Expire au terme** ». Pour faire cela consultez l'étape [« modifier la périodicité de vos comptes »](#periodicity).
 
 Après résiliation, le compte sera suspendu à sa date d'expiration. Si vous souhaitez supprimer l'adresse e-mail hébergée par le compte avant sa date d'expiration, réinitialisez celui-ci.
 

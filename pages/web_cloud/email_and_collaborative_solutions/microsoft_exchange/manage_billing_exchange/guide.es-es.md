@@ -1,7 +1,7 @@
 ---
 title: 'Gestionar la facturación de sus cuentas Exchange'
 excerpt: 'Cómo gestionar la facturación de un servicio Exchange'
-updated: 2024-08-26
+updated: 2024-08-27
 ---
 
 ## Objetivo
@@ -49,7 +49,7 @@ En el ejemplo a continuación, se indican las acciones que se deben realizar par
 
 #### Eliminar cuentas
 
-Para eliminar una cuenta de su plataforma Hosted, primero la debe dar de baja estableciendo su configuración de renovación en «**Expira al término**». Para ello, consulte el paso [«cambiar la periodicidad de sus cuentas»](./#cambiar-la-periodicidad-de-sus-cuentas).
+Para eliminar una cuenta de su plataforma Hosted, primero la debe dar de baja estableciendo su configuración de renovación en «**Expira al término**». Para hacer esto, consulte el paso [«cambiar la periodicidad de sus cuentas»](#periodicity).
 
 Una vez dada de baja la cuenta, se suspenderá en su fecha de expiración. Si quiere eliminar la dirección de correo electrónico alojada por la cuenta antes de su fecha de expiración, reiníciela.
 

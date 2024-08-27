@@ -1,7 +1,7 @@
 ---
 title: 'Gestire la fatturazione di un account Exchange'
 excerpt: 'Come effettuare le diverse azioni relative alla fatturazione del tuo servizio Exchange'
-updated: 2024-08-26
+updated: 2024-08-27
 ---
 
 ## Obiettivo
@@ -51,7 +51,7 @@ L’esempio che segue, ti mostra le operazioni da effettuare per passare a un ri
 
 #### Elimina account
 
-Per eliminare un account dalla tua piattaforma Hosted, è necessario, innanzitutto, disattivare l’account, modificando la sua configurazione di rinnovo in “**Annulla alla scadenza**”. Per farlo, consulta lo Step [“modifica la frequenza di rinnovo dei tuoi account.”](./#modifica-la-frequenza-di-rinnovo-dei-tuoi-account)
+Per eliminare un account dalla tua piattaforma Hosted, è necessario, innanzitutto, disattivare l’account, modificando la sua configurazione di rinnovo in “**Annulla alla scadenza**”. Per farlo, consulta lo Step [“modifica la frequenza di rinnovo dei tuoi account.”](#periodicity).
 
 Una volta disattivato, il tuo account sarà sospeso alla data di scadenza. Per eliminare l’indirizzo email ospitato dall’account prima della data di scadenza, è necessario ripristinarlo.
 

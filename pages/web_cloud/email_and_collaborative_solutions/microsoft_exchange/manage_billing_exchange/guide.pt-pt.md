@@ -1,7 +1,7 @@
 ---
 title: 'Gerir a faturação das contas Exchange'
 excerpt: 'Saiba como gerir a faturação do serviço Exchange.'
-updated: 2024-08-26
+updated: 2024-08-27
 ---
 
 ## Objetivo
@@ -51,7 +51,7 @@ No exemplo abaixo, eis as ações a realizar para fazer uma conta passar para re
 
 #### Eliminar contas
 
-Para eliminar uma conta da plataforma Hosted, primeiro tem de a cancelar alterando a configuração da renovação para «**Expiração no termo**». Para isso, consulte a etapa [«Alterar a periodicidade das contas»](./#alterar-a-periodicidade-das-contas).
+Para eliminar uma conta da plataforma Hosted, primeiro tem de a cancelar alterando a configuração da renovação para «**Expiração no termo**». Para isso, consulte a etapa [«Alterar a periodicidade das contas»](#periodicity).
 
 Após o cancelamento, a conta será suspensa na data de expiração. Se deseja eliminar o endereço de e-mail alojado pela conta antes da data de expiração, tem de o restaurar.
 
@@ -75,7 +75,7 @@ Clique no separador `Contas de e-mail`{.action} e, depois, no botão `Ações`{.
 >
 > Para poder eliminar uma conta de e-mail numa plataforma Private Exchange, **é necessário que esta tenha sido criada** (associada a um domínio da sua plataforma Exchange). Uma conta não configurada não pode ser eliminada.
 
-No separador `Contas de e-mail`{.action}, clique em `...`{.action} à direita da conta em causa e, a seguir, clique em `Eliminar`{.action}.  A conta será imediatamente retirada da plataforma, pelo que não haverá nenhum cancelamento a realizar.
+No separador `Contas de e-mail`{.action}, clique em `...`{.action} à direita da conta em causa e, a seguir, clique em `Eliminar`{.action}. A conta será imediatamente retirada da plataforma, pelo que não haverá nenhum cancelamento a realizar.
 
 ![billing_exchange](images/billing-exchange-07.png){.thumbnail}
 

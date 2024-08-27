@@ -1,7 +1,7 @@
 ---
 title: 'Managing the billing for Exchange accounts'
 excerpt: 'Find out how to manage the billing for your Exchange service'
-updated: 2024-08-26
+updated: 2024-08-27
 ---
 
 ## Objective
@@ -51,7 +51,7 @@ In the example below, you will see the actions you need to take in order to set 
 
 #### Deleting accounts
 
-To delete an account on your Hosted Exchange platform, you will need to cancel it by setting its renewal configuration to **Cancel on expiry**. To do this, refer to the step on [changing the renewal frequency for your accounts](./#change-the-renewal-frequency-for-your-accounts).
+To delete an account on your Hosted Exchange platform, you will need to cancel it by setting its renewal configuration to **Cancel on expiry**. To do this, refer to the step on [changing the renewal frequency for your accounts](#periodicity).
 
 Once you have cancelled it, the account will be suspended on its expiry date. If you would like to delete the email address hosted by the account before its expiry date, you can reset it.
 

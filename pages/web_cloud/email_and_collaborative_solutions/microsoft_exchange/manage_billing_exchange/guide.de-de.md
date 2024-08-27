@@ -1,7 +1,7 @@
 ---
 title: 'Die Abrechnung für Ihre Exchange Accounts verwalten'
 excerpt: 'Erfahren Sie hier, wie Sie die Abrechnung für OVHcloud Exchange im Kundencenter verwalten'
-updated: 2024-08-26
+updated: 2024-08-27
 ---
 
 ## Ziel
@@ -19,7 +19,7 @@ Die Dienste Hosted Exchange und Private Exchange bieten hinsichtlich der Abrechn
 
 Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und wählen Sie unter `Microsoft`{.action} und `Exchange`{.action} Ihren Exchange Dienst aus.
 
-### Hosted Exchange 
+### Hosted Exchange
 
 #### Zusätzliche Accounts bestellen
 
@@ -51,7 +51,7 @@ Im folgenden Beispiel sind die notwendigen Schritte aufgeführt, um einen Acccou
 
 #### Accounts entfernen
 
-Um einen Account von der Hosted Exchange Plattform zu löschen, müssen Sie ihn zunächst kündigen, indem Sie die Konfiguration für die Verlängerung auf „**Zum Ablaufdatum schließen**“ ändern. Informationen hierzu finden Sie im Abschnitt [Den Verlängerungszeitraum Ihrer Accounts ändern](./#den-verlngerungszeitraum-ihrer-accounts-ndern).
+Um einen Account von der Hosted Exchange Plattform zu löschen, müssen Sie ihn zunächst kündigen, indem Sie die Konfiguration für die Verlängerung auf „**Zum Ablaufdatum schließen**“ ändern. Informationen hierzu finden Sie im Abschnitt [Den Verlängerungszeitraum Ihrer Accounts ändern](#periodicity).
 
 Hiernach wird der Account am Ablaufdatum gesperrt. Wenn Sie die vom Account verwendete E-Mail-Adresse vor dem Ablaufdatum löschen möchten (etwa, weil diese Adresse direkt weiter verwendet werden soll), setzen Sie noch den Account zurück.
 
