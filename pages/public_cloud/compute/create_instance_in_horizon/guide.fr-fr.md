@@ -1,7 +1,7 @@
 ---
 title: "Créer une instance depuis l'interface Horizon"
 excerpt: "Apprenez à créer une instance depuis l'interface Horizon"
-updated: 2024-08-22
+updated: 2024-08-26
 ---
 
 ## Objectif
@@ -23,7 +23,7 @@ En règle générale, nous vous recommandons de créer un réseau privé avant d
 
 Pour commencer, connectez-vous à l'interface Horizon. Si vous avez besoin d'aide pour réaliser cette manipulation, reportez-vous à [notre documentation](/pages/public_cloud/compute/introducing_horizon).
 
-Cliquez ensuite sur `Network`{.action} dans le menu de gauche, puis `Networks`{.action}.
+Cliquez ensuite sur `Network`{.action} dans le menu de gauche, puis sur `Networks`{.action}.
 
 ![network](images/create-network.png){.thumbnail}
 
@@ -79,7 +79,7 @@ Vous devrez ensuite compléter les informations demandées. Attention, cette gri
 |---|---|
 |Nom de l'instance (*Instance name*)|Spécifiez le nom souhaité pour l'instance qui sera lancée.|
 |Description|Facultatif. Définissez une description, le cas échéant.|
-|Zone de disponibilité|Laisser « nova » (choix par défaut).|
+|Zone de disponibilité (*Availability zone*)|Laisser « nova » (choix par défaut).|
 |Nombre|Spécifier le nombre d'instances à créer.|
 
 **Source**
@@ -167,11 +167,11 @@ Attention, ces options ne sont pas obligatoires pour la création d'une instance
 
 |Informations|Détails|
 |---|---|
-|Custom script source|Spécifiez la source entre une « direct entry » ou un « file ».|
-|Script data|Entrez le code de script dans le champ d'entrée (16 Ko maximum).|
-|Script file|Cliquez sur `Browse`{.action} to select the post-installation script.|
-|Disk partitioning|Choisissez entre "automatic" et "manual".|
-|Configuration disk|Configurez OpenStack pour écrire des métadonnées sur un disque de configuration spécifique qui sera attaché à l'Instance au lancement.|
+|Custom script source (*Source de script personnalisé*)|Spécifiez la source entre une « direct entry » ou un « file ».|
+|Script data (*Données de script*)|Entrez le code de script dans le champ d'entrée (16 Ko maximum).|
+|Script file (*Fichier de script*)|Cliquez sur `Browse`{.action} to select the post-installation script.|
+|Disk partitioning (*Partitionnement des disques*)|Choisissez entre "automatic" et "manual".|
+|Configuration disk (*Disque de configuration*)|Configurez OpenStack pour écrire des métadonnées sur un disque de configuration spécifique qui sera attaché à l'Instance au lancement.|
 
 ## Aller plus loin
 
