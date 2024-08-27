@@ -1,7 +1,7 @@
 ---
 title: 'Finalise a maintenance intervention on your dedicated server'
 excerpt: "Find out what actions you can carry out yourself on your server following a maintenance intervention"
-updated: 2024-01-15
+updated: 2024-08-27
 ---
 
 ## Objective
@@ -14,7 +14,7 @@ Its goal is to support you and ensure that there is as little impact as possible
 
 ## Requirements
 
-- A [dedicated server](https://www.ovhcloud.com/en-ie/bare-metal/) in your OVHcloud account
+- A [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account
 
 ## Instructions
 
@@ -32,7 +32,7 @@ Continue reading this guide by clicking on the link for your installation:
     - [FreeBSD](#freebsd)
     - [Gentoo](#gentoo)
 - Virtualisation
-    - [Proxmox](#proxmox)
+    - [Proxmox/Debian](#proxmox)
     - [XenServer](#xenserver)
     - [ESXi](#esxi)
     - [Windows (hyper-V)](#windows)
@@ -44,7 +44,8 @@ Continue reading this guide by clicking on the link for your installation:
 
 <a name="ubuntu"></a>
 
-### Ubuntu 
+### Ubuntu
+
 If you are experiencing network connectivity issues (for example, no ping after a motherboard replacement), perform the following steps:
 
 1\. Reboot the server in [rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).<br>
@@ -463,7 +464,7 @@ root@rescue:~#
 
 <a name="proxmox"></a>
 
-### Proxmox
+### Proxmox/Debian
 
 If you are experiencing network connectivity issues (for example, no ping after a motherboard replacement), this may be related to an error during system startup caused by the old MAC address value still present:
 
@@ -902,5 +903,5 @@ The image below is a summary of the actions mentioned above:
 ![select_efi](images/select_efi-v2.gif){.thumbnail}
 
 ## Go further <a name="go-further"></a>
-  
+
 Join our [community of users](/links/community).
