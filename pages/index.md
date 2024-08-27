@@ -325,7 +325,7 @@
             + [Migrating a PCC to Hosted Private Cloud](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/service-migration)
             + [Migrating an infrastructure to a new vDC](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/service-migration-vdc)
             + [Responsibility sharing for the VMware on OVHcloud service](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/responsibility-sharing)
-            + [Getting started with Terraform](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_terraform)
+            + [Terraform - Getting started on managed VMware on OVHcloud](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_terraform)
         + [VMware Cloud Director](hosted-private-cloud-hosted-private-cloud-powered-by-vmware-vcd)
             + [VMware Cloud Director - Concepts](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts)
             + [VMware Cloud Director - FAQ](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-faq)

@@ -1,7 +1,7 @@
 ---
-title: "Terraform - Premiers pas avec VMware"
-excerpt: "Ce guide fournit les premieres instructions pour l'utilisation de Terraform (modules et providers) dans un écosystem Hosted Private Cloud VMware on OVHcloud"
-updated: 2024-08-15
+title: "Terraform - Premiers pas avec VMware managé on OVHcloud"
+excerpt: "Ce guide fournit les premieres instructions pour l'utilisation de Terraform avec un bucket S3 ainsi que le module SAP et le provider Docker dans un écosystem Hosted Private Cloud VMware managé on OVHcloud"
+updated: 2024-08-27
 ---
 <style>
 details>summary {
@@ -31,13 +31,13 @@ details[open]>summary::before {
 - Posséder une offre Hosted Private Cloud VMware on OVHcloud.
 - Configurer un accès avec utilisateur Terraform ou un utilisateur unique (à sécuriser avec sudo au sein de Terraform).
 - Le binaire Terraform (version >= 1.4).
-- Un bucket S3 Object storage OVHcloud pour stocker le state Terraform avec les bon droits utilisateurs pour Terraform et le bucket.
-- Le provider Terraform VMware vSphere (<https://registry.terraform.io/providers/hashicorp/vsphere/latest/docs>) 
+- Un bucket S3 Object storage OVHcloud pour stocker le state Terraform avec les bons droits utilisateurs pour Terraform et le bucket.
+- Le provider Terraform VMware vSphere (https://registry.terraform.io/providers/hashicorp/vsphere/latest/docs) (obligatoire) 
 - Un endpoint `https://nsxt` si vous voulez utiliser NSX-T avec Terraform au sein de OVHcloud (endpoint configuré par défaut avec toutes les offres NSX HPC). En effet L’API NSX est indépendante et non liée à l’API vSphere. C'est pourquoi nous avons créé un endpoint dédié pour l'atteindre.
-- le module Terraform [SAP OVHcloud](<https://github.com/ovh/terraform-vsphere-sap-application-server/tree/master/examples/>).
-- Le provider Docker [Kreuzwerker](<https://registry.terraform.io/providers/kreuzwerker/docker/latest/docs>) Terraform pour deployer des conteneurs dans les VM (non-obligatoire).
+- le module Terraform [SAP OVHcloud](https://github.com/ovh/terraform-vsphere-sap-application-server/tree/master/examples/).
+- Le provider Docker [Kreuzwerker](https://registry.terraform.io/providers/kreuzwerker/docker/latest/docs) Terraform pour deployer des conteneurs dans les VM (non-obligatoire).
 
-### Étape 1 - Terraform au sein de Hosted Private Cloud
+### Étape 1 - Terraform sur Hosted Private Cloud (VMware managé on OVHcloud)
 
 /// details | Comment configurer Terraform au sein de OVHcloud ?
 
@@ -77,7 +77,7 @@ Ce module a été écrit pour être compatible avec Terraform v1.4 ou supérieur
 
 **Utilisation du module Terraform**
 
-Plusieurs exemples sont disponibles dans le [repository GitHub](<https://github.com/ovh/terraform-vsphere-sap-application-server/tree/master/examples/>) pour déployer des machines virtuelles de serveur d'application SAP.
+Plusieurs exemples sont disponibles dans le [repository GitHub](https://github.com/ovh/terraform-vsphere-sap-application-server/tree/master/examples/) pour déployer des machines virtuelles dans un vSphere managé on OVHcloud (module SAP -> on VWware on OVHcloud).
 
 Trois principaux fichiers sont requis pour utiliser comme attendu ce module Terraform :
 
@@ -126,7 +126,7 @@ module "sap-application-server" {
 
 Pour connaître toutes les entrées que vous pouvez passer à ce module, veuillez vous référer au README sur [GitHub](https://github.com/ovh/terraform-vsphere-sap-application-server).
 
-Vous avez également la possibilité de créer des variables afin d'éviter de les coder en dur dans votre fichier main.tf. Pour cela, vous devez remplacer chaque valeur par une valeur avec la syntaxe `var.<nom_de_la_variable>` et créer un fichier nommé variables.tf qui contient la définition de chaque variable. Attention, le type de la variable doit être la même que la variable dans le module Terraform SAP Application Servers développé par OVHcloud.
+Vous avez également la possibilité de créer des variables afin d'éviter de les coder en dur dans votre fichier main.tf. Pour cela, vous devez remplacer chaque valeur par une valeur avec la syntaxe `var.<nom_de_la_variable>` et créer un fichier nommé `variables.tf` qui contient la définition de chaque variable. Attention, le type de la variable doit être la même que la variable dans le module Terraform SAP Application Servers développé par OVHcloud.
 
 Par exemple, vous ne pouvez pas appliquer le type « chaîne de caractères » pour la variable `sap_application_servers`, puisque dans le module Terraform SAP Application Servers développé par OVHcloud cette variable est une « liste ».
 
@@ -261,7 +261,7 @@ Nous vous suggérons de prendre connaissance des [exemples](<https://github.com/
 
 Si vous souhaitez détruire cette machine virtuelle, exécutez la commande suivante :
 
-```bash
+```Shell
 terraform destroy
 ```
 
@@ -290,28 +290,33 @@ Destroy complete! Resources: 1 destroyed.
 
 **Depuis l'API OVHcloud**
 
+Cet appel API permet de récupérer votre url vSphere managé on OVHcloud :
+
 > [!api]
 >
 > @api {v1} /dedicatedCloud/ GET /dedicatedCloud
 >
+>
 
-Cet appel API permet de récupérer votre url vSphere managé on OVHcloud :
+Cet appel API permet de récupérer votre url de service vSphere managé on OVHcloud :
 
 > [!api]
 >
 > @api {v1} /dedicatedCloud/ GET /dedicatedCloud/{serviceName}
 >
+
 >**Paramètre** :
 > 
 > - `serviceName` : votre datacentre sous la form (pcc-XXX-XXX-XXX-XXX).
 >
 
-Cet appel API permet de récupérer votre "datacenterId" :
+Cet appel API permet de récupérer votre `datacenterId` :
 
 > [!api]
 >
 > @api {v1} /dedicatedCloud/ GET /dedicatedCloud/{serviceName}/datacenter
 >
+
 >**Paramètre** :
 >
 > - `serviceName` : votre datacentre sous la form (pcc-XXX-XXX-XXX-XXX).
@@ -323,6 +328,7 @@ Cet appel API permet de récupérer vos informations NSX-T :
 >
 > @api {v1} /dedicatedCloud/ GET /dedicatedCloud/{serviceName}/nsx{{t}} -> Si NSX-V enlever le "t"
 >
+
 >**Paramètre** :
 >
 > - `serviceName` : votre datacentre sous la form (pcc-XXX-XXX-XXX-XXX).
@@ -330,7 +336,7 @@ Cet appel API permet de récupérer vos informations NSX-T :
 
 Retour :
 
-```Shell
+```json
 {
   "version": "4.1.1.0.0-XXXXX",
   "datacentersState": [
@@ -345,7 +351,7 @@ Retour :
 ```
 Retour avec NSX-V :
 
-```Shell
+```json
 {
   "state": "disabled",
   "url": "https://nsx.pcc-XXX-XXX-XXX-XXX.ovh.de/api"
