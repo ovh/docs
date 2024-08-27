@@ -12,7 +12,7 @@ Vous avez la possibilité de créer des instances directement depuis l'interface
 
 ## Prérequis
 
-- Posséder un projet [Public Cloud](https://www.ovh.com/ca/fr/public-cloud/instances/) créé depuis votre compte OVHcloud.
+- Posséder un [projet Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project) créé depuis votre compte OVHcloud.
 - [Être connecté à l'interface Horizon](/pages/public_cloud/compute/introducing_horizon).
 
 ## En pratique
@@ -78,9 +78,9 @@ Vous devrez ensuite compléter les informations demandées. Attention, cette gri
 |Informations|Détails|
 |---|---|
 |Nom de l'instance (*Instance name*)|Spécifiez le nom souhaité pour l'instance qui sera lancée.|
-|Description|Facultatif. Définissez une description, le cas échéant.|
-|Zone de disponibilité (*Availability zone*)|Laisser « nova » (choix par défaut).|
-|Nombre (*Count*)|Spécifier le nombre d'instances à créer.|
+|Description|Facultatif. Ajoutez une description si nécessaire.|
+|Zone de disponibilité (*Availability zone*)|Laissez « nova » (choix par défaut).|
+|Nombre|Spécifiez le nombre d'instances à créer.|
 
 **Source**
 
@@ -93,13 +93,13 @@ Vous devrez ensuite compléter les informations demandées. Attention, cette gri
 |Taille du volume (*Volume size*) (Go)|Si vous avez choisi de créer un volume, laissez le système déterminer la taille à votre place.|
 |Supprimer le volume lors de la suppression de l'instance (*Delete Volume on Instance Delete*)|Vous pouvez conserver l'option par défaut **No**. Si **Yes** est sélectionné, lorsque l'instance est supprimée, le volume l'est également.|
 |Nom de l'image (*Image name*)|Sélectionnez l'image de l'instance (uniquement dans le cas d'un démarrage depuis une image) en cliquant sur la flèche vers le haut à côté de l'image de votre choix. Dans notre exemple, nous utilisons une sélection de CentOS 7.|
-|Instantané d'instance (*Instance snapshot*)|Choisissez un instantané d'une instance (uniquement dans le cas d'un démarrage en instantané) en cliquant sur la flèche vers le haut à côté de l'image d'instantané d'instance de votre choix.|
+|Instantané d'instance (*Instance snapshot*)|Choisissez un instantané d'une instance (uniquement dans le cas d'un démarrage depuis un snapshot) en cliquant sur la flèche vers le haut à côté de l'image d'instantané d'instance de votre choix.|
 
 **Flavor**
 
 ![createinstance](images/create-instance-step5.png){.thumbnail}
 
-Des *flavors* pré-construites sont disponibles pour vous, sélectionnez la saveur de votre choix sous l'onglet `Available`.
+Des *flavors* pré-construites sont disponibles pour vous, sélectionnez la *flavor* de votre choix sous l'onglet `Available`.
 
 **Networks**
 
@@ -107,7 +107,7 @@ Des *flavors* pré-construites sont disponibles pour vous, sélectionnez la save
 
 |Informations|Détails|
 |---|---|
-|Réseau (*Network*)|Sélectionnez le(s) réseau(x) de l'instance que vous souhaitez créer dans la liste des réseaux disponibles.|
+|Réseau (*Network*)|Sélectionnez, dans la liste des réseaux disponibles, le(s) réseau(x) pour l'Instance que vous souhaitez créer |
 |Ext-Net|Représente le réseau public.|
 |Mynewnetwork|Représente le réseau privé créé au début de ce guide.|
 
@@ -115,7 +115,7 @@ Des *flavors* pré-construites sont disponibles pour vous, sélectionnez la save
 
 ![createinstance](images/create-instance-step7.png){.thumbnail}
 
-Pour plus d'informations, consultez le [guide](/pages/public_cloud/compute/setup_security_group) suivant.
+Pour plus d'informations, consultez [ce guide](/pages/public_cloud/compute/setup_security_group).
 
 **Key Pairs (Paire de clés)**
 
@@ -128,13 +128,13 @@ Pour plus d'informations, consultez le [guide](/pages/public_cloud/compute/setup
 
 Dans cette section, vous pouvez créer une paire de clés, importer une paire de clés ou utiliser une paire de clés existante.
 
-Pour plus d'informations sur la création d'une clé SSH, consultez ce [guide](/pages/public_cloud/compute/public-cloud-first-steps#step-1-creating-ssh-keys).
+Pour plus d'informations sur la création d'une clé SSH, consultez [ce guide](/pages/public_cloud/compute/public-cloud-first-steps#step-1-creating-ssh-keys).
 
 
 > [!tabs]
 > **+ Create Key Pair**
 >> 
->> Pour créer une paire de clés, cliquez sur le bouton `+ Create Key Pair`{.action}. Veuillez noter qu'avec cette option, des étapes supplémentaires doivent être effectuées avant de pouvoir vous connecter à l'instance, surtout si vous utilisez le logiciel Putty pour vous connecter à votre instance. Consulter cette [section](/pages/public_cloud/compute/public-cloud-first-steps#step-4-connecting-to-your-instance) du guide correspondant.
+>> Pour créer une paire de clés, cliquez sur le bouton `+ Create Key Pair`{.action}. Veuillez noter qu'avec cette option, des étapes supplémentaires doivent être effectuées avant de pouvoir vous connecter à l'instance, surtout si vous utilisez le logiciel Putty pour vous connecter à votre instance. Consultez [cette section](/pages/public_cloud/compute/public-cloud-first-steps#step-4-connecting-to-your-instance) du guide correspondant.
 >>
 >> **Key Pair Name :** Entrez un nom pour votre clé.<br>
 >> **Key Type :** Cliquez sur la `flèche déroulante` et sélectionnez `SSH Key`.<br>
@@ -143,7 +143,7 @@ Pour plus d'informations sur la création d'une clé SSH, consultez ce [guide](/
 >> Une fois la paire de clés créée, cliquez sur `Copy Private Key to Clipboard`{.action}, puis sur `Done`{.action}.<br><br>
 >>![create ssh key](images/create-ssh-key-1.png){.thumbnail}<br>
 >>
->> Une fois fait, la clé nouvellement créée sera automatiquement sélectionnée. Cliquez sur `Launch Instance`{.action} pour commencer la création de votre instance.<br><br>
+>> Une fois cela fait, la clé nouvellement créée sera automatiquement sélectionnée. Cliquez sur `Launch Instance`{.action} pour commencer la création de votre instance.<br><br>
 >>
 >>![create instance](images/launch-instance.png){.thumbnail}<br>
 >> 
@@ -152,7 +152,7 @@ Pour plus d'informations sur la création d'une clé SSH, consultez ce [guide](/
 >>
 >> **Key Pair Name :** Entrez un nom pour votre clé.<br>
 >> **Key Type (Type de clé) :** Cliquez sur la `flèche déroulante` et sélectionnez `SSH Key`.<br>
->> **Load Public Key from a file (Charger la clé publique à partir d'un fichier) :**   Cliquez sur `Browse`{.action} pour spécifier l'emplacement de la clé publique sur votre ordinateur.<br>
+>> **Load Public Key from a file (Charger la clé publique à partir d'un fichier) :** Cliquez sur `Browse`{.action} pour spécifier l'emplacement de la clé publique sur votre ordinateur.<br>
 >> **Public Key :** Copiez et collez votre clé publique ici.<br>
 >> Cliquez sur `Import Key Pair`{.action} pour importer la clé.<br><br>
 >>![import key pair](images/import-ssh-key.png){.thumbnail}<br>
@@ -169,8 +169,8 @@ Attention, ces options ne sont pas obligatoires pour la création d'une instance
 |---|---|
 |Custom script source (*Source de script personnalisé*)|Spécifiez la source entre une « direct entry » ou un « file ».|
 |Script data (*Données de script*)|Entrez le code de script dans le champ d'entrée (16 Ko maximum).|
-|Script file (*Fichier de script*)|Cliquez sur `Browse`{.action} to select the post-installation script.|
-|Disk partitioning (*Partitionnement des disques*)|Choisissez entre "automatic" et "manual".|
+|Script file (*Fichier de script*)|Cliquez sur `Browse`{.action} pour sélectionner le script de post-installation.|
+|Disk partitioning (*Partitionnement des disques*)|Choisissez entre « automatic » et « manual ».|
 |Configuration disk (*Disque de configuration*)|Configurez OpenStack pour écrire des métadonnées sur un disque de configuration spécifique qui sera attaché à l'Instance au lancement.|
 
 ## Aller plus loin
