@@ -93,7 +93,7 @@ Vous devrez ensuite compléter les informations demandées. Attention, cette gri
 |Taille du volume (*Volume size*) (Go)|Si vous avez choisi de créer un volume, laissez le système déterminer la taille à votre place.|
 |Supprimer le volume lors de la suppression de l'instance (*Delete Volume on Instance Delete*)|Vous pouvez conserver l'option par défaut **No**. Si **Yes** est sélectionné, lorsque l'instance est supprimée, le volume l'est également.|
 |Nom de l'image (*Image name*)|Sélectionnez l'image de l'instance (uniquement dans le cas d'un démarrage depuis une image) en cliquant sur la flèche vers le haut à côté de l'image de votre choix. Dans notre exemple, nous utilisons une sélection de CentOS 7.|
-|Instantané d'instance (*Instance snapshot*)|Choisissez un instantané d'une instance (uniquement dans le cas d'un démarrage en instantané) en cliquant sur la flèche vers le haut à côté de l'image d'instantané d'instance de votre choix.|
+|Instantané d'instance (*Instance snapshot*)|Choisissez un instantané d'une instance (uniquement dans le cas d'un démarrage depuis un snapshot) en cliquant sur la flèche vers le haut à côté de l'image d'instantané d'instance de votre choix.|
 
 **Flavor**
 
