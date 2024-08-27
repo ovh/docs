@@ -45,7 +45,7 @@ content:'\25BC';
 > Please note that KMS activation is free, but you will be charged for using the OVHcloud KMS service at the standard rate.
 >
 
-### Introduction
+### Step 1 - Introduction
 
 **The advantages of VM encryption with OVHcloud KMS (OKMS).**
 
@@ -84,7 +84,7 @@ This architecture is redundant and thus allows you to suffer breakdowns without 
 
 KMIP provides a service compatible with vCenter and host-based encryption within VMware vSphere on OVHcloud.
 
-### Step 1 - Overview of the choices to encrypt virtual machines
+### Step 2 - Overview of the choices to encrypt virtual machines
 
 > [!primary]
 >

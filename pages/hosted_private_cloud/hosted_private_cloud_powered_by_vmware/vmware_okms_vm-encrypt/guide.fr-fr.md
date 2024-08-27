@@ -615,7 +615,7 @@ Après avoir commandé votre OKMS, ouvert les flux au sein de votre vSphere mana
 
 ///
 
-## Étape 5 - Création d'une stratégie de stockage VM (obligatoire) <a name="storage-policy"></a>
+### Étape 5 - Création d'une stratégie de stockage VM (obligatoire) <a name="storage-policy"></a>
 
 /// details | Comment créer une stratégie de stockage VM pour activer le chiffrement dans VMware vSphere ?
 

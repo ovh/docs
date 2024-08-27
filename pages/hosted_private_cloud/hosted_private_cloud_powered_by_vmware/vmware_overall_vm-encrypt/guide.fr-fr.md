@@ -45,7 +45,7 @@ details[open]>summary::before {
 > Prenez en compte que l'activation de KMS est gratuite, mais vous serez facturé pour l'utilisation du service KMS OVHcloud selon le tarif standard.
 >
 
-### Introduction
+### Étape 1 - Introduction
 
 **Les avantages du chiffrement de VM avec le KMS OVHcloud (OKMS).**
 
@@ -84,7 +84,7 @@ Cette architecture est redondante et permet ainsi de subir des pannes sans que c
 
 KMIP fournit un service compatible avec vCenter et le chiffrement basé sur l'hôte au sein de VMware vSphere on OVHcloud.
 
-### Étape 1 - Présentation des choix pour chiffrer des machines virtuelles
+### Étape 2 - Présentation des choix pour chiffrer des machines virtuelles
 
 > [!primary]
 > 

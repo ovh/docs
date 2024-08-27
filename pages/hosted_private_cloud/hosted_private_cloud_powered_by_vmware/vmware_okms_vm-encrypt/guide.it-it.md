@@ -477,12 +477,12 @@ After ordering your OKMS, open the flows within your OVHcloud managed vSphere. A
 >> > [!primary]
 >> >
 >> > Trust between vCenter and KMS can be conflicting, please wait a few minutes before starting over, or refresh your vSphere page with the circular arrow button at the top and slightly to the right.
->> > 
+>> >
 >> > If it still doesn't work, do a manual upload (optional).
 >> >
 >>
 >> Before generating your CSR and/or KMS Certificate, and then your private key, you must ensure that vCenter has downloaded the public certificate from the OVHcloud KMS server. Once your KMS has been imported into vSphere, you will need to validate the trust relationship between each element.
----
+>>
 >> Once you have added your KMS, add it by default (if you have multiple key providers). If not it will be added automatically.
 >>
 >> Move to the bottom `Provider OKMS 1 - Key Management Servers` by clicking on the small circle and also on the right arrow to unfold and display your KMS.
@@ -490,7 +490,7 @@ After ordering your OKMS, open the flows within your OVHcloud managed vSphere. A
 >> If you do not see that the trust relationship automatically turns green, click on `TRUST KMS`{.action}
 >>
 >> ![Trust KMS server with or without CSR](images/trust_kms.png){.thumbnail}
->> 
+>>
 >>  Then click on `TRUST`{.action}
 >>
 >> ![KMS Key Provider with or without CSR](images/trust_kms_2.png){.thumbnail}
@@ -506,7 +506,7 @@ After ordering your OKMS, open the flows within your OVHcloud managed vSphere. A
 >> ```
 >>
 >> Copy the return from `-------BEGIN CERTIFICATE---- XXX -----END CERTIFICATE-----` into your managed vSphere web interface.
->> 
+>>
 >> Click on `ESTABLISH TRUST > vCenter Trust Kms > Upload KMS Certificate`{.action}
 >>
 >> ![KMS Key Provider](images/okms_vsphere_upload_kms_cert-ptim-resize.png){.thumbnail}
@@ -621,7 +621,7 @@ After ordering your OKMS, open the flows within your OVHcloud managed vSphere. A
 
 ///
 
-## Step 5 - Create a VM storage policy (required) <a name="storage-policy"></a>
+### Step 5 - Create a VM storage policy (required) <a name="storage-policy"></a>
 
 /// details | How do I create a VM storage policy to enable encryption in VMware vSphere?
 

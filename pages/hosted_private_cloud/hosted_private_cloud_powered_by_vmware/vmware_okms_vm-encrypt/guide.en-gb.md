@@ -482,7 +482,7 @@ After ordering your OKMS, open the flows within your OVHcloud managed vSphere. A
 >> >
 >>
 >> Before generating your CSR and/or KMS Certificate, and then your private key, you must ensure that vCenter has downloaded the public certificate from the OVHcloud KMS server. Once your KMS has been imported into vSphere, you will need to validate the trust relationship between each element.
----
+>>
 >> Once you have added your KMS, add it by default (if you have multiple key providers). If not it will be added automatically.
 >>
 >> Move to the bottom `Provider OKMS 1 - Key Management Servers` by clicking on the small circle and also on the right arrow to unfold and display your KMS.
@@ -621,7 +621,7 @@ After ordering your OKMS, open the flows within your OVHcloud managed vSphere. A
 
 ///
 
-## Step 5 - Create a VM storage policy (required) <a name="storage-policy"></a>
+### Step 5 - Create a VM storage policy (required) <a name="storage-policy"></a>
 
 /// details | How do I create a VM storage policy to enable encryption in VMware vSphere?
 
