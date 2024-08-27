@@ -1,7 +1,7 @@
 ---
 title: "Modifier les serveurs DNS d'un nom de domaine OVHcloud"
 excerpt: "Découvrez comment modifier les serveurs DNS de votre nom de domaine enregistré chez OVHcloud"
-updated: 2024-08-20
+updated: 2024-08-27
 ---
 
 ## Objectif
@@ -110,6 +110,17 @@ Cela peut être, par exemple :
 - les serveurs DNS externes fournis par l'un de nos concurrents ;
 - vos propres serveurs DNS si vous hébergez votre zone DNS sur l'un de vos serveurs. Ces serveurs DNS peuvent aussi être hébergés sur une infrastructure OVHcloud (serveur dédié, VPS, etc.).
 
+> [!success]
+>
+> Avant d'ajouter un serveur DNS, vérifiez que ce dernier contient bien une zone DNS pour votre nom de domaine. Assurez-vous également que cette zone DNS contient tous les enregistrements de type « NS » vers tous les serveurs DNS que vous allez déclarer pour votre nom de domaine.
+>
+> Par exemple : vous souhaitez déclarer les serveurs DNS *ns1.dns-server.tld*, *ns2.dns-server.tld* et *ns3.dns-server.tld* pour votre nom de domaine. Vous devrez alors vérifier que les trois enregistrements de type « NS » suivants sont bien présents dans les 3 zones DNS hébergées sur ces 3 serveurs DNS :
+>
+> - « Your own domain (or just an @) » IN NS ns1.dns-server.tld.
+> - « Your own domain (or just an @) » IN NS ns2.dns-server.tld.
+> - « Your own domain (or just an @) » IN NS ns3.dns-server.tld.
+>
+
 Pour renseigner l'un de vos propres serveurs DNS, remplissez les 2 formulaires de l'encadré comme suit :
 
 - `Serveur DNS` : nom du serveur DNS à appliquer à votre nom de domaine.
@@ -150,6 +161,17 @@ Cependant, vérifiez bien que les configurations des zones DNS présentes sur le
 > 2. L'option [DNSSEC](/pages/web_cloud/domains/dns_dnssec) doit être désactivée pour combiner l'utilisation de vos propres serveurs DNS avec les DNS d'OVHcloud.
 >
 > 3. Veillez à ne pas mélanger un groupe de serveurs DNS OVHcloud avec un autre groupe de serveurs DNS OVHcloud. Par exemple, *dns19.ovh.net* et *ns19.ovh.net* correspondent à un groupe de serveurs DNS OVHcloud, ils vont de pair et sont synchronisés. Chez OVHCloud, les groupes de serveurs DNS sont identifiables à l'aide du numéro présent dans les noms des serveurs. Deux serveurs DNS OVHcloud font partie d'un même groupe de serveurs DNS dès lors qu'ils partagent le même numéro. Par exemple, *dns19.ovh.net* et *ns19.ovh.net*.
+
+> [!success]
+>
+> Avant d'ajouter un serveur DNS, vérifiez que ce dernier contient bien une zone DNS pour votre nom de domaine. Assurez-vous également que cette zone DNS contient tous les enregistrements de type « NS » vers tous les serveurs DNS que vous allez déclarer pour votre nom de domaine.
+>
+> Par exemple : vous souhaitez déclarer les serveurs DNS *ns1.dns-server.tld*, *dnsXX.ovh.net* et *nsXX.ovh.net* pour votre nom de domaine. Vous devrez alors vérifier que les trois enregistrements de type « NS » suivants sont bien présents dans les 3 zones DNS hébergées sur ces 3 serveurs DNS :
+>
+> - « Your own domain (or just an @) » IN NS ns1.dns-server.tld.
+> - « Your own domain (or just an @) » IN NS dnsXX.ovh.net.
+> - « Your own domain (or just an @) » IN NS nsXX.ovh.net.
+>
 
 Pour renseigner l'un de vos propres serveurs DNS, remplissez les 2 formulaires de l'encadré comme suit :
 
