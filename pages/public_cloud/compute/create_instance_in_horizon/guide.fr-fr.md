@@ -128,7 +128,7 @@ Pour plus d'informations, consultez [ce guide](/pages/public_cloud/compute/setup
 
 Dans cette section, vous pouvez créer une paire de clés, importer une paire de clés ou utiliser une paire de clés existante.
 
-Pour plus d'informations sur la création d'une clé SSH, consultez ce [guide](/pages/public_cloud/compute/public-cloud-first-steps#step-1-creating-ssh-keys).
+Pour plus d'informations sur la création d'une clé SSH, consultez [ce guide](/pages/public_cloud/compute/public-cloud-first-steps#step-1-creating-ssh-keys).
 
 
 > [!tabs]
