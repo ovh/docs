@@ -84,9 +84,7 @@ This architecture is redundant and thus allows you to suffer breakdowns without 
 
 KMIP provides a service compatible with vCenter and host-based encryption within VMware vSphere on OVHcloud.
 
-///
-
-### Step 1 - Overview of your choices
+### Step 1 - Overview of the choices to encrypt virtual machines
 
 > [!primary]
 >
@@ -95,13 +93,15 @@ KMIP provides a service compatible with vCenter and host-based encryption within
 > Verify that the Key Server (KMS) is listed in the VMware Compatibility Guide for Key Management Servers (KMS) and is KMIP 1.1 compliant, and can be a symmetric key server and cast.
 >
 
-/// details | What options are available to enable VM encryption within vSphere managed on OVHcloud?
+#### Option 1 - Without OKMS
 
-#### Option 1 - With an external KMS (not OVHcloud)
+/// details | Avec un KMS externe (BYOK - non OVHcloud)
 
 > [!warning]
 >
-> Think carefully about the dependencies of your infrastructure on the key server. Some KMS solutions are delivered as virtual images, creating a dependency loop or other availability issues with the wrong KMS appliance location.
+> Think carefully about the dependencies of your infrastructure on the key server. For more information, see [Guide 2 - HPC - Enable VM encryption with OKMS](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt).
+> 
+> Some KMS solutions are delivered as virtual images, creating a dependency loop or other availability issues with the wrong KMS appliance location - [KMS compatibility - Officiel documentation](https://www.vmware.com/resources/compatibility/search.php?deviceCategory=kms)
 >
 
 **How do I enable disk encryption on my VMs**?
@@ -115,9 +115,16 @@ Here, you can access the API calls required to check and enable encryption on yo
 As well as settings for adding an external KMS cluster:
 
 - [Guide 2 - HPC - Enable VM encryption with OKMS](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt)
-- [KMS compatibility guide](https://www.vmware.com/resources/compatibility/search.php?deviceCategory=kms) 
 
-#### Option 2 - With an OVHcloud KMS (OKMS)
+- [KMS compatibility - Officiel documentation](https://www.vmware.com/resources/compatibility/search.php?deviceCategory=kms) 
+
+**BYOK** : Bring your owwn key.
+
+///
+
+#### Option 2 - With OKMS
+
+/// details | With OVHcloud KMS
 
 **How to activate the OVHcloud KMS with your Hosted Private Cloud VMware on OVHcloud**?
 
@@ -147,11 +154,15 @@ For this option, we will use a **Standard key provider**
 
 ![Standard Key Provider](images/key_provider.png){.thumbnail}
 
-#### Option 3 - With vNKP
+///
 
-> [!warning]
+#### Option 3 - Without KMS (vNKP)
+
+/// details | With vMware Native Key Protocol
+
+> [!primary]
 >
-> vNKP is not a KMS key management service.
+> vNKP is not a KMS key management service (without KMS/OKMS).
 >
 
 This solution is convenient if you do not have an external KMS and you do not want to use the OVHcloud one (OKMS).

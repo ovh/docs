@@ -47,7 +47,7 @@ details[open]>summary::before {
 
 ### Introduction
 
-/// details | Les avantages du chiffrement de VM avec le KMS OVHcloud (OKMS).
+**Les avantages du chiffrement de VM avec le KMS OVHcloud (OKMS).**
 
 Le KMS OVHcloud est un service managé conçu pour :
 
@@ -84,24 +84,24 @@ Cette architecture est redondante et permet ainsi de subir des pannes sans que c
 
 KMIP fournit un service compatible avec vCenter et le chiffrement basé sur l'hôte au sein de VMware vSphere on OVHcloud.
 
-///
-
-### Étape 1 - Présentation des choix qui s'offrent à vous
+### Étape 1 - Présentation des choix pour chiffrer des machines virtuelles
 
 > [!primary]
 > 
 > À partir de la mise à jour 2 de vSphere 7.0, les machines virtuelles chiffrées et les TPM virtuels peuvent continuer à fonctionner même lorsque le serveur de clés est temporairement hors connexion ou indisponible.
 >
-> Vérifiez que le serveur de clés (KMS) figure dans le Guide de compatibilité VMware pour les serveurs de gestion de clés (KMS), qu'il est conforme à KMIP 1.1 et qu'il peut s'agir d'un serveur et d'une fonderie de clés symétriques.
+> Vérifiez que le serveur de clés (KMS) figure dans le Guide de compatibilité VMware pour les serveurs de gestion de clés (KMS), qu'il est conforme à KMIP 1.1 et qu'il peut s'agir d'un serveur et d'une fonderie de clés symétriques [KMS compatibility - Officiel documentation](https://www.vmware.com/resources/compatibility/search.php?deviceCategory=kms).
 > 
 
-/// details | Quelles options s'offrent à vous pour activer le chiffrement de VM au sein de vSphere managé on OVHcloud ?
+**Quelles options s'offrent à vous pour activer le chiffrement de VM au sein de vSphere managé on OVHcloud** ?
 
-#### Option 1 - Avec un KMS externe (non OVHcloud)
+#### Option 1 - Sans OKMS
+
+/// details | Avec un KMS externe (BYOK - non OVHcloud)
 
 > [!warning]
 >
-> Réfléchissez bien aux dépendances de votre infrastructure par rapport au serveur clé. 
+> Réfléchissez bien aux dépendances de votre infrastructure par rapport au serveur clé. Pour plus d'information consultez le « [Guide 2 - HPC - Activer le chiffrement de VM avec OKMS](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt).
 > 
 > Certaines solutions KMS sont livrées comme des images virtuelles, ce qui permet de créer une boucle de dépendance ou d'autres problèmes de disponibilité avec un mauvais emplacement de l'appliance KMS.
 >
@@ -118,9 +118,15 @@ Ainsi que des paramètres à l'ajout d'un cluster KMS externe :
 
 - « [Guide 2 - HPC - Activer le chiffrement de VM avec OKMS](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt) »
 
-- « [Guide de compatibilité KMS](https://www.vmware.com/resources/compatibility/search.php?deviceCategory=kms) »
+- « [Documentation officielle - Compatibilité KMS](https://www.vmware.com/resources/compatibility/search.php?deviceCategory=kms) »
 
-#### Option 2 - Avec un KMS OVHcloud (OKMS)
+**BYOK** : Bring your owwn key.
+
+///
+
+#### Option 2 - Avec KMS
+
+/// details | Avec un KMS OVHcloud (OKMS)
 
 **Comment activer le KMS OVHcloud avec votre Hosted Private Cloud VMware on OVHcloud** ?
 
@@ -150,11 +156,15 @@ Nous utiliserons pour cette option un **Fournisseur de clé standard.**
 
 ![Standard Key Provider](images/key_provider.png){.thumbnail}
 
-#### Option 3 - Avec vNKP
+///
 
-> [!warning]
+#### Option 3 - Sans KMS (vNKP)
+
+/// details | Avec vMware Native Key Protocol
+
+> [!primary]
 >
-> Attention, vNKP n'est pas un service de gestion de clé KMS.
+> Attention, vNKP n'est pas un service de gestion de clé KMS (sans KMS/OKMS).
 >
 
 Cette option convient si vous n'avez pas de service de gestion de clé externe et que vous ne voulez pas utiliser celui de OVHcloud (OKMS).
