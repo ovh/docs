@@ -13,7 +13,7 @@ Les services Hosted Exchange et Private Exchange disposent d'une gestion flexibl
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](/links/manager).
-- Avoir souscrit une offre [Exchange](/web/emails-hosted-exchange).
+- Avoir souscrit une offre [Exchange](/links/web/emails-hosted-exchange).
 
 ## En pratique
 

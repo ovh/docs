@@ -13,7 +13,7 @@ Die Dienste Hosted Exchange und Private Exchange bieten hinsichtlich der Abrechn
 ## Voraussetzungen
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
-- Sie haben bereits einen [OVHcloud Exchange](/web/emails-hosted-exchange) Dienst eingerichtet.
+- Sie haben bereits einen [OVHcloud Exchange](/links/web/emails-hosted-exchange) Dienst eingerichtet.
 
 ## In der praktischen Anwendung
 
