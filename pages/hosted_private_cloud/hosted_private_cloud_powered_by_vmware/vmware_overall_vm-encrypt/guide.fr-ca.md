@@ -57,11 +57,11 @@ Le KMS OVHcloud est un service managé conçu pour :
 
 Nous détaillerons ici les étapes qu'il faudra suivre pour une configuration réussie de KMS avec votre Hosted Private Cloud VMware on OVHcloud.
 
-#### L'authentification
+**L'authentification**
 
 À ce jour, l'authentification est uniquement possible au sein du KMS OVHcloud (OKMS) grâce à la méthode **mtls** (mutual tls), du protocole officiel tls [rfc8705](https://www.rfc-editor.org/rfc/rfc8705.html) et KMIP pour la gestion (création, suppression etc..) au sein de l'environnement VMware on OVHcloud.
 
-#### Cas d'usages
+**Cas d'usages**
 
 - Chiffrement et déchiffrement des données Hosted Private VMware on OVHcloud (stratégies de chiffrement de VM au sein de vSphere, vApp etc..).
 - Génération de clé KMS depuis vSphere avec le KMS OVHcloud.
@@ -70,7 +70,7 @@ Nous détaillerons ici les étapes qu'il faudra suivre pour une configuration r�
 - Utilisation d'IAM et du KMS OVHcloud (OKMS) avec votre Hosted Private Cloud VMware on OVHcloud.
 - Interconnexion des services OVHcloud ou pas avec le KMS.
 
-#### Avantages du KMS OVHcloud
+**Avantages du KMS OVHcloud**
 
 Le KMS OVHcloud vous permet de profiter des avantages d'un service managé de gestion de clé (KMS as a service) au sein de l'univers Hosted Private Cloud VMware on OVHcloud.
 
