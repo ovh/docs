@@ -485,7 +485,7 @@ After ordering your OKMS, open the flows within your OVHcloud managed vSphere. A
 ---
 >> Once you have added your KMS, add it by default (if you have multiple key providers). If not it will be added automatically.
 >>
->> Move to the bottom `Provider OKMS 1 - Key Management Servers` by clicking on the small circle and also on the right arrow to unwind and display your KMS.
+>> Move to the bottom `Provider OKMS 1 - Key Management Servers` by clicking on the small circle and also on the right arrow to unfold and display your KMS.
 >>
 >> If you do not see that the trust relationship automatically turns green, click on `TRUST KMS`{.action}
 >>
@@ -499,7 +499,7 @@ After ordering your OKMS, open the flows within your OVHcloud managed vSphere. A
 >>
 >> Typically, vCenter automatically downloads the KMS public certificate. If it doesn't, do it manually.
 >>
->> You can retrieve it from the endpoints provided with this snippet (if you need additional information on the certificate, check the [toolkit](#useful-information) at the end of the guide):
+>> You can retrieve it from the endpoints provided with this snippet (if you need additional information on the certificate, check the [toolkit](#useful-information) at the end of this guide):
 >>
 >> ```shell
 >> openssl s_client -connect eu-west-rbx.okms.ovh.net:443 2>/dev/null </dev/null |  sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p'
@@ -511,11 +511,11 @@ After ordering your OKMS, open the flows within your OVHcloud managed vSphere. A
 >>
 >> ![KMS Key Provider](images/okms_vsphere_upload_kms_cert-ptim-resize.png){.thumbnail}
 >>
->> Finally, paste the public KMS certificate retrieved from the snippet in to the vSphere window.
+>> Finally, paste the public KMS certificate retrieved from the snippet into the vSphere window.
 >>
 >> ![KMS Key Provider](images/okms_vsphere_upload_kms_cert_2-optim-resize.png){.thumbnail}
 >>
->> Wait a little while and refresh the vSphere Web page as explained (for refreshing a vSphere Web console)
+>> Wait a little while and refresh the vSphere Web page as explained before (for refreshing a vSphere Web console).
 >>
 > **Make KMS Trust vCenter**
 >>
@@ -597,7 +597,7 @@ After ordering your OKMS, open the flows within your OVHcloud managed vSphere. A
 >> > - `okmsId` : ID of your OVHcloud KMS.
 >> >
 >>
->> Copy the `"certificatePEM"` (signed CSR) from `------BEGIN CERTIFICATE------` to the end of `-----END CERTIFICATE------`.
+>> Copy the `"certificatePEM"` (signed CSR) from `------BEGIN CERTIFICATE------` until the end of `-----END CERTIFICATE------`.
 >>
 >> Then run the `AWK` command below to format it so that the Web vSphere interface can read it:
 >>

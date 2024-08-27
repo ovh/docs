@@ -90,7 +90,7 @@ KMIP fournit un service compatible avec vCenter et le chiffrement basé sur l'h�
 > 
 > À partir de la mise à jour 2 de vSphere 7.0, les machines virtuelles chiffrées et les TPM virtuels peuvent continuer à fonctionner même lorsque le serveur de clés est temporairement hors connexion ou indisponible.
 >
-> Vérifiez que le serveur de clés (KMS) figure dans le Guide de compatibilité VMware pour les serveurs de gestion de clés (KMS), qu'il est conforme à KMIP 1.1 et qu'il peut s'agir d'un serveur et d'une fonderie de clés symétriques [KMS compatibility - Officiel documentation](https://www.vmware.com/resources/compatibility/search.php?deviceCategory=kms).
+> Vérifiez que le serveur de clés (KMS) figure dans le Guide de compatibilité VMware pour les serveurs de gestion de clés (KMS), qu'il est conforme à KMIP 1.1 et qu'il peut s'agir d'un serveur et d'une fonderie de clés symétriques [KMS compatibility - Official documentation](https://www.vmware.com/resources/compatibility/search.php?deviceCategory=kms).
 > 
 
 **Quelles options s'offrent à vous pour activer le chiffrement de VM au sein de vSphere managé on OVHcloud** ?
@@ -101,7 +101,7 @@ KMIP fournit un service compatible avec vCenter et le chiffrement basé sur l'h�
 
 > [!warning]
 >
-> Réfléchissez bien aux dépendances de votre infrastructure par rapport au serveur clé. Pour plus d'information consultez le « [Guide 2 - HPC - Activer le chiffrement de VM avec OKMS](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt).
+> Réfléchissez bien aux dépendances de votre infrastructure par rapport au serveur clé. Pour plus d'informations, consultez le « [Guide 2 - HPC - Activer le chiffrement de VM avec OKMS](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt).
 > 
 > Certaines solutions KMS sont livrées comme des images virtuelles, ce qui permet de créer une boucle de dépendance ou d'autres problèmes de disponibilité avec un mauvais emplacement de l'appliance KMS.
 >

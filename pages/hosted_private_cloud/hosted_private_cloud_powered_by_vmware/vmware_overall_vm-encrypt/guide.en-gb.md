@@ -95,13 +95,13 @@ KMIP provides a service compatible with vCenter and host-based encryption within
 
 #### Option 1 - Without OKMS
 
-/// details | Avec un KMS externe (BYOK - non OVHcloud)
+/// details | With an external KMS (BYOK - not from OVHcloud)
 
 > [!warning]
 >
 > Think carefully about the dependencies of your infrastructure on the key server. For more information, see [Guide 2 - HPC - Enable VM encryption with OKMS](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt).
 > 
-> Some KMS solutions are delivered as virtual images, creating a dependency loop or other availability issues with the wrong KMS appliance location - [KMS compatibility - Officiel documentation](https://www.vmware.com/resources/compatibility/search.php?deviceCategory=kms)
+> Some KMS solutions are delivered as virtual images, creating a dependency loop or other availability issues with the wrong KMS appliance location - [KMS compatibility - Official documentation](https://www.vmware.com/resources/compatibility/search.php?deviceCategory=kms)
 >
 
 **How do I enable disk encryption on my VMs**?
@@ -158,7 +158,7 @@ For this option, we will use a **Standard key provider**
 
 #### Option 3 - Without KMS (vNKP)
 
-/// details | With vMware Native Key Protocol
+/// details | With VMware Native Key Protocol
 
 > [!primary]
 >

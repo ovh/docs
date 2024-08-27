@@ -1,6 +1,6 @@
 ---
 title: "KMS for VMware on OVHcloud - Configuration du chiffrement de VM"
-excerpt: "Découvrez comment activer le chiffrement de vos VMs au sein de votre VMware vSphere managé Hosted Private Cloud grâce à la solution KMS OVHcloud (OKMS) gérer comme un service managé"
+excerpt: "Découvrez comment activer le chiffrement de vos VMs au sein de votre VMware vSphere managé Hosted Private Cloud grâce à la solution KMS OVHcloud (OKMS) en tant que service managé"
 updated: 2024-08-27
 ---
 
@@ -61,7 +61,7 @@ Pour plus d'informations sur les choix qui s'offrent à vous avec KMS et Hosted 
 
 > [!primary]
 >
-> Informations et endpoint API pour la phase beta.
+> Informations et endpoints API pour la phase bêta.
 > 
 
 |   **Type**    | **URL**                           |      **Région**       |  **OKMS Région enum**  |      **IP**      |
@@ -79,10 +79,10 @@ Pour plus d'informations sur les choix qui s'offrent à vous avec KMS et Hosted 
 
 > [!primary]
 >
-> Informations et appels API pour la phase beta.
+> Informations et appels API pour la phase bêta.
 >
 
-|       **Methode**       |  **API**  | **Path**                                                                 | **Commentaires**                                                 |
+|       **Méthode**       |  **API**  | **Path**                                                                 | **Commentaires**                                                 |
 |:-----------------------:|:---------:|:-------------------------------------------------------------------------|:-----------------------------------------------------------------|
 |                         |           |                                                                          |                                                                  |
 |    **Credentials:**     |           |                                                                          |                                                                  |
@@ -495,7 +495,7 @@ Après avoir commandé votre OKMS, ouvert les flux au sein de votre vSphere mana
 >>
 >> En principe, vCenter télécharge automatiquement le certificat public KMS. S'il ne le fait pas, faites-le manuellement.
 >> 
->> Vous pouvez le récupérer depuis les endpoints fournis avec ce snippet (si vous avez besoin d'information supplémentaire sur le certificat, regarder à le [toolkit](#useful-information) la fin du guide) :
+>> Vous pouvez le récupérer depuis les endpoints fournis avec ce snippet (si vous avez besoin d'informations supplémentaires sur le certificat, consultez le [*toolkit*](#useful-information) en bas de ce guide) :
 >>
 >> ```shell
 >> openssl s_client -connect eu-west-rbx.okms.ovh.net:443 2>/dev/null </dev/null |  sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p'
@@ -511,7 +511,7 @@ Après avoir commandé votre OKMS, ouvert les flux au sein de votre vSphere mana
 >>
 >> ![KMS Key Provider](images/okms_vsphere_upload_kms_cert_2-optim-resize.png){.thumbnail}
 >>
->> Attendez un petit moment et rafraichissez la page web vSphere comme expliqué (pour rafraichir une interface Web vSphere).
+>> Attendez un petit moment et rafraichissez la page web vSphere comme expliqué précédemment (pour rafraichir une interface Web vSphere).
 >>
 > **APPROUVER L'INSTANCE DE VCENTER (Avec CSR)**
 >>
@@ -575,9 +575,7 @@ Après avoir commandé votre OKMS, ouvert les flux au sein de votre vSphere mana
 >> > } 
 >> > ```
 >>
->> Un `"credentialId"` de signature vous sera donné pour prouver la signature effectuée. Il vous faut le récupérer avec le `okmsId` afin de lancer l'appel API suivant GET (voir ci-dessous) et récupérer le CSR signé.
->>
->> Pour signer le CSR,
+>> Un `"credentialId"` de signature vous sera donné pour prouver la signature effectuée. Il vous faut le récupérer avec le `okmsId` afin de lancer l'appel API GET suivant (voir ci-dessous) et récupérer le CSR signé.
 >>
 >> Copiez maintenant le CSR signé de l'appel API suivant :
 >>
@@ -592,7 +590,7 @@ Après avoir commandé votre OKMS, ouvert les flux au sein de votre vSphere mana
 >> > - `okmsId` : ID de votre KMS OVHcloud.
 >> >
 >>
->> Copiez-le `"certificatePEM"` (CSR signé) à partir de  `-----BEGIN CERTIFICATE-----` à la fin de `-----END CERTIFICATE-----`.
+>> Copiez le `"certificatePEM"` (CSR signé) à partir de  `-----BEGIN CERTIFICATE-----` jusqu'à la fin de `-----END CERTIFICATE-----`.
 >> 
 >> Lancez ensuite la commande `AWK` ci-dessous pour le formater afin que l'interface Web vSphere puisse le lire :
 >>
@@ -805,7 +803,7 @@ awk '{gsub(/\\n/,"\n")}1' file
 
 Si vous rencontrez des difficultés lors de l'étape 4 ([faire en sorte que vCenter fasse confiance à KMS](#trust-okms)), vous pouvez le télécharger manuellement : copiez depuis un shell le retour snippet et collez-le dans l'interface web vSphere "Télécharger le certificat KMS".
 
-Vous pouvez lancer ces snippet (il faut avoir python et OpenSSL installés). Il permet d'exporter et formater le certificat public OKMS.
+Vous pouvez lancer ce snippet (il faut avoir python et OpenSSL installés). Il permet d'exporter et formater le certificat public OKMS.
 
 Avec `Python` et `OpenSSL`, changez l'input OKMS avec l'URL de la bonne région.
 
