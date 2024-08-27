@@ -152,7 +152,7 @@ Pour plus d'informations sur la création d'une clé SSH, consultez ce [guide](/
 >>
 >> **Key Pair Name :** Entrez un nom pour votre clé.<br>
 >> **Key Type (Type de clé) :** Cliquez sur la `flèche déroulante` et sélectionnez `SSH Key`.<br>
->> **Load Public Key from a file (Charger la clé publique à partir d'un fichier) :**   Cliquez sur `Browse`{.action} pour spécifier l'emplacement de la clé publique sur votre ordinateur.<br>
+>> **Load Public Key from a file (Charger la clé publique à partir d'un fichier) :** Cliquez sur `Browse`{.action} pour spécifier l'emplacement de la clé publique sur votre ordinateur.<br>
 >> **Public Key :** Copiez et collez votre clé publique ici.<br>
 >> Cliquez sur `Import Key Pair`{.action} pour importer la clé.<br><br>
 >>![import key pair](images/import-ssh-key.png){.thumbnail}<br>
