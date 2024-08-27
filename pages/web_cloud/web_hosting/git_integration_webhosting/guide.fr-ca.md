@@ -1,7 +1,7 @@
 ---
 title: "Configurer et utiliser Git avec son hébergement web OVHcloud"
-excerpt: "Découvrez comment configurer et utiliser Git avec votre hébérgement web dans votre espace client OVHcloud"
-updated: 2024-07-25
+excerpt: "Découvrez comment configurer et utiliser Git avec votre hébergement web dans votre espace client OVHcloud"
+updated: 2024-08-22
 ---
 
 ## Objectif
@@ -88,7 +88,7 @@ Définissez un nom pour votre dépôt et remplissez les informations demandées.
 
 Enfin, cliquez sur `Create Repository`{.action}.
 
-Copiez l'adresse de votre dépôt GitHub. Celle-ci doit être de la forme `https://github.com/<username>/<repository_name>`{.action}. Retournez sur le formulaire d'association de Git et collez l'adresse de votre dépôt GitHub dans le champ `Dépôt`{.action}. Si le format de l'adresse n'est pas correct, le message d'erreur suivant apparaît :
+Copiez l'adresse de votre dépôt GitHub. Celle-ci doit être de la forme `https://github.com/<username>/<repository_name.git>`{.action}. Retournez sur le formulaire d'association de Git et collez l'adresse de votre dépôt GitHub dans le champ `Dépôt`{.action}. Si le format de l'adresse n'est pas correct, le message d'erreur suivant apparaît :
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/error-wrong-git-branch-name.png){.thumbnail}
 
@@ -112,7 +112,7 @@ En bas du formulaire d'association de Git, une section `Configuration du déploi
 Avant de valider le formulaire d'association de Git, assurez-vous que :
 
 - Votre clé SSH a bien été enregistrée dans votre compte GitHub.
-- L'adresse de votre dépôt GitHub est correcte. Elle doit être de la forme `https://github.com/<username>/<repository_name>`{.action}.
+- L'adresse de votre dépôt GitHub est correcte. Elle doit être de la forme `https://github.com/<username>/<repository_name.git>`{.action}.
 - Le nom de la branche du dépôt GitHub est correct.
 - Votre répertoire d'installation est vide.
 
