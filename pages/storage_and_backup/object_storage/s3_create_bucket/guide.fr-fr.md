@@ -28,7 +28,7 @@ Pour créer un bucket Object Storage, vous devez d'abord vous connecter à votre
 
 Cliquez sur `Créer un conteneur d'objet`{.action} et sélectionnez votre classe de stockage:
 
-![Select your solution](images/highperf-create-container-20220928081750384.png)
+![Select your solution](images/highperf-create-container-20240827.png)
 
 Sélectionnez une région :
 
