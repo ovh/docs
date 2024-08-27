@@ -1,7 +1,7 @@
 ---
 title: 'Creating an Instance via the Horizon interface'
 excerpt: 'Find out how to create an Instance via the Horizon interface'
-updated: 2024-08-22
+updated: 2024-08-27
 ---
 
 ## Objective
@@ -12,7 +12,7 @@ You can create multiple Instances directly in the Horizon interface, and also co
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/en/public-cloud/) in your OVHcloud account
+- A [Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) in your OVHcloud account
 - [Access to the Horizon interface](/pages/public_cloud/compute/introducing_horizon)
 
 ## Instructions
@@ -21,7 +21,7 @@ You can create multiple Instances directly in the Horizon interface, and also co
 
 As a general rule, we recommend creating a private network before creating an instance. You can later attach this network to your instance.
 
-To begin, log in to the Horizon interface. If you are unsure about how to do this, please refer to our [guide](/pages/public_cloud/compute/introducing_horizon).
+To begin, log in to the Horizon interface. If you are unsure about how to do this, please refer to [our guide](/pages/public_cloud/compute/introducing_horizon).
 
 Next, click on `Network`{.action} in the left-hand menu, then `Networks`{.action}.
 
@@ -115,7 +115,7 @@ Pre-built flavors are available for you, select the flavor of your choice undern
 
 ![createinstance](images/create-instance-step7.png){.thumbnail}
 
-For more information, consult the following [guide](/pages/public_cloud/compute/setup_security_group).
+For more information, consult [this guide](/pages/public_cloud/compute/setup_security_group).
 
 **Key Pair**
 
@@ -128,12 +128,12 @@ For more information, consult the following [guide](/pages/public_cloud/compute/
 
 In this section, you have the option to create a keypair, import a keypair or use an existing key pair.
 
-For more information on how to create an SSH key, consult this [guide](/pages/public_cloud/compute/public-cloud-first-steps#step-1-creating-ssh-keys).
+For more information on how to create an SSH key, consult [this guide](/pages/public_cloud/compute/public-cloud-first-steps#step-1-creating-ssh-keys).
 
 > [!tabs]
 > **+ Create Key Pair**
 >> 
->> To create a Keypair, click on the `+ Create Key Pair`{.action} button. Please note that with this option, additional steps have to be made before you are able to connect to the instance, especially if you are using the software Putty to connect to your instance. See this [section](/pages/public_cloud/compute/public-cloud-first-steps#step-4-connecting-to-your-instance) of the corresponding guide.
+>> To create a Keypair, click on the `+ Create Key Pair`{.action} button. Please note that with this option, additional steps have to be made before you are able to connect to the instance, especially if you are using the software Putty to connect to your instance. See [this section](/pages/public_cloud/compute/public-cloud-first-steps#step-4-connecting-to-your-instance) of the corresponding guide.
 >>
 >> **Key Pair Name:** Enter a name for your key.<br>
 >> **Key Type:** Click on the `drop down arrow` and select `SSH Key`.<br>
@@ -162,7 +162,7 @@ For more information on how to create an SSH key, consult this [guide](/pages/pu
 
 **Other options**
 
-Please note that these options are not mandatory for the creation of a basic instance. If you wish to explore these options further, consult the official [OpenStack documentation](https://docs.openstack.org/horizon/latest/user/launch-instances.html).
+Please note that these options are not mandatory for the creation of a basic instance. If you wish to explore these options further, consult the [official OpenStack documentation](https://docs.openstack.org/horizon/latest/user/launch-instances.html).
 
 |Information|Details|
 |---|---|

@@ -1,7 +1,7 @@
 ---
 title: "Créer une instance depuis l'interface Horizon"
 excerpt: "Apprenez à créer une instance depuis l'interface Horizon"
-updated: 2024-08-26
+updated: 2024-08-27
 ---
 
 ## Objectif
