@@ -33,10 +33,10 @@ content:'\25BC';
 - A [Hosted Private Cloud VMware on OVHcloud](/links/hosted-private-cloud/vmware) offer.
 - Access to the vSphere web interface of your Hosted Private Cloud VMware on OVHcloud.
 - You must have sufficient IAM rights with your OVHcloud service account and Hosted Private Cloud KMS resources. See the following guides:
-      - [IAM for VMware on OVHcloud - Overview and FAQ](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_getting_started).
-      - [IAM for VMware on OVHcloud - How to enable IAM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_activation).
-      - [IAM for VMware on OVHcloud - How to create an IAM vSphere role](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role).
-      - [IAM for VMware on OVHcloud - How to associate a vSphere role and a user with an IAM policy](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role_policy).
+  - [IAM for VMware on OVHcloud - Overview and FAQ](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_getting_started).
+  - [IAM for VMware on OVHcloud - How to enable IAM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_activation).
+  - [IAM for VMware on OVHcloud - How to create an IAM vSphere role](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role).
+  - [IAM for VMware on OVHcloud - How to associate a vSphere role and a user with an IAM policy](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role_policy).
 
 ## Instructions
 
@@ -47,7 +47,7 @@ content:'\25BC';
 
 ### Introduction
 
-/// details | The advantages of VM encryption with OVHcloud KMS (OKMS).
+**The advantages of VM encryption with OVHcloud KMS (OKMS).**
 
 The OVHcloud KMS is a managed service designed to:
 
@@ -100,7 +100,7 @@ KMIP provides a service compatible with vCenter and host-based encryption within
 > [!warning]
 >
 > Think carefully about the dependencies of your infrastructure on the key server. For more information, see [Guide 2 - HPC - Enable VM encryption with OKMS](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt).
-> 
+>
 > Some KMS solutions are delivered as virtual images, creating a dependency loop or other availability issues with the wrong KMS appliance location - [KMS compatibility - Official documentation](https://www.vmware.com/resources/compatibility/search.php?deviceCategory=kms)
 >
 
@@ -116,7 +116,7 @@ As well as settings for adding an external KMS cluster:
 
 - [Guide 2 - HPC - Enable VM encryption with OKMS](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt)
 
-- [KMS compatibility - Officiel documentation](https://www.vmware.com/resources/compatibility/search.php?deviceCategory=kms) 
+- [KMS compatibility - Officiel documentation](https://www.vmware.com/resources/compatibility/search.php?deviceCategory=kms)
 
 **BYOK** : Bring your owwn key.
 
@@ -146,9 +146,9 @@ Once you have ordered the OVHcloud KMS, you can configure it to work with your H
 
 For more information, follow our guide:
 
-- [Guide 2 - HPC - Enable VM encryption with OKMS](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt#activation-encryption) 
+- [Guide 2 - HPC - Enable VM encryption with OKMS](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt#activation-encryption)
 
-If you have a few gray areas on all the steps to follow, from the order up to the activation of VM encryption, use the [guide 2 summary](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt#summary) 
+If you have a few gray areas on all the steps to follow, from the order up to the activation of VM encryption, use the [guide 2 summary](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt#summary)
 
 For this option, we will use a **Standard key provider**
 
@@ -175,7 +175,7 @@ If you don't want the advantages of OVHcloud KMS (OKMS) and you still want to en
 
 This guide will detail the steps you need to follow:
 
-- [Guide 4 - HPC - Enabling VM encryption with a vNKP](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vm_encrypt-vnkp) 
+- [Guide 4 - HPC - Enabling VM encryption with a vNKP](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vm_encrypt-vnkp)
 
 ///
 

@@ -47,7 +47,7 @@ content:'\25BC';
 
 ### Introduction
 
-/// details | The advantages of VM encryption with OVHcloud KMS (OKMS).
+**The advantages of VM encryption with OVHcloud KMS (OKMS).**
 
 The OVHcloud KMS is a managed service designed to:
 
