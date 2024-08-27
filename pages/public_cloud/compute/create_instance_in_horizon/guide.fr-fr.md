@@ -143,7 +143,7 @@ Pour plus d'informations sur la création d'une clé SSH, consultez ce [guide](/
 >> Une fois la paire de clés créée, cliquez sur `Copy Private Key to Clipboard`{.action}, puis sur `Done`{.action}.<br><br>
 >>![create ssh key](images/create-ssh-key-1.png){.thumbnail}<br>
 >>
->> Une fois fait, la clé nouvellement créée sera automatiquement sélectionnée. Cliquez sur `Launch Instance`{.action} pour commencer la création de votre instance.<br><br>
+>> Une fois cela fait, la clé nouvellement créée sera automatiquement sélectionnée. Cliquez sur `Launch Instance`{.action} pour commencer la création de votre instance.<br><br>
 >>
 >>![create instance](images/launch-instance.png){.thumbnail}<br>
 >> 
