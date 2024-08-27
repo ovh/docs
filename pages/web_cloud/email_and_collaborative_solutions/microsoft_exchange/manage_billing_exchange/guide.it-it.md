@@ -1,7 +1,7 @@
 ---
 title: 'Gestire la fatturazione di un account Exchange'
 excerpt: 'Come effettuare le diverse azioni relative alla fatturazione del tuo servizio Exchange'
-updated: 2024-08-08
+updated: 2024-08-26
 ---
 
 ## Obiettivo
@@ -12,12 +12,12 @@ I servizi Hosted Exchange e Private Exchange offrono una gestione flessibile del
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
-- Disporre di una soluzione [Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
+- Disporre di una soluzione [Exchange](/web/emails-hosted-exchange).
 
 ## Procedura
 
-Accedi alla sezione `Webcloud`{.action} dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Seleziona il tuo servizio cliccando su `Microsoft`{.action} > `Exchange`{.action}.
+Accedi alla sezione `Webcloud`{.action} dello [Spazio Cliente OVHcloud](/links/manager). Seleziona il tuo servizio cliccando su `Microsoft`{.action} > `Exchange`{.action}.
 
 ### Hosted Exchange 
 
@@ -51,7 +51,7 @@ L’esempio che segue, ti mostra le operazioni da effettuare per passare a un ri
 
 #### Elimina account
 
-Per eliminare un account dalla tua piattaforma Hosted, è necessario, innanzitutto, disattivare l’account, modificando la sua configurazione di rinnovo in “**Annulla alla scadenza**”. Per farlo, consulta lo Step [“modifica la frequenza di rinnovo dei tuoi account.”](./#modifica-la-frequenza-di-rinnovo-dei-tuoi-account){.external}
+Per eliminare un account dalla tua piattaforma Hosted, è necessario, innanzitutto, disattivare l’account, modificando la sua configurazione di rinnovo in “**Annulla alla scadenza**”. Per farlo, consulta lo Step [“modifica la frequenza di rinnovo dei tuoi account.”](./#modifica-la-frequenza-di-rinnovo-dei-tuoi-account)
 
 Una volta disattivato, il tuo account sarà sospeso alla data di scadenza. Per eliminare l’indirizzo email ospitato dall’account prima della data di scadenza, è necessario ripristinarlo.
 
@@ -79,6 +79,10 @@ Dalla scheda `Account email`{.action}, clicca su `...`{.action} in corrispondenz
 
 ![billing_exchange](images/billing-exchange-07.png){.thumbnail}
 
-## Per saperne di più
+## Per saperne di più <a name="go-further"></a>
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
+
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
+
+Contatta la nostra [Community di utenti](/links/community).

@@ -1,7 +1,7 @@
 ---
 title: 'Gestionar la facturación de sus cuentas Exchange'
 excerpt: 'Cómo gestionar la facturación de un servicio Exchange'
-updated: 2024-08-08
+updated: 2024-08-26
 ---
 
 ## Objetivo
@@ -12,14 +12,14 @@ Los servicios Hosted Exchange y Private Exchange permiten una gestión flexible 
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
-- Tener contratado un plan [Exchange](https://www.ovhcloud.com/es-es/emails/hosted-exchange/){.external}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
+- Tener contratado un plan [Exchange](/web/emails-hosted-exchange).
 
 ## Procedimiento
 
-Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda al apartado `Webcloud`{.action}. Haga clic en `Microsoft`{.action}, luego en `Exchange`{.action} y, por último, seleccione la plataforma Exchange correspondiente.
+Inicie sesión en el [área de cliente de OVHcloud](/links/manager) y acceda al apartado `Webcloud`{.action}. Haga clic en `Microsoft`{.action}, luego en `Exchange`{.action} y, por último, seleccione la plataforma Exchange correspondiente.
 
-### Hosted Exchange 
+### Hosted Exchange
 
 Acceda a la pestaña `Cuentas de correo`{.action}, haga clic en el botón `Acciones`{.action} en la parte superior derecha y, luego, en `Contratar cuentas`{.action}
 
@@ -27,7 +27,7 @@ Acceda a la pestaña `Cuentas de correo`{.action}, haga clic en el botón `Accio
 
 #### Cambiar la periodicidad de sus cuentas <a name="periodicity"></a>
 
-En la ventana de gestión de su plataforma Exchange, haga clic en el botón `Acciones`{.action} en la parte superior derecha y, luego, en `Configuración de la renovación`{.action}. 
+En la ventana de gestión de su plataforma Exchange, haga clic en el botón `Acciones`{.action} en la parte superior derecha y, luego, en `Configuración de la renovación`{.action}.
 
 ![billing_exchange](images/billing-exchange-01.png){.thumbnail}
 
@@ -49,7 +49,7 @@ En el ejemplo a continuación, se indican las acciones que se deben realizar par
 
 #### Eliminar cuentas
 
-Para eliminar una cuenta de su plataforma Hosted, primero la debe dar de baja estableciendo su configuración de renovación en «**Expira al término**». Para ello, consulte el paso [«cambiar la periodicidad de sus cuentas»](./#cambiar-la-periodicidad-de-sus-cuentas){.external}.
+Para eliminar una cuenta de su plataforma Hosted, primero la debe dar de baja estableciendo su configuración de renovación en «**Expira al término**». Para ello, consulte el paso [«cambiar la periodicidad de sus cuentas»](./#cambiar-la-periodicidad-de-sus-cuentas).
 
 Una vez dada de baja la cuenta, se suspenderá en su fecha de expiración. Si quiere eliminar la dirección de correo electrónico alojada por la cuenta antes de su fecha de expiración, reiníciela.
 
@@ -77,6 +77,10 @@ En la pestaña `Cuentas de correo electrónico`{.action}, haga clic en `...`{.ac
 
 ![billing_exchange](images/billing-exchange-07.png){.thumbnail}
 
-## Más información
+## Más información <a name="go-further"></a>
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
+
+Interactúe con nuestra [comunidad de usuarios](/links/community).

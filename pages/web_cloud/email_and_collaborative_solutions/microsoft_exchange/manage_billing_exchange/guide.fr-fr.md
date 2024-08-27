@@ -1,7 +1,7 @@
 ---
 title: 'Gérer la facturation de vos comptes Exchange'
 excerpt: 'Découvrez comment gérer la facturation de votre service Exchange'
-updated: 2024-08-08
+updated: 2024-08-26
 ---
 
 ## Objectif
@@ -12,14 +12,14 @@ Les services Hosted Exchange et Private Exchange disposent d'une gestion flexibl
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
-- Avoir souscrit une offre [Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/){.external}.
+- Être connecté à votre [espace client OVHcloud](/links/manager).
+- Avoir souscrit une offre [Exchange](/web/emails-hosted-exchange).
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et dirigez-vous dans la section `Webcloud`{.action}. Cliquez sur `Microsoft`{.action} puis sur `Exchange`{.action} et sélectionnez la plateforme Exchange concernée.
+Connectez-vous à votre [espace client OVHcloud](/links/manager) et dirigez-vous dans la section `Webcloud`{.action}. Cliquez sur `Microsoft`{.action} puis sur `Exchange`{.action} et sélectionnez la plateforme Exchange concernée.
 
-### Hosted Exchange 
+### Hosted Exchange
 
 #### Commander des comptes supplémentaires
 
@@ -29,7 +29,7 @@ Dirigez-vous dans l'onglet `Comptes e-mail`{.action} puis cliquez sur le bouton 
 
 #### Modifier la périodicité de vos comptes <a name="periodicity"></a>
 
-Depuis la fenêtre de gestion de votre plateforme Exchange, cliquez sur le bouton `Actions`{.action} en haut à droite puis sur `Configuration du renouvellement`{.action}. 
+Depuis la fenêtre de gestion de votre plateforme Exchange, cliquez sur le bouton `Actions`{.action} en haut à droite puis sur `Configuration du renouvellement`{.action}.
 
 ![billing_exchange](images/billing-exchange-01.png){.thumbnail}
 
@@ -51,7 +51,7 @@ Dans l'exemple ci-dessous, voici les actions à mener pour passer un compte en r
 
 #### Supprimer des comptes
 
-Pour supprimer un compte de votre plateforme Hosted, il faut d'abord le résilier en passant la configuration de son renouvellement sur « **Expire au terme** ». Pour cela consultez l'étape [« modifier la périodicité de vos comptes »](./#modifier-la-periodicite-de-vos-comptes){.external}.
+Pour supprimer un compte de votre plateforme Hosted, il faut d'abord le résilier en passant la configuration de son renouvellement sur « **Expire au terme** ». Pour cela consultez l'étape [« modifier la périodicité de vos comptes »](./#modifier-la-periodicite-de-vos-comptes).
 
 Après résiliation, le compte sera suspendu à sa date d'expiration. Si vous souhaitez supprimer l'adresse e-mail hébergée par le compte avant sa date d'expiration, réinitialisez celui-ci.
 
@@ -79,6 +79,10 @@ Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur `...`{.action} à droite 
 
 ![billing_exchange](images/billing-exchange-07.png){.thumbnail}
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).

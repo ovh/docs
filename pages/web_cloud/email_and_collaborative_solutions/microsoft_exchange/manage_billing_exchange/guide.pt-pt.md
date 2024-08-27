@@ -1,7 +1,7 @@
 ---
 title: 'Gerir a faturação das contas Exchange'
 excerpt: 'Saiba como gerir a faturação do serviço Exchange.'
-updated: 2024-08-08
+updated: 2024-08-26
 ---
 
 ## Objetivo
@@ -12,12 +12,12 @@ Os serviços Hosted Exchange e Private Exchange dispõem de uma gestão flexíve
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
-- Ter uma oferta [Hosted Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+- Ter uma oferta [Hosted Exchange](/web/emails-hosted-exchange).
 
 ## Instruções
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e selecione a secção `Webcloud`{.action}. Clique em `Microsoft`{.action} e, a seguir, em `Exchange`{.action}. Por fim, selecione a plataforma Exchange em questão.
+Aceda à [Área de Cliente OVHcloud](/links/manager) e selecione a secção `Webcloud`{.action}. Clique em `Microsoft`{.action} e, a seguir, em `Exchange`{.action}. Por fim, selecione a plataforma Exchange em questão.
 
 ### Hosted Exchange 
 
@@ -51,7 +51,7 @@ No exemplo abaixo, eis as ações a realizar para fazer uma conta passar para re
 
 #### Eliminar contas
 
-Para eliminar uma conta da plataforma Hosted, primeiro tem de a cancelar alterando a configuração da renovação para «**Expiração no termo**». Para isso, consulte a etapa [«Alterar a periodicidade das contas»](./#alterar-a-periodicidade-das-contas){.external}.
+Para eliminar uma conta da plataforma Hosted, primeiro tem de a cancelar alterando a configuração da renovação para «**Expiração no termo**». Para isso, consulte a etapa [«Alterar a periodicidade das contas»](./#alterar-a-periodicidade-das-contas).
 
 Após o cancelamento, a conta será suspensa na data de expiração. Se deseja eliminar o endereço de e-mail alojado pela conta antes da data de expiração, tem de o restaurar.
 
@@ -79,6 +79,10 @@ No separador `Contas de e-mail`{.action}, clique em `...`{.action} à direita da
 
 ![billing_exchange](images/billing-exchange-07.png){.thumbnail}
 
-## Quer saber mais?
+## Quer saber mais? <a name="go-further"></a>
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
+
+Fale com nossa [comunidade de utilizadores](/links/community).

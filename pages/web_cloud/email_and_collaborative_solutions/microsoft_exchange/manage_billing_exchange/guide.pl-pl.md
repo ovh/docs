@@ -1,7 +1,7 @@
 ---
 title: 'Zarządzanie fakturowaniem kont Exchange'
 excerpt: 'Dowiedz się, jak zarządzać fakturowaniem usługi Exchange'
-updated: 2024-08-08
+updated: 2024-08-26
 ---
 
 ## Wprowadzenie
@@ -12,12 +12,12 @@ Usługi Hosted Exchange i Private Exchange umożliwiają elastyczne zarządzenie
 
 ## Wymagania początkowe
 
-- Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
-- Wykupienie usługi [Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/){.external}.
+- Dostęp do [panelu klienta OVHcloud](/links/manager).
+- Wykupienie usługi [Exchange](/web/emails-hosted-exchange).
 
 ## W praktyce
 
-Zaloguj się do Twojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji `Webcloud`{.action}. Kliknij `Microsoft`{.action}, następnie `Exchange`{.action}, po czym wybierz odpowiednią usługę Exchange.
+Zaloguj się do Twojego [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Webcloud`{.action}. Kliknij `Microsoft`{.action}, następnie `Exchange`{.action}, po czym wybierz odpowiednią usługę Exchange.
 
 ### Hosted Exchange 
 
@@ -51,7 +51,7 @@ Poniższy przykład zawiera działania, które należy przeprowadzić, aby przej
 
 #### Usuwanie kont
 
-Aby usunąć konto z usługi Hosted, należy najpierw zrezygnować z niego, przechodząc procedurę konfiguracji jego odnawiania w sekcji „**Wygasa z końcem**”. W tym celu należy zapoznać się z etapem [„zmiana częstotliwości odnawiania kont”](./#modifier-la-periodicite-de-vos-comptes){.external}.
+Aby usunąć konto z usługi Hosted, należy najpierw zrezygnować z niego, przechodząc procedurę konfiguracji jego odnawiania w sekcji „**Wygasa z końcem**”. W tym celu należy zapoznać się z etapem [„zmiana częstotliwości odnawiania kont”](./#modifier-la-periodicite-de-vos-comptes).
 
 Po rezygnacji konto będzie zawieszone do daty wygaśnięcia. Jeśli chcesz usunąć adres e-mail obsługiwany na koncie przed jego datą wygaśnięcia, należy go zresetować.
 
@@ -79,6 +79,10 @@ W karcie `Konta e-mail`{.action} kliknij `...`{.action} z prawej strony danego k
 
 ![billing_exchange](images/billing-exchange-07.png){.thumbnail}
 
-## Sprawdź również
+## Sprawdź również <a name="go-further"></a>
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
+
+Dołącz do [grona naszych użytkowników](/links/community).
