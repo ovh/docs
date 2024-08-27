@@ -1,7 +1,7 @@
 ---
 title: 'Finaliser une intervention de maintenance réalisée sur votre serveur dédié'
 excerpt: "Découvrez quelles actions peuvent être à effectuer par vos soins sur votre serveur suite à une intervention de maintenance"
-updated: 2024-01-15
+updated: 2024-08-27
 ---
 
 ## Objectif
@@ -13,7 +13,7 @@ Elle a pour objectif de vous accompagner et faire en sorte qu'il y ait le moins 
 
 ## Prérequis
 
-- Posséder un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/){.external}.
+- Posséder un [serveur dédié](/links/bare-metal/bare-metal).
 
 ## En pratique
 
@@ -26,12 +26,12 @@ Poursuivez la lecture de ce guide en cliquant sur le lien correspondant à votre
 
 - Système d'exploitation
     - [Ubuntu](#ubuntu)
-    - [CentOS/Alma Linux](#centos-almalinux)
+    - [CentOS / Alma Linux](#centos-almalinux)
     - [SmartOS](#smartos)
     - [FreeBSD](#freebsd)
     - [Gentoo](#gentoo)
 - Virtualisation
-    - [Proxmox](#proxmox)
+    - [Proxmox / Debian](#proxmox)
     - [XenServer](#xenserver)
     - [ESXi](#esxi)
     - [Windows (hyper-V)](#windows)
@@ -43,7 +43,8 @@ Poursuivez la lecture de ce guide en cliquant sur le lien correspondant à votre
 
 <a name="ubuntu"></a>
 
-### Ubuntu 
+### Ubuntu
+
 Si vous rencontrez un souci de connectivité réseau (par exemple, pas de ping après le remplacement de la carte mère), effectuez les actions suivantes :
 
 1\. Redémarrez le serveur en [mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).<br>
@@ -133,7 +134,7 @@ Dans certain cas, il est nécessaire de propager la nouvelle adresse MAC dans le
 
 <a name="centos-almalinux"></a>
 
-### CentOS/Alma Linux
+### CentOS / Alma Linux
 
 Si vous rencontrez un souci de connectivité réseau (par exemple, pas de ping après le remplacement de la carte mère), effectuez les actions suivantes : 
 
@@ -461,7 +462,7 @@ root@rescue:~#
 
 <a name="proxmox"></a>
 
-### Proxmox
+### Proxmox / Debian
 
 Si vous rencontrez un souci de connectivité réseau (par exemple, pas de ping après le remplacement de la carte mère), cela peut être lié à une erreur lors du démarrage du système, erreur causée par l'ancienne valeur d'adresse MAC toujours présente :
 
