@@ -169,7 +169,7 @@ Attention, ces options ne sont pas obligatoires pour la création d'une instance
 |---|---|
 |Custom script source (*Source de script personnalisé*)|Spécifiez la source entre une « direct entry » ou un « file ».|
 |Script data (*Données de script*)|Entrez le code de script dans le champ d'entrée (16 Ko maximum).|
-|Script file (*Fichier de script*)|Cliquez sur `Browse`{.action} to select the post-installation script.|
+|Script file (*Fichier de script*)|Cliquez sur `Browse`{.action} pour sélectionner le script de post-installation.|
 |Disk partitioning (*Partitionnement des disques*)|Choisissez entre "automatic" et "manual".|
 |Configuration disk (*Disque de configuration*)|Configurez OpenStack pour écrire des métadonnées sur un disque de configuration spécifique qui sera attaché à l'Instance au lancement.|
 
