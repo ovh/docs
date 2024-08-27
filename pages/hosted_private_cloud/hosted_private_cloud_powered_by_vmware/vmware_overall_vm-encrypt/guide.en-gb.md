@@ -1,7 +1,7 @@
 ---
 title: "KMS for VMware on OVHcloud - VM encryption use case scenarios"
 excerpt: "Discover the solutions available to you for encrypting VMs with or without OKMS in your managed OVHcloud Hosted Private Cloud VMware vSphere"
-updated: 2024-08-26
+updated: 2024-08-27
 ---
 
 <style>
