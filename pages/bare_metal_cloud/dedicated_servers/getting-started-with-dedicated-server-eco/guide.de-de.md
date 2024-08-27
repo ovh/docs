@@ -16,7 +16,7 @@ Ein dedizierter Server ist ein physischer Server ("Bare Metal") in einem unserer
 
 ## Voraussetzungen
 
-- Sie verfügen über einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) der Reihe Kimsufi, So You Start oder Rise in Ihrem Kunden-Account.
+- Sie verfügen über einen [Dedicated Server](/links/bare-metal/bare-metal) der Reihe Kimsufi, So You Start oder Rise in Ihrem Kunden-Account.
 - Sie haben administrativen Zugriff auf Ihren Server über SSH oder RDP (Windows). 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
@@ -40,7 +40,7 @@ Ein dedizierter Server ist ein physischer Server ("Bare Metal") in einem unserer
 
 > [!success]
 >
-> Weitere Informationen zu Server-Betriebssystemen finden Sie auf unserer [Webseite](https://www.ovhcloud.com/de/bare-metal/os/).
+> Weitere Informationen zu Server-Betriebssystemen finden Sie auf unserer [Webseite](/links/bare-metal/bare-metalos/).
 >
 
 Sie können Ihren Server in wenigen Schritten in Ihrem [OVHcloud Kundencenter](/links/manager) reinstallieren oder ein anderes Betriebssystem auswählen. Klicken Sie im Tab `Allgemeine Informationen`{.action} auf `...`{.action} neben `System (OS)` und danach auf `Installieren`{.action}.
@@ -55,7 +55,7 @@ Wählen Sie im Popup-Fenster eine der Installationsoptionen aus:
 
 > [!primary]
 >
-> Einige proprietäre Betriebssysteme und Plattformen wie Plesk oder Windows benötigen Lizenzen, die zusätzliche Kosten verursachen. Sie können Lizenzen [bei OVHcloud](https://www.ovhcloud.com/de/bare-metal/os/) oder einem externen Reseller beziehen. Danach müssen Sie Ihre Lizenz im Betriebssystem selbst oder über Ihr [OVHcloud Kundencenter](/links/manager) hinzufügen.
+> Einige proprietäre Betriebssysteme und Plattformen wie Plesk oder Windows benötigen Lizenzen, die zusätzliche Kosten verursachen. Sie können Lizenzen [bei OVHcloud](/links/bare-metal/bare-metalos/) oder einem externen Reseller beziehen. Danach müssen Sie Ihre Lizenz im Betriebssystem selbst oder über Ihr [OVHcloud Kundencenter](/links/manager) hinzufügen.
 >
 > Sie können alle Ihre Lizenzen im Bereich `Bare Metal Cloud`{.action} unter `Lizenzen`{.action} verwalten. In diesem Abschnitt können Sie auch über den Button `Aktionen`{.action} Lizenzen bestellen oder bestehende Lizenzen hinzufügen.
 >
@@ -93,7 +93,7 @@ Klicken Sie anschließend auf `Bestätigen`{.action}, um die Installation des Be
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Implementierung der Dienste auf einem Server haben.
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Implementierung der Dienste auf einem Server haben.
 >
 
 #### Linux
@@ -241,7 +241,7 @@ Weitere Informationen zum OVHcloud Monitoring finden Sie in [unserer Anleitung](
 
 > [!primary]
 >
-> Beachten Sie, dass [zusätzliche IP Adressen](https://www.ovhcloud.com/de/bare-metal/ip/) nicht mit der **Kimsufi** Reihe kompatibel sind.
+> Beachten Sie, dass [zusätzliche IP Adressen](/links/bare-metal/bare-metalip/) nicht mit der **Kimsufi** Reihe kompatibel sind.
 >
 
 #### IP-Bridge-Modus
@@ -311,6 +311,6 @@ Zur Aktivierung und Nutzung des Backup Storage folgen Sie der [zugehörigen Anle
 
 [OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation) (EN)
 
-Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](https://www.ovhcloud.com/de/professional-services/), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
+Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

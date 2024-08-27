@@ -18,7 +18,7 @@ Además del direccionamiento IP privado, el [vRack](https://www.ovh.com/world/es
 
 - Tener un bloque público de direcciones IP reservado en su cuenta, con un mínimo de cuatro direcciones.
 - Haber elegido un rango de direcciones IP privadas.
-- Tener un [servidor compatible con el vRack](https://www.ovh.com/world/es/servidores_dedicados/){.external}.
+- Tener un [servidor compatible con el vRack](/links/bare-metal/bare-metal){.external}.
 - Haber activado un servicio [vRack](https://www.ovh.com/world/es/soluciones/vrack/){.external}.
 - Estar conectado al [área de cliente de OVHcloud](/links/manager){.external}.
 

@@ -19,12 +19,12 @@ El protocolo de comunicación SSH (Secure Shell) es la herramienta principal par
 > [!warning]
 > La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 >
-> Si necesita ayuda para llevar a cabo estas acciones, puede ponerse en contacto con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/) o hablar con nuestra comunidad de usuarios en https://community.ovh.com/en/. OVHcloud no puede ofrecerle asistencia técnica.
+> Si necesita ayuda para llevar a cabo estas acciones, puede ponerse en contacto con un [proveedor especializado](/links/partner) o hablar con nuestra comunidad de usuarios en https://community.ovh.com/en/. OVHcloud no puede ofrecerle asistencia técnica.
 >
 
 ## Requisitos
 
-- Tener un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/) o un [VPS](https://www.ovhcloud.com/es/vps/) en su cuenta de OVHcloud.
+- Tener un [servidor dedicado](/links/bare-metal/bare-metal) o un [VPS](https://www.ovhcloud.com/es/vps/) en su cuenta de OVHcloud.
 - Una aplicación cliente SSH (en línea de comandos o en interfaz gráfica)
 
 > [!primary]
@@ -182,6 +182,6 @@ Consulte las FAQ oficiales y la documentación de PuTTY para más información.
 
 [VPS modo de rescate](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
-Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
+Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](/links/professional-services) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

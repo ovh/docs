@@ -24,8 +24,8 @@ Cette technologie vous permet d’échanger les adresses IP d'une solution à l'
 
 ## Prérequis
 
-- Disposer d'un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/){.external} dans votre espace client OVHcloud.
-- Disposer d'une [adresse Additional IP](https://www.ovhcloud.com/fr-ca/bare-metal/ip/).
+- Disposer d'un [serveur dédié](/links/bare-metal/bare-metal){.external} dans votre espace client OVHcloud.
+- Disposer d'une [adresse Additional IP](/links/bare-metal/bare-metal/ip/).
 - Être connecté à l'[espace client OVHcloud](/links/manager){.external}.
 
 > [!warning]

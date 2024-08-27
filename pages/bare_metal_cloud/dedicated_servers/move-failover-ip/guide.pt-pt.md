@@ -28,8 +28,8 @@ Esta tecnologia permite-lhe trocar os endereços IP de uma solução para outra 
 
 ## Requisitos
 
-- Ter um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/){.external} na Área de Cliente OVHcloud.
-- Dispor de um [endereço Additional IP](https://www.ovhcloud.com/pt/bare-metal/ip/).
+- Ter um [servidor dedicado](/links/bare-metal/bare-metal){.external} na Área de Cliente OVHcloud.
+- Dispor de um [endereço Additional IP](/links/bare-metal/bare-metalip/).
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 > [!warning]

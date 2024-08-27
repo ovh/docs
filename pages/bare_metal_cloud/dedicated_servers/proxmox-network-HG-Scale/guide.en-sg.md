@@ -15,8 +15,8 @@ updated: 2024-08-21
 
 ## Requirements
 
-- An [OVHcloud dedicated server](https://www.ovhcloud.com/en-sg/bare-metal/)
-- You must have [Additional IP addresses](https://www.ovhcloud.com/en-sg/bare-metal/ip/)
+- An [OVHcloud dedicated server](/links/bare-metal/bare-metal)
+- You must have [Additional IP addresses](/links/bare-metal/bare-metal/ip/)
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
@@ -273,8 +273,8 @@ This configuration is more flexible. You do not need to associate an Additional 
 
 * You must have reserved a public block of IP addresses in your account, with a minimum of four addresses. The block must be pointed to the vRack.
 * Prepare your chosen range of private IP addresses.
-* You must have a [server compatible with vRack](https://www.ovhcloud.com/en-sg/bare-metal/).
-* Activate a [vRack service](https://www.ovhcloud.com/en-sg/network/vrack/).
+* You must have a [server compatible with vRack](/links/bare-metal/bare-metal).
+* Activate a [vRack service](/links/network/vrack).
 * You must be logged in to the [OVHcloud Control Panel](/links/manager).
 
 #### Target configuration schema

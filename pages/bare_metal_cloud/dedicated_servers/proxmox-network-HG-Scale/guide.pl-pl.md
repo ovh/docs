@@ -26,8 +26,8 @@ W ofercie High Grade & SCALE nie jest możliwe działanie adresów Additional IP
 
 ## Wymagania początkowe
 
-- Posiadanie [serwera dedykowanego OVHcloud](https://www.ovhcloud.com/pl/bare-metal/)
-- Posiadanie adresu [Additional IP](https://www.ovhcloud.com/pl/bare-metal/ip/)
+- Posiadanie [serwera dedykowanego OVHcloud](/links/bare-metal/bare-metal)
+- Posiadanie adresu [Additional IP](/links/bare-metal/bare-metalip/)
 - Dostęp do [Panelu client OVHcloud](/links/manager)
 
 > [!warning]
@@ -206,7 +206,7 @@ Konfiguracja ta jest bardziej elastyczna. Nie musisz przypisywać żadnego Addit
 
 * Rezerwacja bloku publicznych adresów IP na Twoim koncie z minimalną liczbą czterech adresów. Blok musi być skierowany do sieci vRack.
 * Przygotowanie Twojego zakresu wybranych prywatnych adresów IP
-* Posiadanie [serwera kompatybilnego z vRack](https://www.ovhcloud.com/pl/bare-metal/){.external}
+* Posiadanie [serwera kompatybilnego z vRack](/links/bare-metal/bare-metal){.external}
 * Aktywacja usługi [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external}
 * Dostęp do [Panelu client OVHcloud](/links/manager)
 

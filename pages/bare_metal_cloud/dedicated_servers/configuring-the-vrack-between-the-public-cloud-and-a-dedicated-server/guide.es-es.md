@@ -10,7 +10,7 @@ updated: 2021-10-15
 
 ## Objetivo
 
-El [vRack](https://www.ovh.es/soluciones/vrack/){.external} de OVHcloud es una red privada que permite configurar el direccionamiento entre dos o más [servidores dedicados](https://www.ovhcloud.com/es-es/bare-metal/) de OVHcloud. También permite añadir [instancias de Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/) para crear una infraestructura de recursos físicos y virtuales.
+El [vRack](https://www.ovh.es/soluciones/vrack/){.external} de OVHcloud es una red privada que permite configurar el direccionamiento entre dos o más [servidores dedicados](/links/bare-metal/bare-metal) de OVHcloud. También permite añadir [instancias de Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/) para crear una infraestructura de recursos físicos y virtuales.
 
 **Esta guía explica cómo configurar la red privada entre una instancia de Public Cloud y un servidor dedicado.**
 
@@ -18,7 +18,7 @@ El [vRack](https://www.ovh.es/soluciones/vrack/){.external} de OVHcloud es una r
 
 * Haber creado una [instancia de Public Cloud de OVHcloud.](/pages/public_cloud/compute/public-cloud-first-steps)
 * Haber activado un servicio [vRack.](https://www.ovh.es/soluciones/vrack/)
-* Tener un [servidor dedicado](https://www.ovhcloud.com/es-es/bare-metal/) compatible con el vRack.
+* Tener un [servidor dedicado](/links/bare-metal/bare-metal) compatible con el vRack.
 * Estar conectado al [área de cliente de OVHcloud.](/links/manager)
 * Un rango de direcciones IP privadas que elija.
 

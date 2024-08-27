@@ -33,7 +33,7 @@ En cas de difficultés, nous vous recommandons de faire appel à un [prestataire
 
 ### OVHcloud dispose-t-il d'une sauvegarde pour restaurer vos données ?
 
-L'offre Serveur Dédié bénéficie en option de l'offre [Backup Storage](https://www.ovhcloud.com/fr/bare-metal/backup-storage/). La sauvegarde n'est cependant pas automatique. Retrouvez plus de détails sur le fonctionnement de cette solution sur notre guide « [Utiliser Backup Storage sur un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage) ».
+L'offre Serveur Dédié bénéficie en option de l'offre [Backup Storage](/links/bare-metal/bare-metal/backup-storage/). La sauvegarde n'est cependant pas automatique. Retrouvez plus de détails sur le fonctionnement de cette solution sur notre guide « [Utiliser Backup Storage sur un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage) ».
 
 Nos serveurs dédiés sont aussi compatibles avec nos [différentes solutions de sauvegarde](https://www.ovhcloud.com/fr/storage-solutions/).
 

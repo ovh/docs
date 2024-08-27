@@ -13,7 +13,7 @@ Aggregation is based on IEEE 802.3ad, Link Aggregation Control Protocol (LACP) t
 
 ## Requirements
 
-- A [dedicated server](https://www.ovhcloud.com/en-au/bare-metal/) in your OVHcloud account
+- A [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](/links/manager)
 - An Operating System / Hypervisor that supports the 802.3ad aggregation protocol (LACP)
 

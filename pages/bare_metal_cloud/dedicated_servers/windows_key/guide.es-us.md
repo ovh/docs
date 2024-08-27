@@ -16,7 +16,7 @@ Al instalar un sistema operativo Windows Server, es posible que la clave de acti
 
 ## Requisitos
 
-- Disponer de un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/os/server-windows/) con Windows instalado en su cuenta OVHcloud
+- Disponer de un [servidor dedicado](/links/bare-metal/bare-metal/os/server-windows/) con Windows instalado en su cuenta OVHcloud
 - Disponer de una licencia Windows SPLA en su cuenta de OVHcloud
 - Tener acceso administrativo al servidor a través de una conexión de escritorio remoto
 

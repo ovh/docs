@@ -17,12 +17,12 @@ Da sich Ihre Bedürfnisse und die OVHcloud Dedicated Server Produktreihen ständ
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Implementierung der Dienste auf einem Server haben. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Implementierung der Dienste auf einem Server haben. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
 >
 
 ## Voraussetzungen
 
-- Sie haben zwei [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account, mit installiertem Betriebssystem.
+- Sie haben zwei [Dedicated Server](/links/bare-metal/bare-metal) in Ihrem Kunden-Account, mit installiertem Betriebssystem.
 - Sie haben administrativen Zugriff (sudo) auf Ihre Server.
 - Sie verfügen über Systemadministrationskenntnisse.
 
@@ -48,7 +48,7 @@ Bei der Datenmigration wird in der Regel das Kopieren von Dateien von einem Serv
 
 ### Verwendung des Backup Storage (nur verfügbar für OVHcloud und So you Start)
 
-Mit der Option [Backup Storage](https://www.ovhcloud.com/de/bare-metal/backup-storage/) können Sie Daten auf einem externen Dienst speichern, der von Ihrem Server unabhängig ist.
+Mit der Option [Backup Storage](/links/bare-metal/bare-metalbackup-storage/) können Sie Daten auf einem externen Dienst speichern, der von Ihrem Server unabhängig ist.
 
 > [!warning]
 >
@@ -72,7 +72,7 @@ Weitere Informationen dazu finden Sie in unserer Anleitung "[Backup Storage auf 
 > - Es ist nicht möglich, eine Additional IP von einem OVHcloud Kunden-Account zu einem So you Start Account zu migrieren.
 >
 
-Wenn IP-Adressen-Reputation für Sie wichtig ist, empfehlen wir Ihnen dringend die Verwendung von [Additional IPs](https://www.ovhcloud.com/de/bare-metal/ip/), da diese bei einer Migration beibehalten werden können.
+Wenn IP-Adressen-Reputation für Sie wichtig ist, empfehlen wir Ihnen dringend die Verwendung von [Additional IPs](/links/bare-metal/bare-metalip/), da diese bei einer Migration beibehalten werden können.
 
 Wenn Sie diese IP-Adressen in Ihrem Kunden-Account haben, können Sie diese einfach auf den neuen Server umziehen.
 Lesen Sie hierzu unsere Anleitung: [Eine Additional IP umziehen](/pages/bare_metal_cloud/dedicated_servers/move-failover-ip).
@@ -90,8 +90,8 @@ Weitere Informationen finden Sie in unserer Dokumentation zu [Domains und DNS](/
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 
-Kontaktieren Sie für spezialisierte Dienstleistungen die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen die [OVHcloud Partner](/links/partner).
 
-Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](https://www.ovhcloud.com/de/professional-services/), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
+Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 
 Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -18,7 +18,7 @@ Die Unterstützung der vMAC-Funktionalität ist eine Voraussetzung für alle Akt
 
 ## Voraussetzungen
 
-- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account.
+- Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) in Ihrem Kunden-Account.
 - Sie können sich in der [OVHcloud API-Konsole](https://api.ovh.com/) einloggen.
 
 > [!primary]

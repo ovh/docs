@@ -15,7 +15,7 @@ Whether it is a hardware failure or accidentally deleting an important file, mai
 
 ## Requirements
 
-- An [OVHcloud Bare Metal Linux server](https://www.ovhcloud.com/de/bare-metal/)
+- An [OVHcloud Bare Metal Linux server](/links/bare-metal/bare-metal)
 - [Veeam Backup & Replication installed and registered](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication)
 
 > [!warning]

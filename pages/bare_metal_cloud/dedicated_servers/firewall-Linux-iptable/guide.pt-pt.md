@@ -19,12 +19,12 @@ As firewalls funcionam definindo regras que regulem o tráfego autorizado e o qu
 >
 > A OVHcloud oferece-lhe serviços que são da sua responsabilidade. Uma vez que não temos acesso a estas máquinas, não podemos administrá-las nem fornecer-lhe assistência. O cliente é o único responsável pela gestão e pela segurança do serviço.
 >
-> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades ou tiver dúvidas quanto à administração, utilização ou segurança de um servidor, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/). Para mais informações, aceda à secção “Quer saber mais?” deste manual.
+> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades ou tiver dúvidas quanto à administração, utilização ou segurança de um servidor, recomendamos que recorra a um [prestador de serviços especializado](/links/partner). Para mais informações, aceda à secção “Quer saber mais?” deste manual.
 >
 
 ## Requisitos
 
-- Ter um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/) na sua conta OVHcloud
+- Ter um [servidor dedicado](/links/bare-metal/bare-metal) na sua conta OVHcloud
 - Dispor de um acesso administrador (root/sudo) ao seu servidor através de SSH
 
 ## Instruções

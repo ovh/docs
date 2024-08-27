@@ -16,7 +16,7 @@ A un certo punto della vita del tuo server, potresti riscontrare un guasto a cau
 
 ## Prerequisiti
 
-- Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/)
+- Disporre di un [server dedicato](/links/bare-metal/bare-metal)
 - Aver riavviato il server in [Rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
 
 ## Procedura

@@ -25,7 +25,7 @@ Utilizza uno script personalizzato che potrebbe essere interessante nei seguenti
 
 ## Prerequisiti
 
-- Un [server dedicato](https://www.ovhcloud.com/it/bare-metal/) **pronto per essere boottato/riavviato** sul tuo account OVHcloud.
+- Un [server dedicato](/links/bare-metal/bare-metal) **pronto per essere boottato/riavviato** sul tuo account OVHcloud.
 - Avere accesso all'[API OVHcloud](https://api.ovh.com/).
 
 > [!warning]

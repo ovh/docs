@@ -19,7 +19,7 @@ Este suele ser el método de conexión más seguro y práctico.
 ## Requisitos
 
 - Estar conectado a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/es/&ovhSubsidiary=es)
-- Tener un [servidor dedicado](https://www.ovhcloud.com/es-es/bare-metal/) o un [VPS](https://www.ovhcloud.com/es/vps/) en su cuenta de OVHcloud
+- Tener un [servidor dedicado](/links/bare-metal/bare-metal) o un [VPS](https://www.ovhcloud.com/es/vps/) en su cuenta de OVHcloud
 - Instalar previamente una aplicación cliente SSH (línea de comandos o GUI)
 - Tener acceso de administrador (sudo) por SSH
 
@@ -405,6 +405,6 @@ Para configurar otra conexión con el servidor, repita los siguientes pasos:
 
 [Modo de rescate en VPS](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
-Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es-es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
+Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](/links/professional-services) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

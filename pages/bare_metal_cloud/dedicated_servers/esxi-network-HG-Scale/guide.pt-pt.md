@@ -25,7 +25,7 @@ Nas gamas High Grade & SCALE, o funcionamento dos Additional IP em modo *bridged
 
 * Ter reservado um bloco público de endereços IP na sua conta, com um mínimo de quatro endereços. O bloco deve ser apontado para o vRack.
 * Ter acesso ao intervalo de endereços de IP privados escolhidos.
-* Dispor de um [servidor dedicado compatível com o vRack](https://www.ovhcloud.com/pt/bare-metal/){.external}.
+* Dispor de um [servidor dedicado compatível com o vRack](/links/bare-metal/bare-metal){.external}.
 * Ter ativado um serviço [vRack](https://www.ovh.pt/solucoes/vrack/){.external}.
 * Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
 

@@ -16,7 +16,7 @@ Um servidor dedicado é um servidor físico ("bare metal") situado num dos nosso
 
 ## Requisitos
 
-- Ter um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/) das gamas Kimsufi, So You Start ou Rise na sua conta OVHcloud.
+- Ter um [servidor dedicado](/links/bare-metal/bare-metal) das gamas Kimsufi, So You Start ou Rise na sua conta OVHcloud.
 - Estar conectado em SSH em Linux ou enquanto administrador em Windows.
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
@@ -40,7 +40,7 @@ Um servidor dedicado é um servidor físico ("bare metal") situado num dos nosso
 
 > [!success]
 >
-> Encontre mais informações sobre os sistemas operativos dos servidores em [nossa página web](https://www.ovhcloud.com/pt/bare-metal/os/).
+> Encontre mais informações sobre os sistemas operativos dos servidores em [nossa página web](/links/bare-metal/bare-metalos/).
 >
 
 Pode facilmente reinstalar o seu servidor ou escolher outra imagem de SO a instalar na sua [Área de Cliente OVHcloud](/links/manager). No separador `Informações gerais`{.action}, clique em `...`{.action} em frente do sistema operativo e, a seguir, em `Instalar`{.action}.
@@ -55,7 +55,7 @@ Na nova janela, selecione uma das opções de instalação:
 
 > [!primary]
 >
-> Certos sistemas operativos ou plataformas proprietárias, como o Plesk ou o Windows, requerem licenças que geram custos suplementares. Pode comprar licenças [junto da OVHcloud](https://www.ovhcloud.com/pt/bare-metal/os/) ou junto de um revendedor externo. De seguida, deverá aplicar a sua licença no sistema operativo ou através da Área de [Cliente OVHcloud](/links/manager).
+> Certos sistemas operativos ou plataformas proprietárias, como o Plesk ou o Windows, requerem licenças que geram custos suplementares. Pode comprar licenças [junto da OVHcloud](/links/bare-metal/bare-metalos/) ou junto de um revendedor externo. De seguida, deverá aplicar a sua licença no sistema operativo ou através da Área de [Cliente OVHcloud](/links/manager).
 >
 > Pode gerir todas as licenças na secção `Bare Metal Cloud`{.action} sob `Licenças`{.action}. Nesta secção, também pode encomendar licenças ou adicionar licenças existentes através do botão `Ações`{.action}.
 >
@@ -93,7 +93,7 @@ Por fim, clique em `Confirmar`{.action} para lançar a instalação do sistema o
 > [!warning]
 > A OVHcloud oferece-lhe serviços cuja configuração e gestão são da sua responsabilidade. Por isso, é da responsabilidade do cliente assegurar o seu bom funcionamento.
 >
-> Este guia fornece as instruções necessárias para realizar as operações mais habituais. Contudo, recomendamos que contacte um [fornecedor de serviços especializado](https://partner.ovhcloud.com/pt/directory/) se tiver dificuldades ou dúvidas relativamente à administração, utilização ou implementação de serviços num servidor.
+> Este guia fornece as instruções necessárias para realizar as operações mais habituais. Contudo, recomendamos que contacte um [fornecedor de serviços especializado](/links/partner) se tiver dificuldades ou dúvidas relativamente à administração, utilização ou implementação de serviços num servidor.
 >
 
 ### Linux
@@ -241,7 +241,7 @@ Para mais informações sobre o sistema de monitorização, consulte [este manua
 
 > [!primary]
 >
-> Tenha em conta que os endereços IP [suplementares](https://www.ovhcloud.com/pt/bare-metal/ip/) não são compatíveis com a gama **Kimsufi**.
+> Tenha em conta que os endereços IP [suplementares](/links/bare-metal/bare-metalip/) não são compatíveis com a gama **Kimsufi**.
 >
 
 #### Modo bridge IP
@@ -311,6 +311,6 @@ Para ativar e utilizar a opção Backup Storage, consulte [este guia](/pages/bar
 
 [OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation) (EN)
 
-Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](https://www.ovhcloud.com/pt/professional-services/) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
+Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](/links/professional-services) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

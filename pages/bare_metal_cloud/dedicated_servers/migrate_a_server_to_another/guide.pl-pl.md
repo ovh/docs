@@ -49,7 +49,7 @@ Migracja danych zazwyczaj wiąże się z skopiowaniem plików z jednego serwera 
 
 ### Korzystanie z backup storage (dostępne tylko w OVHcloud i So you Start)
 
-Opcja [Backup Storage](https://www.ovhcloud.com/pl/bare-metal/backup-storage/) umożliwia przechowywanie danych w usłudze zewnętrznej. Jest przypisana wyłącznie do usługi, którą zamówiłeś.
+Opcja [Backup Storage](/links/bare-metal/bare-metalbackup-storage/) umożliwia przechowywanie danych w usłudze zewnętrznej. Jest przypisana wyłącznie do usługi, którą zamówiłeś.
 
 > [!warning]
 >
@@ -73,7 +73,7 @@ Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem dotyczącym [Korz
 > - Migracja adresu IP z konta OVHcloud do konta So you Start nie jest możliwa.
 >
 
-Jeśli reputacja Twoich adresów IP jest ważna, zalecamy korzystanie z adresów [Additional IP](https://www.ovhcloud.com/pl/bare-metal/ip/), które możesz zachować w przypadku migracji.
+Jeśli reputacja Twoich adresów IP jest ważna, zalecamy korzystanie z adresów [Additional IP](/links/bare-metal/bare-metalip/), które możesz zachować w przypadku migracji.
 
 Po otrzymaniu tych adresów IP wystarczy je przenieść na nowy serwer.
 W tym celu zapoznaj się z naszym przewodnikiem: [Przenieś Additional IP](/pages/bare_metal_cloud/dedicated_servers/move-failover-ip).
@@ -91,8 +91,8 @@ Więcej informacji znajdziesz w naszej dokumentacji dotyczącej [domeny i DNS](/
 
 ## Sprawdź również
 
-Jeśli chcesz uzyskać pomoc w migracji serwera, skontaktuj się z [nasza sieć partnerów](https://partner.ovhcloud.com/pl/directory/).
+Jeśli chcesz uzyskać pomoc w migracji serwera, skontaktuj się z [nasza sieć partnerów](/links/partner).
 
-Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
+Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](/links/professional-services), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
 
 Dołącz do społeczności naszych użytkowników na stronie: <https://community.ovh.com/en/>.

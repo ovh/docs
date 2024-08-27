@@ -26,8 +26,8 @@ Sulle gamme High Grade & SCALE, il funzionamento degli Additional IP in modalit�
 
 ## Prerequisiti
 
-- Disporre di un [server dedicato OVHcloud](https://www.ovhcloud.com/it/bare-metal/)
-- Disporre di un [Additional IP](https://www.ovhcloud.com/it/bare-metal/ip/)
+- Disporre di un [server dedicato OVHcloud](/links/bare-metal/bare-metal)
+- Disporre di un [Additional IP](/links/bare-metal/bare-metalip/)
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 > [!warning]
@@ -206,7 +206,7 @@ Questa configurazione è più flessibile: non è necessario associare un Additio
 
 * Disporre di un blocco pubblico di indirizzi IP nel proprio account, con almeno quattro indirizzi. Il blocco deve essere puntato verso la vRack.
 * Aver selezionato un intervallo di indirizzi IP privati
-* Disporre di un [server compatibile con la vRack](https://www.ovhcloud.com/it/bare-metal/){.external}
+* Disporre di un [server compatibile con la vRack](/links/bare-metal/bare-metal){.external}
 * Aver attivato un servizio [vRack](https://www.ovh.it/soluzioni/vrack/){.external}
 * Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 

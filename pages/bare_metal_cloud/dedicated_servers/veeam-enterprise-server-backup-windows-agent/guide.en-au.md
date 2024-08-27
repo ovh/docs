@@ -13,7 +13,7 @@ Learn how to configure the Veeam Agent for Microsoft Windows to back up your Bar
 
 ## Requirements
 
-- An [OVHcloud Bare Metal Windows server](https://www.ovhcloud.com/en-au/bare-metal/)
+- An [OVHcloud Bare Metal Windows server](/links/bare-metal/bare-metal)
 - [Veeam Backup and Replication 12.0](https://www.veeam.com/download-version.html?ad=downloads&tab=previous) installed
 - Veeam Agent for Microsoft Windows 6.0.2 [installation software](https://login.veeam.com/realms/veeamsso/protocol/openid-connect/auth?client_id=veeam-com&response_type=code&redirect_uri=https%3A%2F%2Fwww.veeam.com%2Foauth&scope=profile&state=e9a55dcbf050f86c5eb69ea264b8fb86) (Veeam account required)
 

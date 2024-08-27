@@ -6,7 +6,7 @@ updated: 2019-03-12
 
 ## Einleitung
 
-Das [vRack](https://www.ovh.de/loesungen/vrack/){.external} ist ein privates Netzwerk, mit dem Sie das Routing zwischen zwei oder mehr OVHcloud [Dedicated Servern](https://www.ovhcloud.com/de/bare-metal/){.external} einrichten können.
+Das [vRack](https://www.ovh.de/loesungen/vrack/){.external} ist ein privates Netzwerk, mit dem Sie das Routing zwischen zwei oder mehr OVHcloud [Dedicated Servern](/links/bare-metal/bare-metal){.external} einrichten können.
 
 **In dieser Anleitung erfahren Sie, wie Sie die IP-Block-Ankündigung im vRack ändern.**
 

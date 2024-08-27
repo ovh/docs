@@ -12,14 +12,14 @@ Setting up a web server and related software enables your cloud server to host d
 
 ## Requirements
 
-- A [dedicated server](https://www.ovhcloud.com/en-ca/bare-metal/), a [VPS](https://www.ovhcloud.com/en-ca/vps/) or a [Public Cloud instance](https://www.ovhcloud.com/en-ca/public-cloud/) in your OVHcloud account (excluding Windows systems)
+- A [dedicated server](/links/bare-metal/bare-metal), a [VPS](https://www.ovhcloud.com/en-ca/vps/) or a [Public Cloud instance](https://www.ovhcloud.com/en-ca/public-cloud/) in your OVHcloud account (excluding Windows systems)
 - Access to the [OVHcloud Control Panel](/links/manager)
 - Administrative access to your service via SSH
 
 > [!warning]
 > This tutorial will show you how to use one or more OVHcloud solutions with external tools, and the changes you need to make in specific contexts. You may need to adapt the instructions according to your situation.
 >
-> We recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-ca/directory/) or reach out to [our community](https://community.ovh.com/en/) if you face difficulties or doubts concerning the administration, usage or implementation of services on a server.
+> We recommend that you contact a [specialist service provider](/links/partner) or reach out to [our community](https://community.ovh.com/en/) if you face difficulties or doubts concerning the administration, usage or implementation of services on a server.
 >
 
 ## Instructions

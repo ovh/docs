@@ -18,7 +18,7 @@ Internet Protocol version 6 (IPv6) est le successeur d'Internet Protocol version
 
 ## Prérequis
 
-- Disposer d’un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) dans votre compte OVHcloud.
+- Disposer d’un [serveur dédié](/links/bare-metal/bare-metal) dans votre compte OVHcloud.
 - Avoir toutes les informations relatives à votre IPv6 (préfix, passerelle...).
 - Avoir des connaissances de base en SSH et en réseau.
 

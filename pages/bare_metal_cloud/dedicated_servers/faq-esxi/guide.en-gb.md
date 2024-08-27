@@ -29,11 +29,11 @@ However, we don't have all the devices we need to recover all of your data.
 The US National Cybersecurity and Infrastructure Security Agency ([CISA](https://www.cisa.gov/uscert/ncas/current-activity/2023/02/07/cisa-releases-esxiargs-ransomware-recovery-script){.external}) also made available [a tool](https://github.com/cisagov/ESXiArgs-Recover) to retrieve data from an ESXi server targeted by the ESXiArgs ransomware.<br>
 Using this tool requires advanced system administration skills. We advise you to use it only with knowledge of the facts, since OVHcloud cannot provide you with assistance on its use.
 
-In case of difficulties, we recommend that you contact a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) or contact our teams by [creating a support ticket](https://help.ovhcloud.com/csm?id=csm_get_help).
+In case of difficulties, we recommend that you contact a [specialist provider](/links/partner) or contact our teams by [creating a support ticket](https://help.ovhcloud.com/csm?id=csm_get_help).
 
 ### Does OVHcloud have a backup to restore my data?
 
-The Dedicated Server offering is optionally supported by [Backup Storage](https://www.ovhcloud.com/en-gb/bare-metal/backup-storage/). However, the backup is not automatic. More details on how this solution works can be found in our [Use Backup Storage on a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage) guide.
+The Dedicated Server offering is optionally supported by [Backup Storage](/links/bare-metal/bare-metal/backup-storage/). However, the backup is not automatic. More details on how this solution works can be found in our [Use Backup Storage on a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage) guide.
 
 Our dedicated servers are also compatible with our [different backup solutions](https://www.ovhcloud.com/en-gb/storage-solutions/).
 

@@ -26,8 +26,8 @@ Esta configuración también puede implementarse en cada uno de los servidores H
 
 ## Requisitos
 
-* Tener un [servidor dedicado de OVHcloud.](https://www.ovhcloud.com/es-es/bare-metal/)
-* Disponer de una dirección [Additional IP.](https://www.ovhcloud.com/es-es/bare-metal/ip/)
+* Tener un [servidor dedicado de OVHcloud.](/links/bare-metal/bare-metal)
+* Disponer de una dirección [Additional IP.](/links/bare-metal/bare-metal/ip/)
 * Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 > [!warning]
@@ -250,7 +250,7 @@ network:
 
 - Tener un bloque público de direcciones IP reservado en su cuenta, con un mínimo de cuatro direcciones.
 - Haber elegido un rango de direcciones IP privadas.
-- Tener un [servidor compatible con el vRack](https://www.ovhcloud.com/es-es/bare-metal/){.external}.
+- Tener un [servidor compatible con el vRack](/links/bare-metal/bare-metal){.external}.
 - Haber activado un servicio [vRack](https://www.ovh.es/soluciones/vrack/){.external}.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
 

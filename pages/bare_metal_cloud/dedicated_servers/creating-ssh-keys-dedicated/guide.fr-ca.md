@@ -15,7 +15,7 @@ Il s’agit généralement de la méthode de connexion la plus sûre et la plus 
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](/links/manager)
-- Disposer d'un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) ou d'un [VPS](https://www.ovhcloud.com/fr/vps/) dans votre compte OVHcloud
+- Disposer d'un [serveur dédié](/links/bare-metal/bare-metal) ou d'un [VPS](https://www.ovhcloud.com/fr/vps/) dans votre compte OVHcloud
 - Installer au préalable une application client SSH (ligne de commande ou GUI)
 - Disposer d'un accès administrateur (sudo) via SSH
 
@@ -403,6 +403,6 @@ Pour configurer une autre connexion au serveur, répétez les étapes suivantes 
 
 [Mode Rescue sur VPS](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.

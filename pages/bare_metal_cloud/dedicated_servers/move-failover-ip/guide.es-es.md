@@ -28,8 +28,8 @@ Esta tecnología le permite mover las direcciones IP de un servidor a otro en me
 
 ## Requisitos
 
-- Tener un [servidor dedicado](https://www.ovhcloud.com/es-es/bare-metal/){.external} en el área de cliente de OVHcloud.
-- Tener una [dirección Additional IP](https://www.ovhcloud.com/es-es/bare-metal/ip/).
+- Tener un [servidor dedicado](/links/bare-metal/bare-metal){.external} en el área de cliente de OVHcloud.
+- Tener una [dirección Additional IP](/links/bare-metal/bare-metal/ip/).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 > [!warning]

@@ -19,7 +19,7 @@ La vRack (rack virtuale) OVHcloud permette di unire virtualmente diversi server 
 ## Prerequisiti
 
 - Un servizio [vRack](https://www.ovh.it/soluzioni/vrack/) attivato nel tuo account
-- Diversi [server dedicati](https://www.ovhcloud.com/it/bare-metal/) (compatibili con la vRack)
+- Diversi [server dedicati](/links/bare-metal/bare-metal) (compatibili con la vRack)
 - Avere accesso amministratore (sudo) al server via SSH o RDP
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Aver selezionato una gamma di indirizzi IP privati

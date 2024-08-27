@@ -44,7 +44,7 @@ La migration des données consiste généralement à copier les fichiers d'un se
 
 ### Utiliser le backup storage (disponible uniquement sur OVHcloud et So you Start)
 
-L'option [Backup Storage](https://www.ovhcloud.com/fr/bare-metal/backup-storage/) vous permet de stocker des données sur un service externalisé à votre serveur. De base, il est lié uniquement au service sur lequel vous l'avez commandé.
+L'option [Backup Storage](/links/bare-metal/bare-metal/backup-storage/) vous permet de stocker des données sur un service externalisé à votre serveur. De base, il est lié uniquement au service sur lequel vous l'avez commandé.
 
 > [!warning]
 >
@@ -68,7 +68,7 @@ Consultez notre guide « [utiliser backup storage sur un serveur dédié](/pages
 > - Il n'est pas possible d'effectuer la migration d'une IP depuis un compte OVHcloud vers un compte So you Start.
 >
 
-Si la réputation de vos adresses IP est importante, il est fortement conseillé d'utiliser des [Additional IP](https://www.ovhcloud.com/fr/bare-metal/ip/), celles-ci pouvant être conservées en cas de migration.
+Si la réputation de vos adresses IP est importante, il est fortement conseillé d'utiliser des [Additional IP](/links/bare-metal/bare-metal/ip/), celles-ci pouvant être conservées en cas de migration.
 
 Une fois ces IP en votre possession, il vous suffira de déplacer celles-ci vers le nouveau serveur.<br>
 À cet effet, consultez notre guide dédié : [Déplacer une Additional IP](/pages/bare_metal_cloud/dedicated_servers/move-failover-ip).
@@ -88,6 +88,6 @@ Pour plus d'informations, consultez notre documentation sur les [domaines et DNS
 
 Pour bénéficier d'une assistance à la migration de votre serveur, nous vous proposons de contacter [notre réseau de partenaires](https://partner.ovhcloud.com/fr/directory/).
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

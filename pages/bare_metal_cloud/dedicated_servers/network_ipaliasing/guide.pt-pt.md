@@ -28,8 +28,8 @@ O IP aliasing é uma configuração de rede para servidores dedicados que permit
 
 ## Requisitos
 
-- Ter um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/){.external}.
-- Dispor de um ou vários endereços [Additional IP](https://www.ovhcloud.com/pt/bare-metal/ip/){.external}.
+- Ter um [servidor dedicado](/links/bare-metal/bare-metal){.external}.
+- Dispor de um ou vários endereços [Additional IP](/links/bare-metal/bare-metalip/){.external}.
 - Estar ligado ao servidor usando o protocolo SSH.
 
 > [!warning]

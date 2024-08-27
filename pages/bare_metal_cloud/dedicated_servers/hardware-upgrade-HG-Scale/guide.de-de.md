@@ -19,7 +19,7 @@ Dedicated Server der Reihen High Grade und SCALE bieten Ihnen eine Skalierungsop
 
 ## Voraussetzungen
 
-- Sie haben einen [High Grade Dedicated Server](https://www.ovhcloud.com/de/bare-metal/high-grade/) oder [SCALE Dedicated Server](https://www.ovhcloud.com/de/bare-metal/scale/).
+- Sie haben einen [High Grade Dedicated Server](/links/bare-metal/bare-metalhigh-grade/) oder [SCALE Dedicated Server](/links/bare-metal/bare-metalscale/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
@@ -80,7 +80,7 @@ Möchten Sie gleichzeitig Storage und RAM erweitern? Dann bestellen und bezahlen
 
 ## Weiterführende Informationen <a name="go-further"></a>
  
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
  
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
  

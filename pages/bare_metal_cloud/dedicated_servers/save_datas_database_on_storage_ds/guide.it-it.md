@@ -8,7 +8,7 @@ updated: 2018-09-12
 
 I dati digitali sono informazioni sensibili: la loro perdita o compromissione potrebbe avere impatto sulla tua attività. Dato che la totale eliminazione di questi rischi non esiste, è consigliabile realizzare una copia dei propri dati almeno una volta al giorno e preferibilmente su server o soluzioni di storage diversi dalle infrastrutture di produzione.
 
-OVHcloud offre una [gamma di server dedicati](https://www.ovhcloud.com/it/bare-metal/storage/){.external} appositamente sviluppata per operazioni di archiviazione. Queste macchine sono dotate di un minimo di 4 hard disk, che possono essere utilizzati per il backup di infrastrutture ospitate in OVHcloud o presso altri provider tramite la rete pubblica.
+OVHcloud offre una [gamma di server dedicati](/links/bare-metal/bare-metalstorage/){.external} appositamente sviluppata per operazioni di archiviazione. Queste macchine sono dotate di un minimo di 4 hard disk, che possono essere utilizzati per il backup di infrastrutture ospitate in OVHcloud o presso altri provider tramite la rete pubblica.
 
 <b>Questa guida ti mostra come configurare un server di storage OVHcloud per rispondere alle tue esigenze, creare cartelle in cui salvare le copie eseguite e automatizzare i backup dei dati di due server remoti tramite protocollo SCP.</b>
 
@@ -24,8 +24,8 @@ OVHcloud offre una [gamma di server dedicati](https://www.ovhcloud.com/it/bare-m
 
 ### Hardware e software necessari
 
-- Un [server di storage OVHcloud](https://www.ovhcloud.com/it/bare-metal/storage/){.external}
-- Un’infrastruttura di produzione ([VPS](https://www.ovhcloud.com/it/vps/){.external}, [server dedicati](https://www.ovhcloud.com/it/bare-metal/){.external}, [Public Cloud](https://www.ovhcloud.com/it/public-cloud/){.external}...)
+- Un [server di storage OVHcloud](/links/bare-metal/bare-metalstorage/){.external}
+- Un’infrastruttura di produzione ([VPS](https://www.ovhcloud.com/it/vps/){.external}, [server dedicati](/links/bare-metal/bare-metal){.external}, [Public Cloud](https://www.ovhcloud.com/it/public-cloud/){.external}...)
 - Una connessione SSH configurata tra il server di storage e l’infrastruttura di produzione
 - Una rete privata [vRack](https://www.ovh.it/soluzioni/vrack/){.external} tra i tuoi server (consigliato)
 
@@ -33,7 +33,7 @@ OVHcloud offre una [gamma di server dedicati](https://www.ovhcloud.com/it/bare-m
 
 ### Step 1: scegli il livello di RAID più appropriato
 
-I [server di storage OVHcloud](https://www.ovhcloud.com/it/bare-metal/storage/){.external} dispongono di configurazioni hardware con diversi hard disk. In questa guida, utilizzeremo un server con RAID software (o _softRAID_) di quattro dischi da 6 TB ciascuno.
+I [server di storage OVHcloud](/links/bare-metal/bare-metalstorage/){.external} dispongono di configurazioni hardware con diversi hard disk. In questa guida, utilizzeremo un server con RAID software (o _softRAID_) di quattro dischi da 6 TB ciascuno.
 
 Per configurare lo storage dei dati, OVHcloud propone i livelli di RAID 0, 1, 5, 6 e 10, ognuno dei quali presenta vantaggi e inconvenienti in termini di prestazioni e resilienza. Con quattro dischi, per salvare i nostri dati nel modo più efficace, possiamo scegliere tra RAID 5, 6 o 10 (in questo caso, il RAID 0 e 1 non sono adeguati).
 

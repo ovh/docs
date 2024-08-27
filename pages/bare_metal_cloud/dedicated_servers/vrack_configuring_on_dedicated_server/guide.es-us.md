@@ -19,7 +19,7 @@ El vRack (rack virtual) de OVHcloud permite agrupar virtualmente varios servidor
 ## Requisitos
 
 - Un servicio [vRack](https://www.ovh.com/world/es/soluciones/vrack/) activado en su cuenta.
-- Varios [servidores dedicados](https://www.ovhcloud.com/es/bare-metal/) (compatibles con el vRack).
+- Varios [servidores dedicados](/links/bare-metal/bare-metal) (compatibles con el vRack).
 - Tener acceso de administrador (sudo) al servidor por SSH o RDP.
 - Tienes acceso a tu [área de cliente de OVHcloud](/links/manager).
 - Tener un rango de direcciones IP privadas.

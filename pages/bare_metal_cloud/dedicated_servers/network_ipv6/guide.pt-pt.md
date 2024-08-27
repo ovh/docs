@@ -22,7 +22,7 @@ O IPv6 é a versão mais recente do Internet Protocol (IP). Foi concebido para s
 
 ## Requisitos
 
-- Um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/) na sua conta OVHcloud.
+- Um [servidor dedicado](/links/bare-metal/bare-metal) na sua conta OVHcloud.
 - Todos os seus dados IPv6 (prefixo, gateway, etc.).
 - Ter conhecimentos básicos de [SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) e redes.
 

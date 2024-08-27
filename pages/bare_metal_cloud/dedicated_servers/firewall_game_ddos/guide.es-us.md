@@ -24,7 +24,7 @@ Nuestros servidores dedicados Bare Metal para juegos incluyen una protección DD
 
 ## Requerimientos
 
-- Un [servidor dedicado OVHcloud **Game**](https://www.ovhcloud.com/es/bare-metal/prices/#filterType=range_element&filterValue=game)
+- Un [servidor dedicado OVHcloud **Game**](/links/bare-metal/bare-metal/prices/#filterType=range_element&filterValue=game)
 - Acceso al área de cliente de [OVHcloud](/links/manager)
 
 > [!warning]
@@ -99,7 +99,7 @@ Debido a esto, no planeamos lanzar un perfil público de firewall FiveM GAME par
 
 #### Rust
 
-El firewall GAME soporta Rust con un perfil detallado. Más información sobre el alojamiento de Rust en los servidores de OVHcloud [aquí](https://www.ovhcloud.com/es/bare-metal/game/rust-server/).
+El firewall GAME soporta Rust con un perfil detallado. Más información sobre el alojamiento de Rust en los servidores de OVHcloud [aquí](/links/bare-metal/bare-metal/game/rust-server/).
 
 #### Minecraft
 
@@ -133,6 +133,6 @@ Para ello, tendrá que compartir volcados de tráfico de red relevantes como eje
 
 ## Más información <a name="go-further"></a>
 
-Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
+Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](/links/professional-services) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

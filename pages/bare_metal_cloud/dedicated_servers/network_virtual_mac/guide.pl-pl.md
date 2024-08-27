@@ -17,7 +17,7 @@ OVHcloud umożliwia Ci powiązanie wirtualnego adresu MAC z adresem IP, abyś m�
 ## Wymagania początkowe
 
 - Posiadanie [serwera dedykowanego](https://www.ovh.pl/serwery_dedykowane/){.external}
-- Posiadanie [adresu Additional IP](https://www.ovhcloud.com/pl/bare-metal/ip/){.external} lub bloku Additional IP (RIPE)
+- Posiadanie [adresu Additional IP](/links/bare-metal/bare-metalip/){.external} lub bloku Additional IP (RIPE)
 - Dostęp do [Panelu klienta](/links/manager){.external} lub do [API OVHcloud](https://api.ovh.com/)
 - Twój serwer musi obsługiwać wirtualne adresy MAC. Zapoznaj się [z tym przewodnikiem](/pages/bare_metal_cloud/dedicated_servers/network_support_virtual_mac).
 

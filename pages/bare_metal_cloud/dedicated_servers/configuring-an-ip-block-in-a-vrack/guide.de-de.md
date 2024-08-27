@@ -14,7 +14,7 @@ Neben Private IP Addressing ist es mit dem [vRack](https://www.ovh.de/loesungen/
 
 - Sie haben einen öffentlichen IP-Adressblock mit mindestens vier Adressen in Ihrem Account reserviert.
 - Sie haben den gewünschten privaten IP-Adressbereich vorbereitet.
-- Sie verfügen über einen mit vRack kompatiblen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/).
+- Sie verfügen über einen mit vRack kompatiblen [Dedicated Server](/links/bare-metal/bare-metal).
 - Sie haben einen [vRack](https://www.ovh.de/loesungen/vrack/){.external} Dienst aktiviert.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 

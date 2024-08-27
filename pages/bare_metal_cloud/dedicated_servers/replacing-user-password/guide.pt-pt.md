@@ -23,7 +23,7 @@ Neste caso, pode ligar-se ao seu servidor através do modo rescue da OVHcloud, q
 
 ## Requisitos
 
-- Ter um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/) ou um [VPS](https://www.ovhcloud.com/pt/vps/) na sua conta OVHcloud
+- Ter um [servidor dedicado](/links/bare-metal/bare-metal) ou um [VPS](https://www.ovhcloud.com/pt/vps/) na sua conta OVHcloud
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 
 > [!primary]
@@ -42,7 +42,7 @@ Não se esqueça de consultar também os nossos guias de primeiros passos:
 >
 > A OVHcloud oferece-lhe serviços cuja configuração, gestão e responsabilidade é da sua responsabilidade. Assim, deverá assegurar o seu bom funcionamento.
 >
-> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades ou dúvidas relativamente à administração, utilização ou implementação de serviços num servidor, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/) ou que contacte a [nossa comunidade](https://community.ovh.com/en/).
+> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades ou dúvidas relativamente à administração, utilização ou implementação de serviços num servidor, recomendamos que recorra a um [fornecedor especializado](/links/partner) ou que contacte a [nossa comunidade](https://community.ovh.com/en/).
 >
 
 <a name="step1"></a>

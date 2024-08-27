@@ -50,7 +50,7 @@ La migración de los datos suele implicar copiar archivos de un servidor a otro.
 
 ### Uso del Backup Storage (disponible únicamente en OVHcloud y So you Start)
 
-Con la opción [Backup Storage](https://www.ovhcloud.com/es/bare-metal/backup-storage/) de backup, puede almacenar datos en un servicio externo al servidor. Solo está relacionado con el servicio que le ha contratado.
+Con la opción [Backup Storage](/links/bare-metal/bare-metal/backup-storage/) de backup, puede almacenar datos en un servicio externo al servidor. Solo está relacionado con el servicio que le ha contratado.
 
 > [!warning]
 >
@@ -74,7 +74,7 @@ Para más información, consulte nuestra guía sobre [utilizar Backup Storage en
 > - No es posible migrar una IP desde una cuenta de OVHcloud a una cuenta de So you Start.
 >
 
-Si la reputación de sus direcciones IP es importante, le recomendamos encarecidamente que utilice las direcciones [Additional IP](https://www.ovhcloud.com/es/bare-metal/ip/), ya que pueden conservarse si se migra.
+Si la reputación de sus direcciones IP es importante, le recomendamos encarecidamente que utilice las direcciones [Additional IP](/links/bare-metal/bare-metal/ip/), ya que pueden conservarse si se migra.
 
 Una vez que disponga de estas direcciones Additional IP, solo tiene que moverlas al nuevo servidor.
 Para ello, consulte nuestra guía: [Mover una Additional IP](/pages/bare_metal_cloud/dedicated_servers/move-failover-ip).
@@ -92,8 +92,8 @@ Para más información, consulte nuestra documentación sobre los [dominios y DN
 
 ## Más información
 
-Si desea obtener ayuda para migrar su servidor, póngase en contacto con [nuestra red de partners](https://partner.ovhcloud.com/es/directory/).
+Si desea obtener ayuda para migrar su servidor, póngase en contacto con [nuestra red de partners](/links/partner).
 
-Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
+Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](/links/professional-services) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -18,13 +18,13 @@ IP aliasing is a special network configuration for your OVHcloud dedicated serve
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-ie/directory/) if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](/links/partner) if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
 >
 
 ## Requirements
 
-- A [dedicated server](https://www.ovhcloud.com/en-ie/bare-metal/) in your OVHcloud account
-- An [Additional IP address](https://www.ovhcloud.com/en-ie/bare-metal/ip/) or an Additional IP block (RIPE or ARIN)
+- A [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account
+- An [Additional IP address](/links/bare-metal/bare-metal/ip/) or an Additional IP block (RIPE or ARIN)
 - Access via SSH or remote desktop connection for Windows
 - Basic networking and administration knowledge
 

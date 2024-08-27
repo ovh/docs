@@ -40,7 +40,7 @@ Un serveur dédié est un serveur physique (« bare metal ») situé dans l’un
 
 > [!success]
 >
-> Retrouvez plus d’informations sur les systèmes d’exploitation des serveurs sur [notre page web](https://www.ovhcloud.com/fr-ca/bare-metal/os/).
+> Retrouvez plus d’informations sur les systèmes d’exploitation des serveurs sur [notre page web](/links/bare-metal/bare-metal/os/).
 >
 
 Vous pouvez facilement réinstaller votre serveur ou choisir une autre image d'OS à installer dans votre [espace client OVHcloud](/links/manager). Sous l'onglet `Informations générales`{.action}, cliquez sur `...`{.action} en face du système d'exploitation, puis cliquez sur `Installer`{.action}.
@@ -55,7 +55,7 @@ Dans la fenêtre qui apparaît, sélectionnez l'une des options d'installation :
 
 > [!primary]
 >
-> Certains systèmes d'exploitation ou plates-formes propriétaires tels que Plesk ou Windows nécessitent des licences qui génèrent des frais supplémentaires. Vous pouvez acheter des licences [auprès de OVHcloud](https://www.ovhcloud.com/fr-ca/bare-metal/os/) ou auprès d'un revendeur externe. Vous devrez ensuite appliquer votre licence, dans le système d'exploitation lui-même ou à l'aide de votre [espace client OVHcloud](/links/manager).
+> Certains systèmes d'exploitation ou plates-formes propriétaires tels que Plesk ou Windows nécessitent des licences qui génèrent des frais supplémentaires. Vous pouvez acheter des licences [auprès de OVHcloud](/links/bare-metal/bare-metal/os/) ou auprès d'un revendeur externe. Vous devrez ensuite appliquer votre licence, dans le système d'exploitation lui-même ou à l'aide de votre [espace client OVHcloud](/links/manager).
 >
 > Vous pouvez gérer toutes vos licences dans la section `Bare Metal Cloud`{.action} sous `Licences`{.action}. Dans cette section, vous pouvez également commander des licences ou ajouter des licences existantes via le bouton `Actions`{.action}.
 >

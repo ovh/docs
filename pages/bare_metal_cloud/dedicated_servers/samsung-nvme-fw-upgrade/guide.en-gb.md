@@ -14,7 +14,7 @@ Firmware changelog : <https://last-public-ovh-baremetal.snap.mirrors.ovh.net/har
 
 ## Requirements
 
-- An [Advance Dedicated Server](https://www.ovhcloud.com/en-gb/bare-metal/advance/) with NVMe Samsung PM9A1, from the following:
+- An [Advance Dedicated Server](/links/bare-metal/bare-metal/advance/) with NVMe Samsung PM9A1, from the following:
     - Advance-1
     - Advance-2
     - Advance-3
@@ -377,6 +377,6 @@ Your NVMe drive now should have the firmware version **GXA7802Q**.
 
 ## Go further <a name="gofurther"></a>
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our user community on <https://community.ovh.com/en/>.

@@ -25,7 +25,7 @@ En las gamas High Grade & SCALE, no es posible el funcionamiento de las Addition
 
 * Tener un bloque público de direcciones IP reservado en su cuenta, con un mínimo de cuatro direcciones. El bloque debe apuntarse al vRack.
 * Haber elegido un rango de direcciones IP privadas.
-* Tener un [servidor dedicado compatible con el vRack](https://www.ovhcloud.com/es-es/bare-metal/){.external}.
+* Tener un [servidor dedicado compatible con el vRack](/links/bare-metal/bare-metal){.external}.
 * Haber activado un servicio [vRack](https://www.ovh.es/soluciones/vrack/){.external}.
 * Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
 

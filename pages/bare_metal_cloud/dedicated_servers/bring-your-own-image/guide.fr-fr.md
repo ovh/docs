@@ -17,7 +17,7 @@ En plus des prérequis et limitations mentionnés ci-dessous, vous devez vous as
 
 ## Prérequis
 
-- Un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) dans votre compte OVHcloud
+- Un [serveur dédié](/links/bare-metal/bare-metal) dans votre compte OVHcloud
 - Être connecté à l'[espace client OVHcloud](/links/manager) (pour la méthode de [déploiement via l'espace client](#viacontrolpanel) de ce guide)
 - Avoir accès à l'[API OVHcloud](/pages/manage_and_operate/api/first-steps) (pour la méthode de [déploiement via l'API](#viaapi) de ce guide)
 - Votre image doit être inférieure à la RAM du serveur moins 3 Gio

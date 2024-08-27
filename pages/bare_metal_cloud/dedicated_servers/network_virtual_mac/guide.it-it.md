@@ -17,7 +17,7 @@ OVHcloud ti permette di associare un indirizzo MAC virtuale a un indirizzo IP al
 ## Prerequisiti
 
 - Possedere un [server dedicato](https://www.ovh.it/server_dedicati/){.external}
-- Disporre di un [indirizzo Additional IP](https://www.ovhcloud.com/it/bare-metal/ip/){.external} o di un blocco Additional IP (RIPE)
+- Disporre di un [indirizzo Additional IP](/links/bare-metal/bare-metalip/){.external} o di un blocco Additional IP (RIPE)
 - Essere connesso allo [Spazio Cliente OVHcloud](/links/manager){.external} o all'[API OVHcloud](https://api.ovh.com/)
 - Il tuo server deve supportare i MAC virtuali. Consulta [questa guida](/pages/bare_metal_cloud/dedicated_servers/network_support_virtual_mac) per determinarlo
 

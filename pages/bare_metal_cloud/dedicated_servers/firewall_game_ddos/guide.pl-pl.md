@@ -24,7 +24,7 @@ Serwery dedykowane Gaming Bare Metal wyposażone są w funkcję ochrony Anty-DDo
 
 ## Wymagania początkowe
 
-- An [OVHcloud **Game** dedicated server](https://www.ovhcloud.com/pl/bare-metal/prices/#filterType=range_element&filterValue=game)
+- An [OVHcloud **Game** dedicated server](/links/bare-metal/bare-metalprices/#filterType=range_element&filterValue=game)
 - Dostęp do [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
@@ -98,7 +98,7 @@ W związku z tym nie planujemy wydania publicznego profilu firewall FiveM GAME d
 
 #### Rust
 
-Firewall GAME obsługuje Rust o profilu szczegółowym. Więcej informacji o hostingu Rust znajdziesz na serwerach OVHcloud [here](https://www.ovhcloud.com/pl/bare-metal/game/rust-server/).
+Firewall GAME obsługuje Rust o profilu szczegółowym. Więcej informacji o hostingu Rust znajdziesz na serwerach OVHcloud [here](/links/bare-metal/bare-metalgame/rust-server/).
 
 #### Minecraft
 
@@ -132,6 +132,6 @@ W tym celu należy udostępnić odpowiednie zrzuty ruchu sieciowego jako przykł
 
 ## Sprawdź również
 
-Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
+Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](/links/professional-services), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

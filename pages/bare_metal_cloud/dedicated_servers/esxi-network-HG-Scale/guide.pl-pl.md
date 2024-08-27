@@ -25,7 +25,7 @@ W ofercie High Grade & SCALE nie jest możliwe działanie adresów Additional IP
 
 * Rezerwacja bloku publicznych adresów IP na Twoim koncie z minimalną liczbą czterech adresów. Blok musi być skierowany do sieci vRack.
 * Przygotowanie Twojego zakresu wybranych prywatnych adresów IP
-* Posiadanie [serwera dedykowanego kompatybilnego z vRack](https://www.ovhcloud.com/pl/bare-metal/){.external}.
+* Posiadanie [serwera dedykowanego kompatybilnego z vRack](/links/bare-metal/bare-metal){.external}.
 * Aktywacja usługi [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external}
 * Dostęp do [panelu klienta OVHcloud](/links/manager){.external}.
 

@@ -15,8 +15,8 @@ updated: 2024-08-21
 
 ## Prérequis
 
-- Disposer d'un [serveur dédié OVHcloud](https://www.ovhcloud.com/fr-ca/bare-metal/)
-- Disposer d'adresses [Additional IP](https://www.ovhcloud.com/fr-ca/bare-metal/ip/)
+- Disposer d'un [serveur dédié OVHcloud](/links/bare-metal/bare-metal)
+- Disposer d'adresses [Additional IP](/links/bare-metal/bare-metal/ip/)
 - Être connecté à votre [espace client OVHcloud](/links/manager)
 
 
@@ -275,7 +275,7 @@ Cette configuration est plus souple, vous n'avez pas à associer d'Additional IP
 
 * Avoir réservé un bloc public d'adresses IP dans votre compte, avec un minimum de quatre adresses. Le bloc doit être pointé vers le vRack.
 * Préparer votre plage d'adresses IP privées choisies.
-* Posséder un [serveur compatible vRack](https://www.ovhcloud.com/fr-ca/bare-metal/){.external}.
+* Posséder un [serveur compatible vRack](/links/bare-metal/bare-metal){.external}.
 * Activer un service [vRack](https://www.ovh.com/ca/fr/solutions/vrack/){.external}.
 * Être connecté à l'[espace client OVHcloud](/links/manager){.external}.
 

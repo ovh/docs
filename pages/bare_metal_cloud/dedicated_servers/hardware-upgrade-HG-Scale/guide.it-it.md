@@ -19,7 +19,7 @@ I nostri server High Grade e Scale offrono un'opzione di scalabilità che permet
 
 ## Prerequisiti
 
-- Un server [High Grade](https://www.ovhcloud.com/it/bare-metal/high-grade/) o [SCALE](https://www.ovhcloud.com/it/bare-metal/scale/)
+- Un server [High Grade](/links/bare-metal/bare-metalhigh-grade/) o [SCALE](/links/bare-metal/bare-metalscale/)
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## In pratica
@@ -80,7 +80,7 @@ Per pianificare un upgrade di memoria e storage durante lo stesso intervento, è
 
 ## Per saperne di più <a name="go-further"></a>
  
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
  
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
  

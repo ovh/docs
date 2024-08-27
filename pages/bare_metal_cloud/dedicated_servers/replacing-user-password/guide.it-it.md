@@ -24,7 +24,7 @@ In questo caso, è possibile accedere al server tramite la modalità Rescue di O
 
 ## Prerequisiti
 
-- Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/) o di un [VPS](https://www.ovhcloud.com/it/vps/) nel proprio account OVHcloud
+- Disporre di un [server dedicato](/links/bare-metal/bare-metal) o di un [VPS](https://www.ovhcloud.com/it/vps/) nel proprio account OVHcloud
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 > [!primary]
@@ -43,7 +43,7 @@ Non dimenticare di consultare anche le nostre guide di primo passo:
 >
 > OVHcloud mette a disposizione i servizi ma non si occupa della loro configurazione e gestione. garantirne il corretto funzionamento è quindi responsabilità dell’utente.
 >
-> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi relativamente all’amministrazione, all’utilizzo o all’implementazione dei servizi di un server, ti consigliamo di contattare un [provider specializzato](https://partner.ovhcloud.com/it/directory/) o [la nostra Community](https://community.ovh.com/en/).
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi relativamente all’amministrazione, all’utilizzo o all’implementazione dei servizi di un server, ti consigliamo di contattare un [provider specializzato](/links/partner) o [la nostra Community](https://community.ovh.com/en/).
 >
 
 <a name="step1"></a>
