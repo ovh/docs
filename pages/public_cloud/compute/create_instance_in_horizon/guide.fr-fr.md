@@ -99,7 +99,7 @@ Vous devrez ensuite compléter les informations demandées. Attention, cette gri
 
 ![createinstance](images/create-instance-step5.png){.thumbnail}
 
-Des *flavors* pré-construites sont disponibles pour vous, sélectionnez la saveur de votre choix sous l'onglet `Available`.
+Des *flavors* pré-construites sont disponibles pour vous, sélectionnez la *flavor* de votre choix sous l'onglet `Available`.
 
 **Networks**
 
