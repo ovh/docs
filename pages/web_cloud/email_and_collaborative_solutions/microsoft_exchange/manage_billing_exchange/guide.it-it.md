@@ -19,7 +19,7 @@ I servizi Hosted Exchange e Private Exchange offrono una gestione flessibile del
 
 Accedi alla sezione `Webcloud`{.action} dello [Spazio Cliente OVHcloud](/links/manager). Seleziona il tuo servizio cliccando su `Microsoft`{.action} > `Exchange`{.action}.
 
-### Hosted Exchange 
+### Hosted Exchange
 
 #### Ordina account aggiuntivi
 
@@ -29,24 +29,24 @@ Quindi clicca sulla scheda `Account email`{.action} e poi sul pulsante `Azioni`{
 
 #### Modifica la frequenza di rinnovo dei tuoi account <a name="periodicity"></a>
 
-Dall’interfaccia di gestione del tuo servizio Exchange, clicca sul pulsante `Azioni`{.action} in alto a destra e poi su `Configura il rinnovo`{.action}. 
+Dall’interfaccia di gestione del tuo servizio Exchange, clicca sul pulsante `Azioni`{.action} in alto a destra e poi su `Configura il rinnovo`{.action}.
 
 ![billing_exchange](images/billing-exchange-01.png){.thumbnail}
 
 Accedi allo Spazio Cliente, clicca sul tuo nome utente in alto a destra e seleziona “I tuoi servizi”. Come puoi notare, è stato applicato un filtro per visualizzare soltanto la piattaforma Exchange su cui apportare la modifica.
 
-Clicca sui tre puntini `... `{.action} a destra della piattaforma Exchange e pi su `Modifica la fatturazione`{.action}.
+Clicca sui tre puntini `...`{.action} a destra della piattaforma Exchange e pi su `Modifica la fatturazione`{.action}.
 
 ![billing_exchange](images/billing-exchange-02.png){.thumbnail}
 
-Nella nuova pagina, è possibile visualizzare e modificare la fatturazione di ciascuno dei tuoi account. Le modifiche possono essere effettuate dal menu “**Rinnovo**” su uno o più account allo stesso tempo.  Le modifiche all’account saranno applicate alla data indicata nella colonna “**Scadenza**”. 
+Nella nuova pagina, è possibile visualizzare e modificare la fatturazione di ciascuno dei tuoi account. Le modifiche possono essere effettuate dal menu “**Rinnovo**” su uno o più account allo stesso tempo.  Le modifiche all’account saranno applicate alla data indicata nella colonna “**Scadenza**”.
 
 L’esempio che segue, ti mostra le operazioni da effettuare per passare a un rinnovo mensile del tuo account.
 
-> Nel primo step, clicca sulla voce “**Mensile**” in corrispondenza del tuo account e poi clicca sul pulsante `Continua`{.action} in basso a sinistra. 
-
+> Nel primo step, clicca sulla voce “**Mensile**” in corrispondenza del tuo account e poi clicca sul pulsante `Continua`{.action} in basso a sinistra.
+>
 > Nel secondo step, un riepilogo ti indica che la modifica è stata applicata. Clicca sul pulsante `Invia`{.action} in basso a sinistra.
-
+>
 > ![billing_exchange](images/billing-exchange-03.png){.thumbnail}
 
 #### Elimina account

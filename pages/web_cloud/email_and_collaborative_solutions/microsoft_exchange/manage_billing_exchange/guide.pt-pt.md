@@ -19,7 +19,7 @@ Os serviços Hosted Exchange e Private Exchange dispõem de uma gestão flexíve
 
 Aceda à [Área de Cliente OVHcloud](/links/manager) e selecione a secção `Webcloud`{.action}. Clique em `Microsoft`{.action} e, a seguir, em `Exchange`{.action}. Por fim, selecione a plataforma Exchange em questão.
 
-### Hosted Exchange 
+### Hosted Exchange
 
 #### Encomendar contas suplementares
 
@@ -29,7 +29,7 @@ Clique no separador `Contas de e-mail`{.action} e, depois, no botão `Ações`{.
 
 #### Alterar a periodicidade das contas <a name="periodicity"></a>
 
-Na janela de gestão da plataforma Exchange, clique no botão `Ações`{.action} (canto superior direito) e em `Configuração da renovação`{.action}. 
+Na janela de gestão da plataforma Exchange, clique no botão `Ações`{.action} (canto superior direito) e em `Configuração da renovação`{.action}.
 
 ![billing_exchange](images/billing-exchange-01.png){.thumbnail}
 
@@ -39,14 +39,14 @@ Clique em `...`{.action}, à direita da plataforma Exchange, e em `Modificar a f
 
 ![billing_exchange](images/billing-exchange-02.png){.thumbnail}
 
-Na nova janela, poderá visualizar e alterar a faturação de cada uma das suas contas. É possível efetuar modificações em uma ou várias contas em simultâneo a partir da coluna «**Renovação**». Cada modificação realizada numa conta será aplicada na data indicada na coluna «**Expiração**». 
+Na nova janela, poderá visualizar e alterar a faturação de cada uma das suas contas. É possível efetuar modificações em uma ou várias contas em simultâneo a partir da coluna «**Renovação**». Cada modificação realizada numa conta será aplicada na data indicada na coluna «**Expiração**».
 
 No exemplo abaixo, eis as ações a realizar para fazer uma conta passar para renovação mensal:
 
 > Na primeira etapa, clique na menção «**Mensal**», à direita da conta em causa, e a seguir clique em «`Seguinte`{.action}», no canto inferior esquerdo.
-
+>
 > Na segunda etapa, um resumo vai indicar-lhe a alteração aplicada. Clique em `Enviar`{.action}, no canto inferior esquerdo.
-
+>
 > ![billing_exchange](images/billing-exchange-03.png){.thumbnail}
 
 #### Eliminar contas

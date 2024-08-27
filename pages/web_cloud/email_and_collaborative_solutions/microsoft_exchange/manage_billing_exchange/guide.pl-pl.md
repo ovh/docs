@@ -19,7 +19,7 @@ Usługi Hosted Exchange i Private Exchange umożliwiają elastyczne zarządzenie
 
 Zaloguj się do Twojego [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Webcloud`{.action}. Kliknij `Microsoft`{.action}, następnie `Exchange`{.action}, po czym wybierz odpowiednią usługę Exchange.
 
-### Hosted Exchange 
+### Hosted Exchange
 
 #### Zamówienie dodatkowych kont
 
@@ -29,7 +29,7 @@ Przejdź do karty `Konta e-mail`{.action}, następnie kliknij przycisk `Akcje`{.
 
 #### Zmiana częstotliwości odnawiania usługi dla Twoich kont <a name="periodicity"></a>
 
-W oknie zarządzania Twoją usługą Exchange kliknij przycisk `Akcje`{.action} w prawym górnym rogu, a następnie wybierz opcję `Konfiguracja odnawiania usługi`{.action}. 
+W oknie zarządzania Twoją usługą Exchange kliknij przycisk `Akcje`{.action} w prawym górnym rogu, a następnie wybierz opcję `Konfiguracja odnawiania usługi`{.action}.
 
 ![billing_exchange](images/billing-exchange-01.png){.thumbnail}
 
@@ -39,14 +39,14 @@ Kliknij `...`{.action} z prawej strony platformy Exchange, a następnie `Zmień 
 
 ![billing_exchange](images/billing-exchange-02.png){.thumbnail}
 
-Pojawi się nowe okno, w którym możesz wyświetlać i zmieniać sposoby fakturowania dla każdego Twojego konta. Można wprowadzać zmiany w kolumnie „**Odnawianie**” dla jednego lub większej liczby kont jednocześnie. Każda zmiana w koncie zostanie wprowadzona w dniu wskazanym w kolumnie „**Data wygaśnięcia**”. 
+Pojawi się nowe okno, w którym możesz wyświetlać i zmieniać sposoby fakturowania dla każdego Twojego konta. Można wprowadzać zmiany w kolumnie „**Odnawianie**” dla jednego lub większej liczby kont jednocześnie. Każda zmiana w koncie zostanie wprowadzona w dniu wskazanym w kolumnie „**Data wygaśnięcia**”.
 
 Poniższy przykład zawiera działania, które należy przeprowadzić, aby przejść na comiesięczne odnawianie usługi dla konta.
 
 > W pierwszym etapie kliknij opcję „**Co miesiąc**” z prawej strony wybranego konta, a następnie wybierz `Dalej`{.action} na dole po lewej.
-
+>
 > W drugim etapie wyświetli się podsumowanie wskazujące wprowadzoną zmianę. Kliknij przycisk `Wyślij`{.action} na dole po lewej.
-
+>
 > ![billing_exchange](images/billing-exchange-03.png){.thumbnail}
 
 #### Usuwanie kont

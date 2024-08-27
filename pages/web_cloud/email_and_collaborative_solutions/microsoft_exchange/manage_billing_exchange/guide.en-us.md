@@ -39,14 +39,14 @@ Click `...`{.action} to the right of the Exchange platform, then `Modify billing
 
 ![billing_exchange](images/billing-exchange-02.png){.thumbnail}
 
-In this new window, you can view and modify the billing for each of your accounts. You can make changes via the **Renewal** column for one or more accounts at once. Each modification on an account will be applied on the date listed in the **Expiry** column. 
+In this new window, you can view and modify the billing for each of your accounts. You can make changes via the **Renewal** column for one or more accounts at once. Each modification on an account will be applied on the date listed in the **Expiry** column.
 
 In the example below, you will see the actions you need to take in order to set an account to monthly renewal:
 
 > In the first step, click **Monthly** to the right of the account, then click `Next`{.action}.
-
+>
 > In the second step, you will see a summary listing the change that has been applied. Click `Send`{.action} on the bottom left.
-
+>
 > ![billing_exchange](images/billing-exchange-03.png){.thumbnail}
 
 #### Deleting accounts

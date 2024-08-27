@@ -37,14 +37,14 @@ Haga clic en `...`{.action} en la parte superior derecha de la plataforma Exchan
 
 ![billing_exchange](images/billing-exchange-02.png){.thumbnail}
 
-En esta nueva ventana, podrá ver y cambiar la facturación de cada una de sus cuentas. La columna «**Renovación**» permite realizar cambios en una o varias cuentas simultáneamente. Cada cambio en una cuenta se aplicará en la fecha indicada en la columna «**Expiración**». 
+En esta nueva ventana, podrá ver y cambiar la facturación de cada una de sus cuentas. La columna «**Renovación**» permite realizar cambios en una o varias cuentas simultáneamente. Cada cambio en una cuenta se aplicará en la fecha indicada en la columna «**Expiración**».
 
 En el ejemplo a continuación, se indican las acciones que se deben realizar para cambiar la renovación de una cuenta a mensual:
 
 > En el primer paso, haga clic en «**Mensual**» a la derecha de la cuenta de su elección y luego en `Siguiente`{.action}, más adelante y a la izquierda.
-
+>
 > En el segundo paso, un resumen muestra el cambio aplicado. Haga clic en `Enviar`{.action} en la parte inferior izquierda.
-
+>
 > ![billing_exchange](images/billing-exchange-03.png){.thumbnail}
 
 #### Eliminar cuentas

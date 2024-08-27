@@ -44,9 +44,9 @@ Sur cette nouvelle fenêtre, vous pouvez visualiser et modifier la facturation d
 Dans l'exemple ci-dessous, voici les actions à mener pour passer un compte en renouvellement mensuel:
 
 > Sur la première étape, cliquez sur la mention « **Mensuelle** » à droite du compte de votre choix puis cliquez sur `Suivant`{.action} plus bas à gauche.
-
+>
 > Sur la seconde étape, un récapitulatif indique le changement appliqué. Cliquez sur `Envoyer`{.action} plus bas à gauche.
-
+>
 > ![billing_exchange](images/billing-exchange-03.png){.thumbnail}
 
 #### Supprimer des comptes

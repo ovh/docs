@@ -39,7 +39,7 @@ Klicken Sie in der Tabelle auf `...`{.action} und danach auf `Abrechnung bearbei
 
 ![billing_exchange](images/billing-exchange-02.png){.thumbnail}
 
-In der neuen Ansicht können Sie die Abrechnungsintervalle für jeden Ihrer Accounts anzeigen und ändern. Es ist möglich, Änderungen in der Spalte „**Verlängerung**“ bei einem oder mehreren Accounts gleichzeitig vorzunehmen. Jede Änderung an einem Account wird an dem Datum wirksam, das in der Spalte „**Ablaufdatum**“ angegeben ist. 
+In der neuen Ansicht können Sie die Abrechnungsintervalle für jeden Ihrer Accounts anzeigen und ändern. Es ist möglich, Änderungen in der Spalte „**Verlängerung**“ bei einem oder mehreren Accounts gleichzeitig vorzunehmen. Jede Änderung an einem Account wird an dem Datum wirksam, das in der Spalte „**Ablaufdatum**“ angegeben ist.
 
 Im folgenden Beispiel sind die notwendigen Schritte aufgeführt, um einen Acccount auf die monatliche Verlängerung einzustellen:
 
