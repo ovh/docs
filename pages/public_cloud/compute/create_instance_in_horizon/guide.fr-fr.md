@@ -115,7 +115,7 @@ Des *flavors* pré-construites sont disponibles pour vous, sélectionnez la *fla
 
 ![createinstance](images/create-instance-step7.png){.thumbnail}
 
-Pour plus d'informations, consultez le [guide](/pages/public_cloud/compute/setup_security_group) suivant.
+Pour plus d'informations, consultez [ce guide](/pages/public_cloud/compute/setup_security_group).
 
 **Key Pairs (Paire de clés)**
 
