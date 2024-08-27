@@ -13,7 +13,7 @@ The Hosted Exchange and Private Exchange services offer flexible management for 
 ## Requirements
 
 - access to the [OVHcloud Control Panel](/links/manager).
-- a subscription to an [Exchange](/web/emails-hosted-exchange) solution.
+- a subscription to an [Exchange](/links/web/emails-hosted-exchange) solution.
 
 ## Instructions
 

@@ -13,7 +13,7 @@ Usługi Hosted Exchange i Private Exchange umożliwiają elastyczne zarządzenie
 ## Wymagania początkowe
 
 - Dostęp do [panelu klienta OVHcloud](/links/manager).
-- Wykupienie usługi [Exchange](/web/emails-hosted-exchange).
+- Wykupienie usługi [Exchange](/links/web/emails-hosted-exchange).
 
 ## W praktyce
 
