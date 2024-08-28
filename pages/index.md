@@ -1568,6 +1568,7 @@
                 + [Configurer sa box à partir de l'espace client OVHcloud](web_cloud/internet/internet_access/configuration_du_modem_a_partir_de_votre_espace_client)
                 + [Modification du profil de synchronisation](web_cloud/internet/internet_access/modification_du_profil_de_synchronisation)
                 + [Comment configurer le reverse DNS de ma connexion](web_cloud/internet/internet_access/comment_configurer_le_reverse_dns_de_ma_connexion)
+                + [Activer l'adresse IPv6 d'une connexion internet OVHcloud](web_cloud/internet/internet_access/comment_gerer_ipv6)
             + [Managing your offer](web-cloud-internet-internet-access-managing-your-offer)
                 + [Comment changer mon offre xDSL/FTTH](web_cloud/internet/internet_access/comment_changer_mon_offre_xdsl)
                 + [Comment déménager mon accès xDSL/FTTH](web_cloud/internet/internet_access/comment_demenager_mon_acces_xdsl)
