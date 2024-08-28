@@ -5,7 +5,7 @@ updated: 2024-08-28
 ---
 
 > [!primary]
-> Cette fonctionnalité est actuellement en phase Bêta.
+> Cette fonctionnalité est actuellement en phase Bêta. Logs Data Platform ne propose pas à ce jour des mêmes niveaux de sécurité (SNC/PCIDSS etc..) que VMware on OVHcloud, cependant l'activation est toujours possible.
 > 
 
 ## Objectif
@@ -18,6 +18,7 @@ updated: 2024-08-28
 - Disposer d'une offre [Hosted Private Cloud](/links/hosted-private-cloud/vmware)
 - Avoir suivi le guide « [Introduction à Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP) ».
 - Vous devez avoir le `logForwarder` activé. Pour le vérifier, exécutez [l'appel API suivant](#security-options).
+- Un stream actif crée dans les clusters privés Logs Data Platform.
 
 ## En pratique
 
