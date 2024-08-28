@@ -310,7 +310,8 @@ Votre interface Zimbra dispose de 2 menus de configuration :
 >> - **Délai de rappel par défaut** : délai de rappel appliqué par défaut lorsque vous l'activez sur un évènement.
 >> - **Afficher les rappels pour des évènements échus** : continuer d'envoyer des rappels après un évènement.
 >>
->> **Autorisation d’occupation gratuite**
+>> **Autorisation d’occupation**
+>>
 >> - **Autorisation pour** : ce paramètre concerne uniquement l'état de disponibilité lié aux calendriers de votre adresse e-mail. Cela signifie que vous pouvez partager votre statut « Occupé » ou « Disponible » avec d'autres adresses e-mail.
 
 ### Contacts <a name="contacts"></a>
@@ -417,8 +418,8 @@ Il est également possible de créer des sous-calendriers.
 - **Début** : la date et l'heure de début de votre évènement. Si vous cochez `Toute la journée`, vous n'aurez pas d'heure de début et de fin à saisir car l'ensemble de la journée sera pris en compte.
 - **Fin** : la date et l'heure de fin de votre évènement.
 - **Répétition** : s'il s'agit d'un évènement récurrent, définissez sa fréquence.
-- **Équipement** : en cliquant sur `Afficher l'équipement`{.action}, vous faites apparaître cette ligne pour définir un équipement partagé que vous allez utiliser pour votre évènement.
 - **Lieu** : le lieu où va se dérouler l'évènement, comme le nom d'une salle de réunion par exemple.
+- **Équipement** : en cliquant sur `Afficher l'équipement`{.action}, vous faites apparaître cette ligne pour définir un équipement partagé que vous allez utiliser pour votre évènement.
 - **Invités** : les adresses e-mail des participants à l'évènement.
 - **Remarques** : message qui sera transmis aux invités de l'évènement.
 - **Rappel** : être prévenu avant le début de l'évènement.
@@ -439,7 +440,7 @@ La liste « Tâches » existe par défaut, elle ne peut pas être supprimée mai
 
 - **(1)** : Pour créer une tâche, cliquez sur le bouton `...`{.action} puis sur `Nouvelle tâche`{.action}  ou simplement sur le bouton `+`{.action} à côté de votre liste de tâches.
 
-- **(2)** : Pour créer une nouvelle liste de tâches, cliquez sur le bouton `...`{.action} puis sur`Créer une liste`{.action}.
+- **(2)** : Pour créer une nouvelle liste de tâches, cliquez sur le bouton `...`{.action} puis sur `Créer une liste`{.action}.
 
 ![Zimbra - calendar](images/zimbra-calendar-task-01.png){.thumbnail .w-400}
 
