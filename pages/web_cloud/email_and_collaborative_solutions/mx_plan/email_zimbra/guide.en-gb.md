@@ -1,7 +1,7 @@
 ---
 title: "MX Plan - How to use Zimbra webmail"
 excerpt: "Discover the Zimbra webmail interface for your OVHcloud MX Plan email accounts"
-updated: 2024-03-11
+updated: 2024-08-26
 ---
 
 <style>
@@ -50,6 +50,9 @@ OVHcloud provides a webmail service called Zimbra to access MX Plan email accoun
     - [Folder management](#contacts-folders)
     - [Managing lists](#contacts-lists)
     - [Import/Export contacts](#import-export)
+- [Calendar](#calendar)
+    - [Calendar management](#calendar-management)
+    - [Tasks](#tasks)
 - [Filters](#filters)
     - [How to set filters](#filters-howto)
     - [Create a filter](#filters-creation)
@@ -284,6 +287,31 @@ Your Zimbra interface has 2 configuration menus:
 >>
 >> To configure your filters, see the "[Filters](#filters)" section of this documentation.
 >>
+> **Calendar and reminders**
+>>
+>> Here, you can find the settings linked to your [calendars](#calendar).
+>>
+>> **General Calendar Settings**
+>>
+>> - **Default schedule** : Set the default calendar used when you create an event in your calendars.
+>> - **Start of week** : The day that appears first in your calendar grid.
+>> - **Start of day** : the time that appears at the top of the displayed time range.
+>> - **End of day** : the time that appears at the bottom of the displayed time range.
+>> - **Workday Time Zone** used for your calendars.
+>> - **When creating or editing events** : Display time zones for start and end times.
+>> - **Sharing** : `Enable delegation for CALDav clients`. This option allows you to manage your calendars through software that supports the CALdav protocol.
+>> - **Declined Events** : Display an event in the calendar, even if it has been denied.
+>>
+>> **Event reminders**
+>>
+>> - **Send reminders via email to** : Send reminders of events to an email address.
+>> - **Show browser notifications** : receive notifications from your web browser regarding your events.
+>> - **Default callback time** : Default callback time applied when you enable it on an event.
+>> - **Show reminders for overdue events** : Continue sending reminders after an event.
+>>
+>> **Free Busy Permission**
+>>
+>> - **Permission for** : This setting only applies to the availability status linked to your email address calendars. This means that you can share your "Busy" or "Available" status with other email addresses.
 
 ### Contacts <a name="contacts"></a>
 
@@ -354,6 +382,72 @@ Select one of the following two tabs:
 >> Then click `Export`{.action} to open the export window. Select the file type you want to export, and then click `Export`{.action}.<br><br>
 >> ![Zimbra - Export](images/zimbra-20.png){.thumbnail}
 >>
+
+### Calendar <a name="calendar"></a>
+
+Click on the `Calendar` icon in the top bar to access the address book. It is divided into **3 parts**:
+
+- **(1) List of calendars** (left) : manage your different calendars and sub-calendars.
+- **(2) Calendar Content** (center) : View the content of selected calendars and subcalendars.
+- **(3) Task List** (right) : Manage your tasks and task lists.
+
+![Zimbra - calendar](images/zimbra-calendar-view.png){.thumbnail}
+
+#### Calendar management <a name="calendar-management"></a>
+
+By default, in the `My Calendars` list, you have a `Calendar` created by default. This default calendar cannot be deleted, but you will see that you can create your own calendars in the next paragraph.
+
+##### 1- Create a calendar <a name="calendar-add-calendar"></a>
+
+- **(1)** : To create a calendar, move your cursor over `My Calendars` in the left-hand column and click the `+` button. Enter a name and color, then click `Save`{.action}.
+
+You can also create sub-calendars.
+
+- **(2)** : To create a subcalendar, move your cursor over the calendar for which you want to create one, then right-click to display the drop-down menu. Click `Add sub-calendar`. Enter a name and color, then click `Save`{.action}.
+
+![Zimbra - calendar](images/zimbra-calendar-add.png){.thumbnail .w-400}
+
+##### 2- Add an event <a name="calendar-add-event"></a>
+
+- **(1)** : Click on `New event`{.action} in the top left-hand corner.
+- **(2)** : Click on the time condition of your calendar in which you want to add an event. For a simple addition, simply define a title for the event and a location then click `Save`{.action}. To add more details about your event, click `Add more details`{.action}.
+
+![Zimbra - calendar](images/zimbra-calendar-event-add-01.png){.thumbnail .w-400}
+
+- **Start** : the date and time your event starts. If you tick `All day`, you will not have to enter a start and end time because the whole day will be taken into account.
+- **End** : the end date and time of your event.
+- **Repeat** : if this is a recurring event, define the frequency.
+- **Location** : the location where the event will take place, such as the name of a meeting room.
+- **Equipment** : By clicking `Show equipment`{.action}, you can display this line to define a shared equipment that you will use for your event.
+- **Guests** : the email addresses of the event participants.
+- **Notes** : message that will be sent to the event guests.
+- **Remind** : be notified before the event begins.
+- **Show as** : define if the event makes its guests available or unavailable during its progress.
+- **Calendar** : define the calendar associated with the event.
+
+Once you have defined your event, click `Save`{.action}.
+
+![Zimbra - calendar](images/zimbra-calendar-event-add-02.png){.thumbnail .w-400}
+
+##### 3- Edit an event <a name="calendar-modify-event"></a>
+
+#### Tasks <a name="tasks"></a>
+
+Tasks are items that are detached from your calendars. Their purpose is to list the tasks to be performed without attaching an execution date or a temporality to them. These tasks are complementary to calendars.
+
+The "Tasks" list exists by default, it cannot be deleted, but you can create your own task lists.
+
+- **(1)** : To create a task, click the `...`{.action}' button, then `New task`{.action} or simply click the '+`{.action}' button next to your task list.
+
+- **(2)** : To create a new task list, click the `...`{.action} button, then click `Create List...`{.action}.
+
+![Zimbra - calendar](images/zimbra-calendar-task-01.png){.thumbnail .w-400}
+
+When you create a task, you can set a due date and priority so that you can rank them according to their importance, as well as a drop-down menu to select the corresponding task list.
+
+Then click `Save`{.action} to finish creating your task.
+
+![Zimbra - calendar](images/zimbra-calendar-task-02.png){.thumbnail .w-400}
 
 ### Filters <a name="filters"></a>
 

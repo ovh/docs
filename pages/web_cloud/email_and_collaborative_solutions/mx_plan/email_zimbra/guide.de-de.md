@@ -1,7 +1,7 @@
 ---
 title: "MX Plan - Zimbra Webmail verwenden"
 excerpt: "Erfahren Sie hier, wie Sie das Zimbra Webmail-Interface mit OVHcloud MX Plan E-Mail-Accounts verwenden"
-updated: 2024-03-11
+updated: 2024-08-26
 ---
 
 > [!primary]
@@ -54,6 +54,9 @@ OVHcloud bietet den Webmail-Dienst Zimbra an, um auf MX Plan E-Mail-Accounts zuz
     - [Ordnerverwaltung](#contacts-folders)
     - [Verwaltung von Listen](#contacts-lists)
     - [Kontakte importieren und exportieren](#import-export)
+- [Kalender](#calendar)
+    - [Kalenderverwaltung](#calendar-management)
+    - [Aufgaben](#tasks)
 - [Filter](#filters)
     - [Grundlegendes zum Einrichten von Filtern](#filters-howto)
     - [Filter erstellen](#filters-creation)
@@ -289,6 +292,32 @@ Ihr Zimbra Interface verfügt über 2 Konfigurationsmenüs:
 >>
 >> Informationen zum Konfigurieren der Filter finden Sie im Abschnitt "[Filter](#filters)" in dieser Anleitung.
 >>
+>>
+> **Kalender und Erinnerungen**
+>>
+>> Hier finden Sie die Einstellungen für Ihre [Kalender](#calendar).
+>>
+>> **Allgemeine Kalendereinstellungen**
+>>
+>> - **Standardkalender**: Legen Sie den Standardkalender fest, der beim Erstellen eines neuen Ereignisses in Ihren Kalendern verwendet wird.
+>> - **Wochenanfang** : Der Tag, der im Kalenderraster zuerst angezeigt wird.
+>> - **Arbeitsbeginn** : Die Uhrzeit, die am oberen Rand der angezeigten Amplitude angezeigt wird.
+>> - **Arbeitsende** : Die Stunde, die am unteren Rand der angezeigten Amplitude angezeigt wird.
+>> - **Zeitzone Arbeitstag** für Kalender verwendet.
+>> - **Beim Erstellen oder Bearbeiten von Ereignissen** : Zeitzonen für Start- und Endzeit anzeigen.
+>> - **Freigaben** : `Delegierung für CALDav Kunden aktivieren`. Mit dieser Option können Sie Ihre Kalender mit Software verwalten, die das CALdav-Protokoll unterstützt.
+>> - **Abgelehnte Ereignisse** : Ein Ereignis im Kalender anzeigen, auch wenn es abgelehnt wurde.
+>>
+>> **Ereigniserinnerungen**
+>>
+>> - **E-Mail-Erinnerungen senden an** : Erinnerungen an Ereignisse an eine E-Mail-Adresse senden.
+>> - **Browser-Benachrichtigungen anzeigen** : Von Ihrem Webbrowser über Ihre Ereignisse benachrichtigt werden.
+>> - **Standarderinnerung** : Die standardmäßige Erinnerungszeit, die bei Aktivierung für ein Ereignis verwendet wird.
+>> - **Erinnerungen für überfällige Ereignisse anzeigen** : Senden von Erinnerungen nach Ereignissen fortsetzen.
+>>
+>> **Berechtigung für Frei-/Gebucht-Ansicht**
+>>
+>> - **Berechtigung für**: Diese Einstellung gilt nur für den Verfügbarkeitsstatus, der mit den Kalendern Ihrer E-Mail-Adresse verknüpft ist. Das bedeutet, dass Sie Ihren Status "Besetzt" oder "Verfügbar" mit anderen E-Mail-Adressen teilen können.
 
 ### Kontakte <a name="contacts"></a>
 
@@ -359,6 +388,72 @@ Wählen Sie unter den folgenden Tabs aus:
 >> Klicken Sie dann auf `Exportieren`{.action}, um das Exportfenster zu öffnen. Wählen Sie den Dateityp aus, den Sie exportieren möchten, und klicken Sie dann auf `Exportieren`{.action}.<br><br>
 >> ![Zimbra - Exportieren](images/zimbra-20.png){.thumbnail}
 >>
+
+### Kalender <a name="calendar"></a>
+
+Klicken Sie auf das Symbol `Kalender`, in der oberen Leiste, um das Kontaktbuch aufzurufen. Sie ist in **3 Teile** unterteilt:
+
+- **(1) Kalenderliste** (links) : Verwalten Sie Ihre verschiedenen Kalender und Unterkalender.
+- **(2) Kalenderinhalt** (Mitte) : Zeigen Sie den Inhalt der ausgewählten Kalender und Unterkalender an.
+- **(3) Aufgabenliste** (rechts) : Verwalten Sie Ihre Aufgaben und Aufgabenlisten.
+
+![Zimbra - Calendar](images/Zimbra-Calendar-view.png){.thumbnail}
+
+#### Kalenderverwaltung <a name="calendar-management"></a>
+
+In der Liste `Meine Kalender` wird standardmäßig ein `Kalender` erstellt. Dieser Standardkalender kann nicht gelöscht werden, aber Sie werden im nächsten Absatz sehen, dass Sie eigene Kalender erstellen können.
+
+##### 1- Kalender erstellen <a name="calendar-add-calendar"></a>
+
+- **(1)** : Um einen Kalender zu erstellen, bewegen Sie Ihren Cursor in der linken Spalte auf `Meine Kalender` und klicken Sie auf die Schaltfläche `+`. Geben Sie einen Namen und eine Farbe ein und klicken Sie auf `Speichern`{.action}.
+
+Sie können auch Unterkalender erstellen.
+
+- **(2)** : Um einen Unterkalender zu erstellen, bewegen Sie den Mauszeiger über den Kalender, für den Sie einen Unterkalender erstellen möchten. Klicken Sie dann mit der rechten Maustaste, um das Dropdownmenü anzuzeigen. Klicken Sie auf `Unterkalender hinzufügen`. Geben Sie einen Namen und eine Farbe ein und klicken Sie auf `Speichern`{.action}.
+
+![Zimbra - Calendar](images/Zimbra-Calendar-add.png){.thumbnail .w-400}
+
+#### 2- Ereignis hinzufügen <a name="calendar-add-event"></a>
+
+- **(1)** : Klicken Sie in der oberen linken Ecke auf `Neues Ereignis`{.action}.
+- **(2)** : Klicken Sie auf den Zeitraum in Ihrem Kalender, in dem Sie ein Ereignis hinzufügen möchten. Um das Hinzufügen zu vereinfachen, geben Sie einfach einen Titel für die Veranstaltung und einen Ort an und klicken Sie dann auf `Speichern`{.action}. Um weitere Details zu Ihrem Event hinzuzufügen, klicken Sie auf `Weitere Details hinzufügen`{.action}.
+
+![Zimbra - Calendar](images/Zimbra-Calendar-Event-add-01.png){.thumbnail .w-400}
+
+- **Beginn** : Datum und Uhrzeit des Starts Ihres Events. Wenn Sie `Ganztägig` ankreuzen, dann müssen Sie keine Start- und Endzeit eingeben, da der gesamte Tag berücksichtigt wird.
+- **Ende** : Datum und Uhrzeit des Endes Ihres Events.
+- **Wiederholung** : Wenn es sich um ein wiederkehrendes Ereignis handelt, legen Sie die Häufigkeit fest.
+- **Veranstaltungsort** : Der Veranstaltungsort, z. B. der Name eines Konferenzraums.
+- **Equipment** : Wenn Sie auf `Ausrüstung zeigen`{.action} klicken, wird diese Zeile angezeigt, um ein gemeinsam genutztes Equipment zu definieren, das Sie für Ihr Event verwenden werden.
+- **Gäste** : Die E-Mail-Adressen der Veranstaltungsteilnehmer.
+- **Anmerkungen** : Die Nachricht wird an die Teilnehmer der Veranstaltung weitergeleitet.
+- **Erinnerung** : Vor Beginn des Events benachrichtigt werden.
+- **Anzeigen als** : Legen Sie fest, ob das Ereignis seine Gäste während der Veranstaltung verfügbar oder nicht verfügbar macht
+- **Kalender** : Legen Sie fest, welchem Kalender das Ereignis zugeordnet ist.
+
+Wenn Sie Ihr Event definiert haben, klicken Sie auf `Speichern`{.action}.
+
+![Zimbra - Calendar](images/Zimbra-Calendar-Event-add-02.png){.thumbnail .w-400}
+
+##### 3- Ereignis bearbeiten <a name="calendar-modify-event"></a>
+
+### Aufgaben <a name="tasks"></a>
+
+Aufgaben sind Elemente, die nicht mit Kalendern verknüpft sind. Ziel ist es, Aufgaben aufzulisten, ohne ein Ausführungs- oder Zeitintervall für diese Aufgaben festzulegen. Diese Aufgaben ergänzen Kalender.
+
+Die Aufgabenliste ist standardmäßig vorhanden und kann nicht gelöscht werden. Sie können jedoch eigene Aufgabenlisten erstellen.
+
+- **(1)** : Um eine neue Aufgabe zu erstellen, klicken Sie auf den Button `...`{.action} und dann auf `Neue Aufgabe`{.action} oder einfach auf den Button `+`{.action} neben Ihrer Aufgabenliste.
+
+- **(2)** : Um eine neue Aufgabenliste zu erstellen, klicken Sie auf den Button `...`{.action} und dann auf `Liste erstellen`{.action}.
+
+![Zimbra - Calendar](images/Zimbra-Calendar-Task-01.png){.thumbnail .w-400}
+
+Wenn Sie eine Aufgabe erstellen, können Sie ein Fälligkeitsdatum und eine Priorität festlegen, um die Aufgaben nach Wichtigkeit zu ordnen, sowie ein Dropdown-Menü, um die entsprechende Aufgabenliste auszuwählen.
+
+Klicken Sie dann auf `Speichern`{.action}, um die Erstellung Ihrer Aufgabe abzuschließen.
+
+![Zimbra - Calendar](images/Zimbra-Calendar-Task-02.png){.thumbnail .w-400}
 
 ### Filter <a name="filters"></a>
 
@@ -463,7 +558,7 @@ Um auf die Delegationseinstellungen zuzugreifen, klicken Sie auf das Zahnrad obe
 Sie können den Zugang zu Ihrem E-Mail-Accounts einem anderen E-Mail-Account übertragen, aber nur wenn dieser zum selben E-Mail-Dienst gehört.
 
 > [!primary]
->       
+>
 > Ein E-Mail-Account eines anderen E-Mail-Diensts, der den selben Domainnamen verwendet, kann nicht delegiert werden.
 
 ![E-Mail](images/zimbra-delegation.png){.thumbnail}
