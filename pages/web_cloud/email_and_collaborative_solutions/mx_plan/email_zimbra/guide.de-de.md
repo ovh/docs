@@ -397,7 +397,7 @@ Klicken Sie auf das Symbol `Kalender`, in der oberen Leiste, um das Kontaktbuch 
 - **(2) Kalenderinhalt** (Mitte): Zeigt den Inhalt der ausgewählten Kalender und Unterkalender an.
 - **(3) Aufgabenliste** (rechts): Verwalten der Aufgaben und Aufgabenlisten.
 
-![Zimbra - Calendar](images/Zimbra-Calendar-view.png){.thumbnail}
+![Zimbra - Calendar](images/zimbra-calendar-view.png){.thumbnail}
 
 #### Kalenderverwaltung <a name="calendar-management"></a>
 
@@ -411,14 +411,14 @@ Sie können auch Unterkalender erstellen.
 
 - **(2)**: Um einen Unterkalender zu erstellen, bewegen Sie den Mauszeiger über den Kalender, für den Sie einen Unterkalender erstellen möchten. Klicken Sie dann mit der rechten Maustaste, um das Dropdownmenü anzuzeigen. Klicken Sie auf `Unterkalender hinzufügen`. Wählen Sie einen Namen und eine Farbe aus und klicken Sie auf `Speichern`{.action}.
 
-![Zimbra - Calendar](images/Zimbra-Calendar-add.png){.thumbnail .w-400}
+![Zimbra - Calendar](images/zimbra-calendar-add.png){.thumbnail .w-400}
 
 #### 2 - Ereignis hinzufügen <a name="calendar-add-event"></a>
 
 - **(1)**: Klicken Sie in der oberen linken Ecke auf `Neues Ereignis`{.action}.
 - **(2)**: Klicken Sie auf den Zeitraum in Ihrem Kalender, in dem Sie ein Ereignis hinzufügen möchten. Um das Hinzufügen zu vereinfachen, geben Sie einfach einen Titel für die Veranstaltung und einen Ort an und klicken Sie dann auf `Speichern`{.action}. Um weitere Details zu Ihrem Event hinzuzufügen, klicken Sie auf `Weitere Details hinzufügen`{.action}.
 
-![Zimbra - Calendar](images/Zimbra-Calendar-Event-add-01.png){.thumbnail .w-400}
+![Zimbra - Calendar](images/zimbra-calendar-event-add-01.png){.thumbnail .w-400}
 
 - **Beginn**: Datum und Uhrzeit des Starts Ihres Events. Wenn Sie `Ganztägig` ankreuzen, müssen Sie keine Start- und Endzeit eingeben, da der gesamte Tag berücksichtigt wird.
 - **Ende**: Datum und Uhrzeit des Endes Ihres Events.
@@ -433,7 +433,7 @@ Sie können auch Unterkalender erstellen.
 
 Wenn Sie Ihr Event definiert haben, klicken Sie auf `Speichern`{.action}.
 
-![Zimbra - Calendar](images/Zimbra-Calendar-Event-add-02.png){.thumbnail .w-400}
+![Zimbra - Calendar](images/zimbra-calendar-event-add-02.png){.thumbnail .w-400}
 
 ##### 3 - Ereignis bearbeiten <a name="calendar-modify-event"></a>
 
@@ -447,13 +447,13 @@ Die Aufgabenliste ist standardmäßig vorhanden und kann nicht gelöscht werden.
 
 - **(2)**: Um eine neue Aufgabenliste zu erstellen, klicken Sie auf den Button `...`{.action} und dann auf `Liste erstellen`{.action}.
 
-![Zimbra - Calendar](images/Zimbra-Calendar-Task-01.png){.thumbnail .w-400}
+![Zimbra - Calendar](images/zimbra-calendar-task-01.png){.thumbnail .w-400}
 
 Wenn Sie eine Aufgabe erstellen, können Sie ein Fälligkeitsdatum und eine Priorität festlegen, um die Aufgaben nach Wichtigkeit zu ordnen, und im Dropdown-Menü die entsprechende Aufgabenliste auswählen.
 
 Klicken Sie dann auf `Speichern`{.action}, um die Erstellung Ihrer Aufgabe abzuschließen.
 
-![Zimbra - Calendar](images/Zimbra-Calendar-Task-02.png){.thumbnail .w-400}
+![Zimbra - Calendar](images/zimbra-calendar-task-02.png){.thumbnail .w-400}
 
 ### Filter <a name="filters"></a>
 
