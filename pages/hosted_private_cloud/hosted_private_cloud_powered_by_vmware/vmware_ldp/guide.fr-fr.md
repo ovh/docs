@@ -1,6 +1,6 @@
 ---
 title: "Logs Data Platform - Activer le Log forwarder managé"
-excerpt: "Découvrez comment souscrire un abonnement Log Data Platform vSphere managé et activer le log forwarder interne afin de pousser les journaux VMware vers un stream LDP"
+excerpt: "Découvrez comment souscrire un abonnement Logs Data Platform vSphere managé et activer le log forwarder interne afin de pousser les journaux VMware vers un stream LDP"
 updated: 2024-08-28
 ---
 
@@ -15,18 +15,17 @@ updated: 2024-08-28
 ## Prérequis
 
 - Disposer d'un [compte client OVHcloud](/links/manager).
-- Disposer d'une ou plusieurs ressources Hosted Private Cloud.
-- Disposer d'un flux (stream) Logs Data Platform actif sur le même compte et avec le même niveau de sécurité que votre Hosted Private Cloud VMware on OVHcloud.
+- Disposer d'une offre [Hosted Private Cloud](/links/hosted-private-cloud/vmware)
 - Avoir suivi le guide « [Introduction à Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP) ».
 - Vous devez avoir le `logForwarder` activé. Pour le vérifier, exécutez [l'appel API suivant](#security-options).
 
 ## En pratique
 
 > [!primary]
-> Prenez en compte que l'activation du **transfert de logs (Log Forwarding)** est gratuite, mais vous serez facturé pour l'utilisation d'un stream Logs Data Platform selon le tarif standard de stockage dans une "Database as a service" (dbaas).
+> Prenez en compte que l'activation du **transfert de logs (Log Forwarding)** est gratuite.
 >
-> Vos journaux sont manipulés à des fins de sécurité et d'observabilité dans les clusters privés Logs Data Platform. Pour plus d'informations sur la tarification LDP, consultez la page LDP de [ce lien](/links/manage-operate/ldp).
->
+> Cependant, vous devez pour assurer le bon fonctionnement de votre cluster dédié Hosted Private Cloud, des charges de stockage peuvent s'appliquer avec le temps selon le tarif standard. Ainsi qu'avec l'utilisation du catalogue de services managés LDP (Graylogs, OpenSearch etc..).
+> 
 
 L'activation du transfert des logs vers un stream Logs Data Platform permet de collecter, d'indexer et d'analyser les données d'un service Hosted Private Cloud VMware on OVHcloud. Peu importe leur origine, cette plateforme offre une diversité de moyens d'accès en fonction du protocole, du niveau de sécurité et du format désiré. Les données recueillies peuvent être aisément exploitées grâce aux multiples API et interfaces web mises à disposition.
 
@@ -100,6 +99,8 @@ Voici un exemple de retour, si l'option exigée pour fonctionner n'est pas activ
 > [!primary]
 > Les ressources Hosted Private Cloud et Logs Data Platform doivent bien appartenir au même compte OVHcloud.
 >
+> Vos journaux sont manipulés à des fins de sécurité et d'observabilité dans les clusters privés Logs Data Platform. Pour plus d'informations sur la tarification LDP, consultez la page LDP de [ce lien](/links/manage-operate/ldp).
+>
 
 Pour créer une souscription, un stream est nécessaire. Vous pouvez créer un stream temporaire afin de souscrire votre abonnement avec le `streamId` et l'appel API POST de l'étape 3.
 
@@ -154,6 +155,14 @@ Récupérez le `streamId` et sauvegardez-le (copier-coller) dans un éditeur de 
 Nous allons voir dans l'étape suivante comment souscrire votre abonnement vSphere managé à un stream LDP temporaire.
 
 ### Étape 3 - Souscription de l'abonnement Logs Data Platform
+
+> [!warning]
+> Pour disposer d'une souscription Logs Data Platform actif avec VMware on OVHcloud, vous devez avoir un stream actif. 
+> 
+> Si vous voulez avoir un stream sur le même compte et avec le même niveau de sécurité que votre Hosted Private Cloud, vous devez faire le transfert de ce stream à celui de votre infrastructure privée (à ce jour). La responsabilité du transfert vous incombe, ainsi que du niveau de sécurité que vous voulez.
+> 
+> Vous pouvez vous referer à la [documentation Log Data Plateform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_responsibility_model), si vous voulez plus d'information sur les niveaux de sécurité et de responsabilités disponibles.
+> 
 
 #### Via l'espace client OVHcloud
 
