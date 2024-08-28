@@ -51,9 +51,7 @@ details[open]>summary::before {
 - [Étape 6 - Activation du chiffrement sur une VM (obligatoire)](#activation-encryption)
 - [Étape 7 - Informations utiles TLS OKMS](#useful-information)
 
-### Introduction <a name="introduction"></a>
-
-/// details | Introduction, liste des URLs et des appels API OKMS disponibles.
+### Introduction, liste des URLs et des appels API OKMS disponibles <a name="introduction"></a>
 
 Pour plus d'informations sur les choix qui s'offrent à vous avec KMS et Hosted Private Cloud VMware on OVHcloud, consultez le guide « [Présentation des solutions pour chiffrer des VM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/kms_vmware_overall) ».
 
@@ -112,8 +110,6 @@ Pour plus d'informations sur les choix qui s'offrent à vous avec KMS et Hosted 
 |         **DEL**         |    v1     | /dedicatedCloud/{serviceName}/vmEncryption/kms/{kmsId}                   | - Remove virtual machine encryption KMS server.                  |
 |        **POST**         |    v1     | /dedicatedCloud/{serviceName}/vmEncryption/kms/{kmsId}/changeProperties  | - Update virtual machine encryption KMS server.                  |
 
-///
-
 ### Étape 1 - Commande d'un KMS OVHcloud (obligatoire) <a name="commande-okms"></a>
 
 /// details | Comment commander un KMS OVHcloud (OKMS) pour HPC VMware on OVHcloud ?
@@ -137,7 +133,7 @@ Une fois votre choix fait, cliquez sur le bouton `Commander`{.action}.
 
 > [!primary]
 > 
-> Si vous n'arrivez pas à completer la commande, relancez-la manuellement en cliquant sur [ce lien](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(productId~'okms~planCode~'okms~duration~'P1M~pricingMode~'default~configuration~(~(label~'region~value~'EU_WEST_RBX)).
+> Si vous n'arrivez pas à completer la commande, relancez-la manuellement en cliquant sur [ce lien](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(productId~'okms~planCode~'okms~duration~'P1M~pricingMode~'default~configuration~(~(label~'region~value~'EU_WEST_RBX).
 >
 
 Enfin, cliquez sur `Terminer`{.action} pour finaliser la commande.
