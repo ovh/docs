@@ -18,7 +18,7 @@ updated: 2024-08-28
 - Disposer d'une offre [Hosted Private Cloud](/links/hosted-private-cloud/vmware)
 - Avoir suivi le guide « [Introduction à Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP) ».
 - Vous devez avoir le `logForwarder` activé. Pour le vérifier, exécutez [l'appel API suivant](#security-options).
-- Un stream actif crée dans les clusters privés Logs Data Platform.
+- Un stream Logs Data Platform actif, afin de lancer la souscription au sein de votre VMware vSphere managé on OVHcloud.
 
 ## En pratique
 
@@ -53,9 +53,7 @@ Ils sont les types de logs que vous voulez transférer à votre stream Logs Data
 > Si vous voulez la fonctionnalité `logForwarder` sans les packs de base et de sécurité avancées, contactez le support OVHcloud pour l'activer manuellement.
 >
 
-<a name="security-options"></a>
-
-#### Via l'API OVHcloud
+#### Via l'API OVHcloud <a name="security-options"></a>
 
 > [!primary]
 > Consultez le guide [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
@@ -72,12 +70,13 @@ Ils sont les types de logs que vous voulez transférer à votre stream Logs Data
 
 Pour vérifier les options exigées pour permettre le fonctionnement de la fonctionnalité `logForwarder` au sein de votre VMware vSphere managé on OVHcloud, exécutez l'appel API suivant :
 
+
 > [!api]
 >
 > @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/securityOptions/compatibilityMatrix
 >
 
-Laissez vides les 2 booléens `showIncompatible` et `showInternal` disponibles.
+Laissez vides les 2 champs booléens suivant`showIncompatible` et `showInternal` disponibles.
 
 Voici un exemple de retour, si l'option exigée pour fonctionner n'est pas activée :
 
@@ -95,6 +94,7 @@ Voici un exemple de retour, si l'option exigée pour fonctionner n'est pas activ
  }
 ]
 ```
+
 ### Étape 2 - Création d'un stream Log Data Platform
 
 > [!primary]
@@ -111,7 +111,9 @@ Vous pouvez vous référer à ce guide pour retrouver comment créer un stream d
 
 #### Via l'API OVHcloud
 
-Création d'un stream, un `serviceName` LDP est nécessaire. Vous devez donc préalablement avoir un compte de souscription LDP temporaire pour créer un stream.
+Pour la création d'un stream, un `serviceName` LDP est nécessaire. Ce service Name fait reference à un ID unique de votre compte LDP, e.g. (`ldp-xx-XXXXX`)
+
+Vous devez donc préalablement avoir un compte LDP temporaire pour la création d'un stream temporaire.
 
 Voici l'appel API de création d'un stream :
 
@@ -212,6 +214,10 @@ La requête GET permet de lister les stream ID au sein de votre souscription.
 
 ### Étape 4 - Administrer vos streams vSphere Logs Data Platform
 
+> [!primary]
+> Si vous voulez connaitre tous les services et fonctionnalités que propose Log Data Plaform, consultez la page OVHcloud produit de [ce lien](/links/manage-operate/ldp).
+> 
+
 L'administration de vos streams LDP peuvent être fait depuis l'API OVHcloud, depuis l'espace client Bare Metal Logs Data Plateform, depuis l'UI Graylog, depuis l'UI OpenSearch et bientôt dans l'espace client manager Hosted Private Cloud.
 
 #### Via l'espace client OVHcloud
@@ -224,19 +230,18 @@ Vous pouvez vous référer à ce guide pour retrouver comment administrer vos fl
 
 Nous vous invitons à lire les guides pour voir l'ensemble des appel API disponible.
 
-| **Méthode** | **Chemin**                                                                                                | **Description**                                                                 |
-|:-----------:|:----------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------|
-|     GET     | /dbaas/logs/{serviceName}                                                                                 |                                                                                 |
-|     GET     | /dbaas/logs/{serviceName}/cluster                                                                         |                                                                                 |
-|     GET     | /dbaas/logs/{serviceName}/cluster/{clusterId}                                                             |                                                                                 |
-|     GET     | /dbaas/logs/{serviceName}/cluster/{clusterId}/retention                                                   |                                                                                 |
-|     GET     | /dbaas/logs/{serviceName}/output/graylog/stream                                                           | - Returns the list of graylog streams                                           |
-|     GET     | /dbaas/logs/{serviceName}/input/{inputId}/configuration/logstash                                          | - Returns the logstash configuration                                            |
-|     GET     | /dbaas/logs/{serviceName}/encryptionKey                                                                   | - Return the list of registered encryption keys                                 |
-|     GET     | /dbaas/logs/{serviceName}/input                                                                           | - Returns the list of registered input attached to the logged user              |
-|    POST     | /dbaas/logs/{serviceName}/input                                                                           | - Register a new input object                                                   |
-|     GET     | /dbaas/logs/{serviceName}/output/opensearch/alias/{aliasId}/index                                         | - Returns the list of OpenSearch indexes attached to specified OpenSearch alias |                                                                  |
-
+| **Méthode** | **Chemin**                                                                                                | **Description**                                                                   |
+|:-----------:|:----------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------|
+|     GET     | /dbaas/logs/{serviceName}                                                                                 | - Retourne l'objet du service de l'identité connectée                             |
+|     GET     | /dbaas/logs/{serviceName}/cluster                                                                         | - Retourne la liste des clusters autorisés                                        |
+|     GET     | /dbaas/logs/{serviceName}/cluster/{clusterId}                                                             | - Retourne les détails d'un cluster autorisé                                      |
+|     GET     | /dbaas/logs/{serviceName}/cluster/{clusterId}/retention                                                   | - Répertorie tous les ID de rétention disponibles pour un cluster donné           |
+|     GET     | /dbaas/logs/{serviceName}/output/graylog/stream                                                           | - Retourne la liste des streams graylog                                           |
+|     GET     | /dbaas/logs/{serviceName}/input/{inputId}/configuration/logstash                                          | - Retourne la configuration logstash                                              |
+|     GET     | /dbaas/logs/{serviceName}/encryptionKey                                                                   | - Retourner la liste des clés de chiffrement enregistrées                         |
+|     GET     | /dbaas/logs/{serviceName}/input                                                                           | - Retourne la liste des entrées enregistrées attachées à l'utilisateur enregistré |
+|    POST     | /dbaas/logs/{serviceName}/input                                                                           | - Enregistrer un nouvel objet d'entrée                                            |
+|     GET     | /dbaas/logs/{serviceName}/output/opensearch/alias/{aliasId}/index                                         | - Retourne la liste des index OpenSearch attachés à l'alias OpenSearch spécifié   |                                                                  |
 
 **Comment obtenir le `subscriptionId`** ?
 
