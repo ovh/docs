@@ -1,7 +1,7 @@
 ---
 title: "KMS for VMware on OVHcloud - Solution et cas d'usages pour chiffrer des VM"
 excerpt: "Découvrez les solutions qui s'offrent à vous pour le chiffrement de VM avec ou sans OKMS au sein de votre Hosted Private Cloud VMware vSphere managé on OVHcloud"
-updated: 2024-08-27
+updated: 2024-08-28
 ---
 
 <style>
@@ -45,7 +45,7 @@ details[open]>summary::before {
 > Prenez en compte que l'activation de KMS est gratuite, mais vous serez facturé pour l'utilisation du service KMS OVHcloud selon le tarif standard.
 >
 
-### Introduction
+### Étape 1 - Introduction
 
 **Les avantages du chiffrement de VM avec le KMS OVHcloud (OKMS).**
 
@@ -57,11 +57,11 @@ Le KMS OVHcloud est un service managé conçu pour :
 
 Nous détaillerons ici les étapes qu'il faudra suivre pour une configuration réussie de KMS avec votre Hosted Private Cloud VMware on OVHcloud.
 
-#### L'authentification
+**L'authentification**
 
 À ce jour, l'authentification est uniquement possible au sein du KMS OVHcloud (OKMS) grâce à la méthode **mtls** (mutual tls), du protocole officiel tls [rfc8705](https://www.rfc-editor.org/rfc/rfc8705.html) et KMIP pour la gestion (création, suppression etc..) au sein de l'environnement VMware on OVHcloud.
 
-#### Cas d'usages
+**Cas d'usages**
 
 - Chiffrement et déchiffrement des données Hosted Private VMware on OVHcloud (stratégies de chiffrement de VM au sein de vSphere, vApp etc..).
 - Génération de clé KMS depuis vSphere avec le KMS OVHcloud.
@@ -70,7 +70,7 @@ Nous détaillerons ici les étapes qu'il faudra suivre pour une configuration r�
 - Utilisation d'IAM et du KMS OVHcloud (OKMS) avec votre Hosted Private Cloud VMware on OVHcloud.
 - Interconnexion des services OVHcloud ou pas avec le KMS.
 
-#### Avantages du KMS OVHcloud
+**Avantages du KMS OVHcloud**
 
 Le KMS OVHcloud vous permet de profiter des avantages d'un service managé de gestion de clé (KMS as a service) au sein de l'univers Hosted Private Cloud VMware on OVHcloud.
 
@@ -84,7 +84,7 @@ Cette architecture est redondante et permet ainsi de subir des pannes sans que c
 
 KMIP fournit un service compatible avec vCenter et le chiffrement basé sur l'hôte au sein de VMware vSphere on OVHcloud.
 
-### Étape 1 - Présentation des choix pour chiffrer des machines virtuelles
+### Étape 2 - Présentation des choix pour chiffrer des machines virtuelles
 
 > [!primary]
 > 

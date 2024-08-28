@@ -1,7 +1,7 @@
 ---
 title: "KMS for VMware on OVHcloud - VM encryption use case scenarios"
 excerpt: "Discover the solutions available to you for encrypting VMs with or without OKMS in your managed OVHcloud Hosted Private Cloud VMware vSphere"
-updated: 2024-08-27
+updated: 2024-08-28
 ---
 
 <style>
@@ -33,10 +33,10 @@ content:'\25BC';
 - A [Hosted Private Cloud VMware on OVHcloud](/links/hosted-private-cloud/vmware) offer.
 - Access to the vSphere web interface of your Hosted Private Cloud VMware on OVHcloud.
 - You must have sufficient IAM rights with your OVHcloud service account and Hosted Private Cloud KMS resources. See the following guides:
-      - [IAM for VMware on OVHcloud - Overview and FAQ](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_getting_started).
-      - [IAM for VMware on OVHcloud - How to enable IAM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_activation).
-      - [IAM for VMware on OVHcloud - How to create an IAM vSphere role](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role).
-      - [IAM for VMware on OVHcloud - How to associate a vSphere role and a user with an IAM policy](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role_policy).
+    - [IAM for VMware on OVHcloud - Overview and FAQ](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_getting_started).
+    - [IAM for VMware on OVHcloud - How to enable IAM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_activation).
+    - [IAM for VMware on OVHcloud - How to create an IAM vSphere role](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role).
+    - [IAM for VMware on OVHcloud - How to associate a vSphere role and a user with an IAM policy](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role_policy).
 
 ## Instructions
 
@@ -45,9 +45,9 @@ content:'\25BC';
 > Please note that KMS activation is free, but you will be charged for using the OVHcloud KMS service at the standard rate.
 >
 
-### Introduction
+### Step 1 - Introduction
 
-/// details | The advantages of VM encryption with OVHcloud KMS (OKMS).
+**The advantages of VM encryption with OVHcloud KMS (OKMS).**
 
 The OVHcloud KMS is a managed service designed to:
 
@@ -57,11 +57,11 @@ The OVHcloud KMS is a managed service designed to:
 
 Here, we will detail the steps you will need to follow to successfully configure KMS with your Hosted Private Cloud VMware on OVHcloud.
 
-#### Authentication
+**Authentication**
 
 To date, authentication is only possible within the OVHcloud KMS (OKMS), thanks to the **mtls** (mutual tls) method, the official tls protocol [rfc8705](https://www.rfc-editor.org/rfc/rfc8705.html) and KMIP for management (creation, deletion, etc.) within the VMware on OVHcloud environment.
 
-#### Use cases
+**Use cases**
 
 - Encryption and decryption of Hosted Private VMware on OVHcloud data (VM encryption strategies within vSphere, vApp, etc.).
 - Generate KMS keys from vSphere with OVHcloud KMS.
@@ -70,7 +70,7 @@ To date, authentication is only possible within the OVHcloud KMS (OKMS), thanks 
 - Using IAM and OVHcloud KMS (OKMS) with your VMware on OVHcloud Hosted Private Cloud.
 - Interconnection of OVHcloud services or not with the KMS.
 
-#### OVHcloud KMS benefits
+**OVHcloud KMS benefits**
 
 OVHcloud KMS allows you to take advantage of the benefits of a managed key management service (KMS as a service) within the VMware on OVHcloud Hosted Private Cloud universe.
 
@@ -84,7 +84,7 @@ This architecture is redundant and thus allows you to suffer breakdowns without 
 
 KMIP provides a service compatible with vCenter and host-based encryption within VMware vSphere on OVHcloud.
 
-### Step 1 - Overview of the choices to encrypt virtual machines
+### Step 2 - Overview of the choices to encrypt virtual machines
 
 > [!primary]
 >
