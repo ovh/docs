@@ -388,7 +388,7 @@ Seleccione una de las dos fichas siguientes:
 >> ![Zimbra - Exporter](images/zimbra-20.png){.thumbnail}
 >>
 
-### Calendario <a name="calendario"></a>
+### Calendario <a name="calendar"></a>
 
 Haga clic en el icono `Agenda` situado en la barra superior para acceder a la agenda de contactos. Dicho código se divide en **3 partes** :
 

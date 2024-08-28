@@ -56,7 +56,7 @@ OVHcloud dostarcza usługę webmail o nazwie Zimbra umożliwiającą dostęp do 
     - [Import / Eksport kontaktów](#import-export)
 - [Kalendarz](#calendar)
     - [Zarządzanie kalendarzami](#calendar-management)
-    - [Zadania](#zadania)
+    - [Zadania](#tasks)
 - [Filtry](#filters)
     - [Jak skonfigurować filtry](#filters-howto)
     - [Utwórz filtr](#filters-creation)
@@ -388,7 +388,7 @@ Wybierz jedną z dwóch następujących zakładek:
 >> ![Zimbra - Eksport](images/zimbra-20.png){.thumbnail}
 >>
 
-### Kalendarz <a name="kalendarz"></a>
+### Kalendarz <a name="calendar"></a>
 
 Kliknij ikonę `Kalendarz` na górnym pasku, aby przejść do książki adresowej. Jest on podzielony na **3 części** :
 

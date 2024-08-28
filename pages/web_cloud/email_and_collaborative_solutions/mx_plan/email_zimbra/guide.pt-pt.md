@@ -292,7 +292,7 @@ A sua interface Zimbra dispõe de 2 menus de configuração:
 >>
 >> Para configurar os filtros, consulte a secção "[Filtros](#filters)" deste manual.
 >>
-> **calendário e lembretes**
+> **Calendário e lembretes**
 >>
 >> Encontre aqui as configurações ligadas aos seus [calendários](#calendar).
 >>

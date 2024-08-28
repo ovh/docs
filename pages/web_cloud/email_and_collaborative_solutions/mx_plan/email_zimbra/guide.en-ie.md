@@ -29,7 +29,7 @@ OVHcloud provides a webmail service called Zimbra to access MX Plan email accoun
 
 ## Requirements
 
-- You have an OVHcloud **MX Plan** email solution, included in our [web hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/), included in a [100M free hosting](https://www.ovhcloud.com/en-ie/domains/free-web-hosting/) hosting plan, or ordered separately as a standalone solution.
+- You have an OVHcloud **MX Plan** email solution, included in our [web hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/), included in a [100M free hosting](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/) hosting plan, or ordered separately as a standalone solution.
 - You have the login details for the MX Plan email account you would like to use. For more information, please read our guide on [Getting started with the MX Plan solution](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
 
 ## Instructions
@@ -147,7 +147,7 @@ When you select a folder or subfolder in the left-hand column, the list of email
 When you select an email is selected, many actions are available:
 
 - 1.**Reply**: Reply directly to the sender.
-- 2.**Reply all**: Reply directly to all recipients in the "To" and "Cc" fields.
+- 2.**Reply all**: Reply directly to all recipients in the “To” and “Cc” fields.
 - 3.**Forward**: Forward the selected email to one or more recipients.
 - 4.**Archive**: Move the email to the "Archive" folder of your email account.
 - 5.**Move**: Move the email to one of the folders in the email account.
@@ -281,7 +281,7 @@ Your Zimbra interface has 2 configuration menus:
 >>
 > **Out of Office**
 >>
->> This tab refers to the "auto-reply" feature. To configure your automatic replies, please refer to the section "[Automatic Replies](#auto-reply)" of this documentation.
+>> This tab refers to the “auto-reply” feature. To configure your automatic replies, please refer to the section "[Automatic Replies](#auto-reply)" of this documentation.
 >>
 > **Filters**
 >>
@@ -293,25 +293,25 @@ Your Zimbra interface has 2 configuration menus:
 >>
 >> **General Calendar Settings**
 >>
->> - **Default schedule** : Set the default calendar used when you create an event in your calendars.
->> - **Start of week** : The day that appears first in your calendar grid.
->> - **Start of day** : the time that appears at the top of the displayed time range.
->> - **End of day** : the time that appears at the bottom of the displayed time range.
+>> - **Default schedule**: Set the default calendar used when you create an event in your calendars.
+>> - **Start of week**: The day that appears first in your calendar grid.
+>> - **Start of day**: The time that appears at the top of the displayed time range.
+>> - **End of day**: The time that appears at the bottom of the displayed time range.
 >> - **Workday Time Zone** used for your calendars.
->> - **When creating or editing events** : Display time zones for start and end times.
->> - **Sharing** : `Enable delegation for CALDav clients`. This option allows you to manage your calendars through software that supports the CALdav protocol.
->> - **Declined Events** : Display an event in the calendar, even if it has been denied.
+>> - **When creating or editing events**: Display time zones for start and end times.
+>> - **Sharing**: `Enable delegation for CALDav clients`. This option allows you to manage your calendars through software that supports the CALdav protocol.
+>> - **Declined Events**: Display an event in the calendar, even if it has been denied.
 >>
 >> **Event reminders**
 >>
->> - **Send reminders via email to** : Send reminders of events to an email address.
->> - **Show browser notifications** : receive notifications from your web browser regarding your events.
->> - **Default callback time** : Default callback time applied when you enable it on an event.
->> - **Show reminders for overdue events** : Continue sending reminders after an event.
+>> - **Send reminders via email to**: Send reminders of events to an email address.
+>> - **Show browser notifications**: Receive notifications from your web browser regarding your events.
+>> - **Default callback time**: Default callback time applied when you enable it on an event.
+>> - **Show reminders for overdue events**: Continue sending reminders after an event.
 >>
 >> **Free Busy Permission**
 >>
->> - **Permission for** : This setting only applies to the availability status linked to your email address calendars. This means that you can share your "Busy" or "Available" status with other email addresses.
+>> - **Permission for**: This setting only applies to the availability status linked to your email address calendars. This means that you can share your "Busy" or "Available" status with other email addresses.
 
 ### Contacts <a name="contacts"></a>
 
@@ -387,9 +387,9 @@ Select one of the following two tabs:
 
 Click on the `Calendar` icon in the top bar to access the address book. It is divided into **3 parts**:
 
-- **(1) List of calendars** (left) : manage your different calendars and sub-calendars.
-- **(2) Calendar Content** (center) : View the content of selected calendars and subcalendars.
-- **(3) Task List** (right) : Manage your tasks and task lists.
+- **(1) List of calendars** (left): Manage your different calendars and sub-calendars.
+- **(2) Calendar Content** (center): View the content of selected calendars and sub-calendars.
+- **(3) Task List** (right): Manage your tasks and task lists.
 
 ![Zimbra - calendar](images/zimbra-calendar-view.png){.thumbnail}
 
@@ -397,39 +397,39 @@ Click on the `Calendar` icon in the top bar to access the address book. It is di
 
 By default, in the `My Calendars` list, you have a `Calendar` created by default. This default calendar cannot be deleted, but you will see that you can create your own calendars in the next paragraph.
 
-##### 1- Create a calendar <a name="calendar-add-calendar"></a>
+##### 1 - Create a calendar <a name="calendar-add-calendar"></a>
 
-- **(1)** : To create a calendar, move your cursor over `My Calendars` in the left-hand column and click the `+` button. Enter a name and color, then click `Save`{.action}.
+- **(1)**: To create a calendar, move your cursor over `My Calendars` in the left-hand column and click the `+` button. Enter a name and colour, then click `Save`{.action}.
 
 You can also create sub-calendars.
 
-- **(2)** : To create a subcalendar, move your cursor over the calendar for which you want to create one, then right-click to display the drop-down menu. Click `Add sub-calendar`. Enter a name and color, then click `Save`{.action}.
+- **(2)**: To create a sub-calendar, move your cursor over the calendar for which you want to create one, then right-click to display the drop-down menu. Click `Add sub-calendar`. Enter a name and colour, then click `Save`{.action}.
 
 ![Zimbra - calendar](images/zimbra-calendar-add.png){.thumbnail .w-400}
 
-##### 2- Add an event <a name="calendar-add-event"></a>
+##### 2 - Add an event <a name="calendar-add-event"></a>
 
-- **(1)** : Click on `New event`{.action} in the top left-hand corner.
-- **(2)** : Click on the time condition of your calendar in which you want to add an event. For a simple addition, simply define a title for the event and a location then click `Save`{.action}. To add more details about your event, click `Add more details`{.action}.
+- **(1)**: Click on `New event`{.action} in the top left-hand corner.
+- **(2)**: Click on the time condition of your calendar in which you want to add an event. For a simple addition, simply define a title for the event and a location then click `Save`{.action}. To add more details about your event, click `Add more details`{.action}.
 
 ![Zimbra - calendar](images/zimbra-calendar-event-add-01.png){.thumbnail .w-400}
 
-- **Start** : the date and time your event starts. If you tick `All day`, you will not have to enter a start and end time because the whole day will be taken into account.
-- **End** : the end date and time of your event.
-- **Repeat** : if this is a recurring event, define the frequency.
-- **Location** : the location where the event will take place, such as the name of a meeting room.
-- **Equipment** : By clicking `Show equipment`{.action}, you can display this line to define a shared equipment that you will use for your event.
-- **Guests** : the email addresses of the event participants.
-- **Notes** : message that will be sent to the event guests.
-- **Remind** : be notified before the event begins.
-- **Show as** : define if the event makes its guests available or unavailable during its progress.
-- **Calendar** : define the calendar associated with the event.
+- **Start**: The date and time your event starts. If you tick `All day`, you will not have to enter a start and end time because the whole day will be taken into account.
+- **End**: The end date and time of your event.
+- **Repeat**: If this is a recurring event, define the frequency.
+- **Location**: The location where the event will take place, such as the name of a meeting room.
+- **Equipment**: By clicking `Show equipment`{.action}, you can display this line to define a shared equipment that you will use for your event.
+- **Guests**: The email addresses of the event participants.
+- **Notes**: Message that will be sent to the event guests.
+- **Remind**: Be notified before the event begins.
+- **Show as**: Define if the event makes its guests available or unavailable during its progress.
+- **Calendar**: Define the calendar associated with the event.
 
 Once you have defined your event, click `Save`{.action}.
 
 ![Zimbra - calendar](images/zimbra-calendar-event-add-02.png){.thumbnail .w-400}
 
-##### 3- Edit an event <a name="calendar-modify-event"></a>
+##### 3 - Edit an event <a name="calendar-modify-event"></a>
 
 #### Tasks <a name="tasks"></a>
 
@@ -437,9 +437,9 @@ Tasks are items that are detached from your calendars. Their purpose is to list 
 
 The "Tasks" list exists by default, it cannot be deleted, but you can create your own task lists.
 
-- **(1)** : To create a task, click the `...`{.action}' button, then `New task`{.action} or simply click the '+`{.action}' button next to your task list.
+- **(1)**: To create a task, click the `...`{.action} button, then `New task`{.action} or simply click the `+`{.action} button next to your task list.
 
-- **(2)** : To create a new task list, click the `...`{.action} button, then click `Create List...`{.action}.
+- **(2)**: To create a new task list, click the `...`{.action} button, then click `Create List...`{.action}.
 
 ![Zimbra - calendar](images/zimbra-calendar-task-01.png){.thumbnail .w-400}
 
@@ -472,9 +472,9 @@ In the following paragraphs, you will find the details of each of the elements o
 
 The comparison field is the section of the email to check for the comparison operator. Comparison fields can include the following fields:
 
-- **From**: Specify a sender in the "From" field of the email.
+- **From**: Specify a sender in the “From” field of the email.
 - **To**: Search for recipient names in the "To" field.
-- **CC**: Search for copied recipient names in the "CC" field.
+- **CC**: Search for copied recipient names in the “CC” field.
 - **Subject**: Specify items in the subject of the email.
 - **Header named**: When selected, an additional input field appears before the comparison operator. Use this field to enter any element of an email header. You can specify the standard fields "From", "To", "Subject", or other fields that may be present in the email header. For example, some email servers might add specific fields to the header that you can include in your filter rule, using this comparison field.
 - **Body**: Refers to the words contained or not in the body of the email.
@@ -488,10 +488,10 @@ Depending on the comparison field designated above, the comparison operator will
 > The available comparison operators vary depending on the comparison field you have selected.
 
 - **Matches exactly / Does not match exactly**: What you enter must match exactly.<br>
-    *For example*, by indicating that the subject of the email corresponds exactly to "house", the filter will only match with "house" and not with "houses" or "a blue house".
+    *For example*, by indicating that the subject of the email corresponds exactly to “house”, the filter will only match with “house” and not with “houses” or “a blue house”.
 
 - **Contains / Does not contain**: What you enter must be present in the field(s).<br>
-    *For example*, by specifying that the subject of the email must contain "house", the filter will match with "house", "houses" and also "a blue house".
+    *For example*, by specifying that the subject of the email must contain “house”, the filter will match with “house”, “houses” and also “a blue house”.
 
 - **Matches wildcard condition / Does not match wildcard condition**: Specifies that the subject must match the specified string, which includes wildcards.
 
@@ -499,11 +499,11 @@ Depending on the comparison field designated above, the comparison operator will
 
 > **Using wildcards in filters**
 >
-> Wildcards can be used in the input field for comparison using the comparison operator "**Matches wildcard condition / Does not match wildcard condition**". The available wildcards are `*` and `?`.
+> Wildcards can be used in the input field for comparison using the comparison operator “**Matches wildcard condition / Does not match wildcard condition**”. The available wildcards are `*` and `?`.
 >
-> - The wildcard `*` is a placeholder for any number of characters of any type, including spaces.<br><br> For example, the search string "blue\*house" would return the matches "blue house", "houses" or "blue wooden house". However, it would not return "lightning blue house". <br><br> Another example: The search string "w\*house" would return the matches "white house" and "watch TV in your house". However, it would not return "watch TV in your house with a friend".
+> - The wildcard `*` is a placeholder for any number of characters of any type, including spaces.<br><br> For example, the search string “blue\*house” would return the matches “blue house”, “houses” or “blue wooden house”. However, it would not return "lightning blue house". <br><br> Another example: The search string "w\*house" would return the matches "white house" and "watch TV in your house". However, it would not return “watch TV in your house with a friend”.
 >
-> - The wildcard `?` is a placeholder for exactly one character.<br><br>For example, the search string "blue?house" would return the matches "blue house", "blue-house" and "blue_house".
+> - The wildcard `?` is a placeholder for exactly one character.<br><br>For example, the search string “blue?house” would return the matches “blue house”, “blue-house” and “blue_house”.
 >
 
 ##### 3 - Value <a name="filters-value"></a>
@@ -533,7 +533,7 @@ If filters exist, you will see the list in the order in which they are applied:
 
 - **(2)** This button is used as a handle, allowing you to move the filter in the list to assign an order of application. Each filter is applied in the order that is defined in the list.
 
-Click the `+ Add a filter`{.action} button to start creating it. The basic mode window appears by default. You can switch to advanced mode by clicking `Switch to advanced`{.action} to have all comparison operators. Find the details in the section "[How to set filters](#filters-howto)".
+Click the `+ Add a filter`{.action} button to start creating it. The basic mode window appears by default. You can switch to advanced mode by clicking `Switch to advanced`{.action} to have all comparison operators. Find the details in the section “[How to set filters](#filters-howto)”.
 
 > [!tabs]
 > **Basic mode**
@@ -560,7 +560,7 @@ You can delegate your email account to another email account. This requires both
 **(1) Delegates**: To delegate your email account to another account, click `Add Delegates`{.action}.
 
 - **Send as**: The delegate can send an email with your email address, it will apear as if you had sent it yourself. The recipient will not see the delegate's email address.
-- **Send on behalf of**: The delegate can send an email from their email address with your email address included as "on behalf of". The recipient will then have a record of the two email addresses involved in the exchange.
+- **Send on behalf of**: The delegate can send an email from their email address with your email address included as “on behalf of”. The recipient will then have a record of the two email addresses involved in the exchange.
 
 **(2) Delegate send settings**: You have the following options when you delegate your email address to another email address.
 
@@ -573,11 +573,11 @@ You can delegate your email account to another email account. This requires both
 
 Click on the cogwheel icon in the top right-hand corner of your Zimbra interface, then click on `Settings`{.action}. Next, click on `Signatures`{.action} in the left-hand column.
 
-You can find the configuration details in the "[Configure Zimbra interface preferences](#settings)" section of this guide (click on the tab **Signatures**).
+You can find the configuration details in the “[Configure Zimbra interface preferences](#settings)” section of this guide (click on the tab **Signatures**).
 
 ### Automatic Replies <a name="auto-reply"></a>
 
-When you are absent without access to your email account, you can set up a message that will be used to automatically reply to emails. In Zimbra webmail, this feature is called "Out of Office".
+When you are absent without access to your email account, you can set up a message that will be used to automatically reply to emails. In Zimbra webmail, this feature is called “Out of Office”.
 
 To manage your responder, click on the cogwheel icon in the top right-hand corner of your interface, then click on `Settings`{.action} and then on `Out of Office`{.action}.
 

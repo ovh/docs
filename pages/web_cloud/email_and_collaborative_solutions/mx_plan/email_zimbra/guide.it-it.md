@@ -56,7 +56,7 @@ OVHcloud fornisce un servizio di webmail chiamato Zimbra per accedere a un accou
     - [Importa/Esporta contatti](#import-export)
 - [Calendario](#calendar)
     - [Gestione calendari](#calendar-management)
-    - [Task](#tasks)
+    - [Impegni](#tasks)
 - [Filtri](#filters)
     - [Come impostare i filtri](#filters-howto)
     - [Crea un filtro](#filters-creation)
@@ -436,7 +436,7 @@ Una volta definito l’evento, clicca su `Registra`{.action}.
 
 ##### 3- Modificare un evento <a name="calendar-modify-event"></a>
 
-#### Task <a name="tasks"></a>
+#### Impegni <a name="tasks"></a>
 
 Le attività sono elementi separati dai calendari. Il loro scopo è quello di elencare le attività da effettuare senza associarvi una data di esecuzione o una data di scadenza. Queste attività sono complementari ai calendari.
 
