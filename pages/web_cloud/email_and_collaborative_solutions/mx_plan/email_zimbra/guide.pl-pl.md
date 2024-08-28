@@ -54,7 +54,7 @@ OVHcloud dostarcza usługę webmail o nazwie Zimbra umożliwiającą dostęp do 
     - [Zarządzanie folderami](#contacts-folders)
     - [Zarządzanie listami](#contacts-lists)
     - [Import / Eksport kontaktów](#import-export)
-- [Kalendarz] (#kalendarz)
+- [Kalendarz](#calendar)
     - [Zarządzanie kalendarzami](#calendar-management)
     - [Zadania](#zadania)
 - [Filtry](#filters)
