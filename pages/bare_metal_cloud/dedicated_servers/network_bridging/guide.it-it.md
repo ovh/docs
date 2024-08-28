@@ -24,7 +24,7 @@ La connessione di rete in modalità bridge può essere utilizzata per configurar
 ## Prerequisiti
 
 - Disporre di un server dedicato con un hypervisor installato (ad esempio [VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox)
-- Disporre di almeno un indirizzo [Additional IP](/links/bare-metal/bare-metalip/) connesso al server
+- Disporre di almeno un indirizzo [Additional IP](/links/network/additional-ip) connesso al server
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 > [!warning]

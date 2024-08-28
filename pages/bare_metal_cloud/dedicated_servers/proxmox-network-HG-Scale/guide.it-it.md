@@ -27,7 +27,7 @@ Sulle gamme High Grade & SCALE, il funzionamento degli Additional IP in modalitÃ
 ## Prerequisiti
 
 - Disporre di un [server dedicato OVHcloud](/links/bare-metal/bare-metal)
-- Disporre di un [Additional IP](/links/bare-metal/bare-metalip/)
+- Disporre di un [Additional IP](/links/network/additional-ip)
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 > [!warning]

@@ -27,7 +27,7 @@ W ofercie High Grade & SCALE nie jest możliwe działanie adresów Additional IP
 ## Wymagania początkowe
 
 - Posiadanie [serwera dedykowanego OVHcloud](/links/bare-metal/bare-metal)
-- Posiadanie adresu [Additional IP](/links/bare-metal/bare-metalip/)
+- Posiadanie adresu [Additional IP](/links/network/additional-ip)
 - Dostęp do [Panelu client OVHcloud](/links/manager)
 
 > [!warning]

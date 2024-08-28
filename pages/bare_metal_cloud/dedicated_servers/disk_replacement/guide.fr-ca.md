@@ -147,7 +147,7 @@ Comme précisé précédemment, les numéros de tous les disques sont importants
 
 > [!primary]
 >
-> Ce type de remplacement n'est possible que pour les serveurs [Big-HG](/links/bare-metal/bare-metal/hg/){.external} disposant d'une carte RAID.
+> Ce type de remplacement n'est possible que pour les serveurs [Big-HG](https://www.ovh.com/ca/fr/serveurs-dedies/hg/){.external} disposant d'une carte RAID.
 > 
 
 Dans le cas d'un remplacement à chaud sur un serveur avec une carte MegaRAID, il vous est demandé de faire clignoter la LED du disque à remplacer une fois l'intervention programmée pour faciliter le travail de nos équipes.

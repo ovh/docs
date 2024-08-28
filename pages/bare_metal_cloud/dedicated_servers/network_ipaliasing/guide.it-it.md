@@ -29,7 +29,7 @@ L'alias IP (o IP aliasing) è un tipo di configurazione del tuo server dedicato 
 ## Prerequisiti
 
 - Disporre di un [server dedicato](/links/bare-metal/bare-metal){.external}
-- Disporre di uno o più [Additional IP](/links/bare-metal/bare-metalip/){.external}
+- Disporre di uno o più [Additional IP](/links/network/additional-ip){.external}
 - Essere connesso al server in SSH (accesso *sudo*)
 
 > [!warning]

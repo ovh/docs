@@ -29,7 +29,7 @@ Technologia ta pozwala na wymianę adresów IP między poszczególnymi rozwiąza
 ## Wymagania początkowe
 
 - Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal){.external} w Panelu klienta
-- Posiadanie [adresu Additional IP](/links/bare-metal/bare-metalip/)
+- Posiadanie [adresu Additional IP](/links/network/additional-ip)
 - Dostęp do [panelu klienta OVHcloud](/links/manager)
 
 > [!warning]

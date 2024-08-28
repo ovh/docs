@@ -24,7 +24,7 @@ A ligação em rede em modo bridge pode ser utilizada para configurar as suas m�
 ## Requisitos
 
 - Dispor de um servidor dedicado com um hipervisor instalado ([VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox, por exemplo).
-- Beneficiar de, pelo menos, um endereço [Additional IP](/links/bare-metal/bare-metalip/) ligado ao servidor.
+- Beneficiar de, pelo menos, um endereço [Additional IP](/links/network/additional-ip) ligado ao servidor.
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 > [!warning]

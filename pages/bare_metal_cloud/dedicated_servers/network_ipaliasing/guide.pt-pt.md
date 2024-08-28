@@ -29,7 +29,7 @@ O IP aliasing é uma configuração de rede para servidores dedicados que permit
 ## Requisitos
 
 - Ter um [servidor dedicado](/links/bare-metal/bare-metal){.external}.
-- Dispor de um ou vários endereços [Additional IP](/links/bare-metal/bare-metalip/){.external}.
+- Dispor de um ou vários endereços [Additional IP](/links/network/additional-ip){.external}.
 - Estar ligado ao servidor usando o protocolo SSH.
 
 > [!warning]

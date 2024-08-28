@@ -24,7 +24,7 @@ Bridged Networking kann verwendet werden, um Ihre virtuellen Maschinen zu konfig
 ## Voraussetzungen
 
 - Sie verfügen über einen [Dedicated Server](/links/bare-metal/bare-metal) mit installiertem Hypervisor ([VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox, etc.).
-- Sie verfügen über mindestens eine mit dem Server verbundene [Additional IP](/links/bare-metal/bare-metalip/).
+- Sie verfügen über mindestens eine mit dem Server verbundene [Additional IP](/links/network/additional-ip).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 > [!warning]

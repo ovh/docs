@@ -28,7 +28,7 @@ IP-Aliasing ist eine spezielle Konfiguration im Netzwerk Ihres Servers, mit der 
 ## Voraussetzungen
 
 - Sie verfügen über einen [Dedicated Server](/links/bare-metal/bare-metal).
-- Sie verfügen mindestens eine [Additional IP](/links/bare-metal/bare-metalip/).
+- Sie verfügen mindestens eine [Additional IP](/links/network/additional-ip).
 - Sie haben administrativen Zugriff (sudo) auf Ihren Server über SSH oder GUI.
 
 > [!warning]

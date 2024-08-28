@@ -40,7 +40,7 @@ Un servidor dedicado es un servidor físico ("bare metal") situado en uno de nue
 
 > [!success]
 >
-> Más información sobre los sistemas operativos de los servidores en [nuestra página web](/links/bare-metal/bare-metal/os/).
+> Más información sobre los sistemas operativos de los servidores en [nuestra página web](/links/bare-metal/os).
 >
 
 Puede reinstalar fácilmente su servidor o elegir otra imagen de SO para instalar en su [área de cliente de OVHcloud](/links/manager). En la pestaña `Información general`{.action}, haga clic en `...`{.action} delante del sistema operativo y seleccione `Instalar`{.action}.
@@ -55,7 +55,7 @@ En la nueva ventana, seleccione una de las opciones de instalación:
 
 > [!primary]
 >
-> Algunos sistemas operativos o plataformas propietarias, como Plesk o Windows, necesitan licencias que generan costes adicionales. Puede adquirir licencias [con OVHcloud](/links/bare-metal/bare-metal/os/) o con un revendedor externo. A continuación, deberá aplicar la licencia en el propio sistema operativo o desde el [área de cliente de OVHcloud](/links/manager).
+> Algunos sistemas operativos o plataformas propietarias, como Plesk o Windows, necesitan licencias que generan costes adicionales. Puede adquirir licencias [con OVHcloud](/links/bare-metal/os) o con un revendedor externo. A continuación, deberá aplicar la licencia en el propio sistema operativo o desde el [área de cliente de OVHcloud](/links/manager).
 >
 > Puede gestionar todas sus licencias en la sección `Bare Metal Cloud`{.action}, con `Licencias`{.action}. En esta sección también puede contratar licencias o añadir licencias existentes a través del botón `Acciones`{.action}.
 >

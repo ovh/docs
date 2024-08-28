@@ -40,11 +40,11 @@ Si un changement de version d'OS ou de logiciel est nécessaire, assurez-vous qu
 La migration des données consiste généralement à copier les fichiers d'un serveur à un autre. Pour cela, plusieurs solutions existent :
 
 - La plus simple est d'utiliser un logiciel adapté tel que [SFTP](/pages/bare_metal_cloud/dedicated_servers/comment-deposer-ou-recuperer-des-donnees-sur-un-serveur-dedie-via-sftp).
-- L'autre option est de [synchroniser les deux serveurs entres-eux](/pages/bare_metal_cloud/dedicated_servers/how-to-copy-data-from-one-dedicated-server-to-another-using-rsync)).
+- L'autre option est de [synchroniser les deux serveurs entres-eux](/pages/bare_metal_cloud/dedicated_servers/how-to-copy-data-from-one-dedicated-server-to-another-using-rsync).
 
 ### Utiliser le backup storage (disponible uniquement sur OVHcloud et So you Start)
 
-L'option [Backup Storage](https://www.ovhcloud.com/fr/bare-metal/backup-storage/) vous permet de stocker des données sur un service externalisé à votre serveur. De base, il est lié uniquement au service sur lequel vous l'avez commandé.
+L'option [Backup Storage](https://www.ovhcloud.com/fr-ca/bare-metal/backup-storage/) vous permet de stocker des données sur un service externalisé à votre serveur. De base, il est lié uniquement au service sur lequel vous l'avez commandé.
 
 > [!warning]
 >
@@ -55,7 +55,7 @@ L'option [Backup Storage](https://www.ovhcloud.com/fr/bare-metal/backup-storage/
 
 Vous pouvez autoriser l'accès à ce stockage depuis votre nouveau serveur. Ainsi, vous disposerez d'une passerelle permettant le transfert de vos données.
 
-Consultez notre guide « [utiliser backup storage sur un serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/backup-storage/){.external} » pour plus d'informations.
+Consultez notre guide « [utiliser backup storage sur un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage){.external} » pour plus d'informations.
 
 ### Migrer son Additional IP (disponible uniquement sur OVHcloud et So you Start)
 

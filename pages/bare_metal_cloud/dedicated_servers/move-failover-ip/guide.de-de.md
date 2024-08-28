@@ -29,7 +29,7 @@ Mit dieser Technologie können Sie IP-Adressen von einem Dienst zum anderen in w
 ## Voraussetzungen
 
 - Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) in Ihrem Kunden-Account.
-- Sie verfügen über eine [Additional IP](/links/bare-metal/bare-metalip/).
+- Sie verfügen über eine [Additional IP](/links/network/additional-ip).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 > [!warning]

@@ -72,7 +72,7 @@ Weitere Informationen dazu finden Sie in unserer Anleitung "[Backup Storage auf 
 > - Es ist nicht möglich, eine Additional IP von einem OVHcloud Kunden-Account zu einem So you Start Account zu migrieren.
 >
 
-Wenn IP-Adressen-Reputation für Sie wichtig ist, empfehlen wir Ihnen dringend die Verwendung von [Additional IPs](/links/bare-metal/bare-metalip/), da diese bei einer Migration beibehalten werden können.
+Wenn IP-Adressen-Reputation für Sie wichtig ist, empfehlen wir Ihnen dringend die Verwendung von [Additional IPs](/links/network/additional-ip), da diese bei einer Migration beibehalten werden können.
 
 Wenn Sie diese IP-Adressen in Ihrem Kunden-Account haben, können Sie diese einfach auf den neuen Server umziehen.
 Lesen Sie hierzu unsere Anleitung: [Eine Additional IP umziehen](/pages/bare_metal_cloud/dedicated_servers/move-failover-ip).
