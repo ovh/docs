@@ -1,7 +1,7 @@
 ---
 title: "Logs Data Platform - Transfert des Logs VMware managé"
 excerpt: "Découvrez comment activer le transfert de logs (logs forwarding) depuis VMware vSphere managé on OVHcloud vers un flux (stream) Logs Data Platform"
-updated: 2024-08-23
+updated: 2024-08-28
 ---
 
 > [!primary]
@@ -95,8 +95,65 @@ Voici un exemple de retour, si l'option exigée pour fonctionner n'est pas activ
  }
 ]
 ```
+### Étape 2 - Création d'un stream Logs Data Platform pour vSphere
 
-### Étape 2 - Souscription de l'abonnement Logs Data Platform
+> [!primary]
+> Les ressources Hosted Private Cloud et Logs Data Platform doivent bien appartenir au même compte OVHcloud.
+>
+
+Pour créer une souscription, un stream est nécessaire. Vous pouvez créer un stream temporaire afin de souscrire votre abonnement avec le `streamId` et l'appel API POST de l'étape 3.
+
+#### Via l'espace client OVHcloud
+
+Vous pouvez vous référer à ce guide pour retrouver comment créer un stream depuis l'interface Logs Data Platform : « [Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) » (EN).
+
+#### Via l'API OVHcloud
+
+Création d'un stream, un `serviceName` LDP est nécessaire. Vous devez donc préalablement avoir un compte de souscription LDP temporaire pour créer un stream.
+
+Voici l'appel API de création d'un stream :
+
+> [!api]
+>
+> @api {v1} /dbaas/logs POST /dbaas/logs/{serviceName}/output/graylog/stream
+>
+
+> **Paramètres** :
+> 
+> ```json
+> {
+> "description": "string", // Description de votre stream.
+> "title": "string" // Titre de votre stream.
+> }
+> ```
+
+Retour :
+
+```json
+{
+  "aliasId": null,
+  "createdAt": "2024-08-28T12:25:13.544323+02:00",
+  "dashboardId": null,
+  "encryptionKeyId": null,
+  "indexId": null,
+  "inputId": null,
+  "operationId": "e34f7a06-386b-4602-8d16-d45249197d40",
+  "osdId": null,
+  "roleId": null,
+  "serviceName": "ldp-pu-66281",
+  "state": "RUNNING",
+  "streamId": null,
+  "subscriptionId": null,
+  "tokenId": null,
+  "updatedAt": "2024-08-28T12:25:13.554173+02:00"
+}
+```
+
+Récupérez le `streamId` et sauvegardez-le (copier-coller) dans un éditeur de texte. Vous en aurez besoin pour activer votre souscription Hosted Private Cloud avec le stream temporaire Logs Data Platform en question.
+
+Nous allons voir dans l'étape suivante comment souscrire votre abonnement vSphere managé à un stream LDP temporaire.
+
+### Étape 3 - Souscription de l'abonnement Logs Data Platform
 
 #### Via l'espace client OVHcloud
 
@@ -113,9 +170,10 @@ Pour récupérer le **streamId** de votre compte LDP, consultez le guide « [Pre
 
 > **Paramètres** :
 >
-> - `serviceName` : Nom du service, par exemple: `pcc-XXX-XXX-XXX-XXX`.
-> - `kind` : Type de filtrage journal VMware, par exemple: `esxi`, `nsxtManager`, `vcsa`, `nsxtEdge`.
+> - `serviceName` : Nom du service vSphere managé, e.g `pcc-XXX-XXX-XXX-XXX`.
+> - `kind` : Kind VMware que le forwarder utilise, e.g (Disponible : `nsxtEdge ┃ vcsa ┃ nsxtManager ┃ esxi`).
 > - `streamId` : Identifiant du flux (stream) de destination, par exemple: (uuid : `ggb8d894-c491-433e-9c87-50a8bf6fe773`).
+>
 
 Retour :
 
@@ -130,23 +188,41 @@ Retour :
 
 La requête GET permet de lister vos IDs de souscriptions.
 
-### Étape 3 - Création d'un stream Logs Data Platform HPC
-
-> [!primary]
-> Les ressources Hosted Private Cloud et Logs Data Platform doivent bien appartenir au même compte OVHcloud.
+> [!api]
+>
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/log/subscription
 >
 
-Vous pouvez vous référer à ce guide pour retrouver comment administrer vos flux (streams) depuis l'interface Logs Data Platform : « [Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) » (EN).
+> **Paramètres** :
+>
+> - `serviceName` : Nom du service LDP, e.g `ldp-vg-XXXXX`.
+> - ` subscriptionId` : Identifiant de souscription, e.g `c23600d6-e0fb-44c8-8218-c421e3e9efad`.
+>
 
-Récupérez le **streamId** et sauvegardez-le (copier-coller). Vous en aurez besoin pour activer votre souscription Hosted Private Cloud avec le stream Logs Data Platform en question.
+Retour :
 
-Nous allons voir dans l'étape suivante comment créer un stream.
+```json
+{
+"serviceName": "ldp-vg-21057",
+"updatedAt": "2024-08-08T14:12:49+02:00",
+"resource": {
+"name": "pcc-145-239-250-183",
+"type": "dedicated-cloud"
+},
+"streamId": "c1623e87-1de6-411e-acbb-7b071ff790ed",
+"kind": "esxi",
+"createdAt": "2024-08-08T14:12:49+02:00",
+"subscriptionId": "c93600f6-e0fb-44c8-8218-c721e3e9efaf"
+}
+```
 
-### Étape 4 - Administrer vos flux Logs Data Platform
+### Étape 4 - Administrer vos streams Logs Data Platform
+
+L'administration de vos streams LDP peuvent être fait depuis l'API OVHcloud, depuis l'espace client Bare Metal Logs Data Plateform, depuis l'UI Graylog, depuis l'UI OpenSearch et bientôt dans l'espace client OVHcloud vSphere managé Hosted Private Cloud.
 
 #### Via l'espace client OVHcloud
 
-Vous pouvez vous référer à ce guide pour retrouver comment administrer vos flux (stream) depuis le control panel Log Data Platform : « [Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) » (EN).
+Vous pouvez vous référer à ce guide pour retrouver comment administrer vos flux (streams) depuis le control panel Log Data Platform : « [Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) » (EN).
 
 #### Via l’API OVHcloud
 
@@ -173,8 +249,8 @@ Utilisez les appels API suivants pour établir la liste des abonnements de votre
 
 > **Paramètres** :
 >
-> - `serviceName` : nom de service de votre Hosted Private Cloud VMware on OVHcloud sous la forme "pcc-XXX-XXX-XXX-XXX".
-> - `kind` : nom du type de log de l'abonnement Hosted Private Cloud (par exemple `esxi`).
+> - `serviceName` : Nom de service de votre vSphere managé, e.g `pcc-XXX-XXX-XXX-XXX`.
+> - `kind` : Kind VMware que le forwarder utilise, e.g (Disponible : `nsxtEdge ┃ vcsa ┃ nsxtManager ┃ esxi`).
 >
 
 Exemple de retour :
@@ -185,12 +261,101 @@ Exemple de retour :
 ]
 ```
 
+**Exemple de retours API**
+
+> [!api]
+>
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/log/kind/{name}
+>
+
+> **Paramètres** :
+>
+> - `name` : Nom kind VMware que le forwarder utilise, e.g (Disponible : `nsxtEdge ┃ vcsa ┃ nsxtManager ┃ esxi`).
+> - `serviceName` : Nom de service de votre vSphere managé, e.g `pcc-XXX-XXX-XXX-XXX`.
+> 
+
+Retour :
+
+**NSX-T Edge**
+
+```json
+{
+  "name": "nsxtEdge",
+  "createdAt": "2024-05-31T22:17:40+02:00",
+  "kindId": "Null",
+  "displayName": "NSX-T Edges",
+  "additionalReturnedFields": [
+    "priority",
+    "application_name",
+    "level",
+    "comp",
+    "s2comp",
+    "subcomp"
+  ],
+  "updatedAt": "2024-05-31T22:17:40+02:00"
+}
+```
+
+**NSX-T Manager**
+
+```json
+{
+{
+  "displayName": "NSX-T Manager",
+  "kindId": "Null",
+  "additionalReturnedFields": [
+    "priority",
+    "application_name",
+    "level",
+    "comp",
+    "s2comp",
+    "subcomp"
+  ],
+  "createdAt": "2024-05-31T22:17:40+02:00",
+  "updatedAt": "2024-05-31T22:17:40+02:00",
+  "name": "nsxtManager"
+}
+```
+
+**VCSA**
+
+```json
+{
+  "name": "vcsa",
+  "createdAt": "2024-05-31T22:17:40+02:00",
+  "additionalReturnedFields": [
+    "priority",
+    "application_name",
+    "level"
+  ],
+  "updatedAt": "2024-05-31T22:17:40+02:00",
+  "kindId": "Null",
+  "displayName": "VCSA"
+}
+```
+
+**ESXI**
+
+```json
+{
+  "kindId": "Null",
+  "displayName": "esxi",
+  "name": "esxi",
+  "createdAt": "2024-04-26T22:27:57+02:00",
+  "updatedAt": "2024-04-26T22:27:57+02:00",
+  "additionalReturnedFields": [
+    "level",
+    "application_name"
+  ]
+}
+```
+
 **Comment désactiver votre abonnement de souscription Hosted Private Cloud Log Data Platform** ?
 
 > [!primary]
 > La résiliation de votre abonnement Hosted Private Cloud LDP ne signifie pas la suppression de vos streams. Le stockage consommé au moment de la désactivation reste soumis à facturation.
 >
-> **Note** : Il n'est possible (à ce jour) que de supprimer un stream dans son intégralité.
+> **Note** : Il n'est possible (à ce jour) que de supprimer un stream dans son intégralité (en entier) et non certains inputs granulairement.
 >
 
 > [!api]
@@ -200,8 +365,8 @@ Exemple de retour :
 
 > **Paramètres** :
 >
-> - `serviceName` : nom de service de votre Hosted Private Cloud VMware on OVHcloud sous la forme "pcc-XXX-XXX-XXX-XXX".
-> - `subscriptionId` : nom du type de log de l'abonnement (par exemple `esxi`).
+> - `serviceName` : Nom de service de votre vSphere managé, e.g `pcc-XXX-XXX-XXX-XXX`.
+> - `subscriptionId` : L'ID de souscription de votre abonnement LDP, e.g `c83600f2-e0fb-44c8-8218-c721e3e9efaf`.
 >
 
 Retour :
