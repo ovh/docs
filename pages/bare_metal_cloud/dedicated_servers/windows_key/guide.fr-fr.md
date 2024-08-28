@@ -12,7 +12,7 @@ Lors de l'installation d'un système d'exploitation Windows Server, il est possi
 
 ## Prérequis
 
-- Disposer d'un [serveur dédié](/links/bare-metal/bare-metal/os/server-windows/) avec Windows installé dans votre compte OVHcloud
+- Disposer d'un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/os/server-windows/) avec Windows installé dans votre compte OVHcloud
 - Disposer d'une licence Windows SPLA dans votre compte OVHcloud
 - Avoir un accès administratif à votre serveur via une connexion bureau à distance
 

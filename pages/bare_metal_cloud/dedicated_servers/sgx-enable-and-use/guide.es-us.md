@@ -15,7 +15,7 @@ La tecnología Intel SGX proporciona funciones avanzadas de seguridad mediante e
 
 ## Requisitos
 
-- Tener un servidor dedicado compatible con la opción [SGX](/links/bare-metal/bare-metal/intel-software-guard-extensions/){.external}
+- Tener un servidor dedicado compatible con la opción [SGX](https://www.ovhcloud.com/es/bare-metal/intel-software-guard-extensions/){.external}
 - Disponer de las claves de conexión recibidas por correo electrónico tras la instalación
 - Tener acceso al [área de cliente de OVHcloud](/links/manager) o a la [API de OVHcloud](https://ca.api.ovh.com/)
 - Tener instalado Ubuntu 18.04 o similar en el servidor

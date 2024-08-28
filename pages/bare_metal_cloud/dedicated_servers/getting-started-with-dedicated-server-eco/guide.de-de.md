@@ -40,7 +40,7 @@ Ein dedizierter Server ist ein physischer Server ("Bare Metal") in einem unserer
 
 > [!success]
 >
-> Weitere Informationen zu Server-Betriebssystemen finden Sie auf unserer [Webseite](/links/bare-metal/bare-metalos/).
+> Weitere Informationen zu Server-Betriebssystemen finden Sie auf unserer [Webseite](/links/bare-metal/bare-metal/os).
 >
 
 Sie können Ihren Server in wenigen Schritten in Ihrem [OVHcloud Kundencenter](/links/manager) reinstallieren oder ein anderes Betriebssystem auswählen. Klicken Sie im Tab `Allgemeine Informationen`{.action} auf `...`{.action} neben `System (OS)` und danach auf `Installieren`{.action}.
@@ -55,7 +55,7 @@ Wählen Sie im Popup-Fenster eine der Installationsoptionen aus:
 
 > [!primary]
 >
-> Einige proprietäre Betriebssysteme und Plattformen wie Plesk oder Windows benötigen Lizenzen, die zusätzliche Kosten verursachen. Sie können Lizenzen [bei OVHcloud](/links/bare-metal/bare-metalos/) oder einem externen Reseller beziehen. Danach müssen Sie Ihre Lizenz im Betriebssystem selbst oder über Ihr [OVHcloud Kundencenter](/links/manager) hinzufügen.
+> Einige proprietäre Betriebssysteme und Plattformen wie Plesk oder Windows benötigen Lizenzen, die zusätzliche Kosten verursachen. Sie können Lizenzen [bei OVHcloud](/links/bare-metal/bare-metal/os) oder einem externen Reseller beziehen. Danach müssen Sie Ihre Lizenz im Betriebssystem selbst oder über Ihr [OVHcloud Kundencenter](/links/manager) hinzufügen.
 >
 > Sie können alle Ihre Lizenzen im Bereich `Bare Metal Cloud`{.action} unter `Lizenzen`{.action} verwalten. In diesem Abschnitt können Sie auch über den Button `Aktionen`{.action} Lizenzen bestellen oder bestehende Lizenzen hinzufügen.
 >

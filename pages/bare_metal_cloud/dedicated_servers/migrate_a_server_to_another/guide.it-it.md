@@ -49,7 +49,7 @@ La migrazione dei dati implica generalmente la copia dei file da un server all'a
 
 ### Utilizza il Backup Storage (disponibile solo su OVHcloud e So you Start)
 
-Con l'opzione [Backup Storage](/links/bare-metal/bare-metalbackup-storage/), puoi archiviare dati su un servizio esterno al tuo server. È associato esclusivamente al servizio dal quale l'hai ordinato.
+Con l'opzione [Backup Storage](https://www.ovhcloud.com/it/bare-metal/backup-storage/), puoi archiviare dati su un servizio esterno al tuo server. È associato esclusivamente al servizio dal quale l'hai ordinato.
 
 > [!warning]
 >

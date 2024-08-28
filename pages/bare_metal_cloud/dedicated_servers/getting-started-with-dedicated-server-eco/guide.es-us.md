@@ -241,7 +241,7 @@ Para más información sobre la monitorización de OVHcloud, consulte [esta guí
 
 > [!primary]
 >
-> Tenga en cuenta que las direcciones [IP adicionales](/links/bare-metal/bare-metal/ip/) no son compatibles con la gama **Kimsufi**.
+> Tenga en cuenta que las direcciones [IP adicionales](/links/network/additional-ip) no son compatibles con la gama **Kimsufi**.
 >
 
 #### Modo bridge IP

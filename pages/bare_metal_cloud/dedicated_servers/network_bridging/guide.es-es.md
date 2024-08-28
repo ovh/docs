@@ -10,7 +10,7 @@ updated: 2024-07-15
 
 > [!primary]
 >
-> Desde el 6 de octubre de 2022, nuestra solución "Failover IP" se denomina desde ahora [Additional IP](https://www.ovhcloud.com/es-es/network/additional-ip/). Esto no afectará a sus funcionalidades.
+> Desde el 6 de octubre de 2022, nuestra solución "Failover IP" se denomina desde ahora [Additional IP](/links/network/additional-ip). Esto no afectará a sus funcionalidades.
 >
 
 ## Objetivo
@@ -24,7 +24,7 @@ La puesta en red en modo bridge puede utilizarse para configurar sus máquinas v
 ## Requisitos
 
 - Tener un servidor dedicado con un hipervisor instalado (por ejemplo, [VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server y Proxmox).
-- Tener al menos una dirección [Additional IP](/links/bare-metal/bare-metal/ip/) conectada al servidor.
+- Tener al menos una dirección [Additional IP](/links/network/additional-ip) conectada al servidor.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 > [!warning]
@@ -32,7 +32,7 @@ La puesta en red en modo bridge puede utilizarse para configurar sus máquinas v
 >
 > Para más información, consulte nuestra [comparativa](/links/bare-metal/eco-compare).
 >
-> La presente guía no es aplicable a los servidores de las gamas [Scale](/links/bare-metal/bare-metal/scale/) y [High Grade](/links/bare-metal/bare-metal/high-grade/). Lo mismo ocurre con la gama de servidores Advance que disponen de las CPU AMD Epyc 4K y 8K lanzadas desde julio de 2024.
+> La presente guía no es aplicable a los servidores de las gamas [Scale](https://www.ovhcloud.com/es-es/bare-metal/scale/) y [High Grade](https://www.ovhcloud.com/es-es/bare-metal/high-grade/). Lo mismo ocurre con la gama de servidores Advance que disponen de las CPU AMD Epyc 4K y 8K lanzadas desde julio de 2024.
 >
 > En su lugar, consulte las siguientes guías: [Configurar la red en ESXi en las gamas High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/esxi-network-HG-Scale), [Configurar la red en Proxmox VE en las gamas High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/proxmox-network-HG-Scale) y [Configurar la red en Windows Server con Hyper-V en las gamas High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale).
 

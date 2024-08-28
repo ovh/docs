@@ -16,7 +16,7 @@ Quando installi Windows Server, la Product Key (ovvero il codice di attivazione 
 
 ## Prerequisiti
 
-- Disporre di un [server dedicato](/links/bare-metal/bare-metalos/server-windows/) con Windows installato sul tuo account OVHcloud
+- Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/os/server-windows/) con Windows installato sul tuo account OVHcloud
 - Avere una licenza Windows SPLA sul tuo account OVHcloud
 - Avere un accesso amministrativo al tuo server tramite una connessione desktop remoto
 

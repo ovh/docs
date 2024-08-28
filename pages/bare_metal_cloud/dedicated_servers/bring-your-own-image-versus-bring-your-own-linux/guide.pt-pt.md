@@ -6,9 +6,9 @@ updated: 2024-01-31
 
 ## Objective
 
-Although OVHcloud provides its customers with [a wide range of Operating System (OS) for your dedicated servers](/links/bare-metal/bare-metalos/), you might have good reasons to need to install a custom OS:
+Although OVHcloud provides its customers with [a wide range of Operating System (OS) for your dedicated servers](/links/bare-metal/bare-metal/os), you might have good reasons to need to install a custom OS:
 
-- OS is not part of [the OVHcloud catalog](/links/bare-metal/bare-metalos/),
+- OS is not part of [the OVHcloud catalog](/links/bare-metal/bare-metal/os),
 - Specific OS build version,
 - OS with specific kernel version.
 

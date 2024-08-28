@@ -11,7 +11,7 @@ OVHcloud dedicated servers include additional backup space to store important da
 **This guide explains how to enable and use your storage space.**
 
 > [!primary]
-> We recommend to consult the [product page](/links/bare-metal/bare-metal/backup-storage/) as well for further details about the service.
+> We recommend to consult the [product page](https://www.ovhcloud.com/en-ca/bare-metal/backup-storage/) as well for further details about the service.
 >
 > Note that this guide is not applicable for OVHcloud US services.
 >

@@ -28,7 +28,7 @@ Cette documentation détaille :
 
 ## Prérequis
 
-- Disposer d'un serveur de type [HGR-STOR-2](/links/bare-metal/bare-metal/high-grade/hgr-stor-2/)
+- Disposer d'un serveur de type [HGR-STOR-2](https://www.ovhcloud.com/fr/bare-metal/high-grade/hgr-stor-2/)
 
 ## En pratique
 

@@ -10,7 +10,7 @@ updated: 2024-07-15
 
 > [!primary]
 >
-> Od 6 października 2022 nasze rozwiązanie "Failover IP" nazywa się teraz [Additional IP](https://www.ovhcloud.com/pl/network/additional-ip/). To nie ma wpływu na jego funkcje.
+> Od 6 października 2022 nasze rozwiązanie "Failover IP" nazywa się teraz [Additional IP](/links/network/additional-ip). To nie ma wpływu na jego funkcje.
 >
 
 ## Wprowadzenie
@@ -32,7 +32,7 @@ Do konfiguracji wirtualnych maszyn możesz użyć konfiguracji sieci w trybie br
 >
 > Aby uzyskać więcej informacji, zapoznaj się z naszym [porównaniem](/links/bare-metal/eco-compare).
 >
-> Niniejszy przewodnik nie ma zastosowania do serwerów z oferty [Scale](/links/bare-metal/bare-metalscale/) i [High Grade](/links/bare-metal/bare-metalhigh-grade/). To samo dotyczy serwerów Advance z procesorami AMD Epyc 4K i 8K wprowadzonymi na rynek od lipca 2024.
+> Niniejszy przewodnik nie ma zastosowania do serwerów z oferty [Scale](https://www.ovhcloud.com/pl/bare-metal/scale/) i [High Grade](https://www.ovhcloud.com/pl/bare-metal/high-grade/). To samo dotyczy serwerów Advance z procesorami AMD Epyc 4K i 8K wprowadzonymi na rynek od lipca 2024.
 >
 > Zapoznaj się z następującymi przewodnikami: [Konfiguracja sieci na ESXi w ofercie High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/esxi-network-HG-Scale), [Konfiguracja sieci na Proxmox VE w ofercie High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/proxmox-network-HG-Scale) i [Konfiguracja sieci w systemie Windows Server z Hyper-V w ofercie High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale).
 

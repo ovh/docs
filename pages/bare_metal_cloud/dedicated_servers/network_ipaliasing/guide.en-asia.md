@@ -6,7 +6,7 @@ updated: 2024-03-15
 
 > [!primary]
 >
-> Since October 6th, 2022 our service "Failover IP" is named [Additional IP](https://www.ovhcloud.com/asia/network/additional-ip/). This renaming has no effect on its technical features.
+> Since October 6th, 2022 our service "Failover IP" is named [Additional IP](/links/network/additional-ip). This renaming has no effect on its technical features.
 >
 
 ## Objective
@@ -24,7 +24,7 @@ IP aliasing is a special network configuration for your OVHcloud dedicated serve
 ## Requirements
 
 - A [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account
-- An [Additional IP address](/links/bare-metal/bare-metal/ip/) or an Additional IP block (RIPE or ARIN)
+- An [Additional IP address](/links/network/additional-ip) or an Additional IP block (RIPE or ARIN)
 - Access via SSH or remote desktop connection for Windows
 - Basic networking and administration knowledge
 

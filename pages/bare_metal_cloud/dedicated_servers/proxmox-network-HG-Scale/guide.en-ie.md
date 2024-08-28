@@ -6,7 +6,7 @@ updated: 2024-08-21
 
 > [!primary]
 >
-> Since October 6th, 2022 our service "Failover IP" has been named [Additional IP](https://www.ovhcloud.com/en-ie/network/additional-ip/). This renaming has no impact on its technical features.
+> Since October 6th, 2022 our service "Failover IP" has been named [Additional IP](/links/network/additional-ip). This renaming has no impact on its technical features.
 >
 
 ## Objective
@@ -16,7 +16,7 @@ updated: 2024-08-21
 ## Requirements
 
 - an [OVHcloud dedicated server](/links/bare-metal/bare-metal)
-- You must have [Additional IP addresses](/links/bare-metal/bare-metal/ip/)
+- You must have [Additional IP addresses](/links/network/additional-ip)
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]

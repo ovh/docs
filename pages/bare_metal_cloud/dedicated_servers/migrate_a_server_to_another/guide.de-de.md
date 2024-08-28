@@ -48,7 +48,7 @@ Bei der Datenmigration wird in der Regel das Kopieren von Dateien von einem Serv
 
 ### Verwendung des Backup Storage (nur verfügbar für OVHcloud und So you Start)
 
-Mit der Option [Backup Storage](/links/bare-metal/bare-metalbackup-storage/) können Sie Daten auf einem externen Dienst speichern, der von Ihrem Server unabhängig ist.
+Mit der Option [Backup Storage](https://www.ovhcloud.com/de/bare-metal/backup-storage/) können Sie Daten auf einem externen Dienst speichern, der von Ihrem Server unabhängig ist.
 
 > [!warning]
 >

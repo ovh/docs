@@ -12,7 +12,7 @@ When you install a Windows Server operating system, the product key – also kno
 
 ## Requirements
 
-- A [dedicated server](/links/bare-metal/bare-metal/os/server-windows/) with Windows installed in your OVHcloud account
+- A [dedicated server](https://www.ovhcloud.com/en-us/bare-metal/os/server-windows/) with Windows installed in your OVHcloud account
 - A Windows SPLA licence in your OVHcloud account
 - Administrative access to your server via remote desktop connection
 

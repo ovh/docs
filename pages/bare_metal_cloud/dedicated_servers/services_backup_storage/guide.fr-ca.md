@@ -11,7 +11,7 @@ Les serveurs dédiés OVHcloud comprennent un espace de sauvegarde supplémentai
 **Ce guide vous explique comment activer et utiliser votre espace de sauvegarde**.
 
 > [!primary]
-> Pour plus de détails, nous vous recommandons de consulter la [page commerciale](/links/bare-metal/bare-metal/backup-storage/) de l'option Backup Storage.
+> Pour plus de détails, nous vous recommandons de consulter la [page commerciale](https://www.ovhcloud.com/fr-ca/bare-metal/backup-storage/) de l'option Backup Storage.
 >
 > Ce guide ne s'applique pas aux services OVHcloud US.
 >

@@ -15,7 +15,7 @@ Serwery dedykowane OVHcloud dysponują dodatkową przestrzenią do przechowywani
 **Niniejszy przewodnik wyjaśnia, jak aktywować i korzystać z przestrzeni dyskowej**.
 
 > [!primary]
-> Aby uzyskać więcej informacji, zalecamy zapoznanie się ze [stroną handlową](/links/bare-metal/bare-metalbackup-storage/) opcji Backup Storage.
+> Aby uzyskać więcej informacji, zalecamy zapoznanie się ze [stroną handlową](https://www.ovhcloud.com/pl/bare-metal/backup-storage/) opcji Backup Storage.
 >
 > Niniejszy przewodnik nie ma zastosowania do usług OVHcloud US.
 >

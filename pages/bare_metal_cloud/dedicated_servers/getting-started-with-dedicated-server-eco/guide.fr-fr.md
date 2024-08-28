@@ -237,7 +237,7 @@ Vous trouverez plus d'informations sur le monitoring OVHcloud dans [ce guide](/p
 
 > [!primary]
 >
-> Veuillez noter que les adresses IP [supplémentaires](/links/bare-metal/bare-metal/ip/) ne sont pas compatibles avec la gamme **Kimsufi**.
+> Veuillez noter que les adresses IP [supplémentaires](/links/network/additional-ip) ne sont pas compatibles avec la gamme **Kimsufi**.
 >
 
 #### Mode bridge IP

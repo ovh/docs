@@ -148,7 +148,7 @@ Comme précisé précédemment, les numéros de tous les disques sont importants
 
 > [!primary]
 >
-> Ce type de remplacement n'est possible que pour les serveurs [FS-MAX](/links/bare-metal/bare-metal/fs/1801fs05.xml){.external} et les serveurs [Big-HG](/links/bare-metal/bare-metal/hg/1801bhg01.xml){.external} disposant d'une carte RAID.
+> Ce type de remplacement n'est possible que pour les serveurs [FS-MAX](https://www.ovh.com/fr/serveurs_dedies/fs/1801fs05.xml){.external} et les serveurs [Big-HG](https://www.ovh.com/fr/serveurs_dedies/hg/1801bhg01.xml){.external} disposant d'une carte RAID.
 > 
 
 Dans le cas d'un remplacement à chaud sur un serveur avec une carte MegaRAID, il vous est demandé de faire clignoter la LED du disque à remplacer une fois l'intervention programmée pour faciliter le travail de nos équipes.

@@ -236,7 +236,7 @@ You can find more information about OVHcloud Monitoring in [this guide](/pages/b
 
 > [!primary]
 >
-> Please note that [Additional IP addresses](/links/bare-metal/bare-metal/ip/) are not compatible with the **Kimsufi** range.
+> Please note that [Additional IP addresses](/links/network/additional-ip) are not compatible with the **Kimsufi** range.
 >
 
 #### Network bridging
