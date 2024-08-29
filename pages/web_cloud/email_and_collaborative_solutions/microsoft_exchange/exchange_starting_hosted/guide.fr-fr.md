@@ -1,7 +1,7 @@
 ---
 title: Premiers pas avec le service Hosted Exchange
 excerpt: Débutez avec un service Hosted Exchange
-updated: 2023-03-06
+updated: 2024-08-29
 ---
 
 <style>
@@ -125,6 +125,14 @@ Les comptes en attente de configuration s'affichent dans le tableau sous la form
 ### Utiliser vos adresses e-mail
 
 Une fois vos comptes configurés, il ne reste plus qu’à les utiliser. Pour cela, OVHcloud met à disposition le webmail **Outlook Web App** (OWA). Ce dernier est accessible à l’adresse <https://www.ovh.com/fr/mail/>. Pour y accéder, vous devez y renseigner les identifiants relatifs à votre adresse e-mail. Si vous souhaitez obtenir de l'aide sur l'utilisation de OWA, [consultez notre documentation](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
+
+Si c'est la première fois que vous vous connectez à OWA avec cette adresse e-mail, vous serez invité à définir la langue de l'interface ainsi que le fuseau horaire. Ensuite, cliquez sur `Enregistrer`{.action} pour continuer.
+
+> [!primary]
+>
+> Les fuseaux horaires sont listés selon [la norme UTC (temps universel coordonné)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), et non par ordre alphabétique des villes.
+>
+> **Exemple** : Pour l'Europe de l'Ouest, c'est la tranche UTC +1 (Bruxelles, Copenhague, Madrid, Paris).
 
 Si vous souhaitez configurer votre adresse e-mail sur un logiciel de messagerie ou un périphérique comme un smartphone ou une tablette, [consultez notre documentation](/products/web-cloud-email-collaborative-solutions-microsoft-exchange). Pour une utilisation optimale de votre adresse Exchange sur un logiciel, assurez-vous de sa bonne compatibilité avec le service.
 
