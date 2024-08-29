@@ -45,7 +45,7 @@ Data migration usually involves copying files from one server to another. There 
 
 ### Using the backup storage (available only on OVHcloud and So you Start)
 
-With the [Backup Storage](/links/bare-metal/bare-metal/backup-storage/) option, you can store data on a service that is external to your server. It is only linked to the service you ordered it from.
+With the [Backup Storage](https://www.ovhcloud.com/en/bare-metal/backup-storage/) option, you can store data on a service that is external to your server. It is only linked to the service you ordered it from.
 
 > [!warning]
 >
@@ -69,7 +69,7 @@ See our guide on [using Backup Storage on a dedicated server](/pages/bare_metal_
 > - It is not possible to migrate an IP from an OVHcloud account to a So you Start account.
 >
 
-If the reputation of your IP addresses is important, we strongly recommend using [Additional IPs](/links/bare-metal/bare-metal/ip/), as they can be kept if you migrate.
+If the reputation of your IP addresses is important, we strongly recommend using [Additional IPs](/links/network/additional-ip), as they can be kept if you migrate.
 
 Once you have these IPs, you simply need to move them to the new server.
 To do this, please refer to our dedicated guide: [Moving an Additional IP](/pages/bare_metal_cloud/dedicated_servers/move-failover-ip).

@@ -6,7 +6,7 @@ updated: 2022-12-20
 
 > [!primary]
 >
-> Depuis le 6 octobre 2022, notre solution "IP Failover" s'appelle désormais [Additional IP](https://www.ovhcloud.com/fr-ca/network/additional-ip/). Cela n'a pas d'impact sur ses fonctionnalités.
+> Depuis le 6 octobre 2022, notre solution "IP Failover" s'appelle désormais [Additional IP](/links/network/additional-ip). Cela n'a pas d'impact sur ses fonctionnalités.
 >
 
 ## Objectif
@@ -25,7 +25,7 @@ Cette technologie vous permet d’échanger les adresses IP d'une solution à l'
 ## Prérequis
 
 - Disposer d'un [serveur dédié](/links/bare-metal/bare-metal){.external} dans votre espace client OVHcloud.
-- Disposer d'une [adresse Additional IP](/links/bare-metal/bare-metal/ip/).
+- Disposer d'une [adresse Additional IP](/links/network/additional-ip).
 - Être connecté à l'[espace client OVHcloud](/links/manager){.external}.
 
 > [!warning]

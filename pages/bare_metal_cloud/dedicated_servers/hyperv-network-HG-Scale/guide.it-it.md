@@ -27,7 +27,7 @@ Puoi installare questa configurazione su ogni server Hyper-V (un'interfaccia pri
 ## Prerequisiti
 
 * Disporre di un [server dedicato OVHcloud](/links/bare-metal/bare-metal)
-* Disporre di un indirizzo [Additional IP](/links/bare-metal/bare-metalip/)
+* Disporre di un indirizzo [Additional IP](/links/network/additional-ip)
 * Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 > [!warning]

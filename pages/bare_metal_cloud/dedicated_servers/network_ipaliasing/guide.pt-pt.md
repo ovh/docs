@@ -10,7 +10,7 @@ updated: 2024-03-25
 
 > [!primary]
 >
-> A partir de 6 de outubro de 2022, a nossa solução "Failover IP" passou a designar-se [Additional IP](https://www.ovhcloud.com/pt/network/additional-ip/). Isto não afeta as suas funcionalidades.
+> A partir de 6 de outubro de 2022, a nossa solução "Failover IP" passou a designar-se [Additional IP](/links/network/additional-ip). Isto não afeta as suas funcionalidades.
 >
 
 ## Objetivo
@@ -29,7 +29,7 @@ O IP aliasing é uma configuração de rede para servidores dedicados que permit
 ## Requisitos
 
 - Ter um [servidor dedicado](/links/bare-metal/bare-metal){.external}.
-- Dispor de um ou vários endereços [Additional IP](/links/bare-metal/bare-metalip/){.external}.
+- Dispor de um ou vários endereços [Additional IP](/links/network/additional-ip){.external}.
 - Estar ligado ao servidor usando o protocolo SSH.
 
 > [!warning]

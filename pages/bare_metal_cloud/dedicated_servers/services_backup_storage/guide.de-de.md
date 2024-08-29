@@ -15,7 +15,7 @@ Die dedizierten Server von OVHcloud inkludieren einen zusätzlichen Backup-Speic
 **Diese Anleitung erklärt, wie Sie Ihren Backup-Speicherplatz aktivieren und verwenden.**
 
 > [!primary]
-> Für weitere Informationen empfehlen wir Ihnen, die [Produktseite](/links/bare-metal/bare-metalbackup-storage/) der Backup Storage Option einzusehen.
+> Für weitere Informationen empfehlen wir Ihnen, die [Produktseite](https://www.ovhcloud.com/de/bare-metal/backup-storage/) der Backup Storage Option einzusehen.
 >
 > Beachten Sie, dass diese Anleitung nicht für OVHcloud US Dienstleistungen gilt.
 >

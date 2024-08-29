@@ -10,7 +10,7 @@ updated: 2024-07-16
 
 > [!primary]
 >
-> Dal 6 ottobre 2022, la nostra soluzione "Failover IP" si chiama [Additional IP](https://www.ovhcloud.com/it/network/additional-ip/). Questo non ha alcun impatto sulla sua funzionalità.
+> Dal 6 ottobre 2022, la nostra soluzione "Failover IP" si chiama [Additional IP](/links/network/additional-ip). Questo non ha alcun impatto sulla sua funzionalità.
 >
 
 ## Obiettivo
@@ -27,7 +27,7 @@ Sulle gamme High Grade & SCALE, il funzionamento degli Additional IP in modalit�
 ## Prerequisiti
 
 - Disporre di un [server dedicato OVHcloud](/links/bare-metal/bare-metal)
-- Disporre di un [Additional IP](/links/bare-metal/bare-metalip/)
+- Disporre di un [Additional IP](/links/network/additional-ip)
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 > [!warning]

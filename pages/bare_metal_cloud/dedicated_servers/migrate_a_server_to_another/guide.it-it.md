@@ -49,7 +49,7 @@ La migrazione dei dati implica generalmente la copia dei file da un server all'a
 
 ### Utilizza il Backup Storage (disponibile solo su OVHcloud e So you Start)
 
-Con l'opzione [Backup Storage](/links/bare-metal/bare-metalbackup-storage/), puoi archiviare dati su un servizio esterno al tuo server. È associato esclusivamente al servizio dal quale l'hai ordinato.
+Con l'opzione [Backup Storage](https://www.ovhcloud.com/it/bare-metal/backup-storage/), puoi archiviare dati su un servizio esterno al tuo server. È associato esclusivamente al servizio dal quale l'hai ordinato.
 
 > [!warning]
 >
@@ -73,7 +73,7 @@ Per maggiori informazioni, consulta la nostra guida su [utilizzare il Backup Sto
 > - Non è possibile trasferire un IP da un account OVHcloud a un account So you Start.
 >
 
-Se la reputazione dei tuoi indirizzi IP è importante, ti consigliamo vivamente di utilizzare indirizzi [Additional IP](/links/bare-metal/bare-metalip/) perché, in caso di migrazione, possono essere conservati.
+Se la reputazione dei tuoi indirizzi IP è importante, ti consigliamo vivamente di utilizzare indirizzi [Additional IP](/links/network/additional-ip) perché, in caso di migrazione, possono essere conservati.
 
 Una volta creati questi indirizzi IP, dovete semplicemente spostarli sul nuovo server.
 Per farlo, consulta la nostra guida: [Trasferisci un Additional IP](/pages/bare_metal_cloud/dedicated_servers/move-failover-ip).

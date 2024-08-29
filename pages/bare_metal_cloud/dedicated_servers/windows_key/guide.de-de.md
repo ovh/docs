@@ -12,7 +12,7 @@ Bei der Installation eines Windows Server Betriebssystems kann es vorkommen, das
 
 ## Voraussetzungen
 
-- Sie haben einen [Dedicated Server](/links/bare-metal/bare-metalos/server-windows/) mit Windows-Betriebssystem in Ihrem Kunden-Account.
+- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/os/server-windows/) mit Windows-Betriebssystem in Ihrem Kunden-Account.
 - Sie verfügen über eine SPLA-Windows-Lizenz in Ihrem Kunden-Account.
 - Sie haben administrativen Zugriff auf Ihren Server über Remotedesktop-Verbindung.
 

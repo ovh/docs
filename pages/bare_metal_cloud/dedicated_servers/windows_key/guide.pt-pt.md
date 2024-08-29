@@ -16,7 +16,7 @@ Por vezes, durante a instalação de um sistema operativo Windows Server, a chav
 
 ## Requisitos
 
-- Ter um [servidor dedicado](/links/bare-metal/bare-metalos/server-windows/) com Windows instalado na sua conta OVHcloud
+- Ter um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/os/server-windows/) com Windows instalado na sua conta OVHcloud
 - Ter uma licença Windows SPLA na sua conta OVHcloud
 - Ter acesso ao servidor via desktop remoto
 

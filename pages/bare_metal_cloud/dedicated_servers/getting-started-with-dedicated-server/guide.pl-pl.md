@@ -44,7 +44,7 @@ Serwer dedykowany to fizyczny serwer ("bare metal") zlokalizowany w jednym z nas
 
 > [!success]
 >
-> Więcej informacji na temat systemów operacyjnych serwerów znajdziesz na [naszej stronie internetowej](/links/bare-metal/bare-metalos/).
+> Więcej informacji na temat systemów operacyjnych serwerów znajdziesz na [naszej stronie internetowej](/links/bare-metal/os).
 >
 
 Możesz w prosty sposób przeprowadzić reinstalację serwera lub wybrać inny obraz systemu operacyjnego do zainstalowania w [Panelu klienta](/links/manager). W zakładce `Informacje ogólne`{.action} kliknij `...`{.action} naprzeciwko systemu operacyjnego, a następnie wybierz `Zainstaluj`{.action}.
@@ -59,7 +59,7 @@ W oknie, które się pojawi wybierz jedną z opcji instalacji:
 
 > [!primary]
 >
-> Niektóre zastrzeżone systemy operacyjne lub platformy, takie jak Plesk lub Windows, wymagają licencji, które generują dodatkowe koszty. Licencje możesz kupić [u OVHcloud](/links/bare-metal/bare-metalos/) lub u zewnętrznego resellera. Następnie zastosuj Twoją licencję do systemu operacyjnego lub za pomocą Panelu [klienta](/links/manager).
+> Niektóre zastrzeżone systemy operacyjne lub platformy, takie jak Plesk lub Windows, wymagają licencji, które generują dodatkowe koszty. Licencje możesz kupić [u OVHcloud](/links/bare-metal/os) lub u zewnętrznego resellera. Następnie zastosuj Twoją licencję do systemu operacyjnego lub za pomocą Panelu [klienta](/links/manager).
 >
 > Wszystkie licencje możesz zarządzać w sekcji `Bare Metal Cloud`{.action} z `licencjami `{.action}. W tej sekcji możesz również zamawiać licencje lub dodawać istniejące licencje za pomocą przycisku `Operacje`{.action}.
 >

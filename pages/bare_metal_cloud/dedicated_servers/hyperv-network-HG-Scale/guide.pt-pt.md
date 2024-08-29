@@ -27,7 +27,7 @@ Também é possível implementar esta configuração em cada um dos servidores H
 ## Requisitos
 
 * Dispor de um [servidor dedicado OVHcloud](/links/bare-metal/bare-metal)
-* Dispor de um endereço [Additional IP](/links/bare-metal/bare-metalip/)
+* Dispor de um endereço [Additional IP](/links/network/additional-ip)
 * Estar ligado à [Área de Cliente OVHcloud](/links/manager)
 
 > [!warning]

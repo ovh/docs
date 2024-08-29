@@ -24,7 +24,7 @@ It is also possible to set up such configuration (one interface on private netwo
 
 - An [OVHcloud dedicated server](/links/bare-metal/bare-metal)
 - Access to the [OVHcloud Control Panel](/links/manager)
-- An [Additional IP](/links/bare-metal/bare-metal/ip/)
+- An [Additional IP](/links/network/additional-ip)
 
 > [!warning]
 >

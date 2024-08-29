@@ -19,7 +19,7 @@ Nasze serwery High Grade i Scale oferują opcję skalowalną, która pozwala na 
 
 ## Wymagania początkowe
 
-- Serwer [High Grade](/links/bare-metal/bare-metalhigh-grade/) lub [SCALE](/links/bare-metal/bare-metalscale/)
+- Serwer [High Grade](https://www.ovhcloud.com/pl/bare-metal/high-grade/) lub [SCALE](https://www.ovhcloud.com/pl/bare-metal/scale/)
 - Dostęp do [panelu klienta OVHcloud](/links/manager)
 
 ## W praktyce

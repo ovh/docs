@@ -18,7 +18,7 @@ Nuestros servidores High Grade y Scale le ofrecen una opción escalable que le p
 
 ## Requisitos
 
-- Un servidor [High Grade](/links/bare-metal/bare-metal/high-grade/) o [SCALE](/links/bare-metal/bare-metal/scale/)
+- Un servidor [High Grade](https://www.ovhcloud.com/es/bare-metal/high-grade/) o [SCALE](https://www.ovhcloud.com/es/bare-metal/scale/)
 - Estar conectado a su [área de cliente de OVHcloud](/links/manager)
 
 ## En la práctica
