@@ -119,7 +119,7 @@ In the new window, enter a name for the key. Fill in the `Key` field with your p
 
 ![add key](images/24-addkey.png){.thumbnail}
 
-You can now select this key in [Step 4](##create-instance) to add it to a new instance.
+You can now select this key in [Step 4](#create-instance) to add it to a new instance.
 
 <a name="network"></a>
 
@@ -127,18 +127,18 @@ You can now select this key in [Step 4](##create-instance) to add it to a new in
 
 Before creating your instance, we recommend to consider the way the instance will be used in terms of networking.
 
-- If you do not need to configure the instance with a private network at this time, you can proceed with [step 4](#create-instance). You can create an instance exposed to the public internet. (See **Public mode** [below](#networking-modes).)
+- If you do not need to configure the instance with a private network at this time, you can proceed with [step 4](#create-instance). You can create an instance exposed to the public internet. (See **Public Mode** [below](#networking-modes).)
 - If the instance needs to be connected to a new private network (OVHcloud [vRack](/links/network/vrack)), **create your vRack first** before continuing. You can find the details in the [Public Cloud vRack guide](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
 
 <a name="networking-modes"></a>
 
 /// details | Public Cloud Networking - Modes
 
-**Public mode**
+**Public Mode**
 
 Instances in Public Mode are exposed to the public internet directly via IPv4/IPv6. IP addresses cannot be modified but instances can have [Additional IP](/links/network/additional-ip) addresses attached ([including your own](/links/network/byoip)) and they can be connected to a [vRack](/links/network/vrack).
 
-**Private mode**
+**Private Mode**
 
 Instances in Private Mode can only be exposed to the public internet via a [Gateway](/links/public-cloud/gateway) or a [Load Balancer](/links/public-cloud/load-balancer) service and [Floating IP](/links/public-cloud/floating-ip) addresses.
 
@@ -246,13 +246,18 @@ If you select an operating system that requires paid licensing, these costs will
 
 This step also **requires a public SSH key** to be added (Windows instances excluded). You have 2 options:
 
+- Use a public key already stored in the OVHcloud Control Panel
+- Enter a public a key directly
+
+Click on the tabs below to view their explanations:
+
 > [!tabs]
-> **Use a public key already stored in the OVHcloud Control Panel**
+> **Use stored key**
 >>
->> To add a key that is stored in the OVHcloud Control Panel (see [Step 2](#import-ssh)), select it from the list.<br><br>
+>> To add a key that is already stored in the OVHcloud Control Panel (see [Step 2](#import-ssh)), select it from the list.<br><br>
 >>![key selection](images/24-instance-creation05.png){.thumbnail}<br>
 >>
-> **Enter a public a key directly**
+> **Enter a key directly**
 >>
 >> To add a public key by pasting the key string, click on the button `Add a key`{.action}.<br><br>
 >>![key selection](images/24-instance-creation06.png){.thumbnail}<br>
@@ -267,7 +272,7 @@ This step also **requires a public SSH key** to be added (Windows instances excl
 
 ![instance select](images/24-instance-creation08.png){.thumbnail}
 
-This step offers several configuration options:
+This step offers several configuration options. Click on the tabs below to view the details:
 
 > [!tabs]
 > **1: Number of instances to be created**
@@ -300,7 +305,7 @@ In this step you need to apply the Public Cloud network mode you have decided on
 ##### Regions
 
 > [!tabs]
-> **Private mode**
+> **Private Mode**
 >>
 >> The instance can remain fully private.<br><br>
 >>![network type](images/24-instance-creation09.png){.thumbnail}<br>
@@ -308,7 +313,7 @@ In this step you need to apply the Public Cloud network mode you have decided on
 >>![network type](images/24-instance-creation10.png){.thumbnail}<br>
 >> Note that if you click on `Create a new private network`{.action}, the instance creation process will be interrupted and has to be restarted from the beginning.<br>
 >>
-> **Public mode**
+> **Public Mode**
 >>
 >> The instance will be exposed to the public internet directly via IPv4/IPv6.<br><br>
 >>![network type](images/24-instance-creation11.png){.thumbnail}<br>
@@ -625,7 +630,7 @@ sudo systemctl restart ssh
 sudo systemctl restart sshd
 ```
 
-You can now log in via SSH with username and password.
+You can now log in via SSH with username and password as well.
 
 Reverse these changes to return to the key-based login for the instance.
 
