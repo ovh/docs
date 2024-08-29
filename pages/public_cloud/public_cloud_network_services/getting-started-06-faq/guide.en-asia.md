@@ -68,11 +68,10 @@ If you have a private network that spreads over multiple regions (thanks to the 
 For instance, the following architecture can be used:
 
 | Region | Private Network VLAN id | Subnet CIDR | DHCP | Gateway IP | Subnet DHCP Allocation Pool | 
--------|----|------------|------|----------|-----------------------|
- GRA11 | 42 | 10.0.0.0/8 | true | 10.0.0.1 | 10.0.0.2 - 10.0.0.254 |
+|-------|----|------------|------|----------|-----------------------|
+| GRA11 | 42 | 10.0.0.0/8 | true | 10.0.0.1 | 10.0.0.2 - 10.0.0.254 |
 | SGB5 | 42 | 10.0.0.0/8 | true | 10.0.1.1 | 10.0.1.2 - 10.0.1.254 |
 | BHS5 | 42 | 10.0.0.0/8 | true | 10.0.2.1 | 10.0.2.2 - 10.0.2.254 |
-
 
 ### Can the L3 virtual router (Gateway) help me if I would like to have a gateway to access the Internet for all my VMs in my vRack?
 
