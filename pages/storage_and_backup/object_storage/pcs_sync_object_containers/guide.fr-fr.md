@@ -17,12 +17,12 @@ Si vous souhaitez déplacer vos objets d'un data-centre à un autre, ou même d'
 
 > [!primary]
 >
-> Si votre conteneur contient des objets dont la taille est supérieure à 5Gb, vos deux conteneurs devront avoir le même nom. De plus, la configuration de la synchronisation doit également être appliquée au conteneur qui contient les segments.
+> Si votre conteneur contient des objets d'une taille supérieure à 5 Go, vos deux conteneurs devront avoir le même nom. De plus, la configuration de la synchronisation doit également être appliquée au conteneur qui contient les segments.
 >
 
 ### Configuration de la synchronisation
 
-#### Creation de la clé de synchronisation
+#### Création de la clé de synchronisation
 
 Afin que les conteneurs puissent s'identifier, il faudra créer une clé puis la configurer sur chacun des conteneurs d'objets :
 
@@ -71,7 +71,7 @@ Meta Access-Control-Allow-Origin: https://www.ovh.com
                     Content-Type: text/plain; charset=utf-8
 ```
 
-- Récupérez l'adresse du conteneur destinataire pour ensuite la configurer sur le conteneur source (Celle-ci est du type : "//OVH_PUBLIC_CLOUD/Région/Account/Conteneur")
+- Récupérez l'adresse du conteneur destinataire pour ensuite la configurer sur le conteneur source (Celle-ci est du type : `//OVH_PUBLIC_CLOUD/Région/Account/Conteneur`)
 
 ```bash
 root@serveur-1:~$ export destContainer="//OVH_PUBLIC_CLOUD/BHS/AUTH_b3e269xxxxxxxxxxxxxxxxxxxx2b0ba29/containerBHS"
@@ -79,7 +79,7 @@ root@serveur-1:~$ export destContainer="//OVH_PUBLIC_CLOUD/BHS/AUTH_b3e269xxxxxx
 
 #### Configuration du conteneur source
 
-- Changee de région dans les variables d'environnement :
+- Change de région dans les variables d'environnement :
 
 ```bash
 root@serveur-1:~$ export OS_REGION_NAME=GRA
@@ -141,11 +141,11 @@ test3.txt
 
 ### Inverser la synchronisation entre deux conteneurs
 
-Afin d'inverser la synchronisation entre deux aconteneurs, il faut supprimer la méta-donnée `--sync-to` du conteneur source, et la redéclarer sur l'autre conteneur, qui deviendra ainsi le nouveau conteneur source.
+Pour inverser la synchronisation entre deux conteneurs, la métadonnée `--sync-to` doit être supprimée du conteneur source et redéclarée sur l'autre conteneur, qui deviendra alors le nouveau conteneur source.
 
 > [!warning]
 >
-> N'oubliez de changer également la région dans la nouvealle URL sync-to.
+> N'oubliez pas de changer également la région dans la nouvelle URL sync-to.
 >
 
 ```bash
@@ -157,7 +157,7 @@ root@serveur-1:~$ swift post --sync-to "$destContainer" containerBHS
 
 ### Arrêter la synchronisation entre deux conteneurs
 
-Afin d'arrêter la synchronisation entre deux conteneurs, il faut supprimer les méta-données `--sync-key` et `--sync-to`.
+Afin d'arrêter la synchronisation entre deux conteneurs, il faut supprimer les métadonnées `--sync-key` et `--sync-to`.
 
 ```bash
 swift post -H "X-Container-Sync-Key:" containerGRA
@@ -172,6 +172,6 @@ swift post -H "X-Container-Sync-To:" containerGRA
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).
