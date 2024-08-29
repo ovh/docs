@@ -79,7 +79,7 @@ root@serveur-1:~$ export destContainer="//OVH_PUBLIC_CLOUD/BHS/AUTH_b3e269xxxxxx
 
 #### Configuration du conteneur source
 
-- Change de région dans les variables d'environnement :
+- Changez de région dans les variables d'environnement :
 
 ```bash
 root@serveur-1:~$ export OS_REGION_NAME=GRA
