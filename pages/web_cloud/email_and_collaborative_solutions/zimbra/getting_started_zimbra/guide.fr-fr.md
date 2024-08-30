@@ -1,5 +1,5 @@
 ---
-title: "Premier pas avec l'offre Zimbra"
+title: "Premiers pas avec l'offre Zimbra"
 excerpt: "Découvrez comment débuter avec votre offre Zimbra depuis votre espace client OVHcloud"
 updated: 2024-08-21
 ---
@@ -8,18 +8,15 @@ updated: 2024-08-21
 .w-400 {
 max-width:400px!importante;
 }
-.h-600 {
-max-height:600px!importante;
-}
 </style>
 
 > [!primary]
 >
 > **Important**
 >
-> Zimbra est un produit en phase bêta .
+> L'offre Zimbra est un produit en phase bêta .
 >
-> Actuellement, il est uniquement disponible aux personnes ayant complété le formulaire d'inscription à la bêta.
+> Il est uniquement disponible aux personnes ayant complété le formulaire d'inscription à la bêta.
 >
 > Certaines fonctionnalités ou limitations présentées dans ce guide sont susceptibles d'évoluer lorsque le produit sera commercialisé.
 
