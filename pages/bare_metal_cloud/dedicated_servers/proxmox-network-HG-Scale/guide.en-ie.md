@@ -15,7 +15,7 @@ updated: 2024-08-21
 
 ## Requirements
 
-- an [OVHcloud dedicated server](/links/bare-metal/bare-metal)
+- An [OVHcloud dedicated server](/links/bare-metal/bare-metal)
 - You must have [Additional IP addresses](/links/network/additional-ip)
 - Access to the [OVHcloud Control Panel](/links/manager)
 
@@ -289,7 +289,6 @@ You need to:
 * create a bridge connected to the aggregate;
 
 First, add your public block of IP addresses to the vRack. To do so, go to the `Bare Metal Cloud`{.action} section of your [OVHcloud Control Panel](/links/manager) and open the `vRack`{.action} menu.
-
 
 Select your vRack from the list to view the list of eligible services. Click on the public block of IP addresses you want to add to the vRack, then click the `Add`{.action} button.
 
