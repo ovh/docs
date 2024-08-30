@@ -3,7 +3,7 @@ title: "Cómo crear una instancia de Public Cloud y conectarse a ella"
 excerpt: "Cómo configurar instancias de Public Cloud en el área de cliente de OVHcloud y cómo empezar a utilizar las instancias"
 updated: 2024-08-22
 ---
-Encontrará más información en la sección 
+
 <style>
 details>summary {
     color:rgb(33, 153, 232) !important;
