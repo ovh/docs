@@ -56,7 +56,7 @@ Is the information correct? [Y/n] Y
 Open the *authorized_keys* file in the personal folder of the new user with a text editor:
 
 ```bash
-~$ sudo nano /home/user2/.ssh/authorized_keys
+sudo nano /home/user2/.ssh/authorized_keys
 ```
 
 Add the public key created in the first step to the file. Save and close the editor.
@@ -64,7 +64,7 @@ Add the public key created in the first step to the file. Save and close the edi
 If the .ssh folder does not already exist, you can create it with this command:
 
 ```bash
-~$ sudo mkdir /home/user2/.ssh/
+sudo mkdir /home/user2/.ssh/
 ```
 
 You can configure multiple SSH keys by adding them to the *authorized_keys* files of the corresponding user folders.
@@ -72,7 +72,7 @@ You can configure multiple SSH keys by adding them to the *authorized_keys* file
 From now on, you can log in with the user and the private key configured previously:
 
 ```bash
-~$ ssh user2@instance_IP
+ssh user2@instance_IP
 ```
 ```console
 Linux b2-7-de1 5.10.0-10-cloud-amd64 #1 SMP Debian 5.10.84-1 (2021-12-08) x86_64

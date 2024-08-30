@@ -241,6 +241,8 @@ Wszystkie informacje na temat rozwiązań kopii zapasowych dostępnych dla Twoje
 
 [Pierwsze kroki z serwerem VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps) 
 
+[Twórz i używaj kluczy SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
+
 [Konfiguracja firewalla w systemie Windows](/pages/bare_metal_cloud/virtual_private_servers/activate-port-firewall-soft-win)
 
 [Konfiguracja firewalla w systemie Linux z systemem iptables](/pages/bare_metal_cloud/virtual_private_servers/firewall-Linux-iptable)

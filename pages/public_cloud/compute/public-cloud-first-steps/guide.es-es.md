@@ -3,7 +3,7 @@ title: "Cómo crear una instancia de Public Cloud y conectarse a ella"
 excerpt: "Cómo configurar instancias de Public Cloud en el área de cliente de OVHcloud y cómo empezar a utilizar las instancias"
 updated: 2024-08-22
 ---
-
+Encontrará más información en la sección 
 <style>
 details>summary {
     color:rgb(33, 153, 232) !important;
@@ -38,9 +38,9 @@ A continuación, podrá ir un paso más allá con su proyecto de Public Cloud en
 
 > [!primary]
 >
-> Si todavía no ha creado ningún proyecto de Public Cloud, comience por nuestra [guía sobre la creación de un proyecto] (/pages/public_cloud/compute/create_a_public_cloud_project).
+> Si todavía no ha creado ningún proyecto de Public Cloud, comience por nuestra [guía sobre la creación de un proyecto](/pages/public_cloud/compute/create_a_public_cloud_project).
 >
-> **Los detalles técnicos** importantes relativos al Public Cloud de OVHcloud están disponibles en [esta página] (/pages/public_cloud/compute/00-essential-info-to-get-started-on-public-cloud).
+> **Los detalles técnicos** importantes relativos al Public Cloud de OVHcloud están disponibles en [esta página](/pages/public_cloud/compute/00-essential-info-to-get-started-on-public-cloud).
 >
 
 ### Presentación del contenido
@@ -153,7 +153,7 @@ El modo privado local sólo se aplica si se crea una instancia en **Local Zone**
 
 Para más información, consulte la [página web de las Local Zones](/links/public-cloud/local-zones).
 
-//
+///
 
 <a name="create-instance"></a>
 
@@ -207,7 +207,7 @@ Los modelos de instancia de tipo `Metal`{.action} proporcionan recursos físicos
 | Storage Optimized   | ✓     | Optimizado para la transferencia de datos en disco    |
 | Metal | ✓ | Recursos dedicados con acceso directo a los recursos de cálculo, almacenamiento y red|
 
-//
+///
 
 /// details | Regiones y Local Zones
 
@@ -220,7 +220,7 @@ Una **región** se define como una ubicación en el mundo formada por uno o vari
 
 Las Local Zones son una extensión de las **regiones** que acercan los servicios de OVHcloud a sitios específicos, ofreciendo una latencia reducida y un rendimiento mejorado para las aplicaciones. Puede encontrar más información en la [página web de Local Zones](/links/public-cloud/local-zones) y en la [documentación de capacidades de Local Zones](/pages/public_cloud/compute/local-zones-capabilities-limitations).
 
-//
+///
 
 <a name="region"></a>
 
@@ -428,7 +428,7 @@ Si su [par de llaves SSH está correctamente configurado](#create-ssh), puede co
 > Si recibe mensajes de error relativos a sus **llaves SSH**, compruebe que su dispositivo local dispone de una llave SSH privada correctamente configurada utilizando la información de [esta guía](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#create-ssh-key).</br>
 > Si sigue teniendo problemas, puede reemplazar el par de claves con [esta guía](/pages/public_cloud/compute/replacing_lost_ssh_key).
 >
-> Si ha creado una instancia sin llave SSH, a través de la [API de OVHcloud](/pages/manage_and_operate/api/first-steps) o de la [interfaz OpenStack Horizon](/pages/public_cloud/compute/create_instance_in_horizon), solo podrá añadir una llave SSH a su instancia a través del [modo de rescate](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) siguiendo las instrucciones descritas en [esta guía](/pages/public_cloud/compute/replacing_ssh_key).
+> Si ha creado una instancia sin llave SSH, a través de la [API de OVHcloud](/pages/manage_and_operate/api/first-steps) o de la [interfaz OpenStack Horizon](/pages/public_cloud/compute/create_instance_in_horizon), solo podrá añadir una llave SSH a su instancia a través del [modo de rescate](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) siguiendo las instrucciones descritas en [esta guía](/pages/public_cloud/compute/replacing_lost_ssh_key).
 >
 
 Puede acceder a su instancia inmediatamente después de su creación a través de la interfaz de línea de comandos de su estación de trabajo local (`Terminal`, `Command prompt`, `Powershell`, etc.) por SSH.
@@ -558,7 +558,7 @@ Seleccione `Instances`{.action} en la barra de navegación izquierda debajo de *
 
 > [!primary]
 >
->**Instancias Windows**
+> **Instancias Windows**
 >
 > No es necesario realizar ningún paso adicional en las instancias que tengan instalado un sistema operativo Windows.
 >

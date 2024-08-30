@@ -60,7 +60,7 @@ Is the information correct? [Y/n] Y
 Abra o ficheiro *authorized_keys* na pasta pessoal do novo utilizador com um editor de texto:
 
 ```bash
-~$ sudo nano /home/user2/.ssh/authorized_keys
+sudo nano /home/user2/.ssh/authorized_keys
 ```
 
 Adicione ao ficheiro a chave pública criada na primeira etapa. Registe e feche o editor.
@@ -68,7 +68,7 @@ Adicione ao ficheiro a chave pública criada na primeira etapa. Registe e feche 
 Se a pasta .ssh ainda não existir, pode criá-la com este comando:
 
 ```bash
-~$ sudo mkdir /home/user2/.ssh/
+sudo mkdir /home/user2/.ssh/
 ```
 
 Pode configurar várias chaves SSH adicionando-as aos ficheiros *authorized_keys* das pastas de utilizador correspondentes.
@@ -76,7 +76,7 @@ Pode configurar várias chaves SSH adicionando-as aos ficheiros *authorized_keys
 A partir de agora, poderá ligar-se ao utilizador e à chave privada configuradas anteriormente:
 
 ```bash
-~$ ssh user2@instance_IP
+ssh user2@instance_IP
 ```
 ```console
 Linux b2-7-de1 5.10.0-10-cloud-amd64 #1 SMP Debian 5.10.84-1 (2021-12-08) x86_64

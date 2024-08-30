@@ -243,8 +243,9 @@ Na [página do produto](https://www.ovhcloud.com/pt/vps/options/) e nos respetiv
 
 [VPS: primeira utilização](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps) 
 
-[Configurar a firewall em Windows](/pages/bare_metal_cloud/virtual_private_servers/activate-port-firewall-soft-win)
+[Criar e utilizar chaves SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
 
+[Configurar a firewall em Windows](/pages/bare_metal_cloud/virtual_private_servers/activate-port-firewall-soft-win)
 
 [Configurar a firewall em Linux com iptables](/pages/bare_metal_cloud/virtual_private_servers/firewall-Linux-iptable)
 
