@@ -108,7 +108,7 @@ Le chiavi SSH pubbliche possono essere archiviate nella sezione `Public Cloud`{.
 >
 > Le chiavi SSH salvate ti permettono di creare le tue istanze più velocemente nello Spazio Cliente. Per modificare le coppie di chiavi e aggiungere utenti dopo aver creato l’istanza, consulta la guida su [chiavi SSH supplementari](/pages/public_cloud/compute/configuring_additional_ssh_keys).
 >
-> Le chiavi SSH pubbliche aggiunte allo Spazio Cliente OVHcloud saranno disponibili per i servizi Public Cloud di tutte le [Region](/links/public-cloud/region-pci). È possibile archiviare chiavi crittografate con **RSA**, **ECDSA** e **ED25519**.
+> Le chiavi SSH pubbliche aggiunte allo Spazio Cliente OVHcloud saranno disponibili per i servizi Public Cloud di tutte le [Region](/links/public-cloud/regions-pci). È possibile archiviare chiavi crittografate con **RSA**, **ECDSA** e **ED25519**.
 >
 
 Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Public Cloud`{.action} e seleziona il progetto Public Cloud interessato.
@@ -173,7 +173,7 @@ Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Public Cloud`{
 
 Nella pagina "**Home**", clicca su `Crea un’istanza`{.action}.
 
-![istanza creazione](immagini/24-istanza-creazione01.png){.thumbnail}
+![istanza creazione](images/24-instance-creation01.png){.thumbnail}
 
 <a name="model"></a>
 
@@ -351,7 +351,7 @@ Clicca su `Avanti`{.action} per passare all’ultimo step.
 
 #### Step 4.6: Seleziona un periodo di fatturazione
 
-![modalità di fatturazione](immagini/24-istanza-creation14.png){.thumbnail}
+![modalità di fatturazione](images/24-instance-creation14.png){.thumbnail}
 
 > [!primary]
 >
@@ -428,7 +428,7 @@ Se la tua [coppia di chiavi SSH è configurata correttamente](#create-ssh), puoi
 > Se ricevi messaggi di errore relativi alle **chiavi SSH**, verifica che il tuo dispositivo locale disponga di una chiave SSH privata configurata correttamente utilizzando le informazioni di [questa guida](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#create-ssh-key).</br>
 > In caso di difficoltà, è possibile sostituire la coppia di chiavi utilizzando [questa guida](/pages/public_cloud/compute/replacing_lost_ssh_key).
 >
-> Se hai creato un’istanza senza chiave SSH, tramite l’[API OVHcloud](/pages/manage_and_operate/api/first-steps) o l’[interfaccia OpenStack Horizon](/pages/public_cloud/compute/create_instance_in_horizon), puoi aggiungere una chiave SSH alla tua istanza soltanto tramite il [modo rescue](/pages/public_cloud/compute/an_instance_in_rescue_mode) seguendo le istruzioni descritte in [questa guida](/pages/public_cloud/compute/replacing_lost_ssh_key).
+> Se hai creato un’istanza senza chiave SSH, tramite l’[API OVHcloud](/pages/manage_and_operate/api/first-steps) o l’[interfaccia OpenStack Horizon](/pages/public_cloud/compute/create_instance_in_horizon), puoi aggiungere una chiave SSH alla tua istanza soltanto tramite il [modo rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) seguendo le istruzioni descritte in [questa guida](/pages/public_cloud/compute/replacing_lost_ssh_key).
 >
 
 È possibile accedere all’istanza immediatamente dopo la sua creazione tramite l’interfaccia della riga di comando della workstation locale (`Terminal`, `Command prompt`, `Powershell`, ecc...) via SSH.

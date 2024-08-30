@@ -145,7 +145,7 @@ As instâncias em modo público são expostas à Internet diretamente através d
 
 As instâncias em modo privado só podem ser expostas à Internet através de um serviço [Gateway](/links/public-cloud/gateway) ou [Load Balancer](/links/public-cloud/load-balancer) e endereços [Floating IP](/links/public-cloud/floating-ip).
 
-Para mais informações, consulte os nossos manuais na secção [Public Cloud Network Services](/products/public-cloud-network). O [guia de conceitos](/páginas/public_cloud/public_cloud_network_services/conceitos-01-public-cloud-networking-conceptions) fornece uma introdução ao Public Cloud Networking.
+Para mais informações, consulte os nossos manuais na secção [Public Cloud Network Services](/products/public-cloud-network). O [guia de conceitos](/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts) fornece uma introdução ao Public Cloud Networking.
 
 **Local Private Mode**
 

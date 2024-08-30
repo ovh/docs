@@ -214,7 +214,7 @@ Instanz-Modelle vom Typ `Metal`{.action} stellen dedizierte physische Ressourcen
 
 Eine **Region** wird definiert als ein Standort in der Welt, der aus einem oder mehreren Rechenzentren besteht, in denen Dienste von OVHcloud gehostet werden. Weitere Informationen zu Regionen, der geografischen Verteilung und der Verfügbarkeit von Diensten finden Sie auf unserer [dedizierten Webseite](/links/public-cloud/regions-pci) und der [Webseite zur OVHcloud Infrastruktur](/links/infrareg).
 
-**Lokale Zonen**
+**Local Zones**
 
 Local Zones sind eine Erweiterung von **Regionen**, die OVHcloud Dienste näher an bestimmten Standorten platziert, was zu reduzierten Latenzen und einer verbesserten Anwendungsleistung führt. Weitere Informationen finden Sie auf der [Webseite zu Local Zones](/links/public-cloud/local-zones) und in der [Dokumentation zur Dienstverfügbarkeit für Local Zones](/pages/public_cloud/compute/local-zones-capabilities-limitations).
 
@@ -543,7 +543,7 @@ Wählen Sie `Instanzen`{.action} in der linken Navigationsleiste unter **Compute
 >>
 >> Für die Verwendung der VNC-Konsole muss auf der Instanz ein **Benutzerkonto mit Passwort** konfiguriert sein. Um ein Passwort für das vorkonfigurierte Konto festzulegen, folgen Sie den Schritten in [Abschnitt 6.1.1 unten](#set-password).
 >>
-> ***Windows-Instanz**
+> **Windows-Instanz**
 >>
 >> Melden Sie sich mit Ihren Logindaten der Windows-Instanz an. Bei einer aktiven Sitzung haben Sie unmittelbar Zugriff. Es besteht eine spürbare Latenz im Vergleich zu einer RDP-Verbindung.
 >>

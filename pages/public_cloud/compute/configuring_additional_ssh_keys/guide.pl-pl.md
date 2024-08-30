@@ -60,7 +60,7 @@ Is the information correct? [Y/n] Y
 Otwórz plik *authorized_keys* w folderze nowego użytkownika z edytorem tekstu:
 
 ```bash
-~$ sudo nano /home/user2/.ssh/authorized_keys
+sudo nano /home/user2/.ssh/authorized_keys
 ```
 
 Dodaj do pliku klucz publiczny utworzony na pierwszym etapie. Zarejestruj i zamknij wydawcę.
@@ -68,7 +68,7 @@ Dodaj do pliku klucz publiczny utworzony na pierwszym etapie. Zarejestruj i zamk
 Jeśli folder .ssh jeszcze nie istnieje, możesz go utworzyć za pomocą polecenia:
 
 ```bash
-~$ sudo mkdir /home/user2/.ssh/
+sudo mkdir /home/user2/.ssh/
 ```
 
 Możesz skonfigurować kilka kluczy SSH dodając je do plików *authorized_keys* odpowiednich folderów użytkownika.
@@ -76,7 +76,7 @@ Możesz skonfigurować kilka kluczy SSH dodając je do plików *authorized_keys*
 Teraz możesz połączyć się z użytkownikiem i kluczem prywatnym, które zostały wcześniej skonfigurowane:
 
 ```bash
-~$ ssh user2@instance_IP
+ssh user2@instance_IP
 ```
 ```console
 Linux b2-7-de1 5.10.0-10-cloud-amd64 #1 SMP Debian 5.10.84-1 (2021-12-08) x86_64

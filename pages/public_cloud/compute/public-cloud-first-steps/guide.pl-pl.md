@@ -119,11 +119,11 @@ Otwórz `SSH Keys`{.action} w menu po lewej stronie, pod **Project Management**.
 
 ![ssh keys](/pages/assets/screens/control_panel/product-selection/public-cloud/cp_pci_sshkeys.png){.thumbnail}
 
-W nowym oknie wpisz nazwę klucza. Wypełnij pole `Klucz` ciągiem klucza publicznego, na przykład klucza utworzonego w kroku [etap 1] (#create-ssh). Potwierdź, klikając `Dodaj`{.action}.
+W nowym oknie wpisz nazwę klucza. Wypełnij pole `Klucz` ciągiem klucza publicznego, na przykład klucza utworzonego w kroku [etap 1](#create-ssh). Potwierdź, klikając `Dodaj`{.action}.
 
 ![add key](images/24-addkey.png){.thumbnail}
 
-Możesz teraz wybrać ten klucz w [Krok 4] (#create-instance), aby dodać go do nowego wystąpienia.
+Możesz teraz wybrać ten klucz w [Krok 4](#create-instance), aby dodać go do nowego wystąpienia.
 
 <a name="network"></a>
 
@@ -173,7 +173,7 @@ Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `P
 
 Na stronie "**Strona główna**" kliknij `Utwórz instancję`{.action}.
 
-![Instancja twórcza](obrazy/24-instancja-tworzenie01.png){.thumbnail}
+![instance creation](images/24-instance-creation01.png){.thumbnail}
 
 <a name="model"></a>
 
@@ -181,7 +181,7 @@ Na stronie "**Strona główna**" kliknij `Utwórz instancję`{.action}.
 
 W pierwszym kroku wybierz model instancji (można go również nazwać "*flavour*"), który definiuje zasoby instancji. Kliknij zakładkę z kluczowymi zasobami, aby znaleźć nasze zoptymalizowane modele instancji.
 
-![model instancji](obrazy/24-instancja-tworzenie02.png){.thumbnail}
+![instance model](images/24-instance-creation02.png){.thumbnail}
 
 W sekcji `Discover`{.action} proponujemy modele instancji ze współdzielonymi zasobami w bardzo atrakcyjnej cenie. Są one idealne do testowania usługi Public Cloud w ogóle lub aplikacji webowej.
 
@@ -230,7 +230,7 @@ Wybierz [region](/links/public-cloud/regions-pci) najbliżej użytkowników lub 
 
 Zapoznaj się również z informacjami podanymi na [stronie sieci Web stref lokalnych](/links/public-cloud/local-zones) oraz w [dokumentacji możliwości stref lokalnych](/pages/public_cloud/compute/local-zones-capabilities-limitations).
 
-![Wybór regionu](obrazy/24-instancja-tworzenie03.png){.thumbnail}
+![region selection](images/24-instance-creation03.png){.thumbnail}
 
 <a name="image"></a>
 
@@ -303,7 +303,7 @@ Ten etap oferuje kilka opcji konfiguracji. Kliknij poniższe zakładki, aby wyś
 
 #### Etap 4.5: Konfiguracja sieci
 
-W tym kroku zastosuj wybrany przez Ciebie tryb sieci Public Cloud, w zależności od informacji zawartych w powyższym kroku [3] (#network). Twoje opcje zależą od [wyboru poprzedniej lokalizacji](#region) dla instancji (**Region** lub **Local Zone**).
+W tym kroku zastosuj wybrany przez Ciebie tryb sieci Public Cloud, w zależności od informacji zawartych w powyższym kroku [3](#network). Twoje opcje zależą od [wyboru poprzedniej lokalizacji](#region) dla instancji (**Region** lub **Local Zone**).
 
 #### Regionów
 
@@ -351,7 +351,7 @@ Kliknij przycisk `Dalej`{.action}, aby przejść do ostatniego etapu.
 
 #### Krok 4.6: Wybierz okres rozliczeniowy
 
-![tryb płatności](obrazy/24-instancja-tworzenie14.png){.thumbnail}
+![tryb płatności](images/24-instance-creation14.png){.thumbnail}
 
 > [!primary]
 >
@@ -402,13 +402,13 @@ Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `P
 
 Wybierz `Instancje`{.action} na pasku nawigacyjnym po lewej stronie, pod **Compute**. Twoja instancja jest gotowa, gdy w tabeli stan jest ustawiony na `Włączony`. Jeśli instancja została niedawno utworzona i ma inny stan, kliknij przycisk Odśwież znajdujący się obok filtru wyszukiwania.
 
-![strona instancji](obrazy/24-instance-connect01.png){.thumbnail}
+![strona instancji](images/24-instance-connect01.png){.thumbnail}
 
 Kliknij nazwę instancji w tej tabeli, aby otworzyć `Dashboard`{.action}, na którym znajdziesz wszystkie informacje dotyczące instancji. Aby dowiedzieć się więcej o funkcjach dostępnych na tej stronie, zapoznaj się z naszym przewodnikiem dotyczącym [zarządzania instancjami w Panelu klienta](/pages/public_cloud/compute/first_steps_with_public_cloud_instance).
 
 Użytkownik **z podwyższonym poziomem uprawnień (*sudo*) jest automatycznie tworzony** na instancji. Nazwa użytkownika odzwierciedla zainstalowany obraz, na przykład "ubuntu", "debian", "fedora", itp. Możesz to sprawdzić po prawej stronie `Dashboard`{.action} w sekcji **Sieci**.
 
-![strona instancji](obrazy/24-instance-connect02.png){.thumbnail}
+![strona instancji](images/24-instance-connect02.png){.thumbnail}
 
 Jeśli Twoja [para kluczy SSH jest prawidłowo skonfigurowana](#create-ssh), możesz teraz zalogować się do instancji za pomocą wstępnie skonfigurowanego użytkownika i Twojego klucza SSH. Bardziej szczegółowe instrukcje znajdują się w następnych akapitach.
 
