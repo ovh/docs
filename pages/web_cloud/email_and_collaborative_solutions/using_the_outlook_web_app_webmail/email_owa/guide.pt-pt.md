@@ -38,6 +38,12 @@ Para entrar no webmail OWA através do seu endereço de e-mail, aceda à [págin
 
 Se está a efetuar o login no webmail OWA pela primeira vez com este endereço de e-mail, ser-lhe-á solicitado que configure o idioma e o fuso horário na interface. Clique em `Guardar`{.action} para continuar.
 
+> [!primary]
+>
+> Os fusos horários estão listados de acordo com [a norma UTC (tempo universal coordenado)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), e não por ordem alfabética das cidades.
+>
+> **Exemplo** : Para a Europa Ocidental, é a fração UTC +1 (Bruxelas, Copenhaga, Madrid, Paris).
+
 ![useowa](images/use-owa-step2.png){.thumbnail}
 
 A partir de agora, a sua caixa de correio irá aparecer por defeito sempre que iniciar a sessão.

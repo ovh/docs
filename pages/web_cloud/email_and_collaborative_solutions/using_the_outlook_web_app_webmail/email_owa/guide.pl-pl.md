@@ -42,6 +42,12 @@ Aby zalogować się do interfejsu OWA webmail przy użyciu swojego adresu e-mail
 
 Jeśli pierwszy raz logujesz się do interfejsu OWA webmail przy użyciu danego adresu e-mail, pojawi się monit o ustawienie języka interfejsu i strefy czasowej. Kliknij przycisk `Zapisz`{.action}, aby kontynuować.
 
+> [!primary]
+>
+> Strefy czasowe są wymienione zgodnie z [uniwersalnym standardem czasowym (UTC)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), a nie alfabetycznie według miast.
+>
+> **Przykład** : Dla Europy Zachodniej jest to transza UTC +1 (Bruksela, Kopenhaga, Madryt, Paryż).
+
 ![useowa](images/use-owa-step2.png){.thumbnail}
 
 Od tej pory po zalogowaniu domyślnie będzie wyświetlany widok skrzynki odbiorczej.

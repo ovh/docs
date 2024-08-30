@@ -38,6 +38,14 @@ Para acceder al webmail de OWA con su dirección de correo electrónico, diríja
 
 Si es la primera vez que accede a esta dirección de correo a través del webmail de OWA, se le pedirá que configure el idioma y la zona horaria. Haga clic en `Guardar`{.action} para continuar.
 
+Si es la primera vez que inicia sesión en OWA con esta dirección de correo electrónico, se le pedirá que especifique el idioma de la interfaz y la zona horaria. Haga clic en `Guardar`{.action} para continuar.
+
+> [!primary]
+>
+> Las zonas horarias se enumeran según [el estándar UTC (hora universal coordinada)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), no por orden alfabético de ciudades.
+>
+> **Ejemplo** : Para Europa Occidental, es el tramo UTC +1 (Bruselas, Copenhague, Madrid, París).
+
 ![useowa](images/use-owa-step2.png){.thumbnail}
 
 De aquí en adelante, tras iniciar sesión, accederá por defecto a su bandeja de entrada.

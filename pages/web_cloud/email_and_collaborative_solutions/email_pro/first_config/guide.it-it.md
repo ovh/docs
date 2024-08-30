@@ -150,6 +150,14 @@ Dopo aver completato tutti i campi clicca su `Continua`{.action}, verifica la co
 
 Una volta creati gli account non ti resta che utilizzarli. Per accedervi OVHcloud mette a disposizione un’applicazione online (*webapp*), accessibile all’indirizzo <https://www.ovhcloud.com/it/mail/> usando le credenziali associate al tuo indirizzo di posta elettronica.
 
+Se è la prima volta che ti connetti a OWA con questo indirizzo email, ti verrà chiesto di impostare la lingua dell’interfaccia utente e definire il fuso orario. Clicca su `Salva`{.action} per continuare.
+
+> [!primary]
+>
+> I fusi orari sono elencati secondo [la norma UTC (Coordinated Universal Time)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png) e non in ordine alfabetico di città.
+>
+> **Esempio** : Per l'Europa occidentale, si tratta della rata UTC +1 (Bruxelles, Copenaghen, Madrid, Parigi).
+
 Per configurare l’account su un altro client di posta o dispositivi come _smartphone_ e tablet, [è possibile trovare alcune informazioni utili nelle nostre guide disponibili online](/products/web-cloud-email-collaborative-solutions-email-pro). Se non conosci i parametri necessari alla configurazione dell’account email, ecco i valori da utilizzare:
 
 |Tipo di server|Nome del server|Tipo di sicurezza|Porta|

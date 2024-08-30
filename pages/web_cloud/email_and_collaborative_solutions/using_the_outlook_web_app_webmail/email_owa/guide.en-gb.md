@@ -37,6 +37,12 @@ To log in to OWA webmail with your email address, go to the general [webmail log
 
 If this is your first time logging in to OWA webmail with this email address, you will be prompted to set the interface language and time zone. Click `Save`{.action} to continue.
 
+> [!primary]
+>
+> Time zones are listed according to [the UTC (Coordinated Universal Time) standard](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), not in alphabetical order of cities.
+>
+> **Example** : For Western Europe, it is the UTC +1 tranche (Brussels, Copenhagen, Madrid, Paris).
+
 ![useowa](images/use-owa-step2.png){.thumbnail}
 
 From now on, your inbox view will appear by default after login.

@@ -38,6 +38,12 @@ Per accedere alla Webmail OWA con il tuo indirizzo email, vai alla pagina genera
 
 Se è la prima volta che accedi alla Webmail OWA con questo indirizzo email, ti verrà chiesto di impostare la lingua dell’interfaccia e il fuso orario. Clicca su `Salva`{.action} per continuare.
 
+> [!primary]
+>
+> I fusi orari sono elencati secondo [la norma UTC (Coordinated Universal Time)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png) e non in ordine alfabetico di città.
+>
+> **Esempio** : Per l'Europa occidentale, si tratta della rata UTC +1 (Bruxelles, Copenaghen, Madrid, Parigi).
+
 ![useowa](images/use-owa-step2.png){.thumbnail}
 
 Da questo momento, dopo il login apparirà per default la tua casella di posta in arrivo.

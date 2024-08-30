@@ -150,6 +150,14 @@ Depois, clique em `Seguinte`{.action}. Verifique as informações apresentadas e
 
 As contas foram configuradas e estão prontas a usar. Para isso, a OVHcloud disponibiliza uma aplicação online (uma *webapp*). Esta última encontra-se no endereço <https://www.ovhcloud.com/pt/mail/>, onde deve introduzir os dados de acesso à sua conta.
 
+Se for a primeira vez que acede ao OWA com este endereço de e-mail, ser-lhe-á pedido que defina o idioma da interface e o fuso horário. Em seguida, clique em `Guardar`{.action} para continuar.
+
+> [!primary]
+>
+> Os fusos horários estão listados de acordo com [a norma UTC (tempo universal coordenado)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), e não por ordem alfabética das cidades.
+>
+> **Exemplo** : Para a Europa Ocidental, é a fração UTC +1 (Bruxelas, Copenhaga, Madrid, Paris).
+
 Se desejar associar o seu endereço de e-mail a um software de correio eletrónico ou a um dispositivo, como um smartphone ou tablet, [consulte os nossos manuais de configuração](/products/web-cloud-email-collaborative-solutions-email-pro). Se pretender obter mais informações sobre os elementos necessários para configurar a sua conta E-mail Pro, consulte as configurações que deverá utilizar:
 
 |Tipo de servidor|Nome do servidor|Tipo de segurança|Porta|

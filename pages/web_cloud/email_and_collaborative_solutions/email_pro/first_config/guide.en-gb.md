@@ -148,6 +148,14 @@ Once the information is complete, click on the `Next`{.action} button, check the
 
 Once you have configured your accounts, you can start using them straight away. To do this, OVHcloud offers an web application, available [here](/links/web/email). You will need to enter your email address and password to log in.
 
+If this is your first time logging in to OWA with this email address, you will be prompted to set the interface language and time zone. Next, click `Save`{.action} to continue.
+
+> [!primary]
+>
+> Time zones are listed according to [the UTC (Coordinated Universal Time) standard](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), not in alphabetical order of cities.
+>
+> **Example**: For Western Europe, it is the UTC +1 tranche (Brussels, Copenhagen, Madrid, Paris).
+
 If you would like to configure your email address on an email client or device (e.g. a smartphone or tablet), you can refer to our [configuration guides](/products/web-cloud-email-collaborative-solutions-email-pro). If you simply need the information required to configure your Email Pro account, the settings to use are listed below:
 
 |Server type|Server name|Security type|Port|

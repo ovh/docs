@@ -79,14 +79,18 @@ Legen Sie den Namen Ihrer Exchange E-Mail-Adressen fest und fügen Sie zusätzli
 #### **Sonderfall**
 
 - Wenn Sie Ihre Exchange Plattform mit einem Domainnamen konfigurieren, der nicht über dieselbe Kundenkennung verwaltet wird, oder bei einem anderen Domainnamen-Anbieter, sehen Sie das folgende Fenster:<br>
+
 ![E-Mail](images/exchange-wizard05.png){.thumbnail .w-640}<br>
+
 In diesem Fenster können Sie einen **CNAME-Eintrag** zur DNS-Zone der Domain hinzufügen. Mit diesem Eintrag wird überprüft dass Sie zur Verwaltung des Domainnamens berechtigt sind.<br>
 
 > [!warning]
 > Ohne diese Validierung über CNAME-Eintrag ist es nicht möglich, Exchange mit diesem Domainnamen zu verwenden.
 
 - Wenn Sie Ihre Exchange Plattform mit einem Domainnamen konfigurieren, der nicht über dieselbe Kundenkennung verwaltet wird, oder bei einem anderen Domainnamen-Anbieter, oder wenn Sie sich dafür entschieden haben, Ihren Domainnamen manuell zu konfigurieren, öffnet sich das folgende Fenster:<br>
+
 ![E-Mail](images/exchange-wizard06.png){.thumbnail .w-640}<br>
+
 Hier finden Sie die einzugebenden Werte für Ihre DNS Zone. Die **MX Einträge** entsprechen den Eingangsservern Ihrer E-Mails. Der **SRV-Eintrag** dient der automatischen Konfiguration Ihrer E-Mail-Accounts.
 
 Details zur Konfiguration Ihrer DNS-Zone für Ihren E-Mail-Dienst finden Sie auf der Seite "[MX-Eintrag zur Konfiguration Ihrer Domain hinzufügen](/pages/web_cloud/domains/dns_zone_mx)".
@@ -129,6 +133,14 @@ Die Accounts, deren Konfiguration in Bearbeitung ist, werden in der Tabelle mit 
 ### E-Mail-Adressen verwenden
 
 Nachdem Sie Ihre Accounts fertig eingerichtet haben, können Sie diese nun verwenden. OVHcloud stellt hierzu die Webmail **Outlook Web App** (OWA) zur Verfügung. Sie können sich über folgenden Link einloggen: [https://mail.ovh.net/de/](https://www.ovhcloud.com/de/mail/). Geben Sie hierzu die Zugangsdaten zu Ihrer E-Mail-Adresse ein. Weitere Anleitungen zur Verwendung von OWA finden Sie in unserer Dokumentation unter folgendem Link: [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
+
+Wenn Sie sich zum ersten Mal mit dieser E-Mail-Adresse bei OWA anmelden, werden Sie aufgefordert, die Sprache und die Zeitzone der Benutzeroberfläche festzulegen. Klicken Sie anschließend auf `Speichern`{.action}, um fortzufahren.
+
+> [!primary]
+>
+> Zeitzonen werden nach [UTC (Coordinated Universal Time)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png) und nicht in alphabetischer Reihenfolge der Städte aufgeführt.
+>
+> **Beispiel**: Für Westeuropa ist dies UTC +1 (Brüssel, Kopenhagen, Madrid, Paris).
 
 Wenn Sie Ihre E-Mail-Adresse auf einem E-Mail-Client oder auf einem Gerät (beispielsweise einem Smartphone oder einem Tablet) einrichten möchten, finden Sie die entsprechende Dokumentation unter [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange). Vergewissern Sie sich, dass der E-Mail-Client mit Ihrer Dienstleistung kompatibel ist, damit Ihre Exchange Adresse optimal funktioniert.
 
