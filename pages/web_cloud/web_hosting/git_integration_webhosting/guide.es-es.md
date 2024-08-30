@@ -153,7 +153,7 @@ En la tabla de la pestaña `Multisitio`{.action}, identifique las filas correspo
 
 Para conocer la causa exacta del error, consulte la información de la última implementación. En la tabla, identifique la fila correspondiente al dominio cuyos logs del último despliegue quiera consultar. A la derecha de la línea, haga clic en el botón `...`{.action} y luego en `Información del último despliegue`{.action}.
 
-![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/info-last-deployment-button.png){.thumbnail}
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/latest-deployment-information.png){.thumbnail}
 
 Una vez identificado el error o los errores, vuelva a asociar Git. Vuelva a intentar la operación haciendo clic en el botón `...`{.action} de la fila correspondiente y, a continuación, en `Asociar Git`{.action}.
 
@@ -161,7 +161,7 @@ Una vez identificado el error o los errores, vuelva a asociar Git. Vuelva a inte
 
 Conéctese a su [área de cliente de OVHcloud](/links/manager), acceda a la sección `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. Seleccione la pestaña `Multisitio`{.action}. En la tabla que se abre, identifique la fila correspondiente al dominio que desea desplegar con Git. Asegúrese de que el estado de la columna Git sea `Activado`{.action}. Haga clic en el botón `...`{.action} y luego en `Desplegar Git`{.action}.
 
-![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/deploy-git-button.png){.thumbnail}
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/deploy-git.png){.thumbnail}
 
 Aparecerá un mensaje de confirmación y una casilla de verificación que le indicará que, en caso de conflicto durante la implementación, puede forzar los cambios remotos (del repositorio de GitHub) en el repositorio local. Marque o no la casilla según su elección y haga clic en `Confirmar`{.action} para validar la implementación.
 
@@ -237,7 +237,7 @@ Una vez que haya desplegado su repositorio de GitHub en su alojamiento web, podr
 
 Conéctese a su [área de cliente de OVHcloud](/links/manager), acceda a la sección `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. Seleccione la pestaña `Multisitio`{.action}. En la tabla que se abre, identifique la fila correspondiente al dominio cuyos logs del último despliegue desea consultar. A la derecha de la línea, haga clic en el botón `...`{.action} y luego en `Información del último despliegue`{.action}.
 
-![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/informations-last-git-deployment-button.png){.thumbnail}
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/latest-deployment-information.png){.thumbnail}
 
 En esta pantalla podrá consultar toda la información relativa a la última implementación.
 

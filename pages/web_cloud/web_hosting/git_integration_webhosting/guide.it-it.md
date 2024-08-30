@@ -153,7 +153,7 @@ Nella tabella della scheda `Multisito`{.action}, identifica le righe corrisponde
 
 Per la causa esatta dell'errore, vedere le informazioni relative all'ultima distribuzione. Nella tabella, identifica la riga corrispondente al dominio di cui vuoi consultare i log dell’ultima distribuzione. A destra della linea, clicca sul pulsante `...`{.action} e poi su `Informazioni dell'ultimo deploy`{.action}.
 
-![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/info-last-deployment-button.png){.thumbnail}
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/latest-deployment-information.png){.thumbnail}
 
 Una volta individuato il/i errore/i, associa di nuovo Git. Ripeti l’operazione cliccando sul pulsante `...`{.action} della riga corrispondente e poi su `Associare Git`{.action}.
 
@@ -161,7 +161,7 @@ Una volta individuato il/i errore/i, associa di nuovo Git. Ripeti l’operazione
 
 Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Hosting`{.action} nella sezione `Web Cloud`{.action} e seleziona il nome dell’hosting interessato. Seleziona la scheda `Multisito`{.action}. Nella tabella che appare, identifica la riga corrispondente al dominio che vuoi sviluppare con Git. Assicurati che lo stato della colonna Git sia `Attivato`{.action}. Clicca sul pulsante `...`{.action} e poi su `Eseguire il deploy Git`{.action}.
 
-![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/deploy-git-button.png){.thumbnail}
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/deploy-git.png){.thumbnail}
 
 Verrà visualizzato un messaggio di conferma e una casella di controllo che indica che, in caso di conflitto durante la distribuzione, è possibile forzare le modifiche remote (del repository GitHub) sul repository locale. Seleziona la casella in base alla tua scelta e clicca su `Confermare`{.action} per confermare l’installazione.
 
@@ -237,7 +237,7 @@ Dopo aver implementato il repository GitHub sul tuo hosting Web, puoi consultare
 
 Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Hosting`{.action} nella sezione `Web Cloud`{.action} e seleziona il nome dell’hosting interessato. Seleziona la scheda `Multisito`{.action}. Nella tabella che appare, identifica la riga corrispondente al dominio di cui vuoi consultare i log dell’ultima distribuzione. A destra della linea, clicca sul pulsante `...`{.action} e poi su `Informazioni dell'ultimo deploy`{.action}.
 
-![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/informations-last-git-deployment-button.png){.thumbnail}
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/latest-deployment-information.png){.thumbnail}
 
 In questa schermata sono disponibili tutte le informazioni relative all’ultima distribuzione.
 

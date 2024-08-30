@@ -153,7 +153,7 @@ W tabeli w zakładce `MultiSite`{.action} znajdź wiersze odnoszące się do kat
 
 Aby poznać dokładną przyczynę błędu, zobacz informacje o ostatnim wdrożeniu. W tabeli wskaż wiersz odpowiadający nazwie domeny, której logi chcesz sprawdzić podczas ostatniego wdrożenia. Po prawej stronie linii kliknij przycisk `...`{.action}, a następnie `Informacje o ostatnim wdrożeniu`{.action}.
 
-![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/info-last-deployment-button.png){.thumbnail}
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/latest-deployment-information.png){.thumbnail}
 
 Po zidentyfikowaniu(ych) błędu(ów) przypisz ponownie Git. Spróbuj ponownie wykonać operację, klikając przycisk `...`{.action} w odpowiedniej linii, a następnie `Powiąż Git`{.action}.
 
@@ -161,7 +161,7 @@ Po zidentyfikowaniu(ych) błędu(ów) przypisz ponownie Git. Spróbuj ponownie w
 
 Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Web Cloud`{.action}, kliknij `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Wybierz zakładkę `MultiSite`{.action}. W tabeli, która się wyświetli, wskaż linię odpowiadającą nazwie domeny, którą chcesz wdrożyć za pomocą Git. Upewnij się, że stan kolumny Git jest `Aktywny`{.action}. Kliknij przycisk `...`{.action}, a następnie `Uruchom Git`{.action}.
 
-![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/deploy-git-button.png){.thumbnail}
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/deploy-git.png){.thumbnail}
 
 Zostanie wyświetlony komunikat potwierdzenia wraz z polem wyboru informującym, że w przypadku konfliktu podczas wdrażania możesz wymusić zdalne zmiany (repozytorium GitHub) w repozytorium lokalnym. Zaznacz lub nie tę kratkę, w zależności od dokonanego wyboru, następnie kliknij `Zatwierdź`{.action}, aby zatwierdzić wdrożenie.
 
@@ -237,7 +237,7 @@ Po wdrożeniu repozytorium GitHub na Twoim hostingu możesz sprawdzić informacj
 
 Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Web Cloud`{.action}, kliknij `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Wybierz zakładkę `MultiSite`{.action}. W tabeli, która się wyświetla wskaż wiersz odpowiadający domenie, której logi chcesz sprawdzić podczas ostatniego wdrożenia. Po prawej stronie linii kliknij przycisk `...`{.action}, a następnie `Informacje o ostatnim wdrożeniu`{.action}.
 
-![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/informations-last-git-deployment-button.png){.thumbnail}
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/latest-deployment-information.png){.thumbnail}
 
 Na tym ekranie znajdziesz wszystkie informacje dotyczące najnowszego wdrożenia.
 

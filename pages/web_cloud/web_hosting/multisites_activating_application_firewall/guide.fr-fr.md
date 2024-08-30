@@ -41,7 +41,7 @@ Dans la nouvelle fenêtre, assurez-vous que **Application firewall** est défini
 
 Cliquez sur l'onglet `Multisite`{.action} de votre offre d'hébergement. Cliquez sur le bouton `...`{.action} à droite du nom de domaine concerné et sélectionnez l'option `Modifier le domaine`{.action}.
 
-![managemultisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-2.png){.thumbnail}
+![managemultisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-2.png){.thumbnail}
 
 Dans la fenêtre de configuration, cochez la case `Activer le pare-feu`{.action}. Vous pouvez également inclure le sous-domaine `www` dans cette configuration en cochant la case en haut.
 

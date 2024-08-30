@@ -153,7 +153,7 @@ Suchen Sie in der Tabelle in `Multisite`{.action} die Zeilen für das Verzeichni
 
 Die genaue Fehlerursache finden Sie in den Informationen zur letzten Bereitstellung. Suchen Sie in der Tabelle die Zeile für den Domainnamen, dessen Logs Sie für die letzte Bereitstellung anzeigen möchten. Rechts in der Zeile klicken Sie auf den Button `...`{.action} und dann auf `Informationen zur lezten Bereitstellung`{.action}.
 
-![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/info-last-deployment-button.png){.thumbnail}
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/latest-deployment-information.png){.thumbnail}
 
 Wenn Sie den Fehler identifiziert haben, ordnen Sie Git erneut zu. Wiederholen Sie den Vorgang, indem Sie auf die Schaltfläche `...`{.action} in der entsprechenden Zeile und dann auf `Git zuordnen`{.action} klicken.
 
@@ -161,7 +161,7 @@ Wenn Sie den Fehler identifiziert haben, ordnen Sie Git erneut zu. Wiederholen S
 
 Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager), gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Wählen Sie den Tab `Multisite`{.action}. Suchen Sie in der angezeigten Tabelle die Zeile für den Domainnamen, den Sie mit Git deployen möchten. Stellen Sie sicher, dass der Status der Git-Spalte `Aktiviert`{.action} ist. Klicken Sie auf den Button `...`{.action} und dann auf `Git deployen`{.action}.
 
-![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/deploy-git-button.png){.thumbnail}
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/deploy-git.png){.thumbnail}
 
 Es wird eine Bestätigungsmeldung angezeigt, dass Sie bei einem Konflikt während der Bereitstellung Remote-Änderungen (aus dem GitHub-Repository) in Ihrem lokalen Repository erzwingen können. Aktivieren oder deaktivieren Sie die Option hierzu, und klicken Sie auf `Bestätigen`{.action}, um die Bereitstellung zu bestätigen.
 
@@ -237,7 +237,7 @@ Nachdem Sie Ihr GitHub-Repository auf Ihrem Webhosting eingerichtet haben, könn
 
 Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager), gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Wählen Sie den Tab `Multisite`{.action}. Geben Sie in der angezeigten Tabelle die Zeile für die Domain an, für die Sie die Logs der letzten Bereitstellung anzeigen möchten. Rechts in der Zeile klicken Sie auf den Button `...`{.action} und dann auf `Informationen zur lezten Bereitstellung`{.action}.
 
-![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/informations-last-git-deployment-button.png){.thumbnail}
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/latest-deployment-information.png){.thumbnail}
 
 Hier finden Sie alle Informationen zur letzten Bereitstellung.
 
