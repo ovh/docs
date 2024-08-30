@@ -41,7 +41,7 @@ The **Discovery** plan is selected by default along with the following options:
 
 Review the service settings and click on the `Order`{.action} button.
 
-Within a few minutes your **Discovery** MongoDB service will be deployed.
+Within a few minutes, your **Discovery** MongoDB service will be deployed.
 
 ### Connectivity settings
 
@@ -51,7 +51,7 @@ Once the service is up and running you will be able to configure it to accept in
 
 When the service is running and accepting incoming connections, the next step is to access the service. The common way to do so is to use **MongoDB Compass** to connect to the service, following [this guide](/pages/public_cloud/public_cloud_databases/mongodb_07_connect_compass).
 
-If **MongoDB Compass** is not your preferred method, read these other guides to connect to the service :
+If **MongoDB Compass** is not your preferred method, read these other guides to connect to the service:
 
 - [Connect with CLI](/pages/public_cloud/public_cloud_databases/mongodb_03_connect_cli)
 - [Connect with Python](/pages/public_cloud/public_cloud_databases/mongodb_05_connect_python)
