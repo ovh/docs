@@ -161,7 +161,7 @@ Wenn Sie den Fehler identifiziert haben, ordnen Sie Git erneut zu. Wiederholen S
 
 Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager), gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Wählen Sie den Tab `Multisite`{.action}. Suchen Sie in der angezeigten Tabelle die Zeile für den Domainnamen, den Sie mit Git deployen möchten. Stellen Sie sicher, dass der Status der Git-Spalte `Aktiviert`{.action} ist. Klicken Sie auf den Button `...`{.action} und dann auf `Git deployen`{.action}.
 
-![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/deploy-git-button.png){.thumbnail}
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/deploy-git.png){.thumbnail}
 
 Es wird eine Bestätigungsmeldung angezeigt, dass Sie bei einem Konflikt während der Bereitstellung Remote-Änderungen (aus dem GitHub-Repository) in Ihrem lokalen Repository erzwingen können. Aktivieren oder deaktivieren Sie die Option hierzu, und klicken Sie auf `Bestätigen`{.action}, um die Bereitstellung zu bestätigen.
 

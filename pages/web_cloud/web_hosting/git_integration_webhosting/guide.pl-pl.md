@@ -161,7 +161,7 @@ Po zidentyfikowaniu(ych) błędu(ów) przypisz ponownie Git. Spróbuj ponownie w
 
 Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Web Cloud`{.action}, kliknij `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Wybierz zakładkę `MultiSite`{.action}. W tabeli, która się wyświetli, wskaż linię odpowiadającą nazwie domeny, którą chcesz wdrożyć za pomocą Git. Upewnij się, że stan kolumny Git jest `Aktywny`{.action}. Kliknij przycisk `...`{.action}, a następnie `Uruchom Git`{.action}.
 
-![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/deploy-git-button.png){.thumbnail}
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/deploy-git.png){.thumbnail}
 
 Zostanie wyświetlony komunikat potwierdzenia wraz z polem wyboru informującym, że w przypadku konfliktu podczas wdrażania możesz wymusić zdalne zmiany (repozytorium GitHub) w repozytorium lokalnym. Zaznacz lub nie tę kratkę, w zależności od dokonanego wyboru, następnie kliknij `Zatwierdź`{.action}, aby zatwierdzić wdrożenie.
 
