@@ -398,4 +398,3 @@ iface ens18 inet static
 ## Go further
 
 Join our [community of users](/links/community).
-
