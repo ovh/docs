@@ -243,13 +243,18 @@ Les images disponibles à cette étape dépendent des choix opérés lors des é
 
 Cette étape nécessite également **l'ajout d'une clé SSH publique** (à l'exception des instances Windows). Vous avez 2 options :
 
+- Utiliser une clé publique déjà stockée dans l'espace client OVHcloud
+- Saisir directement une clé publique
+
+Cliquez sur les onglets ci-dessous pour afficher leur présentation :
+
 > [!tabs]
-> **Utiliser une clé publique déjà stockée dans l'espace client OVHcloud**
+> **Utiliser une clé stockée**
 >>
 >> Pour ajouter une clé stockée dans votre espace client OVHcloud (voir [Étape 2](#import-ssh)), sélectionnez-la dans la liste.<br><br>
 >>![key selection](images/24-instance-creation05.png){.thumbnail}<br>
 >>
-> **Saisir directement une clé publique**
+> **Saisir directement une clé**
 >>
 >> Pour ajouter une clé publique en collant la chaîne de clé, cliquez sur le bouton `Ajouter une clé`{.action}.<br><br>
 >>![key selection](images/24-instance-creation06.png){.thumbnail}<br>
@@ -264,7 +269,7 @@ Cette étape nécessite également **l'ajout d'une clé SSH publique** (à l'exc
 
 ![instance select](images/24-instance-creation08.png){.thumbnail}
 
-Cette étape offre plusieurs options de configuration :
+Cette étape offre plusieurs options de configuration. Cliquez sur les onglets ci-dessous pour afficher les détails :
 
 > [!tabs]
 > **1 : Nombre d'instances à créer**
