@@ -153,7 +153,7 @@ Na tabela do separador `Multisite`{.action}, identifique as linhas correspondent
 
 Consulte as informações da última implementação para obter a causa exata do erro. Na tabela, identifique a linha correspondente ao nome de domínio cujos logs da última implementação pretende consultar. À direita da linha, clique no botão `...`{.action} e, a seguir, em `Informações da última implementação`{.action}.
 
-![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/info-last-deployment-button.png){.thumbnail}
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/latest-deployment-information.png){.thumbnail}
 
 Uma vez identificado o(s) erro(s), associe Git novamente. Repita a operação clicando no botão `...`{.action} da linha correspondente e, a seguir, em `Associar Git`{.action}.
 
@@ -237,7 +237,7 @@ Depois de ter implementado o seu repositório GitHub no seu alojamento web, pode
 
 Aceda à [Área de Cliente OVHcloud](/links/manager), vá à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} e escolha o nome do alojamento em causa. Selecione o separador `Multisite`{.action}. Na tabela que se abrir, identifique a linha correspondente ao domínio que pretende consultar os logs da última implementação. À direita da linha, clique no botão `...`{.action} e, a seguir, em `Informações da última implementação`{.action}.
 
-![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/informations-last-git-deployment-button.png){.thumbnail}
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/latest-deployment-information.png){.thumbnail}
 
 Encontre neste ecrã todas as informações relativas à última implementação.
 
