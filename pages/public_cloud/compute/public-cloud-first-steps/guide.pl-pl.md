@@ -106,7 +106,7 @@ Publiczne klucze SSH możesz przechowywać w sekcji `Public Cloud`{.action} w [P
 
 > [!primary]
 >
-> Przechowywane klucze SSH pozwalają na szybsze tworzenie instancji w Panelu klienta. Aby zmienić pary kluczy i dodać użytkowników po utworzeniu instancji, zapoznaj się z przewodnikiem [Dodatkowe klucze SSH](/pages/public_cloud/compute/configuing_additional_ssh_keys).
+> Przechowywane klucze SSH pozwalają na szybsze tworzenie instancji w Panelu klienta. Aby zmienić pary kluczy i dodać użytkowników po utworzeniu instancji, zapoznaj się z przewodnikiem [Dodatkowe klucze SSH](/pages/public_cloud/compute/configuring_additional_ssh_keys).
 >
 > Publiczne klucze SSH dodane do Panelu klienta OVHcloud będą dostępne dla usług Public Cloud we wszystkich [regionach](/links/public-cloud/regions-pci). Możesz przechowywać zaszyfrowane klucze za pomocą **RSA**, **ECDSA** i **ED25519**.
 >
