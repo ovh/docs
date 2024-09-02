@@ -18,7 +18,7 @@ Wenn Sie Ihren VPS als DNS-Server konfigurieren, können Sie einen OVHcloud DNS-
 
 - Sie haben adminstrativen Zugriff auf einen Domainnamen.
 - Sie haben einen [VPS](https://www.ovhcloud.com/de/vps/) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 > [!warning]
 >
@@ -31,7 +31,7 @@ Wenn Sie Ihren VPS als DNS-Server konfigurieren, können Sie einen OVHcloud DNS-
 
 ### Schritt 1: Abruf des Validierungscodes <a name="retrievecode"></a>
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie dann Ihren Server unter **Virtual Private Server** aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie dann Ihren Server unter **Virtual Private Server** aus.
 
 Gehen Sie zum Tab `Sekundärer DNS`{.action} und klicken Sie auf den Button `Domain hinzufügen`{.action}.
 
@@ -53,7 +53,7 @@ Die durchzuführende Aktion hängt davon ab, wo das DNS Ihres Domainnamens verwa
 
 - Wenn der Domainname derzeit von einem externen Registrar verwaltet wird **oder** externe DNS-Server verwendet, loggen Sie sich in die Verwaltungsoberfläche Ihres DNS-Anbieters ein und fügen Sie der DNS-Zone einen Eintrag des Typs TXT mit der Subdomain "ownercheck", sowie dem Wert aus [Schritt 1](#retrievecode) hinzu.
 
-- Wenn der Domainname von OVHcloud als Registrar verwaltet wird **und** die DNS-Server von OVHcloud verwendet werden, fügen Sie den TXT-Eintrag im Bereich `Web Cloud`{.action} in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) hinzu. Folgen Sie den Anweisungen in unserer Anleitung zum [Bearbeiten der DNS Zone](/pages/web_cloud/domains/dns_zone_edit), falls Sie mit dieser Vorgehensweise nicht nicht vertraut sind.
+- Wenn der Domainname von OVHcloud als Registrar verwaltet wird **und** die DNS-Server von OVHcloud verwendet werden, fügen Sie den TXT-Eintrag im Bereich `Web Cloud`{.action} in Ihrem [OVHcloud Kundencenter](/links/manager) hinzu. Folgen Sie den Anweisungen in unserer Anleitung zum [Bearbeiten der DNS Zone](/pages/web_cloud/domains/dns_zone_edit), falls Sie mit dieser Vorgehensweise nicht nicht vertraut sind.
 
 ![Sekundärer DNS](images/sec-04.png){.thumbnail}
 

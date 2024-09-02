@@ -1,8 +1,22 @@
 ---
 title: 'Zabezpieczenie konta OVHcloud za pomocą weryfikacji dwuetapowej'
 excerpt: 'Dowiedz się, jak poprawić bezpieczeństwo Twojego konta OVHcloud dzięki aktywacji weryfikacji dwuetapowej (2FA)'
-updated: 2024-03-18
+updated: 2024-08-22
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
@@ -25,7 +39,7 @@ Z tego przewodnika dowiesz się:
 
 ## Wymagania początkowe
 
-- Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- Dostęp do [panelu klienta OVHcloud](/links/manager).
 - Posiadanie telefonu komórkowego (w przypadku metody SMS-owej), smartfona lub tabletu (w przypadku aplikacji mobilnej), bądź klucza sprzętowego Universal Second Factor (U2F).
 - Zapoznanie się z [zaleceniami dotyczącymi zarządzania hasłem dostępu do konta](/pages/account_and_service_management/account_information/manage-ovh-password).
 
@@ -76,7 +90,7 @@ Proponujemy cztery różne metody (kliknij na poniższe zakładki, aby wyświetl
 
 ### Etap 1 - Aktywuj Twoją pierwszą metodę weryfikacji dwuetapowej <a name="enabling-2fa"></a>
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij Twoją nazwę w prawym górnym rogu (1), a następnie Twoje inicjały (2). Następnie kliknij przycisk `Bezpieczeństwo`{.action} (3), a na koniec `Włącz weryfikację dwuetapową`{.action} (4).
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external}, kliknij Twoją nazwę w prawym górnym rogu (1), a następnie Twoje inicjały (2). Następnie kliknij przycisk `Bezpieczeństwo`{.action} (3), a na koniec `Włącz weryfikację dwuetapową`{.action} (4).
 
 ![Enabling 2FA](images/2024-001-enabling-2fa.png){.thumbnail}
 
@@ -142,7 +156,7 @@ Możesz wygenerować lub usunąć kody zapasowe w Panelu klienta:
 
 ### Etap 3 - Logowanie do Panelu klienta OVHcloud z weryfikacją dwuetapową <a name="login-2fa"></a>
 
-Przejdź do [strony uwierzytelniania w Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i wpisz swój identyfikator (lub główny adres e-mail) oraz hasło.
+Przejdź do [strony uwierzytelniania w Panelu klienta OVHcloud](/links/manager){.external} i wpisz swój identyfikator (lub główny adres e-mail) oraz hasło.
 
 Na ekranie identyfikacji wyświetlana jest ostatnia użyta lub podana metoda weryfikacji dwuetapowej. Jeśli chcesz skorzystać z innej metody, kliknij przycisk `Wypróbuj inną metodę`{.action}.
 
@@ -183,7 +197,7 @@ Jeśli Twoje urządzenie (telefon komórkowy/smartfon/klucz sprzętowy) zostanie
 > - prawidłowymi kodami zapasowymi.
 >
 
-Aby usunąć urządzenie, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij Twoją nazwę w prawym górnym rogu, a następnie Twoje inicjały.
+Aby usunąć urządzenie, zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external}. Kliknij Twoją nazwę w prawym górnym rogu, a następnie Twoje inicjały.
 
 Następnie kliknij przycisk `Bezpieczeństwo`{.action}, po czym kliknij `...`{.action} po prawej stronie Twojego urządzenia do usunięcia, a na koniec wybierz `Usuń`{.action}.
 
@@ -212,21 +226,43 @@ Po usunięciu wszystkich urządzeń, wyłącz kody zapasowe, klikając przycisk 
 
 #### Jeśli nie masz już dostępu do Panelu klienta OVHcloud <a name="2FA-deletion"></a>
 
-Jeśli nie posiadasz już dostępu do narzędzi podwójnej autoryzacji  i nie masz już poprawnych kodów zapasowych, możesz zlecić wyłączenie weryfikacji dwuetapowej, kontaktując się z zespołem pomocy.
+Jeśli nie dysponujesz już prawidłowymi urządzeniami lub prawidłowymi kodami zapasowymi, poproś o dezaktywację weryfikacji dwuetapowej, dostarczając dokumenty potwierdzające tożsamość powiązane z Twoim kontem OVHcloud.
 
-Przed skontaktowaniem się z nami, należy przygotować dokumenty:
+Najpierw przejdź do [strony uwierzytelniania w Panelu klienta OVHcloud](/links/manager).
+
+Aby przejść do etapu weryfikacji dwuetapowej, wprowadź identyfikator OVHcloud i hasło. Kliknij przycisk `Nie mam dostępu do telefonu komórkowego, klucza bezpieczeństwa U2F ani kodów zapasowych`{.action}.<br>
+Jeśli nie widzisz tego przycisku, kliknij przycisk `Wypróbuj inną metodę`{.action}, a następnie `Nie mam dostępu do telefonu komórkowego, klucza bezpieczeństwa U2F ani kodów zapasowych`{.action}.
+
+Poniższy interfejs umożliwia przesłanie i wysłanie do naszych pracowników dokumentów niezbędnych do wyłączenia weryfikacji dwuetapowej na Twoim koncie.
+
+> [!warning]
+>
+> - Uwaga: upewnij się, że wszystkie dokumenty są poprawne i czytelne przed wysłaniem.
+> - **Akceptowane formaty** : jpg, jpeg, pdf, png. Maksymalny rozmiar pliku dla każdego dokumentu to 10 MB.
+> - W przypadku nieprawidłowych dokumentów procedura ta zostanie anulowana i będziesz musiał przeprowadzić nową procedurę.
+
+W ciągu 72 godzin otrzymasz e-mail z potwierdzeniem dezaktywacji weryfikacji dwuetapowej.
+
+/// details | Lista dokumentów potwierdzających
 
 |Typ konta OVHcloud|Wymagane dokumenty|
 |---|---|
 |Osoba prywatna|- Dowód tożsamości (dowód tożsamości, prawo jazdy, paszport) zawierający nazwisko, datę urodzenia i datę ważności na nazwisko posiadacza konta OVHcloud|
 |Firma|- Dokument potwierdzający tożsamość (dowód tożsamości, prawo jazdy, paszport) zawierający nazwisko, datę urodzenia i datę ważności, osoby upoważnionej do reprezentowania firmy.<br><br>- Dokumenty potwierdzające dane firmy - kopia nadania NIPu lub Regonu lub aktualny odpis z KRS, wydruk z CEIDG|
 
+///
+
 Po skomplementowaniu dokumentów skontaktuj się z pomocą OVHcloud +48 71 750 02 00.
 
 > [!warning]
+>
 > Dokumenty należy przesłać z adresu e-mail przypisanego do konta klienta OVHcloud.
 
 Po sprawdzeniu dokumentów konsultant może ręcznie wyłączyć weryfikację dwuetapową na Twoim koncie OVHcloud.
+
+> [!success]
+>
+> Ze względów bezpieczeństwa, po przywróceniu dostępu do konta, zalecamy jak najszybsze ponowne włączenie weryfikacji dwuetapowej.
 
 ## Sprawdź również
 

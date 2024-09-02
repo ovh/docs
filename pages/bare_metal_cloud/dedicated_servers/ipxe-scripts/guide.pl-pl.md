@@ -25,7 +25,7 @@ Spersonalizowany skrypt może być interesujący w następujących przypadkach:
 
 ## Wymagania początkowe
 
-- Serwer [dedykowany](https://www.ovhcloud.com/pl/bare-metal/) **gotowy do uruchomienia/rebootu** na Twoim koncie OVHcloud.
+- Serwer [dedykowany](/links/bare-metal/bare-metal) **gotowy do uruchomienia/rebootu** na Twoim koncie OVHcloud.
 - Dostęp do [API OVHcloud](https://api.ovh.com/).
 
 > [!warning]
@@ -86,7 +86,7 @@ Możesz teraz zrestartować serwer. Skrypt [iPXE](https://ipxe.org/) zostanie wy
 
 ### Inne tryby uruchamiania <a name="leaveIpxeScript"></a>
 
-W każdej chwili możesz ponownie przełączyć się na dysk lub na tryb Rescue w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) (zapoznaj się z naszym przewodnikiem "[Włącz i użyj trybu Rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)") lub przez [API OVHcloud](https://api.ovh.com/).
+W każdej chwili możesz ponownie przełączyć się na dysk lub na tryb Rescue w [Panelu klienta OVHcloud](/links/manager) (zapoznaj się z naszym przewodnikiem "[Włącz i użyj trybu Rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)") lub przez [API OVHcloud](https://api.ovh.com/).
 
 #### Przełącz na dysk <a name="switchToDisk"></a>
 

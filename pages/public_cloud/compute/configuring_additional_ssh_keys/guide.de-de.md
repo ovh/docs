@@ -17,7 +17,7 @@ Bei der Erstellung einer Instanz kann nur ein SSH-Schlüssel für den Erstzugrif
 ## Voraussetzungen
 
 - Sie haben eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/) in Ihrem OVHcloud Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben administrativen Zugriff (sudo) auf Ihre Instanz über SSH.  
 
 ## In der praktischen Anwendung
@@ -60,7 +60,7 @@ Is the information correct? [Y/n] Y
 Öffnen Sie die Datei "authorized_keys" im persönlichen Ordner des neuen Benutzers mit einem Texteditor:
 
 ```bash
-~$ sudo nano /home/user2/.ssh/authorized_keys
+sudo nano /home/user2/.ssh/authorized_keys
 ```
 
 Fügen Sie den im ersten Schritt erstellten öffentlichen Schlüssel zur Datei hinzu. Speichern und schließen Sie den Editor.
@@ -68,7 +68,7 @@ Fügen Sie den im ersten Schritt erstellten öffentlichen Schlüssel zur Datei h
 Wenn der Ordner .ssh noch nicht existiert, können Sie ihn mit folgendem Befehl erstellen:
 
 ```bash
-~$ sudo mkdir /home/user2/.ssh/
+sudo mkdir /home/user2/.ssh/
 ```
 
 Sie können mehrere SSH-Schlüssel konfigurieren, indem Sie diese zur Datei "authorized_keys" in den entsprechenden Benutzerordnern hinzufügen.
@@ -76,8 +76,9 @@ Sie können mehrere SSH-Schlüssel konfigurieren, indem Sie diese zur Datei "aut
 Ab sofort können Sie sich mit dem Benutzer und dem zuvor konfigurierten privaten Schlüssel einloggen:
 
 ```bash
-~$ ssh user2@instance_IP
+ssh user2@instance_IP
 ```
+
 ```console
 Linux b2-7-de1 5.10.0-10-cloud-amd64 #1 SMP Debian 5.10.84-1 (2021-12-08) x86_64
 

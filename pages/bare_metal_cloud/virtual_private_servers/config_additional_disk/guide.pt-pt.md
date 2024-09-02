@@ -17,12 +17,12 @@ Com os VPS OVHcloud, tem a possibilidade de adicionar um espaço de armazenament
 ## Requisitos
 
 - Ter um [VPS](https://www.ovhcloud.com/pt/vps/) na sua conta OVHcloud
-- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+- Estar ligado à [Área de Cliente OVHcloud](/links/manager)
 - Ter acesso administrativo via SSH ou RDP ao VPS
 
 ## Instruções
 
-Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na secção `Servidor privado virtual`{.action}.
+Ligue-se à sua [Área de Cliente OVHcloud](/links/manager), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na secção `Servidor privado virtual`{.action}.
 
 ### Encomendar um disco adicional
 

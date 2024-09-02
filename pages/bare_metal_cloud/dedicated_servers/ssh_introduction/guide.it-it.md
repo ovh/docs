@@ -24,7 +24,7 @@ Il protocollo di comunicazione SSH (Secure Shell) è lo strumento principale per
 
 ## Prerequisiti
 
-- Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/) o di un [VPS](https://www.ovhcloud.com/it/vps/) sul proprio account OVHcloud
+- Disporre di un [server dedicato](/links/bare-metal/bare-metal) o di un [VPS](https://www.ovhcloud.com/it/vps/) sul proprio account OVHcloud
 - Un'applicazione cliente SSH (da riga di comando o interfaccia grafica)
 
 > [!primary]
@@ -37,7 +37,7 @@ Esistono diversi metodi per autenticare una connessione a una periferica remota 
 Le istruzioni che seguono riguardano il metodo di autenticazione tramite nome utente e password.<br>
 Puoi anche configurare chiavi SSH per attivare le connessioni sicure senza password. Per maggiori informazioni, consulta la nostra [guida sulle chiavi SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 
-Le credenziali di accesso (identificativo e password) vengono inviate via email dopo l'installazione o la reinstallazione del server effettuata dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+Le credenziali di accesso (identificativo e password) vengono inviate via email dopo l'installazione o la reinstallazione del server effettuata dal tuo [Spazio Cliente OVHcloud](/links/manager).
 Il nome utente corrisponde al sistema operativo, ad esempio `ubuntu` o `debian`.<br>
 Per connetterti, devi specificare anche l'indirizzo IPv4 o l'hostname del server. Queste informazioni sono disponibili nell'email di installazione e nello Spazio Cliente OVHcloud.
 
@@ -182,6 +182,6 @@ Per maggiori informazioni, consulta le FAQ ufficiali e la documentazione di PuTT
 
 [VPS modalità Rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
-Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](https://www.ovhcloud.com/it/professional-services/) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
+Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](/links/professional-services) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

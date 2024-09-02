@@ -16,7 +16,7 @@ W pewnym momencie życia Twojego serwera może wystąpić awaria z powodu proble
 
 ## Wymagania początkowe
 
-- Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/)
+- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal)
 - Uruchomienie serwera w [trybie Rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
 
 ## W praktyce

@@ -17,7 +17,7 @@ In generale, le politiche anti-spam sono severe. Per rendere più fluide le oper
 > [!warning]
 >OVHcloud fornisce i servizi di cui sei responsabile per la configurazione e la gestione. Sei quindi responsabile del loro corretto funzionamento.
 >
->Questa guida ti mostra come eseguire le operazioni necessarie per eseguire l'operazione. Tuttavia, in caso di difficoltà o dubbi relativamente all'amministrazione, all'utilizzo o alla realizzazione dei servizi su un server, ti consigliamo di contattare un fornitore di servizi specializzato.
+> Questa guida ti mostra come eseguire le operazioni necessarie per eseguire l'operazione. Tuttavia, in caso di difficoltà o dubbi relativamente all'amministrazione, all'utilizzo o alla realizzazione dei servizi su un server, ti consigliamo di contattare un [provider specializzato](/links/partner).
 >
 
 ## Prerequisiti
@@ -72,7 +72,7 @@ Una volta modificata la zona DNS del dominio, la propagazione delle modifiche po
 
 Aggiungi il record PTR (alias noto come reverse):
 
-Nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, accedi alla sezione `Bare Metal Cloud`{.action} e apri `Network`{.action}. Clicca su `IP`{.action}. 
+Nello [Spazio Cliente OVHcloud](/links/manager){.external}, accedi alla sezione `Bare Metal Cloud`{.action} e apri `Network`{.action}. Clicca su `IP`{.action}. 
 
 Per configurare il Reverse DNS su un indirizzo Additional IP, clicca sulla scheda `Additional IP`{.action}.
 
@@ -157,6 +157,6 @@ Potrebbe essere utile utilizzare un sito come [Mail Tester](http://www.mail-test
 
 [Migliorare la sicurezza delle email tramite un record DMARC](/pages/web_cloud/domains/dns_zone_dmarc)
 
-Per essere accompagnato sull'implementazione delle soluzioni OVHcloud, contatta la nostra [rete di partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per essere accompagnato sull'implementazione delle soluzioni OVHcloud, contatta la nostra [rete di partner OVHcloud](/links/partner).
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

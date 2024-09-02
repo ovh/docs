@@ -18,12 +18,12 @@ Per proteggere in modo ottimale il tuo sistema, il server Windows Server dispone
 >
 > OVHcloud mette a tua disposizione servizi di cui sei responsabile. ma non è autorizzata ad accedervi e non si occupa quindi della loro amministrazione. Garantire quotidianamente la gestione software e la sicurezza di queste macchine è quindi responsabilità dell’utente.
 >
-> Questa guida ti aiuta a realizzare le operazioni più ricorrenti. Tuttavia, in caso di difficoltà o dubbi relativi all'amministrazione, all'utilizzo o alla sicurezza di un server, ti consigliamo di rivolgerti a un esperto del settore. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida.
+> Questa guida ti aiuta a realizzare le operazioni più ricorrenti. Tuttavia, in caso di difficoltà o dubbi relativi all'amministrazione, all'utilizzo o alla sicurezza di un server, ti consigliamo di contattare un [provider specializzato](/links/partner). Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida.
 >
 
 ## Prerequisiti
 
-- Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/) Windows sul tuo account OVHcloud
+- Disporre di un [server dedicato](/links/bare-metal/bare-metal) Windows sul tuo account OVHcloud
 - Avere accesso amministratore al server tramite un desktop remoto Windows 
 
 ## Procedura

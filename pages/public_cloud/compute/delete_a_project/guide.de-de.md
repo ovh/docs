@@ -6,7 +6,7 @@ updated: 2022-10-14
 
 ## Ziel
 
-Wenn Sie Ihr Public Cloud Projekt nicht mehr benötigen, können Sie es im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) löschen.
+Wenn Sie Ihr Public Cloud Projekt nicht mehr benötigen, können Sie es im [OVHcloud Kundencenter](/links/manager) löschen.
 
 Wenn Sie Ihr Public Cloud Projekt löschen, wird eine Abschlussrechnung für den offenen Restbetrag erstellt.
 
@@ -20,11 +20,11 @@ Beachten Sie, dass das Löschen eines Projekts nicht dem Deaktivieren Ihrer Publ
 ## Voraussetzungen
 
 - Sie haben ein [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus.
 
 Öffnen Sie `Project Settings`{.action} unterhalb von **Project Management** im linken Menü.
 

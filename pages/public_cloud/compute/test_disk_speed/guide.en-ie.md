@@ -112,4 +112,4 @@ We can see that disk performance is approximately 891 IOPS.
 
 [Increasing the size of an additional disk](/pages/public_cloud/compute/increase_the_size_of_an_additional_disk){.external}
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

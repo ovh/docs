@@ -21,7 +21,7 @@ Es ist möglich, zusätzliche Volumes für Ihre OVHcloud Public Cloud Instanzen 
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud).
 - Sie haben administrativen Zugriff (sudo) auf Ihre Instanz über SSH (Linux) oder RDP (Windows).
 
@@ -34,7 +34,7 @@ Es ist möglich, zusätzliche Volumes für Ihre OVHcloud Public Cloud Instanzen 
 
 ### Ein neues Volume hinzufügen
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus. Öffnen Sie `Block Storage`{.action} im linken Menü.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus. Öffnen Sie `Block Storage`{.action} im linken Menü.
 
 Klicken Sie in diesem Bereich auf den Button `Volume erstellen`{.action}.
 

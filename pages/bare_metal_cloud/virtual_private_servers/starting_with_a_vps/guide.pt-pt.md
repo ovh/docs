@@ -17,7 +17,7 @@ Um servidor privado virtual (VPS) é um servidor dedicado virtualizado. Ao contr
 ## Requisitos
 
 - Ter um [VPS](https://www.ovhcloud.com/pt/vps/) na Área de Cliente OVHcloud
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 
 ## Instruções
 
@@ -30,7 +30,7 @@ Um servidor privado virtual (VPS) é um servidor dedicado virtualizado. Ao contr
 - [Como proteger o VPS](#secure)
 - [Associar um nome de domínio](#domain)
 
-Aceda à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na secção `Servidores privados virtuais`{.action}.
+Aceda à sua [Área de Cliente OVHcloud](/links/manager), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na secção `Servidores privados virtuais`{.action}.
 
 <a name="controlpanel"></a>
 
@@ -137,7 +137,7 @@ As reinstalações podem ser efetuadas a partir da Área de Cliente. Clique em `
 
 Na janela que aparece, escolha um sistema operativo da lista suspensa. As opções propostas são imagens [compatíveis com um VPS OVHcloud](/pages/public_cloud/compute/image-life-cycle) e são imediatamente funcionais após a instalação.
 
-Pode também selecionar uma **chave SSH** a instalar no sistema, se tiver armazenado uma anteriormente na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Para saber tudo sobre este assumpto, consulte o guia [Criar e utilizar chaves SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
+Pode também selecionar uma **chave SSH** a instalar no sistema, se tiver armazenado uma anteriormente na sua [Área de Cliente OVHcloud](/links/manager). Para saber tudo sobre este assumpto, consulte o guia [Criar e utilizar chaves SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 
 > [!primary]
 >
@@ -158,7 +158,7 @@ Pode ser necessário reiniciar para aplicar configurações atualizadas ou resol
 sudo reboot
 ```
 
-No entanto, pode efetuar um « de reinício de hardware » a qualquer momento a partir da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). No separador `Página Inicial`{.action}, clique em `...`{.action} junto de `Boot` na secção **O seu VPS**. Selecione `Reiniciar o meu VPS`{.action} e clique em `Validar`{.action} na janela que se abrir.
+No entanto, pode efetuar um « de reinício de hardware » a qualquer momento a partir da sua [Área de Cliente OVHcloud](/links/manager). No separador `Página Inicial`{.action}, clique em `...`{.action} junto de `Boot` na secção **O seu VPS**. Selecione `Reiniciar o meu VPS`{.action} e clique em `Validar`{.action} na janela que se abrir.
 
 ![Reboot](images/reboot-vps01.png){.thumbnail}
 

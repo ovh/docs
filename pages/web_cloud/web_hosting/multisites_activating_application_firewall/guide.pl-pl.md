@@ -45,7 +45,7 @@ W nowym oknie upewnij się, że **Aplikacja firewall** jest ustawiona na `Włąc
 
 Kliknij zakładkę `MultiSite`{.action} w Twoim pakiecie hostingowym. Kliknij przycisk `...`{.action} po prawej stronie wybranej domeny i wybierz opcję `Zmień domenę`{.action}.
 
-![zapalenie skóry](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-2.png){.thumbnail}
+![zapalenie skóry](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-2.png){.thumbnail}
 
 W oknie konfiguracji zaznacz kratkę `Włącz firewall`{.action}. Możesz również włączyć subdomenę `www` do tej konfiguracji, zaznaczając kratkę na górze.
 

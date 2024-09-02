@@ -12,7 +12,7 @@ Pour minimiser le risque d'erreur pendant le remplacement d’un disque dur, nou
 
 ## Prérequis
 
-- Posséder un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}.
+- Posséder un [serveur dédié](/links/bare-metal/bare-metal){.external}.
 - Avoir accès à votre serveur via SSH en tant qu'administrateur (sudo).
 - Avoir installé l'utilitaire sas2ircu sur votre serveur Windows (disponible via le moteur de recherche [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu){.external}).
 
@@ -167,4 +167,4 @@ Le numéro du périphérique sg sera affiché comme suit : `/dev/sg0`, `/dev/sg
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

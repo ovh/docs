@@ -27,7 +27,7 @@ Este tutorial fornece as etapas de base para uma instalação manual do WordPres
 
 - Um [projeto Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) na sua conta OVHcloud.
 - Ter uma [instância Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) com Debian ou Ubuntu instalado.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Um acesso administrador (sudo) à sua instância através de SSH.
 
 ## Instruções
@@ -37,7 +37,7 @@ Este tutorial fornece as etapas de base para uma instalação manual do WordPres
 > As seguintes instruções são verificadas para Debian 11. O Ubuntu é baseado em Debian e o tutorial também deve funcionar para uma distribuição Ubuntu atual.
 >
 
-Para aceder à sua instalação através de um nome de domínio, deve ligá-la à sua instância. Para isso, deve editar a zona DNS acessível a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), desde que a OVHcloud seja o seu agente de registo **e** que o nome de domínio utilize os servidores DNS da OVHcloud.
+Para aceder à sua instalação através de um nome de domínio, deve ligá-la à sua instância. Para isso, deve editar a zona DNS acessível a partir do seu [Área de Cliente OVHcloud](/links/manager), desde que a OVHcloud seja o seu agente de registo **e** que o nome de domínio utilize os servidores DNS da OVHcloud.
 
 Para mais informações, consulte o guia [Editar a sua zona DNS](/pages/web_cloud/domains/dns_zone_edit). Se o domínio estiver a ser utilizado atualmente, só pode configurar os DNS após a instalação do novo WordPress e o arranque do seu website.
 

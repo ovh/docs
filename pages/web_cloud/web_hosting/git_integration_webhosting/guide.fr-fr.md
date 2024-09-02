@@ -1,7 +1,7 @@
 ---
 title: "Configurer et utiliser Git avec son hébergement web OVHcloud"
-excerpt: "Découvrez comment configurer et utiliser Git avec votre hébérgement web dans votre espace client OVHcloud"
-updated: 2024-07-25
+excerpt: "Découvrez comment configurer et utiliser Git avec votre hébergement web dans votre espace client OVHcloud"
+updated: 2024-08-22
 ---
 
 ## Objectif
@@ -88,7 +88,7 @@ Définissez un nom pour votre dépôt et remplissez les informations demandées.
 
 Enfin, cliquez sur `Create Repository`{.action}.
 
-Copiez l'adresse de votre dépôt GitHub. Celle-ci doit être de la forme `https://github.com/<username>/<repository_name>`{.action}. Retournez sur le formulaire d'association de Git et collez l'adresse de votre dépôt GitHub dans le champ `Dépôt`{.action}. Si le format de l'adresse n'est pas correct, le message d'erreur suivant apparaît :
+Copiez l'adresse de votre dépôt GitHub. Celle-ci doit être de la forme `https://github.com/<username>/<repository_name.git>`{.action}. Retournez sur le formulaire d'association de Git et collez l'adresse de votre dépôt GitHub dans le champ `Dépôt`{.action}. Si le format de l'adresse n'est pas correct, le message d'erreur suivant apparaît :
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/error-wrong-git-branch-name.png){.thumbnail}
 
@@ -112,7 +112,7 @@ En bas du formulaire d'association de Git, une section `Configuration du déploi
 Avant de valider le formulaire d'association de Git, assurez-vous que :
 
 - Votre clé SSH a bien été enregistrée dans votre compte GitHub.
-- L'adresse de votre dépôt GitHub est correcte. Elle doit être de la forme `https://github.com/<username>/<repository_name>`{.action}.
+- L'adresse de votre dépôt GitHub est correcte. Elle doit être de la forme `https://github.com/<username>/<repository_name.git>`{.action}.
 - Le nom de la branche du dépôt GitHub est correct.
 - Votre répertoire d'installation est vide.
 
@@ -149,7 +149,7 @@ Dans le tableau de l'onglet `Multisite`{.action}, identifiez les lignes correspo
 
 Pour connaître la cause exacte de l'erreur, consultez les informations du dernier déploiement. Dans le tableau, identifiez la ligne correspondant au nom de domaine dont vous souhaitez consulter les logs du dernier déploiement. À droite de la ligne, cliquez sur le bouton `...`{.action} puis sur `Informations du dernier déploiement`{.action}.
 
-![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/info-last-deployment-button.png){.thumbnail}
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/latest-deployment-information.png){.thumbnail}
 
 Une fois le(s) erreur(s) identifiée(s), associez Git à nouveau. Recommencez l'opération en cliquant sur le bouton `...`{.action} de la ligne correspondante, puis sur `Associer Git`{.action}.
 
@@ -157,7 +157,7 @@ Une fois le(s) erreur(s) identifiée(s), associez Git à nouveau. Recommencez l'
 
 Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action} puis choisissez le nom de l'hébergement concerné. Sélectionnez l'onglet `Multisite`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant au nom de domaine que vous souhaitez déployer avec Git. Assurez-vous que le statut de la colonne Git soit `Activé`{.action}. Cliquez sur le bouton `...`{.action} puis sur `Déployer Git`{.action}.
 
-![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/deploy-git-button.png){.thumbnail}
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/deploy-git.png){.thumbnail}
 
 Un message de confirmation s'affiche, ainsi qu'une case à cocher vous indiquant qu'en cas de conflit lors du déploiement, vous pouvez forcer les modifications distantes (du dépôt GitHub) sur votre dépôt local. Cochez ou non la case selon votre choix, puis cliquez sur `Confirmer`{.action} pour valider le déploiement.
 
@@ -233,7 +233,7 @@ Après avoir déployé votre dépôt GitHub sur votre hébergement web, vous pou
 
 Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action} puis choisissez le nom de l'hébergement concerné. Sélectionnez l'onglet `Multisite`{.action}. Dans le tableau qui s'affiche, identifiez la ligne correspondant au domaine dont vous souhaitez consulter les logs du dernier déploiement. À droite de la ligne, cliquez sur le bouton `...`{.action} puis sur `informations du dernier déploiement`{.action}.
 
-![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/informations-last-git-deployment-button.png){.thumbnail}
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/latest-deployment-information.png){.thumbnail}
 
 Retrouvez sur cet écran toutes les informations relatives au dernier déploiement.
 

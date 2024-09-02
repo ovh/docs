@@ -45,7 +45,7 @@ En la nueva ventana, asegúrese de que la **aplicación firewall** esté activad
 
 Abra la pestaña `Multisitio`{.action} de su plan de hosting. Haga clic en el botón `...`{.action} a la derecha del dominio correspondiente y seleccione la opción `Cambiar el dominio`{.action}.
 
-![managemultisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-2.png){.thumbnail}
+![managemultisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-2.png){.thumbnail}
 
 En la ventana de configuración, marque la casilla `Activar firewall`{.action}. También puede incluir el subdominio `www` en esta configuración marcando la casilla situada en la parte superior.
 

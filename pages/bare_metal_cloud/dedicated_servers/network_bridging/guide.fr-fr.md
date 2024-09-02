@@ -6,7 +6,7 @@ updated: 2024-07-15
 
 > [!primary]
 >
-> Depuis le 6 octobre 2022, notre solution "IP Failover" s'appelle désormais [Additional IP](https://www.ovhcloud.com/fr/network/additional-ip/). Cela n'a pas d'impact sur ses fonctionnalités.
+> Depuis le 6 octobre 2022, notre solution "IP Failover" s'appelle désormais [Additional IP](/links/network/additional-ip). Cela n'a pas d'impact sur ses fonctionnalités.
 >
 
 ## Objectif
@@ -20,7 +20,7 @@ La mise en réseau en mode bridge peut être utilisée pour configurer vos machi
 ## Prérequis
 
 * Posséder un serveur dédié avec un hyperviseur installé ([VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox, par exemple).
-* Bénéficier d'au moins une adresse [Additional IP](https://www.ovhcloud.com/fr/bare-metal/ip/) connectée au serveur.
+* Bénéficier d'au moins une adresse [Additional IP](/links/network/additional-ip) connectée au serveur.
 * Être connecté à votre [espace client OVHcloud](/links/manager).
 
 > [!warning]
@@ -612,4 +612,4 @@ Ensuite, il vous suffit d'effectuer un ping sur votre Additional IP depuis l'ext
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

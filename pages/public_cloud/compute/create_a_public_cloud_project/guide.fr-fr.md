@@ -12,11 +12,11 @@ La création d’un projet est la première étape indispensable pour déployer 
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), et cliquez sur le menu `Public Cloud`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), et cliquez sur le menu `Public Cloud`{.action}.
 
 Après en avoir pris connaissance, validez les termes des contrats en cochant la case correspondante puis cliquez sur `Découvrir l'univers Public Cloud`{.action}.
 
@@ -52,6 +52,6 @@ Vous avez dorénavant accès à tout l'ecosystème Public Cloud OVHcloud, décou
 - [Supprimer un projet Public Cloud](/pages/public_cloud/compute/delete_a_project)
 - [Informations concernant le mode de facturation cloud](/pages/public_cloud/compute/analyze_billing)
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

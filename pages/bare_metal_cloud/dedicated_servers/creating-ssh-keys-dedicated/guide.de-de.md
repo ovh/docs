@@ -18,8 +18,8 @@ Dies ist in der Regel die sicherste und bequemste Verbindungsmethode.
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) oder einen [VPS](https://www.ovhcloud.com/de/vps/) in Ihrem Kunden-Account.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+- Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) oder einen [VPS](https://www.ovhcloud.com/de/vps/) in Ihrem Kunden-Account.
 - Sie haben eine SSH-Client-Anwendung installiert (Befehlszeile oder GUI).
 - Sie haben administrativen Zugang (sudo) über SSH auf Ihren Server.
 
@@ -420,6 +420,6 @@ Um eine weitere Serververbindung einzurichten, wiederholen Sie die folgenden Sch
 
 [Rescue-Modus für VPS](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
-Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](https://www.ovhcloud.com/de/professional-services/), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
+Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 
 Werden Sie Mitglied unserer User Community auf <https://community.ovh.com/en/>.

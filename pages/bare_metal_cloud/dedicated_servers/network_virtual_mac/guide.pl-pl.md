@@ -17,8 +17,8 @@ OVHcloud umożliwia Ci powiązanie wirtualnego adresu MAC z adresem IP, abyś m�
 ## Wymagania początkowe
 
 - Posiadanie [serwera dedykowanego](https://www.ovh.pl/serwery_dedykowane/){.external}
-- Posiadanie [adresu Additional IP](https://www.ovhcloud.com/pl/bare-metal/ip/){.external} lub bloku Additional IP (RIPE)
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} lub do [API OVHcloud](https://api.ovh.com/)
+- Posiadanie [adresu Additional IP](/links/network/additional-ip){.external} lub bloku Additional IP (RIPE)
+- Dostęp do [Panelu klienta](/links/manager){.external} lub do [API OVHcloud](https://api.ovh.com/)
 - Twój serwer musi obsługiwać wirtualne adresy MAC. Zapoznaj się [z tym przewodnikiem](/pages/bare_metal_cloud/dedicated_servers/network_support_virtual_mac).
 
 > [!warning]
@@ -41,7 +41,7 @@ OVHcloud umożliwia Ci powiązanie wirtualnego adresu MAC z adresem IP, abyś m�
 
 #### Za pośrednictwem Panelu klienta OVHcloud
 
-Po zalogowaniu się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij menu `Bare Metal Cloud`{.action} i otwórz sekcję `IP`{.action}.
+Po zalogowaniu się do [Panelu klienta](/links/manager){.external}, kliknij menu `Bare Metal Cloud`{.action} i otwórz sekcję `IP`{.action}.
 
 Kliknij na zakładkę `Additional IP`{.action}.
 
@@ -84,7 +84,7 @@ Skorzystaj z następującego wywołania API:
 
 #### Za pośrednictwem Panelu klienta OVHcloud
 
-Aby usunąć wirtualny adres MAC powiązany z Additional IP, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij menu `Bare Metal Cloud`{.action} i otwórz sekcję `IP`{.action}. Wybierz odpowiedni serwer, aby wyświetliły się powiązane z nim adresy Additional IP (lub blok IP).
+Aby usunąć wirtualny adres MAC powiązany z Additional IP, zaloguj się do [Panelu klienta](/links/manager){.external}, kliknij menu `Bare Metal Cloud`{.action} i otwórz sekcję `IP`{.action}. Wybierz odpowiedni serwer, aby wyświetliły się powiązane z nim adresy Additional IP (lub blok IP).
 
 Aby zakończyć, kliknij przycisk `...`{.action} po prawej stronie, po czym kliknij `Usuń wirtualny adres MAC`{.action}.
 

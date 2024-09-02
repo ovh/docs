@@ -21,13 +21,13 @@ Sie können diese Instanzsicherungen für zwei grundlegende Zwecke verwenden:
 ## Voraussetzungen
 
 - Sie verfügen über ein Backup einer [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/instance-backup/).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
 ### Eine Instanz aus einem Backup erstellen
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus. Wählen Sie das betreffende Public Cloud Projekt aus und klicken Sie im Bereich `Storage` auf `Instance backup`{.action}.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus. Wählen Sie das betreffende Public Cloud Projekt aus und klicken Sie im Bereich `Storage` auf `Instance backup`{.action}.
 
 ![public-cloud-instance-backup](images/restorebackup01.png){.thumbnail}
 
@@ -56,7 +56,7 @@ Weitere Informationen zur Erstellung einer Instanz finden Sie in [dieser Anleitu
 
 ### Eine Instanz mithilfe eines Backups wiederherstellen
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie dann `Public Cloud`{.action}. Klicken Sie links im Menü auf `Instances`{.action}.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und wählen Sie dann `Public Cloud`{.action}. Klicken Sie links im Menü auf `Instances`{.action}.
 
 ![public-cloud-instance-backup](images/restorebackup04.png){.thumbnail}
 

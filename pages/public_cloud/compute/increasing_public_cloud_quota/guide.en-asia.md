@@ -14,7 +14,7 @@ To be able to use additional resources and projects, the quotas need to be incre
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - A [valid payment method](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) registered in your OVHcloud account
 
 ## Instructions
@@ -33,7 +33,7 @@ You can increase your resources quota manually or automatically.
 
 This procedure allows you to manually request a quota increase and validate it with an upfront payment (Public Cloud credit).
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and open your `Public Cloud`{.action} project.
+Log in to the [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project.
 
 In the left-hand sidebar, click on `Quota and Regions`{.action}.
 
@@ -73,7 +73,7 @@ This option allows you to request an automatic and gradual increase of your reso
 
 This is not an instant process and the resources quota are increased over the course of time.
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and open your `Public Cloud`{.action} project.
+Log in to the [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project.
 
 In the left-hand sidebar, click on `Quota and Regions`{.action}.
 
@@ -89,4 +89,4 @@ If you have reached the maximum number of Public Cloud projects authorised in yo
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

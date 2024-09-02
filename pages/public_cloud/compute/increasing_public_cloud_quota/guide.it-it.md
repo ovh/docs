@@ -18,7 +18,7 @@ Per creare di più, è necessario aumentare la quota disponibile.
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 - [Disporre di una modalità di pagamento valida](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) nello Spazio Cliente OVHcloud.
 
 ## Procedura
@@ -33,7 +33,7 @@ In conformità ai criteri interni (anzianità, esistenza di fatture pagate, ecc.
 
 Questa procedura consente di richiedere manualmente un aumento di quota e di convalidarlo con un pagamento anticipato (credito Public cloud).
 
-Accedi allo [Spazio cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), vai alla sezione `Public Cloud`{.action} e seleziona il tuo progetto Public Cloud.
+Accedi allo [Spazio cliente OVHcloud](/links/manager), vai alla sezione `Public Cloud`{.action} e seleziona il tuo progetto Public Cloud.
 
 Clicca su `Quota and Regions`{.action} nella barra laterale sinistra.
 
@@ -73,7 +73,7 @@ Questa opzione consente di richiedere un aumento automatico e graduale della quo
 
 Non si tratta di un processo immediato e la quota di risorse viene aumentata nel corso del tempo.
 
-Accedi allo [Spazio cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), vai alla sezione `Public Cloud`{.action} e seleziona il tuo progetto Public Cloud.
+Accedi allo [Spazio cliente OVHcloud](/links/manager), vai alla sezione `Public Cloud`{.action} e seleziona il tuo progetto Public Cloud.
 
 Nella barra laterale sinistra, clicca su `Quota and Regions`{.action}. 
 

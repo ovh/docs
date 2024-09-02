@@ -44,7 +44,7 @@ Stellen Sie im neuen Fenster sicher, dass die **Application Firewall** auf `akti
 
 Wechseln Sie zum Tab `Multisite`{.action} Ihres Webhostings. Klicken Sie auf den Button `...`{.action} rechts neben der betreffenden Domain und wählen Sie die Option `Domain bearbeiten`{.action}.
 
-![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-2.png){.thumbnail}
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-2.png){.thumbnail}
 
 Setzen Sie im Konfigurationsfenster einen Haken bei `Firewall aktivieren`{.action}. Sie können auch die `www`-Subdomain in diese Konfiguration aufnehmen, indem Sie oben die Checkbox anhaken.
 

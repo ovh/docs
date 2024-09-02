@@ -17,7 +17,7 @@ Al crear una instancia, solo es posible configurar una llave SSH para la conexi�
 ## Requisitos
 
 - Tener una [instancia de Public Cloud](https://www.ovhcloud.com/es/public-cloud/) en su cuenta de OVHcloud.
-- Haber iniciado sesión en el [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Haber iniciado sesión en el [Panel de configuración de OVHcloud](/links/manager).
 - Tener acceso a su instancia por SSH como administrador (sudo).
 
 ## Procedimiento
@@ -60,7 +60,7 @@ Is the information correct? [Y/n] Y
 Abra el archivo *authorized_keys* en la carpeta personal del nuevo usuario con un editor de texto:
 
 ```bash
-~$ sudo nano /home/user2/.ssh/authorized_keys
+sudo nano /home/user2/.ssh/authorized_keys
 ```
 
 Añada al archivo la clave pública creada en el primer paso. Guarde y cierre el editor.
@@ -68,7 +68,7 @@ Añada al archivo la clave pública creada en el primer paso. Guarde y cierre el
 Si la carpeta .ssh todavía no existe, puede crearla con el siguiente comando:
 
 ```bash
-~$ sudo mkdir /home/user2/.ssh/
+sudo mkdir /home/user2/.ssh/
 ```
 
 Puede configurar varias llaves SSH añadiéndolas a los archivos *authorized_keys* de las correspondientes carpetas de usuario.
@@ -76,7 +76,7 @@ Puede configurar varias llaves SSH añadiéndolas a los archivos *authorized_key
 Ya puede conectarse con el usuario y la clave privada configurados anteriormente:
 
 ```bash
-~$ ssh user2@instance_IP
+ssh user2@instance_IP
 ```
 ```console
 Linux b2-7-de1 5.10.0-10-cloud-amd64 #1 SMP Debian 5.10.84-1 (2021-12-08) x86_64

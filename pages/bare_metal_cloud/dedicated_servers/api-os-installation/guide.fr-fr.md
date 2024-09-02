@@ -6,11 +6,11 @@ updated: 2024-08-13
 
 ## Objectif
 
-Pour de nombreux cas d'usage, il peut s'avérer intéressant d'automatiser l'installation d'un système d'exploitation ou la réinstallation d'un système d'exploitation de vos [serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/) à l'aide de l'[API OVHcloud](https://api.ovh.com/).
+Pour de nombreux cas d'usage, il peut s'avérer intéressant d'automatiser l'installation d'un système d'exploitation ou la réinstallation d'un système d'exploitation de vos [serveurs dédiés](/links/bare-metal/bare-metal) à l'aide de l'[API OVHcloud](https://api.ovh.com/).
 
 ## Prérequis
 
-- Un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) dans votre compte OVHcloud
+- Un [serveur dédié](/links/bare-metal/bare-metal) dans votre compte OVHcloud
 - Avoir accès à l'[API OVHcloud](/pages/manage_and_operate/api/first-steps)
 
 > [!warning]
@@ -24,7 +24,7 @@ Pour de nombreux cas d'usage, il peut s'avérer intéressant d'automatiser l'ins
 
 Connectez-vous sur [https://api.ovh.com/](https://api.ovh.com/){.external} puis rendez-vous dans la section `/dedicated/server`{.action}.
 
-Pour lister tous vos [serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/) :
+Pour lister tous vos [serveurs dédiés](/links/bare-metal/bare-metal) :
 
 > [!api]
 >
@@ -161,7 +161,7 @@ Chaque question a les attributs suivants :
 
 ### Grappes de disques <a name="disk-group"></a>
 
-Certains [serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/) possèdent plusieurs grappes ou groupes de disques. Par exemple une grappe avec des disques SATA et une grappe avec des disques SSD. Nous appelons ces types de serveurs des **serveurs hybrides**.
+Certains [serveurs dédiés](/links/bare-metal/bare-metal) possèdent plusieurs grappes ou groupes de disques. Par exemple une grappe avec des disques SATA et une grappe avec des disques SSD. Nous appelons ces types de serveurs des **serveurs hybrides**.
 
 Pour lister les grappes et leurs disques, vous pouvez utiliser l'appel suivant afin de déterminer le groupe de disque sur lequel vous souhaitez effectuer votre installation OS :
 

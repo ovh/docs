@@ -14,7 +14,7 @@ Il est possible que vous deviez réparer le bootloader GRUB. Ce guide va vous pe
 
 ## En pratique
 
-Connectez-vous sur l'instance, soit via le VNC de [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) ou via SSH.
+Connectez-vous sur l'instance, soit via le VNC de [l'espace client OVHcloud](/links/manager) ou via SSH.
 
 Tapez les commandes suivantes pour monter le système de fichiers distant et démarrer la réparation de GRUB :
 

@@ -237,10 +237,12 @@ You can find all information on the available backup solutions for your service 
 
 [Getting started with a VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
 
+[How to create and use SSH keys](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
+
 [Configuring the firewall on Windows](/pages/bare_metal_cloud/virtual_private_servers/activate-port-firewall-soft-win)
 
 [Configuring the firewall on Linux with iptables](/pages/bare_metal_cloud/virtual_private_servers/firewall-Linux-iptable)
 
 [Network Firewall guide](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

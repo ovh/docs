@@ -10,7 +10,7 @@ updated: 2024-07-15
 
 > [!primary]
 >
-> Desde el 6 de octubre de 2022, nuestra solución "Failover IP" se denomina desde ahora [Additional IP](https://www.ovhcloud.com/es-es/network/additional-ip/). Esto no afectará a sus funcionalidades.
+> Desde el 6 de octubre de 2022, nuestra solución "Failover IP" se denomina desde ahora [Additional IP](/links/network/additional-ip). Esto no afectará a sus funcionalidades.
 >
 
 ## Objetivo
@@ -24,7 +24,7 @@ La puesta en red en modo bridge puede utilizarse para configurar sus máquinas v
 ## Requisitos
 
 - Tener un servidor dedicado con un hipervisor instalado (por ejemplo, [VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server y Proxmox).
-- Tener al menos una dirección [Additional IP](https://www.ovhcloud.com/es-es/bare-metal/ip/) conectada al servidor.
+- Tener al menos una dirección [Additional IP](/links/network/additional-ip) conectada al servidor.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 > [!warning]

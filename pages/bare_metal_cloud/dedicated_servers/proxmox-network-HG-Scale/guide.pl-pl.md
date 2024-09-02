@@ -1,237 +1,304 @@
 ---
-title: 'Konfiguracja sieci na Proxmox VE'
+title: 'Konfiguracja sieci na Proxmox VE (EN)'
 excerpt: 'Dowiedz się, jak skonfigurować sieć na Proxmox VE'
-updated: 2024-07-16
+updated: 2024-08-21
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
-> 
-
-> [!primary]
 >
-> Od 6 października 2022 nasze rozwiązanie "Failover IP" nazywa się teraz [Additional IP](https://www.ovhcloud.com/pl/network/additional-ip/). To nie ma wpływu na jego funkcje.
+> Since October 6th, 2022 our service "Failover IP" has been named [Additional IP](/links/network/additional-ip). This renaming has no impact on its technical features.
 >
 
-## Wprowadzenie
+## Objective
 
-W ofercie High Grade & SCALE nie jest możliwe działanie adresów Additional IP w trybie bridged (poprzez wirtualne maszyny MAC). To samo dotyczy serwerów nowej generacji, które są dostarczane z procesorami AMD Epyc 4K i 8K. Konieczne jest zatem skonfigurowanie Additional IP w trybie routera lub vRack.
+**Find out two ways to configure an _additional IP_ on Proxmox VE: via the public interfaces and via the private interfaces (vRack).**
 
-> [!primary]
->
-> Do końca 2024 roku funkcja ta zostanie dostarczona dla wszystkich gam High Grade, SCALE & ADVANCE.
->
+## Requirements
 
-**Dowiedz się, jak skonfigurować sieć w programie Proxmox VE.**
-
-## Wymagania początkowe
-
-- Posiadanie [serwera dedykowanego OVHcloud](https://www.ovhcloud.com/pl/bare-metal/)
-- Posiadanie adresu [Additional IP](https://www.ovhcloud.com/pl/bare-metal/ip/)
-- Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- An [OVHcloud dedicated server](/links/bare-metal/bare-metal)
+- You must have [Additional IP addresses](/links/network/additional-ip)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
 >
-> W Panelu klienta OVHcloud nie ma konieczności stosowania wirtualnego adresu MAC dla Additional IP.
+> No virtual MAC address must be applied to Additional IPs in the OVHcloud Control Panel.
 >
 
-## W praktyce
+## Instructions
 
-> [!primary]
->
-> W tej gamie serwerów znajdują się 4 karty sieciowe. Pierwsze dwa dla publiczności, dwa dla prywatnego. Aby korzystać z całej przepustowości, należy utworzyć agregaty.
->
+### Additional IP in routed mode on public network interfaces <a name="additionalipmoderoute"></a>
 
-### Additional IP w trybie routowane do publicznych interfejsów sieciowych
+With this configuration, Additional IP addresses must be attached to a dedicated server. If you have multiple Proxmox virtualization servers and you want to migrate a VM from one server to another, you will also need to migrate the Additional IP address to the destination server, via the OVHcloud Control Panel or via the OVHcloud API. You can automate this step by writing a script that uses the OVHcloud APIs.
 
-Ta konfiguracja zapewnia wyższą wydajność w zakresie przepustowości, ale jest mniej elastyczna. W przypadku tej konfiguracji adresy dodatkowe IP muszą być przypisane do serwera dedykowanego. Jeśli dysponujesz kilkoma serwerami do wirtualizacji Proxmox i chcesz migrować jedną VM z jednego serwera na drugi, musisz również przenieść adres Additional IP na serwer docelowy, w Panelu klienta OVHcloud lub poprzez API OVHcloud. Możesz zautomatyzować ten etap, zapisując skrypt, który wykorzystuje API OVHcloud.  
+#### Target configuration schema
 
-#### Schemat konfiguracji docelowej
+> [!tabs]
+> High Grade & SCALE ranges
+>>
+>> ![schema route](images/schema_route2022.png){.thumbnail}
+>>
+> ADVANCE range
+>>
+>> ![schema route](images/gamme-advance-01.png){.thumbnail}
+>>
 
-![schemat trasy](images/schema_route2022.png){.thumbnail}
+#### Explanations
 
-#### Wyjaśnienia
+Proxmox is based on a Debian distribution. In this guide, the network configuration will be modified via SSH and not via the web interface.
 
-Proxmox opiera się na dystrybucji Debian. W tym przewodniku konfiguracja sieci będzie modyfikowana przez SSH, a nie przez interfejs www.
+You need to:
 
-Należy:
+- connect via SSH on Proxmox
+- create an aggregate (linux bond), only for the High Grade & SCALE ranges
+- create a bridge
+- authorize forwarding
+- authorize proxy_arp
+- add routes
 
-- połączyć się przez SSH z Proxmox;
-- tworzenie agregatu (linux bond);
-- stworzyć brydża;
-- zezwalać na forwarding;
-- zezwalać na proxy_arp;
-- dodaj trasy.
+#### Configure the hypervisor
 
-#### Konfiguracja hypervisora
-
-Zaloguj się do serwera Proxmox przez SSH:
-
-```bash
-ssh root@PUB_IP_DEDICATED_SERVER
-# możesz również użyć prywatnego adresu IP skonfigurowanego w sieci vRack
-```
-
-Wszystko odbywa się w pliku `/etc/network/interfaces`:
+Log in to the Proxmox server via SSH:
 
 ```bash
-vi /etc/network/interfaces
+SSH PUB_IP_DEDICATED_SERVER
+# you can also use the private IP configured on the vRack
 ```
 
-```bash
-auto lo
-iface lo inet loopback
-  # Enable IP forwarding
-  up echo "1" > /proc/sys/net/ipv4/ip_forward
-  # Enable proxy-arp only for public bond
-  up echo "1" > /proc/sys/net/ipv4/conf/bond0/proxy_arp
+> [!tabs]
+> High Grade & SCALE ranges
+>>
+>> - **Enable ip_forward and proxy_arp**:
+>>
+>> Enable the `sysctl` `ip_forward` and `proxy_arp` parameters. To do this, we recommend modifying the `sysctl.conf` configuration file.
+>>
+>> Add the following lines to `/etc/sysctl.conf`:
+>>
+>> ```text
+>> # Enable ip_forward
+>> net.ipv4.ip_forward = 1
+>>
+>> # Enabling proxy_arp for public bond
+>> net.ipv4.conf.bond0.proxy_arp = 1
+>> ```
+>>
+>> Next, reload the sysctl configuration:
+>>
+>> ```bash
+>> sysctl -p
+>> ```
+>>
+>> - **Edit the `/etc/network/interfaces` file**:
+>>
+>> ```bash
+>> vi /etc/network/interfaces
+>> ```
+>>
+>> ```bash
+>> auto lo
+>> iface lo inet loopback
+>>
+>> # public interface 1
+>> auto ens33f0
+>> iface ens33f0 inet manual
+>> 	bond-master bond0
+>>
+>> # public interface 2
+>> auto ens33f1
+>> iface ens33f1 inet manual
+>> 	bond-master bond0
+>>
+>> # private interface 1
+>> auto ens35f0
+>> iface ens35f0 inet manual
+>>
+>> # private interface 2
+>> auto ens35f1
+>> iface ens35f1 inet manual
+>>
+>> # LACP aggregate on public interfaces
+>> # configured in DHCP mode on this example
+>> # Holds the server’s public IP address
+>> auto bond0
+>> iface bond0 inet static
+>> address PUB_IP_DEDICATED_SERVER/32
+>> 	gateway 100.64.0.1
+>>         bond-slaves ens33f0 ens33f1
+>> 	bond-mode 4
+>> 	bond-miimon 100
+>> 	bond-downdelay 200
+>> 	bond-updelay 200
+>> 	bond-lacp-rate 1
+>> 	bond-xmit-hash-policy layer3+4
+>> 	# Enter the MAC address of one of the two public interfaces
+>> 	hwaddress AB:CD:EF:12:34:56
+>>
+>> # Private
+>> auto bond1
+>> iface bond1 inet static
+>> 	bond-slaves ens35f0 ens35f1
+>> 	bond-mode 4
+>> 	bond-miimon 100
+>> 	bond-downdelay 200
+>> 	bond-updelay 200
+>> 	bond-lacp-rate 1
+>> 	bond-xmit-hash-policy layer3+4
+>> 	# Enter the MAC address of one of the two private interfaces
+>> 	hwaddress GH:IJ:KL:12:34:56
+>>
+>> auto vmbr0
+>> # Configuring the bridge with a private address and adding route(s) to send Additional IPs to it
+>> # A.B.C.D/X => Subnet of Additional IPs assigned to the server, this can be a host with /32
+>> auto vmbr0
+>> iface vmbr0 inet dhcp
+>> 	# Define a private IP, it must not overlap your existing private networks on the vRack for example
+>> 	address 192.168.0.1/24
+>> 	bridge-ports bond0
+>> 	bridge-stp off
+>> 	bridge-fd 0
+>> 	# Add a unique Additional IP
+>> 	up ip route add ADDITIONAL_IP/32 dev $IFACE
+>> 	# Add an IP block
+>> 	up ip route add ADDITIONAL_IP_BLOCK/28 dev $IFACE
+>>
+>> # Bridge used for private networks on the vRack
+>> # The VLAN feature is enabled
+>> auto vmbr1
+>> iface vmbr1 inet manual
+>>         bond1 bridge-ports
+>>         bridge-stp off
+>>         bridge-fd 0
+>>         bridge-vlan-aware yes
+>>         bridge-vids 2-4094
+>>
+>> ```
+> ADVANCE range
+>> For servers from the ADVANCE range that do not have 4 network interfaces, there is no need to configure bonding. You can go directly to configuring the available interfaces.
+>>
+>> Everything happens in the file `/etc/network/interfaces`:
+>>
+>> ```bash
+>> vi /etc/network/interfaces
+>> ```
+>>
+>> ```bash
+>> auto lo
+>> iface lo inet loopback
+>>
+>> auto enp8s0f0np0
+>> iface enp8s0f0np0 inet static
+>>     address PUB_IP_DEDICATED_SERVER/32
+>>     gateway 100.64.0.1
+>>
+>> auto vmbr0
+>> iface vmbr0 inet static
+>>     address 192.168.0.1/24
+>>     bridge-ports none
+>>     bridge-stp off
+>>     bridge-fd 0
+>>     up ip route add ADDITIONAL_IP/32 dev $IFACE
+>>     up ip route add ADDITIONAL_IP_BLOCK/28 dev $IFACE
+>> ```
 
-# public interface 1
-auto ens33f0
-iface ens33f0 inet manual
-	bond-master bond0
-
-# public interface 2
-auto ens33f1
-iface ens33f1 inet manual
-	bond-master bond0
-
-# private interface 1
-auto ens35f0
-iface ens35f0 inet manual
-
-# private interface 2
-auto ens35f1
-iface ens35f1 inet manual
-
-# LACP aggregate on public interfaces
-# configured in static mode on this example
-# Has the server's public IP
-auto bond0
-iface bond0 inet static
-    address PUB_IP_DEDICATED_SERVER/24
-	gateway PUB_GW
-	bond-slaves ens33f0 ens33f1
-	bond-mode 4
-	bond-miimon 100
-	bond-downdelay 200
-	bond-updelay 200
-	bond-lacp-rate 1
-	bond-xmit-hash-policy layer3+4
-	# Use the mac address of the first public interface
-	hwaddress AB:CD:EF:12:34:56
-
-#Private
-auto bond1
-iface bond1 inet static
-	bond-slaves ens35f0 ens35f1
-	bond-mode 4
-	bond-miimon 100
-	bond-downdelay 200
-	bond-updelay 200
-	bond-lacp-rate 1
-	bond-xmit-hash-policy layer3+4
-	# Use the mac address of the first private interface
-	hwaddress GH:IJ:KL:12:34:56
-
-# Configure the bridge with a private address and add route(s) to send the Additional IPs to it
-# A.B.C.D/X => Subnet of Additional IPs assigned to the server, this can be a host with /32
-# By default Proxmox creates vmbr0.
-# You can use it or create another one 
-auto vmbr0
-iface vmbr0 inet dhcp
-	# Define a private IP, it should not overlap your existing private networks on the vrack for example 
-	address 192.168.0.1/24
-	bridge-ports none
-	bridge-stp off
-	bridge-fd 0
-	# Add single additional
-	up ip route add A.B.C.D/32 dev vmbr0
-	# Add block IP
-	up ip route add A.B.C.D/28 dev vmbr0
-
-# Bridge used for private networks on vRack
-# The VLAN feature is enabled
-auto vmbr1
-iface vmbr1 inet manual
-        bridge-ports bond1
-        bridge-stp off
-        bridge-fd 0
-        bridge-vlan-aware yes
-        bridge-vids 2-4094
-```
-
-W tym momencie uruchom ponownie usługi sieciowe lub zrestartuj serwer:
+At this point, restart the network services or reboot the server:
 
 ```bash
 systemctl restart networking.service
 ```
 
-Po ponownym uruchomieniu usług sieciowych bridges (np. vmbr0) mogą być w stanie nieaktywnym. Wynika to z faktu, że Proxmox odłącza każdą wirtualną maszynę i nie łączy jej ponownie. Aby wymusić ponowne połączenie wirtualnych maszyn z kołnierzami, możesz zrestartować VM.
+When you restart the network services, the bridges (for example, vmbr0) may be in an idle state. This is because Proxmox disconnects each VM from the bridges and does not reconnect them. To force the VMs to reconnect to the bridges, you can restart the VMs.
 
-#### Przykład konfiguracji VM klient Debian
+#### Client VM configuration example
 
-Zawartość pliku `/etc/network/interfaces`:
+> [!tabs]
+> Debian
+>> Content of the `/etc/network/interfaces` file:
+>>
+>> ```bash
+>> auto lo
+>> iface lo inet loopback
+>>
+>> auto eth0
+>>
+>> iface eth0 inet static
+>>   address 192.168.0.2/24
+>>
+>> iface eth0 inet static
+>>   address ADDITIONAL_IP/32
+>>   # The "src" option must be set so that packets reaching the Internet
+>>   # have the public IP as source, not the private IP 192.168.0.2
+>>   up ip route replace default via 192.168.0.1 dev $IFACE onlink src ADDITIONAL_IP
+>> ```
+>>
+> Ubuntu
+>> Content of the `/etc/netplan/01-eth0.yaml` file:
+>>
+>> ```yaml
+>> network:
+>>   version: 2
+>>   ethernets:
+>>     eth0:
+>>       addresses:
+>>         - 192.168.0.3/24
+>>         - ADDITIONAL_IP/32
+>>       routes:
+>>         - to: default
+>>           via: 192.168.0.1
+>>           # So that packets destined for the Internet have as their source
+>>           # the public IP and not the private IP 192.168.0.3
+>>           from: ADDITIONAL_IP
+>> ```
+>>
 
-```bash
-auto lo ens18
-iface lo inet loopback
-iface ens18 inet static
-    address ADDITIONAL_IP       # this should match with the IP A.B.C.D/32
-    netmask 255.255.255.255
-    gateway 192.168.0.1			# this sould match with the private IP set on bridge
-```
+#### Testing and validation
 
-#### Test i zatwierdzenie
+From now on, your virtual machines should be able to join a public service on the internet. In addition, your virtual machines can also be reached directly on the internet via the Additional IP address. The available bandwidth corresponds to the bandwidth available on your server’s public interfaces, and will not affect the private interfaces used for the vRack. This bandwidth is shared with other virtual machines on the same host that use an Additional IP address and the Proxmox host for public access.
 
-Wirtualne maszyny powinny mieć możliwość łączenia się z usługą publiczną w Internecie. Wirtualne maszyny mogą być również łączone bezpośrednio w Internecie poprzez adres IP Additional. Dostępna przepustowość to przepustowość dostępna w publicznych interfejsach Twojego serwera. Nie ma ona wpływu na prywatne interfejsy wykorzystywane w ramach usługi vRack. Przepustowość ta jest współdzielona z innymi wirtualnymi maszynami na tym samym hoście, które korzystają z adresu IP Additional i hosta Proxmox do publicznego dostępu.
-
-Aby sprawdzić publiczny adres IP z VM:
+To check your public IP, from the VM:
 
 ```bash
 curl ifconfig.io
-ADDITIONAL_IP    				# should return your additional ip
+ADDITIONAL_IP    				# must return your additional ip
 ```
 
-### Dodatkowe IP przez vRack
+### Additional IP via the vRack
 
-Konfiguracja ta jest bardziej elastyczna. Nie musisz przypisywać żadnego Additional IP do serwera ale do usługi vRack. Oznacza to, że jeśli wirtualna maszyna chce korzystać z adresu Additional IP, może ona żądać tego adresu bezpośrednio bez dodatkowej konfiguracji i bez względu na hosta, na którym jest on zainstalowany.
+This configuration is more flexible. You do not need to associate an Additional IP with a server, but with the vRack. This means that if a virtual machine wants to use an Additional IP address, it can claim it directly without any additional configuration, and regardless of the host on which it is hosted.
 
 > [!warning]
 >
-> Ta konfiguracja jest ograniczona do 600 Mb/s dla ruchu wychodzącego.
+> It is not possible to use an Additional IP (/32) directly in the vRack. To use an Additional IP, it must be [configured on a public interface](#additionalipmoderoute) and cannot be directly integrated into the vRack.
 >
 
-#### Wymagania początkowe
+#### Requirements
 
-* Rezerwacja bloku publicznych adresów IP na Twoim koncie z minimalną liczbą czterech adresów. Blok musi być skierowany do sieci vRack.
-* Przygotowanie Twojego zakresu wybranych prywatnych adresów IP
-* Posiadanie [serwera kompatybilnego z vRack](https://www.ovhcloud.com/pl/bare-metal/){.external}
-* Aktywacja usługi [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external}
-* Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+* You must have reserved a public block of IP addresses in your account, with a minimum of four addresses. The block must be pointed to the vRack.
+* Prepare your chosen range of private IP addresses.
+* You must have a [server compatible with vRack](/links/bare-metal/bare-metal).
+* Activate a [vRack service](/links/network/vrack).
+* You must be logged in to the [OVHcloud Control Panel](/links/manager).
 
-#### Schemat konfiguracji docelowej
+#### Target configuration schema
 
-![schemat vrack](images/schema_vrack2022.png){.thumbnail}
+![schema vrack](images/schema_vrack2022.png){.thumbnail}
 
-#### Wyjaśnienia
+#### Explanations
 
-Musisz:
+You need to:
 
-* tworzenie agregatu;
-* stworzyć brydż podłączony do agregatu;
+* create an aggregate (only for the High Grade & SCALE ranges)
+* create a bridge connected to the aggregate;
 
-Po pierwsze, dodaj blok publicznych adresów IP do sieci vRack. W tym celu przejdź do sekcji `Bare Metal Cloud`{.action} w Panelu klienta OVHcloud i otwórz menu `vRack`{.action}.
+First, add your public block of IP addresses to the vRack. To do so, go to the `Bare Metal Cloud`{.action} section of your [OVHcloud Control Panel](/links/manager) and open the `vRack`{.action} menu.
 
-Wybierz z listy usługę vRack, aby wyświetlić listę usług, które się do niej kwalifikują. Kliknij publiczny blok adresów IP, który chcesz dodać do sieci vRack, następnie kliknij przycisk `Dodaj`{.action}.
+Select your vRack from the list to view the list of eligible services. Click on the public block of IP addresses you want to add to the vRack, then click the `Add`{.action} button.
 
-#### Konfiguracja adresu IP
+#### Configure a usable IP address
 
-W przypadku sieci vRack pierwszy, przedostatni i ostatni adres danego bloku IP są zawsze zarezerwowane odpowiednio dla adresu sieci, bramy sieciowej i *broadcastu* sieci. Oznacza to, że pierwszy możliwy do użycia adres jest drugim adresem z bloku, jak pokazano poniżej:
+In the case of the vRack, the first, penultimate and last addresses of a given IP block are always reserved for the network address, network gateway and network *broadcast* respectively. This means that the first usable address is the second address in the block, as shown below:
 
 ```sh
-46.105.135.96 # Reserved: network address
-46.105.135.97 # First usable IP
+46.105.135.96   # Reserved: network address
+46.105.135.97   # First usable IP
 46.105.135.98
 46.105.135.99
 46.105.135.100
@@ -243,30 +310,30 @@ W przypadku sieci vRack pierwszy, przedostatni i ostatni adres danego bloku IP s
 46.105.135.106
 46.105.135.107
 46.105.135.108
-46.105.135.109 # Last usable IP
-46.105.135.110 # Reserved: network gateway
-46.105.135.111 # Reserved: network broadcast
+46.105.135.109   # Last usable IP
+46.105.135.110   # Reserved: network gateway
+46.105.135.111   # Reserved: network broadcast
 ```
 
-Aby skonfigurować pierwszy możliwy do użycia adres IP, edytuj plik konfiguracyjny sieci, jak wskazano poniżej. Użyj maski podsieci **255.255.255.240**.
+To configure the first usable IP address, you must edit the network configuration file as shown below. In this example, use a subnet mask of **255.255.255.240**.
 
 > [!primary]
 >
-> Maska podsieci użyta w tym przykładzie jest odpowiednia dla wybranego bloku IP. Twoja maska podsieci może różnić się w zależności od wielkości Twojego bloku. Po zakupieniu bloku IP otrzymasz e-mail wskazujący maskę podsieci, której należy użyć.
+> The subnet mask used in this example is appropriate for our IP block. Your subnet mask may differ depending on the size of your block. When you purchase your IP block, you will receive an email with the subnet mask to use.
 >
 
-#### Konfiguracja hypervisora
+#### Configure the hypervisor
 
-Wszystko odbywa się w pliku `/etc/network/interfaces`:
+The entire configuration is done in the `/etc/network/interfaces` file:
 
 ```bash
 vi /etc/network/interfaces
 ```
 
-Ważna jest konfiguracja `bond` i `vmbr`:
+What matters here is the `bond1` and `vmbr1` configuration:
 
 ```bash
-auto lo
+auto-lo
 iface lo inet loopback
 
 # public interface 1
@@ -280,56 +347,54 @@ iface ens33f1 inet manual
 # private interface 1
 auto ens35f0
 iface ens35f0 inet manual
-	bond-master bond1
 
 # private interface 2
 auto ens35f1
 iface ens35f1 inet manual
-	bond-master bond1
 
 auto bond0
 iface bond0 inet dhcp
-	bond-slaves ens33f0 ens33f1
-    bond-miimon 100
-	bond-mode 802.3ad
+        bond-slaves ens33f0 ens33f1
+        bond-miimon 100
+        bond-mode 802.3ad
+        post-up echo 1 > /proc/sys/net/ipv4/conf/bond0/proxy_arp
+        post-up echo 1 > /proc/sys/net/ipv4/ip_forward
 
 auto bond1
-# LACP Aggregate on private interfaces
-# No IPs on it
+# LACP aggregate on private interfaces
+# No IP on it
 iface bond1 inet manual
-	bond-slaves ens35f0 ens35f1
-    bond-miimon 100
-	bond-mode 802.3ad
+        bond-slaves ens35f0 ens35f1
+        bond-miimon 100
+        bond-mode 802.3ad
 
 #Private
 
 auto vmbr1
-# Bridge connected to bond1 aggregate
-# No need for IP
+# Bridge connected on bond1 aggregate
+# No need for IPs
 iface vmbr1 inet manual
-	bridge-ports bond1
-	bridge-stp off
-	bridge-fd 0
-
-post-up echo 1 > /proc/sys/net/ipv4/ip_forward
+        bond1 bridge-ports
+        bridge-stp off
+        bridge-fd 0
 
 ```
 
-W tym momencie uruchom ponownie usługi sieciowe lub zrestartuj serwer.
+At this point, restart the network services or reboot the server.
 
-#### Przykład konfiguracji VM klient Debian
+#### Configuration example of a client VM on Debian
 
-Zawartość pliku `/etc/network/interfaces`:
+Content of the file `/etc/network/interfaces`:
 
 ```bash
 auto lo ens18
 iface lo inet loopback
 iface ens18 inet static
-    address 46.105.135.97
-    netmask 255.255.255.240
-    gateway 46.105.135.110
+        address 46.105.135.97
+        netmask 255.255.255.240
+        gateway 46.105.135.110
 ```
 
-## Sprawdź również
+## Go further
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

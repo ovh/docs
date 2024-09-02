@@ -16,12 +16,12 @@ Al momento dell'ordine del tuo server dedicato, puoi scegliere una distribuzione
 
 > [!warning]
 >
-> OVHcloud mette a disposizione i server, ma non è autorizzata ad accedervi e non si occupa quindi della loro amministrazione. Garantire quotidianamente la gestione software e la sicurezza di queste macchine è quindi responsabilità dell’utente. Questa guida ti aiuta a muovere i primi passi nell’utilizzo del tuo server. Tuttavia, in caso di difficoltà o dubbi relativi ad amministrazione e sicurezza, ti consigliamo di contattare un fornitore specializzato. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida.
+> OVHcloud mette a disposizione i server, ma non è autorizzata ad accedervi e non si occupa quindi della loro amministrazione. Garantire quotidianamente la gestione software e la sicurezza di queste macchine è quindi responsabilità dell’utente. Questa guida ti aiuta a muovere i primi passi nell’utilizzo del tuo server. Tuttavia, in caso di difficoltà o dubbi relativi ad amministrazione e sicurezza, ti consigliamo di contattare un [provider specializzato](/links/partner). Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida.
 >
 
 ## Prerequisiti
 
-- Un [server dedicato](https://www.ovhcloud.com/it/bare-metal/) nel tuo account OVHcloud
+- Un [server dedicato](/links/bare-metal/bare-metal) nel tuo account OVHcloud
 - Avere un accesso amministratore (sudo) al server via SSH
 
 ## Procedura
@@ -254,6 +254,6 @@ Per ulteriori informazioni sulle nostre soluzioni di backup, consulta la guida [
 
 [Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
 
-Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](https://www.ovhcloud.com/it/professional-services/) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
+Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](/links/professional-services) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

@@ -17,7 +17,7 @@ Per eseguire alcune funzioni amministrative sul tuo server (ad esempio l'install
 ## Prerequisiti
 
 - Un'[istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#step-3-crea-unistanza) nel tuo account OVHcloud
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
@@ -123,6 +123,6 @@ Una volta fatto questo, dovresti essere in grado di accedere al tuo server con l
 
 ## Per saperne di più
 
-Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](https://www.ovhcloud.com/it/professional-services/) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
+Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](/links/professional-services) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

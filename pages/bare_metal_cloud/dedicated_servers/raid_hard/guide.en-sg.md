@@ -432,4 +432,4 @@ RAID actions menu, select an option:  [1-99 or e/p/w or 0 to quit] 0
 
 [Hot Swap - Software RAID](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_soft)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

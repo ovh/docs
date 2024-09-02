@@ -17,13 +17,13 @@ updated: 2023-09-20
 ## Requirements
 
 - A [VPS](https://www.ovhcloud.com/en-gb/vps/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
 ### GNU/Linux VPS
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and initiate a server reboot in rescue mode. Follow our [rescue mode guide](/pages/bare_metal_cloud/virtual_private_servers/rescue) if necessary.
+Log in to the [OVHcloud Control Panel](/links/manager) and initiate a server reboot in rescue mode. Follow our [rescue mode guide](/pages/bare_metal_cloud/virtual_private_servers/rescue) if necessary.
 
 You can then verify the configuration of the disks:
 
@@ -88,7 +88,7 @@ fsck /dev/sdb1 -f
 
 The instructions above do generally not apply to a Windows VPS, because the file system check does not support NTFS. You can however perform a NTFS consistency check on the partitions.
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and initiate a server reboot in rescue mode. Follow our [rescue mode guide](/pages/bare_metal_cloud/virtual_private_servers/rescue) if necessary.
+Log in to the [OVHcloud Control Panel](/links/manager) and initiate a server reboot in rescue mode. Follow our [rescue mode guide](/pages/bare_metal_cloud/virtual_private_servers/rescue) if necessary.
 
 You can then verify the configuration of the disks:
 
@@ -153,4 +153,4 @@ ntfsfix /dev/sdb2
 
 [Activating Rescue Mode on VPS](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

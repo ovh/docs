@@ -16,7 +16,7 @@ updated: 2023-06-20
 ## Prérequis
 
 - Avoir créé une [instance Public Cloud OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps) au forfait **horaire**.
-- Être connecté à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} ou à l’interface [Horizon.](/pages/public_cloud/compute/introducing_horizon)
+- Être connecté à l’[espace client OVHcloud](/links/manager){.external} ou à l’interface [Horizon.](/pages/public_cloud/compute/introducing_horizon)
 - Avoir des connaissances de l’[API Openstack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api) et des [variables Openstack](/pages/public_cloud/compute/loading_openstack_environment_variables)
 
 ## En pratique

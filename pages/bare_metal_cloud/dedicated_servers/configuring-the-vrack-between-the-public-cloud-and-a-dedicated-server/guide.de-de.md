@@ -18,8 +18,8 @@ OVHcloud [vRack](https://www.ovh.de/loesungen/vrack/){.external} ist ein private
 
 - Sie haben eine [Public Cloud Instanz](/pages/public_cloud/compute/public-cloud-first-steps#schritt-3-instanz-erstellen) in Ihrem Kunden-Account.
 - Sie haben ein [vRack](https://www.ovh.de/loesungen/vrack/) in Ihrem Kunden-Account eingerichtet.
-- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) (kompatibel mit vRack) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) (kompatibel mit vRack) in Ihrem Kunden-Account.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben einen privaten IP-Adressbereich für das vRack festgelegt.
 
 > [!warning]

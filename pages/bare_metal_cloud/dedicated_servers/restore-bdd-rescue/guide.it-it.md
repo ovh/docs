@@ -16,14 +16,14 @@ La modalità Rescue permette di accedere ai tuoi dati in modo permanente, anche 
 
 ## Prerequisiti
 
-- Un [server dedicato](https://www.ovhcloud.com/it/bare-metal/), un [VPS](https://www.ovhcloud.com/it/vps/) o un'istanza [Public Cloud](https://www.ovhcloud.com/it/public-cloud/) nel tuo account OVHcloud (Windows escluso)
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Un [server dedicato](/links/bare-metal/bare-metal), un [VPS](https://www.ovhcloud.com/it/vps/) o un'istanza [Public Cloud](https://www.ovhcloud.com/it/public-cloud/) nel tuo account OVHcloud (Windows escluso)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 > [!warning]
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
 >
-> Questa guida ti mostra come eseguire le operazioni necessarie alla gestione del tuo account. Tuttavia, in caso di difficoltà o dubbi relativi all'amministrazione, all'utilizzo o alla creazione di servizi su un server, ti consigliamo di rivolgerti a un [fornitore specializzato](https://partner.ovhcloud.com/it/directory/) o di contattare la [nostra community](https://community.ovh.com/en/).
+> Questa guida ti mostra come eseguire le operazioni necessarie alla gestione del tuo account. Tuttavia, in caso di difficoltà o dubbi relativi all'amministrazione, all'utilizzo o alla creazione di servizi su un server, ti consigliamo di rivolgerti a un [fornitore specializzato](/links/partner) o di contattare la [nostra community](https://community.ovh.com/en/).
 >
 
 ## Procedura

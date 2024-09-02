@@ -1,7 +1,7 @@
 ---
 title: "Gestionar los mensajes de correo automatizados"
 excerpt: "Descubra cómo realizar el seguimiento y la gestión de los emails automatizados enviados desde un alojamiento web de OVHcloud"
-updated: 2023-12-04
+updated: 2024-08-20
 ---
 
 > [!primary]
@@ -78,7 +78,7 @@ Si el estado del servicio permite el envío de mensajes de correo electrónico g
 
 ```bash
 <?php
-$to = "RecipientEmail@adress.tld"; 
+$to = "RecipientEmail@address.tld"; 
 $subject = "Test mail PHP"; 
 $content = "The body/content of the Email";
 $headers = "From: Website <SendingEmail@address.tld>\r\nReply-To: SendingEmail@address.tld";
@@ -206,7 +206,7 @@ $mail->Host = "your.smtp.server";
 $mail->SMTPAuth = true; 
 $mail->SMTPSecure = "ssl";
 $mail->Port = 465; 
-$mail->Username = "e-mail@adress.tld"; 
+$mail->Username = "e-mail@address.tld"; 
 $mail->Password = "YourEmailPassword"; 
 ```
 

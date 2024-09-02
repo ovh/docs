@@ -14,7 +14,7 @@ Pobranie zmiennych środowiskowych OpenStack na Twoje stanowisko umożliwi Ci ko
 
 ## Wymagania początkowe
 
-- Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- Zalogowanie do [Panelu klienta OVHcloud](/links/manager).
 - Utworzenie użytkownika OpenStack. Informacje na ten temat znajdziesz [w tym przewodniku](/pages/public_cloud/compute/create_and_delete_a_user).
 - Przygotowanie środowiska do korzystania z OpenStack. Informacje na ten temat znajdziesz w tym przewodniku: [Przygotowanie środowiska do korzystania z API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api).
 
@@ -24,7 +24,7 @@ Pobranie zmiennych środowiskowych OpenStack na Twoje stanowisko umożliwi Ci ko
 
 Aby zgromadzić zmienne środowiskowe, możesz pobrać utworzony wcześniej plik OpenRC użytkownika OpenStack.
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przejdź do sekcji `Public Cloud`{.action} i wybierz Twój projekt Public Cloud na górze po lewej stronie.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external}, przejdź do sekcji `Public Cloud`{.action} i wybierz Twój projekt Public Cloud na górze po lewej stronie.
 <br> W rubryce `Project Management` kliknij `Users & Roles`{.action}, po prawej stronie nazwy użytkownika kliknij symbol `...`{.action} i wybierz pozycję `Pobierz plik RC OpenStack`{.action}.
 
 ![openstack-variables](images/pciopenstackvariables1e.png){.thumbnail}

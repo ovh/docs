@@ -1,7 +1,7 @@
 ---
 title: "MX Plan - Korzystaj z interfejsu Webmail Zimbra"
 excerpt: "Poznaj interfejs Zimbra Webmail dla Twoich kont e-mail MX Plan OVHcloud"
-updated: 2024-03-11
+updated: 2024-08-26
 ---
 
 > [!primary]
@@ -54,6 +54,9 @@ OVHcloud dostarcza usługę webmail o nazwie Zimbra umożliwiającą dostęp do 
     - [Zarządzanie folderami](#contacts-folders)
     - [Zarządzanie listami](#contacts-lists)
     - [Import / Eksport kontaktów](#import-export)
+- [Kalendarz](#calendar)
+    - [Zarządzanie kalendarzami](#calendar-management)
+    - [Zadania](#tasks)
 - [Filtry](#filters)
     - [Jak skonfigurować filtry](#filters-howto)
     - [Utwórz filtr](#filters-creation)
@@ -289,6 +292,31 @@ Interfejs Zimbra posiada 2 menu konfiguracyjne:
 >>
 >> Aby skonfigurować filtry, należy zapoznać się z sekcją "[Filtry](#filters)" niniejszego przewodnika.
 >>
+> **Kalendarz i przypomnienia**
+>>
+>> Tutaj znajdziesz ustawienia związane z Twoimi [kalendarzami](#calendar).
+>>
+>> **Ogólne ustawienia kalendarza**
+>>
+>> - **Domyślny kalendarz**: Ustaw kalendarz używany domyślnie podczas tworzenia wydarzenia w kalendarzach.
+>> - **Początek tygodnia**: dzień, który jest wyświetlany jako pierwszy w siatce kalendarza.
+>> - **Początek dnia roboczego**: godzina, która pojawia się u góry wyświetlanej amplitudy czasu.
+>> - **Koniec dnia roboczego**: godzina, która pojawia się w dolnej części wyświetlanej amplitudy czasu.
+>> - **Strefa czasowa dnia roboczego** używana dla Twoich kalendarzy.
+>> - **Podczas tworzenia lub edycji wydarzeń** : wyświetl strefy czasowe dla godzin rozpoczęcia i zakończenia.
+>> - **Udostępnianie** : `Włącz delegowanie dla klientów CALDav`. Ta opcja umożliwia zarządzanie kalendarzami przy użyciu oprogramowania obsługującego protokół CALdav.
+>> - **Odrzucone wydarzenia**: Wyświetla zdarzenie w kalendarzu, nawet jeśli zostało odrzucone.
+>>
+>> **Przypomnienia o wydarzeniach**
+>>
+>> - **Wysyłaj przypomnienia e-mailem na adres**: wyślij przypomnienia o zdarzeniach na adres e-mail.
+>> - **Pokaż powiadomienia przeglądarki** : Chcę otrzymywać powiadomienia o wydarzeniach z przeglądarki internetowej.
+>> - **Domyślny czas przypomnienia**: Domyślny czas wywołania zwrotnego po włączeniu tego zdarzenia.
+>> - **Pokaż przypomnienia o zdarzeniach przeterminowanych**: kontynuuj wysyłanie przypomnień po wydarzeniu.
+>>
+>> **Bezpłatne zezwolenie na zajęcie**
+>>
+>> - **Zezwolenie na** : to ustawienie dotyczy tylko stanu dostępności związanego z kalendarzami Twojego konta e-mail. Oznacza to, że możesz udostępnić swój status "Zajęty" lub "Dostępny" innym adresom e-mail.
 
 ### Kontakty <a name="contacts"></a>
 
@@ -359,6 +387,72 @@ Wybierz jedną z dwóch następujących zakładek:
 >> Następnie kliknij przycisk `Eksportuj`{.action}, aby otworzyć okno eksportu. Wybierz typ pliku, który chcesz wyeksportować i kliknij przycisk `Eksportuj teraz`{.action}.<br><br>
 >> ![Zimbra - Eksport](images/zimbra-20.png){.thumbnail}
 >>
+
+### Kalendarz <a name="calendar"></a>
+
+Kliknij ikonę `Kalendarz` na górnym pasku, aby przejść do książki adresowej. Jest on podzielony na **3 części** :
+
+- **(1) Lista kalendarzy** (po lewej) : Zarządzaj różnymi kalendarzami i podkalendarzami.
+- **(2) Zawartość kalendarzy** (na środku) : Wyświetl zawartość wybranych kalendarzy i podkalendarzy.
+- **(3) Lista zadań** (po prawej) : Zarządzaj zadaniami i listami zadań.
+
+![Zimbra - kalendarz](images/zimbra-calendar-view.png){.thumbnail}
+
+### Zarządzanie kalendarzami <a name="calendar-management"></a>
+
+Domyślnie na liście `Moje kalendarze` znajduje się `Kalendarz` utworzony domyślnie. Ten domyślny kalendarz nie może zostać usunięty, ale zobaczysz, że można utworzyć własne kalendarze w następnym akapicie.
+
+##### 1- Utwórz kalendarz <a name="calendar-add-calendar"></a>
+
+- **(1)** : Aby utworzyć kalendarz, w kolumnie po lewej stronie wskaż opcję `Moje kalendarze`, a następnie kliknij przycisk `+`. Wpisz nazwę i określ kolor, po czym kliknij na `Zapisz`{.action}
+
+Możliwe jest również tworzenie podkalendarzy.
+
+- **(2)** : Aby utworzyć podkalendarz, naciśnij kursor na kalendarzu, dla którego chcesz go utworzyć, a następnie kliknij prawym przyciskiem myszy, aby wyświetlić menu rozwijane. Kliknij przycisk `Dodaj podkalendarz`. Wpisz nazwę i określ kolor, po czym kliknij na `Zapisz`{.action}
+
+![Zimbra - kalendarz](images/zimbra-calendar-add.png){.thumbnail .w-400}
+
+##### 2- Dodaj wydarzenie <a name="calendar-add-event"></a>
+
+- **(1)** : Kliknij `Nowe Termin`{.action} w lewym górnym rogu.
+- **(2)** : Kliknij przedział godzinowy w kalendarzu, do którego chcesz dodać wydarzenie. Aby uprościć dodawanie, wystarczy zdefiniować tytuł wydarzenia i lokalizację, a następnie kliknąć na `Zapisz`{.action}. Aby dodać więcej szczegółów wydarzenia, kliknij przycisk `Dodaj więcej szczegółów`{.action}
+
+![Zimbra - kalendarz](images/zimbra-calendar-event-add-01.png){.thumbnail .w-400}
+
+- **Początek** : data i godzina rozpoczęcia wydarzenia. Jeśli zaznaczysz `Cały dzień`, nie będziesz miał godziny rozpoczęcia i zakończenia do wpisania, ponieważ cały dzień będzie brany pod uwagę.
+- **Koniec** : data i godzina zakończenia wydarzenia.
+- **Powtórz**: jeśli jest to powtarzające się wydarzenie, ustaw jego częstotliwość.
+- **Lokalizacja**: lokalizacja, w której ma się odbyć wydarzenie, np. nazwa sali konferencyjnej.
+- **Ekwipunek** : klikając `Pokaż wyposażenie`{.action}, wyświetlasz tę linię, aby zdefiniować współdzielony sprzęt, który będzie używany podczas wydarzenia.
+- **Zaproszeni** : adresy e-mail uczestników wydarzenia.
+- **Uwagi**: wiadomość, która zostanie przekazana gościom wydarzenia.
+- **Przypomnij**: otrzymasz powiadomienie przed rozpoczęciem wydarzenia.
+- **Pokaż jako**: określenie, czy wydarzenie udostępni swoich gości, czy też stanie się niedostępne w trakcie tego wydarzenia
+- **Kalendarz**: określenie kalendarza, do którego będzie przypisane wydarzenie.
+
+Po zdefiniowaniu wydarzenia kliknij przycisk `Zapisz`{.action}.
+
+![Zimbra - kalendarz](images/zimbra-calendar-event-add-02.png){.thumbnail .w-400}
+
+##### 3- Edytuj wydarzenie <a name="calendar-modify-event"></a>
+
+### Zadania <a name="tasks"></a>
+
+Zadania nie są elementami powiązanymi z Twoimi kalendarzami. Mają one na celu wyszczególnienie zadań do wykonania bez przypisania do nich daty wykonania lub daty tymczasowej. Te zadania są uzupełnieniem kalendarzy.
+
+Lista "Zadania" istnieje domyślnie. Nie można jej usunąć, ale można utworzyć własne listy zadań.
+
+- **(1)** : Aby utworzyć zadanie, kliknij przycisk `...`{.action} następnie `Nowe zadanie`{.action} lub po prostu przycisk `+`{.action} obok listy zadań.
+
+- **(2)** : Aby utworzyć nową listę zadań, kliknij przycisk `...`{.action}, a następnie `Sporządzać listę...`{.action}.
+
+![Zimbra - kalendarz](images/zimbra-calendar-task-01.png){.thumbnail .w-400}
+
+Po utworzeniu zadania możesz zdefiniować datę ukończenia i priorytet, które pozwolą na sortowanie ich według ważności, a także wybrać odpowiednią listę zadań z menu rozwijanego.
+
+Następnie kliknij przycisk `Zapisz`{.action}, aby dokończyć tworzenie zadania.
+
+![Zimbra - kalendarz](images/zimbra-calendar-task-02.png){.thumbnail .w-400}
 
 ### Filtry <a name="filters"></a>
 

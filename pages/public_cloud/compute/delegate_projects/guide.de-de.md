@@ -19,11 +19,11 @@ Zu diesem Zweck können Sie anderen OVHcloud Kunden-Accounts Lese- oder Schreibr
 
 - Sie haben eine [Public Cloud](https://www.ovhcloud.com/de/public-cloud/) Instanz in Ihrem OVHcloud Account.
 - Sie verfügen über ein Backup einer [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/instance-backup/).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung 
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und öffnen Sie Ihr `Public Cloud`{.action} Projekt. Klicken Sie auf `Contacts and Rights`{.action} im Bereich **Project Management**.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und öffnen Sie Ihr `Public Cloud`{.action} Projekt. Klicken Sie auf `Contacts and Rights`{.action} im Bereich **Project Management**.
 
 Auf dieser Seite können Sie die zu Ihrem Projekt gehörenden Kontakte einsehen.
 
@@ -58,6 +58,6 @@ Um einen Zugang zu widerrufen, klicken Sie auf den Button `...`{.action} und wä
 
 [Zugriffs- und Sicherheitseinstellungen in Horizon](/pages/public_cloud/compute/access_and_security_in_horizon)
 
-Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](https://www.ovhcloud.com/de/professional-services/), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
+Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

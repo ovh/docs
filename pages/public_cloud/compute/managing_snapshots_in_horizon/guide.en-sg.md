@@ -44,4 +44,4 @@ Next, click the drop-down arrow next to the snapshot you want to delete and clic
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

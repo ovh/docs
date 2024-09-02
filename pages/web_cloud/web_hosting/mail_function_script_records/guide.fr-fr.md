@@ -1,7 +1,7 @@
 ---
 title: "Suivre et gérer les e-mails automatisés de son hébergement web"
 excerpt: "Découvrez comment suivre et gérer les e-mails automatisés envoyés depuis votre hébergement web OVHcloud"
-updated: 2024-05-28
+updated: 2024-08-20
 ---
 
 ## Objectif
@@ -74,7 +74,7 @@ Si vous constatez que les e-mails générés depuis vos scripts ne sont plus env
 
 ```bash
 <?php
-$to = "RecipientEmail@adress.tld"; 
+$to = "RecipientEmail@address.tld"; 
 $subject = "Test mail PHP"; 
 $content = "The body/content of the Email";
 $headers = "From: Website <SendingEmail@address.tld>\r\nReply-To: SendingEmail@address.tld";
@@ -216,7 +216,7 @@ $mail->Host = "your.smtp.server";
 $mail->SMTPAuth = true; 
 $mail->SMTPSecure = "ssl";
 $mail->Port = 465; 
-$mail->Username = "e-mail@adress.tld"; 
+$mail->Username = "e-mail@address.tld"; 
 $mail->Password = "YourEmailPassword"; 
 ```
 

@@ -12,9 +12,9 @@ OVHcloud allows you to associate a virtual MAC address with an IP address, so th
 
 ## Requirements
 
-- A [dedicated server](https://www.ovhcloud.com/en-ca/bare-metal/) that supports [virtual MACs](/pages/bare_metal_cloud/dedicated_servers/network_support_virtual_mac).
-- An [Additional IP address](https://www.ovhcloud.com/en-ca/bare-metal/ip/){.external} or an Additional IP block (RIPE).
-- Access to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external} or to the [OVHcloud API](https://ca.api.ovh.com/).
+- A [dedicated server](/links/bare-metal/bare-metal) that supports [virtual MACs](/pages/bare_metal_cloud/dedicated_servers/network_support_virtual_mac).
+- An [Additional IP address](/links/network/additional-ip){.external} or an Additional IP block (RIPE).
+- Access to your [OVHcloud Control Panel](/links/manager){.external} or to the [OVHcloud API](https://ca.api.ovh.com/).
 - Your server must support virtual MACs. To determine this, consult [this guide](/pages/bare_metal_cloud/dedicated_servers/network_support_virtual_mac).
 
 > [!warning]
@@ -79,7 +79,7 @@ Use the following API call:
 
 #### Via the OVHcloud Control Panel
 
-To remove a virtual MAC address associated with an Additional IP, you must first connect to your [control panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}. Once connected, go to the `Bare Metal Cloud`{.action} section and click on `Network`{.action}. Next, open the `IP`{.action} menu. Select the correct server, so that the Additional IP (or IP block) attached to it appears.
+To remove a virtual MAC address associated with an Additional IP, you must first connect to your [control panel](/links/manager){.external}. Once connected, go to the `Bare Metal Cloud`{.action} section and click on `Network`{.action}. Next, open the `IP`{.action} menu. Select the correct server, so that the Additional IP (or IP block) attached to it appears.
 
 Finally, click on the `...`{.action} button on the right, then click `Delete a Virtual MAC`{.action}.
 
@@ -94,4 +94,4 @@ Use the following API call:
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

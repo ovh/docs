@@ -16,7 +16,7 @@ Even if the server is not used for a purpose that requires the administration of
 
 ## Requirements
 
-- A [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) or a [VPS](https://www.ovhcloud.com/en-gb/vps/) with a Linux-based OS in your OVHcloud account
+- A [dedicated server](/links/bare-metal/bare-metal) or a [VPS](https://www.ovhcloud.com/en-gb/vps/) with a Linux-based OS in your OVHcloud account
 - Login credentials received via email after the installation
 
 
@@ -34,7 +34,7 @@ Be sure to consult our "Getting started" guides as well:
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) or reach out to [our community](https://community.ovh.com/en/) if you face difficulties or doubts concerning the administration, usage or implementation of services on a server.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](/links/partner) or reach out to [our community](https://community.ovh.com/en/) if you face difficulties or doubts concerning the administration, usage or implementation of services on a server.
 >
 
 > [!primary]
@@ -406,4 +406,4 @@ This should be sufficient to apply the changes. Otherwise reboot the server from
 
 [Securing a VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

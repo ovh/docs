@@ -25,7 +25,7 @@ Dans ce tutoriel, vous configurerez un serveur de stockage OVHcloud pour répond
 ### Ce que vous devez avoir
 
 - Un [serveur de stockage OVHcloud](https://www.ovhcloud.com/fr/bare-metal/storage/){.external}.
-- Une infrastructure de production ([VPS](https://www.ovhcloud.com/fr/vps/){.external}, [serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/){.external}, [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/){.external}…).
+- Une infrastructure de production ([VPS](https://www.ovhcloud.com/fr/vps/){.external}, [serveurs dédiés](/links/bare-metal/bare-metal){.external}, [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/){.external}…).
 - Une connexion SSH configurée entre le serveur de stockage et l'infrastructure de production.
 - Conseillé : un réseau privé entre vos serveurs ([OVHcloud vRack](https://www.ovh.com/fr/solutions/vrack/){.external}).
 
@@ -61,7 +61,7 @@ Il n'existe pas de RAID meilleur que les autres, tous répondent à des besoins 
 
 ### Étape 2 : installez et configurez le serveur
 
-Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et installez votre serveur. Comme indiqué au début, nous allons utiliser Debian 9.4. Référez-vous à notre guide des [premiers pas sur un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#installation-ou-reinstallation-de-votre-serveur-dedie){.external} pour plus d'informations.
+Rendez-vous dans votre [espace client OVHcloud](/links/manager){.external} et installez votre serveur. Comme indiqué au début, nous allons utiliser Debian 9.4. Référez-vous à notre guide des [premiers pas sur un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#installation-ou-reinstallation-de-votre-serveur-dedie){.external} pour plus d'informations.
 
 Une fois le système sélectionné pour l'installation, cochez la case `Personnaliser la configuration des partitions`{.action}.
 
