@@ -1,7 +1,7 @@
 ---
 title: MX-Eintrag für die E-Mail-Verwaltung konfigurieren
 excerpt: Erfahren Sie hier, wie Sie mit OVHcloud MX-Einträge für Ihren Domainnamen konfigurieren 
-updated: 2024-02-29
+updated: 2024-09-02
 ---
 
 > [!primary]

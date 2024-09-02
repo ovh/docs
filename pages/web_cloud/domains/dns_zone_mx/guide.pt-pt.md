@@ -1,7 +1,7 @@
 ---
 title: "Configurar um registo MX para a gestão dos e-mails"
 excerpt: Saiba como configurar um registo MX no seu domínio da OVHcloud
-updated: 2024-02-29
+updated: 2024-09-02
 ---
 
 > [!primary]

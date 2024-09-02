@@ -1,7 +1,7 @@
 ---
 title: "Konfiguracja rekordu MX dla emaili"
 excerpt: "Dowiedz się, jak skonfigurować rekord MX dla Twojej domeny w OVHcloud"
-updated: 2024-02-29
+updated: 2024-09-02
 ---
 
 > [!primary]
