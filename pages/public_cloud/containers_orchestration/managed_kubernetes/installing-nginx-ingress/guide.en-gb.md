@@ -29,6 +29,29 @@ Imagine an Ingress Resource as a list of traffic routing rules for backend Servi
 
 After deploying the Nginx Ingress Controller, you will also have an OVHcloud Load Balancer. Thanks to this Load Balancer the external traffic will be routed to the Ingress Controller Pod running Nginx, which then forwards traffic to the appropriate backend Services you will configure in Ingress resources.
 
+### Important Note: Choosing the Nginx Ingress Controller
+
+When configuring your Nginx Ingress Controller on a Kubernetes cluster, it is essential to note that there are two main Ingress Controllers for Nginx:
+
+1. **[Nginx Inc Ingress Controller](https://github.com/nginxinc/kubernetes-ingress)**: An Ingress Controller developed and maintained by Nginx Inc., intended for advanced or Nginx-specific configurations.
+2. **[Kubernetes Nginx Ingress Controller](https://github.com/kubernetes/ingress-nginx)**: A standard Ingress Controller often used by the majority of Kubernetes deployments.
+
+**This guide is specifically designed for the Kubernetes Nginx Ingress Controller**. If you have installed or plan to install the Nginx Inc Ingress Controller, please follow the specific documentation from Nginx Inc., available [here](https://github.com/nginxinc/kubernetes-ingress/tree/v3.3.2/examples/shared-examples/proxy-protocol).
+
+### Using the Nginx Inc Ingress Controller
+
+If you are using the Nginx Inc Ingress Controller, you will also need to adjust some configurations to ensure compatibility with the OVHcloud infrastructure. For example, to enable the `proxy-protocol` version 1 with the OVHcloud Load Balancer, add the following annotation to your service:
+
+```yaml
+service:
+  annotations:
+    service.beta.kubernetes.io/ovh-loadbalancer-proxy-protocol: v1
+```
+This will allow the Load Balancer to use proxy protocol version 1, which is necessary for proper communication between the Load Balancer and your Nginx Ingress Controller.
+
+You can place this text in the appropriate section of your guide, as discussed earlier.
+
+
 ## Installing the Nginx Ingress Controller Helm chart
 
 For this tutorial we are using the [Nginx Ingress Controller  Helm chart](https://github.com/kubernetes/ingress-nginx/tree/master/charts/ingress-nginx){.external} found on its own Helm repository.
