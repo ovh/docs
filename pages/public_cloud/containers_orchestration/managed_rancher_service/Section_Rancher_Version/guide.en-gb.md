@@ -16,7 +16,7 @@ The following documentation provides an overview of the estimated release schedu
 
 | Rancher version | Upstream release date | MRS release date | End of life |
 |-----------------|-----------------------|------------------|-------------|
-| 2.9             | Q4-2024               | Q4-2024          | TBD         |
+| 2.9             | 2024-07-30            | Q4-2024          | TBD         |
 | 2.8             | 2023-12-13            | 2024-03-25       | TBD         |
 | 2.7             | 2023-08-15            | 2023-12-06       | Q4-2024     |
 
