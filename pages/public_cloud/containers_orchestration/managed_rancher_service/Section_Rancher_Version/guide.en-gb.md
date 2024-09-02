@@ -12,60 +12,55 @@ updated: 2024-07-31
 
 ### Step 1: Rancher Release Calendar
 
-The Rancher release calendar is as follows:
+The following documentation provides an overview of the estimated release schedule for each supported OVHcloud Managed Rancher Service (MRS) version. This schedule is subject to change and is provided for informational purposes only. Exact release dates may vary based on development requirements, testing, and other factors.
 
-| Kubernetes version | Upstream release date | MKS release date | End of life |
-|--------------------|-----------------------|------------------|-------------|
-| 1.30               | 2024-04-17            | Q4-2024          | TBD         |
-| 1.29               | 2023-12-13            | 2024-03-25       | TBD         |
-| 1.28               | 2023-08-15            | 2023-12-06       | TBD         |
-| 1.27               | 2023-04-11            | 2023-08-31       | TBD         |
-| 1.26               | 2022-12-06            | 2023-05-09       | Q1-2025     |
-| 1.25               | 2022-08-23            | 2022-12-08       | Q1-2025     |
-| 1.24               | 2022-05-03            | 2023-08-19       | 2024-06-19  |
+| Rancher version | Upstream release date | MRS release date | End of life |
+|-----------------|-----------------------|------------------|-------------|
+| 2.9             | Q4-2024               | Q4-2024          | TBD         |
+| 2.8             | 2023-12-13            | 2024-03-25       | TBD         |
+| 2.7             | 2023-08-15            | 2023-12-06       | Q4-2024     |
 
-*MKS release date:* Estimated date when this Kubernetes version is available for OVHcloud Managed Kubernetes Service.
+**MRS release date:** Estimated date when this Rancher version is available for OVHcloud Managed Rancher Service.
 
-*End of support:* For clusters running minor versions that have reached End of Support, OVHcloud will not provide any technical assistance and will advise you to upgrade your cluster to a supported version. Please note that versions that have reached their End of Support date are not available for MKS Cluster creation.
-
-*End of life:* When a cluster is running a minor version that has reached its End of Life date, OVHcloud will auto-upgrade the cluster to the next minor version (n+1). For more information, see the MKS minor version lifecycle [link-to-put].
+**End of life:** When a Rancher instance is running a version that has reached its End of Life date, OVHcloud will auto-upgrade the instance to the next minor version (n+1). For more details, see the [MRS minor version lifecycle](#).
 
 **Notes:**
 
-The **Date format** follows the [international standard for numeric dates](https://en.wikipedia.org/wiki/ISO_8601#Week_dates). The dates listed by [quarter year](https://en.wikipedia.org/wiki/Calendar_year#Quarter_year) are estimates and will be updated once a specific date is known.
-
-**TBD** abbreviation is used when a date is to be determined.
+- The **Date format** follows the [international standard for numeric dates](https://en.wikipedia.org/wiki/ISO_8601#Week_dates). Dates listed by [quarter year](https://en.wikipedia.org/wiki/Calendar_year#Quarter_year) are estimates and will be updated once specific dates are known.
+- The abbreviation **TBD** is used when a date is to be determined.
 
 ### Step 2: MKS Supported Version Matrix in MRS
 
-The supported versions of MKS are as follows:
+Depending on the version of Rancher, the following versions of the Managed Kubernetes Service (MKS) driver are supported:
 
-- Rancher 2.7.9 -> MKS 1.26
-- Rancher 2.8.5 -> MKS 1.27 to 1.28
+- **Rancher 2.7.9** -> MKS 1.26
+- **Rancher 2.8.5** -> MKS 1.27 to 1.28
 
-For more details, refer to the [SUSE support matrix](https://www.suse.com/suse-rancher/support-matrix/all-supported-versions/rancher-v2-8-5/).
+For more details on compatibility, refer to the [SUSE support matrix](https://www.suse.com/suse-rancher/support-matrix/all-supported-versions/rancher-v2-8-5/).
 
 ### Step 3: Responsibility Model
 
-The responsibility model for OVHcloud's Managed Kubernetes service details shared responsibilities between OVHcloud and the customer. This model helps to reduce the customer's operational burden by clarifying the roles and responsibilities for various activities related to the installation, management, and maintenance of Kubernetes clusters.
-
-The RACI below details shared responsibilities between OVHcloud and the customer for the Managed Kubernetes service. This shared model can help relieve the customer’s operational burden.
+The responsibility model for OVHcloud's Managed Rancher Service clarifies the shared responsibilities between OVHcloud and the customer. This model helps reduce the customer's operational burden by delineating roles and responsibilities for various activities related to the installation, management, and maintenance of Rancher clusters.
 
 #### RACI Definition
 
-- **R**: Responsible for carrying out the process
-- **A**: Accountable for the successful completion of the process
-- **C**: Consulted during the process
-- **I**: Informed of the results of the process
+- **R**: Responsible for carrying out the process.
+- **A**: Accountable for the successful completion of the process.
+- **C**: Consulted during the process.
+- **I**: Informed of the results of the process.
 
-For more details, see the full responsibility model [here](https://help.ovhcloud.com/csm/en-ie-public-cloud-kubernetes-responsibility-model?id=kb_article_view&sysparm_article=KB0058760).
+For more detailed information on responsibilities, refer to the full responsibility model available [here](https://help.ovhcloud.com/csm/en-ie-public-cloud-kubernetes-responsibility-model?id=kb_article_view&sysparm_article=KB0058760).
 
-### Step 4: MKS Lifecycle Policies
+### Step 4: MRS Lifecycle Policies
 
-OVHcloud's Managed Kubernetes Service offers software-compliant Kubernetes, certified by the CNCF. New stable versions are provided regularly by the CNCF. Earlier versions provided by OVHcloud may reach their End-of-Sale (EoS) or End-of-Life (EoL) due to the lifecycle of the underlying support from the Kubernetes community. This policy helps customers understand the lifecycle of the OVHcloud Managed Kubernetes Service and prepare for transitions to newer versions.
+OVHcloud's Managed Rancher Service adheres to strict lifecycle policies to ensure the reliability and security of your Kubernetes clusters. New stable versions are regularly released and certified by the Cloud Native Computing Foundation (CNCF). Older versions may reach their End-of-Sale (EoS) or End-of-Life (EoL) status based on the lifecycle of underlying community support. Understanding these policies helps customers plan for upgrades and transitions to newer versions.
 
-For more details, see the MKS lifecycle policies [here](https://help.ovhcloud.com/csm/en-ie-public-cloud-kubernetes-eos-eol-policies?id=kb_article_view&sysparm_article=KB0049743).
+**End-of-Sale (EoS):** The point at which a specific Rancher version is no longer available for new installations.
 
-## Go further
+**End-of-Life (EoL):** The point at which a specific Rancher version is no longer supported by OVHcloud. Clusters running EoL versions will be automatically upgraded to the next supported version.
+
+For more detailed lifecycle policies, see the [MRS lifecycle policies documentation](https://help.ovhcloud.com/csm/en-ie-public-cloud-kubernetes-eos-eol-policies?id=kb_article_view&sysparm_article=KB0049743).
+
+## Go Further
 
 Join our community of users on <https://community.ovh.com/en/>.
