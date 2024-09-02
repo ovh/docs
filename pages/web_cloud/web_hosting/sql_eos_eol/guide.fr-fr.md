@@ -16,26 +16,23 @@ Les produits couverts par ces annonces de fin de vente et de fin de vie sont les
 > Actuellement et à votre niveau, les services de base de données SQL inclus avec les hébergements Web OVHcloud ne peuvent pas être mis à jour directement à partir de l'espace client OVHcloud ou via la base de données en fin de vente/vie.
 >
 
-Si vous souhaitez anticiper cette fin de vente/vie ou, effectuer les actions manuellement sans attendre une quelconque intervention d'OVHcloud, vous devrez obligatoirement réaliser les actions suivantes :
+Si vous souhaitez anticiper cette fin de vente/vie ou effectuer les actions manuellement sans attendre une potentielle intervention d'OVHcloud, vous devez obligatoirement réaliser les actions suivantes :
 
-- Cas 1 : Vous disposez d'une seule base de données incluse avec votre offre d'hébergement Web :
+- Cas n°1 : vous disposez d'une seule base de données incluse avec votre offre d'hébergement Web :
+    - Vérifiez que le contenu de la base de données est compatible avec un SGBD plus récent.
+    - [Exportez le contenu de la base de données](/pages/web_cloud/web_hosting/sql_database_export).
+    - Supprimez l'ancienne base de données.
+    - [Créez une nouvelle base de données](/pages/web_cloud/web_hosting/sql_create_database) dans une version de SGBD plus récente.
+    - [Importez le contenu de l'ancienne base de données dans la nouvelle](/pages/web_cloud/web_hosting/sql_importing_mysql_database).
+    - Associez la nouvelle base de données à votre site web.
 
-    - Vérifier que le contenu de la base de données est compatible avec un SGBD plus récent ;
-    - [Exporter le contenu de la base de données](/pages/web_cloud/web_hosting/sql_database_export) ;
-    - Supprimer l'ancienne base de données ;
-    - [Créer une nouvelle base de données](/pages/web_cloud/web_hosting/sql_create_database) dans une version de SGBD plus récente ;
-    - [Importer le contenu de l'ancienne base de données dans la nouvelle](/pages/web_cloud/web_hosting/sql_importing_mysql_database) ;
-    - Associer la nouvelle base de données à votre site web.
-
-- Cas 2 : Vous disposez de plusieurs base de données incluses avec votre offre d'hébergement Web :
-
-    - Vérifier que le contenu de la base de données est compatible avec un SGBD plus récent ;
-    - Par précaution, [exporter le contenu de la base de données](/pages/web_cloud/web_hosting/sql_database_export) ;
-    - [Créer une nouvelle base de données](/pages/web_cloud/web_hosting/sql_create_database) dans une version de SGBD plus récente ;
-    - [Dupliquer le contenu de l'ancienne base de données dans la nouvelle](/pages/web_cloud/web_hosting/copy_database) ;
-    - Associer la nouvelle base de données à votre site web ;
-    - Supprimer l'ancienne base de données.
-
+- Cas n°2 : vous disposez de plusieurs base de données incluses avec votre offre d'hébergement Web :
+    - Vérifiez que le contenu de la base de données est compatible avec un SGBD plus récent.
+    - Par précaution, [exportez le contenu de la base de données](/pages/web_cloud/web_hosting/sql_database_export).
+    - [Créee une nouvelle base de données](/pages/web_cloud/web_hosting/sql_create_database) dans une version de SGBD plus récente.
+    - [Dupliquez le contenu de l'ancienne base de données dans la nouvelle](/pages/web_cloud/web_hosting/copy_database).
+    - Associez la nouvelle base de données à votre site web.
+    - Supprimez l'ancienne base de données.
 
 ## Aller plus loin
 
