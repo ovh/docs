@@ -49,8 +49,6 @@ The responsibility model for OVHcloud's Managed Rancher Service clarifies the sh
 - **C**: Consulted during the process.
 - **I**: Informed of the results of the process.
 
-For more detailed information on responsibilities, refer to the full responsibility model available [here](https://help.ovhcloud.com/csm/en-ie-public-cloud-kubernetes-responsibility-model?id=kb_article_view&sysparm_article=KB0058760).
-
 ### Step 4: MRS Lifecycle Policies
 
 OVHcloud's Managed Rancher Service adheres to strict lifecycle policies to ensure the reliability and security of your Kubernetes clusters. New stable versions are regularly released and certified by the Cloud Native Computing Foundation (CNCF). Older versions may reach their End-of-Sale (EoS) or End-of-Life (EoL) status based on the lifecycle of underlying community support. Understanding these policies helps customers plan for upgrades and transitions to newer versions.
