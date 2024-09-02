@@ -10,8 +10,8 @@ This guide explains the Network Security Dashboard and provides an overview of c
 
 ## Requirements
 
-- An OVHcloud service exposed on a dedicated public IP address ([Dedicated Server](https://www.ovhcloud.com/en-au/bare-metal/), [VPS](https://www.ovhcloud.com/en-au/vps/), [Public Cloud instance](https://www.ovhcloud.com/en-au/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/en-au/enterprise/products/hosted-private-cloud/), [Additional IP](https://www.ovhcloud.com/en-au/network/additional-ip/), etc.)
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- An OVHcloud service exposed on a dedicated public IP address ([Dedicated Server](/links/bare-metal/bare-metal), [VPS](https://www.ovhcloud.com/en-au/vps/), [Public Cloud instance](https://www.ovhcloud.com/en-au/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/en-au/enterprise/products/hosted-private-cloud/), [Additional IP](/links/network/additional-ip), etc.)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -57,7 +57,7 @@ The columns correspond to the Anti-DDoS scrubbing (**Mitigation**) status, the E
     - **Disabled** -  Firewall is **disabled** for this IP.
     - **(no status)** - Firewall configuration is not created. To configure rules, click on the `...`{.action} button then select `Create Firewall`{.action}.
 
-- The **GAME firewall** (only available for [OVHcloud **Game** dedicated servers](https://www.ovhcloud.com/en-au/bare-metal/prices/#filterType=range_element&filterValue=game)) state can be:
+- The **GAME firewall** (only available for [OVHcloud **Game** dedicated servers](https://www.ovhcloud.com/en-au/bare-metal/prices/#filterType=range_element&filterValue=game#filterType=range_element&filterValue=game)) state can be:
     - **On** - The GAME DDoS protection is **enabled** on this IP.
     - **Off** - The GAME firewall is **available** but **disabled** on this IP.
     - **(no status)** - The GAME firewall is not available for this IP. This means the listed IP is not configured on a supported product range.
@@ -170,4 +170,4 @@ In any case where adjustments to our Anti-DDoS system will be necessary, it is m
 
 [Protecting a game server with the application firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_game_ddos)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

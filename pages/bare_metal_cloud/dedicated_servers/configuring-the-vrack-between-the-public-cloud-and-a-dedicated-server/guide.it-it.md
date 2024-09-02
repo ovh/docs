@@ -10,7 +10,7 @@ updated: 2021-10-15
 
 ## Obiettivo
 
-La [vRack](https://www.ovh.it/soluzioni/vrack/){.external} OVHcloud è una rete privata che permette di configurare l’indirizzamento tra due o più [server dedicati](https://www.ovhcloud.com/it/bare-metal/) OVHcloud. Inoltre, consente di aggiungere [istanze Public Cloud](https://www.ovhcloud.com/it/public-cloud/){.external} a una rete privata al fine di creare un’infrastruttura di risorse fisiche e virtuali.
+La [vRack](https://www.ovh.it/soluzioni/vrack/){.external} OVHcloud è una rete privata che permette di configurare l’indirizzamento tra due o più [server dedicati](/links/bare-metal/bare-metal) OVHcloud. Inoltre, consente di aggiungere [istanze Public Cloud](https://www.ovhcloud.com/it/public-cloud/){.external} a una rete privata al fine di creare un’infrastruttura di risorse fisiche e virtuali.
 
 **Questa guida ti mostra come configurare una rete privata tra un’istanza Public Cloud e un server dedicato.**
 
@@ -18,8 +18,8 @@ La [vRack](https://www.ovh.it/soluzioni/vrack/){.external} OVHcloud è una rete 
 
 * Aver creato un'[istanza Public Cloud OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps)
 * Aver attivato un servizio [vRack](https://www.ovh.it/soluzioni/vrack/)
-* Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/) compatibile con la vRack
-* Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+* Disporre di un [server dedicato](/links/bare-metal/bare-metal) compatibile con la vRack
+* Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 * Una gamma di indirizzi IP privati di tua scelta
 
 > [!warning]

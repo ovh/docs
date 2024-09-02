@@ -13,7 +13,7 @@ Enabling Intel Software Guard Extensions (SGX) on your server allows you to run 
 ## Requirements
 
 - A dedicated server compatible with the [SGX option](https://www.ovhcloud.com/en-au/bare-metal/intel-software-guard-extensions/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) or the [OVHcloud API](https://ca.api.ovh.com/)
+- Access to the [OVHcloud Control Panel](/links/manager) or the [OVHcloud API](https://ca.api.ovh.com/)
 - Login credentials received via email after the installation
 - Ubuntu 18.04 or equivalent installed on the server
 
@@ -21,7 +21,7 @@ Enabling Intel Software Guard Extensions (SGX) on your server allows you to run 
 
 ### From the OVHcloud Control Panel
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), go to the `Bare Metal Cloud`{.action} section and then select the server on which you wish to enable SGX from **Dedicated Servers** in the left-hand sidebar.
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and then select the server on which you wish to enable SGX from **Dedicated Servers** in the left-hand sidebar.
 
 #### Enabling the option
 
@@ -216,4 +216,4 @@ To go further (develop your own application, register for remote attestation, et
 - [github.com/intel/linux-sgx-driver](https://github.com/intel/linux-sgx-driver){.external}
 - [github.com/intel/sgx-ra-sample](https://github.com/intel/sgx-ra-sample){.external}
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

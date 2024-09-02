@@ -11,7 +11,7 @@ updated: 2024-02-27
 > Cet article est destiné aux utilisateurs expérimentés qui ont au minimum des connaissances de base sur l'[amorçage PXE](https://fr.wikipedia.org/wiki/Preboot_Execution_Environment) ainsi que sur l'implémentation utilisée chez OVHcloud : [iPXE](https://ipxe.org/).
 >
 
-Dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), il est possible de choisir un amorçage parmi une liste prédéfinie restreinte : disque ou rescue principalement.<br>
+Dans l'[espace client OVHcloud](/links/manager), il est possible de choisir un amorçage parmi une liste prédéfinie restreinte : disque ou rescue principalement.<br>
 Via l’[API OVHcloud](https://api.ovh.com/), vous pouvez aussi définir des scripts personnalisés.
 
 Utiliser un script personnalisé peut-être intéressant dans les cas suivants :
@@ -21,7 +21,7 @@ Utiliser un script personnalisé peut-être intéressant dans les cas suivants :
 
 ## Prérequis
 
-- Un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) **prêt à être booté/rebooté** sur votre compte OVHcloud.
+- Un [serveur dédié](/links/bare-metal/bare-metal) **prêt à être booté/rebooté** sur votre compte OVHcloud.
 - Avoir accès à l'[API OVHcloud](https://api.ovh.com/).
 
 > [!warning]
@@ -82,7 +82,7 @@ Vous pouvez maintenant redémarrer votre serveur et celui-ci utilisera votre scr
 
 ### Autres modes de boot <a name="leaveIpxeScript"></a>
 
-Vous pouvez à tout moment basculer à nouveau sur le disque ou sur le mode rescue à partir de l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) (consultez notre guide « [Activer et utiliser le mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) »), ou via l’[API OVHcloud](https://api.ovh.com/).
+Vous pouvez à tout moment basculer à nouveau sur le disque ou sur le mode rescue à partir de l'[espace client OVHcloud](/links/manager) (consultez notre guide « [Activer et utiliser le mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode) »), ou via l’[API OVHcloud](https://api.ovh.com/).
 
 #### Basculer sur disque <a name="switchToDisk"></a>
 
@@ -108,4 +108,4 @@ Vous observerez que la valeur de l'attribut `bootScript` est désormais nulle.
 
 [iPXE - open source boot firmware [EN]](https://ipxe.org/)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

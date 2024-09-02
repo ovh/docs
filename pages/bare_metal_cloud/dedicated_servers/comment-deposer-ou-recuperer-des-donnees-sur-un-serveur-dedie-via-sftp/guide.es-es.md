@@ -17,12 +17,12 @@ Si necesita migrar sus datos, es posible que tenga que descargarlos desde su ser
 > [!warning]
 >Esta tutorial explica cómo utilizar una o más soluciones de OVHcloud con herramientas externas y describe las acciones que deben realizarse en un contexto específico. Es posible que necesite adaptar las instrucciones en función de su caso particular.
 >
->Si necesita ayuda para aplicar las indicaciones, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/). Para más información, consulte la sección [Más información](#gofurther) de esta guía.
+>Si necesita ayuda para aplicar las indicaciones, le recomendamos que contacte con un [proveedor especializado](/links/partner). Para más información, consulte la sección [Más información](#gofurther) de esta guía.
 >
 
 ## Requisitos
 
-- Un [servidor dedicado](https://www.ovhcloud.com/es-es/bare-metal/){.external} en el que se instala una distribución GNU/Linux.
+- Un [servidor dedicado](/links/bare-metal/bare-metal){.external} en el que se instala una distribución GNU/Linux.
 - Cliente FTP encargado de las conexiones SFTP (esta guía explica el uso de [FileZilla](https://filezilla-project.org/){.external}).
 - Acceso administrativo a su servidor por SSH.
 

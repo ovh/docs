@@ -14,7 +14,7 @@ As your needs and OVHcloud ranges are constantly evolving, it is sometimes neces
 >
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and security. Since we have no administrative access to your devices, it is your responsibility to manage the software and to ensure they function correctly.
 >
-> This guide is designed to help you with the most common tasks. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-au/directory/) if you have difficulties or doubts concerning the administration, usage or implementation of security measures on a server.
+> This guide is designed to help you with the most common tasks. Nevertheless, we recommend that you contact a [specialist service provider](/links/partner) if you have difficulties or doubts concerning the administration, usage or implementation of security measures on a server.
 >
 
 ## Requirements
@@ -69,7 +69,7 @@ See our guide on [using Backup Storage on a dedicated server](/pages/bare_metal_
 > - It is not possible to migrate an IP from an OVHcloud account to a So you Start account.
 >
 
-If the reputation of your IP addresses is important, we strongly recommend using [Additional IPs](https://www.ovhcloud.com/en-au/bare-metal/ip/), as they can be kept if you migrate.
+If the reputation of your IP addresses is important, we strongly recommend using [Additional IPs](/links/network/additional-ip), as they can be kept if you migrate.
 
 Once you have these IPs, you simply need to move them to the new server.
 To do this, please refer to our dedicated guide: [Moving an Additional IP](/pages/bare_metal_cloud/dedicated_servers/move-failover-ip).
@@ -85,8 +85,8 @@ For more information, please read our documentation on [domains and Dns](/produc
 
 ## Go further
 
-If you would like assistance migrating your server, please contact our network of [OVHcloud partners](https://partner.ovhcloud.com/en-au/directory/).
+If you would like assistance migrating your server, please contact our network of [OVHcloud partners](/links/partner).
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-au/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

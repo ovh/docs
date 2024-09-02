@@ -109,4 +109,4 @@ In the example above, this temporary address can be used to download the **file*
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

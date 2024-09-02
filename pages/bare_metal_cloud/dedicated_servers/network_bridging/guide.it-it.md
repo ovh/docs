@@ -10,7 +10,7 @@ updated: 2024-07-15
 
 > [!primary]
 >
-> Dal 6 ottobre 2022, la nostra soluzione "Failover IP" si chiama [Additional IP](https://www.ovhcloud.com/it/network/additional-ip/). Questo non ha alcun impatto sulla sua funzionalità.
+> Dal 6 ottobre 2022, la nostra soluzione "Failover IP" si chiama [Additional IP](/links/network/additional-ip). Questo non ha alcun impatto sulla sua funzionalità.
 >
 
 ## Obiettivo
@@ -24,7 +24,7 @@ La connessione di rete in modalità bridge può essere utilizzata per configurar
 ## Prerequisiti
 
 - Disporre di un server dedicato con un hypervisor installato (ad esempio [VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox)
-- Disporre di almeno un indirizzo [Additional IP](https://www.ovhcloud.com/it/bare-metal/ip/) connesso al server
+- Disporre di almeno un indirizzo [Additional IP](/links/network/additional-ip) connesso al server
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 > [!warning]

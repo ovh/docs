@@ -66,4 +66,4 @@ Alternatively, you can [edit the configuration of the instance](/pages/public_cl
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

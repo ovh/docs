@@ -10,7 +10,7 @@ updated: 2021-10-15
 
 ## Wprowadzenie
 
-Rozwiązanie [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external} umożliwia konfigurację sieci między dwoma lub więcej [serwerami dedykowanymi](https://www.ovhcloud.com/pl/bare-metal/) OVHcloud. Umożliwia ponadto dodawanie [instancji Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) do Twojej prywatnej sieci w celu utworzenia infrastruktury z zasobów fizycznych i wirtualnych. 
+Rozwiązanie [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external} umożliwia konfigurację sieci między dwoma lub więcej [serwerami dedykowanymi](/links/bare-metal/bare-metal) OVHcloud. Umożliwia ponadto dodawanie [instancji Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) do Twojej prywatnej sieci w celu utworzenia infrastruktury z zasobów fizycznych i wirtualnych. 
 
 **Niniejszy przewodnik wyjaśnia, jak skonfigurować prywatną sieć między instancją Public Cloud a serwerem dedykowanym.**
 
@@ -18,8 +18,8 @@ Rozwiązanie [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external} umożliwi
 
 * Utworzenie [instancji Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps)
 * Aktywowanie usługi [vRack](https://www.ovh.pl/rozwiazania/vrack/)
-* Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/) kompatybilnego z usługą vRack
-* Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+* Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal) kompatybilnego z usługą vRack
+* Dostęp do [Panelu klienta OVHcloud](/links/manager)
 * Wybrany zakres prywatnych adresów IP
 
 > [!warning]

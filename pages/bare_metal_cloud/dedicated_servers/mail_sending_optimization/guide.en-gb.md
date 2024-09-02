@@ -13,7 +13,7 @@ In general, anti-spam policies are strict. To ensure that emails reach recipient
 > [!warning]
 > OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) or reaching out to [our community](https://community.ovh.com/en/) if you experience any issues.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialist service provider](/links/partner) or reaching out to [our community](https://community.ovh.com/en/) if you experience any issues.
 >
 
 ## Requirements
@@ -68,7 +68,7 @@ Once you have modified your domain name’s DNS zone, you will need to allow a m
 
 Once done, add the PTR record (also known as the reverse):
 
-In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, go to the `Bare Metal Cloud`{.action} section and open `Network`{.action}. Next, click on `IP`{.action}.
+In the [OVHcloud Control Panel](/links/manager){.external}, go to the `Bare Metal Cloud`{.action} section and open `Network`{.action}. Next, click on `IP`{.action}.
 
 If you wish to configure the reverse DNS on an Additional IP, click on the `Additional IP`{.action} tab.
 
@@ -150,6 +150,6 @@ You may want to use a website like [Mail Tester](http://www.mail-tester.com/){.e
 
 [How to improve email security with a DMARC record](/pages/web_cloud/domains/dns_zone_dmarc)
 
-To get support setting up your OVHcloud solutions, contact our [network of OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+To get support setting up your OVHcloud solutions, contact our [network of OVHcloud partners](/links/partner).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

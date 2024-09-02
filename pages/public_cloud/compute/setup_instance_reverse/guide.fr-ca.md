@@ -16,7 +16,7 @@ Configurer la résolution **Reverse DNS** d’une instance est particulièrement
 
 - Avoir une [instance Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/) dans votre compte OVHcloud
 - Un nom de domaine avec son champ `A` pointant vers l'instance
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 
 ## En pratique
 

@@ -20,11 +20,11 @@ Nasze serwery High Grade i Scale oferują opcję skalowalną, która pozwala na 
 ## Wymagania początkowe
 
 - Serwer [High Grade](https://www.ovhcloud.com/pl/bare-metal/high-grade/) lub [SCALE](https://www.ovhcloud.com/pl/bare-metal/scale/)
-- Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dostęp do [panelu klienta OVHcloud](/links/manager)
 
 ## W praktyce
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
 
 W sekcji `Bare Metal Cloud`{.action} wybierz serwer spośród **Serwery dedykowane**.
 
@@ -80,7 +80,7 @@ Jeśli zamierzasz zwiększyć pojemność pamięci i przestrzeni dyskowej w trak
 
 ## Sprawdź również <a name="go-further"></a>
  
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
  
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
  

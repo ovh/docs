@@ -16,11 +16,11 @@ Crear un proyecto es el primer paso para implementar [instancias Public Cloud](h
 
 ## Requisitos
 
-- Tener acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
+- Tener acceso al [área de cliente de OVHcloud](/links/manager)
 
 ## Procedimiento
 
-Inicie sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y acceda a la sección`Public Cloud`{.action}.
+Inicie sesión en el [área de cliente de OVHcloud](/links/manager) y acceda a la sección`Public Cloud`{.action}.
 
 Una vez que haya consultado la documentación disponible, acepte los términos del contrato marcando la casilla correspondiente y haga clic en `Descubrir el universo Public Cloud`{.action}.
 
@@ -56,6 +56,6 @@ Ya puede acceder a todo el ecosistema Public Cloud de OVHcloud y consultar nuest
 - [Eliminar un proyecto de Public Cloud](/pages/public_cloud/compute/delete_a_project)
 - [Información sobre el tipo de facturación cloud](/pages/public_cloud/compute/analyze_billing)
 
-Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
+Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](/links/professional-services) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

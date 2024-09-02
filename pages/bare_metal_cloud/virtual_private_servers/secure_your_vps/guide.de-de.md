@@ -240,6 +240,8 @@ Alle Informationen zu den für Ihren Dienst verfügbaren Backup-Lösungen finden
 
 [Erste Schritte mit einem VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps) 
 
+[SSH-Schlüssel verwenden](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
+
 [Firewall auf einem Windows Server konfigurieren](/pages/bare_metal_cloud/virtual_private_servers/activate-port-firewall-soft-win)
 
 [Konfiguration der Linux Firewall mit iptables](/pages/bare_metal_cloud/virtual_private_servers/firewall-Linux-iptable)

@@ -6,7 +6,7 @@ updated: 2023-09-08
 
 ## Objective
 
-With [OVHcloud dedicated servers](https://www.ovhcloud.com/en-ie/bare-metal/), you can freely [configure partitioning](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh). This gives customers a wide range of options when installing an operating system. ESXi is an exception because it is a UNIX-based, proprietary system with a proprietary installer.<br />
+With [OVHcloud dedicated servers](/links/bare-metal/bare-metal), you can freely [configure partitioning](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh). This gives customers a wide range of options when installing an operating system. ESXi is an exception because it is a UNIX-based, proprietary system with a proprietary installer.<br />
 OVHcloud installations of ESXi are therefore compliant with the configuration set by the software publisher. Since ESXi 7.0, it is possible to choose between 4 different predefined partitioning layouts. This guide will show you how to select a partitioning layout in the [OVHcloud Control Panel](https://ovh.com/manager/#/dedicated/configuration) or via the [OVHcloud API](https://api.ovh.com/).
 
 > [!primary]
@@ -16,7 +16,7 @@ OVHcloud installations of ESXi are therefore compliant with the configuration se
 
 ## Requirements
 
-- A [dedicated server](https://www.ovhcloud.com/en-ie/bare-metal/) **ready to be installed/reinstalled** in your OVHcloud account that is compatible with ESXi
+- A [dedicated server](/links/bare-metal/bare-metal) **ready to be installed/reinstalled** in your OVHcloud account that is compatible with ESXi
 - Access to the [OVHcloud Control Panel](https://ovh.com/manager/#/dedicated/configuration) and/or the [OVHcloud API](https://api.ovh.com/)
 
 > [!alert]
@@ -64,7 +64,7 @@ The `default` partitioning scheme will be used unless another one is selected.
 > The procedure is very similar [to other operating systems](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server), with the exception that you cannot tick the checkbox `Customise the partitioning configuration`{.action} and that you have a dropdown menu to choose the partitioning layout at the fourth and final step.
 >
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). From the `General information`{.action} tab, click the `...`{.action} button next to the operating system and then click `Install`{.action}.
+Log in to the [OVHcloud Control Panel](/links/manager). From the `General information`{.action} tab, click the `...`{.action} button next to the operating system and then click `Install`{.action}.
 
 ![Reinstall button](images/reinstalling-your-server-00.png){.thumbnail}
 
@@ -170,4 +170,4 @@ You can use the following API call to get the details for each partition:
 
 [Hot Swap - Hardware RAID](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_hard)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

@@ -6,7 +6,7 @@ updated: 2022-12-22
 
 > [!primary]
 >
-> Since October 6th, 2022 our service "Failover IP" is named [Additional IP](https://www.ovhcloud.com/en/network/additional-ip/). This renaming has no effect on its technical features.
+> Since October 6th, 2022 our service "Failover IP" is named [Additional IP](/links/network/additional-ip). This renaming has no effect on its technical features.
 >
 
 ## Objective
@@ -21,7 +21,7 @@ As any other OVHcloud service, an Additional IP service can be cancelled at any 
 
 ## Requirements
 
-- An [Additional IP service](https://www.ovhcloud.com/en/network/additional-ip/)
+- An [Additional IP service](/links/network/additional-ip)
 - Access to the [OVHcloud API console](https://ca.api.ovh.com/)
 - Consulting the guide [First steps to use the OVHcloud API](/pages/manage_and_operate/api/first-steps) (to familiarise yourself with the OVHcloud API)
 

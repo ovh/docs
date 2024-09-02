@@ -1,6 +1,6 @@
 ---
-title: 'Netzwerk auf Windows Server mit Hyper-V konfigurieren'
-excerpt: 'Erfahren Sie, wie Sie das Netzwerk auf Windows Server mit Hyper-V konfigurieren'
+title: "Netzwerk auf Windows Server mit Hyper-V konfigurieren"
+excerpt: "Erfahren Sie hier, wie Sie das Netzwerk auf Windows Server mit Hyper-V konfigurieren"
 updated: 2024-08-07
 ---
 
@@ -20,15 +20,15 @@ Bei den High Grade & SCALE Server-Reihen ist der Betrieb von Additional IPs im *
 
 Da die Advance Server nur über zwei Netzwerkinterfaces verfügen, wird empfohlen, den Server im privaten Modus zu konfigurieren, indem ein Teaming-Modus mit beiden an das vRack angebundenen Interfaces erstellt wird. Ein zweiter Server kann dann als Internet-Gateway dienen, wobei eine Schnittstelle mit dem privaten Netzwerk und eine andere mit dem öffentlichen Netzwerk verbunden ist.
 
-Für diese Art der Konfiguration können Sie die im Artikel [Konfiguration von IP-Aliasing](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing) beschriebene Alias-IP-Funktion verwenden.
+Für diese Art der Konfiguration können Sie die in der Anleitung zur [Konfiguration von IP-Aliasing](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing) beschriebene Funktion verwenden.
 
 Es ist auch möglich, diese Konfiguration auf jedem der Hyper-V Server (ein privates Interface / ein öffentliches Interface auf jedem Server) einzurichten und keine Port-Aggregation zu konfigurieren. In diesem Fall verfügt das private Netzwerk jedoch über eine geringere Bandbreite und keine hohe Verfügbarkeit der Netzwerkinterfaces.
 
 ## Voraussetzungen
 
-- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account.
-- Sie verfügen über eine [Additional IP](https://www.ovhcloud.com/de/bare-metal/ip/)-Adresse oder einen Additional IP-Block.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) in Ihrem Kunden-Account.
+- Sie verfügen über eine [Additional IP](/links/network/additional-ip)-Adresse oder einen Additional IP-Block.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 > [!warning]
 >
@@ -74,7 +74,7 @@ In diesem Beispiel bedeutet das folgendes:
 
 > [!primary]
 >
-> Überprüfen Sie, dass Ihre Konfiguration ähnlich ist. Sie können Informationen zu öffentlichen oder privaten MAC-Adressen und Interfaces in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) oder über die OVHcloud API abrufen.
+> Überprüfen Sie, dass Ihre Konfiguration ähnlich ist. Sie können Informationen zu öffentlichen oder privaten MAC-Adressen und Interfaces in Ihrem [OVHcloud Kundencenter](/links/manager) oder über die OVHcloud API abrufen.
 >
 
 Öffnen Sie den Server Manager, gehen Sie zu `Local Server`{.action} und klicken Sie auf `Disabled`{.action} neben "NIC Teaming".
@@ -252,9 +252,9 @@ network:
 
 - Sie haben einen öffentlichen IP-Adressblock mit mindestens vier Adressen in Ihrem Kunden-Account.
 - Sie haben Ihren gewünschten privaten IP-Adressbereich festgelegt.
-- Sie verfügen über einen mit vRack kompatiblen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/).
+- Sie verfügen über einen mit vRack kompatiblen [Dedicated Server](/links/bare-metal/bare-metal).
 - Sie haben ein [vRack](https://www.ovh.de/loesungen/vrack/) in Ihrem Kunden-Account eingerichtet.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 #### Erläuterungen
 
@@ -285,7 +285,7 @@ In diesem Beispiel bedeutet das folgendes:
 
 > [!primary]
 >
-> Überprüfen Sie, dass Ihre Konfiguration ähnlich ist. Sie können Informationen zu öffentlichen oder privaten MAC-Adressen und Interfaces in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) oder über die OVHcloud API abrufen.
+> Überprüfen Sie, dass Ihre Konfiguration ähnlich ist. Sie können Informationen zu öffentlichen oder privaten MAC-Adressen und Interfaces in Ihrem [OVHcloud Kundencenter](/links/manager) oder über die OVHcloud API abrufen.
 >
 
 Öffnen Sie den Server Manager, gehen Sie zu `Local Server`{.action} und klicken Sie auf `Disabled`{.action} neben "NIC Teaming".

@@ -157,4 +157,4 @@ Afterwards, all that’s left to do is to install the required driver, which wil
 
 ## Going further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

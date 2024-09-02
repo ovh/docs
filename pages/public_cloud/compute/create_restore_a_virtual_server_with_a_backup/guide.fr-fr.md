@@ -17,13 +17,13 @@ Vous pouvez être amenés à vouloir restaurer votre instance grâce à une sauv
 ## Prérequis
 
 - Disposer d'une sauvegarde d'une instance Public Cloud. À cet effet, consultez [le guide dédié à la création d'une sauvegarde](/pages/public_cloud/compute/save_an_instance).
-- Être connecté à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à [l'espace client OVHcloud](/links/manager).
 
 ## En pratique
 
 ### Créer une instance a partir d'une sauvegarde
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et sélectionnez `Public Cloud`{.action}. Sélectionnez le projet Public Cloud concerné puis cliquez sur `Instance backup`{.action} sous la section `Storage`.
+Connectez-vous à votre [espace client OVHcloud](/links/manager){.external} et sélectionnez `Public Cloud`{.action}. Sélectionnez le projet Public Cloud concerné puis cliquez sur `Instance backup`{.action} sous la section `Storage`.
 
 ![public-cloud-instance-backup](images/restorebackup01.png){.thumbnail}
 
@@ -52,7 +52,7 @@ Pour plus d'informations sur la création d'une instance, consultez [ce guide](/
 
 ### Restaurer une instance à partir d’une sauvegarde
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et sélectionnez `Public Cloud`{.action}. Cliquez ensuite sur  `Instances`{.action} dans le menu à gauche.
+Connectez-vous à votre [espace client OVHcloud](/links/manager){.external} et sélectionnez `Public Cloud`{.action}. Cliquez ensuite sur  `Instances`{.action} dans le menu à gauche.
 
 ![public-cloud-instance-backup](images/restorebackup04.png){.thumbnail}
 
@@ -84,4 +84,4 @@ L'instance aura le statut `Réinstallation` jusqu'à ce que le processus soit te
 
 [Sauvegarder une instance](/pages/public_cloud/compute/save_an_instance)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

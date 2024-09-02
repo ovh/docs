@@ -14,7 +14,7 @@ If you are configuring your VPS as a DNS server, you can make use of the OVHclou
 
 - A domain name to which you have administrative access
 - A [Virtual Private Server](https://www.ovhcloud.com/en-ca/vps/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
 >OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
@@ -26,7 +26,7 @@ If you are configuring your VPS as a DNS server, you can make use of the OVHclou
 
 ### Step 1: Retrieving the validation code <a name="retrievecode"></a>
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the `Bare Metal Cloud`{.action} section and then select your server from **Virtual Private Servers**.
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and then select your server from **Virtual Private Servers**.
 
 Switch to the tab `Secondary DNS`{.action} and click on the button `Add a domain`{.action}.
 
@@ -48,7 +48,7 @@ The required action is different, depending on where the DNS of your domain name
 
 - If the domain name is managed by an external registrar **or** it uses external DNS servers at this point, log in to the control panel of your DNS provider and add a DNS zone record of the type TXT with the subdomain "ownercheck" and the value provided by executing [step 1](#retrievecode).
 
-- If the domain is managed by OVHcloud as its registrar **and** it uses OVHcloud DNS servers, add the TXT record in the `Web Cloud`{.action} section of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca). You can follow the instructions in our [DNS zone guide](/pages/web_cloud/domains/dns_zone_edit) if you are not familiar with this process.
+- If the domain is managed by OVHcloud as its registrar **and** it uses OVHcloud DNS servers, add the TXT record in the `Web Cloud`{.action} section of your [OVHcloud Control Panel](/links/manager). You can follow the instructions in our [DNS zone guide](/pages/web_cloud/domains/dns_zone_edit) if you are not familiar with this process.
 
 ![Secondary DNS](images/sec-04.png){.thumbnail}
 
@@ -76,4 +76,4 @@ Domain names can be removed by clicking on the `...`{.action} button in the tabl
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

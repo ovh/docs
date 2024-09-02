@@ -13,7 +13,7 @@ Lors de la création d’une instance, une seule clé SSH peut être configurée
 ## Prérequis
 
 - Avoir une [instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 - Avoir accès à votre instance via SSH en tant qu'administrateur (sudo)
 
 ## En pratique
@@ -56,7 +56,7 @@ Is the information correct? [Y/n] Y
 Ouvrez le fichier *authorized_keys* dans le dossier personnel du nouvel utilisateur avec un éditeur de texte :
 
 ```bash
-~$ sudo nano /home/user2/.ssh/authorized_keys
+sudo nano /home/user2/.ssh/authorized_keys
 ```
 
 Ajoutez dans le fichier la clé publique créée à la première étape. Enregistrez et fermez l'éditeur.
@@ -64,7 +64,7 @@ Ajoutez dans le fichier la clé publique créée à la première étape. Enregis
 Si le dossier .ssh n'existe pas encore, vous pouvez le créer avec cette commande :
 
 ```bash
-~$ sudo mkdir /home/user2/.ssh/
+sudo mkdir /home/user2/.ssh/
 ```
 
 Vous pouvez configurer plusieurs clés SSH en les ajoutant aux fichiers *authorized_keys* des dossiers utilisateur correspondants.
@@ -72,7 +72,7 @@ Vous pouvez configurer plusieurs clés SSH en les ajoutant aux fichiers *authori
 Désormais, vous pouvez vous connecter avec l'utilisateur et la clé privée configurés précédemment :
 
 ```bash
-~$ ssh user2@instance_IP
+ssh user2@instance_IP
 ```
 ```console
 Linux b2-7-de1 5.10.0-10-cloud-amd64 #1 SMP Debian 5.10.84-1 (2021-12-08) x86_64
@@ -86,4 +86,4 @@ user2@server:~$
 
 [Changer sa clé SSH en cas de perte](/pages/public_cloud/compute/replacing_lost_ssh_key)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

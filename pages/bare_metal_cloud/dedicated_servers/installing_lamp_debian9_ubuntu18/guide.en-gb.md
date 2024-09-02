@@ -12,19 +12,19 @@ Setting up a web server and related software enables your cloud server to host d
 
 ## Requirements
 
-- A [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/), a [VPS](https://www.ovhcloud.com/en-gb/vps/) or a [Public Cloud instance](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account (excluding Windows systems)
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- A [dedicated server](/links/bare-metal/bare-metal), a [VPS](https://www.ovhcloud.com/en-gb/vps/) or a [Public Cloud instance](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account (excluding Windows systems)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - Administrative access to your service via SSH
 
 > [!warning]
 > This tutorial will show you how to use one or more OVHcloud solutions with external tools, and the changes you need to make in specific contexts. You may need to adapt the instructions according to your situation.
 >
-> We recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) or reach out to [our community](https://community.ovh.com/en/) if you face difficulties or doubts concerning the administration, usage or implementation of services on a server.
+> We recommend that you contact a [specialist service provider](/links/partner) or reach out to [our community](https://community.ovh.com/en/) if you face difficulties or doubts concerning the administration, usage or implementation of services on a server.
 >
 
 ## Instructions
 
-If a current Debian or Ubuntu distribution is not already installed on your server, carry out a reinstallation first in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). This is the best way to have a clean system for your web server and the applications running on it.
+If a current Debian or Ubuntu distribution is not already installed on your server, carry out a reinstallation first in your [OVHcloud Control Panel](/links/manager). This is the best way to have a clean system for your web server and the applications running on it.
 
 Follow the respective guide to install an operating system on your OVHcloud service and connect to it via [SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction):
 
@@ -221,7 +221,7 @@ You can go further with UFW, for example if you want to restrict *denial of serv
 
 ### Step 6: DNS configuration (optional)
 
-In order to access your web server installation via a domain name, you need to attach it to your service. This is done by editing the DNS zone which you can do in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), provided OVHcloud is your domain registrar **and** the domain name uses OVHcloud DNS servers.
+In order to access your web server installation via a domain name, you need to attach it to your service. This is done by editing the DNS zone which you can do in your [OVHcloud Control Panel](/links/manager), provided OVHcloud is your domain registrar **and** the domain name uses OVHcloud DNS servers.
 
 Please refer to our guide on [Editing a DNS zone](/pages/web_cloud/domains/dns_zone_edit) for further instructions. If the domain name is currently in use, only configure DNS after your website or application is ready.
 
@@ -272,4 +272,4 @@ Certbot will automatically renew the certificates. There are no further steps ne
 
 [NGINX documentation](https://nginx.org/en/docs/) (Apache alternative)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

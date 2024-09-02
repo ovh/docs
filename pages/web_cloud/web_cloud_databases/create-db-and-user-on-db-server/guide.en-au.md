@@ -1,7 +1,7 @@
 ---
 title: 'Creating databases and users on your database server'
 excerpt: 'Find out how to create a database on your database server'
-updated: 2023-02-15
+updated: 2024-08-22
 ---
 
 ## Objective
@@ -22,6 +22,11 @@ A database (DB) is used to store what are known as dynamic elements, such as com
 Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action} in the top navigation bar. Click `Web Cloud Databases`{.action}, then choose the SQL instance concerned. Click on the `Databases` tab, then on `Add database`{.action}.
 
 ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database.png){.thumbnail}
+
+> [!primary]
+>
+> PostgreSQL schema creation is currently unavailable on Web Cloud Databases servers.
+>
 
 Fill in the fields by following the criteria listed. You can create a user directly by ticking the **Create User** box.
 

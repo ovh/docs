@@ -18,8 +18,8 @@ OVHcloud dedicated servers include additional backup space to store important da
 
 ## Requirements
 
-- A [dedicated server](https://www.ovhcloud.com/asia/bare-metal/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+- A [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
 > This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/asia/about/).
@@ -30,7 +30,7 @@ OVHcloud dedicated servers include additional backup space to store important da
 
 ### Activating the backup storage
 
-Log into your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia). Switch to the `Bare Metal Cloud`{.action} section and select your server from **Dedicated Servers**. On the `Backup storage`{.action} tab, click the `Enable backup storage`{.action} button.
+Log into your [OVHcloud Control Panel](/links/manager). Switch to the `Bare Metal Cloud`{.action} section and select your server from **Dedicated Servers**. On the `Backup storage`{.action} tab, click the `Enable backup storage`{.action} button.
 
 ![Activate Backup storage](images/backup-storage01.png){.thumbnail}
 
@@ -46,7 +46,7 @@ Access to the backup storage is restricted by IP address according to an access 
 
 #### Adding a backup access
 
-Log into your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia). Switch to the `Bare Metal Cloud`{.action} section and select your server from **Dedicated Servers**. On the `Backup storage`{.action} tab, click on the button `Add an access`{.action}.
+Log into your [OVHcloud Control Panel](/links/manager). Switch to the `Bare Metal Cloud`{.action} section and select your server from **Dedicated Servers**. On the `Backup storage`{.action} tab, click on the button `Add an access`{.action}.
 
 ![Add backup access](images/backup-storage03.png){.thumbnail}
 
@@ -109,19 +109,19 @@ To verify that your IP address is authorised, use the following call:
 
 ### Resetting your password
 
-Log into your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia). Switch to the `Bare Metal Cloud`{.action} section and select your server from **Dedicated Servers**. On the `Backup storage`{.action} tab, click on the button `Forgotten your password?`{.action}.
+Log into your [OVHcloud Control Panel](/links/manager). Switch to the `Bare Metal Cloud`{.action} section and select your server from **Dedicated Servers**. On the `Backup storage`{.action} tab, click on the button `Forgotten your password?`{.action}.
 
 If you click on `Confirm`{.action} in the popup window, a password recovery email will be sent to the email address of your admin contact. Follow the instructions in the email to reset your password.
 
 ### Deleting the backup storage
 
-Log into your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia). Switch to the `Bare Metal Cloud`{.action} section and select your server from **Dedicated Servers**. On the `Backup storage`{.action} tab, click on the button `Delete backup storage`{.action}.
+Log into your [OVHcloud Control Panel](/links/manager). Switch to the `Bare Metal Cloud`{.action} section and select your server from **Dedicated Servers**. On the `Backup storage`{.action} tab, click on the button `Delete backup storage`{.action}.
 
 If you click on `Confirm`{.action} in the popup window, the backup storage will be disabled within a few minutes. All data on the storage space will be deleted.
 
 ### Ordering more disk space
 
-Log into your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia). Switch to the `Bare Metal Cloud`{.action} section and select your server from **Dedicated Servers**. On the `Backup storage`{.action} tab, click on the button `Order disk space`{.action}.
+Log into your [OVHcloud Control Panel](/links/manager). Switch to the `Bare Metal Cloud`{.action} section and select your server from **Dedicated Servers**. On the `Backup storage`{.action} tab, click on the button `Order disk space`{.action}.
 
 ![Add backup access](images/backup-storage06.png){.thumbnail}
 

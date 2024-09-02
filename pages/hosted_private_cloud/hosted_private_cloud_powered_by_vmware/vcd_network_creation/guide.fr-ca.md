@@ -1,7 +1,7 @@
 ---
-title: 'VMware Cloud Director - Création de composants réseaux via VCD on OVHcloud'
-excerpt: 'Apprenez à créer facilement des composants réseaux au sein du control panel VCD on OVHcloud'
-updated: 2024-07-02
+title: "VMware Cloud Director - Création de composants réseaux via VCD on OVHcloud"
+excerpt: "Apprenez à créer facilement des composants réseaux au sein du control panel VCD on OVHcloud"
+updated: 2024-08-20
 ---
 
 <style>
@@ -19,13 +19,13 @@ details[open]>summary::before {
 </style>
 
 > [!primary]
->
-> VCD on OVHcloud est actuellement en phase Alpha. Ce guide peut donc être incomplet. Notre équipe reste disponible sur notre canal Discord dédié : <https://discord.gg/ovhcloud>.
 > 
+> VCD on OVHcloud est actuellement en phase Alpha. Ce guide peut donc être incomplet et sera mis à jour.
+>
 
 ## Objectif
 
-**Ce guide réseau vous explique comment créer, configurer et gérer efficacement votre réseau (espaces IP, les passerelles Edge et fournisseurs et réseau privé) depuis le control panel VCD on OVHcloud.**
+**Ce guide vous montre comment créer, configurer et gérer efficacement votre réseau (espaces IP, les passerelles Edge et fournisseurs et réseau privé) depuis l'interface VCD on OVHcloud.**
 
 ## Prérequis
 
@@ -34,7 +34,7 @@ details[open]>summary::before {
 > Si vous ne savez comment vous connecter au portail web de votre organisation, consultez d'abord le guide « [Comment se connecter à VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging) ».
 >
 
-- Un navigateur Web (avec de préférence avec une base chromium et la traduction activée en Français).
+- Un navigateur Web (avec de préférence avec une base chromium et la traduction activée en français).
 - Avoir un compte VMware Cloud Director on OVHcloud phase Alpha avec les droits suffisants.
 
 Avoir lu les guides VCD : 
@@ -64,7 +64,7 @@ Avant de créer un réseau, le concept principal à comprendre avec VMware Cloud
 
 Pour vous connecter à votre environnement VCD, suivez le guide : [Comment se connecter à VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging).
 
-1\. Cliquez sur : `Réseaux | Espaces IP | Nouveau`{.action}.
+1\. Cliquez sur : `Réseaux`{.action} > `Espaces IP`{.action} > `Nouveau`{.action}.
 
 ![VCD Networking IP Spaces](images/ESPACE_IP.png){.thumbnail}
 
@@ -73,11 +73,11 @@ Vous retrouvez la fenêtre de création **d'Espace IP** pour votre réseau. Nomm
 **Exemple :**
 
 - **Nom :** `Espace IP 01`.
-- **Description :** `Espace IP Privé | Public`.
+- **Description :** `Espace IP Privé > Public`.
 
 ![VCD Networking IP Spaces 01](images/ESPACE_IP_1_1.png){.thumbnail}
 
-2\. Laissez ces options désactivées pour l'instant (retrouvez plus d'information sur le forum de la [communauté d'utilisateurs OVHcloud](/links/community), ou sur le Discord channel : <https://discord.com/invite/ovhcloud>, sur ce qui est couvert par les phases futures).
+2\. Laissez ces options désactivées pour l'instant.
 
 ![VCD Networking IP Spaces 02](images/ESPACE_IP_2.png){.thumbnail}
 
@@ -139,7 +139,7 @@ Cette étape est optionnelle, mais recommandée pour la grande majorité des cas
 
 Nous allons à présent créer un groupe de centre de donnée pour optimiser la gestion de notre réseau grâce à cette nouvelle fonctionnalité VCD.
 
-Allez donc dans la section Mise en réseau en cliquant sur : `Mise en réseaux / Groupe de centre de données`{.action}.
+Allez donc dans la section Mise en réseau en cliquant sur : `Mise en réseaux`{.action} > `Groupe de centre de données`{.action}.
 
 Puis, cliquez sur `NOUVEAU`{.action}.
 
@@ -173,7 +173,7 @@ Cette étape est nécessaire sinon vous ne pourrez pas finir de créer votre ré
 
 Nous allons maintenant créer une **Passerelle Edge** pour que notre espace IP puisse être accédé depuis le réseau privé que nous allons créer dans la troisième partie de cette étape.
 
-Pour accéder à la section Passerelles Edge (Edge Gateway), cliquez sur : `Mise en réseaux | Passerelles Edge`{.action}.
+Pour accéder à la section Passerelles Edge (Edge Gateway), cliquez sur : `Mise en réseaux`{.action} > `Passerelles Edge`{.action}.
 
 Pour créer une nouvelle Passerelle Edge, cliquez sur `NOUVEAU`{.action}.
 
@@ -181,7 +181,7 @@ Pour créer une nouvelle Passerelle Edge, cliquez sur `NOUVEAU`{.action}.
 
 Vous retrouvez la fenêtre de création de **Passerelle Edge** pour votre environnement VCD :
 
-Vous avez ensuite le choix entre le : `Centre de données virtuel d'organisation`{.action} ou `Groupe de centres de données`{.action}.
+Vous avez ensuite le choix entre `Centre de données virtuel d'organisation`{.action} et/ou `Groupe de centres de données`{.action}.
 
 - **Centre de données virtuel de l'organisation** : fournit la connectivité pour les machines virtuelles dans le vDC sélectionné uniquement.
 - **Groupe de datacenters** : fournit la connectivité pour les machines virtuelles de tous les contrôleurs de domaine virtuels participant au groupe de centres de données.
@@ -203,7 +203,7 @@ Cliquez ensuite sur `Utiliser les espaces IP`{.action}.
 
 **Pourquoi ?** 
 
-Cela force l'utilisation des espaces IP aux passerelles Provider, et permet ainsi d'optimiser l'applications des nouvelles techniques intelligentes de gestion de l'espace réseau VCD.
+Cela force l'utilisation des espaces IP aux passerelles Provider, et permet ainsi d'optimiser l'application des nouvelles techniques intelligentes de gestion de l'espace réseau VCD.
 
 Quand vous avez fini, cliquez sur `SUIVANT`{.action}.
 
@@ -221,7 +221,7 @@ Une fois votre choix effectué (étape 3 : Création d'une Passerelle Edge), cli
 
 4\. Choisissez l'option Edge Cluster pour créer cette passerelle edge fournisseur :
 
-Le paramètre `Utiliser le cluster edge du fournisseur Tier-0 Gateway` signifie que le cluster edge de la passerelle fournisseur Tier-0 sélectionnée sera utilisé afin de conserver le chemin réseau le plus court.
+Le paramètre `Utiliser le cluster edge du fournisseur Tier-0 Gateway` permet de conserver le chemin réseau le plus court au sein du cluster edge.
 
 Quand vous avez défini vos réglages, cliquez sur `SUIVANT`{.action}.
 
@@ -241,7 +241,7 @@ Cliquez enfin sur `TERMINER`{.action}.
 
 Nous allons à présent créer un nouveau réseau et joindre nos réglages préconfigurés.
 
-Rendez-vous dans la section Mise en réseau, en cliquant sur `Mise en réseaux | Réseaux`{.action}.
+Rendez-vous dans la section Mise en réseau, en cliquant sur `Mise en réseaux`{.action} > `Réseaux`{.action}.
 
 Puis, cliquez sur `NOUVEAU`{.action}.
 
@@ -313,7 +313,7 @@ S'il a bien été créé, vous le verrez apparaitre automatiquement dans la list
 
 Nous n'avons nullement besoin d'IPv6, c'est pourquoi nous choisissons de laisser cette option désactivée.
 
-Pour continuer (étape 3 : Création d'un réseau privé), cliquez sur : `SUIVANT`{.action}.
+Pour continuer (étape 3 : Création d'un réseau privé), cliquez sur `SUIVANT`{.action}.
 
 ![VCD Networking Network 04](images/NETWORK_4.png){.thumbnail}
 
@@ -398,6 +398,10 @@ Vérifiez les réglages définis puis lancee la création du réseau en cliquant
 
 Votre réseau est maintenant entièrement créé et prêt à l'emploi.
 
+**Glossaire :**
+
+- `CIDR` : CIDR est l’abréviation de Classless Inter-Domain Routing (routage inter domaines sans classes).
+
 ///
 
 ## Aller plus loin
@@ -410,6 +414,4 @@ Si vous rencontrez des difficultés avec le réseau au sein de VCD on OVHcloud, 
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou [cliquez ici](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit nos services Hosted Private Cloud sur le Discord channel dédié : <https://discord.gg/ovhcloud>.
-
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit nos services Hosted Private Cloud sur [Discord](https://discord.gg/ovhcloud).

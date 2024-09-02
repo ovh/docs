@@ -14,8 +14,8 @@ This is generally the most secure and convenient connection method.
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
-- A [dedicated server](https://www.ovhcloud.com/en/bare-metal/) or a [VPS](https://www.ovhcloud.com/en/vps/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](/links/manager)
+- A [dedicated server](/links/bare-metal/bare-metal) or a [VPS](https://www.ovhcloud.com/en/vps/) in your OVHcloud account
 - An SSH client application (command line or GUI)
 - Administrative access (sudo) via SSH to your server
 
@@ -401,6 +401,6 @@ To configure another server connection, repeat the steps:
 
 [VPS rescue mode](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our user community on <https://community.ovh.com/en/>.

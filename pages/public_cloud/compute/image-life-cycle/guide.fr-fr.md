@@ -123,4 +123,4 @@ Ce guide vous informe sur les annonces de fin de vie et de support des [distribu
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

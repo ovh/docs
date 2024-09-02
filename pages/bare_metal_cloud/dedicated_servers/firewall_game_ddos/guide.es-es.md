@@ -24,8 +24,8 @@ Nuestros servidores dedicados Bare Metal para juegos incluyen una protección DD
 
 ## Requerimientos
 
-- Un [servidor dedicado OVHcloud **Game**](https://www.ovhcloud.com/es-es/bare-metal/prices/#filterType=range_element&filterValue=game)
-- Acceso al área de cliente de [OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
+- Un [servidor dedicado OVHcloud **Game**](https://www.ovhcloud.com/es-es/bare-metal/prices/#filterType=range_element&filterValue=game#filterType=range_element&filterValue=game)
+- Acceso al área de cliente de [OVHcloud](/links/manager)
 
 > [!warning]
 > Esta funcionalidad puede no estar disponible o estar limitada en los servidores de la [**Eco** línea de productos](https://eco.ovhcloud.com/es-es/about/).
@@ -133,6 +133,6 @@ Para ello, tendrá que compartir volcados de tráfico de red relevantes como eje
 
 ## Más información <a name="go-further"></a>
 
-Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es-es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
+Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](/links/professional-services) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

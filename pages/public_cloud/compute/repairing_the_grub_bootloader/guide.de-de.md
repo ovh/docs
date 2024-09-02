@@ -14,7 +14,7 @@ Es kann sein, dass Sie den GRUB Bootloader reparieren müssen. In dieser Anleitu
 
 ## In der praktischen Anwendung
 
-Verbinden Sie sich mit der Instanz entweder über VNC im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) oder über SSH.
+Verbinden Sie sich mit der Instanz entweder über VNC im [OVHcloud Kundencenter](/links/manager) oder über SSH.
 
 Geben Sie folgende Befehle ein, um das Dateisystem zu mounten und die Reparatur von GRUB zu starten:
 

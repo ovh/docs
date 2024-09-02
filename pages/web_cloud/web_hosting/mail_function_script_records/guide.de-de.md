@@ -1,7 +1,7 @@
 ---
 title: "Automatische E-Mails eines Webhostings verwalten"
 excerpt: "Erfahren Sie hier, wie Sie über ein Webhosting versendete automatische E-Mails verwalten"
-updated: 2023-12-04
+updated: 2024-08-20
 ---
 
 > [!primary]
@@ -206,7 +206,7 @@ $mail->Host = "eigener.smtp.server";
 $mail->SMTPAuth = true; 
 $mail->SMTPSecure = "ssl";
 $mail->Port = 465; 
-$mail->Username = "email@adresse.tld"; 
+$mail->Username = "email@addresse.tld"; 
 $mail->Password = "IhrPasswort"; 
 ```
 

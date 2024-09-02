@@ -17,7 +17,7 @@ Prywatny serwer wirtualny (VPS) to wirtualny serwer dedykowany. W przeciwieństw
 ## Wymagania początkowe
 
 - Posiadanie serwera [VPS](https://www.ovhcloud.com/pl/vps/) w Panelu klienta OVHcloud
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 
 ## W praktyce
 
@@ -30,7 +30,7 @@ Prywatny serwer wirtualny (VPS) to wirtualny serwer dedykowany. W przeciwieństw
 - [Zabezpiecz Twój serwer VPS](#secure)
 - [Przypisz domenę](#domain)
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer w sekcji `Prywatne serwery wirtualne`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer w sekcji `Prywatne serwery wirtualne`{.action}.
 
 <a name="controlpanel"></a>
 
@@ -137,7 +137,7 @@ Reinstalacja jest możliwa po zalogowaniu się do panelu klienta. Kliknij `...`{
 
 W oknie, które się pojawi, wybierz system operacyjny z rozwijanej listy. Proponowane opcje to obrazy [kompatybilne z serwerem VPS OVHcloud](/pages/public_cloud/compute/image-life-cycle) i są gotowe do użytku natychmiast po instalacji.
 
-Możesz również wybrać **klucz SSH** do zainstalowania w systemie, jeśli wcześniej przechowywałeś go w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Więcej informacji na ten temat znajdziesz w przewodniku Tworzenie i [używanie kluczy SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
+Możesz również wybrać **klucz SSH** do zainstalowania w systemie, jeśli wcześniej przechowywałeś go w Panelu [klienta OVHcloud](/links/manager). Więcej informacji na ten temat znajdziesz w przewodniku Tworzenie i [używanie kluczy SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 
 > [!primary]
 >
@@ -158,7 +158,7 @@ Ponowne uruchomienie może być konieczne w celu zastosowania zaktualizowanych k
 sudo reboot
 ```
 
-Jednak w każdej chwili możesz wykonać "reboot sprzętowy" w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W zakładce `Strona`{.action} główna kliknij `...`{.action} obok `Boot` w sekcji **Twój VPS**. Wybierz `Restart serwera VPS`{.action} i w oknie, które się wyświetli kliknij `Zatwierdź`{.action}.
+Jednak w każdej chwili możesz wykonać "reboot sprzętowy" w Panelu [klienta OVHcloud](/links/manager). W zakładce `Strona`{.action} główna kliknij `...`{.action} obok `Boot` w sekcji **Twój VPS**. Wybierz `Restart serwera VPS`{.action} i w oknie, które się wyświetli kliknij `Zatwierdź`{.action}.
 
 ![Reboot](images/reboot-vps01.png){.thumbnail}
 

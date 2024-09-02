@@ -139,4 +139,4 @@ $ openstack server create --key-name SSHKEY --flavor 98c1e679-5f2c-4069-b4da-4a4
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

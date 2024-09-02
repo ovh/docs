@@ -13,8 +13,8 @@ L'aggrégation se base sur la technologie IEEE 802.3ad, ou Link Aggregation Cont
 
 ## Prérequis
 
-- Disposer d'un [serveur dédié OVHcloud](https://www.ovhcloud.com/fr-ca/bare-metal/)
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
+- Disposer d'un [serveur dédié OVHcloud](/links/bare-metal/bare-metal)
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 - Un système d'exploitation / hyperviseur supportant le protocole d'aggrégation 802.3ad (LACP)
 
 ## En pratique
@@ -28,7 +28,7 @@ L'aggrégation se base sur la technologie IEEE 802.3ad, ou Link Aggregation Cont
 
 ### Configurer OLA dans votre espace client OVHcloud
 
-Pour commencer à configurer OLA, connectez-vous à [votre espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et sélectionnez l'onglet `Bare Metal Cloud`{.action}. Cliquez sur `Serveurs dédiés`{.action} et sélectionnez votre serveur dans la liste.
+Pour commencer à configurer OLA, connectez-vous à [votre espace client OVHcloud](/links/manager){.external} et sélectionnez l'onglet `Bare Metal Cloud`{.action}. Cliquez sur `Serveurs dédiés`{.action} et sélectionnez votre serveur dans la liste.
 
 ![network interfaces](images/network_interfaces2022.png){.thumbnail}
 

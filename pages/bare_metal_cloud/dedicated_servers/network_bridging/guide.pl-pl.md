@@ -10,7 +10,7 @@ updated: 2024-07-15
 
 > [!primary]
 >
-> Od 6 października 2022 nasze rozwiązanie "Failover IP" nazywa się teraz [Additional IP](https://www.ovhcloud.com/pl/network/additional-ip/). To nie ma wpływu na jego funkcje.
+> Od 6 października 2022 nasze rozwiązanie "Failover IP" nazywa się teraz [Additional IP](/links/network/additional-ip). To nie ma wpływu na jego funkcje.
 >
 
 ## Wprowadzenie
@@ -24,7 +24,7 @@ Do konfiguracji wirtualnych maszyn możesz użyć konfiguracji sieci w trybie br
 ## Wymagania początkowe
 
 - Posiadanie serwera dedykowanego z zainstalowanym hypervisorem ([VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox)
-- Posiadanie co najmniej jednego adresu [Additional IP](https://www.ovhcloud.com/pl/bare-metal/ip/) podłączonego do serwera
+- Posiadanie co najmniej jednego adresu [Additional IP](/links/network/additional-ip) podłączonego do serwera
 - Dostęp do [Panelu klienta OVHcloud](/links/manager).
 
 > [!warning]
