@@ -34,3 +34,109 @@ Pour modifier les paramètres d'association d'un nom de domaine/sous-domaine dé
 
 ![Modify domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-2.png){.thumbnail}
 
+La fenêtre suivante s'affiche : 
+
+![Modify domain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-step-1-all-disabled.png){.thumbnail}
+
+Dans la suite de ce guide, vous trouverez un descriptif de chacun des paramètres disponibles dans la fenêtre ci-dessus. Suite à la lecture des différentes descriptions ci-dessous et une fois vos modifications faites, vous pourrez cliquez sur le bouton `Suivant`{.action} situé en bas à droite de la fenêtre afin de passer à l'[étape 2](#step2).
+
+### Étape 1 - Description des paramètres modifiables <a name="step1"></a>
+
+> [!primary]
+>
+> Le formulaire `Nom du domaine`{.action} n'est pas modifiable car il s'agit d'une modification des paramètres du nom de domaine associé à l'hébergement. 
+>
+
+#### Modifier le « dossier racine »
+
+> [!primary]
+>
+> Pour modifier le `Dossier racine`{.action} déclaré pour votre nom de domaine et si une configuration existe avec Git pour ce même nom de domaine, vous devrez au préalable supprimez cette configuration.
+>
+> Si une configuration existe avec Git, un message apparaîtra juste en dessous du formulaire :
+>
+> ![Modify domain associed with git](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-step-1-all-disabled-git-message.png){.thumbnail}
+>
+> Pour supprimer la configuration Git d'un nom de domaine/sous-domaine associé à votre hébergement, consultez notre guide « [Configurer et utiliser Git avec son hébergement web OVHcloud](/pages/web_cloud/web_hosting/git_integration_webhosting) ».
+>
+
+Le formulaire `Dossier racine`{.action} indique le nom du dossier contenant les éléments qui s'affichent avec votre nom de domaine. Cela peut être, par exemple, un dossier qui contient votre site web.
+
+Au cours de l'utilisation de vos services, vous pouvez être amenés à devoir changer le `Dossier racine`{.action} déclaré pour votre nom de domaine. Cela peut survenir lorsque, par exemple :
+
+- Vous avez développé un nouveau site web dans un nouveau dossier présent dans l'espace de stockage FTP de votre hébergement web. 
+- Vous souhaitez rediriger votre nom de domaine vers un dossier vide pour ensuite y placer un nouveau site web.
+- Etc.
+
+C'est donc dans ce formulaire que vous devrez remplacer le nom du dossier pré-rempli par le nom du nouveau dossier souhaité.
+
+> [!success]
+>
+> Si vous renseignez un nom de dossier inexistant dans l'espace de stockage FTP de votre hébergement web, celui-ci sera automatiquement créé par nos robots dans votre espace de stockage FTP.
+>
+
+#### Autres options disponibles
+
+##### L'option « SSL »
+
+Cochez/décochez cette case uniquement si vous souhaitez activer/désactiver le SSL gratuit Let's Encrypt pour votre nom de domaine/sous-domaine. Il n'est pas nécessaire de cochez cette case poru les autres offres SSL proposées chez OVHcloud.
+
+Retrouvez plus d'informations sur les options/offres SSL disponibles dans notre documentation dédiée « [Gérer un certificat SSL sur son hébergement web](/pages/web_cloud/web_hosting/ssl_on_webhosting) ».
+
+##### L'option « Activer CDN »
+
+Cette option n'est disponible que si vous avez souscrit à une offre CDN OVHcloud ou si vous disposez d'une offre d'hébergement web Performance.
+
+Cochez/décochez cette case pour activer/désactiver l'option CDN pour votre nom de domaine/sous-domaine.
+
+Retrouvez plus d'informations sur les options/offres CDN disponibles dans notre documentation dédiée « [Accélérer mon site web en utilisant le CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn) ».
+
+##### L'option « IP du pays »
+
+Cette option est principalement utilisée pour les sites web dont le public cible est situé à l'étranger. Cela permet d'améliorer le référencement SEO du site web dans le pays choisi.
+
+Retrouvez plus d'informations sur les options/offres CDN disponibles dans notre documentation dédiée « [Geolocaliser votre site web dans un pays spécifique](/pages/web_cloud/web_hosting/multisites_geolocation) ».
+
+##### L'option « Activer le firewall »
+
+Cette option permet de filtrer les requêtes entrantes pour protéger votre hébergement web des attaques les plus courantes.
+
+Retrouvez plus d'informations sur les options/offres CDN disponibles dans notre documentation dédiée « [Activation du pare-feu applicatif](/pages/web_cloud/web_hosting/multisites_activating_application_firewall) ».
+
+##### L'option « Logs séparés »
+
+Cochez/décochez cette option uniquement si vous souhaitez séparer les logs de votre nom de domaine des autres noms de domaines déclarés en parallèle sur votre hébergement web.
+
+Concernant cette option, apprenez-en plus grâce à notre [page sur les statistiques détaillées](/links/web/hosting-traffic-analysis){.external}
+
+Une fois vos modifications faites, vous pourrez cliquez sur le bouton `Suivant`{.action} situé en bas à droite de la fenêtre afin de passer à l'[étape 2](#step2).
+
+### Étape 2 - Résumé des modifications <a name="step2"></a>
+
+Une fois que vous avez cliqué sur le bouton `Suivant`{.action}, vous retrouvez un résumé des paramètres que vous vous apprêtez à appliquer à votre nom de domaine.
+
+![Modify domain resume](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-step2.png){.thumbnail}
+
+Si l'ensemble des paramètres sont configurés selon vos souhaits, cliquez sur le bouton `Confirmer`{.action}.
+
+Les modifications peuvent prendre de quelques minutes à quelques heures. Ceci en fonction des modifications demandées précédemment.
+
+Si, pour les options SSL, CDN, IP du pays et logs séparés ne sont pas prises en compte au bout de 24 heures, nous vous invitons à consultez les guides et pages indiquées pour chacunes des options décrites dans l'[étape 1](#step1). Ceci afin de vérifier que toutes les actions nécessaires ont bien été suivies et réalisées.
+
+## Aller plus loin
+
+[Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+
+[Gérer un certificat SSL sur son hébergement web](/pages/web_cloud/web_hosting/ssl_on_webhosting).
+
+[Accélérer mon site web en utilisant le CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
+
+[Geolocaliser votre site web dans un pays spécifique](/pages/web_cloud/web_hosting/multisites_geolocation).
+
+[Activer le pare-feu applicatif](/pages/web_cloud/web_hosting/multisites_activating_application_firewall).
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).
