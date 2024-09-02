@@ -50,6 +50,8 @@ Vous pouvez paramétrer plusieurs enregistrements MX pour un même nom de domain
 
 Retrouvez ci-dessous la configuration MX OVHcloud à utiliser pour nos solutions MX Plan (seule ou incluse dans une offre d’[hébergement web OVHcloud](/links/web/hosting)), [E-mail Pro](/links/web/email-pro) et [Exchange](/links/web/emails). Nos serveurs e-mail disposent d'un antispam et d'un antivirus intégré.
 
+Ces valeurs sont communes à toutes ces offres, à l'exception de [Private Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_private) et Dedicated Exchange.
+
 |Domaine|TTL|Type d'enregistrement|Priorité|Cible|
 |---|---|---|---|---|
 |*laisser vide*|3600|MX|1|mx0.mail.ovh.net.|

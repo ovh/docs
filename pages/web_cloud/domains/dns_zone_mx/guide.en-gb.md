@@ -50,6 +50,8 @@ You can set up multiple MX records for the same domain name. It is then necessar
 
 Below, you will find the OVHcloud MX configuration to use for our MX Plan solutions (MX Plan standalone or included in an [OVHcloud web hosting](/links/web/hosting) plan), [Email Pro](/links/web/email-pro) and [Exchange](/links/web/emails). Our email servers have antispam and antivirus integrated.
 
+These values are common to all of these solutions, with the exception of [Private Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_private) and Dedicated Exchange.
+
 |Domain|TTL|Record type|Priority|Target|
 |---|---|---|---|---|
 |*leave blank*|3600|MX|1|mx0.mail.ovh.net.|
