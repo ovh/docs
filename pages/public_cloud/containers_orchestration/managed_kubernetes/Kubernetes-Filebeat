@@ -1,0 +1,159 @@
+# Deploying and Configuring Filebeat on Kubernetes for OVHcloud Logs Data Platform
+
+## Objective
+
+This guide explains how to deploy and configure Filebeat on a Kubernetes cluster to collect and forward logs to the OVHcloud Logs Data Platform. It will cover the setup process, customization options, and best practices for managing logs in a Kubernetes environment.
+
+## Requirements
+
+Before starting, ensure you have the following:
+
+1. **OVHcloud Logs Data Platform Account**: Ensure your account is activated and you have at least one Stream and its associated token.
+2. **Kubernetes Cluster**: A running Kubernetes cluster with administrative access.
+3. **kubectl**: The Kubernetes command-line tool, installed and configured.
+4. **Filebeat Version**: This guide uses Filebeat OSS version 7.12.1, which is compatible with OpenSearch.
+5. **Basic Knowledge**: Familiarity with Kubernetes, Docker, and YAML configuration files.
+
+## Instructions
+
+### Step 1: Prepare the Filebeat Deployment Manifest
+
+1. **Download the Filebeat Kubernetes Manifest**:
+   - Fetch the official Filebeat manifest for Kubernetes:
+     ```bash
+     curl -L -O https://raw.githubusercontent.com/elastic/beats/8.15/deploy/kubernetes/filebeat-kubernetes.yaml
+     ```
+
+2. **Modify the Filebeat ConfigMap**:
+   - Open the `filebeat-kubernetes.yaml` file and locate the `ConfigMap` section. Update the configuration to match your environment:
+
+     ```yaml
+     apiVersion: v1
+     kind: ConfigMap
+     metadata:
+       name: filebeat-config
+       namespace: kube-system
+     data:
+       filebeat.yml: |-
+         filebeat.inputs:
+         - type: container
+           paths:
+             - /var/log/containers/*.log
+           processors:
+             - add_kubernetes_metadata:
+                 host: ${NODE_NAME}
+                 matchers:
+                 - logs_path:
+                     logs_path: "/var/log/containers/"
+
+         processors:
+           - add_cloud_metadata:
+           - add_host_metadata:
+
+         output.elasticsearch:
+           hosts: ['${ELASTICSEARCH_HOST:elasticsearch}:${ELASTICSEARCH_PORT:9200}']
+           username: ${ELASTICSEARCH_USERNAME}
+           password: ${ELASTICSEARCH_PASSWORD}
+     ```
+
+3. **Update Environment Variables**:
+   - In the DaemonSet section, set the environment variables to connect Filebeat to your Elasticsearch instance or the OVHcloud Logs Data Platform:
+     ```yaml
+     env:
+       - name: ELASTICSEARCH_HOST
+         value: "<your-cluster>.logs.ovh.com"
+       - name: ELASTICSEARCH_PORT
+         value: "9200"
+       - name: ELASTICSEARCH_USERNAME
+         value: "<your-ldp-username-or-token>"
+       - name: ELASTICSEARCH_PASSWORD
+         value: "<your-password-or-token>"
+     ```
+
+4. **Security and Permissions**:
+   - Ensure the necessary permissions by defining a `ClusterRole`, `ClusterRoleBinding`, and `ServiceAccount`. This setup allows Filebeat to access necessary Kubernetes resources.
+
+5. **Run on Control Plane Nodes** (Optional):
+   - To deploy Filebeat on control plane nodes, add the following tolerations in the DaemonSet spec:
+     ```yaml
+     spec:
+       tolerations:
+       - key: node-role.kubernetes.io/control-plane
+         effect: NoSchedule
+     ```
+
+6. **Red Hat OpenShift Configuration** (Optional):
+   - If using OpenShift, update the `securityContext` in the DaemonSet spec to run as a privileged user:
+     ```yaml
+     securityContext:
+       runAsUser: 0
+       privileged: true
+     ```
+
+### Step 2: Deploy Filebeat to Kubernetes
+
+1. **Apply the Manifest**:
+   - Deploy the Filebeat DaemonSet by applying the manifest:
+     ```bash
+     kubectl apply -f filebeat-kubernetes.yaml
+     ```
+
+2. **Verify Deployment**:
+   - Check the status of the Filebeat DaemonSet to ensure all pods are running:
+     ```bash
+     kubectl --namespace=kube-system get ds/filebeat
+     ```
+
+   - Confirm that logs are being sent to the OVHcloud Logs Data Platform by inspecting the Filebeat pod logs:
+     ```bash
+     kubectl logs -n kube-system <filebeat-pod-name>
+     ```
+
+### Step 3: Advanced Configuration (Optional)
+
+1. **Enable JSON Parsing**:
+   - If your applications log in JSON format, configure Filebeat to parse these logs:
+     ```yaml
+     filebeat.inputs:
+     - type: container
+       paths:
+         - /var/log/containers/*.log
+       json.keys_under_root: true
+       json.add_error_key: true
+       json.message_key: message
+     ```
+
+2. **Autodiscover Configuration**:
+   - Enable autodiscovery to dynamically adjust Filebeat based on your Kubernetes environment:
+     ```yaml
+     filebeat.autodiscover:
+       providers:
+         - type: kubernetes
+           node: ${NODE_NAME}
+           hints.enabled: true
+           hints.default_config:
+             type: container
+             paths:
+               - /var/log/containers/*.log
+     ```
+
+### Step 4: Monitor and Manage Filebeat
+
+1. **Monitor Performance**:
+   - Regularly check Filebeat logs and monitor its performance using Kubernetes monitoring tools.
+
+2. **Update Filebeat**:
+   - Keep Filebeat up-to-date by regularly checking for new versions and updating your deployment accordingly.
+
+3. **Log Rotation**:
+   - Implement log rotation strategies to prevent issues like log duplication or data loss.
+
+## Go further
+
+For more advanced configurations and troubleshooting tips, refer to the following resources:
+
+- [Running Filebeat on Kubernetes](https://www.elastic.co/guide/en/beats/filebeat/current/running-on-kubernetes.html)
+- [OVHcloud Logs Data Platform Documentation](https://help.ovhcloud.com/csm/fr-logs-data-platform-filebeat-logs?id=kb_article_view&sysparm_article=KB0050056)
+- [Join our community of users on OVHcloud](https://community.ovh.com/en/)
+
+This guide provides a comprehensive approach to deploying and managing Filebeat on your Kubernetes cluster, ensuring efficient log management with OVHcloud’s Logs Data Platform.
