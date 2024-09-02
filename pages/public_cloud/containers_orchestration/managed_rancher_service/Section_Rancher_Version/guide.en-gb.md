@@ -16,8 +16,8 @@ The following documentation provides an overview of the estimated release schedu
 
 | Rancher version | Upstream release date | MRS release date | End of life |
 |-----------------|-----------------------|------------------|-------------|
-| 2.9             | 2024-07-30            | Q4-2024          | Q1-26       |
-| 2.8             | 2023-12-13            | 2024-03-25       | Q3-25       |
+| 2.9             | 2024-07-30            | Q4-2024          | Q1-2026     |
+| 2.8             | 2023-12-13            | 2024-03-25       | Q3-2025     |
 | 2.7             | 2023-08-15            | 2023-12-06       | Q4-2024     |
 
 **MRS release date:** Estimated date when this Rancher version is available for OVHcloud Managed Rancher Service.
