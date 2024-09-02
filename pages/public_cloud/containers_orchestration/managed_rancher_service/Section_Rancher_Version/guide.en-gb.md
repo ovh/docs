@@ -1,7 +1,7 @@
 ---
 title: 'Comprehensive Guide to OVHcloud Managed Rancher Service'
 excerpt: 'A complete guide including release calendar, supported versions, responsibility model, and lifecycle policies for OVHcloud Managed Rancher Service.'
-updated: 2024-07-31
+updated: 2024-09-02
 ---
 
 ## Objective
