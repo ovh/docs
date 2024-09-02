@@ -59,8 +59,6 @@ OVHcloud's Managed Rancher Service adheres to strict lifecycle policies to ensur
 
 **End-of-Life (EoL):** The point at which a specific Rancher version is no longer supported by OVHcloud. Clusters running EoL versions will be automatically upgraded to the next supported version.
 
-For more detailed lifecycle policies, see the [MRS lifecycle policies documentation](https://help.ovhcloud.com/csm/en-ie-public-cloud-kubernetes-eos-eol-policies?id=kb_article_view&sysparm_article=KB0049743).
-
 ## Go Further
 
 Join our community of users on <https://community.ovh.com/en/>.
