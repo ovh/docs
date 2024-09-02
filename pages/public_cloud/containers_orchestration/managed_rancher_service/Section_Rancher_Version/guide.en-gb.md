@@ -38,18 +38,7 @@ Depending on the version of Rancher, the following versions of the Managed Kuber
 
 For more details on compatibility, refer to the [SUSE support matrix](https://www.suse.com/suse-rancher/support-matrix/all-supported-versions/rancher-v2-8-5/).
 
-### Step 3: Responsibility Model
-
-The responsibility model for OVHcloud's Managed Rancher Service clarifies the shared responsibilities between OVHcloud and the customer. This model helps reduce the customer's operational burden by delineating roles and responsibilities for various activities related to the installation, management, and maintenance of Rancher clusters.
-
-#### RACI Definition
-
-- **R**: Responsible for carrying out the process.
-- **A**: Accountable for the successful completion of the process.
-- **C**: Consulted during the process.
-- **I**: Informed of the results of the process.
-
-### Step 4: MRS Lifecycle Policies
+### Step 3: MRS Lifecycle Policies
 
 OVHcloud's Managed Rancher Service adheres to strict lifecycle policies to ensure the reliability and security of your Kubernetes clusters. New stable versions are regularly released and certified by the Cloud Native Computing Foundation (CNCF). Older versions may reach their End-of-Sale (EoS) or End-of-Life (EoL) status based on the lifecycle of underlying community support. Understanding these policies helps customers plan for upgrades and transitions to newer versions.
 
