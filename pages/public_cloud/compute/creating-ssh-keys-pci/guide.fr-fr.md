@@ -6,7 +6,7 @@ updated: 2024-09-02
 
 ## Objectif
 
-L'utilisation du protocole SSH ouvre un canal sécurisé sur un réseau non sécurisé dans une architecture client-serveur, en connectant un client SSH à un serveur SSH. La création d'un jeu de clés SSH vous permet d'obtenir une clé publique et une clé privée. Vous pouvez placer la clé publique sur un serveur puis vous y connecter avec un client qui possède la clé privée correspondante. Si les clés SSH publique et privée correspondent, vous serez connecté sans avoir besoin d'un mot de passe.
+L'utilisation du protocole SSH ouvre un canal sécurisé sur un réseau non sécurisé dans une architecture client-serveur, en connectant un client SSH à un serveur SSH. La création d'un jeu de clés SSH vous permet d'obtenir une clé publique et une clé privée. Vous pouvez stocker la clé publique sur un serveur puis vous y connecter avec un client qui possède la clé privée correspondante. Si les clés SSH publique et privée correspondent, vous serez connecté sans avoir besoin d'un mot de passe.
 
 Il s’agit généralement de la méthode de connexion la plus sûre et la plus pratique, ainsi que de la méthode par défaut sur les instances Public Cloud.
 
@@ -15,13 +15,13 @@ Il s’agit généralement de la méthode de connexion la plus sûre et la plus 
 ## Prérequis
 
 - Un [projet Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
-- Accès à l’[espace client OVHcloud](/links/manager)
+- Être connecté à l’[espace client OVHcloud](/links/manager)
 - Une application client SSH (ligne de commande ou GUI)
 
 > [!primary]
 > Ce guide ne s'applique pas aux installations **Windows Server** standard, car elles reposent sur le protocole `Remote Desktop Protocol` (RDP) pour les connexions.
 >
-> Plus d’informations dans notre [guide sur la création d’une instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps).
+> Retrouvez plus d’informations dans notre [guide sur la création d’une instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps).
 >
 
 ## En pratique
@@ -76,19 +76,19 @@ Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user/.ssh/id_rsa):
 ```
 
-Vous pouvez confirmer avec `Enter` pour accepter le nom de fichier proposé ou entrer un nom individuel. Ceci est pertinent si plusieurs paires de clés sont placées dans le répertoire `.ssh`. Vous trouverez plus d'informations à ce sujet dans la section [Gérer plusieurs clés SSH](#multiplekeys).  
+Vous pouvez confirmer avec `Enter` pour accepter le nom de fichier proposé ou saisir un autre nom. Ceci est pertinent si plusieurs paires de clés sont placées dans le répertoire `.ssh`. Retrouvez plus d'informations à ce sujet dans la section [Gérer plusieurs clés SSH](#multiplekeys).
 Cet exemple utilise les noms de fichiers standard `id_rsa` et `id_rsa.pub`.
 
-Vous pouvez protéger votre clé SSH avec une phrase secrète à l'invite suivante. Ceci est recommandé pour plus de sécurité.
+Vous pouvez protéger votre clé SSH avec une phrase secrète (*passphrase*) à l'invite suivante. Ceci est recommandé pour plus de sécurité.
 
 > [!warning]
 >
 > L’accès à distance à votre serveur est aussi sécurisé que le périphérique client stockant la clé privée. La protection de votre appareil et de vos fichiers contre les accès non autorisés est donc cruciale lors de l'utilisation de clés SSH.
 >
-> Pour des raisons de commodité et de sécurité, envisagez d’utiliser un gestionnaire de mots de passe sur votre appareil, comme la solution open source « Keepass ».
+> Pour des raisons de commodité et de sécurité, nous vous recommandons d'utiliser un gestionnaire de mots de passe sur votre appareil, comme la solution open source « Keepass ».
 >
 
-Toutes les clés SSH doivent être stockées dans le répertoire `.ssh`. Les fichiers de clé publique auront `.pub` ajouté au nom de fichier.
+Toutes les clés SSH doivent être stockées dans le répertoire `.ssh`. Les fichiers de clé publique auront le suffixe `.pub` ajouté au nom de fichier.
 
 ```console
 Your identification has been saved in /home/user/.ssh/id_rsa.
@@ -111,7 +111,7 @@ The key's randomart image is:
 
 <a name="publickey"></a>
 
-Afin d'afficher et d'exporter votre clé publique, utilisez la commande `cat` sur votre fichier de clé `.pub`. Copiez cette chaîne de clé dans [ajouter à une nouvelle instance](/pages/public_cloud/compute/public-cloud-first-steps#create-instance) ou dans [importer dans l’espace client OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps#import-ssh).
+Afin d'afficher et d'exporter votre clé publique, utilisez la commande `cat` sur votre fichier de clé `.pub`. Copiez cette chaîne de clé pour l'[ajouter à une nouvelle instance](/pages/public_cloud/compute/public-cloud-first-steps#create-instance) ou pour l'[importer dans l’espace client OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps#import-ssh).
 
 ```bash
 cat ~/.ssh/id_rsa.pub
@@ -125,7 +125,7 @@ i4ANmLy7NULWK36yU0Rp9bFJ4o0/4PTkZiDCsK0QyHhAJXdLN7ZHpfJtHIPCnexmwIMLfIhCWhO5
 
 > [!primary]
 >
-> Dans un terminal **MacOS**, vous pouvez utiliser les commandes `pbcopy` et `pbpaste` pour gérer des chaînes de touches plus rapidement. Par exemple, utilisez cette commande pour copier la clé du fichier `id_rsa.pub` dans le Presse-papiers :
+> Dans un terminal **macOS**, vous pouvez utiliser les commandes `pbcopy` et `pbpaste` pour gérer des chaînes de touches plus rapidement. Par exemple, utilisez cette commande pour copier la clé du fichier `id_rsa.pub` dans le presse-papiers :
 >
 > `pbcopy < ~/.ssh/id_rsa.pub`
 >
@@ -144,13 +144,13 @@ more id_rsa.pub
 cat id_rsa.pub
 ```
 
-Copiez cette chaîne de clé dans [ajouter à une nouvelle instance](/pages/public_cloud/compute/public-cloud-first-steps#create-instance) ou dans [importer dans l’espace client OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps#import-ssh).
+Copiez cette chaîne de clé pour l'[ajouter à une nouvelle instance](/pages/public_cloud/compute/public-cloud-first-steps#create-instance) ou pour l'[importer dans l’espace client OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps#import-ssh).
 
 > [!primary]
 >
-> **Utilisation du Presse-papiers**
+> **Utilisation du presse-papiers**
 >
-> Lorsque vous travaillez en ligne de commande sous **Windows**, faites un `clic droit` pour **coller** le contenu du Presse-papiers dans la fenêtre de ligne de commande. Pour **copier** une chaîne à partir de la fenêtre de ligne de commande, mettez-la en surbrillance avec votre souris puis appuyez sur la touche `Entrée`. Vous pouvez également retrouver ces fonctions via un `clic droit` sur la barre de menu.
+> Lorsque vous travaillez en ligne de commande sous **Windows**, faites un `clic droit` pour **coller** le contenu du presse-papiers dans la fenêtre de ligne de commande. Pour **copier** une chaîne à partir de la fenêtre de ligne de commande, mettez-la en surbrillance avec votre souris puis appuyez sur la touche `Entrée`. Vous pouvez également retrouver ces fonctions via un `clic droit` sur la barre de menu.
 >
 
 <a name="useputty"></a>
@@ -180,18 +180,18 @@ La clé est prête lorsque la barre de progression est pleine.
 
 ![putty key](/pages/assets/screens/other/web-tools/putty/puttygen_03.png){.thumbnail}
 
-Copiez cette chaîne de clé dans [ajouter à une nouvelle instance](/pages/public_cloud/compute/public-cloud-first-steps#create-instance) ou dans [importer dans l’espace client OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps#import-ssh).
+Copiez cette chaîne de clé pour l'[ajouter à une nouvelle instance](/pages/public_cloud/compute/public-cloud-first-steps#create-instance) ou pour l'[importer dans l’espace client OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps#import-ssh).
 
-Enregistrez les deux clés en tant que fichiers en cliquant sur les boutons correspondants et entrez également une phrase secrète pour les protéger.
+Enregistrez les deux clés en tant que fichiers en cliquant sur les boutons correspondants et entrez également une phrase secrète (*passphrase*) pour les protéger.
 
 > [!warning]
 >
 > L'accès distant à votre instance est aussi sécurisé que le périphérique client stockant la clé privée. La protection de votre appareil et de vos fichiers contre les accès non autorisés est donc cruciale lors de l'utilisation de clés SSH.
 >
-> Pour des raisons de commodité et de sécurité, envisagez d’utiliser un gestionnaire de mots de passe sur votre appareil, comme la solution open source `KeePass`.
+> Pour des raisons de commodité et de sécurité, nous vous recommandons d'utiliser un gestionnaire de mots de passe sur votre appareil, comme la solution open source `KeePass`.
 >
 
-L'un des avantages d'utiliser `PuTTY` est la possibilité d'enregistrer différentes connexions sous le nom de `Sessions`. Retrouvez plus d'informations ci-dessous dans la section [Gestion de plusieurs clés SSH sur votre appareil local](#puttykeys).
+L'un des avantages de l'utilisation de `PuTTY` est la possibilité d'enregistrer différentes connexions sous le nom de `Sessions`. Retrouvez plus d'informations ci-dessous dans la section [Gestion de plusieurs clés SSH sur votre appareil local](#puttykeys).
 
 <a name="multiplekeys"></a>
 
@@ -228,7 +228,7 @@ ssh -i ~/.ssh/myInstance_rsa ubuntu@203.0.113.100
 
 Comme indiqué dans les sections précédentes, les mêmes instructions fonctionneront sur un client **Windows**. Remplacez uniquement `~/` par le chemin d'accès de votre dossier utilisateur **Windows**, par défaut `C:\Users\WindowsUsername\`. Par exemple : `ssh -i C:\Users\Username\.ssh/myVPS_rsa ubuntu@203.0.113.100`.
 
-#### Utilisation du fichier « config »
+#### Via un fichier « config »
 
 L'alternative à l'ajout de l'option `-i` à chaque fois consiste à modifier un fichier nommé `config` dans le dossier `~/.ssh` (`\Users\Username\.ssh` pour **Windows**). Il permet de configurer les détails des différentes connexions (nom d'utilisateur, port, fichier de clé, paramètres optionnels, etc.)
 
@@ -246,7 +246,8 @@ config    id_rsa    id_rsa.pub    known_hosts     known_hosts.old
 
 Avec le fichier `config`, plusieurs connexions SSH peuvent être stockées avec leurs paramètres individuels, en plus des valeurs standard. L’exploitation de tout le potentiel de ce fichier peut devenir complexe, car elle est particulièrement utile pour les utilisateurs expérimentés qui gèrent plusieurs serveurs sur une base régulière.
 
-Voici un exemple simple pour vous expliquer comment configurer une connexion SSH à une instance.  
+Voici un exemple simple pour vous expliquer comment configurer une connexion SSH à une instance.
+
 Ouvrez le fichier et ajoutez les lignes suivantes en haut :
 
 ```console
@@ -261,7 +262,7 @@ Vous pourrez ensuite vous connecter à l'instance avec le nom d'alias que vous a
 ssh ubuntu@instance
 ```
 
-Seules l'IP du serveur et le fichier de clé ont été spécifiés dans l'exemple précédent, mais des détails supplémentaires peuvent être ajoutés.  
+Seules l'IP du serveur et le fichier de clé ont été spécifiés dans l'exemple précédent, mais des détails supplémentaires peuvent être ajoutés.
 Pour configurer une connexion SSH à un second serveur avec le nom d'utilisateur « rocky », le port SSH modifié « 49160 » et la clé privée dans le fichier « myserver_rsa », étendez le contenu du fichier comme indiqué dans cet exemple :
 
 ```console
@@ -286,7 +287,7 @@ Vous pouvez consulter la [page `man` correspondante](https://manpages.org/ssh_co
 
 <a name="puttykeys"></a>
 
-#### Using PuTTY
+#### Via PuTTY
 
 `PuTTY` peut enregistrer les informations d'identification et les paramètres d'une connexion SSH en tant que `Session`. Cela vous permet également de vous connecter à différents serveurs à l'aide de clés individuelles.
 
@@ -309,7 +310,6 @@ Dès à présent, vous pouvez cliquer sur cet élément de `Session` et ouvrir u
 Pour ajouter des clés SSH pour d'autres utilisateurs accédant à votre instance, répétez les étapes de création de clé mais utilisez le dossier `$HOME` approprié ou **Windows** `Users` de l'utilisateur en question pour créer et stocker les clés SSH (ou exécuter les commandes sur l'appareil dédié de cette personne).
 
 Consultez notre [guide dédié](/pages/public_cloud/compute/configuring_additional_ssh_keys) pour une explication détaillée de ces étapes.
-
 
 <a name="gofurther"></a>
 
