@@ -1,7 +1,7 @@
 ---
 title: 'Primeiros passos com o serviço Hosted Exchange'
 excerpt: 'Como configurar pela primeira vez um serviço Hosted Exchange'
-updated: 2023-03-06
+updated: 2024-09-03
 ---
 
 > [!primary]
@@ -140,7 +140,7 @@ Se for a primeira vez que acede ao OWA com este endereço de e-mail, ser-lhe-á 
 >
 > Os fusos horários estão listados de acordo com [a norma UTC (tempo universal coordenado)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), e não por ordem alfabética das cidades.
 >
-> **Exemplo** : Para a Europa Ocidental, é a fração UTC +1 (Bruxelas, Copenhaga, Madrid, Paris).
+> **Exemplo** : Para a Europa Ocidental, trata-se de UTC +1 (Bruxelas, Copenhaga, Madrid, Paris).
 
 Se quiser, também pode configurar o seu endereço de e-mail num software (cliente) de correio eletrónico ou dispositivo externo (smartphone ou tablet), [consulte os manuais da OVHcloud](/products/web-cloud-email-collaborative-solutions-microsoft-exchange). Para uma utilização otimizada do seu endereço Exchange num software, certifique-se de que seja compatível com o serviço.
 

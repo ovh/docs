@@ -1,7 +1,7 @@
 ---
 title: 'Iniziare a utilizzare Hosted Exchange'
 excerpt: 'Scopri come configurare un Hosted Exchange'
-updated: 2023-03-06
+updated: 2024-09-03
 ---
 
 > [!primary]
@@ -140,7 +140,7 @@ Se è la prima volta che ti connetti a OWA con questo indirizzo email, ti verrà
 >
 > I fusi orari sono elencati secondo [la norma UTC (Coordinated Universal Time)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png) e non in ordine alfabetico di città.
 >
-> **Esempio** : Per l'Europa occidentale, si tratta della rata UTC +1 (Bruxelles, Copenaghen, Madrid, Parigi).
+> **Esempio** : Per l'Europa occidentale, si tratta di UTC +1 (Bruxelles, Copenaghen, Madrid, Parigi).
 
 Per configurare l’account email su un client di posta o un dispositivo (ad esempio smartphone o tablet), [consulta la documentazione](/products/web-cloud-email-collaborative-solutions-microsoft-exchange). Per un utilizzo ottimale del tuo account Exchange, assicurati che il client di posta scelto sia compatibile con il servizio.
 

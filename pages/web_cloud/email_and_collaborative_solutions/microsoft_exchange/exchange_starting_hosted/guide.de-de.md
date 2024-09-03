@@ -1,7 +1,7 @@
 ---
 title: 'Erste Schritte mit Hosted Exchange'
 excerpt: 'Erfahren Sie hier, wie Sie Ihren Hosted Exchange Dienst konfigurieren'
-updated: 2023-03-06
+updated: 2024-09-03
 ---
 
 > [!primary]

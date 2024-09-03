@@ -137,13 +137,13 @@ Si c'est la première fois que vous vous connectez à OWA avec cette adresse e-m
 >
 > Les fuseaux horaires sont listés selon [la norme UTC (temps universel coordonné)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), et non par ordre alphabétique des villes.
 >
-> **Exemple** : Pour l'Europe de l'Ouest, c'est la tranche UTC +1 (Bruxelles, Copenhague, Madrid, Paris).
+> **Exemple** : Pour l'Europe de l'Ouest, il s'agit de UTC +1 (Bruxelles, Copenhague, Madrid, Paris).
 
 Si vous souhaitez configurer votre adresse e-mail sur un logiciel de messagerie ou un périphérique comme un smartphone ou une tablette, [consultez notre documentation](/products/web-cloud-email-collaborative-solutions-microsoft-exchange). Pour une utilisation optimale de votre adresse Exchange sur un logiciel, assurez-vous de sa bonne compatibilité avec le service.
 
 OVHcloud propose, depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), des licences Outlook en option avec votre compte e-mail Exchange.
 
-Pour y souscrire, consultez notre page « [Obtenir une licence Outlook pour Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/office_outlook_license) ». 
+Pour y souscrire, consultez notre page « [Obtenir une licence Outlook pour Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/office_outlook_license) ».
 
 Vous pouvez également obtenir des [licences Office 365 sur notre site](https://www.ovhcloud.com/fr/collaborative-tools/microsoft-365/). Nous vous recommandons l'une de ces solutions si vous souhaitez bénéficier du logiciel de messagerie Outlook ou de plus de logiciels de la suite Office, selon vos besoins.
 

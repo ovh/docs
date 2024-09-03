@@ -1,7 +1,7 @@
 ---
 title: 'Primeros pasos con la solución Email Pro'
 excerpt: 'Descubra cómo configurar por primera vez la solución Email Pro'
-updated: 2024-06-13
+updated: 2024-09-03
 ---
 
 > [!primary]
@@ -158,7 +158,7 @@ Si es la primera vez que inicia sesión en OWA con esta dirección de correo ele
 >
 > Las zonas horarias se enumeran según [el estándar UTC (hora universal coordinada)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), no por orden alfabético de ciudades.
 >
-> **Ejemplo** : Para Europa Occidental, es el tramo UTC +1 (Bruselas, Copenhague, Madrid, París).
+> **Ejemplo** : Para Europa Occidental, se trata de UTC +1 (Bruselas, Copenhague, Madrid, París).
 
 Para configurar su dirección de correo electrónico en un cliente de correo o en un dispositivo (_teléfono inteligente_ o tableta), consulte nuestras [guías de configuración](/products/web-cloud-email-collaborative-solutions-email-pro). A continuación, se indican los parámetros necesarios para configurar una cuenta E-mail Pro:
 

@@ -1,7 +1,7 @@
 ---
 title: 'Iniziare a utilizzare la soluzione Email Pro'
 excerpt: 'Questa guida ti mostra come eseguire le prime operazioni sul servizio Email Pro'
-updated: 2024-06-13
+updated: 2024-09-03
 ---
 
 > [!primary]
@@ -156,7 +156,7 @@ Se è la prima volta che ti connetti a OWA con questo indirizzo email, ti verrà
 >
 > I fusi orari sono elencati secondo [la norma UTC (Coordinated Universal Time)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png) e non in ordine alfabetico di città.
 >
-> **Esempio** : Per l'Europa occidentale, si tratta della rata UTC +1 (Bruxelles, Copenaghen, Madrid, Parigi).
+> **Esempio** : Per l'Europa occidentale, si tratta di UTC +1 (Bruxelles, Copenaghen, Madrid, Parigi).
 
 Per configurare l’account su un altro client di posta o dispositivi come _smartphone_ e tablet, [è possibile trovare alcune informazioni utili nelle nostre guide disponibili online](/products/web-cloud-email-collaborative-solutions-email-pro). Se non conosci i parametri necessari alla configurazione dell’account email, ecco i valori da utilizzare:
 

@@ -1,7 +1,7 @@
 ---
 title: 'Pierwsze kroki z usługą Hosted Exchange'
 excerpt: 'Rozpocznij pracę z usługą Hosted Exchange'
-updated: 2023-03-06
+updated: 2024-09-03
 ---
 
 > [!primary]
@@ -140,7 +140,7 @@ Jeśli pierwszy raz logujesz się do interfejsu OWA webmail przy użyciu tego ad
 >
 > Strefy czasowe są wymienione zgodnie z [uniwersalnym standardem czasowym (UTC)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), a nie alfabetycznie według miast.
 >
-> **Przykład**: Dla Europy Zachodniej jest to transza UTC +1 (Bruksela, Kopenhaga, Madryt, Paryż).
+> **Przykład** : Dla Europy Zachodniej jest to UTC +1 (Bruksela, Kopenhaga, Madryt, Paryż).
 
 Jeśli chcesz skonfigurować Twoje konto e-mail na smartfonie, tablecie lub programie pocztowym, skorzystaj z [naszej dokumentacji](/products/web-cloud-email-collaborative-solutions-microsoft-exchange). Abyś mógł korzystać z konta Exchange w sposób optymalny, upewnij się, czy jest ono kompatybilne z Twoim programem pocztowym.
 

@@ -1,7 +1,7 @@
 ---
 title: 'Primeros pasos con el servicio Hosted Exchange'
 excerpt: 'Cómo configurar por primera vez el servicio Hosted Exchange'
-updated: 2023-03-06
+updated: 2024-09-03
 ---
 
 > [!primary]
@@ -78,15 +78,20 @@ Asigne un nombre a sus direcciones de correo Exchange y añada información adic
 
 #### **Caso particular**
 
-- Si configura su plataforma Exchange con un dominio no gestionado en el mismo área de cliente que esta plataforma, o con otro proveedor de dominio, tendrá la siguiente ventana:<br>
-![Correo electrónico](images/exchange-wizard05.png){.thumbnail .w-640}<br>
-Esta ventana le invita a añadir un **registro CNAME** en la zona DNS del dominio. Este registro permite comprobar que usted gestiona el dominio.<br>
+- Si configura su plataforma Exchange con un dominio no gestionado en el mismo área de cliente que esta plataforma, o con otro proveedor de dominio, tendrá la siguiente ventana :
+
+![Correo electrónico](images/exchange-wizard05.png){.thumbnail .w-640}
+
+Esta ventana le invita a añadir un **registro CNAME** en la zona DNS del dominio. Este registro permite comprobar que usted gestiona el dominio.
 
 > [!warning]
+>
 > Sin esta validación por registro CNAME, no es posible utilizar la plataforma con este nombre de dominio.
 
-- Si configura su plataforma Exchange con un dominio no gestionado en el mismo área de cliente que esta plataforma, gestionada con otro proveedor de dominio, o si ha optado por configurar manualmente su nombre de dominio, se mostrará la siguiente ventana:<br>
-![Correo electrónico](images/exchange-wizard06.png){.thumbnail .w-640}<br>
+- Si configura su plataforma Exchange con un dominio no gestionado en el mismo área de cliente que esta plataforma, gestionada con otro proveedor de dominio, o si ha optado por configurar manualmente su nombre de dominio, se mostrará la siguiente ventana :
+
+![Correo electrónico](images/exchange-wizard06.png){.thumbnail .w-640}
+
 Aquí encontrará los valores que deberá introducir en su zona DNS. Los **registros MX** corresponden a la recepción del correo. El **registro SRV** se corresponde con la configuración automática de las direcciones de correo.
 
 Consulte la configuración de su zona DNS relativa a su servicio de correo en nuestra página "[Añadir un registro MX a la configuración del dominio](/pages/web_cloud/domains/dns_zone_mx)".
@@ -129,6 +134,14 @@ La tabla mostrará las cuentas pendientes de configurar con el formato *@configu
 ### Utilizar las direcciones de correo
 
 Una vez que haya configurado las cuentas, ¡ya puede utilizarlas! Para ello, OVHcloud pone a su disposición el webmail **Outlook Web App** (OWA). Puede acceder a ella en la dirección <https://www.ovhcloud.com/es-es/mail/>. Para acceder, introduzca las claves de su dirección de correo electrónico. Para más información, consulte las guías de OVHcloud sobre las [Soluciones colaborativas Microsoft](/products/web-cloud-email-collaborative-solutions-microsoft-exchange), en el apartado relativo a Outlook Web App (OWA).
+
+Si es la primera vez que inicia sesión en OWA con esta dirección de correo electrónico, se le pedirá que especifique el idioma de la interfaz y la zona horaria. Haga clic en `Guardar`{.action} para continuar.
+
+> [!primary]
+>
+> Las zonas horarias se enumeran según [el estándar UTC (hora universal coordinada)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), no por orden alfabético de ciudades.
+>
+> **Ejemplo** : Para Europa Occidental, se trata de UTC +1 (Bruselas, Copenhague, Madrid, París).
 
 Si desea configurar su cuenta de correo electrónico en un cliente de correo o un dispositivo externo (smartphone o tablet), consulte las guías de OVHcloud sobre las [soluciones colaborativas Microsoft](/products/web-cloud-email-collaborative-solutions-microsoft-exchange). Para un uso óptimo de su cuenta Exchange en un cliente de correo de escritorio, asegúrese de que este sea compatible con el servicio.
 

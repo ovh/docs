@@ -1,7 +1,7 @@
 ---
 title: 'Utilizzare un account di posta da "Outlook on the web"'
 excerpt: 'Come gestire il tuo indirizzo email dalla Webmail "Outlook on the web"'
-updated: 2024-03-26
+updated: 2024-09-03
 ---
 
 ## Obiettivo
@@ -36,13 +36,14 @@ Per accedere alla Webmail OWA con il tuo indirizzo email, vai alla pagina genera
 >
 > Per familiarizzare con l'interfaccia **Roundcube**, consulta la nostra guida [Webmail: guida all’utilizzo di Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
 
-Se è la prima volta che accedi alla Webmail OWA con questo indirizzo email, ti verrà chiesto di impostare la lingua dell’interfaccia e il fuso orario. Clicca su `Salva`{.action} per continuare.
+Se è la prima volta che ti connetti a OWA con questo indirizzo email, ti verrà chiesto di impostare la lingua dell’interfaccia utente e definire il fuso orario. Clicca su `Salva`{.action} per continuare.
 
 > [!primary]
 >
 > I fusi orari sono elencati secondo [la norma UTC (Coordinated Universal Time)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png) e non in ordine alfabetico di città.
 >
-> **Esempio** : Per l'Europa occidentale, si tratta della rata UTC +1 (Bruxelles, Copenaghen, Madrid, Parigi).
+> **Esempio** : Per l'Europa occidentale, si tratta di UTC +1 (Bruxelles, Copenaghen, Madrid, Parigi).
+
 
 ![useowa](images/use-owa-step2.png){.thumbnail}
 
