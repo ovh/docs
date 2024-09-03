@@ -136,7 +136,7 @@ If this is your first time logging in to OWA with this email address, you will b
 >
 > Time zones are listed according to [the UTC (Coordinated Universal Time) standard](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), not in alphabetical order of cities.
 >
-> **Example** : For Western Europe, it is the UTC +1 tranche (Brussels, Copenhagen, Madrid, Paris).
+> **Example**: For Western Europe, it is UTC +1 (Brussels, Copenhagen, Madrid, Paris).
 
 If you would like to configure your email address on an email client or mobile device (e.g. a smartphone or tablet), please refer to [our documentation](/products/web-cloud-email-collaborative-solutions-microsoft-exchange). To optimise the way you use your Exchange email address on an email client, ensure that it is compatible with the service.
 
