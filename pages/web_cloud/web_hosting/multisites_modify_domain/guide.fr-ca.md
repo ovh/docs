@@ -26,7 +26,7 @@ Lors de l'utilisation de votre hébergement web ou de la mise à jour de votre s
 
 > [!warning]
 >
-> La modification des paramètres d'association d'un nom de domaine ou d'un sous-domaine peut, en cas de mauvaise manipulation, engendrer une interruption d'accès à vos services (site web). Si vous avez des doutes sur les modifications à réaliser, n'hésitez pas à faire appel à un [prestataire spécialisé](/links/partner).
+> La modification des paramètres d'association d'un nom de domaine ou d'un sous-domaine peut, en cas de mauvaise manipulation, entraîner une interruption d'accès à vos services (votre site web). Si vous avez des doutes sur les modifications à réaliser, n'hésitez pas à faire appel à un prestataire spécialisé
 >
 
 Pour modifier les paramètres d'association d'un nom de domaine ou d'un sous-domaine déjà déclaré sur votre offre d'hébergement web, effectuez les actions suivantes :
