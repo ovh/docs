@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Network Services - FAQ
 excerpt: Foire aux questions sur les services réseau Public Cloud
-updated: 2024-08-30
+updated: 2024-09-03
 ---
 
 <style>
@@ -133,7 +133,8 @@ Non, le routage inter-régions n'est pas supporté.
 
 Tout dépend de l’usage :
 
-- Pour les cas d'utilisation sortante (outbound), nous proposons une IP publique incluse dans le prix de la Gateway. Cette IP est associée à la Gateway instanciée et ne peut pas être déplacée vers une autre. En d'autres termes, l'IP utilisée pour le trafic sortant n'est pas une Floating IP. Si cela crée des difficultés pour votre cas d'usage, veuillez voter en faveur de cet item de notre [roadmap](https://github.com/ovh/public-cloud-roadmap/issues/448).
+- Pour les cas d'utilisation sortante (outbound), nous proposons une IP publique incluse dans le prix de la Gateway. Cette IP est associée à la Gateway instanciée et **ne peut pas être déplacée vers une autre**. En d'autres termes, l'IP utilisée pour le trafic sortant n'est pas une Floating IP. Le seul cas de figure où cette adresse IP est conservée, c'est lors de la modification de la taille d'une Gateway (par exemple, de S à M).
+Si cela crée des difficultés pour votre cas d'usage, veuillez voter en faveur de cet item de notre [roadmap](https://github.com/ovh/public-cloud-roadmap/issues/448).
 - Pour les cas d'utilisation entrante (inbound) (pour exposer un service s'exécutant sur une instance privée vers Internet), vous devez disposer d'une Floating IP à connecter via Gateway à votre instance ou service réseau.
 
 ///

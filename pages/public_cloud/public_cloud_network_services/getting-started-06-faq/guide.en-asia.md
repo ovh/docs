@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Network Services - FAQ
 excerpt: Frequently Asked Questions on Public Cloud Network Services
-updated: 2024-08-30
+updated: 2024-09-03
 ---
 
 <style>
@@ -129,11 +129,13 @@ No the inter-region routing is not supported.
 
 ///
 
-/// details | Will Gateway be provided with a public IP and port?
+/// details | Will a Gateway be provided with a public IP and port?
 
 It depends on the usage:
 
-- For outbound use cases we offer a public IP which is included in the Gateway price. This IP is associated to the instantiated Gateway and cannot be moved to another one. In other words, the IP used for outbound traffic is not a 'Floating IP'. If this is creating friction for your use case, please upvote for this [roadmap item](https://github.com/ovh/public-cloud-roadmap/issues/448).
+- For outbound use cases we offer a public IP which is included in the Gateway price. This IP is associated to the instantiated Gateway and **cannot be moved from one gateway to another one**. In other words, the IP used for outbound traffic is not a 'Floating IP'. 
+The only use case where this IP is kept is when the gateway size is changed (e.g. from `S`to `M`).
+If this is creating friction for your use case, please upvote for this [roadmap item](https://github.com/ovh/public-cloud-roadmap/issues/448).
 - For inbound use cases (to expose a service running on a private instance to the Internet) you need to have a Floating IP to attach via Gateway to your instance or network service.
 
 ///
