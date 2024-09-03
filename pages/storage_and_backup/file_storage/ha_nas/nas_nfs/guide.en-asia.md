@@ -1,7 +1,7 @@
 ---
 title: Mounting HA-NAS via NFS share
 excerpt: Find out how to connect to your HA-NAS using an NFS share
-updated: 2024-09-03
+updated: 2024-09-04
 ---
 
 ## Objective 
