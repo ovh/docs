@@ -180,15 +180,15 @@ Jeśli aplikacja nie jest jeszcze zainstalowana (sprawdź listę aplikacji lub u
 
 Otwórz polecenie `PuTTYgen` i wybierz jeden z obsługiwanych algorytmów szyfrowania. W tym przykładzie zastosowano RSA. Wpisz 4096 jako liczbę bitów w prawym dolnym rogu i kliknij przycisk `Generate`{.action}.
 
-![klucz PuTTy](images/puttygen_01.png){.thumbnail}
+![klucz PuTTy](/pages/assets/screens/other/web-tools/putty/puttygen_01.png){.thumbnail}
 
 Przesuwaj kursor myszy swobodnie w obszarze pod paskiem postępu:
 
-![klucz PuTTy](images/puttygen_02.gif){.thumbnail}
+![klucz PuTTy](/pages/assets/screens/other/web-tools/putty/puttygen_02.gif){.thumbnail}
 
 Klucz jest gotowy, gdy pasek postępu jest pełny.
 
-![klucz PuTTy](images/puttygen_03.png){.thumbnail}
+![klucz PuTTy](/pages/assets/screens/other/web-tools/putty/puttygen_03.png){.thumbnail}
 
 Skopiuj kompletny ciąg klucza do Schowka, aby go [dodać do serwera](#addserverkey). Zapisz oba klucze jako pliki, klikając odpowiednie przyciski i wprowadzając hasło (*passphrase*), aby je chronić.
 
@@ -380,7 +380,7 @@ Jeśli postępujesz zgodnie z instrukcjami w sekcjach "[Tworzenie pary kluczy SS
 
 Otwórz `PuTTY` i rozwiń podsekcję `SSH` w menu po lewej stronie, następnie kliknij `Auth` i `Credentials`.
 
-![klucz PuTTy](images/puttygen_04.png){.thumbnail}
+![klucz PuTTy](/pages/assets/screens/other/web-tools/putty/puttygen_04.png){.thumbnail}
 
 Kliknij przycisk `Browse`{.action} i wybierz plik klucza prywatnego `PuTTY` (`keyfile.ppk`) w folderze, w którym go zapisałeś.
 
@@ -388,7 +388,7 @@ Plik klucza jest teraz skojarzony z bieżącą sesją SSH. Przejdź na `Session`
 
 Wprowadź nazwę tego połączenia w polu `Saved Sessions` i kliknij `Save`{.action}, aby dodać je do listy.
 
-![klucz PuTTy](images/puttygen_05.png){.thumbnail}
+![klucz PuTTy](/pages/assets/screens/other/web-tools/putty/puttygen_05.png){.thumbnail}
 
 Od tej chwili możesz kliknąć na ten element `session` i otworzyć połączenie z Twoim serwerem. Aby go przetestować, kliknij na `Open`{.action}. Jeśli plik klucza jest chroniony hasłem, wpisz je na tym etapie.
 

@@ -176,15 +176,15 @@ S'il n'est pas déjà installé (consultez votre liste d'applications ou utilise
 
 Ouvrez `PuTTYgen` et sélectionnez l'un des algorithmes de chiffrement pris en charge. Cet exemple utilise RSA. Entrez 4096 comme nombre de bits dans le coin inférieur droit, puis cliquez sur le bouton `Generate`{.action}.
 
-![clé PuTTy](images/puttygen_01.png){.thumbnail}
+![clé PuTTy](/pages/assets/screens/other/web-tools/putty/puttygen_01.png){.thumbnail}
 
 Déplacez librement le curseur de la souris dans la zone située sous la barre de progression :
 
-![clé PuTTy](images/puttygen_02.gif){.thumbnail}
+![clé PuTTy](/pages/assets/screens/other/web-tools/putty/puttygen_02.gif){.thumbnail}
 
 La clé est prête lorsque la barre de progression est pleine.
 
-![clé PuTTy](images/puttygen_03.png){.thumbnail}
+![clé PuTTy](/pages/assets/screens/other/web-tools/putty/puttygen_03.png){.thumbnail}
 
 Copiez la chaîne de clé complète dans le Presse-papiers afin de l'[ajouter à votre serveur](#addserverkey). Enregistrez les deux clés en tant que fichiers en cliquant sur les boutons correspondants et entrez également une phrase secrète (*passphrase*) pour les protéger.
 
@@ -376,7 +376,7 @@ Si vous avez suivi les instructions des sections « [Création d'une paire de cl
 
 Ouvrez `PuTTY` et dépliez la sous-section `SSH` dans le menu de gauche puis cliquez sur `Auth` et `Credentials`.
 
-![clé PuTTy](images/puttygen_04.png){.thumbnail}
+![clé PuTTy](/pages/assets/screens/other/web-tools/putty/puttygen_04.png){.thumbnail}
 
 Cliquez sur le bouton `Browse`{.action} et sélectionnez le fichier de clé privée `PuTTY` (`keyfile.ppk`) dans le dossier où vous l'avez enregistré.
 
@@ -384,7 +384,7 @@ Le fichier de clé est maintenant associé à la session SSH en cours. Basculez 
 
 Entrez un nom pour cette connexion sous `Saved Sessions` et cliquez sur `Save`{.action} pour l'ajouter à la liste.
 
-![clé PuTTy](images/puttygen_05.png){.thumbnail}
+![clé PuTTy](/pages/assets/screens/other/web-tools/putty/puttygen_05.png){.thumbnail}
 
 Dès à présent, vous pouvez cliquer sur cet élément de `Session` et ouvrir une connexion à votre serveur. Pour le tester, cliquez sur `Open`{.action}. Si vous avez protégé le fichier de clé avec une phrase secrète, saisissez-la à ce stade.
 
