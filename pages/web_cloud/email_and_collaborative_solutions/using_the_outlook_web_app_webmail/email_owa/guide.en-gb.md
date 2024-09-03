@@ -41,7 +41,7 @@ If this is your first time logging in to OWA webmail with this email address, yo
 >
 > Time zones are listed according to [the UTC (Coordinated Universal Time) standard](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), not in alphabetical order of cities.
 >
-> **Example** : For Western Europe, it is the UTC +1 tranche (Brussels, Copenhagen, Madrid, Paris).
+> **Example**: For Western Europe, it is the UTC +1 tranche (Brussels, Copenhagen, Madrid, Paris).
 
 ![useowa](images/use-owa-step2.png){.thumbnail}
 
