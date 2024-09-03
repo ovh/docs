@@ -46,6 +46,26 @@ After a few seconds, the KMS will be available in your Control Panel.
 
 ![Order the KMS](images/order_kms_03.png){.thumbnail}
 
+### Create a encryption key with the OVHcloud console
+
+It's possible to create an encryption key from the OVHcloud console on the dedicated menu with the buton `Create a key`{.action}
+
+![Create a key](images/create_key_01.png){.thumbnail}
+
+A form allow to configurate the key and select the type, size and usage of it.
+
+![Create a key](images/create_key_02.png){.thumbnail}
+
+Once the key created it's possible to acces to it's details by clicking on it.
+The dashboard display the cryptographic properties of the key, and the actions for renaming, disabling or deleting it.
+To reduce the risks of unwanted supression, it's mandatory to disable a key before deleting it.
+
+[!warning]
+
+A deleted key is not recoverable by any mean and such involve the lost of any data encrypt with it. Any suppression should be perform with great precaution.
+
+![Create a key](images/create_key_03.png){.thumbnail}
+
 ### Creating an access certificate
 
 To communicate with your KMS, you will need to create an access certificate.
@@ -236,7 +256,7 @@ Copy the value of the **certificatePEM** field to a **client.cert** file.
 
 ### Contact the KMS
 
-Communication with the KMS is only available via API during the beta period.
+Communication with the KMS, except for the key creation, is only available via API.
 
 Since the KMS is regionalized, you can access the API directly in its region: <https://my-region.ovh.com.net>
 
@@ -248,7 +268,7 @@ If you are using a browser, you will need to convert the certificate to pkcs12 f
 openssl pkcs12 -export -inkey client.key -in client.cert -out client.p12
 ```
 
-#### Creating an encryption key
+#### Creating an encryption key via API
 
 You can create a key using the following API:
 
