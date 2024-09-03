@@ -1,7 +1,7 @@
 ---
 title: "Getting started with OVHcloud Key Management Service (KMS)"
 excerpt: "Discover the steps you need to take to set up your first Key Management Service (KMS), create a key, and access it"
-updated: 2024-07-04
+updated: 2024-09-03
 ---
 
 > [!warning]
@@ -46,23 +46,25 @@ After a few seconds, the KMS will be available in your Control Panel.
 
 ![Order the KMS](images/order_kms_03.png){.thumbnail}
 
-### Create a encryption key with the OVHcloud console
+### Creating an encryption key with the OVHcloud console
 
-It's possible to create an encryption key from the OVHcloud console on the dedicated menu with the buton `Create a key`{.action}
+You can create an encryption key from the the dedicated menu of the OVHcloud console, using the `Create a key`{.action} button.
 
 ![Create a key](images/create_key_01.png){.thumbnail}
 
-A form allow to configurate the key and select the type, size and usage of it.
+A form allows you to configure the key and select its type, size and usage.
 
 ![Create a key](images/create_key_02.png){.thumbnail}
 
-Once the key created it's possible to acces to it's details by clicking on it.
-The dashboard display the cryptographic properties of the key, and the actions for renaming, disabling or deleting it.
-To reduce the risks of unwanted supression, it's mandatory to disable a key before deleting it.
+Once the key is created, click it to access its details.
 
-[!warning]
+The dashboard displays the cryptographic properties of the key, and the actions for renaming, disabling or deleting it.
 
-A deleted key is not recoverable by any mean and such involve the lost of any data encrypt with it. Any suppression should be perform with great precaution.
+To reduce the risks of an unwanted deletion, it is mandatory to disable a key before deleting it.
+
+> [!warning]
+>
+> A deleted key is not recoverable by any means and such deletion involves the loss of any data encrypted with it. Any deletion should be performed with great caution.
 
 ![Create a key](images/create_key_03.png){.thumbnail}
 
