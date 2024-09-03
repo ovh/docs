@@ -1,7 +1,7 @@
 ---
 title: 'Utilizar una dirección de correo desde Outlook en la Web'
 excerpt: 'Cómo utilizar una dirección de correo electrónico desde el webmail Outlook en la Web'
-updated: 2021-06-25
+updated: 2024-09-03
 ---
 
 ## Objetivo
@@ -30,7 +30,13 @@ Para acceder al webmail de OWA con su dirección de correo electrónico, diríja
 
 ![useowa](images/use-owa-step1.png){.thumbnail}
 
-Si es la primera vez que accede a esta dirección de correo a través del webmail de OWA, se le pedirá que configure el idioma y la zona horaria. Haga clic en `Guardar`{.action} para continuar.
+Si es la primera vez que inicia sesión en OWA con esta dirección de correo electrónico, se le pedirá que especifique el idioma de la interfaz y la zona horaria. Haga clic en `Guardar`{.action} para continuar.
+
+> [!primary]
+>
+> Las zonas horarias se enumeran según [el estándar UTC (hora universal coordinada)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), no por orden alfabético de ciudades.
+>
+> **Ejemplo** : Para Europa Occidental, se trata de UTC +1 (Bruselas, Copenhague, Madrid, París).
 
 ![useowa](images/use-owa-step2.png){.thumbnail}
 

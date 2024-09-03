@@ -1,7 +1,7 @@
 ---
 title: 'Using the Outlook Web App with an email account'
 excerpt: 'Find out how to manage an email address using OWA webmail'
-updated: 2021-06-25
+updated: 2024-09-03
 ---
 
 ## Objective
@@ -31,6 +31,12 @@ To log in to OWA webmail with your email address, go to the general [webmail log
 ![useowa](images/use-owa-step1.png){.thumbnail}
 
 If this is your first time logging in to OWA webmail with this email address, you will be prompted to set the interface language and time zone. Click `Save`{.action} to continue.
+
+> [!primary]
+>
+> Time zones are listed according to [the UTC (Coordinated Universal Time) standard](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), not in alphabetical order of cities.
+>
+> **Example**: For Western Europe, it is the UTC +1 tranche (Brussels, Copenhagen, Madrid, Paris).
 
 ![useowa](images/use-owa-step2.png){.thumbnail}
 

@@ -1,7 +1,7 @@
 ---
 title: 'Utilizar o endereço de e-mail a partir do webmail Outlook Web App (OWA)'
 excerpt: 'Saiba como utilizar o seu endereço de e-mail a partir do webmail OWA'
-updated: 2024-03-26
+updated: 2024-09-03
 ---
 
 ## Sumário
@@ -36,7 +36,13 @@ Para entrar no webmail OWA através do seu endereço de e-mail, aceda à [págin
 >
 > Para se familiarizar com a interface **Roundcube**, consulte o nosso guia [Webmail: Guia de utilização do Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
 
-Se está a efetuar o login no webmail OWA pela primeira vez com este endereço de e-mail, ser-lhe-á solicitado que configure o idioma e o fuso horário na interface. Clique em `Guardar`{.action} para continuar.
+Se for a primeira vez que acede ao OWA com este endereço de e-mail, ser-lhe-á pedido que defina o idioma da interface e o fuso horário. Em seguida, clique em ‘Guardar‘ {.action} para continuar.
+
+> [!primary]
+>
+> Os fusos horários estão listados de acordo com [a norma UTC (tempo universal coordenado)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), e não por ordem alfabética das cidades.
+>
+> **Exemplo** : Para a Europa Ocidental, trata-se de UTC +1 (Bruxelas, Copenhaga, Madrid, Paris).
 
 ![useowa](images/use-owa-step2.png){.thumbnail}
 

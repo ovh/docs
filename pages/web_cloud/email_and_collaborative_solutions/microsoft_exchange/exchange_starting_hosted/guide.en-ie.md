@@ -1,7 +1,7 @@
 ---
 title: 'Getting started with the Hosted Exchange service'
 excerpt: 'Get started with a Hosted Exchange service'
-updated: 2023-03-06
+updated: 2024-09-03
 ---
 
 <style>
@@ -74,15 +74,19 @@ Determine the name of your Exchange email addresses, and add additional informat
 
 #### **Special case**
 
-- If you configure your Exchange platform with a domain name that is not managed on the same control panel as this platform, or with another domain name provider, you will see the following window:<br>
-![email](images/exchange-wizard05.png){.thumbnail .w-640}<br>
-This window will prompt you to add a **CNAME record** to the domain name’s DNS zone. The purpose of this entry is to check that you are actually managing this domain name.<br>
+- If you configure your Exchange platform with a domain name that is not managed on the same control panel as this platform, or with another domain name provider, you will see the following window :
+
+![email](images/exchange-wizard05.png){.thumbnail .w-640}
+
+This window will prompt you to add a **CNAME record** to the domain name’s DNS zone. The purpose of this entry is to check that you are actually managing this domain name.
 
 > [!warning]
 > Without this validation by CNAME record, you cannot use the platform with this domain name.
 
-- If you configure your Exchange platform with a domain name that is not managed on the same control panel as this platform, that is managed with another domain name provider, or if you have chosen to manually configure your domain name, the following window will appear:<br>
-![email](images/exchange-wizard06.png){.thumbnail .w-640}<br>
+- If you configure your Exchange platform with a domain name that is not managed on the same control panel as this platform, that is managed with another domain name provider, or if you have chosen to manually configure your domain name, the following window will appear :
+
+![email](images/exchange-wizard06.png){.thumbnail .w-640}
+
 Here, you will find the values to enter into your DNS zone. The **MX records** correspond to the receiving servers of your emails. The **SRV field** corresponds to the automatic configuration of your email addresses.
 
 You can find the DNS zone configuration details for your email service on our [Add an MX record to your domain name’s configuration](/pages/web_cloud/domains/dns_zone_mx) page.
@@ -125,6 +129,14 @@ The accounts that have not yet been configured configuration will appear in the 
 ### Use your email addresses
 
 Once you have configured your accounts, you can now start using them. To do this, OVHcloud offers the **Outlook Web App** (OWA) webmail app. You can access this via the following address: <https://www.ovhcloud.com/en-ie/mail/>. To log in, enter your email address credentials. If you require any assistance using OWA, please refer to [our documentation](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
+
+If this is your first time logging in to OWA with this email address, you will be prompted to set the interface language and time zone. Next, click `Save`{.action} to continue.
+
+> [!primary]
+>
+> Time zones are listed according to [the UTC (Coordinated Universal Time) standard](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), not in alphabetical order of cities.
+>
+> **Example**: For Western Europe, it is UTC +1 (Brussels, Copenhagen, Madrid, Paris).
 
 If you would like to configure your email address on an email client or mobile device (e.g. a smartphone or tablet), please refer to [our documentation](/products/web-cloud-email-collaborative-solutions-microsoft-exchange). To optimise the way you use your Exchange email address on an email client, ensure that it is compatible with the service.
 

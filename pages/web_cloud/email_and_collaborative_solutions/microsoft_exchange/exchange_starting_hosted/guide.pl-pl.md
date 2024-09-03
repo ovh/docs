@@ -1,7 +1,7 @@
 ---
 title: 'Pierwsze kroki z usługą Hosted Exchange'
 excerpt: 'Rozpocznij pracę z usługą Hosted Exchange'
-updated: 2023-03-06
+updated: 2024-09-03
 ---
 
 > [!primary]
@@ -79,14 +79,18 @@ Nadaj nazwy Twoich adresom e-mail Exchange i dodaj informacje uzupełniające.
 #### **Szczególny przypadek**
 
 - Jeśli skonfigurujesz Twoją platformę Exchange z nazwą domeny, która nie jest zarządzana w tym samym panelu klienta co platforma, lub u innego operatora domeny, otrzymasz następujące okno:<br>
+
 ![email](images/exchange-wizard05.png){.thumbnail .w-640}<br>
+
 W tym oknie zostaniesz poproszony o dodanie **pola CNAME** w strefie DNS domeny. Celem tego wpisu jest sprawdzenie, czy zarządzasz tą domeną.<br>
 
 > [!warning]
 > Bez zatwierdzenia za pomocą pola CNAME nie można korzystać z platformy za pomocą tej nazwy domeny.
 
 - Jeśli skonfigurujesz Twoją platformę Exchange z nazwą domeny, która nie jest zarządzana w tym samym panelu klienta co platforma, niezależnie od tego, czy jest ona zarządzana przez innego operatora domeny, czy też wybrałeś ręczną konfigurację Twojej domeny, wyświetli się następujące okno:<br>
+
 ![email](images/exchange-wizard06.png){.thumbnail .w-640}<br>
+
 W tej sekcji znajdziesz wartości, które należy wprowadzić w strefie DNS. **Pola MX** odpowiadają odbieraniu e-maili. **Pole SRV** odpowiada automatycznej konfiguracji Twoich kont e-mail.
 
 Szczegóły konfiguracji Twojej strefy DNS dotyczące usługi e-mail znajdują się na stronie "[Dodaj pole MX do konfiguracji domeny](/pages/web_cloud/domains/dns_zone_mx)".
@@ -129,6 +133,14 @@ Konta oczekujące na konfigurację wyświetlane są w tabeli w postaci “*@conf
 ### Korzystanie z kont e-mail
 
 Po skonfigurowaniu Twoich kont możesz zacząć ich używać. W tym celu OVHcloud udostępnia webmail **Outlook Web App** (OWA). Znajdziesz go pod linkiem <https://www.ovhcloud.com/pl/mail/>. Aby się zalogować, wpisz dane identyfikacyjne przypisane do Twojego konta e-mail. Jeśli potrzebujesz pomocy w zakresie użytkowania OWA, skorzystaj z [naszej dokumentacji](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
+
+Jeśli pierwszy raz logujesz się do interfejsu OWA webmail przy użyciu tego adresu e-mail, pojawi się monit o ustawienie języka interfejsu i strefy czasowej. Następnie kliknij przycisk `Zapisz`{.action}, aby kontynuować.
+
+> [!primary]
+>
+> Strefy czasowe są wymienione zgodnie z [uniwersalnym standardem czasowym (UTC)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), a nie alfabetycznie według miast.
+>
+> **Przykład** : Dla Europy Zachodniej jest to UTC +1 (Bruksela, Kopenhaga, Madryt, Paryż).
 
 Jeśli chcesz skonfigurować Twoje konto e-mail na smartfonie, tablecie lub programie pocztowym, skorzystaj z [naszej dokumentacji](/products/web-cloud-email-collaborative-solutions-microsoft-exchange). Abyś mógł korzystać z konta Exchange w sposób optymalny, upewnij się, czy jest ono kompatybilne z Twoim programem pocztowym.
 
