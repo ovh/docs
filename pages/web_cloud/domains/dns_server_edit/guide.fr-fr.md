@@ -1,7 +1,7 @@
 ---
 title: "Modifier les serveurs DNS d'un nom de domaine OVHcloud"
 excerpt: "Découvrez comment modifier les serveurs DNS de votre nom de domaine enregistré chez OVHcloud"
-updated: 2024-08-27
+updated: 2024-09-03
 ---
 
 ## Objectif
@@ -112,7 +112,7 @@ Cela peut être, par exemple :
 
 > [!success]
 >
-> Avant d'ajouter un serveur DNS, vérifiez que ce dernier contient bien une zone DNS pour votre nom de domaine. Assurez-vous également que cette zone DNS contient tous les enregistrements de type « NS » vers tous les serveurs DNS que vous allez déclarer pour votre nom de domaine.
+> Avant d'ajouter un serveur DNS, vérifiez que ce dernier **et joignable** et contient bien une zone DNS pour votre nom de domaine. Assurez-vous également que cette zone DNS contient tous les enregistrements de type « NS » vers tous les serveurs DNS que vous allez déclarer pour votre nom de domaine.
 >
 > Par exemple : vous souhaitez déclarer les serveurs DNS *ns1.dns-server.tld*, *ns2.dns-server.tld* et *ns3.dns-server.tld* pour votre nom de domaine. Vous devrez alors vérifier que les trois enregistrements de type « NS » suivants sont bien présents dans les 3 zones DNS hébergées sur ces 3 serveurs DNS :
 >
@@ -164,7 +164,7 @@ Cependant, vérifiez bien que les configurations des zones DNS présentes sur le
 
 > [!success]
 >
-> Avant d'ajouter un serveur DNS, vérifiez que ce dernier contient bien une zone DNS pour votre nom de domaine. Assurez-vous également que cette zone DNS contient tous les enregistrements de type « NS » vers tous les serveurs DNS que vous allez déclarer pour votre nom de domaine.
+> Avant d'ajouter un serveur DNS, vérifiez que ce dernier **et joignable** et contient bien une zone DNS pour votre nom de domaine. Assurez-vous également que cette zone DNS contient tous les enregistrements de type « NS » vers tous les serveurs DNS que vous allez déclarer pour votre nom de domaine.
 >
 > Par exemple : vous souhaitez déclarer les serveurs DNS *ns1.dns-server.tld*, *dnsXX.ovh.net* et *nsXX.ovh.net* pour votre nom de domaine. Vous devrez alors vérifier que les trois enregistrements de type « NS » suivants sont bien présents dans les 3 zones DNS hébergées sur ces 3 serveurs DNS :
 >
