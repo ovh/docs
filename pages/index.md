@@ -1148,6 +1148,7 @@
             + [Getting started with an Individual or Business Web Hosting plan](web_cloud/web_hosting/hosting_first_steps_with_web_hosting)
             + [Getting started with a Cloud Web hosting plan](web_cloud/web_hosting/getting_started_cloud_web)
             + [Hosting multiple websites on your Web Hosting plan](web_cloud/web_hosting/multisites_configure_multisite)
+            + [Web Hosting - Modifying a domain name already associated to a hosting plan](web_cloud/web_hosting/multisites_modify_domain)
             + [Exporting a website](web_cloud/web_hosting/exporter-son-site-web)
             + [Web Hosting FAQ](web_cloud/web_hosting/faq-web_hosting)
             + [Publishing a website on your Web Hosting plan](web_cloud/web_hosting/hosting_how_to_get_my_website_online)
