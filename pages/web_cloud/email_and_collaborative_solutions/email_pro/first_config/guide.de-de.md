@@ -158,7 +158,7 @@ Wenn Sie sich zum ersten Mal mit dieser E-Mail-Adresse bei OWA anmelden, werden 
 >
 > Zeitzonen werden nach [UTC (Coordinated Universal Time)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png) und nicht in alphabetischer Reihenfolge der Städte aufgeführt.
 >
-> **Beispiel** : Für Westeuropa ist dies UTC +1 (Brüssel, Kopenhagen, Madrid, Paris).
+> **Beispiel**: Für Westeuropa ist dies UTC +1 (Brüssel, Kopenhagen, Madrid, Paris).
 
 Wenn Sie Ihre E-Mail-Adresse auf einem E-Mail-Client oder einem Gerät (beispielsweise einem Smartphone oder einem Tablet) einrichten möchten, nutzen Sie hierzu die passende [E-Mail Pro Anleitung](/products/web-cloud-email-collaborative-solutions-email-pro). Wenn Sie nur die erforderlichen Daten zur Konfiguration Ihres E-Mail Pro Accounts benötigen, verwenden Sie die folgenden Einstellungen:
 
