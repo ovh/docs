@@ -44,7 +44,7 @@ Wenn Sie sich zum ersten Mal mit dieser E-Mail-Adresse bei OWA Webmail anmelden,
 >
 > Zeitzonen werden nach [UTC (Coordinated Universal Time)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png) und nicht in alphabetischer Reihenfolge der Städte aufgeführt.
 >
-> **Beispiel** : Für Westeuropa ist dies UTC +1 (Brüssel, Kopenhagen, Madrid, Paris).
+> **Beispiel**: Für Westeuropa ist dies UTC +1 (Brüssel, Kopenhagen, Madrid, Paris).
 
 ![useowa](images/use-owa-step2.png){.thumbnail}
 
