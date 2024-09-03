@@ -1,12 +1,12 @@
 ---
 title: "Public Cloud & VPS - Cycle de vie et annonces de fin de vie/support des images et distributions"
-excerpt: "Découvrez le cycle de vie et les annonces de fin de vie et de support des distributions et logiciels pour votre VPS ou votre instance Public Cloud."
+excerpt: "Découvrez le cycle de vie et les annonces de fin de vie et de support des distributions et logiciels pour votre VPS ou votre instance Public Cloud"
 updated: 2024-09-03
 ---
 
 ## Objectif
 
-Ce guide vous informe sur la roadmap de fin de vie ainsi que les annonces de fin de vie et de support des [distributions et logiciels disponibles avec les VPS](https://www.ovhcloud.com/fr/vps/os/) et [instances Public Cloud OVHcloud](https://www.ovhcloud.com/fr/public-cloud/public-image-catalog/). Restez à jour sur les changements critiques qui pourraient affecter la sécurité et la performance de vos services.
+Ce guide vous informe sur la roadmap de fin de vie (*End of Life* ou EOL) ainsi que les annonces de fin de vie et de support (*End of Support* ou EOS) des distributions et logiciels disponibles avec les [VPS](https://www.ovhcloud.com/fr/vps/os/) et [instances Public Cloud OVHcloud](https://www.ovhcloud.com/fr/public-cloud/public-image-catalog/). Restez à jour sur les changements critiques qui pourraient affecter la sécurité et la performance de vos services.
 
 **Découvrez le cycle de vie et les annonces de fin de vie et de support des distributions et logiciels pour votre VPS ou votre instance Public Cloud.**
 
@@ -25,9 +25,11 @@ Ce guide vous informe sur la roadmap de fin de vie ainsi que les annonces de fin
 | Windows Server 2019           | [Cycle de vie](https://docs.microsoft.com/en-us/lifecycle/products/windows-server-2019)     |
 | Windows Server 2022           | [Cycle de vie](https://docs.microsoft.com/en-us/lifecycle/products/windows-server-2022)     |
 
-## Annonce de fin de support / fin de vie
+## Annonces de fin de support / fin de vie
 
-### [AlmaLinuxOS](https://endoflife.date/almalinux){.external}
+### AlmaLinuxOS
+
+Retrouvez plus d'informations sur <https://endoflife.date/almalinux>.
 
 #### AlmaLinux 8
 
@@ -39,13 +41,17 @@ Ce guide vous informe sur la roadmap de fin de vie ainsi que les annonces de fin
 - Fin de support actif : 2027-05-31
 - Fin de support de sécurité : 2032-05-31
 
-### [CentOS](https://endoflife.date/centos){.external}
+### CentOS
+
+Retrouvez plus d'informations sur <https://endoflife.date/centos>.
 
 #### CentOS 7
 
 - Fin de vie : 2024-06-30
 
-### [Debian](https://endoflife.date/debian){.external}
+### Debian
+
+Retrouvez plus d'informations sur <https://endoflife.date/debian>.
 
 #### Debian 10
 
@@ -59,7 +65,9 @@ Ce guide vous informe sur la roadmap de fin de vie ainsi que les annonces de fin
 
 - Fin de support : 2028-06-30
 
-### [Fedora Linux](https://endoflife.date/fedora){.external}
+### Fedora Linux
+
+Retrouvez plus d'informations sur <https://endoflife.date/fedora>.
 
 #### Fedora 37
 
@@ -69,7 +77,9 @@ Ce guide vous informe sur la roadmap de fin de vie ainsi que les annonces de fin
 
 - Fin de vie : 2024-05-21
 
-### [Rocky Linux](https://endoflife.date/rocky-linux){.external}
+### Rocky Linux
+
+Retrouvez plus d'informations sur <https://endoflife.date/rocky-linux>.
 
 #### Rocky Linux 8
 
@@ -81,7 +91,9 @@ Ce guide vous informe sur la roadmap de fin de vie ainsi que les annonces de fin
 - Fin de support actif : 2027-05-31
 - Fin de support de sécurité : 2032-05-31
 
-### [Ubuntu](https://endoflife.date/ubuntu){.external}
+### Ubuntu
+
+Retrouvez plus d'informations sur <https://endoflife.date/ubuntu>.
 
 #### Ubuntu 20.04
 
@@ -101,7 +113,9 @@ Ce guide vous informe sur la roadmap de fin de vie ainsi que les annonces de fin
 
 - Fin de vie : 2024-01-25
 
-### [Microsoft Windows Server](https://endoflife.date/windows-server){.external}
+### Microsoft Windows Server
+
+Retrouvez plus d'informations sur <https://endoflife.date/windows-server>.
 
 #### Windows Server 2016 Standard (Desktop)
 
@@ -118,13 +132,17 @@ Ce guide vous informe sur la roadmap de fin de vie ainsi que les annonces de fin
 - Fin de support actif : 2026-10-13
 - Fin de support sécurité: 2031-10-14
 
-### [AlmaLinux OS](https://endoflife.date/almalinux){.external}
+### AlmaLinux OS
+
+Retrouvez plus d'informations sur <https://endoflife.date/almalinux>.
 
 #### AlmaLinux 8 - cPanel
 
 - Fin de vie (cPanel) : 2029-03-01
 
-### [Debian](https://endoflife.date/debian){.external}
+### Debian
+
+Retrouvez plus d'informations sur <https://endoflife.date/debian>.
 
 #### Debian 10 - Plesk
 
