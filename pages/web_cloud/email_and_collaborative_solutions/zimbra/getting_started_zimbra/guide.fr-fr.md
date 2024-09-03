@@ -68,7 +68,7 @@ Pour retirer le filtre, cliquez simplement sur la croix du filtre.
 
 ![zimbra](images/zimbra_organization_filter.png){.thumbnail .w-400}
 
-### Domaines <a name="domains"></a 
+### Domaines <a name="domains"></a>
 
 Vous retrouvez dans cet onglet l'ensemble des noms de domaine ajoutés à votre service Zimbra. Ils doivent être gérés depuis votre espace client OVHcloud pour être ajoutés.
 
@@ -125,7 +125,7 @@ Complétez les informations qui s'affichent.
 
 Cliquez sur `Confirmer`{.action} pour lancer la création du compte.
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 [Utiliser le webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)
 
