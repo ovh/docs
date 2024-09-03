@@ -1,7 +1,7 @@
 ---
-title: 'Hébergement web - Modifier un nom de domaine déjà associé'
+title: 'Hébergement web - Modifier un nom de domaine déjà associé à un hébergement'
 excerpt: "Découvrez comment modifier les paramètres d'association d'un nom de domaine/sous-domaine déjà déclaré sur votre offre d'hébergement web"
-updated: 2024-09-02
+updated: 2024-09-03
 ---
 
 ## Objectif
@@ -17,10 +17,10 @@ Lors de l'utilisation de votre hébergement web ou de la mise à jour de votre s
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
-- Disposer d'une offre [d'hébergement web OVHcloud](/links/web/hosting){.external}.
-- Disposer d'un ou plusieurs [noms de domaine](/links/web/domains){.external}.
-- Disposer des droits suffisants sur l’ensemble des services concernées. Retrouvez plus d'informations sur notre guide [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
+- Disposer d'une offre [d'hébergement web OVHcloud](/links/web/hosting).
+- Disposer d'un ou plusieurs [noms de domaine](/links/web/domains).
+- Disposer des droits suffisants sur l’ensemble des services concernées. Retrouvez plus d'informations sur notre guide « [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts) ».
 
 ## En pratique
 
@@ -51,8 +51,9 @@ Dans la suite de ce guide, vous trouverez un descriptif de chacun des paramètre
 #### Modifier le « dossier racine »
 
 > [!warning]
+> **Cas particulier : configuration avec Git**
 >
-> Pour modifier le `Dossier racine`{.action} déclaré pour votre nom de domaine et si une configuration existe avec Git pour ce même nom de domaine, vous devrez au préalable supprimez cette configuration.
+> Pour modifier le `Dossier racine`{.action} déclaré pour votre nom de domaine et si une configuration existe avec Git pour ce même nom de domaine, vous devrez d'abord supprimer cette configuration.
 >
 > Si une configuration existe avec Git, un message apparaîtra juste en dessous du formulaire :
 >
@@ -80,15 +81,15 @@ C'est donc dans ce formulaire que vous devrez remplacer le nom du dossier pré-r
 
 ##### L'option « SSL »
 
-Cochez/décochez cette case uniquement si vous souhaitez activer/désactiver le SSL gratuit **Let's Encrypt** pour votre nom de domaine/sous-domaine. Il n'est pas nécessaire de cochez cette case pour les autres offres SSL proposées chez OVHcloud.
+Cochez/décochez cette case uniquement si vous souhaitez activer/désactiver le SSL gratuit **Let's Encrypt** pour votre nom de domaine/sous-domaine. Il n'est pas nécessaire de cocher cette case pour les autres offres SSL proposées chez OVHcloud.
 
 Retrouvez plus d'informations sur les options/offres SSL disponibles dans notre documentation dédiée « [Gérer un certificat SSL sur son hébergement web](/pages/web_cloud/web_hosting/ssl_on_webhosting) ».
 
 ##### L'option « Activer CDN »
 
-Vous devez avoir au préalable souscrit à une offre CDN OVHcloud ou disposer d'une offre d'hébergement web Performance, pour pouvoir utiliser cette option.
+Pour pouvoir utiliser cette option, vous devez avoir au préalable souscrit à une offre CDN OVHcloud ou disposer d'une offre d'hébergement web Performance.
 
-Cochez/décochez cette case adin d'activer/désactiver l'option CDN pour votre nom de domaine ou votre sous-domaine.
+Cochez/décochez cette case afin d'activer/désactiver l'option CDN pour votre nom de domaine ou votre sous-domaine.
 
 Retrouvez plus d'informations sur les options/offres CDN disponibles dans notre documentation dédiée « [Accélérer mon site web en utilisant le CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn) ».
 
@@ -108,7 +109,7 @@ Retrouvez plus d'informations sur cette option dans notre documentation dédiée
 
 Cochez/décochez cette option uniquement si vous souhaitez séparer les logs de votre nom de domaine des autres noms de domaines déclarés en parallèle sur votre hébergement web.
 
-Concernant cette option, apprenez-en plus grâce à notre [page sur les statistiques détaillées](/links/web/hosting-traffic-analysis){.external}
+Concernant cette option, apprenez-en plus grâce à notre [page sur les statistiques détaillées](/links/web/hosting-traffic-analysis).
 
 Une fois vos modifications faites, cliquez sur le bouton `Suivant`{.action} situé en bas à droite de la fenêtre afin de passer à l'[étape 2](#step2).
 
@@ -120,9 +121,9 @@ Une fois que vous avez cliqué sur le bouton `Suivant`{.action}, vous retrouvez 
 
 Si l'ensemble des paramètres sont configurés selon vos souhaits, cliquez sur le bouton `Confirmer`{.action}.
 
-Les modifications peuvent prendre de quelques minutes à quelques heures. Ceci en fonction des modifications et des options demandées précédemment.
+En fonction des options sélectionnées, les modifications peuvent prendre de quelques minutes à quelques heures à être appliquées.
 
-Si, pour les options **SSL**, **CDN**, **IP du pays** et **logs séparés**, les modifications ne sont pas prises en compte au bout de 24 heures, nous vous invitons à consulter les guides (et pages) respectifs indiqués pour l'ensemble des options décrites dans l'[étape 1](#step1). Ceci afin de vérifier que toutes les conditions requises ont bien été suivies, respectées et réalisées.
+Si, pour les options **SSL**, **CDN**, **IP du pays** et **logs séparés**, les modifications ne sont pas prises en compte au bout de 24 heures, nous vous invitons à consulter les guides (et pages) respectifs indiqués pour l'ensemble des options décrites dans l'[étape 1](#step1), afin de vérifier que toutes les conditions requises ont bien été suivies, respectées et réalisées.
 
 ## Aller plus loin
 
@@ -132,7 +133,7 @@ Si, pour les options **SSL**, **CDN**, **IP du pays** et **logs séparés**, les
 
 [Accélérer mon site web en utilisant le CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
 
-[Geolocaliser votre site web dans un pays spécifique](/pages/web_cloud/web_hosting/multisites_geolocation).
+[Géolocaliser votre site web dans un pays spécifique](/pages/web_cloud/web_hosting/multisites_geolocation).
 
 [Activer le pare-feu applicatif](/pages/web_cloud/web_hosting/multisites_activating_application_firewall).
 
