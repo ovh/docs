@@ -1,125 +1,140 @@
 ---
-title: "Annonces de fin de vie/support des distributions et logiciels disponibles avec votre VPS"
-excerpt: "Informez-vous sur les annonces de fin de vie et de support des distributions et logiciels pour votre VPS"
-updated: 2024-09-02
+title: "Public Cloud & VPS - Cycle de vie ry annonces de fin de vie/support des images et distributions"
+excerpt: "Découvrez le cycle de vie et les annonces de fin de vie et de support des distributions et logiciels pour votre VPS ou votre instance Public Cloud."
+updated: 2024-09-03
 ---
 
 ## Objectif
 
-Ce guide vous informe sur les annonces de fin de vie et de support des [distributions et logiciels disponibles avec votre VPS OVHcloud](https://www.ovhcloud.com/fr/vps/os/). Restez à jour sur les changements critiques qui pourraient affecter la sécurité et la performance de vos services.
+Ce guide vous informe sur la roadmap de fin de vie ainsi que les annonces de fin de vie et de support des [distributions et logiciels disponibles avec les VPS](https://www.ovhcloud.com/fr/vps/os/) et [instances Public Cloud OVHcloud](https://www.ovhcloud.com/fr/public-cloud/public-image-catalog/). Restez à jour sur les changements critiques qui pourraient affecter la sécurité et la performance de vos services.
 
-**Découvrez les annonces de fin de vie et de support des distributions et logiciels pour votre VPS.**
+**Découvrez le cycle de vie et les annonces de fin de vie et de support des distributions et logiciels pour votre VPS ou votre instance Public Cloud.**
 
-## En pratique
+## Cycle de vie des distributions
+
+| Distribution                  | URL                                                                                       |
+| ----------------------------- | ----------------------------------------------------------------------------------------- |
+| Debian                        | [Cycle de vie](https://wiki.debian.org/DebianReleases)                                      |
+| Ubuntu                        | [Cycle de vie](https://wiki.ubuntu.com/Releases)                                            |
+| Centos                        | [Cycle de vie](https://wiki.centos.org/About/Product)                                       |
+| Fedora                        | [Cycle de vie](https://fedoraproject.org/wiki/Fedora_Release_Life_Cycle)                    |
+| Almalinux                     | [Cycle de vie](https://wiki.almalinux.org/release-notes/)                                   |
+| Rocky Linux                   | [Cycle de vie](https://wiki.rockylinux.org/rocky/version/)                                  |
+| CloudLinux                    | [Cycle de vie](https://docs.cloudlinux.com/introduction/#cloudlinux-os-life-cycle)          |
+| Windows Server 2016           | [Cycle de vie](https://docs.microsoft.com/en-us/lifecycle/products/windows-server-2016)     |
+| Windows Server 2019           | [Cycle de vie](https://docs.microsoft.com/en-us/lifecycle/products/windows-server-2019)     |
+| Windows Server 2022           | [Cycle de vie](https://docs.microsoft.com/en-us/lifecycle/products/windows-server-2022)     |
+
+## Annonce de fin de support / fin de vie
 
 ### [AlmaLinuxOS](https://endoflife.date/almalinux){.external}
 
 #### AlmaLinux 8
 
-- Fin de support actif : 31 mai 2024
-- Fin de support de sécurité : 31 mai 2029
+- Fin de support actif : 2024-05-31
+- Fin de support de sécurité : 2029-05-31
 
 #### AlmaLinux 9
 
-- Fin de support actif : 31 mai 2027
-- Fin de support de sécurité : 31 mai 2032
+- Fin de support actif : 2027-05-31
+- Fin de support de sécurité : 2032-05-31
 
 ### [CentOS](https://endoflife.date/centos){.external}
 
 #### CentOS 7
 
-- Fin de vie : 30 juin 2024
+- Fin de vie : 2024-06-30
 
 ### [Debian](https://endoflife.date/debian){.external}
 
 #### Debian 10
 
-- Fin de support : 30 juin 2024
+- Fin de support : 2024-06-30
 
 #### Debian 11
 
-- Fin de support : 30 juin 2026
+- Fin de support : 2026-06-30
 
 #### Debian 12
 
-- Fin de support : 30 juin 2028
+- Fin de support : 2028-06-30
 
 ### [Fedora Linux](https://endoflife.date/fedora){.external}
 
 #### Fedora 37
 
-- Fin de vie : 12 mai 2023
+- Fin de vie : 2023-05-12
 
 #### Fedora 38
 
-- Fin de vie : 21 Mai 2024
+- Fin de vie : 2024-05-21
 
 ### [Rocky Linux](https://endoflife.date/rocky-linux){.external}
 
 #### Rocky Linux 8
 
-- Fin de support actif : 31 mai 2024
-- Fin de support de sécurité : 31 mai 2029
+- Fin de support actif : 2024-05-31
+- Fin de support de sécurité : 2029-05-31
 
 #### Rocky Linux 9
 
-- Fin de support actif : 31 mai 2027
-- Fin de support de sécurité : 31 mai 2032
+- Fin de support actif : 2027-05-31
+- Fin de support de sécurité : 2032-05-31
 
 ### [Ubuntu](https://endoflife.date/ubuntu){.external}
 
 #### Ubuntu 20.04
 
-- Fin de support de sécurité et maintenance : 2 avril 2025
-- Fin de support de sécurité étendue : 2 avril 2030
+- Fin de support de sécurité et maintenance : 2025-04-02
+- Fin de support de sécurité étendue : 2030-04-02
 
 #### Ubuntu 21.04
 
-- Fin de vie : janvier 2022
+- Fin de vie : 2022-01-20
 
 #### Ubuntu 22.04
 
-- Fin de support de sécurité et maintenance : 1er avril 2027
-- Fin de support de sécurité étendue : 9 avril 2032
+- Fin de support de sécurité et maintenance : 2027-04-01
+- Fin de support de sécurité étendue : 2032-04-09
 
 #### Ubuntu 23.04
 
-- Fin de vie : 25 janvier 2024
+- Fin de vie : 2024-01-25
 
 ### [Microsoft Windows Server](https://endoflife.date/windows-server){.external}
 
 #### Windows Server 2016 Standard (Desktop)
 
-- Fin de support actif : 11 janvier 2022
-- Fin de support sécurité : 12 janvier 2027
+- Fin de support actif : 2022-01-11
+- Fin de support sécurité : 2027-01-12
 
 #### Windows Server 2019 Standard (Desktop)
 
-- Fin de support actif: 9 janvier 2024
-- Fin de support sécurité: 9 janvier 2029
+- Fin de support actif: 2024-01-09
+- Fin de support sécurité: 2029-01-09
 
 #### Windows Server 2022 Standard (Desktop)
 
-- Fin de support actif : 13 octobre 2026
-- Fin de support sécurité: 14 octobre 2031
+- Fin de support actif : 2026-10-13
+- Fin de support sécurité: 2031-10-14
 
 ### [AlmaLinux OS](https://endoflife.date/almalinux){.external}
 
 #### AlmaLinux 8 - cPanel
 
-- Fin de vie (cPanel) : 1er mars 2029
+- Fin de vie (cPanel) : 2029-03-01
 
 ### [Debian](https://endoflife.date/debian){.external}
 
 #### Debian 10 - Plesk
 
-- Fin de support standard (Debian 10) : 30 juin 2024
-- Fin de support étendu (Debian 10) : 1er juillet 2025
+- Fin de support standard (Debian 10) : 2024-06-30
+- Fin de support étendu (Debian 10) : 2025-07-01
 
 #### Debian 10 – Docker
 
-- Fin de support de sécurité : 10 septembre 2022
-- Fin de support long terme : 30 juin 2024
+- Fin de support de sécurité : 2022-09-10
+- Fin de support long terme : 2024-06-30
 
 ## Aller plus loin
 
