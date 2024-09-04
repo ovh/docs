@@ -23,9 +23,9 @@ Sie haben die Möglichkeit, Instanzen direkt über das Horizon-Interface zu erst
 
 ### Ein privates Netzwerk erstellen
 
-Im Allgemeinen empfehlen wir Ihnen, vor der Erstellung einer Instanz ein privates Netzwerk zu erstellen. Sie können dieses Netzwerk später mit Ihrer Instanz verbinden.
+Generell empfiehlt es sich, vor der Erstellung einer Instanz ein privates Netzwerk zu erstellen. Sie können dieses Netzwerk später mit Ihrer Instanz verbinden.
 
-Loggen Sie sich zunächst im Horizon-Interface ein. Wenn Sie hierbei Hilfe brauchen, lesen Sie unsere [Anleitung](/pages/public_cloud/compute/introducing_horizon).
+Loggen Sie sich zunächst im Horizon-Interface ein. Wenn Sie hierbei Hilfe benötigen, lesen Sie unsere [Anleitung](/pages/public_cloud/compute/introducing_horizon).
 
 Klicken Sie dann im linken Menü auf `Network`{.action} und anschließend auf `Networks`{.action}.
 
@@ -49,7 +49,7 @@ Klicken Sie auf `Create Network`{.action}
 >>
 >> **Subnet Name:** Geben Sie einen Namen für Ihr Subnetz ein.<br>
 >> **Network Address:** Wählen Sie einen privaten Netzwerkbereich aus. Beispiel: `192.168.0.0/24`.<br>
->> **IP Version:** Überlassen Sie diesen Wert IPv4.<br>
+>> **IP Version:** Behalten Sie den Wert IPv4 bei.<br>
 >> **Gateway IP:** Optional. Wenn diese Option nicht aktiviert ist, wird automatisch eine IP-Gateway-Adresse ausgewählt.<br>
 >> **Disable Gateway:** Lassen Sie diese Option deaktiviert.<br><br>
 >>![subnet](images/subnet_information.png){.thumbnail}<br>
@@ -58,7 +58,7 @@ Klicken Sie auf `Create Network`{.action}
 >>
 >> **Enable DHCP:** Lassen Sie diese Option aktiviert.<br>
 >> **Allocation Pools:** Optional. Sie können den Bereich angeben, in dem IP-Adressen ausgewählt werden.<br>
->> **DNS Name Servers:** Optional. Sie können einen beliebigen DNS-Namenserver angeben.<br>
+>> **DNS Name Servers:** Optional. Sie können einen beliebigen DNS-Server angeben.<br>
 >> **Host Routes:** Optional. Sie können eine beliebige Hostroute angeben.<br><br>
 >>![KVM](images/subnetdetails_information.png){.thumbnail}<br>
 >>
@@ -74,7 +74,7 @@ Auf der angezeigten Seite können Sie die bereits gestarteten Instanzen einsehen
 
 ![Instanz erstellen](images/create-instance-step2.png){.thumbnail}
 
-Geben Sie dann die angeforderten Informationen ein. Bitte beachten Sie, dass die Tabelle nicht vollständig ist.
+Geben Sie dann die angeforderten Informationen ein. Beachten Sie, dass die Tabelle nicht vollständig ist.
 
 **Details**
 
@@ -84,8 +84,8 @@ Geben Sie dann die angeforderten Informationen ein. Bitte beachten Sie, dass die
 |---|---|
 |Instance name|Geben Sie den gewünschten Namen für die Instanz an, die gestartet wird.|
 |Description|Optional. Fügen Sie bei Bedarf eine Beschreibung hinzu.|
-|Availability zone|Lassen Sie “nova” stehen (Standardauswahl).|
-|Count|Geben Sie die Anzahl der zu erstellenden Instanzen ein|
+|Availability zone|Behalten Sie “nova” bei (Standardauswahl).|
+|Count|Geben Sie die Anzahl der zu erstellenden Instanzen ein.|
 
 **Source**
 
@@ -94,26 +94,26 @@ Geben Sie dann die angeforderten Informationen ein. Bitte beachten Sie, dass die
 
 |Information|Details|
 |---|---|
-|Boot Source|Klicken Sie auf den Dropdownpfeil, um die Startquelle einer Instanz auszuwählen (z. B. *Image* oder *Instance Snapshot*).|
-|Create New Volume|Aktivieren Sie diese Option, wenn Sie ein Volume erstellen möchten, auf das das angegebene Betriebssystemabbild kopiert wird.|
+|Boot Source|Klicken Sie auf den Dropdownpfeil, um die Basis einer Instanz auszuwählen (z.B. *Image* oder *Instance Snapshot*).|
+|Create New Volume|Aktivieren Sie diese Option, wenn Sie ein Volume erstellen möchten, auf das das angegebene Betriebssystem-Image kopiert wird.|
 |Volume size (GB)|Wenn Sie ein Volume erstellen möchten, überlassen Sie die Größe dem System.|
 |Delete Volume on Instance Delete|Sie können die Standardoption **No** beibehalten. Wenn **Yes** ausgewählt ist, wird beim Löschen der Instanz auch das Volume gelöscht.|
-|Image name|Wählen Sie das Image der Instanz aus (nur beim Start von einem Image aus), indem Sie auf den Pfeil nach oben neben dem gewünschten Image klicken. In unserem Beispiel verwenden wir eine Auswahl von CentOS 7.|
-|Instance Snapshot|Wählen Sie einen Snapshot einer Instanz aus (nur beim Start von einem Snapshot aus), indem Sie auf den Pfeil nach oben neben dem gewünschten Instanz-Snapshot-Image klicken.|
+|Image name|Wählen Sie das Image der Instanz aus (nur beim Start von einem Image aus), indem Sie auf den Pfeil neben dem gewünschten Image klicken. In diesem Beispiel wählen wir CentOS 7.|
+|Instance Snapshot|Wählen Sie einen Snapshot einer Instanz aus (nur beim Start von einem Snapshot aus), indem Sie auf den Pfeil neben dem gewünschten Instanz-Snapshot-Image klicken.|
 
 **Flavor**
 
 ![createInstance](images/create-instance-step5.png){.thumbnail}
 
-Für Sie sind vorgefertigte *flavors* verfügbar. Wählen Sie im Tab `Available` die *flavor* Ihrer Wahl aus.
+Es sind Vorlagen in Form von *flavors* verfügbar. Wählen Sie im Tab `Available` den *flavor* Ihrer Wahl aus.
 
 **Networks**
 
 |Information|Details|
 |---|---|
-|Network|Wählen Sie in der Liste der verfügbaren Netzwerke das Netzwerk(e) für die Instanz aus, die Sie erstellen möchten |
-|Ext-Net|Stellt das öffentliche Netzwerk dar.|
-|Mynewnetwork|Stellt das private Netzwerk dar, das am Anfang dieser Anleitung erstellt wurde.|
+|Network|Wählen Sie in der Liste der verfügbaren Netzwerke das Netzwerk für die Instanz aus, die Sie erstellen möchten. |
+|Ext-Net|Das öffentliche Netzwerk.|
+|Mynewnetwork|Das private Netzwerk, das zu Beginn dieser Anleitung erstellt wurde.|
 
 **Security Groups (Sicherheitsgruppen)**
 
@@ -138,7 +138,7 @@ Weitere Informationen zum Erstellen eines SSH-Schlüssels finden Sie in [dieser 
 > [!tabs]
 > **+ Create Key Pair**
 >>
->> Klicken Sie auf die Schaltfläche `+ Create Key Pair`{.action}, um ein Schlüsselpaar zu erstellen. Bitte beachten Sie, dass bei dieser Option zusätzliche Schritte notwendig sind, bevor Sie sich mit der Instanz verbinden können, insbesondere wenn Sie die Putty-Software verwenden, um sich mit Ihrer Instanz zu verbinden. Lesen Sie [diesen Abschnitt](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) der entsprechenden Anleitung.
+>> Klicken Sie auf die Schaltfläche `+ Create Key Pair`{.action}, um ein Schlüsselpaar zu erstellen. Bitte beachten Sie, dass bei dieser Option zusätzliche Schritte notwendig sind, bevor Sie sich mit der Instanz verbinden können, insbesondere wenn Sie die PuTTY-Software verwenden, um sich mit Ihrer Instanz zu verbinden. Lesen Sie [diesen Abschnitt](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) der entsprechenden Anleitung.
 >>
 >> **Key Pair Name:** Geben Sie einen Namen für Ihren Schlüssel ein.<br>
 >> **Key Type:** Klicken Sie auf den `Dropdownpfeil` und wählen Sie `SSH Key`.<br>
@@ -158,7 +158,7 @@ Weitere Informationen zum Erstellen eines SSH-Schlüssels finden Sie in [dieser 
 >> **Key Pair Name:** Geben Sie einen Namen für Ihren Schlüssel ein.<br>
 >> **Key Type:** Klicken Sie auf den `Dropdownpfeil` und wählen Sie `SSH Key`.<br>
 >> **Load Public Key from a file (Öffentlichen Schlüssel aus Datei laden):** Klicken Sie auf `Browse`{.action}, um den Speicherort des öffentlichen Schlüssels auf Ihrem Computer anzugeben.<br>
->> **Public Key:** Kopieren Sie Ihren öffentlichen Schlüssel, und fügen Sie ihn hier ein.<br>
+>> **Public Key:** Kopieren Sie Ihren öffentlichen Schlüssel und fügen Sie ihn hier ein.<br>
 >> Klicken Sie auf `Import Key Pair`{.action}, um den Schlüssel zu importieren.<br><br>
 >>![Import-Key-gerade](images/import-ssh-key.png){.thumbnail}<br>
 >>
@@ -168,14 +168,14 @@ Weitere Informationen zum Erstellen eines SSH-Schlüssels finden Sie in [dieser 
 
 **Weitere Optionen**
 
-Achtung, diese Optionen sind für die Erstellung einer Basisinstanz nicht zwingend erforderlich. Weitere Informationen zu diesen Optionen finden Sie in der [offiziellen OpenStack-Dokumentation](https://docs.openstack.org/horizon/latest/user/launch-instances.html){.external}.
+Achtung, diese Optionen sind für die Erstellung einer Instanz nicht zwingend erforderlich. Weitere Informationen zu diesen Optionen finden Sie in der [offiziellen OpenStack-Dokumentation](https://docs.openstack.org/horizon/latest/user/launch-instances.html){.external}.
 
 
 |Information|Details|
 |---|---|
-|Custom script source|Geben Sie die Quelle in einen "direct entry" oder eine "file" ein.|
+|Custom script source|Geben Sie die Quelle als "direct entry" oder "file" ein.|
 |Script data|Geben Sie den Skriptcode in das Eingabefeld ein (maximal 16 KB).|
-|Script file|Klicken Sie auf `Browse`{.action}, um das Post-Installations-Skript auszuwählen.|
+|Script file|Klicken Sie auf `Browse`{.action}, um das Post-Installation-Skript auszuwählen.|
 |Disk Partitioning|Wählen Sie zwischen "automatic" und "manual".|
 |Configuration disk|Konfigurieren Sie OpenStack so, dass Metadaten auf einen bestimmten Konfigurationsdatenträger geschrieben werden, der beim Start an die Instanz angehängt wird.|
 
