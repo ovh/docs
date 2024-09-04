@@ -22,7 +22,7 @@ Die GPU Instanzen sind den Instanzen aus der Produktreihe 2017 technisch ähnlic
 ## Voraussetzungen
 
 - Sie haben ein [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud) mit Zugriff auf die Regionen, in denen GPUs verfügbar sind (GRA7, GRA9, GRA11 und BHS5) in Ihrem Kunden-Account.
-- Sie haben einen [SSH-Schlüssel](public_cloud/compute/creating-ssh-keys-pci) für die Bereitstellung einer Linux GPU Instanz erstellt.
+- Sie haben einen [SSH-Schlüssel](/pages/public_cloud/compute/creating-ssh-keys-pci) für die Bereitstellung einer Linux GPU Instanz erstellt.
 
 ## In der praktischen Anwendung
 

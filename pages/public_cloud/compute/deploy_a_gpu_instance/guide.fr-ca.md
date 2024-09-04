@@ -18,7 +18,7 @@ Les instances GPU sont techniquement similaires aux instances de la gamme 2017 m
 ## Prérequis
 
 - Un projet Public Cloud avec accès aux régions où la plupart des GPU sont disponibles (GRA7, GRA9, GRA11 et BHS5).
-- [Une clé SSH](public_cloud/compute/creating-ssh-keys-pci) créée pour déployer une instance GPU Linux.
+- [Une clé SSH](/pages/public_cloud/compute/creating-ssh-keys-pci) créée pour déployer une instance GPU Linux.
 
 ## En pratique
 

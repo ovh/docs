@@ -37,7 +37,7 @@ This section allows you to store and manage SSH key pairs. You can simply create
 
 If you have an existing key to add, click on `Import Public Key`{.action}. In the popup window, you can enter a key string or select a key file.
 
-This interface section includes some basic instructions; for more information about SSH keys please refer to [this guide](public_cloud/compute/creating-ssh-keys-pci).
+This interface section includes some basic instructions; for more information about SSH keys please refer to [this guide](/pages/public_cloud/compute/creating-ssh-keys-pci).
 
 - **Security Groups** (under `Project`{.action} / `Network`{.action})
 

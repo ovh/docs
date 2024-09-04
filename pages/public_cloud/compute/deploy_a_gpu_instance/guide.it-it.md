@@ -22,7 +22,7 @@ Le istanze GPU sono tecnicamente simili alle istanze della gamma 2017 ma dispong
 ## Prerequisiti
 
 - Aver creato un progetto Public Cloud con accesso alle Region in cui è disponibile la maggior parte delle GPU (GRA7, GRA9, GRA11 e BHS5).
-- [Una chiave SSH](public_cloud/compute/creating-ssh-keys-pci) creata per implementare un’istanza GPU Linux.
+- [Una chiave SSH](/pages/public_cloud/compute/creating-ssh-keys-pci) creata per implementare un’istanza GPU Linux.
 
 ## Procedura
 

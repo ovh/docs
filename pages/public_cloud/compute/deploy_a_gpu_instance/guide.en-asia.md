@@ -18,7 +18,7 @@ GPU instances are technically similar to the instances from the older range, but
 ## Requirements
 
 - A Public Cloud project with access to the regions where most GPUs are available (GRA7, GRA9, GRA11 and BHS5)
-- [An SSH key](public_cloud/compute/creating-ssh-keys-pci) created to deploy a linux GPU instance.
+- [An SSH key](/pages/public_cloud/compute/creating-ssh-keys-pci) created to deploy a linux GPU instance.
 
 ## Instructions
 

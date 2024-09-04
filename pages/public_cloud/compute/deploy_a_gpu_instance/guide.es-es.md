@@ -22,7 +22,7 @@ Las instancias GPU son técnicamente similares a las instancias de la gama 2017,
 ## Requisitos
 
 - Un proyecto Public Cloud con acceso a las regiones en las que están disponibles la mayoría de las GPU (GRA7, GRA9, GRA11 y BHS5).
-- [Una llave SSH](public_cloud/compute/creating-ssh-keys-pci) creada para desplegar una instancia GPU Linux.
+- [Una llave SSH](/pages/public_cloud/compute/creating-ssh-keys-pci) creada para desplegar una instancia GPU Linux.
 
 ## Procedimiento
 

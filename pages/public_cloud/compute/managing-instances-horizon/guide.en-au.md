@@ -13,7 +13,7 @@ Beside the OVHcloud Control Panel, you can also manage your Public Cloud project
 ## Requirements
 
 - You need to have created a Public Cloud instance in your [OVHcloud Control Panel](/pages/public_cloud/compute/public-cloud-first-steps) or through the [Horizon interface](/pages/public_cloud/compute/create_instance_in_horizon)
-- [An SSH key](public_cloud/compute/creating-ssh-keys-pci)
+- [An SSH key](/pages/public_cloud/compute/creating-ssh-keys-pci)
 
 ## Access the management interface for the instance
 

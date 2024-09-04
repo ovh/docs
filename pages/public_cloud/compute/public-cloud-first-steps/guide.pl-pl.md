@@ -94,9 +94,9 @@ Masz do wyboru dwie opcje tworzenia kluczy SSH i zarządzania nimi:
 - Interfejs wiersza poleceń systemu operacyjnego (prosty klient **Open SSH**).
 - Dodatkowe oprogramowanie (kompatybilne z protokołem **Open SSH**) z wierszem poleceń lub interfejsem graficznym.
 
-Większość współczesnych stacjonarnych systemów operacyjnych zawiera natywnie klienta **Open SSH** dostępny za pośrednictwem aplikacji wiersza poleceń systemu (`cmd`, `Powershell`, `Terminal`, etc.). Jeśli nie wiesz, jak używać kluczy SSH jako metody uwierzytelniania, możesz użyć instrukcji z [tego przewodnika](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#create-ssh-key), aby utworzyć parę kluczy.
+Większość współczesnych stacjonarnych systemów operacyjnych zawiera natywnie klienta **Open SSH** dostępny za pośrednictwem aplikacji wiersza poleceń systemu (`cmd`, `Powershell`, `Terminal`, etc.). Jeśli nie wiesz, jak używać kluczy SSH jako metody uwierzytelniania, możesz użyć instrukcji z [tego przewodnika](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key), aby utworzyć parę kluczy.
 
-Jeśli używasz innego oprogramowania, zapoznaj się z jego dokumentacją. Instrukcje dotyczące rozwiązania open source `PuTTY` są dostępne w [tym przewodniku](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#useputty).
+Jeśli używasz innego oprogramowania, zapoznaj się z jego dokumentacją. Instrukcje dotyczące rozwiązania open source `PuTTY` są dostępne w [tym przewodniku](/pages/public_cloud/compute/creating-ssh-keys-pci#useputty).
 
 <a name="import-ssh"></a>
 
@@ -425,7 +425,7 @@ Jeśli Twoja [para kluczy SSH jest prawidłowo skonfigurowana](#create-ssh), mo�
 
 > [!primary]
 >
-> Jeśli wyświetlają się komunikaty o błędach dotyczące **kluczy SSH**, sprawdź, czy na Twoim lokalnym urządzeniu jest poprawnie skonfigurowany prywatny klucz SSH, używając informacji z [tego przewodnika](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#create-ssh-key).</br>
+> Jeśli wyświetlają się komunikaty o błędach dotyczące **kluczy SSH**, sprawdź, czy na Twoim lokalnym urządzeniu jest poprawnie skonfigurowany prywatny klucz SSH, używając informacji z [tego przewodnika](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key).</br>
 > Jeśli nadal występują problemy, możesz wymienić parę kluczy za pomocą [tego przewodnika](/pages/public_cloud/compute/replacing_lost_ssh_key).
 >
 > Jeśli instancja została utworzona bez klucza SSH, w [API OVHcloud](/pages/manage_and_operate/api/first-steps) lub [interfejs OpenStack Horizon](/pages/public_cloud/compute/create_instance_in_horizon) możesz dodać klucz SSH do instancji tylko w trybie [rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode), postępując zgodnie z instrukcjami zawartymi w [tym przewodniku](/pages/public_cloud/compute/replacing_lost_ssh_key).
@@ -443,9 +443,9 @@ Przykład:
 ssh ubuntu@203.0.113.101
 ```
 
-[W zależności od konfiguracji](#create-ssh), wprowadź hasło, które chroni klucz prywatny lub określ ścieżkę dostępu do pliku klucza. Szczegółowe informacje na ten temat można znaleźć w [przewodniku dotyczącym kluczy SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#multiplekeys).
+[W zależności od konfiguracji](#create-ssh), wprowadź hasło, które chroni klucz prywatny lub określ ścieżkę dostępu do pliku klucza. Szczegółowe informacje na ten temat można znaleźć w [przewodniku dotyczącym kluczy SSH](/pages/public_cloud/compute/creating-ssh-keys-pci#multiplekeys).
 
-Jeśli używasz innego klienta SSH, zapoznaj się z jego dokumentacją. Przykład zastosowania rozwiązania open source `PuTTY` można znaleźć w [tym przewodniku](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#useputty).
+Jeśli używasz innego klienta SSH, zapoznaj się z jego dokumentacją. Przykład zastosowania rozwiązania open source `PuTTY` można znaleźć w [tym przewodniku](/pages/public_cloud/compute/creating-ssh-keys-pci#useputty).
 
 Kontynuuj[etap 6 poniżej](#manage-access).
 

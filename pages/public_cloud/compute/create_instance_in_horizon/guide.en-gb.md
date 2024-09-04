@@ -128,7 +128,7 @@ For more information, consult [this guide](/pages/public_cloud/compute/setup_sec
 
 In this section, you have the option to create a keypair, import a keypair or use an existing key pair.
 
-For more information on how to create an SSH key, consult [this guide](public_cloud/compute/creating-ssh-keys-pci).
+For more information on how to create an SSH key, consult [this guide](/pages/public_cloud/compute/creating-ssh-keys-pci).
 
 > [!tabs]
 > **+ Create Key Pair**

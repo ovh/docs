@@ -22,7 +22,7 @@ Instancje GPU są technicznie podobne do instancji z oferty 2017, ale mają też
 ## Wymagania początkowe
 
 - Projekt Public Cloud z dostępem do regionów, w których dostępna jest większość GPU (GRA7, GRA9, i BHS5).
-- [Klucz SSH](public_cloud/compute/creating-ssh-keys-pci) utworzony w celu wdrożenia instancji GPU Linux.
+- [Klucz SSH](/pages/public_cloud/compute/creating-ssh-keys-pci) utworzony w celu wdrożenia instancji GPU Linux.
 
 ## W praktyce
 

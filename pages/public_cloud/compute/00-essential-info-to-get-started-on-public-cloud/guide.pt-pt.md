@@ -131,7 +131,7 @@ Na prática, pode consultar os seguintes manuais:
 |Documentação|Detalhes|
 |---|---|
 |[Criar a primeira instância](/pages/public_cloud/compute/public-cloud-first-steps)|Primeiro guia prático para iniciar um servidor cloud a partir da Área de Cliente OVHcloud.|
-|[Utilização de uma chave SSH](public_cloud/compute/creating-ssh-keys-pci)| Para se ligar a uma instância Linux, terá de passar por uma ligação SSH, este manual explica-lhe a utilização.|
+|[Utilização de uma chave SSH](/pages/public_cloud/compute/creating-ssh-keys-pci)| Para se ligar a uma instância Linux, terá de passar por uma ligação SSH, este manual explica-lhe a utilização.|
 |[Configuração da rede privada](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack)|Na OVHcloud, as redes privadas são suportadas pela tecnologia vRack. Este guia acompanha-o nesta implementação.|
 |[Associar um disco suplementar a uma instância](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)|Este manual fornece instruções para adicionar espaço de armazenamento adicional à primeira instância.|
 |[Aceder à interface Horizon](/pages/public_cloud/compute/introducing_horizon)|A interface Horizon da OpenStack permite algumas ações avançadas. Aqui está como conectá-lo.|
