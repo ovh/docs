@@ -1,6 +1,6 @@
 ---
 title: "Gestion des snapshots d’une instance dans horizon"
-updated: 2022-01-31
+updated: 2024-09-03
 ---
 
 ## Objectif
@@ -32,7 +32,42 @@ Dans la fenêtre qui s'affiche, saisissez les informations requises :
 
 ![Create snapshot](images/createsnapshot2.png){.thumbnail}
 
-Le snapshot sera ensuite listé dans la section `Images`{.action}. Il est donc conseillé d'attribuer un nom explicite à chaque snapshot. 
+Le snapshot sera ensuite listé dans la section `Images`{.action}. Il est donc conseillé d'attribuer un nom explicite à chaque snapshot.
+
+### Restauration d'un snapshot
+
+Il est possible de restaurer un snapshot en créant une nouvelle instance à partir de celui-ci.
+
+Dans l'interface de Horizon, cliquez sur le menu `Compute`{.action} à gauche puis sur `Images`{.action}.
+
+Cliquez sur `Launch`{.action} à côté du snapshot sélectionné.
+
+![restaurer le snapshot](images/restoresnapshot.png){.thumbnail}
+
+Dans la fenêtre contextuelle, un certain nombre d'options doivent être sélectionnées pour terminer la restauration du snapshot.
+
+> [!tabs]
+> **Details**
+>>
+>> **Nom de l'instance (*Instance name*) :** Indiquez le nom souhaité pour l'instance.<br>
+>> **Count:** Sélectionnez le nombre d'instances à lancer à partir du snapshot.<br><br>
+>>![snapshot](images/restoresnapshot1.png){.thumbnail}<br>
+>>
+> **Flavor**
+>>
+>> Sélectionnez la flavor souhaitée. Assurez-vous de sélectionner une version dont les ressources sont égales ou supérieures à la taille de l’image (instantané).<br><br>
+>>![network](images/restoresnapshot2.png){.thumbnail}<br>
+>>
+> **Réseau (*Network*)**
+>>
+>> Sélectionnez un réseau public (Ext-Net) à attacher à l’instance.<br><br>
+>>![network](images/restoresnapshot3.png){.thumbnail}<br>
+>>
+> **Keypair**
+>>
+>> Sélectionnez (3), créez (1) ou importez (2) une paire de clés.<br><br>
+>>![network](images/restoresnapshot4.png){.thumbnail}<br>
+>>
 
 ### Supression d'un snapshot
 

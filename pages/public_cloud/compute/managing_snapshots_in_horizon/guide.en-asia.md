@@ -1,6 +1,6 @@
 ---
 title: Managing snapshots of an instance in Horizon
-updated: 2024-08-30
+updated: 2024-09-03
 ---
 
 ## Objective
@@ -36,15 +36,15 @@ The snapshot will then be listed in the `Images`{.action} section. For this reas
 
 ### Restore a snapshot
 
-To restore a snapshot, a new instance needs to be created from it.
+You can restore a snapshot by creating a new instance from it.
 
 In the horizon interface, click on the `Compute`{.action} menu on the left side, then click on `Images`{.action}.
 
-Next, click on `Launch`.
+Click on `Launch`{.action} next to the selected snapshot.
 
 ![restore snapshot](images/restoresnapshot.png){.thumbnail}
 
-In the pop-up windows, a few options need to be selected to complete the restoration of the snapshot.
+In the pop-up window, a number of options need to be selected to complete the restoration of the snapshot.
 
 > [!tabs]
 > **Details**
@@ -55,7 +55,7 @@ In the pop-up windows, a few options need to be selected to complete the restora
 >>
 > **Flavor**
 >>
->> Select the flavor you want. Make sure to select one with equal or more resources than the image size (snapshot).<br><br>
+>> Select the flavor you want. Make sure you select a flavor whose resources are equal to or greater than the size of the image (snapshot).<br><br>
 >>![network](images/restoresnapshot2.png){.thumbnail}<br>
 >>
 > **Network**
@@ -65,7 +65,7 @@ In the pop-up windows, a few options need to be selected to complete the restora
 >>
 > **Keypair**
 >>
->> Select, create or import a key pair. Adding an ssh key to an instance facilates the connection to it.<br><br>
+>> Select (3), create (1) or import (2) a key pair.<br><br>
 >>![network](images/restoresnapshot4.png){.thumbnail}<br>
 >>
 
