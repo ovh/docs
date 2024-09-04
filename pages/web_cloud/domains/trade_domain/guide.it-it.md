@@ -59,7 +59,7 @@ Accedi allo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.acti
 
 Nella scheda `Informazioni generali`{.action}, clicca sul pulsante **Abbonamento** nell'angolo in basso a destra. Clicca sui tre puntini `...`{.action} davanti ai **Contatti** e poi clicca su `Modifica proprietario`{.action}.
 
-![modifica del proprietario](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/change-domain-name-holder.png){.thumbnail}
+![modifica del proprietario](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/change-owner.png){.thumbnail}
 
 > [!warning]
 >
@@ -98,7 +98,7 @@ Se è necessario aggiornare alcune informazioni secondarie come il numero di tel
 
 Nella sezione **Abbonamento** della scheda `Informazioni generali`{.action}, clicca sui tre puntini `...`{.action} davanti ai **Contatti** e poi clicca su `Aggiorna le informazioni del proprietario `{.action}.
 
-![modifica del proprietario](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/refresh-owner-information.png){.thumbnail}
+![modifica del proprietario](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/refresh-holder-information.png){.thumbnail}
 
 Per questa operazione non è necessario confermare le modifiche tramite email.
 

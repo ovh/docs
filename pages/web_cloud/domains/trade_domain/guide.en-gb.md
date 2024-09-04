@@ -53,7 +53,7 @@ Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.
 
 In the `General information`{.action} tab, go to the **Plan** section in the bottom right corner. Click `...`{.action} next to the **contacts**, then click `Change domain name holder`{.action}.
 
-![changing owner](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/change-domain-name-holder.png){.thumbnail}
+![changing owner](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/change-owner.png){.thumbnail}
 
 > [!warning]
 >
@@ -91,7 +91,7 @@ If you need to update some secondary information such as phone number, address e
 
 In the **Plan** section of the `General information`{.action} tab, click on `...`{.action} next to the **contacts**, then click `Refresh owner information`{.action}.
 
-![changing owner](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/refresh-owner-information.png){.thumbnail}
+![changing owner](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/refresh-holder-information.png){.thumbnail}
 
 With this operation you do not need to confirm changes by email.
 
