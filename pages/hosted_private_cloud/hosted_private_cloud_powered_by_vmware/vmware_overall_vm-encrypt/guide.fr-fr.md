@@ -160,11 +160,11 @@ Nous utiliserons pour cette option un **Fournisseur de clé standard.**
 
 #### Option 3 - Sans KMS (vNKP)
 
-/// details | Avec vMware Native Key Protocol
+/// details | Avec VMware Native Key Provider
 
 > [!primary]
 >
-> Attention, vNKP n'est pas un service de gestion de clé KMS (sans KMS/OKMS).
+> Attention, vNKP n'est pas un service de gestion de clé KMS. Cette fonctionnalité n'est utilisée que pour la gestion des clés locale au vCenter.
 >
 
 Cette option convient si vous n'avez pas de service de gestion de clé externe et que vous ne voulez pas utiliser celui de OVHcloud (OKMS).
