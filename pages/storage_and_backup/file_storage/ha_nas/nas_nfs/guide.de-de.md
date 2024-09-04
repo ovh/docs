@@ -262,15 +262,15 @@ Sie können den folgenden Befehl verwenden, um die aktuell verwendete Version fe
 ubuntu@server:~$ nfsstat -m
 ```
 
-## Tipps zur Optimierung der Leistung und/oder Stabilität Ihrer NFS-Verbindung
+## Hinweise zur Optimierung der Leistung und Stabilität Ihrer NFS-Verbindung
 
-In den meisten Fällen sind die standardmäßigen Mount-Optionen, die in Linux-Clients konfiguriert sind, ausreichend, um eine akzeptable Leistung zu erzielen. In manchen Situationen kann es jedoch sinnvoll sein, bestimmte Optionen zu aktivieren oder zu deaktivieren, um eine bessere Gesamtleistung zu erzielen.
+In den meisten Fällen sind die Mount-Optionen, die in Linux-Clients vorkonfiguriert sind, ausreichend, um eine akzeptable Leistung zu erzielen. In manchen Situationen kann es jedoch sinnvoll sein, bestimmte Optionen zu aktivieren oder zu deaktivieren, um eine bessere Gesamtleistung zu erzielen.
 
 Um eine optimale Leistung zu erzielen und eine Vielzahl von Bugs zu vermeiden, die im NFS-Client identifiziert werden, empfehlen wir die Verwendung eines möglichst aktuellen Linux-Kernels.
 
 Nachfolgend finden Sie einige Elemente, die Ihnen bei der Feinabstimmung der Konfiguration Ihres NFS-Clients helfen könnten.
 
-### Einige Mount-Optionen sollten Sie in Betracht ziehen
+### Mount-Optionen 
 
 Sie können die Mount-Optionen, die Ihr Linux-Client anwendet, mit dem Befehl `mount -l` einsehen.
 
@@ -280,26 +280,26 @@ Beispiel für die Rückgabe dieses Befehls:
 XX.XX.XX.XX:/zpool-XXXXXX/DIR on /mnt type nfs4 (rw,relatime,vers=4.2,rsize=131072,wsize=131072,namlen=255,hard,proto=tcp,timeo=600,retrans=2,...)
 ```
 
-- `rsize=1048576` - Legt die maximale Anzahl von Datenbytes fest, die der NFS-Client für jede Netzwerkleseanforderung empfangen kann. Dieser Wert wird angewendet, wenn Daten aus einer Datei in ein NFS-Dateisystem gelesen werden. Die größtmögliche Größe (bis zu 1048576) garantiert eine bessere Leistung.
-- `wsize=1048576` - Legt die maximale Anzahl von Datenbytes fest, die der NFS-Client für jede Schreibanforderung über das Netzwerk senden kann. Dieser Wert gilt, wenn Daten in eine Datei in ein NFS-Dateisystem geschrieben werden. Die größtmögliche Größe (bis zu 1048576) garantiert eine bessere Leistung.
+- `rsize=1048576`: Legt die maximale Anzahl von Datenbytes fest, die der NFS-Client für jede Netzwerkleseanforderung empfangen kann. Dieser Wert wird angewendet, wenn Daten aus einer Datei in ein NFS-Dateisystem gelesen werden. Die größtmögliche Größe (bis zu 1048576) garantiert eine bessere Leistung.
+- `wsize=1048576`: Legt die maximale Anzahl von Datenbytes fest, die der NFS-Client für jede Schreibanforderung über das Netzwerk senden kann. Dieser Wert gilt, wenn Daten in eine Datei in ein NFS-Dateisystem geschrieben werden. Die größtmögliche Größe (bis zu 1048576) garantiert eine bessere Leistung.
 - `hard`: Legt das Wiederherstellungsverhalten des NFS-Clients nach dem Ablaufdatum einer Anforderung fest, sodass die Anforderungen unbegrenzt wiederholt werden, bis der HA-NAS antwortet. Diese Option gewährleistet die Datenintegrität.
 - `timeo=150`: Legt den Timeoutwert fest, den der NFS-Client verwendet, um auf eine Antwort zu warten, bevor eine NFS-Anforderung erneut ausgeführt wird. Verwenden Sie einen Wert von mindestens 150, d. h. 15 Sekunden, um Leistungseinbußen zu vermeiden.
-- `retrans=2` - Legt die Anzahl der Anforderungen des NFS-Clients auf 2 fest, bevor eine Wiederherstellungsaktion versucht wird.
-- `tcp`: um das Mounten des Dateisystems in NFS v3 zu beschleunigen (nicht erforderlich für NFSv4.x, das nur TCP verwendet).
+- `retrans=2`: Legt die Anzahl der Anforderungen des NFS-Clients auf 2 fest, bevor eine Wiederherstellungsaktion versucht wird.
+- `tcp`: Um das Mounten des Dateisystems in NFSv3 zu beschleunigen (nicht erforderlich für NFSv4.x, das nur TCP verwendet).
 - `_netdev`: Wenn diese Option in der Datei /etc/fstab vorhanden ist, verhindert sie, dass das Client-Betriebssystem versucht, das NFS-Dateisystem einzuhängen, bis das Netzwerk aktiviert ist.
 - `nofail`: Wenn das Betriebssystem Ihres Clients unabhängig vom Status Ihres NFS-Dateisystems gestartet werden soll, fügen Sie die Option `nofail` hinzu.
-- `actimeo=30`: Die Spezifikation `actimeo` legt alle Parameter `acregmin`, `acregmax`, `acdirmin` und `acdirmax` auf den gleichen Wert fest. Ein Wert unter 30 Sekunden kann zu einer schlechteren Leistung führen, da die Attributcaches für Dateien und Verzeichnisse zu schnell ablaufen.
+- `actimeo=30`: Die Spezifikation `actimeo` legt die Parameter `acregmin`, `acregmax`, `acdirmin` und `acdirmax` auf den gleichen Wert fest. Ein Wert unter 30 Sekunden kann zu einer schlechteren Leistung führen, da die Attributcaches für Dateien und Verzeichnisse zu schnell ablaufen.
 - `nfsvers`: Vermeiden Sie nach Möglichkeit die Verwendung von NFS Version 4.0. Verwenden Sie stattdessen die Versionen 3, 4.1 oder 4.2 (verwenden Sie nach Möglichkeit dieselbe NFS-Version für alle Clients, die mit derselben NFS-Freigabe verbunden sind).
 - `nordirplus`: In einigen Umgebungen mit vielen Verzeichnissen, in denen ein NFSv3-Client nur Informationen aus einer kleinen Teilmenge von Verzeichniseinträgen verwendet, kann READDIRPLUS zu einer Verlangsamung der Leistung führen. Mit der Option nordirplus können Sie diese Funktion deaktivieren
 
-### Erzwingt in bestimmten Fällen die Verwendung von NFSv3
+### In bestimmten Fällen die Verwendung von NFSv3 erzwingen
 
 - Da NFSv3 statusfrei ist, kann die Leistung mit NFSv3 bei bestimmten Arbeitslasten deutlich besser sein, insbesondere bei Arbeitslasten, die viele Aufrufe wie OPEN, CLOSE, SETATTR und GETATTR ausführen.
-- Wenn Sie eine Datenbank auf Ihrer NFS-Freigabe hosten, beachten Sie, dass der NFS v4.x-spezifische Sperrmechanismus bei Netzwerkausfällen dazu führen kann, dass die Anwendung nicht mehr reagiert (weitere Informationen finden Sie in diesem RFC: <https://datatracker.ietf.org/doc/rfc3530/>).
+- Wenn Sie eine Datenbank auf Ihrer NFS-Freigabe hosten, beachten Sie, dass der NFSv4.x-spezifische Sperrmechanismus bei Netzwerkausfällen dazu führen kann, dass die Anwendung nicht mehr reagiert (weitere Informationen finden Sie in diesem RFC: <https://datatracker.ietf.org/doc/rfc3530/>).
 
-### Verbesserung der Leseleistung durch Ändern des read_ahead_kb-Attributs
+### Verbesserung der Leseleistung durch Ändern des Attributs read_ahead_kb
 
-Einige Linux Kernels verwenden standardmäßig einen Wert von 128 KB `read_ahead_kb`. Es wird empfohlen, diesen Wert auf bis zu 15 MB zu erhöhen, wenn Sie Probleme mit der Leseleistung haben. Weitere Informationen finden Sie hier: <https://docs.kernel.org/admin-guide/abi-stable.html?highlight=read_ahead_kb#abi-sys-block-disk-queue-read-ahead-kb>.
+Einige Linux Kernel verwenden standardmäßig einen Wert von 128 KB `read_ahead_kb`. Es wird empfohlen, diesen Wert auf bis zu 15 MB zu erhöhen, wenn Sie Probleme mit der Leseleistung haben. Weitere Informationen finden Sie hier: <https://docs.kernel.org/admin-guide/abi-stable.html?highlight=read_ahead_kb#abi-sys-block-disk-queue-read-ahead-kb>.
 
 ## Weiterführende Informationen
 
