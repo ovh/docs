@@ -1,7 +1,7 @@
 ---
 title: Gestisci gli snapshot di un’istanza con Horizon
 excerpt: Gestisci gli snapshot di un'istanza con Horizon
-updated: 2022-01-31
+updated: 2024-09-04
 ---
 
 > [!primary]

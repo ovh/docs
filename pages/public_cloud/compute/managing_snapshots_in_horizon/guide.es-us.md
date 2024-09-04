@@ -1,7 +1,7 @@
 ---
 title: Gestionar las instantáneas de una instancia
 excerpt: Cómo gestionar una instantánea de una instancia en Horizon.
-updated: 2022-01-31
+updated: 2024-09-04
 ---
 
 > [!primary]

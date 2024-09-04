@@ -1,6 +1,6 @@
 ---
 title: "Gestion des snapshots d’une instance dans horizon"
-updated: 2024-09-03
+updated: 2024-09-04
 ---
 
 ## Objectif
@@ -50,12 +50,12 @@ Dans la fenêtre contextuelle, un certain nombre d'options doivent être sélect
 > **Details**
 >>
 >> **Nom de l'instance (*Instance name*) :** Indiquez le nom souhaité pour l'instance.<br>
->> **Count:** Sélectionnez le nombre d'instances à lancer à partir du snapshot.<br><br>
+>> **Count :** Sélectionnez le nombre d'instances à lancer à partir du snapshot.<br><br>
 >>![snapshot](images/restoresnapshot1.png){.thumbnail}<br>
 >>
 > **Flavor**
 >>
->> Sélectionnez la flavor souhaitée. Assurez-vous de sélectionner une version dont les ressources sont égales ou supérieures à la taille de l’image (instantané).<br><br>
+>> Sélectionnez la flavor souhaitée. Assurez-vous de sélectionner une version dont les ressources sont égales ou supérieures à la taille de l’image (snapshot).<br><br>
 >>![network](images/restoresnapshot2.png){.thumbnail}<br>
 >>
 > **Réseau (*Network*)**
@@ -68,6 +68,8 @@ Dans la fenêtre contextuelle, un certain nombre d'options doivent être sélect
 >> Sélectionnez (3), créez (1) ou importez (2) une paire de clés.<br><br>
 >>![network](images/restoresnapshot4.png){.thumbnail}<br>
 >>
+
+Une fois cela fait, cliquez sur `Launch Instance`{.action} pour commencer la création de votre instance.
 
 ### Supression d'un snapshot
 
