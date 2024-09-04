@@ -38,7 +38,34 @@ Nella nuova finestra inserisci le informazioni richieste:
 
 ![Create Snapshot](images/createsnapshot2.png){.thumbnail}
 
-Lo Snapshot sarà successivamente elencato nella sezione `Images`{.action}. Ti consigliamo di assegnare un nome esplicito a ogni Snapshot. 
+Lo Snapshot sarà successivamente elencato nella sezione `Images`{.action}. Ti consigliamo di assegnare un nome esplicito a ogni Snapshot.
+
+### Ripristino dello snapshot
+
+> [!tabs]
+> **Details**
+>>
+>> **Nome istanza (*Instance name*):** Specificare il nome desiderato per l’istanza.<br>
+>> **Count:** Seleziona il numero di istanze da avviare dallo Snapshot.<br><br>
+>>![snapshot](images/restoresnapshot1.png){.thumbnail}<br>
+>>
+> **Flavor**
+>>
+>> Selezionate il *flavor* desiderato. Assicurati di selezionare una versione con risorse uguali o superiori alle dimensioni dell'immagine (snapshot).<br><br><br>
+>>![network](images/restoresnapshot2.png){.thumbnail}<br>
+>>
+> **Rete (*Network*)**
+>>
+>> Seleziona una rete pubblica (Ext-Net) da associare all’istanza.<br><br>
+>>![network](images/restoresnapshot3.png){.thumbnail}<br>
+>>
+> **Keypair**
+>>
+>> Selezionare (3), creare (1) o importare (2) una coppia di chiavi.<br><br>
+>>![network](images/restoresnapshot4.png){.thumbnail}<br>
+>>
+
+Clicca su `Launch Instance`{.action} per avviare la creazione dell’istanza.
 
 ### Elimina uno Snapshot
 

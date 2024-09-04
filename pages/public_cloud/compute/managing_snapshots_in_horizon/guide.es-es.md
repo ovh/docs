@@ -38,7 +38,34 @@ Se abrirá una ventana en la que deberá introducir la siguiente información:
 
 ![Create snapshot](images/createsnapshot2.png){.thumbnail}
 
-El snapshot se mostrará en la sección `Images`{.action}. Es recomendable asignar un nombre explícito a cada snapshot. 
+El snapshot se mostrará en la sección `Images`{.action}. Es recomendable asignar un nombre explícito a cada snapshot.
+
+### Restauración de un snapshot
+
+> [!tabs]
+> **Details**
+>>
+>> **Nombre de la instancia (*Instance name*):** Especifique el nombre deseado para la instancia.<br>
+>> **Count:** Seleccione el número de instancias que quiere iniciar a partir del snapshot.<br><br>
+>>![snapshot](images/restoresnapshot1.png){.thumbnail}<br>
+>>
+> **Flavor**
+>>
+>> Seleccione el *flavor* deseado. Asegúrese de seleccionar una versión con recursos iguales o mayores que el tamaño de la imagen (snapshot).<br><br>
+>>![network](images/restoresnapshot2.png){.thumbnail}<br>
+>>
+> **Red (*Network*)**
+>>
+>> Seleccione una red pública (Ext-Net) para asociarla a la instancia.<br><br>
+>>![network](images/restoresnapshot3.png){.thumbnail}<br>
+>>
+> **Keypair**
+>>
+>> Seleccione (3), cree (1) o importe (2) un par de claves.<br><br>
+>>![network](images/restoresnapshot4.png){.thumbnail}<br>
+>>
+
+Haga clic en `Launch Instance`{.action} para empezar a crear su instancia.
 
 ### Eliminación de un snapshot
 
