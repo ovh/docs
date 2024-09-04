@@ -164,7 +164,7 @@ Nous utiliserons pour cette option un **Fournisseur de clé standard.**
 
 > [!primary]
 >
-> Attention, vNKP n'est pas un service de gestion de clé KMS. Cette fonctionnalité n'est utilisée que pour la gestion des clés locale au vCenter.
+> Attention, vNKP n'est pas un service de gestion de clé KMS. Cette fonctionnalité n'est utilisée que pour la gestion des clés locales au vCenter.
 >
 
 Cette option convient si vous n'avez pas de service de gestion de clé externe et que vous ne voulez pas utiliser celui de OVHcloud (OKMS).
