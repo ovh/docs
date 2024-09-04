@@ -1,7 +1,7 @@
 ---
 title: 'Public Cloud & VPS - Image and OS life cycle and end of life/support announcements'
 excerpt: Discover the lifecycle and end-of-life/end-of-support announcements for distributions and softwares for your VPS or Public Cloud instance
-updated: 2024-09-03
+updated: 2024-09-04
 ---
 
 ## Objective
