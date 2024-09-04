@@ -96,7 +96,7 @@ Se l'indirizzo email non viene modificato in seguito alla modifica del proprieta
 
 Se è necessario aggiornare alcune informazioni secondarie come il numero di telefono, l'indirizzo, ecc., non è necessario avviare una procedura commerciale. Queste informazioni possono essere modificate direttamente dallo [Spazio Cliente OVHcloud](/links/manager).
 
-Nella sezione **Abbonamento** della scheda `Informazioni generali`{.action}, clicca sui tre puntini `...`{.action} davanti ai **Contatti** e poi clicca su `Aggiorna le informazioni del proprietario `{.action}.
+Nella sezione **Abbonamento** della scheda `Informazioni generali`{.action}, clicca sui tre puntini `...`{.action} davanti ai **Contatti** e poi clicca su `Aggiorna le informazioni del proprietario`{.action}.
 
 ![modifica del proprietario](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/refresh-holder-information.png){.thumbnail}
 

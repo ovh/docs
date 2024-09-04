@@ -51,7 +51,7 @@ Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.
 
 ### Step 2: Inititate the owner change procedure
 
-In the `General information`{.action} tab, go to the **Plan** section in the bottom right corner. Click `...`{.action} next to the **contacts**, then click `Change domain name holder`{.action}.
+In the `General information`{.action} tab, go to the **Plan** section in the bottom right corner. Click `...`{.action} next to the **contacts**, then click `Change owner`{.action}.
 
 ![changing owner](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/change-owner.png){.thumbnail}
 
@@ -89,7 +89,7 @@ If the email address is not changed as part of the domain trade, one recipient w
 
 If you need to update some secondary information such as phone number, address etc., you do not have to start a trade procedure. It can be edited directly in the [OVHcloud Control Panel](/links/manager).
 
-In the **Plan** section of the `General information`{.action} tab, click on `...`{.action} next to the **contacts**, then click `Refresh owner information`{.action}.
+In the **Plan** section of the `General information`{.action} tab, click on `...`{.action} next to the **contacts**, then click `Refresh holder information`{.action}.
 
 ![changing owner](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/refresh-holder-information.png){.thumbnail}
 

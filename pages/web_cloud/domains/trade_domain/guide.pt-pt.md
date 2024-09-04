@@ -57,7 +57,7 @@ Aceda à [Área de Cliente OVHcloud](/links/manager), na secção `Web Cloud`{.a
 
 ### Etapa 2: iniciar o procedimento de alteração de proprietário
 
-No separador `Informações gerais`{.action}, aceda à secção **Subscrição** no canto inferior direito. Clique em `...`{.action} à frente de **Contactos** e, a seguir, em `Mudar de proprietário`{.action}.
+No separador `Informações gerais`{.action}, aceda à secção **Subscrição** no canto inferior direito. Clique em `...`{.action} à frente de **Contactos** e, a seguir, em `Mudar de titular`{.action}.
 
 ![alteração do proprietário](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/change-owner.png){.thumbnail}
 
@@ -96,7 +96,7 @@ Se o endereço de e-mail não for alterado devido à mudança de proprietário, 
 
 Se precisar de atualizar algumas informações secundárias como o número de telefone, o endereço, etc., não precisa de iniciar um procedimento comercial. Estas informações podem ser alteradas diretamente na [Área de Cliente OVHcloud](/links/manager).
 
-Na secção **Subscrição** do separador `Informações gerais`{.action}, clique em `...`{.action} em **Contactos** e, a seguir, em `Atualizar as informações do proprietário`{.action}.
+Na secção **Subscrição** do separador `Informações gerais`{.action}, clique em `...`{.action} em **Contactos** e, a seguir, em `Atualizar as informações do titular`{.action}.
 
 ![alteração do proprietário](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/refresh-holder-information.png){.thumbnail}
 
