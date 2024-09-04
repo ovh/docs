@@ -1251,6 +1251,8 @@
             + [Tutorial - Rewrite the URL for accessing your website using mod_rewrite via the .htaccess file](web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite)
             + [Blocking a specific IP address from accessing your website](web_cloud/web_hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website)
             + [Using .htaccess for advanced purposes](web_cloud/web_hosting/htaccess_what_else_can_you_do)
+        + [API](web-cloud-hosting-api)
+            + [How to create and manage a Web application via the OVHcloud public API](web_cloud/web_hosting/api_webhosting)
         + [Visibility Pro](web-cloud-hosting-visibility-pro)
             + [Premiers pas avec la solution Visibilité Pro](web_cloud/web_hosting/premiers-pas-avec-visibilite-pro)
     + [SSL Gateway](products/web-cloud-ssl-gateway)
