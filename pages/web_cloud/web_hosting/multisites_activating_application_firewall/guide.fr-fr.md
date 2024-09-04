@@ -21,7 +21,7 @@ L'ensemble préconfiguré de règles de base, le « Core Rule Set » (CRS), de n
 
 > [!primary]
 >
-> Du fait que votre hébergement web est présent sur une infrastructure mutualisée, la modification des paramètres de configuration du pare-feu est indisponible. En activant cette option, vous appliquez les paramètres de sécurité définis par OVHcloud sur l'ensemble de l'infrastructure des hébergements Web.
+> Du fait que votre hébergement web est présent sur une infrastructure mutualisée, la modification des paramètres de configuration du pare-feu est indisponible.
 >
 
 ## Prérequis
