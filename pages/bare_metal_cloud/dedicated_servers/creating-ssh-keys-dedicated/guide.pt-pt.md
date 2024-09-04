@@ -180,15 +180,15 @@ Se já não estiver instalado (consulte a sua lista de aplicações ou utilize a
 
 Abra `PuTTYgen` e selecione um dos algoritmos de encriptação suportados. Este exemplo usa RSA. Digite 4096 como número de bits no canto inferior direito e clique no botão `Generate`{.action}.
 
-![PuTTy](images/puttygen_01.png){.thumbnail}
+![PuTTy](/pages/assets/screens/other/web-tools/putty/puttygen_01.png){.thumbnail}
 
 Mova o cursor do rato livremente para a área abaixo da barra de progresso:
 
-![PuTTy](images/puttygen_02.gif){.thumbnail}
+![PuTTy](/pages/assets/screens/other/web-tools/putty/puttygen_02.gif){.thumbnail}
 
 A chave está pronta quando a barra de progresso está cheia.
 
-![PuTTy](images/puttygen_03.png){.thumbnail}
+![PuTTy](/pages/assets/screens/other/web-tools/putty/puttygen_03.png){.thumbnail}
 
 Copie a cadeia de chaves completa para a área de transferência para [adicionar ao servidor](#addserverkey). Guarde ambas as chaves como ficheiros clicando nos botões correspondentes e introduza uma frase secreta (*passphrase*) para as proteger.
 
@@ -380,7 +380,7 @@ Se seguiu as instruções das secções "[Criação de um par de chaves SSH com 
 
 Abra `PuTTY` e expanda a subsecção `SSH` no menu à esquerda e clique em `Auth` e `Credentials`.
 
-![PuTTy](images/puttygen_04.png){.thumbnail}
+![PuTTy](/pages/assets/screens/other/web-tools/putty/puttygen_04.png){.thumbnail}
 
 Clique no botão `Browse`{.action} e selecione o ficheiro de chave privada `PuTTY` (`keyfile.ppk`) na pasta onde o guardou.
 
@@ -388,7 +388,7 @@ O ficheiro de chave está associado à sessão SSH em curso. Passe para `Session
 
 Introduza um nome para esta ligação em `Saved Sessions` e clique em `Save`{.action} para a adicionar à lista.
 
-![PuTTy](images/puttygen_05.png){.thumbnail}
+![PuTTy](/pages/assets/screens/other/web-tools/putty/puttygen_05.png){.thumbnail}
 
 Pode desde já clicar neste elemento de `Session` e abrir uma ligação ao seu servidor. Para o testar, clique em `Open`{.action}. Se protegeu o ficheiro de chave com uma frase secreta, introduza-a nesta fase.
 

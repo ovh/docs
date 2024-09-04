@@ -43,7 +43,7 @@ Esta sección permite almacenar y gestionar pares de claves SSH. Simplemente pue
 
 Si desea añadir una llave preexistente, haga clic en `Importar Public Key`{.action}. Se abrirá una ventana en la que podrá introducir una clave o seleccionar un archivo de claves.
 
-Esta sección de la interfaz contiene instrucciones básicas. Para más información sobre las llaves SSH, consulte [esta guía](/pages/public_cloud/compute/public-cloud-first-steps#1-crear-claves-ssh).
+Esta sección de la interfaz contiene instrucciones básicas. Para más información sobre las llaves SSH, consulte [esta guía](/pages/public_cloud/compute/creating-ssh-keys-pci).
 
 - **Security Groups** (bajo `Project`{.action} y luego `Network`{.action})
 

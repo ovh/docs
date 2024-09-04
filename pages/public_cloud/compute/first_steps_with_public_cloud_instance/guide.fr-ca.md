@@ -55,7 +55,7 @@ La nouvelle page qui s'affiche alors présente une version modifiée des options
 
 - **Modifier le nom** : vous pouvez donner un nom à l'instance pour plus de facilité d'identification.
 - **Modifier l’image** : vous pouvez choisir un autre système d'exploitation pour l'instance (notez que la réinstallation d'une instance supprimera toutes les données qu'elle contient).
-- **Modifier le modèle** : vous pouvez changer de modèle d'instance. Veuillez vous référer à [ce guide](/pages/public_cloud/compute/public-cloud-first-steps#etape-3-creer-une-instance) pour plus d'informations sur les options.
+- **Modifier le modèle** : vous pouvez changer de modèle d'instance. Veuillez vous référer à [ce guide](/pages/public_cloud/compute/public-cloud-first-steps#model) pour plus d'informations sur les options.
 - **Modifier la période de facturation** : vous pouvez modifier la période de facturation de l'instance d'une facturation horaire à mensuelle. Veuillez vous référer à [ce guide](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing) pour plus d'informations.
 
 #### Créer un backup d'une instance
@@ -133,7 +133,7 @@ Cliquez alors sur l'onglet `Console VNC`{.action}.
 
 La console VNC fournit un accès direct à votre instance. Pour que cet accès fonctionne, vous devez d'abord configurer un nom d'utilisateur et un mot de passe sur l'instance. 
 
-Consultez notre guide « [Créer une première instance Public Cloud et s'y connecter](/pages/public_cloud/compute/public-cloud-first-steps#etape-4-connexion-a-votre-instance) » pour plus d'informations.
+Consultez notre guide « [Créer une première instance Public Cloud et s'y connecter](/pages/public_cloud/compute/public-cloud-first-steps#vnc-console) » pour plus d'informations.
 
 ## Aller plus loin
 

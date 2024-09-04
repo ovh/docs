@@ -12,7 +12,7 @@ OVHcloud offers Public Cloud customers pre-installed application images for quic
 
 ## Requirements
 
-- A [Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps#step-3-creating-an-instance) in your OVHcloud account
+- A [Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps) in your OVHcloud account
 
 ## Instructions
 

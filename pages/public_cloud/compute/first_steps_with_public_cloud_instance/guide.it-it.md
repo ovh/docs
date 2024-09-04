@@ -59,7 +59,7 @@ Visualizzi una nuova pagina con una versione modificata delle opzioni [di creazi
 
 - **Modifica il nome**: per facilitare l'identificazione, assegna un nome all'istanza.
 - **Modifica l'immagine**: è possibile scegliere un altro sistema operativo per l'istanza (ricordati che la reinstallazione di un'istanza comporta la cancellazione di tutti i dati).
-- **Modifica il modello**: è possibile modificare il modello di istanza Per maggiori informazioni sulle opzioni, consulta [questa guida](/pages/public_cloud/compute/public-cloud-first-steps#step-3-crea-unistanza).
+- **Modifica il modello**: è possibile modificare il modello di istanza Per maggiori informazioni sulle opzioni, consulta [questa guida](/pages/public_cloud/compute/public-cloud-first-steps#modela).
 - **Modifica il periodo di fatturazione**: è possibile modificare il periodo di fatturazione dell'istanza da una fatturazione oraria a mensile. Per maggiori informazioni, consulta [questa guida](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing).
 
 #### Crea un backup di un'istanza
@@ -137,7 +137,7 @@ Clicca sulla scheda `Console VNC`{.action}.
 
 La console VNC fornisce un accesso diretto all'istanza. Per il corretto funzionamento dell'accesso, è necessario configurare un nome utente e una password sull'istanza. 
 
-Per maggiori informazioni, consulta la nostra guida [Creare e connettersi a un’istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance) a essa.
+Per maggiori informazioni, consulta la nostra guida [Creare e connettersi a un’istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#vnc-console) a essa.
 
 ## Per saperne di più
 

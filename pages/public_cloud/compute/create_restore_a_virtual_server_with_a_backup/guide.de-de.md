@@ -47,7 +47,7 @@ Einige Elemente sind vordefiniert:
 
 Legen Sie den Namen der neuen Instanz, den SSH-Schlüssel, das vRack und den Abrechnungszeitraum fest und klicken Sie auf den Button `Instanz erstellen`{.action}.
 
-Weitere Informationen zur Erstellung einer Instanz finden Sie in [dieser Anleitung](/pages/public_cloud/compute/public-cloud-first-steps#schritt-3-instanz-erstellen).
+Weitere Informationen zur Erstellung einer Instanz finden Sie in [dieser Anleitung](/pages/public_cloud/compute/public-cloud-first-stepsn).
 
 > [!primary]
 >

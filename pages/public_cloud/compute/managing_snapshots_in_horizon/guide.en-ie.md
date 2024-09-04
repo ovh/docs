@@ -11,7 +11,7 @@ During your activity, you will probably need to back up your data, configuration
 
 ## Requirements
 
-- An [OVHcloud Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps#create-instance) 
+- An [OVHcloud Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-stepse) 
 - [Access to the Horizon interface](/pages/public_cloud/compute/introducing_horizon)
 
 ## Instructions

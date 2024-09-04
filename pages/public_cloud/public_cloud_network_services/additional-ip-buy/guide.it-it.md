@@ -29,7 +29,7 @@ Questi indirizzi possono essere trasferiti esclusivamente verso le istanze di un
 ## Prerequisiti
 
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
-- Disporre di almeno un’istanza. A questo proposito, consulta [la guida per creare un’istanza dallo Spazio Cliente](/pages/public_cloud/compute/public-cloud-first-steps#step-3-crea-unistanza).
+- Disporre di almeno un’istanza. A questo proposito, consulta [la guida per creare un’istanza dallo Spazio Cliente](/pages/public_cloud/compute/public-cloud-first-steps).
 
 > [!warning]
 > Questa funzionalità al momento non è disponibile per le istanze Metal.

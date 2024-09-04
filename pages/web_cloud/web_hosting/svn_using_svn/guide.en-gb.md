@@ -51,7 +51,7 @@ You should see the directories as shown in the following image:
 
 Before you continue, it is necessary to create a pair of SSH keys from the desktop you will use to connect to the SVN repository.
 
-In order to create a key pair, please follow our guide on [Creating SSH keys](/pages/public_cloud/compute/public-cloud-first-steps#step-1-creating-ssh-keys). You can ignore the step regarding the import of your SSH key to the OVHcloud Control Panel.
+In order to create a key pair, please follow our guide on [Creating SSH keys](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#create-ssh-key).
 
 ### Adding the public key to the Web Hosting plan
 

@@ -16,7 +16,7 @@ OVHcloud offre ai clienti Public Cloud immagini di applicazioni preinstallate pe
 
 ## Prerequisiti
 
-- Un'[istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#step-3-crea-unistanza) nel tuo account OVHcloud.
+- Un'[istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) nel tuo account OVHcloud.
 
 ## Procedura
 

@@ -128,13 +128,13 @@ Pour plus d'informations, consultez [ce guide](/pages/public_cloud/compute/setup
 
 Dans cette section, vous pouvez créer une paire de clés, importer une paire de clés ou utiliser une paire de clés existante.
 
-Pour plus d'informations sur la création d'une clé SSH, consultez [ce guide](/pages/public_cloud/compute/public-cloud-first-steps#step-1-creating-ssh-keys).
+Pour plus d'informations sur la création d'une clé SSH, consultez [ce guide](/pages/public_cloud/compute/creating-ssh-keys-pci).
 
 
 > [!tabs]
 > **+ Create Key Pair**
 >> 
->> Pour créer une paire de clés, cliquez sur le bouton `+ Create Key Pair`{.action}. Veuillez noter qu'avec cette option, des étapes supplémentaires doivent être effectuées avant de pouvoir vous connecter à l'instance, surtout si vous utilisez le logiciel Putty pour vous connecter à votre instance. Consultez [cette section](/pages/public_cloud/compute/public-cloud-first-steps#step-4-connecting-to-your-instance) du guide correspondant.
+>> Pour créer une paire de clés, cliquez sur le bouton `+ Create Key Pair`{.action}. Veuillez noter qu'avec cette option, des étapes supplémentaires doivent être effectuées avant de pouvoir vous connecter à l'instance, surtout si vous utilisez le logiciel Putty pour vous connecter à votre instance. Consultez [cette section](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) du guide correspondant.
 >>
 >> **Key Pair Name :** Entrez un nom pour votre clé.<br>
 >> **Key Type :** Cliquez sur la `flèche déroulante` et sélectionnez `SSH Key`.<br>

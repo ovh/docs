@@ -29,7 +29,7 @@ Estes endereços Additional IP só poderão ser migrados para as instâncias de 
 ## Requisitos
 
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
-- Dispor de pelo menos uma instância. Para isso, consulte [o guia para criar uma instância a partir da Área de Cliente](/pages/public_cloud/compute/public-cloud-first-steps#3o-passo-criacao-de-uma-instancia).
+- Dispor de pelo menos uma instância. Para isso, consulte [o guia para criar uma instância a partir da Área de Cliente](/pages/public_cloud/compute/public-cloud-first-steps).
 
 > [!warning]
 > Esta funcionalidade não está atualmente disponível para as instâncias Metal.

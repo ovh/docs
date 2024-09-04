@@ -8,7 +8,7 @@ updated: 2023-02-14
 
 Le [vRack](https://www.ovh.com/fr/solutions/vrack/) OVHcloud est un réseau privé qui vous permet de configurer l'adressage entre deux ou plusieurs [Serveurs dédiés](/links/bare-metal/bare-metal) OVHcloud. Mais il vous permet également d'ajouter des [instances Public Cloud](https://www.ovh.com/fr/public-cloud/instances/) à votre réseau privé afin de créer une infrastructure de ressources physiques et virtuelles.
 
-**Ce guide vous montre comment configurer le réseau privé entre une [instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#etape-3-creer-une-instance) et un [Serveur dédié](/links/bare-metal/bare-metal).**
+**Ce guide vous montre comment configurer le réseau privé entre une [instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) et un [Serveur dédié](/links/bare-metal/bare-metal).**
 
 ## Prérequis
 
@@ -58,7 +58,7 @@ Deux situations peuvent se présenter à vous :
 
 #### Cas d’une nouvelle instance
 
-Si vous avez besoin d’aide, consultez le guide [Créer une instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#etape-3-creer-une-instance){.external}. Lors de la création d’une instance, vous pourrez spécifier, durant l’étape 4, un réseau privé dans lequel intégrer votre instance. Choisissez alors, dans le menu déroulant présenté, votre vRack précédemment créé.
+Si vous avez besoin d’aide, consultez le guide [Créer une instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#create-instance){.external}. Lors de la création d’une instance, vous pourrez spécifier, durant l’étape 4, un réseau privé dans lequel intégrer votre instance. Choisissez alors, dans le menu déroulant présenté, votre vRack précédemment créé.
 
 #### Cas d’une instance déjà existante
 
