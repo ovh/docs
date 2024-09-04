@@ -58,7 +58,7 @@ Dans la fenêtre qui s’ouvre, sélectionnez les informations suivantes :
 
 > [!primary]
 >
-> Actuellement, à votre niveau et via l'[espace client OVHcloud](/links/manager), la mise à jour de la version du moteur d'une base de données déjà créée est indisponible.
+> La mise à jour de la version du moteur d'une base de données déjà créée est actuellement indisponible.
 >
 
 Ensuite, cliquez sur `Suivant`{.action}.
