@@ -16,7 +16,7 @@ OVHcloud udostępnia klientom Public Cloud obrazy wstępnie zainstalowanych apli
 
 ## Wymagania początkowe
 
-- Instancja [Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#krok-3-tworzenie-instancji) na Twoim koncie OVHcloud.
+- Instancja [Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) na Twoim koncie OVHcloud.
 
 ## W praktyce
 

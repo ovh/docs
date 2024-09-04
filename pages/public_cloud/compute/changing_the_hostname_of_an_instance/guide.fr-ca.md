@@ -20,7 +20,7 @@ Le module Cloud-init permet de configurer votre [instance Public Cloud](https://
 ## Prérequis
 
 - Avoir créé une [instance Public Cloud](https://www.ovh.com/ca/fr/public-cloud/instances/){.external}.
-- [Être connecté en SSH](/pages/public_cloud/compute/public-cloud-first-steps#etape-4-connexion-a-votre-instance){.external} (sudo) à l'instance.
+- [Être connecté en SSH](/pages/public_cloud/compute/public-cloud-first-steps) (sudo) à l'instance.
 
 ## En pratique
 

@@ -29,7 +29,7 @@ Di default, il server DNS configurato sulle istanze Public Cloud è quello di OV
 
 ## Procedura
 
-Accedi alla tua istanza via SSH Per maggiori informazioni, consulta la guida [Connettersi a un'istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance).
+Accedi alla tua istanza via SSH Per maggiori informazioni, consulta la guida [Connettersi a un'istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance).
 
 Passare all'utente root. Se hai bisogno di aiuto, consulta la guida per [passare da root e impostare una password](/pages/public_cloud/compute/become_root_and_change_password).
 
@@ -132,7 +132,7 @@ DNS configuration:
 
 ### Windows
 
-Accedi all'istanza tramite una sessione desktop remoto o con la console VNC. Per maggiori informazioni, consulta la guida [Connettersi a un'istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance).
+Accedi all'istanza tramite una sessione desktop remoto o con la console VNC. Per maggiori informazioni, consulta la guida [Connettersi a un'istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance).
 
 Apri le `Impostazioni di rete`{.action}.
 

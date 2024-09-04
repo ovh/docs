@@ -16,7 +16,7 @@ OVHcloud ofrece a los clientes de Public Cloud imágenes de aplicaciones preinst
 
 ## Requisitos
 
-- Una [instancia de Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#3-crear-una-instancia) en su cuenta de OVHcloud.
+- Una [instancia de Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) en su cuenta de OVHcloud.
 
 ## Procedimiento
 

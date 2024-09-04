@@ -25,7 +25,7 @@ Vous pouvez ajouter un serveur secondaire ou remplacer cette configuration par l
 
 ## En pratique
 
-Connectez-vous sur votre instance en SSH. Reportez-vous au guide « [Se connecter à une instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#etape-4-connexion-a-votre-instance) » pour plus d'informations à ce sujet.
+Connectez-vous sur votre instance en SSH. Reportez-vous au guide « [Se connecter à une instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) » pour plus d'informations à ce sujet.
 
 Passer à l'utilisateur root. Si besoin, consultez notre guide pour [passer root et définir un mot de passe](/pages/public_cloud/compute/become_root_and_change_password).
 
@@ -128,7 +128,7 @@ DNS configuration:
 
 ### Sous Windows
 
-Connectez-vous à l'instance via une session bureau à distance ou avec la console VNC. Consultez le guide  « [Se connecter à une instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#etape-4-connexion-a-votre-instance) » pour plus d'informations à ce sujet.
+Connectez-vous à l'instance via une session bureau à distance ou avec la console VNC. Consultez le guide  « [Se connecter à une instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) » pour plus d'informations à ce sujet.
 
 Ouvrez les `Paramètres réseau`{.action}.
 

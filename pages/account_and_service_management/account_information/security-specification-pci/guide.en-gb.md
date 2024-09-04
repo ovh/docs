@@ -24,7 +24,7 @@ In addition to [the responsibility model for Public Cloud Instance](/pages/publi
 
 #### 2.1 Recommendations once the service is delivered
 
-When you sign up for the service, we recommend that you use SSH keys to access your Instance (rather than a login/password) for a better authentication security level for your administrators and to change it regularly. For more information on how to manage your SSH keys, consult this [guide](/pages/public_cloud/compute/public-cloud-first-steps).
+When you sign up for the service, we recommend that you use SSH keys to access your Instance (rather than a login/password) for a better authentication security level for your administrators and to change it regularly. For more information on how to manage your SSH keys, consult this [guide](public_cloud/compute/creating-ssh-keys-pci).
 
 You can use the user interface and the CLI to perform tasks. You must manage and secure your ‘root’ access  to perform certain administrative tasks, as described in this [guide](/pages/public_cloud/compute/become_root_and_change_password).
 

@@ -17,7 +17,7 @@ Questo sistema è molto simile a quello adottato da alcuni operatori telefonici,
 ## Prerequisiti
 
 * Aver già creato un progetto [Public Cloud](https://www.ovhcloud.com/it/public-cloud/) nel tuo account OVHcloud
-* [Disporre di un’istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#step-3-crea-unistanza)
+* [Disporre di un’istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps)
 * Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Come funziona

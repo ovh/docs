@@ -17,7 +17,7 @@ Oprócz Panelu klienta OVHcloud możesz również zarządzać projektami Public 
 ## Wymagania początkowe
 
 - Utworzenie instancji Public Cloud w [Panelu klienta OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps) lub w [interfejsie Horizon](/pages/public_cloud/compute/create_instance_in_horizon).
-- [Utworzenie klucza SSH](/pages/public_cloud/compute/public-cloud-first-steps#krok-1-utworzenie-kluczy-ssh).
+- [Utworzenie klucza SSH](public_cloud/compute/creating-ssh-keys-pci).
 
 ## W praktyce
 

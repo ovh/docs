@@ -22,7 +22,7 @@ Le istanze GPU sono tecnicamente simili alle istanze della gamma 2017 ma dispong
 ## Prerequisiti
 
 - Aver creato un progetto Public Cloud con accesso alle Region in cui è disponibile la maggior parte delle GPU (GRA7, GRA9, GRA11 e BHS5).
-- [Una chiave SSH](/pages/public_cloud/compute/public-cloud-first-steps#step-1-creating-ssh-keys) creata per implementare un’istanza GPU Linux.
+- [Una chiave SSH](public_cloud/compute/creating-ssh-keys-pci) creata per implementare un’istanza GPU Linux.
 
 ## Procedura
 
@@ -42,7 +42,7 @@ Una volta connesso allo [Spazio Cliente OVHcloud](/links/manager), clicca sulla 
 
 ![public-cloud](images/GPU-Flavors_2024.png){.thumbnail}
 
-Segui gli step rimanenti, come descritto in [questa guida](/pages/public_cloud/compute/public-cloud-first-steps#step-3-creating-an-instance). Questo processo potrebbe richiedere alcuni minuti.
+Segui gli step rimanenti, come descritto in [questa guida](/pages/public_cloud/compute/public-cloud-first-steps#create-instance). Questo processo potrebbe richiedere alcuni minuti.
 
 Una volta consegnata l’istanza, è possibile collegarsi ad essa e verificare la presenza della scheda grafica:
 
@@ -114,7 +114,7 @@ Nel passaggio successivo, vai alla scheda `Distribuzioni Windows` e clicca sulla
 
 ![public-cloud](images/EN-WindowsImages_2024.png){.thumbnail}
 
-Segui gli step rimanenti, come descritto in [questa guida](/pages/public_cloud/compute/public-cloud-first-steps#step-3-creating-an-instance). Questo processo potrebbe richiedere alcuni minuti.
+Segui gli step rimanenti, come descritto in [questa guida](/pages/public_cloud/compute/public-cloud-first-steps#create-instance). Questo processo potrebbe richiedere alcuni minuti.
 
 #### Connettersi a un’istanza Windows
 

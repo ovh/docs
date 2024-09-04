@@ -62,7 +62,7 @@ Mogą wystąpić dwie sytuacje:
 
 #### Przypadek nowej instancji
 
-Jeśli potrzebujesz pomocy, zapoznaj się z przewodnikiem [Tworzenie instancji Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#krok-3-tworzenie-instancji){.external}. Podczas tworzenia instancji możesz określić prywatną sieć, w której będziesz mógł zintegrować instancję podczas etapu 4. Wybierz wówczas w rozwijanym menu utworzony uprzednio vRack.
+Jeśli potrzebujesz pomocy, zapoznaj się z przewodnikiem [Tworzenie instancji Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps). Podczas tworzenia instancji możesz określić prywatną sieć, w której będziesz mógł zintegrować instancję podczas etapu 4. Wybierz wówczas w rozwijanym menu utworzony uprzednio vRack.
 
 #### Przypadek już istniejącej instancji
 

@@ -19,7 +19,7 @@ To perform certain administrative functions on your server (e.g. installing pack
 
 ### Setting the root password <a name="settingtherootpassword"></a>
 
-First, establish an [SSH connection](/pages/public_cloud/compute/public-cloud-first-steps#step-4-connecting-to-your-instance) to your server with your default user.
+First, establish an [SSH connection](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) to your server with your default user.
 
 At the command line, set a password for the root user (for security reasons, the password will not be shown as you type it):
 

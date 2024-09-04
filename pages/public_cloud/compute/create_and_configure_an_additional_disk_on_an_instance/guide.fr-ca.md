@@ -64,7 +64,7 @@ Les exemples ci-dessous supposent que vous êtes connecté en tant qu'utilisateu
 
 #### Sous Linux
 
-Ouvrez une [connexion SSH à votre instance](/pages/public_cloud/compute/public-cloud-first-steps#etape-4-connexion-a-votre-instance), puis utilisez la commande ci-dessous pour lister les disques attachés.
+Ouvrez une [connexion SSH à votre instance](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance), puis utilisez la commande ci-dessous pour lister les disques attachés.
 
 ```bash
 lsblk
@@ -349,7 +349,7 @@ Si vous souhaitez détacher un volume de votre instance, la meilleure pratique e
 
 #### Sous Linux
 
-Ouvrez une [connexion SSH à votre instance](/pages/public_cloud/compute/public-cloud-first-steps#etape-3-creer-une-instance) puis utilisez la commande ci-dessous pour lister les disques attachés.
+Ouvrez une [connexion SSH à votre instance](/pages/public_cloud/compute/public-cloud-first-steps#create-instance) puis utilisez la commande ci-dessous pour lister les disques attachés.
 
 ```bash
 lsblk

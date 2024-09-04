@@ -43,7 +43,7 @@ W tej sekcji możesz przechowywać pary kluczy SSH i zarządzać nimi. Możesz p
 
 Jeśli chcesz dodać istniejący klucz, kliknij przycisk `Import Public Key`{.action}. W oknie, które się wyświetla możesz wprowadzić klucz lub wybrać plik klucza.
 
-Ta część interfejsu zawiera podstawowe instrukcje. Więcej informacji na temat kluczy SSH znajdziesz w [tym przewodniku](/pages/public_cloud/compute/public-cloud-first-steps#krok-1-utworzenie-kluczy-ssh).
+Ta część interfejsu zawiera podstawowe instrukcje. Więcej informacji na temat kluczy SSH znajdziesz w [tym przewodniku](public_cloud/compute/creating-ssh-keys-pci).
 
 - **Security Groups** (w `ramach projektu`{.action}, a następnie `Network`{.action})
 
