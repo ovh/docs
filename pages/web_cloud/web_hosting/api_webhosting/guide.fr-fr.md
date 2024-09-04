@@ -167,7 +167,7 @@ Listez toutes les bases de données associées à votre service d'hébergement w
 >> ```json
 >> [
 >>  "example.mysql.db",
->>  "example2.mysql.db",
+>>  "example2.mysql.db"
 >> ]
 >> ```
 
