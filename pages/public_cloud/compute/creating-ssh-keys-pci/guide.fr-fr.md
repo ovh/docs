@@ -15,7 +15,6 @@ Il s’agit généralement de la méthode de connexion la plus sûre et la plus 
 ## Prérequis
 
 - Un [projet Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
-- Être connecté à l’[espace client OVHcloud](/links/manager)
 - Une application client SSH (ligne de commande ou GUI)
 
 > [!primary]
@@ -76,7 +75,7 @@ Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user/.ssh/id_rsa):
 ```
 
-Vous pouvez confirmer avec `Enter` pour accepter le nom de fichier proposé ou saisir un autre nom. Ceci est pertinent si plusieurs paires de clés sont placées dans le répertoire `.ssh`. Retrouvez plus d'informations à ce sujet dans la section [Gérer plusieurs clés SSH](#multiplekeys).
+Vous pouvez confirmer avec `Enter` pour accepter le nom de fichier proposé ou saisir un autre nom. Ceci est pertinent si plusieurs paires de clés sont placées dans le répertoire `.ssh`. Retrouvez plus d'informations à ce sujet dans la section [Gérer plusieurs clés SSH](#multiplekeys).  
 Cet exemple utilise les noms de fichiers standard `id_rsa` et `id_rsa.pub`.
 
 Vous pouvez protéger votre clé SSH avec une phrase secrète (*passphrase*) à l'invite suivante. Ceci est recommandé pour plus de sécurité.
@@ -262,7 +261,7 @@ Vous pourrez ensuite vous connecter à l'instance avec le nom d'alias que vous a
 ssh ubuntu@instance
 ```
 
-Seules l'IP du serveur et le fichier de clé ont été spécifiés dans l'exemple précédent, mais des détails supplémentaires peuvent être ajoutés.
+Seules l'IP du serveur et le fichier de clé ont été spécifiés dans l'exemple précédent, mais des détails supplémentaires peuvent être ajoutés.  
 Pour configurer une connexion SSH à un second serveur avec le nom d'utilisateur « rocky », le port SSH modifié « 49160 » et la clé privée dans le fichier « myserver_rsa », étendez le contenu du fichier comme indiqué dans cet exemple :
 
 ```console

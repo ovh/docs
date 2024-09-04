@@ -15,7 +15,6 @@ This is usually the most secure and convenient connection method and the default
 ## Requirements
 
 - A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
 - An SSH client application (command line or GUI)
 
 > [!primary]
@@ -85,7 +84,7 @@ You can protect your SSH key with a passphrase at the next prompt. This is recom
 
 > [!warning]
 >
-> Remote access to your server is only as secure as the client device storing the private key. Protecting your device and files from unauthorized access is therefore crucial when using SSH keys.
+> Remote access to your instance is only as secure as the client device storing the private key. Protecting your device and files from unauthorized access is therefore crucial when using SSH keys.
 > 
 > For convenience and security purposes, consider using a password manager on your device, such as the open source solution `KeePass`.
 > 
