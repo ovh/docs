@@ -1,7 +1,7 @@
 ---
 title: 'Hébergement web - Modifier un nom de domaine déjà associé à un hébergement'
 excerpt: "Découvrez comment modifier les paramètres d'association d'un nom de domaine/sous-domaine déjà déclaré sur votre offre d'hébergement web"
-updated: 2024-09-03
+updated: 2024-09-04
 ---
 
 ## Objectif

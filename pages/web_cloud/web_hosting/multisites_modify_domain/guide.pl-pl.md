@@ -128,7 +128,7 @@ Po kliknięciu przycisku `Dalej`{.action} znajdziesz podsumowanie ustawień, kt�
 
 ![Modify domain resume](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-step2.png){.thumbnail}
 
-Jeśli wszystkie parametry są skonfigurowane zgodnie z Twoimi potrzebami, kliknij przycisk `Potwierdź`{.action}.
+Jeśli wszystkie parametry są skonfigurowane zgodnie z Twoimi potrzebami, kliknij przycisk `Zatwierdź`{.action}.
 
 W zależności od wybranych opcji wprowadzenie zmian może potrwać od kilku minut do kilku godzin.
 
