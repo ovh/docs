@@ -24,7 +24,7 @@ Durante l’utilizzo dell’hosting Web o l’aggiornamento del sito Web, potreb
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 - Disporre di una soluzione [hosting Web OVHcloud](/links/web/hosting).
 - Disporre di uno o più [domini](/links/web/domains).
-- di disporre dei diritti necessari per tutti i servizi in questione. Per maggiori informazioni consulta la nostra guida "[Gestire i contatti dei servizi OVHcloud](/pages/account_and_service_management/account_information/managing_contacts)".
+- Disporre dei diritti necessari per tutti i servizi in questione. Per maggiori informazioni consulta la nostra guida "[Gestire i contatti dei servizi OVHcloud](/pages/account_and_service_management/account_information/managing_contacts)".
 
 ## Procedura
 
