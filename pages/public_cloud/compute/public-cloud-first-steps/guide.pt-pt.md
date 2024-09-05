@@ -93,9 +93,9 @@ Dispõe de 2 opções para criar e gerir as suas chaves SSH:
 - A interface de linha de comandos do seu SO (simples cliente **Open SSH**).
 - Software adicional (compatível com o protocolo **Open SSH**) com linha de comandos ou interface gráfica.
 
-A maioria dos sistemas operativos de desktop contemporâneos incluem de forma nativa o cliente **Open SSH** acessível através da aplicação de linha de comandos do sistema (`cmd`, `Powershell`, `Terminal`, etc.). Se não estiver familiarizado com a utilização das chaves SSH como método de autenticação, pode utilizar as instruções de [este manual](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#create-ssh-key) para criar o seu par de chaves.
+A maioria dos sistemas operativos de desktop contemporâneos incluem de forma nativa o cliente **Open SSH** acessível através da aplicação de linha de comandos do sistema (`cmd`, `Powershell`, `Terminal`, etc.). Se não estiver familiarizado com a utilização das chaves SSH como método de autenticação, pode utilizar as instruções de [este manual](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key) para criar o seu par de chaves.
 
-Se utilizar outro software, consulte a documentação do utilizador. As instruções para a solução open source `PuTTY` estão disponíveis em [este guia](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#useputty).
+Se utilizar outro software, consulte a documentação do utilizador. As instruções para a solução open source `PuTTY` estão disponíveis em [este guia](/pages/public_cloud/compute/creating-ssh-keys-pci#useputty).
 
 <a name="import-ssh"></a>
 
@@ -425,7 +425,7 @@ Se o seu [par de chaves SSH está corretamente configurado](#create-ssh), já po
 
 > [!primary]
 >
-> Se receber mensagens de erro sobre as suas **chaves SSH**, verifique se o seu dispositivo local dispõe de uma chave SSH privada corretamente configurada utilizando as informações de [este guia](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#create-ssh-key).</br>
+> Se receber mensagens de erro sobre as suas **chaves SSH**, verifique se o seu dispositivo local dispõe de uma chave SSH privada corretamente configurada utilizando as informações de [este guia](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key).</br>
 > Se continuar a ter problemas, pode substituir o par de chaves utilizando [este manual](/pages/public_cloud/compute/replacing_lost_ssh_key).
 >
 > Se criou uma instância sem chave SSH através da [API OVHcloud](/pages/manage_and_operate/api/first-steps) ou da [interface OpenStack Horizon](/pages/public_cloud/compute/create_instance_in_horizon), só pode adicionar uma chave SSH à sua instância através do [modo rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) seguindo as instruções descritas em [este manual](/pages/public_cloud/compute/replacing_lost_ssh_key).
@@ -443,9 +443,9 @@ Exemplo:
 ssh ubuntu@203.0.113.101
 ```
 
-[Em função da sua configuração](#create-ssh), deverá introduzir uma frase secreta que proteja a sua chave privada ou especificar o caminho de acesso ao seu ficheiro de chave. Consulte o nosso [guia das chaves SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#multiplekeys) para informações detalhadas sobre este assumpto.
+[Em função da sua configuração](#create-ssh), deverá introduzir uma frase secreta que proteja a sua chave privada ou especificar o caminho de acesso ao seu ficheiro de chave. Consulte o nosso [guia das chaves SSH](/pages/public_cloud/compute/creating-ssh-keys-pci#multiplekeys) para informações detalhadas sobre este assumpto.
 
-Se estiver a utilizar outro software cliente SSH, consulte a documentação do utilizador. Está disponível um exemplo de utilização da solução open source `PuTTY` em [este manual](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#useputty).
+Se estiver a utilizar outro software cliente SSH, consulte a documentação do utilizador. Está disponível um exemplo de utilização da solução open source `PuTTY` em [este manual](/pages/public_cloud/compute/creating-ssh-keys-pci#useputty).
 
 Continue com a [etapa 6 abaixo](#manage-access).
 

@@ -174,7 +174,7 @@ Na etapa seguinte, são-lhe apresentadas várias opções:
 
 **Crie um Gateway e ligue-se à rede privada**
 
-Selecione esta opção se pretende criar instâncias apenas com uma rede privada. Para mais informações, consulte os seguintes guias: [Creating a private network with Gateway (EN)](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway) e [Criação e conexão a uma primeira instância Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#etapa-3-criacao-de-uma-instancia).
+Selecione esta opção se pretende criar instâncias apenas com uma rede privada. Para mais informações, consulte os seguintes guias: [Creating a private network with Gateway (EN)](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway) e [Criação e conexão a uma primeira instância Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps).
 
 > [!warning]
 > Se a opção for "cinzenta", isto significa que é incompatível com a região selecionada. Para mais informações, consulte a nossa página sobre a [disponibilidade dos produtos Public Cloud para cada região](https://www.ovhcloud.com/pt/public-cloud/regions-availability/).
@@ -252,7 +252,7 @@ Existem duas situações:
 
 ##### **A partir da Área de Cliente OVHcloud**
 
-Consulte o guia: [Criar uma instância a partir da Área de Cliente](/pages/public_cloud/compute/public-cloud-first-steps#create-instance). Ao criar uma instância, poderá especificar, na etapa 5, pode escolher um modo de rede e depois uma rede privada na qual possa integrar a sua instância.
+Consulte o guia: [Criar uma instância a partir da Área de Cliente](/pages/public_cloud/compute/public-cloud-first-steps). Ao criar uma instância, poderá especificar, na etapa 5, pode escolher um modo de rede e depois uma rede privada na qual possa integrar a sua instância.
 
 ![attach new instance](images/network-selection.png){.thumbnail}
 

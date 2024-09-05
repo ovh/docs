@@ -52,7 +52,7 @@ Next, we will use this Floating IP to connect to the instance (VM) from the outs
 >> 
 >> Before creating your instance, make sure you have created a [private network with Gateway](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway).
 >>
->> To create a new instance, follow [this guide](/pages/public_cloud/compute/public-cloud-first-steps#create-instance) if necessary. 
+>> To create a new instance, follow [this guide](/pages/public_cloud/compute/public-cloud-first-steps) if necessary. 
 >>
 >>
 >> > [!warning]

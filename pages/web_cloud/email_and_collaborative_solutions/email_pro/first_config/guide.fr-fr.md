@@ -1,7 +1,7 @@
 ---
 title: 'Premiers pas avec la solution E-mail Pro'
 excerpt: 'Découvrez comment réaliser la configuration de votre solution E-mail Pro'
-updated: 2024-06-13
+updated: 2024-09-03
 ---
 
 ## Objectif
@@ -148,6 +148,14 @@ Une fois les informations complétées, cliquez sur le bouton `Suivant`{.action}
 
 Une fois vos comptes configurés, il ne vous reste plus qu'à les utiliser ! Pour cela, OVHcloud met à disposition un applicatif en ligne (une *webapp*). Ce dernier est accessible à l’adresse <https://www.ovh.com/fr/mail/> et vous devrez y renseigner les identifiants relatifs à votre adresse e-mail.
 
+Si c'est la première fois que vous vous connectez à OWA avec cette adresse e-mail, vous serez invité à définir la langue de l'interface ainsi que le fuseau horaire. Ensuite, cliquez sur `Enregistrer`{.action} pour continuer.
+
+> [!primary]
+>
+> Les fuseaux horaires sont listés selon [la norme UTC (temps universel coordonné)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), et non par ordre alphabétique des villes.
+>
+> **Exemple** : Pour l'Europe de l'Ouest, il s'agit de UTC +1 (Bruxelles, Copenhague, Madrid, Paris).
+
 Pour configurer votre adresse e-mail sur un logiciel de messagerie ou un appareil, comme un _smartphone_ ou une tablette, [aidez-vous de nos guides de configuration](/products/web-cloud-email-collaborative-solutions-email-pro). Si vous désirez simplement obtenir les éléments nécessaires pour configurer votre compte E-mail Pro, retrouvez ci-dessous les paramètres à utiliser :
 
 |Type de serveur|Nom du serveur|Type de sécurité|Port|
@@ -158,9 +166,9 @@ Pour configurer votre adresse e-mail sur un logiciel de messagerie ou un apparei
 > [!primary]
 >
 > Dans notre exemple, nous utilisons la mention serveur : pro**?**.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service E-mail Pro.
-> 
+>
 > Retrouvez ce chiffre dans votre [espace client OVHcloud](/links/manager){.external}, dans la rubrique `Web Cloud`{.action} puis `E-mail Pro`{.action}. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
-> 
+>
 
 ## Aller plus loin
 

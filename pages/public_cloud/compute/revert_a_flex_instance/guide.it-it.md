@@ -16,7 +16,7 @@ Un'istanza *flex* è un'istanza a disco unico (50 GB) che offre un processo più
 
 ## Prerequisiti
 
-- Disporre di un'[istanza Public Cloud OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps#step-3-crea-unistanza) di tipo *flex*
+- Disporre di un'[istanza Public Cloud OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps#configuration) di tipo *flex*
 - [Crea un accesso all'interfaccia Horizon](/pages/public_cloud/compute/introducing_horizon)
 
 ## Procedura

@@ -1,7 +1,7 @@
 ---
 title: "Créer une base de données sur son hébergement web"
 excerpt: "Découvrez comment créer une base de données sur votre hébergement web OVHcloud"
-updated: 2024-05-17
+updated: 2024-09-04
 ---
 
 ## Objectif
@@ -53,8 +53,13 @@ Dans la fenêtre qui s’ouvre, sélectionnez les informations suivantes :
 |Information|Description|  
 |---|---|
 |**Sélectionnez le type de base de données**|Choisissez la taille de la base de données. Cette taille fait référence à l'espace dont dispose votre base de données pour le stockage des données.|
-|**Sélectionnez le moteur de la base de données à ajouter**|Choisissez le moteur que la base de données doit utiliser. Les bases de données inclues dans votre [offre d’hébergement web OVHcloud](/links/web/hosting) sont uniquement disponibles avec le moteur MySQL.|
+|**Sélectionnez le moteur de la base de données à ajouter**|Choisissez le moteur que la base de données doit utiliser. Actuellement, les bases de données inclues dans votre [offre d’hébergement web OVHcloud](/links/web/hosting) sont uniquement disponibles avec le moteur MySQL.|
 |**Sélectionnez la version de la base de données à ajouter**|Choisissez la version utilisée par le moteur de la base de données. Assurez-vous que votre site web soit compatible avec la version que vous avez choisie.|
+
+> [!primary]
+>
+> La mise à jour de la version du moteur d'une base de données déjà créée est actuellement indisponible.
+>
 
 Ensuite, cliquez sur `Suivant`{.action}.
 

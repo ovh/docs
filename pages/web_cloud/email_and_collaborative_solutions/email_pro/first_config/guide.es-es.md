@@ -1,7 +1,7 @@
 ---
 title: 'Primeros pasos con la solución Email Pro'
 excerpt: 'Descubra cómo configurar por primera vez la solución Email Pro'
-updated: 2024-06-13
+updated: 2024-09-03
 ---
 
 > [!primary]
@@ -152,6 +152,14 @@ Una vez introducida toda la información, haga clic en el botón `Siguiente`{.ac
 
 Una vez configuradas las cuentas, ¡ya puede utilizarlas! Para ello, OVHcloud pone a su disposición una aplicación en internet (*webmail*). Puede acceder a ella en la dirección [webmail](/links/web/email){.external}, donde deberá introducir las credenciales de su dirección de correo electrónico.
 
+Si es la primera vez que inicia sesión en OWA con esta dirección de correo electrónico, se le pedirá que especifique el idioma de la interfaz y la zona horaria. Haga clic en `Guardar`{.action} para continuar.
+
+> [!primary]
+>
+> Las zonas horarias se enumeran según [el estándar UTC (hora universal coordinada)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), no por orden alfabético de ciudades.
+>
+> **Ejemplo** : Para Europa Occidental, se trata de UTC +1 (Bruselas, Copenhague, Madrid, París).
+
 Para configurar su dirección de correo electrónico en un cliente de correo o en un dispositivo (_teléfono inteligente_ o tableta), consulte nuestras [guías de configuración](/products/web-cloud-email-collaborative-solutions-email-pro). A continuación, se indican los parámetros necesarios para configurar una cuenta E-mail Pro:
 
 |Tipo de servidor|Nombre del servidor|Tipo de seguridad|Puerto|
@@ -162,9 +170,9 @@ Para configurar su dirección de correo electrónico en un cliente de correo o e
 > [!primary]
 >
 > En nuestro ejemplo, utilizamos el nombre de servidor pro**?**.mail.ovh.net. Deberá sustituir la "?" por el número que designa el servidor del servicio E-mail Pro.
-> 
+>
 > Encontrará este número en el [área de cliente de OVHcloud](/links/manager){.external}, en el apartado `Web Cloud`{.action} de la sección `E-mail Pro`{.action}. El nombre del servidor puede verse en el recuadro **"Conexión"** de la pestaña `Información General`{.action}.
-> 
+>
 
 ## Más información
 

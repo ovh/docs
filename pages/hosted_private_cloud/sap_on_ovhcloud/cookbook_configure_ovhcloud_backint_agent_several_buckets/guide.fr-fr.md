@@ -1,7 +1,7 @@
 ---
 title: "Utiliser OVHcloud Backint Agent avec plusieurs buckets Object Storage S3"
 excerpt: "Ce guide fournit des instructions générales pour utiliser OVHcloud Backint Agent pour SAP HANA avec plusieurs buckets Object Storage S3"
-updated: 2024-01-25
+updated: 2024-09-03
 ---
 
 ## Objectif
@@ -26,53 +26,30 @@ OVHcloud Backint Agent pour SAP HANA a été certifié par SAP, vous pouvez retr
 
 ## Prérequis
 
-- Un accès à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être connecté à l’[espace client OVHcloud](/links/manager).
 - [Un projet Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project) dans votre compte OVHcloud avec :
-    - [Deux buckets Object Storage S3](/pages/storage_and_backup/object_storage/s3_create_bucket) et [un utilisateur S3](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creation-dun-utilsateur) avec le droit de lecture et d'écriture
-- Une base de données SAP HANA installée
-- [OVHcloud Backint Agent pour SAP HANA installé](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_install_ovhcloud_backint_agent)
+    - [Deux buckets Object Storage S3](/pages/storage_and_backup/object_storage/s3_create_bucket) et [un utilisateur S3](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creation-dun-utilsateur) avec le droit de lecture et d'écriture.
+- Une base de données SAP HANA installée.
+- [OVHcloud Backint Agent pour SAP HANA installé](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_install_ovhcloud_backint_agent).
 
 ## En pratique
 
 ### Object Storage S3
 
-> [!primary]
-> Pour obtenir les informations relatives à la configuration et à l'utilisation des commandes AWS S3 CLI, veuillez vous référer à la documentation disponible [Premiers pas avec Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage).
->
-> Il n'est pas obligatoire d'installer AWS S3 CLI sur votre serveur hébergeant votre base de données SAP HANA. Les actions de ce chapitre peuvent être réalisées depuis votre serveur d'administration ou également depuis votre poste client.
->
-
-Le versioning des buckets Object Storage S3 doit être activé afin d'assurer le bon fonctionnement d'OVHcloud Backint Agent. Le versioning permet de garder plusieurs versions d'un même objet dans vos buckets Object Storage S3.
+Le versioning du bucket Object Storage S3 doit être activé afin d'assurer le bon fonctionnement d'OVHcloud Backint Agent. Le versioning permet de garder plusieurs versions d'un même objet dans votre bucket Object Storage S3.
 
 Dans le cas des sauvegardes SAP HANA, le versioning vous permet de réaliser plusieurs sauvegardes avec le même nom (comme par exemple « COMPLETE_DATA_BACKUP ») et de garder la possibilité de restaurer une version spécifique de la sauvegarde « COMPLETE_DATA_BACKUP ». Si le versioning n'est pas activé, seule la dernière version de la sauvegarde « COMPLETE_DATA_BACKUP » peut être restaurée.
 
-Pour vérifier si le versioning est activé sur vos buckets Object Storage S3, exécutez la commande suivante :
+Vous pouvez vérifier le statut du versioning de votre bucket Object Storage S3 en suivant ces étapes :
 
-```bash
-aws --profile <nom_du_profile> s3api get-bucket-versioning --bucket <nom_du_bucket>
+1. Accédez à l'[espace client OVHcloud](/links/manager).
+2. Cliquez sur l'univers `Public Cloud`{.action} et sélectionnez votre projet Public Cloud. Puis cliquez sur `Object Storage`{.action}.
+3. Cliquez sur les buckets Object Storage S3 qui accueilleront les sauvegardes de votre base de données SAP HANA.
+4. Vérifiez la valeur du paramètre `Versioning`{.action}, ce dernier doit avoir pour valeur `Activé`{.action}. Si la valeur de ce paramètre est `Désactivé`{.action}, cliquez sur `Activer le versioning`{.action}.
 
-# Exemple :
-# aws --profile default s3api get-bucket-versioning --bucket mon-bucket-sap-hana-data
-# aws --profile default s3api get-bucket-versioning --bucket mon-bucket-sap-hana-log
-```
-
-Sortie attendue pour chaque bucket Object Storage S3 :
-
-```console
-{
-    "Status": "Enabled"
-}
-```
-
-Si la sortie de commande est vide, cela signifie que le versioning de vos buckets Object Storage S3 n'est pas activé. Pour y remédier, veuillez exécuter la commande suivante :
-
-```bash
-aws --profile <nom_du_profile> s3api put-bucket-versioning --bucket <nom_du_bucket> --versioning-configuration Status=Enabled
-
-# Exemple :
-# aws --profile default s3api put-bucket-versioning --bucket mon-bucket-sap-hana-data --versioning-configuration Status=Enabled
-# aws --profile default s3api put-bucket-versioning --bucket mon-bucket-sap-hana-log --versioning-configuration Status=Enabled
-```
+| Versioning activé | Versioning désactivé |
+| --- | --- |
+| ![versioning_enabled](images/versioning_enabled.png){.thumbnail} | ![versioning_disabled](images/versioning_disabled.png){.thumbnail} |
 
 ### Configuration
 
@@ -179,7 +156,19 @@ Ces deux fichiers se trouvent dans le répertoire `/usr/sap/<SID>/HDB<NI>/<hostn
 Le fichier `backint.log` vous apportera des informations relatives à l'exécution d'OVHcloud Backint Agent, comme un problème de permissions sur le bucket Object Storage S3 par exemple :
 
 ```log
-botocore.exceptions.ClientError: An error occurred (AccessDenied) when calling the PutObject operation: Access Denied.
+2024-02-08 14:10:41.266 backint started:
+  command: /usr/sap/HDB/SYS/global/hdb/opt/hdbbackint -f backup -p /usr/sap/HDB/SYS/global/hdb/opt/hdbbackint.cfg -i /var/tmp/hdbbackint_HDB.kwu3jY -o /var/tmp/hdbbackint_HDB.N1KX90 -u HDB -s 1707397841205 -c 2 -l COMPLETE
+  pid: 3702
+  input:
+  #SOFTWAREID "backint 1.04" "HANA HDB server 2.00.071.00.1687900751"
+  #PIPE "/usr/sap/HDB/SYS/global/hdb/backint/SYSTEMDB/FULL_BACKUP_databackup_0_1"
+2024-02-08 14:10:41.967 backint terminated:
+  pid: 3702
+  exit code: 1
+  output:
+  exception:
+  exception  1: no.110507  (Backup/Destination/Backint/impl/BackupDestBackint_Executor.cpp:250)
+      Backint exited with exit code 1 instead of 0. console output: Bucket information error in hdbbackint.cfg - 403 Forbidden
 ```
 
 Le fichier `backup.log` vous apportera des informations relatives à l'exécution même de la sauvegarde à travers SAP HANA, sa progression et ses erreurs rencontrées.

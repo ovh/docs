@@ -70,7 +70,7 @@ Os exemplos abaixo pressupõem que está ligado enquanto utilizador com autoriza
 
 #### Em Linux
 
-Abra uma [ligação SSH à sua instância](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance) e utilize o comando abaixo para listar os discos ligados.
+Abra uma [ligação SSH à sua instância](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) e utilize o comando abaixo para listar os discos ligados.
 
 ```bash
 lsblk

@@ -128,12 +128,12 @@ For more information, consult [this guide](/pages/public_cloud/compute/setup_sec
 
 In this section, you have the option to create a keypair, import a keypair or use an existing key pair.
 
-For more information on how to create an SSH key, consult [this guide](/pages/public_cloud/compute/public-cloud-first-steps#step-1-creating-ssh-keys).
+For more information on how to create an SSH key, consult [this guide](/pages/public_cloud/compute/creating-ssh-keys-pci).
 
 > [!tabs]
 > **+ Create Key Pair**
 >> 
->> To create a Keypair, click on the `+ Create Key Pair`{.action} button. Please note that with this option, additional steps have to be made before you are able to connect to the instance, especially if you are using the software PuTTY to connect to your instance. See [this section](/pages/public_cloud/compute/public-cloud-first-steps#step-4-connecting-to-your-instance) of the corresponding guide.
+>> To create a Keypair, click on the `+ Create Key Pair`{.action} button. Please note that with this option, additional steps have to be made before you are able to connect to the instance, especially if you are using the software Putty to connect to your instance. See [this section](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) of the corresponding guide.
 >>
 >> **Key Pair Name:** Enter a name for your key.<br>
 >> **Key Type:** Click on the `drop down arrow`{.action} and select `SSH Key`{.action}.<br>

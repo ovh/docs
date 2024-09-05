@@ -1,7 +1,7 @@
 ---
 title: "Premiers pas avec OVHcloud Key Management Service (KMS)"
 excerpt: "Mettez en oeuvre votre OVHcloud KMS"
-updated: 2024-07-04
+updated: 2024-09-03
 ---
 
 > [!warning]
@@ -45,6 +45,28 @@ La commande est ensuite à finaliser dans un autre onglet. Si celui-ci ne s'est 
 Après quelques secondes, le KMS est bien disponible dans votre espace client.
 
 ![Commander le KMS](images/order_kms_03.png){.thumbnail}
+
+### Créer une clé de chiffrement via la console d'administration
+
+Vous pouvez créer une clé de chiffrement depuis le menu dédié de la console d'administration, en cliquant sur le bouton `Créer une clé`{.action}.
+
+![Créer une clé](images/create_key_01.png){.thumbnail}
+
+Un formulaire permet alors de configurer la clé en sélectionnant le type de la clé, sa taille et ses usages.
+
+![Créer une clé](images/create_key_02.png){.thumbnail}
+
+Une fois la clé créée, cliquez dessus pour accéder à ses détails.
+
+Le tableau de bord présente les propriétés cryptographiques de la clé, ainsi que les actions permettant de la renommer, la désactiver ou la supprimer.
+
+Afin de limiter les risques de suppression accidentelle, il est nécessaire de désactiver la clé avant de la supprimer.
+
+> [!warning]
+>
+> Il n'existe aucun moyen de récupérer une clé supprimée et sa suppression entraine la perte des données chiffrés avec celle-ci. Aussi, toute suppression doit être envisagée avec la plus grande précaution.
+
+![Créer une clé](images/create_key_03.png){.thumbnail}
 
 ### Créer un certificat d'accès
 
@@ -236,7 +258,7 @@ Copiez la valeur du champ **certificatePEM** dans un fichier **client.cert**.
 
 ### Communiquer avec le KMS
 
-La communication avec le KMS est disponible uniquement par API pendant la beta.
+La communication avec le KMS pour les actions autres que la création de clé est disponible uniquement par API.
 
 Le KMS étant régionalisé, l'accès à l'API se fait directement sur la région de celui-ci : <https://my-region.okms.ovh.net>
 
@@ -248,7 +270,7 @@ En cas d'utilisation d'un navigateur, il est nécessaire de convertir le certifi
 openssl pkcs12 -export -inkey client.key -in client.cert -out client.p12
 ```
 
-#### Créer une clé de chiffrement
+#### Créer une clé de chiffrement par API
 
 La création d'une clé se fait par l'API suivante :
 

@@ -47,7 +47,7 @@ Alcuni elementi sono predefiniti:
 
 Definisci il nome della nuova istanza, la chiave SSH, la vRack e il periodo di fatturazione, poi clicca sul pulsante `Crea l'istanza`{.action}.
 
-Per maggiori informazioni sulla creazione di un’istanza, consulta [questa guida](/pages/public_cloud/compute/public-cloud-first-steps#step-3-crea-unistanza).
+Per maggiori informazioni sulla creazione di un’istanza, consulta [questa guida](/pages/public_cloud/compute/public-cloud-first-steps).
 
 > [!primary]
 >

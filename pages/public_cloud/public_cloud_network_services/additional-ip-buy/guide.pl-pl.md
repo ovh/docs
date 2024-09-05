@@ -29,7 +29,7 @@ Te adresy Additional IP można migrować tylko do instancji tego samego projektu
 ## Wymagania początkowe
 
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
-- Posiadanie co najmniej jednej instancji. W tym celu zapoznaj się z [przewodnikiem dotyczącym tworzenia instancji w Panelu klienta](/pages/public_cloud/compute/public-cloud-first-steps#krok-3-tworzenie-instancji).
+- Posiadanie co najmniej jednej instancji. W tym celu zapoznaj się z [przewodnikiem dotyczącym tworzenia instancji w Panelu klienta](/pages/public_cloud/compute/public-cloud-first-steps).
 
 > [!warning]
 > Ta funkcja nie jest aktualnie dostępna dla instancji Metal.

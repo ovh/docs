@@ -88,9 +88,9 @@ Vous disposez de 2 options pour créer et gérer vos clés SSH :
 - L'interface de ligne de commande de votre OS (simple client **Open SSH**).
 - Un logiciel supplémentaire (compatible avec le protocole **Open SSH**) avec ligne de commande ou interface graphique.
 
-La plupart des systèmes d'exploitation de bureau contemporains incluent nativement le client **Open SSH** accessible via l'application de ligne de commande du système (`cmd`, `Powershell`, `Terminal`, etc.). Si vous n'êtes pas familier avec l'utilisation des clés SSH comme méthode d'authentification, vous pouvez utiliser les instructions de [ce guide](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#create-ssh-key) pour créer votre paire de clés.
+La plupart des systèmes d'exploitation de bureau contemporains incluent nativement le client **Open SSH** accessible via l'application de ligne de commande du système (`cmd`, `Powershell`, `Terminal`, etc.). Si vous n'êtes pas familier avec l'utilisation des clés SSH comme méthode d'authentification, vous pouvez utiliser les instructions de [ce guide](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key) pour créer votre paire de clés.
 
-Si vous utilisez un autre logiciel, reportez-vous à sa documentation utilisateur. Les instructions pour la solution open source `PuTTY` sont disponibles dans [ce guide](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#useputty).
+Si vous utilisez un autre logiciel, reportez-vous à sa documentation utilisateur. Les instructions pour la solution open source `PuTTY` sont disponibles dans [ce guide](/pages/public_cloud/compute/creating-ssh-keys-pci#useputty).
 
 <a name="import-ssh"></a>
 
@@ -418,7 +418,7 @@ Si votre [paire de clés SSH est correctement configurée](#create-ssh), vous po
 
 > [!primary]
 >
-> Si vous recevez des messages d’erreur concernant vos **clés SSH**, vérifiez que votre appareil local dispose d’une clé SSH privée correctement configurée en utilisant les informations de [ce guide](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#create-ssh-key).</br>
+> Si vous recevez des messages d’erreur concernant vos **clés SSH**, vérifiez que votre appareil local dispose d’une clé SSH privée correctement configurée en utilisant les informations de [ce guide](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key).</br>
 > Si vous rencontrez toujours des difficultés, vous pouvez remplacer la paire de clés à l'aide de [ce guide](/pages/public_cloud/compute/replacing_lost_ssh_key).
 >
 > Si vous avez créé une instance sans clé SSH, via l’[API OVHcloud](/pages/manage_and_operate/api/first-steps) ou l’[interface OpenStack Horizon](/pages/public_cloud/compute/create_instance_in_horizon), vous ne pouvez ajouter une clé SSH à votre instance que via le [mode rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) en suivant les instructions décrites dans [ce guide](/pages/public_cloud/compute/replacing_lost_ssh_key).
@@ -436,9 +436,9 @@ Exemple :
 ssh ubuntu@203.0.113.101
 ```
 
-[En fonction de votre configuration](#create-ssh), vous devrez entrer une phrase secrète qui protège votre clé privée ou spécifier le chemin d'accès à votre fichier de clé. Consultez notre [guide des clés SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#multiplekeys) pour des informations détaillées sur ce sujet.
+[En fonction de votre configuration](#create-ssh), vous devrez entrer une phrase secrète qui protège votre clé privée ou spécifier le chemin d'accès à votre fichier de clé. Consultez notre [guide des clés SSH](/pages/public_cloud/compute/creating-ssh-keys-pci#multiplekeys) pour des informations détaillées sur ce sujet.
 
-Si vous utilisez un autre logiciel client SSH, reportez-vous à sa documentation utilisateur. Un exemple d'utilisation de la solution open source `PuTTY` est disponible dans [ce guide](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#useputty).
+Si vous utilisez un autre logiciel client SSH, reportez-vous à sa documentation utilisateur. Un exemple d'utilisation de la solution open source `PuTTY` est disponible dans [ce guide](/pages/public_cloud/compute/creating-ssh-keys-pci#useputty).
 
 Poursuivez à l'[étape 6 ci-dessous](#manage-access).
 

@@ -62,7 +62,7 @@ Existem duas situações:
 
 #### Caso de uma nova instância
 
-Se precisar de ajuda, consulte o guia: [Criar uma instância Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#3o-passo-criacao-de-uma-instancia){.external}. Ao criar uma instância, poderá especificar, na etapa 4, uma rede privada na qual poderá integrar a sua instância. Escolha, no menu pendente apresentado, o seu vRack criado anteriormente.
+Se precisar de ajuda, consulte o guia: [Criar uma instância Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps). Ao criar uma instância, poderá especificar, na etapa 4, uma rede privada na qual poderá integrar a sua instância. Escolha, no menu pendente apresentado, o seu vRack criado anteriormente.
 
 #### Caso de uma instância já existente
 

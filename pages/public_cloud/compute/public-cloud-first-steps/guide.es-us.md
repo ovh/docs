@@ -93,9 +93,9 @@ Dispone de dos opciones para crear y gestionar sus llaves SSH:
 - La interfaz de línea de comandos de su SO (simple cliente **Open SSH**).
 - Software adicional (compatible con el protocolo **Open SSH**) con línea de comandos o interfaz gráfica.
 
-La mayoría de los sistemas operativos de escritorio contemporáneos incluyen de forma nativa el cliente **Open SSH** accesible a través de la aplicación de línea de comandos del sistema (`cmd`, `Powershell`, `Terminal`, etc.). Si no está familiarizado con el uso de las claves SSH como método de autenticación, puede utilizar las instrucciones de [esta guía](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#create-ssh-key) para crear su par de claves.
+La mayoría de los sistemas operativos de escritorio contemporáneos incluyen de forma nativa el cliente **Open SSH** accesible a través de la aplicación de línea de comandos del sistema (`cmd`, `Powershell`, `Terminal`, etc.). Si no está familiarizado con el uso de las claves SSH como método de autenticación, puede utilizar las instrucciones de [esta guía](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key) para crear su par de claves.
 
-Si utiliza otro software, consulte su documentación de usuario. Las instrucciones para la solución open source `PuTTY` están disponibles en [esta guía](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#useputty).
+Si utiliza otro software, consulte su documentación de usuario. Las instrucciones para la solución open source `PuTTY` están disponibles en [esta guía](/pages/public_cloud/compute/creating-ssh-keys-pci#useputty).
 
 <a name="import-ssh"></a>
 
@@ -425,7 +425,7 @@ Si su [par de llaves SSH está correctamente configurado](#create-ssh), puede co
 
 > [!primary]
 >
-> Si recibe mensajes de error relativos a sus **llaves SSH**, compruebe que su dispositivo local dispone de una llave SSH privada correctamente configurada utilizando la información de [esta guía](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#create-ssh-key).</br>
+> Si recibe mensajes de error relativos a sus **llaves SSH**, compruebe que su dispositivo local dispone de una llave SSH privada correctamente configurada utilizando la información de [esta guía](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key).</br>
 > Si sigue teniendo problemas, puede reemplazar el par de claves con [esta guía](/pages/public_cloud/compute/replacing_lost_ssh_key).
 >
 > Si ha creado una instancia sin llave SSH, a través de la [API de OVHcloud](/pages/manage_and_operate/api/first-steps) o de la [interfaz OpenStack Horizon](/pages/public_cloud/compute/create_instance_in_horizon), solo podrá añadir una llave SSH a su instancia a través del [modo de rescate](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) siguiendo las instrucciones descritas en [esta guía](/pages/public_cloud/compute/replacing_lost_ssh_key).
@@ -443,9 +443,9 @@ Ejemplo:
 ssh ubuntu@203.0.113.101
 ```
 
-[En función de su configuración](#create-ssh), tendrá que escribir una frase de contraseña que proteja su clave privada o especificar la ruta de acceso a su archivo de clave. Para más información, consulte nuestra [guía de claves SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#multiplekeys).
+[En función de su configuración](#create-ssh), tendrá que escribir una frase de contraseña que proteja su clave privada o especificar la ruta de acceso a su archivo de clave. Para más información, consulte nuestra [guía de claves SSH](/pages/public_cloud/compute/creating-ssh-keys-pci#multiplekeys).
 
-Si utiliza otro cliente SSH, consulte la documentación del usuario de SSH. Puede consultar un ejemplo de uso de la solución open source `PuTTY` en [esta guía](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#useputty).
+Si utiliza otro cliente SSH, consulte la documentación del usuario de SSH. Puede consultar un ejemplo de uso de la solución open source `PuTTY` en [esta guía](/pages/public_cloud/compute/creating-ssh-keys-pci#useputty).
 
 Continúe en el [paso 6 a continuación](#manage-access).
 

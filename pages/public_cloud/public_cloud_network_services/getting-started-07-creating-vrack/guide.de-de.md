@@ -171,7 +171,7 @@ Im nächsten Schritt erhalten Sie eine Reihe von Optionen:
 
 **Erstellen Sie ein Gateway und verbinden Sie sich mit dem privaten Netzwerk**
 
-Wählen Sie diese Option aus, wenn Sie beabsichtigen, Instanzen ausschließlich für ein privates Netzwerk zu erstellen. Weitere Informationen finden Sie in den folgenden Hilfen: [Creating a private network with Gateway (EN)](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway) und [Erste Public Cloud Instanz erstellen und auf dieser einloggen](/pages/public_cloud/compute/public-cloud-first-steps#schritt-3-instanz-erstellen).
+Wählen Sie diese Option aus, wenn Sie beabsichtigen, Instanzen ausschließlich für ein privates Netzwerk zu erstellen. Weitere Informationen finden Sie in den folgenden Hilfen: [Creating a private network with Gateway (EN)](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway) und [Public Cloud Instanz erstellen und einloggen](/pages/public_cloud/compute/public-cloud-first-steps).
 
 > [!warning]
 > Wenn die Option grau ist, bedeutet dies, dass sie mit der ausgewählten Region unvereinbar ist. Weitere Informationen finden Sie auf unserer Seite zur [Verfügbarkeit der Public Cloud Produkte für jede Region](https://www.ovhcloud.com/de/public-cloud/regions-availability/).
@@ -251,7 +251,7 @@ Es können zwei Situationen auftreten:
 
 ##### **Über das OVHcloud Kundencenter**
 
-Folgen Sie der Anleitung zum [Erstellen einer Public Cloud-Instanz](/pages/public_cloud/compute/public-cloud-first-steps#create-instance). Bei der Erstellung einer Instanz können Sie in Schritt 5 einen Netzwerkmodus und anschließend ein privates Netzwerk auswählen, in das Ihre Instanz integriert werden kann.
+Folgen Sie der Anleitung zum [Erstellen einer Public Cloud-Instanz](/pages/public_cloud/compute/public-cloud-first-steps). Bei der Erstellung einer Instanz können Sie in Schritt 5 einen Netzwerkmodus und anschließend ein privates Netzwerk auswählen, in das Ihre Instanz integriert werden kann.
 
 ![attach new instance](images/network-selection.png){.thumbnail}
 

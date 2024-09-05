@@ -70,7 +70,7 @@ Gli esempi che seguono presuppongono che tu sia connesso come utente con autoriz
 
 #### Con Linux
 
-Apri una [connessione SSH alla tua istanza](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance) e utilizza il comando qui sotto per visualizzare i dischi associati.
+Apri una [connessione SSH alla tua istanza](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) e utilizza il comando qui sotto per visualizzare i dischi associati.
 
 ```bash
 lsblk

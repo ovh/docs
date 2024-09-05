@@ -1,7 +1,7 @@
 ---
 title: "Configure an MX record for email management"
 excerpt: Find out how to configure an MX record on your domain name at OVHcloud
-updated: 2024-02-29
+updated: 2024-09-02
 ---
 
 ## Objective
@@ -49,6 +49,8 @@ You can set up multiple MX records for the same domain name. It is then necessar
 ### OVHcloud MX configuration values <a name="mxovhcloud"></a>
 
 Below, you will find the OVHcloud MX configuration to use for our MX Plan solutions (MX Plan standalone or included in an [OVHcloud web hosting](/links/web/hosting) plan), [Email Pro](/links/web/email-pro) and [Exchange](/links/web/emails). Our email servers have antispam and antivirus integrated.
+
+These values are common to all of these solutions, with the exception of [Private Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_private) and Dedicated Exchange.
 
 |Domain|TTL|Record type|Priority|Target|
 |---|---|---|---|---|

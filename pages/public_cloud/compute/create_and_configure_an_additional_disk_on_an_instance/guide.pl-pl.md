@@ -70,7 +70,7 @@ Poniższe przykłady zakładają, że jesteś zalogowany jako użytkownik z odpo
 
 #### Linux
 
-Otwórz [połączenie SSH z Twoją instancją](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance), następnie użyj poniższej komendy, aby wyświetlić powiązane dyski.
+Otwórz [połączenie SSH z Twoją instancją](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance), następnie użyj poniższej komendy, aby wyświetlić powiązane dyski.
 
 ```bash
 lsblk

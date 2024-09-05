@@ -1,7 +1,7 @@
 ---
 title: "Install and use OVHcloud Backint Agent for SAP HANA"
 excerpt: "This guide provides instructions for installing OVHcloud Backint Agent for SAP HANA and its usage"
-updated: 2024-08-05
+updated: 2024-09-03
 ---
 
 
@@ -44,7 +44,7 @@ You can check the versioning status of your Object Storage S3 bucket by followin
 
 1. Log in to the [OVHcloud Control Panel](/links/manager).
 2. Click `Public Cloud`{.action} and select your Public Cloud project. Then click `Object Storage`{.action}.
-3. Click on the Object Storage bucket that will host backups of your SAP HANA database.
+3. Click on the S3 Object Storage bucket that will host backups of your SAP HANA database.
 4. Check the value of the `Versioning`{.action} parameter, it must have the value `Enabled`{.action}. If the value of this parameter is `Disabled`{.action}, click on `Enable versioning`{.action}.
 
 | Versioning enabled | Versioning disabled |
@@ -317,7 +317,7 @@ In our example, we select the `Recover to the most recent state`{.action} option
 
 ![recover_tenant_04](images/recover_tenant/recover_tenant_04.png){.thumbnail}
 
-5\. If you did not modify the backups catalog location, the `Backup location only`{.action} option is right.
+5\. If you did not modify the backups catalog location, the `Backint location only`{.action} option is right.
 
 Otherwise, please give the path.
 
