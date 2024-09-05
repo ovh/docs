@@ -59,9 +59,10 @@ Na stronie wyświetla się kilka informacji umożliwiających wyświetlenie akty
 
 Po prawej stronie możesz zarządzać wysyłką automatycznych wiadomości e-mail z Twojego hostingu. Niektóre z nich mogą nie być dostępne w zależności od statusu usługi.
 
-- **Zablokuj wysyłkę**: blokuje dystrybucję automatycznych wiadomości e-mail wysyłanych z Twojego hostingu. Wiadomości e-mail generowane przez Twoje skrypty po zablokowaniu nie zostaną wysłane, ale będą przechowywane w kolejce przez maksymalnie 72 godziny.
-- **Odblokuj wysyłkę**: odblokuje wysyłkę automatycznych wiadomości e-mail z Twojego hostingu. Wiadomości oczekujące w kolejce zostaną ponownie przydzielone do dystrybucji.
-- **Usuwanie e-maili**: usuń wiadomości e-mail oczekujące w kolejce i odblokuj wysyłkę e-maili.
+- **Usuń wiadomości e-mail** : usuwa wiadomości e-mail oczekujące w kolejce i odblokowuje wysyłkę e-maili.
+- **E-maile z błędami** : umożliwia dostęp do logów ostatnich e-maili z błędami podczas wysyłki. Na tej stronie znajdziesz adresy e-mail, których dotyczy powiązany z nimi błąd. Uwaga, ta historia nie zostanie zresetowana, nawet jeśli zdecydujesz się na `Usuń wiadomości e-mail`{.action} lub `Odblokuj wysyłkę`{.action}.
+- **Blokuj wysyłkę** : blokuje dystrybucję automatycznych wiadomości e-mail wysyłanych z Twojego hostingu. Wiadomości e-mail generowane przez Twoje skrypty po zablokowaniu będą czekały w kolejce przez 72 godziny.
+- **Odblokuj wysyłkę** : odblokuj wysyłkę automatycznych wiadomości e-mail z Twojego hostingu. Wiadomości oczekujące w kolejce zostaną ponownie przydzielone do dystrybucji.
 
 Aby wykonać wybraną operację, kliknij odpowiedni przycisk, po czym kliknij `Zatwierdź`{.action}. W niektórych przypadkach pożądana operacja może potrwać kilkadziesiąt minut.
 
