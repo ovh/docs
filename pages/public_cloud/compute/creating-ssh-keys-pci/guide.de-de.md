@@ -113,7 +113,7 @@ The key's randomart image is:
 
 <a name="publickey"></a>
 
-Um Ihren öffentlichen Schlüssel anzuzeigen und zu exportieren, wenden Sie den Befehl `cat` auf die Schlüsseldatei (`.pub`) an. Kopieren Sie die vollständige Schlüsselzeichenfolge um sie [einer neuen Instanz hinzufügen](/pages/public_cloud/compute/public-cloud-first-steps#create-instance) oder in das [OVHcloud Kundencenter zu importieren](/pages/public_cloud/compute/import-ssh).
+Um Ihren öffentlichen Schlüssel anzuzeigen und zu exportieren, wenden Sie den Befehl `cat` auf die Schlüsseldatei (`.pub`) an. Kopieren Sie die vollständige Schlüsselzeichenfolge um sie [einer neuen Instanz hinzufügen](/pages/public_cloud/compute/public-cloud-first-steps#create-instance) oder in das [OVHcloud Kundencenter zu importieren](/pages/public_cloud/compute/public-cloud-first-steps#import-ssh).
 
 ```bash
 cat ~/.ssh/id_rsa.pub
