@@ -20,7 +20,7 @@ Ce tutoriel décrit les étapes à suivre pour mettre à jour un système d'expl
 
 ## Prérequis
 
-- Disposer d'un [accès root au serveur](/pages/public_cloud/compute/become_root_and_change_password)
+- Disposer d'un [accès administrateur au serveur](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance)
 - Avoir effectué [une sauvegarde de votre instance](/pages/public_cloud/compute/save_an_instance)
 
 ## En pratique

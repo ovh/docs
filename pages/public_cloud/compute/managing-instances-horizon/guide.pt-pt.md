@@ -159,7 +159,7 @@ Em caso de perda de acesso à sua instância, devido a uma configuração incorr
 > [!primary]
 >
 > Pode aceder diretamente à sua instância através da consola VNC. No entanto, deverá configurar previamente uma palavra-passe para o utilizador root.
-> Para mais informações, consulte [este guia](/pages/public_cloud/compute/become_root_and_change_password).
+> Para mais informações, consulte [este guia](/pages/public_cloud/compute/public-cloud-first-steps#user-mgmt).
 > A consola VNC pode também servir de primeira aproximação em caso de avaria, de forma a estabelecer um diagnóstico graças à análise da fase de arranque da sua instância.
 > 
 

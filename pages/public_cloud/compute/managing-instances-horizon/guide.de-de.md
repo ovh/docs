@@ -160,7 +160,7 @@ Bei Verlust des Zugangs zu Ihrer Instanz aufgrund einer fehlerhaften Konfigurati
 > [!primary]
 >
 > Sie können direkt über die VNC-Konsole auf Ihre Instanz zugreifen. Sie müssen jedoch zuerst ein Passwort für den Root-Benutzer konfigurieren.
-> Weitere Informationen finden Sie in [dieser Anleitung](/pages/public_cloud/compute/become_root_and_change_password).
+> Weitere Informationen finden Sie in [dieser Anleitung](/pages/public_cloud/compute/public-cloud-first-steps#user-mgmt).
 > Die VNC-Konsole kann auch als erster Diagnose-Ansatz bei einer Fehlfunktion verwendet werden, indem die Bootphase Ihrer Instanz analysiert wird.
 > 
 

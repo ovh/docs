@@ -26,7 +26,7 @@ In diesem Tutorial werden die notwendigen Schritte beschrieben, um eine nicht me
 
 ## Voraussetzungen
 
-- Sie haben [Root-Zugriff auf den Server](/pages/public_cloud/compute/become_root_and_change_password)
+- Sie haben [administrativen Zugriff auf den Server](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance)
 - Sie haben [ein Backup Ihrer Instanz durchgeführt](/pages/public_cloud/compute/save_an_instance)
 
 ## In der praktischen Anwendung

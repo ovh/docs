@@ -159,7 +159,7 @@ Si pierde el acceso a su instancia, ya sea debido a una mala configuración o a 
 > [!primary]
 >
 > Puede acceder directamente a su instancia a través de la consola VNC. En cambio, es necesario configurar previamente una contraseña para el usuario root.
-> Para más información, consulte [esta guía](/pages/public_cloud/compute/become_root_and_change_password).
+> Para más información, consulte [esta guía](/pages/public_cloud/compute/public-cloud-first-steps#user-mgmt).
 > La consola VNC también puede servir de primer enfoque en caso de fallo de funcionamiento para establecer un diagnóstico gracias al análisis de la fase de inicio de su instancia.
 > 
 
