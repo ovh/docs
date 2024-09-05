@@ -1,7 +1,7 @@
 ---
 title: "Creating a database on your web hosting plan"
 excerpt: "Find out how to create a database on your OVHcloud web hosting plan"
-updated: 2024-05-17
+updated: 2024-09-05
 ---
 
 ## Objective
@@ -53,8 +53,13 @@ In the window that opens, select the following information:
 |Information|Description|  
 |---|---|
 |**Select the type of database**|Choose the size of the database. This size refers to the space available to your database for storing data.|
-|**Select the database engine to be added**|Choose the engine you want the database to use. The databases included in your [OVHcloud web hosting plan](/links/web/hosting) are only available with the MySQL engine.|
+|**Select the database engine to be added**|Choose the engine you want the database to use. Currently, the databases included in your [OVHcloud web hosting plan](/links/web/hosting) are only available with the MySQL engine.|
 |**Select the version of the database to be added**|Choose the version used by the database engine. Make sure your website is compatible with the version you have chosen.|
+
+> [!primary]
+>
+> Engine version update for a database already created is currently unavailable.
+>
 
 Click on `Next`{.action}.
 

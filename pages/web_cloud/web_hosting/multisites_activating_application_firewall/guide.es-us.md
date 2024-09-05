@@ -1,7 +1,7 @@
 ---
 title: Activación del firewall de aplicación
 excerpt: Cómo activar el firewall de aplicación en un plan de hosting.
-updated: 2021-04-26
+updated: 2024-09-05
 ---
 
 > [!primary]
@@ -22,6 +22,11 @@ El conjunto preconfigurado de reglas básicas, el "Core Rule Set" (CRS) de nuest
 - la compra de una caja registradora, entre otros.
 
 **Esta guía explica cómo activar el firewall de aplicación desde el área de cliente de OVHcloud para mejorar la protección.**
+
+> [!primary]
+>
+> Debido a que su alojamiento web está presente en una infraestructura compartida, no es posible modificar los parámetros de configuración del firewall.
+>
 
 ## Requisitos
 
