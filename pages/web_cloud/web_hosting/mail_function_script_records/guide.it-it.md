@@ -1,7 +1,7 @@
 ---
 title: "Gestire l’invio delle email automatiche"
 excerpt: "Questa guida ti mostra come monitorare e gestire le email automatiche inviate da un hosting Web OVHcloud"
-updated: 2024-08-20
+updated: 2024-09-05
 ---
 
 > [!primary]
@@ -59,9 +59,10 @@ Visualizzi una serie di informazioni per visualizzare l'attività dell'invio di 
 
 Sulla destra, diversi pulsanti permettono di gestire l'invio di email automatiche dal tuo hosting Web. A seconda dello stato del servizio, alcuni potrebbero non essere disponibili.
 
-- **Bloccare l'invio**: blocca la distribuzione dell'invio delle email automatiche dal tuo hosting Web. Le email generate dai tuoi script dopo il blocco non saranno inviate, ma conservate in coda per un massimo di 72 ore.
+- **Elimina le email**: cancella le email presenti nella coda di attesa e sblocca l'invio delle email.
+- **Email in errore**: permette l'accesso ai log delle ultime email inviate in errore. in cui sono indicati gli indirizzi email associati all’errore. Attenzione: la cronologia non verrà ripristinata anche se decidi di `Blocca l'invio`{.action} o di `Sblocca l'invio`{.action}.
+- **Blocca l'invio**: blocca la distribuzione dell'invio delle email automatiche dal tuo hosting Web. Le email generate dai tuoi script dopo il blocco non saranno inviate, ma conservate in coda per un massimo di 72 ore.
 - **Sblocca l'invio**: sblocca l'invio delle email automatiche dal tuo hosting Web. Le email in coda verranno rimesse in distribuzione.
-- **Rimuovere le email**: cancella le email presenti nella coda di attesa e sblocca l'invio delle email.
 
 Per effettuare l'azione desiderata, clicca sul pulsante corrispondente e poi su `Conferma`{.action}. In alcuni casi l'azione desiderata può richiedere decine di minuti per essere pienamente efficace.
 
@@ -198,17 +199,6 @@ Anche se ti consigliamo vivamente di privilegiare l'utilizzo della funzione "mai
 > 
 > Le email emesse con uno script che utilizzano una configurazione SMTP non potranno essere gestite e monitorate dal tuo [Spazio Cliente OVHcloud](/links/manager).
 > 
-
-utilizzando il seguente script, sostituendo i valori `Host`, `Username` e `Password` con i parametri SMTP:
-
-```bash
-$mail->Host = "your.smtp.server";
-$mail->SMTPAuth = true; 
-$mail->SMTPSecure = "ssl";
-$mail->Port = 465; 
-$mail->Username = "e-mail@address.tld"; 
-$mail->Password = "YourEmailPassword"; 
-```
 
 > [!primary]
 >

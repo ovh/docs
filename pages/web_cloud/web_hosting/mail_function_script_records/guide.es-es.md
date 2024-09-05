@@ -1,7 +1,7 @@
 ---
 title: "Gestionar los mensajes de correo automatizados"
 excerpt: "Descubra cómo realizar el seguimiento y la gestión de los emails automatizados enviados desde un alojamiento web de OVHcloud"
-updated: 2024-08-20
+updated: 2024-09-05
 ---
 
 > [!primary]
@@ -59,9 +59,10 @@ La página muestra varios datos que le permiten visualizar la actividad del env�
 
 A la derecha, varios botones permiten gestionar el envío de mensajes de correo automatizados desde el alojamiento web. En función del estado del servicio, algunas opciones pueden no estar disponibles.
 
+- **Eliminar los mesajes**: borra los emails que haya en la cola de espera y desbloquea el envío de emails.
+- **Mensajes en error** : permite el acceso a los logs de los últimos mensajes de correo electrónico que se hayan encontrado en error de envío. Encontrará las direcciones de correo electrónico afectadas con el error asociado. Atención: Este historial no se restablecerá aunque decida `Eliminar los mesajes`{.action} o `Desbloquear el envío`{.action}.
 - **Bloquear el envío** : bloquea la distribución de los envíos de mensajes de correo automatizados de su alojamiento web. Los emails generados por sus scripts después del bloqueo no se enviarán, sino que se conservarán en una cola de espera durante un máximo de 72 horas.
 - **Desbloquear el envío**: desbloquea el envío de los emails automatizados de su alojamiento web. Los mensajes de correo presentes en la cola de espera también se reenviarán.
-- **Purgar el correo**: borra los emails que haya en la cola de espera y desbloquea el envío de emails.
 
 Para realizar la acción deseada, haga clic en el botón correspondiente y seleccione `Aceptar`{.action}. En algunos casos, la acción deseada puede tardar varias decenas de minutos en ser plenamente efectiva.
 
@@ -198,17 +199,6 @@ Aunque le recomendamos encarecidamente que prefiera utilizar la función "mail()
 > 
 > Los emails enviados con un script que utilicen una configuración SMTP no podrán ser gestionados y seguidos desde su [área de cliente OVHcloud](/links/manager).
 > 
-
-Para ello, puede utilizar el siguiente script sustituyendo únicamente los valores `Host`, `Username` y `Password` por sus propios parámetros SMTP:
-
-```bash
-$mail->Host = "your.smtp.server";
-$mail->SMTPAuth = true; 
-$mail->SMTPSecure = "ssl";
-$mail->Port = 465; 
-$mail->Username = "e-mail@address.tld"; 
-$mail->Password = "YourEmailPassword"; 
-```
 
 > [!primary]
 >
