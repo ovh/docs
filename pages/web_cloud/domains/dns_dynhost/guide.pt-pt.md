@@ -83,7 +83,7 @@ Quando estiver pronto para criar o registo DynHost, clique no separador `DynHost
 |Informações|Descrição|
 |---|---|
 |Subdomínio|Indique o subdomínio cujo registo DNS deverá ser atualizado de forma dinâmica. Este subdomínio deve corresponder ao domínio indicado durante a criação do utilizador DynHost. **Se desejar implementar um DynHost diretamente para o seu domínio, deixe este formulário em branco**|
-|IP de destino|Introduza o endereço IP (apenas IPv4 ou IPv6) que deve ser atualmente utilizado pelo registo DNS. Trata-se geralmente do endereço IP público do seu *box* Internet ou do seu servidor alojado automaticamente. De acordo com o princípio do DynHost, esta será atualizada automaticamente.|
+|IP de destino|Introduza o endereço IP (apenas IPv4 ou IPv6) que deve ser atualmente utilizado pelo registo DNS. Trata-se geralmente do endereço IP público do seu *box* Internet ou do seu servidor alojado automaticamente. De acordo com o princípio do DynHost, esta será atualizada automaticamente. Deve ser indicado apenas um endereço IP neste formulário.|
 
 > [!warning]
 >
@@ -93,6 +93,11 @@ Quando estiver pronto para criar o registo DynHost, clique no separador `DynHost
 ![dynhost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/create-a-dynhost.png){.thumbnail}
 
 Depois de preencher os campos, clique no botão `Validar`{.action}. O registo DynHost aparece no quadro presente na página atual. Repita este passo sempre que necessário se precisar de mais registos DynHost.
+
+> [!primary]
+>
+> Se o seu domínio ou subdomínio tiver de ser configurado dinamicamente com, por exemplo, um IPv4 e um IPv6, pode criar dois registos DNS dinâmicos para o mesmo domínio ou subdomínio. O primeiro registo DNS dinâmico será então para o IPv4 e o segundo para o IPv6.
+>
 
 ### Etapa 3: automatizar a alteração do DynHost
 
