@@ -164,7 +164,7 @@ In the **Private Network Name** field, set a name for your private network.
 
 **Create a Gateway and connect to the private network**
 
-Select this option if you intend to create instances with a private network only. For more information, please consult the following guides: [Creating a private network with Gateway](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway) and [Creating and connecting to your first Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-stepse).
+Select this option if you intend to create instances with a private network only. For more information, please consult the following guides: [Creating a private network with Gateway](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway) and [Creating and connecting to your first Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps).
 
 > [!warning]
 > If the option is greyed out, it means the region selected does not support it. For more information, please refer to our [regions availability](https://www.ovhcloud.com/en-ca/public-cloud/regions-availability/) page. 
