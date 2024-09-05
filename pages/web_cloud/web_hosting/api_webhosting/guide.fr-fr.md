@@ -1,7 +1,7 @@
 ---
 title: "Comment créer et gérer une application web en utilisant l'API publique OVHcloud"
 excerpt: "Découvrez comment utiliser l'API publique OVHcloud pour créer et gérer une application web"
-updated: 2024-09-04
+updated: 2024-09-05
 ---
 
 ## Objectif
