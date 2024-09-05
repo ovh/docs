@@ -137,7 +137,7 @@ Pour plus d'informations sur la création d'une clé SSH, consultez [ce guide](/
 >> Pour créer une paire de clés, cliquez sur le bouton `+ Create Key Pair`{.action}. Veuillez noter qu'avec cette option, des étapes supplémentaires doivent être effectuées avant de pouvoir vous connecter à l'instance, surtout si vous utilisez le logiciel Putty pour vous connecter à votre instance. Consultez [cette section](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) du guide correspondant.
 >>
 >> **Key Pair Name :** Entrez un nom pour votre clé.<br>
->> **Key Type :** Cliquez sur la `flèche déroulante` et sélectionnez `SSH Key`.<br>
+>> **Key Type :** Cliquez sur la `flèche déroulante`{.action} et sélectionnez `SSH Key`{.action}.<br>
 >> Ensuite, cliquez sur `Create Keypair`{.action} pour commencer la création de la clé.<br>
 >>
 >> Une fois la paire de clés créée, cliquez sur `Copy Private Key to Clipboard`{.action}, puis sur `Done`{.action}.<br><br>

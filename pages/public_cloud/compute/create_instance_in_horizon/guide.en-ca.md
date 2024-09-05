@@ -136,7 +136,7 @@ For more information on how to create an SSH key, consult [this guide](/pages/pu
 >> To create a Keypair, click on the `+ Create Key Pair`{.action} button. Please note that with this option, additional steps have to be made before you are able to connect to the instance, especially if you are using the software Putty to connect to your instance. See [this section](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) of the corresponding guide.
 >>
 >> **Key Pair Name:** Enter a name for your key.<br>
->> **Key Type:** Click on the `drop down arrow` and select `SSH Key`.<br>
+>> *Key Type:** Click on the `drop down arrow`{.action} and select `SSH Key`{.action}.<br>
 >> Next, click on `Create Keypair`{.action} to begin the creation of the key pair.<br>
 >>
 >> Once the Key Pair is created, click on `Copy Private Key to Clipboard`{.action}, then on `Done`{.action}.<br><br>
@@ -150,7 +150,7 @@ For more information on how to create an SSH key, consult [this guide](/pages/pu
 >> If you prefer to import a previously created SSH key, click on the `Import Key Pair`{.action} button.
 >>
 >> **Key Pair Name:** Enter a name for your key.<br>
->> **Key Type:** Click on the `drop down arrow` and select `SSH Key`.<br>
+>> *Key Type:** Click on the `drop down arrow`{.action} and select `SSH Key`{.action}.<br>
 >> **Load Public Key from a file:**  Click on `Browse`{.action} to specify the location of the public key on your computer.<br>
 >> **Public Key:** Copy and paste your public key here.<br>
 >> Click on `Import Key Pair`{.action} to import the key.<br><br>
