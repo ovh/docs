@@ -59,9 +59,10 @@ A página apresenta várias informações que lhe permitem visualizar a atividad
 
 À direita, vários botões permitem gerir os envios de e-mails automatizados a partir do seu alojamento web. Em função do estado do serviço, alguns podem não estar disponíveis.
 
+- **Purgar os e-mails** : apaga os e-mails presentes na fila de espera e desbloqueia o envio de emails.
+- **E-mails em erro**: permite o acesso aos logs dos últimos e-mails com erro de envio. Encontrará os endereços de e-mail afetados com o erro associado. Atenção, este histórico não será reiniciado, mesmo se decidir `Purgar os e-mails`{.action} ou `desbloquear o envio`{.action}.
 - **Bloquear o envio**: bloqueia a distribuição dos envios de e-mails automatizados do seu alojamento web. Os e-mails gerados pelos seus scripts após o bloqueio não serão enviados, mas conservados numa fila de espera durante 72 horas, no máximo.
 - **Desbloquear o envio**: desbloqueie o envio dos e-mails automatizados do seu alojamento web. Os e-mails presentes na fila de espera serão igualmente recolocados em distribuição.
-- **Purgar os e-mails** : apaga os e-mails presentes na fila de espera e desbloqueia o envio de emails.
 
 Para realizar a ação desejada, clique no botão correspondente e depois em `Valider`{.action}. Em certos casos, a ação desejada pode demorar dezenas de minutos para ser plenamente efetiva.
 
