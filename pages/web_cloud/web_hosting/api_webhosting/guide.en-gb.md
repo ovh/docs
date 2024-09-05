@@ -10,9 +10,9 @@ This guide explains how to use the OVHcloud public API to create and manage a we
 
 ## Requirements
 
-- You have access to the [OVHcloud Control Panel](/links/manager).
-- You have basic knowledge of REST API.
-- You have access to OVHcloud APIs. Read our guide to [Getting started with OVHcloud APIs](/pages/manage_and_operate/api/first-steps).
+- An OVHcloud [Web Hosting plan](/links/web/hosting)
+- Basic knowledge of the REST API.
+- Access to the OVHcloud API. Read our [Getting started with OVHcloud APIs](/pages/manage_and_operate/api/first-steps) guide.
 
 > [!warning]
 >
@@ -31,8 +31,7 @@ The first step is to retrieve the `serviceName`, a unique ID for your web hostin
 
 This command returns a list of your web hosting services. Each entry in the list is a `serviceName`.
 
-
-**Sample response** :
+**Return example** :
 
 ```json
 [
@@ -41,18 +40,18 @@ This command returns a list of your web hosting services. Each entry in the list
 ]
 ```
 
-### Attach a domain
+### Attaching a domain
 
-Attach a domain to your web hosting service.
+Attach a domain to your web hosting service:
 
 > [!api]
 >
 > @api {v1} /hosting/web POST /hosting/web/{serviceName}/attachedDomain
 
-| Setting               | Required | Description       |
-|-------------------------|-------------|-------------------|
-| serviceName             | yes         | Service name       |
-| bypassDNSConfiguration | no         | If enabled, the DNS zone will not be updated    |
+| Settings                | Required | Description       |
+|-------------------------|------------|-------------------|
+| serviceName             | yes        | Service name       |
+| bypassDNSConfiguration  | no         | If enabled, the DNS zone will not be updated    |
 | cdn                     | no         | Indicates whether the domain is linked to the hosting CDN. Allowed values: active┃none |
 | domain                  | no         | Domain to link      |
 | firewall                | no         | Indicates whether the firewall is active for this domain. Allowed values : active┃none |
@@ -62,7 +61,7 @@ Attach a domain to your web hosting service.
 | runtimeId               | no         | Runtime configuration ID used on this domain   |
 | ssl                     | no         | Option to activate SSL for the domain   |
 
-**Sample response** :
+**Return example** :
 
 ```json
 {
@@ -77,22 +76,22 @@ Attach a domain to your web hosting service.
 }
 ```
 
-### Generate SSL certificates
+### Generating SSL certificates
 
-Configure and manage SSL certificates to secure your website.
+Configure and manage SSL certificates to secure your website:
 
 > [!api]
 >
 > @api {v1} /hosting/web POST /hosting/web/{serviceName}/ssl
 
-| Setting     | Required | Description                         |
-| ------------ | ---------- | ----------------------------- |
-| serviceName   | yes         | Service name                      |
+| Settings      | Required   | Description                         |
+| ------------- | ---------- | ----------------------------- |
+| serviceName   | yes        | Service name                      |
 | certificate   | no         | SSL certificate to install          |
 | chain         | no         | Certificate chain used to validate SSL certificate |
 | key           | no         | Private key associated with the SSL certificate|
 
-**Sample response** :
+**Return example** :
 
 ```json
 {
@@ -105,17 +104,17 @@ Configure and manage SSL certificates to secure your website.
 }
 ```
 
-### Manage databases
+### Managing databases
 
 With the OVHcloud Web Hosting APIs, you can also manage your databases.
 
-#### Create a database
+#### Creating a database
 
 > [!api]
 >
 > @api {v1} /hosting/web POST /hosting/web/{serviceName}/database
 
-| Setting     | Required | Description                         |
+| Settings     | Required | Description                         |
 | ------------ | ---------- | ----------------------------- |
 | serviceName   | yes         |             Service name           |
 | capacity   | yes         | DB Capabilities. Values: extraSqlPersonal┃local┃privateDatabase┃sqlLocal┃sqlPersonal┃sqlPro         |
@@ -125,7 +124,7 @@ With the OVHcloud Web Hosting APIs, you can also manage your databases.
 | type               | yes                  | DB type. Values: mariadb┃mysql┃postgresql┃redis|
 | version           | no                  | DB version      |
 
-**Sample response** :
+**Return example** :
 
 ```json
 {
@@ -140,20 +139,20 @@ With the OVHcloud Web Hosting APIs, you can also manage your databases.
 }
 ```
 
-#### List existing databases
+#### Listing existing databases
 
-List all the databases associated with your web hosting service.
+List all the databases associated with your web hosting service:
 
 > [!api]
 >
 > @api {v1} /hosting/web GET /hosting/web/{serviceName}/database
 
-| Setting     | Required | Description                         |
+| Settings     | Required | Description                         |
 | ------------ | ---------- | ----------------------------- |
 | serviceName   | yes         |        Service name                |
 | mode          | yes         |        Allowed values: besteffort ┃ classic ┃ module     |
 
-**Sample response** :
+**Return example** :
 
 ```json
 [
@@ -162,23 +161,23 @@ List all the databases associated with your web hosting service.
 ]
 ```
 
-### Manage modules
+### Managing modules
 
-#### Retrieve a list of modules
+#### Retrieving a list of modules
 
-Get a list of available modules that you can install on your web hosting plan.
+Get a list of available modules that you can install on your web hosting plan:
 
 > [!api]
 >
 > @api {v1} /hosting/web GET /hosting/web/moduleList
 
-| Setting     | Required    | Description                         |
+| Settings     | Required    | Description                         |
 | ------------ | ----------    | ----------------------------- |
 | active        | no            | Filter enabled or disabled modules |
 | branch        | no            | Filter modules by version. Allowed values: old ┃ stable ┃ testing |
 | latest         | no           | Filter to show modules matching the latest version |
 
-**Sample response** :
+**Return example** :
 
 ```json
 [
@@ -189,19 +188,19 @@ Get a list of available modules that you can install on your web hosting plan.
 ]
 ```
 
-#### Retrieve the information of a module
+#### Retrieving a module's information
 
-Get the details of a specific module installed on your web hosting plan.
+Get the details of a specific module installed on your web hosting plan:
 
 > [!api]
 >
 > @api {v1} /hosting/web GET /hosting/web/moduleList/{id}
 
-| Setting     | Required | Description                         |
+| Settings     | Required | Description                         |
 | ------------ | ---------- | ----------------------------- |
 | id            | yes         |        Module ID        |
 
-**Sample response** :
+**Return example** :
 
 ```json
 {
@@ -235,15 +234,15 @@ Get the details of a specific module installed on your web hosting plan.
 }
 ```
 
-### Install a new module
+### Installing a new module
 
-Install a new module on your web hosting service.
+Install a new module on your web hosting service:
 
 > [!api]
 >
 > @api {v1} /hosting/web POST /hosting/web/{serviceName}/module
 
-| Setting     | Required | Description                         |
+| Settings     | Required | Description                         |
 | ------------ | ---------- | ----------------------------- |
 | serviceName   | yes         | Service name                       |
 | moduleId      | yes         | Module ID to install    |
@@ -260,7 +259,7 @@ Install a new module on your web hosting service.
 | dependencies -> type        | no      | Type of service (e.g. MySQL)    |
 | dependencies -> user        | no      | Username for dependent service   |
 
-**Sample response** :
+**Return example** :
 
 ```json
 {
@@ -275,19 +274,19 @@ Install a new module on your web hosting service.
 }
 ```
 
-### Manage FTP users
+### Managing FTP users
 
-Manage FTP/SSH users on your Web Hosting plan to facilitate access and configurations.
+Manage FTP/SSH users on your Web Hosting plan to facilitate access and configuration.
 
-#### Create a new FTP/SSH user
+#### Creating a new FTP/SSH user
 
-Create a new FTP or SSH user to access your web hosting plan.
+Create a new FTP or SSH user to access your web hosting plan:
 
 > [!api]
 >
 > @api {v1} /hosting/web POST /hosting/web/moduleList
 
-| Setting     | Required | Description                         |
+| Settings     | Required | Description                         |
 | ------------ | ---------- | ----------------------------- |
 | serviceName   | yes         | Service name     |
 | home          | yes         | Home Directory|
@@ -295,7 +294,7 @@ Create a new FTP or SSH user to access your web hosting plan.
 | password      | yes         | Password |
 | sshState      | no    | Determines the SSH access state for the user. Allowed values: active ┃none ┃sftponly |
 
-**Sample response** :
+**Return example** :
 
 ```json
 {
@@ -310,21 +309,21 @@ Create a new FTP or SSH user to access your web hosting plan.
 }
 ```
 
-#### List FTP/SSH users
+#### Listing FTP/SSH users
 
-List all existing FTP/SSH users on your hosting service.
+List all existing FTP/SSH users on your hosting service:
 
 > [!api]
 >
 > @api {v1} /hosting/web GET /hosting/web/{serviceName}/user
 
-| Setting     | Required | Description                         |
+| Settings     | Required | Description                         |
 | ------------ | ---------- | ----------------------------- |
 | serviceName   | yes         | Service name                      |
 | home          | no         | Filter users based on their home directory |
 | login         | no         | Filter users based on their user name    |
 
-**Sample response** :
+**Return example** :
 
 ```json
 [
@@ -335,26 +334,26 @@ List all existing FTP/SSH users on your hosting service.
 ]
 ```
 
-### Restore database
+### Restoring a database
 
 Create, list and restore database backups for your website.
 
-#### Create a backup of a database
+#### Creating a backup of a database
 
-Create a backup of your database to restore if necessary.
+Create a backup of your database to restore if necessary:
 
 > [!api]
 >
 > @api {v1} /hosting/web POST /hosting/web/{serviceName}/database/{name}/dump
 
-| Setting     | Required | Description                 |
+| Settings     | Required | Description                 |
 | ------------ | ---------- | ----------------------------- |
 | serviceName   | yes   | Service name    |
 | name          | yes     | Database name    |
 | date          | yes     | Backup type. Allowed values: daily.1┃now┃weekly.1   |
 | sendEmail     | no | If this setting is enabled, an email is sent when the backup is available   |
 
-**Sample response** :
+**Return example** :
 
 ```json
 {
@@ -369,15 +368,15 @@ Create a backup of your database to restore if necessary.
 }
 ```
 
-#### List the available database backups
+#### Listing the available database backups
 
-List all available backups for your databases.
+List all available backups for your databases:
 
 > [!api]
 >
 > @api {v1} /hosting/web GET /hosting/web/{serviceName}/database/{name}/dump
 
-| Setting     | Required | Description                      |
+| Settings     | Required | Description                      |
 | ------------ | ---------- | --------------------------- |
 | serviceName   | yes         | Service name                   |
 | name          | yes         | Database name        |
@@ -387,7 +386,7 @@ List all available backups for your databases.
 | deletionDate.to     | no   | Filter deleted backups up to this date        |
 | type               | no   | Filter backups by type. Allowed values: daily.1┃now┃weekly.1|
 
-**Sample response** :
+**Return example** :
 
 ```json
 [
@@ -396,21 +395,21 @@ List all available backups for your databases.
 ]
 ```
 
-#### Restore a specific backup of a database
+#### Restoring a specific backup of a database
 
-Restore a specific backup of your database if there is a problem.
+Restore a specific backup of your database if there is a problem:
 
 > [!api]
 >
 > @api {v1} /hosting/web POST /hosting/web/{serviceName}/database/{name}/dump/{id}/restore
 
-| Setting     | Required | Description                         |
+| Settings     | Required | Description                         |
 | ------------ | ---------- | ----------------------------- |
 | serviceName   | yes         | Service name                      |
 | name          | yes         | Database name           |
 | id            | yes         | Backup ID        |
 
-**Sample response** :
+**Return example** :
 
 ```json
 {
@@ -427,7 +426,7 @@ Restore a specific backup of your database if there is a problem.
 
 ## Conclusion
 
-This guide has introduced you to the main API requests for managing your web hosting plan via OVHcloud, such as domain attachment, SSL certificate management and database management.
+This guide has introduced you to the main API requests for managing your OVHcloud web hosting plan, such as domain attachment, SSL certificate management and database management.
 
 However, there are many other API calls available, which you can explore depending on your specific needs. For more options and features, you can refer to the « [/hosting/web](https://eu.api.ovh.com/console/?section=%2Fhosting%2Fweb&branch=v1#get-/hosting/web) » section of the OVHcloud API.
 
