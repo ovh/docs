@@ -1,7 +1,7 @@
 ---
 title: "Terraform - Premiers pas avec VMware managé on OVHcloud"
 excerpt: "Ce guide fournit les premieres instructions pour l'utilisation de Terraform avec un bucket S3 ainsi que le module SAP et le provider Docker dans un écosystème Hosted Private Cloud VMware managé on OVHcloud"
-updated: 2024-08-28
+updated: 2024-09-05
 ---
 
 <style>
@@ -33,10 +33,10 @@ details[open]>summary::before {
 - Configurer un accès avec un utilisateur Terraform ou un utilisateur unique (à sécuriser avec sudo au sein de Terraform).
 - Le binaire Terraform (version >= 1.4).
 - Un bucket S3 Object Storage OVHcloud pour stocker le state Terraform avec les bons droits utilisateurs pour Terraform et le bucket.
-- Le provider Terraform VMware vSphere (https://registry.terraform.io/providers/hashicorp/vsphere/latest/docs) (obligatoire) 
+- Le provider [Terraform VMware vSphere](https://registry.terraform.io/providers/hashicorp/vsphere/latest/docs) (obligatoire) 
 - Un endpoint `https://nsxt` si vous voulez utiliser NSX-T avec Terraform au sein de OVHcloud (endpoint configuré par défaut avec toutes les offres NSX HPC). En effet, l’API NSX est indépendante et non liée à l’API vSphere. C'est pourquoi nous avons créé un endpoint dédié pour l'atteindre.
 - le module Terraform [SAP OVHcloud](https://github.com/ovh/terraform-vsphere-sap-application-server/tree/master/examples/).
-- Le provider Docker [Kreuzwerker](https://registry.terraform.io/providers/kreuzwerker/docker/latest/docs) Terraform pour deployer des conteneurs dans les VM (non-obligatoire).
+- Le provider Docker [Kreuzwerker](https://registry.terraform.io/providers/kreuzwerker/docker/latest/docs) Terraform pour deployer des conteneurs dans les VM (facultatif).
 
 ### Étape 1 - Terraform sur Hosted Private Cloud (VMware managé on OVHcloud)
 
@@ -62,6 +62,7 @@ terraform init \
     -backend-config="path=example_app/terraform_state" \
     -backend-config="scheme=https"
 ```
+
 **Installation de Terraform dans VMware on OVHcloud**
 
 Dans le but de gérer les ressources (création, modification et destruction) sur votre solution VMware on OVHcloud, nous vous conseillons de créer un utilisateur dédié avec des droits limités. Ces droits sont nécessaires à l'utilisation de ce module Terraform.
@@ -308,7 +309,7 @@ Cet appel API permet de récupérer votre URL de service vSphere managé on OVHc
 > @api {v1} /dedicatedCloud/ GET /dedicatedCloud/{serviceName}
 >
 
-> **Paramètre** :
+> **Paramètres** :
 >
 > - `serviceName` : votre datacentre sous la forme `pcc-XXX-XXX-XXX-XXX`.
 >
@@ -320,7 +321,7 @@ Cet appel API permet de récupérer votre `datacenterId` :
 > @api {v1} /dedicatedCloud/ GET /dedicatedCloud/{serviceName}/datacenter
 >
 
-> **Paramètre** :
+> **Paramètres** :
 >
 > - `serviceName` : votre datacentre sous la forme `pcc-XXX-XXX-XXX-XXX`.
 >
@@ -332,7 +333,7 @@ Cet appel API permet de récupérer vos informations NSX-T :
 > @api {v1} /dedicatedCloud/ GET /dedicatedCloud/{serviceName}/nsx{{t}}
 >
 
->**Paramètre** :
+>**Paramètres** :
 >
 > - Si NSX-V, enlevez le "t"
 >
@@ -354,6 +355,7 @@ Retour :
   "state": "enabled"
 }
 ```
+
 Retour avec NSX-V :
 
 ```json
