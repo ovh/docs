@@ -1,7 +1,7 @@
 ---
 title: "Alojamento partilhado Seguimento dos emails automatizados"
 excerpt: "Seguimento dos seus emails enviados a partir de um website num alojamento partilhado OVHcloud"
-updated: 2024-08-20
+updated: 2024-09-05
 ---
 
 > [!primary]
@@ -198,17 +198,6 @@ Embora recomendamos vivamente que privilegie a utilização da função "mail()"
 > 
 > Os e-mails emitidos com um script utilizando uma configuração SMTP não poderão ser geridos e acompanhados a partir do seu [Área de Cliente OVHcloud](/links/manager).
 > 
-
-Para isso, pode utilizar o seguinte script substituindo apenas os valores `Host`, Username e `Password` pelos seus próprios parâmetros SMTP:
-
-```bash
-$mail->Host = "your.smtp.server";
-$mail->SMTPAuth = true; 
-$mail->SMTPSecure = "ssl";
-$mail->Port = 465; 
-$mail->Username = "e-mail@address.tld"; 
-$mail->Password = "YourEmailPassword"; 
-```
 
 > [!primary]
 >

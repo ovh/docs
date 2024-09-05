@@ -1,7 +1,7 @@
 ---
 title: "Automatische E-Mails eines Webhostings verwalten"
 excerpt: "Erfahren Sie hier, wie Sie über ein Webhosting versendete automatische E-Mails verwalten"
-updated: 2024-08-20
+updated: 2024-09-05
 ---
 
 > [!primary]
@@ -198,17 +198,6 @@ Wir empfehlen Ihnen dringend, die "mail()"-Funktion von PHP bevorzugt zu nutzen.
 > 
 > E-Mails, die über ein Skript mit SMTP-Konfiguration versendet werden, können nicht über Ihr [OVHcloud Kundencenter](/links/manager) verwaltet und verfolgt werden.
 > 
-
-Verwenden Sie hierzu folgendes Skript, indem Sie ausschließlich die Werte `Host`, `Username` und `Password` durch Ihre eigenen SMTP-Einstellungen ersetzen:
-
-```bash
-$mail->Host = "eigener.smtp.server";
-$mail->SMTPAuth = true; 
-$mail->SMTPSecure = "ssl";
-$mail->Port = 465; 
-$mail->Username = "email@addresse.tld"; 
-$mail->Password = "IhrPasswort"; 
-```
 
 > [!primary]
 >

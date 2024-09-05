@@ -1,7 +1,7 @@
 ---
 title: "Gestire l’invio delle email automatiche"
 excerpt: "Questa guida ti mostra come monitorare e gestire le email automatiche inviate da un hosting Web OVHcloud"
-updated: 2024-08-20
+updated: 2024-09-05
 ---
 
 > [!primary]
@@ -198,17 +198,6 @@ Anche se ti consigliamo vivamente di privilegiare l'utilizzo della funzione "mai
 > 
 > Le email emesse con uno script che utilizzano una configurazione SMTP non potranno essere gestite e monitorate dal tuo [Spazio Cliente OVHcloud](/links/manager).
 > 
-
-utilizzando il seguente script, sostituendo i valori `Host`, `Username` e `Password` con i parametri SMTP:
-
-```bash
-$mail->Host = "your.smtp.server";
-$mail->SMTPAuth = true; 
-$mail->SMTPSecure = "ssl";
-$mail->Port = 465; 
-$mail->Username = "e-mail@address.tld"; 
-$mail->Password = "YourEmailPassword"; 
-```
 
 > [!primary]
 >

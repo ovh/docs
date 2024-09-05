@@ -1,7 +1,7 @@
 ---
 title: "Monitoring i zarządzanie automatycznymi wiadomościami e-mail na Twoim hostingu"
 excerpt: "Dowiedz się, jak monitorować i zarządzać automatycznymi wiadomościami e-mail wysyłanymi z hostingu OVHcloud"
-updated: 2024-08-20
+updated: 2024-09-05
 ---
 
 > [!primary]
@@ -198,17 +198,6 @@ Mimo że rekomendujemy korzystanie z funkcji "mail()" PHP, hosting współdzielo
 > 
 > E-maile wysyłane za pomocą skryptu wykorzystującego konfigurację SMTP nie mogą być zarządzane i monitorowane za pomocą [Panelu klienta OVHcloud](/links/manager).
 > 
-
-W tym celu możesz użyć następującego skryptu, zastępując jedynie wartości `Host`, `Username` i `Password` własnymi ustawieniami SMTP:
-
-```bash
-$mail->Host = "your.smtp.server";
-$mail->SMTPAuth = true; 
-$mail->SMTPSecure = "ssl";
-$mail->Port = 465; 
-$mail->Username = "e-mail@address.tld"; 
-$mail->Password = "YourEmailPassword"; 
-```
 
 > [!primary]
 >

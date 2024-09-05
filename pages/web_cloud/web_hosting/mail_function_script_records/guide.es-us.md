@@ -1,7 +1,7 @@
 ---
 title: "Gestionar los mensajes de correo automatizados"
 excerpt: "Descubra cómo realizar el seguimiento y la gestión de los emails automatizados enviados desde un alojamiento web de OVHcloud"
-updated: 2024-08-20
+updated: 2024-09-05
 ---
 
 > [!primary]
@@ -198,17 +198,6 @@ Aunque le recomendamos encarecidamente que prefiera utilizar la función "mail()
 > 
 > Los emails enviados con un script que utilicen una configuración SMTP no podrán ser gestionados y seguidos desde su [área de cliente OVHcloud](/links/manager).
 > 
-
-Para ello, puede utilizar el siguiente script sustituyendo únicamente los valores `Host`, `Username` y `Password` por sus propios parámetros SMTP:
-
-```bash
-$mail->Host = "your.smtp.server";
-$mail->SMTPAuth = true; 
-$mail->SMTPSecure = "ssl";
-$mail->Port = 465; 
-$mail->Username = "e-mail@address.tld"; 
-$mail->Password = "YourEmailPassword"; 
-```
 
 > [!primary]
 >

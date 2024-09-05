@@ -1,7 +1,7 @@
 ---
 title: "Monitoring and managing automated emails in your web hosting plan"
 excerpt: "Find out how to monitor and manage automated emails sent from your OVHcloud web hosting plan"
-updated: 2024-08-20
+updated: 2024-09-05
 ---
 
 ## Objective
@@ -194,17 +194,6 @@ Although we strongly recommend using PHP’s "mail()" function, shared hosting a
 > 
 > Emails sent with a script that uses an SMTP configuration cannot be managed and tracked from your [OVHcloud Control Panel](/links/manager).
 > 
-
-To do this, you can use the following script by replacing only the `Host`, `Username` and `Password` values with your own SMTP settings:
-
-```bash
-$mail->Host = "your.smtp.server";
-$mail->SMTPAuth = true; 
-$mail->SMTPSecure = "ssl";
-$mail->Port = 465; 
-$mail->Username = "e-mail@address.tld"; 
-$mail->Password = "YourEmailPassword"; 
-```
 
 > [!primary]
 >
