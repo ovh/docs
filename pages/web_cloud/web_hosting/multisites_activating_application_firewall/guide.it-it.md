@@ -1,7 +1,7 @@
 ---
 title: "Hosting condiviso: attiva un firewall applicativo"
 excerpt: "Hosting condiviso: attiva un firewall applicativo"
-updated: 2021-04-26
+updated: 2024-09-05
 ---
 
 > [!primary]
@@ -22,6 +22,11 @@ L'insieme preconfigurato di regole di base, il "Core Rule Set" (CRS) della nostr
 - e tanto altro ancora
 
 **Questa guida ti mostra come attivare il firewall applicativo dallo Spazio Cliente OVHcloud per ottenere una protezione ancora maggiore.**
+
+> [!primary]
+>
+> La modifica delle impostazioni di configurazione del firewall non è disponibile perché l’hosting Web è presente su un’infrastruttura condivisa.
+>
 
 ## Prerequisiti
 

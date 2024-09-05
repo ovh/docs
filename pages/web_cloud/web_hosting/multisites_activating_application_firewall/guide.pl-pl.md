@@ -1,7 +1,7 @@
 ---
 title: "Aktywacja zapory systemowej"
 excerpt: "Hosting www: Aktywacja zapory systemowej"
-updated: 2021-04-26
+updated: 2024-09-05
 ---
 
 > [!primary]
@@ -22,6 +22,11 @@ Wstępnie skonfigurowany zbiór podstawowych zasad, takich jak "Core Rule Set" (
 - itd.
 
 **Niniejszy przewodnik wyjaśnia, jak aktywować zaporę aplikacyjną w Panelu klienta OVHcloud, aby uzyskać lepszą ochronę.**
+
+> [!primary]
+>
+> Zmiana ustawień konfiguracji zapory sieciowej jest niedostępna, ponieważ Twój hosting znajduje się w infrastrukturze współdzielonej.
+>
 
 ## Wymagania początkowe
 
