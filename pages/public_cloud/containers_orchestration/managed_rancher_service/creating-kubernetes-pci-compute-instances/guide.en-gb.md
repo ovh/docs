@@ -128,6 +128,7 @@ At the bottom of the **Machine Pools** section, click on the `+`{.action} button
 ![OVHcloud Managed Rancher Service Machine Pool 2](images/rancher-machine-pool-2.png){.thumbnail}
 
 In the **Cluster Configuration** section, choose the Kubernetes version. You need to choose between RKE2 and K3s Kubernetes Operating System (OS). For a production environment, we recommend choosing RKE2.
+
 Select the `Container Network`, choose if you want to activate a Project Network isolation and the System Services tooling you want to install in your cluster.
 
 ![OVHcloud Managed Rancher Service Cluster Configuration](images/rancher-cluster-config.png){.thumbnail}
