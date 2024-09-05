@@ -40,8 +40,8 @@ Vous devrez donc vous assurer de mettre dans l'enregistrement SPF les sources d'
 
 **Exemple**
 
-Vous envoyez un e-mail depuis votre adresse `contact@mydomain.ovh`.
-Seul le serveur sortant **A** (Outgoing Mail Server **A**) est déclaré dans l'enregistrement SPF du nom de domaine `mydomain.ovh`.
+Vous envoyez un e-mail depuis votre adresse `contact@mydomain.ovh`.<br>
+Seul le serveur sortant **A** (Outgoing Mail Server **A**) est déclaré dans l'enregistrement SPF du nom de domaine `mydomain.ovh`.<br>
 Lorsque le serveur de réception (Inbound Mail Server) reçoit l'e-mail, celui-ci va lire la zone DNS de votre nom de domaine `mydomain.ovh` pour inspecter l'enregistrement SPF.
 
 - Le serveur sortant **A** (Outgoing Mail Server **A**) étant bien listé dans l'enregistrement SPF, alors l'e-mail sera transmis normalement dans la boite de réception du destinataire.
@@ -68,14 +68,14 @@ Lorsque le serveur de réception (Inbound Mail Server) reçoit l'e-mail, celui-c
 >
 > Si votre nom de domaine n'utilise pas les serveurs DNS d'OVHcloud, vous devez réaliser la modification du SPF depuis l'interface du prestataire gérant la configuration de votre nom de domaine.
 >
-> Si votre nom de domaine est déposé chez OVHcloud, vous pouvez vérifier si ce dernier utilise notre configuration OVHcloud dans votre [espace client](/links/manager){.external} depuis l'onglet `Serveurs DNS`{.action}, une fois positionné sur le domaine concerné.
+> Si votre nom de domaine est déposé chez OVHcloud, vous pouvez vérifier si celui-ci utilise notre configuration OVHcloud dans votre [espace client](/links/manager){.external} depuis l'onglet `Serveurs DNS`{.action}, une fois positionné sur le domaine concerné.
 >
 
 ## En pratique
 
 ### Vérifier votre configuration SPF actuelle
 
-Si votre domaine utilise la configuration OVHcloud, vous pouvez vérifier si un enregistrement SPF est déjà configuré pour ce dernier.
+Si votre domaine utilise la configuration OVHcloud, vous pouvez vérifier si un enregistrement SPF est déjà configuré pour celui-ci.
 
 /// details | Comment vérifier une configuration SPF existante ?
 
@@ -85,10 +85,10 @@ Un tableau devrait apparaître. Ce dernier affiche la zone DNS de votre nom de d
 
 > [!primary]
 >
-> Si votre domaine est déposé chez OVHcloud, vous pouvez vérifier si ce dernier utilise bien les serveurs DNS OVHcloud depuis l'onglet `Serveurs DNS`{.action}.
+> Si votre domaine est déposé chez OVHcloud, vous pouvez vérifier si celui-ci utilise bien les serveurs DNS OVHcloud depuis l'onglet `Serveurs DNS`{.action}.
 >
 
-Dans le tableau, pour retrouver la ligne correspondante au SPF OVHcloud, un filtre d'affichage peut être utilisé. Ce dernier pouvant apparaître à deux endroits différents, sélectionnez dans l'enregistrement de filtrage `TXT`{.action} ou `SPF`{.action}  en passant de l'un à l'autre si nécessaire. Dès lors, l'affichage du tableau peut être différent.
+Dans le tableau, pour retrouver la ligne correspondante au SPF OVHcloud, un filtre d'affichage peut être utilisé. Ce dernier pouvant apparaître à deux endroits différents, sélectionnez `TXT`{.action} ou `SPF`{.action} dans l'enregistrement de filtrage, en passant de l'un à l'autre si nécessaire. Dès lors, l'affichage du tableau peut être différent.
 
 ![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_check_OVH_configuration.png){.thumbnail .w-400}
 
@@ -158,8 +158,8 @@ Nous allons les aborder progressivement.
 
 /// details | "**D'autres serveurs envoient-ils le courrier avec votre domaine ?**"
 
-- **a** : Renseignez ici des noms de domaine. Cela légitimera les serveurs hébergeant les sites de ces derniers à envoyer des e-mails avec vos adresses.
-- **mx** : renseignez ici les serveurs qui réceptionnent vos e-mails (serveurs MX) si ces derniers peuvent également en envoyer. Ils seront ainsi identifiés comme une source d'envoi légitime.
+- **a** : renseignez ici des noms de domaine. Cela légitimera les serveurs hébergeant les sites liés à ces domaines pour envoyer des e-mails avec vos adresses.
+- **mx** : renseignez ici les serveurs qui réceptionnent vos e-mails (serveurs MX) si ces serveurs peuvent également en envoyer. Ils seront ainsi identifiés comme une source d'envoi légitime.
 - **ptr** : renseignez ici des noms d'hôtes dont le *reverse* est fonctionnel (grâce à un enregistrement PTR dans la zone DNS). Ils seront ainsi identifiés comme une source d'envoi légitime.
 - **ip4** : indiquez les IP ou les plages d'IP (IPv4) autorisées à envoyer des e-mails avec vos adresses.
 - **ip6** : indiquez les IP ou les plages d'IP (IPv6) autorisées à envoyer des e-mails avec vos adresses.
