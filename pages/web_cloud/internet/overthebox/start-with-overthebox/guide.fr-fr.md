@@ -1,7 +1,7 @@
 ---
 title: "Premiers pas avec OverTheBox"
 excerpt: "Découvrez par où commencer lorsque vous recevez votre OverTheBox"
-updated: 2024-05-29
+updated: 2024-09-04
 ---
 
 ## Objectif
@@ -28,22 +28,17 @@ Que vous soyez à la recherche d'une solution pour une entreprise, d'une configu
 
 ### Installer OverTheBox
 
-Aujourd'hui, il existe deux versions principales d'OverTheBox :
+OverTheBox vous permet entre autres d'associer jusqu'à 4 connexions distinctes afin d'augmenter le débit et d'optimiser votre connexion Internet. Découvrez [comment installer OverTheBox](/pages/web_cloud/internet/overthebox/plus_itv2_installation).
 
-- Version 1 (Intel & IT)
-- Version 2 (Plus & IT)
-
-Plus performante, la version 2 offre plus de possibilités à l'utilisateur. OverTheBox v2 vous permet entre autres d'associer jusqu'à 8 connexions distinctes afin d'augmenter le débit et d'optimiser votre connexion Internet. Découvrez [comment installer OverTheBox](/pages/web_cloud/internet/overthebox/plus_itv2_installation).
-
-Si vous possédez la version 1 d'OverTheBox, consultez le guide pour [configurer un ancien appareil OverTheBox v1 (Intel & IT v1)](/pages/web_cloud/internet/overthebox/intel_itv1_installation).
+Si vous possédez une ancienne version d'OverTheBox, consultez le guide pour [configurer un ancien appareil OverTheBox v1 (Intel & IT v1)](/pages/web_cloud/internet/overthebox/intel_itv1_installation).
 
 ### Améliorer sa connexion Internet
 
 #### Booster sa connexion Internet
 
-L'un des avantages d'OverTheBox est la possibilité d'[augmenter le débit de sa connexion Internet](https://www.ovhtelecom.fr/overthebox/booster-connexion.xml), grâce notamment à la possibilité de cumuler plusieurs connexions en même temps (de 2 à 8 lignes sur un seul boîtier OverTheBox).
+L'un des avantages d'OverTheBox est la possibilité d'[augmenter le débit de sa connexion Internet](https://www.ovhtelecom.fr/overthebox/booster-connexion.xml), grâce notamment à la possibilité de cumuler plusieurs connexions en même temps (de 2 à 4 lignes sur un seul boîtier OverTheBox).
 
-Même si vous vous trouvez dans une zone géographique peu favorable ou ne possédant pas de réseau fibré, une solution existe grâce à OverTheBox. Vous pouvez [ajouter un lien LTE sur OverTheBox](/pages/web_cloud/internet/overthebox/plus_itv2_lte) pour tirer parti d'un réseau mobile (4G, 5G etc.). En effet, les débits des réseaux LTE sont souvent supérieurs aux connexions cuivre. En revanche, les liens LTE souffrent parfois de latence, ce qui peut affecter négativement le réseau. Heureusement, OverTheBox permet également d'optimiser la connexion Internet.
+Même si vous vous trouvez dans une zone géographique peu favorable ou ne possédant pas de réseau fibré, une solution existe grâce à OverTheBox. Vous pouvez [ajouter un lien 4G sur OverTheBox](/pages/web_cloud/internet/overthebox/plus_itv2_lte) pour tirer parti d'un réseau mobile (4G, 5G etc.). En effet, les débits des réseaux mobiles sont souvent supérieurs aux connexions cuivre. En revanche, les télécommunications radio souffrent parfois de latence, ce qui peut affecter négativement le réseau. Heureusement, OverTheBox permet également d'optimiser la connexion Internet.
 
 #### Optimiser sa connexion Internet
 

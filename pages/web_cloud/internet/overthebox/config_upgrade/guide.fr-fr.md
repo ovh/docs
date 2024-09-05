@@ -1,7 +1,7 @@
 ---
 title: 'Comment mettre à jour un appareil OverTheBox'
 excerpt: 'Découvrez comment mettre à jour votre appareil OverTheBox'
-updated: 2024-06-10
+updated: 2024-09-04
 ---
 
 ## Objectif
@@ -118,10 +118,10 @@ L'ensemble des modifications est consultable ici :
 | Canal | OverTheBox | OpenWRT | Linux | MPTCP | Compatibilité du matériel |
 | ---  | :---: | :---: | :---: | :---: | ---: |
 | v0.8 | v0.8.1 | 19.07.10 | 4.14.276 | v0.94 | nuc, ITv1, rpi3, v2b, v2c |
-| v0.9 | v0.9.4 | 21.02.5 | 5.4.217 | v0.96 | v2b, v2c |
-| v1.0 | v1.0.0 | 23.05.2 | 5.15.137 | v1 | v2b, v2c |
-| stable | v0.9.4 | 21.02.5 | 5.4.217 | v0.96 | v2b, v2c |
-| v1.0 | v1.0.0 | 23.05.2 | 5.15.137 | v1 | v2b, v2c |
+| v0.9 | v0.9.5 | 21.02.5 | 5.4.217 | v0.96 | v2b, v2c |
+| v1.0 | v1.0.1 | 23.05.2 | 5.15.137 | v1 | v3, v2b, v2c |
+| stable | v0.9.5 | 21.02.5 | 5.4.217 | v0.96 | v2b, v2c |
+| beta | v1.0.1 | 23.05.2 | 5.15.137 | v1 | v3, v2b, v2c |
 
 ### Installer manuellement une image
 
