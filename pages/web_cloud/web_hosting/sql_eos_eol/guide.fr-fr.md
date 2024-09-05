@@ -1,7 +1,7 @@
 ---
 title: "Annonces de fin de vente/vie base de données SQL"
 excerpt: "Annonces de fin de vente/vie base de données SQL"
-updated: 2024-09-02
+updated: 2024-09-05
 ---
 
 Les produits couverts par ces annonces de fin de vente et de fin de vie sont les services base de données SQL Web Hosting, joignables via le réseau Web Hosting. Référez-vous à la [politique de fin de vie des bases de données managées](/pages/web_cloud/web_cloud_databases/eol-policy) pour plus d'informations.
@@ -16,7 +16,7 @@ Les produits couverts par ces annonces de fin de vente et de fin de vie sont les
 > Actuellement et à votre niveau, les services de base de données SQL inclus avec les hébergements Web OVHcloud ne peuvent pas être mis à jour directement à partir de l'espace client OVHcloud ou via la base de données en fin de vente/vie.
 >
 
-Si vous souhaitez anticiper cette fin de vente/vie ou effectuer les actions manuellement sans attendre une potentielle intervention d'OVHcloud, vous devez obligatoirement réaliser les actions suivantes :
+Si vous souhaitez anticiper cette fin de vente/vie ou effectuer les actions manuellement, vous devez obligatoirement réaliser les actions suivantes :
 
 - Cas n°1 : vous disposez d'une seule base de données incluse avec votre offre d'hébergement Web :
     - Vérifiez que le contenu de la base de données est compatible avec un SGBD plus récent.
