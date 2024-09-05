@@ -60,8 +60,8 @@ Diese Seite zeigt diverse Informationen zur Nachverfolgung des von Ihren Skripte
 Rechts können Sie den Versand automatischer E-Mails über Ihr Webhosting verwalten. Je nach Zustand des Dienstes sind einige Optionen nicht verfügbar.
 
 - **E-Mails bereinigen**: Löscht die in der Warteschleife befindlichen E-Mails und entsperrt den Versand von E-Mails.
-- **Versand entsperren**: Der Versand automatischer E-Mails von Ihrem Webhosting entsperren. E-Mails in der Warteschlange werden ebenfalls verteilt.
-- **E-Mails im Fehlerstatus**: Ermöglicht den Zugriff auf die Logs der letzten E-Mails mit Sendefehlern. Dort finden Sie die betroffenen E-Mail-Adressen mit dem zugehörigen Fehler. Achtung, dieser Verlauf wird nicht zurückgesetzt, auch wenn Sie sich dafür entscheiden, `E-Mails bereinigen`{.action} oder `Versand entsperren`{.action}.
+- **Versand entsperren**: Den Versand automatischer E-Mails von Ihrem Webhosting entsperren. E-Mails in der Warteschlange werden ebenfalls für den Versand freigegeben.
+- **E-Mails im Fehlerstatus**: Ermöglicht den Zugriff auf die Logs der letzten E-Mails mit Sendefehlern. Dort finden Sie die betroffenen E-Mail-Adressen mit dem zugehörigen Fehler. Achtung, dieser Verlauf wird nicht zurückgesetzt, auch wenn Sie `E-Mails bereinigen`{.action} oder `Versand entsperren`{.action} nutzen.
 - **Versand blockieren**: Sperrt den E-Mail-Versand Ihres Webhostings. E-Mails, die von Ihren Skripten nach der Sperrung generiert werden, werden nicht abgeschickt, sondern für maximal 72 Stunden in einer Warteschleife gespeichert.
 
 Um die gewünschte Aktion durchzuführen, klicken Sie auf den Button und dann auf `Bestätigen`{.action}. In einigen Fällen kann es mehrere Minuten dauern, bis die Ausführung wirksam wird.
