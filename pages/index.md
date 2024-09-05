@@ -567,7 +567,6 @@
         + [Instances management](products/public-cloud-compute-instance-management)
             + [Getting started](public-cloud-compute-instance-management-getting-started)
                 + [Managing your Public Cloud instances](public_cloud/compute/first_steps_with_public_cloud_instance)
-                + [Become the root user and select a password](public_cloud/compute/become_root_and_change_password)
                 + [First steps with preinstalled applications](public_cloud/compute/apps_first_steps)
                 + [Starting an instance on an attached volume](public_cloud/compute/start_instance_on_attached_volume)
                 + [Shelve or pause an instance](public_cloud/compute/suspend_or_pause_an_instance)

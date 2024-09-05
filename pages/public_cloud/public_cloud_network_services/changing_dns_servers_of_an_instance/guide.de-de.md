@@ -24,14 +24,12 @@ Sie können einen sekundären Server hinzufügen oder diese Konfiguration durch 
 ## Voraussetzungen
 
 - Sie haben eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/) in Ihrem Kunden-Account.
-- Sie haben administrativen Zugriff (sudo) auf Ihre Instanz über SSH oder RDP.
+- Sie haben administrativen Zugriff auf Ihre Instanz über SSH oder RDP.
 - Grundlegende Kenntnisse der Netzwerkverwaltung.
 
 ## In der praktischen Anwendung
 
 Verbinden Sie sich über SSH mit Ihrer Instanz. Weitere Informationen hierzu finden Sie in der Anleitung zum [Einloggen auf einer Instanz](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance).
-
-Wechseln Sie zum Root-Benutzer. Falls nötig lesen Sie unsere [Anleitung zu diesem Thema](/pages/public_cloud/compute/become_root_and_change_password).
 
 ### Debian / Ubuntu
 
@@ -63,7 +61,9 @@ Speichern Sie Ihre Änderungen der Konfigurationsdatei und schließen Sie den Ed
 
 ```bash
 cat /etc/resolv.conf
+```
 
+```console
 domain openstacklocal
 search openstacklocal
 nameserver IP1
@@ -102,7 +102,9 @@ DNS configuration:
 
 ```bash
 nmcli connection show
- 
+```
+
+```console
 NAME         UUID                                  TYPE      DEVICE
 System eth0  5fb06bd0-0bb0-7ffb-45f1-d6edd65f3e03  ethernet  eth0
 ```
@@ -153,9 +155,7 @@ In PowerShell kann mit dem Befehl `nslookup` überprüft werden, welche DNS-Serv
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 
-[Eine erste Public Cloud Instanz erstellen und sich damit verbinden](/pages/public_cloud/compute/public-cloud-first-steps)
-
-[Root-Rechte erlangen und Passwort festlegen](/pages/public_cloud/compute/become_root_and_change_password)
+[Eine Public Cloud Instanz erstellen und sich damit verbinden](/pages/public_cloud/compute/public-cloud-first-steps)
 
 [Hostname einer Public Cloud Instanz ändern](/pages/public_cloud/compute/changing_the_hostname_of_an_instance)
 

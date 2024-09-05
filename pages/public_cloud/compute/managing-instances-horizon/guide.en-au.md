@@ -155,7 +155,7 @@ If you lose access to your instance, either because of a bad configuration, or b
 > [!primary]
 >
 > You can access your instance directly through the VNC console. Only you will have to set up a password for the root user beforehand.
-> Consult [this guide](/pages/public_cloud/compute/become_root_and_change_password) for more information.
+> Consult [this guide](/pages/public_cloud/compute/public-cloud-first-steps#user-mgmt) for more information.
 > The VNC console can also be used as a first approach during a malfunction, to establish a diagnostic using the analysis of your instance's startup phase.
 > 
 

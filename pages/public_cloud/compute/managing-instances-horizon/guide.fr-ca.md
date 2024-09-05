@@ -155,7 +155,7 @@ En cas de perte d’accès à votre instance, que cela soit suite à une mauvais
 > [!primary]
 >
 > Vous pouvez accéder directement à votre instance via la console VNC. Par contre, il vous faudra au préalable configurer un mot de passe pour l’utilisateur root.
-> Consultez [ce guide](/pages/public_cloud/compute/become_root_and_change_password) pour plus d'informations.
+> Consultez [ce guide](/pages/public_cloud/compute/public-cloud-first-steps#user-mgmt) pour plus d'informations.
 > La console VNC peut aussi servir de première approche lors d'un dysfonctionnement, afin d'établir un diagnostic grâce à l'analyse de la phase de démarrage de votre instance.
 > 
 

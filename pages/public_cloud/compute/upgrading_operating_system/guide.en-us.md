@@ -20,7 +20,7 @@ This tutorial will provide you with the steps to upgrade an end of life operatin
 
 ## Requirements
 
-- [Root access](/pages/public_cloud/compute/become_root_and_change_password) to the server
+- [Administrative access](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) to the server
 - [Backup](/pages/public_cloud/compute/save_an_instance) must be taken before starting
 
 ## Instructions

@@ -159,7 +159,7 @@ W przypadku utraty dostępu do instancji, wynikającej z nieprawidłowej konfigu
 > [!primary]
 >
 > Dostęp do instancji jest możliwy przez konsolę VNC. Przed skonfigurowaniem hasła dla użytkownika root należy jednak najpierw skonfigurować.
-> Więcej informacji znajdziesz [w tym przewodniku](/pages/public_cloud/compute/become_root_and_change_password).
+> Więcej informacji znajdziesz [w tym przewodniku](/pages/public_cloud/compute/public-cloud-first-steps#user-mgmt).
 > Konsola VNC może być również pierwszym podejściem w przypadku awarii, w celu postawienia diagnozy w wyniku analizy fazy uruchomienia instancji.
 > 
 

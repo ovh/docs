@@ -24,14 +24,12 @@ Możesz dodać serwer zapasowy lub zastąpić tę konfigurację Twoją. Serwery 
 ## Wymagania początkowe
 
 - Posiadanie [instancji Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na koncie OVHcloud
-- Dostęp administratora (sudo) do instancji przez SSH lub RDP
+- Dostęp administratora do instancji przez SSH lub RDP
 - Podstawowa wiedza w zakresie sieci i administracji
 
 ## W praktyce
 
 Zaloguj się do instancji przez SSH. Więcej informacji na ten temat znajdziesz w przewodniku "[Logowanie do instancji Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance)".
-
-Przejdź do użytkownika root. Jeśli potrzebujesz, skorzystaj z naszego przewodnika, aby [zmienić hasło root](/pages/public_cloud/compute/become_root_and_change_password).
 
 ### Debian / Ubuntu
 
@@ -63,7 +61,9 @@ Sprawdź, czy konfiguracja została zastosowana przy użyciu polecenia:
 
 ```bash
 cat /etc/resolv.conf
+```
 
+```console
 domain openstacklocal
 search openstacklocal
 nameserver IP1
@@ -102,7 +102,9 @@ Pobierz nazwę swojego interfejsu publicznego:
 
 ```bash
 nmcli connection show
- 
+```
+
+```console
 NAME         UUID                                  TYPE      DEVICE
 System eth0  5fb06bd0-0bb0-7ffb-45f1-d6edd65f3e03  ethernet  eth0
 ```
@@ -154,8 +156,6 @@ Polecenie `nslookup` pozwala na sprawdzenie, który serwer DNS jest używany dom
 ## Sprawdź również <a name="gofurther"></a>
 
 [Utwórz pierwszą instancję Public Cloud i połącz się z nią](/pages/public_cloud/compute/public-cloud-first-steps)
-
-[Logowanie jako użytkownik root i ustawienie hasła](/pages/public_cloud/compute/become_root_and_change_password)
 
 [Zmiana hostname instancji Public Cloud](/pages/public_cloud/compute/changing_the_hostname_of_an_instance)
 
