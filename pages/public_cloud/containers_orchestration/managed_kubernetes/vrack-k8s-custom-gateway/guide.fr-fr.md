@@ -33,6 +33,8 @@ At the end of this tutorial you should have the following flow:
 ## Pre-requisites
 
 - A [Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) in your OVHcloud account.
+- Terraform installed on your local machine.
+- OVHcloud API credentials (Application Key, Application Secret, and Consumer Key).
 - The [OpenStack API CLI](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api) installed.
 - Be familiar with the [OVHcloud API](/pages/manage_and_operate/api/first-steps).
 - The JSON parser tool [jq](https://stedolan.github.io/jq/){.external} installed.
@@ -549,6 +551,110 @@ To delete an Openstack router, you must first remove the linked ports.
 >> > [!api]
 >> >
 >> > @api {v1} /cloud DELETE /cloud/project/{serviceName}/network/private/{networkId}/region/{region}
+
+## Terraform Configuration
+Here's an example Terraform configuration that will create a private network, a custom gateway, and a Kubernetes cluster in the OVHcloud environment:
+
+```bash
+provider "ovh" {
+  endpoint = "ovh-eu"
+}
+
+# Create a private network
+resource "ovh_cloud_project_network_private" "mypriv" {
+  service_name = "your-service-name"  # Replace with your service_name
+  vlan_id      = "20"  # Set VLAN ID
+  name         = "demo-pvnw"
+  regions      = ["GRA9", "GRA11"]
+}
+
+# Subnet in GRA9
+resource "ovh_cloud_project_network_private_subnet" "subnetGRA9" {
+  service_name = ovh_cloud_project_network_private.mypriv.service_name
+  network_id   = ovh_cloud_project_network_private.mypriv.id
+  region       = "GRA9"
+  start        = "192.168.0.2"
+  end          = "192.168.0.126"
+  network      = "192.168.0.0/25"
+  dhcp         = false
+}
+
+# Subnet in GRA11
+resource "ovh_cloud_project_network_private_subnet" "subnetGRA11" {
+  service_name = ovh_cloud_project_network_private.mypriv.service_name
+  network_id   = ovh_cloud_project_network_private.mypriv.id
+  region       = "GRA11"
+  start        = "192.168.0.130"
+  end          = "192.168.0.254"
+  network      = "192.168.0.128/25"
+  dhcp         = false
+}
+
+# Create a gateway in GRA9
+resource "ovh_cloud_project_gateway" "gatewayGRA9" {
+  service_name = ovh_cloud_project_network_private.mypriv.service_name
+  name         = "my-gateway"
+  model        = "s"
+  region       = "GRA9"
+  network_id   = tolist(ovh_cloud_project_network_private.mypriv.regions_attributes[*].openstackid)[0]
+  subnet_id    = ovh_cloud_project_network_private_subnet.subnetGRA9.id
+}
+
+# Optionally, create a gateway interface in GRA11
+resource "ovh_cloud_project_gateway_interface" "interfaceGRA11" {
+  service_name = ovh_cloud_project_network_private.mypriv.service_name
+  region       = "GRA11"
+  id           = ovh_cloud_project_gateway.gatewayGRA9.id
+  subnet_id    = ovh_cloud_project_network_private_subnet.subnetGRA11.id
+}
+
+# Create an OVHcloud Managed Kubernetes cluster
+resource "ovh_cloud_project_kube" "k8s" {
+  service_name   = "your-service-name"  # Replace with your service_name
+  name           = "demo-k8s"
+  region         = "GRA9"
+  version        = "1.23"
+  private_network_id = ovh_cloud_project_network_private.mypriv.id
+
+  nodepool {
+    flavor_name   = "b2-7"
+    anti_affinity = false
+    autoscale     = false
+    desired_nodes = 3
+  }
+
+  private_network_configuration {
+    private_network_routing_as_default = true
+    default_vrack_gateway = "192.168.0.1"  # Gateway IP address
+  }
+}
+
+```
+
+### Explanation
+
+- **Private Network & Subnets**: The Terraform configuration creates a private network and two subnets in GRA9 and GRA11 regions.
+- **Gateway**: The configuration creates a custom gateway in the GRA9 region and attaches it to the subnet. Optionally, a gateway interface is created for GRA11.
+- **Kubernetes Cluster**: Finally, the configuration creates a Kubernetes cluster that routes all traffic through the custom gateway.
+
+### Applying the Terraform Configuration
+
+Once the Terraform code is ready, follow these steps:
+
+1. **Initialize Terraform**:
+   
+   ```bash
+   terraform init
+   ```
+2. **Apply the Terraform configuration:**:
+   
+   ```bash
+   terraform apply
+   ```
+   
+3. **Terraform will prompt for confirmation before applying the changes. Type 'yes' to proceed.**
+
+Once applied, the private network, gateway, and Kubernetes cluster will be created in the OVHcloud environment.
 
 ## Go further
 
