@@ -1,7 +1,7 @@
 ---
 title: "Tworzenie bazy danych na hostingu"
 excerpt: "Dowiedz się, jak utworzyć bazę danych na hostingu OVHcloud"
-updated: 2024-05-17
+updated: 2024-09-05
 ---
 
 > [!primary]
@@ -57,8 +57,13 @@ W wyświetlonym oknie wybierz następujące informacje:
 |Informacje|Opis|  
 |---|---| 
 |**Wybierz typ bazy danych**|Wybierz rozmiar bazy danych. Rozmiar ten odnosi się do przestrzeni, na którą przeznaczona jest Twoja baza danych.|
-|**Wybierz silnik dla bazy danych**|Wybierz silnik, którego ma używać baza danych. Bazy danych zawarte w [usłudze hostingu OVHcloud](/links/web/hosting) są dostępne tylko w silniku MySQL.|
+|**Wybierz silnik dla bazy danych**|Wybierz silnik, którego ma używać baza danych. Aktualnie bazy danych zawarte w [usłudze hostingu OVHcloud](/links/web/hosting) są dostępne tylko w silniku MySQL.|
 |**Wybierz wersję bazy danych, którą chcesz dodać**|Wybierz wersję używaną przez silnik bazy danych. Upewnij się, że Twoja strona WWW jest zgodna z wybraną wersją.|
+
+> [!primary]
+>
+> Aktualizacja wersji silnika dla już utworzonej bazy danych jest obecnie niedostępna.
+>
 
 Następnie kliknij przycisk `Dalej`{.action}.
 
