@@ -1,7 +1,7 @@
 ---
 title: 'Tworzenie instancji w interfejsie Horizon'
 excerpt: 'Dowiedz się, jak utworzyć instancję w interfejsie Horizon'
-updated: 2024-09-03
+updated: 2024-09-05
 ---
 
 > [!primary]
@@ -138,7 +138,7 @@ Aby uzyskać więcej informacji na temat tworzenia klucza SSH, zapoznaj się z [
 > [!tabs]
 > **+ Create Key Pair**
 >>
->> Aby utworzyć parę kluczy, kliknij przycisk `+ Create Key Pair`{.action}. Pamiętaj, że z tą opcją przed zalogowaniem się do instancji muszą zostać wykonane dodatkowe czynności, zwłaszcza jeśli logujesz się do instancji za pomocą oprogramowania Putty. Sprawdź [tę sekcję](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) w odpowiednim przewodniku.
+>> Aby utworzyć parę kluczy, kliknij przycisk `+ Create Key Pair`{.action}. Pamiętaj, że z tą opcją przed zalogowaniem się do instancji muszą zostać wykonane dodatkowe czynności, zwłaszcza jeśli logujesz się do instancji za pomocą oprogramowania PuTTY. Sprawdź [tę sekcję](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) w odpowiednim przewodniku.
 >>
 >> **Key Pair Name:** Wprowadź nazwę dla klucza.<br>
 >> **Key Type:** Kliknij `strzałkę rozwijaną`{.action} i wybierz `SSH Key`{.action}.<br>

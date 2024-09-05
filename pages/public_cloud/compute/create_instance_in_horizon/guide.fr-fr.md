@@ -134,7 +134,7 @@ Pour plus d'informations sur la création d'une clé SSH, consultez [ce guide](/
 > [!tabs]
 > **+ Create Key Pair**
 >> 
->> Pour créer une paire de clés, cliquez sur le bouton `+ Create Key Pair`{.action}. Veuillez noter qu'avec cette option, des étapes supplémentaires doivent être effectuées avant de pouvoir vous connecter à l'instance, surtout si vous utilisez le logiciel Putty pour vous connecter à votre instance. Consultez [cette section](/pages/public_cloud/compute/public-cloud-first-steps#step-4-connecting-to-your-instance) du guide correspondant.
+>> Pour créer une paire de clés, cliquez sur le bouton `+ Create Key Pair`{.action}. Veuillez noter qu'avec cette option, des étapes supplémentaires doivent être effectuées avant de pouvoir vous connecter à l'instance, surtout si vous utilisez le logiciel PuTTY pour vous connecter à votre instance. Consultez [cette section](/pages/public_cloud/compute/public-cloud-first-steps#step-4-connecting-to-your-instance) du guide correspondant.
 >>
 >> **Key Pair Name :** Entrez un nom pour votre clé.<br>
 >> **Key Type :** Cliquez sur la `flèche déroulante` et sélectionnez `SSH Key`.<br>
@@ -151,7 +151,7 @@ Pour plus d'informations sur la création d'une clé SSH, consultez [ce guide](/
 >> Si vous préférez importer une clé SSH créée précédemment, cliquez sur le bouton `Import Key Pair`{.action}.
 >>
 >> **Key Pair Name :** Entrez un nom pour votre clé.<br>
->> **Key Type (Type de clé) :** Cliquez sur la `flèche déroulante` et sélectionnez `SSH Key`.<br>
+>> **Key Type (Type de clé) :** Cliquez sur la `flèche déroulante`{.action} et sélectionnez `SSH Key`{.action}.<br>
 >> **Load Public Key from a file (Charger la clé publique à partir d'un fichier) :** Cliquez sur `Browse`{.action} pour spécifier l'emplacement de la clé publique sur votre ordinateur.<br>
 >> **Public Key :** Copiez et collez votre clé publique ici.<br>
 >> Cliquez sur `Import Key Pair`{.action} pour importer la clé.<br><br>

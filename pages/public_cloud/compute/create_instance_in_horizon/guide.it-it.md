@@ -1,7 +1,7 @@
 ---
 title: 'Creare un’istanza dall’interfaccia Horizon'
 excerpt: 'Come creare un’istanza dall’interfaccia Horizon'
-updated: 2024-09-03
+updated: 2024-09-05
 ---
 
 > [!primary]
@@ -136,7 +136,7 @@ Per maggiori informazioni sulla creazione di una chiave SSH, consulta [questa gu
 > [!tabs]
 > **+ Create Key Pair**
 >>
->> Per creare una coppia di chiavi, clicca sul pulsante `+ Create Key Pair`{.action}. Ti ricordiamo che, con questa opzione, dovrai effettuare alcuni step supplementari prima di poter accedere all’istanza, soprattutto se utilizzi il software Putty per connetterti alla tua istanza. Consulta [questa sezione](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) della guida corrispondente.
+>> Per creare una coppia di chiavi, clicca sul pulsante `+ Create Key Pair`{.action}. Ti ricordiamo che, con questa opzione, dovrai effettuare alcuni step supplementari prima di poter accedere all’istanza, soprattutto se utilizzi il software PuTTY per connetterti alla tua istanza. Consulta [questa sezione](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) della guida corrispondente.
 >>
 >> **Key Pair Name:** Immettere un nome per la chiave.<br>
 >> **Key Type:** Fare clic sulla `freccia a discesa`{.action} e selezionare `SSH Key`{.action}.<br>

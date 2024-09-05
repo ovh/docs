@@ -1,7 +1,7 @@
 ---
 title: 'Eine Instanz über das Horizon-Interface erstellen'
 excerpt: 'Erfahren Sie hier, wie Sie eine Instanz über das Horizon-Interface erstellen'
-updated: 2024-08-30
+updated: 2024-09-05
 ---
 
 > [!primary]
@@ -141,7 +141,7 @@ Weitere Informationen zum Erstellen eines SSH-Schlüssels finden Sie in [dieser 
 >> Klicken Sie auf die Schaltfläche `+ Create Key Pair`{.action}, um ein Schlüsselpaar zu erstellen. Bitte beachten Sie, dass bei dieser Option zusätzliche Schritte notwendig sind, bevor Sie sich mit der Instanz verbinden können, insbesondere wenn Sie die PuTTY-Software verwenden, um sich mit Ihrer Instanz zu verbinden. Lesen Sie [diesen Abschnitt](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) der entsprechenden Anleitung.
 >>
 >> **Key Pair Name:** Geben Sie einen Namen für Ihren Schlüssel ein.<br>
->> **Key Type:** Klicken Sie auf den `Dropdownpfeil` und wählen Sie `SSH Key`.<br>
+>> **Key Type:** Klicken Sie auf den `Dropdownpfeil`{.action} und wählen Sie `SSH Key`{.action}.<br>
 >> Klicken Sie anschließend auf `Create Keypair`{.action}, um mit der Erstellung des Schlüssels zu beginnen.<br>
 >>
 >> Nachdem das Schlüsselpaar erstellt wurde, klicken Sie auf `Copy Private Key to Clipboard`{.action} und dann auf `Done`{.action}.<br><br>

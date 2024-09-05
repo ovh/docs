@@ -1,7 +1,7 @@
 ---
 title: 'Criar uma instância a partir da interface Horizon'
 excerpt: 'Saiba como criar uma instância a partir da interface Horizon'
-updated: 2024-09-03
+updated: 2024-09-05
 ---
 
 > [!primary]
@@ -137,7 +137,7 @@ Para mais informações sobre a criação de uma chave SSH, consulte [este manua
 > [!tabs]
 > **+ Create Key Pair**
 >>
->> Para criar um par de chaves, clique no botão `+ Create Key Pair`{.action}. Tenha em conta que, com esta opção, devem ser tomadas etapas adicionais antes de se poder ligar à instância, sobretudo se utilizar o software Putty para se ligar à sua instância. Consulte [esta secção](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) no respetivo guia.
+>> Para criar um par de chaves, clique no botão `+ Create Key Pair`{.action}. Tenha em conta que, com esta opção, devem ser tomadas etapas adicionais antes de se poder ligar à instância, sobretudo se utilizar o software PuTTY para se ligar à sua instância. Consulte [esta secção](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) no respetivo guia.
 >>
 >> **Key Pair Name:** Introduza um nome para a sua chave.<br>
 >> **Key Type:** Clique na `seta suspensa`{.action} e selecione `SSH Key`{.action}.<br>

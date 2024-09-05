@@ -1,7 +1,7 @@
 ---
 title: 'Crear una instancia en Horizon'
 excerpt: 'Cómo crear una instancia desde el panel Horizon'
-updated: 2024-09-03
+updated: 2024-09-05
 ---
 
 > [!primary]
@@ -140,7 +140,7 @@ Para más información sobre la creación de una llave SSH, consulte [esta guía
 > [!tabs]
 > **+ Create Key Pair**
 >>
->> Para crear un par de claves, haga clic en el botón `+ Create Key Pair`{.action}. Tenga en cuenta que, con esta opción, deberá realizar pasos adicionales antes de poder conectarse a la instancia, sobre todo si utiliza el programa Putty para conectarse a su instancia. Consulte [esta sección](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) en la guía correspondiente.
+>> Para crear un par de claves, haga clic en el botón `+ Create Key Pair`{.action}. Tenga en cuenta que, con esta opción, deberá realizar pasos adicionales antes de poder conectarse a la instancia, sobre todo si utiliza el programa PuTTY para conectarse a su instancia. Consulte [esta sección](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) en la guía correspondiente.
 >>
 >> **Key Pair Name:** Introduzca un nombre para su clave.<br>
 >> **Key Type:** Haga clic en la `flecha desplegable`{.action} y seleccione `SSH Key`{.action}.<br>
