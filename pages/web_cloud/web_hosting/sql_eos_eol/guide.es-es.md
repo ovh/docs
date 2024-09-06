@@ -23,20 +23,20 @@ Los productos cubiertos por estos anuncios de fin de venta y fin de vida son los
 Si desea anticiparse al final de la vida o realizar las acciones manualmente, deberá realizar las siguientes acciones:
 
 - Caso n° 1: dispone de una sola base de datos incluida con su plan de hosting:
-- Compruebe que el contenido de la base de datos es compatible con un DBMS más reciente.
-- [Exportar contenido de base de datos](/pages/web_cloud/web_hosting/sql_database_export).
-- Elimine la antigua base de datos.
-- [Cree una nueva base de datos](/pages/web_cloud/web_hosting/sql_create_database) en una versión de SGBD más reciente.
-- [Importe el contenido de la antigua base de datos en la nueva](/pages/web_cloud/web_hosting/sql_importing_mysql_database).
-- Asocie la nueva base de datos a su sitio web.
+    - Compruebe que el contenido de la base de datos es compatible con un DBMS más reciente.
+    - [Exportar contenido de base de datos](/pages/web_cloud/web_hosting/sql_database_export).
+    - Elimine la antigua base de datos.
+    - [Cree una nueva base de datos](/pages/web_cloud/web_hosting/sql_create_database) en una versión de SGBD más reciente.
+    - [Importe el contenido de la antigua base de datos en la nueva](/pages/web_cloud/web_hosting/sql_importing_mysql_database).
+    - Asocie la nueva base de datos a su sitio web.
 
 - Caso 2: dispone de varias bases de datos incluidas con su plan de hosting:
-- Compruebe que el contenido de la base de datos es compatible con un DBMS más reciente.
-- Como precaución, [exporte el contenido de la base de datos](/pages/web_cloud/web_hosting/sql_database_export).
-- [Cree una nueva base de datos](/pages/web_cloud/web_hosting/sql_create_database) en una versión de SGBD más reciente.
-- [Duplique el contenido de la antigua base de datos en la nueva](/pages/web_cloud/web_hosting/copy_database).
-- Asocie la nueva base de datos a su sitio web.
-- Elimine la antigua base de datos.
+    - Compruebe que el contenido de la base de datos es compatible con un DBMS más reciente.
+    - Como precaución, [exporte el contenido de la base de datos](/pages/web_cloud/web_hosting/sql_database_export).
+    - [Cree una nueva base de datos](/pages/web_cloud/web_hosting/sql_create_database) en una versión de SGBD más reciente.
+    - [Duplique el contenido de la antigua base de datos en la nueva](/pages/web_cloud/web_hosting/copy_database).
+    - Asocie la nueva base de datos a su sitio web.
+    - Elimine la antigua base de datos.
 
 ## Más información
 
