@@ -39,17 +39,17 @@ Snapshot Name: Geben Sie einen Namen für den Snapshot ein und klicken Sie auf `
 
 Der Snapshot wird dann im Bereich `Images`{.action} angezeigt. Es wird daher empfohlen, jedem Snapshot einen expliziten Namen zuzuweisen.
 
-### Wiederherstellung eines Snapshot
+### Wiederherstellung eines Snapshots
 
-Wenn Sie einen Snapshot erstellen möchten, erstellen Sie eine neue Instanz auf der Festplatte.
+Wenn Sie einen Snapshot erstellen möchten, erstellen Sie eine neue Instanz auf der Disk.
 
-Klicken Sie auf das Menü `Compute`{.action} à gauche puis sur `Images`{.action}.
+Klicken Sie auf das Menü `Compute`{.action} bei `Images`{.action}.
 
-Klicken Sie auf `Launch`{.action} à côté du snapshot selection.
+Klicken Sie auf `Launch`{.action} neben der Auswahl.
 
 ![restaurer le snapshot](images/restoresnapshot.png){.thumbnail}
 
-Mit der Anzahl an Optionen, die für die Erstellung des Snapshots erforderlich sind, können Sie einen bestimmten Kontext festlegen.
+Verwenden Sie die Optionen-Auswahl, um Konditionen für die Erstellung des Snapshots festzulegen.
 
 > [!tab]
 > **Details**
@@ -74,7 +74,7 @@ Mit der Anzahl an Optionen, die für die Erstellung des Snapshots erforderlich s
 >>![network](images/restoresnapshot4.png){.thumbnail}<br>
 >>
 
-Klicken Sie auf `Launch Instance`{.action} für den Start Ihrer Instanz-Instanz-Erstellung.
+Klicken Sie auf `Launch Instance`{.action} zum Start Ihrer Instanz-Erstellung.
 
 ### Snapshot löschen
 
