@@ -1,7 +1,7 @@
 ---
 title: Gestisci gli snapshot di un’istanza con Horizon
 excerpt: Gestisci gli snapshot di un'istanza con Horizon
-updated: 2022-01-31
+updated: 2024-09-06
 ---
 
 > [!primary]
@@ -38,7 +38,44 @@ Nella nuova finestra inserisci le informazioni richieste:
 
 ![Create Snapshot](images/createsnapshot2.png){.thumbnail}
 
-Lo Snapshot sarà successivamente elencato nella sezione `Images`{.action}. Ti consigliamo di assegnare un nome esplicito a ogni Snapshot. 
+Lo Snapshot sarà successivamente elencato nella sezione `Images`{.action}. Ti consigliamo di assegnare un nome esplicito a ogni Snapshot.
+
+### Ripristino uno snapshot
+
+È possibile ripristinare uno snapshot creando una nuova istanza a partire da essa.
+
+Nell’interfaccia di Horizon, clicca sul menu `Compute`{.action} a sinistra e poi su `Images`{.action}.
+
+Clicca su `Launch`{.action} in corrispondenza dello Snapshot selezionato.
+
+![restore snapshot](images/restoresnapshot.png){.thumbnail}
+
+Per completare il ripristino dello Snapshot, nella finestra pop-up è necessario selezionare un certo numero di opzioni.
+
+> [!tabs]
+> **Details**
+>>
+>> **Nome istanza (*Instance name*):** Specificare il nome desiderato per l’istanza.<br>
+>> **Count:** Seleziona il numero di istanze da avviare dallo Snapshot.<br><br>
+>>![snapshot](images/restoresnapshot1.png){.thumbnail}<br>
+>>
+> **Flavor**
+>>
+>> Selezionate il *flavor* desiderato. Assicurati di selezionare una versione con risorse uguali o superiori alle dimensioni dell'immagine (snapshot).<br><br><br>
+>>![network](images/restoresnapshot2.png){.thumbnail}<br>
+>>
+> **Rete (*Network*)**
+>>
+>> Seleziona una rete pubblica (Ext-Net) da associare all’istanza.<br><br>
+>>![network](images/restoresnapshot3.png){.thumbnail}<br>
+>>
+> **Keypair**
+>>
+>> Selezionare (3), creare (1) o importare (2) una coppia di chiavi.<br><br>
+>>![network](images/restoresnapshot4.png){.thumbnail}<br>
+>>
+
+Clicca su `Launch Instance`{.action} per avviare la creazione dell’istanza.
 
 ### Elimina uno Snapshot
 

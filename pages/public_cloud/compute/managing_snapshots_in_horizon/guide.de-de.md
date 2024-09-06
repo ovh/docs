@@ -1,7 +1,7 @@
 ---
 title: Verwaltung von Snapshots einer Instanz in Horizon
 excerpt: Verwaltung von Snapshots einer Instanz in Horizon
-updated: 2022-01-31
+updated: 2024-09-06
 ---
 
 > [!primary]
@@ -37,7 +37,44 @@ Snapshot Name: Geben Sie einen Namen für den Snapshot ein und klicken Sie auf `
 
 ![Create snapshot](images/createsnapshot2.png){.thumbnail}
 
-Der Snapshot wird dann im Bereich `Images`{.action} angezeigt. Es wird daher empfohlen, jedem Snapshot einen expliziten Namen zuzuweisen. 
+Der Snapshot wird dann im Bereich `Images`{.action} angezeigt. Es wird daher empfohlen, jedem Snapshot einen expliziten Namen zuzuweisen.
+
+### Wiederherstellung eines Snapshots
+
+Wenn Sie einen Snapshot erstellen möchten, erstellen Sie eine neue Instanz auf der Disk.
+
+Klicken Sie auf das Menü `Compute`{.action} bei `Images`{.action}.
+
+Klicken Sie auf `Launch`{.action} neben der Auswahl.
+
+![restaurer le snapshot](images/restoresnapshot.png){.thumbnail}
+
+Verwenden Sie die Optionen-Auswahl, um Konditionen für die Erstellung des Snapshots festzulegen.
+
+> [!tab]
+> **Details**
+>>
+>> **Name der Instanz (*Instance name*):** Geben Sie den gewünschten Instanznamen an.<br>
+>> **Count:** Wählen Sie die Anzahl der Instanzen aus, die vom Snapshot gestartet werden sollen.<br><br>
+>>![Snapshot](images/restoresnapshot1.png){.thumbnail}<br>
+>>
+> **Flavor**
+>>
+>> Wählen Sie das gewünschte *flavor* aus. Stellen Sie sicher, dass Sie eine Version auswählen, deren Ressourcen mindestens der Image-Größe (Snapshot) entsprechen.<br><br>
+>>![network](images/restoresnapshot2.png){.thumbnail}<br>
+>>
+> **Netzwerk (*Network*)**
+>>
+>> Wählen Sie ein öffentliches Netzwerk (Ext-Net) aus, das mit der Instanz verbunden werden soll.<br><br>
+>>![network](images/restoresnapshot3.png){.thumbnail}<br>
+>>
+> **Keypair**
+>>
+>> Schlüsselpaar auswählen (3), erstellen (1) oder importieren (2).<br><br>
+>>![network](images/restoresnapshot4.png){.thumbnail}<br>
+>>
+
+Klicken Sie auf `Launch Instance`{.action} zum Start Ihrer Instanz-Erstellung.
 
 ### Snapshot löschen
 
