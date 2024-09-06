@@ -1,7 +1,7 @@
 ---
 title: "Powiadomienia o zakończeniu sprzedaży/utrzymanie bazy danych SQL"
 excerpt: "Powiadomienia o zakończeniu sprzedaży/utrzymanie bazy danych SQL"
-updated: 2024-07-11
+updated: 2024-09-06
 ---
 
 > [!primary]

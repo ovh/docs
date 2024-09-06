@@ -1,7 +1,7 @@
 ---
 title: "Anuncios de fin de venta/vida base de datos SQL"
 excerpt: "Anuncios de fin de venta/vida base de datos SQL"
-updated: 2024-07-11
+updated: 2024-09-06
 ---
 
 > [!primary]

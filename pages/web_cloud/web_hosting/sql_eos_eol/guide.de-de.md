@@ -1,7 +1,7 @@
 ---
 title: "SQL Database Web Hosting EOL und EOS Ankündigungen"
 excerpt: "SQL Database Web Hosting EOL und EOS Ankündigungen"
-updated: 2024-07-11
+updated: 2024-09-06
 ---
 
 > [!primary]
@@ -12,10 +12,33 @@ Die von der folgenden Terminierung zu End-of-Life (EOL) und End-of-Sale (EOS) er
 
 Weitere Informationen finden Sie auf der Seite zur [EOL Policy für Managed Databases](/pages/web_cloud/web_cloud_databases/eol-policy).
 
-|Version|EOL Ankündigung|End-of-Sale|End-of-Support|
+|DBMS-Version|EOL Ankündigung|End-of-Sale|End-of-Support|
 |---|---|---|---|
 |MySQL 5.7|2023-11-16|2024-02-16|2024-05-17|
 |MySQL 8.0|Noch festzulegen|Noch festzulegen|Noch festzulegen|
+
+> [!primary]
+>
+> Derzeit und auf Ihrer Ebene können die in den OVHcloud Webhostings enthaltenen SQL-Datenbankdienste nicht direkt über das OVHcloud Kundencenter oder über die End-of-Sale/Life-Datenbank aktualisiert werden.
+>
+
+Wenn Sie dieses Ende des Verkaufs/der Lebensdauer vorwegnehmen oder die Aktionen manuell ausführen möchten, müssen Sie die folgenden Aktionen ausführen:
+
+- Fall Nr. 1: Sie verfügen über eine einzige Datenbank, die in Ihrem Webhosting Angebot enthalten ist:
+- Überprüfen Sie, ob der Inhalt der Datenbank mit einem neueren DBMS kompatibel ist.
+- [Datenbankinhalt exportieren](/pages/web_cloud/web_hosting/sql_database_export).
+- Löschen Sie die alte Datenbank.
+- [Neue Datenbank erstellen](/pages/web_cloud/web_hosting/sql_create_database) in einer neueren DBMS-Version.
+- [Inhalt der alten Datenbank in die neue importieren](/pages/web_cloud/web_hosting/sql_importing_mysql_database).
+- Verbinden Sie die neue Datenbank mit Ihrer Website.
+
+- Fall Nr. 2: Sie verfügen über mehrere Datenbanken, die bei Ihrem Webhosting Angebot inklusive sind:
+- Überprüfen Sie, ob der Inhalt der Datenbank mit einem neueren DBMS kompatibel ist.
+- [Datenbankinhalt exportieren](/pages/web_cloud/web_hosting/sql_database_export).
+- [Neue Datenbank erstellen](/pages/web_cloud/web_hosting/sql_create_database) in einer neueren DBMS-Version.
+- [Duplizieren Sie den Inhalt der alten Datenbank in die neue Datenbank](/pages/web_cloud/web_hosting/copy_database).
+- Verbinden Sie die neue Datenbank mit Ihrer Website.
+- Löschen Sie die alte Datenbank.
 
 ## Weiterführende Informationen
 
