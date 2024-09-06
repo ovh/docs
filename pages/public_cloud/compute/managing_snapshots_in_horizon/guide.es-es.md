@@ -1,7 +1,7 @@
 ---
 title: Gestionar las instantáneas de una instancia
 excerpt: Cómo gestionar una instantánea de una instancia en Horizon.
-updated: 2024-09-04
+updated: 2024-09-06
 ---
 
 > [!primary]
@@ -41,6 +41,16 @@ Se abrirá una ventana en la que deberá introducir la siguiente información:
 El snapshot se mostrará en la sección `Images`{.action}. Es recomendable asignar un nombre explícito a cada snapshot.
 
 ### Restauración de un snapshot
+
+Es posible restaurar un snapshot creando una nueva instancia a partir de él.
+
+En la interfaz de Horizon, haga clic en el menú `Compute`{.action} a la izquierda y seleccione `Images`{.action}.
+
+Haga clic en `Launch`{.action} junto al snapshot seleccionado.
+
+![restore snapshot](images/restoresnapshot.png){.thumbnail}
+
+Para completar la restauración del snapshot, es necesario seleccionar una serie de opciones en la ventana emergente.
 
 > [!tabs]
 > **Details**

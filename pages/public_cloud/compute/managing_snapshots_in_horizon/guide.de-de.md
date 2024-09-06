@@ -1,7 +1,7 @@
 ---
 title: Verwaltung von Snapshots einer Instanz in Horizon
 excerpt: Verwaltung von Snapshots einer Instanz in Horizon
-updated: 2024-09-04
+updated: 2024-09-06
 ---
 
 > [!primary]

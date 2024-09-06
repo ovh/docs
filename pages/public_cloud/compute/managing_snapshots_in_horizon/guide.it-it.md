@@ -1,7 +1,7 @@
 ---
 title: Gestisci gli snapshot di un’istanza con Horizon
 excerpt: Gestisci gli snapshot di un'istanza con Horizon
-updated: 2024-09-04
+updated: 2024-09-06
 ---
 
 > [!primary]
@@ -40,7 +40,17 @@ Nella nuova finestra inserisci le informazioni richieste:
 
 Lo Snapshot sarà successivamente elencato nella sezione `Images`{.action}. Ti consigliamo di assegnare un nome esplicito a ogni Snapshot.
 
-### Ripristino dello snapshot
+### Ripristino uno snapshot
+
+È possibile ripristinare uno snapshot creando una nuova istanza a partire da essa.
+
+Nell’interfaccia di Horizon, clicca sul menu `Compute`{.action} a sinistra e poi su `Images`{.action}.
+
+Clicca su `Launch`{.action} in corrispondenza dello Snapshot selezionato.
+
+![restore snapshot](images/restoresnapshot.png){.thumbnail}
+
+Per completare il ripristino dello Snapshot, nella finestra pop-up è necessario selezionare un certo numero di opzioni.
 
 > [!tabs]
 > **Details**

@@ -1,7 +1,7 @@
 ---
 title: Zarządzanie snapshotami instancji w horizon
 excerpt: Jak zarządzać snapshotami instancji w interfejsie Horizon.
-updated: 2024-09-04
+updated: 2024-09-06
 ---
 
 > [!primary]
@@ -41,6 +41,16 @@ W oknie, które się wyświetla wprowadź wymagane informacje:
 Snapshot zostanie wyświetlony w sekcji `Images`{.action}. Dlatego zalecamy nadawanie każdej kopii zapasowej snapshota odpowiedniej nazwy.
 
 ### Przywracanie snapshota
+
+Możesz przywrócić snapshot, tworząc z niego nową instancję.
+
+W interfejsie Horizon kliknij menu `Compute`{.action} po lewej stronie, a następnie `Images`{.action}.
+
+Kliknij `Launch`{.action} obok wybranego snapshota.
+
+![restore snapshot](images/restoresnapshot.png){.thumbnail}
+
+W oknie podręcznym musi być zaznaczona pewna liczba opcji, aby zakończyć przywracanie snapshota.
 
 > [!tabs]
 > **Details**

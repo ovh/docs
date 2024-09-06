@@ -42,6 +42,16 @@ A snapshot será depois listada na secção `Images`{.action}. Por isso, é acon
 
 ### Restauro de uma snapshot
 
+É possível restaurar uma snapshot criando uma nova instância a partir desta.
+
+Na interface Horizon, clique no menu `Compute`{.action} à esquerda e, a seguir, em `Images`{.action}.
+
+Clique em `Launch`{.action} junto da snapshot selecionada.
+
+![restore snapshot](images/restornapshot.png){.thumbnail}
+
+Na janela pop-up, é necessário selecionar várias opções para concluir o restauro da snapshot.
+
 > [!tabs]
 > **Details**
 >>
