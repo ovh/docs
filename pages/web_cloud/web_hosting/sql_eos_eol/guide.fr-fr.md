@@ -1,7 +1,7 @@
 ---
 title: "Annonces de fin de vente/vie base de données SQL"
 excerpt: "Annonces de fin de vente/vie base de données SQL"
-updated: 2024-09-05
+updated: 2024-09-06
 ---
 
 Les produits couverts par ces annonces de fin de vente et de fin de vie sont les services base de données SQL Web Hosting, joignables via le réseau Web Hosting. Référez-vous à la [politique de fin de vie des bases de données managées](/pages/web_cloud/web_cloud_databases/eol-policy) pour plus d'informations.
@@ -13,7 +13,7 @@ Les produits couverts par ces annonces de fin de vente et de fin de vie sont les
 
 > [!primary]
 >
-> Actuellement et à votre niveau, les services de base de données SQL inclus avec les hébergements Web OVHcloud ne peuvent pas être mis à jour directement à partir de l'espace client OVHcloud ou via la base de données en fin de vente/vie.
+> Les services de base de données SQL inclus avec les hébergements Web OVHcloud ne peuvent pas être mis à jour directement à partir de l'espace client OVHcloud ou via la base de données en fin de vente/vie.
 >
 
 Si vous souhaitez anticiper cette fin de vente/vie ou effectuer les actions manuellement, vous devez obligatoirement réaliser les actions suivantes :
@@ -29,7 +29,7 @@ Si vous souhaitez anticiper cette fin de vente/vie ou effectuer les actions manu
 - Cas n°2 : vous disposez de plusieurs base de données incluses avec votre offre d'hébergement Web :
     - Vérifiez que le contenu de la base de données est compatible avec un SGBD plus récent.
     - Par précaution, [exportez le contenu de la base de données](/pages/web_cloud/web_hosting/sql_database_export).
-    - [Créee une nouvelle base de données](/pages/web_cloud/web_hosting/sql_create_database) dans une version de SGBD plus récente.
+    - [Créez une nouvelle base de données](/pages/web_cloud/web_hosting/sql_create_database) dans une version de SGBD plus récente.
     - [Dupliquez le contenu de l'ancienne base de données dans la nouvelle](/pages/web_cloud/web_hosting/copy_database).
     - Associez la nouvelle base de données à votre site web.
     - Supprimez l'ancienne base de données.
