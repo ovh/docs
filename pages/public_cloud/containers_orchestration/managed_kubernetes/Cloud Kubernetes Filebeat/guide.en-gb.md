@@ -33,7 +33,7 @@ Edit the downloaded filebeat-kubernetes.yaml file to configure Filebeat for the 
 
 1. Modify the destination details for the Logs Data Platform:
 
-```bash
+```yaml
 - name: ELASTICSEARCH_HOST
   value: "your_cluster.logs.ovh.com"
 - name: ELASTICSEARCH_PORT
@@ -46,7 +46,7 @@ Edit the downloaded filebeat-kubernetes.yaml file to configure Filebeat for the 
 
 2. Ensure the Docker image used is for Filebeat OSS version 7.12.1:
 
-```bash
+```yaml
 image: "docker.elastic.co/beats/filebeat-oss:7.12.1"
 ```
 ### Step 3: Deploy Filebeat to Kubernetes
@@ -79,7 +79,7 @@ sudo filebeat modules enable haproxy
 
 2. Edit the `filebeat.yml` configuration file to include HAProxy log paths:
 
-```bash
+```yaml
 filebeat.modules:
 - module: haproxy
   log:
@@ -89,7 +89,7 @@ filebeat.modules:
 
 3. Include your Logs Data Platform token:
 
-```bash
+```yaml
 fields_under_root: true
 fields:
   X-OVH-TOKEN: "your_stream_token"
@@ -105,7 +105,7 @@ sudo systemctl start filebeat
 
 If you're deploying Filebeat on OpenShift, you need to run it as a privileged container. Add the following to the DaemonSet configuration:
 
-```bash
+```yaml
 securityContext:
   runAsUser: 0
   privileged: true
@@ -115,7 +115,7 @@ securityContext:
 
 To ensure Filebeat runs on control plane nodes in Kubernetes, add the necessary tolerations:
 
-```bash
+```yaml
 spec:
   tolerations:
   - key: node-role.kubernetes.io/control-plane
