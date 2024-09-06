@@ -17,7 +17,7 @@ Los productos cubiertos por estos anuncios de fin de venta y fin de vida son los
 
 > [!primary]
 >
-> Actualmente y a su nivel, los servicios de base de datos SQL incluidos con los alojamientos web de OVHcloud no pueden actualizarse directamente desde el área de cliente de OVHcloud ni a través de la base de datos al final de la venta/vida.
+> Los servicios de bases de datos SQL incluidos con los planes de hosting de OVHcloud no pueden actualizarse directamente desde el área de cliente de OVHcloud ni a través de la base de datos al final de la venta/vida.
 >
 
 Si desea anticiparse al final de la vida o realizar las acciones manualmente, deberá realizar las siguientes acciones:
