@@ -67,6 +67,13 @@ Check that the Filebeat pods are running correctly:
 kubectl get pods -n kube-system
 ```
 Ensure that the filebeat pods are listed as running.
+
+Check Filebeat logs: 
+
+```bash
+kubectl logs -l k8s-app=filebeat -n kube-system
+```
+
 ### Step 5: Monitor HAProxy with Filebeat
 
 If you're using HAProxy and want to monitor its logs, you can enable the HAProxy module in Filebeat:
