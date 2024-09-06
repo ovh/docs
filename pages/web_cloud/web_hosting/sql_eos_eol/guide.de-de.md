@@ -22,7 +22,7 @@ Weitere Informationen finden Sie auf der Seite zur [EOL Policy für Managed Data
 > Derzeit können Kunden die in den OVHcloud Webhostings enthaltenen SQL-Datenbankdienste zum End-of-Sale/Life nicht direkt über das OVHcloud Kundencenter oder die Datenbank aktualisieren.
 >
 
-Um das End-of-Sale/Life vorzubereiten oder die Aktionen manuell ausführen möchten, müssen Sie die folgenden Aktionen ausführen:
+Um das End-of-Sale/Life vorzubereiten oder Aktualisierungen manuell vorzunehmen, müssen Sie die folgenden Aktionen ausführen:
 
 - Fall Nr. 1: Sie verfügen über eine einzige Datenbank, die in Ihrem Webhosting Angebot enthalten ist:
     - Überprüfen Sie, ob der Inhalt der Datenbank mit einem neueren DBMS kompatibel ist.
