@@ -19,26 +19,26 @@ Weitere Informationen finden Sie auf der Seite zur [EOL Policy für Managed Data
 
 > [!primary]
 >
-> Derzeit und auf Ihrer Ebene können die in den OVHcloud Webhostings enthaltenen SQL-Datenbankdienste nicht direkt über das OVHcloud Kundencenter oder über die End-of-Sale/Life-Datenbank aktualisiert werden.
+> Derzeit können Kunden die in den OVHcloud Webhostings enthaltenen SQL-Datenbankdienste zum End-of-Sale/Life nicht direkt über das OVHcloud Kundencenter oder die Datenbank aktualisieren.
 >
 
-Wenn Sie dieses Ende des Verkaufs/der Lebensdauer vorwegnehmen oder die Aktionen manuell ausführen möchten, müssen Sie die folgenden Aktionen ausführen:
+Um das End-of-Sale/Life vorzubereiten oder die Aktionen manuell ausführen möchten, müssen Sie die folgenden Aktionen ausführen:
 
 - Fall Nr. 1: Sie verfügen über eine einzige Datenbank, die in Ihrem Webhosting Angebot enthalten ist:
-- Überprüfen Sie, ob der Inhalt der Datenbank mit einem neueren DBMS kompatibel ist.
-- [Datenbankinhalt exportieren](/pages/web_cloud/web_hosting/sql_database_export).
-- Löschen Sie die alte Datenbank.
-- [Neue Datenbank erstellen](/pages/web_cloud/web_hosting/sql_create_database) in einer neueren DBMS-Version.
-- [Inhalt der alten Datenbank in die neue importieren](/pages/web_cloud/web_hosting/sql_importing_mysql_database).
-- Verbinden Sie die neue Datenbank mit Ihrer Website.
+    - Überprüfen Sie, ob der Inhalt der Datenbank mit einem neueren DBMS kompatibel ist.
+    - [Datenbankinhalt exportieren](/pages/web_cloud/web_hosting/sql_database_export).
+    - Löschen Sie die alte Datenbank.
+    - [Neue Datenbank erstellen](/pages/web_cloud/web_hosting/sql_create_database), in einer neueren DBMS-Version.
+    - [Inhalt der alten Datenbank in die neue importieren](/pages/web_cloud/web_hosting/sql_importing_mysql_database).
+    - Verbinden Sie die neue Datenbank mit Ihrer Website.
 
 - Fall Nr. 2: Sie verfügen über mehrere Datenbanken, die bei Ihrem Webhosting Angebot inklusive sind:
-- Überprüfen Sie, ob der Inhalt der Datenbank mit einem neueren DBMS kompatibel ist.
-- [Datenbankinhalt exportieren](/pages/web_cloud/web_hosting/sql_database_export).
-- [Neue Datenbank erstellen](/pages/web_cloud/web_hosting/sql_create_database) in einer neueren DBMS-Version.
-- [Duplizieren Sie den Inhalt der alten Datenbank in die neue Datenbank](/pages/web_cloud/web_hosting/copy_database).
-- Verbinden Sie die neue Datenbank mit Ihrer Website.
-- Löschen Sie die alte Datenbank.
+    - Überprüfen Sie, ob der Inhalt der Datenbank mit einem neueren DBMS kompatibel ist.
+    - [Datenbankinhalt exportieren](/pages/web_cloud/web_hosting/sql_database_export).
+    - [Neue Datenbank erstellen](/pages/web_cloud/web_hosting/sql_create_database) in einer neueren DBMS-Version.
+    - [Duplizieren Sie den Inhalt der alten Datenbank in die neue Datenbank](/pages/web_cloud/web_hosting/copy_database).
+    - Verbinden Sie die neue Datenbank mit Ihrer Website.
+    - Löschen Sie die alte Datenbank.
 
 ## Weiterführende Informationen
 
