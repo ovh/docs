@@ -24,13 +24,13 @@ max-width:400px!important;
 
 With the Zimbra solution, OVHcloud offers an open-source collaborative messaging platform, with all the features you need for professional use. In this guide, you will find the information you need to get started configuring your Zimbra email accounts.
 
-**Find out how to get started with the Zimbra email solution**
+**Find out how to get started with the Zimbra email solution.**
 
 ## Requirements
 
-- You need to have signed up to an email account on our Zimbra OVHcloud email solution.
-- You must have a [OVHcloud domain name](/links/web/domains).
-- You must be logged in to your [OVHcloud Control Panel](/links/manager).
+- An email account on our Zimbra OVHcloud email solution
+- An [OVHcloud domain name](/links/web/domains)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -40,11 +40,11 @@ To access your Zimbra service, log in to your [OVHcloud Control Panel](/links/ma
 
 ### Configure your Zimbra service
 
-Before you start configuring your Zimbra email accounts, take note of the three elements that structure your Zimbra service hierarchically :
+Before you start configuring your Zimbra email accounts, take note of the three elements that structure your Zimbra service hierarchically:
 
-- [**Organization**](#organizations) : it enables domain names to be grouped together in order to associate them. **You don't need to create an organization to create an email account**.
-- [**Domain name**](#domains) : it is essential to create an email account. You will need to manage at least one domain name via the OVHcloud Control Panel, and add it to your Zimbra service.
-- [**Email accounts**](#emails) : By using the domain names added to your Zimbra service, you can create an email address.
+- [**Organization**](#organizations): It enables domain names to be grouped together in order to associate them. **You don't need to create an organization to create an email account**.
+- [**Domain name**](#domains): It is essential to create an email account. You will need to manage at least one domain name via the OVHcloud Control Panel, and add it to your Zimbra service.
+- [**Email accounts**](#emails): By using the domain names added to your Zimbra service, you can create an email address.
 
 The diagram below summarizes the hierarchical link between the above-mentioned elements.
 
@@ -74,8 +74,8 @@ In this tab, you will find all of the domain names added to your Zimbra service.
 
 The domain name table gives you two pieces of information:
 
-- **Organization** : it is determined when you add your domain name, you will automatically find its label in this column.
-- **Number of accounts** : Here, you can find all of the accounts created under the domain name concerned.
+- **Organization**: It is determined when you add your domain name. You will automatically find its label in this column.
+- **Number of accounts**: Here, you can find all of the accounts created under the domain name concerned.
 
 #### Add a domain name
 
@@ -85,11 +85,11 @@ If you have created organizations, select one of them from the dropdown menu, th
 
 ### Email accounts <a name="emails"></a>
 
-You can manage your Zimbra service email addresses from the `Email accounts`{.action} tab. The table displays the list of email accounts on your service, as well as 3 pieces of information for each :
+You can manage your Zimbra service email addresses from the `Email accounts`{.action} tab. The table displays the list of email accounts on your service, as well as 3 pieces of information for each:
 
-- **Organization** : If your email account domain name is linked to an organization, you will automatically find its label in this column.
-- **Offer** : Since your Zimbra service can host several Zimbra solutions, you will find the solution associated with your email account in this column.
-- **Size** : This column shows the total capacity of your email account and the space it currently occupies.
+- **Organization**: If your email account domain name is linked to an organization, you will automatically find its label in this column.
+- **Offer**: Since your Zimbra service can host several Zimbra solutions, you will find the solution associated with your email account in this column.
+- **Size**: This column shows the total capacity of your email account and the space it currently occupies.
 
 At the top of this page, you will also find a link to [Webmail](/links/web/email), so that you can log in directly to the content of your email account via your web browser.
 
@@ -99,25 +99,25 @@ To create an email account on your Zimbra service, click on the `Email accounts`
 
 Fill in the information displayed.
 
-- **Email account** : Enter the *account name* that your email address will contain (your first name.surname, for example), and *select a domain name* in the dropdown menu.
+- **Email account**: Enter the *account name* that your email address will contain (your "first name.surname", for example), and *select a domain name* in the dropdown menu.
 
 > [!warning]
 >
-> The name of your email address must meet the following conditions :
+> The name of your email address must meet the following conditions:
 >
 > - Minimum 2 characters
 > - Maximum 32 characters
 > - No accents
 > - No special characters, except for the following characters: `.`, `,`, `-` and `_`
 
-- **First name** : enter a first name.
-- **Name** : Enter a name.
-- **Full name** : Enter the name that will appear as a sender when emails are sent from this address.
-- **Password** : Set a strong password consisting of (at least) 9 characters, an upper-case letter, a lower-case letter and a number. For security reasons, do not use the same password twice. Choose one that has no relation to your personal information (for example, avoid mentioning your surname, first name and date of birth). Change it regularly.
+- **First name**: Enter a first name.
+- **Name**: Enter a name.
+- **Full name**: Enter the name that will appear as a sender when emails are sent from this address.
+- **Password**: Set a strong password consisting of (at least) 9 characters, an upper-case letter, a lower-case letter and a number. For security reasons, do not use the same password twice. Choose one that has no relation to your personal information (for example, avoid your surname, first name and date of birth). Change it regularly.
 
 > [!warning]
 >
-> The password must meet the following requirements :
+> The password must meet the following requirements:
 >
 > - Minimum 9 characters
 > - Maximum 30 characters
@@ -132,7 +132,5 @@ Click `Confirm`{.action} to start creating the account.
 [OVHcloud Zimbra FAQ](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-zimbra)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
-
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our [community of users](/links/community).
