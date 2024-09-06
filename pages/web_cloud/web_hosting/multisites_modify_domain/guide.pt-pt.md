@@ -14,7 +14,7 @@ Ao utilizar o seu alojamento web ou ao atualizar o seu website, poderá ter de a
 
 > [!primary]
 >
-> Este guia explica unicamente como alterar um domínio ou um subdomínio já declarado num alojamento web da OVHcloud. Se pretender associar um novo domínio/subdomínio ao seu alojamento web, consulte o guia "[Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configurado_multisite)".
+> Este guia explica unicamente como alterar um domínio ou um subdomínio já declarado num alojamento web da OVHcloud. Se pretender associar um novo domínio/subdomínio ao seu alojamento web, consulte o guia "[Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
 >
 
 **Saiba como alterar as definições de associação de um domínio/subdomínio já registado na sua oferta de alojamento web.**
@@ -54,7 +54,7 @@ No resto deste guia, encontrará uma descrição de cada um dos parâmetros disp
 
 > [!primary]
 >
-> O formulário `Domínio`{.action} não pode ser alterado, pois trata-se de uma alteração dos parâmetros do nome de domínio associado ao alojamento web. Se a ação desejada consiste em associar um novo domínio/subdomínio ao seu alojamento web, consulte o guia "[Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configurado_multisite)".
+> O formulário `Domínio`{.action} não pode ser alterado, pois trata-se de uma alteração dos parâmetros do nome de domínio associado ao alojamento web. Se a ação desejada consiste em associar um novo domínio/subdomínio ao seu alojamento web, consulte o guia "[Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
 >
 
 #### Modificar a "pasta raiz"
@@ -136,7 +136,7 @@ Se, para as opções **SSL**, **CDN**, **IP do país** e **logs separados**, as 
 
 ## Quer saber mais?
 
-[Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configurado_multisite).
+[Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 
 [Gerir um certificado SSL num alojamento web](/pages/web_cloud/web_hosting/ssl_on_webhosting).
 
