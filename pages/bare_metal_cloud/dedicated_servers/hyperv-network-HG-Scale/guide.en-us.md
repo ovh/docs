@@ -65,7 +65,7 @@ Ethernet 3                Mellanox ConnectX-5 Adapter #3                4 Up    
 
 In our example:
 
-- The public interfaces are `Ehernet 3` and `Ethernet 4`.
+- The public interfaces are `Ethernet 3` and `Ethernet 4`.
 - The private interfaces are `Ethernet` and `Ethernet 2`.
 
 > [!primary]
@@ -274,7 +274,7 @@ Ethernet 3                Mellanox ConnectX-5 Adapter #3                4 Up    
 
 In our example:
 
-- The public interfaces are `Ehernet 3` and `Ethernet 4`.
+- The public interfaces are `Ethernet 3` and `Ethernet 4`.
 - The private interfaces are `Ethernet` and `Ethernet 2`.
 
 > [!primary]
