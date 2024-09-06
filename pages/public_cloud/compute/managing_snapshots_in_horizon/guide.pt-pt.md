@@ -48,7 +48,7 @@ Na interface Horizon, clique no menu `Compute`{.action} à esquerda e, a seguir,
 
 Clique em `Launch`{.action} junto da snapshot selecionada.
 
-![restore snapshot](images/restornapshot.png){.thumbnail}
+![restore snapshot](images/restoresnapshot.png){.thumbnail}
 
 Na janela pop-up, é necessário selecionar várias opções para concluir o restauro da snapshot.
 
@@ -57,22 +57,22 @@ Na janela pop-up, é necessário selecionar várias opções para concluir o res
 >>
 >> **Nome da instância (*Instance name*):** Indique o nome pretendido para a instância.<br>
 >> **Count:** Selecione o número de instâncias a executar a partir da snapshot.<br><br>
->>![snapshot](images/restornapshot1.png){.thumbnail}<br>
+>>![snapshot](images/restoresnapshot1.png){.thumbnail}<br>
 >>
 > **Flavor**
 >>
 >> Selecione o *flavor* desejado. Certifique-se de que seleciona uma versão com recursos iguais ou superiores ao tamanho da imagem (snapshot).<br><br>>
->>![network](images/restornapshot2.png){.thumbnail}<br>
+>>![network](images/restoresnapshot2.png){.thumbnail}<br>
 >>
 > **Rede (*Network*)**
 >>
 >> Selecione uma rede pública (Ext-Net) a associar à instância.<br><br>
->>![network](images/restornapshot3.png){.thumbnail}<br>
+>>![network](images/restoresnapshot3.png){.thumbnail}<br>
 >>
 > **Keypair**
 >>
 >> Selecione (3), crie (1) ou importe (2) um par de chaves.<br><br>>
->>![network](images/restornapshot4.png){.thumbnail}<br>
+>>![network](images/restoresnapshot4.png){.thumbnail}<br>
 >>
 
 Depois de fazer isso, clique em `Launch Instance`{.action} para iniciar a criação da sua instância.
