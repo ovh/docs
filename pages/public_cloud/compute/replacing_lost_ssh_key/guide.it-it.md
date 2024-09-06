@@ -31,7 +31,7 @@ La modalità Rescue di OVHcloud consente comunque di accedere con una password p
 
 ### Step 1: crea una nuova coppia di chiavi
 
-Crea una nuova coppia di chiavi SSH sul tuo dispositivo locale, seguendo le istruzioni contenute nella prima parte della [guida alla creazione di una chiave SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
+Crea una nuova coppia di chiavi SSH sul tuo dispositivo locale, seguendo le istruzioni contenute nella prima parte della [guida alla creazione di una chiave SSH](/pages/public_cloud/compute/creating-ssh-keys-pci).
 
 ### Step 2: accedi all’istanza in modalità Rescue
 

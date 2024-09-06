@@ -27,7 +27,7 @@ Cependant, vous pouvez toujours vous connecter à votre instance via le mode res
 
 ### Étape 1 : créer une nouvelle paire de clés
 
-Créez une nouvelle paire de clés SSH sur votre appareil local, en suivant les instructions de la première partie du [guide de création d'une clé SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
+Créez une nouvelle paire de clés SSH sur votre appareil local, en suivant les instructions de la première partie du [guide de création d'une clé SSH](/pages/public_cloud/compute/creating-ssh-keys-pci).
 
 ### Étape 2 : accéder à votre instance en mode rescue
 
