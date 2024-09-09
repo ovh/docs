@@ -62,7 +62,7 @@ Then, in the `My profile` box, click the `...`{.action} button, then `Edit my pr
 > [!warning]
 > As a reminder, it is **essential** that the backup email address is **different** from the account’s main email address.
 >
-> Avoid using email addresses linked to a domain name that you manage from your Control Panel. If your domain is blocked, you will no longer receive our notifications.
+> Avoid using email addresses linked to a domain name that you manage from your Control Panel. If your domain is blocked, you will no longer receive our notifications. If you are in this situation, follow [the procedures in this guide](/pages/account_and_service_management/account_information/ovhcloud-account-login#invalid-email).
 >
 
 #### Enabling two-factor authentication
@@ -124,7 +124,6 @@ You can request for your NIC handle and all of the data associated with it to be
 To delete your NIC handle, you will need to meet the following conditions:
 >
 > - Your account must no longer contain any services.
->
 > - Your account must not have any outstanding bills or unpaid orders.
 >
 
@@ -142,9 +141,9 @@ A user can have read or write access to your account, or all of your services. Y
 
 #### Managing contacts
 
-You can delegate admin **or** technical **or** billing management for one or more services on your account to another NIC handle. To find out more, please refer to our [guide on contact management](/pages/account_and_service_management/account_information/managing_contacts).
+You can delegate admin **or** technical **or** billing management for one or more services on your account to another OVHcloud account. To find out more, please refer to our [guide on contact management](/pages/account_and_service_management/account_information/managing_contacts).
 
-### What to do in the event of identity theft
+#### What to do in the event of identity theft??
 
 If you receive an email notifying you of an unknown connection to your OVHcloud account, we advise [changing your account password immediately](/pages/account_and_service_management/account_information/manage-ovh-password#change-your-password) and [securing it with two-factor authentication](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
 

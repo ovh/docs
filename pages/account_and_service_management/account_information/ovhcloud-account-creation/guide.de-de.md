@@ -51,7 +51,7 @@ Nachdem Sie den Code eingegeben und bestätigt haben, füllen Sie bitte das Form
 
 Ihr Account wird angelegt und Sie werden automatisch auf der Startseite ("Dashboard") Ihres Kundencenters eingeloggt.
 
-### Was ist meine Kundenkennung?
+### Was ist meine Kundenkennung? <a name="nic-handle"></a>
 
 Jeder OVHcloud Kunden-Account ist mit einer individuellen Kundenkennung verbunden, unter Umständen auch als *NIC-handle* oder Benutzername bezeichnet.
 

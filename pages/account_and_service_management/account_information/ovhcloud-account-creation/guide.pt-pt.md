@@ -51,7 +51,7 @@ Uma vez o código introduzido e validado, preencha o formulário. Tenha o cuidad
 
 A sua conta criada irá automaticamente ser ligada à página inicial, denominada "painel de controlo", da sua conta.
 
-### Qual é o meu identificador de cliente?
+### Qual é o meu identificador de cliente? <a name="nic-handle"></a>
 
 Cada conta de cliente da OVHcloud está associada a um identificador único, também chamado *NIC-handle*.
 

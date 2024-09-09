@@ -51,7 +51,7 @@ Po wpisaniu i zatwierdzeniu kodu uzupełnij formularz. W szczególności należy
 
 Twoje konto zostało utworzone, po zalogowaniu się do strony głównej konta, zwanego "Dashboardem".
 
-### Jaki jest mój identyfikator klienta?
+### Jaki jest mój identyfikator klienta? <a name="nic-handle"></a>
 
 Każde konto klienta OVHcloud jest przypisane do unikalnego identyfikatora, zwanego również *identyfikatorem klienta*.
 

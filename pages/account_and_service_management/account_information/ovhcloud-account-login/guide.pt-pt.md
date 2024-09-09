@@ -60,7 +60,7 @@ Uma vez ligado, poderá tomar nota do seu identificador que é apresentado na su
 
 Em caso de perda da palavra-passe, consulte [este guia](/pages/account_and_service_management/account_information/manage-ovh-password#se-nao-se-lembrar-da-sua-palavra-passe-atual), que explica o que deverá fazer para a alterar.
 
-### Perdi a minha palavra-passe e o meu endereço de e-mail principal já não é válido
+### Perdi a minha palavra-passe e o meu endereço de e-mail principal já não é válido <a name="invalid-email"></a>
 
 Neste caso, o procedimento de reinicialização da palavra-passe não pode ser efetuado a partir da página de ligação.
 

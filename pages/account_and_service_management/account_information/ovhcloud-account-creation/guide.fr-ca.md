@@ -47,7 +47,7 @@ Une fois le code saisi et validé, complétez la suite du formulaire. Veillez no
 
 Votre compte créé, vous serez automatiquement connecté sur la page d'accueil, appelée « Tableau de bord », de votre compte.
 
-### Quel est mon identifiant client ?
+### Quel est mon identifiant client ? <a name="nic-handle"></a>
 
 Chaque compte client OVHcloud est associé à un identifiant unique, aussi appelé *NIC-handle*.
 

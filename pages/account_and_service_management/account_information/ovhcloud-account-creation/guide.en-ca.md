@@ -47,7 +47,7 @@ Once you have entered and validated the code, fill in the rest of the form. In p
 
 Once you have created your account, you will automatically be logged in to your account’s dashboard.
 
-### What is my NIC handle?
+### What is my NIC handle? <a name="nic-handle"></a>
 
 Each OVHcloud customer account is associated with a unique ID, also called a NIC handle.
 

@@ -51,7 +51,7 @@ Una volta inserito e convalidato il codice, completa il form Ricordati di defini
 
 Il tuo account creato sarà automaticamente connesso alla home page, chiamata "Dashboard", del tuo account.
 
-### Qual è il mio identificativo cliente?
+### Qual è il mio identificativo cliente? <a name="nic-handle"></a>
 
 Ogni account cliente OVHcloud è associato a un identificativo unico, chiamato anche *NIC-handle*.
 

@@ -51,7 +51,7 @@ Una vez que haya introducido y validado el código, complete el resto del formul
 
 Su cuenta creada, se conectará automáticamente a la página de inicio de su cuenta, denominada "Panel de control".
 
-### ¿Cuál es mi ID de cliente?
+### ¿Cuál es mi ID de cliente? <a name="nic-handle"></a>
 
 Cada cuenta de cliente de OVHcloud está asociada a un ID único, también llamado *NIC-handle*.
 
