@@ -1,7 +1,7 @@
 ---
 title: 'Creating an OVHcloud account'
 excerpt: 'Find out how to create your OVHcloud account'
-updated: 2023-05-23
+updated: 2024-09-09
 ---
 
 ## Objective
@@ -51,7 +51,8 @@ Once you have created your account, you will automatically be logged in to your 
 
 Each OVHcloud customer account is associated with a unique ID, also called a NIC handle.
 
-It is usually made up of two letters followed by numbers, for example: **xx11111-ovh**.
+It is usually made up of two letters followed by numbers, for example: **xx11111-ovh**.<br>
+For most accounts outside Europe, it is often replaced by the primary email address entered into the OVHcloud account.
 
 Your NIC-handle is what you will need to use in order to:
 
@@ -78,4 +79,4 @@ See also our guides for:
 
 [Securing your OVHcloud account with two-factor authentication](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

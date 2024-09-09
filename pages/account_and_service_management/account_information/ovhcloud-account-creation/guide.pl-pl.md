@@ -1,7 +1,7 @@
 ---
 title: 'Tworzenie konta OVHcloud'
 excerpt: 'Dowiedz się, jak założyć konto OVHcloud'
-updated: 2023-05-23
+updated: 2024-09-09
 ---
 
 > [!primary]
@@ -23,7 +23,7 @@ Konto może zostać utworzone przed lub podczas składania zamówienia na pierws
 
 ### Jak założyć konto OVHcloud?
 
-Aby utworzyć konto OVHcloud, wystarczy przejść na [tę stronę](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i wypełnić formularz online.
+Aby utworzyć konto OVHcloud, wystarczy przejść na [tę stronę](/links/manager) i wypełnić formularz online.
 
 ![formularz tworzenia konta](images/account-creation.png){.thumbnail}
 
@@ -55,7 +55,8 @@ Twoje konto zostało utworzone, po zalogowaniu się do strony głównej konta, z
 
 Każde konto klienta OVHcloud jest przypisane do unikalnego identyfikatora, zwanego również *identyfikatorem klienta*.
 
-Identyfikator składa się najczęściej z dwóch liter i następujących po nich cyfr. Na przykład: **xx11111-ovh**.
+Identyfikator składa się najczęściej z dwóch liter i następujących po nich cyfr. Na przykład: **xx11111-ovh**.<br>
+W przypadku większości kont spoza Europy jest on często zastępowany głównym adresem e-mail podanym w koncie OVHcloud.
 
 Ten identyfikator klienta pozwala na:
 
@@ -82,4 +83,4 @@ Sprawdź nasze przewodniki:
 
 [Zabezpieczenie konta OVHcloud za pomocą weryfikacji dwuetapowej](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa)
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

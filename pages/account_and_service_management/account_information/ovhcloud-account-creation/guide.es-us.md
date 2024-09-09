@@ -1,7 +1,7 @@
 ---
 title: 'Crear una cuenta de OVHcloud'
 excerpt: 'Cómo crear una cuenta de OVHcloud'
-updated: 2023-05-23
+updated: 2024-09-09
 ---
 
 > [!primary]
@@ -23,7 +23,7 @@ Es posible crear una cuenta antes o durante el pedido de su primer servicio de O
 
 ### ¿Cómo crear una cuenta de OVHcloud?
 
-Para crear una cuenta de OVHcloud, acceda a [esta página](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} y complete el formulario online.
+Para crear una cuenta de OVHcloud, acceda a [esta página](/links/manager) y complete el formulario online.
 
 ![formulario creación cuenta](images/account-creation.png){.thumbnail}
 
@@ -53,22 +53,9 @@ Su cuenta creada, se conectará automáticamente a la página de inicio de su cu
 
 ### ¿Cuál es mi ID de cliente? <a name="nic-handle"></a>
 
-Cada cuenta de cliente de OVHcloud está asociada a un ID único, también llamado *NIC-handle*.
+Cada cuenta de cliente de OVHcloud está asociada a un identificador único, también denominado NIC o NIC-Handle.
 
-Suele componerse de dos letras seguidas de números. Por ejemplo, **xx11111-ovh**.
-
-Este ID de cliente le permite:
-
-- Realizar pedidos en línea.
-- Conectarse al área de cliente para gestionar todos sus servicios.
-- Identificarse cuando contacte con el soporte de OVHcloud, facilitando así el tratamiento de sus preguntas.
-
-Su ID de cliente se muestra en la parte superior derecha con su nombre y dirección de correo electrónico.
-
-![ID cliente](images/nic-handle.png){.thumbnail}
-
-> [!warning]
-> Tome nota de su ID de cliente, ya que lo necesitará para cada conexión a su cuenta.
+Para la mayoría de las cuentas fuera de Europa, se sustituye por la dirección de correo electrónico principal indicada en la cuenta de OVHcloud.
 
 ## Más información
 
@@ -82,4 +69,4 @@ Consulte también nuestras guías para:
 
 [Proteger su cuenta de OVHcloud con la doble autenticación](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa)
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).
