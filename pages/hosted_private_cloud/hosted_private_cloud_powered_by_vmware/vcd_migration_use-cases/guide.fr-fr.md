@@ -12,7 +12,7 @@ updated: 2024-09-09
 
 ## Objectif
 
-**L’objectif est de fournir des étape de verifications (checklists)      ainsi que les éxigences de migration afin de pouvoir passer vers des environnements managés Hosted Private Cloud - VMware Cloud Director.**
+**L’objectif est de fournir des étapes de verifications (checklists) ainsi que les éxigences de migration afin de pouvoir passer vers des environnements managés Hosted Private Cloud - VMware Cloud Director.**
 
 ## Prérequis
 
@@ -51,11 +51,10 @@ Vous avez demandé à migrer votre environnement actuel VMware chez OVHcloud ver
 
 Nous vous invitons à revoir la démonstration du produit et le webinaire pour vous familiariser avec cette nouvelle offre. Retrouvez également toutes les informations nécessaires sur notre page dédiée à VCD.
 
-- [Lien vers la vidéo : Managed VMware Cloud Director by OVHcloud - Demonstration](https://vimeo.com/936590009/b52b3ba8ce)
-- [Lien vers le webinaire :](https://www.youtube.com/watch?v=aS2A9AhjnMg)
-
-- [Lien vers la page web : https://www.ovhcloud.com/fr/lp/vmware-vcd-evolution/)
-- [Lien vers OVHcloud pour tester le produit :](https://labs.ovhcloud.com/en/vmware-cloud-director/)
+- [Managed VMware Cloud Director by OVHcloud - Demonstration (Video EN)](https://vimeo.com/936590009/b52b3ba8ce)
+- [Webinar - VMware by Broadcom New Offerings and Opportunities (Video EN)](https://www.youtube.com/watch?v=aS2A9AhjnMg)
+- [Product - VMware Cloud Director On OVHcloud Evolution (FR)](https://www.ovhcloud.com/fr/lp/vmware-vcd-evolution/)
+- [OVHcloud Labs - VMware Cloud Director On OVHcloud (EN)](https://labs.ovhcloud.com/en/vmware-cloud-director/)
 
 **Important** : La signature des conditions particulières disponibles depuis début septembre 2024 dans le manager doivent être signé pour que la migration soit réalisée par les équipes OVHcloud.
 
@@ -89,19 +88,7 @@ Il faudra faire la demande à travers un ticket au support vous permettant d'avo
 
 Ensuite, nous vous informerons de la date de migration et réaliserons la migration.
 
-### Étape 2 - Après la migration
-
-Après la migration, vous devrez configurer votre nouvelle solution Veeam Backup & Replication selon votre politique de sauvegarde préférée, qui pourra être personnalisée en fonction des niveaux de service suivants :
-
-- `Bronze Repository` : Standard Object Storage.
-- `Silver Repository` : Standard Object Storage avec copie de sauvegarde hors site.
-- `Gold Repository` : High Performance Object Storage avec copie de sauvegarde hors site et 14 points d’immuabilité
-
-- `Bronze Repository` : Ce repository est basé sur la classe OVHcloud Object Storage Standard. Nous utiliserons un bucket le plus proche de votre environnement VCD.
-- `Silver Repository` : Ce repository est basé sur la classe OVHcloud Object Storage Standard. Nous utiliserons un Veeam SOBR (Scale-Out Backup Repository) avec des buckets de niveau de performance plus proches de votre environnement VCD et un niveau de capacité "tier" à partir de buckets d'une autre région OVHcloud. Nous utilisons également le mode de copie Veeam SOBR pour ajouter les sauvegardes des « performance extents » aux « capacity extents » dès leur création.
-- `Gold Repository` : Ce repository est basé sur la classe OVHcloud Object Storage High performance. Il inclut les options précédentes + OVHcloud Object Storage "High performance".
-
-### Étape 3 - Checklist des cas particuliers
+### Étape 2 - Checklist des cas particuliers de migration
 
 /// details | Le tableau ci-dessous vous présente chacun des points bloquants à la migration, ainsi que leur niveau de criticité, qu'il convient de mettre en conformité avant que la migration ne puisse débuter.
 
@@ -122,6 +109,18 @@ Après la migration, vous devrez configurer votre nouvelle solution Veeam Backup
 ///
 
 - **Blockage** : Interrompt toute migration possible vers VCD on OVHcloud si vous avez du multi-vDC, des environnements certifiés, des VM chiffrés, des environnements avec Zerto activé.
+
+### Étape 3 - Le stockage après la migration (Repo)
+
+Après la migration, vous devrez configurer votre nouvelle solution Veeam Backup & Replication selon votre politique de sauvegarde préférée, qui pourra être personnalisée en fonction des niveaux de service suivants :
+
+- `Bronze Repository` : Standard Object Storage.
+- `Silver Repository` : Standard Object Storage avec copie de sauvegarde hors site.
+- `Gold Repository` : High Performance Object Storage avec copie de sauvegarde hors site et 14 points d’immuabilité
+  or
+- `Bronze Repository` : Ce repository est basé sur la classe OVHcloud Object Storage Standard. Nous utiliserons un bucket le plus proche de votre environnement VCD.
+- `Silver Repository` : Ce repository est basé sur la classe OVHcloud Object Storage Standard. Nous utiliserons un Veeam SOBR (Scale-Out Backup Repository) avec des buckets de niveau de performance plus proches de votre environnement VCD et un niveau de capacité "tier" à partir de buckets d'une autre région OVHcloud. Nous utilisons également le mode de copie Veeam SOBR pour ajouter les sauvegardes des « performance extents » aux « capacity extents » dès leur création.
+- `Gold Repository` : Ce repository est basé sur la classe OVHcloud Object Storage High performance. Il inclut les options précédentes + OVHcloud Object Storage "High performance".
 
 ## Aller plus loin
 
