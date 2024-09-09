@@ -29,13 +29,11 @@ Ce guide pratique a pour but de vous fournir des informations et des solutions s
 
 Ce document détaille également les prérequis pour chaque cas d'utilisation et le cas échéant, vous explique les solutions à mettre en place pour migrer vers VCD.
 
-1/ Il est important de vérifier la checklist des cas particuliers ci-dessous avant toutes migrations et vous conformer aux recommandations associées.
-
-2/ Une fois que vous aurez rempli ces exigences en suivant les étapes de la checklist, vous pouvez vous connecter à l'espace client OVHcloud afin de signer les conditions particulières depuis l'environnement prévu à migrer (T&C). Un bloc affiche le document des conditions particulières et vous permet d'accepter ces conditions en suivant les étapes pour valider la migration et signer les conditions particulières du service.
+1. Il est important de vérifier la checklist des cas particuliers ci-dessous avant toutes migrations et vous conformer aux recommandations associées.
+2. Une fois que vous aurez rempli ces exigences en suivant les étapes de la checklist, vous pouvez vous connecter à l'espace client OVHcloud afin de signer les conditions particulières depuis l'environnement prévu à migrer (T&C). Un bloc affiche le document des conditions particulières et vous permet d'accepter ces conditions en suivant les étapes pour valider la migration et signer les conditions particulières du service (voir capture ci-dessous).
+3. Les équipes d'OVHcloud migreront les VMs du datacenter vSphere principal en utilisant un chemin de migration à chaud.
 
 ![VCD Migration](images/vcd_migration.png){.thumbnail}
-
-3/ Les équipes d'OVHcloud migreront les VMs du datacenter vSphere principal en utilisant un chemin de migration à chaud.
 
 Ce déplacement à chaud permettra de limiter au minimum les coupures de vos réseaux publics ou privés. Les réseaux privés sont les plus susceptibles d'être impactés, de l'ordre de quelques minutes de coupure.
 
