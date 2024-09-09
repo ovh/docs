@@ -1,7 +1,7 @@
 ---
 title: 'OVHcloud Kunden-Account erstellen'
 excerpt: Erfahren Sie hier, wie Sie Ihren OVHcloud Kunden-Account anlegen
-updated: 2023-05-23
+updated: 2024-09-09
 ---
 
 > [!primary]
@@ -23,7 +23,7 @@ Die Erstellung eines Accounts kann vor oder während der Bestellung Ihres ersten
 
 ### Wie erstellt man einen OVHcloud Kunden-Account?
 
-Um einen OVHcloud Kunden-Account zu erstellen, gehen Sie einfach auf [diese Seite](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) und füllen Sie das Online-Formular aus.
+Um einen OVHcloud Kunden-Account zu erstellen, gehen Sie einfach auf [diese Seite](/links/manager) und füllen Sie das Online-Formular aus.
 
 ![Formular erstellen](images/account-creation.png){.thumbnail}
 
@@ -51,11 +51,12 @@ Nachdem Sie den Code eingegeben und bestätigt haben, füllen Sie bitte das Form
 
 Ihr Account wird angelegt und Sie werden automatisch auf der Startseite ("Dashboard") Ihres Kundencenters eingeloggt.
 
-### Was ist meine Kundenkennung?
+### Was ist meine Kundenkennung? <a name="nic-handle"></a>
 
 Jeder OVHcloud Kunden-Account ist mit einer individuellen Kundenkennung verbunden, unter Umständen auch als *NIC-handle* oder Benutzername bezeichnet.
 
-Sie besteht in der Regel aus zwei Buchstaben gefolgt von Ziffern. Zum Beispiel: **xx11111-ovh**.
+Sie besteht in der Regel aus zwei Buchstaben gefolgt von Ziffern. Zum Beispiel: **xx11111-ovh**.<br>
+Bei den meisten Accounts außerhalb Europas wird diese häufig durch die im OVHcloud Kunden-Account angegebene Haupt-E-Mail-Adresse ersetzt.
 
 Diese Kundenkennung erlaubt Ihnen:
 
@@ -82,4 +83,4 @@ Lesen Sie auch unsere zugehörigen Anleitungen:
 
 [Ihren OVHcloud Kunden-Account mit der Zwei-Faktor-Authentifizierung absichern](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

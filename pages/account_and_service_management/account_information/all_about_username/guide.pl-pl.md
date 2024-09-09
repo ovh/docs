@@ -20,7 +20,7 @@ Panel klienta OVHcloud pozwala również na zarządzanie danymi osobowymi i na d
 ## Wymagania początkowe
 
 - Utworzenie [konta OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Zalogowanie do [Panelu klienta OVHcloud](/links/manager)
 
 > [!primary]
 > W przypadku problemów z logowaniem do konta, zapoznaj się z sekcją "[Nie mogę się zalogować](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure)" w przewodniku "[Logowanie do Panelu klienta OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login)".
@@ -66,7 +66,7 @@ Następnie w ramce `Mój profil` kliknij przycisk `...`{.action} a następnie `E
 > [!warning]
 > Przypominamy, że **ważne** jest, aby zapasowy adres e-mail był **inny** niż główny adres e-mail przypisany do konta.
 >
-> Unikaj korzystania z kont e-mail powiązanych z domeną, którą zarządzasz w Panelu klienta. W przypadku awarii tej domeny nie otrzymasz już naszych powiadomień.
+> Unikaj korzystania z kont e-mail powiązanych z domeną, którą zarządzasz w Panelu klienta. W przypadku awarii tej domeny nie otrzymasz już naszych powiadomień. W takiej sytuacji postępuj zgodnie z [procedurami opisanymi w tym przewodniku](/pages/account_and_service_management/account_information/ovhcloud-account-login#invalid-email).
 >
 
 #### Włącz weryfikację dwuetapową
@@ -82,7 +82,7 @@ Wszystkie informacje, które chcesz aktywować w przewodniku "[Zabezpieczenie ko
 
 #### Zmiana danych osobowych
 
-Możesz zmienić informacje o swoim koncie w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W tym celu kliknij Twoją nazwę w prawym górnym rogu Panelu klienta, a następnie swoje inicjały.
+Możesz zmienić informacje o swoim koncie w Panelu [klienta OVHcloud](/links/manager). W tym celu kliknij Twoją nazwę w prawym górnym rogu Panelu klienta, a następnie swoje inicjały.
 
 Kliknij przycisk `...`{.action} w ramce `Mój profil`, a następnie `Edytuj profil`{.action}.
 
@@ -126,7 +126,6 @@ Możesz zażądać usunięcia konta OVHcloud i powiązanych z nim danych, wypeł
 > Usunięcie konta OVHcloud wymaga spełnienia następujących warunków:
 >
 > - Twoje konto nie może zawierać żadnej usługi;
->
 > - na koncie nie ma żadnej nieopłaconej faktury lub zamówienia.
 >
 
@@ -154,13 +153,13 @@ Więcej informacji znajdziesz w [przewodniku dotyczącym zarządzania użytkowni
 
 #### Zarządzanie kontaktami
 
-Zarządzanie administracyjne **lub** techniczne **lub** księgowe jedną lub kilkoma usługami w ramach konta można przekazać innemu identyfikatorowi klienta. Aby dowiedzieć się więcej, zapoznaj się z [przewodnikiem dotyczącym zarządzania kontaktami](/pages/account_and_service_management/account_information/managing_contacts).
+Zarządzanie administracyjne **lub** techniczne **lub** księgowe jedną lub kilkoma usługami w ramach konta można przekazać innemu kontu OVHcloud. Aby dowiedzieć się więcej, zapoznaj się z [przewodnikiem dotyczącym zarządzania kontaktami](/pages/account_and_service_management/account_information/managing_contacts).
 
 ### Co zrobić w przypadku podejrzenia kradzieży tożsamości?
 
 Jeśli otrzymasz e-mail informujący o nieznanym logowaniu do panelu klienta, zalecamy natychmiastową [zmianę hasła do konta](/pages/account_and_service_management/account_information/manage-ovh-password#zmiana-hasla) i [zabezpieczenie konta weryfikacją dwuetapową](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
 
-Jeśli zauważysz podejrzaną aktywność na koncie, [skontaktuj się z zespołem OVHcloud](https://www.ovh.com/fr/support/nous-contacter/) na dzień 71 750 02 00, aby nasi pracownicy mogli Ci pomóc w podjęciu odpowiednich kroków.
+Jeśli zauważysz podejrzaną aktywność na koncie, [skontaktuj się z zespołem OVHcloud](https://www.ovhcloud.com/pl/contact/) na dzień 71 750 02 00, aby nasi pracownicy mogli Ci pomóc w podjęciu odpowiednich kroków.
 
 ## Sprawdź również
 
