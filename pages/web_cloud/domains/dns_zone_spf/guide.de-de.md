@@ -148,28 +148,28 @@ Mit dem Konfigurationsassistenten können Sie Ihren SPF-Eintrag nach Ihren Bedü
 
 ![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_add_entry_personnalize_step1.png){.thumbnail .w-400}
 
-- **Subdomain** : füllen Sie dies aus, wenn der SPF-Eintrag auf eine Subdomain Ihrer Domain angewendet werden soll, das heißt, wenn Sie E-Mails von einer Subdomain aus versenden.
-- **TTL** : Dies ist die Propagationszeit, die für die Konfiguration dieses DNS Eintrags gelten soll.
-- **Der IP-Adresse den Versand von E-Mails erlauben.** : Kann notwendig sein, wenn Ihre Website und Ihre E-Mail-Accounts auf einem Server mit der gleichen IP-Adresse gehostet werden (zum Beispiel auf Ihrem Dedicated Server).
-- **Den MX Servern den Versand von E-Mails erlauben.** : Wählen Sie diese Option, wenn Server, die Ihre E-Mails empfangen, diese auch versenden können.
-- **Allen Servern, deren Name mit Ihrer Domain endet, den Versand von E-Mails erlauben.** : Diese Option muss mit Vorsicht genutzt werden, da sie eine sehr breite Legitimation der Absenderquellen mit Ihrer Domain ermöglicht.
+- **Subdomain**: Füllen Sie dies aus, wenn der SPF-Eintrag auf eine Subdomain Ihrer Domain angewendet werden soll, das heißt, wenn Sie E-Mails von einer Subdomain aus versenden.
+- **TTL**: Dies ist die Propagationszeit, die für die Konfiguration dieses DNS-Eintrags gelten soll.
+- **Der IP-Adresse den Versand von E-Mails erlauben.**: Kann notwendig sein, wenn Ihre Website und Ihre E-Mail-Accounts auf einem Server mit der gleichen IP-Adresse gehostet werden (zum Beispiel auf Ihrem Dedicated Server).
+- **Den MX Servern den Versand von E-Mails erlauben.**: Wählen Sie diese Option, wenn Server, die Ihre E-Mails empfangen, diese auch versenden können.
+- **Allen Servern, deren Name mit Ihrer Domain endet, den Versand von E-Mails erlauben.**: Diese Option muss mit Vorsicht genutzt werden, da sie eine sehr breite Legitimation der Absenderquellen mit Ihrer Domain ermöglicht.
 
 /// details | "**Versenden andere Server die Mails Ihrer Domain?**"
 
-- **a** : geben Sie hier die Domains ein. Dies erlaubt den Servern, die die Websites mit den angegebenen Domains hosten, E-Mails von Ihren Adressen zu versenden.
-- **mx** : geben Sie hier die Server an, die Ihre E-Mails empfangen (MX-Server), falls diese auch versenden können. Sie werden dann als legitimer Absender eingestuft.
-- **ptr** : geben Sie hier die Hostnamen an, deren *DNS Reverse* aktiv ist (durch einen PTR-Eintrag in der DNS-Zone). Sie werden dann als legitimer Absender eingestuft.
-- **ip4** : geben Sie die IP-Adressen oder IP-Bereiche (IPv4) ein, die zum Senden von E-Mails mit Ihren Adressen autorisiert sind.
-- **ip6** : geben Sie die IP-Adressen oder IP-Bereiche (IPv6) ein, die zum Senden von E-Mails mit Ihren Adressen autorisiert sind.
-- **include** : Geben Sie hier Domains ein, die eigene SPF-Regeln haben, um deren SPF-Eintrag für Ihre Domain zu nutzen. Zum Beispiel wendet OVHcloud diese Methode für die SPF-Konfiguration an: "v=spf1 include:mx.ovh.com ~all". Somit kann OVHcloud den SPF von mx.ovh.com verwalten und Kunden ermöglichen, diesen für ihre Dienste zu verwenden.
+- **a**: Geben Sie hier die Domains ein. Dies erlaubt den Servern, die die Websites mit den angegebenen Domains hosten, E-Mails von Ihren Adressen zu versenden.
+- **mx**: Geben Sie hier die Server an, die Ihre E-Mails empfangen (MX-Server), falls diese auch versenden können. Sie werden dann als legitimer Absender eingestuft.
+- **ptr**: Geben Sie hier die Hostnamen an, deren *DNS Reverse* aktiv ist (durch einen PTR-Eintrag in der DNS-Zone). Sie werden dann als legitimer Absender eingestuft.
+- **ip4**: Geben Sie die IP-Adressen oder IP-Bereiche (IPv4) ein, die zum Senden von E-Mails mit Ihren Adressen autorisiert sind.
+- **ip6**: Geben Sie die IP-Adressen oder IP-Bereiche (IPv6) ein, die zum Senden von E-Mails mit Ihren Adressen autorisiert sind.
+- **include**: Geben Sie hier Domains ein, die eigene SPF-Regeln haben, um deren SPF-Eintrag für Ihre Domain zu nutzen. Zum Beispiel wendet OVHcloud diese Methode für die SPF-Konfiguration an: "v=spf1 include:mx.ovh.com ~all". Somit kann OVHcloud den SPF von mx.ovh.com verwalten und Kunden ermöglichen, diesen für ihre Dienste zu verwenden.
 
 ///
 
 /// details | "**Umfassen die von Ihnen gemachten Angaben sämtliche Hosts, die E-Mails Ihrer Domain versenden?**"
 
-- **Ja, ich bin mir dessen sicher** : stellt ein, dass Server, die E-Mails von Ihrer Domain empfangen, diese ablehnen, wenn sie von einer nicht-legitimen (im SPF nicht enthaltenen) Quelle stammen.
-- **Ja, aber dennoch den Safe Mode verwenden** : stellt ein, dass Server, die E-Mails von Ihrer Domain empfangen, diese akzeptieren, auch wenn sie von einer nicht-legitimen (in Ihrem SPF nicht genannten) Quelle stammen, sie aber als möglicherweise illegitim kennzeichnen (zum Beispiel als Spam).
-- **Nein** : Stellt ein, dass Server, die E-Mails von Ihrer Domain empfangen, diese ohne besondere Aktion akzeptieren, wenn sie von einer nicht-legitimen (in Ihrem SPF nicht genannten) Quelle stammen. Der E-Mail-Header wird jedoch inkrementiert.
+- **Ja, ich bin mir dessen sicher**: Stellt ein, dass Server, die E-Mails von Ihrer Domain empfangen, diese ablehnen, wenn sie von einer nicht-legitimen (im SPF nicht enthaltenen) Quelle stammen.
+- **Ja, aber dennoch den Safe Mode verwenden**: Stellt ein, dass Server, die E-Mails von Ihrer Domain empfangen, diese akzeptieren, auch wenn sie von einer nicht-legitimen (in Ihrem SPF nicht genannten) Quelle stammen, sie aber als möglicherweise illegitim kennzeichnen (zum Beispiel als Spam).
+- **Nein**: Stellt ein, dass Server, die E-Mails von Ihrer Domain empfangen, diese ohne besondere Aktion akzeptieren, wenn sie von einer nicht-legitimen (in Ihrem SPF nicht genannten) Quelle stammen. Der E-Mail-Header wird jedoch inkrementiert.
 
 ///
 
@@ -227,7 +227,7 @@ Falls Sie zusätzlich einen [Webhosting E-Mail-Dienst verwenden](#ovhcloudspfval
 mydomain.ovh IN TXT "v=spf1 ip4:203.0.113.099 ip6:2001:db8:88:b999::1000:2233 include:mx.ovh.com ~all"
 ```
 
-/// Details | Wie erhalte ich die IP-Adressen eines Private Exchange Servers ?
+/// Details | Wie erhalte ich die IP-Adressen eines Private Exchange Servers?
 
 Um die IP-Adressen des Private Exchange Servers abzurufen, klicken Sie auf `Microsoft`{.action} und dann auf `Exchange`{.action}. Klicken Sie dann auf den Namen des betreffenden Private Exchange Dienstes.
 
