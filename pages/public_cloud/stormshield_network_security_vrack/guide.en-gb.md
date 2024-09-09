@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial on Stormshield Network Security: securing your OVHcloud infrastructure'
 excerpt: 'Find out how to securing your OVHcloud infrastructure with Stormshield Network Security'
-updated: 2024-08-08
+updated: 2024-09-08
 ---
 
 ## Objective
@@ -21,14 +21,6 @@ In today's rapidly evolving digital landscape, securing cloud infrastructure has
 
 ## Instructions
 
-In addition to the installation and configuration of Stormshield Network Security, this tutorial offers different use cases based on your needs :
-
-- [Install and configure Stormshield Network Security on your Public Cloud environment](#step1)
-- [Usecase 1 : configure Stormshield to be used as a gateway](#step2)
-- [Usecase 2 : configure a NAT to access a private HTTP service from outside](#step3)
-- [Usecase 3 : IPsec tunnel (site-to-site)](#step4)
-- [Usecase 4 : SSL/TLS VPN (client-to-site)](#step5)
-
 ### Install and configure Stormshield Network Security on your Public Cloud environment <a name="step1"></a>
 
 > [!primary]
@@ -38,11 +30,19 @@ In addition to the installation and configuration of Stormshield Network Securit
 
 #### Configure your vRack
 
-Add your public cloud project to your vRack by following the guide [Configuration du vRack Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
+In this step, we are configuring the vRack, a private virtual network provided by OVHcloud. The vRack allows you to interconnect multiple instances or servers within a Public Cloud environment, ensuring network isolation while maintaining secure communication. By adding your Public Cloud project and your IP block to the same vRack, you can enable your Stormshield instances to communicate securely, while keeping full control over IP address management.
+
+**Add your public cloud project and your IP block to the same vRack**
+
+In this guide sample, the IP block is `147.135.161.152/29`.
+We use the first usable IP `147.135.161.153` for the first instance of Stormshield and use temporally the second usable IP `147.135.161.154` for the second Stormshield.
+The gateway address is `147.135.161.158`.
+
+Please refer to the guide [Configuring an IP block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack) for more information.
 
 Below is the architecture that we are going to set-up.
 
-![SNS](./images/stormshield-ha-pci.png)
+![SNS vrack](./images/stormshield-ha-rtvrack.png)
 
 #### Configure OpenStack networking
 
@@ -53,17 +53,17 @@ openstack network create --provider-network-type vrack --provider-segment 0 --di
 ```
 
 ```console
-openstack subnet create --network stormshield-ext --subnet-range <ip_address>/<range> --dhcp stormshield-ext
+openstack subnet create --network stormshield-ext --subnet-range 192.168.1.0/29 --dhcp stormshield-ext
 ```
 
-* Create the private network for the Stormshield internal interfaces :
+* Create the private network for the Stormshield internal interfaces:
 
 ```console
 openstack network create --provider-network-type vrack --provider-segment 200 --disable-port-security stormshield-vlan200
 ```
 
 ```console
-openstack subnet create --network stormshield-vlan200 --subnet-range <ip_address>/<range> --dhcp --dns-nameserver <ip_address> stormshield-vlan200
+openstack subnet create --network stormshield-vlan200 --subnet-range 10.200.0.0/16 --dhcp --dns-nameserver <dns_address_ip> stormshield-vlan200
 ```
 
 * Create the private network for the Stormshield HA (**H**igh **A**vailability) interfaces :
@@ -73,29 +73,7 @@ openstack network create --provider-network-type vrack --provider-segment 199 --
 ```
 
 ```console
-openstack subnet create --network stormshield-ha --subnet-range <ip_address>/<range> --dhcp --gateway none stormshield-ha
-```
-
-* Create a gateway for the stormshield-ext network :
-
-```console
-openstack router create --external-gateway Ext-Net stormshield-ext
-```
-
-* Plug the router to our private network (Stormshield ext) :
-
-```console
-openstack router add subnet stormshield-ext stormshield-ext
-```
-
-* Create a "standalone port" and associate a public floating IP to this port :
-
-```console
-openstack port create --disable-port-security --network stormshield-ext stormshield-ext
-```
-
-```console
-openstack floating ip create --port stormshield-ext Ext-Net   
+openstack subnet create --network stormshield-ha --subnet-range 192.168.2.0/29 --dhcp --gateway none stormshield-ha
 ```
 
 #### Deploy the Stormshield instances
@@ -126,21 +104,19 @@ openstack server create --flavor b2-15 --image stormshield-SNS-EVA-4.7.6 --netwo
 
 Log into your OVHcloud client area, go to the Public Cloud section, and select the relevant Public Cloud project. In the left menu, click on `Instances` under the `Compute` section, then find your two Stormshield instances.
 
-![SNS](./images/instances-list-public-cloud.png)
-
 Access the VNC console for both Stormshield instances and configure the keyboad layout and the password.
 
-* Configure the default gateway with our stormshield-ext gateway IP on the first stormshield :
+* Configure the default gateway on the first Stormshield with our IP block gateway :
 
 ```console
 vi /usr/Firewall/ConfigFiles/object
 
 [Host]
-Firewall_out_router=<ip_address>,resolve=static
+Firewall_out_router=147.135.161.158,resolve=static
 ...
 ```
 
-* Configure the external network interface on the first Stormshield with the stormshield-ext standalone port private IP and the internal network interface with the IP address :
+* Configure the external network interface on the first Stormshield with the first usable IP address of our IP block and the internal network interface with the `10.200.0.1` IP address :
 
 ```console
 vi /usr/Firewall/ConfigFiles/network
@@ -148,94 +124,47 @@ vi /usr/Firewall/ConfigFiles/network
 ...
 [ethernet0]
 ...
-Address=<ip_address>
-Mask=255.255.255.0
+Address=147.135.161.153
+Mask=255.255.255.248
 
 [ethernet1]
 ...
-Address=<ip_address>
+Address=10.200.0.1
 Mask=255.255.0.0
 ...
 ```
 
-* Apply the new network configuration :
+* Apply the new network configuration
 
 ```console
 ennetwork
 ```
 
-* Configure the default gateway with our stormshield-ext gateway IP on the second stormshield :
-
-```console
-vi /usr/Firewall/ConfigFiles/object
-
-[Host]
-Firewall_out_router=192.168.1.1,resolve=static
-...
-```
-
-* Configure the internal network interface of the second stormshield with the IP address :
-
-```console
-vi /usr/Firewall/ConfigFiles/network
-
-...
-[ethernet1]
-...
-Address=<ip_address>
-Mask=255.255.0.0
-...
-```
-
-* Apply the new network configuration :
-
-```console
-ennetwork
-```
-
-* Add a floating IP temporary to the external interface of the second stormshield :
-
-Get the ID of the port:
-
-```console
-openstack port list --server stormshield-2 --network stormshield-ext
-```
-
-Assign a public floating IP to the second stormshield external port :
-
-```console
-openstack floating ip create --port 9f25bff6-9034-470f-b974-c8ec9d2c0d4a Ext-Net
-```
-
-You can now connect to the two stormshield web GUI (**G**raphic **U**ser **I**nterface) using the standalone port floating IP for the first one and the floating IP we just created for the second one.
+* Do the same configuration for the second Stormshield but with the second IP address `147.135.161.154` of our IP block for the external interface instead of `147.135.161.153`.
 
 * Add a different license on both Stormshield instances by following the [official documentation](https://documentation.stormshield.eu/SNS/v4/en/Content/Installation_and_first_time_configuration/Firewall_license_installation.htm){.external}.
 
 * Create a firewall rule similar to this on both Stormshield in the web GUI :
 
-![SNS](./images/ha-filter.png)
+![SNS vrack](./images/ha-filter.png)
 
-* On the first Stormshield instance, create a group of firewalls (Configuration -> System -> High Availability). For the IP address, check which IP was assign to the HA interface by the OpenStack DHCP :
+* On the first Stormshield, create a group of firewalls (Configuration -> System -> High Availability). For the IP address, check which IP was assign to the HA interface by the OpenStack DHCP.
 
-![SNS](./images/ha-1.png)
+![SNS vrack](./images/ha-1.png)
 
-![SNS](./images/ha-2.png)
+![SNS vrack](./images/ha-2.png)
 
-* When the configuration of the HA is finished on the first Stromshield, join the firewalls group on the second one :
+* When the configuration of the HA is finished on the first Stromshield. Join the firewalls group on the second one :
 
-![SNS](./images/ha-3.png)
+![SNS vrack](./images/ha-3.png)
 
-![SNS](./images/ha-4.png)
+![SNS vrack](./images/ha-4.png)
 
-The second Stormshield external interface will now use the same IP than the first Stormshield. Therefore we can delete the second stormshield floating IP :
+The second Stormshield external interface will now use the same IP address than the first Stormshield. Therefore the `147.135.161.154` IP address can be used for something else now.
 
-```console
-openstack floating ip delete <ip_address>
-```
+If everything is configured properly, after the reboot of the second Stormshield, you should see something similar to this in the Health Indicators of the HA Link:
 
-If everything was configured properly, after the reboot of the second Stormshield, you should see something similar to this in the Health Indicators of the HA Link:
-
-![SNS](./images/ha-5.png)
+![SNS vrack](./images/ha-5.png)
 
 #### Configure and secure the Stormshield management
 
@@ -251,17 +180,17 @@ If everything was configured properly, after the reboot of the second Stormshiel
 > **Step 2**
 >>
 >> Create a host object for your public IP :
->>![SNS](./images/configure-management-1.png)
+>>![SNS vrack](./images/configure-management-1.png)
 >>
 > **Step 3**
 >>
 >> Limit the access to the GUI to your public IP and enable SSH :
->> ![SNS](./images/configure-management-2.png)
+>> ![SNS vrack](./images/configure-management-2.png)
 >>
 > **Step 4**
 >>
 >> Limit the access to the SSH to your public IP
->> ![SNS](./images/configure-management-3.png)
+>> ![SNS vrack](./images/configure-management-3.png)
 
 ##### Re-synchronize the HA configuration
 
@@ -290,17 +219,17 @@ Thanks to the vRack private network, listed VLANs can also be used outside Publi
 
 In this example, virtual firewall appliance will act as a secure gateway for private instances (or any other servers) inside VLAN200 of given vRack network. Such traffic can be a subject for URL filtering on the firewall.
 
-![SNS](./images/stormshield-gateway.png)
+![SNS vrack](./images/stormshield-gateway.png)
 
 * Create a network object for the VLAN200 by following this [part of the official Stormshield documentation](https://documentation.stormshield.eu/SNS/v4/en/Content/Stormshield_Network_SSO_Agent_Linux/Configure_Firewall_Objects.htm){.external}.
 
-* [Create a new filter rule](https://documentation.stormshield.com/SNS/v4/en/Content/HowTo_-_IPSec_VPN_-_Authentication_by_certificate/Setup-Main-Site-30-Creating-Filtering-policy.htm){.external} similar to thi one to allow the traffic coming from VLAN200 to go out : 
+* [Create a new filter rule](https://documentation.stormshield.com/SNS/v4/en/Content/HowTo_-_IPSec_VPN_-_Authentication_by_certificate/Setup-Main-Site-30-Creating-Filtering-policy.htm){.external} similar to this one to allow the traffic coming from VLAN200 to go out : 
 
-![SNS](./images/gateway-2.png)
+![SNS vrack](./images/gateway-2.png)
 
 * [Create a NAT rule](https://documentation.stormshield.eu/SNS/v4/en/Content/SNS_for_Cloud_-_VMWare_NSX/NAT-Rules.htm){.external} similar to this one :
 
-![SNS](./images/gateway-3.png)
+![SNS vrack](./images/gateway-3.png)
 
 * Synchronize the two HA stormshield instances :
 
@@ -316,6 +245,7 @@ hasyn
 ```console
 openstack keypair create --public-key ~/.ssh/id_rsa.pub <name>
 ```
+
 
 * Create an instance on VLAN200 :
 
@@ -346,7 +276,7 @@ HTTP/2 200
 
 In this example, Internet should be able to reach-out to the private webserver installed inside VLAN200. The goal of such setup is to protect webserver with network firewall.
 
-![SNS](./images/stormshield-nat-http.png)
+![SNS vrack](./images/stormshield-nat-http.png)
 
 > [!tabs]
 > **Step 1**
@@ -359,17 +289,17 @@ In this example, Internet should be able to reach-out to the private webserver i
 > **Step 2**
 >>
 >> Create a host object for the ubuntu-webserver :
-![SNS](./images/nat-1.png)
+![SNS vrack](./images/nat-1.png)
 >>
 > **Step 3**
 >>
 >> Create a NAT rule like this one :
-![SNS](./images/nat-2.png)
+![SNS vrack](./images/nat-2.png)
 >>
 > **Step 4**
 >>
 >> Create a filter rule like this one :
-![SNS](./images/nat-3.png)
+![SNS vrack](./images/nat-3.png)
 
 * Test to access the website from outside :
 
@@ -389,7 +319,7 @@ hasyn
 
 In this example, IPsec tunnel is configured to interconnect two different PCI regions: SBG7 (network VLAN200) and GRA11 (network VLAN201), but any of those sites can be a remote site like an office or data center.
 
-![SNS](./images/stormshield-ipsec.png)
+![SNS vrack](./images/stormshield-ipsec.png)
 
 * Re-do all the steps in another region using the VLAN 201 instead of the VLAN 200 and different IP ranges for the stormshield-ext and stormshield-ha subnet.
 
@@ -403,26 +333,26 @@ In this example, IPsec tunnel is configured to interconnect two different PCI re
 > **Step 1**
 >>
 >> Add the local and the remote private network :
-![SNS](./images/ipsec-3.png)
+![SNS vrack](./images/ipsec-3.png)
 > **Step 2**
 >>
 >> Create the remote gateway :
-![SNS](./images/ipsec-4.png)
+![SNS vrack](./images/ipsec-4.png)
 >>
 > **Step 3**
 >>
 >> Choose a pre-shared key :
-![SNS](./images/ipsec-5.png)
+![SNS vrack](./images/ipsec-5.png)
 >>
 > **Step 4**
 >>
 >> Create and activate the tunnel :
-![SNS](./images/ipsec-7.png)
+![SNS vrack](./images/ipsec-7.png)
 >>
 > **Step 5**
 >>
 >> Add a filter rule like this one to allow traffic through the tunnel :
-![SNS](./images/ipsec-8.png)
+![SNS vrack](./images/ipsec-8.png)
 
 * Synchronize the two HA stormshield instances :
 
@@ -463,25 +393,25 @@ PING <ip_address> (<ip_address>) 56(84) bytes of data.
 
 In this example, a remote OpenVPN client will connect with private network inside VLAN200.
 
-![SNS](./images/stormshield-ssl-vpn.png)
+![SNS vrack](./images/stormshield-ssl-vpn.png)
 
 ##### Configuring the LDAP directory
 
 * [Create a internal LDAP directory](https://documentation.stormshield.eu/SNS/v4/en/Content/User_Configuration_Manual_SNS_v4/Directory_configuration/Creating_an_internal_LDAP.htm){.external} to manage the VPN users. In a production scenario, this LDAP/AD should be remote and not local.
 
-![SNS](./images/ssl-vpn-1.png)
+![SNS vrack](./images/ssl-vpn-1.png)
 
 * Create the user directory :
 
-![SNS](./images/ssl-vpn-2.png)
+![SNS vrack](./images/ssl-vpn-2.png)
 
 * Add a user to our local directory :
 
-![SNS](./images/ssl-vpn-3.png)
+![SNS vrack](./images/ssl-vpn-3.png)
 
 * Choose a password for the new user :
 
-![SNS](./images/ssl-vpn-4.png)
+![SNS vrack](./images/ssl-vpn-4.png)
 
 ##### Configuring VPN network objects
 
@@ -489,17 +419,17 @@ In this example, a remote OpenVPN client will connect with private network insid
 
 UDP client network :
 
-![SNS](./images/ssl-vpn-5.png)
+![SNS vrack](./images/ssl-vpn-5.png)
 
 TCP client newtwork :
 
-![SNS](./images/ssl-vpn-6.png)
+![SNS vrack](./images/ssl-vpn-6.png)
 
 ##### SSL VPN server configuration
 
 * Configure the SSL VPN server :
 
-![SNS](./images/ssl-vpn-7.png)
+![SNS vrack](./images/ssl-vpn-7.png)
 
 ##### Managing user permissions
 
@@ -507,17 +437,17 @@ TCP client newtwork :
 
 * Search your user :
 
-![SNS](./images/ssl-vpn-8.png)
+![SNS vrack](./images/ssl-vpn-8.png)
 
 * Allow SSL VPN :
 
-![SNS](./images/ssl-vpn-9.png)
+![SNS vrack](./images/ssl-vpn-9.png)
 
 ##### Configuring filter rules
 
 * Add a filter rule like this one to let VPN client access the VLAN200 :
 
-![SNS](./images/ssl-vpn-10.png)
+![SNS vrack](./images/ssl-vpn-10.png)
 
 ##### Synchronization of Stormshield instances
 
@@ -580,4 +510,3 @@ PING <ip_address> (<ip_address>) 56(84) bytes of data.
 ```
 
 ## Go further
-
