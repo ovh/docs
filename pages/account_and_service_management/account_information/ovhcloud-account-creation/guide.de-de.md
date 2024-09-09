@@ -56,7 +56,7 @@ Ihr Account wird angelegt und Sie werden automatisch auf der Startseite ("Dashbo
 Jeder OVHcloud Kunden-Account ist mit einer individuellen Kundenkennung verbunden, unter Umständen auch als *NIC-handle* oder Benutzername bezeichnet.
 
 Sie besteht in der Regel aus zwei Buchstaben gefolgt von Ziffern. Zum Beispiel: **xx11111-ovh**.<br>
-Bei den meisten Accounts außerhalb Europas wird diese häufig durch die im OVHcloud Account angegebene Haupt-E-Mail-Adresse ersetzt.
+Bei den meisten Accounts außerhalb Europas wird diese häufig durch die im OVHcloud Kunden-Account angegebene Haupt-E-Mail-Adresse ersetzt.
 
 Diese Kundenkennung erlaubt Ihnen:
 
