@@ -55,7 +55,7 @@ Connectez-vous à votre [espace client](/links/manager), cliquez sur votre nom e
 
 Cliquez alors sur le bouton `Éditer mon profil`{.action}, dans le cadre `Mon profil`.
 
-Vous aurez ainsi accès aux informations personnelles de votre compte. Faites défiler l'écran jusqu'à la rubrique `Vos activité` pour trouver le champ `N° SIRET`. Une fois votre numéro renseigné, cliquez sur le bouton `Enregistrer les modifications`{.action}.
+Vous aurez ainsi accès aux informations personnelles de votre compte. Faites défiler l'écran jusqu'à la rubrique `Votre activité` pour trouver le champ `N° SIRET`. Une fois votre numéro renseigné, cliquez sur le bouton `Enregistrer les modifications`{.action}.
 
 > [!success]
 > **Où trouver mon numéro SIRET ?**
