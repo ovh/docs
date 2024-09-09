@@ -1,7 +1,7 @@
 ---
 title: "Modifier les serveurs DNS d'un nom de domaine OVHcloud"
 excerpt: "Découvrez comment modifier les serveurs DNS de votre nom de domaine enregistré chez OVHcloud"
-updated: 2024-09-03
+updated: 2024-09-09
 ---
 
 ## Objectif
@@ -31,7 +31,7 @@ Consultez nos guides « [Tout savoir sur les serveurs DNS](/pages/web_cloud/doma
 
 > [!alert]
 >
-> **Faites attention lorsque vous modifiez les serveurs DNS d’un nom de domaine.**
+> **Soyez vigilant lorsque vous modifiez les serveurs DNS d’un nom de domaine.**
 >
 > Une erreur de manipulation peut rendre votre site web inaccessible ou empêcher vos adresses de messagerie de recevoir de nouveaux e-mails. Comprendre les conséquences d’une telle modification vous permettra de mieux appréhender les changements que vous allez opérer.
 
