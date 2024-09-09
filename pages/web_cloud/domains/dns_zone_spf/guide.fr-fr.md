@@ -40,8 +40,10 @@ Vous devrez donc vous assurer de mettre dans l'enregistrement SPF les sources d'
 
 **Exemple**
 
-Vous envoyez un e-mail depuis votre adresse `contact@mydomain.ovh`.<br>
-Seul le serveur sortant **A** (Outgoing Mail Server **A**) est déclaré dans l'enregistrement SPF du nom de domaine `mydomain.ovh`.<br>
+Vous envoyez un e-mail depuis votre adresse `contact@mydomain.ovh`.
+
+Seul le serveur sortant **A** (Outgoing Mail Server **A**) est déclaré dans l'enregistrement SPF du nom de domaine `mydomain.ovh`.
+
 Lorsque le serveur de réception (Inbound Mail Server) reçoit l'e-mail, celui-ci va lire la zone DNS de votre nom de domaine `mydomain.ovh` pour inspecter l'enregistrement SPF.
 
 - Le serveur sortant **A** (Outgoing Mail Server **A**) étant bien listé dans l'enregistrement SPF, alors l'e-mail sera transmis normalement dans la boite de réception du destinataire.
@@ -195,7 +197,7 @@ Pour finaliser l'action, cliquez sur `Suivant`{.action}. Assurez-vous que les in
 
 ![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_add_TXT_entry.png){.thumbnail .w-400}
 
-### Modifier un enregistrement SPF
+### Modifier un enregistrement SPF <a name="modifyspf"></a>
 
 Pour modifier le SPF dans la configuration OVHcloud de votre domaine, connectez-vous à votre [espace client OVHcloud](/links/manager){.external}. Rendez-vous dans la section `Noms de domaine`{.action}, cliquez sur le domaine concerné puis rendez-vous ensuite dans l’onglet `Zone DNS`{.action}.
 
@@ -229,18 +231,18 @@ En revanche, la configuration est la suivante si vous souhaitez aussi déclarer 
 mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com a:gw.ex-mail.biz ~all"
 ```
 
-### Configuration SPF OVHcloud pour Private Exchange 
+### Configuration SPF OVHcloud pour Private Exchange
 
 Pour l'offre Private Exchange, il est nécessaire de renseigner les adresses IP de votre serveur e-mail. Pour cela, utilisez l'argument `ip4` pour renseigner l'adresse IPv4 (**A**) et l'argument `ip6` pour l'adresse IPv6 (**AAAA**) de votre serveur Private Exchange.
 
 ```bash
-mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ip6:5555:66a7:88:b999::1000:2233 ~all"
+mydomain.ovh IN TXT "v=spf1 ip4:203.0.113.099 ip6:2001:db8:88:b999::1000:2233 ~all"
 ```
 
 Si vous utilisez également [une offre e-mail mutualisée](#ovhcloudspfvalue), vous pouvez ajouter l'argument `include:mx.ovh.com` à l'enregistrement ci-dessus, ce qui donnera la valeur suivante :
 
 ```bash
-mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ip6:5555:66a7:88:b999::1000:2233 include:mx.ovh.com ~all"
+mydomain.ovh IN TXT "v=spf1 ip4:203.0.113.099 ip6:2001:db8:88:b999::1000:2233 include:mx.ovh.com ~all"
 ```
 
 /// details | Comment récupérer les adresses IP d'un serveur Private Exchange ?
@@ -261,7 +263,7 @@ Dirigez-vous ensuite dans la section `Noms de domaine`{.action}, sélectionnez l
 
 ///
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 [Editer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit){.external}.
 

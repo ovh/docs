@@ -4,15 +4,34 @@ excerpt: "Dowiedz się, jak skonfigurować rekord SPF dla Twojej domeny, aby zwi
 updated: 2023-08-04
 ---
 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+.w-400 {
+  max-width:400px !important;
+}
+</style>
+
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zgłoś propozycję modyfikacji” na tej stronie.
 >
 
 ## Wprowadzenie
 
-SPF (Sender Policy Framework) pozwala serwerowi otrzymującemu wiadomość e-mail upewnić się, że została ona wysłana z zaufanego serwera. 
+SPF (Sender Policy Framework) pozwala serwerowi otrzymującemu wiadomość e-mail upewnić się, że została ona wysłana z zaufanego serwera.
 
-- Pozwala zapobiegać przypadkom podszywania się pod Twoją domenę e-mail (spoofing). 
+/// details | Dlaczego warto uruchomić SPF dla kont e-mail ?
+
+- Pozwala zapobiegać przypadkom podszywania się pod Twoją domenę e-mail (spoofing).
 - Pozwala również na uwierzytelnienie wysłanych wiadomości e-mail.
 - SPF dodaje się jako rekord w strefie DNS domeny.
 
@@ -23,19 +42,24 @@ Operacja ta jest możliwa dzięki informacjom zawartym w rekordzie SPF, który j
 
 W związku z tym upewnij się, że umieściłeś w rekordzie SPF źródła wysyłki, których używasz do wysyłania e-maili z Twoją domeną. Mogą to być Twoje własne serwery e-mail, dostawcy usługi lub rozwiązania poczty elektronicznej OVHcloud.
 
-> **Przykład** <br> 
-> Wysyłasz e-mail na adres `contact@mydomain.ovh`.
-> Tylko serwer poczty wychodzącej **A** (Outgoing Mail Server **A**) jest zarejestrowany w SPF domeny `mojadomena.ovh`.
-> Po otrzymaniu wiadomości e-mail od serwera poczty przychodzącej (Inbound Mail Server) adres e-mail zostanie przeczytany w strefie DNS Twojej domeny `mydomain.ovh` w celu skontrolowania rekordu SPF.
->
-> - Ponieważ w rekordzie SPF znajduje się serwer poczty wychodzącej **A** (Outgoing Mail Server **A**), wiadomość e-mail zostanie wysłana do skrzynki odbiorczej odbiorcy.
-> - Ponieważ serwer poczty wychodzącej **B** (Outgoing Mail Server **B**) nie jest wymieniony w rekordzie SPF, e-mail wysyłany z tego serwera będzie oznaczony jako podejrzany w skrzynce e-mail z recepcją. Może to oznaczać wskazanie `[SPAM]` w temacie wiadomości e-mail, umieszczenie w folderze `Poczta` lub bezpośrednie usunięcie, zgodnie z zasadami serwera odbierającego.
->
-> ![domena](/pages/assets/schemas/emails/spf_records_diagram.png){.thumbnail}
+**Przykład**
+
+Wysyłasz e-mail na adres `contact@mydomain.ovh`.
+
+Tylko serwer poczty wychodzącej **A** (Outgoing Mail Server **A**) jest zarejestrowany w SPF domeny `mojadomena.ovh`.
+
+Po otrzymaniu wiadomości e-mail od serwera poczty przychodzącej (Inbound Mail Server) adres e-mail zostanie przeczytany w strefie DNS Twojej domeny `mydomain.ovh` w celu skontrolowania rekordu SPF.
+
+- Ponieważ w rekordzie SPF znajduje się serwer poczty wychodzącej **A** (Outgoing Mail Server **A**), wiadomość e-mail zostanie wysłana do skrzynki odbiorczej odbiorcy.
+- Ponieważ serwer poczty wychodzącej **B** (Outgoing Mail Server **B**) nie jest wymieniony w rekordzie SPF, e-mail wysyłany z tego serwera będzie oznaczony jako podejrzany w skrzynce e-mail z recepcją. Może to oznaczać wskazanie `[SPAM]` w temacie wiadomości e-mail, umieszczenie w folderze `Poczta` lub bezpośrednie usunięcie, zgodnie z zasadami serwera odbierającego.
+
+![domena](/pages/assets/schemas/emails/spf_records_diagram.png){.thumbnail .w-400}
 
 > [!primary]
 >
 > SPF jest tylko wskazówką dla serwerów otrzymujących e-maile, w tym dla Ciebie. Do tych ostatnich należy stosowanie lub niestosowanie tego, co zostało określone w rekordzie SPF nazw domen, dla których otrzymują wiadomości.
+
+///
 
 **Dowiedz się, jak skonfigurować rekord SPF dla Twojej domeny w OVHcloud.**
 
@@ -56,7 +80,11 @@ W związku z tym upewnij się, że umieściłeś w rekordzie SPF źródła wysy�
 
 ### Sprawdź aktualną konfigurację SPF
 
-Jeśli Twoja domena używa konfiguracji OVHcloud, możesz sprawdzić, czy rekord SPF jest już skonfigurowany dla tej domeny. W tym celu zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external}. W sekcji `Domeny`{.action} wybierz odpowiednią domenę. Kliknij zakładkę `Strefa DNS`{.action}.
+Jeśli Twoja domena używa konfiguracji OVHcloud, możesz sprawdzić, czy rekord SPF jest już skonfigurowany dla tej domeny.
+
+/// details | Jak sprawdzić istniejącą konfigurację SPF?
+
+W tym celu zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external}. W sekcji `Domeny`{.action} wybierz odpowiednią domenę. Kliknij zakładkę `Strefa DNS`{.action}.
 
 Pojawi się tabela. Strona pokaże strefę DNS Twojej domeny w OVHcloud. Składają się one z kilku rekordów, które są symbolizowane przez wiersz w tabeli.
 
@@ -66,6 +94,8 @@ Pojawi się tabela. Strona pokaże strefę DNS Twojej domeny w OVHcloud. Składa
 >
 
 W tabeli, aby odnaleźć wiersz odpowiadający SPF OVHcloud, można użyć filtra wyświetlacza. Ponieważ plik może pojawić się w dwóch różnych miejscach, wybierz w rekordzie filtrowania `TXT`{.action} lub `SPF`{.action}, przechodząc z jednego do drugiego, jeśli to konieczne. Dlatego wyświetlanie tabeli może być inne.
+
+![domena](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_check_OVH_configuration.png){.thumbnail .w-400}
 
 - **Zostanie wyświetlony** SPF odpowiadający informacjom o usłudze OVHcloud: Twoja domena używa już konfiguracji OVHcloud. Jeśli nie chcesz już z niego korzystać, zmodyfikuj go na kolejnym etapie.
 
@@ -78,7 +108,7 @@ W tabeli, aby odnaleźć wiersz odpowiadający SPF OVHcloud, można użyć filtr
 > SPF zawsze składa się z następującej formy: "v=spf1 `sources` `qualifieur`". Na przykład, SPF OVHcloud to: "v=spf1 include:mx.ovh.com ~all".
 >
 
-![domena](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_check_OVH_configuration.png){.thumbnail}
+///
 
 ### Konfiguracja rekordu SPF
 
@@ -86,7 +116,7 @@ Aby dodać rekord SPF w konfiguracji OVHcloud Twojej domeny, zaloguj się do [Pa
 
 Aby dodać rekord SPF, kliknij przycisk `Dodaj rekord`{.action}.
 
-![domena](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_add_entry_step1.png){.thumbnail}
+![domena](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_add_entry_step1.png){.thumbnail .w-400}
 
 W oknie, które się wyświetli, pojawi się kilka rekordów DNS. Jeśli chcesz dodać SPF, masz dwie możliwości:
 
@@ -94,7 +124,7 @@ W oknie, które się wyświetli, pojawi się kilka rekordów DNS. Jeśli chcesz 
 - [Dodaj rekord SPF](#spfrecord): dla użytkowników, którzy nie posiadają całego rekordu. Na przykład dysponujesz tylko adresem IP lub nazwą hosta serwera e-mail.
 - [Dodaj rekord TXT](#txtrecord): dla użytkowników, którzy są ostrzeżeni lub mają już pełny wpis. Na przykład, dostawca rozwiązania poczty elektronicznej przekazuje Ci wartość.
 
-![domena](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_add_entry.png){.thumbnail}
+![domena](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_add_entry.png){.thumbnail .w-400}
 
 #### Korzystanie z rekordu SPF OVHcloud <a name="spfrecordovhcloud"></a>
 
@@ -108,7 +138,7 @@ Wybrałeś rekord `SPF`{.action} i chcesz zastosować konfigurację OVHcloud. Po
 
 Kliknij na przycisk `Użyj SPF na hostingu OVHcloud`{.action} na górze okna informacyjnego. Wyświetlą się informacje dotyczące SPF OVHcloud. Kliknij przycisk `Zatwierdź`{.action}, aby przeprowadzić modyfikację.
 
-![domena](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_add_entry_step2.png){.thumbnail}
+![domena](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_add_entry_step2.png){.thumbnail .w-400}
 
 > [!primary]
 >
@@ -123,36 +153,34 @@ Asystent konfiguracji pozwoli Ci na personalizację SPF. W tym celu należy odpo
 
 Będziemy je stopniowo rozwiązywać.
 
-![domena](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_add_entry_personnalize_step1.png){.thumbnail}
+![domena](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_add_entry_personnalize_step1.png){.thumbnail .w-400}
 
-|Szczegóły|Opis|
-|---|---|
-|Subdomena|Uzupełnij, czy SPF ma zastosowanie do subdomeny Twojej domeny. Ma to zastosowanie, jeśli wysyłasz e-maile z subdomeny.|
-|TTL|Jest to czas propagacji, który będzie miał zastosowanie do konfiguracji tego rekordu DNS.|
-|Zezwól IP na wysyłanie e-maili| Sprawdź, czy Twoja strona WWW i konta e-mail są zainstalowane na serwerze korzystającym z tego samego adresu IP (np. na serwerze dedykowanym).|
-|Zezwól serwerom MX na wysyłanie e-maili|Zaznacz, jeśli serwery odbierające Twoje e-maile również wysyłają e-maile.|
-|Zezwól wszystkim serwerom, których nazwa kończy się na Twojej domenie, na wysyłanie e-maili|Opcja, której należy użyć z ostrożnością, ponieważ umożliwia bardzo szerokie uprawnienie źródeł wysyłki z Twojej domeny.|
+- **Subdomena** : uzupełnij, czy SPF ma zastosowanie do subdomeny Twojej domeny. Ma to zastosowanie, jeśli wysyłasz e-maile z subdomeny.
+- **TTL** : jest to czas propagacji, który będzie miał zastosowanie do konfiguracji tego rekordu DNS.
+- **Zezwól IP na wysyłanie e-maili** : sprawdź, czy Twoja strona WWW i konta e-mail są zainstalowane na serwerze korzystającym z tego samego adresu IP (np. na serwerze dedykowanym).
+- **Zezwól serwerom MX na wysyłanie e-maili** : zaznacz, jeśli serwery odbierające Twoje e-maile również wysyłają e-maile.
+- **Zezwalaj wszystkim serwerom, których nazwa jest zakończona nazwą Twojej domeny na wysyłanie e-maili** : opcja ta powinna być używana z zachowaniem ostrożności, ponieważ pozwala na bardzo szerokie uwierzytelnienie źródeł wysyłki Twojej domeny.v
 
-W kwestii: "**Czy inne serwery wysyłają emaile z Twoją domeną?**", możesz dodać kilka elementów:
+/// details | "**Czy inne serwery wysyłają emaile z Twoją domeną?**"
 
-|Szczegóły|Opis|
-|---|---|
-|a|Wpisz tutaj nazwy domen. Uprawni to serwery hostujące strony WWW OVHcloud do wysyłania e-maili z Twoich adresów.|
-|mx|Wpisz tutaj serwery, które odbierają Twoje e-maile (serwery MX), jeśli mogą one również wysyłać e-maile. W ten sposób zostaną one zidentyfikowane jako legalne źródło wysyłki.|
-|rt|Wpisz tutaj hosty, których rewers *jest aktywny* (dzięki rekordowi PTR w strefie DNS). W ten sposób zostaną one zidentyfikowane jako legalne źródło wysyłki.|
-|ip4|Wskaż adresy IP lub zakresy adresów IP (IPv4), które mogą wysyłać e-maile z Twoimi adresami.|
-|ip6|Wskaż adresy IP lub zakresy adresów IP (IPv6), które mogą wysyłać e-maile z Twoimi adresami.|
-|include|Wpisz tutaj nazwy domen zawierające ich własne reguły SPF. Pozwoli to na utworzenie własnych domen. OVHcloud stosuje tę metodę w swojej konfiguracji SPF:  "v=spf1 include:mx.ovh.com ~all", co pozwala OVHcloud na zarządzanie opcją SPF mx.ovh.com i na umożliwienie klientom korzystania z niej.|
+- **a** : wpisz tutaj nazwy domen. Uprawni to serwery hostujące strony WWW OVHcloud do wysyłania e-maili z Twoich adresów.
+- **mx** : wpisz tutaj serwery, które odbierają Twoje e-maile (serwery MX), jeśli mogą one również wysyłać e-maile. W ten sposób zostaną one zidentyfikowane jako legalne źródło wysyłki.
+- **prt** : wpisz tutaj hosty, których rewers *jest aktywny* (dzięki rekordowi PTR w strefie DNS). W ten sposób zostaną one zidentyfikowane jako legalne źródło wysyłki.
+- **ip4** : wskaż adresy IP lub zakresy adresów IP (IPv4), które mogą wysyłać e-maile z Twoimi adresami.
+- **ip6** : wskaż adresy IP lub zakresy adresów IP (IPv6), które mogą wysyłać e-maile z Twoimi adresami.
+- **include** : wpisz tutaj nazwy domen zawierające ich własne reguły SPF. Pozwoli to na utworzenie własnych domen. OVHcloud stosuje tę metodę w swojej konfiguracji SPF:  "v=spf1 include:mx.ovh.com ~all", co pozwala OVHcloud na zarządzanie opcją SPF mx.ovh.com i na umożliwienie klientom korzystania z niej.
 
-Wreszcie pytanie: "**Czy podane przez Ciebie informacje opisują wszystkich hostów wysyłających pocztę z Twoją domeną?**", możliwe są trzy możliwości:
+///
 
-|Szczegóły|Opis|
-|---|---|
-|Tak, jestem pewien|Zalecamy odrzucenie przez serwery odbierające e-maile z Twojej domeny, jeśli pochodzą one z nieuprawnionego źródła (niedostępnego w SPF).|
-|Tak, ale użyć safe mode|Zalecamy, aby serwery poczty przychodzącej z Twojej domeny otrzymywały wiadomości e-mail, które zostały zaakceptowane, jeśli pochodzą z nieuprawnionego źródła (nie zawartego w SPF), ale wpisywały je tak, aby mogły zostać zidentyfikowane jako potencjalnie niezgodne z prawem (na przykład jako "spam").|
-|Nie|Zalecamy, aby serwery odbierające e-maile z Twojej domeny były akceptowane, jeśli pochodzą z nieuprawnionego źródła (nie zawartego w SPF), bez podejmowania żadnych działań. Nagłówek e-maila zostanie jednak zwiększony.|
+/// details | "**Czy podane przez Ciebie informacje opisują wszystkich hostów wysyłających pocztę z Twoją domeną?**"
 
-Po podaniu informacji, kliknij „Dalej”, po czym sprawdź czy wyświetlone informacje są poprawne, i następnie kliknij „Zatwierdź”. 
+- **Tak, jestem pewien** : zalecamy odrzucenie przez serwery odbierające e-maile z Twojej domeny, jeśli pochodzą one z nieuprawnionego źródła (niedostępnego w SPF).|
+- **Tak, ale użyć safe mode** : Zalecamy, aby serwery poczty przychodzącej z Twojej domeny otrzymywały wiadomości e-mail, które zostały zaakceptowane, jeśli pochodzą z nieuprawnionego źródła (nie zawartego w SPF), ale wpisywały je tak, aby mogły zostać zidentyfikowane jako potencjalnie niezgodne z prawem (na przykład jako "spam").
+- **Nie** : zalecamy, aby serwery odbierające e-maile z Twojej domeny były akceptowane, jeśli pochodzą z nieuprawnionego źródła (nie zawartego w SPF), bez podejmowania żadnych działań. Nagłówek e-maila zostanie jednak zwiększony.
+
+///
+
+Po podaniu informacji, kliknij `Dalej`{.action}, po czym sprawdź czy wyświetlone informacje są poprawne, i następnie kliknij `Zatwierdź`{.action}.
 
 > [!primary]
 >
@@ -170,9 +198,9 @@ Aby zakończyć operację, kliknij `Dalej`{.action}. Upewnij się, że wyświetl
 > W związku z wprowadzoną zmianą, należy wziąć pod uwagę czas propagacji, który wynosi od 4 do 24 godzin maksimum. Po tym czasie zmiana będzie aktywna.
 >
 
-![domena](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_add_TXT_entry.png){.thumbnail}
+![domena](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_add_TXT_entry.png){.thumbnail .w-400}
 
-### Zmień rekord SPF
+### Zmień rekord SPF <a name="modifyspf"></a>
 
 Aby zmienić SPF w konfiguracji OVHcloud Twojej domeny, zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external}. Na pasku usług, w sekcji `Domeny`{.action}, kliknij wybraną domenę, następnie przejdź do zakładki `Strefa DNS`{.action}.
 
@@ -192,41 +220,46 @@ Konfiguracja jest następująca:
 mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com ~all"
 ```
 
-### Konfiguracja SPF OVHcloud w usłudze Private Exchange 
+### Konfiguracja SPF OVHcloud w usłudze Private Exchange
 
 W przypadku oferty Private Exchange należy podać adresy IP Twojego serwera e-mail. W tym celu należy użyć argumentu `ip4`, aby wprowadzić adres IPv4 (**A**) oraz `ip6`, aby wprowadzić adres IPv6 (**AAAA**) serwera Private Exchange.
 
 ```bash
-mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ip6:5555:66a7:88:b999::1000:2233 ~all"
+mydomain.ovh IN TXT "v=spf1 ip4:203.0.113.099 ip6:2001:db8:88:b999::1000:2233 ~all"
 ```
 
 Jeśli używasz również [oferty e-mail na hostingu](#ovhcloudspfvalue), możesz dodać argument `include:mx.ovh.com` do powyższego rekordu, podając następującą wartość:
 
 ```bash
-mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ip6:5555:66a7:88:b999::1000:2233 include:mx.ovh.com ~all"
+mydomain.ovh IN TXT "v=spf1 ip4:203.0.113.099 ip6:2001:db8:88:b999::1000:2233 include:mx.ovh.com ~all"
 ```
 
-> [!primary]
-> 
-> Aby pobrać adres IP serwera Private Exchange, kliknij `Microsoft`{.action}, a następnie `Exchange`{.action}. Następnie kliknij nazwę odpowiedniej usługi Private Exchange.
->
-> W zakładce `Informacje ogólne`{.action} kliknij na `A` i `AAAA` w sekcji `Diagnostyka serwera`. W wyświetlonym oknie odczytaj wartość.
->
-> ![domena](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/general-information/spf_records_ip.png){.thumbnail}
->
-> Jeśli przyciski `A` i `AAAA` są zielone, adresów IP nie zobaczysz klikając na nie. Dane pobrane ze strefy DNS domeny powiązanej z Twoją platformą Private Exchange. W tym celu pobierz link do interfejsu webmail w zakładce `Informacje ogólne`{.action}, w ramach `Połączenie`.
->
-> ![domena](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/general-information/spf_records_ip2.png){.thumbnail}
->
-> Przejdź następnie do sekcji `Domeny`{.action}, wybierz domenę powiązaną z Twoją platformą Private Exchange, następnie kliknij w zakładkę `Strefa DNS`{.action}. Pobierz adresy IPv4 (rekord `A`) i IPv6 (rekord `AAAA`) odpowiadające adresowi URL interfejsu webmail.
->
-> ![domena](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_ip3.png){.thumbnail}
->
+/// details | Jak uzyskać adresy IP z serwera Private Exchange?
 
-## Sprawdź również
+Aby pobrać adres IP serwera Private Exchange, kliknij `Microsoft`{.action}, a następnie `Exchange`{.action}. Następnie kliknij nazwę odpowiedniej usługi Private Exchange.
+
+W zakładce `Informacje ogólne`{.action} kliknij na `A` i `AAAA` w sekcji `Diagnostyka serwera`. W wyświetlonym oknie odczytaj wartość.
+
+![domena](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/general-information/spf_records_ip.png){.thumbnail .w-400}
+
+Jeśli przyciski `A` i `AAAA` są zielone, adresów IP nie zobaczysz klikając na nie. Dane pobrane ze strefy DNS domeny powiązanej z Twoją platformą Private Exchange. W tym celu pobierz link do interfejsu webmail w zakładce `Informacje ogólne`{.action}, w ramach `Połączenie`.
+
+![domena](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/general-information/spf_records_ip2.png){.thumbnail .w-400}
+
+Przejdź następnie do sekcji `Domeny`{.action}, wybierz domenę powiązaną z Twoją platformą Private Exchange, następnie kliknij w zakładkę `Strefa DNS`{.action}. Pobierz adresy IPv4 (rekord `A`) i IPv6 (rekord `AAAA`) odpowiadające adresowi URL interfejsu webmail.
+
+![domena](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_ip3.png){.thumbnail .w-400}
+
+///
+
+## Sprawdź również <a name="go-further"></a>
 
 [Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit){.external}.
 
 [Zmiana serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_edit){.external}.
+
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
 Dołącz do [grona naszych użytkowników](/links/community).
