@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial on Stormshield Network Security: securing your OVHcloud infrastructure'
 excerpt: 'Find out how to securing your OVHcloud infrastructure with Stormshield Network Security'
-updated: 2024-09-08
+updated: 2024-09-09
 ---
 
 ## Objective
@@ -20,6 +20,14 @@ In today's rapidly evolving digital landscape, securing cloud infrastructure has
 - Stormshield License BYOL (**B**ring **Y**our **O**wn **L**icense) : have a valid Stormshield license, as you will need to provide it during the installation and configuration process.
 
 ## Instructions
+
+In addition to the installation and configuration of Stormshield Network Security, this tutorial offers different use cases based on your needs :
+
+- [Install and configure Stormshield Network Security on your Public Cloud environment](#step1)
+- [Usecase 1 : configure Stormshield to be used as a gateway](#step2)
+- [Usecase 2 : configure a NAT to access a private HTTP service from outside](#step3)
+- [Usecase 3 : IPsec tunnel (site-to-site)](#step4)
+- [Usecase 4 : SSL/TLS VPN (client-to-site)](#step5)
 
 ### Install and configure Stormshield Network Security on your Public Cloud environment <a name="step1"></a>
 
@@ -194,7 +202,7 @@ If everything is configured properly, after the reboot of the second Stormshield
 
 ##### Re-synchronize the HA configuration
 
-At this point, the two Stormshield instances should not be in sync anymore as we configured a lot of parameters on the first instance than the second one is not aware of.
+The synchronization between the two Stormshield instances is crucial to ensure that both firewalls are always up to date with the same configuration. At this point, the two Stormshield instances should not be in sync anymore as we configured a lot of parameters on the first instance than the second one is not aware of.
 
 * Log in to the active Stormshield instance using SSH :
 
