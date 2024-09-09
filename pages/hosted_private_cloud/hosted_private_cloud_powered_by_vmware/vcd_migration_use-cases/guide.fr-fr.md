@@ -31,7 +31,7 @@ Ce document détaille également les prérequis pour chaque cas d'utilisation et
 
 1/ Il est important de vérifier la checklist des cas particuliers ci-dessous avant toutes migrations et vous conformer aux recommandations associées.
 
-2/ Une fois que vous aurez rempli ces exigences en suivant la checklist, vous pouvez vous connecter au manager OVHcloud afin de signer les conditions particulières depuis l'environnement prévu à migrer (T&C). Un bloc affiche le document des conditions particulières et vous permet d'accepter ces conditions en suivant les étapes pour valider la migration et signer les conditions particulières du service.
+2/ Une fois que vous aurez rempli ces exigences en suivant les étapes de la checklist, vous pouvez vous connecter à l'espace client OVHcloud afin de signer les conditions particulières depuis l'environnement prévu à migrer (T&C). Un bloc affiche le document des conditions particulières et vous permet d'accepter ces conditions en suivant les étapes pour valider la migration et signer les conditions particulières du service.
 
 ![VCD Migration](images/vcd_migration.png){.thumbnail}
 
@@ -43,52 +43,49 @@ Vos machines virtuelles resteront opérationnelles pendant la migration, sans te
 
 Cette migration doit s’effectuer sans impact notable pour la plupart des applications, mais nous vous recommandons de les surveiller étroitement tout au long du processus.
 
-### Étape 1 - Migration des environnements Hosted Private Cloud - VMware
+### Étape 1 - Migration de Hosted Private Cloud - VMware
 
 #### Demandes de migration faite avant le 1er septembre 2024
 
 Vous avez demandé à migrer votre environnement actuel VMware chez OVHcloud vers la nouvelle solution managée VCD (VMware Cloud Director).
 
-Nous vous invitons à revoir la démonstration du produit et le webinaire pour vous familiariser avec cette nouvelle offre. Retrouvez également toutes les informations nécessaires sur notre page dédiée à VCD.
+Nous vous invitons à revoir la démonstration du produit et le webinaire pour vous familiariser avec cette nouvelle offre. 
 
-- [Managed VMware Cloud Director by OVHcloud - Demonstration (Video EN)](https://vimeo.com/936590009/b52b3ba8ce)
+Retrouvez également toutes les informations nécessaires sur nos pages dédiées à VCD :
+
+- [Webinar - Managed VMware Cloud Director by OVHcloud (EN)](https://vimeo.com/936590009/b52b3ba8ce)
 - [Webinar - VMware by Broadcom New Offerings and Opportunities (Video EN)](https://www.youtube.com/watch?v=aS2A9AhjnMg)
 - [Product - VMware Cloud Director On OVHcloud Evolution (FR)](https://www.ovhcloud.com/fr/lp/vmware-vcd-evolution/)
 - [OVHcloud Labs - VMware Cloud Director On OVHcloud (EN)](https://labs.ovhcloud.com/en/vmware-cloud-director/)
 
 **Important** : La signature des conditions particulières disponibles depuis début septembre 2024 dans le manager doivent être signé pour que la migration soit réalisée par les équipes OVHcloud.
 
-Les migrations seront effectuées en quatre vagues, à partir du mois d'octobre, selon les services actifs dans votre environnement :
-
-- Environnements sans licence Microsoft Windows, réseau privé OVHcloud vRack ou stockage VMware vSAN ; 
-- Environnements avec licence Microsoft Windows, mais sans réseau privé OVHcloud vRack ni stockage VMware vSAN ; 
-- Environnements avec réseau privé OVHcloud vRack, mais sans stockage VMware vSAN ; 
-- Environnements avec stockage VMware vSAN. 
-
-Au cours de ce processus, vos données resteront dans le même stockage, à l'exception du stockage vSAN. Vos adresses IP resteront inchangées également.
+Les migrations seront effectuées en quatre vagues, à partir du mois d'octobre, selon les services actifs dans votre environnement.
 
 **Le calendrier de migration est prévu comme suit** :
 
-|  Vague  | Mois de migration | Environnements compatibles avec la migration                                                                    |                                                                                                                 
-|:-------:|:-----------------:|:----------------------------------------------------------------------------------------------------------------|
-|    1    |   Octobre 2024    | - Environnements sans licence Microsoft Windows, réseau privé OVHcloud vRack ou stockage VMware vSAN.           |
-|    2    |   Novembre 2024   | - Environnements avec licence Microsoft Windows, mais sans réseau privé OVHcloud vRack ni stockage VMware vSAN. |
-|    3    |   Décembre 2024   | - Environnements avec réseau privé OVHcloud vRack, mais sans stockage VMware vSAN.                              |
-|    4    |   Janvier 2024    | - Environnements avec stockage VMware vSAN.                                                                     |
+| **Vague** | **Mois de migration** | **Environnements compatibles avec la migration**                                                                 |                                                                                                                 
+|:---------:|:---------------------:|:-----------------------------------------------------------------------------------------------------------------|
+|     1     |     Octobre 2024      | - Environnements sans licence Microsoft Windows, réseau privé OVHcloud vRack ou stockage VMware vSAN ;           |
+|     2     |     Novembre 2024     | - Environnements avec licence Microsoft Windows, mais sans réseau privé OVHcloud vRack ni stockage VMware vSAN ; |
+|     3     |     Décembre 2024     | - Environnements avec réseau privé OVHcloud vRack, mais sans stockage VMware vSAN ;                              |
+|     4     |     Janvier 2024      | - Environnements avec stockage VMware vSAN.                                                                      |
+
+Au cours de ce processus, vos données resteront dans le même stockage, à l'exception du stockage vSAN. Vos adresses IP resteront inchangées également.
 
 Un email précisant la date de migration vous sera communiquer au minimum 15 jours avant la migration.
 
-#### Demande de migration après le 1er septembre 2024
+#### Demande de migration après le 1er novembre 2024
 
-La migration de vos environnements actuels VMware chez OVHcloud peuvent être réalisées à votre demande.
-
-Cette migration a les mêmes pré-requis que pour toutes les autres migrations évoquées dans ce guide.
+La migration de vos environnements actuels VMware chez OVHcloud peuvent être réalisées à votre demande. Cette migration a les mêmes pré-requis que pour toutes les autres migrations évoquées dans ce guide.
 
 Il faudra faire la demande à travers un ticket au support vous permettant d'avoir toutes les informations et de signer les T&C.
 
 Ensuite, nous vous informerons de la date de migration et réaliserons la migration.
 
-### Étape 2 - Checklist des cas particuliers de migration
+#### Avant migration
+
+**Checklist des cas particuliers de migration**
 
 /// details | Le tableau ci-dessous vous présente chacun des points bloquants à la migration, ainsi que leur niveau de criticité, qu'il convient de mettre en conformité avant que la migration ne puisse débuter.
 
@@ -106,21 +103,23 @@ Ensuite, nous vous informerons de la date de migration et réaliserons la migrat
 |    **Étape 10**     |      ❌      |      💾 **Zerto (reprise après sinistre)**      |                                                                                                                                                                       | - Si vous utilisez les solutions Zerto (Replication de données pour la reprise d'activé en cas de désastre), vous ne pouvez pas faire fonctionner cette technologie avec VCD (à ce jour).                                                                        | [Mise en place de Zerto Virtual Replication entre deux centres de données OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/zerto_virtual_replication_as_a_service)         |
 |    **Étape 11**     |             |            🆓 **Hosts + Datastore**             | Libération des ressources (hôtes + datastore).                                                                                                                        | - Les ressources (hôtes + datastore) gratuites "Freespare" et à l'heure "Hourly" doivent être libérées avant la migration. <br/> Ou convertit en ressources mensuelles ("Monthly").                                                                              | [Informations de facturation du Hosted Private Cloud](/pages/account_and_service_management/manage_billing_payment_and_services/facturation_private_cloud)                                             |
 
+**Blocage** Empêche toute migration possible vers VCD on OVHcloud.
+
 ///
 
-- **Blockage** : Interrompt toute migration possible vers VCD on OVHcloud si vous avez du multi-vDC, des environnements certifiés, des VM chiffrés, des environnements avec Zerto activé.
+#### Après la migration 
 
-### Étape 3 - Le stockage après la migration (Repo)
+**Le stockage (Repository)**
 
-Après la migration, vous devrez configurer votre nouvelle solution Veeam Backup & Replication selon votre politique de sauvegarde préférée, qui pourra être personnalisée en fonction des niveaux de service suivants :
+Après la migration, vous devrez configurer votre nouvelle solution Veeam Backup & Replication selon votre politique de sauvegarde préférée, qui pourra être personnalisée en fonction des niveaux de service suivants :
 
-- `Bronze Repository` : Standard Object Storage.
-- `Silver Repository` : Standard Object Storage avec copie de sauvegarde hors site.
-- `Gold Repository` : High Performance Object Storage avec copie de sauvegarde hors site et 14 points d’immuabilité
-  or
-- `Bronze Repository` : Ce repository est basé sur la classe OVHcloud Object Storage Standard. Nous utiliserons un bucket le plus proche de votre environnement VCD.
-- `Silver Repository` : Ce repository est basé sur la classe OVHcloud Object Storage Standard. Nous utiliserons un Veeam SOBR (Scale-Out Backup Repository) avec des buckets de niveau de performance plus proches de votre environnement VCD et un niveau de capacité "tier" à partir de buckets d'une autre région OVHcloud. Nous utilisons également le mode de copie Veeam SOBR pour ajouter les sauvegardes des « performance extents » aux « capacity extents » dès leur création.
-- `Gold Repository` : Ce repository est basé sur la classe OVHcloud Object Storage High performance. Il inclut les options précédentes + OVHcloud Object Storage "High performance".
+- `Bronze Repository` : Standard Object Storage (100 To).
+- `Silver Repository` : Standard Object Storage avec copie de sauvegarde hors site (100 To).
+- `Gold Repository` : High Performance Object Storage avec copie de sauvegarde hors site et 14 points d’immuabilités (100 To).
+
+Tous ces repositories ont un quota de stockage de 100 To. Vous pouvez contacter les équipes de support pour augmenter ce quota.
+
+Pour plus d'information, consultez le guide : [VMware Cloud Director - Sauvegarde avec Veeam Data Platform](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-backup)
 
 ## Aller plus loin
 
