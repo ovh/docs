@@ -25,7 +25,7 @@ La console IPMI (Intelligent Platform Management Interface) permette di stabilir
 
 ## Procedura
 
-Per connettersi all’IPMI è possibile utilizzare diversi metodi¹. Ecco una tabella riassuntiva:
+Per connettersi all’IPMI è possibile utilizzare diversi metodi¹. Le chiavi SSH archiviate sul server non saranno utilizzate per queste connessioni. Ecco una tabella riassuntiva:
 
 |Nome Metodo|Altro Nome|Descrizione|Copia-Incolla|Unità ISO Virtuale²|Esempi di casi d'uso|
 |---|---|---|---|---|---|

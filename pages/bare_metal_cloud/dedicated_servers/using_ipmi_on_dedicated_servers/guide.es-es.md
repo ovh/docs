@@ -25,7 +25,7 @@ La consola IPMI (Intelligent Platform Management Interface) permite establecer u
 
 ## Procedimiento
 
-Existen varios métodos para conectarse a IPMI¹. A continuación ofrecemos un resumen:
+Existen varios métodos para conectarse a IPMI¹. Las claves SSH almacenadas en el servidor no se utilizarán para estas conexiones. A continuación ofrecemos un resumen:
 
 |Nombre Método|Nombre alternativo|Descripción|Copiar y pegar|Unidad ISO virtual²|Ejemplos de uso|
 |---|---|---|---|---|---|
