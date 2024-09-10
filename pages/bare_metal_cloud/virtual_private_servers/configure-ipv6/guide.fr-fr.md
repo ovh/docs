@@ -1,7 +1,7 @@
 ---
 title: "Configurer l'IPv6 sur un serveur VPS"
 excerpt: "Apprenez à configurer l'IPv6 sur votre serveur VPS OVHcloud"
-updated: 2024-08-08
+updated: 2024-09-10
 ---
 
 ## Objectif
@@ -196,9 +196,11 @@ sudo cp /etc/network/interfaces.bak /etc/network/interfaces
 
 ##### Configuration à l'aide de Netplan <a name="netplan"></a>
 
-Les fichiers de configuration réseau se trouvent dans le répertoire `/etc/netplan/`. Par défaut, le fichier de configuration principal s'appelle `50-cloud-init.yaml`.
+Les fichiers de configuration du réseau sont situés dans le répertoire `/etc/netplan/`. Par défaut, le fichier de configuration principal est appelé `50-cloud-init.yaml`. Avant de continuer, vérifiez d'abord ce fichier pour voir si l'adresse IPv6 a déjà été configurée. Si c'est le cas, vous n'avez pas besoin de configurer l'adresse IPv6 à nouveau car vous n'avez qu'une seule adresse IPv6 avec votre serveur VPS.
 
-La meilleure approche consiste à créer un fichier de configuration séparé pour configurer les adresses IPv6 dans le répertoire `/etc/netplan/`. De cette façon, vous pouvez facilement revenir sur les changements en cas d'erreur.
+Si l'adresse IPv6 n'a pas été configurée, la meilleure approche est de créer un fichier de configuration séparé pour configurer l'adresse IPv6 dans le répertoire `/etc/netplan/`. De cette façon, vous pouvez facilement revenir sur les modifications en cas d'erreur.
+
+De plus, nous vous recommandons d'ajuster les permissions pour le fichier nouvellement créé. Pour plus d'informations sur les permissions des fichiers, consultez la [documentation officielle d'ubuntu](https://help.ubuntu.com/community/FilePermissions){.external}.
 
 Dans notre exemple, notre fichier est nommé `51-cloud-init-ipv6.yaml` :
 
