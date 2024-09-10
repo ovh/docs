@@ -31,7 +31,7 @@ details[open]>summary::before {
     - [How to log in to your organization](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging)
     - [How to use the VCD user interface](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-getting-started)
 - You must be familiar with how Veeam Backup works. 
-- An understanding of the financial impact following the various load factors that apply when setting up this solution with VCD (see the [pricing grid for Veeam vCD on OVHcloud backups](/links/hosted-private-cloud/vmware/veeam-managed-backup).
+- An understanding of the financial impact following the various load factors that apply when setting up this solution with VCD (see the [pricing grid for Veeam vCD on OVHcloud backups](/links/hosted-private-cloud/veeam-managed-backup).
 
 ## Instructions
 
