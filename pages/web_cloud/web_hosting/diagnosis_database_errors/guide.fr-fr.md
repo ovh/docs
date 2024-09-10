@@ -160,7 +160,7 @@ Dans cette situation, vous pouvez augmenter la [quantité de mémoire RAM](/page
 >
 > Pour délier la base de données, connectez-vous à votre [espace client OVHcloud](/links/manager) et sélectionnez l'onglet `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} puis choisissez l'hébergement web sur lequel le Web Cloud Databases est activé.
 >
-> Dans la zone `Configuration`, cliquez sur le bouton `...`{.action} à droite de l'entrée de la `Web Cloud Databases` puis cliquez sur le bouton `Délier`{.action}.
+> Dans la zone `Configuration`, cliquez sur le bouton `...`{.action} à droite de la mention `Web Cloud Databases`, puis cliquez sur le bouton `Délier`{.action}.
 >
 
 Vous pouvez également optimiser votre base de données en suivant les instructions de notre guide « [Configurer votre serveur de bases de données](/pages/web_cloud/web_cloud_databases/configure-database-server#optimiser-vos-bases-de-donnees) ».
