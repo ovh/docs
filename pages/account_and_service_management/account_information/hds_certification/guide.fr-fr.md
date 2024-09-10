@@ -43,7 +43,7 @@ Clients using HDS products must subscribe to a Business or Enterprise support. T
 | Private Registry | yes | 
 | Cold Storage |  yes | 
 | Logs Data Platform | yes | 
-| Grafana | yes excluding Essential and Discovery plans | 
+| Grafana | yes | 
 | Web Hosting | no | 
 | Platform.sh | no | 
 | Emails on mutualized infrastructures | no |
