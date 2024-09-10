@@ -42,7 +42,7 @@ Sie finden dort auch Informationen zur [Verwaltung mehrerer Schlüssel](/pages/p
 
 ### Schritt 2: Neuen Benutzer-Account einrichten
 
-[Verbinden Sie sich mit Ihrer Instanz](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance) und verwenden Sie die folgenden Befehle, um einen neuen Benutzer-Account und den Ordner `.ssh` zu erstellen:
+[Verbinden Sie sich mit Ihrer Instanz](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) und verwenden Sie die folgenden Befehle, um einen neuen Benutzer-Account und den Ordner `.ssh` zu erstellen:
 
 ```bash
 sudo adduser user2
@@ -124,7 +124,7 @@ Wenn stattdessen eine Fehlermeldung angezeigt wird, können Sie die öffentliche
 
 #### Manuelles Hinzufügen öffentlicher Schlüssel zur Instanz
 
-[Verbinden Sie sich mit Ihrer Instanz](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance) und öffnen Sie die Datei `authorized_keys` im persönlichen Ordner des neuen Benutzers mit Ihrem bevorzugten Texteditor (`nano` wird in diesem Beispiel verwendet):
+[Verbinden Sie sich mit Ihrer Instanz](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) und öffnen Sie die Datei `authorized_keys` im persönlichen Ordner des neuen Benutzers mit Ihrem bevorzugten Texteditor (`nano` wird in diesem Beispiel verwendet):
 
 ```bash
 sudo nano /home/user2/.ssh/authorized_keys

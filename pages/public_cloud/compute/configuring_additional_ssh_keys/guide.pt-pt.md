@@ -41,7 +41,7 @@ Encontrará também informações sobre [a gestão de várias chaves](/pages/pub
 
 ### Etapa 2: configurar uma nova conta de utilizador
 
-[Ligue-se à sua instância](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance) e utilize os comandos abaixo para criar uma nova conta de utilizador e uma pasta `.ssh`:
+[Ligue-se à sua instância](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) e utilize os comandos abaixo para criar uma nova conta de utilizador e uma pasta `.ssh`:
 
 ```bash
 sudo adduser user2
@@ -123,7 +123,7 @@ Se você receber uma mensagem de erro em vez disso, você ainda pode adicionar s
 
 #### Adição manual de chaves públicas à instância
 
-[Ligue-se à sua instância](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance) e abra, com o seu editor de texto preferido (`nano` é utilizado neste exemplo), o ficheiro `authorized_keys` na pasta pessoal do novo utilizador:
+[Ligue-se à sua instância](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) e abra, com o seu editor de texto preferido (`nano` é utilizado neste exemplo), o ficheiro `authorized_keys` na pasta pessoal do novo utilizador:
 
 ```bash
 sudo nano /home/user2/.ssh/authorized_keys

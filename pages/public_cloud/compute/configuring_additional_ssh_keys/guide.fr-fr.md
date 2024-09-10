@@ -37,7 +37,7 @@ Vous y trouverez également des informations sur [la gestion de plusieurs clés]
 
 ### Étape 2 : configurer un nouveau compte utilisateur
 
-[Connectez-vous à votre instance](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance) et utilisez les commandes ci-dessous pour créer un nouveau compte utilisateur et un dossier `.ssh` :
+[Connectez-vous à votre instance](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) et utilisez les commandes ci-dessous pour créer un nouveau compte utilisateur et un dossier `.ssh` :
 
 ```bash
 sudo adduser user2
@@ -119,7 +119,7 @@ Si vous recevez un message d'erreur à la place, vous pouvez toujours ajouter vo
 
 #### Ajout manuel de clés publiques à l'instance
 
-[Connectez-vous à votre instance](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance) et ouvrez, avec votre éditeur de texte préféré (`nano` est utilisé dans cet exemple), le fichier `authorized_keys` dans le dossier personnel du nouvel utilisateur :
+[Connectez-vous à votre instance](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) et ouvrez, avec votre éditeur de texte préféré (`nano` est utilisé dans cet exemple), le fichier `authorized_keys` dans le dossier personnel du nouvel utilisateur :
 
 ```bash
 sudo nano /home/user2/.ssh/authorized_keys

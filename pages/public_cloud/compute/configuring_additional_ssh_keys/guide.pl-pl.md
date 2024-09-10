@@ -42,7 +42,7 @@ Znajdziesz tam również informacje dotyczące [zarządzania wieloma kluczami](/
 
 ### Etap 2: konfiguracja nowego konta użytkownika
 
-[Zaloguj się do instancji](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance) i zastosuj poniższe polecenia, aby utworzyć nowe konto użytkownika oraz katalog `.ssh`:
+[Zaloguj się do instancji](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) i zastosuj poniższe polecenia, aby utworzyć nowe konto użytkownika oraz katalog `.ssh`:
 
 
 ```bash
@@ -125,7 +125,7 @@ Jeśli zamiast tego otrzymasz komunikat o błędzie, nadal możesz dodawać kluc
 
 #### Dodawanie kluczy publicznych do instancji ręcznie
 
-[Zaloguj się do Twojej instancji](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance) i otwórz plik `authorized_keys` w folderze osobistym nowego użytkownika za pomocą wybranego edytora tekstu (w tym przykładzie użyto `nano`):
+[Zaloguj się do Twojej instancji](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) i otwórz plik `authorized_keys` w folderze osobistym nowego użytkownika za pomocą wybranego edytora tekstu (w tym przykładzie użyto `nano`):
 
 ```bash
 sudo nano /home/user2/.ssh/authorized_keys
