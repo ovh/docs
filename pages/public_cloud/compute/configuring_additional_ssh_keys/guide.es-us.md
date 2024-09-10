@@ -38,7 +38,7 @@ Al crear una instancia en el área de cliente, solo puede añadir una llave SSH 
 ### Paso 1: crear un nuevo par de llaves SSH
 
 Si es necesario, utilice nuestra [guía de claves SSH](/pages/public_cloud/compute/creating-ssh-keys-pci) para crear un nuevo par de claves SSH.  
-También encontrará información sobre [la gestión de varias claves](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key) en su estación de trabajo local si su instalación lo requiere.
+También encontrará información sobre [la gestión de varias claves](/pages/public_cloud/compute/creating-ssh-keys-pci#multiplekeys) en su estación de trabajo local si su instalación lo requiere.
 
 ### Paso 2: configurar una nueva cuenta de usuario
 

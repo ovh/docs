@@ -38,7 +38,7 @@ Bei der Erstellung einer Instanz in Ihrem Kundencenter können Sie nur einen SSH
 ### Schritt 1: Neues SSH-Schlüsselpaar erstellen
 
 Verwenden Sie bei Bedarf unsere [Anleitung zu SSH-Schlüsseln](/pages/public_cloud/compute/creating-ssh-keys-pci), um ein neues SSH-Schlüsselpaar zu erstellen.  
-Sie finden dort auch Informationen zur [Verwaltung mehrerer Schlüssel](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key) auf Ihrem lokalen Gerät, falls Ihre Umgebung dies erfordert.
+Sie finden dort auch Informationen zur [Verwaltung mehrerer Schlüssel](/pages/public_cloud/compute/creating-ssh-keys-pci#multiplekeys) auf Ihrem lokalen Gerät, falls Ihre Umgebung dies erfordert.
 
 ### Schritt 2: Neuen Benutzer-Account einrichten
 

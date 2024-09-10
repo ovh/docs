@@ -33,7 +33,7 @@ Lors de la création d'une instance dans votre espace client, vous ne pouvez ajo
 ### Étape 1 : créer une nouvelle paire de clés SSH
 
 Si nécessaire, utilisez notre [guide sur les clés SSH](/pages/public_cloud/compute/creating-ssh-keys-pci) pour créer une nouvelle paire de clés SSH.  
-Vous y trouverez également des informations sur [la gestion de plusieurs clés](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key) sur votre poste de travail local si votre installation l'exige.
+Vous y trouverez également des informations sur [la gestion de plusieurs clés](/pages/public_cloud/compute/creating-ssh-keys-pci#multiplekeys) sur votre poste de travail local si votre installation l'exige.
 
 ### Étape 2 : configurer un nouveau compte utilisateur
 

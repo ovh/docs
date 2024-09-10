@@ -37,7 +37,7 @@ Quando criar uma instância na Área de Cliente, só pode adicionar uma chave SS
 ### Etapa 1: Criar um novo par de chaves SSH
 
 Se necessário, utilize o nosso [guia sobre as chaves SSH](/pages/public_cloud/compute/creating-ssh-keys-pci) para criar um novo par de chaves SSH.  
-Encontrará também informações sobre [a gestão de várias chaves](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key) na sua estação de trabalho local, se a sua instalação o exigir.
+Encontrará também informações sobre [a gestão de várias chaves](/pages/public_cloud/compute/creating-ssh-keys-pci#multiplekeys) na sua estação de trabalho local, se a sua instalação o exigir.
 
 ### Etapa 2: configurar uma nova conta de utilizador
 
@@ -153,7 +153,7 @@ Exemplo:
 ssh user2@203.0.113.102
 ```
 
-Consulte [manual sobre as chaves SSH](/pages/public_cloud/compute/creating-ssh-keys-pci)i para saber mais sobre a utilização das chaves SSH com as instâncias Public Cloud.
+Consulte [manual sobre as chaves SSH](/pages/public_cloud/compute/creating-ssh-keys-pci) i para saber mais sobre a utilização das chaves SSH com as instâncias Public Cloud.
 
 ## Quer saber mais?
 

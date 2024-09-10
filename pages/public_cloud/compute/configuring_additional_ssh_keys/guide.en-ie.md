@@ -33,7 +33,7 @@ When creating an instance in the OVHcloud Control Panel, you can add only one SS
 ### Step 1: Create a new SSH key pair
 
 If necessary, use our [SSH key guide](/pages/public_cloud/compute/creating-ssh-keys-pci) to create a new SSH key pair.  
-You can also find information on [managing multiple keys](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key) on your local device if your setup requires it.
+You can also find information on [managing multiple keys](/pages/public_cloud/compute/creating-ssh-keys-pci#multiplekeys) on your local device if your setup requires it.
 
 ### Step 2: Configure a new user account
 

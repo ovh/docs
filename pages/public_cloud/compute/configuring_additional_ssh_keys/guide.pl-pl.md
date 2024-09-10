@@ -38,7 +38,7 @@ Podczas tworzenia instancji w Panelu klienta możesz dodać tylko jeden klucz SS
 ### Etap 1: tworzenie nowej pary kluczy SSH
 
 Jeśli to konieczne, skorzystaj z naszego [przewodnika dotyczącego kluczy SSH](/pages/public_cloud/compute/creating-ssh-keys-pci), aby utworzyć nową parę kluczy SSH.  
-Znajdziesz tam również informacje dotyczące [zarządzania wieloma kluczami](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key) na Twojej lokalnej stacji roboczej, jeśli wymaga tego instalacja.
+Znajdziesz tam również informacje dotyczące [zarządzania wieloma kluczami](/pages/public_cloud/compute/creating-ssh-keys-pci#multiplekeys) na Twojej lokalnej stacji roboczej, jeśli wymaga tego instalacja.
 
 ### Etap 2: konfiguracja nowego konta użytkownika
 

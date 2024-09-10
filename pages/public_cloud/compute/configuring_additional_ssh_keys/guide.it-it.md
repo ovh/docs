@@ -37,7 +37,7 @@ Durante la creazione di un’istanza dallo Spazio Cliente, è possibile aggiunge
 ### Step 1: crea una nuova coppia di chiavi SSH
 
 Se necessario, utilizza la nostra [guida sulle chiavi SSH](/pages/public_cloud/compute/creating-ssh-keys-pci) per creare una nuova coppia di chiavi SSH.  
-Se necessario, è possibile trovare informazioni su [gestione di più chiavi](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key) anche sulla workstation locale.
+Se necessario, è possibile trovare informazioni su [gestione di più chiavi](/pages/public_cloud/compute/creating-ssh-keys-pci#multiplekeys) anche sulla workstation locale.
 
 ### Step 2: configura un nuovo account utente
 
