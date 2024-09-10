@@ -1561,6 +1561,8 @@
             + [Managing a group of Microsoft 365 OVHcloud licences](web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp1)
             + [Managing a group of OVHcloud Office 365 Reseller licences (CSP2)](web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp2)
             + [Using Remote Desktop with Microsoft 365 apps](web_cloud/email_and_collaborative_solutions/microsoft_office/office_proplus)
+        + [Zimbra](web-cloud-email-collaborative-solutions-zimbra)
+            + [Getting started on Zimbra](web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra)
     + [Internet](products/web-cloud-internet)
         + [Internet access](products/web-cloud-internet-internet-access)
             + [Getting started](web-cloud-internet-internet-access-getting-started)
