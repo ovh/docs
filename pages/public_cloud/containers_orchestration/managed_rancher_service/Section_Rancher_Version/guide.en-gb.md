@@ -1,5 +1,5 @@
 ---
-title: 'Managed Rancher supported versions and lifecycle policiy'
+title: 'Managed Rancher supported versions and lifecycle policy'
 excerpt: 'A complete guide including lifecycle policy, release calendar and supported versions for OVHcloud Managed Rancher Service.'
 updated: 2024-09-09
 ---
