@@ -1,7 +1,7 @@
 --- 
 title: "Pierwsze kroki z ofertą Zimbra"
 excerpt: "Dowiedz się, jak rozpocząć korzystanie z oferty Zimbra z poziomu Panelu klienta OVHcloud"
-Updated: 2024-09-02
+updated: 2024-09-10
 --- 
 
 <style>
@@ -10,7 +10,7 @@ max-width:400px!importante;
 }
 </style>
 
-> [!primary]
+> [!warning]
 >
 > **Ważne**
 >

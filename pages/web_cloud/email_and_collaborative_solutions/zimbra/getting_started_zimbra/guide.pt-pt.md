@@ -1,7 +1,7 @@
 --- 
 title: "Primeiros passos com a oferta Zimbra"
 excerpt: "Descubra como começar com a sua oferta Zimbra a partir da Área de Cliente OVHcloud"
-updated: 2024-09-02
+updated: 2024-09-10
 --- 
 
 <style>
@@ -10,7 +10,7 @@ max-width:400px!importante;
 }
 </style>
 
-> [!primary]
+> [!warning]
 >
 > **Importante*
 >
