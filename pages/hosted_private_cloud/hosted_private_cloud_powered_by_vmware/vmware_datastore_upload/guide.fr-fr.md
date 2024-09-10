@@ -1,45 +1,76 @@
 ---
 title: "Utilisation de l'explorateur de fichiers Datastore"
-excerpt: "Découvrez comment utiliser l'uploader de fichiers Datastore VMware vSphere dédié afin de pouvoir importer des données dans un vSphere managé on OVHcloud"
-updated: 2024-08-21
+excerpt: "Découvrez comment utiliser l'outil de téléchargement de fichiers Datastore VMware vSphere dédié afin de pouvoir importer des données dans un vSphere managé on OVHcloud"
+updated: 2024-09-10
 ---
 
 ## Objectif
 
-**L'objectif est d'uploader des fichiers (ISO, VMDK, OVA etc..) avec le client Web datastore vSphere managé.**
+**L'objectif est de télécharger des fichiers (ISO, VMDK, OVA etc..) dans un répértoire du Datastore avec le client HTML vSphere on OVHcloud.**
 
 ## Prérequis
 
 - Être connecté à [l'espace client OVHcloud](/links/manager)
 - Être administrateur technique de l'infrastructure [VMware on OVHcloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/)
+- Si vous utilisez IAM verifier bien d'avoir les droits, rôles et les actions nécessaires pour téléverser des fichiers ou créer des répertoires dans le Datastore. Vous pouvez vous référer à la partie du guide "#Allez plus loin" pour plus d'informations.
 
 ## En pratique
 
-### Étape 1 - Comment accéder au repertoire de stockage
+### Étape 1 - Accéder au Datastores
 
 #### Via l'espace client
 
-Suivez le guide suivant pour vous connecter l'interface web vSphere : [Se connecter à la console web vSphere](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vsphere_interface_connexion)
+Suivez le guide suivant pour vous connecter l'interface web vSphere : [Se connecter à la console Web vSphere on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vsphere_interface_connexion)
 
-### Étape 2 - Upload d'un ISO dans le datastore
+### Étape 2 - Upload de fichiers (ISO) dans un Datastore
 
-Vous devez ensuite accéder aux repertoires sur lequel vous voulez stocker vos fichiers et ISO. L'objectif étant de créer une arboréscence équilibré afin de retrouver facilement vos éléments au sein de votre cluster vSphere managé.
+**Comment accéder au Datastore** ?
 
-Cliquez sur `Stockage`{.action} dans l'inventaire VMware de votre hôte et cliquez sur `Banques de données`{.action}
+Vous devez ensuite accéder aux repertoires sur lequel vous voulez stocker vos fichiers (ISO par exemple). L'objectif étant de créer une arboréscence afin de retrouver facilement vos éléments au sein de votre vSphere managé.
 
-![Datastore Upload 02](images/datastore_inventory_2.png){.thumbnail}
+![vSphere Home](images/vsphere_home.png){.thumbnail}
 
-![Datastore Upload 01](images/datastore.png){.thumbnail}
+Vous disposez de 2 façons d'y accéder :
 
-Vous retrouverez l'ensemble de vos disques de stockages au sein de votre `Banque de données` et de votre `Clusters de banque de données`.
+1. Depuis `Inventaire` :
 
-![Datastore Upload 03](images/datastore_3.png){.thumbnail}
+|                                   **Image**                                    | **Texte**                                                                     |
+|:------------------------------------------------------------------------------:|:------------------------------------------------------------------------------|
+|  ![vSphere Datastore Upload 01](images/datastore_inventory_2.png){.thumbnail}  | - Cliquez sur `Inventaire`{.action}                                           |
+|        ![vSphere Datastore Upload 01](images/datastore.png){.thumbnail}        | - Puis cliquez sur `Banques de données`{.action} et sur `Datastores`{.action} |
 
-Cliquez sur le disque sur lequel vous voulez importer des données, puis sur `Fichier`{.action} et `Explorateur de banque de données`{.action}
+Vous retrouverez l'ensemble de vos Datastores listés.
 
-Sélectionnez la banque de données dans laquelle vous souhaitez stocker le fichier.
+![vSphere Datastore Inventory](images/inventory_datastore.png){.thumbnail}
 
-(Facultatif) Si vous n'avez pas de préférence, cliquez sur `NOUVEAU DOSSIER`{.action} pour créer un répertoire de banque de données où stocker vos fichiers depuis votre datastore `pcc-XXX-XXX-XXX-XXX`
+Vous allez vous retrouver dans la section `Fichier` ou vous pourrez importer des données dans vos Datastores.
+
+Cliquez ensuite sur `TÉLÉCHARGER DES FICHIERS`{.action} pour sélectionner le fichier à téléverser depuis votre machine local (ISO ou autres).
+
+![Datastore Upload 1](images/datastore_4.png){.thumbnail}
+
+2. Depuis `Listes d'inventaires globaux` :
+
+Qui vous renvoie aussi ensuite à l'interface `Fichers` de téléversement (libre à vous de choisir celle qui vous convient le mieux) :
+
+|                                         **Image**                                         | **Texte**                                             |
+|:-----------------------------------------------------------------------------------------:|:------------------------------------------------------|
+|           ![vSphere Global Inventory](images/global_inventory.png){.thumbnail}            | - Cliquez sur `Listes d'inventaires globaux`{.action} |
+| ![vSphere Global Inventory Datastore](images/global_inventory_datastores.png){.thumbnail} | - Puis sur `Banques de données`{.action}              |             
+
+![vSphere Global Inventory Datastore](images/global_inventory_datastores_2.png){.thumbnail}
+
+Cliquez également sur le `Datastore` souhaité.
+
+Vous allez vous retrouver dans la section `Fichier` ou vous pourrez importer des données dans vos Datastores.
+
+Cliquez ensuite sur `TELECHARGER DES FICHIERS`{.action} pour sélectionner le fichier à téléverser depuis votre machine local (ISO ou autres).
+
+![Datastore Upload 1](images/datastore_4.png){.thumbnail}
+
+**Comment créer un repertoire** (Facultatif) ?
+
+Si vous n'avez pas de préférence, cliquez sur `NOUVEAU DOSSIER`{.action} pour créer un répertoire de banque de données où stocker vos fichiers depuis votre datastore `pcc-XXX-XXX-XXX-XXX`.
 
 Vous avez plusieurs choix :
 
@@ -48,7 +79,9 @@ Vous avez plusieurs choix :
 - `Nouveau dossier de stockage`
 - `Nouvelle VM et dossiers de stockage`
 
-Vous aussi la possibilité de les créer avec un clic droit `pcc-XXX-XXX-XXX-XXX_datastoreXXX > Clic Droit > Nouveau dossier`{.action} ou depuis la section `SSD-XXX > Banque de données > Fichiers > Nouveau dossier`{.action}.
+Vous aussi la possibilité de les créer avec un clic droit `pcc-XXX-XXX-XXX-XXX_datastoreXXX > Clic Droit > Nouveau dossier`{.action} 
+
+Ou depuis `SSD-XXX > Banque de données > Fichiers > Nouveau dossier`{.action}.
 
 Une fois votre arborescence créée, sélectionnez le répertoire cible et cliquez sur `TÉLÉCHARGER DES FICHIERS`{.action} ou `TÉLÉCHARGER DES DOSSIERS`{.action}
 
@@ -67,6 +100,14 @@ Cliquez sur `Fermer`{.action} pour quitter le navigateur.
 Vous pouvez ainsi lancer cette ISO depuis un périphérique CD/DVD au sein de vote VM et lancer l'installation de l'OS en suivant le processus d'installation. Il est cependant recommandé d'utiliser des modèles de déploiement OVHcloud ou des clones de VM templaté par vos soins.
 
 ## Aller plus loin
+
+**IAM pour VMware on OVHcloud - Index des guides :**
+
+- Guide 1 : [IAM pour VMware on OVHcloud - Présentation et FAQ](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_getting_started)
+- Guide 2 : [IAM pour VMware on OVHcloud - Comment activer IAM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_activation)
+- Guide 3 : [IAM pour VMware on OVHcloud - Comment créer un rôle vSphere IAM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role)
+- Guide 4 : [IAM pour VMware on OVHcloud - Comment associer un rôle vSphere à une politique IAM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role_policy)
+- Guide 5 : [IAM pour VMware on OVHcloud - Comment associer un utilisateur à une politique IAM globale](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_user_policy)
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre Technical Account Manager ou rendez-vous sur [cette page](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
