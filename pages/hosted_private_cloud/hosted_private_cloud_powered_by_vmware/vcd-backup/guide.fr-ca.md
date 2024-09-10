@@ -30,7 +30,7 @@ details[open]>summary::before {
     - [Les concepts fondamentaux](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts)
     - [Comment se connecter à son organisation](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging)
     - [Comment utiliser l'interface utilisateur](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-getting-started)
-- Avoir une connaissance du fonctionnement de Veeam et de l'impact financier consécutif aux différents paramètres de charge qui s'appliquent lors de la mise en place de cette solution à VCD (cf. grille tarifaire des sauvegardes Veeam vCD on OVHcloud disponible via [ce lien](/links/hosted-private-cloud/vmware/veeam-managed-backup).
+- Avoir une connaissance du fonctionnement de Veeam et de l'impact financier consécutif aux différents paramètres de charge qui s'appliquent lors de la mise en place de cette solution à VCD (cf. grille tarifaire des sauvegardes Veeam vCD on OVHcloud disponible via [ce lien](/links/hosted-private-cloud/veeam-managed-backup).
 
 ## En pratique
 
