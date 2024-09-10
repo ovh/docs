@@ -6,7 +6,7 @@ updated: 2024-09-10
 
 <style>
 .w-400 {
-max-width:400px!importante;
+max-width:400px!important;
 }
 </style>
 
@@ -131,9 +131,9 @@ Clique em `Confirmar`{.action} para lançar a criação da conta.
 
 ## Quer saber mais? <a name="go-further"></a>
 
-[Utilizar o webmail Zimbra](/pages/web_cloud/email_and_colaborative_solutions/mx_plan/email_zimbra)
+[Utilizar o webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)
 
-[FAQ sobre a solução Zimbra OVHcloud](/pages/web_cloud/email_and_colaborative_solutions/mx_plan/faq-zimbra)
+[FAQ sobre a solução Zimbra OVHcloud](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-zimbra)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 

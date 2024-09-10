@@ -6,7 +6,7 @@ updated: 2024-09-10
 
 <style>
 .w-400 {
-max-width:400px!importante;
+max-width:400px!important;
 }
 </style>
 
