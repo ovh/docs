@@ -1,14 +1,8 @@
 ---
 title: Creating a Managed Kubernetes Service (MKS) cluster in MRS
 excerpt: 'Find out how to create a Managed Kubernetes Service (MKS) cluster on a Managed Rancher Service'
-updated: 2024-08-06
+updated: 2024-09-11
 ---
-
-> [!warning]
->
-> Usage of [Managed Rancher Service](https://labs.ovhcloud.com/en/managed-rancher-service/) is currently in Beta phase.
-> This guide may be incomplete and will be extended during the beta phase. Our team remains available on our dedicated Discord Channel, do not hesitate to join and reach us: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our Container and Orchestration services.
->
 
 ## Objective
 
@@ -47,7 +41,7 @@ First, enter an MKS cluster name, for example `my-mks-cluster`:
 For the **Account Configuration**, you need to provide your OVHcloud API credentials (`Application Key`, `Application Secret` and `Consumer Key`).
 If you don't have OVHcloud API credentials, you can follow our guide on how to [Generate your OVHcloud API keys](/pages/manage_and_operate/api/first-steps#advanced-usage-pair-ovhcloud-apis-with-an-application).
 
-Also provide your `Public Cloud project ID`. The project ID is where your Managed Kubernetes Service (MKS) cluster will be deployed. You can follow the guide on [How to create your first Project](/pages/public_cloud/compute/create_a_public_cloud_project) or if already existing, you can copy/paste it from the [OVHcloud Control Panel](/links/manager) or [API](https://eu.api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#get-/cloud/project).
+Also provide your `Public Cloud project ID`. The project ID is where your Managed Kubernetes Service (MKS) cluster will be deployed. You can follow the guide on [How to create your first Project](/pages/public_cloud/compute/create_a_public_cloud_project) or if already existing, you can copy/paste it from the [OVHcloud Control Panel](/links/manager) or [API](https://ca.api.ovh.com/console-preview/?section=%2Fcloud&branch=v1#get-/cloud/project).
 
 ![OVHcloud Project ID](images/project-id.png){.thumbnail}
 
@@ -97,8 +91,10 @@ You can click on the `Explore`{.action} button to manage your MKS Cluster.
 
 ## Go further
 
-- To have an overview of the OVHcloud Managed Rancher Service, you can go to the [OVHcloud Managed Rancher Service page](https://www.ovhcloud.com/asia/public-cloud/managed-rancher-service/).
+- To have an overview of the OVHcloud Managed Rancher Service, you can go to the [OVHcloud Managed Rancher Service page](/links/public-cloud/rancher).
 
 - If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our [community of users](/links/community).
+- Our team remains available on our dedicated Discord Channel, do not hesitate to join and reach us : <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our Container and Orchestration services.
+
+- Join our [community of users](/links/community).
