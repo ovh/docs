@@ -32,7 +32,7 @@ Lors de la création d'une instance dans votre espace client, vous ne pouvez ajo
 
 ### Étape 1 : créer une nouvelle paire de clés SSH
 
-Si nécessaire, utilisez notre [guide sur les clés SSH](/pages/public_cloud/compute/creating-ssh-keys-pci) pour créer une nouvelle paire de clés SSH.
+Si nécessaire, utilisez notre [guide sur les clés SSH](/pages/public_cloud/compute/creating-ssh-keys-pci) pour créer une nouvelle paire de clés SSH.  
 Vous y trouverez également des informations sur [la gestion de plusieurs clés](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key) sur votre poste de travail local si votre installation l'exige.
 
 ### Étape 2 : configurer un nouveau compte utilisateur
@@ -86,13 +86,13 @@ Si vous avez créé vos paires de clés SSH sur un système basé sur GNU/Linux,
 L'utilitaire `ssh-copy-id` copie les clés publiques dans le fichier `~/.ssh/authorized_keys` sur le serveur distant spécifié et crée automatiquement le fichier dans ce répertoire si nécessaire.
 
 ```bash
-ssh-copy-id user@IP_ADDRESS
+ssh-copy-id username@IP_ADDRESS
 ```
 
 Par défaut, `ssh-copy-id` tentera de transférer **toutes** les clés publiques dans le répertoire `~/.ssh` de votre utilisateur local. Afin d'ajouter une seule clé publique, vous pouvez spécifier ce fichier de clé avec l'option `-i` suivie du chemin d'accès au fichier :
 
 ```bash
-ssh-copy-id -i ~/.ssh/KeyFileName user@IP_ADDRESS
+ssh-copy-id -i ~/.ssh/KeyFileName username@IP_ADDRESS
 ```
 
 Exemple :
@@ -140,7 +140,7 @@ sudo systemctl restart sshd
 Le nouvel utilisateur peut maintenant se connecter à l'instance à partir du périphérique qui stocke la clé SSH privée correspondante :
 
 ```bash
-ssh user@IP_ADDRESS
+ssh username@IP_ADDRESS
 ```
 
 Exemple :

@@ -86,13 +86,13 @@ If you have created your SSH key pairs on a GNU/Linux, MacOS or BSD based system
 The `ssh-copy-id` utility copies public keys to the file `~/.ssh/authorized_keys` on the specified remote server and will automatically create the file in this directory if necessary.
 
 ```bash
-ssh-copy-id user@IP_ADDRESS
+ssh-copy-id username@IP_ADDRESS
 ```
 
 By default, `ssh-copy-id` will try to transfer **all** public keys inside your local user's `~/.ssh` directory. In order to add a single public key, you can specify this key file with the option `-i` followed by the file path:
 
 ```bash
-ssh-copy-id -i ~/.ssh/KeyFileName user@IP_ADDRESS
+ssh-copy-id -i ~/.ssh/KeyFileName username@IP_ADDRESS
 ```
 
 Example:
@@ -139,7 +139,7 @@ sudo systemctl restart sshd
 The new user can now connect to the instance from the device that stores the corresponding private SSH key:
 
 ```bash
-ssh user@IP_ADDRESS
+ssh username@IP_ADDRESS
 ```
 
 Example:
