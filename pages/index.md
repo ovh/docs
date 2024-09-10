@@ -1486,7 +1486,7 @@
                 + [Changing your password for an MX Plan email account](web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)
                 + [Using your email account via the RoundCube webmail interface](web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube)
                 + [FAQ](web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
-                + [MX Plan - Using Zimbra webmail](web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)
+                + [Using Zimbra webmail](web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)
                 + [FAQ sur la solution Zimbra OVHcloud](web_cloud/email_and_collaborative_solutions/mx_plan/faq-zimbra)
             + [Email account features](web-cloud-email-collaborative-solutions-mx-plan-email-address-features)
                 + [Creating an autoresponder for your email addresses](web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses)
