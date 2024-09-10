@@ -116,9 +116,9 @@ Le tableau ci-dessous vous présente chacun des cas particuliers et des points b
 
 Voici un rappel des taches qu'il vous reste à mener une fois la migration effectuées (si vous disposez de ces cas d'utilisations).
 
-#### Checklist
+#### Post action (non-obligatoire)
 
-**Actions à mener après migration pour cas particuliers**
+**Action à mener pour tous les cas particuliers**
 
 | **Checklist** | **Cas d'utilisation**                          | **Actions à mener**                                                                         | **Informations complémentaires**                                                                                                                                                                                                                                    |
 |:-------------:|:-----------------------------------------------|:--------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
