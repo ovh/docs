@@ -66,12 +66,12 @@ Les migrations seront effectuées en quatre vagues, à partir du mois d'octobre,
 
 **Le calendrier de migration est prévu comme suit** :
 
-| **Vague** | **Mois de migration** | **Environnements compatibles avec la migration**                                                                                 |                                                                                                                 
-|:---------:|:---------------------:|:---------------------------------------------------------------------------------------------------------------------------------|
-|     ❶     |     `Octobre 2024`      | - Environnements sans licence Microsoft Windows (SPLA) fourni par OVHcloud, avec réseau privé vRack et/ou stockage VMware vSAN ; |
-|     ❷     |     `Novembre 2024`     | - Environnements avec licence Microsoft Windows (SPLA), mais sans réseau privé vRack et sans stockage VMware vSAN ;              |
-|     ❸     |     `Décembre 2024`     | - Environnements avec réseau privé OVHcloud vRack, mais sans stockage VMware vSAN ;                                              |
-|     ❹      |     `Janvier 2024`      | - Environnements avec stockage VMware vSAN.                                                                                      |
+| **Vague** | **Mois de migration** | **Environnements compatibles avec la migration**                                                                                        |                                                                                                                 
+|:---------:|:---------------------:|:----------------------------------------------------------------------------------------------------------------------------------------|
+|     ❶     |     `Octobre 2024`      | - Environnements sans licence Microsoft Windows (SPLA) fourni par OVHcloud, mais avec réseau privé vRack et/ou stockage VMware vSAN ;   |
+|     ❷     |     `Novembre 2024`     | - Environnements avec licence Microsoft Windows (SPLA) fourni par OVHcloud, mais sans réseau privé vRack et sans stockage VMware vSAN ; |
+|     ❸     |     `Décembre 2024`     | - Environnements avec réseau privé OVHcloud vRack, mais sans stockage VMware vSAN ;                                                     |
+|     ❹      |     `Janvier 2024`      | - Environnements avec stockage VMware vSAN.                                                                                             |
 
 Au cours de ce processus, vos données resteront dans le même stockage, à l'exception du stockage vSAN. Vos adresses IP resteront inchangées également.
 
