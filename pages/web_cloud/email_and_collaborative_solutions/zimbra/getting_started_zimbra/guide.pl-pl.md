@@ -1,14 +1,18 @@
---- 
+---
 title: "Pierwsze kroki z ofertą Zimbra"
 excerpt: "Dowiedz się, jak rozpocząć korzystanie z oferty Zimbra z poziomu Panelu klienta OVHcloud"
 updated: 2024-09-10
---- 
+---
 
 <style>
 .w-400 {
 max-width:400px!importante;
 }
 </style>
+
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji” na tej stronie.
+>
 
 > [!warning]
 >
@@ -50,15 +54,15 @@ Poniższy schemat podsumowuje hierarchiczne powiązanie między wyżej wymienion
 
 ![Zimbra](images/Zimbra_Organization.png){.thumbnail .w-400}
 
-## Organizacje <a name="organizations"></a>
+### Organizacje <a name="organizations"></a>
 
 Jeśli dodajesz wiele domen do swojej usługi Zimbra, pomocne może być pogrupowanie ich w "organizację". W usłudze Zimbra kliknij `Organisation`{.action}.
 
-### Utwórz organizację
+#### Utwórz organizację
 
 Aby utworzyć organizację, kliknij przycisk `Dodaj organizację`{.action}. Ustaw `Nazwa` organizacji oraz `Znak organizacji`, przy czym ten ostatni jest krótkim opisem organizacji pozwalającym na odnalezienie Cię podczas filtrowania wyświetlania nazw domen i kont e-mail Twojej usługi Zimbra.
 
-### Filtruj według organizacji
+#### Filtruj według organizacji
 
 Po utworzeniu organizacji upewnij się, że domeny zadeklarowane w Twojej usłudze Zimbra są powiązane z organizacją.
 
@@ -68,7 +72,7 @@ Aby usunąć filtr, wystarczy kliknąć na krzyżyk filtra.
 
 ![Zimbra](images/Zimbra_Organization_filter.png){.thumbnail .w-400}
 
-## Domeny <a name="domains"></a>
+### Domeny <a name="domains"></a>
 
 W tej karcie znajdziesz wszystkie nazwy domen dodane do Twojej usługi Zimbra. Aby je dodać, należy nimi zarządzać w Panelu klienta OVHcloud.
 
@@ -77,13 +81,13 @@ Tabela domen podaje dwie informacje:
 - **Organization** : Domena zostanie oznaczona po dodaniu nazwy. W tej kolumnie automatycznie odnajdziesz jej etykietę.
 - **Liczba kont** : w tej sekcji odnajdziesz wszystkie konta utworzone pod daną nazwą domeny.
 
-### Dodaj domenę
+#### Dodaj domenę
 
 Aby dodać domenę do Twojej usługi Zimbra, kliknij w zakładkę `Domena`{.action}, następnie kliknij `Dodaj domenę`{.action}.
 
 Jeśli masz utworzone organizacje, wybierz jedną z nich z rozwijanego menu, a następnie wybierz domenę z listy (konieczne jest, aby nazwy domen były zarządzane w Panelu klienta OVHcloud). Następnie kliknij przycisk `Potwierdź`{.action}, aby dokończyć dodawanie domeny.
 
-## Konta email <a name="emails"></a>
+### Konta email <a name="emails"></a>
 
 Adresami e-mail usługi Zimbra można zarządzać w zakładce `Konta e-mail`{.action}. W tabeli wyświetla się lista kont e-mail obecnych w Twojej usłudze oraz 3 informacje dla każdego z nich:
 
@@ -93,7 +97,7 @@ Adresami e-mail usługi Zimbra można zarządzać w zakładce `Konta e-mail`{.ac
 
 Na górze tej strony znajduje się również link do [Webmail](/links/web/email), dzięki któremu będziesz mógł połączyć się bezpośrednio z zawartością Twojego konta e-mail z poziomu przeglądarki internetowej.
 
-### Załóż konto e-mail
+#### Załóż konto e-mail
 
 Aby utworzyć konto e-mail w Twojej usłudze Zimbra, kliknij zakładkę `Konta e-mail`{.action}, a następnie `Utwórz konto`{.action}.
 
@@ -108,7 +112,7 @@ Uzupełnij kolejne informacje, o które zostaniesz poproszony.
 > - Minimum 2 znaki
 > - Maksymalnie 32 znaki
 > - Brak znaków akcentowanych
-> - Brak znaków specjalnych, z wyjątkiem następujących znaków:`.`,`,`,`-` et `_`
+> - Brak znaków specjalnych, z wyjątkiem następujących znaków:`.`,`,`,`-` i `_`
 
 - **Imię** : wpisz imię.
 - **Nazwa** : wprowadź nazwę.
