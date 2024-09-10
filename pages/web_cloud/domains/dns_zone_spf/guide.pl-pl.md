@@ -1,7 +1,7 @@
 ---
 title: "Poprawa bezpieczeństwa e-maili poprzez rekord SPF"
 excerpt: "Dowiedz się, jak skonfigurować rekord SPF dla Twojej domeny, aby zwiększyć bezpieczeństwo e-maili"
-updated: 2023-08-04
+updated: 2024-09-05
 ---
 
 <style>
@@ -105,7 +105,7 @@ W tabeli, aby odnaleźć wiersz odpowiadający SPF OVHcloud, można użyć filtr
 
 > [!primary]
 >
-> SPF zawsze składa się z następującej formy: "v=spf1 `sources` `qualifieur`". Na przykład, SPF OVHcloud to: "v=spf1 include:mx.ovh.com ~all".
+> SPF zawsze składa się z następującej formy: "v=spf1 `Źródła` `kwalifikator`". Na przykład, SPF OVHcloud to: "v=spf1 include:mx.ovh.com ~all".
 >
 
 ///

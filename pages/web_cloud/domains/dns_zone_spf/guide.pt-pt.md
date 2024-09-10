@@ -1,7 +1,7 @@
 ---
 title: "Melhorar a segurança dos e-mails através do registo SPF"
 excerpt: "Saiba como configurar um registo SPF no seu domínio para melhorar a segurança dos seus e-mails"
-updated: 2023-08-04
+updated: 2024-09-05
 ---
 
 <style>

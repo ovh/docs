@@ -1,7 +1,7 @@
 ---
 title: "Migliora la sicurezza delle email con un record SPF"
 excerpt: "Questa guida ti mostra come configurare un record SPF sul tuo dominio per migliorare la sicurezza delle email"
-updated: 2023-08-04
+updated: 2024-09-05
 ---
 
 <style>

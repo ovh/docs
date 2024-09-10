@@ -1,7 +1,7 @@
 ---
 title: How to improve email security with an SPF record
 excerpt: Find out how to configure an SPF record on your domain name to improve email security
-updated: 2023-08-04
+updated: 2024-09-05
 ---
 
 <style>
@@ -145,28 +145,28 @@ The configuration wizard enables you to customise your SPF record according to y
 
 ![domain](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/spf_records_add_entry_personnalize_step1.png){.thumbnail .w-400}
 
-- **Subdomain** : fill out if the SPF record must be applied to a subdomain of your domain, i.e. if you send emails from a subdomain.
-- **TTL** : this is the propagation time that will apply to the configuration of this DNS record.
-- **Authorise an IP address to send emails** : check this box if your website and email addresses are hosted on a server using the same IP address (for example on a dedicated server).
-- **Authorise the MX servers to send emails** : tick if the servers that receive your emails can also send them.
-- **Authorise all servers with names ending with your domain to send emails** : this option should be used with caution, as it allows a very wide legitimisation of the sending sources using your domain name.
+- **Subdomain**: Fill out if the SPF record must be applied to a subdomain of your domain, i.e. if you send emails from a subdomain.
+- **TTL**: This is the propagation time that will apply to the configuration of this DNS record.
+- **Authorise an IP address to send emails**: Check this box if your website and email addresses are hosted on a server using the same IP address (for example on a dedicated server).
+- **Authorise the MX servers to send emails**: Tick if the servers that receive your emails can also send them.
+- **Authorise all servers with names ending with your domain to send emails**: This option should be used with caution, as it allows a very wide legitimisation of the sending sources using your domain name.
 
 /// details | "**Do the emails of your domain originate from other servers belonging to other domains?**"
 
-- **a** : enter domain names here to legitimise these servers to send emails with your addresses.
-- **mx** : enter the servers that receive your emails (MX servers) here if they can also send them. They will thus be identified as a legitimate sending source.
-- **ptr** : enter the host names for which the *reverse* path works (using a PTR record in the DNS zone). They will thus be identified as a legitimate sending source.
-- **ip4** : indicates IP addresses or RIPE blocks (IPv4) authorised to send emails with your addresses.
-- **ip6** : indicates IP addresses or RIPE blocks (IPv6) authorised to send emails with your addresses.
-- **include** : enter domain names here that include their own SPF rules. This will enable these for your own domain. For example, OVHcloud uses this method in its SPF configuration: "v=spf1 include:mx.ovh.ca ~all". It allows OVHcloud to manage the SPF of mx.ovh.ca and let customers use it for their services.
+- **a**: Enter domain names here to legitimise these servers to send emails with your addresses.
+- **mx**: Enter the servers that receive your emails (MX servers) here if they can also send them. They will thus be identified as a legitimate sending source.
+- **ptr**: Enter the host names for which the *reverse* path works (using a PTR record in the DNS zone). They will thus be identified as a legitimate sending source.
+- **ip4**: Indicates IP addresses or RIPE blocks (IPv4) authorised to send emails with your addresses.
+- **ip6**: Indicates IP addresses or RIPE blocks (IPv6) authorised to send emails with your addresses.
+- **include**: Enter domain names here that include their own SPF rules. This will enable these for your own domain. For example, OVHcloud uses this method in its SPF configuration: "v=spf1 include:mx.ovh.ca ~all". It allows OVHcloud to manage the SPF of mx.ovh.ca and let customers use it for their services.
 
 ///
 
 /// details | "**Does the data you have entered describe all hosts that send email from your domain?**"
 
-- **Yes, I am sure** : specify that servers receiving emails from your domain should reject them if they come from illegitimate sources (not present in your SPF record).
-- **Yes, but use safe mode** : specify that servers receiving emails from your domain should accept them if they come from illegitimate sources (not present in your SPF record), but tag them as potentially not legitimate (as spam, for example).
-- **No** : specify that servers receiving emails from your domain should accept them if they come from illegitimate sources (not present in your SPF record), without any particular action. The email header will however be increased.
+- **Yes, I am sure**: Specify that servers receiving emails from your domain should reject them if they come from illegitimate sources (not present in your SPF record).
+- **Yes, but use safe mode**: Specify that servers receiving emails from your domain should accept them if they come from illegitimate sources (not present in your SPF record), but tag them as potentially not legitimate (as spam, for example).
+- **No**: Specify that servers receiving emails from your domain should accept them if they come from illegitimate sources (not present in your SPF record), without any particular action. The email header will however be increased.
 
 ///
 

@@ -1,7 +1,7 @@
 ---
 title: "Mejorar la seguridad del correo electrónico mediante el registro SPF"
 excerpt: "Descubra cómo configurar un registro SPF en un dominio para mejorar la seguridad del correo"
-updated: 2023-08-04
+updated: 2024-09-05
 ---
 
 <style>
@@ -239,7 +239,7 @@ mydomain.ovh IN TXT "v=spf1 ip4:203.0.113.099 ip6:2001:db8:88:b999::1000:2233 in
 
 Para obtener la dirección IP del servidor Private Exchange, haga clic en `Microsoft`{.action} y seleccione `Exchange`{.action}. y seleccione el servicio Private Exchange correspondiente.
 
-En la ficha `Información general`{.action}, haga clic en `A` y `AAAA` en la sección `Diagnóstico del servidor`. En la ventana que aparece, lea el valor
+En la ficha `Información general`{.action}, haga clic en `A` y `AAAA` en la sección `Diagnóstico del servidor`. En la ventana que aparece, lea el valor.
 
 ![Dominio](/pages/assets/screens/control_panel/product-selection/web-cloud/microsoft/exchange/general-information/spf_records_ip.png){.thumbnail .w-400}
 
