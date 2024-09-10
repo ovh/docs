@@ -6,7 +6,7 @@ updated: 2024-09-10
 
 <style>
 .w-400 {
-max-width:400px!importante;
+max-width:400px!important;
 }
 </style>
 
@@ -52,7 +52,7 @@ Zanim rozpoczniesz konfigurację kont e-mail Zimbra, zapoznaj się z trzema elem
 
 Poniższy schemat podsumowuje hierarchiczne powiązanie między wyżej wymienionymi elementami.
 
-![Zimbra](images/Zimbra_Organization.png){.thumbnail .w-400}
+![Zimbra](images/zimbra_organization.png){.thumbnail .w-400}
 
 ### Organizacje <a name="organizations"></a>
 
@@ -70,7 +70,7 @@ Z zakładek `Organizacja`{.action}, `Domena`{.action} i `Konta e-mail`{.action},
 Możesz zauważyć, że filtr jest stosowany, gdy etykieta jest wyświetlana obok nazwy Twojej usługi Zimbra.<br>
 Aby usunąć filtr, wystarczy kliknąć na krzyżyk filtra.
 
-![Zimbra](images/Zimbra_Organization_filter.png){.thumbnail .w-400}
+![Zimbra](images/zimbra_organization_filter.png){.thumbnail .w-400}
 
 ### Domeny <a name="domains"></a>
 
