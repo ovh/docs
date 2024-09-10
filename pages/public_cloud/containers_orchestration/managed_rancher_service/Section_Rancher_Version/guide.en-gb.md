@@ -13,9 +13,10 @@ updated: 2024-09-09
 OVHcloud's Managed Rancher Service adheres to lifecycle policies to ensure the reliability and security of your managed service. New stable versions are regularly tested and released in order to provide the lastest securtity patchs and features set. 
 Older versions may reach their End-of-Support (EoS) and then End-of-Life (EoL) status based on our lifecycle policy. Understanding these policies helps customers plan for upgrades and transitions to newer versions.
 
-As a general rule, OVHcloud will support Rancher minor versions during 12 month after their upstream release date. 
+As a general rule, OVHcloud will support Rancher minor versions during 12 months after their upstream release date. 
 
-**End-of-Support (EoS):** The point at which a specific Rancher version is no longer officially covered by OVHcloud support nor available for new installations.
+#### End-of-Support (EoS):
+The point at which a specific Rancher version is no longer officially covered by OVHcloud support nor available for new installations.
 When a Rancher instance is running a version that has reached its End of support date, as a general rule, OVHcloud will not force a version upgrade for the last version that reached End-of-Support. Keep in mind that though we will keep them running, they will no longer be covered by OVHcloud support. In the unlikely case that one of these versions exposes a security breach that puts its own infrastructure at risk, OVHcloud may force the minor update of the service or deactivate the service if the forced minor update did not go through.
 
 As a general rule, OVHcloud will keep offering minor-version upgrade for all unsupported versions to a supported verion to ensure that the customer can, on its own pace move to a OVHcloud supported minor version. The customer is solely responsible for making sure his configuration and related software, including Kubernetes versions of downstream clusters are compliant with the new version he is upgrading to. Please refer to the [Downstream clusters Kubernetes supported version matrix ](#supportmatrix) section. 
@@ -24,10 +25,10 @@ As soon as a minor version reaches End-of-Support by OVHcloud, it will simultane
 
 At any time, the customer can find the currently supported versions on the [dedicated section](#versions).
 
+#### End-of-Life (EoL):  
+The point at which a specific Rancher version will be auto-upgraded by OVHcloud team to the next minor version (n+1). As a general rule OVHcloud will move Rancher versions to EoL 3 months after they reached their EoS date.
 
-**End-of-Life (EoL):** The point at which a specific Rancher version will be auto-upgraded by OVHcloud team to the next minor version (n+1). As a general rule OVHcloud will move Rancher versions to EoL 3 months after they reached their EoS date.
-
-### Rancher Release Calendar and supported versions (<a name="versions"></a>)
+### Rancher Release Calendar and supported versions <a name="versions"></a>
 
 The following table provides an overview of the estimated release schedule for each supported OVHcloud Managed Rancher Service (MRS) version. This schedule is subject to change and is provided for informational purposes only. Exact release dates may vary based on development requirements, testing, and other factors.
 
