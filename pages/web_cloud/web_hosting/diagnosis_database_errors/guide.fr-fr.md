@@ -1,12 +1,12 @@
 ---
 title: "Résoudre les erreurs les plus fréquentes liées aux bases de données"
 excerpt: "Diagnostiquez les cas les plus courants d'erreurs liées aux bases de données"
-updated: 2023-10-26
+updated: 2024-09-10
 ---
 
 ## Objectif
 
-L'utilisation de vos bases de données peut entraîner un certain nombre d'anomalies sur votre site ou votre [espace client OVHcloud](/links/manager), ainsi que sur l'interface [PhpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#acceder-a-linterface-phpmyadmin).
+L'utilisation de vos bases de données peut entraîner un certain nombre d'anomalies sur votre site ou votre [espace client OVHcloud](/links/manager), ainsi que sur l'interface [PhpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database).
 
 **Découvrez comment résoudre les erreurs liées aux bases de données sur les hébergements mutualisés OVHcloud.**
 
@@ -39,7 +39,7 @@ Vérifiez tout d'abord sur [https://web-cloud.status-ovhcloud.com/](https://web-
 >
 > - Pour retrouver le `Datacentre` de votre hébergement, ainsi que son `Filer` (serveur de fichier), choisissez `Hébergements`{.action}, puis l'hébergement concerné. Vous trouverez ces informations dans l'onglet `Informations générales`{.action}.
 > - Pour retrouver le **cluster** de serveurs sur lequel se trouve votre hébergement, cliquez sur l'onglet `FTP-SSH`{.action}. Cette information apparaîtra dans le nom de votre `Serveur FTP`.
-> - Pour retrouver le nom de votre serveur **Web Cloud Databases**, cliquez sur `Bases de données`{.action} puis sur l'offre concernée. Vous trouverez cette information sous la mention `Nom d'hôte` dans la rubrique `SQL` de `Informations de connexion`.
+> - Pour retrouver le nom de votre serveur **Web Cloud Databases**, cliquez sur `Web Cloud Databases`{.action} puis sur l'offre concernée. Vous trouverez cette information sous la mention `Nom d'hôte` dans la rubrique `SQL` de `Informations de connexion`.
 >
 
 #### Vérifier les identifiants de connexion à votre base de données <a name="config_file"></a>
@@ -100,7 +100,7 @@ Trois méthodes vous permettront de débloquer votre base de données :
 
 #### Méthode 1 : passer votre abonnement sur une offre supérieure
 
-Si vous disposez d'une formule **Perso** ou **Pro**, nous vous conseillons dans cette situation de passer sur l'[offre d'hébergement supérieure](/links/web/hosting). Ce changement d'abonnement augmentera la taille de votre base de données, ce qui la réouvrira automatiquement. Cette méthode est la plus simple et ne nécessite aucune compétence technique particulière.
+Si vous disposez d'une formule **Starter** ou **Perso**, nous vous conseillons dans cette situation de passer sur l'[offre d'hébergement supérieure](/links/web/hosting). Ce changement d'abonnement augmentera la taille de votre base de données, ce qui la réouvrira automatiquement. Cette méthode est la plus rapide et ne nécessite aucune compétence technique particulière.
 
 > [!warning]
 >
@@ -113,19 +113,17 @@ Si vous disposez d'une formule **Perso** ou **Pro**, nous vous conseillons dans 
 
 Pour effectuer ce changement, connectez-vous à votre [espace client OVHcloud](/links/manager) puis cliquez sur `Hébergements`{.action}, puis sur l'hébergement concerné. Cliquez sur le bouton `...`{.action} dans la rubrique `Offre` sur la droite de votre écran puis sur `Changer d'offre`{.action}.
 
-Si vous utilisez une offre **Performance**, reportez-vous à la [méthode 2](#methode2).
-
 #### Méthode 2 : migrer vos données sur une base de taille supérieure <a name="methode2"></a>
 
 Vous pouvez également migrer vos données sur une nouvelle base :
 
 - Commandez, si nécessaire, une [base de données](/links/web/hosting-options-startsql) de taille supérieure puis lancez sa [création](/pages/web_cloud/web_hosting/sql_create_database);
-- Effectuez un [export de vos données](/pages/web_cloud/web_hosting/sql_database_export), puis [importez-les](/pages/web_cloud/web_hosting/sql_importing_mysql_database) dans la nouvelle base;
-- Intégrez les identifiants de la nouvelle base de données dans le [fichier de configuration](#config_file) de votre site.
+- [Dupliquez le contenu de l'ancienne base de données](/pages/web_cloud/web_hosting/copy_database) dans la nouvelle **ou** effectuez un [export de vos données](/pages/web_cloud/web_hosting/sql_database_export), puis [importez-les](/pages/web_cloud/web_hosting/sql_importing_mysql_database) dans la nouvelle base;
+- Intégrez les identifiants de la nouvelle base de données dans le [fichier de configuration](#config_file) de votre site web.
 
 > [!primary]
 >
-> Si vous disposez d'un hébergement **Performance**, vous pouvez également [activer gratuitement un serveur Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb#activation-de-votre-serveur-clouddb-inclus-avec-votre-offre-dhebergement-web).
+> Si vous disposez d'un hébergement **Performance**, vous pouvez également [activer gratuitement un serveur Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 >
 
 #### Méthode 3 : supprimer les données inutiles
@@ -148,13 +146,13 @@ Pour optimiser votre base de données, suivez les instructions de notre guide «
 > Si les conseils fournis sur l'optimisation de votre base de données ne suffisaient pas à débloquer l'accès à votre site, nous vous conseillons de contacter notre [communauté d'utilisateurs](/links/community) ou les [partenaires OVHcloud](/links/partner). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
 >
 
-### Dépassements de la mémoire RAM
+### Dépassements de la mémoire RAM (Web Cloud Databases uniquement)
 
-Le message suivant dans la partie `Bases de données`{.action} de votre [espace client OVHcloud](/links/manager) indique que votre serveur [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) ou [Cloud Databases](/links/web/databases) a consommé une quantité de ressources trop importantes sur l'infrastructure OVHcloud :
+Le message suivant dans la partie `Web Cloud Databases`{.action} de votre [espace client OVHcloud](/links/manager) indique que votre serveur [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) a consommé une quantité de ressources trop importantes sur l'infrastructure OVHcloud :
 
 ![ram-exceeded](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/ram-exceeded.png){.thumbnail}
 
-Dans cette situation, vous pouvez augmenter la [quantité de mémoire RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#modifier-loffre-du-serveur-de-bases-de-donnees) disponible depuis la partie `Bases de données`{.action} de votre [espace client OVHcloud](/links/manager). Dans l'onglet `Informations générales`{.action}, cliquez sur le bouton `...`{.action} dans la rubrique `RAM`.
+Dans cette situation, vous pouvez augmenter la [quantité de mémoire RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#modifier-loffre-du-serveur-de-bases-de-donnees) disponible depuis la partie `Web Cloud Databases`{.action} de votre [espace client OVHcloud](/links/manager). Dans l'onglet `Informations générales`{.action}, cliquez sur le bouton `...`{.action} dans la rubrique `RAM`.
 
 > [!warning]
 >
@@ -162,7 +160,7 @@ Dans cette situation, vous pouvez augmenter la [quantité de mémoire RAM](/page
 >
 > Pour délier la base de données, connectez-vous à votre [espace client OVHcloud](/links/manager) et sélectionnez l'onglet `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} puis choisissez l'hébergement web sur lequel le Web Cloud Databases est activé.
 >
-> Dans la zone `Configuration`, cliquez sur le bouton `...`{.action} à droite de l'entrée de la `Base de données privée` puis cliquez sur le bouton `Délier`{.action}.
+> Dans la zone `Configuration`, cliquez sur le bouton `...`{.action} à droite de l'entrée de la `Web Cloud Databases` puis cliquez sur le bouton `Délier`{.action}.
 >
 
 Vous pouvez également optimiser votre base de données en suivant les instructions de notre guide « [Configurer votre serveur de bases de données](/pages/web_cloud/web_cloud_databases/configure-database-server#optimiser-vos-bases-de-donnees) ».
@@ -196,7 +194,7 @@ Contactez si besoin notre [communauté d'utilisateurs](/links/community) ou un [
 >
 > Quels éléments dans le script d'import de ma base de données peuvent causer une erreur « #1044 - Access denied for user to database » ?
 
-Avoir un **« trigger »** dans votre script n'est, par exemple, pas autorisé sur les serveurs d'hébergement mutualisé OVHcloud. Dans cette situation, importez votre base de données sur un serveur [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) ou [Cloud Databases](/links/web/databases).
+Avoir un **« trigger »** dans votre script n'est, par exemple, pas autorisé sur les serveurs d'hébergement mutualisé OVHcloud. Dans cette situation, importez votre base de données sur un serveur [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 
 Par ailleurs, la requête suivante n'est pas autorisée :
 
@@ -222,7 +220,7 @@ Ce message d'erreur apparaît lors de [l'import d'une base de données](/pages/w
 
 Pour résoudre cette anomalie, vous pouvez :
 
-- Augmenter la [quantité de mémoire vive (RAM)](/pages/web_cloud/web_cloud_databases/configure-database-server#suivre-la-ram-consommee). Pour cela, rendez vous sur le [serveur Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) concerné dans la rubrique `Bases de données`{.action} de votre [espace client OVHcloud](/links/manager). Cliquez ensuite sur le bouton `...`{.action} dans la partie `RAM`, puis sur `Changer la quantité de RAM`{.action}.
+- Augmenter la [quantité de mémoire vive (RAM)](/pages/web_cloud/web_cloud_databases/configure-database-server#suivre-la-ram-consommee). Pour cela, rendez vous sur le serveur [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) concerné dans la rubrique `Bases de données`{.action} de votre [espace client OVHcloud](/links/manager). Cliquez ensuite sur le bouton `...`{.action} dans la partie `RAM`, puis sur `Changer la quantité de RAM`{.action}.
 
 - Fractionner votre base de données, afin de l'importer en plusieurs opérations au lieu d'une seule (pour toute question sur les manipulations à réaliser, contactez notre [communauté d'utilisateurs](/links/community) ou les [partenaires OVHcloud](/links/partner). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.)
 
@@ -277,12 +275,12 @@ Vérifiez le nom du serveur à inscrire dans votre [espace client OVHcloud](/lin
 >
 > Si la base à laquelle vous souhaitez vous connecter apparaît dans l'onglet `Bases de données`{.action} de la partie `Hébergements`{.action} de votre [espace client OVHcloud](/links/manager), le nom à renseigner est inscrit dans la colonne `Adresse du serveur`.
 >
-> Si vous souhaitez vous connecter à une base de données sur un serveur [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) ou [Cloud Databases](/links/web/databases), le nom de serveur à renseigner est inscrit dans l'onglet `Informations générales`{.action}, partie `Informations de connexions`{.action}, `SQL`{.action} et dans la rubrique `Nom d'hôte`{.action}.
+> Si vous souhaitez vous connecter à une base de données sur un serveur [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb), le nom de serveur à renseigner est inscrit dans l'onglet `Informations générales`{.action}, partie `Informations de connexions`{.action}, `SQL`{.action} et dans la rubrique `Nom d'hôte`{.action}.
 >
 
 ### Connexion impossible sur une base de données Cloud Databases
 
-Disposer d'un serveur [Cloud Databases](/products/web-cloud-clouddb) vous permet de vous [connecter à vos bases de données](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server) depuis votre ordinateur ou un serveur extérieur à l'infrastructure d'OVHcloud.
+Disposer d'un serveur [Web Cloud Databases](/products/web-cloud-clouddb) vous permet de vous [connecter à vos bases de données](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server) depuis votre ordinateur ou un serveur extérieur à l'infrastructure d'OVHcloud.
 
 Si cette connexion s'avère impossible, commencez par vérifier que vous avez bien [autorisé votre adresse IP publique](/pages/web_cloud/web_cloud_databases/starting_with_clouddb#autoriser-une-adresse-ip) à se connecter au serveur de bases de données.
 
