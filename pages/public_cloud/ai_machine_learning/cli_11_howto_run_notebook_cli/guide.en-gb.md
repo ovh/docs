@@ -71,7 +71,7 @@ As you can see, `<FRAMEWORK_ID>` and `<EDITOR_ID>` are two mandatory arguments t
 You can find a list of available ones by running the `ovhai capabilities framework list` and `ovhai capabilities editor list` commands:
 
 ``` {.console}
-$ ovhai capabilities framework list
+ovhai capabilities framework list
 ID              NAME                               DESCRIPTION                                                                                                                           DOC_URL                                                        VERSIONS
 alicebob        Alice & Bob Felis                  Run fault-tolerant quantum algorithms with logical qubits. Study quantum error correction with superconducting cat qubits.                                                                           alice_and_bob0.4.1
 myqlm           Atos myQLM                         Quantum Computing Framework by Atos                                                                                                                                                                  myqlm1.7.3-py39-cpu-v22-4
