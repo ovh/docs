@@ -1,6 +1,6 @@
 ---
 title: "Téléversement de fichiers depuis le Datastore VMware vSphere"
-excerpt: "Découvrez comment utiliser l'outil de téléversement de fichiers du Datastore VMware vSphere on OVHcloud dédié afin de pouvoir importer des données"
+excerpt: "Découvrez comment utiliser l'outil de téléversement de fichiers du Datastore afin de pouvoir importer des données dans votre VMware vSphere on OVHcloud"
 updated: 2024-09-11
 ---
 
@@ -16,7 +16,12 @@ updated: 2024-09-11
 
 ## En pratique
 
-### Étape 1 - Accéder au Datastores
+> [!warning]
+> 
+> Ce guide remplace la procédure ci-joins qui est obsolète : [Se connecter en SFTP ](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/sftp_connexion)
+>
+
+### Étape 1 - Accéder à la banque de données
 
 #### Via l'espace client
 
@@ -89,11 +94,11 @@ Vous devez disposer des droits suffisants pour effectuer d'autres actions, tel q
 
 ![Datastore Upload 1](images/datastore_upload_1.png){.thumbnail}
 
-Localisez l'élément à télécharger depuis votre ordinateur local (un fichier `XXX.iso`) et cliquez sur `Ouvrir`{.action}
+Localisez l'élément à téléverser depuis votre ordinateur local (un fichier `XXX.iso`) et cliquez sur `Ouvrir`{.action}
 
-Le fichier ISO se télécharge dans la banque de données sélectionnée.
+Le fichier ISO se téléverse dans la banque de données sélectionnée.
 
-(Facultatif) Actualisez l'explorateur de fichiers de la banque de données pour afficher le fichier téléchargé dans la liste.
+(Facultatif) Actualisez l'explorateur de fichiers de la banque de données pour afficher le fichier téléversé dans la liste.
 
 Cliquez sur `Fermer`{.action} pour quitter le navigateur.
 
@@ -101,13 +106,7 @@ Vous pouvez ainsi lancer cette ISO depuis un périphérique CD/DVD au sein de vo
 
 ## Aller plus loin
 
-**IAM pour VMware on OVHcloud - Index des guides :**
-
-- Guide 1 : [IAM pour VMware on OVHcloud - Présentation et FAQ](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_getting_started)
-- Guide 2 : [IAM pour VMware on OVHcloud - Comment activer IAM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_activation)
-- Guide 3 : [IAM pour VMware on OVHcloud - Comment créer un rôle vSphere IAM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role)
-- Guide 4 : [IAM pour VMware on OVHcloud - Comment associer un rôle vSphere à une politique IAM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_role_policy)
-- Guide 5 : [IAM pour VMware on OVHcloud - Comment associer un utilisateur à une politique IAM globale](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_user_policy)
+- Guide : [IAM pour VMware on OVHcloud - Présentation et FAQ](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_getting_started)
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre Technical Account Manager ou rendez-vous sur [cette page](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
