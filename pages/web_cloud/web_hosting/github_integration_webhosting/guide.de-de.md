@@ -10,7 +10,7 @@ updated: 2024-09-11
 
 ## Ziel
 
-In der heutigen digitalen Landschaft sind Unternehmen dynamischer und innovativer geworden. Die Fähigkeit, den Code Ihrer Website effizient zu verwalten und einzusetzen, ist entscheidend, um die Wettbewerbsfähigkeit und Nachhaltigkeit Ihrer Marke zu erhalten. GitHub, das weltweit am häufigsten verwendete Versionsverwaltungssystem, erlaubt die Speicherung des Codes Ihrer Website auf Plattformen wie GitHub, was eine bessere Rückverfolgbarkeit von Änderungen sowie eine schnellere Automatisierung und Bereitstellung ermöglicht. Als OVHcloud Kunde verfügen Sie über eine robuste Infrastruktur für das Hosting Ihrer Website und können gleichzeitig die zahlreichen Vorteile von GitHub für die Entwicklung und Evolution Ihrer Website nutzen.
+In der heutigen digitalen Landschaft sind Unternehmen dynamischer und innovativer geworden. Die Fähigkeit, den Code Ihrer Website effizient zu verwalten und einzusetzen, ist entscheidend, um die Wettbewerbsfähigkeit und Nachhaltigkeit Ihrer Marke zu erhalten. Git, das weltweit am häufigsten verwendete Versionsverwaltungssystem, erlaubt die Speicherung des Codes Ihrer Website auf Plattformen wie GitHub, was eine bessere Rückverfolgbarkeit von Änderungen sowie eine schnellere Automatisierung und Bereitstellung ermöglicht. Als OVHcloud Kunde verfügen Sie über eine robuste Infrastruktur für das Hosting Ihrer Website und können gleichzeitig die zahlreichen Vorteile von GitHub für die Entwicklung und Evolution Ihrer Website nutzen.
 
 **Diese Anleitung erklärt, wie Sie GitHub über Ihr OVHcloud Kundencenter konfigurieren und mit Ihrem Webhosting verwenden.**
 
