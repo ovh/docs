@@ -113,7 +113,7 @@ Cela peut être, par exemple :
 
 > [!success]
 >
-> Avant d'ajouter un serveur DNS, vérifiez que ce dernier **et joignable** et contient bien une zone DNS pour votre nom de domaine. Assurez-vous également que cette zone DNS contient tous les enregistrements de type « NS » vers tous les serveurs DNS que vous allez déclarer pour votre nom de domaine.
+> Avant d'ajouter un serveur DNS, vérifiez que ce dernier **est joignable** et contient bien une zone DNS pour votre nom de domaine. Assurez-vous également que cette zone DNS contient tous les enregistrements de type « NS » vers tous les serveurs DNS que vous allez déclarer pour votre nom de domaine.
 >
 > Par exemple : vous souhaitez déclarer les serveurs DNS *ns1.dns-server.tld*, *ns2.dns-server.tld* et *ns3.dns-server.tld* pour votre nom de domaine. Vous devrez alors vérifier que les trois enregistrements de type « NS » suivants sont bien présents dans les 3 zones DNS hébergées sur ces 3 serveurs DNS :
 >
@@ -129,9 +129,9 @@ Pour renseigner l'un de vos propres serveurs DNS, remplissez les 2 formulaires d
 
 > [!warning]
 >
-> Chaque encadré de saisie (visible dans la capture écran précédente) ne peut contenir qu'**un seul** serveur DNS à la fois. Un serveurs DNS correspond donc à un encadré.
+> Chaque encadré de saisie (visible dans la capture écran précédente) ne peut contenir qu'**un seul** serveur DNS à la fois. Un serveur DNS correspond donc à un encadré.
 >
-> De plus, une note d'information sur fond bleu, située au dessus du premier encadré, indique l'intervale de serveurs DNS que vous pouvez déclarer pour votre nom de domaine. Ces valeurs varient selon l'extension du nom de domaine.
+> De plus, une note d'information sur fond bleu, située au dessus du premier encadré, indique l'intervalle de serveurs DNS que vous pouvez déclarer pour votre nom de domaine. Ces valeurs varient selon l'extension du nom de domaine.
 
 Une fois les informations renseignées, cliquez sur le bouton `+`{.action} situé à droite des 2 formulaires. Il permet d'ajouter le serveur DNS et fait apparaître un nouvel encadré de saisie en dessous du précédent.
 
@@ -151,7 +151,7 @@ Les anciens serveurs DNS déclarés et la configuration DNS qu'ils appliquaient 
 
 ![Modify DNS servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/modify-my-dns-servers-3.png){.thumbnail}
 
-Cette option permet de combiner l'utilisation de vos propres serveurs DNS tout en conservant les serveurs DNS OVHcloud actifs pour votre nom de domaine. En réalisant cette combinaison, cela permet, par exemple, d'assurer d'avantage l'accès à aux différents services associés à votre nom de domaine (hébergement web, serveurs e-mail, etc.). En effet et toujours par exemple, si un groupe de serveurs DNS devient indisponible pendant quelques minutes, les autres serveurs DNS déclarés peuvent prendre le relais.
+Cette option permet de combiner l'utilisation de vos propres serveurs DNS tout en conservant les serveurs DNS OVHcloud actifs pour votre nom de domaine. En réalisant cette combinaison, cela permet, par exemple, d'assurer d'avantage l'accès aux différents services associés à votre nom de domaine (hébergement web, serveurs e-mail, etc.). En effet et toujours par exemple, si un groupe de serveurs DNS devient indisponible pendant quelques minutes, les autres serveurs DNS déclarés peuvent prendre le relais.
 
 Cependant, vérifiez bien que les configurations des zones DNS présentes sur les différents serveurs DNS concernés sont correctement paramétrées pour fonctionner toutes ensemble. Effectivement, la plupart du temps, tous les serveurs DNS seront opérationnels. Ils seront tous en capacité de répondre aux demandes qui leurs seront faites et ce, aléatoirement sur le réseau DNS.
 
@@ -165,7 +165,7 @@ Cependant, vérifiez bien que les configurations des zones DNS présentes sur le
 
 > [!success]
 >
-> Avant d'ajouter un serveur DNS, vérifiez que ce dernier **et joignable** et contient bien une zone DNS pour votre nom de domaine. Assurez-vous également que cette zone DNS contient tous les enregistrements de type « NS » vers tous les serveurs DNS que vous allez déclarer pour votre nom de domaine.
+> Avant d'ajouter un serveur DNS, vérifiez que ce dernier **est joignable** et contient bien une zone DNS pour votre nom de domaine. Assurez-vous également que cette zone DNS contient tous les enregistrements de type « NS » vers tous les serveurs DNS que vous allez déclarer pour votre nom de domaine.
 >
 > Par exemple : vous souhaitez déclarer les serveurs DNS *ns1.dns-server.tld*, *dnsXX.ovh.net* et *nsXX.ovh.net* pour votre nom de domaine. Vous devrez alors vérifier que les trois enregistrements de type « NS » suivants sont bien présents dans les 3 zones DNS hébergées sur ces 3 serveurs DNS :
 >
@@ -181,9 +181,9 @@ Pour renseigner l'un de vos propres serveurs DNS, remplissez les 2 formulaires d
 
 > [!warning]
 >
-> Chaque encadré de saisie (visible dans la capture écran précédente) ne peut contenir qu'**un seul** serveur DNS à la fois. Un serveurs DNS correspond donc à un encadré.
+> Chaque encadré de saisie (visible dans la capture écran précédente) ne peut contenir qu'**un seul** serveur DNS à la fois. Un serveur DNS correspond donc à un encadré.
 >
-> De plus, une note d'information sur fond bleu, située au dessus du premier encadré, indique l'intervale de serveurs DNS que vous pouvez déclarer pour votre nom de domaine. Ces valeurs varient selon l'extension du nom de domaine.
+> De plus, une note d'information sur fond bleu, située au dessus du premier encadré, indique l'intervalle de serveurs DNS que vous pouvez déclarer pour votre nom de domaine. Ces valeurs varient selon l'extension du nom de domaine.
 
 Une fois les informations renseignées, cliquez sur le bouton `+`{.action} situé à droite des 2 formulaires. Il permet d'ajouter le serveur DNS et fait apparaître un nouvel encadré de saisie en dessous du précédent.
 
