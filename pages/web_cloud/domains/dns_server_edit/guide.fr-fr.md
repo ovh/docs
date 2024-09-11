@@ -90,8 +90,8 @@ Pour utiliser les serveurs DNS par défaut d'OVHcloud, cliquez sur `Appliquer la
 
 Elle résume le nom des 2 serveurs DNS qui vont être appliqués à votre nom de domaine. Ils doivent avoir l'une des 3 formes suivantes :
 
-- `nsXX.ovh.net` et `dnsXX.ovh.net` (où chaque `X` représente un chiffre compris entre **0** et **9**)
-- `nsXX.ovh.ca` et `dnsXX.ovh.ca` (où chaque `X` représente un chiffre compris entre **0** et **9**)
+- `nsXX.ovh.net` et `dnsXX.ovh.net` ou, `nsXXX.ovh.net` et `dnsXXX.ovh.net` (où chaque `X` représente un chiffre compris entre **0** et **9**)
+- `nsXX.ovh.ca` et `dnsXX.ovh.ca` ou, `nsXXX.ovh.ca` et `dnsXXX.ovh.ca` (où chaque `X` représente un chiffre compris entre **0** et **9**)
 - `ns200.anycast.me` et `dns200.anycast.me` (si vous avez souscrit à l'option [DNS anycast](/links/web/domains-options))
 
 S'ils correspondent à ceux que vous souhaitez appliquer, cliquez sur `Appliquer`{.action}.
