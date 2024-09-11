@@ -49,8 +49,8 @@ Retrieve the *DNS servers* information including **all** their associated IPv4 a
 
 In our example shown above, the **domain.tld** domain currently uses the following **DNS servers**:
 
-- **dnsX1.ovh.net** associated with IPv4 *203.0.113.0* and IPv6 *2001:db8:1:1b00:203:0:113:0*
-- **dnsX2.ovh.net** associated with IPv4 *203.0.113.1* and IPv6 *2001:db8:1:1b00:203:0:113:1*
+- **dnsX1.ovh.ca** associated with IPv4 *203.0.113.0* and IPv6 *2001:db8:1:1b00:203:0:113:0*
+- **dnsX2.ovh.ca** associated with IPv4 *203.0.113.1* and IPv6 *2001:db8:1:1b00:203:0:113:1*
 
 If you need more information, please read [our tutorial on the Zonemaster tool](/pages/web_cloud/domains/dns_zonemaster).
 
@@ -93,13 +93,13 @@ In the window that opens, enter the information requested:
 
 In the image above, taking the example from [step 1](#step1), the glue record you want to add here (from the domain name *domain.tld*) is **dns1.domain.tld**. 
 
-For this glue record, the IP addresses of *target DNS server* are indicated as *203.0.113.0* (IPv4) and *2001:db8:1:1b00:203:0:113:0* (IPv6). These IPs correspond to one of the two DNS servers currently used for *domain.tld* (**dnsX1.ovh.net**). 
+For this glue record, the IP addresses of *target DNS server* are indicated as *203.0.113.0* (IPv4) and *2001:db8:1:1b00:203:0:113:0* (IPv6). These IPs correspond to one of the two DNS servers currently used for *domain.tld* (**dnsX1.ovh.ca**). 
 
-This glue record is added so that **dns1.domain.tld** can ultimately replace the DNS server name **dnsX1.ovh.net** currently used by the domain name *domain.tld*.
+This glue record is added so that **dns1.domain.tld** can ultimately replace the DNS server name **dnsX1.ovh.ca** currently used by the domain name *domain.tld*.
 
 Once you have entered this information, click the `Next`{.action} button, read the information displayed, then click `Confirm`{.action}. Repeat this step as many times as necessary, depending on the number of DNS servers your domain name uses.
 
-In our example, you will need to repeat the operation to create the **dns2.domain.tld** glue. This will then replace the DNS server **dnsX2.ovh.net** currently associated with IPv4 *203.0.113.1* and IPv6 *2001:db8:1:1b00:203:0:113:1*
+In our example, you will need to repeat the operation to create the **dns2.domain.tld** glue. This will then replace the DNS server **dnsX2.ovh.ca** currently associated with IPv4 *203.0.113.1* and IPv6 *2001:db8:1:1b00:203:0:113:1*
 
 ### Step 3: Create the A and AAAA DNS records corresponding to the custom DNS <a name="step3"></a>
 
@@ -117,14 +117,14 @@ You can do this via the interface given by the service provider managing your do
 > In all cases, you will need to wait between 4 and 24 hours for the DNS zone modification to propagate across the entire DNS network. We recommend that you wait until the end of this period before continuing.
 >
 
-If we go back to our previous example, the GLUE records that we want to add (from the *domain.tld* domain) are **dns1.domain.tld** and **dns2.domain.tld**. The goal is to replace the current DNS servers **dnsX1.ovh.net** and **dnsX2.ovh.net**.
+If we go back to our previous example, the GLUE records that we want to add (from the *domain.tld* domain) are **dns1.domain.tld** and **dns2.domain.tld**. The goal is to replace the current DNS servers **dnsX1.ovh.ca** and **dnsX2.ovh.ca**.
 
 As a result, the following records are added to the active DNS zone of the domain name *domain.tld*:
 
- - An *A* DNS record for the *subdomain* **dns1.domain.tld** to the IP *203.0.113.0* (DNS server IPv4 **dnsX1.ovh.net**)
- - A *AAAA* DNS record for the *subdomain* **dns1.domain.tld** to the IP *2001:db8:1:1b00:203:0:113:0* (DNS server IPv6 **dnsX1.ovh.net**)
- - An *A* DNS record for the *subdomain* **dns2.domain.tld** to the IP *203.0.113.1* (DNS server IPv4 **dnsX2.ovh.net**)
- - A *AAAA* DNS record for the *subdomain* **dns2.domain.tld** to the IP *2001:db8:1:1b00:203:0:113:1* (DNS server IPv6 **dnsX2.ovh.net**)
+ - An *A* DNS record for the *subdomain* **dns1.domain.tld** to the IP *203.0.113.0* (DNS server IPv4 **dnsX1.ovh.ca**)
+ - A *AAAA* DNS record for the *subdomain* **dns1.domain.tld** to the IP *2001:db8:1:1b00:203:0:113:0* (DNS server IPv6 **dnsX1.ovh.ca**)
+ - An *A* DNS record for the *subdomain* **dns2.domain.tld** to the IP *203.0.113.1* (DNS server IPv4 **dnsX2.ovh.ca**)
+ - A *AAAA* DNS record for the *subdomain* **dns2.domain.tld** to the IP *2001:db8:1:1b00:203:0:113:1* (DNS server IPv6 **dnsX2.ovh.ca**)
 
 ### Step 4: Modify your domain name’s DNS servers
 
@@ -155,7 +155,7 @@ Finalise the steps and, if necessary, refer to the instructions set out in our d
 > A propagation delay of 24 to 48 hours is required for the change of DNS servers to take effect across the entire DNS network. We recommend that you wait until the end of this period before continuing.
 >
 
-In our example of customising the DNS servers for the domain name *domain.tld*, we replace the DNS server **dnsX1.ovh.net** with **dns1.domain.tld** and the DNS server **dnsX2.ovh.net** with **dns2.domain.tld**, then wait for the DNS propagation to propagate.
+In our example of customising the DNS servers for the domain name *domain.tld*, we replace the DNS server **dnsX1.ovh.ca** with **dns1.domain.tld** and the DNS server **dnsX2.ovh.ca** with **dns2.domain.tld**, then wait for the DNS propagation to propagate.
 
 ### Step 5: Replace the NS records in your domain name’s active DNS zone
 
@@ -191,19 +191,19 @@ The following elements are observed:
 
 - The first numeric value of the line *SOA* is as follows: *2023071700*.
 - There are two *NS* records for the domain name *domain.tld*.
-- Records of type *NS* still target the two DNS servers **dnsX1.ovh.net** and **dnsX2.ovh.net**.
+- Records of type *NS* still target the two DNS servers **dnsX1.ovh.ca** and **dnsX2.ovh.ca**.
 
 To finalise the customisation of the DNS servers for the domain name *domain.tld*, you will need to:
 
 - Increment the first numeric value of the *SOA* line by "1": *202307170**1***. (If the first numeric value was *2023071704*, you would get the following result: *202307170**5***).
-- Replace the target **dnsX1.ovh.net.** with **dns1.domain.tld.** only for the line that starts with **IN NS**.
-- Replace the target **dnsX2.ovh.net.** with **dns2.domain.tld.** only for the line that starts with **IN NS**.
+- Replace the target **dnsX1.ovh.ca.** with **dns1.domain.tld.** only for the line that starts with **IN NS**.
+- Replace the target **dnsX2.ovh.ca.** with **dns2.domain.tld.** only for the line that starts with **IN NS**.
 
 Once the modifications are made, the result of our example will be the following:
 
 ```bash
 $TTL 3600
-@	IN SOA dnsX1.ovh.net. tech.ovh.net. (2023071701 86400 3600 3600000 300)
+@	IN SOA dnsX1.ovh.ca. tech.ovh.net. (2023071701 86400 3600 3600000 300)
                   IN NS     dns1.domain.tld.
                   IN NS     dns2.domain.tld.
 ```
