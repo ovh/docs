@@ -1,7 +1,7 @@
 ---
 title: "Configurar e utilizar o GitHub com o seu alojamento web OVHcloud"
 excerpt: "Saiba como configurar e utilizar o GitHub com o seu alojamento web na sua Área de Cliente OVHcloud"
-updated: 2024-08-22
+updated: 2024-09-11
 ---
 
 > [!primary]

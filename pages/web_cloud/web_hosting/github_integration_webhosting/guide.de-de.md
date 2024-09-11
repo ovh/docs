@@ -1,7 +1,7 @@
 ---
 title: "Konfiguration und Nutzung von GitHub mit OVHcloud Webhosting"
 excerpt: "Erfahren Sie hier, wie Sie GitHub mit Ihrem Webhosting In Ihrem OVHcloud Kundencenter konfigurieren und verwenden"
-updated: 2024-08-22
+updated: 2024-09-11
 ---
 
 > [!primary]

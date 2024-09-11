@@ -1,7 +1,7 @@
 ---
 title: "Configuring and using GitHub with an OVHcloud web hosting plan"
 excerpt: "Find out how to configure and use Git with your web hosting plan in the OVHcloud Control Panel"
-updated: 2024-07-25
+updated: 2024-09-11
 ---
 
 ## Objective

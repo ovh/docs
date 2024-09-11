@@ -1,7 +1,7 @@
 ---
 title: "Configurare e utilizzare GitHub con un hosting Web OVHcloud"
 excerpt: "Scopri come configurare e utilizzare GitHub con il tuo hosting Web nello Spazio Cliente OVHcloud"
-updated: 2024-08-22
+updated: 2024-09-11
 ---
 
 > [!primary]
