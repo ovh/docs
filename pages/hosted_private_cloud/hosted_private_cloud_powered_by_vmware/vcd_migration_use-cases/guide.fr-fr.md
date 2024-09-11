@@ -1,6 +1,6 @@
 ---
 title: "VMware Cloud Director - Migration VMware vSphere on OVHcloud"
-excerpt: "Découvrez comment vous préparer à migrer depuis VMware vSphere (Hosted Private Cloud) vers l'offre basée sur VMware Cloud Director (VCD) on OVHcloud"
+excerpt: "Découvrez comment vous préparer à migrer depuis VMware vSphere vers une offre basée un environnement managé VMware Cloud Director (VCD) on OVHcloud"
 updated: 2024-09-11
 ---
 
@@ -18,10 +18,7 @@ updated: 2024-09-11
 
 - Posséder une offre de produits [Hosted Private Cloud VMware](/links/hosted-private-cloud/vmware) managé on OVHcloud.
 - Accès à [l'espace client OVHcloud](/links/manager) OVHcloud.
-- Avoir effectué les étapes de vérifications (checklist) dans ce guide avant le lancement d'une migration vers l'offre VMware Cloud Director (VCD) on OVHcloud.
-- Ne pas nécessiter une certification PCI-DSS, SNC, HDS ou une qualification SecNumCloud.
-- Ne pas avoir de données (VM, vApp) à migrer vers VCD sur plusieurs datacenters (cas multi-vDC, solution ci-dessous) avec votre offre de produit VMware vSphere on OVHcloud.
-- Ne pas utiliser les solutions de replication Zerto.
+- Être contact administrateur ou technique de l'infrastructure VMware on OVHcloud.
 
 ## En pratique
 
@@ -31,7 +28,7 @@ Ce document détaille également les prérequis pour chaque cas d'utilisation et
 
 1. Il est important de vérifier la checklist des cas d'utilisations particuliers ci-dessous avant toutes migrations et vous conformer aux recommandations associées.
 2. Une fois que vous aurez rempli ces exigences en suivant les étapes de la checklist, vous pouvez vous connecter à l'espace client OVHcloud afin de signer les conditions particulières depuis l'environnement prévu à migrer (T&C). Un bloc affiche le document des conditions particulières et vous permet d'accepter ces conditions en suivant les étapes pour valider la migration et signer les conditions particulières du service (voir capture ci-dessous).
-3. Les équipes OVHcloud migreront les VMs du datacenter vDC VMware vSphere principal en utilisant un chemin de migration à chaud (vMotion).
+3. Les équipes OVHcloud migreront les VMs du datacenter (vDC) VMware vSphere principal en utilisant un chemin de migration à chaud (vMotion).
 
 ![VCD Migration](images/vcd_migration.png){.thumbnail}
 
@@ -60,22 +57,34 @@ Retrouvez également toutes les informations nécessaires sur nos pages dédiée
 - [Product - VMware Cloud Director On OVHcloud Evolution (FR)](https://www.ovhcloud.com/fr/lp/vmware-vcd-evolution/)
 - [OVHcloud Labs - VMware Cloud Director On OVHcloud (EN)](https://labs.ovhcloud.com/en/vmware-cloud-director/)
 
-**Important** : La signature des conditions particulières disponibles depuis début septembre 2024 dans le manager doivent être signé pour que la migration soit réalisée par les équipes OVHcloud.
+**Important** : La signature des conditions particulières disponibles depuis début septembre 2024 dans l'espace client doivent être signé pour que la migration soit réalisée par les équipes OVHcloud.
 
 Les migrations seront effectuées en quatre vagues, à partir du mois d'octobre, selon les services actifs dans votre environnement.
 
 **Le calendrier de migration est prévu comme suit** :
 
-| **Vague** | **Mois de migration** | **Environnements compatibles avec la migration**                                                                                                             |                                                                                                                 
-|:---------:|:---------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|     ❶     |     `Octobre 2024`      | - **Sans** licence Microsoft (SPLA) fourni par OVHcloud<br/>- **Sans** NSX et **Sans** vSAN                                                                  |
-|     ❷     |     `Novembre 2024`     | - **Avec** licence Microsoft Windows (SPLA) fourni par OVHcloud<br/>- **Sans** NSX et **Sans** vSAN                                                          |
-|     ❸     |     `Décembre 2024`     | - **Avec** licence Microsoft Windows (SPLA) fourni par OVHcloud<br/>- **Avec** réseau privé OVHcloud vRack, <br/>- **Sans** stockage VMware vSAN on OVHcloud |
-|     ❹      |     `Janvier 2024`      | - **Avec** licence Microsoft Windows (SPLA) fourni par OVHcloud<br/>- **Avec** stockage VMware vSAN on OVHcloud                                              |
+| **Vague** | **Mois de migration** | **Environnements compatibles avec la migration**                                                        |   **Offres**   | **Advanced Network & Security** | **vSAN Storage** | **OVHcloud Microsoft (SPLA)** |                                                                                                                
+|:---------:|:---------------------:|:--------------------------------------------------------------------------------------------------------|:--------------:|:-------------------------------:|:----------------:|:-----------------------------:|
+|     ❶     |     `Octobre 2024`      | - **Sans** licence Microsoft (SPLA) fourni par OVHcloud<br/>- **Sans** NSX et vSAN Storage              | `VCD Standard` |                ❌                |        ❌         |               ❌               |
+|     ❷     |     `Novembre 2024`     | - **Avec** licence Microsoft (SPLA) fourni par OVHcloud<br/>- **Sans** NSX et vSAN Storage              | `VCD Standard` |                ❌                |        ❌         |               ✅               |
+|     ❸     |     `Décembre 2024`     | - **Avec** licence Microsoft (SPLA) fourni par OVHcloud<br/>- **Avec** NSX <br/>- **Sans** vSAN Storage | `VCD Advanced` |                ✅                |        ❌         |               ✅               |
+|     ❹      |     `Janvier 2024`      | - **Avec** licence Microsoft (SPLA) fourni par OVHcloud<br/>- **Avec** NSX et vSAN Storage              | `VCD Premium`  |                ✅                |        ✅         |               ✅               |
+
+or
+
+| **Vague** | **Mois de migration** |   **Offres**   | **Advanced <br/>Network & Security** | **vSAN Storage** |  **OVHcloud <br/>Microsoft (SPLA)**  | **Environnements compatibles avec la migration**                                                                           |                                                                                                                
+|:---------:|:---------------------:|:--------------:|:-------------------------------:|:----------------:|:------------------------------:|----------------------------------------------------------------------------------------------------------------------------|
+|     ❶     |     `Octobre 2024`      | `VCD Standard` |                ❌                |        ❌         |               ❌                | - **Sans** licence VM Microsoft Windows (SPLA) fourni par OVHcloud<br/>- **Sans** NSX (vRack) et vSAN Storage              |
+|     ❷     |     `Novembre 2024`     | `VCD Standard` |                ❌                |        ❌         |               ✅                | - **Avec** licence VM Microsoft Windows (SPLA) fourni par OVHcloud<br/>- **Sans** NSX (vRack) et vSAN Storage              |
+|     ❸     |     `Décembre 2024`     | `VCD Advanced` |                ✅                |        ❌         |               ✅                | - **Avec** licence VM Microsoft Windows (SPLA) fourni par OVHcloud<br/>- **Avec** NSX (vRack) <br/>- **Sans** vSAN Storage |
+|     ❹      |     `Janvier 2024`      | `VCD Premium`  |                ✅                |        ✅         |               ✅                | - **Avec** licence Microsoft Windows (SPLA) fourni par OVHcloud<br/>- **Avec** NSX (vRack) et vSAN Storage                 |
+
 
 Au cours de ce processus, vos données resteront dans le même stockage, à l'exception du stockage vSAN. Vos adresses IP resteront inchangées également.
 
 La date de migration vous sera communiquer par E-Mail au minimum 15 jours avant le début de la migration.
+
+Nous vous invitons à lire le guide [VMware Cloud Director - Les concepts fondamentaux de VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts) pour voir les features inclut dans chaque vague de migrations de vos environnements.
 
 #### Demande de migration après le 1er novembre 2024
 
@@ -132,7 +141,7 @@ Voici un rappel des taches qu'il vous reste à mener une fois la migration effec
 
 **Configuration du stockage (Repository)**
 
-Après la migration, vous devrez configurer votre nouvelle implémentation de stockage avec **Veeam Backup & Replication** avec les paramètres adéquats. 
+Après la migration, vous devrez configurer votre nouvelle implémentation de stockage **Veeam Backup & Replication** avec les paramètres adéquats. 
 
 Qui pourront être personnalisés en fonction des niveaux de services choisis :
 
