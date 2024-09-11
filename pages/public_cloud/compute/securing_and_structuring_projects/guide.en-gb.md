@@ -40,14 +40,14 @@ The [Password management guide](/pages/account_and_service_management/account_in
 **Implementation**: Use IAM features to manage identities, groups, and policies in OVHcloud IAM.
 
 **Key Components**:
-1. **Identities**: Individual accounts for people (user) or service account who need access to OVHcloud resources.
-2. **Groups**: Collections of user or resources with common access needs.
+1. **Identities**: Individual accounts for people (users) or service accounts that need access to OVHcloud resources.
+2. **Groups**: Collections of users or resources with common access needs.
 3. **Policies**: Rules that define what actions users and groups can perform on which resources.
 
 **Examples**:
 
 - **Managing identities**: 3 types of identities are supported and presented in that [documentation page](/pages/manage_and_operate/iam/identities-management)
-    * 'local users' which are identities representing a person in your organisation and associated to your OVHcloud account.  See [Creating and managing local users on an OVHcloud account](/pages/account_and_service_management/account_information/ovhcloud-users-management)
+    * 'local users': identities representing a person in your organisation and associated to your OVHcloud account.  See [Creating and managing local users on an OVHcloud account](/pages/account_and_service_management/account_information/ovhcloud-users-management)
     * 'service accounts' which are used for 'machine to machine' interaction. Service account are also associated to your OVHcloud account. See  [Managing OVHcloud service accounts via the API](/pages/manage_and_operate/api/manage-service-account/) and [How to use service accounts to connect to OVHcloud APIs](/pages/account_and_service_management/account_information/authenticate-api-with-service-account/)
     * 'Federated identities': multiple federation protocols / providers are supported and documented : [AD FS](/pages/account_and_service_management/account_information/ovhcloud-account-connect-saml-adfs), [Google Workspace](/pages/account_and_service_management/account_information/ovhcloud-account-connect-saml-google-workspace), [Entra ID](/pages/account_and_service_management/account_information/ovhcloud-account-connect-saml-azure-ad) or [OKTA](/pages/account_and_service_management/account_information/ovhcloud-account-connect-saml-okta)
     
@@ -78,9 +78,9 @@ For example, if we use the pattern defined above, we could have the following cl
 
 ### Step 4: Providing Role-Based Access Control (RBAC) to Public Cloud projects through IAM Policies 
 
-Now that you have identities and projects, you can define the access right for each projects. We recommend to use groups and not individual identities when defining policy since this makes the policy lifecycle management easier. 
+Now that you have identities and projects, you can define the access rights for each project. We recommend to use groups and not individual identities when defining policy since this makes the policy lifecycle management easier. 
 
-In the following example we will use two groups called `finance_developer_group` and `finance_SRE_group` that contains the identities of the users that are developing & the one that are making sure that the finance application in in production in a healthy state.
+In the following example, we will use two groups called `finance_developer_group` and `finance_SRE_group`, which contain the identities of the users who are developing and those ensuring that the finance application is in production in a healthy state.
 
 For this example, we will take a tool used by finance team to make their financial planning and analysis (FPA). In this fictive case, we will have 3 public cloud projects managing the resources of three environments (development, staging and production). The projects are named:
 * `cloud_project_finance_fpa_dev` 
