@@ -7,7 +7,7 @@ updated: 2024-08-23
 > [!warning]
 >
 > Usage of the [Public Cloud Load Balancer](https://www.ovhcloud.com/en-gb/public-cloud/load-balancer/) with Managed Kubernetes Service (MKS) is now GA.
-> The LoadBalancer based on Octavia is not the default one yet. You must use the annotation `loadbalancer.ovhcloud.com/class: octavia` to use deploy an Octavia LoadBalancer from your MKS cluster.
+> The LoadBalancer based on Octavia is not the default one yet. You must use the annotation `loadbalancer.ovhcloud.com/class: octavia` to deploy an Octavia LoadBalancer from your MKS cluster.
 >
 
 ## Objective
