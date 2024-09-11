@@ -922,7 +922,7 @@
                 + [Managing users and projects in Managed Rancher Service](public_cloud/containers_orchestration/managed_rancher_service/managing-users-and-projects)
                 + [Tutorial - How to use Rancher CLI](public_cloud/containers_orchestration/managed_rancher_service/using-rancher-cli)
             + [Resources](public-cloud-containers-orchestration-managed-rancher-service-resources)
-                + [Managed Rancher supported versions and lifecycle policy](public_cloud/containers_orchestration/managed_rancher_service/Section_Rancher_Version)
+                + [Managed Rancher Service supported versions and lifecycle policy](public_cloud/containers_orchestration/managed_rancher_service/lifecycle-policy)
             + [Creating or importing a Kubernetes cluster](public-cloud-containers-orchestration-managed-rancher-service-creating-importing-kubernetes)
                 + [Importing an existing Kubernetes cluster in MRS](public_cloud/containers_orchestration/managed_rancher_service/import-existing-kubernetes)
                 + [Creating a Managed Kubernetes Service (MKS) cluster in MRS](public_cloud/containers_orchestration/managed_rancher_service/creating-mks-kubernetes-cluster)
