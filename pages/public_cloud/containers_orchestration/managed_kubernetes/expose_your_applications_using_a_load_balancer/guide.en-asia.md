@@ -1,13 +1,13 @@
 ---
 title: Expose your applications using OVHcloud Public Cloud Load Balancer
 excerpt: "How to expose your applications hosted on Managed Kubernetes Service using the OVHcloud Public Cloud Load Balancer"
-updated: 2024-08-23
+updated: 2024-09-11
 ---
 
 > [!warning]
 >
-> Usage of the [Public Cloud Load Balancer](https://www.ovhcloud.com/asia/public-cloud/load-balancer/) with Managed Kubernetes Service (MKS) is currently in Beta phase.
-> This feature is also available to customers using the services of our US subsidiary.
+> Usage of the [Public Cloud Load Balancer](https://www.ovhcloud.com/asia/public-cloud/load-balancer/) with Managed Kubernetes Service (MKS) is now GA.
+> The LoadBalancer based on Octavia is not the default one yet. You must use the annotation `loadbalancer.ovhcloud.com/class: octavia` to deploy an Octavia LoadBalancer from your MKS cluster.
 >
 
 ## Objective
@@ -26,13 +26,12 @@ This guide uses some concepts that are specific to our Public Cloud Load Balance
 To be able to deploy [Public Cloud Load Balancer](https://www.ovhcloud.com/asia/public-cloud/load-balancer/), your Managed Kubernetes Service must run or have been upgraded to the following patch versions:
 
 | Kubernetes versions |
-|-------------|
-| 1.25.16-7>= |
-| 1.26.4-3>=  |
-| 1.27.12-1>= |
-| 1.28.8-1>=  |
-| 1.29.3-3>=  |
-| 1.30.2-1 >= |
+| ------------------- |
+| 1.26.4-3  >=        |
+| 1.27.12-1 >=        |
+| 1.28.8-1  >=        |
+| 1.29.3-3  >=        |
+| 1.30.2-1  >=        |
 
 ### Network prerequisite to expose your Load Balancers publicly
 
@@ -528,7 +527,36 @@ spec:
 > If you want to delete a MKS cluster which is using SharedLoadBalancer feature, we strongly recommend you to delete the K8S Service which is using it to avoid any issue (such as a remaining Octavia LoadBalancer, configuration not removed, ...).
 >
 
-## Resources Naming Convention <a name="namingconvention"></a>
+## Common issues when deploying a new LoadBalancer
+
+> [!primary]
+>
+> If you encounter issues when trying to deploy a Public Cloud LoadBalancer, you can get more information using the `kubectl describe service <svc_name>` command. This will help you get events linked to the service for debugging purposes.
+>
+
+### Network is not matching requirements for Public LoadBalancer: No GatewayIP
+
+When trying to spawn a Public LoadBalancer, you must have a GatewayIP assigned to your Subnet to allow a FloatingIP in your subnet. Once the GatewayIP parameter is set with a valid IP, an OpenStack router will be spawned to attach a PublicIP to your Octavia LoadBalancer.
+
+```console
+Error syncing load balancer: failed to ensure load balancer: Network is not matching requirement for Public LoadBalancer (no GatewayIP)
+```
+
+See the guide: [How set a GatewayIP on an OpenStack Subnet](/pages/public_cloud/public_cloud_network_services/configuration-04-update_subnet).
+
+If you don't want to deploy an OpenStack router in your subnet (e.g. you manage your own router), you have to configure the `LoadBalancerSubnetId` of your MKS cluster. [More information here](#network-prerequisite-to-expose-your-load-balancers-publicly).
+
+### Network is not matching requirements for Public LoadBalancer: Cannot deploy an OpenStack Router
+
+When trying to spawn a Public LoadBalancer, you must have a GatewayIP assigned to your Subnet to allow a FloatingIP in your subnet and this GatewayIP must be avaiable or attached to an OpenStack router.
+
+```console
+Error syncing load balancer: failed to ensure load balancer: Network is not matching requirement for Public LoadBalancer (cannot deploy an OpenStack Router)
+```
+
+In your case, the GatewayIP is already used by something else and we cannot deploy an OpenStack Router for your Public LoadBalancer. If you are not able to release the IP (e.g. it is used by a router you deployed), you have to configure the `LoadBalancerSubnetId` of your MKS cluster. [More information here](#network-prerequisite-to-expose-your-load-balancers-publicly)
+
+## Resources Naming Convention
 
 When deploying LoadBalancer through Kubernetes Service with type LoadBalancer, the Cloud Controller Manager (CCM) implementation will automatically create Public Cloud resources (LoadBalancer, Listener, Pool, Health-monitor, Gateway, Network, Subnet,...). In order to easily identify those resources, here are the naming templates:
 
@@ -537,16 +565,16 @@ When deploying LoadBalancer through Kubernetes Service with type LoadBalancer, t
 > Do not change the name of resources automatically created by MKS, as it may result to inconsistencies.
 >
 
-| Resource                                                           | Naming                                                                                                                 |
-|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| Public Cloud Load Balancer                                         | kube_service_$mks_cluster_shortname_$namespace_$k8s_service_name |
-| Listener                                                           | listener_kube_service_$listener_n°_$mks_cluster_shortname_$namespace_$service-name                                    |
-| Pool                                                               | pool_kube_service_$pool_n°_$mks_cluster_shortname_$namespace_$service-name                                            |
-| Health-monitor                                                     | monitor_kube_service_$mks_cluster_shortname_$namespace_$service-name                                                  |
-| Network (only automatically created in Public-to-Public scenario)  | k8s-cluster-$mks_cluster_id                                                                                            |
-| Subnet (only automatically created in Public-to-Public scenario)   | k8s-cluster-$mks_cluster_id                                                                                            |
-| Gateway/Router                                                     | k8s-cluster-$mks_cluster_id                                                                                            |
-| Floating IP                                                        | Name = IP. Description= LB Octavia Name                                                                                |
+| Resource                                                          | Naming                                                                             |
+| ----------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| Public Cloud Load Balancer                                        | kube_service_$mks_cluster_shortname_$namespace_$k8s_service_name                   |
+| Listener                                                          | listener_kube_service_$listener_n°_$mks_cluster_shortname_$namespace_$service-name |
+| Pool                                                              | pool_kube_service_$pool_n°_$mks_cluster_shortname_$namespace_$service-name         |
+| Health-monitor                                                    | monitor_kube_service_$mks_cluster_shortname_$namespace_$service-name               |
+| Network (only automatically created in Public-to-Public scenario) | k8s-cluster-$mks_cluster_id                                                        |
+| Subnet (only automatically created in Public-to-Public scenario)  | k8s-cluster-$mks_cluster_id                                                        |
+| Gateway/Router                                                    | k8s-cluster-$mks_cluster_id                                                        |
+| Floating IP                                                       | Name = IP. Description= LB Octavia Name                                            |
 
 ## Other resources
 

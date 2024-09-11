@@ -1,8 +1,16 @@
 ---
 title: Using the OVHcloud Managed Kubernetes LoadBalancer
 excerpt: Find out how to use and deploy an OVHcloud Managed Kubernetes LoadBalancer
-updated: 2024-05-08
+updated: 2024-09-11
 ---
+
+> [!warning]
+> This documentation is about "LoadBalancer for K8s". If you want to benefit from the future MKS LoadBalancer implementation based on Octavia LoadBalancer, please refer to [this page](/pages/public_cloud/containers_orchestration/managed_kubernetes/expose_your_applications_using_a_load_balancer/).
+>
+> To force the usage of "LoadBalancer for K8s" in your MKS cluster, add this annotation `loadbalancer.ovhcloud.com/class: iolb` to your K8s Service.
+>
+> Note: "LoadBalancer for K8s" will be replaced by the Octavia implementation.
+>
 
 ## Objective
 
@@ -64,7 +72,6 @@ It's rather cumbersome to use `NodePort` `Services` in production. As you are us
 
 > [!warning]
 > If your OVHcloud Managed Kubernetes is connected to a vRack, the `NodePort` is only exposed on your private subnet. So you have to check your private IPs on your nodes in your Nodepool and connect via one of these private IPs.
->
 
 ### Exposing services as LoadBalancer
 
