@@ -1,7 +1,7 @@
 ---
 title: Expose your applications using OVHcloud Public Cloud Load Balancer
 excerpt: "How to expose your applications hosted on Managed Kubernetes Service using the OVHcloud Public Cloud Load Balancer"
-updated: 2024-08-23
+updated: 2024-09-11
 ---
 
 > [!warning]
@@ -275,9 +275,10 @@ spec:
 
   Enable the ProxyProtocol on all listeners. Default is 'false'.
 
-  Values:
-  - `v1`, `true`: enable the ProxyProtocol version 1
-  - `v2`: enable the ProxyProtocol version 2
+> **Values:**
+>
+> - `v1`, `true`: enable the ProxyProtocol version 1
+> - `v2`: enable the ProxyProtocol version 2
 
 - `loadbalancer.openstack.org/timeout-client-data`
 
