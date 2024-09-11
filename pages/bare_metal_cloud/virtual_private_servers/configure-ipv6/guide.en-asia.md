@@ -37,7 +37,7 @@ Please take note of the following terminology that will be used in code examples
 
 |Term|Description|Example|
 |---|---|---|
-|YOUR_IPv6|The IPv6 address assigned to your service|2001:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:yyyy|
+|YOUR_IPV6|The IPv6 address assigned to your service|2001:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:yyyy|
 |IPv6_PREFIX|The prefix (or *netmask*) of your IPv6 block, usually 128|2001:xxxx:xxxx:xxxx::/128|
 |IPv6_GATEWAY|The gateway of your IPv6 block|2001:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:zzzz|
 

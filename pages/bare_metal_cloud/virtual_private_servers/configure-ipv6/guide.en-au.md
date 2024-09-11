@@ -126,7 +126,7 @@ Moreover, keep in mind that the exact file names may vary.
 
 By default, the configuration files are located in `/etc/network/interfaces.d/`.
 
-The best practice is to create a separate configuration file in the `/etc/network/interfaces.d/` directory to configure IPV6. In our example, our file is called `51-cloud-init-ipv6`:
+The best practice is to create a separate configuration file in the `/etc/network/interfaces.d/` directory to configure the IPv6 address. In our example, our file is called `51-cloud-init-ipv6`:
 
 ```bash
 sudo nano /etc/network/interfaces.d/51-cloud-init-ipv6
