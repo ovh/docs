@@ -12,7 +12,7 @@ This guide covers the submission of new [** AI Notebooks**](/pages/public_cloud/
 
 To follow this guide, ensure that you **have the `ovhai` CLI installed** and that you are logged in as a user of one of your Public Cloud Projects, with the necessary permissions (at least *AI Training Operator* and *ObjectStore operator*), to use OVHcloud AI Products. 
 
-For more information on **installing the ovhai CLI, see the guide on [Installing the OVHcloud AI CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli)**.
+For more information on **installing and configuring the ovhai CLI, see the guide on [Installing the OVHcloud AI CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli)**.
 
 ## Instructions
 
