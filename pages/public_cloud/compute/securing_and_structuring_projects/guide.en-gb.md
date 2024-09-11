@@ -108,12 +108,13 @@ Thanks to that policy, the user belonging to those 2 groups will have access to 
 Let's continue by creating policies in order to enable the access rights tables described above.For that we will create 4 policies summarized below.
 
 
-| Policy name |Identities | Actions |  Resources | 
-|------|------|------|-----|
-|cloud_project_finance_fpa_dev-RW|finance_developer_group|globalWriteAccess|cloud_project_finance_fpa_dev|
-|cloud_project_finance_fpa_staging-RO|finance_developer_group|globalReadAccess|cloud_project_finance_fpa_staging|
-|cloud_project_finance_fpa_staging-RW|finance_SRE_group|globalWriteAccess|cloud_project_finance_fpa_staging|
-|cloud_project_finance_fpa_prod-RW|finance_SRE_group|globalWriteAccess|cloud_project_finance_fpa_prod|
+| Policy name                          | Identities              | Actions           | Resources                         |
+| ------------------------------------ | ----------------------- | ----------------- | --------------------------------- |
+| cloud_project_finance_fpa_dev-RW     | finance_developer_group | globalWriteAccess | cloud_project_finance_fpa_dev     |
+| cloud_project_finance_fpa_staging-RO | finance_developer_group | globalReadAccess  | cloud_project_finance_fpa_staging |
+| cloud_project_finance_fpa_staging-RW | finance_SRE_group       | globalWriteAccess | cloud_project_finance_fpa_staging |
+| cloud_project_finance_fpa_prod-RW    | finance_SRE_group       | globalWriteAccess | cloud_project_finance_fpa_prod    |
+
 
 The policy naming following the following pattern : \<Name of the resource\>-RO/RW
 
