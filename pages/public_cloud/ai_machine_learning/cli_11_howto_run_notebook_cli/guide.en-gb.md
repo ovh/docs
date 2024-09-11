@@ -138,7 +138,7 @@ ovhai notebook run pytorch jupyterlab \
   --flavor a100-1-gpu
 ```
 
-Then, you can add to your command the `--cpu <NUMBER>` or `--gpu <NUMBER>` flag to specify how many you want. The following example will run the same notebook but on 2 A100 GPUs:
+Then, you can add to your command the `--cpu <NUMBER>` or `--gpu <NUMBER>` flag to specify how many you want. The following example will run the same notebook but on `2 A100`{.action} GPUs:
 
 ```bash
 ovhai notebook run pytorch jupyterlab \
@@ -150,11 +150,11 @@ An example of what a slightly more specific notebook launch would look like:
 
 ```bash
 ovhai notebook run pytorch jupyterlab \
-	--name my_first_notebook \
-	--framework-version pytorch2.4.0-py311-cuda11.8 \
+  --name my_first_notebook \
+  --framework-version pytorch2.4.0-py311-cuda11.8 \
   --flavor ai1-1-cpu \
   --cpu 6 \
-	--label my_label_key=my_label_value
+  --label my_label_key=my_label_value
 ```
 
 This will launch a new AI Notebook with `PyTorch 2.4.0`{.action}, `Jupyterlab`{.action}, and `6 CPUs`{.action}, in a restricted access.
@@ -206,7 +206,7 @@ Status:
 
 The first line in the output shows the new `AI Notebook ID`: `7600dda5-27f7-4937-9260-e24c987ae3c6`.
 
-The `Url` field corresponds to your JupyterLab server. You will need to wait a few seconds for the notebook to start and reach the `RUNNING`{.action} status. Then, the notebook URL will be accessible.
+In the last lines, the `Url` field corresponds to your JupyterLab server. You will need to wait a few seconds for the notebook to start and reach the `RUNNING`{.action} status. Once it has, the notebook URL will be accessible.
 
 To follow its state, you can get the notebook information again using its `ID`.
 
