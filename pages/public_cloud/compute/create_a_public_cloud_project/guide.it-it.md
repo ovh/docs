@@ -16,11 +16,11 @@ La creazione di un progetto è il primo passo nella distribuzione delle [istanze
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
-Per prima cosa, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) poi clica sul menu `Public Cloud`{.action}.
+Per prima cosa, accedi al tuo [Spazio Cliente OVHcloud](/links/manager) poi clica sul menu `Public Cloud`{.action}.
 
 Leggi le condizioni contrattuali selezionando la casella corrispondente e clicca su `Scopri l’universo Public Cloud`{.action}.
 
@@ -56,6 +56,6 @@ Da questo momento hai accesso a tutto l'ecosistema Public Cloud OVHcloud. Scopri
 - [Eliminare un progetto Public Cloud](/pages/public_cloud/compute/delete_a_project)
 - [Sistema di fatturazione dei servizi Cloud](/pages/public_cloud/compute/analyze_billing)
 
-Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](https://www.ovhcloud.com/it/professional-services/) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
+Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](/links/professional-services) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

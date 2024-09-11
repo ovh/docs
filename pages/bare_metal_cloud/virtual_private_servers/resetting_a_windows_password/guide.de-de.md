@@ -19,7 +19,7 @@ Wenn Sie Ihr Administrator-Passwort nicht mehr haben, können Sie es über den O
 ## Voraussetzungen
 
 - Sie haben einen [VPS](https://www.ovhcloud.com/de/vps/) oder eine Public Cloud Instanz(https://www.ovhcloud.com/de/public-cloud/) in Ihrem OVHcloud Account
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) angemeldet.
+- Sie sind in Ihrem [OVHcloud Kundencenter](/links/manager) angemeldet.
 
 ## In der praktischen Anwendung
 

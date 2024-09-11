@@ -17,7 +17,7 @@ O dispositivo KVM permite uma conexão direta ao seu VPS sem precisar de utiliza
 ## Requisitos
 
 - Um [VPS](https://www.ovhcloud.com/pt/vps/) na sua conta OVHcloud.
-- Estar conectado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Estar conectado à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
@@ -25,13 +25,13 @@ O dispositivo KVM permite uma conexão direta ao seu VPS sem precisar de utiliza
 
 #### Gama VPS atual
 
-Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na secção `Servidor privado virtual`{.action}. Nesta secção, clique em `...`{.action} à direita do nome do VPS, na zona «O seu VPS».
+Ligue-se à sua [Área de Cliente OVHcloud](/links/manager), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na secção `Servidor privado virtual`{.action}. Nesta secção, clique em `...`{.action} à direita do nome do VPS, na zona «O seu VPS».
 
 ![Abrir KVM](images/kvm-new1.png){.thumbnail}
 
 #### Gama VPS antiga
 
-Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na secção `Servidor privado virtual`{.action}. Nesta secção, clique no atalho intitulado `KVM`{.action}.
+Ligue-se à sua [Área de Cliente OVHcloud](/links/manager), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na secção `Servidor privado virtual`{.action}. Nesta secção, clique no atalho intitulado `KVM`{.action}.
 
 ![Clique no botão KVM](images/kvm-new2.png){.thumbnail}
 

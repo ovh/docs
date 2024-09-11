@@ -16,14 +16,14 @@ El modo de rescate permite acceder a sus datos de forma permanente, aunque el si
 
 ## Requisitos
 
-- Un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/), un [VPS](https://www.ovhcloud.com/es/vps/) o una instancia de [Public Cloud](https://www.ovhcloud.com/es/public-cloud/) en su cuenta de OVHcloud (excepto sistemas Windows)
-- Tienes acceso a tu [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Un [servidor dedicado](/links/bare-metal/bare-metal), un [VPS](https://www.ovhcloud.com/es/vps/) o una instancia de [Public Cloud](https://www.ovhcloud.com/es/public-cloud/) en su cuenta de OVHcloud (excepto sistemas Windows)
+- Tienes acceso a tu [Panel de configuración de OVHcloud](/links/manager).
 
 > [!warning]
 >
 > La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 >
-> Este tutorial le ayudará a realizar las tareas más habituales. No obstante, si tiene dificultades o dudas con respecto a la administración, el uso o la instalación de servicios en un servidor, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) o con [nuestra comunidad](https://community.ovh.com/en/).
+> Este tutorial le ayudará a realizar las tareas más habituales. No obstante, si tiene dificultades o dudas con respecto a la administración, el uso o la instalación de servicios en un servidor, le recomendamos que contacte con un [proveedor especializado](/links/partner) o con [nuestra comunidad](https://community.ovh.com/en/).
 >
 
 ## Procedimiento

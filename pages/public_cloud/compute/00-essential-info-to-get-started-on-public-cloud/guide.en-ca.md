@@ -129,7 +129,7 @@ Here are some guides to help you with the first steps:
 |Documentation|Details|
 |---|---|
 |[Create your first instance](/pages/public_cloud/compute/public-cloud-first-steps)|First practical guide to starting a cloud server from the OVHcloud Control Panel.|
-|[Using an SSH key](/pages/public_cloud/compute/public-cloud-first-steps#step-2-storing-public-keys-in-the-ovhcloud-control-panel_1)| To log in to a Linux instance, you will need to log in via an SSH connection. This guide details the procedure.|
+|[Using an SSH key](/pages/public_cloud/compute/creating-ssh-keys-pci)| To log in to a Linux instance, you will need to log in via an SSH connection. This guide details the procedure.|
 |[Private Network Configuration](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack)|At OVHcloud, private networks are powered by vRack technology. This guide will help you get started.|
 |[Attach an additional disk to an instance](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)|This guide will help you add additional storage to your first instance.|
 |[Accessing the Horizon interface](/pages/public_cloud/compute/introducing_horizon)|The Horizon interface of OpenStack allows some advanced actions, here is how to connect to it.|
@@ -148,6 +148,6 @@ One of the big advantages of using standard and open technologies, like OpenStac
 |[Kubernetes CLI Overview](https://kubernetes.io/docs/reference/kubectl/overview/)| The documentation for the essential command line client 'kubectl'.|
 |[Kubernetes APIs Overview](https://kubernetes.io/docs/reference/using-api/)| The documentation of the Kubernetes API, useful for an overview of the possibilities.|
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ca/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

@@ -18,7 +18,7 @@ Wsparcie dla tej funkcji jest warunkiem wstępnym wszystkich operacji dotyczący
 
 ## Wymagania początkowe
 
-- Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/){.external}
+- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal){.external}
 - Dostęp do [API OVHcloud](https://api.ovh.com/){.external}.
 
 > [!primary]

@@ -25,11 +25,11 @@ Dank einer grafischen Oberfläche, die die Automatisierung von Einstellungen erl
 ## Voraussetzungen
 
 - Sie haben einen [VPS](https://www.ovhcloud.com/de/vps/) mit einer [kompatiblen Distribution](https://www.ovhcloud.com/de/vps/os/).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
-Wenn Sie schon über einen VPS verfügen und cPanel darauf installieren möchten, wählen Sie die Option "VPS reinstallieren" in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) und dann ein [Betriebssystem, das mit cPanel kompatibel ist](https://www.ovhcloud.com/de/vps/os/).
+Wenn Sie schon über einen VPS verfügen und cPanel darauf installieren möchten, wählen Sie die Option "VPS reinstallieren" in Ihrem [OVHcloud Kundencenter](/links/manager) und dann ein [Betriebssystem, das mit cPanel kompatibel ist](https://www.ovhcloud.com/de/vps/os/).
 
 > [!warning]
 >

@@ -8,7 +8,7 @@ updated: 2023-09-08
 
 As explained in our [introductory documentation](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP), Logs Data Platform heavily relies on [OpenSearch](https://github.com/opensearch-project/OpenSearch) to work. 
 
-**This documentation will explain to you how you can use third-party software that integrate with OpenSearch.**
+**This documentation will explain to you how you can use third-party software that integrates with OpenSearch.**
 
 ## Instructions
 
@@ -50,7 +50,7 @@ In this section, you can:
 
 #### Third-party tool configuration
 
-To connect to your alias as if it were an OpenSearch index, third-party tools usually require a few information:
+To connect to your alias as if it were an OpenSearch index, third-party tools usually require some information:
 
 - A URL/Port: this is your cluster's URL, found on your Logs Data Platform account homepage under the "Access point" name in the "Configuration" section. The port is **9200** for OpenSearch. The resulting URL should be `https://<your_cluster>.logs.ovh.com:9200`.
 - An index name. This is your alias name, found on the left column of your alias homepage like in the following picture. It should look like that: `<ldp_service_name>-a-<alias_name>`.

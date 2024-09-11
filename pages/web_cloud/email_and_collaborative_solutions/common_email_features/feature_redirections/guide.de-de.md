@@ -93,7 +93,7 @@ Folgen Sie den Anleitungsschritten, indem Sie nacheinander die Tabs aufrufen:
 > **Schritt 1**
 >>
 >> Wenn Sie sich im [Webmail](/links/web/email) Ihres E-Mail-Accounts eingeloggt haben, klicken Sie oben rechts auf das Zahnrad und dann auf `Optionen`{.action}.<br><br>
->> ![{.thumbnail}](images/emails-all-01.png) E-Mails<br>
+>> ![E-Mails](images/emails-all-01.png){.thumbnail}<br>
 >>
 > **Schritt 2**
 >>

@@ -60,7 +60,7 @@ Sobald Sie eingeloggt sind, können Sie Ihre Kundenkennung in Ihrem Kundencenter
 
 Wenn Sie das Passwort nicht zur Hand haben, folgen Sie der [Anleitung zur Passwortänderung](/pages/account_and_service_management/account_information/manage-ovh-password#wenn-sie-ihr-aktuelles-passwort-nicht-kennen).
 
-### Ich habe mein Passwort verloren und meine Haupt-E-Mail-Adresse ist nicht mehr gültig
+### Ich habe mein Passwort verloren und meine Haupt-E-Mail-Adresse ist nicht mehr gültig  <a name="invalid-email"></a>
 
 In diesem Fall kann das Passwort nicht über die Loginseite zurückgesetzt werden.
 

@@ -17,12 +17,12 @@ W procesie migracji może być konieczne pobranie danych z serwera dedykowanego,
 > [!warning]
 >Niniejszy przewodnik wyjaśnia, jak korzystać z jednego lub kilku rozwiązań OVHcloud za pomocą zewnętrznych narzędzi i opisuje działania, jakie należy podjąć w konkretnym przypadku. Może być konieczne dostosowanie instrukcji do Twojego przypadku.
 >
->W przypadku trudności w stosowaniu tych instrukcji, zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/). Więcej informacji znajdziesz w sekcji [Sprawdź](#gofurther) ten przewodnik.
+>W przypadku trudności w stosowaniu tych instrukcji, zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner). Więcej informacji znajdziesz w sekcji [Sprawdź](#gofurther) ten przewodnik.
 >
 
 ## Wymagania początkowe
 
-- Serwer [dedykowany](https://www.ovhcloud.com/pl/bare-metal/){.external}, na którym zainstalowana jest dystrybucja GNU/Linux.
+- Serwer [dedykowany](/links/bare-metal/bare-metal){.external}, na którym zainstalowana jest dystrybucja GNU/Linux.
 - Klient FTP, który obsługuje połączenia SFTP (ten przewodnik dokumentuje korzystanie z [FileZilla](https://filezilla-project.org/){.external}).
 - Dostęp administracyjny przez SSH do Twojego serwera.
 

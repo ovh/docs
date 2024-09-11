@@ -158,12 +158,16 @@ This guide lists the S3 API features supported by S3 Object Storage.
   </tr>
   <tr>
     <td rowspan="8">Immutability</td>
-    <td rowspan="2">Versioning</td>
+    <td rowspan="3">Versioning</td>
     <td>get bucket versioning</td>
     <td>yes</td>
   </tr>
   <tr>
     <td>put bucket versioning</td>
+    <td>yes</td>
+  </tr>
+  <tr>
+    <td>list object versions</td>
     <td>yes</td>
   </tr>
   <tr>
@@ -247,7 +251,7 @@ This guide lists the S3 API features supported by S3 Object Storage.
   </tr>
   <tr>
     <td>copy object</td>
-    <td>no</td>
+    <td>yes</td>
   </tr>
   <tr>
     <td>put object tagging</td>

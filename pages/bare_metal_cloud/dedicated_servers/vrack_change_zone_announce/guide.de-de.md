@@ -6,7 +6,7 @@ updated: 2019-03-12
 
 ## Einleitung
 
-Das [vRack](https://www.ovh.de/loesungen/vrack/){.external} ist ein privates Netzwerk, mit dem Sie das Routing zwischen zwei oder mehr OVHcloud [Dedicated Servern](https://www.ovhcloud.com/de/bare-metal/){.external} einrichten können.
+Das [vRack](https://www.ovh.de/loesungen/vrack/){.external} ist ein privates Netzwerk, mit dem Sie das Routing zwischen zwei oder mehr OVHcloud [Dedicated Servern](/links/bare-metal/bare-metal){.external} einrichten können.
 
 **In dieser Anleitung erfahren Sie, wie Sie die IP-Block-Ankündigung im vRack ändern.**
 
@@ -50,7 +50,7 @@ Gehen Sie auf den Link <https://api.ovh.com/console/> und loggen Sie sich mit Ih
 > @api {v1} /vrack GET /vrack
 > 
 
-So können Sie über die API die Liste der vRack Dienste aufrufen. Wenn Sie den betreffenden Dienst über diese Referenzen nicht identifizieren können, finden Sie seinen Namen in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}. Gehen Sie hierzu in den Bereich `Bare Metal Cloud`{.action}, dann in den Bereich `Network`{.action} und dann "vRack". 
+So können Sie über die API die Liste der vRack Dienste aufrufen. Wenn Sie den betreffenden Dienst über diese Referenzen nicht identifizieren können, finden Sie seinen Namen in Ihrem [OVHcloud Kundencenter](/links/manager){.external}. Gehen Sie hierzu in den Bereich `Bare Metal Cloud`{.action}, dann in den Bereich `Network`{.action} und dann "vRack". 
 
 > [!api]
 >

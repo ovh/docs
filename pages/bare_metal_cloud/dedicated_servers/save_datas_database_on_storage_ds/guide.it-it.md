@@ -25,7 +25,7 @@ OVHcloud offre una [gamma di server dedicati](https://www.ovhcloud.com/it/bare-m
 ### Hardware e software necessari
 
 - Un [server di storage OVHcloud](https://www.ovhcloud.com/it/bare-metal/storage/){.external}
-- Un’infrastruttura di produzione ([VPS](https://www.ovhcloud.com/it/vps/){.external}, [server dedicati](https://www.ovhcloud.com/it/bare-metal/){.external}, [Public Cloud](https://www.ovhcloud.com/it/public-cloud/){.external}...)
+- Un’infrastruttura di produzione ([VPS](https://www.ovhcloud.com/it/vps/){.external}, [server dedicati](/links/bare-metal/bare-metal){.external}, [Public Cloud](https://www.ovhcloud.com/it/public-cloud/){.external}...)
 - Una connessione SSH configurata tra il server di storage e l’infrastruttura di produzione
 - Una rete privata [vRack](https://www.ovh.it/soluzioni/vrack/){.external} tra i tuoi server (consigliato)
 
@@ -61,7 +61,7 @@ Non esiste un sistema RAID migliore di un altro: ognuno risponde a necessità di
 
 ### Step 2: installa e configura il server
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e installa il tuo server (come già detto nella parte iniziale di questa guida, utilizzeremo Debian 9.4). Per maggiori informazioni, consulta la nostra guida [Iniziare a utilizzare un server dedicato](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#installa-o-reinstalla-il-tuo-server-dedicato){.external}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external} e installa il tuo server (come già detto nella parte iniziale di questa guida, utilizzeremo Debian 9.4). Per maggiori informazioni, consulta la nostra guida [Iniziare a utilizzare un server dedicato](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#installa-o-reinstalla-il-tuo-server-dedicato){.external}.
 
 Una volta selezionato il sistema operativo, spunta la casella `Personalizza la configurazione delle partizioni`{.action} e clicca su `Seguente`{.action}.
 

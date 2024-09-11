@@ -1,7 +1,7 @@
 ---
 title: 'Configurer et consulter le répondeur de sa ligne'
 excerpt: 'Apprenez à configurer et utiliser le répondeur de votre ligne téléphonique OVHcloud'
-updated: 2024-06-18
+updated: 2024-09-06
 ---
 
 ## Objectif
@@ -99,7 +99,7 @@ Trois parties sont visibles sur la page qui apparaît alors. Configurez votre r�
 
 |Paramètres|Détail|
 |---|---|
-|Enregistrement des messages|Active ou désactive le répondeur.|
+|Enregistrement des messages|Permet d'activer ou désactiver l'enregistrement de messages audio par vos appelants. Ceux-ci n'auront alors que votre message d'accueil du répondeur, sans possibilité de laisser un message.|
 |Message d'accueil du répondeur|Permet d'importer un message d'accueil personnalisé qui sera lu par votre répondeur.|
 
 ![repondeur](images/voicemail-step4.png){.thumbnail}

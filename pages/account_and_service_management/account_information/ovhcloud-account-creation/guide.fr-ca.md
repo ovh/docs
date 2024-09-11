@@ -1,7 +1,7 @@
 ---
 title: 'Créer un compte OVHcloud'
 excerpt: 'Découvrez comment créer votre compte OVHcloud'
-updated: 2023-05-23
+updated: 2024-09-09
 ---
 
 ## Objectif
@@ -19,7 +19,7 @@ La création d'un compte peut s'effectuer avant ou pendant la commande de votre 
 
 ### Comment créer mon compte OVHcloud ?
 
-Pour créer un compte OVHcloud, il suffit de vous rendre sur [cette page](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et de compléter le formulaire en ligne.
+Pour créer un compte OVHcloud, il suffit de vous rendre sur [cette page](/links/manager) et de compléter le formulaire en ligne.
 
 ![formulaire création compte](images/account-creation.png){.thumbnail}
 
@@ -47,24 +47,11 @@ Une fois le code saisi et validé, complétez la suite du formulaire. Veillez no
 
 Votre compte créé, vous serez automatiquement connecté sur la page d'accueil, appelée « Tableau de bord », de votre compte.
 
-### Quel est mon identifiant client ?
+### Quel est mon identifiant client ? <a name="nic-handle"></a>
 
-Chaque compte client OVHcloud est associé à un identifiant unique, aussi appelé *NIC-handle*.
+Chaque compte client OVHcloud est associé à un identifiant unique, parfois aussi appelé NIC ou NIC-Handle.
 
-Il est le plus souvent composé de deux lettres suivies de chiffres. Par exemple : **xx11111-ovh**.
-
-Cet identifiant client vous permet :
-
-- de réaliser des commandes en ligne ;
-- de vous connecter à votre espace client pour gérer l'ensemble de vos services ;
-- de vous identifier lors de votre prise de contact avec le support OVHcloud et ainsi faciliter le traitement de vos questions.
-
-Votre identifiant client est affiché en haut à droite sous votre nom et votre adresse e-mail.
-
-![identifiant client](images/nic-handle.png){.thumbnail}
-
-> [!warning]
-> Prenez bien note de votre identifiant car vous en aurez besoin pour chaque connexion à votre compte.
+Pour la plupart des comptes hors d'Europe, il est remplacé par l'adresse e-mail principale renseignée dans le compte OVHcloud.
 
 ## Aller plus loin
 
@@ -80,4 +67,4 @@ Consultez aussi nos guides pour :
 
 [Sécuriser votre compte OVHcloud avec la double authentification](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -73,4 +73,4 @@ Please note this is not recommended by cPanel and at your own risk. Should you w
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

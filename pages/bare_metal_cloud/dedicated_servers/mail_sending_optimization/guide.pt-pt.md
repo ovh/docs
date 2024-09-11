@@ -18,7 +18,7 @@ Em geral, as políticas antisspam são rígidas. De forma a simplificar o envio 
 >
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades ou dúvidas relativamente à administração, utilização ou implementação dos serviços num servidor, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/).
+> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades ou dúvidas relativamente à administração, utilização ou implementação dos serviços num servidor, recomendamos que recorra a um [prestador de serviços especializado](/links/partner).
 > 
 
 ## Requisitos
@@ -73,7 +73,7 @@ Depois de alterar a zona DNS do domínio, é necessário aguardar 24 horas até 
 
 Depois de fazer isso, adicione o registo PTR (também conhecido como reverse):
 
-Na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, aceda à secção `Bare Metal Cloud`{.action} e abra `Network`{.action}. De seguida, clique em `IP`{.action}. 
+Na sua [Área de Cliente OVHcloud](/links/manager){.external}, aceda à secção `Bare Metal Cloud`{.action} e abra `Network`{.action}. De seguida, clique em `IP`{.action}. 
 
 Se deseja configurar a Reverse DNS num endereço Additional IP, clique no separador `Additional IP`{.action}.
 
@@ -158,6 +158,6 @@ Pode ser interessante utilizar um site como o [Mail Tester](http://www.mail-test
 
 [Melhorar a segurança dos e-mails através de um registo DMARC](/pages/web_cloud/domains/dns_zone_dmarc)
 
-Para ser acompanhado sobre a implementação das suas soluções OVHcloud, contacte a nossa [rede de parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para ser acompanhado sobre a implementação das suas soluções OVHcloud, contacte a nossa [rede de parceiros OVHcloud](/links/partner).
  
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

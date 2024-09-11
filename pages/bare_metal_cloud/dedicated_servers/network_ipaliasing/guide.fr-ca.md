@@ -6,7 +6,7 @@ updated: 2024-03-15
 
 > [!primary]
 >
-> Depuis le 6 octobre 2022, notre solution "IP Failover" s'appelle désormais [Additional IP](https://www.ovhcloud.com/fr-ca/network/additional-ip/). Cela n'a pas d'impact sur ses fonctionnalités.
+> Depuis le 6 octobre 2022, notre solution "IP Failover" s'appelle désormais [Additional IP](/links/network/additional-ip). Cela n'a pas d'impact sur ses fonctionnalités.
 >
 
 ## Objectif
@@ -27,7 +27,7 @@ L'alias d'IP (*IP aliasing* en anglais) est une configuration spéciale du rése
 ## Prérequis
 
 - Posséder un [serveur dédié](https://www.ovh.com/fr-ca/serveurs_dedies/){.external}
-- Avoir une ou plusieurs [Additional IP](https://www.ovhcloud.com/fr-ca/bare-metal/ip/){.external}.
+- Avoir une ou plusieurs [Additional IP](/links/network/additional-ip){.external}.
 - Être connecté en SSH au serveur ou via remote desktop pour Windows.
 
 > [!warning]
@@ -564,4 +564,4 @@ Il vous suffit ensuite d'effectuer un ping depuis votre Additional IP vers l'ext
 
 [Mode bridge IP](/pages/bare_metal_cloud/dedicated_servers/network_bridging)
 
-Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

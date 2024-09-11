@@ -21,13 +21,13 @@ Ripristinare un’istanza utilizzando un backup è necessario, ad esempio, se ha
 ## Prerequisiti
 
 - Disporre del backup di un’istanza Public Cloud A questo proposito, consulta [la guida dedicata alla creazione di un backup](/pages/public_cloud/compute/save_an_instance)
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
 ### Crea un’istanza a partire da un backup
 
-Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `Public Cloud`{.action}. Seleziona il progetto Public Cloud in questione e clicca su `Instance Backup`{.action} nella sezione `Storage`.
+Accedi allo [Spazio Cliente](/links/manager) e seleziona `Public Cloud`{.action}. Seleziona il progetto Public Cloud in questione e clicca su `Instance Backup`{.action} nella sezione `Storage`.
 
 ![public-cloud-instance-backup](images/restorebackup01.png){.thumbnail}
 
@@ -47,7 +47,7 @@ Alcuni elementi sono predefiniti:
 
 Definisci il nome della nuova istanza, la chiave SSH, la vRack e il periodo di fatturazione, poi clicca sul pulsante `Crea l'istanza`{.action}.
 
-Per maggiori informazioni sulla creazione di un’istanza, consulta [questa guida](/pages/public_cloud/compute/public-cloud-first-steps#step-3-crea-unistanza).
+Per maggiori informazioni sulla creazione di un’istanza, consulta [questa guida](/pages/public_cloud/compute/public-cloud-first-steps).
 
 > [!primary]
 >

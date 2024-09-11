@@ -10,7 +10,7 @@ updated: 2024-07-15
 
 > [!primary]
 >
-> Seit dem 6. Oktober 2022 heißt unser Dienst "Failover-IP" nun [Additional IP](https://www.ovhcloud.com/de/network/additional-ip/). Die Namensänderung hat keine Auswirkungen auf dessen technische Funktionen.
+> Seit dem 6. Oktober 2022 heißt unser Dienst "Failover-IP" nun [Additional IP](/links/network/additional-ip). Die Namensänderung hat keine Auswirkungen auf dessen technische Funktionen.
 >
 
 ## Ziel
@@ -23,8 +23,8 @@ Bridged Networking kann verwendet werden, um Ihre virtuellen Maschinen zu konfig
 
 ## Voraussetzungen
 
-- Sie verfügen über einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) mit installiertem Hypervisor ([VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox, etc.).
-- Sie verfügen über mindestens eine mit dem Server verbundene [Additional IP](https://www.ovhcloud.com/de/bare-metal/ip/).
+- Sie verfügen über einen [Dedicated Server](/links/bare-metal/bare-metal) mit installiertem Hypervisor ([VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox, etc.).
+- Sie verfügen über mindestens eine mit dem Server verbundene [Additional IP](/links/network/additional-ip).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 > [!warning]

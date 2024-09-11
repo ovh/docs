@@ -16,7 +16,7 @@ In this tutorial you will:
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - A [Public Cloud Instance](https://www.ovhcloud.com/de/public-cloud/) in your OVHcloud account
 - [Terraform CLI](https://www.terraform.io/downloads){.external} installed
 
@@ -147,4 +147,4 @@ Now you can define your Terraform configuration files and providers and after ru
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

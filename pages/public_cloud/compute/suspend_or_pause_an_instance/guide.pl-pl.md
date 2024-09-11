@@ -20,7 +20,7 @@ updated: 2023-06-20
 ## Wymagania początkowe
 
 - Utworzenie [instancji Public Cloud OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps) w abonamencie **godzina**
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} lub [interfejsu Horizon](/pages/public_cloud/compute/introducing_horizon)
+- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external} lub [interfejsu Horizon](/pages/public_cloud/compute/introducing_horizon)
 - Znajomość [API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api) i [Zmienne OpenStack](/pages/public_cloud/compute/loading_openstack_environment_variables)
 
 ## W praktyce

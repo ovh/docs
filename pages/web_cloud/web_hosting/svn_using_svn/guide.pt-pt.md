@@ -58,7 +58,7 @@ Deve obter os diretórios conforme indicado na seguinte imagem:
 
 Antes de prosseguir, terá de criar um par de chaves SSH a partir do posto que utiliza para se ligar ao depósito SVN.
 
-Sugerimos que siga o guia [Criar chaves SSH](/pages/public_cloud/compute/public-cloud-first-steps#1o-passo-criacao-de-chaves-ssh). Neste guia, não é necessário seguir o passo [Importar a chave SSH para a Área de Cliente OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps#1o-passo-criacao-de-chaves-ssh/#como-importar-a-sua-chave-ssh-para-a-area-de-cliente-ovh).
+Sugerimos que siga o guia [Criar chaves SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#create-ssh-key).
 
 ### Adicionar chave pública ao alojamento
 

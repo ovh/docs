@@ -1,7 +1,7 @@
 ---
 title: "Getting started with OVHcloud Key Management Service (KMS)"
 excerpt: "Discover the steps you need to take to set up your first Key Management Service (KMS), create a key, and access it"
-updated: 2024-07-04
+updated: 2024-09-03
 ---
 
 > [!warning]
@@ -45,6 +45,28 @@ You can then finalize the command in another tab. If it has not opened automatic
 After a few seconds, the KMS will be available in your Control Panel.
 
 ![Order the KMS](images/order_kms_03.png){.thumbnail}
+
+### Creating an encryption key with the OVHcloud console
+
+You can create an encryption key from the the dedicated menu of the OVHcloud console, using the `Create a key`{.action} button.
+
+![Create a key](images/create_key_01.png){.thumbnail}
+
+A form allows you to configure the key and select its type, size and usage.
+
+![Create a key](images/create_key_02.png){.thumbnail}
+
+Once the key is created, click it to access its details.
+
+The dashboard displays the cryptographic properties of the key, and the actions for renaming, disabling or deleting it.
+
+To reduce the risks of an unwanted deletion, it is mandatory to disable a key before deleting it.
+
+> [!warning]
+>
+> A deleted key is not recoverable by any means and such deletion involves the loss of any data encrypted with it. Any deletion should be performed with great caution.
+
+![Create a key](images/create_key_03.png){.thumbnail}
 
 ### Creating an access certificate
 
@@ -236,7 +258,7 @@ Copy the value of the **certificatePEM** field to a **client.cert** file.
 
 ### Contact the KMS
 
-Communication with the KMS is only available via API during the beta period.
+Communication with the KMS, except for the key creation, is only available via API.
 
 Since the KMS is regionalized, you can access the API directly in its region: <https://my-region.ovh.com.net>
 
@@ -248,7 +270,7 @@ If you are using a browser, you will need to convert the certificate to pkcs12 f
 openssl pkcs12 -export -inkey client.key -in client.cert -out client.p12
 ```
 
-#### Creating an encryption key
+#### Creating an encryption key via API
 
 You can create a key using the following API:
 

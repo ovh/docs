@@ -1,7 +1,7 @@
 ---
 title: 'Konfiguracja konta E-mail Pro'
 excerpt: 'Dowiedz się, jak skonfigurować konto E-mail Pro'
-updated: 2024-06-13
+updated: 2024-09-03
 ---
 
 > [!primary]
@@ -149,6 +149,14 @@ Po wprowadzeniu informacji, kliknij przycisk `Dalej`{.action}, sprawdź dane, kt
 ### Etap 5: korzystanie z kont e-mail
 
 Po skonfigurowaniu Twoich kont możesz zacząć ich używać. W tym celu możesz użyć udostępnionej przez OVHcloud aplikacji online (*webapp*). Aplikacja dostępna jest pod adresem [webmail](/links/web/email). Zaloguj się, wprowadzając dane identyfikacyjne dla Twojego adresu e-mail.
+
+Jeśli pierwszy raz logujesz się do interfejsu OWA webmail przy użyciu tego adresu e-mail, pojawi się monit o ustawienie języka interfejsu i strefy czasowej. Następnie kliknij przycisk `Zapisz`{.action}, aby kontynuować.
+
+> [!primary]
+>
+> Strefy czasowe są wymienione zgodnie z [uniwersalnym standardem czasowym (UTC)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), a nie alfabetycznie według miast.
+>
+> **Przykład** : Dla Europy Zachodniej jest to UTC +1 (Bruksela, Kopenhaga, Madryt, Paryż).
 
 Aby skonfigurować Twoje konto e-mail w programie pocztowym lub na urządzeniu typu _smartfon_ lub tablet, [skorzystaj z przewodników dotyczących konfiguracji](/products/web-cloud-email-collaborative-solutions-email-pro). Poniżej znajdziesz elementy potrzebne do konfiguracji Twojego konta E-mail Pro:
 

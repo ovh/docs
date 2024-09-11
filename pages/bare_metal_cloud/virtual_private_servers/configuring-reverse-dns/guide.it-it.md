@@ -20,11 +20,11 @@ Configurare la risoluzione **Reverse DNS** di un VPS è particolarmente utile pe
 
 - Disporre di un [VPS](https://www.ovhcloud.com/it/vps/) sul proprio account OVHcloud
 - Un dominio con il suo campo `A` che punta verso il VPS
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), accedi alla sezione `Bare Metal Cloud`{.action} e apri `Network`{.action}. Clicca su `IP`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager), accedi alla sezione `Bare Metal Cloud`{.action} e apri `Network`{.action}. Clicca su `IP`{.action}.
 
 Il menu a tendina sotto **I miei indirizzi IP pubblici e servizi associati** permette di filtrare i tuoi servizi per categoria.
 

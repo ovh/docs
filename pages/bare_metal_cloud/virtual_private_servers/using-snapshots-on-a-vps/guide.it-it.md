@@ -21,12 +21,12 @@ Prima di applicare opzioni di backup, consigliamo di fare riferimento alle pagin
 
 ## Prerequisiti
 
-- avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - un servizio [VPS OVHcloud](https://www.ovhcloud.com/it/vps/) già impostato
 
 ## Procedura
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca su `Bare Metal Cloud`{.action} e seleziona il tuo server nella sezione `Server Privati Virtuali`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Bare Metal Cloud`{.action} e seleziona il tuo server nella sezione `Server Privati Virtuali`{.action}.
 
 ### Step 1: Attivare l’opzione snapshot
 
@@ -63,7 +63,7 @@ Lo Snapshot in corso può essere recuperato tramite un link di download. Clicca 
 
 > [!primary]
 >
-> Se il tuo VPS proviene da una gamma precedente, potresti ricevere un messaggio di errore perché l'opzione non è disponibile sui VPS precedenti. I VPS OVHcloud utilizzano una gamma precedente se il modello di attribuzione del nome è simile a: *vpsXXXX.ovh.net* (dove *X* rappresenta un numero). Questa scheda è disponibile nella scheda `Home`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+> Se il tuo VPS proviene da una gamma precedente, potresti ricevere un messaggio di errore perché l'opzione non è disponibile sui VPS precedenti. I VPS OVHcloud utilizzano una gamma precedente se il modello di attribuzione del nome è simile a: *vpsXXXX.ovh.net* (dove *X* rappresenta un numero). Questa scheda è disponibile nella scheda `Home`{.action} del tuo [Spazio Cliente OVHcloud](/links/manager).
 >
 
 Nella nuova finestra, clicca su `Genera il link di download`{.action}.

@@ -1,7 +1,7 @@
 ---
 title: "Partilhado: ativação da firewall"
 excerpt: "Partilhado: ativação da firewall"
-updated: 2021-04-26
+updated: 2024-09-05
 ---
 
 > [!primary]
@@ -22,6 +22,11 @@ O conjunto pré-configurado de regras de base, o "Core Rule Set" (CRS), do nosso
 - etc.
 
 **Este guia explica-lhe como ativar a firewall de aplicação a partir da Área de Cliente OVHcloud, de forma a obter uma proteção melhorada.**
+
+> [!primary]
+>
+> Uma vez que o seu alojamento web está presente numa infraestrutura partilhada, a alteração dos parâmetros de configuração da firewall não está disponível.
+>
 
 ## Requisitos
 
@@ -45,7 +50,7 @@ Na nova janela, certifique-se de que a **Aplicação Firewall** está definida e
 
 Clique no separador `Multisite`{.action} da sua oferta de alojamento. Clique no botão `...`{.action} à direita do nome de domínio em causa e selecione a opção `Alterar o domínio`{.action}.
 
-![managemultisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-2.png){.thumbnail}
+![managemultisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-2.png){.thumbnail}
 
 Na janela de configuração, selecione a caixa `Ativar a firewall`{.action}. Também pode incluir o subdomínio `www` nesta configuração, selecionando a opção no topo.
 

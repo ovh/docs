@@ -22,7 +22,7 @@ O IPv6 é a versão mais recente do Internet Protocol (IP). Foi concebido para s
 
 ## Requisitos
 
-- Um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/) na sua conta OVHcloud.
+- Um [servidor dedicado](/links/bare-metal/bare-metal) na sua conta OVHcloud.
 - Todos os seus dados IPv6 (prefixo, gateway, etc.).
 - Ter conhecimentos básicos de [SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) e redes.
 
@@ -57,7 +57,7 @@ O primeiro passo consiste em recuperar a gateway (gateway) IPv6 associada ao seu
 
 #### Através da Área de Cliente <a name="viacontrolpanel"></a>
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na secção 'Servidor dedicado`{.action}.
+Aceda à [Área de Cliente OVHcloud](/links/manager), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na secção 'Servidor dedicado`{.action}.
 
 A gateway IPv6 associada ao seu servidor é apresentada na secção "Rede" do separador "Informações gerais" {.action}. Depois de copiar, prossiga para o passo 2 « [Aplicar configuração IPv6](#applyipv6) ».
 

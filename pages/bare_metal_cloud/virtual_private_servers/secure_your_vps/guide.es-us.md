@@ -242,6 +242,8 @@ En la [página de producto](https://www.ovhcloud.com/es/vps/options/) y en las [
 
 [Primeros pasos con un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps) 
 
+[Crear claves SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
+
 [Configurar el firewall de Windows](/pages/bare_metal_cloud/virtual_private_servers/activate-port-firewall-soft-win)
 
 [Configurar el firewall de Linux con iptables](/pages/bare_metal_cloud/virtual_private_servers/firewall-Linux-iptable)

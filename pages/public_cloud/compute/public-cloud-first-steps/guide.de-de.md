@@ -1,380 +1,667 @@
 ---
-title: 'Erste Public Cloud Instanz erstellen und auf dieser einloggen'
-excerpt: 'So starten Sie nach der Erstellung eines Projekts mit der Verwendung Ihres Public Cloud Dienstes'
-updated: 2024-04-03
+title: "Eine Public Cloud Instanz erstellen und darauf zugreifen"
+excerpt: "Erfahren Sie hier, wie Sie Public Cloud Instanzen in Ihrem OVHcloud Kundencenter konfigurieren, sowie die ersten Schritte mit Instanzen"
+updated: 2024-08-21
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
+>
 
 ## Ziel
 
-OVHcloud Public Cloud Instanzen erfordern einen anderen Ansatz als VPS oder Dedicated Server.
+Public Cloud Instanzen sind einfach einzurichten und zu verwalten. Als Teil des OVHcloud Public Cloud Ökosystems bieten Instanzen jedoch zahlreiche Konfigurationsoptionen und können für verschiedene Anwendungsfälle angepasst werden. Die folgenden Anweisungen enthalten alle notwendigen und optionalen Schritte, um eine Instanz im OVHcloud Kundencenter zu erstellen und darauf zuzugreifen.  
+Danach können Sie Ihr Public Cloud Projekt weiter spezialisieren, je nach Ihren Bedürfnissen.
 
-**In dieser Anleitung erfahren Sie, wie Sie eine erste Public Cloud Instanz erstellen und sich mit dieser verbinden.**
+**Diese Anleitung erklärt die ersten Schritte mit einer Public Cloud Instanz.**
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [Public Cloud](https://www.ovhcloud.com/de/public-cloud/) Projekt in Ihrem OVHcloud Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben ein [Public Cloud Projekt](/links/public-cloud/public-cloud) in Ihrem OVHcloud Kunden-Account.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
-### Schritt 1: SSH-Schlüssel erstellen
-
-Das SSH-Protokoll sorgt für eine verschlüsselte Client-Server-Kommunikation. Der Einsatz von SSH-Schlüsseln erhöht die Sicherheit, indem Verbindungen von einem Gerät ohne passenden Schlüssel verhindert werden. Wenn Sie einen SSH-Schlüsselsatz erstellen, erhalten Sie einen öffentlichen und einen privaten Schlüssel.
-
-- Der **öffentliche Schlüssel** wird bei der Installation zu Ihrer Public Cloud Instanz hinzugefügt.
-
-- Der **private Schlüssel** wird auf Ihrem Client-Gerät gespeichert und ermöglicht den Zugriff auf Ihre Instanz ohne Benutzerpasswort. 
-
 > [!primary]
 >
-Beachten Sie, dass für die Verbindung mit Public Cloud Instanzen ein schlüsselbasierter SSH-Login erforderlich ist (mit Ausnahme von Instanzen mit Windows-Betriebssystem). Zu Ihrem OVHcloud Kundencenter hinzugefügte öffentliche SSH-Schlüssel sind für Public Cloud Dienste in allen Regionen und Rechenzentren verfügbar. Sie können für Schlüssel **RSA**, **ECDSA** oder **ED25519** verwenden.
->
-Für die Login-Authentifizierung auf Windows-Instanzen sind Benutzername und Passwort erforderlich.
->
-
-#### SSH-Schlüssel mit Linux-oder Mac-Betriebssystem erstellen
-
-Öffnen Sie zunächst über einen Mac-Computer oder ein Gerät mit installiertem Linux-Betriebssystem die Kommandozeile (Terminal). Stellen Sie sicher, dass sich in Ihrem $HOME-Verzeichnis ein Ordner “.ssh” befindet. Ist der Ordner nicht vorhanden, erstellen Sie diesen:
-
-```bash
-$ mkdir ~/.ssh
-$ chmod 700 ~/.ssh
-```
-
-Verwenden Sie folgenden Befehl, um einen 4096-Bit-RSA-Schlüssel zu erstellen:
-
-```bash
-$ ssh-keygen -b 4096
-```
-
-Indem Sie die Option “-t” mit diesem Befehl verwenden, können Sie eine andere Verschlüsselungsmethode angeben, z.B.:
-
-```bash
-$ ssh-keygen -t ecdsa -a 256
-```
-
-Oder:
-
-```bash
-$ ssh-keygen -t ed25519
-```
-
-Nach Ausführen des Befehls werden Sie aufgefordert, den neu erstellten Schlüssel in der Standarddatei zu speichern:
-
-```console
-Generating public/private rsa key pair.
-Enter file in which to save the key (/home/user/.ssh/id_rsa):
-```
-
-Sie können die Standarddatei akzeptieren, indem Sie “Enter” drücken. Anschließend haben Sie die Möglichkeit, eine Passphrase einzugeben, um Ihren SSH-Schlüssel durch ein Passwort zu schützen. Diese Maßnahme wird empfohlen, da sie für zusätzliche Sicherheit sorgt. Da für den Zugriff auf Ihre Public Cloud Instanz über Ihr Arbeitsgerät nur der zugehörige private Schlüssel erforderlich ist, sollten an dieser Stelle angemessene Sicherheitsvorkehrungen getroffen werden. Die Passphrase muss eingegeben werden, wenn eine Verbindung mit der Instanz hergestellt wird.
-
-Ihre SSH-Schlüssel sollten im Verzeichnis “.ssh” gespeichert sein. Zum Dateinamen der öffentlichen Schlüsseldatei wurde die Endung “.pub” hinzugefügt.
-
-```console
-Your identification has been saved in /home/user/.ssh/id_rsa.
-Your public key has been saved in /home/user/.ssh/id_rsa.pub.
-The key fingerprint is:
-SHA256:MRk+Y0zCOoOkferhkTvMpcMsYspj212lK7sEauNap user@hostname
-The key's randomart image is:
-+---[RSA 4096]----+
-|     .. o        |
-|    . .= o       |
-|   o o  X        |
-|. . . .          |
-|. .=.o .S.       |
-| =o.o.  .   .    |
-|o +   .  . o ..  |
-|.. .  .   oEoo . |
-|o.        .o+oo  |
-+----[SHA256]-----+
-```
-
-> [!warning]
->
-> Der private Schlüssel sollte stets sicher aufbewahrt werden und der Zugriff darauf ausschließlich autorisierten Personen gestattet sein.
+> Wenn Sie noch kein Public Cloud Projekt erstellt haben, starten Sie mit unserer [Anleitung zum Erstellen eines Projekts](/pages/public_cloud/compute/create_a_public_cloud_project).
+> 
+> Wichtige **technische Details** zur OVHcloud Public Cloud finden Sie auf [dieser Seite](/pages/public_cloud/compute/00-essential-info-to-get-started-on-public-cloud).
 > 
 
-Wenden Sie zum Lesen und Exportieren Ihres öffentlichen Schlüssels den Befehl “cat” auf Ihre “.pub”-Schlüsseldatei an und kopieren Sie die Ausgabe:
+### Inhaltsübersicht
 
-```bash
-$ cat ~/.ssh/id_rsa.pub
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC8teh2NJ42qYZV98gTNhumO1b6rMYIkAfRVazl
-k6dSS3xf2MXJ4YHsDacdjtJ+evXCFBy/IWgdkFtcvsGAMZ2N1RdvhDyQYcy6NDaJCBYw1K6Gv5fJ
-SHCiFXvMF0MRRUSMneYlidxUJg9eDvdygny4xOdC6c1JrPrSgOc2nQuKeMpOoOWLINIswg1IIFVk
-kFMPrFivP8Z6tidzVpAtbr1sXmJGZazYWrU3FoK2a1sF1zEWrmlMOzX81zEWrmlMOzX8CpZW8Rae
-i4ANmLy7NULWK36yU0Rp9bFJ4o0/4PTkZiDCsK0QyHhAJXdLN7ZHpfJtHIPCnexmwIMLfIhCWhO5
- user@hostname
-```
-
-> [!primary]
->
->In einem MacOS-Terminal können Sie auch die Befehle `pbcopy` und `pbpaste` verwenden, um die Schlüsselfolgen zu verwalten. Verwenden Sie zum Beispiel den folgenden Befehl, um den Schlüssel aus der Datei `id_rsa.pub` in der Zwischenablage zu speichern.
->
-
-```bash
-$ pbcopy < ~/.ssh/id_rsa.pub
-```
-
-#### SSH-Schlüssel mit Windows-Betriebssystem erstellen
-
-[PuTTY](https://putty.org/){.external} ist eine Open-Source-SSH-Client-Software mit grafischem Benutzerinterface, verfügbar für Windows und andere Betriebssysteme. Sie können PuTTY verwenden, um eine Remoteverbindung mit einem Linux-Server herzustellen. Die zugehörige Software PuTTY Key Generator (PuTTYgen) kann zum Erstellen von SSH-Schlüsseln verwendet werden.
-
-Wenn PuTTY nicht bereits installiert ist, laden Sie es zuerst über [die offizielle Webseite](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) herunter. Das empfohlene Standardinstallationspaket enthält PuTTYgen, es ist aber auch als Standalone-Datei verfügbar. Um zu überprüfen, ob Sie bereits über PuTTY verfügen, öffnen Sie das Menü “Programme” oder verwenden Sie die Windows-Suche.
-
-Öffnen Sie PuTTYgen und wählen Sie einen unterstützten Verschlüsselungsalgorithmus aus. Das vorliegende Beispiel verwendet RSA. Geben Sie 4096 als Bit-Anzahl ein und klicken Sie dann auf den Button `Generate`{.action}.
-
-![Schlüssel erstellen](images/puttygen_01.png){.thumbnail}
-
-Bewegen Sie anschließend Ihre Maus willkürlich im Bereich unter der Fortschrittsanzeige.
-
-![erstellter Schlüssel](images/puttygen_02.gif){.thumbnail}
-
-Der Schlüssel ist fertig erstellt, wenn die Fortschrittsanzeige voll ist. 
-
-![Schlüssel speichern](images/puttygen_03a.png){.thumbnail}
-
-Sie können den öffentlichen Schlüssel in diesem Fenster auswählen und kopieren (unter dem Zusatz "Public key for pasting into OpenSSH authorized_keys file"), um diesen in Ihrem OVHcloud Kundencenter wie in [Schritt 2](./#schritt-2-offentliche-schlussel-im-ovhcloud-kundencenter-speichern) beschrieben zu speichern.
-
-Speichern Sie beide Schlüssel in Dateien und verwenden Sie die Option zur Eingabe einer Passphrase. Da für den Zugriff auf Ihre Public Cloud Instanz über Ihr Arbeitsgerät nur der zugehörige private Schlüssel erforderlich ist, sollten an dieser Stelle angemessene Sicherheitsvorkehrungen getroffen werden. Die Passphrase muss eingegeben werden, wenn eine Verbindung mit der Instanz hergestellt wird.
-
-### Schritt 2: Öffentliche Schlüssel im OVHcloud Kundencenter speichern
-
-Unabhängig von der zur Erstellung der SSH-Schlüssel verwendeten Methode verfügen Sie jetzt über einen öffentlichen Schlüssel, der zu einer Public Cloud Instanz hinzugefügt werden kann. Sie können öffentliche Schlüssel im Public Cloud Bereich des OVHcloud Kundencenters speichern, damit Ihnen diese bei Erstellen einer Instanz direkt zur Verfügung stehen.
+- [**1** SSH-Schlüssel erstellen](#create-ssh)
+- [**2** SSH-Schlüssel importieren](#import-ssh)
+- [**3** Netzwerkkonfiguration vorbereiten](#network)
+- [**4** Instanz erstellen](#create-instance)
+    - [**4.1** Instanz-Modell auswählen](#model)
+    - [**4.2** Region auswählen](#region)
+    - [**4.3** Image auswählen](#image)
+    - [**4.4** Instanz konfigurieren](#configuration)
+    - [**4.5** Netzwerk konfigurieren](#network)
+    - [**4.6** Abrechnungszeitraum auswählen](#billing)
+- [**5** Verbindung mit der Instanz](#connect-instance)
+    - [**5.1** Überprüfung der Instanz-Installation im OVHcloud Kundencenter](#verify-status)
+    - [**5.2** Erster Login auf einer Instanz mit GNU/Linux Betriebssystem](#login-linux)
+    - [**5.3** Windows-Instanzen](#windows)
+        - [**5.3.1** Die Installation einer Windows-Instanz abschließen](#windows)
+        - [**5.3.2** Remoteverbindung von Windows aus](#login-windows)
+        - [**5.3.3** Remoteverbindung von einem anderen Betriebssystem aus](#login-other)
+    - [**5.4** VNC-Konsolenzugriff](#vnc-console)
+- [**6** Erste Schritte auf einer neuen Instanz](#manage-access)
+    - [**6.1** Benutzerverwaltung](#user-mgmt)
+        - [**6.1.1** Passwort für das aktuelle Benutzerkonto festlegen](#set-password)
+        - [**6.1.2** Passwortbasierte Remoteverbindungen aktivieren](#remote-password)
+    - [**6.2** Zusätzliche SSH-Schlüssel](#add-keys)
 
 > [!primary]
 >
-> Gespeicherte SSH-Schlüssel ermöglichen es Ihnen, Ihre Instanzen schneller zu erstellen. Zur Änderung von Schlüsselpaaren oder zum späteren Hinzufügen von Benutzern folgen Sie der Anleitung “[Zusätzliche SSH-Schlüssel konfigurieren](/pages/public_cloud/compute/configuring_additional_ssh_keys)”.
+> **Sie müssen einen öffentlichen SSH-Schlüssel angeben, wenn Sie Public Cloud Instanzen in Ihrem Kundencenter erstellen.** Sobald die Instanz erstellt wurde können Sie Ihren Remote-Zugriff nach eigenem Ermessen konfigurieren.
+>
+> **Ausnahme**: Die Anmeldeauthentifizierung für Windows-Instanzen erfordert einen Benutzernamen und ein Kennwort, da Windows RDP verwendet (**R**emote **D**esktop **P**rotocol).
+> 
+
+<a name="create-ssh"></a>
+
+### Schritt 1: SSH-Schlüsselpaar erstellen
+
+Wenn Sie bereits über ein SSH-Schlüsselpaar verfügen, können Sie diesen Schritt überspringen.
+
+Das [SSH Protokoll](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) ermöglicht eine verschlüsselte Client-Server-Kommunikation. Ein **SSH-Schlüsselpaar** besteht aus einem öffentlichen und einem privaten Schlüssel.
+
+- Der **öffentliche Schlüssel** wird Ihrer Public Cloud Instanz hinzugefügt (und kann auch [in Ihrem OVHcloud Kundencenter gespeichert werden](#import-ssh)).
+- Der **private Schlüssel** wird auf Ihrem lokalen Gerät gespeichert und muss vor unbefugtem Zugriff geschützt werden. Nur Clientgeräte mit dem passenden privaten Schlüssel können auf Ihre Instanz zugreifen. Für die Anmeldung ist kein Benutzerkennwort erforderlich.
+
+Sie haben 2 Optionen, um Ihre SSH-Schlüssel zu erstellen und zu verwalten:
+
+- Das Kommandozeileninterface Ihres Betriebssystems (einfacher **Open SSH** Client).
+- Zusätzliche Software (kompatibel mit **Open SSH**) mit Befehlszeilen- oder grafischer Oberfläche.
+
+Die meisten zeitgemäßen Desktop-Betriebssysteme enthalten nativ einen **Open SSH** Client, auf den über die Befehlszeilenanwendung des Systems zugegriffen werden kann (`cmd`, `Powershell`, `Terminal`, etc.). Wenn Sie nicht mit der Verwendung von SSH-Schlüsseln als Authentifizierungsmethode vertraut sind, können Sie die Anweisungen in [dieser Anleitung](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key) verwenden, um Ihr Schlüsselpaar zu erstellen.
+
+Wenn Sie eine andere Software verwenden, folgen Sie der zugehörigen Benutzerdokumentation. Anweisungen für die Open-Source-Lösung `PuTTY` finden Sie in [dieser Anleitung](/pages/public_cloud/compute/creating-ssh-keys-pci#useputty).
+
+<a name="import-ssh"></a>
+
+### Schritt 2: SSH-Schlüssel importieren
+
+Sie können Ihre öffentlichen SSH-Schlüssel im Bereich `Public Cloud`{.action} Ihres [OVHcloud Kundencenters](/links/manager) speichern. Dies ist nicht zwingend erforderlich, macht die Erstellung einer Instanz jedoch bequemer.
+
+> [!primary]
+>
+> Mit gespeicherten SSH-Schlüsseln können Sie Ihre Instanzen schneller im OVHcloud Kundencenter erstellen. Informationen zum Austauschen von Schlüsselpaaren und Hinzufügen von Benutzern nach der Erstellung einer Instanz finden Sie in der Anleitung zu [zusätzlichen SSH-Schlüsseln](/pages/public_cloud/compute/configuring_additional_ssh_keys).
+>
+> Die in Ihrem OVHcloud Kundencenter hinzugefügten öffentlichen SSH-Schlüssel sind für Public-Cloud-Dienste in allen [Regionen](/links/public-cloud/regions-pci) verfügbar. Sie können Schlüssel als **RSA**, **ECDSA** und **ED25519** importieren.
 >
 
-Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie das betreffende Public Cloud Projekt aus. Klicken Sie dann in der linken Menüleiste unter “Project Management” auf `SSH-Schlüssel`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus.
 
-Klicken Sie auf den Button `SSH-Schlüssel hinzufügen`{.action}. Geben Sie im neu geöffneten Fenster einen Namen für den Schlüssel ein und fügen Sie Ihre Schlüsselfolge (in [Schritt 1](./#schritt-1-ssh-schlussel-erstellen) aus der öffentlichen Schlüsseldatei bzw. dem PuTTYgen-Fenster kopiert) in das Feld “Schlüssel” ein. Bestätigen Sie den Vorgang, indem Sie auf `Hinzufügen`{.action} klicken.
+![Control Panel](/pages/assets/screens/control_panel/product-selection/public-cloud/tpl-pci-en.png){.thumbnail}
 
-![Schlüssel hinzufügen](images/puttygen-04.png){.thumbnail}
+Öffnen Sie `SSH Keys`{.action} im linken Menü unter **Project Management**. Klicken Sie auf `SSH-Schlüssel hinzufügen`{.action}.
 
-### Schritt 3: Instanz erstellen  <a name="create-instance"></a>
+![ssh keys](/pages/assets/screens/control_panel/product-selection/public-cloud/cp_pci_sshkeys.png){.thumbnail}
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YP92y1rAVdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Geben Sie im neuen Fenster einen Namen für den Schlüssel ein. Füllen Sie das Feld `Schlüssel` mit der Zeichenfolge des öffentlichen Schlüssels aus, z.B. die in [Schritt 1](#create-ssh) erstellte. Bestätigen Sie, indem Sie auf `Hinzufügen`{.action} klicken.
 
-> [!success]
+![add key](images/24-addkey.png){.thumbnail}
+
+Sie können diesen Schlüssel jetzt in [Schritt 4](#create-instance) auswählen, um ihn einer neuen Instanz hinzuzufügen.
+
+<a name="network"></a>
+
+### Schritt 3: Netzwerkkonfiguration vorbereiten
+
+Bevor Sie Ihre Instanz erstellen, empfehlen wir, zu überprüfen, wie die Instanz in Bezug auf Networking verwendet werden soll.
+
+- Wenn Sie die Instanz derzeit nicht mit einem privaten Netzwerk konfigurieren müssen, können Sie mit [Schritt 4](#create-instance) fortfahren. Sie können eine Instanz erstellen, die über das öffentliche Internet erreichbar ist (vgl. **Public Mode** [unten](#networking-modes).)
+- Wenn die Instanz mit einem neuen privaten Netzwerk (OVHcloud [vRack](/links/network/vrack)) verbunden werden muss, **erstellen Sie zuerst Ihr vRack**, bevor Sie fortfahren. Weitere Informationen finden Sie in der [Anleitung zum Public Cloud vRack](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
+
+<a name="networking-modes"></a>
+
+/// details | Public Cloud Networking - Modusse
+
+**Public Mode**
+
+Instanzen im *Public Mode* werden direkt über IPv4/IPv6 dem öffentlichen Internet zugänglich gemacht. IP-Adressen können nicht geändert werden, aber Sie können Instanzen mit [Additional IP-Adressen](/links/network/additional-ip) ausstatten ([einschließlich Ihrer eigenen Adressen](/links/network/byoip)) sowie mit einem [vRack](/links/network/vrack) verbinden.
+
+**Private Mode**
+
+Instanzen im privaten Modus können nur über einen [Gateway Dienst](/links/public-cloud/gateway) oder [Load Balancer](/links/public-cloud/load-balancer), sowie  [Floating IP-Adressen](/links/public-cloud/floating-ip) dem öffentlichen Internet zugänglich gemacht werden.
+
+Weitere Informationen finden Sie in unseren Anleitungen im Bereich [Public Cloud Network Services](/products/public-cloud-network). Unsere [Seite mit Erläuterungen](/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts) bietet eine Einführung in das Thema Public Cloud Networking.
+
+**Local Private Mode**
+
+Der lokale private Modus ist nur verfügbar, wenn Sie eine Instanz in einer **Local Zone** erstellen. Instanzen können direkt über IPv4/IPv6 dem öffentlichen Internet zugänglich gemacht werden. Nur Instanzen derselben Local Zone können über private Netzwerke verbunden werden. Local Zones sind nicht mit dem [vRack](/links/network/vrack) kompatibel. In diesem Modus stellt DHCP Ihren Instanzen automatisch IP-Adressen zur Verfügung.
+
+Weitere Informationen finden Sie auf der [Webseite zu Local Zones](/links/public-cloud/local-zones).
+
+///
+
+<a name="create-instance"></a>
+
+### Schritt 4: Instanz erstellen
+
+> [!primary]
 >
-Als beste Vorgehensweise erstellen Sie ein privates Netzwerk vor der Instanzerstellung. Weitere Informationen zum Erstellen eines privaten Netzwerks finden Sie in der Anleitung [vRack für Public Cloud konfigurieren](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
+> Die Erstellung einer Instanz im OVHcloud Kundencenter erfordert einen öffentlichen SSH-Schlüssel (ausgenommen Windows-Instanzen).
+>
+> Starten Sie mit [Schritt 1](#create-ssh) und [Schritt 2](#import-ssh) dieser Anleitung, wenn Sie keine verfügbaren SSH-Schlüssel haben.
 >
 
-Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie das betreffende Public Cloud Projekt aus. Klicken Sie auf der “Start”-Seite auf `Instanz erstellen`{.action}. (Sie finden dieselbe Funktion auch auf der “Instanzen”-Seite, indem Sie in der linken Menüzeile unter “Compute” auf `Instances`{.action} klicken.)
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus.
 
-![Instanz auswählen](images/instance-creation-2024.png){.thumbnail}
+![Control Panel](/pages/assets/screens/control_panel/product-selection/public-cloud/tpl-pci-en.png){.thumbnail}
 
-**Local Zones**
+Klicken Sie in **Start** auf `Instanz erstellen`{.action}.
 
-Local Zones sind eine Erweiterung von Regionen, die OVHcloud Dienste näher an bestimmten Standorten platzieren und so für reduzierte Latenzen und verbesserte Anwendungsleistung sorgen. Sie sind strategisch günstig in der Nähe von Gebieten mit hoher Nutzernachfrage platziert. Ihr Hauptziel ist es, die für die Übertragung von Daten zwischen dem Benutzer und der Cloud erforderliche Zeit zu minimieren, um Dienste schneller und reaktionsfähiger zu machen und die Anforderungen an den Standort der Daten zu erfüllen.
+![instance creation](images/24-instance-creation01.png){.thumbnail}
 
-Weitere Informationen zu Local Zones finden Sie unter den folgenden Links: [Local Zone Compute](https://www.ovhcloud.com/de/public-cloud/local-zone-compute/) und [Local Zone Compute - Funktionen, Kapazitäten und Grenzen](/pages/public_cloud/compute/local-zones-capabilities-limitations).
+<a name="model"></a>
 
+#### Schritt 4.1: Modell auswählen
 
-**Globale Regionen**
+Im ersten Schritt wählen Sie ein Instanz-Modell (auch *Flavour* genannt), welches die Ressourcen der Instanz definiert. Klicken Sie auf den Tab mit der relevantesten Ressource für Ihre Bedürfnisse, um unsere optimierten Instanz-Modelle zu finden.
 
-Es handelt sich um Regionen, die von einem oder mehreren von OVHcloud verwalteten Rechenzentren unterstützt werden. Jede Region befindet sich in einer anderen geografischen Zone. Jede globale Region stellt eine oder mehrere Availability Zones bereit, z. B. GRA11, GRA7, BHS5, DE1, etc.
+![instance model](images/24-instance-creation02.png){.thumbnail}
 
-Wählen Sie zunächst entsprechend Ihren Anforderungen ein Server-Template aus. Der Assistent zeigt Ihnen Beschreibungen zu den verschiedenen Einsatzzwecken sowie die Verfügbarkeit der Servermodelle. Sie können aus den folgenden angepassten Kategorien auswählen:
+Im Bereich `Discovery`{.action} bieten wir Instanzen mit geteilten Ressourcen zu günstigen Preisen, ideal zum Einstieg in die Public Cloud oder etwa zum Testen einer Web-Anwendung.
 
-| Servertyp | Garantierte Ressourcen | Verwendungshinweise |
+Instanz-Modelle vom Typ `Metal`{.action} stellen dedizierte physische Ressourcen bereit.
+
+> [!primary]
+>
+> Die Verfügbarkeit Ihrer Public Cloud Ressourcen wird anfänglich aus Gründen der Kostenkontrolle und Sicherheit begrenzt. Sie können diese Quotas überprüfen, indem Sie in der linken Navigationsleiste unter **Project Management** auf `Quota and Regions`{.action} klicken. Weitere Informationen finden Sie in der [dedizierten Dokumentation](/pages/public_cloud/compute/increasing_public_cloud_quota).
+>
+> Beachten Sie, dass Sie nach der Erstellung Ihrer Instanz ein **Upgrade** durchführen können, um mehr Ressourcen zur Verfügung zu stellen. Der Wechsel zu einem kleineren Modell ist mit einer regulären Variante jedoch nicht möglich. Weitere Informationen zu diesem Thema finden Sie im folgenden**Schritt 4.4**.
+>
+
+#### Weitere Informationen
+
+/// Details | Instanz-Modellkategorien
+
+| Typ | Garantierte Ressourcen | Verwendungshinweise |
 | :---         |     :---:      |          :--- |
 | General Purpose   | ✓     | Entwicklungsserver, Web- oder Geschäftsanwendungen    |
 | Compute Optimized     | ✓       | Videokodierung oder anderes High Performance Computing      |
 | Memory Optimized   | ✓     | Datenbanken, Analysen und In-Memory-Berechnungen    |
 | GPU     | ✓       | Massive-Parallel-Processing-Leistung für spezialisierte Anwendungen (Rendering, Big Data, Deep Learning, etc.)       |
 | Discovery    | -       | Auf geteilten Ressourcen gehostet, für Test- und Entwicklungsumgebungen      |
-| Storage Optimized   | ✓     | Optimiert für Festplattentransaktionen    |
+| Storage Optimized   | ✓     | Optimiert für Disk-Datentransfer   |
 | Metal | ✓ | Dedizierte Ressourcen mit direktem Zugriff auf Rechen-, Speicher- und Netzwerkressourcen |
 
-> [!primary]
->
-> Die Gesamtressourcen Ihres Public Cloud Projekts sind anfangs aus Sicherheitsgründen eingeschränkt. Sie können Quotas überprüfen und eine Erhöhung über Ihr OVHcloud Kundencenter anfordern, indem Sie in der linken Menüleiste unter “Project Management” auf `Quota and Regions`{.action} klicken.
->
-> Bitte beachten Sie, dass Sie Ihre Instanz im Nachhinein upgraden, jedoch nicht auf ein kleineres Modell wechseln können, sofern Sie nicht in Schritt 4 der Erstellung die “Flex”-Option ausgewählt haben. Mehr Informationen hierzu finden Sie weiter unten in dieser Anleitung.
->
+///
 
-Wählen Sie im nächsten Schritt ein Rechenzentrum für Ihre Public Cloud Instanz aus.
+/// details | Regionen und Local Zones
 
-Im dritten Schritt wählen Sie das Betriebssystem für Ihre Instanz aus. Welche Images in diesem Schritt verfügbar sind, ist abhängig von Ihrer Auswahl in den vorangegangen Schritten, d. h. der Kompatibilität mit dem Servertyp und der Region. Es stehen auch Betriebssysteme mit vorinstallierten Anwendungen zur Verfügung.
+**Regionen**
 
-![Image auswählen](images/instance-creation-02-2023.png){.thumbnail}
+Eine **Region** wird definiert als ein Standort in der Welt, der aus einem oder mehreren Rechenzentren besteht, in denen Dienste von OVHcloud gehostet werden. Weitere Informationen zu Regionen, der geografischen Verteilung und der Verfügbarkeit von Diensten finden Sie auf unserer [dedizierten Webseite](/links/public-cloud/regions-pci) und der [Webseite zur OVHcloud Infrastruktur](/links/infrareg).
 
-> [!primary]
->
-Wenn Sie ein Betriebssystem auswählen, das eine kostenpflichtige Lizenz erfordert, werden die Kosten automatisch zu Ihrer stündlichen oder monatlichen Abrechnung hinzugefügt.
->
+**Local Zones**
 
-Auch für diesen Schritt muss ein SSH-Schlüssel hinzugefügt werden (ausgenommen Windows-Instanzen), indem dieser entweder direkt über `Schlüssel hinzufügen`{.action} eingefügt oder aus der Liste ausgewählt wird, wenn Sie diesen bereits in [Schritt 2](./#schritt-2-offentliche-schlussel-im-ovhcloud-kundencenter-speichern) im Kundencenter gespeichert haben.
+Local Zones sind eine Erweiterung von **Regionen**, die OVHcloud Dienste näher an bestimmten Standorten platziert, was zu reduzierten Latenzen und einer verbesserten Anwendungsleistung führt. Weitere Informationen finden Sie auf der [Webseite zu Local Zones](/links/public-cloud/local-zones) und in der [Dokumentation zur Dienstverfügbarkeit für Local Zones](/pages/public_cloud/compute/local-zones-capabilities-limitations).
 
-![Schlüssel auswählen](images/instance-creation-03-2022.png){.thumbnail}
+///
 
-Im vierten Schritt können zusätzliche Optionen konfiguriert werden.
+<a name="region"></a>
 
-![Optionen auswählen](images/instance-creation-04-2022.png){.thumbnail}
+#### Schritt 4.2: Standort auswählen
 
-- Sie können mehrere Instanzen mit den gewählten Einstellungen deployen (innerhalb der zuvor erwähnten Quota).
-- Sie können eine flexible Instanz erstellen, damit Sie im Nachhinein auch auf ein kleineres Modell (oder sogar andere Servermodellkategorien) wechseln können. Diese Option begrenzt jedoch den **inklusiven Speicherplatz** der Instanz auf 50 GB, unabhängig davon, ob auf ein höheres oder ein geringeres Modell migriert wird.
-- Sie können den Anzeigenamen Ihrer Instanz ändern.
-- Sie können ein Post-Installationsskript hinzufügen.
-- Sie können automatische Backups für die Instanz(en) aktivieren. Bitte achten Sie hierbei auf die Preisinformationen sowie die Optionen zur Backup-Rotation.
+Wählen Sie eine [Region](/links/public-cloud/regions-pci) aus, die Ihren Benutzern oder Kunden am nächsten ist. Diese Option kann abhängig von der Modellauswahl in **Schritt 4.1** eingeschränkt sein. Wenn Sie in diesem Schritt eine **Local Zone** auswählen, gelten für die Instanz Netzwerkbeschränkungen (siehe [Schritt 3](#networking-modes)).
 
-Wenn Sie fertig sind, klicken Sie auf `Weiter`{.action}, um Ihr Netzwerk zu konfigurieren.
+Weitere Informationen finden Sie auf der [Webseite zu Local Zones](/links/public-cloud/local-zones) und in der [Dokumentation zur Dienstverfügbarkeit für Local Zones](/pages/public_cloud/compute/local-zones-capabilities-limitations).
 
-![configure network](images/network-selection.png){.thumbnail}
+![Region auswählen](images/24-instance-creation03.png){.thumbnail}
 
-Je nach geplanter Nutzung Ihrer Instanzen können Sie **Öffentlicher Modus** oder **Privater Modus** auswählen.
+<a name="image"></a>
 
-Der Öffentliche Modus ist das klassische Netzwerkmodell und erlaubt es Ihren Instanzen, einen eigenen öffentlichen Netzwerk-Port einzurichten. Jede Instanz ist mit dem vRack verbunden und verfügt über eine öffentliche und eine private IP.
+#### Schritt 4.3: Image auswählen
 
-Der Private Modus bietet Ihnen die Möglichkeit, Ihre Instanzen ausschließlich einem privaten Netzwerk zuzuweisen. Die Instanzen dieses Modus können dem öffentlichen Netzwerk nur mit einem Gateway oder Loadbalancer mit Floating IPs ausgesetzt werden. Weitere Informationen finden Sie in unserer Dokumentation zu den [Netzwerklösungen für die OVHcloud Public Cloud](/products/public-cloud-network).
+Klicken Sie auf den passenden Tab und wählen Sie ein Betriebssystem für Ihre Instanz mithilfe der Dropdown-Menüs aus.
 
-Wählen Sie nach der Wahl Ihr privates Netzwerk aus, an das Ihre Instanz angehängt werden soll, oder klicken Sie auf `Ein neues privates Netzwerk erstellen`{.action}, um ein neues zu erstellen. Wenn Sie diese Option auswählen, werden Sie auf die Seite zum Erstellen des privaten Netzwerks weitergeleitet. Danach müssen Sie die Bestellung Ihrer Instanz erneut durchführen. Es ist daher am besten, ein privates Netzwerk zu erstellen, bevor Sie Ihre Instanz erstellen.
+![image selection](images/24-instance-creation04.png){.thumbnail}
 
-Wenn Sie Ihre Auswahl getroffen haben, klicken Sie auf `Weiter`{.action}, um zum letzten Schritt überzugehen und eine Abrechnungsmethode auszuwählen.
-
-![Abrechnungsmethode auswählen](images/instance-creation-05-2022.png){.thumbnail}
-
-Wir empfehlen Ihnen, bei Unsicherheit bezüglich des Verwendungszeitraums die stündliche Abrechnung auszuwählen, da es nicht möglich ist, nach der Lieferung des Dienstes zu dieser Option zu wechseln. Sobald die Instanz in der “Instanzen”-Übersicht angezeigt wird, können Sie auf monatliche Abrechnung umstellen.
+Welche Images in diesem Schritt verfügbar sind, hängt von den in den vorherigen Schritten getroffenen Entscheidungen ab, also der Kompatibilität mit dem Instanz-Modell und der regionalen Verfügbarkeit. Wenn Sie beispielsweise ein Windows-Betriebssystem auswählen möchten und auf dem Tab für Windows keine Optionen verfügbar sind, müssen Sie die Auswahl in den vorherigen Schritten ändern.
 
 > [!primary]
 >
->Wenn Sie sich für eine unserer aktuellen *Compute* Instanzen entscheiden, ist aus technischen Gründen möglicherweise nur die Option zur **stündlichen Abrechnung** verfügbar.
+> Wenn Sie sich für ein Betriebssystem entscheiden, für das eine kostenpflichtige Lizenz erforderlich ist, werden diese Kosten automatisch in der Abrechnung des Projekts berücksichtigt.
 >
+
+Dieser Schritt erfordert außerdem **einen öffentlichen SSH-Schlüssel** (ausgenommen Windows-Instanzen). Sie haben 2 Optionen:
+
+- Einen öffentlichen Schlüssel verwenden, der bereits im OVHcloud Kundencenter gespeichert ist
+- Einen öffentlichen Schlüssel direkt eingeben
+
+Klicken Sie auf die Tabs, um die Erläuterungen anzuzeigen:
+
+> [!tabs]
+> **Gespeicherten Schlüssel verwenden**
+>>
+>> Um einen in Ihrem OVHcloud Kundencenter gespeicherten Schlüssel hinzuzufügen (siehe [Schritt 2](#import-ssh)), wählen Sie ihn in der Liste aus.<br><br>
+>>![key selection](images/24-instance-creation05.png){.thumbnail}<br>
+>>
+> **Schlüssel direkt eingeben**
+>>
+>> Um einen öffentlichen Schlüssel durch manuelles Einfügen der Schlüsselzeichenfolge zu verwenden, klicken Sie auf `Schlüssel hinzufügen`{.action}.<br><br>
+>>![key selection](images/24-instance-creation06.png){.thumbnail}<br>
+>> Geben Sie einen Namen für den Schlüssel und die Schlüsselzeichenfolge in die entsprechenden Felder ein. Klicken Sie dann auf `Weiter`{.action}.<br><br>
+>>![key selection](images/24-instance-creation07.png){.thumbnail}<br>
+>> Bevor Sie auf `Weiter`{.action} klicken, können Sie optional den Button `Schlüssel hinzufügen`{.action} verwenden, um diesen Schlüssel im OVHcloud Kundencenter zu speichern (siehe [Schritt 2](#import-ssh)).
+>>
+
+<a name="configuration"></a>
+
+#### Schritt 4.4: Konfigurieren der Instanz
+
+![instance select](images/24-instance-creation08.png){.thumbnail}
+
+Dieser Schritt umfasst mehrere Konfigurationsoptionen. Klicken Sie auf die Tabs, um Details anzuzeigen:
+
+> [!tabs]
+> **1: Anzahl der zu erstellenden Instanzen**
+>>
+>> Sie können mehrere Instanzen auf der Grundlage der in den Erstellungsschritten getroffenen Auswahl erstellen; es gelten jedoch [Ressourcenkontingentsgrenzen](/pages/public_cloud/compute/increasing_public_cloud_quota).<br>
+>>
+> **2: Flexible Instanz**
+>>
+>> Wenn das ausgewählte Modell kompatibel ist, können Sie eine **Flex-Instanz** erstellen. Mit dieser Option können Sie später auf ein kleineres Modell wechseln (und sogar eine andere Modellkategorie auswählen), aber die Instanz ist permanent auf **50 GB Speicherplatz** begrenzt, unabhängig von anderen Upgrades oder Downgrades.<br>
+>>
+> **3: Name der Instanz**
+>>
+>> Geben Sie einen Anzeigenamen für Ihre Instanz ein. Der Standardwert ist die kommerzielle Referenz des Instanz-Modells..<br>
+>>
+> **4: Post-Installation-Skript**
+>>
+>> Sie können [Ihr Skript](/pages/public_cloud/compute/launching_script_when_creating_instance) in diesem Feld hinzufügen.<br>
+>>
+> **5: Automatisches Backup der Instanz**
+>>
+>> Sie können [automatische Backups](/pages/public_cloud/compute/save_an_instance) aktivieren, indem Sie diese Option auswählen. Beachten Sie die angezeigten Kosteninformationen und weiteren Details hierzu.
+>>
+
+<a name="network"></a>
+
+#### Schritt 4.5: Netzwerk konfigurieren
+
+In diesem Schritt legen Sie den Public Cloud-Netzwerkmodus fest, den Sie basierend auf den Informationen in [Schritt 3](#network) ausgewählt haben. Ihre Optionen hängen von der [Auswahl des Standorts](#region) für die Instanz (**Region** oder **Local Zone**) ab.
+
+##### Regionen
+
+> [!tabs]
+> **Private Mode**
+>>
+>> Die Instanz kann vollständig privat bleiben.<br><br>
+>>![network type](images/24-instance-creation09.png){.thumbnail}<br>
+>> Sie können die Instanz mit einem [privaten Netzwerk](#networking-modes) und einer [Floating IP](/links/public-cloud/floating-ip) verbinden. Es wird keine dedizierte öffentliche IP-Adresse angefügt.<br><br>
+>>![network type](images/24-instance-creation10.png){.thumbnail}<br>
+>> Wenn Sie auf `Neues privates Netzwerk erstellen`{.action} klicken, wird die Erstellung der Instanz unterbrochen und muss neu begonnen werden.<br>
+>>
+> **Public Mode**
+>>
+>> Die Instanz wird direkt über IPv4/IPv6 dem öffentlichen Internet zugänglich gemacht<br><br>
+>>![network type](images/24-instance-creation11.png){.thumbnail}<br>
+>> Sie können die Instanz zusätzlich über das Dropdown-Menü mit einem [privaten Netzwerk](#networking-modes) (vRack) verbinden.<br>
+>> Wenn Sie auf `Neues privates Netzwerk erstellen`{.action} klicken, wird die Erstellung der Instanz unterbrochen und muss neu begonnen werden.
+>>
+
+Klicken Sie auf `Weiter`{.action}, um zum letzten Schritt zu gelangen.
+
+##### Local Zones
+
+Sie können die Instanz mit einem privaten Netzwerk verbinden, sie öffentlich zugänglich machen oder beides.
+
+![network type](images/24-instance-creation12.png){.thumbnail}
+
+> [!tabs]
+> **Öffentliches Netzwerk**
+>>
+>> Mit Auswahl der Option `Öffentliches Netzwerk` wird die Instanz direkt über IPv4/IPv6 dem öffentlichen Internet zugänglich gemacht.<br>
+>> Zusätzlich können Sie die Instanz mit einem [privaten Netzwerk](#networking-modes) (nicht kompatibel mit vRack) verbinden, indem Sie `Lokales privates Netzwerk kompatibel mit Local Zones` auswählen (siehe Tab **Lokales privates Netzwerk**).
+>>
+> **Lokales privates Netzwerk**
+>>
+>> Aktivieren Sie die Option `Lokales privates Netzwerk kompatibel mit Local Zones`. Wenn Sie **diese Option auswählen, ohne `Öffentliches Netzwerk` auszuwählen**, bleibt die Instanz vollständig privat und wird nur mit einem [privaten Netzwerk](#networking-modes) (nicht kompatibel mit vRack) verbunden. Wählen Sie ein bestehendes Netzwerk aus der Liste der Option `Vorhandenes privates Netzwerk zuweisen` oder erstellen Sie ein neues Netzwerk für die Local Zone, indem Sie `Ein lokales privates Netzwerk erstellen` auswählen (unterbricht nicht den Erstellungsprozess der Instanz).<br><br>
+>>![network type](images/24-instance-creation13.png){.thumbnail}
+>>
+
+Klicken Sie auf `Weiter`{.action}, um zum letzten Schritt zu gelangen.
+
+<a name="billing"></a>
+
+#### Schritt 4.6: Abrechnungszeitraum auswählen
+
+![Abrechnungsmodus](images/24-instance-creation14.png){.thumbnail}
+
+> [!primary]
+>
+> Beachten Sie, dass je nach gewähltem Instanz-Modell die **stündliche** Abrechnung als einzige Auswahl erscheinen kann. Dies ist eine vorübergehende Einschränkung; neue Abrechnungsoptionen für die Public Cloud werden demnächst verfügbar sein.
+>
+
+> [!tabs]
+> **Monatliche Abrechnung**
+>>
+>> Die monatliche Abrechnung führt auf Dauer zu geringeren Kosten, aber **kann nach der Erstellung der Instanz nicht auf die stündliche Abrechnung umgestellt werden**.<br>
+>>
+> **Stündliche Abrechnung**
+>>
+>> Die stündliche Abrechnung ist die beste Wahl, wenn die Dauer der Nutzung nicht exakt abschätzbar ist. Wenn Sie sich später entscheiden, die Instanz für eine längere Nutzung beizubehalten, können Sie jederzeit [auf ein monatliches Abonnement umstellen](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing).<br>
+>> Die Instanz wird in Rechnung gestellt, solange sie **nicht gelöscht** wird, unabhängig von der produktiven Nutzung der Instanz.
+>>
+
+Details hierzu finden Sie in unserer dedizierten Abrechnungsdokumentation:
+
+- [Public Cloud Abrechnung](/pages/public_cloud/compute/analyze_billing)
+- [FAQ zur monatlichen Abrechnung](/pages/public_cloud/compute/faq_change_of_monthly_billing_method)
+
+Wenn die Konfiguration Ihrer Instanz abgeschlossen ist, klicken Sie auf den Button `Instanz erstellen`{.action}. Die Bereitstellung des Dienstes kann einige Minuten in Anspruch nehmen.
+
+<a name="connect-instance"></a>
+
+### Schritt 5: Verbindung mit der Instanz herstellen
+
+Die Anweisungen in diesem Abschnitt beziehen sich auf Remoteverbindungen mittels **Open SSH** und **RDP** über ein öffentliches Netzwerk (Internet).
+
+Beachten Sie, dass wir alternative Zugriffsmöglichkeiten (hauptsächlich zur Fehlerbehebung) anbieten, die nur über Ihr OVHcloud Kundencenter verfügbar sind:
+
+- [VNC-Konsole](#vnc-console)
+- [Rescue-Modus](/pages/public_cloud/compute/put_an_instance_in_rescue_mode)
+
+> [!primary]
+>
+> Wenn Sie ein **Betriebssystem mit Anwendung** ("Distribution + Apps") installiert haben, beachten Sie unsere [Anleitung zu den ersten Schritten](/pages/public_cloud/compute/apps_first_steps) sowie die offizielle Dokumentation des entsprechenden Herausgebers.
+>
+
+<a name="verify-status"></a>
+
+#### 5.1: Überprüfen des Status der Instanz im Kundencenter
+
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus.
+
+![Kundencenter](/pages/assets/screens/control_panel/product-selection/public-cloud/tpl-pci-en.png){.thumbnail}
+
+Wählen Sie `Instances`{.action} in der linken Navigationsleiste unter **Compute** aus. Ihre Instanz ist bereit, wenn der Status in der Tabelle `Aktiviert` anzeigt. Wenn die Instanz vor kurzem erstellt wurde und einen anderen Status hat, klicken Sie auf den Button "Aktualisieren" links neben dem Suchfilter.
+
+![Seite Instanzen](images/24-instance-connect01.png){.thumbnail}
+
+Klicken Sie auf den Instanznamen in dieser Tabelle, um das `Dashboard`{.action} zu öffnen, auf der Sie alle Instanzdetails finden können. Weitere Informationen zu den auf dieser Seite verfügbaren Funktionen finden Sie in unserer Anleitung [Verwaltung von Instanzen im Kundencenter](/pages/public_cloud/compute/first_steps_with_public_cloud_instance).
+
+Ein **Benutzer mit erhöhten Rechten (*sudo*) wird automatisch auf der Instanz erstellt**. Der Benutzername entspricht dem installierten Image, z.B. "ubuntu", "debian", "fedora", etc. Sie können den Benutzernamen auf der rechten Seite auf dem `Dashboard`{.action} im Abschnitt **Netzwerke** überprüfen.
+
+![Seite Instanzen](images/24-instance-connect02.png){.thumbnail}
+
+Wenn Ihr [SSH-Schlüsselpaar korrekt konfiguriert](#create-ssh) ist, können Sie sich nun mit dem vorkonfigurierten Benutzer und Ihrem SSH-Schlüssel bei der Instanz anmelden. Die einzelnen Schritte dazu finden Sie in den nachfolgenden Abschnitten.
+
+> [!primary]
+>
+> Der Zugriff über die **VNC-Konsole** auf eine neue, im Kundencenter erstellte Instanz mit GNU/Linux OS muss zuerst aktiviert werden, wie [weiter unten in dieser Anleitung](#vnc-console) beschrieben.
+>
+> Diese Anleitung behandelt nicht die Konfiguration privater Netzwerke für Instanzen. Informationen hierzu finden Sie in unserer Dokumentation zu [Public Cloud Network Services](/products/public-cloud-network).
+>
+
+<a name="login-linux"></a>
+
+#### 5.2: Erste Verbindung auf einer Instanz unter GNU/Linux Betriebssystem
+
+> [!primary]
+>
+> Wenn Sie Fehlermeldungen bezüglich Ihrer **SSH-Schlüssel** erhalten, überprüfen Sie mithilfe der Informationen in [dieser Anleitung](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key), ob Ihr lokales Gerät über einen korrekt konfigurierten privaten SSH-Schlüssel verfügt.  
+> Wenn Sie weiterhin auf Fehler stoßen, können Sie das Schlüsselpaar mithilfe [dieser Anleitung](/pages/public_cloud/compute/replacing_lost_ssh_key) ersetzen.
+>
+> Wenn Sie eine Instanz ohne SSH-Schlüssel über die [OVHcloud API](/pages/manage_and_operate/api/first-steps) oder das [OpenStack Horizon Interface](/pages/public_cloud/compute/create_instance_in_horizon) erstellt haben, können Sie Ihrer Instanz nur über den [Rescue-Modus](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) einen SSH-Schlüssel hinzufügen, indem Sie den Anweisungen in [dieser Anleitung](/pages/public_cloud/compute/replacing_lost_ssh_key) folgen.
+>
+
+Sie können direkt nach der Instanz-Erstellung über das Kommandozeileninterface Ihres lokalen Systems (`Terminal`, `Command prompt`, `Powershell`, etc.) über SSH auf Ihre Instanz zugreifen:
+
+```bash
+ssh username@IPv4_instance
+```
+
+Beispiel:
+
+```bash
+ssh ubuntu@203.0.113.101
+```
+
+[Abhängig von Ihrer Konfiguration](#create-ssh) müssen Sie eine Passphrase eingeben, die Ihren privaten Schlüssel schützt, oder den Pfad zu Ihrer Schlüsseldatei angeben. Weitere Informationen finden Sie in unserer [Anleitung zu SSH-Schlüsseln](/pages/public_cloud/compute/creating-ssh-keys-pci#multiplekeys).
+
+Wenn Sie eine andere SSH-Client-Software verwenden, folgen Sie deren Benutzerdokumentation. Ein Beispiel für die Verwendung der Open-Source-Lösung `PuTTY` finden Sie in [dieser Anleitung](/pages/public_cloud/compute/creating-ssh-keys-pci#useputty).
+
+Fahren Sie mit [Schritt 6](#manage-access) dieser Anleitung fort.
+
+<a name="windows"></a>
+
+#### 5.3: Windows-Instanzen
+
+##### 5.3.1: Installation einer Windows-Instanz abschließen
+
+Nachdem Sie überprüft haben, dass die Windows-Instanz [installiert](#verify-status) ist, öffnen Sie den Tab `VNC-Konsole`{.action} in Ihrem [OVHcloud Kundencenter](/links/manager).
+
+Anschließend müssen Sie die Erstkonfiguration Ihres Windows-Betriebssystems abschließen. Folgen Sie dazu den Schritten in den Tabs:
+
+> [!tabs]
+> 1. **Lokale Einstellungen**
+>>
+>> Konfigurieren Sie **Land/Region**, die bevorzugte **Windows-Sprache** und **Tastaturlayout**. Klicken Sie dann unten rechts auf `Next`{.action}.<br><br>
+>>![VNC](/pages/assets/screens/other/windows/windows_locale.png){.thumbnail}<br>
+>>
+> 2. **Administratorpasswort**
+>>
+>> Geben Sie ein Passwort für den Windows-Account `Administrator` ein und bestätigen Sie. Klicken Sie dann auf `Finish`{.action}.<br><br>
+>>![VNC](/pages/assets/screens/other/windows/windows_admin.png){.thumbnail}<br>
+>>
+> 3. **Anmeldebildschirm**
+>>
+>> Die Einstellungen werden angewendet, und der Anmeldebildschirm wird angezeigt. Klicken Sie auf `Send CtrlAltDel`{.action} oben rechts, um sich einzuloggen.<br><br>
+>>![VNC](/pages/assets/screens/other/windows/windows_vnc.png){.thumbnail}<br>
+>>
+> 4. **Administrator-Login**
+>>
+>> Geben Sie das im vorherigen Schritt erstellte Passwort des Accounts `Administrator` ein und klicken Sie auf den `Pfeil`.<br><br>
+>>![VNC](/pages/assets/screens/other/windows/windows_login.png){.thumbnail}
+>>
+
+<a name="login-windows"></a>
+
+##### 5.3.2: Remote-Verbindung von Windows aus
+
+Auf Ihrem lokalen Windows-Gerät können Sie sich über die Client-Anwendung `Remote Desktop Connection` mit Ihrer Instanz verbinden.
+
+![RDP connection](/pages/assets/screens/other/windows/windows_rdp.png){.thumbnail}
+
+Geben Sie die IPv4-Adresse Ihrer Instanz und dann Ihre Kennung und Ihre Passphrase ein. In der Regel wird eine Warnmeldung angezeigt, in der Sie aufgefordert werden, die Verbindung aufgrund eines unbekannten Zertifikats zu bestätigen. Klicken Sie auf `Ja`{.action}, um sich anzumelden.
+
+> [!primary]
+>
+> Wenn bei diesem Verfahren Probleme auftreten, überprüfen Sie, ob Remoteverbindungen (RDP) auf Ihrem Gerät zugelassen sind, indem Sie die Systemeinstellungen, Firewallregeln und mögliche Netzwerkeinschränkungen überprüfen.
+>
+
+<a name="login-other"></a>
+
+##### 5.3.3: Remote-Verbindung von einem anderen Betriebssystem aus
+
+Für Verbindungen von einem anderen Desktop-Betriebssystem als Windows ist in der Regel eine Client-Software erforderlich, die mit dem `Remote Desktop Protocol` (RDP) kompatibel ist. Einige Desktop-Umgebungen und Betriebssysteme verfügen möglicherweise über einen integrierten nativen Client.
+
+Unabhängig davon, welchen Client Sie verwenden, benötigen Sie nur die IP-Adresse Ihrer Instanz und das Passwort des `Administrator`-Accounts zur Anmeldung.
+
+**Anwendungsbeispiel**
+
+Die freie und Open Source Software `Remmina Remote Desktop Client` ist für viele GNU/Linux Desktop-Distributionen verfügbar. Wenn Sie Remmina nicht im Software-Manager Ihrer Desktop-Umgebung finden, können Sie die Anwendung von der [offiziellen Website](https://remmina.org/) beziehen.
+
+![Linux Remote](images/24-rem-connect01.png){.thumbnail}<br>
+
+> [!tabs]
+> 1. **Verbindung**
+>>
+>> Öffnen Sie Remmina und stellen Sie sicher, dass das Verbindungsprotokoll auf "RDP" eingestellt ist. Geben Sie die IPv4-Adresse Ihrer Public Cloud Instanz ein und drücken Sie die Eingabetaste.<br><br>
+>>![linux remote](images/24-rem-connect02.png){.thumbnail}<br>
+>>
+> 2. **Authentifizierung**
+>>
+>> Wenn eine Zertifikatwarnung angezeigt wird, klicken Sie auf `Yes`{.action}. Geben Sie den Benutzernamen und das Kennwort für Windows ein, und klicken Sie auf `OK`{.action}, um die Verbindung herzustellen.<br><br>
+>>![linux remote](images/24-rem-connect03.png){.thumbnail}<br>
+>>
+> 3. **Einstellungen**
+>>
+>> Sie finden einige nützliche Einstellungsoptionen in der linken Symbolleiste. Klicken Sie beispielsweise auf das Symbol `Toggle Dynamic Resolution Update`{.action}, um die Auflösung des Remote-Fensters zu verbessern.<br><br>
+>>![linux remote](images/24-rem-connect04.png){.thumbnail}
+>>
+
+<a name="vnc-console"></a>
+
+#### 5.4: Zugriff auf die VNC-Konsole
+
+Mit der VNC-Konsole können Sie sich auf Ihren Instanzen einloggen, auch wenn keine anderen Zugriffsmöglichkeiten verfügbar sind.
+
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus.
+
+![Kundencenter](/pages/assets/screens/control_panel/product-selection/public-cloud/tpl-pci-en.png){.thumbnail}
+
+Wählen Sie `Instanzen`{.action} in der linken Navigationsleiste unter **Compute** aus. Klicken Sie auf den Instanznamen und öffnen Sie den Tab `VNC-Konsole`{.action}.
+
+![VNC-Konsole](/pages/assets/screens/control_panel/product-selection/public-cloud/cp-pci-vnc-login.png){.thumbnail}
+
+> [!tabs]
+> **Instanz mit GNU/Linux Betriebssystem**
+>>
+>> Für die Verwendung der VNC-Konsole muss auf der Instanz ein **Benutzerkonto mit Passwort** konfiguriert sein. Um ein Passwort für das vorkonfigurierte Konto festzulegen, folgen Sie den Schritten in [Abschnitt 6.1.1 unten](#set-password).
+>>
+> **Windows-Instanz**
+>>
+>> Melden Sie sich mit Ihren Logindaten der Windows-Instanz an. Bei einer aktiven Sitzung haben Sie unmittelbar Zugriff. Es besteht eine spürbare Latenz im Vergleich zu einer RDP-Verbindung.
+>>
+
+<a name="manage-access"></a>
+
+### Schritt 6: Erste Schritte mit einer neuen Instanz
+
+> [!primary]
+>
+>**Windows-Instanzen**
+>
+> Für Instanzen, auf denen ein Windows-Betriebssystem installiert ist, sind keine weiteren Schritte erforderlich.
+>
+> Weitere Informationen finden Sie unten im Abschnitt [Weiterführende Informationen](#go-further).
+>
+
+<a name="user-mgmt"></a>
+
+#### 6.1: Benutzerverwaltung
+
+<a name="set-password"></a>
+
+> [!primary]
+>
+> Beim Konfigurieren von Benutzer-Accounts und Berechtigungsstufen für eine Instanz empfehlen wir, die Informationen in unserer Anleitung zu [Benutzer-Accounts](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds) zu verwenden.
+>
+
+##### 6.1.1: Ein Passwort für den aktuellen Benutzer-Account festlegen
+
+Wenn Sie [auf der Instanz eingeloggt sind](#manage-access), vergeben Sie ein Passwort für den aktuellen Benutzer, indem Sie folgenden Befehl verwenden:
+
+```bash
+sudo passwd
+```
+
+Geben Sie eine Passphrase ein, bestätigen Sie mit `Enter` und wiederholen Sie den Vorgang.
+
+```console
+New password: 
+Retype new password:
+passwd: password updated successfully
+```
+
+**Dies reicht aus, um Logins über die [VNC-Konsole](#vnc-console) in Ihrem [OVHcloud Kundencenter](/links/manager) zu aktivieren**. Remote-Logins über SSH mit diesem Passwort sind jedoch weiterhin **deaktiviert**.
+
+<a name="remote-password"></a>
+
+#### 6.1.2: Aktivieren von Remote-Logins mit Passwort (optional)
 
 > [!warning]
 >
->Wenn Sie sich für die stündliche Abrechnung entscheiden, wird Ihnen die Instanz solange in Rechnung gestellt, bis diese gelöscht wird. Es spielt keine Rolle, ob die Instanz tatsächlich verwendet wird oder nicht.
+> Dieser Schritt ist nicht notwendig und sollte nur ausgeführt werden, wenn Sie einen triftigen Grund haben, diesen Zugriffsweg zu aktivieren; zum Beispiel, wenn Sie sich vorübergehend von einem Gerät aus auf der Instanz einloggen müssen, auf dem Ihr privater SSH-Schlüssel nicht gespeichert ist.
+>
+> Das folgende Beispiel zeigt eine temporäre Lösung anhand einer Instanz, auf der Ubuntu installiert ist. Beachten Sie, dass die Befehle möglicherweise an Ihr Betriebssystem angepasst werden müssen. Es wird nicht empfohlen, diese Konfiguration dauerhaft beizubehalten, weil das System damit für SSH-basierte Angriffe geöffnet wird und dies ein potenzielles Sicherheitsrisiko bedeutet.
 >
 
-Nachdem Sie überprüft haben, dass Ihre Konfigurationseinstellungen korrekt sind, klicken Sie auf den Button `Instanz erstellen`{.action}, um den Vorgang abzuschließen. Es kann einige Minuten dauern, bis Ihr Dienst geliefert wird.
-
-### Schritt 4: Mit Ihrer Instanz verbinden <a name="connect-to-instance"></a>
-
-Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie das betreffende Public Cloud Projekt aus. Klicken Sie dann in der linken Menüleiste unter “Compute” auf `Instanzen`{.action}. Ihre Instanz steht bereit, sobald in der entsprechenden Tabellenspalte als Status “Aktiviert” angezeigt wird. Um dies zu überprüfen, können Sie rechts neben `Instanz erstellen`{.action} auf den Aktualisierungsbutton klicken.
-
-![Instanzen-Seite](images/instance-connect-01.png){.thumbnail}
-
-Für die Instanz wird automatisch ein Benutzer mit erweiterten Berechtigungen erstellt. Der Benutzername entspricht dem gewählten Image, z. B. “ubuntu”, “debian”, “fedora”, “arch” etc. Diese sowie weitere Eigenschaften können Sie im “Dashboard” der Instanz einsehen, indem Sie auf `...`{.action} und dann auf `Instanz-Details`{.action} klicken.
-
-> [!primary]
->
-Sollten Verbindungsprobleme auftreten, d. h. kommt es zu Fehlern mit Ihren SSH-Schlüsseln, lesen Sie bitte die Anleitung “[Änderung des SSH-Schlüssels bei Verlust](/pages/public_cloud/compute/replacing_lost_ssh_key)”.
->
-
-> [!primary]
->
-Wenn Sie über die OVHcloud API oder das Interface von OpenStack Horizon eine Instanz ohne SSH-Schlüssel erstellt haben, können Sie Ihrer Instanz nur über den [Rescue-Modus](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) einen SSH-Schlüssel hinzufügen. Beachten Sie hierzu die Anweisungen in [diesem Abschnitt der entsprechenden Anleitung](/pages/public_cloud/compute/replacing_lost_ssh_key#in-der-praktischen-anwendung).
->
-
-#### Über Linux / Mac mit einer Linux-Instanz verbinden
-
-Sie können jetzt über die Kommandozeile (Terminal) via SSH auf Ihre Instanz zugreifen. Ersetzen Sie “username” in den nachfolgenden Beispielen wie zuvor beschrieben mit Ihrem Standardbenutzer. Sie können auch einfach den gesamten Login-Befehl aus dem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) kopieren, indem Sie diesen im “Dashboard” Ihrer Instanz anklicken und in Ihr Terminal kopieren.
-
-![Instanzen-Seite](images/instance-connect-02.png){.thumbnail}
-
-Geben Sie die Passphrase Ihres privaten Schlüssels ein, wenn Sie dazu aufgefordert werden. 
+Öffnen Sie nach dem [Einloggen auf Ihrer Instanz](#manage-access) die betreffende Konfigurationsdatei mit einem Texteditor. Beispiel:
 
 ```bash
-ssh username@IPv4_of_your_instance
-Enter passphrase for key '/Users/username/.ssh/id_rsa':
+sudo nano /etc/ssh/sshd_config
 ```
 
-Da Sie mit *root*-Berechtigung eingeloggt sind (“sudo user”), können Sie direkt Befehle eingeben, um Verwaltungsaufgaben auszuführen. Es wird empfohlen, zuerst Ihr Passwort zu ändern:
+Bearbeiten Sie die Zeile `#PasswordAuthentication yes` wie folgt:
+
+```console
+PasswordAuthentication yes
+```
+
+Ändern Sie die Zeile `Include /etc/ssh/sshd_config.d/*.conf` wie folgt:
+
+```console
+#Include /etc/ssh/sshd_config.d/*.conf
+```
+
+Speichern Sie die Datei und schließen Sie den Editor.
+
+Starten Sie den SSH-Dienst mit einem der folgenden Befehle neu:
 
 ```bash
-$ sudo passwd username
-New password:
-Retype new password:
-passwd: password updated successfully
+sudo systemctl restart ssh
 ```
-
-Sie können diese Login-Daten anschließend verwenden, um sich über die `VNC-Konsole`{.action} Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) einzuloggen. Wechseln Sie nun zum *root*-Benutzer und legen Sie ein sicheres Passwort fest. Wechseln Sie dann wieder zum vorherigen Benutzer.
 
 ```bash
-$ sudo su -
-# passwd
-New password:
-Retype new password:
-passwd: password updated successfully
-# su - username
+sudo systemctl restart sshd
 ```
 
-Beachten Sie, dass es nur selten notwendig ist, zum *root*-Benutzer zu wechseln. Wir empfehlen, dass Sie sich für Verwaltungsaufgaben, die *root*-Berechtigungen erfordern, als ein Benutzer aus der “sudo”-Gruppe einloggen, um Befehle auszuführen.
+Sie können sich nun via SSH auch mit Benutzername und Passwort anmelden.
 
-#### Über Windows mit einer Linux-Instanz verbinden
+Machen Sie diese Änderungen rückgängig, um zur schlüsselbasierten Login-Methode zurückzukehren.
 
-Nachdem Sie Ihre SSH-Schlüssel erstellt und gespeichert ([Schritt 1](./#schritt-1-ssh-schlussel-erstellen)) und Ihre Instanz mit dem öffentlichen Schlüssel installiert haben ([Schritt 3](./#schritt-3-instanz-erstellen)), können Sie [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) und Ihren privaten Schlüssel verwenden, um sich mit Ihrer Instanz zu verbinden.
+<a name="add-keys"></a>
 
-Öffnen Sie PuTTY, erweitern Sie links den Menüpunkt “SSH” und klicken Sie dann auf “Auth”, um die Authentifizierungsoptionen einzusehen.
+#### 6.2: Zusätzliche SSH-Schlüssel
 
-![PuTTY verwenden](images/puttyconnect-01.png){.thumbnail}
+Wenn Sie weiteren Benutzer-Accounts den Zugriff auf die Instanz erlauben möchten, gehen Sie wie folgt vor:
 
-Klicken Sie auf den Button `Browse`{.action}, um zu dem Ordner zu navigieren, in dem sich Ihre private Schlüsseldatei (.ppk) befindet, und öffnen Sie diese. Wechseln Sie dann im linken Menü zu “Session” und geben Sie Ihre Login-Daten (benutzer@IPv4_adresse) ein. Ersetzen Sie “ubuntu” in den Beispiel-Screenshots mit dem zugehörigen Standardbenutzer, der im “Dashboard” der Instanz im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) angezeigt wird. (Klicken Sie in der linken Menüleiste auf `Instances`{.action}, dann auf den Namen der Instanz.)
+- Erstellen Sie den Account auf der Instanz.
+- Erzuegen Sie ein neues SSH-Schlüsselpaar auf dem Gerät des Benutzers.
+- Fügen Sie der Instanz den öffentlichen Schlüssel hinzu.
 
-Sie können diese Sitzung nun für zukünftige Verbindungen speichern, damit sie über die Liste in diesem Interface verfügbar ist. Geben Sie unter “Saved Sessions” einen beschreibenden Namen ein und klicken Sie auf `Save`{.action}, um diesen hinzuzufügen.
+Eine detaillierte Erklärung dieser Schritte finden Sie in unserer [Anleitung](/pages/public_cloud/compute/configuring_additional_ssh_keys).
 
-![PuTTY verwenden](images/puttyconnect-02.png){.thumbnail}
-
-Klicken Sie dann auf `Open`{.action}. Sie werden dazu aufgefordert, die Passphrase des Schlüssels einzugeben.
-
-![PuTTY verwenden](images/puttyconnect-03.png){.thumbnail}
-
-> [!primary]
->
-Die obenstehenden Anweisungen entsprechen der Best Practice für die sichere Verbindung mit Ihren Public Cloud Instanzen. Aus praktischen und Sicherheitsgründen empfehlen wir außerdem, einen Passwort-Manager auf Ihrem Gerät zu verwenden, zum Beispiel die kostenlose Open-Source-Lösung **KeePass**.
->
-
-#### Mit einer Windows-Instanz verbinden
-
-Nachdem die Instanz fertig erstellt ist, muss die Windows-Installation abgeschlossen werden (_sysprep_). Klicken Sie hierzu auf `...`{.action} und dann auf ` Instanz-Details`{.action}. Wechseln Sie zum Tab `VNC-Konsole`{.action}. Die Konsole sollte bereits das Post-Installationsfenster anzeigen.
-
-![Windows sysprep](images/windows-connect-01.png){.thumbnail}
-
-Legen Sie im ersten Schritt Ihre Standorteinstellungen fest, indem Sie eine Region, eine Sprache sowie das Tastaturlayout auswählen. Klicken Sie auf `Weiter`{.action}, um fortzufahren.
-
-![Windows sysprep](images/windows-connect-02.png){.thumbnail}
-
-Im zweiten Schritt wird der native “Administrator”-Account eingerichtet. Geben Sie zweimal Ihre Passphrase ein und klicken Sie auf `Beenden`{.action}, um den Installationsvorgang abzuschließen. Verwenden Sie das Augen-Symbol, um zu überprüfen, dass alle im Feld eingegebenen Zeichen dem Layout Ihrer Tastatur entsprechen.
-
-Die Instanz wird neu gestartet und Sie können sich mithilfe dieser Login-Daten über einen Remotedesktop-Client einloggen. 
-
-##### **Über Windows**
-
-Verwenden Sie falls nötig die Windows-Suche und öffnen Sie den Windows-Client für Remote-Desktopverbindungen.
-
-![Windows Remote](images/windows-connect-03.png){.thumbnail}
-
-Geben Sie die IPv4-Adresse Ihrer Instanz sowie “Administrator” als Benutzer und dann Ihre Passphrase ein. Normalerweise erscheint nun eine Warnungsmeldung, die Sie auffordert, die Verbindung aufgrund eines unbekannten Zertifikats zu bestätigen. Klicken Sie auf `Ja`{.action}, um sich mit Ihrer Instanz zu verbinden.
-
-> [!primary]
->
-Sollten bei diesem Vorgang Probleme auftreten, stellen Sie sicher, dass Remoteverbindungen (RDP) auf Ihrem Gerät erlaubt sind, indem Sie Ihre Systemeinstellungen, Firewall-Regeln und mögliche Netzwerkeinschränkungen kontrollieren.
->
-
-##### **Über Linux**
-
-Sie können über die eingebaute VNC-Konsole im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf Public Cloud Instanzen zugreifen. Für den Login über Ihr lokales Gerät müssen die Verbindungen über eine Client-Anwendung hergestellt werden, die das Remote Desktop Protocol (RDP) unterstützt.
-
-Zum Beispiel ist *Remmina Remote Desktop Client* eine kompatible Anwendung, die bei einer Ubuntu-Desktop-Installation enthalten sein sollte. Wenn Sie Remmina in Ihrer Umgebung nicht finden können, können Sie es über die [offizielle Webseite](https://remmina.org/) beziehen.
-
-![Linux Remote](images/linux-connect-01.png){.thumbnail}
-
-Öffnen Sie Remmina und stellen Sie sicher, dass als Verbindungsprotokoll “RDP” ausgewählt ist. Geben Sie die IPv4-Adresse Ihrer Public Cloud Instanz ein und drücken Sie auf “Enter”.
-
-![Linux Remote](images/linux-connect-02.png){.thumbnail}
-
-Erscheint eine Zertifikatsmeldung, klicken Sie auf `Yes`{.action}. Geben Sie anschließend den Benutzernamen und das Passwort für die Instanz ein und klicken Sie auf `OK`{.action}, um die Verbindung herzustellen.
-
-![Linux Remote](images/linux-connect-03.png){.thumbnail}
+<a name="go-further"></a>
 
 ## Weiterführende Informationen
 
-[Backup einer Instanz erstellen](/pages/public_cloud/compute/save_an_instance)
+[Aktivieren einer Windows-Lizenz für eine Instanz im privaten Modus](/pages/public_cloud/compute/activate-windows-license-private-mode)
 
-[Public Cloud Quota erhöhen](/pages/public_cloud/compute/increasing_public_cloud_quota)
+[Zurücksetzen des Windows-Administratorkennworts](/pages/bare_metal_cloud/virtual_private_servers/resetting_a_windows_password)
 
-[Von der stündlichen auf monatliche Abrechnung umstellen](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing)
+[Verwaltung von Instanzen im Kundencenter](/pages/public_cloud/compute/first_steps_with_public_cloud_instance)
 
-Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.
+[Erste Schritte mit OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
+
+[Erste Schritte mit Horizon](/pages/public_cloud/compute/introducing_horizon)
+
+
+Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
+
+Treten Sie unserer [User Community](/links/community) bei.

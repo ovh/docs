@@ -85,6 +85,8 @@ Nel caso in cui la password risulti compromessa, consigliamo di [modificarla imm
 
 - A questo punto compare un messaggio che conferma che l’operazione eseguita è andata a buon fine. Clicca su `Continua`{.action} per essere reindirizzato alla pagina di login. Inserisci l’identificativo e la nuova password.
 
+<a name="lost-password"></a>
+
 #### Se non ricordi più la password
 
 - Nella pagina di accesso allo Spazio Cliente clicca su `Non ricordi identificativo o password?`{.action}.

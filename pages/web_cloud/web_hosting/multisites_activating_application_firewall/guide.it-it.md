@@ -1,7 +1,7 @@
 ---
 title: "Hosting condiviso: attiva un firewall applicativo"
 excerpt: "Hosting condiviso: attiva un firewall applicativo"
-updated: 2021-04-26
+updated: 2024-09-05
 ---
 
 > [!primary]
@@ -22,6 +22,11 @@ L'insieme preconfigurato di regole di base, il "Core Rule Set" (CRS) della nostr
 - e tanto altro ancora
 
 **Questa guida ti mostra come attivare il firewall applicativo dallo Spazio Cliente OVHcloud per ottenere una protezione ancora maggiore.**
+
+> [!primary]
+>
+> La modifica delle impostazioni di configurazione del firewall non è disponibile perché l’hosting Web è presente su un’infrastruttura condivisa.
+>
 
 ## Prerequisiti
 
@@ -45,7 +50,7 @@ Nella nuova finestra, assicurati che l'**Applicazione firewall** sia definita su
 
 Clicca sulla scheda `Multisito`{.action} della tua offerta di hosting. Clicca sui tre puntini `...`{.action} a destra del dominio interessato e seleziona l'opzione `Modifica il dominio`{.action}.
 
-![managemultisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-2.png){.thumbnail}
+![managemultisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-2.png){.thumbnail}
 
 Nella finestra di configurazione, spunta la casella `Attiva il firewall`{.action}. È possibile includere anche il sottodominio `www` in questa configurazione selezionando la casella in alto.
 

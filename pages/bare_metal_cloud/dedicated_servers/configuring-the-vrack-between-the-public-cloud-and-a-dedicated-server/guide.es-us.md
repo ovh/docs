@@ -10,7 +10,7 @@ updated: 2021-10-15
 
 ## Objetivo
 
-El [vRack](https://www.ovh.com/world/es/soluciones/vrack/){.external} de OVHcloud es una red privada que permite configurar el direccionamiento entre dos o más [servidores dedicados](https://www.ovhcloud.com/es/bare-metal/) de OVHcloud. También permite añadir [instancias de Public Cloud](https://www.ovhcloud.com/es/public-cloud/) para crear una infraestructura de recursos físicos y virtuales.
+El [vRack](https://www.ovh.com/world/es/soluciones/vrack/){.external} de OVHcloud es una red privada que permite configurar el direccionamiento entre dos o más [servidores dedicados](/links/bare-metal/bare-metal) de OVHcloud. También permite añadir [instancias de Public Cloud](https://www.ovhcloud.com/es/public-cloud/) para crear una infraestructura de recursos físicos y virtuales.
 
 **Esta guía explica cómo configurar la red privada entre una instancia de Public Cloud y un servidor dedicado.**
 
@@ -18,8 +18,8 @@ El [vRack](https://www.ovh.com/world/es/soluciones/vrack/){.external} de OVHclou
 
 * Haber creado una [instancia de Public Cloud de OVHcloud.](/pages/public_cloud/compute/public-cloud-first-steps)
 * Haber activado un servicio [vRack.](https://www.ovh.com/world/es/soluciones/vrack/){.external}
-* Tener un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/) compatible con el vRack.
-* Estar conectado al [área de cliente de OVHcloud.](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
+* Tener un [servidor dedicado](/links/bare-metal/bare-metal) compatible con el vRack.
+* Estar conectado al [área de cliente de OVHcloud.](/links/manager)
 * Un rango de direcciones IP privadas que elija.
 
 > [!warning]
@@ -62,7 +62,7 @@ Puede darse dos situaciones:
 
 #### Caso de una nueva instancia
 
-Si necesita ayuda, consulte la guía [Crear una instancia de Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#3-crear-una-instancia){.external}. Al crear una instancia, podrá especificar, en el paso 4, una red privada en la que integrar su instancia. Seleccione el vRack anteriormente creado en el menú desplegable que aparece.
+Si necesita ayuda, consulte la guía [Crear una instancia de Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps). Al crear una instancia, podrá especificar, en el paso 4, una red privada en la que integrar su instancia. Seleccione el vRack anteriormente creado en el menú desplegable que aparece.
 
 #### Caso de una instancia ya existente
 

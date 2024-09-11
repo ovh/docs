@@ -68,7 +68,7 @@ The database is now connected to the virtual network, we can use it from any com
 
 ### Step 4 - Adding a Public Cloud Instance to the vRack
 
-Follow this [guide](/pages/public_cloud/compute/public-cloud-first-steps#create-instance) to create a new Public Cloud Instance
+Follow this [guide](/pages/public_cloud/compute/public-cloud-first-steps) to create a new Public Cloud Instance
 
 > [!primary]
 >

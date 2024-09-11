@@ -18,7 +18,7 @@ Les instances GPU sont techniquement similaires aux instances de la gamme 2017 m
 ## Prérequis
 
 - Un projet Public Cloud avec accès aux régions où la plupart des GPU sont disponibles (GRA7, GRA9, GRA11 et BHS5).
-- [Une clé SSH](/pages/public_cloud/compute/public-cloud-first-steps#step-1-creating-ssh-keys) créée pour déployer une instance GPU Linux.
+- [Une clé SSH](/pages/public_cloud/compute/creating-ssh-keys-pci) créée pour déployer une instance GPU Linux.
 
 ## En pratique
 
@@ -37,7 +37,7 @@ Une fois connecté à votre [espace client OVHcloud](/links/manager), cliquez su
 
 ![public-cloud](images/GPU-Flavors_2024.png){.thumbnail}
 
-Suivez ensuite les étapes restantes, comme détaillé dans [ce guide](/pages/public_cloud/compute/public-cloud-first-steps#step-3-creating-an-instance). Ce processus peut prendre quelques minutes.
+Suivez ensuite les étapes restantes, comme détaillé dans [ce guide](/pages/public_cloud/compute/public-cloud-first-steps#create-instance). Ce processus peut prendre quelques minutes.
 
 Une fois l'instance livrée, vous pouvez vous y connecter et vérifier la présence de la carte graphique :
 
@@ -111,7 +111,7 @@ Dans l'étape suivante, rendez-vous dans l'onglet `Systèmes d'exploitation Wind
 
 ![public-cloud](images/EN-WindowsImages_2024.png){.thumbnail}
 
-Suivez ensuite les étapes restantes, comme détaillé dans [ce guide](/pages/public_cloud/compute/public-cloud-first-steps#step-3-creating-an-instance). Ce processus peut prendre quelques minutes.
+Suivez ensuite les étapes restantes, comme détaillé dans [ce guide](/pages/public_cloud/compute/public-cloud-first-steps#create-instance). Ce processus peut prendre quelques minutes.
 
 > [!warning]
 >
@@ -157,4 +157,4 @@ Il rester à installer le pilote nécessaire, qui apparaîtra ensuite ici :
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

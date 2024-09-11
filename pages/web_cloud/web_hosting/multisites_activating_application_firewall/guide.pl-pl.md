@@ -1,7 +1,7 @@
 ---
 title: "Aktywacja zapory systemowej"
 excerpt: "Hosting www: Aktywacja zapory systemowej"
-updated: 2021-04-26
+updated: 2024-09-05
 ---
 
 > [!primary]
@@ -22,6 +22,11 @@ Wstępnie skonfigurowany zbiór podstawowych zasad, takich jak "Core Rule Set" (
 - itd.
 
 **Niniejszy przewodnik wyjaśnia, jak aktywować zaporę aplikacyjną w Panelu klienta OVHcloud, aby uzyskać lepszą ochronę.**
+
+> [!primary]
+>
+> Zmiana ustawień konfiguracji zapory sieciowej jest niedostępna, ponieważ Twój hosting znajduje się w infrastrukturze współdzielonej.
+>
 
 ## Wymagania początkowe
 
@@ -45,7 +50,7 @@ W nowym oknie upewnij się, że **Aplikacja firewall** jest ustawiona na `Włąc
 
 Kliknij zakładkę `MultiSite`{.action} w Twoim pakiecie hostingowym. Kliknij przycisk `...`{.action} po prawej stronie wybranej domeny i wybierz opcję `Zmień domenę`{.action}.
 
-![zapalenie skóry](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-2.png){.thumbnail}
+![zapalenie skóry](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-2.png){.thumbnail}
 
 W oknie konfiguracji zaznacz kratkę `Włącz firewall`{.action}. Możesz również włączyć subdomenę `www` do tej konfiguracji, zaznaczając kratkę na górze.
 

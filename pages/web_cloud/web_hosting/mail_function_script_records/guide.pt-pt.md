@@ -1,7 +1,7 @@
 ---
 title: "Alojamento partilhado Seguimento dos emails automatizados"
 excerpt: "Seguimento dos seus emails enviados a partir de um website num alojamento partilhado OVHcloud"
-updated: 2023-12-04
+updated: 2024-09-05
 ---
 
 > [!primary]
@@ -59,9 +59,10 @@ A página apresenta várias informações que lhe permitem visualizar a atividad
 
 À direita, vários botões permitem gerir os envios de e-mails automatizados a partir do seu alojamento web. Em função do estado do serviço, alguns podem não estar disponíveis.
 
+- **Purgar os e-mails** : apaga os e-mails presentes na fila de espera e desbloqueia o envio de emails.
+- **E-mails em erro**: permite o acesso aos logs dos últimos e-mails com erro de envio. Encontrará os endereços de e-mail afetados com o erro associado. Atenção, este histórico não será reiniciado, mesmo se decidir `Purgar os e-mails`{.action} ou `desbloquear o envio`{.action}.
 - **Bloquear o envio**: bloqueia a distribuição dos envios de e-mails automatizados do seu alojamento web. Os e-mails gerados pelos seus scripts após o bloqueio não serão enviados, mas conservados numa fila de espera durante 72 horas, no máximo.
 - **Desbloquear o envio**: desbloqueie o envio dos e-mails automatizados do seu alojamento web. Os e-mails presentes na fila de espera serão igualmente recolocados em distribuição.
-- **Purgar os e-mails** : apaga os e-mails presentes na fila de espera e desbloqueia o envio de emails.
 
 Para realizar a ação desejada, clique no botão correspondente e depois em `Valider`{.action}. Em certos casos, a ação desejada pode demorar dezenas de minutos para ser plenamente efetiva.
 
@@ -78,7 +79,7 @@ Se verificar que os e-mails gerados a partir dos seus scripts já não são envi
 
 ```bash
 <?php
-$to = "RecipientEmail@adress.tld"; 
+$to = "RecipientEmail@address.tld"; 
 $subject = "Test mail PHP"; 
 $content = "The body/content of the Email";
 $headers = "From: Website <SendingEmail@address.tld>\r\nReply-To: SendingEmail@address.tld";
@@ -198,17 +199,6 @@ Embora recomendamos vivamente que privilegie a utilização da função "mail()"
 > 
 > Os e-mails emitidos com um script utilizando uma configuração SMTP não poderão ser geridos e acompanhados a partir do seu [Área de Cliente OVHcloud](/links/manager).
 > 
-
-Para isso, pode utilizar o seguinte script substituindo apenas os valores `Host`, Username e `Password` pelos seus próprios parâmetros SMTP:
-
-```bash
-$mail->Host = "your.smtp.server";
-$mail->SMTPAuth = true; 
-$mail->SMTPSecure = "ssl";
-$mail->Port = 465; 
-$mail->Username = "e-mail@adress.tld"; 
-$mail->Password = "YourEmailPassword"; 
-```
 
 > [!primary]
 >

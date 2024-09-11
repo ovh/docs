@@ -7,7 +7,7 @@ updated: 2022-12-14
 ## Objective
 
 This guide is designed to help you deploy all of the components and services you need to launch your OVHcloud solutions successfully in a **fully private** environment.<br>
-Get a private infrastructure without having to change the default configuration for your [OVHcloud dedicated servers](https://www.ovhcloud.com/en/bare-metal/).
+Get a private infrastructure without having to change the default configuration for your [OVHcloud dedicated servers](/links/bare-metal/bare-metal).
 
 > [!warning]
 >
@@ -23,11 +23,11 @@ Get a private infrastructure without having to change the default configuration 
 > If these settings were to be modified, our teams would no longer be able to perform the tasks dedicated to them under the conditions we have chosen, and above all, you could render the boot inoperative.
 >
 
-With [OVHcloud dedicated servers](https://www.ovhcloud.com/en/bare-metal/), you can configure/declare your own networks.<br>
+With [OVHcloud dedicated servers](/links/bare-metal/bare-metal), you can configure/declare your own networks.<br>
 Each server is equipped with at least 2 network interfaces, effectively functioning as aggregated links, ensuring redundancy in the event of failure.<br>
 You can therefore use/declare your *public* and *private* networks via our solution [vRack](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server).
 
-We will present the case of [dedicated server(s)](https://www.ovhcloud.com/en/bare-metal/) configured in **OLA** mode, i.e. with **only** private networks.
+We will present the case of [dedicated server(s)](/links/bare-metal/bare-metal) configured in **OLA** mode, i.e. with **only** private networks.
 This choice offers your infrastructure the best possible isolation/protection for your hosted service.<br>
 The only significant difference is that [private networks](/pages/network/ovhcloud_connect/occ-concepts-overview#private-connection) do not have access to everything that does not belong to your infrastructure.<br>
 As a result, a server isolated by its private network prevents the boot mechanism. This means that when systems are booted via the **Netboot** (Network Boot) method, they are based on OVHcloud’s internal network and shared services.
@@ -76,12 +76,12 @@ Here is a (logical) Netboot boot schema:
 > 
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/manager/#/dedicated/configuration).
-- At least one [dedicated server](https://www.ovhcloud.com/en/bare-metal/) with an operating system **already installed**.
+- At least one [dedicated server](/links/bare-metal/bare-metal) with an operating system **already installed**.
 - An additional dedicated server with the default network interfaces configured, namely public and private network access. This server will host all services (**DHCP** and **TFTP**). The operating system will be one of your choice.
 - You must have all of the network interfaces for this server in **private** mode, which implies that you have already configured [our OLA feature](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager).<br>
 
 >
-> To check that your machine is eligible for our procedure, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and click on the `Bare Metal Cloud`{.action} tab.
+> To check that your machine is eligible for our procedure, log in to the [OVHcloud Control Panel](/links/manager) and click on the `Bare Metal Cloud`{.action} tab.
 >
 > Select your server and check that it is eligible for `OLA: OVHcloud Link Aggregation` in the `Network interfaces`{.action} tab.
 >
@@ -351,4 +351,4 @@ It is strongly recommended that you use an NTP service, especially if your infra
 [Discovering and understanding NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol)<br>
 [Discovering and understanding Dnsmasq](https://wiki.debian.org/dnsmasq)<br>
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

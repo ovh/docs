@@ -22,8 +22,8 @@ I server dedicati OVHcloud includono uno spazio di backup aggiuntivo per salvare
 
 ## Prerequisiti
 
-* Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/){.external} sul proprio account OVHcloud
-* Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+* Disporre di un [server dedicato](/links/bare-metal/bare-metal){.external} sul proprio account OVHcloud
+* Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 
 > [!warning]
 > Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](https://eco.ovhcloud.com/it/about/).
@@ -35,7 +35,7 @@ I server dedicati OVHcloud includono uno spazio di backup aggiuntivo per salvare
 
 ### Attiva il tuo Backup Storage
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Seleziona il tuo server nella sezione `Bare Metal Cloud`{.action} e poi `Server dedicati`{.action}. Nella scheda `Backup Storage`{.action}, clicca sul pulsante `Attiva il Backup Storage`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}. Seleziona il tuo server nella sezione `Bare Metal Cloud`{.action} e poi `Server dedicati`{.action}. Nella scheda `Backup Storage`{.action}, clicca sul pulsante `Attiva il Backup Storage`{.action}.
 
 ![Attiva il tuo Backup Storage](images/backup-storage01.png){.thumbnail}
 
@@ -51,7 +51,7 @@ L'accesso allo spazio di storage è limitato per indirizzi IP tramite una lista 
 
 #### Aggiungere un accesso backup
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Seleziona il tuo server nella sezione `Bare Metal Cloud`{.action} e poi `Server dedicati`{.action}. Seleziona la scheda `Backup Storage`{.action} e clicca sul pulsante `Aggiungi un accesso`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}. Seleziona il tuo server nella sezione `Bare Metal Cloud`{.action} e poi `Server dedicati`{.action}. Seleziona la scheda `Backup Storage`{.action} e clicca sul pulsante `Aggiungi un accesso`{.action}.
 
 ![Aggiungere un accesso backup](images/backup-storage03.png){.thumbnail}
 
@@ -117,19 +117,19 @@ Per verificare che il tuo indirizzo IP sia autorizzato, utilizza questa chiamata
 
 ### Reimposta la password
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Seleziona il tuo server nella sezione `Bare Metal Cloud`{.action} e poi `Server dedicati`{.action}. Seleziona la scheda `Backup Storage`{.action} e clicca sul pulsante `Password dimenticata`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}. Seleziona il tuo server nella sezione `Bare Metal Cloud`{.action} e poi `Server dedicati`{.action}. Seleziona la scheda `Backup Storage`{.action} e clicca sul pulsante `Password dimenticata`{.action}.
 
 Dopo aver cliccato su `Conferma`{.action} nella nuova finestra, riceverai un'email di recupero password all'indirizzo email salvato sul tuo account amministratore. Segui le istruzioni riportate per reimpostare la password.
 
 ### Eliminare il Backup Storage
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Seleziona il tuo server nella sezione `Bare Metal Cloud`{.action} e poi `Server dedicati`{.action}. Seleziona la scheda `Backup Storage`{.action} e clicca sul pulsante `Elimina il Backup Storage`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}. Seleziona il tuo server nella sezione `Bare Metal Cloud`{.action} e poi `Server dedicati`{.action}. Seleziona la scheda `Backup Storage`{.action} e clicca sul pulsante `Elimina il Backup Storage`{.action}.
 
 Clicca su `Conferma`{.action} sul messaggio di avvertimento per procedere all'eliminazione. Il tuo Backup Storage sarà eliminato dopo pochi minuti. Tutti i dati dello spazio di storage verranno eliminati.
 
 ### Ordina spazio disco aggiuntivo
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Seleziona il tuo server nella sezione `Bare Metal Cloud`{.action} e poi `Server dedicati`{.action}. Seleziona la scheda `Backup Storage`{.action} e clicca sul pulsante Ordina `spazio disco`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}. Seleziona il tuo server nella sezione `Bare Metal Cloud`{.action} e poi `Server dedicati`{.action}. Seleziona la scheda `Backup Storage`{.action} e clicca sul pulsante Ordina `spazio disco`{.action}.
 
 ![Ordina spazio disco aggiuntivo](images/backup-storage06.png){.thumbnail}
 

@@ -1,7 +1,7 @@
 ---
 title: "Konfiguration von dynamischen DNS-Aktualisierungen (DynHost/DynDNS) für Ihren Domainnamen"
 excerpt: "Erfahren Sie hier, wie Sie einen dynamischen DNS-Eintrag (DynHost) für Ihren Domainnamen einrichten"
-updated: 2024-07-12
+updated: 2024-09-04
 ---
 
 > [!primary]
@@ -83,7 +83,7 @@ Gehen Sie für die Erstellung des DynHost-Eintrags nun zurück auf den Tab `DynH
 |Information|Beschreibung|
 |---|---|
 |Subdomain|Geben Sie die Subdomain ein, deren DNS-Eintrag dynamisch aktualisiert werden soll. Diese Subdomain muss der bei der Erstellung des DynHost-Benutzers angegebenen Subdomain entsprechen. **Wenn Sie einen DynHost direkt für Ihren Domainnamen einrichten möchten, lassen Sie dieses Feld leer**|
-|Ziel-IP|Geben Sie die IP-Adresse (IPv4 oder IPv6) ein, die derzeit für den DNS-Eintrag verwendet wird. Dies ist in der Regel die öffentliche IP-Adresse Ihrer Internet-Zugangsbox oder Ihres selbst gehosteten Servers. Nach dem DynHost-Prinzip wird diese Adresse künftig automatisch aktualisiert.|
+|Ziel-IP|Geben Sie die IP-Adresse (IPv4 oder IPv6) ein, die derzeit für den DNS-Eintrag verwendet wird. Dies ist in der Regel die öffentliche IP-Adresse Ihrer Internet-Zugangsbox oder Ihres selbst gehosteten Servers. Nach dem DynHost-Prinzip wird diese Adresse künftig automatisch aktualisiert. In diesem Formular darf nur eine IP-Adresse angegeben werden.|
 
 > [!warning]
 >
@@ -93,6 +93,11 @@ Gehen Sie für die Erstellung des DynHost-Eintrags nun zurück auf den Tab `DynH
 ![dynhost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/create-a-dynhost.png){.thumbnail}
 
 Wenn Sie die Felder ausgefüllt haben, klicken Sie auf den Button `Bestätigen`{.action}. Der DynHost-Eintrag erscheint dann in der Tabelle auf der aktuell geöffneten Seite. Wiederholen Sie diesen Schritt, wenn Sie weitere DynHost-Einträge erstellen möchten.
+
+> [!primary]
+>
+> Wenn Ihr Domainname oder Ihre Subdomain dynamisch konfiguriert werden muss, z. B. mit einer IPv4 und einer IPv6, können Sie zwei dynamische DNS-Einträge für denselben Domainnamen oder dieselbe Subdomain erstellen. Der erste dynamische DNS-Eintrag wird dann für IPv4 und der zweite für IPv6 erstellt.
+>
 
 ### Schritt 3: DynHost-Update automatisieren
 

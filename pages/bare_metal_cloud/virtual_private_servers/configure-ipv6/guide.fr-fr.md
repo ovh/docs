@@ -1,7 +1,7 @@
 ---
 title: "Configurer l'IPv6 sur un serveur VPS"
 excerpt: "Apprenez à configurer l'IPv6 sur votre serveur VPS OVHcloud"
-updated: 2024-02-15
+updated: 2024-08-08
 ---
 
 ## Objectif
@@ -20,7 +20,7 @@ L'IPv6 est la dernière version de l'*Internet Protocol* (IP). Chaque serveur VP
 - Disposer d'un [serveur VPS OVHcloud](https://www.ovhcloud.com/fr/vps/){.external}.
 - Être connecté à votre VPS en SSH (accès root) ou via un bureau à distance (Windows).
 - Disposer de connaissances basiques en réseau.
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} ou à l'[API OVHcloud](https://api.ovh.com/).
+- Être connecté à l'[espace client OVHcloud](/links/manager){.external} ou à l'[API OVHcloud](https://api.ovh.com/).
 
 ## En pratique
 
@@ -50,7 +50,7 @@ La première étape consiste à récupérer l’adresse IPV6 et la gateway IPv6 
 
 #### Via votre espace client <a name="viacontrolpanel"></a>
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveur privés virtuels`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveur privés virtuels`{.action}.
 
 L'adresse IPv6 et la gateway IPv6 assignées à votre serveur apparaissent dans la partie `IP`. Récupérez ces dernières puis poursuivez vers l'étape 2 « [Appliquer la configuration IPv6](#applyipv6) ».
 
@@ -219,11 +219,14 @@ network:
             addresses:
               - YOUR_IPV6/IPv6_PREFIX
             routes:
+# If IPV6_PREFIX is 128 then add link route to gateway
+#              - to: IPv6_GATEWAY
+#                scope: link
               - to: ::/0
                 via: IPv6_GATEWAY
 ```
 
-Voici un exemple concret :
+Voici un exemple concret (avec préfixe /128) :
 
 ```yaml
 network:
@@ -236,6 +239,8 @@ network:
             addresses:
               - 2607:5300:201:abcd::7c5/128
             routes:
+              - to: 2607:5300:201:abcd::1
+                scope: link
               - to: ::/0
                 via: 2607:5300:201:abcd::1
 ```

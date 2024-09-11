@@ -1,7 +1,7 @@
 ---
 title: "Activating the application firewall"
 excerpt: "Find out how to activate the application firewall on a Web Hosting plan"
-updated: 2021-04-26
+updated: 2024-09-05
 ---
 
 ## Objective
@@ -17,6 +17,11 @@ The preconfigured Core Rule Set (CRS) of our *ModSecurity* protects your website
 - SQL or XSS type injections
 
 **This guide explains how to enable your application firewall for enhanced protection in your OVHcloud Control Panel.**
+
+> [!primary]
+>
+> Since your web hosting plan is hosted on a shared infrastructure, modifying your firewall configuration settings is unavailable.
+>
 
 ## Requirements
 
@@ -41,7 +46,7 @@ In the new window, make sure that **Application firewall** is set to `activated`
 
 Switch to the `Multisite`{.action} tab of your hosting plan. Click on the `...`{.action} button in the row of the respecive domain and select the `Modify domain`{.action} option. 
 
-![managemultisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-2.png){.thumbnail}
+![managemultisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-2.png){.thumbnail}
 
 In the configuration window, check the `Enable the firewall`{.action} box. You can also include the www subdomain in this configuration by checking the box at the top.
 Click on `Next`{.action} and then on `Confirm`{.action} to modify the Multisite settings.

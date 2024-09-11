@@ -11,8 +11,8 @@ Bridged networking can be used to configure your pfSense virtual machine to be a
 ## Requirements
 
 - A dedicated server with a hypervisor installed (e.g. [VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, [Citrix Xenserver](https://www.citrix.com/products/citrix-hypervisor/){.external}, [Proxmox](https://www.proxmox.com/en/proxmox-ve){.external}, etc.)
-- At least one [Additional IP](https://www.ovhcloud.com/asia/bare-metal/ip/) address attached to the server 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external} 
+- At least one [Additional IP](/links/network/additional-ip) address attached to the server 
+- Access to the [OVHcloud Control Panel](/links/manager){.external} 
 
 ## Recommendations for your pfSense virtual machine
 
@@ -24,7 +24,7 @@ Bridged networking can be used to configure your pfSense virtual machine to be a
 > [!warning]
 >This tutorial will show you how to use one or more OVHcloud solutions with external tools, and will describe the actions to be carried out in a specific context. Please remember to adapt these actions to fit your situation.
 >
-If you encounter any difficulties performing these actions, please contact a [specialist service provider](https://partner.ovhcloud.com/asia/directory/) and/or discuss the issue with our community on https://community.ovh.com/en/. OVHcloud cannot provide you with technical support in this regard.
+If you encounter any difficulties performing these actions, please contact a [specialist service provider](/links/partner) and/or discuss the issue with our community on https://community.ovh.com/en/. OVHcloud cannot provide you with technical support in this regard.
 >
 
 ## Instructions
@@ -39,7 +39,7 @@ For the pfSense virtual machines network configuration, we will use the followin
 
 #### Assigning a virtual MAC address
 
-In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}, go to the `Bare Metal Cloud`{.action} section and click on `Network`{.action}. Next, open the `IP`{.action} menu. 
+In the [OVHcloud Control Panel](/links/manager){.external}, go to the `Bare Metal Cloud`{.action} section and click on `Network`{.action}. Next, open the `IP`{.action} menu. 
 
 Click the `Additional IP`{.action} tab.
 
@@ -220,4 +220,4 @@ For choosing the correct virtual interfaces, OS type, etc. for Proxmox, we were 
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

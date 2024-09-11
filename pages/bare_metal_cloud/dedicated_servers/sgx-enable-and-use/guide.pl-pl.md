@@ -15,16 +15,16 @@ Rozszerzenie Intel SGX zapewnia zaawansowane funkcje szyfrowania sprzętowego or
 
 ## Wymagania początkowe
 
-- Dedykowany serwer kompatybilny z opcją [SGX](https://www.ovhcloud.com/pl/bare-metal/intel-software-guard-extensions/){.external}
+- Dedykowany serwer kompatybilny z opcją [SGX](/links/bare-metal/bare-metalintel-software-guard-extensions/){.external}
 - Posiadanie danych do logowania otrzymanych w e-mailu po zakończonej instalacji
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) lub [API OVHcloud](https://api.ovh.com/)
+- Dostęp do [Panelu klienta OVHcloud](/links/manager) lub [API OVHcloud](https://api.ovh.com/)
 - Zainstalowana na serwerze dystrybucja Ubuntu 18.04 lub podobna
 
 ## W praktyce
 
 ### W Panelu klienta OVHcloud
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz serwer, na którym chcesz włączyć SGX w sekcji **Serwery Dedykowane** w menu po lewej stronie.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz serwer, na którym chcesz włączyć SGX w sekcji **Serwery Dedykowane** w menu po lewej stronie.
 
 #### Włączenie opcji
 

@@ -23,8 +23,8 @@ Plesk to prosty w użytkowaniu interfejs administracyjny dla serwerów dedykowan
 
 ## Wymagania początkowe
 
-- [Utworzenie instancji w Panelu klienta OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps#krok-3-tworzenie-instancji)
-- [Dostęp root i zdefiniowanie hasła](/pages/public_cloud/compute/become_root_and_change_password)
+- [Utworzenie instancji w Panelu klienta OVHcloud](/links/public-cloud/public-cloud)
+- [Dostęp administratora](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance)
 
 ## W praktyce
 
