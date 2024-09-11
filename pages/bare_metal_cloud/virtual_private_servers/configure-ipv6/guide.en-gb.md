@@ -211,7 +211,7 @@ network:
     version: 2
     ethernets:
         eth0:
-            dhcp6: no
+            dhcp6: false
             match:
               name: eth0
             addresses:
@@ -231,7 +231,7 @@ network:
     version: 2
     ethernets:
         eth0:
-            dhcp6: no
+            dhcp6: false
             match:
               name: eth0
             addresses:
