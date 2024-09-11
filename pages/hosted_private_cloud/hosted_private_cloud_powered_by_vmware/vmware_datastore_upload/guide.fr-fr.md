@@ -1,12 +1,12 @@
 ---
-title: "Utilisation de l'explorateur de fichiers Datastore"
-excerpt: "Découvrez comment utiliser l'outil de téléchargement de fichiers Datastore VMware vSphere dédié afin de pouvoir importer des données dans un vSphere managé on OVHcloud"
-updated: 2024-09-10
+title: "Téléversement de fichiers depuis le Datastore VMware vSphere"
+excerpt: "Découvrez comment utiliser l'outil de téléversement de fichiers du Datastore VMware vSphere on OVHcloud dédié afin de pouvoir importer des données"
+updated: 2024-09-11
 ---
 
 ## Objectif
 
-**L'objectif est de télécharger des fichiers (ISO, VMDK, OVA etc..) dans un répértoire du Datastore avec le client HTML vSphere on OVHcloud.**
+**L'objectif est de téléverser des fichiers (ISO, VMDK, OVA etc..) dans un répértoire du Datastore avec le client HTML VMware vSphere on OVHcloud.**
 
 ## Prérequis
 
@@ -55,7 +55,7 @@ Qui vous renvoie aussi ensuite à l'interface `Fichers` de téléversement (libr
 
 |                                         **Image**                                         | **Texte**                                             |
 |:-----------------------------------------------------------------------------------------:|:------------------------------------------------------|
-|           ![vSphere Global Inventory](images/global_inventory.png){.thumbnail}            | - Cliquez sur `Listes d'inventaires globaux`{.action} |
+| ![vSphere Global Inventory](images/global_inventory.png){.thumbnail}               | - Cliquez sur `Listes d'inventaires globaux`{.action} |
 | ![vSphere Global Inventory Datastore](images/global_inventory_datastores.png){.thumbnail} | - Puis sur `Banques de données`{.action}              |             
 
 ![vSphere Global Inventory Datastore](images/global_inventory_datastores_2.png){.thumbnail}
