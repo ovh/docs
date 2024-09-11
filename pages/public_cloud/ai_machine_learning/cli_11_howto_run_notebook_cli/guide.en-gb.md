@@ -1,7 +1,7 @@
 ---
 title: CLI - Launch an AI notebook
 excerpt: Learn how to run an AI Notebook using the CLI
-updated: 2023-05-11
+updated: 2024-09-11
 ---
 
 ## Objective
