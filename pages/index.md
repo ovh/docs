@@ -963,7 +963,6 @@
                 + [AI Notebooks - Workspace](public_cloud/ai_machine_learning/notebook_guide_workspace)
                 + [AI Notebooks - Notebook concept](public_cloud/ai_machine_learning/notebook_guide_concepts_notebooks)
             + [Tutorials](public-cloud-ai-and-machine-learning-ai-notebooks-tutorials)
-                + [AI Notebooks - Tutorial - Create your first Machine Learning model](public_cloud/ai_machine_learning/notebook_tuto_01_first_ml_model_miniconda)
                 + [AI Notebooks - Tutorial - Use tensorboard inside notebooks](public_cloud/ai_machine_learning/notebook_tuto_02_tensorboard)
                 + [AI Notebooks - Tutorial - Weights & Biases integration](public_cloud/ai_machine_learning/notebook_tuto_03_weight_biases)
                 + [AI Notebooks - Tutorial - Train YOLOv5 on a custom dataset](public_cloud/ai_machine_learning/notebook_tuto_04_yolov5)
