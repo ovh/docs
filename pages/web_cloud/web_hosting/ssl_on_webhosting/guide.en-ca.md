@@ -79,8 +79,11 @@ Before you configure this, make sure that the previous step of [Activating an SS
 >
 > Before you continue, please also ensure that the multisite record(s) for which you are enabling the SSL option point to the web hosting plan’s IP address. This configuration is automatically offered when you add or modify a multisite entry, but must be done manually for a domain name that is not managed in your control panel.<br>
 > - Find the IP address of your hosting from the tab `General information`{.action}, under the mention `IPv4`.
+>
 > ![manager](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4.png){.thumbnail}
+>
 > - Configure the DNS zone of the domain name declared in multisite, in the section `Domains`{.action}, tab `DNS zone`{.action}. Modify or add an `A` record corresponding to your multisite entry and enter your hosting plan’s IP address in the `Target`.
+>
 > ![manager](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/modify-an-entry.png){.thumbnail}
 >
 > For more details, please refer to our guides [on configuring a multisite record](/pages/web_cloud/web_hosting/multisites_configure_multisite) or [on configuring a DNS zone](/pages/web_cloud/domains/dns_zone_edit).
