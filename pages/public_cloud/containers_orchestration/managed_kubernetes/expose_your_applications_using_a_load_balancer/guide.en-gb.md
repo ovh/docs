@@ -1,7 +1,7 @@
 ---
 title: Expose your applications using OVHcloud Public Cloud Load Balancer
 excerpt: "How to expose your applications hosted on Managed Kubernetes Service using the OVHcloud Public Cloud Load Balancer"
-updated: 2024-08-23
+updated: 2024-09-11
 ---
 
 > [!warning]
@@ -531,31 +531,30 @@ spec:
 
 > [!primary]
 >
-> If you have issue when you are trying to deploy a Public Cloud LoadBalancer, you are able to get more information using the `kubectl describe service <svc_name>` command. This will help you get events linked to the service for debugging purpose.
+> If you encounter issues when trying to deploy a Public Cloud LoadBalancer, you can get more information using the `kubectl describe service <svc_name>` command. This will help you get events linked to the service for debugging purposes.
 >
-
 
 ### Network is not matching requirements for Public LoadBalancer: No GatewayIP
 
-When trying to spawn a Public LoadBalancer, you must have a GatewayIP assigned to your Subnet to allow FloatingIP in your subnet. Once the GatewayIP parameter set with a valid IP, an OpenStack router will be spawn to attach a PublicIP to your Octavia LoadBalancer.
+When trying to spawn a Public LoadBalancer, you must have a GatewayIP assigned to your Subnet to allow a FloatingIP in your subnet. Once the GatewayIP parameter is set with a valid IP, an OpenStack router will be spawned to attach a PublicIP to your Octavia LoadBalancer.
 
 ```console
 Error syncing load balancer: failed to ensure load balancer: Network is not matching requirement for Public LoadBalancer (no GatewayIP)
 ```
 
-[How set a GatewayIP on an OpenStack Subnet](/pages/public_cloud/public_cloud_network_services/configuration-04-update_subnet)
+See the guide: [How set a GatewayIP on an OpenStack Subnet](/pages/public_cloud/public_cloud_network_services/configuration-04-update_subnet).
 
-If you don't want to deploy an OpenStack router in your subnet (e.g. you manage your own router), you have to configure the `LoadBalancerSubnetId` of your MKS cluster. [More information here](#network-prerequisite-to-expose-your-load-balancers-publicly)
+If you don't want to deploy an OpenStack router in your subnet (e.g. you manage your own router), you have to configure the `LoadBalancerSubnetId` of your MKS cluster. [More information here](#network-prerequisite-to-expose-your-load-balancers-publicly).
 
 ### Network is not matching requirements for Public LoadBalancer: Cannot deploy an OpenStack Router
 
-When trying to spawn a Public LoadBalancer, you must have a GatewayIP assigned to your Subnet to allow FloatingIP in your subnet and this GatewayIP must be avaiable or attached to an OpenStack router.
+When trying to spawn a Public LoadBalancer, you must have a GatewayIP assigned to your Subnet to allow a FloatingIP in your subnet and this GatewayIP must be avaiable or attached to an OpenStack router.
 
 ```console
 Error syncing load balancer: failed to ensure load balancer: Network is not matching requirement for Public LoadBalancer (cannot deploy an OpenStack Router)
 ```
 
-In your case, the GatewayIP is already used by something else and we cannot deploy an OpenStack Router for your Public LoadBalancer. If you are not able to release the IP (e.g. used by a router deployed by yourself), you have to configure the `LoadBalancerSubnetId` of your MKS cluster. [More information here](#network-prerequisite-to-expose-your-load-balancers-publicly)
+In your case, the GatewayIP is already used by something else and we cannot deploy an OpenStack Router for your Public LoadBalancer. If you are not able to release the IP (e.g. it is used by a router you deployed), you have to configure the `LoadBalancerSubnetId` of your MKS cluster. [More information here](#network-prerequisite-to-expose-your-load-balancers-publicly)
 
 ## Resources Naming Convention
 
