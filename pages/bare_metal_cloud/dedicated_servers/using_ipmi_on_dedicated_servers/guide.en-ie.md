@@ -21,7 +21,7 @@ With the IPMI (Intelligent Platform Management Interface) console, you can acces
 
 ## Instructions
 
-You can access the IPMI using several different methods¹. SSH keys stored on the server will not be used for these conections. Here is a summary:
+You can access the IPMI using several different methods¹. SSH keys stored on the server will not be used for these connections. Here is a summary:
 
 |Method Name|Short Name|Description|Copy-Paste|Virtual ISO reader²|Use Case Example|
 |---|---|---|---|---|---|
