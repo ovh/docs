@@ -1,7 +1,7 @@
 ---
 title: "Konfiguracja i korzystanie z Git na hostingu OVHcloud"
 excerpt: "Dowiedz się, jak skonfigurować i korzystać z Git na Twoim hostingu w Panelu klienta OVHcloud"
-updated: 2024-08-22
+updated: 2024-09-12
 ---
 
 > [!primary]
@@ -19,6 +19,10 @@ W dzisiejszym świecie cyfrowym społeczeństwa stają się coraz bardziej dynam
 - Posiadanie hostingu [OVHcloud](/links/web/hosting).
 - Dostęp do [Panelu klienta OVHcloud](/links/manager), sekcja Web Cloud.
 - Posiadanie konta [GitHub](https://github.com/){.external} i logowanie.
+
+> [!primary]
+>
+> W dniu dotychczasowym w ramach współpracy z usługami hostingowymi OVHcloud obsługiwana jest tylko platforma GitHub.
 
 ## W praktyce
 
@@ -92,7 +96,7 @@ Nadaj nazwę repozytorium i podaj wymagane informacje.
 
 Na koniec kliknij przycisk `Create Repository`{.action}.
 
-Skopiuj adres repozytorium GitHub. Musi mieć formę `https://github.com/<username>/<repository_name.git>. Wróć do formularza kojarzenia Git i wklej adres Twojego repozytorium GitHub w polu `Repozytorium`{.action}. Jeśli adres ma niepoprawny format, wyświetlany jest następujący komunikat o błędzie:
+Skopiuj adres repozytorium GitHub. Musi mieć formę `https://github.com/<username>/<repository_name.git>`. Wróć do formularza kojarzenia Git i wklej adres Twojego repozytorium GitHub w polu `Repozytorium`{.action}. Jeśli adres ma niepoprawny format, wyświetlany jest następujący komunikat o błędzie:
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/error-wrong-git-branch-name.png){.thumbnail}
 

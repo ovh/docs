@@ -1,7 +1,7 @@
 ---
 title: "Configuring and using Git with an OVHcloud web hosting plan"
 excerpt: "Find out how to configure and use Git with your web hosting plan in the OVHcloud Control Panel"
-updated: 2024-07-25
+updated: 2024-09-12
 ---
 
 ## Objective
@@ -12,9 +12,13 @@ In today’s digital landscape, companies are becoming increasingly dynamic and 
 
 ## Requirements
 
-- You have an [OVHcloud Web Hosting](/links/web/hosting) plan.
+- An [OVHcloud Web Hosting](/links/web/hosting) plan.
 - Access to the [OVHcloud Control Panel](/links/manager), in the Web Cloud section.
-- You must have an account [GitHub](https://github.com/){.external} and be logged in.
+- A [GitHub](https://github.com/){.external} account on which you must be logged in.
+
+> [!primary]
+>
+> To date, only the GitHub platform is supported for use with OVHcloud Web Hosting services.
 
 ## Instructions
 
@@ -88,7 +92,7 @@ Define a name for your deposit and fill in the requested information.
 
 Finally, click `Create Repository`{.action}.
 
-Copy the address of your GitHub repository. It must be of the form `https://github.com/<username>/<repository_name.git>`{.action}. Return to the Git association form and paste the address of your GitHub repository into the `Deposit`{.action} field. If the address format is not correct, the following error message appears:
+Copy the address of your GitHub repository. It must be of the form `https://github.com/<username>/<repository_name.git>`. Return to the Git association form and paste the address of your GitHub repository into the `Deposit`{.action} field. If the address format is not correct, the following error message appears:
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/error-wrong-git-repository-name.png){.thumbnail}
 
@@ -112,7 +116,7 @@ At the bottom of the Git association form, a `Configuring automatic deployment`{
 Before validating the Git association form, make sure that:
 
 - Your SSH key has been saved in your GitHub account.
-- The address of your GitHub repository is correct. It must be of the form `https://github.com/<username>/<repository_name.git>`{.action}.
+- The address of your GitHub repository is correct. It must be of the form `https://github.com/<username>/<repository_name.git>`.
 - The name of the GitHub repository branch is correct.
 - Your installation directory is empty.
 

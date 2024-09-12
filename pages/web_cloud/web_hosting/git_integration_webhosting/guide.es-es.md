@@ -1,7 +1,7 @@
 ---
 title: "Configurar y utilizar Git con un alojamiento web de OVHcloud"
 excerpt: "Descubra cómo configurar y utilizar Git con un alojamiento web en el área de cliente de OVHcloud"
-updated: 2024-08-22
+updated: 2024-09-12
 ---
 
 > [!primary]
@@ -19,6 +19,10 @@ En el panorama digital actual, las sociedades son cada vez más dinámicas e inn
 - Tener contratado un [plan de hosting de OVHcloud](/links/web/hosting).
 - Estar conectado a su [área de cliente de OVHcloud](/links/manager), en la sección Web Cloud.
 - Tener una cuenta [GitHub](https://github.com/){.external} y estar conectado a ella.
+
+> [!primary]
+>
+> A fecha de hoy, solo la plataforma GitHub es compatible con los servicios de alojamiento web de OVHcloud.
 
 ## Procedimiento
 
