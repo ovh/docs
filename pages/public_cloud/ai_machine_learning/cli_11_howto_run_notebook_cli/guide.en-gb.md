@@ -159,6 +159,8 @@ ovhai notebook run pytorch jupyterlab \
 
 This will launch a new AI Notebook with `PyTorch 2.4.0`{.action}, `Jupyterlab`{.action}, and `6 CPUs`{.action}, in a restricted access.
 
+### Accessing a new notebook
+
 Launching a new notebook using `ovhai notebook run` will display the following information in the terminal, which are the specifications of your notebook:
 
 ``` {.console}
@@ -208,7 +210,7 @@ The first line in the output shows the new `AI Notebook ID`: `7600dda5-27f7-4937
 
 In the last lines, the `Url` field corresponds to your JupyterLab server. You will need to wait a few seconds for the notebook to start and reach the `RUNNING`{.action} status. Once it has, the notebook URL will be accessible.
 
-To follow its state, you can get the notebook information again using its `ID`.
+To follow the notebook state, you can get the notebook information again using its `ID`.
 
 If you don't have the ID of the notebook you want to access, you can list all your notebooks using:
 
@@ -267,6 +269,8 @@ Now that the notebook is in the `RUNNING`{.action} state, a https address is def
 
 You can now start writing code in your notebook. Since we used the PyTorch framework in our example, we will be able to use it without having to install anything ourselves.
 
+As you explore your notebook, you will find a `ai-training-examples` folder already included in your workspace. This repository is automatically cloned for each notebook and includes a variety of examples that you can use with OVHcloud AI products, such as AI Notebooks.
+
 ### Stopping a notebook
 
 Once you are done with your notebook, you can stop it with the command below:
@@ -275,11 +279,11 @@ Once you are done with your notebook, you can stop it with the command below:
 ovhai notebook stop <NOTEBOOK_ID>
 ```
 
-*With `NOTEBOOKD_ID` being in our example 7600dda5-27f7-4937-9260-e24c987ae3c6*
+*With `NOTEBOOKD_ID` being in our example `7600dda5-27f7-4937-9260-e24c987ae3c6`*
 
 Stopping a notebook will make it unavailable from your browser, and start synchronising volumes mounted with `RW` permissions to your Object Storage.
 
-Once the synchronisation is finished, your notebook notebook will reach the `STOPPED`{.action} status. You can either start it again or delete it.
+Once the synchronisation is finished, your notebook notebook will reach the `STOPPED`{.action} state. You can either start it again or delete it.
 
 ### Starting a stopped notebook
 
