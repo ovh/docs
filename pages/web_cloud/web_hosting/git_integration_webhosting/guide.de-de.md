@@ -1,7 +1,7 @@
 ---
 title: "Konfiguration und Nutzung von Git mit OVHcloud Webhosting"
 excerpt: "Erfahren Sie hier, wie Sie Git mit Ihrem Webhosting In Ihrem OVHcloud Kundencenter konfigurieren und verwenden"
-updated: 2024-08-22
+updated: 2024-09-12
 ---
 
 > [!primary]
@@ -19,6 +19,10 @@ In der heutigen digitalen Landschaft sind Unternehmen dynamischer und innovative
 - Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager), im Bereich Web Cloud.
 - Sie haben einen Account auf [GitHub](https://github.com/){.external} und sind eingeloggt.
+
+> [!primary]
+>
+> Bis dato wird nur die GitHub-Plattform für die Verwendung mit OVHcloud Webhosting-Diensten unterstützt.
 
 ## In der praktischen Anwendung
 
@@ -92,7 +96,7 @@ Legen Sie einen Namen für Ihr Repository fest und geben Sie die angeforderten I
 
 Klicken Sie abschließend auf `Create Repository`{.action}.
 
-Kopieren Sie die Adresse Ihres GitHub-Repositorys. Diese muss im Format `https://github.com/<username>/<repository_name.git>`{.action} vorliegen. Kehren Sie zum Git-Zuordnungsformular zurück und fügen Sie die Adresse Ihres GitHub-Repositorys in das Feld `Repository`{.action} ein. Wenn das Adressformat nicht korrekt ist, wird die folgende Fehlermeldung angezeigt:
+Kopieren Sie die Adresse Ihres GitHub-Repositorys. Diese muss im Format `https://github.com/<username>/<repository_name.git>` vorliegen. Kehren Sie zum Git-Zuordnungsformular zurück und fügen Sie die Adresse Ihres GitHub-Repositorys in das Feld `Repository`{.action} ein. Wenn das Adressformat nicht korrekt ist, wird die folgende Fehlermeldung angezeigt:
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/error-wrong-git-repository-name.png){.thumbnail}
 
@@ -116,7 +120,7 @@ Am unteren Rand des Git-Zuordnungsformulars wird ein Abschnitt `Automatische Ber
 Bevor Sie das Git-Zuordnungsformular bestätigen, überprüfen Sie:
 
 - Ihr SSH-Schlüssel wurde erfolgreich in Ihrem GitHub-Konto gespeichert.
-- Die Adresse Ihres GitHub-Repositorys ist korrekt. Sie muss im Format `https://github.com/<username>/<repository_name.git>`{.action} vorliegen.
+- Die Adresse Ihres GitHub-Repositorys ist korrekt. Sie muss im Format `https://github.com/<username>/<repository_name.git>` vorliegen.
 - Der Zweigname des GitHub-Repositorys ist korrekt.
 - Das Installationsverzeichnis ist leer.
 
