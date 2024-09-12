@@ -1,7 +1,7 @@
 ---
 title: Installing Nginx Ingress on OVHcloud Managed Kubernetes
 excerpt: 'Find out how to install Nginx Ingress on OVHcloud Managed Kubernetes'
-updated: 2024-09-10
+updated: 2024-09-12
 ---
 
 In this tutorial we are going to guide you with the setup of [Nginx Ingress](https://github.com/kubernetes/ingress-nginx){.external} on your OVHcloud Managed Kubernetes Service.
@@ -29,6 +29,7 @@ Imagine an Ingress Resource as a list of traffic routing rules for backend Servi
 
 After deploying the Nginx Ingress Controller, you will also have an OVHcloud Load Balancer. Thanks to this Load Balancer, the external traffic will be routed to the Ingress Controller Pod running Nginx, which then forwards traffic to the appropriate backend Services you will configure in Ingress resources.
 
+> [!warning]
 > **Important:** There are two different Ingress controllers for Nginx:
 > 
 > - [Nginx Inc Ingress Controller](https://github.com/nginxinc/kubernetes-ingress)
@@ -136,7 +137,7 @@ $ export INGRESS_URL=$(kubectl get svc ingress-nginx-controller -n ingress-nginx
 echo Ingress URL: http://$INGRESS_URL/
 Ingress URL: http://51.178.69.190/
 ```
-In order to test your `nginx-ingress`, you can, for example, [install a WordPress](https://github.com/ovh/public-cloud-kubernetes/installing-wordpress) on your cluster, and then create a YAML file for the Ingress that uses the controller:
+In order to test your `nginx-ingress`, you can, for example, [install a WordPress](/pages/public_cloud/containers_orchestration/managed_kubernetes/installing-wordpress) on your cluster, and then create a YAML file for the Ingress that uses the controller:
 
 ```yaml
 apiVersion: networking.k8s.io/v1
@@ -160,7 +161,7 @@ spec:
 
 ```
 
-> [!primary]  
+> [!primary]
 > Don't forget to replace `[YOUR_WORDPRESS_SERVICE_NAME]`.
 
 In our example, the `ingress.yaml` produces this result:
@@ -203,6 +204,6 @@ So now if you point your browser to `http://$INGRESS_URL/`, you will see your Wo
 
 ### Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr/professional-services/) to get a quote and ask our Professional Services experts for assistance on your specific use case or project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assistance on your specific use case or project.
 
-- Join our [community of users](https://community.ovh.com/en/).
+- Join our [community of users](/links/community).
