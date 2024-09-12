@@ -1,7 +1,7 @@
 ---
 title: "Configuring and using Git with an OVHcloud web hosting plan"
 excerpt: "Find out how to configure and use Git with your web hosting plan in the OVHcloud Control Panel"
-updated: 2024-07-25
+updated: 2024-09-12
 ---
 
 ## Objective
@@ -15,6 +15,10 @@ In today’s digital landscape, companies are becoming increasingly dynamic and 
 - An [OVHcloud Web Hosting](/links/web/hosting) plan.
 - Access to the [OVHcloud Control Panel](/links/manager), in the Web Cloud section.
 - A [GitHub](https://github.com/){.external} account on which you must be logged in.
+
+> [!primary]
+>
+> To date, only the GitHub platform is supported for use with OVHcloud Web Hosting services.
 
 ## Instructions
 
