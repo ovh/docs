@@ -1,7 +1,7 @@
 ---
 title: 'Cambiar los servidores DNS de un dominio en OVHcloud'
 excerpt: 'Descubra cómo cambiar los servidores DNS de un dominio registrado en OVHcloud'
-updated: 2024-06-17
+updated: 2024-09-16
 ---
 
 > [!primary]

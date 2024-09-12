@@ -1,7 +1,7 @@
 ---
 title: 'Editing the DNS servers for an OVHcloud domain name'
 excerpt: 'Find out how to modify DNS servers via the OVHcloud Control Panel'
-updated: 2024-06-17
+updated: 2024-09-16
 ---
 
 ## Objective

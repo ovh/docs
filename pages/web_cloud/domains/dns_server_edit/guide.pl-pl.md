@@ -1,7 +1,7 @@
 ---
 title: 'Zmiana serwerów DNS domeny w OVHcloud'
 excerpt: 'Dowiedz się, jak zmodyfikować serwery DNS Twojej domeny w OVHcloud'
-updated: 2024-06-17
+updated: 2024-09-16
 ---
 
 > [!primary]
