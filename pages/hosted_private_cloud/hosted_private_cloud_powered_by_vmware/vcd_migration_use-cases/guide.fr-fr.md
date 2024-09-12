@@ -1,13 +1,13 @@
 ---
 title: "VMware Cloud Director - Migration VMware vSphere on OVHcloud"
-excerpt: "Découvrez comment vous préparer à migrer depuis VMware vSphere vers une offre basée un environnement managé VMware Cloud Director (VCD) on OVHcloud"
-updated: 2024-09-11
+excerpt: "Découvrez comment vous préparer à migrer depuis VMware vSphere on OVHcloud vers une offre basée un environnement VMware Cloud Director (VCD) on OVHcloud"
+updated: 2024-09-12
 ---
 
 
 > [!primary]
 >
-> VCD on OVHcloud est actuellement en phase alpha. Ce guide peut donc être incomplet et mis à jour à l'avenir avec les avancées des équipes de recherche.
+> VCD on OVHcloud est actuellement en phase alpha. Ce guide peut donc évoluer et être mis à jour à l'avenir avec les avancées des équipes de recherche.
 >
 
 ## Objectif
@@ -27,7 +27,7 @@ Ce guide pratique a pour but de vous fournir des informations et des solutions s
 Il détaille également les prérequis pour chaque cas d'utilisation et le cas échéant, vous explique les éxigences pour migrer.
 
 1. Il est important de vérifier la checklist des cas d'utilisations particuliers ci-dessous, avant toutes migrations et vous conformez aux recommandations associées.
-2. Une fois que vous aurez rempli ces exigences, vous pouvez vous connecter à l'espace client OVHcloud afin de signer dans le bloc prévu à cet effet les conditions particulières de l'environnement prévu à être migré (T&C).
+2. Une fois que vous aurez rempli ces exigences, vous pouvez vous connecter à l'espace client OVHcloud afin de signer (dans le bloc prévu à cet effet) les conditions particulières de l'environnement prévu à être migré (T&C).
 3. Les équipes OVHcloud migreront les VMs du datacenter (vDC) VMware vSphere principal en utilisant un chemin de migration à chaud (vMotion).
 
 Ce déplacement à chaud permettra de limiter au minimum les coupures de vos réseaux publics ou privés. Les réseaux privés sont les plus susceptibles d'être impactés, de l'ordre de quelques minutes de coupure.
@@ -36,41 +36,38 @@ Vos machines virtuelles resteront opérationnelles pendant la migration, sans te
 
 Cette migration doit s’effectuer sans impact notable pour la plupart des applications, mais nous vous recommandons de les superviser étroitement tout au long du processus.
 
-### Étape 1 - Avant la migration
+### Étape 1 - Avant la migration (obligatoire)
 
 #### Agenda
 
 #### Demandes de migration faite avant le 1er septembre 2024
 
 > [!primary]
->
-> Si vous avez demandé à migrer votre environnement actuel.
-> La migration de vos environnements actuels VMware vSphere peuvent être réalisées dès réception de votre demande. Nous vous invitons à revoir la démonstration du produit et le webinaire pour vous familiariser avec cette nouvelle offre.
+> 
+> La migration de vos environnements actuels VMware vSphere peuvent être réalisées dès réception de votre demande. 
+> 
+> **Important** : La signature des conditions particulières disponibles depuis début septembre 2024 dans l'espace client doivent être signé pour que la migration soit réalisée par les équipes OVHcloud.
 >
 
-Retrouvez également toutes les informations nécessaires sur nos pages dédiées à VCD :
+Nous vous invitons à revoir la démonstration du produit et le webinaire pour vous familiariser avec cette nouvelle offre.
+
+Vous retrouverez toutes les informations nécessaires sur nos pages dédiées à VCD :
 
 - [Webinar - Managed VMware Cloud Director by OVHcloud (EN)](https://vimeo.com/936590009/b52b3ba8ce)
 - [Webinar - VMware by Broadcom New Offerings and Opportunities (Video EN)](https://www.youtube.com/watch?v=aS2A9AhjnMg)
 - [Product - VMware Cloud Director On OVHcloud Evolution (FR)](https://www.ovhcloud.com/fr/lp/vmware-vcd-evolution/)
 - [OVHcloud Labs - VMware Cloud Director On OVHcloud (EN)](https://labs.ovhcloud.com/en/vmware-cloud-director/)
 
-> [!warning]
->
-> **Important** : La signature des conditions particulières disponibles depuis début septembre 2024 dans l'espace client doivent être signé pour que la migration soit réalisée par les équipes OVHcloud.
->
-
 Les migrations seront effectuées en quatre vagues, à partir du mois d'octobre, selon les services actifs dans votre environnement.
 
 **Le calendrier de migration est prévu comme suit** :
 
-| **Vague** | **Mois de migration** |   **Offres**   | **Advanced <br/>Network & Security** | **vSAN Storage** |  **OVHcloud <br/>Microsoft (SPLA)**  | **Environnements compatibles avec la migration**                                                                           |                                                                                                                
-|:---------:|:---------------------:|:--------------:|:-------------------------------:|:----------------:|:------------------------------:|----------------------------------------------------------------------------------------------------------------------------|
-|     ❶     |     `Octobre 2024`      | `VCD Standard` |                ❌                |        ❌         |               ❌                | - **Sans** licence VM Microsoft Windows (SPLA) fourni par OVHcloud<br/>- **Sans** NSX (vRack) et vSAN Storage              |
-|     ❷     |     `Novembre 2024`     | `VCD Standard` |                ❌                |        ❌         |               ✅                | - **Avec** licence VM Microsoft Windows (SPLA) fourni par OVHcloud<br/>- **Sans** NSX (vRack) et vSAN Storage              |
-|     ❸     |     `Décembre 2024`     | `VCD Advanced` |                ✅                |        ❌         |               ✅                | - **Avec** licence VM Microsoft Windows (SPLA) fourni par OVHcloud<br/>- **Avec** NSX (vRack) <br/>- **Sans** vSAN Storage |
-|     ❹      |     `Janvier 2024`      | `VCD Premium`  |                ✅                |        ✅         |               ✅                | - **Avec** licence Microsoft Windows (SPLA) fourni par OVHcloud<br/>- **Avec** NSX (vRack) et vSAN Storage                 |
-
+| **Vagues** |    **Dates**    | **Offres cible** | **NSX** | **Private Network<br/>-<br/>vRack support** | **vSAN** |  **OVHcloud<br/>Microsoft (SPLA)**  | **Environnements compatibles avec la migration**                                                                                   |                                                                                                                
+|:----------:|:---------------:|:----------------:|:-------:|:-------------------------------------------:|:--------:|:-----------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------|
+|     ❶      | `Octobre 2024`  |  `VCD Standard`  |    ❌    |                      ❌                      |    ❌     |                  ❌                  | - **Sans** licence VM Microsoft Windows (SPLA) fourni par OVHcloud<br/>- **Sans** NSX<br/>- **Sans** vSAN Storage                  |
+|     ❷      | `Novembre 2024` |  `VCD Standard`  |    ❌    |                      ❌                      |    ❌     |                  ✅                  | - **Avec** licence VM Microsoft Windows (SPLA) fourni par OVHcloud<br/>- **Sans** NSX<br/>- **Sans** vSAN Storage                  |
+|     ❸      | `Décembre 2024` |  `VCD Advanced`  |    ✅    |                      ✅                      |    ❌     |                  ✅                  | - **Avec** licence VM Microsoft Windows (SPLA) fourni par OVHcloud<br/>- **Avec** NSX + vRack support<br/>- **Sans** vSAN Storage  |
+|     ❹      | `Janvier 2024`  |  `VCD Premium`   |    ✅    |                      ✅                      |    ✅     |                  ✅                  | - **Avec** licence Microsoft Windows (SPLA) fourni par OVHcloud<br/>- **Avec** NSX + vRack support<br/>- **Avec** vSAN Storage     |
 
 Au cours de ce processus, vos données resteront inchangé, à l'exception du vSAN Storage. Vos adresses IP resteront inchangées également.
 
@@ -89,7 +86,7 @@ Nous vous invitons à lire le guide [VMware Cloud Director - Les concepts fondam
 
 Ensuite, nous vous informerons de la date et réaliserons la migration.
 
-#### Checklist des cas particuliers (obligatoire)
+#### Checklist des cas particuliers
 
 **Cas particuliers bloquant**
 
@@ -116,13 +113,13 @@ Le tableau ci-dessous vous présente chacun des cas particuliers et des points b
 |      🔟       | 🔗 `Pools de ressources (partage)`           | Remplacer par vApp dans VCD                                                                                                                                | - Les pools de ressources seront perdus après la migration car cette notion n'existe plus côté VCD. Nous recommandons à la place l'utilisation des concepts de vApp au sein du control panel VCD on OVHcloud.                                                    | [Utilisation de vApps dans le control panel VCD on OVHcloud](https://docs.vmware.com/en/VMware-Cloud-Director/10.6/VMware-Cloud-Director-Tenant-Guide/GUID-AC48FB5E-4ADC-4835-AACE-B949B297A147.html)  |
 |      ⏸️       | 🆓 `Hosts + Datastore`                       | Libération des ressources (hôtes + datastore)                                                                                                              | - Les ressources (hôtes + datastore) gratuites "Freespare" et à l'heure "Hourly" doivent être libérées avant la migration. <br/> Ou convertit en ressources mensuelles ("Monthly").                                                                              | [Informations de facturation du Hosted Private Cloud](/pages/account_and_service_management/manage_billing_payment_and_services/facturation_private_cloud)                                             |
 
-### Étape 2 - Après la migration
+### Étape 2 - Après la migration (obligatoire)
 
 Voici un rappel des taches qu'il vous reste à mener une fois la migration effectuées (si vous disposez de ces cas d'utilisations).
 
-#### Post action (non-obligatoire)
+#### Post action (non-obligatoire, seulement si cas d'usage présent)
 
-**Action à mener pour tous les cas particuliers**
+**Action à mener pour cas particuliers**
 
 | **Checklist** | **Cas d'utilisation**                        | **Solutions**                                                                              | **Informations complémentaires**                                                                                                                                                                                                                                    |
 |:-------------:|:---------------------------------------------|:-------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -132,9 +129,9 @@ Voici un rappel des taches qu'il vous reste à mener une fois la migration effec
 |      7️⃣      | 📀 `Périphériques spéciaux (CD, DVD, etc..)` | Rébrancher tous les équipements spéciaux nécessaire au bon fonctionnement des VMs dans VCD | - Car tous les périphériques spéciaux (CD, DVD, etc.) doivent être retirés avant la migration.                                                                                                                                                                      |
 |      3️⃣      | 🔐 `Encrypted VMs`                            | Chiffrer ou réactiver la politique de chiffrement pour les VMs dans VCD                    | - Car il n'est pas possible à ce jour d'effectuer la migration avec des VMs, vApp chiffrées.                                                                                                                                                                        |
 
-#### Repository (Veeam)
+#### Repository (Veeam) (obligatoire)
 
-**Configuration du stockage (Repository)**
+**Configuration du répertoire de stockage**
 
 Après la migration, vous devrez configurer votre nouvelle implémentation de stockage **Veeam Backup & Replication** avec les paramètres adéquats.
 
