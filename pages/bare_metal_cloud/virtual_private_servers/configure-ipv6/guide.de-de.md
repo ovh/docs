@@ -1,7 +1,7 @@
 ---
 title: "IPv6 auf einem VPS einrichten"
 excerpt: "Erfahren Sie hier, wie Sie IPv6 auf Ihrem OVHcloud VPS konfigurieren"
-updated: 2024-08-08
+updated: 2024-09-11
 ---
 
 > [!primary]
@@ -199,24 +199,26 @@ sudo cp /etc/network/interfaces.bak /etc/network/interfaces
 
 ##### Konfiguration mit *Netplan* <a name="netplan"></a>
 
-Die Netzwerkkonfigurationsdateien befinden sich im Verzeichnis `/etc/netplan/`. Standardmäßig heißt die Hauptkonfigurationsdatei `50-cloud-init.yaml`.
+Die Netzwerkkonfigurationsdateien befinden sich im Verzeichnis `/etc/netplan/`. Standardmäßig heißt die Hauptkonfigurationsdatei `50-cloud-init.yaml`. Bevor Sie fortfahren, überprüfen Sie zunächst diese Datei, um festzustellen, ob die IPv6-Adresse bereits konfiguriert wurde. Ist das der Fall, müssen Sie die IPv6-Adresse nicht erneut konfigurieren, da Sie nur eine IPv6-Adresse mit Ihrem VPS haben.
 
-Am besten erstellen Sie eine separate Konfigurationsdatei, um die IPv6-Adressen im Verzeichnis `/etc/netplan/` zu konfigurieren. Auf diese Weise können Sie Änderungen im Falle eines Fehlers leicht rückgängig machen.
+Wenn die IPv6-Adresse noch nicht konfiguriert wurde, sollten Sie eine separate Konfigurationsdatei erzeugen, um IPv6-Adressen im Verzeichnis `/etc/netplan/` zu konfigurieren. Auf diese Weise können Sie Änderungen im Falle eines Fehlers leicht rückgängig machen.
 
-In unserem Beispiel heißt unsere Datei `51-cloud-init-ipv6.yaml`:
+Außerdem empfehlen wir, die Berechtigungen für die neu erstellte Datei anzupassen. Weitere Informationen zu Dateiberechtigungen finden Sie in der [offiziellen Dokumentation von Ubuntu](https://help.ubuntu.com/community/FilePermissions){.external}.
+
+In unserem Beispiel heißt diese Datei `51-cloud-init-ipv6.yaml`:
 
 ```bash
 sudo nano /etc/netplan/51-cloud-init-ipv6.yaml
 ```
 
-Bearbeiten Sie anschließend die Datei `51-cloud-init-ipv6.yaml`, indem Sie die folgenden Zeilen für die IPv6-Konfiguration hinzufügen. Ersetzen Sie die generischen Elemente (d. h. *YOUR_IPV6*, *IPV6_PREFIX* und *IPV6_GATEWAY*) sowie das Netzwerkinterface (wenn Ihr Server **eth0** nicht verwendet) durch Ihre spezifischen Werte.
+Bearbeiten Sie anschließend die Datei `51-cloud-init-ipv6.yaml`, indem Sie die folgenden Zeilen für die IPv6-Konfiguration hinzufügen. Ersetzen Sie die generischen Elemente (d.h. *YOUR_IPV6*, *IPV6_PREFIX* und *IPV6_GATEWAY*) sowie das Netzwerkinterface (wenn Ihr Server **eth0** nicht verwendet) durch Ihre spezifischen Werte.
 
 ```yaml
 network:
     version: 2
     ethernets:
         eth0:
-            dhcp6: no
+            dhcp6: false
             match:
               name: eth0
             addresses:
@@ -236,7 +238,7 @@ network:
     version: 2
     ethernets:
         eth0:
-            dhcp6: no
+            dhcp6: false
             match:
               name: eth0
             addresses:
