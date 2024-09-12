@@ -1,7 +1,7 @@
 ---
 title: "Configurar o IPv6 num VPS"
 excerpt: "Saiba como configurar o IPv6 num VPS da OVHcloud"
-updated: 2024-08-08
+updated: 2024-09-11
 ---
 
 > [!primary]
@@ -202,9 +202,11 @@ sudo cp /etc/network/interfaces.bak /etc/network/interfaces
 
 ##### Configuração com o auxílio de Netplan <a name="netplan"></a>
 
-Os ficheiros de configuração de rede estão localizados no diretório `/etc/netplan/`. Por predefinição, o ficheiro de configuração principal chama-se `50-cloud-init.yaml`.
+Os ficheiros de configuração de rede estão localizados no diretório `/etc/netplan/`. Por predefinição, o ficheiro de configuração principal chama-se `50-cloud-init.yaml`. Antes de executar qualquer uma das etapas a seguir, verifique primeiro se o endereço IPv6 já foi configurado. Se for o caso, não é necessário configurar o endereço IPv6 novamente, pois só tem um endereço IPv6 com o servidor VPS.
 
-A melhor abordagem consiste em criar um ficheiro de configuração separado para configurar os endereços IPv6 no diretório `/etc/netplan/`. Desta forma, poderá facilmente reverter as alterações em caso de erro.
+Se o endereço IPv6 não estiver configurado, a melhor abordagem é criar um ficheiro de configuração separado para configurar o endereço IPv6 no diretório `/etc/netplan/`. Desta forma, poderá facilmente reverter as alterações em caso de erro.
+
+Além disso, recomendamos que ajuste as permissões para o ficheiro recém-criado. Para mais informações sobre as permissões dos ficheiros, consulte a [documentação oficial do ubuntu](https://help.ubuntu.com/community/FilePermissions){.external}.
 
 No nosso exemplo, o nosso ficheiro é nomeado `51-cloud-init-ipv6.yaml`:
 
@@ -219,7 +221,7 @@ network:
     version: 2
     ethernets:
         eth0:
-            dhcp6: no
+            dhcp6: false
             match:
               name: eth0
             addresses:
@@ -239,7 +241,7 @@ network:
     version: 2
     ethernets:
         eth0:
-            dhcp6: no
+            dhcp6: false
             match:
               name: eth0
             addresses:
