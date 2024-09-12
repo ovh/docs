@@ -151,7 +151,7 @@ Les anciens serveurs DNS déclarés et la configuration DNS qu'ils appliquaient 
 
 ![Modify DNS servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/modify-my-dns-servers-3.png){.thumbnail}
 
-Cette option permet de combiner l'utilisation de vos propres serveurs DNS tout en conservant les serveurs DNS OVHcloud actifs pour votre nom de domaine. En réalisant cette combinaison, cela permet, par exemple, d'assurer d'avantage l'accès aux différents services associés à votre nom de domaine (hébergement web, serveurs e-mail, etc.). En effet et toujours par exemple, si un groupe de serveurs DNS devient indisponible pendant quelques minutes, les autres serveurs DNS déclarés peuvent prendre le relais.
+Cette option permet de combiner l'utilisation de vos propres serveurs DNS tout en conservant les serveurs DNS OVHcloud actifs pour votre nom de domaine. Cette combinaison permet, par exemple, d'assurer d'avantage l'accès aux différents services associés à votre nom de domaine (hébergement web, serveurs e-mail, etc.). En effet, si un groupe de serveurs DNS devient indisponible pendant quelques minutes, les autres serveurs DNS déclarés peuvent prendre le relais.
 
 Cependant, vérifiez bien que les configurations des zones DNS présentes sur les différents serveurs DNS concernés sont correctement paramétrées pour fonctionner toutes ensemble. Effectivement, la plupart du temps, tous les serveurs DNS seront opérationnels. Ils seront tous en capacité de répondre aux demandes qui leurs seront faites et ce, aléatoirement sur le réseau DNS.
 
