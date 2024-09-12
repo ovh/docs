@@ -82,7 +82,7 @@ Cette option permet d'appliquer automatiquement la configuration de la zone DNS 
 
 > [!primary]
 >
-> Si besoin, consultez les guides « [Modifier une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) » et/ou « [Créer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create) » pour vérifier si une zone DNS OVHcloud existe ou non pour votre nom de domaine.
+> Si besoin, consultez les guides « [Modifier une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) » et/ou « [Créer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create) » pour vérifier si une zone DNS OVHcloud existe pour votre nom de domaine.
 
 Pour utiliser les serveurs DNS par défaut d'OVHcloud, cliquez sur `Appliquer la configuration`{.action}. La fenêtre suivante apparaît :
 
