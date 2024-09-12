@@ -161,7 +161,7 @@ No obstante, asegúrese de que las configuraciones de las zonas DNS de los disti
 
 > [!warning]
 >
-> 1. Tenga cuidado si decide utilizar esta última opción. Para ello, necesita conocimientos avanzados sobre el funcionamiento de la red DNS, los servidores DNS y las zonas DNS.
+> 1. Tenga cuidado si decide utilizar esta última opción. Para ello, necesita conocimientos avanzados sobre el funcionamiento de la red DNS, los servidores DNS y las zonas DNS.<br>
 > 2. Debe desactivar la opción [DNSSEC](/pages/web_cloud/domains/dns_dnssec) para combinar el uso de sus propios servidores DNS con los DNS de OVHcloud.
 >
 > 3. No mezcle un grupo de servidores DNS de OVHcloud con otro grupo de servidores DNS de OVHcloud. Por ejemplo, *dns19.ovh.net* y *ns19.ovh.net* corresponden a un grupo de servidores DNS de OVHcloud, van de la mano y están sincronizados. En OVHcloud, los grupos de servidores DNS se identifican mediante el número que figura en los nombres de los servidores. Dos servidores DNS de OVHcloud forman parte de un mismo grupo de servidores DNS desde el momento en que comparten el mismo número. Por ejemplo, *dns19.ovh.net* y *ns19.ovh.net*.
