@@ -65,7 +65,7 @@ Le tableau qui s'affiche contient les serveurs DNS actuellement définis par OVH
 
 > [!primary]
 >
-> Toutes les fonctionnalités décrites ci-après s'effectuent depuis l'onglet `Serveurs DNS`{.action} mentionné dans l'[étape 1](#access-dns-servers) de ce guide.
+> Toutes les fonctionnalités décrites ci-dessous s'effectuent depuis l'onglet `Serveurs DNS`{.action} mentionné dans l'[étape 1](#access-dns-servers) de ce guide.
 >
 
 Pour modifier les serveurs DNS, cliquez sur le bouton `Modifier les serveurs DNS`{.action} situé à droite du tableau « serveurs DNS ». En fonction de la résolution de votre écran, le bouton peut se trouver en dessous du tableau.
