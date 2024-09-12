@@ -60,7 +60,7 @@ Clicca su `Seguente`{.action} e poi su `Conferma`{.action} per modificare i para
 
 ### Verifica lo stato dell'operazione di attivazione
 
-![gestione in corso](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/firewall-planned.png){.thumbnail}
+![gestione in corso](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ongoing-tasks/firewall-planned.png){.thumbnail}
 
 Gli aggiornamenti della configurazione multisito saranno elencati nella scheda `Operazioni in corso`{.action} (lo stato iniziale è "Pianificato"). Il firewall sarà attivo non appena il suo aggiornamento non sarà più incluso nella lista.
 
