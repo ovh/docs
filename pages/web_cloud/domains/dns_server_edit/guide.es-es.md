@@ -10,7 +10,7 @@ updated: 2024-09-16
 
 ## Objetivo
 
-Las siglas **DNS** (**D**omain **N**ame **S**ystem), son un conjunto de elementos (servidores DNS, zonas DNS, etc.) que permiten asociar un dominio a una dirección IP.
+La sigla **DNS** (**D**omain **N**ame **S**ystem) es un conjunto de elementos (servidores DNS, zonas DNS, etc.) que permite asociar un dominio a una dirección IP.
 
 Para más información, consulte nuestras guías "[Todo sobre los servidores DNS](/pages/web_cloud/domains/dns_server_general_information)" y "[Todo sobre la zona DNS](/pages/web_cloud/domains/dns_zone_general_information)".
 
