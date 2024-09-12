@@ -667,6 +667,7 @@
             + [Known limits](public_cloud/public_cloud_network_services/known-limits)
             + [Public Cloud Load Balancer monitoring with Prometheus](public_cloud/public_cloud_network_services/technical-resources-02-octavia-monitoring-prometheus)
             + [Public Cloud Load Balancer TCP / HTTP / HTTPS Logs Forwarding](public_cloud/public_cloud_network_services/technical-resources-05-lb_logs_2_customers)
+            + [Updating a Load Balancer size via the Horizon interface](public_cloud/public_cloud_network_services/update-load-balancer-size)
         + [Tutorials](public-cloud-network-tutorials)
             + [Configuring a secure Load Balancer with Let's Encrypt](public_cloud/public_cloud_network_services/tutorials-01-secure-lb-letsencrypt)
     + [Public Cloud Databases](products/public-cloud-databases)
