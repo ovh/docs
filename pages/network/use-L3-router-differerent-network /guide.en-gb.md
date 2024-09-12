@@ -1,107 +1,105 @@
 ---
-title: "Configurer un routeur L3 pour acheminer des paquets entre différents réseaux/sous-réseaux"
-excerpt: "Apprenez à configurer un routeur de niveau 3 (ou une instance Linux simulant cette fonctionnalité) pour router des paquets entre plusieurs réseaux ou sous-réseaux."
+title: "How to use an L3 router to route packets between different networks/subnets"
+excerpt: "Learn how to configure an L3 router (or a Linux instance acting as one) to route packets between different networks or subnets."
 updated: 2024-09-12
 ---
 
-## Objectif
+## Objective
 
-**Découvrez comment configurer un routeur de niveau 3 (ou une instance Linux agissant en tant que tel) pour acheminer des paquets entre différents réseaux ou sous-réseaux.** Ce guide couvre l'activation du routage IP, la configuration des interfaces réseau, l'ajout de règles de pare-feu et la persistance de ces configurations.
+This guide explains how to configure a Layer 3 router (or a Linux instance acting as an L3 router) to route packets between different networks or subnets. It covers enabling IP routing, configuring interfaces, adding firewall rules, and making these configurations persistent.
 
-## Prérequis
+## Requirements
 
-- Accès à une instance Linux avec des privilèges administratifs (`sudo`).
-- Plusieurs interfaces réseau ou la capacité de configurer des interfaces virtuelles.
-- `iptables` installé sur le système.
+- Access to a Linux instance with administrative privileges (`sudo`).
+- Multiple network interfaces or the ability to configure virtual interfaces.
+- `iptables` installed on the system.
 
-## En pratique
+## Instructions
 
-### Étape 1 : Activer le routage IP
+### Step 1: Enable IP routing
 
-Pour permettre à votre système de router des paquets entre différents réseaux, vous devez activer le transfert de paquets IP.
+To allow your system to route packets between networks or subnets, you need to enable IP forwarding:
 
-- Activez temporairement le routage IP.
-  
-    ```bash
+- Temporarily enable IP forwarding by running:
+
+  ```bash
   sudo sysctl -w net.ipv4.ip_forward=1
   ```
-    
-- Pour rendre cette configuration persistante après un redémarrage, ajoutez ou modifiez la ligne suivante dans `/etc/sysctl.conf` : `net.ipv4.ip_forward = 1`.
+
+  - To make this setting persistent after reboot, add or update the following line in `/etc/sysctl.conf`:
 
   ```bash
   net.ipv4.ip_forward = 1
   ```
-    
-- Appliquez immédiatement les modifications.
+
+- Apply the changes immediately with:
 
   ```bash
   sudo sysctl -p
   ```
 
-### Étape 2 : Configurer les interfaces réseau
+  ### Step 2: Configure network interfaces
 
-Si vous avez plusieurs interfaces réseau physiques, vous pouvez leur attribuer des adresses IP. Si vous n'avez qu'une seule interface, vous pouvez utiliser des interfaces virtuelles pour simuler plusieurs réseaux.
+If you have multiple physical network interfaces, you can assign IP addresses to each one. If you only have one interface, you can configure virtual interfaces to simulate multiple networks.
 
-- Attribuez une adresse IP au premier sous-réseau sur `eth0`.
+- Assign an IP address to the first subnet on `eth0`:
 
- ```bash
+  ```bash
   sudo ip addr add 192.168.1.1/24 dev eth0
   ```
-
-- Attribuez une adresse IP au deuxième sous-réseau en utilisant une interface virtuelle `eth0:1`.
+- Assign an IP address to the second subnet using a virtual interface `eth0:1`:
 
    ```bash
   sudo ip addr add 192.168.2.1/24 dev eth0 label eth0:1
   ```
-   
-- Vérifiez la configuration des interfaces.
+
+- Verify the configuration:
 
    ```bash
   ip addr show
   ```
 
-### Étape 3 : Installer et configurer `iptables` pour autoriser le transfert de paquets
+### Step 3: Install and configure `iptables` to allow forwarding
 
-Vous devez vous assurer que les paquets peuvent être transférés entre les sous-réseaux.
+You need to ensure that packets can be forwarded between the subnets.
 
-- Installez `iptables` si ce n'est pas déjà fait.
+- Install `iptables` if it's not already installed:
 
   ```bash
   sudo dnf install iptables-services
   ```
   
-- Ajoutez une règle pour autoriser le transfert de paquets entre les sous-réseaux.
-
+- Add a rule to allow packet forwarding between the subnets:
+  
   ```bash
   sudo iptables -A FORWARD -i eth0 -o eth0 -j ACCEPT
   ```
   
-- Vérifiez les règles `iptables` pour confirmer l'ajout.
-
+- Check the  `iptables ` rules to confirm the change:
+  
   ```bash
   sudo iptables -L
   ```
+  
+### Step 4: Test connectivity between subnets
+You can now test the routing configuration by using the `ping` command.
+- Test connectivity from one subnet to the other:
 
-### Étape 4 : Tester la connectivité entre les sous-réseaux
-
-Vous pouvez maintenant tester la configuration du routage en utilisant la commande `ping`.
-
-- Testez la connectivité d'un sous-réseau à l'autre. Si le ping fonctionne, cela signifie que le routage est correctement configuré.
-
- ```bash
+  ```bash
   ping 192.168.2.1
   ```
-
-### Étape 5 : Sauvegarder les règles `iptables`
-
-Pour garantir que les règles `iptables` persistent après un redémarrage, enregistrez-les.
+  
+If the ping is successful, the routing is working correctly.
+### Step 5: Save the iptables rules
+To ensure that the iptables rules persist after a reboot, save them as follows:
+Save the current rules:
 
   ```bash
   sudo service iptables save
   ```
 
-- Sauvegardez les règles actuelles dans `/etc/sysconfig/iptables`. Elles seront automatiquement rechargées au démarrage.
+This will save the rules to `/etc/sysconfig/iptables` and load them automatically on startup.
 
-## Aller plus loin
+## Go further
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Join our community of users on <https://community.ovh.com/en/>.
