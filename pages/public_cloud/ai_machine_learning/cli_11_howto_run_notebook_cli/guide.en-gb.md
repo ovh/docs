@@ -18,7 +18,7 @@ For more information on **installing and configuring the ovhai CLI, see the guid
 
 ### Run a new notebook
 
-To run a new notebook, the basic command is `ovhai notebook run`. This commands needs to be followed by some arguments that will specify the specifications of your notebook.
+To run a new notebook, the basic command is `ovhai notebook run`. This command needs to be followed by some arguments that will indicate the specifications of your notebook.
 
 You can see the full list of options by running `ovhai notebook run --help` or `ovhai notebook run -h`:
 
@@ -68,7 +68,7 @@ Options:
 
 As you can see, `<FRAMEWORK_ID>` and `<EDITOR_ID>` are two mandatory arguments that will specify which framework and editor you want to use inside your notebook.
 
-You can find a list of available ones by running the `ovhai capabilities framework list` and `ovhai capabilities editor list` commands:
+You can find a list of available frameworks and editors by running the `ovhai capabilities framework list` and `ovhai capabilities editor list` commands:
 
 ``` {.console}
 ovhai capabilities framework list
@@ -103,21 +103,21 @@ vscode                  VSCode                  https://code.visualstudio.com/do
 
 From there, you can launch a first basic notebook.
 
-Indeed, here is an example command for launching a notebook with `PyTorch`{.action} and `JupyterLab`{.action}:
+Here is an example command for launching a notebook with `PyTorch` and `JupyterLab`:
 
 ```bash
 ovhai notebook run pytorch jupyterlab
 ```
 
-For `VSCode`{.action}, you can run:
+For `VSCode`, you can run:
 
 ```bash
 ovhai notebook run pytorch vscode
 ```
 
-By default, this notebook will be ran on a single `V100S GPU`{.action}, in a `restricted access`{.action}, with the `latest version`{.action} available of the framework you have selected.
+By default, this notebook will be ran on a single `V100S GPU`, in a `restricted access`, with the `latest version` available of the framework you have selected.
 
-As we saw with the execution of `ovhai notebook run -h`, there are many options available for customizing your notebook. One of them (`--flavor <FLAVOR_ID>`) allows you to specify the flavor you want to use (Type of CPUs/GPUs) by specifying the `flavor ID`{.action}. The flavor list can be accessed by running:
+As we saw with the execution of `ovhai notebook run -h`, there are many options available for customizing your notebook. One of them (`--flavor <FLAVOR_ID>`) allows you to specify the flavor you want to use (Type of CPUs/GPUs) by specifying the `flavor ID`. The flavor list can be accessed by running:
 
 ```{.console}
 ovhai capabilities flavor list
@@ -138,7 +138,7 @@ ovhai notebook run pytorch jupyterlab \
   --flavor a100-1-gpu
 ```
 
-Then, you can add to your command the `--cpu <NUMBER>` or `--gpu <NUMBER>` flag to specify how many you want. The following example will run the same notebook but on `2 A100`{.action} GPUs:
+Then, you can add to your command the `--cpu <NUMBER>` or `--gpu <NUMBER>` flag to specify how many CPUs/GPUs you want. The following example will run the same notebook but on `2 A100` GPUs:
 
 ```bash
 ovhai notebook run pytorch jupyterlab \
@@ -157,7 +157,7 @@ ovhai notebook run pytorch jupyterlab \
   --label my_label_key=my_label_value
 ```
 
-This will launch a new AI Notebook with `PyTorch 2.4.0`{.action}, `Jupyterlab`{.action}, and `6 CPUs`{.action}, in a restricted access.
+This will launch a new AI Notebook with `PyTorch 2.4.0`, `Jupyterlab`, and `6 CPUs`, in a restricted access.
 
 ### Accessing a new notebook
 
@@ -208,7 +208,7 @@ Status:
 
 The first line in the output shows the new `AI Notebook ID`: `7600dda5-27f7-4937-9260-e24c987ae3c6`.
 
-In the last lines, the `Url` field corresponds to your JupyterLab server. You will need to wait a few seconds for the notebook to start and reach the `RUNNING`{.action} status. Once it has, the notebook URL will be accessible.
+In the last lines, the `Url` field corresponds to your JupyterLab server. You will need to wait a few seconds for the notebook to start and reach the `RUNNING` status. Once it is running, the notebook URL will be accessible.
 
 To follow the notebook state, you can get the notebook information again using its `ID`.
 
@@ -263,13 +263,13 @@ Status:
   …
 ```
 
-Now that the notebook is in the `RUNNING`{.action} state, a https address is defined in the `Url` field. This `URL`{.action} corresponds to your JupyterLab server. Pasting this `URL`{.action} in your browser displays the following screen:
+Now that the notebook is in the `RUNNING` state, a https address is defined in the `Url` field. This `URL` corresponds to your JupyterLab server. Pasting this `URL` in your browser displays the following screen:
 
 ![image](images/jupyterlab_home_page.png){.thumbnail}
 
 You can now start writing code in your notebook. Since we used the PyTorch framework in our example, we will be able to use it without having to install anything ourselves.
 
-As you explore your notebook, you will find a `ai-training-examples` folder already included in your workspace. This repository is automatically cloned for each notebook and includes a variety of examples that you can use with OVHcloud AI products, such as AI Notebooks.
+As you explore your notebook, you will find an `ai-training-examples` folder already included in your workspace. This repository is automatically cloned for each notebook and includes a variety of examples that you can use with OVHcloud AI products, such as AI Notebooks.
 
 ### Stopping a notebook
 
@@ -279,13 +279,13 @@ Once you are done with your notebook, you can stop it with the command below:
 ovhai notebook stop <NOTEBOOK_ID>
 ```
 
-*With `NOTEBOOKD_ID` being in our example `7600dda5-27f7-4937-9260-e24c987ae3c6`*
+*In our example above, the `NOTEBOOKD_ID` is `7600dda5-27f7-4937-9260-e24c987ae3c6`*
 
 Stopping a notebook will make it unavailable from your browser, and start synchronising volumes mounted with `RW` permissions to your Object Storage.
 
-Once the synchronisation is finished, your notebook notebook will reach the `STOPPED`{.action} state. You can either start it again or delete it.
+Once the synchronisation is finished, your notebook will reach the `STOPPED` state. You can either start it again or delete it.
 
-### Starting a stopped notebook
+### Retarting a stopped notebook
 
 Being able to restart a notebook is one of the main differences compared to using [AI Training jobs](/pages/public_cloud/ai_machine_learning/training_guide_03_concepts_jobs). Restarting a notebook will restore your notebook code as it was when you stopped it. However, you will need to re-run your code to reload your variables because the program state is not saved.
 
@@ -298,7 +298,7 @@ ovhai notebook start <NOTEBOOK_ID>
 You are billed for `RUNNING` notebooks but not for `STARTING`, `STOPPING` and `STOPPED` notebooks.
 However, to restore your code when you restart a `STOPPED` notebook, it needs to be stored in your Object Storage, which you are billed for. You can find more information about the AI Notebooks billing in the [Billing and Lifecycle guide](/pages/public_cloud/ai_machine_learning/notebook_guide_billing_concept).
 
-This is useful when you work on a notebook for some time. 
+This is useful when you work on a notebook for some time.
 
 ### Deleting a notebook
 
