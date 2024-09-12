@@ -30,26 +30,28 @@ This guide explains how to change the size of your load balancer in the OVHcloud
 
 1. On the right side of your load balancer entry, click the down arrow button next to it.
 2. Select **Edit Load Balancer** from the dropdown menu.
-
-![Edit Load Balancer Button](images/editButtonLoadBalancer.png)
+  
+   ![Edit Load Balancer Button](images/editButtonLoadBalancer.png)
 
 ### Step 4: Resize the Load Balancer
 
-1. In the options menu, choose **Resize Load Balancer**.  
+1. In the options menu, choose **Resize Load Balancer**.
+   
    ![Choose Resize Option](images/ChoiceOptionLoadBalancer.png)
 
-2. A window will prompt you to select a new size for your load balancer.
+3. A window will prompt you to select a new size for your load balancer.
 
 ### Step 5: Select a Flavor
 
 1. In the dropdown, select the desired size for your load balancer:
+   
    - **Small**
    - **Medium**
    - **Large**
 
    ![Select Load Balancer Size](images/sizeLoadBalancer.png)
 
-2. Confirm your selection and apply the changes.
+3. Confirm your selection and apply the changes.
 
 ### Step 6: Save Changes
 
