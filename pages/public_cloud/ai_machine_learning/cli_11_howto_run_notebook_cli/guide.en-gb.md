@@ -281,11 +281,11 @@ ovhai notebook stop <NOTEBOOK_ID>
 
 *In our example above, the `NOTEBOOKD_ID` is `7600dda5-27f7-4937-9260-e24c987ae3c6`*
 
-Stopping a notebook will make it unavailable from your browser, and start synchronising volumes mounted with `RW` permissions to your Object Storage.
+When you stop a notebook, it becomes unavailable for a certain period of time, during which your data is synchronized on the Object Storage. This allows you to retrieve your work later.
 
-Once the synchronisation is finished, your notebook will reach the `STOPPED` state. You can either start it again or delete it.
+Once the synchronization is complete, the notebook will reach the `STOPPED` state. At this point, you can either start the notebook again or delete it.
 
-### Retarting a stopped notebook
+### Restarting a stopped notebook
 
 Being able to restart a notebook is one of the main differences compared to using [AI Training jobs](/pages/public_cloud/ai_machine_learning/training_guide_03_concepts_jobs). Restarting a notebook will restore your notebook code as it was when you stopped it. However, you will need to re-run your code to reload your variables because the program state is not saved.
 
