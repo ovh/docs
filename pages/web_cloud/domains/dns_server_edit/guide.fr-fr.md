@@ -174,7 +174,7 @@ Cependant, vérifiez bien que les configurations des zones DNS présentes sur le
 > - « Your own domain (or just an @) » IN NS nsXX.ovh.net.
 >
 
-Pour renseigner l'un de vos propres serveurs DNS, remplissez les 2 formulaires de l'encadré comme suit :
+Pour renseigner l'un de vos propres serveurs DNS, remplissez les 2 formulaires de l'encadré comme ci-dessous :
 
 - `Serveur DNS` : nom du serveur DNS à appliquer à votre nom de domaine.
 - `IP associée (facultatif)` : adresse IP (IPv4 ou IPv6) du serveur DNS renseigné. Vous ne pouvez renseigner qu'**une seule adresse IP** dans ce formulaire.
