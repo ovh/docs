@@ -35,6 +35,8 @@ Vos machines virtuelles resteront opérationnelles pendant la migration, sans te
 
 Cette migration doit s’effectuer sans impact notable pour la plupart des applications, mais nous vous recommandons de les superviser étroitement tout au long du processus.
 
+Pour rappel, si vous décidez de passer à l’offre VCD, les nouveaux tarifs ne seront pas appliqués à vos serveurs/hôtes existants. Nous couvrirons l'augmentation du prix de la licence jusqu'à ce que la migration soit terminée.
+
 ### Étape 1 - Avant la migration (obligatoire)
 
 #### Agenda
@@ -148,12 +150,14 @@ Pour plus d'information, consultez le guide : [VMware Cloud Director - Sauvegard
 
 ## Aller plus loin
 
-Vous pouvez aller plus loin en lisant ces guides, afin de mieux connaitre les avantages de VCD dans la gestion de votre architecture privée Hosted Private Cloud :
+Vous pouvez aller plus loin en lisant ces guides, afin de mieux connaitre les avantages de VCD on OVHcloud :
 
 - [VMware Cloud Director - Premiers pas](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-getting-started)
 - [VMware Cloud Director - Les concepts fondamentaux de VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts)
 - [VMware Cloud Director - Foire aux questions](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-faq)
 - [VMware Cloud Director - Se connecter depuis le control panel VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging)
+- [VMware Cloud Director - Concepts réseau et bonnes pratiques](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts)
+- [VMware Cloud Director - Création de composants réseaux via VCD on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_creation)
 - [VMware Cloud Director - Sauvegarde avec Veeam Data Platform](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-backup)
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre Technical Account Manager ou [rendez-vous ici](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
