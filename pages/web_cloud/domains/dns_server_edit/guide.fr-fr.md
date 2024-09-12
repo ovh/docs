@@ -161,7 +161,7 @@ Cependant, vérifiez bien que les configurations des zones DNS présentes sur le
 >
 > 2. L'option [DNSSEC](/pages/web_cloud/domains/dns_dnssec) doit être désactivée pour combiner l'utilisation de vos propres serveurs DNS avec les DNS d'OVHcloud.
 >
-> 3. Veillez à ne pas mélanger un groupe de serveurs DNS OVHcloud avec un autre groupe de serveurs DNS OVHcloud. Par exemple, *dns19.ovh.net* et *ns19.ovh.net* correspondent à un groupe de serveurs DNS OVHcloud, ils vont de pair et sont synchronisés. Chez OVHCloud, les groupes de serveurs DNS sont identifiables à l'aide du numéro présent dans les noms des serveurs. Deux serveurs DNS OVHcloud font partie d'un même groupe de serveurs DNS dès lors qu'ils partagent le même numéro. Par exemple, *dns19.ovh.net* et *ns19.ovh.net*.
+> 3. Veillez à ne pas mélanger un groupe de serveurs DNS OVHcloud avec un autre groupe de serveurs DNS OVHcloud. Par exemple, *dns19.ovh.net* et *ns19.ovh.net* correspondent à un groupe de serveurs DNS OVHcloud, ils vont de pair et sont synchronisés. Chez OVHcloud, les groupes de serveurs DNS sont identifiables à l'aide du numéro présent dans les noms des serveurs. Deux serveurs DNS OVHcloud font partie d'un même groupe de serveurs DNS dès lors qu'ils partagent le même numéro. Par exemple, *dns19.ovh.net* et *ns19.ovh.net*.
 
 > [!success]
 >
