@@ -96,7 +96,7 @@ Elle résume le nom des 2 serveurs DNS qui vont être appliqués à votre nom de
 
 S'ils correspondent à ceux que vous souhaitez appliquer, cliquez sur `Appliquer`{.action}.
 
-Ainsi, les 2 serveurs DNS déclarés, dans les enregistrements de type NS de la zone DNS OVHcloud, seront utilisés pour votre nom de domaine. 
+Ainsi, les 2 serveurs DNS déclarés (dans les enregistrements de type NS de la zone DNS OVHcloud) seront utilisés pour votre nom de domaine. 
 
 Les anciens serveurs DNS déclarés et la configuration DNS qu'ils appliquaient seront désactivés pour votre nom de domaine. La zone DNS OVHcloud deviendra la zone DNS active pour votre nom de domaine.
 
