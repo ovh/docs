@@ -39,7 +39,7 @@ Cette migration doit s’effectuer sans impact notable pour la plupart des appli
 
 #### Agenda
 
-#### Demandes de migration faite avant le 1er septembre 2024
+#### Demandes faites avant le 1er novembre 2024
 
 > [!primary]
 > 
@@ -76,7 +76,7 @@ La date de migration vous sera communiquer par E-Mail au minimum 15 jours avant 
 
 Nous vous invitons à lire le guide [VMware Cloud Director - Les concepts fondamentaux de VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts) pour voir les features inclut dans chaque vague de migrations de vos environnements.
 
-#### Demande de migration après le 1er novembre 2024
+#### Demandes faites après le 1er novembre 2024
 
 > [!primary]
 >
