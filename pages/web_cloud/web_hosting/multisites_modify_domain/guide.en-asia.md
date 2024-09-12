@@ -98,12 +98,6 @@ Tick/untick this box to enable/disable the CDN option for your domain name or su
 
 You can find more information on the CDN options/offers available in our dedicated documentation “[Speeding up your website with CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn)”.
 
-##### The "country IP" option
-
-This option is mainly used for websites whose target audience is located in a different country than the web hosting. This will improve the SEO ranking of the website in the chosen country.
-
-You can find more information on this option in our dedicated documentation "[Geolocating your website in a specific country](/pages/web_cloud/web_hosting/multisites_geolocation)".
-
 ##### The "Enable the firewall" option
 
 This option filters incoming requests to protect your web hosting plan against the most common attacks.
@@ -137,8 +131,6 @@ If modifications of the **SSL**, **CDN**, **Country IP** and **separate logs** o
 [Managing SSL certificates on a web hosting plan](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 
 [Speeding up your website with CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn)
-
-[Geolocating your website in a specific country](/pages/web_cloud/web_hosting/multisites_geolocation)
 
 [Activating the application firewall](/pages/web_cloud/web_hosting/multisites_activating_application_firewall)
 
