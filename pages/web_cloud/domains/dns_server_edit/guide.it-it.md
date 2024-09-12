@@ -26,7 +26,7 @@ Per maggiori informazioni, consulta le nostre guide "[Scopri tutto sui server DN
 
 > [!primary]
 >
-> Un **Registrar** è un'organizzazione autorizzata a vendere domini. Tra questi **Registrar**, OVHcloud.
+> **Registrar** è un'organizzazione autorizzata a vendere domini. Tra questi **Registrars** anche OVHcloud.
 >
 > Se il dominio non è registrato presso OVHcloud, è necessario modificare i server DNS presso il **Registrar** in cui è attualmente registrato il dominio.
 >
@@ -146,7 +146,7 @@ Una volta aggiunti tutti i server DNS, clicca su `Applicare la configurazione`{.
 
 ![Modify DNS servers](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-servers/modify-my-dns-servers-2-apply-configuration.png){.thumbnail}
 
-che riepiloga i nomi dei server DNS applicati al dominio.
+Che riepiloga i nomi dei server DNS applicati al dominio.
 Se corrispondono a quelli che vuoi applicare, clicca su `Applica`{.action}.
 
 I server DNS dichiarati e la configurazione DNS applicata verranno disattivati per il dominio. La zona DNS dichiarata sui tuoi server DNS diventerà la zona DNS attiva per il tuo dominio.
@@ -157,14 +157,12 @@ I server DNS dichiarati e la configurazione DNS applicata verranno disattivati p
 
 Questa opzione permette di combinare l'utilizzo dei propri server DNS conservando i server DNS OVHcloud attivi per il dominio. Questa combinazione permette, ad esempio, di assicurare un maggiore accesso ai diversi servizi associati al dominio (hosting Web, server di posta, ecc...). Infatti, se un gruppo di server DNS diventa indisponibile per qualche minuto, gli altri server DNS dichiarati possono subentrare.
 
-e verifica che le configurazioni delle zone DNS dei diversi server siano configurate correttamente per funzionare tutte insieme. Nella maggior parte dei casi, tutti i server DNS saranno operativi. Saranno tutti in grado di rispondere alle richieste che verranno loro fatte in modo casuale sulla rete DNS.
+E verifica che le configurazioni delle zone DNS dei diversi server siano configurate correttamente per funzionare tutte insieme. Nella maggior parte dei casi, tutti i server DNS saranno operativi. Saranno tutti in grado di rispondere alle richieste che verranno loro fatte in modo casuale sulla rete DNS.
 
 > [!warning]
 >
-> 1. Presta particolare attenzione se decidi di utilizzare quest’ultima opzione. richiede infatti conoscenze avanzate sul funzionamento della rete DNS, dei server DNS e delle zone DNS.
->
-> 2. L'opzione [DNSSEC](/pages/web_cloud/domains/dns_dnssec) deve essere disattivata per combinare l'utilizzo dei propri server DNS con i DNS di OVHcloud.
->
+> 1. Presta particolare attenzione se decidi di utilizzare quest’ultima opzione. richiede infatti conoscenze avanzate sul funzionamento della rete DNS, dei server DNS e delle zone DNS.<br>
+> 2. L'opzione [DNSSEC](/pages/web_cloud/domains/dns_dnssec) deve essere disattivata per combinare l'utilizzo dei propri server DNS con i DNS di OVHcloud.<br>
 > 3. È importante non mescolare un gruppo di server DNS di OVHcloud con un altro gruppo di server DNS di OVHcloud. Ad esempio, *dns19.ovh.net* e *ns19.ovh.net* corrispondono a un gruppo di server DNS di OVHcloud, vanno di pari passo e sono sincronizzati. In OVHcloud, i gruppi di server DNS sono identificabili tramite il numero presente nei nomi dei server. Due server DNS OVHcloud fanno parte dello stesso gruppo di server DNS quando condividono lo stesso numero. *dns19.ovh.net* e *ns19.ovh.net*.
 
 > [!success]

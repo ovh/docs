@@ -161,10 +161,8 @@ Należy jednak sprawdzić, czy konfiguracje stref DNS na poszczególnych serwera
 
 > [!warning]
 >
-> 1. Zachowaj ostrożność, jeśli zdecydujesz się skorzystać z tej drugiej opcji. Wymaga to zaawansowanej wiedzy na temat działania sieci DNS, serwerów DNS i stref DNS.
->
-> 2. Opcja [DNSSEC](/pages/web_cloud/domains/dns_dnssec) musi zostać wyłączona, aby połączyć korzystanie z Twoich własnych serwerów DNS z serwerami DNS OVHcloud.
->
+> 1. Zachowaj ostrożność, jeśli zdecydujesz się skorzystać z tej drugiej opcji. Wymaga to zaawansowanej wiedzy na temat działania sieci DNS, serwerów DNS i stref DNS.<br>
+> 2. Opcja [DNSSEC](/pages/web_cloud/domains/dns_dnssec) musi zostać wyłączona, aby połączyć korzystanie z Twoich własnych serwerów DNS z serwerami DNS OVHcloud.<br>
 > 3. Upewnij się, że nie łączysz grupy serwerów DNS OVHcloud z innymi grupami serwerów DNS OVHcloud. Na przykład *dns19.ovh.net* i *ns19.ovh.net* odpowiadają grupie serwerów DNS OVHcloud, idą w parze i są synchronizowane. W OVHcloud grupy serwerów DNS są identyfikowane przy użyciu numeru obecnego w nazwach serwerów. Dwa serwery DNS OVHcloud należą do tej samej grupy serwerów DNS, jeśli dzielą one ten sam numer. Na przykład *dns19.ovh.net* i *ns19.ovh.net*.
 
 > [!success]

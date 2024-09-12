@@ -157,10 +157,8 @@ However, please ensure that the DNS zone configurations on the various DNS serve
 
 > [!warning]
 >
-> 1. Be careful if you decide to use the latter option. This is because it requires advanced knowledge of how the DNS network, DNS servers and DNS zones work.
->
-> 2. The [DNSSEC](/pages/web_cloud/domains/dns_dnssec) option must be disabled to combine the use of your own DNS servers with OVHcloud DNS.
->
+> 1. Be careful if you decide to use the latter option. This is because it requires advanced knowledge of how the DNS network, DNS servers and DNS zones work.<br>
+> 2. The [DNSSEC](/pages/web_cloud/domains/dns_dnssec) option must be disabled to combine the use of your own DNS servers with OVHcloud DNS.<br>
 > 3. Please ensure that you do not mix an OVHcloud DNS server group with another OVHcloud DNS server group. For example, *dns19.ovh.net* and *ns19.ovh.net* correspond to a group of OVHcloud DNS servers, they go hand-in-hand, and they are synchronized. At OVHcloud, DNS server groups are identified using the number in the server names. Two OVHcloud DNS servers are part of the same DNS server group, as long as they share the same number. For example, *dns19.ovh.net* and *ns19.ovh.net*.
 
 > [!success]

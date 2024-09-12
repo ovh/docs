@@ -26,9 +26,9 @@ Para más información, consulte nuestras guías "[Todo sobre los servidores DNS
 
 > [!primary]
 >
-> Un **agente registrador** es una organización autorizada a vender dominios. OVHcloud forma parte de estos **agentes registradores**.
+> Un **registrar** es una organización autorizada a vender dominios. OVHcloud forma parte de estos **registrars**.
 >
-> Si el dominio no está registrado con OVHcloud, deberá modificar los servidores DNS en el **agente registrador** en el que esté registrado el dominio.
+> Si su dominio no está registrado con OVHcloud, deberá modificar los servidores DNS en el **registrar** en el que esté registrado su dominio.
 >
 
 ## Procedimiento

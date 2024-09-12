@@ -10,7 +10,7 @@ updated: 2024-09-16
 
 ## Objetivo
 
-Las siglas **DNS** (**D**omain **N**ame **S**ystem), son un conjunto de elementos (servidores DNS, zonas DNS, etc.) que permiten asociar un dominio a una dirección IP.
+La sigla **DNS** (**D**omain **N**ame **S**ystem) es un conjunto de elementos (servidores DNS, zonas DNS, etc.) que permite asociar un dominio a una dirección IP.
 
 Para más información, consulte nuestras guías "[Todo sobre los servidores DNS](/pages/web_cloud/domains/dns_server_general_information)" y "[Todo sobre la zona DNS](/pages/web_cloud/domains/dns_zone_general_information)".
 
@@ -26,9 +26,9 @@ Para más información, consulte nuestras guías "[Todo sobre los servidores DNS
 
 > [!primary]
 >
-> Un **agente registrador** es una organización autorizada a vender dominios. OVHcloud forma parte de estos **agentes registradores**.
+> Un **registrar** es una organización autorizada a vender dominios. OVHcloud forma parte de estos **registrars**.
 >
-> Si el dominio no está registrado con OVHcloud, deberá modificar los servidores DNS en el **agente registrador** en el que esté registrado el dominio.
+> Si su dominio no está registrado con OVHcloud, deberá modificar los servidores DNS en el **registrar** en el que esté registrado su dominio.
 >
 
 ## Procedimiento
@@ -161,10 +161,8 @@ No obstante, asegúrese de que las configuraciones de las zonas DNS de los disti
 
 > [!warning]
 >
-> 1. Tenga cuidado si decide utilizar esta última opción. Para ello, necesita conocimientos avanzados sobre el funcionamiento de la red DNS, los servidores DNS y las zonas DNS.
->
-> 2. Debe desactivar la opción [DNSSEC](/pages/web_cloud/domains/dns_dnssec) para combinar el uso de sus propios servidores DNS con los DNS de OVHcloud.
->
+> 1. Tenga cuidado si decide utilizar esta última opción. Para ello, necesita conocimientos avanzados sobre el funcionamiento de la red DNS, los servidores DNS y las zonas DNS.<br>
+> 2. Debe desactivar la opción [DNSSEC](/pages/web_cloud/domains/dns_dnssec) para combinar el uso de sus propios servidores DNS con los DNS de OVHcloud.<br>
 > 3. No mezcle un grupo de servidores DNS de OVHcloud con otro grupo de servidores DNS de OVHcloud. Por ejemplo, *dns19.ovh.net* y *ns19.ovh.net* corresponden a un grupo de servidores DNS de OVHcloud, van de la mano y están sincronizados. En OVHcloud, los grupos de servidores DNS se identifican mediante el número que figura en los nombres de los servidores. Dos servidores DNS de OVHcloud forman parte de un mismo grupo de servidores DNS desde el momento en que comparten el mismo número. Por ejemplo, *dns19.ovh.net* y *ns19.ovh.net*.
 
 > [!success]
