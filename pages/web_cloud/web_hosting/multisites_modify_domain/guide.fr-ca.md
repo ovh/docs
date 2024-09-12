@@ -98,12 +98,6 @@ Cochez/décochez cette case afin d'activer/désactiver l'option CDN pour votre n
 
 Retrouvez plus d'informations sur les options/offres CDN disponibles dans notre documentation dédiée « [Accélérer mon site web en utilisant le CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn) ».
 
-##### L'option « IP du pays »
-
-Cette option est principalement utilisée pour les sites web dont le public cible est situé à l'étranger. Cela permet d'améliorer le référencement SEO du site web dans le pays choisi.
-
-Retrouvez plus d'informations sur cette option dans notre documentation dédiée « [Geolocaliser votre site web dans un pays spécifique](/pages/web_cloud/web_hosting/multisites_geolocation) ».
-
 ##### L'option « Activer le firewall »
 
 Cette option permet de filtrer les requêtes entrantes pour protéger votre hébergement web des attaques les plus courantes.
@@ -137,8 +131,6 @@ Si, pour les options **SSL**, **CDN**, **IP du pays** et **logs séparés**, les
 [Gérer un certificat SSL sur son hébergement web](/pages/web_cloud/web_hosting/ssl_on_webhosting).
 
 [Accélérer mon site web en utilisant le CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn).
-
-[Géolocaliser votre site web dans un pays spécifique](/pages/web_cloud/web_hosting/multisites_geolocation).
 
 [Activer le pare-feu applicatif](/pages/web_cloud/web_hosting/multisites_activating_application_firewall).
 
