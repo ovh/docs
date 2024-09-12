@@ -202,7 +202,7 @@ So now if you point your browser to `http://$INGRESS_URL/`, you will see your Wo
 
 ![WordPress using Ingress](images/installing-ingress-01.png){.thumbnail}
 
-### Go further
+## Go further
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assistance on your specific use case or project.
 
