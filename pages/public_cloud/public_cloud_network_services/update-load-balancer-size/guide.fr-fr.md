@@ -1,5 +1,5 @@
 ---
-title: Modifier la taille de votre Load Balancer sur OVHcloud via l’interface Horizon  
+title: Modifier la taille de votre Load Balancer via l’interface Horizon  
 excerpt: Découvrez comment ajuster la taille de votre Load Balancer sur OVHcloud en utilisant l'interface Horizon.  
 updated: 2024-09-12  
 ---

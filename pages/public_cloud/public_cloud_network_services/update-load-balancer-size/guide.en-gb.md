@@ -1,5 +1,5 @@
 ---
-title: 'Update Load Balancer Size on OVHcloud via Horizon Interface'  
+title: 'Updating a Load Balancer size via the Horizon interface'
 excerpt: 'Learn how to update the size of your load balancer on OVHcloud using the Horizon interface.'  
 updated: 2024-09-12
 ---
