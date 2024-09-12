@@ -1904,6 +1904,7 @@
             + [Load Balancer API Quick Reference](network/load_balancer/use_api_reference)
             + [Details of API functions](network/load_balancer/use_api_details)
             + [Order a free SSL certificate](network/load_balancer/order_freecertificate)
+            + [Update Load Balancer size on OVHcloud via Horizon Interface](network/load_balancer/update-load-lalancer-size)
             + [Load Balancer FAQ](network/load_balancer/create_faq)
         + [Use cases](network-load-balancer-use-cases)
             + [Deploying a blue-green infrastructure](network/load_balancer/case_blue_green)
