@@ -122,7 +122,7 @@ Cela peut être, par exemple :
 > - « Your own domain (or just an @) » IN NS ns3.dns-server.tld.
 >
 
-Pour renseigner l'un de vos propres serveurs DNS, remplissez les 2 formulaires de l'encadré comme suit :
+Pour renseigner l'un de vos propres serveurs DNS, remplissez les 2 formulaires de l'encadré comme indiqué ci-dessous :
 
 - `Serveur DNS` : nom du serveur DNS à appliquer à votre nom de domaine.
 - `IP associée (facultatif)` : adresse IP (IPv4 ou IPv6) du serveur DNS renseigné. Vous ne pouvez renseigner qu'**une seule adresse IP** dans ce formulaire.
