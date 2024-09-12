@@ -133,7 +133,7 @@ Um einen Ihrer eigenen DNS Server anzugeben, füllen Sie die 2 Formulare in der 
 
 > [!warning]
 >
-> Jeder Eingabeframe (sichtbar im vorherigen Bildschirmfoto) darf jeweils nur **einen** DNS-Server enthalten. Ein DNS-Server entspricht also einem Kästchen.
+> Jeder Eingabeframe (sichtbar im vorherigen Bildschirmfoto) darf jeweils nur ****einen** DNS-Server enthalten. Ein DNS-Server entspricht also einem Kästchen.
 >
 > Ein Informationshinweis auf blauem Hintergrund über dem ersten Kasten zeigt den Bereich der DNS-Server an, die Sie für Ihren Domainnamen deklarieren können. Diese Werte variieren je nach Domainendung.
 
@@ -185,7 +185,7 @@ Um einen Ihrer eigenen DNS Server anzugeben, füllen Sie die 2 Formulare in der 
 
 > [!warning]
 >
-> Jeder Eingabeframe (sichtbar im vorherigen Bildschirmfoto) darf jeweils nur einen*** DNS-Server enthalten. Ein DNS-Server entspricht also einem Kästchen.
+> Jeder Eingabeframe (sichtbar im vorherigen Bildschirmfoto) darf jeweils nur **einen** DNS-Server enthalten. Ein DNS-Server entspricht also einem Kästchen.
 >
 > Ein Informationshinweis auf blauem Hintergrund über dem ersten Kasten zeigt den Bereich der DNS-Server an, die Sie für Ihren Domainnamen deklarieren können. Diese Werte variieren je nach Domainendung.
 
