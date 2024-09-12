@@ -129,7 +129,7 @@ Pour renseigner l'un de vos propres serveurs DNS, remplissez les 2 formulaires d
 
 > [!warning]
 >
-> Chaque encadré de saisie (visible dans la capture écran précédente) ne peut contenir qu'**un seul** serveur DNS à la fois. Un serveur DNS correspond donc à un encadré.
+> Chaque encadré de saisie (visible dans la capture d'écran précédente) ne peut contenir qu'**un seul** serveur DNS à la fois. Un serveur DNS correspond donc à un encadré.
 >
 > De plus, une note d'information sur fond bleu, située au dessus du premier encadré, indique l'intervalle de serveurs DNS que vous pouvez déclarer pour votre nom de domaine. Ces valeurs varient selon l'extension du nom de domaine.
 
