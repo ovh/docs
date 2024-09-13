@@ -203,7 +203,7 @@ Once the modifications are made, the result of our example will be the following
 
 ```bash
 $TTL 3600
-@	IN SOA dnsX1.ovh.ca. tech.ovh.net. (2023071701 86400 3600 3600000 300)
+@	IN SOA dnsX1.ovh.ca. tech.ovh.ca. (2023071701 86400 3600 3600000 300)
                   IN NS     dns1.domain.tld.
                   IN NS     dns2.domain.tld.
 ```

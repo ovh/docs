@@ -53,8 +53,8 @@ Recupere los *servidores DNS* y conserve **todas** sus direcciones IPv4 asociada
 
 En el ejemplo anterior, el dominio **domain.tld** utiliza actualmente los siguientes **servidores DNS**:
 
-- **dnsX1.ovh.net** asociado a la IPv4 *203.0.113.0* y a la IPv6 *2001:db8:1:1b00:203:0:113:0*;
-- **dnsX2.ovh.net** asociado a la IPv4 *203.0.113.1* y a la IPv6 *2001:db8:1:1b00:203:0:113:1*.
+- **dnsX1.ovh.ca** asociado a la IPv4 *203.0.113.0* y a la IPv6 *2001:db8:1:1b00:203:0:113:0*;
+- **dnsX2.ovh.ca** asociado a la IPv4 *203.0.113.1* y a la IPv6 *2001:db8:1:1b00:203:0:113:1*.
 
 Si necesita más información, consulte [nuestro tutorial sobre la herramienta Zonemaster](/pages/web_cloud/domains/dns_zonemaster).
 
@@ -96,13 +96,13 @@ Introduzca la información solicitada en la ventana que se abre en su pantalla:
 
 En la imagen anterior, tomando como ejemplo el [etapa 1](#step1), el "Glue" que queremos añadir aquí (a partir del dominio *domain.tld*) es **dns1.domain.tld**. 
 
-Para este "Glue", se indican como direcciones IP del *servidor DNS de destino*, las direcciones IP *203.0.113.0* (IPv4) y *2001:db8:1:1b00:203:0:113:0* (IPv6). Estas IP corresponden a uno de los dos servidores DNS que se utilizan actualmente para *domain.tld* (**dnsX1.ovh.net**). 
+Para este "Glue", se indican como direcciones IP del *servidor DNS de destino*, las direcciones IP *203.0.113.0* (IPv4) y *2001:db8:1:1b00:203:0:113:0* (IPv6). Estas IP corresponden a uno de los dos servidores DNS que se utilizan actualmente para *domain.tld* (**dnsX1.ovh.ca**). 
 
-Se añade este "Glue" para que **dns1.domain.tld** pueda, al final, sustituir el nombre de servidor DNS **dnsX1.ovh.net** actualmente utilizado por el nombre de dominio *domain.tld*.
+Se añade este "Glue" para que **dns1.domain.tld** pueda, al final, sustituir el nombre de servidor DNS **dnsX1.ovh.ca** actualmente utilizado por el nombre de dominio *domain.tld*.
 
 Una vez que haya introducido toda la información, haga clic en el botón `Siguiente`{.action}, lea la información mostrada y haga clic en `Aceptar`{.action}. Repita esta operación tantas veces como sea necesario, en función del número de servidores DNS utilizados por su dominio.
 
-En nuestro ejemplo, deberá repetir la operación para crear el "Glue" **dns2.domain.tld**. Este sustituirá posteriormente al servidor DNS **dnsX2.ovh.net** asociado actualmente a las IPv4 *203.0.113.1* e IPv6 *2001:db8:1:1b00:203:0:113:1*
+En nuestro ejemplo, deberá repetir la operación para crear el "Glue" **dns2.domain.tld**. Este sustituirá posteriormente al servidor DNS **dnsX2.ovh.ca** asociado actualmente a las IPv4 *203.0.113.1* e IPv6 *2001:db8:1:1b00:203:0:113:1*
 
 ### Etapa 3: crear los registros DNS de tipo A y AAAA correspondientes a los DNS personalizados <a name="step3"></a>
 
@@ -120,14 +120,14 @@ Esta operación se realiza desde el panel que le ofrezca el proveedor que gestio
 > En todos los casos, es necesario un plazo de propagación de 4 a 24 horas para que el cambio de la zona DNS se aplique en toda la red DNS. Le recomendamos que espere este período de tiempo antes de continuar.
 >
 
-Siguiendo con el ejemplo anterior, los registros "Glue" que queremos añadir (del dominio *domain.tld*) son **dns1.domain.tld** y **dns2.domain.tld**. El objetivo es sustituir los servidores DNS actuales **dnsX1.ovh.net** y **dnsX2.ovh.net**.
+Siguiendo con el ejemplo anterior, los registros "Glue" que queremos añadir (del dominio *domain.tld*) son **dns1.domain.tld** y **dns2.domain.tld**. El objetivo es sustituir los servidores DNS actuales **dnsX1.ovh.ca** y **dnsX2.ovh.ca**.
 
 Por lo tanto, se añaden los siguientes registros a la zona DNS activa del dominio *domain.tld*:
 
- - un registro DNS de tipo *A* para el *subdominio* **dns1.domain.tld** hacia la IP *203.0.113.0* (IPv4 del servidor DNS **dnsX1.ovh.net**);
- - un registro DNS de tipo *AAAA* para el *subdominio* **dns1.domain.tld** hacia la IP *2001:db8:1:1b00:203:0:113:0* (IPv6 del servidor DNS **dnsX1.ovh.net**);
- - un registro DNS de tipo *A* para el *subdominio* **dns2.domain.tld** hacia la IP *203.0.113.1* (IPv4 del servidor DNS **dnsX2.ovh.net**);
- - Un registro DNS de tipo *AAAA* para el *subdominio* **dns2.domain.tld** hacia la IP *2001:db8:1:1b00:203:0:113:1* (IPv6 del servidor DNS **dnsX2.ovh.net**).
+ - un registro DNS de tipo *A* para el *subdominio* **dns1.domain.tld** hacia la IP *203.0.113.0* (IPv4 del servidor DNS **dnsX1.ovh.ca**);
+ - un registro DNS de tipo *AAAA* para el *subdominio* **dns1.domain.tld** hacia la IP *2001:db8:1:1b00:203:0:113:0* (IPv6 del servidor DNS **dnsX1.ovh.ca**);
+ - un registro DNS de tipo *A* para el *subdominio* **dns2.domain.tld** hacia la IP *203.0.113.1* (IPv4 del servidor DNS **dnsX2.ovh.ca**);
+ - Un registro DNS de tipo *AAAA* para el *subdominio* **dns2.domain.tld** hacia la IP *2001:db8:1:1b00:203:0:113:1* (IPv6 del servidor DNS **dnsX2.ovh.ca**).
 
 Esperábamos el tiempo de la propagación DNS.
 
@@ -160,7 +160,7 @@ Siga los pasos que se indican y, si necesita ayuda, consulte nuestra guía «[Ca
 > Es necesario un plazo de propagación de 24 a 48 horas para que el cambio de los servidores DNS se aplique en toda la red DNS. Le recomendamos que espere este período de tiempo antes de continuar.
 >
 
-En nuestro ejemplo de personalización de los servidores DNS del nombre de dominio *domain.tld*, sustituimos el servidor DNS **dnsX1.ovh.net** por **dns1.domain.tld** y el servidor DNS **dnsX2.ovh.net** por **dns2.domain.tld**. A continuación, esperamos a que finalice la propagación DNS.
+En nuestro ejemplo de personalización de los servidores DNS del nombre de dominio *domain.tld*, sustituimos el servidor DNS **dnsX1.ovh.ca** por **dns1.domain.tld** y el servidor DNS **dnsX2.ovh.ca** por **dns2.domain.tld**. A continuación, esperamos a que finalice la propagación DNS.
 
 ### Etapa 5: sustituir los registros NS en la zona DNS activa del dominio
 
@@ -196,19 +196,19 @@ En él se observan los siguientes elementos:
 
 - el primer valor numérico de la línea *SOA* es el siguiente: *2023071700*;
 - hay dos registros de tipo *NS* para el dominio *domain.tld*;
-- los registros de tipo *NS* siguen dirigidos a los dos servidores DNS **dnsX1.ovh.net** y **dnsX2.ovh.net**.
+- los registros de tipo *NS* siguen dirigidos a los dos servidores DNS **dnsX1.ovh.ca** y **dnsX2.ovh.ca**.
 
 Para finalizar la personalización de los servidores DNS para el dominio *domain.tld*, es necesario:
 
 - incrementar en `1` el primer valor numérico de la línea *SOA*: *202307170**1*** (tenga en cuenta que si el primer valor numérico fuera el siguiente:*2023071704*, se incrementaría siempre en `1` y se obtendría el siguiente resultado: *202307170**5*** );
-- sustituir el destino **dnsX1.ovh.net.** por **dns1.domain.tld.** únicamente para la línea que comienza por **IN NS**;
-- sustituir el destino **dnsX2.ovh.net.** por **dns2.domain.tld.** sólo para la línea que comienza por **IN NS**.
+- sustituir el destino **dnsX1.ovh.ca.** por **dns1.domain.tld.** únicamente para la línea que comienza por **IN NS**;
+- sustituir el destino **dnsX2.ovh.ca.** por **dns2.domain.tld.** sólo para la línea que comienza por **IN NS**.
 
 Una vez realizados los cambios, el resultado de nuestro ejemplo será el siguiente:
 
 ```bash
 $TTL 3600
-@	IN SOA dnsX1.ovh.net. tech.ovh.net. (2023071701 86400 3600 3600000 300)
+@	IN SOA dnsX1.ovh.ca. tech.ovh.ca. (2023071701 86400 3600 3600000 300)
                   IN NS     dns1.domain.tld.
                   IN NS     dns2.domain.tld.
 ```
