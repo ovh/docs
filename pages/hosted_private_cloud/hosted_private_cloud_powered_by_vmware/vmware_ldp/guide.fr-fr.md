@@ -25,10 +25,10 @@ updated: 2024-09-13
 > [!primary]
 > Prenez en compte que l'activation du **transfert de logs (Log Forwarding)** est gratuite.
 >
-> Cependant, vous devez pour assurer le bon fonctionnement de votre cluster dédié Hosted Private Cloud, des charges de stockage peuvent s'appliquer avec le temps selon le tarif standard. Ainsi qu'avec l'utilisation du catalogue de services managés LDP (Graylogs, OpenSearch etc..).
+> Cependant, vous devez pour assurer le bon fonctionnement de votre cluster dédié VMware vSphere on OVHcloud, des charges de stockage peuvent s'appliquer avec le temps selon le tarif standard. Ainsi qu'avec l'utilisation du catalogue de services managés LDP (Graylogs, OpenSearch etc..).
 > 
 
-L'activation du transfert des logs vers un stream Logs Data Platform permet de collecter, d'indexer et d'analyser les données d'un service Hosted Private Cloud VMware on OVHcloud. Peu importe leur origine, cette plateforme offre une diversité de moyens d'accès en fonction du protocole, du niveau de sécurité et du format désiré. Les données recueillies peuvent être aisément exploitées grâce aux multiples API et interfaces web mises à disposition.
+L'activation du transfert des logs vers un stream Logs Data Platform permet de collecter, d'indexer et d'analyser les données d'un service VMware vSphere on OVHcloud. Peu importe leur origine, cette plateforme offre une diversité de moyens d'accès en fonction du protocole, du niveau de sécurité et du format désiré. Les données recueillies peuvent être aisément exploitées grâce aux multiples API et interfaces web mises à disposition.
 
 Pour plus d'informations concernant les caractéristiques techniques de Logs Data Platform (ports, protocoles, etc.), nous vous invitons à consulter le guide « [Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) » (EN).
 
@@ -38,7 +38,7 @@ Pour plus d'informations concernant les caractéristiques techniques de Logs Dat
 
 Un kind est un « type » de logs que votre produit génère.
 
-Ils sont les types de logs que vous voulez transférer à votre stream Logs Data Platform. Voici des exemples qui peuvent être disponibles en fonction des composants de votre architecture Hosted Private Cloud VMware on OVHcloud :
+Ils sont les types de logs que vous voulez transférer à votre stream Logs Data Platform. Voici des exemples qui peuvent être disponibles en fonction des composants de votre architecture VMware on OVHcloud :
 
 - `esxi` : Seulement certaines applications sont redirigées.
 - `nsxtEdge` : Tout est redirigé, pas de filtre.
@@ -96,7 +96,7 @@ Voici un exemple de retour, si l'option exigée pour fonctionner n'est pas activ
 ### Étape 2 - Création d'un stream Log Data Platform
 
 > [!primary]
-> Les ressources Hosted Private Cloud et Logs Data Platform doivent bien appartenir au même compte OVHcloud.
+> Les ressources VMware on OVHcloud et Logs Data Platform doivent bien appartenir au même compte OVHcloud.
 >
 > Vos journaux sont manipulés à des fins de sécurité et d'observabilité dans les clusters privés Logs Data Platform. Pour plus d'informations sur la tarification LDP, consultez la page LDP de [ce lien](/links/manage-operate/ldp).
 >
@@ -148,7 +148,7 @@ Retour :
 }
 ```
 
-Récupérez le `streamId` et sauvegardez-le (copier-coller) dans un éditeur de texte. Vous en aurez besoin pour activer votre souscription Hosted Private Cloud avec le stream temporaire Logs Data Platform en question.
+Récupérez le `streamId` et sauvegardez-le (copier-coller) dans un éditeur de texte. Vous en aurez besoin pour activer votre souscription VMware on OVHcloud avec le stream temporaire Logs Data Platform en question.
 
 Nous allons voir dans l'étape suivante comment souscrire votre abonnement vSphere managé à un stream LDP temporaire.
 
@@ -164,22 +164,22 @@ Nous allons voir dans l'étape suivante comment souscrire votre abonnement vSphe
 
 #### Via l'espace client OVHcloud
 
-Cette fonctionnalité n'est pas encore disponible dans la section Hosted Private Cloud de l'espace client OVHcloud.
+Cette fonctionnalité n'est pas encore disponible dans la section VMware on OVHcloud de l'espace client.
 
 #### Via l’API OVHcloud <a name="activation"></a>
 
-Utilisez les appels API suivants pour établir la liste des abonnements de votre compte Hosted Private Cloud.
+Utilisez les appels API suivants pour établir la liste des abonnements de votre compte VMware on OVHcloud.
 
 **Référencement des appels API**
 
-| **Méthode** | **Chemin**                                                     | **Description**                                                     |
-|:-----------:|:---------------------------------------------------------------|:--------------------------------------------------------------------|
-|     GET     | /dedicatedCloud/{serviceName}/log/kind                         | Types de logs pour votre service Hosted Private Cloud               |
-|     GET     | /dedicatedCloud/{serviceName}/log/kind/{name}                  | Obtenir les propriétés de cet objet                                 |
-|     GET     | /dedicatedCloud/{serviceName}/log/subscription                 | Inscrivez-vous pour votre service Hosted Private Cloud              |
-|    POST     | /dedicatedCloud/{serviceName}/log/subscription                 | Créez un abonnement log pour votre service Hosted Private Cloud     |
-|     GET     | /dedicatedCloud/{serviceName}/log/subscription                 | Obtenir les propriétés de cet objet                                 |
-|   DELETE    | /dedicatedCloud/{serviceName}/log/subscription                 | Supprimer un abonnement log pour votre service Hosted Private Cloud |
+| **Méthode** | **Chemin**                                                     | **Description**                                |
+|:-----------:|:---------------------------------------------------------------|:-----------------------------------------------|
+|     GET     | /dedicatedCloud/{serviceName}/log/kind                         | Types de logs pour votre service               |
+|     GET     | /dedicatedCloud/{serviceName}/log/kind/{name}                  | Obtenir les propriétés de cet objet            |
+|     GET     | /dedicatedCloud/{serviceName}/log/subscription                 | Inscrivez-vous pour votre service              |
+|    POST     | /dedicatedCloud/{serviceName}/log/subscription                 | Créez un abonnement log pour votre service     |
+|     GET     | /dedicatedCloud/{serviceName}/log/subscription                 | Obtenir les propriétés de cet objet            |
+|   DELETE    | /dedicatedCloud/{serviceName}/log/subscription                 | Supprimer un abonnement log pour votre service |
 
 Pour récupérer le **streamId** de votre compte LDP, consultez le guide « [Premiers pas Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) ».
 
@@ -249,7 +249,7 @@ Vous pouvez vous référer à ce guide pour retrouver comment administrer vos fl
 
 Exemples de retours pour différents Kind :
 
-**NSX-T Edge**
+**Kind name : NSX-T Edge**
 
 ```json
 {
@@ -269,7 +269,7 @@ Exemples de retours pour différents Kind :
 }
 ```
 
-**NSX-T Manager**
+**Kind name : NSX-T Manager**
 
 ```json
 {
@@ -290,7 +290,7 @@ Exemples de retours pour différents Kind :
 }
 ```
 
-**VCSA**
+**Kind name : VCSA**
 
 ```json
 {
@@ -307,7 +307,7 @@ Exemples de retours pour différents Kind :
 }
 ```
 
-**ESXI**
+**Kind name : ESXI**
 
 ```json
 {
@@ -326,9 +326,9 @@ Exemples de retours pour différents Kind :
 ### Étape 5 - Désactiver votre abonnement de souscription Log Data Plateform
 
 > [!primary]
-> La résiliation de votre abonnement Hosted Private Cloud LDP ne signifie pas la suppression de vos streams. Le stockage consommé au moment de la désactivation reste soumis à facturation.
+> La résiliation de votre abonnement Log Data Platform VMware on OVHcloud ne signifie pas la suppression de vos streams. Le stockage consommé au moment de la désactivation reste soumis à facturation.
 >
-> **Note** : Il n'est possible (à ce jour) que de supprimer un stream dans son intégralité (en entier) et non certains inputs granulairement.
+> **Note** : Il n'est possible (à ce jour) que de supprimer un stream dans son intégralité (en entier) et non certains inputs granulaires.
 >
 
 > [!api]
@@ -339,7 +339,7 @@ Exemples de retours pour différents Kind :
 > **Paramètres** :
 >
 > - `serviceName` : Nom de service de votre vSphere managé, e.g `pcc-XXX-XXX-XXX-XXX`.
-> - `subscriptionId` : L'ID de souscription de votre abonnement LDP, e.g `c83600f2-e0fb-44c8-8218-c721e3e9efaf`.
+> - `subscriptionId` : Identifiant de souscription de votre abonnement LDP, e.g `8e729f36-3e5d-4e08-9723-62b2b39c857a`.
 >
 
 Retour :
@@ -364,10 +364,10 @@ Vous obtiendrez un `operationId` qui est l'identifiant qui permet de confirmer q
 
 Vous pouvez consulter ces guides pour profiter des fonctionnalités Logs Data Platform Hosted Private Cloud :
 
-- [Logs Data Platform - Documentation de premiers pas](/products/observability-logs-data-platform-getting-started)) (EN)
-- [Visualiser vos logs dans un tableau de bord Grafana](/pages/manage_and_operate/observability/logs_data_platform/visualization_grafana) (EN)
-- [Utiliser la cli "LDP Tail" pour regarder en live vos logs Hosted Private Cloud](/pages/manage_and_operate/observability/logs_data_platform/cli_ldp_tail) (EN)
-- [Pousser les logs depuis Apache vers LDP](/pages/manage_and_operate/observability/logs_data_platform/ingestion_apache) (EN)
+- [Logs Data Platform - Documentation de premiers pas (EN)](/products/observability-logs-data-platform-getting-started))
+- [Visualiser vos logs dans un tableau de bord Grafana (EN)](/pages/manage_and_operate/observability/logs_data_platform/visualization_grafana)
+- [Utiliser la cli "LDP Tail" pour regarder en live vos logs (EN)](/pages/manage_and_operate/observability/logs_data_platform/cli_ldp_tail)
+- [Pousser les logs depuis Apache vers LDP (EN)](/pages/manage_and_operate/observability/logs_data_platform/ingestion_apache)
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
