@@ -1,12 +1,12 @@
 ---
-title: "Téléversement de fichiers depuis le Datastore VMware vSphere"
+title: "Téléverser des fichiers dans le datastore VMware vSphere on OVHcloud"
 excerpt: "Découvrez comment utiliser l'outil de téléversement de fichiers du Datastore afin de pouvoir importer des données dans votre VMware vSphere on OVHcloud"
-updated: 2024-09-11
+updated: 2024-09-13
 ---
 
 ## Objectif
 
-**L'objectif est de téléverser des fichiers (ISO, VMDK, OVA etc..) dans un répértoire du Datastore avec le client HTML VMware vSphere on OVHcloud.**
+**L'objectif est de téléverser des fichiers dans un dossier de votre banque de données depuis le client HTML VMware vSphere on OVHcloud.**
 
 ## Prérequis
 
@@ -21,15 +21,9 @@ updated: 2024-09-11
 > Ce guide remplace la procédure ci-joins qui est obsolète : [Se connecter en SFTP ](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/sftp_connexion)
 >
 
-### Étape 1 - Accéder à la banque de données
-
-#### Via l'espace client
+### Étape 1 - Accéder à la banque de données (datastore)
 
 Suivez le guide suivant pour vous connecter l'interface web vSphere : [Se connecter à la console Web vSphere on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vsphere_interface_connexion)
-
-### Étape 2 - Upload de fichiers (ISO) dans un Datastore
-
-**Comment accéder au Datastore** ?
 
 Vous devez ensuite accéder aux repertoires sur lequel vous voulez stocker vos fichiers (ISO par exemple). L'objectif étant de créer une arboréscence afin de retrouver facilement vos éléments au sein de votre vSphere managé.
 
@@ -39,70 +33,96 @@ Vous disposez de 2 façons d'y accéder :
 
 1. Depuis `Inventaire` :
 
-|                                   **Image**                                    | **Texte**                                                                     |
-|:------------------------------------------------------------------------------:|:------------------------------------------------------------------------------|
-|  ![vSphere Datastore Upload 01](images/datastore_inventory_2.png){.thumbnail}  | - Cliquez sur `Inventaire`{.action}                                           |
-|        ![vSphere Datastore Upload 01](images/datastore.png){.thumbnail}        | - Puis cliquez sur `Banques de données`{.action} et sur `Datastores`{.action} |
+|                                  **Images**                                  | **Étapes**                                                                    |
+|:----------------------------------------------------------------------------:|:------------------------------------------------------------------------------|
+| ![vSphere Datastore Upload 01](images/datastore_inventory_2.png){.thumbnail} | - Cliquez sur `Inventaire`{.action}                                           |
+|       ![vSphere Datastore Upload 01](images/datastore.png){.thumbnail}       | - Puis cliquez sur `Banques de données`{.action} et sur `Datastores`{.action} |
 
-Vous retrouverez l'ensemble de vos Datastores listés.
+Vous retrouverez l'ensemble de vos banques de données (datastores) listées.
 
 ![vSphere Datastore Inventory](images/inventory_datastore.png){.thumbnail}
 
-Vous allez vous retrouver dans la section `Fichier` ou vous pourrez importer des données dans vos Datastores.
+### Étape 2 - Téléverser des fichiers
+
+Vous allez vous retrouver dans la section `Fichiers` ou vous pourrez importer des fichiers dans votre banque de données.
 
 Cliquez ensuite sur `TÉLÉCHARGER DES FICHIERS`{.action} pour sélectionner le fichier à téléverser depuis votre machine local (ISO ou autres).
 
+Localisez l'élément à téléverser depuis votre ordinateur local (un fichier `XXX.iso`) et cliquez sur `Ouvrir`{.action}
+
+Le fichier ISO se téléverse automatiquement sans validation dans le dossier (si il y en a un) de votre banque de données sélectionnée.
+
+(Facultatif) Actualisez l'explorateur de fichiers de la banque de données pour afficher le fichier téléversé dans la liste.
+
 ![Datastore Upload 1](images/datastore_4.png){.thumbnail}
+
+Vous pouvez ainsi lancer cette ISO depuis un périphérique CD/DVD au sein de vote VM et lancer l'installation de l'OS en suivant le processus d'installation. Il est cependant recommandé d'utiliser des modèles de déploiement OVHcloud ou des clones de VM templaté par vos soins.
 
 2. Depuis `Listes d'inventaires globaux` :
 
 Qui vous renvoie aussi ensuite à l'interface `Fichers` de téléversement (libre à vous de choisir celle qui vous convient le mieux) :
 
-|                                         **Image**                                         | **Texte**                                             |
+|                                        **Images**                                         | **Étapes**                                            |
 |:-----------------------------------------------------------------------------------------:|:------------------------------------------------------|
-| ![vSphere Global Inventory](images/global_inventory.png){.thumbnail}               | - Cliquez sur `Listes d'inventaires globaux`{.action} |
+|         ![vSphere Global Inventory](images/global_inventory.png){.thumbnail}              | - Cliquez sur `Listes d'inventaires globaux`{.action} |
 | ![vSphere Global Inventory Datastore](images/global_inventory_datastores.png){.thumbnail} | - Puis sur `Banques de données`{.action}              |             
 
 ![vSphere Global Inventory Datastore](images/global_inventory_datastores_2.png){.thumbnail}
 
 Cliquez également sur le `Datastore` souhaité.
 
-Vous allez vous retrouver dans la section `Fichier` ou vous pourrez importer des données dans vos Datastores.
+Vous allez vous retrouver dans la section `Fichier` ou vous pourrez téléverser des données dans votre banque de données.
 
 Cliquez ensuite sur `TELECHARGER DES FICHIERS`{.action} pour sélectionner le fichier à téléverser depuis votre machine local (ISO ou autres).
 
+Localisez l'élément à téléverser depuis votre ordinateur local (un fichier `XXX.iso`) et cliquez sur `Ouvrir`{.action}
+
+### Étape 3 - Téléverser des dossiers
+
+Depuis votre banque de données, cliquez sur `TÉLÉCHARGER UN DOSSIER`{.action}.
+
+Localisez l'élément à téléverser depuis votre ordinateur local et cliquez sur `Ouvrir`{.action}
+
+### Étape 4 - Déplacer/Copier des fichiers
+
+Depuis votre banque de données, cliquez sur `DÉPLACER VERS`{.action} ou `COPIER DANS`{.action} par exemple.
+
 ![Datastore Upload 1](images/datastore_4.png){.thumbnail}
 
-**Comment créer un repertoire** (Facultatif) ?
+Localisez l'élément de destination à déplacer à depuis la banque de données et cliquez sur `OK`{.action}
 
-Si vous n'avez pas de préférence, cliquez sur `NOUVEAU DOSSIER`{.action} pour créer un répertoire de banque de données où stocker vos fichiers depuis votre datastore `pcc-XXX-XXX-XXX-XXX`.
+![Datastore Upload 1](images/datastore_move.png){.thumbnail}
 
-Vous avez plusieurs choix :
+Vous devez disposer des droits suffisants pour effectuer ce type d'actions.
 
-- `Nouvel hôte et dossier de cluster`
-- `Nouveau dossier réseau`
-- `Nouveau dossier de stockage`
-- `Nouvelle VM et dossiers de stockage`
+### Étape 5 - Renommer des fichiers
 
-Vous aussi la possibilité de les créer avec un clic droit `pcc-XXX-XXX-XXX-XXX_datastoreXXX > Clic Droit > Nouveau dossier`{.action} 
+Depuis votre banque de données, cliquez sur `Remplacer le nom par`{.action}
+
+![Datastore Upload 1](images/datastore_upload_rename.png){.thumbnail}
+
+Puis cliquez sur `OK`{.action}
+
+### Étape 6 - Créer un dossier (facultatif)
+
+Si vous n'avez pas de préférence, cliquez sur `NOUVEAU DOSSIER`{.action} pour créer un répertoire de banque de données où stocker vos fichiers depuis votre banque de données `pcc-XXX-XXX-XXX-XXX_datacenterXXXX`.
+
+3 type de banque de données sont disponibles : `VMFS/NFS/vVol`
+
+Et vous avez plusieurs choix pour créer des dossiers :
+
+- `Nouvel hôte et dossier de cluster...`
+- `Nouveau dossier réseau...`
+- `Nouveau dossier de stockage...`
+- `Nouvelle VM et dossiers de modèles...`
+
+Vous avez la possibilité de les créer avec un clic droit `pcc-XXX-XXX-XXX-XXX_datastoreXXX > Clic Droit > Nouveau dossier`{.action} 
 
 Ou depuis `SSD-XXX > Banque de données > Fichiers > Nouveau dossier`{.action}.
 
-Une fois votre arborescence créée, sélectionnez le répertoire cible et cliquez sur `TÉLÉCHARGER DES FICHIERS`{.action} ou `TÉLÉCHARGER DES DOSSIERS`{.action}
+![Datastore Upload 1](images/datastore_4.png){.thumbnail}
 
-Vous devez disposer des droits suffisants pour effectuer d'autres actions, tel que `DÉPLACER VERS`{.action} ou `COPIER DANS`{.action} par exemple.
-
-![Datastore Upload 1](images/datastore_upload_1.png){.thumbnail}
-
-Localisez l'élément à téléverser depuis votre ordinateur local (un fichier `XXX.iso`) et cliquez sur `Ouvrir`{.action}
-
-Le fichier ISO se téléverse dans la banque de données sélectionnée.
-
-(Facultatif) Actualisez l'explorateur de fichiers de la banque de données pour afficher le fichier téléversé dans la liste.
-
-Cliquez sur `Fermer`{.action} pour quitter le navigateur.
-
-Vous pouvez ainsi lancer cette ISO depuis un périphérique CD/DVD au sein de vote VM et lancer l'installation de l'OS en suivant le processus d'installation. Il est cependant recommandé d'utiliser des modèles de déploiement OVHcloud ou des clones de VM templaté par vos soins.
+Cliquez sur `OK`{.action} pour créer le dossier.
 
 ## Aller plus loin
 
