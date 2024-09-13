@@ -50,8 +50,16 @@ Le membre restera dans le pool, mais ne recevra plus de trafic.
 
 ### Étape 3 : Vérifier le statut du membre
 
-Après avoir défini le poids à 0, le statut du membre passera de `ONLINE` à `DRAINING`. Vous pouvez vérifier cela avec la commande suivante :
+Après avoir défini le poids à 0, le statut du membre passera de **ONLINE** à **DRAINING**. **Il est important de noter que dans l'état actuel du système, le membre restera en statut DRAINING même après que tout le trafic ait été drainé.**
 
+Cela peut prêter à confusion, car certains utilisateurs s'attendent à un état final **DRAINED** lorsque tout le trafic a été complètement redirigé. Cependant, le système ne change pas automatiquement le statut en **DRAINED**. 
+
+- **DRAINING** signifie simplement que le membre ne reçoit plus de trafic, et non qu'il est encore en train de drainer activement. 
+- L'état **DRAINED** n'est pas encore pris en charge dans l'API OpenStack actuelle.
+
+Si un état final comme **DRAINED** est essentiel pour vos processus, il est recommandé de soumettre une demande de fonctionnalité à OVHcloud pour l'ajout de cette fonctionnalité dans une future mise à jour.
+
+Vous pouvez utiliser la commande suivante pour vérifier le statut du membre :
 
 ```bash
 openstack loadbalancer member list <pool_name>
