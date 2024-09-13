@@ -1,8 +1,11 @@
 ---
 title: Configurare la rete su ESXi sulle gamme High Grade & SCALE
 excerpt: Come configurare la rete su ESXi sulle gamme High Grade & SCALE
-updated: 2024-07-08
+updated: 2024-09-13
 ---
+
+> [!warning]
+> L'hypervisor ESXi non è più supportato da OVHcloud. Per maggiori informazioni, visita [questa pagina dedicata](/pages/bare_metal_cloud/dedicated_servers/esxi-end-of-support).
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.

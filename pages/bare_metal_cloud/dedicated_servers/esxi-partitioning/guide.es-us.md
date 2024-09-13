@@ -1,8 +1,11 @@
 ---
 title: Dedicated Servers - ESXi Partitioning
 excerpt: Use the OVHcloud Control Panel or the OVHcloud API to customise ESXi system partitions
-updated: 2023-09-08
+updated: 2024-09-13
 ---
+
+> [!warning]
+> The ESXi hypervisor is no longer supported by OVHcloud. Find more information on [this dedicated page](/pages/bare_metal_cloud/dedicated_servers/esxi-end-of-support).
 
 ## Objective
 
