@@ -134,13 +134,13 @@ Après la migration, vous devrez configurer votre nouvelle implémentation de st
 
 Ces paramètres pourront être personnalisés en fonction des niveaux de services choisis :
 
-| **Depôt**&nbsp;&nbsp;&nbsp;&nbsp; | **Offres cible** | **Commentaire**                                                                                     |
-|:----------------------------------|:----------------:|:----------------------------------------------------------------------------------------------------|
-| 🥉 `Bronze Repository (100 To)`   |    `Standard`    | - **Standard Object Storage**                                                                       |
-| 🥈 `Silver Repository (100 To)`   |    `Advanced`    | - **Standard Object Storage** avec copie de sauvegarde hors site                                    |
-| 🥇 `Gold Repository (100 To)`     |    `Premium`     | - **High Performance Object Storage** avec copie de sauvegarde hors site et 14 points d’immuabilité |
+| **Repository**&nbsp;&nbsp;&nbsp;&nbsp; | **Offres cible** | **Commentaires**                                                                                    |
+|:---------------------------------------|:----------------:|:----------------------------------------------------------------------------------------------------|
+| 🥉 `Bronze Repository (100 To)`        |    `Standard`    | - **Standard Object Storage**                                                                       |
+| 🥈 `Silver Repository (100 To)`        |    `Advanced`    | - **Standard Object Storage** avec copie de sauvegarde hors site                                    |
+| 🥇 `Gold Repository (100 To)`          |    `Premium`     | - **High Performance Object Storage** avec copie de sauvegarde hors site et 14 points d’immuabilité |
 
-Tous ces dépôts ont un quota de stockage de **100 To**. Vous pouvez contacter les équipes de [support](https://help.ovhcloud.com/csm?id=csm_get_help) pour augmenter ce quota.
+Tous ces dépots ont un quota de stockage de **100 To**. Vous pouvez contacter les équipes de [support](https://help.ovhcloud.com/csm?id=csm_get_help) pour augmenter ce quota.
 
 Pour plus d'informations, consultez le guide : [VMware Cloud Director - Sauvegarde avec Veeam Data Platform](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-backup)
 

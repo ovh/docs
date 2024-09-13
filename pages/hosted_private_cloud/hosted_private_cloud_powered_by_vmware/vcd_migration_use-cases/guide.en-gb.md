@@ -25,9 +25,9 @@ This practical guide is designed to provide you with information and solutions o
 
 It also details the requirements for each use case, and if applicable, explains the requirements for a migration.
 
-| | |
-| - | - |
-| ![VCD Migration Block](images/vcd_migration_block_validation_en.png){thumbnail}  | 1. Before migrating, it is important to check the checklist of specific use cases below and follow any associated recommendations.<br/>2. Once you have met these requirements, you can log in to the OVHcloud Control Panel to sign (in the block provided for this purpose) the specific conditions of the environment planned to be migrated (T&C).<br/>3. OVHcloud teams will migrate VMs from the main VMware vSphere on OVHcloud datacentre (vDC) using a hot migration path (vMotion).<br/>  |
+| **Images**                                                                      | **Steps**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+|:--------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ![VCD Migration Block](images/vcd_migration_block_validation_en.png){thumbnail} | 1. Before migrating, it is important to check the checklist of specific use cases below and follow any associated recommendations.<br/>2. Once you have met these requirements, you can log in to the OVHcloud Control Panel to sign (in the block provided for this purpose) the specific conditions of the environment planned to be migrated (T&C).<br/>3. OVHcloud teams will migrate VMs from the main VMware vSphere on OVHcloud datacentre (vDC) using a hot migration path (vMotion).<br/> |
 
 This hot migration will minimize disruptions to your public or private networks. Private networks are the most likely to be affected, with downtime of the order of a few minutes.
 
@@ -134,11 +134,11 @@ After the migration, you will need to configure your new **Veeam Data Platform**
 
 These settings can be customized to suit your chosen service levels:
 
-| **Repository**&nbsp;&nbsp;&nbsp;&nbsp; |  **Target Offers**  | **Comment**                                                                                     |
-|:---------------------------------------|:-------------------:|:------------------------------------------------------------------------------------------------------------------|
-| 🥉 `Bronze Repository (100 To)`        |     `Standard`      | - **Standard Object Storage**                                                                       |
+| **Repository**&nbsp;&nbsp;&nbsp;&nbsp; |  **Target Offers**  | **Comments**                                                                          |
+|:---------------------------------------|:-------------------:|:--------------------------------------------------------------------------------------|
+| 🥉 `Bronze Repository (100 To)`        |     `Standard`      | - **Standard Object Storage**                                                         |
 | 🥈 `Silver Repository (100 To)`        |     `Advanced`      | - **Standard Object Storage** with off-site backup                                    |
-| 🥇 `Gold Repository (100 To)`          |      `Premium`      | - **High Performance Object Storage** with off-site backup and 14 immutability points  |
+| 🥇 `Gold Repository (100 To)`          |      `Premium`      | - **High Performance Object Storage** with off-site backup and 14 immutability points |
 
 All these repositories have a storage quota of **100 To**. You can contact the [support](https://help.ovhcloud.com/csm?id=csm_get_help) teams to increase this quota.
 
