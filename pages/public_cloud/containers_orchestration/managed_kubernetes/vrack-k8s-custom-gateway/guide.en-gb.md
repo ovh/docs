@@ -364,7 +364,7 @@ First, get the private network IDs (pvnwGRA9Id & pvnwGRA11Id), then create the O
 >> > 
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/kube
 > OVHcloud Control Panel
->> Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
+>> Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 >> 
 >> Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu:
 >> 
@@ -405,7 +405,7 @@ Now wait until your OVHcloud Managed Kubernetes cluster is READY.
 
 For that, you can check its status in the OVHcloud Control Panel:
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
 Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu:
 
@@ -418,6 +418,58 @@ And now click in your `demo` created Kubernetes cluster in order to see its stat
 ![Create a cluster](images/created-cluster.png){.thumbnail}
 
 When your cluster's status is `OK`, you can go to the next section.
+
+## Terraform Example for Custom Gateway
+
+Below is a Terraform example that demonstrates how to create a custom gateway and attach it to a subnet within your private network:
+
+### Example Terraform for Custom Gateway on OVHcloud Managed Kubernetes Cluster :
+
+```bash
+provider "ovh" {
+  endpoint        = "ovh-eu"
+  application_key = var.application_key
+  application_secret = var.application_secret
+  consumer_key = var.consumer_key
+}
+
+# Create a private network
+resource "ovh_cloud_project_network_private" "mypriv" {
+  service_name  = var.project_id  # Replace with your OVHcloud project ID
+  vlan_id       = "0"             # VLAN ID (usually 0)
+  name          = "mypriv"
+  regions       = ["GRA9"]
+}
+
+# Create a private subnet
+resource "ovh_cloud_project_network_private_subnet" "myprivsub" {
+  service_name  = ovh_cloud_project_network_private.mypriv.service_name
+  network_id    = ovh_cloud_project_network_private.mypriv.id
+  region        = "GRA9"
+  start         = "10.0.0.2"
+  end           = "10.0.255.254"
+  network       = "10.0.0.0/16"
+  dhcp          = true
+}
+
+# Create a custom gateway
+resource "ovh_cloud_project_gateway" "gateway" {
+  service_name = ovh_cloud_project_network_private.mypriv.service_name
+  name         = "my-gateway"
+  model        = "s"  # Gateway model ("s" for small, "m" for medium, etc.)
+  region       = ovh_cloud_project_network_private_subnet.myprivsub.region
+  network_id   = tolist(ovh_cloud_project_network_private.mypriv.regions_attributes[*].openstackid)[0]
+  subnet_id    = ovh_cloud_project_network_private_subnet.myprivsub.id
+}
+
+# Create a gateway interface
+resource "ovh_cloud_project_gateway_interface" "interface" {
+  service_name = ovh_cloud_project_network_private.mypriv.service_name
+  region       = ovh_cloud_project_network_private_subnet.myprivsub.region
+  id           = ovh_cloud_project_gateway.gateway.id
+  subnet_id    = ovh_cloud_project_network_private_subnet.myprivsub.id
+} 
+```
 
 ## Get Kubeconfig file
 
@@ -552,6 +604,6 @@ To delete an Openstack router, you must first remove the linked ports.
 
 ## Go further
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-- Join our [community of users](https://community.ovh.com/en/).
+- Join our [community of users](https://community.ovh.com/).
