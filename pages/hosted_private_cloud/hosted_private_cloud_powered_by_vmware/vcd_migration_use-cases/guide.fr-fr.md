@@ -112,7 +112,7 @@ Le tableau ci-dessous vous présente chacun des cas particuliers et des points b
 |      🔟       | 🔗 `Pools de ressources (partage)`           | Remplacer par les vApp dans VCD on OVHcloud                                                                                                          | - Les pools de ressources seront perdus après la migration car cette notion n'existe plus côté VCD on OVHcloud. Nous recommandons à la place l'utilisation des concepts de vApp au sein du control panel VCD on OVHcloud. | [Utilisation de vApps dans le control panel VCD on OVHcloud](https://docs.vmware.com/en/VMware-Cloud-Director/10.6/VMware-Cloud-Director-Tenant-Guide/GUID-AC48FB5E-4ADC-4835-AACE-B949B297A147.html)  |
 |      ⏸️       | 🆓 `Hosts + Datastore`                       | Libération des ressources (hôtes + datastore) dans VMware vSphere on OVHcloud                                                                        | - Les ressources (hôtes + datastore) gratuites "Freespare" et à l'heure "Hourly" doivent être libérées avant la migration, ou converties en ressources mensuelles ("Monthly").                                             | [Informations de facturation du Hosted Private Cloud](/pages/account_and_service_management/manage_billing_payment_and_services/facturation_private_cloud)                                             |
 
-### Étape 2 - Après la migration (obligatoire)
+### Étape 2 - Après la migration
 
 Voici un rappel des tâches qu'il vous reste à mener, une fois la migration effectuée (si vous êtes dans les cas d'usages suivants).
 

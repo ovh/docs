@@ -112,7 +112,7 @@ The table below lists each individual blocking use cases, bottlenecks, and the c
 |       🔟       | 🔗 `Resource pools (share)`                 | Replace with vApps in VCD on OVHcloud                                                                                                          | - Resource pools will be lost after the migration, as this concept no longer exists on the VCD on OVHcloud side. Instead, we recommend using vApp concepts within the VCD on OVHcloud Control Panel. | [Using vApps in the control panel VCD on OVHcloud](https://docs.vmware.com/en/VMware-Cloud-Director/10.6/VMware-Cloud-Director-Tenant-Guide/GUID-AC48FB5E-4ADC-4835-AACE-B949B297A147.html)  |
 |       ⏸️       | 🆓 `Hosts + Datastore`                      | Free up resources (hosts + datastore) in VMware vSphere on OVHcloud                                                                        | - Free "Freespare" and "Hourly" resources (hosts + datastores) must be released before the migration, or converted into monthly resources ("Monthly").                                               | [Hosted Private Cloud billing information](/pages/account_and_service_management/manage_billing_payment_and_services/billing_private_cloud)                                             |
 
-### Step 2 - After migration (required)
+### Step 2 - After migration
 
 Here is a reminder of the tasks you still need to carry out, once the migration is complete (if you have the following uses).
 
