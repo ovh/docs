@@ -207,7 +207,7 @@ Exemple de paramètres en input pour l'appel API :
 
 La requête GET permet de lister les stream ID au sein de votre souscription.
 
-### Étape 4 - Administrer vos streams vSphere Logs Data Platform
+### Étape 4 - Administrer vos logs VMware on OVHcloud
 
 > [!primary]
 > Si vous voulez connaitre tous les services et fonctionnalités que propose Log Data Plaform, consultez la page OVHcloud produit de [ce lien](/links/manage-operate/ldp).
