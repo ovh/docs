@@ -52,7 +52,16 @@ The member will remain in the pool, but it will no longer receive traffic.
 
 ### Step 3: Verify Member Status
 
-After setting the weight to 0, the member status will change from `ONLINE` to `DRAINING`. You can verify this by running:
+After setting the member’s weight to 0, its status will change from **ONLINE** to **DRAINING**. **It is important to note that in the current system, the member will remain in the DRAINING state even after all traffic has been drained.**
+
+This can be confusing because some users expect a final status of **DRAINED** once all traffic has been redirected. However, the system does not automatically transition to **DRAINED**. 
+
+- **DRAINING** simply means that the member is no longer receiving traffic, not that it is still actively draining traffic.
+- The **DRAINED** status is not yet supported in the current OpenStack API.
+
+If having a final **DRAINED** status is critical for your operations, it is recommended to submit a feature request to OVHcloud for this functionality in a future update.
+
+You can check the member’s status using the following command:
 
 ```bash
 openstack loadbalancer member list <pool_name>
