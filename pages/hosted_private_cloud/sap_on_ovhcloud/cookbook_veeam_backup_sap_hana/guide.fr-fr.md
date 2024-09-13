@@ -81,7 +81,7 @@ Dans cette configuration, vous pouvez utiliser un espace de stockage, ainsi qu'u
 >> ![backup_repository_3](images/backup_repository_3.png){.thumbnail}
 >>
 
-##### 2.1.2 - Création du Backup Repository Object Storage (optionnel)
+##### 2.1.2 - Création du Backup Repository Object Storage (facultatif)
 
 Ce Backup Repository servira à sécuriser vos sauvegardes sur un second espace de stockage, pouvant être hébergé sur une seconde région OVHcloud.
 
@@ -137,7 +137,7 @@ Pour découvrir les étapes de création d'un bucket Object Storage S3, veuillez
 >> ![backup_repository_s3_7](images/backup_repository_s3_7.png){.thumbnail}
 >>
 
-##### 2.1.3 - Création du Scale-out Backup Repository (optionnel)
+##### 2.1.3 - Création du Scale-out Backup Repository (facultatif)
 
 La création d'un Scale-out Backup Repository permettra de sécuriser vos sauvegardes déposées sur votre premier Backup Repository en les copiant sur votre second Backup Repository sans action de votre part.
 
@@ -152,7 +152,7 @@ La création d'un Scale-out Backup Repository permettra de sécuriser vos sauveg
 >>
 > **Étape 2**
 >>
->> Indiquez un nom à votre Scale-out Backup Repository.
+>> Donnez un nom à votre Scale-out Backup Repository.
 >>
 >> ![sbr_no_snc_2](images/sbr_no_snc_2.png){.thumbnail}
 >>
@@ -331,7 +331,7 @@ La création d'un groupe de protection est un pré-requis de l'installation de V
 >>
 > **Étape 3**
 >>
->> Indiquez un nom à votre groupe de protection. Puis cliquez sur `Next`{.action}.
+>> Donnez un nom à votre groupe de protection. Puis cliquez sur `Next`{.action}.
 >>
 >> ![pg_hana_3](images/pg_hana_3.png){.thumbnail}
 >>
@@ -373,7 +373,7 @@ Suite à l'installation de Veeam Plug-in for SAP HANA en Managed mode, nous somm
 >>
 > **Étape 2**
 >>
->> Indiquez un nom à votre job de sauvegarde SAP HANA. Puis cliquez sur `Next`{.action}.
+>> Donnez un nom à votre job de sauvegarde SAP HANA. Puis cliquez sur `Next`{.action}.
 >>
 >> ![bj_hana_2](images/bj_hana_2.png){.thumbnail}
 >>
@@ -427,7 +427,7 @@ Suite à l'installation de Veeam Plug-in for SAP HANA en Managed mode, nous somm
 >>
 >> Nous vous recommandons d'appliquer les paramètres suivants sur votre base de données SAP HANA :
 >>
->> - Appliquez le paramètre [catalog_backup_using_backint](https://help.sap.com/docs/SAP_HANA_PLATFORM/009e68bc5f3c440cb31823a3ec4bb95b/514ab38a2e574c85a70ebba80ff16d99.html?locale=en-US&version=2.0.05#loio514ab38a2e574c85a70ebba80ff16d99__configSPS05_id_723) à `true` permet de sauvegarder le catalogue de sauvegardes en dehors de votre base de données SAP HANA.
+>> - Appliquez le paramètre [catalog_backup_using_backint](https://help.sap.com/docs/SAP_HANA_PLATFORM/009e68bc5f3c440cb31823a3ec4bb95b/514ab38a2e574c85a70ebba80ff16d99.html?locale=en-US&version=2.0.05#loio514ab38a2e574c85a70ebba80ff16d99__configSPS05_id_723) à `true` pour sauvegarder le catalogue de sauvegardes en dehors de votre base de données SAP HANA.
 >> - Appliquez le paramètre [data_backup_buffer_size](https://help.sap.com/docs/SAP_HANA_PLATFORM/009e68bc5f3c440cb31823a3ec4bb95b/514ab38a2e574c85a70ebba80ff16d99.html?locale=en-US&version=2.0.05#loio514ab38a2e574c85a70ebba80ff16d99__configSPS05_id_726) en suivant la méthode suivante : 512 MB * [le nombre de canaux](#canaux) (MAX: 4096 MB)
 >>
 
@@ -453,7 +453,7 @@ Si vous souhaitez découvrir toutes les possibilités avec Veeam Plug-in for SAP
 
 ### 4 - Restauration
 
-Pour restaurer de votre base de données SAP HANA depuis une sauvegarde réalisée avec Veeam Backup and Replication, vous pouvez réaliser les étapes suivantes depuis la console Veeam Backup and Replication et Veeam Explorer for SAP HANA.
+Pour restaurer votre base de données SAP HANA depuis une sauvegarde réalisée avec Veeam Backup and Replication, vous pouvez réaliser les étapes suivantes depuis la console Veeam Backup and Replication et Veeam Explorer for SAP HANA.
 
 > [!primary]
 >
@@ -471,7 +471,7 @@ Pour restaurer de votre base de données SAP HANA depuis une sauvegarde réalis�
 > [!tabs]
 > **Étape 1**
 >>
->> Ouvrez la console Veeam Backup and Replication, sélectionnez `Home`{.action}, `Backups`{.action}, `Disk`{.action}, puis cliquez sur `Restore from SAP HANA backups...`{.action} en faisant un clic-droit sur la sauvegarde de votre base de données SAP HANA.
+>> Ouvrez la console Veeam Backup and Replication, sélectionnez `Home`{.action}, `Backups`{.action}, `Disk`{.action}, puis cliquez sur `Restore from SAP HANA backups...`{.action} en faisant un clic droit sur la sauvegarde de votre base de données SAP HANA.
 >>
 >> ![hana_recover_1.png](images/hana_recover_1.png)
 >>
