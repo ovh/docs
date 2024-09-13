@@ -1,11 +1,11 @@
 ---
 title: "Logs Data Platform - Activer le Log forwarder managé"
 excerpt: "Découvrez comment souscrire un abonnement Logs Data Platform vSphere managé et activer le log forwarder interne afin de pousser les journaux VMware vers un stream LDP"
-updated: 2024-08-28
+updated: 2024-09-13
 ---
 
 > [!primary]
-> Cette fonctionnalité est actuellement en phase Bêta. Logs Data Platform ne propose pas à ce jour des mêmes niveaux de sécurité (SNC/PCIDSS etc..) que VMware on OVHcloud, cependant l'activation est toujours possible.
+> Cette fonctionnalité est actuellement en phase Bêta. Les infrastructures Logs Data Platform ne propose pas à ce jour les mêmes niveaux de qualifications tel que SecNumCloud, PCI-DSS, HDS qu'avec un environnement VMware on OVHcloud, cependant l'activation est toujours possible.
 > 
 
 ## Objectif
@@ -45,7 +45,7 @@ Ils sont les types de logs que vous voulez transférer à votre stream Logs Data
 - `vcsa` : Filtré par application.
 - `nsxtManager` : Filtré par application.
 
-### Étape 1 - Activer le Log Forwarder dans un vSphere managé
+### Étape 1 - Activer le Log Forwarder dans un VMware vSphere on OVHcloud
 
 > [!warning]
 > Si le pack `logForwarder` n'est pas activé au sein de votre pack de base d'options (base ou advanced security), [contactez le support OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
@@ -81,8 +81,6 @@ Laissez vides les 2 champs booléens suivant`showIncompatible` et `showInternal`
 Voici un exemple de retour, si l'option exigée pour fonctionner n'est pas activée :
 
 ```json
-@api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/securityOptions/compatibilityMatrix
-
 [
  {
   description: "Deploy a syslog forwarder to gather all VMware logs of a Private Cloud"
@@ -121,15 +119,12 @@ Voici l'appel API de création d'un stream :
 >
 > @api {v1} /dbaas/logs POST /dbaas/logs/{serviceName}/output/graylog/stream
 >
-
+>
 > **Paramètres** :
+>
+> - `description` : Description de votre stream LDP.
+> - `title`: Titre de votre stream LDP.
 > 
-> ```json
-> {
-> "description": "string", // Description de votre stream.
-> "title": "string" // Titre de votre stream.
-> }
-> ```
 
 Retour :
 
@@ -192,24 +187,24 @@ Pour récupérer le **streamId** de votre compte LDP, consultez le guide « [Pre
 > 
 > @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/log/subscription
 >
-
+>
 > **Paramètres** :
 >
 > - `serviceName` : Nom du service vSphere managé, e.g `pcc-XXX-XXX-XXX-XXX`.
 > - `kind` : Kind VMware que le forwarder utilise, e.g (Disponible : `nsxtEdge ┃ vcsa ┃ nsxtManager ┃ esxi`).
-> - `streamId` : Identifiant du flux (stream) de destination, par exemple: (uuid : `ggb8d894-c491-433e-9c87-50a8bf6fe773`).
+> - `streamId` : Identifiant du flux (stream) de destination, e.g (uuid : `ggb8d894-c491-433e-9c87-50a8bf6fe773`).
 >
 
-Paramètres input :
+Exemple de paramètres en input pour l'appel API :
 
 ```json
-@api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/log/subscription
-
 {
- "kind": "esxi", // Le label VMware, les valeurs supportées actuellement sont : `esxi`, `nsxtManager`, `vcsa`, `nsxtEdge`.
- "streamId": "Null", // L'identifiant du stream Logs Data Platform.
+  "serviceName": "pcc-XXX-XXX-XXX-XXX",
+  "kind": "esxi",
+  "streamId": "Null",
 }
 ```
+
 La requête GET permet de lister les stream ID au sein de votre souscription.
 
 ### Étape 4 - Administrer vos streams vSphere Logs Data Platform
@@ -226,58 +221,33 @@ Vous pouvez vous référer à ce guide pour retrouver comment administrer vos fl
 
 #### Via l’API OVHcloud
 
-**Référencement de quelques appels API Logs Data Platform**
-
-Nous vous invitons à lire les guides pour voir l'ensemble des appel API disponible.
-
-| **Méthode** | **Chemin**                                                                                                | **Description**                                                                   |
-|:-----------:|:----------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------|
-|     GET     | /dbaas/logs/{serviceName}                                                                                 | - Retourne l'objet du service de l'identité connectée                             |
-|     GET     | /dbaas/logs/{serviceName}/cluster                                                                         | - Retourne la liste des clusters autorisés                                        |
-|     GET     | /dbaas/logs/{serviceName}/cluster/{clusterId}                                                             | - Retourne les détails d'un cluster autorisé                                      |
-|     GET     | /dbaas/logs/{serviceName}/cluster/{clusterId}/retention                                                   | - Répertorie tous les ID de rétention disponibles pour un cluster donné           |
-|     GET     | /dbaas/logs/{serviceName}/output/graylog/stream                                                           | - Retourne la liste des streams graylog                                           |
-|     GET     | /dbaas/logs/{serviceName}/input/{inputId}/configuration/logstash                                          | - Retourne la configuration logstash                                              |
-|     GET     | /dbaas/logs/{serviceName}/encryptionKey                                                                   | - Retourner la liste des clés de chiffrement enregistrées                         |
-|     GET     | /dbaas/logs/{serviceName}/input                                                                           | - Retourne la liste des entrées enregistrées attachées à l'utilisateur enregistré |
-|    POST     | /dbaas/logs/{serviceName}/input                                                                           | - Enregistrer un nouvel objet d'entrée                                            |
-|     GET     | /dbaas/logs/{serviceName}/output/opensearch/alias/{aliasId}/index                                         | - Retourne la liste des index OpenSearch attachés à l'alias OpenSearch spécifié   |                                                                  |
-
 **Comment obtenir le `subscriptionId`** ?
 
 > [!api]
 >
 > @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/log/subscription
 >
-
+>
 > **Paramètres** :
 >
 > - `serviceName` : Nom de service de votre vSphere managé, e.g `pcc-XXX-XXX-XXX-XXX`.
 > - `kind` : Nom kind VMware que le forwarder utilise, e.g (`nsxtEdge ┃ vcsa ┃ nsxtManager ┃ esxi`).
 >
 
-Exemple de retour :
-
-```json
-[
- "9a36b2ec-c7d2-411d-acf8-qb64ccffdb54"
-]
-```
-
-**Exemple de retours API**
+**Comment lister vos Kind disponibles** ?
 
 > [!api]
 >
 > @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/log/kind/{name}
 >
-
+>
 > **Paramètres** :
 >
 > - `name` : Nom kind VMware que le forwarder utilise, e.g (Disponible : `nsxtEdge ┃ vcsa ┃ nsxtManager ┃ esxi`).
 > - `serviceName` : Nom de service de votre vSphere managé, e.g `pcc-XXX-XXX-XXX-XXX`.
 > 
 
-Retour :
+Exemples de retours pour différents Kind :
 
 **NSX-T Edge**
 
@@ -353,7 +323,7 @@ Retour :
 }
 ```
 
-**Comment désactiver votre abonnement de souscription Hosted Private Cloud Log Data Platform** ?
+### Étape 5 - Désactiver votre abonnement de souscription Log Data Plateform
 
 > [!primary]
 > La résiliation de votre abonnement Hosted Private Cloud LDP ne signifie pas la suppression de vos streams. Le stockage consommé au moment de la désactivation reste soumis à facturation.
@@ -365,7 +335,7 @@ Retour :
 >
 > @api {v1} /dedicatedCloud DELETE /dedicatedCloud/{serviceName}/log/subscription/{subscriptionId}
 >
-
+>
 > **Paramètres** :
 >
 > - `serviceName` : Nom de service de votre vSphere managé, e.g `pcc-XXX-XXX-XXX-XXX`.
