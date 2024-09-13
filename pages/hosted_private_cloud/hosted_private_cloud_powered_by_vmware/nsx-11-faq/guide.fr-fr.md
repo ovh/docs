@@ -217,8 +217,7 @@ updated: 2024-08-15
 > > OVHcloud vous remboursera 1 mois de frais d’hébergement et de gestion NSX sur la prochaine facture après la commande de votre nouveau vDC (1 mois = 30 jours).
 > >
 > Y a-t-il un coût supplémentaire à l'utilisation du LoadBalancer Advanced (avec WAF) et d'un IPS/IDS distribué ? <a name="pricealbandipsids"></a>
-> > La version de base d'ALB est déjà incluse dans la version licence NSX-T, sans coût supplémentaire.
-> > IPS/IDS n'est, pour le moment, pas disponible.
+> > Oui, la version de base d'ALB n'est pas incluse dans la version licence NSX-T. Nous la proposerons sous forme d'option supplémentaire.
 > >
 
 ## Aller plus loin
