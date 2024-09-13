@@ -33,3 +33,84 @@ while true; do
 done
 ```
 Vous devriez voir des réponses alternées des deux membres :
+
+```htlm
+<html><head><title>Load Balanced Member 1</title></head><body><h1>You hit your OVHCloud load balancer member #1 !</h1></body></html>
+<html><head><title>Load Balanced Member 0</title></head><body><h1>You hit your OVHCloud load balancer member #0 !</h1></body></html>
+```
+
+### Modifier le poids d’un membre à 0
+
+Pour stopper l'envoi de trafic vers un membre spécifique, ajustez son poids à 0 :
+
+```bash
+openstack loadbalancer member set --weight 0 <pool> <member_0>
+```
+Le membre restera dans le pool, mais ne recevra plus de trafic.
+
+### Étape 3 : Vérifier le statut du membre
+
+Après avoir défini le poids à 0, le statut du membre passera de `ONLINE` à `DRAINING`. Vous pouvez vérifier cela avec la commande suivante :
+
+
+```bash
+openstack loadbalancer member list <pool_name>
+```
+
+Vous devriez voir :
+
+```bash
+
+---------------------------------------------------------------------------------------------------
+id                                   name       provisioning_status  operating_status   weight
+---------------------------------------------------------------------------------------------------
+27cfe834-7fef-4548-b71b-fa0ce67222f8 member_1   ACTIVE               ONLINE             1
+118756ba-2cae-4141-b9c2-8b18b120c8dc member_0   ACTIVE               DRAINING           0
+---------------------------------------------------------------------------------------------------
+
+```
+
+### Étape 4 : Confirmer que le trafic est dirigé vers le membre actif
+
+Exécutez à nouveau le script de test. Vous devriez voir uniquement des réponses de `member_1` :
+
+```htlm
+<html><head><title>Load Balanced Member 1</title></head><body><h1>You hit your OVHCloud load balancer member #1 !</h1></body></html>
+```
+
+### Étape 5 : Effectuer la maintenance
+
+Maintenant que `member_0` ne reçoit plus de trafic, vous pouvez procéder à la maintenance ou aux mises à jour en toute sécurité.
+
+### Étape 6 : Restaurer le trafic vers le membre
+
+Une fois la maintenance terminée, rétablissez le poids de `member_0` à sa valeur initiale (par exemple, 1) :
+
+```bash
+openstack loadbalancer member set --weight 1 <pool> <member_0>
+```
+
+Vérifiez que les deux membres reçoivent à nouveau du trafic :
+
+```bash
+openstack loadbalancer member list <pool_name>
+```
+
+Vous devriez voir les deux membres avec le statut `ONLINE` :
+
+```bash
+
+---------------------------------------------------------------------------------------------------
+id                                   name       provisioning_status  operating_status   weight
+---------------------------------------------------------------------------------------------------
+27cfe834-7fef-4548-b71b-fa0ce67222f8 member_1   ACTIVE               ONLINE             1
+118756ba-2cae-4141-b9c2-8b18b120c8dc member_0   ACTIVE               ONLINE             1
+---------------------------------------------------------------------------------------------------
+
+```
+
+## Aller plus loin
+ 
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+
+
