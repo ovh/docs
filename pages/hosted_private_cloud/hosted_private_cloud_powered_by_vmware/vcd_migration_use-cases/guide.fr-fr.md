@@ -39,34 +39,34 @@ Pour rappel, si vous décidez de passer à l’offre VCD, les nouveaux tarifs ne
 
 ### Étape 1 - Avant la migration (obligatoire)
 
-#### Demandes faites avant le 1er novembre 2024
+#### Demandes faites avant le 1er septembre 2024
 
 > [!primary]
 > 
 > La migration de vos environnements actuels VMware vSphere on OVHcloud peut être réalisée dès réception de votre demande. 
 > 
-> **Important** : les conditions particulières disponibles depuis début novembre 2024 dans l'espace client doivent être signées pour que la migration soit réalisée par les équipes OVHcloud.
+> **Important** : les conditions particulières disponibles depuis début septembre 2024 dans l'espace client doivent être signées pour que la migration soit réalisée par les équipes OVHcloud.
 >
 
 Nous vous invitons à revoir la démonstration du produit et le webinaire pour vous familiariser avec cette nouvelle offre.
 
 Vous retrouverez toutes les informations nécessaires sur nos pages dédiées à VCD :
 
-- [Webinar - Managed VMware Cloud Director on OVHcloud (Video EN)](https://vimeo.com/936590009/b52b3ba8ce)
+- [Webinar - Managed VMware Cloud Director on OVHcloud (vidéo EN)](https://vimeo.com/936590009/b52b3ba8ce)
 - [Webinar - VMware by Broadcom New Offerings and Opportunities (Video EN)](https://www.youtube.com/watch?v=aS2A9AhjnMg)
-- [Savoir - VMware Cloud Director on OVHcloud (FR)](https://www.ovhcloud.com/fr/lp/vmware-vcd-evolution/)
+- [OVHcloud.com - VMware Cloud Director on OVHcloud (FR)](https://www.ovhcloud.com/fr/lp/vmware-vcd-evolution/)
 - [OVHcloud Labs - VMware Cloud Director on OVHcloud (EN)](https://labs.ovhcloud.com/en/vmware-cloud-director/)
 
-Les migrations seront effectuées en 4 vagues, à partir du mois d'octobre, selon les services actifs dans votre environnement.
+Les migrations seront effectuées en 4 vagues, à partir du mois de septembre, selon les services actifs dans votre environnement.
 
 Le calendrier prévisionnel, compatible avec ces environnements lors de la migration, est le suivant :
 
 | **Vagues** |     **Dates**     | **Offres cible** | **NSX** | **vRack** | **vSAN** | **Microsoft (SPLA)<br/>on OVHcloud** | **Résumé des environnements compatibles avec la migration**                                                                                          |                                                                                                                
 |:----------:|:-----------------:|:----------------:|:-------:|:---------:|:--------:|:------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------|
-|     ❶      | **Novembre 2024** |    `Standard`    |    ❌    |     ❌     |    ❌     |                  ❌                   | - **Sans** licence VM Microsoft Windows (SPLA) fournie par OVHcloud<br/>- **Sans** NSX<br/>- **Sans** High performance storage (vSAN)                 |
-|     ❷      | **Décembre 2024** |    `Standard`    |    ❌    |     ❌     |    ❌     |                  ✅                   | - **Avec** licence VM Microsoft Windows (SPLA) fournie par OVHcloud<br/>- **Sans** NSX<br/>- **Sans** High performance storage (vSAN)                 |
-|     ❸      | **Janvier 2024**  |    `Advanced`    |    ✅    |     ✅     |    ❌     |                  ✅                   | - **Avec** licence VM Microsoft Windows (SPLA) fournie par OVHcloud<br/>- **Avec** NSX + vRack support<br/>- **Sans** High performance storage (vSAN) |
-|     ❹      | **Février 2024**  |    `Premium`     |    ✅    |     ✅     |    ✅     |                  ✅                   | - **Avec** licence Microsoft Windows (SPLA) fournie par OVHcloud<br/>- **Avec** NSX + vRack support<br/>- **Avec** High performance storage (vSAN)    |
+|     ❶      | **Octobre 2024**  |    `Standard`    |    ❌    |     ❌     |    ❌     |                  ❌                   | - **Sans** licence VM Microsoft Windows (SPLA) fournie par OVHcloud<br/>- **Sans** NSX<br/>- **Sans** High performance storage (vSAN)                 |
+|     ❷      | **Novembre 2024** |    `Standard`    |    ❌    |     ❌     |    ❌     |                  ✅                   | - **Avec** licence VM Microsoft Windows (SPLA) fournie par OVHcloud<br/>- **Sans** NSX<br/>- **Sans** High performance storage (vSAN)                 |
+|     ❸      | **Decembre 2024** |    `Advanced`    |    ✅    |     ✅     |    ❌     |                  ✅                   | - **Avec** licence VM Microsoft Windows (SPLA) fournie par OVHcloud<br/>- **Avec** NSX + vRack support<br/>- **Sans** High performance storage (vSAN) |
+|     ❹      | **Janvier 2024**  |    `Premium`     |    ✅    |     ✅     |    ✅     |                  ✅                   | - **Avec** licence Microsoft Windows (SPLA) fournie par OVHcloud<br/>- **Avec** NSX + vRack support<br/>- **Avec** High performance storage (vSAN)    |
 
 Au cours de ce processus, vos données resteront inchangées, à l'exception du vSAN Storage. Vos adresses IP resteront inchangées également.
 
@@ -74,11 +74,11 @@ La date de migration vous sera communiquée par e-mail au minimum 15 jours avant
 
 Nous vous invitons à lire le guide [VMware Cloud Director - Les concepts fondamentaux de VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts) pour voir les fonctionnalités incluses dans chaque vague de migration de vos environnements.
 
-#### Demandes faites après le 1er novembre 2024
+#### Demandes faites après le 1er septembre 2024
 
 > [!primary]
 >
-> Les demandes de migration faite après le 1er novembre 2024 ont les mêmes pré-requis que pour toutes les autres demandes de migrations évoquées dans ce guide.
+> Les demandes de migration faites après le 1er novembre 2024 ont les mêmes prérequis que pour toutes les autres demandes de migrations évoquées dans ce guide.
 >
 > Vous devrez faire votre demande par le biais d'un [ticket au support](https://help.ovhcloud.com/csm?id=csm_get_help), ce qui vous permettra d'avoir toutes les informations et de signer les T&C.
 >

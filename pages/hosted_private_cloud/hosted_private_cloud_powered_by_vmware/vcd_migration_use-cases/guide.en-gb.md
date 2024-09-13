@@ -39,7 +39,7 @@ As a reminder, if you decide to switch to the managed VCD on OVHcloud offer, the
 
 ### Step 1 - Before migration (mandatory)
 
-#### Applications made before 01 November 2024
+#### Applications made before 01 September 2024
 
 > [!primary]
 >
@@ -57,16 +57,16 @@ You can find all the information you need on our VCD pages:
 - [Knowledge - Managed VMware Cloud Director on OVHcloud (EN)](https://www.ovhcloud.com/en/lp/vmware-vcd-evolution/)
 - [OVHcloud Labs - VMware Cloud Director on OVHcloud (EN)](https://labs.ovhcloud.com/en/vmware-cloud-director/)
 
-Migrations will be carried out in 4 waves, from October onwards, depending on the services active in your environment.
+Migrations will be carried out in 4 waves, from september, depending on the services active in your environment.
 
 The planned schedule, which is compatible with these environments during the migration, is as follows:
 
 | **Waves** |     **Dates**     | **Target Offers** |  **NSX**   |  **vRack**  |  **vSAN**   | **Microsoft (SPLA)<br/>on OVHcloud** | **Summary of migration compatible environments**                                                                                                         |
 |:----------:|:-----------------:|:---------------:|:----------:|:-----------:|:-----------:|:------------------------------------:|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-|     ❶      | **November 2024** |    `Standard`    |     ❌      |      ❌      |      ❌      |                  ❌                   | - **Without** Microsoft Windows VM license (SPLA) provided by OVHcloud<br/>- **Without** NSX<br/>- **Without** High performance storage (vSAN)           |
-|     ❷      | **December 2024** |    `Standard`    |     ❌      |      ❌      |      ❌      |                  ✅                   | - **With** Microsoft Windows VM license (SPLA) provided by OVHcloud<br/>- **Without** NSX<br/>- **Without** High performance storage (vSAN)              |
-|     ❸      | **January 2024**  |    `Advanced`    |     ✅      |      ✅      |      ❌      |                  ✅                   | - **With** Microsoft Windows VM license (SPLA) provided by OVHcloud<br/>- **With** NSX + vRack support<br/>- **Without** High performance storage (vSAN) |
-|     ❹      | **February 2024**  |    `Premium`     |     ✅      |      ✅      |      ✅      |                  ✅                   | - **With** Microsoft Windows license (SPLA) provided by OVHcloud<br/>- **With** NSX + vRack support<br/>- **With** High performance storage (vSAN)       |
+|     ❶      | **Octobre 2024**  |    `Standard`    |     ❌      |      ❌      |      ❌      |                  ❌                   | - **Without** Microsoft Windows VM license (SPLA) provided by OVHcloud<br/>- **Without** NSX<br/>- **Without** High performance storage (vSAN)           |
+|     ❷      | **Novembre 2024** |    `Standard`    |     ❌      |      ❌      |      ❌      |                  ✅                   | - **With** Microsoft Windows VM license (SPLA) provided by OVHcloud<br/>- **Without** NSX<br/>- **Without** High performance storage (vSAN)              |
+|     ❸      | **December 2024** |    `Advanced`    |     ✅      |      ✅      |      ❌      |                  ✅                   | - **With** Microsoft Windows VM license (SPLA) provided by OVHcloud<br/>- **With** NSX + vRack support<br/>- **Without** High performance storage (vSAN) |
+|     ❹      | **January 2024**  |    `Premium`     |     ✅      |      ✅      |      ✅      |                  ✅                   | - **With** Microsoft Windows license (SPLA) provided by OVHcloud<br/>- **With** NSX + vRack support<br/>- **With** High performance storage (vSAN)       |
 
 During this process, your data will remain unchanged, except for vSAN Storage. Your IP addresses will also remain unchanged.
 
@@ -74,7 +74,7 @@ The migration date will be sent to you by email at least 15 days before the star
 
 We recommend reading our guide [VMware Cloud Director - The fundamentals of VCDs](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts) to see which features are included in each migration wave of your environments.
 
-#### Applications made after 01 November 2024
+#### Applications made after 01 September 2024
 
 > [!primary]
 >
