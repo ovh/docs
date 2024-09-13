@@ -25,7 +25,7 @@ We also recommend considering [OVHcloud Hosted Private Cloud solutions](/links/h
 - [Manage and secure your ESXi dedicated server from the outset](/pages/bare_metal_cloud/dedicated_servers/esxi-hardening)
 - [Dedicated Servers - ESXi partitioning](/pages/bare_metal_cloud/dedicated_servers/esxi-partitioning)
 - [Configure the network on ESXi on the High Grade & SCALE ranges](/pages/bare_metal_cloud/dedicated_servers/esxi-network-HG-Scale)
-- [ESXi Dedicated Servers - FAQ](p/ages/bare_metal_cloud/dedicated_servers/faq-esxi)
+- [ESXi Dedicated Servers - FAQ](/pages/bare_metal_cloud/dedicated_servers/faq-esxi)
 
 ## Go further
 
