@@ -1,12 +1,12 @@
 ---
-title: 'Tutorial on Stormshield Network Security: securing your OVHcloud infrastructure'
+title: 'Tutorial on Stormshield Network Security : securing your OVHcloud infrastructure'
 excerpt: 'Find out how to securing your OVHcloud infrastructure with Stormshield Network Security'
 updated: 2024-09-09
 ---
 
 ## Objective
 
-In today's rapidly evolving digital landscape, securing cloud infrastructure has become a top priority for organizations of all sizes. As businesses increasingly rely on cloud solutions for their operations, ensuring the protection of sensitive data and maintaining network integrity are critical tasks. **S**tormshield **N**etwork **S**ecurity (SNS) is a comprehensive security solution designed to protect cloud environments from a wide range of threats. This guide provides step-by-step instructions for deploying and configuring SNS on the OVHcloud Public Cloud, covering key features such as network firewalls, IPSec VPNs, and SSL/TLS VPNs. By following this guide, you will enhance the security of your OVHcloud Public Cloud infrastructure and ensure safe and secure operations.
+In today's rapidly evolving digital landscape, securing cloud infrastructure has become a top priority for organizations of all sizes. As businesses increasingly rely on cloud solutions for their operations, ensuring the protection of sensitive data and maintaining network integrity are critical tasks. **S**tormshield **N**etwork **S**ecurity (SNS) is a comprehensive security solution designed to protect cloud environments from a wide range of threats. This guide provides step-by-step instructions for deploying and configuring SNS on the OVHcloud Public Cloud with RTvRack, covering key features such as network firewalls, IPSec VPNs, and SSL/TLS VPNs. By following this guide, you will enhance the security of your OVHcloud Public Cloud infrastructure and ensure safe and secure operations.
 
 **This guide explains how to securing your OVHcloud infrastructure with Stormshield Network Security deployed on Public Cloud.**
 
@@ -34,7 +34,7 @@ In addition to the installation and configuration of Stormshield Network Securit
 > [!primary]
 > In this tutorial, the installation and configuration of Stormshield Network Security is done primarily via the command line. Open a terminal to execute the instructions.
 >
-> Please note that all sections related to « High Availability », « stormshield-2 », or « vlan199 » are optional. They are included to demonstrate how to set up the system with two instances in an active/passive mode for high availability. Normally, it can also function with just one instance if that is sufficient for your needs.
+> Please note that all sections related to « High Availability » or « stormshield-2 » are optional. They are included to demonstrate how to set up the system with two instances in an active/passive mode for high availability. Normally, it can also function with just one instance if that is sufficient for your needs.
 
 #### Configure your vRack
 
