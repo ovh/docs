@@ -140,6 +140,7 @@
             + [Managing Intel SGX on an Infrastructure server](bare_metal_cloud/dedicated_servers/sgx-enable-and-use)
             + [Uninstalling the RTM v2 monitoring system](bare_metal_cloud/dedicated_servers/rtm-uninstall)
             + [Configure a custom iPXE script to boot your server from the OVHcloud API](bare_metal_cloud/dedicated_servers/ipxe-scripts)
+            + [VMware ESXi on OVHcloud Dedicated Servers - End of Support](bare_metal_cloud/dedicated_servers/esxi-end-of-support)
         + [Server Backup and Restore](bare-metal-cloud-dedicated-servers-backup-restore)
             + [Preparing a Bare Metal Server backup with Veeam Enterprise](bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup-preparation)
             + [Backing up a Bare Metal Linux Server with Veeam Enterprise](bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup-linux)
