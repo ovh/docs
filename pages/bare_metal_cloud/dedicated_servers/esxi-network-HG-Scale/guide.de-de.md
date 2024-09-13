@@ -1,8 +1,11 @@
 ---
 title: 'Netzwerk auf ESXi für die High Grade & SCALE Reihen konfigurieren'
 excerpt: 'Erfahren Sie, wie Sie das Netzwerk auf VMware ESXi für die High Grade & SCALE Reihen einrichten'
-updated: 2024-07-08
+uupdated: 2024-09-13
 ---
+
+> [!warning]
+> Der ESXi Hypervisor wird von OVHcloud nicht mehr unterstützt. Weitere Informationen finden Sie auf [dieser Seite](/pages/bare_metal_cloud/dedicated_servers/esxi-end-of-support).
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.

@@ -1,8 +1,11 @@
 ---
 title: 'Manage and secure your ESXi dedicated server from the outset'
 excerpt: 'Discover the various ways you can effectively secure your ESXi dedicated server'
-updated: 2023-03-07
+updated: 2024-09-13
 ---
+
+> [!warning]
+> The ESXi hypervisor is no longer supported by OVHcloud. Find more information on [this dedicated page](/pages/bare_metal_cloud/dedicated_servers/esxi-end-of-support).
 
 ## Objective
 
