@@ -97,7 +97,7 @@ Verify that both members are now receiving traffic:
 openstack loadbalancer member list <pool_name>
 ```
 
-You should see both members with ONLINE status:
+You should see both members with `ONLINE` status:
 
 ```bash
 
