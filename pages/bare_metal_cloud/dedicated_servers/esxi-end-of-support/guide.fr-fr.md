@@ -25,8 +25,10 @@ Nous vous conseillons d'étudier également les [offres Hosted Private Cloud pro
 - [Maîtriser et sécuriser votre serveur dédié ESXi dès son premier démarrage](/pages/bare_metal_cloud/dedicated_servers/esxi-hardening)
 - [Serveurs Dédiés - Partitionnement d'ESXi](/pages/bare_metal_cloud/dedicated_servers/esxi-partitioning)
 - [Configurer le réseau sur ESXi sur les gammes High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/esxi-network-HG-Scale)
-- [Serveurs dédiés ESXi - FAQ](/pages/bare_metal_cloud/dedicated_servers)
+- [Serveurs dédiés ESXi - FAQ](/pages/bare_metal_cloud/dedicated_servers/faq-esxi)
 
 ## Aller plus loin
 
 - [VMware by Broadcom : Nouvelles Offres et Opportunités](https://blog.ovhcloud.com/vmware-on-ovhcloud-nouvelle-offre-vcd-vcf/)
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).
