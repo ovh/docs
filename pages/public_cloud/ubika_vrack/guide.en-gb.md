@@ -56,9 +56,13 @@ Below is the architecture that we are going to set-up.
 openstack network create --provider-network-type vrack --provider-segment 1000 ubika-management
 ```
 
+This command creates a private network for managing the Ubika instances, using the virtual private network (vRack) provided by OVHcloud. This isolated network is intended for internal communication between the Ubika components.
+
 ```console
 openstack subnet create --network ubika-management --subnet-range 192.168.1.0/24 --dhcp --gateway none --dns-nameserver 213.186.33.99 ubika-management
 ```
+
+Here, you configure a subnet for the management network, specifying an IP address range and a DNS server for internal communications.
 
 #### Configure Ubika workload networking
 
@@ -68,9 +72,13 @@ openstack subnet create --network ubika-management --subnet-range 192.168.1.0/24
 openstack network create --provider-network-type vrack --provider-segment 0 --disable-port-security ubika-workload
 ```
 
+This command creates a private network for the workload, designed to host applications secured by Ubika.
+
 ```console
 openstack subnet create --network ubika-workload --subnet-range 192.168.2.0/24 --dhcp --dns-nameserver 213.186.33.99 ubika-workload
 ```
+
+Here, you define a subnet for the workload network, enabling efficient management of network traffic.
 
 * Create a gateway. This gateway is here only to allow the download and installation of Nginx on the test web server. It is not mandatory.
 
@@ -237,14 +245,38 @@ They will send back licenses. Apply them to each Ubika instances.
 
 ### Test your first web application <a name="step3"></a>
 
+The test of the web application after configuration validates the correct operation of Ubika's network, security, and high availability settings. The goal is to ensure that web traffic is properly filtered and routed through the Ubika instances, providing comprehensive protection for communications with the servers.
+
 * Create two web servers on the workload network
 
+Before executing the next OpenStack command, first create a `webserver.cloud-init` file and add the following content, adapting the parameters to your environment :
+
 ```console
-openstack server create --flavor b3-8 --image "Ubuntu 22.04" --network ubika-workload ubika-test-webserver-1 --key-name <username> --user-data ./templates/webserver.cloud-init
+{
+    #cloud-config
+    users:
+    - default
+
+    package_update: true
+
+    packages:
+    - nginx
+
+    runcmd:
+    - hostname > /var/www/html/index.html
+    - systemctl enable nginx
+    - systemctl start nginx
+}
+```
+
+Once the `webserver.cloud-init` file is created, execute the following command :
+
+```console
+openstack server create --flavor b3-8 --image "Ubuntu 22.04" --network ubika-workload ubika-test-webserver-1 --key-name <username> --user-data ./webserver.cloud-init
 ```
 
 ```console
-openstack server create --flavor b3-8 --image "Ubuntu 22.04" --network ubika-workload ubika-test-webserver-2 --key-name <username> --user-data ./templates/webserver.cloud-init
+openstack server create --flavor b3-8 --image "Ubuntu 22.04" --network ubika-workload ubika-test-webserver-2 --key-name <username> --user-data ./webserver.cloud-init
 ```
 
 * Create an Octavia private load balancer
