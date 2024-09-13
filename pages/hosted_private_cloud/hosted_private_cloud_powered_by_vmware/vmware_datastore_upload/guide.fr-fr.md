@@ -16,9 +16,9 @@ updated: 2024-09-13
 
 ## En pratique
 
-> [!warning]
+> [!primary]
 > 
-> Ce guide remplace la procédure ci-joins qui est obsolète : [Se connecter en SFTP ](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/sftp_connexion)
+> Ce guide remplace la procédure SFTP qui est obsolète : [Se connecter en SFTP ](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/sftp_connexion)
 >
 
 ### Étape 1 - Accéder à la banque de données (datastore)
@@ -40,13 +40,15 @@ Vous disposez de 2 façons d'y accéder :
 
 Vous retrouverez l'ensemble de vos banques de données (datastores) listées.
 
+Cliquez alors sur votre banque de données, vous verrez apparaitre une section `Fichiers` dans lequel s'ouvre votre fenêtre automatiquement.
+
 ![vSphere Datastore Inventory](images/inventory_datastore.png){.thumbnail}
 
 ### Étape 2 - Téléverser des fichiers
 
-Vous allez vous retrouver dans la section `Fichiers` ou vous pourrez importer des fichiers dans votre banque de données.
+Toujours depuis la section `Fichiers` de votre banque de données ouverte.
 
-Cliquez ensuite sur `TÉLÉCHARGER DES FICHIERS`{.action} pour sélectionner le fichier à téléverser depuis votre machine local (ISO ou autres).
+Cliquez sur `TÉLÉCHARGER DES FICHIERS`{.action} pour sélectionner le fichier à téléverser depuis votre machine connécté au client HTML vSphere (ISO ou autres).
 
 Localisez l'élément à téléverser depuis votre ordinateur local (un fichier `XXX.iso`) et cliquez sur `Ouvrir`{.action}
 
@@ -79,19 +81,21 @@ Localisez l'élément à téléverser depuis votre ordinateur local (un fichier 
 
 ### Étape 3 - Téléverser des dossiers
 
-Depuis votre banque de données, cliquez sur `TÉLÉCHARGER UN DOSSIER`{.action}.
+Depuis votre banque de données, dans la section `Fichiers`, cliquez sur `TÉLÉCHARGER UN DOSSIER`{.action}
 
-Localisez l'élément à téléverser depuis votre ordinateur local et cliquez sur `Ouvrir`{.action}
+Localisez l'élément à téléverser depuis votre machine connécté au client HTML vSphere et cliquez sur `Ouvrir`{.action}
+
+Le téléversement commence automatiquement.
 
 ### Étape 4 - Déplacer/Copier des fichiers
 
 Depuis votre banque de données, cliquez sur `DÉPLACER VERS`{.action} ou `COPIER DANS`{.action} par exemple.
 
-![Datastore Upload 1](images/datastore_4.png){.thumbnail}
+![Datastore Upload](images/datastore_4.png){.thumbnail}
 
 Localisez l'élément de destination à déplacer à depuis la banque de données et cliquez sur `OK`{.action}
 
-![Datastore Upload 1](images/datastore_move.png){.thumbnail}
+![Datastore Upload](images/datastore_move.png){.thumbnail}
 
 Vous devez disposer des droits suffisants pour effectuer ce type d'actions.
 
@@ -99,30 +103,17 @@ Vous devez disposer des droits suffisants pour effectuer ce type d'actions.
 
 Depuis votre banque de données, cliquez sur `Remplacer le nom par`{.action}
 
-![Datastore Upload 1](images/datastore_upload_rename.png){.thumbnail}
+![Datastore Upload](images/datastore_upload_rename.png){.thumbnail}
 
 Puis cliquez sur `OK`{.action}
 
 ### Étape 6 - Créer un dossier (facultatif)
 
-Si vous n'avez pas de préférence, cliquez sur `NOUVEAU DOSSIER`{.action} pour créer un répertoire de banque de données où stocker vos fichiers depuis votre banque de données `pcc-XXX-XXX-XXX-XXX_datacenterXXXX`.
+Toujours depuis la section `Fichier` de votre banque de données, cliquez sur `NOUVEAU DOSSIER`{.action} pour créer un dossier où stocker vos fichiers.
 
-3 type de banque de données sont disponibles : `VMFS/NFS/vVol`
+Nommez votre dossier et cliquez sur `OK`{.action} pour créer le dossier.
 
-Et vous avez plusieurs choix pour créer des dossiers :
-
-- `Nouvel hôte et dossier de cluster...`
-- `Nouveau dossier réseau...`
-- `Nouveau dossier de stockage...`
-- `Nouvelle VM et dossiers de modèles...`
-
-Vous avez la possibilité de les créer avec un clic droit `pcc-XXX-XXX-XXX-XXX_datastoreXXX > Clic Droit > Nouveau dossier`{.action} 
-
-Ou depuis `SSD-XXX > Banque de données > Fichiers > Nouveau dossier`{.action}.
-
-![Datastore Upload 1](images/datastore_4.png){.thumbnail}
-
-Cliquez sur `OK`{.action} pour créer le dossier.
+![Datastore Upload](images/datastore_4.png){.thumbnail}
 
 ## Aller plus loin
 
