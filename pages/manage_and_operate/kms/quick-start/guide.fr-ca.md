@@ -1,7 +1,7 @@
 ---
 title: "Premiers pas avec OVHcloud Key Management Service (KMS)"
 excerpt: "Mettez en oeuvre votre OVHcloud KMS"
-updated: 2024-09-03
+updated: 2024-09-13
 ---
 
 > [!warning]
@@ -647,19 +647,19 @@ Ensuite, vous devez l'importer dans votre navigateur Web.
 ##### Sur Firefox
 
 - Tapez `about:preferences#privacy` dans la barre d'adresse.
-- Faites défiler vers le bas jusqu'à atteindre une section intitulée `Certificates`.
+- Faites défiler vers le bas jusqu'à atteindre une section intitulée `Certificates`{.action}.
 
 ![firefox-cert-manager](images/firefox-cert-manager.png){.thumbnail}
 
-- Cliquez sur `View Certificates...` pour ouvrir le gestionnaire de certificats.
-- Accédez à l'onglet intitulé `My Certificates`, puis `Import...` et sélectionnez l'emplacement de votre fichier `client.p12`.
+- Cliquez sur `View Certificates...`{.action} pour ouvrir le gestionnaire de certificats.
+- Accédez à l'onglet intitulé `My Certificates`{.action}, puis `Import...`{.action} et sélectionnez l'emplacement de votre fichier `client.p12`.
 - Vous serez invité à entrer le mot de passe que vous avez utilisé lors de la création du fichier PKCS#12.
 - Après avoir entré le mot de passe, votre certificat sera importé et prêt à l'emploi.
 
 ##### Sur Chrome/Chromium
 
 - Tapez `chrome://settings/certificates` dans la barre d'adresse.
-- Accédez à l'onglet `Your certificates`. Cliquez sur `Import` et sélectionnez votre fichier `client.p12`.
+- Accédez à l'onglet `Your certificates`{.action}. Cliquez sur `Import`{.action} et sélectionnez votre fichier `client.p12`.
 - Vous serez invité à entrer le mot de passe que vous avez utilisé lors de la création du fichier PKCS#12.
 - Après avoir entré le mot de passe, votre certificat sera importé et prêt à l'emploi.
 
