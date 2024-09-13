@@ -1,6 +1,6 @@
 ---
-title: "Logs Data Platform - Activer le Log forwarder managé"
-excerpt: "Découvrez comment souscrire un abonnement Logs Data Platform vSphere managé et activer le log forwarder interne afin de pousser les journaux VMware vers un stream LDP"
+title: "Logs Data Platform - Activer le log forwarder VMware on OVHcloud"
+excerpt: "Découvrez comment souscrire un abonnement Logs Data Platform et activer le log forwarder afin de pousser les journaux VMware vSphere on OVHcloud vers un stream"
 updated: 2024-09-13
 ---
 
@@ -10,12 +10,12 @@ updated: 2024-09-13
 
 ## Objectif
 
-**L'objectif est de vous montrer comment activer le transfert des logs VMware vSphere managé vers un stream Logs Data Platform.**
+**L'objectif est de vous montrer comment activer le transfert des logs VMware vSphere on OVHcloud vers un stream Logs Data Platform.**
 
 ## Prérequis
 
 - Disposer d'un [compte client OVHcloud](/links/manager).
-- Disposer d'une offre [Hosted Private Cloud](/links/hosted-private-cloud/vmware)
+- Disposer d'une offre VMware vSphere on OVHcloud.
 - Avoir suivi le guide « [Introduction à Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP) ».
 - Vous devez avoir le `logForwarder` activé. Pour le vérifier, exécutez [l'appel API suivant](#security-options).
 - Un stream Logs Data Platform actif, afin de lancer la souscription au sein de votre VMware vSphere managé on OVHcloud.
