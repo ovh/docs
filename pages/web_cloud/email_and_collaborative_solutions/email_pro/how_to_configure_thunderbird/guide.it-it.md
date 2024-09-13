@@ -53,7 +53,7 @@ Nell'ambito di una configurazione in **POP**, i valori sono i seguenti:
 |Tipo di server|Nome del server|Metodo di cifratura|Porta|
 |---|---|---|---|
 |In entrata|pro**?**.mail.ovh.net (la menzione **"?"** è da sostituire con il numero del tuo server)|SSL/TLS|995|
-|In uscita|pro**?**.mail.ovh.net (la menzione **"?"** è da sostituire con il numero del tuo server)|STARTTLS|857|
+|In uscita|pro**?**.mail.ovh.net (la menzione **"?"** è da sostituire con il numero del tuo server)|STARTTLS|587|
 
 ### Utilizza l'indirizzo email
 
