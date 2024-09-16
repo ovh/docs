@@ -11,7 +11,7 @@ updated: 2024-09-16
 
 ## Objectif
 
-**L’objectif de ce guide est de fournir de l'information sur les migrations vers VMware Cloud Director on OVHcloud.**
+**L’objectif de ce guide est de vous fournir les informations nécessaires sur les migrations vers VMware Cloud Director on OVHcloud.**
 
 ## Prérequis
 
@@ -44,7 +44,7 @@ Pour rappel, si vous décidez de passer à l’offre VCD, les nouveaux tarifs ne
 > 
 > La migration de vos environnements actuels VMware vSphere on OVHcloud peut être réalisée dès réception de votre demande.
 > 
-> **Important** : les conditions particulières disponibles depuis début septembre 2024 dans l'espace client doivent être signées pour que la migration soit réalisée par les équipes OVHcloud (C&P).
+> **Important** : les conditions particulières (C&P) disponibles depuis début septembre 2024 dans l'espace client doivent être signées pour que la migration soit réalisée par les équipes OVHcloud.
 >
 
 Nous vous invitons à revoir la démonstration du produit et le webinaire pour vous familiariser avec cette nouvelle offre.
