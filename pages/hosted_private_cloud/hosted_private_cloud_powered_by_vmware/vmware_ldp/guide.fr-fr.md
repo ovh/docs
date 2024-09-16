@@ -50,7 +50,7 @@ Ils sont les types de logs que vous voulez transférer à votre stream Logs Data
 > [!warning]
 > Si le pack `logForwarder` n'est pas activé au sein de votre pack de base d'options (base ou advanced security), [contactez le support OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
 > 
-> Si vous voulez la fonctionnalité `logForwarder` sans les packs de base et de sécurité avancées, [contactez le support OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help) pour l'activer manuellement.
+> Si vous souhaitez utiliser la fonctionnalité `logForwarder` sans les packs de base et de sécurité avancée, [contactez le support OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help) pour l'activer manuellement.
 >
 
 #### Via l'API OVHcloud <a name="security-options"></a>
