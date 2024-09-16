@@ -213,7 +213,7 @@ La requête GET permet de lister les stream ID au sein de votre souscription.
 > Si vous voulez connaitre tous les services et fonctionnalités que propose Log Data Plaform, consultez la page dédiée via [ce lien](/links/manage-operate/ldp).
 > 
 
-L'administration de vos streams LDP peuvent être fait depuis l'API OVHcloud, depuis l'espace client Bare Metal Logs Data Platform, depuis l'UI Graylog, depuis l'UI OpenSearch et bientôt dans l'espace client.
+L'administration de vos streams LDP peut être faite depuis l'API OVHcloud, depuis la partie `Bare Metal`{.action} >  `Logs Data Platform`{.action} de l'espace client OVHcloud, depuis l'UI Graylog, depuis l'UI OpenSearch.
 
 #### Via l'espace client OVHcloud
 
