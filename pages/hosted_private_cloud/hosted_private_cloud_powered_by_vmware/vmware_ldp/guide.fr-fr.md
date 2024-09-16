@@ -109,7 +109,7 @@ Vous pouvez vous référer à ce guide pour retrouver comment créer un stream d
 
 #### Via l'API OVHcloud
 
-Pour la création d'un stream, un `serviceName` LDP est nécessaire. Ce service Name fait reference à un ID unique de votre compte LDP, e.g. (`ldp-xx-XXXXX`)
+Pour la création d'un stream, un `serviceName` LDP est nécessaire. Ce `serviceName` fait reference à un ID unique de votre compte LDP (par exemple `ldp-xx-XXXXX`).
 
 Vous devez donc préalablement avoir un compte LDP temporaire pour la création d'un stream temporaire.
 
