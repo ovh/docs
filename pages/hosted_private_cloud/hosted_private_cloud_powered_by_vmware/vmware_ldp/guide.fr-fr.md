@@ -177,7 +177,7 @@ Utilisez les appels API suivants pour établir la liste des abonnements de votre
 |     GET     | /dedicatedCloud/{serviceName}/log/kind                         | Types de logs pour votre service               |
 |     GET     | /dedicatedCloud/{serviceName}/log/kind/{name}                  | Obtenir les propriétés de cet objet            |
 |     GET     | /dedicatedCloud/{serviceName}/log/subscription                 | Inscrivez-vous pour votre service              |
-|    POST     | /dedicatedCloud/{serviceName}/log/subscription                 | Créez un abonnement log pour votre service     |
+|    POST     | /dedicatedCloud/{serviceName}/log/subscription                 | Créez un abonnement LDP pour votre service     |
 |     GET     | /dedicatedCloud/{serviceName}/log/subscription                 | Obtenir les propriétés de cet objet            |
 |   DELETE    | /dedicatedCloud/{serviceName}/log/subscription                 | Supprimer un abonnement log pour votre service |
 
