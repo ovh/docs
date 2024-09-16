@@ -1,7 +1,7 @@
 ---
 title: Object Storage - FAQ
 excerpt: "FAQ sur la solution Object Storage"
-updated: 2024-06-21
+updated: 2024-09-16
 ---
 
 ## Questions générales
@@ -157,6 +157,8 @@ Vous pouvez choisir de synchroniser vos données d'une région à une autre en u
 
 - [Utiliser S3 Object Storage avec rClone](/pages/storage_and_backup/object_storage/s3_rclone)
 - [Utiliser Object Storage Swift avec rClone](/pages/storage_and_backup/object_storage/pcs_sync_rclone_object_storage)
+
+Vous pouvez également utiliser la fonction de réplication asynchrone disponible sur les buckets S3 object storage. Suivez [ce guide](/pages/storage_and_backup/object_storage/s3_asynchronous_replication) pour obtenir plus de détails sur cette fonctionnalité.
 
 ### Est-il possible de gérer les cycles de vie de la donnée ?
 
