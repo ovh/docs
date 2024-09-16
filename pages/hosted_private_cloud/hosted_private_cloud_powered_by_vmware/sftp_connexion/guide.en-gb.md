@@ -1,6 +1,6 @@
 ---
-title: 'Logging in via SFTP'
-excerpt: 'Find out how to log in to your Private Cloud via SFTP'
+title: "Logging in via SFTP"
+excerpt: "Find out how to log in to your managed VMware vSphere via SFTP"
 updated: 2024-09-16
 ---
 
