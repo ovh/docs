@@ -328,7 +328,7 @@ Exemples de retours pour différents Kind :
 > [!primary]
 > La résiliation de votre abonnement Logs Data Platform VMware on OVHcloud ne signifie pas la suppression de vos streams. Le stockage consommé au moment de la désactivation reste soumis à facturation.
 >
-> **Note** : Il n'est possible (à ce jour) que de supprimer un stream dans son intégralité (en entier) et non certains inputs granulaires.
+> **Note** : à date, seule la suppression intégrale d'un stream est possible.  Il n'est possible de supprimer uniquement certains inputs granulaires.
 >
 
 > [!api]
