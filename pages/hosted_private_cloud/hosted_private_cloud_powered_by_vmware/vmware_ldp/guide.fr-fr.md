@@ -179,7 +179,7 @@ Utilisez les appels API suivants pour établir la liste des abonnements de votre
 |     GET     | /dedicatedCloud/{serviceName}/log/subscription                 | Inscrivez-vous pour votre service              |
 |    POST     | /dedicatedCloud/{serviceName}/log/subscription                 | Créez un abonnement LDP pour votre service     |
 |     GET     | /dedicatedCloud/{serviceName}/log/subscription                 | Obtenir les propriétés de cet objet            |
-|   DELETE    | /dedicatedCloud/{serviceName}/log/subscription                 | Supprimer un abonnement log pour votre service |
+|   DELETE    | /dedicatedCloud/{serviceName}/log/subscription                 | Supprimer un abonnement LDP pour votre service |
 
 Pour récupérer le **streamId** de votre compte LDP, consultez le guide « [Premiers pas Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) ».
 
