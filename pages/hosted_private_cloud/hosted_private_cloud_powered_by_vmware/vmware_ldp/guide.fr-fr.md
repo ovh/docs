@@ -1,6 +1,6 @@
 ---
 title: "Logs Data Platform - Collection les logs VMware on OVHcloud"
-excerpt: "Découvrez comment souscrire un abonnement Logs Data Platform et activer le log forwarder afin de transférer les journaux VMware on OVHcloud vers un stream LDP"
+excerpt: "Découvrez comment souscrire un abonnement et activer le log forwarder afin de transférer les journaux VMware on OVHcloud vers un stream Logs Data Platform"
 updated: 2024-09-16
 ---
 
@@ -10,7 +10,7 @@ updated: 2024-09-16
 
 ## Objectif
 
-**L'objectif est de vous montrer comment activer le transfert des logs VMware vSphere on OVHcloud vers un stream Logs Data Platform.**
+**L'objectif est de vous montrer comment collecter les logs VMware vSphere on OVHcloud dans un stream Logs Data Platform.**
 
 ## Prérequis
 
