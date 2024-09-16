@@ -11,7 +11,7 @@ updated: 2024-09-16
 
 ## Objectif
 
-**L’objectif de ce guide est de fournir une procédure de migration vers VMware Cloud Director on OVHcloud.**
+**L’objectif de ce guide est de fournir de l'information sur les migrations vers VMware Cloud Director on OVHcloud.**
 
 ## Prérequis
 
@@ -24,9 +24,9 @@ Ce guide pratique a pour but de vous fournir des informations et des solutions s
 
 Il détaille également les prérequis pour chaque cas d'utilisation et le cas échéant, vous explique les éxigences pour migrer.
 
-|                                  **Images**                                   | **Étapes**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-|:-----------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ![VCD Migration Bloc](images/vcd_migration_bloc_validation_en.png){thumbnail} | 1. Avant toute migration, il est important de vérifier la checklist des cas d'utilisations particuliers ci-dessous et de vous conformer aux recommandations associées.<br/>2. Une fois que vous aurez rempli ces exigences, vous pouvez vous connecter à l'espace client OVHcloud afin de signer (dans le bloc prévu à cet effet) les conditions particulières de l'environnement prévu à être migré (T&C).<br/>3. Les équipes OVHcloud migreront les VMs du datacenter (vDC) VMware vSphere on OVHcloud principal en utilisant un chemin de migration à chaud (vMotion).<br/> |
+|                                  **Images**                                   | **Étapes**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+|:-----------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ![VCD Migration Bloc](images/vcd_migration_bloc_validation_en.png){thumbnail} | 1. Avant toute migration, il est important de vérifier la checklist des cas d'utilisations particuliers ci-dessous et de vous conformer aux recommandations associées.<br/>2. Une fois que vous aurez rempli ces exigences, vous pouvez vous connecter à l'espace client OVHcloud afin de signer (dans le bloc prévu à cet effet) les conditions particulières de l'environnement prévu à être migré (C&P). Un e-mail de confirmation vous sera envoyé avec un lien et un mot de passe temporaire pour accéder à VCD on OVHcloud<br/>3. Les équipes OVHcloud migreront les VMs du datacenter (vDC) choisie, en utilisant un chemin de migration à chaud (vMotion).<br/> |
 
 Ce déplacement à chaud permettra de limiter au minimum les coupures de vos réseaux publics ou privés. Les réseaux privés sont les plus susceptibles d'être affectés, de l'ordre de quelques minutes de coupure.
 
@@ -44,7 +44,7 @@ Pour rappel, si vous décidez de passer à l’offre VCD, les nouveaux tarifs ne
 > 
 > La migration de vos environnements actuels VMware vSphere on OVHcloud peut être réalisée dès réception de votre demande.
 > 
-> **Important** : les conditions particulières disponibles depuis début septembre 2024 dans l'espace client doivent être signées pour que la migration soit réalisée par les équipes OVHcloud.
+> **Important** : les conditions particulières disponibles depuis début septembre 2024 dans l'espace client doivent être signées pour que la migration soit réalisée par les équipes OVHcloud (C&P).
 >
 
 Nous vous invitons à revoir la démonstration du produit et le webinaire pour vous familiariser avec cette nouvelle offre.
@@ -79,7 +79,7 @@ Nous vous invitons à lire le guide [VMware Cloud Director - Les concepts fondam
 >
 > Les demandes de migration faites après le 1er septembre 2024 ont les mêmes prérequis que pour toutes les autres demandes de migrations évoquées dans ce guide.
 >
-> Vous devrez faire votre demande par le biais d'un [ticket au support](https://help.ovhcloud.com/csm?id=csm_get_help), ce qui vous permettra d'obtenir toutes les informations et de signer les termes et conditions de l'offre.
+> Vous devrez faire votre demande par le biais d'un [ticket au support](https://help.ovhcloud.com/csm?id=csm_get_help), ce qui vous permettra d'obtenir toutes les informations et de signer les termes et conditions de l'offre (C&P).
 >
 
 Nous vous informerons ensuite de la date de migration et réaliserons celle-ci. 
@@ -131,7 +131,7 @@ Voici un rappel des tâches qu'il vous reste à mener, une fois la migration eff
 
 **Configuration du répertoire de stockage**
 
-Après la migration, vous devrez configurer votre nouvelle implémentation de stockage **Veeam Data Plateform** avec les paramètres adéquats.
+Après la migration, vous devrez configurer votre nouvelle implémentation de stockage **Veeam Data Platform** avec les paramètres adéquats.
 
 Ces paramètres pourront être personnalisés en fonction des niveaux de services choisis :
 
