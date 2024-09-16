@@ -1,7 +1,7 @@
 ---
 title: Object Storage - FAQ
 excerpt: "Frequently Asked Questions on the Object Storage solution"
-updated: 2024-06-21
+updated: 2024-09-16
 ---
 
 ## General questions
@@ -158,7 +158,7 @@ You can choose to synchronize your data from one region to another using rClone.
 - [Use S3 Object Storage with rClone](/pages/storage_and_backup/object_storage/s3_rclone)
 - [Use Swift Object Storage with rclone](/pages/storage_and_backup/object_storage/pcs_sync_rclone_object_storage)
 
-You can also use the asynchronous replication feature available on S3 object storage buckets. Follow [this guide](https://help.ovhcloud.com/csm/en-ie-public-cloud-storage-s3-asynchronous-replication-buckets?id=kb_article_view&sysparm_article=KB0062415) to get more details about the feature.
+You can also use the asynchronous replication feature available on S3 object storage buckets. Follow [this guide](/pages/storage_and_backup/object_storage/s3_asynchronous_replication) to get more details about this feature.
 
 ### Is it possible to manage data lifecycles?
 
