@@ -323,7 +323,7 @@ Exemples de retours pour différents Kind :
 }
 ```
 
-### Étape 5 - Désactiver votre abonnement de souscription Log Data Platform
+### Étape 5 - Désactiver votre abonnement de souscription Logs Data Platform
 
 > [!primary]
 > La résiliation de votre abonnement Log Data Platform VMware on OVHcloud ne signifie pas la suppression de vos streams. Le stockage consommé au moment de la désactivation reste soumis à facturation.
