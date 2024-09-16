@@ -151,7 +151,7 @@ Récupérez le `streamId` et sauvegardez-le (copier-coller) dans un éditeur de 
 
 Nous allons voir dans l'étape suivante comment attacher votre abonnement vSphere managé à un stream LDP temporaire.
 
-### Étape 3 - Souscription de l'abonnement Logs Data Platform
+### Étape 3 - Souscription de l'abonnement Logs Data Platform pour VMware on OVHcloud
 
 > [!warning]
 > Pour disposer d'une souscription Logs Data Platform active avec VMware on OVHcloud, vous devez avoir un stream actif. 
@@ -171,16 +171,16 @@ Utilisez les appels API suivants pour établir la liste des abonnements de votre
 
 **Référencement des appels API :**
 
-| **Méthode** | **Chemin**                                                     | **Description**                                |
-|:-----------:|:---------------------------------------------------------------|:-----------------------------------------------|
-|     GET     | /dedicatedCloud/{serviceName}/log/kind                         | Types de logs pour votre service               |
-|     GET     | /dedicatedCloud/{serviceName}/log/kind/{name}                  | Obtenir les propriétés de cet objet            |
-|     GET     | /dedicatedCloud/{serviceName}/log/subscription                 | Inscrivez-vous pour votre service              |
-|    POST     | /dedicatedCloud/{serviceName}/log/subscription                 | Créez un abonnement LDP pour votre service     |
-|     GET     | /dedicatedCloud/{serviceName}/log/subscription                 | Obtenir les propriétés de cet objet            |
-|   DELETE    | /dedicatedCloud/{serviceName}/log/subscription                 | Supprimer un abonnement LDP pour votre service |
+| **Méthode** | **Chemin**                                                     | **Description**                                                      |
+|:-----------:|:---------------------------------------------------------------|:---------------------------------------------------------------------|
+|     GET     | /dedicatedCloud/{serviceName}/log/kind                         | - lister les types de log kind pour votre service VMware on OVHcloud |
+|     GET     | /dedicatedCloud/{serviceName}/log/kind/{name}                  | - Listez les Kind name disponibles                                   |
+|     GET     | /dedicatedCloud/{serviceName}/log/subscription                 | - Listez vos souscriptions VMware on OVHcloud                        |
+|    POST     | /dedicatedCloud/{serviceName}/log/subscription                 | - Créez un abonnement LDP pour votre service VMware on OVHcloud      |
+|     GET     | /dedicatedCloud/{serviceName}/log/subscription                 | - Lister les propriétés de cet objet                                 |
+|   DELETE    | /dedicatedCloud/{serviceName}/log/subscription                 | - Supprimer un abonnement LDP pour votre service VMware on OVHcloud  |
 
-Pour récupérer le **streamId** de votre compte LDP, consultez le guide « [Quick start for Logs Data Platform (EN)](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) ».
+Pour récupérer le **streamId** de votre compte LDP, consultez le guide « [Quick start for Logs Data Platform (EN)](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) »
 
 > [!api]
 > 

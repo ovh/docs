@@ -10,7 +10,7 @@ updated: 2024-09-16
 
 ## Objective
 
-**The goal is to show you how to collect VMware on OVHcloud logs in a Logs Data Platform stream.**
+**The goal is to show you how to collect VMware on OVHcloud logs into a Logs Data Platform stream.**
 
 ## Requirements
 
@@ -20,7 +20,7 @@ updated: 2024-09-16
 - You must have the `logForwarder` enabled. To verify this, run [the following API call](#security-options).
 - An active Logs Data Platform, to launch the subscription within your VMware vSphere managed on OVHcloud.
 
-## In practice
+## Instructions
 
 > [!primary]
 > Please note that enabling **log forwarding** is free.
@@ -45,7 +45,7 @@ These are the types of logs you want to transfer to your Logs Data Platform. Her
 - `vcsa`: Filtered by application.
 - `nsxtManager`: Filtered by application.
 
-### Step 1 - Enable Log Forwarder in a VMware vSphere on OVHcloud
+### Step 1 - Enable Log Forwarder for VMware on OVHcloud
 
 > [!warning]
 > If the `logForwarder` pack is not activated within your options base pack (base or advanced security), [contact OVHcloud support](https://help.ovhcloud.com/csm?id=csm_get_help).
@@ -93,7 +93,7 @@ reason: null
 ]
 ```
 
-### Step 2 - Create a Log Data Platform stream
+### Step 2 - Create a Logs Data Platform stream
 
 > [!primary]
 > VMware on OVHcloud and Logs Data Platform resources must belong to the same OVHcloud account.
@@ -152,7 +152,7 @@ Retrieve the `streamId` and save it (copy and paste) in a text editor. You will 
 
 In the next step, we will look at how to attach your managed vSphere subscription to a temporary LDP stream.
 
-### Step 3 - Logs Data Platform subscription
+### Step 3 - Logs Data Platform subscription for VMware on OVHcloud
 
 > [!warning]
 > To have an active Logs Data Platform subscription with VMware on OVHcloud, you must have an active stream.
@@ -172,16 +172,16 @@ Use the following API calls to list subscriptions for your VMware on OVHcloud ac
 
 **Referencing API calls:**
 
-| **Method** | **Path**                                                     | **Description**                                |
-|:------------:|:---------------------------------------------------------------------------------------------------------|
-|     GET     | /dedicatedCloud/{serviceName}/log/kind                         | Types of logs for your service               |
-|     GET     | /dedicatedCloud/{serviceName}/log/kind/{name}                  | Get properties of this object            |
-|     GET     | /dedicatedCloud/{serviceName}/log/subscription                 | Sign up for your service              |
-|    POST     | /dedicatedCloud/{serviceName}/log/subscription                 | Create an LDP subscription for your service     |
-|     GET     | /dedicatedCloud/{serviceName}/log/subscription                 | Get properties of this object            |
-|   DELETE    | /dedicatedCloud/{serviceName}/log/subscription                 | Delete an LDP subscription for your service |
+| **Method** | **Path**                                                                                               | **Description**                                             |
+|:------------:|:-------------------------------------------------------------------------------------------------------|:------------------------------------------------------------|
+|     GET     | /dedicatedCloud/{serviceName}/log/kind                                                                 | - List all Log kind available for your VMware on OVHcloud   |
+|     GET     | /dedicatedCloud/{serviceName}/log/kind/{name}                                                          | - List availables kind name (ESXI/NSX-T EDGE, MANAGER/VCSA) |
+|     GET     | /dedicatedCloud/{serviceName}/log/subscription                                                         | - List your VMware on OVHcloud subcriptions                 |
+|    POST     | /dedicatedCloud/{serviceName}/log/subscription                                                         | - Create an LDP VMware OVHcloud subscription                |
+|     GET     | /dedicatedCloud/{serviceName}/log/subscription                                                         | - List properties of this object                            |
+|   DELETE    | /dedicatedCloud/{serviceName}/log/subscription                                                         | - Delete an LDP VMware on OVHcloud subscription             |
 
-To retrieve the **streamId** from your LDP account, please refer to the guide “[Quick start for Logs Data Platform (EN)](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)”.
+To retrieve the **streamId** from your LDP account, please refer to the guide « [Quick start for Logs Data Platform (EN)](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) »
 
 > [!api]
 >
@@ -217,7 +217,7 @@ You can manage your LDP streams using the OVHcloud API, the `Bare Metal`{.action
 
 #### Via the OVHcloud Control Panel
 
-You can refer to this guide to find out how to manage your streams in the `Log Data Platform`{.action} section of the OVHcloud Control Panel: “[Quick start for Logs Data Platform (EN)](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)”.
+You can refer to this guide to find out how to manage your streams in the `Log Data Platform`{.action} section of the OVHcloud Control Panel: « [Quick start for Logs Data Platform (EN)](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) »
 
 #### Via the OVHcloud API
 
@@ -363,10 +363,10 @@ You will get an `operationId` which is the identifier used to confirm that the d
 
 You can refer to these guides to take advantage of the Logs Data Platform features:
 
-- [Logs Data Platform - First-step documentation (EN)](/products/observability-logs-data-platform-getting-started))
-- [View your logs in a Grafana dashboard (EN)](/pages/manage_and_operate/observability/logs_data_platform/visualization_grafana)
-- [Use the "LDP Tail" cli to watch your logs live (EN)](/pages/manage_and_operate/observability/logs_data_platform/cli_ldp_tail)
-- [Push logs from Apache to LDP (EN)](/pages/manage_and_operate/observability/logs_data_platform/ingestion_apache)
+- [Logs Data Platform - First-step documentation](/products/observability-logs-data-platform-getting-started))
+- [View your logs in a Grafana dashboard](/pages/manage_and_operate/observability/logs_data_platform/visualization_grafana)
+- [Use the "LDP Tail" cli to watch your logs live](/pages/manage_and_operate/observability/logs_data_platform/cli_ldp_tail)
+- [Push logs from Apache to LDP](/pages/manage_and_operate/observability/logs_data_platform/ingestion_apache)
 
 If you require training or technical support to implement our solutions, please contact your sales representative or click [this link](/links/professional-services) to get a quote and request a custom analysis of your project from our Professional Services team experts.
 
