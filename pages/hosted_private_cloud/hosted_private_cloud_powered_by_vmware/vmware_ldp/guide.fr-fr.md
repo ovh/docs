@@ -5,7 +5,7 @@ updated: 2024-09-16
 ---
 
 > [!primary]
-> Cette fonctionnalité est actuellement en phase Bêta. Les infrastructures Logs Data Platform ne propose pas à ce jour les mêmes niveaux de qualifications tel que SecNumCloud, PCI-DSS, HDS qu'avec un environnement VMware on OVHcloud, cependant l'activation est toujours possible.
+> Cette fonctionnalité est actuellement en phase Bêta. À date, les infrastructures Logs Data Platform ne proposent pas les mêmes niveaux de qualifications (tels que SecNumCloud, PCI-DSS, HDS) qu'avec un environnement VMware on OVHcloud. L'activation est cependant toujours possible.
 > 
 
 ## Objectif
