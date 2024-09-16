@@ -56,7 +56,7 @@ Ils sont les types de logs que vous voulez transférer à votre stream Logs Data
 #### Via l'API OVHcloud <a name="security-options"></a>
 
 > [!primary]
-> Consultez le guide [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
+> Consultez le guide « [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) » pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
 >
 
 **Référencement de tous les appels API les packs de sécurités** :
