@@ -38,7 +38,7 @@ First, check on [https://web-cloud.status-ovhcloud.com/](https://web-cloud.statu
 >
 > - To find your Web Hosting plan's data centre and filer (file server), open `Hosting plans`{.action} and select the plan concerned. The information is available in the `General information`{.action} tab.
 > - To find the **cluster** of servers on which your hosting is located, click on the `FTP-SSH`{.action} tab. The cluster identifier is part of the name of your `FTP server`.
-> - To retrieve the name of your **Web Cloud Databases** server, click on `Databases`{.action} in the left-hand menu, then on the relevant service. You can find the information concerned under the heading `Host name` in the `SQL` part of the `General information`{.action} tab.
+> - To retrieve the name of your **Web Cloud Databases** server, click on `Web Cloud Databases`{.action} in the left-hand menu, then on the relevant service. You can find the information concerned under the heading `Host name` in the `SQL` part of the `General information`{.action} tab.
 >
 
 #### Verify login credentials for your database <a name="config_file"></a>

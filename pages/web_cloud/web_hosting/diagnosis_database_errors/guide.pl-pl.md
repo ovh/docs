@@ -43,7 +43,7 @@ Sprawdź najpierw na stronie [https://web-cloud.status-ovhcloud.com/](https://we
 >
 > - Aby znaleźć `Datacenter` Twojego hostingu, wraz z `Filer` (serwer plików), wybierz `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Informacje te można znaleźć w zakładce `Informacje ogólne`{.action}.
 > - Aby odnaleźć **cluster** serwerów, na których hostowany jest Twój hosting, kliknij zakładkę `FTP-SSH`{.action}. Informacja ta pojawi się w nazwie Twojego `Serwer FTP`.
-> - Aby odnaleźć nazwę serwera **Web Cloud Databases**, kliknij przycisk `Bazy danych`{.action}, a następnie wybierz odpowiednią ofertę. Informacja ta znajduje się pod pozycją `Nazwa hosta` w polu `SQL` `Informacje na temat połączenia`.
+> - Aby odnaleźć nazwę serwera **Web Cloud Databases**, kliknij przycisk `Web Cloud Databases`{.action}, a następnie wybierz odpowiednią ofertę. Informacja ta znajduje się pod pozycją `Nazwa hosta` w polu `SQL` `Informacje na temat połączenia`.
 >
 
 #### Sprawdź dane do logowania do bazy danych <a name="config_file"></a>

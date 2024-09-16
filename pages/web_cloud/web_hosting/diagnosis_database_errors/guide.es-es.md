@@ -43,7 +43,7 @@ En primer lugar, compruebe en [https://web-cloud.status-ovhcloud.com/](https://w
 >
 > - Para encontrar el `Datacenter` de su alojamiento, así como su `Filer` (servidor de archivos), seleccione `Alojamientos`{.action} y, seguidamente, el alojamiento correspondiente. Puede consultar esta información en la pestaña `Información general`{.action}.
 > - Para consultar el **cluster** de servidores en el que se encuentra el alojamiento, abra la pestaña `FTP-SSH`{.action}. Esta información aparecerá en el nombre del servidor FTP.
-> - Para encontrar el nombre de su servidor **Web Cloud Databases**, haga clic en `Bases de datos`{.action} y seleccione el servicio correspondiente. Puede consultar esta información en la pestaña `Información general`{.action}.
+> - Para encontrar el nombre de su servidor **Web Cloud Databases**, haga clic en `Web Cloud Databases`{.action} y seleccione el servicio correspondiente. Puede consultar esta información en la pestaña `Información general`{.action}.
 >
 
 #### Comprobar las claves de conexión a su base de datos <a name="config_file"></a>
