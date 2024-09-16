@@ -170,7 +170,7 @@ Cette fonctionnalité n'est pas encore disponible dans la section VMware on OVHc
 
 Utilisez les appels API suivants pour établir la liste des abonnements de votre compte VMware on OVHcloud.
 
-**Référencement des appels API**
+**Référencement des appels API :**
 
 | **Méthode** | **Chemin**                                                     | **Description**                                |
 |:-----------:|:---------------------------------------------------------------|:-----------------------------------------------|
