@@ -1,6 +1,6 @@
 ---
-title: "Logs Data Platform - Activer le log forwarder VMware on OVHcloud"
-excerpt: "Découvrez comment souscrire un abonnement Logs Data Platform et activer le logs forwarder afin de transférer les journaux VMware on OVHcloud vers un stream LDP"
+title: "Logs Data Platform - Collection les logs VMware on OVHcloud"
+excerpt: "Découvrez comment souscrire un abonnement Logs Data Platform et activer le log forwarder afin de transférer les journaux VMware on OVHcloud vers un stream LDP"
 updated: 2024-09-16
 ---
 
@@ -119,7 +119,7 @@ Voici l'appel API de création d'un stream :
 >
 > @api {v1} /dbaas/logs POST /dbaas/logs/{serviceName}/output/graylog/stream
 >
->
+
 > **Paramètres** :
 >
 > - `description` : Description de votre stream LDP.
@@ -157,7 +157,7 @@ Nous allons voir dans l'étape suivante comment souscrire votre abonnement vSphe
 > [!warning]
 > Pour disposer d'une souscription Logs Data Platform actif avec VMware on OVHcloud, vous devez avoir un stream actif. 
 > 
-> Si vous voulez avoir un stream sur le même compte et avec le même niveau de sécurité que votre Hosted Private Cloud, vous devez faire le transfert de ce stream à celui de votre infrastructure privée (à ce jour). La responsabilité du transfert vous incombe, ainsi que du niveau de sécurité que vous voulez.
+> Si vous voulez avoir un stream sur le même compte et avec le même niveau de sécurité que votre environnement VMware on OVHcloud, vous devez faire le transfert de ce stream à celui de votre infrastructure privée (à ce jour). La responsabilité du transfert vous incombe, ainsi que du niveau de sécurité que vous voulez.
 > 
 > Vous pouvez vous referer à la [documentation Log Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_responsibility_model), si vous voulez plus d'information sur les niveaux de sécurité et de responsabilités disponibles.
 > 
@@ -213,7 +213,7 @@ La requête GET permet de lister les stream ID au sein de votre souscription.
 > Si vous voulez connaitre tous les services et fonctionnalités que propose Log Data Plaform, consultez la page OVHcloud produit de [ce lien](/links/manage-operate/ldp).
 > 
 
-L'administration de vos streams LDP peuvent être fait depuis l'API OVHcloud, depuis l'espace client Bare Metal Logs Data Platform, depuis l'UI Graylog, depuis l'UI OpenSearch et bientôt dans l'espace client manager Hosted Private Cloud.
+L'administration de vos streams LDP peuvent être fait depuis l'API OVHcloud, depuis l'espace client Bare Metal Logs Data Platform, depuis l'UI Graylog, depuis l'UI OpenSearch et bientôt dans l'espace client.
 
 #### Via l'espace client OVHcloud
 
@@ -362,7 +362,7 @@ Vous obtiendrez un `operationId` qui est l'identifiant qui permet de confirmer q
 - **Transfert de logs :** fonctionnalité intégrée à un produit OVHcloud pour ingérer les logs de ses services dans le *Data Stream* d’un compte Logs Data Platform du même compte OVHcloud. Cette fonctionnalité doit être activée par vos soins et pour votre service. Consultez cette partie du guide pour l'activer : [Étape 2 - Souscription de l'abonnement Logs Data Platform pour un vSphere managé via l'API](#activation)
 - **Abonnement à la redirection de logs :** lors de l'activation du transfert de logs pour votre service OVHcloud vers un *Data Stream* Logs Data Platform donné, un *abonnement* doit être créé et rattaché au *Data Stream* pour une gestion ultérieure.
 
-Vous pouvez consulter ces guides pour profiter des fonctionnalités Logs Data Platform Hosted Private Cloud :
+Vous pouvez consulter ces guides pour profiter des fonctionnalités Logs Data Platform :
 
 - [Logs Data Platform - Documentation de premiers pas (EN)](/products/observability-logs-data-platform-getting-started))
 - [Visualiser vos logs dans un tableau de bord Grafana (EN)](/pages/manage_and_operate/observability/logs_data_platform/visualization_grafana)
