@@ -45,16 +45,16 @@ As a reminder, if you decide to switch to the managed VCD on OVHcloud offer, the
 >
 > You can migrate your current VMware vSphere on OVHcloud environments as soon as you receive your request.
 >
-> **Important**: The special conditions available since the beginning of November 2024 in the OVHcloud Control Panel must be signed for the migration to be carried out by the OVHcloud teams.
+> **Important**: The special conditions available since the beginning of September 2024 in the OVHcloud Control Panel must be signed for the migration to be carried out by the OVHcloud teams.
 >
 
 Please review the product demo and webinar to familiarize yourself with this new offering.
 
 You can find all the information you need on our VCD pages:
 
-- [Webinar - Managed VMware Cloud Director on OVHcloud (EN)](https://vimeo.com/936590009/b52b3ba8ce)
-- [Webinar - VMware by Broadcom New Offerings and Opportunities (Video EN)](https://www.youtube.com/watch?v=aS2A9AhjnMg)
-- [Knowledge - Managed VMware Cloud Director on OVHcloud (EN)](https://www.ovhcloud.com/en/lp/vmware-vcd-evolution/)
+- [Webinar - Managed VMware Cloud Director on OVHcloud (video EN)](https://vimeo.com/936590009/b52b3ba8ce)
+- [Webinar - VMware by Broadcom New Offerings and Opportunities (video EN)](https://www.youtube.com/watch?v=aS2A9AhjnMg)
+- [OVHcloud.com - Managed VMware Cloud Director on OVHcloud (EN)](https://www.ovhcloud.com/en/lp/vmware-vcd-evolution/)
 - [OVHcloud Labs - VMware Cloud Director on OVHcloud (EN)](https://labs.ovhcloud.com/en/vmware-cloud-director/)
 
 Migrations will be carried out in 4 waves, from september, depending on the services active in your environment.
@@ -78,7 +78,7 @@ We recommend reading our guide [VMware Cloud Director - The fundamentals of VCDs
 
 > [!primary]
 >
-> Migration requests made after 01 November 2024 have the same requirements as for all other migration requests mentioned in this guide.
+> Migration requests made after 01 September 2024 have the same requirements as for all other migration requests mentioned in this guide.
 >
 > You will need to make a request via a [support ticket](https://help.ovhcloud.com/csm?id=csm_get_help), which will allow you to have all the information and sign the T&Cs.
 >
