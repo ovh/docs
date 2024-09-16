@@ -76,7 +76,7 @@ Pour vérifier les options exigées pour permettre le fonctionnement de la fonct
 > @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/securityOptions/compatibilityMatrix
 >
 
-Laissez vides les 2 champs booléens suivant`showIncompatible` et `showInternal` disponibles.
+Laissez vides les 2 champs booléens `showIncompatible` et `showInternal` disponibles.
 
 Voici un exemple de retour, si l'option exigée pour fonctionner n'est pas activée :
 
