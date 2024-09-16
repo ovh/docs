@@ -192,7 +192,7 @@ Pour récupérer le **streamId** de votre compte LDP, consultez le guide « [Qui
 >
 > - `serviceName` : Nom du service vSphere managé, (ex : `pcc-XXX-XXX-XXX-XXX`).
 > - `kind` : Kind VMware que le forwarder utilise (ex : Disponible : `nsxtEdge ┃ vcsa ┃ nsxtManager ┃ esxi`).
-> - `streamId` : Identifiant du flux (stream) de destination, e.g (uuid : `ggb8d894-c491-433e-9c87-50a8bf6fe773`).
+> - `streamId` : Identifiant du flux (stream) de destination (ex : uuid : `ggb8d894-c491-433e-9c87-50a8bf6fe773`).
 >
 
 Exemple de paramètres en input pour l'appel API :
