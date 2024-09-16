@@ -84,7 +84,10 @@ openstack subnet create --network ubika-workload --subnet-range 192.168.2.0/24 -
 
 Here, you define a subnet for the workload network, enabling efficient management of network traffic.
 
-* Create a gateway. This gateway is here only to allow the download and installation of Nginx on the test web server. It is not mandatory.
+* Create a gateway.
+
+> [!primary]
+> PCI Gateway may be required for accessing the internet from web servers, especially for tasks like software installation or remote management. However, for inbound client traffic, this component is not used.
 
 ```console
 openstack router create --external-gateway Ext-Net ubika-workload
