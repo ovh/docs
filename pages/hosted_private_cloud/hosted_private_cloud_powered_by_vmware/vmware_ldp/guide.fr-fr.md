@@ -98,7 +98,7 @@ Voici un exemple de retour, si l'option exigée pour fonctionner n'est pas activ
 > [!primary]
 > Les ressources VMware on OVHcloud et Logs Data Platform doivent bien appartenir au même compte OVHcloud.
 >
-> Vos journaux sont manipulés à des fins de sécurité et d'observabilité dans les clusters privés Logs Data Platform. Pour plus d'informations sur la tarification LDP, consultez la page LDP de [ce lien](/links/manage-operate/ldp).
+> Vos journaux sont manipulés à des fins de sécurité et d'observabilité dans les clusters privés Logs Data Platform. Pour plus d'informations sur la tarification LDP, consultez la page LDP disponible via [ce lien](/links/manage-operate/ldp).
 >
 
 Pour créer une souscription, un stream est nécessaire. Vous pouvez créer un stream temporaire afin de souscrire votre abonnement avec le `streamId` et l'appel API POST de l'étape 3.
