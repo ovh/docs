@@ -1,7 +1,7 @@
 ---
 title: "Rozwiąż najczęstsze błędy związane z bazami danych"
 excerpt: "Zdiagnozuj najczęstsze przypadki błędów związanych z bazami danych"
-updated: 2023-10-26
+updated: 2024-09-16
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2023-10-26
 
 ## Wprowadzenie 
 
-Korzystanie z baz danych może spowodować pewne nieprawidłowości na Twojej stronie WWW lub w [Panelu klienta OVHcloud](/links/manager), jak również w interfejsie [phpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#dostep-do-interfejsu-phpmyadmin).
+Korzystanie z baz danych może spowodować pewne nieprawidłowości na Twojej stronie WWW lub w [Panelu klienta OVHcloud](/links/manager), jak również w interfejsie [phpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database).
 
 **Dowiedz się, jak usunąć błędy związane z bazami danych na hostingu www OVHcloud.**
 

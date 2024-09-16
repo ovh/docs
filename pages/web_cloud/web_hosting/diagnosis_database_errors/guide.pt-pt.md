@@ -1,7 +1,7 @@
 ---
 title: "Resolver os erros mais frequentes associados às bases de dados" 
 excerpt: "Diagnosticar os casos mais comuns de erros associados às bases de dados"
-updated: 2023-10-26
+updated: 2024-09-16
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2023-10-26
 
 **Objetivo**
 
-A utilização das suas bases de dados pode dar origem a um certo número de anomalias no seu site ou no seu [Área de Cliente OVHcloud](/links/manager), bem como na interface [PhpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#aceder-a-interface-phpmyadmin).
+A utilização das suas bases de dados pode dar origem a um certo número de anomalias no seu site ou no seu [Área de Cliente OVHcloud](/links/manager), bem como na interface [PhpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database).
 
 **Descubra como resolver os erros associados às bases de dados sobre os alojamentos partilhados OVHcloud.**
 

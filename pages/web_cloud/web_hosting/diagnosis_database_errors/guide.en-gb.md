@@ -1,12 +1,12 @@
 ---
 title: "Troubleshooting common database errors"
 excerpt: "Find out how to diagnose the most common cases of database errors"
-updated: 2023-10-26
+updated: 2024-09-16
 ---
 
 ## Objective
 
-Your database usage may result in anomalies on your website or error messages in the [OVHcloud Control Panel](/links/manager), as well as on the [phpMyAdmin interface](/pages/web_cloud/web_hosting/sql_create_database#accessing-the-phpmyadmin-interface).
+Your database usage may result in anomalies on your website or error messages in the [OVHcloud Control Panel](/links/manager), as well as on the [phpMyAdmin interface](/pages/web_cloud/web_hosting/sql_create_database).
 
 **Find out how to troubleshoot database errors with OVHcloud Web Hosting plans.**
 

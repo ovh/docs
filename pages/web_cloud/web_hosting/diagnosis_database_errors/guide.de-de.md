@@ -1,7 +1,7 @@
 ---
 title: "Die häufigsten Datenbankfehler beheben"
 excerpt: "Erfahren Sie hier, wie Sie Fehler in Zusammenhang mit Datenbanken beheben"
-updated: 2023-10-26
+updated: 2024-09-16
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2023-10-26
 
 ## Ziel 
 
-Bei der Nutzung von Datenbanken können Unregelmäßigkeiten auftreten. Fehler beim Datenbankzugriff werden entweder direkt auf Ihrer Website oder in Ihrem [OVHcloud Kundencenter](/links/manager) sowie im [phpMyAdmin Interface](/pages/web_cloud/web_hosting/sql_create_database#auf-das-phpmyadmin-interface-zugreifen) angezeigt.
+Bei der Nutzung von Datenbanken können Unregelmäßigkeiten auftreten. Fehler beim Datenbankzugriff werden entweder direkt auf Ihrer Website oder in Ihrem [OVHcloud Kundencenter](/links/manager) sowie im [phpMyAdmin Interface](/pages/web_cloud/web_hosting/sql_create_database) angezeigt.
 
 **Diese Anleitung erklärt, wie Sie Fehler bei der Verwendung von Datenbanken mit OVHcloud Webhostings beheben können.**
 
