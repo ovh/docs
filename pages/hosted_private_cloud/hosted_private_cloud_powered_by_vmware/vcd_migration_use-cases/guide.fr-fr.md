@@ -1,9 +1,8 @@
 ---
 title: "VMware Cloud Director - Migration depuis VMware vSphere on OVHcloud"
 excerpt: "Découvrez comment vous préparer à migrer depuis VMware vSphere on OVHcloud vers une offre basée sur un environnement VMware Cloud Director (VCD) on OVHcloud"
-updated: 2024-09-13
+updated: 2024-09-16
 ---
-
 
 > [!primary]
 >
@@ -43,7 +42,7 @@ Pour rappel, si vous décidez de passer à l’offre VCD, les nouveaux tarifs ne
 
 > [!primary]
 > 
-> La migration de vos environnements actuels VMware vSphere on OVHcloud peut être réalisée dès réception de votre demande. 
+> La migration de vos environnements actuels VMware vSphere on OVHcloud peut être réalisée dès réception de votre demande.
 > 
 > **Important** : les conditions particulières disponibles depuis début septembre 2024 dans l'espace client doivent être signées pour que la migration soit réalisée par les équipes OVHcloud.
 >
@@ -53,7 +52,7 @@ Nous vous invitons à revoir la démonstration du produit et le webinaire pour v
 Vous retrouverez toutes les informations nécessaires sur nos pages dédiées à VCD :
 
 - [Webinar - Managed VMware Cloud Director on OVHcloud (vidéo EN)](https://vimeo.com/936590009/b52b3ba8ce)
-- [Webinar - VMware by Broadcom New Offerings and Opportunities (video EN)](https://www.youtube.com/watch?v=aS2A9AhjnMg)
+- [Webinar - VMware by Broadcom New Offerings and Opportunities (vidéo EN)](https://www.youtube.com/watch?v=aS2A9AhjnMg)
 - [OVHcloud.com - VMware Cloud Director on OVHcloud (FR)](https://www.ovhcloud.com/fr/lp/vmware-vcd-evolution/)
 - [OVHcloud Labs - VMware Cloud Director on OVHcloud (EN)](https://labs.ovhcloud.com/en/vmware-cloud-director/)
 
@@ -64,7 +63,7 @@ Le calendrier prévisionnel, compatible avec ces environnements lors de la migra
 | **Vagues** |     **Dates**     | **Offres cible** | **NSX** | **vRack** | **vSAN** | **Microsoft (SPLA)<br/>on OVHcloud** | **Résumé des environnements compatibles avec la migration**                                                                                          |                                                                                                                
 |:----------:|:-----------------:|:----------------:|:-------:|:---------:|:--------:|:------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------|
 |     ❶      | **Novembre 2024** |    `Standard`    |    ❌    |     ❌     |    ❌     |                  ❌                   | - **Sans** licence VM Microsoft Windows (SPLA) fournie par OVHcloud<br/>- **Sans** NSX<br/>- **Sans** High performance storage (vSAN)                 |
-|     ❷      | **Decembre 2024** |    `Standard`    |    ❌    |     ❌     |    ❌     |                  ✅                   | - **Avec** licence VM Microsoft Windows (SPLA) fournie par OVHcloud<br/>- **Sans** NSX<br/>- **Sans** High performance storage (vSAN)                 |
+|     ❷      | **Décembre 2024** |    `Standard`    |    ❌    |     ❌     |    ❌     |                  ✅                   | - **Avec** licence VM Microsoft Windows (SPLA) fournie par OVHcloud<br/>- **Sans** NSX<br/>- **Sans** High performance storage (vSAN)                 |
 |     ❸      | **Janvier 2024**  |    `Advanced`    |    ✅    |     ✅     |    ❌     |                  ✅                   | - **Avec** licence VM Microsoft Windows (SPLA) fournie par OVHcloud<br/>- **Avec** NSX + vRack support<br/>- **Sans** High performance storage (vSAN) |
 |     ❹      | **Février 2024**  |    `Premium`     |    ✅    |     ✅     |    ✅     |                  ✅                   | - **Avec** licence Microsoft Windows (SPLA) fournie par OVHcloud<br/>- **Avec** NSX + vRack support<br/>- **Avec** High performance storage (vSAN)    |
 
@@ -80,12 +79,12 @@ Nous vous invitons à lire le guide [VMware Cloud Director - Les concepts fondam
 >
 > Les demandes de migration faites après le 1er septembre 2024 ont les mêmes prérequis que pour toutes les autres demandes de migrations évoquées dans ce guide.
 >
-> Vous devrez faire votre demande par le biais d'un [ticket au support](https://help.ovhcloud.com/csm?id=csm_get_help), ce qui vous permettra d'avoir toutes les informations et de signer les T&C.
+> Vous devrez faire votre demande par le biais d'un [ticket au support](https://help.ovhcloud.com/csm?id=csm_get_help), ce qui vous permettra d'obtenir toutes les informations et de signer les termes et conditions de l'offre.
 >
 
 Nous vous informerons ensuite de la date de migration et réaliserons celle-ci. 
 
-Pour rappel, vous pourrez consulter et accepter les Conditions particulières de l'offre VCD on OVHcloud depuis septembre dans votre espace client.
+Pour rappel, vous pouvez consulter et accepter les conditions particulières de l'offre VCD on OVHcloud dans votre espace client depuis début septembre.
 
 #### Checklist avant migration
 
@@ -142,7 +141,7 @@ Ces paramètres pourront être personnalisés en fonction des niveaux de service
 | 🥈 `Silver Repository (100 To)`        |    `Advanced`    | - **Standard Object Storage** avec copie de sauvegarde hors site                                    |
 | 🥇 `Gold Repository (100 To)`          |    `Premium`     | - **High Performance Object Storage** avec copie de sauvegarde hors site et 14 points d’immuabilité |
 
-Tous ces dépots ont un quota de stockage de **100 To**. Vous pouvez contacter les équipes de [support](https://help.ovhcloud.com/csm?id=csm_get_help) pour augmenter ce quota.
+Tous ces dépôts (*repositories*) ont un quota de stockage de **100 To**. Vous pouvez contacter les équipes de [support](https://help.ovhcloud.com/csm?id=csm_get_help) pour augmenter ce quota.
 
 Pour plus d'informations, consultez le guide : [VMware Cloud Director - Sauvegarde avec Veeam Data Platform](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-backup)
 
