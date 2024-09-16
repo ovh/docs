@@ -23,7 +23,7 @@ Durante l’installazione o la reinstallazione di una distribuzione Windows, vie
 
 ## Prerequisiti
 
-- Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/){.external} Windows
+- Disporre di un [server dedicato](/links/bare-metal/bare-metal){.external} Windows
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 
 ## Procedura

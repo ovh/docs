@@ -47,7 +47,7 @@ Alguns elementos estão predefinidos:
 
 Defina o nome da nova instância, a chave SSH, o vRack e o período de faturação e clique no botão `Criar a instância`{.action}.
 
-Para mais informações sobre a criação de uma instância, consulte [este guia](/pages/public_cloud/compute/public-cloud-first-steps#3o-passo-criacao-de-uma-instancia).
+Para mais informações sobre a criação de uma instância, consulte [este guia](/pages/public_cloud/compute/public-cloud-first-steps).
 
 > [!primary]
 >

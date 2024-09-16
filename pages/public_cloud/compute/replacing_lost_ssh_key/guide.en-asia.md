@@ -27,7 +27,7 @@ However, you can still connect to your instance via the OVHcloud rescue mode, wh
 
 ### Step 1: Create a new key pair
 
-Create a new SSH key pair on your local device, as described in the first part of the [SSH key guide](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
+Create a new SSH key pair on your local device, as described in the first part of the [SSH key guide](/pages/public_cloud/compute/creating-ssh-keys-pci).
 
 ### Step 2: Access your instance in rescue mode
 

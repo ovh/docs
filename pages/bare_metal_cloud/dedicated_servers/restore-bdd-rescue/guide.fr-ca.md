@@ -12,7 +12,7 @@ Le mode Rescue permet d'accéder à vos données en permanence, même si le syst
 
 ## Prérequis
 
-- Un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/), un [VPS](https://www.ovhcloud.com/fr-ca/vps/) ou une instance [Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/) dans votre compte OVHcloud (hors systèmes Windows)
+- Un [serveur dédié](/links/bare-metal/bare-metal), un [VPS](https://www.ovhcloud.com/fr-ca/vps/) ou une instance [Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/) dans votre compte OVHcloud (hors systèmes Windows)
 - Être connecté à votre [espace client OVHcloud](/links/manager)
 
 > [!warning]

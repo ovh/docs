@@ -6,7 +6,7 @@ updated: 2024-07-15
 
 > [!primary]
 >
-> Since October 6th, 2022 our service "Failover IP" is named [Additional IP](https://www.ovhcloud.com/en/network/additional-ip/). This renaming has no effect on its technical features.
+> Since October 6th, 2022 our service "Failover IP" is named [Additional IP](/links/network/additional-ip). This renaming has no effect on its technical features.
 >
 
 ## Objective
@@ -20,7 +20,7 @@ Bridged networking can be used to configure your virtual machines. Some tweaking
 ## Requirements
 
 - A dedicated server with a hypervisor installed (e.g. [VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox, etc.)
-- At least one [Additional IP address](https://www.ovhcloud.com/en/bare-metal/ip/) attached to the server
+- At least one [Additional IP address](/links/network/additional-ip) attached to the server
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]

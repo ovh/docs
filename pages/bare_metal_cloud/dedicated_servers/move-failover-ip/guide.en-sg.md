@@ -6,7 +6,7 @@ updated: 2022-12-20
 
 > [!primary]
 >
-> Since October 6th, 2022 our service "Failover IP" is named [Additional IP](https://www.ovhcloud.com/en-sg/network/additional-ip/). This renaming has no effect on its technical features.
+> Since October 6th, 2022 our service "Failover IP" is named [Additional IP](/links/network/additional-ip). This renaming has no effect on its technical features.
 >
 
 ## Objective
@@ -24,8 +24,8 @@ With this technology, you can switch IP addresses from one solution to another i
 
 ## Requirements
 
-- A [dedicated server](https://www.ovhcloud.com/en-sg/bare-metal/) in your OVHcloud account
-- An [Additional IP address](https://www.ovhcloud.com/en-sg/bare-metal/ip/)
+- A [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account
+- An [Additional IP address](/links/network/additional-ip)
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]

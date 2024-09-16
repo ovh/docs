@@ -6,11 +6,11 @@ updated: 2024-08-13
 
 ## Objective
 
-Fully automating OS installation or reinstallation on a [dedicated server](https://www.ovhcloud.com/en/bare-metal/) with the [OVHcloud API](/pages/manage_and_operate/api/first-steps) can be interesting in various situations.
+Fully automating OS installation or reinstallation on a [dedicated server](/links/bare-metal/bare-metal) with the [OVHcloud API](/pages/manage_and_operate/api/first-steps) can be interesting in various situations.
 
 ## Requirements
 
-- A [dedicated server](https://www.ovhcloud.com/en/bare-metal/) in your OVHcloud account
+- A [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account
 - Access to the [OVHcloud API](/pages/manage_and_operate/api/first-steps)
 
 > [!warning]
@@ -24,7 +24,7 @@ Fully automating OS installation or reinstallation on a [dedicated server](https
 
 Log in to the [API console](https://api.ovh.com/) and go to the `/dedicated/server`{.action} section.
 
-You can list all your [dedicated servers](https://www.ovhcloud.com/en/bare-metal/) with the following API call:
+You can list all your [dedicated servers](/links/bare-metal/bare-metal) with the following API call:
 
 > [!api]
 >
@@ -166,7 +166,7 @@ Each question has the following attributes:
 
 ### Disk Groups <a name="disk-group"></a>
 
-Some [dedicated servers](https://www.ovhcloud.com/en/bare-metal/) have multiple groups of disks. For example, one group with SATA disks and another group with SSD disks. Those servers are sometimes also called **hybrid servers**.
+Some [dedicated servers](/links/bare-metal/bare-metal) have multiple groups of disks. For example, one group with SATA disks and another group with SSD disks. Those servers are sometimes also called **hybrid servers**.
 
 To list the disk groups and their disks, you can use the following API call in order to identify the disk group on which you want the OS to be installed:
 

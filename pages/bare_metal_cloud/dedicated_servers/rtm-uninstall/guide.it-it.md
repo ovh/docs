@@ -16,7 +16,7 @@ Il sistema di monitoring OVHcloud RTM v2 ha subito una riduzione di valore e i s
 
 ## Prerequisiti
 
-- Un [server dedicato](https://www.ovhcloud.com/it/bare-metal/) sul quale RTM v2 è stato installato
+- Un [server dedicato](/links/bare-metal/bare-metal) sul quale RTM v2 è stato installato
 - Avere un accesso amministratore (sudo) al tuo server via SSH
 
 ## Procedura
@@ -106,6 +106,6 @@ rm -f /etc/yum.repos.d/OVH-metrics.repo /etc/yum.repos.d/OVH-rtm.repo
 
 ## Per saperne di più
 
-In caso di necessità di formazione o assistenza tecnica per l'implementazione delle nostre soluzioni, contatta il tuo provider o clicca su [questo link](https://www.ovhcloud.com/it/professional-services/) per ottenere un preventivo e richiedere un'analisi personalizzata del tuo progetto ai nostri esperti del team Professional Services.
+In caso di necessità di formazione o assistenza tecnica per l'implementazione delle nostre soluzioni, contatta il tuo provider o clicca su [questo link](/links/professional-services) per ottenere un preventivo e richiedere un'analisi personalizzata del tuo progetto ai nostri esperti del team Professional Services.
 
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

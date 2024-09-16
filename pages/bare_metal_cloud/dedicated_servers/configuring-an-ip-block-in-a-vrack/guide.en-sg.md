@@ -6,7 +6,7 @@ updated: 2023-08-31
 
 ## Objective
 
-As well as private IP addressing, the [vRack](https://www.ovh.com/sg/solutions/vrack/){.external} also allows you to route public IP traffic through your server's [vRack](https://www.ovh.com/sg/solutions/vrack/){.external} port using a public IP address block.
+As well as private IP addressing, the [vRack](/links/network/vrack){.external} also allows you to route public IP traffic through your server's [vRack](/links/network/vrack){.external} port using a public IP address block.
 
 **This guide will show you how to configure a block of public IP addresses for use with the vRack.**
 
@@ -15,7 +15,7 @@ As well as private IP addressing, the [vRack](https://www.ovh.com/sg/solutions/v
 - A public block of IP addresses in your account, with a minimum of four addresses
 - Your chosen private IP address range
 - A [vRack compatible server](https://www.ovh.com/sg/dedicated-servers/){.external}
-- A [vRack](https://www.ovh.com/sg/solutions/vrack/){.external} service activated in your account
+- A [vRack](/links/network/vrack){.external} service activated in your account
 - Access to the [OVHcloud Control Panel](/links/manager){.external}
 
 > [!warning]
@@ -27,7 +27,7 @@ As well as private IP addressing, the [vRack](https://www.ovh.com/sg/solutions/v
 
 > [!primary]
 >
-> For example purposes we'll be using an IP block of 46.105.135.96/28 and eth1 for the secondary network interface, which is dedicated to the [vRack](https://www.ovh.co.uk/solutions/vrack/){.external}.
+> For example purposes we'll be using an IP block of 46.105.135.96/28 and eth1 for the secondary network interface, which is dedicated to the [vRack](/links/network/vrack){.external}.
 > 
 > Also for example purposes, the network configuration file we refer to is located in `/etc/network/interfaces`. The equivalent file on your server may be located somewhere else, depending on your operating system. The file content may also be different. If you encounter any difficulties, please refer to the official documentation for your distribution.
 

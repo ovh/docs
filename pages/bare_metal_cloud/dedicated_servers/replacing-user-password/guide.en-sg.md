@@ -20,7 +20,7 @@ To recover access to a server that you log in to with an SSH key, refer to our g
 
 ## Requirements
 
-- A [dedicated server](https://www.ovhcloud.com/en-sg/bare-metal/) or a [VPS](https://www.ovhcloud.com/en-sg/vps/) with a Linux-based OS in your OVHcloud account
+- A [dedicated server](/links/bare-metal/bare-metal) or a [VPS](https://www.ovhcloud.com/en-sg/vps/) with a Linux-based OS in your OVHcloud account
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!primary]
@@ -38,7 +38,7 @@ Be sure to consult our "Getting started" guides as well:
 > [!warning]
 >OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-sg/directory/) or reach out to [our community](https://community.ovh.com/en/) if you face difficulties or doubts concerning the administration, usage or implementation of services on a server.
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](/links/partner) or reach out to [our community](https://community.ovh.com/en/) if you face difficulties or doubts concerning the administration, usage or implementation of services on a server.
 >
 
 <a name="step1"></a>

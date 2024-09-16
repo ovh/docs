@@ -43,7 +43,7 @@ Certains éléments sont prédéfinis :
 
 Définissez le nom de la nouvelle instance, la clé SSH, le vRack et la période de facturation, puis cliquez sur le bouton `Créer l'instance`{.action}.
 
-Pour plus d'informations sur la création d'une instance, consultez [ce guide](/pages/public_cloud/compute/public-cloud-first-steps#etape-3-creer-une-instance).
+Pour plus d'informations sur la création d'une instance, consultez [ce guide](/pages/public_cloud/compute/public-cloud-first-steps).
 
 > [!primary]
 >

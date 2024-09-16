@@ -12,7 +12,7 @@ On a Windows system, data redundancy is achieved by mirroring the primary disk t
 
 ## Requirements
 
-- A Windows [dedicated server](https://www.ovhcloud.com/en-sg/bare-metal/) with a software mirror
+- A Windows [dedicated server](/links/bare-metal/bare-metal) with a software mirror
 - Administrative access to the server via RDP
 
 ## Instructions

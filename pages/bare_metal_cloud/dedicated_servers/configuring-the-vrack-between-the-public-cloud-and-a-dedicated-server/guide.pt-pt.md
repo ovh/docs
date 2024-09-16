@@ -10,7 +10,7 @@ updated: 2021-10-15
 
 ## Sumário
 
-O [vRack](https://www.ovh.pt/solucoes/vrack/){.external} da OVHcloud é uma rede privada que lhe permite configurar o direcionamento entre dois ou mais [servidores dedicados](https://www.ovhcloud.com/pt/bare-metal/) da OVHcloud. Além disso, permite-lhe também adicionar [instâncias Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) à sua rede privada para criar uma infraestrutura de recursos físicos e virtuais.
+O [vRack](https://www.ovh.pt/solucoes/vrack/){.external} da OVHcloud é uma rede privada que lhe permite configurar o direcionamento entre dois ou mais [servidores dedicados](/links/bare-metal/bare-metal) da OVHcloud. Além disso, permite-lhe também adicionar [instâncias Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) à sua rede privada para criar uma infraestrutura de recursos físicos e virtuais.
 
 **Este manual explica-lhe como configurar uma rede privada entre uma instância Public Cloud e um servidor dedicado.**
 
@@ -18,7 +18,7 @@ O [vRack](https://www.ovh.pt/solucoes/vrack/){.external} da OVHcloud é uma rede
 
 * Ter criado uma [instância Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps)
 * Ter ativado um serviço [vRack](https://www.ovh.pt/solucoes/vrack/){.external}
-* Dispor de um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/) compatível com o vRack
+* Dispor de um [servidor dedicado](/links/bare-metal/bare-metal) compatível com o vRack
 * Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 * Um intervalo de endereços IP privados à sua escolha
 
@@ -62,7 +62,7 @@ Existem duas situações:
 
 #### Caso de uma nova instância
 
-Se precisar de ajuda, consulte o guia: [Criar uma instância Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#3o-passo-criacao-de-uma-instancia){.external}. Ao criar uma instância, poderá especificar, na etapa 4, uma rede privada na qual poderá integrar a sua instância. Escolha, no menu pendente apresentado, o seu vRack criado anteriormente.
+Se precisar de ajuda, consulte o guia: [Criar uma instância Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps). Ao criar uma instância, poderá especificar, na etapa 4, uma rede privada na qual poderá integrar a sua instância. Escolha, no menu pendente apresentado, o seu vRack criado anteriormente.
 
 #### Caso de uma instância já existente
 

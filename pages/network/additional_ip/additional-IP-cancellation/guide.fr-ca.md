@@ -6,7 +6,7 @@ updated: 2022-12-22
 
 > [!primary]
 >
-> Depuis le 6 octobre 2022, notre solution « IP Failover » s'appelle désormais [Additional IP](https://www.ovhcloud.com/fr-ca/network/additional-ip/). Cela n'a pas d'impact sur ses fonctionnalités.
+> Depuis le 6 octobre 2022, notre solution « IP Failover » s'appelle désormais [Additional IP](/links/network/additional-ip). Cela n'a pas d'impact sur ses fonctionnalités.
 >
 
 ## Objectif
@@ -21,7 +21,7 @@ Comme tous les services OVHcloud, les services Additional IP peuvent être rési
 
 ## Prérequis
 
-- Disposer d'un [service Additional IP](https://www.ovhcloud.com/fr-ca/network/additional-ip/).
+- Disposer d'un [service Additional IP](/links/network/additional-ip).
 - Être connecté à la [console API OVHcloud](https://ca.api.ovh.com/).
 - Consulter le guide [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
 

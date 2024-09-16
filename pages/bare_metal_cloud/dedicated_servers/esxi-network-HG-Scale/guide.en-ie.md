@@ -1,8 +1,11 @@
 ---
 title: 'Configuring the network on ESXi on the High Grade & SCALE ranges'
 excerpt: 'Find out how to configure the network on VMware ESXi on the High Grade & SCALE ranges'
-updated: 2024-07-08
+updated: 2024-09-13
 ---
+
+> [!warning]
+> The ESXi hypervisor is no longer supported by OVHcloud. Find more information on [this dedicated page](/pages/bare_metal_cloud/dedicated_servers/esxi-end-of-support).
 
 ## Objective
 
@@ -21,8 +24,8 @@ On the High Grade & SCALE ranges, it is not possible to manage Additional IPs in
 
 - A public block of IP addresses in your account, with a minimum of four addresses. The block must be pointed to the vRack.
 - Your chosen private IP address range.
-- A [vRack compatible dedicated server](https://www.ovhcloud.com/en-ie/bare-metal/){.external}.
-- A [vRack](https://www.ovh.ie/solutions/vrack/){.external} service activated in your account.
+- A [vRack compatible dedicated server](/links/bare-metal/bare-metal){.external}.
+- A [vRack](/links/network/vrack){.external} service activated in your account.
 - Access to the [OVHcloud Control Panel](/links/manager).
 
 ## Instructions

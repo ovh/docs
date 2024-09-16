@@ -16,7 +16,7 @@ En general, las políticas antispam son estrictas. Para facilitar el envío de m
 
 > [!warning]
 >
->OVHcloud ofrece servicios de los cuales usted es responsable. De hecho, como no tenemos acceso administrativo a estas máquinas, no somos administradores y no podemos ofrecerle soporte. Esto significa que depende de usted administrar el software y la seguridad diariamente. Le proporcionamos esta guía para ayudarlo con tareas comunes. Sin embargo, le recomendamos ponerse en contacto con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) si tiene dificultades o dudas sobre la administración, el uso o la seguridad del servidor.
+>OVHcloud ofrece servicios de los cuales usted es responsable. De hecho, como no tenemos acceso administrativo a estas máquinas, no somos administradores y no podemos ofrecerle soporte. Esto significa que depende de usted administrar el software y la seguridad diariamente. Le proporcionamos esta guía para ayudarlo con tareas comunes. Sin embargo, le recomendamos ponerse en contacto con un [proveedor especializado](/links/partner) si tiene dificultades o dudas sobre la administración, el uso o la seguridad del servidor.
 >
 
 ## Requisitos
@@ -154,6 +154,6 @@ Usted puede utilizar un sitio web como [Mail Tester](http://www.mail-tester.com/
 
 [Mejorar la seguridad del correo electrónico mediante un registro DMARC](/pages/web_cloud/domains/dns_zone_dmarc)
 
-Para recibir soporte y configurar sus soluciones OVHcloud, contacte con nuestra [red de partners OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+Para recibir soporte y configurar sus soluciones OVHcloud, contacte con nuestra [red de partners OVHcloud](/links/partner).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>

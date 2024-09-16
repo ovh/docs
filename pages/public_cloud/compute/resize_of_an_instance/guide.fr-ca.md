@@ -28,7 +28,7 @@ En raison d'une activité accrue, ou simplement de nouveaux besoins, votre insta
 
 ## Prérequis
 
-- Avoir [créé une instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#etape-3-creer-une-instance) dans votre compte OVHcloud
+- Avoir [créé une instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) dans votre compte OVHcloud
 - [Accéder à l'interface Horizon](/pages/public_cloud/compute/introducing_horizon)
 
 ## En pratique

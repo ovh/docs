@@ -18,7 +18,7 @@ Allgemein sind Anti-Spam-Richtlinien strikt gehalten. Um den Versand von E-Mails
 >
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Implementierung der Dienste auf einem Server haben.
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Implementierung der Dienste auf einem Server haben.
 > 
 
 ## Voraussetzungen
@@ -158,6 +158,6 @@ Es kann hilfreich sein, eine Seite wie [Mail Tester](http://www.mail-tester.com/
 
 [E-Mail-Sicherheit durch DMARC-Eintrag verbessern](/pages/web_cloud/domains/dns_zone_dmarc)
 
-Kontaktieren Sie unser [OVHcloud Partner-Netzwerk](https://partner.ovhcloud.com/de/directory/), wenn Sie beim Einsatz Ihrer OVHcloud Lösungen Unterstützung benötigen.
+Kontaktieren Sie unser [OVHcloud Partner-Netzwerk](/links/partner), wenn Sie beim Einsatz Ihrer OVHcloud Lösungen Unterstützung benötigen.
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

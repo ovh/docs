@@ -16,7 +16,7 @@ Se configuri il tuo server dedicato come server DNS, puoi utilizzare il DNS OVHc
 
 ## Prerequisiti
 
-- Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/){.external}
+- Disporre di un [server dedicato](/links/bare-metal/bare-metal){.external}
 - Disporre di un [dominio](https://www.ovhcloud.com/it/domains/){.external} di gestione amministrativa o tecnica
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 
@@ -24,7 +24,7 @@ Se configuri il tuo server dedicato come server DNS, puoi utilizzare il DNS OVHc
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
 > 
-> Questa guida ti aiuta a realizzare le operazioni più ricorrenti. Tuttavia, in caso di difficoltà o dubbi relativi all'amministrazione, all'utilizzo o alla realizzazione dei servizi su un server, ti consigliamo di contattare un esperto del settore.
+> Questa guida ti aiuta a realizzare le operazioni più ricorrenti. Tuttavia, in caso di difficoltà o dubbi relativi all'amministrazione, all'utilizzo o alla realizzazione dei servizi su un server, ti consigliamo di contattare un [provider specializzato](/links/partner).
 > 
 
 ## Procedura

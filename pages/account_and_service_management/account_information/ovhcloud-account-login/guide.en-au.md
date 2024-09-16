@@ -33,7 +33,7 @@ The rest of this guide will give you methods for resolving common cases of faile
 
 If you have lost or forgotten your password, please follow [this guide detailing the steps to take in order to change it](/pages/account_and_service_management/account_information/manage-ovh-password#if-you-have-forgotten-your-current-password).
 
-### I have lost my password and my primary email address is no longer valid
+### I have lost my password and my primary email address is no longer valid <a name="invalid-email"></a>
 
 In this case, the password reset procedure cannot be performed from the login page.
 

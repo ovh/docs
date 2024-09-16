@@ -178,7 +178,8 @@ Events:
 
 ## Storage Classes
 
-We currently support three [Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/) on OVHcloud Managed Kubernetes: 
+We currently support three [Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/) on OVHcloud Managed Kubernetes:
+
 * `csi-cinder-high-speed-gen2` storage class is based on hardware that includes SSD disks with NVMe interfaces. The performance allocation is progressive and linear (30 IOPS allocated per GB and 0.5MB/s allocated per GB) with a maximum of 20k IOPS and 1GB/s per volume. The IOPS and bandwidth performance will increase as  scale up the storage space.
 * `csi-cinder-high-speed` performance is fixed. You will get up to 3,000 IOPS per volume, regardless of the volume size. 
 * `csi-cinder-classic` uses traditional spinning disks (200 IOPS guaranteed, Up to 64 MB/s per volume). 

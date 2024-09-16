@@ -60,7 +60,7 @@ Po zalogowaniu się, w prawym górnym rogu kliknij nazwę użytkownika, która j
 
 Jeśli utracisz hasło lub je zapomnisz, zapoznaj się z [przewodnikiem dotyczącym sposobu zmiany hasła](/pages/account_and_service_management/account_information/manage-ovh-password#jesli-nie-znasz-swojego-aktualnego-hasla).
 
-### Straciłem hasło, a główny adres e-mail przestał być ważny
+### Straciłem hasło, a główny adres e-mail przestał być ważny <a name="invalid-email"></a>
 
 W tym przypadku nie można przeprowadzić resetu hasła ze strony logowania.
 

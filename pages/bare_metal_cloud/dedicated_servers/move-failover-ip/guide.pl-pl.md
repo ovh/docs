@@ -10,7 +10,7 @@ updated: 2022-12-20
 
 > [!primary]
 >
-> Od 6 października 2022 nasze rozwiązanie "Failover IP" nazywa się teraz [Additional IP](https://www.ovhcloud.com/pl/network/additional-ip/). To nie ma wpływu na jego funkcje.
+> Od 6 października 2022 nasze rozwiązanie "Failover IP" nazywa się teraz [Additional IP](/links/network/additional-ip). To nie ma wpływu na jego funkcje.
 >
 
 ## Wprowadzenie
@@ -28,8 +28,8 @@ Technologia ta pozwala na wymianę adresów IP między poszczególnymi rozwiąza
 
 ## Wymagania początkowe
 
-- Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/){.external} w Panelu klienta
-- Posiadanie [adresu Additional IP](https://www.ovhcloud.com/pl/bare-metal/ip/)
+- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal){.external} w Panelu klienta
+- Posiadanie [adresu Additional IP](/links/network/additional-ip)
 - Dostęp do [panelu klienta OVHcloud](/links/manager)
 
 > [!warning]

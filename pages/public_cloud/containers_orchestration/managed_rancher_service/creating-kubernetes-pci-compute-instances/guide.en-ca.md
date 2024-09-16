@@ -1,7 +1,7 @@
 ---
 title: Creating a Kubernetes cluster based on OVHcloud Public Cloud Compute Instances in MRS
 excerpt: 'Find out how to create a Kubernetes cluster based on OVHcloud Public Cloud Compute Instances (PCI) on a Managed Rancher Service'
-updated: 2024-08-05
+updated: 2024-09-11
 ---
 
 > [!warning]
@@ -19,11 +19,11 @@ Managed Rancher Service by OVHcloud provides a powerful platform for orchestrati
 - Bare-metal servers, cloud hosted or on premise.
 - Virtual machines, cloud hosted or on premise
 
-In this guide we will explore how to **use OVHcloud as an Infrastructure Provider** and create a Kubernetes cluster based on [OVHcloud Compute Instances](https://www.ovhcloud.com/en-ca/public-cloud/compute/).
+In this guide we will explore how to **use OVHcloud as an Infrastructure Provider** and create a Kubernetes cluster based on [OVHcloud Compute Instances](/links/public-cloud/compute).
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/en-ca/public-cloud/) in your OVHcloud account
+- A [Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) in your OVHcloud account
 - An OVHcloud Managed Rancher Service (see the [creating a Managed Rancher Service](/pages/public_cloud/containers_orchestration/managed_rancher_service/create-update-rancher) guide for more information)
 - An access to the Rancher UI to operate it (see the [connecting to the Rancher UI](/pages/public_cloud/containers_orchestration/managed_rancher_service/create-update-rancher) guide for more information)
 - An [OpenStack user](/pages/public_cloud/compute/create_and_delete_a_user)
@@ -113,7 +113,7 @@ For each of the machine pools, you have to:
 - Define machine count (3 for example for the first machine pool).
 - Select roles (check `etcd` and `Control Plane` for the first machine pool)/
 - Choose the region (`GRA9` for example for the first machine pool). If you want to check the availability of specific products that you plan to use alongside Kubernetes, you can refer to the [Availability of Public Cloud Product](/links/public-cloud/regions-pci) page.
-- Choose the flavor (`b2-7` for example). You can refer to the [OVHcloud Flavor list](https://www.ovhcloud.com/en-ca/public-cloud/prices/).
+- Choose the flavor (`b2-7` for example). You can refer to the [OVHcloud Flavor list](/links/public-cloud/prices).
 - Choose the image for the Operating System (OS) used for your machines/nodes. Please refer to [Rancher Operating Systems and Container Runtime Requirements](https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/kubernetes-clusters-in-rancher-setup/node-requirements-for-rancher-managed-clusters).
 - Choose a Key Pair (optional). It's the SSH Key Pair that will be used to access your nodes. Please refer to this guide on [how to create a SSH KeyPair and add it to your Public Cloud project](/pages/public_cloud/compute/public-cloud-first-steps). If you leave this field empty, a new keypair will be generated automatically.
 - Choose the Security Group that will be applied to created instances. You can leave the field empty.
@@ -128,6 +128,7 @@ At the bottom of the **Machine Pools** section, click on the `+`{.action} button
 ![OVHcloud Managed Rancher Service Machine Pool 2](images/rancher-machine-pool-2.png){.thumbnail}
 
 In the **Cluster Configuration** section, choose the Kubernetes version. You need to choose between RKE2 and K3s Kubernetes Operating System (OS). For a production environment, we recommend choosing RKE2.
+
 Select the `Container Network`, choose if you want to activate a Project Network isolation and the System Services tooling you want to install in your cluster.
 
 ![OVHcloud Managed Rancher Service Cluster Configuration](images/rancher-cluster-config.png){.thumbnail}
@@ -171,8 +172,10 @@ You can now install applications in your Kubernetes cluster though the `kubectl`
 
 ## Go further
 
-- To have an overview of OVHcloud Managed Rancher Service, you can go to the [OVHcloud Managed Rancher Service page](https://www.ovhcloud.com/en-ca/public-cloud/managed-rancher-service/).
+- To have an overview of OVHcloud Managed Rancher Service, you can go to the [OVHcloud Managed Rancher Service page](/links/public-cloud/rancher).
 
 - If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+- Our team remains available on our dedicated Discord Channel, do not hesitate to join and reach us : <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our Container and Orchestration services.
 
 - Join our [community of users](/links/community).

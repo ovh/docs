@@ -1,7 +1,7 @@
 ---
 title: 'Utiliser son adresse e-mail depuis le webmail Outlook Web App (OWA)'
 excerpt: 'Découvrez comment utiliser votre adresse e-mail depuis le webmail OWA'
-updated: 2024-03-26
+updated: 2024-09-03
 ---
 
 ## Objectif
@@ -39,6 +39,12 @@ Pour vous connecter à OWA avec votre adresse e-mail, ouvrez la page de [connexi
 > Pour vous familiariser avec l'interface **Roundcube**, consultez notre guide [Utiliser son adresse e-mail depuis le webmail Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
 
 Si c'est la première fois que vous vous connectez à OWA avec cette adresse e-mail, vous serez invité à définir la langue de l'interface ainsi que le fuseau horaire. Ensuite, cliquez sur `Enregistrer`{.action} pour continuer.
+
+> [!primary]
+>
+> Les fuseaux horaires sont listés selon [la norme UTC (temps universel coordonné)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), et non par ordre alphabétique des villes.
+>
+> **Exemple** : Pour l'Europe de l'Ouest, il s'agit de UTC +1 (Bruxelles, Copenhague, Madrid, Paris).
 
 ![useowa](images/use-owa-step2.png){.thumbnail}
 

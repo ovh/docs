@@ -22,7 +22,7 @@ Los servidores dedicados de OVHcloud incluyen un espacio de backup adicional par
 
 ## Requisitos
 
-- Tener un [servidor dedicado](https://www.ovhcloud.com/es-es/bare-metal/){.external} en su cuenta de OVHcloud.
+- Tener un [servidor dedicado](/links/bare-metal/bare-metal){.external} en su cuenta de OVHcloud.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
 
 > [!warning]

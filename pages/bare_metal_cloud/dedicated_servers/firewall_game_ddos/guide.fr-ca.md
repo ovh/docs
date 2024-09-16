@@ -20,7 +20,7 @@ Nos serveurs dédiés Game incluent une protection anti-DDoS spécialement conç
 
 ## Prérequis
 
-- Un [serveur dédié OVHcloud **Game**](https://www.ovhcloud.com/fr-ca/bare-metal/prices/#filterType=range_element&filterValue=game)
+- Un [serveur dédié OVHcloud **Game**](https://www.ovhcloud.com/fr-ca/bare-metal/prices/#filterType=range_element&filterValue=game#filterType=range_element&filterValue=game)
 - Être connecté à votre [espace client OVHcloud](/links/manager)
 
 > [!warning]
@@ -92,7 +92,7 @@ Pour cette raison, nous n'avons pas prévu de publier un profil de pare-feu publ
 
 #### Rust
 
-Le firewall Game prend en charge Rust avec un profil détaillé. Vous pouvez en savoir plus sur l'hébergement de Rust sur les serveurs d'OVHcloud [ici](https://www.ovhcloud.com/en/bare-metal/game/rust-server/).
+Le firewall Game prend en charge Rust avec un profil détaillé. Vous pouvez en savoir plus sur l'hébergement de Rust sur les serveurs d'OVHcloud [ici](https://www.ovhcloud.com/fr-ca/bare-metal/game/rust-server/).
 
 #### Minecraft
 
@@ -126,6 +126,6 @@ Pour cela, vous devrez nous partager un extrait du trafic réseau correspondant 
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.

@@ -116,6 +116,7 @@ public-cloud-containers-orchestration-managed-private-registry-getting-started: 
 public-cloud-containers-orchestration-managed-private-registry-tutorials: Tutorials
 public-cloud-containers-orchestration-managed-rancher-service: Managed Rancher Service (MRS)
 public-cloud-containers-orchestration-managed-rancher-service-getting-started: Getting started
+public-cloud-containers-orchestration-managed-rancher-service-resources: Resources
 public-cloud-containers-orchestration-managed-rancher-service-creating-importing-kubernetes: Creating or importing a Kubernetes cluster
 public-cloud-containers-orchestration-managed-rancher-service-operations-kubernetes: Operations on a Kubernetes cluster
 public-cloud-containers-orchestration-managed-rancher-service-deploy-applications: Deploying applications with Rancher
@@ -206,6 +207,7 @@ web-cloud-email-collaborative-solutions-microsoft-exchange-setting-up-email-appl
 web-cloud-email-collaborative-solutions-microsoft-exchange-setting-up-email-application-on-mobile-device: E-Mail-Anwendung auf Ihrem Mobilgerät einrichten
 web-cloud-email-collaborative-solutions-microsoft-exchange-troubleshooting: Störungsbehebung
 web-cloud-email-collaborative-solutions-microsoft-office: Microsoft Office
+web-cloud-email-collaborative-solutions-zimbra: Zimbra
 web-cloud-domains: Domains
 web-cloud-domains-api: API
 web-cloud-domains-api-frequent-tasks: Häufige Tasks
@@ -274,6 +276,7 @@ web-cloud-hosting-tutorials: Tutorials
 web-cloud-hosting-tutorials-wordpress: Tutorials WordPress
 web-cloud-hosting-tutorials-cloud-web: Tutorials für Cloud Web Hostings
 web-cloud-hosting-website-optimisation: Optimierung Ihrer Seite
+web-cloud-hosting-api: API
 web-cloud-ssl-gateway: SSL Gateway
 web-cloud-ssl-gateway-getting-started: Erste Schritte
 web-cloud-web-paas-powered-by-platformsh: Web PaaS powered by Platform.sh

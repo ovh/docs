@@ -22,7 +22,7 @@ I server dedicati OVHcloud includono uno spazio di backup aggiuntivo per salvare
 
 ## Prerequisiti
 
-* Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/){.external} sul proprio account OVHcloud
+* Disporre di un [server dedicato](/links/bare-metal/bare-metal){.external} sul proprio account OVHcloud
 * Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 
 > [!warning]

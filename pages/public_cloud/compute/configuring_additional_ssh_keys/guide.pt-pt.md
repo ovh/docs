@@ -1,7 +1,7 @@
 ---
-title: Configurar as chaves SSH suplementares
-excerpt: Saiba como configurar chaves SSH adicionais para a sua instância Public Cloud
-updated: 2024-01-08
+title: Como configurar chaves SSH suplementares numa instância
+excerpt: Saiba como configurar chaves SSH adicionais para contas de utilizadores e adicioná-las à sua instância Public Cloud
+updated: 2024-09-09
 ---
 
 > [!primary]
@@ -9,85 +9,156 @@ updated: 2024-01-08
 >
 
 ## Objetivo
- 
-Ao criar uma instância, pode ser configurada uma única chave SSH para a ligação inicial. Para permitir o acesso da sua instância a outros utilizadores, podem ser adicionadas chaves suplementares configurando o ficheiro *authorized_keys*.
 
-**Este guia explica-lhe como configurar chaves SSH suplementares para as ligações à sua instância.**
+Quando criar uma instância na Área de Cliente, só pode adicionar uma chave SSH para a conta de utilizador pré-configurada. Para se ligar à instância com outras contas de utilizadores, pode criar mais chaves e adicioná-las à instância em algumas etapas.
+
+**Este manual explica como configurar chaves SSH adicionais para as ligações à sua instância.**
+
+> [!warning]
+> A OVHcloud fornece serviços cuja configuração e gestão são da sua responsabilidade. É da sua responsabilidade assegurar o seu bom funcionamento.
+>
+> Este guia fornece as instruções necessárias para realizar as operações mais habituais. Entretanto, recomendamos que você entre em contacto com um [provedor de serviços especializado](/links/partner) ou entre em contacto com a [nossa comunidade](/links/community) se houver algum problema.
+>
 
 ## Requisitos
 
-- Ter uma [instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) na sua conta OVHcloud.
-- Estar ligado à [Área de Cliente OVHcloud](/links/manager).
-- Ter acesso à instância via SSH enquanto administrador (sudo).
+- Uma [instância Public Cloud](/links/public-cloud/public-cloud) na sua conta OVHcloud
+- [Acesso administrativo à sua instância via SSH](/pages/public_cloud/compute/creating-ssh-keys-pci#login-linux)
 
 ## Instruções
 
 > [!primary]
 >
-Atualmente, suportamos os seguintes formatos de chave SSH: **RSA**, **ECDSA** e **ED25519**.
+> Atualmente, suportamos os seguintes formatos de chave SSH: **RSA**, **ECDSA** e **ED25519**.
+>
+> Tenha em conta que as instruções abaixo são destinadas a uma utilização geral e se baseiam num sistema operativo de servidor Ubuntu. Alguns comandos podem necessitar de uma personalização em função da distribuição ou do sistema operativo que utiliza.
 >
 
-### Criação da chave SSH
+### Etapa 1: Criar um novo par de chaves SSH
 
-Para criar uma nova chave SSH, consulte o [guia dos primeiros passos com o Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps).
+Se necessário, utilize o nosso [guia sobre as chaves SSH](/pages/public_cloud/compute/creating-ssh-keys-pci) para criar um novo par de chaves SSH.  
+Encontrará também informações sobre [a gestão de várias chaves](/pages/public_cloud/compute/creating-ssh-keys-pci#multiplekeys) na sua estação de trabalho local, se a sua instalação o exigir.
 
-### Configuração do novo utilizador
+### Etapa 2: configurar uma nova conta de utilizador
 
-[Ligue-se à sua instância em SSH](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance) e crie um novo utilizador através dos comandos abaixo:
+[Ligue-se à sua instância](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) e utilize os comandos abaixo para criar uma nova conta de utilizador e uma pasta `.ssh`:
 
 ```bash
-~$ sudo adduser user2
+sudo adduser user2
+```
 
-Adding user `user2' ...
-Adding new group `user2' (1001) ...
-Adding new user `user2' (1001) with group `user2' ...
-Creating home directory `/home/user2' ...
-Copying files from `/etc/skel' ...
-
-Enter new UNIX password:
-Retype new UNIX password:
+```console
+info: Adding user `user2' ...
+info: Selecting UID/GID from range 1000 to 59999 ...
+info: Adding new group `user2' (1003) ...
+info: Adding new user `user2' (1003) with group `user2 (1003)' ...
+info: Creating home directory `/home/user2' ...
+info: Copying files from `/etc/skel' ...
+New password: 
+Retype new password:
 passwd: password updated successfully
 Changing the user information for user2
 Enter the new value, or press ENTER for the default
-Full Name []:
-Room Number []:
-Work Phone []:
-Home Phone []:
-Other []:
-Is the information correct? [Y/n] Y
+        Full Name []:
+        Room Number []:
+        Work Phone []: 
+        Home Phone []: 
+        Other []: 
+Is the information correct? [Y/n] y
+info: Adding new user `user2' to supplemental / extra groups `users' ...
+info: Adding user `user2' to group `users' ...
 ```
-
-Abra o ficheiro *authorized_keys* na pasta pessoal do novo utilizador com um editor de texto:
 
 ```bash
-~$ sudo nano /home/user2/.ssh/authorized_keys
+sudo mkdir /home/user2/.ssh/
 ```
 
-Adicione ao ficheiro a chave pública criada na primeira etapa. Registe e feche o editor.
-
-Se a pasta .ssh ainda não existir, pode criá-la com este comando:
+Sem outras etapas, a conta de utilizador `user2` deste exemplo não tem permissões elevadas. Se tiver de conceder a esta conta privilégios root na sua instância, adicione-a ao `sudo group`:
 
 ```bash
-~$ sudo mkdir /home/user2/.ssh/
+sudo usermod -aG sudo user2
 ```
 
-Pode configurar várias chaves SSH adicionando-as aos ficheiros *authorized_keys* das pastas de utilizador correspondentes.
+Pode obter mais informações sobre as permissões dos utilizadores e tópicos relacionados no [guia da conta de utilizador](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
 
-A partir de agora, poderá ligar-se ao utilizador e à chave privada configuradas anteriormente:
+### Etapa 3: adicionar a chave pública SSH à sua instância
+
+#### Transferência de chaves públicas criadas em sistemas baseados em GNU/Linux, macOS ou BSD
+
+Se criou os seus pares de chaves SSH num sistema baseado em GNU/Linux, macOS ou BSD, pode utilizar o comando `ssh-copy-id` para adicionar as chaves públicas ao seu servidor.
+
+O utilitário `ssh-copy-id` copia as chaves públicas no arquivo `~/.ssh/authorized_keys` no servidor remoto especificado e cria automaticamente o arquivo neste diretório, se necessário.
 
 ```bash
-~$ ssh user2@instance_IP
+ssh-copy-id username@IP_ADDRESS
 ```
+
+Por predefinição, o `ssh-copy-id` tentará transferir **todas** as chaves públicas no diretório `~/.ssh` do seu utilizador local. Para adicionar uma única chave pública, pode especificar este ficheiro com a opção `-i` seguida pelo caminho do ficheiro:
+
+```bash
+ssh-copy-id -i ~/.ssh/KeyFileName username@IP_ADDRESS
+```
+
+Exemplo:
+
+```bash
+ssh-copy-id -i ~/.ssh/myInstance_rsa.pub user2@203.0.113.102
+```
+
+A palavra-passe do utilizador ser-lhe-á solicitada. Em caso de sucesso, receberá uma mensagem semelhante à seguinte:
+
 ```console
-Linux b2-7-de1 5.10.0-10-cloud-amd64 #1 SMP Debian 5.10.84-1 (2021-12-08) x86_64
+Number of key(s) added: 1
 
-user2@server:~$
+Now try logging into the machine, with:   "ssh 'user@server-ip'"
+and check to make sure that only the key(s) you wanted were added.
 ```
+
+Se você receber uma mensagem de erro em vez disso, você ainda pode adicionar suas chaves públicas manualmente seguindo os passos descritos abaixo.
+
+> [!primary]
+>
+> Por razões de segurança e de boas práticas, um par de chaves não deve ser utilizado por vários utilizadores. Uma vez que cada utilizador nos sistemas GNU/Linux tem o seu próprio ficheiro `authorized_keys` em `~/.ssh/`, pode utilizar o comando `ssh-copy-id` como indicado acima e adaptar `KeyFileName` e `user` depois de ter [criado o par de chaves](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key).
+>
+
+#### Adição manual de chaves públicas à instância
+
+[Ligue-se à sua instância](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) e abra, com o seu editor de texto preferido (`nano` é utilizado neste exemplo), o ficheiro `authorized_keys` na pasta pessoal do novo utilizador:
+
+```bash
+sudo nano /home/user2/.ssh/authorized_keys
+```
+
+Cole a **cadeia de chaves públicas** neste ficheiro. Salve o arquivo e saia do editor.
+
+Reinicie a sua instância (`sudo reboot`) ou reinicie apenas o serviço OpenSSH com um dos seguintes comandos (o comando apropriado pode variar em função do seu sistema operativo):
+
+```bash
+sudo systemctl restart ssh
+```
+
+```bash
+sudo systemctl restart sshd
+```
+
+O novo utilizador pode agora ligar-se à instância a partir do dispositivo que armazena a chave SSH privada correspondente:
+
+```bash
+ssh username@IP_ADDRESS
+```
+
+Exemplo:
+
+```bash
+ssh user2@203.0.113.102
+```
+
+Consulte [manual sobre as chaves SSH](/pages/public_cloud/compute/creating-ssh-keys-pci) i para saber mais sobre a utilização das chaves SSH com as instâncias Public Cloud.
 
 ## Quer saber mais?
 
-[Criar uma primeira instância Public Cloud e ligar-se a ela](/pages/public_cloud/compute/public-cloud-first-steps)
+[Como criar instâncias Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps)
 
-[Alterar a chave SSH em caso de perda](/pages/public_cloud/compute/replacing_lost_ssh_key)
+[Como substituir um par de chaves SSH numa instância Public Cloud pelo modo rescue](/pages/public_cloud/compute/replacing_lost_ssh_key)
 
-Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

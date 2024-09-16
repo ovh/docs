@@ -1,7 +1,7 @@
 ---
 title: "Premiers pas avec OVHcloud Key Management Service (KMS)"
 excerpt: "Mettez en oeuvre votre OVHcloud KMS"
-updated: 2024-07-04
+updated: 2024-09-13
 ---
 
 > [!warning]
@@ -45,6 +45,28 @@ La commande est ensuite à finaliser dans un autre onglet. Si celui-ci ne s'est 
 Après quelques secondes, le KMS est bien disponible dans votre espace client.
 
 ![Commander le KMS](images/order_kms_03.png){.thumbnail}
+
+### Créer une clé de chiffrement via la console d'administration
+
+Vous pouvez créer une clé de chiffrement depuis le menu dédié de la console d'administration, en cliquant sur le bouton `Créer une clé`{.action}.
+
+![Créer une clé](images/create_key_01.png){.thumbnail}
+
+Un formulaire permet alors de configurer la clé en sélectionnant le type de la clé, sa taille et ses usages.
+
+![Créer une clé](images/create_key_02.png){.thumbnail}
+
+Une fois la clé créée, cliquez dessus pour accéder à ses détails.
+
+Le tableau de bord présente les propriétés cryptographiques de la clé, ainsi que les actions permettant de la renommer, la désactiver ou la supprimer.
+
+Afin de limiter les risques de suppression accidentelle, il est nécessaire de désactiver la clé avant de la supprimer.
+
+> [!warning]
+>
+> Il n'existe aucun moyen de récupérer une clé supprimée et sa suppression entraine la perte des données chiffrés avec celle-ci. Aussi, toute suppression doit être envisagée avec la plus grande précaution.
+
+![Créer une clé](images/create_key_03.png){.thumbnail}
 
 ### Créer un certificat d'accès
 
@@ -236,19 +258,13 @@ Copiez la valeur du champ **certificatePEM** dans un fichier **client.cert**.
 
 ### Communiquer avec le KMS
 
-La communication avec le KMS est disponible uniquement par API pendant la beta.
+La communication avec le KMS pour les actions autres que la création de clé est disponible uniquement par API.
 
 Le KMS étant régionalisé, l'accès à l'API se fait directement sur la région de celui-ci : <https://my-region.okms.ovh.net>
 
 Par exemple, pour un KMS créé sur la région **eu-west-rbx** : <https://eu-west-rbx.okms.ovh.net>
 
-En cas d'utilisation d'un navigateur, il est nécessaire de convertir le certificat en format pkcs12 :
-
-```bash
-openssl pkcs12 -export -inkey client.key -in client.cert -out client.p12
-```
-
-#### Créer une clé de chiffrement
+#### Créer une clé de chiffrement par API
 
 La création d'une clé se fait par l'API suivante :
 
@@ -601,11 +617,63 @@ L'API renverra ensuite le résultat de la vérification :
 }
 ```
 
-### Swagger
+### Utilisation de l'API KMS via l'interface utilisateur Swagger
 
 Il est possible d'accéder au swagger correspondant à votre KMS en cliquant sur le lien présent dans l'espace client au niveau du dashboard de votre KMS.
 
 ![swagger](images/swagger.png){.thumbnail}
+
+Vous atterrirez sur la version non authentifiée de l'interface utilisateur Swagger, qui est destinée à la documentation de l'API. Si vous souhaitez utiliser la Swagger UI pour effectuer des requêtes sur votre propre KMS, vous devrez basculer vers la version authentifiée, dont le lien se trouve dans la section description:
+
+![public-swagger-ui](images/public-swagger-ui.png){.thumbnail}
+
+Les étapes suivantes vous guideront sur la façon de vous authentifier.
+
+#### Importation de vos informations d'identification KMS dans le navigateur
+
+Pour accéder à l'interface utilisateur Swagger authentifiée, vous devez charger votre certificat d'accès KMS dans le gestionnaire de certificats du navigateur.
+
+Pour cela, il faut le convertir au format PKCS#12. PKCS#12 est un format binaire permettant de stocker une chaîne de certificats et une clé privée dans un seul fichier chiffré. Il est couramment utilisé pour importer et exporter des certificats et des clés privées, en particulier dans les environnements qui nécessitent un transport sécurisé de ces éléments, tels que les serveurs Web et les applications clientes.
+
+Pour convertir vos informations d'identification KMS (en supposant que vous les ayez enregistrées dans des fichiers nommés `client.cert` et `client.key`) en PKCS#12 avec la CLI openssl, utilisez la commande suivante:
+
+```bash
+openssl pkcs12 -export -in client.cert  -inkey client.key -out client.p12
+```
+
+Vous serez invité à entrer un mot de passe qui sera utilisé pour le chiffrement symétrique du contenu du fichier.
+Ensuite, vous devez l'importer dans votre navigateur Web.
+
+##### Sur Firefox
+
+- Tapez `about:preferences#privacy` dans la barre d'adresse.
+- Faites défiler vers le bas jusqu'à atteindre une section intitulée `Certificates`{.action}.
+
+![firefox-cert-manager](images/firefox-cert-manager.png){.thumbnail}
+
+- Cliquez sur `View Certificates...`{.action} pour ouvrir le gestionnaire de certificats.
+- Accédez à l'onglet intitulé `My Certificates`{.action}, puis `Import...`{.action} et sélectionnez l'emplacement de votre fichier `client.p12`.
+- Vous serez invité à entrer le mot de passe que vous avez utilisé lors de la création du fichier PKCS#12.
+- Après avoir entré le mot de passe, votre certificat sera importé et prêt à l'emploi.
+
+##### Sur Chrome/Chromium
+
+- Tapez `chrome://settings/certificates` dans la barre d'adresse.
+- Accédez à l'onglet `Your certificates`{.action}. Cliquez sur `Import`{.action} et sélectionnez votre fichier `client.p12`.
+- Vous serez invité à entrer le mot de passe que vous avez utilisé lors de la création du fichier PKCS#12.
+- Après avoir entré le mot de passe, votre certificat sera importé et prêt à l'emploi.
+
+![chromium-cert-manager](images/chromium-cert-manager.png){.thumbnail}
+
+#### Accès à l'interface utilisateur Swagger authentifiée
+
+Une fois votre certificat chargé dans votre navigateur, vous pouvez accéder à l'interface utilisateur Swagger authentifiée.
+
+Vous serez invité à vous identifier avec un certificat. Sélectionnez le certificat PKCS#12 précédemment importé dans la liste déroulante.
+
+![identification-certificat](images/firefox-identify-with-certificate.png){.thumbnail}
+
+C'est tout, vous pouvez maintenant utiliser l'interface utilisateur Swagger de manière interactive!
 
 ## Aller plus loin
 

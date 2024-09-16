@@ -25,7 +25,7 @@ Spersonalizowany skrypt może być interesujący w następujących przypadkach:
 
 ## Wymagania początkowe
 
-- Serwer [dedykowany](https://www.ovhcloud.com/pl/bare-metal/) **gotowy do uruchomienia/rebootu** na Twoim koncie OVHcloud.
+- Serwer [dedykowany](/links/bare-metal/bare-metal) **gotowy do uruchomienia/rebootu** na Twoim koncie OVHcloud.
 - Dostęp do [API OVHcloud](https://api.ovh.com/).
 
 > [!warning]

@@ -1,7 +1,7 @@
 ---
 title: "Powiadomienia o zakończeniu sprzedaży/utrzymanie bazy danych SQL"
 excerpt: "Powiadomienia o zakończeniu sprzedaży/utrzymanie bazy danych SQL"
-updated: 2024-07-11
+updated: 2024-09-06
 ---
 
 > [!primary]
@@ -10,10 +10,33 @@ updated: 2024-07-11
 
 Produkty objęte ogłoszeniami o zakończeniu sprzedaży i wycofaniu z eksploatacji to usługi bazy danych SQL Web Hosting dostępne poprzez sieć Web Hosting. Więcej informacji znajdziesz w [Polityka wycofania zarządzanych baz danych](/pages/web_cloud/web_cloud_databases/eol-policy).
 
-|Wersja|Powiadomienie o zakończeniu cyklu życia|Zakończenie sprzedaży|Zakończenie obsługi|
+|Wersja DBMS|Powiadomienie o zakończeniu cyklu życia|Zakończenie sprzedaży|Zakończenie obsługi|
 |---|---|---|---|
 |MySQL 5.7|2023-11-16|2024-02-16|2024-05-17|
 |MySQL 8.0|Do określenia|Do określenia|Do określenia|
+
+> [!primary]
+>
+> Usługi bazy danych SQL zawarte w pakietach hostingowych OVHcloud nie mogą być aktualizowane bezpośrednio z poziomu Panelu klienta OVHcloud ani za pośrednictwem bazy danych po zakończeniu cyklu sprzedaży/wygaśnięcia.
+>
+
+Jeśli chcesz przewidzieć ten koniec sprzedaży/wygaśnięcia lub wykonać czynności ręcznie, musisz obowiązkowo wykonać następujące czynności:
+
+- Przypadek nr 1: Dysponujesz jedną bazą danych zawartą w cenie Twojego hostingu:
+    - Upewnij się, że zawartość bazy danych jest zgodna z nowszym systemem DBMS.
+    - [Eksportuj zawartość bazy danych](/pages/web_cloud/web_hosting/sql_database_export).
+    - Usuń starą bazę danych.
+    - [Utwórz nową bazę danych](/pages/web_cloud/web_hosting/sql_create_database) w nowszej wersji DBMS.
+    - [Zaimportuj zawartość starej bazy danych do nowej bazy danych](/pages/web_cloud/web_hosting/sql_importing_mysql_database).
+    - Przypisz nową bazę danych do swojej strony www.
+
+- Przypadek nr 2: Masz do swojej dyspozycji kilka baz danych zawartych w ofercie hostingu:
+    - Upewnij się, że zawartość bazy danych jest zgodna z nowszym systemem DBMS.
+    - Jako środek ostrożności [eksportuj zawartość bazy danych](/pages/web_cloud/web_hosting/sql_database_export).
+    - [Utwórz nową bazę danych](/pages/web_cloud/web_hosting/sql_create_database) w nowszej wersji DBMS.
+    - [Zduplikuj zawartość starej bazy danych w nowej bazie danych](/pages/web_cloud/web_hosting/copy_database).
+    - Przypisz nową bazę danych do swojej strony www.
+    - Usuń starą bazę danych.
 
 ## Sprawdź również
 

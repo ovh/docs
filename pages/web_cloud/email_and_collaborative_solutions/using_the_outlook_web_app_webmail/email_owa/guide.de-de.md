@@ -1,7 +1,7 @@
 ---
 title: "E-Mail-Accounts über Outlook Web App (OWA) verwenden"
 excerpt: 'So verwenden Sie Ihre E-Mail-Adressen über OWA Webmail'
-updated: 2024-03-26
+updated: 2024-09-03
 ---
 
 ## Ziel
@@ -33,12 +33,18 @@ Um sich mit Ihrer E-Mail-Adresse bei OWA Webmail anzumelden, rufen Sie die allge
 ![useowa](images/use-owa-step1.png){.thumbnail}
 
 > [!warning]
-> 
+>
 > Wenn Sie zu einem **Roundcube** Interface weitergeleitet werden, bedeutet dies, dass Sie die Legacy-Version der MX Plan Lösung verwenden. Weitere Informationen zu Ihrem MX Plan finden Sie auf unserer Seite "[Erste Schritte mit MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)".
 >
 > Um sich mit dem **Roundcube** Interface vertraut zu machen, lesen Sie unsere Anleitung: [Verwendung Ihres E-Mail-Accounts mit Roundcube Webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
 
 Wenn Sie sich zum ersten Mal mit dieser E-Mail-Adresse bei OWA Webmail anmelden, werden Sie aufgefordert, die Sprache und die Zeitzone der Benutzeroberfläche festzulegen. Um fortzufahren, klicken Sie auf `Speichern`{.action}.
+
+> [!primary]
+>
+> Zeitzonen werden nach [UTC (Coordinated Universal Time)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png) und nicht in alphabetischer Reihenfolge der Städte aufgeführt.
+>
+> **Beispiel**: Für Westeuropa ist dies UTC +1 (Brüssel, Kopenhagen, Madrid, Paris).
 
 ![useowa](images/use-owa-step2.png){.thumbnail}
 

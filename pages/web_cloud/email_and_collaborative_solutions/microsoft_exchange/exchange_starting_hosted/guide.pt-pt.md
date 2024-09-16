@@ -1,7 +1,7 @@
 ---
 title: 'Primeiros passos com o serviço Hosted Exchange'
 excerpt: 'Como configurar pela primeira vez um serviço Hosted Exchange'
-updated: 2023-03-06
+updated: 2024-09-03
 ---
 
 > [!primary]
@@ -79,14 +79,18 @@ Defina o nome dos endereços de e-mail Exchange e adicione informações adicion
 #### **Caso particular**
 
 - Se configurar a plataforma Exchange com um domínio não gerido na mesma Área de Cliente que esta plataforma, ou noutro prestador de serviços de domínio, poderá obter a seguinte janela:<br>
+
 ![email](images/exchange-wizard05.png){.thumbnail .w-640}<br>
+
 Nesta janela, deverá adicionar um **registo CNAME** na zona DNS do domínio. Esta entrada tem como objetivo verificar que gere corretamente este nome de domínio.<br>
 
 > [!warning]
 > Sem esta validação por campo CNAME, é impossível utilizar a plataforma com este nome de domínio.
 
 - Se configurar a plataforma Exchange com um domínio não gerido na mesma Área de Cliente que esta plataforma, se for gerido por outro prestador de serviços de domínio, ou se tiver optado por configurar manualmente o seu domínio, aparecerá a seguinte janela:<br>
+
 ![email](images/exchange-wizard06.png){.thumbnail .w-640}<br>
+
 Poderá consultar aqui os valores a inserir na sua zona DNS. Os **campos MX** correspondem à receção dos seus e-mails. O **campo SRV** corresponde à configuração automática dos seus endereços de e-mail.
 
 Encontre os detalhes de configuração da sua zona DNS relativos ao seu serviço de e-mail na nossa página "[Adicionar um campo MX à configuração do seu domínio](/pages/web_cloud/domains/dns_zone_mx)".
@@ -129,6 +133,14 @@ As contas que ainda não foram configuradas aparecem na tabela como “*@configu
 ### Utilizar os seus endereços de e-mail
 
 As contas foram configuradas e estão prontas a usar. Para isso, a OVHcloud disponibiliza o webmail **Outlook Web App** (OWA). Pode aceder através do endereço <https://www.ovhcloud.com/pt/mail/>, inserindo as credenciais do seu endereço de e-mail. Para mais informações, [consulte os manuais da OVHcloud](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
+
+Se for a primeira vez que acede ao OWA com este endereço de e-mail, ser-lhe-á pedido que defina o idioma da interface e o fuso horário. Em seguida, clique em ‘Guardar‘ {.action} para continuar.
+
+> [!primary]
+>
+> Os fusos horários estão listados de acordo com [a norma UTC (tempo universal coordenado)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), e não por ordem alfabética das cidades.
+>
+> **Exemplo** : Para a Europa Ocidental, trata-se de UTC +1 (Bruxelas, Copenhaga, Madrid, Paris).
 
 Se quiser, também pode configurar o seu endereço de e-mail num software (cliente) de correio eletrónico ou dispositivo externo (smartphone ou tablet), [consulte os manuais da OVHcloud](/products/web-cloud-email-collaborative-solutions-microsoft-exchange). Para uma utilização otimizada do seu endereço Exchange num software, certifique-se de que seja compatível com o serviço.
 

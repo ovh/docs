@@ -22,7 +22,7 @@ Die dedizierten Server von OVHcloud inkludieren einen zusätzlichen Backup-Speic
 
 ## Voraussetzungen
 
-- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account.
+- Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 > [!warning]

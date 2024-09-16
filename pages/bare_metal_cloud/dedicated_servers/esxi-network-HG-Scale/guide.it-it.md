@@ -1,8 +1,11 @@
 ---
 title: Configurare la rete su ESXi sulle gamme High Grade & SCALE
 excerpt: Come configurare la rete su ESXi sulle gamme High Grade & SCALE
-updated: 2024-07-08
+updated: 2024-09-13
 ---
+
+> [!warning]
+> L'hypervisor ESXi non è più supportato da OVHcloud. Per maggiori informazioni, visita [questa pagina dedicata](/pages/bare_metal_cloud/dedicated_servers/esxi-end-of-support).
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
@@ -25,7 +28,7 @@ Sulle gamme High Grade & SCALE, il funzionamento degli Additional IP in modalit�
 
 * Disporre di un blocco pubblico di indirizzi IP nel proprio account, con almeno quattro indirizzi. Il blocco deve essere puntato verso la vRack.
 * Aver selezionato un intervallo di indirizzi IP privati
-* Disporre di un [server dedicato compatibile con la vRack](https://www.ovhcloud.com/it/bare-metal/){.external}
+* Disporre di un [server dedicato compatibile con la vRack](/links/bare-metal/bare-metal){.external}
 * Aver attivato un servizio [vRack](https://www.ovh.it/soluzioni/vrack/){.external}
 * Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 

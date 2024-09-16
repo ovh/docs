@@ -25,7 +25,7 @@ Niniejszy przewodnik wyjaśnia, jak skonfigurować odpowiadający Twoim potrzebo
 ### Powinieneś posiadać:
 
 - [Serwer Storage OVHcloud](https://www.ovhcloud.com/pl/bare-metal/storage/){.external}
-- Infrastrukturę produkcyjną ([VPS](https://www.ovhcloud.com/pl/vps/){.external}, [serwery dedykowane](https://www.ovhcloud.com/pl/bare-metal/){.external}, [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external}…)
+- Infrastrukturę produkcyjną ([VPS](https://www.ovhcloud.com/pl/vps/){.external}, [serwery dedykowane](/links/bare-metal/bare-metal){.external}, [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external}…)
 - Połączenie SSH skonfigurowane między serwerem kopii zapasowych a infrastrukturą produkcyjną
 - Zalecane: sieć prywatna między serwerami ([OVHcloud vRack](https://www.ovh.pl/rozwiazania/vrack/){.external})
 

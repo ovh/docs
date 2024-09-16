@@ -12,7 +12,7 @@ If you are unable to restore data from a backup, it serves no purpose. After rea
 
 ## Requirements
 
-- An [OVHcloud Bare Metal server](https://www.ovhcloud.com/asia/bare-metal/)
+- An [OVHcloud Bare Metal server](/links/bare-metal/bare-metal)
 - [Veeam Backup & Replication installed and registered](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication)
 
 > [!primary]

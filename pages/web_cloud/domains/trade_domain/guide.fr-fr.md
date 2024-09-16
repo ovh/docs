@@ -1,7 +1,7 @@
 ---
 title: "Changer le propriétaire d’un nom de domaine"
 excerpt: "Retrouvez les différentes informations concernant le changement de propriétaire d’un nom de domaine."
-updated: 2024-05-21
+updated: 2024-09-04
 ---
 
 ## Objectif
@@ -55,7 +55,7 @@ Connectez-vous à votre [espace client OVHcloud](/links/manager), dans la sectio
 
 Dans l'onglet `Informations générales`{.action}, accédez à la section **Abonnement** dans le coin inférieur droit. Cliquez sur `...`{.action} devant **Contacts**, puis cliquez sur `Changer de propriétaire`{.action}.
 
-![changement de propriétaire](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/change-domain-name-holder.png){.thumbnail}
+![changement de propriétaire](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/change-owner.png){.thumbnail}
 
 > [!warning]
 >
@@ -95,7 +95,7 @@ Si vous devez mettre à jour certaines informations secondaires telles que le nu
 
 Dans la section **Abonnement** de l'onglet `Informations générales`{.action}, cliquez sur `...`{.action} devant **Contacts**, puis cliquez sur `Actualiser les informations du propriétaire`{.action}.
 
-![changement de propriétaire](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/refresh-owner-information.png){.thumbnail}
+![changement de propriétaire](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/refresh-holder-information.png){.thumbnail}
 
 Pour cette opération, vous n'avez pas besoin de confirmer les modifications par e-mail.
 

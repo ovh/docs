@@ -22,7 +22,7 @@ Serwery dedykowane OVHcloud dysponują dodatkową przestrzenią do przechowywani
 
 ## Wymagania początkowe
 
-* Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/){.external} na koncie OVHcloud
+* Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal){.external} na koncie OVHcloud
 * Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
 
 > [!warning]

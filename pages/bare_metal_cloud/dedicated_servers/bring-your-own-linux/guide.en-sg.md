@@ -17,7 +17,7 @@ In addition to the requirement and limitations mentioned below, you must ensure 
 
 ## Requirements
 
-- A [dedicated server](https://www.ovhcloud.com/en-sg/bare-metal/) in your OVHcloud account
+- A [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](/links/manager) (for the "[Deployment via Control Panel](#viacontrolpanel)" method)
 - Access to the [OVHcloud API](/pages/manage_and_operate/api/first-steps) (for the "[Deployment via API](#viaapi)" section of this guide)
 - Your image must be smaller than the Server RAM minus 3GiB

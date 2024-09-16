@@ -17,7 +17,7 @@ Zusätzlich zum OVHcloud Kundencenter können Sie Ihre OVHcloud Public Cloud Pro
 ## Voraussetzungen
 
 - Sie haben eine Public Cloud Instanz über Ihr [OVHcloud Kundencenter](/pages/public_cloud/compute/public-cloud-first-steps) oder über das [Horizon-Interface](/pages/public_cloud/compute/create_instance_in_horizon) erstellt.
-- Sie haben einen [SSH-Schlüssel erstellt](/pages/public_cloud/compute/public-cloud-first-steps#schritt-1-ssh-schlussel-erstellen).
+- Sie haben einen [SSH-Schlüssel erstellt](/pages/public_cloud/compute/creating-ssh-keys-pci).
 
 ## In der praktischen Anwendung
 
@@ -160,7 +160,7 @@ Bei Verlust des Zugangs zu Ihrer Instanz aufgrund einer fehlerhaften Konfigurati
 > [!primary]
 >
 > Sie können direkt über die VNC-Konsole auf Ihre Instanz zugreifen. Sie müssen jedoch zuerst ein Passwort für den Root-Benutzer konfigurieren.
-> Weitere Informationen finden Sie in [dieser Anleitung](/pages/public_cloud/compute/become_root_and_change_password).
+> Weitere Informationen finden Sie in [dieser Anleitung](/pages/public_cloud/compute/public-cloud-first-steps#user-mgmt).
 > Die VNC-Konsole kann auch als erster Diagnose-Ansatz bei einer Fehlfunktion verwendet werden, indem die Bootphase Ihrer Instanz analysiert wird.
 > 
 

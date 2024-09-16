@@ -1,8 +1,11 @@
 ---
 title: 'Zarządzanie serwerem dedykowanym ESXi i jego bezpieczeństwo po pierwszym uruchomieniu'
 excerpt: 'Poznaj sposoby skutecznego zabezpieczenia serwera dedykowanego ESXi'
-updated: 2023-03-22
+updated: 2024-09-13
 ---
+
+> [!warning]
+> Hypervisor ESXi nie jest już wspierany przez OVHcloud. Więcej informacji na temat [tej strony dedykowanej](/pages/bare_metal_cloud/dedicated_servers/esxi-end-of-support).
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.

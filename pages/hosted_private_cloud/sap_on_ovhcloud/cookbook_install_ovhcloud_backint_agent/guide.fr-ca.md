@@ -1,7 +1,7 @@
 ---
 title: "Installer et utiliser OVHcloud Backint Agent pour SAP HANA"
 excerpt: "Ce guide fournit des instructions générales pour l'installation d'OVHcloud Backint Agent pour SAP HANA et son utilisation"
-updated: 2024-08-05
+updated: 2024-09-03
 ---
 
 
@@ -21,7 +21,7 @@ OVHcloud Backint Agent pour SAP HANA a été certifié par SAP, vous pouvez retr
 
 ## Prérequis
 
-- Etre connecté à l’[espace client OVHcloud](/links/manager).
+- Être connecté à l’[espace client OVHcloud](/links/manager).
 - [Un projet Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project) dans votre compte OVHcloud avec :
     - [un bucket Object Storage S3](/pages/storage_and_backup/object_storage/s3_create_bucket) ;
     - [un utilisateur S3](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creation-dun-utilsateur) avec le droit de lecture et d'écriture.
@@ -44,7 +44,7 @@ Vous pouvez vérifier le statut du versioning de votre bucket Object Storage S3 
 
 1. Accédez à l'[espace client OVHcloud](/links/manager).
 2. Cliquez sur l'univers `Public Cloud`{.action} et sélectionnez votre projet Public Cloud. Puis cliquez sur `Object Storage`{.action}.
-3. Cliquez sur le bucket Object Storage qui accueillera les sauvegardes de votre base de données SAP HANA.
+3. Cliquez sur le bucket Object Storage S3 qui accueillera les sauvegardes de votre base de données SAP HANA.
 4. Vérifiez la valeur du paramètre `Versioning`{.action}, ce dernier doit avoir pour valeur `Activé`{.action}. Si la valeur de ce paramètre est `Désactivé`{.action}, cliquez sur `Activer le versioning`{.action}.
 
 | Versioning activé | Versioning désactivé |
@@ -317,7 +317,7 @@ Dans notre exemple, nous choisissons l'option `Recover to the most recent state`
 
 ![recover_tenant_04](images/recover_tenant/recover_tenant_04.png){.thumbnail}
 
-5\. Si vous n'avez pas modifié la localisation du catalogue de sauvegardes, l'option `Backup location only`{.action} est correcte.
+5\. Si vous n'avez pas modifié la localisation du catalogue de sauvegardes, l'option `Backint location only`{.action} est correcte.
 
 Dans le cas contraire, veuillez indiquer le chemin.
 

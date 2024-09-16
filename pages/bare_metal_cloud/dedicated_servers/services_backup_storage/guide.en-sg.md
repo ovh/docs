@@ -18,7 +18,7 @@ OVHcloud dedicated servers include additional backup space to store important da
 
 ## Requirements
 
-- A [dedicated server](https://www.ovhcloud.com/en-sg/bare-metal/) in your OVHcloud account
+- A [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]

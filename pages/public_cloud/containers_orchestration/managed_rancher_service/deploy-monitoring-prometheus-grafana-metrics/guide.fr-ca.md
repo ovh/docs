@@ -1,14 +1,8 @@
 ---
 title: Deploying a monitoring stack (Prometheus & Grafana) in a Kubernetes cluster in MRS
 excerpt: 'Find out how to deploy monitoring applications (Prometheus & Grafana) in a Kubernetes cluster and display metrics and dashboards on a Managed Rancher Service'
-updated: 2024-08-06
+updated: 2024-09-11
 ---
-
-> [!warning]
->
-> Usage of [Managed Rancher Service](https://labs.ovhcloud.com/en/managed-rancher-service/) is currently in Beta phase.
-> This guide may be incomplete and will be extended during the beta phase. Our team remains available on our dedicated Discord Channel, do not hesitate to join and reach us: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our Container and Orchestration services.
->
 
 ## Objective
 
@@ -149,4 +143,6 @@ If it's the case, you can add more nodes in your Kubernetes cluster and try the 
 
 - If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our [community of users](/links/community).
+- Our team remains available on our dedicated Discord Channel, do not hesitate to join and reach us : <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our Container and Orchestration services.
+
+- Join our [community of users](/links/community).

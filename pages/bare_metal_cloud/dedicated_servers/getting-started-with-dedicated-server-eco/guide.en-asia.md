@@ -13,7 +13,7 @@ A dedicated server is a physical server ("bare metal") located in one of our dat
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](/links/manager)
-- A [dedicated server](https://www.ovhcloud.com/asia/bare-metal/) of the ranges Kimsufi, So You Start or Rise in your OVHcloud account
+- A [dedicated server](/links/bare-metal/bare-metal) of the ranges Kimsufi, So You Start or Rise in your OVHcloud account
 - Administrative access via SSH or remote desktop (Windows) to your server
 
 ## Instructions
@@ -36,7 +36,7 @@ A dedicated server is a physical server ("bare metal") located in one of our dat
 
 > [!success]
 >
-> Find more information about server operating systems on [our web page](https://www.ovhcloud.com/en-gb/bare-metal/os/).
+> Find more information about server operating systems on [our web page](/links/bare-metal/os).
 >
 
 You can easily reinstall your server or choose a different OS image to install in your [OVHcloud Control Panel](/links/manager). From the `General information`{.action} tab, click on `...`{.action} next to the operating system and then click `Install`{.action}.
@@ -51,7 +51,7 @@ In the popup window, select one of the installation options:
 
 > [!primary]
 >
-> Some proprietary operating systems or platforms such as Plesk and Windows require licences which generate additional fees. You can buy licences [via OVHcloud](https://www.ovhcloud.com/asia/bare-metal/os/) or from an external reseller. You will then need to apply your licence, in the operating system itself or by using your [OVHcloud Control Panel](/links/manager).
+> Some proprietary operating systems or platforms such as Plesk and Windows require licences which generate additional fees. You can buy licences [via OVHcloud](/links/bare-metal/os) or from an external reseller. You will then need to apply your licence, in the operating system itself or by using your [OVHcloud Control Panel](/links/manager).
 >
 You can manage all your licences in the `Bare Metal Cloud`{.action} section under `Licences`{.action}. In this section, you can also order licences or add existing ones via the `Actions`{.action} button.
 >
@@ -89,7 +89,7 @@ Finally, click `Confirm`{.action} to trigger the operating system installation o
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/asia/directory/) if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](/links/partner) if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
 >
 
 #### Linux
@@ -236,7 +236,7 @@ You can find more information about OVHcloud Monitoring in [this guide](/pages/b
 
 > [!primary]
 >
-> Please note that [Additional IP addresses](https://www.ovhcloud.com/asia/bare-metal/ip/) are not compatible with the **Kimsufi** range.
+> Please note that [Additional IP addresses](/links/network/additional-ip) are not compatible with the **Kimsufi** range.
 >
 
 #### Network bridging
@@ -306,6 +306,6 @@ To activate and use the backup storage, please refer to [this guide](/pages/bare
 
 [OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our [community of users](/links/community).

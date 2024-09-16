@@ -26,8 +26,8 @@ Es ist auch möglich, diese Konfiguration auf jedem der Hyper-V Server (ein priv
 
 ## Voraussetzungen
 
-- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account.
-- Sie verfügen über eine [Additional IP](https://www.ovhcloud.com/de/bare-metal/ip/)-Adresse oder einen Additional IP-Block.
+- Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) in Ihrem Kunden-Account.
+- Sie verfügen über eine [Additional IP](/links/network/additional-ip)-Adresse oder einen Additional IP-Block.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 > [!warning]
@@ -252,7 +252,7 @@ network:
 
 - Sie haben einen öffentlichen IP-Adressblock mit mindestens vier Adressen in Ihrem Kunden-Account.
 - Sie haben Ihren gewünschten privaten IP-Adressbereich festgelegt.
-- Sie verfügen über einen mit vRack kompatiblen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/).
+- Sie verfügen über einen mit vRack kompatiblen [Dedicated Server](/links/bare-metal/bare-metal).
 - Sie haben ein [vRack](https://www.ovh.de/loesungen/vrack/) in Ihrem Kunden-Account eingerichtet.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 

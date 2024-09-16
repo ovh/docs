@@ -17,7 +17,7 @@ In generale, le politiche anti-spam sono severe. Per rendere più fluide le oper
 > [!warning]
 >OVHcloud fornisce i servizi di cui sei responsabile per la configurazione e la gestione. Sei quindi responsabile del loro corretto funzionamento.
 >
->Questa guida ti mostra come eseguire le operazioni necessarie per eseguire l'operazione. Tuttavia, in caso di difficoltà o dubbi relativamente all'amministrazione, all'utilizzo o alla realizzazione dei servizi su un server, ti consigliamo di contattare un fornitore di servizi specializzato.
+> Questa guida ti mostra come eseguire le operazioni necessarie per eseguire l'operazione. Tuttavia, in caso di difficoltà o dubbi relativamente all'amministrazione, all'utilizzo o alla realizzazione dei servizi su un server, ti consigliamo di contattare un [provider specializzato](/links/partner).
 >
 
 ## Prerequisiti
@@ -157,6 +157,6 @@ Potrebbe essere utile utilizzare un sito come [Mail Tester](http://www.mail-test
 
 [Migliorare la sicurezza delle email tramite un record DMARC](/pages/web_cloud/domains/dns_zone_dmarc)
 
-Per essere accompagnato sull'implementazione delle soluzioni OVHcloud, contatta la nostra [rete di partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per essere accompagnato sull'implementazione delle soluzioni OVHcloud, contatta la nostra [rete di partner OVHcloud](/links/partner).
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

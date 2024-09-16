@@ -13,7 +13,7 @@ L'aggrégation se base sur la technologie IEEE 802.3ad, ou Link Aggregation Cont
 
 ## Prérequis
 
-- Disposer d'un [serveur dédié OVHcloud](https://www.ovhcloud.com/fr/bare-metal/)
+- Disposer d'un [serveur dédié OVHcloud](/links/bare-metal/bare-metal)
 - Être connecté à votre [espace client OVHcloud](/links/manager)
 - Un système d'exploitation / hyperviseur supportant le protocole d'aggrégation 802.3ad (LACP)
 

@@ -18,12 +18,12 @@ Los servidores de las gamas High Grade, Scale y Advance (desde julio de 2024) se
 > [!warning]
 > OVHcloud le ofrece una serie de servicios cuya configuración y gestión recaen sobre usted. Por lo tanto, es su responsabilidad asegurarse de que estos servicios funcionen correctamente.
 >
-> El propósito de esta guía es ayudarle, en la medida de lo posible, con las tareas generales. No obstante, póngase en contacto con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) y/o el editor de <i>software</i> del servicio si tiene dificultades. Nosotros no podremos ayudarle al respecto. Puede encontrar información adicional en la sección «Más información» de esta guía.
+> El propósito de esta guía es ayudarle, en la medida de lo posible, con las tareas generales. No obstante, póngase en contacto con un [proveedor especializado](/links/partner) y/o el editor de <i>software</i> del servicio si tiene dificultades. Nosotros no podremos ayudarle al respecto. Puede encontrar información adicional en la sección «Más información» de esta guía.
 >
 
 ## Requisitos
 
-- Tener un [servidor dedicado](https://www.ovhcloud.com/es-es/bare-metal/) en su cuenta de OVHcloud
+- Tener un [servidor dedicado](/links/bare-metal/bare-metal) en su cuenta de OVHcloud
 - Tener toda la información relativa a su IPv6 (prefijo, puerta de enlace, etc.)
 - Tener conocimientos básicos de redes y de [SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
 

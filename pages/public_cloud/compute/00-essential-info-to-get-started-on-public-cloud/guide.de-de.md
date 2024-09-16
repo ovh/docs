@@ -134,7 +134,7 @@ Verwenden Sie folgende Anleitungen, um Informationen zum praktischen Vorgehen zu
 |Dokumentation|Beschreibung|
 |---|---|
 |[Erste Instanz erstellen](/pages/public_cloud/compute/public-cloud-first-steps)|Praktische Anleitung zum Starten eines Cloud-Servers über das OVHcloud Kundencenter.|
-|[Verwendung von SSH-Schlüsseln](/pages/public_cloud/compute/public-cloud-first-steps#schritt-2-offentliche-schlussel-im-ovhcloud-kundencenter-speichern_1)| Um sich mit einer Linux-Instanz zu verbinden, benötigen Sie eine SSH-Verbindung. In dieser Anleitung erfahren Sie, wie diese verwendet wird.|
+|[Verwendung von SSH-Schlüsseln](/pages/public_cloud/compute/creating-ssh-keys-pci)| Um sich mit einer Linux-Instanz zu verbinden, benötigen Sie eine SSH-Verbindung. In dieser Anleitung erfahren Sie, wie diese verwendet wird.|
 |[Konfiguration des privaten Netzwerks](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack)|Bei OVHcloud werden private Netzwerke mit der vRack Technologie eingesetzt. Diese Anleitung begleitet Sie bei der Umsetzung.|
 |[Eine zusätzliche Disk mit einer Instanz verbinden](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)|In dieser Anleitung erfahren Sie, wie Sie zusätzlichen Storage zu Ihrer Instanz hinzufügen.|
 |[Auf das Horizon-Interface zugreifen](/pages/public_cloud/compute/introducing_horizon)|Das OpenStack Horizon Interface erlaubt einige erweiterte Einstellungen. Der Zugriff wird hier erklärt.|

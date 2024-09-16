@@ -6,7 +6,7 @@ updated: 2019-03-12
 
 ## Objectivo
 
-O [vRack](https://www.ovh.pt/solucoes/vrack/){.external} é uma rede privada que lhe permite configurar o direcionamento entre dois ou mais [servidores dedicados](https://www.ovhcloud.com/pt/bare-metal/){.external} da OVHcloud.
+O [vRack](https://www.ovh.pt/solucoes/vrack/){.external} é uma rede privada que lhe permite configurar o direcionamento entre dois ou mais [servidores dedicados](/links/bare-metal/bare-metal){.external} da OVHcloud.
 
 **Saiba como definir uma zona de anúncio de um bloco IP no vRack.**
 

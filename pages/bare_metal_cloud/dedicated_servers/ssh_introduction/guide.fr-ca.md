@@ -20,7 +20,7 @@ Le protocole de communication SSH (Secure Shell) est l'outil principal pour éta
 
 ## Prérequis
 
-- Avoir un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/) ou un [VPS](https://www.ovhcloud.com/fr-ca/vps/) dans votre compte OVHcloud.
+- Avoir un [serveur dédié](/links/bare-metal/bare-metal) ou un [VPS](https://www.ovhcloud.com/fr-ca/vps/) dans votre compte OVHcloud.
 - Une application cliente SSH (en ligne de commande ou en interface graphique).
 
 > [!primary]
@@ -178,6 +178,6 @@ Veuillez consulter la FAQ officielle et la documentation de PuTTY pour plus d'in
 
 [VPS mode rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

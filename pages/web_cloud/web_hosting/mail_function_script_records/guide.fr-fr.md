@@ -1,7 +1,7 @@
 ---
 title: "Suivre et gérer les e-mails automatisés de son hébergement web"
 excerpt: "Découvrez comment suivre et gérer les e-mails automatisés envoyés depuis votre hébergement web OVHcloud"
-updated: 2024-08-20
+updated: 2024-09-05
 ---
 
 ## Objectif
@@ -55,9 +55,10 @@ La page affiche plusieurs informations vous permettant de visualiser l'activité
 
 Sur la droite, plusieurs boutons permettent de gérer les envois d'e-mails automatisés depuis votre hébergement web. Selon l'état du service, certains peuvent ne pas être disponibles.
 
+- **Purger les e-mails** : efface les e-mails présents dans la file d'attente et débloque l'envoi de mails.
+- **E-mails en erreur** : permet l'accès aux logs des derniers e-mails tombés en erreur d'envoi. Vous y trouverez les adresses e-mail concernées avec l'erreur associée. Attention, cet historique ne sera pas réinitialisé, même si vous décidez de `Purger les e-mails`{.action} ou de `Débloquer l'envoi`{.action}.
 - **Bloquer l'envoi** : bloque la distribution des envois d'e-mails automatisés de votre hébergement web. Les e-mails générés par vos scripts après le blocage ne seront pas envoyés, mais conservés dans une file d'attente pendant 72 heures maximum.
 - **Débloquer l'envoi** : débloque l'envoi des e-mails automatisés de votre hébergement web. Les e-mails présents dans la file d'attente seront également remis en distribution.
-- **Purger les e-mails** : efface les e-mails présents dans la file d'attente et débloque l'envoi de mails.
 
 Pour réaliser l'action souhaitée, cliquez sur le bouton correspondant puis sur `Valider`{.action}. Dans certains cas, l'action souhaitée peut nécessiter plusieurs dizaines de minutes pour être pleinement effective.
 
@@ -208,17 +209,6 @@ Même si nous vous recommandons vivement de privilégier l'utilisation de la fon
 > 
 > Les e-mails émis avec un script utilisant une configuration SMTP ne pourront pas être gérés et suivis depuis votre [espace client OVHcloud](/links/manager).
 > 
-
-Pour cela, vous pouvez utiliser le script suivant en remplaçant uniquement les valeurs `Host`, `Username` et `Password` par vos propres paramètres SMTP :
-
-```bash
-$mail->Host = "your.smtp.server";
-$mail->SMTPAuth = true; 
-$mail->SMTPSecure = "ssl";
-$mail->Port = 465; 
-$mail->Username = "e-mail@address.tld"; 
-$mail->Password = "YourEmailPassword"; 
-```
 
 > [!primary]
 >

@@ -16,14 +16,14 @@ A implementação de um servidor web e dos softwares associados permite ao seu s
 
 ## Requisitos
 
-- Um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/), um [VPS](https://www.ovhcloud.com/pt/vps/) ou uma instância [Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) na sua conta OVHcloud (exceto sistemas Windows)
+- Um [servidor dedicado](/links/bare-metal/bare-metal), um [VPS](https://www.ovhcloud.com/pt/vps/) ou uma instância [Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) na sua conta OVHcloud (exceto sistemas Windows)
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 - Um acesso administrativo ao seu serviço via SSH
 
 > [!warning]
 > Este tutorial explica a utilização de uma ou várias soluções da OVHcloud com ferramentas externas e descreve as operações realizadas num contexto preciso. Talvez tenha de adaptar as instruções à sua situação.
 >
-> Recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) ou que contacte a [nossa comunidade](https://community.ovh.com/en/) se encontrar dificuldades ou dúvidas relativamente à administração, utilização ou implementação de serviços num servidor.
+> Recomendamos que recorra a um [prestador de serviços especializado](/links/partner) ou que contacte a [nossa comunidade](https://community.ovh.com/en/) se encontrar dificuldades ou dúvidas relativamente à administração, utilização ou implementação de serviços num servidor.
 >
 
 ## Instruções

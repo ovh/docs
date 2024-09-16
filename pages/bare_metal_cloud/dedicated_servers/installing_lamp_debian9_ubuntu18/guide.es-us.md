@@ -16,14 +16,14 @@ La creación de un servidor web y los programas asociados permiten que su servid
 
 ## Requisitos
 
-- Un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/), un [VPS](https://www.ovhcloud.com/es/vps/) o una instancia de [Public Cloud](https://www.ovhcloud.com/es/public-cloud/) en su cuenta de OVHcloud (excepto sistemas Windows)
+- Un [servidor dedicado](/links/bare-metal/bare-metal), un [VPS](https://www.ovhcloud.com/es/vps/) o una instancia de [Public Cloud](https://www.ovhcloud.com/es/public-cloud/) en su cuenta de OVHcloud (excepto sistemas Windows)
 - Tienes acceso a tu [área de cliente de OVHcloud](/links/manager)
 - Acceso administrativo al servicio por SSH
 
 > [!warning]
 > Este tutorial explica cómo utilizar una solución de OVHcloud con herramientas externas en un contexto concreto. Puede que necesite adaptar las indicaciones a su situación.
 >
-> Le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/) o con [nuestra comunidad](https://community.ovh.com/en/) si tiene problemas o dudas relativos a la administración, el uso o la instalación de servicios en un servidor.
+> Le recomendamos que contacte con un [proveedor especializado](/links/partner) o con [nuestra comunidad](https://community.ovh.com/en/) si tiene problemas o dudas relativos a la administración, el uso o la instalación de servicios en un servidor.
 >
 
 ## Procedimiento

@@ -13,13 +13,13 @@ If you are configuring your dedicated server as a DNS server, you can make use o
 ## Requirements
 
 - A domain name to which you have administrative access
-- A [dedicated server](https://www.ovhcloud.com/en/bare-metal/) in your OVHcloud account
+- A [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
 >OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en/directory/) if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](/links/partner) if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
 >
 
 ## Instructions

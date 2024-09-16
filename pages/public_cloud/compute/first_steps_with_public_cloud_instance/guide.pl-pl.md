@@ -59,7 +59,7 @@ Na nowej stronie, która się wyświetla pojawi zmieniona wersja opcji [tworzeni
 
 - **Zmień nazwę**: możesz nadać instancji nazwę, aby ułatwić jej identyfikację.
 - **Zmień obraz**: możesz wybrać inny system operacyjny dla instancji (pamiętaj, że reinstalacja instancji spowoduje usunięcie wszystkich zawartych w niej danych).
-- **Zmień model**: możesz zmienić model instancji. Więcej informacji na temat opcji znajdziesz w [tym przewodniku](/pages/public_cloud/compute/public-cloud-first-steps#krok-3-tworzenie-instancji).
+- **Zmień model**: możesz zmienić model instancji. Więcej informacji na temat opcji znajdziesz w [tym przewodniku](/pages/public_cloud/compute/public-cloud-first-steps#model).
 - **Zmień okres fakturowania**: możesz zmienić okres fakturowania instancji z godzinowego na miesięczny. Więcej informacji znajdziesz w [tym przewodniku](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing).
 
 #### Utwórz kopię zapasową instancji
@@ -137,7 +137,7 @@ Następnie kliknij kartę `Konsola VNC`{.action}.
 
 Konsola VNC zapewnia bezpośredni dostęp do Twojej instancji. Aby dostęp ten działał, najpierw skonfiguruj nazwę użytkownika i hasło dla instancji. 
 
-Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem "[Tworzenie pierwszej instancji Public Cloud i łączenie się z nią](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance)".
+Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem "[Tworzenie pierwszej instancji Public Cloud i łączenie się z nią](/pages/public_cloud/compute/public-cloud-first-steps#vnc-console)".
 
 ## Sprawdź również
 

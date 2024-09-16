@@ -10,7 +10,7 @@ updated: 2024-03-25
 
 > [!primary]
 >
-> Od 6 października 2022 nasze rozwiązanie "Failover IP" nazywa się teraz [Additional IP](https://www.ovhcloud.com/pl/network/additional-ip/). To nie ma wpływu na jego funkcje.
+> Od 6 października 2022 nasze rozwiązanie "Failover IP" nazywa się teraz [Additional IP](/links/network/additional-ip). To nie ma wpływu na jego funkcje.
 >
 
 ## Wprowadzenie
@@ -23,12 +23,12 @@ Alias IP (po angielsku IP aliasing) to specjalna konfiguracja sieci serwera dedy
 >
 > OVHcloud oddaje do Twojej dyspozycji usługi, za które to Ty przejmujesz odpowiedzialność. Firma OVHcloud nie ma dostępu do Twoich serwerów, nie pełni funkcji administratora i w związku z tym nie będzie mogła udzielić Ci wsparcia. Dlatego to do Ciebie należy codzienne zarządzanie oprogramowaniem i dbanie o bezpieczeństwo.
 >
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Jeśli jednak napotkasz jakiekolwiek trudności lub wątpliwości związane z administrowaniem, użytkowaniem lub dbaniem o bezpieczeństwo serwera, zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/directory/). Więcej informacji znajduje się w sekcji "Sprawdź również".
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Jeśli jednak napotkasz jakiekolwiek trudności lub wątpliwości związane z administrowaniem, użytkowaniem lub dbaniem o bezpieczeństwo serwera, zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](/links/partner). Więcej informacji znajduje się w sekcji "Sprawdź również".
 >
 
 ## Wymagania początkowe
 
-- Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/){.external}.
+- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal){.external}.
 - Dysponowanie jednym lub kilkoma adresami Additional IP.
 - Zalogowanie się poprzez SSH do serwera (dostęp *sudo*).
 

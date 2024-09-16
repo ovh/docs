@@ -1,7 +1,7 @@
 ---
 title: 'Iniziare a utilizzare Hosted Exchange'
 excerpt: 'Scopri come configurare un Hosted Exchange'
-updated: 2023-03-06
+updated: 2024-09-03
 ---
 
 > [!primary]
@@ -79,14 +79,18 @@ Determina il nome dei tuoi account email Exchange e aggiungi ulteriori informazi
 #### **Caso particolare**
 
 - Se configuri la tua piattaforma Exchange con un dominio non gestito sullo stesso Spazio Cliente OVH o presso un altro provider di domini, ottieni questa finestra:<br>
+
 ![email](images/exchange-wizard05.png){.thumbnail .w-640}<br>
+
 Da questa finestra è possibile aggiungere un **record CNAME** alla zona DNS del dominio. Questo record ha lo scopo di verificare che il dominio sia gestito correttamente.<br>
 
 > [!warning]
 > Senza questa conferma da record CNAME, non è possibile utilizzare la piattaforma con questo dominio.
 
 - Se configuri la tua piattaforma Exchange con un dominio non gestito sullo stesso spazio cliente della piattaforma, gestito da un altro provider di domini o se hai scelto di configurare manualmente il tuo dominio, visualizzi la finestra seguente:<br>
+
 ![email](images/exchange-wizard06.png){.thumbnail .w-640}<br>
+
 Qui puoi trovare i valori da inserire nella tua zona DNS. I **record MX** corrispondono alla ricezione delle tue email. Il **record SRV** corrisponde alla configurazione automatica dei tuoi indirizzi email.
 
 Per maggiori informazioni sulla configurazione della tua zona DNS, consulta la pagina "[Aggiungere un record MX alla configurazione del dominio](/pages/web_cloud/domains/dns_zone_mx)".
@@ -129,6 +133,14 @@ Gli account in attesa di configurazione includono “*@configureme.me*” accant
 ### Utilizza i tuoi indirizzi email
 
 Una volta configurati gli account, non rimane che utilizzarli! OVHcloud mette a disposizione la Webmail **Outlook Web App** (OWA). alla quale puoi accedere tramite l’indirizzo <https://www.ovhcloud.com/it/mail/>,  inserendo le credenziali associate al tuo indirizzo di posta elettronica. Per maggiori informazioni sull’utilizzo di OWA, consulta la [nostra documentazione](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
+
+Se è la prima volta che ti connetti a OWA con questo indirizzo email, ti verrà chiesto di impostare la lingua dell’interfaccia utente e definire il fuso orario. Clicca su `Salva`{.action} per continuare.
+
+> [!primary]
+>
+> I fusi orari sono elencati secondo [la norma UTC (Coordinated Universal Time)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png) e non in ordine alfabetico di città.
+>
+> **Esempio** : Per l'Europa occidentale, si tratta di UTC +1 (Bruxelles, Copenaghen, Madrid, Parigi).
 
 Per configurare l’account email su un client di posta o un dispositivo (ad esempio smartphone o tablet), [consulta la documentazione](/products/web-cloud-email-collaborative-solutions-microsoft-exchange). Per un utilizzo ottimale del tuo account Exchange, assicurati che il client di posta scelto sia compatibile con il servizio.
 

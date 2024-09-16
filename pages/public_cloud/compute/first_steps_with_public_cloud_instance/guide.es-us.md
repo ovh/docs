@@ -59,7 +59,7 @@ Se abrirá una nueva página en la que podrá modificar las opciones de [creaci�
 
 - **Cambiar el nombre**: puede asignar un nombre a la instancia para facilitar la identificación.
 - **Modificar la imagen**: puede elegir otro sistema operativo para la instancia (tenga en cuenta que la reinstalación de una instancia eliminará todos los datos que contiene).
-- **Modificar el modelo**: puede cambiar el modelo de instancia. Para más información sobre las opciones, consulte [esta guía](/pages/public_cloud/compute/public-cloud-first-steps#3-crear-una-instancia).
+- **Modificar el modelo**: puede cambiar el modelo de instancia. Para más información sobre las opciones, consulte [esta guía](/pages/public_cloud/compute/public-cloud-first-steps#model).
 - **Modificar el período de facturación**: puede cambiar el período de facturación de la instancia desde una facturación mensual por horas. Para más información, consulte [esta guía](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing).
 
 #### Crear un backup de una instancia
@@ -137,7 +137,7 @@ A continuación, abra la pestaña `Consola VNC`{.action}.
 
 La consola VNC proporciona acceso directo a su instancia. Para que este acceso funcione, es necesario configurar primero un nombre de usuario y una contraseña en la instancia. 
 
-Consulte nuestra guía [Crear y conectarse a una instancia de Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#4-conectarse-a-una-instancia) para obtener más información.
+Consulte nuestra guía [Crear y conectarse a una instancia de Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#vnc-console) para obtener más información.
 
 ## Más información
 

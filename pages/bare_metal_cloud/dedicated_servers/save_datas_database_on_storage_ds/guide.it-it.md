@@ -25,7 +25,7 @@ OVHcloud offre una [gamma di server dedicati](https://www.ovhcloud.com/it/bare-m
 ### Hardware e software necessari
 
 - Un [server di storage OVHcloud](https://www.ovhcloud.com/it/bare-metal/storage/){.external}
-- Un’infrastruttura di produzione ([VPS](https://www.ovhcloud.com/it/vps/){.external}, [server dedicati](https://www.ovhcloud.com/it/bare-metal/){.external}, [Public Cloud](https://www.ovhcloud.com/it/public-cloud/){.external}...)
+- Un’infrastruttura di produzione ([VPS](https://www.ovhcloud.com/it/vps/){.external}, [server dedicati](/links/bare-metal/bare-metal){.external}, [Public Cloud](https://www.ovhcloud.com/it/public-cloud/){.external}...)
 - Una connessione SSH configurata tra il server di storage e l’infrastruttura di produzione
 - Una rete privata [vRack](https://www.ovh.it/soluzioni/vrack/){.external} tra i tuoi server (consigliato)
 

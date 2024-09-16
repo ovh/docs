@@ -19,7 +19,7 @@ When you install or reinstall a Windows operating system, you are provided with 
 
 ## Requirements
 
-- A [dedicated server](https://www.ovhcloud.com/en-ie/bare-metal/) with Windows installed in your OVHcloud account
+- A [dedicated server](/links/bare-metal/bare-metal) with Windows installed in your OVHcloud account
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions

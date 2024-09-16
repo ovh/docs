@@ -15,7 +15,7 @@ This is generally the most secure and convenient connection method.
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](/links/manager)
-- A [dedicated server](https://www.ovhcloud.com/asia/bare-metal/) or a [VPS](https://www.ovhcloud.com/asia/vps/) in your OVHcloud account
+- A [dedicated server](/links/bare-metal/bare-metal) or a [VPS](https://www.ovhcloud.com/asia/vps/) in your OVHcloud account
 - An SSH client application (command line or GUI)
 - Administrative access (sudo) via SSH to your server
 
@@ -174,15 +174,15 @@ If it is not already installed (check your applications list or use the search f
 
 Open `PuTTYgen` and select a supported encryption algorithm. This example uses RSA. Enter 4096 as the number of bits in the bottom right corner, then click on the button `Generate`{.action}.
 
-![putty key](images/puttygen_01.png){.thumbnail}
+![putty key](/pages/assets/screens/other/web-tools/putty/puttygen_01.png){.thumbnail}
 
 Move your mouse cursor freely about the area below the progress bar:
 
-![putty key](images/puttygen_02.gif){.thumbnail}
+![putty key](/pages/assets/screens/other/web-tools/putty/puttygen_02.gif){.thumbnail}
 
 The key is ready when the progress bar is full.
 
-![putty key](images/puttygen_03.png){.thumbnail}
+![putty key](/pages/assets/screens/other/web-tools/putty/puttygen_03.png){.thumbnail}
 
 Copy the full key string to the clipboard in order to [add it to your server](#addserverkey). Save both keys as files by clicking the corresponding buttons and also enter a passphrase to protect them.
 
@@ -374,7 +374,7 @@ If you have followed the instructions in the sections [Creating an SSH key pair 
 
 Open `PuTTY` and expand the subsection `SSH` in the left-hand menu, then click on `Auth` and `Credentials`.
 
-![putty key](images/puttygen_04.png){.thumbnail}
+![putty key](/pages/assets/screens/other/web-tools/putty/puttygen_04.png){.thumbnail}
 
 Click on the `Browse`{.action} button and select the `PuTTY` private key file (`keyfile.ppk`) from the folder in which you have saved it.
 
@@ -382,7 +382,7 @@ The key file is now associated with the current SSH session. Switch to `Session`
 
 Enter a name for this connection under `Saved Sessions` and click on `Save`{.action} to add it to the list.
 
-![putty key](images/puttygen_05.png){.thumbnail}
+![putty key](/pages/assets/screens/other/web-tools/putty/puttygen_05.png){.thumbnail}
 
 From now on, you can click on this `Session` item and open a connection to your server. To test it, click on `Open`{.action}. If you have protected the key file with a passphrase, you have to enter it at this point.
 
@@ -401,6 +401,6 @@ To configure another server connection, repeat the steps:
 
 [VPS rescue mode](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our user community on <https://community.ovh.com/en/>.

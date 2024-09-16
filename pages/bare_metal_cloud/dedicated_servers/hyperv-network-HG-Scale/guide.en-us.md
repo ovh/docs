@@ -22,9 +22,9 @@ It is also possible to set up such configuration (one interface on private netwo
 
 ## Requirements
 
-- An [OVHcloud dedicated server](https://www.ovhcloud.com/en/bare-metal/)
+- An [OVHcloud dedicated server](/links/bare-metal/bare-metal)
 - Access to the [OVHcloud Control Panel](/links/manager)
-- An [Additional IP](https://www.ovhcloud.com/en/bare-metal/ip/)
+- An [Additional IP](/links/network/additional-ip)
 
 > [!warning]
 >
@@ -65,7 +65,7 @@ Ethernet 3                Mellanox ConnectX-5 Adapter #3                4 Up    
 
 In our example:
 
-- The public interfaces are `Ehernet 3` and `Ethernet 4`.
+- The public interfaces are `Ethernet 3` and `Ethernet 4`.
 - The private interfaces are `Ethernet` and `Ethernet 2`.
 
 > [!primary]
@@ -246,8 +246,8 @@ network:
 
 - A public block of IP addresses in your account, with a minimum of four addresses
 - Your chosen private IP address range
-- A [vRack compatible server](https://www.ovhcloud.com/en/bare-metal/){.external}
-- A [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} service activated in your account
+- A [vRack compatible server](/links/bare-metal/bare-metal){.external}
+- A [vRack](/links/network/vrack){.external} service activated in your account
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 #### Explanations
@@ -274,7 +274,7 @@ Ethernet 3                Mellanox ConnectX-5 Adapter #3                4 Up    
 
 In our example:
 
-- The public interfaces are `Ehernet 3` and `Ethernet 4`.
+- The public interfaces are `Ethernet 3` and `Ethernet 4`.
 - The private interfaces are `Ethernet` and `Ethernet 2`.
 
 > [!primary]

@@ -1,8 +1,11 @@
 ---
 title: 'Netzwerk auf ESXi für die High Grade & SCALE Reihen konfigurieren'
 excerpt: 'Erfahren Sie, wie Sie das Netzwerk auf VMware ESXi für die High Grade & SCALE Reihen einrichten'
-updated: 2024-07-08
+uupdated: 2024-09-13
 ---
+
+> [!warning]
+> Der ESXi Hypervisor wird von OVHcloud nicht mehr unterstützt. Weitere Informationen finden Sie auf [dieser Seite](/pages/bare_metal_cloud/dedicated_servers/esxi-end-of-support).
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
@@ -25,7 +28,7 @@ Bei den High Grade & SCALE Reihen ist der Betrieb von Additional IPs im *Bridged
 
 - Sie haben einen öffentlichen IP-Adressblock mit mindestens vier Adressen in Ihrem Kunden-Account. Der IP-Adressblock muss auf das vRack zeigen.
 - Sie haben Ihren gewünschten privaten IP-Adressbereich festgelegt.
-- Sie verfügen über einen mit vRack kompatiblen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/).
+- Sie verfügen über einen mit vRack kompatiblen [Dedicated Server](/links/bare-metal/bare-metal).
 - Sie haben ein [vRack](https://www.ovh.de/loesungen/vrack/) in Ihrem Kunden-Account eingerichtet.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
