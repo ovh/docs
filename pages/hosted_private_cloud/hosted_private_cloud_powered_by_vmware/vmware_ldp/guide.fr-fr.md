@@ -10,15 +10,14 @@ updated: 2024-09-16
 
 ## Objectif
 
-**L'objectif est de vous montrer comment collecter les logs VMware vSphere on OVHcloud dans un stream Logs Data Platform.**
+**L'objectif est de vous montrer comment collecter les logs VMware on OVHcloud dans un stream Logs Data Platform.**
 
 ## Prérequis
 
 - Disposer d'un [compte client OVHcloud](/links/manager).
-- Disposer d'une offre VMware vSphere on OVHcloud.
+- Disposer d'une offre [VMware on OVHcloud](/links/hosted-private-cloud/vmware) avec un stream Logs Data Platform actif.
 - Avoir suivi le guide « [Introduction à Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP) ».
 - Vous devez avoir le `logForwarder` activé. Pour le vérifier, exécutez [l'appel API suivant](#security-options).
-- Un stream Logs Data Platform actif, afin de lancer la souscription au sein de votre VMware vSphere managé on OVHcloud.
 
 ## En pratique
 
