@@ -217,7 +217,7 @@ L'administration de vos streams LDP peuvent être fait depuis l'API OVHcloud, de
 
 #### Via l'espace client OVHcloud
 
-Vous pouvez vous référer à ce guide pour retrouver comment administrer vos flux (streams) depuis le control panel Log Data Platform : « [Quick start for Logs Data Platform (EN)](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) » (EN).
+Vous pouvez vous référer à ce guide pour retrouver comment administrer vos flux (streams) depuis la section `Log Data Platform`{.action} de l'espace client OVHcloud : « [Quick start for Logs Data Platform (EN)](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) ».
 
 #### Via l’API OVHcloud
 
