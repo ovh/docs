@@ -1,7 +1,7 @@
 ---
 title: "Logs Data Platform - Activer le log forwarder VMware on OVHcloud"
-excerpt: "Découvrez comment souscrire un abonnement Logs Data Platform et activer le log forwarder afin de pousser les journaux VMware vSphere on OVHcloud vers un stream"
-updated: 2024-09-13
+excerpt: "Découvrez comment souscrire un abonnement Logs Data Platform et activer le logs forwarder afin de transférer les journaux VMware on OVHcloud vers un stream LDP"
+updated: 2024-09-16
 ---
 
 > [!primary]
@@ -25,7 +25,7 @@ updated: 2024-09-13
 > [!primary]
 > Prenez en compte que l'activation du **transfert de logs (Log Forwarding)** est gratuite.
 >
-> Cependant, vous devez pour assurer le bon fonctionnement de votre cluster dédié VMware vSphere on OVHcloud, des charges de stockage peuvent s'appliquer avec le temps selon le tarif standard. Ainsi qu'avec l'utilisation du catalogue de services managés LDP (Graylogs, OpenSearch etc..).
+> Cependant, vous devez pour assurer le bon fonctionnement de votre cluster dédié Logs Data Platform, des charges de stockage peuvent s'appliquer avec le temps selon le tarif standard. Ainsi qu'avec l'utilisation du catalogue de services managés (Graylogs, OpenSearch, Logstash etc..).
 > 
 
 L'activation du transfert des logs vers un stream Logs Data Platform permet de collecter, d'indexer et d'analyser les données d'un service VMware vSphere on OVHcloud. Peu importe leur origine, cette plateforme offre une diversité de moyens d'accès en fonction du protocole, du niveau de sécurité et du format désiré. Les données recueillies peuvent être aisément exploitées grâce aux multiples API et interfaces web mises à disposition.
@@ -50,7 +50,7 @@ Ils sont les types de logs que vous voulez transférer à votre stream Logs Data
 > [!warning]
 > Si le pack `logForwarder` n'est pas activé au sein de votre pack de base d'options (base ou advanced security), [contactez le support OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help).
 > 
-> Si vous voulez la fonctionnalité `logForwarder` sans les packs de base et de sécurité avancées, contactez le support OVHcloud pour l'activer manuellement.
+> Si vous voulez la fonctionnalité `logForwarder` sans les packs de base et de sécurité avancées, [contactez le support OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help) pour l'activer manuellement.
 >
 
 #### Via l'API OVHcloud <a name="security-options"></a>
@@ -105,7 +105,7 @@ Pour créer une souscription, un stream est nécessaire. Vous pouvez créer un s
 
 #### Via l'espace client OVHcloud
 
-Vous pouvez vous référer à ce guide pour retrouver comment créer un stream depuis l'interface Logs Data Platform : « [Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) » (EN).
+Vous pouvez vous référer à ce guide pour retrouver comment créer un stream depuis l'interface Logs Data Platform : « [Quick start for Logs Data Platform (EN)](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) »
 
 #### Via l'API OVHcloud
 
@@ -159,7 +159,7 @@ Nous allons voir dans l'étape suivante comment souscrire votre abonnement vSphe
 > 
 > Si vous voulez avoir un stream sur le même compte et avec le même niveau de sécurité que votre Hosted Private Cloud, vous devez faire le transfert de ce stream à celui de votre infrastructure privée (à ce jour). La responsabilité du transfert vous incombe, ainsi que du niveau de sécurité que vous voulez.
 > 
-> Vous pouvez vous referer à la [documentation Log Data Plateform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_responsibility_model), si vous voulez plus d'information sur les niveaux de sécurité et de responsabilités disponibles.
+> Vous pouvez vous referer à la [documentation Log Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_responsibility_model), si vous voulez plus d'information sur les niveaux de sécurité et de responsabilités disponibles.
 > 
 
 #### Via l'espace client OVHcloud
@@ -213,11 +213,11 @@ La requête GET permet de lister les stream ID au sein de votre souscription.
 > Si vous voulez connaitre tous les services et fonctionnalités que propose Log Data Plaform, consultez la page OVHcloud produit de [ce lien](/links/manage-operate/ldp).
 > 
 
-L'administration de vos streams LDP peuvent être fait depuis l'API OVHcloud, depuis l'espace client Bare Metal Logs Data Plateform, depuis l'UI Graylog, depuis l'UI OpenSearch et bientôt dans l'espace client manager Hosted Private Cloud.
+L'administration de vos streams LDP peuvent être fait depuis l'API OVHcloud, depuis l'espace client Bare Metal Logs Data Platform, depuis l'UI Graylog, depuis l'UI OpenSearch et bientôt dans l'espace client manager Hosted Private Cloud.
 
 #### Via l'espace client OVHcloud
 
-Vous pouvez vous référer à ce guide pour retrouver comment administrer vos flux (streams) depuis le control panel Log Data Platform : « [Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) » (EN).
+Vous pouvez vous référer à ce guide pour retrouver comment administrer vos flux (streams) depuis le control panel Log Data Platform : « [Quick start for Logs Data Platform (EN)](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) » (EN).
 
 #### Via l’API OVHcloud
 
@@ -227,7 +227,7 @@ Vous pouvez vous référer à ce guide pour retrouver comment administrer vos fl
 >
 > @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/log/subscription
 >
->
+
 > **Paramètres** :
 >
 > - `serviceName` : Nom de service de votre vSphere managé, e.g `pcc-XXX-XXX-XXX-XXX`.
@@ -240,7 +240,7 @@ Vous pouvez vous référer à ce guide pour retrouver comment administrer vos fl
 >
 > @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/log/kind/{name}
 >
->
+
 > **Paramètres** :
 >
 > - `name` : Nom kind VMware que le forwarder utilise, e.g (Disponible : `nsxtEdge ┃ vcsa ┃ nsxtManager ┃ esxi`).
@@ -323,7 +323,7 @@ Exemples de retours pour différents Kind :
 }
 ```
 
-### Étape 5 - Désactiver votre abonnement de souscription Log Data Plateform
+### Étape 5 - Désactiver votre abonnement de souscription Log Data Platform
 
 > [!primary]
 > La résiliation de votre abonnement Log Data Platform VMware on OVHcloud ne signifie pas la suppression de vos streams. Le stockage consommé au moment de la désactivation reste soumis à facturation.
@@ -335,7 +335,7 @@ Exemples de retours pour différents Kind :
 >
 > @api {v1} /dedicatedCloud DELETE /dedicatedCloud/{serviceName}/log/subscription/{subscriptionId}
 >
->
+
 > **Paramètres** :
 >
 > - `serviceName` : Nom de service de votre vSphere managé, e.g `pcc-XXX-XXX-XXX-XXX`.
