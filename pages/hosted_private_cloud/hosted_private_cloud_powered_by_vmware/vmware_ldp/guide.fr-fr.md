@@ -105,7 +105,7 @@ Pour créer une souscription, un stream est nécessaire. Vous pouvez créer un s
 
 #### Via l'espace client OVHcloud
 
-Vous pouvez vous référer à ce guide pour retrouver comment créer un stream depuis l'interface Logs Data Platform : « [Quick start for Logs Data Platform (EN)](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) »
+Vous pouvez vous référer à ce guide pour retrouver comment créer un stream depuis l'interface Logs Data Platform : « [Quick start for Logs Data Platform (EN)](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) ».
 
 #### Via l'API OVHcloud
 
