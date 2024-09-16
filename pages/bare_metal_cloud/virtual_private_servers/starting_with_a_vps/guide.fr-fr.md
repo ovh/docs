@@ -14,7 +14,7 @@ Un serveur privé virtuel (VPS) est un serveur dédié virtualisé qui vous offr
 
 ## Prérequis
 
-- Disposer d'une offre [VPS](https://www.ovhcloud.com/fr/vps/) dans votre espace client OVHcloud
+- Disposer d'une offre [VPS](https://www.ovhcloud.com/fr/vps/) active dans votre espace client OVHcloud
 - Être connecté à votre [espace client OVHcloud](/links/manager)
 
 ## En pratique
@@ -113,7 +113,7 @@ Ces options se réfèrent à des services VPS supplémentaires qui peuvent être
 > [!tabs]
 > Snapshot
 >>
->> Un snapshot sur un VPS est une sauvegarde instantanée de l'état du serveur, qui permet de restaurer rapidement le système en cas de problème ou d'erreur. L'option `Snapshot` permet de créer un snapshot manuel comme point de restauration unique.
+>> Un snapshot sur un VPS est une sauvegarde instantanée de l'état du serveur, qui permet de restaurer rapidement le système en cas de problème. L'option `Snapshot` permet de créer un snapshot manuel comme point de restauration unique.
 >>
 > Backup automatisé
 >> 
@@ -176,7 +176,7 @@ Un redémarrage peut s'avérer nécessaire afin d'appliquer des configurations d
 sudo reboot
 ```
 
-Cependant, vous pouvez effectuer un « redémarrage matériel » à tout moment dans votre [espace client OVHcloud](/links/manager). Depuis l'onglet `Accueil`{.action}, cliquez sur le bouton `...`{.action} à côté de `Boot` dans la section **Votre VPS**. Sélectionnez `Redémarrer mon VPS`{.action} et cliquez sur `Valider`{.action} dans la fenêtre qui s'affiche.
+Cependant, vous pouvez effectuer un redémarrage forcé à tout moment dans votre [espace client OVHcloud](/links/manager). Depuis l'onglet `Accueil`{.action}, cliquez sur le bouton `...`{.action} à côté de `Boot` dans la section **Votre VPS**. Sélectionnez `Redémarrer mon VPS`{.action} et cliquez sur `Valider`{.action} dans la fenêtre qui s'affiche.
 
 ![Reboot](images/reboot-vps01.png){.thumbnail}
 
@@ -344,7 +344,7 @@ Veuillez noter que si vous avez sélectionné une **distribution avec applicatio
 
 <a name="domain"></a>
 
-### Attacher un nom de domaine
+### Lier un nom de domaine à votre VPS
 
 Le passage de votre VPS sur le web passe généralement par l’attribution d’un nom de domaine ainsi que sa configuration DNS. Si vous gérez votre nom de domaine chez OVHcloud, consultez notre guide « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) » pour obtenir des instructions.
 
