@@ -413,7 +413,7 @@
             + [VMware Fault Tolerance](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_fault_tolerance)
             + [Cluster creation and EVC activation](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/create_cluster_enable_evc)
             + [Configuring VM encryption with a KMS server](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_kms_vsphere_configuration)
-            + [Upload files (ISO) from vSphere datastore dedicated tool](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_datastore_upload)
+            + [Upload (ISO) files using vSphere datastore dedicated tool](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_datastore_upload)
         + [VMware NSX](hosted-private-cloud-hosted-private-cloud-powered-by-vmware-nsx)
             + [Getting started with NSX](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps)
             + [Activating NSX-T in your VMware on OVHcloud infrastructure](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx_add_user_rights)
