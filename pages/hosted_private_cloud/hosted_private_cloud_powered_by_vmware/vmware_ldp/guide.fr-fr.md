@@ -155,7 +155,7 @@ Nous allons voir dans l'étape suivante comment attacher votre abonnement vSpher
 ### Étape 3 - Souscription de l'abonnement Logs Data Platform
 
 > [!warning]
-> Pour disposer d'une souscription Logs Data Platform actif avec VMware on OVHcloud, vous devez avoir un stream actif. 
+> Pour disposer d'une souscription Logs Data Platform active avec VMware on OVHcloud, vous devez avoir un stream actif. 
 > 
 > Si vous voulez avoir un stream sur le même compte et avec le même niveau de sécurité que votre environnement VMware on OVHcloud, vous devez faire le transfert de ce stream à celui de votre infrastructure privée (à ce jour). La responsabilité du transfert vous incombe, ainsi que du niveau de sécurité que vous voulez.
 > 
