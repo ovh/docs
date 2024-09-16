@@ -1,7 +1,7 @@
 ---
 title: Sauvegarder SAP HANA avec Veeam Backup and Replication
 excerpt: "Ce guide fournit des instructions générales pour sauvegarder des bases de données SAP HANA avec Veeam Backup and Replication et Veeam Plug-in for SAP HANA"
-updated: 2024-09-13
+updated: 2024-09-16
 ---
 
 ## Objectif
@@ -13,7 +13,7 @@ Ce guide fournit des instructions générales pour sauvegarder des bases de donn
 ## Prérequis
 
 - Une base de données SAP HANA installée.
-- Un serveur Windows qui hébergera la solution [Veeam Backup and Replication](https://www.ovhcloud.com/fr/storage-solutions/veeam-enterprise/).
+- Un serveur Windows qui hébergera la solution [Veeam Backup and Replication](https://www.veeam.com/fr/products/veeam-data-platform/backup-recovery.html).
 - Un espace de stockage qui hébergera les sauvegardes.
 - Les [ouvertures firewall](https://helpcenter.veeam.com/docs/backup/plugins/ports_vpsh.html?ver=120) réalisées autorisant les communications entre vos serveurs.
 
@@ -110,7 +110,7 @@ Pour découvrir les étapes de création d'un bucket Object Storage S3, veuillez
 >>
 > **Étape 4**
 >>
->> Indiquez un nom à votre Object Storage Repository.
+>> Donnez un nom à votre Object Storage Repository.
 >>
 >> ![backup_repository_s3_4](images/backup_repository_s3_4.png){.thumbnail}
 >>
@@ -250,7 +250,7 @@ La solution Object Storage S3 n'est pour le moment pas qualifiée SecNumCloud. E
 
 Si vous souhaitez sécuriser vos sauvegardes sur un second Backup Repository, veuillez répéter cette étape. Continuez ce guide avec l'étape [Installation de Veeam Plug-in for SAP HANA](#veeampluginhana), puis suivez le chapitre [Création du Backup Copy job](#backupcopyjob).
 
-##### 2.2.2 - Création du Backup Copy job (optionnel) <a name="backupcopyjob"></a>
+##### 2.2.2 - Création du Backup Copy job (facultatif) <a name="backupcopyjob"></a>
 
 Un Backup Copy job permet de dupliquer les sauvegardes d'un Backup Repository vers un autre, assurant ainsi la sécurité de ces sauvegardes sur un emplacement de stockage distinct. Cette opération est utile pour protéger les données critiques contre la perte ou la corruption, en les conservant sur un site de sauvegarde éloigné géographiquement. Grâce à cette fonctionnalité, vous pouvez configurer des stratégies de sauvegarde avancées pour garantir la résilience et la disponibilité de vos données en cas de sinistre.
 
@@ -268,7 +268,7 @@ Un Backup Copy job permet de dupliquer les sauvegardes d'un Backup Repository ve
 >>
 > **Étape 2**
 >>
->> Indiquez un nom à votre Backup Copy job.
+>> Donnez un nom à votre Backup Copy job.
 >>
 >> ![backup_copy_2](images/backup_copy_2.png)
 >>
@@ -385,7 +385,7 @@ Suite à l'installation de Veeam Plug-in for SAP HANA en Managed mode, nous somm
 >>
 > **Étape 4**
 >>
->> Sélectionnez le `Backup repository`{.action} dans lequel vous souhaitez déposer vos sauvegardes SAP HANA. Vous avez également la possibilité de gérer la rétention des sauvegardes dans ce `Backup repository`{.action}. La rétention ne supprime cependant pas les sauvegardes dans le catalogue des sauvegardes SAP HANA.
+>> Sélectionnez le Backup repository dans lequel vous souhaitez déposer vos sauvegardes SAP HANA. Vous avez également la possibilité de gérer la rétention des sauvegardes dans ce Backup repository. La rétention ne supprime cependant pas les sauvegardes dans le catalogue des sauvegardes SAP HANA.
 >>
 >> Cliquez sur `Advanced...`{.action} afin de planifier les sauvegardes complètes, sélectionnez le type de sauvegardes incrémentales ou différentielles. Dans l'onglet `SAP HANA`{.action}, vous avez la possibilité de paramétrer le nombre de canaux pour optimiser la vitesse de sauvegarde SAP HANA. <a name="canaux"></a>
 >>
@@ -449,7 +449,7 @@ Si vous avez configuré un Scale-out Repository avec un bucket Object Storage S3
 
 Si vous êtes dans un contexte SecNumCloud et que vous souhaitez sécuriser vos sauvegardes sur un second Backup Repository, configurez un [Backup Copy job](#backupcopyjob).
 
-Si vous souhaitez découvrir toutes les possibilités avec Veeam Plug-in for SAP HANA, nous vous conseillons de prendre connaissance de la documentation [Veeam](https://helpcenter.veeam.com/docs/backup/plugins/sap_hana_plugin.html?ver=120).
+Si vous souhaitez découvrir toutes les possibilités avec Veeam Plug-in for SAP HANA, nous vous conseillons de prendre connaissance de la [documentation Veeam](https://helpcenter.veeam.com/docs/backup/plugins/sap_hana_plugin.html?ver=120).
 
 ### 4 - Restauration
 
@@ -498,6 +498,6 @@ Pour restaurer votre base de données SAP HANA depuis une sauvegarde réalisée 
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
