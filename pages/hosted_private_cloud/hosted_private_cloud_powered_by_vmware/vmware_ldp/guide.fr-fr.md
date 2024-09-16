@@ -159,7 +159,7 @@ Nous allons voir dans l'étape suivante comment attacher votre abonnement vSpher
 > 
 > À date, si vous voulez avoir un stream sur le même compte et avec le même niveau de sécurité que votre environnement VMware on OVHcloud, vous devez faire le transfert de ce stream à celui de votre infrastructure privée. La responsabilité du transfert vous incombe, ainsi que du niveau de sécurité que vous voulez.
 > 
-> Vous pouvez vous referer à la [documentation Log Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_responsibility_model), si vous voulez plus d'information sur les niveaux de sécurité et de responsabilités disponibles.
+> Vous pouvez vous référer à la [documentation Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_responsibility_model) pour plus d'information sur les niveaux de sécurité et de responsabilités disponibles.
 > 
 
 #### Via l'espace client OVHcloud
