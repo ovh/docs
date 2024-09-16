@@ -272,7 +272,6 @@ Exemples de retours pour différents Kind :
 **Kind name : NSX-T Manager**
 
 ```json
-{
   "displayName": "NSX-T Manager",
   "kindId": "Null",
   "additionalReturnedFields": [
