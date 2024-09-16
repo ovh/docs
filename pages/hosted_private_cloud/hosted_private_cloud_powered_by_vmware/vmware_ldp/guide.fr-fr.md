@@ -230,7 +230,7 @@ Vous pouvez vous référer à ce guide pour retrouver comment administrer vos fl
 
 > **Paramètres** :
 >
-> - `serviceName` : Nom de service de votre vSphere managé, e.g `pcc-XXX-XXX-XXX-XXX`.
+> - `serviceName` : Nom de service de votre vSphere managé (ex : `pcc-XXX-XXX-XXX-XXX`).
 > - `kind` : Nom kind VMware que le forwarder utilise, e.g (`nsxtEdge ┃ vcsa ┃ nsxtManager ┃ esxi`).
 >
 
