@@ -6,9 +6,8 @@ updated: 2024-09-16
 
 ## Objective
 
-In today’s digital age, cybersecurity is an essential component of cloud infrastructure management. As businesses increasingly adopt cloud solutions, ensuring robust security measures is vital to safeguarding sensitive information and maintaining operational integrity.
-Ubika offers powerful tools and security features, including advanced firewall configurations, VPNs, and secure access protocols, to ensure that your cloud environment remains protected from a wide array of cyber threats.
-This guide provides step-by-step instructions for deploying and configuring Ubika on the OVHcloud Public Cloud. By following this guide, you will learn how to configure private networks for management and workload, deploy Ubika instances, set up High Availability (HA) using RTvRack, and ensure a secure and reliable architecture for your cloud infrastructure.
+In today’s digital age, web application security is critical for protecting cloud infrastructure from sophisticated cyber threats. As businesses increasingly adopt cloud solutions, ensuring that web applications and APIs are secure is essential for maintaining data integrity and preventing breaches.
+Ubika offers advanced Web Application and API Protection (WAAP) features, including powerful tools such as web application firewalls (WAFs), API protection, bot management, and DDoS mitigation. These tools help protect your cloud environment from a wide array of application-level threats. This guide provides step-by-step instructions for deploying and configuring Ubika on the OVHcloud Public Cloud. By following this guide, you will learn how to configure private networks for management and workload, deploy Ubika instances, set up High Availability (HA) using RTvRack, and ensure a secure and reliable architecture for your cloud infrastructure.
 
 **This guide explains how to securing your OVHcloud infrastructure with Ubika deployed on Public Cloud.**
 
@@ -19,6 +18,8 @@ This guide provides step-by-step instructions for deploying and configuring Ubik
 - An [OpenStack user](/pages/public_cloud/compute/create_and_delete_a_user) (optional)
 - Basic networking knowledge
 - Ubika account on the [Ubika website](https://my.ubikasec.com/){.external}
+- Ensure that an appropriate block of additional IPs is available.
+- Ensure that the vRack is enabled and configured to allow secure communication between the components of the infrastructure.
 - Ubika License BYOL (**B**ring **Y**our **O**wn **L**icense) : have a valid Ubika license, as you will need to provide it during the installation and configuration process.
 
 ## Instructions
@@ -49,6 +50,9 @@ Below is the architecture that we are going to set-up.
 > Please note that all sections related to « High Availability » are optional. They are included to demonstrate how to set up the system with two instances in an active/passive mode for high availability. Normally, it can also function with just one instance if that is sufficient for your needs.
 
 #### Configure Ubika management networking
+
+> [!primary]
+> In this scenario, we will use two virtual machines setup for the security appliance to achieve High Availability (HA), and an additional VM for management. This setup ensures failover protection and continuous service availability. For more examples and detailed guidance on scalability options, please refer to the [Ubika's documentation](https://www.ubikasec.com/ressources/){.external}.
 
 * Create a private network for management
 
@@ -238,10 +242,17 @@ Ubika managed-2 :
 
 ![Ubika vrack](./images/ha-4.png)
 
-# Configure the licenses
+#### Configure the licenses
 
-Send to Ubika the type of Ubika deployment (management or managed), the serial number of the Ubika instance, the number of vCPU and the amount of RAM.
-They will send back licenses. Apply them to each Ubika instances.
+Ubika offers two types of licenses depending on your deployment needs : a license for a single VM or a license for HA (High Availability) mode, where two instances are deployed in an Active-Backup configuration. Choose the appropriate license based on your setup.
+
+To apply the licenses, you will need to provide the following information to Ubika :
+
+- Type of Ubika deployment (single instance or HA)
+- Serial number of the Ubika instance
+- Number of vCPUs and the amount of RAM allocated to each instance
+
+Once you receive the licenses from Ubika, apply them to the corresponding instances to complete the setup.
 
 ### Test your first web application <a name="step3"></a>
 
