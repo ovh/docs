@@ -25,7 +25,7 @@ updated: 2024-09-16
 > [!primary]
 > Prenez en compte que l'activation du **transfert de logs (Log Forwarding)** est gratuite.
 >
-> Cependant, vous devez pour assurer le bon fonctionnement de votre cluster dédié Logs Data Platform, des charges de stockage peuvent s'appliquer avec le temps selon le tarif standard. Ainsi qu'avec l'utilisation du catalogue de services managés (Graylogs, OpenSearch, Logstash etc..).
+> Cependant, pour assurer le bon fonctionnement de votre cluster dédié Logs Data Platform, des frais liés au stockage ainsi qu'à l'utilisation du catalogue de services managés (Graylogs, OpenSearch, Logstash etc..) peuvent s'appliquer selon le tarif standard.
 > 
 
 L'activation du transfert des logs vers un stream Logs Data Platform permet de collecter, d'indexer et d'analyser les données d'un service VMware vSphere on OVHcloud. Peu importe leur origine, cette plateforme offre une diversité de moyens d'accès en fonction du protocole, du niveau de sécurité et du format désiré. Les données recueillies peuvent être aisément exploitées grâce aux multiples API et interfaces web mises à disposition.
