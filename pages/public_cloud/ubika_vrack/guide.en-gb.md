@@ -87,7 +87,7 @@ Here, you define a subnet for the workload network, enabling efficient managemen
 * Create a gateway.
 
 > [!primary]
-> PCI Gateway may be required for accessing the internet from web servers, especially for tasks like software installation or remote management. However, for inbound client traffic, this component is not used.
+> PCI Gateway may be required for accessing the internet from web servers, especially for tasks like software installation (Nginx for example) or remote management. However, for inbound client traffic, this component is not used.
 
 ```console
 openstack router create --external-gateway Ext-Net ubika-workload
