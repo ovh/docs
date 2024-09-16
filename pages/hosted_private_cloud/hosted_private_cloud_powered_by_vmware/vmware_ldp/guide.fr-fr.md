@@ -338,7 +338,7 @@ Exemples de retours pour différents Kind :
 
 > **Paramètres** :
 >
-> - `serviceName` : Nom de service de votre vSphere managé, e.g `pcc-XXX-XXX-XXX-XXX`.
+> - `serviceName` : Nom de service de votre vSphere managé (ex : `pcc-XXX-XXX-XXX-XXX`).
 > - `subscriptionId` : Identifiant de souscription de votre abonnement LDP, e.g `8e729f36-3e5d-4e08-9723-62b2b39c857a`.
 >
 
