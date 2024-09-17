@@ -1,7 +1,7 @@
 ---
 title: 'Netzwerk auf ESXi für die High Grade & SCALE Reihen konfigurieren'
 excerpt: 'Erfahren Sie, wie Sie das Netzwerk auf VMware ESXi für die High Grade & SCALE Reihen einrichten'
-uupdated: 2024-09-13
+updated: 2024-09-13
 ---
 
 > [!warning]
