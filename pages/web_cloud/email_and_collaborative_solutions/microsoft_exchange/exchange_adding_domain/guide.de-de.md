@@ -16,7 +16,7 @@ Um die in Ihrer Exchange Lösung enthaltenen Accounts nutzen zu können, benöti
 
 ## Voraussetzungen
 
-- Sie verfügen über einen [Exchange Dienst](https://www.ovhcloud.com/de/emails/hosted-exchange/) oder [E-Mail Pro Dienst](https://www.ovhcloud.com/de/emails/email-pro/).
+- Sie verfügen über einen [Exchange Dienst](https://www.ovhcloud.com/de/emails/hosted-exchange/) oder [E-Mail Pro Dienst](/links/web/email-pro).
 - Sie verfügen über einen oder mehrere Domainnamen.
 - Sie haben administrativen Zugang zur Verwaltung der Domainkonfiguration (zum [Bearbeiten der DNS Zone](/pages/web_cloud/domains/dns_zone_edit)).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).

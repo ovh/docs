@@ -11,7 +11,7 @@ I servizi Exchange ed Email Pro permettono di usufruire di indirizzi email profe
 
 ## Prerequisiti
 
-- Disporre di una [soluzione Exchange OVHcloud](https://www.ovhcloud.com/it/emails/hosted-exchange/) o [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/) attive 
+- Disporre di una [soluzione Exchange OVHcloud](https://www.ovhcloud.com/it/emails/hosted-exchange/) o [Email Pro](/links/web/email-pro) attive 
 - Disporre di almeno due account attivi e configurati sulla stessa piattaforma email OVHcloud
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - Disporre delle credenziali dell’account email a cui verranno delegati i diritti

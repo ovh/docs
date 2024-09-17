@@ -11,7 +11,7 @@ With the OVHcloud Exchange or Email Pro services, you can set up professional em
 
 ## Requirements
 
-- an [OVHcloud Exchange](https://www.ovhcloud.com/en-ie/emails/hosted-exchange/) or [Email Pro](https://www.ovhcloud.com/en-ie/emails/email-pro/) solution already set up
+- an [OVHcloud Exchange](https://www.ovhcloud.com/en-ie/emails/hosted-exchange/) or [Email Pro](/links/web/email-pro) solution already set up
 - at least two active email accounts, configured on the same OVHcloud Exchange or Email Pro platform
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 - credentials for the email account that will be delegated new permissions

@@ -17,7 +17,7 @@ Die Dienstleistung E-Mail Pro verfügt über eine flexible Verwaltung für die A
 ## Voraussetzungen
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie verfügen über einen [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/) Dienst in Ihrem Kunden-Account.
+- Sie verfügen über einen [E-Mail Pro](/links/web/email-pro) Dienst in Ihrem Kunden-Account.
 
 ## In der praktischen Anwendung
 

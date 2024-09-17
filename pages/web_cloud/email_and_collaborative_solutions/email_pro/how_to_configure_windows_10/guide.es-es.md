@@ -19,7 +19,7 @@ Es posible configurar sus cuentas Email Pro en el cliente de correo que usted ut
 
 ## Requisitos
 
-- Tener una cuenta [Email Pro](https://www.ovhcloud.com/es-es/emails/email-pro/){.external}.
+- Tener una cuenta [Email Pro](/links/web/email-pro){.external}.
 - Tener la aplicación Correo instalada en su dispositivo.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
 

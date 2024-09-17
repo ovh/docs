@@ -23,7 +23,7 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 
 ## Wymagania początkowe
 
-- Posiadanie [konta E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/){.external}
+- Posiadanie [konta E-mail Pro](/links/web/email-pro){.external}
 - Instalacja aplikacji Mail na Twoim urządzeniu iOS
 - Posiadanie danych do logowania do konta e-mail, które chcesz skonfigurować.
 
@@ -34,7 +34,7 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 > [!primary]
 >
 > W przewodniku używamy oznaczenia serwera: pro**?**.mail.ovh.net. Zastąp “?” cyfrą oznaczającą serwer powiązany z Twoją usługą E-mail Pro.
-> 
+>
 > Odszukaj cyfrę w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, w sekcji `Web Cloud`{.action} =>  `E-mail Pro`{.action}. Nazwa serwera jest widoczna w ramce *Logowanie* w zakładce `Informacje ogólne`{.action}.
 >
 
@@ -75,6 +75,10 @@ OVHcloud oferuje również aplikację internetową posiadającą [funkcje do pra
 >
 
 ## Sprawdź również
+
+> [!primary]
+>
+> Więcej informacji na temat konfigurowania konta e-mail na urządzeniu z systemem iOS można znaleźć [Strona pomocy Apple](https://support.apple.com/pl-pl/102619).
 
 [Konfiguracja konta e-mail włączonego do usługi MX Plan lub do usługi hostingu na urządzeniu iPhone lub iPad](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_ios)
 

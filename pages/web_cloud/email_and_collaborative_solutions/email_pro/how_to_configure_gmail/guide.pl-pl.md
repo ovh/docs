@@ -1,7 +1,7 @@
 ---
-title: 'Konfiguracja konta E-mail Pro w interfejsie online programu pocztowego Gmail'
+title: 'Email Pro - Skonfiguruj swoje konto e-mail w interfejsie online programu pocztowego Gmail'
 excerpt: 'Dowiedz się, jak skonfigurować konto E-mail Pro w interfejsie online programu pocztowego Gmail'
-updated: 2020-03-18
+updated: 2024-09-17
 ---
 
 ## Wprowadzenie
@@ -19,7 +19,7 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 
 ## Wymagania początkowe
 
-- Wykupienie usługi [E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/){.external}
+- Wykupienie usługi [E-mail Pro](/links/web/email-pro){.external}
 - Dane do logowania do konta E-mail Pro, które chcesz skonfigurować
 - Dane do konta Gmail, w którym chcesz skonfigurować konto E-mail Pro OVHcloud
 
@@ -35,13 +35,13 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 > [!primary]
 >
 > W przewodniku używamy oznaczenia serwera: pro**?**.mail.ovh.net. Zastąp “?” cyfrą oznaczającą serwer powiązany z Twoją usługą E-mail Pro.
-> 
-> Odszukaj cyfrę w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, w sekcji `Web Cloud`{.action} =>  `E-mail Pro`{.action}. Nazwa serwera jest widoczna w ramce *Logowanie* w zakładce `Informacje ogólne`{.action}.
+>
+> Odszukaj cyfrę w [Panelu klienta OVHcloud](/links/manager){.external}, w sekcji `Web Cloud`{.action} =>  `E-mail Pro`{.action}. Nazwa serwera jest widoczna w ramce *Logowanie* w zakładce `Informacje ogólne`{.action}.
 >
 
 Przed rozpoczęciem operacji przejdź do interfejsu online programu Gmail, korzystając z Twojej przeglądarki internetowej. Wprowadź Twoje dane identyfikacyjne przypisane do konta Gmail, a następnie zaloguj się.
 
-Po zalogowaniu do interfejsu kliknij ikonę koła zębatego, a następnie `Zobacz wszystkie ustawienia`{.action}. Na stronie, która się wyświetli kliknij zakładkę `Konta i import`{.action}. 
+Po zalogowaniu do interfejsu kliknij ikonę koła zębatego, a następnie `Zobacz wszystkie ustawienia`{.action}. Na stronie, która się wyświetli kliknij zakładkę `Konta i import`{.action}.
 
 ![emailpro](images/configuration-gmail-web-step1.png){.thumbnail}
 
@@ -51,9 +51,9 @@ Obok pozycji `Sprawdź inne konta programu pocztowego`, kliknij `Dodaj konto pro
 
 Teraz podaj parametry serwera POP (serwer poczty przychodzącej) dla Twojego konta E-mail Pro OVHcloud:
 
-|Informacja|Opis | 
-|---|---| 
-|Nazwa użytkownika|Wpisz **pełny** adres e-mail.|  
+|Informacja|Opis |
+|---|---|
+|Nazwa użytkownika|Wpisz **pełny** adres e-mail.|
 |Hasło|Wpisz hasło przypisane do tego konta e-mail.|
 |Serwer POP|Wpisz serwer „pro**?**.mail.ovh.net”.|
 |Port|Wybierz port „995”.|
@@ -68,11 +68,11 @@ Opcje, które możesz zaznaczyć:
 
 - **„Archiwizuj wiadomości przychodzące (tak, aby nie przechodziły przez skrzynkę odbiorczą)”**: wybór tej opcji sprawi, że wiadomości zaimportowane z Twojego konta OVHcloud nie będą się wyświetlały w skrzynce odbiorczej Gmail.
 
-Po uzupełnieniu informacji kliknij przycisk `Dodaj konto`{.action}. Jeśli wpisane informacje są poprawne, logowanie zakończy się sukcesem. 
+Po uzupełnieniu informacji kliknij przycisk `Dodaj konto`{.action}. Jeśli wpisane informacje są poprawne, logowanie zakończy się sukcesem.
 
 ![emailpro](images/configuration-gmail-web-step3.png){.thumbnail}
 
-Jeśli chcesz również wysyłać e-maile z Twojego konta E-mail Pro OVHcloud przy użyciu interfejsu online programu Gmail, zaznacz kratkę `Tak, chciałbym wysyłać e-maile z konta`{.action}, a następnie kliknij `Dalej`{.action}. 
+Jeśli chcesz również wysyłać e-maile z Twojego konta E-mail Pro OVHcloud przy użyciu interfejsu online programu Gmail, zaznacz kratkę `Tak, chciałbym wysyłać e-maile z konta`{.action}, a następnie kliknij `Dalej`{.action}.
 
 Następnie wprowadź nazwę nadawcy, która ma się wyświetlać w przypadku wysyłki z konta e-mail, zaznacz kratkę `Traktuj jako alias`{.action}, następnie kliknij przycisk `Następny etap`{.action}.
 
@@ -80,18 +80,18 @@ Następnie wprowadź nazwę nadawcy, która ma się wyświetlać w przypadku wys
 
 Teraz podaj parametry serwera SMTP (serwer poczty wychodzącej) dla Twojego konta e-mail OVHcloud:
 
-|Informacja|Opis | 
-|---|---| 
+|Informacja|Opis |
+|---|---|
 |Serwer SMTP|Wpisz serwer „pro**?**.mail.ovh.net”.|
 |Port|Wybierz port „587”.|
-|Nazwa użytkownika|Wpisz **pełny** adres e-mail.|  
+|Nazwa użytkownika|Wpisz **pełny** adres e-mail.|
 |Hasło|Wpisz hasło przypisane do tego konta e-mail.|
 
-Po uzupełnieniu informacji zaznacz kratkę obok `Bezpieczne połączenie TLS`{.action}, następnie kliknij przycisk `Dodaj konto`{.action}. Jeśli wpisane informacje są poprawne, logowanie zakończy się sukcesem. 
+Po uzupełnieniu informacji zaznacz kratkę obok `Bezpieczne połączenie TLS`{.action}, następnie kliknij przycisk `Dodaj konto`{.action}. Jeśli wpisane informacje są poprawne, logowanie zakończy się sukcesem.
 
 ![emailpro](images/configuration-gmail-web-step5.png){.thumbnail}
 
-Teraz zatwierdź dodane konto, wprowadzając kod wysłany na Twój adres E-mail Pro OVHcloud.  Aby pobrać kod, zaloguj się jak zwykle do konta OVHcloud, korzystając z interfejsu online dostępnego tutaj: <https://www.ovh.pl/mail/>. 
+Teraz zatwierdź dodane konto, wprowadzając kod wysłany na Twój adres E-mail Pro OVHcloud.  Aby pobrać kod, zaloguj się jak zwykle do konta OVHcloud, korzystając z interfejsu online dostępnego tutaj: <https://www.ovh.pl/mail/>.
 
 Po zatwierdzeniu dodanego konta, konto E-mail Pro OVHcloud pojawi się w zakładce `Konta i import`{.action}, którą otworzyłeś na początku operacji.
 
@@ -105,6 +105,14 @@ Aby wysłać wiadomość z konta E-mail Pro OVHcloud za pośrednictwem interfejs
 
 Pamiętaj, że w celu uzyskania dostępu do Twojego konta E-mail Pro OVHcloud, możesz również użyć interfejsu OVHcloud online dostępnego pod adresem <https://www.ovh.pl/mail/>. Zaloguj się, używając Twoich danych identyfikacyjnych.
 
-## Sprawdź również
+## Sprawdź również <a name="go-further"></a>
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+> [!primary]
+>
+> Aby uzyskać więcej informacji na temat konfigurowania konta e-mail za pomocą interfejsu Gmail online, zobacz [Centrum pomocy Google](https://support.google.com/mail/answer/21289?hl=fr&co=GENIE.Platform%3DDesktop).
+
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
+
+Dołącz do [grona naszych użytkowników](/links/community).

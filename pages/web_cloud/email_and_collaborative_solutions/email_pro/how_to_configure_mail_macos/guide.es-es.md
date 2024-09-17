@@ -22,7 +22,7 @@ Es posible configurar sus cuentas Email Pro en el cliente de correo que usted ut
 
 ## Requisitos
 
-- Disponer de una dirección [Email Pro](https://www.ovhcloud.com/es-es/emails/email-pro/).
+- Disponer de una dirección [Email Pro](/links/web/email-pro).
 - Tener el programa Mail instalado en su Mac.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
  

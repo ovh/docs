@@ -16,7 +16,7 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 
 ## Wymagania początkowe
 
-- Wykupienie usługi [E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/){.external}.
+- Wykupienie usługi [E-mail Pro](/links/web/email-pro){.external}.
 - Instalacja aplikacji Microsoft Outlook na urządzeniu z systemem Android Możesz pobrać plik z *Google Play Store*.
 
 > [!warning]

@@ -12,7 +12,7 @@ To use the accounts included with an Exchange service, you will need to add a do
 
 ## Requirements
 
-- An [Exchange](https://www.ovhcloud.com/en-ie/emails/) or [Email Pro](https://www.ovhcloud.com/en-ie/emails/email-pro/) solution
+- An [Exchange](https://www.ovhcloud.com/en-ie/emails/) or [Email Pro](/links/web/email-pro) solution
 - One or more domain names
 - Administrative access to your domain name’s configuration (in order to [modify the DNS zone](/pages/web_cloud/domains/dns_zone_edit))
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)

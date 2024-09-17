@@ -16,7 +16,7 @@ E-Mail Pro Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingeri
 
 ## Voraussetzungen
 
-- Sie haben einen [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/) Dienst in Ihrem Kunden-Account.
+- Sie haben einen [E-Mail Pro](/links/web/email-pro) Dienst in Ihrem Kunden-Account.
 - Sie haben die Microsoft Outlook App auf Ihrem Android-Gerät installiert. Sie können diese aus dem *Google Play Store* herunterladen.
 
 > [!warning]

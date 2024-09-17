@@ -16,7 +16,7 @@ You have mistakenly deleted one or more items (email, contact, calendar appointm
 - An OVHcloud email solution:
     - **MX Plan** ([new version only](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)), available as part of our [web hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/) or included in a [100M free hosting](https://www.ovhcloud.com/en-ie/domains/free-web-hosting/)
     - [**Hosted Exchange**](https://www.ovhcloud.com/en-ie/emails/hosted-exchange/)
-    - [**Email Pro**](https://www.ovhcloud.com/en-ie/emails/email-pro/)
+    - [**Email Pro**](/links/web/email-pro)
 - Login details for the email account concerned
 
 ## Instructions

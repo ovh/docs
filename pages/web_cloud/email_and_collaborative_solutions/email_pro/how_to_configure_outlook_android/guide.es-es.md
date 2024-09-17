@@ -16,7 +16,7 @@ Es posible configurar sus cuentas Email Pro en el cliente de correo que usted ut
 
 ## Requisitos
 
-- Disponer de una solución [Email Pro](https://www.ovhcloud.com/es-es/emails/email-pro/){.external}.
+- Disponer de una solución [Email Pro](/links/web/email-pro){.external}.
 - Haber instalado la aplicación Microsoft Outlook en su dispositivo Android. Puede descargarla desde el *Google Play Store*.
 
 > [!warning]

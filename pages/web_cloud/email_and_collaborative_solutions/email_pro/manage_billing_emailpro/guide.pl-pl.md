@@ -17,7 +17,7 @@ Oferta E-mail Pro umożliwia elastyczne zarządzanie płatnościami. Niniejszy p
 ## Wymagania początkowe
 
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
-- Posiadanie [konta E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/){.external}
+- Posiadanie [konta E-mail Pro](/links/web/email-pro){.external}
 
 ## W praktyce
 

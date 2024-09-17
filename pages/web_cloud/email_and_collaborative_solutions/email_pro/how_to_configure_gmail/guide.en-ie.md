@@ -1,7 +1,7 @@
 ---
-title: 'Configuring an Email Pro account on the Gmail online interface'
+title: 'Email Pro - Configuring an account on the Gmail online interface'
 excerpt: 'Find out how to configure an Email Pro account on the Gmail online interface'
-updated: 2020-03-18
+updated: 2024-09-17
 ---
 
 ## Objective
@@ -18,7 +18,7 @@ You can configure Email Pro accounts on email clients and online interfaces, if 
 
 ## Requirements
 
-- an [Email Pro](https://www.ovhcloud.com/en-ie/emails/email-pro/) solution
+- an [Email Pro](/links/web/email-pro) solution
 - credentials for the Email Pro account you would like to configure
 - credentials for the Gmail account you want to configure the OVHcloud Email Pro account on
 
@@ -35,7 +35,7 @@ You can configure Email Pro accounts on email clients and online interfaces, if 
 >
 > In this guide, we will use as the server name: pro**?**.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
 > 
-> You can find this information in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), in the `Web Cloud`{.action} section, if you select `Professional Email`{.action}. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
+> You can find this information in the [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section, if you select `Professional Email`{.action}. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
 >
 
 First of all, go to the Gmail online interface via your web browser. Then log in to your account using your Gmail credentials.
@@ -104,6 +104,14 @@ To send an email from your OVHcloud Email Pro address via the Gmail online inter
 
 Please also note that you can still use our online interface, accessible via <https://www.ovh.ie/mail/>, to access your OVHcloud Email Pro address. You just need to use your usual credentials to log in.
 
-## Go further
+## Go further <a name="go-further"></a>
 
-Join our community of users on <https://community.ovh.com/en/>.
+> [!primary]
+>
+> For more information on configuring an email address from the online Gmail interface, see [Google Help Center](https://support.google.com/mail/answer/21289?hl=en&co=GENIE.Platform%3DDesktop).
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
+
+Join our [community of users](/links/community).

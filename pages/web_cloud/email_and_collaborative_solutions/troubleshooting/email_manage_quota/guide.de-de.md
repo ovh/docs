@@ -16,7 +16,7 @@ Jeder OVHcloud E-Mail-Account verfügt über einen dedizierten Speicherplatz. Ei
 
 ## Voraussetzungen
 
-- Sie verfügen über eine bereits konfigurierte OVHcloud E-Mail-Lösung: [**Hosted Exchange**](https://www.ovhcloud.com/de/emails/hosted-exchange/), [**Email Pro**](https://www.ovhcloud.com/de/emails/email-pro/) oder **MX Plan** (enthalten in einem [Webhosting](https://www.ovhcloud.com/de/web-hosting/) oder [Kostenloses Hosting 100M](https://www.ovhcloud.com/de/domains/free-web-hosting/) oder separat bestellt).
+- Sie verfügen über eine bereits konfigurierte OVHcloud E-Mail-Lösung: [**Hosted Exchange**](https://www.ovhcloud.com/de/emails/hosted-exchange/), [**Email Pro**](/links/web/email-pro) oder **MX Plan** (enthalten in einem [Webhosting](https://www.ovhcloud.com/de/web-hosting/) oder [Kostenloses Hosting 100M](https://www.ovhcloud.com/de/domains/free-web-hosting/) oder separat bestellt).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), im Bereich `Web Cloud`{.action}.
 - Sie verfügen über Anmeldeinformationen für den zu konfigurierenden E-Mail-Account.
 
@@ -204,7 +204,7 @@ Folgen Sie der passenden Dokumentation für Ihren E-Mail-Dienst:
 > [!tabs]
 > **E-Mails (MX Plan)**
 >>
->> Wenn die Kapazität Ihres E-Mail-Accounts bereits bei 5 GB beträgt, können Sie sich für eine Migration auf [**E-Mail Pro** mit 10 GB](https://www.ovhcloud.com/de/emails/email-pro/) oder [**Hosted Exchange** mit 50 GB](https://www.ovhcloud.com/de/emails/hosted-exchange/) entscheiden. Bestellen Sie hierzu das gewünschte Angebot und folgen Sie unserer Anleitung "[E-Mail-Accounts von MX Plan zu E-Mail Pro oder Exchange migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)". 
+>> Wenn die Kapazität Ihres E-Mail-Accounts bereits bei 5 GB beträgt, können Sie sich für eine Migration auf [**E-Mail Pro** mit 10 GB](/links/web/email-pro) oder [**Hosted Exchange** mit 50 GB](https://www.ovhcloud.com/de/emails/hosted-exchange/) entscheiden. Bestellen Sie hierzu das gewünschte Angebot und folgen Sie unserer Anleitung "[E-Mail-Accounts von MX Plan zu E-Mail Pro oder Exchange migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)". 
 >>
 > **E-Mail Pro**
 >>

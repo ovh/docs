@@ -12,7 +12,7 @@ Every OVHcloud email account has a dedicated storage space. By managing your sto
 
 ## Requirements
 
-- A preconfigured OVHcloud email solution, such as [**Hosted Exchange**](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/), [**Email Pro**](https://www.ovhcloud.com/en-gb/emails/email-pro/)) or **MX Plan** (available with a [web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/), a [100M free hosting](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/), or ordered separately)
+- A preconfigured OVHcloud email solution, such as [**Hosted Exchange**](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/), [**Email Pro**](/links/web/email-pro)) or **MX Plan** (available with a [web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/), a [100M free hosting](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/), or ordered separately)
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 - Login credentials for the email account concerned
 
@@ -200,7 +200,7 @@ Select the current solution for your email account from the menu below:
 > [!tabs]
 > **Emails (MX Plan)**
 >>
->> If your email account already has a maximum capacity of 5 GB, you can opt for a migration to a [10 GB **Email Pro** solution](https://www.ovhcloud.com/en-gb/emails/email-pro/) or a 50 GB [**Hosted Exchange** offer](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/). To do this, please order the solution that suits your needs, and follow our guide on [Migrating an MX Plan email account to Email Pro or Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel). 
+>> If your email account already has a maximum capacity of 5 GB, you can opt for a migration to a [10 GB **Email Pro** solution](/links/web/email-pro) or a 50 GB [**Hosted Exchange** offer](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/). To do this, please order the solution that suits your needs, and follow our guide on [Migrating an MX Plan email account to Email Pro or Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel). 
 >>
 > **Email Pro**
 >>

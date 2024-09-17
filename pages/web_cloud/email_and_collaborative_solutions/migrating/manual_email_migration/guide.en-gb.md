@@ -17,7 +17,7 @@ You can [migrate an email address automatically](/pages/web_cloud/email_and_coll
 
 ## Requirements
 
-- an email service with OVHcloud, such as an [Exchange](https://www.ovhcloud.com/en-gb/emails/){.external}, [Email Pro](https://www.ovhcloud.com/en-gb/emails/email-pro/){.external} or MX Plan solution (via the MX Plan or included in an [OVHcloud web hosting solution](https://www.ovhcloud.com/en-gb/web-hosting/){.external})
+- an email service with OVHcloud, such as an [Exchange](https://www.ovhcloud.com/en-gb/emails/){.external}, [Email Pro](/links/web/email-pro){.external} or MX Plan solution (via the MX Plan or included in an [OVHcloud web hosting solution](https://www.ovhcloud.com/en-gb/web-hosting/){.external})
 - access to the email accounts you want to migrate (the source accounts)
 - access to the OVHcloud email accounts that will be receiving the migrated data (the target accounts)
 

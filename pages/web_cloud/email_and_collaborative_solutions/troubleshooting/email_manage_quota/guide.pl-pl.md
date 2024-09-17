@@ -16,7 +16,7 @@ Każde konto e-mail OVHcloud dysponuje dedykowaną przestrzenią dyskową. Zarz�
 
 ## Wymagania początkowe
 
-- Posiadanie wcześniej skonfigurowanego rozwiązania poczty elektronicznej OVHcloud (**MX Plan**, zaproponowanego w naszej [ofercie hostingu](https://www.ovhcloud.com/pl/web-hosting/), zawartego w [Darmowy hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/) lub zamówionym oddzielnie jako rozwiązanie autonomiczne, takie jak [**Hosted Exchange**](https://www.ovhcloud.com/pl/emails/hosted-exchange/) lub [**Email Pro**](https://www.ovhcloud.com/pl/emails/email-pro/)).
+- Posiadanie wcześniej skonfigurowanego rozwiązania poczty elektronicznej OVHcloud (**MX Plan**, zaproponowanego w naszej [ofercie hostingu](https://www.ovhcloud.com/pl/web-hosting/), zawartego w [Darmowy hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/) lub zamówionym oddzielnie jako rozwiązanie autonomiczne, takie jak [**Hosted Exchange**](https://www.ovhcloud.com/pl/emails/hosted-exchange/) lub [**Email Pro**](/links/web/email-pro)).
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), sekcja `Web Cloud`{.action}.
 - Dostęp do danych adresów e-mail.
 
@@ -203,7 +203,7 @@ Z poniższego menu wybierz aktualną ofertę Twojego konta e-mail:
 > [!tabs]
 > **E-maile (MXplan)**
 >>
->> Jeśli rozmiar konta e-mail wynosi maksymalnie 5 GB, możesz przejść na ofertę [**Email Pro** o rozmiarze 10 GB](https://www.ovhcloud.com/pl/emails/email-pro/) lub [**Hosted Exchange** 50 GB](https://www.ovhcloud.com/pl/emails/hosted-exchange/). W tym celu zachęcamy do zamówienia wybranej oferty i zapoznania się z naszą dokumentacją "[Migracja konta e-mail MX Plan na konto E-mail Pro lub Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)". 
+>> Jeśli rozmiar konta e-mail wynosi maksymalnie 5 GB, możesz przejść na ofertę [**Email Pro** o rozmiarze 10 GB](/links/web/email-pro) lub [**Hosted Exchange** 50 GB](https://www.ovhcloud.com/pl/emails/hosted-exchange/). W tym celu zachęcamy do zamówienia wybranej oferty i zapoznania się z naszą dokumentacją "[Migracja konta e-mail MX Plan na konto E-mail Pro lub Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)". 
 >>
 > **Email Pro**
 >>

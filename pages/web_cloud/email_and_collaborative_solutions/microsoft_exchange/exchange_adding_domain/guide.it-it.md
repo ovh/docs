@@ -16,7 +16,7 @@ Aggiungere un dominio su Exchange è un’operazione fondamentale per utilizzare
 
 ## Prerequisiti
 
-- Disporre di una soluzione [Exchange](https://www.ovhcloud.com/it/emails/) o [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/)
+- Disporre di una soluzione [Exchange](https://www.ovhcloud.com/it/emails/) o [Email Pro](/links/web/email-pro)
 - Aver registrato uno o più domini
 - Poter modificare la configurazione del dominio [zona DNS](/pages/web_cloud/domains/dns_zone_edit)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)

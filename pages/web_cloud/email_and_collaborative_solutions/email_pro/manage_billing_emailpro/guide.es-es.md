@@ -17,7 +17,7 @@ La solución Email Pro dispone de una gestión flexible relativa a la facturaci�
 ## Requisitos
 
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
-- Disponer de una [cuenta Email Pro](https://www.ovhcloud.com/es-es/emails/email-pro/){.external}.
+- Disponer de una [cuenta Email Pro](/links/web/email-pro){.external}.
 
 ## Procedimiento
 

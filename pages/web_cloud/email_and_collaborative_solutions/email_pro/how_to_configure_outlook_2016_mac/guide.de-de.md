@@ -18,7 +18,7 @@ E-Mail Pro Accounts können auf verschiedenen, kompatiblen E-Mail-Clients einger
 
 ## Voraussetzungen
 
-- Sie besitzen ein [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/) Angebot.
+- Sie besitzen ein [E-Mail Pro](/links/web/email-pro) Angebot.
 - Die Microsoft Outlook-Anwendung ist auf Ihrem Mac installiert.
 - Sie haben die Login-Daten der E-Mail-Adresse, die Sie einrichten möchten.
 

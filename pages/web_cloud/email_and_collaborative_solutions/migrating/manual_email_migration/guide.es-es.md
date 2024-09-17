@@ -23,7 +23,7 @@ updated: 2021-01-05
 
 ## Requisitos
 
-- Disponer de un servicio de correo en OVHcloud, como una solución [Exchange](https://www.ovhcloud.com/es-es/emails/){.external}, [Email Pro](https://www.ovhcloud.com/es-es/emails/email-pro/){.external} o MX Plan (a través de la solución MX Plan o incluida en un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external}).
+- Disponer de un servicio de correo en OVHcloud, como una solución [Exchange](https://www.ovhcloud.com/es-es/emails/){.external}, [Email Pro](/links/web/email-pro){.external} o MX Plan (a través de la solución MX Plan o incluida en un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external}).
 - Disponer del nombre de usuario y la contraseña de las cuentas de correo electrónico que quiera migrar (las cuentas de origen).
 - Disponer del nombre de usuario y la contraseña de las cuentas de correo electrónico de OVHcloud que recibirán los datos que se migran (las cuentas de destino).
 

@@ -18,7 +18,7 @@ E-Mail Pro Accounts können auf verschiedenen, kompatiblen E-Mail-Clients einger
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/) Lösung.
+- Sie verfügen über eine [E-Mail Pro](/links/web/email-pro) Lösung.
 - Die Mail App ist auf Ihrem Gerät installiert.
 - Sie haben die Login-Daten der E-Mail-Adresse, die Sie einrichten möchten.
 

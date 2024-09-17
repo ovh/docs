@@ -23,7 +23,7 @@ Es posible configurar sus cuentas Email Pro en el cliente de correo que usted ut
 
 ## Requisitos
 
-- Disponer de una [cuenta Email Pro](https://www.ovhcloud.com/es-es/emails/email-pro/){.external}.
+- Disponer de una [cuenta Email Pro](/links/web/email-pro){.external}.
 - Tener la aplicación Mail instalada en su dispositivo iOS.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
 
@@ -75,6 +75,10 @@ OVHcloud también ofrece una aplicación web que tiene [funciones colaborativas]
 >
 
 ## Más información
+
+> [!primary]
+>
+> For more information on configuring an email address from your iOS device, see [Apple's Help page](https://support.apple.com/es-es/102619).
 
 [Configurar una cuenta de correo electrónico en iPhone o iPad](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_ios)
 

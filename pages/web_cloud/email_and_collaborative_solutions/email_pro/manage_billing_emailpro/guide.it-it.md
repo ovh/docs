@@ -17,7 +17,7 @@ L'offerta Email Pro dispone di una gestione flessibile riguardante la fatturazio
 ## Prerequisiti
 
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
-- Disporre di un [account Email Pro](https://www.ovhcloud.com/it/emails/email-pro/){.external}
+- Disporre di un [account Email Pro](/links/web/email-pro){.external}
 
 ## Procedura
 

@@ -12,7 +12,7 @@ Es ist nicht immer sinnvoll, anderen Benutzern die Verwendung eines gesamten E-M
 
 > [!primary]
 >
-> Obwohl sich diese Anleitung auf unsere Exchange Dienste bezieht, können Sie den Anweisungen auch für Ihre [E-Mail Pro Accounts](https://www.ovhcloud.com/de/emails/email-pro/) folgen.
+> Obwohl sich diese Anleitung auf unsere Exchange Dienste bezieht, können Sie den Anweisungen auch für Ihre [E-Mail Pro Accounts](/links/web/email-pro) folgen.
 >
 
 ## Voraussetzungen

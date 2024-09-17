@@ -24,7 +24,7 @@ Gli account Email Pro possono essere configurati su client di posta compatibili 
 
 ## Prerequisiti
 
-- Disporre di un account email [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/){.external}
+- Disporre di un account email [Email Pro](/links/web/email-pro){.external}
 - Disporre di un software Microsoft Outlook o successivo
 - Disporre delle credenziali associate all’indirizzo email da configurare
 

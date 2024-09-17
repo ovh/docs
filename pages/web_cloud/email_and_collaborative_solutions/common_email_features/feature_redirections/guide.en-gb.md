@@ -63,7 +63,7 @@ Click on the tabs below for an illustrated explanation of how aliases and redire
 
 ## Requirements
 
-- A preconfigured OVHcloud email solution, such as [**Hosted Exchange**](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/), [**Email Pro**](https://www.ovhcloud.com/en-gb/emails/email-pro/)) or **MX Plan** (available with a [web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/), a [100M free hosting](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/), or ordered separately)
+- A preconfigured OVHcloud email solution, such as [**Hosted Exchange**](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/), [**Email Pro**](/links/web/email-pro)) or **MX Plan** (available with a [web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/), a [100M free hosting](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/), or ordered separately)
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions

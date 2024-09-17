@@ -26,8 +26,8 @@ Deseja migrar os seus endereços de e-mail presentes numa plataforma Exchange ou
 
 ## Requisitos
 
-- Ter uma plataforma **"fonte"** com contas [Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/){.external} ou [E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/){.external} configuradas.
-- Ter uma plataforma de **"destino"** com contas [Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/){.external}, [E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/){.external} ou MX Plan (através da oferta MX Plan ou incluída numa oferta de [alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}). Esta plataforma deve dispor de contas não configuradas ou disponíveis para acolher os endereços de e-mail que devem ser migrados.
+- Ter uma plataforma **"fonte"** com contas [Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/){.external} ou [E-mail Pro](/links/web/email-pro){.external} configuradas.
+- Ter uma plataforma de **"destino"** com contas [Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/){.external}, [E-mail Pro](/links/web/email-pro){.external} ou MX Plan (através da oferta MX Plan ou incluída numa oferta de [alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}). Esta plataforma deve dispor de contas não configuradas ou disponíveis para acolher os endereços de e-mail que devem ser migrados.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções

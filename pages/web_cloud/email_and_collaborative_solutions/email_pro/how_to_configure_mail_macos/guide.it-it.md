@@ -22,7 +22,7 @@ Gli account Email Pro possono essere configurati su client di posta compatibili 
 
 ## Prerequisiti
 
-- Disporre di un indirizzo [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/)
+- Disporre di un indirizzo [Email Pro](/links/web/email-pro)
 - Disporre del software Mail installato sul tuo Mac
 - Disporre delle credenziali associate all’indirizzo email da configurare
  

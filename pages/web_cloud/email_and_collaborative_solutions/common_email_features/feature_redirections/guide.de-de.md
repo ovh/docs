@@ -53,7 +53,7 @@ Klicken Sie auf die Tabs, um die Funktionsweise von Aliasnamen und Weiterleitung
 
 ## Voraussetzungen
 
-- Sie verfügen über eine bereits konfigurierte OVHcloud E-Mail-Lösung: [**Hosted Exchange**](https://www.ovhcloud.com/de/emails/hosted-exchange/), [**Email Pro**](https://www.ovhcloud.com/de/emails/email-pro/) oder **MX Plan** (enthalten in einem [Webhosting](https://www.ovhcloud.com/de/web-hosting/) oder [Kostenloses Hosting 100M](https://www.ovhcloud.com/de/domains/free-web-hosting/) oder separat bestellt).
+- Sie verfügen über eine bereits konfigurierte OVHcloud E-Mail-Lösung: [**Hosted Exchange**](https://www.ovhcloud.com/de/emails/hosted-exchange/), [**Email Pro**](/links/web/email-pro) oder **MX Plan** (enthalten in einem [Webhosting](https://www.ovhcloud.com/de/web-hosting/) oder [Kostenloses Hosting 100M](https://www.ovhcloud.com/de/domains/free-web-hosting/) oder separat bestellt).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung

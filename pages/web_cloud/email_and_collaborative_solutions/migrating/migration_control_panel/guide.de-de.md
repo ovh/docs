@@ -17,7 +17,7 @@ OVHcloud bietet verschiedene E-Mail-Lösungen an: MX Plan (autonom oder in einem
 ## Voraussetzungen
 
 - Sie verfügen über einen MX Plan E-Mail-Account (als eigenständige Lösung oder als Teil eines [OVHcloud Webhosting Angebots](https://www.ovhcloud.com/de/web-hosting/){.external}).
-- Sie verfügen über einen [Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/){.external} oder [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/){.external} Dienst mit mindestens einem unkonfigurierten Account (dieser wird als "@configureme.me" angezeigt).
+- Sie verfügen über einen [Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/){.external} oder [E-Mail Pro](/links/web/email-pro){.external} Dienst mit mindestens einem unkonfigurierten Account (dieser wird als "@configureme.me" angezeigt).
 - **Sie haben keine Weiterleitungen für die MX Plan E-Mail-Accounts aktiviert, die Sie migrieren möchten.**
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 

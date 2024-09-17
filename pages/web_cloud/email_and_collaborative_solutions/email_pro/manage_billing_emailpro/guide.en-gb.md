@@ -13,7 +13,7 @@ The Email Pro service offers flexible management for account billing. This guide
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
-- An [Email Pro](https://www.ovhcloud.com/en-gb/emails/email-pro/){.external} account
+- An [Email Pro](/links/web/email-pro){.external} account
 
 ## Instructions
 

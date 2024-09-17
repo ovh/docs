@@ -16,7 +16,7 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 
 ## Requirements
 
-- You must have an [Email Pro](https://www.ovhcloud.com/en-gb/emails/email-pro/){.external} solution.
+- You must have an [Email Pro](/links/web/email-pro){.external} solution.
 - You must have Microsoft Outlook installed on your Mac.
 - You need to have the required credentials for the email address you would like to configure.
 

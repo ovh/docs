@@ -11,7 +11,7 @@ Usługi Exchange i Email Pro umożliwiają korzystanie z profesjonalnych kont e-
 
 ## Wymagania początkowe
 
-- skonfigurowane rozwiązanie [OVHcloud Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/) lub [E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/)
+- skonfigurowane rozwiązanie [OVHcloud Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/) lub [E-mail Pro](/links/web/email-pro)
 - Posiadanie co najmniej dwóch aktywnych kont e-mail skonfigurowanych na tej samej platformie e-mail OVHcloud
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 - Posiadanie danych dostępowych do konta e-mail, dla którego przydzielone zostaną nowe prawa

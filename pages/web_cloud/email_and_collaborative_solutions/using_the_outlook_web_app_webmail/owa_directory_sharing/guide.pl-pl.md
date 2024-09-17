@@ -12,7 +12,7 @@ Przyznanie pełnomocnictwa do korzystania z całego konta e-mail nie zawsze jest
 
 > [!primary]
 >
-> Choć ten przewodnik dotyczy usług Exchange, z instrukcji można skorzystać również w przypadku kont [E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/).
+> Choć ten przewodnik dotyczy usług Exchange, z instrukcji można skorzystać również w przypadku kont [E-mail Pro](/links/web/email-pro).
 >
 
 ## Wymagania początkowe

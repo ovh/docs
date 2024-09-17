@@ -20,7 +20,7 @@ Ha eliminado por error uno o varios elementos (correo electrónico, contacto, ci
 - Disponer de una solución de correo de OVHcloud:
     - **MX Plan** ([solo la nueva versión](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)) incluido entre nuestros [planes de hosting](https://www.ovhcloud.com/es-es/web-hosting/), incluido en un [Alojamiento gratuito 100M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/) 
     - o [**Hosted Exchange**](https://www.ovhcloud.com/es-es/emails/hosted-exchange/)
-    - o [**Email Pro**](https://www.ovhcloud.com/es-es/emails/email-pro/)
+    - o [**Email Pro**](/links/web/email-pro)
 - Conocer las claves de acceso de la dirección de correo electrónico correspondiente
 
 ## Procedimiento

@@ -16,7 +16,7 @@ updated: 2023-08-29
 
 ## Voraussetzungen
 
-- Sie haben einen E-Mail-Dienst bei OVHcloud: [Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/){.external}, [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/){.external} oder MX Plan (aus dem MX Plan Angebot oder als Teil eines [OVHcloud Webhostings](https://www.ovhcloud.com/de/web-hosting/){.external}).
+- Sie haben einen E-Mail-Dienst bei OVHcloud: [Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/){.external}, [E-Mail Pro](/links/web/email-pro){.external} oder MX Plan (aus dem MX Plan Angebot oder als Teil eines [OVHcloud Webhostings](https://www.ovhcloud.com/de/web-hosting/){.external}).
 - Sie verfügen über die Login-Daten für die Quell-Accounts, die Sie migrieren möchten (*Source*).
 - Sie verfügen über die Login-Daten der OVHcloud Ziel-Accounts, auf die Sie die Inhalte übertragen möchten (*Destination*).
 

@@ -16,7 +16,7 @@ Adicionar um domínio a um serviço Exchange é indispensável para poder utiliz
 
 ## Requisitos
 
-- Dispor de uma solução [Exchange](https://www.ovhcloud.com/pt/emails/) ou [Email Pro](https://www.ovhcloud.com/pt/emails/email-pro/).
+- Dispor de uma solução [Exchange](https://www.ovhcloud.com/pt/emails/) ou [Email Pro](/links/web/email-pro).
 - Dispor de um ou vários domínios.
 - Ter a possibilidade de alterar a configuração do domínio [zona DNS](/pages/web_cloud/domains/dns_zone_edit).
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).

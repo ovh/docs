@@ -23,7 +23,7 @@ Gli account Email Pro possono essere configurati su client di posta compatibili 
 
 ## Prerequisiti
 
-- Disporre di un [account Email Pro](https://www.ovhcloud.com/it/emails/email-pro/){.external}
+- Disporre di un [account Email Pro](/links/web/email-pro){.external}
 - Aver installato l'applicazione Mail sul proprio dispositivo iOS
 - Disporre delle credenziali associate all’account email da configurare
 
@@ -75,6 +75,10 @@ OVHcloud propone un'applicazione Web con [funzionalità collaborative](https://w
 >
 
 ## Per saperne di più
+
+> [!primary]
+>
+> Per informazioni sulla configurazione di un indirizzo email dal tuo dispositivo iOS, consulta [la pagina della Guida di Apple](https://support.apple.com/it-it/102619).
 
 [Configurare un indirizzo email compreso nell'offerta MX Plan o in una soluzione di hosting Web su un iPhone o un iPad](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_ios)
 

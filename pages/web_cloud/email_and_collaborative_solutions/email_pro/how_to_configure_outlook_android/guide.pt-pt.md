@@ -16,7 +16,7 @@ As contas E-mail Pro podem ser configuradas em vários softwares de e-mail compa
 
 ## Requisitos
 
-- Dispor de uma oferta [E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/){.external}.
+- Dispor de uma oferta [E-mail Pro](/links/web/email-pro){.external}.
 - Ter instalado a aplicação Microsoft Outlook no seu dispositivo Android. Pode descarregar esta última a partir do *Google Play Store*.
 
 > [!warning]

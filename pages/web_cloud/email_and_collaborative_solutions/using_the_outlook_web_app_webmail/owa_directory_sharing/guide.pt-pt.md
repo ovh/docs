@@ -12,7 +12,7 @@ Nem sempre convém delegar o uso ilimitado de uma conta de e-mail. A funcionalid
 
 > [!primary]
 >
-> Embora este guia se refira aos nossos serviços Exchange, as instruções aplicam-se igualmente às contas [E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/).
+> Embora este guia se refira aos nossos serviços Exchange, as instruções aplicam-se igualmente às contas [E-mail Pro](/links/web/email-pro).
 >
 
 ## Requisitos

@@ -17,7 +17,7 @@ OVHcloud oferuje kilka rozwiązań poczty elektronicznej: MX Plan (sprzedawany s
 ## Wymagania początkowe
 
 - Posiadanie konta e-mail MX Plan (w ramach pakietu MX Plan lub zawartego w pakiecie [hostingowym OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external})
-- Posiadanie usługi [Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/){.external} lub [E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/){.external} z co najmniej jednym nieskonfigurowanym kontem (pojawiającym się w postaci "@configureme.me")
+- Posiadanie usługi [Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/){.external} lub [E-mail Pro](/links/web/email-pro){.external} z co najmniej jednym nieskonfigurowanym kontem (pojawiającym się w postaci "@configureme.me")
 - **Nie skonfigurowałeś przekierowania na adres e-mail MX Plan, który chcesz przenieść.**
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 

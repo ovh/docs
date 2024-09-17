@@ -21,7 +21,7 @@ Podczas dodawania domeny do platformy e-mail możesz zostać poproszony o skonfi
 ## Wymagania początkowe
 
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), sekcja `Web Cloud`{.action}.
-- Posiadanie usługi [Exchange](https://www.ovhcloud.com/pl/emails/) lub [Email Pro](https://www.ovhcloud.com/pl/emails/email-pro/).
+- Posiadanie usługi [Exchange](https://www.ovhcloud.com/pl/emails/) lub [Email Pro](/links/web/email-pro).
 - Dodanie domeny do platformy e-mail. W razie potrzeby skorzystaj z przewodnika "[Dodawanie domeny do platformy e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)".
 - Posiadanie możliwości [skonfigurowania strefy DNS](/pages/web_cloud/domains/dns_zone_edit) danej domeny w Panelu klienta OVHcloud lub z poziomu interfejsu zarządzania, w którym jest ona zarejestrowana.
 
@@ -31,7 +31,7 @@ Podczas dodawania domeny do platformy e-mail możesz zostać poproszony o skonfi
 
 Rekord CNAME jest tu używany jako alias, ale wskazuje na adres docelowy, który z kolei odsyła do adresu IP. Nie jest to zatem, z natury, rekord powiązany z usługą e-mail.
 
-W ramach usług [**Hosted Exchange**](https://www.ovhcloud.com/pl/emails/hosted-exchange/) i [**Email Pro**](https://www.ovhcloud.com/pl/emails/email-pro/), wpis CNAME jest używany jako kod potwierdzający (token), który będzie widoczny w strefie DNS domeny, którą chcesz zatwierdzić. Celem jest sprawdzenie, czy użytkownik platformy e-mail jest menedżerem nazwy domeny, którą dodaje.
+W ramach usług [**Hosted Exchange**](https://www.ovhcloud.com/pl/emails/hosted-exchange/) i [**Email Pro**](/links/web/email-pro), wpis CNAME jest używany jako kod potwierdzający (token), który będzie widoczny w strefie DNS domeny, którą chcesz zatwierdzić. Celem jest sprawdzenie, czy użytkownik platformy e-mail jest menedżerem nazwy domeny, którą dodaje.
 
 Na poniższym schemacie platforma e-mail ([Exchange](https://www.ovhcloud.com/pl/emaile/) lub [Email Pro](https://www.ovhcloud.com/pl/emaile/email-pro/)) jest reprezentowana przez zieloną ramkę.<br>
 Aby utworzyć adresy e-mail, dodajesz konta (w tym przypadku oznaczone jako "**kontakt**", "**john.smith**" i "**mary.johnson**").<br>

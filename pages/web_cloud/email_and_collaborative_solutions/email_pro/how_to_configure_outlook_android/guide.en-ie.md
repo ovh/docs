@@ -12,7 +12,7 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 
 ## Requirements
 
-- An [Email Pro](https://www.ovhcloud.com/en-ie/emails/email-pro/){.external} solution.
+- An [Email Pro](/links/web/email-pro){.external} solution.
 - You need to have Microsoft Outlook installed on your Android device. You can download it from the *Google Play Store*.
 
 > [!warning]

@@ -23,7 +23,7 @@ updated: 2021-01-05
 
 ## Wymagania początkowe
 
-- Posiadanie usługi e-mail w OVHcloud, takiej jak oferta [Exchange](https://www.ovhcloud.com/pl/emails/){.external}, [E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/){.external} lub MX Plan (w postaci pakietu MX Plan lub w postaci pakietu [hostingowego OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external})
+- Posiadanie usługi e-mail w OVHcloud, takiej jak oferta [Exchange](https://www.ovhcloud.com/pl/emails/){.external}, [E-mail Pro](/links/web/email-pro){.external} lub MX Plan (w postaci pakietu MX Plan lub w postaci pakietu [hostingowego OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external})
 - Posiadanie danych dostępowych do kont e-mail, które chcesz przenieść (konta źródłowe)
 - Posiadanie danych dostępowych do kont e-mail OVHcloud, na które przeniesione zostaną dane (konta docelowe)
 

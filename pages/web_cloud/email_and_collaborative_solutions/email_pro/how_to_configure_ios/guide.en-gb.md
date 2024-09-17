@@ -19,7 +19,7 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 
 ## Requirements
 
-- an [OVHcloud Email Pro account](https://www.ovhcloud.com/en-gb/emails/email-pro/){.external}
+- an [OVHcloud Email Pro account](/links/web/email-pro){.external}
 - the Mail app installed on your iOS device
 - login credentials for the email account to be configured
 
@@ -71,6 +71,10 @@ OVHcloud also offers a web application that includes [collaborative features](ht
 >
 
 ## Go further
+
+> [!primary]
+>
+> For more information on configuring an email address from your iOS device, see [Apple's Help page](https://support.apple.com/en-gb/102619).
 
 [Configuring a Web Hosting email address on iPhone and iPad](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_ios)
 

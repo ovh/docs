@@ -68,7 +68,7 @@ Kliknij poniższe zakładki, aby uzyskać ilustrowane wyjaśnienia dotyczące dz
 ## Wymagania początkowe
 
 - Dostęp do [Panelu klienta OVHcloud](/links/manager).
-- Posiadanie wcześniej skonfigurowanego rozwiązania poczty elektronicznej OVHcloud (**MX Plan**, zaproponowanego w naszej [ofercie hostingu](https://www.ovhcloud.com/pl/web-hosting/), zawartego w [Darmowy hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/) lub zamówionym oddzielnie jako rozwiązanie autonomiczne, takie jak [Hosted Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/) lub [Email Pro](https://www.ovhcloud.com/pl/emails/email-pro/))
+- Posiadanie wcześniej skonfigurowanego rozwiązania poczty elektronicznej OVHcloud (**MX Plan**, zaproponowanego w naszej [ofercie hostingu](https://www.ovhcloud.com/pl/web-hosting/), zawartego w [Darmowy hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/) lub zamówionym oddzielnie jako rozwiązanie autonomiczne, takie jak [Hosted Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/) lub [Email Pro](/links/web/email-pro))
 
 ## W praktyce
 

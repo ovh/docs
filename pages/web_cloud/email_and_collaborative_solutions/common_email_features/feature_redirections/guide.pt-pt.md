@@ -68,7 +68,7 @@ Clique nos separadores seguintes para obter explicações ilustradas sobre o fun
 ## Requisitos
 
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
-- Dispor de uma solução de e-mail OVHcloud previamente configurada (**MX Plan**, proposta entre as nossas [ofertas de alojamento web](https://www.ovhcloud.com/pt/web-hosting/), incluída num [Alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/) ou encomendada separadamente como solução autónoma, como o [Hosted Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/) ou o [Email Pro](https://www.ovhcloud.com/pt/emails/email-pro/)).
+- Dispor de uma solução de e-mail OVHcloud previamente configurada (**MX Plan**, proposta entre as nossas [ofertas de alojamento web](https://www.ovhcloud.com/pt/web-hosting/), incluída num [Alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/) ou encomendada separadamente como solução autónoma, como o [Hosted Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/) ou o [Email Pro](/links/web/email-pro)).
 
 ## Instruções
 

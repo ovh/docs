@@ -19,7 +19,7 @@ As contas E-mail Pro podem ser configuradas em vários softwares de e-mail compa
 
 ## Requisitos
 
-- Dispor de uma oferta [E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/) .
+- Dispor de uma oferta [E-mail Pro](/links/web/email-pro) .
 - Dispor da aplicação Correio instalada no seu dispositivo.
 - Ter acesso às credenciais do endereço de e-mail que pretende configurar.
 

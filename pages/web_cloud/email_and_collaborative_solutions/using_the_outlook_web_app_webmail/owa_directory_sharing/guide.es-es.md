@@ -12,7 +12,7 @@ Delegar permisos sobre toda una cuenta de correo no siempre es recomendable. La 
 
 > [!primary]
 >
-> Aunque esta guía hace referencia a nuestros servicios de Exchange, también puede consultar las instrucciones para las cuentas de [Email Pro](https://www.ovhcloud.com/es-es/emails/email-pro/).
+> Aunque esta guía hace referencia a nuestros servicios de Exchange, también puede consultar las instrucciones para las cuentas de [Email Pro](/links/web/email-pro).
 >
 
 ## Requisitos

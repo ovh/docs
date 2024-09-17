@@ -20,7 +20,7 @@ Wykreśliłeś przez przypadek jeden lub kilka elementów (e-mail, kontakt, spot
 - Posiadanie rozwiązania poczty elektronicznej OVHcloud:
     - **MX Plan** ([tylko nowa wersja](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)) proponowany w naszej [ofercie hostingu www](https://www.ovhcloud.com/pl/web-hosting/) zawartej w darmowym [Darmowy hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/)
     - lub [**Hosted Exchange**](https://www.ovhcloud.com/pl/emails/hosted-exchange/)
-    - lub [**E-mail Pro**](https://www.ovhcloud.com/pl/emails/email-pro/)
+    - lub [**E-mail Pro**](/links/web/email-pro)
 - Dane do logowania do odpowiedniego konta e-mail
 
 ## W praktyce

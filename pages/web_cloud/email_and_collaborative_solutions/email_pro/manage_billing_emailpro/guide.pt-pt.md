@@ -17,7 +17,7 @@ A oferta E-mail Pro dispõe de uma gestão flexível no que diz respeito à fatu
 ## Requisitos
 
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
-- Ter uma [conta E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/){.external}.
+- Ter uma [conta E-mail Pro](/links/web/email-pro){.external}.
 
 ## Instruções
 

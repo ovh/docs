@@ -12,7 +12,7 @@ Non è sempre opportuno delegare l’utilizzo di un intero account di posta elet
 
 > [!primary]
 >
-> Questa guida si riferisce ai nostri servizi Exchange, ma le istruzioni sono valide anche per gli account [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/).
+> Questa guida si riferisce ai nostri servizi Exchange, ma le istruzioni sono valide anche per gli account [Email Pro](/links/web/email-pro).
 >
 
 ## Prerequisiti

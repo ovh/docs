@@ -68,7 +68,7 @@ Fare clic sulle schede seguenti per illustrare il funzionamento di alias e reind
 ## Prerequisiti
 
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
-- Disporre di una soluzione email OVHcloud configurata precedentemente (**MX Plan**, inclusa nelle nostre [soluzioni di hosting Web](https://www.ovhcloud.com/it/web-hosting/), inclusa in un [Hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting/) o ordinata separatamente come soluzione autonoma, come [Hosted Exchange](https://www.ovhcloud.com/it/emails/hosted-exchange/) o [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/))
+- Disporre di una soluzione email OVHcloud configurata precedentemente (**MX Plan**, inclusa nelle nostre [soluzioni di hosting Web](https://www.ovhcloud.com/it/web-hosting/), inclusa in un [Hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting/) o ordinata separatamente come soluzione autonoma, come [Hosted Exchange](https://www.ovhcloud.com/it/emails/hosted-exchange/) o [Email Pro](/links/web/email-pro))
 
 ## Procedura
 

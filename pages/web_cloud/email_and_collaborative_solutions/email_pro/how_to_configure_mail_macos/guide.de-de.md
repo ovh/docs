@@ -22,7 +22,7 @@ E-Mail Pro Accounts können auf verschiedenen, kompatiblen E-Mail-Clients einger
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [E-Mail Pro Adresse](https://www.ovhcloud.com/de/emails/email-pro/).
+- Sie verfügen über eine [E-Mail Pro Adresse](/links/web/email-pro).
 - Sie verfügen über das auf Ihrem Mac installierte Mail-Programm.
 - Sie haben die Login-Daten der E-Mail-Adresse, die Sie einrichten möchten.
  

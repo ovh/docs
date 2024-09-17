@@ -18,7 +18,7 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 
 ## Requirements
 
-- an [Email Pro](https://www.ovhcloud.com/en-gb/emails/email-pro/){.external} account
+- an [Email Pro](/links/web/email-pro){.external} account
 - Microsoft Outlook or later installed on your device
 - login credentials for the email account to be configured
 

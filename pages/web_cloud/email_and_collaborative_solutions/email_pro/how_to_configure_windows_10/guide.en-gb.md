@@ -18,7 +18,7 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 
 ## Requirements
 
-- You must have an [Email Pro](https://www.ovhcloud.com/en-gb/emails/email-pro/) account.
+- You must have an [Email Pro](/links/web/email-pro) account.
 - You need to have the Mail application installed on your device.
 - You need to have the required credentials for the email address you would like to configure.
 
