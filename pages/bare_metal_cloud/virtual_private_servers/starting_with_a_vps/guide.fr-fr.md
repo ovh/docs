@@ -1,7 +1,7 @@
 ---
 title: Premiers pas avec un VPS
 excerpt: "Apprenez à gérer un VPS dans votre espace client et découvrez les premières étapes de son utilisation, notamment les connexions à distance et les mesures de sécurité"
-updated: 2024-09-12
+updated: 2024-09-17
 ---
 
 ## Objectif
@@ -40,7 +40,7 @@ L'onglet `Accueil`{.action} contient des informations importantes sur votre serv
 
 #### Votre VPS <a name="yourvps"></a>
 
-Retrouvez les informations de base sur votre VPS et l’état du service.
+Retrouvez ci-dessous les informations de base sur votre VPS et l’état du service.
 
 > [!tabs]
 > Nom
