@@ -8,7 +8,7 @@ updated: 2024-09-17
 >
 > **Dieses Verfahren ist veraltet (*deprecated*)**.
 >
-> Um Dateien in Ihre Datastores hochzuladen, verwenden Sie die in der folgenden Anleitung beschriebene Methode: [Dateien aus dem VMware vSphere Datastore hochladen](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_datastore_upload).
+> Um Dateien in Ihre Datastores hochzuladen, verwenden Sie die in der folgenden Anleitung beschriebene Methode: [Uploading files to the VMware vSphere on OVHcloud datastore](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_datastore_upload) (EN).
 
 ## Einleitung
 
