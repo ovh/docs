@@ -1,7 +1,7 @@
 ---
 title: Backing up SAP HANA with Veeam Backup and Replication
-excerpt: "This guide provides instructions for backing up SAP HANA databases using Veeam Backup and Replication and the Veeam Plug-in for SAP HANA."
-updated: 2024-09-16
+excerpt: "This guide provides instructions for backing up SAP HANA databases using Veeam Backup and Replication and the Veeam Plug-in for SAP HANA"
+updated: 2024-09-17
 ---
 
 ## Objective

@@ -1,7 +1,7 @@
 ---
 title: Sauvegarder SAP HANA avec Veeam Backup and Replication
 excerpt: "Ce guide fournit des instructions générales pour sauvegarder des bases de données SAP HANA avec Veeam Backup and Replication et Veeam Plug-in for SAP HANA"
-updated: 2024-09-16
+updated: 2024-09-17
 ---
 
 ## Objectif
