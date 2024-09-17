@@ -1,12 +1,12 @@
 ---
 title: "Logging in via SFTP"
 excerpt: "Find out how to log in to your managed VMware vSphere via SFTP"
-updated: 2024-09-16
+updated: 2024-09-17
 ---
 
 > [!warning]
 >
-> **This procedure is now deprecated (*deprecated*)**.
+> **This procedure is now deprecated**.
 >
 > To upload files to your databases, please use the method described in this guide: [Uploading files to the VMware vSphere on OVHcloud datastore](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_datastore_upload).
 >
