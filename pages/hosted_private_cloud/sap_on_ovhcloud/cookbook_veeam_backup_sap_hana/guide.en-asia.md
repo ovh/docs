@@ -21,7 +21,7 @@ This guide provides instructions for backing up SAP HANA databases using Veeam B
 
 ### 1 - Installation of Veeam Backup and Replication
 
-If you want to be guided through the installation of Veeam Backup and Replication on your Windows server, [our guide]((/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication)) outlines all the necessary steps.
+If you want to be guided through the installation of Veeam Backup and Replication on your Windows server, [our guide](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication) outlines all the necessary steps.
 
 ### 2 - Configuration of the Backup Repository
 
@@ -480,7 +480,7 @@ To restore your SAP HANA database from a backup taken with Veeam Backup and Repl
 >> The Veeam Explorer for SAP HANA application opens and allows you to restore either the SYSTEMDB or the TENANTDB of your SAP HANA database. All restoration modes are available:
 >>
 >> - [Restoration with the most recent backups](https://helpcenter.veeam.com/docs/backup/explorers/vehana_restore_single_latest.html?ver=120).
->> - [Restoration to a specific date and time (Point-in-Time Recovery)]((https://helpcenter.veeam.com/docs/backup/explorers/vehana_restore_single_pit.html?ver=120)).
+>> - [Restoration to a specific date and time (Point-in-Time Recovery)](https://helpcenter.veeam.com/docs/backup/explorers/vehana_restore_single_pit.html?ver=120).
 >> - [Restoration to another SAP HANA database](https://helpcenter.veeam.com/docs/backup/explorers/vehana_restore_single_tas.html?ver=120).
 >>
 >> You will be guided through the restoration steps based on the mode you select.
