@@ -87,7 +87,7 @@ This Backup Repository will be used to secure your backups on a secondary storag
 
 To discover the steps to create an Object Storage S3 bucket, please refer to the detailed steps in [our guide](/pages/storage_and_backup/object_storage/s3_create_bucket).
 
->> [!tabs]
+> [!tabs]
 > **Step 1**
 >>
 >> Open the Veeam Backup and Replication console, select `Backup Infrastructure`{.action}, then `Backup Repositories`{.action}.
