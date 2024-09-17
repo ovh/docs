@@ -1,7 +1,7 @@
 ---
-title: "Creating network components from the VCD control panel"
+title: "VMware Cloud Director - Creating network components from the VCD control panel"
 excerpt: "Find out how to easily create network components within the VCD on OVHcloud control panel"
-updated: 2024-08-20
+updated: 2024-09-17
 ---
 
 <style>
@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 > [!primary]
 > 
-> VCD on OVHcloud is currently in Alpha phase. This guide may be incomplete and will be updated.
+> VCD on OVHcloud is currently in Alpha phase. This guide can evolve and be updated in the future with the advances of our teams in charge of this product.
 > 
 
 ## Objective
@@ -404,9 +404,10 @@ Your network is now fully created and ready to use.
 ## Go further
 
 You can now follow the steps of the next guide :
-- **Coming soon:** Guide 3 - VMware Cloud Director on OVHcloud - Network - How to create an IPsec tunnel with VCD on OVHcloud ?.
 
-If you experience any network issues within VCD on OVHcloud, please read our guide "[VMware Cloud Director on OVHcloud - Network - Concepts](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts)".
+- **Coming soon:** Guide 3 - VMware Cloud Director on OVHcloud - Network - How to create an IPsec tunnel with VCD on OVHcloud ?
+
+If you experience any network issues within VCD on OVHcloud, please read our guide « [VMware Cloud Director on OVHcloud - Network - Concepts](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts) »
 
 If you require training or technical assistance in implementing our solutions, contact your sales representative or [click here](/links/professional-services) for a quote and request a custom analysis of your project from our Professional Services team experts.
 
