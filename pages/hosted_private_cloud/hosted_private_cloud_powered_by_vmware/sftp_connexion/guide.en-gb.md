@@ -8,7 +8,7 @@ updated: 2024-09-17
 >
 > **This procedure is now deprecated**.
 >
-> To upload files to your databases, please use the method described in this guide: [Uploading files to the VMware vSphere on OVHcloud datastore](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_datastore_upload).
+> To upload files to your datastore, please use the method described in this guide: [Uploading files to the VMware vSphere on OVHcloud datastore](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_datastore_upload).
 >
 
 ## Objective

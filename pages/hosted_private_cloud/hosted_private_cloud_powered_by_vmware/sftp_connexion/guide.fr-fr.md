@@ -1,14 +1,14 @@
 ---
 title: "Se connecter en SFTP"
 excerpt: "Apprenez comment vous connecter à votre VMware vSphere on OVHcloud en SFTP"
-updated: 2024-09-16
+updated: 2024-09-17
 ---
 
 > [!warning]
 > 
 > **Cette procédure est à présent déconseillée (*deprecated*)**.
 > 
-> Pour téléverser des fichiers dans vos banques de données, veuillez utiliser la méthode décrite dans ce guide : [Téléversement de fichiers depuis le Datastore VMware vSphere](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_datastore_upload).
+> Pour téléverser des fichiers dans vos datastores, veuillez utiliser la méthode décrite dans ce guide : [Téléversement de fichiers depuis le Datastore VMware vSphere](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_datastore_upload).
 >
 
 ## Objectif
