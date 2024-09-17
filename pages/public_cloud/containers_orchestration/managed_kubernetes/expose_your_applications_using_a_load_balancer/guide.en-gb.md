@@ -1,13 +1,13 @@
 ---
 title: Expose your applications using OVHcloud Public Cloud Load Balancer
 excerpt: "How to expose your applications hosted on Managed Kubernetes Service using the OVHcloud Public Cloud Load Balancer"
-updated: 2024-09-11
+updated: 2024-09-17
 ---
 
 > [!warning]
 >
-> Usage of the [Public Cloud Load Balancer](https://www.ovhcloud.com/en-gb/public-cloud/load-balancer/) with Managed Kubernetes Service (MKS) is now GA.
-> The LoadBalancer based on Octavia is not the default one yet. You must use the annotation `loadbalancer.ovhcloud.com/class: octavia` to deploy an Octavia LoadBalancer from your MKS cluster.
+> Usage of the [Public Cloud Load Balancer](https://www.ovhcloud.com/en-gb/public-cloud/load-balancer/) with Managed Kubernetes Service (MKS) is now in General Availability.
+> However this LoadBalancer (based on Octavia project) is not the default one yet for cluster running Kubernetes versions <1.31. For those clusters you must use the annotation `loadbalancer.ovhcloud.com/class: octavia` to deploy an Octavia LoadBalancer from your MKS cluster.
 >
 
 ## Objective
@@ -21,7 +21,7 @@ This guide uses some concepts that are specific to our Public Cloud Load Balance
 
 ## Requirements
 
-### Kubernetes version
+### Kubernetes version <a name="kube-versions"></a>
 
 To be able to deploy [Public Cloud Load Balancer](https://www.ovhcloud.com/en-gb/public-cloud/load-balancer/), your Managed Kubernetes Service must run or have been upgraded to the following patch versions:
 
@@ -32,6 +32,14 @@ To be able to deploy [Public Cloud Load Balancer](https://www.ovhcloud.com/en-gb
 | 1.28.8-1  >=        |
 | 1.29.3-3  >=        |
 | 1.30.2-1  >=        |
+
+Please note that for clusters running on those versions, you must use the annotation `loadbalancer.ovhcloud.com/class: octavia` to specify that you want to deploy [Public Cloud Load Balancer](https://www.ovhcloud.com/en-gb/public-cloud/load-balancer/) (based on Octavia project) for your MKS cluster.
+
+The following versions will use [Public Cloud Load Balancer](https://www.ovhcloud.com/en-gb/public-cloud/load-balancer/) as default load balancing solution, you do not need to specify any annotation:
+
+| Kubernetes versions |
+| ------------------- |
+| 1.31  >=            |
 
 ### Network prerequisite to expose your Load Balancers publicly
 
@@ -71,14 +79,10 @@ When exposing your load balancer publicly (public-to-public or public-to-private
 > Note: Each publicly exposed Load Balancer has its own Public Floating IP. Outgoing traffic doesn't consume OVHcloud Gateway bandwidth. ([except for Public-to-Public mode](#public-to-public-scenario))
 >
 
-> [!warning]
->
-> During the MKS-Public Cloud Load Balancer Beta (CCM), since the Public Cloud Load Balancer is already in General Availability phase, the Public Cloud Load Balancer usage as well as the other network components (Gateway & Floating IPs) will be billed.
->
 
 ## Instructions
 
-During the beta phase, if you want a Kubernetes load balancer service to be deployed using [Public Cloud Load Balancer](https://www.ovhcloud.com/en-gb/public-cloud/load-balancer/) rather than the historical [Loadbalancer for Kubernetes](https://www.ovhcloud.com/en-gb/public-cloud/load-balancer-kubernetes/) solution, you'll need to add the annotation: `loadbalancer.ovhcloud.com/class: "octavia"` on your Kubernetes Service manifest.
+Depending of the Kubernetes version your cluster is using, if you want to use a [Public Cloud Load Balancer](https://www.ovhcloud.com/en-gb/public-cloud/load-balancer/) rather than the historical [Loadbalancer for Kubernetes](https://www.ovhcloud.com/en-gb/public-cloud/load-balancer-kubernetes/) solution, you'll might need to add the annotation: `loadbalancer.ovhcloud.com/class: "octavia"` on your Kubernetes Service manifest. Please refer to the [versions matrix section](#kube-versions).
 
 Here's a simple example of how to use the Public Cloud Load Balancer
 
@@ -104,7 +108,7 @@ metadata:
   name: test-lb-service
   namespace: test-lb-ns
   annotations:
-    loadbalancer.ovhcloud.com/class: octavia
+    loadbalancer.ovhcloud.com/class: octavia //not required for cluster running kubernetes versions >= 1.31
     loadbalancer.ovhcloud.com/flavor: small
 spec:
   ports:
@@ -150,7 +154,7 @@ metadata:
   name: my-lb-service
   namespace: test-lb-ns
   annotations:
-    loadbalancer.ovhcloud.com/class: "octavia"
+    loadbalancer.ovhcloud.com/class: "octavia" //not required for cluster running kubernetes versions >= 1.31
     loadbalancer.ovhcloud.com/flavor: "medium" //optional, default = small
   labels:
     app: test-octavia
@@ -178,7 +182,7 @@ metadata:
   name: my-lb-service
   namespace: test-lb-ns
   annotations:
-    loadbalancer.ovhcloud.com/class: "octavia"
+    loadbalancer.ovhcloud.com/class: "octavia" //not required for cluster running kubernetes versions >= 1.31
     service.beta.kubernetes.io/openstack-internal-load-balancer: "true"
   labels:
     app: test-octavia
@@ -208,7 +212,7 @@ metadata:
   name: my-lb-service
   namespace: test-lb-ns
   annotations:
-    loadbalancer.ovhcloud.com/class: "octavia"
+    loadbalancer.ovhcloud.com/class: "octavia" //not required for cluster running kubernetes versions >= 1.31
     loadbalancer.ovhcloud.com/flavor: "medium" //optional, default = small
   labels:
     app: test-octavia
@@ -234,9 +238,8 @@ spec:
 ### Supported service annotations
 
 - `loadbalancer.ovhcloud.com/class`
-
-  During the Beta phase, it is mandatory to specify the class of the load balancer you want to create.
-  Authorized values: 'octavia' = Public Cloud Load Balancer, 'iolb' = Loadbalancer for Managed Kubernetes Service (will be deprecated in futur versions). Default value is 'iolb'.
+  Authorized values: 'octavia' = Public Cloud Load Balancer, 'iolb' = Loadbalancer for Managed Kubernetes Service (will be deprecated in futur versions).
+  If not specified, the default class of the MKS Kubernetes versions your are using will be applied, please refer to the [versions matrix section](#kube-versions).
 
 - `loadbalancer.ovhcloud.com/flavor`
 
@@ -350,7 +353,7 @@ spec:
 
 #### Resize your LoadBalancer
 
-There is no proper way to "resize" your loadbalancer yet (work in progress). The best alternative to change the flavor of your load balancer is to recreate a new Kubernetes Service that will use the same public IP as an existing one.
+There is no proper way to hot "resize" your loadbalancer yet (work in progress). The best alternative to change the flavor of your load balancer is to recreate a new Kubernetes Service that will use the same public IP as an existing one.
 You can find the complete HowTo and examples on our public Github repository: <https://github.com/ovh/public-cloud-examples>
 
 - First, make sure that the existing service is using the `loadbalancer.openstack.org/keep-floatingip` annotation. If it's not using it, the public Floating IP will be released (it can be added after the service creation).
@@ -370,7 +373,7 @@ test-lb-todel        LoadBalancer   10.3.107.18   141.94.215.240   80:30172/TCP 
   metadata:
     name: my-medium-lb
     annotations:
-      loadbalancer.ovhcloud.com/class: "octavia"
+      loadbalancer.ovhcloud.com/class: "octavia" //not required for cluster running kubernetes versions >= 1.31
       loadbalancer.ovhcloud.com/flavor: "medium"
     labels:
       app: demo-upgrade
@@ -418,7 +421,7 @@ annotations:
 
 ```yaml
 annotations:
-  loadbalancer.ovhcloud.com/class: "octavia"
+  loadbalancer.ovhcloud.com/class: "octavia" //not required for cluster running kubernetes versions >= 1.31, you can just remove the annotation.
 ```
 
 ##### Step 2 - Apply the change
@@ -446,7 +449,7 @@ kind: Service
 metadata:
   name: octavia-keepip-with-existing-ip
   annotations:
-    loadbalancer.ovhcloud.com/class: "octavia"
+    loadbalancer.ovhcloud.com/class: "octavia" //not required for cluster running kubernetes versions >= 1.31
     #loadbalancer.openstack.org/keep-floatingip: "true" # Useless, since the FIP was provided, the FIP will not be managed by the MKS cluster
 spec:
   loadBalancerIP: 1.2.3.4
@@ -474,7 +477,7 @@ kind: Service
 metadata:
   name: octavia-with-fixed-vip
   annotations:
-    loadbalancer.ovhcloud.com/class: "octavia"
+    loadbalancer.ovhcloud.com/class: "octavia"    //not required for cluster running kubernetes versions >= 1.31
     loadbalancer.openstack.org/port-id: "<openstack-port-uuid>"
 spec:
   type: LoadBalancer
@@ -497,7 +500,7 @@ kind: Service
 metadata:
   name: octavia-ip-restrictions
   annotations:
-    loadbalancer.ovhcloud.com/class: "octavia"
+    loadbalancer.ovhcloud.com/class: "octavia"    //not required for cluster running kubernetes versions >= 1.31
 spec:
   loadBalancerSourceRanges:
   - 1.2.3.4/32
@@ -521,7 +524,7 @@ kind: Service
 metadata:
   name: octavia-basic-shared
   annotations:
-    loadbalancer.ovhcloud.com/class: "octavia"
+    loadbalancer.ovhcloud.com/class: "octavia"    //not required for cluster running kubernetes versions >= 1.31
     loadbalancer.openstack.org/load-balancer-id: "<existing-octavia-uuid>"
 spec:
   type: LoadBalancer
