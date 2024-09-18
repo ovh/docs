@@ -1,7 +1,7 @@
 ---
-title: "Configurar el registro DNS inverso de un VPS"
-excerpt: Cómo activar la resolución inversa DNS
-updated: 2024-06-10
+title: "Cómo configurar el registro DNS inverso de su servidor (registro PTR)"
+excerpt: Cómo implementar la resolución inversa DNS de su dirección IP desde el área de cliente de OVHcloud
+updated: 2024-09-17
 ---
 
 > [!primary]
@@ -10,43 +10,47 @@ updated: 2024-06-10
 
 ## Objetivo
 
-El registro **inverso** (*rDNS*) es el complemento de la resolución "clásica" de los DNS que permite convertir un dominio en una dirección IP (registro de tipo **A**). Una solicitud de este tipo permite resolver una dirección IP en el dominio (registro de tipo **PTR**). Esto significa que las peticiones DNS a la dirección IP correspondiente devolverán un dominio.
+El registro inverso (*rDNS*) es el complemento de la resolución DNS "*forward*" que permite resolver los nombres de dominio en direcciones IP. Con el registro DNS inverso, una dirección IP puede resolverse en el nombre de dominio (o nombre de host) al que está conectada. Esto significa que las consultas DNS de la dirección IP asociada devolverán este nombre de dominio.
 
-La configuración de la resolución **inversa DNS** de un VPS resulta especialmente útil para el envío de mensajes de correo. Si la dirección IP de su servidor de envío se resuelve correctamente en su nombre de dominio, se reducirá el riesgo de que sus mensajes sean rechazados por un sistema de protección contra el spam.
+La configuración del registro DNS inverso de un servidor es especialmente útil cuando se envían mensajes de correo. La validación de un servidor de correo por los sistemas de protección antispam mejora si una petición DNS de la dirección IP se resuelve correctamente.
 
-**Esta guía explica cómo configurar el registro DNS inverso para la dirección o direcciones IP de un VPS.**
+Esta guía explica cómo configurar el registro DNS inverso de su dirección IP desde el área de cliente.**
 
 ## Requisitos
 
-- Tener un [VPS](https://www.ovhcloud.com/es/vps/) en su cuenta de OVHcloud.
-- Un nombre de dominio con su campo `A` que apunta al VPS
-- Tienes acceso a tu [Panel de configuración de OVHcloud](/links/manager).
+- Una dirección IP asociada a un servicio de su cuenta de OVHcloud
+- Un dominio con su registro `A` asociado a su servicio
+- Estar conectado a su [área de cliente de OVHcloud](/links/manager)
 
 ## Procedimiento
 
-Conéctese al [Panel de configuración de OVHcloud](/links/manager), acceda a la sección `Bare Metal Cloud`{.action} y haga clic en `IP`{.action} en el menú de la izquierda.
+Conéctese a su [área de cliente de OVHcloud](/links/manager), acceda a la sección `Bare Metal Cloud`{.action} y abra `Network`{.action}. Haga clic en `IP`{.action}.
 
-El menú desplegable **Mis direcciones IP públicas y servicios asociados** le permite filtrar sus servicios por categoría.
+Los menús desplegables de la sección **Mis direcciones IP públicas y servicios asociados** le permiten filtrar los elementos de la tabla para los servicios y encontrar rápidamente la dirección IP deseada.
 
-![Reverse IP](images/filteripvps.png){.thumbnail}
+![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/filterip.png){.thumbnail}
 
-Haga clic en `...`{.action} en la línea de la dirección IP correspondiente y seleccione `Cambiar el registro inverso`{.action}.
+Haga clic en `...`{.action} en la línea de la dirección IP correspondiente y seleccione `Modificar el registro inverso`{.action}.
 
-![Registro inverso](images/modifyreverse.png){.thumbnail}
+![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/modifyreverse.png){.thumbnail}
 
-En la nueva ventana, introduzca el registro inverso y haga clic en `Confirmar`{.action}.
+En la nueva ventana, introduzca el registro inverso y haga clic en `Aceptar`{.action}.
 
-![Registro inverso](images/enterreverse.png){.thumbnail}
+![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/enterreverse.png){.thumbnail}
 
-También puede editar el registro inverso directamente a través del icono de la columna **inversa** de la tabla.
+También puede editar el registro inverso directamente a través del icono con forma de pluma de la columna **registro inverso** de la tabla.
 
 > [!primary]
 >
-Si la modificación no funciona como se esperaba, compruebe que el registro `A` esté bien configurado en la zona DNS del dominio. Atención: La modificación de la [zona DNS](/pages/web_cloud/domains/dns_zone_edit) puede tardar hasta 24 horas si solo ha cambiado recientemente el registro `A`.
+> Si el cambio no funciona según lo previsto, compruebe que el registro A esté correctamente configurado en la zona DNS del dominio. La aplicación de los cambios en la zona DNS puede tardar hasta 24 horas en caso de que acabe de modificar el registro `A`.
+>
+> Si el dominio está gestionado por OVHcloud como agente registrador **y utiliza los servidores DNS de OVHcloud**, consulte la guía [esta guía](/pages/web_cloud/domains/dns_zone_edit).
 >
 
-## Más información <a name="gofurther"></a>
+## Más información
 
-[Primeros pasos con un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
+[Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
+
+[Modificar los servidores DNS de un dominio de OVHcloud](/pages/web_cloud/domains/dns_server_edit)
 
 Interactúe con nuestra [comunidad de usuarios](/links/community).
