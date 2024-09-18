@@ -1,7 +1,7 @@
 ---
 title: "Logs Data Platform - Collecter les logs VMware on OVHcloud"
 excerpt: "Découvrez comment souscrire un abonnement et activer le log forwarder afin de transférer les journaux VMware on OVHcloud vers un stream Logs Data Platform"
-updated: 2024-09-16
+updated: 2024-09-18
 ---
 
 > [!primary]
@@ -183,10 +183,10 @@ Utilisez les appels API suivants pour établir la liste des abonnements de votre
 Pour récupérer le **streamId** de votre compte LDP, consultez le guide « [Quick start for Logs Data Platform (EN)](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) »
 
 > [!api]
-> 
+>
 > @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/log/subscription
 >
->
+
 > **Paramètres** :
 >
 > - `serviceName` : Nom du service vSphere managé, (ex : `pcc-XXX-XXX-XXX-XXX`).
