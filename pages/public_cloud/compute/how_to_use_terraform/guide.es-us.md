@@ -14,7 +14,7 @@ The open source tool Terraform was developed to make the creation of complex clo
 
 As an example, this video shows how to easily scale the number of instances while keeping your existing infrastructure by changing only one line of code:
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TFfKd24rzvE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/TFfKd24rzvE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **This guide explains how to use Terraform with the Public Cloud by way of practical examples.**
 

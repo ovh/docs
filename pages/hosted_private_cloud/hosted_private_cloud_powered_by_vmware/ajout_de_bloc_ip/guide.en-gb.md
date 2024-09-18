@@ -58,7 +58,7 @@ Once you have confirmed the final step, you will receive the purchase order for 
 
 ### Migrate an IP block between two Hosted Private Cloud solutions
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Gemao3Fd7rI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Gemao3Fd7rI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 To migrate an IP block, you will need to move the blocks manually via the OVHcloud APIv6.
 

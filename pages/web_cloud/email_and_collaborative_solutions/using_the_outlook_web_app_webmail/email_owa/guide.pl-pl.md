@@ -116,7 +116,7 @@ Aby utworzyć nowy folder, kliknij prawym przyciskiem myszy nazwę adresu e-mail
 
 #### Tworzenie reguł skrzynki odbiorczej
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Aby zarządzać regułami, kliknij ikonę koła zębatego u góry, a następnie kliknij pozycję `Opcje`{.action}.
 
@@ -136,7 +136,7 @@ Szczegółowe instrukcje tworzenia reguł skrzynki odbiorczej zawiera przewodnik
 
 #### Zablokuj nadawcę
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UeNdpFwdXm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/UeNdpFwdXm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Kliknij ikonę koła zębatego w prawym górnym rogu, a następnie kliknij przycisk `Opcje`{.action}. W lewej kolumnie, po drzewie "Mail" w "Konta", a następnie "Zablokuj lub autoryzuj".
 
@@ -162,7 +162,7 @@ Zostanie wyświetlona nowa strona, na której można dodać nowy kontakt, utworz
 
 ### Zmiana hasła
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Po zalogowaniu do interfejsu OWA możesz zmienić hasło do konta. W tym celu kliknij ikonę koła zębatego u góry, a następnie kliknij pozycję `Opcje`{.action}.
 

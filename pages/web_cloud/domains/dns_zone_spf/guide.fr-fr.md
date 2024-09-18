@@ -125,7 +125,7 @@ Dans la fenêtre qui s’affiche, plusieurs enregistrements DNS vous sont propos
 
 #### Utiliser l'enregistrement SPF OVHcloud <a name="spfrecordovhcloud"></a>
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-4dD_ssjxNI?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/-4dD_ssjxNI?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Vous avez choisi l'enregistrement `SPF`{.action} et souhaitez appliquer la configuration OVHcloud. Celle-ci permet d'inclure l'ensemble des serveurs e-mail sortants OVHcloud pour les offres e-mail suivantes :
 

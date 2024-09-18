@@ -14,7 +14,7 @@ updated: 2024-03-21
 
 **Diese Anleitung erklärt, wie Sie Ihre Website mithilfe von 1-Klick-Modulen installieren.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZrYmmPbMl4I?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/ZrYmmPbMl4I?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Voraussetzungen
 

@@ -15,7 +15,7 @@ Bridged networking can be used to configure your virtual machines. Some tweaking
 
 **This guide will explain how to use network bridging to configure internet access for your virtual machines.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/TZZbPe9hCOk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/TZZbPe9hCOk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Requirements
 

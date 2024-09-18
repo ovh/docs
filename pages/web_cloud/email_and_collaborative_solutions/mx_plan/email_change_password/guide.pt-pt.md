@@ -77,7 +77,7 @@ A modificação da sua palavra-passe através do webmail está disponível para 
 > A oferta **Emails MXplan (versão histórica)** utiliza o webmail Roundcube, a alteração da password faz-se unicamente [através da Área de Cliente](#controlpanel).
 >
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Aceda à página "[Webmail](https://www.ovhcloud.com/pt/mail/)". Indique o seu endereço de e-mail completo e a respetiva palavra-passe. De seguida, clique no botão `Ligação`{.action}. 
 

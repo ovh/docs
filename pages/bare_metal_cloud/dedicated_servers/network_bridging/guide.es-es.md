@@ -19,7 +19,7 @@ La puesta en red en modo bridge puede utilizarse para configurar sus máquinas v
 
 **Esta guía explica cómo utilizar el modo bridge para configurar el acceso a internet para sus máquinas virtuales.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/TZZbPe9hCOk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/TZZbPe9hCOk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Requisitos
 

@@ -77,7 +77,7 @@ Changing your password via webmail is available for OVHcloud email offers using 
 > The email solution **MX Plan legacy** uses Roundcube webmail. You can only change your password [via the OVHcloud Control Panel](#controlpanel).
 >
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Go to the [webmail page](https://www.ovhcloud.com/en-ie/mail/). Enter your full email address and password, then click the `Login`{.action} button. 
 

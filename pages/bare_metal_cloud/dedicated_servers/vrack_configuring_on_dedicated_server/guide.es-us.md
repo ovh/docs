@@ -14,7 +14,7 @@ El vRack (rack virtual) de OVHcloud permite agrupar virtualmente varios servidor
 
 **Esta guía explica cómo configurar el vRack en varios servidores dedicados.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZA7IsbDdAmc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/ZA7IsbDdAmc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Requisitos
 

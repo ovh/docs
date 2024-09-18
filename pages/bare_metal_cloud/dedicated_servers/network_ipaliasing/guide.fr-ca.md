@@ -15,7 +15,7 @@ L'alias d'IP (*IP aliasing* en anglais) est une configuration spéciale du rése
 
 **Ce guide vous explique comment réaliser cet ajout.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/s1qDqQ0p07Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/s1qDqQ0p07Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 > [!warning]
 >
