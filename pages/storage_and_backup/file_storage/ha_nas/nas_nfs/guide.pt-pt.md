@@ -1,7 +1,7 @@
 ---
 title: "Montagem de NAS-HA através de NFS"
 excerpt: "Saiba como conectar-se ao NAS-HA através de NFS"
-updated: 2024-09-04
+updated: 2024-09-18
 ---
 
 > [!primary]
@@ -295,6 +295,7 @@ XX.XX.XX.XX:/zpool-XXXXXX/DIR on /mnt type nfs4 (rw,relatime,vers=4.2,rsize=1310
 
 - Uma vez que o NFSv3 não tem qualquer estado, os desempenhos com NFSv3 podem ser claramente melhores para certas cargas de trabalho, em especial para as cargas de trabalho que fazem inúmeras chamadas de tipo OPEN, CLOSE, SETATTR e GETATTR.
 - Se aloja na sua partilha NFS uma base de dados, tenha em conta que, em caso de desconexões de rede, o mecanismo de bloqueios específico do protocolo NFS v4.x pode provocar a interrupção da sua aplicação (consulte este rfc para mais pormenores: <https://datatracker.ietf.org/doc/rfc3530/>).
+- Se aloja máquinas virtuais VMware na sua partilha NFS, tenha em conta que o mecanismo de bloqueios integrado na versão NFSv4.x não é compatível com o modo de clustering implementado no seu NAS-HA (cluster em modo ativo/passivo explicado em [esta página](/links/storage/nas-ha)). É imperativo que utilize o protocolo NFSv3 para que não perca o acesso ao seu datastore durante um incidente que afete o servidor principal ou durante uma operação de manutenção programada.
 
 ### Melhorar o desempenho de leitura alterando o atributo read_ahead_kb
 
