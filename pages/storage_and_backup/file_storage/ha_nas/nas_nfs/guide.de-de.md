@@ -1,7 +1,7 @@
 ---
 title: HA-NAS über NFS mounten
 excerpt: "Erfahren Sie hier, wie sich mit Ihrem HA-NAS unter Verwendung einer NFS-Freigabe verbinden"
-updated: 2024-09-04
+updated: 2024-09-18
 ---
 
 > [!primary]
@@ -296,6 +296,7 @@ XX.XX.XX.XX:/zpool-XXXXXX/DIR on /mnt type nfs4 (rw,relatime,vers=4.2,rsize=1310
 
 - Da NFSv3 statusfrei ist, kann die Leistung mit NFSv3 bei bestimmten Arbeitslasten deutlich besser sein, insbesondere bei Arbeitslasten, die viele Aufrufe wie OPEN, CLOSE, SETATTR und GETATTR ausführen.
 - Wenn Sie eine Datenbank auf Ihrer NFS-Freigabe hosten, beachten Sie, dass der NFSv4.x-spezifische Sperrmechanismus bei Netzwerkausfällen dazu führen kann, dass die Anwendung nicht mehr reagiert (weitere Informationen finden Sie in diesem RFC: <https://datatracker.ietf.org/doc/rfc3530/>).
+- Wenn Sie VMware VMs auf Ihrer NFS-Freigabe hosten, beachten Sie, dass der in NFSv4.x integrierte Sperrmechanismus nicht mit dem auf Ihrem NAS-HA implementierten Clustering-Modus kompatibel ist (Active/Passive Cluster siehe [diese Seite](/links/storage/nas-ha)). Sie müssen deshalb unbedingt das NFSv3 Protokoll verwenden, da der Zugriff auf Ihren Datastore bei einer Störung des Hauptservers oder bei geplanten Wartungsarbeiten verloren gehen kann.
 
 ### Verbesserung der Leseleistung durch Ändern des Attributs read_ahead_kb
 
