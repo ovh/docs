@@ -151,7 +151,7 @@ Récupérez le `streamId` et sauvegardez-le (copier-coller) dans un éditeur de 
 
 Nous allons voir dans l'étape suivante comment attacher votre abonnement vSphere managé à un stream LDP temporaire.
 
-### Étape 3 - Souscription de l'abonnement Logs Data Platform pour VMware on OVHcloud
+### Étape 3 - Créer un abonnement logs pour VMware on OVHcloud
 
 > [!warning]
 > Pour disposer d'une souscription Logs Data Platform active avec VMware on OVHcloud, vous devez avoir un stream actif. 
