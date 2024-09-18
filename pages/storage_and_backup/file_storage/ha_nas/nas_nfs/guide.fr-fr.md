@@ -281,7 +281,7 @@ XX.XX.XX.XX:/zpool-XXXXXX/DIR on /mnt type nfs4 (rw,relatime,vers=4.2,rsize=1310
 - `hard` : définit le comportement de récupération du client NFS après l'expiration d'une requête, de sorte que les requêtes sont relancées indéfiniment jusqu'à ce que le serveur NAS-HA réponde. cette option vous garantit l'intégrité des données.
 - `timeo=150` : définit la valeur de délai d'attente que le client NFS utilise pour attendre une réponse avant de relancer une requête NFS. Utilisez une valeur d'au moins 150, ce qui équivaut à 15 secondes, pour éviter les baisses de performance.
 - `retrans=2` : définit à 2 le nombre de fois que le client NFS lance une requête avant de tenter une action de récupération.
-- `tcp` : pour accélérer le montage du système de fichiers en NFS v3 (pas nécessaire pour NFSv4.x qui utilise uniquement TCP).
+- `tcp` : pour accélérer le montage du système de fichiers en NFS v3 (pas nécessaire pour NFS v4.x qui utilise uniquement TCP).
 - `_netdev` : lorsque cette option est présente dans le fichier /etc/fstab, elle empêche l'OS du client d'essayer de monter le système de fichiers NFS tant que le réseau n'a pas été activé.
 - `nofail` : si l'OS de votre client doit pouvoir démarrer quel que soit l'état de votre système de fichiers NFS, ajoutez l'option `nofail`.
 - `actimeo=30` : la spécification `actimeo` définit tous les paramètres `acregmin`, `acregmax`, `acdirmin` et `acdirmax` à la même valeur. L'utilisation d'une valeur inférieure à 30 secondes peut entraîner une dégradation du niveau de performance, car les caches d'attributs des fichiers et des répertoires expirent trop rapidement.
@@ -291,7 +291,9 @@ XX.XX.XX.XX:/zpool-XXXXXX/DIR on /mnt type nfs4 (rw,relatime,vers=4.2,rsize=1310
 ### Forcer l'utilisation de NFSv3 dans certains cas
 
 - Étant donné que NFSv3 est sans état, les performances avec NFSv3 peuvent être nettement meilleures pour certaines charges de travail, en particulier pour les charges de travail qui font énormément d'appels de type OPEN, CLOSE, SETATTR et GETATTR.
-- Si vous hébergez sur votre partage NFS une base de données, sachez qu'en cas de déconnexions réseaux le mécanisme de verrous spécifique au protocole NFS v4.x peut provoquer un arrêt de votre application (consultez cette rfc pour plus de détails : <https://datatracker.ietf.org/doc/rfc3530/>).
+- Si vous hébergez sur votre partage NFS une base de données, sachez qu'en cas de déconnexions réseaux le mécanisme de verrous spécifique au protocole NFSv4.x peut provoquer un arrêt de votre application (consultez cette rfc pour plus de détails : <https://datatracker.ietf.org/doc/rfc3530/>).
+- Si vous hébergez sur votre partage NFS des machines virtuelles VMware sachez que le mécanisme de verrou intégré à la version NFSv4.x n’est pas compatible avec le mode de clustering implémenté sur votre NAS-HA (cluster en mode actif/passif expliqué sur cette page https://www.ovhcloud.com/fr/storage-solutions/nas-ha/)
+Vous devez donc impérativement utiliser le protocole NFSv3 sous peine d’avoir une perte d’accès à votre datastore lors d’un incident impactant le serveur principal ou lors d’une opération de maintenance programmée.
 
 ### Améliorer les performances de lecture en modifiant l'attribut read_ahead_kb
 
