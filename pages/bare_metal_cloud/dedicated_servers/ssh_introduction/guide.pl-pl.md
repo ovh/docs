@@ -14,7 +14,7 @@ Protokół komunikacji SSH (Secure Shell) jest głównym narzędziem do tworzeni
 
 **Niniejszy przewodnik wyjaśnia, jak zabezpieczyć dostęp do serwera za pomocą SSH.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gi7JqUvcEt0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/gi7JqUvcEt0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 > [!warning]
 > OVHcloud udostępnia Ci usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywa na Ciebie. W związku z tym to do Ciebie należy zapewnienie prawidłowego funkcjonowania systemu.

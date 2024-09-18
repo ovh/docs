@@ -12,7 +12,7 @@ Consultez nos guides « [Tout savoir sur les serveurs DNS](/pages/web_cloud/doma
 
 **Découvrez comment modifier les serveurs DNS pour votre nom de domaine OVHcloud en 3 étapes.**
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Prérequis
 

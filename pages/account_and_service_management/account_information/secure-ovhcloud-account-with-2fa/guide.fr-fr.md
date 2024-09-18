@@ -33,7 +33,7 @@ Ce guide vous permettra de :
 - [Connaître les démarches si votre téléphone/tablette/clé est perdu(e) / volé(e) / endommagé(e)](#lost-device)
 - [Savoir comment désactiver complètement la double authentification](#desactivation)
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/odO58c4gJfc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/odO58c4gJfc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Prérequis
 

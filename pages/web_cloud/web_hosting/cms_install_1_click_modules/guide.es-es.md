@@ -14,7 +14,7 @@ Los módulos en 1 clic permiten instalar un sitio web fácil y rápidamente (sin
 
 **Descubra cómo instalar su sitio web a través de nuestros "módulos en 1 clic".**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZrYmmPbMl4I?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/ZrYmmPbMl4I?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Requisitos
 

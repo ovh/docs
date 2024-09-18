@@ -58,7 +58,7 @@ Po potwierdzeniu ostatniego etapu otrzymasz formularz zamówienia na blok IP. Je
 
 ### Przenoszenie bloku IP między dwiema usługami Hosted Private Cloud
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Gemao3Fd7rI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Gemao3Fd7rI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Migracja bloku IP wymaga ręcznego przeniesienia bloków za pośrednictwem APIv6 OVHcloud.
 

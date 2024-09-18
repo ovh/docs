@@ -38,7 +38,7 @@ Click the `...`{.action} button, then click `Edit`{.action}.<br><br>
 
 Changing your password via webmail is available for OVHcloud email offer using **OWA** (**O**utlook **W**eb **A**pp):
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Go to the [webmail page](https://www.ovhcloud.com/en-au/mail/). Enter your full email address and password, then click the `Login`{.action} button. 
 

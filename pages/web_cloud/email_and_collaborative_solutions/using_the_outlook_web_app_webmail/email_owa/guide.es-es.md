@@ -112,7 +112,7 @@ Para crear una carpeta nueva, haga clic derecho sobre el nombre de su dirección
 
 #### Crear reglas de la bandeja de entrada
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xnq6wvANUFs?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/xnq6wvANUFs?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Para gestionar las reglas, haga clic en el símbolo de engranaje en la parte superior, y después en`Opciones`{.action}.
 
@@ -132,7 +132,7 @@ Para obtener instrucciones más detalladas sobre la creación de reglas de la ba
 
 #### Bloquear un remitente
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/2jia2s1_oIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/2jia2s1_oIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Haga clic en el símbolo de engranaje en la esquina superior derecha y seleccione `Opciones`{.action}. En la columna de la izquierda, siga el árbol "Correo" en "Cuentas" > "Bloquear o autorizar".
 
@@ -158,7 +158,7 @@ En la página que aparece, puede añadir nuevos contactos, crear una lista de co
 
 ### Cambiar la contraseña
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xnq6wvANUFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/xnq6wvANUFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Puede cambiar la contraseña de su cuenta cuando haya iniciado sesión en OWA. Para ello, haga clic en el símbolo de engranaje en la parte superior, y después en`Opciones`{.action}.
 
