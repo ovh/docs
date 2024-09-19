@@ -1,7 +1,7 @@
 ---
 title: "Usare snapshot su un VPS"
 excerpt: "Scopri come abilitare e utilizzare l’opzione Snapshot nello Spazio Cliente OVHcloud"
-updated: 2024-04-15
+updated: 2024-09-18
 ---
 
 > [!primary]
@@ -30,11 +30,16 @@ Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Bare Metal Clo
 
 ### Step 1: Attivare l’opzione snapshot
 
-Partendo dalla scheda `Home`{.action}, scorri verso il basso fino al riquadro "Riassunto opzioni". Se "Snapshot" è già in stato "Attivato", passa direttamente allo Step 2. Se "Snapshot" non è ancora attivo, clicca su `...`{.action} accanto all’opzione "Snapshot" e nel menu di scelta rapida clicca su `Ordina`{.action}.
+Partendo dalla scheda `Home`{.action}, scorri verso il basso fino al riquadro **Riassunto opzioni**.  
+Se "Snapshot" è già in stato "Attivato", passa direttamente allo Step 2. Se "Snapshot" non è ancora attivo, clicca su `...`{.action} accanto all’opzione "Snapshot" e nel menu di scelta rapida clicca su `Ordina`{.action}.
 
 ![snapshotvps](images/snapshot_vps_step1b.png){.thumbnail}
 
 Nello step successivo, esamina le informazioni sul prezzo, quindi clicca su `Ordina`{.action}. Sarai guidato attraverso la procedura per l’ordine e riceverai una email di conferma.
+
+Per disattivare l’opzione di servizio, clicca sul pulsante `...`{.action} accanto a "Snapshot" e seleziona `Disattiva`{.action} nel menu contestuale.
+
+![snapshotvps](images/snapshot_vps_cancel.png){.thumbnail}
 
 ### Step 2: Acquisire uno snapshot
 

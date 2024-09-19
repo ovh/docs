@@ -1,7 +1,7 @@
 ---
 title: "Utiliser le snapshot"
 excerpt: "Découvrez comment activer et utiliser l’option snapshot depuis l’espace client OVHcloud"
-updated: 2024-04-15
+updated: 2024-09-18
 ---
 
 ## Objectif
@@ -28,11 +28,16 @@ Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous da
 
 ### Étape 1 : souscrire l'option snapshot
 
-Depuis l'onglet `Accueil`{.action}, descendez jusqu'au menu « Résumé des options ». Si « Snapshot » est déjà sur l'état « Activé », passez directement à l'étape 2. Si « Snapshot » n'est pas encore activé, cliquez sur `...`{.action} à droite de l'option « Snapshot » puis cliquez sur `Commander`{.action} dans le menu qui s'affiche.
+Depuis l'onglet `Accueil`{.action}, descendez jusqu'au menu « Résumé des options ».  
+Si « Snapshot » est déjà sur l'état « Activé », passez directement à l'étape 2. Si « Snapshot » n'est pas encore activé, cliquez sur `...`{.action} à droite de l'option « Snapshot » puis cliquez sur `Commander`{.action} dans le menu qui s'affiche.
 
 ![snapshotvps](images/snapshot_vps_step1b.png){.thumbnail}
 
 Veuillez prendre connaissance des informations de tarification de cette option, puis cliquez sur `Commander`{.action}. Vous serez orienté dans le processus de commande et recevrez un e-mail de confirmation.
+
+Pour résilier l'option de service, cliquez sur le bouton `...`{.action} à côté de « Snapshot » et choisissez `Résilier`{.action} dans le menu contextuel.
+
+![snapshotvps](images/snapshot_vps_cancel.png){.thumbnail}
 
 ### Étape 2 : prendre un snapshot
 
