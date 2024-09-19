@@ -100,7 +100,7 @@ Cliquez sur les onglets ci-dessous pour afficher les détails de cette section.
 >>
 > IPv6 / Gateway
 >> 
->> Retrouvez ici l'adresse IPv6 publique et l'adresse de la passerelle associée. Celles-ci sont automatiquement attachées au VPS lors de l'installation. Retrouvez plus d'informations dans notre guide « [Configurer l'IPv6 sur un serveur VPS ](/pages/bare_metal_cloud/virtual_private_servers/configure-ipv6) ».
+>> Retrouvez ici l'adresse IPv6 publique et l'adresse de la passerelle associée. Celles-ci sont automatiquement attachées au VPS lors de l'installation. Retrouvez plus d'informations dans [ce guide](/pages/bare_metal_cloud/virtual_private_servers/configure-ipv6).
 >> 
 > Secondary DNS
 >>
