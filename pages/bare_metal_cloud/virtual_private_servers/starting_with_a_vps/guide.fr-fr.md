@@ -350,7 +350,7 @@ Le passage de votre VPS sur le web passe généralement par l’attribution d’
 
 #### Sécuriser un nom de domaine avec un certificat SSL
 
-Une fois votre VPS configuré, nous vous recommendons de sécuriser votre nom de domaine ainsi que votre site web. Cela nécessite un certificat SSL, permettant l'accès à Internet de votre VPS via *HTTPS* au lieu de *HTTP* non sécurisé.
+Une fois votre VPS configuré, nous vous recommandons de sécuriser votre nom de domaine ainsi que votre site web. Cela nécessite un certificat SSL, permettant l'accès à Internet de votre VPS via *HTTPS* au lieu de *HTTP* non sécurisé.
 
 Ce certificat SSL peut être installé manuellement, directement sur le VPS. Reportez-vous à la documentation officielle de votre distribution VPS.
 
