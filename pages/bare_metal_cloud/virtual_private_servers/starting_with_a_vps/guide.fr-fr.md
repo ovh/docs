@@ -123,7 +123,7 @@ Retrouvez toutes les informations sur les solutions de sauvegarde disponibles po
 
 #### Abonnement
 
-Ces sections présentent les informations les plus importantes concernant la facturation de votre service. Retrouvez toutes les informations sur ce sujet dans la section « [Gérer la facturation, les paiements et les services](/products/account-and-service-management-managing-billing-payments-and-services) » de notre documentation.
+Ces sections présentent les informations les plus importantes concernant la facturation de votre service. Retrouvez toutes les informations sur ce sujet dans la [documentation correspondante](/products/account-and-service-management-managing-billing-payments-and-services).
 
 <a name="hometab"></a>
 
