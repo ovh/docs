@@ -109,7 +109,7 @@ Agora que adicionou os domínios desejados ao seu serviço, pode configurar as s
 
 Relembramos que todos os endereços criados no seu serviço poderão visualizar no diretório o conjunto dos endereços deste serviço, incluindo os que possuem um nome de domínio diferente.
 
-Depois de configurar as contas, só precisa de as utilizar. Para isso, a OVHcloud coloca à sua disposição o **webmail** acessível no endereço <https://www.ovh.com/pt/mail/>. Para otimizar a utilização do seu endereço num software, certifique-se de que este é compatível com o serviço. 
+Depois de configurar as contas, só precisa de as utilizar. Para isso, a OVHcloud coloca à sua disposição o **webmail** acessível no endereço [Webmail](/links/web/email). Para otimizar a utilização do seu endereço num software, certifique-se de que este é compatível com o serviço. 
 
 Se pretender configurar o seu endereço de e-mail num software de correio eletrónico ou periférico, como um smartphone ou um tablet, ou obter ajuda relativamente às funcionalidades do seu serviço de e-mail, consulte os nossos documentos acessíveis a partir das páginas [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) e [E-mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro).
 

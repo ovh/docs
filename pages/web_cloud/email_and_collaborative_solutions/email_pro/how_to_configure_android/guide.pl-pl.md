@@ -103,7 +103,7 @@ Po zakończeniu konfiguracji konto jest gotowe do użytku! Możesz teraz wysyła
 
 > [!success]
 >
-> OVHcloud oferuje aplikację internetową dostępną pod adresem <https://www.ovhcloud.com/pl/mail/> umożliwiającą korzystanie z Twojego konta e-mail przy użyciu wyszukiwarki. Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail.
+> OVHcloud oferuje aplikację internetową dostępną pod adresem [Webmail](/links/web/email) umożliwiającą korzystanie z Twojego konta e-mail przy użyciu wyszukiwarki. Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail.
 
 ### Parametry POP, IMAP i SMTP
 

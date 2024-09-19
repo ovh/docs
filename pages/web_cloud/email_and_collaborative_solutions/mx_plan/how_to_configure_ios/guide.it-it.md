@@ -70,7 +70,7 @@ Se hai necessità di inserire manualmente le preferenze per il tuo account, ecco
 
 Una volta configurato l’indirizzo email, non ti resta che utilizzarlo! A partire da questo momento puoi inviare e ricevere messaggi.
 
-OVHcloud propone un'applicazione Web che permette di accedere al tuo indirizzo email dal browser all'indirizzo <https://www.ovh.it/mail/>corrispondente. e accessibile con le credenziali del tuo account.
+OVHcloud propone un'applicazione Web che permette di accedere al tuo indirizzo email dal browser all'indirizzo [Webmail](/links/web/email)corrispondente. e accessibile con le credenziali del tuo account.
 
 > [!primary]
 >

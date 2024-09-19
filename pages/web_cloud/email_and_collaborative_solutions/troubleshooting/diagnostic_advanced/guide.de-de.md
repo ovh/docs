@@ -57,7 +57,7 @@ Wenn Sie [ein E-Mail-Angebot von OVHcloud](/links/web/emails) abonniert haben un
 
 Um sicherzustellen, dass die Fehlfunktion nicht auf einen Konfigurationsfehler zurückzuführen ist, führen Sie über OVHcloud Webmail einen Test zum Senden und Empfangen durch. Wenn alles korrekt funktioniert, überprüfen Sie die Konfiguration Ihrer Software mithilfe unserer Anleitungen.
 
-Gehen Sie dazu über einen Webbrowser auf die Adresse <https://www.ovh.com/de/mail/>.
+Gehen Sie dazu über einen Webbrowser auf die Adresse [Webmail](/links/web/email).
 
 ![webmail](images/webmail.png){.thumbnail}
 

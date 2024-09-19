@@ -91,7 +91,7 @@ Una volta inserite tutte le informazioni, seleziona `Connessione protetta TLS (c
 
 ![Email Pro](images/configuration-gmail-web-step5.png){.thumbnail}
 
-Per confermare l’operazione è necessario inserire il codice di conferma inviato al tuo indirizzo Email Pro OVHcloud. Per recuperarlo, accedi all’account dalla nostra interfaccia disponibile all’indirizzo <https://www.ovh.it/mail/>
+Per confermare l’operazione è necessario inserire il codice di conferma inviato al tuo indirizzo Email Pro OVHcloud. Per recuperarlo, accedi all’account dalla nostra interfaccia disponibile all’indirizzo [Webmail](/links/web/email)
 
 Una volta effettuata la convalida, l’indirizzo email OVHcloud compare nella scheda `Account e Importazione`{.action} a cui ti sei connesso all’inizio della procedura.
 
@@ -103,13 +103,9 @@ Per inviare email dall’account OVHcloud è necessario scegliere l’indirizzo 
 
 ![Email Pro](images/configuration-gmail-web-step6.png){.thumbnail}
 
-i ricordiamo che per accedere all’account Email Pro OVHcloud è sempre possibile utilizzare la nostra interfaccia disponibile all’indirizzo <https://www.ovh.it/mail/>.
+i ricordiamo che per accedere all’account Email Pro OVHcloud è sempre possibile utilizzare la nostra interfaccia disponibile all’indirizzo [Webmail](/links/web/email).
 
 ## Per saperne di più <a name="go-further"></a>
-
-> [!primary]
->
-> Per ulteriori informazioni sulla configurazione di un indirizzo e-mail dall'interfaccia Gmail online, consultate [https://support.google.com/mail/answer/21289?hl=it&co=GENIE.Platform%3DDesktop].
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 

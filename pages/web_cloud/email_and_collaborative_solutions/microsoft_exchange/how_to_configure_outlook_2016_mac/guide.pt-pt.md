@@ -51,7 +51,7 @@ Se quiser, pode efetuar um teste de envio para verificar se a conta está corret
 
 Após a configuração, a conta de e-mail está pronta a usar e pode começar a enviar e receber mensagens no seu dispositivo.
 
-A OVHcloud disponibiliza uma aplicação web que tem [funcionalidades de colaboração](/links/web/emails) disponível no endereço <https://www.ovh.com/pt/mail/>. Para aceder, só precisa dos dados de acesso do seu endereço de e-mail.
+A OVHcloud disponibiliza uma aplicação web que tem [funcionalidades de colaboração](/links/web/emails) disponível no endereço [Webmail](/links/web/email). Para aceder, só precisa dos dados de acesso do seu endereço de e-mail.
 
 ## Quer saber mais?
 

@@ -67,7 +67,7 @@ Jeśli wprowadzasz ręcznie dane techniczne w ustawieniach konta, poniżej znajd
 
 Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz zacząć wysyłać i odbierać wiadomości.
 
-OVHcloud oferuje również aplikację internetową posiadającą [funkcje do pracy zespołowej](/links/web/emails) dostępną pod adresem <https://www.ovh.pl/mail/>. Możesz się do niej zalogować, używając tych samych danych, których użyłeś do logowania się do konta e-mail.
+OVHcloud oferuje również aplikację internetową posiadającą [funkcje do pracy zespołowej](/links/web/emails) dostępną pod adresem [Webmail](/links/web/email). Możesz się do niej zalogować, używając tych samych danych, których użyłeś do logowania się do konta e-mail.
 
 > [!primary]
 >
@@ -75,10 +75,6 @@ OVHcloud oferuje również aplikację internetową posiadającą [funkcje do pra
 >
 
 ## Sprawdź również
-
-> [!primary]
->
-> Więcej informacji na temat konfigurowania konta e-mail na urządzeniu z systemem iOS można znaleźć [Strona pomocy Apple](https://support.apple.com/pl-pl/102619).
 
 [Konfiguracja konta e-mail włączonego do usługi MX Plan lub do usługi hostingu na urządzeniu iPhone lub iPad](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_ios)
 

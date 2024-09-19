@@ -148,7 +148,7 @@ Depois, clique em `Seguinte`{.action}. Verifique as informações apresentadas e
 
 ### 5 - Usar o serviço de e-mail
 
-As contas foram configuradas e estão prontas a usar. Para isso, a OVHcloud disponibiliza uma aplicação online (uma *webapp*). Esta última encontra-se no endereço <https://www.ovhcloud.com/pt/mail/>, onde deve introduzir os dados de acesso à sua conta.
+As contas foram configuradas e estão prontas a usar. Para isso, a OVHcloud disponibiliza uma aplicação online (uma *webapp*). Esta última encontra-se no endereço [Webmail](/links/web/email), onde deve introduzir os dados de acesso à sua conta.
 
 Se for a primeira vez que acede ao OWA com este endereço de e-mail, ser-lhe-á pedido que defina o idioma da interface e o fuso horário. Em seguida, clique em `Guardar`{.action} para continuar.
 

@@ -45,7 +45,7 @@ Usunięcie elementów można przywrócić w interfejsie Webmail (OWA) oraz w pro
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI?start=117" title="YouTube wideo player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Zaloguj się na odpowiedni adres e-mail poprzez Webmail (OWA): <https://www.ovhcloud.com/pl/mail/>.
+Zaloguj się na odpowiedni adres e-mail poprzez Webmail (OWA): [Webmail](/links/web/email).
 
 > [!primary]
 >

@@ -57,7 +57,7 @@ Se hai attivato [una delle nostre soluzioni email OVHcloud](https://www.ovhcloud
 
 Per assicurarti che il malfunzionamento non sia associato a un errore di configurazione, effettua un test di invio e di ricezione direttamente dalla Webmail di OVHcloud. Se tutto funziona correttamente, verifica la configurazione del tuo software tramite le guide disponibili.
 
-Dal browser del vostro computer o da uno smartphone, andate sull'indirizzo <https://www.ovh.it/mail/>.
+Dal browser del vostro computer o da uno smartphone, andate sull'indirizzo [Webmail](/links/web/email).
 
 ![webmail](images/webmail.png){.thumbnail}
 

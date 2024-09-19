@@ -66,7 +66,7 @@ OVHcloud ofrece un servicio de webmail denominado Zimbra para acceder a una cuen
 
 ### Conectarse al webmail Zimbra <a name="login"></a>
 
-Acceda a la página <https://www.ovh.com/es-es/mail/>. Introduzca su dirección de correo electrónico y la contraseña y haga clic en `Conexión`{.action}.
+Acceda a la página [Webmail](/links/web/email). Introduzca su dirección de correo electrónico y la contraseña y haga clic en `Conexión`{.action}.
 
 ![Zimbra - connexion](images/ovhcloud-login-webmail.png){.thumbnail}
 

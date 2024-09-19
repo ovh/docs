@@ -60,7 +60,7 @@ Si lo desea, puede realizar una prueba de envío para comprobar que la cuenta es
 
 Una vez que haya configurado la dirección de correo electrónico, ya puede empezar a utilizarla enviando y recibiendo mensajes.
 
-OVHcloud también ofrece una aplicación web que tiene las [funciones colaborativas de Exchange](/links/web/emails) y está disponible en la dirección <https://www.ovh.es/mail/>. Puede acceder con el nombre de usuario y la contraseña de su dirección de correo electrónico.
+OVHcloud también ofrece una aplicación web que tiene las [funciones colaborativas de Exchange](/links/web/emails) y está disponible en la dirección [Webmail](/links/web/email). Puede acceder con el nombre de usuario y la contraseña de su dirección de correo electrónico.
 
 > [!primary]
 >

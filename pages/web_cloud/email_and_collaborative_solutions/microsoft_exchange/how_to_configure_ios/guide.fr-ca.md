@@ -56,7 +56,7 @@ Vous pouvez effectuer un test d'envoi pour vérifier que le compte est correctem
 
 Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
 
-OVHcloud propose également une application web disposant des [fonctions collaboratives Exchange](/links/web/emails-hosted-exchange) accessible à l’adresse <https://www.ovh.com/ca/fr/mail/>. Vous pouvez vous y connecter grâce aux identifiants relatifs à votre adresse e-mail.
+OVHcloud propose également une application web disposant des [fonctions collaboratives Exchange](/links/web/emails-hosted-exchange) accessible à l’adresse [Webmail](/links/web/email). Vous pouvez vous y connecter grâce aux identifiants relatifs à votre adresse e-mail.
 
 > [!primary]
 >

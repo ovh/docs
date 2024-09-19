@@ -109,7 +109,7 @@ Po dodaniu domen do usługi możesz je skonfigurować wraz z kontami e-mail. Ope
 
 Wszystkie konta e-mail utworzone w ramach Twojej usługi będą mogły wyświetlać w katalogu wszystkie adresy e-mail powiązane z usługą, w tym adresy o innej nazwie domeny.
 
-Po skonfigurowaniu Twoich kont możesz zacząć ich używać. W tym celu OVHcloud udostępnia **webmail** dostępny pod adresem <https://www.ovh.com/pl/mail/>. W celu jak najlepszego wykorzystania adresu w programie upewnij się, czy jest on kompatybilny z usługą. 
+Po skonfigurowaniu Twoich kont możesz zacząć ich używać. W tym celu OVHcloud udostępnia **webmail** dostępny pod adresem [Webmail](/links/web/email). W celu jak najlepszego wykorzystania adresu w programie upewnij się, czy jest on kompatybilny z usługą. 
 
 Jeśli chcesz skonfigurować Twoje konto e-mail w programie pocztowym lub urządzeniu typu smartfon lub tablet lub uzyskać pomoc w zakresie funkcji usługi e-mail, skorzystaj z naszej dokumentacji dostępnej na stronach [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) i [E-mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro).
 

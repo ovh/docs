@@ -59,7 +59,7 @@ Pour ces deux exceptions, seule la redirection est possible. Nous vous invitons 
 
 La gestion des redirections ne se fait pas via l'espace client mais directement via le webmail de l'adresse e-mail concernée.
 
-Rendez-vous sur l'adresse <https://www.ovhcloud.com/fr-ca/mail/>. Saisissez **l'adresse e-mail** et le **mot de passe** pour vous y connecter.
+Rendez-vous sur l'adresse [Webmail](/links/web/email). Saisissez **l'adresse e-mail** et le **mot de passe** pour vous y connecter.
 
 ![emails](images/webmail.png){.thumbnail}
 

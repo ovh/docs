@@ -64,7 +64,7 @@ Dallo [Spazio Cliente OVHcloud](/links/manager), seleziona la sezione `Web Cloud
 
 #### Dalla Webmail <a name="quotawebmail"></a>
 
-Accedi alla Webmail, clicca sulla pagina <https://www.ovhcloud.com/it/mail/>e inserisci le informazioni di connessione al tuo account. Seleziona qui sotto la Webmail corrispondente alla tua offerta:
+Accedi alla Webmail, clicca sulla pagina [Webmail](/links/web/email)e inserisci le informazioni di connessione al tuo account. Seleziona qui sotto la Webmail corrispondente alla tua offerta:
 
 > [!tabs]
 > **OWA**: **Email (MX Plan)**/**Email Pro**/**Exchange**

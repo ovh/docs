@@ -137,7 +137,7 @@ Weitere Informationen zu OMM finden Sie in unserer Anleitung [E-Mail-Accounts ü
 
 Die Migrationsdauer hängt davon ab, wie viele Inhalte auf Ihren neuen Account migriert werden sollen. Dieser kann von einigen Minuten bis zu mehreren Stunden variieren.
 
-Überprüfen Sie nach der Migration, ob alle Elemente vorhanden sind, indem Sie sich im Webmail anmelden: <https://www.ovh.com/de/mail/>.
+Überprüfen Sie nach der Migration, ob alle Elemente vorhanden sind, indem Sie sich im Webmail anmelden: [Webmail](/links/web/email).
 
 Sie können den ursprünglichen Account nach dieser Migration mit dem vorläufigen Namen beibehalten oder löschen.
 
@@ -160,7 +160,7 @@ Um die Konfiguration zu ändern, klicken Sie auf das rote Kästchen und führen 
 
 ### Schritt 5: Migrierte E-Mail-Accounts verwenden
 
-Verwenden Sie nun Ihre migrierten E-Mail-Accounts. OVHcloud stellt dazu eine Online-Anwendung (*Web App*) zur Verfügung, die über <https://www.ovh.com/de/mail/> erreichbar ist. Geben Sie dort die Login-Daten für Ihre E-Mail-Adresse ein.
+Verwenden Sie nun Ihre migrierten E-Mail-Accounts. OVHcloud stellt dazu eine Online-Anwendung (*Web App*) zur Verfügung, die über [Webmail](/links/web/email) erreichbar ist. Geben Sie dort die Login-Daten für Ihre E-Mail-Adresse ein.
 
 Wenn Sie einen der migrierten Accounts auf einem E-Mail-Client (wie Outlook) eingerichtet haben, müssen Sie diesen erneut konfigurieren. Die Verbindungsdaten zum OVHcloud Server haben sich nach der Migration geändert. Weitere Informationen finden Sie in den jeweiligen Anleitungen zu [E-Mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro) und [Hosted Exchange](/products/web-cloud-email-collaborative-solutions-mx-plan). Auch wenn Sie den Account nicht sofort neu konfigurieren können, ist der Zugriff über die Online-Anwendung weiterhin möglich.
 

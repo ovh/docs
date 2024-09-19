@@ -52,7 +52,7 @@ Desde el [área de cliente de OVHcloud](/links/manager), acceda al apartado `Web
 
 #### Desde el webmail <a name="quotawebmail"></a>
 
-Para conectarse al webmail, acceda a la página <https://www.ovhcloud.com/es/mail/> e introduzca los datos de conexión a su cuenta de correo. Seleccione a continuación el webmail correspondiente a su solución:
+Para conectarse al webmail, acceda a la página [Webmail](/links/web/email) e introduzca los datos de conexión a su cuenta de correo. Seleccione a continuación el webmail correspondiente a su solución:
 
 Haga clic en el botón <i class="icons-gear-concept icons-masterbrand-blue"></i> situado en la parte superior derecha de la pantalla y seleccione `Opciones`{.action}. Haga clic en `Mi cuenta`{.action} en la sección `General`{.action} de la columna izquierda. Puede ver el límite actual de su cuenta en la parte inferior derecha del formulario.
 

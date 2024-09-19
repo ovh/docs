@@ -54,7 +54,7 @@ If you have signed up to [one of our OVHcloud email solutions](/links/web/emails
 
 To ensure that the malfunction is not linked to a configuration error, send and receive a test email directly via OVHcloud webmail. If everything is working properly, check your software configuration using the guides provided.
 
-From your computer browser or smartphone, go to the address <https://www.ovh.com/world/es/mail/>.
+From your computer browser or smartphone, go to the address [Webmail](/links/web/email).
 
 ![webmail](images/webmail.png){.thumbnail}
 

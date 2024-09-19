@@ -81,7 +81,7 @@ Il procedimento è diverso in base ai diritti delegati e al software o all’int
 
 - **Dalla Webmail Outlook Web App (OWA)**
 
-Accedi all’indirizzo <https://www.ovh.it/mail/> utilizzando le credenziali dell’account email con i diritti delegati. Nel menu a sinistra, clicca con il tasto destro sul nome dell’account e seleziona `Aggiungi cartella condivisa...`{.action}.
+Accedi all’indirizzo [Webmail](/links/web/email) utilizzando le credenziali dell’account email con i diritti delegati. Nel menu a sinistra, clicca con il tasto destro sul nome dell’account e seleziona `Aggiungi cartella condivisa...`{.action}.
 
 Nella nuova finestra, inserisci il nome dell’account con i diritti delegati e poi clicca su `Aggiungi`{.action}. A questo punto l’account viene mostrato nel menu a sinistra ed è possibile visualizzarne il contenuto.
 
@@ -105,7 +105,7 @@ Clicca su `Altre impostazioni...`{.action}. Nella nuova finestra, seleziona la s
 
 - **Dalla Webmail Outlook Web App (OWA)**
 
-Accedi all’indirizzo <https://www.ovh.it/mail/> utilizzando le credenziali dell’account email con i diritti delegati. Inizia a scrivere un nuovo messaggio cliccando sul pulsante `+ Nuovo`{.action}.
+Accedi all’indirizzo [Webmail](/links/web/email) utilizzando le credenziali dell’account email con i diritti delegati. Inizia a scrivere un nuovo messaggio cliccando sul pulsante `+ Nuovo`{.action}.
 
 Nella finestra di redazione, clicca sui tre puntini e seleziona `Mostra Da`{.action}. Clicca sul pulsante `Da`{.action} e seleziona l’indirizzo che verrà visualizzato come mittente (per cui disponi del diritto di delega). Se non compare, elimina l’account già inserito e digita quello che desideri.
 
@@ -131,7 +131,7 @@ A questo punto scrivi il tuo messaggio e invialo.
 
 - **Dalla Webmail Outlook Web App (OWA)**
 
-Accedi all’indirizzo <https://www.ovh.it/mail/> utilizzando le credenziali dell’account email con i diritti delegati. Inizia a scrivere un nuovo messaggio cliccando sul pulsante `+ Nuovo`{.action}.
+Accedi all’indirizzo [Webmail](/links/web/email) utilizzando le credenziali dell’account email con i diritti delegati. Inizia a scrivere un nuovo messaggio cliccando sul pulsante `+ Nuovo`{.action}.
 
 Nella finestra di redazione, clicca sui tre puntini e seleziona `Mostra Da`{.action}. Clicca sul pulsante `Da`{.action} e seleziona l’indirizzo che verrà visualizzato come mittente (per cui disponi del diritto di delega). Se non compare, elimina l’account già inserito e digita quello che desideri.
 

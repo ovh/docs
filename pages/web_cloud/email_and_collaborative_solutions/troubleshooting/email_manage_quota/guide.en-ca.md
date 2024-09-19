@@ -48,7 +48,7 @@ In the [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} 
 
 #### From webmail <a name="quotawebmail"></a>
 
-To log in to webmail, go to the page <https://www.ovhcloud.com/en-ca/mail/> and enter the login information for your email account. Then select the webmail address for your solution below:
+To log in to webmail, go to the page [Webmail](/links/web/email) and enter the login information for your email account. Then select the webmail address for your solution below:
 
 Click the button on the <i class="icons-gear-concept icons-masterbrand-blue"></i>top right of your screen, then click `Options`{.action}. Click `My Account`{.action} in the `General`{.action} section in the left-hand column. You can view your account’s current quota in the lower right-hand corner of the form.
 

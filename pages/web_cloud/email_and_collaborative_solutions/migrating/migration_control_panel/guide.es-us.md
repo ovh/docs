@@ -132,7 +132,7 @@ Para más información sobre OMM, consulte nuestra guía [Migrar cuentas de corr
 
 El tiempo de migración dependerá de cuánto contenido quiera migrar a la nueva cuenta. Éste puede variar desde unos minutos hasta varias horas.
 
-Una vez realizada la migración, compruebe que los elementos que contiene se encuentren conectándose al webmail en la dirección <https://www.ovh.com/world/es/mail/>
+Una vez realizada la migración, compruebe que los elementos que contiene se encuentren conectándose al webmail en la dirección [Webmail](/links/web/email)
 
 Una vez realizada la migración, puede conservar o eliminar la cuenta original con el nombre provisional.
 
@@ -155,7 +155,7 @@ Para modificar la configuración, haga clic en la etiqueta roja y realice la ope
 
 ### 5\. Utilizar las direcciones de correo migradas
 
-Ya puede utilizar las direcciones de correo electrónico migradas. Para ello, OVHcloud pone a su disposición una aplicación online (_web app_) disponible en la dirección <https://www.ovh.com/world/es/mail/>. Introduzca las claves de su dirección de correo electrónico.
+Ya puede utilizar las direcciones de correo electrónico migradas. Para ello, OVHcloud pone a su disposición una aplicación online (_web app_) disponible en la dirección [Webmail](/links/web/email). Introduzca las claves de su dirección de correo electrónico.
 
 Si ha configurado alguna de las cuentas migradas en un cliente de correo (p. ej. Outlook), deberá volver a configurarlas. La información de conexión al servidor de OVHcloud ha cambiado tras la migración. Para más información, consulte nuestra guía en las secciones relativas a [Hosted Exchange](/products/web-cloud-email-collaborative-solutions-mx-plan). Si no puede reconfigurar la cuenta de forma inmediata, siempre es posible acceder a través de la aplicación online.
 

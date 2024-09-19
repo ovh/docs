@@ -47,7 +47,7 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVHcloud also has a web application you can use to access your email address from your browser. You can access this application at <https://www.ovhcloud.com/en-ie/>. You can log in using your email credentials. If you have any questions about how to use it, you can refer to our guide on [Using an account in the OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) interface.
+OVHcloud also has a web application you can use to access your email address from your browser. You can access this application at [Webmail](/links/web/email). You can log in using your email credentials. If you have any questions about how to use it, you can refer to our guide on [Using an account in the OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) interface.
 
 ### Retrieve a backup of your email address
 

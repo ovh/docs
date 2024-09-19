@@ -109,7 +109,7 @@ Nun, da Sie die gewünschten Domains zu Ihrem Exchange Dienst hinzugefügt haben
 
 Zur Erinnerung: Alle für Ihren Dienst erstellten Adressen können alle Adressen dieses Dienstes im ihrem Verzeichnis anzeigen, auch solche mit einer anderen Domain.
 
-Nachdem Sie Ihre Accounts fertig eingerichtet haben, können Sie diese nun verwenden. OVHcloud stellt Ihnen hierfür **Webmail** zur Verfügung, das über die Adresse <https://www.ovh.com/de/mail/> erreichbar ist. Wenn Sie einen Drittanbieter-Client für Ihre E-Mail-Accounts verwenden, stellen Sie sicher, dass die Software mit dem Dienst kompatibel ist.
+Nachdem Sie Ihre Accounts fertig eingerichtet haben, können Sie diese nun verwenden. OVHcloud stellt Ihnen hierfür **Webmail** zur Verfügung, das über die Adresse [Webmail](/links/web/email) erreichbar ist. Wenn Sie einen Drittanbieter-Client für Ihre E-Mail-Accounts verwenden, stellen Sie sicher, dass die Software mit dem Dienst kompatibel ist.
 
 Falls Sie Hilfe bei der Einrichtung Ihres E-Mail-Accounts in einem E-Mail-Client oder auf einem Gerät (Smartphone, Tablet) benötigen oder Fragen zu den Funktionen Ihres E-Mail-Dienstes haben, lesen Sie unsere Anleitungen zu [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) oder [E-Mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro).
 

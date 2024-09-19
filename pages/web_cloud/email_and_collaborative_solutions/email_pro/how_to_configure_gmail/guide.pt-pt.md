@@ -103,13 +103,9 @@ Para enviar uma mensagem com o seu endereço de E-mail Pro OVHcloud a partir da 
 
 ![emailpro](images/configuration-gmail-web-step6.png){.thumbnail}
 
-Tenha em conta que pode sempre utilizar a nossa interface online acessível a partir do endereço <https://www.ovh.com/pt/mail/> para aceder ao seu endereço de E-mail Pro OVHcloud. Pode ligar-se a ele graças aos dados de acesso.
+Tenha em conta que pode sempre utilizar a nossa interface online acessível a partir do endereço [Webmail](/links/web/email) para aceder ao seu endereço de E-mail Pro OVHcloud. Pode ligar-se a ele graças aos dados de acesso.
 
 ## Quer saber mais? <a name="go-further"></a>
-
-> [!primary]
->
-> Para mais informações sobre a configuração de um endereço de e-mail a partir da interface Gmail online, consulte [o Centro de Ajuda do Google](https://support.google.com/mail/answer/21289?hl=pt&co=GENIE.Platform%3DDesktop).
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 

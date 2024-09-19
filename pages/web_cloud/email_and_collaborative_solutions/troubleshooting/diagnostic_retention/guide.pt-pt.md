@@ -45,7 +45,7 @@ A recuperação dos elementos eliminados pode ser efetuada a partir do webmail (
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI?start=117" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Ligue-se ao endereço de e-mail em causa através do webmail (OWA): <https://www.ovhcloud.com/pt/mail/>.
+Ligue-se ao endereço de e-mail em causa através do webmail (OWA): [Webmail](/links/web/email).
 
 > [!primary]
 >

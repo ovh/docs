@@ -51,7 +51,7 @@ With the OVHcloud MX Plan, you can send and receive emails from third-party soft
 
 ### Logging in to Roundcube <a name="roundcube-connexion"></a>
 
-Go to the page <https://www.ovh.co.uk/mail/>. Enter your email address and password, then click `Login`{.action}. 
+Go to the page [Webmail](/links/web/email). Enter your email address and password, then click `Login`{.action}. 
 
 ![hosting](images/webmail_login.png){.thumbnail}
 

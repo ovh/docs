@@ -67,7 +67,7 @@ Se hai necessità di inserire manualmente le preferenze per il tuo account, ecco
 
 Una volta configurato l’indirizzo email, non ti resta che utilizzarlo! A partire da questo momento puoi inviare e ricevere messaggi.
 
-OVHcloud propone un'applicazione Web con [funzionalità collaborative](/links/web/emails), disponibile all'indirizzo <https://www.ovh.it/mail/>. e accessibile con le credenziali del tuo account.
+OVHcloud propone un'applicazione Web con [funzionalità collaborative](/links/web/emails), disponibile all'indirizzo [Webmail](/links/web/email). e accessibile con le credenziali del tuo account.
 
 > [!primary]
 >
@@ -75,10 +75,6 @@ OVHcloud propone un'applicazione Web con [funzionalità collaborative](/links/we
 >
 
 ## Per saperne di più
-
-> [!primary]
->
-> Per informazioni sulla configurazione di un indirizzo email dal tuo dispositivo iOS, consulta [la pagina della Guida di Apple](https://support.apple.com/it-it/102619).
 
 [Configurare un indirizzo email compreso nell'offerta MX Plan o in una soluzione di hosting Web su un iPhone o un iPad](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_ios)
 

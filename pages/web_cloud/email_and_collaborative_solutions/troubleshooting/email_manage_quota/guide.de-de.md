@@ -64,7 +64,7 @@ Gehen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) in den Bereich `Web C
 
 #### Über das Webmail <a name="quotawebmail"></a>
 
-Um sich im Webmail einzuloggen, gehen Sie auf die Seite <https://www.ovhcloud.com/de/mail/> und geben Sie die Login-Daten zu Ihrem E-Mail-Account ein. Wählen Sie anschließend das zu Ihrem Angebot passende Webmail-Interface aus:
+Um sich im Webmail einzuloggen, gehen Sie auf die Seite [Webmail](/links/web/email) und geben Sie die Login-Daten zu Ihrem E-Mail-Account ein. Wählen Sie anschließend das zu Ihrem Angebot passende Webmail-Interface aus:
 
 > [!tabs]
 > **OWA**: **E-Mails (MX Plan)** / **E-Mail Pro** / **Exchange**

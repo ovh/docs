@@ -64,7 +64,7 @@ W [Panelu klienta OVHcloud](/links/manager) przejdź do sekcji `Web Cloud`{.acti
 
 #### Z poziomu interfejsu Webmail <a name="quotawebmail"></a>
 
-Aby zalogować się do interfejsu Webmail, przejdź do strony <https://www.ovhcloud.com/pl/mail/>i wprowadź dane do logowania do konta e-mail. Wybierz poniżej interfejs webmail dla swojej usługi:
+Aby zalogować się do interfejsu Webmail, przejdź do strony [Webmail](/links/web/email)i wprowadź dane do logowania do konta e-mail. Wybierz poniżej interfejs webmail dla swojej usługi:
 
 > [!tabs]
 > **OWA**: **E-maile (MXplan)** / **E-mail Pro** / **Exchange**

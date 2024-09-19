@@ -132,7 +132,7 @@ Gli account in attesa di configurazione includono “*@configureme.me*” accant
 
 ### Utilizza i tuoi indirizzi email
 
-Una volta configurati gli account, non rimane che utilizzarli! OVHcloud mette a disposizione la Webmail **Outlook Web App** (OWA). alla quale puoi accedere tramite l’indirizzo <https://www.ovhcloud.com/it/mail/>,  inserendo le credenziali associate al tuo indirizzo di posta elettronica. Per maggiori informazioni sull’utilizzo di OWA, consulta la [nostra documentazione](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
+Una volta configurati gli account, non rimane che utilizzarli! OVHcloud mette a disposizione la Webmail **Outlook Web App** (OWA). alla quale puoi accedere tramite l’indirizzo [Webmail](/links/web/email),  inserendo le credenziali associate al tuo indirizzo di posta elettronica. Per maggiori informazioni sull’utilizzo di OWA, consulta la [nostra documentazione](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
 
 Se è la prima volta che ti connetti a OWA con questo indirizzo email, ti verrà chiesto di impostare la lingua dell’interfaccia utente e definire il fuso orario. Clicca su `Salva`{.action} per continuare.
 

@@ -79,7 +79,7 @@ Dans notre exemple, nous permettons aux comptes **guide-exchange@** et **test@**
 
 ### Utilisation du compte partagé depuis OWA (webmail)
 
-Connectez-vous au webmail Exchange (OWA) à l'adresse <https://www.ovh.com/ca/fr/mail/> avec un compte e-mail ayant le droit d'accès au compte partagé. 
+Connectez-vous au webmail Exchange (OWA) à l'adresse [Webmail](/links/web/email) avec un compte e-mail ayant le droit d'accès au compte partagé. 
 <br>Dans notre exemple, nous nous connectons avec le compte **guide-exchange@**.
 
 Une fois connecté, dans la colonne de gauche, faites un clic droit sur l'arborescence principale de votre adresse e-mail puis sur `Ajouter un dossier partagé`{.action}. 

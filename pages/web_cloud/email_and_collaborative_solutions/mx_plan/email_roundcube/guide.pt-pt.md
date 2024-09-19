@@ -56,7 +56,7 @@ Com a oferta MX Plan OVHcloud, pode enviar e-mails a partir de um software de te
 
 ### Aceder ao webmail Roundcube <a name="roundcube-connexion"></a>
 
-Aceda à página <https://www.ovh.com/pt/mail/>. Introduza um endereço de e-mail e a password, e depois clique em `Ligação`{.action}. 
+Aceda à página [Webmail](/links/web/email). Introduza um endereço de e-mail e a password, e depois clique em `Ligação`{.action}. 
 
 ![alojamento](images/webmail_login.png){.thumbnail}
 

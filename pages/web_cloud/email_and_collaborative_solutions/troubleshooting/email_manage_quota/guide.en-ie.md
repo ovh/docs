@@ -60,7 +60,7 @@ In the [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} 
 
 #### From webmail <a name="quotawebmail"></a>
 
-To log in to webmail, go to the page <https://www.ovhcloud.com/en-ie/mail/> and enter the login information for your email account. Select the webmail client of your solution below:
+To log in to webmail, go to the page [Webmail](/links/web/email) and enter the login information for your email account. Select the webmail client of your solution below:
 
 > [!tabs]
 > **OWA**: **Emails (MX Plan)** / **Email Pro** / **Exchange**

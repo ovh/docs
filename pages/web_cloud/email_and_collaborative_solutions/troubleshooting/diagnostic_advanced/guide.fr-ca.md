@@ -55,7 +55,7 @@ Si vous avez souscrit à [l'une de nos offres e-mail OVHcloud](/links/web/emails
 
 Pour vous assurer que le dysfonctionnement n'est pas lié à une erreur de configuration, réalisez un test d'envoi et de réception directement via le webmail d'OVHcloud. Si tout fonctionne correctement, vérifiez la configuration de votre logiciel via les guides mis à votre disposition.
 
-Depuis le navigateur de votre ordinateur ou depuis un smartphone, allez sur l'adresse <https://www.ovh.com/ca/fr/mail/>.
+Depuis le navigateur de votre ordinateur ou depuis un smartphone, allez sur l'adresse [Webmail](/links/web/email).
 
 ![webmail](images/webmail.png){.thumbnail}
 

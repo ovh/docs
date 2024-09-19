@@ -58,7 +58,7 @@ Sie können eine Test-E-Mail versenden, um zu überprüfen, ob der Account korre
 
 Sobald Ihre E-Mail-Adresse eingerichtet ist, können Sie sie verwenden. Sie können ab sofort E-Mails versenden und empfangen.
 
-OVHcloud bietet auch eine Webanwendung mit [kollaborativen Exchange-Funktionen](/links/web/emails) an, unter <https://www.ovh.de/mail/>. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden.
+OVHcloud bietet auch eine Webanwendung mit [kollaborativen Exchange-Funktionen](/links/web/emails) an, unter[Webmail](/links/web/email). Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden.
 
 > [!primary]
 >

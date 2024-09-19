@@ -80,7 +80,7 @@ A forma de o fazer é diferente consoante os direitos que delegou e o software o
 
 - **A partir do webmail Outlook Web App (OWA)**
 
-Aceda ao endereço <https://www.ovh.com/pt/mail/> e introduza os identificadores da conta de e-mail que disponham do direito delegado. Depois de aceder, clique com o botão direito do rato no nome da conta no menu à esquerda e selecione `Adicionar uma pasta partilhada`{.action}.
+Aceda ao endereço [Webmail](/links/web/email) e introduza os identificadores da conta de e-mail que disponham do direito delegado. Depois de aceder, clique com o botão direito do rato no nome da conta no menu à esquerda e selecione `Adicionar uma pasta partilhada`{.action}.
 
 Na janela que aparecer, indique o nome da conta para a qual beneficia do direito delegado e clique em `Adicionar`{.action}. A conta aparece no menu à esquerda, permitindo-lhe explorar o seu conteúdo.
 
@@ -104,7 +104,7 @@ Clique agora em `Parâmetros adicionais`{.action}. Na nova janela, aceda ao sepa
 
 - **A partir do webmail Outlook Web App (OWA)**
 
-Aceda ao endereço <https://www.ovh.com/pt/mail/> e introduza os identificadores da conta de e-mail que disponham do direito delegado. Uma vez ligado, inicie a redação de uma nova mensagem pressionando o botão `+ Novo`.action}.
+Aceda ao endereço [Webmail](/links/web/email) e introduza os identificadores da conta de e-mail que disponham do direito delegado. Uma vez ligado, inicie a redação de uma nova mensagem pressionando o botão `+ Novo`.action}.
 
 Na zona que aparecer, clique no botão que representa três pontos e, a seguir, em `Apresentar o campo De`{.action}. A seguir, clique no botão `De`{.action} e selecione o endereço que aparecerá como remetente (para o qual dispõe do direito delegado). Se esta não aparecer, elimine a já introduzida e inscreva-a. 
 
@@ -130,7 +130,7 @@ Só precisa de redigir a sua mensagem e enviá-la.
 
 - **A partir do webmail Outlook Web App (OWA)**
 
-Aceda ao endereço <https://www.ovh.com/pt/mail/> e introduza os identificadores da conta de e-mail que disponham do direito delegado. Uma vez ligado, inicie a redação de uma nova mensagem pressionando o botão `+ Novo`.action}.
+Aceda ao endereço [Webmail](/links/web/email) e introduza os identificadores da conta de e-mail que disponham do direito delegado. Uma vez ligado, inicie a redação de uma nova mensagem pressionando o botão `+ Novo`.action}.
 
 Na zona que aparece, clique no botão que representa três pontos e, a seguir, em `Mostrar o campo De`{.action}. A seguir, clique no botão `De`{.action} e selecione o endereço que aparecerá como remetente (para o qual dispõe do direito delegado). Se esta não aparecer, elimine a já introduzida e inscreva-a. 
 

@@ -55,7 +55,7 @@ Con el MX Plan de OVHcloud, puede enviar y recibir mensajes de correo desde un p
 
 ### Conectarse al webmail Roundcube <a name="roundcube-connexion"></a>
 
-Acceda a la página <https://www.ovh.com/es/mail/>. Introduzca una dirección de correo electrónico y la contraseña, y haga clic en `Conexión`{.action}. 
+Acceda a la página [Webmail](/links/web/email). Introduzca una dirección de correo electrónico y la contraseña, y haga clic en `Conexión`{.action}. 
 
 ![hosting](images/webmail_login.png){.thumbnail}
 

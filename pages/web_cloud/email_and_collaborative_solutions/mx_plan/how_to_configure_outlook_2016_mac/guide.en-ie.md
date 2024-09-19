@@ -70,7 +70,7 @@ If you need to enter any settings manually in your account preferences, the tech
 
 Once you have configured your email address, you can start using it! You can now send and receive messages.
 
-OVHcloud also offers a web application that you can use to consult your email from a web browser. You can access this application at <https://www.ovh.ie/mail/>. Just log in using your email login details.
+OVHcloud also offers a web application that you can use to consult your email from a web browser. You can access this application at [Webmail](/links/web/email). Just log in using your email login details.
 
 ## Go further
 

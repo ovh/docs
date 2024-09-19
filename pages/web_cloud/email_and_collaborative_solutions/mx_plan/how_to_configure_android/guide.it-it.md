@@ -109,7 +109,7 @@ Una volta configurato l’indirizzo email, non ti resta che utilizzarlo! Da ques
 
 > [!success]
 >
-> OVHcloud propone un'applicazione Web che permette di accedere al tuo indirizzo email da un browser Web, all'indirizzo <https://www.ovhcloud.com/it/mail/>. accessibile utilizzando le credenziali del tuo account.
+> OVHcloud propone un'applicazione Web che permette di accedere al tuo indirizzo email da un browser Web, all'indirizzo [Webmail](/links/web/email). accessibile utilizzando le credenziali del tuo account.
 
 ### Impostazioni POP, IMAP e SMTP
 

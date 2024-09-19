@@ -83,7 +83,7 @@ Nel nostro esempio, permettiamo agli account **guide-exchange@** e **test@** di 
 
 ### Utilizzo di un account condiviso con OWA (Webmail)
 
-Accedi alla Webmail Exchange (OWA) all'indirizzo <https://www.ovh.it/mail/> con un account email con diritto di accesso all'account condiviso.
+Accedi alla Webmail Exchange (OWA) all'indirizzo [Webmail](/links/web/email) con un account email con diritto di accesso all'account condiviso.
 <br>Nel nostro esempio, ci connettiamo con l'account **guide-exchange@**.
 
 Nella colonna di sinistra clicca con il tasto destro sulla colonna principale dell'indirizzo email e poi su `Aggiungi una cartella condivisa`{.action}. 

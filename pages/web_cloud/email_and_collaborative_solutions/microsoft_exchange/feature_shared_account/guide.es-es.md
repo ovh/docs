@@ -83,7 +83,7 @@ En nuestro ejemplo, permitimos que las cuentas **guia-exchange@** y **test@** te
 
 ### Uso de la cuenta compartida desde OWA (webmail)
 
-Conéctese al webmail Exchange (OWA) en la dirección <https://www.ovh.es/mail/> con una cuenta de correo con derecho de acceso a la cuenta compartida.
+Conéctese al webmail Exchange (OWA) en la dirección [Webmail](/links/web/email) con una cuenta de correo con derecho de acceso a la cuenta compartida.
 <br>En nuestro ejemplo, nos conectamos con la cuenta **guia-exchange@**.
 
 Una vez que se haya conectado, haga clic derecho en el árbol principal de su dirección de correo electrónico y seleccione `Añadir carpeta compartida`{.action}. 

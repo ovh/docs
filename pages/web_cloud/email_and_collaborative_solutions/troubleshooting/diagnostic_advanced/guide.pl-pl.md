@@ -57,7 +57,7 @@ Jeśli zamówiłeś [jedną z naszych ofert e-mail OVHcloud](/links/web/emails) 
 
 Aby upewnić się, że problem nie jest związany z błędem konfiguracji, przeprowadź test wysyłki i odbioru bezpośrednio przez interfejs webmail OVHcloud. Jeśli wszystko działa poprawnie, sprawdź konfigurację oprogramowania w dostępnych przewodnikach.
 
-Przejdź na adres z poziomu przeglądarki internetowej lub smartfona <https://www.ovh.pl/mail/>.
+Przejdź na adres z poziomu przeglądarki internetowej lub smartfona [Webmail](/links/web/email).
 
 ![webmail](images/webmail.png){.thumbnail}
 

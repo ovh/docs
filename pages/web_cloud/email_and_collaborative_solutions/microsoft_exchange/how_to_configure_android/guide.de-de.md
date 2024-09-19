@@ -99,7 +99,7 @@ Ihre E-Mail-Adresse ist nun fertig konfiguriert und Sie können jetzt E-Mails  �
 
 > [!success]
 >
-> Eine OVHcloud Webanwendung, mit der Sie über einen Browser auf Ihre E-Mail-Accounts zugreifen können, ist verfügbar unter <https://www.ovhcloud.com/de/mail/>. Sie können sich mit den Login-Daten Ihres E-Mail-Accounts anmelden.
+> Eine OVHcloud Webanwendung, mit der Sie über einen Browser auf Ihre E-Mail-Accounts zugreifen können, ist verfügbar unter [Webmail](/links/web/email). Sie können sich mit den Login-Daten Ihres E-Mail-Accounts anmelden.
 
 ## Weiterführende Informationen <a name="go-further"></a>
 

@@ -83,7 +83,7 @@ Se precisar de inserir manualmente alguns dados técnicos nas preferências da c
 
 Depois de configurar o endereço de e-mail, só falta utilizá-lo! Pode desde já enviar e receber mensagens.
 
-A OVHcloud oferece uma aplicação web que permite aceder ao seu endereço de e-mail a partir do seu browser acessível no endereço <https://www.ovhcloud.com/pt/mail/>. Para aceder, só precisa dos dados de acesso relativos ao seu endereço de e-mail.
+A OVHcloud oferece uma aplicação web que permite aceder ao seu endereço de e-mail a partir do seu browser acessível no endereço [Webmail](/links/web/email). Para aceder, só precisa dos dados de acesso relativos ao seu endereço de e-mail.
  
 ## Quer saber mais?
 

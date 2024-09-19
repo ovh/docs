@@ -55,7 +55,7 @@ To check that the account has been correctly configured, you can send a test ema
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVHcloud also offers a web application that includes [Exchange collaborative features](/links/web/emails), accessible via <https://www.ovh.ie/mail/>. You can log in using your email credentials.
+OVHcloud also offers a web application that includes [Exchange collaborative features](/links/web/emails), accessible via [Webmail](/links/web/email). You can log in using your email credentials.
 
 > [!primary]
 >

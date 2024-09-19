@@ -55,7 +55,7 @@ Mit einem OVHcloud MX Plan können Sie E-Mails über eine Software oder ein Webm
 
 ### Einloggen in Roundcube Webmail <a name="#roundcube-connexion"></a>
 
-Gehen Sie auf die Seite <https://www.ovh.com/de/mail/>. Geben Sie eine E-Mail-Adresse und das Passwort ein und klicken Sie dann auf `Login`{.action}. 
+Gehen Sie auf die Seite [Webmail](/links/web/email). Geben Sie eine E-Mail-Adresse und das Passwort ein und klicken Sie dann auf `Login`{.action}. 
 
 ![Hosting](images/webmail_login.png){.thumbnail}
 

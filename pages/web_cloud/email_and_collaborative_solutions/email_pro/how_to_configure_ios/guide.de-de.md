@@ -66,7 +66,7 @@ Wenn manuelle Änderungen in den Account-Einstellungen erforderlich sind, verwen
 
 Sobald Ihre E-Mail-Adresse eingerichtet ist, können Sie sie verwenden. Sie können ab sofort E-Mails versenden und empfangen.
 
-OVHcloud bietet auch eine Webanwendung mit [kollaborativen Funktionen](/links/web/emails) an, unter <https://www.ovh.de/mail/>. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden.
+OVHcloud bietet auch eine Webanwendung mit [kollaborativen Funktionen](/links/web/emails) an, unter[Webmail](/links/web/email). Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden.
 
 > [!primary]
 >
@@ -74,10 +74,6 @@ OVHcloud bietet auch eine Webanwendung mit [kollaborativen Funktionen](/links/we
 >
 
 ## Weiterführende Informationen
-
-> [!primary]
->
-> Weitere Informationen zum Einrichten einer E-Mail-Adresse von Ihrem iOS-Gerät aus finden Sie auf der [Apple-Hilfeseite](https://support.apple.com/de-de/102619).
 
 [Konfiguration Ihrer MX Plan E-Mail-Adresse auf iPhone oder iPad](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_ios)
 

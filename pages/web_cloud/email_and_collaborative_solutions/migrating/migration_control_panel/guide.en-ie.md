@@ -156,7 +156,7 @@ To modify the configuration, click on the red box and carry out the requested op
 
 ### Step 5: Using your migrated email account
 
-Now, you can start using your migrated email account. To do this, OVHcloud offers an online interface (*web app*), available here: <https://www.ovh.ie/mail/>. You will need to enter your email credentials.
+Now, you can start using your migrated email account. To do this, OVHcloud offers an online interface (*web app*), available here: [Webmail](/links/web/email). You will need to enter your email credentials.
 
 If you have configured one of the migrated accounts on an email client (such as Outlook), you must set it up again. The login details for the OVHcloud server have changed following the migration. To help you make changes, please read the respective guides in the [Email Pro](/products/web-cloud-email-collaborative-solutions-email-pro) and [Hosted Exchange](/products/web-cloud-email-collaborative-solutions-mx-plan) guide sections. Even if you are unable to reconfigure the account immediately, access via the online application is still possible.
 

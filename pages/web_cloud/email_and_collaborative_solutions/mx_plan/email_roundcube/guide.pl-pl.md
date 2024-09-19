@@ -55,7 +55,7 @@ Dzięki usłudze MX Plan OVHcloud możesz wysyłać i odbierać e-maile za pośr
 
 ### Logowanie do interfejsu Webmail Roundcube <a name="roundcube-connexion"></a>
 
-Do zobaczenia na stronie <https://www.ovh.com/pl/mail/>. Wprowadź adres e-mail i hasło, a następnie kliknij `Łącze`{.action}. 
+Do zobaczenia na stronie [Webmail](/links/web/email). Wprowadź adres e-mail i hasło, a następnie kliknij `Łącze`{.action}. 
 
 ![hosting](images/webmail_login.png){.thumbnail}
 

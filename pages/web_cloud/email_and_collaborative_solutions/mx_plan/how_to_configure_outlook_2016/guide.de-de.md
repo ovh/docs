@@ -97,7 +97,7 @@ Um Ihren E-Mail-Account zu konfigurieren, folgen Sie den Anweisungen in den Tabs
 
 Sobald Ihr E-Mail-Account eingerichtet ist, können Sie ihn verwenden. Sie können ab sofort E-Mails versenden und empfangen.
 
-OVHcloud bietet auch eine Webanwendung an, mit der Sie über Ihren Webbrowser auf Ihren E-Mail-Account zugreifen können: <https://www.ovh.de/mail/>. Sie können sich mit den Login-Daten Ihres E-Mail-Accounts anmelden. Bei Fragen zu dessen Verwendung können Sie unsere Anleitung zur [Outlook Web App](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) heranziehen.
+OVHcloud bietet auch eine Webanwendung an, mit der Sie über Ihren Webbrowser auf Ihren E-Mail-Account zugreifen können:[Webmail](/links/web/email). Sie können sich mit den Login-Daten Ihres E-Mail-Accounts anmelden. Bei Fragen zu dessen Verwendung können Sie unsere Anleitung zur [Outlook Web App](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) heranziehen.
 
 ### Backup Ihres E-Mail-Accounts
 

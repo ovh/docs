@@ -81,7 +81,7 @@ Caso a aplicação lhe solicite para inserir manualmente alguns dados técnicos 
 
 Depois de configurar o endereço de e-mail, só falta utilizá-lo! Pode desde já enviar e receber mensagens.
 
-A OVHcloud também disponibiliza uma aplicação web com [funções colaborativas](/links/web/emails). Este endereço está disponível em <https://www.ovh.com/fr/mail/>. Para aceder, só precisa dos dados de acesso do seu endereço de e-mail.
+A OVHcloud também disponibiliza uma aplicação web com [funções colaborativas](/links/web/emails). Este endereço está disponível em [Webmail](/links/web/email). Para aceder, só precisa dos dados de acesso do seu endereço de e-mail.
 
 ## Quer saber mais?
 

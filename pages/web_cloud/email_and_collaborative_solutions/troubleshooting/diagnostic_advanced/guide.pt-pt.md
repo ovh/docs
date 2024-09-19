@@ -57,7 +57,7 @@ Se subscreveu [um dos nossos serviços de e-mail OVHcloud](/links/web/emails) e 
 
 Para garantir que a avaria não está associada a um erro de configuração, realize um teste de envio e de receção diretamente através do webmail da OVHcloud. Se tudo estiver a funcionar corretamente, verifique a configuração do seu software através dos guias postos à sua disposição.
 
-A partir do browser do seu computador ou a partir de um smartphone, vá ao endereço <https://www.ovh.pt/mail/>.
+A partir do browser do seu computador ou a partir de um smartphone, vá ao endereço [Webmail](/links/web/email).
 
 ![webmail](images/webmail.png){.thumbnail}
 

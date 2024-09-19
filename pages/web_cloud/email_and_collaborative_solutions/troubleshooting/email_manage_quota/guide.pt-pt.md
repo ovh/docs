@@ -64,7 +64,7 @@ Na [Área de Cliente OVHcloud](/links/manager), aceda à secção `Web Cloud`{.a
 
 #### A partir do webmail <a name="quotawebmail"></a>
 
-Para se ligar ao webmail, aceda à página <https://www.ovhcloud.com/pt/mail/>e introduza as informações de ligação à sua conta de e-mail. De seguida, selecione o webmail correspondente à sua oferta:
+Para se ligar ao webmail, aceda à página [Webmail](/links/web/email)e introduza as informações de ligação à sua conta de e-mail. De seguida, selecione o webmail correspondente à sua oferta:
 
 > [!tabs]
 > **OWA**: **E-mails (MXplan)** / **Email Pro** / **Exchange**

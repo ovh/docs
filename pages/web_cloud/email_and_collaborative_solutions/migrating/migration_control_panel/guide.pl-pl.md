@@ -137,7 +137,7 @@ Aby uzyskać więcej informacji na temat narzędzia OMM, zapoznaj się z naszym 
 
 Czas migracji zależy od ilości treści, które chcesz przenieść na nowe konto. Może się on różnić od kilku minut do kilku godzin.
 
-Po przeprowadzeniu migracji sprawdź, czy Twoje dane znajdują się na stronie WWW pod adresem <https://www.ovh.com/pl/mail/>
+Po przeprowadzeniu migracji sprawdź, czy Twoje dane znajdują się na stronie WWW pod adresem [Webmail](/links/web/email)
 
 Po przeprowadzeniu migracji możesz zachować lub usunąć konto źródłowe, używając tymczasowej nazwy.
 
@@ -160,7 +160,7 @@ Aby zmienić konfigurację, kliknij czerwony przycisk i wykonaj żądaną operac
 
 ### Etap 5: korzystać z migrowanych kont e-mail
 
-Teraz możesz korzystać z migrowanych kont e-mail. W tym celu OVHcloud udostępnia aplikację online (_web app_) dostępną pod adresem <https://www.ovh.com/pl/mail/>. Wpisz dane dostępowe do Twojego konta e-mail.
+Teraz możesz korzystać z migrowanych kont e-mail. W tym celu OVHcloud udostępnia aplikację online (_web app_) dostępną pod adresem [Webmail](/links/web/email). Wpisz dane dostępowe do Twojego konta e-mail.
 
 Jeśli skonfigurowałeś jedno z kont przeniesionych na klienta poczty elektronicznej (np. Outlook), należy ponownie skonfigurować to konto. Dane do logowania do serwera OVHcloud zmieniły się po migracji. Aby pomóc Ci w przeprowadzeniu operacji, zapoznaj się z naszą dokumentacją w sekcjach przewodników dotyczących [E-mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro) i [Hosted Exchange](/products/web-cloud-email-collaborative-solutions-mx-plan). Jeśli nie jesteś w stanie zmienić konfiguracji konta w tej chwili, dostęp przez aplikację online jest zawsze możliwy.
 

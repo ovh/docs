@@ -54,7 +54,7 @@ Per verificare la corretta configurazione dell’account esegui un test di invio
 
 Una volta configurato l’indirizzo email, non ti resta che utilizzarlo: da questo momento puoi infatti inviare e ricevere messaggi.
 
-OVHcloud ti propone un'applicazione Web che dispone di [funzionalità collaborative](/links/web/emails). Accedi a questo link <https://www.ovhcloud.com/it/mail/> utilizzando le credenziali del tuo account.
+OVHcloud ti propone un'applicazione Web che dispone di [funzionalità collaborative](/links/web/emails). Accedi a questo link [Webmail](/links/web/email) utilizzando le credenziali del tuo account.
 
 ## Per saperne di più
 

@@ -70,7 +70,7 @@ Precisa de inserir os dados de forma manual nas preferências da conta? A tabela
 
 Após a configuração, a conta de e-mail está pronta a usar e pode começar a enviar e receber mensagens no seu dispositivo.
 
-A OVHcloud oferece uma aplicação web que permite aceder ao seu endereço de e-mail a partir do seu browser <https://www.ovh.pt/mail/>. Para aceder, só precisa dos dados de acesso relativos ao seu endereço de e-mail.
+A OVHcloud oferece uma aplicação web que permite aceder ao seu endereço de e-mail a partir do seu browser [Webmail](/links/web/email). Para aceder, só precisa dos dados de acesso relativos ao seu endereço de e-mail.
 
 > [!primary]
 >

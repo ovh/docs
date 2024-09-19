@@ -76,7 +76,7 @@ Wenn manuelle Änderungen in den Account-Einstellungen erforderlich sind, verwen
 
 Ihre E-Mail-Adresse ist nun fertig konfiguriert und Sie können jetzt Nachrichten versenden und empfangen.
 
-OVHcloud bietet Ihnen außerdem eine Webanwendung mit [kollaborativen Funktionen](/links/web/emails). Diese ist über <https://www.ovh.de/mail/> verfügbar. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden.
+OVHcloud bietet Ihnen außerdem eine Webanwendung mit [kollaborativen Funktionen](/links/web/emails). Diese ist über[Webmail](/links/web/email) verfügbar. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden.
 
 ## Weiterführende Informationen
 

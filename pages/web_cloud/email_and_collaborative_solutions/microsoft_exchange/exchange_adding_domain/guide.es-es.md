@@ -109,7 +109,7 @@ Una vez que haya añadido los dominios, ya puede configurar sus cuentas de corre
 
 Le recordamos que todas las direcciones creadas en su servicio podrán ver en el directorio el conjunto de direcciones de este servicio, incluidas aquellas que posean un nombre de dominio diferente.
 
-Una vez que haya configurado las cuentas, ¡ya puede utilizarlas! Para ello, OVHcloud pone a su disposición el **webmail** disponible en la dirección <https://www.ovhcloud.com/es-es/mail/>. Para un uso óptimo de su dirección en un programa, asegúrese de que sea compatible con el servicio. 
+Una vez que haya configurado las cuentas, ¡ya puede utilizarlas! Para ello, OVHcloud pone a su disposición el **webmail** disponible en la dirección [Webmail](/links/web/email). Para un uso óptimo de su dirección en un programa, asegúrese de que sea compatible con el servicio. 
 
 Si desea configurar su cuenta de correo electrónico en un cliente de correo o un dispositivo (smartphone o tablet) u obtener ayuda sobre las funcionalidades de su servicio de correo, consulte la documentación disponible en las páginas [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) y [Email Pro](/products/web-cloud-email-collaborative-solutions-email-pro).
 

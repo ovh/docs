@@ -63,7 +63,7 @@ If you need to enter any settings manually in your account preferences, the tech
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVHcloud also offers a web application that includes [collaborative features](/links/web/emails), accessible via <https://www.ovh.co.uk/mail/>. You can log in using your email credentials.
+OVHcloud also offers a web application that includes [collaborative features](/links/web/emails), accessible via [Webmail](/links/web/email). You can log in using your email credentials.
 
 > [!primary]
 >
@@ -71,10 +71,6 @@ OVHcloud also offers a web application that includes [collaborative features](/l
 >
 
 ## Go further
-
-> [!primary]
->
-> For more information on configuring an email address from your iOS device, see [Apple's Help page](https://support.apple.com/en-gb/102619).
 
 [Configuring a Web Hosting email address on iPhone and iPad](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_ios)
 

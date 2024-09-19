@@ -84,7 +84,7 @@ Una vez introducidos los datos, marque la casilla `Conexión segura mediante TLS
 
 ![MX Plan](images/configuration-gmail-web-step5.png){.thumbnail}
 
-Por último, debe validar la operación mediante un código de confirmación que recibirá en su dirección de correo de OVHcloud. Para solicitar este código, conéctese a su dirección de correo desde nuestra interfaz web disponible en <https://www.ovh.es/mail/>. 
+Por último, debe validar la operación mediante un código de confirmación que recibirá en su dirección de correo de OVHcloud. Para solicitar este código, conéctese a su dirección de correo desde nuestra interfaz web disponible en [Webmail](/links/web/email). 
 
 Después de validar la operación, la dirección de correo de OVHcloud aparecerá en la pestaña `Cuentas e importación`{.action}.
 
@@ -96,7 +96,7 @@ Para enviar un mensaje con su dirección de correo de OVHcloud desde la interfaz
 
 ![MX Plan](images/configuration-gmail-web-step6.png){.thumbnail}
 
-No olvide que también puede utilizar nuestra interfaz web en la dirección <https://www.ovh.es/mail/> para acceder a su dirección de correo de OVHcloud. Para conectarse solo necesitará las claves de acceso.
+No olvide que también puede utilizar nuestra interfaz web en la dirección [Webmail](/links/web/email) para acceder a su dirección de correo de OVHcloud. Para conectarse solo necesitará las claves de acceso.
 
 ## Más información
 

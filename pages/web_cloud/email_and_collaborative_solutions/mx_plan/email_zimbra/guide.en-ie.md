@@ -62,7 +62,7 @@ OVHcloud provides a webmail service called Zimbra to access MX Plan email accoun
 
 ### Log in to Zimbra webmail <a name="login"></a>
 
-Go to the page <https://www.ovh.com/fr/mail/>. Enter your email address and password, then click `Login`{.action}.
+Go to the page [Webmail](/links/web/email). Enter your email address and password, then click `Login`{.action}.
 
 ![Zimbra - login](images/ovhcloud-login-webmail.png){.thumbnail}
 

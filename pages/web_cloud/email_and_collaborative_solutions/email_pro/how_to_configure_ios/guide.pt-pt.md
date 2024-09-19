@@ -67,7 +67,7 @@ Caso a aplicação lhe solicite para inserir manualmente alguns dados técnicos 
 
 Após a configuração, a conta de e-mail está pronta a usar e pode começar a enviar e receber mensagens no seu dispositivo.
 
-A OVHcloud também disponibiliza uma aplicação web com [funcionalidades de colaboração](/links/web/emails) acessível em <https://www.ovh.pt/mail/>. Para aceder, só precisa dos dados de acesso relativos ao seu endereço de e-mail.
+A OVHcloud também disponibiliza uma aplicação web com [funcionalidades de colaboração](/links/web/emails) acessível em [Webmail](/links/web/email). Para aceder, só precisa dos dados de acesso relativos ao seu endereço de e-mail.
 
 > [!primary]
 >

@@ -48,7 +48,7 @@ Depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanage
 
 #### Depuis le webmail <a name="quotawebmail"></a>
 
-Pour vous connecter au webmail, rendez-vous sur la page <https://www.ovhcloud.com/fr-ca/mail/> et saisissez les informations de connexion à votre compte e-mail. Sélectionnez ensuite ci-dessous le webmail correspondant à votre offre :
+Pour vous connecter au webmail, rendez-vous sur la page [Webmail](/links/web/email) et saisissez les informations de connexion à votre compte e-mail. Sélectionnez ensuite ci-dessous le webmail correspondant à votre offre :
 
 Cliquez sur le bouton <i class="icons-gear-concept icons-masterbrand-blue"></i> en haut à droite de votre écran, cliquez sur `Options`{.action}. Cliquez sur `Mon compte`{.action} dans la section `Général`{.action} dans la colonne de gauche. Vous pouvez visualiser le quota actuel de votre compte dans la partie inférieure droite du formulaire.
 

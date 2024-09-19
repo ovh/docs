@@ -60,7 +60,7 @@ Wykonaj test wysyłki e-maili, aby sprawdzić, czy konto zostało poprawnie skon
 
 Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz zacząć wysyłać i odbierać wiadomości.
 
-OVHcloud oferuje również aplikację internetową posiadającą [funkcje do pracy zespołowej Exchange](/links/web/emails) dostępną pod adresem <https://www.ovh.pl/mail/>. Możesz się do niej zalogować, używając tych samych danych, których użyłeś do logowania się do konta e-mail.
+OVHcloud oferuje również aplikację internetową posiadającą [funkcje do pracy zespołowej Exchange](/links/web/emails) dostępną pod adresem [Webmail](/links/web/email). Możesz się do niej zalogować, używając tych samych danych, których użyłeś do logowania się do konta e-mail.
 
 > [!primary]
 >

@@ -106,7 +106,7 @@ Now that you have added the domain names to your service, you can configure your
 
 As a reminder, all of the addresses created on your service can view all of the addresses for this service in the directory, including those that have different domain names.
 
-Once you have finished configuring your accounts, you can now start using them. To do this, OVHcloud offers **webmail**, accessible via <https://www.ovhcloud.com/en-ie/mail/>. I If you are using a third-party client with your email accounts, ensure that the software is compatible with the service. 
+Once you have finished configuring your accounts, you can now start using them. To do this, OVHcloud offers **webmail**, accessible via [Webmail](/links/web/email). I If you are using a third-party client with your email accounts, ensure that the software is compatible with the service. 
 
 If you need help with configuring your email account on an email client or a device (e.g. a smartphone or tablet) or have questions about email service features, please refer to our documentation which you can access from the [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) and [Email Pro](/products/web-cloud-email-collaborative-solutions-email-pro) pages.
 

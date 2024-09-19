@@ -83,7 +83,7 @@ No nosso exemplo, permitimos que as contas **guia-exchange@** e **test@** acedam
 
 ### Utilização da conta partilhada a partir do OWA (webmail)
 
-Ligue-se ao webmail Exchange (OWA) no endereço <https://www.ovh.com/fr/mail/> com uma conta de e-mail com direito de acesso à conta partilhada.. 
+Ligue-se ao webmail Exchange (OWA) no endereço [Webmail](/links/web/email) com uma conta de e-mail com direito de acesso à conta partilhada.. 
 <br>No nosso exemplo, ligamo-nos à conta **guia-exchange@**.
 
 Depois de aceder, na coluna da esquerda, clique com o botão direito na arborescência principal do seu endereço de e-mail e depois em `Adicionar uma pasta partilhada`{.action}. 

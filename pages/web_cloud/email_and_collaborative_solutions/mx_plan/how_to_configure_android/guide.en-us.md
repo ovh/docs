@@ -105,7 +105,7 @@ Once you have configured your email address, you can start using it! You can now
 
 > [!success]
 >
-> OVHcloud offers a web application that allows you to access your email address from a web browser, at <https://www.ovhcloud.com/en/mail/>. You can log in using your email credentials.
+> OVHcloud offers a web application that allows you to access your email address from a web browser, at [Webmail](/links/web/email). You can log in using your email credentials.
 
 ### POP, IMAP and SMTP settings
 

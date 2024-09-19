@@ -84,7 +84,7 @@ Una volta inserite tutte le informazioni, seleziona `Connessione protetta TLS (c
 
 ![MX Plan](images/configuration-gmail-web-step5.png){.thumbnail}
 
-Per confermare l’operazione è necessario inserire il codice di conferma inviato al tuo indirizzo di posta OVHcloud. Per recuperarlo, accedi all’account dalla nostra Webmail disponibile all’indirizzo:<https://www.ovh.it/mail/>. 
+Per confermare l’operazione è necessario inserire il codice di conferma inviato al tuo indirizzo di posta OVHcloud. Per recuperarlo, accedi all’account dalla nostra Webmail disponibile all’indirizzo:[Webmail](/links/web/email). 
 
 Una volta effettuata la convalida, l’indirizzo email OVHcloud compare nella scheda `Account e Importazione`{.action} a cui ti sei connesso all’inizio della procedura.
 
@@ -96,7 +96,7 @@ Per inviare email dall’account OVHcloud è necessario scegliere l’indirizzo 
 
 ![MX Plan](images/configuration-gmail-web-step6.png){.thumbnail}
 
-Ti ricordiamo che per accedere all’account OVHcloud è sempre possibile utilizzare la nostra Webmail disponibile all’indirizzo <https://www.ovh.it/mail/>. 
+Ti ricordiamo che per accedere all’account OVHcloud è sempre possibile utilizzare la nostra Webmail disponibile all’indirizzo [Webmail](/links/web/email). 
 
 ## Per saperne di più
 

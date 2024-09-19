@@ -146,7 +146,7 @@ Une fois les informations complétées, cliquez sur le bouton `Suivant`{.action}
 
 ### Étape 5 : utiliser vos adresses e-mail
 
-Une fois vos comptes configurés, il ne vous reste plus qu'à les utiliser ! Pour cela, OVHcloud met à disposition un applicatif en ligne (une *webapp*). Ce dernier est accessible à l’adresse <https://www.ovh.com/fr/mail/> et vous devrez y renseigner les identifiants relatifs à votre adresse e-mail.
+Une fois vos comptes configurés, il ne vous reste plus qu'à les utiliser ! Pour cela, OVHcloud met à disposition un applicatif en ligne (une *webapp*). Ce dernier est accessible à l’adresse [Webmail](/links/web/email) et vous devrez y renseigner les identifiants relatifs à votre adresse e-mail.
 
 Si c'est la première fois que vous vous connectez à OWA avec cette adresse e-mail, vous serez invité à définir la langue de l'interface ainsi que le fuseau horaire. Ensuite, cliquez sur `Enregistrer`{.action} pour continuer.
 

@@ -80,7 +80,7 @@ Exchange Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingerich
 
 Nach der Konfiguration der E-Mail-Adresse können Sie diese verwenden! Sie können ab sofort Nachrichten senden und empfangen.
 
-OVHcloud bietet Ihnen außerdem eine Webanwendung, mit der Sie über einen Webbrowser auf Ihren E-Mail-Account zugreifen können. Diese ist über <https://www.ovh.de/mail/> verfügbar. Sie können sich mit den Login-Daten Ihres E-Mail-Accounts anmelden.
+OVHcloud bietet Ihnen außerdem eine Webanwendung, mit der Sie über einen Webbrowser auf Ihren E-Mail-Account zugreifen können. Diese ist über[Webmail](/links/web/email) verfügbar. Sie können sich mit den Login-Daten Ihres E-Mail-Accounts anmelden.
 
 Wenn Sie Fragen zur Verwendung haben, lesen Sie unsere Anleitungen [Exchange-Account über das OWA-Interface aufrufen](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) und [E-Mail-Adresse über RoundCube Webmail verwenden](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube#ou-et-comment-à-au-webmail-roundcube).
 

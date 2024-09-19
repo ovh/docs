@@ -91,7 +91,7 @@ Po uzupełnieniu informacji zaznacz kratkę obok `Bezpieczne połączenie TLS`{.
 
 ![emailpro](images/configuration-gmail-web-step5.png){.thumbnail}
 
-Teraz zatwierdź dodane konto, wprowadzając kod wysłany na Twój adres E-mail Pro OVHcloud.  Aby pobrać kod, zaloguj się jak zwykle do konta OVHcloud, korzystając z interfejsu online dostępnego tutaj: <https://www.ovh.pl/mail/>.
+Teraz zatwierdź dodane konto, wprowadzając kod wysłany na Twój adres E-mail Pro OVHcloud.  Aby pobrać kod, zaloguj się jak zwykle do konta OVHcloud, korzystając z interfejsu online dostępnego tutaj: [Webmail](/links/web/email).
 
 Po zatwierdzeniu dodanego konta, konto E-mail Pro OVHcloud pojawi się w zakładce `Konta i import`{.action}, którą otworzyłeś na początku operacji.
 
@@ -103,13 +103,9 @@ Aby wysłać wiadomość z konta E-mail Pro OVHcloud za pośrednictwem interfejs
 
 ![emailpro](images/configuration-gmail-web-step6.png){.thumbnail}
 
-Pamiętaj, że w celu uzyskania dostępu do Twojego konta E-mail Pro OVHcloud, możesz również użyć interfejsu OVHcloud online dostępnego pod adresem <https://www.ovh.pl/mail/>. Zaloguj się, używając Twoich danych identyfikacyjnych.
+Pamiętaj, że w celu uzyskania dostępu do Twojego konta E-mail Pro OVHcloud, możesz również użyć interfejsu OVHcloud online dostępnego pod adresem [Webmail](/links/web/email). Zaloguj się, używając Twoich danych identyfikacyjnych.
 
 ## Sprawdź również <a name="go-further"></a>
-
-> [!primary]
->
-> Aby uzyskać więcej informacji na temat konfigurowania konta e-mail za pomocą interfejsu Gmail online, zobacz [Centrum pomocy Google](https://support.google.com/mail/answer/21289?hl=fr&co=GENIE.Platform%3DDesktop).
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 

@@ -148,7 +148,7 @@ Dopo aver completato tutti i campi clicca su `Continua`{.action}, verifica la co
 
 ### Step 5: utilizza gli indirizzi email
 
-Una volta creati gli account non ti resta che utilizzarli. Per accedervi OVHcloud mette a disposizione un’applicazione online (*webapp*), accessibile all’indirizzo <https://www.ovhcloud.com/it/mail/> usando le credenziali associate al tuo indirizzo di posta elettronica.
+Una volta creati gli account non ti resta che utilizzarli. Per accedervi OVHcloud mette a disposizione un’applicazione online (*webapp*), accessibile all’indirizzo [Webmail](/links/web/email) usando le credenziali associate al tuo indirizzo di posta elettronica.
 
 Se è la prima volta che ti connetti a OWA con questo indirizzo email, ti verrà chiesto di impostare la lingua dell’interfaccia utente e definire il fuso orario. Clicca su `Salva`{.action} per continuare.
 

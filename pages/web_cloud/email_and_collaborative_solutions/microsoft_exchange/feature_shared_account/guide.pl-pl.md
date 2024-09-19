@@ -83,7 +83,7 @@ W naszym przykładzie udostępniamy konta **guide-exchange@** i **test@** dostę
 
 ### Korzystanie z konta współdzielonego w OWAguide (webmail)
 
-Zaloguj się do Webmail Exchange (OWA) na adres <https://www.ovh.pl/mail/> z kontem e-mail uprawnionym do dostępu do konta współdzielonego.
+Zaloguj się do Webmail Exchange (OWA) na adres [Webmail](/links/web/email) z kontem e-mail uprawnionym do dostępu do konta współdzielonego.
 <br>W naszym przykładzie zalogujemy się do konta **guide-exchange@**.
 
 Po zalogowaniu, w kolumnie po lewej stronie, kliknij prawym przyciskiem myszy główny drzewo Twojego konta e-mail, a następnie kliknij `Dodaj współdzielony`{.action} katalog. 

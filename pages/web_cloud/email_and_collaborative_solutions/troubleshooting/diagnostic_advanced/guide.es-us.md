@@ -54,7 +54,7 @@ Si ha contratado [una de nuestras soluciones de correo de OVHcloud](/links/web/e
 
 Para asegurarse de que el fallo de funcionamiento no se deba a un error de configuración, realice una prueba de envío y de recepción directamente a través del webmail de OVHcloud. Si todo funciona correctamente, compruebe la configuración de su programa a través de las guías disponibles.
 
-Desde el navegador de su ordenador o desde un smartphone, vaya a la dirección <https://www.ovh.com/world/es/mail/>.
+Desde el navegador de su ordenador o desde un smartphone, vaya a la dirección [Webmail](/links/web/email).
 
 ![webmail](images/webmail.png){.thumbnail}
 

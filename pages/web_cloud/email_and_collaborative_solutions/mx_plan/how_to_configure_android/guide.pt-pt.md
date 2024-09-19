@@ -109,7 +109,7 @@ Após a configuração, a conta de e-mail está pronta a usar Pode desde já env
 
 > [!success]
 >
-> A OVHcloud disponibiliza uma aplicação web que pode utilizar para aceder ao seu e-mail diretamente a partir de um browser, no endereço <https://www.ovhcloud.com/pt/mail/>. Para aceder, só precisa dos dados de acesso do seu endereço de e-mail.
+> A OVHcloud disponibiliza uma aplicação web que pode utilizar para aceder ao seu e-mail diretamente a partir de um browser, no endereço [Webmail](/links/web/email). Para aceder, só precisa dos dados de acesso do seu endereço de e-mail.
 
 ### Parâmetros POP, IMAP e SMTP
 

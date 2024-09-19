@@ -81,7 +81,7 @@ Sposób postępowania jest inny w zależności od prawa lub praw, jakie przydzie
 
 - **Przy użyciu webmail Outlook Web App (OWA)**
 
-Kliknij link <https://www.ovh.pl/mail/> i wprowadź dane dostępowe do konta e-mail, dla którego udzielone zastało dane prawo. Po zalogowaniu kliknij prawym przyciskiem myszy nazwę konta w menu po lewej stronie, następnie zaznacz `Dodaj współdzielony katalog`{.action}.
+Kliknij link [Webmail](/links/web/email) i wprowadź dane dostępowe do konta e-mail, dla którego udzielone zastało dane prawo. Po zalogowaniu kliknij prawym przyciskiem myszy nazwę konta w menu po lewej stronie, następnie zaznacz `Dodaj współdzielony katalog`{.action}.
 
 W oknie, które się wyświetla wskaż nazwę konta, którego dotyczy przyznane prawo, a następnie kliknij `Dodaj`{.action}. Konto wyświetla się wówczas w menu po lewej stronie. Możesz przejrzeć jego zawartość. 
 
@@ -105,7 +105,7 @@ Teraz kliknij `Ustawienia dodatkowe`{.action}. W nowym oknie przejdź do zakład
 
 - **Przy użyciu webmail Outlook Web App (OWA)**
 
-Kliknij link <https://www.ovh.pl/mail/> i wprowadź dane dostępowe do konta e-mail, dla którego udzielone zastało dane prawo. Po zalogowaniu się kliknij przycisk `Nowa wiadomość`{.action} i rozpocznij pisanie e-maila.
+Kliknij link [Webmail](/links/web/email) i wprowadź dane dostępowe do konta e-mail, dla którego udzielone zastało dane prawo. Po zalogowaniu się kliknij przycisk `Nowa wiadomość`{.action} i rozpocznij pisanie e-maila.
 
 W obszarze, który się wyświetli kliknij przycisk z trzema kropkami, po czym kliknij `Wyświetl pole „Od”`{.action}. Teraz kliknij przycisk `Od`{.action} i zaznacz konto (do którego posiadasz przydzielone prawo), które wyświetli się jako nadawca . Jeśli żądane konto się nie wyświetla, usuń to, które zostało wprowadzone i wpisz odpowiednie. 
 
@@ -131,7 +131,7 @@ Teraz możesz zredagować wiadomość e-mail i wysłać ją.
 
 - **Przy użyciu webmail Outlook Web App (OWA)**
 
-Kliknij link <https://www.ovh.pl/mail/> i wprowadź dane dostępowe do konta e-mail, dla którego udzielone zastało dane prawo. Po zalogowaniu się kliknij przycisk `Nowa wiadomość`{.action} i rozpocznij pisanie e-maila.
+Kliknij link [Webmail](/links/web/email) i wprowadź dane dostępowe do konta e-mail, dla którego udzielone zastało dane prawo. Po zalogowaniu się kliknij przycisk `Nowa wiadomość`{.action} i rozpocznij pisanie e-maila.
 
 W obszarze, który się wyświetli kliknij przycisk z trzema kropkami, po czym kliknij `Wyświetl pole „Od”`{.action} Teraz kliknij przycisk `Od`{.action} i zaznacz konto (do którego posiadasz przydzielone prawo), które wyświetli się jako nadawca . Jeśli żądane konto się nie wyświetla, usuń to, które zostało wprowadzone i wpisz odpowiednie. 
 

@@ -81,7 +81,7 @@ Jeśli wprowadzasz ręcznie dane techniczne w ustawieniach konta, poniżej znajd
 
 Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz zacząć wysyłać i odbierać wiadomości.
 
-OVHcloud oferuje również aplikację internetową [funkcje do pracy zespołowej](/links/web/emails). Jest ona dostępna pod adresem <https://www.ovh.pl/mail/>. Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail.
+OVHcloud oferuje również aplikację internetową [funkcje do pracy zespołowej](/links/web/emails). Jest ona dostępna pod adresem [Webmail](/links/web/email). Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail.
 
 ## Sprawdź również
 

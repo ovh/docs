@@ -102,13 +102,9 @@ To send an email from your OVHcloud Email Pro address via the Gmail online inter
 
 ![emailpro](images/configuration-gmail-web-step6.png){.thumbnail}
 
-Please also note that you can still use our online interface, accessible via <https://www.ovh.ie/mail/>, to access your OVHcloud Email Pro address. You just need to use your usual credentials to log in.
+Please also note that you can still use our online interface, accessible via [Webmail](/links/web/email), to access your OVHcloud Email Pro address. You just need to use your usual credentials to log in.
 
 ## Go further <a name="go-further"></a>
-
-> [!primary]
->
-> For more information on configuring an email address from the online Gmail interface, see [Google Help Center](https://support.google.com/mail/answer/21289?hl=en&co=GENIE.Platform%3DDesktop).
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 

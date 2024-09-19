@@ -104,7 +104,7 @@ Una vez que haya configurado la dirección de correo electrónico, ¡ya puede em
 
 > [!success]
 >
-> OVHcloud ofrece una aplicación web con la que podrá acceder a su dirección de correo electrónico desde un navegador web en la dirección <https://www.ovhcloud.com/es-es/mail/>. Puede conectarse con las claves de su dirección de correo electrónico.
+> OVHcloud ofrece una aplicación web con la que podrá acceder a su dirección de correo electrónico desde un navegador web en la dirección [Webmail](/links/web/email). Puede conectarse con las claves de su dirección de correo electrónico.
 
 ### Configuración POP, IMAP y SMTP
 

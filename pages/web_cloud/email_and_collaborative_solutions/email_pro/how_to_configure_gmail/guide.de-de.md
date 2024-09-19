@@ -103,13 +103,9 @@ Um eine Nachricht mit Ihrer OVHcloud E-Mail Pro Adresse über das Gmail-Interfac
 
 ![emailpro](images/configuration-gmail-web-step6.png){.thumbnail}
 
-Natürlich können Sie auch weiterhin unser Webinterface unter <https://www.ovh.de/mail> verwenden, um auf Ihre OVHcloud E-Mail Pro Adresse zuzugreifen. Loggen Sie sich hierzu wie gewohnt mit Ihren zugehörigen Login-Daten ein.
+Natürlich können Sie auch weiterhin unser Webinterface unter [Webmail](/links/web/email) verwenden, um auf Ihre OVHcloud E-Mail Pro Adresse zuzugreifen. Loggen Sie sich hierzu wie gewohnt mit Ihren zugehörigen Login-Daten ein.
 
 ## Weiterführende Informationen <a name="go-further"></a>
-
-> [!primary]
->
-> Für mehr Informationen zur Konfiguration einer E-Mail-Adresse über das Gmail-Interface, [Google Help Center](https://support.google.com/mail/answer/21289?hl=de&co=GENIE.Platform%3DDesktop).
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 

@@ -105,7 +105,7 @@ Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vou
 
 > [!success]
 >
-> OVHcloud propose une application web permettant d'accéder à votre adresse e-mail depuis un navigateur web, à l’adresse <https://www.ovhcloud.com/fr/mail/>. Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail.
+> OVHcloud propose une application web permettant d'accéder à votre adresse e-mail depuis un navigateur web, à l’adresse [Webmail](/links/web/email). Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail.
 
 ### Paramètres POP, IMAP  et SMTP
 

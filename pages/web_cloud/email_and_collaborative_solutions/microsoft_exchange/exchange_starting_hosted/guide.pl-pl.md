@@ -132,7 +132,7 @@ Konta oczekujące na konfigurację wyświetlane są w tabeli w postaci “*@conf
 
 ### Korzystanie z kont e-mail
 
-Po skonfigurowaniu Twoich kont możesz zacząć ich używać. W tym celu OVHcloud udostępnia webmail **Outlook Web App** (OWA). Znajdziesz go pod linkiem <https://www.ovhcloud.com/pl/mail/>. Aby się zalogować, wpisz dane identyfikacyjne przypisane do Twojego konta e-mail. Jeśli potrzebujesz pomocy w zakresie użytkowania OWA, skorzystaj z [naszej dokumentacji](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
+Po skonfigurowaniu Twoich kont możesz zacząć ich używać. W tym celu OVHcloud udostępnia webmail **Outlook Web App** (OWA). Znajdziesz go pod linkiem [Webmail](/links/web/email). Aby się zalogować, wpisz dane identyfikacyjne przypisane do Twojego konta e-mail. Jeśli potrzebujesz pomocy w zakresie użytkowania OWA, skorzystaj z [naszej dokumentacji](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
 
 Jeśli pierwszy raz logujesz się do interfejsu OWA webmail przy użyciu tego adresu e-mail, pojawi się monit o ustawienie języka interfejsu i strefy czasowej. Następnie kliknij przycisk `Zapisz`{.action}, aby kontynuować.
 

@@ -71,7 +71,7 @@ La manière de faire est différente selon le ou les droits que vous avez délé
 
 - **Depuis le webmail Outlook Web App (OWA)**
 
-Rendez-vous à l'adresse <https://www.ovh.com/ca/fr/mail/> et renseignez les identifiants du compte Exchange disposant du droit délégué. Une fois connecté, effectuez un clic droit sur le nom du compte dans le menu à gauche, puis sélectionnez `Ajouter un dossier partagé`{.action}.
+Rendez-vous à l'adresse [Webmail](/links/web/email) et renseignez les identifiants du compte Exchange disposant du droit délégué. Une fois connecté, effectuez un clic droit sur le nom du compte dans le menu à gauche, puis sélectionnez `Ajouter un dossier partagé`{.action}.
 
 Dans la fenêtre qui apparaît, indiquez le nom du compte pour lequel vous bénéficiez du droit délégué puis cliquez sur `Ajouter`{.action}. Le compte s'affiche alors dans le menu de gauche, vous permettant d'en explorer son contenu.
 
@@ -91,7 +91,7 @@ Cliquez à présent sur `Paramètres supplémentaires`{.action}. Dans la nouvell
 
 - **Depuis le webmail Outlook Web App (OWA)**
 
-Rendez-vous à l'adresse <https://www.ovh.com/ca/fr/mail/> et renseignez les identifiants du compte Exchange disposant du droit délégué. Une fois connecté, débutez la rédaction d'un nouveau message en appuyant sur le bouton `+ Nouveau`{.action}.
+Rendez-vous à l'adresse [Webmail](/links/web/email) et renseignez les identifiants du compte Exchange disposant du droit délégué. Une fois connecté, débutez la rédaction d'un nouveau message en appuyant sur le bouton `+ Nouveau`{.action}.
 
 Dans la zone qui apparaît, cliquez sur le bouton représentant trois points puis sur `Afficher le champ De`{.action}. Cliquez ensuite sur le bouton `De`{.action} et sélectionnez l'adresse qui apparaîtra en tant qu'expéditeur (pour laquelle vous disposez du droit délégué). Si celle-ci n'apparaît pas, supprimez celle déjà renseignée et inscrivez celle souhaitée. 
 
@@ -113,7 +113,7 @@ Il ne vous reste plus qu'à rédiger votre message et à l'envoyer.
 
 - **Depuis le webmail Outlook Web App (OWA)**
 
-Rendez-vous à l'adresse <https://www.ovh.com/ca/fr/mail/> et renseignez les identifiants du compte Exchange disposant du droit délégué. Une fois connecté, débutez la rédaction d'un nouveau message en appuyant sur le bouton `+ Nouveau`{.action}.
+Rendez-vous à l'adresse [Webmail](/links/web/email) et renseignez les identifiants du compte Exchange disposant du droit délégué. Une fois connecté, débutez la rédaction d'un nouveau message en appuyant sur le bouton `+ Nouveau`{.action}.
 
 Dans la zone qui s'affiche, cliquez sur le bouton représentant trois points puis sur `Afficher le champ De`{.action}. Cliquez ensuite sur le bouton `De`{.action} et sélectionnez l'adresse qui apparaîtra en tant qu'expéditeur (pour laquelle vous disposez du droit délégué). Si celle-ci n'apparaît pas, supprimez celle déjà renseignée et inscrivez celle souhaitée. 
 
