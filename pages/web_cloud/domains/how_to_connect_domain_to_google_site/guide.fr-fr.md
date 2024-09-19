@@ -1,7 +1,7 @@
 ---
 title: Comment connecter un nom de domaine OVHcloud à un Google site
 excerpt: Préparez et configurez la zone DNS de votre nom de domaine OVHcloud pour la connecter à un Google Site
-updated: 2024-09-18
+updated: 2024-09-20
 ---
 
 ## Objectif
@@ -79,7 +79,7 @@ Suivez les étapes dans l'ordre en parcourant les onglets suivants:
 >>
 >> - Si des enregistrements « TXT » sont présents pour le nom de domaine seul (exemple: `mydomain.ovh.`) et pour son sous-domaine en « www » (exemple: `www.mydomain.ovh.`), vous devez les supprimer pour qu'ils ne rentrent pas en conflit avec l'enregistrement CNAME que vous allez renseigner à l'étape 4. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre nom de domaine seul avec le sous-domaine « www »  puis cliquez sur `Supprimer l'entrée`{.action}.<br>
 >> - Vous devez créer un enregistrement de type « TXT ». Cliquez sur le bouton `Ajouter une entrée`{.action} en haut à droite de votre écran et sélectionnez le « Champ de pointage » `TXT`{.action}.
->> Complétez les champs **Sous-domaine** et **Cible** avec les informations présentes dans la page « [Valeurs des enregistrements TXT](https://support.google.com/a/answer/2716802?hl=fr&ref_topic=2716886&sjid=3052810298579211755-EU){.external} » de la documentation officielle. Généralement, la valeur du champ **Sous-domaine** est vide, et celle du champ **Cible** est de type `google-site-verification=XXXXXXXXXXXX`.<br>
+>> Complétez les champs **Sous-domaine** et **Cible** avec les informations présentes sur la page « [Valeurs des enregistrements TXT](https://support.google.com/a/answer/2716802?hl=fr&ref_topic=2716886&sjid=3052810298579211755-EU){.external} » de la documentation officielle. Généralement, la valeur du champ **Sous-domaine** est vide, et celle du champ **Cible** est de type `google-site-verification=XXXXXXXXXXXX`.<br>
 >> Cliquez sur `Suivant`{.action} pour valider votre enregistrement « TXT » et passez à l'étape 4.
 > **Etape 4**
 >> **Enregistrement CNAME**<br><br>
@@ -88,8 +88,7 @@ Suivez les étapes dans l'ordre en parcourant les onglets suivants:
 >>
 >> - Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre sous-domaine en « www.» (exemple: `mydomain.ovh.`) puis cliquez sur `Modifier l'entrée`{.action}.<br>
 >> - Si vous n'avez pas d'enregistrement « CNAME » existant, cliquez sur le bouton `Ajouter une entrée`{.action} en haut à droite de votre écran et sélectionnez le « Champ de pointage » `CNAME`{.action}.
->> Complétez le champ **Sous-domaine** avec la valeur `www` et saisissez `ghs.googlehosted.com` dans le champ **Cible**.<br>
->> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-to-the-dns-zone-cname-webflow.png){.thumbnail}<br><br>
+>> Complétez le champ **Sous-domaine** avec la valeur `www` et saisissez `ghs.googlehosted.com.` dans le champ **Cible**. Ces valeurs étant amenées à changer, vérifiez-les sur la page « [Valeurs des enregistrements CNAME](https://support.google.com/a/answer/112038?sjid=3052810298579211755-EU){.external} » de la documentation officielle<br>
 >> Cliquez sur `Suivant`{.action} pour valider votre enregistrement « CNAME ».
 
 La zone DNS est maintenant configurée pour faire le lien avec votre Google Site.
@@ -99,3 +98,19 @@ La zone DNS est maintenant configurée pour faire le lien avec votre Google Site
 > La vérification de votre nom de domaine peut prendre jusqu’à 48 heures.
 
 Si vous utilisez une offre e-mail OVHcloud ou que vous prévoyez de souscrire à l'une de [nos offres e-mail](/links/web/emails), vous devez également préparer vote zone DNS en conséquence. Consultez notre guide sur la [configuration d’un enregistrement MX](/pages/web_cloud/domains/dns_zone_mx).
+
+## Aller plus loin <a name="go-further"></a>
+
+[Modifier les serveurs DNS d’un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
+
+[Créer une zone DNS OVHcloud pour un nom de domaine](/pages/web_cloud/domains/dns_zone_create)
+
+[Editer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
+
+Pour modifier la gestion de votre nom de domaine vers un autre compte client OVHcloud, suivez le guide « [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts) ».
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).
