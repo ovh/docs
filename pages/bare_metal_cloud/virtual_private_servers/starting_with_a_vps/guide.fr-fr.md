@@ -14,7 +14,7 @@ Un serveur privé virtuel (VPS) est un serveur dédié virtualisé qui vous offr
 
 ## Prérequis
 
-- Disposer d'une offre [VPS](https://www.ovhcloud.com/fr/vps/) active dans votre espace client OVHcloud
+- Disposer d'une offre [VPS](/links/bare-metal/vps) active dans votre espace client OVHcloud
 - Être connecté à votre [espace client OVHcloud](/links/manager)
 
 ## En pratique
