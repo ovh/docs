@@ -40,7 +40,7 @@ L'onglet `Accueil`{.action} contient des informations importantes sur votre serv
 
 #### Votre VPS <a name="yourvps"></a>
 
-Retrouvez ci-dessous les informations de base sur votre VPS et l’état du service.
+Retrouvez ci-dessous les informations de base sur votre VPS et l’état du service. Cliquez sur les onglets ci-dessous pour afficher les détails.
 
 > [!tabs]
 > Nom
