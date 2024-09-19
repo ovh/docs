@@ -66,7 +66,7 @@ Retrouvez ci-dessous les informations de base sur votre VPS et l’état du serv
 >> > Si vous avez commandé un VPS **Windows**, vous ne pouvez choisir qu’un OS Windows pour la réinstallation. De même, si Windows n’a pas été sélectionné lors de la commande, il ne pourra pas être installé après la livraison du VPS.
 >>
 >>
->> Une fois le système installé, il vous appartient d’implémenter les mises à jour de sécurité. Vous trouverez plus d'informations dans la section « [Réinstaller votre VPS](#reinstallvps) » et dans notre guide « [Sécuriser un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps) ».
+>> Une fois le système installé, il vous appartient d’implémenter les mises à jour de sécurité. Vous trouverez plus d'informations [ci-dessous](#reinstallvps) ainsi que dans notre guide « [Sécuriser un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps) ».
 >> 
 > Zone / Localisation
 >>
