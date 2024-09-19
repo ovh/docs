@@ -1,7 +1,7 @@
 ---
 title: Premiers pas avec un VPS
 excerpt: "Apprenez à gérer un VPS dans votre espace client et découvrez les premières étapes de son utilisation, notamment les connexions à distance et les mesures de sécurité"
-updated: 2024-09-17
+updated: 2024-09-19
 ---
 
 ## Objectif
@@ -45,7 +45,7 @@ Retrouvez ci-dessous les informations de base sur votre VPS et l’état du serv
 > [!tabs]
 > Nom
 >>
->> Pour personnaliser le nom de votre VPS, cliquez sur `...`{.action}, puis sélectionnez `Changer le nom`{.action}. Cette fonctionnalité est utile pour faciliter la navigation dans l’espace client lorsque vous gérez plusieurs services VPS. Toutefois, le nom interne du service reste au format *vps-XXXXXXX.vps.ovh.net*.
+>> Pour personnaliser le nom de votre VPS, cliquez sur le bouton `...`{.action}, puis sélectionnez `Changer le nom`{.action}. Cette fonctionnalité est utile pour faciliter la navigation dans l’espace client lorsque vous gérez plusieurs services VPS. Toutefois, le nom interne du service reste au format *vps-XXXXXXX.vps.ovh.net*.
 >>
 > Boot
 >>
