@@ -1,7 +1,7 @@
 ---
 title: "Configurer et utiliser Git avec son hébergement web OVHcloud"
 excerpt: "Découvrez comment configurer et utiliser Git avec votre hébergement web dans votre espace client OVHcloud"
-updated: 2024-08-22
+updated: 2024-09-12
 ---
 
 ## Objectif
@@ -15,6 +15,10 @@ Dans le paysage numérique actuel, les sociétés sont de plus en plus dynamique
 - Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting).
 - Être connecté à votre [espace client OVHcloud](/links/manager), partie Web Cloud.
 - Posséder un compte [GitHub](https://github.com/){.external} et y être connecté.
+
+> [!primary]
+>
+> A date, seule la plateforme GitHub est supportée dans le cadre de l'utilisation avec les services d'hébergement Web OVHcloud.
 
 ## En pratique
 
@@ -88,7 +92,7 @@ Définissez un nom pour votre dépôt et remplissez les informations demandées.
 
 Enfin, cliquez sur `Create Repository`{.action}.
 
-Copiez l'adresse de votre dépôt GitHub. Celle-ci doit être de la forme `https://github.com/<username>/<repository_name.git>`{.action}. Retournez sur le formulaire d'association de Git et collez l'adresse de votre dépôt GitHub dans le champ `Dépôt`{.action}. Si le format de l'adresse n'est pas correct, le message d'erreur suivant apparaît :
+Copiez l'adresse de votre dépôt GitHub. Celle-ci doit être de la forme `https://github.com/<username>/<repository_name.git>`. Retournez sur le formulaire d'association de Git et collez l'adresse de votre dépôt GitHub dans le champ `Dépôt`{.action}. Si le format de l'adresse n'est pas correct, le message d'erreur suivant apparaît :
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/error-wrong-git-branch-name.png){.thumbnail}
 
@@ -112,7 +116,7 @@ En bas du formulaire d'association de Git, une section `Configuration du déploi
 Avant de valider le formulaire d'association de Git, assurez-vous que :
 
 - Votre clé SSH a bien été enregistrée dans votre compte GitHub.
-- L'adresse de votre dépôt GitHub est correcte. Elle doit être de la forme `https://github.com/<username>/<repository_name.git>`{.action}.
+- L'adresse de votre dépôt GitHub est correcte. Elle doit être de la forme `https://github.com/<username>/<repository_name.git>`.
 - Le nom de la branche du dépôt GitHub est correct.
 - Votre répertoire d'installation est vide.
 
@@ -128,7 +132,7 @@ Après avoir validé le formulaire s'association de Git, vous êtes redirigé su
 
 Une bannière verte vous indique que Git est en cours d'activation. Suivez l'activation de Git en cliquant sur le lien `Tâche en cours`{.action}.
 
-![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/ongoing-task-git-activation.png){.thumbnail}
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ongoing-tasks/ongoing-task-git-activation.png){.thumbnail}
 
 Le statut `En cours`{.action} indique que l'association de Git est en cours. Le processus peut prendre plusieurs minutes. Lorsque la tâche est achevée, le statut `Activé`{.action} s'affiche.
 

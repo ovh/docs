@@ -33,11 +33,11 @@ When creating an instance in the OVHcloud Control Panel, you can add only one SS
 ### Step 1: Create a new SSH key pair
 
 If necessary, use our [SSH key guide](/pages/public_cloud/compute/creating-ssh-keys-pci) to create a new SSH key pair.  
-You can also find information on [managing multiple keys](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key) on your local device if your setup requires it.
+You can also find information on [managing multiple keys](/pages/public_cloud/compute/creating-ssh-keys-pci#multiplekeys) on your local device if your setup requires it.
 
 ### Step 2: Configure a new user account
 
-[Connect to your instance](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance) and use the commands below to create a new user account and `.ssh` folder:
+[Connect to your instance](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) and use the commands below to create a new user account and `.ssh` folder:
 
 ```bash
 sudo adduser user2
@@ -119,7 +119,7 @@ If you receive an error message instead, you can always add your public keys man
 
 #### Adding public keys to the instance manually
 
-[Connect to your instance](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance) and open the file `authorized_keys` in the personal folder of the new user with your preferred text editor (`nano` is used in this example):
+[Connect to your instance](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) and open the file `authorized_keys` in the personal folder of the new user with your preferred text editor (`nano` is used in this example):
 
 ```bash
 sudo nano /home/user2/.ssh/authorized_keys

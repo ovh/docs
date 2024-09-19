@@ -14,7 +14,7 @@ Os "módulos 1 clique" permitem a instalação fácil e rápida de um website (s
 
 **Descubra como instalar o seu site através dos nossos "módulos 1 clique".**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZrYmmPbMl4I?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/ZrYmmPbMl4I?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Requisitos
 

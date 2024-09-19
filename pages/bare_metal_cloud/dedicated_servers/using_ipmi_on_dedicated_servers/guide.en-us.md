@@ -21,7 +21,7 @@ With the IPMI (Intelligent Platform Management Interface) console, you can acces
 
 ## Instructions
 
-You can access the IPMI using several different methods¹. Here is a summary:
+You can access the IPMI using several different methods¹. SSH keys stored on the server will not be used for these connections. Here is a summary:
 
 |Method Name|Short Name|Description|Copy-Paste|Virtual ISO reader²|Use Case Example|
 |---|---|---|---|---|---|
@@ -51,7 +51,7 @@ Download the file `kvm.jnlp` when you are prompted to do so, and run it:
 
 ![Java KVM Opening](images/ipmi-kvm-java-02.png){.thumbnail}
 
-You will then land on the login page, where you will be prompted to enter your `root` credentials, as you would need to when logging in via a terminal or external software application:
+You will then land on the login page, where you will be prompted to enter your credentials, as you would need to when logging in via a terminal or external software application:
 
 ![Java KVM Overview](images/ipmi-kvm-java-03.png){.thumbnail}
 

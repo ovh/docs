@@ -117,6 +117,7 @@ public-cloud-containers-orchestration-managed-private-registry-getting-started: 
 public-cloud-containers-orchestration-managed-private-registry-tutorials: Tutorials
 public-cloud-containers-orchestration-managed-rancher-service: Managed Rancher Service (MRS)
 public-cloud-containers-orchestration-managed-rancher-service-getting-started: Getting started
+public-cloud-containers-orchestration-managed-rancher-service-resources: Resources
 public-cloud-containers-orchestration-managed-rancher-service-creating-importing-kubernetes: Creating or importing a Kubernetes cluster
 public-cloud-containers-orchestration-managed-rancher-service-operations-kubernetes: Operations on a Kubernetes cluster
 public-cloud-containers-orchestration-managed-rancher-service-deploy-applications: Deploying applications with Rancher

@@ -1,7 +1,7 @@
 ---
 title: 'Managing users and projects in Managed Rancher Service'
 excerpt: 'Find out how to manage users and projects in your OVHcloud Managed Rancher Service'
-updated: 2024-08-05
+updated: 2024-09-11
 ---
 
 <style>
@@ -129,12 +129,14 @@ You can do the same thing for all of the namespaces you want.
 
 ### Go further
 
-To have an overview of OVHcloud Managed Rancher Service, you can go to the [OVHcloud Managed Rancher Service page](https://www.ovhcloud.com/de/public-cloud/managed-rancher-service/).
+To have an overview of OVHcloud Managed Rancher Service, you can go to the [OVHcloud Managed Rancher Service page](/links/public-cloud/rancher).
 
 Follow the offical documentation from Rancher to know more about:
 
 - [Projects](https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/manage-clusters/projects-and-namespaces)
 - [Adding users to projects](https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/add-users-to-projects)
 - [Users global permissions](https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/authentication-permissions-and-global-configuration/manage-role-based-access-control-rbac/global-permissions)
+
+Our team remains available on our dedicated Discord Channel, do not hesitate to join and reach us : <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our Container and Orchestration services.
 
 Join our [community of users](/links/community).

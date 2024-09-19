@@ -1,7 +1,7 @@
 ---
-title: "Creating network components from the VCD control panel"
+title: "VMware Cloud Director - Creating network components from the VCD control panel"
 excerpt: "Find out how to easily create network components within the VCD on OVHcloud control panel"
-updated: 2024-08-20
+updated: 2024-09-17
 ---
 
 <style>
@@ -19,9 +19,9 @@ details[open]>summary::before {
 </style>
 
 > [!primary]
-> 
-> VCD on OVHcloud is currently in Alpha phase. This guide may be incomplete and will be updated.
-> 
+>
+> VCD on OVHcloud is currently in Alpha phase. This guide can evolve and be updated in the future with the advances of our teams in charge of this product.
+>
 
 ## Objective
 
@@ -30,7 +30,7 @@ details[open]>summary::before {
 ## Requirements
 
 > [!primary]
-> 
+>
 > If you are unsure how to log in to your organization's web portal, first refer to the guide: [How to log in to VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging).
 >
 
@@ -56,7 +56,7 @@ Before creating a network, the main concept to understand with VMware Cloud Dire
 ### Step 1: Create the IP space (recommended)
 
 > [!primary]
-> 
+>
 > You can use a new method of managing your IP space in VMware Cloud Director with the new IP space management subsystem.
 >
 
@@ -127,7 +127,7 @@ Next, we will move on to the VCD section `VCD`{.action} > `Network`{.action} > `
 ### Step 2 - Create a datacentre group (optional)
 
 > [!primary]
-> 
+>
 > You can use a new method of managing your IP space in VMware Cloud Director with the new IP space management subsystem.
 >
 
@@ -272,7 +272,7 @@ The **"routed"** allows incoming traffic, while the **"isolated"** forbids it.
 For a routed network, if your `VDC-FR/US/CA-GRA-XXX-XXX` vDC does not have an Edge Gateway available, you will get this error:
 
 > [!warning]
-> 
+>
 > The vDC “vDC-FR-GRA-XXXX-Corp” has no Edge Gateway available.
 >
 
@@ -303,7 +303,7 @@ If it has been created, it will automatically appear in the list (see next scree
 **Dual-Stack Mode**: Enables the network to have one IPv4 subnet and one IPv6 subnet.
 
 > [!warning]
-> 
+>
 > You cannot undo the activation of dual stack networking mode.
 >
 
@@ -404,9 +404,10 @@ Your network is now fully created and ready to use.
 ## Go further
 
 You can now follow the steps of the next guide :
-- **Coming soon:** Guide 3 - VMware Cloud Director on OVHcloud - Network - How to create an IPsec tunnel with VCD on OVHcloud ?.
 
-If you experience any network issues within VCD on OVHcloud, please read our guide "[VMware Cloud Director on OVHcloud - Network - Concepts](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts)".
+- **Coming soon:** Guide 3 - VMware Cloud Director on OVHcloud - Network - How to create an IPsec tunnel with VCD on OVHcloud ?
+
+If you experience any network issues within VCD on OVHcloud, please read our guide « [VMware Cloud Director on OVHcloud - Network - Concepts](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts) »
 
 If you require training or technical assistance in implementing our solutions, contact your sales representative or [click here](/links/professional-services) for a quote and request a custom analysis of your project from our Professional Services team experts.
 

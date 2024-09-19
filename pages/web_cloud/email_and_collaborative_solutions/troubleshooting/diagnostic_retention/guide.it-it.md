@@ -43,7 +43,7 @@ Il recupero degli elementi eliminati può essere effettuato dalla Webmail (OWA) 
 
 ### Come ripristinare gli elementi eliminati?
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI?start=117" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI?start=117" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Accedi alla Webmail (OWA) al tuo indirizzo email: [Webmail](/links/web/email).
 

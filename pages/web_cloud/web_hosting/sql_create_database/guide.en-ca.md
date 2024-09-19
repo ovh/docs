@@ -132,7 +132,7 @@ This information is essential for your website to connect to the database.
 If you need to retrieve this connection information, log in to your [OVHcloud Control Panel](/links/manager) and go to the `Web Cloud`{.action} section. Click `Hosting plans`{.action} in the left-hand column, select the hosting plan on which you want to retrieve the information for connecting to your database, then click on the `Databases`{.action} tab.
 
 You will find the information required to connect to your database in the table that appears. This excludes passwords for security reasons.
-+-
+
 > [!warning]
 >
 > If you do not have the password for your database connection, please read our guide on [Changing your database password](/pages/web_cloud/web_hosting/sql_change_password).

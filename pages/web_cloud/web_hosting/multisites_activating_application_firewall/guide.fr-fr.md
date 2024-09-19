@@ -56,7 +56,7 @@ Cliquez sur `Suivant`{.action}, puis sur `Confirmer`{.action} pour modifier les 
 
 ### Vérifier l'état de la tâche d'activation
 
-![gestion en cours](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/firewall-planned.png){.thumbnail}
+![gestion en cours](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ongoing-tasks/firewall-planned.png){.thumbnail}
 
 Les tâches de mise à jour de votre configuration multisite seront répertoriées dans l'onglet `Opérations en cours`{.action} (le statut initial est « Planifié »). Le pare-feu sera actif dès que sa tâche de mise à jour n'apparaîtra plus dans la liste.
 

@@ -14,7 +14,7 @@ I "moduli in 1 click" permettono l'installazione semplice e rapida di un sito We
 
 **Questa guida ti mostra come installare il tuo sito utilizzando i nostri moduli in 1 click.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZrYmmPbMl4I?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/ZrYmmPbMl4I?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Prerequisiti
 

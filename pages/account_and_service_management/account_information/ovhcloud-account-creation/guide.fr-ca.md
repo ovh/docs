@@ -55,7 +55,7 @@ Pour la plupart des comptes hors d'Europe, il est remplacé par l'adresse e-mail
 
 ## Aller plus loin
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/odO58c4gJfc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/odO58c4gJfc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Maintenant que votre compte OVHcloud est créé, nous vous recommandons de suivre nos [recommandations sur la sécurité de votre compte et la gestion de vos données personnelles](/pages/account_and_service_management/account_information/all_about_username).
 

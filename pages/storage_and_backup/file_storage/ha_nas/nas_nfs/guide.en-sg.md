@@ -1,7 +1,7 @@
 ---
 title: Mounting HA-NAS via NFS share
 excerpt: Find out how to connect to your HA-NAS using an NFS share
-updated: 2024-09-04
+updated: 2024-09-18
 ---
 
 ## Objective 
@@ -291,6 +291,7 @@ XX.XX.XX.XX:/zpool-XXXXXX/DIR on /mnt type nfs4 (rw,relatime,vers=4.2,rsize=1310
 
 - Since NFSv3 is stateless, performance with NFSv3 can be significantly better for some workloads, especially those that make a lot of OPEN, CLOSE, SETATTR, and GETATTR calls.
 - If you host a database on your NFS share, please be aware that in the event of network disconnections, the NFS v4.x protocol-specific lock mechanism may cause your application to shut down (see this rfc for more details: <https://datatracker.ietf.org/doc/rfc3530/>).
+- If you host VMware virtual machines on your NFS share, please note that the lock mechanism built into the NFSv4.x version is not compatible with the clustering mode implemented on your HA-NAS (cluster in active/passive mode explained on [this page](/links/storage/nas-ha)). It is therefore imperative to use the NFSv3 protocol, otherwise you will lose access to your datastore during an incident affecting the primary server, or during a scheduled maintenance operation.
 
 ### Improve read performance by modifying the read_ahead_kb attribute
 

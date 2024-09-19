@@ -44,7 +44,7 @@ Em resumo, alterar a configuração do seu alojamento web a partir da [Área de 
 
 **Saiba como alterar o ambiente de execução, a versão PHP, a firewall aplicacional, o motor, o modo e o ficheiro ".ovhconfig" de um alojamento web.**
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/X31MNMLw064" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/X31MNMLw064" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Requisitos
 
@@ -97,7 +97,7 @@ Certas versões de PHP só funcionam com certos ambientes de execução. Encontr
 |---|---| 
 |5.4, 5.5, 5.6 e 7.0|Legacy, Stable|
 |7.1, 7.2 e 7.3|Stable|
-|7.4, 8.0, 8.1 e 8.2|stable64|
+|7.4, 8.0, 8.1,8.2 e 8.3|stable64|
 
 > [!primary]
 >

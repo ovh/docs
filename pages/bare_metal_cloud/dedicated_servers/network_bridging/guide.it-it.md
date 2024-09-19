@@ -19,7 +19,7 @@ La connessione di rete in modalità bridge può essere utilizzata per configurar
 
 **Questa guida ti mostra come utilizzare la modalità bridge per configurare l'accesso a Internet per le tue macchine virtuali.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/TZZbPe9hCOk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/TZZbPe9hCOk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Prerequisiti
 

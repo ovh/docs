@@ -25,7 +25,7 @@ Die IPMI-Konsole (Intelligent Platform Management Interface) ermöglicht eine di
 
 ## In der praktischen Anwendung
 
-Die Verbindung mit IPMI kann auf verschiedene Arten hergestellt werden¹:
+Die Verbindung mit IPMI kann auf verschiedene Arten hergestellt werden¹. Auf dem Server konfigurierte SSH-Schlüssel werden nicht für diese Verbindungen verwendet. Zusammenfassung:
 
 |Methode|Alternativer Name|Beschreibung|Kopieren-Einfügen|Virtuelles ISO-Laufwerk²|Anwendungsfälle|
 |---|---|---|---|---|---|

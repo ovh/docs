@@ -25,8 +25,7 @@ Für einen *Legacy* VPS bestehen einige Unterschiede bezüglich dessen Verwaltun
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager
-) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie links im Menü unter `Virtual Private Server`{.action} Ihren Server aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie links im Menü unter `Virtual Private Server`{.action} Ihren Server aus.
 
 Im Tab `Startseite`{.action} finden Sie unter **Shortcuts** die wichtigsten Verwaltungsfunktionen Ihres VPS.
 

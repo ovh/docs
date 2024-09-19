@@ -38,11 +38,11 @@ Bei der Erstellung einer Instanz in Ihrem Kundencenter können Sie nur einen SSH
 ### Schritt 1: Neues SSH-Schlüsselpaar erstellen
 
 Verwenden Sie bei Bedarf unsere [Anleitung zu SSH-Schlüsseln](/pages/public_cloud/compute/creating-ssh-keys-pci), um ein neues SSH-Schlüsselpaar zu erstellen.  
-Sie finden dort auch Informationen zur [Verwaltung mehrerer Schlüssel](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key) auf Ihrem lokalen Gerät, falls Ihre Umgebung dies erfordert.
+Sie finden dort auch Informationen zur [Verwaltung mehrerer Schlüssel](/pages/public_cloud/compute/creating-ssh-keys-pci#multiplekeys) auf Ihrem lokalen Gerät, falls Ihre Umgebung dies erfordert.
 
 ### Schritt 2: Neuen Benutzer-Account einrichten
 
-[Verbinden Sie sich mit Ihrer Instanz](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance) und verwenden Sie die folgenden Befehle, um einen neuen Benutzer-Account und den Ordner `.ssh` zu erstellen:
+[Verbinden Sie sich mit Ihrer Instanz](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) und verwenden Sie die folgenden Befehle, um einen neuen Benutzer-Account und den Ordner `.ssh` zu erstellen:
 
 ```bash
 sudo adduser user2
@@ -124,7 +124,7 @@ Wenn stattdessen eine Fehlermeldung angezeigt wird, können Sie die öffentliche
 
 #### Manuelles Hinzufügen öffentlicher Schlüssel zur Instanz
 
-[Verbinden Sie sich mit Ihrer Instanz](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance) und öffnen Sie die Datei `authorized_keys` im persönlichen Ordner des neuen Benutzers mit Ihrem bevorzugten Texteditor (`nano` wird in diesem Beispiel verwendet):
+[Verbinden Sie sich mit Ihrer Instanz](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) und öffnen Sie die Datei `authorized_keys` im persönlichen Ordner des neuen Benutzers mit Ihrem bevorzugten Texteditor (`nano` wird in diesem Beispiel verwendet):
 
 ```bash
 sudo nano /home/user2/.ssh/authorized_keys

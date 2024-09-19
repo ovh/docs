@@ -186,7 +186,7 @@ Asimismo, asegúrese de que el dominio que quiera utilizar para el correo electr
 
 #### Configuración completa de DKIM <a name="firststep"></a>
 
-Para configurar el DKIM, acceda al sitio web <https://api.ovh.com/console/>, conéctese con el botón `Login`{.action} en la parte superior derecha e introduzca sus claves OVHcloud.
+Para configurar el DKIM, acceda al sitio web <https://ca.api.ovh.com/console/>, conéctese con el botón `Login`{.action} en la parte superior derecha e introduzca sus claves OVHcloud.
 
 > Si nunca ha utilizado la API, puede consultar nuestra guía "[Cómo utilizar las API de OVHcloud](/pages/manage_and_operate/api/first-steps)".
 

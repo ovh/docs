@@ -125,7 +125,7 @@ Im neu angezeigten Fenster bietet der Konfigurationsassistent verschiedene Arten
 
 ##### Hinzufügen des OVHcloud SPF-Eintrags <a name="spfrecordovhcloud"></a>
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/tRiy0YKY8dw?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/tRiy0YKY8dw?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Sie haben den `SPF`{.action}-Eintrag ausgewählt und möchten die OVHcloud-Konfiguration anwenden. Diese erlaubt es, alle ausgehenden E-Mail-Server von OVHcloud für die folgenden E-Mail-Angebote einzubeziehen:
 

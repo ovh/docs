@@ -77,7 +77,7 @@ Zmiana hasła za pomocą interfejsu webmail jest dostępna w przypadku ofert e-m
 > W ofercie **Email MXplan (wersja historyczna)** używamy interfejsu Webmail Roundcube. Zmiana hasła jest wykonywana tylko [w Panelu klienta](#controlpanel).
 >
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube wideo player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube wideo player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Przejdź do strony "[Webmail](/links/web/email)". Wprowadź pełny adres e-mail oraz aktualne hasło. Następnie kliknij przycisk `Logowanie`{.action}. 
 

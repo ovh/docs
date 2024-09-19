@@ -40,7 +40,7 @@ In short, changing your Web Hosting plan’s configuration from the [OVHcloud Co
 
 **Find out how to modify a web hosting plan’s runtime environment, PHP version, application firewall, engine, mode and .ovhconfig file.**
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/X31MNMLw064" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/X31MNMLw064" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Requirements
 
@@ -93,7 +93,7 @@ Some PHP versions only work with certain runtime environments. Below are the PHP
 |---|---|
 |5.4, 5.5, 5.6, and 7.0|Legacy, Stable|
 |7.1, 7.2, and 7.3|Stable|
-|7.4, 8.0, 8.1, and 8.2|stable64|
+|7.4, 8.0, 8.1,8.2 and 8.3|stable64|
 
 > [!primary]
 >

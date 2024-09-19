@@ -1,8 +1,11 @@
 ---
 title: "Serveurs dédiés ESXi - FAQ"
 excerpt: "Retrouvez les questions les plus fréquemment posées sur la vague d'attaques ciblant les serveurs ESXi"
-updated: 2023-02-10
+updated: 2024-09-13
 ---
+
+> [!warning]
+> L'hyperviseur ESXi n'est plus supporté par OVHcloud. Retrouvez plus d'informations sur [cette page dédiée](/pages/bare_metal_cloud/dedicated_servers/esxi-end-of-support).
 
 ## Objectif
 
