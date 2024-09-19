@@ -35,7 +35,7 @@ Si « Snapshot » est déjà sur l'état « Activé », passez directement à l'
 
 Veuillez prendre connaissance des informations de tarification de cette option, puis cliquez sur `Commander`{.action}. Vous serez orienté dans le processus de commande et recevrez un e-mail de confirmation.
 
-Pour résilier l'option de service, cliquez sur le bouton `...`{.action} à côté de « Snapshot » et choisissez `Résilier`{.action} dans le menu contextuel.
+Pour résilier l'option, cliquez sur le bouton `...`{.action} à côté de « Snapshot » et choisissez `Résilier`{.action} dans le menu contextuel.
 
 ![snapshotvps](images/snapshot_vps_cancel.png){.thumbnail}
 
