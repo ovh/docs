@@ -1,14 +1,14 @@
 ---
-title: Comment connecter un nom de domaine OVHcloud à un Google site
-excerpt: Préparez et configurez la zone DNS de votre nom de domaine OVHcloud pour la connecter à un Google Site
+title: Comment connecter un nom de domaine OVHcloud à un Google Site
+excerpt: Préparez et configurez la zone DNS de votre nom de domaine OVHcloud pour le connecter à un Google Site
 updated: 2024-09-20
 ---
 
 ## Objectif
 
-Vous possédez un nom de domaine chez OVHcloud et vous souhaitez le connecter à un Google Site. Vous trouverez dans ce guide les étapes de préparation et de configuration de votre zone DNS OVHcloud pour permettre la configuration de votre Google Site.
+Vous possédez un nom de domaine chez OVHcloud et souhaitez le connecter à un Google Site. Vous trouverez dans ce guide les étapes de préparation et de configuration de votre zone DNS OVHcloud pour permettre la configuration de votre Google Site.
 
-**Découvrez comment connecter votre nom de domaine OVHcloud à un Google Site**
+**Découvrez comment connecter votre nom de domaine OVHcloud à un Google Site.**
 
 > [!warning]
 >
@@ -50,7 +50,7 @@ Le tableau qui s'affiche liste l'ensemble des enregistrements DNS du nom de doma
 
 Chaque enregistrement DNS peut être modifié en cliquant sur le bouton `...`{.action} à droite de la ligne du tableau concernée puis en cliquant sur `Modifier l'entrée`{.action}.
 
-Suivez les étapes dans l'ordre en parcourant les onglets suivants:
+Suivez les étapes dans l'ordre en parcourant les onglets suivants :
 
 > [!tabs]
 > **Etape 1**
@@ -58,8 +58,8 @@ Suivez les étapes dans l'ordre en parcourant les onglets suivants:
 >> Pour identifier les enregistrements « A » existants, cliquez sur le menu des filtres en haut du tableau d'enregistrements DNS et sélectionnez `A`.<br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-a.png){.thumbnail}
 >>
->> - Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau qui correspond à votre nom de domaine seul, sans sous-domaine (exemple: `mydomain.ovh.`), puis cliquez sur `Modifier l'entrée`{.action}.<br>
->> - Si un enregistrement pour le sous-domaine « www » est présent (exemple: `www.mydomain.ovh.`), vous devez le supprimer pour qu'il ne rentre pas en conflit avec l'enregistrement CNAME que vous allez renseigner à l'étape 4. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre nom de domaine seul avec le sous-domaine « www »  puis cliquez sur `Supprimer l'entrée`{.action}.<br>
+>> - Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau qui correspond à votre nom de domaine seul, sans sous-domaine (exemple : `mydomain.ovh.`), puis cliquez sur `Modifier l'entrée`{.action}.<br>
+>> - Si un enregistrement pour le sous-domaine « www » est présent (exemple : `www.mydomain.ovh.`), vous devez le supprimer pour qu'il ne rentre pas en conflit avec l'enregistrement CNAME que vous allez renseigner à l'étape 4. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre nom de domaine seul avec le sous-domaine « www »  puis cliquez sur `Supprimer l'entrée`{.action}.<br>
 >> - Si vous n'avez pas d'enregistrement « A » existant, cliquez sur le bouton `Ajouter une entrée`{.action} en haut à droite de votre écran et sélectionnez le « Champ de pointage » `A`{.action}<br><br>
 >> Vous devez créer 4 enregistrements de type « A » successivement afin de renseigner les 4 adresses IPv4 relatives à Google Site. 
 >> Laissez le champ **Sous-domaine** vide et saisissez la première adresse IPv4 de Google Site `216.239.32.21` dans le champ **Cible**.
@@ -69,15 +69,15 @@ Suivez les étapes dans l'ordre en parcourant les onglets suivants:
 >> Pour identifier les enregistrements « AAAA » existants, cliquez sur le menu des filtres en haut du tableau d'enregistrements DNS et sélectionnez `AAAA`.<br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png){.thumbnail}
 >>
->> - Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau qui correspond à votre nom de domaine seul, sans sous-domaine (exemple: `mydomain.ovh.`), puis cliquez sur `Supprimer l'entrée`{.action}.<br>
->> - Si un enregistrement pour le sous-domaine « www » est présent (exemple: `www.mydomain.ovh.`), supprimez-le également pour qu'il ne rentre pas en conflit avec l'enregistrement CNAME que vous allez renseigner à l'étape 4. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre nom de domaine avec le sous-domaine « www » puis cliquez sur `Supprimer l'entrée`{.action}.<br>
+>> - Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau qui correspond à votre nom de domaine seul, sans sous-domaine (exemple : `mydomain.ovh.`), puis cliquez sur `Supprimer l'entrée`{.action}.<br>
+>> - Si un enregistrement pour le sous-domaine « www » est présent (exemple : `www.mydomain.ovh.`), supprimez-le également pour qu'il ne rentre pas en conflit avec l'enregistrement CNAME que vous allez renseigner à l'étape 4. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre nom de domaine avec le sous-domaine « www » puis cliquez sur `Supprimer l'entrée`{.action}.<br>
 >> - Si vous n'avez pas d'enregistrement « AAAA » existant, passez à l'étape 3.
 > **Etape 3**
 >> **Enregistrement TXT**<br><br>
 >>  Pour identifier les enregistrements « TXT » existants, cliquez sur le menu des filtres en haut du tableau d'enregistrements DNS et sélectionnez `TXT`.<br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-txt.png){.thumbnail}
 >>
->> - Si des enregistrements « TXT » sont présents pour le nom de domaine seul (exemple: `mydomain.ovh.`) et pour son sous-domaine en « www » (exemple: `www.mydomain.ovh.`), vous devez les supprimer pour qu'ils ne rentrent pas en conflit avec l'enregistrement CNAME que vous allez renseigner à l'étape 4. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre nom de domaine seul avec le sous-domaine « www »  puis cliquez sur `Supprimer l'entrée`{.action}.<br>
+>> - Si des enregistrements « TXT » sont présents pour le nom de domaine seul (exemple : `mydomain.ovh.`) et pour son sous-domaine en « www » (exemple : `www.mydomain.ovh.`), vous devez les supprimer pour qu'ils ne rentrent pas en conflit avec l'enregistrement CNAME que vous allez renseigner à l'étape 4. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre nom de domaine seul avec le sous-domaine « www »  puis cliquez sur `Supprimer l'entrée`{.action}.<br>
 >> - Vous devez créer un enregistrement de type « TXT ». Cliquez sur le bouton `Ajouter une entrée`{.action} en haut à droite de votre écran et sélectionnez le « Champ de pointage » `TXT`{.action}.
 >> Complétez les champs **Sous-domaine** et **Cible** avec les informations présentes sur la page « [Valeurs des enregistrements TXT](https://support.google.com/a/answer/2716802?hl=fr&ref_topic=2716886&sjid=3052810298579211755-EU){.external} » de la documentation officielle. Généralement, la valeur du champ **Sous-domaine** est vide, et celle du champ **Cible** est de type `google-site-verification=XXXXXXXXXXXX`.<br>
 >> Cliquez sur `Suivant`{.action} pour valider votre enregistrement « TXT » et passez à l'étape 4.
@@ -86,7 +86,7 @@ Suivez les étapes dans l'ordre en parcourant les onglets suivants:
 >>  Pour identifier les enregistrements « CNAME » existants, cliquez sur le menu des filtres en haut du tableau d'enregistrements DNS et sélectionnez `CNAME`.<br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-cname.png){.thumbnail}
 >>
->> - Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre sous-domaine en « www.» (exemple: `mydomain.ovh.`) puis cliquez sur `Modifier l'entrée`{.action}.<br>
+>> - Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre sous-domaine en « www.» (exemple : `mydomain.ovh.`) puis cliquez sur `Modifier l'entrée`{.action}.<br>
 >> - Si vous n'avez pas d'enregistrement « CNAME » existant, cliquez sur le bouton `Ajouter une entrée`{.action} en haut à droite de votre écran et sélectionnez le « Champ de pointage » `CNAME`{.action}.
 >> Complétez le champ **Sous-domaine** avec la valeur `www` et saisissez `ghs.googlehosted.com.` dans le champ **Cible**. Ces valeurs étant amenées à changer, vérifiez-les sur la page « [Valeurs des enregistrements CNAME](https://support.google.com/a/answer/112038?sjid=3052810298579211755-EU){.external} » de la documentation officielle<br>
 >> Cliquez sur `Suivant`{.action} pour valider votre enregistrement « CNAME ».
