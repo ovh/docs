@@ -45,7 +45,7 @@ Para obtener un archivo `.eml`, consulte nuestra sección [Webmail](#webmail).
 
 ## Requisitos
 
-- Tener una dirección de correo electrónico en una de nuestras [soluciones de correo electrónico de OVHcloud](https://www.ovhcloud.com/es-es/emails/) o en una solución externa.
+- Tener una dirección de correo electrónico en una de nuestras [soluciones de correo electrónico de OVHcloud](/links/web/emails) o en una solución externa.
 - Tener acceso a la dirección de correo electrónico a través de un webmail o un cliente de correo.
 
 ## Procedimiento

@@ -16,13 +16,13 @@ Questa funzione collaborativa di Exchange permette di creare indirizzi di posta 
 
 ## Prerequisiti
 
-- Disporre di una [soluzione Exchange OVHcloud](https://www.ovhcloud.com/it/emails/hosted-exchange/) già configurata
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Disporre di una [soluzione Exchange OVHcloud](/links/web/emails-hosted-exchange) già configurata
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Disporre delle credenziali di accesso per gli account di posta che hanno accesso alla risorsa
 
 ## Procedura
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `Web Cloud`{.action} nella barra di navigazione superiore. Clicca su `Microsoft`{.action} e poi su `Exchange`{.action}. Seleziona il servizio Exchange interessato. Clicca sulla scheda `Plus +`{.action} e poi su `Risorse`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager) e seleziona `Web Cloud`{.action} nella barra di navigazione superiore. Clicca su `Microsoft`{.action} e poi su `Exchange`{.action}. Seleziona il servizio Exchange interessato. Clicca sulla scheda `Plus +`{.action} e poi su `Risorse`{.action}.
 
 ### Step 1: creare una risorsa
 
@@ -35,7 +35,7 @@ Clicca sul pulsante `Aggiungi un account risorsa`{.action} per creare la tua pri
 |Nome|Descrizione|
 |---|---|
 |Email della risorsa|Inserisci l'indirizzo della risorsa. Non è possibile scegliere un indirizzo di posta esistente.|
-|Nome della risorsa|Nome completo che compare nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e nella [Webmail OVHcloud](https://www.ovh.it/mail/) (OWA).|
+|Nome della risorsa|Nome completo che compare nello [Spazio Cliente OVHcloud](/links/manager) e nella [Webmail OVHcloud](https://www.ovh.it/mail/) (OWA).|
 |Capacità|È possibile definire la dimensione massima di una risorsa (specificando, ad esempio, il numero di posti a sedere di una parte o i sedili di un veicolo condiviso).|
 |Permettere i conflitti|Se seleziona questa opzione, potrai creare eventi di calendario che si sovrappongono e coinvolgono la stessa risorsa.|
 |Tipo di risorsa|Scegli il tipo di risorsa: "Apparecchiature" o "Sala".|

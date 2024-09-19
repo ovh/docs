@@ -28,7 +28,7 @@ Nach Ihrer Bestellung können Sie Outlook als eine der 3 folgenden Versionen her
 
 #### Für einen Hosted Exchange Account
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie dann den Bereich `Web Cloud` aus. Klicken Sie auf `Microsoft`{.action}, dann auf `Exchange`{.action} und wählen Sie den **Hosted Exchange** Dienst aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und wählen Sie dann den Bereich `Web Cloud` aus. Klicken Sie auf `Microsoft`{.action}, dann auf `Exchange`{.action} und wählen Sie den **Hosted Exchange** Dienst aus.
 
 Klicken Sie auf den Button `...`{.action} rechts neben dem betreffenden Account und dann auf `Outlook-Lizenz bestellen`{.action}.
 
@@ -44,7 +44,7 @@ Es dauert einige Minuten, bis Ihre Outlook-Lizenz in Ihrem Kundencenter verfügb
 
 #### Für einen Private Exchange Account
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie dann den Bereich `Web Cloud` aus. Klicken Sie auf `Microsoft`{.action}, dann auf `Exchange`{.action} und wählen Sie den **Private Exchange** Dienst aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und wählen Sie dann den Bereich `Web Cloud` aus. Klicken Sie auf `Microsoft`{.action}, dann auf `Exchange`{.action} und wählen Sie den **Private Exchange** Dienst aus.
 
 Klicken Sie auf den Button `...`{.action} rechts neben dem betreffenden Account und dann auf `Outlook-Lizenz aktivieren`{.action}.
 
@@ -79,7 +79,7 @@ Die heruntergeladene Datei ist im Format .ISO, also ein Disk Image. Starten Sie 
 
 ### Outlook-Lizenz von Ihrem Account löschen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie dann den Bereich `Web Cloud` aus. Klicken Sie auf `Microsoft`{.action}, dann auf `Exchange`{.action} und wählen Sie den betreffenden Exchange Dienst aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und wählen Sie dann den Bereich `Web Cloud` aus. Klicken Sie auf `Microsoft`{.action}, dann auf `Exchange`{.action} und wählen Sie den betreffenden Exchange Dienst aus.
 
 Klicken Sie auf den Button `...`{.action} rechts neben dem betreffenden Account und dann auf `Outlook-Lizenz löschen`{.action}
 

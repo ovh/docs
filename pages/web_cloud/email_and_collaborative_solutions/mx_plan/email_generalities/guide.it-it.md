@@ -16,14 +16,14 @@ La soluzione MX Plan di OVHcloud con cui potrai inviare e ricevere messaggi dal 
 
 ## Prerequisiti
 
-- Disporre di una soluzione MX Plan Puoi effettuare questa operazione tramite: un'offerta di [hosting Web](https://www.ovhcloud.com/it/web-hosting/), l'[Hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting/) o la soluzione MX Plan da sola.
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione `Web Cloud`{.action}.
+- Disporre di una soluzione MX Plan Puoi effettuare questa operazione tramite: un'offerta di [hosting Web](/links/web/hosting), l'[Hosting gratuito 100M](/links/web/domains-free-hosting) o la soluzione MX Plan da sola.
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}.
 
 ## Procedura <a name="instructions"></a>
 
-Una volta creata e disponibile la soluzione MX Plan, è possibile gestirla dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). In base alla data di attivazione o in caso di [recente migrazione del servizio](https://www.ovh.it/mxplan-migration/), la versione disponibile sarà differente. Per verificare quella attiva
+Una volta creata e disponibile la soluzione MX Plan, è possibile gestirla dallo [Spazio Cliente OVHcloud](/links/manager). In base alla data di attivazione o in caso di [recente migrazione del servizio](https://www.ovh.it/mxplan-migration/), la versione disponibile sarà differente. Per verificare quella attiva
 
-Accedendo allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione `Web Cloud`{.action}. E seleziona il tuo servizio nella sezione `Email`{.action}. Prosegui nella lettura di questa guida in base alla versione di cui disponi.
+Accedendo allo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}. E seleziona il tuo servizio nella sezione `Email`{.action}. Prosegui nella lettura di questa guida in base alla versione di cui disponi.
 
 |Vecchia versione della soluzione MX Plan|Nuova versione della soluzione MX Plan|
 |---|---|
@@ -122,7 +122,7 @@ Puoi procedere in due modi:
 
 - creare il reindirizzamento dalla Webmail, tramite le regole della casella di ricezione. Per effettuare questa operazione, consulta la guida "[Regole di Posta in arrivo dall'interfaccia OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan#esempio-1-inoltrare-unemail-a-un-altro-indirizzo)".
 
-- creare il reindirizzamento dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Questo metodo permette, ad esempio, di creare un alias, cioè di reindirizzare un indirizzo email che non esiste verso un indirizzo email esistente. Per effettuare questa operazione, consulta la guida [Utilizzare i reindirizzamenti email](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections#nuova-versione-della-soluzione-mx-plan).
+- creare il reindirizzamento dal tuo [Spazio Cliente OVHcloud](/links/manager). Questo metodo permette, ad esempio, di creare un alias, cioè di reindirizzare un indirizzo email che non esiste verso un indirizzo email esistente. Per effettuare questa operazione, consulta la guida [Utilizzare i reindirizzamenti email](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections#nuova-versione-della-soluzione-mx-plan).
 
 ##### **Segreteria**
 
@@ -146,7 +146,7 @@ Per creare una mailing list. Per maggiori informazioni, consulta la guida [Gesti
 
 Vuoi applicare una firma globale a tutti gli indirizzi email del tuo dominio.
 
-Il "piede pagina" ti permette di configurarlo dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Segui la nostra guida ["Aggiungere un piede di pagina sulle tue email](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_footers)".
+Il "piede pagina" ti permette di configurarlo dal tuo [Spazio Cliente OVHcloud](/links/manager). Segui la nostra guida ["Aggiungere un piede di pagina sulle tue email](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_footers)".
 
 ### Vecchia versione della soluzione MX Plan <a name="oldmxplan"></a>
 
@@ -167,7 +167,7 @@ Nella nuova finestra inserisci le informazioni richieste:
 |Campo|Descrizione|  
 |---|---|  
 |Nome dell’account|Inserisci il nome che vuoi assegnare al tuo account email (ad esempio nome.cognome). Il dominio interessato è inserito di default.|  
-|Descrizione dell’account|Inserisci una breve descrizione che ti permetterà di riconoscere questo account tra quelli presenti nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).|  
+|Descrizione dell’account|Inserisci una breve descrizione che ti permetterà di riconoscere questo account tra quelli presenti nel tuo [Spazio Cliente OVHcloud](/links/manager).|  
 |Dimensione dell’account|Seleziona la dimensione del tuo account, cioè lo spazio a disposizione per conservare i messaggi.|  
 |Password|Crea una password e confermala. Per motivi di sicurezza ti consigliamo di non utilizzare due volte la stessa password, scegliere una password che non contenga informazioni personali (ad esempio nome, cognome o data di nascita) e di modificarla regolarmente.|
 

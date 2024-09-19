@@ -13,7 +13,7 @@ Grâce aux groupes Exchange, de nombreux participants peuvent communiquer par en
 ## Prérequis
 
 - Etre connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
-- Avoir souscrit une offre [solution Exchange OVHcloud](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/) 
+- Avoir souscrit une offre [solution Exchange OVHcloud](/links/web/emails-hosted-exchange) 
 
 ## Instructions
 

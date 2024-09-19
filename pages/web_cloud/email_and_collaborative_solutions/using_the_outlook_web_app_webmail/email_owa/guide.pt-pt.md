@@ -12,7 +12,7 @@ Com as soluções de e-mail OVHcloud pode enviar e receber e-mails utilizando um
 
 ## Requisitos
 
-- uma solução de e-mail OVHcloud já configurada (**MX Plan**, disponível como parte dos nossos [planos Web Hosting](https://www.ovhcloud.com/pt/web-hosting/), incluída num [Alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/) ou encomendada separadamente como solução autónoma; [**Hosted Exchange**](https://www.ovhcloud.com/pt/emails/hosted-exchange/) ou [**E-mail Pro**](/links/web/email-pro))
+- uma solução de e-mail OVHcloud já configurada (**MX Plan**, disponível como parte dos nossos [planos Web Hosting](/links/web/hosting), incluída num [Alojamento gratuito 100M](/links/web/domains-free-hosting) ou encomendada separadamente como solução autónoma; [**Hosted Exchange**](/links/web/emails-hosted-exchange) ou [**E-mail Pro**](/links/web/email-pro))
 - credenciais de login para o endereço de e-mail que deseja configurar
 
 ## Instruções

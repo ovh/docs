@@ -12,7 +12,7 @@ Esta funcionalidade do Exchange permite-lhe configurar respostas automáticas ao
 
 ## Requisitos
 
- - Ter instalado uma solução de e-mail OVHcloud [Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/) ou [Email Pro](https://www.ovhcloud.com/fr/emails/email-pro/)
+ - Ter instalado uma solução de e-mail OVHcloud [Exchange](/links/web/emails-hosted-exchange) ou [Email Pro](/links/web/email-pro)
 - Ter acesso à conta e-mail (com endereço de e-mail e palavra-passe).
 
 ## Instruções

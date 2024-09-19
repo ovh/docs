@@ -12,7 +12,7 @@ You can configure MX Plan email addresses on email clients, if they are compatib
 
 ## Requirements
 
-- You need to have an MX Plan email address (included in the MX Plan solution, and in [OVHcloud Web Hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/){.external}).
+- You need to have an MX Plan email address (included in the MX Plan solution, and in [OVHcloud Web Hosting plans](/links/web/hosting)).
 - You need to have the Mail app installed on your device.
 - You need to have the required credentials for the email address you would like to configure.
 
@@ -80,8 +80,8 @@ OVHcloud also has a web application you can use to access your email account fro
  
 ## Go further
 
-[Configuring your Email Pro account in the Mail app for Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10){.external}
+[Configuring your Email Pro account in the Mail app for Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10)
 
-[Configuring your Exchange account in the Mail app for Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_windows_10){.external}
+[Configuring your Exchange account in the Mail app for Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_windows_10)
 
 Join our community of users on <https://community.ovh.com/en/>.

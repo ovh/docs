@@ -23,7 +23,7 @@ Es posible configurar sus cuentas Exchange en el cliente de correo que usted uti
 
 ## Requisitos
 
-- Disponer de una cuenta [Exchange](https://www.ovhcloud.com/es/emails/hosted-exchange/).
+- Disponer de una cuenta [Exchange](/links/web/emails-hosted-exchange).
 - Tener Thunderbird instalado en su Windows.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
  
@@ -33,7 +33,7 @@ Es posible configurar sus cuentas Exchange en el cliente de correo que usted uti
 >
 > En nuestro ejemplo, utilizamos el nombre del servidor: ex**?**.mail.ovh.ca. Debe reemplazar el "? " por el número que designa el servidor del servicio Exchange.
 > 
-> Encontrará esta cifra en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la sección `Web Cloud`{.action} y, seguidamente, en el apartado `Microsoft`{.action}/`Exchange`{.action}. El nombre del servidor puede verse en el recuadro **Conexión** de la pestaña `Información General`{.action}.
+> Encontrará esta cifra en el [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action} y, seguidamente, en el apartado `Microsoft`{.action}/`Exchange`{.action}. El nombre del servidor puede verse en el recuadro **Conexión** de la pestaña `Información General`{.action}.
 > 
 
 ### Añadir la cuenta
@@ -71,7 +71,7 @@ Si necesita realizar alguna operación que pueda provocar la pérdida de los dat
 >
 > En nuestro ejemplo, utilizamos el nombre del servidor: ex**?**.mail.ovh.ca. Debe reemplazar el "? " por el número que designa el servidor del servicio Exchange.
 > 
-> Encontrará esta cifra en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la sección `Web Cloud`{.action} y, seguidamente, en el apartado `Microsoft`{.action}/`Exchange`{.action}.
+> Encontrará esta cifra en el [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action} y, seguidamente, en el apartado `Microsoft`{.action}/`Exchange`{.action}.
 > en la columna de la izquierda. El nombre del servidor puede verse en el recuadro **Conexión** de la pestaña `Información General`{.action}.
 > 
 

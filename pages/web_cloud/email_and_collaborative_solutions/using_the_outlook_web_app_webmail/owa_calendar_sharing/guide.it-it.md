@@ -12,7 +12,7 @@ La funzionalità Exchange ti consente di fornire l’accesso ai tuoi calendari a
 
 ## Prerequisiti
 
-- Disporre di una [soluzione Exchange OVHcloud](https://www.ovhcloud.com/it/emails/hosted-exchange/) attiva
+- Disporre di una [soluzione Exchange OVHcloud](/links/web/emails-hosted-exchange) attiva
 - Avere accesso all’account Exchange (indirizzo email e password)
 
 ## Procedura

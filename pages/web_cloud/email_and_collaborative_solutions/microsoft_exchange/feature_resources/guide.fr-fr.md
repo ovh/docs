@@ -12,13 +12,13 @@ Cette fonction collaborative de Exchange permet de créer des adresses de messag
 
 ## Prérequis
 
-- Disposer d'une [solution Exchange OVHcloud](https://www.ovhcloud.com/fr/emails/hosted-exchange/) déjà configurée
-- Être connecté votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Disposer d'une [solution Exchange OVHcloud](/links/web/emails-hosted-exchange) déjà configurée
+- Être connecté votre [espace client OVHcloud](/links/manager)
 - Disposer des identifiants de connexion pour le ou les comptes de messagerie ayant accès à la ressource
 
 ## En pratique
 
-Connectez-vous à votre  [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et sélectionnez `Web Cloud`{.action} dans la barre de navigation supérieure. Cliquez sur `Microsoft`{.action} , puis sur `Exchange`{.action}. Sélectionnez ensuite le service Exchange concerné. Cliquez sur l'onglet `Plus +`{.action} , puis sur `Ressources`{.action}.
+Connectez-vous à votre  [espace client OVHcloud](/links/manager) et sélectionnez `Web Cloud`{.action} dans la barre de navigation supérieure. Cliquez sur `Microsoft`{.action} , puis sur `Exchange`{.action}. Sélectionnez ensuite le service Exchange concerné. Cliquez sur l'onglet `Plus +`{.action} , puis sur `Ressources`{.action}.
 
 ### Étape 1 : créer une ressource
 
@@ -31,7 +31,7 @@ Cliquez sur le bouton `Ajouter un compte de ressource`{.action} pour créer votr
 |Nom|Description|
 |---|---|
 |E-mail de la ressource|Entrez l'adresse de la ressource. Notez que vous ne pouvez pas choisir une adresse de messagerie existante.|
-|Nom de la ressource|Nom complet qui apparaît dans votre  [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et dans [le webmail OVHcloud](https://www.ovh.com/fr/mail/) (OWA).|
+|Nom de la ressource|Nom complet qui apparaît dans votre  [espace client OVHcloud](/links/manager) et dans [le webmail OVHcloud](https://www.ovh.com/fr/mail/) (OWA).|
 |Capacité|Vous pouvez définir la taille maximale d'une ressource (en spécifiant par exemple le nombre de places assises d'une pièce ou les sièges d'un véhicule de société partagé).|
 |Permettre les conflits|Si cette case est cochée, vous pourrez créer des événements de calendrier se chevauchant et impliquant la même ressource.|
 |Type de ressource|Choisissez le type de ressource: « Équipement » ou « Salle ».|

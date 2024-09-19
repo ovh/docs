@@ -24,7 +24,7 @@ You can configure MX Plan email addresses on email clients, if they are compatib
 
 ## Requirements
 
-- an MX Plan email address (included in the MX Plan solution, or in an [OVHcloud web hosting plan](https://www.ovhcloud.com/en/web-hosting/)).
+- an MX Plan email address (included in the MX Plan solution, or in an [OVHcloud web hosting plan](/links/web/hosting)).
 - You need to have the Gmail app installed on your device. You can install it from the Google Play Store if it is not already present.
 - the required credentials for the email address you would like to configure
 

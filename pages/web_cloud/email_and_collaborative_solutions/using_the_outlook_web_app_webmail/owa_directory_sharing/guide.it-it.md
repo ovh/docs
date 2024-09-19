@@ -17,7 +17,7 @@ Non è sempre opportuno delegare l’utilizzo di un intero account di posta elet
 
 ## Prerequisiti
 
-- Disporre di una [soluzione Exchange OVHcloud](https://www.ovhcloud.com/it/emails/hosted-exchange/) attiva
+- Disporre di una [soluzione Exchange OVHcloud](/links/web/emails-hosted-exchange) attiva
 - Accedere all’account Exchange (indirizzo email e password)
 
 ## Procedura

@@ -22,7 +22,7 @@ You have the option to use the software suite in the Microsoft 365 apps pack on 
 
 ## Instructions
 
-This guide is based on the official Microsoft documentation: [Deploy Microsoft 365 Apps by using Remote Desktop Services](https://docs.microsoft.com/en-gb/deployoffice/deploy-microsoft-365-apps-remote-desktop-services){.external}.
+This guide is based on the official Microsoft documentation: [Deploy Microsoft 365 Apps by using Remote Desktop Services](https://docs.microsoft.com/en-gb/deployoffice/deploy-microsoft-365-apps-remote-desktop-services).
 
 > [!warning]
 > This guide will show you how to use one or more OVHcloud solutions with external tools, and the changes you need to make in specific contexts. You may need to adapt the instructions according to your situation.
@@ -41,7 +41,7 @@ Installing a Microsoft 365 Apps for enterprise solution on a shared computer usi
 > If you have already installed your Office 365 ProPlus licence, you will need to **uninstall** it.
 >
 
-- Once you have uninstalled your licence, please [click here](https://www.microsoft.com/en-gb/download/details.aspx?id=49117){.external} to download the Microsoft 365 Deployment Tool.
+- Once you have uninstalled your licence, please [click here](https://www.microsoft.com/en-gb/download/details.aspx?id=49117) to download the Microsoft 365 Deployment Tool.
 
 - **Run** the deployment tool on your machine.
 

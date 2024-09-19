@@ -40,7 +40,7 @@ Quando identificar a conta que a delegação lhe diz respeito, determinar os dir
 
 ### 1 - criar a delegação
 
-Para efetuar esta operação, aceda à [Área de Cliente OVHcloud](/links/manager){.external}:
+Para efetuar esta operação, aceda à [Área de Cliente OVHcloud](/links/manager):
 
 - **Exchange**: Clique em `Microsoft`{.action} na barra à esquerda e, a seguir, em `Exchange`{.action}.. 
 - **Email Pro**: Clique em `Email Pro`{.action}.

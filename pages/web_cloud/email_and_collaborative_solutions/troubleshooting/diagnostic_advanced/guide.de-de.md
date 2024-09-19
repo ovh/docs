@@ -17,7 +17,7 @@ Sie können Ihre E-Mails nicht über Ihr E-Mail-Programm oder über das Webmail-
 ## Voraussetzungen
 
 - Sie haben bereits einen OVHcloud E-Mail-Dienst eingerichtet (**MX Plan**, **E-Mail Pro** oder **Exchange**).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
@@ -51,7 +51,7 @@ Wenn Sie ein E-Mail-Programm auf Ihrem Computer (Outlook, Mac Mail, Thunderbird 
 
 ## Ich kann keine E-Mails empfangen, da meine E-Mail-Adresse voll ist und ich keinen Speicherplatz mehr habe. Was kann ich tun?
 
-Wenn Sie [ein E-Mail-Angebot von OVHcloud](https://www.ovhcloud.com/de/emails/) abonniert haben und einer Ihrer E-Mail-Accounts voll ist, lesen Sie unsere Anleitung "[Speicherplatz eines E-Mail-Accounts verwalten](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota)". In dieser Anleitung erfahren Sie, ob Sie den vorhandenen Speicherplatz optimieren können oder ob Sie das E-Mail-Angebot wechseln müssen, um die Speicherkapazität zu erhöhen.
+Wenn Sie [ein E-Mail-Angebot von OVHcloud](/links/web/emails) abonniert haben und einer Ihrer E-Mail-Accounts voll ist, lesen Sie unsere Anleitung "[Speicherplatz eines E-Mail-Accounts verwalten](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota)". In dieser Anleitung erfahren Sie, ob Sie den vorhandenen Speicherplatz optimieren können oder ob Sie das E-Mail-Angebot wechseln müssen, um die Speicherkapazität zu erhöhen.
 
 ### Sind die E-Mails über das Webmail-Interface funktionsfähig? (**Versand** und/oder **Empfang**)
 
@@ -63,7 +63,7 @@ Gehen Sie dazu über einen Webbrowser auf die Adresse <https://www.ovh.com/de/ma
 
 ### Ich kann mich nicht mit dem Webmail verbinden
 
-Stellen Sie sicher, dass Sie das richtige Passwort haben. Sie können es nötignfalls immer im Kundencenter ändern. Überprüfen Sie auch, ob die Zwei-Faktor-Authentifizierung aktiviert ist (nur[Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/)).
+Stellen Sie sicher, dass Sie das richtige Passwort haben. Sie können es nötignfalls immer im Kundencenter ändern. Überprüfen Sie auch, ob die Zwei-Faktor-Authentifizierung aktiviert ist (nur[Exchange](/links/web/emails-hosted-exchange)).
 
 So ändern Sie das Passwort einer E-Mail-Adresse:
 
@@ -113,7 +113,7 @@ Im Folgenden finden Sie von Servern häufig verwendete negative SMTP-Antwortcode
 |421|Service not available, transmission channel being closed|Unbestimmte Herkunft; vergewissern Sie sich, dass der Versand an eine andere Domain funktioniert. Wenn ja, versuchen Sie den Versand später erneut.|
 |432|The recipient’s Exchange Server incoming mail queue has been stopped|Diese Fehlermeldung wird nur von Microsoft Exchange Servern zurückgegeben. Wenden Sie sich an den Administrator des Empfänger-Mailservers.|
 |449|Routing error|Diese Fehlermeldung wird nur von Microsoft Exchange Servern zurückgegeben. Microsoft empfiehlt, eine Diagnose mit dem Tool WinRoute durchzuführen.|
-|450|Requested action not taken – The user’s mailbox is unavailable (z. B. Mailbox unerreichbar oder aus Sicherheitsgründen vorübergehend gesperrt)|Überprüfen Sie, ob die IP-Adresse des ausgehenden Mailservers geblockt ist ([SpamHaus](https://check.spamhaus.org/){.external}), und überprüfen Sie auch, ob Ihre E-Mail SPAM-relevante Wörter enthält.|
+|450|Requested action not taken – The user’s mailbox is unavailable (z. B. Mailbox unerreichbar oder aus Sicherheitsgründen vorübergehend gesperrt)|Überprüfen Sie, ob die IP-Adresse des ausgehenden Mailservers geblockt ist ([SpamHaus](https://check.spamhaus.org/)), und überprüfen Sie auch, ob Ihre E-Mail SPAM-relevante Wörter enthält.|
 |451|Requested action aborted – Local error in processing|Dies kann durch eine vorübergehende Überlastung oder eine negative SPF-Prüfung der Senderdomain verursacht werden. Lesen Sie die Zusatznachricht des Servers oder kontaktieren Sie dessen Administrator, falls dies weiterhin der Fall ist.|
 |452|The command has been aborted because the server has insufficient system storage|Der E-Mail-Server ist ausgelastet. Dies könnte von zu vielen ausgehenden Nachrichten gleichzeitig verursacht werden. Bitte überprüfen Sie Ihren Postausgang und versuchen Sie es erneut.|
 |455|Server unable to deal with the command at this time.|Warten Sie eine Weile und versuchen Sie es erneut. Im Falle eines Fehlschlags kontaktieren Sie den Administrator des Empfänger-Mailservers.|
@@ -129,7 +129,7 @@ Im Folgenden finden Sie von Servern häufig verwendete negative SMTP-Antwortcode
 |551|User not local or invalid address – Relay denied|Dies wird typischerweise als Strategie zur Vermeidung von Spam verwendet. Es besagt, dass das Mail-Relay aus irgendeinem Grund nicht berechtigt ist, Ihre Nachricht an einen anderen Server als den Ihren weiterzuleiten. Bitte kontaktieren Sie Ihren Dienstleister.|
 |552|Requested mail actions aborted – Exceeded storage allocation|Der Empfängeraccount hat keinen Speicherplatz mehr für den Empfang von Nachrichten. Leider besteht die einzige Lösung darin, den Empfänger über eine andere Methode zu kontaktieren.|
 |553|Requested action not taken – Mailbox name invalid|Dies wird in der Regel durch eine falsche Empfänger-E-Mail-Adresse verursacht. Bitte überprüfen Sie, dass die betroffene E-Mail-Adresse korrekt ist.|
-|554|Transaction failed, "No SMTP service here"|Das ist üblicherweise ein Blacklist-Problem. Überprüfen Sie, ob die IP-Adresse des ausgehenden Mailservers geblockt ist ([SpamHaus](https://check.spamhaus.org/){.external}).|
+|554|Transaction failed, "No SMTP service here"|Das ist üblicherweise ein Blacklist-Problem. Überprüfen Sie, ob die IP-Adresse des ausgehenden Mailservers geblockt ist ([SpamHaus](https://check.spamhaus.org/)).|
 |555|MAIL FROM / RCPT TO, unrecognised or unimplemented arguments|Der ausgehende SMTP-Server kann die E-Mail-Adresse, die Sie in den Feldern "Von" oder "An" verwendet haben, nicht deuten. Bitte prüfen Sie, ob die eingegebenen E-Mail-Adressen korrekt sind, und überprüfen Sie, dass Sie die von OVHcloud festgelegte Grenze nicht überschritten haben: 200 Mails / Stunde / Account / 300 Mails / Stunde / IP.|
 
 ## Weiterführende Informationen

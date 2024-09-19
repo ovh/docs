@@ -12,12 +12,12 @@ W Panelu klienta OVHcloud można utworzyć uniwersalne podpisy (stopki) dla adre
 
 ## Wymagania początkowe
 
-- dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
-- skonfigurowane rozwiązanie [OVHcloud Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/) lub [E-mail Pro](/links/web/email-pro)
+- dostęp do [Panelu klienta OVHcloud](/links/manager)
+- skonfigurowane rozwiązanie [OVHcloud Exchange](/links/web/emails-hosted-exchange) lub [E-mail Pro](/links/web/email-pro)
 
 ## W praktyce
 
-Aby rozpocząć operację, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}:
+Aby rozpocząć operację, zaloguj się do [Panelu klienta](/links/manager):
 
 - **Exchange**: Kliknij `Microsoft`{.action}, po czym kliknij `Exchange`{.action}.
 - **Email Pro**: Kliknij `Email Pro`{.action}.

@@ -29,7 +29,7 @@ OVHcloud provides a webmail service called Zimbra to access MX Plan email accoun
 
 ## Requirements
 
-- You have an OVHcloud **MX Plan** email solution, included in our [web hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/), included in a [100M free hosting](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/) hosting plan, or ordered separately as a standalone solution.
+- You have an OVHcloud **MX Plan** email solution, included in our [web hosting plans](/links/web/hosting), included in a [100M free hosting](/links/web/domains-free-hosting) hosting plan, or ordered separately as a standalone solution.
 - You have the login details for the MX Plan email account you would like to use. For more information, please read our guide on [Getting started with the MX Plan solution](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
 
 ## Instructions

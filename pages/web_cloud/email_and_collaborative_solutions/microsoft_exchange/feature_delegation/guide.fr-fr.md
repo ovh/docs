@@ -66,11 +66,11 @@ Maintenant que la délégation est en place, il ne reste plus qu'à l'utiliser. 
 
 La manière de faire est différente selon le ou les droits que vous avez délégués et le logiciel ou l'interface web que vous utilisez pour accéder à votre compte e-mail. Poursuivez la lecture de cette documentation en fonction du ou des droits que vous avez délégués.
 
-- [Utiliser son « droit d'accès »](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#21-utiliser-son-droit-dacces){.external}
+- [Utiliser son « droit d'accès »](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#21-utiliser-son-droit-dacces)
 
-- [Utiliser son « droit d'envoi »](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#22-utiliser-son-droit-denvoi){.external}
+- [Utiliser son « droit d'envoi »](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#22-utiliser-son-droit-denvoi)
 
-- [Utiliser son « droit d'envoyer de la part de »](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#23-utiliser-son-droit-denvoyer-de-la-part-de){.external}
+- [Utiliser son « droit d'envoyer de la part de »](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#23-utiliser-son-droit-denvoyer-de-la-part-de)
 
 > [!warning]
 >

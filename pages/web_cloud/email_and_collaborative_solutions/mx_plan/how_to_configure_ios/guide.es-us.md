@@ -23,7 +23,7 @@ Es posible configurar sus cuentas de correo electrónico en el cliente de correo
 
 ## Requisitos
 
-- Disponer de una cuenta de correo electrónico incluida en un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}).
+- Disponer de una cuenta de correo electrónico incluida en un plan de [hosting de OVHcloud](/links/web/hosting)).
 - Estar actualizado en los [pagos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) y [renovaciones](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) de los servicios asociados (dominio y alojamiento web).
 - Tener la aplicación Mail instalada en su dispositivo iOS.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
@@ -79,7 +79,7 @@ OVHcloud ofrece una aplicación web con la que podrá acceder a su dirección de
 
 ## Más información
 
-[Configurar una cuenta Exchange en iPhone o iPad](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_ios){.external}
+[Configurar una cuenta Exchange en iPhone o iPad](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_ios)
 
 [FAQ e-mails](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 

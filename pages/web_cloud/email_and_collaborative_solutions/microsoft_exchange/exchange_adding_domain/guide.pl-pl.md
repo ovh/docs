@@ -16,16 +16,16 @@ Dodanie domeny do usługi Exchange jest niezbędne, abyś mógł korzystać z ko
 
 ## Wymagania początkowe
 
-- Posiadanie rozwiązania [Exchange](https://www.ovhcloud.com/pl/emails/) lub [Email Pro](/links/web/email-pro)
+- Posiadanie rozwiązania [Exchange](/links/web/emails) lub [Email Pro](/links/web/email-pro)
 - Zarejestrowana domena lub kilka domen.
 - Możliwość modyfikacji konfiguracji Twojej domeny [strefy DNS](/pages/web_cloud/domains/dns_zone_edit)
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 
 ## W praktyce
 
 ### Dostęp do zarządzania usługą
 
-Po utworzeniu i udostępnieniu usługi Exchange lub E-mail Pro, można nią zarządzać poprzez [Panel klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+Po utworzeniu i udostępnieniu usługi Exchange lub E-mail Pro, można nią zarządzać poprzez [Panel klienta OVHcloud](/links/manager).
 
 W sekcji `Web Cloud`{.action}:
 
@@ -40,7 +40,7 @@ Aby dodać domenę, kliknij w zakładkę `Przypisane domeny`{.action}. W tabeli 
 
 > [!warning]
 >
-> Wszystkie konta e-mail utworzone w ramach Twojej usługi będą mogły wyświetlać w katalogu wszystkie adresy e-mail powiązane z usługą, w tym adresy o innej nazwie domeny. Aby wyłączyć wyświetlanie domen, zamów nowe [rozwiązanie Exchange lub Email Pro](https://www.ovhcloud.com/pl/emails/) dla wybranej domeny lub domen.
+> Wszystkie konta e-mail utworzone w ramach Twojej usługi będą mogły wyświetlać w katalogu wszystkie adresy e-mail powiązane z usługą, w tym adresy o innej nazwie domeny. Aby wyłączyć wyświetlanie domen, zamów nowe [rozwiązanie Exchange lub Email Pro](/links/web/emails) dla wybranej domeny lub domen.
 >
 
 ![Domeny](images/add_domain_exchange_step1.png){.thumbnail}
@@ -113,7 +113,7 @@ Po skonfigurowaniu Twoich kont możesz zacząć ich używać. W tym celu OVHclou
 
 Jeśli chcesz skonfigurować Twoje konto e-mail w programie pocztowym lub urządzeniu typu smartfon lub tablet lub uzyskać pomoc w zakresie funkcji usługi e-mail, skorzystaj z naszej dokumentacji dostępnej na stronach [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) i [E-mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro).
 
-Licencje Outlook możesz uzyskać w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i licencje Office 365 na stronie <https://www.ovhcloud.com/pl/collaborative-tools/microsoft-365/>. Zalecamy skorzystanie z jednego z tych rozwiązań, jeśli chcesz używać programu pocztowego Outlook lub innych programów Office.
+Licencje Outlook możesz uzyskać w [Panelu klienta OVHcloud](/links/manager) i licencje Office 365 na stronie <https://www.ovhcloud.com/pl/collaborative-tools/microsoft-365/>. Zalecamy skorzystanie z jednego z tych rozwiązań, jeśli chcesz używać programu pocztowego Outlook lub innych programów Office.
 
 ### Usuń domenę z platformy
 
@@ -150,6 +150,6 @@ W zakładce `Przypisane domeny`{.action} na Twojej platformie kliknij przycisk `
 [Modyfikacja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
 Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i korzystania z rozwiązań OVHcloud, sprawdź naszą [ofertę pomocy](https://www.ovhcloud.com/pl/support-levels/)
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i korzystania z rozwiązań OVHcloud, sprawdź naszą [ofertę pomocy](/links/support)
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

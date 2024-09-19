@@ -46,7 +46,7 @@ A instalação de uma oferta Microsoft 365 Apps for entreprise num computador pa
 > Se já realizou a instalação da sua licença Office 365 Proplus, é necessário **desinstalar** a licença.
 >
 
-- Depois de desinstalar a sua licença, queira [clicar aqui](https://www.microsoft.com/en-us/download/details.aspx?id=49117){.external} para descarregar a ferramenta de implementação Microsoft 365.
+- Depois de desinstalar a sua licença, queira [clicar aqui](https://www.microsoft.com/en-us/download/details.aspx?id=49117) para descarregar a ferramenta de implementação Microsoft 365.
 
 - **Execute** a ferramenta de implementação na sua máquina.
 

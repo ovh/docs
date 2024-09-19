@@ -24,14 +24,14 @@ Es posible configurar sus cuentas Exchange en el cliente de correo que usted uti
 
 ## Requisitos
 
-- Tener un servicio [Exchange](https://www.ovhcloud.com/es/emails/){.external}.
+- Tener un servicio [Exchange](/links/web/emails).
 - Tener Microsoft Outlook o posterior instalado en su ordenador.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
 - El registro SRV de OVHcloud debe estar correctamente configurado en la zona DNS del dominio. No dude en consultar nuestra guía [Añadir un dominio a un servicio Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 
 > [!primary]
 >
-> Si utiliza Outlook y posterior para Mac, consulte nuestra guía [Configurar una cuenta Exchange en Outlook para Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac){.external}
+> Si utiliza Outlook y posterior para Mac, consulte nuestra guía [Configurar una cuenta Exchange en Outlook para Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac)
 >
 
 ## Procedimiento
@@ -58,7 +58,7 @@ Es posible configurar sus cuentas Exchange en el cliente de correo que usted uti
 > 
 > ![exchange](images/config-outlook-exchange03.png){.thumbnail}
 >
-> Compruebe la configuración del dominio en su servicio Exchange en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), en la pestaña `Dominios asociados`{.action}, en la columna `Diagnóstico`{.action}"de la tabla.
+> Compruebe la configuración del dominio en su servicio Exchange en el [área de cliente de OVHcloud](/links/manager), en la pestaña `Dominios asociados`{.action}, en la columna `Diagnóstico`{.action}"de la tabla.
 >
 
 - Si la configuración del dominio es válida, puede aparecer un mensaje de autorización de conexión a los servidores de OVHcloud. Acepte la configuración automática de su cuenta Exchange.
@@ -78,6 +78,6 @@ Si necesita realizar alguna operación que pueda provocar la pérdida de los dat
 
 ## Más información
 
-[Configurar una cuenta de correo electrónico en Outlook para Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016){.external}
+[Configurar una cuenta de correo electrónico en Outlook para Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

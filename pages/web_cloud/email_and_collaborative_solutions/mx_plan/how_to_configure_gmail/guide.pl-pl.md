@@ -19,7 +19,7 @@ Konta e-mail usługi MX Plan mogą być skonfigurowane w jednym z kompatybilnych
 
 ## Wymagania początkowe
 
-- Posiadanie konta e-mail MX Plan (zawartego w usłudze MX Plan lub w usłudze [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external})
+- Posiadanie konta e-mail MX Plan (zawartego w usłudze MX Plan lub w usłudze [hostingu OVHcloud](/links/web/hosting))
 - Dane do logowania do konta e-mail OVHcloud, które chcesz skonfigurować
 - Dane do konta Gmail (osobiste lub zawodowe), w którym chcesz skonfigurować konto e-mail OVHcloud
 

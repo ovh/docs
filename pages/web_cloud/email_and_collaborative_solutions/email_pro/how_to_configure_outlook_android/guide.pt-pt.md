@@ -16,7 +16,7 @@ As contas E-mail Pro podem ser configuradas em vários softwares de e-mail compa
 
 ## Requisitos
 
-- Dispor de uma oferta [E-mail Pro](/links/web/email-pro){.external}.
+- Dispor de uma oferta [E-mail Pro](/links/web/email-pro).
 - Ter instalado a aplicação Microsoft Outlook no seu dispositivo Android. Pode descarregar esta última a partir do *Google Play Store*.
 
 > [!warning]
@@ -30,7 +30,7 @@ As contas E-mail Pro podem ser configuradas em vários softwares de e-mail compa
 
 ### Etapa 1: recuperar as informações da conta E-mail Pro <a name="step1"></a>
 
-Ligue-se ao seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e vá à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `E-mails Pro`{.action} e selecione a plataforma E-mail Pro onde está o endereço de e-mail a configurar.
+Ligue-se ao seu [Área de Cliente OVHcloud](/links/manager) e vá à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `E-mails Pro`{.action} e selecione a plataforma E-mail Pro onde está o endereço de e-mail a configurar.
 
 Na nova página, clique no separador `Contas de e-mail`{.action}.
 
@@ -165,6 +165,6 @@ A seguir, teste o envio e a receção de e-mails a partir da sua aplicação Mic
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 

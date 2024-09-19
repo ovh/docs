@@ -17,7 +17,7 @@ Nem sempre convém delegar o uso ilimitado de uma conta de e-mail. A funcionalid
 
 ## Requisitos
 
-- Dispor de um serviço [Exchange OVHcloud](https://www.ovhcloud.com/pt/emails/hosted-exchange/).
+- Dispor de um serviço [Exchange OVHcloud](/links/web/emails-hosted-exchange).
 - Ter acesso à conta Exchange (com endereço de e-mail e palavra-passe).
 
 ## Instruções

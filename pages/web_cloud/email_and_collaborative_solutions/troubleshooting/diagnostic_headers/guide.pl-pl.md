@@ -45,7 +45,7 @@ Aby pobrać plik `.eml`, sprawdź sekcję [Webmail](#webmail).
 
 ## Wymagania początkowe
 
-- Posiadanie konta e-mail w jednym z naszych [rozwiązań e-mail OVHcloud](https://www.ovhcloud.com/pl/emails/) lub rozwiązania zewnętrznego.
+- Posiadanie konta e-mail w jednym z naszych [rozwiązań e-mail OVHcloud](/links/web/emails) lub rozwiązania zewnętrznego.
 - Dostęp do konta e-mail poprzez interfejs webmail lub program pocztowy.
 
 ## W praktyce

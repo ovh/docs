@@ -12,7 +12,7 @@ With an OVHcloud email solutions you can send and receive your emails using a de
 
 ## Requirements
 
-- an OVHcloud email solution already set up (**MX Plan**, available as part of our [Web Hosting plans](https://www.ovhcloud.com/en-sg/web-hosting/)
+- an OVHcloud email solution already set up (**MX Plan**, available as part of our [Web Hosting plans](/links/web/hosting)
 - login credentials for the email address you want to configure
 
 ## Instructions

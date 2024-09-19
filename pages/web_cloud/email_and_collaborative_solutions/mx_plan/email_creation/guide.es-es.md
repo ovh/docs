@@ -69,7 +69,7 @@ Repita el procedimiento descrito en este apartado para crear las cuentas que des
 
 #### Consultar los mensajes de correo
 
-Vaya a la [página de conexión al webmail](https://www.ovhcloud.com/es-es/mail/) e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
+Vaya a la [página de conexión al webmail](/links/web/email) e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
 
 La primera vez que se conecte al webmail, deberá seleccionar el idioma de la interfaz y la zona horaria en la que se encuentra. A continuación se abrirá la bandeja de entrada. Para más información, consulte nuestra guía "[Utilizar una dirección de correo desde Outlook Web App (OWA)"](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
 
@@ -139,7 +139,7 @@ Repita el procedimiento descrito en este apartado para crear las cuentas que des
 
 #### Consultar los mensajes de correo 
 
-Vaya a la [página de conexión al webmail](https://www.ovhcloud.com/es-es/mail/) e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
+Vaya a la [página de conexión al webmail](/links/web/email) e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
 
 A continuación, podrá consultar su bandeja de entrada. Para más información, consulte nuestra [Guía de uso de Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube)
 

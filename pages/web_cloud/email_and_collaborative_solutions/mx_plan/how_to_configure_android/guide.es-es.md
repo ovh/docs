@@ -28,7 +28,7 @@ Es posible configurar sus cuentas MX Plan en el cliente de correo que usted util
 
 ## Requisitos
 
-- Disponer de una dirección de correo electrónico MX Plan (incluida en la solución MX Plan o en un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/)).
+- Disponer de una dirección de correo electrónico MX Plan (incluida en la solución MX Plan o en un plan de [hosting de OVHcloud](/links/web/hosting)).
 - Tener la aplicación Gmail instalada en su dispositivo. Puede instalarla desde Google Play Store si aún no está presente.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
 

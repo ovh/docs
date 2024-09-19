@@ -12,13 +12,13 @@ Gli indirizzi email dell’offerta MX Plan possono essere configurati su un clie
 
 ## Prerequisiti
 
-- Disporre di un indirizzo email MX Plan compreso nell’offerta MX Plan o in un’offerta di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}
+- Disporre di un indirizzo email MX Plan compreso nell’offerta MX Plan o in un’offerta di [hosting Web OVHcloud](/links/web/hosting)
 - Aver installato l’applicazione Posta sul proprio dispositivo
 - Disporre delle credenziali associate all’indirizzo email da configurare
 
 > [!primary]
 >
-> Utilizzi una versione precedente di Windows? Consulta la nostra documentazione: [Configurare un account di posta elettronica nell’applicazione Posta per Windows 8](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10){.external}
+> Utilizzi una versione precedente di Windows? Consulta la nostra documentazione: [Configurare un account di posta elettronica nell’applicazione Posta per Windows 8](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10)
 >
 
 ## Procedura

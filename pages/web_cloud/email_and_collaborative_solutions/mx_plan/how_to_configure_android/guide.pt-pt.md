@@ -28,7 +28,7 @@ Os endereços de e-mail do serviço MX Plan podem ser configurados em diferentes
 
 ## Requisitos
 
-- Dispor de um endereço de e-mail MX Plan (incluído na oferta MX Plan ou numa oferta de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/)).
+- Dispor de um endereço de e-mail MX Plan (incluído na oferta MX Plan ou numa oferta de [alojamento web da OVHcloud](/links/web/hosting)).
 - Ter a aplicação Gmail no seu dispositivo. Se ainda não estiver presente, pode instalá-la a partir da Google Play Store.
 - Ter acesso às credenciais do endereço de e-mail que pretende configurar.
 

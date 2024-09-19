@@ -17,7 +17,7 @@ Przyznanie pełnomocnictwa do korzystania z całego konta e-mail nie zawsze jest
 
 ## Wymagania początkowe
 
-- skonfigurowane [rozwiązanie OVHcloud Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/)
+- skonfigurowane [rozwiązanie OVHcloud Exchange](/links/web/emails-hosted-exchange)
 - dostęp do konta Exchange (adres e-mail i hasło)
 
 ## W praktyce

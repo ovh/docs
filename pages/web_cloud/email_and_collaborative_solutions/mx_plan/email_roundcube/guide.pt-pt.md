@@ -15,7 +15,7 @@ Com a oferta MX Plan OVHcloud, pode enviar e-mails a partir de um software de te
 
 ## Requisitos
 
-- Dispor de uma solução de e-mail OVHcloud **MX Plan**, proposta entre as nossas [ofertas de alojamento web](https://www.ovhcloud.com/pt/web-hosting/), incluída num [Alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/), ou encomendada separadamente como solução autónoma.
+- Dispor de uma solução de e-mail OVHcloud **MX Plan**, proposta entre as nossas [ofertas de alojamento web](/links/web/hosting), incluída num [Alojamento gratuito 100M](/links/web/domains-free-hosting), ou encomendada separadamente como solução autónoma.
 - Ter acesso às informações de acesso ao endereço de e-mail MX Plan que pretende consultar. Para mais informações, consulte o nosso guia [Primeiros passos com a oferta MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
 
 ## Instruções
@@ -348,11 +348,11 @@ Para adicionar uma resposta, clique no botão `+`{.action} no fundo da coluna `R
 
 ### Adicionar uma resposta automática ou resposta automática <a name="automatic-respond"></a>
 
-Deseja adicionar uma resposta automática ao seu endereço de e-mail quando estiver ausente ou indisponível. Esta função não pode ser ativada a partir do webmail, mas sim a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na interface de gestão dos seus endereços de e-mail. Consulte o guia "[Criar uma resposta automática para o endereço de e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses)".
+Deseja adicionar uma resposta automática ao seu endereço de e-mail quando estiver ausente ou indisponível. Esta função não pode ser ativada a partir do webmail, mas sim a partir da [Área de Cliente OVHcloud](/links/manager), na interface de gestão dos seus endereços de e-mail. Consulte o guia "[Criar uma resposta automática para o endereço de e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses)".
 
 ### Alterar a palavra-passe do endereço de e-mail <a name="password"></a>
 
-Para alterar a palavra-passe do seu endereço de e-mail, deve ligar-se à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na interface de gestão dos seus endereços de e-mail. Consulte o guia "[Alterar a palavra-passe de um endereço de e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)".
+Para alterar a palavra-passe do seu endereço de e-mail, deve ligar-se à [Área de Cliente OVHcloud](/links/manager), na interface de gestão dos seus endereços de e-mail. Consulte o guia "[Alterar a palavra-passe de um endereço de e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)".
 
 ### Redação de um e-mail <a name="email-writing"></a>
 

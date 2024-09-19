@@ -41,7 +41,7 @@ Po określeniu konta, dla którego będziesz nadawał uprawnienia, wybraniu praw
 
 ### Etap 1: nadanie uprawnień
 
-Aby rozpocząć operację, zaloguj się do [Panelu klienta](/links/manager){.external}:
+Aby rozpocząć operację, zaloguj się do [Panelu klienta](/links/manager):
 
 - **Exchange**: Kliknij `Microsoft`{.action}, po czym kliknij `Exchange`{.action}.
 - **Email Pro**: Kliknij `Email Pro`{.action}.
@@ -66,11 +66,11 @@ Teraz możesz zacząć korzystać z uprawnienia. Upewnij się, że posiadasz dan
 
 Sposób postępowania jest inny w zależności od prawa lub praw, jakie przydzieliłeś oraz programu lub interfejsu, którego będziesz używał do dostępu do konta e-mail. Kontynuuj lekturę niniejszego przewodnika w sekcji, która dotyczy prawa lub praw, które Cię dotyczą.
 
-- [Korzystanie z „prawa dostępu”](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#21-korzystanie-z-prawa-dostepu){.external}
+- [Korzystanie z „prawa dostępu”](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#21-korzystanie-z-prawa-dostepu)
 
-- [Korzystanie z „prawa do wysyłki poczty”](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#22-korzystanie-z-prawa-do-wysylki-poczty){.external}
+- [Korzystanie z „prawa do wysyłki poczty”](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#22-korzystanie-z-prawa-do-wysylki-poczty)
 
-- [Korzystanie z „prawa do wysyłki poczty w imieniu”](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#23-korzystanie-z-prawa-do-wysylki-poczty-w-imieniu){.external}
+- [Korzystanie z „prawa do wysyłki poczty w imieniu”](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#23-korzystanie-z-prawa-do-wysylki-poczty-w-imieniu)
 
 > [!warning]
 >

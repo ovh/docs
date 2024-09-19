@@ -6,7 +6,7 @@ updated: 2020-03-09
 
 ## Objetivo
 
-[OVH Mail Migrator](https://omm.ovh.net/){.external} (OMM) é uma ferramenta criada pela OVHcloud. Permite migrar as suas contas de e-mail de um serviço de alojamento para outro. O processo considera vários tipos de conteúdo, como os e-mails, os contactos, os calendários e as tarefas, desde que eles sejam compatíveis com as suas contas de e-mail OVHcloud. 
+[OVH Mail Migrator](https://omm.ovh.net/) (OMM) é uma ferramenta criada pela OVHcloud. Permite migrar as suas contas de e-mail de um serviço de alojamento para outro. O processo considera vários tipos de conteúdo, como os e-mails, os contactos, os calendários e as tarefas, desde que eles sejam compatíveis com as suas contas de e-mail OVHcloud. 
 
 Este guia descreve como usar a OMM para importar os vários elementos da sua conta Gmail para a sua conta de e-mail OVHcloud.
 
@@ -14,7 +14,7 @@ Este guia descreve como usar a OMM para importar os vários elementos da sua con
 
 ## Requisitos
 
-- Ter um serviço de e-mail no OVHcloud, como uma [oferta Exchange](https://www.ovhcloud.com/pt/emails/){.external}, [E-mail Pro](/links/web/email-pro){.external} ou MX Plan (através da oferta MX Plan sozinha ou incluída numa [oferta de serviço de alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}).
+- Ter um serviço de e-mail no OVHcloud, como uma [oferta Exchange](/links/web/emails), [E-mail Pro](/links/web/email-pro) ou MX Plan (através da oferta MX Plan sozinha ou incluída numa [oferta de serviço de alojamento web OVHcloud](/links/web/hosting)).
 - Ter dados de acesso relativos às contas de e-mail que pretende migrar (as contas de origem).
 - Ter dados de acesso relativos às contas de e-mail OVHcloud que recebem os dados migrados (as contas de destino).
 
@@ -24,9 +24,9 @@ Este guia descreve como usar a OMM para importar os vários elementos da sua con
 
 > [!primary]
 > Para que a migração seja possível, é preciso ativar o protocolo IMAP na sua conta Gmail. Para isso, observe o guia da Google
-> [como ativar o IMAP para a sua conta Gmail](https://support.google.com/mail/answer/7126229?hl=pt){.external}.
+> [como ativar o IMAP para a sua conta Gmail](https://support.google.com/mail/answer/7126229?hl=pt).
 
-Depois de o protocolo IMAP estar ativado na sua conta Gmail, vá a [OMM](https://omm.ovh.net/){.external}.
+Depois de o protocolo IMAP estar ativado na sua conta Gmail, vá a [OMM](https://omm.ovh.net/).
 
 Clique em `Migração`{.action} e, depois, em `Nova migração`{.action}.
 
@@ -73,7 +73,7 @@ A janela de progresso da migração (indicada a seguir) será então apresentada
 
 ![omm](images/OMM-gmail-step01-05.png){.thumbnail}
 
-Se isso acontecer, vá à caixa de entrada da sua conta Gmail e verifique se recebeu o e-mail com o assunto **"Alerta de segurança crítico"**. Trata-se de uma medida de segurança implementada pela Gmail. Para resolver esta situação, observe o guia: [Como autorizar as conexões menos seguras no Gmail](/pages/web_cloud/email_and_collaborative_solutions/migrating/security_gmail){.external}
+Se isso acontecer, vá à caixa de entrada da sua conta Gmail e verifique se recebeu o e-mail com o assunto **"Alerta de segurança crítico"**. Trata-se de uma medida de segurança implementada pela Gmail. Para resolver esta situação, observe o guia: [Como autorizar as conexões menos seguras no Gmail](/pages/web_cloud/email_and_collaborative_solutions/migrating/security_gmail)
 
 Depois de ter **autorizado as "conexões menos seguras"** no Gmail, pode reiniciar a migração.
 
@@ -83,7 +83,7 @@ Depois de ter **autorizado as "conexões menos seguras"** no Gmail, pode reinici
 
 Para importar o seu calendário para a sua conta OVHcloud, recupere uma salvaguarda do mesmo a partir da sua interface Gmail. Para isso, observe o guia oficial da Google:
 
-[Como exportar os calendários para a sua conta Gmail](https://support.google.com/calendar/answer/37111?hl=pt){.external}
+[Como exportar os calendários para a sua conta Gmail](https://support.google.com/calendar/answer/37111?hl=pt)
 
 Se tiver vários calendários na sua conta Gmail, irá transferir um ficheiro de arquivo que terá de descomprimir. Cada calendário estará no formato **.ics**.
 
@@ -92,7 +92,7 @@ Se tiver vários calendários na sua conta Gmail, irá transferir um ficheiro de
 > [!primary]
 > A migração dos calendários por OMM só é compatível para as contas Exchange.
 
-Depois de ter recuperado a salvaguarda do seu calendário no formato **.ics**, vá a [OMM](https://omm.ovh.net/){.external}.
+Depois de ter recuperado a salvaguarda do seu calendário no formato **.ics**, vá a [OMM](https://omm.ovh.net/).
 
 Vá ao separador `PST/ICS/VCF`{.action} em cima, e clique em `Nova migração PST/ICS/VCF`{.action}.
 
@@ -127,7 +127,7 @@ A janela de progresso da migração (indicada a seguir) será então apresentada
 
 Para importar os seus contactos para a sua conta OVHcloud, recupere uma salvaguarda destes últimos a partir da sua interface Gmail. Para isso, observe o guia oficial da Google:
 
-[Como exportar os contactos para a sua conta Gmail](https://support.google.com/contacts/answer/7199294?hl=pt){.external}
+[Como exportar os contactos para a sua conta Gmail](https://support.google.com/contacts/answer/7199294?hl=pt)
 
 > [!warning]
 > A exportação deve realizar-se no formato vCard (**.vcf**) através da interface Gmail. Esta opção é-lhe proposta no fim da exportação.
@@ -158,7 +158,7 @@ A janela de progresso da migração aparece. Pode deixá-la aberta para acompanh
 
 ## Quer saber mais?
 
-[Como autorizar as conexões menos seguras no Gmail](/pages/web_cloud/email_and_collaborative_solutions/migrating/security_gmail){.external}.
+[Como autorizar as conexões menos seguras no Gmail](/pages/web_cloud/email_and_collaborative_solutions/migrating/security_gmail).
 
-Fale com a nossa comunidade de utilizadores: [](https://community.ovh.com/en/){.external}.
+Fale com a nossa comunidade de utilizadores: [](https://community.ovh.com/en/).
 

@@ -29,7 +29,7 @@ E-Mail Pro Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingeri
 
 ### Schritt 1: E-Mail Pro Account-Informationen abrufen <a name="step1"></a>
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein gehen Sie dann in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `E-Mail für Profis`{.action} und wählen Sie den E-Mail Pro Dienst mit dem zu konfigurierenden E-Mail-Account aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein gehen Sie dann in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `E-Mail für Profis`{.action} und wählen Sie den E-Mail Pro Dienst mit dem zu konfigurierenden E-Mail-Account aus.
 
 Klicken Sie auf der neuen Seite auf den Tab `E-Mail-Accounts`{.action}.
 
@@ -165,6 +165,6 @@ Testen Sie dann das Senden und Empfangen von E-Mails über Ihre Microsoft Outloo
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

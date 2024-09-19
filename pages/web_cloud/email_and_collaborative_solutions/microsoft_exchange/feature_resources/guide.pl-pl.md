@@ -16,13 +16,13 @@ Funkcja Exchange pozwala na tworzenie kont e-mail dedykowanych do zasobów Twoje
 
 ## Wymagania początkowe
 
-- Posiadanie [rozwiązania Exchange OVHcloud](https://www.ovhcloud.com/pl/emails/hosted-exchange/)
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Posiadanie [rozwiązania Exchange OVHcloud](/links/web/emails-hosted-exchange)
+- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 - Posiadanie danych do logowania dla konta lub kont poczty elektronicznej mających dostęp do zasobu
 
 ## W praktyce
 
-Zaloguj się do swojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i na górnym pasku nawigacji wybierz `Web Cloud`{.action}. Kliknij `Microsoft`{.action}, a następnie `Exchange`{.action}. Następnie wybierz odpowiednią usługę Exchange. Kliknij kartę `Plus +`{.action}, a następnie `Zasoby`{.action}.
+Zaloguj się do swojego [panelu klienta OVHcloud](/links/manager) i na górnym pasku nawigacji wybierz `Web Cloud`{.action}. Kliknij `Microsoft`{.action}, a następnie `Exchange`{.action}. Następnie wybierz odpowiednią usługę Exchange. Kliknij kartę `Plus +`{.action}, a następnie `Zasoby`{.action}.
 
 ### Etap 1: tworzenie zasobów
 
@@ -35,7 +35,7 @@ Kliknij przycisk `Dodaj konto zasobów`{.action}, aby utworzyć pierwszy zasób.
 |Nazwa|Opis|
 |---|---|
 |E-mail dotyczący zasobu|Wprowadź adres zasobu. Pamiętaj, że nie możesz wybrać istniejącego konta e-mail.|
-|Nazwa zasobu|Pełna nazwa wyświetlana jest w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i [w interfejsie Webmail OVHcloud](https://www.ovh.pl/mail/) (OWA).|
+|Nazwa zasobu|Pełna nazwa wyświetlana jest w [Panelu klienta OVHcloud](/links/manager) i [w interfejsie Webmail OVHcloud](https://www.ovh.pl/mail/) (OWA).|
 |Rozmiar|Można określić maksymalny rozmiar zasobu (np. liczba miejsc siedzących w pomieszczeniu lub siedzeń wspólnego pojazdu).|
 |Pozwól na konflikty|Jeśli to pole jest zaznaczone, możesz utworzyć zdarzenia kalendarza pokrywające się i obejmujące ten sam zasób.|
 |Rodzaj zasobów|Wybierz rodzaj zasobów: "Sprzęt" lub "Sala".|

@@ -12,14 +12,14 @@ If you have just purchased an MX Plan solution, you can have email addresses, wh
 
 ## Requirements
 
-- An MX plan solution, available with a [web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external}, [100M free hosting](https://www.ovhcloud.com/en-ie/domains/free-web-hosting/){.external}, or ordered separately
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
+- An MX plan solution, available with a [web hosting plan](/links/web/hosting), [100M free hosting](/links/web/domains-free-hosting), or ordered separately
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
-Once the MX Plan solution is created and available, you can manage it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Depending on its activation date or if [it has been migrated recently](https://www.ovh.co.uk/mxplan-migration/){.external}, you may have the old or new version of the solution. You will need to check this before you proceed any further. 
+Once the MX Plan solution is created and available, you can manage it from the [OVHcloud Control Panel](/links/manager). Depending on its activation date or if [it has been migrated recently](https://www.ovh.co.uk/mxplan-migration/), you may have the old or new version of the solution. You will need to check this before you proceed any further. 
 
-To do this, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, and go to the `Web Cloud`{.action} section. Click `Emails`{.action}, and then choose the name of the MX Plan service concerned. Then you can proceed in accordance with the version you are using.
+To do this, log in to the [OVHcloud Control Panel](/links/manager), and go to the `Web Cloud`{.action} section. Click `Emails`{.action}, and then choose the name of the MX Plan service concerned. Then you can proceed in accordance with the version you are using.
 
 |MX Plan legacy version|MX Plan new version|
 |---|---|
@@ -117,7 +117,7 @@ You can do this in two ways:
 
 - Creating a redirection in the webmail interface, via inbox rules. To do this, please follow our guide on [Inbox rules in OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan#example-1-redirecting-emails-to-another-address).
 
-- Creating a redirection from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). For example, you can use this method to create an alias, i.e. redirect an email address that does not exist to an existing email address. To do this, please follow our guide on [Using email](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections#mx-plan-new-version) redirections.
+- Creating a redirection from your [OVHcloud Control Panel](/links/manager). For example, you can use this method to create an alias, i.e. redirect an email address that does not exist to an existing email address. To do this, please follow our guide on [Using email](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections#mx-plan-new-version) redirections.
 
 ##### **Automated responses**
 

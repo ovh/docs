@@ -13,7 +13,7 @@ Dans votre espace client OVHcloud, vous pouvez créer des signatures universelle
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
-- Avoir souscrit une offre [Exchange OVHcloud](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/) 
+- Avoir souscrit une offre [Exchange OVHcloud](/links/web/emails-hosted-exchange) 
 
 ## En pratique
 

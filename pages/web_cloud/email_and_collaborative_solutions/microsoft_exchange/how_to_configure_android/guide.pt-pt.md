@@ -31,7 +31,7 @@ Os endereços de e-mail da oferta Exchange podem ser configurados em diferentes 
 
 ## Requisitos
 
-- Ter o serviço [E-mail Pro](https://www.ovhcloud.com/pt/emails/){.external}.
+- Ter o serviço [E-mail Pro](/links/web/emails).
 - Ter a aplicação Gmail no seu dispositivo. Pode instalá-la a partir da Google Play Store.
 - Ter acesso às credenciais do endereço de e-mail que pretende configurar.
 
@@ -48,7 +48,7 @@ Os endereços de e-mail da oferta Exchange podem ser configurados em diferentes 
 >
 > No nosso exemplo, utilizamos a menção servidor: ex**?**.mail.ovh.net. Deverá substituir o "? " pelo número que designa o servidor do seu serviço Exchange.
 >
-> Encontre este número na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na rubrica `Web Cloud`{.action} e depois `Microsoft`{.action}.
+> Encontre este número na sua [Área de Cliente OVHcloud](/links/manager), na rubrica `Web Cloud`{.action} e depois `Microsoft`{.action}.
 > Clique em `Exchange`{.action} e, a seguir, na plataforma Exchange pretendida. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.
 >
 

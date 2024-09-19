@@ -17,7 +17,7 @@ updated: 2024-04-11
 ## Requisitos
 
 - Tener una solución **MX Plan** o una solución **Email Pro** o una solución **Exchange**.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 
@@ -51,7 +51,7 @@ Si utiliza un cliente de correo en su ordenador (Outlook, Mail de Mac, Thunderbi
 
 ### No puedo recibir correos electrónicos porque mi dirección de correo electrónico está llena, no tengo espacio. ¿Qué puedo hacer?
 
-Si ha contratado [una de nuestras soluciones de correo de OVHcloud](https://www.ovhcloud.com/es/emails/) y tiene una cuenta de correo llena, consulte nuestra guía "[Gestionar el espacio de almacenamiento de una cuenta de correo](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota)". Esta guía le ayudará a determinar si puede optimizar el espacio existente o si es necesario cambiar de solución de correo para aumentar la capacidad de almacenamiento.
+Si ha contratado [una de nuestras soluciones de correo de OVHcloud](/links/web/emails) y tiene una cuenta de correo llena, consulte nuestra guía "[Gestionar el espacio de almacenamiento de una cuenta de correo](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota)". Esta guía le ayudará a determinar si puede optimizar el espacio existente o si es necesario cambiar de solución de correo para aumentar la capacidad de almacenamiento.
 
 ### ¿Los mensajes de correo funcionan desde el webmail? (**envío** y/o **recepción**)
 
@@ -63,7 +63,7 @@ Desde el navegador de su ordenador o desde un smartphone, vaya a la dirección <
 
 ### No consigo conectarme al webmail
 
-Asegúrese de tener la contraseña correcta. Si lo necesita, puede modificarlo. Compruebe también si la doble autenticación está activada (solo [Exchange](https://www.ovhcloud.com/es-es/emails/hosted-exchange/)).
+Asegúrese de tener la contraseña correcta. Si lo necesita, puede modificarlo. Compruebe también si la doble autenticación está activada (solo [Exchange](/links/web/emails-hosted-exchange)).
 
 Esta guía explica cómo cambiar la contraseña de una dirección de correo:
 
@@ -113,7 +113,7 @@ A continuación encontrará la mayoría de los códigos de respuesta negativos S
 |421|Servicio no disponible, canal de transmisión en curso de cierre|Procedente del error indeterminado, asegúrese de que el envío a otro dominio funciona. Si es así, vuelva a intentarlo más tarde|
 |432|Recepción del email en el servidor Exchange detenido|Este mensaje de error solo es devuelto por los servidores de correo Microsoft Exchange. Contacte con el administrador del servidor de correo de destino|
 |449|Un error de enrutado|Este mensaje de error solo es devuelto por los servidores de correo Microsoft Exchange. Microsoft recomienda realizar un diagnóstico con su herramienta WinRoute|
-|450|Petición de acción de correo no efectuada: buzón de correo no disponible (por ejemplo, buzón de correo ocupado o temporalmente bloqueado por razones de seguridad o de blacklistage)|Compruebe si su dirección IP del servidor de correo no es blacklistada ([SpamHaus](https://check.spamhaus.org/){.external}) y si su email no incluye palabras que se refieran al spam.|
+|450|Petición de acción de correo no efectuada: buzón de correo no disponible (por ejemplo, buzón de correo ocupado o temporalmente bloqueado por razones de seguridad o de blacklistage)|Compruebe si su dirección IP del servidor de correo no es blacklistada ([SpamHaus](https://check.spamhaus.org/)) y si su email no incluye palabras que se refieran al spam.|
 |451|Se ha interrumpido la acción necesaria: Error de procesamiento local|Esto puede deberse a una sobrecarga momentánea, o a una verificación del SPF del dominio emisor incorrecta. Consulte el mensaje complementario que le haya proporcionado el servidor o contacte con el administrador del servidor si persiste|
 |452|Acción solicitada no realizada: sistema de almacenamiento insuficiente|Su servidor de correo está "sobrecargado". Esto también puede deberse a un gran número de mensajes que intentan ser enviados a la vez. Por favor, compruebe su bandeja de salida e inténtelo de nuevo|
 |455|Servidor incapaz de recibir la configuración|Espere un tiempo y vuelva a intentarlo. En caso de fallo, contacte con el administrador del servidor de correo del destinatario|
@@ -129,7 +129,7 @@ A continuación encontrará la mayoría de los códigos de respuesta negativos S
 |551|Usuario no local|Esto se usa generalmente como una estrategia de prevención contra el spam. Por alguna razón, el relevo de correo no está autorizado a transferir su mensaje a otro servidor distinto del suyo. Por favor, contacte con su proveedor de servicio.|
 |552|Petición de acción de correo interrumpida: espacio de almacenamiento superado|El usuario al que ha intentado contactar ya no tiene espacio disponible para recibir mensajes. Desafortunadamente, la única solución es contactar con el destinatario a través de otro método|
 |553|Acción solicitada no realizada: dirección de correo electrónico no autorizada|Esto suele deberse a una dirección de correo electrónico de destino incorrecta. Por favor, compruebe que la dirección de correo electrónico es correcta.|
-|554|Transacción fallida, "Aquí no hay servicios SMTP"|En general, se trata de un problema de lista negra. Compruebe si su dirección IP del servidor de correo no es blacklistada ([SpamHaus](https://check.spamhaus.org/){.external})|
+|554|Transacción fallida, "Aquí no hay servicios SMTP"|En general, se trata de un problema de lista negra. Compruebe si su dirección IP del servidor de correo no es blacklistada ([SpamHaus](https://check.spamhaus.org/))|
 |555|MAIL FROM / RCPT TO, parámetros no reconocidos o no implementados|El servidor SMTP saliente no guarda correctamente la dirección de correo electrónico utilizada en los parámetros "De" o "A". Por favor, compruebe que las direcciones de correo electrónico indicadas son correctas y también que no ha superado el límite establecido por OVHcloud: 200 emails /hora por cuenta y 300 emails /hora/ip|
 
 ## Más información

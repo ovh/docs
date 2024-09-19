@@ -20,8 +20,8 @@ Delegacja uprawnień daje użytkownikowi konta e-mail możliwość samodzielnego
 
 ## Wymagania początkowe
 
-- Posiadanie pakietu MX Plan Jest ona dostępna przez: ofertę [hostingu WWW Cloud](https://www.ovhcloud.com/pl/web-hosting/), bezpłatnego [Darmowy hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/) lub ofertę MX Plan zamówioną oddzielnie.
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), sekcja `Web Cloud`{.action}.
+- Posiadanie pakietu MX Plan Jest ona dostępna przez: ofertę [hostingu WWW Cloud](/links/web/hosting), bezpłatnego [Darmowy hosting 100M](/links/web/domains-free-hosting) lub ofertę MX Plan zamówioną oddzielnie.
+- Dostęp do [Panelu klienta OVHcloud](/links/manager), sekcja `Web Cloud`{.action}.
 
 > [!warning]
 >
@@ -37,10 +37,10 @@ Delegacja uprawnień daje użytkownikowi konta e-mail możliwość samodzielnego
 
 > [!primary]
 >
->Delegacja na koncie e-mail wyświetla się w [odpowiednim panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W tej sytuacji możliwe będą jedynie zmiany wskazane w sekcji [Cel](#objective) niniejszego przewodnika.
+>Delegacja na koncie e-mail wyświetla się w [odpowiednim panelu klienta](/links/manager). W tej sytuacji możliwe będą jedynie zmiany wskazane w sekcji [Cel](#objective) niniejszego przewodnika.
 >
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} w sekcji `Web Cloud`.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager) w sekcji `Web Cloud`.
 
 Kliknij E-maile na pasku usług, po czym wybierz odpowiednią usługę MX Plan.
 

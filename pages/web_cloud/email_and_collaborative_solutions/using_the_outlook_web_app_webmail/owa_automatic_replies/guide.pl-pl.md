@@ -12,7 +12,7 @@ Ta funkcja programu Exchange umożliwia skonfigurowanie automatycznych odpowiedz
 
 ## Wymagania początkowe
 
- - Instalacja rozwiązania poczty elektronicznej OVHcloud [Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/) lub [Email Pro](https://www.ovhcloud.com/fr/emails/email-pro/)
+ - Instalacja rozwiązania poczty elektronicznej OVHcloud [Exchange](/links/web/emails-hosted-exchange) lub [Email Pro](/links/web/email-pro)
 - dostęp do konta e-mail (adres e-mail i hasło)
 
 ## W praktyce

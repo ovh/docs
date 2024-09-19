@@ -18,7 +18,7 @@ Le service Hosted Exchange permet de bénéficier d’adresses e-mail profession
 
 ## Prérequis
 
-- Avoir souscrit une offre [Hosted Exchange](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/).
+- Avoir souscrit une offre [Hosted Exchange](/links/web/emails-hosted-exchange).
 - Avoir reçu l’e-mail vous confirmant l’installation de votre solution Hosted Exchange.
 - Disposer d'un nom de domaine.
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).

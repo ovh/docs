@@ -20,7 +20,7 @@ Exchange Accounts können auf verschiedenen, kompatiblen E-Mail-Clients eingeric
 
 ## Voraussetzungen
 
-- Sie verfügen über einen [Exchange Account](https://www.ovhcloud.com/de/emails/hosted-exchange/){.external}.
+- Sie verfügen über einen [Exchange Account](/links/web/emails-hosted-exchange).
 - Microsoft Outlook ist auf Ihrem Gerät installiert.
 - Sie verfügen über Anmeldeinformationen für die E-Mail-Adresse, die Sie konfigurieren möchten.
 - Der OVHcloud SRV-Eintrag muss in der DNS-Zone der Domain korrekt konfiguriert sein. Lesen Sie hierzu unsere Anleitung "[Eine Domain zu Ihrer Exchange Dienstleistung hinzufügen](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)".
@@ -54,7 +54,7 @@ Exchange Accounts können auf verschiedenen, kompatiblen E-Mail-Clients eingeric
 > 
 > ![Exchange](images/config-outlook-exchange03.png){.thumbnail}
 >
-> Wir empfehlen, die Konfiguration des Domainnamens zu überprüfen, der mit Ihrem Exchange-Dienst verbunden ist. Gehen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) zum Tab `Assoziierte Domains`{.action} und prüfen Sie dann in der Tabelle die Spalte `Diagnose`{.action}.
+> Wir empfehlen, die Konfiguration des Domainnamens zu überprüfen, der mit Ihrem Exchange-Dienst verbunden ist. Gehen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) zum Tab `Assoziierte Domains`{.action} und prüfen Sie dann in der Tabelle die Spalte `Diagnose`{.action}.
 >
 
 - Wenn die Konfiguration Ihrer Domain gültig ist, kann eine Verbindungsberechtigungsnachricht zu den OVHcloud Servern angezeigt werden. Akzeptieren Sie diese, damit Ihr Exchange Account automatisch konfiguriert werden kann.

@@ -10,13 +10,13 @@ You can configure MX Plan email addresses on email clients, if they are compatib
 
 ## Requirements
 
-- You need to have an MX Plan email address (included in the MX Plan solution, and in [OVHcloud Web Hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/){.external}).
+- You need to have an MX Plan email address (included in the MX Plan solution, and in [OVHcloud Web Hosting plans](/links/web/hosting)).
 - You must have Microsoft Outlook installed on your Mac.
 - You must have the login details for the email address you want to set up.
 
 > [!primary]
 >
-> Are you using Outlook for Windows? Read our guide: [Configuring your email address in Outlook for Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016){.external}.
+> Are you using Outlook for Windows? Read our guide: [Configuring your email address in Outlook for Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016).
 >
 
 ## Instructions
@@ -74,8 +74,8 @@ OVHcloud also offers a web application that you can use to consult your email fr
 
 ## Go further
 
-[Configuring your Email Pro account in Outlook for Mac](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016_mac){.external}.
+[Configuring your Email Pro account in Outlook for Mac](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016_mac).
 
-[Configuring your Exchange account in Outlook for Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac){.external}.
+[Configuring your Exchange account in Outlook for Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac).
 
 Join our community of users on <https://community.ovh.com/en/>.

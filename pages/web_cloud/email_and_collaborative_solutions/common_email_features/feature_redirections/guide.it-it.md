@@ -68,7 +68,7 @@ Fare clic sulle schede seguenti per illustrare il funzionamento di alias e reind
 ## Prerequisiti
 
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
-- Disporre di una soluzione email OVHcloud configurata precedentemente (**MX Plan**, inclusa nelle nostre [soluzioni di hosting Web](https://www.ovhcloud.com/it/web-hosting/), inclusa in un [Hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting/) o ordinata separatamente come soluzione autonoma, come [Hosted Exchange](https://www.ovhcloud.com/it/emails/hosted-exchange/) o [Email Pro](/links/web/email-pro))
+- Disporre di una soluzione email OVHcloud configurata precedentemente (**MX Plan**, inclusa nelle nostre [soluzioni di hosting Web](/links/web/hosting), inclusa in un [Hosting gratuito 100M](/links/web/domains-free-hosting) o ordinata separatamente come soluzione autonoma, come [Hosted Exchange](/links/web/emails-hosted-exchange) o [Email Pro](/links/web/email-pro))
 
 ## Procedura
 
@@ -83,7 +83,7 @@ Fare clic sulle schede seguenti per illustrare il funzionamento di alias e reind
 >
 
 >
-> In base alla data di attivazione della tua offerta MXplan o in caso [di recente migrazione della soluzione](https://www.ovhcloud.com/it/web-hosting/mxplan-migration/), è possibile che tu disponga della versione storica o della nuova versione dell'offerta. Prima di proseguire, è necessario identificarla.<br>
+> In base alla data di attivazione della tua offerta MXplan o in caso di recente migrazione della soluzione, è possibile che tu disponga della versione storica o della nuova versione dell'offerta. Prima di proseguire, è necessario identificarla.<br>
 >
 > Accedi alla sezione `Web Cloud`{.action} dello [Spazio Cliente OVHcloud](/links/manager). Clicca su `Email`{.action} e seleziona il servizio MX Plan interessato. Prosegui nella lettura di questa guida in base alla versione di cui disponi:<br>
 >

@@ -12,14 +12,14 @@ La solución de alojamiento web permite disfrutar de direcciones de correo elect
 
 ## Requisitos
 
-- Tener una solución MX Plan, incluida en un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/).
-- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la sección `Web Cloud`{.action}.
+- Tener una solución MX Plan, incluida en un [plan de hosting de OVHcloud](/links/web/hosting).
+- Estar conectado al [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action}.
 
 ## Procedimiento
 
-Una vez que el MX Plan haya sido creado y esté disponible, puede administrarlo desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. En función de cuándo haya activado su MX Plan o de si [el servicio ha sido migrado recientemente](https://www.ovh.co.uk/mxplan-migration/){.external}, tendrá una versión diferente. Antes de continuar, compruebe de qué versión dispone. 
+Una vez que el MX Plan haya sido creado y esté disponible, puede administrarlo desde el [área de cliente de OVHcloud](/links/manager). En función de cuándo haya activado su MX Plan o de si [el servicio ha sido migrado recientemente](https://www.ovh.co.uk/mxplan-migration/), tendrá una versión diferente. Antes de continuar, compruebe de qué versión dispone. 
 
-Para ello, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la sección `Web Cloud`{.action}. Haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente. Siga leyendo esta guía en función de su versión:
+Para ello, conéctese al [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action}. Haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente. Siga leyendo esta guía en función de su versión:
 
 |Versión histórica de la solución MX Plan|Nueva versión de la solución MX Plan|
 |---|---|
@@ -60,9 +60,9 @@ Una vez que haya creado las direcciones de correo, ya puede empezar a usarlas. P
 
 ##### 3.1. Utilizar el webmail Outlook Web App (OWA)
 
-Vaya a la [página de conexión al webmail](https://www.ovh.com/world/es/mail/){.external} e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
+Vaya a la [página de conexión al webmail](https://www.ovh.com/world/es/mail/) e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
 
-La primera vez que se conecte al webmail deberá seleccionar el idioma de la interfaz y la zona horaria en la que se encuentra. A continuación se abrirá la bandeja de entrada. Para más información, consulte nuestra guía [Utilizar una dirección de correo desde Outlook en la Web](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa){.external}.
+La primera vez que se conecte al webmail deberá seleccionar el idioma de la interfaz y la zona horaria en la que se encuentra. A continuación se abrirá la bandeja de entrada. Para más información, consulte nuestra guía [Utilizar una dirección de correo desde Outlook en la Web](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
 ![Correo electrónico](images/mxplan-starter-new-step4.png){.thumbnail}
 
@@ -72,7 +72,7 @@ Puede configurar su dirección de correo en el dispositivo que desee (smartphone
 
 |Windows|Outlook|Apple|Android|Otros|
 |---|---|---|---|---|
-|[Windows 10](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10){.external}|[Outlook](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016){.external}|[Mail de macOS (última versión)](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_mail_macos){.external}|[Android (última versión)](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android){.external}|[Gmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_gmail){.external}|
+|[Windows 10](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10)|[Outlook](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)|[Mail de macOS (última versión)](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_mail_macos)|[Android (última versión)](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android)|[Gmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_gmail)|
 
 A continuación se indican los parámetros necesarios para configurar una cuenta MX Plan:
 
@@ -128,9 +128,9 @@ Una vez que haya creado las direcciones de correo, ya puede empezar a usarlas. P
 
 ##### 3.1. Utilizar el webmail Roundcube
 
-Vaya a la [página de conexión al webmail](https://www.ovh.com/world/es/mail/){.external} e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
+Vaya a la [página de conexión al webmail](https://www.ovh.com/world/es/mail/) e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
 
-A continuación, podrá consultar su bandeja de entrada. Para más información, consulte nuestra [Guía de uso de Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube){.external}.
+A continuación, podrá consultar su bandeja de entrada. Para más información, consulte nuestra [Guía de uso de Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
 
 ![Correo electrónico](images/mxplan-starter-legacy-step4.png){.thumbnail}
 
@@ -140,7 +140,7 @@ Puede configurar su dirección de correo en el dispositivo que desee (smartphone
 
 |Windows|Outlook|Apple|Android|Otros|
 |---|---|---|---|---|
-|[Windows 10](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10){.external}|[Outlook](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016){.external}|[Mail de macOS (última versión)](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_mail_macos){.external}|[Android (última versión)](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android){.external}|[Gmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_gmail){.external}|
+|[Windows 10](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10)|[Outlook](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)|[Mail de macOS (última versión)](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_mail_macos)|[Android (última versión)](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android)|[Gmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_gmail)|
 
 A continuación se indican los parámetros necesarios para configurar una cuenta MX Plan:
 

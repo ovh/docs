@@ -19,7 +19,7 @@ You can configure MX Plan accounts on email clients, if they are compatible. By 
 
 ## Requirements
 
-- an MX Plan email address (included in the MX Plan solution and in [OVHcloud web hosting plans](https://www.ovhcloud.com/asia/web-hosting/)).
+- an MX Plan email address (included in the MX Plan solution and in [OVHcloud web hosting plans](/links/web/hosting)).
 - **Mail** installed on your Mac.
 - the required credentials for the email address you would like to configure.
  

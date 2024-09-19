@@ -27,7 +27,7 @@ Email accounts of the Exchange solution can be configured on various compatible 
 
 ## Requirements
 
-- You have an [OVHcloud Exchange](https://www.ovhcloud.com/en-ca/emails/){.external} solution.
+- You have an [OVHcloud Exchange](/links/web/emails) solution.
 - You have the Gmail app installed on your device. You can install the app from the Google Play Store.
 - You have the login credentials for the Exchange account to be configured.
 
@@ -44,7 +44,7 @@ Email accounts of the Exchange solution can be configured on various compatible 
 >
 > In our examples, we use the server name "ex**?**.mail.ovh.ca". You will need to replace the “?” with the number designating the server of your Exchange service.
 >
-> You can find this number in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}. In the `Web Cloud`{.action} section, open `Microsoft`{.action} and then `Exchange`{.action}. The server name is visible in the **Connection** box in the `General Information`{.action} tab.
+> You can find this number in the [OVHcloud Control Panel](/links/manager). In the `Web Cloud`{.action} section, open `Microsoft`{.action} and then `Exchange`{.action}. The server name is visible in the **Connection** box in the `General Information`{.action} tab.
 >
 
 On your device’s homepage, open the `Gmail`{.action} app.

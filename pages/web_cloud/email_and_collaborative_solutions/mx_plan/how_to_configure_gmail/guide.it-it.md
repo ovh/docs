@@ -19,7 +19,7 @@ Gli account email del servizio MX Plan possono essere configurati su client o ap
 
 ## Prerequisiti
 
-- Disporre di un account email MX Plan incluso nel servizio MX Plan o in una soluzione di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}
+- Disporre di un account email MX Plan incluso nel servizio MX Plan o in una soluzione di [hosting Web OVHcloud](/links/web/hosting)
 - Disporre delle credenziali associate all’account email OVHcloud da configurare
 - Disporre delle credenziali associate all’account Gmail (Personale o Professionale) su cui configurare l’indirizzo OVHcloud
 

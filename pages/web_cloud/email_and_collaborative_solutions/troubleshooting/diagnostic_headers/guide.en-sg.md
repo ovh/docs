@@ -41,7 +41,7 @@ To retrieve a `.eml` file, go to the [Webmail](#webmail) section below.
 
 ## Requirements
 
-- An email address using one of our [OVHcloud email solutions include in web hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/), or an external solution
+- An email address using one of our [OVHcloud email solutions include in web hosting plan](/links/web/hosting), or an external solution
 - Access to your email address via webmail or an email client
 
 ## Instructions

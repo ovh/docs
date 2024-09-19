@@ -19,7 +19,7 @@ As contas E-mail Pro podem ser configuradas em vários softwares de e-mail e int
 
 ## Requisitos
 
-- Ter um plano [E-mail Pro](/links/web/email-pro){.external}.
+- Ter um plano [E-mail Pro](/links/web/email-pro).
 - Dispor das credenciais relativas à conta E-mail Pro que pretende configurar.
 - Dispor dos dados de acesso à conta Gmail na qual pretende configurar a conta E-mail Pro da OVHcloud.
 
@@ -36,7 +36,7 @@ As contas E-mail Pro podem ser configuradas em vários softwares de e-mail e int
 >
 > Neste exemplo, utilizamos a menção servidor: pro**?**.mail.ovh.net. Deverá substituir o «? » pelo número que identifica o servidor do seu serviço E-mail Pro.
 >
-> Encontre este algarismo na sua [Área de Cliente OVHcloud](/links/manager){.external}, na rubrica `Web Cloud`{.action} e `E-mail Pro`{.action}. O nome do servidor está visível na tabela **Ligação** do separador `Informações gerais`{.action}.
+> Encontre este algarismo na sua [Área de Cliente OVHcloud](/links/manager), na rubrica `Web Cloud`{.action} e `E-mail Pro`{.action}. O nome do servidor está visível na tabela **Ligação** do separador `Informações gerais`{.action}.
 >
 
 Para começar, aceda à interface de gestão do Gmail a partir do browser. Uma vez nesta última, introduza as informações da sua conta Gmail e ligue-se.

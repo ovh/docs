@@ -6,7 +6,7 @@ updated: 2020-03-09
 
 ## Objective
 
-The [OVH Mail Migrator](https://omm.ovh.net/){.external} is a tool created by OVHcloud. You can use it to migrate email accounts from one hosting provider to another. The process covers different types of content, such as emails, contacts, calendars and tasks, provided that they are compatible with your OVHcloud email accounts. 
+The [OVH Mail Migrator](https://omm.ovh.net/) is a tool created by OVHcloud. You can use it to migrate email accounts from one hosting provider to another. The process covers different types of content, such as emails, contacts, calendars and tasks, provided that they are compatible with your OVHcloud email accounts. 
 
 This guide describes how to use OMM to import various elements of your Gmail account to your OVHcloud account.
 
@@ -14,7 +14,7 @@ This guide describes how to use OMM to import various elements of your Gmail acc
 
 ## Requirements
 
-- an email service with OVHcloud, e.g. [Exchange](https://www.ovhcloud.com/en-gb/emails/){.external}, [Email Pro](/links/web/email-pro){.external} or MX Plan (via the MX Plan standalone tool or included in an [OVHcloud web hosting](https://www.ovhcloud.com/en-gb/web-hosting/){.external} plan)
+- an email service with OVHcloud, e.g. [Exchange](/links/web/emails), [Email Pro](/links/web/email-pro) or MX Plan (via the MX Plan standalone tool or included in an [OVHcloud web hosting](/links/web/hosting) plan)
 - access to the email accounts you want to migrate (the source accounts)
 - access to the OVHcloud email accounts that will be receiving the migrated data (the target accounts)
 
@@ -24,9 +24,9 @@ This guide describes how to use OMM to import various elements of your Gmail acc
 
 > [!primary]
 > For the migration to work, you will need to turn on IMAP protocol for your Gmail account. To this, follow the Google guide on
-> [how to turn on IMAP for your Gmail account](https://support.google.com/mail/answer/7126229?hl=en){.external}.
+> [how to turn on IMAP for your Gmail account](https://support.google.com/mail/answer/7126229?hl=en).
 
-Once you have turned on IMAP for your Gmail account, go to the [OMM](https://omm.ovh.net/){.external} tool.
+Once you have turned on IMAP for your Gmail account, go to the [OMM](https://omm.ovh.net/) tool.
 
 Click `Migration`{.action}, then `New migration`{.action}.
 
@@ -83,7 +83,7 @@ After you have **authorised less secure connections** on Gmail, you will need to
 
 To import your calendar to your OVHcloud account, you will need to retrieve a backup of the calendar via the Gmail interface. To do this, follow the Google guide:
 
-[How to export your calendars for your Gmail account](https://support.google.com/calendar/answer/37111?hl=en){.external}
+[How to export your calendars for your Gmail account](https://support.google.com/calendar/answer/37111?hl=en)
 
 If you have several calendars on your Gmail account, you will download an archive folder, which you then need to decompress. Each calendar will be exported in **.ics** format.
 
@@ -92,7 +92,7 @@ If you have several calendars on your Gmail account, you will download an archiv
 > [!primary]
 > Calendar migration via OMM is only compatible with Exchange target accounts.
 
-Once you have retrieved the backup of your calendar in **.ics** format, go to [OMM](https://omm.ovh.net/){.external}.
+Once you have retrieved the backup of your calendar in **.ics** format, go to [OMM](https://omm.ovh.net/).
 
 Click on the `PST/ICS/VCF`{.action} tab at the top, then click `New PST/ICS/VCF migration`{.action}.
 
@@ -127,7 +127,7 @@ The migration tracking window (below) will then appear. You can leave it open to
 
 To import your contacts to your OVHcloud account, you will need to retrieve a backup of the contacts via the Gmail interface. To do this, follow the Google guide:
 
-[How to export or back up contacts for your Gmail account](https://support.google.com/contacts/answer/7199294?hl=en){.external}
+[How to export or back up contacts for your Gmail account](https://support.google.com/contacts/answer/7199294?hl=en)
 
 > [!warning]
 > The export must be taken in vCard (**.vcf**) format via the Gmail interface. This option is offered at the end of the export process.

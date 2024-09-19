@@ -6,7 +6,7 @@ updated: 2021-01-05
 
 ## Objective
 
-You can [migrate an email address automatically](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm){.external} via our [OVH Mail Migrator](https://omm.ovh.net/){.external} tool. You can also manually migrate your email address using an email client.
+You can [migrate an email address automatically](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm) via our [OVH Mail Migrator](https://omm.ovh.net/) tool. You can also manually migrate your email address using an email client.
 
 **Find out how to migrate your email address manually.**
 
@@ -17,14 +17,14 @@ You can [migrate an email address automatically](/pages/web_cloud/email_and_coll
 
 ## Requirements
 
-- an [email service](https://www.ovhcloud.com/asia/web-hosting/) with OVHcloud
+- an [email service](/links/web/hosting) with OVHcloud
 - access to the email accounts you want to migrate (the source accounts)
 - access to the OVHcloud email accounts that will be receiving the migrated data (the target accounts)
 
 ## Instructions
 
 > [!primary]
-> First of all, check if automatic migration is possible using our [OVH Mail Migrator](https://omm.ovh.net/){.external}. To do this, please use our guide on [Migrating email accounts with OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm){.external}.
+> First of all, check if automatic migration is possible using our [OVH Mail Migrator](https://omm.ovh.net/). To do this, please use our guide on [Migrating email accounts with OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).
 
 In this guide, we have carried out operations on the most commonly used email software, i.e. **Outlook**, **Mail** on Mac OS and **Thunderbird**.
 

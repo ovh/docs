@@ -22,7 +22,7 @@ Gli account MX Plan possono essere configurati su client di posta compatibili, p
 
 ## Prerequisiti
 
-- Disporre di un account email MX Plan incluso nel servizio MX Plan o in una [soluzione di hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/)
+- Disporre di un account email MX Plan incluso nel servizio MX Plan o in una [soluzione di hosting Web OVHcloud](/links/web/hosting)
 - Disporre del software Mail installato sul tuo Mac
 - Disporre delle credenziali associate all’indirizzo email da configurare
  

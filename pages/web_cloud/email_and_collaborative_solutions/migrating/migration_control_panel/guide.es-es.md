@@ -16,10 +16,10 @@ OVHcloud ofrece varias soluciones de correo electrónico: MX Plan (vendido solo 
 
 ## Requisitos
 
-- Disponer de una cuenta MX Plan (a través de la solución MX Plan o incluida en un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external}).
-- Tener un servicio [Exchange](https://www.ovhcloud.com/es-es/emails/hosted-exchange/){.external} o [Email Pro](/links/web/email-pro){.external} con al menos una cuenta no configurada (que aparecerá como "@configureme.me").
+- Disponer de una cuenta MX Plan (a través de la solución MX Plan o incluida en un plan de [hosting de OVHcloud](/links/web/hosting)).
+- Tener un servicio [Exchange](/links/web/emails-hosted-exchange) o [Email Pro](/links/web/email-pro) con al menos una cuenta no configurada (que aparecerá como "@configureme.me").
 - **No haber configurado ninguna redirección en la dirección de correo MX Plan que quiera migrar.**
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 
@@ -27,13 +27,13 @@ OVHcloud ofrece varias soluciones de correo electrónico: MX Plan (vendido solo 
 
 Las soluciones Email Pro y Exchange disponen de una base de funcionalidades común. Sin embargo, existen diferencias en los casos de uso. Eligiendo una dirección Exchange, dispondrá de todas las funciones colaborativas, como la sincronización del calendario y de los contactos. La solución Email Pro ofrece algunas, pero estas están limitadas a su uso únicamente a través de un webmail.
 
-Por lo tanto, es importante conocer a qué solución quiere migrar sus direcciones de correo MX Plan. Si necesita ayuda, consulte la página de [soluciones de correo electrónico profesionales de OVHcloud](https://www.ovhcloud.com/fr/emails/){.external}, que ofrece una comparativa detallada de los productos. Es posible combinar las soluciones y utilizar una o más cuentas Email Pro y Exchange para un mismo dominio. Si quiere migrar varias cuentas, le recomendamos que establezca un plan de migración.
+Por lo tanto, es importante conocer a qué solución quiere migrar sus direcciones de correo MX Plan. Si necesita ayuda, consulte la página de [soluciones de correo electrónico profesionales de OVHcloud](/links/web/emails), que ofrece una comparativa detallada de los productos. Es posible combinar las soluciones y utilizar una o más cuentas Email Pro y Exchange para un mismo dominio. Si quiere migrar varias cuentas, le recomendamos que establezca un plan de migración.
 
 ### 2\. contratar sus cuentas Email Pro o Exchange
 
 Este paso es opcional si ya tiene un servicio Exchange o Email Pro al que quiere realizar la migración.
 
-En caso contrario, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y contrate el servicio Email Pro o Exchange que desee. Siga los pasos que se indican y espere a que se instale el servicio. Recibirá un mensaje de correo electrónico cuando haya finalizado la operación.
+En caso contrario, conéctese al [área de cliente de OVHcloud](/links/manager) y contrate el servicio Email Pro o Exchange que desee. Siga los pasos que se indican y espere a que se instale el servicio. Recibirá un mensaje de correo electrónico cuando haya finalizado la operación.
 
 > [!primary]
 >
@@ -44,7 +44,7 @@ En caso contrario, conéctese al [área de cliente de OVHcloud](https://www.ovh.
 
 Antes de realizar la migración, deberá identificar la versión del MXPlan desde el que migrará.
 
-Para ello, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Web Cloud`{.action}.Haga clic en `Correo electrónico`{.action} y seleccione el servicio correspondiente. Continúe leyendo esta guía en el apartado correspondiente a la versión:
+Para ello, conéctese al [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action}.Haga clic en `Correo electrónico`{.action} y seleccione el servicio correspondiente. Continúe leyendo esta guía en el apartado correspondiente a la versión:
 
 |Versión histórica de la solución MX Plan|Nueva versión de la solución MX Plan|
 |---|---|
@@ -79,7 +79,7 @@ Continúe leyendo esta guía en la interfaz seleccionada. Le recordamos que el t
 
 ##### **Migración desde el asistente de configuración de Exchange**
 
-Para ello, seleccione el servicio en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} El asistente aparecerá para ayudarle a configurar su nuevo servicio Exchange. Durante este proceso, podrá seleccionar las cuentas MX Plan que quiera migrar.
+Para ello, seleccione el servicio en el [área de cliente de OVHcloud](/links/manager) El asistente aparecerá para ayudarle a configurar su nuevo servicio Exchange. Durante este proceso, podrá seleccionar las cuentas MX Plan que quiera migrar.
 
 Si no aparece el asistente de configuración, la información general del servicio Exchange se mostrará en su lugar. En ese caso, deberá realizar la migración de sus cuentas a través de la interfaz MX Plan.
 
@@ -151,7 +151,7 @@ Para ello, seleccione el servicio Email Pro o Exchange correspondiente y abra la
 
 > [!primary]
 >
-> Si acaba de realizar la migración o de modificar un registro DNS del dominio, es posible que la actualización tarde unas horas en mostrarse en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+> Si acaba de realizar la migración o de modificar un registro DNS del dominio, es posible que la actualización tarde unas horas en mostrarse en el [área de cliente de OVHcloud](/links/manager).
 >
 
 Para modificar la configuración, haga clic en la etiqueta roja y realice la operación solicitada. Esta operación tarda entre 4 y 24 horas en propagarse y ser efectiva.
@@ -180,10 +180,10 @@ También puede migrar manualmente sus direcciones de correo a su nueva solución
 
 ## Más información
 
-[Gestionar los contactos de los servicios](/pages/account_and_service_management/account_information/managing_contacts){.external}.
+[Gestionar los contactos de los servicios](/pages/account_and_service_management/account_information/managing_contacts).
 
-[Guías Email Pro](/products/web-cloud-email-collaborative-solutions-email-pro){.external}.
+[Guías Email Pro](/products/web-cloud-email-collaborative-solutions-email-pro).
 
-[Guías Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange){.external}.
+[Guías Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -21,8 +21,8 @@ Por exemplo: deseja que todo o e-mail que contenha "\[SPAM]" no assumpto seja el
 
 ## Requisitos
 
-- Ter um serviço de e-mail MX Plan (disponível através de: um plano de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external}, o [Alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/){.external} incluído com um domínio ou a oferta MX Plan (encomendada separadamente).
-- Ter acesso à sua [Área de Cliente OVHcloud](	https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Ter um serviço de e-mail MX Plan (disponível através de: um plano de [alojamento web](/links/web/hosting), o [Alojamento gratuito 100M](/links/web/domains-free-hosting) incluído com um domínio ou a oferta MX Plan (encomendada separadamente).
+- Ter acesso à sua [Área de Cliente OVHcloud](	/links/manager).
 
 > [!warning]
 >
@@ -36,7 +36,7 @@ Versão antiga da oferta MX Plan|Nova versão da oferta MX Plan|
 
 ## Prática <a name="oldmxplan"></a>
 
-Aceda à Área de [Cliente OVHcloud](	https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`.
+Aceda à Área de [Cliente OVHcloud](	/links/manager), na secção `Web Cloud`.
 
 Clique em `E-mails`{.action} e selecione o serviço MX Plan correspondente.
 

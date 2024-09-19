@@ -12,7 +12,7 @@ Cette fonctionnalité d’Exchange vous permet de configurer des réponses autom
 
 ## Prérequis
 
-- Avoir installé une solution e-mail OVHcloud [Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/) ou [Email Pro](https://www.ovhcloud.com/fr/emails/email-pro/) 
+- Avoir installé une solution e-mail OVHcloud [Exchange](/links/web/emails-hosted-exchange) ou [Email Pro](/links/web/email-pro) 
 - Avoir accès à votre compte e-mail (adresse e-mail et mot de passe)
 
 ## En pratique

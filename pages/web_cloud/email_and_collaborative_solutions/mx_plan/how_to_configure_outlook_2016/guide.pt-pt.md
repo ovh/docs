@@ -32,13 +32,13 @@ As contas MX Plan podem ser configuradas em vários softwares de e-mail compatí
 
 ## Requisitos
 
-- Ter um endereço de e-mail MX Plan (incluído no serviço MX Plan ou num serviço de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}).
+- Ter um endereço de e-mail MX Plan (incluído no serviço MX Plan ou num serviço de [alojamento web da OVHcloud](/links/web/hosting)).
 - Dispor de um programa Microsoft Outlook ou posterior.
 - Dispor das credenciais do endereço de e-mail que pretende configurar.
 
 > [!primary]
 >
-> Se utilizar o Outlook para Mac, consulte o nosso manual [Configurar um endereço de e-mail no Outlook para Mac](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac){.external}.
+> Se utilizar o Outlook para Mac, consulte o nosso manual [Configurar um endereço de e-mail no Outlook para Mac](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac).
 >
 
 ## Instruções
@@ -178,8 +178,8 @@ Para compreender a diferença entre a utilização do protocolo POP e IMAP, vamo
 
 ## Quer saber mais?
 
-[Configurar uma conta Email Pro no Outlook para Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016){.external}
+[Configurar uma conta Email Pro no Outlook para Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)
 
-[Configurar uma conta Exchange no Outlook para Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016){.external}
+[Configurar uma conta Exchange no Outlook para Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016)
 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

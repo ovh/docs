@@ -17,14 +17,14 @@ It is not always appropriate to delegate the usage of an entire email account. T
 
 ## Requirements
 
-- an [OVHcloud Exchange solution](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/) or [OVHcloud Email Pro](/links/web/email-pro) already set up
+- an [OVHcloud Exchange solution](/links/web/emails-hosted-exchange) or [OVHcloud Email Pro](/links/web/email-pro) already set up
 - access to your Exchange/Email Pro account (email address and password)
 
 ## Instructions
 
 ### Step 1: Defining access permissions to a folder
 
-Log in to your Exchange account via the [OVHcloud webmail](https://www.ovhcloud.com/en-gb/mail/). Right-click on the folder to be shared and select `Permissions...`{.action} from the context menu.
+Log in to your Exchange account via the [OVHcloud webmail](/links/web/email). Right-click on the folder to be shared and select `Permissions...`{.action} from the context menu.
 
 ![sharefolder](images/exchange-folder-step1.png){.thumbnail}
 

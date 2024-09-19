@@ -16,14 +16,14 @@ Adquiriu um serviço MX Plan, que lhe permite beneficiar de endereços de e-mail
 
 ## Requisitos
 
-- Dispor de uma oferta MX Plan Está disponível através de: uma oferta de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/), o [Alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/) ou a oferta MX Plan sozinha.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na secção `Web Cloud`{.action}.
+- Dispor de uma oferta MX Plan Está disponível através de: uma oferta de [alojamento web](/links/web/hosting), o [Alojamento gratuito 100M](/links/web/domains-free-hosting) ou a oferta MX Plan sozinha.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager), na secção `Web Cloud`{.action}.
 
 ## Instruções <a name="instructions"></a>
 
-Depois de criada e disponível a oferta MX Plan, poderá geri-la a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). A versão da sua oferta MX Plan (antiga ou nova) irá depender da data de ativação ou de se [o serviço foi migrado recentemente](https://www.ovh.pt/mxplan-migration/). Antes de continuar, deve verificar a versão de que dispõe.
+Depois de criada e disponível a oferta MX Plan, poderá geri-la a partir da [Área de Cliente OVHcloud](/links/manager). A versão da sua oferta MX Plan (antiga ou nova) irá depender da data de ativação ou de se [o serviço foi migrado recentemente](https://www.ovh.pt/mxplan-migration/). Antes de continuar, deve verificar a versão de que dispõe.
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action}. Clique em `E-mails`{.action}e selecione o serviço MX Plan correspondente. Continue a ler em função da sua versão:
+Aceda à [Área de Cliente OVHcloud](/links/manager), na secção `Web Cloud`{.action}. Clique em `E-mails`{.action}e selecione o serviço MX Plan correspondente. Continue a ler em função da sua versão:
 
 |Versão antiga da oferta MX Plan|Nova versão da oferta MX Plan|
 |---|---|
@@ -121,7 +121,7 @@ Pode realizar de duas formas:
 
 - criar o seu reencaminhamento a partir do webmail, através das regras de caixa de entrada. Para isso, siga o manual [Regras da caixa de entrada na interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan#exemplo-1-redirecionar-e-mails-para-outro-endereco).
 
-- criar o seu reencaminhamento a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Este método permite-lhe, por exemplo, criar um alias, ou seja, reencaminhar um endereço de e-mail que não existe para um endereço de e-mail existente. Para isso, siga o nosso manual [Utilizar os reencaminhamentos de e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections#nova-versao-da-oferta-mx-plan).
+- criar o seu reencaminhamento a partir da [Área de Cliente OVHcloud](/links/manager). Este método permite-lhe, por exemplo, criar um alias, ou seja, reencaminhar um endereço de e-mail que não existe para um endereço de e-mail existente. Para isso, siga o nosso manual [Utilizar os reencaminhamentos de e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections#nova-versao-da-oferta-mx-plan).
 
 ##### **Voicemail**
 

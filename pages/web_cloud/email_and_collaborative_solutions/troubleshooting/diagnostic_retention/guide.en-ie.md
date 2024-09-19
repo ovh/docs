@@ -14,8 +14,8 @@ You have mistakenly deleted one or more items (email, contact, calendar appointm
 ## Requirements
  
 - An OVHcloud email solution:
-    - **MX Plan** ([new version only](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)), available as part of our [web hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/) or included in a [100M free hosting](https://www.ovhcloud.com/en-ie/domains/free-web-hosting/)
-    - [**Hosted Exchange**](https://www.ovhcloud.com/en-ie/emails/hosted-exchange/)
+    - **MX Plan** ([new version only](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)), available as part of our [web hosting plans](/links/web/hosting) or included in a [100M free hosting](/links/web/domains-free-hosting)
+    - [**Hosted Exchange**](/links/web/emails-hosted-exchange)
     - [**Email Pro**](/links/web/email-pro)
 - Login details for the email account concerned
 

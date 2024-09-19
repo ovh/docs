@@ -33,7 +33,7 @@ OVHcloud ofrece un servicio de webmail denominado Zimbra para acceder a una cuen
 
 ## Requisitos
 
-- Disponer de una solución de correo electrónico **MX Plan** de OVHcloud, incluida en nuestros [planes de hosting](https://www.ovhcloud.com/es-es/web-hosting/), incluida en un [alojamiento gratuito 100M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/) o contratada como solución independiente.
+- Disponer de una solución de correo electrónico **MX Plan** de OVHcloud, incluida en nuestros [planes de hosting](/links/web/hosting), incluida en un [alojamiento gratuito 100M](/links/web/domains-free-hosting) o contratada como solución independiente.
 - Disponer de los datos de conexión a la dirección de correo electrónico MX Plan que quiera consultar. Para más información, consulte nuestra guía [Primeros pasos con la solución MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
 
 ## Procedimiento

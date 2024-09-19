@@ -13,23 +13,23 @@ OVHcloud offers several email solutions: MX Plan (included in a Web Hosting plan
 
 ## Requirements
 
-- an MX Plan email address (included in an OVHcloud [Web Hosting plan](https://www.ovhcloud.com/en/web-hosting/){.external})
-- an [Exchange](https://www.ovhcloud.com/en/emails/hosted-exchange/){.external} service with at least one unconfigured account (which will appear as “@configureme.me”).
+- an MX Plan email address (included in an OVHcloud [Web Hosting plan](/links/web/hosting))
+- an [Exchange](/links/web/emails-hosted-exchange) service with at least one unconfigured account (which will appear as “@configureme.me”).
 - **no redirections set on the MX Plan email address you want to migrate**
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}
+- access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
 ### Step 1: Defining your project
 
-With an Exchange address, you can use collaborative features, such as calendars and contact synchronisation. Please consult the [product page](https://www.ovhcloud.com/en/emails/hosted-exchange/) for a detailed list of features.<br>
+With an Exchange address, you can use collaborative features, such as calendars and contact synchronisation. Please consult the [product page](/links/web/emails-hosted-exchange) for a detailed list of features.<br>
 If you need to migrate multiple accounts, we recommend that you set up a migration plan.
 
 ### Step 2: Ordering your Exchange accounts
 
 This step is optional if you already have an Exchange service to which you are migrating.
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}, then order the Exchange service you want. Follow the steps, then wait until the service is actually installed. An email will be sent to you as soon as it is complete.
+Log in to your [OVHcloud Control Panel](/links/manager), then order the Exchange service you want. Follow the steps, then wait until the service is actually installed. An email will be sent to you as soon as it is complete.
 
 > [!primary]
 >
@@ -40,7 +40,7 @@ Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomana
 
 Before starting your migration, you will need to identify the version of the MXPlan you are migrating from.
 
-To do this, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}, and open the `Web Cloud`{.action} section. Click `Emails`{.action}, then choose the name of the concerned plan. Please refer to the table below.
+To do this, log in to the [OVHcloud Control Panel](/links/manager), and open the `Web Cloud`{.action} section. Click `Emails`{.action}, then choose the name of the concerned plan. Please refer to the table below.
 
 |MX Plan legacy version|MX Plan new version|
 |---|---|
@@ -75,7 +75,7 @@ Once you are ready, follow the steps below, depending on the interface you have 
 
 ##### **Migration with the Exchange configuration assistant**
 
-To access it, select the relevant service in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}. The wizard should appear to help you configure your new Exchange service. During this process, you can select the MX Plan email accounts to migrate.
+To access it, select the relevant service in the [OVHcloud Control Panel](/links/manager). The wizard should appear to help you configure your new Exchange service. During this process, you can select the MX Plan email accounts to migrate.
 
 If the configuration wizard does not appear, the general information for the Exchange service will appear instead. In this case, you will need to migrate your accounts via the MX Plan interface.
 
@@ -147,7 +147,7 @@ To do this, select the Exchange service concerned, then go to the `Associated do
 
 > [!primary]
 >
-> If you have just migrated or modified a DNS record for your domain, it may take a few hours to be updated in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}.
+> If you have just migrated or modified a DNS record for your domain, it may take a few hours to be updated in your [OVHcloud Control Panel](/links/manager).
 >
 
 To modify the configuration, click on the red box and carry out the requested operation. It can take between 4 and a maximum of 24 hours to propagate fully.
@@ -174,6 +174,6 @@ You can also manually migrate your email addresses to your new OVHcloud email so
 
 ## Go further
 
-[Exchange guides](/products/web-cloud-email-collaborative-solutions-mx-plan){.external}.
+[Exchange guides](/products/web-cloud-email-collaborative-solutions-mx-plan).
 
 Join our community of users on ‹https://community.ovh.com/en/>.

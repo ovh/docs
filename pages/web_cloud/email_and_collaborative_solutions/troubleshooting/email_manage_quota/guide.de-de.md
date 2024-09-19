@@ -16,16 +16,16 @@ Jeder OVHcloud E-Mail-Account verfügt über einen dedizierten Speicherplatz. Ei
 
 ## Voraussetzungen
 
-- Sie verfügen über eine bereits konfigurierte OVHcloud E-Mail-Lösung: [**Hosted Exchange**](https://www.ovhcloud.com/de/emails/hosted-exchange/), [**Email Pro**](/links/web/email-pro) oder **MX Plan** (enthalten in einem [Webhosting](https://www.ovhcloud.com/de/web-hosting/) oder [Kostenloses Hosting 100M](https://www.ovhcloud.com/de/domains/free-web-hosting/) oder separat bestellt).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), im Bereich `Web Cloud`{.action}.
+- Sie verfügen über eine bereits konfigurierte OVHcloud E-Mail-Lösung: [**Hosted Exchange**](/links/web/emails-hosted-exchange), [**Email Pro**](/links/web/email-pro) oder **MX Plan** (enthalten in einem [Webhosting](/links/web/hosting) oder [Kostenloses Hosting 100M](/links/web/domains-free-hosting) oder separat bestellt).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager), im Bereich `Web Cloud`{.action}.
 - Sie verfügen über Anmeldeinformationen für den zu konfigurierenden E-Mail-Account.
 
 > [!primary]
 >
 > **Sonderfälle**
 >
-> - Hinweis zu Kostenloses Hosting 100M: Dieses muss zuerst aktiviert werden, um einen E-Mail-Account zu erstellen. Sie können diese Operation über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) durchführen, indem Sie den betreffenden Domainnamen aufrufen.
-> - Bei einem [Webhosting](https://www.ovhcloud.com/de/web-hosting/) müssen Sie den zugehörigen MX Plan aktivieren, bevor Sie mit dieser Anleitung fortfahren. Lesen Sie hierzu unsere Anleitung "[Die in Ihrem Webhosting enthaltenen E-Mail-Accounts aktivieren](/pages/web_cloud/web_hosting/activate-email-hosting)".
+> - Hinweis zu Kostenloses Hosting 100M: Dieses muss zuerst aktiviert werden, um einen E-Mail-Account zu erstellen. Sie können diese Operation über Ihr [OVHcloud Kundencenter](/links/manager) durchführen, indem Sie den betreffenden Domainnamen aufrufen.
+> - Bei einem [Webhosting](/links/web/hosting) müssen Sie den zugehörigen MX Plan aktivieren, bevor Sie mit dieser Anleitung fortfahren. Lesen Sie hierzu unsere Anleitung "[Die in Ihrem Webhosting enthaltenen E-Mail-Accounts aktivieren](/pages/web_cloud/web_hosting/activate-email-hosting)".
 
 ## In der praktischen Anwendung <a name="instructions"></a>
 
@@ -43,7 +43,7 @@ Sie können diese Aktion über das Kundencenter durchführen, wenn Sie den zugeh
 
 #### Über das Kundencenter <a name="quotacontrolpanel"></a>
 
-Gehen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) in den Bereich `Web Cloud`{.action} und folgen Sie den passenden Anweisungen für Ihren E-Mail-Dienst:
+Gehen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) in den Bereich `Web Cloud`{.action} und folgen Sie den passenden Anweisungen für Ihren E-Mail-Dienst:
 
 > [!tabs]
 > **E-Mails (MX Plan)**
@@ -102,7 +102,7 @@ Sie können die Speicherkapazität Ihres E-Mail-Accounts erhöhen, sofern er sei
 > [!tabs]
 > **E-Mails (MX Plan)**
 >>
->> Die Größe eines MX Plan Accounts kann zwischen 2,5 MB und 5 GB betragen. Sie können die Kapazität bei Bedarf über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)<br> ändern.
+>> Die Größe eines MX Plan Accounts kann zwischen 2,5 MB und 5 GB betragen. Sie können die Kapazität bei Bedarf über das [OVHcloud Kundencenter](/links/manager)<br> ändern.
 >> Klicken Sie im Tab `E-Mail-Accounts`{.action} rechts neben dem zu ändernden Account auf `...`{.action} und dann auf `Ändern`{.action}.
 >> Wählen Sie im Feld `Quota`{.action} die neue Größe aus, klicken Sie auf `Weiter`{.action} und dann `Bestätigen`{.action}.<br><br>
 >> ![email](images/email-quota-more01.png){.thumbnail}<br>
@@ -204,11 +204,11 @@ Folgen Sie der passenden Dokumentation für Ihren E-Mail-Dienst:
 > [!tabs]
 > **E-Mails (MX Plan)**
 >>
->> Wenn die Kapazität Ihres E-Mail-Accounts bereits bei 5 GB beträgt, können Sie sich für eine Migration auf [**E-Mail Pro** mit 10 GB](/links/web/email-pro) oder [**Hosted Exchange** mit 50 GB](https://www.ovhcloud.com/de/emails/hosted-exchange/) entscheiden. Bestellen Sie hierzu das gewünschte Angebot und folgen Sie unserer Anleitung "[E-Mail-Accounts von MX Plan zu E-Mail Pro oder Exchange migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)". 
+>> Wenn die Kapazität Ihres E-Mail-Accounts bereits bei 5 GB beträgt, können Sie sich für eine Migration auf [**E-Mail Pro** mit 10 GB](/links/web/email-pro) oder [**Hosted Exchange** mit 50 GB](/links/web/emails-hosted-exchange) entscheiden. Bestellen Sie hierzu das gewünschte Angebot und folgen Sie unserer Anleitung "[E-Mail-Accounts von MX Plan zu E-Mail Pro oder Exchange migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)". 
 >>
 > **E-Mail Pro**
 >>
->> Das Angebot E-Mail Pro verfügt über eine feste Account-Kapazität von 10 GB. Sie können auf [**Hosted Exchange** mit 50 GB](https://www.ovhcloud.com/de/emails/hosted-exchange/) wechseln. Bestellen Sie hierzu Hosted Exchange und folgen Sie unserer Anleitung "[E-Mail-Accounts von einer OVHcloud E-Mail-Plattform auf eine andere migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_platform)".
+>> Das Angebot E-Mail Pro verfügt über eine feste Account-Kapazität von 10 GB. Sie können auf [**Hosted Exchange** mit 50 GB](/links/web/emails-hosted-exchange) wechseln. Bestellen Sie hierzu Hosted Exchange und folgen Sie unserer Anleitung "[E-Mail-Accounts von einer OVHcloud E-Mail-Plattform auf eine andere migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_platform)".
 >>
 > **Exchange**
 >>
@@ -225,6 +225,6 @@ Folgen Sie der passenden Dokumentation für Ihren E-Mail-Dienst:
 
 [E-Mail-Accounts von einer OVHcloud E-Mail-Plattform auf eine andere migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_platform)
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

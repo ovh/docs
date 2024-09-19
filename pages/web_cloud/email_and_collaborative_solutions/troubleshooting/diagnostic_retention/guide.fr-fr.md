@@ -14,9 +14,9 @@ Vous avez supprimé par erreur un ou plusieurs éléments (e-mail, contact, rend
 ## Prérequis
  
 - Disposer d'une solution e-mail OVHcloud:
-    - **MX Plan** ([nouvelle version uniquement](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities#en-pratique)) proposée parmi nos [offres d’hébergement web](https://www.ovhcloud.com/fr/web-hosting/), incluse dans un [Hébergement gratuit 100M](https://www.ovhcloud.com/fr/domains/free-web-hosting/)
-    - ou [**Hosted Exchange**](https://www.ovhcloud.com/fr/emails/hosted-exchange/)
-    - ou [**Email Pro**](https://www.ovhcloud.com/fr/emails/email-pro/)
+    - **MX Plan** ([nouvelle version uniquement](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities#en-pratique)) proposée parmi nos [offres d’hébergement web](/links/web/hosting), incluse dans un [Hébergement gratuit 100M](/links/web/domains-free-hosting)
+    - ou [**Hosted Exchange**](/links/web/emails-hosted-exchange)
+    - ou [**Email Pro**](/links/web/email-pro)
 - Connaître les identifiants de connexion de l’adresse e-mail concernée
 
 ## En pratique

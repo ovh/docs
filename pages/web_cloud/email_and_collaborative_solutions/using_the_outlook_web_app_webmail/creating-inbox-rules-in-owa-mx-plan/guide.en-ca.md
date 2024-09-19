@@ -12,7 +12,7 @@ With the "Inbox rules" option, you can create an elaborate set of rules to handl
 
 ## Requirements
 
-- an OVHcloud email solution already set up (**MX Plan**, available as part of our [Web Hosting plans](https://www.ovhcloud.com/en-ca/web-hosting/) or [**Hosted Exchange**](https://www.ovhcloud.com/en-ca/emails/hosted-exchange/)
+- an OVHcloud email solution already set up (**MX Plan**, available as part of our [Web Hosting plans](/links/web/hosting) or [**Hosted Exchange**](/links/web/emails-hosted-exchange)
 - login credentials for the email address you want to configure
 
 ## Instructions

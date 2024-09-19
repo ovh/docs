@@ -37,7 +37,7 @@ Esta guía explica cómo configurar una cuenta Exchange en Android utilizando la
 
 ## Requisitos
 
-- Tener un servicio [Exchange](https://www.ovhcloud.com/es-es/emails/){.external}.
+- Tener un servicio [Exchange](/links/web/emails).
 - Tener la aplicación Gmail instalada en su dispositivo. Puede instalarla desde Google Play Store.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
 
@@ -54,7 +54,7 @@ Esta guía explica cómo configurar una cuenta Exchange en Android utilizando la
 >
 > En nuestros ejemplos, utilizamos la mención servidor: ex**?**.mail.ovh.net. Deberá sustituir el «?» por el número que designa el servidor del servicio Email Pro.
 >
-> Puede consultar esta cifra en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Web Cloud`{.action}, y en la sección `Email Pro`{.action}. El nombre del servidor puede verse en el recuadro **«Conexión»** de la pestaña `Información General`{.action}.
+> Puede consultar esta cifra en el [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action}, y en la sección `Email Pro`{.action}. El nombre del servidor puede verse en el recuadro **«Conexión»** de la pestaña `Información General`{.action}.
 >
 
 Abra la aplicación `Gmail`{.action} desde la pantalla de inicio de su dispositivo.

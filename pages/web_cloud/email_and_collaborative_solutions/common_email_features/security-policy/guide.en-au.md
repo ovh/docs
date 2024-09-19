@@ -12,8 +12,8 @@ With OVHcloud email services, you can set up professional email addresses. To ma
 
 ## Requirements
 
-- A preconfigured OVHcloud email solution **MX Plan** (available with a [web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/)
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- A preconfigured OVHcloud email solution **MX Plan** (available with a [web hosting plan](/links/web/hosting)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -26,9 +26,9 @@ Click on `Emails`{.action} , then click on the solution you want to manage. Clic
 
 On the page that appears, click on the `Security`{.action} tab.
 
-![email security](images/manage-security01.png){.external}
+![email security](images/manage-security01.png)
 
-![email security](images/manage-security02.png){.external}
+![email security](images/manage-security02.png)
 
 - [Enhance connection security](#enhanced-security): Define whether accounts should lock after a number of unsuccessful log-in attempts.
 - [Add complexity to the security of passwords](#password-complexity): Define a complexity requirement, as well as rules for changing passwords.

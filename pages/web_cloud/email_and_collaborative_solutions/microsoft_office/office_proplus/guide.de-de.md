@@ -46,7 +46,7 @@ Die Installation von "Microsoft 365 Apps for enterprise" auf einem geteilten Com
 > Wenn Sie bereits die Lizenz Office 365 Proplus installiert haben, müssen Sie diese erst **entfernen**.
 >
 
-- Nach dem Entfernen [klicken Sie hier](https://www.microsoft.com/en-gb/download/details.aspx?id=49117){.external}, um das Microsoft 365 Deployment-Tool herunterzuladen.
+- Nach dem Entfernen [klicken Sie hier](https://www.microsoft.com/en-gb/download/details.aspx?id=49117), um das Microsoft 365 Deployment-Tool herunterzuladen.
 
 - **Starten** Sie das Deployment-Tool.
 

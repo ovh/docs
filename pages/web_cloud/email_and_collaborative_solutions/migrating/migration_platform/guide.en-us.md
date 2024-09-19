@@ -22,9 +22,9 @@ You want to migrate your email addresses on an Exchange platform to another Exch
 
 ## Requirements
 
-- a "**source**" platform with configured [Exchange](https://www.ovhcloud.com/en/emails/hosted-exchange/){.external} accounts
-- a "**destination**" platform with [Exchange](https://www.ovhcloud.com/en/emails/hosted-exchange/){.external} or MX Plan accounts (via the MX Plan solution or included in [OVHcloud Web Hosting plans](https://www.ovhcloud.com/en/web-hosting/){.external}). This platform must have unconfigured accounts or be available to host the email accounts that need to be migrated.
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
+- a "**source**" platform with configured [Exchange](/links/web/emails-hosted-exchange) accounts
+- a "**destination**" platform with [Exchange](/links/web/emails-hosted-exchange) or MX Plan accounts (via the MX Plan solution or included in [OVHcloud Web Hosting plans](/links/web/hosting)). This platform must have unconfigured accounts or be available to host the email accounts that need to be migrated.
+- access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -102,7 +102,7 @@ To do this, select the Exchange service concerned, then go to the `Associated do
 
 > [!primary]
 >
-> If you have just migrated or modified a DNS record for your domain, it may take a few hours to be updated when you go to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we).
+> If you have just migrated or modified a DNS record for your domain, it may take a few hours to be updated when you go to the [OVHcloud Control Panel](/links/manager).
 >
 
 To modify the configuration, click on the red box and carry out the requested operation. It can take between 4 and a maximum of 24 hours for DNS changes to propagate fully.
@@ -118,7 +118,7 @@ If you have configured one of the migrated accounts on a local email client (e.g
 
 > [!primary]
 >
-> You can also manually migrate external email addresses to OVHcloud by using our [OVH Mail Migrator](https://omm.ovh.net/){.external} tool (OMM). To do this, you must have the login details (user, password, servers) of the source email and the destination email.
+> You can also manually migrate external email addresses to OVHcloud by using our [OVH Mail Migrator](https://omm.ovh.net/) tool (OMM). To do this, you must have the login details (user, password, servers) of the source email and the destination email.
 >
 
 ## Go further

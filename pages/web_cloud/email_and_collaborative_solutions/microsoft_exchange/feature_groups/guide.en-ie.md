@@ -12,14 +12,14 @@ Exchange groups enable multiple participants to communicate by sending emails to
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
-- an [OVHcloud Exchange solution](https://www.ovhcloud.com/en-ie/emails/hosted-exchange/) already set up
+- access to the [OVHcloud Control Panel](/links/manager)
+- an [OVHcloud Exchange solution](/links/web/emails-hosted-exchange) already set up
 
 ## Instructions
 
 ### Step 1: Creating a new group
 
-First, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), navigate to the `Webcloud`{.action} section, and select your Exchange service from the column under `Microsoft`{.action} `Exchange`{.action}. Click on the `Groups`{.action} tab in the horizontal menu.
+First, log in to your [OVHcloud Control Panel](/links/manager), navigate to the `Webcloud`{.action} section, and select your Exchange service from the column under `Microsoft`{.action} `Exchange`{.action}. Click on the `Groups`{.action} tab in the horizontal menu.
 
 ![contactgroups](images/exchange-groups-step1.png){.thumbnail}
 
@@ -30,7 +30,7 @@ Clicking on `Create a contact group`{.action} will open a new window where you c
 |Name|Description|
 |---|---|
 |Email address|The new address that will send messages to the mailing list. Please note that you cannot enter an existing email address.|
-|Group name|The display name that appears in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and in [OVHcloud webmail](https://www.ovh.ie/mail) (OWA).|
+|Group name|The display name that appears in your [OVHcloud Control Panel](/links/manager) and in [OVHcloud webmail](https://www.ovh.ie/mail) (OWA).|
 |Max size incoming / outgoing|You can specify the maximum size of incoming and outgoing emails.|
 |Hide in Outlook|If this box is ticked, the group address will not appear in the Exchange service's list of addresses.|
 |Authentication required|If this box is ticked, only users on the same platform will be able to send a message using the group address.|

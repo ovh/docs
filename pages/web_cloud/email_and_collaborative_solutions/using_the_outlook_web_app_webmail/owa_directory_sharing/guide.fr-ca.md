@@ -10,14 +10,9 @@ Déléguer l'utilisation de tout un compte e-mail n’est pas toujours la bonne 
 
 **Découvrez comment partager des dossiers et définir leurs autorisations d'accès à l'aide de l'application web Outlook (OWA).**
 
-> [!primary]
->
-> Bien que ce guide fasse référence à nos services Exchange, vous pouvez également suivre ces instructions pour les comptes [Email Pro](https://www.ovhcloud.com/fr-ca/emails/email-pro/).
->
-
 ## Prérequis
 
-- Disposer d'une offre [Exchange OVHcloud ](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/)
+- Disposer d'une offre [Exchange OVHcloud ](/links/web/emails-hosted-exchange)
 - Avoir accès à votre compte Exchange (adresse e-mail et mot de passe)
 
 ## Instructions

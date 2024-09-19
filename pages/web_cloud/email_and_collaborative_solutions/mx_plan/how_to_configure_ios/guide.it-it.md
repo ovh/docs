@@ -23,7 +23,7 @@ Gli account email del servizio MX Plan possono essere configurati su client o ap
 
 ## Prerequisiti
 
-- Disporre di un account email MX Plan incluso nel servizio MX Plan o in una soluzione di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}
+- Disporre di un account email MX Plan incluso nel servizio MX Plan o in una soluzione di [hosting Web OVHcloud](/links/web/hosting)
 - Essere aggiornato nei [pagamenti](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) e [rinnovi](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) dei servizi associati (dominio e hosting web).
 - Aver installato l'applicazione Mail sul proprio dispositivo iOS
 - Disporre delle credenziali associate all’account email da configurare
@@ -79,9 +79,9 @@ OVHcloud propone un'applicazione Web che permette di accedere al tuo indirizzo e
 
 ## Per saperne di più
 
-[Configurare un account Exchange su un iPhone o un iPad](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_ios){.external}
+[Configurare un account Exchange su un iPhone o un iPad](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_ios)
 
-[Configurare un account Email Pro su un iPhone o un iPad](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_ios){.external}
+[Configurare un account Email Pro su un iPhone o un iPad](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_ios)
 
 [FAQ e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 

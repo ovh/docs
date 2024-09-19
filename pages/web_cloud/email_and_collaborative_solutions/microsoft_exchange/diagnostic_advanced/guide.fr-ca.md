@@ -12,7 +12,7 @@ Les erreurs sur les comptes e-mail Exchange peuvent avoir une multitude de cause
 
 ## Prérequis
 
-- Disposer d'une [solution Exchange OVHcloud](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/) déjà installée
+- Disposer d'une [solution Exchange OVHcloud](/links/web/emails-hosted-exchange) déjà installée
 - Disposer des informations d'identification pour le compte Exchange à vérifier
 - Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 - Être à jour dans les [paiements](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) de ce service et du nom de domaine lié.

@@ -46,7 +46,7 @@ L'installazione di un'offerta Microsoft 365 Apps for entreprise su un computer c
 > Se hai già installato la tua licenza Office 365 Proplus, è necessario **disinstallarla**.
 >
 
-- Una volta disinstallata la licenza, [clicca qui](https://www.microsoft.com/en-us/download/details.aspx?id=49117){.external} per scaricare il tool Microsoft 365.
+- Una volta disinstallata la licenza, [clicca qui](https://www.microsoft.com/en-us/download/details.aspx?id=49117) per scaricare il tool Microsoft 365.
 
 - **Esegui** il tool di distribuzione sulla tua macchina.
 

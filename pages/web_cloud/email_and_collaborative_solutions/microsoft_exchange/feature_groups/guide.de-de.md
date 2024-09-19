@@ -12,14 +12,14 @@ Mit Exchange Gruppen können mehrere Benutzer durch Senden von E-Mails an eine G
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf das [OVHcloud-Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie haben eine [OVHcloud Exchange Lösung](https://www.ovhcloud.com/de/emails/hosted-exchange/), die bereits eingerichtet ist.
+- Sie haben Zugriff auf das [OVHcloud-Kundencenter](/links/manager).
+- Sie haben eine [OVHcloud Exchange Lösung](/links/web/emails-hosted-exchange), die bereits eingerichtet ist.
 
 ## In der praktischen Anwendung
 
 ### Schritt 1: Eine neue Gruppe erstellen
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie unter `Microsoft`{.action} und `Exchange`{.action} Ihren Exchange Dienst aus. Gehen Sie dann auf den Tab `Gruppen`{.action}.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und wählen Sie unter `Microsoft`{.action} und `Exchange`{.action} Ihren Exchange Dienst aus. Gehen Sie dann auf den Tab `Gruppen`{.action}.
 
 ![contactgroups](images/exchange-groups-step1.png){.thumbnail}
 
@@ -30,7 +30,7 @@ Wenn Sie auf `Kontaktgruppe erstellen`{.action} klicken, öffnet sich ein neues 
 |Name|Beschreibung|
 |---|---|
 |E-Mail-Adresse|Die neue Adresse, von der aus Nachrichten an die Mailingliste gesendet werden. Bitte beachten Sie, dass Sie keine existierende E-Mail-Adresse eingeben können.|
-|Name der Gruppe|Der Anzeigename, der in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) und in [OVHcloud Webmail](https://www.ovh.de/mail) (OWA) erscheint.|
+|Name der Gruppe|Der Anzeigename, der in Ihrem [OVHcloud Kundencenter](/links/manager) und in [OVHcloud Webmail](https://www.ovh.de/mail) (OWA) erscheint.|
 |Maximale Größe eingehend/ausgehend|Sie können die maximale Größe eingehender und ausgehender E-Mails angeben.|
 |Adresse in Outlook verbergen|Wenn dieses Kontrollkästchen aktiviert ist, wird die Gruppenadresse nicht in der Adressliste des Exchange Dienstes angezeigt.|
 |Authentifizierung erforderlich|Wenn dieses Kontrollkästchen aktiviert ist, können nur Benutzer auf derselben Plattform eine Nachricht mit der Gruppenadresse senden.|

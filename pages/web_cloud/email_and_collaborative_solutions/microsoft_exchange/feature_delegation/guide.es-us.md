@@ -36,7 +36,7 @@ Una vez que haya identificado la cuenta cuyos permisos quiere delegar y que haya
 
 ### 1. Activar la delegación
 
-Para acceder a la gestión del servicio, conéctese al [área de cliente de OVHcloud](/links/manager){.external}. Haga clic en `Microsoft`{.action} y seleccione `Exchange`{.action}.
+Para acceder a la gestión del servicio, conéctese al [área de cliente de OVHcloud](/links/manager). Haga clic en `Microsoft`{.action} y seleccione `Exchange`{.action}.
 
 Haga clic en el nombre del servicio de correo al que pertenezca la cuenta cuyos permisos quiera delegar. A continuación, abra la pestaña `Cuentas de correo`{.action}.
 
@@ -58,9 +58,9 @@ Una vez configurada la delegación, ya puede empezar a utilizarla. Compruebe que
 
 El procedimiento es distinto según el permiso, y depende también de la aplicación (cliente de correo local o web) que utilice para conectarse a su cuenta de correo. Continúe leyendo esta guía en el apartado correspondiente al permiso o permisos que haya delegado.
 
-- [Utilizar el permiso de acceso completo](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#21-utilizar-el-permiso-de-acceso-completo){.external}
-- [Utilizar el permiso de «enviar como»](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#22-utilizar-el-permiso-de-enviar-como){.external}
-- [Utilizar el permiso de «enviar en nombre de»](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#23-utilizar-el-permiso-de-enviar-en-nombre-de){.external}
+- [Utilizar el permiso de acceso completo](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#21-utilizar-el-permiso-de-acceso-completo)
+- [Utilizar el permiso de «enviar como»](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#22-utilizar-el-permiso-de-enviar-como)
+- [Utilizar el permiso de «enviar en nombre de»](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#23-utilizar-el-permiso-de-enviar-en-nombre-de)
 
 > [!warning]
 >

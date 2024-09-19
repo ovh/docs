@@ -12,7 +12,7 @@ Mit dieser Exchange-Funktion können Sie für verschiedene Anwendungsfälle auto
 
 ## Voraussetzungen
 
-- Sie verfügen über OVHcloud [Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/) oder [E-Mail Pro](/links/web/email-pro).
+- Sie verfügen über OVHcloud [Exchange](/links/web/emails-hosted-exchange) oder [E-Mail Pro](/links/web/email-pro).
 - Sie haben die Login-Informationen für den E-Mail-Account, die Sie konfigurieren möchten.
 
 ## In der praktischen Anwendung

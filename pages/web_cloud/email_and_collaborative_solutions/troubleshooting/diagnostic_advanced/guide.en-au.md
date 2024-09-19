@@ -17,7 +17,7 @@ Is your email account unable to send or receive emails when using webmail or you
 ## Requirements
 
 - an OVHcloud email solution
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -45,7 +45,7 @@ Go to the [Hosted email](/products/web-cloud-email-collaborative-solutions-mx-pl
 
 ### I can't receive emails because my email address is full, I don't have any more space. What can I do?
 
-If you have signed up to [one of our OVHcloud email solutions](https://www.ovhcloud.com/en-gb/emails/) and one of your email accounts is full, please read our guide on [Managing email account storage space](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota). This guide will help you decide whether you can optimize your existing storage space, or whether you need to change email solutions to increase storage capacity.
+If you have signed up to [one of our OVHcloud email solutions](/links/web/emails) and one of your email accounts is full, please read our guide on [Managing email account storage space](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota). This guide will help you decide whether you can optimize your existing storage space, or whether you need to change email solutions to increase storage capacity.
 
 
 ### Are emails functional from webmail? (**sending** and/or **receiving**)
@@ -96,7 +96,7 @@ The majority of SMTP negative response codes used by servers are listed below:
 |421|Service not available, transmission channel being closed|Undetermined origin error, make sure that sending to another domain works. If yes, please try sending the original email again later.|
 |432|The recipient’s Exchange Server incoming mail queue has been stopped|This error message is returned only by Microsoft Exchange mail servers. Contact the destination mail server administrator.|
 |449|A routing error|This error message is returned only by Microsoft Exchange mail servers. Microsoft recommends that you run a diagnostic with their WinRoute tool.|
-|450|Requested action not taken – The user’s mailbox is unavailable (for example, mailbox busy or temporarily blocked for security or blacklisting reasons).|Check if the IP address of the mail server is blacklisted ([SpamHaus](https://check.spamhaus.org/){.external}), and also check if your mail contains words referring to SPAM.|
+|450|Requested action not taken – The user’s mailbox is unavailable (for example, mailbox busy or temporarily blocked for security or blacklisting reasons).|Check if the IP address of the mail server is blacklisted ([SpamHaus](https://check.spamhaus.org/)), and also check if your mail contains words referring to SPAM.|
 |451|Requested action aborted – Local error in processing|This may be due to a momentary overload, or an incorrect SPF check of the issuing domain. Refer to the additional message provided by the server, or contact the server administrator if this persists.|
 |452|The command has been aborted because the server has insufficient system storage|The mail server is 'overloaded'. This could also be caused by too many messages trying to be sent at once. Please check your outbox and try again.|
 |455|Server unable to deal with the command at this time.|Wait a while, then try again. If this fails, contact the recipient's email server administrator.|
@@ -112,7 +112,7 @@ The majority of SMTP negative response codes used by servers are listed below:
 |551|User not local or invalid address – Relay denied|This is typically used as a spam prevention strategy. It says that the mail relay is not authorised for any reason to relay your message to another server than yours. Please contact your service provider.|
 |552|Requested mail actions aborted – Exceeded storage allocation|The user you tried to contact no longer has space to receive messages. Unfortunately, the only solution is to contact the recipient via another method.|
 |553|Requested action not taken – Mailbox name invalid|This is usually caused by an incorrect destination email address. Please check that the email address in question is correct.|
-|554|Transaction failed, "No SMTP service here"|This is usually a blacklist problem. Check if your email server IP address is blacklisted ([SpamHaus](https://check.spamhaus.org/){.external}).|
+|554|Transaction failed, "No SMTP service here"|This is usually a blacklist problem. Check if your email server IP address is blacklisted ([SpamHaus](https://check.spamhaus.org/)).|
 |555|MAIL FROM / RCPT TO, unrecognised or unimplemented arguments|The outgoing SMTP server cannot recognise the email address used in either your `From` or `To` settings. Please check that the email addresses entered are correct, and also check that you have not exceeded the limit set by OVHcloud: 200 mails/hour/account and 300 mails/hour/ip.|
 
 ## Go further

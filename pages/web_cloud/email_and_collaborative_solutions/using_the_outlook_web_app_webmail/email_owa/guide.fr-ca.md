@@ -12,7 +12,7 @@ Avec les solutions e-mail OVHcloud, vous pouvez envoyer et recevoir vos e-mails 
 
 ## Prérequis
 
-- Disposer d'une solution e-mail OVHcloud, proposée parmi nos [offres d’hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) ou commandée séparément comme solution autonome telle que [**Hosted Exchange**](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/)
+- Disposer d'une solution e-mail OVHcloud, proposée parmi nos [offres d’hébergement web](/links/web/hosting) ou commandée séparément comme solution autonome telle que [**Hosted Exchange**](/links/web/emails-hosted-exchange)
 - Connaître les identifiants de connexion de l’adresse e-mail que vous souhaitez configurer
 
 ## En pratique

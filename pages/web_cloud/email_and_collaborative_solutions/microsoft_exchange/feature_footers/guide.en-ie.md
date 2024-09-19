@@ -12,12 +12,12 @@ In the OVHcloud Control Panel, you can create universal signatures (footers) for
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
-- an [OVHcloud Exchange](https://www.ovhcloud.com/en-ie/emails/hosted-exchange/) or [Email Pro](/links/web/email-pro) solution already set up
+- access to the [OVHcloud Control Panel](/links/manager)
+- an [OVHcloud Exchange](/links/web/emails-hosted-exchange) or [Email Pro](/links/web/email-pro) solution already set up
 
 ## Instructions
 
-To do this, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB): 
+To do this, log in to the [OVHcloud Control Panel](/links/manager): 
 
 - **Exchange**: Click on `Microsoft`{.action}, then on `Exchange`{.action}. 
 - **Email Pro**: Click on `Email Pro`{.action}.

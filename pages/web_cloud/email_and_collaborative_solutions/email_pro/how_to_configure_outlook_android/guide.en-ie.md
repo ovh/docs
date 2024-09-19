@@ -12,7 +12,7 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 
 ## Requirements
 
-- An [Email Pro](/links/web/email-pro){.external} solution.
+- An [Email Pro](/links/web/email-pro) solution.
 - You need to have Microsoft Outlook installed on your Android device. You can download it from the *Google Play Store*.
 
 > [!warning]
@@ -26,7 +26,7 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 
 ### Step 1: Retrieve your Email Pro account information <a name="step1"></a>
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} then go to the `Web Cloud`{.action} section. In the left-hand column, click `Professionnal emails`{.action} then choose the Email Pro platform where you want to configure your email address.
+Log in to your [OVHcloud Control Panel](/links/manager) then go to the `Web Cloud`{.action} section. In the left-hand column, click `Professionnal emails`{.action} then choose the Email Pro platform where you want to configure your email address.
 
 On the new page, click the `Email accounts`{.action} tab.
 
@@ -161,6 +161,6 @@ Then try sending and receiving emails from your Microsoft Outlook application to
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ie/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>. 

@@ -20,8 +20,8 @@ Al añadir un dominio a su plataforma de correo, es posible que se le pida que c
 
 ## Requisitos
 
-- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), en la sección `Web Cloud`{.action}.
-- Disponer de una solución [Exchange](https://www.ovhcloud.com/es-es/emails/) o [Email Pro](/links/web/email-pro).
+- Estar conectado al [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action}.
+- Disponer de una solución [Exchange](/links/web/emails) o [Email Pro](/links/web/email-pro).
 - Haber añadido un dominio a su plataforma de correo. Si lo necesita, puede consultar la guía [Añadir un dominio a una plataforma de correo](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 - Estar en condiciones de [configurar la zona DNS](/pages/web_cloud/domains/dns_zone_edit) del dominio en cuestión, desde el área de cliente de OVHcloud o desde la interfaz de gestión en la que esté registrado.
 
@@ -31,9 +31,9 @@ Al añadir un dominio a su plataforma de correo, es posible que se le pida que c
 
 Aquí se utiliza el registro CNAME como alias, que apunta a un destino que, a su vez, apunta a una dirección IP. Por lo tanto, no se trata de un registro vinculado a un servicio de correo.
 
-En el marco de nuestras ofertas [**Hosted Exchange**](https://www.ovhcloud.com/es-es/emails/hosted-exchange/) y [**Email Pro**](/links/web/email-pro), este registro CNAME se utiliza como código de validación (token) que será visible en la zona DNS del dominio que se quiera validar. El objetivo es comprobar que el usuario de la plataforma de correo es el gestor del dominio que añade.
+En el marco de nuestras ofertas [**Hosted Exchange**](/links/web/emails-hosted-exchange) y [**Email Pro**](/links/web/email-pro), este registro CNAME se utiliza como código de validación (token) que será visible en la zona DNS del dominio que se quiera validar. El objetivo es comprobar que el usuario de la plataforma de correo es el gestor del dominio que añade.
 
-En el diagrama siguiente, la plataforma de correo electrónico ([Exchange](https://www.ovhcloud.com/es-es/emails/) o [Email Pro](/links/web/email-pro)) se representa mediante el marco verde.<br>
+En el diagrama siguiente, la plataforma de correo electrónico ([Exchange](/links/web/emails) o [Email Pro](/links/web/email-pro)) se representa mediante el marco verde.<br>
 Para formar las direcciones de correo electrónico, añada cuentas (representadas en este caso por "**contacto**", "**john.smith**" y "**mary.johnson**").<br>
 El dominio **mydomain.ovh** se ha añadido a la plataforma de correo (consultar la guía "[Añadir un dominio a una plataforma de correo](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) ").<br>
 La plataforma genera un código de validación (en nuestro ejemplo, "**abcd1-check**").<br>

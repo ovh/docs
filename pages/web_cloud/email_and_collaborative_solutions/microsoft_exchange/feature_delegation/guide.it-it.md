@@ -41,7 +41,7 @@ Una volta individuato l’account per cui vuoi delegare i diritti, definito i pe
 
 ### Step 1: crea la delega
 
-Per effettuare questa operazione, accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}:
+Per effettuare questa operazione, accedi allo [Spazio Cliente OVHcloud](/links/manager):
 
 - **Exchange**: Clicca su `Microsoft`{.action} > `Exchange`{.action}. 
 - **Email Pro**: Clicca su `Email Pro`{.action}.
@@ -66,11 +66,11 @@ Ora che la delega è pronta, non resta che utilizzarla. Prima di proseguire, ass
 
 Il procedimento è diverso in base ai diritti delegati e al software o all’interfaccia Web con cui accedi al tuo account email. Continua a consultare questa guida in base al tipo di diritto delegato.
 
-- [Utilizzare il “diritto di accesso”](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#utilizzare-il-diritto-di-accesso){.external}
+- [Utilizzare il “diritto di accesso”](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#utilizzare-il-diritto-di-accesso)
 
-- [Utilizzare il “diritto di invio”](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#utilizzare-il-diritto-di-invio){.external}
+- [Utilizzare il “diritto di invio”](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#utilizzare-il-diritto-di-invio)
 
-- [Utilizzare il “diritto di invio da parte di”](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#utilizzare-il-diritto-invia-da-parte-di){.external}
+- [Utilizzare il “diritto di invio da parte di”](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#utilizzare-il-diritto-invia-da-parte-di)
 
 > [!warning]
 >

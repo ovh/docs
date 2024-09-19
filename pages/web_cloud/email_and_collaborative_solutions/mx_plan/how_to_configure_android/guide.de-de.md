@@ -28,7 +28,7 @@ E-Mail-Accounts aus dem MX Plan Angebot können auf allen kompatiblen E-Mail-Cli
 
 ## Voraussetzungen
 
-- Sie haben einen MX Plan E-Mail-Account (im MX Plan Angebot oder in einem [OVHcloud Webhosting Angebot](https://www.ovhcloud.com/de/web-hosting/) enthalten).
+- Sie haben einen MX Plan E-Mail-Account (im MX Plan Angebot oder in einem [OVHcloud Webhosting Angebot](/links/web/hosting) enthalten).
 - Die Gmail-App ist auf Ihrem Gerät installiert. Sie können diese über den Google Play Store installieren, wenn sie noch nicht vorhanden ist.
 - Sie haben die Login-Daten des E-Mail-Accounts, den Sie einrichten möchten.
 

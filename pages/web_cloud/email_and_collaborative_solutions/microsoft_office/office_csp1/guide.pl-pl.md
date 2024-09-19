@@ -23,13 +23,13 @@ Oto lista programów zawartych w pakiecie:
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 
 ## W praktyce
 
 ### Zamów licencję
 
-Przejdź do strony biznesowej [Microsoft 365 OVHcloud](https://www.ovh.pl/office-365-business){.external} i wybierz rubrykę `Microsoft`{.action} w sekcji `Web Cloud`{.action}.
+Przejdź do strony biznesowej [Microsoft 365 OVHcloud](https://www.ovh.pl/office-365-business) i wybierz rubrykę `Microsoft`{.action} w sekcji `Web Cloud`{.action}.
 
 Licencję możesz również zamówić w panelu [Panel klienta OVHcloud](/links/manager). Po zalogowaniu wybierz `Web Cloud`{.action} w górnym pasku, następnie kliknij przycisk `Zamów`{.action} i `O365`{.action}.
 

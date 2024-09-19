@@ -16,7 +16,7 @@ Una soluzione email MX Plan è stata appena creata per usufruire di indirizzi em
 
 ## Prerequisiti
 
-- Disporre di una soluzione MX Plan (il servizio è disponibile con un piano di [hosting Web OVHcloud](/links/web/hosting), un [Hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting/) o una soluzione MX Plan ordinata separatamente)
+- Disporre di una soluzione MX Plan (il servizio è disponibile con un piano di [hosting Web OVHcloud](/links/web/hosting), un [Hosting gratuito 100M](/links/web/domains-free-hosting) o una soluzione MX Plan ordinata separatamente)
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}.
 
 > [!primary]

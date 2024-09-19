@@ -34,8 +34,8 @@ L'expéditeur (sender) transmet l'e-mail à la mailing list. Le modérateur (mod
 
 ## Prérequis
 
-- Disposer d'une offre e-mail MX Plan 100 minimum ou d'un [Hébergement Web](https://www.ovhcloud.com/fr/web-hosting/){.external} éligible aux listes de diffusion.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+- Disposer d'une offre e-mail MX Plan 100 minimum ou d'un [Hébergement Web](/links/web/hosting) éligible aux listes de diffusion.
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 
@@ -45,7 +45,7 @@ L'expéditeur (sender) transmet l'e-mail à la mailing list. Le modérateur (mod
 >
 > Une mailing list se comporte comme une adresse e-mail, il n'est pas possible de modifier son nom. Si le nom d'une mailing list ne vous convient plus, vous devez en créer une nouvelle et supprimer l'ancienne.
 
-Afin de créer votre mailing list, rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}  et sélectionnez l'onglet `Web Cloud`{.action} en haut.
+Afin de créer votre mailing list, rendez-vous dans votre [espace client OVHcloud](/links/manager)  et sélectionnez l'onglet `Web Cloud`{.action} en haut.
 
 Une fois connecté, cliquez sur `Emails`{.action} puis sur le nom de domaine concerné. Dirigez-vous sur l'onglet `mailing lists`{.action} de votre service e-mail.
 

@@ -31,13 +31,13 @@ MX Plan Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingericht
 
 ## Voraussetzungen
 
-- Sie verfügen über einen MX Plan E-Mail-Account (als MX Plan Dienst oder in einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) enthalten).
+- Sie verfügen über einen MX Plan E-Mail-Account (als MX Plan Dienst oder in einem [OVHcloud Webhosting](/links/web/hosting) enthalten).
 - Microsoft Outlook ist auf Ihrem Gerät installiert.
 - Sie verfügen über Anmeldeinformationen für den E-Mail-Account, den Sie konfigurieren möchten.
 
 > [!primary]
 >
-> Sie verwenden Outlook für Mac? Die zugehörige Dokumentation finden Sie hier: [Konfiguration Ihrer E-Mail-Adressen in Outlook für Mac](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac){.external}.
+> Sie verwenden Outlook für Mac? Die zugehörige Dokumentation finden Sie hier: [Konfiguration Ihrer E-Mail-Adressen in Outlook für Mac](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac).
 >
 
 ## In der praktischen Anwendung

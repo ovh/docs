@@ -12,7 +12,7 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 
 ## Requirements
 
-- You must have an [Exchange](https://www.ovhcloud.com/en-ca/emails/hosted-exchange/){.external} account.
+- You must have an [Exchange](/links/web/emails-hosted-exchange) account.
 - You must have Microsoft Outlook installed on your device.
 - You need to have the required credentials for the email address you would like to configure.
 
@@ -38,7 +38,7 @@ Enter the following information:
 |Password|Enter the password for your email address.|
 |User name|Enter your full email address.|
 |Domain|Leave this field blank.|
-|Server|Enter the details of the server your Exchange service is hosted on. You will find these in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external} by going to the `General information`{.action} tab for the Exchange service concerned, then the `Connection`{.action} section.|
+|Server|Enter the details of the server your Exchange service is hosted on. You will find these in your [OVHcloud Control Panel](/links/manager) by going to the `General information`{.action} tab for the Exchange service concerned, then the `Connection`{.action} section.|
 |This server requires a secure connection (SSL)|You must leave this box ticked.|
 |Account name|Enter a name that will distinguish this account from any other accounts added in your Mail application.|
 

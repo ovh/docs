@@ -12,7 +12,7 @@ Ajouter un nom de domaine sur un service Exchange est indispensable afin de pouv
 
 ## Prérequis
 
-- Disposer d'une solution [Exchange](https://www.ovhcloud.com/fr-ca/emails/).
+- Disposer d'une solution [Exchange](/links/web/emails).
 - Disposer d'un ou plusieurs noms de domaine.
 - Être en mesure de modifier la configuration de votre nom de domaine ([zone DNS](/pages/web_cloud/domains/dns_zone_edit)).
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
@@ -33,7 +33,7 @@ Pour ajouter un nom de domaine, cliquez sur l'onglet `Domaine associés`{.action
 
 > [!warning]
 >
-> Toutes les adresses créées sur votre service e-mail seront en mesure de visualiser dans l'annuaire l'ensemble des adresses de ce service, y compris celles possédant un nom de domaine différent. Pour dissocier l'affichage des domaines, vous devez commander une nouvelle [solution Exchange](https://www.ovhcloud.com/fr-ca/emails/) pour le ou les noms de domaine concernés.
+> Toutes les adresses créées sur votre service e-mail seront en mesure de visualiser dans l'annuaire l'ensemble des adresses de ce service, y compris celles possédant un nom de domaine différent. Pour dissocier l'affichage des domaines, vous devez commander une nouvelle [solution Exchange](/links/web/emails) pour le ou les noms de domaine concernés.
 >
 
 ![Add Domain](images/add_domain_exchange_step1.png){.thumbnail}
@@ -143,6 +143,6 @@ Depuis l'onglet `Domaine associés`{.action} de votre plateforme, cliquez sur le
 [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/).
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
