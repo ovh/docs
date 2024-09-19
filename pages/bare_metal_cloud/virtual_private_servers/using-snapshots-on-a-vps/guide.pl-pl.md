@@ -1,7 +1,7 @@
 ---
 title: "Korzystanie z migawek na prywatnym serwerze wirtualnym"
 excerpt: "Dowiedz się, jak włączyć opcję migawki w Panelu klienta OVHcloud i korzystać z niej"
-updated: 2024-04-15
+updated: 2024-09-18
 ---
 
 > [!primary]
@@ -30,11 +30,16 @@ Zaloguj się do [Panelu client OVHcloud](/links/manager), przejdź do sekcji `Ba
 
 ### Krok 1: subskrybowanie opcji kopii zapasowej
 
-Na karcie `Strona główna`{.action} przewiń do obszaru z nagłówkiem “Podsumowanie opcji”. Jeśli opcja "Snapshot" jest już w stanie "Włączona", przejdź od razu do etapu 2. Jeśli "Snapshot" nie jest jeszcze aktywny, kliknij na `...`{.action} obok opcji “Migawka” i wybierz z menu kontekstowego pozycję `Zamówienie`{.action}.
+Na karcie `Strona główna`{.action} przewiń do obszaru z nagłówkiem **Podsumowanie opcji**.  
+Jeśli opcja "Snapshot" jest już w stanie "Włączona", przejdź od razu do etapu 2. Jeśli "Snapshot" nie jest jeszcze aktywny, kliknij na `...`{.action} obok opcji "Snapshot" i wybierz z menu kontekstowego pozycję `Zamówienie`{.action}.
 
 ![snapshotvps](images/snapshot_vps_step1b.png){.thumbnail}
 
 W następnym kroku przeczytaj informację o cenie i kliknij pozycję `Zamów`{.action}. Po przejściu kolejnych kroków procesu zamówienia otrzymasz e-mail z potwierdzeniem.
+
+Aby zrezygnować z opcji usługi, kliknij przycisk `...`{.action} obok "Snapshot" i wybierz z menu kontekstowego opcję `Rezygnacja`{.action} z usługi.
+
+![snapshotvps](images/snapshot_vps_cancel.png){.thumbnail}
 
 ### Krok 2: tworzenie migawki
 
