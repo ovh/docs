@@ -72,10 +72,6 @@ OVHcloud propose également une application web disposant des [fonctions collabo
 
 ## Aller plus loin
 
-> [!primary]
->
-> Pour plus d'informations sur la configuration d'une adresse e-mail depuis votre appareil iOS, consultez [la page d'aide de Apple](https://support.apple.com/fr-fr/102619).
-
 [Configurer son adresse e-mail comprise dans l’offre MX Plan ou dans une offre d’hébergement web sur un iPhone ou un iPad](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_ios).
 
 [Configurer son compte Exchange sur un iPhone ou un iPad](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_ios).

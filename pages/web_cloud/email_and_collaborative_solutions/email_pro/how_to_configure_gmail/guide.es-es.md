@@ -107,10 +107,6 @@ No olvide que también puede utilizar nuestra interfaz web en la dirección [htt
 
 ## Más información <a name="go-further"></a>
 
-> [!primary]
->
-> Para más información sobre la configuración de una dirección de correo electrónico desde la interfaz de Gmail en línea, consulte [el Centro de ayuda de Google](https://support.google.com/mail/answer/21289?hl=es&co=GENIE.Platform%3DDesktop).
-
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
