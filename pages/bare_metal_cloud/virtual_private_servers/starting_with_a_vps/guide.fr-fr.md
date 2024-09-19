@@ -51,7 +51,7 @@ Retrouvez ci-dessous les informations de base sur votre VPS et l’état du serv
 >>
 >> Le mode de démarrage indiqué est soit en **mode normal**, où le serveur charge le système d'exploitation installé (*LOCAL*), soit en **mode rescue**, fourni par OVHcloud en cas de dépannage. Utilisez le bouton `...`{.action} pour [redémarrer le VPS](#reboot-current-range) ou démarrez-le en mode rescue ci nécessaire.
 >>
->> Si besoin, retrouvez plus d'informations dans notre guide « [Activer et utiliser le mode rescue sur un VPS ](/pages/bare_metal_cloud/virtual_private_servers/rescue) ».
+>> Si besoin, retrouvez plus d'informations dans notre guide sur le [mode rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue).
 >>
 > OS / Distribution
 >>
