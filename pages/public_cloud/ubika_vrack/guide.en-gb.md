@@ -7,7 +7,7 @@ updated: 2024-09-16
 ## Objective
 
 In today’s digital age, web application security is critical for protecting cloud infrastructure from sophisticated cyber threats. As businesses increasingly adopt cloud solutions, ensuring that web applications and APIs are secure is essential for maintaining data integrity and preventing breaches.
-Ubika WAAP Gateway offers advanced Web Application and API Protection (WAAP) features, including powerful tools such as web application firewalls (WAFs), API protection, bot management, and DDoS mitigation. These tools help protect your cloud environment from a wide array of application-level threats. This guide provides step-by-step instructions for deploying and configuring Ubika WAAP Gateway on the OVHcloud Public Cloud. By following this guide, you will learn how to configure private networks for management and workload, deploy Ubika WAAP Gateway instances, set up High Availability (HA) using additional IP and vRack, and ensure a secure and reliable architecture for your cloud infrastructure.
+**U**bika **W**AAP **G**ateway (UWG) offers advanced Web Application and API Protection (WAAP) features, including powerful tools such as web application firewalls (WAFs), API protection, bot management, and DDoS mitigation. These tools help protect your cloud environment from a wide array of application-level threats. This guide provides step-by-step instructions for deploying and configuring Ubika WAAP Gateway on the OVHcloud Public Cloud. By following this guide, you will learn how to configure private networks for management and workload, deploy Ubika WAAP Gateway instances, set up High Availability (HA) using additional IP and vRack, and ensure a secure and reliable architecture for your cloud infrastructure.
 
 **This guide explains how to securing your OVHcloud infrastructure with Ubika WAAP Gateway deployed on Public Cloud.**
 
@@ -20,11 +20,11 @@ Ubika WAAP Gateway offers advanced Web Application and API Protection (WAAP) fea
 - Ubika account on the [Ubika website](https://my.ubikasec.com/){.external}
 - Ensure that an appropriate block of additional IPs is available.
 - Ensure that the vRack is enabled and configured to allow secure communication between the components of the infrastructure.
-- Ubika License BYOL (**B**ring **Y**our **O**wn **L**icense), obtained directly from Ubika via the [official Ubika website](https://my.ubikasec.com/){.external}. You will need to provide it during the installation and configuration process.
+- Ubika WAAP Gateway License BYOL (**B**ring **Y**our **O**wn **L**icense), obtained directly from Ubika via the [official Ubika website](https://my.ubikasec.com/){.external}. You will need to provide it during the installation and configuration process.
 
 ## Instructions
 
-In addition to the installation and configuration of Ubika, this tutorial offers a use case where you'll test Ubika by deploying and running a web application on your Public Cloud infrastructure :
+In addition to the installation and configuration of UWG, this tutorial offers a use case where you'll test UWG by deploying and running a web application on your Public Cloud infrastructure :
 
 - [Configure your vRack](#step1)
 - [Install and configure Ubika WAAP Gateway on your Public Cloud environment](#step2)
@@ -33,7 +33,7 @@ In addition to the installation and configuration of Ubika, this tutorial offers
 
 ### Configure your vRack <a name="step1"></a>
 
-In this step, we are configuring the vRack, a private virtual network provided by OVHcloud. The vRack allows you to interconnect multiple instances or servers within a Public Cloud environment, ensuring network isolation while maintaining secure communication. By adding your Public Cloud project and your IP block to the same vRack, you can enable your Ubika instances to communicate securely, while keeping full control over IP address management.
+In this step, we are configuring the vRack, a private virtual network provided by OVHcloud. The vRack allows you to interconnect multiple instances or servers within a Public Cloud environment, ensuring network isolation while maintaining secure communication. By adding your Public Cloud project and your IP block to the same vRack, you can enable your UWG instances to communicate securely, while keeping full control over IP address management.
 
 **Add your public cloud project and your IP block to the same vRack**
 
@@ -46,7 +46,7 @@ Below is the architecture that we are going to set-up.
 ### Install and configure Ubika WAAP Gateway on your Public Cloud environment <a name="step2"></a>
 
 > [!primary]
-> In this tutorial, the installation and configuration of Ubika is done primarily via the command line. Open a terminal to execute the instructions.
+> In this tutorial, the installation and configuration of UWG is done primarily via the command line. Open a terminal to execute the instructions.
 >
 > Please note that all sections related to « High Availability » are optional. They are included to demonstrate how to set up the system with two instances in an active/passive mode for high availability. Normally, it can also function with just one instance if that is sufficient for your needs.
 
@@ -61,7 +61,7 @@ Below is the architecture that we are going to set-up.
 openstack network create --provider-network-type vrack --provider-segment 1000 ubika-management
 ```
 
-This command creates a private network for managing the Ubika instances, using the virtual private network (vRack) provided by OVHcloud. This isolated network is intended for internal communication between the Ubika components.
+This command creates a private network for managing the UWG instances, using the virtual private network (vRack) provided by OVHcloud. This isolated network is intended for internal communication between the Ubika components.
 
 ```console
 openstack subnet create --network ubika-management --subnet-range 192.168.1.0/24 --dhcp --gateway none --dns-nameserver 213.186.33.99 ubika-management
@@ -77,7 +77,7 @@ Here, you configure a subnet for the management network, specifying an IP addres
 openstack network create --provider-network-type vrack --provider-segment 0 --disable-port-security ubika-workload
 ```
 
-This command creates a private network for the workload, designed to host applications secured by Ubika.
+This command creates a private network for the workload, designed to host applications secured by UWG.
 
 ```console
 openstack subnet create --network ubika-workload --subnet-range 192.168.2.0/24 --dhcp --dns-nameserver 213.186.33.99 ubika-workload
@@ -98,13 +98,13 @@ openstack router create --external-gateway Ext-Net ubika-workload
 openstack router add subnet 2481bcaf-efa2-419a-ad92-d6d27737dfd1 ubika-workload
 ```
 
-#### Deploy the Ubika instances
+#### Deploy the Ubika WAAP Gateway instances
 
-* Upload Ubika image to OpenStack
+* Upload UWG image to OpenStack
 
-Go to the `download` section of the [official Ubika website](https://my.ubikasec.com/){.external}. Log in to your Ubika account and follow the instructions to download the Ubika OpenStack image.
+Go to the `download` section of the [official Ubika website](https://my.ubikasec.com/){.external}. Log in to your Ubika account and follow the instructions to download the UWG OpenStack image.
 
-Go to the folder where you have downloaded your Ubika Openstack image and upload the Ubika OpenStack image (for this tutorial, we use the image `UBIKA_WAAP_Gateway-generic-cloud-6.11.10+51a56f6201.b56855.qcow2`) :
+Go to the folder where you have downloaded your UWG Openstack image and upload the UWG OpenStack image (for this tutorial, we use the image `UBIKA_WAAP_Gateway-generic-cloud-6.11.10+51a56f6201.b56855.qcow2`) :
 
 ```console
 openstack image create --disk-format raw --container-format bare --file ~/Downloads/UBIKA_WAAP_Gateway-generic-cloud-6.11.10+51a56f6201.b56855.qcow2 Ubika-WAAP-Gateway-6.11.10
@@ -116,7 +116,7 @@ openstack image create --disk-format raw --container-format bare --file ~/Downlo
 openstack keypair create --public-key ~/.ssh/id_rsa.pub <username>
 ```
 
-* Create a security group for the management Ubika instance
+* Create a security group for the management UWG instance
 
 ```console
 openstack security group create ubika-management
@@ -134,7 +134,7 @@ openstack security group rule create --ingress --remote-ip 109.190.254.24/32 --d
 openstack security group rule create --ingress --remote-ip 109.190.254.24/32 --dst-port 3001 --protocol tcp ubika-management
 ```
 
-* Create the Ubika management instance
+* Create the UWG management instance
 
 Before executing the next OpenStack command, first create a `management.json` file and add the following content, adapting the parameters to your environment :
 
@@ -152,7 +152,7 @@ Once the `management.json` file is created, execute the following command :
 openstack server create --flavor r3-64 --image Ubika-WAAP-Gateway-6.11.10 --network Ext-Net --network ubika-management ubika-management --key-name <username> --security-group ubika-management --user-data ./management.json
 ```
 
-* Create the Ubika managed instances
+* Create the UWG managed instances
 
 Before executing the next OpenStack command, first create a `managed-1.json` file and add the following content, adapting the parameters to your environment :
 
@@ -169,7 +169,7 @@ Once the `managed-1.json` file is created, execute the following command :
 openstack server create --flavor c3-16 --image Ubika-WAAP-Gateway-6.11.10 --network ubika-management --network ubika-workload ubika-managed-1 --key-name <username> --user-data ./managed-1.json
 ```
 
-* Re-do these steps to create a second Ubika managed instance but use the `managed-2.json` file. Create and add the following content to the `managed-2.json` file :
+* Re-do these steps to create a second UWG managed instance but use the `managed-2.json` file. Create and add the following content to the `managed-2.json` file :
 
 ```console
 {
@@ -178,7 +178,7 @@ openstack server create --flavor c3-16 --image Ubika-WAAP-Gateway-6.11.10 --netw
 }
 ```
 
-#### Configure the HA on the Ubika managed instances
+#### Configure the HA on the UWG managed instances
 
 * Get the management instance public IP
 
@@ -190,7 +190,7 @@ openstack port list --server ubika-management --network Ext-Net
 
 ![Ubika vrack](./images/login.png)
 
-* Add the two managed Ubika instances
+* Add the two managed UWG instances
 
 Get the management IP of the managed instances:
 
@@ -202,7 +202,7 @@ openstack port list --server ubika-managed-1 --network ubika-management
 openstack port list --server ubika-managed-2 --network ubika-management
 ```
 
-Add the first managed Ubika instance to the Ubika management (Setup -> Boxes -> Add)
+Add the first managed UWG instance to the UWG management (Setup -> Boxes -> Add)
 
 ![Ubika vrack](./images/managed-1.png)
 
@@ -210,23 +210,23 @@ Add the second one
 
 ![Ubika vrack](./images/managed-2.png)
 
-* Add a virtual interface to the eth1 interface of each managed Ubika instance and configure it with an IP of your IP block instead of the private IP (Setup -> Networking -> IP Addresses)
+* Add a virtual interface to the eth1 interface of each managed UWG instance and configure it with an IP of your IP block instead of the private IP (Setup -> Networking -> IP Addresses)
 
-Ubika managed-1 :
+UWG managed-1 :
 
 ![Ubika vrack](./images/virtual-interface-1.png)
 
-Ubika managed-2 :
+UWG managed-2 :
 
 ![Ubika vrack](./images/virtual-interface-2.png)
 
 * Remove the default gateway and add the RTvRack gateway for each managed Ubika (Setup -> Networking -> Routes)
 
-Ubika managed-1 :
+UWG managed-1 :
 
 ![Ubika vrack](./images/default-gateway-1.png)
 
-Ubika managed-2 :
+UWG managed-2 :
 
 ![Ubika vrack](./images/default-gateway-2.png)
 
@@ -238,7 +238,7 @@ Ubika managed-2 :
 
 ![Ubika vrack](./images/ha-2-rtvrack.png)
 
-* Add the two managed Ubika instances as VRRP members using the workload interfaces (eth1)
+* Add the two managed UWG instances as VRRP members using the workload interfaces (eth1)
 
 ![Ubika vrack](./images/ha-3.png)
 
@@ -248,19 +248,19 @@ Ubika managed-2 :
 
 #### Configure the licenses <a name="step3"></a>
 
-Ubika offers two types of licenses depending on your deployment needs : a license for a single VM or a license for HA (High Availability) mode, where two instances are deployed in an Active-Backup configuration. Choose the appropriate license based on your setup.
+Ubika WAAP Gateway licenses are available directly from Ubika via the [official Ubika website](https://my.ubikasec.com/){.external}. Depending on your deployment needs, you can choose between a single VM license or a High Availability mode license, which supports an Active-Backup configuration with two instances. The licenses also vary based on the SSL TPS (Transactions Per Second), supporting either multiple SSL certificates or failover capabilities.
 
-To apply the licenses, you will need to provide the following information to Ubika :
+To apply the licenses, you will need to provide the following information to UWG :
 
-- Type of Ubika deployment (single instance or HA)
-- Serial number of the Ubika instance
+- Type of UWG deployment (single instance or HA)
+- Serial number of the UWG instance
 - Number of vCPUs and the amount of RAM allocated to each instance
 
-Once you receive the licenses from Ubika, apply them to the corresponding instances to complete the setup.
+Once you receive the licenses from UWG, apply them to the corresponding instances to complete the setup.
 
 ### Create your web server environment <a name="step4"></a>
 
-The test of the web application after configuration validates the correct operation of Ubika's network, security, and high availability settings. The goal is to ensure that web traffic is properly filtered and routed through the Ubika instances, providing comprehensive protection for communications with the servers.
+In this section, we will create a web server environment and set up a load balancer to distribute traffic between multiple web servers. This step is crucial to validate the proper functioning of the network, security, and high availability settings of your UWG setup. By implementing a load balancer, we ensure that traffic is balanced across your web servers, enabling failover protection and redundancy, which is essential for maintaining service availability.
 
 * Create two web servers on the workload network
 
