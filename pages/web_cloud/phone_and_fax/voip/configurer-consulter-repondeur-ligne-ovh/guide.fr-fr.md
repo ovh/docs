@@ -60,12 +60,10 @@ Depuis votre ligne téléphonique OVHcloud, composez le **123** pour accéder au
 |Lignes françaises (+33)|+33 9 72 55 00 00|
 |Lignes belges FR (+32)|+32 23 18 55 55|
 |Lignes belges NL (+32)|+32 23 18 55 56|
-|Lignes espagnoles (+34)|+34 5 12 70 77 07|
 |Lignes suisses FR (+41)|+41 2 75 19 00 06|
 |Lignes suisses IT (+41)|+41 2 75 19 00 05|
 |Lignes suisses DE (+41)|+41 2 75 19 00 04|
-|Lignes anglaises (+44)|+44 33 06 84 01 06|
-|Lignes allemandes (+49)|+49 3 22 21 74 00 06|
+|Lignes anglaises (+44)|+44 33 06 84 01 00|
 
 Une fois en communication avec le serveur de messagerie, laissez-vous guider par celui-ci en appuyant sur les touches correspondant aux actions que vous souhaitez réaliser. Sachez que si vous appelez depuis une autre ligne, vous devrez indiquer le numéro associé au répondeur que vous souhaitez consulter, ainsi que son mot de passe d'accès à distance préalablement défini. 
 
