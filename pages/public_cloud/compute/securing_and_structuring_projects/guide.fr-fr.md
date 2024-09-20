@@ -27,7 +27,7 @@ Le guide officiel "[Sécuriser mon compte OVHcloud et gérer mes informations pe
 
 #### Définir des mots de passe forts
 
-Le [guide de gestion des mots de passe](/pages/account_and_service_management/account_information/manage-ovh-password) fournit des meilleures pratiques en matière de gestion des mots de passe.
+Le [guide de gestion des mots de passe](/pages/account_and_service_management/account_information/manage-ovh-password) fournit des bonnes pratiques en matière de gestion des mots de passe.
 
 #### Ajouter une adresse email de secours
 
@@ -36,14 +36,14 @@ Le [guide de gestion des mots de passe](/pages/account_and_service_management/ac
 
 ### Étape 2 : Comprendre la gestion des identités et des accès (IAM) et créer des identités
 
-**Définition** : IAM est un cadre pour gérer les identités des utilisateurs et leur accès aux ressources de manière sécurisée.
+**Définition** : IAM est moyen de pour gérer les identités des utilisateurs et leur accès aux ressources de manière sécurisée.
 
-**Mise en œuvre** : Utilisez les fonctionnalités IAM pour gérer les identités, les groupes et les politiques dans OVHcloud IAM.
+**Mise en œuvre** : Utilisez les fonctionnalités IAM pour gérer les identités, les groupes et les politiques dans l'IAM d'OVHcloud.
 
 **Principaux composants** :
 1. **Identités** : Comptes individuels pour les personnes (utilisateurs) ou comptes de service qui ont besoin d'accéder aux ressources OVHcloud.
 2. **Groupes** : Collections d'utilisateurs ou de ressources avec des besoins d'accès communs.
-3. **Politiques** : Règles qui définissent les actions que les utilisateurs et les groupes peuvent effectuer sur quelles ressources.
+3. **Politiques** : Règles qui définissent les actions que les utilisateurs et les groupes peuvent effectuer sur une ou plusieurs ressources.
 
 **Exemples** :
 
@@ -78,14 +78,14 @@ Un préfixe peut être utilisé pour faciliter la gestion des ressources. Par ex
 
 Maintenant que vous avez des identités et des projets, vous pouvez définir les droits d'accès pour chaque projet. Nous recommandons d'utiliser des groupes et non des identités individuelles lors de la définition des politiques, car cela facilite la gestion du cycle de vie des politiques.
 
-Dans l'exemple suivant, nous utiliserons deux groupes appelés `finance_developer_group` et `finance_SRE_group` qui contiennent les identités des utilisateurs qui développent et ceux qui s'assurent que l'application financière est en production dans un état de santé stable.
+Dans l'exemple suivant, nous utiliserons deux groupes appelés `finance_developer_group` et `finance_SRE_group` qui contiennent les identités des utilisateurs qui développent et ceux qui s'assurent du maintien en condition opérationnelle de l'application financière.
 
 Pour cet exemple, nous prendrons un outil utilisé par l'équipe finance pour effectuer leur planification financière et leur analyse (FPA). Dans ce cas fictif, nous aurons 3 projets cloud publics gérant les ressources de trois environnements (développement, staging et production). Les projets sont nommés :
 * `cloud_project_finance_fpa_dev`
 * `cloud_project_finance_fpa_staging`
 * `cloud_project_finance_fpa_prod`
 
-Le tableau suivant résume les droits d'accès que nous fournirons à chaque groupe dans cet exemple. Les politiques d'accès sont fournies à des fins éducatives et doivent être adaptées à votre contexte.
+Le tableau suivant résume les droits d'accès que nous fournirons à chaque groupe. Les politiques d'accès sont fournies à des fins éducatives et doivent être adaptées à votre contexte.
 
 | Nom du projet Public Cloud | `finance_developer_group` | `finance_SRE_group` |
 |----------------------------|---------------------------|----------------------|
@@ -98,18 +98,18 @@ Le tableau suivant résume les droits d'accès que nous fournirons à chaque gro
 Pour fournir un accès au tableau de bord OVHcloud, vous devez créer une politique spécifique comme décrit dans cette [page](/pages/account_and_service_management/account_information/iam-control-panel-access/) et dans la section `Ajouter des groupes d'utilisateurs`, choisissez les groupes `finance_developer_group` et `finance_SRE_group`.
 ![Ajouter des groupes d'utilisateurs](img/Add_user_groups.png){.thumbnail}
 
-Grâce à cette politique, les utilisateurs appartenant à ces deux groupes auront accès au tableau de bord, mais avec cette seule politique, ils n'auront pas le droit de voir ou de gérer les ressources. Le chapitre suivant ajoute ces droits.
+Grâce à cette politique, les utilisateurs appartenant à ces deux groupes auront accès au tableau de bord, mais avec cette seule politique, ils n'auront aucun droit (ni lecture ni écriture). Le chapitre suivant ajoute ces droits uniquement sur les projets Public Cloud définis.
 
 #### Fournir des droits spécifiques aux projets Public Cloud
 
 Continuons en créant des politiques pour permettre les droits d'accès décrits ci-dessus. Pour cela, nous créerons 4 politiques résumées ci-dessous.
 
-| Nom de la politique | Identités                 | Actions             | Ressources                |
-|---------------------|---------------------------|---------------------|---------------------------|
-|cloud_project_finance_fpa_dev-RW|finance_developer_group|globalWriteAccess |cloud_project_finance_fpa_dev|
-|cloud_project_finance_fpa_staging-RO|finance_developer_group|globalReadAccess  |cloud_project_finance_fpa_staging|
-|cloud_project_finance_fpa_staging-RW|finance_SRE_group|globalWriteAccess  |cloud_project_finance_fpa_staging|
-|cloud_project_finance_fpa_prod-RW|finance_SRE_group|globalWriteAccess   |cloud_project_finance_fpa_prod|
+| Nom de la politique                         | Identités               | Actions            | Ressources                  |
+|---------------------------------------------|-------------------------|--------------------|-----------------------------|
+| cloud_project_finance_fpa_dev-RW            | finance_developer_group  | globalWriteAccess  | cloud_project_finance_fpa_dev |
+| cloud_project_finance_fpa_staging-RO        | finance_developer_group  | globalReadAccess   | cloud_project_finance_fpa_staging |
+| cloud_project_finance_fpa_staging-RW        | finance_SRE_group        | globalWriteAccess  | cloud_project_finance_fpa_staging |
+| cloud_project_finance_fpa_prod-RW           | finance_SRE_group        | globalWriteAccess  | cloud_project_finance_fpa_prod |
 
 Le nom des politiques suit le modèle suivant : \<Nom de la ressource\>-RO/RW
 
