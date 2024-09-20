@@ -12,7 +12,7 @@ Ajouter un nom de domaine sur un service Exchange est indispensable afin de pouv
 
 ## Prérequis
 
-- Disposer d'une solution [Exchange](/links/web/emails) ou [Email Pro](/links/web/email-pro)).
+- Disposer d'une solution [Exchange](/links/web/emails) ou [Email Pro](/links/web/email-pro).
 - Disposer d'un ou plusieurs noms de domaine.
 - Être en mesure de modifier la configuration de votre nom de domaine ([zone DNS](/pages/web_cloud/domains/dns_zone_edit)).
 - Être connecté à votre [espace client OVHcloud](/links/manager).
