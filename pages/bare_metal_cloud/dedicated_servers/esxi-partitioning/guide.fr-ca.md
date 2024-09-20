@@ -1,8 +1,11 @@
 ---
 title: Serveurs Dédiés - Partitionnement d'ESXi
 excerpt: Utilisez l'espace client OVHcloud ou l'API OVHcloud pour personnaliser la taille de la partition système d'ESXi
-updated: 2023-09-08
+updated: 2024-09-13
 ---
+
+> [!warning]
+> L'hyperviseur ESXi n'est plus supporté par OVHcloud. Retrouvez plus d'informations sur [cette page dédiée](/pages/bare_metal_cloud/dedicated_servers/esxi-end-of-support).
 
 ## Objectif
 

@@ -45,15 +45,15 @@ Gli account Email Pro possono essere configurati su client di posta compatibili,
 | | |
 |---|---|
 |![Thunderbird](images/thunderbird-mac-emailpro01.png){.thumbnail}|Nella finestra che appare inserisci queste 3 informazioni: <br>- Nome completo (Nome visualizzato)<br>- Indirizzo di posta elettronica <br>- Password|
-|Clicca su `Configura manualmente...`{.action} per inserire le impostazioni del server **IN ENTRATA**: <br>- Protocollo **IMAP** <br>- Server **ssl0.ovh.net** <br>- Port **993** <br>- SSL **SSL/TLS** <br>- Autenticazione **Password normale** <br>- Identificativo **del tuo indirizzo email completo**|![Thunderbird](images/thunderbird-mac-emailpro02.png){.thumbnail}|
-|![Thunderbird](images/thunderbird-mac-emailpro03.png){.thumbnail}|Inserisci le impostazioni del server **USCENTE**: <br>- Protocollo **SMTP** <br>- Server **ssl0.ovh.net** <br>- Port **465** <br>- SSL **SSL/TLS** <br>- Autenticazione **Password normale** <br>- Identificativo **del tuo indirizzo email completo**<br><br>Per completare la configurazione, clicca su `Fine`{.action}|
+|Clicca su `Configura manualmente...`{.action} per inserire le impostazioni del server **IN ENTRATA**: <br>- Protocollo **IMAP** <br>- Server **pro?.mail.ovh.net** (sostituisci "?" con il numero del tuo server)<br>- Porta **993** <br>- SSL **SSL/TLS** <br>- Autenticazione **Password normale** <br>- Identificativo **del tuo indirizzo email completo**|![Thunderbird](images/thunderbird-mac-emailpro02.png){.thumbnail}|
+|![Thunderbird](images/thunderbird-mac-emailpro03.png){.thumbnail}|Inserisci le impostazioni del server **USCENTE**: <br>- Protocollo **SMTP** <br>- Server **pro?.mail.ovh.net** <br>- Porta **587** <br>- SSL **STARTTLS** <br>- Autenticazione **Password normale** <br>- Identificativo **del tuo indirizzo email completo**<br><br>Per completare la configurazione, clicca su `Fine`{.action}|
 
 Nell'ambito di una configurazione in **POP**, i valori sono i seguenti:
 
 |Tipo di server|Nome del server|Metodo di cifratura|Porta|
 |---|---|---|---|
-|In entrata|ssl0.ovh.net|SSL/TLS|995|
-|In uscita|ssl0.ovh.net|SSL/TLS|465|
+|In entrata|pro?.mail.ovh.net (la menzione "?" è da sostituire con il numero del tuo server)|SSL/TLS|995|
+|In uscita|pro?.mail.ovh.net (la menzione "?" è da sostituire con il numero del tuo server)|SSL/TLS|587|
 
 ### Utilizza l'indirizzo email
 

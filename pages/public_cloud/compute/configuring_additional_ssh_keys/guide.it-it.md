@@ -37,11 +37,11 @@ Durante la creazione di un’istanza dallo Spazio Cliente, è possibile aggiunge
 ### Step 1: crea una nuova coppia di chiavi SSH
 
 Se necessario, utilizza la nostra [guida sulle chiavi SSH](/pages/public_cloud/compute/creating-ssh-keys-pci) per creare una nuova coppia di chiavi SSH.  
-Se necessario, è possibile trovare informazioni su [gestione di più chiavi](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key) anche sulla workstation locale.
+Se necessario, è possibile trovare informazioni su [gestione di più chiavi](/pages/public_cloud/compute/creating-ssh-keys-pci#multiplekeys) anche sulla workstation locale.
 
 ### Step 2: configura un nuovo account utente
 
-[Accedi alla tua istanza](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance) e utilizza i seguenti comandi per creare un nuovo account utente e una cartella `.ssh`:
+[Accedi alla tua istanza](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) e utilizza i seguenti comandi per creare un nuovo account utente e una cartella `.ssh`:
 
 ```bash
 sudo adduser user2
@@ -123,7 +123,7 @@ Se viene visualizzato un messaggio di errore, è comunque possibile aggiungere m
 
 #### Aggiunta manuale di chiavi pubbliche all'istanza
 
-[Accedi alla tua istanza](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance) e apri il file `authorized_keys` nella cartella personale del nuovo utente con il tuo editor di testo preferito (`nano` in questo esempio):
+[Accedi alla tua istanza](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) e apri il file `authorized_keys` nella cartella personale del nuovo utente con il tuo editor di testo preferito (`nano` in questo esempio):
 
 ```bash
 sudo nano /home/user2/.ssh/authorized_keys

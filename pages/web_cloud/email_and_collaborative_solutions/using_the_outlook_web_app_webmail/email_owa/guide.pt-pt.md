@@ -112,7 +112,7 @@ Para criar uma pasta, clique com o botão direito do rato no seu endereço de e-
 
 #### Criar regras inbox
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Para gerir as regras, clique no ícone de engrenagem na parte superior e, de seguida, em `Opções`{.action}.
 
@@ -132,7 +132,7 @@ Para instruções mais detalhadas sobre como criar regras inbox, consulte o noss
 
 #### Bloquear um remetente
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UeNdpFwdXm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/UeNdpFwdXm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Clique no ícone de engrenagem no canto superior direito e depois em `Opções`{.action}. Na coluna da esquerda, siga a árvore "Mail" em "Contas" e, a seguir, "Bloquear ou autorizar".
 
@@ -158,7 +158,7 @@ Nesta nova página, pode adicionar um novo contacto, criar uma lista de contacto
 
 ### Alterar a palavra-passe
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Pode alterar a palavra-passe da sua conta quando tiver iniciado uma sessão no OWA. Para o fazer, clique no ícone de engrenagem situado na parte superior e, de seguida, em `Opções`{.action}.
 

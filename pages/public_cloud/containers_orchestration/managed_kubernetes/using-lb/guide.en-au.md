@@ -1,8 +1,16 @@
 ---
 title: Using the OVHcloud Managed Kubernetes LoadBalancer
 excerpt: Find out how to use and deploy an OVHcloud Managed Kubernetes LoadBalancer
-updated: 2024-05-08
+updated: 2024-09-11
 ---
+
+> [!warning]
+> This documentation is about "LoadBalancer for K8s". If you want to benefit from the future MKS LoadBalancer implementation based on Octavia LoadBalancer, please refer to [this page](/pages/public_cloud/containers_orchestration/managed_kubernetes/expose_your_applications_using_a_load_balancer/).
+>
+> To force the usage of "LoadBalancer for K8s" in your MKS cluster, add this annotation `loadbalancer.ovhcloud.com/class: iolb` to your K8s Service.
+>
+> Note: "LoadBalancer for K8s" will be replaced by the Octavia implementation.
+>
 
 ## Objective
 
@@ -64,7 +72,6 @@ It's rather cumbersome to use `NodePort` `Services` in production. As you are us
 
 > [!warning]
 > If your OVHcloud Managed Kubernetes is connected to a vRack, the `NodePort` is only exposed on your private subnet. So you have to check your private IPs on your nodes in your Nodepool and connect via one of these private IPs.
->
 
 ### Exposing services as LoadBalancer
 
@@ -88,7 +95,7 @@ OVHcloud currently provides two types of load balancers that can be used with Ma
 - [Public Load Balancer](https://www.ovhcloud.com/en-au/public-cloud/load-balancer/), based on the OpenStack Octavia project, this load balancer type can also be used with standard OVHcloud instances. You can choose between three Load Balancer sizes (S,M,L), providing up to 40k requests/second and a 2 Gbits/second bandwidth. Other advantages are the capability to expose your Load Balancer privately (private-to-private) or publicly (public-to-private or public-to-public) using [Floating IPs](https://www.ovhcloud.com/en-au/public-cloud/floating-ip/), the possibility to collect metrics and TCP/UDP protocols.
 
 > [!warning] 
-> Usage of the [Public Load Balancer](https://www.ovhcloud.com/en-au/public-cloud/load-balancer/) with a Managed Kubernetes Service is currently in Beta phase, you can retrieve all the related information and request an access by joining our [Container & Orchestration dedicated Discord channel](https://discord.com/channels/850031577277792286/1143208429872226325).
+> Usage of the [Public Load Balancer](https://www.ovhcloud.com/en-au/public-cloud/load-balancer/) with a Managed Kubernetes Service is currently in Beta phase, you can retrieve all the related information and request an access by joining our [Container & Orchestration dedicated Discord channel](https://discord.gg/ovhcloud).
 
 ### Supported annotations
 

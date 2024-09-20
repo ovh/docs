@@ -10,7 +10,7 @@ Lorsque vous commandez votre serveur dédié, vous pouvez choisir une distributi
 
 **Ce guide vous propose quelques conseils généraux pour sécuriser un serveur basé sur GNU/Linux.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gi7JqUvcEt0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/gi7JqUvcEt0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la sécurité et la responsabilité vous appartiennent.

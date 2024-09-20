@@ -1,7 +1,7 @@
 ---
 title: "Getting started with OVHcloud Key Management Service (KMS)"
 excerpt: "Discover the steps you need to take to set up your first Key Management Service (KMS), create a key, and access it"
-updated: 2024-09-03
+updated: 2024-09-13
 ---
 
 > [!warning]
@@ -263,12 +263,6 @@ Communication with the KMS, except for the key creation, is only available via A
 Since the KMS is regionalized, you can access the API directly in its region: <https://my-region.ovh.com.net>
 
 For example, for a KMS created in the **eu-west-rbx** region: <https://eu-west-rbx.okms.ovh.net>
-
-If you are using a browser, you will need to convert the certificate to pkcs12 format:
-
-```bash
-openssl pkcs12 -export -inkey client.key -in client.cert -out client.p12
-```
 
 #### Creating an encryption key via API
 
@@ -623,11 +617,63 @@ The API will then return the result of the verification:
 }
 ```
 
-### Swagger
+### Using the KMS API via the Swagger UI
 
-You can access the swagger for your KMS by clicking on the link in the OVHcloud Control Panel, in your KMS dashboard.
+You can access the KMS Swagger UI by clicking on the link in the OVHcloud Control Panel, in your KMS dashboard.
 
 ![swagger](images/swagger.png){.thumbnail}
+
+You will land on the non-authenticated version of the Swagger UI, that is meant for API documentation purposes. If you want to use the Swagger UI to make requests on your own KMS, you will need to switch to the authenticated version, whose link is in the description section:
+
+![public-swagger-ui](images/public-swagger-ui.png){.thumbnail}
+
+The next steps will guide you on how to authenticate.
+
+#### Importing your KMS credentials into the browser
+
+To access the authenticated Swagger UI, you need to load your KMS access certificate into the browser Certificate Manager.
+
+For that, it is required to convert it to PKCS#12 format. PKCS#12 is a binary format for storing a certificate chain and private key in a single, encrypted file. It is commonly used for importing and exporting certificates and private keys, especially in environments that require secure transport of these items, such as web servers and client applications.
+
+To convert your KMS credentials (assuming you saved them into files named `client.cert` and `client.key`) to PKCS#12 with the openssl Command Line Interface, use the following command:
+
+```bash
+openssl pkcs12 -export -in client.cert  -inkey client.key -out client.p12
+```
+
+You will be prompted to enter a password that will be used for the symmetrical encryption of the file content.
+Then, you need to import it into your web browser.
+
+##### On Firefox
+
+- Type `about:preferences#privacy` into the address bar.
+- Scroll down until reaching a section named `Certificates`{.action}.
+
+![firefox-cert-manager](images/firefox-cert-manager.png){.thumbnail}
+
+- Click on `View Certificates...`{.action} to open the Certificate Manager. 
+- Go to the tab named `My Certificates`{.action}, then `Import...`{.action} and select the location of your `client.p12` file.
+- You will be prompted to enter the password you used during the PKCS#12 file creation.
+- After entering the password, your certificate will be imported and ready for use.
+
+##### On Chrome/Chromium
+
+- Type `chrome://settings/certificates` into the address bar.
+- Go to the `Your certificates`{.action} tab. Click on `Import`{.action} and select your `client.p12` file.
+- You will be prompted to enter the password you used during the PKCS#12 file creation.
+- After entering the password, your certificate will be imported and ready for use.
+
+![chromium-cert-manager](images/chromium-cert-manager.png){.thumbnail}
+
+#### Accessing the authenticated Swagger UI
+
+Once your certificate is loaded into your browser, you can go to the authenticated Swagger UI.
+
+You will be prompted to identify yourself with a certificate. Select the previously imported PKCS#12 certificate in the drop-down list.
+
+![certificate-identification](images/firefox-identify-with-certificate.png){.thumbnail}
+
+That's it, you can now use the Swagger UI interactively!
 
 ## Go further
 

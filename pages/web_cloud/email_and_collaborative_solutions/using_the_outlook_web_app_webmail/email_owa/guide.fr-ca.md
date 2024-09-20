@@ -108,7 +108,7 @@ Pour simultanément **déplacer plusieurs e-mails**, sélectionnez les tous grâ
 
 #### Créer des règles de gestion de la messagerie
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/z1D2wc7XWX4?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/z1D2wc7XWX4?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Pour créer et gérer des règles, cliquez d’abord sur l'icône d'engrenage en haut, puis sur `Options`{.action}.
 
@@ -128,7 +128,7 @@ Pour des instructions plus détaillées sur la création des règles de gestion 
 
 #### Bloquer un expéditeur
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Ivad4FgJ2No" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Ivad4FgJ2No" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Cliquez sur l'icône de l'engrenage en haut à droite, puis cliquez sur `Options`{.action}. Toujours dans la colonne de gauche, parcourez l'arborescence "Courrier" sous "Comptes", puis "Bloquer ou autoriser".
 
@@ -154,7 +154,7 @@ Pour **créer une liste de contacts**, cliquez sur la flèche vers le bas à cô
 
 ### Modifier le mot de passe
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/z1D2wc7XWX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/z1D2wc7XWX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Vous pouvez modifier le mot de passe de votre compte lorsque vous êtes connecté à OWA. Pour ce faire, cliquez sur l'icône d'engrenage en haut, puis cliquez sur `Options`{.action}.
 

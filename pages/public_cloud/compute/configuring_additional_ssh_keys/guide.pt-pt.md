@@ -37,11 +37,11 @@ Quando criar uma instância na Área de Cliente, só pode adicionar uma chave SS
 ### Etapa 1: Criar um novo par de chaves SSH
 
 Se necessário, utilize o nosso [guia sobre as chaves SSH](/pages/public_cloud/compute/creating-ssh-keys-pci) para criar um novo par de chaves SSH.  
-Encontrará também informações sobre [a gestão de várias chaves](/pages/public_cloud/compute/creating-ssh-keys-pci#create-ssh-key) na sua estação de trabalho local, se a sua instalação o exigir.
+Encontrará também informações sobre [a gestão de várias chaves](/pages/public_cloud/compute/creating-ssh-keys-pci#multiplekeys) na sua estação de trabalho local, se a sua instalação o exigir.
 
 ### Etapa 2: configurar uma nova conta de utilizador
 
-[Ligue-se à sua instância](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance) e utilize os comandos abaixo para criar uma nova conta de utilizador e uma pasta `.ssh`:
+[Ligue-se à sua instância](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) e utilize os comandos abaixo para criar uma nova conta de utilizador e uma pasta `.ssh`:
 
 ```bash
 sudo adduser user2
@@ -123,7 +123,7 @@ Se você receber uma mensagem de erro em vez disso, você ainda pode adicionar s
 
 #### Adição manual de chaves públicas à instância
 
-[Ligue-se à sua instância](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance) e abra, com o seu editor de texto preferido (`nano` é utilizado neste exemplo), o ficheiro `authorized_keys` na pasta pessoal do novo utilizador:
+[Ligue-se à sua instância](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) e abra, com o seu editor de texto preferido (`nano` é utilizado neste exemplo), o ficheiro `authorized_keys` na pasta pessoal do novo utilizador:
 
 ```bash
 sudo nano /home/user2/.ssh/authorized_keys
@@ -153,7 +153,7 @@ Exemplo:
 ssh user2@203.0.113.102
 ```
 
-Consulte [manual sobre as chaves SSH](/pages/public_cloud/compute/creating-ssh-keys-pci)i para saber mais sobre a utilização das chaves SSH com as instâncias Public Cloud.
+Consulte [manual sobre as chaves SSH](/pages/public_cloud/compute/creating-ssh-keys-pci) i para saber mais sobre a utilização das chaves SSH com as instâncias Public Cloud.
 
 ## Quer saber mais?
 

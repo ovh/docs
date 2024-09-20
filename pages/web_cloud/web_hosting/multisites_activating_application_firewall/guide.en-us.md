@@ -55,7 +55,7 @@ Click on `Next`{.action} and then on `Confirm`{.action} to modify the Multisite 
 
 ### Checking the status of the activation task
 
-![manageongoing](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/firewall-planned.png){.thumbnail}
+![manageongoing](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ongoing-tasks/firewall-planned.png){.thumbnail}
 
 Tasks to update your Multisite configuration will be listed in the `Ongoing jobs`{.action} tab (initial status is `Planned`). The firewall will be active once its update task no longer appears in the list.
 

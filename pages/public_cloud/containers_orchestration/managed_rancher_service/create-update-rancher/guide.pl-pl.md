@@ -1,14 +1,8 @@
 ---
 title: Creating, updating and accessing a Managed Rancher Service (EN)
 excerpt: 'Find out how to create, update and use a Managed Rancher Service on OVHcloud'
-updated: 2024-08-05
+updated: 2024-09-11
 ---
-
-> [!warning]
->
-> Usage of [Managed Rancher Service](https://labs.ovhcloud.com/en/managed-rancher-service/) is currently in Beta phase.
-> This guide may be incomplete and will be extended during the beta phase. Our team remains available on our dedicated Discord Channel, do not hesitate to join and reach us : <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our Container and Orchestration services.
->
 
 ## Objective
 
@@ -111,5 +105,7 @@ This web-based interface serves as your command center for orchestrating contain
 - To have an overview of OVHcloud Managed Rancher service, you can go to the [OVHcloud Managed Rancher page](https://www.ovhcloud.com/pl/public-cloud/managed-rancher-service/).
 
 - If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+- Our team remains available on our dedicated Discord Channel, do not hesitate to join and reach us : <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our Container and Orchestration services.
 
 - Join our [community of users](/links/community).

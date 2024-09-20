@@ -10,7 +10,7 @@ updated: 2024-07-23
 
 ## Wprowadzenie
 
-Przyłącz się do społeczności [user community](/links/community).Konsola IPMI (Intelligent Platform Management Interface) umożliwia bezpośrednie połączenie do serwera dedykowanego bez zależności od stanu łączności z systemem operacyjnym. Niniejszy przewodnik wyjaśnia, jak uruchomić tę konsolę.
+Przyłącz się do społeczności [user community](/links/community). Konsola IPMI (Intelligent Platform Management Interface) umożliwia bezpośrednie połączenie do serwera dedykowanego bez zależności od stanu łączności z systemem operacyjnym. Niniejszy przewodnik wyjaśnia, jak uruchomić tę konsolę.
 
 ## Wymagania początkowe
 
@@ -25,7 +25,7 @@ Przyłącz się do społeczności [user community](/links/community).Konsola IPM
 
 ## W praktyce
 
-Przyłącz się do społeczności [user community](/links/community).Konsola IPMI (Intelligent Platform Management Interface) umożliwia bezpośrednie połączenie do serwera dedykowanego bez zależności od stanu łączności z systemem operacyjnym. Niniejszy przewodnik wyjaśnia, jak uruchomić konsolę. Logowanie do IPMI można wykonać kilkoma dostępnymi metodami. Tabela podsumowująca:
+Logowanie do IPMI można wykonać kilkoma dostępnymi metodami. Klucze SSH przechowywane na serwerze nie będą używane dla tych połączeń. Tabela podsumowująca:
 
 |Nazwa metody|Inna nazwa|Opis|Kopiuj-wklej|Wirtualny dysk ISO²|Przykłady zastosowania|
 |---|---|---|---|---|---|

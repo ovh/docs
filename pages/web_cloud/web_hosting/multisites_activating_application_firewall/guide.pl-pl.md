@@ -60,7 +60,7 @@ Kliknij `Dalej`{.action}, a następnie `Zatwierdź`{.action}, aby zmienić ustaw
 
 ### Sprawdź stan zadania aktywacji
 
-![zarządzanie w trakcie](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/firewall-planned.png){.thumbnail}
+![zarządzanie w trakcie](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ongoing-tasks/firewall-planned.png){.thumbnail}
 
 Zadania związane z aktualizacją konfiguracji MultiSite zostaną wymienione w zakładce `Operacje w toku`{.action} (status początkowy to "Zaplanowany"). Firewall będzie aktywny, gdy jego zadanie aktualizacji nie pojawi się już na liście.
 

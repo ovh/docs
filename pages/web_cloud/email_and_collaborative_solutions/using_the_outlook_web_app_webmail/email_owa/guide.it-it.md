@@ -113,7 +113,7 @@ Per creare una nuova cartella, clicca con il tasto destro sul nome del tuo indir
 
 #### Creare regole di posta in arrivo
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Per gestire regole, clicca sull’icona con l’ingranaggio, in alto, quindi su `Opzioni`{.action}.
 
@@ -133,7 +133,7 @@ Per istruzioni più dettagliate sulla creazione di regole di posta in arrivo, fa
 
 #### Blocca un mittente
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UeNdpFwdXm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/UeNdpFwdXm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Clicca sull'icona dell'ingranaggio in alto a destra e poi su `Opzioni`{.action}. Sempre nella colonna di sinistra, clicca su "Posta" sotto "Account" e poi "Blocca o autorizza".
 
@@ -159,7 +159,7 @@ Sulla nuova pagina, puoi aggiungere un nuovo contatto, creare un elenco di conta
 
 ### Modificare la password
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Puoi modificare la password del tuo account dopo aver effettuato l’accesso a OWA. Per farlo, clicca sull’icona con l’ingranaggio in alto, quindi clicca su `Opzioni`{.action}.
 

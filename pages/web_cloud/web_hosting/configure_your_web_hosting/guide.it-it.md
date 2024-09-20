@@ -44,7 +44,7 @@ Per riassumere, modificare la configurazione dell’hosting Web dallo [Spazio Cl
 
 **Questa guida ti mostra come modificare ambiente di esecuzione, versione PHP, firewall applicativo, motore, modalità e file ".ovhconfig" di un hosting Web.**
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/X31MNMLw064" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/X31MNMLw064" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Prerequisiti
 
@@ -97,7 +97,7 @@ Alcune versioni di PHP funzionano solo con certi ambienti di esecuzione. Di segu
 |---|---| 
 |5.4, 5.5, 5.6 e 7.0|Legacy, Stable|
 |7.1, 7.2 e 7.3|Stable|
-|7.4, 8.0, 8.1 e 8.2|stable64|
+|7.4, 8.0, 8.1,8.2 e 8.3|stable64|
 
 > [!primary]
 >

@@ -1,14 +1,8 @@
 ---
 title: Getting Started with Managed Rancher Service
 excerpt: 'Find out how to start using Managed Rancher Service on OVHcloud'
-updated: 2024-02-28
+updated: 2024-09-11
 ---
-
-> [!warning]
->
-> Usage of [Managed Rancher Service](https://labs.ovhcloud.com/en/managed-rancher-service/) is currently in Beta phase.
-> This guide may be incomplete and will be extended during the beta phase. Our team remains available on our dedicated Discord Channel, do not hesitate to join and reach us : <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our Container and Orchestration services.
->
 
 ## Objective
 
@@ -17,14 +11,14 @@ Managed Rancher Service by OVHcloud provides a powerful platform for orchestrati
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/fr/public-cloud/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- A [Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
 ### Rancher Creation and Access
 
-To initiate your journey, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) and open the `Public Cloud`{.action} section.
+To initiate your journey, log in to the [OVHcloud Control Panel](/links/manager) and open the `Public Cloud`{.action} section.
 Then access the `Managed Rancher Service`{.action} under the `Containers & Orchestration` section.
 Using the OVHcloud Control Panel you can trigger the creation of a Rancher which will be operated and managed by OVHcloud.
 
@@ -66,11 +60,11 @@ We will detail below how to use OVHcloud as a Hosted Kubernetes provider and Inf
 
 > [!warning]
 >
-> Deploying to OVHcloud will incur charges. For more information, refer to the [MKS](https://www.ovhcloud.com/fr/public-cloud/prices/#568) and [Compute](https://www.ovhcloud.com/fr/public-cloud/prices/) pricing pages.
+> Deploying to OVHcloud will incur charges. For more information, refer to the [MKS](https://www.ovhcloud.com/fr/public-cloud/prices/#568) and [Compute](/links/public-cloud/prices) pricing pages.
 > Once your Managed Kubernetes clusters are created, we do recommend performing all actions (upgrade, nodepool management, cluster modification) from the Rancher console and not performing any action directly via the OVHcloud API or the OVHcloud Control Panel as this can lead to desynchronizations.
 >
 
-On this part we will detail how to use Rancher to create and manage [OVHcloud Managed Kubernetes Service](https://www.ovhcloud.com/fr/public-cloud/kubernetes/) clusters.
+On this part we will detail how to use Rancher to create and manage [OVHcloud Managed Kubernetes Service](/links/public-cloud/kubernetes) clusters.
 
 1. From the Rancher Homepage, click on `Create`{.action}.
 
@@ -148,11 +142,11 @@ Your cluster is now fully functional. You can click on the `Explore`{.action} bu
 
 ##### Use OVHcloud as an **Infrastructure Provider**
 
-On this part we will detail how to use Rancher to create and manage Kubernetes clusters based on [OVHcloud Public Cloud Compute Instances](https://www.ovhcloud.com/fr/public-cloud/compute/).
+On this part we will detail how to use Rancher to create and manage Kubernetes clusters based on [OVHcloud Public Cloud Compute Instances](/links/public-cloud/compute).
 
 > [!warning]
 > Deploying to OVHcloud will incur charges.
-> For more information, refer to the [MKS](https://www.ovhcloud.com/fr/public-cloud/prices/#568) and [Compute](https://www.ovhcloud.com/fr/public-cloud/prices/) pricing pages.
+> For more information, refer to the [MKS](https://www.ovhcloud.com/fr/public-cloud/prices/#568) and [Compute](/links/public-cloud/prices) pricing pages.
 
 1\. From the Rancher Homepage, click on `Create`{.action}.
 
@@ -220,7 +214,7 @@ You can refer to the official Rancher documentation on how to [Register Existing
 
 ##### Importing an existing OVHcloud Managed Kubernetes Service cluster
 
-If you already use our [OVHcloud Managed Kubernetes Service](https://www.ovhcloud.com/fr/public-cloud/kubernetes/), you can easily import an existing cluster.
+If you already use our [OVHcloud Managed Kubernetes Service](/links/public-cloud/kubernetes), you can easily import an existing cluster.
 The workflow is similar to the one described on the official Rancher documentation on [how to register a cluster](https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/kubernetes-clusters-in-rancher-setup/register-existing-clusters#registering-a-cluster) and it takes only a few minutes.
 
 1\. From the Rancher home page, click on `Import Existing`{.action}.
@@ -289,8 +283,10 @@ Happy Ranchering!
 
 ## Go further
 
-- To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovhcloud.com/fr/public-cloud/kubernetes/).
+- To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](/links/public-cloud/kubernetes).
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-- Join our community of users on <https://community.ovh.com/en/>.
+- Our team remains available on our dedicated Discord Channel, do not hesitate to join and reach us : <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our Container and Orchestration services.
+
+- Join our [community of users](/links/community).

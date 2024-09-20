@@ -19,7 +19,7 @@ Bridged Networking kann verwendet werden, um Ihre virtuellen Maschinen zu konfig
 
 **Diese Anleitung erklärt, wie Sie den Internet-Zugang für Ihre virtuellen Maschinen mittels Network Bridging konfigurieren.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/TZZbPe9hCOk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/TZZbPe9hCOk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Voraussetzungen
 

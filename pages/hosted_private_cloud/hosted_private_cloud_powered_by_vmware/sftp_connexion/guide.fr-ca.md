@@ -1,8 +1,15 @@
 ---
 title: Se connecter en SFTP
 excerpt: Apprenez à vous connecter à votre Private Cloud en SFTP
-updated: 2021-12-28
+updated: 2024-09-17
 ---
+
+> [!warning]
+> 
+> **Cette procédure est à présent déconseillée (*deprecated*)**.
+> 
+> Pour téléverser des fichiers dans vos datastores, veuillez utiliser la méthode décrite dans ce guide : [Téléversement de fichiers depuis le Datastore VMware vSphere](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_datastore_upload).
+>
 
 ## Objectif
 
