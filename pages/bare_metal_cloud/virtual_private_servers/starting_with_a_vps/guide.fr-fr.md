@@ -163,11 +163,6 @@ Si vous avez sélectionné une clé SSH et que vous n'avez pas besoin d'un ident
 
 Le processus de réinstallation peut prendre quelques minutes.
 
-> [!warning]
->
-> Pour des raisons de sécurité, lors de la première connexion à votre VPS, vous devez changer le mot de passe reçu par mail pour le remplacer par un mot de passe personnel et fort. Une fois la modification effectuée, reconnectez-vous avec votre nouveau mot de passe.
->
-
 #### Redémarrer votre VPS <a name="reboot-current-range"></a>
 
 Un redémarrage peut s'avérer nécessaire afin d'appliquer des configurations de mises à jour ou pour résoudre un dysfonctionnement. Dans la mesure du possible, effectuez un « redémarrage logiciel » à partir de l'interface graphique du serveur (Windows, Plesk, etc.) ou via la ligne de commande :
