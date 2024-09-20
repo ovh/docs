@@ -4,6 +4,10 @@ excerpt: "Aprenda a configurar uma conta E-mail Pro na interface on-line do Gmai
 updated: 2024-09-17
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
 ## Objetivo
 
 As contas E-mail Pro podem ser configuradas em vários softwares de e-mail e interfaces online compatíveis. Isto permite-lhe enviar e receber e-mails a partir do dispositivo ou da interface online à sua escolha.
