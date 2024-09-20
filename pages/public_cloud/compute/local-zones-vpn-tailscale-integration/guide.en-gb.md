@@ -1,0 +1,173 @@
+---
+title: Local Zone VPN-as-a-Service (VPNaaS) with Tailscale Integration
+excerpt: Learn how to integrate Tailscale into your OVHcloud Local Zone servers, providing a VPN-as-a-Service (VPNaaS) solution
+updated: 2024-09-20
+---
+
+## Objective
+
+This tutorial will guide you through the steps to integrate Tailscale into your OVHcloud Local Zone servers, providing a VPN-as-a-Service (VPNaaS) solution. Tailscale allows you to create a secure, peer-to-peer mesh network between your servers in different geographical locations.
+
+### Use Case
+
+Suppose you have servers in different OVHcloud Local Zones, such as Prague and Madrid, and you need to securely connect them. Instead of setting up complex VPN infrastructure, you can use Tailscale, which leverages WireGuard, to easily create an encrypted mesh network between your servers. This is particularly useful for developers, distributed systems, or secure cross-region communications.
+
+### What This Feature Enables
+
+This feature allows you to:
+
+- Set up a VPN mesh network for secure connections between servers in different OVHcloud Local Zones.
+- Easily connect and manage your servers via Tailscale.
+- Enable ephemeral nodes so that temporary servers are automatically removed from the Tailscale network when they are deleted.
+- Use Tailscale’s Access Control Lists (ACLs) to manage network permissions.
+
+## Requirements
+
+- An OVHcloud account (OVHcloud email is recommended).
+- SSH access to your OVHcloud Local Zone servers.
+- Two servers deployed in different OVHcloud Local Zones (we’ll use Prague and Madrid for this example).
+- A Tailscale account with admin access. 
+- A Tailscale Auth Key (which you will generate from the Tailscale admin panel).
+- Familiarity with SSH and basic terminal commands.
+
+## Instructions
+
+### Step 1 - Create or Use an SSH Key
+
+To securely access your servers, you need an SSH key. If you don’t already have one, you can generate one by running the following command:
+
+```bash
+ssh-keygen -t rsa -b 4096 -C "youremail@ovhcloud.com" -f ~/.ssh/tailscale-test -N ""
+```
+
+This command will generate a 4096-bit RSA key pair and save it in the specified location.
+
+### Step 2 - Create Two Servers in OVHcloud Local Zones
+
+Next, create two servers in different OVHcloud Local Zones, such as Prague and Madrid. Ensure that public networking is enabled for both servers.
+
+### Step 3 - Log into Tailscale
+
+1\. Log into your Tailscale account at [Tailscale](https://login.tailscale.com/).
+2\. Go to the `Devices`{.action} tab and click `Add Device`{.action}.
+3\. Select `Linux server` as the device type.
+
+![Tailscale - Add device](images/tailscale01.png){.thumbnail}
+
+4\. Enable `ephemeral nodes` to ensure that nodes are automatically removed from the network when their corresponding server is deleted.
+
+![Tailscale - ephemeral nodes](images/tailscale02.png){.thumbnail}
+
+5\. Copy the provided install script for later use.
+
+### Step 4 - Install Tailscale on the Prague Server
+
+SSH into the Prague server using the SSH key created in Step 1:
+
+```bash
+ssh root@$PRAGUE_IP -i ~/.ssh/tailscale-test
+```
+
+1\. Install Tailscale on the server by running the following command:
+
+```bash
+curl -fsSL https://tailscale.com/install.sh | sh && sudo tailscale up --auth-key=$TAILSCALE-KEY
+```
+
+2\. Log in to the Tailscale admin panel to approve the new node by visiting <https://login.tailscale.com/admin>.
+
+3\. Approve the node using the menu on the right (with the `...`{.action} button).
+
+![Tailscale - node approval](images/tailscale03.png){.thumbnail}
+
+4\. Once approved, you will see a success message in the terminal:
+
+```bash
+Installation complete! Log in to start using Tailscale by running:
+tailscale up
+```
+
+### Step 5 - Install Tailscale on the Madrid Server
+
+1\. SSH into the Madrid server:
+
+```bash
+ssh root@$MADRID_IP -i ~/.ssh/tailscale-test
+```
+
+2\. Repeat the Tailscale installation process on the Madrid server:
+
+```bash
+curl -fsSL https://tailscale.com/install.sh | sh && sudo tailscale up --auth-key=$TAILSCALE-KEY
+```
+
+3\. **Approve the Node in the Admin Panel**:
+
+Like with the Prague server, a prompt will appear asking you to approve the Madrid node. The installation will remain pending until approval.
+Visit <https://login.tailscale.com/admin> and approve the new node.
+
+4\. After approval, the installation will finish, and you’ll see the following success message in the terminal:
+
+```bash
+Installation complete! Log in to start using Tailscale by running:
+tailscale up
+```
+
+### Step 6 - Verify the Tailscale Network
+
+To check the status of the Tailscale network, log into one of your servers (e.g., the Prague server) and run the following command:
+
+```bash
+tailscale status
+```
+
+The output should look like this, showing the connection between the two nodes:
+
+```bash
+100.X.X.X   tailscale-node-prague john.doe@ linux   -
+100.X.X.X   tailscale-node-madrid john.doe@ linux   -
+```
+
+### Step 7 - Test the Connection Between Nodes
+
+Now, test the connection between the two nodes using Tailscale’s ping command.
+
+On the Prague server, run:
+
+```bash
+tailscale ping tailscale-node-madrid
+```
+
+On the Madrid server, run:
+
+```bash
+tailscale ping tailscale-node-prague
+```
+
+You should see a pong response indicating successful communication between the two servers, similar to this: 
+
+```bash
+pong from tailscale-node-madrid (100.X.X.X) via [X:X:X:X:X:X:X]:41641 in 34ms
+```
+
+### Step 8 - Manage Key Expiry
+
+Tailscale nodes are assigned keys, and these keys can expire. If your nodes are expected to remain in the network for a longer period, you may want to disable key expiry. You can do this in the Tailscale admin panel, depending on your security and access requirements.
+
+![Tailscale - Manage key expiry](images/tailscale04.png){.thumbnail}
+
+### Step 9 - Access Control
+
+Tailscale creates a mesh network, meaning all nodes can communicate with each other by default. If you need more granular control, use Tailscale's Access Control Lists (ACLs) to specify which devices can communicate with others.
+
+You can read more about ACLs here: [Tailscale ACL Documentation](https://tailscale.com/kb/1393/access-control).
+
+## Go further
+
+Please send us your questions, feedback and suggestions to improve the service:
+
+- On the OVHcloud [Discord server](https://discord.gg/ovhcloud)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+Join our [community of users](/links/community).
