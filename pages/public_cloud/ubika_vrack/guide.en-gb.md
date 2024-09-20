@@ -1,15 +1,15 @@
 ---
-title: 'Tutorial on Ubika : securing your OVHcloud infrastructure'
-excerpt: 'Find out how to securing your OVHcloud infrastructure with Ubika'
+title: 'Tutorial on Ubika WAAP Gateway : securing your OVHcloud infrastructure'
+excerpt: 'Find out how to securing your OVHcloud infrastructure with Ubika WAAP Gateway'
 updated: 2024-09-16
 ---
 
 ## Objective
 
 In today’s digital age, web application security is critical for protecting cloud infrastructure from sophisticated cyber threats. As businesses increasingly adopt cloud solutions, ensuring that web applications and APIs are secure is essential for maintaining data integrity and preventing breaches.
-Ubika offers advanced Web Application and API Protection (WAAP) features, including powerful tools such as web application firewalls (WAFs), API protection, bot management, and DDoS mitigation. These tools help protect your cloud environment from a wide array of application-level threats. This guide provides step-by-step instructions for deploying and configuring Ubika on the OVHcloud Public Cloud. By following this guide, you will learn how to configure private networks for management and workload, deploy Ubika instances, set up High Availability (HA) using RTvRack, and ensure a secure and reliable architecture for your cloud infrastructure.
+Ubika WAAP Gateway offers advanced Web Application and API Protection (WAAP) features, including powerful tools such as web application firewalls (WAFs), API protection, bot management, and DDoS mitigation. These tools help protect your cloud environment from a wide array of application-level threats. This guide provides step-by-step instructions for deploying and configuring Ubika WAAP Gateway on the OVHcloud Public Cloud. By following this guide, you will learn how to configure private networks for management and workload, deploy Ubika WAAP Gateway instances, set up High Availability (HA) using additional IP and vRack, and ensure a secure and reliable architecture for your cloud infrastructure.
 
-**This guide explains how to securing your OVHcloud infrastructure with Ubika deployed on Public Cloud.**
+**This guide explains how to securing your OVHcloud infrastructure with Ubika WAAP Gateway deployed on Public Cloud.**
 
 ## Requirements
 
@@ -20,15 +20,16 @@ Ubika offers advanced Web Application and API Protection (WAAP) features, includ
 - Ubika account on the [Ubika website](https://my.ubikasec.com/){.external}
 - Ensure that an appropriate block of additional IPs is available.
 - Ensure that the vRack is enabled and configured to allow secure communication between the components of the infrastructure.
-- Ubika License BYOL (**B**ring **Y**our **O**wn **L**icense) : have a valid Ubika license, as you will need to provide it during the installation and configuration process.
+- Ubika License BYOL (**B**ring **Y**our **O**wn **L**icense), obtained directly from Ubika via the [official Ubika website](https://my.ubikasec.com/){.external}. You will need to provide it during the installation and configuration process.
 
 ## Instructions
 
 In addition to the installation and configuration of Ubika, this tutorial offers a use case where you'll test Ubika by deploying and running a web application on your Public Cloud infrastructure :
 
 - [Configure your vRack](#step1)
-- [Install and configure Ubika on your Public Cloud environment](#step2)
-- [Test your first web application](#step3)
+- [Install and configure Ubika WAAP Gateway on your Public Cloud environment](#step2)
+- [Configure the licenses](#step3)
+- [Create your web server environment](#step4)
 
 ### Configure your vRack <a name="step1"></a>
 
@@ -42,14 +43,14 @@ Below is the architecture that we are going to set-up.
 
 ![Ubika vrack](./images/ubika-rtvrack.png)
 
-### Install and configure Ubika on your Public Cloud environment <a name="step2"></a>
+### Install and configure Ubika WAAP Gateway on your Public Cloud environment <a name="step2"></a>
 
 > [!primary]
 > In this tutorial, the installation and configuration of Ubika is done primarily via the command line. Open a terminal to execute the instructions.
 >
 > Please note that all sections related to « High Availability » are optional. They are included to demonstrate how to set up the system with two instances in an active/passive mode for high availability. Normally, it can also function with just one instance if that is sufficient for your needs.
 
-#### Configure Ubika management networking
+#### Configure Ubika WAAP Gateway management networking
 
 > [!primary]
 > In this scenario, we will use two virtual machines setup for the security appliance to achieve High Availability (HA), and an additional VM for management. This setup ensures failover protection and continuous service availability. For more examples and detailed guidance on scalability options, please refer to the [Ubika's documentation](https://www.ubikasec.com/ressources/){.external}.
@@ -68,7 +69,7 @@ openstack subnet create --network ubika-management --subnet-range 192.168.1.0/24
 
 Here, you configure a subnet for the management network, specifying an IP address range and a DNS server for internal communications.
 
-#### Configure Ubika workload networking
+#### Configure Ubika WAAP Gateway workload networking
 
 * Create a private network for the workload
 
@@ -245,7 +246,7 @@ Ubika managed-2 :
 
 ![Ubika vrack](./images/ha-4.png)
 
-#### Configure the licenses
+#### Configure the licenses <a name="step3"></a>
 
 Ubika offers two types of licenses depending on your deployment needs : a license for a single VM or a license for HA (High Availability) mode, where two instances are deployed in an Active-Backup configuration. Choose the appropriate license based on your setup.
 
@@ -257,7 +258,7 @@ To apply the licenses, you will need to provide the following information to Ubi
 
 Once you receive the licenses from Ubika, apply them to the corresponding instances to complete the setup.
 
-### Test your first web application <a name="step3"></a>
+### Create your web server environment <a name="step4"></a>
 
 The test of the web application after configuration validates the correct operation of Ubika's network, security, and high availability settings. The goal is to ensure that web traffic is properly filtered and routed through the Ubika instances, providing comprehensive protection for communications with the servers.
 
