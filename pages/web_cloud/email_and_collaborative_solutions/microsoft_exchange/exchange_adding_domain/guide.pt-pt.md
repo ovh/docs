@@ -113,7 +113,7 @@ Depois de configurar as contas, só precisa de as utilizar. Para isso, a OVHclou
 
 Se pretender configurar o seu endereço de e-mail num software de correio eletrónico ou periférico, como um smartphone ou um tablet, ou obter ajuda relativamente às funcionalidades do seu serviço de e-mail, consulte os nossos documentos acessíveis a partir das páginas [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) e [E-mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro).
 
-Pode adquirir licenças Outlook na [Área de Cliente OVHcloud](/links/manager) e licenças Office 365 na página <https://www.ovhcloud.com/pt/collaborative-tools/microsoft-365/>. Caso pretenda usufruir do software de correio eletrónico Outlook ou de outros programas da suite Office, recomendamos uma destas soluções.
+Pode adquirir licenças Outlook na [Área de Cliente OVHcloud](/links/manager) e licenças Office 365 na página [Microsoft 365](/links/web/ms365). Caso pretenda usufruir do software de correio eletrónico Outlook ou de outros programas da suite Office, recomendamos uma destas soluções.
 
 ### Eliminar um domínio de uma plataforma
 
@@ -149,7 +149,7 @@ No separador `Domínio associados`{.action} da sua plataforma, clique no botão 
 
 [Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support)
 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

@@ -47,7 +47,7 @@ Pozostając w platformie Exchange, przejdź do karty `Konta e-mail`{.action}. Kl
 
 ![2fa-exchange](images/2fa-exchange-01.png){.thumbnail}
 
-Aby powiązać konto z Twoją aplikacją OTP, zaloguj się do [poczty webmail](https://www.ovh.pl/mail/).
+Aby powiązać konto z Twoją aplikacją OTP, zaloguj się do [poczty webmail](/links/web/email).
 
 Przy pierwszym logowaniu wyświetlony zostanie kod QR. Zeskanuj go za pomocą aplikacji OTP, a następnie wprowadź wygenerowany w aplikacji kod, aby się zalogować.
 

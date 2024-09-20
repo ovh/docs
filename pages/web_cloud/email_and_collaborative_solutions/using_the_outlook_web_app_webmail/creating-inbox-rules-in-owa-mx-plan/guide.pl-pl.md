@@ -22,7 +22,7 @@ Przy użyciu opcji „Reguły skrzynki odbiorczej” można utworzyć złożone 
 
 ### Krok 1: przejście do sekcji opcji
 
-Zaloguj się na Twoje konto Exchange przy użyciu interfejsu [OVHcloud webmail](https://www.ovh.pl/mail/). Kliknij ikonę koła zębatego w prawym górnym rogu, aby rozwinąć menu „Opcje”, i wybierz pozycję `Opcje`{.action}.
+Zaloguj się na Twoje konto Exchange przy użyciu interfejsu [OVHcloud webmail](/links/web/email). Kliknij ikonę koła zębatego w prawym górnym rogu, aby rozwinąć menu „Opcje”, i wybierz pozycję `Opcje`{.action}.
 
 ![inboxrules](images/exchange-rules-step1.png){.thumbnail}
 

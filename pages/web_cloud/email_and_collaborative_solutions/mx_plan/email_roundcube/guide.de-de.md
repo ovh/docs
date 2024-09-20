@@ -348,11 +348,11 @@ Um eine Antwort hinzuzufügen, klicken Sie unten in der Spalte `Schnellantworten
 
 ### Auto-Responder hinzufügen <a name="automatic-respond"></a>
 
-Um Ihrem E-Mail-Account eine automatische Antwort hinzufügen, wenn Sie abwesend oder nicht verfügbar sind, kann ein Auto-Responder genutzt werden. Diese Funktion kann aber nicht im Webmail, sondern nur im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/de/&ovhSubsidiary=de) im Verwaltungsinterface Ihrer E-Mail-Accounts aktiviert werden. Lesen Sie unsere Anleitung "[Einrichten von Auto-Antworten für E-Mails](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses/)".
+Um Ihrem E-Mail-Account eine automatische Antwort hinzufügen, wenn Sie abwesend oder nicht verfügbar sind, kann ein Auto-Responder genutzt werden. Diese Funktion kann aber nicht im Webmail, sondern nur im [OVHcloud Kundencenter](/links/manager) im Verwaltungsinterface Ihrer E-Mail-Accounts aktiviert werden. Lesen Sie unsere Anleitung "[Einrichten von Auto-Antworten für E-Mails](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses/)".
 
 ### Passwort Ihres E-Mail-Accounts ändern <a name="password"></a>
 
-Um das Passwort Ihres E-Mail-Accounts zu ändern, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/de/&ovhSubsidiary=de) im Verwaltungsinterface Ihres E-Mail-Accounts ein. Lesen Sie unsere Anleitung "[Passwort eines E-Mail-Accounts ändern](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password/)".
+Um das Passwort Ihres E-Mail-Accounts zu ändern, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) im Verwaltungsinterface Ihres E-Mail-Accounts ein. Lesen Sie unsere Anleitung "[Passwort eines E-Mail-Accounts ändern](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password/)".
 
 ### E-Mail verfassen <a name="email-writing"></a>
 

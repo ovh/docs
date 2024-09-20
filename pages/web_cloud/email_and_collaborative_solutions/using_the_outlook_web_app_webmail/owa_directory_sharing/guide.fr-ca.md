@@ -19,7 +19,7 @@ Déléguer l'utilisation de tout un compte e-mail n’est pas toujours la bonne 
 
 ### Étape 1 : Définir les autorisations d’accès à un dossier
 
-Connectez-vous à votre compte Exchange via le [webmail OVHcloud](https://www.ovhcloud.com/fr-ca/mail). Faites un clic droit sur le dossier à partager et sélectionnez `Autorisations...`{.action} dans le menu contextuel.
+Connectez-vous à votre compte Exchange via le [webmail OVHcloud](/links/web/email). Faites un clic droit sur le dossier à partager et sélectionnez `Autorisations...`{.action} dans le menu contextuel.
 
 ![sharefolder](images/exchange-folder-step1.png){.thumbnail}
 
@@ -79,7 +79,7 @@ Il existe des ensembles d'autorisations prédéfinies (« niveaux d'autorisatio
 
 ![sharefolder](images/exchange-folder-step3.png){.thumbnail}
 
-Connectez-vous à votre compte Exchange via le [webmail OVHcloud](https://www.ovhcloud.com/fr-ca/mail). Faites un clic droit sur le nom de votre compte dans l’onglet de navigation à gauche et sélectionnez `Ajouter un dossier partagé...`{.action} depuis le menu contextuel. Dans la nouvelle fenêtre, indiquez le nom du compte à partir duquel un dossier a été partagé. Commencez à saisir du texte pour afficher des suggestions de vos contacts. Entrez des adresses e-mail complètes ou bien lancez une recherche sur le `Répertoire de recherche`{.action}. Confirmez et cliquez sur `Ajouter`{.action}. Le nouveau dossier partagé apparaît alors immédiatement sous vos autres dossiers.
+Connectez-vous à votre compte Exchange via le [webmail OVHcloud](/links/web/email). Faites un clic droit sur le nom de votre compte dans l’onglet de navigation à gauche et sélectionnez `Ajouter un dossier partagé...`{.action} depuis le menu contextuel. Dans la nouvelle fenêtre, indiquez le nom du compte à partir duquel un dossier a été partagé. Commencez à saisir du texte pour afficher des suggestions de vos contacts. Entrez des adresses e-mail complètes ou bien lancez une recherche sur le `Répertoire de recherche`{.action}. Confirmez et cliquez sur `Ajouter`{.action}. Le nouveau dossier partagé apparaît alors immédiatement sous vos autres dossiers.
 
 ## Aller plus loin
 

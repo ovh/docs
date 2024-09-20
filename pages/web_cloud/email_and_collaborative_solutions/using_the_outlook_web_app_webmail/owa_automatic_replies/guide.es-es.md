@@ -19,7 +19,7 @@ Esta herramienta de Exchange le permite configurar respuestas automáticas, de m
 
 ### Activar la herramienta
 
-Inicie sesión en su cuenta de Exchange a través del [correo electrónico basado en la web de OVHcloud](https://www.ovh.es/mail/). Haga clic en el símbolo del engranaje en la parte superior derecha para desplegar el menú «Opciones» y seleccione `«Respuestas automáticas»`{.action}.
+Inicie sesión en su cuenta de Exchange a través del [correo electrónico basado en la web de OVHcloud](/links/web/email). Haga clic en el símbolo del engranaje en la parte superior derecha para desplegar el menú «Opciones» y seleccione `«Respuestas automáticas»`{.action}.
 
 ![owaoptions](images/exchange-autorep-step1.png){.thumbnail}
 

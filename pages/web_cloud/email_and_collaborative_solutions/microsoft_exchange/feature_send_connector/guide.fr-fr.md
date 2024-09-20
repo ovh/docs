@@ -46,7 +46,7 @@ Voici le contexte du schéma ci-dessus:
 
 ## Prérequis
 
-- Avoir souscrit à une plateforme [Private Exchange OVHcloud](/links/web/emails-private-exchange) ou [Trusted Exchange OVHcloud](https://www.ovhcloud.com/fr/enterprise/products/trusted-exchange/).
+- Avoir souscrit à une plateforme [Private Exchange OVHcloud](/links/web/emails-private-exchange) ou [Trusted Exchange OVHcloud](/links/web/emails-trusted-exchange).
 - Être connecté à [l'espace client OVHcloud](/links/manager).
 - Être connecté aux [API OVHcloud](https://api.ovh.com/).
 - Disposer des paramètres nécessaires au paramétrage du connecteur d'envoi. Rapprochez-vous du prestataire qui vous délivre le service.
@@ -69,7 +69,7 @@ Vous trouverez aussi dans ce guide d'autres opérations utiles concernant les co
 
 > [!warning]
 >
-> L'ajout d'un connecteur d'envoi est réservé et prévu pour les offres [Private Exchange OVHcloud](/links/web/emails-private-exchange) et [Trusted Exchange OVHcloud](https://www.ovhcloud.com/fr/enterprise/products/trusted-exchange/). Si vous activez un connecteur d'envoi sur une offre Exchange OVHcloud, autre que celles citées précédemment, vous risquez de voir celui-ci désactivé à tout moment par nos administrateurs pour des raisons de sécurité.
+> L'ajout d'un connecteur d'envoi est réservé et prévu pour les offres [Private Exchange OVHcloud](/links/web/emails-private-exchange) et [Trusted Exchange OVHcloud](/links/web/emails-trusted-exchange). Si vous activez un connecteur d'envoi sur une offre Exchange OVHcloud, autre que celles citées précédemment, vous risquez de voir celui-ci désactivé à tout moment par nos administrateurs pour des raisons de sécurité.
 
 Avant de commencer, munissez-vous des informations suivantes. Elles doivent être fournies par le prestataire délivrant le connecteur d'envoi.
 
@@ -327,7 +327,7 @@ Vous obtenez le résultat suivant :
 
 [Ajouter un nom de domaine sur son service Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 

@@ -144,7 +144,7 @@ OVHcloud offers optional Outlook licences with your Exchange email account in th
 
 To subscribe, go to our page on [Getting an Outlook licence for Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/office_outlook_license). 
 
-You can also get [Office 365 licences](https://www.ovhcloud.com/en-ie/collaborative-tools/microsoft-365/). We recommend using one of these solutions if you would like to use the Outlook email client, or other software from the Microsoft Office suite.
+You can also get [Office 365 licences](/links/web/ms365). We recommend using one of these solutions if you would like to use the Outlook email client, or other software from the Microsoft Office suite.
 
 > [!primary]
 >

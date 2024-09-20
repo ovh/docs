@@ -18,7 +18,7 @@ Il vous est impossible de recevoir ou envoyer vos e-mails depuis votre logiciel 
 ## Prérequis
 
 - Posséder une offre **E-mail** associée à [solution d'hébergement OVHcloud](/links/web/hosting) ou une offre [Exchange](/links/web/emails-hosted-exchange).
-- Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- Être connecté à l'[espace client OVHcloud](/links/manager).
 
 ## En pratique
 

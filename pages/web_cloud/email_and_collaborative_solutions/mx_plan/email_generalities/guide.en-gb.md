@@ -17,7 +17,7 @@ If you have just purchased an MX Plan solution, this means you have email addres
 
 ## Instructions <a name="instructions"></a>
 
-Once the MX Plan solution has been created and is available, you can manage it from the [OVHcloud Control Panel](/links/manager). Depending on its activation date or if [it has been migrated recently](https://www.ovh.co.uk/mxplan-migration/), you may have the old or new version of the solution. You will need to check this before you proceed any further.
+Once the MX Plan solution has been created and is available, you can manage it from the [OVHcloud Control Panel](/links/manager). Depending on its activation date or if it has been migrated recently, you may have the old or new version of the solution. You will need to check this before you proceed any further.
 
 To do this, log in to the [OVHcloud Control Panel](/links/manager), and go to the `Web Cloud`{.action} section. Click `Emails`{.action}, and then choose the name of the MX Plan service concerned. Then you can proceed in accordance with the version you are using.
 
@@ -60,7 +60,7 @@ Once you have created your email addresses, you can start using them straight aw
 
 ##### **1. Using Outlook Web App (OWA) webmail**
 
-Go to the [Webmail login](https://www.ovh.co.uk/mail/) page, then enter the email address and password. Then click the `Login`{.action} button.
+Go to the [Webmail login](/links/web/email) page, then enter the email address and password. Then click the `Login`{.action} button.
 
 When you first log in to the webmail interface, you are prompted to set the interface language and your time zone. Your inbox will then appear. To find out how to use your email address via the OWA webmail interface, please refer to our [Outlook Web App user guide](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
@@ -176,7 +176,7 @@ Once you have created your email accounts, you can start using them straight awa
 
 ##### **1. Using RoundCube webmail**
 
-Go to the [webmail login](https://www.ovh.co.uk/mail/) page, then enter the email address and password. Then click the `Login`{.action} button.
+Go to the [webmail login](/links/web/email) page, then enter the email address and password. Then click the `Login`{.action} button.
 
 Your inbox will appear. To find out how to use your email accounts via the RoundCube webmail interface, use our guide on [Using your email account via the RoundCube webmail interface](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
 

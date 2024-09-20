@@ -12,7 +12,7 @@ You can [migrate an email address automatically](/pages/web_cloud/email_and_coll
 
 > [!warning]
 >
-> This guide will show you how to use one or more OVHcloud solutions with external tools, and the changes you need to make in specific contexts. You may need to adapt the instructions according to your situation. If you experience any difficulties carrying out these operations, please get in touch with a [specialist service provider](https://partner.ovhcloud.com/en-sg/directory/), and/or discuss your issues with our community on https://community.ovh.com/en/. OVHcloud cannot assist you in this regard.
+> This guide will show you how to use one or more OVHcloud solutions with external tools, and the changes you need to make in specific contexts. You may need to adapt the instructions according to your situation. If you experience any difficulties carrying out these operations, please get in touch with a [specialist service provider](/links/partner), and/or discuss your issues with our community on https://community.ovh.com/en/. OVHcloud cannot assist you in this regard.
 >
 
 ## Requirements
@@ -207,7 +207,7 @@ You will find your profile selection window with your new profile selected. When
 
 When you have done the necessary steps by following the import instructions, make sure that your items are present on the server.
 
-Log in to [webmail](https://www.ovh.com/sg/mail/).
+Log in to [webmail](/links/web/email).
 
 In your inbox and the left-hand column, you will find the folders and emails for your saved email address.
 

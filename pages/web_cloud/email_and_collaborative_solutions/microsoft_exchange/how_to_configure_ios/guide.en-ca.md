@@ -14,7 +14,7 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 >
 > OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. If you encounter any difficulties performing these actions, please contact a [specialist service provider](https://partner.ovhcloud.com/en-ca/directory/) and/or discuss the issue with our community on https://community.ovh.com/en/. OVHcloud cannot provide you with technical support in this regard.
+> This guide is designed to assist you in common tasks as much as possible. If you encounter any difficulties performing these actions, please contact a [specialist service provider](/links/partner) and/or discuss the issue with our community on https://community.ovh.com/en/. OVHcloud cannot provide you with technical support in this regard.
 >
 
 ## Requirements
@@ -55,7 +55,7 @@ To check that the account has been correctly configured, you can send a test ema
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVHcloud also offers a web application that includes [Exchange collaborative features](https://www.ovh.com/ca/en/emails/), accessible via [Webmail](/links/web/email). You can log in using your email credentials.
+OVHcloud also offers a web application that includes [Exchange collaborative features](/links/web/email), accessible via [Webmail](/links/web/email). You can log in using your email credentials.
 
 > [!primary]
 >

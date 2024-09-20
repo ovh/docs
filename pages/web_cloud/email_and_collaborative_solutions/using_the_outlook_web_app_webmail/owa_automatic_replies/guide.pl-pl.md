@@ -19,7 +19,7 @@ Ta funkcja programu Exchange umożliwia skonfigurowanie automatycznych odpowiedz
 
 ### Włączanie funkcji
 
-Zaloguj się na konto Exchange przy użyciu interfejsu [OVHcloud webmail](https://www.ovh.pl/mail/). Kliknij ikonę koła zębatego w prawym górnym rogu, aby rozwinąć menu „Opcje”, i wybierz pozycję `Odpowiedzi automatyczne`{.action}.
+Zaloguj się na konto Exchange przy użyciu interfejsu [OVHcloud webmail](/links/web/email). Kliknij ikonę koła zębatego w prawym górnym rogu, aby rozwinąć menu „Opcje”, i wybierz pozycję `Odpowiedzi automatyczne`{.action}.
 
 ![owaoptions](images/exchange-autorep-step1.png){.thumbnail}
 

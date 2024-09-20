@@ -148,7 +148,7 @@ OVHcloud bietet über das [OVHcloud Kundencenter](/links/manager) optional Outlo
 
 Um eine Domain mit dieser Endung bestellen zu können, lesen Sie unsere Anleitung ["Eine Outlook-Lizenz für Exchange beziehen"](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/office_outlook_license). 
 
-Sie können auch Office 365 Lizenzen auf der Seite [https://www.ovhcloud.com/de/collaborative-tools/microsoft-365/](https://www.ovhcloud.com/de/collaborative-tools/microsoft-365/) erhalten. Wir empfehlen Ihnen, eine dieser Lösungen zu verwenden, wenn Sie den Outlook E-Mail-Client oder weitere Software der Office Suite nutzen möchten.
+Sie können auch Office 365 Lizenzen auf der Seite [Microsoft 365](/links/web/ms365) erhalten. Wir empfehlen Ihnen, eine dieser Lösungen zu verwenden, wenn Sie den Outlook E-Mail-Client oder weitere Software der Office Suite nutzen möchten.
 
 > [!primary]
 >

@@ -17,7 +17,7 @@ La solución de alojamiento web permite disfrutar de direcciones de correo elect
 
 ## Procedimiento
 
-Una vez que el MX Plan haya sido creado y esté disponible, puede administrarlo desde el [área de cliente de OVHcloud](/links/manager). En función de cuándo haya activado su MX Plan o de si [el servicio ha sido migrado recientemente](https://www.ovh.co.uk/mxplan-migration/), tendrá una versión diferente. Antes de continuar, compruebe de qué versión dispone. 
+Una vez que el MX Plan haya sido creado y esté disponible, puede administrarlo desde el [área de cliente de OVHcloud](/links/manager). En función de cuándo haya activado su MX Plan o de si el servicio ha sido migrado recientemente, tendrá una versión diferente. Antes de continuar, compruebe de qué versión dispone. 
 
 Para ello, conéctese al [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action}. Haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente. Siga leyendo esta guía en función de su versión:
 
@@ -60,7 +60,7 @@ Una vez que haya creado las direcciones de correo, ya puede empezar a usarlas. P
 
 ##### 3.1. Utilizar el webmail Outlook Web App (OWA)
 
-Vaya a la [página de conexión al webmail](https://www.ovh.com/world/es/mail/) e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
+Vaya a la [página de conexión al webmail](/links/web/email) e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
 
 La primera vez que se conecte al webmail deberá seleccionar el idioma de la interfaz y la zona horaria en la que se encuentra. A continuación se abrirá la bandeja de entrada. Para más información, consulte nuestra guía [Utilizar una dirección de correo desde Outlook en la Web](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
@@ -128,7 +128,7 @@ Una vez que haya creado las direcciones de correo, ya puede empezar a usarlas. P
 
 ##### 3.1. Utilizar el webmail Roundcube
 
-Vaya a la [página de conexión al webmail](https://www.ovh.com/world/es/mail/) e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
+Vaya a la [página de conexión al webmail](/links/web/email) e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
 
 A continuación, podrá consultar su bandeja de entrada. Para más información, consulte nuestra [Guía de uso de Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
 

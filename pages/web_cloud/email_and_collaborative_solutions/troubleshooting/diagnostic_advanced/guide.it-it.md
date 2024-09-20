@@ -51,7 +51,7 @@ Se utilizzi un client di posta sul tuo computer (Outlook, Mail di Mac, Thunderbi
 
 ### Non riesco a ricevere email perché il mio indirizzo email è pieno, non ho più spazio. Cosa posso fare?
 
-Se hai attivato [una delle nostre soluzioni email OVHcloud](https://www.ovhcloud.com/it/email/) e uno dei tuoi account è pieno, consulta la nostra guida "[Gestire lo spazio di storage di un account email](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota)". Questa guida ti mostra come ottimizzare lo spazio disponibile o se è necessario cambiare il tuo servizio di posta per aumentare lo spazio di storage.
+Se hai attivato [una delle nostre soluzioni email OVHcloud](/links/web/emails) e uno dei tuoi account è pieno, consulta la nostra guida "[Gestire lo spazio di storage di un account email](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota)". Questa guida ti mostra come ottimizzare lo spazio disponibile o se è necessario cambiare il tuo servizio di posta per aumentare lo spazio di storage.
 
 ### Le email sono funzionali dalla Webmail? (**invio** e/o **ricezione**)
 

@@ -13,7 +13,7 @@ Chaque compte e-mail OVHcloud dispose d'un espace de stockage dédié. Bien gér
 ## Prérequis
 
 - Disposer d'une solution e-mail OVHcloud préalablement configurée (**MX Plan**, proposée parmi nos [offres d’hébergement web](/links/web/hosting) ou commandée séparément comme solution autonome, telle que [**Hosted Exchange**](/links/web/emails-hosted-exchange)).
-- Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), partie `Web Cloud`{.action}.
+- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
 - Disposer des informations de connexion aux adresses e-mails concernées.
 
 ## En pratique <a name="instructions"></a>
@@ -32,7 +32,7 @@ Vous pouvez réaliser cette action depuis l'espace client si vous avez la gestio
 
 #### Depuis l'espace client <a name="quotacontrolpanel"></a>
 
-Depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), dirigez-vous dans la partie `Web Cloud`{.action} puis suivez les instructions selon votre offre:
+Depuis votre [espace client OVHcloud](/links/manager), dirigez-vous dans la partie `Web Cloud`{.action} puis suivez les instructions selon votre offre:
 
 > [!tabs]
 > **Emails (MXplan)**
@@ -78,7 +78,7 @@ Il est possible d'augmenter la capacité de stockage de votre compte e-mail, si 
 > [!tabs]
 > **Emails (MXplan)**
 >>
->> La capacité d'un compte MXplan peut aller de 2,5 Mo à 5 Go. S'il est saturé et que sa capacité est inférieure à 5 Go, vous pouvez modifier sa capacité via l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).<br>
+>> La capacité d'un compte MXplan peut aller de 2,5 Mo à 5 Go. S'il est saturé et que sa capacité est inférieure à 5 Go, vous pouvez modifier sa capacité via l'[espace client OVHcloud](/links/manager).<br>
 >> Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} à droite du compte à modifier, puis cliquez sur `Modifier`{.action}.
 >> Depuis la case `Quota`{.action}, sélectionnez la taille qui vous convient, cliquez sur `Suivant`{.action} puis `Valider`{.action}.<br><br>
 >> ![email](images/email-quota-more01.png){.thumbnail}<br>

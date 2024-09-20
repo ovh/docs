@@ -30,7 +30,7 @@ Al hacer clic en `Crear un grupo de contactos`{.action} se abrirá una nueva ven
 |Nombre|Descripción|
 |---|---|
 |Dirección de correo electrónico|La nueva dirección que mandará los mensajes a la lista de correo. Tenga en cuenta que no puede introducir una dirección de correo ya existente.|
-|Nombre del grupo|El nombre que aparecerá en su [área de cliente de OVHcloud](/links/manager) y en el [webmail de OVHcloud](https://www.ovh.com/world/mail/) (OWA).|
+|Nombre del grupo|El nombre que aparecerá en su [área de cliente de OVHcloud](/links/manager) y en el [webmail de OVHcloud](/links/web/email) (OWA).|
 |Tamaño máx. de entrada/salida|Puede especificar el tamaño máximo de sus correos entrantes y salientes.|
 |Ocultar en Outlook|Si marca esta casilla, la dirección del grupo no aparecerá en la lista de direcciones del servicio Exchange.|
 |Autenticación obligatoria|Si marca esta casilla, los usuarios de la misma plataforma serán los únicos que podrán mandar un mensaje utilizando la dirección del grupo.|
@@ -66,7 +66,7 @@ Tenga en cuenta que cualquier cambio del servicio puede tardar unos minutos en e
 
 ### Paso 3: Enviar mensajes a un grupo en OWA
 
-Ahora puede probar su lista de correo a través del [webmail de OVHcloud](https://www.ovh.com/world/mail/) (OWA) simplemente mandando un correo a la dirección del grupo.
+Ahora puede probar su lista de correo a través del [webmail de OVHcloud](/links/web/email) (OWA) simplemente mandando un correo a la dirección del grupo.
 
 ![contactgroups](images/exchange-groups-step6.png){.thumbnail}
 

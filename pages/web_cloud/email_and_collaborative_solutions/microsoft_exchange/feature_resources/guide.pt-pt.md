@@ -35,7 +35,7 @@ Clique no botão `Adicionar uma conta de recurso`{.action} para criar o seu prim
 |Nome|Descrição|
 |---|---|
 |E-mail do recurso|Introduza o endereço do recurso. Tenha em atenção que não pode escolher um endereço de e-mail existente.|
-|Nome do recurso|Nome completo que aparece na [Área de Cliente OVHcloud](/links/manager) e [no webmail OVHcloud](https://www.ovh.pt/mail/) (OWA).|
+|Nome do recurso|Nome completo que aparece na [Área de Cliente OVHcloud](/links/manager) e [no webmail OVHcloud](/links/web/email) (OWA).|
 |Capacidade|Pode definir a dimensão máxima de um recurso (especificando, por exemplo, o número de lugares sentados de uma peça ou os lugares sentados de um veículo de empresa partilhada).|
 |Permitir conflitos|Se esta opção for selecionada, poderá criar eventos de calendário que se sobreponham e envolvam o mesmo recurso.|
 |Tipo de recurso|Escolha o tipo de recurso: "Equipamento" ou "Sala".|
@@ -55,7 +55,7 @@ Os seus recursos podem ser geridos a partir da tabela do separador "Recursos". C
 Consulte também o nosso manual sobre [Partilha de calendários a partir da interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_calendar_sharing).
 >
 
-Ligue-se à sua conta Exchange através do [webmail OVHcloud](https://www.ovh.pt/mail/). Migre para a interface "Calendário" clicando no "aplicador" no canto superior esquerdo e selecionando o ícone `Calendário`{.action}.
+Ligue-se à sua conta Exchange através do [webmail OVHcloud](/links/web/email). Migre para a interface "Calendário" clicando no "aplicador" no canto superior esquerdo e selecionando o ícone `Calendário`{.action}.
 
 ![adicionar](images/exchange-calendars-step1.png){.thumbnail}
 

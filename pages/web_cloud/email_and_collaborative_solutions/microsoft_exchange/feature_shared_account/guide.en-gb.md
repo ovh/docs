@@ -79,7 +79,7 @@ In our example, we allow the accounts **guide-exchange@** and **test@** to acces
 
 ### Using the account shared from OWA (webmail)
 
-Log in to [webmail](https://www.ovh.co.uk/mail/) with an Exchange account that has access to the shared account.
+Log in to [webmail](/links/web/email) with an Exchange account that has access to the shared account.
 <br>In our example, we connect with the **guide-exchange@** account.
 
 Once you have logged in, right-click on the main tree for your email address in the left-hand column. Select `Add shared folder...`{.action} from the context menu. 

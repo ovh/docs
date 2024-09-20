@@ -6,7 +6,7 @@ updated: 2024-09-03
 
 ## Objectif
 
-Avec les solutions e-mail OVHcloud, vous pouvez envoyer et recevoir vos e-mails à partir d’un appareil et d’un logiciel client de votre choix. OVHcloud fournit un service de messagerie en ligne appelé Outlook Web App (OWA) qui permet, via un navigateur web, d’accéder à un compte, quel que soit l’endroit. Tous les comptes de messagerie actifs sur MX Plan, Email Pro et Hosted Exchange ont un seul point d’accès à l’interface OWA qui leur correspond : notre page de [connexion au webmail](https://www.ovh.com/fr/mail/).
+Avec les solutions e-mail OVHcloud, vous pouvez envoyer et recevoir vos e-mails à partir d’un appareil et d’un logiciel client de votre choix. OVHcloud fournit un service de messagerie en ligne appelé Outlook Web App (OWA) qui permet, via un navigateur web, d’accéder à un compte, quel que soit l’endroit. Tous les comptes de messagerie actifs sur MX Plan, Email Pro et Hosted Exchange ont un seul point d’accès à l’interface OWA qui leur correspond : notre page de [connexion au webmail](/links/web/email).
 
 **Découvrez comment effectuer des actions courantes avec votre adresse électronique depuis l'interface OWA.**
 
@@ -28,7 +28,7 @@ Concernant les fonctionnalités spécifiques à Exchange, vous pourrez retrouver
 
 ### Étape 1 : Se connecter à OWA
 
-Pour vous connecter à OWA avec votre adresse e-mail, ouvrez la page de [connexion au webmail](https://www.ovh.com/fr/mail/). Saisissez entièrement votre adresse e-mail et votre mot de passe. Ensuite, cliquez sur `Connexion`{.action}.
+Pour vous connecter à OWA avec votre adresse e-mail, ouvrez la page de [connexion au webmail](/links/web/email). Saisissez entièrement votre adresse e-mail et votre mot de passe. Ensuite, cliquez sur `Connexion`{.action}.
 
 ![useowa](images/use-owa-step1.png){.thumbnail}
 

@@ -46,7 +46,7 @@ Here is the context of the diagram above:
 
 ## Requirements
 
-- An OVHcloud [Private Exchange](/links/web/emails-private-exchange) or [OVHcloud](https://www.ovhcloud.com/en-ie/enterprise/products/trusted-exchange/) Trusted Exchange platform.
+- An OVHcloud [Private Exchange](/links/web/emails-private-exchange) or [OVHcloud](/links/web/emails-trusted-exchange) Trusted Exchange platform.
 - Access to the [OVHcloud Control Panel](/links/manager)
 - Access to the [OVHcloud API](https://api.ovh.com/)
 - The configuration details needed for the send connector received from your service provider
@@ -69,7 +69,7 @@ You will also find other useful operations concerning send connectors in this gu
 
 > [!warning]
 >
-> The addition of a send connector is reserved and planned for the [OVHcloud Private Exchange](/links/web/emails-private-exchange) and [OVHcloud Trusted Exchange](https://www.ovhcloud.com/en-ie/enterprise/products/trusted-exchange/) solutions. If you enable a send connector on an OVHcloud Exchange solution other than the ones mentioned above, you risk having it disabled at any time by our administrators for security reasons.
+> The addition of a send connector is reserved and planned for the [OVHcloud Private Exchange](/links/web/emails-private-exchange) and [OVHcloud Trusted Exchange](/links/web/emails-trusted-exchange) solutions. If you enable a send connector on an OVHcloud Exchange solution other than the ones mentioned above, you risk having it disabled at any time by our administrators for security reasons.
 
 Before you begin, make sure you have the following information, provided by the service provider delivering the send connector.
 
@@ -326,7 +326,7 @@ The result is as follows:
 
 [Adding a domain name to your Exchange service](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 

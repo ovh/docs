@@ -21,7 +21,7 @@ Adquiriu um serviço MX Plan, que lhe permite beneficiar de endereços de e-mail
 
 ## Instruções <a name="instructions"></a>
 
-Depois de criada e disponível a oferta MX Plan, poderá geri-la a partir da [Área de Cliente OVHcloud](/links/manager). A versão da sua oferta MX Plan (antiga ou nova) irá depender da data de ativação ou de se [o serviço foi migrado recentemente](https://www.ovh.pt/mxplan-migration/). Antes de continuar, deve verificar a versão de que dispõe.
+Depois de criada e disponível a oferta MX Plan, poderá geri-la a partir da [Área de Cliente OVHcloud](/links/manager). A versão da sua oferta MX Plan (antiga ou nova) irá depender da data de ativação ou de se o serviço foi migrado recentemente. Antes de continuar, deve verificar a versão de que dispõe.
 
 Aceda à [Área de Cliente OVHcloud](/links/manager), na secção `Web Cloud`{.action}. Clique em `E-mails`{.action}e selecione o serviço MX Plan correspondente. Continue a ler em função da sua versão:
 
@@ -64,7 +64,7 @@ Depois de configurar os endereços de e-mail, já os pode utilizar. Para isso, t
 
 ##### **1. Utilizar o webmail Outlook Web App (OWA)**
 
-Aceda à página “[Ligação ao webmail](https://www.ovh.pt/mail/)” e introduza o seu endereço de e-mail e respetiva palavra-passe. De seguida, clique no botão `Ligação`{.action}.
+Aceda à página “[Ligação ao webmail](/links/web/email)” e introduza o seu endereço de e-mail e respetiva palavra-passe. De seguida, clique no botão `Ligação`{.action}.
 
 Ao aceder pela primeira vez ao webmail, deverá definir o idioma da interface e o fuso horário no qual se encontra. A seguir, poderá consultar a sua caixa de entrada. Para obter mais informações, consulte o nosso manual [Utilizar o endereço de e-mail a partir do webmail Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
@@ -180,7 +180,7 @@ Depois de configurar os endereços de e-mail, já os pode utilizar. Para isso, p
 
 ##### **1. Utilizar o webmail RoundCube**
 
-Aceda à página “[Ligação ao webmail](https://www.ovh.pt/mail/)” e introduza o seu endereço de e-mail e respetiva palavra-passe. De seguida, clique no botão `Ligação`{.action}.
+Aceda à página “[Ligação ao webmail](/links/web/email)” e introduza o seu endereço de e-mail e respetiva palavra-passe. De seguida, clique no botão `Ligação`{.action}.
 
 A seguir, poderá consultar a sua caixa de entrada. Para obter mais informações, consulte o nosso manual “[Utilizar um endereço de e-mail a partir do Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube)” (versão em inglês).
 

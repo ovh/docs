@@ -19,7 +19,7 @@ Através da opção "Regras inbox", poderá criar um conjunto elaborado de regra
 
 ### Passo 1: Navegar dentro da secção “Opções”
 
-Aceda à sua conta Exchange através do [webmail OVHcloud](https://www.ovh.pt/mail/). Clique no símbolo da engrenagem na parte superior direita para abrir o menu e selecione `Opções`{.action}.
+Aceda à sua conta Exchange através do [webmail OVHcloud](/links/web/email). Clique no símbolo da engrenagem na parte superior direita para abrir o menu e selecione `Opções`{.action}.
 
 ![inboxrules](images/exchange-rules-step1.png){.thumbnail}
 

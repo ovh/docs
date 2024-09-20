@@ -54,7 +54,7 @@ To check that the account has been correctly configured, you can send a test ema
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVHcloud also offers a web application that includes various collaborative features. You can access this application at <www.ovhcloud.com/en-ca/mail/>. Log in using your email credentials.
+OVHcloud also offers a web application that includes various collaborative features. You can access this application at [Webmail](/links/web/email). Log in using your email credentials.
 
 ## Go further
 

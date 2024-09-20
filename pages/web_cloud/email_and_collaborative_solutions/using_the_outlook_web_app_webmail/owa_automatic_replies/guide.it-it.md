@@ -19,7 +19,7 @@ Questa funzionalità di Exchange consente di impostare risposte automatiche alle
 
 ### Attivare la funzione
 
-Accedi al tuo account Exchange tramite la [Webmail OVHcloud](https://www.ovh.it/mail).
+Accedi al tuo account Exchange tramite la [Webmail OVHcloud](/links/web/email).
 Clicca sull’icona a forma di ingranaggio, in alto a destra, per aprire il menu “Opzioni” e seleziona `Risposte automatiche`{.action}.
 
 ![owaoptions](images/exchange-autorep-step1.png){.thumbnail}

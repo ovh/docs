@@ -30,7 +30,7 @@ Cliquez sur `Créer un groupe de contacts`{.action} afin d’ouvrir une nouvelle
 |Nom|Description|
 |---|---|
 |Adresse e-mail|Une nouvelle adresse pour envoyer des messages à la liste de diffusion. Veuillez à ne pas utiliser une adresse déjà fonctionnelle. |
-|Nom du Groupe|Utilisez le nom apparaissant dans votre [espace client OVHcloud](/links/manager) et dans votre [messagerie Web d’ OVHcloud](https://www.ovh.com/fr/mail/) (OWA).|
+|Nom du Groupe|Utilisez le nom apparaissant dans votre [espace client OVHcloud](/links/manager) et dans votre [messagerie Web d’ OVHcloud](/links/web/email) (OWA).|
 |Taille maximale d’entrée ou de sortie|Vous pouvez spécifier la taille maximale des e-mails entrants et des e-mails sortants.|
 |Masquer dans Outlook|Lorsque cette case est cochée, l’adresse du groupe ne s’affichera pas dans la liste des adresses du service Exchange.|
 |Authentication requise|Lorsque cette case est cochée, seuls les utilisateurs de la même plate-forme pourront envoyer des messages avec l’adresse du groupe.|
@@ -66,7 +66,7 @@ Veuillez noter que chaque modification à ce service peut prendre quelques minut
 
 ### Étape 3 : Ecrivez à un groupe via OWA
 
-Vous pouvez déjà  tester votre liste de diffusion via [la messagerie Web d ’OVHcloud](https://www.ovh.com/fr/mail/) (OWA) Il suffit d’envoyer un e-mail à l’adresse du groupe.
+Vous pouvez déjà  tester votre liste de diffusion via [la messagerie Web d ’OVHcloud](/links/web/email) (OWA) Il suffit d’envoyer un e-mail à l’adresse du groupe.
 
 ![contactgroups](images/exchange-groups-step6.png){.thumbnail}
 

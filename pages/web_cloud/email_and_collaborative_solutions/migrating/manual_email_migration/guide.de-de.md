@@ -17,7 +17,7 @@ Die automatische [Migration](/pages/web_cloud/email_and_collaborative_solutions/
 > [!warning]
 >In dieser Anleitung erläutern wir die Verwendung einer oder mehrerer OVHcloud Lösungen mit externen Tools. Die durchgeführten Aktionen werden in einem bestimmten Kontext beschrieben. Denken Sie daran, diese an Ihre Situation anzupassen.
 >
-Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder stellen Ihre Fragen in der OVHcloud Community unter https://community.ovh.com/. Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten. 
+Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister](/links/partner) und/oder stellen Ihre Fragen in der OVHcloud Community unter https://community.ovh.com/. Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten. 
 >
 
 ## Voraussetzungen
@@ -224,7 +224,7 @@ Sie finden das Fenster zur Auswahl Ihres Profils mit Ihrem neuen ausgewählten P
 
 Wenn Sie die Import-Schritte befolgt haben, überprüfen Sie, ob Ihre Elemente auf dem Server vorhanden sind.
 
-Loggen Sie sich im [Webmail](https://www.ovh.de/mail/) ein.
+Loggen Sie sich im [Webmail](/links/web/email) ein.
 
 In Ihrem Posteingang und in der linken Spalte finden Sie die Ordner und E-Mails Ihrer gesicherten E-Mail-Adresse.
 

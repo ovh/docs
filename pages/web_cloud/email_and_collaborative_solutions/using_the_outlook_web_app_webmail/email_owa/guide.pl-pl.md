@@ -10,7 +10,7 @@ updated: 2024-09-03
 
 ## Wprowadzenie
 
-Dzięki rozwiązaniom poczty elektronicznej OVHcloud można wysyłać oraz odbierać e-maile przy użyciu wybranego urządzenia i klienta poczty. Aby umożliwić dostęp do konta z dowolnego miejsca przy użyciu przeglądarki, OVHcloud udostępnia klient poczty e-mail online o nazwie Outlook Web App (OWA). [Strona logowania do interfejsu webmail](https://www.ovh.pl/mail/) zapewnia dostęp do odpowiednich interfejsów OWA dla wszystkich aktywnych kont e-mail w ramach usług MX Plan, E-mail Pro i Hosted Exchange.
+Dzięki rozwiązaniom poczty elektronicznej OVHcloud można wysyłać oraz odbierać e-maile przy użyciu wybranego urządzenia i klienta poczty. Aby umożliwić dostęp do konta z dowolnego miejsca przy użyciu przeglądarki, OVHcloud udostępnia klient poczty e-mail online o nazwie Outlook Web App (OWA). [Strona logowania do interfejsu webmail](/links/web/email) zapewnia dostęp do odpowiednich interfejsów OWA dla wszystkich aktywnych kont e-mail w ramach usług MX Plan, E-mail Pro i Hosted Exchange.
 
 **Dowiedz się, jak wykonać typowe działania dotyczące adresu e-mail w interfejsie OWA.**
 
@@ -30,7 +30,7 @@ Ten przewodnik zawiera informacje o zwykłych zadaniach dotyczących konta e-mai
 
 ### 1. Dostęp do interfejsu OWA webmail
 
-Aby zalogować się do interfejsu OWA webmail przy użyciu swojego adresu e-mail, przejdź do ogólnej [strony logowania do interfejsu webmail](https://www.ovh.pl/mail/). Wpisz pełny adres e-mail i hasło, a następnie kliknij przycisk `Zaloguj`{.action}.
+Aby zalogować się do interfejsu OWA webmail przy użyciu swojego adresu e-mail, przejdź do ogólnej [strony logowania do interfejsu webmail](/links/web/email). Wpisz pełny adres e-mail i hasło, a następnie kliknij przycisk `Zaloguj`{.action}.
 
 ![useowa](images/use-owa-step1.png){.thumbnail}
 

@@ -225,7 +225,7 @@ A continuación, encontrará la ventana de selección de su perfil con el nuevo 
 
 Cuando haya hecho lo necesario siguiendo las instrucciones de importación, compruebe que los elementos estén presentes en el servidor.
 
-Conéctese al [webmail](https://www.ovh.com/world/es/mail/).
+Conéctese al [webmail](/links/web/email).
 
 En el bandeja de entrada y en la columna de la izquierda encontrará las carpetas y los mensajes de correo electrónico de la dirección de correo electrónico que haya guardado.
 

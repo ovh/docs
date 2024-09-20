@@ -17,7 +17,7 @@ If you have activated an OVHcloud web hosting plan, you can have email addresses
 
 ## Instructions
 
-Once the MX Plan solution is created and available, you can manage it from the [OVHcloud Control Panel](/links/manager). Depending on its activation date or if [it has been migrated recently](https://www.ovh.co.uk/mxplan-migration/), you may have the old or new version of the solution. You will need to check this before you proceed any further. 
+Once the MX Plan solution is created and available, you can manage it from the [OVHcloud Control Panel](/links/manager). Depending on its activation date or if it has been migrated recently, you may have the old or new version of the solution. You will need to check this before you proceed any further. 
 
 To do this, log in to the [OVHcloud Control Panel](/links/manager), and go to the `Web Cloud`{.action} section. Click `Emails`{.action}, and then choose the name of the MX Plan service concerned. Then you can proceed in accordance with the version you are using.
 
@@ -60,7 +60,7 @@ Once you have configured your email addresses, you can start using them straight
 
 ##### 1. Use Outlook Web App (OWA) webmail.
 
-Go to the [Webmail login](https://www.ovh.com/sg/mail/) page, then enter the email address and password. Then click the `Login`{.action} button.
+Go to the [Webmail login](/links/web/email) page, then enter the email address and password. Then click the `Login`{.action} button.
 
 When you first log in to webmail, you will be prompted to set the interface language, and the time zone you are in. Your inbox will then appear. To find out how to use your email address via OWA webmail, you can refer to our [Outlook Web App user guide](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
@@ -129,7 +129,7 @@ Once you have configured your email addresses, you can start using them straight
 
 ##### 1. Use the Roundcube webmail interface.
 
-Go to the [Webmail login](https://www.ovh.com/sg/mail/) page, then enter the email address and password. Then click the `Login`{.action} button. Your inbox will appear.
+Go to the [Webmail login](/links/web/email) page, then enter the email address and password. Then click the `Login`{.action} button. Your inbox will appear.
 
 ![email](images/mxplan-starter-legacy-step4.png){.thumbnail}
 

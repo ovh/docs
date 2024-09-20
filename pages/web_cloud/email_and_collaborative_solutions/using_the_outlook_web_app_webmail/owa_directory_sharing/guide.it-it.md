@@ -24,7 +24,7 @@ Non è sempre opportuno delegare l’utilizzo di un intero account di posta elet
 
 ### Step 1: definisci diritti di accesso per una cartella
 
-Accedi al tuo account Exchange tramite la [Webmail OVHcloud](https://www.ovh.it/mail) Dal menu contestuale, clicca con il tasto destro su una delle cartelle da condividere e poi seleziona `Permessi di condivisione`{.action}.
+Accedi al tuo account Exchange tramite la [Webmail OVHcloud](/links/web/email) Dal menu contestuale, clicca con il tasto destro su una delle cartelle da condividere e poi seleziona `Permessi di condivisione`{.action}.
 
 ![sharefolder](images/exchange-folder-step1.png){.thumbnail}
 
@@ -85,7 +85,7 @@ Nell’interfaccia successiva, clicca sul simbolo`+`{.action} per aggiungere un 
 
 ![sharefolder](images/exchange-folder-step3.png){.thumbnail}
 
-Accedi al tuo account Exchange tramite la [Webmail OVHcloud](https://www.ovh.it/mail) Clicca con il tasto destro sul nome del tuo account nella barra di navigazione a sinistra e seleziona `Aggiungi una cartella condivisa`{.action}dal menu contestuale. Nella nuova pagina, indica il nome dell’account da cui è stata condivisa la cartella. Inizia a digitare per visualizzare i suggerimenti di contatto. Inserisci un indirizzo email completo oppure utilizza la `Directory di ricerca`{.action}. Clicca su `Aggiungi`{.action} per confermare. La nuova cartella condivisa apparirà immediatamente sotto le altre cartelle.
+Accedi al tuo account Exchange tramite la [Webmail OVHcloud](/links/web/email) Clicca con il tasto destro sul nome del tuo account nella barra di navigazione a sinistra e seleziona `Aggiungi una cartella condivisa`{.action}dal menu contestuale. Nella nuova pagina, indica il nome dell’account da cui è stata condivisa la cartella. Inizia a digitare per visualizzare i suggerimenti di contatto. Inserisci un indirizzo email completo oppure utilizza la `Directory di ricerca`{.action}. Clicca su `Aggiungi`{.action} per confermare. La nuova cartella condivisa apparirà immediatamente sotto le altre cartelle.
 
 ## Per saperne di più
 

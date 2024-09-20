@@ -107,7 +107,7 @@ Estos encabezados permiten determinar el rastro de la ruta y el origen de los me
 
 ## Más información <a name="go-further"></a>
 
-Para servicios especializados (posicionamiento web, desarrollo...), póngase en contacto con los [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
+Para servicios especializados (posicionamiento web, desarrollo...), póngase en contacto con los [partners de OVHcloud](/links/partner).
 
 Si desea ayuda para el uso y la configuración de sus soluciones de OVHcloud, consulte nuestras distintas [ofertas de soporte](/links/support).
 

@@ -12,7 +12,7 @@ updated: 2023-08-29
 
 ## Requirements
 
-- An email service with OVHcloud: [Exchange](/links/web/emails) or MX Plan (via the MX Plan or included in an [OVHcloud Web Hosting](https://www.ovhcloud.com/en-us/web-hosting/))
+- An email service with OVHcloud: [Exchange](/links/web/emails) or MX Plan (via the MX Plan or included in an [OVHcloud Web Hosting](/links/web/hosting))
 - Login details for the email accounts you want to migrate (the source accounts)
 - Login details for the OVHcloud email accounts that will be receiving the migrated data (the destination accounts)
 

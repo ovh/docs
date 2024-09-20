@@ -21,7 +21,7 @@ Avec l’option « Règles de gestion de la boîte de réception », vous pouvez
 
 ### Étape 1 : Accéder à la section Options
 
-Connectez-vous à votre compte Exchange via le webmail [OVHcloud](https://www.ovh.com/fr/mail/). Cliquez sur l’icône de réglages en haut à droite pour afficher le menu « Options » et sélectionnez `Options`{.action}.
+Connectez-vous à votre compte Exchange via le webmail [OVHcloud](/links/web/email). Cliquez sur l’icône de réglages en haut à droite pour afficher le menu « Options » et sélectionnez `Options`{.action}.
 
 ![règles boîte de réception](images/exchange-rules-step1.png){.thumbnail}
 

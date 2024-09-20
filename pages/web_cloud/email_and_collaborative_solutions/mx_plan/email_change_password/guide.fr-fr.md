@@ -16,7 +16,7 @@ Les comptes e-mail de votre offre OVHcloud sont accessibles grâce au mot de pas
 ## Prérequis
 
 - Disposer d'une solution e-mail OVHcloud préalablement configurée (**MX Plan**, proposée parmi nos [offres d’hébergement web](/links/web/hosting), incluse dans un [hébergement gratuit 100M](/links/web/domains-free-hosting) ou commandée séparément comme solution autonome, telle que [**Hosted Exchange**](/links/web/emails-hosted-exchange) ou [**Email Pro**](/links/web/email-pro)).
-- Selon la méthode que vous utilisez : être connecté à l'[espace client OVHcloud](/links/manager) dans la partie `Web Cloud`{.action}, ou être connecté à l'adresse e-mail depuis le [webmail](https://www.ovh.com/fr/mail/).
+- Selon la méthode que vous utilisez : être connecté à l'[espace client OVHcloud](/links/manager) dans la partie `Web Cloud`{.action}, ou être connecté à l'adresse e-mail depuis le [webmail](/links/web/email).
 
 > [!primary]
 >
@@ -79,7 +79,7 @@ La modification de votre mot de passe via le webmail est disponible pour les off
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/z1D2wc7XWX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Accédez à la page « [Webmail](https://www.ovhcloud.com/fr/mail/) ». Sur celle-ci, renseignez votre adresse e-mail complète, ainsi que son mot de passe actuel. Cliquez ensuite sur le bouton `Connexion`{.action}. 
+Accédez à la page « [Webmail](/links/web/email) ». Sur celle-ci, renseignez votre adresse e-mail complète, ainsi que son mot de passe actuel. Cliquez ensuite sur le bouton `Connexion`{.action}. 
 
 ![email](images/mxplan-password-new-step2.png){.thumbnail}
 

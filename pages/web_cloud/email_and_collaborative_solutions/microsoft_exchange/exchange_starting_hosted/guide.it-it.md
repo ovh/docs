@@ -148,7 +148,7 @@ Nello [Spazio Cliente OVHcloud](/links/manager) OVHcloud è possibile attivare l
 
 Per sottoscrivere, consulta la pagina "[Ottieni una licenza Outlook per Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/office_outlook_license)".
 
-Le licenze Office 365 sono disponibili anche alla pagina <https://www.ovhcloud.com/it/collaborative-tools/microsoft-365/>. Per utilizzare un client di posta Outlook o una o più applicazioni della suite Office, ti consigliamo di optare per una di queste soluzioni.
+Le licenze Office 365 sono disponibili anche alla pagina [Microsoft 365](/links/web/ms365). Per utilizzare un client di posta Outlook o una o più applicazioni della suite Office, ti consigliamo di optare per una di queste soluzioni.
 
 > [!primary]
 >

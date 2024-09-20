@@ -14,7 +14,7 @@ updated: 2021-01-05
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Retrouvez plus d'informations dans la section « Aller plus loin » de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Retrouvez plus d'informations dans la section « Aller plus loin » de ce guide.
 >
 
 ## Prérequis
@@ -40,7 +40,7 @@ Les instructions qui suivent sont décomposées en deux parties :
 
 Si vous possédez un compte e-mail [Exchange OVHcloud](/links/web/emails-hosted-exchange), il est possible de l'exporter directement au format PST depuis l'espace client.
 
-Connectez vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) puis dirigez-vous dans la section `Web Cloud`{.action}. Sélectionnez `Microsoft`{.action}, puis `Exchange`{.action}. Cliquez sur le nom du service Hosted Exchange concerné.
+Connectez vous à votre [espace client OVHcloud](/links/manager) puis dirigez-vous dans la section `Web Cloud`{.action}. Sélectionnez `Microsoft`{.action}, puis `Exchange`{.action}. Cliquez sur le nom du service Hosted Exchange concerné.
 
 Dans l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} à droite du compte e-mail à exporter, puis sur `Exporter au format PST`{.action}.
 
@@ -221,7 +221,7 @@ Vous retrouvez la fenêtre de choix de votre profil avec votre nouveau profil s�
 
 Lorsque vous avez fait le nécessaire en suivant les instructions d'importation, vérifiez que vos éléments sont bien présents sur le serveur.
 
-Connectez-vous au [webmail](https://www.ovh.com/ca/fr/mail/).
+Connectez-vous au [webmail](/links/web/email).
 
 Vous retrouverez dans votre boite de réception et dans la colonne de gauche les dossiers et e-mails de votre adresse e-mail sauvegardée.
 

@@ -35,7 +35,7 @@ Kliknij przycisk `Dodaj konto zasobów`{.action}, aby utworzyć pierwszy zasób.
 |Nazwa|Opis|
 |---|---|
 |E-mail dotyczący zasobu|Wprowadź adres zasobu. Pamiętaj, że nie możesz wybrać istniejącego konta e-mail.|
-|Nazwa zasobu|Pełna nazwa wyświetlana jest w [Panelu klienta OVHcloud](/links/manager) i [w interfejsie Webmail OVHcloud](https://www.ovh.pl/mail/) (OWA).|
+|Nazwa zasobu|Pełna nazwa wyświetlana jest w [Panelu klienta OVHcloud](/links/manager) i [w interfejsie Webmail OVHcloud](/links/web/email) (OWA).|
 |Rozmiar|Można określić maksymalny rozmiar zasobu (np. liczba miejsc siedzących w pomieszczeniu lub siedzeń wspólnego pojazdu).|
 |Pozwól na konflikty|Jeśli to pole jest zaznaczone, możesz utworzyć zdarzenia kalendarza pokrywające się i obejmujące ten sam zasób.|
 |Rodzaj zasobów|Wybierz rodzaj zasobów: "Sprzęt" lub "Sala".|
@@ -55,7 +55,7 @@ Możesz zarządzać zasobami, korzystając z tabeli w zakładce "Zasoby". Klikni
 Zapoznaj się również z naszym przewodnikiem dotyczącym [Współdzielenia kalendarzy w interfejsie OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_calendar_sharing).
 >
 
-Zaloguj się do konta Exchange przez [webmail OVHcloud](https://www.ovh.pl/mail/). Przejdź do interfejsu "Harmonogram", klikając "przycisk aplikacji" w lewym górnym rogu, a następnie wybierając ikonę `Kalendarz`{.action}.
+Zaloguj się do konta Exchange przez [webmail OVHcloud](/links/web/email). Przejdź do interfejsu "Harmonogram", klikając "przycisk aplikacji" w lewym górnym rogu, a następnie wybierając ikonę `Kalendarz`{.action}.
 
 ![dodaj](images/exchange-calendars-step1.png){.thumbnail}
 

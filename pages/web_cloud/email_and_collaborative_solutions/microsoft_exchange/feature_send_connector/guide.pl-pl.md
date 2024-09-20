@@ -46,7 +46,7 @@ Poniżej przedstawiamy kontekst dla powyższego schematu:
 
 ## Wymagania początkowe
 
-- Wykupienie platformy [Private Exchange OVHcloud](/links/web/emails-private-exchange) lub [Trusted Exchange OVHcloud](https://www.ovhcloud.com/pl/enterprise/products/trusted-exchange/).
+- Wykupienie platformy [Private Exchange OVHcloud](/links/web/emails-private-exchange) lub [Trusted Exchange OVHcloud](/links/web/emails-trusted-exchange).
 - Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Zalogowanie do [API OVHcloud](https://api.ovh.com/).
 - Posiadanie parametrów niezbędnych do skonfigurowania łącznika przesyłania. Skontaktuj się z dostawcą, który dostarcza Ci usługę.
@@ -69,7 +69,7 @@ W tym przewodniku znajdziesz również inne przydatne operacje dotyczące łącz
 
 > [!warning]
 >
-> Dodanie łącznika wysyłki jest zarezerwowane i zaplanowane dla ofert [Private Exchange OVHcloud](/links/web/emails-private-exchange) i [Trusted Exchange OVHcloud](https://www.ovhcloud.com/pl/enterprise/products/trusted-exchange/). Jeśli włączysz łącznik przesyłania w ofercie Exchange OVHcloud innej niż wyżej wymieniona, może to spowodować wyłączenie go przez naszych administratorów w dowolnym momencie ze względów bezpieczeństwa.
+> Dodanie łącznika wysyłki jest zarezerwowane i zaplanowane dla ofert [Private Exchange OVHcloud](/links/web/emails-private-exchange) i [Trusted Exchange OVHcloud](/links/web/emails-trusted-exchange). Jeśli włączysz łącznik przesyłania w ofercie Exchange OVHcloud innej niż wyżej wymieniona, może to spowodować wyłączenie go przez naszych administratorów w dowolnym momencie ze względów bezpieczeństwa.
 
 Przed rozpoczęciem przygotuj poniższe informacje. Są one dostarczane przez dostawcę łącznika nadawczego.
 
@@ -326,7 +326,7 @@ Otrzymasz następujący wynik:
 
 [Dodanie domeny do usługi Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 

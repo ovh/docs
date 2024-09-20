@@ -225,7 +225,7 @@ Puoi trovare la finestra di scelta del tuo profilo con il tuo nuovo profilo sele
 
 Verifica che i tuoi elementi siano presenti sul server quando hai effettuato l'operazione giusta seguendo le istruzioni d'importazione.
 
-Accedi alla [Webmail](https://www.ovh.it/mail/).
+Accedi alla [Webmail](/links/web/email).
 
 Nella casella di ricezione e nella colonna di sinistra, troverai le cartelle e le email del tuo indirizzo email salvato.
 

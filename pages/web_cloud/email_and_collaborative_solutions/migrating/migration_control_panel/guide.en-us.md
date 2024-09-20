@@ -133,7 +133,7 @@ For more information on OMM, please read our guide on [Migrating email accounts 
 
 The migration time depends on the amount of content to migrate to your new account. This may vary from a few minutes to several hours.
 
-Check that you can find your items after the migration, by logging into OVHcloud [webmail](https://www.ovh.com/world/mail/).
+Check that you can find your items after the migration, by logging into OVHcloud [webmail](/links/web/email).
 
 You can keep or delete the original account with the temporary name after this migration.
 

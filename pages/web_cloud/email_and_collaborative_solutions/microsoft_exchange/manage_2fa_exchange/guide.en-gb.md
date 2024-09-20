@@ -47,7 +47,7 @@ Go to the `Email accounts`{.action} tab and click on `...`{.action} to the right
 
 ![2fa-exchange](images/2fa-exchange-01.png){.thumbnail}
 
-To link the Exchange account to your OTP app, log in to your [webmail](https://www.ovh.co.uk/mail/).
+To link the Exchange account to your OTP app, log in to your [webmail](/links/web/email).
 
 At the first attempt to log in, a QR code will appear. Use your OTP app to scan it, then enter the code that the app generates to log in.
 

@@ -145,7 +145,7 @@ OVHcloud propose, depuis l'[espace client OVHcloud](/links/manager), des licence
 
 Pour y souscrire, consultez notre page « [Obtenir une licence Outlook pour Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/office_outlook_license) ».
 
-Vous pouvez également obtenir des [licences Office 365 sur notre site](https://www.ovhcloud.com/fr/collaborative-tools/microsoft-365/). Nous vous recommandons l'une de ces solutions si vous souhaitez bénéficier du logiciel de messagerie Outlook ou de plus de logiciels de la suite Office, selon vos besoins.
+Vous pouvez également obtenir des [licences Office 365 sur notre site](/links/web/ms365). Nous vous recommandons l'une de ces solutions si vous souhaitez bénéficier du logiciel de messagerie Outlook ou de plus de logiciels de la suite Office, selon vos besoins.
 
 > [!primary]
 >

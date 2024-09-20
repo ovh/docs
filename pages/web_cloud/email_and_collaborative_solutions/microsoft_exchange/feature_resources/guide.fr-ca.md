@@ -13,12 +13,12 @@ Cette fonction collaborative de Exchange permet de créer des adresses de messag
 ## Prérequis
 
 - Disposer d'une [solution Exchange OVHcloud](/links/web/emails-hosted-exchange) déjà configurée
-- Être connecté votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
+- Être connecté votre [espace client OVHcloud](/links/manager)
 - Disposer des identifiants de connexion pour le ou les comptes de messagerie ayant accès à la ressource
 
 ## En pratique
 
-Connectez-vous à votre  [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et sélectionnez `Web Cloud`{.action} dans la barre de navigation supérieure. Cliquez sur `Microsoft`{.action}, puis sur `Exchange`{.action}. Sélectionnez ensuite le service Exchange concerné. Cliquez sur l'onglet `Plus +`{.action} , puis sur `Ressources`{.action}.
+Connectez-vous à votre  [espace client OVHcloud](/links/manager) et sélectionnez `Web Cloud`{.action} dans la barre de navigation supérieure. Cliquez sur `Microsoft`{.action}, puis sur `Exchange`{.action}. Sélectionnez ensuite le service Exchange concerné. Cliquez sur l'onglet `Plus +`{.action} , puis sur `Ressources`{.action}.
 
 ### Étape 1 : créer une ressource
 
@@ -31,7 +31,7 @@ Cliquez sur le bouton `Ajouter un compte de ressource`{.action} pour créer votr
 |Nom|Description|
 |---|---|
 |E-mail de la ressource|Entrez l'adresse de la ressource. Notez que vous ne pouvez pas choisir une adresse de messagerie existante.|
-|Nom de la ressource|Nom complet qui apparaît dans votre  [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et dans [le webmail OVHcloud](https://www.ovh.com/ca/fr/mail/) (OWA).|
+|Nom de la ressource|Nom complet qui apparaît dans votre  [espace client OVHcloud](/links/manager) et dans [le webmail OVHcloud](/links/web/email) (OWA).|
 |Capacité|Vous pouvez définir la taille maximale d'une ressource (en spécifiant par exemple le nombre de places assises d'une pièce ou les sièges d'un véhicule de société partagé).|
 |Permettre les conflits|Si cette case est cochée, vous pourrez créer des événements de calendrier se chevauchant et impliquant la même ressource.|
 |Type de ressource|Choisissez le type de ressource: « Équipement » ou « Salle ».|
@@ -51,7 +51,7 @@ Vos ressources peuvent être gérées à partir du tableau de l'onglet « Ressou
 Consultez également notre guide sur le [Partage de calendriers depuis l'interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_calendar_sharing).
 >
 
-Connectez-vous à votre compte Exchange via le [webmail OVHcloud](https://www.ovh.com/ca/fr/mail/). Basculez vers l'interface « Calendrier » en cliquant sur le « lanceur d'application » dans le coin supérieur gauche, puis en sélectionnant l'icône `Calendrier`{.action}.
+Connectez-vous à votre compte Exchange via le [webmail OVHcloud](/links/web/email). Basculez vers l'interface « Calendrier » en cliquant sur le « lanceur d'application » dans le coin supérieur gauche, puis en sélectionnant l'icône `Calendrier`{.action}.
 
 ![ajouter calendrier](images/exchange-calendars-step1.png){.thumbnail}
 

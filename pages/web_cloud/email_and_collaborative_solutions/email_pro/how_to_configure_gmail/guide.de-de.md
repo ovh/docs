@@ -91,7 +91,7 @@ Nachdem Sie die Informationen ausgefüllt haben, setzen Sie einen Haken bei `Sic
 
 ![emailpro](images/configuration-gmail-web-step5.png){.thumbnail}
 
-Jetzt müssen Sie nur noch das Hinzufügen des Accounts bestätigen, indem Sie den Bestätigungscode eingeben, der an Ihre OVHcloud E-Mail Pro Adresse versandt wurde. Loggen Sie sich hierzu wie gewohnt in unserem [Webinterface](https://www.ovh.de/mail/) ein.
+Jetzt müssen Sie nur noch das Hinzufügen des Accounts bestätigen, indem Sie den Bestätigungscode eingeben, der an Ihre OVHcloud E-Mail Pro Adresse versandt wurde. Loggen Sie sich hierzu wie gewohnt in unserem [Webinterface](/links/web/email) ein.
 
 Nach der Bestätigung erscheint Ihre OVHcloud E-Mail Pro Adresse im Tab `Konten und Import`{.action}, auf den Sie zu Beginn der Änderung zugegriffen haben.
 

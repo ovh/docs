@@ -21,7 +21,7 @@ Mit der MX Plan Lösung verfügen Sie über E-Mail-Adressen, mit denen Sie Nachr
 
 ## In der praktischen Anwendung <a name="instructions"></a>
 
-Sobald der MX Plan erstellt und verfügbar ist, können Sie ihn über Ihr [OVHcloud Kundencenter](/links/manager) verwalten. Je nach Aktivierungsdatum oder falls Ihr Dienst [vor Kurzem migriert wurde](https://www.ovh.de/mxplan-migration/), verfügen Sie entweder über den MX Plan *Legacy* oder die neue MX Plan Version. Bevor Sie fortfahren, ermitteln Sie zunächst Ihre Angebotsversion.
+Sobald der MX Plan erstellt und verfügbar ist, können Sie ihn über Ihr [OVHcloud Kundencenter](/links/manager) verwalten. Je nach Aktivierungsdatum oder falls Ihr Dienst vor Kurzem migriert wurde, verfügen Sie entweder über den MX Plan *Legacy* oder die neue MX Plan Version. Bevor Sie fortfahren, ermitteln Sie zunächst Ihre Angebotsversion.
 
 Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie auf `E-Mails`{.action} und wählen Sie den Namen Ihres MX Plans. Fahren Sie entsprechend Ihrer MX Plan Version fort.
 
@@ -64,7 +64,7 @@ Sobald Ihre E-Mail-Accounts angelegt wurden, können Sie diese verwenden. Hierf�
 
 ##### **1. Webmail (OWA) verwenden**
 
-Gehen Sie zum [Webmail-Login](https://www.ovh.de/mail/) und geben Sie die betreffende E-Mail-Adresse sowie das zugehörige Passwort ein. Klicken Sie anschließend auf den Button `Login`{.action}.
+Gehen Sie zum [Webmail-Login](/links/web/email) und geben Sie die betreffende E-Mail-Adresse sowie das zugehörige Passwort ein. Klicken Sie anschließend auf den Button `Login`{.action}.
 
 Beim ersten Login werden Sie aufgefordert, die Sprache sowie Ihre Zeitzone festzulegen. Daraufhin wird Ihr Posteingang angezeigt. Weitere Informationen zur Verwendung Ihrer E-Mail-Adresse finden Sie in unserer Anleitung zur [Verwendung Ihrer E-Mail-Adresse mit OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
@@ -176,7 +176,7 @@ Sobald Ihre E-Mail-Adressen angelegt wurden, können Sie diese verwenden. Hierf�
 
 ##### **1. Webmail (RoundCube) verwenden**
 
-Gehen Sie zum [Webmail-Login](https://www.ovh.de/mail/) und geben Sie die betreffende E-Mail-Adresse sowie das zugehörige Passwort ein. Klicken Sie anschließend auf den Button `Login`{.action}.
+Gehen Sie zum [Webmail-Login](/links/web/email) und geben Sie die betreffende E-Mail-Adresse sowie das zugehörige Passwort ein. Klicken Sie anschließend auf den Button `Login`{.action}.
 
 Daraufhin wird Ihr Posteingang angezeigt. Weitere Informationen zur Verwendung Ihres E-Mail-Accounts finden Sie in unserer Anleitung zur [Verwendung von RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube)“.
 

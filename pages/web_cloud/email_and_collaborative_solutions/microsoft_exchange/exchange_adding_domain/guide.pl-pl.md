@@ -113,7 +113,7 @@ Po skonfigurowaniu Twoich kont możesz zacząć ich używać. W tym celu OVHclou
 
 Jeśli chcesz skonfigurować Twoje konto e-mail w programie pocztowym lub urządzeniu typu smartfon lub tablet lub uzyskać pomoc w zakresie funkcji usługi e-mail, skorzystaj z naszej dokumentacji dostępnej na stronach [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) i [E-mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro).
 
-Licencje Outlook możesz uzyskać w [Panelu klienta OVHcloud](/links/manager) i licencje Office 365 na stronie <https://www.ovhcloud.com/pl/collaborative-tools/microsoft-365/>. Zalecamy skorzystanie z jednego z tych rozwiązań, jeśli chcesz używać programu pocztowego Outlook lub innych programów Office.
+Licencje Outlook możesz uzyskać w [Panelu klienta OVHcloud](/links/manager) i licencje Office 365 na stronie [Microsoft 365](/links/web/ms365). Zalecamy skorzystanie z jednego z tych rozwiązań, jeśli chcesz używać programu pocztowego Outlook lub innych programów Office.
 
 ### Usuń domenę z platformy
 
@@ -149,7 +149,7 @@ W zakładce `Przypisane domeny`{.action} na Twojej platformie kliknij przycisk `
 
 [Modyfikacja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
+Skontaktuj się z [partnerami OVHcloud](/links/partner), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i korzystania z rozwiązań OVHcloud, sprawdź naszą [ofertę pomocy](/links/support)
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

@@ -47,7 +47,7 @@ Wechseln Sie zu Tab `E-Mail-Accounts`{.action}. Klicken Sie auf `...`{.action} r
 
 ![2fa-exchange](images/2fa-exchange-01.png){.thumbnail}
 
-Um Ihr Konto mit Ihrer OTP-App zu verknüpfen, loggen Sie sich in den betreffenden Account über [Webmail](https://www.ovh.de/mail/) ein.
+Um Ihr Konto mit Ihrer OTP-App zu verknüpfen, loggen Sie sich in den betreffenden Account über [Webmail](/links/web/email) ein.
 
 Während dieses ersten Logins wird ein QR-Code angezeigt. Verwenden Sie Ihre OTP-App, um ihn zu scannen, und geben Sie dann den von der App generierten Zahlencode ein, um die Verbindung herzustellen.
 

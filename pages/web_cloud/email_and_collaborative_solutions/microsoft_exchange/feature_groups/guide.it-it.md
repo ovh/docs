@@ -30,7 +30,7 @@ Quindi clicca su `Crea un gruppo di contatti`{.action}. A questo punto, si apre 
 |Nome|Descrizione|
 |---|---|
 |Indirizzo email|Il nuovo indirizzo email per inviare messaggi alla Mailing List. Attenzione: non utilizzare un indirizzo email già esistente.|
-|Nome del gruppo|Il nome che appare nel tuo [Spazio Cliente OVHcloud](/links/manager) e nella [Webmail OVHcloud](https://www.ovh.it/mail/) (OWA).|
+|Nome del gruppo|Il nome che appare nel tuo [Spazio Cliente OVHcloud](/links/manager) e nella [Webmail OVHcloud](/links/web/email) (OWA).|
 |Dimensione massima di entrata/uscita|Puoi specificare la dimensione massima dei messaggi in entrata e in uscita.|
 |Nascondi in Outlook|Se spunti questa casella, l’indirizzo email del gruppo non apparirà nella lista degli indirizzi del servizio Exchange.|
 |Autenticazione richiesta|Se spunti questa casella, solo gli utenti della stessa piattaforma potranno inviare un messaggio tramite l’indirizzo email del gruppo.|
@@ -66,7 +66,7 @@ Attenzione: qualsiasi modifica del servizio diventerà effettiva dopo alcuni min
 
 ### Step 3: invia messaggi a un gruppo con la Webmail OWA
 
-Per verificare la tua Mailing List tramite [OVHcloud Webmail](https://www.ovh.it/mail)(OWA) invia un’email all’indirizzo del gruppo.
+Per verificare la tua Mailing List tramite [OVHcloud Webmail](/links/web/email)(OWA) invia un’email all’indirizzo del gruppo.
 
 ![contactgroups](images/exchange-groups-step6.png){.thumbnail}
 

@@ -47,7 +47,7 @@ Desde su plataforma Exchange, acceda a la pestaña `Cuentas de correo`{.action}.
 
 ![2fa-exchange](images/2fa-exchange-01.png){.thumbnail}
 
-Para asociar su cuenta a su aplicación OTP, inicie sesión en su [correo electrónico basado en la web](https://www.ovh.com/fr/mail/).
+Para asociar su cuenta a su aplicación OTP, inicie sesión en su [correo electrónico basado en la web](/links/web/email).
 
 Al conectarse por primera vez, aparece un código QR. Utilice la aplicación OTP para escanearlo e introduzca el código que la aplicación generó para conectarse.
 

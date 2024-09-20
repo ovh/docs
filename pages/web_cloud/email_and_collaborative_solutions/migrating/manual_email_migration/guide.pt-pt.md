@@ -18,7 +18,7 @@ updated: 2021-01-05
 >
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 >
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção deste manual intitulada: "Quer saber mais?"
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](/links/partner) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção deste manual intitulada: "Quer saber mais?"
 >
 
 ## Requisitos
@@ -225,7 +225,7 @@ Poderá encontrar a janela de escolha do seu perfil com o seu novo perfil seleci
 
 Quando tiver feito o necessário seguindo as instruções de importação, verifique se os seus elementos estão presentes no servidor.
 
-Ligue-se ao [webmail](https://www.ovh.pt/mail/).
+Ligue-se ao [webmail](/links/web/email).
 
 Na caixa de entrada e na coluna da esquerda, irá encontrar as pastas e os e-mails do seu endereço de e-mail guardado.
 

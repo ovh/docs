@@ -113,7 +113,7 @@ Una volta completata la configurazione, puoi iniziare a utilizzare i tuoi accoun
 
 Per configurare un account email su un client di posta o un dispositivo come smartphone o tablet o ottenere assistenza sulle funzionalità del tuo servizio di posta, consulta la documentazione disponibile sulle pagine [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) ed [Email Pro](/products/web-cloud-email-collaborative-solutions-email-pro).
 
-Le licenze Outlook sono disponibili nello [Spazio Cliente OVHcloud](/links/manager) e le licenze Office 365 sono disponibili alla pagina <https://www.ovhcloud.com/it/collaborative-tools/microsoft-365/>. Per utilizzare un client di posta Outlook o una o più applicazioni della suite Office, ti consigliamo di optare per una di queste soluzioni.
+Le licenze Outlook sono disponibili nello [Spazio Cliente OVHcloud](/links/manager) e le licenze Office 365 sono disponibili alla pagina [Microsoft 365](/links/web/ms365). Per utilizzare un client di posta Outlook o una o più applicazioni della suite Office, ti consigliamo di optare per una di queste soluzioni.
 
 ### Elimina un dominio da una piattaforma
 
@@ -149,7 +149,7 @@ Dalla scheda `Domini associati`{.action} della tua piattaforma, clicca sul pulsa
 
 [Modifica una zona DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [soluzioni di supporto](/links/support)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

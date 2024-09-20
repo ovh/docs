@@ -103,7 +103,7 @@ Once you have finished configuring your accounts, you can now start using them. 
 
 If you need help with configuring your email account on an email client or a device (e.g. a smartphone or tablet) or have questions about email service features, please refer to our documentation which you can access from the [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) pages.
 
-You can purchase Outlook licences in the [OVHcloud Control Panel](/links/manager), and Office 365 licences on the following page: <https://www.ovhcloud.com/en-ca/collaborative-tools/microsoft-365/>.
+You can purchase Outlook licences in the [OVHcloud Control Panel](/links/manager), and Office 365 licences on the following page: [Microsoft 365](/links/web/ms365).
 
 We recommend using one of these solutions if you would like to use the Outlook email client, or other software from the Microsoft Office suite.
 
@@ -141,7 +141,7 @@ In the `Associated domains`{.action} tab for your platform, click on the `...`{.
 
 [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ca/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

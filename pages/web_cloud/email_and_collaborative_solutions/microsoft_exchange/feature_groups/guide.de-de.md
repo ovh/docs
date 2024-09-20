@@ -30,7 +30,7 @@ Wenn Sie auf `Kontaktgruppe erstellen`{.action} klicken, öffnet sich ein neues 
 |Name|Beschreibung|
 |---|---|
 |E-Mail-Adresse|Die neue Adresse, von der aus Nachrichten an die Mailingliste gesendet werden. Bitte beachten Sie, dass Sie keine existierende E-Mail-Adresse eingeben können.|
-|Name der Gruppe|Der Anzeigename, der in Ihrem [OVHcloud Kundencenter](/links/manager) und in [OVHcloud Webmail](https://www.ovh.de/mail) (OWA) erscheint.|
+|Name der Gruppe|Der Anzeigename, der in Ihrem [OVHcloud Kundencenter](/links/manager) und in [OVHcloud Webmail](/links/web/email) (OWA) erscheint.|
 |Maximale Größe eingehend/ausgehend|Sie können die maximale Größe eingehender und ausgehender E-Mails angeben.|
 |Adresse in Outlook verbergen|Wenn dieses Kontrollkästchen aktiviert ist, wird die Gruppenadresse nicht in der Adressliste des Exchange Dienstes angezeigt.|
 |Authentifizierung erforderlich|Wenn dieses Kontrollkästchen aktiviert ist, können nur Benutzer auf derselben Plattform eine Nachricht mit der Gruppenadresse senden.|
@@ -66,7 +66,7 @@ Bitte beachten Sie, dass es einige Minuten dauern kann, bis Änderungen am Diens
 
 ### Schritt 3: Nachricht an eine Gruppe mit OWA senden
 
-Sie können jetzt Ihre Mailingliste über [OVHcloud Webmail](https://www.ovh.de/mail) (OWA) testen: Senden Sie einfach eine E-Mail an die Gruppenadresse.
+Sie können jetzt Ihre Mailingliste über [OVHcloud Webmail](/links/web/email) (OWA) testen: Senden Sie einfach eine E-Mail an die Gruppenadresse.
 
 ![contactgroups](images/exchange-groups-step6.png){.thumbnail}
 

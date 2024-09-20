@@ -14,14 +14,14 @@ Les erreurs sur les comptes e-mail Exchange peuvent avoir une multitude de cause
 
 - Disposer d'une [solution Exchange OVHcloud](/links/web/emails-hosted-exchange) déjà installée
 - Disposer des informations d'identification pour le compte Exchange à vérifier
-- Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
+- Être connecté à l'[espace client OVHcloud](/links/manager)
 - Être à jour dans les [paiements](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) de ce service et du nom de domaine lié.
 
 ## En pratique
 
 ### Réaliser un diagnostic
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) dans la partie `Web Cloud`{.action}. Sélectionnez `Microsoft`{.action} puis cliquez sur `Exchange`{.action} et sélectionnez votre service.
+Connectez-vous à votre [espace client OVHcloud](/links/manager) dans la partie `Web Cloud`{.action}. Sélectionnez `Microsoft`{.action} puis cliquez sur `Exchange`{.action} et sélectionnez votre service.
 
 ![Diagnostic Exchange](images/img_4450.png){.thumbnail}
 
@@ -54,11 +54,11 @@ Veuillez consulter notre guide [Que faire en cas de compte bloqué pour spam ?](
 ### L'abonnement au compte est expiré <a name="expired"></a>
 
 Votre abonnement n'étant plus actif, l'envoi et la réception ont été désactivés.<br>
-Pour réactiver votre abonnement, il suffit de reconfigurer sa [périodicité de facturation](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#periodicity) dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+Pour réactiver votre abonnement, il suffit de reconfigurer sa [périodicité de facturation](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#periodicity) dans l'[espace client OVHcloud](/links/manager).
 
 ### Le compte est bloqué par la politique de sécurité
 
-Si une politique de sécurité est activée dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), le compte peut être temporairement verrouillé.
+Si une politique de sécurité est activée dans l'[espace client OVHcloud](/links/manager), le compte peut être temporairement verrouillé.
 
 Vous pouvez, par exemple, décider que le compte sera verrouillé après plusieurs tentatives de connexion infructueuses, pour une période déterminée par vos soins.
 
@@ -70,7 +70,7 @@ Pour plus d'informations sur cette fonctionnalité, consultez notre [guide sur l
 
 Cela peut être dû à la saisie d'un mot de passe de compte incorrect. Vérifiez d'abord que le mot de passe est correct, en vous connectant au [webmail](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa), puis redémarrez le diagnostic.
 
-Si nécessaire, vous pouvez modifier le mot de passe du compte concerné dans l'onglet `Comptes e-mail`{.action} de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Si le problème persiste, créez une demande d'assistance.
+Si nécessaire, vous pouvez modifier le mot de passe du compte concerné dans l'onglet `Comptes e-mail`{.action} de votre [espace client OVHcloud](/links/manager). Si le problème persiste, créez une demande d'assistance.
 
 ### L'enregistrement MX du domaine n'est pas valide
 

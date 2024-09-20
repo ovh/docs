@@ -90,7 +90,7 @@ Once you have filled in the information requested, tick the box next to `Secured
 
 ![emailpro](images/configuration-gmail-web-step5.png){.thumbnail}
 
-At this stage, you simply need to confirm this addition by entering a confirmation code sent to your OVHcloud Email Pro address. To receive it, log on to our [Webmail](https://www.ovh.ie/mail/). 
+At this stage, you simply need to confirm this addition by entering a confirmation code sent to your OVHcloud Email Pro address. To receive it, log on to our [Webmail](/links/web/email). 
 
 Once you have pressed confirm, the OVHcloud Email Pro address will then appear in the `Accounts and Import`{.action} tab, which you accessed to start with.
 

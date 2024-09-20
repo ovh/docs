@@ -225,7 +225,7 @@ Okno wyboru profilu znajdziesz w nowym, wybranym profilu. Kliknij `Uruchom Thund
 
 Po wykonaniu czynności zgodnie z instrukcjami dotyczącymi importu sprawdź, czy Twoje dane są zainstalowane na serwerze.
 
-Zaloguj się do [interfejsu Webmail](https://www.ovh.pl/mail/).
+Zaloguj się do [interfejsu Webmail](/links/web/email).
 
 foldery i e-maile zapisane adresu e-mail znajdziesz w skrzynce odbiorczej oraz w kolumnie z lewej strony.
 

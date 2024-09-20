@@ -23,7 +23,7 @@ Unter der Option „Posteingangsregeln“ können Sie ein umfangreiches Regelwer
 
 ### Schritt 1: Navigation zum Bereich „Optionen“
 
-Melden Sie sich über [OVHcloud Webmail](https://www.ovh.de/mail) bei Ihrem E-Mail-Konto an. Klicken Sie auf das Zahnradsymbol oben rechts, um das Menü „Optionen“ zu öffnen und wählen Sie `Optionen`{.action}.
+Melden Sie sich über [OVHcloud Webmail](/links/web/email) bei Ihrem E-Mail-Konto an. Klicken Sie auf das Zahnradsymbol oben rechts, um das Menü „Optionen“ zu öffnen und wählen Sie `Optionen`{.action}.
 
 ![inboxrules](images/exchange-rules-step1.png){.thumbnail}
 
@@ -56,7 +56,7 @@ Da viele Bedingungen und Aktionen verfügbar sind, können nicht alle in dieser 
 > [!warning]
 >OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 >
->Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Weitere Hinweise finden Sie im Teil „Weiterführende Informationen” dieser Anleitung.
+>Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Weitere Hinweise finden Sie im Teil „Weiterführende Informationen” dieser Anleitung.
 >
 
 #### Beispiel 1: E-Mails an eine andere Adresse umleiten

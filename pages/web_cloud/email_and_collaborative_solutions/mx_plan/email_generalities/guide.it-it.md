@@ -21,7 +21,7 @@ La soluzione MX Plan di OVHcloud con cui potrai inviare e ricevere messaggi dal 
 
 ## Procedura <a name="instructions"></a>
 
-Una volta creata e disponibile la soluzione MX Plan, è possibile gestirla dallo [Spazio Cliente OVHcloud](/links/manager). In base alla data di attivazione o in caso di [recente migrazione del servizio](https://www.ovh.it/mxplan-migration/), la versione disponibile sarà differente. Per verificare quella attiva
+Una volta creata e disponibile la soluzione MX Plan, è possibile gestirla dallo [Spazio Cliente OVHcloud](/links/manager). In base alla data di attivazione o in caso di recente migrazione del servizio, la versione disponibile sarà differente. Per verificare quella attiva
 
 Accedendo allo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}. E seleziona il tuo servizio nella sezione `Email`{.action}. Prosegui nella lettura di questa guida in base alla versione di cui disponi.
 
@@ -65,7 +65,7 @@ Una volta creati gli account non ti resta che utilizzarli utilizzando la Webmail
 
 ##### **1. Webmail Outlook on the web**
 
-Accedi alla [pagina di connessione](https://www.ovh.it/mail/), inserisci le tue credenziali e clicca sul pulsante `Connessione`{.action}.
+Accedi alla [pagina di connessione](/links/web/email), inserisci le tue credenziali e clicca sul pulsante `Connessione`{.action}.
 
 Se è la prima volta che esegui l’accesso da questo indirizzo email, ti verrà chiesto di selezionare la lingua dell’interfaccia utente e definire il fuso orario della tua area geografica. Quando effettui il login, si apre di default la casella della posta in arrivo. Per maggiori informazioni consulta la guida all’[utilizzo di un account di posta da "Outlook on the web"](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
@@ -181,7 +181,7 @@ Una volta creati gli account non ti resta che utilizzarli utilizzando la Webmail
 
 ##### **1. Webmail RoundCube**
 
-Accedi alla [pagina di connessione](https://www.ovh.it/mail/), inserisci le tue credenziali e clicca sul pulsante `Connessione`{.action}.
+Accedi alla [pagina di connessione](/links/web/email), inserisci le tue credenziali e clicca sul pulsante `Connessione`{.action}.
 
 Si apre di default la casella della posta in arrivo. Per maggiori informazioni sull’utilizzo della Webmail RoundCube, consulta [questa guida](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
 

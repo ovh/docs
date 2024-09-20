@@ -40,7 +40,7 @@ Une fenêtre de sécurité vous demandant de renseigner le **mot de passe** de l
 >
 > Si un message vous indique qu'Outlook n'a pas pu paramétrer votre compte, cela peut indiquer que le champ SRV d'OVHcloud n'est pas correctement configuré dans la zone DNS de votre nom de domaine.
 >
-> Nous vous conseillons de vérifier la configuration du nom de domaine paramétré sur votre service Exchange dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), onglet `Domaines associés`{.action}, puis colonne `Diagnostic`{.action} du tableau.
+> Nous vous conseillons de vérifier la configuration du nom de domaine paramétré sur votre service Exchange dans votre [espace client OVHcloud](/links/manager), onglet `Domaines associés`{.action}, puis colonne `Diagnostic`{.action} du tableau.
 >
 
 Si la configuration de votre nom de domaine est correcte, un message vous demandant d'autoriser une connexion vers le serveur d'OVHcloud apparaît. Acceptez cette connexion afin de permettre la configuration automatique de votre compte Exchange.

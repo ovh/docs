@@ -19,7 +19,7 @@ Tramite l’opzione “Regole Posta in arrivo” è possibile creare una serie d
 
 ### Step 1: vai alla sezione “Opzioni”
 
-Accedi al tuo account Exchange tramite la [Webmail OVHcloud](https://www.ovh.it/mail) Clicca sull’icona a forma di ingranaggio in alto a destra per aprire il menu e seleziona `Opzioni`{.action}.
+Accedi al tuo account Exchange tramite la [Webmail OVHcloud](/links/web/email) Clicca sull’icona a forma di ingranaggio in alto a destra per aprire il menu e seleziona `Opzioni`{.action}.
 
 ![inboxrules](images/exchange-rules-step1.png){.thumbnail}
 

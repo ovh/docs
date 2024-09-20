@@ -30,7 +30,7 @@ Clicking on `Create a contact group`{.action} will open a new window where you c
 |Name|Description|
 |---|---|
 |Email address|The new address that will send messages to the mailing list. Please note that you cannot enter an existing email address.|
-|Group name|The display name that appears in your [OVHcloud Control Panel](/links/manager) and in [OVHcloud webmail](https://www.ovh.ie/mail) (OWA).|
+|Group name|The display name that appears in your [OVHcloud Control Panel](/links/manager) and in [OVHcloud webmail](/links/web/email) (OWA).|
 |Max size incoming / outgoing|You can specify the maximum size of incoming and outgoing emails.|
 |Hide in Outlook|If this box is ticked, the group address will not appear in the Exchange service's list of addresses.|
 |Authentication required|If this box is ticked, only users on the same platform will be able to send a message using the group address.|
@@ -66,7 +66,7 @@ Please note that any changes to the service may take a few minutes to be applied
 
 ### Step 3: Messaging a group in OWA
 
-You can now test your mailing list via [OVHcloud webmail](https://www.ovh.ie/mail) (OWA): simply send an email to the group address.
+You can now test your mailing list via [OVHcloud webmail](/links/web/email) (OWA): simply send an email to the group address.
 
 ![contactgroups](images/exchange-groups-step6.png){.thumbnail}
 

@@ -22,8 +22,8 @@ You want to migrate your email addresses on an Exchange or Email Pro platform to
 
 ## Requirements
 
-- a "**source**" platform with configured [Exchange](https://www.ovh.co.uk/emails/hosted-exchange/) or [Email Pro](https://www.ovh.co.uk/emails/email-pro/) accounts
-- a "**destination**" platform with [Exchange](https://www.ovh.co.uk/emails/hosted-exchange/), [Email Pro](https://www.ovh.co.uk/emails/email-pro/) or MX Plan accounts (via the MX Plan solution or included in [OVHcloud Web Hosting plans](https://www.ovh.co.uk/web-hosting/)). This platform must have unconfigured accounts or be available to host the email accounts that need to be migrated.
+- a "**source**" platform with configured [Exchange](/links/web/emails-hosted-exchange) or [Email Pro](/links/web/email-pro) accounts
+- a "**destination**" platform with [Exchange](/links/web/emails-hosted-exchange), [Email Pro](/links/web/email-pro) or MX Plan accounts (via the MX Plan solution or included in [OVHcloud Web Hosting plans](/links/web/hosting)). This platform must have unconfigured accounts or be available to host the email accounts that need to be migrated.
 - access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions

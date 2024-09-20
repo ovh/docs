@@ -35,7 +35,7 @@ Clicca sul pulsante `Aggiungi un account risorsa`{.action} per creare la tua pri
 |Nome|Descrizione|
 |---|---|
 |Email della risorsa|Inserisci l'indirizzo della risorsa. Non è possibile scegliere un indirizzo di posta esistente.|
-|Nome della risorsa|Nome completo che compare nello [Spazio Cliente OVHcloud](/links/manager) e nella [Webmail OVHcloud](https://www.ovh.it/mail/) (OWA).|
+|Nome della risorsa|Nome completo che compare nello [Spazio Cliente OVHcloud](/links/manager) e nella [Webmail OVHcloud](/links/web/email) (OWA).|
 |Capacità|È possibile definire la dimensione massima di una risorsa (specificando, ad esempio, il numero di posti a sedere di una parte o i sedili di un veicolo condiviso).|
 |Permettere i conflitti|Se seleziona questa opzione, potrai creare eventi di calendario che si sovrappongono e coinvolgono la stessa risorsa.|
 |Tipo di risorsa|Scegli il tipo di risorsa: "Apparecchiature" o "Sala".|
@@ -55,7 +55,7 @@ Le risorse possono essere gestite dalla tabella della scheda "Risorse". Clicca s
 Consulta anche la nostra guida sulla [condivisione di calendari dall'interfaccia OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_calendar_sharing).
 >
 
-Accedi al tuo account Exchange tramite la [Webmail OVHcloud](https://www.ovh.it/mail/). Clicca sul pulsante "Avanti" in alto a sinistra e seleziona l'icona `Calendario`{.action}.
+Accedi al tuo account Exchange tramite la [Webmail OVHcloud](/links/web/email). Clicca sul pulsante "Avanti" in alto a sinistra e seleziona l'icona `Calendario`{.action}.
 
 ![aggiungi un calendario](images/exchange-calendars-step1.png){.thumbnail}
 

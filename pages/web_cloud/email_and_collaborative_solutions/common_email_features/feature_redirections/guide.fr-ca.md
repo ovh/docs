@@ -46,7 +46,7 @@ Par exemple, votre adresse e-mail est **john.smith@mydomain.ovh** et votre alias
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Disposer d'une solution e-mail OVHcloud préalablement configurée (**MX Plan**, proposée parmi nos [offres d’hébergement web](/links/web/hosting)ou commandée séparément comme solution autonome, telle que [Hosted Exchange](/links/web/emails-hosted-exchange)).
 
 ## En pratique
@@ -70,7 +70,7 @@ Suivez les étapes décrites en cliquant successivement sur chaque onglet ci-des
 > [!tabs]
 > **Etape 1**
 >>
->> Une fois connecté à votre adresse e-mail via le [webmail](https://www.ovhcloud.com/fr-ca/mail/), cliquez sur la roue crantée en haut à droite puis sur `Options`{.action}.<br><br>
+>> Une fois connecté à votre adresse e-mail via le [webmail](/links/web/email), cliquez sur la roue crantée en haut à droite puis sur `Options`{.action}.<br><br>
 >> ![emails](images/emails-all-01.png){.thumbnail}<br>
 >>
 > **Etape 2**
@@ -107,7 +107,7 @@ Suivez les étapes décrites en cliquant successivement sur chaque onglet ci-des
 
 ### Créer un alias <a name="alias"></a>
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et dirigez-vous dans la section `Web Cloud`. Choisissez ensuite le menu en fonction de votre offre e-mail :
+Connectez-vous à votre [espace client OVHcloud](/links/manager) et dirigez-vous dans la section `Web Cloud`. Choisissez ensuite le menu en fonction de votre offre e-mail :
 
 - **Exchange** : dans `Microsoft`{.action} puis sur `Exchange`{.action} et sélectionnez la plateforme concernée. Cliquez sur l'onglet `Comptes e-mail`{.action}.
 
@@ -141,7 +141,7 @@ Cliquez sur le bouton `...`{.action} à droite de l'alias concerné, dans le men
 
 ### Créer une redirection ou un alias sur un nom de domaine sans offre e-mail <a name="mxplanlegacy"></a>
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et dirigez-vous dans la section `Web Cloud`. Dirigez-vous dans la sections `Emails`{.action} :
+Connectez-vous à votre [espace client OVHcloud](/links/manager) et dirigez-vous dans la section `Web Cloud`. Dirigez-vous dans la sections `Emails`{.action} :
 
 La méthode pour créer un alias ou une redirection est strictement la même. Suivez les étapes décrites en cliquant successivement sur chaque onglet ci-dessous :
 

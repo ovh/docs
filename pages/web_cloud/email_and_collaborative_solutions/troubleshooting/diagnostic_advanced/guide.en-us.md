@@ -17,7 +17,7 @@ Is your email account unable to send or receive emails when using webmail or you
 ## Requirements
 
 - an OVHcloud email solution (**MX Plan/Web Hosting emails** or **Exchange**)
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=w)
+- access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 

@@ -75,7 +75,7 @@ Se devi inserire manualmente le impostazioni nelle preferenze del tuo account, p
 
 Una volta configurato l'indirizzo email, non ti resta che utilizzarlo: da questo momento puoi infatti inviare e ricevere messaggi.
 
-OVHcloud propone anche un'applicazione Web con [funzionalità collaborative](/links/web/emails), disponibile all'indirizzo [https://www.ovh.it/mail/](https://www.ovh.it/mail/). Puoi collegarti utilizzando le credenziali del tuo account.
+OVHcloud propone anche un'applicazione Web con [funzionalità collaborative](/links/web/emails), disponibile all'indirizzo [Webmail](/links/web/email). Puoi collegarti utilizzando le credenziali del tuo account.
 
 ## Per saperne di più
 

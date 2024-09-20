@@ -21,7 +21,7 @@ Właśnie zakupiłeś usługę MX Plan. Pozwala ona na korzystanie z kont e-mail
 
 ## W praktyce <a name="instructions"></a>
 
-Po utworzeniu i udostępnieniu usługi MX Plan możesz zarządzać nią w [Panelu klienta OVHcloud](/links/manager). W zależności od daty aktywacji usługi lub jeśli [usługa została niedawno migrowana](https://www.ovh.pl/mxplan-migration/), możliwe jest, że dysponujesz jej poprzednią lub nową wersją. Zanim przejdziesz dalej, ustal, jaką wersję posiadasz.
+Po utworzeniu i udostępnieniu usługi MX Plan możesz zarządzać nią w [Panelu klienta OVHcloud](/links/manager). W zależności od daty aktywacji usługi lub jeśli usługa została niedawno migrowana, możliwe jest, że dysponujesz jej poprzednią lub nową wersją. Zanim przejdziesz dalej, ustal, jaką wersję posiadasz.
 
 Zaloguj się do [Panelu klienta](/links/manager) > sekcja Web. Kliknij E-maile, po czym wybierz odpowiednią usługę MX Plan. Następnie postępuj zgodnie z instrukcjami odnoszącymi się do wersji, którą posiadasz.
 
@@ -64,7 +64,7 @@ Po skonfigurowaniu Twoich kont możesz zacząć ich używać. W tym celu możesz
 
 ##### **1. Korzystanie z Webmail Outlook Web App (OWA)**
 
-Zaloguj się na stronie [Logowanie do interfejsu Webmail](https://www.ovh.pl/mail/), po czym wprowadź odpowiedni adres e-mail oraz hasło. Kliknij następnie przycisk `Logowanie`{.action}.
+Zaloguj się na stronie [Logowanie do interfejsu Webmail](/links/web/email), po czym wprowadź odpowiedni adres e-mail oraz hasło. Kliknij następnie przycisk `Logowanie`{.action}.
 
 Podczas pierwszego logowania do interfejsu Webmail zostaniesz poproszony o określenie języka interfejsu oraz Twojej strefy czasowej. Wyświetli się wówczas Twoja skrzynka odbiorcza. Aby dowiedzieć się, jak korzystać z konta e-mail za pośrednictwem Webmail OWA, zapoznaj się z naszym przewodnikiem [Korzystanie z konta e-mail w interfejsie Webmail Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
@@ -180,7 +180,7 @@ Po skonfigurowaniu Twoich kont możesz zacząć ich używać. W tym celu możesz
 
 ##### **1. Skorzystaj z interfejsu Webmail RoundCube**
 
-Zaloguj się na stronie [Logowanie do interfejsu Webmail](https://www.ovh.pl/mail/), po czym wprowadź odpowiedni adres e-mail oraz hasło. Kliknij następnie przycisk `Logowanie`{.action}.
+Zaloguj się na stronie [Logowanie do interfejsu Webmail](/links/web/email), po czym wprowadź odpowiedni adres e-mail oraz hasło. Kliknij następnie przycisk `Logowanie`{.action}.
 
 Wyświetli się wówczas Twoja skrzynka odbiorcza. Aby dowiedzieć się, jak korzystać z konta e-mail za pośrednictwem Webmail RoundCube, zapoznaj się z naszym przewodnikiem [Korzystanie z konta e-mail w interfejsie Webmail RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
 

@@ -221,7 +221,7 @@ Vous retrouvez la fenêtre de choix de votre profil avec votre nouveau profil s�
 
 Lorsque vous avez fait le nécessaire en suivant les instructions d'importation, vérifiez que vos éléments sont bien présents sur le serveur.
 
-Connectez-vous au [webmail](https://www.ovh.com/fr/mail/).
+Connectez-vous au [webmail](/links/web/email).
 
 Vous retrouverez dans votre boite de réception et dans la colonne de gauche les dossiers et e-mails de votre adresse e-mail sauvegardée.
 

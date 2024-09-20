@@ -6,7 +6,7 @@ updated: 2024-09-03
 
 ## Obiettivo
 
-Con le soluzioni email OVHcloud puoi inviare e ricevere le tue email utilizzando il dispositivo e il client che preferisci. Per accedere a un account da qualsiasi luogo mediante un browser Web, OVHcloud fornisce il client di posta elettronica online Outlook Web App (OWA). La nostra pagina di accesso alla [Webmail](https://www.ovh.it/mail) è l’unico punto di accesso alla relativa OWA per tutti gli account email attivi su MX Plan, Email Pro e Hosted Exchange.
+Con le soluzioni email OVHcloud puoi inviare e ricevere le tue email utilizzando il dispositivo e il client che preferisci. Per accedere a un account da qualsiasi luogo mediante un browser Web, OVHcloud fornisce il client di posta elettronica online Outlook Web App (OWA). La nostra pagina di accesso alla [Webmail](/links/web/email) è l’unico punto di accesso alla relativa OWA per tutti gli account email attivi su MX Plan, Email Pro e Hosted Exchange.
 
 **Questa guida spiega come eseguire azioni di carattere generale con il tuo indirizzo email nell’interfaccia OWA.**
 
@@ -26,7 +26,7 @@ Questa guida ti consentirà di comprendere meglio quello che è possibile ottene
 
 ### 1. Accedere alla Webmail OWA
 
-Per accedere alla Webmail OWA con il tuo indirizzo email, vai alla pagina generale di login [della Webmail](https://www.ovh.it/mail). Digita il tuo indirizzo email e la tua password, quindi clicca sul pulsante `Login`{.action}.
+Per accedere alla Webmail OWA con il tuo indirizzo email, vai alla pagina generale di login [della Webmail](/links/web/email). Digita il tuo indirizzo email e la tua password, quindi clicca sul pulsante `Login`{.action}.
 
 ![useowa](images/use-owa-step1.png){.thumbnail}
 

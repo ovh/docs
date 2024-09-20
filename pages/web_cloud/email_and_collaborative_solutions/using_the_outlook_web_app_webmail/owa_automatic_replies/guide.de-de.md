@@ -19,7 +19,7 @@ Mit dieser Exchange-Funktion können Sie für verschiedene Anwendungsfälle auto
 
 ### Aktivierung der Funktion
 
-Melden Sie sich über [OVHcloud Webmail](https://www.ovh.de/mail) bei Ihrem Exchange Account an. Klicken Sie auf das Zahnradsymbol oben rechts, um das Menü „Optionen“ zu öffnen und wählen Sie dann `Automatische Antworten`{.action}.
+Melden Sie sich über [OVHcloud Webmail](/links/web/email) bei Ihrem Exchange Account an. Klicken Sie auf das Zahnradsymbol oben rechts, um das Menü „Optionen“ zu öffnen und wählen Sie dann `Automatische Antworten`{.action}.
 
 ![owaoptions](images/exchange-autorep-step1.png){.thumbnail}
 

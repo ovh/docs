@@ -84,7 +84,7 @@ In unserem Beispiel erlauben wir den Accounts **guide-exchange@** und **test@** 
 
 ### Nutzung des freigegebenen Postfachs über OWA (Webmail)
 
-Loggen Sie sich [im Webmail](https://www.ovh.de/mail/) mit einem Account ein, der Zugriff auf das freigegebene Postfach hat.
+Loggen Sie sich [im Webmail](/links/web/email) mit einem Account ein, der Zugriff auf das freigegebene Postfach hat.
 <br>In unserem Beispiel verbinden wir uns über den Account **guide-exchange@**.
 
 Wenn Sie eingeloggt sind, klicken Sie mit der rechten Maustaste auf Ihre E-Mail-Adresse in der linken Menüspalte. Wählen Sie aus dem Kontextmenü `Freigegebenen Ordner hinzufügen`{.action}. 

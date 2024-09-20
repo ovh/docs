@@ -39,7 +39,7 @@ Renseignez à présent votre adresse e-mail puis cliquez sur `Continuer`{.action
 |Adresse de courrier|Renseignez un nom vous permettant de reconnaître ce compte parmi d'autres affichés dans votre application Outlook.|
 |DOMAINE\nom d’utilisateur ou adresse de courrier|Renseignez l'adresse e-mail complète.|
 |Mot de passe|Renseignez le mot de passe de l'adresse e-mail.|
-|Serveur|Selon la configuration DNS de votre nom de domaine, renseigner le serveur peut être facultatif. Si nécessaire, indiquez le serveur sur lequel est hébergé votre service Exchange. Vous pouvez le retrouver depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) dans l'onglet `Informations générales`{.action} du service Exchange concerné, puis dans le cadre `Connexion`{.action}.|
+|Serveur|Selon la configuration DNS de votre nom de domaine, renseigner le serveur peut être facultatif. Si nécessaire, indiquez le serveur sur lequel est hébergé votre service Exchange. Vous pouvez le retrouver depuis votre [espace client OVHcloud](/links/manager) dans l'onglet `Informations générales`{.action} du service Exchange concerné, puis dans le cadre `Connexion`{.action}.|
 
 Une fois les informations complétées, cliquez sur `Ajouter un compte`{.action}. Si celles-ci sont correctes, la connexion au compte réussira.
 

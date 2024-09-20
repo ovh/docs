@@ -12,7 +12,7 @@ Se deseja aumentar a segurança da sua conta Exchange, pode ativar a dupla auten
 
 ## Requisitos
 
-- Ter o serviço [Exchange OVHcloud](https://www.ovh.pt/mail/).
+- Ter o serviço [Exchange OVHcloud](/links/web/email).
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Ter instalado uma aplicação OTP num smartphone ou tablet Android ou iOS.
 

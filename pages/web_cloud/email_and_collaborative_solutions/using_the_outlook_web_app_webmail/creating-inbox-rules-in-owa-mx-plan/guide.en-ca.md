@@ -19,7 +19,7 @@ With the "Inbox rules" option, you can create an elaborate set of rules to handl
 
 ### Step 1: Navigating to the options section
 
-Log in to your Exchange account via the [OVHcloud webmail](https://www.ovh.com/ca/en/mail/). Click on the gear symbol on the top right to unfold the "Options" menu and select `Options`{.action}.
+Log in to your Exchange account via the [OVHcloud webmail](/links/web/email). Click on the gear symbol on the top right to unfold the "Options" menu and select `Options`{.action}.
 
 ![inboxrules](images/exchange-rules-step1.png){.thumbnail}
 

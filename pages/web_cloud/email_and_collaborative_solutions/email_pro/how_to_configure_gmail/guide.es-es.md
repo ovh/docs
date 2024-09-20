@@ -103,7 +103,7 @@ Para enviar un mensaje con su dirección Email Pro de OVHcloud desde la interfaz
 
 ![Email Pro](images/configuration-gmail-web-step6.png){.thumbnail}
 
-No olvide que también puede utilizar nuestra interfaz web en la dirección [https://www.ovh.es/mail/](https://www.ovh.es/mail/) para acceder a su dirección Email Pro de OVHcloud. Para conectarse solo necesitará las claves de acceso.
+No olvide que también puede utilizar nuestra interfaz web en la dirección [Webmail](/links/web/email) para acceder a su dirección Email Pro de OVHcloud. Para conectarse solo necesitará las claves de acceso.
 
 ## Más información <a name="go-further"></a>
 

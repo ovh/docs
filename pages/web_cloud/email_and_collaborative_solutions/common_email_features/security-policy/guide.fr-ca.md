@@ -13,7 +13,7 @@ Les services e-mail d'OVHcloud permettent de bénéficier d’adresses e-mail pr
 ## Prérequis
 
 - Disposer d'une [offre Exchange OVHcloud](/links/web/emails-hosted-exchange).
-- Être connecté à [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), partie `Web Cloud`{.action}.
+- Être connecté à [l'espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
 
 ## En pratique
 
@@ -24,7 +24,7 @@ La gestion de la politique de sécurité de votre service e-mail peut interagir 
 - renforcer la vérification des messages entrants sur nos serveurs et à destination de vos adresses e-mail (uniquement pour les comptes [Exchange](/links/web/emails-hosted-exchange));
 - définir comment les messages dits « indésirables » s'afficheront dans vos boites aux lettres (uniquement pour les comptes [Exchange](/links/web/emails-hosted-exchange)).
 
-Pour accéder à la politique de sécurité de votre service e-mail, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et assurez-vous de vous situer dans la section `Web Cloud`{.action}.
+Pour accéder à la politique de sécurité de votre service e-mail, connectez-vous à votre [espace client OVHcloud](/links/manager) et assurez-vous de vous situer dans la section `Web Cloud`{.action}.
 
 Cliquez sur `Microsoft`{.action}, puis sur `Exchange`{.action} et sélectionnez l'offre concernée. Cliquez sur l'onglet `Sécurité`, puis sur `Gérer la politique de sécurité`{.action}
 

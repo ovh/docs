@@ -149,7 +149,7 @@ Siga os passos descritos, clicando sucessivamente em cada separador abaixo:
 > [!tabs]
 > **Etapa 1**
 >>
->> Depois de aceder ao endereço de e-mail através do [webmail](https://www.ovhcloud.com/fr/mail/), clique na roda dentada no canto superior direito e, a seguir, em Opções`{.action}.<br><br>>
+>> Depois de aceder ao endereço de e-mail através do [webmail](/links/web/email), clique na roda dentada no canto superior direito e, a seguir, em Opções`{.action}.<br><br>>
 >> ![emails](images/emails-all-01.png){.thumbnail}<br>
 >>
 > **Etapa 2**

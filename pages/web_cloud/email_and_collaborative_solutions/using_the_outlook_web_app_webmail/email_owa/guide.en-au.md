@@ -6,7 +6,7 @@ updated: 2024-09-03
 
 ## Objective
 
-With an OVHcloud Email offer you can send and receive your emails using a device and client of your choice. To access an account from anywhere via web browser, OVHcloud provides an online email client called Outlook Web App (OWA). Our [webmail login page](https://www.ovh.com.au/mail/) is the single point of access to the respective OWA for all active email accounts on your Email offer.
+With an OVHcloud Email offer you can send and receive your emails using a device and client of your choice. To access an account from anywhere via web browser, OVHcloud provides an online email client called Outlook Web App (OWA). Our [webmail login page](/links/web/email) is the single point of access to the respective OWA for all active email accounts on your Email offer.
 
 **This guide explains how to use your email address with OWA and exemplifies the most important features of this interface.**
 
@@ -26,7 +26,7 @@ This guide will give you a better understanding of the usual email account tasks
 
 ### 1. Accessing OWA webmail
 
-To log in to OWA webmail with your email address, go to the general [webmail login page](https://www.ovh.com.au/mail/). Enter your full email address and password, then click the `Login`{.action} button.
+To log in to OWA webmail with your email address, go to the general [webmail login page](/links/web/email). Enter your full email address and password, then click the `Login`{.action} button.
 
 ![useowa](images/use-owa-step1.png){.thumbnail}
 
