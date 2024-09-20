@@ -1,7 +1,7 @@
 ---
 title: 'Criar bases de dados e utilizadores no servidor de bases de dados'
 excerpt: 'Saiba como criar uma base de dados no servidor de bases de dados.'
-updated: 2023-02-15
+updated: 2024-08-22
 ---
 
 > [!primary]
@@ -27,7 +27,12 @@ Aceda à [Área de Cliente OVHcloud](/links/manager){.external}. Clique no separ
 
 Clique no separador `Bases de dados` e em `Adicionar uma base de dados`{.action}.
 
-![web-cloud-databases](images/add-database.png){.thumbnail}
+![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database.png){.thumbnail}
+
+> [!primary]
+>
+> A criação de esquemas PostgreSQL está atualmente indisponível nos servidores Web Cloud Databases.
+>
 
 Preencha os campos respeitando os critérios indicados. Pode criar diretamente um utilizador ao selecionar a caixa **«Criar um utilizador»**:
 
@@ -38,7 +43,7 @@ Preencha os campos respeitando os critérios indicados. Pode criar diretamente u
 
 Por fim, clique em `Validar`{.action}.
 
-![web-cloud-databases](images/add-database-confirmation.png){.thumbnail}
+![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database-confirmation.png){.thumbnail}
 
 ### Criar um utilizador
 
@@ -48,7 +53,7 @@ Aceda à [Área de Cliente OVHcloud](/links/manager){.external}. Clique no separ
 
 Clique no separador `Utilizadores e permissões` e, a seguir, em `Adicionar um utilizador`{.action}.
 
-![web-cloud-databases](images/add-user.png){.thumbnail}
+![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/add-user.png){.thumbnail}
 
 Depois de introduzir um «nome de utilizador» e uma «palavra-passe», clique em `Validar`{.action}. 
 
@@ -60,7 +65,7 @@ Para gerir as permissões de cada utilizador, aceda à [Área de Cliente OVHclou
 
 Clique no botão `...`{.action} à direita do utilizador em questão e, a seguir, em `Gerir as permissões`{.action}.
 
-![web-cloud-databases](images/manage-rights.png){.thumbnail}
+![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/manage-rights.png){.thumbnail}
 
 Na coluna à esquerda encontrará **Base de dados**, a lista das bases de dados presentes no seu servidor.
 
@@ -75,7 +80,7 @@ Segue-se a descrição dos três tipos de permissões possíveis:
 > 
 > A segmentação das permissões referidas acima é própria da OVHcloud. Assim, um utilizador com permissões de `Administrador` poderá fazer **DLL** (Data Definition Language) e **DML** (Data Manipulation Language), ao passo que um utilizador com permissões de `Leitura/Escrita` só poderá fazer **DML** (Data Manipulation Language).
 
-![web-cloud-databases](images/changing-user-rights.png){.thumbnail}
+![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/changing-user-rights.png){.thumbnail}
 
 #### Eliminar uma base de dados
 
@@ -91,7 +96,7 @@ Aceda à [Área de Cliente OVHcloud](/links/manager){.external}. Clique no separ
 
 Para eliminar uma base de dados, aceda ao separador `Bases de dados` e clique no botão `...`{.action} à direita da base em causa. Por fim, clique em `Eliminar a base`{.action}.
 
-![web-cloud-databases](images/delete-the-database.png){.thumbnail}
+![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/delete-the-database.png){.thumbnail}
 
 ## Quer saber mais?
 
@@ -99,4 +104,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

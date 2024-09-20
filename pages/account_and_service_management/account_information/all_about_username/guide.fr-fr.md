@@ -1,7 +1,7 @@
 ---
 title: 'Sécuriser mon compte OVHcloud et gérer mes informations personnelles'
 excerpt: "Découvrez comment optimiser la sécurité de votre compte OVHcloud, gérer vos informations personnelles et déléguer l'accès à votre compte."
-updated: 2021-07-01
+updated: 2024-09-09
 ---
 
 ## Objectif
@@ -13,12 +13,12 @@ L'espace client OVHcloud vous permet aussi de gérer vos données personnelles e
 
 **Découvrez les bonnes pratiques de gestion de votre compte et de vos données personnelles.**
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/odO58c4gJfc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/odO58c4gJfc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Prérequis
 
 - Avoir créé [votre compte OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 
 > [!primary]
 > En cas de difficultés de connexion à votre compte, consultez la partie « [Je ne parviens pas à me connecter](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure) » de notre guide « [Se connecter à l'espace client OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login)».
@@ -64,7 +64,7 @@ Vous aurez ainsi accès aux informations personnelles de votre compte. Faites d�
 > [!warning]
 > Pour rappel, il est **primordial** que l'adresse e-mail de secours soit **différente** de l'adresse e-mail principale du compte.
 >
-> Évitez d'utiliser des adresses e-mail liées à un nom de domaine que vous gérez depuis votre espace client. En cas de coupure sur ce domaine, vous ne recevriez plus nos notifications.
+> Évitez d'utiliser des adresses e-mail liées à un nom de domaine que vous gérez depuis votre espace client. En cas de coupure sur ce domaine, vous ne recevriez plus nos notifications. Si vous êtes dans cette situation, suivez [les procédures indiquées dans ce guide](/pages/account_and_service_management/account_information/ovhcloud-account-login#invalid-email).
 >
 
 #### Activer la double authentification
@@ -80,7 +80,7 @@ Vous trouverez tous les détails pour l'activer sur notre guide « [Sécuriser s
 
 #### Modifier mes informations personnelles
 
-Vous pouvez modifier les informations de votre compte depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Pour cela, cliquez sur votre nom en haut à droite dans votre espace client, puis sur vos initiales.
+Vous pouvez modifier les informations de votre compte depuis votre [espace client OVHcloud](/links/manager). Pour cela, cliquez sur votre nom en haut à droite dans votre espace client, puis sur vos initiales.
 
 Cliquez alors sur le bouton `...`{.action} dans le cadre `Mon profil`, puis sur `Éditer mon profil`{.action}.
 
@@ -124,7 +124,6 @@ Vous pouvez demander à supprimer votre compte OVHcloud et les données liées e
 > La suppression de votre compte OVHcloud nécessite que les conditions suivantes soient remplies :
 >
 > - votre compte ne doit plus contenir aucun service ;
->
 > - votre compte doit être exempt de toute facture ou commande impayée.
 >
 
@@ -152,13 +151,13 @@ Pour en savoir davantage, consultez le [guide sur la gestion des utilisateurs](/
 
 #### Gérer les contacts
 
-Vous pouvez déléguer la gestion administrative **ou** technique **ou** de facturation d'un ou plusieurs services de votre compte à un autre identifiant client. Consultez le guide sur [la gestion des contacts](/pages/account_and_service_management/account_information/managing_contacts) pour en savoir plus.
+Vous pouvez déléguer la gestion administrative **ou** technique **ou** de facturation d'un ou plusieurs services de votre compte à un autre compte OVHcloud. Consultez le guide sur [la gestion des contacts](/pages/account_and_service_management/account_information/managing_contacts) pour en savoir plus.
 
 ### Que faire en cas de suspicion d'usurpation d'identité ?
 
 Si vous recevez un e-mail vous indiquant une connexion inconnue à votre espace client, nous vous conseillons de [modifier immédiatement le mot de passe de votre compte](/pages/account_and_service_management/account_information/manage-ovh-password#modifier-votre-mot-de-passe) et de [sécuriser votre compte avec une double authentification](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
 
-Si vous constatez une activité suspecte sur votre compte, [contactez le support OVHcloud](https://www.ovh.com/fr/support/nous-contacter/) au 1007 (composez le 0033 9 72 10 10 07 depuis une ligne en dehors de la France) afin que nos équipes vous assistent dans les démarches à entreprendre.
+Si vous constatez une activité suspecte sur votre compte, [contactez le support OVHcloud](https://www.ovhcloud.com/fr/contact/) au 1007 (composez le 0033 9 72 10 10 07 depuis une ligne en dehors de la France) afin que nos équipes vous assistent dans les démarches à entreprendre.
 
 ## Aller plus loin
 

@@ -53,21 +53,21 @@ Aby wygenerować link do pobrania, zaloguj się do [Panelu klienta OVHcloud](/li
 
 Wybierz kartę `FTP - SSH`{.action} i kliknij przycisk `Wygeneruj kopię zapasową`{.action} po prawej stronie.
 
-![kopia zapasowa](images/generate-a-backup.png){.thumbnail}
+![kopia zapasowa](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup.png){.thumbnail}
 
 W oknie, które się otworzy wybierz jedną z dostępnych kopii zapasowych, po czym kliknij `Dalej`{.action}.
 
-![kopia zapasowa](images/generate-a-backup-step-1.png){.thumbnail}
+![kopia zapasowa](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup-step-1.png){.thumbnail}
 
 Pojawi się drugie okno z informacją, że link do pobrania pliku kopii zapasowej zostanie przesłany e-mailem i że OVHcloud nie przywróci automatycznie danych z Twojego hostingu Cloud Web.
 
-![kopia zapasowa](images/generate-a-backup-step-2.png){.thumbnail}
+![kopia zapasowa](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup-step-2.png){.thumbnail}
 
 Kliknij na `Zatwierdź`{.action}, aby potwierdzić zlecenie.
 
 Jeśli wygenerowana zostanie kopia zapasowa, w [Panelu klienta OVHcloud](/links/manager){.external} pojawi się następujący komunikat:
 
-![kopia zapasowa](images/message-backup-progress.png){.thumbnail}
+![kopia zapasowa](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/message-backup-progress.png){.thumbnail}
 
 Tworzenie kopii zapasowej zajmuje od 10 do 15 minut.
 
@@ -76,7 +76,7 @@ Tworzenie kopii zapasowej zajmuje od 10 do 15 minut.
 Po sfinalizowaniu tworzenia kopii zapasowej otrzymasz e-mail na adres e-mail powiązany z identyfikatorem administratora Twojego hostingu Cloud Web.<br>
 E-mail ten zawiera link do pobrania **ważny przez 9 dni** od otrzymania wiadomości e-mail:
 
-![kopia zapasowa](images/backup-information.png){.thumbnail}
+![kopia zapasowa](/pages/assets/screens/email-sending-to-customer/cloud-web/backup-information.png){.thumbnail}
 
 Pobrany plik jest w formacie *.tar.gz*.
 
@@ -99,4 +99,4 @@ Skontaktuj się z [partnerami OVHcloud](/links/partner), jeśli szukasz zaawanso
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i korzystania z rozwiązań OVHcloud, sprawdź naszą [ofertę wsparcia](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>
+Dołącz do [grona naszych użytkowników](/links/community)

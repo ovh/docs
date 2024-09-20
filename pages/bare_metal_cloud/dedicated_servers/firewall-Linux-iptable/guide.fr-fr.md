@@ -1,7 +1,7 @@
 ---
 title: Configurer le pare-feu sous Linux avec Iptables
 excerpt: Découvrez comment sécuriser un serveur avec Iptables
-updated: 2024-05-30
+updated: 2024-07-12
 ---
 
 ## Objectif
@@ -20,7 +20,7 @@ Les pare-feux fonctionnent en définissant des règles qui régissent le trafic 
 
 ## Prérequis
 
-- Disposer d’un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) dans votre compte OVHcloud
+- Disposer d’un [serveur dédié](/links/bare-metal/bare-metal) dans votre compte OVHcloud
 - Disposer d'un accès administrateur (root/sudo) à votre serveur via SSH
 
 ## En pratique
@@ -60,10 +60,8 @@ sudo apt-get install iptables-persistent
 
 Une fois ce paquet installé, le dossier iptables contiendra deux fichiers pour les règles IPV4 et IPV6 :
 
-```bash
-sudo /etc/iptables/rules.v4
-sudo /etc/iptables/rules.v6
-```
+- /etc/iptables/rules.v4
+- /etc/iptables/rules.v6
 
 En général, une commande Iptables se présente comme suit :
 
@@ -236,4 +234,4 @@ N'hésitez pas à expérimenter car vous pouvez toujours supprimer les règles d
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

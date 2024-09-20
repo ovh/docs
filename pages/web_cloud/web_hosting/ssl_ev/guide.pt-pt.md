@@ -65,7 +65,7 @@ Consulte o nosso guia sobre como [gerir um certificado SSL no alojamento web](/p
 
 Insira com exatidão as informações solicitadas por **Sectigo** antes que lhe seja emitido o certificado SSL EV. 
 
-![SSL EV form](images/ssl-ev-step-2.png){.thumbnail}
+![SSL EV form](/pages/assets/screens/website/order/ssl-ev-step-2.png){.thumbnail}
 
 Clique em `Continuer`{.action} depois de **todos os elementos** estarem corretamente inseridos.
 
@@ -84,19 +84,19 @@ Continue a encomenda até ao pagamento para validar o pedido de criação do cer
 
 Se ainda não encomendou o seu nome de domínio e o alojamento associado, aceda à nossa [página inicial da OVHcloud](/links/website), introduza um nome de domínio no **formulário de pesquisa previsto para este efeito** e clique em `Pesquisar`{.action} para iniciar a sua encomenda.
 
-![SSL EV select domain](images/ssl-ev-search-bar.png){.thumbnail}
+![SSL EV select domain](/pages/assets/screens/website/order/ssl-ev-search-bar.png){.thumbnail}
 
 De seguida, selecione o seu nome de domínio, escolha o seu alojamento e as suas opções até ao passo `Configure o seu alojamento web`.
 
 Selecione as suas escolhas de instalação de `módulo em 1 clique`{.action} e `CDN`{.action}, e desça no final da página até à secção `Torne o seu website seguro com os nossos certificados SSL`{.action}.
  
-![SSL EV order](images/ssl-ev-selection.png){.thumbnail}
+![SSL EV order](/pages/assets/screens/website/order/ssl-ev-selection.png){.thumbnail}
 
 Escolha `Sectigo EV SSL`{.action} e depois clique em `Seguinte`{.action}.
 
 Na nova página que aparece, introduza com exatidão as informações solicitadas por **Sectigo** antes que lhe seja emitido o certificado SSL EV:
 
-![SSL EV form](images/ssl-ev-step-2.png){.thumbnail}
+![SSL EV form](/pages/assets/screens/website/order/ssl-ev-step-2.png){.thumbnail}
 
 Clique em `Seguinte`{.action} depois de **todos os elementos** estarem corretamente inseridos.
 
@@ -183,4 +183,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 
+Fale com nossa [comunidade de utilizadores](/links/community). 

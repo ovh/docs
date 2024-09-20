@@ -15,7 +15,7 @@ updated: 2024-02-27
 > Este artigo destina-se aos utilizadores experientes que tenham no mínimo conhecimentos de base sobre o [lançamento PXE](https://en.wikipedia.org/wiki/Preboot_Execution_Environment) bem como sobre a implementação utilizada na OVHcloud: [PXE](https://ipxe.org/).
 >
 
-Na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), é possível especificar um modo de boot entre uma lista predefinida: disco principal ou rescue.
+Na [Área de Cliente OVHcloud](/links/manager), é possível especificar um modo de boot entre uma lista predefinida: disco principal ou rescue.
 Através da [API OVHcloud](https://api.ovh.com/), pode também definir scripts personalizados.
 
 Utilizar um script personalizado pode ser interessante nos seguintes casos:
@@ -25,7 +25,7 @@ Utilizar um script personalizado pode ser interessante nos seguintes casos:
 
 ## Requisitos
 
-- Um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/) **pronto a ser lançado/reboot** na sua conta OVHcloud.
+- Um [servidor dedicado](/links/bare-metal/bare-metal) **pronto a ser lançado/reboot** na sua conta OVHcloud.
 - Ter acesso à [API OVHcloud](https://api.ovh.com/).
 
 > [!warning]
@@ -86,7 +86,7 @@ Agora pode reiniciar o seu servidor e este irá utilizar o seu script [iPXE](htt
 
 ### Outros modos de boot <a name="leaveIpxeScript"></a>
 
-Pode alternar de novo entre o disco ou o modo rescue a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) (consulte o nosso guia "[Ativar e utilizar o modo rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)") ou através da [API OVHcloud](https://api.ovh.com/).
+Pode alternar de novo entre o disco ou o modo rescue a partir da [Área de Cliente OVHcloud](/links/manager) (consulte o nosso guia "[Ativar e utilizar o modo rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)") ou através da [API OVHcloud](https://api.ovh.com/).
 
 #### Migrar para disco <a name="switchToDisk"></a>
 

@@ -1,7 +1,7 @@
 ---
 title: Available datacenters, worker nodes and persistent storage flavors
 excerpt: ''
-updated: 2024-02-12
+updated: 2024-08-14
 ---
 
 ## Available datacenters, worker nodes and persistent storage flavors
@@ -22,7 +22,7 @@ When adding a worker node, Managed Kubernetes Service will deploy a managed Publ
 
 We currently support several types of instances with guaranteed and constant resources.
 
-Here is a comparative table of flavours available by region :
+Here is a comparative table of flavours available by region:
 
 | **GENERAL PURPOSE** | | | **CPU ORIENTED** | | | **RAM ORIENTED** | |
 | :---: | :--- | --- | :---: | :--- | --- | :---: | :--- |
@@ -33,10 +33,12 @@ Here is a comparative table of flavours available by region :
 | **GPU ORIENTED** | | | **DISCOVERY** | | | **IOPS ORIENTED** | |
 | :---: | :--- | --- | :---: | :--- | --- | :---: | :--- |
 | Name | Region availibility | | Name | Region availibility | | Name | Region availibility |
-| `T1-*` | BHS5 / GRA5 / GRA7 / GRA11 | | `D2-4` | All region | | `I1-*` | BHS5 / DE1 / GRA5 / GRA7 / GRA9 / GRA11 / SBG5 / UK1 / WAW1 |
-| `T2-*` | BHS5 / DE1 / GRA5 / GRA7 / GRA9 / GRA11 / UK1 / WAW1 | | `D2-8` | All region | | | |
-| `H100-*` | GRA11 | | | | | | |
-| `A100-180` | GRA11 | | | | | | |
+| `A100-180` | GRA11 | | `D2-4` | All region | | `I1-*` | BHS5 / DE1 / GRA5 / GRA7 / GRA9 / GRA11 / SBG5 / UK1 / WAW1 |
+| `H100-*` | GRA11 | | `D2-8` | All region | | | |
+| `L4-*`   | GRA11 | | | | | | |
+| `L40s-*` | GRA11 | | | | | | |
+| `T1-*`   | BHS5 / GRA5 / GRA7 / GRA11 | | | | | | |
+| `T2-*`   | BHS5 / DE1 / GRA5 / GRA7 / GRA9 / GRA11 / UK1 / WAW1 | | | | | | |
 
 Each family offers contains different flavors, consisting of a five amount of vCores, RAM and local storage.  
 For more information, please refer to the following page: [OVHcloud Public Cloud instances](https://www.ovhcloud.com/en-sg/public-cloud/prices/)
@@ -53,9 +55,13 @@ GPU (`T1-*`) instances are now supported! If you want to know [how to deploy GPU
 
 When adding a persistent volume though Kubernetes API (or `kubectl`), it will actually be deployed using Public Cloud additional disks (Cinder Volumes). We support the following Storage Classes:
 
-* `csi-cinder-high-speed` compliant with Managed Kubernetes Service after `1.18.*` release
-* `csi-cinder-classic` compliant with Managed Kubernetes Service after `1.18.*` release
+* `csi-cinder-high-speed-gen2` storage class is based on hardware that includes SSD disks with NVMe interfaces. The performance allocation is progressive and linear (30 IOPS allocated per GB and 0.5MB/s allocated per GB) with a maximum of 20k IOPS and 1GB/s per volume. The IOPS and bandwidth performance will increase as you scale up the storage space.
+* `csi-cinder-high-speed` performance is fixed. You will get up to 3,000 IOPS per volume, regardless of the volume size.
+* `csi-cinder-classic` uses traditional spinning disks (200 IOPS guaranteed, Up to 64 MB/s per volume).
 
-All these `Storage Classes` are based on Cinder, the OpenStack block storage service. The difference between them is the associated physical storage device, and the fact that `csi-cinder-high-speed` uses SSD, while `csi-cinder-classic` uses traditional spinning disks. This is detailed in the [Persistent Volumes ](/pages/public_cloud/containers_orchestration/managed_kubernetes/persistent-volumes-on-ovh-managed-kubernetes) guide.
+All these `Storage Classes` are based on Cinder, the OpenStack block storage service. The difference between them is the associated physical storage device. They are distributed transparently, on three physical local replicas.
+
+High Speed performance is theoretically best for volumes up to 100GB. Above 100GB per volume, you will get enhanced performance with a High Speed Gen2 volume.
+This is detailed in the [Persistent Volumes](/pages/public_cloud/containers_orchestration/managed_kubernetes/persistent-volumes-on-ovh-managed-kubernetes) guide.
 
 We will support future classes as soon they are made available in OVHcloud Public Cloud.

@@ -1,7 +1,7 @@
 ---
 title: 'Cambiar la contraseña de administrador en un servidor dedicado Windows'
 excerpt: 'Cómo cambiar la contraseña de administrador en un servidor dedicado Windows'
-updated: 2023-09-18
+updated: 2024-06-26
 ---
 
 > [!primary]
@@ -16,8 +16,8 @@ Al instalar o reinstalar un sistema operativo Windows, recibirá una contraseña
 
 ## Requisitos
 
-* Tener un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/){.external} con Windows instalado.
-* Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
+* Tener un [servidor dedicado](/links/bare-metal/bare-metal){.external} con Windows instalado.
+* Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
 
 ## Procedimiento
 
@@ -233,7 +233,7 @@ Write hive files? (y/n) [n] : y
 
 ### 4. reiniciar el servidor 
 
-En primer lugar, sustituya el netboot por **Arrancar en el disco duro** en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) (ver [Etapa 1](./#1-reiniciar-el-servidor-en-modo-de-rescate)). 
+En primer lugar, sustituya el netboot por **Arrancar en el disco duro** en el [área de cliente de OVHcloud](/links/manager) (ver [Etapa 1](./#1-reiniciar-el-servidor-en-modo-de-rescate)). 
 
 Desmonte la partición y reinicie el servidor con los siguientes comandos:
 
@@ -257,7 +257,7 @@ The system is going down for reboot NOW!
 
 ### 5. establecer una nueva contraseña (IPMI)
 
-En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la pestaña `IPMI`{.action} para abrir una sesión de KVM.
+En el [área de cliente de OVHcloud](/links/manager), acceda a la pestaña `IPMI`{.action} para abrir una sesión de KVM.
 
 ![IPMI](images/adminpw_win_03.png){.thumbnail}
 
@@ -303,7 +303,7 @@ Para más información sobre el modo de rescate, consulte [esta guía](/pages/ba
 
 #### 2. eliminar la contraseña actual
 
-En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la pestaña `IPMI`{.action} para abrir una sesión de KVM.
+En el [área de cliente de OVHcloud](/links/manager), acceda a la pestaña `IPMI`{.action} para abrir una sesión de KVM.
 
 ![IPMI](images/adminpw_win_03.png){.thumbnail}
 
@@ -325,7 +325,7 @@ El servidor debe reiniciarse.
 
 #### 3. reiniciar el servidor 
 
-En primer lugar, sustituya el netboot por **Arrancar en el disco duro** en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) (ver [Etapa 1](./#1-reiniciar-el-servidor-en-modo-de-rescate)). 
+En primer lugar, sustituya el netboot por **Arrancar en el disco duro** en el [área de cliente de OVHcloud](/links/manager) (ver [Etapa 1](./#1-reiniciar-el-servidor-en-modo-de-rescate)). 
 
 Al volver a la ventana de KVM, seleccione la opción de apagado `Reiniciar`{.action} con el botón Windows "Iniciar" en la parte inferior izquierda.
 

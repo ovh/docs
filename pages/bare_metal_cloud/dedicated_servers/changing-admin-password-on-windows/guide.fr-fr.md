@@ -1,7 +1,7 @@
 ---
 title: 'Modifier le mot de passe administrateur sur un serveur dédié Windows'
 excerpt: 'Découvrez comment modifier le mot de passe administrateur sur un serveur dédié Windows'
-updated: 2023-09-18
+updated: 2024-06-26
 ---
 
 ## Objectif
@@ -10,10 +10,17 @@ Lors de l’installation ou de la réinstallation d’un système d’exploitati
 
 **Ce guide vous accompagnera tout au long du processus de modification du mot de passe admin de votre serveur, via les configurations de mode rescue disponibles pour un système d'exploitation Windows.**
 
+> [!warning]
+>
+> Ce guide ne s'applique pas au démarrage en mode rescue intitulé `Windows customer rescue system`.
+> 
+> Consultez [ce guide](/pages/bare_metal_cloud/dedicated_servers/rcw-changing-admin-password-on-windows)  lors de l'utilisation de l'option `Windows customer rescue system (Windows2022-based)` dans l'espace client OVHcloud.
+>
+
 ## Prérequis
 
-- Posséder un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/){.external} avec Windows installé.
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+- Posséder un [serveur dédié](/links/bare-metal/bare-metal){.external} avec Windows installé.
+- Être connecté à l'[espace client OVHcloud](/links/manager){.external}.
 
 ## En pratique
 
@@ -228,7 +235,7 @@ Write hive files? (y/n) [n] : y
 
 ### Étape 4 : redémarrer le serveur 
 
-Commencez par remplacer le netboot par **Booter sur le disque dur** dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) (voir [Etape 1](./#etape-1-redemarrer-le-serveur-en-mode-rescue)). 
+Commencez par remplacer le netboot par **Booter sur le disque dur** dans l'[espace client OVHcloud](/links/manager) (voir [Etape 1](./#etape-1-redemarrer-le-serveur-en-mode-rescue)). 
 
 De retour en ligne de commande, démontez la partition et redémarrez le serveur avec les commandes suivantes :
 
@@ -252,7 +259,7 @@ The system is going down for reboot NOW!
 
 ### Étape 5 : définir un nouveau mot de passe (IPMI)
 
-Dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), accédez à l'onglet `IPMI`{.action} pour ouvrir une session KVM.
+Dans l'[espace client OVHcloud](/links/manager), accédez à l'onglet `IPMI`{.action} pour ouvrir une session KVM.
 
 ![IPMI](images/adminpw_win_03.png){.thumbnail}
 
@@ -298,7 +305,7 @@ Pour plus d'informations sur le mode rescue, consultez [ce guide](/pages/bare_me
 
 #### Étape 2 : supprimer le mot de passe actuel
 
-Dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), accédez à l'onglet `IPMI`{.action} pour ouvrir une session KVM.
+Dans l'[espace client OVHcloud](/links/manager), accédez à l'onglet `IPMI`{.action} pour ouvrir une session KVM.
 
 ![IPMI](images/adminpw_win_03.png){.thumbnail}
 
@@ -320,7 +327,7 @@ Le serveur doit alors être redémarré.
 
 #### Étape 3 : redémarrer le serveur 
 
-Commencez par remplacer le netboot par **Booter sur le disque dur** dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) (voir [Etape 1](./#etape-1-redemarrer-le-serveur-en-mode-rescue)).
+Commencez par remplacer le netboot par **Booter sur le disque dur** dans l'[espace client OVHcloud](/links/manager) (voir [Etape 1](./#etape-1-redemarrer-le-serveur-en-mode-rescue)).
 
 De retour dans la fenêtre KVM, sélectionnez l'option d'arrêt `Redémarrer`{.action} via le bouton Windows « Démarrer » en bas à gauche.
 

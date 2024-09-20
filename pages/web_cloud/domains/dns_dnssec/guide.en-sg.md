@@ -1,7 +1,7 @@
 ---
 title: 'Securing your domain name with DNSSEC'
 excerpt: 'Protect your domain name from cache poisoning by activating DNSSEC'
-updated: 2023-07-26
+updated: 2024-08-20
 ---
 
 ## Objective 
@@ -15,6 +15,11 @@ This way, they can redirect incoming traffic for your domain name to their websi
 The **D**omain **N**ame **S**ystem **SEC**ecurity Extensions (**DNSSEC**) protect your domain name’s DNS configuration against *cache poisoning* by verifying and authenticating DNS responses.
 
 **Find out how to enable DNSSEC for your domain name to protect it against *cache poisoning*.**
+
+> [!primary]
+>
+> The DNSSEC option is unavailable for domain names with the **.it** extension.
+>
 
 For more information on how **DNSSEC** works, please visit our page “[Understanding DNSSEC](/links/web/domains-dnssec){.external}”.
 
@@ -53,11 +58,11 @@ The page that appears will display general information about the service.
 
 In the `General information`{.action} tab, following [step 1](#step1), you can see the activation status of the **DNSSEC** on your domain name: Check the status next to "Secured Delegation - DNSSEC" inside the box "Security".
 
-![dnssec](images/activate-dnssec.png){.thumbnail}
+![dnssec](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/activate-dnssec.png){.thumbnail}
 
 With the activation button above `Secured Delegation - DNSSEC`{.action}, you can activate or deactivate **DNSSEC** on your domain name. When you perform these actions, a new window will appear in which you can validate the change.
 
-![dnssec](images/activate-dnssec-confirmation.png){.thumbnail}
+![dnssec](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/activate-dnssec-confirmation.png){.thumbnail}
 
 > [!primary]
 >
@@ -78,4 +83,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>. 
+Join our [community of users](/links/community). 

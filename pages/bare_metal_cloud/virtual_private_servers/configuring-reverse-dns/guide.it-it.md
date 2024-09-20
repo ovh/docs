@@ -1,7 +1,7 @@
 ---
-title: "Configura il reverse DNS di un VPS"
-excerpt: Come impostare la risoluzione reverse DNS
-updated: 2023-01-05
+title: "Come configurare il reverse DNS del tuo server (record PTR)"
+excerpt: Copri come impostare la risoluzione reverse DNS del tuo indirizzo IP dal tuo Spazio Cliente OVHcloud
+updated: 2024-09-17
 ---
 
 > [!primary]
@@ -10,41 +10,47 @@ updated: 2023-01-05
 
 ## Obiettivo
 
-Il **Reverse DNS** (*rDNS*) è il complemento della risoluzione "classica" dei DNS che permette di convertire un dominio in un indirizzo IP (record di tipo **A**). Una richiesta di questo tipo può essere risolta con il nome di dominio (record di tipo **PTR**). Ciò significa che le richieste DNS sull'indirizzo IP in questione restituiranno un dominio.
+Il Reverse DNS (*rDNS*) è il complemento della risoluzione DNS "*forward*" che permette di risolvere i nomi di dominio in indirizzi IP. Grazie al reverse DNS, un indirizzo IP può essere risolto in nome di dominio (o nome host) a cui è associato. Questo significa che le richieste DNS dell'indirizzo IP associato restituiranno questo nome di dominio.
 
-Configurare la risoluzione **Reverse DNS** di un VPS è particolarmente utile per l'invio di email. Il rischio che i tuoi messaggi vengano inviati tramite un sistema di protezione dallo Spam diminuirà se l'indirizzo IP del tuo server di posta elettronica si risolve correttamente nel tuo dominio.
+La configurazione del reverse DNS di un server è particolarmente utile durante l'invio di email. La convalida di un server di posta da parte dei sistemi di protezione antispam migliora se una richiesta DNS dell'indirizzo IP viene risolta correttamente.
 
-**Questa guida ti mostra come configurare il reverse DNS per gli indirizzi IP del tuo VPS.**
+**Questa guida ti mostra come configurare il reverse DNS di un indirizzo IP dalloSpazio Cliente OVHcloud.**
 
 ## Prerequisiti
 
-- Disporre di un [VPS](https://www.ovhcloud.com/it/vps/) sul proprio account OVHcloud
-- Un dominio con il suo campo `A` che punta verso il VPS
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- un indirizzo IP associato a un servizio del tuo account OVHcloud
+- Un dominio con il suo record `A` associato al tuo servizio
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), accedi alla sezione `Bare Metal Cloud`{.action} e apri `Network`{.action}. Clicca su `IP`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Bare Metal Cloud`{.action} e apri `Network`{.action}. Clicca su `IP`{.action}.
 
-La tabella di questa pagina contiene i tuoi servizi compatibili. L'ID del tuo VPS può essere filtrato utilizzando il menu a tendina **Service**.
+I menu a tendina della sezione **I miei indirizzi IP pubblici e i servizi associati** ti permettono di filtrare gli elementi della tabella per i servizi e trovare rapidamente l'indirizzo IP desiderato.
 
-![Reverse DNS](images/reversecp01.png){.thumbnail}
+![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/filterip.png){.thumbnail}
 
-Clicca sui tre puntini `...`{.action} nella riga dell'indirizzo IP in questione e seleziona `Modifica il reverse`{.action}.
+Clicca su `...`{.action} nella riga dell’indirizzo IP in questione e seleziona `Modifica il reverse`{.action}.
 
-![Reverse DNS](images/reversecp02.png){.thumbnail}
+![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/modifyreverse.png){.thumbnail}
 
 Nella nuova finestra, inserisci il reverse e clicca su `Conferma`{.action}.
 
-Potrai anche modificare il reverse direttamente tramite l'icona della colonna **Reverse** della tabella.
+![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/enterreverse.png){.thumbnail}
+
+È inoltre possibile modificare il reverse direttamente tramite l’icona a forma di penna nella colonna **Reverse DNS** della tabella.
 
 > [!primary]
 >
-Se la modifica non funziona come previsto, verifica che il record `A` sia configurato correttamente nella zona DNS del tuo dominio. Attenzione, la modifica della [zona DNS](/pages/web_cloud/domains/dns_zone_edit) può richiedere fino a 24 ore se hai modificato solo recentemente il record `A`.
+> Se la modifica non funziona come previsto, verifica che il record `A` sia configurato correttamente nella zona DNS del dominio. L’applicazione delle modifiche nella zona DNS potrebbe richiedere fino a 24 ore, nel caso in cui il record `A` sia stato modificato.
+>
+> Se il dominio è gestito da OVHcloud come Registrar **e utilizza i server DNS OVHcloud**, consulta [questa guida](/pages/web_cloud/domains/dns_zone_edit).
 >
 
-## Spingiti oltre <a name="gofurther"></a>
+## Per saperne di più
 
-[Iniziare a utilizzare un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
+[Modificare una zona DNS in OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+[Modificare i server DNS di un dominio OVHcloud](/pages/web_cloud/domains/dns_server_edit)
+
+Contatta la nostra [Community di utenti](/links/community).

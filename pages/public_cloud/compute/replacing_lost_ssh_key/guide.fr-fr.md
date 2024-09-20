@@ -1,84 +1,79 @@
 ---
-title: 'Changer sa clé SSH en cas de perte'
-updated: 2022-02-10
+title: "Comment remplacer une paire de clés SSH sur une instance Public Cloud"
+excerpt: "Découvrez comment restaurer l'accès au serveur en remplaçant une paire de clés SSH par une nouvelle en cas de perte de votre clé privée"
+updated: 2024-06-13
 ---
 
 ## Objectif
 
-En cas de perte de clé SSH, que cela soit suite à une réinstallation de poste ou autre, il est possible que vous ne soyez plus en mesure de vous connecter sur votre instance si vous n'avez configuré aucun moyen alternatif de vous connecter sur votre instance.
+La perte de votre clé SSH privée entraîne la perte de l'accès à votre instance si vous n'avez pas configuré d'autre moyen d'accès.
 
-Pour récupérer l'accès, nous avons mis à votre disposition un [mode rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) qui vous permet de vous connecter à l'aide d'un mot de passe puis de modifier vos fichiers.
+Cependant, vous pouvez toujours vous connecter à votre instance via le mode rescue d’OVHcloud, qui vous permet de vous connecter avec un mot de passe provisoire et de modifier vos fichiers.
 
-**Ce guide vous explique comment configurer le fichier  *authorized_keys*  de l'utilisateur  *admin*  afin de pouvoir ajouter une nouvelle clé SSH pour récupérer l'accès à votre instance.**
+**Ce guide vous explique comment remplacer vos clés SSH en cas de perte d'accès à votre instance.**
+
+> [!warning]
+> OVHcloud fournit des services dont la configuration et la gestion relèvent de votre responsabilité. Il est donc de votre responsabilité de vous assurer de leur bon fonctionnement.
+>
+> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de contacter un [prestataire de services spécialisé](/links/partner) ou de contacter [notre communauté d'utilisateurs](/links/community) si vous rencontrez des problèmes.
+>
 
 ## Prérequis
 
-- Disposer d'une [Instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/)dans votre compte OVHcloud
-- Avoir accès à votre instance via SSH en [mode rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode)
-- Créer une clé SSH
+- Une [instance Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
+- Être connecté à l’[espace client OVHcloud](/links/manager)
 
 ## En pratique
 
-> [!primary]
->
-Si vous souhaitez enregistrer une clé SSH dans l'espace client OVHcloud, nous vous recommandons d'utiliser le chiffrement RSA ou ECDSA. ED25519 n'est actuellement pas pris en charge.
->
+### Étape 1 : créer une nouvelle paire de clés
 
-Après avoir monté le disque de votre instance en [mode rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode#acceder-a-vos-donnees), vous serez en mesure d'accéder à l'ensemble de vos fichiers.
+Créez une nouvelle paire de clés SSH sur votre appareil local, en suivant les instructions de la première partie du [guide de création d'une clé SSH](/pages/public_cloud/compute/creating-ssh-keys-pci).
 
-Le fichier contenant vos clés SSH est le fichier :
+### Étape 2 : accéder à votre instance en mode rescue
 
-```sh
-/mnt/home/NOM_UTILISATEUR/.ssh/authorized_keys
+Suivez les étapes du [guide du mode rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) pour redémarrer l'instance en mode rescue, vous y connecter et monter vos partitions.
+
+Une fois que vous avez utilisé la commande `mount` (comme décrit dans le guide) et que votre partition système est accessible, vous pouvez utiliser la commande suivante :
+
+```bash
+chroot path/to/partition/mountpoint
 ```
 
-Si vous souhaitez ajouter votre nouvelle clé SSH, il suffit donc d'éditer ce fichier et d'y ajouter votre nouvelle clé :
+Le chemin d'accès au fichier dépend du point de montage utilisé. Si vous avez monté votre partition à `/mnt`, vous devez entrer ce qui suit :
 
-```sh
-sudo vim /mnt/home/NOM_UTILISATEUR/.ssh/authorized_keys
-ssh-rsa 1111111111122222222222333333333333444444444555555555556666666666777777777778888888888999999900000000000000000000000000== old@sshkey
-ssh-rsa AAAAAAAAABBBBBBBBBBBCCCCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDEEEEEEEEEEEFFFFFFFFFFFFFGGGGGGGGGGGGGhhhhhhhhhhhhhhhhhhhhhhhhhh== new@sshkey
-```
-### Changer la clé SSH utilisateur par défaut
-
-Pour modifier la clé SSH de votre utilisateur par défaut, il faudra simplement vous rendre dans le dossier personnel de celui ci. Par exemple, pour l'utilisateur  admin , le fichier à trouver se trouvera dans le dossier suivant :
-
-```sh
-/home/admin/.ssh/authorized_keys
+```bash
+chroot /mnt/
 ```
 
-Pour une instance sous Ubuntu, l'utilisateur par défaut sera  ubuntu , le fichier sera donc dans le dossier suivant :
+Vous devriez maintenant avoir un accès complet en écriture à vos fichiers dans ce dossier.
 
-```sh
-/home/ubuntu/.ssh/authorized_keys
-```
-### Changer le mot de passe utilisateur par défaut
+### Étape 3 : remplacer la clé
 
-Vous pouvez aussi modifier le mot de passe de votre utilisateur par défaut en utilisant le mode rescue et les commandes suivantes (dans le cas où l'utilisateur est  admin ) :
+Ouvrez le fichier « authorized_keys » concerné avec un éditeur de texte. Ce fichier stocke les clés SSH et se trouve dans le dossier « home » de l'utilisateur avec lequel vous vous connectez à votre instance.
 
-On change le répertoire racine pour se placer directement sur le disque de l'instance :
+Exemple :
 
-> [!primary]
->
-Dans l'exemple ci-dessous, nous avons utilisé vdb1 comme nom du disque du serveur et mnt comme point de montage.
->
-
-```sh
-/home/admin# mount /dev/vdb1 /mnt/
-/home/admin# chroot /mnt/
+```bash
+nano /mnt/home/USER_NAME/.ssh/authorized_keys
 ```
 
-On change le mot de passe admin :
+Remplacez `USER_NAME` par votre nom d'utilisateur réel.
 
-```sh
-passwd admin
+Faites un copier-coller de votre nouvelle clé publique (créée à l'étape 1) dans le fichier. Elle devrait ressembler à l'exemple suivant :
+
+```console
+ssh-rsa 1111111111122222222222333333333333444444444555555555556666666666
+777777777778888888888999999900000000000000000000000000== old@sshkey
+ssh-rsa AAAAAAAAABBBBBBBBBBBCCCCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDEEEEEEEEE
+EEFFFFFFFFFFFFFGGGGGGGGGGGGGhhhhhhhhhhhhhhhhhhhhhhhhhh== new@sshkey
 ```
 
-Une fois cette modification effectuée et sauvegardée, il vous suffit de redémarrer votre instance sur son disque afin d'être en mesure de vous connecter sur votre instance avec votre nouvelle clé SSH.
+Pour des raisons de sécurité, supprimez la chaîne de clé obsolète « old » du fichier. Enregistrez vos modifications et quittez l'éditeur.
+
+Redémarrez l'instance en mode « normal » depuis votre [espace client OVHcloud](/links/manager). Consultez les instructions du [guide sur le mode rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) si nécessaire.
+
+Vous avez maintenant accès à l'instance avec votre nouvelle paire de clés SSH.
 
 ## Aller plus loin
 
-[Passer root et définir un mot de passe](/pages/public_cloud/compute/become_root_and_change_password)
-
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
-
+Échangez avec notre [communauté d'utilisateurs](/links/community).

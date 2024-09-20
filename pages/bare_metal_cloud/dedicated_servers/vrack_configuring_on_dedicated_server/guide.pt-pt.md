@@ -14,14 +14,14 @@ O vRack (rack virtual) da OVHcloud permite agrupar virtualmente vários servidor
 
 **Saiba como configurar o vRack em vários servidores dedicados.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZA7IsbDdAmc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/ZA7IsbDdAmc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Requisitos
 
 - Um serviço [vRack](https://www.ovh.pt/solucoes/vrack/) ativado na sua conta
-- Vários [servidores dedicados](https://www.ovhcloud.com/pt/bare-metal/) (compatíveis com vRack)
+- Vários [servidores dedicados](/links/bare-metal/bare-metal) (compatíveis com vRack)
 - Dispor de um acesso de administrador (sudo) ao servidor através de SSH ou RDP
-- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+- Estar ligado à [Área de Cliente OVHcloud](/links/manager)
 - Preparar o intervalo de endereços IP privados que escolheu
 
 > [!warning]
@@ -37,7 +37,7 @@ Depois de ter entrado na sua área de cliente OVHcloud, vá ao menu `Bare Metal 
 
 ### Etapa 2: adicionar os seus servidores ao vRack
 
-Depois de ativar o vRack na sua conta, aceda à secção `Bare Metal Cloud`{.action} da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique em `Network`{.action} e abra o menu `vRack`{.action}.
+Depois de ativar o vRack na sua conta, aceda à secção `Bare Metal Cloud`{.action} da [Área de Cliente OVHcloud](/links/manager), clique em `Network`{.action} e abra o menu `vRack`{.action}.
 
 Selecione o seu vRack na lista para apresentar a lista dos serviços elegíveis. Clique em cada um dos servidores que deseja adicionar ao vRack e, a seguir, em `Adicionar`{.action}.
 
@@ -60,7 +60,7 @@ Pode utilizar qualquer intervalo de IP privados à sua escolha e qualquer endere
 
 Os nomes das interfaces de rede dos seus servidores nem sempre são os mesmos. Nos exemplos abaixo, substitua NETWORK_INTERFACE pelo nome de interface adequado.
 
-A melhor forma de verificar a interface correta para o vRack é verificar o separador `Interfaces de rede`{.action} do seu servidor na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Na tabela abaixo, tome nota do endereço MAC, que é também o **nome** da interface **Privada**.
+A melhor forma de verificar a interface correta para o vRack é verificar o separador `Interfaces de rede`{.action} do seu servidor na sua [Área de Cliente OVHcloud](/links/manager). Na tabela abaixo, tome nota do endereço MAC, que é também o **nome** da interface **Privada**.
 
 ![Interface vRack](images/private_interface.png){.thumbnail}
 
@@ -70,7 +70,7 @@ Depois de aceder ao servidor através de SSH, pode listar as suas interfaces de 
 ip a
 ```
 
-Na linha que começa por ```link ether```, pode verificar que esta interface corresponde à interface **Private** indicada na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Utilize este nome de interface para substituir `NETWORK_INTERFACE` nas configurações abaixo (exemplo: `eno2`).
+Na linha que começa por ```link ether```, pode verificar que esta interface corresponde à interface **Private** indicada na sua [Área de Cliente OVHcloud](/links/manager). Utilize este nome de interface para substituir `NETWORK_INTERFACE` nas configurações abaixo (exemplo: `eno2`).
 
 ```console
 link ether f0:00:00:ef:0e:f0

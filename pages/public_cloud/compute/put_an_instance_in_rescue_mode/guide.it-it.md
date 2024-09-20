@@ -13,7 +13,7 @@ Se non riesci ad accedere alla tua istanza a causa di una configurazione non cor
 ## Prerequisiti
 
 - Aver creato un’istanza [Public Cloud](https://www.ovhcloud.com/it/public-cloud/){.external} nel tuo account OVHcloud
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 
 ## Procedura
 
@@ -23,7 +23,7 @@ Se non riesci ad accedere alla tua istanza a causa di una configurazione non cor
 
 ### Attiva la modalità di ripristino
 
-Per prima cosa, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e clicca sul menu `Public Cloud`{.action}.
+Per prima cosa, accedi al tuo [Spazio Cliente OVHcloud](/links/manager){.external} e clicca sul menu `Public Cloud`{.action}.
 
 Poi, seleziona il tuo progetto Public Cloud dal menu a sinistra e vai su Istanze.
 
@@ -35,9 +35,13 @@ A questo punto visualizzi la finestra di dialogo “Riavvia in modalità Rescue�
 
 ![Spazio Cliente](images/rescue2.png){.thumbnail}
 
-Una volta riavviato il Rescue mode, una casella di informazioni mostrerà i metodi di accesso disponibili. La tua **password della modalità Rescue** temporanea verrà visualizzata solo nella console VNC. Clicca sull'istanza nella tabella e poi accedi alla scheda `Console VNC`{.action} per recuperarla.
+Una volta riavviato il Rescue mode, una casella di informazioni mostrerà i metodi di accesso disponibili.
 
 ![Spazio Cliente](images/rescuedata.png){.thumbnail}
+
+La tua **password della modalità Rescue** temporanea verrà visualizzata solo nella console VNC. Clicca sull'istanza nella tabella e poi accedi alla scheda `Console VNC`{.action} per recuperarla.
+
+<table><tbody><tr><td><img alt="VNC console" class="thumbnail" src="/images/vncconsole.png" loading="lazy"></td><td><img alt="VNC rescue" class="thumbnail" src="/images/vncrescue.png" loading="lazy"></td></tr></tbody></table>
 
 ### Accedi ai tuoi dati
 

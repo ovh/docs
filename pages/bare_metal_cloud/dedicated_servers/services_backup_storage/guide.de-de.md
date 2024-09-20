@@ -1,7 +1,7 @@
 ---
 title: 'Backup Storage auf einem Dedicated Server verwenden'
 excerpt: 'Erfahren Sie hier, wie Sie zusätzlichen Speicherplatz aktivieren und auf diesen zugreifen'
-updated: 2023-07-28
+updated: 2024-07-09
 ---
 
 > [!primary]
@@ -22,8 +22,8 @@ Die dedizierten Server von OVHcloud inkludieren einen zusätzlichen Backup-Speic
 
 ## Voraussetzungen
 
-- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) in Ihrem Kunden-Account.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 > [!warning]
 > Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](https://eco.ovhcloud.com/de/about/) eingesetzt wird.
@@ -34,7 +34,7 @@ Die dedizierten Server von OVHcloud inkludieren einen zusätzlichen Backup-Speic
 
 ### Backup Storage aktivieren
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) 
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) 
 ein. Wechseln Sie zum Bereich `Bare Metal Cloud`{.action} und wählen Sie dann Ihren Server unter `Dedicated Server`{.action} aus. Klicken Sie im Tab `Storage-Backup`{.action} auf den Button  `Storage-Backup aktivieren`{.action}.
 
 ![Backup Storage aktivieren](images/backup-storage01.png){.thumbnail}
@@ -51,7 +51,7 @@ Der Zugriff auf Ihren Speicherplatz ist per IP-Adresse mithilfe einer Zugriffsko
 
 #### Zugang zum Backup Storage hinzufügen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Wechseln Sie zum Bereich `Bare Metal Cloud`{.action} und wählen Sie dann Ihren Server unter `Dedicated Server`{.action} aus. Klicken Sie im Tab `Storage-Backup`{.action} auf den Button `Storage-Backup löschen`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein. Wechseln Sie zum Bereich `Bare Metal Cloud`{.action} und wählen Sie dann Ihren Server unter `Dedicated Server`{.action} aus. Klicken Sie im Tab `Storage-Backup`{.action} auf den Button `Storage-Backup löschen`{.action}.
 
 ![Zugang zum Backup-Speicher hinzufügen](images/backup-storage03.png){.thumbnail}
 
@@ -117,21 +117,21 @@ Um zu überprüfen, ob Ihre IP-Adresse autorisiert ist, verwenden Sie folgenden 
 
 ### Passwort zurücksetzen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) 
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) 
 ein. Wechseln Sie zum Bereich `Bare Metal Cloud`{.action} und wählen Sie dann Ihren Server unter `Dedicated Server`{.action} aus. Klicken Sie im Tab `Storage-Backup`{.action} auf den Button `Sie haben Ihr Passwort vergessen?`{.action}.
 
 Nachdem Sie im angezeigten Fenster auf `Bestätigen`{.action} geklickt haben, wird eine E-Mail an die für Ihren Administrator-Kontakt eingetragene E-Mail-Adresse versandt. Folgen Sie den darin enthaltenen Anweisungen, um Ihr Passwort zurückzusetzen.
 
 ### Backup Storage löschen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) 
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) 
 ein. Wechseln Sie zum Bereich `Bare Metal Cloud`{.action} und wählen Sie dann Ihren Server unter `Dedicated Server`{.action} aus. Klicken Sie im Tab `Storage-Backup`{.action} auf den Button `Storage-Backup löschen`{.action}.
 
 Klicken Sie auf `Bestätigen`{.action}, um mit der Löschung fortzufahren. Ihr Backup Storage wird nach einigen Minuten abgeschaltet. Alle Daten des Speicherplatzes werden gelöscht.
 
 ### Zusätzlichen Speicherplatz bestellen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) 
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) 
 ein. Wechseln Sie zum Bereich `Bare Metal Cloud`{.action} und wählen Sie dann Ihren Server unter `Dedicated Server`{.action} aus. Klicken Sie im Tab `Storage-Backup`{.action} auf den Button `Speicherplatz bestellen`{.action}.
 
 ![Zusätzlichen Backup-Speicherplatz bestellen](images/backup-storage06.png){.thumbnail}
@@ -252,7 +252,7 @@ Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Wer
 * **LocalFolder**: Name des lokalen Verzeichnisses, in dem Sie die Datei speichern möchten
 * **File**: Zugriffspfad zur Datei, die Sie herunterladen möchten
 
-####lftp (für Linux)
+#### lftp (für Linux)
 
 > [!primary]
 >
@@ -339,6 +339,16 @@ Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Wer
 
 * **HostName**: Name Ihres Backup Storages
 * **ServiceName**: Name Ihres Servers (z. B.: ns0000000.ip-123-123-123.net)
+
+Möglicherweise wird die folgende Fehlermeldung angezeigt:
+
+```console
+System error 1272 has occurred.
+
+You can't access this shared folder because your organization's security policies block unauthenticated guest access. These policies help protect your PC from unsafe or malicious devices on the network.
+```
+
+Dieser Fehler sollte durch Bearbeiten der Windows-Registrierung lösbar sein: Öffnen Sie das Windows-Dienstprogramm *regedit*, und suchen Sie nach dem Eintrag `HKLM\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters`. Setzen Sie den Wert von `AllowInsecureGuestAuth` auf "1". Weitere Informationen zu diesem Thema finden Sie auf den [Microsoft Support-Seiten](https://answer.microsoft.com/en-us/windows/forum/all/you-cant-access-this-shared-folder-because-your/01d15775-2cbe-41f8-beb8-84ce588b34ab).
 
 ##### Linux
 

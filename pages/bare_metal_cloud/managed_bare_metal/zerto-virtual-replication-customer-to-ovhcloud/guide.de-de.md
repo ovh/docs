@@ -15,7 +15,7 @@ Der Einfachheit halber beschreiben wir die einfachste Konfiguration, bei der das
 - Die Ziel-Managed-Bare-Metal muss über mindestens eine verfügbare öffentliche IP-Adresse für den VPN-Endpunkt verfügen.
 - Der Kundenstandort muss über eine funktionsfähige Zerto-Installation verfügen.
 - Die von Zerto für die Replikation verwendeten virtuellen Maschinen (VRA: Virtual Replication Appliance) sowohl auf Kundenseite als auch bei OVHcloud müssen sich über die TCP-Ports 4007 und 4008 miteinander austauschen können.
-- Die Verwaltungsmaschinen von Zerto (ZVM: Zerto Virtual Manager) sowohl auf Kundenseite als auch bei OVHcloud müssen sich über den TCP-Port 9081 miteinander austauschen können.
+- Die Verwaltungsmaschinen von Zerto (ZVM: Zerto Virtual Manager) sowohl auf Kundenseite als auch bei OVHcloud müssen sich über den TCP-Port 9071 miteinander austauschen können.
 
 ## Beschreibung
 
@@ -214,7 +214,7 @@ Für weitere Informationen können Sie auch die IPSec-Log-Datei in /var/log/ipse
 
 Um das Pairing zwischen dem Kundenstandort und dem OVHcloud Standort zu ermöglichen, muss der Traffic für folgende Ports erlaubt sein:
 
-- Port 9081 zwischen den ZVM
+- Port 9071 zwischen den ZVM
 - Ports 4007 und 4008 zwischen den VRAs
 
 #### 4.1 ZVM-Öffnung
@@ -239,7 +239,7 @@ Wählen Sie für die Bereiche “Source” und “Destination” den Typ “Sing
 
 ![Zerto VPN](images/image-EN-28.png){.thumbnail}
 
-Der autorisierte Ziel-TCP-Port ist der Port 9081.
+Der autorisierte Ziel-TCP-Port ist der Port 9071.
 
 Speichern Sie die Regel und wenden Sie sie an.
 
@@ -315,7 +315,7 @@ Anschließend werden Sie zum Login-Bildschirm des ZVM weitergeleitet, wo folgend
 
 ![Zerto VPN](images/image-EN-40.png){.thumbnail}
 
-Die wahrscheinlichste Ursache ist, dass der OVHcloud ZVM den ZVM des Kunden nicht über den TCP-Port 9081 kontaktieren kann. Der OVHcloud ZVM muss dazu in der Lage sein, die Verbindung herzustellen.
+Die wahrscheinlichste Ursache ist, dass der OVHcloud ZVM den ZVM des Kunden nicht über den TCP-Port 9071 kontaktieren kann. Der OVHcloud ZVM muss dazu in der Lage sein, die Verbindung herzustellen.
 
 ## Weiterführende Informationen
 

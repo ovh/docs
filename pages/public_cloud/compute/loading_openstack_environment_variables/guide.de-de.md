@@ -1,7 +1,7 @@
 ---
 title: 'OpenStack Umgebungsvariablen einrichten'
 excerpt: 'Erfahren Sie hier, wie Sie Ihre Umgebungsvariablen für die Nutzung der OpenStack API einrichten'
-updated: 2023-11-29
+updated: 2024-07-15
 ---
 
 ## Ziel
@@ -10,7 +10,7 @@ Das Konfigurieren der OpenStack Umgebungsvariablen auf Ihrem lokalen Gerät erm�
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben einen [OpenStack User erstellt](/pages/public_cloud/compute/create_and_delete_a_user).
 - OpenStack ist bereits [auf Ihrem System installiert](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api).
 
@@ -20,7 +20,7 @@ Das Konfigurieren der OpenStack Umgebungsvariablen auf Ihrem lokalen Gerät erm�
 
 Um die Umgebungsvariablen zu erhalten, können Sie die *OpenRC*-Datei von Ihrem zuvor erstellten OpenStack User-Account herunterladen.
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wechseln Sie zum Bereich `Public Cloud`{.action}. Wählen Sie Ihr Public Cloud Projekt oben links aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und wechseln Sie zum Bereich `Public Cloud`{.action}. Wählen Sie Ihr Public Cloud Projekt oben links aus.
 <br>Öffnen Sie `Users & Roles`{.action} unter `Project Management` im linken Menü. klicken Sie auf `...`{.action} rechts von Ihrem Benutzer und wählen Sie dann `RC-Datei von OpenStack herunterladen`{.action}.
 
 ![openstack-variables](images/pciopenstackvariables1e.png){.thumbnail}
@@ -54,24 +54,6 @@ Wenn die CLIs schon installiert sind, überprüfen Sie deren Funktion wie folgt:
 | 8d7c67c0-38e1-4091-88d5-c14844c1f455 | b2-7-gra11 | ACTIVE | Ext-Net=2001:xxxx:xxx:xxx::xxxx, xx.xxx.xx.xx | Debian 12 | b2-7   |
 +--------------------------------------+------------+--------+-----------------------------------------------+-----------+--------+
 ```
-
-Das Passwort des Horizon-Nutzers kann fest gespeichert werden. Dazu ersetzen Sie den folgenden Abschnitt:
-
-```bash
-echo "Please enter your OpenStack Password: "
-read -sr OS_PASSWORD_INPUT
-export OS_PASSWORD=$OS_PASSWORD_INPUT
-```
-
-Fügen Sie Folgendes ein:
-
-```bash
-#echo "Please enter your OpenStack Password: "
-#read -sr OS_PASSWORD_INPUT
-export OS_PASSWORD="Ihr Benutzerpasswort"
-```
-
-Diese Umgebung muss für jede neue Sitzung in der bestehenden Umgebung geladen werden. Sie können dies aber auch auf permanente Weise einrichten, indem die Quelle (*openrc.sh*) zur Datei *bashrc* hinzugefügt wird. Dazu muss das Passwort in die Datei geschrieben werden. 
 
 #### **Mit Windows**
 

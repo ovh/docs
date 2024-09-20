@@ -19,8 +19,8 @@ Public cloud database engines are managed services, which means that they are no
 > - MySQL
 > - Opensearch
 > - PostgreSQL
-> - Redis
->
+> - Caching
+
 
 ## Requirements
 
@@ -119,7 +119,7 @@ Open the following API call, paste your service ID into the `serviceName` input 
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/postgresql
 >> >
-> Redis
+> Caching
 >> > [!api]
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/redis
@@ -164,7 +164,7 @@ Open the following API call and paste the corresponding inputs (serviceName, clu
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/postgresql/{clusterId}/advancedConfiguration
 >> >
-> Redis
+> Caching
 >> > [!api]
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/redis/{clusterId}/advancedConfiguration
@@ -207,7 +207,7 @@ Open the following API call and paste the corresponding inputs (serviceName, clu
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/postgresql/{clusterId}/capabilities/advancedConfiguration
 >> >
-> Redis
+> Caching
 >> > [!api]
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/redis/{clusterId}/capabilities/advancedConfiguration
@@ -250,7 +250,7 @@ Open the following API call and paste the corresponding inputs (serviceName, clu
 >> >
 >> > @api {v1} /cloud PUT /cloud/project/{serviceName}/database/postgresql/{clusterId}/advancedConfiguration
 >> >
-> Redis
+> Caching
 >> > [!api]
 >> >
 >> > @api {v1} /cloud PUT /cloud/project/{serviceName}/database/redis/{clusterId}/advancedConfiguration

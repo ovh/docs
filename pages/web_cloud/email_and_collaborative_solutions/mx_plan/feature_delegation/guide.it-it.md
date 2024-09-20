@@ -1,5 +1,5 @@
 ---
-title: delegare la gestione dei tuoi account email a un'altra persona
+title: "MX Plan - Delegare la gestione dei tuoi account email a un'altra persona"
 excerpt: Come delegare la gestione degli account email della tua soluzione MX Plan
 updated: 2021-10-08
 ---

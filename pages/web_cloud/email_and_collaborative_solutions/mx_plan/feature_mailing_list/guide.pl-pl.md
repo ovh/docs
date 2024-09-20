@@ -1,7 +1,7 @@
 ---
 title: 'Korzystanie z list mailingowych i zarządzanie nimi'
 excerpt: 'Z tego przewodnika dowiesz się, jak korzystać z list mailingowych'
-updated: 2023-08-01
+updated: 2024-08-07
 ---
 
 ## Wprowadzenie
@@ -40,6 +40,10 @@ Nadawca (sender) przesyła wiadomość e-mail do odbiorców z listy mailingowej.
 ## W praktyce
 
 ### Tworzenie listy mailingowej
+
+> [!success]
+>
+> Lista mailingowa zachowuje się jak adres e-mail. Nie można zmienić jej nazwy. Jeśli nazwa listy mailingowej nie jest już dla Ciebie odpowiednia, utwórz nową i usuń starą.
 
 Aby utworzyć listę mailingową, przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i wybierz kartę `Web Cloud`{.action} znajdującą się u góry.
 

@@ -70,7 +70,7 @@ Vous pouvez effectuer un test d'envoi pour vérifier que le compte est bien para
 
 ![emailpro](images/configuration-mail-windows-step2.png){.thumbnail}
 
-Si vous devez renseigner manuellement des champs techniques dans les préférences du compte, vous trouverez ci-dessous les paramètres à utiliser avec notre offre E-mail Pro :
+Si vous devez renseigner manuellement des champs techniques dans les préférences du compte, vous trouverez ci-dessous les paramètres à utiliser avec notre offre E-mail Pro.
 
 |Type de serveur|Nom du serveur|SSL|Port|
 |---|---|---|---|

@@ -1,6 +1,6 @@
 ---
-title: 'Configuring your Email Pro account in Outlook 2016 for Mac'
-excerpt: 'Find out how to configure your Email Pro account in Outlook 2016 for Mac.'
+title: 'Email Pro - Configure your email account on Outlook for macOS'
+excerpt: 'Find out how to configure your Email Pro account in Outlook for Mac.'
 updated: 2020-03-18
 ---
 
@@ -22,7 +22,7 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 
 > [!primary]
 >
-> Are you using Outlook 2016 for Windows? Read this guide: [Configuring your email address in Outlook 2016 for Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016).
+> Are you using Outlook for Windows? Read this guide: [Configuring your email address in Outlook for Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016).
 >
 
 ## Instructions
@@ -62,7 +62,7 @@ To check that the account has been configured correctly, you can send a test ema
 
 ![emailpro](images/configuration-outlook-2016-mac-step2.png){.thumbnail}
 
-If you need to enter any settings manually in your account preferences, the technical settings you will need to use with our Email Pro solution are listed below:
+If you need to enter any settings manually in your account preferences, the technical settings you will need to use with our Email Pro solution are listed below.
 
 |Server type|Server name|SSL|Port|
 |---|---|---|---|
@@ -77,8 +77,8 @@ OVHcloud also offers a web application that includes various [collaborative feat
 
 ## Go further
 
-[Configuring an email address included in an MX Plan package or in a Web Hosting package in Outlook 2016 for Mac](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac)
+[Configuring an email address included in an MX Plan package or in a Web Hosting package in Outlook for Mac](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac)
 
-[Configuring your Exchange account in Outlook 2016 for Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac)
+[Configuring your Exchange account in Outlook for Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac)
 
 Join our community of users on <https://community.ovh.com/en/>.

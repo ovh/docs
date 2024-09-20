@@ -196,11 +196,11 @@ Some tips to make your files as light as possible:
 
 For readability reasons, you should store your images in a dedicated directory:
 
-![File and Folder Tree](images/create_your_personal_webpage_1.png){.thumbnail}
+![File and Folder Tree](/pages/assets/screens/other/web-tools/vscode/create_your_personal_webpage_1.png){.thumbnail}
 
 Consider a file in *PNG* format. Place it in the “images” directory:
 
-![File and Folder Tree with Image](images/create_your_personal_webpage_2.png){.thumbnail}
+![File and Folder Tree with Image](/pages/assets/screens/other/web-tools/vscode/create_your_personal_webpage_2.png){.thumbnail}
 
 We will now create a new paragraph in which we will place the image (in this example, we do not specify the image display size in pixels. The browser will then display it in its original file size.
 
@@ -224,7 +224,7 @@ We will now create a new paragraph in which we will place the image (in this exa
 
 The result on your browser should be :
 
-![Browser HTML Result](images/create_your_personal_webpage_3_en.png){.thumbnail}
+![Browser HTML Result](/pages/assets/screens/other/browsers/web-pages/create_your_personal_webpage_3_en.png){.thumbnail}
 
 ### Format your content using CSS styles
 
@@ -237,7 +237,7 @@ Style sheets can change the appearance and behaviour of HTML-encoded elements.
 
 As with HTML files, CSS files can be created with any text editor. The extension of these files must be in *.css*.
 
-![CSS File Placement](images/create_your_personal_webpage_4.png){.thumbnail}
+![CSS File Placement](/pages/assets/screens/other/web-tools/vscode/create_your_personal_webpage_4.png){.thumbnail}
 
 We now need to link this CSS file, which we named by convention *style.css*, to our HTML page. This link is done by adding a `<link>` tag in the `<head>` tag of the *index.html* file:
 
@@ -296,7 +296,7 @@ You will see that the text is now glued to the edges of the browser.
 
 The padding property defines the revolving edge (padding), which is the space outside the frame that contains the text (or any element). The following diagram illustrates the correspondence of these terms in the so-called "box model" in CSS:
 
-![CSS Box Template](images/create_your_personal_webpage_5.png){.thumbnail}
+![CSS Box Template](/pages/assets/schemas/web-hosting/create_your_personal_webpage_5.png){.thumbnail}
 
 ### Improve the HTML structure of the document
 
@@ -444,4 +444,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

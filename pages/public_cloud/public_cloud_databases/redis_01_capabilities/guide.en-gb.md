@@ -1,7 +1,7 @@
 ---
 title: Caching - Capabilities and Limitations
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Caching
-updated: 2024-05-27
+updated: 2024-06-12
 ---
 
 ## Objective
@@ -90,6 +90,7 @@ Here are some considerations to take into account when using private network:
 - Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
 - When connecting from an outside subnet, the Openstack IP gateway must be enabled in the subnet used for the Database service. The customer is responsible for any other custom network setup.
 - Subnet sizing should include considerations for service nodes, other co-located services within the same subnet, and an allocation of additional available IP addresses for maintenance purposes. Failure to adequately size subnets could result in operational challenges and the malfunctioning of services.
+- OpenStack subnets routes announcement will not be applied to your services. 
 
 ##### Authorised IPs
 
@@ -103,7 +104,7 @@ So for example on a server with 7GB memory, you will get up to 7 \* 4096 = 28672
 
 #### Advanced parameters
 
-You can further customise your service by using advanced parameters. See the [Advanced parameters references documentation](https://help.ovhcloud.com/csm/en-gb-public-cloud-databases-redis-advanced-parameters-references?id=kb_article_view&sysparm_article=KB0054733) for more information on the supported parameters.
+You can further customise your service by using advanced parameters. See the [Advanced parameters references documentation](/pages/public_cloud/public_cloud_databases/redis_09_advanced_parameters_references) for more information on the supported parameters.
 
 #### Backups
 

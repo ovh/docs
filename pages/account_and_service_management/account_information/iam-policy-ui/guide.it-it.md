@@ -1,7 +1,7 @@
 ---
 title: Come utilizzare le politiche IAM dallo Spazio Cliente
 excerpt: Come assegnare diritti di accesso specifici agli utenti da un account OVHcloud
-updated: 2024-02-19
+updated: 2024-07-04
 ---
 
 > [!primary]
@@ -71,6 +71,7 @@ Compare il seguente form:
 ![Crea una politica](images/create_a_policy_01.png){.thumbnail}
 
 - **Nome della politica** (obbligatorio): è il nome che comparirà nelle interfacce. Il nome deve essere unico e non deve contenere spazi.
+- **Identità**: selezionare le identità interessate da questo criterio. È possibile assegnare più tipi di identità.
 - **Tipi di prodotti**: seleziona i tipi di prodotto per definire il campo di applicazione della politica. Uno o più tipi di prodotto possono essere inclusi nella stessa politica.
 - **Risorse**: aggiungete risorse o gruppi di risorse che saranno coperti dalla politica. Le risorse disponibili sono filtrate per tipo di prodotto selezionato in precedenza.
 - **Azioni**
@@ -141,21 +142,9 @@ Per eliminare una politica esistente, clicca sul pulsante `...`{.action} a destr
 
 Una finestra contestuale ti chiederà di confermare l'eliminazione.
 
-### Associa un'identità a una politica
-
-Per collegare un'identità a una politica, clicca sul pulsante `...`{.action} a destra della politica e poi su `Gestisci le identità associate`{.action}.
-
-![Modifica una politica](images/editing_a_policy.png){.thumbnail}
-
-In questo modo potrai aggiungere ed eliminare gli utenti o i gruppi a cui applicare la politica.
-
-![Associa un'identità](images/link_identity_to_policy.png){.thumbnail}
-
 ### Gestione delle identità
 
-Le identità disponibili per le policy sono gestite tramite la scheda `Gestione degli utenti`{.action}, nel menu `Il mio account`{.action}.
-
-`Identità`{.action} del menu IAM ti reindirizza verso questo menu.
+Le identità disponibili per le policy sono gestite tramite la scheda `Identità`{.action}.
 
 Visualizza i dettagli della gestione degli utenti nella [documentazione dedicata](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 

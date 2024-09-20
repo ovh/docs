@@ -12,7 +12,7 @@ This guide will help you get a basic understanding on what points can affect per
 **Find out how to improve the performance of your website.**
 
 > [!warning]
-> This use case will show you how to use one or more OVHcloud solutions with external tools, and will describe the actions to be carried out in a specific context. Please remember to adapt these actions to fit your situation. If you encounter any difficulties performing these actions, please contact a [specialist service provider](/links/partner) and/or discuss the issue with our community on <https://community.ovh.com/en/>. OVHcloud cannot provide you with technical support in this regard.
+> This use case will show you how to use one or more OVHcloud solutions with external tools, and will describe the actions to be carried out in a specific context. Please remember to adapt these actions to fit your situation. If you encounter any difficulties performing these actions, please contact a [specialist service provider](/links/partner) and/or discuss the issue with our [community of users](/links/community). OVHcloud cannot provide you with technical support in this regard.
 
 ## Requirements
 
@@ -101,7 +101,7 @@ How to access statistics and logs:
 2. Click on the `Statistics and logs`{.action} tab.
 3. Click the `View statistics`{.action} button to access the website visit statistics or `View logs`{.action} to view the logs available for your web hosting plan.
 
-![logs](images/tab.png){.thumbnail}
+![logs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
 
 How to access charts:
 
@@ -109,7 +109,7 @@ How to access charts:
 2. Click on the `Statistics and logs`{.action} tab. Scroll down to the bottom of the page, where you will find the graph of your hosting usage.
 3. Select the **type** of information as well as the **period** of the data displayed.
 
-![graphs](images/infrastructure-statistics-graph.png){.thumbnail}
+![graphs](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/infrastructure-statistics-graph.png){.thumbnail}
 
 What are the different types of information that can be displayed?
 
@@ -242,4 +242,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

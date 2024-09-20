@@ -10,7 +10,7 @@ Le mot de passe de votre espace client OVHcloud est la clé d'accès à tous vos
 
 **Découvrez comment modifier et gérer votre mot de passe.**
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/odO58c4gJfc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/odO58c4gJfc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Prérequis
 
@@ -89,6 +89,8 @@ Si votre mot de passe est compromis, nous vous recommandons vivement de le [modi
 ![manage-ovh-password](images/account-password-modif-manager-step4.png){.thumbnail}
 
 - Un message vous indiquant le succès de l’opération s’affiche alors. Cliquez sur le bouton `Continuer`{.action} en bas ce message pour être redirigé vers la page d’identification. Renseignez alors votre identifiant et votre nouveau mot de passe.
+
+<a name="lost-password"></a>
 
 #### Si vous ne connaissez plus votre mot de passe actuel
 

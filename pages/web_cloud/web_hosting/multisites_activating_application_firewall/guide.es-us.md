@@ -1,7 +1,7 @@
 ---
 title: Activación del firewall de aplicación
 excerpt: Cómo activar el firewall de aplicación en un plan de hosting.
-updated: 2021-04-26
+updated: 2024-09-05
 ---
 
 > [!primary]
@@ -23,6 +23,11 @@ El conjunto preconfigurado de reglas básicas, el "Core Rule Set" (CRS) de nuest
 
 **Esta guía explica cómo activar el firewall de aplicación desde el área de cliente de OVHcloud para mejorar la protección.**
 
+> [!primary]
+>
+> Debido a que su alojamiento web está presente en una infraestructura compartida, no es posible modificar los parámetros de configuración del firewall.
+>
+
 ## Requisitos
 
 - Tener contratado un plan de [hosting de OVHcloud](/links/web/hosting){.external}.
@@ -37,7 +42,7 @@ Conéctese al [área de cliente de OVHcloud](/links/manager){.external} y selecc
 
 Por defecto, se abrirá la pestaña `Información general`{.action}. La `versión global` de PHP se muestra en el área de **Configuración**. Haga clic en el botón `...`{.action} y seleccione `Editar configuración`{.action}. En la nueva ventana, seleccione el elemento `Modificar la configuración actual`{.action} y haga clic en el botón `Siguiente`{.action}.
 
-![managephpconfig](images/application-firewall-step-2.png){.thumbnail}
+![managephpconfig](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/application-firewall-step-2.png){.thumbnail}
 
 En la nueva ventana, asegúrese de que la **aplicación firewall** esté activada en `Activado`{.action}. Para confirmar la configuración, haga clic en el botón `Confirmar`{.action}.
 
@@ -45,17 +50,17 @@ En la nueva ventana, asegúrese de que la **aplicación firewall** esté activad
 
 Abra la pestaña `Multisitio`{.action} de su plan de hosting. Haga clic en el botón `...`{.action} a la derecha del dominio correspondiente y seleccione la opción `Cambiar el dominio`{.action}.
 
-![managemultisite](images/modify-a-domain.png){.thumbnail}
+![managemultisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-2.png){.thumbnail}
 
 En la ventana de configuración, marque la casilla `Activar firewall`{.action}. También puede incluir el subdominio `www` en esta configuración marcando la casilla situada en la parte superior.
 
 Haga clic en `Siguiente`{.action} y, a continuación, en `Confirmar`{.action} para cambiar la configuración multisitio.
 
-![modifydomain](images/modify-a-domain-enable-firewall-step-1.png){.thumbnail}
+![modifydomain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-enable-firewall-step-1.png){.thumbnail}
 
 ### Comprobar el estado de la tarea de activación
 
-![gestión en curso](images/firewall-planned.png){.thumbnail}
+![gestión en curso](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ongoing-tasks/firewall-planned.png){.thumbnail}
 
 Las tareas de actualización de su configuración multisitio se mostrarán en la pestaña `Operaciones en curso`{.action} (el estado inicial es "Planificado"). El cortafuegos estará activo desde que su tarea de actualización deje de aparecer en la lista.
 
@@ -63,7 +68,7 @@ Las tareas de actualización de su configuración multisitio se mostrarán en la
 
 En la pestaña `Multisitio`{.action} de su plan de hosting podrá consultar los dominios en los que esté activada la opción de firewall.
 
-![gerageenabled](images/firewall-enabled.png){.thumbnail}
+![gerageenabled](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/firewall-enabled.png){.thumbnail}
 
 La tabla mostrada contiene todos los dominios añadidos al plan de hosting. En la columna "Cortafuegos", se muestra el estado de activación de cada dominio.
 
@@ -73,4 +78,4 @@ Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con 
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

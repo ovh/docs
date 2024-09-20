@@ -1,7 +1,7 @@
 ---
 title: "Passwort eines E-Mail-Accounts ändern"
 excerpt: "Erfahren Sie hier, wie Sie das Passwort eines OVHcloud E-Mail-Accounts ändern"
-updated: 2023-01-03
+updated: 2024-06-18
 ---
 
 > [!primary]
@@ -81,7 +81,7 @@ Die Änderung eines Passworts über Webmail ist für die OVHcloud E-Mail-Angebot
 > Die Dienste vom Typ **MX Plan Legacy** verwenden Roundcube Webmail. Die Passwortänderung erfolgt hier ausschließlich im [OVHcloud Kundencenter](#controlpanel).
 >
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube Video Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube Video Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Öffnen Sie die [Webmail-Seite](https://www.ovhcloud.com/de/mail/). Geben Sie dort Ihre vollständige E-Mail-Adresse und das aktuelle Passwort ein. Klicken Sie anschließend auf den Button `Login`{.action}.
 
@@ -103,6 +103,14 @@ Geben Sie im neu geöffneten Fenster zunächst Ihr aktuelles Passwort ein. Geben
 >
 
 ![E-Mail](images/mxplan-password-new-step5.png){.thumbnail}
+
+### Passwort abrufen
+
+Aus Gründen der Sicherheit und der Vertraulichkeit ist es nicht möglich, ein Passwort **wiederherzustellen**. Wie in den vorherigen Schritten beschrieben, müssen Sie Ihr Kennwort zurücksetzen, wenn Sie es nicht mehr kennen.
+
+> [!primary]
+>
+> Wenn Sie ein Kennwort speichern möchten, sollten Sie einen Passwortmanager verwenden, z. B. **KeePass**.
 
 #### Identifizieren Sie die Version Ihres MX Plans <a name="whichmxplan"></a>
 

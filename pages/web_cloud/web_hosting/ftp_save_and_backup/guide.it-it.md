@@ -56,7 +56,7 @@ Inoltre, dovrai indicare il metodo di ripristino che intendi adottare:
 >
 > La quota utilizzata compare sulla pagina che appare:
 >
->![ftp quota](images/find-disk-space.png){.thumbnail}
+>![ftp quota](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-disk-space.png){.thumbnail}
 >
 > Se lo spazio di storage FTP utilizzato è superiore alla metà dello spazio di storage FTP totale della tua offerta di hosting, recupera in locale alcuni elementi voluminosi del tuo sito Web (per farlo, puoi utilizzare [Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)). Eliminali dallo spazio di storage FTP. Questa operazione diminuirà la dimensione dello spazio di storage FTP utilizzato e potrai avviare il ripristino dallo Spazio Cliente OVHcloud.
 >
@@ -89,7 +89,7 @@ Una volta scelto il metodo di ripristino più adatto alle tue esigenze, prosegui
 
 Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} e, nella scheda `FTP - SSH`{.action}, clicca sul pulsante `Ripristina un backup`{.action}.
 
-![backupftp](images/restore-backup.png){.thumbnail}
+![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup.png){.thumbnail}
 
 Nella nuova finestra è possibile selezionare la data di ripristino dal menu a tendina:
 
@@ -103,7 +103,7 @@ Nella nuova finestra è possibile selezionare la data di ripristino dal menu a t
 
 Una volta selezionata la data, clicca su `Seguente`{.action}. 
 
-![backupftp](images/restore-backup-step-1.png){.thumbnail}
+![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/restore-backup-step-1.png){.thumbnail}
 
 Assicurati che questa azione non comporti la perdita di dati, ad esempio di un file archiviato sullo spazio di storage dopo la data di ripristino selezionata. Come già precisato, il backup sovrascriverà i dati presenti nello storage.
 
@@ -135,7 +135,7 @@ Per prima cosa, definisci quale software o interfaccia utilizzerai per accedere 
 
 A questo punto, prosegui con lo step successivo.
 
-![backupftp](images/ftp-explorer.png){.thumbnail}
+![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/ftp-explorer.png){.thumbnail}
 
 #### 2. Accedere al backup
 
@@ -143,7 +143,7 @@ Dall’interfaccia o dal software selezionato, dovrai connetterti al tuo spazio 
 
 Queste informazioni sono disponibili nella scheda `FTP - SSH`{.action} del tuo hosting. Se non possiedi più la password, segui le indicazioni descritte nella guida [Modificare la password di un utente FTP](/pages/web_cloud/web_hosting/ftp_change_password){.external}.
 
-![backupftp](images/login-infos.png){.thumbnail}
+![backupftp](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/login-infos.png){.thumbnail}
 
 Una volta effettuato il login, dovrai aggiungere al tuo nome utente FTP il suffisso corrispondente al backup che utilizzerai, come indicato qui sotto:
 
@@ -159,7 +159,7 @@ Sostituisci l’informazione generica “utenteftp” con il tuo nome utente FTP
 
 Il metodo di accesso allo spazio di storage differisce in base all’interfaccia o al software utilizzato. L’immagine qui sotto, ad esempio, ti mostra l’interfaccia di connessione di FTP Explorer.
 
-![backupftp](images/login-interface-snap0.png){.thumbnail}
+![backupftp](/pages/assets/screens/other/web-tools/net2ftp/login-interface-snap0.png){.thumbnail}
 
 #### 3. Recuperare i file
 
@@ -201,4 +201,4 @@ Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [p
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

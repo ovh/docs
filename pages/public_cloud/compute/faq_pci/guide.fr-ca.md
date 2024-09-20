@@ -137,4 +137,4 @@ Suivez [ce lien](https://www.linux-kvm.org/page/Nested_Guests#Limitations) pour 
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

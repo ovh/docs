@@ -1,7 +1,7 @@
 ---
 title: "Configurer le reverse DNS d'une instance Public Cloud"
 excerpt: Découvrez comment mettre en place la résolution reverse DNS
-updated: 2021-11-12
+updated: 2024-06-10
 ---
 
 ## Objectif
@@ -16,31 +16,33 @@ Configurer la résolution **Reverse DNS** d’une instance est particulièrement
 
 - Avoir une [instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud
 - Un nom de domaine avec son champ `A` pointant vers l'instance
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), accédez à la section `Bare Metal Cloud`{.action}, ouvrez le menu `Network`{.action} et cliquez sur `IP`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), accédez à la section `Bare Metal Cloud`{.action} et ouvrez `Network`{.action}. Cliquez ensuite sur `IP`{.action}.
 
-Le tableau de cette page répertorie vos services éligibles. Vous pouvez filtrer l'ID de votre projet Public Cloud à l'aide du menu déroulant **Service**.
+Le menu déroulant sous « **Mes adresses IP publiques et services associés** » vous permet de filtrer vos services par catégorie.
 
-![Reverse DNS](images/reversecp01.png){.thumbnail}
+![Reverse IP](images/filterippci.png){.thumbnail}
 
 Cliquez sur `...`{.action} dans la ligne de l'adresse IP concernée et sélectionnez `Modifier le reverse`{.action}.
 
-![Reverse DNS](images/reversecp02.png){.thumbnail}
+![Reverse DNS](images/modifyreversepc.png){.thumbnail}
 
-Dans la nouvelle fenêtre, renseignez votre reverse et cliquez sur `Confirmer`{.action}.
+Dans la nouvelle fenêtre, renseignez votre reverse et cliquez sur `Valider`{.action}.
+
+![Reverse DNS](images/enterreverse.png){.thumbnail}
 
 Vous pouvez également éditer le reverse directement via l'icône de la colonne **Reverse** du tableau.
 
 > [!primary]
 >
-Si la modification ne fonctionne pas comme prévu, vérifiez que le champ `A` est bien configuré dans la zone DNS de votre nom de domaine. Attention, la modification de la [zone DNS](/pages/web_cloud/domains/dns_zone_edit#comprendre-la-notion-de-dns) peut prendre jusqu'à 24 heures si vous n'avez modifié que récemment le champ `A`.
+Si la modification ne fonctionne pas comme prévu, vérifiez que le champ `A` est bien configuré dans la zone DNS de votre nom de domaine. Attention, la modification de la [zone DNS](/pages/web_cloud/domains/dns_zone_edit) peut prendre jusqu'à 24 heures si vous n'avez modifié que récemment le champ `A`.
 >
 
 ## Aller plus loin <a name="gofurther"></a>
 
 [Créer une première instance Public Cloud et s’y connecter](/pages/public_cloud/compute/public-cloud-first-steps)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

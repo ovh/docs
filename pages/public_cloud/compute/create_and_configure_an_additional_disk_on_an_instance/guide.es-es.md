@@ -22,7 +22,7 @@ Esto puede ser útil en los siguientes casos:
 
 ## Requisitos
 
-- Tienes acceso a tu [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Tienes acceso a tu [Panel de configuración de OVHcloud](/links/manager).
 - Disponer de una instancia de [Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/){.external} en su cuenta de OVHcloud.
 - Tener acceso de administrador (sudo) a su instancia a través de SSH.
 
@@ -35,7 +35,7 @@ Esto puede ser útil en los siguientes casos:
 
 ### Asociar un nuevo volumen
 
-Conéctese al [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto de Public Cloud correspondiente. A continuación, abra `Block Storage`{.action} en el menú de la izquierda.
+Conéctese al [Panel de configuración de OVHcloud](/links/manager), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto de Public Cloud correspondiente. A continuación, abra `Block Storage`{.action} en el menú de la izquierda.
 
 En esta sección, haga clic en el botón `Crear un volumen`{.action}.
 
@@ -70,7 +70,7 @@ Los siguientes ejemplos implican que está conectado como usuario con los permis
 
 #### En Linux
 
-Abra una [conexión SSH a su instancia](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance) y utilice el siguiente comando para mostrar los discos asociados.
+Abra una [conexión SSH a su instancia](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) y utilice el siguiente comando para mostrar los discos asociados.
 
 ```bash
 lsblk

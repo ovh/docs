@@ -39,23 +39,23 @@ Folgen Sie **allen Schritten** in unserer Anleitung zur [manuellen Installation 
 
 Geben Sie `your_domain/ecrire` in die Suchleiste Ihres Browsers ein, um die Installation Ihrer SPIP Website zu starten. Die folgende Seite wird angezeigt:
 
-![SPIP installation](images/installation_first_step.png){.thumbnail}
+![SPIP installation](/pages/assets/screens/other/cms/spip/installation_first_step.png){.thumbnail}
 
 Wählen Sie die Sprache Ihrer SPIP Website aus und klicken Sie zur Bestätigung auf `Next`{.action}. Der folgende Bildschirm wird angezeigt:
 
-![SPIP installation](images/installation_second_step.png){.thumbnail}
+![SPIP installation](/pages/assets/screens/other/cms/spip/installation_second_step.png){.thumbnail}
 
 Geben Sie die Login-Daten für Ihr DBMS ein (zum Beispiel MySQL). Nachdem Sie Ihre Datenbank verbunden haben, wird der folgende Bildschirm angezeigt:
 
-![SPIP installation](images/installation_third_step.png){.thumbnail}
+![SPIP installation](/pages/assets/screens/other/cms/spip/installation_third_step.png){.thumbnail}
 
 Wählen Sie die Datenbank aus, die Sie für Ihre Website verwenden möchten, oder [erstellen Sie eine neue](/pages/web_cloud/web_hosting/sql_create_database). Wählen Sie ein Präfix für die Tabellen in der Datenbank aus. Standardmäßig wird das Präfix `spip` verwendet. Klicken Sie auf `Next`{.action}, um die Informationen zu bestätigen. Der folgende Bildschirm wird angezeigt:
 
-![SPIP installation](images/installation_fourth_step.png){.thumbnail}
+![SPIP installation](/pages/assets/screens/other/cms/spip/installation_fourth_step.png){.thumbnail}
 
 Geben Sie die angeforderten Informationen ein, und klicken Sie zur Bestätigung auf `Next`{.action}. Der folgende Bildschirm wird angezeigt:
 
-![SPIP installation](images/installation_fifth_step.png){.thumbnail}
+![SPIP installation](/pages/assets/screens/other/cms/spip/installation_fifth_step.png){.thumbnail}
 
 In diesem Fenster werden die für Ihre Website verfügbaren Plugins aufgelistet und Sie darüber informiert, dass die Installation von SPIP erfolgreich war.
 
@@ -85,4 +85,4 @@ Sie haben das CMS SPIP manuell auf Ihrem OVHcloud Webhosting installiert. Ihre S
  
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
  
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

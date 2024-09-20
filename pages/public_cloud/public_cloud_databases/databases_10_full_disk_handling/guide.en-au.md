@@ -12,7 +12,7 @@ No matter the database technology, when no more physical disk space is available
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 - A [Public Cloud database service](https://www.ovhcloud.com/en-au/public-cloud/databases/) up and running
 
 ## Instructions
@@ -21,7 +21,7 @@ No matter the database technology, when no more physical disk space is available
 
 #### Disk space usage metrics
 
-As part of using your Public Cloud Databases service efficiently, you should keep an eye on the service metrics. You can access those in the [OVHcloud Control Panel](https://ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) or using the [API](/pages/manage_and_operate/api/first-steps). You can also make use of [cross-service integrations](/pages/public_cloud/public_cloud_databases/databases_07_cross_service_integration) to gather, observe and alert based on services metrics.
+As part of using your Public Cloud Databases service efficiently, you should keep an eye on the service metrics. You can access those in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) or using the [API](/pages/manage_and_operate/api/first-steps). You can also make use of [cross-service integrations](/pages/public_cloud/public_cloud_databases/databases_07_cross_service_integration) to gather, observe and alert based on services metrics.
 
 #### Mail notifications
 
@@ -33,7 +33,7 @@ When the disk usage increases even more and reaches a critical level (depending 
 
 Different engines react in different ways, thus Public Cloud Databases services react differently when facing disk full conditions:
 
-- `Redis`, `Kafka MirrorMaker`, `Grafana`, `M3 Aggregator` and `Kafka Connect` do not store any user data on disk. Thus they will not fill up the underlying disk storage.
+- `Caching`, `Kafka MirrorMaker`, `Grafana`, `M3 Aggregator` and `Kafka Connect` do not store any user data on disk. Thus they will not fill up the underlying disk storage.
 - `Kafka`, `OpenSearch`, `Cassandra` and `M3DB` turn to read-only.
 - `MySQL` and `PostgreSQL` turn to read-only with a way to temporarily revert to read-write.
 - `MongoDB` forbids writes but allows deletes.

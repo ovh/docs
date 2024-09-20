@@ -20,7 +20,7 @@ Ce tutoriel décrit les étapes à suivre pour mettre à jour un système d'expl
 
 ## Prérequis
 
-- Disposer d'un [accès root au serveur](/pages/public_cloud/compute/become_root_and_change_password)
+- Disposer d'un [accès administrateur au serveur](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance)
 - Avoir effectué [une sauvegarde de votre instance](/pages/public_cloud/compute/save_an_instance)
 
 ## En pratique
@@ -166,4 +166,4 @@ Vérifiez que vos applications fonctionnent comme prévu. En cas de problème, n
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

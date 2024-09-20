@@ -2,7 +2,6 @@
 title: Transfert des logs (Logs Forwarding) TCP / HTTP / HTTPS du Load Balancer Public Cloud
 excerpt: Découvrez comment transférer vos logs depuis un Load Balancer Public Cloud vers Logs Data Platform
 updated: 2024-05-17
-flag: hidden
 ---
 
 ## Objectif

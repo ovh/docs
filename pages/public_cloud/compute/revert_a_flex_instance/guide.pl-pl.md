@@ -1,7 +1,7 @@
 ---
 title: Zmiana instancji flex na instancję klasyczną
 excerpt: Dowiedz się, jak zmienić instancję flex w interfejsie OpenStack Horizon
-updated: 2021-11-15
+updated: 2024-07-17
 ---
 
 > [!primary]
@@ -18,10 +18,18 @@ Dzięki stale zmieniającej się infrastrukturze możesz zwiększyć przestrzeń
 
 ## Wymagania
 
-- Posiadanie [instancji Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#krok-3-tworzenie-instancji) typu *flex*
+- Posiadanie [instancji Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#configuration) typu *flex*
 - [Utworzenie dostępu do interfejsu Horizon](/pages/public_cloud/compute/introducing_horizon)
 
 ## W praktyce
+
+> [!warning] 
+> - W przypadku uaktualnienia z instancji flex do instancji classic z większą ilością zasobów, jest to uważane za uaktualnienie. W takim przypadku zostanie naliczona opłata za różnicę. Na koniec okresu rozliczeniowego otrzymasz dwie faktury.
+>
+> - Przejście z instancji elastycznej na klasyczną z mniejszą liczbą zasobów jest uznawane za obniżenie wersji. W takim przypadku faktura nie zostanie wystawiona.
+>
+> - Przejście z instancji elastycznej na klasyczną z tymi samymi zasobami nie zostanie zafakturowane.
+>
 
 Zaloguj się do [interfejsu Horizon](https://horizon.cloud.ovh.net/auth/login/) i upewnij się, czy jesteś w odpowiednim regionie. I możecie to sprawdzić w lewym górnym rogu. 
 

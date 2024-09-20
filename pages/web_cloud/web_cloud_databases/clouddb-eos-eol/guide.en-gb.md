@@ -1,6 +1,6 @@
 ---
 title: 'Web Cloud Databases EOS and EOL announcements'
-updated: 2024-02-08
+updated: 2024-07-11
 ---
 
 ## Objective
@@ -9,11 +9,9 @@ The products covered by those End Of Sale (EOS) and End Of Life (EOL) announceme
 
 |Version|EOL announcement|End-of-Sale|End-of-Support|
 |---|---|---|---|
-|MariaDB 10.4|2022-07-22|2023-12-18|2024-06-18|
 |MariaDB 10.5|2023-07-26|2024-12-23|2025-06-24|
 |MariaDB 10.6|To be defined|To be defined|To be defined|
 |MariaDB 10.11|To be defined|To be defined|To be defined|
-|MySQL 5.7|2022-03-29|2023-04-01|2023-10-01|
 |MySQL 8.0|To be defined|To be defined|To be defined|
 |PostgreSQL 12|2023-03-08|2024-05-15|2024-11-14|
 |PostgreSQL 13|2023-11-14|2025-05-14|2025-11-13|
@@ -28,4 +26,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>. 
+Join our [community of users](/links/community).

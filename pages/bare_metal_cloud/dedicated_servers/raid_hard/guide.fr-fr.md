@@ -8,11 +8,11 @@ updated: 2023-08-21
 
 Sur un serveur disposant d'une configuration RAID matériel, la matrice RAID est gérée par un composant physique appelé contrôleur RAID.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/t_BL_uOXQVA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/t_BL_uOXQVA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Prérequis
 
-- Posséder un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external} avec une configuration RAID matériel.
+- Posséder un [serveur dédié](/links/bare-metal/bare-metal){.external} avec une configuration RAID matériel.
 - Avoir accès à votre serveur via SSH en tant qu'administrateur (sudo).
 
 > [!warning]
@@ -427,4 +427,4 @@ Ce contrôleur RAID est déprécié et devient instable. Nous vous suggérons fo
 
 [Remplacement à chaud - RAID logiciel](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_soft)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

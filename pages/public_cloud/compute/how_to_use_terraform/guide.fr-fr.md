@@ -14,7 +14,7 @@ L'outil Open Source Terraform a été développé pour faciliter la création d'
 
 À titre d’exemple, la vidéo ci-dessous vous montre comment faire évoluer facilement le nombre d’instances, tout en conservant votre infrastructure existante, en ne modifiant qu’une seule ligne de code :
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TFfKd24rzvE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/TFfKd24rzvE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Découvrez comment utiliser Terraform sur le Public Cloud OVHcloud.**
 
@@ -140,7 +140,7 @@ Pour créer une instance simple, vous avez besoin de 4 éléments :
 * Un type d'instance (flavor)
 * Une clé SSH
 
-A des fins d'exemple, nous allons créer une instance simple sur **Debian 10** avec la flavor **s1-2**, et importer une clé SSH. Ajoutez les lignes suivantes dans un fichier nommé *simple_instance.tf* :
+A des fins d'exemple, nous allons créer une instance simple sur **Debian 10** avec la flavor **d2-2**, et importer une clé SSH. Ajoutez les lignes suivantes dans un fichier nommé *simple_instance.tf* :
 
 ```python
 # Création d'une ressource de paire de clés SSH
@@ -155,7 +155,7 @@ resource "openstack_compute_instance_v2" "test_terraform_instance" {
   name        = "terraform_instance"    # Nom de l'instance
   provider    = openstack.ovh           # Nom du fournisseur
   image_name  = "Debian 10"             # Nom de l'image
-  flavor_name = "s1-2"                  # Nom du type d'instance
+  flavor_name = "d2-2"                  # Nom du type d'instance
   # Nom de la ressource openstack_compute_keypair_v2 nommée test_keypair
   key_pair    = openstack_compute_keypair_v2.test_keypair.name
   network {
@@ -202,7 +202,7 @@ Terraform will perform the following actions:
       + all_tags            = (known after apply)
       + availability_zone   = (known after apply)
       + flavor_id           = (known after apply)
-      + flavor_name         = "s1-2"
+      + flavor_name         = "d2-2"
       + force_delete        = false
       + id                  = (known after apply)
       + image_id            = (known after apply)
@@ -242,7 +242,7 @@ openstack_compute_instance_v2.test_terraform_instance: Creation complete after 2
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 ```
 
-Connectez-vous maintenant à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur ` Public Cloud`{.action} et cliquez sur `Instances`{.action}.
+Connectez-vous maintenant à votre [espace client OVHcloud](/links/manager), cliquez sur ` Public Cloud`{.action} et cliquez sur `Instances`{.action}.
 Comme vous pouvez le voir, votre instance nommée "terraform_instance" est en train de se créer.
 
 > [!primary]
@@ -252,7 +252,7 @@ Comme vous pouvez le voir, votre instance nommée "terraform_instance" est en tr
 
 #### Créer des instances multiples
 
-Dans cette partie, nous souhaitons créer une instance sous Ubuntu avec la flavor « s1-2 » dans chaque région.
+Dans cette partie, nous souhaitons créer une instance sous Ubuntu avec la flavor « d2-2 » dans chaque région.
 
 Vous pouvez rechercher tous les noms de régions en utilisant cet appel API OVHcloud :
 
@@ -298,7 +298,7 @@ Pour ce faire, vous pouvez créer un fichier nommé `multiple_instance.tf`. Vous
    count = length(var.region)
    provider = openstack.ovh                         # Nom du fournisseur
    name = "terraform_instances"                     # Nom de l'instance
-   flavor_name = "s1-2"                             # Nom du type d'instance
+   flavor_name = "d2-2"                             # Nom du type d'instance
    image_name = "Debian 10"                         # Nom de l'image
    # element est une fonction qui accède à l'élément à la position
    # count.index de la liste var.region. Il permet d'itérer entre les régions
@@ -412,7 +412,7 @@ variable "region" {
    provider     = openstack.ovh                             # Nom du fournisseur
    name         = "proxy_instance"                              # Nom de l'instance
    image_name   = "Debian 10"                           # Nom de l'image
-   flavor_name  = "s1-2"                                # Nom du type d'instance
+   flavor_name  = "d2-2"                                # Nom du type d'instance
    # Nom de la ressource openstack_compute_keypair_v2 nommée test_keypair
    key_pair     = openstack_compute_keypair_v2.test_keypair.name
    # Ajout du réseau public et privé
@@ -504,7 +504,7 @@ resource "openstack_compute_instance_v2" "front" {
   provider        = openstack.ovh                               # Nom du fournisseur
   name            = "front"                                     # Nom de l'instance
   key_pair        = openstack_compute_keypair_v2.test_keypair.name
-  flavor_name     = "s1-2"                                      # Nom du type d'instance
+  flavor_name     = "d2-2"                                      # Nom du type d'instance
   image_id        = data.openstack_images_image_v2.archlinux.id # Identifiant de l'image de l'instance
   security_groups = ["default"]                                 # Ajoute l'instance au groupe de sécurité
   network {
@@ -531,7 +531,7 @@ resource "openstack_compute_instance_v2" "back" {
   provider        = openstack.ovh                                        # Nom du fournisseur
   name            = "back"                                               # Nom de l'instance
   key_pair        = openstack_compute_keypair_v2.test_keypair.name
-  flavor_name     = "s1-2"                                               # Nom du type d'instance
+  flavor_name     = "d2-2"                                               # Nom du type d'instance
   image_id        = data.openstack_images_image_v2.archlinux.id          # Identifiant de l'image de l'instance
   security_groups = ["default"]                                          # Ajoute l'instance au groupe de sécurité
   network {
@@ -589,7 +589,7 @@ Néanmoins, deux conditions s’appliquent :
 - Avoir créé un projet Public Cloud au cours des 3 derniers mois.
 
 Si l'une de ces conditions n'est pas remplie, vous obtiendrez l'erreur suivante :  `Found eligibility issues: challengePaymentMethod`.<br>
-Dans ce cas, la seule solution est de vous connecter à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) pour créer un projet.<br>
+Dans ce cas, la seule solution est de vous connecter à votre [espace client OVHcloud](/links/manager) pour créer un projet.<br>
 Vous serez alors invité à valider que vous êtes bien le propriétaire des moyens de paiement utilisés sur ce compte (cette validation dépend des moyens de paiement et d'autres paramètres).
 
 Ces règles et ces actions supplémentaires ont été mises en place pour offrir une sécurité supplémentaire aux clients ayant pu divulguer leurs identifiants OVHcloud. Nous vous remercions donc de votre compréhension.<br>

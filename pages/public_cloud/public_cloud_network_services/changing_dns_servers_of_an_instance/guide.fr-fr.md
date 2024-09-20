@@ -20,14 +20,12 @@ Vous pouvez ajouter un serveur secondaire ou remplacer cette configuration par l
 ## Prérequis
 
 - Disposer d'une [instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud.
-- Disposer d’un accès administrateur (sudo) à l’instance via SSH ou RDP.
+- Disposer d’un accès administrateur à l’instance via SSH ou RDP.
 - Des connaissances de base en réseau et administration.
 
 ## En pratique
 
-Connectez-vous sur votre instance en SSH. Reportez-vous au guide « [Se connecter à une instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#etape-4-connexion-a-votre-instance) » pour plus d'informations à ce sujet.
-
-Passer à l'utilisateur root. Si besoin, consultez notre guide pour [passer root et définir un mot de passe](/pages/public_cloud/compute/become_root_and_change_password).
+Connectez-vous sur votre instance en SSH. Reportez-vous au guide « [Se connecter à une instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) » pour plus d'informations à ce sujet.
 
 ### Debian / Ubuntu
 
@@ -59,7 +57,9 @@ Vérifiez que la configuration s'est bien appliquée avec la commande suivante :
 
 ```bash
 cat /etc/resolv.conf
+```
 
+```console
 domain openstacklocal
 search openstacklocal
 nameserver IP1
@@ -98,7 +98,9 @@ Récupérez le nom de votre interface publique :
 
 ```bash
 nmcli connection show
- 
+```
+
+```console
 NAME         UUID                                  TYPE      DEVICE
 System eth0  5fb06bd0-0bb0-7ffb-45f1-d6edd65f3e03  ethernet  eth0
 ```
@@ -128,7 +130,7 @@ DNS configuration:
 
 ### Sous Windows
 
-Connectez-vous à l'instance via une session bureau à distance ou avec la console VNC. Consultez le guide  « [Se connecter à une instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#etape-4-connexion-a-votre-instance) » pour plus d'informations à ce sujet.
+Connectez-vous à l'instance via une session bureau à distance ou avec la console VNC. Consultez le guide  « [Se connecter à une instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) » pour plus d'informations à ce sujet.
 
 Ouvrez les `Paramètres réseau`{.action}.
 
@@ -150,8 +152,6 @@ Dans un PowerShell, la commande `nslookup` permet de vérifier quel est le serve
 ## Aller plus loin <a name="gofurther"></a>
 
 [Créer une première instance Public Cloud et s’y connecter](/pages/public_cloud/compute/public-cloud-first-steps)
-
-[Passer root et définir un mot de passe](/pages/public_cloud/compute/become_root_and_change_password)
 
 [Modifier le hostname d’une instance Public Cloud](/pages/public_cloud/compute/changing_the_hostname_of_an_instance)
 

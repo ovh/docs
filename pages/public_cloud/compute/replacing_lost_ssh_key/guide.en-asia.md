@@ -1,88 +1,80 @@
 ---
-title: 'Replacing your lost SSH key pair'
-excerpt: 'This guide explains how to configure the authorized_keys file for the admin user, so that you can add a new SSH key to regain access to your instance'
-updated: 2022-02-10
+title: "How to replace an SSH key pair on a Public Cloud instance"
+excerpt: "Find out how restore server access by replacing an SSH key pair with a new one in case your private key is lost"
+updated: 2024-06-13
 ---
 
 ## Objective
 
-If you have lost your SSH key, you might be unable to connect to your instance if you have not configured any alternative way to do so.
+Losing your private SSH key means losing access to your instance if you have not configured an alternative way of access.
 
-To regain access, we have provided you with a [rescue mode](/pages/public_cloud/compute/put_an_instance_in_rescue_mode){.external}, which allows you to log in with a password and then change your files.
+However, you can still connect to your instance via the OVHcloud rescue mode, which allows you to log in with a provisional password and modify your files.
 
-**This guide explains how to configure the authorized_keys file for the admin user, so that you can add a new SSH key to regain access to your instance.**
+**This guide explains how to replace your SSH keys if you have lost access to your instance.**
+
+> [!warning]
+> OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
+>
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialist service provider](/links/partner) or reaching out to [our community](/links/community) if you experience any issues.
+>
 
 ## Requirements
 
-- A [Public Cloud Instance](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account
-- Access to your instance via SSH in [rescue mode](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) 
-- Create an SSH key
+- A [Public Cloud instance](/links/public-cloud/public-cloud) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
-> [!primary]
->
-If you would like to store an SSH key in the OVHcloud Control Panel, we recommend to use RSA or ECDSA encryption. ED25519 is currently not supported.
->
+### Step 1: Create a new key pair
 
-After mounting your instance's disk in [rescue mode](/pages/public_cloud/compute/put_an_instance_in_rescue_mode#step-2-accessing-your-data), you will be able to access all your files. The file containing your SSH keys is shown below:
+Create a new SSH key pair on your local device, as described in the first part of the [SSH key guide](/pages/public_cloud/compute/creating-ssh-keys-pci).
 
+### Step 2: Access your instance in rescue mode
+
+Follow the steps in the [rescue mode guide](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) to reboot the instance into rescue mode, connect to it and mount your partitions.
+
+Once you have used the `mount` command as described in the guide and your system partition is accessible, you can use the following command:
+
+```bash
+chroot path/to/partition/mountpoint
 ```
-/mnt/home/USER_NAME/.ssh/authorized_keys
+
+The file path is dependent on the mountpoint you used. If you have mounted your partition at `/mnt`, you would enter the following:
+
+```bash
+chroot /mnt/
 ```
 
-If you want to add your new SSH key, you just have to edit this file as follows:
+You should now have full write access to your files in this folder.
 
+### Step 3: Replace the key
+
+Open the "authorized_keys" file concerned with a text editor. This file stores SSH keys and is located in the `home` folder of the user with which you connect to your instance.
+
+Example:
+
+```bash
+nano /mnt/home/USER_NAME/.ssh/authorized_keys
 ```
-admin@instance:~$ sudo vim /mnt/home/USER_NAME/.ssh/authorized_keys
 
+Replace "USER_NAME" with your actual user name.
+
+Copy and paste your new public key (created in step 1) into the file. It should look similar to the following example:
+
+```console
 ssh-rsa 1111111111122222222222333333333333444444444555555555556666666666
 777777777778888888888999999900000000000000000000000000== old@sshkey
 ssh-rsa AAAAAAAAABBBBBBBBBBBCCCCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDEEEEEEEEE
 EEFFFFFFFFFFFFFGGGGGGGGGGGGGhhhhhhhhhhhhhhhhhhhhhhhhhh== new@sshkey
 ```
 
-### Change the SSH key for the default user
-To change your default user's SSH key, you just have to go to the user's personal file.
+For security reasons, delete the obsolete "old" key string from the file. Save your changes and exit the editor.
 
-For example, for the admin user, the file you need is in the following folder:
+Restart the instance in "normal" mode from your [OVHcloud Control Panel](/links/manager). Refer to the [rescue mode guide](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) if needed.
 
-```
-/home/admin/.ssh/authorized_keys
-```
+You have now access to the instance with your new SSH key pair.
 
-For an Ubuntu instance, the default user will be ubuntu and the file will therefore be in the following folder:
-
-```
-/home/ubuntu/.ssh/authorized_keys
-```
-
-### Change the password for the default user
-
-You can also change your default user's password by using rescue mode and the following commands (if the user is admin).
-
-First, change the root directory so that it is placed directly on the instance's disk:
-
-> [!primary]
->
-In the example below, we have used **vdb1** as the name of the server's disk and **mnt** as the mount point.
->
-
-```
-root@instance:/home/admin# mount /dev/vdb1 /mnt/
-root@instance:/home/admin# chroot /mnt/
-```
-
-Then change the admin password.
-
-```
-root@instance:/# passwd admin
-```
-
-Once this change has taken place and been backed up, you need to reboot your instance on its disk, so that you can log in with your new SSH key.
 
 ## Go further
 
-[Become root and select a password](/pages/public_cloud/compute/become_root_and_change_password){.external}
-
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

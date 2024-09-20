@@ -32,7 +32,7 @@ Los productos cubiertos por esta política de fin de vida son:
 
 ### Definiciones y directrices de la política de fin de vida
 
-![timeline](images/ovhcloud-eol-policy-for-managed-databases-timeline.png)
+![timeline](/pages/assets/schemas/web-cloud-databases/ovhcloud-eol-policy-for-managed-databases-timeline.png)
 
 EOL = End Of Life
 
@@ -82,4 +82,4 @@ Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con 
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

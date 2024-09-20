@@ -12,7 +12,7 @@ updated: 2024-01-29
 
 Esta guía explica cómo adquirir conocimientos básicos para garantizar la disponibilidad de sus servicios, proteger la integridad de sus datos y proteger el acceso a sus soluciones. Solo concierne a los sitios web alojados en las [soluciones compartidas de OVHcloud](/links/web/hosting).
 
-Se organiza por etapas en un orden creciente de importancia y dificultad técnica, lo que significa que los primeros pasos son los más indispensables. La seguridad de su sitio web se medirá en el elemento que le concierna, que es el menos protegido. Le recomendamos que realice todas las acciones descritas. No obstante, si tiene dificultades para realizar algunas de las operaciones que se describen en la guía, no dude en contactar con la [comunidad de OVHcloud](https://community.ovh.com/en/) o con nuestros [partners](/links/partner).
+Se organiza por etapas en un orden creciente de importancia y dificultad técnica, lo que significa que los primeros pasos son los más indispensables. La seguridad de su sitio web se medirá en el elemento que le concierna, que es el menos protegido. Le recomendamos que realice todas las acciones descritas. No obstante, si tiene dificultades para realizar algunas de las operaciones que se describen en la guía, no dude en contactar con la [comunidad de OVHcloud](/links/community) o con nuestros [partners](/links/partner).
 
 **Esta guía explica cómo proteger un sitio web.**
 
@@ -63,7 +63,7 @@ Si pierde sus claves de acceso o no está disponible la dirección de correo ele
 En primer lugar, haga una copia de seguridad de los datos que componen su sitio web conectándose a su [espacio FTP](/pages/web_cloud/web_hosting/ftp_connection) y a su [servidor de bases de datos](/pages/web_cloud/web_hosting/sql_database_export). Importe estos en su equipo o en un soporte externo, de tipo servidor NAS o llave USB.
 
 Los programas de gestión de sitios web (CMS) ofrecen la posibilidad de instalar complementos de backup automático.<br>
-Consulte los foros oficiales de su CMS preferido o contacte con la [comunidad de OVHcloud](https://community.ovh.com/en/) al respecto.
+Consulte los foros oficiales de su CMS preferido o contacte con la [comunidad de OVHcloud](/links/community) al respecto.
 
 ### Etapa 4 - Aprender a reconocer los mensajes fraudulentos
 
@@ -132,4 +132,4 @@ El archivo ".htaccess" es un archivo de configuración (HTTP) Apache que ejecuta
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](/links/partner).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

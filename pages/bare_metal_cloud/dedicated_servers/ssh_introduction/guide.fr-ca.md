@@ -10,7 +10,7 @@ Le protocole de communication SSH (Secure Shell) est l'outil principal pour éta
 
 **Ce guide vous explique comment accéder à votre serveur de manière sécurisé grâce au SSH.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gi7JqUvcEt0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/gi7JqUvcEt0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -20,7 +20,7 @@ Le protocole de communication SSH (Secure Shell) est l'outil principal pour éta
 
 ## Prérequis
 
-- Avoir un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/) ou un [VPS](https://www.ovhcloud.com/fr-ca/vps/) dans votre compte OVHcloud.
+- Avoir un [serveur dédié](/links/bare-metal/bare-metal) ou un [VPS](https://www.ovhcloud.com/fr-ca/vps/) dans votre compte OVHcloud.
 - Une application cliente SSH (en ligne de commande ou en interface graphique).
 
 > [!primary]
@@ -33,7 +33,7 @@ Plusieurs méthodes existent pour authentifier une connexion à un périphériqu
 Les instructions suivantes concernent la méthode d'authentification via un nom d'utilisateur et un mot de passe.<br>
 Vous pouvez également configurer des clés SSH pour activer les connexions sécurisées sans mot de passe. Retrouvez plus de détails dans notre [guide des clés SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 
-Les identifiants de connexion (identifiant et mot de passe) vous sont envoyés par e-mail après une installation ou une réinstallation de serveur effectuée depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).<br>
+Les identifiants de connexion (identifiant et mot de passe) vous sont envoyés par e-mail après une installation ou une réinstallation de serveur effectuée depuis votre [espace client OVHcloud](/links/manager).<br>
 Le nom d'utilisateur correspond au système d'exploitation, par exemple `ubuntu` ou `debian`.<br>
 Pour vous connecter, vous devez également spécifier l'adresse IPv4 ou le nom d'hôte du serveur. Ces informations sont disponibles dans l’e-mail d’installation et dans l'espace client.
 
@@ -178,6 +178,6 @@ Veuillez consulter la FAQ officielle et la documentation de PuTTY pour plus d'in
 
 [VPS mode rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

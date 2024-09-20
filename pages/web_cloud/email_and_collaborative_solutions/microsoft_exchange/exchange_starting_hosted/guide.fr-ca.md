@@ -1,7 +1,7 @@
 ---
 title: Premiers pas avec le service Hosted Exchange
 excerpt: Débutez avec un service Hosted Exchange
-updated: 2023-03-06
+updated: 2024-09-03
 ---
 
 <style>
@@ -74,15 +74,19 @@ Déterminez le nom de vos adresses e-mail Exchange et ajoutez des informations c
 
 #### **Cas particulier**
 
-- Si vous configurez votre plateforme Exchange avec un nom de domaine qui n'est pas géré sur le même espace client que cette plateforme, ou chez un autre prestataire de nom de domaine, vous obtiendrez la fenêtre suivante :<br>
-![email](images/exchange-wizard05.png){.thumbnail .w-640}<br>
-Cette fenêtre vous invite à ajouter un **champ CNAME** dans la zone DNS du nom de domaine. Cette entrée a pour but de vérifier que vous gérez bien ce nom de domaine.<br>
+- Si vous configurez votre plateforme Exchange avec un nom de domaine qui n'est pas géré sur le même espace client que cette plateforme, ou chez un autre prestataire de nom de domaine, vous obtiendrez la fenêtre suivante :
+
+![email](images/exchange-wizard05.png){.thumbnail .w-640}
+
+Cette fenêtre vous invite à ajouter un **champ CNAME** dans la zone DNS du nom de domaine. Cette entrée a pour but de vérifier que vous gérez bien ce nom de domaine.
 
 > [!warning]
 > Sans cette validation par champ CNAME, il est impossible d'utiliser la plateforme avec ce nom de domaine.
 
-- Si vous configurez votre plateforme Exchange avec un nom de domaine qui n'est pas géré sur le même espace client que cette plateforme, qu'il est géré chez un autre prestataire de nom de domaine, ou si vous avez choisi de configurer manuellement votre nom de domaine, la fenêtre suivante s'affichera :<br>
-![email](images/exchange-wizard06.png){.thumbnail .w-640}<br>
+- Si vous configurez votre plateforme Exchange avec un nom de domaine qui n'est pas géré sur le même espace client que cette plateforme, qu'il est géré chez un autre prestataire de nom de domaine, ou si vous avez choisi de configurer manuellement votre nom de domaine, la fenêtre suivante s'affichera :
+
+![email](images/exchange-wizard06.png){.thumbnail .w-640}
+
 Vous retrouvez ici les valeurs à renseigner dans votre zone DNS. Les **champs MX** correspondent à la réception de vos e-mails. Le **champ SRV** correspond à la configuration automatique de vos adresses e-mail.
 
 Retrouvez les détails de configuration de votre zone DNS concernant votre service e-mail sur notre page « [Ajouter un champ MX à la configuration de son nom de domaine](/pages/web_cloud/domains/dns_zone_mx) ».
@@ -125,6 +129,14 @@ Les comptes en attente de configuration s'affichent dans le tableau sous la form
 ### Utiliser vos adresses e-mail
 
 Une fois vos comptes configurés, il ne reste plus qu’à les utiliser. Pour cela, OVHcloud met à disposition le webmail **Outlook Web App** (OWA). Ce dernier est accessible à l’adresse <https://www.ovhcloud.com/fr-ca/mail/>. Pour y accéder, vous devez y renseigner les identifiants relatifs à votre adresse e-mail. Si vous souhaitez obtenir de l'aide sur l'utilisation de OWA, [consultez notre documentation](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
+
+Si c'est la première fois que vous vous connectez à OWA avec cette adresse e-mail, vous serez invité à définir la langue de l'interface ainsi que le fuseau horaire. Ensuite, cliquez sur `Enregistrer`{.action} pour continuer.
+
+> [!primary]
+>
+> Les fuseaux horaires sont listés selon [la norme UTC (temps universel coordonné)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), et non par ordre alphabétique des villes.
+>
+> **Exemple** : Pour l'Europe de l'Ouest, il s'agit de UTC +1 (Bruxelles, Copenhague, Madrid, Paris).
 
 Si vous souhaitez configurer votre adresse e-mail sur un logiciel de messagerie ou un périphérique comme un smartphone ou une tablette, [consultez notre documentation](/products/web-cloud-email-collaborative-solutions-microsoft-exchange). Pour une utilisation optimale de votre adresse Exchange sur un logiciel, assurez-vous de sa bonne compatibilité avec le service.
 

@@ -23,12 +23,12 @@ Both volume snapshot and volume backup allow you to:
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - A [Block Storage volume](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) created in your [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/)
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then open `Block Storage`{.action} in the left-hand navigation bar under **Storage**.
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then open `Block Storage`{.action} in the left-hand navigation bar under **Storage**.
 
 In the row of the volume concerned, click on the `...`{.action} button and select `Create a backup`{.action}.<br>
 It is not required to detach the volume from its instance first. However, if you wish to do so, please consult this [section](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#on-linux) of the corresponding guide for Linux and this [section](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#on-windows) for Windows.
@@ -78,4 +78,4 @@ You can find further information in [this guide](/pages/public_cloud/compute/cre
 
 [Increasing the size of an additional disk](/pages/public_cloud/compute/increase_the_size_of_an_additional_disk)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

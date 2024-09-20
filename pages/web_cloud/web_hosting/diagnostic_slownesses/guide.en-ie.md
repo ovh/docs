@@ -96,11 +96,11 @@ To ensure that your services (shared hosting **and** database) are not undergoin
 
 o find out the cluster and filer of your hosting, log in to your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, click on `Hosting plans`{.action} then select the web hosting plan concerned. In the `General information`{.action} tab you can see the `Datacenter` and `Filer` of your web hosting.
 
-![Retrieve Filer](images/find-filer.png){.thumbnail}
+![Retrieve Filer](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-filer.png){.thumbnail}
 
 Then click on the `Multisite`{.action} tab to retrieve the cluster number where your shared hosting is located.
 
-![Recover cluster](images/find-cluster.png){.thumbnail}
+![Recover cluster](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/find-cluster.png){.thumbnail}
 
 > [!success]
 >
@@ -155,7 +155,7 @@ If you are using a database of a **Web Cloud Databases** solution, please refer 
 
 If the connection is successful, you will land on the following interface:
 
-![PHPMyAdmin](images/pma-main-page.png){.thumbnail}
+![PHPMyAdmin](/pages/assets/screens/other/web-tools/phpmyadmin/pma-main-page.png){.thumbnail}
 
 > [!warning]
 >
@@ -240,7 +240,7 @@ The lower the number of requests, the less resources will be required for your w
 >
 > To do this, press the `F12` key in the Firefox browser and then select the `Network` tab. Reload your web page with the `Ctrl + Shift + R` keys so that the tool will show you the queries that were executed to load your page. Identify the elements taking the longest to load and then optimise them.
 >
->![Firefox Network Scan](images/F12.png){.thumbnail}
+>![Firefox Network Scan](/pages/assets/screens/other/browsers/diagnostic-tools/F12.png){.thumbnail}
 >
 
 To reduce the flow of requests each time your pages load, you can also set up a Content Delivery Network (CDN). This will cache the static content of your website. Your web hosting plan will receive fewer requests, and have more resources for handling the requests that cannot be cached.
@@ -300,4 +300,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

@@ -20,7 +20,7 @@ Oprócz prywatnego adresowania IP, [vRack](https://www.ovh.pl/rozwiazania/vrack/
 - Przygotowanie Twojego zakresu wybranych prywatnych adresów IP
 - Posiadanie [serwera kompatybilnego z vRack](https://www.ovh.pl/serwery_dedykowane/){.external}
 - Aktywacja usługi [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external}
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
+- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}
 
 > [!warning]
 > Funkcja ta może być niedostępna lub ograniczona na [serwerach dedykowanych **Eco**](https://eco.ovhcloud.com/pl/about/).
@@ -44,7 +44,7 @@ Oprócz prywatnego adresowania IP, [vRack](https://www.ovh.pl/rozwiazania/vrack/
 > Konfiguracja ta pozwala na skonfigurowanie adresów IP tego samego bloku na kilku serwerach, pod warunkiem że wszystkie te serwery są w tej samej sieci vRack co blok IP. Aby to możliwe, blok IP musi mieć co najmniej 2 adresów IP nadających się do wykorzystania.
 >
 
-W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) przejdź do sekcji `Bare Metal Cloud`{.action} i kliknij `Network`{.action}. Następnie otwórz menu `vRack`{.action}.
+W [Panelu klienta OVHcloud](/links/manager) przejdź do sekcji `Bare Metal Cloud`{.action} i kliknij `Network`{.action}. Następnie otwórz menu `vRack`{.action}.
 
 Wybierz z listy usługę vRack, aby wyświetlić listę usług, które chcesz zamówić. Kliknij blok IP, który chcesz dodać do sieci vRack i kliknij przycisk `Dodaj`{.action}.
 
@@ -113,7 +113,7 @@ Następnie utwórz nową trasę IP dla vRack. W tym celu dodaj nową regułę ru
 253	default
 0	unspec
 # # #
-local
+# local
 # # #
 #1	inr.ruhep
 1 vrack

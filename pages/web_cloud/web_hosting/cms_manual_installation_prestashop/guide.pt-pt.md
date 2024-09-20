@@ -51,7 +51,7 @@ Siga **os passos indicados** no nosso manual sobre a [instalação manual de um 
 
 Se não descarregou a última versão disponível do PrestaShop, aparecerá a seguinte página:
 
-![PrestaShop installation step 1](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/prestashop/install-update-version.png){.thumbnail}
+![PrestaShop installation step 1](/pages/assets/screens/other/cms/prestashop/install-update-version.png){.thumbnail}
 
 Clique em `No thanks`{.action} se deseja conservar a versão do PrestaShop que acabou de descarregar ou em `Yes please!`{.action} se deseja utilizar a versão mais recente do CMS.
 
@@ -61,7 +61,7 @@ Introduza o seu domínio na barra de pesquisa do seu browser.
 
 Se os ficheiros de origem do seu PrestaShop foram corretamente colocados na sua pasta raiz, a página do PrestaShop que permite selecionar o idioma aparece:
 
-![PrestaShop installation step 2](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/prestashop/install-select-language.png){.thumbnail}
+![PrestaShop installation step 2](/pages/assets/screens/other/cms/prestashop/install-select-language.png){.thumbnail}
 
 Selecione a língua do site e clique em `Next`{.action}.
 
@@ -69,13 +69,13 @@ Selecione a língua do site e clique em `Next`{.action}.
 
 Leia atentamente as condições de utilização, selecione a opção `I agree to the above terms and conditions`{.action} e clique em `Next`{.action}.
 
-![PrestaShop installation step 3](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/prestashop/install-licence-agreement-3.png){.thumbnail}
+![PrestaShop installation step 3](/pages/assets/screens/other/cms/prestashop/install-licence-agreement-3.png){.thumbnail}
 
 #### 2.3 - Insira as informações da sua loja online
 
 O PrestaShop irá pedir-lhe uma série de informações sobre a sua futura loja online:
 
-![PrestaShop instalação step 4](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/prestashop/install-store-infos-4.png){.thumbnail}
+![PrestaShop instalação step 4](/pages/assets/screens/other/cms/prestashop/install-store-infos-4.png){.thumbnail}
 
 **Informações sobre a sua loja**
 
@@ -98,13 +98,13 @@ Verifique as informações introduzidas e clique em `Next`{.action}.
 
 O PrestaShop propõe-lhe instalar conteúdos e módulos para o seu futuro site de E-commerce:
 
-![PrestaShop instalação step 5](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/prestashop/install-store-content-5.png){.thumbnail}
+![PrestaShop instalação step 5](/pages/assets/screens/other/cms/prestashop/install-store-content-5.png){.thumbnail}
 
 Faça as suas escolhas e clique em `Next`{.action}.
 
 #### 2.5 - Associar o seu PrestaShop com a sua base de dados OVHcloud
 
-![PrestaShop instalação step 6](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/prestashop/install-db-config-6.png){.thumbnail}
+![PrestaShop instalação step 6](/pages/assets/screens/other/cms/prestashop/install-db-config-6.png){.thumbnail}
 
 Tenha consigo os dados de acesso à sua base de dados (se necessário, consulte **a etapa 1.4** do guia sobre a [instalação manual de um CMS](/pages/web_cloud/web_hosting/cms_manual_installation)).
 
@@ -137,7 +137,7 @@ Para as bases de dados criadas num serviço Web Cloud Databases, consulte as inf
 
 Clique em `Test your database connection now!`{.action} para verificar os parâmetros introduzidos:
 
-![PrestaShop instalação step 6-1](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/prestashop/install-db-config-6-1.png){.thumbnail}
+![PrestaShop instalação step 6-1](/pages/assets/screens/other/cms/prestashop/install-db-config-6-1.png){.thumbnail}
 
 Se aparecer a mensagem "A sua base de dados está ligada", clique em `Next`{.action}. Caso contrário, verifique os parâmetros que introduziu até que a ligação funcione. Caso seja necessário, consulte o **etapa 1.4** do tutorial para a [instalação manual de um CMS](/pages/web_cloud/web_hosting/cms_manual_installation).
 
@@ -145,7 +145,7 @@ Se aparecer a mensagem "A sua base de dados está ligada", clique em `Next`{.act
 
 A última etapa corresponde a um resumo da instalação que acabou de realizar:
 
-![PrestaShop instalação step 7](https://raw.githubusercontent.com/ovh/docs/develop/templates/external-elements/cms/prestashop/install-resume-7.png){.thumbnail}
+![PrestaShop instalação step 7](/pages/assets/screens/other/cms/prestashop/install-resume-7.png){.thumbnail}
 
 Obtenha as credenciais de acesso do PrestaShop antes de sair da página.
 
@@ -169,4 +169,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
  
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
  
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

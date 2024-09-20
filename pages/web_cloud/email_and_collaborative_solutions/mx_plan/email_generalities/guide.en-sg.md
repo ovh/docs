@@ -72,7 +72,7 @@ You will need to set up your email address on the device you want to check your 
 
 |Windows|Outlook|Apple|Android|Other|
 |---|---|---|---|---|
-|[Windows 10 Mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10)|[Outlook 2016](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)|[macOS Mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_mail_macos)|[Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android)|[Gmail online interface](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_gmail)|
+|[Windows 10 Mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10)|[Outlook](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)|[macOS Mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_mail_macos)|[Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android)|[Gmail online interface](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_gmail)|
 | | |[iPhone and iPad](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_ios){.external}| | |
 
 If you simply need the information required to configure your email account, the settings to use are listed below:
@@ -139,7 +139,7 @@ You will need to set up your email address on the device you want to check your 
 
 |Windows|Outlook|Apple|Android|Other|
 |---|---|---|---|---|
-|[Windows 10 Mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10)|[Outlook 2016](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)|[macOS Mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_mail_macos)|[Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android)|[Gmail online interface](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_gmail)|
+|[Windows 10 Mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10)|[Outlook](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)|[macOS Mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_mail_macos)|[Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android)|[Gmail online interface](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_gmail)|
 | | |[iPhone and iPad](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_ios)| | |
 
 If you simply need the information required to configure your email account, the settings to use are listed below:

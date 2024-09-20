@@ -1,6 +1,6 @@
 ---
 title: FAQ - Zmiana w miesięcznych rozliczeniach
-excerp: ""
+excerpt: ""
 updated: 2023-12-15
 ---
 
@@ -36,6 +36,6 @@ W przypadku zawarcia umowy miesięcznej, cały rozpoczęty miesiąc jest płatny
 
 ## Sprawdź również <a name="go-further"></a>
 
-Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
+Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](/links/professional-services), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

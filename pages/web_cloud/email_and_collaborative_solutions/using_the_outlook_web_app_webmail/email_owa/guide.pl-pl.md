@@ -1,7 +1,7 @@
 ---
 title: 'Korzystanie z konta e-mail przy użyciu Webmail Outlook Web App (OWA)'
 excerpt: 'Dowiedz się, jak korzystać z konta e-mail przy użyciu Webmail OWA'
-updated: 2024-03-26
+updated: 2024-09-03
 ---
 
 > [!primary]
@@ -35,12 +35,18 @@ Aby zalogować się do interfejsu OWA webmail przy użyciu swojego adresu e-mail
 ![useowa](images/use-owa-step1.png){.thumbnail}
 
 > [!warning]
-> 
+>
 > Jeśli zostałeś przekierowany do interfejsu **Roundcube**, oznacza to, że korzystasz z poprzedniej wersji usługi MX Plan. Aby uzyskać więcej informacji na temat oferty MX Plan, sprawdź naszą stronę [Pierwsze kroki z ofertą MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
 >
 > Aby zapoznać się z interfejsem **Roundcube**, zapoznaj się z naszym przewodnikiem [Korzystanie z konta e-mail w interfejsie Webmail Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
 
-Jeśli pierwszy raz logujesz się do interfejsu OWA webmail przy użyciu danego adresu e-mail, pojawi się monit o ustawienie języka interfejsu i strefy czasowej. Kliknij przycisk `Zapisz`{.action}, aby kontynuować.
+Jeśli pierwszy raz logujesz się do interfejsu OWA webmail przy użyciu tego adresu e-mail, pojawi się monit o ustawienie języka interfejsu i strefy czasowej. Następnie kliknij przycisk `Zapisz`{.action}, aby kontynuować.
+
+> [!primary]
+>
+> Strefy czasowe są wymienione zgodnie z [uniwersalnym standardem czasowym (UTC)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), a nie alfabetycznie według miast.
+>
+> **Przykład** : Dla Europy Zachodniej jest to UTC +1 (Bruksela, Kopenhaga, Madryt, Paryż).
 
 ![useowa](images/use-owa-step2.png){.thumbnail}
 
@@ -110,7 +116,7 @@ Aby utworzyć nowy folder, kliknij prawym przyciskiem myszy nazwę adresu e-mail
 
 #### Tworzenie reguł skrzynki odbiorczej
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Aby zarządzać regułami, kliknij ikonę koła zębatego u góry, a następnie kliknij pozycję `Opcje`{.action}.
 
@@ -130,7 +136,7 @@ Szczegółowe instrukcje tworzenia reguł skrzynki odbiorczej zawiera przewodnik
 
 #### Zablokuj nadawcę
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UeNdpFwdXm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/UeNdpFwdXm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Kliknij ikonę koła zębatego w prawym górnym rogu, a następnie kliknij przycisk `Opcje`{.action}. W lewej kolumnie, po drzewie "Mail" w "Konta", a następnie "Zablokuj lub autoryzuj".
 
@@ -156,7 +162,7 @@ Zostanie wyświetlona nowa strona, na której można dodać nowy kontakt, utworz
 
 ### Zmiana hasła
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Po zalogowaniu do interfejsu OWA możesz zmienić hasło do konta. W tym celu kliknij ikonę koła zębatego u góry, a następnie kliknij pozycję `Opcje`{.action}.
 

@@ -38,7 +38,7 @@ Je nach Art des [SSL-Zertifikats](/links/web/hosting-options-ssl){.external}, da
 
 Die angezeigte Tabelle listet alle Domains auf, die Ihrem Webhosting zugewiesen sind. Die Spalte "SSL" zeigt Ihnen den Aktivierungsstatus der gesicherten SSL-Verbindungen für Ihre Multisites.
 
-![ssl verwalten](images/ssls.png){.thumbnail}
+![ssl verwalten](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/ssls.png){.thumbnail}
 
 Es können drei Zustände entstehen:
 
@@ -59,7 +59,7 @@ Um SSL für eine Multisite zu aktivieren, klicken Sie rechts neben der betreffen
 > SSL-Zertifikate von externen Anbietern können für mehrere Domainnamen gleichzeitig gelten. Wenn Sie ein solches Zertifikat verwenden, erscheint *Aktiviert* auch nicht für alle Domainnamen, die in der Tabelle „Multisite“ deklariert sind. Ihr SSL Zertifikat ist dennoch gültig für alle Domainnamen für die es ausgestellt wurde.
 >
 
-![managessl](images/modify-domain.png){.thumbnail}
+![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-2.png){.thumbnail}
 
 Sobald Sie die Aktivierungsanfrage eingereicht haben, sollte sich der Zustand der sicheren SSL-Verbindung für die betreffende Multisite innerhalb weniger Sekunden aktualisieren, wobei der Status auf "Zu erstellen" gesetzt wird. Falls Sie für weitere Multisites SSL aktivieren möchten, wiederholen Sie den Vorgang entsprechend.
 
@@ -83,9 +83,12 @@ Vergewissern Sie sich, dass der vorherige Schritt der [Aktivierung eines SSL-Zer
 >
 > Vergewissern Sie sich außerdem, dass die Multisite-Einträge, für die Sie die SSL Option aktivieren, auf die IP-Adresse des Webhostings zeigen. Diese Konfiguration wird Ihnen automatisch angeboten, wenn Sie einen Multisite-Eintrag hinzufügen oder ändern, muss aber manuell für eine Domain erfolgen, die nicht in Ihrem Kundencenter verwaltet wird.<br>
 > - Die IP-Adresse Ihres Webhostings finden Sie im Tab `Allgemeine Informationen`{.action} unter dem Eintrag `IPv4`.
-> ![managessl](images/find-ipv4.png){.thumbnail}
+>
+> ![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4.png){.thumbnail}
+>
 > - Konfigurieren Sie die DNS-Zone der unter Multisites hinzugefügten Domain im Bereich `Domains`{.action}, im Tab `DNS-Zone`{.action}. Erstellen Sie einen entsprechenden `A`-Eintrag für Ihren Multisite-Eintrag oder editieren Sie ihn und geben Sie die IP-Adresse Ihres Hostings als `Ziel` ein.
-> ![managessl](images/modify-an-entry.png){.thumbnail}
+>
+> ![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/modify-an-entry.png){.thumbnail}
 >
 > Für weitere Informationen lesen Sie unsere Anleitungen zur [Konfiguration eines Multisite-Eintrags](/pages/web_cloud/web_hosting/multisites_configure_multisite) oder [zur Konfiguration einer DNS Zone](/pages/web_cloud/domains/dns_zone_edit).
 
@@ -101,11 +104,11 @@ Klicken Sie auf den Button `...`{.action} neben "SSL-Zertifikat" und dann auf `S
 
 Wenn das Wort "Ja" erscheint, bedeutet dies, dass bereits ein SSL-Zertifikat auf dem Webhosting installiert und konfiguriert wurde. Daher können Sie kein anderes Zertifikat bestellen, solange das bestehende Zertifikat aktiv ist.
 
-![ssl verwalten](images/order-an-ssl-certificate.png){.thumbnail}
+![ssl verwalten](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-an-ssl-certificate.png){.thumbnail}
 
 Wählen Sie in dem neuen Fenster das SSL-Zertifikat aus, das Sie bestellen möchten. Je nach Art Ihres [Webhostings](/links/web/hosting){.external} und dessen Konfiguration kann es sein, dass keine der nachstehend aufgeführten Lösungen verfügbar ist. Wenn Sie Ihre Auswahl vorgenommen haben, klicken Sie auf `Weiter`{.action}.
 
-![ssl verwalten](images/order-an-ssl-certificate-step-1-le.png){.thumbnail}
+![ssl verwalten](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-an-ssl-certificate-step-1-le.png){.thumbnail}
 
 Je nach gewählter Lösung können weitere Schritte notwendig sein:
 
@@ -117,7 +120,7 @@ Je nach gewählter Lösung können weitere Schritte notwendig sein:
 
 Je nach Art des gewählten Zertifikats kann die Konfiguration wenige Minuten bis hin zu mehreren Tagen dauern. Um zu überprüfen, ob das SSL-Zertifikat auf Ihrem Webhosting eingerichtet wurde, gehen Sie in Ihrem OVHcloud Kundencenter auf den Tab `Allgemeine Informationen`{.action}. Das Wort "Ja" wird dann unter "SSL-Zertifikat" erscheinen.
 
-![ssl verwalten](images/tab-ssl-le.png){.thumbnail}
+![ssl verwalten](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/tab-ssl-le.png){.thumbnail}
 
 ### 3. SSL-Zertifikat für das Webhosting erneuern <a name="regeneratessl"></a>
 
@@ -130,13 +133,13 @@ Wenn Sie eine gesicherte SSL-Verbindung für eine oder mehrere Ihrer Multisites 
 
 Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](/links/manager){.external} ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Hosting-Pakete`{.action} das betreffende Hosting aus. Gehen Sie dann auf den Tab `Allgemeine Informationen`{.action}. Klicken Sie dann auf den Button `...`{.action}. neben "SSL-Zertifikat" und dann auf `SSL-Zertifikat neu erstellen`{.action}.
 
-![ssl verwalten](images/regenerate-ssl-certificate.png){.thumbnail}
+![ssl verwalten](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/regenerate-ssl-certificate.png){.thumbnail}
 
 Lesen Sie die im neuen Fenster angezeigten Informationen und klicken Sie dann auf den Button `Bestätigen`{.action}. Warten Sie nun ab, bis die Erneuerung Ihres SSL-Zertifikats abgeschlossen ist. Dieser Vorgang kann mehrere Stunden dauern.
 
 Bitte beachten Sie, dass Let's Encrypt – die Zertifizierungsstelle, die das in Ihrem Webhosting enthaltene kostenlose SSL-Zertifikat bereitstellt – [maximal fünf Erneuerungen pro Woche](https://letsencrypt.org/docs/rate-limits/){.external} zulässt. Wir raten Ihnen daher, auf dieses Limit zu achten, wenn Sie innerhalb kurzer Zeit mehrere Erneuerungen vornehmen, damit Sie nicht vorübergehend blockiert werden.
 
-![ssl verwalten](images/ssl-regeneration.png){.thumbnail}
+![ssl verwalten](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ssl-regeneration.png){.thumbnail}
 
 ###  SSL-Zertifikat auf einem Webhosting löschen <a name="deletessl"></a>
 
@@ -148,7 +151,7 @@ Wenn Sie bereit sind, das SSL-Zertifikat zu löschen, loggen Sie sich in Ihr [OV
 
 Bestätigen Sie im Popup-Fenster den Löschvorgang. Dieser dauert höchstens einige Stunden.
 
-![ssl verwalten](images/delete-ssl.png){.thumbnail}
+![ssl verwalten](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/delete-ssl.png){.thumbnail}
 
 > [!warning]
 >
@@ -228,4 +231,4 @@ Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

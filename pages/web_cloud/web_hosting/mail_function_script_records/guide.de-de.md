@@ -1,7 +1,7 @@
 ---
 title: "Automatische E-Mails eines Webhostings verwalten"
 excerpt: "Erfahren Sie hier, wie Sie über ein Webhosting versendete automatische E-Mails verwalten"
-updated: 2023-12-04
+updated: 2024-09-05
 ---
 
 > [!primary]
@@ -35,13 +35,13 @@ Automatische E-Mails sind Nachrichten, die über Skripte versendet werden, gewö
 
 Die Überwachung und Verwaltung der automatisierten E-Mails Ihres OVHcloud Webhostings erfolgt über Ihr [OVHcloud Kundencenter](/links/manager){.external}. Gehen Sie nach dem Login in den Bereich `Web Cloud`{.action}, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus der Liste aus. Klicken Sie anschließend auf den Tab `Mehr`{.action} und wählen Sie `E-Mail-Skripte`{.action}.
 
-![hosting](images/go-to-email-scripts-tab.png){.thumbnail}
+![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/email-scripts/go-to-email-scripts-tab.png){.thumbnail}
 
 Hier können Sie über Ihr [OVHcloud Webhosting](/links/web/hosting) versendete automatische E-Mails verwalten.
 
 ### Informationen im Tab "E-Mail-Skripte"
 
-![hosting](images/tab.png){.thumbnail}
+![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/email-scripts/tab.png){.thumbnail}
 
 Diese Seite zeigt diverse Informationen zur Nachverfolgung des von Ihren Skripten generierten E-Mail-Versands:
 
@@ -60,7 +60,8 @@ Diese Seite zeigt diverse Informationen zur Nachverfolgung des von Ihren Skripte
 Rechts können Sie den Versand automatischer E-Mails über Ihr Webhosting verwalten. Je nach Zustand des Dienstes sind einige Optionen nicht verfügbar.
 
 - **E-Mails bereinigen**: Löscht die in der Warteschleife befindlichen E-Mails und entsperrt den Versand von E-Mails.
-- **E-Mails im Fehlerstatus**: Entsperrt den Versand automatischer E-Mails von Ihrem Webhosting. Die in der Warteschleife befindlichen E-Mails werden ebenfalls wieder für den Versand freigegeben.
+- **Versand entsperren**: Den Versand automatischer E-Mails von Ihrem Webhosting entsperren. E-Mails in der Warteschlange werden ebenfalls für den Versand freigegeben.
+- **E-Mails im Fehlerstatus**: Ermöglicht den Zugriff auf die Logs der letzten E-Mails mit Sendefehlern. Dort finden Sie die betroffenen E-Mail-Adressen mit dem zugehörigen Fehler. Achtung, dieser Verlauf wird nicht zurückgesetzt, auch wenn Sie `E-Mails bereinigen`{.action} oder `Versand entsperren`{.action} nutzen.
 - **Versand blockieren**: Sperrt den E-Mail-Versand Ihres Webhostings. E-Mails, die von Ihren Skripten nach der Sperrung generiert werden, werden nicht abgeschickt, sondern für maximal 72 Stunden in einer Warteschleife gespeichert.
 
 Um die gewünschte Aktion durchzuführen, klicken Sie auf den Button und dann auf `Bestätigen`{.action}. In einigen Fällen kann es mehrere Minuten dauern, bis die Ausführung wirksam wird.
@@ -129,7 +130,7 @@ Dieser Zustand tritt ein, wenn Ihr Hosting E-Mails sendet, die als SPAM eingestu
 
 Normalerweise wird diese Sperrung begleitet von einer E-Mail der Art **"Missbrauch mit Ihrem Hosting domain.tld"**, die automatisch von unseren Sicherheitsrobotern generiert wird.
 
-![hosting](images/email-script-disabled.png){.thumbnail}
+![hosting](/pages/assets/screens/email-sending-to-customer/webhosting/email-script-disabled.png){.thumbnail}
 
 Drei Szenarien sind möglich:
 
@@ -199,17 +200,6 @@ Wir empfehlen Ihnen dringend, die "mail()"-Funktion von PHP bevorzugt zu nutzen.
 > E-Mails, die über ein Skript mit SMTP-Konfiguration versendet werden, können nicht über Ihr [OVHcloud Kundencenter](/links/manager) verwaltet und verfolgt werden.
 > 
 
-Verwenden Sie hierzu folgendes Skript, indem Sie ausschließlich die Werte `Host`, `Username` und `Password` durch Ihre eigenen SMTP-Einstellungen ersetzen:
-
-```bash
-$mail->Host = "eigener.smtp.server";
-$mail->SMTPAuth = true; 
-$mail->SMTPSecure = "ssl";
-$mail->Port = 465; 
-$mail->Username = "email@adresse.tld"; 
-$mail->Password = "IhrPasswort"; 
-```
-
 > [!primary]
 >
 > Nur bei der Verwendung eines OVHcloud E-Mail-Accounts können Sie für `SMTPSecure` auch *"starttls"* oder *"tls"* mit dem `Port` **587** nutzen. Jedoch ist die Einstellung `SMTPSecure` mit *"ssl"* und dem `Port` **465** die bevorzugte Konfiguration für unsere Infrastruktur.
@@ -227,4 +217,4 @@ Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

@@ -1,7 +1,7 @@
 ---
 title: "Configurar um DNS dinâmico (DynHost/DynDNS) para o seu nome de domínio"
 excerpt: "Saiba como configurar um registo DNS dinâmico para o seu nome de domínio OVHcloud"
-updated: 2024-05-22
+updated: 2024-09-04
 ---
 
 > [!primary]
@@ -12,13 +12,11 @@ updated: 2024-05-22
 
 A zona **D**omain **N**ame **S**ystem (**DNS**) de um nome de domínio constitui o ficheiro de configuração deste último. É composta por informações técnicas, designadas *registos DNS*. A zona DNS é, de certa forma, como um centro de agulhas. 
 
-Pode, por exemplo, especificar:
+Para mais explicações, consulte os seguintes guias:
 
-- O endereço de IP (registos DNS de tipo *A* e *AAAA*) do seu alojamento web para apresentar o seu website com o seu domínio.
-- Os servidores de e-mail (registos DNS de tipo *MX*) para os quais o seu nome de domínio deve reencaminhar os e-mails que recebe. Isto permite-lhe consultá-los no(s) seu(s) endereço(s) de e-mail(s) personalizado(s) com o seu nome de domínio.
-- Informações relacionadas com a segurança / a autenticação dos seus serviços associados (alojamento web, servidor web, servidor de e-mail, etc.) ao seu nome de domínio (registos DNS de tipo *SPF*, *DKIM*, *DMARC*, etc.).
-
-Se necessário, consulte [o nosso manual sobre os registos DNS e a edição de uma zona DNS](/pages/web_cloud/domains/dns_zone_edit) a partir do seu [Área de Cliente OVHcloud](/links/manager).
+- [Saber tudo sobre os servidores DNS](/pages/web_cloud/domains/dns_server_general_information)
+- [Saber tudo sobre a zona DNS](/pages/web_cloud/domains/dns_zone_general_information)
+- [Saber tudo sobre os registos DNS](/pages/web_cloud/domains/dns_zone_records)
 
 A atualização "dinâmica" de um registo DNS pode evitar uma interrupção prolongada de um dos seus serviços se não dispõe de um endereço IP dito "fixo" (que não se altera).
 
@@ -57,7 +55,7 @@ Por exemplo, o **DynHost** pode ser utilizado se *autoidentificar* (nas instala�
 
 Para criar um utilizador DynHost, aceda à [Área de Cliente OVHcloud](/links/manager){.external} e aceda à secção `Web cloud`{.action}. Na coluna da esquerda, clique no separador `Nomes de domínio`{.action} e selecione o domínio em causa. Na página que aparece, clique no separador `DynHost`{.action}.
 
-![dynhost](images/tab.png){.thumbnail}
+![dynhost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/tab.png){.thumbnail}
 
 A seguir, clique no botão `Gerir os acessos`{.action} e, a seguir, em `Criar um identificador`{.action}. Na nova janela, preencha as informações necessárias:
 
@@ -74,7 +72,7 @@ A seguir, clique no botão `Gerir os acessos`{.action} e, a seguir, em `Criar um
 
 Depois de preencher os campos, clique no botão `Validar`{.action}. O identificador aparece no quadro presente na página atual. Repita este passo sempre que necessário se precisar de dados DynHost adicionais.
 
-![dynhost](images/create-a-dynhost-username.png){.thumbnail}
+![dynhost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/create-a-dynhost-username.png){.thumbnail}
 
 ### Etapa 2: criar o registo DNS dinâmico (DynHost) <a name="step2"></a>
 
@@ -85,11 +83,21 @@ Quando estiver pronto para criar o registo DynHost, clique no separador `DynHost
 |Informações|Descrição|
 |---|---|
 |Subdomínio|Indique o subdomínio cujo registo DNS deverá ser atualizado de forma dinâmica. Este subdomínio deve corresponder ao domínio indicado durante a criação do utilizador DynHost. **Se desejar implementar um DynHost diretamente para o seu domínio, deixe este formulário em branco**|
-|IP de destino|Introduza o endereço IP (apenas IPv4 ou IPv6) que deve ser atualmente utilizado pelo registo DNS. Trata-se geralmente do endereço IP público do seu *box* Internet ou do seu servidor alojado automaticamente. De acordo com o princípio do DynHost, esta será atualizada automaticamente.|
+|IP de destino|Introduza o endereço IP (apenas IPv4 ou IPv6) que deve ser atualmente utilizado pelo registo DNS. Trata-se geralmente do endereço IP público do seu *box* Internet ou do seu servidor alojado automaticamente. De acordo com o princípio do DynHost, esta será atualizada automaticamente. Deve ser indicado apenas um endereço IP neste formulário.|
 
-![dynhost](images/create-a-dynhost.png){.thumbnail}
+> [!warning]
+>
+> Para a implementação de um registo DNS dinâmico (DynHost), a utilização de um *wildcard* (colocando apenas o caráter `*`) no formulário `Subdomínio`{.action} está indisponível.
+>
+
+![dynhost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/create-a-dynhost.png){.thumbnail}
 
 Depois de preencher os campos, clique no botão `Validar`{.action}. O registo DynHost aparece no quadro presente na página atual. Repita este passo sempre que necessário se precisar de mais registos DynHost.
+
+> [!primary]
+>
+> Se o seu domínio ou subdomínio tiver de ser configurado dinamicamente com, por exemplo, um IPv4 e um IPv6, pode criar dois registos DNS dinâmicos para o mesmo domínio ou subdomínio. O primeiro registo DNS dinâmico será então para o IPv4 e o segundo para o IPv6.
+>
 
 ### Etapa 3: automatizar a alteração do DynHost
 
@@ -126,7 +134,7 @@ Pode verificar se o endereço IP de destino foi atualizado. Para isso, aceda à 
 > Qualquer alteração na zona DNS ativa de um domínio através do DynDNS pode provocar um atraso de propagação da atualização de vários minutos.
 >
 
-![dynhost](images/target.png){.thumbnail}
+![dynhost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/target.png){.thumbnail}
 
 ## Quer saber mais? <a name="go-further"></a>
 
@@ -134,4 +142,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 
+Fale com nossa [comunidade de utilizadores](/links/community). 

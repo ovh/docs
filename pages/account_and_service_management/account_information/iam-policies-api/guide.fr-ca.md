@@ -1,7 +1,7 @@
 ---
 title: "Comment utiliser les politiques IAM via l’API OVHcloud"
 excerpt: "Découvrez comment donner des droits d'accès spécifiques aux utilisateurs d'un compte OVHcloud"
-updated: 2024-01-16
+updated: 2024-08-21
 ---
 
 ## Objectif
@@ -98,11 +98,11 @@ Les éléments des politiques sont définis par des URNs. Ces URNs sont définie
 ||**URN**|**:**|**version**|**:**|**plaque**|**:**|**type**|**:**|**sous-type**|**:**|**id**|
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 |**Description**|préfixe immuable|:|version du système IAM|:|Plaque où se trouve l'URN|:|Type de l'URN actuelle|:|(optionnel) Sous-type pour les types **identity** ou **resource** |:|Identifiant unique associé à l'URN|
-|**Possible values**|urn|:|v1|:|eu, ca, us|:|identité, ressource, resourceGroup|:|<p>Pour le type **identity** : account, user, group</p><p>Pour le type **resource** : tous les types de ressources</p>|:|Valeur alphanumérique|
-|**Account ID Example**|urn|:|v1|:|eu|:|identity|:|account|:|xx1111-ovh|
-|**User group Example**|urn|:|v1|:|eu|:|identity|:|group|:|xx1111-ovh/admin@mycompany.com|
-|**VPS Example**|urn|:|v1|:|ca|:|resource|:|vps|:|vps-5b48d78b.vps.ovh.net|
-|**Resource Group Example**|urn|:|v1|:|us|:|resourceGroup|||:|aa0713ab-ed13-4f1a-89a5-32aa0cb936d8|
+|**Valeurs possibles**|urn|:|v1|:|eu, ca, us|:|identity, resource, resourceGroup|:|<p>Pour le type **identity** : account, user, group</p><p>Pour le type **resource** : tous les types de ressources</p>|:|Valeur alphanumérique|
+|**Account ID Exemple**|urn|:|v1|:|eu|:|identity|:|account|:|xx1111-ovh|
+|**User group Exemple**|urn|:|v1|:|eu|:|identity|:|group|:|xx1111-ovh/admin@mycompany.com|
+|**VPS Exemple**|urn|:|v1|:|ca|:|resource|:|vps|:|vps-5b48d78b.vps.ovh.net|
+|**Resource Group Exemple**|urn|:|v1|:|us|:|resourceGroup|||:|aa0713ab-ed13-4f1a-89a5-32aa0cb936d8|
 
 Les actions et les URNs peuvent finir par un caractère *wildcard* `*`. Cela permet de faire référence à plusieurs resources ou identités en une seule ligne.
 
@@ -126,6 +126,8 @@ Les actions et les URNs peuvent finir par un caractère *wildcard* `*`. Cela per
     - **allow**: Ensemble des actions autorisées pour les identités concernant les ressources. Toutes les actions sont refusées par défaut.
     - **deny**: Ensemble des actions explicitement interdites pour les identitités concernant les ressources. Une action interdite sera refusée quelque soient les actions autorisées dans d'autres politiques.
     - **except**: Extension du paramètre d'autorisation **allow**. Ensemble d'actions à ne pas autoriser même si elles sont incluses dans les actions **allow**. Par exemple, ceci est utile lorsqu'il y a une action autorisée par un wildcard mais qu'il est nécessaire d'exclure une action spécifique qui serait autrement incluse dans le wildcard. Contrairement au **deny**, **except** est limité au périmètre d'une seule politique.
+- **permissionsGroups**: Liste des [groupes de permissions](/pages/account_and_service_management/account_information/iam-permission-groups) appliqués à cette politique.
+- **expiredAt**: Date après laquelle la politique sera désactivée.
 - **createdAt**: Date de création de la politique.
 - **updateAt**: Dernière mise à jour de la politique.
 

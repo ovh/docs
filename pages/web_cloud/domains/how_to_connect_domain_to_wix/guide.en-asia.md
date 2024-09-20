@@ -40,7 +40,8 @@ When using a Wix hosting plan with an OVHcloud domain name, you must first prepa
 
 > [!warning]
 >
-> Before you continue: <br>
+> Before you continue:
+>
 > - Open a tab in your web browser.
 > - Open [**this page of the Wix documentation**](https://support.wix.com/en/article/connect-a-domain-%C3%A0-wix-par-pointage-5727882){.external}.
 > - Go to the "**Step 2 section | Update the DNS records in your domain hosting provider’s account**" in the Wix documentation.<br>
@@ -50,7 +51,7 @@ Log in to the [OVHcloud Control Panel](/links/manager){.external} in the `Web Cl
 
 The table lists all of the DNS records for the selected domain name.
 
-![dnszone](images/tab.png){.thumbnail}
+![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/tab-mydomain-anycast.png){.thumbnail}
 
 Each DNS record can be modified by clicking on the `...`{.action} button to the right of the table row concerned, then clicking on `Modify record`{.action}.
 
@@ -60,27 +61,31 @@ Follow the steps in order by browsing the following tabs:
 > **Step 1**
 >> **"A" Record**<br><br>
 >> To identify existing "A" records, click the filter menu at the top of the DNS records table and select `A`.<br>
->> ![dnszone](images/filter-a.png){.thumbnail}<br>
->> - Click the `...`{.action} button in the table row that corresponds to your domain name (e.g. `mydomain.ovh.`) without a subdomain, then click `Edit record`{.action}.<br>
->> - If a record for the subdomain "www" is present (e.g.: `www.mydomain.ovh.`), delete it so that it does not conflict with the CNAME record you enter in step 4. Click on the `...`{.action} button in the table row for your domain name with the subdomain "www", then click `Delete record`{.action}.<br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-a.png){.thumbnail}
+>>
+>> - Click the `...`{.action} button in the table row that corresponds to your domain name (e.g. `mydomain.ovh.`) without a subdomain, then click `Edit record`{.action}.
+>> - If a record for the subdomain "www" is present (e.g.: `www.mydomain.ovh.`), delete it so that it does not conflict with the CNAME record you enter in step 4. Click on the `...`{.action} button in the table row for your domain name with the subdomain "www", then click `Delete record`{.action}.
 >> - If you do not have an existing "A" record, click the `Add Entry`{.action} button in the top right of your screen and select `A`{.action}<br><br>
 >> Leave the **Subdomain** field blank and enter the IPv4 address *shown in your Wix interface* into the **Target** field.
 >> Click `Next`{.action}, confirm your A record, and go to step 2.
 > **Step 2**
 >> **AAAA record**<br><br>
 >>  To identify the existing "AAAA" records, click on the filter menu at the top of the DNS records table and select `AAAA`.<br>
->> ![dnszone](images/filter-aaaa.png){.thumbnail}<br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png){.thumbnail}
+>>
 >> - If there are "AAAA" records for the domain name (e.g. `mydomain.ovh.`) and for its subdomain "www." (e.g. `www.mydomain.ovh.`), you will need to delete them so that they do not conflict with the "A" and "CNAME" records that you will enter in step 4. Click on the `...`{.action} button in the table row corresponding to your domain name and the "www." subdomain, then click `Delete record`{.action}.<br>
 > **Step 3**
 >> **TXT record**<br><br>
 >>  To identify existing "TXT" records, click the filter menu at the top of the DNS records table and select `TXT`.<br>
->> ![dnszone](images/filter-txt.png){.thumbnail}<br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-txt.png){.thumbnail}
+>>
 >> - If "TXT" records are present for the domain name (e.g. `mydomain.ovh.`) and for its subdomain "www" (e.g. `www.mydomain.ovh.`), you must delete them so that they do not conflict with the CNAME record that you enter in step 4. Click on the `...`{.action} button in the table row for your domain name with the subdomain "www", then click `Delete record`{.action}.<br>
 > **Step 4**
 >> **CNAME record**<br><br>
 >>  To identify existing CNAME records, click on the filter menu at the top of the DNS records table and select `CNAME`.<br>
->> ![dnszone](images/filter-cname.png){.thumbnail}<br>
->> - Click on the `...`{.action} button to the right of the table row corresponding to the subdomain "www" (example: `mydomain.ovh.`) then click `Edit record`{.action}.<br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-cname.png){.thumbnail}
+>>
+>> - Click on the `...`{.action} button to the right of the table row corresponding to the subdomain "www" (example: `mydomain.ovh.`) then click `Edit record`{.action}.
 >> - If you do not have an existing CNAME record, click the `Add record`{.action} button in the top right-hand corner of your screen and select `CNAME`{.action}.
 >> Fill in the **Sub-domain** field with the value `www`, and enter the value from your Wix interface into the **Target** field.<br>
 >> Click `Next`{.action}, then confirm your CNAME record.
@@ -95,7 +100,7 @@ If you are using an OVHcloud email solution, or planning to subscribe to one of 
 
 ## Go further <a name="gofurther"></a>
 
-[Modifying an OVHcloud domain name’s DNS servers](/pages/web_cloud/domains/dns_server_general_information)
+[Modifying an OVHcloud domain name’s DNS servers](/pages/web_cloud/domains/dns_server_edit)
 
 [Creating an OVHcloud DNS zone for a domain name](/pages/web_cloud/domains/dns_zone_create)
 
@@ -107,4 +112,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](h
  
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
  
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

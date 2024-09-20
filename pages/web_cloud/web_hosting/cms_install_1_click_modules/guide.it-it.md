@@ -14,7 +14,7 @@ I "moduli in 1 click" permettono l'installazione semplice e rapida di un sito We
 
 **Questa guida ti mostra come installare il tuo sito utilizzando i nostri moduli in 1 click.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZrYmmPbMl4I?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/ZrYmmPbMl4I?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Prerequisiti
 
@@ -41,7 +41,7 @@ Utilizzando questa soluzione, dovrai scegliere tra i 4 CMS citati sopra. Se hai 
 
 Per installare un CMS non disponibile tramite i nostri "moduli in 1 click", è possibile installarlo manualmente sul tuo hosting. Questo CMS è compatibile con le nostre soluzioni di [hosting Web OVHcloud](/links/web/hosting).
 
-![Logo dei CMS](images/cms-logos.png){.thumbnail}
+![Logo dei CMS](/pages/assets/screens/other/cms/cms-logos.png){.thumbnail}
 
 ### Step 2 - accedi alla gestione dei "moduli in 1 click"
 
@@ -49,7 +49,7 @@ Accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e seleziona `Web Cloud`{
 
 In questa interfaccia sono elencati gli eventuali "moduli in 1 click" già installati. è possibile gestire i "moduli in 1 click" e installarne di nuovi.
 
-![Accesso alla sezione Moduli in 1 click](images/tab.png){.thumbnail}
+![Accesso alla sezione Moduli in 1 click](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/tab.png){.thumbnail}
 
 ### Step 3 - Aggiungi un "modulo in 1 click"
 
@@ -57,7 +57,7 @@ Nella scheda `Moduli in 1 click`{.action} del tuo hosting, clicca su `Aggiungi u
 
 Nella nuova finestra, scegli il CMS e seleziona il dominio con cui vuoi installare il tuo sito Web:
 
-![Scelta del modulo](images/add-a-module-select-module-and-domain.png){.thumbnail}
+![Scelta del modulo](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-select-module-and-domain.png){.thumbnail}
 
 Se il tuo dominio non è nella lista, clicca sulla scheda `Multisito`{.action} per aggiungerlo. Consulta la nostra guida [Come condividere un hosting Web tra più siti](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external} in caso di necessità.
 
@@ -94,7 +94,7 @@ Scegli il dominio del tuo CMS, controlla la directory di destinazione che appare
 > Per un'installazione rapida, non crei il database prima, ma il robot installerà la macchina virtuale.
 >
 
-![Installazione base di un modulo](images/add-a-module-quick-mod-step-1-b.png){.thumbnail}
+![Installazione base di un modulo](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-quick-mod-step-1-b.png){.thumbnail}
 
 Una volta completata l'installazione, riceverai un'email con le informazioni di connessione all'interfaccia amministratore (*back office*) del tuo CMS. Accedi alla pagina per personalizzare il tuo sito Web.
 
@@ -107,7 +107,7 @@ Una volta completata l'installazione, riceverai un'email con le informazioni di 
 
 Assicurati che la casella `Installazione avanzata`{.action} sia selezionata e clicca su `Continua`{.action}:
 
-![Installazione avanzata di un modulo](images/add-a-module-advanced-mod-step-1.png){.thumbnail}
+![Installazione avanzata di un modulo](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-advanced-mod-step-1.png){.thumbnail}
 
 ##### Scegli il database
 
@@ -122,7 +122,7 @@ Inserisci le informazioni di connessione al tuo database.
 > Per recuperare le credenziali di accesso al database creato su un'istanza Web Cloud Databases, consulta [questa guida](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 >
 
-![Database per l'installazione avanzata](images/add-a-module-advanced-mod-step-3.png){.thumbnail}
+![Database per l'installazione avanzata](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-advanced-mod-step-3.png){.thumbnail}
 
 Esistono diverse possibilità:
 
@@ -182,13 +182,13 @@ Una volta inseriti tutti i dati, clicca su `Continua`{.action}:
 > La cartella finale indicata nel percorso di installazione inserito deve essere obbligatoriamente e completamente vuota affinché l'installazione possa essere completata.
 >
 
-![Configurazione del modulo per installazione avanzata](images/add-a-module-advanced-mod-step-2.png){.thumbnail}
+![Configurazione del modulo per installazione avanzata](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-advanced-mod-step-2.png){.thumbnail}
 
 ##### Conferma l'installazione
 
 Verifica le informazioni visualizzate e clicca su `Conferma`{.action} se tutto è in ordine:
 
-![Conferma dell’installazione in modalità avanzata](images/add-a-module-advanced-mod-step-4.png){.thumbnail}
+![Conferma dell’installazione in modalità avanzata](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/add-a-module-advanced-mod-step-4.png){.thumbnail}
 
 ### Step 4: personalizza il tuo sito
 
@@ -230,4 +230,4 @@ Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [p
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

@@ -24,7 +24,7 @@ All these accesses are secured by your username and password. But what if you do
 
 ### Generating tokens using the manager
 
-Once you have logged into Logs Data Platform you will have to access to the token Generation panel from the Configuration box.
+Once you have logged into Logs Data Platform you will have access to the token generation function from the Configuration panel.
 
 ![Token Menu](images/token_menu.png){.thumbnail}
 
@@ -38,7 +38,7 @@ Once the token is created, you can use its value or remove it:
 
 ### Generating tokens with API
 
-One goal with token is to automatize APIs call. Sometime you even need to automatize token creation. That's why it is possible to create token by using only the OVHcloud APIs. If you're familiar with the OVHcloud API, it should be fairly straightforward, if you're not, this section will help you with it. Generating tokens is two API calls away. You can use the OVHcloud API console to make theses calls.
+One goal of tokens is to automatize API calls. Sometimes you even need to automatize token creation. That's why it is possible to create tokens by using only the OVHcloud APIs. If you're familiar with the OVHcloud API, it should be fairly straightforward, if you're not, this section will help you with it. Generating tokens is two API calls away. You can use the OVHcloud API console to make theses calls.
 
 First you will have to retrieve the serviceName you want to generate token for. The API call to get your serviceName is the following:
 
@@ -73,7 +73,7 @@ Once you have the login you want, use the following call to add a new token:
 > - `name`: The name of your token (string)
 >
 
-Please replace **serviceName** with your serviceName, and replace **name** by the name of your choice for your token. This call will give you a taskId. After a few seconds you can retrieve your **tokenId** with this call:
+Please replace **serviceName** with your serviceName, and replace **name** with the name of your choice for your token. This call will give you a taskId. After a few seconds you can retrieve your **tokenId** with this call:
 
 > [!api]
 >
@@ -126,7 +126,7 @@ Finally to delete your token, use the following call:
 
 ### Using your tokens
 
-Using your token is no different of using your credentials. You just have to replace your username with the word **token** and your password with the token (the opposite works too).
+Using your token is no different than using your credentials. You just have to replace your username with the word **token** and your password with the token (the opposite works too).
 For example to issue a search against the Graylog API with the token obtained above, you can do the following:
 
 ```shell-session
@@ -148,7 +148,7 @@ To issue a search against the OpenSearch API, you also use the same credentials.
 $ curl -u token:kujg9g227qv0123mav3s0q4pra4psqsi5leka6j7lc62qdef58q "https://<your_cluster>.logs.ovh.com:9200/your_alias/_search?pretty"
 ```
 
-This call will launch a quick search (to retrieve the count and a sample of your documents) against the alias **your_alias**. Replace the alias by the one you have setup in you Logs Data Platform console. Note that these credentials are usable in place of your account credentials in Grafana (or any tool that supports Basic Authentication with OpenSearch).
+This call will launch a quick search (to retrieve the count and a sample of your documents) against the alias **your_alias**. Replace the alias by the one you have set up in your Logs Data Platform console. Note that these credentials are usable in place of your account credentials in Grafana (or any tool that supports Basic Authentication with OpenSearch).
 
 The only place you cannot use your token is the Graylog Web Interface.
 

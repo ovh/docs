@@ -41,7 +41,7 @@ Para verificar los logs de su solución Web Cloud Databases en tiempo real, llev
 4. Seleccione la solución Web Cloud Databases correspondiente.
 5. A continuación, haga clic en la pestaña `Logs`{.action}.
 
-![Web Cloud Databases](images/tab-with-logs.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/logs/tab-with-logs.png){.thumbnail}
 
 En esta consola integrada podrá encontrar en tiempo real los logs de su solución Web Cloud Databases.
 
@@ -77,7 +77,7 @@ Para consultar la información de conexión SFTP a su solución Web Cloud Databa
 > Si no conoce la `Contraseña del servidor`{.action}, haga clic en el botón `...`{.action} a la derecha para modificarla.
 >
 
-![Web Cloud Databases](images/sftp-login.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/sftp-login.png){.thumbnail}
 
 Una vez que haya obtenido las claves de conexión SFTP, conéctese a través de un cliente FTP (FileZilla, Cyberduck, WinSCP, etc.).
 
@@ -85,7 +85,7 @@ Para FileZilla, acceda a la parte superior izquierda del menú `File`{.action} y
 
 Haga clic en `New site`{.action} y, a continuación, introduzca los parámetros que se han indicado anteriormente.
 
-![Web Cloud Databases](images/site-manager.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/other/web-tools/filezilla/site-manager.png){.thumbnail}
 
 El archivo de logs, denominado `stdout.log`, se encuentra en la raíz.
 
@@ -107,4 +107,4 @@ Puede descargarlo en su equipo para consultarlo.
  
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
  
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

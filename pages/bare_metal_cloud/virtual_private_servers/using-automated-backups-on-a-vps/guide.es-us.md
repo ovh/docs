@@ -21,13 +21,13 @@ Antes de aplicar las opciones de copia de seguridad, le recomendamos que consult
 
 ## Requisitos
 
-- Tener acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Tener acceso al [área de cliente de OVHcloud](/links/manager).
 - Tener un [servicio de servidor virtual privado (VPS)](https://www.ovh.com/world/es/vps) de OVHcloud ya configurado.
 - Tener acceso de administrador (sudo) a su servidor virtual privado (VPS) a través del protocolo/programa SSH (opcional).
 
 ## Procedimiento
 
-Conéctese al [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en la sección `Servidores Privados Virtuales`{.action}.
+Conéctese al [Panel de configuración de OVHcloud](/links/manager), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en la sección `Servidores Privados Virtuales`{.action}.
 
 ### Paso 1: Activar la opción «Copias de seguridad automatizadas»
 

@@ -1,7 +1,7 @@
 ---
-title: Activation du pare-feu applicatif
-excerpt: "Découvrez comment activer le pare-feu applicatif sur un offre d'hébergement Web."
-updated: 2021-04-26
+title: "Activation du pare-feu applicatif"
+excerpt: "Découvrez comment activer le pare-feu applicatif sur une offre d'hébergement Web"
+updated: 2024-09-05
 ---
 
 ## Objectif
@@ -19,6 +19,11 @@ L'ensemble préconfiguré de règles de base, le « Core Rule Set » (CRS), de n
 
 **Ce guide vous explique comment activer le pare-feu applicatif depuis votre espace client OVHcloud, afin d'obtenir une protection améliorée.**
 
+> [!primary]
+>
+> Du fait que votre hébergement web est présent sur une infrastructure mutualisée, la modification des paramètres de configuration du pare-feu est indisponible.
+>
+
 ## Prérequis
 
 - Disposer d'une offre d'[hébergement web OVHcloud](/links/web/hosting){.external}.
@@ -33,7 +38,7 @@ Connectez-vous à votre [espace client OVHcloud](/links/manager){.external} et s
 
 Cliquez sur l'onglet `Informations générales`{.action}. La `version PHP globale` actuelle s'affiche dans la zone **Configuration**. Cliquez sur le bouton `...`{.action} et sélectionnez `Modifier la configuration`{.action}. Dans la fenêtre qui s'ouvre, sélectionnez l'élément `Modifier la configuration actuelle`{.action} et cliquez sur le bouton `Suivant`{.action}.
 
-![managephpconfig](images/application-firewall-step-2.png){.thumbnail}
+![managephpconfig](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/application-firewall-step-2.png){.thumbnail}
 
 Dans la nouvelle fenêtre, assurez-vous que **Application firewall** est défini sur `Activé`{.action}. Pour confirmer la configuration, cliquez sur le bouton `Confirmer`{.action}.
 
@@ -41,17 +46,17 @@ Dans la nouvelle fenêtre, assurez-vous que **Application firewall** est défini
 
 Cliquez sur l'onglet `Multisite`{.action} de votre offre d'hébergement. Cliquez sur le bouton `...`{.action} à droite du nom de domaine concerné et sélectionnez l'option `Modifier le domaine`{.action}.
 
-![managemultisite](images/modify-a-domain.png){.thumbnail}
+![managemultisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-2.png){.thumbnail}
 
 Dans la fenêtre de configuration, cochez la case `Activer le pare-feu`{.action}. Vous pouvez également inclure le sous-domaine `www` dans cette configuration en cochant la case en haut.
 
 Cliquez sur `Suivant`{.action}, puis sur `Confirmer`{.action} pour modifier les paramètres multisites.
 
-![modifydomain](images/modify-a-domain-enable-firewall-step-1.png){.thumbnail}
+![modifydomain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-enable-firewall-step-1.png){.thumbnail}
 
 ### Vérifier l'état de la tâche d'activation
 
-![gestion en cours](images/firewall-planned.png){.thumbnail}
+![gestion en cours](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ongoing-tasks/firewall-planned.png){.thumbnail}
 
 Les tâches de mise à jour de votre configuration multisite seront répertoriées dans l'onglet `Opérations en cours`{.action} (le statut initial est « Planifié »). Le pare-feu sera actif dès que sa tâche de mise à jour n'apparaîtra plus dans la liste.
 
@@ -59,7 +64,7 @@ Les tâches de mise à jour de votre configuration multisite seront répertorié
 
 L'onglet `Multisite`{.action} de votre offre d'hébergement fournit des informations sur les noms domaine pour lesquels l'option de pare-feu est activée.
 
-![gérageenabled](images/firewall-enabled.png){.thumbnail}
+![gérageenabled](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/firewall-enabled.png){.thumbnail}
 
 Le tableau affiché contient tous les noms de domaine qui ont été ajoutés à votre offre d'hébergement Web. Dans la colonne « Pare-feu » s'affiche le statut d'activation de chaque nom de domaine.
 
@@ -69,4 +74,4 @@ Pour des prestations spécialisées (référencement, développement, etc), cont
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

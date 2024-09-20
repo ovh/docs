@@ -1,6 +1,6 @@
 ---
-title: Configurar un registro DMARC en su dominio
-excerpt: Cómo funciona DMARC y cómo implementarlo para su servicio de correo
+title: "Mejorar la seguridad del correo electrónico mediante el registro DMARC"
+excerpt: "Descubra cómo funciona DMARC y cómo implementarlo para su servicio de correo"
 updated: 2023-12-13
 ---
 
@@ -47,7 +47,7 @@ El registro DMARC comunica la política que debe adoptarse en función del resul
 
 Tras leer las instrucciones del registro DMARC del dominio **mydomain.ovh** por el servidor de recepción de **«otherdomain.ovh»**, los mensajes de correo se enviarán a la dirección **recipient@otherdomain.ovh**, o bien se marcarán como «SPAM» o se rechazarán.
 
-![dmarc](images/dns-dmarc-diagram.png){.thumbnail}
+![dmarc](/pages/assets/schemas/emails/dns-dmarc-diagram.png){.thumbnail}
 
 ### Configurar el DMARC
 
@@ -97,7 +97,7 @@ A continuación ofrecemos una descripción completa de las etiquetas utilizadas 
 > - **Parcialmente alineado**: cuando la dirección *john.smith@subdomain.mydomain.ovh* transmite un mensaje desde el servicio de correo asociado al dominio *mydomain.ovh*, pero los mecanismos de autenticación SPF y DKIM se han configurado únicamente en el dominio principal (es decir, *mydomain.ovh*), se obtiene un resultado parcialmente alineado.
 > - **Fallos de los mecanismos de autenticación**: el remitente intenta enviar un mensaje de correo electrónico como *john.smith@mydomain.ovh*, pasando por otra dirección (como *robert@example.com*) o utilizando un servicio de envío de correo electrónico que no aparece en el SPF. En este caso, los mecanismos de autenticación SPF y DKIM devuelven un error como resultado.
 
-![dmarc](images/dns-dmarc-01.png){.thumbnail}
+![dmarc](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-dmarc-01.png){.thumbnail}
 
 #### Registro TXT <a name="txt-record"></a>
 
@@ -125,7 +125,7 @@ A continuación se muestra una lista de las etiquetas utilizadas para crear un *
 
 - **ri** (entero sin signo de 32 bits en texto sin formato; el valor predeterminado es 86400): intervalo necesario, en segundos, entre informes agregados. Esta etiqueta especifica la frecuencia con la que los destinatarios de correo electrónico deben generar informes agregados sobre los resultados de la evaluación de DMARC para el dominio en cuestión.
 
-![dmarc](images/dns-dmarc-02.png){.thumbnail}
+![dmarc](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-dmarc-02.png){.thumbnail}
 
 #### Ejemplos de registro <a name="record-example"></a>
 
@@ -139,7 +139,7 @@ A continuación se muestra una lista de las etiquetas utilizadas para crear un *
 
 Para ilustrar este primer ejemplo, hemos utilizado el [registro DMARC](#dmarc-record) en la zona DNS y le hemos aplicado los siguientes parámetros:
 
-![dmarc](images/dns-dmarc-03.png){.thumbnail}
+![dmarc](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-dmarc-03.png){.thumbnail}
 
 Obtenemos el siguiente resultado:
 
@@ -153,7 +153,7 @@ Todos los mensajes de correo enviados (**pct=100**) se procesan mediante los mec
 
 En este segundo ejemplo, se ha utilizado un [registro TXT](#txt-record) para utilizar etiquetas que no están disponibles a través del [registro DMARC](#dmarc-record) simplificado.
 
-![dmarc](images/dns-dmarc-04.png){.thumbnail}
+![dmarc](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-dmarc-04.png){.thumbnail}
 
 Obtenemos el siguiente resultado:
 
@@ -183,4 +183,4 @@ Para servicios especializados (posicionamiento web, desarrollo...), póngase en 
 
 Si necesita ayuda sobre el uso y la configuración de sus soluciones de OVHcloud, puede consultar nuestras diferentes [ofertas de soporte](/links/support).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

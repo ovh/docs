@@ -1,5 +1,5 @@
 ---
-title: DMARC-Eintrag für Ihre Domain konfigurieren
+title: E-Mail-Sicherheit durch DMARC-Eintrag verbessern
 excerpt: Erfahren Sie hier, wie DMARC funktioniert und für Ihren E-Mail-Dienst eingerichtet wird
 updated: 2023-12-13
 ---
@@ -47,7 +47,7 @@ Der DMARC-Eintrag gibt die Richtlinie an, die auf der Grundlage der Ergebnisse d
 
 Nachdem die Anweisungen des DMARC Eintrags der Domain **mydomain.ovh** vom Empfangsserver von **otherdomain.ovh** gelesen wurden, werden die E-Mails entweder an die Adresse **recipient@otherdomain.ovh** versandt, als SPAM markiert oder abgelehnt.
 
-![DMARC](images/dns-dmarc-diagram.png){.thumbnail}
+![DMARC](/pages/assets/schemas/emails/dns-dmarc-diagram.png){.thumbnail}
 
 ### DMARC konfigurieren
 
@@ -97,7 +97,7 @@ Nachfolgend finden Sie eine vollständige Beschreibung der Tags, die für den OV
 > - **Partially aligned**: Wenn die Adresse *john.smith@subdomain.mydomain.ovh* eine Nachricht von dem E-Mail-Dienst sendet, der mit dem Domainnamen *mydomain.ovh* verbunden ist, die Authentifizierungsmechanismen SPF und DKIM jedoch nur für die Hauptdomain konfiguriert wurden (also *mydomain.ovh*), erhält man ein teilweise abgestimmtes Ergebnis.
 > - **Authentication failed**: Der Absender versucht, eine E-Mail als *john.smith@mydomain.ovh* über eine andere Adresse (wie *robert@example.com*) oder mithilfe eines nicht im SPF aufgeführten E-Mail-Dienst zu versenden. In diesem Fall geben die SPF- und DKIM-Authentifizierungsmechanismen einen Fehler zurück.
 
-![DMARC](images/dns-dmarc-01.png){.thumbnail}
+![DMARC](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-dmarc-01.png){.thumbnail}
 
 #### TXT-Eintrag <a name="txt-record"></a>
 
@@ -125,7 +125,7 @@ Nachfolgend finden Sie eine vollständige Beschreibung der Tags, die für den **
 
 - **ri** (32-Bit Integer ohne Vorzeichen im Text-Format, Standardwert ist 86400): Erforderliches Intervall in Sekunden zwischen den aggregierten Berichten. Dieser Tag gibt an, wie oft E-Mail-Empfänger zusammengefasste Berichte über DMARC-Bewertungsergebnissen für die betreffende Domain erstellen sollen.
 
-![DMARC](images/dns-dmarc-02.png){.thumbnail}
+![DMARC](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-dmarc-02.png){.thumbnail}
 
 #### Beispiele für Datensätze <a name="record-example"></a>
 
@@ -139,7 +139,7 @@ Nachfolgend finden Sie eine vollständige Beschreibung der Tags, die für den **
 
 Zur Veranschaulichung dieses ersten Beispiels wurde der [DMARC-Eintrag](#dmarc-record) in der DNS-Zone verwendet und die folgenden Einstellungen angewendet:
 
-![DMARC](images/dns-dmarc-03.png){.thumbnail}
+![DMARC](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-dmarc-03.png){.thumbnail}
 
 Ergebnis:
 
@@ -153,7 +153,7 @@ Alle gesendeten E-Mails (**pct=100**) werden mit den SPF- und/oder DKIM-Authenti
 
 Für das zweite Beispiel wurde ein [TXT-Eintrag](#txt-record) erstellt, um Tags zu verwenden, die nicht über den vereinfachten [DMARC-Eintrag](#dmarc-record) verfügbar sind.
 
-![DMARC](images/dns-dmarc-04.png){.thumbnail}
+![DMARC](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-dmarc-04.png){.thumbnail}
 
 Ergebnis:
 
@@ -184,4 +184,4 @@ Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

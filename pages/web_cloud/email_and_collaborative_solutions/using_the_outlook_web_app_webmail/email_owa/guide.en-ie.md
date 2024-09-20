@@ -1,7 +1,7 @@
 ---
 title: 'Using the Outlook Web App with an email account'
 excerpt: 'Find out how to manage an email address using OWA webmail'
-updated: 2024-03-26
+updated: 2024-09-03
 ---
 
 ## Objective
@@ -37,6 +37,12 @@ To log in to OWA webmail with your email address, go to the general [webmail log
 > To familiarise yourself with the **Roundcube** interface, please refer to our guide on [Using your email account via the Roundcube webmail interface](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
 
 If this is your first time logging in to OWA webmail with this email address, you will be prompted to set the interface language and time zone. Click `Save`{.action} to continue.
+
+> [!primary]
+>
+> Time zones are listed according to [the UTC (Coordinated Universal Time) standard](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), not in alphabetical order of cities.
+>
+> **Example**: For Western Europe, it is the UTC +1 tranche (Brussels, Copenhagen, Madrid, Paris).
 
 ![useowa](images/use-owa-step2.png){.thumbnail}
 
@@ -106,7 +112,7 @@ To create a new folder, right-click on the name of your email address in the fol
 
 #### Creating inbox rules
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 To manage rules, click on the gear icon at the top, then click on `Options`{.action}.
 
@@ -126,7 +132,7 @@ For more detailed instructions about creating inbox rules, please refer to our g
 
 #### Block a sender
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UeNdpFwdXm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/UeNdpFwdXm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Click on the gear icon at the top right-hand corner, then click `Options`{.action}. In the left-hand column, follow the "Mail" tree under "Accounts", then "Block or authorise".
 
@@ -152,7 +158,7 @@ On the new page, you can add a new contact, create a contact list, and remove ex
 
 ### Changing the password
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 You can change your account password when you are logged in to OWA. To do this, click the gear icon at the top, then click `Options`{.action}.
 

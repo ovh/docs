@@ -15,9 +15,9 @@ In this guide, we will show you how to configure an OVHcloud Storage Server to s
 ## Requirements
 
 - an [OVHcloud Storage Server](https://www.ovhcloud.com/en-ca/bare-metal/storage/){.external}
-- a production infrastructure ([VPS](https://www.ovhcloud.com/en-ca/vps/){.external}, [Dedicated Servers](https://www.ovhcloud.com/en-ca/bare-metal/){.external}, [Public Cloud](https://www.ovhcloud.com/en-ca/public-cloud/){.external}, etc.)
+- a production infrastructure ([VPS](https://www.ovhcloud.com/en-ca/vps/){.external}, [Dedicated Servers](/links/bare-metal/bare-metal){.external}, [Public Cloud](https://www.ovhcloud.com/en-ca/public-cloud/){.external}, etc.)
 - an SSH connection between the Storage Servers and production infrastructure
-- a private network between your servers ([OVHcloud vRack](https://www.ovh.com/ca/en/solutions/vrack/){.external}) is recommended
+- a private network between your servers ([OVHcloud vRack](/links/network/vrack){.external}) is recommended
 - To follow this guide you need knowledge of: Linux administration, logging in via SSH, connecting to/backing up databases, installing operating systems (here we’re using Debian 9.4).
 
 ## Instructions
@@ -52,7 +52,7 @@ There is no such thing as a ‘best’ RAID configuration, as they all suit diff
 
 ### Step 2: Set up and configure your server.
 
-Go to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, and set up your server. As a reminder, we’re using Debian 9.4 in this guide. For further information, please refer to our guide on [Getting started with a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server){.external}.
+Go to the [OVHcloud Control Panel](/links/manager){.external}, and set up your server. As a reminder, we’re using Debian 9.4 in this guide. For further information, please refer to our guide on [Getting started with a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server){.external}.
 
 Once you have selected the operating system you want to install, tick `Customise the partition configuration`{.action}.
 

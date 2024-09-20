@@ -1,7 +1,7 @@
 ---
 title: "FAQ Web Hosting"
 excerpt: "Znajdź najczęściej zadawane pytania dotyczące hostingu stron internetowych przez OVHcloud"
-updated: 2023-04-24
+updated: 2024-06-27
 ---
 
 > [!primary]
@@ -36,9 +36,9 @@ Aby dowiedzieć się, jak budować Twoją stronę, zapoznaj się z tym [przewodn
 
 **Wskazówki i porady**: OVHcloud, aby pomóc Ci w zbudowaniu strony WWW, modułu PrestaShop, Joomla! i Drupal, pozwala na zainstalowanie na Twoim hostingu oprogramowania do wspomagania tworzenia stron WordPress, PrestaShop, Joomla! i Drupal. Jest to możliwe dzięki funkcji [Moduły za 1 kliknięciem](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
-### Jak mogę przenieść moją stronę WWW i konta e-mail na serwery OVHcloud? 
+### Jak mogę przenieść na serwery OVHcloud moją stronę WWW, bazę danych, domenę i e-maile bez przerwy w działaniu usługi?
 
-Zapoznaj się z przewodnikiem [Przeniesienie strony WWW i kont e-mail do OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh).
+Wszystkie kolejne etapy znajdują się w przewodniku "[Przeniesienie strony WWW i powiązanych z nią usług do OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)".
 
 ### Jak zainstalować kilka stron WWW na tym samym hostingu?
 
@@ -90,7 +90,7 @@ Następnie sprawdź bieżące [wydarzenia na naszej infrastrukturze](https://www
 
 ### Co zrobić, jeśli po uruchomieniu strony WWW OVHcloud strona w budowie pozostanie wyświetlona?
 
-![strona_budowlana](images/site-en-construction.png){.thumbnail}
+![strona_budowlana](/pages/assets/screens/other/browsers/errors/site-en-construction.png){.thumbnail}
 
 Po zainstalowaniu hostingu OVHcloud umieszcza tę stronę oczekiwania w formie pliku **index.html** zawartego w folderze `www` Twojego serwera FTP.
 
@@ -100,7 +100,7 @@ Jeśli wybrałeś ręczną [instalację Twojej strony WWW](/pages/web_cloud/web_
 
 ### Co zrobić, jeśli moja strona wyświetla się na stronie "xxxxx.cluster0xx.hosting.ovh.net"?
 
-![url-klaster](images/url-cluster.png){.thumbnail}
+![url-klaster](/pages/assets/screens/other/browsers/urls/url-cluster.png){.thumbnail}
 
 Możliwe są dwa scenariusze. Twoja strona WWW została utworzona z tego adresu lub pojawiła się po zmianie.
 
@@ -113,11 +113,11 @@ Możliwe są dwa scenariusze. Twoja strona WWW została utworzona z tego adresu 
 
 W pierwszym przypadku, po wykonaniu wszystkich niezbędnych kopii zapasowych, usuń moduł z części `Hosting` w Panelu klienta:
 
-![delete-a-module](images/delete-a-module.png){.thumbnail}
+![delete-a-module](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/delete-a-module.png){.thumbnail}
 
 Następnie usuń bazę danych w zakładce z tej samej nazwy po prawej stronie ekranu, w części `Hosting`:
 
-![delete_a_database](images/sharedsql-deletion.png){.thumbnail}
+![delete_a_database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/sharedsql-deletion.png){.thumbnail}
  
 Następnie uruchom ponownie instalację dla wybranej domeny, korzystając z funkcji [Module za 1 kliknięciem](/pages/web_cloud/web_hosting/cms_manage_1_click_module).
 
@@ -138,9 +138,9 @@ Jeśli Twoja strona WWW zawiera bazę danych, zapoznaj się z naszym przewodniki
 
 ### Co zrobić, jeśli moja strona przekieruje się na webmail-login-interface OVHcloud?
 
-![Webmail](images/webmail-login-interface.png){.thumbnail}
+![Webmail](/pages/assets/screens/website/webmail/webmail-login-interface.png){.thumbnail}
 
-Ta nieprawidłowość wskazuje na nieprawidłową konfigurację [serwery DNS](/pages/web_cloud/domains/dns_server_general_information) lub [strefa DNS](/pages/web_cloud/domains/dns_zone_edit) przypisanych do Twojej domeny.
+Ta nieprawidłowość wskazuje na nieprawidłową konfigurację [serwery DNS](/pages/web_cloud/domains/dns_server_edit) lub [strefa DNS](/pages/web_cloud/domains/dns_zone_edit) przypisanych do Twojej domeny.
 
 Najczęstszym przypadkiem jest: zamówiłeś oddzielnie domenę i hosting, więc nie są one ze sobą połączone za pomocą strefy DNS.
 
@@ -150,15 +150,15 @@ Następnie zapisz wskazane serwery DNS i przejdź do zakładki `Strefa DNS`{.act
 
 Porównaj `Adres docelowy` wpisów typu `NS` w zakładce `Strefa DNS`{.action} z `Serwery DNS` w zakładce o tej samej nazwie:
 
-- Jeśli elementy są identyczne, zamień cel `213.186.33.5` na czterocyfrowy kod zapisany w zakładce `Informacje ogólne` pod nagłówkiem `IPv4` (aby uzyskać więcej informacji na temat czynności, jakie należy wykonać, postępuj zgodnie z instrukcjami zawartymi w [tym przewodniku](/pages/web_cloud/domains/dns_zone_edit#w-praktyce)).
+- Jeśli elementy są identyczne, zamień cel `213.186.33.5` na czterocyfrowy kod zapisany w zakładce `Informacje ogólne` pod nagłówkiem `IPv4` (aby uzyskać więcej informacji na temat czynności, jakie należy wykonać, postępuj zgodnie z instrukcjami zawartymi w [tym przewodniku](/pages/web_cloud/domains/dns_zone_edit)).
 
-- Jeśli elementy nie są identyczne, ale `Serwery DNS` wskazane w zakładce tej samej nazwy wyświetlają się na [tej liście](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), zresetuj zawartość zgodnie z instrukcjami zawartymi w [tym przewodniku](/pages/web_cloud/domains/dns_server_general_information#zresetuj-serwery-dns).
+- Jeśli elementy nie są identyczne, ale `Serwery DNS` wskazane w zakładce tej samej nazwy wyświetlają się na [tej liście](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), zresetuj zawartość zgodnie z instrukcjami zawartymi w [tym przewodniku](/pages/web_cloud/domains/dns_server_edit).
 
 - Jeśli elementy nie są identyczne i `serwery DNS` wskazane w zakładce o tej samej nazwie nie figurują na [tej liście](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), skontaktuj się z Webmasterem lub poszukaj [wyspecjalizowanego usługodawcy](/links/partner) na stronie [partnerów OVHcloud](/links/partner).
 
 ### Co zrobić, jeśli moja strona wyświetla błąd "Strona nie przekierowuje się poprawnie"?
 
-![the-page-isnt-redirecting-properly](images/the-page-isnt-redirecting-properly.png){.thumbnail}
+![the-page-isnt-redirecting-properly](/pages/assets/screens/other/browsers/errors/the-page-isnt-redirecting-properly.png){.thumbnail}
 
 > [!alert]
 >
@@ -177,7 +177,7 @@ W przypadku braku możliwości przywrócenia dostępu do strony WWW, skontaktuj 
 
 ### Co zrobić, jeśli moja strona wyświetla błąd "503 error Backend fetch failed (Varnish cache)"?
 
-![503_varnish](images/http-503-backend-varnish.png){.thumbnail}
+![503_varnish](/pages/assets/screens/other/browsers/errors/http-503-backend-varnish.png){.thumbnail}
 
 Jeśli włączyłeś [opcję CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn) hostingu, wyłącz tryb *Maintenance* na swojej stronie WordPress lub PrestaShop.
 
@@ -185,7 +185,7 @@ Jeśli nie włączyłeś tej opcji lub nie korzystałeś z trybu *konserwacji*, 
 
 ### Co zrobić, jeśli moja strona wyświetla błąd "Your request has been blocked"?
 
-![your-request-has-been-blocked](images/your-request-has-been-blocked.png){.thumbnail}
+![your-request-has-been-blocked](/pages/assets/screens/other/browsers/errors/your-request-has-been-blocked.png){.thumbnail}
 
 Wiadomość ta wskazuje, że rodzaj zapytania HTTP, które chcesz wykonać na Twojej stronie WWW jest zabroniony na ograniczony czas. W takiej sytuacji [sprawdź logi](/pages/web_cloud/web_hosting/logs_and_statistics) strony, aby określić, które zapytania spowodowały blokadę.
 
@@ -193,7 +193,7 @@ W celu usunięcia nieprawidłowości skontaktuj się z Biurem Webmasterem lub je
 
 ### Co zrobić, jeśli moja strona wyświetla błąd "Your IP has been banned"?
 
-![your-ip-has-been-banned](images/your-ip-has-been-banned.png){.thumbnail}
+![your-ip-has-been-banned](/pages/assets/screens/other/browsers/errors/your-ip-has-been-banned.png){.thumbnail}
 
 Wiadomość ta wskazuje, że adres IP, którego używasz do logowania się do Twojej strony, jest zablokowany na ograniczony czas. 
 
@@ -203,7 +203,7 @@ Możesz również skontaktować się z [naszymi partnerami](/links/partner), aby
 
 ### Zamówiłem domenę z akcentami i wyświetla się ona w moim panelu klienta w bardzo dziwny sposób. Co mam zrobić?
 
-![rating_idn](images/idn-notation.png){.thumbnail}
+![rating_idn](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/idn-notation.png){.thumbnail}
 
 Nie musisz podejmować żadnych działań w tej sytuacji. Nawet jeśli Twoja domena wyświetla się w [ratingu międzynarodowym (IDN)](https://pl.wikipedia.org/wiki/Internationalized_Domain_Name){.external} w Panelu klienta, będzie działać i wyświetlać się w sposób całkowicie normalny gdzie indziej. Adres Twojej strony WWW zostanie wyświetlony w żądanym przez Ciebie formacie. Twoje konta e-mail będą się wyświetlały w wybranym przez Ciebie formacie.
 
@@ -218,4 +218,4 @@ Nie musisz podejmować żadnych działań w tej sytuacji. Nawet jeśli Twoja dom
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i korzystania z rozwiązań OVHcloud, sprawdź naszą [ofertę wsparcia](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

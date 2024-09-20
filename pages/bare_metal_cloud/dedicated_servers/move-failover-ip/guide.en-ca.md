@@ -6,7 +6,7 @@ updated: 2022-12-20
 
 > [!primary]
 >
-> Since October 6th, 2022 our service "Failover IP" is named [Additional IP](https://www.ovhcloud.com/en-ca/network/additional-ip/). This renaming has no effect on its technical features.
+> Since October 6th, 2022 our service "Failover IP" is named [Additional IP](/links/network/additional-ip). This renaming has no effect on its technical features.
 >
 
 ## Objective
@@ -24,9 +24,9 @@ With this technology, you can switch IP addresses from one solution to another i
 
 ## Requirements
 
-- A [dedicated server](https://www.ovhcloud.com/en-ca/bare-metal/) in your OVHcloud account
-- An [Additional IP address](https://www.ovhcloud.com/en-ca/bare-metal/ip/)
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
+- A [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account
+- An [Additional IP address](/links/network/additional-ip)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
 > This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-ca/about/).
@@ -56,7 +56,7 @@ With this technology, you can switch IP addresses from one solution to another i
 > Only a single size block (/32) can be moved from a dedicated server to a VPS.
 >
 
-Log in to the [OVHcloud Control](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the `Bare Metal Cloud`{.action} menu and click on `Network`{.action}. Next, click on `IP`{.action}.
+Log in to the [OVHcloud Control](/links/manager), go to the `Bare Metal Cloud`{.action} menu and click on `Network`{.action}. Next, click on `IP`{.action}.
 
 Click the `Additional IP`{.action} tab.
 
@@ -99,4 +99,4 @@ To move the IP address, use the following call:
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

@@ -1,7 +1,7 @@
 ---
 title: 'Premiers pas avec la solution E-mail Pro'
 excerpt: 'Découvrez comment réaliser la configuration de votre solution E-mail Pro'
-updated: 2024-01-29
+updated: 2024-09-03
 ---
 
 ## Objectif
@@ -12,16 +12,16 @@ Vous venez d’acquérir une solution E-mail Pro. Celle-ci vous permet de béné
 
 ## Prérequis
 
-- Disposer d'une offre [E-mail Pro](https://www.ovhcloud.com/fr/emails/email-pro/){.external}.
+- Disposer d'une offre [E-mail Pro](/links/web/email-pro){.external}.
 - Avoir reçu l’e-mail vous confirmant l’installation de votre solution E-mail Pro.
 - Disposer d'un nom de domaine.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
 
 ## En pratique
 
 ### Étape 1 : accéder à la gestion de votre service
 
-Une fois le service E-mail Pro créé et disponible, vous pouvez le gérer depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+Une fois le service E-mail Pro créé et disponible, vous pouvez le gérer depuis votre [espace client OVHcloud](/links/manager){.external}.
 
 Pour cela, connectez-vous à ce dernier, cliquez sur `E-mail Pro`{.action}, puis choisissez le nom du service concerné.
 
@@ -80,7 +80,7 @@ Cliquez sur le bouton `Suivant`{.action} pour poursuivre l'ajout du domaine.
 
 - **SRV** : enregistrement DNS permettant la configuration automatique de votre logiciel de messagerie lorsque vous y ajoutez votre adresse e-mail.
 - **MX** : enregistrement DNS des serveurs e-mail nécessaire à la réception des e-mails sur le nom de domaine concerné.
-- **DKIM** : Mise en place d'une signature numérique chiffrée pour sécuriser les échanges e-mails. Consultez notre guide « [Configurer un enregistrement DKIM](/pages/web_cloud/domains/dns_zone_dkim) » pour plus d'informations.
+- **DKIM** : Mise en place d'une signature numérique chiffrée pour sécuriser les échanges e-mails. Consultez notre guide « [Améliorer la sécurité des e-mails via un enregistrement DKIM](/pages/web_cloud/domains/dns_zone_dkim) » pour plus d'informations.
 
 **Pour un nom de domaine non géré par OVHcloud**, suivez l'étape 3.
 
@@ -92,14 +92,14 @@ Une fois le nom de domaine ajouté en tant que domaine associé, vérifiez son p
 
 La colonne `Diagnostic`{.action} vous permet de contrôler la configuration DNS du nom de domaine. Une pastille rouge apparaîtra si ces paramètres doivent être modifiés. Il y a deux possibilités:
 
-- **Configuration automatique lors de l'ajout d'un nom de domaine OVHcloud** : si vous venez juste d'effectuer la modification, l’affichage dans [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} peut prendre quelques heures.
+- **Configuration automatique lors de l'ajout d'un nom de domaine OVHcloud** : si vous venez juste d'effectuer la modification, l’affichage dans [l'espace client OVHcloud](/links/manager){.external} peut prendre quelques heures.
 
 - **Configuration manuelle pour un nom de domaine non géré par OVHcloud** : cliquez sur la pastille rouge afin de découvrir les modifications à réaliser.
     - *Pour un enregistrement CNAME*, aidez-vous de notre guide « [Créer un champ CNAME à l’ajout d’un domaine associé](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname) ».
     - *Pour un enregistrement MX*, aidez-vous de notre guide « [Ajouter un champ MX à la configuration de son nom de domaine](/pages/web_cloud/domains/dns_zone_mx) ».
     - *Pour un enregistrement SRV*, complétez votre zone DNS à l'aide des informations données lorsque vous cliquez sur la pastille rouge. Vous pouvez vous aider du guide « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) » pour ajouter cet enregistrement.
-    - *Pour un enregistrement SPF*, complétez votre zone DNS à l'aide des informations données lorsque vous cliquez sur la pastille. Vous pouvez vous aider du guide « [Configurer un enregistrement SPF](/pages/web_cloud/domains/dns_zone_spf) » pour ajouter cet enregistrement.
-    *Pour un enregistrement DKIM*, complétez votre zone DNS à l'aide des informations données lorsque vous cliquez sur la pastille. Vous pouvez vous aider du guide « [Configurer un enregistrement DKIM](/pages/web_cloud/domains/dns_zone_dkim) » pour ajouter cet enregistrement.
+    - *Pour un enregistrement SPF*, complétez votre zone DNS à l'aide des informations données lorsque vous cliquez sur la pastille. Vous pouvez vous aider du guide « [Améliorer la sécurité des e-mails via un enregistrement SPF](/pages/web_cloud/domains/dns_zone_spf) » pour ajouter cet enregistrement.
+    *Pour un enregistrement DKIM*, complétez votre zone DNS à l'aide des informations données lorsque vous cliquez sur la pastille. Vous pouvez vous aider du guide « [Améliorer la sécurité des e-mails via un enregistrement DKIM](/pages/web_cloud/domains/dns_zone_dkim) » pour ajouter cet enregistrement.
 
 ![emailpro](images/emailpro-04.png){.thumbnail}
 
@@ -113,13 +113,29 @@ Pour les configurer, cliquez sur le bouton `...`{.action} puis sur `Modifier`{.a
 
 Complétez les informations qui s'affichent.
 
-|Intitulé|Description|
-|---|---|
-|Compte e-mail|Renseignez le nom que portera votre adresse e-mail (votre prénom.nom, par exemple) et sélectionnez le domaine concerné dans la liste.|
-|Prénom|Renseignez un prénom.|
-|Nom|Renseignez un nom.|
-|Nom à afficher|Renseignez le nom qui s'affichera en tant qu'expéditeur lorsque des e-mails seront envoyés avec cette adresse.|
-|Mot de passe et confirmation|Définissez un mot de passe fort composé d'au minimum 8 caractères et comprenant au moins une majuscule, une minuscule, un chiffre.|
+- **Compte e-mail** : renseignez le nom que portera votre adresse e-mail (votre prénom.nom, par exemple) et sélectionnez le domaine concerné dans la liste.
+
+> [!warning]
+>
+> Le choix du nom de votre adresse e-mail doit respecter les conditions suivantes :
+>
+> - Minimum 2 caractères
+> - Maximum 32 caractères
+> - Aucun caractère accentué
+> - Pas de caractères spéciaux, à l'exception des caractères suivants : `.`, `,`, `-` et `_`
+
+- **Prénom** : renseignez un prénom.
+- **Nom** : renseignez un nom.
+- **Nom à afficher** : renseignez le nom qui s'affichera en tant qu'expéditeur lorsque des e-mails seront envoyés depuis cette adresse.
+- **Mot de passe et confirmation** : définissez un mot de passe fort composé de (au minimum) 8 caractères, une majuscule, une minuscule et un chiffre. Pour des raisons de sécurité, n'utilisez pas deux fois le même mot de passe. Choisissez-en un qui n'a aucun rapport avec vos informations personnelles (évitez par exemple de mentionner vos nom, prénom et date de naissance). Changez-le régulièrement.
+
+> [!warning]
+>
+> Le choix du mot de passe doit respecter les conditions suivantes :
+>
+> - Minimum 9 caractères
+> - Maximum 30 caractères
+> - Aucun caractère accentué
 
 Une fois les informations complétées, cliquez sur le bouton `Suivant`{.action}, vérifiez les informations affichées puis cliquez sur `Confirmer`{.action} pour initier la configuration du compte.
 
@@ -130,7 +146,15 @@ Une fois les informations complétées, cliquez sur le bouton `Suivant`{.action}
 
 ### Étape 5 : utiliser vos adresses e-mail
 
-Une fois vos comptes configurés, il ne vous reste plus qu'à les utiliser ! Pour cela, OVHcloud met à disposition un applicatif en ligne (une *webapp*). Ce dernier est accessible à l’adresse [https://www.ovh.com/fr/mail/](https://www.ovh.com/fr/mail/){.external} et vous devrez y renseigner les identifiants relatifs à votre adresse e-mail.
+Une fois vos comptes configurés, il ne vous reste plus qu'à les utiliser ! Pour cela, OVHcloud met à disposition un applicatif en ligne (une *webapp*). Ce dernier est accessible à l’adresse <https://www.ovh.com/fr/mail/> et vous devrez y renseigner les identifiants relatifs à votre adresse e-mail.
+
+Si c'est la première fois que vous vous connectez à OWA avec cette adresse e-mail, vous serez invité à définir la langue de l'interface ainsi que le fuseau horaire. Ensuite, cliquez sur `Enregistrer`{.action} pour continuer.
+
+> [!primary]
+>
+> Les fuseaux horaires sont listés selon [la norme UTC (temps universel coordonné)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), et non par ordre alphabétique des villes.
+>
+> **Exemple** : Pour l'Europe de l'Ouest, il s'agit de UTC +1 (Bruxelles, Copenhague, Madrid, Paris).
 
 Pour configurer votre adresse e-mail sur un logiciel de messagerie ou un appareil, comme un _smartphone_ ou une tablette, [aidez-vous de nos guides de configuration](/products/web-cloud-email-collaborative-solutions-email-pro). Si vous désirez simplement obtenir les éléments nécessaires pour configurer votre compte E-mail Pro, retrouvez ci-dessous les paramètres à utiliser :
 
@@ -142,9 +166,9 @@ Pour configurer votre adresse e-mail sur un logiciel de messagerie ou un apparei
 > [!primary]
 >
 > Dans notre exemple, nous utilisons la mention serveur : pro**?**.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service E-mail Pro.
-> 
-> Retrouvez ce chiffre dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, dans la rubrique `Web Cloud`{.action} puis `E-mail Pro`{.action}. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
-> 
+>
+> Retrouvez ce chiffre dans votre [espace client OVHcloud](/links/manager){.external}, dans la rubrique `Web Cloud`{.action} puis `E-mail Pro`{.action}. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
+>
 
 ## Aller plus loin
 
@@ -160,4 +184,8 @@ Pour configurer votre adresse e-mail sur un logiciel de messagerie ou un apparei
 
 [Gérer la politique de sécurité d’un service e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/security-policy)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).

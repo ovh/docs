@@ -42,7 +42,7 @@ La recuperación de los elementos eliminados puede realizarse desde el webmail (
 
 ### ¿Cómo restaurar elementos eliminados?
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xnq6wvANUFs?start=117" title="Vídeo de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/xnq6wvANUFs?start=117" title="Vídeo de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Conéctese a la dirección de correo electrónico correspondiente a través del webmail (OWA): <https://www.ovhcloud.com/es/mail/>.
 

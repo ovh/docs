@@ -1,7 +1,7 @@
 ---
 title: 'Using email aliases and redirections'
 excerpt: 'Find out how to manage aliases and email redirections'
-updated: 2024-03-26
+updated: 2024-06-10
 ---
 
 <style>
@@ -12,7 +12,9 @@ updated: 2024-03-26
 
 ## Objective
 
-In this guide, you will find information and support on how to configure email redirections, such as redirecting emails received from address A to address B.
+In this guide, you can find information and help on configuring your **redirections** and **alias** emails, such as sending emails received from address A to address B.
+
+![emails](images/schema-redirect00.png){.thumbnail}
 
 **This guide explains how to manage aliases and email redirections.**
 
@@ -20,7 +22,7 @@ In this guide, you will find information and support on how to configure email r
 
 You can use redirections to change the routing of an email sent to an email address, forwarding it to one or more other email addresses.
 
-For example, you may want emails sent to **contact@mydomain.ovh** forwarded to **john.smith@otherdomain.ovh**. By doing so, you can automatically send emails received by **contact@mydomain.ovh** to **john.smith@otherdomain.ovh**.
+For example, you may want emails sent to **contact@mydomain.ovh** forwarded to **john.smith@otherdomain.ovh**. This way, you can automatically send emails received by **contact@mydomain.ovh** to **john.smith@otherdomain.ovh**.
 
 ### What is an email alias?
 
@@ -32,34 +34,45 @@ For example, your email address is **john.smith@mydomain.ovh** and your alias is
 
 ### Redirection and alias in comparison <a name="diagram"></a>
 
-- **Simple redirection (diagram 1 below)**: The email is sent directly to the redirection email address, the original recipient does not receive the email.
+Click on the tabs below for an illustrated explanation of how aliases and redirections work.
 
-- **Redirection with local copy (diagram 2 below)**: Both the original recipient and the redirection email account will receive the email.
+- `From` is the sender's address
+- `To` is the address of the recipient
+- `Redirect to` refers to the redirection email address that has been configured.
 
-- **Email alias (diagram 3 below)**: The email is sent to the alias address and received by the email account on which the alias has been configured.
-
-![emails](images/schema-redirect.png){.thumbnail}
+> [!tabs]
+> **1. Simple redirection**
+>>
+>> The email is sent directly to the redirection address, the original recipient does not receive the email.<br><br>
+>> ![emails](images/schema-redirect01.png){.thumbnail}
+>>
+> **2. Redirection with local copy**
+>>
+>> Both the original recipient and the redirection email account will receive the email.<br><br>
+>> ![emails](images/schema-redirect02.png){.thumbnail}
+>>
+> **3. Email alias**
+>>
+>> The email is sent to the alias address and received by the email account on which the alias has been configured. `Received by` means the email account that receives the email.<br><br>
+>> ![emails](images/schema-redirect03.png){.thumbnail}
+>>
 
 > [!primary]
 >
-> Note that you can configure a redirection to several email addresses.
+> Note that you can configure redirections to multiple email addresses. To do this, the redirections to each recipient must be created individually.
 
 ## Requirements
 
-- A preconfigured OVHcloud email solution **MX Plan** (available with a [web hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/))
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
+- A preconfigured OVHcloud email solution, such as [**Hosted Exchange**](/links/web/emails-hosted-exchange) or **MX Plan** available with a [web hosting plan](/links/web/hosting)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
-
-The sections “[Creating a redirection](#redirect)” and “[Creating an alias](#alias)” concern all OVHcloud email solutions, **unless** if you have a domain name registered with OVHcloud without an attached email solution.
-
-For these two exceptions, only redirection is possible. Please refer to the paragraph “[Creating a redirection or an alias for a domain name without an email solution](#mxplanlegacy)”.
 
 ### Creating a redirection <a name="redirect"></a>
 
 Redirections are not managed in the OVHcloud Control Panel, but via the webmail application after logging in to the email account concerned.
 
-Go to the address <https://www.ovhcloud.com/en-sg/mail/>. Enter your **email address** and **password** to log in.
+Go to the [webmail](/links/web/email). Enter your **email address** and **password** to log in.
 
 ![emails](images/webmail.png){.thumbnail}
 
@@ -70,7 +83,7 @@ Follow the instruction steps by clicking successively on each tab below:
 > [!tabs]
 > **Step 1**
 >>
->> Once you have logged in to your email account via [webmail](https://www.ovhcloud.com/en-sg/mail/), click on the cogwheel icon in the top right-hand corner, then on `Options`{.action}.<br><br>
+>> Once you have logged in to your email account via [webmail](/links/web/email), click on the cogwheel icon in the top right corner, then on `Options`{.action}.<br><br>
 >> ![emails](images/emails-all-01.png){.thumbnail}<br>
 >>
 > **Step 2**
@@ -81,7 +94,7 @@ Follow the instruction steps by clicking successively on each tab below:
 >>
 > **Step 3**
 >>
->> Once you have opened the window for managing **Inbox rules**, click on the `+`{.action} icon on the top left-hand corner.<br><br>
+>> Once you have opened the window for managing **Inbox rules**, click on the `+`{.action} icon on the top left corner.<br><br>
 >> ![emails](images/emails-all-03.png){.thumbnail}<br><br>
 >>
 > **Step 4**
@@ -106,9 +119,34 @@ Follow the instruction steps by clicking successively on each tab below:
 > To apply a **simple redirection** (see [diagram 1](#diagram) at the beginning of this guide), add an additional rule to your **redirection with a local copy** in this window. Click `Add action`{.action} (box 1), then `Move, copy, or delete`{.action}, and then click `Delete the message`{.action}. This rule moves the email into the trash folder after it has been forwarded to the redirection email address.<br><br>
 > ![emails](images/emails-all-07.png){.thumbnail .w-640}
 
+### Delete a redirection
+
+Follow the steps described by clicking on each tab below:
+
+> [!tabs]
+> **Step 1**
+>>
+>> Once you have logged in to your email account via [webmail](/links/web/email), click on the cogwheel icon in the top right corner, then `Options`{.action}.<br><br>
+>> ![emails](images/emails-all-01.png){.thumbnail}<br>
+>>
+> **Step 2**
+>> From the **Options** window, go to the **Automatic processing** category in the **Mail** section in the left-hand column, then click `Inbox and storage rules`{.action}. <br><br>
+>> ![emails](images/owa-redirect-del-01.png){.thumbnail}<br><br>
+>> This section contains the options to manage your redirections and filters.<br>
+>>
+> **Step 3**
+>>
+>> Once in the section for managing **Inbox rules**, click on the redirection you want to delete to highlight it. Then click the recycle bin icon.<br><br>
+>> ![emails](images/owa-redirect-del-02.png){.thumbnail}<br><br>
+>>
+
 ### Creating an alias <a name="alias"></a>
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) and go to the `Web Cloud` section. Navigate to your email solution. Open `Emails`{.action}, select the platform concerned, and click on the `Email accounts`{.action} tab.
+Log in to the [OVHcloud Control Panel](/links/manager) and go to the `Web Cloud`{.action} section. Navigate to your email solution:
+
+- **Exchange**: Open `Microsoft`{.action} and then `Exchange`{.action}. Select the service concerned. Click on the `Email accounts`{.action} tab.
+
+- **Emails** (MX Plan): Open `Emails`{.action}, select the platform concerned, and click on the `Email accounts`{.action} tab.
 
 To add an alias to your email account, follow the instruction steps by clicking successively on each tab below:
 
@@ -128,7 +166,7 @@ To add an alias to your email account, follow the instruction steps by clicking 
 >> Click `Add Alias`{.action} and enter the address you have chosen for your alias and confirm your choice.<br><br>
 >> ![emails](images/email-alias03.png){.thumbnail}<br>
 
-#### Deleting an alias
+### Deleting an alias
 
 In the `Email accounts`{.action} tab, click on the `...`{.action} button to the right of the email accounts concerned. Then click `Configure aliases`{.action} (or `Manage aliases`{.action}).
 
@@ -136,40 +174,11 @@ Click on the button `...`{.action} in the row of the alias in question and selec
 
 ![emails](images/email-alias04.png){.thumbnail}
 
-#### Creating a redirection or an alias for a domain name without an email solution <a name="mxplanlegacy"></a>
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) and open `Emails`{.action} in the `Web Cloud` section.
+## Go further <a name="go-further"></a>
 
-The method for creating an alias or redirection is the same. Follow the instruction steps by clicking successively on each tab below:
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-> [!tabs]
-> **Step 1**
->>
->> After selecting your service, you will be on the `General information`{.action} tab. Click on the `Emails`{.action} tab, then `Manage redirections`{.action} on the right-hand side.<br><br>
->> ![emails](images/mxplan-legacy-1.png){.thumbnail}<br>
->>
-> **Step 2**
->>
->> The table showing active redirections will appear. Click on the button `Add a redirection`{.action} to the right.<br><br>
->>
->> > [!primary]
->> >
->> > To modify or delete a redirection, click `...`{.action}, to the right of the redirection concerned.
->>
->> ![emails](images/mxplan-legacy-2.png){.thumbnail}<br>
->>
-> **Step 3**
->>
->> **From the address**: Enter the email address from which you want to forward emails.<br><br>
->> **To the address**: Enter the destination address for your redirection. This can be one of your OVHcloud email addresses, or an external email address.<br><br>
->> **Select a copy format**: Choose whether you want to: <br> - **Keep a copy of the email at OVHcloud** (receive the email on your primary email account and redirection email account)<br> *cf. the [diagram 2](#diagram) at the beginning of this guide.*<br><br> - **Do not store a copy of the email** (forward directly to the redirection email address without the primary email account receiving it) <br> *cf. the [diagram 1](#diagram) at the beginning of this guide.*<br><br>
->> Then click `Confirm`{.action} to add this redirection.<br><br>
->> ![emails](images/mxplan-legacy-3.png){.thumbnail}
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-> [!primary]
->
-> When you choose “**Keep a copy of the email at OVHcloud**”, a redirection of the email address to itself is automatically created in the redirection list. This creates the local copies of emails.
-
-## Go further
-
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](https://community.ovh.com/en/).

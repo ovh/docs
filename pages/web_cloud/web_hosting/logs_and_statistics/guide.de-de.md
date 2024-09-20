@@ -36,13 +36,13 @@ Der Bereich besteht aus 4 Abschnitten:
 - [Infrastrukturstatistiken](#infra-stats): Zeigt grafische Statistiken an (HTTP- und SQL-Anfragen, FTP-Befehle, CPU-Auslastung, ausgehende Verbindungen, etc.).
 - [Verwaltung der Nutzer](#admin-user): Zeigt die Benutzer an, die Zugriff auf die Statistiken haben.
 
-![statistics and logs interface](images/tab.png){.thumbnail}
+![statistics and logs interface](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
 
 ### Statistiken der Seitenaufrufe <a name="website-stats"></a>
 
 Um den Traffic Ihrer Websites besser verfolgen und steuern zu können, verfügen Sie über **OVHcloud Web Statistics**, ein Tool für Besucherstatistiken und Reichweitenmessungen für auf Ihrem Webhosting gehostete Websites.
 
-![ows dashboard](images/ows-presentation.gif){.thumbnail}
+![ows dashboard](/pages/assets/screens/other/web-tools/logs/ows-presentation.gif){.thumbnail}
 
 Das Dashboard von **OVHcloud Web Statistics** enthält 7 Abschnitte:
 
@@ -67,7 +67,7 @@ Im Feld `Period selection` oben rechts können Sie einen bestimmten Zeitraum aus
 
 Sie können die *Raw Logs* Ihrer Website mit einer Verzögerung von ca. 5 Minuten einsehen.
 
-![osl statistiques dashboard](images/osl-statistics-board.png){.thumbnail}
+![osl statistiques dashboard](/pages/assets/screens/other/web-tools/logs/osl-statistics-board.png){.thumbnail}
 
 Es stehen verschiedene Arten von Logs zur Verfügung:
 
@@ -83,7 +83,7 @@ Es stehen verschiedene Arten von Logs zur Verfügung:
 
 In diesem Bereich finden Sie die Aktivität der Infrastruktur Ihres Webhostings, um den Verbrauch der Ihnen zur Verfügung gestellten Ressourcen einsehen zu können.
 
-![infrastructure statistics](images/infrastructure-statistics-graph.png){.thumbnail}
+![infrastructure statistics](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/infrastructure-statistics-graph.png){.thumbnail}
 
 Sie können verschiedene Diagrammtypen aus dem Dropdown-Menü oben links anzeigen:
 
@@ -101,7 +101,7 @@ Die Erstellung eines Benutzers ermöglicht es einer Person, auf die Statistiken 
 
 Klicken Sie im Bereich `Verwaltung der Nutzer`{.action} auf `Einen neuen Nutzer erstellen`{.action} und folgen Sie den Anweisungen, um die Erstellung eines neuen Benutzers abzuschließen.
 
-![create a new user](images/create-a-new-user.png){.thumbnail}
+![create a new user](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/create-a-new-user.png){.thumbnail}
 
 Um mit einem von Ihnen erstellten Benutzer auf die Statistiken Ihrer Website zuzugreifen, müssen Sie die folgende Adresse eingeben und `000` durch die Nummer des Clusters Ihres Webhostings und `domain.tld` durch den Domainnamen Ihrer Website ersetzen (ohne `www`):
 
@@ -119,7 +119,7 @@ Sie können auch direkt über Ihr Kundencenter den Zugangslink zu den Statistike
 6. Gehen Sie in den Bereich `Statistiken der Seitenaufrufe`{.action}.
 7. Wählen Sie die Schaltfläche `Die Statistiken anzeigen`{.action}.
 
-![website visit statistics](images/view-statistics.png){.thumbnail}
+![website visit statistics](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-statistics.png){.thumbnail}
 
 Rufen Sie auf der neu geöffneten Seite die URL in der Adresszeile Ihres Browsers ab.
 
@@ -134,4 +134,4 @@ Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

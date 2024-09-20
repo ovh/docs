@@ -27,7 +27,7 @@ This lifecycle policy is applicable to :
 
 - All Public Cloud Databases services;
 - Including all the service plans (Essential, Business, Enterprise, Production, Advanced);
-- And all proposed DBMS, such as MySQL, PostgreSQL, MongoDB, Redis, Kafka, ...
+- And all proposed DBMS, such as MySQL, PostgreSQL, MongoDB, Caching, Kafka, ...
 - Whatever state; if they are **up and running** or in a **sleeping state** (powered off, waiting for payment).
 
 ### Providing new major versions
@@ -88,9 +88,9 @@ MySQL EOL will coincide with the official MySQL Lifecycle schedule for linux : <
 
 PostgreSQL EOL will coincide with the official PostgreSQL versioning policy : <https://www.postgresql.org/support/versioning/>
 
-### Redis
+### Caching
 
-Redis EOL will coincide with the official Redis Community Releases policy : <https://redis.io/topics/releases>
+Caching EOL will coincide with the official Redis® Community Releases policy : <https://redis.io/topics/releases>
 
 ## Go further
 

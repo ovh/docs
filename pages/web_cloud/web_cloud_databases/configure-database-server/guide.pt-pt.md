@@ -38,7 +38,7 @@ Esta secção apresenta as informações essenciais da instância SQL. Sugerimos
 |Datacenter|Indica o datacenter onde instância está alojada. Certifique-se de que o datacenter da sua instância é o mesmo do alojamento web OVHcloud em que o seu site se encontra, ou se encontrará, alojado.|
 |Host|Indica o servidor OVHcloud onde a instância foi criada. Esta informação, inerente à infraestrutura da OVHcloud, poderá ser incluída na página sobre o [Estado dos Serviços](https://web-cloud.status-ovhcloud.com/).|
 
-![Informações gerais](images/general-information.png){.thumbnail}
+![Informações gerais](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/general-information.png){.thumbnail}
 
 ### Gerir os seus acessos
 
@@ -52,17 +52,17 @@ Na [Área de Cliente OVHcloud](/links/manager), aceda à secção `Web Cloud Dat
 
 Clique no separador `IP autorizados`{.action} e a seguir no botão `Adicionar um endereço IP/máscara`{.action}.
 
-![Web Cloud Databases](images/add-an-ip-address-mask.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask.png){.thumbnail}
 
 Na janela que se abrir, indique em `IP/máscara`{.action} o endereço IP ou a máscara que pretende autorizar e adicione uma descrição se desejar. Decida se quer dar acesso apenas às bases de dados ou ao SFTP. Por fim, clique em `Validar`{.action}.
 
-![Web Cloud Databases](images/add-an-ip-address-mask-confirmation.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/add-an-ip-address-mask-confirmation.png){.thumbnail}
 
 #### Autorizar conexões a um alojamento web OVHcloud 
 
 Para um alojamento web da OVHcloud, pode simplesmente selecionar `Autorizar os alojamentos web da OVHcloud a aceder à base de dados`.
 
-![Web Cloud Databases](images/tab-empty.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/authorized-ips/tab-empty.png){.thumbnail}
 
 ### Alterar a sua oferta Web Cloud Databases <a name="modify-ram-web-cloud-db"></a>
 
@@ -80,7 +80,7 @@ Para um alojamento web da OVHcloud, pode simplesmente selecionar `Autorizar os a
 Para alterar a sua oferta Web Cloud Databases, aceda à [Área de Cliente OVHcloud](/links/manager). Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor de bases de dados.
 No separador **"Informações gerais"**, que aparece de forma predefinida, clique em `...`{.action} à direita da menção "RAM" e, depois, em `Alterar o volume de RAM`{.action} de modo a proceder à encomenda desta modificação.
 
-![Web Cloud Databases](images/change-the-amount-of-ram.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/change-the-amount-of-ram.png){.thumbnail}
 
 Escolha o volume de RAM desejado e clique no botão `Seguinte`{.action}. Poderá então escolher a duração desejada.
 
@@ -106,7 +106,7 @@ Aceda à [Área de Cliente OVHcloud](/links/manager). Clique no separador `Web C
 
 No quadro **Configuração geral do MySql**, vai encontrar a configuração definida atualmente para a base de dados. Pode alterá-la diretamente e clicar em `Aplicar`{.action}.
 
-![Web Cloud Databases](images/general-configuration-of-mysql.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/configuration/general-configuration-of-mysql.png){.thumbnail}
 
 - **Tmpdir**: Diretório de ficheiros temporários. **/dev/shm** corresponde à memória RAM da instância. **/tmp** corresponde ao disco rígido da instância.
 - **MaxAllowedPacket**: Tamanho máximo dos pacotes.
@@ -165,7 +165,7 @@ Efetue as modificações necessárias e clique em `Confirmar`{.action}.
 
 Encontrará, no quadro **"Configuração geral de PostgreSQL"**, a configuração atualmente definida para a sua base de dados. Pode alterá-la diretamente e clicar em `Aplicar`{.action}..
 
-![Web Cloud Databases](images/general-configuration-of-postgresql.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/configuration/general-configuration-of-postgresql.png){.thumbnail}
 
 - **log_min_message**: Controla os níveis das mensagens a registar nos logs do servidor. Os níveis disponíveis para uma solução Web Cloud Databases são os seguintes: 
     - **"WARNING"**: Fornece alertas em relação a potenciais problemas de segurança.
@@ -180,7 +180,7 @@ Por predefinição, o valor definido é **"WARNING"**, uma vez que inclui os val
 
 Além disso, pode ativar extensões nas bases de dados. Para isso, aceda ao separador `Bases de dados`{.action} e clique no ícone da tabela junto à base de dados, sob a coluna **"Extensões"**.
 
-![Web Cloud Databases](images/extensions.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/extensions.png){.thumbnail}
 
 ### Alterar a versão MySQL, PostgreSQL ou MariaDB do servidor de bases de dados
 
@@ -190,7 +190,7 @@ A versão atual surge na linha **"Versão"**.
 
 Para modificar esta versão, clique em `Alterar a versão`{.action}.
 
-![Web Cloud Databases](images/postgre-12-update-version.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/postgre-12-update-version.png){.thumbnail}
 
 #### Como saber a versão exata de PostgreSQL que utilizo?
 
@@ -232,7 +232,7 @@ Aceda à [Área de Cliente OVHcloud](/links/manager). Clique no separador `Web C
 
 Aceda ao separador `Métricas` da Área de Cliente. Vai encontrar o gráfico **"Estatísticas de memória RAM utilizada"**.
 
-![Web Cloud Databases](images/ram-memory-usage-statistics.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/metrics/ram-memory-usage-statistics.png){.thumbnail}
 
 #### Acompanhar o número de conexões por minuto
 
@@ -242,7 +242,7 @@ Aceda à [Área de Cliente OVHcloud](/links/manager). Clique no separador `Web C
 
 Aceda ao separador `Métricas` da Área de Cliente. Vai encontrar o gráfico **"Estatísticas do total de conexões por minuto"**.
 
-![Web Cloud Databases](images/statistics-for-total-connections-per-minute.png){.thumbnail}
+![Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/metrics/statistics-for-total-connections-per-minute.png){.thumbnail}
 
 ### Otimizar as bases de dados
 
@@ -303,4 +303,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

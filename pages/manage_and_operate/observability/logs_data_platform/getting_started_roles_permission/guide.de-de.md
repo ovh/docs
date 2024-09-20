@@ -53,7 +53,7 @@ Select the items you want to share in the role and they will switch from the **a
 To manage the members of a role, use the same `...`{.action} menu to navigate to the **Manage members** page. Click on `Add a member`{.action} to add a new member for this role.
 In the username box you must add a **Logs Data Platform username**. The ldp username can be found in the **Home** panel of your OVHcloud Control Panel, in the **General** section. Any Logs Data Platform user can be added to the role even if their assignated cluster is different from yours.
 
-Once a member has been added, this member will see (on the relevant pages of the Control Panel) the items that have been shared to them with an indication present on the **Shared** column. Their available actions will also be displayed when clieking the `...`{.action} button menu.
+Once a member has been added, this member will see (on the relevant pages of the Control Panel) the items that have been shared to them with an indication present on the **Shared** column. Their available actions will also be displayed when clicking the `...`{.action} button menu.
 
 ![menu\_permission](images/shared_stream.png){.thumbnail}
 

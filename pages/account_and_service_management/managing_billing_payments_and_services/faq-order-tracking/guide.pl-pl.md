@@ -45,7 +45,7 @@ Jeśli zapłaciłaś/eś już za Twoje zamówienie, zapraszamy do skontaktowania
 ### Jak anulować zamówienie?
 
 W przypadku nieuregulowania płatności, Twoje zamówienie zostanie automatycznie anulowane po upływie jego ważności.
-Jako osoba prywatna, jeżeli zapłaciłaś/eś już za Twoje zamówienie, ale zamówienie to nie łączy się ze spersonalizowaną usługą (jak nazwa domeny) lub z daną licencją (jak Office 365, SharePoint lub licencje systemów operacyjnych, paneli administracyjnych i dystrubycji), masz możliwość rezygnacji w ciągu 14 dni. Oddajemy do Twojej dyspozycji [szczegółowy przewodnik](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#korzystanie-z-prawa-do-odstapienia-od-umowy), gdzie znajdziesz wszystkie niezbędne informacje na ten temat.
+Jako osoba prywatna, jeżeli zapłaciłaś/eś już za Twoje zamówienie, ale zamówienie to nie łączy się ze spersonalizowaną usługą (jak nazwa domeny) lub z daną licencją (jak Office 365 lub licencje systemów operacyjnych, paneli administracyjnych i dystrubycji), masz możliwość rezygnacji w ciągu 14 dni. Oddajemy do Twojej dyspozycji [szczegółowy przewodnik](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#korzystanie-z-prawa-do-odstapienia-od-umowy), gdzie znajdziesz wszystkie niezbędne informacje na ten temat.
 
 #### Wskazówki i porady
 

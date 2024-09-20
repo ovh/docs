@@ -1,7 +1,7 @@
 ---
 title: Jak korzystać z polityki IAM w Panelu klienta
 excerpt: Dowiedz się, jak przypisać użytkownikom uprawnienia dostępu do konta OVHcloud
-updated: 2024-02-19
+updated: 2024-07-04
 ---
 
 > [!primary]
@@ -71,6 +71,7 @@ Pojawi się następujący formularz:
 ![Tworzenie polityki](images/create_a_policy_01.png){.thumbnail}
 
 - **Nazwa polityki** (obowiązkowe): to nazwa, która pojawi się w interfejsach. Nazwa musi być unikalna i nie może zawierać spacji.
+- **Tożsamości** : Wybierz tożsamości, których dotyczą te zasady. Można wybrać więcej niż jeden typ tożsamości.
 - **Rodzaje produktów**: wybierz rodzaje produktów, aby określić zakres polityki. Do tej samej polityki można włączyć jeden lub więcej rodzajów produktu.
 - **Zasoby**: dodaj zasoby lub grupy zasobów do pokrycia w ramach polityki. Dostępne zasoby są filtrowane według uprzednio wybranego typu produktu.
 - **Działania**.
@@ -141,21 +142,9 @@ Aby usunąć istniejącą politykę, kliknij przycisk `...`{.action} po prawej s
 
 W oknie podręcznym zostanie wyświetlona prośba o potwierdzenie usunięcia hosta.
 
-### Przypisz tożsamość do polityki
-
-Aby powiązać tożsamość z polityką, kliknij przycisk `...`{.action} po prawej stronie polityki a następnie kliknij `Zarządzanie powiązanymi tożsamościami`{.action}.
-
-![Zmień politykę](images/editing_a_policy.png){.thumbnail}
-
-Dzięki temu będziesz mógł dodawać i usuwać użytkowników lub grupy, do których ma zastosowanie polityka.
-
-![Przypisz tożsamość](images/link_identity_to_policy.png){.thumbnail}
-
 ### Zarządzanie tożsamością
 
-Tożsamość dostępna dla polityk jest zarządzana w zakładce `Zarządzanie użytkownikami`{.action} w menu `Moje konto`{.action}.
-
-Zakładka `Identifier`{.action} z menu IAM przekierowuje Cię do tego menu.
+Tożsamość dostępna dla polityk jest zarządzana w zakładce `Tożsamości`{.action}.
 
 Szczegóły zarządzania użytkownikami znajdziesz w [dokumentacji dedykowanej](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 

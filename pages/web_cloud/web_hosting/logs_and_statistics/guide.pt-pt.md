@@ -36,13 +36,13 @@ O ecrã que vai aparecer é composto por 4 secções:
 - [Estatísticas da infraestrutura](#infra-stats): apresenta estatísticas gráficas (pedidos HTTP e SQL, comandos FTP, utilização de CPU, ligações de saída, etc.)
 - [Administração dos utilizadores](#admin-user): mostra os utilizadores autorizados a aceder às estatísticas
 
-![statistics and logs interface](images/tab.png){.thumbnail}
+![statistics and logs interface](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
 
 ### Estatísticas das visitas <a name="website-stats"></a>
 
 Para melhor seguir e controlar o tráfego dos seus websites, dispõe de **OVHcloud Web Statistics**, uma ferramenta de estatísticas de visitas e de medição de audiência dos seus websites alojados na sua oferta de alojamento web.
 
-![ows dashboard](images/ows-presentation.gif){.thumbnail}
+![ows dashboard](/pages/assets/screens/other/web-tools/logs/ows-presentation.gif){.thumbnail}
 
 O painel de controlo de **OVHcloud Web Statistics** apresenta 7 secções:
 
@@ -67,7 +67,7 @@ O campo "Period selection", no canto superior direito, permite selecionar um per
 
 Pode visualizar os logs brutos do seu website com um diferimento de cerca de 5 minutos.
 
-![osl statistiques dashboard](images/osl-statistics-board.png){.thumbnail}
+![osl statistiques dashboard](/pages/assets/screens/other/web-tools/logs/osl-statistics-board.png){.thumbnail}
 
 Tem à sua disposição diferentes tipos de logs:
 
@@ -83,7 +83,7 @@ Tem à sua disposição diferentes tipos de logs:
 
 Encontre nesta secção a atividade da infraestrutura do seu alojamento web, de forma a visualizar o consumo dos recursos colocados à sua disposição.
 
-![infrastructure statistics](images/infrastructure-statistics-graph.png){.thumbnail}
+![infrastructure statistics](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/infrastructure-statistics-graph.png){.thumbnail}
 
 Pode visualizar diferentes tipos de gráficos a partir do menu suspenso em cima, à esquerda:
 
@@ -101,7 +101,7 @@ A criação de um utilizador permitirá a uma pessoa aceder às estatísticas do
 
 Na secção `Administração dos utilizadores`{.action}, clique em `Criar um novo utilizador`{.action} e siga as instruções para finalizar a criação de um novo utilizador.
 
-![create a new user](images/create-a-new-user.png){.thumbnail}
+![create a new user](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/create-a-new-user.png){.thumbnail}
 
 Para aceder às estatísticas do seu website com um utilizador que criou, deve introduzir o endereço seguinte substituindo `000` pelo número do cluster do seu alojamento web e `domain.tld` pelo nome do domínio do seu website (sem os `www`):
 
@@ -119,7 +119,7 @@ Pode igualmente recuperar o link de acesso às estatísticas/logs diretamente a 
 6. Aceda à secção `Estatísticas das visitas`{.action}.
 7. Clique no botão `Ver estatísticas`{.action}.
 
-![website visit statistics](images/view-statistics.png){.thumbnail}
+![website visit statistics](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-statistics.png){.thumbnail}
 
 Na nova página, obtenha o URL existente na barra de endereço do browser.
 
@@ -134,4 +134,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

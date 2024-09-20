@@ -1,7 +1,7 @@
 ---
 title: "Konfiguracja rewersu DNS instancji Public Cloud"
 excerpt: Dowiedz się, jak wdrożyć rewers DNS
-updated: 2021-11-12
+updated: 2024-06-10
 ---
 
 > [!primary]
@@ -20,21 +20,23 @@ Konfiguracja **rewersu DNS** instancji jest szczególnie przydatna przy wysyłan
 
 - Posiadanie [instancji Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na koncie OVHcloud
 - Nazwa domeny z polem `A` wskazującym na instancję
-- Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dostęp do [Panelu client OVHcloud](/links/manager)
 
 ## W praktyce
 
-Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Bare Metal Cloud`{.action}, otwórz menu `Network`{.action} i kliknij na `IP`{.action}.
+Zaloguj się do [Panelu client OVHcloud](/links/manager), przejdź do sekcji `Bare Metal Cloud`{.action} i otwórz `Network`{.action}. Następnie kliknij przycisk `IP`{.action}.
 
-Tabela na tej stronie zawiera listę usług, które możesz spełnić. ID Twojego projektu Public Cloud można filtrować z rozwijanego menu **Service**.
+W rozwijanym menu **Moje publiczne adresy IP i usługi powiązane** możesz podzielić Twoje usługi na kategorie.
 
-![Rewers DNS](images/reversecp01.png){.thumbnail}
+![Reverse IP](images/filterippci.png){.thumbnail}
 
 Kliknij `...`{.action} w linii odpowiedniego adresu IP i wybierz `Zmień rewers`{.action}.
 
-![Rewers DNS](images/reversecp02.png){.thumbnail}
+![Rewers DNS](images/modifyreversepc.png){.thumbnail}
 
 W nowym oknie wprowadź rewers i kliknij `Zatwierdź`{.action}.
+
+![Rewers DNS](images/enterreverse.png){.thumbnail}
 
 Rewers możesz również edytować bezpośrednio na ikonie kolumny **Reverse** tabeli.
 
@@ -47,4 +49,4 @@ Jeśli modyfikacja nie działa zgodnie z oczekiwaniami, sprawdź, czy pole `A` j
 
 [Utwórz pierwszą instancję Public Cloud i połącz się z nią](/pages/public_cloud/compute/public-cloud-first-steps)
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

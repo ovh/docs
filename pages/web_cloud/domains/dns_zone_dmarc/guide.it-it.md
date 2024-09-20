@@ -1,6 +1,6 @@
 ---
-title: Configurare un record DMARC sul dominio
-excerpt: Come funziona DMARC e come configurarlo per il tuo servizio di posta
+title: "Migliora la sicurezza delle email con un record DMARC"
+excerpt: "Questa guida ti mostra come funziona DMARC e come configurarlo per il tuo servizio di posta"
 updated: 2023-12-13
 ---
 
@@ -47,7 +47,7 @@ Il record DMARC comunica la politica da adottare in funzione dei risultati dei t
 
 Una volta lette le istruzioni del record DMARC del dominio **mydomain.ovh** dal server di posta in arrivo di **"otherdomain.ovh"**, le email saranno consegnate verso l'indirizzo **recipient@otherdomain.ovh**, contrassegnate come "SPAM" o rifiutate.
 
-![dmarc](images/dns-dmarc-diagram.png){.thumbnail}
+![dmarc](/pages/assets/schemas/emails/dns-dmarc-diagram.png){.thumbnail}
 
 ### Configura il DMARC
 
@@ -97,7 +97,7 @@ Di seguito trovi la descrizione completa dei tag utilizzati per **la registrazio
 > - **Allineamento parziale**: quando l’indirizzo *john.smith@subdomain.mydomain.ovh* trasmette un messaggio dal servizio email associato al dominio *mydomain.ovh*, ma i meccanismi di autenticazione SPF e DKIM sono stati configurati esclusivamente sul dominio principale (ad esempio *mydomain.ovh*), si ottiene un risultato parzialmente allineato.
 > - **Meccanismi di autenticazione** non riusciti: il mittente tenta di inviare un’email come *john.smith@mydomain.ovh* passando per un altro indirizzo (come *robert@example.com*) o utilizzando un servizio di invio email non elencato nel record SPF. In questo caso, i meccanismi di autenticazione SPF e DKIM restituiscono un errore come risultato.
 
-![dmarc](images/dns-dmarc-01.png){.thumbnail}
+![dmarc](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-dmarc-01.png){.thumbnail}
 
 #### Record TXT <a name="txt-record"></a>
 
@@ -125,7 +125,7 @@ Di seguito è riportato un elenco dei tag utilizzati per creare un **record TXT*
 
 - **ri** (valore predefinito: 86400, numero intero senza segno a 32 bit in testo normale): intervallo richiesto, in secondi, tra i rapporti aggregati. Questo tag specifica la frequenza con cui i destinatari di posta elettronica devono generare rapporti aggregati sui risultati di valutazione DMARC per il dominio in questione.
 
-![dmarc](images/dns-dmarc-02.png){.thumbnail}
+![dmarc](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-dmarc-02.png){.thumbnail}
 
 #### Esempi di record <a name="record-example"></a>
 
@@ -139,7 +139,7 @@ Di seguito è riportato un elenco dei tag utilizzati per creare un **record TXT*
 
 Per illustrare questo primo esempio, abbiamo utilizzato il [record DMARC](#dmarc-record) nella zona DNS e gli abbiamo applicato le seguenti impostazioni:
 
-![dmarc](images/dns-dmarc-03.png){.thumbnail}
+![dmarc](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-dmarc-03.png){.thumbnail}
 
 Otteniamo il seguente risultato:
 
@@ -153,7 +153,7 @@ Tutte le email inviate (**pct=100**) vengono gestite dai meccanismi di autentica
 
 In questo secondo esempio, è stato utilizzato un [record TXT](#txt-record) per utilizzare tag non disponibili nel [record DMARC](#dmarc-record) semplificato.
 
-![dmarc](images/dns-dmarc-04.png){.thumbnail}
+![dmarc](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-dmarc-04.png){.thumbnail}
 
 Otteniamo il seguente risultato:
 
@@ -183,4 +183,4 @@ Per prestazioni specializzate (referenziazione, sviluppo, ecc...), contatta i [p
 
 Per usufruire di un'assistenza per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [offerte di supporto](/links/support).
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

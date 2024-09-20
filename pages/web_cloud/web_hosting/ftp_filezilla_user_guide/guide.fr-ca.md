@@ -11,7 +11,7 @@ Il permet de mettre en ligne des fichiers ou votre site internet en vous [connec
 
 **Découvrez comment utiliser le logiciel Filezilla avec votre hébergement mutualisé.**
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wwPx8ORF1kc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/wwPx8ORF1kc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
 
 > [!warning]
 >
@@ -28,7 +28,7 @@ Il permet de mettre en ligne des fichiers ou votre site internet en vous [connec
 
 ## Présentation de l'interface <a name="interface"></a>
 
-![hosting](images/main-interface.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/filezilla/main-interface.png){.thumbnail}
 
 - La partie supérieure **encadrée** permet une connexion rapide à votre hébergement en y renseignant son nom d’**hôte**, le nom d’**utilisateur**, son **mot de passe** associé et le numéro de **port** utilisé.
 - **zone 1** : détails sur l’historique des opérations, la connexion à l’espace FTP, les transferts de fichiers, les erreurs, etc. Pour en savoir plus, rendez-vous sur la [documentation officielle de Filezilla](https://filezilla-project.org/){.external}.
@@ -42,7 +42,7 @@ Il permet de mettre en ligne des fichiers ou votre site internet en vous [connec
 
 ### Connexion avec Filezilla en FTP
 
-![hosting](images/quick-connect.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect.png){.thumbnail}
 
 Depuis la barre de connexion rapide, complétez les informations en vous aidant du tableau ci-dessous :
 
@@ -55,7 +55,7 @@ Depuis la barre de connexion rapide, complétez les informations en vous aidant 
 
 Si vous n’êtes pas en possession de ces éléments, connectez-vous à votre [espace client OVHcloud](/links/manager){.external} dans la partie « Web Cloud », puis cliquez sur `Hébergements`{.action}. Choisissez alors le nom de l'hébergement concerné, puis positionnez-vous sur l'onglet `FTP - SSH`{.action}. Les informations liées à votre espace de stockage apparaissent alors :
 
-![hosting](images/tab-pro.png){.thumbnail}
+![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
 
 > [!warning]
 >
@@ -64,7 +64,7 @@ Si vous n’êtes pas en possession de ces éléments, connectez-vous à votre [
 
 Une fois que tout est correctement saisi dans l'encadré **1** de l'image ci-dessous, cliquez sur `Connexion rapide`{.action}.
 
-![hosting](images/quick-connect-successfull.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect-successfull.png){.thumbnail}
 
 Si la connexion s'est bien effectuée avec succès, vous en serez informé via le statut présent dans l'encadré **2** de l'image ci-dessus. Vous pouvez ainsi voir vos répertoires/dossiers et fichiers déjà présents sur votre hébergement (encadré **3**).
 
@@ -85,25 +85,25 @@ Rendez-vous dans votre [espace client OVHcloud](/links/manager){.external}, dans
 
 Vérifiez ensuite si le **SFTP** est actif dans le tableau en bas de page.
 
-![Activation SFTP offre start](images/sftp-enabled-pro.png){.thumbnail}
+![Activation SFTP offre start](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/sftp-enabled-pro.png){.thumbnail}
 
 S'il n'est pas actif :
 
 - Cliquez sur le bouton `...`{.action} à droite du tableau puis sur `Editer`{.action}.
 
-![Activation SFTP 1](images/edit-login.png){.thumbnail}
+![Activation SFTP 1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/edit-login.png){.thumbnail}
 
 - Dans la fenêtre qui s'affiche, vérifiez alors que l'une des 2 options suivantes est activée :
     - **FTP et SFTP** : pour activer uniquement le SFTP en plus du FTP.
     - **FTP, SFTP et SSH** : pour activer le FTP, le SFTP et le SSH.
 
-![Activation SFTP 2](images/modify-user-step-1-connexion-protocols.png){.thumbnail}
+![Activation SFTP 2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/modify-user-step-1-connexion-protocols.png){.thumbnail}
 
 - Cliquez ensuite sur `Suivant`{.action} puis sur `Valider`{.action}
 
 #### Lancer la connexion SFTP
 
-![hosting](images/quick-connect.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/filezilla/quick-connect.png){.thumbnail}
 
 Dans la partie haute de Filezilla et afin d'établir la connexion au serveur distant (hébergement), renseignez les éléments ci-après :
 
@@ -114,13 +114,13 @@ Dans la partie haute de Filezilla et afin d'établir la connexion au serveur dis
 
 Après avoir cliqué sur le bouton `Connexion rapide`{.action}, une boîte de dialogue s'ouvre (voir l'image ci-dessous) afin de certifier la connexion à l'hôte sur lequel vous vous apprêtez à vous connecter. En étant connecté sur un hôte OVHcloud, vous pouvez cocher la case *Toujours faire confiance à cet hôte, ajouter cette clé au cache* afin que le logiciel ne vous le redemande plus à l'avenir.
 
-![hosting](images/unknown-host-key-message.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/filezilla/unknown-host-key-message.png){.thumbnail}
 
 ### Erreurs de connexion
 
 Le message affiché ci-dessous indique une erreur d'identification lors de la connexion en FTP ou SFTP à l'hébergement mutualisé :
 
-![hosting](images/authentification-failed-could-not-connect-server.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/filezilla/authentification-failed-could-not-connect-server.png){.thumbnail}
 
 Ce type de message est généré par une erreur dans le couple Login/Mot de passe.
 
@@ -131,7 +131,7 @@ Vérifiez vos identifiants afin de vous assurer qu'aucune erreur ne soit renseig
 
 Dans le cas ci-dessous, l'erreur est générée par un nom d'hôte incorrect :
 
-![hosting](images/connection-timed-out-after-20s.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/filezilla/connection-timed-out-after-20s.png){.thumbnail}
 
 Vérifiez alors ce dernier par rapport au nom d'hôte déclaré dans votre [espace client OVHcloud](/links/manager){.external}.
 
@@ -143,7 +143,7 @@ Faites attention à bien sélectionner le répertoire cible dans la fenêtre de 
 
 Une fois cette action réalisée, vos fichiers vont automatiquement se mettre en file d'attente pour être déposés sur le serveur.
 
-![hosting](images/drag-drop-fr.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/filezilla/drag-drop-fr.png){.thumbnail}
 
 ### Vue sur la file d'attente
 
@@ -155,7 +155,7 @@ Dans cete zone, vous retrouvez :
 - les fichiers pour lesquels le transfert à échoué ;
 - les fichiers pour lesquels le transfert est réussi sur l'hébergement distant.
 
-![hosting](images/waiting-list-view.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/filezilla/waiting-list-view.png){.thumbnail}
 
 ### Menu contextuel Serveur
 
@@ -173,7 +173,7 @@ Un menu contextuel apparait, et plusieurs choix vous sont proposés :
 - Copier l'(es) adresse(s) dans le presse-papier : vous permet de copier automatiquement le lien direct vers le fichier sélectionné. Exemple d'URL qui peut être générée : `ftp://loginftp@ftp.cluster0XX.hosting.ovh.net/www/mondossier1/monfichier.jpg`
 - Permissions de fichier : vous donne la possibilité de modifier les droits des fichiers (Chmod)
 
-![hosting](images/contextual-menu-server.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/filezilla/contextual-menu-server.png){.thumbnail}
 
 ## Informations utiles <a name="useful-information"></a>
 
@@ -198,7 +198,7 @@ Par défaut, nous recommandons de ne pas dépasser les droits Chmod **705** pour
 
 Plus le chiffre est élevé, plus les permissions sont importantes.
 
-![hosting](images/change-file-attributes.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/filezilla/change-file-attributes.png){.thumbnail}
 
 Renseignez les permissions que vous souhaitez attribuer, la valeur Chmod sera automatiquement mise à jour.
 
@@ -228,7 +228,7 @@ SITE CHMOD 705 /
 > Cette commande n'est pas fonctionnelle en SFTP.
 >
 
-![hosting](images/site-chmod-705-command.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/filezilla/site-chmod-705-command.png){.thumbnail}
 
 Si vous obtenez l'erreur `550 would not change perms on /. not such file or directory`, utilisez la commande suivante :
 
@@ -256,11 +256,11 @@ Pour les fichiers de type binaire, comme par exemple les fichiers de type **CGI*
 
 Pour modifier le type de transfert, sélectionnez `Transfert`{.action} dans le menu principal puis `Type de transfert`{.action}.
 
-![hosting](images/transfert-binary-files.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/filezilla/transfert-binary-files.png){.thumbnail}
 
 ### Comparaison de dossiers 
 
-![hosting](images/comparison-tool.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/filezilla/comparison-tool.png){.thumbnail}
 
 L'option de comparaison de fichiers affiche des couleurs dans les  **zones 4** et **5** (présentées dans la section de ce tutoriel relative à [l'interface](#interface) de Filezilla). Cette option permet de mettre en évidence les différences entre les fichiers et dossiers locaux et ceux sur le serveur. 
 
@@ -288,4 +288,4 @@ Pour des prestations spécialisées (référencement, développement, etc), cont
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

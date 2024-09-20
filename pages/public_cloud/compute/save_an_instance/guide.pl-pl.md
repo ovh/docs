@@ -1,7 +1,7 @@
 ---
 title: 'Tworzenie kopii zapasowej instancji'
 excerpt: 'Dowiedz się, jak utworzyć kopię zapasową instancji Public Cloud w Panelu klienta OVHcloud'
-updated: 2024-05-06
+updated: 2024-07-03
 ---
 
 > [!primary]
@@ -36,6 +36,10 @@ Kliknij przycisk `...`{.action} po prawej stronie instancji i wybierz `Utwórz k
 Wpisz nazwę kopii zapasowej na następnej stronie. Zapoznaj się z informacjami dotyczącymi cennika i kliknij na `Zatwierdź`{.action}.
 
 ![public-cloud-instance-backup](images/createbackup2.png){.thumbnail}
+
+Nie jest możliwe monitorowanie postępu tworzenia kopii zapasowej w czasie rzeczywistym. Jednak w sekcji `Instance Backup`{.action} pod `Storage`{.action} w menu po lewej stronie, status `Trwa tworzenie kopii` będzie wyświetlany podczas procesu.
+
+![public-cloud-instance-backup](images/backup_in_progress.png){.thumbnail}
 
 Po utworzeniu kopii zapasowej będzie ona dostępna w sekcji `Instance Backup`{.action} pod `Storage`{.action} w menu po lewej stronie.
 

@@ -10,7 +10,7 @@ On a server with a hardware RAID configuration, the RAID array is managed by a p
 
 ## Requirements
 
-- a [dedicated server](https://www.ovhcloud.com/de/bare-metal/){.external} with a hardware RAID configuration
+- a [dedicated server](/links/bare-metal/bare-metal){.external} with a hardware RAID configuration
 - administrative (sudo) access to the server via SSH
 
 > [!warning]
@@ -432,4 +432,4 @@ RAID actions menu, select an option:  [1-99 or e/p/w or 0 to quit] 0
 
 [Hot Swap - Software RAID](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_soft)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

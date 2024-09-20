@@ -1,7 +1,7 @@
 ---
 title: Cold Archive - Premiers pas avec Cold Archive
 excerpt: Ce guide vous montre comment gérer vos données avec Cold Archive
-updated: 2024-03-04
+updated: 2024-06-21
 ---
 
 ## Objectif
@@ -65,11 +65,6 @@ aws s3api get-bucket-intelligent-tiering-configuration --bucket example-bucket -
 
 > [!primary]
 >
-> Le plugin `awscli-plugin-endpoint` ne fonctionne pas avec les alias, le paramètre `--endpoint-url` sera requis dans chaque commande.
->
-
-> [!primary]
->
 > Si vous avez défini plusieurs profils, ajoutez `--profile <profile>` à la ligne de commande.
 >
 
@@ -92,7 +87,7 @@ Après cette requête, le bucket n'est pas encore archivé.<br>
 L'archivage sur les bandes prendra un certain temps.<br>
 A partir de cette commande et jusqu'à une restauration, le bucket ne peut accepter aucune requête de lecture ou d'écriture sur les objets (lister les objets est toujours autorisé).
 
-#### Archiver un bucket avec verrouillage de rétention
+#### Archiver un bucket avec un verrou de rétention
 
 Par défaut, une archive n'est pas verrouillée, c'est-à-dire que vous pouvez toujours la supprimer après l'avoir écrite sur bandes magnétiques. Pour que votre archivage suive le modèle WORM (Write Once Read Many), vous pouvez définir une période de rétention dans votre configuration du intelligent tiering à l'aide du niveau d'accès `OVH_ARCHIVE_LOCK` et d'un nombre de jours. L'archive sera alors verrouillée jusqu'à la date du jour + le nombre de jours spécifié.
 

@@ -1,7 +1,7 @@
 ---
 title: 'Datenbanken und Benutzer auf Ihrem Datenbankserver erstellen'
 excerpt: 'Erfahren Sie hier, wie Sie eine Datenbank auf Ihrem Datenbankserver erstellen'
-updated: 2023-02-15
+updated: 2024-08-22
 ---
 
 > [!primary]
@@ -25,7 +25,12 @@ In einer Datenbank (DB) können sogenannte dynamische Elemente, wie zum Beispiel
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und klicken Sie im Bereich `Web Cloud`{.action} auf `Web Cloud Databases`{.action}. Wählen Sie den Datenbanknamen aus, wechseln Sie zum Tab `Datenbanken`{.action} und klicken Sie dann auf `Datenbank hinzufügen`{.action}.
 
-![web-cloud-databases](images/add-database.png){.thumbnail}
+![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database.png){.thumbnail}
+
+> [!primary]
+>
+> Die Erstellung von PostgreSQL-Schemas ist derzeit für die Web Cloud Databases Server nicht verfügbar.
+>
 
 Füllen Sie die Felder gemäß den angegebenen Kriterien ein. Sie können direkt einen Benutzer erstellen, indem Sie **Benutzer erstellen** anhaken.
 
@@ -36,7 +41,7 @@ Füllen Sie die Felder gemäß den angegebenen Kriterien ein. Sie können direkt
 
 Klicken Sie dann auf `Bestätigen`{.action}.
 
-![web-cloud-databases](images/add-database-confirmation.png){.thumbnail}
+![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database-confirmation.png){.thumbnail}
 
 ### Benutzer erstellen
 
@@ -44,7 +49,7 @@ Um einen Datenbankserver von OVHcloud zu verwenden, müssen Benutzer mit spezifi
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und klicken Sie im Bereich `Web Cloud`{.action} auf `Web Cloud Databases`{.action}. Wählen Sie den Datenbanknamen aus, wechseln Sie zum Tab `Benutzer und Rechte`{.action} und klicken Sie dann auf `Einen Benutzer hinzufügen`{.action}.
 
-![web-cloud-databases](images/add-user.png){.thumbnail}
+![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/add-user.png){.thumbnail}
 
 Geben Sie einen "Benutzernamen" und ein "Passwort" ein und klicken Sie anschließend auf `Bestätigen`{.action}. 
 
@@ -56,7 +61,7 @@ Um die Rechte jedes Benutzers zu verwalten, loggen Sie sich in Ihr [OVHcloud Kun
 
 Klicken Sie auf die Schaltfläche `...`{.action} rechts neben dem jeweiligen Benutzer, dann auf `Rechte verwalten`{.action}.
 
-![web-cloud-databases](images/manage-rights.png){.thumbnail}
+![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/manage-rights.png){.thumbnail}
 
 In der linken Spalte **Datenbank** finden Sie die Liste der Datenbanken Ihres Datenbankservers.
 
@@ -72,7 +77,7 @@ Benutzern können die folgenden Berechtigungen erteilt werden:
 > Die Segmentierung der oben genannten Rechte ist OVHcloud vorbehalten. So kann ein Benutzer mit der `Administrator`-Berechtigung **DLL** (Data Definition Language) und **DML** (Data Manipulation Language) verwenden, während ein Benutzer mit der Berechtigung `Lesen/Schreiben` nur **DLL** nutzen kann.
 >
 
-![web-cloud-databases](images/changing-user-rights.png){.thumbnail}
+![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/changing-user-rights.png){.thumbnail}
 
 #### Eine Datenbank löschen
 
@@ -86,7 +91,7 @@ Um die Rechte jedes Benutzers zu verwalten, loggen Sie sich in Ihr [OVHcloud Kun
 
 Um eine Datenbank auf Ihrem Datenbankserver zu löschen, klicken Sie auf `...`{.action} rechts neben der betreffenden Datenbank und anschließend auf `Die Datenbank löschen`{.action}.
 
-![web-cloud-databases](images/delete-the-database.png){.thumbnail}
+![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/delete-the-database.png){.thumbnail}
 
 ## Weiterführende Informationen
 
@@ -94,4 +99,4 @@ Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

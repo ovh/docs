@@ -1,7 +1,7 @@
 ---
 title: Caching - Connect with CLI
 excerpt: Connect to your Public Cloud Databases for Caching using the Command Line Interface (CLI)
-updated: 2022-03-24
+updated: 2024-06-12
 ---
 
 ## Objective
@@ -59,7 +59,7 @@ To be in interactive mode, do not use any particular command :
 
 If you want to avoid to type username and password in your shell session, type:
 `redis-cli -u rediss://<username>:<password>@<hostname>:<port>`
-to connect to the instance then use the AUTH <username> <password> command to switch to your user that have minimum privileges to run other commands.
+to connect to the instance then use the `AUTH <username> <password>` command to switch to your user that have minimum privileges to run other commands.
 
 Don't forget you need to modify the username, password, hostname and port.
 
@@ -104,17 +104,17 @@ In case the user doesn't have the right privilege, you will get a NOPERM respons
 
 ## Go further
 
-### Caching capabilities and limitations
+[Caching capabilities and limitations](/pages/public_cloud/public_cloud_databases/redis_01_capabilities)
 
-### Configuring vRack for Public Cloud
+[Configuring vRack for Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack)
 
-Visit the [Github examples repository](https://github.com/ovh) to find how to connect to your database with several languages.
+Visit the [Github examples repository](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/) to find how to connect to your database with several languages.
 
 ## We want your feedback!
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or [click on this link](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or [click on this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Are you on Discord? Connect to our channel at [https://discord.gg/ovhcloud](https://discord.gg/ovhcloud) and interact directly with the team that builds our databases service!
 

@@ -22,7 +22,7 @@ This tutorial provides the basic steps for a manual installation of WordPress on
 
 - A [Public Cloud project](https://www.ovhcloud.com/en/public-cloud/) in your OVHcloud account
 - A [Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps) with Debian or Ubuntu installed
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - Administrative access (sudo) to your instance via SSH
 
 ## Instructions
@@ -31,7 +31,7 @@ This tutorial provides the basic steps for a manual installation of WordPress on
 >
 > The following instructions are verfied for Debian 11. Since Ubuntu is based on Debian the tutorial should work for a current Ubuntu distribution as well.
 
-In order to access your installation via a domain name, you need to attach it to your instance. This is done by editing the DNS zone which you can do in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), provided OVHcloud is your domain registrar **and** the domain name uses OVHcloud DNS servers.
+In order to access your installation via a domain name, you need to attach it to your instance. This is done by editing the DNS zone which you can do in your [OVHcloud Control Panel](/links/manager), provided OVHcloud is your domain registrar **and** the domain name uses OVHcloud DNS servers.
 
 Please refer to our guide on [Editing your DNS zone](/pages/web_cloud/domains/dns_zone_edit) for further instructions. If the domain name is currently in use, only configure DNS after the new WordPress is installed and your website is ready.
 
@@ -256,4 +256,4 @@ Certbot will automatically renew the certificates. There are no further steps re
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

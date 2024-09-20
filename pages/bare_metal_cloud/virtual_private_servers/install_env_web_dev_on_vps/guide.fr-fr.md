@@ -23,7 +23,7 @@ Si vous souhaitez installer un CMS (**C**ontent **M**anagement **S**ystem) sur v
 
 ## Prérequis
 
-- Disposer d'une offre [VPS](https://www.ovhcloud.com/fr/vps/) ou d'un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Disposer d'une offre [VPS](https://www.ovhcloud.com/fr/vps/) ou d'un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) dans votre [espace client OVHcloud](/links/manager)
 - Disposer d'un accès administrateur (sudo) via SSH à votre serveur
 
 ## En pratique

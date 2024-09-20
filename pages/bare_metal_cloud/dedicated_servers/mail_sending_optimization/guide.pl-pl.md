@@ -18,7 +18,7 @@ Ogólnie rzecz biorąc, polityka antyspamowa jest surowa. Aby usprawnić wysyłk
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 > 
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności lub wątpliwości związanych z administrowaniem, użytkowaniem lub wdrażaniem usług na serwerze zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/).
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności lub wątpliwości związanych z administrowaniem, użytkowaniem lub wdrażaniem usług na serwerze zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner).
 > 
 
 ## Wymagania początkowe
@@ -67,19 +67,19 @@ Aby zoptymalizować wysyłkę i zmniejszyć ryzyko blokady kont e-mail, należy 
 
 Najpierw należy utworzyć rekord A w strefie DNS domeny, używając adresu IP Twojego serwera jako celu.
 
-Jeśli Twoje serwery DNS są zarządzane przez OVHcloud, zapoznaj się z naszym przewodnikiem [dotyczącym edycji strefy DNS OVHcloud w Panelu klienta](/pages/web_cloud/domains/dns_zone_edit#dostep-do-interfejsu-zarzadzania-strefa-dns).
+Jeśli Twoje serwery DNS są zarządzane przez OVHcloud, zapoznaj się z naszym przewodnikiem [dotyczącym edycji strefy DNS OVHcloud w Panelu klienta](/pages/web_cloud/domains/dns_zone_edit).
 
 Po zmianie strefy DNS Twojej domeny konieczny jest czas propagacji wynoszący maksymalnie 24 godziny, aby modyfikacje stały się widoczne.
 
 Następnie dodaj rekordu PTR (znany również jako rewers):
 
-W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} przejdź do sekcji `Bare Metal Cloud`{.action}, a następnie otwórz `Network`{.action}. Następnie kliknij przycisk `IP`{.action}.
+W [Panelu klienta OVHcloud](/links/manager){.external} przejdź do sekcji `Bare Metal Cloud`{.action}, a następnie otwórz `Network`{.action}. Następnie kliknij przycisk `IP`{.action}.
 
 Jeśli chcesz skonfigurować Rewers DNS na adresie Additional IP, kliknij zakładkę `Additional IP`{.action}.
 
 W rozwijanym menu pod "**Moje publiczne adresy IP i usługi powiązane**" możesz sortować Twoje usługi według kategorii.
 
-![Rewers IP](images/selectservice2022.png){.thumbnail}
+![Rewers IP](images/filteripds.png){.thumbnail}
 
 Kliknij przycisk `...`{.action} po prawej stronie odpowiedniej linii, a następnie `Zmień rewers`{.action}:
 
@@ -152,13 +152,12 @@ Może być interesujące, aby korzystać ze strony jak [Mail Tester](http://www.
 
 ## Sprawdź również
 
-[Skonfiguruj rekord DKIM](/pages/web_cloud/domains/dns_zone_dkim)
+[Zwiększ bezpieczeństwo e-maili za pomocą rekordu DKIM](/pages/web_cloud/domains/dns_zone_dkim)
 
-[Konfiguracja rekordu SPF](/pages/web_cloud/domains/dns_zone_spf)
+[Zwiększ bezpieczeństwo e-maili za pomocą rekordu SPF](/pages/web_cloud/domains/dns_zone_spf)
 
-[Konfiguracja rekordu DMARC](/pages/web_cloud/domains/dns_zone_dmarc)
+[Zwiększ bezpieczeństwo e-maili za pomocą rekordu DMARC](/pages/web_cloud/domains/dns_zone_dmarc)
 
-
-Aby wesprzeć Cię w uruchomieniu Twoich rozwiązań OVHcloud, skontaktuj się z naszą [siecią partnerów OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+Aby wesprzeć Cię w uruchomieniu Twoich rozwiązań OVHcloud, skontaktuj się z naszą [siecią partnerów OVHcloud](/links/partner).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

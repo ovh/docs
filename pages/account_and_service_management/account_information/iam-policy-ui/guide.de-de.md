@@ -1,7 +1,7 @@
 ---
 title: Verwendung von IAM-Richtlinie über Ihr Kundencenter
 excerpt: Erfahren Sie hier, wie Sie Benutzern im OVHcloud Kunden-Account spezifische Zugriffsrechte gewähren
-updated: 2024-02-19
+updated: 2024-07-04
 ---
 
 > [!primary]
@@ -71,6 +71,7 @@ Das folgende Formular wird angezeigt:
 ![Richtlinie erstellen](images/create_a_policy_01.png){.thumbnail}
 
 - **Policy-Name** (erforderlich): Dies ist der Name, der in den Benutzer-Oberflächen angezeigt wird. Der Name muss eindeutig sein und darf keine Leerzeichen enthalten.
+- **Identitäten** : Wählen Sie die Identitäten aus, die von dieser Richtlinie betroffen sind. Es ist möglich, mehrere Identitätstypen als Ziel zu verwenden.
 - **Produkttypen**: Wählen Sie die Produkttypen aus, um den Umfang der Richtlinie festzulegen. Mehrere Produkttypen können in derselben Richtlinie enthalten sein.
 - **Ressourcen**: Fügen Sie Ressourcen oder Ressourcengruppen hinzu, die durch die Richtlinie abgedeckt werden sollen. Die verfügbaren Ressourcen werden nach dem zuvor ausgewählten Produkttyp gefiltert.
 - **Aktionen**.
@@ -141,21 +142,9 @@ Um eine bestehende Richtlinie zu löschen, klicken Sie auf `...`{.action} rechts
 
 In einem Popup-Fenster werden Sie aufgefordert, den Löschvorgang zu bestätigen.
 
-### Eine Identität mit einer Richtlinie verknüpfen
-
-Um eine Identität mit einer Richtlinie zu verknüpfen, klicken Sie rechts neben der Richtlinie auf `...`{.action} und dann auf `Identitäten verwalten`{.action}.
-
-![Richtlinie bearbeiten](images/editing_a_policy.png){.thumbnail}
-
-Auf diese Weise können Sie die Benutzer oder Gruppen, für die die Richtlinie gelten soll, hinzufügen oder entfernen.
-
-![Identität verknüpfen](images/link_identity_to_policy.png){.thumbnail}
-
 ### Verwaltung von Identitäten
 
-Die für die Richtlinien verfügbaren Identitäten werden über den Tab `Verwaltung der Nutzer`{.action} im Menü `Mein Account`{.action} verwaltet.
-
-Der Tab `Identitäten`{.action} des IAM-Menüs leitet Sie zu diesem Bereich weiter.
+Die für die Richtlinien verfügbaren Identitäten werden über den Tab `Identitäten`{.action} verwaltet.
 
 Details zur Benutzerverwaltung finden Sie in [unserer Dokumentation](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 

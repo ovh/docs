@@ -52,14 +52,14 @@ Tabela wyświetla aktywne przekierowania dla Twojej domeny. Możesz zarządzać 
 
 Kliknij przycisk `Dodaj przekierowanie`{.action}.
 
-![Prezentacja przekierowania menu](images/add-a-redirection.png){.thumbnail}
+![Prezentacja przekierowania menu](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection.png){.thumbnail}
 
 Trzy opcje przekierowania są dostępne w [Panelu klienta OVHcloud](/links/manager). Każda z nich składa się z **5 kolejnych etapów**. 
 
 > W zakładce `Przekierowanie`{.action} znajduje się czwarta opcja umożliwiająca szybkie przekierowanie domeny na rekordy DNS A, AAAA i CNAME.<br>
 > Ponieważ w tym przypadku nie chodzi o "przekierowanie", w tym przewodniku nie zostanie szczegółowo opisany ten wariant.
 >
-> Więcej informacji na temat wpisów DNS znajdziesz w dokumentacji dotyczącej [rekordy DNS](/pages/web_cloud/domains/dns_zone_edit).
+> Więcej informacji na temat wpisów DNS znajdziesz w dokumentacji dotyczącej [rekordy DNS](/pages/web_cloud/domains/dns_zone_records).
 >
 
 Poniżej znajdziesz trzy rodzaje przekierowań opisanych krok po kroku.
@@ -75,7 +75,7 @@ Ta opcja pozwala, po wpisaniu przekierowanej domeny, na wyświetlenie domeny doc
 
 - **Przykład**: jeśli przekierujesz `domain1.tld` na `domain2.tld`, to `domain2.tld` wyświetli się w pasku adresowym w Twojej przeglądarce.
 
-![Gif1](images/visible-redirection.gif){.thumbnail}
+![Gif1](/pages/assets/schemas/domains/visible-redirection.gif){.thumbnail}
 
 > To przekierowanie "standard" zwróci kod HTTP 301.
 
@@ -89,7 +89,7 @@ Ta opcja pozwala, po wpisaniu przekierowanej domeny, na wyświetlenie domeny doc
 >>
 >> Pole `Przekieruj również`{.action} może zostać zaznaczone do przekierowania subdomeny na `www` do tego samego celu, który wybierzesz dla domeny/subdomeny.
 >>
->> ![Etap 1](images/add-a-redirection-step-1.png){.thumbnail}
+>> ![Etap 1](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-1.png){.thumbnail}
 >>
 >> Kliknij na `Dalej`{.action}, aby przejść do etapu 2.
 >>
@@ -97,7 +97,7 @@ Ta opcja pozwala, po wpisaniu przekierowanej domeny, na wyświetlenie domeny doc
 >>
 >> Wybierz `Na adres Web`{.action}.
 >>
->> ![Etap 2](images/add-a-redirection-step-2-to-a-web-adress.png){.thumbnail}
+>> ![Etap 2](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-2-to-a-web-adress.png){.thumbnail}
 >>
 >> Kliknij na `Dalej`{.action}, aby przejść do etapu 3.
 >>
@@ -105,7 +105,7 @@ Ta opcja pozwala, po wpisaniu przekierowanej domeny, na wyświetlenie domeny doc
 >>
 >> Wybierz `Z przekierowaniem widocznym`{.action} spośród dwóch wskazanych opcji.
 >>
->> ![Etap 3](images/add-a-redirection-step-3-a-visible-redirection.png){.thumbnail}
+>> ![Etap 3](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-3-a-visible-redirection.png){.thumbnail}
 >>
 >> Kliknij na `Dalej`{.action}, aby przejść do etapu 4.
 >>
@@ -113,7 +113,7 @@ Ta opcja pozwala, po wpisaniu przekierowanej domeny, na wyświetlenie domeny doc
 >>
 >> Wybierz `Permanente (301)`{.action} spośród dwóch wskazanych opcji, po czym wprowadź docelową domenę lub adres URL przekierowania w formularzu `Adres www`{.action}, który się wyświetli.
 >>
->> ![Etap 4](images/add-a-redirection-step-4-permanent.png){.thumbnail}
+>> ![Etap 4](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-4-permanent.png){.thumbnail}
 >>
 >> Kliknij na `Dalej`{.action}, aby przejść do etapu 5.
 >>
@@ -121,7 +121,7 @@ Ta opcja pozwala, po wpisaniu przekierowanej domeny, na wyświetlenie domeny doc
 >>
 >> W tym ostatnim etapie upewnij się, że wyświetlane informacje są poprawne.
 >>
->> ![Etap 5](images/add-a-redirection-step-5-permanent.png){.thumbnail}
+>> ![Etap 5](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-5-permanent.png){.thumbnail}
 >>
 >> Kliknij na `Potwierdź`{.action}, aby zatwierdzić Twoją konfigurację.
 >> 
@@ -142,7 +142,7 @@ Pozycjonowanie w wyszukiwarkach jest bowiem gorsze niż w przypadku stałego **p
 
 - **Przykład**: jeśli przekierujesz `domain1.tld` na `domain2.tld`, to `domain2.tld` wyświetli się w pasku adresowym w Twojej przeglądarce.
 
-![Gif1](images/visible-redirection.gif){.thumbnail}
+![Gif1](/pages/assets/schemas/domains/visible-redirection.gif){.thumbnail}
 
 > Przekierowanie zwraca kod HTTP 302.
 
@@ -156,7 +156,7 @@ Pozycjonowanie w wyszukiwarkach jest bowiem gorsze niż w przypadku stałego **p
 >>
 >> Pole `Przekieruj również`{.action} może zostać zaznaczone do przekierowania subdomeny na `www` do tego samego celu, który wybierzesz dla domeny/subdomeny.
 >>
->> ![Etap 1](images/add-a-redirection-step-1.png){.thumbnail}
+>> ![Etap 1](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-1.png){.thumbnail}
 >>
 >> Kliknij na `Dalej`{.action}, aby przejść do etapu 2.
 >>
@@ -164,7 +164,7 @@ Pozycjonowanie w wyszukiwarkach jest bowiem gorsze niż w przypadku stałego **p
 >>
 >> Wybierz `Na adres Web`{.action}.
 >>
->> ![Etap 2](images/add-a-redirection-step-2-to-a-web-adress.png){.thumbnail}
+>> ![Etap 2](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-2-to-a-web-adress.png){.thumbnail}
 >>
 >> Kliknij na `Dalej`{.action}, aby przejść do etapu 3.
 >>
@@ -172,7 +172,7 @@ Pozycjonowanie w wyszukiwarkach jest bowiem gorsze niż w przypadku stałego **p
 >>
 >> Wybierz `Z przekierowaniem widocznym`{.action} spośród dwóch wskazanych opcji.
 >>
->> ![Etap 3](images/add-a-redirection-step-3-a-visible-redirection.png){.thumbnail}
+>> ![Etap 3](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-3-a-visible-redirection.png){.thumbnail}
 >>
 >> Kliknij na `Dalej`{.action}, aby przejść do etapu 4.
 >>
@@ -180,7 +180,7 @@ Pozycjonowanie w wyszukiwarkach jest bowiem gorsze niż w przypadku stałego **p
 >>
 >> Wybierz `Tymczasowe (302)`{.action} spośród dwóch wskazanych opcji, po czym wprowadź docelową domenę lub adres URL przekierowania w formularzu `Adres www`{.action}, który się wyświetli.
 >>
->> ![Etap 4](images/add-a-redirection-step-4-temporary.png){.thumbnail}
+>> ![Etap 4](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-4-temporary.png){.thumbnail}
 >>
 >> Kliknij na `Dalej`{.action}, aby przejść do etapu 5.
 >>
@@ -188,7 +188,7 @@ Pozycjonowanie w wyszukiwarkach jest bowiem gorsze niż w przypadku stałego **p
 >>
 >> W tym ostatnim etapie upewnij się, że wyświetlane informacje są poprawne.
 >>
->> ![Etap 5](images/add-a-redirection-step-5-temporary.png){.thumbnail}
+>> ![Etap 5](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-5-temporary.png){.thumbnail}
 >>
 >> Kliknij na `Potwierdź`{.action}, aby zatwierdzić Twoją konfigurację.
 >> 
@@ -207,7 +207,7 @@ To przekierowanie pozwala na pozostawienie domeny na pasku adresowym przeglądar
 
 - **Przykład**: jeśli przekierujesz `domain1.tld` na `domain2.tld`, to `domain1.tld` wyświetli się w pasku adresowym w Twojej przeglądarce.
 
-![Gif2](images/invisible-redirection.gif){.thumbnail}
+![Gif2](/pages/assets/schemas/domains/invisible-redirection.gif){.thumbnail}
 
 Przekierowanie niewidoczne działa na znaczniku HTML *iFrame*. Pozwala ona domenie przekierowanej na zintegrowanie zawartości innej strony odpowiadającej domenie docelowej ze swoją stroną HTML.
 
@@ -231,7 +231,7 @@ Dzięki tej kapsułce internauci odwiedzający twoją stronę mogą wyświetlić
 >>
 >> Pole `Przekieruj również`{.action} może zostać zaznaczone do przekierowania subdomeny na `www` do tego samego celu, który wybierzesz dla domeny/subdomeny.
 >>
->> ![Etap 1](images/add-a-redirection-step-1.png){.thumbnail}
+>> ![Etap 1](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-1.png){.thumbnail}
 >>
 >> Kliknij na `Dalej`{.action}, aby przejść do etapu 2.
 >>
@@ -239,7 +239,7 @@ Dzięki tej kapsułce internauci odwiedzający twoją stronę mogą wyświetlić
 >>
 >> Wybierz `Na adres Web`{.action}.
 >>
->> ![Etap 2](images/add-a-redirection-step-2-to-a-web-adress.png){.thumbnail}
+>> ![Etap 2](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-2-to-a-web-adress.png){.thumbnail}
 >>
 >> Kliknij na `Dalej`{.action}, aby przejść do etapu 3.
 >>
@@ -247,7 +247,7 @@ Dzięki tej kapsułce internauci odwiedzający twoją stronę mogą wyświetlić
 >>
 >> Wybierz `Z niewidocznym przekierowaniem`{.action} spośród dwóch wskazanych opcji.
 >>
->> ![Etap 3](images/add-a-redirection-step-3-with-an-invisible-redirection.png){.thumbnail}
+>> ![Etap 3](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-3-with-an-invisible-redirection.png){.thumbnail}
 >>
 >> Kliknij na `Dalej`{.action}, aby przejść do etapu 4.
 >>
@@ -255,7 +255,7 @@ Dzięki tej kapsułce internauci odwiedzający twoją stronę mogą wyświetlić
 >>
 >> Wybierz `Tymczasowe (iframe)`{.action} spośród dwóch wskazanych opcji, po czym wprowadź docelową domenę lub adres URL przekierowania w formularzu `Adres www`{.action}, który się wyświetli.
 >>
->> ![Etap 4](images/add-a-redirection-step-4-iframe.png){.thumbnail}
+>> ![Etap 4](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-4-iframe.png){.thumbnail}
 >>
 >> Trzy opcjonalne parametry są dostępne na tym etapie:
 >>
@@ -269,7 +269,7 @@ Dzięki tej kapsułce internauci odwiedzający twoją stronę mogą wyświetlić
 >>
 >> W tym ostatnim etapie upewnij się, że wyświetlane informacje są poprawne.
 >>
->> ![Etap 5](images/add-a-redirection-step-5-iframe.png){.thumbnail}
+>> ![Etap 5](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/redirection/add-a-redirection-step-5-iframe.png){.thumbnail}
 >>
 >> Kliknij na `Potwierdź`{.action}, aby zatwierdzić Twoją konfigurację.
 >> 
@@ -398,4 +398,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

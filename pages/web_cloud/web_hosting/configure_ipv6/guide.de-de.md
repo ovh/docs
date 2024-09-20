@@ -48,7 +48,7 @@ Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein. Klicken Si
 
 Kopieren Sie im Abschnitt **IPv6** die Adresse und gehen Sie zum nächsten Schritt über.
 
-![IPv6](images/find-ipv6.png){.thumbnail}
+![IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv6.png){.thumbnail}
 
 ### Schritt 2: DNS-Zone Ihres Domainnamens konfigurieren
 
@@ -59,20 +59,20 @@ Kopieren Sie im Abschnitt **IPv6** die Adresse und gehen Sie zum nächsten Schri
 > Beachten Sie, dass ein Hinzufügen, Ändern oder Löschen von DNS-Einträgen in der aktiven DNS-Zone eines Domainnamens eine Propagationszeit von **4 bis 24 Stunden** benötigt, um voll wirksam zu sein.
 >
 
-Damit ein Browser die IPv6-Adresse Ihres Domainnamens aufrufen kann, bearbeiten Sie die aktive DNS-Zone Ihres Domainnamens. Verwenden Sie bei Bedarf unsere Anleitung "[Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit#bearbeiten-der-ovhcloud-dns-zone-ihrer-domain)", um einen DNS-Eintrag vom Typ **AAAA** zu erstellen.
+Damit ein Browser die IPv6-Adresse Ihres Domainnamens aufrufen kann, bearbeiten Sie die aktive DNS-Zone Ihres Domainnamens. Verwenden Sie bei Bedarf unsere Anleitung "[Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)", um einen DNS-Eintrag vom Typ **AAAA** zu erstellen.
 
 Klicken Sie im Bereich `Web Cloud`{.action} auf `Domainnamen`{.action}. Wählen Sie Ihren Domainnamen aus und gehen Sie dann auf den Tab `DNS-Zone`{.action}. Klicken Sie rechts neben der Tabelle auf den Button `Eintrag hinzufügen`{.action}. 
 
 Tragen Sie die zuvor kopierte IPv6-Adresse als Typ **AAAA** ein.
 
-![IPv6](images/add-dns-zone-entry-aaaa.png){.thumbnail}
+![IPv6](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-dns-zone-entry-aaaa.png){.thumbnail}
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
-[Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit#bearbeiten-der-ovhcloud-dns-zone-ihrer-domain)
+[Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

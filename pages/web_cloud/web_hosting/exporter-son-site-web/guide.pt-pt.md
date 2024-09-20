@@ -34,7 +34,7 @@ Para se ligar ao seu espaço de armazenamento, deve dispor dos seguintes element
 
 Estes elementos foram-lhe enviados no e-mail enviado após a instalação do seu alojamento web. Se não possuir estas informações, aceda à [Área de Cliente OVHcloud](/links/manager){.external}, na secção “Web”, e clique em `Alojamentos`{.action}. De seguida, selecione o nome do alojamento correspondente e aceda ao separador `FTP - SSH`{.action}. 
 
-![export-website](images/tab-pro.png){.thumbnail}
+![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
 
 Aparecerá a informação relativa ao seu espaço de armazenamento e terá a possibilidade de encontrar os elementos necessários para aceder mesmo. Caso seja necessário, consulte o nosso manual: [“Aceder ao espaço de armazenamento do alojamento web”](/pages/web_cloud/web_hosting/ftp_connection){.external}. Caso tenha perdido a palavra-passe, consulte o manual ["Modificar a palavra-passe de um utilizador FTP"](/pages/web_cloud/web_hosting/ftp_change_password){.external}.
 
@@ -50,7 +50,7 @@ Depois de aceder ao espaço de armazenamento, apenas precisará de transferir os
 
 Para verificar a pasta onde deve colocar o site, clique no separador `Multi-site`{.action} a partir da Área de Cliente OVHcloud. Aparecerá uma tabela onde poderá consultar a `Pasta raiz`{.action} do domínio pretendido.
 
-![export-website](images/root-folders.png){.thumbnail}
+![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
 ### Etapa 2: recuperar o backup da sua base de dados (opcional) 
 
@@ -71,7 +71,7 @@ Se deseja guardar o histórico dos logs do seu website, pode aceder aos logs no 
 
 Depois, clique em `Alojamentos`{.action} e selecione o plano correspondente. Clique no separador `Estatísticas e logs`{.action}. A seguir, clique na ligação sob a menção `Ver logs`{.action}:
 
-![export-website](images/view-logs.png){.thumbnail}
+![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-logs.png){.thumbnail}
 
 Aparece uma janela com os diferentes tipos de logs disponíveis.  Estão classificados por mês:
 
@@ -85,11 +85,11 @@ Aparece uma janela com os diferentes tipos de logs disponíveis.  Estão classif
 | ssh   	| estes logs indicam as diferentes ligações feitas com o protocolo SSH.                                                                                                                      	|
 | cron  	| o resultado da execução das suas tarefas planeadas.                                                                                                                                                	|
 
-![export-website](images/raw-logs-general.png){.thumbnail}
+![export-website](/pages/assets/screens/other/web-tools/logs/raw-logs-general.png){.thumbnail}
 
 Quando seleciona o tipo de logs para o mês que mais lhe interessa, estes são arquivados por dia:
 
-![export-website](images/raw-logs.png){.thumbnail}
+![export-website](/pages/assets/screens/other/web-tools/logs/raw-logs.png){.thumbnail}
 
 ## Quer saber mais?
 
@@ -109,4 +109,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 
+Fale com nossa [comunidade de utilizadores](/links/community). 

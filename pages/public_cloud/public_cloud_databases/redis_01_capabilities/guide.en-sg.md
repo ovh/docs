@@ -1,12 +1,12 @@
 ---
-title: Redis - Capabilities and Limitations
-excerpt: Discover the capabilities and limitations of Public Cloud Databases for Redis
-updated: 2024-05-27
+title: Caching - Capabilities and Limitations
+excerpt: Discover the capabilities and limitations of Public Cloud Databases for Caching
+updated: 2024-06-12
 ---
 
 ## Objective
 
-This page provides the technical capabilities and limitations of the Public Cloud Databases for Redis offer.
+This page provides the technical capabilities and limitations of the Public Cloud Databases for Caching offer.
 
 We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/orgs/ovh/projects/16/views/5>.
 
@@ -25,21 +25,21 @@ The Public Cloud Databases offer is available in the following regions:
 
 Database nodes have to be in the same region. Multi-AZ is currently not supported.
 
-### Redis versions
+### Caching versions
 
-The Public Cloud Databases offer supports the following Redis versions:
+The Public Cloud Databases offer uses the following Redis® open source versions:
 
-- Redis 7.0
+- Redis® open source 7.0
 
-Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/public_cloud_databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. Additionally, you can follow Redis Release Cycle on their official page: <https://redis.io/topics/releases>
+Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/public_cloud_databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. Additionally, you can follow Redis® release cycle on their official page: <https://redis.io/topics/releases>
 
-### Redis clients
+### Caching clients
 
-You can use any of the [Redis-recommended clients](https://redis.io/clients){.external} to access your instance.
+You can use any of the [clients recommended by Redis®](https://redis.io/clients){.external} to access your instance.
 
 ### Plans
 
-Three plans are available:
+Two plans are available:
 
 - *Essential*
 - *Business*
@@ -63,9 +63,9 @@ Your choice of plan affects the number of nodes your cluster can run, the SLA, a
 
 #### License type
 
-Redis Community software is under the 3-Clause-BSD license, a liberal open-source license.
+Redis® open source software prior version 7.4 is under the 3-Clause-BSD license, a liberal open-source license.
 
-Redis Stack and all Redis modules created by Redis Ltd. (e.g., RediSearch, RedisJSON, RedisGraph, RedisTimeSeries, and RedisBloom) are dual-licensed under the Redis Source Available License v2 (RSALv2) and SSPL. The RSALv2 license model prohibits OVHcloud, and any other service provider, from offering these modules to third parties as a service. So **these modules are not available**.
+Redis® open source software starting from version 7.4, Redis Stack and all Redis modules created by Redis Ltd. (e.g., RediSearch, RedisJSON, RedisGraph, RedisTimeSeries, and RedisBloom) are dual-licensed under the Redis Source Available License v2 (RSALv2) and SSPL. The RSALv2 license model prohibits OVHcloud, and any other service provider, from offering these softwares and modules to third parties as a service. So **these softwares and modules are not available**.
 
 More information on <https://redis.com/legal/licenses/>.
 
@@ -76,7 +76,7 @@ For information on node types and pricing, please refer to the [price page](http
 ### Features
 
 #### Network
-Redis clusters are reachable through default port 20182.
+Caching clusters are reachable through default port 20182.
 
 Public as well as private networking (vRack) can be used for all the offers.
 
@@ -87,9 +87,10 @@ The database service's IP address is subject to change periodically. Thus, it is
 ##### Private network considerations
 Here are some considerations to take into account when using private network:
 
-- Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
+- Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
 - When connecting from an outside subnet, the Openstack IP gateway must be enabled in the subnet used for the Database service. The customer is responsible for any other custom network setup.
 - Subnet sizing should include considerations for service nodes, other co-located services within the same subnet, and an allocation of additional available IP addresses for maintenance purposes. Failure to adequately size subnets could result in operational challenges and the malfunctioning of services.
+- OpenStack subnets routes announcement will not be applied to your services. 
 
 ##### Authorised IPs
 
@@ -97,13 +98,13 @@ Once your service is up and running, you will be able to specify IP addresses (o
 
 #### Maximum simultaneous connections
 
-The number of simultaneous connections in Public Cloud Databases for Redis depends on the available total memory on the server. We allow 4 \* megabytes_of_bytes_memory connections per RAM GB, but at least 10000 connections, even on the smallest servers.
+The number of simultaneous connections in Public Cloud Databases for Caching depends on the available total memory on the server. We allow 4 \* megabytes_of_bytes_memory connections per RAM GB, but at least 10000 connections, even on the smallest servers.
 
 So for example on a server with 7GB memory, you will get up to 7 \* 4096 = 28672 simultaneous connections.
 
 #### Advanced parameters
 
-You can further customise your Redis by using advanced parameters. See the [Advanced parameters references documentation](https://help.ovhcloud.com/csm/en-gb-public-cloud-databases-redis-advanced-parameters-references?id=kb_article_view&sysparm_article=KB0054733) for more information on the supported parameters.
+You can further customise your service by using advanced parameters. See the [Advanced parameters references documentation](/pages/public_cloud/public_cloud_databases/redis_09_advanced_parameters_references) for more information on the supported parameters.
 
 #### Backups
 
@@ -134,7 +135,7 @@ For each user you can specify:
 - Commands (such as "+ping +info +echo +get +set")
 - Channels (such as "*")
 
-You can follow the official Redis documentation about Commands: <https://redis.io/commands/>.
+You can follow the official Redis® documentation about Commands: <https://redis.io/commands/>.
 
 Here is the list of unsupported commands:
 

@@ -27,7 +27,7 @@ Pour accéder aux moteurs d'exécution de votre hébergement Cloud Web, connecte
 
 Le tableau qui apparaît affiche les moteurs d'exécution ajoutés actuellement à votre hébergement Cloud Web. À noter qu'un moteur a été automatiquement créé lors de l'installation de votre hébergement.
 
-![cloudweb](images/tab-phpfpm7-4.png){.thumbnail}
+![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/tab-phpfpm7-4.png){.thumbnail}
 
 ### Étape 2 : gérer les moteurs d'exécution
 
@@ -78,7 +78,7 @@ Une fois les informations complétées, cliquez sur `Valider`{.action}. Assurez-
 
 Une fois les informations complétées, cliquez sur `Valider`{.action}. Assurez-vous maintenant que ce moteur d'exécution est bien utilisé par le ou les multisites souhaités. Pour cela, poursuivez vers l'étape 3 « [Associer le moteur d'exécution à un multisite](./#etape-3-associer-le-moteur-dexecution-a-un-multisite){.external} ».
 
-![cloudweb](images/modify-a-runtime-software-application-nodejs8.png){.thumbnail}
+![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/modify-a-runtime-software-application-nodejs8.png){.thumbnail}
 
 ##### **Ruby**
 
@@ -92,7 +92,7 @@ Une fois les informations complétées, cliquez sur `Valider`{.action}. Assurez-
 
 Une fois les informations complétées, cliquez sur `Valider`{.action}. Assurez-vous maintenant que ce moteur d'exécution est bien utilisé par le ou les multisites souhaités. Pour cela, poursuivez vers l'étape 3 « [Associer le moteur d'exécution à un multisite](./#etape-3-associer-le-moteur-dexecution-a-un-multisite){.external} ».
 
-![cloudweb](images/modify-a-runtime-software-application-ruby2-6.png){.thumbnail}
+![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/modify-a-runtime-software-application-ruby2-6.png){.thumbnail}
 
 ##### **Python**
 
@@ -106,7 +106,7 @@ Une fois les informations complétées, cliquez sur `Valider`{.action}. Assurez-
 
 Une fois les informations complétées, cliquez sur `Valider`{.action}. Assurez-vous maintenant que ce moteur d'exécution est bien utilisé par le ou les multisites souhaités. Pour cela, poursuivez vers l'étape 3 « [Associer le moteur d'exécution à un multisite](./#etape-3-associer-le-moteur-dexecution-a-un-multisite){.external} ».
 
-![cloudweb](images/modify-a-runtime-software-application-python3.png){.thumbnail}
+![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/modify-a-runtime-software-application-python3.png){.thumbnail}
 
 ### Étape 3 : associer le moteur d'exécution à un multisite
 
@@ -121,7 +121,7 @@ Lorsque vous disposez du ou des moteurs d'exécution nécessaires à votre proje
 
 Dans le tableau, vérifiez pour les domaines concernés si le moteur affiché est correct dans la colonne `Moteur d'exécution`. Les noms qui s'affichent correspondent au « nom personnalisé » que vous avez défini.
 
-![cloudweb](images/runtime-software-applications.png){.thumbnail}
+![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/runtime-software-applications.png){.thumbnail}
 
 Si vous souhaitez modifier un moteur associé à un multisite, cliquez sur `...`{.action} à droite du domaine concerné puis cliquez sur `Modifier`{.action}.
 
@@ -129,7 +129,7 @@ Sélectionnez alors le bon moteur à côté de `Moteur d'exécution` dans la fen
 
 Une fois sélectionné, suivez les étapes jusqu'à la finalisation.
 
-![cloudweb](images/modify-a-domain-step-1.png){.thumbnail}
+![cloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/multisite/modify-a-domain-step-1.png){.thumbnail}
 
 ## Aller plus loin
 
@@ -137,4 +137,4 @@ Pour des prestations spécialisées (référencement, développement, etc), cont
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

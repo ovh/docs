@@ -16,7 +16,7 @@ Num sistema Windows, a redundância dos dados é assegurada pela implementação
 
 ## Requisitos
 
-- Um [servidor dedicado Windows](https://www.ovhcloud.com/pt/bare-metal/) com um espelho software
+- Um [servidor dedicado Windows](/links/bare-metal/bare-metal) com um espelho software
 - Um acesso administrativo ao servidor via RDP
 
 ## Instruções

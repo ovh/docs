@@ -28,7 +28,7 @@ Cross Service Integration allows you to expose your Public Cloud Databases Logs 
 
 The Cross Service Integrations for Logs and Metrics allow you for example:
 
-- To send Redis or MySQL metrics or Cassandra metrics in M3db or PostgreSQL.
+- To send Caching or MySQL metrics or Cassandra metrics in M3db or PostgreSQL.
 - To send PostgreSQL or MySQL metrics to OpenSearch.
 - To show metrics in Grafana.
 
@@ -207,7 +207,7 @@ Open the following API call, paste your service ID into the `serviceName` input 
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/postgresql
 >> >
-> Redis
+> Caching
 >> > [!api]
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/redis
@@ -260,9 +260,9 @@ Get integration capabilities related to your Public Cloud Databases service:
 >> > [!api]
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/postgresql/{clusterId}/capabilities/integration
 >> >
-> Redis
+> Caching
 >> > [!api]
->> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/redis/{clusterId}/capabilities/integration
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/caching/{clusterId}/capabilities/integration
 >> >
 
 ![Get Integration Capabilities](images/databases_07_cross_service_integration-20220708142931159.png){.thumbnail}
@@ -314,9 +314,9 @@ For that, you need to create a new integration:
 >> > [!api]
 >> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/postgresql/{clusterId}/integration
 >> >
-> Redis
+> Caching
 >> > [!api]
->> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/redis/{clusterId}/integration
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/caching/{clusterId}/integration
 >> >
 
 Fill in the form with the information corresponding to the type of integration chosen.
@@ -378,9 +378,9 @@ Then create a second integration from your *Destination* service name:
 >> > [!api]
 >> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/postgresql/{clusterId}/integration
 >> >
-> Redis
+> Caching
 >> > [!api]
->> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/redis/{clusterId}/integration
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/caching/{clusterId}/integration
 >> >
 
 ![Create Grafana Integration](images/databases_07_cross_service_integration-20220708180105894.png){.thumbnail}

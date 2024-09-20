@@ -1,7 +1,7 @@
 ---
 title: "Eine Datenbank auf Ihrem Webhosting erstellen"
 excerpt: "Erfahren Sie hier, wie Sie in OVHcloud Webhostings enthaltene Datenbanken verwenden"
-updated: 2024-05-17
+updated: 2024-09-05
 ---
 
 > [!primary]
@@ -28,7 +28,7 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und wählen S
 
 Die Tabelle auf dieser Seite enthält alle Datenbanken, die mit Ihrem Webhosting erstellt wurden.
 
-![databasecreation](images/tab.png){.thumbnail}
+![databasecreation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
 
 In der Tabelle können Datenbanken verschiedene Typen haben:
 
@@ -52,19 +52,24 @@ Es gibt zwei Möglichkeiten, eine neue Datenbank zu erstellen:
 
 Wählen Sie im angezeigten Fenster unter den folgenden Optionen aus:
 
-![database-creation-step1](images/create-a-database-step-1.png){.thumbnail}
+![database-creation-step1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-step-1.png){.thumbnail}
 
 |Information|Beschreibung|  
 |---|---|
 |**Wählen Sie den Typ der Datenbank aus**|Wählen Sie die Größe der Datenbank aus. Diese Größe bezieht sich auf den Speicherplatz, den Ihre Datenbank zum Speichern von Daten hat.|
-|**Wählen Sie die Engine der Datenbank aus**|Wählen Sie die Engine aus, die die Datenbank verwenden soll. Die in einem [OVHcloud Webhosting](/links/web/hosting) inkludierten Datenbanken sind ausschließlich mit der MySQL-Engine verfügbar.|
+|**Wählen Sie die Engine der Datenbank aus**|Wählen Sie die Engine aus, die die Datenbank verwenden soll. Die in einem [OVHcloud Webhosting](/links/web/hosting) inkludierten Datenbanken sind derzeit nur mit der MySQL-Engine verfügbar.|
 |**Wählen Sie die Version der Datenbank aus**|Wählen Sie die Version aus, die vom Datenbankmodul verwendet wird. Stellen Sie sicher, dass Ihre Website mit der von Ihnen gewählten Version kompatibel ist.|
+
+> [!primary]
+>
+> Die Aktualisierung der Engine-Version einer bereits erstellten Datenbank ist derzeit nicht verfügbar.
+>
 
 Klicken Sie auf `Weiter`{.action}.
 
 Ein neues Fenster wird angezeigt:
 
-![database-creation-step2](images/create-a-database-step-2.png){.thumbnail}
+![database-creation-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-step-2.png){.thumbnail}
 
 |Information|Beschreibung|
 |---|---|
@@ -92,7 +97,7 @@ Ein neues Fenster wird angezeigt:
 
 Geben Sie die erforderlichen Informationen ein und klicken Sie auf `Weiter`{.action}.
 
-![database-creation-step3](images/create-a-database-step-3.png){.thumbnail}
+![database-creation-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-step-3.png){.thumbnail}
 
 Überprüfen Sie, ob alle Informationen in der Zusammenfassung korrekt sind. Ist das der Fall, klicken Sie auf `Bestätigen`{.action}, um mit der Erstellung der Datenbank zu beginnen.
 
@@ -150,7 +155,7 @@ OVHcloud stellt Ihnen ein Online-Tool für das Datenbankmanagement zur Verfügun
 
 Klicken Sie in der angezeigten Tabelle auf `...`{.action} rechts neben der betreffenden Datenbank und dann im Drop-down-Menü auf `Zugang zu phpMyAdmin`{.action}.
 
-![phpMyAdmin Go Login](images/pma-interface-login.png){.thumbnail}
+![phpMyAdmin Go Login](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
 
 Geben Sie die Zugangsdaten für Ihre Datenbank ein und klicken Sie auf `Log in`{.action}.
 
@@ -196,4 +201,4 @@ Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

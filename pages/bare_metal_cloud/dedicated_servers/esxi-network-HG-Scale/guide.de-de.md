@@ -1,8 +1,11 @@
 ---
 title: 'Netzwerk auf ESXi für die High Grade & SCALE Reihen konfigurieren'
 excerpt: 'Erfahren Sie, wie Sie das Netzwerk auf VMware ESXi für die High Grade & SCALE Reihen einrichten'
-updated: 2022-05-09
+updated: 2024-09-13
 ---
+
+> [!warning]
+> Der ESXi Hypervisor wird von OVHcloud nicht mehr unterstützt. Weitere Informationen finden Sie auf [dieser Seite](/pages/bare_metal_cloud/dedicated_servers/esxi-end-of-support).
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
@@ -14,6 +17,8 @@ Bei den High Grade & SCALE Reihen ist der Betrieb von Additional IPs im *Bridged
 
 > [!primary]
 >
+> Bis Ende 2024 wird diese Funktion für die Reihen High Grade, SCALE und ADVANCE verfügbar sein.
+>
 > Die bisher existierende Dokumentation deckt lediglich die Lösung über das vRack ab.
 >
 
@@ -23,9 +28,9 @@ Bei den High Grade & SCALE Reihen ist der Betrieb von Additional IPs im *Bridged
 
 - Sie haben einen öffentlichen IP-Adressblock mit mindestens vier Adressen in Ihrem Kunden-Account. Der IP-Adressblock muss auf das vRack zeigen.
 - Sie haben Ihren gewünschten privaten IP-Adressbereich festgelegt.
-- Sie verfügen über einen mit vRack kompatiblen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/).
+- Sie verfügen über einen mit vRack kompatiblen [Dedicated Server](/links/bare-metal/bare-metal).
 - Sie haben ein [vRack](https://www.ovh.de/loesungen/vrack/) in Ihrem Kunden-Account eingerichtet.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
@@ -44,7 +49,7 @@ Bei den High Grade & SCALE Reihen ist der Betrieb von Additional IPs im *Bridged
 
 ### Additional IP über vRack
 
-Fügen Sie Ihren öffentlichen IP-Adressblock zum vRack hinzu. Gehen Sie hierzu in den Bereich `Bare Metal Cloud`{.action} in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) und öffnen Sie `vRack`{.action}.
+Fügen Sie Ihren öffentlichen IP-Adressblock zum vRack hinzu. Gehen Sie hierzu in den Bereich `Bare Metal Cloud`{.action} in Ihrem [OVHcloud Kundencenter](/links/manager) und öffnen Sie `vRack`{.action}.
 
 Wählen Sie in der Liste Ihr vRack aus, um die Liste der verfügbaren Dienstleistungen anzuzeigen. Klicken Sie auf den öffentlichen IP-Adressblock, den Sie zum vRack hinzufügen möchten, und klicken Sie dann auf den Button `Hinzufügen`{.action}.
 
@@ -61,7 +66,7 @@ Es existiert ein erster vSwitch, der jedoch nur das Interface `vmnic2` enthält.
 
 > [!primary]
 >
-> Überprüfen Sie, dass Ihre Konfiguration identisch ist. Sie verfügen über Informationen zu öffentlichen oder privaten MAC-Adressen und Interfaces in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) oder über die OVHcloud API.
+> Überprüfen Sie, dass Ihre Konfiguration identisch ist. Sie verfügen über Informationen zu öffentlichen oder privaten MAC-Adressen und Interfaces in Ihrem [OVHcloud Kundencenter](/links/manager) oder über die OVHcloud API.
 >
 
 #### Erläuterungen

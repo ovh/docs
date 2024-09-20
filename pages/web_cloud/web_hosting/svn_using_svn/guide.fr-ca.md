@@ -48,13 +48,13 @@ ls -la
 
 Vous devez obtenir les répertoires comme indiqué sur l'image suivante :
 
-![hosting](images/terminal-ls-la-svn.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/terminal/terminal-ls-la-svn.png){.thumbnail}
 
 ### Création des clés publiques / privées
 
 Avant de poursuivre il vous faudra créer une paire de clés SSH depuis le poste que vous utiliserez pour vous connecter au dépôt SVN.
 
-Nous vous invitons à suivre le guide [Créer des clés SSH](/pages/public_cloud/compute/public-cloud-first-steps#etape-1-creer-des-cles-ssh). Il n'est pas nécessaire de suivre l'étape [Importez votre clé SSH dans l’Espace client OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps#etape-1-creer-des-cles-ssh/#importez-votre-cle-ssh-dans-lespace-client-ovhcloud) dans ce guide.
+Nous vous invitons à suivre le guide [Créer des clés SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#create-ssh-key).
 
 ### Ajout de la clé publique sur l'hébergement
 
@@ -82,7 +82,7 @@ Suivie de la clé précédemment créée, le tout sur la même ligne.
 > Vous retrouverez également ces infrormations on consultant notre guide [Utiliser l’accès SSH de son hébergement web](/pages/web_cloud/web_hosting/ssh_on_webhosting).
 > 
 
-![hosting](images/terminal-homez-folder.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/terminal/terminal-homez-folder.png){.thumbnail}
 
 Vous pourrez récupérer le contenu du dépôt sans pour autant vous connecter directement en SSH sur la machine.
 
@@ -109,7 +109,7 @@ svn checkout svn+ssh://loginFTP@clusterXXX/depot_test
 - Créez un répertoire, faites un clic droit dessus et sélectionnez « SVN Checkout ». 
 - Entrez `svn+ssh://loginFTP@xxplan.ovh.net/depot_test` dans le champ « URL of repository » et cliquer sur `OK` :
 
-![hosting](images/checkout.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/tortoisesvn/checkout.png){.thumbnail}
 
 Il existe une très bonne documentation en anglais pour Subversion : [http://svnbook.red-bean.com/en/1.5/index.html](http://svnbook.red-bean.com/en/1.5/index.html){.external}
 
@@ -149,4 +149,4 @@ svn+ssh://login@ftp.nom-du-site.tld/home.XXX/login/svn/depot_test
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

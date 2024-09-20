@@ -1,7 +1,7 @@
 ---
 title: 'Créer vos bases de données et vos utilisateurs sur votre serveur de bases de données'
 excerpt: 'Découvrez comment créer une base de données sur votre serveur de bases de données.'
-updated: 2023-02-15
+updated: 2024-08-22
 ---
 
 ## Objectif
@@ -19,11 +19,16 @@ Une base de données (*database*, « DB » ou « BDD ») permet de stocker des �
 
 ### Créer une base de données
 
-Rendez-vous dans votre [espace client OVHcloud](/links/manager){.external}. Cliquez sur  l'onglet `Web Cloud`, puis sur `Web Cloud Databases`{.action}. Sélectionnez le nom de votre serveur de bases de données.
+Rendez-vous dans votre [espace client OVHcloud](/links/manager){.external}. Cliquez sur l'onglet `Web Cloud`, puis sur `Web Cloud Databases`{.action}. Sélectionnez le nom de votre serveur de bases de données.
 
 Dirigez-vous dans l'onglet `Bases de données` et enfin sur `Ajouter une base de données`{.action}
 
-![web-cloud-databases](images/add-database.png){.thumbnail}
+![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database.png){.thumbnail}
+
+> [!primary]
+>
+> La création de schémas PostgreSQL est actuellement indisponible sur les serveurs Web Cloud Databases.
+>
 
 Renseignez les champs en respectant les critères indiqués. Il est possible de créer directement un utilisateur en cochant la case **«Créer un utilisateur»** :
 
@@ -34,7 +39,7 @@ Renseignez les champs en respectant les critères indiqués. Il est possible de 
 
 Cliquez sur `Valider`{.action}.
 
-![web-cloud-databases](images/add-database-confirmation.png){.thumbnail}
+![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database-confirmation.png){.thumbnail}
 
 ### Créer un utilisateur
 
@@ -44,7 +49,7 @@ Rendez-vous dans votre [espace client OVHcloud](/links/manager){.external}. Cliq
 
 Dirigez-vous dans l'onglet `Utilisateurs et droits` et cliquez sur `Ajouter un utilisateur`{.action}
 
-![web-cloud-databases](images/add-user.png){.thumbnail}
+![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/add-user.png){.thumbnail}
 
 Renseignez un « nom d'utilisateur  » et un « mot de passe » puis cliquez sur `Valider`{.action}.
 
@@ -56,7 +61,7 @@ Pour gérer les droits de chaque utilisateur, rendez-vous dans votre [espace cli
 
 Cliquez sur le bouton `...`{.action} à droite de l'utilisateur concerné puis sur `Gérer les droits`{.action}.
 
-![web-cloud-databases](images/manage-rights.png){.thumbnail}
+![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/manage-rights.png){.thumbnail}
 
 Vous retrouverez dans la colonne de gauche **« base de données »**, la liste des bases de données présentes sur votre serveur de bases de données.
 
@@ -71,7 +76,7 @@ Voici la description des 3 types de droits proposés :
 > 
 > La segmentation des droits mentionnés ci-dessus est propre à OVHcloud. Ainsi un utilisateur ayant les droits `Administrateur` pourra faire du **DLL** (Data Definition Language) et du **DML** (Data Manipulation Language) alors qu'un utilisateur ayant les droits `Lecture/Ecriture` ne fera uniquement que du **DML** (Data Manipulation Language)
 
-![web-cloud-databases](images/changing-user-rights.png){.thumbnail}
+![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/changing-user-rights.png){.thumbnail}
 
 #### Supprimer une base de données
 
@@ -87,7 +92,7 @@ Rendez-vous dans votre [espace client OVHcloud](/links/manager){.external}. Cliq
 
 Pour supprimer une base de données sur votre serveur de bases de données, dirigez-vous dans l'onglet `Bases de données` puis cliquez sur le bouton `...`{.action} à droite de la base de données concernée et enfin cliquez sur `Supprimer la base`{.action} .
 
-![web-cloud-databases](images/delete-the-database.png){.thumbnail}
+![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/delete-the-database.png){.thumbnail}
 
 ## Aller plus loin
 
@@ -95,4 +100,4 @@ Pour des prestations spécialisées (référencement, développement, etc), cont
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

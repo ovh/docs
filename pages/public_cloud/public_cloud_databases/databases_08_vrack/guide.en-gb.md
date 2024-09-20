@@ -23,6 +23,7 @@ Here are some considerations to take into account when using private network:
 - Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
 - When connecting from an outside subnet, the Openstack IP gateway must be enabled in the subnet used for the Database service. The customer is responsible for any other custom network setup.
 - Subnet sizing should include considerations for service nodes, other co-located services within the same subnet, and an allocation of additional available IP addresses for maintenance purposes. Failure to adequately size subnets could result in operational challenges and the malfunctioning of services.
+- OpenStack subnets routes announcement will not be applied to your services. 
 
 ## Instructions
 
@@ -67,7 +68,7 @@ The database is now connected to the virtual network, we can use it from any com
 
 ### Step 4 - Adding a Public Cloud Instance to the vRack
 
-Follow this [guide](/pages/public_cloud/compute/public-cloud-first-steps#create-instance) to create a new Public Cloud Instance
+Follow this [guide](/pages/public_cloud/compute/public-cloud-first-steps) to create a new Public Cloud Instance
 
 > [!primary]
 >

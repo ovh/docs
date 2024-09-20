@@ -109,7 +109,7 @@ The key is never re-used and will be trashed at the destruction of the instance,
 We use the LUKS2 mode aes-cbc-essiv:sha256 with a 512-bit key.
 - **Backups:** backups are encrypted with a randomly generated key. This key is Asymetric RSA4096.
 
-For all the databases engines such as MySQL, PostgreSQL, Redis and so on, at-rest data encryption covers both active service instances as well as service backups in cloud object storage :
+For all the databases engines such as MySQL, PostgreSQL, Caching and so on, at-rest data encryption covers both active service instances as well as service backups in cloud object storage :
 
 - **Nodes:** service instances and the underlying VMs use full volume encryption using [LUKS](https://en.wikipedia.org/wiki/Linux_Unified_Key_Setup) with a randomly generated ephemeral key for each instance and each volume. 
 The key is never re-used and will be trashed at the destruction of the instance, so there’s a natural key rotation with roll-forward upgrades. 
@@ -151,12 +151,12 @@ The subscription to the Business support level is mandatory, at least to maintai
 You can  import and export your data  following recommendations provided by editors for each Database engine technology. Here are some examples :
 
 - For MongoDB, you can refer to this link : <https://www.mongodb.com/docs/compass/current/import-export/>
-- For Redis, you can refer to this link : <https://docs.redis.com/latest/rs/databases/import-export/>
+- For Caching, you can refer to this link : <https://docs.redis.com/latest/rs/databases/import-export/>
 
 ### 9.1 Erasure of customer data
 
 Once you destroy your Public Cloud project (your Database project) in the OVHcloud Control Panel, all allocated resources are relased automtically, including used encryption keys.<br>
-As the encryption keys are unique for each project, they will be deleted after service decommmissioning. Data can not be retrieved after.
+As the encryption keys are unique for each project, they will be deleted after service decommissioning. Data can not be retrieved after.
 
 ## Go further
 

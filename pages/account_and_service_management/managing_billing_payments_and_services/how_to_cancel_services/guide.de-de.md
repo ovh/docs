@@ -109,20 +109,6 @@ Um [Office 365 CSP1](https://www.ovhcloud.com/de/collaborative-tools/microsoft-3
 
 Um [Office 365 CSP2](https://www.ovhcloud.com/de/collaborative-tools/microsoft-365/) zu kündigen, folgen Sie den Anweisungen in [dieser Anleitung](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp2#ihre-abos-verwalten).
 
-#### Sharepoint <a name="sharepoint"></a>
-
-Sie können entweder einen einzelnen Account aus Ihrer Sharepoint Plattform **löschen** oder den gesamten Sharepoint Dienst kündigen.
-Wenn Sie den Dienst vollständig kündigen möchten, empfehlen wir Ihnen, zuerst jedes einzelne Konto zu löschen.
-
-- Um einen einzelnen SharePoint-Account zu löschen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie anschließend auf `Microsoft`{.action}, `Sharepoint`{.action} und auf Ihre Sharepoint Plattform.<br>
-Klicken Sie im Tab `Benutzer`{.action} auf den Button `...`{.action} rechts neben dem zu löschenden Account und dann auf `Account löschen`{.action}. Lesen Sie die Informationen und klicken Sie auf `Bestätigen`{.action}.
-
-- Um den vollständigen [Sharepoint Dienst](https://www.ovhcloud.com/de/collaborative-tools/sharepoint/) zu kündigen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie oben rechts auf Ihren Namen und dann auf den Button `Produkte und Dienstleistungen`{.action}.
-
-Klicken Sie dann auf den `...`{.action} rechts neben der zu kündigenden Sharepoint Plattform und dann auf `Meine Vertragsbindung kündigen`{.action}.
-
-Geben Sie die Gründe für Ihre Kündigungsanfrage an und klicken Sie auf `Bestätigen`{.action}.
-
 #### Sectigo SSL Zertifikat <a name="ssl_sectigo"></a>
 
 Bei den [Sectigo SSL](https://www.ovhcloud.com/de/web-hosting/options/ssl/) Angeboten ist eine Kündigung vor Ablauf nicht möglich, da diese nicht automatisch verlängert werden. Es genügt also, wenn Sie diese zum nächsten Termin nicht verlängern.

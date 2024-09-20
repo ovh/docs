@@ -1,6 +1,6 @@
 ---
-title: 'Konfiguration Ihrer E-Mail-Adresse auf Outlook für macOS'
-excerpt: 'So konfigurieren Sie Ihre MX Plan E-Mail-Adresse auf Outlook 2016 für macOS'
+title: 'MX Plan - Konfiguration Ihrer E-Mail-Adresse auf Outlook für macOS'
+excerpt: 'So konfigurieren Sie Ihre MX Plan E-Mail-Adresse auf Outlook für macOS'
 updated: 2018-05-31
 ---
 
@@ -8,7 +8,7 @@ updated: 2018-05-31
 
 E-Mail-Adressen aus dem MX Plan Angebot können auf einem kompatiblen E-Mail-Client eingerichtet werden. So können Sie Ihre bevorzugte App für den Versand und den Empfang Ihrer E-Mails verwenden.
 
-**In dieser Anleitung erfahren Sie, wie Sie Ihre MX Plan E-Mail-Adresse auf Outlook 2016 für Mac einrichten.**
+**In dieser Anleitung erfahren Sie, wie Sie Ihre MX Plan E-Mail-Adresse auf Outlook für Mac einrichten.**
 
 ## Voraussetzungen
 
@@ -18,7 +18,7 @@ E-Mail-Adressen aus dem MX Plan Angebot können auf einem kompatiblen E-Mail-Cli
 
 > [!primary]
 >
-> Sie verwenden Outlook 2016 für Windows? Die zugehörige Dokumentation finden Sie hier: [Konfiguration Ihrer E-Mail-Adresse auf Outlook 2016 für Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016){.external}.
+> Sie verwenden Outlook für Windows? Die zugehörige Dokumentation finden Sie hier: [Konfiguration Ihrer E-Mail-Adresse auf Outlook für Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016){.external}.
 >
 
 ## Beschreibung
@@ -76,8 +76,8 @@ Eine OVHcloud Webanwendung, mit der Sie über Ihren Webbrowser auf Ihre E-Mail-A
 
 ## Weiterführende Informationen
 
-[Konfiguration von E-Mail Pro auf Outlook 2016 für Mac](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016_mac)
+[Konfiguration von E-Mail Pro auf Outlook für Mac](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016_mac)
 
-[Konfiguration von Exchange auf Outlook 2016 für Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac)
+[Konfiguration von Exchange auf Outlook für Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

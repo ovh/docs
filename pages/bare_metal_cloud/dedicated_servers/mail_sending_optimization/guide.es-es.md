@@ -16,7 +16,7 @@ En general, las políticas antispam son estrictas. Para facilitar el envío de m
 
 > [!warning]
 >
->OVHcloud ofrece servicios de los cuales usted es responsable. De hecho, como no tenemos acceso administrativo a estas máquinas, no somos administradores y no podemos ofrecerle soporte. Esto significa que depende de usted administrar el software y la seguridad diariamente. Le proporcionamos esta guía para ayudarlo con tareas comunes. Sin embargo, le recomendamos ponerse en contacto con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) si tiene dificultades o dudas sobre la administración, el uso o la seguridad del servidor.
+>OVHcloud ofrece servicios de los cuales usted es responsable. De hecho, como no tenemos acceso administrativo a estas máquinas, no somos administradores y no podemos ofrecerle soporte. Esto significa que depende de usted administrar el software y la seguridad diariamente. Le proporcionamos esta guía para ayudarlo con tareas comunes. Sin embargo, le recomendamos ponerse en contacto con un [proveedor especializado](/links/partner) si tiene dificultades o dudas sobre la administración, el uso o la seguridad del servidor.
 >
 
 ## Requisitos
@@ -63,19 +63,19 @@ Para más información, consulte nuestra guía sobre la [configuración de un re
 
 Para optimizar el envío de correos electrónicos y evitar que sus correos sean bloqueado, usted puede configurar il *Reverse IP* con su nombre de dominio.
 
-Si sus servidores DNS son gestionados por OVHcloud, consulte nuestra guía sobre [la edición de una zona DNS en OVHcloud desde el área de cliente](/pages/web_cloud/domains/dns_zone_edit#acceder-a-la-gestion-de-una-zona-dns-de-ovhcloud).
+Si sus servidores DNS son gestionados por OVHcloud, consulte nuestra guía sobre [la edición de una zona DNS en OVHcloud desde el área de cliente](/pages/web_cloud/domains/dns_zone_edit).
 
 Una vez que haya editado la zona DNS del dominio, los cambios tardarán un máximo de 24 horas en propagarse.
 
 A continuación, añada el registro PTR (también conocido como registro inverso):
 
-En el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, acceda a la pestaña `Bare Metal Cloud`{.action} y abra `Network`{.action}. Haga clic en `IP`{.action}.
+En el [área de cliente de OVHcloud](/links/manager){.external}, acceda a la pestaña `Bare Metal Cloud`{.action} y abra `Network`{.action}. Haga clic en `IP`{.action}.
 
 Si desea configurar el Registro DNS inverso  en una dirección Additional IP, abra la pestaña `Additional IP`{.action}.
 
 El menú desplegable en "**Mis direcciones IP públicas y servicios asociados**" le permite filtrar sus servicios por categorías.
 
-![IP inversa](images/selectservice2022.png){.thumbnail}
+![IP inversa](images/filteripds.png){.thumbnail}
 
 Haga clic en el botón `...`{.action} a la derecha de la línea correspondiente y luego en `Cambiar el registro inverso`{.action}:
 
@@ -148,12 +148,12 @@ Usted puede utilizar un sitio web como [Mail Tester](http://www.mail-tester.com/
 
 ## Más información
 
-[Configurar un registro DKIM](/pages/web_cloud/domains/dns_zone_dkim)
+[Mejorar la seguridad del correo electrónico mediante un registro DKIM](/pages/web_cloud/domains/dns_zone_dkim)
 
-[Configurar un registro SPF](/pages/web_cloud/domains/dns_zone_spf)
+[Mejorar la seguridad del correo electrónico mediante un registro SPF](/pages/web_cloud/domains/dns_zone_spf)
 
-[Configurar un registro DMARC](/pages/web_cloud/domains/dns_zone_dmarc)
+[Mejorar la seguridad del correo electrónico mediante un registro DMARC](/pages/web_cloud/domains/dns_zone_dmarc)
 
-Para recibir soporte y configurar sus soluciones OVHcloud, contacte con nuestra [red de partners OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+Para recibir soporte y configurar sus soluciones OVHcloud, contacte con nuestra [red de partners OVHcloud](/links/partner).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>

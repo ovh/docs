@@ -77,7 +77,7 @@ Tragen Sie die angeforderten Informationen ein:
 - URL Ihrer Seite (Beispiel: `https://mywebsite.ovh`)
 - Eine Beschreibung Ihrer Seite
 
-![Cecil-Installation](images/static_website_installation_cecil01.png){.thumbnail}
+![Cecil-Installation](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil01.png){.thumbnail}
 
 Nachdem Sie diese Informationen eingegeben haben, können Sie die Website mit dem folgenden Befehl bereitstellen:
 
@@ -87,11 +87,11 @@ php cecil.phar build
 
 Wenn Sie den Inhalt des Verzeichnisses anzeigen, finden Sie dort das Verzeichnis `_site`. Dieses Verzeichnis enthält alle HTML-Dateien und *Assets*:
 
-![Cecil-Installation](images/static_website_installation_cecil02.png){.thumbnail}
+![Cecil-Installation](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil02.png){.thumbnail}
 
 Sie können nun das Ergebnis sehen, indem Sie Ihren Domainnamen aufufen:
 
-![Cecil-Installation](images/static_website_installation_cecil03.png){.thumbnail}
+![Cecil-Installation](/pages/assets/screens/other/browsers/web-pages/static_website_installation_cecil03.png){.thumbnail}
 
 #### Konfiguration des Domainnamens
 
@@ -109,7 +109,7 @@ nano config.yml
 
 Ersetzen Sie die Standardinformationen durch Ihre eigenen, und speichern Sie die Datei.
 
-![YAML-Konfigurationsdatei](images/static_website_installation_cecil04.png){.thumbnail}
+![YAML-Konfigurationsdatei](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil04.png){.thumbnail}
 
 ### Neue Seite erstellen
 
@@ -135,7 +135,7 @@ Ersetzen Sie `mypage` durch den Namen Ihrer Seite.
 
 Anschließend wird im Stammverzeichnis `/pages` die Datei `mypage.md` erstellt.
 
-![Cecil-Installation](images/static_website_installation_cecil05.png){.thumbnail}
+![Cecil-Installation](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil05.png){.thumbnail}
 
 #### Statische Dateien generieren
 
@@ -147,11 +147,11 @@ php cecil.phar build
 
 Ihre Datei befindet sich im Ordner `_site/mypage/`:
 
-![Cecil-Installation](images/static_website_installation_cecil06.png){.thumbnail}
+![Cecil-Installation](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil06.png){.thumbnail}
 
 Sie können sie auf dem Server öffnen, indem Sie die URL Ihrer Seite gefolgt von `/mypage/` eingeben:
 
-![Browserergebnis](images/static_website_installation_cecil07.png){.thumbnail}
+![Browserergebnis](/pages/assets/screens/other/browsers/web-pages/static_website_installation_cecil07.png){.thumbnail}
 
 ### Passen Sie Ihre Website-Dateien an
 
@@ -169,11 +169,11 @@ nano pages/mypage.md
 
 Ersetzen Sie `mypage` durch den Namen Ihrer eigenen Seite.
 
-![Datei in GNU nano bearbeiten](images/static_website_installation_cecil08.png){.thumbnail}
+![Datei in GNU nano bearbeiten](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil08.png){.thumbnail}
 
 Fügen Sie Zeilen mithilfe der Markdown-Syntax hinzu:
 
-![Inhalt zur Datei hinzufügen](images/static_website_installation_cecil09.png){.thumbnail}
+![Inhalt zur Datei hinzufügen](/pages/assets/screens/other/web-tools/terminal/static_website_installation_cecil09.png){.thumbnail}
 
 Löschen Sie die Dateien im Cache mit dem folgenden Befehl:
 
@@ -189,17 +189,17 @@ php cecil.phar build
 
 Kehren Sie dann zu Ihrer Seite zurück, um das Ergebnis zu sehen:
 
-![Seite aktualisiert](images/static_website_installation_cecil10.png){.thumbnail}
+![Seite aktualisiert](/pages/assets/screens/other/browsers/web-pages/static_website_installation_cecil10.png){.thumbnail}
 
 #### Arbeitsumgebung ändern
 
 Wenn Sie es vorziehen, Ihren gewohnten Code-Editor zu verwenden, melden Sie sich mit einem FTP-Client auf Ihrem Server an, um die Dateien auf Ihren Computer zu übertragen:
 
-![FileZilla Download](images/cecil-folder.png){.thumbnail}
+![FileZilla Download](/pages/assets/screens/other/web-tools/filezilla/cecil-folder.png){.thumbnail}
 
 Sie können nun die Dateien in Ihrer I.D.E. bearbeiten:
 
-![Anzeige in Visual Studio-Code](images/static_website_installation_cecil12.png){.thumbnail}
+![Anzeige in Visual Studio-Code](/pages/assets/screens/other/web-tools/vscode/static_website_installation_cecil12.png){.thumbnail}
 
 Laden Sie einfach Ihre veränderten oder neuen Dateien auf den Server und führen Sie *build* aus, um Ihre Seiten online zu stellen.
 
@@ -228,4 +228,4 @@ Die Verwendung einer Template Engine, die in der Web-Entwickler-Community weit v
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

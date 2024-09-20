@@ -37,7 +37,7 @@ Aby uzyskać dostęp do frameworków Twojego hostingu Cloud Web, zaloguj się do
 
 Wyświetli się tabela z listą frameworków obecnie dodanych do Twojego hostingu Cloud Web. Upewnij się, czy framework Node.js jest aktywowany. Jeśli tak, przejdź do etapu 2 [Powiąż Node.js ze stroną podpiętą w opcji MultiSite](./#etap-2-powiaz-nodejs-ze-strona-podpieta-w-opcji-multisite).
 
-![ghostcloudweb](images/tab-nodejs8.png){.thumbnail}
+![ghostcloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/tab-nodejs8.png){.thumbnail}
 
 Jeśli framework nie jest aktywowany, dodaj nowy (o ile umożliwia Ci to Twój pakiet) lub zmień istniejący framework.
 
@@ -56,13 +56,13 @@ W oknie, które się wyświetla uzupełnij pola informacjami z poniższego przy
 
 Po uzupełnieniu informacji, kliknij przycisk `Zatwierdź`{.action}. Jeśli potrzebujesz więcej informacji o zarządzaniu frameworkami, skorzystaj z naszego przewodnika [Zarządzanie frameworkami Cloud Web](/pages/web_cloud/web_hosting/manage-runtime){.external}.
 
-![ghostcloudweb](images/modify-a-runtime-software-application-nodejs8.png){.thumbnail}
+![ghostcloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/modify-a-runtime-software-application-nodejs8.png){.thumbnail}
 
 ### Etap 2: powiąż Node.js ze stroną podpiętą w opcji MultiSite
 
 Po aktywacji Node.js jako frameworka powiąż go ze stroną podpiętą w MultiSite. W tym celu przejdź do zakładki `MultiSite`{.action}. Tabela, która się wyświetla zawiera wszystkie nazwy domen dodanych w opcji MultiSite. 
 
-![ghostcloudweb](images/tab-nodejs8-full-disabled.png){.thumbnail}
+![ghostcloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/multisite/tab-nodejs8-full-disabled-2.png){.thumbnail}
 
 W powyższej tabeli zwróć uwagę na dwie kolumny. Upewnij się, czy silnik Node.js jest powiązany z odpowiednimi domenami i czy katalog główny jest poprawny. W razie potrzeby wykorzystaj do tego podane poniżej informacje. Jeśli tak jest, przejdź do etapu 3 [Tworzenie bazy danych MySQL](./#etap-3-tworzenie-bazy-danych-mysql).
 
@@ -86,7 +86,7 @@ W oknie, które się wyświetla, wprowadź wymagane informacje: Poniższa tabela
 
 Wybierz opcje dodatkowe, które chcesz aktywować. Po wpisaniu informacji kliknij `Dalej`{.action} i zakończ operację. Może to potrwać do godziny. Zmiana konfiguracji DNS może potrwać do 24 godzin, zanim stanie się w pełni aktywna. Jeśli potrzebujesz więcej informacji o zarządzaniu stronami podpiętymi w opcji MultiSite, skorzystaj z naszego przewodnika [Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external}.
 
-![ghostcloudweb](images/add-a-domain-or-sub-domain-step-2-ghost.png){.thumbnail}
+![ghostcloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/multisite/add-a-domain-or-sub-domain-step-2-ghost.png){.thumbnail}
 
 ### Etap 3: tworzenie bazy danych MySQL
 
@@ -96,13 +96,13 @@ Przejdź do zakładki `Bazy danych`{.action}. Jeśli zakładka nie pojawia się 
 
 - **jeśli już utworzyłeś bazę danych**: kliknij przycisk `Operacje`{.action} nad tabelą, a następnie `Stwórz bazę danych`{.action}.
 
-![ghostcloudweb](images/tab.png){.thumbnail}
+![ghostcloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/databases/tab.png){.thumbnail}
 
 W oknie, które się wyświetli, dostępny jest tylko "MySQL" w wersji "5.6".. Wybierz następnie „Przechowywana w Twojej instancji Cloud Web”, po czym kliknij `Dalej`{.action}.
 
 Wybierz następnie nazwę użytkownika i określ dla niej hasło. Teraz kliknij przycisk `Dalej`{.action}. Potwierdź utworzenie bazy danych, klikając `Zatwierdź`{.action}. Odczekaj kilka minut, aż operacja się zakończy.
 
-![ghostcloudweb](images/create-a-database-step-2.png){.thumbnail}
+![ghostcloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/databases/create-a-database-step-2.png){.thumbnail}
 
 ### Etap 4: konfiguracja zmiennych środowiskowych
 
@@ -112,7 +112,7 @@ Na potrzeby tego tutoriala utworzymy zmienne środowiskowe, do których wprowadz
 
 W tym celu przejdź do zakładki `Zmienne środowiskowe`{.action}. W tabeli wyświetlają się wcześniej utworzone zmienne. Aby dodać nową zmienną, kliknij przycisk `Operacje`{.action} nad tabelą, a następnie `Dodaj zmienną środowiskową`{.action}.
 
-![ghostcloudweb](images/add-an-environment-variable.png){.thumbnail}
+![ghostcloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/environment-variables/add-an-environment-variable.png){.thumbnail}
 
 W oknie, które się wyświetla, wprowadź wymagane informacje, po czym kliknij przycisk `Potwierdź`{.action}, aby utworzyć zmienną. Oto zmienne, które utworzyliśmy na potrzeby tego tutoriala:
 
@@ -137,7 +137,7 @@ Przygotuj najpierw informacje potrzebne do zalogowania się. Teraz przejdź do z
 
 Jeśli nie znasz hasła użytkownika SSH, kliknij przycisk `...`{.action} po prawej stronie odpowiedniego użytkownika, po czym kliknij `Zmień hasło`{.action}.
 
-![ghostcloudweb](images/change-password.png){.thumbnail}
+![ghostcloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/change-password.png){.thumbnail}
 
 Teraz, aby zalogować się przez SSH, użyj terminala. Narzędzie to jest zainstalowane domyślnie na MacOS lub Linuxie. Środowisko Windows wymaga instalacji programu, takiego jak PuTTY lub dodania funkcji „OpenSSH”. Ponieważ operacja ta jest związana ściśle z używanym przez Ciebie systemem operacyjnym, nie możemy opisać jej przebiegu w tej dokumentacji. 
 
@@ -251,7 +251,7 @@ Aby ponownie uruchomić *daemon* Node.js, wróć do [Panelu klienta](/links/mana
 
 W wyniku tej operacji aplikacja będzie dostępna za pośrednictwem nazwy domeny wybranej w konfiguracji Twojej strony podpiętej w opcji MultiSite.
 
-![ghostcloudweb](images/tab-nodejs8.png){.thumbnail}
+![ghostcloudweb](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/runtime-software-application/tab-nodejs8.png){.thumbnail}
 
 ### Etap 8: użycie HTTPS
 
@@ -280,4 +280,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

@@ -100,20 +100,6 @@ Per disattivare la tua offerta [Office 365 csp 1](https://www.ovhcloud.com/it/co
 
 Per disattivare la tua offerta [Office 365 csp 2](https://www.ovhcloud.com/it/collaborative-tools/microsoft-365/reseller/), segui questa [guida](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp2#gestisci-i-tuoi-abbonamenti).
 
-#### Sharepoint <a name="sharepoint"></a>
-
-Puoi **eliminare** un account individuale dalla tua piattaforma [Sharepoint](https://www.ovhcloud.com/it/collaborative-tools/sharepoint/) o disattivare l'intera piattaforma Sharepoint.
-Per disattivare l'intera piattaforma, ti consigliamo di iniziare con l'eliminazione preventiva di ogni singolo account.
-
-- Per eliminare un account Sharepoint individuale, accedi alla sezione `Web Cloud`{.action} dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca su `Microsoft`{.action}, `Sharepoint`{.action} e poi sulla tua piattaforma Sharepoint<br>
-Nella scheda `Utenti`{.action}, clicca sul pulsante `...`{.action} a destra dell'account da eliminare, quindi su `Disattiva SharePoint`{.action}. Leggi le informazioni e clicca su `Conferma`{.action}.
-
-- Per disattivare l'intera piattaforma Sharepoint, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo nome in alto a destra e poi sul pulsante `Prodotti e servizi`{.action}.
-
-Clicca sui tre puntini `...`{.action} in corrispondenza della piattaforma Sharepoint da disattivare e seleziona `Disattiva`{.action}.
-
-Indica i motivi della richiesta di disattivazione e clicca su `Conferma`{.action}.
-
 #### Certificato SSL Sectigo <a name="ssl_sectigo"></a>
 
 Le offerte [SSL Sectigo](https://www.ovhcloud.com/it/web-hosting/options/ssl/) non possono essere disattivate prima della scadenza, in quanto non vengono rinnovate automaticamente. Sarà quindi sufficiente non rinnovarli alla prossima scadenza.

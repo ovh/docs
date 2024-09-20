@@ -21,8 +21,8 @@ Vous pouvez cependant vous connecter à votre serveur via le [mode rescue OVHclo
 
 ## Prérequis
 
-- Disposer d'un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) ou d'un [VPS](https://www.ovhcloud.com/fr/vps/) dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
+- Disposer d'un [serveur dédié](/links/bare-metal/bare-metal) ou d'un [VPS](https://www.ovhcloud.com/fr/vps/) dans votre compte OVHcloud
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 
 ## En pratique
 
@@ -45,7 +45,7 @@ Lorsque vous avez accès à vos fichiers, ouvrez le fichier « authorized_keys �
 nano /mnt/home/USER_NAME/.ssh/authorized_keys
 ```
 
-Copiez-collez votre nouvelle clé publique (créée à l'étape 2) dans le fichier. Le contenu du fichier devrait ressembler à l'exemple suivant :
+Copiez-collez votre nouvelle clé publique (créée à l'étape 1) dans le fichier. Le contenu du fichier devrait ressembler à l'exemple suivant :
 
 ```console
 ssh-rsa 1111111111122222222222333333333333444444444555555555556666666666
@@ -56,7 +56,7 @@ EEFFFFFFFFFFFFFGGGGGGGGGGGGGhhhhhhhhhhhhhhhhhhhhhhhhhh== new@sshkey
 
 Pour des raisons de sécurité, supprimez la chaîne de clé « old » (désormais obsolète) du fichier. Enregistrez et quittez l'éditeur.
 
-Revenez au mode de démarrage « normal » et redémarrez le serveur dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Consultez le guide [« Activer et utiliser le mode rescue »](#step2) si nécessaire.
+Revenez au mode de démarrage « normal » et redémarrez le serveur dans votre [espace client OVHcloud](/links/manager). Consultez le guide [« Activer et utiliser le mode rescue »](#step2) si nécessaire.
 
 Vous avez maintenant accès au serveur avec votre nouvelle paire de clés SSH.
 
@@ -68,4 +68,4 @@ Vous avez maintenant accès au serveur avec votre nouvelle paire de clés SSH.
 
 [Utiliser le mode rescue sur un VPS](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

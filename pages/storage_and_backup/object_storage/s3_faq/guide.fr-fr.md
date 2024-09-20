@@ -1,7 +1,7 @@
 ---
 title: Object Storage - FAQ
 excerpt: "FAQ sur la solution Object Storage"
-updated: 2023-09-12
+updated: 2024-09-16
 ---
 
 ## Questions générales
@@ -58,7 +58,7 @@ L'Object Storage est facturé en fonction de l'espace de stockage utilisé, avec
 
 ### Par quels API avoir accès aux offres de stockage ?
 
-Nous avons conçu les classes de stockage S3 pour qu’il soit **compatible avec l’API S3**, considérée comme une référence dans le marché du stockage d’objets. Vous pouvez donc utiliser Object Storage avec la plupart des outils de gestion de données via les endpoints définis par région et par classe de stockage.
+Nous avons conçu les classes de stockage S3 pour qu’il soit **compatible avec l’API S3**, considérée comme une référence dans le marché du stockage d’objets. Vous pouvez donc utiliser Object Storage avec la plupart des outils de gestion de données via les endpoints définis par région.
 
 Munissez-vous de vos clés d'accès S3 et accédez en ligne de commande aux différentes classes de stockage par commandes AWS-CLI, s3cmd ou autres.
 
@@ -158,6 +158,8 @@ Vous pouvez choisir de synchroniser vos données d'une région à une autre en u
 - [Utiliser S3 Object Storage avec rClone](/pages/storage_and_backup/object_storage/s3_rclone)
 - [Utiliser Object Storage Swift avec rClone](/pages/storage_and_backup/object_storage/pcs_sync_rclone_object_storage)
 
+Vous pouvez également utiliser la fonction de réplication asynchrone disponible sur les buckets S3 object storage. Suivez [ce guide](/pages/storage_and_backup/object_storage/s3_asynchronous_replication) pour obtenir plus de détails sur cette fonctionnalité.
+
 ### Est-il possible de gérer les cycles de vie de la donnée ?
 
 Les options de cycle de vie ne sont pas encore disponibles. Nous vous invitons à suivre notre [roadmap GitHub publique](https://github.com/orgs/ovh/projects/16/?card_filter_query=label%3A%22object+storage%22) pour être informé de leur sortie.
@@ -167,6 +169,8 @@ Les options de cycle de vie ne sont pas encore disponibles. Nous vous invitons �
 ### Comment uploader des volumes importants de données ?
 
 Pour téléverser de gros volumes de données, il est recommandé de paralléliser les connexions (*multithread upload*).Plusieurs requêtes sont en cours en parallèle et la bande passante est multipliée (1 Gbps par connexion). Vous trouverez plus de détail sur la méthodologie dans notre guide « [Optimisez l’envoi de vos fichiers vers S3 Object Storage](/pages/storage_and_backup/object_storage/s3_optimise_the_sending_of_your_files) ».
+
+Plus globalement, il existe différentes méthodes vous permettant de maximiser vos performances d'upload et de download sur notre Object Storage. Découvrez ces optimisations dans le guide suivant : [Object Storage - Optimiser les performances](/pages/storage_and_backup/object_storage/s3_performance_optimization).
 
 ### Quelle est la différence de performance entre les classes de stockage High Performance et Standard Performance?
 

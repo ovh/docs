@@ -33,7 +33,7 @@ When the disk usage increases even more and reaches a critical level (depending 
 
 Different engines react in different ways, thus Public Cloud Databases services react differently when facing disk full conditions:
 
-- `Redis`, `Kafka MirrorMaker`, `Grafana`, `M3 Aggregator` and `Kafka Connect` do not store any user data on disk. Thus they will not fill up the underlying disk storage.
+- `Caching`, `Kafka MirrorMaker`, `Grafana`, `M3 Aggregator` and `Kafka Connect` do not store any user data on disk. Thus they will not fill up the underlying disk storage.
 - `Kafka`, `OpenSearch`, `Cassandra` and `M3DB` turn to read-only.
 - `MySQL` and `PostgreSQL` turn to read-only with a way to temporarily revert to read-write.
 - `MongoDB` forbids writes but allows deletes.

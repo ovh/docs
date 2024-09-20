@@ -54,7 +54,7 @@ Siga los siguientes pasos para registrar una forma de pago. En el primer paso, p
 
 > [!warning]
 >
-> - El uso de la domiciliación bancaria solo es posible para las cuentas de clientes de Francia, Alemania, España, Irlanda, Italia y los Países Bajos.
+> - El uso de la domiciliación bancaria solo es posible para las cuentas de clientes de Francia, Bélgica, Alemania, España, Irlanda, Italia y los Países Bajos.
 >
 > - El propietario de la cuenta bancaria debe ser idéntico al propietario de la cuenta de OVHcloud.
 

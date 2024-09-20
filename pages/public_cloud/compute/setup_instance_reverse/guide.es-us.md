@@ -1,7 +1,7 @@
 ---
 title: "Configurar el registro DNS inverso de una instancia de Public Cloud"
 excerpt: Cómo activar la resolución inversa DNS
-updated: 2021-11-12
+updated: 2024-06-10
 ---
 
 > [!primary]
@@ -20,21 +20,23 @@ La configuración de la resolución **inversa DNS** de una instancia resulta esp
 
 - Tener una [instancia de Public Cloud](https://www.ovhcloud.com/es/public-cloud/) en su cuenta de OVHcloud.
 - Un dominio con un registro `A` que apunta a la instancia.
-- Tienes acceso a tu [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Tienes acceso a tu [Panel de configuración de OVHcloud](/links/manager).
 
 ## Procedimiento
 
-Conéctese al [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Bare Metal Cloud`{.action} y haga clic en `IP`{.action} en el menú de la izquierda.
+Conéctese al [Panel de configuración de OVHcloud](/links/manager), acceda a la sección `Bare Metal Cloud`{.action} y haga clic en `IP`{.action} en el menú de la izquierda.
 
-En la tabla de esta página se enumeran los servicios compatibles. Puede filtrar el ID de su proyecto de Public Cloud utilizando el menú desplegable **Service**.
+El menú desplegable **Mis direcciones IP públicas y servicios asociados** le permite filtrar sus servicios por categoría.
 
-![Registro inverso](images/reversecp01.png){.thumbnail}
+![Reverse IP](images/filterippci.png){.thumbnail}
 
 Haga clic en `...`{.action} en la línea de la dirección IP correspondiente y seleccione `Cambiar el registro inverso`{.action}.
 
-![Registro inverso](images/reversecp02.png){.thumbnail}
+![Registro inverso](images/modifyreversepc.png){.thumbnail}
 
 En la nueva ventana, introduzca el registro inverso y haga clic en `Confirmar`{.action}.
+
+![Registro inverso](images/enterreverse.png){.thumbnail}
 
 También puede editar el registro inverso directamente a través del icono de la columna **inversa** de la tabla.
 
@@ -47,4 +49,4 @@ Si la modificación no funciona como se esperaba, compruebe que el registro `A` 
 
 [Crear una primera instancia de Public Cloud y conectarse a ella](/pages/public_cloud/compute/public-cloud-first-steps)
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

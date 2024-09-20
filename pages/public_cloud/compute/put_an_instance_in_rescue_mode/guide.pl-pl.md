@@ -19,7 +19,7 @@ W takiej sytuacji można ponownie skonfigurować instancję lub odzyskać dane p
 ## Wymagania początkowe
 
 - [Instancja Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external} utworzona na koncie OVHcloud
-- dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
+- dostęp do [Panelu klienta OVHcloud](/links/manager){.external}
 
 ## W praktyce> 
 
@@ -29,7 +29,7 @@ W takiej sytuacji można ponownie skonfigurować instancję lub odzyskać dane p
 
 ### Aktywacja trybu ratunkowego
 
-Najpierw zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i kliknij menu `Public Cloud`{.action}.
+Najpierw zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external} i kliknij menu `Public Cloud`{.action}.
 
 Następnie wybierz projekt Public Cloud z menu bocznego po lewej stronie ekranu i przejdź do pozycji Instancje.
 
@@ -41,9 +41,13 @@ Zostanie wyświetlone okno dialogowe “Restart w trybie ratunkowym”. Kliknij 
 
 ![control panel](images/rescue2.png){.thumbnail}
 
-Po ponownym uruchomieniu instancji w trybie Rescue wyświetli się okno informacyjne zawierające dostępne metody dostępu. Twoje **hasło do trybu Rescue** tymczasowego będzie wyświetlane tylko w konsoli VNC. Kliknij Twoją instancję w tabeli, następnie przejdź do zakładki `Konsola VNC`{.action}, aby pobrać instancję.
+Po ponownym uruchomieniu instancji w trybie Rescue wyświetli się okno informacyjne zawierające dostępne metody dostępu.
 
 ![control panel](images/rescuedata.png){.thumbnail}
+
+Twoje **hasło do trybu Rescue** tymczasowego będzie wyświetlane tylko w konsoli VNC. Kliknij Twoją instancję w tabeli, następnie przejdź do zakładki `Konsola VNC`{.action}, aby pobrać instancję.
+
+<table><tbody><tr><td><img alt="VNC console" class="thumbnail" src="/images/vncconsole.png" loading="lazy"></td><td><img alt="VNC rescue" class="thumbnail" src="/images/vncrescue.png" loading="lazy"></td></tr></tbody></table>
 
 ### Dostęp do danych
 

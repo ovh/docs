@@ -1,7 +1,7 @@
 ---
 title: "Creare un database su un hosting Web"
 excerpt: "Questa guida ti mostra come creare un database sul tuo hosting Web OVHcloud"
-updated: 2024-05-17
+updated: 2024-09-05
 ---
 
 > [!primary]
@@ -28,7 +28,7 @@ Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca sulla sezione `We
 
 La tabella di questa sezione contiene tutti i database creati con il tuo hosting Web.
 
-![databasecreation](images/tab.png){.thumbnail}
+![databasecreation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
 
 Nella tabella, i database possono avere diversi tipi:
 
@@ -52,19 +52,24 @@ Per creare un nuovo database è possibile procedere in due modi:
 
 Nella nuova finestra, seleziona le informazioni richieste:
 
-![database-creation-step1](images/create-a-database-step-1.png){.thumbnail}
+![database-creation-step1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-step-1.png){.thumbnail}
 
 |Informazione|Descrizione|  
 |---|---| 
 |**Seleziona il tipo di database**|Scegli la dimensione del database. Questa dimensione si riferisce allo spazio di cui dispone il tuo database per l'archiviazione dei dati.|
-|**Seleziona il motore del database da aggiungere**|Scegli il motore che il database deve utilizzare. I database inclusi nella [soluzione di hosting Web OVHcloud](/links/web/hosting) sono disponibili esclusivamente con il motore MySQL.|
+|**Seleziona il motore del database da aggiungere**|Scegli il motore che il database deve utilizzare. Al momento i database inclusi nella [soluzione di hosting Web OVHcloud](/links/web/hosting) sono disponibili esclusivamente con il motore MySQL.|
 |**Seleziona la versione del database da aggiungere**|Scegli la versione utilizzata dal motore del database. Assicurati che il sito Web sia compatibile con la versione scelta.|
+
+> [!primary]
+>
+> L'aggiornamento della versione del motore di un database già creato non è al momento disponibile.
+>
 
 Clicca su `Continua`{.action}.
 
 Si apre una nuova finestra:
 
-![database-creation-step2](images/create-a-database-step-2.png){.thumbnail}
+![database-creation-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-step-2.png){.thumbnail}
 
 |Informazione|Descrizione|
 |---|---| 
@@ -92,7 +97,7 @@ Si apre una nuova finestra:
 
 Inserisci le informazioni richieste e clicca su `Continua`{.action}.
 
-![database-creation-step3](images/create-a-database-step-3.png){.thumbnail}
+![database-creation-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-step-3.png){.thumbnail}
 
 Verificare che tutte le informazioni visualizzate nel riepilogo siano corrette. In questo caso, clicca su `Conferma`{.action} per avviare la creazione del database.
 
@@ -148,7 +153,7 @@ In base al software utilizzato, è possibile che questa connessione richieda una
 
 OVHcloud fornisce uno strumento online per la gestione dei database, "phpMyAdmin". Per trovare il link di accesso a questa applicazione, accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e clicca sulla sezione `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna a sinistra, scegli l’offerta di hosting su cui vuoi recuperare le informazioni di connessione al tuo database e poi clicca sulla scheda `Database`{.action}. Nella tabella che appare, clicca sul pulsante `...`{.action} a destra del database interessato e poi su `Accedi a phpMyAdmin`{.action} nel menu a tendina.
 
-![phpMyAdmin Go Login](images/pma-interface-login.png){.thumbnail}
+![phpMyAdmin Go Login](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
 
 Inserisci le informazioni di accesso al database e clicca su `Connetti`{.action}.
 
@@ -192,4 +197,4 @@ Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [p
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

@@ -47,7 +47,7 @@ Oznacza to, że przed rozwiązaniem umowy musisz być **pewny**:
 
 Procedura rezygnacji jest taka sama w przypadku większości usług OVHcloud.
 
-Istnieją jednak **przypadki szczególne**, które są opisane [poniżej] (#specific-cases) w tym przewodniku.
+Istnieją jednak **przypadki szczególne**, które są opisane [poniżej](#specific-cases) w tym przewodniku.
 
 ### Jak zrezygnować z abonamentu? <a name="terminate"></a>
 
@@ -100,27 +100,13 @@ Aby zrezygnować z usługi [Office 365](https://www.ovhcloud.com/pl/collaborativ
 
 Aby zrezygnować z usługi [Office 365 csp](https://www.ovhcloud.com/pl/collaborative-tools/microsoft-365/) 22, postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp2#zarzadzanie-subskrypcjami).
 
-#### Sharepoint <a name="sharepoint"></a>
-
-Możesz albo **usunąć** indywidualne konto z Twojej usługi [Sharepoint](https://www.ovhcloud.com/pl/collaborative-tools/sharepoint/), albo zrezygnować z całej usługi Sharepoint.
-Jeśli chcesz zrezygnować z usługi, zalecamy usunięcie każdego konta z osobna.
-
-- Aby usunąć indywidualne konto Sharepoint, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) w części `Web Cloud`{.action}. Następnie kliknij `Microsoft`{.action}, `Sharepoint`{.action}, następnie na platformę Sharepoint.<br>
-W karcie `Użytkownicy`{.action} kliknij przycisk `...`{.action} po prawej stronie konta do usunięcia, a następnie kliknij `Usuń konto`{.action}. Zapoznaj się z informacjami i kliknij na 'Zatwierdź`{.action}.
-
-- Aby zrezygnować z usługi Sharepoint, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij swoją nazwę w prawym górnym rogu, a następnie przycisk `Produkty i usługi`{.action}.
-
-Następnie kliknij przycisk po prawej stronie `...`{.action} Sharepoint, który chcesz zrezygnować, a następnie `Rezygnacja z umowy terminowej`{.action}.
-
-Podaj przyczynę rezygnacji, a następnie kliknij `Zatwierdź`{.action}.
-
 #### Certyfikat SSL Sectigo <a name="ssl_sectigo"></a>
 
 Nie można przed terminem rozwiązania umowy dla ofert [SSL sectigo](https://www.ovhcloud.com/pl/web-hosting/options/ssl/), ponieważ nie są one odnawiane automatycznie. Dlatego wystarczy, że nie odnawiacie ich w najbliższym terminie.
 
 #### SMS <a name="sms"></a>
 
-Nie istnieje procedura rozwiązania umowy w odniesieniu do [ofert SMS] (https://www.ovhtelecom.fr/sms/). Konto SMS nie generuje miesięcznej subskrypcji ani opłat. Kredyty SMS są ważne bezterminowo.
+Nie istnieje procedura rozwiązania umowy w odniesieniu do [ofert SMS](https://www.ovhcloud.com/pl/sms/). Konto SMS nie generuje miesięcznej subskrypcji ani opłat. Kredyty SMS są ważne bezterminowo.
 
 Jeśli chcesz usunąć konto SMS, otwierając zgłoszenie w [Centrum pomocy](https://help.ovhcloud.com/csm?id=csm_get_help).
 

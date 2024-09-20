@@ -16,7 +16,7 @@ Ces dernières vous permettent d'émettre et recevoir des appels. Elles peuvent 
 - Disposer d'une ou plusieurs ligne(s) non activée(s) dans ce pack.
 - Être connecté à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Télécom` :
 
-![espace client Telecom Accès Internet](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/telecom/tpl-telecom-01-fr-internet.png){.thumbnail}
+![espace client Telecom Accès Internet](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-01-fr-internet.png){.thumbnail}
 
 ## En pratique
 

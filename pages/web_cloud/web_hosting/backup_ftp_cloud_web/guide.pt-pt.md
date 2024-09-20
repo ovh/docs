@@ -53,21 +53,21 @@ Para gerar o link de recuperação, aceda à [Área de Cliente OVHcloud](/links/
 
 Selecione o separador `FTP - SSH`{.action} e clique no botão `Gerar um backup`{.action} à direita.
 
-![backupftpcw](images/generate-a-backup.png){.thumbnail}
+![backupftpcw](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup.png){.thumbnail}
 
 Na nova janela, selecione um dos backups disponíveis e clique em `Seguinte`{.action}.
 
-![backupftpcw](images/generate-a-backup-step-1.png){.thumbnail}
+![backupftpcw](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup-step-1.png){.thumbnail}
 
 Aparecerá uma segunda janela que lhe indicará que o link de recuperação do ficheiro de backup lhe será enviado por e-mail e que nenhum restauro automático no seu alojamento Cloud Web será feito pela OVHcloud.
 
-![backupftpcw](images/generate-a-backup-step-2.png){.thumbnail}
+![backupftpcw](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/generate-a-backup-step-2.png){.thumbnail}
 
 Clique em `Confirmar`{.action} para validar o seu pedido.
 
 Se a geração do backup está bem lançada, na [Área de Cliente OVHcloud](/links/manager){.external}, aparecerá a seguinte mensagem:
 
-![backupftpcw](images/message-backup-progress.png){.thumbnail}
+![backupftpcw](/pages/assets/screens/control_panel/product-selection/web-cloud/cloud-web/ftp-ssh/message-backup-progress.png){.thumbnail}
 
 A geração do backup demora entre 10 e 15 minutos para ser realizado.
 
@@ -76,7 +76,7 @@ A geração do backup demora entre 10 e 15 minutos para ser realizado.
 Uma vez finalizada a geração do backup, receberá um e-mail no endereço de e-mail associado ao identificador administrador do seu alojamento Cloud Web.<br>
 Este e-mail contém um link de download **válido para 9 dias** a contar a partir da receção do e-mail:
 
-![backupftpcw](images/backup-information.png){.thumbnail}
+![backupftpcw](/pages/assets/screens/email-sending-to-customer/cloud-web/backup-information.png){.thumbnail}
 
 O ficheiro assim descarregado está no formato *.tar.gz*.
 
@@ -99,4 +99,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>
+Fale com nossa [comunidade de utilizadores](/links/community).

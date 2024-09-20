@@ -1,7 +1,7 @@
 ---
 title: MongoDB - Transitioning to the new offerings & automated migration
 excerpt: Learn about the transition from MongoDB's current offerings to the new plans and understand the automated migration process to effectively plan your transition
-updated: 2024-04-03
+updated: 2024-07-09
 ---
 
 ## Objective
@@ -38,16 +38,16 @@ This section describes the technical changes and their impacts on the service pr
 
 - **For Essential Services:** They will be migrated to the Production plan, transitioning from a single node cluster to a three-member replica set. The DB1-X service flavor will be converted to DB2-X, with the same vCore and memory but reduced base storage. Importantly, the underlying technology and performance characteristics will not change.
     - **First scenario:** The average price increases by a factor of 2.88.
-    - **Second scenario:** The average price increases by a factor of 4.32.
+    - **Second scenario:** The average price increases by a factor of 3.58.
 
 - **For Business Services:** These services, already configured as a three-member replica set, will lose the capability to scale up the number of nodes in the Production plan. The switch from DB1-X to DB2-X flavor will also maintain the same vCores and memory, with reduced base storage, while the underlying technology and performance characteristics remain unchanged.
     - **First scenario:** The average price decreases by a factor of 0.96.
-    - **Second scenario:** The average price increases by a factor of 1.44.
+    - **Second scenario:** The average price increases by a factor of 1.19.
 
 
 - **For Enterprise Services:** Enterprise services will transition to the Advanced plan, with broad price reductions. The service flavor conversion from DB1-X to DB2-X will retain the same amount of vCore and memory but offer less base storage, without altering the underlying technology or affecting performance.
     - **First scenario:** The average price decreases by a factor of 0.87.
-    - **Second scenario:** The average price increases by a factor of 1.07.
+    - **Second scenario:** The average price increases by a factor of 0.97.
 
 **Please note that the service can be terminated at any time without fees if these changes do not meet your needs.**
 

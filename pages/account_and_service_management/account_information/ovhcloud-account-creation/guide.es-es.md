@@ -1,7 +1,7 @@
 ---
 title: 'Crear una cuenta de OVHcloud'
 excerpt: 'Cómo crear una cuenta de OVHcloud'
-updated: 2023-05-23
+updated: 2024-09-09
 ---
 
 > [!primary]
@@ -23,7 +23,7 @@ Es posible crear una cuenta antes o durante el pedido de su primer servicio de O
 
 ### ¿Cómo crear una cuenta de OVHcloud?
 
-Para crear una cuenta de OVHcloud, acceda a [esta página](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y complete el formulario online.
+Para crear una cuenta de OVHcloud, acceda a [esta página](/links/manager)y complete el formulario online.
 
 ![formulario creación cuenta](images/account-creation.png){.thumbnail}
 
@@ -51,9 +51,10 @@ Una vez que haya introducido y validado el código, complete el resto del formul
 
 Su cuenta creada, se conectará automáticamente a la página de inicio de su cuenta, denominada "Panel de control".
 
-### ¿Cuál es mi ID de cliente?
+### ¿Cuál es mi ID de cliente? <a name="nic-handle"></a>
 
-Cada cuenta de cliente de OVHcloud está asociada a un ID único, también llamado *NIC-handle*.
+Cada cuenta de cliente de OVHcloud está asociada a un ID único, también llamado *NIC-handle*.<br>
+Para la mayoría de las cuentas fuera de Europa, a menudo se sustituye por la dirección de correo electrónico principal indicada en la cuenta de OVHcloud.
 
 Suele componerse de dos letras seguidas de números. Por ejemplo, **xx11111-ovh**.
 
@@ -82,4 +83,4 @@ Consulte también nuestras guías para:
 
 [Proteger su cuenta de OVHcloud con la doble autenticación](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa)
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

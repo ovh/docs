@@ -1,12 +1,12 @@
 ---
-title: Migrating your website and emails to OVHcloud
-excerpt: Find out how to migrate your website, emails and domain name to OVHcloud without any service interruptions
-updated: 2023-11-15
+title: "Migrating your website and associated services to OVHcloud"
+excerpt: "Find out how to migrate your website, domain name, database and emails to OVHcloud without any service interruptions"
+updated: 2024-06-24
 ---
 
 ## Objective
 
-This guide will outline the steps you need to take to migrate your entire website, domain name and email addresses to OVHcloud, without any service interruptions.
+This guide will outline the steps you need to take to migrate your entire website, folders, domain name, database, and email addresses to OVHcloud, without any service interruptions.
 
 > [!warning]
 >
@@ -31,7 +31,7 @@ This guide will outline the steps you need to take to migrate your entire websit
 > The instructions in this guide reference several products from the Web Cloud universe. We recommend reading all the steps below **before** you begin migrating your services.
 >
 
-To migrate your website and emails to OVHcloud **without any service interruptions** you will need to follow a 10-step procedure:
+Migrating your entire website and emails to OVHcloud **without any service interruptions** requires a precise 10-step procedure:
 
 - [Step 1: Order the hosting plan and email accounts from OVHcloud](#step1)
 - [Step 2: Create and preconfigure a DNS zone for your domain name at OVHcloud](#step2)
@@ -53,15 +53,19 @@ This guide is designed to minimise the duration of such an interruption.
 
 ### Step 1: Order the hosting plan and email addresses from OVHcloud <a name="step1"></a>
 
-Several OVHcloud web hosting plans contain an MX Plan email solution. With this email offer, you can create email accounts with a maximum storage space of 5 GB each. Choose from the following hosting plans, considering the PHP version, SQL version, number of email accounts you need, and the size of your website to migrate:
+Several [OVHcloud web hosting plans](/links/web/hosting) contain an [MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities) email solution. With this email offer, you can create email accounts with a maximum storage space of 5 GB each. Choose from the following hosting plans, considering the PHP version, SQL version, number of email accounts you need, and the size of your website to migrate:
 
 - Hosting [Personal](/links/web/hosting-personal-offer) with **10 MX Plan email accounts**
 - Hosting [Pro](/links/web/hosting-professional-offer) with **100 MX Plan email accounts** (for business)
 - Hosting [Performance](/links/web/hosting-performance-offer) with **1000 MX Plan email accounts** (scalable dedicated resources)
 
-Once you have chosen your hosting plan, click the `Order`{.action} button on the commercial pages above. Follow the steps for the **order without requesting the transfer of your domain name**.
+Once you have chosen your hosting plan, click the `Order`{.action} button on the commercial pages above. Follow the steps for the **order without requesting the transfer of your domain name**. (This action will be performed in step 10 of this guide.)
 
-As an OVHcloud customer you can also place an order from your [OVHcloud Control Panel](/links/manager). Once you have logged in, click on the `Web Cloud`{.action} section, then click on the `Order`{.action} button in the top left-hand corner and choose `Hosting plans`{.action}. Continue with the steps for the **order process without requesting the transfer of your domain name**.
+You can also place the order from your [OVHcloud Control Panel](/links/manager). Once you have logged in, follow the instructions below:
+
+- Go to the `Web Cloud`{.action} tab.
+- In the top left of the interface, click `Order`{.action}, then `Hosting plans`{.action}.
+- Follow the steps in the **order without requesting the transfer of your domain name** (this action will be carried out in step 10 of this guide).
 
 Once the payment has been confirmed, the hosting plan installation will begin. An email will be sent to your contact email address. It will contain the credentials for accessing your web hosting plan’s FTP (File Transfer Protocol) storage space.
 
@@ -72,25 +76,33 @@ Once the payment has been confirmed, the hosting plan installation will begin. A
 
 ### Step 2: Create and preconfigure a DNS zone for your domain name at OVHcloud <a name="step2"></a>
 
+If your domain is hosted by another service provider and you would like to transfer it to OVHcloud, you must first create and preconfigure a DNS zone before initiating the transfer, in order to avoid any service interruptions.
+
 After your hosting service is installed, log in to your [OVHcloud Control Panel](/links/manager) to create a DNS zone for your domain name. Do not use "**www**" when doing this. You can refer to our guide on [Creating a DNS zone at OVHcloud](/pages/web_cloud/domains/dns_zone_create).
 
-Once you have created a DNS zone, you can start configuring it with the help of our guide: [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit). Add the following records if they do not exist:
+Once you have created a DNS zone, you can manage it using our guide on [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit).
 
-- Your domain name without "www" as record type "MX", to the target: `mx1.mail.ovh.net.`
-- Your domain name without "www" as record type "MX", to the target: `mx2.mail.ovh.net.`
-- Your domain name without "www" as record type "MX", to the target: `mx3.mail.ovh.net.`
-- Your domain name without "www" as record type "A", with the IP address of your OVHcloud hosting as target. To retrieve the correct IP address, please refer to our guide listing the [IP addresses of the shared hosting clusters](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
-- Your domain name **with** "www" as record type "CNAME", with your domain name (without "www") as target.
+If they are not present, enter the following information:
 
-**Example**: For the domain name "domain.tld", the result should be displayed as in the following image:
+**Example** (for the domain name "domain.tld"):
 
-![hosting](images/dashboard-mx-a-cname.png){.thumbnail}
+|Domain|Record Type|Priority|Target|
+|---|---|---|---|
+|domain.tld.|MX|1|mx1.mail.ovh.ca.|
+|domain.tld.|MX|5|mx2.mail.ovh.ca.|
+|domain.tld.|MX|100|mx3.mail.ovh.ca.|
+|www.domain.tld.|CNAME|-|domain.tld.|
+|domain.tld.|A|-|`target_IP_address`|
+
+To retrieve the correct target IP address for your OVHcloud hosting plan, please refer to our guide listing the [IP addresses of the different shared hosting clusters](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
+
+**Example**: For the domain name "domain.tld", the domain name records should look as follows:
+
+![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-mx-a-cname-ca.png){.thumbnail}
 
 > [!success]
 >
-> Note the two target values of the two NS entries at the top of your zone. They will be used in [step 9](#step9) of this guide.
->
-> These values correspond to the DNS servers hosting the DNS zone for your domain name.
+> Note the two target values with the record type "NS", `dnsXX.ovh.ca` and `nsXX.ovh.ca`. They correspond to the DNS servers associated with this DNS zone for your domain name. They will be used in [step 9](#step9) of this guide.
 >
 
 ### Step 3: Retrieve a full backup of your website <a name="step3"></a>
@@ -132,7 +144,7 @@ Declare and authorise your external domain name on your OVHcloud web hosting pla
 
 **Example** for the "domain.tld" domain name:
 
-![hosting](images/dashboard-a-txt-cname.png){.thumbnail}
+![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dashboard-a-txt-cname-ca.png){.thumbnail}
 
 **The modification of DNS records of the type "A", "CNAME" and "TXT" must be done at your domain name’s current DNS provider and will take between 4 and 24 hours to propagate fully.**
 
@@ -151,22 +163,22 @@ This will result in you receiving new emails on your new OVHcloud email addresse
 
 Replace your current "MX" records with the following three records at your DNS provider (without keeping any of the old entries):
 
-- Your domain name without "www" as record type "MX", to the target: `mx1.mail.ovh.net.`
-- Your domain name without "www" as record type "MX", to the target: `mx2.mail.ovh.net.`
-- Your domain name without "www" as record type "MX", to the target: `mx3.mail.ovh.net.`
+- Your domain name without "www" as record type "MX", to the target: `mx1.mail.ovh.ca.`
+- Your domain name without "www" as record type "MX", to the target: `mx2.mail.ovh.ca.`
+- Your domain name without "www" as record type "MX", to the target: `mx3.mail.ovh.ca.`
 
 This change takes place at your current DNS provider. You will need to allow between **4 and 24 hours propagation time** for the changes to become active.<br>
 This means that during the DNS propagation, less and less emails will be received by the old email accounts, and emails will start to arrive at your new OVHcloud email accounts.<br>
 Once the propagation is complete, all new emails will be received by your OVHcloud email accounts.
 
-We recommend that you change the MX records **before** migrating the content of your email accounts.
+WWe recommend changing the MX records **before** migrating the content of your old email accounts.
 This method avoids you having to redo a migration for the few emails received on your old email accounts during DNS propagation.
 
 ### Step 7: Transfer the content of your old email accounts to your new accounts with OVHcloud <a name="step7"></a>
 
 After the DNS propagation, all your new emails are received by your new email accounts. However, your old emails are still stored on your previous email server.
 
-To migrate the content of your old accounts, you have two options.
+There are two ways of migrating the content of your old email accounts.
 
 **Option 1**: Use our [OVH Mail Migrator (OMM)](https://omm.ovh.net/){.external} tool, which allows you to copy the content of email accounts at your old service provider to your new OVHcloud accounts. You can refer to our guide [Migrating email accounts using OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).
 
@@ -199,11 +211,11 @@ Once you have migrated your email accounts to OVHcloud, reconfigure your email s
 
 - You can find all of our configuration guides in the `Exchange configuration on computer` and `Exchange configuration on smartphone` sections of [our Exchange documentation](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
 
-## Step 9: Replace your domain name’s active DNS servers with those of OVHcloud <a name="step9"></a>
+### Step 9: Replace your domain name’s active DNS servers with those of OVHcloud <a name="step9"></a>
 
-The DNS zone preconfigured in [step 2](#step2) has not yet been applied to your domain name.
+The DNS zone pre-configured in [step 2](#step2) has not yet been applied to your domain name. Currently, your domain name still uses your original provider’s DNS servers.
 
-Replace your domain name’s current DNS servers with the two DNS servers declared in the OVHcloud DNS zone.
+Replace the current DNS servers (of the original registrar) with the two DNS servers declared in the OVHcloud DNS zone (format `dnsXX.ovh.ca` and `nsXX.ovh.ca`). You can do this in the management interface of the original registrar.
 
 > [!warning]
 >
@@ -212,12 +224,17 @@ Replace your domain name’s current DNS servers with the two DNS servers declar
 
 ### Step 10: Transfer your domain name to OVHcloud <a name="step10"></a>
 
-Once the DNS propagation is complete, verify that your website works and that emails are being sent and received by your email addresses.
+Once the DNS propagation is complete, check that your entire website is functional. Browse your website to check that all pages are displaying correctly and that no 404 errors are returned. Also check the sending and receiving of emails from your email addresses.
+
 If everything is in order, unlock your domain name and retrieve its "transfer code", "EPP" or "AuthCode" from your current domain name registrar.
 
 Then transfer your domain name using our guide on [transferring a domain name to OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain).
 
 Once you have transferred your data and services, you can cancel your old services with your service provider(s).
+
+### Conclusion
+
+After following the ten steps in order, your entire website is now migrated to OVHcloud, all without any service interruptions.
 
 ## Go further <a name="go-further"></a>
 
@@ -235,4 +252,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

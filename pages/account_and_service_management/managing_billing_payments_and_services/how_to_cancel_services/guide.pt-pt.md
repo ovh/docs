@@ -100,20 +100,6 @@ Para rescindir a sua oferta [Office 365 csp 1](https://www.ovhcloud.com/pt/colla
 
 Para rescindir a sua oferta [Office 365 csp 2](https://www.ovhcloud.com/pt/collaborative-tools/microsoft-365/reseller/), siga as instruções deste [guia](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp2#gerir-as-suas-subscricoes).
 
-#### Sharepoint <a name="sharepoint"></a>
-
-Pode **eliminar** uma conta individual da sua plataforma [SharePoint](https://www.ovhcloud.com/pt/collaborative-tools/sharepoint/) ou cancelar a plataforma SharePoint completa.
-Se pretender rescindir toda a plataforma, recomendamos que comece pela eliminação prévia de cada conta individual.
-
-- Para eliminar uma conta Sharepoint individual, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) na secção `Web Cloud`{.action}. Clique sucessivamente em `Microsoft`{.action}, `Sharepoint`{.action}, e depois na sua plataforma Sharepoint.<br>
-No separador `Utilizadores`{.action}, clique no botão `...`{.action} à direita da conta a eliminar e depois `Desativar o SharePoint`{.action}. Leia as informações e clique em `Validar`{.action}.
-
-- Para rescindir o conjunto da plataforma Sharepoint, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome (canto superior direito) e, a seguir, no botão `Produtos e serviços`{.action}.
-
-A seguir, clique no botão `...`{.action} à direita da plataforma Sharepoint a rescindir e, a seguir, em `Rescindir o meu compromisso`{.action}.
-
-Indique as razões do seu pedido de rescisão e clique em `Validar`{.action}.
-
 #### Certificado SSL Sectigo <a name="ssl_sectigo"></a>
 
 Não é possível rescindir as ofertas [SSL sectigo](https://www.ovhcloud.com/pt/web-hosting/options/ssl/) antes do fim do prazo, uma vez que não são renovadas automaticamente. Basta, portanto, não os renovar no próximo prazo.

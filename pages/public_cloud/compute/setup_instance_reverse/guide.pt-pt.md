@@ -1,7 +1,7 @@
 ---
 title: "Configurar a reverse DNS de uma instância Public Cloud"
 excerpt: Saiba como implementar a resolução reverse DNS
-updated: 2021-11-12
+updated: 2024-06-10
 ---
 
 > [!primary]
@@ -20,21 +20,23 @@ Configurar a resolução **Reverse DNS** de uma instância é particularmente ú
 
 - Ter uma [instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) na sua conta OVHcloud.
 - Um domínio com o seu campo `A` apontando para a instância.
-- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Estar ligado à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), aceda à secção `Bare Metal Cloud`{.action}, abra o menu `Network`{.action} e clique em `IP`{.action}.
+Aceda à [Área de Cliente OVHcloud](/links/manager), aceda à secção `Bare Metal Cloud`{.action} e abra o programa `Network`{.action}. De seguida, clique em `IP`{.action}.
 
-O quadro desta página apresenta os seus serviços elegíveis. Pode filtrar o ID do seu projeto Public Cloud através do menu pendente do **Serviço**.
+O menu suspenso em **Meus endereços IP públicos e serviços associados** permite filtrar os serviços por categoria.
 
-![Reverse DNS](images/reversecp01.png){.thumbnail}
+![Reverse IP](images/filterippci.png){.thumbnail}
 
 Clique em `...`{.action} na linha do endereço IP em causa e selecione `Alterar a reverse`{.action}.
 
-![Reverse DNS](images/reversecp02.png){.thumbnail}
+![Reverse DNS](images/modifyreversepc.png){.thumbnail}
 
 Na nova janela, introduza a sua reverse e clique em `Confirmar`{.action}.
+
+![Reverse DNS](images/enterreverse.png){.thumbnail}
 
 Também pode editar a reverse diretamente através do ícone da coluna **Reverse** da tabela.
 
@@ -47,4 +49,4 @@ Se a alteração não funcionar como previsto, verifique se o campo `A` está co
 
 [Criar uma primeira instância Public Cloud e ligar-se a ela](/pages/public_cloud/compute/public-cloud-first-steps)
 
-Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

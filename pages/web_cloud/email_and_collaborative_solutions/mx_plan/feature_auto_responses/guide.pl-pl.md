@@ -1,75 +1,72 @@
 ---
-title: 'Tworzenie autorespondera dla konta e-mail'
-excerpt: 'Dowiedz się, jak zainstalować autoresponder e-mail'
-updated: 2021-04-20
+title: 'MXplan - Tworzenie automatycznej odpowiedzi na adres e-mail'
+excerpt: 'Dowiedz się, jak skonfigurować automatyczną odpowiedź na adres e-mail'
+updated: 2024-05-24
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
 > 
 
-## Wprowadzenie
+Jeśli jesteś nieobecny i nie możesz sprawdzić Twojego adresu e-mail, możesz uruchomić automatyczną odpowiedź (lub autoresponder), która prześle wiadomość e-mail do osób, które wysłały Ci wiadomość.
 
-W przypadku Twojej nieobecności w biurze możesz utworzyć autoresponder e-mail, który zostawi wiadomość dla rozmówców chcących skontaktować się z Tobą za pośrednictwem poczty e-mail.
-
-**Dowiedz się, jak uruchomić autoresponder e-mail.**
+**Dowiedz się, jak skonfigurować automatyczną odpowiedź na adres e-mail.**
 
 ## Wymagania początkowe
 
-- Wykupienie usługi MX Plan. Jest ona dostępna przez: oferta [hostingu](https://www.ovhcloud.com/pl/web-hosting/){.external}, bezpłatny [Darmowy hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/){.external} zawarty w ofercie domeny (wcześniej aktywowanej) lub oferta MX Plan zamówiona oddzielnie.
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- Wykupienie usługi MX Plan. Jest ona dostępna w ramach: oferty [hosting www](/links/web/hosting), [bezpłatny hosting 100M](/links/web/domains-free-hosting) zawartej w ofercie domeny (aktywowanej wcześniej) lub oferty MX Plan zamówionej oddzielnie.
+- Dostęp do [panelu klienta OVHcloud](/links/manager).
 
 ## W praktyce
 
 > [!primary]
 >
-> Jeśli Twoje konto e-mail znajduje się w ofercie [**Exchange**](https://www.ovhcloud.com/pl/emails/hosted-exchange/), [**Email Pro**](https://www.ovhcloud.com/pl/emails/email-pro/) lub nie ma sekcji `Zarządzanie autoresponderami`{.action} w Twoim MXplan, utwórz autoresponder w interfejsie Webmail korzystając z dokumentacji ["Instalacja autorespondera z poziomu interfejsu OWA"](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_automatic_replies).
+> Jeśli Twój adres e-mail jest zawarty w ofercie [**Exchange**](/links/web/emails-hosted-exchange), [**Email Pro**](/links/web/email-pro) lub nie ma sekcji `Zarządzanie autoresponderami`{.action} w Twoim MXplanie, utwórz automatyczną odpowiedź z poziomu interfejsu webmail, korzystając z dokumentacji ["Uruchom automatyczną odpowiedź z interfejsu OWA"](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_automatic_replies).
 
-### Utworzenie autorespondera
+### Utworzenie automatycznej odpowiedzi
 
-Zaloguj się do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. 
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager). Wybierz nazwę domeny w sekcji `Emaile`{.action}. Kliknij na zakładkę `Emaile`{.action} u góry, następnie `Zarządzanie autoresponderami`{.action}.
 
-Wybierz odpowiednią domenę w sekcji `E-maile`{.action}.
+Zostaniesz przekierowany do okna `Zarządzanie autoresponderami`, w którym wyświetlony zostanie zestaw automatycznych odpowiedzi e-mail wprowadzonych w Twojej ofercie e-mail.
 
-Kliknij kartę `E-maile`{.action}, a następnie `Zarządzanie automatycznymi odpowiedziami`{.action}.
+Kliknij przycisk `Dodaj autoresponder`{.action}
 
-Zostaniesz przekierowany do okna `Zarządzanie autoresponderami`, które wyświetlają wszystkie autorespondery e-mail na Twojej usłudze e-mail.
-
-Kliknij `Dodaj autoresponder`{.action}
-
-![hosting](images/email_responder01.png){.thumbnail}
+![autoreply](images/email_responder01.png){.thumbnail}
 
 Pojawi się okno dodawania. Możesz ją uzupełnić zgodnie z poniższymi informacjami.
 
-- `Typ autorespondera`:
+- `Rodzaj autorespondera`:
 
-"Przypisany do skrzynki e-mail": do wykorzystania, jeśli dotyczy to istniejącego konta e-mail w Twojej usłudze e-mail.
-"Wolne": do użycia w przypadku aliasu. Nie jest więc przypisany do istniejącego adresu.
+**Przypisane do skrzynki e-mail** : do użycia, jeśli dotyczy to adresu e-mail istniejącego w Twojej usłudze e-mail.
+**Wolny**: do użycia w przypadku aliasu. Nie jest on zatem powiązany z istniejącym adresem.
 
-- `Skrzynka e-mail` lub `Nazwa autorespondera`: adres e-mail lub alias, którego dotyczy autoresponder.
-
-- `Czas działania autorespondera`:
-
-"Tymczasowe": zdefiniuj datę rozpoczęcia i zakończenia działania autorespondera (przydatną, jeśli chcesz odejść na urlop).
-"Stałe": autoresponder będzie działał, dopóki nie zostanie wyłączony.
-
-- `Wyślij kopię` lub `Zachowaj wiadomości na serwerze`: umożliwia przekierowanie wiadomości otrzymanych w trakcie Twojej nieobecności na wybrany adres lub zachowanie ich na adres e-mail.
+- `Skrzynka e-mail` lub `Nazwa autorespondera`: adres e-mail lub alias, którego dotyczy automatyczna odpowiedź.
+- `Czas trwania autorespondera`:
+    - **Tymczasowe** : określ datę rozpoczęcia i zakończenia automatycznej odpowiedzi (użyteczne, jeśli na przykład wyjeżdżasz na urlop).
+    - **Permanent**: automatyczna odpowiedź będzie działać, dopóki jej nie wyłączysz.
+- `Wyślij kopię` lub `Zachowaj wiadomości na serwerze`: umożliwiają ponowne wysłanie wiadomości odebranych podczas Twojej nieobecności na wybrany adres lub ich zachowanie na wybranym adresie e-mail.
 
 > [!warning]
-> Jeśli usuniesz zaznaczenie tej kratki, wiadomości otrzymane podczas Twojej nieobecności zostaną automatycznie usunięte.
+>
+> Jeśli usuniesz zaznaczenie tego pola, wiadomości odebrane podczas Twojej nieobecności zostaną automatycznie usunięte.
 
-- `Adres w kopii` (tylko w trybie wolnym): w przypadku aliasu wybierz adres e-mail, który otrzyma e-maile wysłane do aliasu.
+- `Adres w kopii` (tylko w trybie swobodnym) : w przypadku aliasu zaznacz adres e-mail, na który będą wysyłane wiadomości wysłane na ten alias.
+- `Message`: jest to wiadomość, którą twoi rozmówcy otrzymają, gdy wyślą ci e-mail.
 
-- `Wiadomość`: Jest to wiadomość, którą Twoi rozmówcy otrzymają podczas wysyłki wiadomości e-mail.
+Następnie kliknij przycisk `Zatwierdź`{.action}, aby zakończyć konfigurowanie automatycznej odpowiedzi.
 
-Następnie kliknij przycisk `Zatwierdź`{.action}, aby uruchomić autoresponder.
+> [!success]
+>
+> Jeśli chcesz przekazać zarządzanie automatyczną odpowiedzią dla adresu e-mail, zapoznaj się z naszym przewodnikiem ["Powierzenie zarządzania kontami e-mail innej osobie"](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_delegation)
 
-### Zmiana lub usunięcie autorespondera
+### Zmiana lub usunięcie automatycznej odpowiedzi
 
-Po utworzeniu autorespondera e-mail pojawia się on na liście widocznej w sekcji `Zarządzanie autoresponderami`{.action} w Twojej usłudze e-mail. Możesz go usunąć lub zmienić, klikając przycisk `...`{.action} znajdujący się po prawej stronie.
+Po utworzeniu odpowiedzi automatycznej zostanie ona wyświetlona na liście widocznej w sekcji `Zarządzanie autoresponderami`{.action} w Twojej ofercie e-mail. Możesz ją usunąć lub zmienić, klikając '...`{.action} po prawej stronie.
 
-![hosting](images/email_responder02.png){.thumbnail}
+![autoreply](images/email_responder02.png){.thumbnail}
 
-## Sprawdź również
+## Krok w przyszłość
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+[FAQ e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
+
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>

@@ -1,25 +1,28 @@
 ---
 title: 'Uruchomienie instancji GPU'
 excerpt: 'Dowiedz się, jak uruchomić instancję GPU z systemem Linux lub Windows'
-updated: 2019-12-06
+updated: 2024-07-17
 ---
+
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji” na tej stronie.
+>
 
 ## Wprowadzenie
 
 Instancje GPU są technicznie podobne do instancji z oferty 2017, ale mają też kartę graficzną (procesor graficzny, GPU — Graphic Processing Unit). Zastosowana technologia (*pci_passthrough*) umożliwia systemowi operacyjnemu instancji sterowanie procesorem graficznym dokładnie tak samo, jak w przypadku komputera fizycznego.
 
-Oferowane procesory graficzne to NVIDIA Tesla V100. 
-
 > [!warning]
 >
-> Obecnie instancje GPU są dostępne tylko w centrach danych GRA3, GRA5, GRA7 i BHS3. Może więc być konieczne utworzenie nowego projektu i wybranie nowej oferty 2017.
+> Obecnie większość starych instancji GPU (Tesla V100 and V100s) jest dostępna tylko w regionach GRA7, GRA9, i BHS5. Najnowsze modele (A100, H100, L4 and L40s) są obecnie dostępne tylko w regionie.
 > 
 
 **Dowiedz się, jak uruchomić instancję GPU w systemie Linux lub Windows**
 
 ## Wymagania początkowe
 
-- projekt Public Cloud z dostępem do regionów, w których są oferowane instancje GPU (GRA3, GRA5, GRA7 i BHS3)
+- Projekt Public Cloud z dostępem do regionów, w których dostępna jest większość GPU (GRA7, GRA9, i BHS5).
+- [Klucz SSH](/pages/public_cloud/compute/creating-ssh-keys-pci) utworzony w celu wdrożenia instancji GPU Linux.
 
 ## W praktyce
 
@@ -35,15 +38,13 @@ Wszystkich oferowanych obrazów można użyć w instancji GPU.
 > Jeśli ręczne skompilowanie modułu jądra stanowi problem, zalecamy użycie dystrybucji wspieranej przez firmę Nvidia, do której są udostępnione *gotowe* sterowniki: <https://developer.nvidia.com/cuda-downloads>.
 > 
 
-Po zalogowaniu do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} przejdź do projektu Public Cloud, kliknij przycisk `Utwórz instancję`{.action} i wybierz instancję GPU:
+Po zalogowaniu się do [Panelu klienta OVHcloud](/links/manager), kliknij zakładkę `Public Cloud`{.action}. Wybierz Twój projekt Public Cloud i kliknij `Instances`{.action} w menu po lewej stronie w zakładce **Compute**. Następnie kliknij przycisk `Utwórz instancję`{.action} i wybierz kompatybilną instancję GPU:
 
-![public-cloud](images/gpu.png){.thumbnail}
+![public-cloud](images/GPU-Flavors_2024.png){.thumbnail}
 
-Wybierz odpowiednią dystrybucję systemu Linux:
+Następnie wykonaj pozostałe etapy zgodnie z instrukcjami zawartymi w [tym przewodniku](/pages/public_cloud/compute/public-cloud-first-steps#create-instance). Może to potrwać kilka minut.
 
-![public-cloud](images/linuxchoice.png){.thumbnail}
-
-Instancja uruchomi się po kilku sekundach. Wówczas zaloguj się i sprawdź kartę graficzną: 
+Po dostarczeniu instancji możesz się do niej zalogować i sprawdzić, czy zainstalowana jest karta graficzna: 
 
 ```bash
 lspci | grep -i nvidia
@@ -96,25 +97,67 @@ Instancja GPU działa i jest gotowa do użycia.
 ### On Windows
 
 Istnieją problemy ze zgodnością sterownika NVIDIA i rozwiązania wirtualizacji *KVM/pci_passthrough*. **Standardowe obrazy systemu Windows nie działają.**
-Dlatego oferujemy specjalne obrazy oparte na wirtualnym systemie BIOS UEFI, które umożliwiają prawidłowe działanie sterownika (dotyczy tylko instancji G1, G2 i G3 z oferty 2017 oraz wcześniejszej).
+Dlatego oferujemy specjalne obrazy oparte na wirtualnym systemie BIOS UEFI, dzięki którym sterownik może poprawnie funkcjonować:
 
-Po zalogowaniu do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} przejdź do projektu Public Cloud, kliknij przycisk `Utwórz instancję`{.action} i wybierz instancję GPU:
+![public-cloud](images/EN-WindowsImages_2024.png){.thumbnail}
 
-![public-cloud](images/gpu.png){.thumbnail}
+> [!warning]
+>
+> Oferujemy możliwość instalacji specjalnych obrazów na wybranych modelach (T1-45, T1-90, T1-180, T2-45, T2-90, T2-180). Ponadto, w zależności od wybranego regionu, te specjalne obrazy mogą być niedostępne.
+>
 
-Wybierz odpowiedni system Windows: 
 
-![public-cloud](images/oschoice.png){.thumbnail}
+Po zalogowaniu się do [Twojego panelu klienta OVHcloud](/links/manager) przejdź do Twojego projektu Public Cloud i kliknij `Instances`{.action} w menu po lewej stronie w zakładce **Compute**. Następnie kliknij przycisk `Utwórz instancję`{.action} i wybierz kompatybilną instancję GPU:
+
+![public-cloud](images/GPU-Flavors_2024.png){.thumbnail}
+
+W kolejnym kroku przejdź do zakładki `Dystrybucje  Windows` i kliknij strzałkę rozwijaną, aby wybrać zgodny obraz systemu Windows:
+
+![public-cloud](images/EN-WindowsImages_2024.png){.thumbnail}
+
+Następnie wykonaj pozostałe etapy zgodnie z instrukcjami zawartymi w [tym przewodniku](/pages/public_cloud/compute/public-cloud-first-steps#create-instance). Może to potrwać kilka minut.
+
+#### Połączenie z instancją z systemem operacyjnym Windows
+
+Po utworzeniu instancji należy przeprowadzić do końca instalację systemu Windows (proces przygotowania systemu — _sysprep_). W tym celu kliknij ikonę `...`{.action} i następnie pozycję `Informacje o instancji`{.action}. Przejdź na kartę `Konsola VNC`{.action}. W konsoli powinien zostać wyświetlony interfejs zadań po instalacji.
+
+![windows sysprep](images/windows-connect-01.png){.thumbnail}
+
+W pierwszym kroku zdefiniuj ustawienia lokalizacji, wybierając region, język i układ klawiatury. Kliknij przycisk `Dalej`{.action}, aby kontynuować.
+
+![windows sysprep](images/windows-connect-02.png){.thumbnail}
+
+W kolejnym kroku trzeba skonfigurować domyślne konto “Administrator”. Dwukrotnie wpisz hasło i kliknij przycisk `Zakończ`{.action}, aby ukończyć proces instalacji. Klikając symbol oka sprawdź, czy wszystkie znaki wpisane w polu są zgodne z faktycznym układem klawiatury.
+
+Instancja zostanie ponownie uruchomiona i będzie możliwe zalogowanie się za pomocą klienta pulpitu zdalnego przy użyciu ustawionych poświadczeń. 
+
+##### **System Windows**
+
+Otwórz natywną aplikację kliencką “Podłączanie pulpitu zdalnego” (w razie potrzeby znajdź ją przy użyciu usługi Windows Search).
+
+![windows remote](/pages/assets/screens/other/windows/windows_rdp.png){.thumbnail}
+
+Podaj adres IPv4 swojej instancji i nazwę użytkownika “Administrator”, a następnie wpisz hasło. Zwykle jest wyświetlany komunikat ostrzegawczy z monitem o potwierdzenie połączenia, ponieważ certyfikat jest nieznany. Kliknij przycisk `Tak`{.action}, aby zalogować się do instancji.
+
+> [!primary]
+>
+> Jeśli wystąpią problemy z wykonaniem tej procedury, sprawdź, czy na urządzeniu są dozwolone połączenia zdalne (RDP). W tym celu przejrzyj ustawienia systemu, reguły zapory i ewentualne ograniczenia sieci.
+>
 
 Po uruchomieniu instancji GPU należy zainstalować sterownik NVIDIA z [oficjalnej strony internetowej](https://www.nvidia.com/Download/index.aspx){.external}.
-
-Uruchom instancję przy użyciu jednego z dostępnych typów GPU (t1-45, t1-90, t1-180...). Powinno to zająć tylko kilka minut.
 
 Następnie wystarczy zainstalować wymagany sterownik, który będzie widoczny tutaj:
 
 ![public-cloud](images/driverson.png){.thumbnail}
 
 ![public-cloud](images/devicemanager.png){.thumbnail}
+
+> [!warning]
+>
+> Nie możemy zagwarantować, że rozwiązanie będzie działało ze wszystkimi przyszłymi wersjami sterownika NVIDIA.
+>
+> Przed przeprowadzeniem aktualizacji sterownika NVIDIA zdecydowanie zaleca się wykonanie kopii zapasowej instancji. Pozwoli to na ewentualne cofnięcie decyzji.
+>
 
 ## Sprawdź również
 

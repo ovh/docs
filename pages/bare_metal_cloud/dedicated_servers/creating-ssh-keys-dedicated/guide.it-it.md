@@ -1,7 +1,7 @@
 ---
 title: Creare e utilizzare chiavi SSH
 excerpt: Scopri come creare una coppia di chiavi SSH sulla tua postazione di lavoro e utilizzarle per stabilire una connessione sicura al tuo server
-updated: 2023-11-22
+updated: 2024-06-26
 ---
 
 > [!primary]
@@ -18,8 +18,8 @@ Questo è in genere il metodo di connessione più sicuro e pratico.
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-- Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/) o di un [VPS](https://www.ovhcloud.com/it/vps/) nel proprio account OVHcloud
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+- Disporre di un [server dedicato](/links/bare-metal/bare-metal) o di un [VPS](https://www.ovhcloud.com/it/vps/) nel proprio account OVHcloud
 - Installare preventivamente un'applicazione client SSH (riga di comando o GUI)
 - Avere accesso in SSH (sudo)
 
@@ -36,6 +36,8 @@ Per maggiori informazioni, consulta le nostre guide "Iniziare a muovere i primi 
 - per un [VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps).
 
 Per maggiori informazioni, consulta la guida introduttiva del [protocollo SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
+
+<a name="create-ssh-key"></a>
 
 ### Creazione di una coppia di chiavi SSH
 
@@ -178,17 +180,17 @@ Se non è già installato (consulta la tua lista delle applicazioni o utilizza l
 
 Aprire `PuTTYgen` e selezionare uno degli algoritmi di crittografia supportati. In questo esempio viene utilizzato RSA. Inserisci 4096 come numero di bit nell’angolo inferiore destro e clicca sul pulsante `Generate`{.action}.
 
-![chiave PuTTy](images/puttygen_01.png){.thumbnail}
+![chiave PuTTy](/pages/assets/screens/other/web-tools/putty/puttygen_01.png){.thumbnail}
 
 Spostare liberamente il cursore del mouse nell'area sotto la barra di avanzamento:
 
-![chiave PuTTy](images/puttygen_02.gif){.thumbnail}
+![chiave PuTTy](/pages/assets/screens/other/web-tools/putty/puttygen_02.gif){.thumbnail}
 
 La chiave è pronta quando la barra di avanzamento è piena.
 
-![chiave PuTTy](images/puttygen_03.png){.thumbnail}
+![chiave PuTTy](/pages/assets/screens/other/web-tools/putty/puttygen_03.png){.thumbnail}
 
-Copiare la stringa di chiave completa negli Appunti per [aggiungerla al server](#addserverkey) ed eventualmente [importarla nello Spazio Cliente](#importkey). Salvare entrambe le chiavi come file facendo clic sui pulsanti corrispondenti e immettere anche una frase segreta (*passphrase*) per proteggerle.
+Copiare la stringa di chiave completa negli Appunti per [aggiungerla al server](#addserverkey). Salvare entrambe le chiavi come file facendo clic sui pulsanti corrispondenti e immettere anche una frase segreta (*passphrase*) per proteggerle.
 
 > [!warning]
 >
@@ -378,7 +380,7 @@ Se hai seguito le istruzioni delle sezioni "[Creazione di una coppia di chiavi S
 
 Apri `PuTTY` e apri la sottosezione `SSH` nel menu a sinistra, poi clicca su `Auth` e `Credentials`.
 
-![chiave PuTTy](images/puttygen_04.png){.thumbnail}
+![chiave PuTTy](/pages/assets/screens/other/web-tools/putty/puttygen_04.png){.thumbnail}
 
 Clicca sul pulsante `Browse`{.action} e seleziona il file della chiave privata `PuTTY` (`keyfile.ppk`) nella cartella in cui è stato salvato.
 
@@ -386,7 +388,7 @@ Il file di chiave è associato alla sessione SSH in corso. Seleziona `Session` n
 
 Immettere un nome per la connessione in `Saved Sessions` e fare clic su `Save`{.action} per aggiungerla alla lista.
 
-![chiave PuTTy](images/puttygen_05.png){.thumbnail}
+![chiave PuTTy](/pages/assets/screens/other/web-tools/putty/puttygen_05.png){.thumbnail}
 
 Da questo momento è possibile cliccare su questo elemento di `Session` e aprire una connessione al server. Per testarlo, clicca su `Open`{.action}. Se il file di chiave è stato protetto con una frase segreta, immetterla in questa fase.
 
@@ -396,54 +398,6 @@ Per configurare un'altra connessione al server, ripetere i passaggi seguenti:
 - [Aggiungi la chiave pubblica al tuo server](#addserverkey).
 - [Inserisci i dettagli del server e aggiungi il file di chiave in `PuTTY`](#puttykeys).
 
-### Importa la chiave SSH nello Spazio Cliente <a name="importkey"></a>
-
-Lo Spazio Cliente OVHcloud permette di archiviare chiavi pubbliche se sono state create con uno dei tipi di cifratura supportati. Questa funzionalità consente di risparmiare tempo durante la configurazione o la reinstallazione di un nuovo server in quanto non è necessario [aggiungere manualmente la chiave pubblica al server](#addserverkey).
-
-Apri la barra di navigazione laterale cliccando sul tuo nome nell’angolo in alto a destra e utilizza il tasto di scelta rapida `Prodotti e servizi`{.action}.
-
-![Spazio di gestione delle chiavi SSH](images/SSH_keys_panel_2022.png){.thumbnail}
-
-In `I miei servizi`, seleziona la scheda `Chiavi SSH`{.action} e clicca su `Aggiungi una chiave SSH`{.action}.
-
-![Spazio di gestione delle chiavi SSH](images/SSH_keys_panel_2.1.png){.thumbnail}
-
-Seleziona `Dedicato` nel menu a tendina.
-
-Nella nuova finestra, inserisci un identificativo (un nome a tua scelta) per la chiave. Incollare la stringa di chiave (copiata dal [tuo file `.pub`](#publickey) o dal [finestra `PuTTYgen`](#useputty) nel campo `Key`).
-
-![Spazio di gestione delle chiavi SSH](images/SSH_keys_panel_3.png){.thumbnail}
-
-Se è stato copiato l'output completo, l'identificativo dopo la chiave deve essere già aggiunto. Per memorizzare la chiave, è necessario specificare l'identificativo locale dopo la chiave *incollata*. (Vedere il formato di esempio sopra). Questo è un requisito dello Spazio Cliente OVHcloud. Clicca su `Conferma`{.action} per salvare la chiave pubblica.
-
-> [!primary]
->
-> Tutte le chiavi registrate nella sezione `Dedicato` sono disponibili in preinstallazione su un server dedicato o un VPS. Per le chiavi SSH dei servizi Public Cloud, consulta la [presente guida](/pages/public_cloud/compute/public-cloud-first-steps).
->
-
-### Definisci una chiave SSH di default (solo per la sezione "Dedicato") <a name="cpsshkey"></a>
-
-Se nello Spazio Cliente OVHcloud sono state aggiunte più chiavi SSH, è possibile definire una chiave da utilizzare come chiave predefinita sull’account.
-
-> [!warning]
-> Ti ricordiamo che, una volta configurata la chiave predefinita, questa verrà utilizzata anche come modalità di connessione al riavvio di un server in modalità Rescue. Per ricevere una password, la chiave predefinita deve essere [disattivata](#disablesshkey) prima di riavviare il server in modalità Rescue. Per maggiori informazioni, consulta la sezione [Per saperne di più](#gofurther) di questa guida.
->
-
-Apri la barra di navigazione laterale cliccando sul nome del tuo account nell’angolo in alto a destra e utilizza il tasto di scelta rapida `Prodotti e servizi`{.action} per accedere alla sezione `Chiavi SSH`{.action}.
-
-![Spazio di gestione delle chiavi SSH](images/SSH_keys_panel_2022.png){.thumbnail}
-
-Nell’elenco delle chiavi, clicca sull’icona `Chiave` accanto alla chiave SSH di tua scelta per impostarla come chiave predefinita.
-
-![Spazio di gestione delle chiavi SSH](images/defaultsshkey.png){.thumbnail}
-
-Una volta effettuata questa operazione, compare un messaggio che conferma che la chiave è stata impostata come predefinita e l’icona `Chiave` viene evidenziata.
-
-![Spazio di gestione delle chiavi SSH](images/defaultsshkey1.png){.thumbnail}
-
-### Disattiva la chiave SSH di default <a name="disablesshkey"></a>
-
-Per disattivare la chiave SSH per predefinita corrente, accedi alla sezione `Chiavi SSH`{.action} come descritto sopra. Clicca sull’icona `Chiave` blu accanto alla chiave SSH corrispondente per disattivare l’opzione predefinita.
 
 ## Per saperne di più  <a name="gofurther"></a>
 
@@ -453,6 +407,6 @@ Per disattivare la chiave SSH per predefinita corrente, accedi alla sezione `Chi
 
 [Modalità Rescue su VPS](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
-Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](https://www.ovhcloud.com/it/professional-services/) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
+Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](/links/professional-services) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

@@ -1,14 +1,14 @@
 ---
 title: 'Transferir o nome de domínio para a OVHcloud'
 excerpt: 'Descubra como transferir um nome de domínio para a OVHcloud'
-updated: 2024-01-31
+updated: 2024-06-28
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/MILAnKdjHns" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/MILAnKdjHns" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Objetivo
 
@@ -27,6 +27,12 @@ Ao transferir o domínio, irá mudar de **registrar** para o domínio. Pode tran
 > Para transferir a gestão do seu domínio para outra conta de cliente OVHcloud, o método adequado é *uma alteração de contactos*. O procedimento está descrito no [guia](/pages/account_and_service_management/account_information/managing_contacts).
 >
 > Se também tem de mudar o **proprietário** do nome de domínio, deve fazê-lo **antes** de alterar os contactos do nome de domínio. Para isso, siga as instruções descritas na nossa documentação sobre a [alteração de proprietário dos nomes de domínio](/pages/web_cloud/domains/trade_domain).
+>
+> Se, para além da transferência do seu domínio, pretender migrar os serviços que lhe estão associados (site, e-mail, etc.), consulte primeiro o guia "[Migrar o site e os serviços associados para a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)" antes de prosseguir.
+> Este guia explica em detalhe como migrar o conjunto dos seus serviços sem interrupções.
+>
+> Se apenas transferir o domínio sem ter de migrar os seus outros serviços, certifique-se de que recupera os servidores DNS ativos para o domínio junto do seu **agente de registo** atual para os introduzir diretamente na etapa 3 deste guia.
+> Isto evitará que interrompa a associação entre o seu nome de domínio e os seus serviços externos associados.
 >
 
 ## Requisitos
@@ -92,11 +98,11 @@ Atenção: a OVHcloud não é o agente registador do seu domínio no momento em 
 
 Depois de desbloquear o seu nome de domínio e obter o código, pode encomendar a sua transferência para a OVHcloud a partir do [nosso site](/links/web/domains){.external}. Introduza o seu nome de domínio e siga os passos da encomenda.
 
-![domain](images/Domain_transfer_order.png){.thumbnail}
+![domain](/pages/assets/screens/website/order/domain-transfer-order.png){.thumbnail}
 
 Quando for necessário indicar o código de transferência, introduza-o no campo ao lado do seu nome de domínio. Se ainda não dispõe do código de transferência, selecione a opção Indicar o código de `transferência mais tarde`{.action}. No entanto, sugerimos que se certifique de que tem este código à sua disposição antes de continuar. Lembre-se de que a transferência não será iniciada até que um código válido seja fornecido.
 
-![domain](images/step_authinfo_add.png){.thumbnail}
+![domain](/pages/assets/screens/website/order/step_authinfo_add.png){.thumbnail}
 
 Também pode concluir a sua encomenda com um [alojamento web](/links/web/hosting){.external} e outras soluções da OVHcloud. Isto pode interessar-lhe se deseja também migrar os seus serviços para a OVHcloud. O nosso manual intitulado "[Como migrar um site para a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}?" irá fornecer-lhe instruções sobre como realizar este procedimento.
 
@@ -117,7 +123,7 @@ Também pode concluir a sua encomenda com um [alojamento web](/links/web/hosting
 
 - Em alguns casos, o processo de transferência pode requerer informações adicionais sobre o proprietário do domínio. Para adicionar estas informações, clique na opção `Gerir os contactos/o proprietário`{.action}.
 
-![domínio](images/Order_summary.png){.thumbnail}
+![domínio](/pages/assets/screens/website/order/order-summary.png){.thumbnail}
 
 #### Seguimento da transferência após a encomenda
 
@@ -176,4 +182,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 
+Fale com nossa [comunidade de utilizadores](/links/community). 

@@ -1,7 +1,7 @@
 ---
 title: 'Delegar permissões numa conta de e-mail'
 excerpt: 'Saiba como delegar os direitos da sua conta de e-mail noutro'
-updated: 2020-10-24
+updated: 2024-06-19
 ---
 
 ## Objetivo
@@ -12,9 +12,13 @@ Os serviços Exchange e Email Pro permitem beneficiar de endereços de e-mail pr
 
 ## Requisitos
 
-- Dispor de um serviço [OVHcloud Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/) ou [E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/) já configurado.
+- Dispor de um serviço [OVHcloud Exchange](/links/web/emails-hosted-exchange) ou [E-mail Pro](/links/web/email-pro) já configurado.
 
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+> [!warning]
+>
+> **Para a oferta [Email Pro](/links/web/email-pro)** as funcionalidades de delegação descritas neste guia são utilizadas unicamente através de [Webmail](/links/web/email). Os protocolos que permitem a sua utilização através de um programa de correio eletrónico necessitam de dispor de uma conta [Exchange](/links/web/emails-hosted-exchange).
+
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Dispor dos identificadores relativos à conta  que beneficiará dos novos direitos delegados.
 
 ## Instruções
@@ -36,7 +40,7 @@ Quando identificar a conta que a delegação lhe diz respeito, determinar os dir
 
 ### 1 - criar a delegação
 
-Para efetuar esta operação, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}:
+Para efetuar esta operação, aceda à [Área de Cliente OVHcloud](/links/manager){.external}:
 
 - **Exchange**: Clique em `Microsoft`{.action} na barra à esquerda e, a seguir, em `Exchange`{.action}.. 
 - **Email Pro**: Clique em `Email Pro`{.action}.
@@ -84,7 +88,11 @@ Na janela que aparecer, indique o nome da conta para a qual beneficia do direito
 
 - **A partir do software Outlook para Windows**
 
-No Outlook 2016, clique em `Ficheiro`{.action} na barra de menu no topo do ecrã e, a seguir, em `Parâmetros da conta`{.action}. No menu pendente, clique novamente em `Parâmetros da conta`{.action}. Na nova janela, selecione a conta com direito delegado e clique em `Alterar`{.action}. 
+> [!warning]
+>
+> A utilização desta funcionalidade **via Outlook** só está disponível para uma conta de e-mail [Exchange](/links/web/emails-hosted-exchange).
+
+No Outlook, clique em `Ficheiro`{.action} na barra de menu no topo do ecrã e, a seguir, em `Parâmetros da conta`{.action}. No menu pendente, clique novamente em `Parâmetros da conta`{.action}. Na nova janela, selecione a conta com direito delegado e clique em `Alterar`{.action}. 
 
 ![delegação](images/delegation-step4.png){.thumbnail}
 
@@ -106,7 +114,11 @@ Só precisa de redigir a sua mensagem e enviá-la.
 
 - **A partir do software Outlook para Windows**
 
-No Outlook 2016, inicie a redação de uma nova mensagem. Certifique-se de que o botão `De`{.action} aparece na janela de redação. Se não for o caso, aceda ao separador `Opções`{.action} e clique em `Apresentar De`{.action}.
+> [!warning]
+>
+> A utilização desta funcionalidade **via Outlook** só está disponível para uma conta de e-mail [Exchange](/links/web/emails-hosted-exchange).
+
+No Outlook, inicie a redação de uma nova mensagem. Certifique-se de que o botão `De`{.action} aparece na janela de redação. Se não for o caso, aceda ao separador `Opções`{.action} e clique em `Apresentar De`{.action}.
 
 A seguir, clique no botão `De`{.action} e selecione o endereço que aparecerá como remetente (para o qual dispõe do direito delegado). Se esta não aparecer, clique em `Outros`{.action}, introduza o endereço pretendido e valide. 
 
@@ -128,7 +140,11 @@ Só precisa de redigir a sua mensagem e enviá-la.
 
 - **A partir do software Outlook para Windows**
 
-No Outlook 2016, inicie a redação de uma nova mensagem. Certifique-se de que o botão `De`{.action} aparece na janela de redação. Se não for o caso, aceda ao separador `Opções`{.action} e clique em `Apresentar De`{.action}.
+> [!warning]
+>
+> A utilização desta funcionalidade **via Outlook** só está disponível para uma conta de e-mail [Exchange](/links/web/emails-hosted-exchange).
+
+No Outlook, inicie a redação de uma nova mensagem. Certifique-se de que o botão `De`{.action} aparece na janela de redação. Se não for o caso, aceda ao separador `Opções`{.action} e clique em `Apresentar De`{.action}.
 
 A seguir, clique no botão `De`{.action} e selecione o endereço que aparecerá como remetente (para o qual dispõe do direito delegado). Se esta não aparecer, clique em `Outros`{.action}, introduza o endereço pretendido e valide. 
 
@@ -136,6 +152,16 @@ Só precisa de redigir a sua mensagem e enviá-la.
 
 ![delegação](images/delegation-step7.png){.thumbnail}
 
-## Saiba mais
+## Quer saber mais? <a name="go-further"></a>
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
+
+[Utilizar o endereço de e-mail a partir do webmail Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+
+[Partilhar uma pasta através do webmail OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_directory_sharing)
+
+[Utilização de grupos de difusão (mailing lists)](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_groups)
+
+Fale com nossa [comunidade de utilizadores](/links/community).

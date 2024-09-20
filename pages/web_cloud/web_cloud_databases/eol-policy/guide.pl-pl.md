@@ -33,7 +33,7 @@ Produkty objęte tą polityką wycofania z eksploatacji to:
 
 ### Definicje i wytyczne polityki wycofania z eksploatacji
 
-![tymelina](images/ovhcloud-eol-policy-for-managed-databases-timeline.png)
+![tymelina](/pages/assets/schemas/web-cloud-databases/ovhcloud-eol-policy-for-managed-databases-timeline.png)
 
 EOL = End Of Life
 
@@ -83,4 +83,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 
+Dołącz do [grona naszych użytkowników](/links/community). 

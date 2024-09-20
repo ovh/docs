@@ -32,13 +32,13 @@ The screen that opens has 4 sections:
 - [Infrastructure statistics](#infra-stats): Presents graphical statistics (HTTP and SQL requests, FTP commands, CPU usage, outgoing connections, etc.).
 - [User administration](#admin-user): Displays users who are allowed to access statistics.
 
-![statistics and logs interface](images/tab.png){.thumbnail}
+![statistics and logs interface](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/tab.png){.thumbnail}
 
 ### Visit statistics <a name="website-stats"></a>
 
 To better monitor and manage traffic for your websites, you can use **OVHcloud Web Statistics**, a tool for statistics on visits to and audience measurement of your websites hosted on your web hosting plan.
 
-![ows dashboard](images/ows-presentation.gif){.thumbnail}
+![ows dashboard](/pages/assets/screens/other/web-tools/logs/ows-presentation.gif){.thumbnail}
 
 The **OVHcloud Web Statistics** dashboard has 7 sections:
 
@@ -63,7 +63,7 @@ The `Period selection` field in the top right-hand corner allows you to select a
 
 You can view your website’s raw logs with a delay of around 5 minutes.
 
-![osl statistiques dashboard](images/osl-statistics-board.png){.thumbnail}
+![osl statistiques dashboard](/pages/assets/screens/other/web-tools/logs/osl-statistics-board.png){.thumbnail}
 
 Different types of logs are available:
 
@@ -79,7 +79,7 @@ Different types of logs are available:
 
 In this section, you can view the activity of your Web Hosting plan’s infrastructure, in order to view resource usage.
 
-![infrastructure statistics](images/infrastructure-statistics-graph.png){.thumbnail}
+![infrastructure statistics](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/infrastructure-statistics-graph.png){.thumbnail}
 
 Different types of charts can be displayed from the drop-down menu on the top left:
 
@@ -97,7 +97,7 @@ Creating a user will allow someone to access your web hosting plan’s statistic
 
 In the `User administration`{.action} section, click `Create a new user`{.action} , then follow the instructions to finish creating a new user.
 
-![create a new user](images/create-a-new-user.png){.thumbnail}
+![create a new user](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/create-a-new-user.png){.thumbnail}
 
 To access your website's statistics with a user you have created, you must enter the following address by replacing `000` with the cluster number of your web hosting plan and `domain.tld` with the domain name of your website (without `www`):
 
@@ -115,7 +115,7 @@ You can also access the statistics/logs link directly from your Control Panel:
 6. Go to `Website visit statistics`{.action}.
 7. Choose the `View Statistics`{.action} button.
 
-![website visit statistics](images/view-statistics.png){.thumbnail}
+![website visit statistics](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-statistics.png){.thumbnail}
 
 On the new page that pops up, retrieve the URL located in the address bar of your web browser.
 
@@ -130,4 +130,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

@@ -1,7 +1,7 @@
 ---
 title: "Ihren Domainnamen mit DNSSEC absichern"
 excerpt: "Erfahren Sie hier, wie Sie Ihre Domainnamen durch die Aktivierung von DNSSEC vor Cache Poisoning schützen können"
-updated: 2023-07-26
+updated: 2024-08-20
 ---
 
 > [!primary]
@@ -15,6 +15,11 @@ DNS-Server hosten DNS-Zonen, die die DNS-Konfiguration von Domainnamen enthalten
 In einigen Fällen können Daten, die über DNS-Server laufen, von Hackern abgefangen werden. Das Ziel ist, eingehenden Traffic für den betroffenen Domainnamen an ihre Websites und E-Mail-Adressen umzuleiten. Dazu wird der Cache des DNS-Servers manipuliert, um eine abweichende DNS-Konfiguration auf Ihren Domainnamen anzuwenden. Dies wird als "Cache Poisoning" bezeichnet. 
 
 Die **D**omain **N**ame **S**ystem **SEC**urity Extensions (**DNSSEC**) ermöglichen es, die DNS-Konfiguration Ihres Domainnamens durch Überprüfung und Authentifizierung der DNS-Antworten vor "Cache Poisoning" zu schützen.
+
+> [!primary]
+>
+> Die DNSSEC Option ist für Domainnamen mit der Endung **.it** nicht verfügbar.
+>
 
 **Diese Anleitung erklärt, wie Sie DNSSEC für Ihren Domainnamen aktivieren, um ihn vor "Cache Poisoning" zu schützen.**
 
@@ -57,11 +62,11 @@ Im Tab `Allgemeine Informationen`{.action} können Sie nach [Schritt 1](#step1) 
 
 Überprüfen Sie hierzu im Feld "Sicherheit" den Status neben "Sichere Delegation (DNSSEC)".
 
-![DNSSEC](images/activate-dnssec.png){.thumbnail}
+![DNSSEC](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/activate-dnssec.png){.thumbnail}
 
 Über den Aktivierungsbutton oberhalb von `Sichere Delegation - DNSSEC`{.action} können Sie den **DNSSEC** für Ihren Domainnamen aktivieren oder deaktivieren. Wenn Sie diese Aktion ausführen, erscheint ein neues Fenster, in dem Sie die Änderung bestätigen können.
 
-![DNSSEC](images/activate-dnssec-confirmation.png){.thumbnail}
+![DNSSEC](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/activate-dnssec-confirmation.png){.thumbnail}
 
 > [!primary]
 >
@@ -82,4 +87,4 @@ Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

@@ -31,7 +31,7 @@ El uso de sus bases de datos puede dar lugar a una serie de anomalías en su sit
 
 ### "Error al conectar a la base de datos"
 
-![error_establishing_a_DB_connection](images/error-establishing-a-db-connection.png){.thumbnail}
+![error_establishing_a_DB_connection](/pages/assets/screens/other/browsers/errors/error-establishing-a-db-connection.png){.thumbnail}
 
 #### Comprobar los incidentes en curso
 
@@ -98,7 +98,7 @@ En el área de cliente de OVHcloud](/links/manager), haga clic en la pestaña `B
 
 Nuestros servicios le han enviado por correo electrónico un mensaje indicándole que la cantidad de datos en la base de datos supera el límite autorizado. La base de datos ha pasado a ser de solo lectura. Esto impide realizar cambios en el sitio web.
 
-![database-overquota-notification-email](images/overquota-db.png){.thumbnail}
+![database-overquota-notification-email](/pages/assets/screens/email-sending-to-customer/databases/overquota-db.png){.thumbnail}
 
 Desbloquee la base de datos de tres formas distintas:
 
@@ -149,14 +149,14 @@ Para optimizar su base de datos, siga las instrucciones de nuestra guía "[Confi
 
 > [!warning]
 >
-> Si el asesoramiento ofrecido sobre la optimización de su base de datos no bastaba para desbloquear el acceso a su sitio web, le recomendamos que se ponga en contacto con nuestra [comunidad de usuarios](https://community.ovh.com/en/) o con los [partners de OVHcloud](/links/partner). Nosotros no podremos asistirle en este asunto.
+> Si el asesoramiento ofrecido sobre la optimización de su base de datos no bastaba para desbloquear el acceso a su sitio web, le recomendamos que se ponga en contacto con nuestra [comunidad de usuarios](/links/community) o con los [partners de OVHcloud](/links/partner). Nosotros no podremos asistirle en este asunto.
 >
 
 ### Memoria RAM rebasada
 
 El siguiente mensaje, situado en la sección `Bases de datos`{.action} de su [área de cliente de OVHcloud](/links/manager), indica que su servidor [Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/) ha consumido una cantidad de recursos demasiado grande en la infraestructura de OVHcloud:
 
-![ram-exceeded](images/ram-exceeded.png){.thumbnail}
+![ram-exceeded](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/ram-exceeded.png){.thumbnail}
 
 En ese caso, puede aumentar la [cantidad de memoria RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#cambiar-la-oferta-del-servidor-de-bases-de-datos) disponible desde la sección `Bases de datos`{.action} de su [área de cliente OVHcloud](/links/manager). En la pestaña `Información general`{.action}, haga clic en el botón `...`{.action} en la sección `RAM`.
 
@@ -173,7 +173,7 @@ También puede optimizar su base de datos siguiendo las instrucciones de nuestra
 
 > [!primary]
 >
-> Si tiene dificultades para reducir el uso de los recursos en su servidor de bases de datos y no quiere aumentarlos, contacte con nuestra [comunidad](https://community.ovh.com/en/) o con los [partners de OVHcloud](/links/partner). No podremos asistirle en este asunto.
+> Si tiene dificultades para reducir el uso de los recursos en su servidor de bases de datos y no quiere aumentarlos, contacte con nuestra [comunidad](/links/community) o con los [partners de OVHcloud](/links/partner). No podremos asistirle en este asunto.
 >
 
 ### Errores de importación de bases de datos
@@ -192,9 +192,9 @@ En caso contrario, [guarde los datos presentes](/pages/web_cloud/web_hosting/sql
 
 También puede marcar la casilla `Vaciar la base de datos actual`{.action} justo antes de [iniciar la importación](/pages/web_cloud/web_hosting/sql_importing_mysql_database#importar-una-copia-de-seguridad-desde-el-area-de-cliente):
 
-![import-empty-current-db](images/import-empty-current-db.png){.thumbnail}
+![import-empty-current-db](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/import-empty-current-db.png){.thumbnail}
 
-Este mensaje de error significa que la base de datos que está intentando importar contiene elementos no autorizados en la infraestructura compartida de OVHcloud. Si lo necesita, puede ponerse en contacto con nuestra [comunidad de usuarios](https://community.ovh.com/en/) o con un [proveedor especializado](/links/partner). No podremos asistirle en la corrección de esta anomalía.
+Este mensaje de error significa que la base de datos que está intentando importar contiene elementos no autorizados en la infraestructura compartida de OVHcloud. Si lo necesita, puede ponerse en contacto con nuestra [comunidad de usuarios](/links/community) o con un [proveedor especializado](/links/partner). No podremos asistirle en la corrección de esta anomalía.
 
 > [!faq]
 >
@@ -228,7 +228,7 @@ Para resolver esta anomalía, puede:
 
 - Aumentar la [cantidad de memoria RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#seguimiento-de-la-ram-consumida). Para ello, acceda al [servidor Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) correspondiente en la sección `Bases de datos`{.action} de su [área de cliente OVHcloud](/links/manager). Haga clic en el botón `...`{.action} en la sección `RAM` y, seguidamente, en `Cambiar la cantidad de RAM`{.action}.
 
-- Fraccione su base de datos para importarla en varias operaciones en lugar de una (para cualquier duda sobre las operaciones a realizar, contacte con nuestra [comunidad](https://community.ovh.com/en/) o con los [partners de OVHcloud](/links/partner). Nosotros no podremos asistirle en este asunto.
+- Fraccione su base de datos para importarla en varias operaciones en lugar de una (para cualquier duda sobre las operaciones a realizar, contacte con nuestra [comunidad](/links/community) o con los [partners de OVHcloud](/links/partner). Nosotros no podremos asistirle en este asunto.
 
 - [Optimice su base de datos](/pages/web_cloud/web_cloud_databases/configure-database-server#gestionar-las-bases-de-datos) y luego repite las operaciones de exportación/importación.
 
@@ -242,7 +242,7 @@ Para resolver esta anomalía, puede:
 
 Este mensaje de error puede aparecer al conectarse a la base de datos por [PhpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#acceder-a-la-interfaz-phpmyadmin). Indica que los identificadores introducidos son incorrectos.
 
-![access_denied_for_user](images/pma-error-hy000-1045.png){.thumbnail}
+![access_denied_for_user](/pages/assets/screens/other/web-tools/phpmyadmin/pma-error-hy000-1045.png){.thumbnail}
 
 En ese caso, [compruebe los identificadores indicados](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#procedimiento) y cambie si es necesario la [contraseña de su base de datos](/pages/web_cloud/web_hosting/sql_change_password).
 
@@ -262,7 +262,7 @@ En ese caso, deberá [optimizar las bases de datos](/pages/web_cloud/web_cloud_d
 
 > [!warning]
 >
-> Para más información sobre las operaciones que debe realizar para reducir el número de conexiones activas a la base de datos, contacte con nuestra [comunidad](https://community.ovh.com/en/) o con los [partners de OVHcloud](/links/partner). Nosotros no podremos asistirle en este asunto.
+> Para más información sobre las operaciones que debe realizar para reducir el número de conexiones activas a la base de datos, contacte con nuestra [comunidad](/links/community) o con los [partners de OVHcloud](/links/partner). Nosotros no podremos asistirle en este asunto.
 >
 
 #### "Name or service not known"
@@ -273,7 +273,7 @@ En ese caso, deberá [optimizar las bases de datos](/pages/web_cloud/web_cloud_d
 
 Este mensaje de error aparece durante [conexión a PhpMyAdmin](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#procedimiento) cuando el nombre del servidor introducido es incorrecto.
 
-![name_or_service_not_known](images/pma-error-hy000-1045.png){.thumbnail}
+![name_or_service_not_known](/pages/assets/screens/other/web-tools/phpmyadmin/pma-error-hy000-2002.png){.thumbnail}
 
 Compruebe el nombre del servidor que quiera registrar en su [área de cliente de OVHcloud](/links/manager).
 
@@ -290,4 +290,4 @@ Compruebe el nombre del servidor que quiera registrar en su [área de cliente de
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

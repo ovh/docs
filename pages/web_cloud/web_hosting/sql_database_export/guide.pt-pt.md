@@ -58,25 +58,25 @@ Aparecerá uma tabela com todas as bases de dados criadas com o plano de alojame
 
 Ainda no separador `Bases de dados`{.action}, clique no botão `...`{.action} à direita da base de dados a salvaguardar e, a seguir, em `Criar uma cópia de segurança`{.action}.
 
-![databasedump](images/create-a-backup.png){.thumbnail}
+![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-backup.png){.thumbnail}
 
 Na janela que surgir, selecione a data desejada para o backup e clique no botão `Seguinte`{.action}. Certifique-se de que as informações no resumo estão corretas e clique em `Validar`{.action} para dar início à operação.
 
 Aguarde enquanto o backup é realizado. Quando estiver disponível, poderá importá-la.
 
-![databasedump](images/create-a-database-backup-step-1.png){.thumbnail}
+![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-backup-step-1.png){.thumbnail}
 
 #### Etapa 2: recuperar uma cópia de segurança da base de dados
 
 Ainda no separador `Bases de dados`{.action}, clique no botão `...`{.action} à direita da base de dados a salvaguardar e, a seguir, em `Restaurar um backup`{.action}.
 
-![databasedump](images/restore-backup.png){.thumbnail}
+![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/restore-backup.png){.thumbnail}
 
 A tabela que aparecerá apresenta todos os backups disponíveis da base de dados selecionada. Poderá consultar a data exata em que os backups foram realizados, assim como a data em que estes últimos serão eliminados da ferramenta da OVHcloud.
 
 Para descarregar um backup, clique no botão `...`{.action} à direita daquele que deseja recuperar e, a seguir, em `Transferir backup`{.action}. Surgirá uma janela que lhe solicitará para guardar o ficheiro na sua máquina. Aceite e espere enquanto o backup é descarregado.
 
-![databasedump](images/download-the-backup.png){.thumbnail}
+![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/download-the-backup.png){.thumbnail}
 
 ### Recuperar um backup a partir da interface web phpMyAdmin
 
@@ -84,7 +84,7 @@ Para realizar a operação, aceda a *phpMyAdmin*. Para saber a ligação de aces
 
 Aparecerá uma tabela com todas as bases de dados criadas com o plano de alojamento web. Clique no botão `...`{.action} à direita da base de dados em causa e depois em `Aceder ao phpMyAdmin`{.action}.
 
-![databasedump](images/go-to-phpmyadmin.png){.thumbnail}
+![databasedump](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
 
 Uma vez na interface de ligação a *phpMyAdmin*, introduza as informações da base de dados e ligue-se. Depois de iniciar sessão, aceda ao separador `Exportar`{.action} onde existem dois métodos de exportação:
 
@@ -182,4 +182,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 
+Fale com nossa [comunidade de utilizadores](/links/community). 

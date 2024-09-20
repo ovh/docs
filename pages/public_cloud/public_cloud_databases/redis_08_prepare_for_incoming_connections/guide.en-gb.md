@@ -1,7 +1,7 @@
 ---
 title: Caching - Configure your Caching service to accept incoming connections
 excerpt: Find out how to configure your Caching service to accept incoming connections
-updated: 2024-02-29
+updated: 2024-06-12
 ---
 
 ## Objective
@@ -22,7 +22,7 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 
 Before making a connection, we need to verify that our Caching instance is correctly configured.
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and open your `Public Cloud`{.action} project. Click on `Databases`{.action} in the left-hand navigation bar and select your Caching instance.
+Log in to your [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project. Click on `Databases`{.action} in the left-hand navigation bar and select your Caching instance.
 
 #### Step 1: Verify your user roles and password
 
@@ -85,7 +85,7 @@ Visit the [Github examples repository](https://github.com/ovh/public-cloud-datab
 
 Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.
 

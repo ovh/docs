@@ -14,17 +14,17 @@ O protocolo de comunicação SSH (Secure Shell) é a ferramenta principal para e
 
 **Este guia explica-lhe como aceder ao seu servidor de forma segura graças ao SSH.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gi7JqUvcEt0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/gi7JqUvcEt0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 > [!warning]
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, é da sua responsabilidade assegurar o seu bom funcionamento.
 >
-> Se encontrar dificuldades durante a execução destas ações, convidamo-lo a contactar um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou a trocar informações com a nossa comunidade de utilizadores em https://community.ovh.com/en/. A OVHcloud não lhe pode fornecer assistência técnica a este respeito.
+> Se encontrar dificuldades durante a execução destas ações, convidamo-lo a contactar um [prestador de serviços especializado](/links/partner) e/ou a trocar informações com a nossa comunidade de utilizadores em https://community.ovh.com/en/. A OVHcloud não lhe pode fornecer assistência técnica a este respeito.
 >
 
 ## Requisitos
 
-- Ter um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/) ou um [VPS](https://www.ovhcloud.com/pt/vps/) na sua conta OVHcloud
+- Ter um [servidor dedicado](/links/bare-metal/bare-metal) ou um [VPS](https://www.ovhcloud.com/pt/vps/) na sua conta OVHcloud
 - Uma aplicação cliente SSH (em linha de comandos ou em interface gráfica)
 
 > [!primary]
@@ -37,7 +37,7 @@ Existem vários métodos para autenticar uma ligação a um periférico distante
 As instruções seguintes dizem respeito ao método de autenticação através de um nome de utilizador e de uma palavra-passe.<br>
 Também pode configurar chaves SSH para ativar as ligações seguras sem password. Para mais informações, consulte o nosso [guia sobre chaves SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 
-Os dados de acesso (ID de utilizador e password) são-lhe enviados por e-mail após uma instalação ou reinstalação do servidor efetuada a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+Os dados de acesso (ID de utilizador e password) são-lhe enviados por e-mail após uma instalação ou reinstalação do servidor efetuada a partir do seu [Área de Cliente OVHcloud](/links/manager).
 O nome de utilizador corresponde ao sistema operativo, por exemplo, `ubuntu` ou `debian`.<br>
 Para se conectar, também deve especificar o endereço IPv4 ou o nome do host do servidor. Estas informações estão disponíveis no e-mail de instalação e na Área de Cliente.
 
@@ -182,6 +182,6 @@ Para mais informações, consulte a FAQ oficial e a documentação do PuTTY.
 
 [VPS em modo de rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
-Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](https://www.ovhcloud.com/pt/professional-services/) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
+Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](/links/professional-services) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

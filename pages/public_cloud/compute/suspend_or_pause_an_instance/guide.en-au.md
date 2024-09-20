@@ -15,8 +15,8 @@ As part of the configuration of a high-availability infrastructure, you may enco
 
 ## Requirements
 
-- An [OVHcloud Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps#step-3-creating-an-instance) on **hourly** billing
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external} or [Horizon interface](/pages/public_cloud/compute/introducing_horizon)
+- An [OVHcloud Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps) on **hourly** billing
+- Access to the [OVHcloud Control Panel](/links/manager){.external} or [Horizon interface](/pages/public_cloud/compute/introducing_horizon)
 - Knowledge of [Openstack API](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api) and [Openstack variables](/pages/public_cloud/compute/loading_openstack_environment_variables)
 
 ## Instructions
@@ -234,4 +234,4 @@ To unpause the instance, type the following at the command line:
 
 [OpenStack documentation](https://docs.openstack.org/mitaka/user-guide/cli_stop_and_start_an_instance.html){.external}.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

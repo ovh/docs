@@ -413,9 +413,6 @@ Ce groupe de permissions reprend les droits anciennement porté par le rôle nic
           "action": "publicCloudProject:apiovh:*"
         },
         {
-          "action": "sharepoint:apiovh:*"
-        },
-        {
           "action": "sms:apiovh:*"
         },
         {
@@ -701,9 +698,6 @@ Ce groupe de permissions reprend les droits anciennement porté par le rôle nic
         },
         {
           "action": "publicCloudProject:apiovh:terminate"
-        },
-        {
-          "action": "sharepoint:apiovh:serviceInfos/edit"
         },
         {
           "action": "sms:apiovh:serviceInfos/edit"

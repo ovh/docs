@@ -1,8 +1,11 @@
 ---
 title: Configurare la rete su ESXi sulle gamme High Grade & SCALE
 excerpt: Come configurare la rete su ESXi sulle gamme High Grade & SCALE
-updated: 2022-05-09
+updated: 2024-09-13
 ---
+
+> [!warning]
+> L'hypervisor ESXi non Ã¨ piÃ¹ supportato da OVHcloud. Per maggiori informazioni, visita [questa pagina dedicata](/pages/bare_metal_cloud/dedicated_servers/esxi-end-of-support).
 
 > [!primary]
 > Questa traduzione Ã¨ stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
@@ -14,6 +17,8 @@ Sulle gamme High Grade & SCALE, il funzionamento degli Additional IP in modalitÃ
 
 > [!primary]
 >
+> Entro la fine del 2024 questa funzionalitÃ  sarÃ  consegnata per tutte le gamme High Grade, SCALE & ADVANCE.
+>
 > Ad oggi, la documentazione include solo la soluzione tramite la vRack.
 >
 
@@ -23,9 +28,9 @@ Sulle gamme High Grade & SCALE, il funzionamento degli Additional IP in modalitÃ
 
 * Disporre di un blocco pubblico di indirizzi IP nel proprio account, con almeno quattro indirizzi. Il blocco deve essere puntato verso la vRack.
 * Aver selezionato un intervallo di indirizzi IP privati
-* Disporre di un [server dedicato compatibile con la vRack](https://www.ovhcloud.com/it/bare-metal/){.external}
+* Disporre di un [server dedicato compatibile con la vRack](/links/bare-metal/bare-metal){.external}
 * Aver attivato un servizio [vRack](https://www.ovh.it/soluzioni/vrack/){.external}
-* Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+* Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 
 ## Procedura
 
@@ -44,7 +49,7 @@ Sulle gamme High Grade & SCALE, il funzionamento degli Additional IP in modalitÃ
 
 ### Additional IP via vRack
 
-Per prima cosa, aggiungi il tuo blocco pubblico di indirizzi IP alla vRack. Accedi alla sezione `Bare Metal Cloud`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e apri il menu `vRack`{.action}.
+Per prima cosa, aggiungi il tuo blocco pubblico di indirizzi IP alla vRack. Accedi alla sezione `Bare Metal Cloud`{.action} del tuo [Spazio Cliente OVHcloud](/links/manager){.external} e apri il menu `vRack`{.action}.
 
 Seleziona la tua vRack nella lista per visualizzare la lista dei servizi ammissibili. Clicca sul blocco pubblico di indirizzi IP che vuoi aggiungere alla vRack e poi clicca su `Aggiungi`{.action}.
 
@@ -61,7 +66,7 @@ Un primo vSwitch esiste ma comporta solo un'interfaccia `vmnic2`.
 
 > [!primary]
 >
-> Verifica che la tua configurazione sia analoga. Le informazioni relative ai MAC e alle interfacce pubbliche o private sono disponibili nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) o tramite l'API OVHcloud.
+> Verifica che la tua configurazione sia analoga. Le informazioni relative ai MAC e alle interfacce pubbliche o private sono disponibili nello [Spazio Cliente OVHcloud](/links/manager) o tramite l'API OVHcloud.
 >
 
 #### Spiegazioni

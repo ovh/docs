@@ -201,11 +201,11 @@ Alguns conselhos para que os seus ficheiros sejam o mais leves possível:
 
 Por razões de legibilidade, convém armazenar as suas imagens num diretório dedicado:
 
-![Arborescência de ficheiros e pastas](images/create_your_personal_webpage_1.png){.thumbnail}
+![Arborescência de ficheiros e pastas](/pages/assets/screens/other/web-tools/vscode/create_your_personal_webpage_1.png){.thumbnail}
 
 Consideremos o caso de um ficheiro em formato *PNG*. Coloque-o no diretório "imagens":
 
-![Arborescência de ficheiros e pastas com imagem](images/create_your_personal_webpage_2.png){.thumbnail}
+![Arborescência de ficheiros e pastas com imagem](/pages/assets/screens/other/web-tools/vscode/create_your_personal_webpage_2.png){.thumbnail}
 
 Vamos agora criar um novo parágrafo no qual colocaremos a imagem (neste exemplo, não especificamos o tamanho de apresentação da imagem em píxeis). O browser irá apresentá-lo em função do seu tamanho original (em forma de ficheiro).
 
@@ -229,7 +229,7 @@ Vamos agora criar um novo parágrafo no qual colocaremos a imagem (neste exemplo
 
 O resultado no seu browser deverá ser o seguinte:
 
-![Resultado do código HTML no browser](images/create_your_personal_webpage_3_pt.png){.thumbnail}
+![Resultado do código HTML no browser](/pages/assets/screens/other/browsers/web-pages/create_your_personal_webpage_3_pt.png){.thumbnail}
 
 ### Aplicar configuração ao seu conteúdo graças aos estilos CSS
 
@@ -242,7 +242,7 @@ As folhas de estilo permitem alterar a aparência e o comportamento dos elemento
 
 Tal como para os ficheiros HTML, os ficheiros CSS podem ser criados com qualquer editor de texto. A extensão destes ficheiros deve estar em *.css*.
 
-![Colocação do ficheiro CSS](images/create_your_personal_webpage_4.png){.thumbnail}
+![Colocação do ficheiro CSS](/pages/assets/screens/other/web-tools/vscode/create_your_personal_webpage_4.png){.thumbnail}
 
 Agora temos de ligar este ficheiro CSS, que designámos por convenção *style.css*, à nossa página HTML. Esta ligação é realizada adicionando um balizas `<link>` no balizador `<head>` no ficheiro index.html:
 
@@ -301,7 +301,7 @@ Podem ver que os textos estão agora colados nas margens do navegador.
 
 A propriedade padding define o bordo rotativo (margem interior), ou seja, o espaço exterior do bloco que contém o texto (ou qualquer elemento). O esquema seguinte ilustra a correspondência destes termos no chamado "modelo de caixa" em CSS:
 
-![Modelo de caixa CSS](images/create_your_personal_webpage_5.png){.thumbnail}
+![Modelo de caixa CSS](/pages/assets/schemas/web-hosting/create_your_personal_webpage_5.png){.thumbnail}
 
 ### Melhorar a estrutura HTML do documento
 
@@ -449,4 +449,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

@@ -1,7 +1,7 @@
 ---
 title: "Gestionar los mensajes de correo automatizados"
 excerpt: "Descubra cómo realizar el seguimiento y la gestión de los emails automatizados enviados desde un alojamiento web de OVHcloud"
-updated: 2023-12-04
+updated: 2024-09-05
 ---
 
 > [!primary]
@@ -35,13 +35,13 @@ Los emails automatizados son mensajes enviados a través de scripts. Generalment
 
 El seguimiento y la gestión del correo automatizado de su alojamiento web de OVHcloud se realizan desde su [área de cliente de OVHcloud](/links/manager){.external}. Una vez que se haya conectado, acceda al apartado `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Más`{.action} y haga clic en `Scripts de correo electrónico`{.action}.
 
-![hosting](images/go-to-email-scripts-tab.png){.thumbnail}
+![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/email-scripts/go-to-email-scripts-tab.png){.thumbnail}
 
 Se abrirá una página en la que podrá consultar y gestionar los mensajes de correo automatizados enviados desde su [alojamiento web de OVHcloud](/links/web/hosting).
 
 ### Presentación del apartado "Scripts de correo electrónico"
 
-![hosting](images/tab.png){.thumbnail}
+![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/email-scripts/tab.png){.thumbnail}
 
 La página muestra varios datos que le permiten visualizar la actividad del envío de mensajes de correo automatizados generados desde sus scripts:
 
@@ -59,9 +59,10 @@ La página muestra varios datos que le permiten visualizar la actividad del env�
 
 A la derecha, varios botones permiten gestionar el envío de mensajes de correo automatizados desde el alojamiento web. En función del estado del servicio, algunas opciones pueden no estar disponibles.
 
+- **Eliminar los mesajes**: borra los emails que haya en la cola de espera y desbloquea el envío de emails.
+- **Mensajes en error** : permite el acceso a los logs de los últimos mensajes de correo electrónico que se hayan encontrado en error de envío. Encontrará las direcciones de correo electrónico afectadas con el error asociado. Atención: Este historial no se restablecerá aunque decida `Eliminar los mesajes`{.action} o `Desbloquear el envío`{.action}.
 - **Bloquear el envío** : bloquea la distribución de los envíos de mensajes de correo automatizados de su alojamiento web. Los emails generados por sus scripts después del bloqueo no se enviarán, sino que se conservarán en una cola de espera durante un máximo de 72 horas.
 - **Desbloquear el envío**: desbloquea el envío de los emails automatizados de su alojamiento web. Los mensajes de correo presentes en la cola de espera también se reenviarán.
-- **Purgar el correo**: borra los emails que haya en la cola de espera y desbloquea el envío de emails.
 
 Para realizar la acción deseada, haga clic en el botón correspondiente y seleccione `Aceptar`{.action}. En algunos casos, la acción deseada puede tardar varias decenas de minutos en ser plenamente efectiva.
 
@@ -78,7 +79,7 @@ Si el estado del servicio permite el envío de mensajes de correo electrónico g
 
 ```bash
 <?php
-$to = "RecipientEmail@adress.tld"; 
+$to = "RecipientEmail@address.tld"; 
 $subject = "Test mail PHP"; 
 $content = "The body/content of the Email";
 $headers = "From: Website <SendingEmail@address.tld>\r\nReply-To: SendingEmail@address.tld";
@@ -129,7 +130,7 @@ Este estado se produce cuando se han enviado mensajes considerados de spam desde
 
 Por lo general, el bloqueo se acompaña por el envío de un email titulado **"Abuso con su alojamiento dominio.tld"** generado automáticamente por nuestros robots de seguridad:
 
-![hosting](images/email-script-disabled.png){.thumbnail}
+![hosting](/pages/assets/screens/email-sending-to-customer/webhosting/email-script-disabled.png){.thumbnail}
 
 Existen tres posibles situaciones en relación con esta situación:
 
@@ -199,17 +200,6 @@ Aunque le recomendamos encarecidamente que prefiera utilizar la función "mail()
 > Los emails enviados con un script que utilicen una configuración SMTP no podrán ser gestionados y seguidos desde su [área de cliente OVHcloud](/links/manager).
 > 
 
-Para ello, puede utilizar el siguiente script sustituyendo únicamente los valores `Host`, `Username` y `Password` por sus propios parámetros SMTP:
-
-```bash
-$mail->Host = "your.smtp.server";
-$mail->SMTPAuth = true; 
-$mail->SMTPSecure = "ssl";
-$mail->Port = 465; 
-$mail->Username = "e-mail@adress.tld"; 
-$mail->Password = "YourEmailPassword"; 
-```
-
 > [!primary]
 >
 > Si utiliza una dirección de correo electrónico de OVHcloud y únicamente en este caso, puede utilizar también el `SMTPSecure` *"starttls"* o *"tls"* con el `Port` **587**. Sin embargo, el `SMTPSecure` *"ssl"* con el `Port` **465** sigue siendo la configuración que debe primar sobre nuestra infraestructura.
@@ -227,4 +217,4 @@ Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con 
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

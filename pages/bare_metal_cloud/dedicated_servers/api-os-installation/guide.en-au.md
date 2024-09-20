@@ -1,16 +1,16 @@
 ---
 title: OVHcloud API and OS Installation
 excerpt: Use OVHcloud API to install or re-install an OS on your dedicated server
-updated: 2024-04-04
+updated: 2024-08-13
 ---
 
 ## Objective
 
-Fully automating OS installation or reinstallation on a [dedicated server](https://www.ovhcloud.com/en-au/bare-metal/) with the [OVHcloud API](/pages/manage_and_operate/api/first-steps) can be interesting in various situations.
+Fully automating OS installation or reinstallation on a [dedicated server](/links/bare-metal/bare-metal) with the [OVHcloud API](/pages/manage_and_operate/api/first-steps) can be interesting in various situations.
 
 ## Requirements
 
-- A [dedicated server](https://www.ovhcloud.com/en-au/bare-metal/) in your OVHcloud account
+- A [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account
 - Access to the [OVHcloud API](/pages/manage_and_operate/api/first-steps)
 
 > [!warning]
@@ -22,9 +22,9 @@ Fully automating OS installation or reinstallation on a [dedicated server](https
 
 ### OS Compatibility <a name="os-compatibility"></a>
 
-Log in to the [API console](https://ca.api.ovh.com/) and go to the `/dedicated/server`{.action} section.
+Log in to the [API console](https://api.ovh.com/) and go to the `/dedicated/server`{.action} section.
 
-You can list all your [dedicated servers](https://www.ovhcloud.com/en-au/bare-metal/) with the following API call:
+You can list all your [dedicated servers](/links/bare-metal/bare-metal) with the following API call:
 
 > [!api]
 >
@@ -62,7 +62,7 @@ You can find interesting information such as the following:
 |license/os|Information about OS license: licensing contract URL and licensing type|
 |license/usage|Same as license/os, but at the software layer if applicable|
 |filesystems|Compatible file systems types|
-|hardRaidConfiguration,softRaidOnlyMirroring,lvmReady|Compatibility with hardware raids, software raids and LVM²|
+|softRaidOnlyMirroring,lvmReady|Compatibility with hardware raids, software raids and LVM²|
 |inputs|OS specific questions (see explanation below)|
 
 ¹ Customers that don't use images from the OVHcloud catalogue (installation from a custom image ([BYOI](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image)/[BYOLinux](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-linux)), installation over the network, or manually via IPMI) are not affected by this limitation.<br />
@@ -93,12 +93,20 @@ Example of specific questions for Debian 12 (Bookworm):
 {
     "inputs": [
         {
-            "default": "",
             "name": "sshKey",
-            "mandatory": false,
-            "enum": [],
             "description": "SSH Public Key",
-            "type": "sshPubKey"
+            "default": "",
+            "mandatory": false,
+            "type": "sshPubKey",
+            "enum": []
+        },
+        {
+            "name": "postInstallationScript",
+            "description": "Post-Installation Script",
+            "default": "",
+            "mandatory": false,
+            "type": "text",
+            "enum": []
         }
     ]
 }
@@ -110,14 +118,33 @@ Example of specific questions for Windows Server 2022 Standard (Core):
 {
     "inputs": [
         {
+            "name": "language",
+            "description": "Display Language",
             "default": "en-us",
             "mandatory": false,
             "type": "enum",
-            "name": "language",
-            "description": "Display Language",
             "enum": [
                 "en-us",
                 "fr-fr"
+            ]
+        },
+        {
+            "name": "postInstallationScript",
+            "description": "Post-Installation Script",
+            "default": "",
+            "mandatory": false,
+            "type": "text",
+            "enum": []
+        },
+        {
+            "name": "postInstallationScriptExtension",
+            "description": "Post-Installation Script File Extension",
+            "default": "ps1",
+            "mandatory": true,
+            "type": "enum",
+            "enum": [
+                "ps1",
+                "cmd"
             ]
         }
     ]
@@ -139,7 +166,7 @@ Each question has the following attributes:
 
 ### Disk Groups <a name="disk-group"></a>
 
-Some [dedicated servers](https://www.ovhcloud.com/en-au/bare-metal/) have multiple groups of disks. For example, one group with SATA disks and another group with SSD disks. Those servers are sometimes also called **hybrid servers**.
+Some [dedicated servers](/links/bare-metal/bare-metal) have multiple groups of disks. For example, one group with SATA disks and another group with SSD disks. Those servers are sometimes also called **hybrid servers**.
 
 To list the disk groups and their disks, you can use the following API call in order to identify the disk group on which you want the OS to be installed:
 
@@ -234,7 +261,9 @@ With the following parameters:
 - Key must be the `name` of the question.
 - Value must be the answer to the question, in the requested `type`.
 
-Payload example to install Debian 12 (Bookworm) with SSH key based authentication:
+#### Linux payload example
+
+The following payload will install Debian 12 (Bookworm) with SSH key-based authentication and a custom bash post-installation script:
 
 ```json
 {
@@ -246,12 +275,38 @@ Payload example to install Debian 12 (Bookworm) with SSH key based authenticatio
     {
       "key": "sshKey",
       "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQC9xPpdqP3sx2H+gcBm65tJEaUbuifQ1uGkgrWtNY0PRKNNPdy+3yoVOtxk6Vjo4YZ0EU/JhmQfnrK7X7Q5vhqYxmozi0LiTRt0BxgqHJ+4hWTWMIOgr+C2jLx7ZsCReRk+fy5AHr6h0PHQEuXVLXeUy/TDyuY2JPtUZ5jcqvLYgQ== my-nuclear-power-plant"
+    },
+    {
+      "key": "postInstallationScript",
+      "value": "IyEvYmluL2Jhc2gKZWNobyAiY291Y291IHBvc3RJbnN0YWxsYXRpb25TY3JpcHQiID4gL29wdC9jb3Vjb3UKY2F0IC9ldGMvbWFjaGluZS1pZCAgPj4gL29wdC9jb3Vjb3UKZGF0ZSAiKyVZLSVtLSVkICVIOiVNOiVTIiAtLXV0YyA+PiAvb3B0L2NvdWNvdQo="
     }
   ]
 }
 ```
 
-Payload example to install Windows Server 2022 Standard (Core) in French:
+Even though the post-installation script could be sent to API directly in clear text by escaping special characters, it is recommended to send a base64-encoded script to the API. You can use the following UNIX/Linux command to encode your script:
+
+```bash
+cat my-script.sh | base64 -w0
+```
+
+Here is the clear-text post-installation bash script from the example above:
+
+```bash
+#!/bin/bash
+echo "coucou postInstallationScript" > /opt/coucou
+cat /etc/machine-id  >> /opt/coucou
+date "+%Y-%m-%d %H:%M:%S" --utc >> /opt/coucou
+```
+
+> [!primary]
+>
+> For UNIX/Linux OS, you can provide scripts in any programming language (if running stack is installed on the target OS) that matches the provided shebang.
+>
+
+#### Windows payload example
+
+The following payload will install Windows Server 2022 Standard (Core) in French with a custom PowerShell post-installation script.
 
 ```json
 {
@@ -263,12 +318,47 @@ Payload example to install Windows Server 2022 Standard (Core) in French:
     {
       "key": "language",
       "value": "fr-fr"
+    },
+    {
+      "key": "postInstallationScript",
+      "value": "ImNvdWNvdSBwb3N0SW5zdGFsbGF0aW9uU2NyaXB0UG93ZXJTaGVsbCIgfCBPdXQtRmlsZSAtRmlsZVBhdGggImM6XG92aHVwZFxzY3JpcHRcY291Y291LnR4dCIKKEdldC1JdGVtUHJvcGVydHkgLUxpdGVyYWxQYXRoICJSZWdpc3RyeTo6SEtMTVxTT0ZUV0FSRVxNaWNyb3NvZnRcQ3J5cHRvZ3JhcGh5IiAtTmFtZSAiTWFjaGluZUd1aWQiKS5NYWNoaW5lR3VpZCB8IE91dC1GaWxlIC1GaWxlUGF0aCAiYzpcb3ZodXBkXHNjcmlwdFxjb3Vjb3UudHh0IiAtQXBwZW5kCihHZXQtRGF0ZSkuVG9Vbml2ZXJzYWxUaW1lKCkuVG9TdHJpbmcoInl5eXktTU0tZGQgSEg6bW06c3MiKSB8IE91dC1GaWxlIC1GaWxlUGF0aCAiYzpcb3ZodXBkXHNjcmlwdFxjb3Vjb3UudHh0IiAtQXBwZW5kCg=="
     }
   ]
 }
 ```
 
-Example reply:
+Even though the post-installation script could be sent to API directly in clear text by escaping special characters, it is recommended to send a base64 encoded script to the API. You can use the following PowerShell command to encode your script:
+
+```ps1
+[System.Convert]::ToBase64String((Get-Content -Path .\my-script.ps1 -Encoding Byte))
+```
+
+Here is the clear-text post-installation PowerShell script from the example above:
+
+```ps1
+"coucou postInstallationScriptPowerShell" | Out-File -FilePath "c:\ovhupd\script\coucou.txt"
+(Get-ItemProperty -LiteralPath "Registry::HKLM\SOFTWARE\Microsoft\Cryptography" -Name "MachineGuid").MachineGuid | Out-File -FilePath "c:\ovhupd\script\coucou.txt" -Append
+(Get-Date).ToUniversalTime().ToString("yyyy-MM-dd HH:mm:ss") | Out-File -FilePath "c:\ovhupd\script\coucou.txt" -Append
+```
+
+As you can see, this PowerShell script for Windows is equivalent to the previous bash script for Linux.
+
+> [!primary]
+>
+> For Windows OS, you can provide PowerShell or batch scripts. If you want to provide a batch script, please provide `cmd` value to key `postInstallationScriptExtension` in the `userMetadata` payload.
+>
+
+While running Windows post-installation script, the following files while remain:
+
+- The script itself: `c:\ovhupd\script\custrun.ps1` (or `c:\ovhupd\script\custrun.cmd` if batch script).
+- Log file: `c:\ovhupd\script\customerscriptlog.txt`.
+
+> [!warning]
+>
+> The Windows post-installation script is run as the `Administrator` local account. You can finish your script with a `shutdown /l` command to logoff the Windows session, although the `Administrator` local account is locked and cannot be accessed remotely (via RDP connexion).
+>
+
+#### Example reply
 
 ```json
 {
@@ -317,4 +407,4 @@ You can also monitor the progress of the installation process with the following
 
 [Managing hardware RAID](/pages/bare_metal_cloud/dedicated_servers/raid_hard)
 
-Join our user community on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

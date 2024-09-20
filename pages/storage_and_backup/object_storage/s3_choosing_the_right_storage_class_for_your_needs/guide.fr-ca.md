@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Choisir une classe de stockage adaptée à vos besoins
-updated: 2022-09-27
+updated: 2024-06-11
 ---
 
 Le stockage objet « Object Storage » est une famille d’offres de stockage proposant des espaces de stockage performants, scalables et sécurisés.
@@ -39,6 +39,8 @@ La classe de stockage Cloud Archive (SWIFT) offre un service de stockage pour de
 | High Performance object storage - S3 API | Dernière génération d'offre | oui | non |
 | Standard object storage - SWIFT API  | Fin de mise en vente proche | partiel | oui |
 | Cloud Archive - SWIFT API | Fin de mise en vente proche | non | oui |
+
+La liste de tous les points de terminaison API est disponible [ici](/pages/storage_and_backup/object_storage/s3_location).
 
 ## Aller plus loin
 

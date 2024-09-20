@@ -33,7 +33,7 @@ Quando visitate un sito web che dispone di una connessione protetta, il vostro b
 
 Riconoscere a colpo d’occhio se un sito è sicuro è sempre più facile.
 
-![httpswebsite](images/url-not-secure.png){.thumbnail}
+![httpswebsite](/pages/assets/screens/other/browsers/urls/url-not-secure.png){.thumbnail}
 
 **Attivare il protocollo HTTPS su un sito Web è un’operazione delicata**. in effetti, la maggior parte delle azioni da effettuare si effettueranno nel codice sorgente del tuo sito Web. Se non vengono effettuate correttamente, rischi un calo di referenziazione (SEO) nei risultati proposti dai motori di ricerca (Google, Yahoo!, bing, ecc.), oppure un’inaccessibilità totale del tuo sito Web.
 
@@ -75,7 +75,7 @@ In caso contrario, sarà possibile pubblicare sul sito Web contenuti considerati
 
 Verificare che tutti i contenuti caricati dal sito Web provengano da una fonte protetta.
 
-![httpswebsite](images/connection-isnt-secure.png){.thumbnail}
+![httpswebsite](/pages/assets/screens/other/browsers/urls/connection-isnt-secure.png){.thumbnail}
 
 Ricordati che, anche nel caso in cui l’hosting disponga di un certificato SSL, i contenuti ospitati possono essere caricati in *HTTP* o in *HTTPS*. Dipende da come hai identificato questi contenuti nel codice del tuo sito web. per assicurarsi che tutti i contenuti caricati dal sito Web utilizzino il protocollo *HTTPS*.
 
@@ -165,4 +165,4 @@ Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [p
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

@@ -1,7 +1,7 @@
 ---
 title: Revertierung einer Flex-Instanz
 excerpt: Erfahren Sie hier, wie Sie eine Flex-Instanz über OpenStack Horizon zurücksetzen können
-updated: 2021-11-15
+updated: 2024-07-17
 ---
 
 > [!primary]
@@ -18,10 +18,18 @@ Wenn sich Ihre Infrastruktur weiterentwickelt, müssen Sie unter Umständen den 
 
 ## Voraussetzungen
 
-- Sie haben eine [Public Cloud Instanz](/pages/public_cloud/compute/public-cloud-first-steps#schritt-3-instanz-erstellen) mit der Flex-Option.
+- Sie haben eine [Public Cloud Instanz](/pages/public_cloud/compute/public-cloud-first-steps#configuration) mit der Flex-Option.
 - Sie haben Zugriff auf das [Horizon Interface](/pages/public_cloud/compute/introducing_horizon).
 
 ## In der praktischen Anwendung
+
+> [!warning] 
+> - Wenn Sie von einer Flex-Instanz auf eine klassische Instanz mit mehr Ressourcen umsteigen, wird dies als Upgrade betrachtet. In diesem Fall wird Ihnen die Differenz in Rechnung gestellt. Am Ende Ihres Abrechnungszeitraums erhalten Sie zwei Rechnungen.
+>
+> - Wenn Sie von einer Flex-Instanz auf eine klassische Instanz mit weniger Ressourcen upgraden, gilt dies als Downgrade. In diesem Fall wird Ihnen nichts in Rechnung gestellt.
+>
+> - Wenn Sie von einer Flex-Instanz zu einer klassischen Instanz mit denselben Ressourcen wechseln, wird Ihnen nichts in Rechnung gestellt.
+>
 
 Loggen Sie sich ins [Horizon Interface](https://horizon.cloud.ovh.net/auth/login/) ein wählen Sie oben links die korrekte Region aus.
 

@@ -1,7 +1,7 @@
 ---
 title: How to create and use SSH keys
 excerpt: Find out how to create SSH key pairs on your local device and use them to establish secure connections to your server
-updated: 2023-11-22
+updated: 2024-06-26
 ---
 
 ## Objective
@@ -14,8 +14,8 @@ This is generally the most secure and convenient connection method.
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
-- A [dedicated server](https://www.ovhcloud.com/en-ie/bare-metal/) or a [VPS](https://www.ovhcloud.com/en-ie/vps/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](/links/manager)
+- A [dedicated server](/links/bare-metal/bare-metal) or a [VPS](https://www.ovhcloud.com/en-ie/vps/) in your OVHcloud account
 - An SSH client application (command line or GUI)
 - Administrative access (sudo) via SSH to your server
 
@@ -32,6 +32,8 @@ Be sure to consult our "Getting started" guides: <a name="getstarted"></a>
 - For a [VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
 
 We recommend reading the [SSH introduction guide](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) as well.
+
+<a name="create-ssh-key"></a>
 
 ### Creating an SSH key pair
 
@@ -172,17 +174,17 @@ If it is not already installed (check your applications list or use the search f
 
 Open `PuTTYgen` and select a supported encryption algorithm. This example uses RSA. Enter 4096 as the number of bits in the bottom right corner, then click on the button `Generate`{.action}.
 
-![putty key](images/puttygen_01.png){.thumbnail}
+![putty key](/pages/assets/screens/other/web-tools/putty/puttygen_01.png){.thumbnail}
 
 Move your mouse cursor freely about the area below the progress bar:
 
-![putty key](images/puttygen_02.gif){.thumbnail}
+![putty key](/pages/assets/screens/other/web-tools/putty/puttygen_02.gif){.thumbnail}
 
 The key is ready when the progress bar is full.
 
-![putty key](images/puttygen_03.png){.thumbnail}
+![putty key](/pages/assets/screens/other/web-tools/putty/puttygen_03.png){.thumbnail}
 
-Copy the full key string to the clipboard in order to [add it to your server](#addserverkey) and optionally [import it into the OVHcloud Control Panel](#importkey). Save both keys as files by clicking the corresponding buttons and also enter a passphrase to protect them.
+Copy the full key string to the clipboard in order to [add it to your server](#addserverkey). Save both keys as files by clicking the corresponding buttons and also enter a passphrase to protect them.
 
 > [!warning]
 >
@@ -372,7 +374,7 @@ If you have followed the instructions in the sections [Creating an SSH key pair 
 
 Open `PuTTY` and expand the subsection `SSH` in the left-hand menu, then click on `Auth` and `Credentials`.
 
-![putty key](images/puttygen_04.png){.thumbnail}
+![putty key](/pages/assets/screens/other/web-tools/putty/puttygen_04.png){.thumbnail}
 
 Click on the `Browse`{.action} button and select the `PuTTY` private key file (`keyfile.ppk`) from the folder in which you have saved it.
 
@@ -380,7 +382,7 @@ The key file is now associated with the current SSH session. Switch to `Session`
 
 Enter a name for this connection under `Saved Sessions` and click on `Save`{.action} to add it to the list.
 
-![putty key](images/puttygen_05.png){.thumbnail}
+![putty key](/pages/assets/screens/other/web-tools/putty/puttygen_05.png){.thumbnail}
 
 From now on, you can click on this `Session` item and open a connection to your server. To test it, click on `Open`{.action}. If you have protected the key file with a passphrase, you have to enter it at this point.
 
@@ -390,54 +392,6 @@ To configure another server connection, repeat the steps:
 - [Add the public key to your server](#addserverkey).
 - [Enter the server details and add the key file in `PuTTY`](#puttykeys).
 
-### Importing your SSH key into the OVHcloud Control Panel <a name="importkey"></a>
-
-The OVHcloud Control Panel allows you to store public keys, if they were created with one of the supported encryption types. This feature can save you some time when you configure a new server or reinstall one because you do not have to [add the public key to your server](#addserverkey) manually. 
-
-Open the sidebar navigation by clicking on your name in the top right corner and use the shortcut `Products and services`{.action}.
-
-![SSH key control panel](images/SSH_keys_panel_2022.png){.thumbnail}
-
-In `My services`, switch to the `SSH keys`{.action} tab and click on `Add an SSH key`{.action}.
-
-![SSH key control panel](images/SSH_keys_panel_2.1.png){.thumbnail}
-
-Select `Dedicated` from the drop-down menu.
-
-In the new window, enter an ID (a name of your choice) for the key. Paste the key string (copied from [your `.pub` file](#publickey) or [the `PuTTYgen` window](#useputty)) into the `Key` field.
-
-![SSH key control panel](images/SSH_keys_panel_3.png){.thumbnail}
-
-If you have copied the full output, the identifier after the key should already be appended. Note that in order to store your key, you will need to specify your local identifier after the pasted key. (See the example format above.) This is a requirement of the OVHcloud Control Panel. Click `Confirm`{.action} to store your public key.
-
-> [!primary]
->
-> All keys saved in the `Dedicated` section are available to preinstall on a dedicated server or a VPS. Regarding SSH keys for Public Cloud services, please refer to [this guide](/pages/public_cloud/compute/public-cloud-first-steps).
->
-
-### Setting a default SSH key (only for the section "Dedicated") <a name="cpsshkey"></a>
-
-If you have added multiple SSH keys in your Control Panel, it is possible to set one key to be used as the default key on the account. 
-
-> [!warning]
-> Please note that once a default key is set, it will also be used as the means of connection once a server is rebooted in rescue mode. To receive a password instead, the default key must be [disabled](#disablesshkey) before rebooting the server in rescue mode. You can find more information in the [Go further](#gofurther) section of this guide.
-> 
-
-Open the sidebar navigation by clicking on your account name in the top right corner and use the shortcut `Products and services`{.action} to arrive at the `SSH keys`{.action} section.
-
-![SSH key control panel](images/SSH_keys_panel_2022.png){.thumbnail}
-
-In the list of keys, click on the `Key` icon next to the SSH key of your choice to set it as the default key.
-
-![SSH key control panel](images/defaultsshkey.png){.thumbnail}
-
-Once done, a popup message will appear confirming the key has been set as default and the `Key` icon will be highlighted.
-
-![SSH key control panel](images/defaultsshkey1.png){.thumbnail}
-
-### Disabling the default SSH key <a name="disablesshkey"></a>
-
-To disable the current **default SSH key**, access the `SSH keys`{.action} section as described above. Click on the blue `Key` icon next to the corresponding SSH key to disable the default option.
 
 ## Go further <a name="gofurther"></a>
 
@@ -447,6 +401,6 @@ To disable the current **default SSH key**, access the `SSH keys`{.action} secti
 
 [VPS rescue mode](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ie/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our user community on <https://community.ovh.com/en/>.

@@ -1,7 +1,7 @@
 ---
 title: "Come utilizzare la console IPMI con un server dedicato"
 excerpt: "Scopri come accedere al tuo server dal tuo Spazio Cliente senza utilizzare software esterno"
-updated: 2024-03-01
+updated: 2024-07-23
 ---
 
 > [!primary]
@@ -10,85 +10,109 @@ updated: 2024-03-01
 
 ## Obiettivo
 
-La console IPMI (Intelligent Platform Management Interface) consente di stabilire una connessione diretta al tuo server dedicato senza utilizzare software esterni (ad esempio un terminale o PuTTY). Questa guida ti mostra come avviare la console.
-
-Attenzione: incontrerai spesso anche il termine KVM (Keyboard Video and Mouse), che viene utilizzato dai VPS per questa soluzione.
+La console IPMI (Intelligent Platform Management Interface) permette di stabilire una connessione diretta al server dedicato senza dipendere dallo stato di connettività del sistema operativo. Questa guida ti mostra come avviare la console.
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 > [!warning]
-> Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](https://eco.ovhcloud.com/it/about/).
+> Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](/links/bare-metal/eco-about).
 >
-> Per maggiori informazioni, consulta la nostra [a confronto](https://eco.ovhcloud.com/it/compare/).
+> Per maggiori informazioni, consulta la nostra [a confronto](/links/bare-metal/eco-compare).
 
 <a name="procedure"></a>
 
 ## Procedura
 
-La connessione all'IPMI può essere effettuata principalmente tramite diversi metodi: l'applet Java (consigliato) o il browser (Serial Over LAN).
+Per connettersi all’IPMI è possibile utilizzare diversi metodi¹. Le chiavi SSH archiviate sul server non saranno utilizzate per queste connessioni. Ecco una tabella riassuntiva:
 
-- **Applet Java** : permette di utilizzare uno strumento KVM (tastiera, video, topi) tramite una console Java per effettuare le azioni desiderate. Esistono due opzioni: tastiera e mouse.
+|Nome Metodo|Altro Nome|Descrizione|Copia-Incolla|Unità ISO Virtuale²|Esempi di casi d'uso|
+|---|---|---|---|---|---|
+|**KVM**³ via **browser Web**|**KVM HTML**|Emulazione dello schermo video attraverso un **canvas HTML**, esattamente come se si collegasse fisicamente una tastiera/mouse in USB e uno schermo video in VGA al proprio server dedicato.|❌|⚠️⁴|-- Diagnosi di un problema di boot del server dedicato.|
+|**KVM**³ via **applet Java**|**KVM Java**|Come per il KVM HTML, ad eccezione che l'emulazione si effettua tramite un **applet Java** al posto del canale HTML.|❌|✅|- Diagnosticare un problema di boot del server dedicato. <br />- Eseguire l'installazione di un OS specifico (escluso [catalogo](/links/bare-metal/os)) manualmente.|
+|**SoL**─ via **browser Web**|**SoL JavaScript**|Emulazione di un collegamento seriale tramite browser Web, esattamente come se si collegasse una console seriale in RS-232 fisicamente al server dedicato.|✅|❌|- Diagnosticare un problema di rete: recuperare i log e modificare i file di configurazione.|
+|**SoL**∕via **SSH**|**SoL SSH**|Come per SoL JavaScript, ad eccezione del fatto che l'emulazione avviene tramite un gateway SSH. Accedi con il tuo client SSH preferito a un server remoto in SSH, che trasferisce in seguito gli ordini in collegamento seriale al server dedicato.|✅|❌|- Idem SoL JavaScript ma da una macchina che non ha interfaccia grafica.|
 
-- **Browser (Serial Over LAN)** : permette di accedere a distanza alla console del server tramite un browser web.
+¹ In base alla compatibilità hardware del server dedicato (alcuni metodi non saranno disponibili nello [Spazio Cliente OVHcloud](/links/manager).<br />
+² Funzionalità che permette di montare un'immagine ISO memorizzata localmente sulla tua macchina sul server dedicato remoto, e quindi di installare un OS tramite l'IPMI.<br />
+³ KVM = Keyboard Video and Mouse<br />
+⁴ In base alla compatibilità hardware del tuo server dedicato: utilizza il KVM Java al posto del server se incompatibile.<br />
+⁵ Se il sistema operativo che vuoi installare non è disponibile nel [catalogo dei sistemi operativi disponibili sui server dedicati OVHcloud](/links/bare-metal/os), ti ricordiamo che puoi anche utilizzare un'immagine personalizzata: per maggiori dettagli, consulta [Bring Your Own Image (BYOI) e Bring Your Own Linux (BYOLinux)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image-versus-bring-your-own-linux).<br />
+⁶ SoL = Serial over Lan
 
-- Un terzo metodo, disponibile solo per i server più recenti, permette di utilizzare un tool KVM da un browser Web.
+Per attivare uno di questi metodi, accedi allo [Spazio Cliente OVHcloud](/links/manager). Nella sezione `Bare Metal Cloud`{.action}, clicca su `Server dedicati`{.action} e seleziona il tuo server, poi clicca sulla scheda `IPMI/KVM`{.action}.
 
-Per attivare uno di questi metodi, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Nella sezione `Bare Metal Cloud`{.action}, clicca su `Server dedicati`{.action} e seleziona il tuo server, poi clicca sulla scheda `IPMI`{.action}.
-
-### Da applet Java <a name="applet-java"></a>
+### Aprire un KVM tramite applet Java <a name="applet-java"></a>
 
 Per il corretto funzionamento dell'applet, è necessario che Java sia installato sul dispositivo. Se non lo hai ancora fatto, accedi alla [pagina ufficiale](https://www.java.com/en/download/){.external}.
 
-Nella sezione `IPMI`{.action} dello Spazio Cliente OVHcloud, clicca su `Da una applet Java (KVM)`{.action}:
+Nella sezione `Remote KVM`{.action} dello Spazio Cliente OVHcloud, clicca su `Da applet Java (KVM)`{.action}:
 
-![IPMI Java iniziato](images/java_ipmi_initiate_2022.png){.thumbnail}
+![Accesso KVM Java](images/ipmi-kvm-java-01.png){.thumbnail}
 
 Scarica il file `kvm.jnlp` quando sei invitato e lancialo:
 
-![Apertura IPMI Java](images/java_ipmi_activation.png){.thumbnail}
+![Apertura KVM Java](images/ipmi-kvm-java-02.png){.thumbnail}
 
 A questo punto accedi alla pagina di login. Inserisci le credenziali di `root`, come in caso di connessione da un terminale o da un software esterno:
 
-![Connessione Java IPMI](images/java_ipmi_login.png){.thumbnail}
+![Anteprima KVM Java](images/ipmi-kvm-java-03.png){.thumbnail}
 
 Da questo momento puoi gestire il tuo server.
 
-### Utilizza KVM sul tuo browser Web (solo per i server più recenti) <a name="kvm-browser"></a>
+### Aprire un KVM tramite browser Web <a name="kvm-browser"></a>
 
-Nella sezione `IPMI`{.action} dello Spazio Cliente OVHcloud, clicca su `Dal tuo navigatore (KVM)`{.action}:
+Nella sezione `Remote KVM`{.action} dello Spazio Cliente OVHcloud, clicca su `Dal browser (KVM)`{.action}:
 
-![IPMI browser](images/KVM-web-browser01.png){.thumbnail}
+![Accesso KVM HTML](images/ipmi-kvm-html-01.png){.thumbnail}
 
 L'attivazione richiede alcuni secondi. Un messaggio ti informerà della disponibilità della connessione via IPMI.
 
-![IPMI browser](images/KVM-web-browser02.png){.thumbnail}
+![Apertura KVM HTML](images/ipmi-kvm-html-02.png){.thumbnail}
 
-Clicca su `Accedi alla console (KVM)`{.action} per aprire la console nel tuo browser.
+Clicca su `Accedi alla console (KVM)`{.action} per aprire la console nel browser.
 
-![IPMI browser](images/KVM-web-browser03b.png){.thumbnail}
+![Anteprima KVM HTML](images/ipmi-kvm-html-03.png){.thumbnail}
 
-### Da browser in modalità Serial Over LAN (SOL)
+### Apri SoL via SSH <a name="sol-ssh"></a>
 
-Anche se ti consigliamo di connetterti tramite l'applet Java, puoi utilizzare l'IPMI anche come Serial Over LAN (SoL). Clicca su `Dal tuo browser (SoL)`{.action} nella sezione `IPMI`{.action} del tuo Spazio Cliente.
+Per maggiori informazioni sulla creazione di coppie di chiavi SSH, consulta [questa pagina](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#create-ssh-key).
 
-![Attiva la dichiarazione di integrità IPMI](images/sol_ipmi_activation_2022.png){.thumbnail}
+Nella sezione `Serial over LAN (SoL)`{.action} dello Spazio Cliente OVHcloud, clicca su `Aggiungi la chiave SSH`{.action}.
 
-> [!warning]
->
-> La connessione con SoL può richiedere alcuni minuti, motivo per cui è consigliabile utilizzare l'applet Java.
->
+![Accesso SoL SSH](images/ipmi-sol-sshkey-01.png){.thumbnail}
 
-### Testa e riavvia l'IPMI
+A questo punto si aprirà un popup in cui sarà possibile inserire la chiave pubblica SSH con la quale si desidera autenticarsi per accedere. Clicca su `Avvia la sessione SSL via SSH`{.action}.
+
+![SoL SSH chiave pubblica SSH](images/ipmi-sol-sshkey-02.png){.thumbnail}
+
+Quando la sessione è pronta, compare un messaggio di conferma e un URI, per permetterti di stabilire una connessione seriale al tuo server dedicato in SSH. Copiare l'URI negli appunti.
+
+![Apertura SoL SSH](images/ipmi-sol-sshkey-03.png){.thumbnail}
+
+Per maggiori informazioni sull'utilizzo di una chiave SSH per connettersi in SSH, consulta [questa pagina](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#multiplekeys).
+
+### Apri SoL tramite browser Web <a name="sol-browser"></a>
+
+Nella sezione `Serial over LAN (SoL)`{.action} dello Spazio Cliente OVHcloud, clicca su `Dal browser (SoL)`{.action}.
+
+![Accesso SoL JavaScript](images/ipmi-sol-html-01.png){.thumbnail}
+
+> [!primary]
+> Se il trasferimento verso il popup non avviene automaticamente, clicca comunque sul pulsante `Accedi alla console (SoL)`{.action}.
+
+![Apertura SoL JavaScript](images/ipmi-sol-html-02.png){.thumbnail}
+
+### Testare e riavviare l’IPMI <a name="ipmi-test-reboot"></a>
 
 È possibile che l'IPMI non risponda più. Se non riesci ad accedervi, per prima cosa esegui un test cliccando su `Testa IPMI`{.action} e visualizzando il risultato della diagnostica:
 
-![Test IPMI](images/ipmi_test_2022.png){.thumbnail}
+![Test IPMI](images/ipmi-test.png){.thumbnail}
 
 Se tutto è normale, come nel nostro esempio, probabilmente ti trovi di fronte a un problema locale (connessione a Internet, postazione locale). Se l'IPMI riscontra effettivamente un problema, hai la possibilità di riavviarlo cliccando su `Riavvia IPMI`{.action}.
 
-![Test IPMI](images/ipmi_reboot_2022.png){.thumbnail}
+![Reboot IPMI](images/ipmi-reboot.png){.thumbnail}
 
 Il riavvio dell'IPMI richiede alcuni minuti.
 
@@ -100,8 +124,10 @@ Il riavvio dell'IPMI richiede alcuni minuti.
 
 > [!warning]
 > OVHcloud non garantisce la funzionalità dei sistemi operativi installati tramite IPMI. Questo metodo deve essere preso in considerazione solo da un amministratore di server esperto.
+>
+> Le versioni a 64 bit di Java possono impedire l’apertura dei menu `Redirect ISO`/`Redirect CDROM` e provocare il blocco di JViewer.
 
-Per iniziare, apri [IPMI da una applet Java](./#applet-java) attraverso il tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca su `Device`{.action} nella barra dei menu e seleziona `Redirect ISO`{.action} nel menu a tendina.
+Per iniziare, apri [IPMI da una applet Java](#applet-java) attraverso il tuo [Spazio Cliente OVHcloud](/links/manager). Clicca su `Device`{.action} nella barra dei menu e seleziona `Redirect ISO`{.action} nel menu a tendina.
 
 ![Redirect_ISO](images/RedirectISO.jpg){.thumbnail}
 
@@ -123,7 +149,7 @@ Segui gli step per installare il sistema operativo. Ricordati di eliminare l'ISO
 > OVHcloud non garantisce la funzionalità dei sistemi operativi installati tramite IPMI. Questo metodo deve essere preso in considerazione solo da un amministratore di server esperto.
 >
 
-Per iniziare, apri [IPMI da una applet Java](./#applet-java) attraverso il tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca su `Virtual Media`{.action} e poi su `Virtual Storage`{.action}.
+Per iniziare, apri [IPMI da una applet Java](#applet-java) attraverso il tuo [Spazio Cliente OVHcloud](/links/manager). Clicca su `Virtual Media`{.action} e poi su `Virtual Storage`{.action}.
 
 ![Virtual storage](images/virtual_storage.png){.thumbnail}
 
@@ -155,7 +181,7 @@ Premi il tasto `F4` per salvare le modifiche e riavviare il server.
 > OVHcloud non garantisce la funzionalità dei sistemi operativi installati tramite IPMI. Questo metodo deve essere preso in considerazione solo da un amministratore di server esperto.
 >
 
-Dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) è possibile aprire la [console KVM](#kvm-browser).
+Dallo [Spazio Cliente OVHcloud](/links/manager) è possibile aprire la [console KVM](#kvm-browser).
 
 In questo caso, hai accesso alle stesse informazioni e funzionalità dei moduli IPMI basati su Java.
 
@@ -210,12 +236,12 @@ Riavvia il server con questo comando:
 ipmiutil reset -b
 ```
 
-Accedi alla [console IPMI](#procedure) dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Verrà visualizzato il menu BIOS del server.
+Accedi alla [console IPMI](#procedure) dal tuo [Spazio Cliente OVHcloud](/links/manager). Verrà visualizzato il menu BIOS del server.
 
 ![KVM BIOS](images/kvm_bios.png){.thumbnail}
 
 ## Per saperne di più
 
-Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](https://www.ovhcloud.com/it/professional-services/) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
+Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](/links/professional-services) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

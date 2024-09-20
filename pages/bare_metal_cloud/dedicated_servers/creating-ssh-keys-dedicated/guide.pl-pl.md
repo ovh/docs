@@ -1,7 +1,7 @@
 ---
 title: Twórz i używaj kluczy SSH
 excerpt: Dowiedz się, jak utworzyć parę kluczy SSH na Twoim komputerze i wykorzystać je do nawiązania bezpiecznego połączenia z serwerem
-updated: 2023-11-22
+updated: 2024-06-26
 ---
 
 > [!primary]
@@ -18,8 +18,8 @@ Jest to zazwyczaj najbezpieczniejsza i najwygodniejsza metoda połączenia.
 
 ## Wymagania początkowe
 
-- Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
-- Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/) lub [VPS](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud
+- Dostęp do [panelu klienta OVHcloud](/links/manager)
+- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal) lub [VPS](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud
 - Zainstaluj najpierw aplikację klienta SSH (wiersz poleceń lub GUI)
 - Dostęp administratora (sudo) przez SSH
 
@@ -36,6 +36,8 @@ Sprawdź przewodniki "Pierwsze kroki": <a name="getstarted"></a>
 - dla serwera [VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps).
 
 Zapoznaj się również z przewodnikiem dotyczącym wprowadzenia do [protokołu SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
+
+<a name="create-ssh-key"></a>
 
 ### Tworzenie pary kluczy SSH
 
@@ -178,17 +180,17 @@ Jeśli aplikacja nie jest jeszcze zainstalowana (sprawdź listę aplikacji lub u
 
 Otwórz polecenie `PuTTYgen` i wybierz jeden z obsługiwanych algorytmów szyfrowania. W tym przykładzie zastosowano RSA. Wpisz 4096 jako liczbę bitów w prawym dolnym rogu i kliknij przycisk `Generate`{.action}.
 
-![klucz PuTTy](images/puttygen_01.png){.thumbnail}
+![klucz PuTTy](/pages/assets/screens/other/web-tools/putty/puttygen_01.png){.thumbnail}
 
 Przesuwaj kursor myszy swobodnie w obszarze pod paskiem postępu:
 
-![klucz PuTTy](images/puttygen_02.gif){.thumbnail}
+![klucz PuTTy](/pages/assets/screens/other/web-tools/putty/puttygen_02.gif){.thumbnail}
 
 Klucz jest gotowy, gdy pasek postępu jest pełny.
 
-![klucz PuTTy](images/puttygen_03.png){.thumbnail}
+![klucz PuTTy](/pages/assets/screens/other/web-tools/putty/puttygen_03.png){.thumbnail}
 
-Skopiuj kompletny ciąg klucza do Schowka, aby go [dodać do serwera](#addserverkey) i ewentualnie zaimportować [zaimportować do panelu klienta](#importkey). Zapisz oba klucze jako pliki, klikając odpowiednie przyciski i wprowadzając hasło (*passphrase*), aby je chronić.
+Skopiuj kompletny ciąg klucza do Schowka, aby go [dodać do serwera](#addserverkey). Zapisz oba klucze jako pliki, klikając odpowiednie przyciski i wprowadzając hasło (*passphrase*), aby je chronić.
 
 > [!warning]
 >
@@ -378,7 +380,7 @@ Jeśli postępujesz zgodnie z instrukcjami w sekcjach "[Tworzenie pary kluczy SS
 
 Otwórz `PuTTY` i rozwiń podsekcję `SSH` w menu po lewej stronie, następnie kliknij `Auth` i `Credentials`.
 
-![klucz PuTTy](images/puttygen_04.png){.thumbnail}
+![klucz PuTTy](/pages/assets/screens/other/web-tools/putty/puttygen_04.png){.thumbnail}
 
 Kliknij przycisk `Browse`{.action} i wybierz plik klucza prywatnego `PuTTY` (`keyfile.ppk`) w folderze, w którym go zapisałeś.
 
@@ -386,7 +388,7 @@ Plik klucza jest teraz skojarzony z bieżącą sesją SSH. Przejdź na `Session`
 
 Wprowadź nazwę tego połączenia w polu `Saved Sessions` i kliknij `Save`{.action}, aby dodać je do listy.
 
-![klucz PuTTy](images/puttygen_05.png){.thumbnail}
+![klucz PuTTy](/pages/assets/screens/other/web-tools/putty/puttygen_05.png){.thumbnail}
 
 Od tej chwili możesz kliknąć na ten element `session` i otworzyć połączenie z Twoim serwerem. Aby go przetestować, kliknij na `Open`{.action}. Jeśli plik klucza jest chroniony hasłem, wpisz je na tym etapie.
 
@@ -396,55 +398,6 @@ Aby skonfigurować inne połączenie z serwerem, powtórz następujące kroki:
 - [Dodaj klucz publiczny do swojego serwera](#addserverkey).
 - [Podaj szczegóły dotyczące serwera i dodaj plik klucza do `PuTTY`](#puttykeys).
 
-### Importuj klucz SSH do Panelu klienta <a name="importkey"></a>
-
-Panel klienta OVHcloud umożliwia przechowywanie kluczy publicznych, jeśli zostały utworzone przy użyciu jednego z obsługiwanych typów szyfrowania. Ta funkcja może zaoszczędzić czas podczas konfigurowania lub reinstalacji nowego serwera, ponieważ nie musisz [dodawać klucza publicznego ręcznie do Twojego serwera](#addserverkey). 
-
-Otwórz boczny pasek nawigacyjny, klikając swoją nazwę w prawym górnym rogu i użyj skrótu `Produkty i usługi`{.action}.
-
-![Przestrzeń zarządzania kluczami SSH](images/SSH_keys_panel_2022.png){.thumbnail}
-
-W `Moje usługi` przejdź do zakładki `Klucze SSH`{.action} i kliknij na `Dodaj klucz SSH`{.action}.
-
-![Przestrzeń zarządzania kluczami SSH](images/SSH_keys_panel_2.1.png){.thumbnail}
-
-Z menu rozwijanego wybierz opcję `Dedykowany`.
-
-W nowym oknie wpisz ID (wybraną nazwę) klucza. Wklej ciąg klucza (skopiowany z [Twojego pliku `.pub`](#publickey) lub z [okna `PuTTYgen`](#useputty) w polu `Key`).
-
-![Przestrzeń zarządzania kluczami SSH](images/SSH_keys_panel_3.png){.thumbnail}
-
-Jeśli pełne dane wyjściowe zostały skopiowane, identyfikator za kluczem musi już zostać dodany. Uwaga: aby zapisać klucz, po wklejonym kluczu *podaj swój lokalny identyfikator. (Zobacz przykład powyżej). Jest to wymagane w Panelu klienta OVHcloud. Kliknij przycisk `Potwierdź`{.action}, aby zapisać swój klucz publiczny.
-
-> [!primary]
->
-> Wszystkie klucze zarejestrowane w sekcji `Dedykowane` są wstępnie zainstalowane na serwerze dedykowanym lub VPS. Jeśli chodzi o klucze SSH dla usług Public Cloud, zapoznaj się z [tym przewodnikiem](/pages/public_cloud/compute/public-cloud-first-steps).
->
-
-### Ustaw domyślny klucz SSH (tylko dla sekcji "Dedykowane") <a name="cpsshkey"></a>
-
-Jeśli dodałeś kilka kluczy SSH w Panelu klienta OVHcloud, możesz zdefiniować klucz, który będzie używany jako klucz domyślny dla konta. 
-
-> [!warning]
-> Pamiętaj, że po skonfigurowaniu klucza domyślnego będzie on używany również jako sposób połączenia podczas restartu serwera w trybie Rescue. Aby otrzymać hasło, przed zrestartowaniem serwera w trybie rescue należy [dezaktywować](#disablesshkey) klucz domyślny. Więcej informacji na ten temat znajdziesz w sekcji [Sprawdź również](#gofurther) niniejszego przewodnika.
-> 
-
-Otwórz pasek nawigacji bocznej, klikając nazwę konta w prawym górnym rogu i użyj skrótu `Produkty i usługi`{.action}, aby przejść do sekcji `Klucze SSH`{.action}.
-
-![Przestrzeń zarządzania kluczami SSH](images/SSH_keys_panel_2022.png){.thumbnail}
-
-Na liście kluczy kliknij ikonę `Klucz` obok wybranego klucza SSH, aby ustawić go jako klucz domyślny.
-
-![Przestrzeń zarządzania kluczami SSH](images/defaultsshkey.png){.thumbnail}
-
-Po wykonaniu tej czynności zostanie wyświetlony komunikat potwierdzający, że klucz jest ustawiony jako domyślny, a ikona `Klucz` zostanie podświetlona.
-
-![Przestrzeń zarządzania kluczami SSH](images/defaultsshkey1.png){.thumbnail}
-
-### Wyłącz domyślny klucz SSH <a name="disablesshkey"></a>
-
-Aby dezaktywować klucz SSH jako **domyślny**, przejdź do sekcji `Klucze SSH`{.action}, jak opisano powyżej. Kliknij ikonę `Niebieski` klucz obok odpowiedniego klucza SSH, aby wyłączyć opcję domyślną.
-
 ## Sprawdź również <a name="gofurther"></a>
 
 [Wprowadzenie do protokołu SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
@@ -453,6 +406,6 @@ Aby dezaktywować klucz SSH jako **domyślny**, przejdź do sekcji `Klucze SSH`{
 
 [Tryb Rescue na serwerze VPS](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
-Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
+Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](/links/professional-services), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
 
 Dołącz do naszej społeczności użytkowników: <https://community.ovh.com/en/>.

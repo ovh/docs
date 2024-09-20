@@ -1,7 +1,7 @@
 ---
-title: "MX Plan - Utiliser le webmail Zimbra"
+title: "Utiliser le webmail Zimbra"
 excerpt: "Découvrez l'interface du webmail Zimbra pour vos adresses e-mail MX Plan OVHcloud"
-updated: 2024-03-11
+updated: 2024-08-26
 ---
 
 <style>
@@ -50,6 +50,9 @@ OVHcloud fournit un service de webmail appelé Zimbra pour accéder à un compte
     - [Gestion des dossiers](#contacts-folders)
     - [Gestion des listes](#contacts-lists)
     - [Importer / Exporter des contacts](#import-export)
+- [Calendrier](#calendar)
+    - [Gestion des calendriers](#calendar-management)
+    - [Tâches](#tasks)
 - [Filtres](#filters)
     - [Comprendre comment paramètrer ses filtres](#filters-howto)
     - [Créer un filtre](#filters-creation)
@@ -285,6 +288,31 @@ Votre interface Zimbra dispose de 2 menus de configuration :
 >>
 >> Pour configurer vos filtres, consultez la section « [Filtres](#filters) » de cette documentation.
 >>
+> **Agenda et rappels**
+>>
+>> Retrouvez ici les paramètres liés à vos [calendriers](#calendar).
+>>
+>> **Paramètres généraux des agendas**
+>>
+>> - **Agenda par défaut** : définissez le calendrier utilisé par défaut lorsque vous créez un évènement dans vos calendriers.
+>> - **Début de semaine** : le jour qui apparaît en premier dans la grille de votre calendrier.
+>> - **Début de journée** : l'heure qui apparaît en haut de l'amplitude horaire affichée.
+>> - **Fin de journée** : l'heure qui apparaît en bas de l'amplitude horaire affichée.
+>> - **Fuseau horaire** utilisé pour vos calendriers.
+>> - **Lors de la création ou l’édition d’évènements** : afficher les fuseaux horaires pour les heures de début et de fin.
+>> - **Partage** : `Activer la délégation pour les clients CALDav`. Cette option vous permet de gérer vos calendriers par le biais d'un logiciel prenant en charge le protocole CALdav.
+>> - **Événements refusés** : afficher un évènement dans le calendrier, même si il a été refusé.
+>>
+>> **Rappels d'évènements**
+>>
+>> - **Envoyer des rappels par courrier électronique à** : envoyer les rappels d'évènements à une adresse e-mail.
+>> - **Afficher les notifications du navigateur** : être notifié par votre navigateur internet pour vos évènements.
+>> - **Délai de rappel par défaut** : délai de rappel appliqué par défaut lorsque vous l'activez sur un évènement.
+>> - **Afficher les rappels pour des évènements échus** : continuer d'envoyer des rappels après un évènement.
+>>
+>> **Autorisation d’occupation**
+>>
+>> - **Autorisation pour** : ce paramètre concerne uniquement l'état de disponibilité lié aux calendriers de votre adresse e-mail. Cela signifie que vous pouvez partager votre statut « Occupé » ou « Disponible » avec d'autres adresses e-mail.
 
 ### Contacts <a name="contacts"></a>
 
@@ -356,9 +384,75 @@ Sélectionnez l'un des deux onglets suivants :
 >> ![Zimbra - Exporter](images/zimbra-20.png){.thumbnail}
 >>
 
-### Filtres <a name="filters"></a>
+### Calendrier <a name="calendar"></a>
 
-#### Comprendre comment paramètrer ses filtres <a name="filters-howto"></a>
+Cliquez sur l'icône `Agenda`, dans la barre supérieure, pour accéder au carnet de contacts. Celui-ci est divisé en **3 parties** :
+
+- **(1) Liste des calendriers** (à gauche) : gérez vos différents calendriers et sous-calendriers.
+- **(2) Contenu des calendriers** (au centre) : visualisez le contenu des calendriers et sous-calendriers sélectionnés.
+- **(3) Liste des tâches** (à droite) : gérez vos tâches et listes de tâches.
+
+![Zimbra - calendar](images/zimbra-calendar-view.png){.thumbnail}
+
+#### Gestion des calendriers <a name="calendar-management"></a>
+
+Par défaut, dans la liste `Mes agendas`, vous avez un `Calendrier` créé par défaut. Ce calendrier par défaut ne peut pas être supprimé mais vous verrez cependant qu'il est possible de créer vos propres calendriers dans le paragraphe suivant.
+
+##### 1- Créer un calendrier <a name="calendar-add-calendar"></a>
+
+- **(1)** : Pour créer un calendrier, passez votre curseur sur `Mes agendas` dans la colonne de gauche et cliquez sur le bouton `+`. Saisissez un nom et définissez une couleur, puis cliquez sur `Enregistrer`{.action}
+
+Il est également possible de créer des sous-calendriers.
+
+- **(2)** : Pour créer un sous-calendrier, passez votre curseur sur le calendrier pour lequel vous souhaitez en créer un, puis faites un clic droit pour afficher le menu déroulant. Cliquez sur `Ajouter un sous-calendrier`. Saisissez un nom et définissez une couleur, puis cliquez sur `Enregistrer`{.action}
+
+![Zimbra - calendar](images/zimbra-calendar-add.png){.thumbnail .w-400}
+
+##### 2- Ajouter un évènement <a name="calendar-add-event"></a>
+
+- **(1)** : Cliquez sur `Nouvel évènement`{.action} dans le coin supérieur gauche.
+- **(2)** : Cliquez sur la plage horaire de votre calendrier dans laquelle vous souhaitez ajouter un événement. Pour un ajout simplifié, il vous suffit de définir un titre pour l'évènement et un lieu puis de cliquer sur `Enregistrer`{.action}. Pour ajouter plus de détails sur votre évènement, cliquez sur `Ajouter d'autres détails`{.action}
+
+![Zimbra - calendar](images/zimbra-calendar-event-add-01.png){.thumbnail .w-400}
+
+- **Début** : la date et l'heure de début de votre évènement. Si vous cochez `Toute la journée`, vous n'aurez pas d'heure de début et de fin à saisir car l'ensemble de la journée sera pris en compte.
+- **Fin** : la date et l'heure de fin de votre évènement.
+- **Répétition** : s'il s'agit d'un évènement récurrent, définissez sa fréquence.
+- **Lieu** : le lieu où va se dérouler l'évènement, comme le nom d'une salle de réunion par exemple.
+- **Équipement** : en cliquant sur `Afficher l'équipement`{.action}, vous faites apparaître cette ligne pour définir un équipement partagé que vous allez utiliser pour votre évènement.
+- **Invités** : les adresses e-mail des participants à l'évènement.
+- **Remarques** : message qui sera transmis aux invités de l'évènement.
+- **Rappel** : être prévenu avant le début de l'évènement.
+- **Afficher comme** : définir si l'évènement rend ses invités disponibles ou indisponibles pendant son déroulement
+- **Agenda** : définir à quel calendrier est associé l'évènement.
+
+Une fois votre évènement défini, cliquez sur `Enregistrer`{.action}.
+
+![Zimbra - calendar](images/zimbra-calendar-event-add-02.png){.thumbnail .w-400}
+
+##### 3- Modifier un évènement <a name="calendar-modify-event"></a>
+
+#### Tâches <a name="tasks"></a>
+
+Les tâches sont des éléments dissociés de vos calendriers. Elles ont pour objectif de lister des tâches à effectuer sans pour autant y attacher une date d'exécution ou de temporalité. Ces tâches sont complémentaires aux calendriers.
+
+La liste « Tâches » existe par défaut, elle ne peut pas être supprimée mais vous pouvez créer vos propres listes de tâches.
+
+- **(1)** : Pour créer une tâche, cliquez sur le bouton `...`{.action} puis sur `Nouvelle tâche`{.action}  ou simplement sur le bouton `+`{.action} à côté de votre liste de tâches.
+
+- **(2)** : Pour créer une nouvelle liste de tâches, cliquez sur le bouton `...`{.action} puis sur `Créer une liste`{.action}.
+
+![Zimbra - calendar](images/zimbra-calendar-task-01.png){.thumbnail .w-400}
+
+Lorsque vous créez une tâche, il est possible de définir une date d'échéance et une priorité qui vous permettront de les classer selon leur importance, ainsi qu'un menu déroulant pour sélectionner la liste de tâches correspondante.
+
+Cliquez ensuite sur `Enregistrer`{.action} pour finaliser la création de votre tâche.
+
+![Zimbra - calendar](images/zimbra-calendar-task-02.png){.thumbnail .w-400}
+
+#### Filtres <a name="filters"></a>
+
+#### Comprendre comment paramétrer ses filtres <a name="filters-howto"></a>
 
 La mise en place de filtres sur votre compte e-mail est un paramètre important qui vous permet de mettre en place un système de tri automatique à la réception de vos e-mails.
 
@@ -440,7 +534,7 @@ Si des filtres existent, vous retrouverez la liste selon leur ordre d'applicatio
 
 - **(2)** Ce bouton s'utilise comme une poignée, il vous permet de déplacer le filtre dans la liste pour lui attribuer un ordre d'application. En effet, chaque filtre est appliqué selon l'ordre qui est défini dans la liste.
 
-Cliquez sur le bouton `+ Ajouter un filtre`{.action} pour lancer sa création. La fenêtre du mode simple s'affiche par défaut. Vous pouvez passer en mode avancé en cliquant sur `Passer à avancé`{.action} pour disposer de tous les opérateurs de comparaison. N'hésitez pas à vous aider de la section « [Comprendre comment paramètrer ses filtres](#filters-howto) ».
+Cliquez sur le bouton `+ Ajouter un filtre`{.action} pour lancer sa création. La fenêtre du mode simple s'affiche par défaut. Vous pouvez passer en mode avancé en cliquant sur `Passer à avancé`{.action} pour disposer de tous les opérateurs de comparaison. N'hésitez pas à vous aider de la section « [Comprendre comment paramétrer ses filtres](#filters-howto) ».
 
 > [!tabs]
 > **Mode simple**

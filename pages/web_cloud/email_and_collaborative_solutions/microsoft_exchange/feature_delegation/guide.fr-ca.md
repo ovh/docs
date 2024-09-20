@@ -1,7 +1,7 @@
 ---
 title: 'Déléguer des droits sur un compte Exchange'
 excerpt: 'Découvrez comment déléguer des droits de votre compte Exchange à un autre'
-updated: 2020-10-24
+updated: 2024-06-19
 ---
 
 ## Objectif
@@ -79,7 +79,7 @@ Dans la fenêtre qui apparaît, indiquez le nom du compte pour lequel vous bén�
 
 - **Depuis le logiciel Outlook pour Windows**
 
-Sur votre logiciel Outlook 2016, cliquez sur `Fichier`{.action} dans la barre de menu en haut de votre écran puis cliquez sur `Paramètres du compte`{.action}. Dans le menu déroulant, cliquez de nouveau sur `Paramètres du compte`{.action}. Dans la fenêtre qui s'affiche, sélectionnez le compte bénéficiant du droit délégué puis cliquez sur `Modifier`{.action}. 
+Sur votre logiciel Outlook, cliquez sur `Fichier`{.action} dans la barre de menu en haut de votre écran puis cliquez sur `Paramètres du compte`{.action}. Dans le menu déroulant, cliquez de nouveau sur `Paramètres du compte`{.action}. Dans la fenêtre qui s'affiche, sélectionnez le compte bénéficiant du droit délégué puis cliquez sur `Modifier`{.action}. 
 
 ![delegation](images/delegation-step4.png){.thumbnail}
 
@@ -101,7 +101,7 @@ Il ne vous reste plus qu'à rédiger votre message et à l'envoyer.
 
 - **Depuis le logiciel Outlook pour Windows**
 
-Sur votre logiciel Outlook 2016, débutez la rédaction d'un nouveau message. Assurez-vous que le bouton `De`{.action} apparaît dans la fenêtre de rédaction. Si ce n'est pas le cas, positionnez-vous sur l'onglet `Options`{.action} puis cliquez sur `Afficher De`{.action}.
+Sur votre logiciel Outlook, débutez la rédaction d'un nouveau message. Assurez-vous que le bouton `De`{.action} apparaît dans la fenêtre de rédaction. Si ce n'est pas le cas, positionnez-vous sur l'onglet `Options`{.action} puis cliquez sur `Afficher De`{.action}.
 
 Cliquez ensuite sur le bouton `De`{.action} et sélectionnez l'adresse qui apparaîtra en tant qu'expéditeur (pour laquelle vous disposez du droit délégué). Si celle-ci n'apparaît pas, cliquez sur `Autre`{.action}, renseignez l'adresse souhaitée, puis validez. 
 
@@ -123,7 +123,7 @@ Il ne vous reste plus qu'à rédiger votre message et à l'envoyer.
 
 - **Depuis le logiciel Outlook pour Windows**
 
-Sur votre logiciel Outlook 2016, débutez la rédaction d'un nouveau message. Assurez-vous que le bouton `De`{.action} apparaît dans la fenêtre de rédaction. Si ce n'est pas le cas, positionnez-vous sur l'onglet `Options`{.action} puis cliquez sur `Afficher De`{.action}.
+Sur votre logiciel Outlook, débutez la rédaction d'un nouveau message. Assurez-vous que le bouton `De`{.action} apparaît dans la fenêtre de rédaction. Si ce n'est pas le cas, positionnez-vous sur l'onglet `Options`{.action} puis cliquez sur `Afficher De`{.action}.
 
 Cliquez ensuite sur le bouton `De`{.action} et sélectionnez l'adresse qui apparaîtra en tant qu'expéditeur (pour laquelle vous disposez du droit délégué). Si celle-ci n'apparaît pas, cliquez sur `Autre`{.action}, renseignez l'adresse souhaitée, puis validez. 
 

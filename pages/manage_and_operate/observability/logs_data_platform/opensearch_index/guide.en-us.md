@@ -1,12 +1,12 @@
 ---
 title: OpenSearch Index as a Service
 excerpt: Use the power of OpenSearch without managing a cluster.
-updated: 2022-10-13
+updated: 2024-08-07
 ---
 
 ## Objective
 
-OpenSearch is one of the main components of the Logs Data Platform, regarded as one of the most powerful search and analytics engines. From the outset we offered the possibility to host a OpenSearch Dashboards index for your OpenSearch Dashboards metadata, Index As A Service being the next step to this functionality. You can now use a fully unlocked index for almost any purpose; be it complex documents, reports or even logs. Thanks to the OpenSearch API, you will be able to use most of the tools of the OpenSearch Ecosystem.
+OpenSearch is one of the main components of the Logs Data Platform, regarded as one of the most powerful search and analytics engines. From the outset we offered the possibility to host an OpenSearch Dashboards index for your OpenSearch Dashboards metadata, Index As A Service being the next step to this functionality. You can now use a fully unlocked index for almost any purpose; be it complex documents, reports or even logs. Thanks to the OpenSearch API, you will be able to use most of the tools of the OpenSearch Ecosystem.
 
 ## Requirements
 
@@ -26,7 +26,7 @@ There are two ways to create an OpenSearch Index:
 - Use the Logs Data Platform manager.
 - Use the OpenSearch API.
 
-To create an OpenSearch index with the Logs Data Platform manager, you need to go the index page and click on the `Add a new index`{.action} on the OpenSearch index section
+To create an OpenSearch index with the Logs Data Platform manager, you need to go to the index page and click on the `Add a new index`{.action} on the OpenSearch index section
 
 ![add index option](images/add_index.png){.thumbnail}
 
@@ -34,9 +34,9 @@ You must just choose a suffix for your index. The final name will follow this co
 
 `logs-<username>-i-<suffix>`.
 
-For each index, you can specify the number of **shards**. A **shard** is the main component of **index**. Its maximum storage capacity is set to **25 GB** (per shard). Multiple shards means more volume, more parallelism in your requests and thus more performance. Optionally, you can also be notified when your index is close to its critical size. Once your index is created, you can use it right away.
+For each index, you can specify the number of **shards**. A **shard** is the main component of an **index**. Its maximum storage capacity is set to **25 GB** (per shard). Multiple shards means more volume, more parallelism in your requests and thus more performance. Optionally, you can also be notified when your index is close to its critical size. Once your index is created, you can use it right away.
 
-When you create a index through the [OpenSearch API](https://opensearch.org/docs/latest/opensearch/index-data/){.external}, you can also specify the number of shards. Note that the maximum number of shards by index is limited to **16**. OpenSearch compatible tools can now create indices on the cluster as long as they follow the naming convention `logs-<username>-i-<suffix>`. Here is an exemple with a curl command with the user **logs-ab-12345** and the index **logs-ab-12345-i-another-index** on gra2 cluster.
+When you create an index through the [OpenSearch API](https://opensearch.org/docs/latest/opensearch/index-data/){.external}, you can also specify the number of shards. Note that the maximum number of shards by index is limited to **16**. OpenSearch compatible tools can now create indices on the cluster as long as they follow the naming convention `logs-<username>-i-<suffix>`. Here is an example with a curl command with the user **logs-ab-12345** and the index **logs-ab-12345-i-another-index** on gra2 cluster.
 
 ```shell-session
 $ curl -u logs-ab-12345:mypassword -XPUT -H 'Content-Type: application/json' 'https://gra2.logs.ovh.com:9200/logs-ab-12345-i-another-index' -d '{ "settings" : {"number_of_shards" : 1}}'
@@ -140,11 +140,11 @@ The first thing to do is to index some clients information. The snippet below is
 To index several documents at once, it is more efficient to use the bulk api. Here is a small snippet of 3 users you can use to test it.
 
 ```json
-{ "index" : { "_index" : "logs-<username>-i-<suffix>", "_type" : "_doc" } }
+{ "index" : { "_index" : "logs-<username>-i-<suffix>" } }
 { "userId": "1", "firstName": "Jon","lastName": "Snow", "age": 22, "address": { "streetAddress": "21 2nd Street", "city": "Winterfell", "state": "North", "postalCode": "14578",  "geolocation": { "lat": 54.369488, "long": -5.574768 } },"phoneNumber": [ { "type": "home", "number": "212 555-1234" }, { "type": "mobile", "number": "102 555-4567" } ] }
-{ "index" : { "_index" : "logs-<username>-i-<suffix>", "_type" : "_doc" } }
+{ "index" : { "_index" : "logs-<username>-i-<suffix>" } }
 { "userId": "2", "firstName": "Cersei","lastName": "Lannister", "age": 43, "address": { "streetAddress": "1 Palace Street", "city": "King's Landing", "state": "The Crownlands", "postalCode": "26863",  "geolocation": { "lat": 42.639758, "long": 18.1094725 } },"phoneNumber": [ { "type": "home", "number": "212 555-6789" }, { "type": "mobile", "number": "102 555-8901" } ] }
-{ "index" : { "_index" : "logs-<username>-i-<suffix>", "_type" : "_doc" } }
+{ "index" : { "_index" : "logs-<username>-i-<suffix>" } }
 { "userId": "3", "firstName": "Daenerys","lastName": "Targaryen", "age": 22, "address": { "streetAddress": "3 Blackwater Bay Ave", "city": "Dragonstone", "state": "Dragonstone", "postalCode": "75197",  "geolocation": { "lat": 43.300097, "long": -2.261580 } },"phoneNumber": [ { "type": "home", "number": "212 555-1234" }, { "type": "mobile", "number": "102 555-2345" } ] }
 ```
 
@@ -160,16 +160,16 @@ A bulk request is a succession of JSON objects with this structure:
  optional_source\n
 ```
 
-You can in one request ask OpenSearch to index, update, delete several documents. Save the content of the previous commands in a file named **bulk** and use the following call to index these 3 users:
+You can in one request ask OpenSearch to index, update, delete several documents. Save the content of the previous JSON lines in a file named **bulk** and use the following call to index these 3 users:
 
 ```shell-session
-$ curl -u token:<your-token-value> -XPUT -H 'Content-Type: application/json' 'https://<ldp-cluster>.logs.ovh.com:9200/logs-<username>-i-<suffix>/_bulk' --data-binary "@bulk"
+$ curl -u token:<your-token-value> -XPUT -H 'Content-Type: application/x-ndjson' 'https://<ldp-cluster>.logs.ovh.com:9200/logs-<username>-i-<suffix>/_bulk' --data-binary "@bulk"
 ```
 
 This call will take the content of the bulk file and execute each index operation. Note that you have to use the option **--data-binary** and no **-d** to preserve the newline after each JSON. You can check that your data are properly indexed with the following call:
 
 ```shell-session
-$ curl -u token:<your-token-value> -XGET 'https://<ldp-cluster>.logs.ovh.com:9200/logs-<username>-i-<suffix>/_doc/_search?pretty=true'
+$ curl -u token:<your-token-value> -XGET 'https://<ldp-cluster>.logs.ovh.com:9200/logs-<username>-i-<suffix>/_search?pretty=true'
 ```
 
 This will give you back the documents of your index:
@@ -296,12 +296,12 @@ tcp {
 
 The most important part in this configuration is the filter part:
 
-```ruby 
-elasticsearch {
+```ruby
+opensearch {
     hosts => ["https://gra2.logs.ovh.com:9200"]
     index => "logs-<username>-i-<suffix>"
-    user => "token"
-    password => "y762pm8j2yhge9c2idpdaqs456dshr78nb2313eaze4656oue45psla"
+    user => "<username>"
+    password => "<password>"
     enable_sort => false
     query => "userId:%{[userId]}"
     fields  => {
@@ -359,16 +359,16 @@ The **maximum size** of your index is fixed and is dependent on the number of sh
 > [!warning]
 >
 > It is not possible to change the number of shards of one index.
-> So you will have to be careful of the storage used by your index.
+> Therefore, it is important to be mindful of the storage used by your index.
 > **Once your index is full, It will be blocked on write requests** and you will have no choice but to use
 > [_Delete By query_](https://opensearch.org/docs/latest/opensearch/rest-api/document-apis/delete-by-query/)
 > requests to free space on your index.
 >
 
-Note that you can monitor yourself the size of the index by using the following curl query:
+Note that you can monitor the size of the index by using the following curl query:
 
 ```shell-session
-$ curl -u token:<your-token-value> -XPUT -H 'Content-Type: application/json' 'https://<ldp-cluster>.logs.ovh.com:9200/logs-<username>-i-<suffix>/_stats/store?pretty' --data-binary "@bulk"
+$ curl -u token:<your-token-value> -XGET -H 'Content-Type: application/json' 'https://<ldp-cluster>.logs.ovh.com:9200/logs-<username>-i-<suffix>/_stats/store?pretty'
 ```
 
 This command will give you a document with the following format:
@@ -415,7 +415,7 @@ The size in bytes used to compute your billing is the one under the following pa
 
 ### Management through OpenSearch API
 
-On Logs Data Platform, we allow users to use OpenSearch API to handle the lifecycle of their indices. You can create and delete indices directly with the OpenSearch API. You can also create aliases and them. We even support templates to allow users to create their mapping a the creation of the index automatically !
+On Logs Data Platform, we allow users to use OpenSearch API to handle the lifecycle of their indices. You can create and delete indices directly with the OpenSearch API. You can also create aliases and them. We even support templates to allow users to create their mapping a the creation of the index automatically!
 
 #### Index creation and deletion
 
@@ -431,7 +431,7 @@ $ curl -u <username>:<mypassword> -XPUT -H 'Content-Type: application/json' 'htt
 - The address contains the endpoint of the cluster followed by the **name of your index**
 - The payload of the request is a  **JSON document** which contains the [settings of your index](https://opensearch.org/docs/latest/opensearch/rest-api/index-apis/create-index/){.external}: the number of shards (the number of replicas will be automatically set at 1).
 
-You have to follow the Logs Data Platform naming convention `<username>-i-<your-suffix>` to create your index. your username, is the one you use to connect to Graylog or to use the API. The suffix can contain any alphanumeric character.
+You have to follow the Logs Data Platform naming convention `<username>-i-<your-suffix>` to create your index. Your username is the one you use to connect to Graylog or to use the API. The suffix can contain any alphanumeric character.
 
 To delete a index use the following call:
 
@@ -443,15 +443,17 @@ Here we use the **DELETE** HTTP command to delete the index.
 
 #### Alias creation and deletion
 
-Similarly than indices, you can use the API Calls to delete and create aliases on your indices. The only difference is the convention for the name of your alias. Your alias must be formatted as the following **`<username>-a-<suffix>`**. Here is an exemple call :
+Similarly than indices, you can use the API Calls to delete and create aliases on your indices. The only difference is the convention for the name of your alias. Your alias must be formatted as the following **`<username>-a-<suffix>`**. Here is an example call:
 
 ```shell-session
 $ curl -u <username>:<password> -XPUT -H 'Content-Type: application/json' 'https://gra2.logs.ovh.com:9200/<username>-i-<suffix>/_alias/<username>-a-<alias_suffix>'
 ```
 
-This call create a individual alias on one index you have previously created.
+This call creates a individual alias on one index you have previously created.
 
-You can also use the generic aliases call to create aliases:
+If you need more information on aliases, you can check the [OpenSearch Documentation](https://opensearch.org/docs/latest/api-reference/index-apis/alias/).
+
+We also support the aliases API to create aliases:
 
 ```shell-session
 $ curl -XPOST "https://gra2.logs.ovh.com:9200/_aliases?pretty" -H 'Content-Type: application/json' -d'
@@ -481,7 +483,7 @@ $ curl -u <username>:<password> -XPUT -H 'Content-Type: application/json' 'https
 {
 	"index_patterns" : [ "logs-ab-12345-i-debug*","logs-ab-12345-i-test*"  ],
 	"settings": {
-		"number_of_shards" : 1,
+		"number_of_shards" : 1
 	},
 	"aliases" : {
 		"logs-ab-12345-a-all" : {},

@@ -1,7 +1,7 @@
 ---
 title: Object Storage - FAQ
 excerpt: "Frequently Asked Questions on the Object Storage solution"
-updated: 2023-09-12
+updated: 2024-09-16
 ---
 
 ## General questions
@@ -58,7 +58,7 @@ Object Storage is billed according to the storage space used, with a granularity
 
 ### Which APIs should I use to access storage solutions?
 
-We designed S3 storage classes to be **compatible with the S3** API, considered a benchmark in the object storage market. You can use Object Storage with most data management tools via endpoints defined by region and by storage class.
+We designed S3 storage classes to be **compatible with the S3** API, considered a benchmark in the object storage market. You can use Object Storage with most data management tools via endpoints defined by region.
 
 Get your S3 access keys and access the various storage classes via the command line using AWS-CLI, s3cmd or other commands.
 
@@ -158,6 +158,8 @@ You can choose to synchronize your data from one region to another using rClone.
 - [Use S3 Object Storage with rClone](/pages/storage_and_backup/object_storage/s3_rclone)
 - [Use Swift Object Storage with rclone](/pages/storage_and_backup/object_storage/pcs_sync_rclone_object_storage)
 
+You can also use the asynchronous replication feature available on S3 object storage buckets. Follow [this guide](/pages/storage_and_backup/object_storage/s3_asynchronous_replication) to get more details about this feature.
+
 ### Is it possible to manage data lifecycles?
 
 Lifecycle options are not yet available. Please follow our [public GitHub roadmap](https://github.com/orgs/ovh/projects/16/?card_filter_query=label%3A%22object+storage%22) to be informed of their release.
@@ -167,6 +169,8 @@ Lifecycle options are not yet available. Please follow our [public GitHub roadma
 ### How do I upload large volumes of data?
 
 To upload large volumes of data, we recommend that you parallelize the connections (*multithread upload*). Multiple requests are in progress in parallel, and the bandwidth is multiplied (1 Gbps per connection). You can find more details on the methodology in the following guide: [Optimize the sending of your files to S3 Object Storage](/pages/storage_and_backup/object_storage/s3_optimise_the_sending_of_your_files).
+
+More generally, there are several methods that allow you to maximize your upload and download performance on our Object Storage. You can know more about those optimizations in the following guide: [Object Storage - Optimising Performance](/pages/storage_and_backup/object_storage/s3_performance_optimization).
 
 ### What is the performance difference between the High Performance and Standard Performance storage classes?
 

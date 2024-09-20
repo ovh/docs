@@ -21,8 +21,8 @@ Przypomina to model rozliczenia stosowany przez niektórych operatorów telefoni
 ## Wymagania początkowe
 
 * [projekt Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na koncie OVHcloud
-* [instancja Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#krok-3-tworzenie-instancji){.external}
-* dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
+* [instancja Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps){.external}
+* dostęp do [Panelu klienta OVHcloud](/links/manager){.external}
 
 ## Ogólna zasada
 

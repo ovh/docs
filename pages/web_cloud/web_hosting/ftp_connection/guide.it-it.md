@@ -45,7 +45,7 @@ Se non disponi di questi elementi, accedi alla sezione `Web Cloud`{.action} del 
 
 Visualizzi una tabella con tutti gli utenti FTP e SSH creati sul tuo hosting Web, con tutte le informazioni relative al tuo spazio di storage.
 
-![ftpconnect](images/tab-pro.png){.thumbnail}
+![ftpconnect](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
 
 > [!primary]
 >
@@ -75,7 +75,7 @@ Di seguito trovi una descrizione delle informazioni essenziali visualizzate sull
 
 Se non conosci più la password di un utente FTP o SSH, consulta la nostra guida "[Modificare la password di un utente FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
 
-![ftpconnect](images/change-password.png){.thumbnail}
+![ftpconnect](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/change-password.png){.thumbnail}
 
 A questo punto, disporrai di tutti gli elementi che ti permetteranno di accedere al tuo spazio di archiviazione FTP.
 
@@ -96,11 +96,11 @@ Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external} e clicca su `We
 
 Clicca su `Hosting`{.action} nella colonna di sinistra. Clicca sulla scheda `FTP - SSH`{.action} e poi su `FTP Explorer`{.action}.
 
-![ftpconnect](images/ftp-explorer.png){.thumbnail}
+![ftpconnect](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/ftp-explorer.png){.thumbnail}
 
 Nella nuova pagina, inserisci l'identificativo FTP e la password associata. Se le informazioni sono corrette, visualizzi il tuo spazio di storage.
 
-![ftpconnect](images/login-interface.png){.thumbnail}
+![ftpconnect](/pages/assets/screens/other/web-tools/net2ftp/login-interface.png){.thumbnail}
 
 #### 2. Client FTP <a name="ftpsoftware"></a>
 
@@ -159,7 +159,7 @@ Se le informazioni sono corrette, verrà effettuato l'accesso allo spazio di sto
 
 Se necessario, consulta la guida "[Utilizzare una connessione SSH su un hosting Web](/pages/web_cloud/web_hosting/ssh_on_webhosting)".
 
-![ftpconnect](images/terminal-ssh-connected.png){.thumbnail}
+![ftpconnect](/pages/assets/screens/other/web-tools/terminal/terminal-ssh-connected.png){.thumbnail}
 
 ## Per saperne di più
 
@@ -177,4 +177,4 @@ Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [p
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

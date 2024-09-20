@@ -1,7 +1,7 @@
 ---
-title: Enabling Azure AD SSO connections with your OVHcloud account
-excerpt: "Find out how to associate your Azure Active Directory to your OVHcloud account using SAML 2.0"
-updated: 2024-03-05
+title: Enabling Entra ID SSO connections with your OVHcloud account
+excerpt: "Find out how to associate your Entra ID (formerly Azure Active Directory) to your OVHcloud account using SAML 2.0"
+updated: 2024-07-05
 ---
 
 ## Objective
@@ -203,23 +203,23 @@ Adding your Entra ID application as a trusted identity provider is done in the [
 
 #### Establish OVHcloud trust
 
-[Log in](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) and click on your profile in the top-right corner.
+Click your account name in the top-right corner, then on your name again in the sidebar.
 
-![OVHcloud top menu](images/ovhcloud_top_menu.png){.thumbnail}
+![Access to the IAM menu](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-Click on your name to access your profile management page.
+You can access the IAM menu via the dedicated entry in your Control Panel.
 
-![OVHcloud user infos](images/ovhcloud_user_infos.png){.thumbnail}
+![Access to the IAM menu](images/access_to_the_IAM_menu_02.png){.thumbnail}
 
-Open the `User management`{.action} tab.
+Then click on the `Identities`{.action} tab to access local users management.
 
-![OVHcloud profile menu](images/ovhcloud_profile_menu.png){.thumbnail}
+![Access to the IAM menu](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
 Click on the `SSO connection`{.action} button.
 
 ![OVHcloud connect SSO step 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 
-Fill in the **Group Attribute Name** field with the Entra ID application groups **Claim name** value saved before.
+Fill in the field **User Attribute Name** with the Entra ID application **UPN** claim name and enter the **groups** claim name value saved before into the field **Group Attribute Name**. 
 
 Fill in the XML metadata of your Entra ID application from the file saved before.
 

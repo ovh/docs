@@ -24,11 +24,11 @@ W takim przypadku możesz zalogować się do Twojego serwera za pomocą trybu Re
 
 ## Wymagania początkowe
 
-- Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/) lub [VPS](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal) lub [VPS](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud
+- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 
 > [!primary]
-> Ten przewodnik nie dotyczy instalacji **Windows* Server. Zapoznaj się z naszymi przewodnikami "[Jak zmienić hasło administratora na serwerze dedykowanym Windows](/pages/bare_metal_cloud/dedicated_servers/changing-admin-password-on-windows)" i "[Jak zmienić hasło administratora na serwerze VPS Windows](/pages/bare_metal_cloud/virtual_private_servers/resetting_a_windows_password)".
+> Ten przewodnik nie dotyczy instalacji **Windows* Server. Zapoznaj się z naszymi przewodnikami "[Jak zmienić hasło administratora na serwerze dedykowanym Windows](/pages/bare_metal_cloud/dedicated_servers/rcw-changing-admin-password-on-windows)" i "[Jak zmienić hasło administratora na serwerze VPS Windows](/pages/bare_metal_cloud/virtual_private_servers/resetting_a_windows_password)".
 >
 
 ## W praktyce
@@ -43,7 +43,7 @@ Sprawdź również nasze przewodniki:
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 >
-> Niniejszy przewodnik ułatwi Ci realizację bieżących zadań. Niemniej jednak, w przypadku trudności lub wątpliwości związanych z administrowaniem usługami, korzystaniem z nich lub ich wdrażaniem na serwerze, zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/directory/) lub [naszą społecznością](https://community.ovh.com/en/).
+> Niniejszy przewodnik ułatwi Ci realizację bieżących zadań. Niemniej jednak, w przypadku trudności lub wątpliwości związanych z administrowaniem usługami, korzystaniem z nich lub ich wdrażaniem na serwerze, zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](/links/partner) lub [naszą społecznością](https://community.ovh.com/en/).
 >
 
 <a name="step1"></a>
@@ -85,7 +85,7 @@ Retype new password:
 passwd: password updated successfully
 ```
 
-Pamiętaj, aby podczas restartu serwera z poziomu [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) użyć trybu uruchamiania **normalnego** Twojego serwera.
+Pamiętaj, aby podczas restartu serwera z poziomu [Panelu klienta OVHcloud](/links/manager) użyć trybu uruchamiania **normalnego** Twojego serwera.
 
 W razie potrzeby sprawdź przewodnik [Tryb ratunkowy](#step1).
 

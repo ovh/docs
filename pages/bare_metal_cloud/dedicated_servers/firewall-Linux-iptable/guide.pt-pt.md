@@ -1,7 +1,7 @@
 ---
 title: Configurar a firewall em Linux com iptables
 excerpt: Saiba como proteger um servidor com iptables
-updated: 2024-06-03
+updated: 2024-07-12
 ---
 
 > [!primary]
@@ -19,12 +19,12 @@ As firewalls funcionam definindo regras que regulem o tráfego autorizado e o qu
 >
 > A OVHcloud oferece-lhe serviços que são da sua responsabilidade. Uma vez que não temos acesso a estas máquinas, não podemos administrá-las nem fornecer-lhe assistência. O cliente é o único responsável pela gestão e pela segurança do serviço.
 >
-> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades ou tiver dúvidas quanto à administração, utilização ou segurança de um servidor, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/). Para mais informações, aceda à secção “Quer saber mais?” deste manual.
+> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades ou tiver dúvidas quanto à administração, utilização ou segurança de um servidor, recomendamos que recorra a um [prestador de serviços especializado](/links/partner). Para mais informações, aceda à secção “Quer saber mais?” deste manual.
 >
 
 ## Requisitos
 
-- Ter um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/) na sua conta OVHcloud
+- Ter um [servidor dedicado](/links/bare-metal/bare-metal) na sua conta OVHcloud
 - Dispor de um acesso administrador (root/sudo) ao seu servidor através de SSH
 
 ## Instruções
@@ -64,10 +64,8 @@ sudo apt-get install iptables-persistent
 
 Uma vez que este pacote tenha sido instalado, a pasta iptables conterá dois arquivos para regras IPV4 e IPV6:
 
-```bash
-sudo /etc/iptables/rules.v4
-sudo /etc/iptables/regras.v6
-```
+- /etc/iptables/rules.v4
+- /etc/iptables/rules.v6
 
 Geralmente, um comando iptables é o seguinte:
 

@@ -1,7 +1,7 @@
 ---
 title: "Utiliser le snapshot"
 excerpt: "Découvrez comment activer et utiliser l’option snapshot depuis l’espace client OVHcloud"
-updated: 2024-04-15
+updated: 2024-09-18
 ---
 
 ## Objectif
@@ -11,7 +11,7 @@ Un snapshot ne constitue pas pour autant une sauvegarde complète du système.
 
 **Découvrez comment activer et utiliser l’option snapshot depuis l’espace client OVHcloud.**
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Pazh9ozbkEk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Pazh9ozbkEk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 > [!primary]
 > Avant d'appliquer une option de sauvegarde, nous vous recommandons de consulter les [options VPS](https://www.ovhcloud.com/fr/vps/options/) afin de comparer les détails et tarifs de chaque option.
@@ -19,20 +19,25 @@ Un snapshot ne constitue pas pour autant une sauvegarde complète du système.
 
 ## Prérequis
 
-- Avoir accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Avoir accès à votre [espace client OVHcloud](/links/manager).
 - Un [VPS OVHcloud](https://www.ovhcloud.com/fr/vps/) déjà configuré.
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveur privés virtuels`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveur privés virtuels`{.action}.
 
 ### Étape 1 : souscrire l'option snapshot
 
-Depuis l'onglet `Accueil`{.action}, descendez jusqu'au menu « Résumé des options ». Si « Snapshot » est déjà sur l'état « Activé », passez directement à l'étape 2. Si « Snapshot » n'est pas encore activé, cliquez sur `...`{.action} à droite de l'option « Snapshot » puis cliquez sur `Commander`{.action} dans le menu qui s'affiche.
+Depuis l'onglet `Accueil`{.action}, descendez jusqu'au menu « Résumé des options ».  
+Si « Snapshot » est déjà sur l'état « Activé », passez directement à l'étape 2. Si « Snapshot » n'est pas encore activé, cliquez sur `...`{.action} à droite de l'option « Snapshot » puis cliquez sur `Commander`{.action} dans le menu qui s'affiche.
 
 ![snapshotvps](images/snapshot_vps_step1b.png){.thumbnail}
 
 Veuillez prendre connaissance des informations de tarification de cette option, puis cliquez sur `Commander`{.action}. Vous serez orienté dans le processus de commande et recevrez un e-mail de confirmation.
+
+Pour résilier l'option, cliquez sur le bouton `...`{.action} à côté de « Snapshot » et choisissez `Résilier`{.action} dans le menu contextuel.
+
+![snapshotvps](images/snapshot_vps_cancel.png){.thumbnail}
 
 ### Étape 2 : prendre un snapshot
 
@@ -61,7 +66,7 @@ Le snapshot en cours peut être récupéré via un lien de téléchargement. Cli
 
 > [!primary]
 >
-> Si votre VPS est issu d'une ancienne gamme, il est possible que vous receviez un message d'erreur car l'option n'est pas disponible sur les anciens VPS. Votre VPS est issu d'une ancienne gamme si le nom du modèle est nommé de cette façon : *vpsXXXX.ovh.net* (les *X* représentent le numéro de votre modèle). Vous pouvez vérifier cette référence de serveur dans l'onglet `Accueil`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+> Si votre VPS est issu d'une ancienne gamme, il est possible que vous receviez un message d'erreur car l'option n'est pas disponible sur les anciens VPS. Votre VPS est issu d'une ancienne gamme si le nom du modèle est nommé de cette façon : *vpsXXXX.ovh.net* (les *X* représentent le numéro de votre modèle). Vous pouvez vérifier cette référence de serveur dans l'onglet `Accueil`{.action} de votre [espace client OVHcloud](/links/manager).
 >
 
 Dans la fenêtre qui s'affiche, cliquez sur `Générer le lien de téléchargement`{.action}.

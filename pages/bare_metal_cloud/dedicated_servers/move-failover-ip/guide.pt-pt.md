@@ -10,7 +10,7 @@ updated: 2022-12-20
 
 > [!primary]
 >
-> A partir de 6 de outubro de 2022, a nossa solução "Failover IP" passou a designar-se [Additional IP](https://www.ovhcloud.com/pt/network/additional-ip/). Isto não afeta as suas funcionalidades.
+> A partir de 6 de outubro de 2022, a nossa solução "Failover IP" passou a designar-se [Additional IP](/links/network/additional-ip). Isto não afeta as suas funcionalidades.
 >
 
 ## Objetivo
@@ -28,9 +28,9 @@ Esta tecnologia permite-lhe trocar os endereços IP de uma solução para outra 
 
 ## Requisitos
 
-- Ter um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/){.external} na Área de Cliente OVHcloud.
-- Dispor de um [endereço Additional IP](https://www.ovhcloud.com/pt/bare-metal/ip/).
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Ter um [servidor dedicado](/links/bare-metal/bare-metal){.external} na Área de Cliente OVHcloud.
+- Dispor de um [endereço Additional IP](/links/network/additional-ip).
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 > [!warning]
 > Esta funcionalidade pode estar indisponível ou limitada nos [servidores dedicados **Eco**](https://eco.ovhcloud.com/pt/about/).
@@ -57,7 +57,7 @@ Esta tecnologia permite-lhe trocar os endereços IP de uma solução para outra 
 > Apenas um único bloco de tamanho (/32) poderá ser movido de um servidor dedicado para um VPS.
 >
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no menu `Bare Metal Cloud`{.action} e abra a secção `Network`{.action}. De seguida, clique em `IP`{.action}.
+Aceda à [Área de Cliente OVHcloud](/links/manager), clique no menu `Bare Metal Cloud`{.action} e abra a secção `Network`{.action}. De seguida, clique em `IP`{.action}.
 
 Clique no separador `Additional IP`{.action}.
 

@@ -45,13 +45,13 @@ ls -la
 
 You should see the directories as shown in the following image:
 
-![hosting](images/terminal-ls-la-svn.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/terminal/terminal-ls-la-svn.png){.thumbnail}
 
 ### Creating public/private keys
 
 Before you continue, it is necessary to create a pair of SSH keys from the desktop you will use to connect to the SVN repository.
 
-In order to create a key pair, please follow our guide on [Creating SSH keys](/pages/public_cloud/compute/public-cloud-first-steps#step-1-creating-ssh-keys). You can ignore the step regarding the import of your SSH key to the OVHcloud Control Panel.
+In order to create a key pair, please follow our guide on [Creating SSH keys](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#create-ssh-key).
 
 ### Adding the public key to the Web Hosting plan
 
@@ -77,7 +77,7 @@ command="/usr/bin/svnserve --root=/homez.XXX/loginFTP/svn --tunnel --tunnel-user
 > You can also find this information in our guide on [Accessing a Web Hosting plan via SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting).
 > 
 
-![hosting](images/terminal-homez-folder.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/terminal/terminal-homez-folder.png){.thumbnail}
 
 You can retrieve the contents of the repository without directly logging in via SSH on the hosting.
 
@@ -103,7 +103,7 @@ svn checkout svn+ssh://loginFTP@clusterXXX/depot_test
 - Create a directory, right-click on it and select "SVN Checkout". 
 - Enter `svn+ssh://loginFTP@xxplan.ovh.net/depot_test` in the “URL of repository” field and click `OK`.
 
-![hosting](images/checkout.png){.thumbnail}
+![hosting](/pages/assets/screens/other/web-tools/tortoisesvn/checkout.png){.thumbnail}
 
 Please also read the documentation for Subversion: [http://svnbook.red-bean.com/en/1.5/index.html](http://svnbook.red-bean.com/en/1.5/index.html){.external}
 
@@ -139,4 +139,4 @@ svn+ssh://login@ftp.name-of-site.tld/home.XXX/login/svn/depot_test
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

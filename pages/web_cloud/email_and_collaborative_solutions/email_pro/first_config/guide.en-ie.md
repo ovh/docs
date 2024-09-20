@@ -1,7 +1,7 @@
 ---
 title: 'Configuring your Email Pro solution'
 excerpt: 'Find out how to configure your Email Pro solution'
-updated: 2024-01-29
+updated: 2024-09-03
 ---
 
 ## Objective
@@ -12,16 +12,16 @@ You have just purchased an Email Pro solution, which gives you affordable profes
 
 ## Requirements
 
-- An [Email Pro](https://www.ovhcloud.com/en-ie/emails/email-pro/) solution
+- An [Email Pro](/links/web/email-pro) solution
 - An email confirming that your Email Pro solution has been set up
 - A domain name
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
 ### Step 1: Log in to your service’s interface
 
-Once the Email Pro service has been created and is available, you can manage it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
+Once the Email Pro service has been created and is available, you can manage it from the [OVHcloud Control Panel](/links/manager).
 
 To do this, log in, then click on `Email Pro`{.action} and select the appropriate service.
 
@@ -80,7 +80,7 @@ Click on the `Next`{.action} button to continue adding the domain.
 
 - **SRV**: A DNS record that automatically configures your email software when you add your email address to it.
 - **MX**: DNS record for email servers required to receive emails on the domain name concerned.
-- **DKIM**: Setting up an encrypted digital signature to secure email exchanges. Refer to our guide on [Configuring a DKIM record](/pages/web_cloud/domains/dns_zone_dkim) for more information.
+- **DKIM**: Setting up an encrypted digital signature to secure email exchanges. Refer to our guide on [How to improve email security with a DKIM record](/pages/web_cloud/domains/dns_zone_dkim) for more information.
 
 **For a non-OVHcloud** domain name, follow Step 3.
 
@@ -92,14 +92,14 @@ Once you have added the domain name as an associated domain, check its configura
 
 You can use the `Diagnosis`{.action} column to check the domain name’s DNS configuration. A red box will appear if these configurations need to be changed. There are two possibilities:
 
-- **Automatic configuration when you add an OVHcloud domain name**: If you have just made the change, it may take a few hours before it is displayed in [the OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
+- **Automatic configuration when you add an OVHcloud domain name**: If you have just made the change, it may take a few hours before it is displayed in [the OVHcloud Control Panel](/links/manager){.external}.
 
 - **Manual configuration for a non-OVHcloud domain name**: Click on the red box to view the changes you will need to make.
     - *For a CNAME* record, you can use our guide on "[Creating a CNAME record when adding an associated domain](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)".
     - *For an MX* record, please refer to our guide on "[Adding an MX record to your domain name’s configuration](/pages/web_cloud/domains/dns_zone_mx)".
     - *For an SRV* record, modify your DNS zone using the information provided when you click on the box. You can use our guide on "[Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)" to add this record.
-    - *For an SPF* record, modify your DNS zone using the information provided when you click on the box. You can use our guide on "[Configuring an SPF record](/pages/web_cloud/domains/dns_zone_spf)" to add this record.
-    *For a DKIM* record, modify your DNS zone using the information provided when you click on the box. You can refer to our guide on "[Configuring a DKIM record](/pages/web_cloud/domains/dns_zone_dkim)" to add this record.
+    - *For an SPF* record, modify your DNS zone using the information provided when you click on the box. You can use our guide on "[How to improve email security with an SPF record](/pages/web_cloud/domains/dns_zone_spf)" to add this record.
+    *For a DKIM* record, modify your DNS zone using the information provided when you click on the box. You can refer to our guide on "[How to improve email security with a DKIM record](/pages/web_cloud/domains/dns_zone_dkim)" to add this record.
 
 ![emailpro](images/emailpro-04.png){.thumbnail}
 
@@ -113,13 +113,29 @@ To configure them, click the `...`{.action} icon then `Edit`{.action}.
 
 Enter the information requested.
 
-|Title|Description|
-|---|---|
-|Email account|Enter the name for your email address (firstname.lastname, for example) and select the appropriate domain in the list.|
-|First name|Enter a first name.|
-|Last name|Enter a last name.|
-|Display name|Enter the sender name that you wish to be displayed when sending emails from this address.|
-|Password confirmation|Type in a password and confirm it.| 
+- **Email account**: Enter the name that your email address will bear (your first name.surname, for example), and select the domain in question from the list.
+
+> [!warning]
+>
+> The name of your email address must meet the following conditions:
+>
+> - Minimum 2 characters
+> - Maximum 32 characters
+> - No accents
+> - No special characters, except for the following characters: `.`, `,`, `-` and `_`
+
+- **First name**: Enter a first name.
+- **Name**: Enter a name.
+- **Display name**: Enter the name that will be displayed as a sender when emails are sent from this address.
+- **Password and confirmation**: Set a strong password consisting of at least 8 characters and including at least one upper-case letter, one lower-case letter, and one number. For security reasons, we recommend not using the same password twice, choosing one that does not contain any personal information (e.g. your surname, first name and date of birth), and renewing it regularly.
+
+> [!warning]
+>
+> The password must meet the following requirements:
+>
+> - Minimum 9 characters
+> - Maximum 30 characters
+> - No accents
 
 Once the information is complete, click on the `Next`{.action} button, check the information displayed, then click `Confirm`{.action} to start configuring the account.
 
@@ -130,7 +146,13 @@ Once the information is complete, click on the `Next`{.action} button, check the
 
 ### Step 5: Use your email addresses
 
-Once you have configured your accounts, you can start using them straight away. To do this, OVHcloud offers an web application, available [here](https://www.ovhcloud.com/en-ie/mail/). You will need to enter your email address and password to log in.
+Once you have configured your accounts, you can start using them straight away. To do this, OVHcloud offers an web application, available [here](/links/web/email). You will need to enter your email address and password to log in.
+
+> [!primary]
+>
+> Time zones are listed according to [the UTC (Coordinated Universal Time) standard](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), not in alphabetical order of cities.
+>
+> **Example**: For Western Europe, it is UTC +1 (Brussels, Copenhagen, Madrid, Paris).
 
 If you would like to configure your email address on an email client or device (e.g. a smartphone or tablet), you can refer to our [configuration guides](/products/web-cloud-email-collaborative-solutions-email-pro). If you simply need the information required to configure your Email Pro account, the settings to use are listed below:
 
@@ -143,7 +165,7 @@ If you would like to configure your email address on an email client or device (
 >
 > In our guides, we use as the server name: pro**?**.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
 > 
-> You can find this information in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), in the `Web Cloud`{.action} section, if you select `Email Pro`{.action}. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
+> You can find this information in the [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section, if you select `Email Pro`{.action}. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
 >
 
 ## Go further
@@ -160,4 +182,8 @@ If you would like to configure your email address on an email client or device (
 
 [Managing the security policy of an email service](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/security-policy)
 
-Join our community of users on <https://community.ovh.com/en/>.
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
+
+Join our [community of users](/links/community).

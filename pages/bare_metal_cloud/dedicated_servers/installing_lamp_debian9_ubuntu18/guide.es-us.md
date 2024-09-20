@@ -16,19 +16,19 @@ La creación de un servidor web y los programas asociados permiten que su servid
 
 ## Requisitos
 
-- Un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/), un [VPS](https://www.ovhcloud.com/es/vps/) o una instancia de [Public Cloud](https://www.ovhcloud.com/es/public-cloud/) en su cuenta de OVHcloud (excepto sistemas Windows)
-- Tienes acceso a tu [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
+- Un [servidor dedicado](/links/bare-metal/bare-metal), un [VPS](https://www.ovhcloud.com/es/vps/) o una instancia de [Public Cloud](https://www.ovhcloud.com/es/public-cloud/) en su cuenta de OVHcloud (excepto sistemas Windows)
+- Tienes acceso a tu [área de cliente de OVHcloud](/links/manager)
 - Acceso administrativo al servicio por SSH
 
 > [!warning]
 > Este tutorial explica cómo utilizar una solución de OVHcloud con herramientas externas en un contexto concreto. Puede que necesite adaptar las indicaciones a su situación.
 >
-> Le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/) o con [nuestra comunidad](https://community.ovh.com/en/) si tiene problemas o dudas relativos a la administración, el uso o la instalación de servicios en un servidor.
+> Le recomendamos que contacte con un [proveedor especializado](/links/partner) o con [nuestra comunidad](https://community.ovh.com/en/) si tiene problemas o dudas relativos a la administración, el uso o la instalación de servicios en un servidor.
 >
 
 ## Procedimiento
 
-Si ya tiene instalada una distribución Debian o Ubuntu en el servidor, realice la reinstalación desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Es la mejor manera de tener un sistema propio para su servidor web y las aplicaciones que se ejecutan en él.
+Si ya tiene instalada una distribución Debian o Ubuntu en el servidor, realice la reinstalación desde el [área de cliente de OVHcloud](/links/manager). Es la mejor manera de tener un sistema propio para su servidor web y las aplicaciones que se ejecutan en él.
 
 Consulte la guía correspondiente para instalar una distribución en su servicio OVHcloud y conecte a él por [SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction):
 
@@ -227,7 +227,7 @@ Puede ir más allá con el UFW, por ejemplo si desea restringir los ataques de *
 
 ### Paso 6: configuración DNS (opcional)
 
-Para acceder a la instalación de su servidor web a través de un dominio, es necesario asociarlo al servicio. Para ello, edite la zona DNS accesible desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), siempre que OVHcloud sea su agente registrador **y que** el dominio utilice los servidores DNS de OVHcloud.
+Para acceder a la instalación de su servidor web a través de un dominio, es necesario asociarlo al servicio. Para ello, edite la zona DNS accesible desde el [área de cliente de OVHcloud](/links/manager), siempre que OVHcloud sea su agente registrador **y que** el dominio utilice los servidores DNS de OVHcloud.
 
 Para más información, consulte la guía [Editar una zona DNS](/pages/web_cloud/domains/dns_zone_edit). Si el dominio está en uso, configure los DNS únicamente después de que el sitio web o la aplicación estén listos.
 

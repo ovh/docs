@@ -1,7 +1,7 @@
 ---
 title: "Changing the owner of a domain name"
 excerpt: "Find out how to change the owner of a a domain name in the OVHcloud Control Panel"
-updated: 2024-05-22
+updated: 2024-09-04
 ---
 
 ## Objective
@@ -51,9 +51,9 @@ Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.
 
 ### Step 2: Inititate the owner change procedure
 
-In the `General information`{.action} tab, go to the **Plan** section in the bottom right corner. Click `...`{.action} next to the **contacts**, then click `Change domain name holder`{.action}.
+In the `General information`{.action} tab, go to the **Plan** section in the bottom right corner. Click `...`{.action} next to the **contacts**, then click `Change owner`{.action}.
 
-![changing owner](images/change-domain-name-holder.png){.thumbnail}
+![changing owner](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/change-owner.png){.thumbnail}
 
 > [!warning]
 >
@@ -63,7 +63,7 @@ In the `General information`{.action} tab, go to the **Plan** section in the bot
 
 A new browser tab will open with all eligible domains. Select a domain name on the list by using the checkbox to the left of it. This step can also be used to launch a bulk operation: it is possible to initiate a domain trade for multiple domain names at once, for example to change the owner of all .ovh domains. When you have made your choices, click `Continue`{.action}.
 
-![changing owner](images/available-domains.png){.thumbnail}
+![changing owner](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/available-domains.png){.thumbnail}
 
 In the owner details form, make sure to enter valid information into all the required fields. Avoid spelling mistakes and using [ASCII printable characters](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm) whenever possible. Please note that any inaccurate or false information may cause a technical error and therefore a delay of the entire trading process. 
 
@@ -89,9 +89,9 @@ If the email address is not changed as part of the domain trade, one recipient w
 
 If you need to update some secondary information such as phone number, address etc., you do not have to start a trade procedure. It can be edited directly in the [OVHcloud Control Panel](/links/manager).
 
-In the **Plan** section of the `General information`{.action} tab, click on `...`{.action} next to the **contacts**, then click `Refresh owner information`{.action}.
+In the **Plan** section of the `General information`{.action} tab, click on `...`{.action} next to the **contacts**, then click `Refresh holder information`{.action}.
 
-![changing owner](images/refresh-owner-information.png){.thumbnail}
+![changing owner](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/refresh-holder-information.png){.thumbnail}
 
 With this operation you do not need to confirm changes by email.
 
@@ -103,4 +103,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>. 
+Join our [community of users](/links/community). 

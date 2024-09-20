@@ -1,7 +1,7 @@
 ---
 title: "Activating email addresses included in your Web Hosting plan"
 excerpt: "Find out how to activate the email addresses included in your Web Hosting plan"
-updated: 2024-03-21
+updated: 2024-07-17
 ---
 
 ## Objective
@@ -33,11 +33,11 @@ Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.
 
 In the `Configuration` box, you will see `Email addresses`. Click the `...`{.action} button on the right, then `Enable email solution`{.action}.
 
-![email-activation](images/enable-email-included-webhosting.png){.thumbnail}
+![email-activation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/enable-email-included-webhosting.png){.thumbnail}
 
 The activation window appears. Choose the domain name you would like to link your email addresses to, then confirm your choice.
 
-![email-activation](images/order-activate-email-included-webhosting-step-1.png){.thumbnail}
+![email-activation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-activate-email-included-webhosting-step-1.png){.thumbnail}
 
 > [!primary]
 > If you would like to have more included email accounts, please order a higher [web hosting plan](/links/web/hosting){.external} from our webpage.
@@ -53,7 +53,7 @@ Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.
 
 In the `Configuration` box, click the `...`{.action} button to the right of the `Email addresses` entry, then click the `Detach my email option`{.action} button
 
-![email-activation](images/detach-email-included-webhosting.png){.thumbnail}
+![email-activation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/detach-email-included-webhosting.png){.thumbnail}
 
 An MX solution will be offered for purchase. Once the order has been settled, your emails will continue to work after the Web Hosting plan is suspended.
  
@@ -69,7 +69,7 @@ Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.
 
 In the `Configuration` box, click the `...`{.action} button to the right of the `Email addresses` entry, then click the `Cancel the email option`{.action} button.
 
-![email-activation](images/cancel-email-included-webhosting.png){.thumbnail}
+![email-activation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/cancel-email-included-webhosting.png){.thumbnail}
 
 > [!warning]
 >
@@ -81,4 +81,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

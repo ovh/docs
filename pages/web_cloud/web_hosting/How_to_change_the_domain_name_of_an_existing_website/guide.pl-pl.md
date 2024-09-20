@@ -72,7 +72,7 @@ Aby pomyślnie przejść do etapu 1 należy spełnić kilka warunków:
 
 Jeśli wszystkie działania zostały poprawnie zrealizowane, zgłoszenia w wielu lokalizacjach domen muszą być identyczne **chyba że korzystasz z płatnego certyfikatu SSL typu *Sectigo DV*, *Sectigo EV* lub *custom***.
 
-![MultiSite](images/all-domain-same-config-enable.png){.thumbnail}
+![MultiSite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
 
 > [!primary]
 >
@@ -150,4 +150,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

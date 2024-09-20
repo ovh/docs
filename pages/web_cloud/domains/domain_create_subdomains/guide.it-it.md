@@ -28,7 +28,7 @@ Un **dominio** è composto da diversi livelli. Questi livelli sono generalmente 
 
 - Third Level Domain (**subdomain**): è a partire da questo terzo livello che si parla di **sottodominio**. Descriveremo in dettaglio la definizione di servizio e ti spiegheremo come utilizzarlo con i tuoi diversi servizi.
 
-![URL content](images/url-composition.png){.thumbnail}
+![URL content](/pages/assets/schemas/domains/url-composition.png){.thumbnail}
   
 **Questa guida ti mostra i sottodomini e come crearli in OVHcloud.**
 
@@ -92,7 +92,7 @@ Sono possibili due scenari:
 >
 > La zona DNS attiva del tuo dominio non è necessariamente gestita presso lo stesso provider del tuo dominio.
 >
-> 1: Per identificare la zona DNS attiva di un dominio registrato in OVHcloud, consulta la nostra guida "[Modificare i server DNS di un dominio OVHcloud](/pages/web_cloud/domains/dns_server_general_information)".
+> 1: Per identificare la zona DNS attiva di un dominio registrato in OVHcloud, consulta la nostra guida "[Modificare i server DNS di un dominio OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
 >
 > 2: se il dominio non è registrato in OVHcloud, contatta il *Registrar* attuale per conoscere la zona DNS attiva. È possibile trasferire il dominio in OVHcloud seguendo la nostra [guida dedicata](/pages/web_cloud/domains/transfer_incoming_generic_domain).
 >
@@ -181,7 +181,7 @@ Per maggiori informazioni sulla configurazione di una piattaforma Email Pro, con
 
 [Modificare una zona DNS in OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-[Modificare i server DNS di un dominio OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
+[Modificare i server DNS di un dominio OVHcloud](/pages/web_cloud/domains/dns_server_edit)
 
 [Ospitare più siti su uno stesso hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite)
 
@@ -197,4 +197,4 @@ Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [p
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

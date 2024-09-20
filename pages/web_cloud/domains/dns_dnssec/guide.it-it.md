@@ -1,7 +1,7 @@
 ---
 title: "Rendere sicuro il tuo dominio con DNSSEC"
 excerpt: "Questa guida ti mostra come proteggere il tuo dominio dal Cache Poisoning attivando DNSSEC"
-updated: 2023-07-26
+updated: 2024-08-20
 ---
 
 > [!primary]
@@ -19,6 +19,11 @@ In questo modo, possono reindirizzare i flussi in entrata dal tuo dominio verso 
 Il **D**omain **N**ame **S**ystem **SEC**urity extensions (**DNSSEC**), permette di proteggere la configurazione DNS del tuo nome di dominio dal "Cache poisoning" verificando e autenticando le risposte DNS.
 
 **Questa guida ti mostra come attivare il protocollo DNSSEC per proteggere il tuo dominio dal "Cache poisoning".**
+
+> [!primary]
+>
+> L'opzione DNSSEC non è disponibile per i domini con estensione **.it**.
+>
 
 Per maggiori informazioni sul funzionamento del **DNSSEC**, consulta la nostra pagina "[Comprendere il DNSSEC](/links/web/domains-dnssec){.external}".
 
@@ -59,11 +64,11 @@ Sempre nella scheda `Informazioni generali`{.action}, in seguito allo [step 1](#
 
 Per farlo, nella sezione "Sicurezza", controlla lo stato accanto alla voce "Delegazione Sicura (DNSSEC)".
 
-![dnssec](images/activate-dnssec.png){.thumbnail}
+![dnssec](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/activate-dnssec.png){.thumbnail}
 
 Il pulsante di attivazione situato sopra la voce `Delegazione Sicura (DNSSEC)`{.action} permette di attivare o disattivare il **DNSSEC** sul dominio. Eseguendo questa operazione, si apre una nuova finestra da cui è possibile confermare la modifica.
 
-![dnssec](images/activate-dnssec-confirmation.png){.thumbnail}
+![dnssec](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/activate-dnssec-confirmation.png){.thumbnail}
 
 > [!primary]
 >
@@ -84,4 +89,4 @@ Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [p
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

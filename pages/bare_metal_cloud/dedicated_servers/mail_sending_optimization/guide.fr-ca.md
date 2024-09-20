@@ -63,19 +63,19 @@ Toujours dans le but d'optimiser l'envoi et de réduire les risques de blocage d
 
 Vous devez tout d'abord créer un enregistrement A dans la zone DNS de votre domaine avec l'adresse IP de votre serveur comme cible.
 
-Si vos serveurs DNS sont gérés par OVHcloud, consultez notre guide sur [l'édition d'une zone DNS OVHcloud via votre espace client](/pages/web_cloud/domains/dns_zone_edit#acceder-a-la-gestion-dune-zone-dns-ovhcloud).
+Si vos serveurs DNS sont gérés par OVHcloud, consultez notre guide sur [l'édition d'une zone DNS OVHcloud via votre espace client](/pages/web_cloud/domains/dns_zone_edit).
 
 Une fois la zone DNS de votre nom de domaine modifiée, un temps de propagation de 24 heures maximum est nécessaire afin que les modifications soient effectives.
 
 Une fois cela fait, ajoutez l'enregistrement PTR (également connu sous le nom de *reverse*) :
 
-Dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, rendez-vous dans la section `Bare Metal Cloud`{.action}, puis ouvrez `Network`{.action}. Cliquez ensuite sur `IP`{.action}. 
+Dans votre [espace client OVHcloud](/links/manager){.external}, rendez-vous dans la section `Bare Metal Cloud`{.action}, puis ouvrez `Network`{.action}. Cliquez ensuite sur `IP`{.action}. 
 
 Si vous souhaitez configurer le reverse DNS sur une adresse Additional IP, cliquez sur l'onglet `Additional IP`{.action}.
 
 Le menu déroulant sous « **Mes adresses IP publiques et services associés** » vous permet de filtrer vos services par catégorie.
 
-![Reverse IP](images/selectservice2022.png){.thumbnail}
+![Reverse IP](images/filteripds.png){.thumbnail}
 
 Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne correspondante puis sur `Modifier le reverse`{.action} :
 
@@ -148,11 +148,11 @@ Il peut être intéressant d'utiliser un site comme [Mail Tester](http://www.mai
 
 ## Aller plus loin <a name="go-further"></a>
 
-[Configurer un enregistrement DKIM](/pages/web_cloud/domains/dns_zone_dkim)
+[Améliorer la sécurité des e-mails via un enregistrement DKIM](/pages/web_cloud/domains/dns_zone_dkim)
 
-[Configurer un enregistrement SPF](/pages/web_cloud/domains/dns_zone_spf)
+[Améliorer la sécurité des e-mails via un enregistrement SPF](/pages/web_cloud/domains/dns_zone_spf)
 
-[Configurer un enregistrement DMARC](/pages/web_cloud/domains/dns_zone_dmarc)
+[Améliorer la sécurité des e-mails via un enregistrement DMARC](/pages/web_cloud/domains/dns_zone_dmarc)
 
 Pour être accompagné sur la mise en place de vos solutions OVHcloud, contactez notre [réseau de partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
 

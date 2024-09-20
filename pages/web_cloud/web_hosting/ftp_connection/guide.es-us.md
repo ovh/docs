@@ -45,7 +45,7 @@ Si no dispone de estos datos, conéctese a su [área de cliente de OVHcloud](/li
 
 Se mostrará la información relativa a su espacio de almacenamiento y una tabla con los usuarios FTP y SSH creados en su alojamiento web.
 
-![Conexión FTP](images/tab-pro.png){.thumbnail}
+![Conexión FTP](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
 
 > [!primary]
 >
@@ -75,7 +75,7 @@ A continuación se muestra una descripción de la información esencial que se m
 
 Si ya no conoce la contraseña de un usuario FTP o SSH, consulte nuestra guía "[Cambiar la contraseña de un usuario FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
 
-![Conexión FTP](images/change-password.png){.thumbnail}
+![Conexión FTP](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/change-password.png){.thumbnail}
 
 En este punto, dispondrá de todos los elementos necesarios para conectarse a su espacio de almacenamiento FTP.
 
@@ -96,11 +96,11 @@ Para conectarse a su espacio de almacenamiento FTP a través del "Explorador FTP
 
 Haga clic en el apartado `Alojamientos`{.action} en la columna izquierda. Seleccione el alojamiento correspondiente, abra la pestaña `FTP - SSH`{.action} y haga clic en el botón `Explorador FTP`{.action}.
 
-![Conexión FTP](images/ftp-explorer.png){.thumbnail}
+![Conexión FTP](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/ftp-explorer.png){.thumbnail}
 
 Se abrirá una nueva página en la que deberá introducir su usuario FTP y su contraseña y, a continuación, conéctese. Si la información es correcta, aparecerá el espacio de almacenamiento.
 
-![Conexión FTP](images/login-interface.png){.thumbnail}
+![Conexión FTP](/pages/assets/screens/other/web-tools/net2ftp/login-interface.png){.thumbnail}
 
 #### 2. Conexión mediante un cliente FTP <a name="ftpsoftware"></a>
 
@@ -159,7 +159,7 @@ Si los datos son correctos, se conectará al espacio de almacenamiento FTP.
 
 Si necesita ayuda, consulte la guía "[Utilizar una conexión SSH en un alojamiento web](/pages/web_cloud/web_hosting/ssh_on_webhosting)".
 
-![Conexión FTP](images/terminal-ssh-connected.png){.thumbnail}
+![Conexión FTP](/pages/assets/screens/other/web-tools/terminal/terminal-ssh-connected.png){.thumbnail}
 
 ## Más información
 
@@ -177,4 +177,4 @@ Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con 
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

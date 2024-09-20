@@ -18,7 +18,7 @@ Il livello RAID implementato di default sui server OVHcloud è RAID 1, un sistem
 
 ## Prerequisiti
 
-- Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/){.external} con configurazione RAID software
+- Disporre di un [server dedicato](/links/bare-metal/bare-metal){.external} con configurazione RAID software
 - Avere accesso al server via SSH con l’utente root
 
 ## Procedura

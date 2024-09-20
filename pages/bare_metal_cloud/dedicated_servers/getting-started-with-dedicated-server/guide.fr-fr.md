@@ -40,7 +40,7 @@ Un serveur dédié est un serveur physique (« bare metal ») situé dans l’un
 
 > [!success]
 >
-> Retrouvez plus d’informations sur les systèmes d’exploitation des serveurs sur [notre page web](https://www.ovhcloud.com/fr/bare-metal/os/).
+> Retrouvez plus d’informations sur les systèmes d’exploitation des serveurs sur [notre page web](/links/bare-metal/os).
 >
 
 Vous pouvez facilement réinstaller votre serveur ou choisir une autre image d'OS à installer dans votre [espace client OVHcloud](/links/manager). Sous l'onglet `Informations générales`{.action}, cliquez sur `...`{.action} en face du système d'exploitation, puis cliquez sur `Installer`{.action}.
@@ -55,7 +55,7 @@ Dans la fenêtre qui apparaît, sélectionnez l'une des options d'installation :
 
 > [!primary]
 >
-> Certains systèmes d'exploitation ou plates-formes propriétaires tels que Plesk ou Windows nécessitent des licences qui génèrent des frais supplémentaires. Vous pouvez acheter des licences [auprès de OVHcloud](https://www.ovhcloud.com/fr/bare-metal/os/) ou auprès d'un revendeur externe. Vous devrez ensuite appliquer votre licence, dans le système d'exploitation lui-même ou à l'aide de votre [espace client OVHcloud](/links/manager).
+> Certains systèmes d'exploitation ou plates-formes propriétaires tels que Plesk ou Windows nécessitent des licences qui génèrent des frais supplémentaires. Vous pouvez acheter des licences [auprès de OVHcloud](/links/bare-metal/os) ou auprès d'un revendeur externe. Vous devrez ensuite appliquer votre licence, dans le système d'exploitation lui-même ou à l'aide de votre [espace client OVHcloud](/links/manager).
 >
 > Vous pouvez gérer toutes vos licences dans la section `Bare Metal Cloud`{.action} sous `Licences`{.action}. Dans cette section, vous pouvez également commander des licences ou ajouter des licences existantes via le bouton `Actions`{.action}.
 >
@@ -159,7 +159,7 @@ Selon vos besoins en matière de sécurité, de mobilité et de commodité, les 
 
 Une fois l'installation terminée, vous recevrez un e-mail avec vos identifiants Windows. Vous pouvez ensuite vous connecter à votre serveur via RDP (**R**emote **D**esktop **P**rotocol). Sur votre périphérique Windows local, ouvrez l'application `Remote Desktop Connection`.
 
-![Windows remote](images/windows-connect-03.png){.thumbnail}
+![Windows remote](/pages/assets/screens/other/windows/windows_rdp.png){.thumbnail}
 
 Renseignez l'adresse IPv4 de votre serveur, puis votre nom d'utilisateur et votre passphrase. Généralement, un message d'avertissement apparaît, vous demandant de confirmer la connexion en raison d'un certificat inconnu. Cliquez sur `Oui`{.action} pour vous connecter.
 
@@ -186,17 +186,17 @@ Pour les activer, suivez les étapes ci-dessous en parcourant les onglets :
 > 2. **Ouvrir l'utilitaire « Exécuter »**
 >>
 >> Ouvrez le menu Démarrer de Windows et cliquez sur `Exécuter`{.action}.<br><br>
->>![IPMI](images/windowsboot1.png){.thumbnail}<br>
+>>![IPMI](/pages/assets/screens/other/windows/windows_start_run.png){.thumbnail}<br>
 >>
 > 3. **Ouvrir « msconfig »**
 >>
 >> Entrez « msconfig » et cliquez sur `OK`{.action}.<br><br>
->>![IPMI](images/windowsboot2.png){.thumbnail}<br>
+>>![IPMI](/pages/assets/screens/other/windows/windows_msconfig.png){.thumbnail}<br>
 >>
 > 4. **Activer les logs**
 >>
 >> Dans la nouvelle fenêtre, activez l'option logs à côté de `Boot log`. Cliquez sur `OK`{.action}.<br><br>
->>![IPMI](images/windowsboot3.png){.thumbnail}<br>
+>>![IPMI](/pages/assets/screens/other/windows/windows_log.png){.thumbnail}<br>
 >>
 
 Au prochain démarrage de votre serveur, les logs seront enregistrés dans un fichier `.txt`. Le chemin d'accès au fichier est : `C:\Windows\ntbtlog.txt`.
@@ -301,6 +301,6 @@ Pour activer et utiliser l'option Backup Storage, consultez [ce guide](/pages/ba
 
 [API OVHcloud et installation d'un OS](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

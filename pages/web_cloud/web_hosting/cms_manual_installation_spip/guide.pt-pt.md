@@ -39,23 +39,23 @@ Siga o **conjunto de passos** descritos no nosso tutorial de [instalação manua
 
 Introduza `your_domain/ecrire` na barra de pesquisa do seu browser para iniciar a instalação do seu website Spip. Surge a seguinte página:
 
-![Spip installation](images/installation_first_step.png){.thumbnail}
+![Spip installation](/pages/assets/screens/other/cms/spip/installation_first_step.png){.thumbnail}
 
 Selecione o idioma do seu website Spip e clique em `Next`{.action} para confirmar. Aparecerá a seguinte janela:
 
-![Spip installation](images/installation_second_step.png){.thumbnail}
+![Spip installation](/pages/assets/screens/other/cms/spip/installation_second_step.png){.thumbnail}
 
 Introduza as informações para se ligar ao seu SGBD (MySQL por exemplo). Quando a conexão com sua base de dados for bem-sucedida, a tela a seguir será exibida:
 
-![Spip installation](images/installation_third_step.png){.thumbnail}
+![Spip installation](/pages/assets/screens/other/cms/spip/installation_third_step.png){.thumbnail}
 
 Selecione a base de dados que pretende utilizar para o seu website ou [crie uma nova](/pages/web_cloud/web_hosting/sql_create_database). Escolha um prefixo para as tabelas da sua base de dados. Por predefinição, é utilizado o prefixo `spip`. Clique em `Next`{.action} para validar as informações. Aparecerá a seguinte janela:
 
-![Spip installation](images/installation_fourth_step.png){.thumbnail}
+![Spip installation](/pages/assets/screens/other/cms/spip/installation_fourth_step.png){.thumbnail}
 
 Introduza as informações solicitadas e clique em `Next`{.action} para confirmar. Aparecerá a seguinte janela:
 
-![Spip installation](images/installation_fifth_step.png){.thumbnail}
+![Spip installation](/pages/assets/screens/other/cms/spip/installation_fifth_step.png){.thumbnail}
 
 O ecrã apresenta a lista dos plugins disponíveis para o seu website e informa-o de que a instalação do Spip decorreu sem problemas.
 
@@ -85,4 +85,4 @@ Acaba de instalar manualmente o CMS Spip no seu alojamento web da OVHcloud. O se
  
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
  
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

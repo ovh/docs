@@ -1,7 +1,7 @@
 ---
 title: 'Cambiar la contraseña de una dirección de correo'
 excerpt: 'Cómo cambiar la contraseña de una dirección de correo de OVHcloud'
-updated: 2023-01-03
+updated: 2024-06-18
 ---
 
 ## Objetivo
@@ -77,7 +77,7 @@ La modificación de su contraseña a través del webmail está disponible para l
 > La solución **MXplan (versión histórica)** utiliza el webmail Roundcube. La modificación de la contraseña solo se realiza [desde el área de cliente](#controlpanel).
 >
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xnq6wvANUFs" title="Vídeo de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/xnq6wvANUFs" title="Vídeo de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Acceda a la página [Webmail](https://www.ovhcloud.com/es-es/mail/) e introduzca su dirección de correo electrónico completa y la contraseña actual. Haga clic en el botón `Conexión`{.action}. 
 
@@ -99,6 +99,14 @@ En la nueva ventana, introduzca la contraseña actual, escriba una nueva contras
 >
 
 ![Correo electrónico](images/mxplan-password-new-step5.png){.thumbnail}
+
+### Recupera una password
+
+Per motivi di sicurezza e riservatezza non è possibile **recuperare** una password. Come descritto nei passaggi precedenti, è necessario reimpostare la password nel caso in cui non sia più nota.
+
+> [!primary]
+>
+> Se vuoi salvare una password, ti consigliamo di utilizzare un gestore di password come **Keepass** ad esempio.
 
 #### Identifique su solución MXplan <a name="whichmxplan"></a>
 

@@ -10,14 +10,14 @@ Le vRack (baie virtuelle) OVHcloud permet de rassembler virtuellement plusieurs 
 
 **Découvrez comment configurer le vRack sur plusieurs serveurs dédiés.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZA7IsbDdAmc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/ZA7IsbDdAmc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Prérequis
 
 - Un service [vRack](https://www.ovh.com/fr/solutions/vrack/) activé dans votre compte
-- Plusieurs [serveurs dédiés](https://www.ovh.com/fr/serveurs_dedies/) (compatibles vRack)
+- Plusieurs [serveurs dédiés](/links/bare-metal/bare-metal) (compatibles vRack)
 - Disposer d’un accès administrateur (sudo) au serveur via SSH ou RDP
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 - Préparer la plage d'adresses IP privées que vous avez choisie
 
 > [!warning]
@@ -37,7 +37,7 @@ Vous serez redirigé vers une autre page pour valider la commande, l’opératio
 
 ### Étape 2 : ajouter vos serveurs au vRack
 
-Une fois le vRack activé dans votre compte, rendez-vous dans la section `Bare Metal Cloud`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur `Network`{.action} et ouvrez le menu `vRack`{.action}.
+Une fois le vRack activé dans votre compte, rendez-vous dans la section `Bare Metal Cloud`{.action} de votre [espace client OVHcloud](/links/manager), cliquez sur `Network`{.action} et ouvrez le menu `vRack`{.action}.
 
 Sélectionnez votre vRack dans la liste pour afficher la liste des services éligibles. Cliquez sur chacun des serveurs que vous souhaitez ajouter au vRack, puis cliquez sur le bouton `Ajouter`{.action}.
 
@@ -60,7 +60,7 @@ Vous pouvez utiliser n'importe quelle plage d'IP privée de votre choix et n'imp
 
 Les noms des interfaces réseau de vos serveurs ne sont pas toujours les mêmes. Dans les exemples suivants, remplacez NETWORK_INTERFACE par le nom d'interface approprié.
 
-Le meilleur moyen de vérifier la bonne interface pour le vRack est de vérifier l'onglet `Interfaces réseau`{.action} de votre serveur dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Dans le tableau du bas, notez l'adresse MAC qui est aussi le **Nom** de l'interface **Privée**.
+Le meilleur moyen de vérifier la bonne interface pour le vRack est de vérifier l'onglet `Interfaces réseau`{.action} de votre serveur dans votre [espace client OVHcloud](/links/manager). Dans le tableau du bas, notez l'adresse MAC qui est aussi le **Nom** de l'interface **Privée**.
 
 ![Interface vRack](images/private_interface.png){.thumbnail}
 
@@ -70,7 +70,7 @@ Une fois connecté à votre serveur via SSH, vous pouvez lister vos interfaces r
 ip a
 ```
 
-Sur la ligne qui commence par ```link ether```, vous pouvez vérifier que cette interface correspond à l'interface **Privée** renseignée dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Utilisez ce nom d'interface pour remplacer `NETWORK_INTERFACE` dans les configurations ci-dessous (exemple : `eno2`).
+Sur la ligne qui commence par ```link ether```, vous pouvez vérifier que cette interface correspond à l'interface **Privée** renseignée dans votre [espace client OVHcloud](/links/manager). Utilisez ce nom d'interface pour remplacer `NETWORK_INTERFACE` dans les configurations ci-dessous (exemple : `eno2`).
 
 ```console
 link ether f0:00:00:ef:0e:f0
@@ -213,4 +213,4 @@ Répétez cette procédure pour vos autres serveurs et attribuez à chacun d'ent
 
 [Créer plusieurs VLAN dans le vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

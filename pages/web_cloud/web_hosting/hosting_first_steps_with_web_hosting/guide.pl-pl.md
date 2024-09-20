@@ -137,7 +137,7 @@ Aby sprawdzić i/lub zmienić połączenie między Twoją domeną i hostingiem, 
 - [Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite): Ten przewodnik wyjaśnia, jak dodać kilka domen do hostingu. Może również pomóc w sprawdzeniu, czy w zakładce `MultiSite`{.action} Twojego hostingu masz poprawną nazwę domeny. Jeśli jest taka potrzeba, możesz ją zmienić i zrobić to, co konieczne, w strefie DNS aktywnej dla Twojej domeny.
 - [Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit): Niniejszy przewodnik wyjaśnia, jak edytować strefę DNS obecną w OVHcloud. Będzie Ci on przydatny, jeśli aktywna strefa DNS Twojej domeny znajduje się na innym koncie klienta OVHcloud niż Twoje. Może również służyć do zalogowania się do strefy DNS OVHcloud Twojej domeny, w celu sprawdzenia, czy adres IP (rekord wejściowy(e) typu *A* i/lub *AAAA*) zadeklarowany dla Twojej domeny w strefie DNS odpowiada adresowi IP Twojego hostingu.
 
-Aby zweryfikować i/lub zmodyfikować powiązanie między Twoją domeną i usługą e-mail OVHcloud, zapoznaj się z przewodnikiem "[Konfiguracja rekordu MX](/pages/web_cloud/domains/dns_zone_mx)" : znajdziesz w nim nazwy serwerów e-mail OVHcloud, ale również procedurę przekierowywania domeny na te serwery.
+Aby zweryfikować i/lub zmodyfikować powiązanie między Twoją domeną i usługą e-mail OVHcloud, zapoznaj się z przewodnikiem "[Konfiguracja rekordu MX dla emaili](/pages/web_cloud/domains/dns_zone_mx)" : znajdziesz w nim nazwy serwerów e-mail OVHcloud, ale również procedurę przekierowywania domeny na te serwery.
 
 > [!primary]
 >
@@ -145,7 +145,7 @@ Aby zweryfikować i/lub zmodyfikować powiązanie między Twoją domeną i usłu
 > 
 > - **W przypadku połączenia domeny z hostingiem** : zapoznaj się wyłącznie z przewodnikami "[Lista adresów IP klastrów i hostingów WWW](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)" i "[Instalacja kilku stron WWW na jednym hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite)", które zostały wymienione powyżej, aby uzyskać adres IP hostingu WWW, i potwierdź poprawność wpisywania domeny na hostingu WWW. Następnie skontaktuj się z organizacją zarządzającą aktywną strefą DNS Twojej domeny, aby przekierować ją na Twój hosting.
 >
-> - **W celu utworzenia powiązania między Twoją domeną i usługą e-mail OVHcloud** : zapoznaj się wyłącznie z przewodnikiem "[Konfiguracja rekordu MX](/pages/web_cloud/domains/dns_zone_mx)", aby dowiedzieć się, jakie serwery e-mail OVHcloud należy wpisać w aktywnej strefie DNS Twojej domeny. Następnie skontaktuj się z organem zarządzającym aktywną strefą DNS Twojej domeny, aby przekierować ją na serwery e-mail OVHcloud.
+> - **W celu utworzenia powiązania między Twoją domeną i usługą e-mail OVHcloud** : zapoznaj się wyłącznie z przewodnikiem "[Konfiguracja rekordu MX dla emaili](/pages/web_cloud/domains/dns_zone_mx)", aby dowiedzieć się, jakie serwery e-mail OVHcloud należy wpisać w aktywnej strefie DNS Twojej domeny. Następnie skontaktuj się z organem zarządzającym aktywną strefą DNS Twojej domeny, aby przekierować ją na serwery e-mail OVHcloud.
 >
 
 ### Etap 5 - Inne opcje dostępne w ramach hostingu www <a name="other-optionsn"></a>
@@ -212,4 +212,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

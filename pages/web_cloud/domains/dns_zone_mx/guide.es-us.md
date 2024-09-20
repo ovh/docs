@@ -1,6 +1,6 @@
 ---
-title: 'Añadir un registro MX a la configuración del dominio'
-excerpt: 'Cómo añadir un registro MX a la configuración de un dominio en OVHcloud'
+title: "Configurar un registro MX para la gestión del correo"
+excerpt: "Descubra cómo configurar un registro MX en un dominio en OVHcloud"
 updated: 2024-02-29
 ---
 
@@ -27,7 +27,7 @@ El registro MX permite asociar un dominio al servidor de su plataforma de correo
 >
 > - Si el dominio está registrado en OVHcloud, compruebe que utiliza nuestra configuración en el [área de cliente de OVHcloud](/links/manager). Una vez que se haya registrado el dominio en cuestión, abra la pestaña `Información General`{.action}, en la sección `Servidores DNS`{.action}. Si la mención `Activo` aparece en «**Servidores DNS**», podrá utilizar los servidores DNS de OVHcloud.
 >
-> ![Correo electrónico](images/dns-servers-enabled.png){.thumbnail}
+> ![Correo electrónico](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/dns-servers-enabled.png){.thumbnail}
 
 ## Procedimiento
 
@@ -40,7 +40,7 @@ Cuando la dirección **sender@otherdomain.ovh** envía un correo electrónico a 
 - **(1)** consultar la zona DNS del dominio **mydomain.ovh** y leer los registros **MX**.
 - **(2)** reenviar el mensaje de correo electrónico a la URL del registro **MX** leído.
 
-![Correo electrónico](images/mx-dns-resolution-apac-ca.png){.thumbnail}
+![Correo electrónico](/pages/assets/schemas/emails/mx-dns-resolution-apac-ca.png){.thumbnail}
 
 El mensaje se enviará al destino **mx0.mail.ovh.ca**, precedido del valor **0**. Este valor se denomina prioridad. El valor más bajo se consulta primero y el más alto después. Esto significa que la presencia de varios registros permite paliar la falta de respuesta del registro MX de menor prioridad.
 
@@ -74,14 +74,14 @@ Esta tabla muestra la configuración de OVHcloud del dominio. Cada línea corres
 En primer lugar, compruebe que los registros MX ya existen en la configuración DNS de OVHcloud de su dominio utilizando la lista de filtros que aparece sobre la tabla de su zona DNS.<br>
 Seleccione el tipo **MX** y acepte para ver solo los registros DNS MX de su zona DNS. Consulte la captura de pantalla a continuación.
 
-![Registro MX en la zona DNS](images/mx-entries-research.png){.thumbnail}
+![Registro MX en la zona DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/mx-entries-research.png){.thumbnail}
 
 - Si los registros MX ya existen y desea modificarlos, haga clic en el botón `...`{.action} a la derecha de cada fila de la tabla correspondiente y seleccione `Modificar el registro`{.action}.
 - Si no hay ningún registro MX, haga clic en el botón `Añadir un registro`{.action} a la derecha de la tabla y seleccione `MX`{.action}. Introduzca la información solicitada en función de la solución de correo elegida:
 
 **Si tiene contratada una solución de correo electrónico de OVHcloud**, consulte la información que encontrará en el apartado [Conocer la configuración MX de OVHcloud](#mxovhcloud).
 
-![Registro MX en la zona DNS](images/modify-a-dns-zone-record-mx-step-1.png){.thumbnail}
+![Registro MX en la zona DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/modify-a-dns-zone-record-mx-step-1.png){.thumbnail}
 
 Una vez que haya introducido toda la información, siga los pasos que se indican y haga clic en `Aceptar`{.action}.
 
@@ -98,12 +98,12 @@ Una vez que haya introducido toda la información, siga los pasos que se indican
 
 [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-[Configurar un registro SPF en un dominio](/pages/web_cloud/domains/dns_zone_spf)
+[Mejorar la seguridad del correo electrónico mediante el registro SPF](/pages/web_cloud/domains/dns_zone_spf)
 
-[Configurar un registro DKIM](/pages/web_cloud/domains/dns_zone_dkim)
+[Mejorar la seguridad del correo electrónico mediante el registro DKIM](/pages/web_cloud/domains/dns_zone_dkim)
 
 Para servicios especializados (posicionamiento web, desarrollo...), póngase en contacto con los [partners de OVHcloud](/links/partner).
 
 Si necesita ayuda sobre el uso y la configuración de sus soluciones de OVHcloud, puede consultar nuestras diferentes [ofertas de soporte](/links/support).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

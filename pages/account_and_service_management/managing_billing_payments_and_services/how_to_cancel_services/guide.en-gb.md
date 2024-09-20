@@ -98,16 +98,6 @@ To cancel your [Office 365 CSP1](https://www.ovhcloud.com/en-gb/collaborative-to
 
 To cancel your [Office 365 CSP2](https://www.ovhcloud.com/en-gb/collaborative-tools/microsoft-365/) solution, follow the instructions in this [guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp2#manage-your-subscriptions).
 
-#### Sharepoint <a name="sharepoint"></a>
-
-You can either **delete** an individual account from your [Sharepoint platform](https://www.ovhcloud.com/en-gb/collaborative-tools/sharepoint/) or cancel the entire Sharepoint platform.
-
-If you would like to cancel the entire platform, we advise you to start by deleting each individual account beforehand.
-
-- To delete an individual Sharepoint account, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) in the `Web Cloud`{.action} section. Click on `Microsoft`{.action}, `Sharepoint`{.action} and then on your Sharepoint platform. <br>On the `Users`{.action} tab, click on the `...`{.action} button to the right of the account you want to delete, then on `Disable account`{.action}. Review the information and click on `Confirm`{.action}.
-
-- To cancel your entire SharePoint platform, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), click on your name in the top right-hand corner, then on `Products and services`{.action}. <br>Then click on the `...`{.action} button to the right of the SharePoint platform you want to cancel, then on `Cancel subscription`{.action}. Specify the reasons for your cancellation request, then click on `Confirm`{.action}.
-
 #### SMS <a name="sms"></a>
 
 There is no cancellation procedure for [SMS offers](https://www.ovh.co.uk/sms/). An SMS account does not generate a monthly subscription or billing. SMS credits have an unlimited lifetime.

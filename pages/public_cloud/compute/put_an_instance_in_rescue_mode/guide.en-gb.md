@@ -35,9 +35,13 @@ You will now see the `Reboot in rescue mode` dialog box. Click the drop-down lis
 
 ![control panel](images/rescue2.png){.thumbnail}
 
-Once your instance has been rebooted in rescue mode, an information box will display the available ways of access. Your temporary **rescue mode password** will only be shown in the VNC console. Click on your instance in the table, then switch to the tab `VNC console`{.action} to retrieve it.
+Once your instance has been rebooted in rescue mode, an information box will display the available ways of access. 
 
 ![control panel](images/rescuedata.png){.thumbnail}
+
+Your temporary **rescue mode password** will only be shown in the VNC console. Click on your instance in the table, then switch to the tab `VNC console`{.action} to retrieve it.
+
+<table><tbody><tr><td><img alt="VNC console" class="thumbnail" src="/images/vncconsole.png" loading="lazy"></td><td><img alt="VNC rescue" class="thumbnail" src="/images/vncrescue.png" loading="lazy"></td></tr></tbody></table>
 
 ### Step 2: Accessing your data
 
@@ -102,4 +106,4 @@ nova unrescue INSTANCE_ID
 
 [How to replace an SSH key pair on an instance](/pages/public_cloud/compute/replacing_lost_ssh_key)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

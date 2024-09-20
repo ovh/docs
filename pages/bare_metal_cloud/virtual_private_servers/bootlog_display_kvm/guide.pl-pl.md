@@ -28,7 +28,7 @@ Jeśli Twój serwer VPS nie odpowiada, powinieneś mieć dostęp do niego za po�
 ## Wymagania początkowe
 
 - posiadanie serwera [VPS](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud
-- dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- dostęp do [Panelu client OVHcloud](/links/manager)
 
 ## W praktyce
 
@@ -41,7 +41,7 @@ Jeśli nadal masz dostęp do serwera VPS przez SSH, możesz przejść [do etapu 
 
 ### Etap 1: zrestartuj serwer VPS w trybie Rescue
 
-Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i uruchom restart serwera w trybie rescue. W razie potrzeby zapoznaj się z naszym [przewodnikiem dotyczącym trybu Rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue).
+Zaloguj się do [Panelu client OVHcloud](/links/manager) i uruchom restart serwera w trybie rescue. W razie potrzeby zapoznaj się z naszym [przewodnikiem dotyczącym trybu Rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue).
 
 ### Etap 2: przeprowadzić wstępną weryfikację
 
@@ -164,7 +164,7 @@ Następnie użyj następującego polecenia, aby ponownie wygenerować plik konfi
 ~$ grub2-mkconfig -o "$(readlink /etc/grub.cfg)"
 ```
 
-Po przeprowadzeniu modyfikacji uruchom ponownie Twój VPS w trybie "normalnym" w [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Logi boot muszą się teraz pojawić podczas korzystania z [konsoli KVM](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps).
+Po przeprowadzeniu modyfikacji uruchom ponownie Twój VPS w trybie "normalnym" w [Panelu client OVHcloud](/links/manager). Logi boot muszą się teraz pojawić podczas korzystania z [konsoli KVM](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps).
 
 ## Sprawdź również
 

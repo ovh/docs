@@ -17,7 +17,7 @@ Questa guida ti mostra come creare e aggiungere utenti API.
 - Disporre di un account SMS OVHcloud attivo
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Télécom`{.action} > `SMS`{.action}
 
-![Spazio Cliente Telecom SMS](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
+![Spazio Cliente Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
 ## Procedura
 
@@ -38,7 +38,7 @@ Per gestire al meglio il saldo del tuo account SMS, puoi fissare un limite e una
 
 - La **quota** è la quantità di crediti SMS a disposizione dell’utente API.
 
-- Il **limite** è la soglia minima di crediti SMS di cui dispone un utente API prima di ricevere un alert per ricaricare o meno il numero dei crediti.
+- Il **limite** corrisponde alla soglia minima di crediti SMS che un utente API deve avere prima di ricevere un alert per ricaricare o meno il saldo dei crediti.
 
 ### Step 1: crea un utente API
 

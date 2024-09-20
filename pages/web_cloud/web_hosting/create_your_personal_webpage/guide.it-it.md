@@ -203,11 +203,11 @@ Ti consigliamo di semplificare al minimo i file:
 
 Per motivi di leggibilità, è necessario salvare le immagini in una directory dedicata:
 
-![Arborescenza file e cartelle](images/create_your_personal_webpage_1.png){.thumbnail}
+![Arborescenza file e cartelle](/pages/assets/screens/other/web-tools/vscode/create_your_personal_webpage_1.png){.thumbnail}
 
 Prendiamo un file in formato *PNG*. Inseriscilo nella directory "images":
 
-![Arborescenza file e cartelle con immagine](images/create_your_personal_webpage_2.png){.thumbnail}
+![Arborescenza file e cartelle con immagine](/pages/assets/screens/other/web-tools/vscode/create_your_personal_webpage_2.png){.thumbnail}
 
 Ora creeremo un nuovo paragrafo in cui inseriremo l'immagine (in questo esempio non precisiamo la dimensione della visualizzazione dell'immagine in pixel. Il browser visualizzerà il file in base alla dimensione originale.
 
@@ -231,7 +231,7 @@ Ora creeremo un nuovo paragrafo in cui inseriremo l'immagine (in questo esempio 
 
 Il risultato sul tuo browser dovrebbe essere :
 
-![Risultato del codice HTML sul browser](images/create_your_personal_webpage_3_it.png){.thumbnail}
+![Risultato del codice HTML sul browser](/pages/assets/screens/other/browsers/web-pages/create_your_personal_webpage_3_it.png){.thumbnail}
 
 ### Applica una forma al tuo contenuto grazie agli stili CSS
 
@@ -244,7 +244,7 @@ I fogli di stile permettono di cambiare l'aspetto e il comportamento degli eleme
 
 Come per i file HTML, i file CSS possono essere creati con qualsiasi editor di testo. L'estensione di questi file deve essere in *.css*.
 
-![Posizionamento file CSS](images/create_your_personal_webpage_4.png){.thumbnail}
+![Posizionamento file CSS](/pages/assets/screens/other/web-tools/vscode/create_your_personal_webpage_4.png){.thumbnail}
 
 Ora dobbiamo collegare questo file CSS, che abbiamo chiamato per convenzione *style.css*, alla nostra pagina HTML. Questo link si effettua aggiungendo un tag `<link>` nel tag `<head>` nel file index.html:
 
@@ -303,7 +303,7 @@ Noterete che i testi sono attaccati ai bordi del browser.
 
 La proprietà padding definisce il bordo rotante (margine interno), cioè lo spazio esterno al blocco che contiene il testo (o qualsiasi elemento). Il seguente schema illustra la corrispondenza di questi termini in quello che in CSS viene chiamato "modello di scatole":
 
-![Modello della scatola CSS](images/create_your_personal_webpage_5.png){.thumbnail}
+![Modello della scatola CSS](/pages/assets/schemas/web-hosting/create_your_personal_webpage_5.png){.thumbnail}
 
 ### Migliorare la struttura HTML del documento
 
@@ -451,4 +451,4 @@ Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [p
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [soluzioni di supporto](/links/support).
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

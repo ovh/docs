@@ -62,13 +62,13 @@ Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i wybierz pozycję `We
 
 Tabela z listą baz danych wyświetla się u dołu ekranu.
 
-![phpMyAdmin Access](images/go-to-phpmyadmin.png){.thumbnail}
+![phpMyAdmin Access](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
 
 Zwróć uwagę, **dla bazy danych, która jest wysycona**, jego `Nazwa użytkownika` i `Adres serwera`, które są zawarte w tabeli zawierającej listę Twoich baz danych. 
 
 W zakładce `Bazy danych`{.action} kliknij przycisk `...`{.action} po prawej stronie bazy danych, która jest wysycona, a następnie kliknij `Dostęp do phpMyAdmin`{.action}.
 
-![phpMyAdmin Go Login](images/pma-interface-login.png){.thumbnail}
+![phpMyAdmin Go Login](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
 
 Wprowadź dane dostępowe do Twojej bazy danych, a następnie kliknij `Login`{.action}.
 
@@ -83,11 +83,11 @@ Wprowadź dane dostępowe do Twojej bazy danych, a następnie kliknij `Login`{.a
 
 Po zalogowaniu wyświetla się następująca strona:
 
-![phpMyAdmin Login](images/pma-main-page.png){.thumbnail}
+![phpMyAdmin Login](/pages/assets/screens/other/web-tools/phpmyadmin/pma-main-page-2.png){.thumbnail}
 
 W kolumnie po lewej stronie kliknij `"Nazwa bazy danych"`{.action}, a następnie `Rozmiar`{.action} w prawym górnym rogu tabeli, która się wyświetli:
 
-![phpMyAdmin Tables](images/pma-check-size.png){.thumbnail}
+![phpMyAdmin Tables](/pages/assets/screens/other/web-tools/phpmyadmin/pma-check-size.png){.thumbnail}
 
 Największe stoły wyświetlają się na szczycie tabeli. Wyszukaj je i przejdź do **etapu 2**.
 
@@ -162,7 +162,7 @@ W przypadku opcji overquota lub dużego stołu, **trzy zamówienia** są dostęp
 
 Możesz wykonywać te zapytania bezpośrednio w interfejsie **phpMyAdmin**, w zakładce `SQL`{.action}:
 
-![phpMyAdmin SQL request](images/pma-sql-menu.png){.thumbnail}
+![phpMyAdmin SQL request](/pages/assets/screens/other/web-tools/phpmyadmin/pma-sql-menu.png){.thumbnail}
 
 - zamówienie **DELETE** : 
 
@@ -208,4 +208,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 
+Dołącz do [grona naszych użytkowników](/links/community). 

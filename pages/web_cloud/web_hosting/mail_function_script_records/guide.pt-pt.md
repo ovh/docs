@@ -1,7 +1,7 @@
 ---
 title: "Alojamento partilhado Seguimento dos emails automatizados"
 excerpt: "Seguimento dos seus emails enviados a partir de um website num alojamento partilhado OVHcloud"
-updated: 2023-12-04
+updated: 2024-09-05
 ---
 
 > [!primary]
@@ -35,13 +35,13 @@ Os e-mails automatizados são mensagens enviadas através de scripts. Geralmente
 
 O acompanhamento e a gestão dos e-mails automatizados do seu alojamento web OVHcloud efetuam-se a partir do seu [Área de Cliente OVHcloud](/links/manager){.external}. Uma vez conectado, aceda à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} e escolha o alojamento em causa na lista. A seguir, clique no separador `Plus`{.action} e depois em `Scripts emails`{.action}.
 
-![hosting](images/go-to-email-scripts-tab.png){.thumbnail}
+![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/email-scripts/go-to-email-scripts-tab.png){.thumbnail}
 
 A página que aparece permite-lhe seguir e gerir os e-mails automatizados enviados a partir do seu [alojamento web da OVHcloud](/links/web/hosting).
 
 ### Apresentação da parte "Scripts emails"
 
-![hosting](images/tab.png){.thumbnail}
+![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/email-scripts/tab.png){.thumbnail}
 
 A página apresenta várias informações que lhe permitem visualizar a atividade dos envios de e-mails automatizados gerados a partir dos seus scripts:
 
@@ -59,9 +59,10 @@ A página apresenta várias informações que lhe permitem visualizar a atividad
 
 À direita, vários botões permitem gerir os envios de e-mails automatizados a partir do seu alojamento web. Em função do estado do serviço, alguns podem não estar disponíveis.
 
+- **Purgar os e-mails** : apaga os e-mails presentes na fila de espera e desbloqueia o envio de emails.
+- **E-mails em erro**: permite o acesso aos logs dos últimos e-mails com erro de envio. Encontrará os endereços de e-mail afetados com o erro associado. Atenção, este histórico não será reiniciado, mesmo se decidir `Purgar os e-mails`{.action} ou `desbloquear o envio`{.action}.
 - **Bloquear o envio**: bloqueia a distribuição dos envios de e-mails automatizados do seu alojamento web. Os e-mails gerados pelos seus scripts após o bloqueio não serão enviados, mas conservados numa fila de espera durante 72 horas, no máximo.
 - **Desbloquear o envio**: desbloqueie o envio dos e-mails automatizados do seu alojamento web. Os e-mails presentes na fila de espera serão igualmente recolocados em distribuição.
-- **Purgar os e-mails** : apaga os e-mails presentes na fila de espera e desbloqueia o envio de emails.
 
 Para realizar a ação desejada, clique no botão correspondente e depois em `Valider`{.action}. Em certos casos, a ação desejada pode demorar dezenas de minutos para ser plenamente efetiva.
 
@@ -78,7 +79,7 @@ Se verificar que os e-mails gerados a partir dos seus scripts já não são envi
 
 ```bash
 <?php
-$to = "RecipientEmail@adress.tld"; 
+$to = "RecipientEmail@address.tld"; 
 $subject = "Test mail PHP"; 
 $content = "The body/content of the Email";
 $headers = "From: Website <SendingEmail@address.tld>\r\nReply-To: SendingEmail@address.tld";
@@ -129,7 +130,7 @@ Este estado ocorre quando os e-mails considerados como SPAM são enviados a part
 
 Geralmente, este bloqueio é acompanhado pelo envio de um e-mail intitulado **"Abuso com o seu alojamento domain.tld"** gerado automaticamente pelos nossos robôs de segurança:
 
-![hosting](images/email-script-disabled.png){.thumbnail}
+![hosting](/pages/assets/screens/email-sending-to-customer/webhosting/email-script-disabled.png){.thumbnail}
 
 São possíveis três casos relativamente a esta situação:
 
@@ -199,17 +200,6 @@ Embora recomendamos vivamente que privilegie a utilização da função "mail()"
 > Os e-mails emitidos com um script utilizando uma configuração SMTP não poderão ser geridos e acompanhados a partir do seu [Área de Cliente OVHcloud](/links/manager).
 > 
 
-Para isso, pode utilizar o seguinte script substituindo apenas os valores `Host`, Username e `Password` pelos seus próprios parâmetros SMTP:
-
-```bash
-$mail->Host = "your.smtp.server";
-$mail->SMTPAuth = true; 
-$mail->SMTPSecure = "ssl";
-$mail->Port = 465; 
-$mail->Username = "e-mail@adress.tld"; 
-$mail->Password = "YourEmailPassword"; 
-```
-
 > [!primary]
 >
 > Se utilizar um endereço de e-mail da OVHcloud e apenas neste caso, pode também utilizar o `SMTPSecure` *"startls"* ou *"tls"* através do `Port` **587**. No entanto, o `SMTPSecure` *"ssl"* com o `Port` **465** continua a ser a configuração a privilegiar na nossa infraestrutura.
@@ -227,4 +217,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
  
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

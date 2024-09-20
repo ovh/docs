@@ -52,7 +52,7 @@ Die Änderung des Passworts der Datenbank Ihrer Website erfolgt in vier Schritte
 
 Klicken Sie in Ihrem [OVHcloud Kundencenter](/links/manager) auf `Web Cloud`{.action} und dann auf `Hosting-Pakete`{.action} und schließlich auf das betreffende Hosting. Öffnen Sie den Tab `Multisite`{.action}. Identifizieren Sie den Namen des `Wurzelverzeichnisses` Ihrer Website (das Verzeichnis, in dem sich ihre Dateien und Ordner befinden).
 
-![root-folders](images/root-folders.png){.thumbnail}
+![root-folders](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
 Klicken Sie anschließend auf den Tab `FTP-SSH`{.action} und greifen Sie auf den Speicherplatz mit den Dateien und Ordnern Ihrer Seite (*FTP-Bereich*) zu, indem Sie auf den `FTP-Explorer`{.action} klicken.
 
@@ -198,29 +198,29 @@ Auch hier sind zwei Fälle möglich:
 
 Gehen Sie im Bereich `Hosting-Pakete`{.action} Ihres Kundencenters auf den Tab `Datenbanken`{.action} im rechten Bereich Ihrer Bildschirmanzeige:
 
-![database-password-step1](images/tab.png){.thumbnail}
+![database-password-step1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
 
 Klicken Sie dann rechts neben der Datenbank Ihrer Website auf `...`{.action} und anschließend auf `Passwort ändern`{.action}.
 
-![database-password-step2](images/change-password.png){.thumbnail}
+![database-password-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password.png){.thumbnail}
 
 Geben Sie im angezeigten Fenster das neue Passwort Ihrer Datenbank ein (festgelegt in [Schritt 3](#step3)), bestätigen Sie dieses und klicken Sie dann auf den Button `Bestätigen`{.action}.
 
-![database-password-step3](images/change-password-window.png){.thumbnail}
+![database-password-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/change-password-window.png){.thumbnail}
 
 #### Fall 2: Die Datenbank Ihrer Website ist Teil eines Web Cloud Databases Datenbankdienstes <a name="case2"></a>
 
 Gehen Sie in den Bereich `Datenbanken`{.action} Ihres Kundencenters und klicken Sie auf den betreffenden Server. Gehen Sie zum Tab `Benutzer und Rechte`{.action}:
 
-![userDBpassword-step1](images/wcdb-tab.png){.thumbnail}
+![userDBpassword-step1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-tab.png){.thumbnail}
 
 Um das Passwort Ihrer Datenbank auf dem Server zu ändern, klicken Sie auf `...`{.action} rechts neben dem im [zweiten Schritt](#step2) identifizierten `Benutzernamen`{.action} und anschließend auf `Passwort ändern`{.action}.
 
-![userDBpassword-step2](images/wcdb-change-password.png){.thumbnail}
+![userDBpassword-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-change-password.png){.thumbnail}
 
 Geben Sie im angezeigten Fenster das neue Passwort Ihrer Datenbank ein (definiert in [Schritt 3](#step3)), bestätigen Sie dieses und klicken Sie dann auf den Button `Bestätigen`{.action}.
 
-![userDBpassword-step3](images/wcdb-change-password-window.png){.thumbnail}
+![userDBpassword-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/users-and-rights/wcdb-change-password-window.png){.thumbnail}
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
@@ -232,4 +232,4 @@ Geben Sie im angezeigten Fenster das neue Passwort Ihrer Datenbank ein (definier
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

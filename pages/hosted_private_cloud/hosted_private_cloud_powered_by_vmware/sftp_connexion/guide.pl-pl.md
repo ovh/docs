@@ -1,8 +1,15 @@
 ---
 title: 'Połączenie za pomocą protokołu STFP'
 excerpt: Dowiedz się, jak się połączyć z Private Cloud za pomocą SFTP
-updated: 2021-12-28
+updated: 2024-09-17
 ---
+
+> [!warning]
+>
+> **Ta procedura jest przestarzała (*deprecated*)**.
+>
+> Aby przesłać pliki do datastore, skorzystaj z metody opisanej w tym przewodniku: [Uploading files to the VMware vSphere on OVHcloud datastore](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_datastore_upload) (EN).
+>
 
 ## Wprowadzenie
 

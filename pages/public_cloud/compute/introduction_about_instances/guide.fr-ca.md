@@ -91,4 +91,4 @@ Une application *Cloud Native* est une application entièrement automatisée dan
 
 [FAQ Public Cloud](/pages/public_cloud/compute/faq_pci)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

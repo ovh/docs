@@ -13,7 +13,7 @@ In general, anti-spam policies are strict. To ensure that emails reach recipient
 > [!warning]
 > OVHcloud provides services for which you are responsible with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialist service provider](https://partner.ovhcloud.com/en-ca/directory/) or reaching out to [our community](https://community.ovh.com/en/) if you experience any issues.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialist service provider](/links/partner) or reaching out to [our community](https://community.ovh.com/en/) if you experience any issues.
 >
 
 ## Requirements
@@ -62,25 +62,25 @@ To further optimise email sending and lower the risk of your emails being blocke
 
 To begin, you first have to create an A record in the DNS Zone of your domain with the IP address of your server as a target.
 
-If your DNS servers are managed by OVHcloud, please refer to our guide on [editing an OVHcloud DNS zone via the OVHcloud Control Panel](/pages/web_cloud/domains/dns_zone_edit#access-the-area-for-managing-an-ovhcloud-dns-zone).
+If your DNS servers are managed by OVHcloud, please refer to our guide on [editing an OVHcloud DNS zone via the OVHcloud Control Panel](/pages/web_cloud/domains/dns_zone_edit).
 
 Once you have modified your domain name’s DNS zone, you will need to allow a maximum of 24 hours for the changes to propagate fully, and be effective.
 
 Once done, add the PTR record (also known as the reverse):
 
-In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, go to the `Bare Metal Cloud`{.action} section and open `Network`{.action}. Next, click on `IP`{.action}.
+In the [OVHcloud Control Panel](/links/manager){.external}, go to the `Bare Metal Cloud`{.action} section and open `Network`{.action}. Next, click on `IP`{.action}.
 
 If you wish to configure the reverse DNS on an Additional IP, click on the `Additional IP`{.action} tab.
 
 The drop-down menu underneath **"My public IP addresses and associated services"** allows you to filter your services according to category.
 
-![Reverse IP](images/selectservice2022.png){.thumbnail}
+![Reverse IP](images/filteripds.png){.thumbnail}
 
 Next, click on `...`{.action} in the relevant row and select `Modify the reverse path`{.action}:
 
 ![Reverse IP](images/addreverse2022.png){.thumbnail}
 
-Enter your domain name on the `Reverse DNS` section and click on `Confirm`{.action}
+Enter your domain name on the `Reverse DNS` section and click on `Validate`{.action}.
 
 ![Reverse IP](images/enterreverse.png){.thumbnail}
 
@@ -144,12 +144,12 @@ You may want to use a website like [Mail Tester](http://www.mail-tester.com/){.e
 
 ## Go further
 
-[Configure a DKIM record](/pages/web_cloud/domains/dns_zone_dkim)
+[How to improve email security with a DKIM record](/pages/web_cloud/domains/dns_zone_dkim)
 
-[Configure an SPF record](/pages/web_cloud/domains/dns_zone_spf)
+[How to improve email security with an SPF record](/pages/web_cloud/domains/dns_zone_spf)
 
-[Configure a DMARC record](/pages/web_cloud/domains/dns_zone_dmarc)
+[How to improve email security with a DMARC record](/pages/web_cloud/domains/dns_zone_dmarc)
 
-To get support setting up your OVHcloud solutions, contact our [network of OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/).
+To get support setting up your OVHcloud solutions, contact our [network of OVHcloud partners](/links/partner).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

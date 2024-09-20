@@ -14,18 +14,18 @@ Das Kommunikationsprotokoll SSH (*Secure Shell*) ist das meistgenutzte Verfahren
 
 **Diese Anleitung erklärt, wie Sie mithilfe von SSH auf Ihren Server zugreifen.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gi7JqUvcEt0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/gi7JqUvcEt0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 > [!warning]
 >
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) oder stellen Ihre Fragen in der [OVHcloud Community](https://community.ovh.com/en/). Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. 
+> Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister](/links/partner) oder stellen Ihre Fragen in der [OVHcloud Community](https://community.ovh.com/en/). Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. 
 >
 
 ## Voraussetzungen
 
-- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) oder [VPS](https://www.ovhcloud.com/de/vps/) in Ihrem Kunden-Account.
+- Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) oder [VPS](https://www.ovhcloud.com/de/vps/) in Ihrem Kunden-Account.
 - Eine Client-Anwendung für SSH (Kommandozeilenanwendung oder grafisches Interface) ist auf Ihrem lokalen Gerät installiert.
 
 > [!primary]
@@ -38,7 +38,7 @@ Es gibt mehrere Methoden, um eine Verbindung zu einem Remote-Host mittels SSH zu
 Die folgenden Anweisungen beziehen sich auf die Authentifizierungsmethode über Benutzername und Passwort.<br>
 Sie können auch SSH-Schlüssel konfigurieren, um gesicherte Verbindungen ohne Passwort zu aktivieren. Weitere Informationen dazu finden Sie in unserer [Anleitung zu SSH-Schlüsseln](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 
-Die Login-Daten (Benutzername und Passwort) werden Ihnen per E-Mail gesendet, immer wenn eine Installation oder Reinstallation eines Servers über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) erfolgt.
+Die Login-Daten (Benutzername und Passwort) werden Ihnen per E-Mail gesendet, immer wenn eine Installation oder Reinstallation eines Servers über Ihr [OVHcloud Kundencenter](/links/manager) erfolgt.
 
 Der Benutzername entspricht dem Betriebssystem, also etwa `ubuntu` oder `debian`.
 Zum Verbindungsaufbau wird zweitens die IPv4-Adresse oder der Hostname des Servers benötigt. Diese Informationen finden Sie in der Installationsmail sowie im Kundencenter.
@@ -184,6 +184,6 @@ Weitere Informationen finden Sie in den offiziellen FAQ und der Dokumentation zu
 
 [VPS Rescue-Modus](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
-Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](https://www.ovhcloud.com/de/professional-services/), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
+Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 
 Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

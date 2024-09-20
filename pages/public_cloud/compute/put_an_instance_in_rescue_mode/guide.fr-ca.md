@@ -37,9 +37,13 @@ Vous allez maintenant voir la boîte de dialogue « Démarrer en mode rescue ».
 
 ![tableau de bord](images/rescue2.png){.thumbnail}
 
-Une fois l’instance redémarrée en mode rescue, une boîte d’information affiche les méthodes d’accès disponibles. Votre **mot de passe du mode rescue** temporaire sera uniquement affiché dans la console VNC. Cliquez sur votre instance dans le tableau, puis accédez à l'onglet `Console VNC`{.action} pour le récupérer.
+Une fois l’instance redémarrée en mode rescue, une boîte d’information affiche les méthodes d’accès disponibles.
 
 ![tableau de bord](images/rescuedata.png){.thumbnail}
+
+Votre **mot de passe du mode rescue** temporaire sera uniquement affiché dans la console VNC. Cliquez sur votre instance dans le tableau, puis accédez à l'onglet `Console VNC`{.action} pour le récupérer.
+
+<table><tbody><tr><td><img alt="VNC console" class="thumbnail" src="/images/vncconsole.png" loading="lazy"></td><td><img alt="VNC rescue" class="thumbnail" src="/images/vncrescue.png" loading="lazy"></td></tr></tbody></table>
 
 ### Accéder à vos données
 
@@ -104,4 +108,4 @@ nova unrescue INSTANCE_ID
 
 [Comment remplacer une paire de clés SSH sur une instance](/pages/public_cloud/compute/replacing_lost_ssh_key)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

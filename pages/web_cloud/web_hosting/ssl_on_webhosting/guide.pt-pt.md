@@ -38,7 +38,7 @@ Em função do [certificado SSL](/links/web/hosting-options-ssl){.external} que 
 
 Aparecerá uma tabela com todos os domínios adicionados ao seu alojamento web. A coluna "SSL" mostra-lhe o estado de ativação das ligações SSL seguras nos seus multi-sites.
 
-![managessl](images/ssls.png){.thumbnail}
+![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/ssls.png){.thumbnail}
 
 Neste caso, podem surgir três estados:
 
@@ -59,7 +59,7 @@ Para ativar o SSL num multi-site, clique no botão `...`{.action} à direita do 
 > Alguns certificados SSL **Externos** podem ser válidos para vários domínios de uma só vez. Se utilizar um destes, o texto *Ativado* também não será apresentado para todos os domínios declarados na tabela "multisite". No entanto, o seu certificado SSL será válido para os nomes de domínios que ele *engloba*.
 >
 
-![managessl](images/modify-domain.png){.thumbnail}
+![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-2.png){.thumbnail}
 
 Uma vez que tenha submetido o pedido de ativação, o estado da ligação protegida SSL para o multi-site em causa deve ser atualizado ao fim de alguns segundos, sendo o estado substituído por "A gerar / atualizar". Repita este processo se pretender ativar um certificado SSL para outros multisites.
 
@@ -83,9 +83,12 @@ Antes de realizar esta configuração, certifique-se de que a etapa anterior de 
 >
 > Antes de continuar, certifique-se de que as entradas multisite para as quais ativou a opção SSL apontam para o endereço IP do alojamento web. Esta configuração é-lhe automaticamente proposta quando adiciona ou modifica uma entrada multi-site, mas deve ser feita manualmente para um nome de domínio que não é gerido na sua Área de Cliente.<br>
 > - Encontre o endereço IP do seu alojamento a partir do separador `Informações gerais`{.action}, na menção `IPv4`.
-> ![managessl](images/find-ipv4.png){.thumbnail}
+>
+> ![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4.png){.thumbnail}
+>
 > - Configure a zona DNS do domínio declarado em multi-site, a partir da rubrica `Domínio`{.action}, onglet `Zona DNS`{.action}. Altere ou adicione um registo de tipo `A` para a sua entrada multisite e indique o endereço IP do seu alojamento na `Alvo`.
-> ![managessl](images/modify-an-entry.png){.thumbnail}
+>
+> ![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/modify-an-entry.png){.thumbnail}
 >
 > Para mais informações, consulte os nossos manuais [sobre a configuração de uma entrada multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) ou sobre [a configuração de uma zona DNS](/pages/web_cloud/domains/dns_zone_edit).
 
@@ -101,11 +104,11 @@ Clique no botão `...`{.action} junto de “Certificado SSL” e, a seguir, em `
 
 Por outro lado, se vir a menção “Sim”, isto significa que um certificado SSL já foi instalado e configurado no alojamento web. Por consequente, não poderá encomendar outro certificado enquanto já tiver um instalado.
 
-![managessl](images/order-an-ssl-certificate.png){.thumbnail}
+![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-an-ssl-certificate.png){.thumbnail}
 
 Na janela que aparecer, selecione o certificado SSL que pretende encomendar. Em função da sua [oferta de alojamento web](/links/web/hosting){.external} e da respetiva configuração, é possível que nenhuma das soluções apresentadas abaixo esteja disponível. Uma vez selecionada uma opção, clique no botão `Seguinte`{.action}.
 
-![managessl](images/order-an-ssl-certificate-step-1-le.png){.thumbnail}
+![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-an-ssl-certificate-step-1-le.png){.thumbnail}
 
 Em função da solução que selecionou, poderá ter de realizar alguns passos adicionais:
 
@@ -117,7 +120,7 @@ Em função da solução que selecionou, poderá ter de realizar alguns passos a
 
 A configuração do certificado pode demorar alguns minutos ou vários dias, dependendo no tipo de certificado selecionado. Para verificar se o certificado SSL já está configurado no alojamento web, aceda à Área de Cliente OVHcloud e clique no separador `Informações gerais`{.action}. A menção “Sim” deve aparecer junto de “Certificado SSL”.
 
-![managessl](images/tab-ssl-le.png){.thumbnail}
+![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/tab-ssl-le.png){.thumbnail}
 
 ### 3. Regenerar um certificado SSL do alojamento web <a name="regeneratessl"></a>
 
@@ -130,13 +133,13 @@ Depois de ativar uma ligação SSL segura num ou vários dos seus multisites, o 
 
 Para isso, aceda à [Área de Cliente OVHcloud](/links/manager){.external} e selecione a `Web Cloud`{.action}. Clique em `Alojamentos` e escolha o nome do alojamento correspondente. Clique no separador `Informações gerais`{.action}. A seguir, clique nos três pontos junto de “Certificado SSL” e selecione `Gerar / atualizar certificado SSL`{.action}.
 
-![managessl](images/regenerate-ssl-certificate.png){.thumbnail}
+![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/regenerate-ssl-certificate.png){.thumbnail}
 
 Na janela que surgir, leia as informações apresentadas e clique no botão `Validar`{.action}. A seguir, aguarde até que o certificado SSL seja gerado. Este passo pode demorar algumas horas.
 
 Tenha em conta que a Let's Encrypt, a autoridade que fornece o certificado SSL incluído no seu alojamento web, impõe um [limite de cinco regenerações por semana](https://letsencrypt.org/docs/rate-limits/){.external}. Assim, fique atento às diferentes regenerações que possa realizar a curto prazo, de modo a evitar um bloqueio temporário.
 
-![managessl](images/ssl-regeneration.png){.thumbnail}
+![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ssl-regeneration.png){.thumbnail}
 
 ### Eliminar um certificado SSL do alojamento web
 
@@ -148,7 +151,7 @@ Quando estiver preparado para eliminar o certificado SSL, aceda à [Área de Cli
 
 Na página que aparecer, valide a eliminação. Esta última será concluída em algumas horas.
 
-![managessl](images/delete-ssl.png){.thumbnail}
+![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/delete-ssl.png){.thumbnail}
 
 > [!warning]
 >
@@ -228,4 +231,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

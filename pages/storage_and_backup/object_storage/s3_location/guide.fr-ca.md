@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Endpoints et géo-disponibilité de l’Object Storage
-updated: 2024-05-20
+updated: 2024-08-09
 ---
 
 <style>
@@ -17,16 +17,72 @@ OVHcloud Object Storage S3 est accessible via un point de terminaison unique : `
 
 ### Liste des régions disponibles
 
-| Nom de la région | Région<br><b><i>À saisir en minuscules</i></b> | Protocole | Version de la signature |
-| ----- | ----- | ----- | ----- |
-| Gravelines | gra | HTTPS | 4 |
-| Francfort | de | HTTPS | 4 |
-| Beauharnois | bhs | HTTPS | 4 |
-| Roubaix | rbx | HTTPS | 4 |
-| Varsovie | waw | HTTPS | 4 |
-| Londres | uk | HTTPS | 4 |
-| Strasbourg | sbg | HTTPS | 4 |
-| Singapore | sgp | HTTPS | 4 |
+<table>
+    <tr>
+        <th>Zone géographique</th>
+        <th>Nom de la région</th>
+        <th>Région<br><b><i>A saisir en minuscules</i></b></th>
+        <th>Protocole</th>
+        <th>Version de la signature</th>
+    </tr>
+    <tr>
+        <td rowspan=6>Europe</td>
+        <td>Gravelines</td>
+        <td>gra</td>
+        <td>HTTPS</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>Roubaix</td>
+        <td>rbx</td>
+        <td>HTTPS</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>Strasbourg</td>
+        <td>sbg</td>
+        <td>HTTPS</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>Francfort</td>
+        <td>de</td>
+        <td>HTTPS</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>Londres</td>
+        <td>uk</td>
+        <td>HTTPS</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>Varsovie</td>
+        <td>waw</td>
+        <td>HTTPS</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td rowspan=2>Amerique du nord<br>(hors USA)</td>
+        <td>Beauharnois</td>
+        <td>bhs</td>
+        <td>HTTPS</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>Toronto</td>
+        <td>ca-east-tor</td>
+        <td>HTTPS</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>Asie-Pacifique</td>
+        <td>Singapour</td>
+        <td>sgp</td>
+        <td>HTTPS</td>
+        <td>4</td>
+    </tr>
+</table>
 
 Le point de terminaison de bucket est une URL, par exemple `https://my-bucket.s3.gra.io.cloud.ovh.net` qui représente un point de terminaison de style hôte virtuel.
 
@@ -37,56 +93,56 @@ Le mapping des opérations **WRITE(PUT)** sur le point de terminaison **io** est
 <table>
     <tr>
         <th>AWS</th>
-        <th>Mapping OVHcloud actuel</th>
-        <th>Mapping OVHcloud cible (à partir du 17/06/2024)</th>
+        <th>Mapping OVHcloud avant le 17/06/2024</th>
+        <th>Mapping OVHcloud à partir du 17/06/2024</th>
     </tr>
     <tr>
-        <td>Express One Zone</td> 
+        <td>EXPRESS_ONEZONE</td> 
         <td rowspan=9>Standard</td>
         <td>High Performance</td>
     </tr>
     <tr>
-        <td>Standard</td>
+        <td>STANDARD</td>
         <td rowspan=8>Standard</td>
     </tr>
     <tr>
         <td>Par défaut *</td>
     </tr>
     <tr>
-         <td>Standard IA</td>     
+         <td>STANDARD_IA</td>     
     </tr>
     <tr>
-        <td>Intelligent Tiering</td>
+        <td>INTELLIGENT_TIERING</td>
     </tr>
     <tr>
-        <td>One Zone IA</td>
+        <td>ONEZONE_IA</td>
     </tr>
     <tr>
-        <td>Glacier Instant Retrieval</td>
+        <td>GLACIER_IR</td>
     </tr>
     <tr>
-        <td>Glacier Flexible</td>
+        <td>GLACIER</td>
     </tr>
     <tr>
-        <td>Glacier Deep Archive</td>
+        <td>DEEP_ARCHIVE</td>
     </tr>
 </table>
 
-*_la classe de stockage par défaut sur le point de terminaison **io** sera Standard, c'est-à-dire que si vous ne spécifiez pas de classe de stockage ou si vous spécifiez une classe de stockage autre que celles fournies par AWS, votre objet sera stocké dans notre niveau Standard._
+_* La classe de stockage par défaut sur le point de terminaison **io** sera Standard, c'est-à-dire que si vous ne spécifiez pas de classe de stockage, votre objet sera stocké dans notre niveau Standard._
 
 Le mapping des opérations **READ(GET/LIST/HEAD)** sur le point de terminaison **io** est le suivant :
 
 <table>
     <tr>
         <th>AWS</th>
-        <th>Mapping OVHcloud cible (à partir du 17/06/2024)</th>
+        <th>Mapping OVHcloud à partir du 17/06/2024</th>
     </tr>
     <tr>
-        <td>Express One Zone</td> 
+        <td>EXPRESS_ONEZONE</td> 
         <td>High Performance</td>
     </tr>
     <tr>
-        <td>Standard</td>
+        <td>STANDARD</td>
         <td>Standard</td>
     </tr>
 </table>
@@ -94,7 +150,7 @@ Le mapping des opérations **READ(GET/LIST/HEAD)** sur le point de terminaison *
 > [!warning]
 > Contrairement à AWS, Express One Zone sera traité comme une classe de stockage régulière par OVHcloud et toutes les fonctionnalités S3 et les opérations d'API seront disponibles.
 
-![Schema 1](images/io-mapping.png)
+![Schema 1](images/io-mapping-v2.png)
 
 > [!warning]
 > - La classe de stockage ne sera plus définie au niveau de la création du bucket, mais au niveau de l'upload d'objets individuels.
@@ -109,61 +165,61 @@ Le mapping des opérations **WRITE(PUT)** sur le point de terminaison **perf** e
 <table>
     <tr>
         <th>AWS</th>
-        <th>Mapping OVHcloud actuel</th>
-        <th>Mapping OVHcloud cible (à partir du 10/06/2024)</th>
+        <th>Mapping OVHcloud avant le 17/06/2024</th>
+        <th>Mapping OVHcloud à partir du 17/06/2024</th>
     </tr>
     <tr>
-        <td>Express One Zone</td> 
+        <td>EXPRESS_ONEZONE</td> 
         <td rowspan=9>High Performance</td>
         <td rowspan=3>High Performance</td>
     </tr>
     <tr>
-        <td>Standard</td>
+        <td>STANDARD</td>
     </tr>
     <tr>
         <td>Par défaut *</td>
     </tr>
     <tr>
-         <td>Standard IA</td>
+         <td>STANDARD_IA</td>
         <td rowspan=6>Standard</td>
     </tr>
     <tr>
-        <td>Intelligent Tiering</td>
+        <td>INTELLIGENT_TIERING</td>
     </tr>
     <tr>
-        <td>One Zone IA</td>
+        <td>ONEZONE_IA</td>
     </tr>
     <tr>
-        <td>Glacier Instant Retrieval</td>
+        <td>GLACIER_IR</td>
     </tr>
     <tr>
-        <td>Glacier Flexible</td>
+        <td>GLACIER</td>
     </tr>
     <tr>
-        <td>Glacier Deep Archive</td>
+        <td>DEEP_ARCHIVE</td>
     </tr>
 </table>
 
-*_la classe de stockage par défaut sur le point de terminaison **io** sera High Performance, c'est-à-dire que si vous ne spécifiez pas de classe de stockage ou si vous spécifiez une classe de stockage autre que celles fournies par AWS, votre objet sera stocké dans notre niveau High Performance._
+_* Le niveau de stockage par défaut sur le point de terminaison **perf** sera High Performance, c'est-à-dire que si vous ne spécifiez pas de classe de stockage, votre objet sera stocké dans notre niveau High Performance._
 
 Le mapping des opérations **READ(GET/LIST/HEAD)** sur le point de terminaison **perf** est le suivant :
 
 <table>
     <tr>
         <th>AWS</th>
-        <th>Mapping OVHcloud cible (à partir du 10/06/2024)</th>
+        <th>Mapping OVHcloud à partir du 10/06/2024</th>
     </tr>
     <tr>
-        <td>Standard</td> 
+        <td>STANDARD</td> 
         <td>High Performance</td>
     </tr>
     <tr>
-        <td>Standard IA</td>
+        <td>STANDARD_IA</td>
         <td>Standard</td>
     </tr>
 </table>
 
-![Schema 2](images/perf-mapping.png)
+![Schema 2](images/perf-mapping-v2.png)
 
 ## Object Storage Swift
 

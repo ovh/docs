@@ -15,7 +15,7 @@ Lorsque vous disposez d'une ligne ou d'un numéro chez un opérateur, il est obl
 - Disposer d’un [numéro alias](/links/telecom/telephonie-numeros){.external} ou d'une [ligne VoIP OVHcloud](/links/telecom/telephonie){.external}.
 - Être connecté à l'[espace client OVHcloud](/links/manager){.external}, partie `Télécom`{.action} :
 
-![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
+![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
 ## En pratique
 

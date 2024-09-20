@@ -33,7 +33,7 @@ Kiedy odwiedzasz stronę WWW używającą bezpiecznego połączenia, na pasku ad
 
 A zatem, czy Twoja strona WWW używa bezpiecznego połączenia czy też nie, staje się dla internautów coraz bardziej widoczny.
 
-![httpswebsite](images/url-not-secure.png){.thumbnail}
+![httpswebsite](/pages/assets/screens/other/browsers/urls/url-not-secure.png){.thumbnail}
 
 **Przełączenie strony WWW na *HTTPS* może być wrażliwą operacją**. Większość operacji, które należy wykonać, zostanie wykonana w kodzie źródłowym Twojej strony WWW. Jeśli działania nie zostaną przeprowadzone prawidłowo, istnieje ryzyko, że w wynikach wyszukiwania (Google, Yahoo!, bing, etc.) tracisz pozycjonowanie (SEO), a Twoja strona WWW będzie całkowicie niedostępna.
 
@@ -75,7 +75,7 @@ Mogą wystąpić dwa przypadki *Mixed Content*:
 
 Upewnij się, że cała zawartość załadowana z Twojej witryny sieci Web pochodzi z zabezpieczonego źródła.
 
-![httpswebsite](images/connection-isnt-secure.png){.thumbnail}
+![httpswebsite](/pages/assets/screens/other/browsers/urls/connection-isnt-secure.png){.thumbnail}
 
 Pamiętaj, że nawet jeśli na Twoim hostingu zainstalowany jest certyfikat SSL, treści hostowane na hostingu mogą być ładowane przy użyciu *HTTP* lub *HTTPS*. To zależy od sposobu, w jaki oznaczyłeś te treści w kodzie Twojej strony WWW. Upewnij się zatem, czy wszystkie treści ładowane z Twojej strony WWW używają protokołu *HTTPS*.
 
@@ -165,4 +165,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

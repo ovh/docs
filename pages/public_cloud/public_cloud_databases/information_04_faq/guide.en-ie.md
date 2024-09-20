@@ -88,7 +88,7 @@ Please refer to the official website for each DBMS documentation:
 - [MongoDB](https://docs.mongodb.com/manual/){.external}
 - [MySQL](https://dev.mysql.com/doc/){.external}
 - [PostgreSQL](https://www.postgresql.org/docs/){.external}
-- [Redis](https://redis.io/documentation){.external}
+- [Redis® open source](https://redis.io/documentation){.external}
 
 ## DBMS software and versions
 
@@ -265,7 +265,7 @@ Please refer to the official website for each DBMS documentation:
 - [MongoDB](https://docs.mongodb.com/manual/){.external}
 - [MySQL](https://dev.mysql.com/doc/){.external}
 - [PostgreSQL](https://www.postgresql.org/docs/){.external}
-- [Redis](https://redis.io/documentation){.external}
+- [Redis® open source](https://redis.io/documentation){.external}
 
 ### Can I directly download backups made by OVHcloud?
 

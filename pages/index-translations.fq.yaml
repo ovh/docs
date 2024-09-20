@@ -116,6 +116,10 @@ public-cloud-containers-orchestration-managed-private-registry-getting-started: 
 public-cloud-containers-orchestration-managed-private-registry-tutorials: Tutorials
 public-cloud-containers-orchestration-managed-rancher-service: Managed Rancher Service (MRS)
 public-cloud-containers-orchestration-managed-rancher-service-getting-started: Getting started
+public-cloud-containers-orchestration-managed-rancher-service-resources: Resources
+public-cloud-containers-orchestration-managed-rancher-service-creating-importing-kubernetes: Creating or importing a Kubernetes cluster
+public-cloud-containers-orchestration-managed-rancher-service-operations-kubernetes: Operations on a Kubernetes cluster
+public-cloud-containers-orchestration-managed-rancher-service-deploy-applications: Deploying applications with Rancher
 public-cloud-data-analytics: Data Analytics
 public-cloud-data-analytics-data-processing: Data Processing
 public-cloud-data-analytics-data-processing-concepts: Concepts
@@ -176,7 +180,6 @@ public-cloud-network-configuration: Configuration
 public-cloud-network-technical-resources: Ressources techniques
 public-cloud-network-tutorials: Tutoriels
 public-cloud-data-platform: Data Platform
-public-cloud-data-platform-general-information: General information
 web-cloud-clouddb: Web Cloud Databases
 web-cloud-clouddb-getting-started: Premiers pas
 web-cloud-clouddb-configuration: Configuration
@@ -204,7 +207,7 @@ web-cloud-email-collaborative-solutions-microsoft-exchange-setting-up-email-appl
 web-cloud-email-collaborative-solutions-microsoft-exchange-setting-up-email-application-on-mobile-device: Configurer une application e-mail sur votre smartphone ou tablette
 web-cloud-email-collaborative-solutions-microsoft-exchange-troubleshooting: Diagnostic et dépannage
 web-cloud-email-collaborative-solutions-microsoft-office: Microsoft Office
-web-cloud-email-collaborative-solutions-microsoft-sharepoint: Microsoft Sharepoint
+web-cloud-email-collaborative-solutions-zimbra: Zimbra
 web-cloud-domains: Domaines
 web-cloud-domains-api: API
 web-cloud-domains-api-frequent-tasks: Tâches courantes
@@ -230,6 +233,7 @@ web-cloud-internet-internet-access-managing-your-options: Gérer vos options
 web-cloud-internet-internet-access-setting-up-your-access: Configuration de votre accès
 web-cloud-internet-internet-access-troubleshooting: Dépanner
 web-cloud-internet-overthebox: OverTheBox
+web-cloud-internet-overthebox-managing-your-offer: Gérer votre offre
 web-cloud-internet-overthebox-advanced-setup: Configuration avancée
 web-cloud-internet-overthebox-getting-started: Premiers pas
 web-cloud-internet-overthebox-initial-setup: Configuration initiale
@@ -272,6 +276,7 @@ web-cloud-hosting-tutorials: Tutoriels
 web-cloud-hosting-tutorials-wordpress: Tutoriels WordPress
 web-cloud-hosting-tutorials-cloud-web: Tutoriels Cloud Web
 web-cloud-hosting-website-optimisation: Optimisation de votre site web
+web-cloud-hosting-api: API
 web-cloud-ssl-gateway: SSL Gateway
 web-cloud-ssl-gateway-getting-started: Premiers pas
 web-cloud-web-paas-powered-by-platformsh: Web PaaS powered by Platform.sh
@@ -342,7 +347,6 @@ network-load-balancer-getting-started: Premiers pas
 network-load-balancer-setting-up: Mise en route
 network-load-balancer-use-cases: Cas d'utilisation
 network-load-balancer-viewing-statuses: Consulter les statuts
-network-vrack-services: vRack Services
 network-content-delivery-network-cdninfrastructure: Content Delivery Network (CDN) Infrastructure
 manage-operate-api: API
 manage-operate-api-apiv6: APIv6
@@ -352,10 +356,12 @@ manage-operate-user-getting-started: Premiers pas
 manage-operate-user-federation: Fédération d'identités
 manage-operate-iam: IAM
 manage-operate-terraform: Terraform
+manage-operate-kms: KMS
 manage-operate-observability: Observabilité
 observability-logs-data-platform: Logs Data Platform
 observability-logs-data-platform-getting-started: Premiers pas
-observability-logs-data-platform-ingestion: Ingestion de vos logs 
+observability-logs-data-platform-ingestion: Ingestion de vos logs
+observability-logs-data-platform-upgrade: Mise à jour 
 observability-logs-data-platform-visualizing-querying-exploiting: Visualisation, requête et exploitation de vos logs
 observability-logs-data-platform-opensearch-index: Index OpenSearch as-a-service 
 observability-logs-data-platform-security-conformity: Sécurité et conformité

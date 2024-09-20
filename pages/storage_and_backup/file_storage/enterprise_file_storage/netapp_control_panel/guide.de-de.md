@@ -1,7 +1,7 @@
 ---
 title: "Enterprise File Storage - Verwaltung über das OVHcloud Kundencenter"
 excerpt: Erfahren Sie hier, wie Sie Ihren Enterprise File Storage Dienst über Ihr OVHcloud Kundencenter verwalten
-updated: 2022-04-14
+updated: 2024-06-13
 ---
 
 > [!primary]
@@ -16,7 +16,7 @@ Enterprise File Storage Dienste können über die [OVHcloud API](/pages/storage_
 
 ## Voraussetzungen
 
-- Sie haben einen Enterprise File Storage Dienst in Ihrem Kunden-Account.
+- Sie haben einen Enterprise File Storage Dienst in Ihrem Kunden-Account. Der Dienst kann über die [Produktseite](https://www.ovhcloud.com/de/storage-solutions/enterprise-file-storage/) oder das [OVHcloud Kundencenter](https://www.ovh.com/manager/#/dedicated/netapp/new) bestellt werden.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung <a name="instructions"></a>

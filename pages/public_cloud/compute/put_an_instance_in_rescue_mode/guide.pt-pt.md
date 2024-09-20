@@ -19,7 +19,7 @@ Nestas circunstâncias, poderá utilizar o modo de resgate (rescue) para reconfi
 ## Requisitos
 
 - uma [Instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external} na sua conta OVHcloud
-- acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}
+- acesso à [Área de Cliente OVHcloud](/links/manager){.external}
 
 ## Instruções
 
@@ -29,7 +29,7 @@ Nestas circunstâncias, poderá utilizar o modo de resgate (rescue) para reconfi
 
 ### Ativar o modo rescue
 
-Primeiro, inicie sessão na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e clique no menu `Public Cloud`{.action}.
+Primeiro, inicie sessão na [Área de Cliente OVHcloud](/links/manager){.external} e clique no menu `Public Cloud`{.action}.
 
 Em seguida, selecione o seu projeto Public Cloud no menu lateral situado à esquerda do ecrã e vá até Instâncias.
 
@@ -41,9 +41,13 @@ Surgirá então a janela que lhe permite executar esta ação. Clique na lista p
 
 ![área de cliente](images/rescue2.png){.thumbnail}
 
-Depois de reiniciar a instância em modo rescue, uma caixa de informação apresenta os métodos de acesso disponíveis. A sua **palavra-passe do modo rescue** temporário só será apresentada na consola VNC. Clique na sua instância na tabela e aceda ao separador `Console VNC`{.action} para a recuperar.
+Depois de reiniciar a instância em modo rescue, uma caixa de informação apresenta os métodos de acesso disponíveis.
 
-![área de cliente](images/rescuedata.png){.thumbnail}
+![control panel](images/rescuedata.png){.thumbnail}
+
+A sua **palavra-passe do modo rescue** temporário só será apresentada na consola VNC. Clique na sua instância na tabela e aceda ao separador `Console VNC`{.action} para a recuperar.
+
+<table><tbody><tr><td><img alt="VNC console" class="thumbnail" src="/images/vncconsole.png" loading="lazy"></td><td><img alt="VNC rescue" class="thumbnail" src="/images/vncrescue.png" loading="lazy"></td></tr></tbody></table>
 
 ### Aceder à sua informação
 

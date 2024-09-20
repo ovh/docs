@@ -1,7 +1,7 @@
 ---
 title: 'Gérer vos groupes de téléphonie'
 excerpt: 'Découvrez comment gérer vos groupes de téléphonie et déplacer vos services entre ces groupes'
-updated: 2021-06-04
+updated: 2024-06-18
 ---
 
 ## Objectif
@@ -89,12 +89,16 @@ Vous pouvez néanmoins ajouter des lignes et des numéros dans un groupe *ovhtel
 
 OVHcloud propose une offre de numéros fixes SDA (Sélection Directe à l'Arrivée) dédiés à la redirection d'appels. Ces numéros sont fournis par « blocs » de 50 ou 100 numéros consécutifs.
 
-Vous pouvez déplacer un bloc, dans son ensemble, de numéros fixes SDA commandés chez OVHcloud d'un groupe vers un autre.
-<br> Par contre, il n'est pas possible de déplacer un numéro unitaire appartenant à un tel bloc de numéros.
+Vous pouvez déplacer un bloc, dans son ensemble, de numéros fixes SDA commandés chez OVHcloud d'un groupe vers un autre.<br>
+Par contre, il n'est pas possible de déplacer un numéro unitaire appartenant à un tel bloc de numéros.
 
 ### Gérer les options d'un groupe de téléphonie
 
-Le menu `Options du groupe`{.action}, dans l'onglet `Administration`{.action}, vous permet d'activer ou désactiver des options d'affichage des appels.
+Le menu `Options du groupe`{.action}, dans l'onglet `Administration`{.action}, vous permet d'activer ou désactiver les options suivantes :
+
+- Masquer les appels entrants/sortants sur le relevé de consommation.
+- Utiliser un affichage distinct pour le numéro interne/externe. Cette fonctionnalité se révèle très pratique au sein d'une entreprise, car elle permet d'afficher le numéro du standard pour les appels sortants et de faire apparaître son propre numéro lors des appels internes.
+- Présenter la description des lignes lors des appels.
 
 ![options du groupe](images/options-groupe.png){.thumbnail}
 

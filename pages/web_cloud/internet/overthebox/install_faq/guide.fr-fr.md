@@ -1,7 +1,7 @@
 ---
 title: 'FAQ OverTheBox'
 excerpt: 'Foire aux questions sur la solution OverTheBox'
-updated: 2021-05-17
+updated: 2024-07-19
 ---
 
 ## FAQ OverTheBox
@@ -25,13 +25,16 @@ Tous les réseaux informatiques (même les plus basiques) sont compatibles avec 
 ### Quel débit maximum pourrai-je avoir ?
 
 Le débit total (après addition de vos connexions) dépend du type d'offre à laquelle vous avez souscrit :
-Service v1 : Le débit ne pourra pas dépasser 250 Mb/s pour le service OTB seul et 130 Mb/s avec le matériel fourni par OVHcloud.
-Service IT : Le débit ne pourra pas dépasser 100 Mb/s.
-Service Plus : Le débit ne pourra pas dépasser 400 Mb/s.
+
+- Service v1 : Le débit ne pourra pas dépasser 250 Mb/s pour le service OTB seul et 130 Mb/s avec le matériel fourni par OVHcloud.
+- Service IT : Le débit ne pourra pas dépasser 100 Mb/s.
+- Service Plus : Le débit ne pourra pas dépasser 400 Mb/s.
+- Service Starter : Le débit ne pourra pas dépasser 500 Mb/s.
+- Service Business : Le débit ne pourra pas dépasser 1000 Mb/s.
 
 ### Est-ce que mon IP publique va changer ?
 
-Votre adresse IP publique va en effet changer pour une IP fournie par OVHcloud qui va agréger le trafic de vos différents liens. C'est elle aussi qui va permettre d'avoir du fail-over actif afin de ne pas avoir de coupure si vous redémarrez un modem par exemple. Enfin cette IP vous protège sur internet en profitant de la technologie anti-DDoS d'OVHcloud.
+Votre adresse IP publique va en effet changer pour une IP fournie par OVHcloud qui va agréger le trafic de vos différents liens. C'est elle aussi qui va permettre d'avoir du fail-over actif afin de ne pas avoir de coupure si vous redémarrez un modem par exemple.
 
 ### Est-ce que le WiFi est intégré dans la box OverTheBox ?
 
@@ -53,7 +56,7 @@ Ce matériel est garanti 2 ans. Un échange standard est donc possible en cas de
 
 ### Puis-je modifier la configuration de mon réseau via OverTheBox (IP, DHCP etc.) ?
 
-Le système OverTheBox est l'élément central de votre réseau, il est le véritable pilote à la place de vos Box. Vous avez cependant la main complète sur la configuration de ce réseau. Une interface graphique vous permet de modifier par exemple votre adresse IP, le DHCP ou encore de faire des redirections de ports.
+Le système OverTheBox est l'élément central de votre réseau, il est le véritable pilote à la place de vos Box. Vous avez cependant la main complète sur la configuration de ce réseau. Une interface web vous permet de modifier par exemple votre adresse IP, le DHCP ou encore de faire des redirections de ports.
 
 ### Est-ce que l'IPv6 est supportée ?
 
@@ -65,11 +68,11 @@ L'image installée sur le boitier OverTheBox est open-source et nous fournissons
 
 ### Quel est le délai de livraison de l'OverTheBox ?
 
-Si vous avez commandé le matériel OVHcloud certifié compatible, ce dernier sera expédié sous 24 à 48h ouvrées par le transporteur DHL.
+Si vous avez commandé le matériel OVHcloud certifié compatible, ce dernier sera expédié sous 24 à 48h ouvrées par le transporteur TNT.
 
 ### Comment fonctionne la facturation d'OverTheBox ?
 
-Suivant l'offre souscrite, l'abonnement sera au prix mensuel de 19,99€ jusqu'à 49,99€ HT (offre OverTheBox Serenity). Ce montant est prélevé automatiquement via le moyen de paiement enregistré. Ce service est sans engagement de durée. Le matériel OVHcloud certifié compatible est vendu (hors frais de port) à 149,99€ HT (OverTheBox IT) ou 249,99€ HT (OverTheBox Plus).
+Suivant l'offre souscrite, l'abonnement sera au prix mensuel de 19,99€ HT pour l'offre Starter ou 39,99€ HT pour l'offre Business. Ce montant est prélevé automatiquement via le moyen de paiement enregistré. Ce service est sans engagement de durée. Le matériel OVHcloud certifié compatible est vendu à 349,99€ HT (OverTheBox v3).
 
 ### Est-il possible de virtualiser OverTheBox ?
 
@@ -81,4 +84,6 @@ Oui, c'est possible via différentes méthodes expliquées dans ce guide : [Réi
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+N'hésitez pas à échanger avec notre communauté d'utilisateurs sur vos produits Télécom sur notre site [OVHcloud Community](https://community.ovh.com/c/telecom)
+
+Retrouvez plus d'informations sur les offres OverTheBox sur [notre page OverTheBox](https://www.ovhtelecom.fr/overthebox/).

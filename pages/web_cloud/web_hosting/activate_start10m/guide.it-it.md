@@ -32,11 +32,11 @@ Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}, clicca su `Dom
 
 Nel riquadro **Informazioni generali** visualizzi la voce *Hosting Web e email gratis*. Clicca sui tre puntini `...`{.action} a destra e poi su `Attiva`{.action}.
 
-![enable 100m](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/web-cloud/domain-dns/general-information/enable-100m.png){.thumbnail}
+![enable 100m](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/enable-100m.png){.thumbnail}
 
 Si apre la pagina di attivazione. **Lo step 1** mostra i dettagli del piano e la relativa tariffa. Quindi clicca su `Continua`{.action}. Allo **step 2**, seleziona le modifiche da apportare alla tua zona DNS.
 
-![activate100m](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/web-cloud/order/order-100m-step-2.png){.thumbnail}
+![activate100m](/pages/assets/screens/control_panel/product-selection/web-cloud/order/order-100m-step-2.png){.thumbnail}
 
 > [!warning]
 >
@@ -83,4 +83,4 @@ Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [p
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>
+Contatta la nostra [Community di utenti](/links/community).

@@ -1,7 +1,7 @@
 ---
 title: "Changing the password of an email account"
 excerpt: "Find out how to change the password for an OVHcloud email account"
-updated: 2023-01-03
+updated: 2024-06-18
 ---
 
 ## Objective
@@ -56,13 +56,13 @@ Changing your password via webmail is available for OVHcloud email offers using 
 - MX Plan email
 - Exchange
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Go to the [webmail page](https://www.ovhcloud.com/en/mail/). Enter your full email address and password, then click the `Login`{.action} button. 
 
 ![email](images/mxplan-password-new-step2.png){.thumbnail}
 
-Click the <i class="icons-gear-concept icons-masterbrand-blue"></i> button at the top, then click `Options`{.action}.
+Click the gear icon at the top, then click `Options`{.action}.
 
 ![email](images/mxplan-password-new-step3.png){.thumbnail}
 
@@ -78,6 +78,14 @@ In the new window that opens, enter your current password first. Then enter your
 >
 
 ![email](images/mxplan-password-new-step5.png){.thumbnail}
+
+### Retrieve a password
+
+For security and confidentiality reasons, it is not possible to **retrieve** a password. As described in the previous steps, you will need to reset your password if you have forgotten it.
+
+> [!primary]
+>
+> If you want to store a password, we recommend using a password manager, such as **KeePass**.
 
 ## Go further
 

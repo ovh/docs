@@ -95,11 +95,11 @@ Pour être sûr que vos services (hébergement mutualisé **et** base de donnée
 
 Pour connaître le cluster et le filer où se trouve votre hébergement mutualisé, connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action} puis choisissez l'hébergement web concerné. Dans l'onglet `Informations générales`{.action}, repérez le `datacentre` de votre hébergement mutualisé ainsi que le `filer` où il se trouve.
 
-![Récupérer Filer](images/find-filer.png){.thumbnail}
+![Récupérer Filer](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-filer.png){.thumbnail}
 
 Cliquez ensuite sur l'onglet `Multisites`{.action} pour récupérer le numéro du cluster où se trouve votre hébergement mutualisé.
 
-![Récupérer cluster](images/find-cluster.png){.thumbnail}
+![Récupérer cluster](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/find-cluster.png){.thumbnail}
 
 > [!success]
 >
@@ -154,7 +154,7 @@ Si vous utilisez une base de données sur une offre **Web Cloud Databases**, con
 
 Si la connexion est réussie, vous arrivez sur l'interface suivante :
 
-![PHPMyAdmin](images/pma-main-page.png){.thumbnail}
+![PHPMyAdmin](/pages/assets/screens/other/web-tools/phpmyadmin/pma-main-page.png){.thumbnail}
 
 > [!warning]
 >
@@ -237,7 +237,7 @@ En effet, moins le nombre de requêtes sera élevé, moins les ressources allou�
 >
 > Pour cela, appuyez sur la touche `F12` lorsque vous êtes sur votre navigateur Firefox puis sélectionnez l'onglet `Réseau`. Rechargez votre page web à l'aide des touches `Ctrl + Maj + R` pour que l'outil vous affiche les requêtes exécutées pour charger votre page. Identifiez les éléments les plus longs à charger pour ensuite les optimiser.
 >
-> ![Analyse réseau Firefox](images/F12.png){.thumbnail}
+> ![Analyse réseau Firefox](/pages/assets/screens/other/browsers/diagnostic-tools/F12.png){.thumbnail}
 >
 
 Pour diminuer le flux de requêtes à chacun des chargements de vos pages, vous pouvez également mettre en place un Content Delivery Network (CDN). Celui-ci permettra de mettre en cache le contenu statique de votre site web. Votre hébergement web sera moins sollicité et disposera de plus de ressources pour traiter le reste des requêtes qui ne peuvent pas être mises en cache.
@@ -298,4 +298,4 @@ Pour des prestations spécialisées (référencement, développement, etc), cont
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, consultez nos différentes [offres de support](/links/support).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

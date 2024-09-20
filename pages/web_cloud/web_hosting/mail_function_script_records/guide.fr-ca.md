@@ -1,7 +1,7 @@
 ---
 title: "Suivre et gérer les e-mails automatisés de son hébergement web"
 excerpt: "Découvrez comment suivre et gérer les e-mails automatisés envoyés depuis votre hébergement web OVHcloud"
-updated: 2023-12-04
+updated: 2024-09-05
 ---
 
 ## Objectif
@@ -31,13 +31,13 @@ Les e-mails automatisés sont des messages envoyés via des scripts. Généralem
 
 Le suivi et la gestion des e-mails automatisés de votre hébergement web OVHcloud s'effectuent depuis votre [espace client OVHcloud](/links/manager){.external}. Une fois connecté, rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement concerné dans la liste. Cliquez ensuite sur l'onglet `Plus`{.action}, puis sur `Scripts emails`{.action}.
 
-![hosting](images/go-to-email-scripts-tab.png){.thumbnail}
+![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/email-scripts/go-to-email-scripts-tab.png){.thumbnail}
 
 La page qui s'affiche alors vous permet de suivre et de gérer les e-mails automatisés envoyés depuis votre [hébergement web OVHcloud](/links/web/hosting).
 
 ### Présentation de la partie « Scripts emails »
 
-![hosting](images/tab.png){.thumbnail}
+![hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/email-scripts/tab.png){.thumbnail}
 
 La page affiche plusieurs informations vous permettant de visualiser l'activité des envois d'e-mails automatisés générés depuis vos scripts :
 
@@ -55,9 +55,10 @@ La page affiche plusieurs informations vous permettant de visualiser l'activité
 
 Sur la droite, plusieurs boutons permettent de gérer les envois d'e-mails automatisés depuis votre hébergement web. Selon l'état du service, certains peuvent ne pas être disponibles.
 
+- **Purger les e-mails** : efface les e-mails présents dans la file d'attente et débloque l'envoi de mails.
+- **E-mails en erreur** : permet l'accès aux logs des derniers e-mails tombés en erreur d'envoi. Vous y trouverez les adresses e-mail concernées avec l'erreur associée. Attention, cet historique ne sera pas réinitialisé, même si vous décidez de `Purger les e-mails`{.action} ou de `Débloquer l'envoi`{.action}.
 - **Bloquer l'envoi** : bloque la distribution des envois d'e-mails automatisés de votre hébergement web. Les e-mails générés par vos scripts après le blocage ne seront pas envoyés, mais conservés dans une file d'attente pendant 72 heures maximum.
 - **Débloquer l'envoi** : débloque l'envoi des e-mails automatisés de votre hébergement web. Les e-mails présents dans la file d'attente seront également remis en distribution.
-- **Purger les e-mails** : efface les e-mails présents dans la file d'attente et débloque l'envoi de mails.
 
 Pour réaliser l'action souhaitée, cliquez sur le bouton correspondant puis sur `Valider`{.action}. Dans certains cas, l'action souhaitée peut nécessiter plusieurs dizaines de minutes pour être pleinement effective.
 
@@ -74,7 +75,7 @@ Si vous constatez que les e-mails générés depuis vos scripts ne sont plus env
 
 ```bash
 <?php
-$to = "RecipientEmail@adress.tld"; 
+$to = "RecipientEmail@address.tld"; 
 $subject = "Test mail PHP"; 
 $content = "The body/content of the Email";
 $headers = "From: Website <SendingEmail@address.tld>\r\nReply-To: SendingEmail@address.tld";
@@ -125,7 +126,7 @@ Cet état survient lorsque des mails considérés comme du SPAM ont été émis 
 
 Généralement, ce blocage est accompagné par l'envoi d'un e-mail intitulé **« Abus avec votre hébergement domain.tld »** généré automatiquement par nos robots de sécurité :
 
-![hosting](images/email-script-disabled.png){.thumbnail}
+![hosting](/pages/assets/screens/email-sending-to-customer/webhosting/email-script-disabled.png){.thumbnail}
 
 Trois cas de figure sont possibles par rapport à cette situation :
 
@@ -195,17 +196,6 @@ Même si nous vous recommandons vivement de privilégier l'utilisation de la fon
 > Les e-mails émis avec un script utilisant une configuration SMTP ne pourront pas être gérés et suivis depuis votre [espace client OVHcloud](/links/manager).
 > 
 
-Pour cela, vous pouvez utiliser le script suivant en remplaçant uniquement les valeurs `Host`, `Username` et `Password` par vos propres paramètres SMTP :
-
-```bash
-$mail->Host = "your.smtp.server";
-$mail->SMTPAuth = true; 
-$mail->SMTPSecure = "ssl";
-$mail->Port = 465; 
-$mail->Username = "e-mail@adress.tld"; 
-$mail->Password = "YourEmailPassword"; 
-```
-
 > [!primary]
 >
 > Si vous utilisez une adresse mail OVHcloud et uniquement dans ce cas, vous pouvez également utiliser le `SMTPSecure` *"starttls"* ou *"tls"* avec le `Port` **587**. Toutefois, le `SMTPSecure` *"ssl"* avec le `Port` **465** reste la configuration à privilégier sur notre infrastructure.
@@ -223,4 +213,4 @@ Pour des prestations spécialisées (référencement, développement, etc), cont
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

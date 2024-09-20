@@ -1,92 +1,84 @@
 ---
-title: Modificar su llave SSH en caso de pérdida
-excerpt: Modificar su llave SSH en caso de pérdida
-updated: 2022-02-10
+title: "Cómo sustituir un par de claves SSH en una instancia Public Cloud"
+excerpt: "Cómo restaurar el acceso al servidor sustituyendo un par de claves SSH por una nueva en caso de pérdida de la clave privada"
+updated: 2024-06-13
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
+
 ## Objetivo
 
-En caso de pérdida de llave SSH, ya sea como consecuencia de una reinstalación de correos o de otro tipo, es posible que no pueda conectarse a su instancia si no ha configurado ninguna forma alternativa de conectarse a su instancia.
+La pérdida de su llave SSH privada conlleva la pérdida del acceso a su instancia si no ha configurado otro medio de acceso.
 
-Para recuperar el acceso, hemos puesto a su disposición un [modo de rescate](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) que le permite conectarse con una contraseña y modificar sus archivos.
+Sin embargo, todavía puede conectarse a su instancia a través del modo de rescate de OVHcloud, que le permite conectarse con una contraseña provisional y modificar sus archivos.
 
-**Esta guía explica cómo configurar el archivo *authorized_keys* del usuario *admin* para poder añadir una nueva llave SSH para recuperar el acceso a la instancia.**
+**Esta guía explica cómo sustituir las llaves SSH en caso de pérdida de acceso a la instancia.**
+
+> [!warning]
+> OVHcloud ofrece servicios cuya configuración y gestión son responsabilidad suya. Por lo tanto, es su responsabilidad asegurarse de que funcionen correctamente.
+>
+> Esta guía explica las tareas más habituales. No obstante, le recomendamos que contacte con un [proveedor de servicios especializado](/links/partner) o con [nuestra comunidad de usuarios](/links/community) si tiene algún problema.
+>
 
 ## Requisitos
 
-- Tener una [Instancia de Public Cloud](https://www.ovhcloud.com/es/public-cloud/) en su cuenta de OVHcloud
-- Tener acceso a su instancia a través de SSH en [modo de rescate](/pages/public_cloud/compute/put_an_instance_in_rescue_mode)
-- Crear una llave SSH
+- Una [instancia de Public Cloud](/links/public-cloud/public-cloud) en su cuenta de OVHcloud
+- Tienes acceso a tu [área de cliente de OVHcloud](/links/manager)
 
 ## Procedimiento
 
-> [!primary]
->
-Si quiere registrar una llave SSH en el área de cliente de OVHcloud, le recomendamos que utilice el cifrado RSA o ECDSA. ED25519 no está soportado actualmente.
->
+### Paso 1: crear un nuevo par de claves
 
-Una vez que haya montado el disco de su instancia en [modo de rescate](/pages/public_cloud/compute/put_an_instance_in_rescue_mode#acceso-a-sus-datos), podrá acceder a todos sus archivos.
+Cree un nuevo par de llaves SSH en su dispositivo local, siguiendo las instrucciones de la primera parte de la [guía de creación de una llave SSH](/pages/public_cloud/compute/creating-ssh-keys-pci).
 
-El archivo que contiene las llaves SSH es el siguiente:
+### Paso 2: acceder a su instancia en modo de rescate
 
-```sh
-/mnt/home/USER_NAME/.ssh/authorized_keys
+Siga los pasos de la [guía del modo de rescate](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) para reiniciar la instancia en modo de rescate, conectarse a ella y montar sus particiones.
+
+Una vez que haya utilizado el comando `mount` (como se describe en la guía) y que su partición del sistema esté accesible, puede utilizar el siguiente comando:
+
+```bash
+chroot path/to/partition/mountpoint
 ```
 
-Si quiere añadir su nueva llave SSH, solo tiene que editar el archivo y añadir la nueva clave:
+La ruta de acceso al archivo depende del punto de montaje utilizado. Si ha montado la partición en `/mnt`, debe introducir lo siguiente:
 
-```sh
-sudo vim /mnt/home/USER_NAME/.ssh/authorized_keys
+```bash
+chroot /mnt/
+```
+
+Ahora debería tener acceso completo de escritura a los archivos de esta carpeta.
+
+### Paso 3: sustituir la llave
+
+Abra el archivo "authorized_keys" con un editor de texto. Este archivo almacena las claves SSH y se encuentra en la carpeta `home` del usuario con el que se conecta a su instancia.
+
+Ejemplo:
+
+```bash
+nano /mnt/home/USER_NAME/.ssh/authorized_keys
+```
+
+Sustituya `USER_NAME` por su nombre de usuario real.
+
+Copie y pegue la nueva clave pública (creada en el paso 1) en el archivo. Debería ser similar al ejemplo siguiente:
+
+```console
 ssh-rsa 1111111111122222222222333333333333444444444555555555556666666666
 777777777778888888888999999900000000000000000000000000== old@sshkey
 ssh-rsa AAAAAAAAABBBBBBBBBBBCCCCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDEEEEEEEEE
 EEFFFFFFFFFFFFFGGGGGGGGGGGGGhhhhhhhhhhhhhhhhhhhhhhhhhh== new@sshkey
 ```
 
-### Cambiar la llave SSH de usuario por defecto
+Por motivos de seguridad, quite la cadena de clave obsoleta "old" del archivo. Guarde los cambios y salga del editor.
 
-Para modificar la llave SSH del usuario por defecto, acceda a la carpeta personal del usuario. Por ejemplo, para el usuario admin, el archivo que se va a encontrar se encuentra en la siguiente carpeta:
+Reinicie la instancia en modo normal desde su [área de cliente de OVHcloud](/links/manager). Consulte las instrucciones de [guide sur le mode rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) si es necesario.
 
-```sh
-/home/admin/.ssh/authorized_keys
-```
-
-Para una instancia en Ubuntu, el usuario por defecto será ubuntu , por lo que el archivo estará en la siguiente carpeta:
-
-```sh
-/home/ubuntu/.ssh/authorized_keys
-```
-
-### Cambiar la contraseña de usuario predeterminada
-
-También puede cambiar la contraseña de su usuario predeterminado utilizando el modo de rescate y los siguientes comandos (en caso de que el usuario sea admin):
-
-Se cambia el directorio raíz para situarse directamente en el disco de la instancia:
-
-> [!primary]
->
-En el ejemplo a continuación, utilizamos vdb1 como nombre del disco del servidor y mnt como punto de montaje.
->
-
-```sh
-/home/admin# mount /dev/vdb1 /mnt/
-/home/admin# chroot /mnt/
-```
-
-Se cambia la contraseña de administrador:
-
-```sh
-passwd admin
-```
-
-Una vez realizada la modificación y guardada, solo tiene que reiniciar su instancia en su disco para poder conectarse a su instancia con su nueva llave SSH.
+Ya puede acceder a la instancia con su nuevo par de claves SSH.
 
 ## Más información
 
-[Convertirse en el usuario root y establecer una contraseña](/pages/public_cloud/compute/become_root_and_change_password)
-
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

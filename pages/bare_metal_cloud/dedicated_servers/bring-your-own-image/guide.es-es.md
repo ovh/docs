@@ -1,7 +1,7 @@
 ---
 title: Bring Your Own Image (BYOI) (EN)
 excerpt: Find out how to easily deploy your own images on dedicated servers
-updated: 2024-04-23
+updated: 2024-07-19
 ---
 
 ## Objective
@@ -17,14 +17,14 @@ In addition to the requirement and limitations mentioned below, you must ensure 
 
 ## Requirements
 
-- A [dedicated server](https://www.ovhcloud.com/es-es/bare-metal/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) (for the "[Deployment via Control Panel](#viacontrolpanel)" method)
+- A [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](/links/manager) (for the "[Deployment via Control Panel](#viacontrolpanel)" method)
 - Access to the [OVHcloud API](/pages/manage_and_operate/api/first-steps) (for the "[Deployment via API](#viaapi)" section of this guide)
 - Your image must be smaller than the Server RAM minus 3GiB
 
 > [!warning]
 >
-> As with any template OS installation, a new installation with BYOI will erase all the data on the server.
+> As with any classical OS installation, a new installation with BYOI will erase all the data on the server.
 >
 
 ## Instructions
@@ -52,7 +52,7 @@ There are some technical limitations linked to the use of physical products such
 
 ### Deploy your image via the Control Panel <a name="viacontrolpanel"></a>
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) and go to the `Bare Metal Cloud`{.action} section, then select your server under `Dedicated servers`{.action}.
+Log in to the [OVHcloud Control Panel](/links/manager) and go to the `Bare Metal Cloud`{.action} section, then select your server under `Dedicated servers`{.action}.
 
 In the `General information`{.action} tab, click the `...`{.action} button next to "System (OS)" then click `Install`{.action}.
 
@@ -127,10 +127,38 @@ The Bring Your Own Image (BYOI) payload should be similar to the following:
     },
     {
       "key": "configDriveUserData",
-      "value": "#!/bin/bash\necho \"Hi, sounds that BYOI is a success!\" > /etc/motd\n"
+      "value": "I2Nsb3VkLWNvbmZpZwpzc2hfYXV0aG9yaXplZF9rZXlzOgogIC0gc3NoLXJzYSBBQUFBQjhkallpdz09IG15c2VsZkBteWRvbWFpbi5uZXQKCnVzZXJzOgogIC0gbmFtZTogcGF0aWVudDAKICAgIHN1ZG86IEFMTD0oQUxMKSBOT1BBU1NXRDpBTEwKICAgIGdyb3VwczogdXNlcnMsIHN1ZG8KICAgIHNoZWxsOiAvYmluL2Jhc2gKICAgIGxvY2tfcGFzc3dkOiBmYWxzZQogICAgc3NoX2F1dGhvcml6ZWRfa2V5czoKICAgICAgLSBzc2gtcnNhIEFBQUFCOGRqWWl3PT0gbXlzZWxmQG15ZG9tYWluLm5ldApkaXNhYmxlX3Jvb3Q6IGZhbHNlCnBhY2thZ2VzOgogIC0gdmltCiAgLSB0cmVlCmZpbmFsX21lc3NhZ2U6IFRoZSBzeXN0ZW0gaXMgZmluYWxseSB1cCwgYWZ0ZXIgJFVQVElNRSBzZWNvbmRzCg=="
     }
   ]
 }
+```
+
+Even though the configDrive user data could be sent to the API directly in clear text by escaping special characters, it is recommended to send a base64-encoded script to the API. You can use the following UNIX/Linux command to encode your data:
+
+```bash
+cat my-data.yaml | base64 -w0
+```
+
+Here is the clear-text configDrive user data from the example above:
+
+```yaml
+#cloud-config
+ssh_authorized_keys:
+  - ssh-rsa AAAAB8djYiw== myself@mydomain.net
+
+users:
+  - name: patient0
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    groups: users, sudo
+    shell: /bin/bash
+    lock_passwd: false
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB8djYiw== myself@mydomain.net
+disable_root: false
+packages:
+  - vim
+  - tree
+final_message: The system is finally up, after $UPTIME seconds
 ```
 
 Once you completed the fields, start the deployment by clicking `Execute`{.action}.

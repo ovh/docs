@@ -34,7 +34,7 @@ Per accedere allo spazio di storage sono necessari:
 
 Questi dati sono indicati nell’email di conferma dell’installazione del tuo hosting ma, Se non ne hai ancora uno, accedi allo [Spazio Cliente OVHcloud](/links/manager){.external} nella sezione "Web" e clicca su `Hosting`{.action}. Seleziona il nome dell’hosting interessato e clicca sulla scheda `FTP - SSH`{.action}. 
 
-![export-website](images/tab-pro.png){.thumbnail}
+![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
 
 Visualizzi le informazioni associate allo spazio di storage. le informazioni di accesso allo spazio di storage. In caso di necessità, consulta la guida [Accedere allo spazio di storage di un hosting Web](/pages/web_cloud/web_hosting/ftp_connection){.external}. Se hai smarrito la password, segui la procedura descritta nella guida [Modificare la password di un utente FTP](/pages/web_cloud/web_hosting/ftp_change_password){.external}.
 
@@ -50,7 +50,7 @@ Una volta connesso allo spazio di storage, non ti resta che caricare i file del 
 
 Per verificare la cartella in cui il tuo sito è ospitato clicca sulla scheda `Multisito`{.action} dello Spazio Cliente OVHcloud. e verifica nella tabella la `Cartella di root`{.action} relativa al dominio interessato.
 
-![export-website](images/root-folders.png){.thumbnail}
+![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
 ### Step 2: recuperare il backup del tuo database (facoltativo)
 
@@ -71,7 +71,7 @@ Per conservare lo storico dei log del tuo sito, è disponibile un accesso a ques
 
 Clicca su `Hosting`{.action} e seleziona il tuo servizio. Clicca sulla scheda `Statistiche e log`{.action}. Clicca sul link sotto la voce `Visualizza i log`{.action}:
 
-![export-website](images/view-logs.png){.thumbnail}
+![export-website](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/statistics-and-logs/view-logs.png){.thumbnail}
 
 Visualizzi una finestra con i diversi tipi di log disponibili. Sono classificati per mese:
 
@@ -85,11 +85,11 @@ Visualizzi una finestra con i diversi tipi di log disponibili. Sono classificati
 | SSH   	| questi log indicano le differenti connessioni realizzate con il protocollo SSH.                                                                                                                      	|
 | cron  	| il risultato dell'esecuzione dei compiti pianificati.                                                                                                                                                	|
 
-![export-website](images/raw-logs-general.png){.thumbnail}
+![export-website](/pages/assets/screens/other/web-tools/logs/raw-logs-general.png){.thumbnail}
 
 Quando hai selezionato il tipo di log nel mese che ti interessa, questi vengono archiviati al giorno:
 
-![export-website](images/raw-logs.png){.thumbnail}
+![export-website](/pages/assets/screens/other/web-tools/logs/raw-logs.png){.thumbnail}
 
 ## Per saperne di più
 
@@ -109,4 +109,4 @@ Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [p
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

@@ -93,4 +93,4 @@ cscript.exe c:\windows\system32\slmgr.vbs -ato
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

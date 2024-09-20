@@ -15,7 +15,7 @@ Lors de l'ajout d'un nom de domaine à votre service Exchange, une configuration
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 - Être en mesure d’administrer le service Exchange depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 - Avoir effectué l'ajout d'un nom de domaine sur votre service Exchange demandant l'ajout d'un champ CNAME.
-- Pouvoir modifier la configuration de votre nom de domaine (sa zone DNS).
+- Être en mesure de [configurer la zone DNS](/pages/web_cloud/domains/dns_zone_edit) du nom de domaine concerné, depuis l'espace client OVHcloud ou depuis l'interface de gestion où il est enregistré.
 
 ## En pratique
 

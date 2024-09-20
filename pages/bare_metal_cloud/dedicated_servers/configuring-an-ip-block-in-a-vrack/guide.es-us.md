@@ -18,9 +18,9 @@ Además del direccionamiento IP privado, el [vRack](https://www.ovh.com/world/es
 
 - Tener un bloque público de direcciones IP reservado en su cuenta, con un mínimo de cuatro direcciones.
 - Haber elegido un rango de direcciones IP privadas.
-- Tener un [servidor compatible con el vRack](https://www.ovh.com/world/es/servidores_dedicados/){.external}.
+- Tener un [servidor compatible con el vRack](/links/bare-metal/bare-metal){.external}.
 - Haber activado un servicio [vRack](https://www.ovh.com/world/es/soluciones/vrack/){.external}.
-- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
+- Estar conectado al [área de cliente de OVHcloud](/links/manager){.external}.
 
 > [!warning]
 > Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](https://eco.ovhcloud.com/es/about/).
@@ -44,7 +44,7 @@ Además del direccionamiento IP privado, el [vRack](https://www.ovh.com/world/es
 > Esta configuración permite configurar IP de un mismo bloque en varios servidores, siempre que todos estos servidores estén en el mismo vRack que el bloque IP. El bloque IP debe tener al menos 2 direcciones IP utilizables o más para que esto sea posible.
 >
 
-En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Bare Metal Cloud`{.action} y haga clic en `Network`{.action}. A continuación, abra el menú `vRack`{.action}.
+En el [área de cliente de OVHcloud](/links/manager), acceda a la sección `Bare Metal Cloud`{.action} y haga clic en `Network`{.action}. A continuación, abra el menú `vRack`{.action}.
 
 Seleccione el vRack en la lista para ver la lista de servicios compatibles. Haga clic en el bloque IP que quiera añadir al vRack y haga clic en el botón `Añadir`{.action}.
 
@@ -113,7 +113,7 @@ A continuación, cree una nueva ruta IP para el vRack. Para ello, le recomendamo
 253	default
 0	unspec
 # # #
-local
+# local
 # # #
 #1	inr.ruhep
 1 vrack

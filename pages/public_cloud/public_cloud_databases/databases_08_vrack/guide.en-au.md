@@ -23,6 +23,7 @@ Here are some considerations to take into account when using private network:
 - Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
 - When connecting from an outside subnet, the Openstack IP gateway must be enabled in the subnet used for the Database service. The customer is responsible for any other custom network setup.
 - Subnet sizing should include considerations for service nodes, other co-located services within the same subnet, and an allocation of additional available IP addresses for maintenance purposes. Failure to adequately size subnets could result in operational challenges and the malfunctioning of services.
+- OpenStack subnets routes announcement will not be applied to your services. 
 
 ## Instructions
 
@@ -67,7 +68,7 @@ The database is now connected to the virtual network, we can use it from any com
 
 ### Step 4 - Adding a Public Cloud Instance to the vRack
 
-Follow this [guide](/pages/public_cloud/compute/public-cloud-first-steps#create-instance) to create a new Public Cloud Instance
+Follow this [guide](/pages/public_cloud/compute/public-cloud-first-steps) to create a new Public Cloud Instance
 
 > [!primary]
 >
@@ -81,7 +82,7 @@ Follow this [guide](/pages/public_cloud/compute/public-cloud-first-steps#create-
 >If you want to test the access from an existing instance, read this tutorial to connect it to the vRack: [Configuring vRack for Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#in-case-of-an-existing-instance).
 >
 
-### Step 5 - Example of verification with a Public Cloud Databases for Redis
+### Step 5 - Example of verification with a Public Cloud Databases for Caching
 
 We assume that you have an already set SSH key on your project. For more details, read the [Creating and connecting to your first Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps) page.
 
@@ -91,13 +92,13 @@ Connect to the instance via SSH:
 ssh debian@141.95.107.2
 ```
 
-Now install the Redis client by installing the Redis server package:
+Now install the client by installing the `redis-server` package:
 
 ```bash
 sudo apt-get update && sudo apt-get install redis-server -y
 ```
 
-Now connect to the Redis database using the URL retrieved from the OVHcloud Control Panel, with a command such as:
+Now connect to the Caching service using the URL retrieved from the OVHcloud Control Panel, with a command such as:
 
 ```bash
 redis-cli --tls -u "rediss://my-redis-user@redis-2612345abc-abcd1234defg.database.cloud.ovh.net:20185"

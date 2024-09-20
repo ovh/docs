@@ -1,7 +1,7 @@
 ---
 title: 'Delegowanie uprawnień do konta e-mail'
 excerpt: 'Dowiedz się, jak zezwolić innym osobom na zarządzanie skrzynką e-mail'
-updated: 2020-10-24
+updated: 2024-06-19
 ---
 
 ## Wprowadzenie
@@ -12,9 +12,14 @@ Usługi Exchange i Email Pro umożliwiają korzystanie z profesjonalnych kont e-
 
 ## Wymagania początkowe
 
-- skonfigurowane rozwiązanie [OVHcloud Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/) lub [E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/)
+- skonfigurowane rozwiązanie [OVHcloud Exchange](/links/web/emails-hosted-exchange) lub [E-mail Pro](/links/web/email-pro)
+
+> [!warning]
+>
+> **W przypadku oferty [Email Pro](/links/web/email-pro)** Funkcje delegacji opisane w tym przewodniku są dostępne tylko w interfejsie [Webmail](/links/web/email). Protokoły umożliwiające korzystanie z nich za pośrednictwem programu pocztowego wymagają posiadania konta [Exchange](/links/web/emails-hosted-exchange).
+
 - Posiadanie co najmniej dwóch aktywnych kont e-mail skonfigurowanych na tej samej platformie e-mail OVHcloud
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 - Posiadanie danych dostępowych do konta e-mail, dla którego przydzielone zostaną nowe prawa
 
 ## W praktyce
@@ -36,7 +41,7 @@ Po określeniu konta, dla którego będziesz nadawał uprawnienia, wybraniu praw
 
 ### Etap 1: nadanie uprawnień
 
-Aby rozpocząć operację, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}:
+Aby rozpocząć operację, zaloguj się do [Panelu klienta](/links/manager){.external}:
 
 - **Exchange**: Kliknij `Microsoft`{.action}, po czym kliknij `Exchange`{.action}.
 - **Email Pro**: Kliknij `Email Pro`{.action}.
@@ -84,7 +89,11 @@ W oknie, które się wyświetla wskaż nazwę konta, którego dotyczy przyznane 
 
 - **Przy użyciu programu Outlook dla Windows**
 
-Przejdź do programu Outlook 2016 i kliknij `Plik`{.action} na pasku menu na górze ekranu, a następnie kliknij `Ustawienia konta`{.action}. W rozwijanym menu kliknij ponownie `Parametry konta`{.action}. W oknie, które się wyświetla wybierz konto, którego dotyczy przydzielone prawo, a następnie kliknij `Modyfikuj`{.action}. 
+> [!warning]
+>
+> Korzystanie z tej funkcji **przez program Outlook** jest dostępne tylko dla konta e-mail [Exchange](/links/web/emails-hosted-exchange).
+
+Przejdź do programu Outlook i kliknij `Plik`{.action} na pasku menu na górze ekranu, a następnie kliknij `Ustawienia konta`{.action}. W rozwijanym menu kliknij ponownie `Parametry konta`{.action}. W oknie, które się wyświetla wybierz konto, którego dotyczy przydzielone prawo, a następnie kliknij `Modyfikuj`{.action}. 
 
 ![delegacja uprawnień exchange](images/delegation-step4.png){.thumbnail}
 
@@ -106,7 +115,11 @@ Teraz możesz zredagować wiadomość e-mail i wysłać ją.
 
 - **Przy użyciu programu Outlook dla Windows**
 
-Po otwarciu programu Outlook 2016 zacznij pisać nową wiadomość. Upewnij się, czy przycisk `Od`{.action} wyświetla się w oknie wiadomości. Jeśli nie wyświetla się, przejdź do zakładki `Opcje`{.action}, następnie kliknij `Wyświetl „Od”`{.action}.
+> [!warning]
+>
+> Korzystanie z tej funkcji **przez program Outlook** jest dostępne tylko dla konta e-mail [Exchange](/links/web/emails-hosted-exchange).
+
+Po otwarciu programu Outlook zacznij pisać nową wiadomość. Upewnij się, czy przycisk `Od`{.action} wyświetla się w oknie wiadomości. Jeśli nie wyświetla się, przejdź do zakładki `Opcje`{.action}, następnie kliknij `Wyświetl „Od”`{.action}.
 
 Teraz kliknij przycisk `Od`{.action} i zaznacz konto (do którego posiadasz przydzielone prawo), które wyświetli się jako nadawca . Jeśli konto się nie wyświetla, kliknij `Inne`{.action}, wprowadź odpowiednie konto i zatwierdź. 
 
@@ -128,7 +141,11 @@ Teraz możesz zredagować wiadomość e-mail i wysłać ją.
 
 - **Przy użyciu programu Outlook dla Windows**
 
-Po otwarciu programu Outlook 2016 zacznij pisać nową wiadomość. Upewnij się, czy przycisk `Od`{.action} wyświetla się w oknie wiadomości. Jeśli nie wyświetla się, przejdź do zakładki `Opcje`{.action}, następnie kliknij `Wyświetl „Od”`{.action}.
+> [!warning]
+>
+> Korzystanie z tej funkcji **przez program Outlook** jest dostępne tylko dla konta e-mail [Exchange](/links/web/emails-hosted-exchange).
+
+Po otwarciu programu Outlook zacznij pisać nową wiadomość. Upewnij się, czy przycisk `Od`{.action} wyświetla się w oknie wiadomości. Jeśli nie wyświetla się, przejdź do zakładki `Opcje`{.action}, następnie kliknij `Wyświetl „Od”`{.action}.
 
 Teraz kliknij przycisk `Od`{.action} i zaznacz konto (do którego posiadasz przydzielone prawo), które wyświetli się jako nadawca . Jeśli konto się nie wyświetla, kliknij `Inne`{.action}, wprowadź odpowiednie konto i zatwierdź. 
 
@@ -136,6 +153,16 @@ Teraz możesz zredagować wiadomość e-mail i wysłać ją.
 
 ![delegacja uprawnień exchange](images/delegation-step7.png){.thumbnail}
 
-## Sprawdź również
+## Sprawdź również <a name="go-further"></a>
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
+
+[Korzystanie z konta e-mail przy użyciu Webmail Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa)
+
+[Współdzielenie folderów w interfejsie OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_directory_sharing)
+
+[Korzystanie z grup (mailing listy) dostępnych z kontem Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_groups)
+
+Dołącz do [grona naszych użytkowników](/links/community).

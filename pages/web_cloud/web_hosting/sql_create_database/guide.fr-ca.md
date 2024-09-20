@@ -1,7 +1,7 @@
 ---
 title: "Créer une base de données sur son hébergement web"
 excerpt: "Découvrez comment créer une base de données sur votre hébergement web OVHcloud"
-updated: 2024-05-17
+updated: 2024-09-05
 ---
 
 ## Objectif
@@ -24,7 +24,7 @@ Connectez-vous à votre [espace client OVHcloud](/links/manager) puis rendez-vou
 
 Le tableau de cette section contient toutes les bases de données créées avec votre hébergement web.
 
-![databasecreation](images/tab.png){.thumbnail}
+![databasecreation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
 
 Dans le tableau, les bases de données peuvent disposer de plusieurs statuts différents :
 
@@ -48,19 +48,24 @@ Il existe deux façons de créer une nouvelle base de données :
 
 Dans la fenêtre qui s’ouvre, sélectionnez les informations suivantes :
 
-![database-creation-step1](images/create-a-database-step-1.png){.thumbnail}
+![database-creation-step1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-step-1.png){.thumbnail}
 
 |Information|Description|  
 |---|---|
 |**Sélectionnez le type de base de données**|Choisissez la taille de la base de données. Cette taille fait référence à l'espace dont dispose votre base de données pour le stockage des données.|
-|**Sélectionnez le moteur de la base de données à ajouter**|Choisissez le moteur que la base de données doit utiliser. Les bases de données inclues dans votre [offre d’hébergement web OVHcloud](/links/web/hosting) sont uniquement disponibles avec le moteur MySQL.|
+|**Sélectionnez le moteur de la base de données à ajouter**|Choisissez le moteur que la base de données doit utiliser. Actuellement, les bases de données inclues dans votre [offre d’hébergement web OVHcloud](/links/web/hosting) sont uniquement disponibles avec le moteur MySQL.|
 |**Sélectionnez la version de la base de données à ajouter**|Choisissez la version utilisée par le moteur de la base de données. Assurez-vous que votre site web soit compatible avec la version que vous avez choisie.|
+
+> [!primary]
+>
+> La mise à jour de la version du moteur d'une base de données déjà créée est actuellement indisponible.
+>
 
 Ensuite, cliquez sur `Suivant`{.action}.
 
 Une nouvelle fenêtre s'affiche :
 
-![database-creation-step2](images/create-a-database-step-2.png){.thumbnail}
+![database-creation-step2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-step-2.png){.thumbnail}
 
 |Information|Description|
 |---|---|
@@ -88,7 +93,7 @@ Une nouvelle fenêtre s'affiche :
 
 Complétez les informations requises et cliquez sur `Suivant`{.action}.
 
-![database-creation-step3](images/create-a-database-step-3.png){.thumbnail}
+![database-creation-step3](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/create-a-database-step-3.png){.thumbnail}
 
 Vérifiez que toutes les informations affichées dans le résumé sont correctes. Si tel est le cas, cliquez sur `Confirmer`{.action} pour lancer la création de votre base de données.
 
@@ -144,7 +149,7 @@ Selon le logiciel utilisé, il est possible que cette connexion nécessite d'êt
 
 OVHcloud fournit un outil en ligne pour la gestion des bases de données, « phpMyAdmin ». Pour trouver le lien d'accès à cette application, connectez-vous à votre [espace client OVHcloud](/links/manager) puis rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la colonne de gauche, choisissez l'offre d'hébergement sur laquelle vous souhaitez récupérer les informations de connexion à votre base de données puis cliquez sur l'onglet `Bases de données`{.action}. Dans le tableau qui s'affiche, cliquez sur le bouton `...`{.action} à droite de la base de données concernée, puis cliquez sur `Accéder à phpMyAdmin`{.action} dans le menu déroulant.
 
-![phpMyAdmin Go Login](images/pma-interface-login.png){.thumbnail}
+![phpMyAdmin Go Login](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
 
 Renseignez les informations d'accès à votre base de données puis cliquez sur `Connexion`{.action}.
 
@@ -188,4 +193,4 @@ Pour des prestations spécialisées (référencement, développement, etc), cont
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

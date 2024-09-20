@@ -43,7 +43,7 @@ Die gelöschten Elemente können über das Webmail (OWA) und Outlook abgerufen w
 
 ### Wiederherstellung gelöschter Elemente
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI?start=117" title="YouTube Video Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI?start=117" title="YouTube Video Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Loggen Sie sich in den Account über Webmail (OWA) ein: <https://www.ovhcloud.com/de/mail/>.
 

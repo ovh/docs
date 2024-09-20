@@ -1,7 +1,7 @@
 ---
 title: "Konfiguracja dynamicznego DNS (DynHost/DynDNS) dla Twojej domeny"
 excerpt: "Dowiedz się, jak skonfigurować dynamiczny rekord DNS dla Twojej domeny OVHcloud"
-updated: 2024-05-22
+updated: 2024-09-04
 ---
 
 > [!primary]
@@ -12,13 +12,11 @@ updated: 2024-05-22
 
 Strefa **D**omain **N**ame **S**ystem (**DNS**) nazwy domeny stanowi jej plik konfiguracyjny. Zawiera on informacje techniczne nazywane *rekordy DNS*. Strefa DNS jest jak ośrodek sterowania. 
 
-Możesz na przykład określić:
+Aby uzyskać więcej informacji, zapoznaj się z naszymi przewodnikami:
 
-- Adres IP (rekordy DNS typu *A* i *AAAA*) Twojego hostingu, aby wyświetlić Twoją stronę WWW z Twoją domeną.
-- Serwery e-mail (rekordy DNS typu *MX*), na które Twoja domena musi przekierować otrzymane e-maile. Możesz sprawdzić je na spersonalizowanym adresie e-mail z Twoją domeną.
-- Informacje związane z bezpieczeństwem / uwierzytelnianiem przypisanych usług (hosting, serwer www, serwer e-mail, itp.) do Twojej domeny (rekordy DNS typu *SPF*, *DKIM*, *DMARC*, itp.).
-
-W razie potrzeby sprawdź [naszą dokumentację dotyczącą rekordów DNS i edycji strefy DNS](/pages/web_cloud/domains/dns_zone_edit) w [Panelu klienta OVHcloud](/links/manager).
+- [Wszystko o serwerach DNS](/pages/web_cloud/domains/dns_server_general_information)
+- [Wszystko o strefie DNS](/pages/web_cloud/domains/dns_zone_general_information)
+- [Wszystko o rekordach DNS](/pages/web_cloud/domains/dns_zone_records)
 
 Aktualizacja rekordu DNS w sposób "dynamiczny" może zapobiec przedłużającej się przerwie w dostępności Twoich usług, jeśli nie dysponujesz adresem IP zwanym "stałym" (który się nie zmienia).
 
@@ -57,7 +55,7 @@ Na przykład, **DynHost** może być używany, jeśli pacjent *samodzielnie host
 
 Aby utworzyć użytkownika DynHost, zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external} i przejdź do sekcji `Web cloud`{.action}. W lewej kolumnie kliknij zakładkę `Domeny`{.action} i wybierz odpowiednią nazwę domeny. Na stronie, która się wyświetla kliknij zakładkę `DynHost`{.action}.
 
-![dynhost](images/tab.png){.thumbnail}
+![dynhost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/tab.png){.thumbnail}
 
 Kliknij przycisk `Zarządzaj dostępami`{.action}, a następnie kliknij `Utwórz identyfikator`{.action}. W oknie, które się wyświetla, wprowadź wymagane informacje:
 
@@ -74,7 +72,7 @@ Kliknij przycisk `Zarządzaj dostępami`{.action}, a następnie kliknij `Utwórz
 
 Po uzupełnieniu pól kliknij przycisk `Zatwierdź`{.action}. Identyfikator pojawi się wówczas w tabeli figurującej na aktualnej stronie. Jeśli potrzebujesz dodatkowych loginów DynHost, powtórz ten etap tyle razy, ile to konieczne.
 
-![dynhost](images/create-a-dynhost-username.png){.thumbnail}
+![dynhost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/create-a-dynhost-username.png){.thumbnail}
 
 ### Etap 2: tworzenie dynamicznego rekordu DNS (DynHost) <a name="step2"></a>
 
@@ -85,11 +83,21 @@ Gdy jesteś gotowy, aby utworzyć rekord DynHost, przejdź ponownie na stronę g
 |Informacje|Opis|
 |---|---|
 |Subdomena|Wpisz subdomenę, której rekord DNS ma być aktualizowany dynamicznie. Subdomena ta ma odpowiadać subdomenie wskazanej podczas tworzenia identyfikatora DynHost. **Jeśli chcesz skonfigurować wpis DynHost bezpośrednio dla Twojej domeny, zostaw ten formularz pusty**|
-|Docelowy adres IP |Wpisz adres IP (tylko IPv4 lub IPv6), który ma być aktualnie używany przez rekord DNS. Zazwyczaj chodzi o publiczny adres IP Twojego *box* Internet lub Twojego serwera z własnym dostępem. Zgodnie z zasadą DynHost adres IP zostanie automatycznie aktualizowany w późniejszym czasie.|
+|Docelowy adres IP |Wpisz adres IP (tylko IPv4 lub IPv6), który ma być aktualnie używany przez rekord DNS. Zazwyczaj chodzi o publiczny adres IP Twojego *box* Internet lub Twojego serwera z własnym dostępem. Zgodnie z zasadą DynHost adres IP zostanie automatycznie aktualizowany w późniejszym czasie. W tym formularzu należy podać tylko jeden adres IP.|
 
-![dynhost](images/create-a-dynhost.png){.thumbnail}
+> [!warning]
+>
+> Aby skonfigurować dynamiczny rekord DNS (DynHost), użycie *wildcard* (wstawiając tylko znak `*`) w formularzu `Subdomena`{.action} jest niedostępne.
+>
+
+![dynhost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/create-a-dynhost.png){.thumbnail}
 
 Po uzupełnieniu pól kliknij przycisk `Zatwierdź`{.action}. Rekord DynHost pojawi się wówczas w tabeli figurującej na aktualnej stronie. Jeśli potrzebujesz dodatkowych identyfikatorów DynHost, powtórz ten etap tyle razy, ile to konieczne.
+
+> [!primary]
+>
+> Jeśli domena lub subdomena ma być konfigurowana dynamicznie, na przykład za pomocą adresów IPv4 i IPv6, możesz utworzyć dwa dynamiczne rekordy DNS dla tej samej domeny lub subdomeny. Pierwszy dynamiczny rekord DNS zostanie utworzony dla IPv4, a drugi dla IPv6.
+>
 
 ### Etap 3: automatyzacja zmiany DynHost
 
@@ -126,7 +134,7 @@ Możesz sprawdzić, czy docelowy adres IP został zaktualizowany. W tym celu zal
 > Każda zmiana w aktywnej strefie DNS domeny za pomocą DynDNS może opóźnić propagację aktualizacji o kilka minut.
 >
 
-![dynhost](images/target.png){.thumbnail}
+![dynhost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/target.png){.thumbnail}
 
 ## Sprawdź również <a name="go-further"></a>
 
@@ -134,4 +142,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 
+Dołącz do [grona naszych użytkowników](/links/community). 

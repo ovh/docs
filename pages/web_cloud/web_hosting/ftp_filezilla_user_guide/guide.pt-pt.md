@@ -31,7 +31,7 @@ Permite publicar ficheiros ou o seu website [acedendo ao espaço FTP](/pages/web
 
 ## Apresentação da interface <a name="interface"></a>
 
-![alojamento](images/main-interface.png){.thumbnail}
+![alojamento](/pages/assets/screens/other/web-tools/filezilla/main-interface.png){.thumbnail}
 
 - A parte superior **enquadrada** permite uma ligação rápida ao seu alojamento ao introduzir o seu nome de **host**, o nome de **utilizador**, a sua **password** associada e o número de **porta** utilizado.
 - **zona 1**: detalhes sobre o histórico de operações, ligação ao espaço FTP, transferência de ficheiros, erros, etc. Para saber mais, aceda à [documentação oficial do Filezilla](https://filezilla-project.org/){.external}.
@@ -45,7 +45,7 @@ Permite publicar ficheiros ou o seu website [acedendo ao espaço FTP](/pages/web
 
 ### Ligação com Filezilla em FTP
 
-![alojamento](images/quick-connect.png){.thumbnail}
+![alojamento](/pages/assets/screens/other/web-tools/filezilla/quick-connect.png){.thumbnail}
 
 A partir da barra de ligação rápida, complete as informações através da seguinte tabela:
 
@@ -58,7 +58,7 @@ A partir da barra de ligação rápida, complete as informações através da se
 
 Se não possuir estas informações, aceda à [Área de Cliente OVHcloud](/links/manager){.external} na secção "Web Cloud" e clique em `Alojamentos`{.action}. De seguida, selecione o nome do alojamento correspondente e aceda ao separador `FTP - SSH`{.action}. Aparecerá a informação relativa ao seu espaço de armazenamento:
 
-![alojamento](images/tab-pro.png){.thumbnail}
+![alojamento](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
 
 > [!warning]
 >
@@ -67,7 +67,7 @@ Se não possuir estas informações, aceda à [Área de Cliente OVHcloud](/links
 
 Quando tudo estiver corretamente introduzido na caixa **1** da imagem abaixo, clique em `Ligação rápida`{.action}.
 
-![alojamento](images/quick-connect-successfull.png){.thumbnail}
+![alojamento](/pages/assets/screens/other/web-tools/filezilla/quick-connect-successfull.png){.thumbnail}
 
 Se a ligação for bem-sucedida, será informado através do estado presente na caixa **2**. Assim, poderá consultar os seus diretórios/pastas e ficheiros já presentes no seu alojamento (caixa **3**).
 
@@ -88,25 +88,25 @@ Aceda à [Área de Cliente OVHcloud](/links/manager){.external}, na secção "We
 
 De seguida, verifique se o **SFTP** está ativo na tabela.
 
-![Ativação SFTP oferta start](images/sftp-enabled-pro.png){.thumbnail}
+![Ativação SFTP oferta start](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/sftp-enabled-pro.png){.thumbnail}
 
 Se não estiver ativo:
 
 - Clique no botão `...`{.action} à direita da tabela e, a seguir, em `Editar`{.action}.
 
-![Ativação SFTP 1](images/edit-login.png){.thumbnail}
+![Ativação SFTP 1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/edit-login.png){.thumbnail}
 
 - Na nova janela, verifique se está ativada uma das 2 opções seguintes:
     - **FTP e SFTP**: para ativar apenas o SFTP além do FTP.
     - **FTP, SFTP e SSH**: para ativar o FTP, o SFTP e o SSH.
 
-![Ativação SFTP 2](images/modify-user-step-1-connexion-protocols.png){.thumbnail}
+![Ativação SFTP 2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/modify-user-step-1-connexion-protocols.png){.thumbnail}
 
 - A seguir, clique em `Seguinte`{.action} e depois em `Validar`{.action}
 
 #### Lançar a ligação SFTP
 
-![alojamento](images/quick-connect.png){.thumbnail}
+![alojamento](/pages/assets/screens/other/web-tools/filezilla/quick-connect.png){.thumbnail}
 
 Na secção superior da Filezilla e para estabelecer a ligação ao servidor remoto (alojamento), insira os seguintes elementos:
 
@@ -117,13 +117,13 @@ Na secção superior da Filezilla e para estabelecer a ligação ao servidor rem
 
 Depois de clicar no botão `Ligação rápida`{.action}, irá abrir uma caixa de diálogo (ver imagem abaixo) para certificar a ligação ao host ao qual se vai ligar. Uma vez ligado a um host OVHcloud, pode selecionar *Sempre confiar nesse host, adicionar esta chave à cache* para que o software não o peça novamente no futuro.
 
-![alojamento](images/unknown-host-key-message.png){.thumbnail}
+![alojamento](/pages/assets/screens/other/web-tools/filezilla/unknown-host-key-message.png){.thumbnail}
 
 ### Erros de ligação
 
 A mensagem apresentada abaixo indica um erro de identificação aquando da ligação em FTP ou SFTP ao alojamento partilhado:
 
-![alojamento](images/authentification-failed-could-not-connect-server.png){.thumbnail}
+![alojamento](/pages/assets/screens/other/web-tools/filezilla/authentification-failed-could-not-connect-server.png){.thumbnail}
 
 Este tipo de mensagem é gerada por um erro no binário Login/Palavra-passe.
 
@@ -134,7 +134,7 @@ Verifique os seus dados de acesso para garantir que não há erros. Se necessár
 
 No caso abaixo, o erro é gerado por um nome de host incorreto:
 
-![alojamento](images/connection-timed-out-after-20s.png){.thumbnail}
+![alojamento](/pages/assets/screens/other/web-tools/filezilla/connection-timed-out-after-20s.png){.thumbnail}
 
 Verifique este último em relação ao nome do host declarado na sua [Área de Cliente OVHcloud](/links/manager){.external}.
 
@@ -146,7 +146,7 @@ Tenha o cuidado de selecionar corretamente o diretório alvo na janela da direit
 
 Uma vez realizada esta ação, os seus ficheiros serão colocados automaticamente em fila de espera para serem colocados no servidor.
 
-![alojamento](images/drag-drop-en.png){.thumbnail}
+![alojamento](/pages/assets/screens/other/web-tools/filezilla/drag-drop-en.png){.thumbnail}
 
 ### Vista da fila de espera
 
@@ -158,7 +158,7 @@ Nesta zona, encontrará:
 - os ficheiros para os quais a transferência falhou;
 - os ficheiros para os quais a transferência foi bem-sucedida no alojamento remoto.
 
-![alojamento](images/waiting-list-view.png){.thumbnail}
+![alojamento](/pages/assets/screens/other/web-tools/filezilla/waiting-list-view.png){.thumbnail}
 
 ### Menu contextual Servidor
 
@@ -176,7 +176,7 @@ Surge um menu contextual e tem várias opções à sua disposição:
 - Copiar o(s) endereço(s) na área de transferência: permite-lhe copiar automaticamente o link direto para o ficheiro selecionado. Exemplo de URL que pode ser gerado: `ftp://loginftp@ftp.cluster0XX.hosting.ovh.net/www/mondossier1/monfichier.jpg`
 - Permissões de ficheiro: permite-lhe modificar as permissões dos ficheiros (Chmod)
 
-![alojamento](images/contextual-menu-server.png){.thumbnail}
+![alojamento](/pages/assets/screens/other/web-tools/filezilla/contextual-menu-server.png){.thumbnail}
 
 ## Informações úteis <a name="useful-information"></a>
 
@@ -201,7 +201,7 @@ Por predefinição, recomendamos que não ultrapasse as permissões Chmod **705*
 
 Quanto mais alto for o número, mais elevadas são as permissões.
 
-![alojamento](images/change-file-attributes.png){.thumbnail}
+![alojamento](/pages/assets/screens/other/web-tools/filezilla/change-file-attributes.png){.thumbnail}
 
 Indique as permissões que deseja atribuir, o valor Chmod será automaticamente atualizado.
 
@@ -231,7 +231,7 @@ SITE CHMOD 705 /
 > Este comando não está funcional em SFTP.
 >
 
-![alojamento](images/site-chmod-705-command.png){.thumbnail}
+![alojamento](/pages/assets/screens/other/web-tools/filezilla/site-chmod-705-command.png){.thumbnail}
 
 Se obtiver o erro `550 would not change perms on /. not such file or directory`, utilize o seguinte comando:
 
@@ -259,11 +259,11 @@ Para os ficheiros binários, como por exemplo os ficheiros do tipo **CGI**, pode
 
 Para alterar o tipo de transferência, selecione `Transferência`{.action} no menu principal e `Tipo de transferência`{.action}.
 
-![alojamento](images/transfert-binary-files.png){.thumbnail}
+![alojamento](/pages/assets/screens/other/web-tools/filezilla/transfert-binary-files.png){.thumbnail}
 
 ### Comparação de dossiers
 
-![alojamento](images/comparison-tool.png){.thumbnail}
+![alojamento](/pages/assets/screens/other/web-tools/filezilla/comparison-tool.png){.thumbnail}
 
 A opção de comparação de ficheiros apresenta cores nas **zonas 4** e **5** (apresentadas na secção deste tutorial relativa à [interface](#interface) de Filezilla). Esta opção permite salientar as diferenças entre os ficheiros e pastas locais e os do servidor. 
 
@@ -291,4 +291,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

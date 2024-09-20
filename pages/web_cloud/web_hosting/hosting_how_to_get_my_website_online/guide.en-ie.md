@@ -61,7 +61,7 @@ If you have an FTP username, a password and a server address, you will be able t
 
 To obtain the server address or username to allow you to access your storage space, log in to your [OVHcloud Control Panel](/links/manager){.external}, then click on `Hosting Plans`{.action}. Select the name of the hosting plan concerned and click on the `FTP - SSH`{.action} tab.
 
-![siteinstallation](images/tab-pro.png){.thumbnail}
+![siteinstallation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/tab-pro.png){.thumbnail}
 
 Once you are in possession of all the elements, you have three different options for connecting to your storage space:
 
@@ -83,7 +83,7 @@ You may find a file called “index.html” in your storage space. This file may
 >
 > An "index.php" file will always take over an "index.html" file. Therefore, when both are present, only "index.php" will be called.
 
-![siteinstallation](images/root-folders.png){.thumbnail}
+![siteinstallation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/root-folders.png){.thumbnail}
 
 ### Step 3: connecting your website to a database
 
@@ -108,7 +108,7 @@ If you want to create a new database with OVHcloud, log in to your [OVHcloud Con
 
 Now click the `Create a database`{.action} button, or, if this button is not shown, click on `Actions`{.action}, then on `Create a database`{.action}. Follow the instructions shown.
 
-![siteinstallation](images/tab.png){.thumbnail}
+![siteinstallation](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/tab.png){.thumbnail}
 
 #### 3. Import the existing database 
 
@@ -148,4 +148,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

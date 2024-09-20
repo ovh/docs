@@ -48,7 +48,7 @@ OVHcloud vous permet de différencier la gestion administrative, technique et de
 
 Connectez-vous à l'[espace client OVHcloud](/links/manager){.external}, cliquez sur `Télécom`{.action} puis sur `Téléphonie`{.action}.
 
-![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
+![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
 Sélectionnez votre groupe de téléphonie puis cliquez sur l'onglet `Gestion des contacts`{.action}.
 

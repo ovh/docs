@@ -10,7 +10,7 @@ Le mode *rescue-customer-windows* est un outil fourni par OVHcloud qui vous perm
 
 Le mode rescue est généralement adapté aux tâches suivantes :
 
-- [Réinitialisation du mot de passe de l'administrateur](/pages/bare_metal_cloud/dedicated_servers/changing-admin-password-on-windows)
+- [Réinitialisation du mot de passe de l'administrateur](/pages/bare_metal_cloud/dedicated_servers/rcw-changing-admin-password-on-windows)
 - Réparation d'un système d'exploitation défectueux
 - Correction d'une configuration incorrecte d'un pare-feu logiciel
 
@@ -118,4 +118,4 @@ Il est possible que les disques attachés soient vus comme des `Volumes Dynamiqu
 
 - [Activer et utiliser le mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

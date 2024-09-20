@@ -1,7 +1,7 @@
 ---
 title: 'First Steps with the OVHcloud APIs'
 excerpt: 'Learn how to use OVHcloud APIs'
-updated: 2024-02-01
+updated: 2024-06-07
 ---
 
 ## Objective
@@ -13,7 +13,6 @@ The APIs available on [https://ca.api.ovh.com/](https://ca.api.ovh.com/){.extern
 ## Requirements
 
 - You have an active OVHcloud account and know its credentials.
-
 - You are on the [OVHcloud API](https://ca.api.ovh.com/){.external} web page.
 
 ## Instructions
@@ -32,11 +31,12 @@ On the [OVHcloud API](https://ca.api.ovh.com/) page, click `Explore the OVH API`
 
 To use the APIs on your products, you must sign in to this site using your OVHcloud credentials.
 
-- Click `Login`{.action} in the upper right.
+- Click `Authentication`{.action} in the upper left.
+- Select `Login with OVHcloud SSO`{.action}.
 - Enter your OVHcloud credentials.
-- Set a timeline, labelled **Validity**, during which you allow actions through the OVHcloud APIs.
+- Click `Authorize`{.action} to allow performing API calls through the console.
 
-![API](images/login-ca.png){.thumbnail}
+![API](images/login.png){.thumbnail}
 
 > [!primary]
 >
@@ -45,15 +45,18 @@ To use the APIs on your products, you must sign in to this site using your OVHcl
 
 #### Explore available products on APIs
 
-Once logged in, you will see a list of OVHcloud products that can be managed with APIs. This list is sorted alphabetically.
+You can see the list of OVHcloud products that can be managed with APIs on the left menu. This list is sorted alphabetically.
 
-![API](images/api-list-ca.png){.thumbnail}
+![API](images/api-list.png){.thumbnail}
 
 For example, to view the domain name APIs, click **/domain** in the list.
 
 After you click the product, a list of the product's APIs appears below.
 
 ![API](images/api-displayed.png){.thumbnail}
+
+You can also use the selector on the left of the list of products to switch between the **/v1** and **/v2** branches of the API.
+If you're not familiar with the API branches, you can read the following [documentation about the API v2](/pages/manage_and_operate/api/apiv2).
 
 #### Run API
 
@@ -105,15 +108,15 @@ For example, if you do not want to keep the DNS record that you added to your DN
 
 ##### **API parameters**
 
-After you click the API you want, the **Parameters** section allows you to assign variables for its application.
+After you click the API you want, the **Request** section allows you to assign variables for its application.
  
 For example, when adding a TXT record to your DNS zone, you will optimise the following settings:
  	
 ![API](images/parameters.png){.thumbnail} 
  
-Once you have set the parameters, you can launch the API by clicking `Execute`{.action}. 
+Once you have set the parameters, you can launch the API by clicking `TRY`{.action}.
 
-The `Result` tab displayed will give you the API execution report.
+The `Response` tab displayed will give you the API execution report.
 
 ![API](images/result.png){.thumbnail}
 
@@ -134,7 +137,7 @@ You can also add a description of the application and a validity period.
 The `Rights` field allows you to restrict the use of the application to certain APIs. 
 <br> In order to allow all OVHcloud APIs for an HTTP method, put an asterisk (`*`) into the field, as in the following example where the GET method is allowed for all APIs:
 
-![API keys](images/api-keys-ca.png){.thumbnail}
+![API keys](images/api-keys.png){.thumbnail}
 
 After you click `Create keys`{.action}, you will be issued three keys:
 
@@ -176,7 +179,6 @@ Using them will help you to avoid worrying about signing requests, so that you c
 - *Python* : <https://github.com/ovh/python-ovh>
 - *PHP* : <https://github.com/ovh/php-ovh>
 - *Node.js* : <https://github.com/ovh/node-ovh>
-- *Swift* : <https://github.com/ovh/swift-ovh>
 - *C#* : <https://github.com/ovh/csharp-ovh>
 
 Here is an example of how to use the `/me` section to manage your OVHcloud account:
@@ -185,7 +187,6 @@ Here is an example of how to use the `/me` section to manage your OVHcloud accou
 import ovh
 
 # Instantiate. Visit https://ca.api.ovh.com/createToken/?GET=/me
-
 # to get your credentials
 client = ovh.Client(
     endpoint='ovh-eu',

@@ -10,14 +10,14 @@ The OVHcloud vRack (virtual rack) allows multiple servers to be grouped together
 
 **This guide explains how to configure the vRack on two or more dedicated servers.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZA7IsbDdAmc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/ZA7IsbDdAmc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Requirements
 
-- A [vRack](https://www.ovh.co.uk/solutions/vrack/) service activated in your account
-- Two or more [dedicated servers](https://www.ovhcloud.com/en-gb/bare-metal/) (compatible with vRack)
+- A [vRack](/links/network/vrack) service activated in your account
+- Two or more [dedicated servers](/links/bare-metal/bare-metal) (compatible with vRack)
 - Administrative access (sudo) to the server via SSH or RDP
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - A private IP address range of your choice
 
 > [!warning]
@@ -37,7 +37,7 @@ You will be redirected to another page to validate the order, it will take a few
 
 ### Step 2: Adding your servers to the vRack
 
-Once the vRack is activated in your account, go to the `Bare Metal Cloud`{.action} section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), click on `Network`{.action} and open the `vRack`{.action} menu.
+Once the vRack is activated in your account, go to the `Bare Metal Cloud`{.action} section of your [OVHcloud Control Panel](/links/manager), click on `Network`{.action} and open the `vRack`{.action} menu.
 
 Select your vRack from the list to display the list of eligible services. Click on each server you want to add to the vRack and then click the `Add`{.action} button.
 
@@ -60,7 +60,7 @@ You can use any private IP range of your choice and any address within that rang
 
 The network interface names of your servers are not always the same. Whenever used in the following examples, replace NETWORK_INTERFACE with the appropriate interface name.
 
-The sure way to verify the correct interface for the vRack is to check the tab `Network interfaces`{.action} of your server in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). In the table at the bottom, take note of the MAC address which is also the **Name** of the **Private** interface.
+The sure way to verify the correct interface for the vRack is to check the tab `Network interfaces`{.action} of your server in the [OVHcloud Control Panel](/links/manager). In the table at the bottom, take note of the MAC address which is also the **Name** of the **Private** interface.
 
 ![vRack interface](images/private_interface.png){.thumbnail}
 
@@ -70,7 +70,7 @@ Once connected to your server via SSH, you can list your network interfaces with
 ip a
 ```
 
-In the line that begins with ```link ether```, you can verify that this interface matches the **Private** interface listed in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Use this interface name to replace `NETWORK_INTERFACE` in the configurations below (example: `eno2`).
+In the line that begins with ```link ether```, you can verify that this interface matches the **Private** interface listed in your [OVHcloud Control Panel](/links/manager). Use this interface name to replace `NETWORK_INTERFACE` in the configurations below (example: `eno2`).
 
 ```console
 link ether f0:00:00:ef:0e:f0
@@ -213,4 +213,4 @@ Repeat this process for your other server(s) and assign an unused IP address fro
 
 [Creating multiple vLANs in a vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

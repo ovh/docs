@@ -62,13 +62,13 @@ Conéctese a su [área de cliente de OVHcloud](/links/manager) y seleccione `Web
 
 En la parte inferior de la pantalla aparece una tabla con las bases de datos.
 
-![phpMyAdmin Access](images/go-to-phpmyadmin.png){.thumbnail}
+![phpMyAdmin Access](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/go-to-phpmyadmin.png){.thumbnail}
 
 Tenga en cuenta que **para su base de datos saturada**, su `Nombre de usuario` y su `Dirección del servidor` aparecen en la tabla que enumera sus bases de datos. 
 
 En la pestaña `Bases de datos`{.action}, haga clic en el botón `...`{.action} a la derecha de la base de datos que está llena y luego en `Acceder a phpMyAdmin`{.action}.
 
-![phpMyAdmin Go Login](images/pma-interface-login.png){.thumbnail}
+![phpMyAdmin Go Login](/pages/assets/screens/other/web-tools/phpmyadmin/pma-interface-login.png){.thumbnail}
 
 Introduzca los datos de acceso a la base de datos y haga clic en `Conexión`{.action}.
 
@@ -83,11 +83,11 @@ Introduzca los datos de acceso a la base de datos y haga clic en `Conexión`{.ac
 
 Una vez que se haya conectado, se abrirá la siguiente página:
 
-![phpMyAdmin Login](images/pma-main-page.png){.thumbnail}
+![phpMyAdmin Login](/pages/assets/screens/other/web-tools/phpmyadmin/pma-main-page-2.png){.thumbnail}
 
 Haga clic en el botón `"Nombre de la base de datos"`{.action} en la columna izquierda y seleccione `Tamaño`{.action} en la parte superior derecha de la tabla que aparece:
 
-![phpMyAdmin Tablas](images/pma-check-size.png){.thumbnail}
+![phpMyAdmin Tablas](/pages/assets/screens/other/web-tools/phpmyadmin/pma-check-size.png){.thumbnail}
 
 Las tablas más voluminosas aparecen en la parte superior de la tabla. Identifique estas y vaya al **etapa 2**.
 
@@ -162,7 +162,7 @@ Si se trata de una tabla de overquota o de una voluminosa, puede elegir entre **
 
 Puede realizar estas consultas directamente desde la interfaz **phpMyAdmin**, a través de la pestaña `SQL`{.action} :
 
-![phpMyAdmin SQL request](images/pma-sql-menu.png){.thumbnail}
+![phpMyAdmin SQL request](/pages/assets/screens/other/web-tools/phpmyadmin/pma-sql-menu.png){.thumbnail}
 
 - El pedido **DELETE**: 
 
@@ -208,4 +208,4 @@ Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con 
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

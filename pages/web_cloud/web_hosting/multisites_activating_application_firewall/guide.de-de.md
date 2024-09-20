@@ -1,7 +1,7 @@
 ---
 title: "Aktivieren der Web Application Firewall"
 excerpt: "Aktivieren der Web Application Firewall"
-updated: 2021-04-26
+updated: 2024-09-05
 ---
 
 > [!primary]
@@ -22,6 +22,11 @@ Das vorkonfigurierte "Core Rule Set" (CRS) unserer *ModSecurity*, schützt Ihre 
 
 **In dieser Anleitung erfahren Sie, wie Sie die Application Firewall zur verbesserten Sicherheit über Ihr OVHcloud Kundencenter aktivieren.**
 
+> [!primary]
+>
+> Da sich Ihr Webhosting auf einer Shared Hosting Infrastruktur befindet, ist die Änderung der Firewall-Konfigurationseinstellungen nicht verfügbar.
+>
+
 ## Voraussetzungen
 
 - Sie haben ein [Webhosting](/links/web/hosting) in Ihrem OVHcloud Account.
@@ -36,7 +41,7 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und wählen S
 
 Klicken Sie auf den Tab `Allgemeine Informationen`{.action}. Die aktuelle `Globale PHP-Version` Version wird im Bereich **Konfiguration** angezeigt. Klicken Sie auf den Button `...`{.action} und wählen Sie `Konfiguration ändern`{.action}. Wählen Sie im neuen Fenster das Element `Aktuelle Konfiguration ändern`{.action} und klicken Sie auf `Weiter`{.action}.
 
-![managephpconfig](images/application-firewall-step-2.png){.thumbnail}
+![managephpconfig](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/application-firewall-step-2.png){.thumbnail}
 
 Stellen Sie im neuen Fenster sicher, dass die **Application Firewall** auf `aktiviert`{.action} eingestellt ist. Um die Konfiguration zu bestätigen, klicken Sie auf den Button `Bestätigen`{.action}.
 
@@ -44,17 +49,17 @@ Stellen Sie im neuen Fenster sicher, dass die **Application Firewall** auf `akti
 
 Wechseln Sie zum Tab `Multisite`{.action} Ihres Webhostings. Klicken Sie auf den Button `...`{.action} rechts neben der betreffenden Domain und wählen Sie die Option `Domain bearbeiten`{.action}.
 
-![Multisite](images/modify-a-domain.png){.thumbnail}
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-2.png){.thumbnail}
 
 Setzen Sie im Konfigurationsfenster einen Haken bei `Firewall aktivieren`{.action}. Sie können auch die `www`-Subdomain in diese Konfiguration aufnehmen, indem Sie oben die Checkbox anhaken.
 
 Klicken Sie auf `Weiter`{.action} und dann auf `Bestätigen`{.action}, um die Multisite-Einstellungen zu ändern.
 
-![modifydomain](images/modify-a-domain-enable-firewall-step-1.png){.thumbnail}
+![modifydomain](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-enable-firewall-step-1.png){.thumbnail}
 
 ### Aktivierungstask überprüfen
 
-![Multisite](images/firewall-planned.png){.thumbnail}
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ongoing-tasks/firewall-planned.png){.thumbnail}
 
 Die Updates Ihrer Multisite-Konfiguration werden im Tab `Aktuelle Tasks`{.action} aufgeführt (der Status ist zunächst "geplant"). Die Firewall wird aktiv, sobald ihr Update-Task nicht mehr in der Liste angezeigt wird.
 
@@ -62,7 +67,7 @@ Die Updates Ihrer Multisite-Konfiguration werden im Tab `Aktuelle Tasks`{.action
 
 Der Tab `Multisite`{.action} Ihres Webhosting-Angebots zeigt ab, für welche Domainnamen die Firewall-Option aktiviert ist.
 
-![Multisite](images/firewall-enabled.png){.thumbnail}
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/firewall-enabled.png){.thumbnail}
 
 Die angezeigte Tabelle enthält alle Domains, die Ihrem Webhosting Angebot hinzugefügt wurden. In der Spalte "Firewall" wird der Aktivierungsstatus für jede Domain angezeigt.
 
@@ -72,4 +77,4 @@ Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

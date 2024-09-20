@@ -1,7 +1,7 @@
 ---
 title: 'Editar una zona DNS de OVHcloud'
-excerpt: 'Cómo editar una zona DNS desde el área de cliente de OVHcloud'
-updated: 2024-05-22
+excerpt: 'Descubra cómo editar una zona DNS desde el área de cliente de OVHcloud'
+updated: 2024-06-17
 ---
 
 > [!primary]
@@ -10,31 +10,13 @@ updated: 2024-05-22
 
 ## Objetivo
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### Entender el concepto de DNS <a name="understanddns"></a>
+Las siglas **DNS**, que significan **D**omain **N**ame **S**ystem, son un conjunto de elementos (servidores DNS, zonas DNS, etc.) que permiten asociar un dominio a una dirección IP.
 
-La sigla DNS, que significa **D**ominio **N**ame **S**ystem, es un conjunto de elementos que permiten hacer coincidir un dominio con una dirección IP.
+Para más información, consulte nuestras guías "[Todo sobre los servidores DNS](/pages/web_cloud/domains/dns_server_general_information)" y "[Todo sobre la zona DNS](/pages/web_cloud/domains/dns_zone_general_information)"
 
-Por ejemplo, cuando quiere acceder al sitio *mydomain.ovh*, la solicitud se realiza inicialmente por este conjunto DNS, que la aconseja a la dirección IP del servidor que aloja el sitio *mydomain.ovh*.
-
-Habida cuenta de las operaciones que deberá realizar en el área de cliente, es importante diferenciar los **servidores DNS** y la **zona DNS**. ya que la **zona DNS** está configurada en el **servidor DNS**. 
-
-Para más información sobre los **servidores DNS** y sus modificaciones, consulte nuestra guía [Cambiar los servidores DNS de un dominio de OVHcloud](/pages/web_cloud/domains/dns_server_general_information) .
-
-![DNS](images/dns-server.png){.thumbnail}
-
-Si seguimos el ejemplo anterior, cuando escriba *mydomain.ovh*, los **servidores DNS** asociados a este dominio serán interrogados. Estos registros contienen la **zona DNS** del dominio *mydomain.ovh* en la que se indica la dirección IP del alojamiento de *mydomain.ovh*. Así, su navegador puede ver el sitio web *mydomain.ovh* contenido en el alojamiento. Se denomina resolución DNS.
-
-![DNS](images/dns-resolution.gif){.thumbnail}
-
-### La zona DNS 
-
-La zona DNS de un dominio es un archivo de configuración compuesto por **registros**. Estos registros sirven de enlace entre el dominio y los servidores que alojan los servicios de internet, como sitios web (a través del registro A) o direcciones de correo (registro MX).
-
-![DNS](images/dns-zone-mydomain-ovh.png){.thumbnail}
-
-**Esta guía explica cómo editar la zona DNS de OVHcloud desde el área de cliente.**
+**Descubra cómo editar la zona DNS de OVHcloud desde el área de cliente.**
 
 ## Requisitos
 
@@ -46,7 +28,7 @@ La zona DNS de un dominio es un archivo de configuración compuesto por **regist
 >
 > - Si el dominio no utiliza los servidores DNS de OVHcloud, deberá realizar los cambios necesarios desde el panel que le ofrezca el proveedor que gestione la configuración de su dominio.
 > 
-> - Si el dominio está registrado en OVHcloud, compruebe que utiliza nuestra configuración. Para ello, acceda al [área de cliente de OVHcloud](/links/manager){.external}, en la pestaña `Servidores DNS`{.action} del dominio correspondiente.
+> - Si el dominio está registrado con OVHcloud, compruebe que utiliza nuestra configuración. Para ello, acceda a su [área de cliente de OVHcloud](/links/manager) y abra la pestaña `Servidores DNS`{.action} del dominio correspondiente. Si lo necesita, consulte nuestra guía "[Cambiar los servidores DNS de un dominio en OVHcloud](/pages/web_cloud/domains/dns_server_edit)".
 > 
 > En ambos casos, tenga cuidado al cambiar los servidores DNS. La antigua configuración que puede aplicarse a su dominio ya no estará activa si no ha reconfigurado y personalizado previamente la nueva zona DNS de OVHcloud.<br>
 > Solo puede tener una única zona DNS activa a la vez por nombre de dominio.
@@ -60,159 +42,33 @@ La zona DNS de un dominio es un archivo de configuración compuesto por **regist
 >
 > A diferencia del nombre de dominio, para una zona DNS no existe el concepto de propietario, sino de gestión de contactos para una zona DNS de OVHcloud. Si desea cambiar la gestión de su zona DNS a otra cuenta de OVHcloud, siga nuestra guía [Gestionar contactos de servicio](/pages/account_and_service_management/account_information/managing_contacts).
 
-Conéctese al [área de cliente de OVHcloud](/links/manager){.external} en la sección `Web Cloud`{.action}. Haga clic en `Dominios`{.action} y seleccione el dominio correspondiente. A continuación, abra la pestaña `Zona DNS`{.action}.
+Para acceder a la gestión de una zona DNS de OVHcloud, realice las siguientes acciones:
 
-Se mostrará una tabla con un registro DNS asociado a su dominio en OVHcloud para cada línea. Puede filtrar el contenido por tipo de registro o por dominio.
+1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
+2. En la línea situada en la parte superior del área de cliente, haga clic en la pestaña `Web Cloud`{.action}.
+3. En la columna izquierda, haga clic en el menú desplegable `Dominios`{.action}.
+4. Seleccione el dominio o la zona DNS correspondiente.
+5. A continuación, abra la pestaña `Zona DNS`{.action}.
 
-![Zona DNS](images/tab.png){.thumbnail}
+Se mostrará una tabla con un registro DNS asociado a su dominio en OVHcloud para cada línea. Puede filtrar su contenido por tipo de registro o por dominio.
 
-### Los registros DNS
-
-**Editar una zona DNS es una operación delicada.** Una modificación errónea podría, por ejemplo, deshabilitar el acceso al sitio web o la recepción de nuevos mensajes en las direcciones de correo electrónico.
-
-Conocer los distintos tipos de registros le permitirá entender mejor los cambios que debe realizar al editar la zona DNS del dominio. Le invitamos a consultar la siguiente lista. En ella se recogen los objetivos y particularidades de cada registro.
-
-#### Registros de punteo <a name="pointer-records"></a>
-
-Seleccione el registro que desee haciendo clic en cada una de las fichas siguientes.
-
-> [!tabs]
-> **A**
->> **A**ddress <br><br>
->> Conecta un dominio a una dirección IPv4 `X.X.X` (donde las `X` son cifras entre `0` y `255`). Por ejemplo, la dirección IPv4 del servidor en el que está alojado el sitio web.
->>
-> **AAAA** 
->> 4 letras **A**, ya que este registro está codificado en cuatro veces más bits que el puntero **A** histórico<br><br>
->> Conecta un dominio a una dirección IPv6. Por ejemplo, la dirección IPv6 del servidor en el que está alojado el sitio web.
->>
->> > [!primary]
->>
->> > Las direcciones IPv6 se están desplegando progresivamente para paliar la falta de direcciones IPv4 debido a la continua expansión de los usos digitales. La codificación en 128 bits de las direcciones IPv6 permite ofrecer un mayor número de direcciones IP.
->> >
->> > No obstante, si su servidor ya dispone de una IPv4, le recomendamos que dé prioridad al uso de la IPv6.<br>
->> > En efecto, las IPv6 todavía no se han interpretado correctamente en toda la red de internet, lo que puede provocar perturbaciones de visualización o de acceso.
->> >
->>
-> **CNAME**
->> **C**anonical **NAME** <br><br>
->> Utiliza la dirección IP de otro dominio creando un enlace llamado alias. Por ejemplo, si *www.mydomain.ovh* es un alias de *mydomain.ovh*, significa que *www.mydomain.ovh* utilizará la dirección IP de *mydomain.ovh*.
->>
->> > [!alert]
->> >
->> > Un registro TXT que utilice el mismo dominio o subdominio que un registro CNAME perturba el funcionamiento de este último. El registro CNAME solo funcionará parcialmente o en absoluto.
->> >
->>
->> > [!warning]
->> >
->> > Por convenio, los registros CNAME no pueden ser utilizados directamente por un dominio en su propia zona DNS. En efecto, solo el dominio debe apuntar obligatoriamente y directamente a una dirección IP con un registro de tipo A (o AAAA si se trata de una IPv6).
->> >
->> > Para seguir el ejemplo anterior, no podrá crear un registro CNAME para el dominio *mydomain.ovh* en la zona DNS que haya creado para este dominio.
->> > No obstante, podrá crear registros CNAME con todos los subdominios (ejemplos: *subdomain.mydomain.ovh* o *www.mydomain.ovh*) del dominio *mydomain.ovh* en la zona DNS creada para *mydomain.ovh*.
->> >
->> > Si quiere profundizar más técnicamente en este asunto, puede encontrar, al final de esta página, [un caso especial de uso relativo a los CNAME y las zonas DNS creadas para subdominios](#techusecase).
->> >
->>
-> **DNAME**
->> **D**elegation **NAME** <br><br>
->> Permite generar un "alias" para todos los subdominios de un dominio. Este registro evita crear multitud de registros CNAME. De hecho, un registro CNAME redirige independientemente de un solo subdominio a un único destino.
->>
->> Ejemplo: creando un registro DNAME de *mydomain.ovh* a *ovh.com*, todos los subdominios de *mydomain.ovh* (como *dname.mydomain.ovh* y *xxx.mydomain.ovh*) se redirigirán a los subdominios de *ovh.com* (como: *dname.ovh.com* y *xxx.ovh.com*).
->>
->> Dicho de otro modo, el registro DNAME indica que *dname.mydomain.ovh* y *xxx.mydomain.ovh* deben mostrar los resultados de *dname.ovh.com* y *xxx.ovh.com*, respectivamente.
->>
->> > [!warning]
->> > 
->> > En cambio, *mydomain.ovh* como dominio no mostrará el destino del dominio *ovh.com*, ya que el registro DNAME solo es válido para los subdominios de los dominios definidos en el registro DNAME.
->> >
->> > Además, si el subdominio objetivo *xxx.ovh.com* no apunta a ninguna parte, el registro DNAME tampoco mostrará nada para *xxx.mydomain.ovh*.
->> > 
->>
->> > [!success]
->> > 
->> > El registro DNAME suele utilizarse para cambiar el nombre de la empresa. También puede configurarse cuando un usuario dispone de varias extensiones de dominios (.es, .net, .com, .info...) para redirigirlos entre sí fácilmente.
->> >
-> **NS**
->> **N**ame **S**erver<br><br>
->> Define los servidores DNS asociados a su zona DNS. Por ejemplo, si los registros NS de su zona DNS muestran los servidores *dns19.ovh.net* y *ns19.ovh.net*, deberá utilizarlos en la pestaña `Servidores DNS`{.action} del área de cliente de OVHcloud. Para más información, consulte nuestra guía [Cambiar los servidores DNS de un dominio de OVHcloud](/pages/web_cloud/domains/dns_server_general_information).
->>
->> > [!warning]
->> >
->> > Utilice el botón `Cambiar los registros NS de la zona DNS a los servidores DNS externos a OVHcloud en modo de texto`{.action}. Esta zona DNS funciona **únicamente** con servidores DNS de OVHcloud.
->> >
-
-#### Registros de correo <a name="mail-records"></a>
-
-Seleccione el registro que desee haciendo clic en cada una de las fichas siguientes.
-
-> [!tabs]
-> **MX**
->> **M**ail e**X**changer <br><br>Conecta un dominio a un servidor de correo. Por ejemplo, la dirección *10 mx1.mail.ovh.net* corresponde a uno de los servidores de correo de OVHcloud cuando usted dispone de una solución de correo de OVHcloud. Es probable que su proveedor de correo disponga de varios servidores de correo: es necesario crear varios registros MX. Consulte nuestra guía [Añadir un registro MX a la configuración del dominio](/pages/web_cloud/domains/dns_zone_mx).
->>
->> > [!warning]
->> >
->> > En general, le recomendamos que utilice solo uno o más servidores de un mismo proveedor de correo en su zona DNS.
->> > De hecho, si ya tiene servicios de correo con otro proveedor de correo y añade al mismo tiempo (sin sustituir) los servidores de correo de su nuevo proveedor de correo, puede recibir mensajes de correo al azar en uno de sus dos proveedores.
->> > 
-> **SPF**
->> **S**ender **P**olicy **F**ramework <br><br> Permite evitar posibles usurpaciones de identidad en las direcciones de correo electrónico que utilizan su dominio (*spoofing*). Por ejemplo, el registro `v=spf1 include:mx.ovh.ca ~all` indica que solo los servidores de envío asociados a su solución de correo de OVHcloud pueden considerarse legítimos por el servidor de recepción. Puede introducir este registro en forma de registro TXT o a través de nuestro sistema de configuración automática. Para más información, consulte nuestra guía [Añadir un registro SPF a la configuración del dominio](/pages/web_cloud/domains/dns_zone_spf).
->>
-> **DKIM**
->> **D**omain**K**eys **I**dentified **M**ail <br><br>
->> Permite verificar la autenticidad del nombre de dominio del remitente y garantizar la integridad del mensaje de correo electrónico enviado. El registro DKIM se presenta como una clave de varios caracteres. La clave DKIM la proporciona su proveedor de correo electrónico (si esta funcionalidad la ofrece este último). Puede introducirla en forma de registro TXT.
->>
-> **DMARC**
->> **D**omain-based **M**essage **A**uthentication, **R**eporting and **C**onformance <br><br>
->> Contribuye a la autenticación del correo en combinación con los métodos SPF y/o DKIM. Este valor le será dado por su proveedor de correo electrónico (si esta funcionalidad la ofrece este último), estará al menos asociado a un registro SPF o DKIM.
-
-#### Registros extendidos <a name="extented-records"></a>
-
-Seleccione el registro que desee haciendo clic en cada una de las fichas siguientes.
-
-> [!tabs]
-> **TXT**
->> **T**e**XT** <br><br>
->> Permite añadir el valor que desee en formato de texto a la zona DNS del dominio. Este registro suele utilizarse en procesos de verificación, validación o seguridad.
->>
->> > [!warning]
->> > 
->> > El registro TXT está limitado a 255 caracteres. No obstante, en algunos casos puede dividir su valor en varios registros. Cuando el proveedor le pida que introduzca un valor superior al límite de 255 caracteres, deberá ponerse en contacto con su proveedor.
->> >
->> > Este límite no existe si utiliza la funcionalidad "Cambiar al modo de texto" que se [describe a continuación](#txtmod) en esta guía (para usuarios avanzados).
->> > 
->> 
-> **SRV**
->> **S**e**RV**ice resource <br><br>
->> Indica la dirección del servidor que gestiona un servicio como, Por ejemplo, puede indicar la dirección de un servidor SIP o la de un servidor que permite la configuración automática de un cliente de correo.
->>
-> **CAA**
->> **C**ertification **A**uthority **A**uthorization <br><br>
->> Permite indicar las autoridades de certificación autorizadas a emitir certificados SSL para un dominio.
->>
->> > [!warning]
->> >
->> > Si configura una entrada CAA para un dominio, esta configuración también se aplicará a **todos los subdominios** del mismo dominio.
->> >
->> > Si utiliza un certificado SSL Let's Encrypt con su dominio en un alojamiento compartido de OVHcloud y utiliza un registro CAA, este último impedirá la regeneración del certificado SSL Let's Encrypt.
->>
-> **NAPTR**
->> **N**ame **A**uthority **P**oin**T**e**R** <br><br>
->> Utilizado en telecomunicaciones para dirigir una petición emitida desde un terminal móvil hacia un servidor. Puede asociar un registro SRV para generar dinámicamente los URIs (Uniform Resource Identifier) de destino.
->>
-> **LOC**
->> **LOC**ation <br><br>
->> Utilizado para indicar la posición geográfica (especialmente la latitud, la longitud y la altitud).
->>
-> **SSHFP**
->> **S**ecure **SH**ell **F**inger**P**rint <br><br>
->> Utilizado para indicar la huella de una llave pública SSH.
->>
-> **TLSA**
->> **T**ransport **L**ayer **S**ecurity **A**uthentification <br><br>
->> Utilizado para indicar la huella de un certificado SSL/TLS.
+![Zona DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/tab-ca.png){.thumbnail}
 
 ### Editar la zona DNS de OVHcloud de un dominio
 
-Puede editar la zona DNS de OVHcloud de su dominio añadiendo, modificando o eliminando un registro DNS. de dos maneras distintas:
+**Editar una zona DNS es una operación delicada**: una modificación errónea podría, por ejemplo, deshabilitar el acceso al sitio web o la recepción de nuevos mensajes en las direcciones de correo electrónico.
+
+Conocer los distintos registros le permitirá entender mejor los cambios que va a realizar si edita la zona DNS de su dominio.
+
+> [!success]
+>
+> Consulte nuestra guía sobre los [registros DNS](/pages/web_cloud/domains/dns_zone_records) para entender mejor las operaciones DNS.
+>
+> Consulte también nuestra guía relativa a los [subdominios](/pages/web_cloud/domains/domain_create_subdomains) para más información sobre este tema.
+>
+
+Puede editar la zona DNS de OVHcloud de su dominio añadiendo, modificando o eliminando un registro DNS.<br>
+Para ello, puede editar manualmente la zona en modo de texto o utilizar nuestros asistentes de configuración.
 
 #### Editar manualmente el área en modo de texto <a name="txtmod"></a>
 
@@ -221,7 +77,18 @@ Puede editar la zona DNS de OVHcloud de su dominio añadiendo, modificando o eli
 > Solo para usuarios expertos. También debe prestar especial atención a la sintaxis al realizar los cambios.
 > 
 
-En la pestaña `Zona DNS`{.action}, haga clic en `Cambiar al modo de texto`{.action} y siga los pasos que se indican.
+Para modificar una zona DNS de OVHcloud en modo de texto, lleve a cabo las siguientes acciones:
+
+1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
+2. En la línea situada en la parte superior del área de cliente, haga clic en la pestaña `Web Cloud`{.action}.
+3. En la columna izquierda, haga clic en el menú desplegable `Dominios`{.action}.
+4. Seleccione el dominio o la zona DNS correspondiente.
+5. A continuación, abra la pestaña `Zona DNS`{.action}.
+6. A la derecha o debajo de la tabla, haga clic en `Editar en modo de texto`{.action} y siga los pasos que se indican.
+
+> [!warning]
+>
+> No modifique los registros NS de su zona DNS utilizando el botón `Editar en modo de texto`{.action} en servidores DNS externos a OVHcloud. Esta zona DNS funciona **únicamente** con los servidores DNS de OVHcloud.
 
 #### Utilizar nuestros asistentes de configuración
 
@@ -232,101 +99,135 @@ Esta guía solo hace referencia a la configuración a través de nuestros asiste
 > Compruebe que dispone de toda la información que desea modificar en la zona DNS de OVHcloud. Si el cambio se realiza a petición de un proveedor de servicios, este último deberá proporcionarle la lista de elementos que debe modificar.
 >
 
-#### Añadir un nuevo registro DNS
-
-Para añadir un nuevo registro DNS, abra la pestaña `Zona DNS`{.action} del dominio y haga clic en el botón `Añadir un registro`{.action} a la derecha de la tabla. Seleccione el tipo de registro DNS y siga los pasos que se indican.
-
-Compruebe que el registro no exista ya y que no apunte a un destino diferente. Para ello, puede filtrar el contenido de la tabla por tipo de registro o por dominio. Si el registro ya existe, modifíquelo utilizando las operaciones que se describen a continuación.
-
-![Zona DNS](images/add-an-entry.png){.thumbnail}
-
-> Cuando el destino del registro sea una URL, no olvide ponerla en blanco. Si no lo hace, el dominio se añadirá automáticamente al final del destino.
->
-> Ejemplo: quiere crear un registro CNAME de *prueba.mydomain.ovh* hacia *mydomain.ovh*.
->
-> Deberá tener como objetivo *mydomain.ovh.* y no *mydomain.ovh* sin el "." al final.
-
-#### Modificar un registro DNS existente 
-
-Para modificar un registro DNS, abra la pestaña `Zona DNS`{.action} del área de cliente y haga clic en el icono con forma de gráfica...` `{.action} situado a la derecha del registro que quiera modificar. Haga clic en `Editar el registro`{.action} y siga los pasos que se indican.
-
-![Zona DNS](images/modify-record.png){.thumbnail}
-
-#### Eliminar un registro DNS
-
-Para eliminar un registro DNS, abra la pestaña `Zona DNS`{.action} del área de cliente y haga clic en el icono con forma de gráfica...` `{.action} situado a la derecha del registro que quiera eliminar. A continuación, haga clic en `Eliminar la entrada`{.action} y siga los pasos que se indican.
-
-Puede borrar varias entradas de una vez marcándolas desde la parte izquierda de la tabla y haciendo clic en el botón `Eliminar`{.action}.
-
-![Zona DNS](images/delete-record.png){.thumbnail}
-
-#### Restaurar la zona DNS
-
-Restaurar la zona DNS permite retornar a una configuración mínima, con las entradas de OVHcloud por defecto o las de sus servicios. También puede apuntar su dominio hacia servicios de alojamiento web y de correo personalizados .
-
-> [!alert]
->
-> Antes de reiniciar la zona DNS, asegúrese de que el dominio no está asociado a servicios que esté utilizando, como un sitio web o direcciones de correo electrónico.
->
-
-En la pestaña `Zona DNS`{.action}, haga clic en `Restaurar mi zona DNS`{.action} y siga los dos pasos que se indican.
-
-![dnszone](images/reset-my-dns-zone.png){.thumbnail}
-
-**Etapa 1**
-
-Responda a la pregunta «¿Quiere activar los registros mínimos al restaurar la zona DNS? ». Establecer los registros mínimos en una zona DNS evita que una consulta al nombre de dominio provoque un error.
-
-- `Sí, quiero restaurar mi zona DNS con los registros mínimos`
-- `No, pero quiero restaurar mi zona DNS`
-
-**Etapa 2**
-
-Independientemente de cuál sea su elección en el etapa 1, es necesario definir una respuesta cuando se pregunta a su nombre de dominio para evitar una respuesta DNS en error.
-
-Seleccione ambas opciones haciendo clic en las fichas siguientes.
-
 > [!tabs]
-> **Dirección IP de su alojamiento**
->> - `Redirection`: su dominio apuntará hacia el servidor de redirección de OVHcloud. Esto permite mostrar una página de inicio de OVHcloud y así evitar un error DNS.<br>
->> - `Alojamiento web de OVHcloud`: Su dominio apuntará a la dirección IP del alojamiento web asociado al dominio.<br>
->> - `Personalizado`: defina el valor IPv4 ([registro A](#pointer-records)) del alojamiento web que quiera apuntar.<br><br>
->> ![dnszone](images/dns-zone-reset-01.png){.thumbnail}
+> **Añadir un nuevo registro DNS**
 >>
-> **Dirección de su servidor mail**
->> - `Redirection`: su dominio apuntará a los servidores de redirecciones de correo. Esta elección. Es especialmente útil si no tiene ninguna solución de correo, pero desea reenviar los mensajes hacia una o varias direcciones de correo fuera de su nombre de dominio.<br>
+>> Para agregar un nuevo registro DNS, realice las siguientes acciones:
+>>
+>> 1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
+>> 2. En la línea situada en la parte superior del área de cliente, haga clic en la pestaña `Web Cloud`{.action}.
+>> 3. En la columna izquierda, haga clic en el menú desplegable `Dominios`{.action}.
+>> 4. Seleccione el dominio o la zona DNS correspondiente.
+>> 5. A continuación, abra la pestaña `Zona DNS`{.action}.
+>> 6. A la derecha o debajo de la tabla, haga clic en `Añadir un registro`{.action} y siga los pasos que se indican.
+>>
+>> Compruebe que este registro no existe y que no apunta a un destino diferente. Para ello, filtre el contenido de la tabla por tipo de registro o por dominio. Si el registro ya existe, modifíquelo mediante el procedimiento que se indica a continuación.
+>>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/add-an-entry-ca.png){.thumbnail}
+>>
+>> > Cuando el destino de la grabación sea una dirección URL, no olvide puntuarla. De lo contrario, su dominio se añadirá automáticamente al final de su objetivo.
+>> >
+>> > **Ejemplo**: quiere crear un registro CNAME de `test.mydomain.ovh` hacia `mydomain.ovh`.
+>> >
+>> > Debe tener como objetivo `mydomain.ovh.` y no `mydomain.ovh` sin el **.** al final.
+>>
+> **Modificar un registro DNS existente**
+>>
+>> Para editar un registro DNS, realice las siguientes acciones:
+>>
+>> 1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
+>> 2. En la línea situada en la parte superior del área de cliente, haga clic en la pestaña `Web Cloud`{.action}.
+>> 3. En la columna izquierda, haga clic en el menú desplegable `Dominios`{.action}.
+>> 4. Seleccione el dominio o la zona DNS correspondiente.
+>> 5. A continuación, abra la pestaña `Zona DNS`{.action}.
+>> 6. En la tabla que aparece, haga clic en el icono con forma de `...`{.action} a la derecha de la entrada correspondiente.
+>> 7. A continuación, haga clic en `Editar el registro`{.action} y siga los pasos que se indican.
+>>
+>> ![Zona DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/modify-record-ca.png){.thumbnail}
+>>
+> **Eliminar un registro DNS**
+>>
+>> Para eliminar un registro DNS, lleve a cabo las siguientes acciones:
+>>
+>> 1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
+>> 2. En la línea situada en la parte superior del área de cliente, haga clic en la pestaña `Web Cloud`{.action}.
+>> 3. En la columna izquierda, haga clic en el menú desplegable `Dominios`{.action}.
+>> 4. Seleccione el dominio o la zona DNS correspondiente.
+>> 5. A continuación, abra la pestaña `Zona DNS`{.action}.
+>> 6. En la tabla que aparece, haga clic en el icono con forma de `...`{.action} a la derecha de la entrada correspondiente.
+>> 7. A continuación, haga clic en `Eliminar el registro`{.action} y siga los pasos que se indican.
+>>
+>> Puede eliminar varias entradas de una vez marcándolas en la parte izquierda de la tabla y haciendo clic en el botón `Eliminar`{.action}.
+>>
+>> ![Zona DNS](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/delete-record-ca.png){.thumbnail}
+>>
+> **Restaurar la zona DNS**
+>>
+>> Restaurar la zona DNS permite retornar a una configuración mínima, con las entradas de OVHcloud por defecto o las de sus servicios. También puede apuntar su dominio hacia servicios de alojamiento web y de correo personalizados .
+>>
+>> > [!alert]
+>> >
+>> > Antes de reiniciar la zona DNS, asegúrese de que el dominio no está asociado a servicios que esté utilizando, como un sitio web o direcciones de correo electrónico.
+>> >
+>>
+>> Para restaurar la zona DNS, lleve a cabo las siguientes acciones:
+>>
+>> 1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
+>> 2. En la línea situada en la parte superior del área de cliente, haga clic en la pestaña `Web Cloud`{.action}.
+>> 3. En la columna izquierda, haga clic en el menú desplegable `Dominios`{.action}.
+>> 4. Seleccione el dominio o la zona DNS correspondiente.
+>> 5. A continuación, abra la pestaña `Zona DNS`{.action}.
+>> 6. A la derecha o debajo de la tabla, haga clic en `Restaurar mi zona DNS`{.action} y siga los dos pasos que se indican.
+>>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/reset-my-dns-zone-ca.png){.thumbnail}
+>>
+>> **Etapa 1**
+>>
+>> Responda a la pregunta «¿Quiere activar los registros mínimos al restaurar la zona DNS? ». Establecer los registros mínimos en una zona DNS evita que una consulta al nombre de dominio provoque un error.
+>>
+>> - `Sí, quiero restaurar mi zona DNS con los registros mínimos`
+>> - `No, pero quiero restaurar mi zona DNS`
+>>
+>> **Etapa 2**
+>>
+>> Independientemente de cuál sea su elección en el etapa 1, es necesario definir una respuesta cuando se pregunta a su nombre de dominio para evitar una respuesta DNS en error.
+>>
+>> Seleccione ambas opciones haciendo clic en las fichas siguientes.
+>>
+>> **Dirección IP de su alojamiento**
+>>
+>> - `Redirección`: su dominio apuntará hacia el servidor de redirección de OVHcloud. Esto permite mostrar una página de inicio de OVHcloud y así evitar un error DNS.<br>
+>> - `Alojamiento web de OVHcloud`: Su dominio apuntará a la dirección IP del alojamiento web asociado al dominio.<br>
+>> - `Personalizado`: defina el valor IPv4 ([registro A](/pages/web_cloud/domains/dns_zone_records#pointer-records)) del alojamiento web que quiera apuntar.<br><br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-reset-01.png){.thumbnail}
+>>
+>> **Dirección de su servidor mail**
+>>
+>> - `Redirección`: su dominio apuntará a los servidores de redirecciones de correo. Esta elección. Es especialmente útil si no tiene ninguna solución de correo, pero desea reenviar los mensajes hacia una o varias direcciones de correo fuera de su nombre de dominio.<br>
 >> - `Servidor de correo de OVHcloud`: Por definir al contratar un servicio de correo en alojamiento compartido.<br>
->> - `Personalizado`: defina la URL y la prioridad del servidor de correo electrónico ([registro MX](#mail-records)) que quiera apuntar.<br><br>
->> ![dnszone](images/dns-zone-reset-01.png){.thumbnail}
+>> - `Personalizado`: defina la URL y la prioridad del servidor de correo electrónico ([registro MX](/pages/web_cloud/domains/dns_zone_records#mail-records)) que quiera apuntar.<br><br>
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/dns-zone-reset-02.png){.thumbnail}
 >>
 
 ### El tiempo de propagación
 
 Una vez que haya editado la zona DNS del dominio, los cambios tardarán un máximo de 24 horas en propagarse y ser efectivos.
 
-Si quiere reducir este plazo en las próximas ediciones de la zona DNS de OVHcloud, puede modificarlo hasta cierto punto adaptando el TTL (*Time To Live*) que se aplicará a todos los registros de la zona DNS.
-Para ello, abra la pestaña `Zona DNS`{.action} del área de cliente, haga clic en el botón `TTL por defecto`{.action} y siga los pasos que se indican. 
+Si quiere reducir este plazo en las próximas ediciones de la zona DNS de OVHcloud, puede hacerlo, hasta cierto punto, ajustando el TTL (*Time To Live*) aplicable a todos los registros de la zona DNS. Realice las siguientes acciones:
+
+1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
+2. En la línea situada en la parte superior del área de cliente, haga clic en la pestaña `Web Cloud`{.action}.
+3. En la columna izquierda, haga clic en el menú desplegable `Dominios`{.action}.
+4. Seleccione el dominio o la zona DNS correspondiente.
+5. A continuación, abra la pestaña `Zona DNS`{.action}.
+6. A la derecha o debajo de la tabla, haga clic en el botón `TTL por defecto`{.action} y siga los pasos que se indican.
 
 También puede modificar el TTL de un registro DNS. Sin embargo, esta operación solo puede realizarse en un registro, modificándolo o añadiéndolo.
 
-### Caso particular de uso: el uso de los registros CNAME <a name="techusecase"></a>
-
-Algunos usuarios crean zonas DNS directamente para el subdominio de un dominio (por ejemplo, *subdominio-con-su-zona-DNS.mydomain.ovh*). La regla [anteriormente](#cname) explicada en esta guía también se aplica en este caso. 
-
-La zona DNS está creada para el subdominio (en nuestro ejemplo, *subdominio con su propia zona DNS.mydomain.ovh*), por lo que este último está considerado como un dominio de pleno derecho en su zona DNS.
-
-Así pues, en este caso concreto no podrá crear un registro CNAME para un *subdominio con su propia zona DNS.mydomain.ovh* en la zona DNS que haya creado para dicho subdominio. No obstante, puede crear registros CNAME como *subdominio.subdominio-con-su-zona-DNS.mydomain.ovh* o *xxx.subdominio-con-su-propia-zona-DNS.mydomain.ovh*.
-
 ## Más información
 
-[Cambiar los servidores DNS de un dominio en OVHcloud](/pages/web_cloud/domains/dns_server_general_information){.external}
+[Todo sobre los servidores DNS](/pages/web_cloud/domains/dns_server_general_information)
+
+[Todo sobre la zona DNS](/pages/web_cloud/domains/dns_zone_general_information)
+
+[Todo sobre los registros DNS](/pages/web_cloud/domains/dns_zone_records)
 
 [Añadir un registro SPF a la configuración del dominio](/pages/web_cloud/domains/dns_zone_spf){.external}
 
 [Proteja su dominio contra el «cache poisoning» con el servicio DNSSEC](/pages/web_cloud/domains/dns_dnssec){.external}
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
-
+ 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
-
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+ 
+Interactúe con nuestra [comunidad de usuarios](/links/community).

@@ -1,7 +1,7 @@
 ---
 title: "Configura il reverse DNS di un'istanza Public Cloud"
 excerpt: Come impostare la risoluzione reverse DNS
-updated: 2021-11-12
+updated: 2024-06-10
 ---
 
 > [!primary]
@@ -20,21 +20,23 @@ Configurare la risoluzione **Reverse DNS** di un'istanza è particolarmente util
 
 - Disporre di un'[istanza Public Cloud](https://www.ovhcloud.com/it/public-cloud/) sul proprio account OVHcloud
 - Un dominio con il suo record `A` che punta verso l'istanza
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), accedi alla sezione `Bare Metal Cloud`{.action}, apri il menu `Network`{.action} e clicca su `IP`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager), accedi alla sezione `Bare Metal Cloud`{.action} e apri `Network`{.action}. Clicca su `IP`{.action}.
 
-La tabella di questa pagina contiene i tuoi servizi compatibili. L'ID del tuo progetto Public Cloud può essere filtrato utilizzando il menu a tendina **Service**.
+Il menu a tendina sotto **I miei indirizzi IP pubblici e servizi associati** permette di filtrare i tuoi servizi per categoria.
 
-![Reverse DNS](images/reversecp01.png){.thumbnail}
+![Reverse IP](images/filterippci.png){.thumbnail}
 
 Clicca sui tre puntini `...`{.action} nella riga dell'indirizzo IP in questione e seleziona `Modifica il reverse`{.action}.
 
-![Reverse DNS](images/reversecp02.png){.thumbnail}
+![Reverse DNS](images/modifyreversepc.png){.thumbnail}
 
 Nella nuova finestra, inserisci il reverse e clicca su `Conferma`{.action}.
+
+![Reverse DNS](images/enterreverse.png){.thumbnail}
 
 Potrai anche modificare il reverse direttamente tramite l'icona della colonna **Reverse** della tabella.
 
@@ -47,4 +49,4 @@ Se la modifica non funziona come previsto, verifica che il record `A` sia config
 
 [Creare una prima istanza Public Cloud e connettersi](/pages/public_cloud/compute/public-cloud-first-steps)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

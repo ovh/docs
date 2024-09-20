@@ -54,7 +54,7 @@ Segui gli step successivi per il salvataggio del metodo di pagamento. Al primo s
 
 > [!warning]
 >
-> - L'utilizzo del prelievo bancario è possibile solo per i conti clienti francesi, tedeschi, spagnoli, irlandesi, italiani e olandesi.
+> - L'utilizzo del prelievo bancario è possibile solo per i conti clienti francesi, belgi, tedeschi, spagnoli, irlandesi, italiani e olandesi.
 >
 > - Il titolare del conto bancario deve corrispondere al proprietario dell'account OVHcloud.
 

@@ -1,7 +1,7 @@
 ---
-title: "MX Plan - Utilizar o webmail Zimbra"
+title: "Utilizar o webmail Zimbra"
 excerpt: "Descubra a interface do webmail Zimbra para os endereços de e-mail MX Plan da OVHcloud"
-updated: 2024-03-11
+updated: 2024-08-26
 ---
 
 > [!primary]
@@ -54,6 +54,9 @@ A OVHcloud fornece um serviço de webmail chamado Zimbra para aceder a uma conta
     - [Gestão das pastas](#contacts-folders)
     - [Gestão das listas](#contacts-lists)
     - [Importar / Exportar contactos](#import-export)
+- [Calendário](#calendar)
+    - [Gestão de calendários](#calendar-management)
+    - [Tarefas](#tasks)
 - [Filtros](#filters)
     - [Compreender como configurar os seus filtros](#filters-howto)
     - [Criar um filtro](#filters-creation)
@@ -289,6 +292,31 @@ A sua interface Zimbra dispõe de 2 menus de configuração:
 >>
 >> Para configurar os filtros, consulte a secção "[Filtros](#filters)" deste manual.
 >>
+> **Calendário e lembretes**
+>>
+>> Encontre aqui as configurações ligadas aos seus [calendários](#calendar).
+>>
+>> **Definições gerais do calendário**
+>>
+>> - **Calendário predefinido** - defina o calendário padrão usado ao criar um evento em seus calendários.
+>> - **Início da semana**: o dia que aparece em primeiro lugar na grelha do seu calendário.
+>> - **Início do dia útil** : a hora que aparece no topo da amplitude horária apresentada.
+>> - **Fim do dia útil** : a hora que aparece na parte inferior da amplitude horária apresentada.
+>> - **Fuso horário do dia útil** utilizado para os seus calendários.
+>> - **Ao criar ou editar eventos** : Mostrar os fusos horários para as horas de início e de fim.
+>> - **Compartilhar**: `Ativar a delegação para os clientes CALDav`. Esta opção permite-lhe gerir os seus calendários através de um software que suporte o protocolo CALdav.
+>> - **Eventos recusados**: ver um evento no calendário, mesmo que tenha sido recusado.
+>>
+>> **Lembretes de eventos**
+>>
+>> - **Envie lembretes por e-mail para**: enviar lembretes de eventos para um endereço de correio eletrónico.
+>> - **Mostrar notificações do navegador**: ser notificado pelo seu browser para eventos.
+>> - **Mostrar lembretes para eventos em atraso**: O tempo de lembrete predefinido aplicado quando ativado num evento.
+>> - **Mostrar lembretes para eventos em atraso**: continuar a enviar lembretes após um evento.
+>>
+>> **Permissão de Ocupação Livre**
+>>
+>> - **Permissão para** : este parâmetro diz unicamente respeito ao estado de disponibilidade associado aos calendários do seu endereço de e-mail. Isto significa que poderá partilhar o seu estado « Ocupado » ou « Disponível » com outros endereços de e-mail.
 
 ### Contactos <a name="contacts"></a>
 
@@ -359,6 +387,72 @@ Selecione um dos dois separadores seguintes:
 >> Clique em `Exportar`{.action} para abrir a janela de exportação. Escolha o tipo de ficheiro que deseja exportar e depois clique em `Exportar agora`{.action}.<br><br>
 >> ![Zimbra - Exportar](images/zimbra-20.png){.thumbnail}
 >>
+
+### Calendário <a name="calendar"></a>
+
+Clique no ícone `calendário` na barra superior para aceder ao livro de contactos. Este está dividido em **3 partes**:
+
+- **(1) Lista dos calendários** (à esquerda) : faça a gestão dos seus diferentes calendários e subcalendários.
+- **(2) Conteúdo dos calendários** (no centro) : visualize o conteúdo dos calendários e subcalendários selecionados.
+- **(3) Lista de tarefas** (à direita) : faça a gestão das suas tarefas e listas de tarefas.
+
+![Zimbra - calendar](images/zimbra-calendar-view.png){.thumbnail}
+
+#### Gestão dos calendários <a name="calendar-management"></a>
+
+Por predefinição, na lista `Os meus calendários`, tem um `Calendário` criado por predefinição. Este calendário padrão não pode ser excluído, mas você verá que é possível criar seus próprios calendários no próximo parágrafo.
+
+##### 1- Criar um calendário <a name="calendar-add-calendar"></a>
+
+- **(1)** : Para criar um calendário, passe o seu cursor para as `Os meus calendários` na coluna da esquerda e clique no botão `+`. Introduza um nome e defina uma cor e depois clique em `Guardar`{.action}.
+
+Também é possível criar subcalendários.
+
+- **(2)**: Para criar um subcalendário, passe o cursor sobre o calendário para o qual pretende criar um e clique com o botão direito do rato para apresentar o menu suspenso. Clique em `Adicionar subcalendário`{.action}. Introduza um nome e defina uma cor e depois clique em `Guardar`{.action}.
+
+![Zimbra - calendar](images/zimbra-calendar-add.png){.thumbnail .w-400}
+
+##### 2- Adicionar um evento <a name="calendar-add-event"></a>
+
+- **(1)** : Clique em `Novo evento`{.action} no canto superior esquerdo.
+- **(2)** : Clique no intervalo horário do seu calendário no qual deseja adicionar um evento. Para uma adição simplificada, basta definir um título para o evento e um local e clicar em `Guardar`{.action}. Para adicionar mais detalhes sobre o seu evento, clique em `Adicionar mais detalhes`{.action}.
+
+![Zimbra - calendar](images/zimbra-calendar-event-add-01.png){.thumbnail .w-400}
+
+- **Início** : a data e a hora de início do seu evento. Se você marcar `Dia inteiro`, você não terá hora de início e fim para introduzir, pois todo o dia será levado em conta.
+- **Fim** : a data e a hora de fim do evento.
+- **Repetir**:  se se tratar de um evento recorrente, defina a sua frequência.
+- **Localização** : o local onde o evento irá ocorrer, como por exemplo, o nome de uma sala de reuniões.
+- **Equipamento** : ao clicar em `Ver equipamento`{.action}, faz surgir esta linha para definir um equipamento partilhado que vai utilizar para o seu evento.
+- **Convidados** : endereços de e-mail dos participantes do evento.
+- **Observações** : mensagem a enviar aos convidados do evento.
+- **Lembrar** : ser avisado antes do início do evento.
+- **Mostrar como** : definir se o evento torna os seus convidados disponíveis ou indisponíveis durante o seu desenrolar.
+- **Calendário** : definir a que calendário é associado o evento.
+
+Depois de definir o evento, clique em `Guardar`{.action}.
+
+![Zimbra - calendar](images/zimbra-calendar-event-add-02.png){.thumbnail .w-400}
+
+##### 3- Alterar um evento <a name="calendar-modify-event"></a>
+
+#### Tarefas <a name="tasks"></a>
+
+As tarefas são itens dissociados dos seus calendários. O objetivo é apresentar uma lista de tarefas que devem ser executadas sem que tenha de incluir uma data de execução ou uma data de expiração. Estas tarefas são complementares aos calendários.
+
+A lista « Tarefas » existe por predefinição e não pode ser eliminada, mas pode criar as suas próprias listas de tarefas.
+
+- **(1)** : Para criar uma tarefa, clique no botão `...`{.action} e, a seguir, em `Nova tarefa`{.action} ou simplesmente no botão `+`{.action} ao lado da sua lista de tarefas.
+
+- **(2)** : Para criar uma nova lista de tarefas, clique no botão `...`{.action} e, a seguir, em `Criar lista...`{.action}.
+
+![Zimbra - calendar](images/zimbra-calendar-task-01.png){.thumbnail .w-400}
+
+Ao criar uma tarefa, você pode definir uma data de vencimento e uma prioridade para que você possa classificá-las de acordo com sua importância, além de um menu suspenso para selecionar a lista de tarefas correspondente.
+
+De seguida, clique em `Guardar`{.action} para finalizar a criação da sua tarefa.
+
+![Zimbra - calendar](images/zimbra-calendar-task-02.png){.thumbnail .w-400}
 
 ### Filtros <a name="filters"></a>
 

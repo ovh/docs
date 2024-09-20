@@ -66,7 +66,7 @@ Wenn das Problem gelöst ist, können Sie Ihre IP-Adresse entsperren, indem Sie 
 
 #### Ihre IP-Adresse über das Kundencenter entsperren
 
-Gehen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) in den Bereich `Bare Metal Cloud`{.action} und klicken Sie auf `Network`{.action}. Klicken Sie dann auf `IP`{.action}.
+Gehen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) in den Bereich `Bare Metal Cloud`{.action} und klicken Sie auf `Network`{.action}. Klicken Sie dann auf `IP`{.action}.
 
 Klicken Sie im gelben Hinweisfeld auf den Drop-down-Pfeil `Alle Benachrichtigungen anzeigen`{.action}, um alle Alarme bezüglich Ihrer IP-Adresse(n) anzuzeigen.
 

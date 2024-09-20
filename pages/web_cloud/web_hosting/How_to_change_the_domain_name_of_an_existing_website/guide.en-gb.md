@@ -68,7 +68,7 @@ There are several conditions to meet for this part:
 
 If all of your actions have been correctly performed, the multisite declarations for your domains must be identical **unless you are using a paid SSL certificate such as *Sectigo DV*, *Sectigo EV* or *custom***.
 
-![multisites](images/all-domain-same-config-enable.png){.thumbnail}
+![multisites](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/all-domain-same-config-enable.png){.thumbnail}
 
 > [!primary]
 >
@@ -148,4 +148,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

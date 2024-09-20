@@ -1,7 +1,7 @@
 ---
 title: 'Alterar a palavra-passe de um endereço de e-mail'
 excerpt: 'Saiba como alterar a palavra-passe de um endereço de e-mail da OVHcloud'
-updated: 2023-01-03
+updated: 2024-06-18
 ---
 
 ## Objetivo
@@ -77,7 +77,7 @@ A modificação da sua palavra-passe através do webmail está disponível para 
 > A oferta **Emails MXplan (versão histórica)** utiliza o webmail Roundcube, a alteração da password faz-se unicamente [através da Área de Cliente](#controlpanel).
 >
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Aceda à página "[Webmail](https://www.ovhcloud.com/pt/mail/)". Indique o seu endereço de e-mail completo e a respetiva palavra-passe. De seguida, clique no botão `Ligação`{.action}. 
 
@@ -99,6 +99,14 @@ Na nova janela, comece por indicar a sua palavra-passe atual. A seguir, escreva 
 >
 
 ![email](images/mxplan-password-new-step5.png){.thumbnail}
+
+### Recuperar uma palavra-passe
+
+Por razões de segurança e de confidencialidade, não é possível **recuperar** uma palavra-passe. Como descrito nos passos anteriores, é necessário reinicializar a sua palavra-passe se não a conhecer mais.
+
+> [!primary]
+>
+> Se pretender armazenar uma palavra-passe, é aconselhável utilizar um gestor de palavra-passe, como, por exemplo, **Keepass**.
 
 #### Identifique a sua oferta MXplan <a name="whichmxplan"></a>
 

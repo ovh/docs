@@ -18,11 +18,11 @@ Un **nom de domaine** est composé de niveaux. Ces niveaux sont eux-mêmes gén�
     - Les **new** **g**eneric **T**op **L**evel **D**omains (**new gTLDs**), nouvelles extensions créées à partir de 2012 par l'**I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) afin de répondre à la forte hausse des demandes de création de noms de domaine. Elles peuvent correspondre à des thèmes génériques, des marques, des régions ou des villes. Par exemple, les extensions *.love*, *.ovh* ou encore *.paris* sont des new gTLDs.
     - Les **Corp**oration **T**op **L**evel **D**omains (**CorpTLDs**). Il s'agit en réalité d'une sous catégorie des new GTLDs. Sur demande auprès de l'ICANN, les entreprises ou organisations peuvent demander la création de leur propre TLD. Par exemple, l'extension *.ovh* est une CorpTLD créée par OVHcloud il y a quelques années.
 
-- **S**econd **L**evel **D**omain (**SLD**) représente les domaines de *deuxième niveau*. Nous les appelons plus communément les **labels**. Lorsque vous commandez un nom de domaine, c'est le labelque vous pouvez définir librement (sous réserve que celui-ci n'ait pas déjà été enregistré par un autre utilisateur sur la même extension et dans la limite de 63 caractères). Par exemple, *ovhcloud* correspond au label du nom de domaine *ovhcloud.com*.
+- **S**econd **L**evel **D**omain (**SLD**) représente les domaines de *deuxième niveau*. Nous les appelons plus communément les **labels**. Lorsque vous commandez un nom de domaine, c'est le label que vous pouvez définir librement (sous réserve que celui-ci n'ait pas déjà été enregistré par un autre utilisateur sur la même extension et dans la limite de 63 caractères). Par exemple, *ovhcloud* correspond au label du nom de domaine *ovhcloud.com*.
 
 - Third Level Domain (**subdomain**). C'est à partir de ce troisième niveau que l'on parle de **sous-domaine**. Nous allons détailler sa définition dans ce guide et vous expliquer comment le mettre en place avec vos différents services.
 
-![URL content](images/url-composition.png){.thumbnail}
+![URL content](/pages/assets/schemas/domains/url-composition.png){.thumbnail}
 
 **Découvrez les sous-domaines et comment en créer chez OVHcloud.**
 
@@ -84,14 +84,14 @@ Deux cas de figure sont possibles :
 >
 > La zone DNS active de votre nom de domaine n'est pas obligatoirement gérée auprès du même fournisseur que votre nom de domaine.
 >
-> 1 : Pour identifier l'endroit où se trouve la zone DNS active d'un nom de domaine enregistré chez OVHcloud, vous pouvez vous aider de notre guide « [Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_general_information) ».
+> 1 : Pour identifier l'endroit où se trouve la zone DNS active d'un nom de domaine enregistré chez OVHcloud, vous pouvez vous aider de notre guide « [Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_edit) ».
 >
 > 2 : Si votre nom de domaine n'est pas enregistré chez OVHcloud, rapprochez-vous du *bureau d'enregistrement* actuel de votre nom de domaine afin de connaître l'endroit où est hébergée sa zone DNS active. Sachez que vous pouvez utiliser notre guide « [Transférer son nom de domaine vers OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain) » si vous souhaitez réaliser cette action.
 >
 
 Si les serveurs DNS déclarés pour votre nom de domaine ont l'une des deux formes suivantes :
 
-- `dnsXX.ovh.net` et `nsXX.ovh.net` (où chacun des « X » représente un chiffre)
+- `dnsXX.ovh.ca` et `nsXX.ovh.ca` (où chacun des « X » représente un chiffre)
 - `dns200.anycast.me` et `ns200.anycast.me`
 
 Cela signifie que la zone DNS active de votre nom de domaine est bien active chez OVHcloud.
@@ -161,7 +161,7 @@ Pour plus de détails sur la configuration d'une plateforme Exchange, consultez 
 
 [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-[Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
+[Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_edit)
 
 [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)
 
@@ -175,4 +175,4 @@ Pour des prestations spécialisées (référencement, développement, etc), cont
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

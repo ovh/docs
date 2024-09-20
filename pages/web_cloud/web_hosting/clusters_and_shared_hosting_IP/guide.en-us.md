@@ -344,7 +344,7 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 |France|FR|213.186.33.3|2001:41d0:1:1b00:213:186:33:3|
 |Ireland|IE|188.165.7.3|2001:41d0:1:1b00:188:165:7:3|
 |Portugal|PT|94.23.79.3|2001:41d0:1:1b00:94:23:79:3|
-||United Kingdom|UK|87.98.255.3|2001:41d0:1:1b00:87:98:255:3|
+|United Kingdom|UK|87.98.255.3|2001:41d0:1:1b00:87:98:255:3|
 |Italy|IT|94.23.64.3|2001:41d0:1:1b00:94:23:64:3|
 |Spain|ES|87.98.231.3|2001:41d0:1:1b00:87:98:231:3|
 |Poland|PL|87.98.239.3|2001:41d0:1:1b00:87:98:239:3|
@@ -781,4 +781,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](/
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

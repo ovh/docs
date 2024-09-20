@@ -1,7 +1,7 @@
 ---
 title: SSH-Schlüssel erstellen und verwenden
 excerpt: Erfahren Sie hier, wie Sie SSH-Schlüssel auf Ihrem lokalen Gerät konfigurieren und für eine sichere Verbindung zu Ihrem Server verwenden
-updated: 2023-11-22
+updated: 2024-06-26
 ---
 
 > [!primary]
@@ -18,8 +18,8 @@ Dies ist in der Regel die sicherste und bequemste Verbindungsmethode.
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) oder einen [VPS](https://www.ovhcloud.com/de/vps/) in Ihrem Kunden-Account.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+- Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) oder einen [VPS](https://www.ovhcloud.com/de/vps/) in Ihrem Kunden-Account.
 - Sie haben eine SSH-Client-Anwendung installiert (Befehlszeile oder GUI).
 - Sie haben administrativen Zugang (sudo) über SSH auf Ihren Server.
 
@@ -36,6 +36,8 @@ Beachten Sie auch unsere Anleitungen zu "Ersten Schritten": <a name="getstarted"
 - Für einen [VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
 
 Lesen Sie auch die Einführung zum [SSH Protokoll](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
+
+<a name="create-ssh-key"></a>
 
 ### SSH-Schlüsselpaar erzeugen
 
@@ -82,22 +84,8 @@ ssh-keygen -t ed25519 -a 256
 Die Befehlszeile fordert Sie auf, den neu erstellten Schlüssel in der Standarddatei zu speichern:
 
 ```console
-Your identification has been saved in /home/user/.ssh/id_rsa.
-Your public key has been saved in /home/user/.ssh/id_rsa.pub.
-The key fingerprint is:
-SHA256:MRk+Y0zCOoOkferhkTvMpcMsYspj212lK7sEauNap user@hostname
-The key's randomart image is:
-+---[RSA 4096]----+
-|     .. o        |
-|    . .= o       |
-|   o o  X        |
-|. . . .          |
-|. .=.o .S.       |
-| =o.o.  .   .    |
-|o +   .  . o ..  |
-|.. .  .   oEoo . |
-|o.        .o+oo  |
-+----[SHA256]-----+
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/user/.ssh/id_rsa):
 ```
 
 Bestätigen Sie mit `Enter`, um den vorgeschlagenen Dateinamen zu akzeptieren oder geben Sie einen individuellen Namen ein. Dies ist sinnvoll, wenn mehrere Schlüsselpaare im Verzeichnis `.ssh` platziert werden. Weitere Informationen hierzu finden Sie im Abschnitt "[Verwaltung mehrerer SSH-Schlüssel auf Ihrem lokalen Gerät](#multiplekeys)" in dieser Anleitung.<br>
@@ -192,17 +180,17 @@ Wenn `PuTTY` noch nicht installiert ist (sehen Sie in Ihrer Anwendungsliste nach
 
 Öffnen Sie `PuTTYgen`, und wählen Sie einen der unterstützten Verschlüsselungsalgorithmen aus. In diesem Beispiel wird RSA verwendet. Geben Sie in der rechten unteren Ecke 4096 als Anzahl von Bits ein, und klicken Sie auf die Schaltfläche `Generate`{.action}.
 
-![PuTTy Key](images/puttygen_01.png){.thumbnail}
+![PuTTy Key](/pages/assets/screens/other/web-tools/putty/puttygen_01.png){.thumbnail}
 
 Bewegen Sie den Mauszeiger frei im Bereich unter der Statusanzeige:
 
-![PuTTy Key](images/puttygen_02.gif){.thumbnail}
+![PuTTy Key](/pages/assets/screens/other/web-tools/putty/puttygen_02.gif){.thumbnail}
 
 Der Schlüssel ist bereit, sobald die Statusanzeige voll ist.
 
-![PuTTy Key](images/puttygen_03.png){.thumbnail}
+![PuTTy Key](/pages/assets/screens/other/web-tools/putty/puttygen_03.png){.thumbnail}
 
-Kopieren Sie die vollständige Schlüsselzeichenfolge in die Zwischenablage, um sie [zum Server hinzufügen](#addserverkey) und optional [in Ihr Kundencenter importieren](#importkey). Speichern Sie beide Schlüssel als Dateien, indem Sie auf die entsprechenden Schaltflächen klicken. Geben Sie eine Passphrase ein, um die Dateien abzusichernn.
+Kopieren Sie die vollständige Schlüsselzeichenfolge in die Zwischenablage, um sie [zum Server hinzufügen](#addserverkey). Speichern Sie beide Schlüssel als Dateien, indem Sie auf die entsprechenden Schaltflächen klicken. Geben Sie eine Passphrase ein, um die Dateien abzusichern.
 
 > [!warning]
 >
@@ -303,7 +291,7 @@ Speichern Sie die Datei, und schließen Sie den Editor.
 
 ### Verwaltung mehrerer SSH-Schlüssel auf Ihrem lokalen Gerät <a name="multiplekeys"></a>
 
-Sie können mehrere SSH-Schlüsselpaare verwenden, um Verbindungen zu verschiedenen Remote-Hosts herzustellen. Wenn Sie `PuTTY` verwenden, fahren Sie mit dem[entsprechenden Abschnitt unten](#puttykeys) fort.
+Sie können mehrere SSH-Schlüsselpaare verwenden, um Verbindungen zu verschiedenen Remote-Hosts herzustellen. Wenn Sie `PuTTY` verwenden, fahren Sie mit dem [entsprechenden Abschnitt unten](#puttykeys) fort.
 
 Da alle Schlüssel im Ordner `.ssh` auf dem lokalen Gerät gespeichert werden sollten, müssen die Dateinamen unterschiedlich sein. Wenn Sie [ein neues Schlüsselpaar erstellen](#createnewkey) und nach einem Dateinamen gefragt werden, geben Sie eine individuelle Bezeichnung ein, etwa Ihrem Servernamen entsprechend.
 
@@ -333,7 +321,7 @@ Wie in den vorherigen Abschnitten beschrieben, funktionieren dieselben Anweisung
 
 Die Alternative zum Hinzufügen der Option `-i` zu jedem Befehl besteht darin, eine Datei mit dem Namen `config` im Ordner `~/.ssh` zu bearbeiten (`\Users\Username\.ssh` für **Windows**). Hier können Sie die Details Ihrer verschiedenen Verbindungen konfigurieren (Benutzername, Port, Schlüsseldatei, optionale Parameter, etc.)
 
-Wenn diese Datei in `.ssh` vorhanden ist, enthält sie wahrscheinlich bereits Verbindungenseinstellungen. Je nach Ihrer Arbeitsumgebung sollten Sie dann eine Sicherungskopie der Originaldatei erstellen.
+Wenn diese Datei in `.ssh` vorhanden ist, enthält sie wahrscheinlich bereits Verbindungseinstellungen. Je nach Ihrer Arbeitsumgebung sollten Sie dann eine Sicherungskopie der Originaldatei erstellen.
 
 Beispiel für den Ordnerinhalt von `.ssh`:
 
@@ -392,7 +380,7 @@ Wenn Sie die Anweisungen unter "[SSH-Schlüsselpaar mit PuTTY erstellen](#useput
 
 Öffnen Sie `PuTTY` und klappen Sie den Unterabschnitt `SSH` im linken Menü auf und klicken Sie auf `Auth` und `Credentials`.
 
-![PuTTy Key](images/puttygen_04.png){.thumbnail}
+![PuTTy Key](/pages/assets/screens/other/web-tools/putty/puttygen_04.png){.thumbnail}
 
 Klicken Sie auf die Schaltfläche `Browse`{.action} und wählen Sie die Datei mit dem privaten Schlüssel `PuTTY` (`keyfile.ppk`) in dem Ordner aus, in dem Sie sie gespeichert haben.
 
@@ -400,7 +388,7 @@ Die Schlüsseldatei ist nun der aktuellen SSH-Sitzung zugeordnet. Wechseln Sie i
 
 Geben Sie unter `Saved Sessions` einen Namen für diese Verbindung ein, und klicken Sie auf `Save`{.action}, um sie zur Liste hinzuzufügen.
 
-![PuTTy Key](images/puttygen_05.png){.thumbnail}
+![PuTTy Key](/pages/assets/screens/other/web-tools/putty/puttygen_05.png){.thumbnail}
 
 Sie können ab sofort auf diesen `Session`-Eintrag klicken um eine Verbindung zu Ihrem Server herzustellen. Zum Testen klicken Sie auf `Open`{.action}. Wenn Sie die Schlüsseldatei mit einer Passphrase geschützt haben, geben Sie diese hier ein.
 
@@ -410,55 +398,6 @@ Um eine weitere Serververbindung einzurichten, wiederholen Sie die folgenden Sch
 - [Den öffentlichen Schlüssel zu Ihrem Server hinzufügen](#addserverkey).
 - [Details des Servers eingeben und die Schlüsseldatei zu `PuTTY` hinzufügen](#puttykeys).
 
-### SSH-Schlüssel in das Kundencenter importieren <a name="importkey"></a>
-
-Im OVHcloud Kundencenter können Sie öffentliche Schlüssel speichern, wenn diese mit einem der unterstützten Verschlüsselungstypen erstellt wurden. Diese Funktion kann Ihnen bei der Konfiguration oder Neuinstallation eines neuen Servers Zeit sparen, da Sie [den öffentlichen Schlüssel nicht manuell zu Ihrem Server hinzufügen](#addserverkey) müssen. 
-
-Öffnen Sie die seitliche Navigationsleiste, indem Sie oben rechts auf Ihren Namen klicken und die Verknüpfung `Produkte und Dienstleistungen`{.action} verwenden.
-
-![SSH-Schlüsselverwaltungsbereich](images/SSH_keys_panel_2022.png){.thumbnail}
-
-Gehen Sie in `Meine Dienste` auf den Tab `SSH-Schlüssel`{.action} und klicken Sie auf `SSH-Schlüssel hinzufügen`{.action}.
-
-![SSH-Schlüsselverwaltungsbereich](images/SSH_keys_panel_2.1.png){.thumbnail}
-
-Wählen Sie im Drop-down-Menü die Option `Dedicated` aus.
-
-Geben Sie im neuen Fenster eine Kennung (einen Namen Ihrer Wahl) für den Schlüssel ein. Fügen Sie die Schlüsselzeichenfolge (kopiert aus [Ihrer `.pub`-Datei](#publickey) oder aus dem [`PuTTYgen`-Fenster)](#useputty) in das `Key`-Feld ein).
-
-![SSH-Schlüsselverwaltungsbereich](images/SSH_keys_panel_3.png){.thumbnail}
-
-Wenn Sie die vollständige Ausgabe kopiert haben, sollte die Benutzer-Information hinter dem Schlüssel bereits angefügt sein. Beachten Sie, dass Sie zum Import Ihres Schlüssels nach der Zeichenfolge eine (lokale) Benutzer-Identifikation angeben müssen. (Siehe oben stehendes Beispielformat.) Dies ist eine Anforderung des OVHcloud Kundencenters. Klicken Sie auf `Bestätigen`{.action}, um Ihren öffentlichen Schlüssel zu speichern.
-
-> [!primary]
->
-> Alle unter `Dedicated` registrierten Schlüssel sind zur Vorinstallation auf einem Dedicated Server oder VPS verfügbar. Informationen zu SSH-Schlüsseln für Public-Cloud-Dienste finden Sie in [dieser Anleitung](/pages/public_cloud/compute/public-cloud-first-steps).
->
-
-### Standard-SSH-Schlüssel festlegen (nur für den Bereich "Dedicated") <a name="cpsshkey"></a>
-
-Wenn Sie in Ihrem OVHcloud Kundencenter mehrere SSH-Schlüssel hinzugefügt haben, können Sie einen auswählen, der als Standardschlüssel für den Account verwendet werden soll. 
-
-> [!warning]
-> Hinweis: Sobald der Standardschlüssel festgelegt ist, wird er auch als Verbindungsmethode verwendet, wenn ein Server im Rescue-Modus neu gestartet wird. Um stattdessen ein Kennwort zu erhalten, muss der Standardschlüssel [deaktiviert](#disablesshkey) sein, bevor der Server im Rescue-Modus neu gestartet wird. Weitere Informationen hierzu finden Sie im Abschnitt [Weiterführende Informationen](#gofurther) dieser Anleitung.
-> 
-
-Öffnen Sie die seitliche Navigationsleiste, indem Sie oben rechts auf den Namen Ihres Accounts klicken und die Verknüpfung `Produkte und Dienstleistungen`{.action} verwenden, um zum Bereich `SSH-Schlüssel`{.action} zu gelangen.
-
-![SSH-Schlüsselverwaltungsbereich](images/SSH_keys_panel_2022.png){.thumbnail}
-
-Klicken Sie in der Liste auf das `Schlüssel`-Symbol neben dem gewünschten SSH-Schlüssel, um diesen als Standardschlüssel festzulegen.
-
-![SSH-Schlüsselverwaltungsbereich](images/defaultsshkey.png){.thumbnail}
-
-Sobald dies erfolgt ist, wird eine Meldung angezeigt, die bestätigt, dass der Schlüssel als Standard eingestellt wurde, und das `Schlüssel`-Symbol wird hervorgehoben.
-
-![SSH-Schlüsselverwaltungsbereich](images/defaultsshkey1.png){.thumbnail}
-
-### Standard-SSH-Schlüssel <a name="disablesshkey"></a> deaktivieren
-
-Um den aktuellen **Standard**-SSH-Schlüssel zu deaktivieren, gehen Sie wie oben beschrieben in den Bereich `SSH-Schlüssel`{.action}. Klicken Sie auf das blaue `Schlüssel`-Symbol neben dem entsprechenden SSH-Schlüssel, um diese Einstellung zu ändern.
-
 ## Weiterführende Informationen <a name="gofurther"></a> 
 
 [Einführung SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
@@ -467,6 +406,6 @@ Um den aktuellen **Standard**-SSH-Schlüssel zu deaktivieren, gehen Sie wie oben
 
 [Rescue-Modus für VPS](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
-Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](https://www.ovhcloud.com/de/professional-services/), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
+Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 
 Werden Sie Mitglied unserer User Community auf <https://community.ovh.com/en/>.

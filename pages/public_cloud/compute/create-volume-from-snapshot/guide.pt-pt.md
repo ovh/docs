@@ -22,7 +22,7 @@ Tal pode ser útil nos seguintes casos:
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
 - Ter uma [instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external} na sua conta OVHcloud.
 - Ter um backup de disco na mesma região OpenStack.
 - Ter acesso à instância via SSH enquanto administrador (sudo).
@@ -31,7 +31,7 @@ Tal pode ser útil nos seguintes casos:
 
 ### Criar o disco a partir de um backup
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), aceda à secção `Public Cloud`{.action} e selecione o projeto Public Cloud em questão. A seguir, clique em `Volume Snapshot`{.action} na barra de navegação da esquerda, na `secção Storage`.
+Aceda à [Área de Cliente OVHcloud](/links/manager), aceda à secção `Public Cloud`{.action} e selecione o projeto Public Cloud em questão. A seguir, clique em `Volume Snapshot`{.action} na barra de navegação da esquerda, na `secção Storage`.
 
 À direita do backup à sua escolha, clique no botão `...`{.action} e em `Criar um volume`{.action}.
 

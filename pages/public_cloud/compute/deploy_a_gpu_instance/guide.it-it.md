@@ -1,25 +1,28 @@
 ---
 title: 'Creare un’istanza GPU'
 excerpt: 'Scopri come creare un’istanza GPU con Linux o Windows'
-updated: 2019-12-06
+updated: 2024-07-17
 ---
+
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
+>
 
 ## Obiettivo
 
-Le istanze GPU sono tecnicamente simili alle istanze della gamma 2017, con la differenza che dispongono di una scheda grafica (Graphic Processing Unit o GPU). La tecnologia utilizzata (*pci_passthrough*) permette al sistema operativo dell’istanza di controllare la GPU esattamente come su una macchina fisica.
-
-Le GPU proposte da OVHcloud sono NVIDIA Tesla V100. 
+Le istanze GPU sono tecnicamente simili alle istanze della gamma 2017 ma dispongono anche di una scheda grafica (Graphic Processing Unit o GPU). La tecnologia utilizzata (*pci_passthrough*) permette al sistema operativo dell’istanza di controllare la GPU esattamente come su una macchina fisica.
 
 > [!warning]
 >
-> Per il momento, le istanze GPU sono disponibili soltanto nei datacenter di GRA3, GRA5, GRA7 e BHS3. Per poter utilizzare queste istanze, probabilmente sarà necessario creare un nuovo progetto selezionando la nuova gamma 2017.
+> Per il momento, la maggior parte delle nostre istanze GPU precedenti (Tesla V100 and V100s) sono disponibili solo nelle Region GRA7, GRA9, GRA11 e BHS5. I modelli più recenti (A100, H100, L4 and L40s) sono attualmente disponibili solo nell'area GRA11.
 > 
 
 **Questa guida ti mostra come creare un’istanza GPU con Linux o Windows.**
 
 ## Prerequisiti
 
-- Aver creato un progetto Public Cloud con accesso alle Region in cui sono disponibili le istanze GPU (GRA3, GRA5, GRA7 e BHS3)
+- Aver creato un progetto Public Cloud con accesso alle Region in cui è disponibile la maggior parte delle GPU (GRA7, GRA9, GRA11 e BHS5).
+- [Una chiave SSH](/pages/public_cloud/compute/creating-ssh-keys-pci) creata per implementare un’istanza GPU Linux.
 
 ## Procedura
 
@@ -35,22 +38,20 @@ Tutte le immagini proposte da OVHcloud sono compatibili con le istanze GPU.
 > Se preferisci non compilare manualmente il modulo del kernel, ti consigliamo di utilizzare una distribuzione ufficialmente supportata da Nvidia e per la quale esistono dei driver *pronti all’uso*: <https://developer.nvidia.com/cuda-downloads>
 > 
 
-Una volta connesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, accedi al tuo progetto Public Cloud, clicca su `Crea un’istanza`{.action} e seleziona un’istanza GPU:
+Una volta connesso allo [Spazio Cliente OVHcloud](/links/manager), clicca sulla scheda `Public Cloud`{.action}. Seleziona il tuo progetto Public Cloud e clicca su `Instances`{.action} nel menu a sinistra sotto la scheda **Compute**. Clicca su `Crea un’istanza`{.action} e seleziona un’istanza GPU compatibile:
 
-![/public-cloud](images/gpu.png){.thumbnail}
+![public-cloud](images/GPU-Flavors_2024.png){.thumbnail}
 
-Quindi, seleziona il sistema operativo Linux da utilizzare:
+Segui gli step rimanenti, come descritto in [questa guida](/pages/public_cloud/compute/public-cloud-first-steps#create-instance). Questo processo potrebbe richiedere alcuni minuti.
 
-![/public-cloud](images/linuxchoice.png){.thumbnail}
-
-L’istanza si avvierà nel giro di pochi secondi,  dopodiché potrai effettuare la connessione e verificare la presenza della scheda grafica:  
+Una volta consegnata l’istanza, è possibile collegarsi ad essa e verificare la presenza della scheda grafica:
 
 ```bash
 lspci | grep -i nvidia
 00:05.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 PCIe 16GB] (rev a1)
 ```
 
-Poiché la scheda grafica è presente ma non ancora utilizzabile è necessario installare il driver NVIDIA. Puoi consultare la lista dei pacchetti disponibili cliccando su questo [link](http://developer.download.nvidia.com/compute/cuda/repos/){.external}.
+La scheda grafica è presente ma non ancora utilizzabile. A questo punto, è necessario installare i driver NVIDIA. La lista dei pacchetti è disponibile al seguente indirizzo: [Lista dei pacchetti Linux disponibili](https://developer.download.nvidia.com/compute/cuda/repos/){.external}.
 
 Successivamente, inserisci i seguenti comandi:
 
@@ -96,25 +97,66 @@ Da questo momento l’istanza GPU è pienamente operativa e pronta per essere ut
 ### Windows
 
 A causa di alcune incompatibilità tra il driver Nvidia e la soluzione di virtualizzazione *KVM/pci_passthrough*, **le immagini Windows standard non funzionano.**
-OVHcloud fornisce immagini speciali, basate su un BIOS virtuale UEFI, che permettono al driver di funzionare correttamente (valide solo per le istanze G1, G2 e G3 - gamma 2017 e meno recenti)
+OVHcloud fornisce immagini speciali, basate su un BIOS virtuale UEFI, che permettono al driver di funzionare correttamente:
 
-Una volta connesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, accedi al tuo progetto Public Cloud, clicca su `Crea un’istanza`{.action} e seleziona un’istanza GPU:
+![public-cloud](images/EN-WindowsImages_2024.png){.thumbnail}
 
-![/public-cloud](images/gpu.png){.thumbnail}
+> [!warning]
+>
+> Offriamo la possibilità di installare le immagini speciali su alcuni modelli selezionati (T1-45, T1-90, T1-180, T2-45, T2-90, T2-180). Inoltre, a seconda della regione selezionata, queste immagini speciali potrebbero non essere disponibili.
+>
 
-Quindi seleziona il sistema operativo Windows da utilizzare: 
+Una volta connesso al [tuo Spazio Cliente OVHcloud](/links/manager), accedi al tuo progetto Public Cloud e clicca su `Instances`{.action} nel menu a sinistra sotto la scheda **Compute**. Clicca su `Crea un’istanza`{.action} e seleziona un’istanza GPU compatibile:
 
-![/public-cloud](images/oschoice.png){.thumbnail}
+![public-cloud](images/GPU-Flavors_2024.png){.thumbnail}
 
-Dopo aver avviato l’istanza GPU, è necessario installare il driver NVIDIA dal [sito ufficiale](https://www.nvidia.com/Download/index.aspx){.external}.
+Nel passaggio successivo, vai alla scheda `Distribuzioni Windows` e clicca sulla freccia a discesa per selezionare l’immagine Windows compatibile:
 
-Avvia un’istanza utilizzando uno dei flavor GPU (t1-45, t1-90, t1-180...). L’istanza si avvierà nel giro di pochi minuti.
+![public-cloud](images/EN-WindowsImages_2024.png){.thumbnail}
+
+Segui gli step rimanenti, come descritto in [questa guida](/pages/public_cloud/compute/public-cloud-first-steps#create-instance). Questo processo potrebbe richiedere alcuni minuti.
+
+#### Connettersi a un’istanza Windows
+
+Una volta creata l’istanza, è necessario completare l’installazione di Windows (_sysprep_). Per farlo, clicca sul pulsante con i tre puntini `...`{.action} e quindi su `Dettagli dell’istanza`{.action}. Clicca sulla scheda `Console VNC`{.action}. La console dovrebbe già mostrare l’interfaccia di installazione.
+
+![windows sysprep](images/windows-connect-01.png){.thumbnail}
+
+Nel primo step, scegli i parametri di localizzazione, selezionando la regione, la lingua e il layout della tastiera. Clicca su `Avanti`{.action} per continuare.
+
+![windows sysprep](images/windows-connect-02.png){.thumbnail}
+
+Il secondo step richiede la configurazione dell’account predefinito "Administrator". Inserisci la tua passphrase per due volte e clicca su `Finish`{.action} per completare il processo di installazione. Clicca sul simbolo dell'occhio per controllare se tutti i caratteri inseriti nei campi corrispondono alla configurazione effettiva della tua tastiera.
+
+L’istanza si riavvierà e sarà possibile accedere con queste credenziali tramite un client Desktop remoto. 
+
+##### **Da Windows**
+
+Se necessario, utilizza Windows Search e apri l’applicazione client “Remote Desktop Connection”. 
+
+![windows remote](/pages/assets/screens/other/windows/windows_rdp.png){.thumbnail}
+
+Inserisci l’indirizzo IPv4 della tua istanza e seleziona l’utente “Amministrator”. A questo punto, inserisci la tua passphrase. Trattandosi di un certificato sconosciuto, potresti visualizzare un messaggio di avviso per confermare la connessione. Clicca `Sì`{.action} per accedere all’istanza.
+
+> [!primary]
+>
+> In caso di difficoltà, verifica che il tuo dispositivo autorizzi la connessione RDP. Per farlo, controlla le impostazioni di sistema, le regole del firewall e le eventuali limitazioni della rete.
+>
+
+Una volta connesso all’istanza, è necessario installare il driver NVIDIA dal [sito ufficiale](https://www.nvidia.com/Download/index.aspx){.external}.
 
 Non ti resta che installare il driver necessario, che successivamente comparirà qui:
 
 ![/public-cloud](images/driverson.png){.thumbnail}
 
 ![/public-cloud](images/devicemanager.png){.thumbnail}
+
+> [!warning]
+>
+> Non siamo in grado di garantire che la soluzione funzionerà con tutte le versioni future del driver NVIDIA.
+>
+> Prima di effettuare qualsiasi aggiornamento del driver NVIDIA, ti consigliamo di effettuare uno Snapshot della tua istanza, per ripristinare l’immagine all’occorrenza.
+>
 
 ## Per saperne di più
 

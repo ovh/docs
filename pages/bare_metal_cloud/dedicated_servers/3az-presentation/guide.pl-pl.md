@@ -10,7 +10,7 @@ updated: 2024-05-30
 
 ## Wprowadzenie
 
-OVHcloud oferuje usługi Bare Metal w regionie 3-AZ, stanowiącym istotny postęp w strategii regionalizacji firmy. Usługa ta, dostępna w aglomeracji paryskiej, wyznacza nowy standard w branży, jeśli chodzi o niezawodność i wydajność serwerów Bare Metal.
+OVHcloud oferuje usługi Bare Metal w [regionie 3-AZ](/links/bare-metal/regions), stanowiącym istotny postęp w strategii regionalizacji firmy. Usługa ta, dostępna w aglomeracji paryskiej, wyznacza nowy standard w branży, jeśli chodzi o niezawodność i wydajność serwerów Bare Metal.
 
 Serwery Bare Metal w regionie 3-AZ są odpowiedzią na potrzeby klientów, którzy w swoich planach ciągłości działania potrzebują wysokiej dostępności i redundancji. Usługa ta zapewnia serwery Bare Metal w trzech centrach danych w pobliżu Paryża, podłączone do sieci o szybkim czasie odpowiedzi. Zapewnia większe bezpieczeństwo, lepszą wydajność i nieprzerwaną pracę nawet w przypadku lokalnych awarii.
 

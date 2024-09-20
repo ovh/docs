@@ -37,7 +37,7 @@ Tuttavia, se la configurazione non viene effettuata correttamente, l’installaz
 
 ### Il dominio non è stato proposto durante la creazione del "modulo in 1 click"
 
-![domainenotproposed](images/domain-unavailable.png){.thumbnail}
+![domainenotproposed](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/domain-unavailable.png){.thumbnail}
 
 Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna di sinistra e seleziona l’hosting Web interessato dall’installazione. Nella nuova pagina clicca sulla scheda `Multisito`{.action} ed effettua le seguenti verifiche:
 
@@ -48,7 +48,7 @@ Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.a
 
 ### "Si è verificato un errore durante il caricamento delle informazioni (You need at least one free database)"
 
-![No databases available](images/message-no-db-available.png){.thumbnail}
+![No databases available](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/message-no-db-available.png){.thumbnail}
 
 Questo messaggio viene visualizzato quando si avvia l’installazione del "modulo in 1 click" quando non si ha o non si ha più la possibilità di creare un nuovo database associato al proprio hosting Web.
 
@@ -58,7 +58,7 @@ Se con il tuo hosting Web non sono più inclusi database, puoi ordinare un nuovo
 
 Nel tuo [Spazio Cliente OVHcloud](/links/manager), accedi alla sezione `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna di sinistra e seleziona l’hosting Web per cui vuoi aggiungere un database supplementare. Clicca sulla scheda `Database`{.action} e poi su `Azioni`{.action} per ordinare un database aggiuntivo:
 
-![order_a_database](images/order-a-db.png){.thumbnail}
+![order_a_database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/order-a-db.png){.thumbnail}
 
 Una volta terminato, sarà possibile installare un nuovo "modulo in 1 click".
 
@@ -76,7 +76,7 @@ Una volta terminato, sarà possibile installare un nuovo "modulo in 1 click".
 
 Nel tuo [Spazio Cliente OVHcloud](/links/manager), clicca su `Web Cloud`{.action}. Clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Nella pagina visualizzata nella sezione `Abbonamento` - `Servizio`, clicca sul pulsante `...`{.action} `Modifica offerta`{.action}:
 
-![upgrade_hosting](images/upgrade-perso.png){.thumbnail}
+![upgrade_hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/upgrade-perso.png){.thumbnail}
 
 Le offerte [Pro](/links/web/hosting-professional-offer) e [Performance](/links/web/hosting-performance-offer) permettono di creare fino a tre "moduli in 1 click" supplementari con un database indipendente per ciascuno di essi. Le offerte **Performance** ti permettono di attivare gratuitamente un server [Web Cloud Databases](/links/web/databases).
 
@@ -93,7 +93,7 @@ Per eliminare un database dallo [Spazio Cliente OVHcloud](/links/manager), acced
 
 Clicca sulla scheda `Database`{.action}. Nella tabella che appare, clicca sul pulsante `...`{.action} a destra della riga corrispondente al database che vuoi eliminare e poi su `Elimina il database`{.action}:
 
-![delete_a_database](images/sharedsql-deletion.png){.thumbnail}
+![delete_a_database](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/sharedsql-deletion.png){.thumbnail}
 
 Una volta terminato, sarà possibile installare un nuovo "modulo in 1 click".
 
@@ -111,19 +111,19 @@ Una volta terminato, sarà possibile installare un nuovo "modulo in 1 click".
 >
 > In questa situazione, è possibile salvare i dati di un solo sito Web utilizzando uno [script PHP o un comando SSH](/pages/web_cloud/web_hosting/sql_database_export).
 >
-> Per maggiori informazioni sulle operazioni da effettuare, contatta la [Community OVHcloud](https://community.ovh.com/en/) o uno dei nostri [partner](/links/partner).<br>
+> Per maggiori informazioni sulle operazioni da effettuare, contatta la [Community OVHcloud](/links/community) o uno dei nostri [partner](/links/partner).<br>
 > Non saremo in grado di fornirti assistenza.
 >
 
 ### Il "modulo in 1 click" viene visualizzato su un indirizzo Web di tipo "xxxxx.cluster0xx.hosting.ovh.net"
 
-![url-cluster](images/url-cluster.png){.thumbnail}
+![url-cluster](/pages/assets/screens/other/browsers/urls/url-cluster.png){.thumbnail}
 
 Dopo aver effettuato tutti i backup necessari, [elimina il "modulo in 1 click"](#delete-the-module) e poi il suo [database](#delete-the-database). Riavvia l’installazione del "modulo in 1 click" sul dominio scelto.
 
 ### "La directory di installazione non è vuota"
 
-![folder_not_empty](images/folder-not-empty.png){.thumbnail}
+![folder_not_empty](/pages/assets/screens/email-sending-to-customer/webhosting/folder-not-empty.png){.thumbnail}
 
 Dopo aver avviato la creazione del "modulo in 1 click", hai ricevuto un’email che ti informa che la directory di installazione del "modulo in 1 click" non è vuota.
 
@@ -131,7 +131,7 @@ Questo messaggio indica che la **Cartella di root** associata al dominio contien
 
 Per associare un dominio a un’altra directory, accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca su `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna di sinistra e seleziona il nome dell’hosting Web interessato. Clicca sulla scheda `Multisito`{.action}. Nella tabella che appare, clicca sul pulsante `...`{.action} a destra della riga corrispondente al tuo dominio e poi clicca su `Modifica il dominio`{.action}. Infine, inserisci il nome di una nuova **Cartella di root** (verrà creata automaticamente una directory vuota sul tuo hosting Web).
 
-![modify_root_folder](images/modify-domain.png){.thumbnail}
+![modify_root_folder](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain.png){.thumbnail}
 
 È inoltre possibile accedere all’hosting Web tramite il protocollo [FTP](/pages/web_cloud/web_hosting/ftp_connection) e quindi eliminare il contenuto della cartella. Dopo averlo salvato localmente o dopo averlo svuotato spostando tutto il suo contenuto in un'altra directory FTP.
 
@@ -145,7 +145,7 @@ Per verificare questa configurazione, consulta la nostra guida "[Modificare la c
 
 ### "Si è verificato un errore durante il caricamento delle informazioni (There is not enough space on your hosting (you need at least xxx MB)"
 
-![not_enough_space](images/message-not-enough-ftp-space.png){.thumbnail}
+![not_enough_space](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/message-not-enough-ftp-space.png){.thumbnail}
 
 Questo messaggio indica che lo [spazio di storage FTP](/pages/web_cloud/web_hosting/ftp_connection) del tuo hosting Web comporta un volume di dati troppo elevato. 
 
@@ -157,7 +157,7 @@ In questo caso, [accedi in FTP](/pages/web_cloud/web_hosting/ftp_connection) al 
 
 > [!primary]
 >
-> Per informazioni sulla cancellazione dei dati al fine di ridurre la quantità di dati sull’hosting Web, contatta la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](/links/partner).<br>
+> Per informazioni sulla cancellazione dei dati al fine di ridurre la quantità di dati sull’hosting Web, contatta la nostra [Community di utenti](/links/community) o i [partner OVHcloud](/links/partner).<br>
 > Il supporto OVHcloud non è autorizzato a fornirti assistenza.
 >
 
@@ -170,13 +170,13 @@ In questo caso, [accedi in FTP](/pages/web_cloud/web_hosting/ftp_connection) al 
 
 Nel tuo [Spazio Cliente OVHcloud](/links/manager), accedi alla sezione `Web Cloud`{.action}. Clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Nella pagina visualizzata nella sezione `Abbonamento` - `Servizio`, clicca sul pulsante `...`{.action} `Modifica offerta`{.action}:
 
-![upgrade_hosting](images/upgrade-perso.png){.thumbnail}
+![upgrade_hosting](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/upgrade-perso.png){.thumbnail}
 
 Le offerte [Pro](/links/web/hosting-professional-offer) e [Performance](/links/web/hosting-performance-offer) permettono di creare fino a tre "moduli in 1 click" supplementari con un database indipendente per ciascuno di essi. Le offerte **Performance** ti permettono di attivare gratuitamente un server [Web Cloud Databases](/links/web/databases).
 
 ### "Impossibile connettersi al database" <a name="delete-the-module"></a>
 
-![wrong_id_database](images/db-connection-failed.png){.thumbnail}
+![wrong_id_database](/pages/assets/screens/email-sending-to-customer/databases/db-connection-failed.png){.thumbnail}
 
 Dopo aver avviato l’installazione del "modulo in 1 click" in modalità avanzata, ricevi un’email che indica che il "modulo in 1 click" non può connettersi al database indicato.
 
@@ -184,7 +184,7 @@ ed è quindi necessario verificare gli identificativi del database. Per trovarli
 
 Elimina il "modulo in 1 click". Per farlo, accedi al tuo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna di sinistra e seleziona il nome dell’hosting Web interessato. Clicca sulla scheda `CMS in 1 click`{.action}. Nella tabella che appare, clicca sul pulsante `...`{.action} a destra della riga corrispondente al tuo dominio e poi clicca su `Elimina un modulo`{.action}.
 
-![delete_a_module](images/delete-a-module.png){.thumbnail}
+![delete_a_module](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/1-click-modules/delete-a-module-2.png){.thumbnail}
 
 > [!warning]
 >
@@ -197,7 +197,7 @@ Riavvia l’installazione del "modulo in 1 click".
 
 ### "You have insufficient rights on this database".
 
-![insufficient_rights](images/db-insufficient-rights.png){.thumbnail}
+![insufficient_rights](/pages/assets/screens/email-sending-to-customer/databases/db-insufficient-rights.png){.thumbnail}
 
 Questo messaggio viene visualizzato solo quando si installa un "modulo in 1 click" in **modalità avanzata**. Impossibile modificare il database perché la quantità di dati in esso contenuti supera il limite consentito. In questo caso, il database è bloccato in sola lettura.
 
@@ -209,13 +209,13 @@ Se non disponi di altri database e non vuoi ordinare un piano aggiuntivo, [impor
 >
 > **Eliminare elementi dal database può causare l'interruzione del sito Web.**
 >
-> Per ulteriori informazioni, contatta la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](/links/partner).<br>
+> Per ulteriori informazioni, contatta la nostra [Community di utenti](/links/community) o i [partner OVHcloud](/links/partner).<br>
 > Non saremo in grado di fornirti assistenza.
 >
 
 ### "Can't connect to database 'xxxxxxxx' at 'xxxxxx-xxx.eu.clouddb.ovh.net'. The error is: Access denied for user 'xxxx'@'xxxxxxxx' (using password: YES)"
 
-![cant_connect](images/db-cant-connect-access-denied.png){.thumbnail}
+![cant_connect](/pages/assets/screens/email-sending-to-customer/databases/db-cant-connect-access-denied.png){.thumbnail}
 
 Hai avviato l’installazione di un "modulo in 1 click" in [modalità avanzata](/pages/web_cloud/web_hosting/cms_install_1_click_modules) su un database situato su un server [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). Questo messaggio di errore è stato ricevuto via email. Significa che l’utente indicato al momento dell’installazione non dispone dei diritti sufficienti sul database o che gli identificativi indicati non sono corretti.
 
@@ -225,7 +225,7 @@ Verifica le credenziali di accesso [accedi direttamente](/pages/web_cloud/web_cl
 
 ### "Can't connect to database 'xxxxxxxx' at 'xxxxxxxx.mysql.db'. The error is: Unknown MySQL server host 'xxxxxxxx.mysql.db'"
 
-![cant_connect_server](images/db-cant-connect-server.png){.thumbnail}
+![cant_connect_server](/pages/assets/screens/email-sending-to-customer/databases/db-cant-connect-server.png){.thumbnail}
 
 Hai avviato l’installazione di un "modulo in 1 click" in [modalità avanzata](/pages/web_cloud/web_hosting/cms_install_1_click_modules) su un database situato su un server [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). Questo messaggio di errore è stato ricevuto via email. Significa che il nome del database server specificato non è corretto.
 
@@ -241,9 +241,9 @@ Questo malfunzionamento può avere diverse cause:
 
 - verifica che il dominio che consulti ("domain.tld") sia quello con cui hai appena installato il "modulo in 1 click".
 
-- Se hai apportato di recente una modifica alla [zona DNS attiva](/pages/web_cloud/domains/dns_server_general_information)/[server DNS](/pages/web_cloud/domains/dns_zone_edit) del tuo dominio o un [trasferimento di dominio](/pages/web_cloud/domains/transfer_incoming_generic_domain). Attendi il completamento delle operazioni (4-24 ore per una modifica nella zona DNS e 24-48 ore per una modifica dei server DNS). Non dimenticare di riavviare i tuoi dispositivi (PC, smartphone, box, ecc...) e di svuotare la cache del tuo browser.
+- Se hai apportato di recente una modifica alla [zona DNS attiva](/pages/web_cloud/domains/dns_zone_edit)/[server DNS](/pages/web_cloud/domains/dns_server_edit) del tuo dominio o un [trasferimento di dominio](/pages/web_cloud/domains/transfer_incoming_generic_domain). Attendi il completamento delle operazioni (4-24 ore per una modifica nella zona DNS e 24-48 ore per una modifica dei server DNS). Non dimenticare di riavviare i tuoi dispositivi (PC, smartphone, box, ecc...) e di svuotare la cache del tuo browser.
 
-- Il dominio è sempre associato al vecchio hosting Web. In questo caso, modifica la [zona DNS attiva](/pages/web_cloud/domains/dns_zone_edit) associata al dominio o i suoi [server DNS](/pages/web_cloud/domains/dns_server_general_information). Se la zona DNS attiva del dominio non è gestita in OVHcloud, contatta il provider DNS.
+- Il dominio è sempre associato al vecchio hosting Web. In questo caso, modifica la [zona DNS attiva](/pages/web_cloud/domains/dns_zone_edit) associata al dominio o i suoi [server DNS](/pages/web_cloud/domains/dns_server_edit). Se la zona DNS attiva del dominio non è gestita in OVHcloud, contatta il provider DNS.
 
 ### La password "Amministratore" di accesso all'"interfaccia di amministrazione" del tuo "modulo in 1 click" non funziona <a name="adminpassword"></a>
 
@@ -287,4 +287,4 @@ Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [p
  
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
  
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

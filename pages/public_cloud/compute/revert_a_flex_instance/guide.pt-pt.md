@@ -1,7 +1,7 @@
 ---
 title: Migrar de uma instância Flex para uma instância clássica
 excerpt: Descubra como alterar uma instância Flex a partir da interface OpenStack Horizon
-updated: 2021-11-15
+updated: 2024-07-17
 ---
 
 > [!primary]
@@ -16,10 +16,18 @@ Uma instância *flex* é uma instância de disco único (50 GB) que oferece um p
 
 ## Requisitos
 
-- Dispor de uma [instância Public Cloud da OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps#3o-passo-criacao-de-uma-instancia) do tipo *flex*.
+- Dispor de uma [instância Public Cloud da OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps#configuration) do tipo *flex*.
 - [Criar um acesso à interface Horizon](/pages/public_cloud/compute/introducing_horizon).
 
 ## Instruções
+
+> [!warning] 
+> - Se atualizar de uma instância *flex* para uma instância clássica com mais recursos, isso é considerado uma atualização. Neste caso, ser-lhe-á cobrada a diferença. No final do seu período de faturação, receberá duas facturas.
+>
+> - Se passar de uma instância *flex* para uma instância clássica com menos recursos, é considerado um downgrade. Neste caso, não será facturado.
+>
+> - Se mudar de uma instância *flex* para uma instância clássica com os mesmos recursos, não será facturado.
+>
 
 Ligue-se à [interface Horizon](https://horizon.cloud.ovh.net/auth/login/) e certifique-se de que está na região certa. Podem verificá-lo no canto superior esquerdo. 
 

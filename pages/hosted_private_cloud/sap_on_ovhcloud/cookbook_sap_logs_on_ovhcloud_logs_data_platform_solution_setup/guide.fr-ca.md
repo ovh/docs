@@ -240,7 +240,7 @@ OVHcloud fournit une collection de recherches et de dashboards, disponibles sur 
 
 > [!primary]
 >
-> Dans le fichier téléchargé, les mots clefs \<replace-with-your-alias-id\> et \<replace-with-your-audit-alias-id\> doivent être remplacés par l'ID de l'alias de votre data stream.
+> Dans le fichier téléchargé, les mots clefs <replace-with-your-alias-id\> et <replace-with-your-audit-alias-id\> doivent être remplacés par l'ID de l'alias de votre data stream.
 >
 > Dans le cas où vous n'auriez qu'un seul data stream pour vos logs techniques et de sécurité, remplacez les deux mots clefs par la même valeur.
 >

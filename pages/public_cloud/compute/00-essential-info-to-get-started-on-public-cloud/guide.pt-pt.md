@@ -131,7 +131,7 @@ Na prática, pode consultar os seguintes manuais:
 |Documentação|Detalhes|
 |---|---|
 |[Criar a primeira instância](/pages/public_cloud/compute/public-cloud-first-steps)|Primeiro guia prático para iniciar um servidor cloud a partir da Área de Cliente OVHcloud.|
-|[Utilização de uma chave SSH](/pages/public_cloud/compute/public-cloud-first-steps#2o-passo-armazenamento-de-chaves-publicas-na-area-de-cliente-ovhcloud_1)| Para se ligar a uma instância Linux, terá de passar por uma ligação SSH, este manual explica-lhe a utilização.|
+|[Utilização de uma chave SSH](/pages/public_cloud/compute/creating-ssh-keys-pci)| Para se ligar a uma instância Linux, terá de passar por uma ligação SSH, este manual explica-lhe a utilização.|
 |[Configuração da rede privada](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack)|Na OVHcloud, as redes privadas são suportadas pela tecnologia vRack. Este guia acompanha-o nesta implementação.|
 |[Associar um disco suplementar a uma instância](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)|Este manual fornece instruções para adicionar espaço de armazenamento adicional à primeira instância.|
 |[Aceder à interface Horizon](/pages/public_cloud/compute/introducing_horizon)|A interface Horizon da OpenStack permite algumas ações avançadas. Aqui está como conectá-lo.|
@@ -151,6 +151,6 @@ Uma das grandes vantagens de utilizar tecnologias standard e abertas, como OpenS
 |[Kubernetes CLI Overview](https://kubernetes.io/docs/reference/kubectl/overview/) (EN)| A documentação do incontornável cliente em linha de comandos 'kubectl'.|
 |[Kubernetes APIs Overview](https://kubernetes.io/docs/reference/using-api/) (EN)| A documentação da API de Kubernetes, útil para obter uma visão de conjunto das possibilidades.|
 
-Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](https://www.ovhcloud.com/pt/professional-services/) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
+Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](/links/professional-services) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

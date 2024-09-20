@@ -78,7 +78,7 @@ mysql --host=servidor --user=usuario --port=puerto --contraseña=contraseña nom
 
 - Ejecute SQuirreL SQL, abra el menú `Aliases`{.action} y haga clic en `+`{.action}.
 
-![ejecutar SQuirreL SQL](images/aliases.png){.thumbnail}
+![ejecutar SQuirreL SQL](/pages/assets/screens/other/web-tools/squirrel/aliases.png){.thumbnail}
 
 - Cumplimente los campos como se indica a continuación y acepte con el botón `OK`{.action}:
     - **Name**: Indique un nombre.
@@ -87,15 +87,15 @@ mysql --host=servidor --user=usuario --port=puerto --contraseña=contraseña nom
     - **User Name**: Indique el nombre de usuario.
     - **Password**: Indique la contraseña.
 
-![configuración de la conexión](images/add-alias.png){.thumbnail}
+![configuración de la conexión](/pages/assets/screens/other/web-tools/squirrel/add-alias.png){.thumbnail}
 
 - Confirme con el botón `Connect`{.action}.
 
-![confirmación de la conexión](images/connect-to-mysql.png){.thumbnail}
+![confirmación de la conexión](/pages/assets/screens/other/web-tools/squirrel/connect-to-mysql.png){.thumbnail}
 
 Se establecerá la conexión a la base de datos:
 
-![conexión a la base de datos](images/general-dashboard.png){.thumbnail}
+![conexión a la base de datos](/pages/assets/screens/other/web-tools/squirrel/general-dashboard.png){.thumbnail}
 
 ### Conexion mediante phpMyAdmin
 
@@ -126,4 +126,4 @@ Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con 
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

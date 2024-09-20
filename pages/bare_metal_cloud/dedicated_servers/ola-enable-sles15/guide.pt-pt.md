@@ -17,13 +17,13 @@ A tecnologia OVHcloud Link Aggregation (OLA) foi concebida pelas nossas equipas 
 ## Requisitos
 
 - [Ter configurado o seu NIC para a funcionalidade OVHcloud Link Aggregation a partir da Área de Cliente OVHcloud](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager)
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 
 ## Instruções
 
 Uma vez que temos uma configuração privada para os nossos NIC em OLA, é impossível ligar-se ao servidor através de SSH. Assim, deverá utilizar a ferramenta IPMI para aceder ao servidor.
 
-Para isso, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e aceda ao separador `Bare Metal Cloud`{.action}. Selecione o seu servidor na lista na secção `Servidores dedicados`{.action}.
+Para isso, aceda à [Área de Cliente OVHcloud](/links/manager) e aceda ao separador `Bare Metal Cloud`{.action}. Selecione o seu servidor na lista na secção `Servidores dedicados`{.action}.
 
 A seguir, clique no separador `IPMI`{.action} (1) e no botão `A partir de applet Java (KVM)`{.action} (2).
 

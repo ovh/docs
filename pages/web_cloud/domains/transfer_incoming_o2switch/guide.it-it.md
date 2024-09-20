@@ -1,7 +1,7 @@
 ---
 title: 'Trasferire un dominio O2Switch in OVHcloud'
 excerpt: 'Questa guida ti mostra tutte le informazioni relative al trasferimento di un dominio O2Switch in OVHcloud'
-updated: 2024-04-11
+updated: 2024-06-28
 flag: hidden
 ---
 
@@ -65,6 +65,12 @@ Il trasferimento di un dominio O2Switch richiede una procedura specifica.
 >
 > Assicurati che il tuo attuale Registrar non chiuda altri servizi, ad esempio gli indirizzi email associati al dominio.
 >
+> Se, oltre al trasferimento del dominio, vuoi anche migrare i servizi associati (sito Web, email, ecc...), prima di proseguire consulta la nostra guida "[Migrare il sito Web e i servizi associati in OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)".
+> Questa guida ti mostra come migrare tutti i tuoi servizi senza interruzioni di servizio.
+>
+> Se trasferisci il tuo dominio senza trasferire gli altri servizi, assicurati di recuperare i server DNS attivi per il tuo dominio presso il tuo **Registrar** attuale e di inserirli direttamente nello step 3 della guida "[Trasferisci il tuo dominio in OVHcloud](/pages/web_cloud/domains/transfer_incoming_generic_domain)"
+> In questo modo eviterai di interrompere l'associazione tra il tuo dominio e i tuoi servizi esterni associati.
+>
 
 ### Sblocca il dominio e recupera il codice di trasferimento
 
@@ -84,4 +90,4 @@ Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [p
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).
