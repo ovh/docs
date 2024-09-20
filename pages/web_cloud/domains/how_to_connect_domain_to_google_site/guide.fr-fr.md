@@ -6,7 +6,7 @@ updated: 2024-09-20
 
 ## Objectif
 
-Vous possédez un nom de domaine chez OVHcloud et souhaitez le connecter à un Google Site. Vous trouverez dans ce guide les étapes de préparation et de configuration de votre zone DNS OVHcloud pour permettre la configuration de votre Google Site.
+Vous possédez un nom de domaine chez OVHcloud et vous souhaitez le connecter à un Google Site. Vous trouverez dans ce guide les étapes de préparation et de configuration de votre zone DNS OVHcloud pour permettre la configuration de votre Google Site.
 
 **Découvrez comment connecter votre nom de domaine OVHcloud à un Google Site.**
 
@@ -61,7 +61,7 @@ Suivez les étapes dans l'ordre en parcourant les onglets suivants :
 >> - Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau qui correspond à votre nom de domaine seul, sans sous-domaine (exemple : `mydomain.ovh.`), puis cliquez sur `Modifier l'entrée`{.action}.<br>
 >> - Si un enregistrement pour le sous-domaine « www » est présent (exemple : `www.mydomain.ovh.`), vous devez le supprimer pour qu'il ne rentre pas en conflit avec l'enregistrement CNAME que vous allez renseigner à l'étape 4. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre nom de domaine seul avec le sous-domaine « www »  puis cliquez sur `Supprimer l'entrée`{.action}.<br>
 >> - Si vous n'avez pas d'enregistrement « A » existant, cliquez sur le bouton `Ajouter une entrée`{.action} en haut à droite de votre écran et sélectionnez le « Champ de pointage » `A`{.action}<br><br>
->> Vous devez créer 4 enregistrements de type « A » successivement afin de renseigner les 4 adresses IPv4 relatives à Google Site. 
+>> Vous devez créer quatre enregistrements de type « A » successivement afin de renseigner les quatre adresses IPv4 relatives à Google Site. 
 >> Laissez le champ **Sous-domaine** vide et saisissez la première adresse IPv4 de Google Site `216.239.32.21` dans le champ **Cible**.
 >> Cliquez sur `Suivant`{.action} et validez votre enregistrement « A ». Répétez l'opération pour les trois autres adresse IPv4 `216.239.34.21`, `216.239.36.21` et `216.239.38.21`, puis passez à l'étape 2. La valeur de ces adresses IP étant susceptibles de changer, vérifiez dans la documentation officielle [la valeur des enregistrements A](https://support.google.com/a/answer/2579934?hl=fr&ref_topic=2721296&sjid=10373374977980680534-EU){.external}.
 > **Etape 2**
