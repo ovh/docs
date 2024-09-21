@@ -43,12 +43,12 @@ Dans nos exemples, nous utiliserons l'éditeur de texte `nano`. Vous pouvez bien
 
 ### Passerelle par défaut (Gateway)
 
-La première étape consiste à récupérer la passerelle (gateway) IPv6 assignée à votre serveur. Deux méthodes sont possibles, poursuivez vers celle que vous souhaitez utiliser.
+La première étape consiste à récupérer la passerelle (gateway) IPv6 assignée à votre serveur. Deux méthodes sont possibles:
 
-- [Obtenir les informations réseau via l'espace client](#viacontrolpanel).
-- [Obtenir les informations réseau via les API](#viaapi).
+- Obtenir les informations réseau via l'espace client
+- Obtenir les informations réseau via les API
 
-#### Via votre espace client <a name="viacontrolpanel"></a>
+#### Via votre espace client
 
 Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveur dédiés`{.action}.
 
@@ -56,7 +56,7 @@ La passerelle IPv6 assignée à votre serveur est affichée dans la section `Ré
 
 ![configureipv6](images/ipv6_information.png){.thumbnail}
 
-#### Via les API OVHcloud <a name="viaapi"></a>
+#### Via les API OVHcloud 
 
 Une autre façon de récupérer les informations réseau de votre serveur est d'[utiliser l'API OVHcloud](/pages/manage_and_operate/api/first-steps).
 
@@ -73,26 +73,117 @@ Exemple :
 
 IPv6_GATEWAY : `2607:5300:60:62FF:00FF:00FF:00FF:00FF` peut aussi être écrit comme `2607:5300:60:62FF:FF:FF:FF:FF`.
 
-### Présentation du contenu
+> [!warning]
+> Please note that we no longer offer Vmware EXSi as an operating system, as a result, the configuration examples in this guide will focus on Proxmox and Windows Hyper-V.
+>
 
-- [**1** Configuration sur ESXi](#configuration-esxi)
-    - [**1.1** Configuration sur l'hote](#host)
-    - [**1.2** Mise en place de la machine virtuelle](#virtualmachine)
-    - [**1.3** Sélection d'une image](#image)
-- [**2** Configuration sur Proxmox](#configuration-proxmox)
-    - [**2.1** Configuration sur l'hote](#host)
-    - [**2.2** Mise en place d'un conteneur](#container)
-    - [**2.3** Mise en place de la machine virtuelle](#virtualmachine)
-- [**3** Configuration sur Hyper-V](#configuration-hyperv)
-    - [**3.1** Mise en place de la machine virtuelle](#configuration)
-    - [**4.5** Configurer votre réseau](#network)
-    - [**4.6** Sélectionner une période de facturation](#billing)
+### Configuration sur Proxmox 
+
+#### Pour une machine virtuelle
+
+Before you begin, make sure you have uploaded the ISO image to use for the installation of the VM.
+
+The first step is to create the virtual machine in Proxmox.
+
+Once you are connected to the Proxmox dashboard, click on your server's name in the left-corner, then on `Create VM`{.action}.
+
+![create vm](images/create_vm_proxmox.png){.thumbnail}
+
+**Create: Virtual Machine**
+
+> [!tabs]
+> **General**
+>>
+>> **Name:** Enter a name for your VM.<br><br>
+>>![create vm](images/create-vm-name.png){.thumbnail}<br>
+>> 
+> **OS**
+>> Click on the drop down arrow next to `ISO image` to select the image of your choice. In our exmaple, we are using ubuntu 24.04 ISO.<br><br>
+>>![iso image](images/select-iso.png){.thumbnail}<br>
+>>
+> **Confirm**
+>>
+>> Once done, click on `Finish`{.action} to create the VM<br><br>
+>>![create vm](images/create-vm.png){.thumbnail}<br>
+
+Once the virtual machine has been created, the next step is to launch it and proceed with the installation of the operating system. During the installation of the OS, make sure you do not configure the network.
+
+**Ubuntu et Debian 12**
+
+Once you are connected to your virtual machine, the first step is to access the configuration file
+
+```bash
+sudo nano /etc/netplan/50-cloud-init.yaml
+```
+
+Next, configure the IPv6 address of your choice, replacing *YOUR_IPV6*, *IPV6_PREFIX* and *IPV6_GATEWAY* with your own values.
+
+```yaml
+network:
+    ethernets:
+        ens18:
+            dhcp4: true
+            dhcp6: false
+            addresses:
+              - YOUR_IPV6/IPV6_PREFIX  
+            routes:
+              - to: default
+                via: IPV6_GATEWAY
+                on-link: true
+    version: 2
+```
+
+To test the connectivity of your IPv6, run the `ping` command:
+
+![ping](images/ping-debian.png){.thumbnail}<br>
+
+**Debian**
+
+Once you are connected to your virtual machine, the first step is to access the configuration file
+
+```bash
+sudo nano /etc/network/interfaces
+```
+
+Next, configure the IPv6 address of your choice, replacing *YOUR_IPV6*, *IPV6_PREFIX* and *IPV6_GATEWAY* with your own values. Replace `ens18` with your own values
+
+```console
+auto lo
+iface lo inet loopback
+
+auto ens18
+iface ens18 inet6 static
+address YOUR_IPV6/IPV6_PREFIX
+gateway IPV6_GATEWAY
+```
+
+Once done, restart the network with the following command:
+
+```bash
+sudo systemctl restart networking.service
+```
+
+To test the connectivity of your IPv6, run the `ping` command:
+
+![ping](images/ping-debian.png){.thumbnail}
 
 
-<a name="configuration-esxi"></a>
+**Almalinux, Rocky Linux and CentOS**
 
-### Configuration sur ESXi
+#### Pour un conteneur
 
-The first step is to create the virtual machine in Esxi.
+Once your container has been created, click on it in the left-tab menu. Next, click on `Network`{.action}.
 
-Once you are connected to the ESXi dashboard, go to
+Click on `edit`{.action} to edit the existing network.
+
+![container configuration](images/create-vm.png){.thumbnail}
+
+Fill in the IPV6 fields with the correct information
+
+![container configuration](images/create-vm.png){.thumbnail}
+
+Once done, click on `OK`{.action} to save the changes.
+
+Connect to your container to verify the IPv6 connectivity with the `ping` command:
+
+![ping](images/ping-container.png){.thumbnail}
