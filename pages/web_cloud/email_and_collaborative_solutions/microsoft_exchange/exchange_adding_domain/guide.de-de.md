@@ -113,7 +113,7 @@ Nachdem Sie Ihre Accounts fertig eingerichtet haben, können Sie diese nun verwe
 
 Falls Sie Hilfe bei der Einrichtung Ihres E-Mail-Accounts in einem E-Mail-Client oder auf einem Gerät (Smartphone, Tablet) benötigen oder Fragen zu den Funktionen Ihres E-Mail-Dienstes haben, lesen Sie unsere Anleitungen zu [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) oder [E-Mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro).
 
-Sie können Outlook Lizenzen über Ihr [OVHcloud Kundencenter](/links/manager) und Office 365 Lizenzen auf der Webseite [Webmail](/links/web/ms365) erwerben. Wir empfehlen Ihnen, eine dieser Lösungen zu verwenden, falls Sie den Outlook E-Mail-Client oder andere Software der MS Office Suite nutzen möchten.
+Sie können Outlook Lizenzen über Ihr [OVHcloud Kundencenter](/links/manager) und Office 365 Lizenzen auf der [Webseite](/links/web/ms365) erwerben. Wir empfehlen Ihnen, eine dieser Lösungen zu verwenden, falls Sie den Outlook E-Mail-Client oder andere Software der MS Office Suite nutzen möchten.
 
 ### Einen Domainnamen von einer Plattform löschen
 
