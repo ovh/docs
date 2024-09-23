@@ -25,7 +25,7 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 - Posiadanie konta [E-mail Pro](/links/web/email-pro)
 - Instalacja programu Mail na Twoim urządzeniu Mac
 - Dane do logowania do konta e-mail, które chcesz skonfigurować
- 
+
 ## W praktyce
 
 > [!primary]

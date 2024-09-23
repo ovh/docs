@@ -16,9 +16,9 @@ Gli account Email Pro possono essere configurati su client di posta compatibili 
 > [!warning]
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
-> 
+>
 > Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVHcloud non può fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione "Per saperne di più" di questa guida.
-> 
+>
 
 ## Prerequisiti
 
@@ -33,7 +33,7 @@ Gli account Email Pro possono essere configurati su client di posta compatibili 
 > Nel nostro esempio abbiamo utilizzato come nome del server "pro<b>?</b>.mail.ovh.net", dove "?" dovrà essere sostituito con il numero che indica il server del servizio Email Pro.
 >
 > Questa informazione è disponibile nello [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}, selezionando `Email Pro`{.action}. Il nome del server è visibile nel riquadro **Connessione** della scheda `Informazioni generali`{.action}.
-> 
+>
 
 ### Aggiungi l'account
 

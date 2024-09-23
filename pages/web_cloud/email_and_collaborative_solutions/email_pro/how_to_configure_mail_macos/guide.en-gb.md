@@ -12,22 +12,22 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 > [!warning]
 >
 > OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
-> 
+>
 > We have provided you with this guide in order to help you with common tasks. Nevertheless, we recommend contacting a specialist provider and/or the service’s software publisher if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the "Go further" section of this guide.
-> 
+>
 
 ## Requirements
 
 - an [Email Pro](/links/web/email-pro) address.
 - **Mail** installed on your Mac.
 - the required credentials for the email address you would like to configure.
- 
+
 ## Instructions
 
 > [!primary]
 >
 > In this guide, we will use as the server name: "pro<b>?</b>.mail.ovh.net". You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
-> 
+>
 > You can find this information in the [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section, if you select `Professional Email`{.action}. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
 >
 
@@ -85,5 +85,5 @@ For **POP** configuration, the values are:
 > When you configure your email address in **IMAP** and you want to change the configuration to **POP**, it is necessary to delete the account from Mac Mail and then recreate it in **POP** to change the configuration.
 
 ## Go further
-  
+
 Join our community of users on <https://community.ovh.com/en/>.
