@@ -39,18 +39,22 @@ The Anti-DDoS infrastructure, together with the Edge Network firewall, keeps the
 - **Instant**: It can distinguish real players from harmful attacks on a server from the very first network packets.
 - **Always-on**: The ability to detect and stop attacks ensures a smooth experience for sensitive gaming applications without any disruptions and latency changes.
 
-### Enabling the GAME DDoS Protection
+### Enabling and configuring GAME DDoS Protection
 
 > [!primary]
 > The GAME firewall protects the IP associated with a server. As a result, if you have a server with multiple IP addresses (i.e. Additional IP addresses), you need to configure each of them separately.
 >
 
-To configure gaming rules in the GAME firewall, log in to the OVHcloud Control Panel and follow these steps:
+To configure game protection rules for your Bare Metal game server, log in to the OVHcloud Control Panel and follow these steps:
 
 - Click the `Bare Metal Cloud`{.action} tab.
 - Go to `Network`{.action} in the left-hand sidebar.
 - Open `IP`{.action}.
 
+You can filter IP listing by using `All services`{.action} drop-down field and type-in name/category of your corresponding server there:
+| ![configure-game-firewall](images/ip_listing.png) |
+
+Then, for the selected IP, navigate to the GAME firewall configuration:
 | ![game-server](images/firewall_game_01_blur.png) |
 |:--:|
 | Click on the `...`{.action} button next to the IP address of your game server. |
@@ -59,11 +63,13 @@ To configure gaming rules in the GAME firewall, log in to the OVHcloud Control P
 |:--:|
 | Click on `Configure the GAME firewall`{.action}. |
 
+Now, you can configure game protection rules for such IP address.
 
 > [!primary]
 > It is important to note that GAME DDoS protection will not take any action unless game rules are configured.
 > 
 
+So, to enable GAME DDoS Protection, simply define game applications and network port range (or single port) on which such applications work:
 
 | ![add-rule-btn](images/firewall_game_03.png) |
 |:--:|
