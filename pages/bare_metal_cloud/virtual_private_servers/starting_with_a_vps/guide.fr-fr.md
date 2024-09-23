@@ -181,7 +181,7 @@ Cependant, vous pouvez effectuer un redémarrage forcé à tout moment dans votr
 
 > [!warning]
 >
-> Pour des raisons de sécurité, lors de la première connexion à votre VPS, vous devez changer le mot de passe reçu par mail pour le remplacer par un mot de passe personnel et fort. Une fois la modification effectuée, il est possible que l'interface que vous utilisez (Putty par exemple) se ferme automatiquement afin de procéder à la déconnexion. Reconnectez-vous avec votre nouveau mot de passe.
+> Pour des raisons de sécurité, lors de la première connexion à votre VPS, vous devez changer le mot de passe reçu par mail pour le remplacer par un nouveau mot de passe fort. Une fois la modification effectuée, il est possible que l'interface que vous utilisez (Putty par exemple) se ferme automatiquement afin de procéder à la déconnexion. Reconnectez-vous alors avec votre nouveau mot de passe.
 >
 
 Lors de la première installation ou lors de la réinstallation à partir du Panneau de configuration, un utilisateur avec des autorisations élevées est créé automatiquement. Cet utilisateur sera nommé en fonction du système d'exploitation, par exemple « Ubuntu » ou « Rocky Linux ».
