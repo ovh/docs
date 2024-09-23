@@ -19,7 +19,7 @@ Precompiled binaries are available in most modern OS distributions, so you shoul
 
 ### OpenStack ID
 
-You can generate your OpenStack login and password using this [guide](/pages/public_cloud/compute/introducing_horizon).
+You can generate your OpenStack login and password using this [guide](/pages/public_cloud/compute/create_and_delete_a_user).
 
 ### TenantName
 

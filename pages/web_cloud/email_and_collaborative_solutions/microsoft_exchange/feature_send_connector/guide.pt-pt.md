@@ -78,7 +78,7 @@ Antes de começar, precisará das seguintes informações: Devem ser fornecidas 
 - o nome de utilizador associado (por exemplo, um endereço de e-mail) , **pode ser opcional em função do seu conector de envio**.
 - a palavra-passe associada ao nome de utilizador, **pode ser opcional consoante o seu conector de envio**.
 
-De seguida, aceda às API da OVHcloud com os seus dados de acesso. Não hesite em consultar o nosso guia [Primeiros passos com as API OVHcloud ](pages/manage_and_operate/api/first-steps).
+De seguida, aceda às API da OVHcloud com os seus dados de acesso. Não hesite em consultar o nosso guia [Primeiros passos com as API OVHcloud ](/pages/manage_and_operate/api/first-steps).
 
 Para adicionar um conector de envio à sua plataforma Exchange, utilize a seguinte chamada API.
 

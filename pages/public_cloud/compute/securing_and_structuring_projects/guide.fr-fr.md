@@ -32,7 +32,7 @@ Le [guide de gestion des mots de passe](/pages/account_and_service_management/ac
 #### Ajouter une adresse e-mail de secours
 
 - **Importance** : Aide à récupérer l'accès à votre compte si votre em-ail principal est inaccessible.
-- **Configuration** : Ajoutez une adresse e-mail de secours dans le tableau de bord OVHcloud sous les paramètres de votre profil, en vous assurant qu'elle diffère de votre adresse e-mail principale. Voir le [guide sur la gestion des informations personnelles](pages/account_and_service_management/account_information/all_about_username).
+- **Configuration** : Ajoutez une adresse e-mail de secours dans le tableau de bord OVHcloud sous les paramètres de votre profil, en vous assurant qu'elle diffère de votre adresse e-mail principale. Voir le [guide sur la gestion des informations personnelles](/pages/account_and_service_management/account_information/all_about_username).
 
 ### Étape 2 : Comprendre la gestion des identités et des accès (IAM) et créer des identités
 

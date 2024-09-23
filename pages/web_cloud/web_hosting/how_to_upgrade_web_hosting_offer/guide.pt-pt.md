@@ -141,7 +141,7 @@ Depois de verificar estes 6 pontos, pode realizar o seu [alteração da oferta](
 
 #### Possui uma oferta de alojamento gratuito 100M <a name="100m"></a>
 
-Se efetuar uma alteração a partir de uma oferta de [alojamento gratuito 100M](pages/web_cloud/web_hosting/activate_start10m), apenas [a oferta Perso](/links/web/hosting-personal-offer) lhe será proposta. No entanto, após uma alteração para a oferta Perso, poderá fazer evoluir esta última para o conjunto dos nossos [alojamentos web](/links/web/hosting).
+Se efetuar uma alteração a partir de uma oferta de [alojamento gratuito 100M](/pages/web_cloud/web_hosting/activate_start10m), apenas [a oferta Perso](/links/web/hosting-personal-offer) lhe será proposta. No entanto, após uma alteração para a oferta Perso, poderá fazer evoluir esta última para o conjunto dos nossos [alojamentos web](/links/web/hosting).
 
 Siga [estas instruções](#modify) para realizar a sua alteração de oferta.
 

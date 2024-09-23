@@ -84,7 +84,7 @@ Bevor Sie beginnen, halten Sie folgende Informationen bereit. Sie erhalten sie v
 - Der zugehörige Benutzername (Beispiel: eine E-Mail-Adresse), **je nach Send Connector optional**
 - Das Passwort für den Benutzernamen, **je nach Send Connector optional**
 
-Loggen Sie sich anschließend mit Ihren Zugangsdaten in die OVHcloud API-Konsole ein. Weitere Informationen finden Sie in unserer Anleitung [Erste Schritte mit der OVHcloud API](pages/manage_and_operate/api/first-steps).
+Loggen Sie sich anschließend mit Ihren Zugangsdaten in die OVHcloud API-Konsole ein. Weitere Informationen finden Sie in unserer Anleitung [Erste Schritte mit der OVHcloud API](/pages/manage_and_operate/api/first-steps).
 
 Verwenden Sie den folgenden API-Aufruf, um Ihrer Exchange Plattform einen Send Connector hinzuzufügen.
 

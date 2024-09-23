@@ -78,7 +78,7 @@ Before you begin, make sure you have the following information, provided by the 
 - The associated username (e.g. email address) **may be optional, depending on your send connector**
 - The password associated with the user name **may be optional, depending on your send connector**
 
-Next, log in to the OVHcloud API console with your login credentials. Refer to our [Getting started guide for the OVHcloud API](pages/manage_and_operate/api/first-steps).
+Next, log in to the OVHcloud API console with your login credentials. Refer to our [Getting started guide for the OVHcloud API](/pages/manage_and_operate/api/first-steps).
 
 To add a send connector to your Exchange platform, use the following API call.
 

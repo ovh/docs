@@ -51,7 +51,7 @@ Antes de continuar leyendo esta guía, debe cumplir los siguientes requisitos:
 >> Si no ha registrado ninguna [forma de pago](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods), se le enviará una factura por correo electrónico. En ese caso, solo tendrá que abonarla online.
 >>
 >> Para los servicios con una frecuencia de renovación automática superior a 1 mes (3 meses, 6 meses, 12 meses), el mes anterior a la fecha de renovación automática le enviaremos un recordatorio por correo electrónico, en el que se indicarán los servicios que van a renovarse próximamente.
->>Si no desea prolongar alguno de estos servicios, solo tiene que [darlo de baja en su área de cliente](pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
+>>Si no desea prolongar alguno de estos servicios, solo tiene que [darlo de baja en su área de cliente](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
 >>
 >> **Atención**: la ausencia de una forma de pago en su cuenta no activa la baja automática de sus servicios. Para dar de baja servicios, consulte nuestra guía "[Cómo dar de baja los servicios de OVHcloud ](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services)".
 >>
