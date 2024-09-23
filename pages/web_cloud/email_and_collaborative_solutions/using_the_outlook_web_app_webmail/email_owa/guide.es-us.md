@@ -6,13 +6,13 @@ updated: 2024-09-03
 
 ## Objetivo
 
-Con las soluciones de correo de OVHcloud puede enviar y recibir correo utilizando el dispositivo y el cliente de correo que usted desee. Para poder iniciar sesión en una cuenta desde cualquier lugar a través de un navegador, OVHcloud ofrece un cliente de correo online llamado Outlook Web App (OWA). Nuestra [página de inicio de sesión de webmail](https://www.ovh.com/world/es/mail/) es el único punto de acceso al OWA correspondiente para todas las cuentas activas de correo en MX Plan, Email Pro y Hosted Exchange.
+Con las soluciones de correo de OVHcloud puede enviar y recibir correo utilizando el dispositivo y el cliente de correo que usted desee. Para poder iniciar sesión en una cuenta desde cualquier lugar a través de un navegador, OVHcloud ofrece un cliente de correo online llamado Outlook Web App (OWA). Nuestra [página de inicio de sesión de webmail](/links/web/email) es el único punto de acceso al OWA correspondiente para todas las cuentas activas de correo en MX Plan, Email Pro y Hosted Exchange.
 
 **En esta guía aprenderá a realizar las acciones más habituales con su dirección de correo en la interfaz de OWA.**
 
 ## Requisitos
 
-- Tener una solución de correo electrónico de OVHcloud configurada (**solución MX Plan**, disponible como parte de nuestros [planes de hospedaje web](https://www.ovhcloud.com/es/web-hosting/) o [**Hosted Exchange**](https://www.ovhcloud.com/es/emails/hosted-exchange/))
+- Tener una solución de correo electrónico de OVHcloud configurada (**solución MX Plan**, disponible como parte de nuestros [planes de hospedaje web](/links/web/hosting) o [**Hosted Exchange**](/links/web/emails-hosted-exchange))
 - Tener las credenciales de acceso de la dirección de correo electrónico que quiere configurar
 
 ## Procedimiento
@@ -26,7 +26,7 @@ Esta guía le permitirá comprender mejor las tareas más habituales de la cuent
 
 ### 1. Acceder a OWA
 
-Para acceder al webmail de OWA con su dirección de correo electrónico, diríjase a la [página de inicio de sesión](https://www.ovh.com/world/es/mail/). Introduzca su dirección de correo electrónico completa y su contraseña, y haga clic en el botón `Iniciar sesión`{.action}.
+Para acceder al webmail de OWA con su dirección de correo electrónico, diríjase a la [página de inicio de sesión](/links/web/email). Introduzca su dirección de correo electrónico completa y su contraseña, y haga clic en el botón `Iniciar sesión`{.action}.
 
 ![useowa](images/use-owa-step1.png){.thumbnail}
 

@@ -16,21 +16,21 @@ Es posible configurar sus cuentas Email Pro en el cliente de correo que usted ut
 
 ## Requisitos
 
-- Disponer de una solución [Email Pro](https://www.ovhcloud.com/es-es/emails/email-pro/){.external}.
+- Disponer de una solución [Email Pro](/links/web/email-pro).
 - Haber instalado la aplicación Microsoft Outlook en su dispositivo Android. Puede descargarla desde el *Google Play Store*.
 
 > [!warning]
 >
 La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 > 
-> Ponemos a su disposición esta guía para ayudarle a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte el apartado [Más información](#go-further) de esta guía.
+> Ponemos a su disposición esta guía para ayudarle a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner) o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte el apartado [Más información](#go-further) de esta guía.
 > 
 
 ## Procedimiento
 
 ### Etapa 1: recuperar los datos de la cuenta Email Pro <a name="step1"></a>
 
-Conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `E-mail Pro`{.action} y seleccione la plataforma Email Pro en la que se encuentra la dirección de correo electrónico que desea configurar.
+Conéctese a su [área de cliente de OVHcloud](/links/manager) y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `E-mail Pro`{.action} y seleccione la plataforma Email Pro en la que se encuentra la dirección de correo electrónico que desea configurar.
 
 En la nueva página, abra la pestaña `Cuentas de correo`{.action}.
 
@@ -163,8 +163,8 @@ A continuación, pruebe el envío y la recepción de mensajes de correo desde su
 
 ## Más información <a name="go-further"></a>
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

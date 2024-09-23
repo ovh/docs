@@ -26,9 +26,9 @@ Si quiere migrar sus direcciones de correo electrónico a una plataforma Exchang
 
 ## Requisitos
 
-- Tener una plataforma **"source"** con cuentas [Exchange](https://www.ovhcloud.com/es-es/emails/hosted-exchange/){.external} o [Email Pro](https://www.ovhcloud.com/es-es/emails/email-pro/){.external} configuradas.
-- Disponer de una plataforma de **"destino"** con cuentas [Exchange](https://www.ovhcloud.com/es-es/emails/hosted-exchange/){.external}, [Email Pro](https://www.ovhcloud.com/es-es/emails/email-pro/){.external} o MX Plan (a través de la solución MX Plan o incluida en un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external}). Esta plataforma debe disponer de cuentas no configuradas o disponibles para recibir las direcciones de correo que deban migrarse.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+- Tener una plataforma **"source"** con cuentas [Exchange](/links/web/emails-hosted-exchange) o [Email Pro](/links/web/email-pro) configuradas.
+- Disponer de una plataforma de **"destino"** con cuentas [Exchange](/links/web/emails-hosted-exchange), [Email Pro](/links/web/email-pro) o MX Plan (a través de la solución MX Plan o incluida en un plan de [hosting de OVHcloud](/links/web/hosting)). Esta plataforma debe disponer de cuentas no configuradas o disponibles para recibir las direcciones de correo que deban migrarse.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 
@@ -93,7 +93,7 @@ Para más información sobre OMM, consulte nuestra guía [Migrar cuentas de corr
 
 El tiempo de migración dependerá de la cantidad de datos que quiera migrar a la nueva cuenta. Éste puede variar desde unos minutos hasta varias horas.
 
-Una vez realizada la migración, compruebe que todos sus elementos se encuentren conectándose al webmail en la dirección <https://www.ovh.es/mail/>.
+Una vez realizada la migración, compruebe que todos sus elementos se encuentren conectándose al webmail en la dirección [Webmail](/links/web/email).
 
 Una vez realizada la migración, podrá conservar o eliminar la cuenta de origen con el nombre provisional.
 
@@ -107,7 +107,7 @@ Para ello, seleccione el servicio Email Pro o Exchange correspondiente y abra la
 
 > [!primary]
 >
-> Si acaba de realizar la migración o de modificar un registro DNS del dominio, es posible que la actualización tarde unas horas en mostrarse en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+> Si acaba de realizar la migración o de modificar un registro DNS del dominio, es posible que la actualización tarde unas horas en mostrarse en el [área de cliente de OVHcloud](/links/manager).
 >
 
 Para modificar la configuración, haga clic en la etiqueta roja y realice la operación solicitada. Esta operación tarda entre 4 y 24 horas en propagarse y ser efectiva.
@@ -116,22 +116,22 @@ Para modificar la configuración, haga clic en la etiqueta roja y realice la ope
 
 ### Utilizar las direcciones de correo migradas
 
-Ya puede utilizar las direcciones de correo electrónico migradas. Para ello, OVHcloud pone a su disposición una aplicación online (_web app_) disponible en la dirección <https://www.ovh.es/mail/>. Introduzca las claves de su dirección de correo electrónico.
+Ya puede utilizar las direcciones de correo electrónico migradas. Para ello, OVHcloud pone a su disposición una aplicación online (_web app_) disponible en la dirección [Webmail](/links/web/email). Introduzca las claves de su dirección de correo electrónico.
 
 Si ha configurado una de las cuentas migradas en un cliente de correo (p.ej.: Outlook, Thunderbird), deberá volver a configurarlo. La información de conexión al servidor de OVHcloud ha cambiado tras la migración.
-<br>Para más información, consulte nuestra guía en las secciones relativas a [Email Pro](/products/web-cloud-email-collaborative-solutions-email-pro){.external} y [Hosted Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange){.external}. Si no puede reconfigurar la cuenta de forma inmediata, siempre es posible acceder a través de la aplicación online.
+<br>Para más información, consulte nuestra guía en las secciones relativas a [Email Pro](/products/web-cloud-email-collaborative-solutions-email-pro) y [Hosted Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange). Si no puede reconfigurar la cuenta de forma inmediata, siempre es posible acceder a través de la aplicación online.
 
 > [!primary]
 >
-> También puede migrar manualmente direcciones de correo a OVHcloud utilizando nuestra herramienta [OVH Mail Migrator (OMM)](https://omm.ovh.net/){.external}. Para ello, debe disponer de la información (usuario, contraseña, servidores) del correo de origen y del correo electrónico de destino.
+> También puede migrar manualmente direcciones de correo a OVHcloud utilizando nuestra herramienta [OVH Mail Migrator (OMM)](https://omm.ovh.net/). Para ello, debe disponer de la información (usuario, contraseña, servidores) del correo de origen y del correo electrónico de destino.
 >
 
 ## Más información
 
-[Gestionar los contactos de los servicios](/pages/account_and_service_management/account_information/managing_contacts){.external}.
+[Gestionar los contactos de los servicios](/pages/account_and_service_management/account_information/managing_contacts).
 
-[Guías Email Pro](/products/web-cloud-email-collaborative-solutions-email-pro){.external}.
+[Guías Email Pro](/products/web-cloud-email-collaborative-solutions-email-pro).
 
-[Guides Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange){.external}.
+[Guides Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

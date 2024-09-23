@@ -6,13 +6,13 @@ updated: 2024-09-03
 
 ## Objective
 
-With OVHcloud email solutions you can send and receive your emails using a device and client of your choice. To access an account from anywhere via web browser, OVHcloud provides an online email client called Outlook Web App (OWA). Our [webmail login page](https://www.ovh.ie/mail) is the single point of access to the respective OWA for all active email accounts on MX Plan, Email Pro and Hosted Exchange.
+With OVHcloud email solutions you can send and receive your emails using a device and client of your choice. To access an account from anywhere via web browser, OVHcloud provides an online email client called Outlook Web App (OWA). Our [webmail login page](/links/web/email) is the single point of access to the respective OWA for all active email accounts on MX Plan, Email Pro and Hosted Exchange.
 
 **This guide explains how to use your email address with OWA and exemplifies the most important features of this interface.**
 
 ## Requirements
 
-- an OVHcloud email solution already set up (**MX Plan**, available as part of our [Web Hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/), included in a [100M free hosting](https://www.ovhcloud.com/en-ie/domains/free-web-hosting/) or ordered separately as a standalone solution; [**Hosted Exchange**](https://www.ovhcloud.com/en-ie/emails/hosted-exchange/) or [**Email Pro**](https://www.ovhcloud.com/en-ie/emails/email-pro/))
+- an OVHcloud email solution already set up (**MX Plan**, available as part of our [Web Hosting plans](/links/web/hosting), included in a [100M free hosting](/links/web/domains-free-hosting) or ordered separately as a standalone solution; [**Hosted Exchange**](/links/web/emails-hosted-exchange) or [**Email Pro**](/links/web/email-pro))
 - login credentials for the email address you want to configure
 
 ## Instructions
@@ -26,7 +26,7 @@ This guide will give you a better understanding of the usual email account tasks
 
 ### 1. Accessing OWA webmail
 
-To log in to OWA webmail with your email address, go to the general [webmail login page](https://www.ovh.ie/mail). Enter your full email address and password, then click the `Login`{.action} button.
+To log in to OWA webmail with your email address, go to the general [webmail login page](/links/web/email). Enter your full email address and password, then click the `Login`{.action} button.
 
 ![useowa](images/use-owa-step1.png){.thumbnail}
 

@@ -12,7 +12,7 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 
 ## Prérequis
 
-- Disposer d'une offre [E-mail Pro](https://www.ovhcloud.com/fr/emails/email-pro/){.external}.
+- Disposer d'une offre [E-mail Pro](/links/web/email-pro).
 - Avoir installé l'application Microsoft Outlook sur votre appareil Android. Vous pouvez télécharger cette dernière depuis le *Google Play Store*.
 
 > [!warning]
@@ -26,7 +26,7 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 
 ### Étape 1 : récupérer les informations du compte E-mail Pro <a name="step1"></a>
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `E-mails Pro`{.action} puis choisissez la plateforme E-mail Pro où se trouve l'adresse e-mail à configurer.
+Connectez-vous à votre [espace client OVHcloud](/links/manager) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `E-mails Pro`{.action} puis choisissez la plateforme E-mail Pro où se trouve l'adresse e-mail à configurer.
 
 Sur la nouvelle page, cliquez sur l'onglet `Comptes e-mail`{.action}.
 
@@ -159,8 +159,8 @@ Testez ensuite l'envoi et la réception d'e-mails depuis votre application Micro
 
 ## Aller plus loin <a name="go-further"></a>
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

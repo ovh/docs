@@ -33,7 +33,7 @@ OVHcloud fornisce un servizio di webmail chiamato Zimbra per accedere a un accou
 
 ## Prerequisiti
 
-- Disporre di una soluzione email OVHcloud **MX Plan**, disponibile tra le nostre [offerte di hosting Web](https://www.ovhcloud.com/it/web-hosting/), inclusa in un [hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting/), o ordinata separatamente come soluzione autonoma.
+- Disporre di una soluzione email OVHcloud **MX Plan**, disponibile tra le nostre [offerte di hosting Web](/links/web/hosting), inclusa in un [hosting gratuito 100M](/links/web/domains-free-hosting), o ordinata separatamente come soluzione autonoma.
 - Disporre delle credenziali di accesso all’indirizzo email MX Plan da consultare. Per maggiori informazioni, consulta la nostra guida "[Iniziare a utilizzare il servizio MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)".
 
 ## Procedura
@@ -66,7 +66,7 @@ OVHcloud fornisce un servizio di webmail chiamato Zimbra per accedere a un accou
 
 ### Accedi alla Webmail Zimbra <a name="login"></a>
 
-Accedi alla pagina <https://www.ovh.com/it/mail/>. Inserisci il tuo indirizzo e-mail e la password e clicca su `Invia`{.action}.
+Accedi alla pagina [Webmail](/links/web/email). Inserisci il tuo indirizzo e-mail e la password e clicca su `Invia`{.action}.
 
 ![Zimbra - connessione](images/ovhcloud-login-webmail.png){.thumbnail}
 

@@ -12,8 +12,8 @@ Usługi e-mail OVHcloud umożliwiają korzystanie z profesjonalnych kont e-mail.
 
 ## Wymagania początkowe
 
-- Posiadanie usługi [e-mail OVHcloud](https://www.ovhcloud.com/pl/emails/){.external}
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), sekcja `Web Cloud`{.action}
+- Posiadanie usługi [e-mail OVHcloud](/links/web/emails)
+- Dostęp do [Panelu klienta OVHcloud](/links/manager), sekcja `Web Cloud`{.action}
 
 ## W praktyce
 
@@ -21,10 +21,10 @@ Zarządzanie polityką bezpieczeństwa usługi e-mail może wiązać się z czt
 
 - wzmocnienie bezpieczeństwa kont e-mail podczas próby logowania przez użytkowników;
 - ustanowienie bardziej złożonych haseł dla kont usługi e-mail;
-- wzmocnienie weryfikacji wiadomości przychodzących na serwery OVHcloud i na Twoje konta e-mail (dotyczy wyłącznie kont [Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/){.external});
-- zdefiniowanie, jak wiadomości „niechciane” będą wyświetlane w Twoich skrzynkach e-mail (dotyczy wyłącznie kont [Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/){.external}).
+- wzmocnienie weryfikacji wiadomości przychodzących na serwery OVHcloud i na Twoje konta e-mail (dotyczy wyłącznie kont [Exchange](/links/web/emails-hosted-exchange));
+- zdefiniowanie, jak wiadomości „niechciane” będą wyświetlane w Twoich skrzynkach e-mail (dotyczy wyłącznie kont [Exchange](/links/web/emails-hosted-exchange)).
 
-Aby przejść do polityki bezpieczeństwa usługi e-mail, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji `Web Cloud`{.action}. 
+Aby przejść do polityki bezpieczeństwa usługi e-mail, zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. 
 
 |E-maile i E-mail Pro|Exchange| 
 |---|---| 
@@ -39,8 +39,8 @@ Następnie przejdź do aspektów, które chcesz zmodyfikować.
 
 - [Wzmocnienie bezpieczeństwa danych](#enhanced-security): Określ, czy konta mają być blokowane po pewnej liczbie nieudanych prób logowania.
 - [Ustanowienie bardziej złożonego hasła](#password-complexity):Ustaw wymaganie złożoności oraz reguły zmiany hasła.
-- [Wzmocnienie weryfikacji wiadomości przychodzących (dotyczy wyłącznie usługi Exchange)](./#wzmocnienie-weryfikacji-wiadomosci-przychodzacych-dotyczy-wylacznie-uslugi-exchange){.external}Określ, czy serwery OVHcloud mają sprawdzać, czy otrzymane wiadomości pochodzą z dozwolonego źródła (weryfikacje DKIM i/lub SPF).
-- [Określenie sposobu wyświetlania niechcianych wiadomości (dotyczy wyłącznie usługi Exchange)](./#okreslenie-sposobu-wyswietlania-niechcianych-wiadomosci-dotyczy-wylacznie-uslugi-exchange){.external}Określ, czy niechciane wiadomości mają zawierać tag pozwalający je zidentyfikować, czy też automatycznie trafiać do kosza.
+- [Wzmocnienie weryfikacji wiadomości przychodzących (dotyczy wyłącznie usługi Exchange)](./#wzmocnienie-weryfikacji-wiadomosci-przychodzacych-dotyczy-wylacznie-uslugi-exchange)Określ, czy serwery OVHcloud mają sprawdzać, czy otrzymane wiadomości pochodzą z dozwolonego źródła (weryfikacje DKIM i/lub SPF).
+- [Określenie sposobu wyświetlania niechcianych wiadomości (dotyczy wyłącznie usługi Exchange)](./#okreslenie-sposobu-wyswietlania-niechcianych-wiadomosci-dotyczy-wylacznie-uslugi-exchange)Określ, czy niechciane wiadomości mają zawierać tag pozwalający je zidentyfikować, czy też automatycznie trafiać do kosza.
 
 ### Wzmocnienie bezpieczeństwa danych <a name="enhanced-security"></a>
 

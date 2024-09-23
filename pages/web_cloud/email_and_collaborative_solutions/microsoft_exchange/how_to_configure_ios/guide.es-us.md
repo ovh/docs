@@ -23,7 +23,7 @@ Es posible configurar sus cuentas Exchange en el cliente de correo que usted uti
 
 ## Requisitos
 
-- Disponer de una [cuenta de correo Exchange](https://www.ovhcloud.com/es/emails/hosted-exchange/){.external}.
+- Disponer de una [cuenta de correo Exchange](/links/web/emails-hosted-exchange).
 - Tener la aplicación Mail instalada en su dispositivo iOS.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
 
@@ -35,7 +35,7 @@ Es posible configurar sus cuentas Exchange en el cliente de correo que usted uti
 >
 > En nuestro ejemplo, utilizamos el nombre del servidor: ex**?**.mail.ovh.ca. ¿Debe reemplazar el "?" por el número que designa el servidor del servicio Exchange.
 >
-> Encuentre esta cifra en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la sección `Web Cloud`{.action} y, seguidamente, `Microsoft`{.action}.
+> Encuentre esta cifra en el [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action} y, seguidamente, `Microsoft`{.action}.
 > Haga clic en `Exchange`{.action} y seleccione la plataforma Exchange. El nombre del servidor puede verse en el recuadro **«Conexión»** de la pestaña `«Información General»`{.action}.
 >
 
@@ -60,7 +60,7 @@ Si lo desea, puede realizar una prueba de envío para comprobar que la cuenta es
 
 Una vez que haya configurado la dirección de correo electrónico, ya puede empezar a utilizarla enviando y recibiendo mensajes.
 
-OVHcloud también ofrece una aplicación web que tiene las [funciones colaborativas de Exchange](https://www.ovhcloud.com/es/emails/hosted-exchange/){.external} y está disponible en la dirección <https://www.ovh.com/world/es/mail/>. Puede acceder con el nombre de usuario y la contraseña de su dirección de correo electrónico.
+OVHcloud también ofrece una aplicación web que tiene las [funciones colaborativas de Exchange](/links/web/emails-hosted-exchange) y está disponible en la dirección [Webmail](/links/web/email). Puede acceder con el nombre de usuario y la contraseña de su dirección de correo electrónico.
 
 > [!primary]
 >

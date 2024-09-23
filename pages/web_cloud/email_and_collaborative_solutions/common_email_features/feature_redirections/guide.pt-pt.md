@@ -68,7 +68,7 @@ Clique nos separadores seguintes para obter explicações ilustradas sobre o fun
 ## Requisitos
 
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
-- Dispor de uma solução de e-mail OVHcloud previamente configurada (**MX Plan**, proposta entre as nossas [ofertas de alojamento web](https://www.ovhcloud.com/pt/web-hosting/), incluída num [Alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/) ou encomendada separadamente como solução autónoma, como o [Hosted Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/) ou o [Email Pro](https://www.ovhcloud.com/pt/emails/email-pro/)).
+- Dispor de uma solução de e-mail OVHcloud previamente configurada (**MX Plan**, proposta entre as nossas [ofertas de alojamento web](/links/web/hosting), incluída num [Alojamento gratuito 100M](/links/web/domains-free-hosting) ou encomendada separadamente como solução autónoma, como o [Hosted Exchange](/links/web/emails-hosted-exchange) ou o [Email Pro](/links/web/email-pro)).
 
 ## Instruções
 
@@ -83,7 +83,7 @@ Clique nos separadores seguintes para obter explicações ilustradas sobre o fun
 >
 
 >
-> Consoante a data de ativação da sua oferta MXplan ou se [esta foi migrada recentemente](https://www.ovhcloud.com/pt/web-hosting/mxplan-migration/), é possível que disponha da versão histórica ou da nova versão da oferta. Antes de prosseguir, deve identificar esta última.<br> 
+> Consoante a data de ativação da sua oferta MXplan ou se esta foi migrada recentemente, é possível que disponha da versão histórica ou da nova versão da oferta. Antes de prosseguir, deve identificar esta última.<br> 
 >
 >
 > Para isso, aceda à [Área de Cliente OVHcloud](/links/manager), na parte `Web Cloud`{.action}. Clique em `Emails`{.action} e escolha o nome do serviço MX Plan em causa. Continue a ler em função da versão que possui:<br>
@@ -149,7 +149,7 @@ Siga os passos descritos, clicando sucessivamente em cada separador abaixo:
 > [!tabs]
 > **Etapa 1**
 >>
->> Depois de aceder ao endereço de e-mail através do [webmail](https://www.ovhcloud.com/fr/mail/), clique na roda dentada no canto superior direito e, a seguir, em Opções`{.action}.<br><br>>
+>> Depois de aceder ao endereço de e-mail através do [webmail](/links/web/email), clique na roda dentada no canto superior direito e, a seguir, em Opções`{.action}.<br><br>>
 >> ![emails](images/emails-all-01.png){.thumbnail}<br>
 >>
 > **Etapa 2**

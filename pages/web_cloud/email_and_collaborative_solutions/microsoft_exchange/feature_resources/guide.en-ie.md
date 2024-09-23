@@ -12,13 +12,13 @@ This Exchange collaborative feature enables the creation of email addresses dedi
 
 ## Requirements
 
-- an [OVHcloud Exchange solution](https://www.ovhcloud.com/en-ie/emails/hosted-exchange/) already set up
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- an [OVHcloud Exchange solution](/links/web/emails-hosted-exchange) already set up
+- access to the [OVHcloud Control Panel](/links/manager)
 - login credentials for the email account(s) accessing the resource
 
 ## Instructions
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and select `Web Cloud`{.action} in the top navigation bar. Click `Microsoft`{.action}, then `Exchange`{.action}. Next, select the Exchange service concerned. Click on `More +`{.action} in the horizontal menu, then on `Resources`{.action}.
+Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action} in the top navigation bar. Click `Microsoft`{.action}, then `Exchange`{.action}. Next, select the Exchange service concerned. Click on `More +`{.action} in the horizontal menu, then on `Resources`{.action}.
 
 ### Step 1: Creating a resource
 
@@ -31,7 +31,7 @@ Click on the button `Add a resource account`{.action} to create your first resou
 |Name|Description|
 |---|---|
 |Resource email|Enter the address for the resource. Please note that you cannot choose an existing email address.|
-|Resource name|The display name that appears in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and in [OVHcloud webmail](https://www.ovh.ie/mail/) (OWA).|
+|Resource name|The display name that appears in your [OVHcloud Control Panel](/links/manager) and in [OVHcloud webmail](/links/web/email) (OWA).|
 |Capacity|You can define the maximum size of a resource (specifiying for example the seating capacity of a room or the seats in a shared company vehicle).|
 |Allow conflicts|If this box is ticked, you will be able to create overlapping calendar events involving the same resource.|
 |Resource type|Choose the resource type: "Equipment" or "Room".|
@@ -51,7 +51,7 @@ Your resources can be managed from the table in the `Resources` tab. Click on `.
 Please also refer to our guide on [Sharing calendars in OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_calendar_sharing).
 >
 
-Log in to your Exchange account via the [OVHcloud webmail](https://www.ovh.co.uk/mail). Switch to the "Calendar" interface by clicking on the "app launcher" in the top left-hand corner and then selecting the `Calendar`{.action} icon.
+Log in to your Exchange account via the [OVHcloud webmail](/links/web/email). Switch to the "Calendar" interface by clicking on the "app launcher" in the top left-hand corner and then selecting the `Calendar`{.action} icon.
 
 ![addcalendar](images/exchange-calendars-step1.png){.thumbnail}
 

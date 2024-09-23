@@ -18,7 +18,7 @@ You can configure MX Plan accounts on email clients, if they are compatible. By 
 
 ## Requirements
 
-- an MX Plan email address (included in the MX Plan solution and in [OVHcloud web hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/)).
+- an MX Plan email address (included in the MX Plan solution and in [OVHcloud web hosting plans](/links/web/hosting)).
 - **Mail** installed on your Mac.
 - the required credentials for the email address you would like to configure.
  
@@ -40,7 +40,7 @@ You can configure MX Plan accounts on email clients, if they are compatible. By 
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVHcloud also has a web application you can use to access your email address from your browser. You can access this application at <https://www.ovh.co.uk/mail/>. You can log in using your email credentials. If you have any question about how to use it, you can refer to our guide on [Using an account in the OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) interface or use your email address via the RoundCube webmail.
+OVHcloud also has a web application you can use to access your email address from your browser. You can access this application at [Webmail](/links/web/email). You can log in using your email credentials. If you have any question about how to use it, you can refer to our guide on [Using an account in the OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) interface or use your email address via the RoundCube webmail.
 
 ### Retrieve a backup of your email address
 

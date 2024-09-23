@@ -24,11 +24,11 @@ Gli indirizzi email dell’offerta MX Plan possono essere configurati su diversi
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
 >
-> Questa guida ti aiuta a realizzare le operazioni più ricorrenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [fornitore specializzato](https://partner.ovhcloud.com/it/directory/) o il fornitore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida.
+> Questa guida ti aiuta a realizzare le operazioni più ricorrenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [fornitore specializzato](/links/partner) o il fornitore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida.
 
 ## Prerequisiti
 
-- Disporre di un indirizzo email MX Plan (compreso in una soluzione MX Plan o in piano di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/)).
+- Disporre di un indirizzo email MX Plan (compreso in una soluzione MX Plan o in piano di [hosting Web OVHcloud](/links/web/hosting)).
 - Aver installato sul proprio dispositivo l’applicazione Gmail Se non è già presente, è possibile installarla dal Google Play Store.
 - Disporre delle credenziali associate all’account email da configurare
 
@@ -109,7 +109,7 @@ Una volta configurato l’indirizzo email, non ti resta che utilizzarlo! Da ques
 
 > [!success]
 >
-> OVHcloud propone un'applicazione Web che permette di accedere al tuo indirizzo email da un browser Web, all'indirizzo <https://www.ovhcloud.com/it/mail/>. accessibile utilizzando le credenziali del tuo account.
+> OVHcloud propone un'applicazione Web che permette di accedere al tuo indirizzo email da un browser Web, all'indirizzo [Webmail](/links/web/email). accessibile utilizzando le credenziali del tuo account.
 
 ### Impostazioni POP, IMAP e SMTP
 

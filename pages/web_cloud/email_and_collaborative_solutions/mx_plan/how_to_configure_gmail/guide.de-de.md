@@ -14,12 +14,12 @@ E-Mail-Adressen aus dem MX Plan Angebot können auf verschiedenen, kompatiblen E
 >
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Genauere Informationen finden Sie im Teil „Weiterführende Informationen" dieser Anleitung.
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Genauere Informationen finden Sie im Teil „Weiterführende Informationen" dieser Anleitung.
 > 
 
 ## Voraussetzungen
 
-- Sie besitzen eine MX Plan E-Mail-Adresse (im MX Plan Angebot oder in einem [Webhosting Angebot von OVHcloud](https://www.ovhcloud.com/de/web-hosting/){.external} enthalten).
+- Sie besitzen eine MX Plan E-Mail-Adresse (im MX Plan Angebot oder in einem [Webhosting Angebot von OVHcloud](/links/web/hosting) enthalten).
 - Sie haben die Login-Daten der OVHcloud E-Mail-Adresse, die Sie einrichten möchten.
 - Sie haben die Login-Daten des Gmail-Accounts (Privat oder beruflich), auf dem Sie die OVHcloud Adresse einrichten möchten.
 
@@ -84,7 +84,7 @@ Nachdem Sie die Informationen ausgefüllt haben, setzen Sie einen Haken bei `Sic
 
 ![mxplan](images/configuration-gmail-web-step5.png){.thumbnail}
 
-Jetzt müssen Sie nur noch das Hinzufügen des Accounts bestätigen, indem Sie den Bestätigungscode eingeben, der an Ihre OVHcloud E-Mail-Adresse versandt wurde. Loggen Sie sich hierzu wie gewohnt in unserem Webinterface ein: <https://www.ovh.de/mail/>. 
+Jetzt müssen Sie nur noch das Hinzufügen des Accounts bestätigen, indem Sie den Bestätigungscode eingeben, der an Ihre OVHcloud E-Mail-Adresse versandt wurde. Loggen Sie sich hierzu wie gewohnt in unserem Webinterface ein:[Webmail](/links/web/email). 
 
 Nach der Bestätigung erscheint Ihre OVHcloud E-Mail-Adresse im Tab `Konten und Import`{.action}, auf den Sie zu Beginn der Änderung zugegriffen haben.
 
@@ -96,7 +96,7 @@ Um eine Nachricht mit Ihrer OVHcloud E-Mail-Adresse über das Gmail-Interface zu
 
 ![mxplan](images/configuration-gmail-web-step6.png){.thumbnail}
 
-Natürlich können Sie auch weiterhin unser Webinterface unter <https://www.ovh.de/mail/> verwenden, um auf Ihre OVHcloud E-Mail-Adresse zuzugreifen. Loggen Sie sich hierzu wie gewohnt mit Ihren zugehörigen Login-Daten ein.
+Natürlich können Sie auch weiterhin unser Webinterface unter[Webmail](/links/web/email) verwenden, um auf Ihre OVHcloud E-Mail-Adresse zuzugreifen. Loggen Sie sich hierzu wie gewohnt mit Ihren zugehörigen Login-Daten ein.
 
 ## Weiterführende Informationen
 

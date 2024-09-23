@@ -20,8 +20,8 @@ La delegación ofrece al usuario de una cuenta de correo la posibilidad de gesti
 
 ## Requisitos
 
-- Tener una solución MX Plan  (disponible en: un [plan de hosting Cloud](https://www.ovhcloud.com/es-es/web-hosting/), un [Alojamiento gratuito 100M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/) o un MX Plan contratado por separado.
-- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), en la sección `Web Cloud`{.action}.
+- Tener una solución MX Plan  (disponible en: un [plan de hosting Cloud](/links/web/hosting), un [Alojamiento gratuito 100M](/links/web/domains-free-hosting) o un MX Plan contratado por separado.
+- Estar conectado al [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action}.
 
 > [!warning]
 >
@@ -37,10 +37,10 @@ La delegación ofrece al usuario de una cuenta de correo la posibilidad de gesti
 
 > [!primary]
 >
->La delegación en una cuenta de correo electrónico lo hace evidente en [el área de cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Sin embargo, en esta situación solo serán posibles los cambios indicados en la sección [Objetivo](#objective) de esta guía.
+>La delegación en una cuenta de correo electrónico lo hace evidente en [el área de cliente](/links/manager). Sin embargo, en esta situación solo serán posibles los cambios indicados en la sección [Objetivo](#objective) de esta guía.
 >
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} en la sección `Web Cloud`.
+Conéctese al [área de cliente de OVHcloud](/links/manager) en la sección `Web Cloud`.
 
 Haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente.
 

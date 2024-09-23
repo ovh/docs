@@ -21,8 +21,8 @@ Na przykład: chcesz, aby wszystkie e-maile zawierające "[SPAM]" w temacie zost
 
 ## Wymagania początkowe
 
-- Posiadanie usługi e-mail MX Plan (dostępnej poprzez: [oferta hostingu](https://www.ovhcloud.com/pl/web-hosting/){.external}, bezpłatny [Darmowy hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/){.external} zawarty w ofercie domeny lub oferta MX Plan zamówiona oddzielnie).
-- Posiadanie dostępu do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
+- Posiadanie usługi e-mail MX Plan (dostępnej poprzez: [oferta hostingu](/links/web/hosting), bezpłatny [Darmowy hosting 100M](/links/web/domains-free-hosting) zawarty w ofercie domeny lub oferta MX Plan zamówiona oddzielnie).
+- Posiadanie dostępu do [Panelu klienta](/links/manager)
 
 > [!warning]
 >
@@ -36,7 +36,7 @@ Poprzednia wersja usługi MX Plan|Nowa wersja usługi MX Plan|
 
 ## W praktyce <a name="oldmxplan"></a>
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} w sekcji `Web Cloud`.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager) w sekcji `Web Cloud`.
 
 Kliknij E-maile na pasku usług, po czym wybierz odpowiednią usługę MX Plan.
 

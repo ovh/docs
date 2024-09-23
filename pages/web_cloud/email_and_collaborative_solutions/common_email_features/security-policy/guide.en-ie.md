@@ -12,8 +12,8 @@ With OVHcloud email services, you can create professional email accounts. In ord
 
 ## Requirements
 
-- An [OVHcloud email solution](https://www.ovhcloud.com/en-ie/emails/)
-- Access to the `Web Cloud`{.action} section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- An [OVHcloud email solution](/links/web/emails)
+- Access to the `Web Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -21,10 +21,10 @@ The security policy management of your email service has four aspects:
 
 - enhancing email account security when users try to log in
 - adding complexity to the security of your email account passwords
-- strengthening the verification of incoming messages on our servers and to your email addresses (for [Exchange](https://www.ovhcloud.com/en-ie/emails/hosted-exchange/) accounts only)
-- configuring how so-called “unwanted” messages will be displayed in your inbox (for [Exchange](https://www.ovhcloud.com/en-ie/emails/hosted-exchange/) accounts only)
+- strengthening the verification of incoming messages on our servers and to your email addresses (for [Exchange](/links/web/emails-hosted-exchange) accounts only)
+- configuring how so-called “unwanted” messages will be displayed in your inbox (for [Exchange](/links/web/emails-hosted-exchange) accounts only)
 
-To access the security policy of your email service, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and make sure you are in the `Web Cloud`{.action} section. 
+To access the security policy of your email service, log in to your [OVHcloud Control Panel](/links/manager) and make sure you are in the `Web Cloud`{.action} section. 
 
 |Emails and Email Pro|Exchange| 
 |---|---| 

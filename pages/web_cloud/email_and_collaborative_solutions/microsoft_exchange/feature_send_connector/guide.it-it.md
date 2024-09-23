@@ -46,8 +46,8 @@ Ecco il contesto del diagramma sopra:
 
 ## Prerequisiti
 
-- Disporre di una piattaforma [Private Exchange OVHcloud](https://www.ovhcloud.com/fr/emails/private-exchange/) o [Trusted Exchange OVHcloud](https://www.ovhcloud.com/fr/enterprise/products/trusted-exchange/).
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Disporre di una piattaforma [Private Exchange OVHcloud](/links/web/emails-private-exchange) o [Trusted Exchange OVHcloud](/links/web/emails-trusted-exchange).
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Essere connesso alle [API OVHcloud](https://api.ovh.com/).
 - Disporre dei parametri necessari per configurare il connettore di invio. Contatta il fornitore del servizio.
 
@@ -69,7 +69,7 @@ In questa guida ti forniamo anche alcune informazioni utili sui connettori di in
 
 > [!warning]
 >
-> L'aggiunta di un connettore di invio è riservata alle offerte [Private Exchange OVHcloud](https://www.ovhcloud.com/fr/emails/private-exchange/) e [Trusted Exchange OVHcloud](https://www.ovhcloud.com/fr/enterprise/products/trusted-exchange/). Se attivi un connector di invio su una soluzione Exchange OVHcloud, diversa da quelle citate in precedenza, rischi di vederlo disattivato in qualsiasi momento dai nostri amministratori per motivi di sicurezza.
+> L'aggiunta di un connettore di invio è riservata alle offerte [Private Exchange OVHcloud](/links/web/emails-private-exchange) e [Trusted Exchange OVHcloud](/links/web/emails-trusted-exchange). Se attivi un connector di invio su una soluzione Exchange OVHcloud, diversa da quelle citate in precedenza, rischi di vederlo disattivato in qualsiasi momento dai nostri amministratori per motivi di sicurezza.
 
 Prima di iniziare, assicurati di avere a disposizione le seguenti informazioni. Esse devono essere fornite dal prestatore che rilascia il connettore per la spedizione.
 
@@ -326,8 +326,8 @@ Il risultato restituito è il seguente:
 
 [Aggiungere un dominio su Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

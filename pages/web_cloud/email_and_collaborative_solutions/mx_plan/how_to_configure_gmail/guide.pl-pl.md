@@ -19,7 +19,7 @@ Konta e-mail usługi MX Plan mogą być skonfigurowane w jednym z kompatybilnych
 
 ## Wymagania początkowe
 
-- Posiadanie konta e-mail MX Plan (zawartego w usłudze MX Plan lub w usłudze [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external})
+- Posiadanie konta e-mail MX Plan (zawartego w usłudze MX Plan lub w usłudze [hostingu OVHcloud](/links/web/hosting))
 - Dane do logowania do konta e-mail OVHcloud, które chcesz skonfigurować
 - Dane do konta Gmail (osobiste lub zawodowe), w którym chcesz skonfigurować konto e-mail OVHcloud
 
@@ -84,7 +84,7 @@ Po uzupełnieniu informacji zaznacz kratkę obok `Bezpieczne połączenie TLS`{.
 
 ![mxplan](images/configuration-gmail-web-step5.png){.thumbnail}
 
-Teraz zatwierdź dodane konto, wprowadzając kod wysłany na Twój adres e-mail OVHcloud.  Aby pobrać kod, zaloguj się jak zwykle do konta OVHcloud, korzystając z interfejsu online dostępnego tutaj: <https://www.ovh.pl/mail/>. 
+Teraz zatwierdź dodane konto, wprowadzając kod wysłany na Twój adres e-mail OVHcloud.  Aby pobrać kod, zaloguj się jak zwykle do konta OVHcloud, korzystając z interfejsu online dostępnego tutaj: [Webmail](/links/web/email). 
 
 Po zatwierdzeniu dodanego konta, e-mail konto pojawi się w zakładce `Konta i import`{.action}, którą otworzyłeś na początku operacji.
 
@@ -96,7 +96,7 @@ Aby wysłać wiadomość z konta e-mail OVHcloud za pośrednictwem interfejsu on
 
 ![mxplan](images/configuration-gmail-web-step6.png){.thumbnail}
 
-Pamiętaj, że aby uzyskać dostęp do Twojego konta e-mail OVHcloud, możesz również użyć interfejsu OVHcloud online dostępnego pod adresem <https://www.ovh.pl/mail/>. Zaloguj się, używając Twoich danych identyfikacyjnych.
+Pamiętaj, że aby uzyskać dostęp do Twojego konta e-mail OVHcloud, możesz również użyć interfejsu OVHcloud online dostępnego pod adresem [Webmail](/links/web/email). Zaloguj się, używając Twoich danych identyfikacyjnych.
 
 ## Sprawdź również
 

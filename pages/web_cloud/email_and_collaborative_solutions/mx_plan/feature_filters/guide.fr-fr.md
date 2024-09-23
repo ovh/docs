@@ -17,8 +17,8 @@ Par exemple : vous souhaitez que tout e-mail contenant « [SPAM] » dans le suje
 
 ## Prérequis
 
-- Disposer d'une offre e-mail MX Plan (disponible via : une offre d’[hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}, l'[hébergement gratuit 100M](https://www.ovhcloud.com/fr/domains/free-web-hosting/){.external} compris avec un nom de domaine, ou l'offre MX Plan commandée séparément).
-- Avoir accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+- Disposer d'une offre e-mail MX Plan (disponible via : une offre d’[hébergement web](/links/web/hosting), l'[hébergement gratuit 100M](/links/web/domains-free-hosting) compris avec un nom de domaine, ou l'offre MX Plan commandée séparément).
+- Avoir accès à votre [espace client OVHcloud](/links/manager).
 
 > [!warning]
 >
@@ -32,7 +32,7 @@ Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
 
 ## En pratique <a name="oldmxplan"></a>
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie `Web Cloud`.
+Connectez-vous à votre [espace client OVHcloud](/links/manager) dans la partie `Web Cloud`.
 
 Cliquez sur `Emails`{.action}, puis choisissez le nom du service MX Plan concerné.
 

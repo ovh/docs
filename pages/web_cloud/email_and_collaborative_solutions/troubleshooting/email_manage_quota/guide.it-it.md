@@ -16,16 +16,16 @@ Ogni account email OVHcloud dispone di uno spazio di storage dedicato. Gestire c
 
 ## Prerequisiti
 
-- Disporre di una soluzione email OVHcloud configurata precedentemente (**MX Plan**, inclusa nelle nostre [soluzioni di hosting Web](https://www.ovhcloud.com/it/web-hosting/), inclusa in un [Hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting/) o ordinata separatamente come soluzione autonoma, come [**Hosted Exchange**](https://www.ovhcloud.com/it/emails/hosted-exchange/) o [**Email Pro**](https://www.ovhcloud.com/it/emails/email-pro/))
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione `Web Cloud`{.action}.
+- Disporre di una soluzione email OVHcloud configurata precedentemente (**MX Plan**, inclusa nelle nostre [soluzioni di hosting Web](/links/web/hosting), inclusa in un [Hosting gratuito 100M](/links/web/domains-free-hosting) o ordinata separatamente come soluzione autonoma, come [**Hosted Exchange**](/links/web/emails-hosted-exchange) o [**Email Pro**](/links/web/email-pro))
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}.
 - Disporre delle informazioni di connessione agli indirizzi email interessati
 
 > [!primary]
 >
 > **Casi particolari**
 >
-> - Se disponi di un hosting gratuito 100M, prima di creare un indirizzo email è necessario attivarlo. Questa operazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), selezionando il dominio interessato.
-> - Prima di continuare la lettura di questa guida, è necessario attivare il servizio di [hosting Web](https://www.ovhcloud.com/it/web-hosting/). Per farlo, consulta la guida [Attiva gli indirizzi email inclusi nel tuo hosting Web](/pages/web_cloud/web_hosting/activate-email-hosting).
+> - Se disponi di un hosting gratuito 100M, prima di creare un indirizzo email è necessario attivarlo. Questa operazione è disponibile nello [Spazio Cliente OVHcloud](/links/manager), selezionando il dominio interessato.
+> - Prima di continuare la lettura di questa guida, è necessario attivare il servizio di [hosting Web](/links/web/hosting). Per farlo, consulta la guida [Attiva gli indirizzi email inclusi nel tuo hosting Web](/pages/web_cloud/web_hosting/activate-email-hosting).
 
 ## Procedura <a name="instructions"></a>
 
@@ -43,7 +43,7 @@ Questa operazione è disponibile nello Spazio Cliente OVHcloud, se la gestione d
 
 #### Dallo Spazio Cliente OVHcloud <a name="quotacontrolpanel"></a>
 
-Dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), seleziona la sezione `Web Cloud`{.action} e segui le indicazioni fornite:
+Dallo [Spazio Cliente OVHcloud](/links/manager), seleziona la sezione `Web Cloud`{.action} e segui le indicazioni fornite:
 
 > [!tabs]
 > **Email (MXplan)**
@@ -64,7 +64,7 @@ Dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&fro
 
 #### Dalla Webmail <a name="quotawebmail"></a>
 
-Accedi alla Webmail, clicca sulla pagina <https://www.ovhcloud.com/it/mail/>e inserisci le informazioni di connessione al tuo account. Seleziona qui sotto la Webmail corrispondente alla tua offerta:
+Accedi alla Webmail, clicca sulla pagina [Webmail](/links/web/email)e inserisci le informazioni di connessione al tuo account. Seleziona qui sotto la Webmail corrispondente alla tua offerta:
 
 > [!tabs]
 > **OWA**: **Email (MX Plan)**/**Email Pro**/**Exchange**
@@ -102,7 +102,7 @@ Se l'account email non ha raggiunto la sua capacità massima, è possibile aumen
 > [!tabs]
 > **Email (MXplan)**
 >>
->> La capacità di un account MXplan può variare da 2,5 MB a 5 GB. In caso di saturazione e capacità inferiore a 5 GB, è possibile modificarne la capacità tramite lo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).<br>
+>> La capacità di un account MXplan può variare da 2,5 MB a 5 GB. In caso di saturazione e capacità inferiore a 5 GB, è possibile modificarne la capacità tramite lo [Spazio Cliente OVHcloud](/links/manager).<br>
 >> Nella scheda `Account email`{.action}, clicca sul pulsante `...`{.action}a destra dell'account da modificare e poi clicca su `Modifica`{.action}.
 >> Dalla casella `Quota`{.action}, seleziona la dimensione più adatta alle tue esigenze, clicca su `Seguente`{.action} e poi `Conferma`{.action}.<br><br>
 >> ![email](images/email-quota-more01.png){.thumbnail}<br>
@@ -203,11 +203,11 @@ Seleziona l'offerta corrente del tuo account email nel menu qui sotto:
 > [!tabs]
 > **Email (MXplan)**
 >>
->> Se la capacità del tuo account email è già al massimo di 5 GB, puoi optare per una migrazione verso un'offerta [**Email Pro** da 10 GB](https://www.ovhcloud.com/it/emails/email-pro/) o [**Hosted Exchange** da 50 GB](https://www.ovhcloud.com/it/emails/hosted-exchange/). Per effettuare questa operazione, puoi scegliere la soluzione più adatta alle tue esigenze e consultare la nostra guida [Migrare un indirizzo email MX Plan verso un account Email Pro o Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel). 
+>> Se la capacità del tuo account email è già al massimo di 5 GB, puoi optare per una migrazione verso un'offerta [**Email Pro** da 10 GB](/links/web/email-pro) o [**Hosted Exchange** da 50 GB](/links/web/emails-hosted-exchange). Per effettuare questa operazione, puoi scegliere la soluzione più adatta alle tue esigenze e consultare la nostra guida [Migrare un indirizzo email MX Plan verso un account Email Pro o Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel). 
 >>
 > **Email Pro**
 >>
->> L'offerta Email Pro dispone di una capacità unica di 10GB. È possibile optare per una migrazione verso un'offerta [**Hosted Exchange** da 50 GB](https://www.ovhcloud.com/it/emails/hosted-exchange/). Per effettuare questa operazione, puoi scegliere la soluzione più adatta alle tue esigenze e consultare la guida [Migrare i tuoi indirizzi email da una piattaforma OVHcloud verso un'altra](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_platform).
+>> L'offerta Email Pro dispone di una capacità unica di 10GB. È possibile optare per una migrazione verso un'offerta [**Hosted Exchange** da 50 GB](/links/web/emails-hosted-exchange). Per effettuare questa operazione, puoi scegliere la soluzione più adatta alle tue esigenze e consultare la guida [Migrare i tuoi indirizzi email da una piattaforma OVHcloud verso un'altra](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_platform).
 >>
 > **Exchange**
 >>
@@ -224,6 +224,6 @@ Seleziona l'offerta corrente del tuo account email nel menu qui sotto:
 
 [Migrare i tuoi account email da una piattaforma OVHcloud verso un'altra](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_platform)
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [soluzioni di supporto](https://www.ovhcloud.com/it/support-levels/).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [soluzioni di supporto](/links/support).
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

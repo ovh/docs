@@ -106,7 +106,7 @@ Wenn Ihr E-Mail-Account eingerichtet ist, können Sie ab sofort E-Mails über Ih
 
 > [!success]
 >
-> Eine OVHcloud Webanwendung, mit der Sie über einen Webbrowser auf Ihren E-Mail-Account zugreifen können, ist verfügbar unter <https://www.ovhcloud.com/de/mail/>. Sie können sich mit den Login-Daten Ihres E-Mail-Accounts anmelden.
+> Eine OVHcloud Webanwendung, mit der Sie über einen Webbrowser auf Ihren E-Mail-Account zugreifen können, ist verfügbar unter [Webmail](/links/web/email). Sie können sich mit den Login-Daten Ihres E-Mail-Accounts anmelden.
 
 ### POP-, IMAP- und SMTP-Einstellungen
 

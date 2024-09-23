@@ -12,12 +12,12 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 > [!warning]
 > This guide will show you how to use one or more OVHcloud solutions with external tools, and the changes you need to make in specific contexts. You may need to adapt the instructions according to your situation.
 >
-> If you experience any difficulties carrying out these operations, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en/directory/) and/or discuss the issue with our community. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#gofurther) section of this guide.
+> If you experience any difficulties carrying out these operations, we recommend that you contact a [specialist service provider](/links/partner) and/or discuss the issue with our community. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#gofurther) section of this guide.
 >
 
 ## Requirements
 
-- an [OVHcloud Exchange account](https://www.ovhcloud.com/en/emails/hosted-exchange/){.external}
+- an [OVHcloud Exchange account](/links/web/emails-hosted-exchange)
 - Microsoft Outlook or later installed on your device
 - login credentials for the email account to be configured
 - The OVHcloud SRV record must be correctly configured in the domain name’s DNS zone. Please refer to our guide on [Adding a domain name to an Exchange service](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
@@ -51,7 +51,7 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 > 
 > ![Exchange](images/config-outlook-exchange03.png){.thumbnail}
 >
-> We recommend that you check the configuration of the domain name associated with your Exchange service. In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), go to the `Associated domains`{.action} tab and check the `Diagnostic`{.action} column of the table.
+> We recommend that you check the configuration of the domain name associated with your Exchange service. In your [OVHcloud Control Panel](/links/manager), go to the `Associated domains`{.action} tab and check the `Diagnostic`{.action} column of the table.
 >
 
 - If your domain name’s configuration is valid, you may receive a login authorisation message for your OVHcloud servers. Accept this to allow your Exchange account to be configured automatically.
@@ -63,7 +63,7 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-Your Exchange email address and all of its collaborative features are also available via the [OWA interface](https://www.ovh.com/world/mail/). If you have any questions about how to use this interface, please refer to our guide on [Using the Outlook Web App](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
+Your Exchange email address and all of its collaborative features are also available via the [OWA interface](/links/web/email). If you have any questions about how to use this interface, please refer to our guide on [Using the Outlook Web App](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
 ### Retrieving a backup of your email address
 

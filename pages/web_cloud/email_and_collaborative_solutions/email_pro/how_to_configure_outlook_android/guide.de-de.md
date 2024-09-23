@@ -16,20 +16,20 @@ E-Mail Pro Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingeri
 
 ## Voraussetzungen
 
-- Sie haben einen [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/) Dienst in Ihrem Kunden-Account.
+- Sie haben einen [E-Mail Pro](/links/web/email-pro) Dienst in Ihrem Kunden-Account.
 - Sie haben die Microsoft Outlook App auf Ihrem Android-Gerät installiert. Sie können diese aus dem *Google Play Store* herunterladen.
 
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) oder den Herausgeber des Dienstes zu kontaktieren. Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten. Weitere Informationen finden Sie im Abschnitt [„Weiterführende Informationen“](#go-further) dieser Anleitung.
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) oder den Herausgeber des Dienstes zu kontaktieren. Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten. Weitere Informationen finden Sie im Abschnitt [„Weiterführende Informationen“](#go-further) dieser Anleitung.
 >
 
 ## In der praktischen Anwendung
 
 ### Schritt 1: E-Mail Pro Account-Informationen abrufen <a name="step1"></a>
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein gehen Sie dann in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `E-Mail für Profis`{.action} und wählen Sie den E-Mail Pro Dienst mit dem zu konfigurierenden E-Mail-Account aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein gehen Sie dann in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `E-Mail für Profis`{.action} und wählen Sie den E-Mail Pro Dienst mit dem zu konfigurierenden E-Mail-Account aus.
 
 Klicken Sie auf der neuen Seite auf den Tab `E-Mail-Accounts`{.action}.
 
@@ -163,8 +163,8 @@ Testen Sie dann das Senden und Empfangen von E-Mails über Ihre Microsoft Outloo
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

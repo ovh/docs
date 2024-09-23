@@ -104,7 +104,7 @@ messages from your Gmail application.
 > [!success]
 > 
 > OVHcloud offers a web application that allows you to access your email address from a web browser,
-> at the address <https://www.ovhcloud.com/en-ie/mail/>. You can
+> at the address [Webmail](/links/web/email). You can
 > log in using your email credentials.
 
 

@@ -64,7 +64,7 @@ Haga clic en las fichas siguientes para obtener una explicación ilustrada del f
 ## Requisitos
 
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
-- Disponer de una solución de correo electrónico de OVHcloud previamente configurada (**MX Plan**, incluida en nuestros [planes de hosting](https://www.ovhcloud.com/es-es/web-hosting/), incluida en un [Alojamiento gratuito 100M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/) o contratada por separado como solución autónoma, como [Hosted Exchange](https://www.ovhcloud.com/es-es/emails/hosted-exchange/) o [Email Pro](https://www.ovhcloud.com/es-es/emails/email-pro/)).
+- Disponer de una solución de correo electrónico de OVHcloud previamente configurada (**MX Plan**, incluida en nuestros [planes de hosting](/links/web/hosting), incluida en un [Alojamiento gratuito 100M](/links/web/domains-free-hosting) o contratada por separado como solución autónoma, como [Hosted Exchange](/links/web/emails-hosted-exchange) o [Email Pro](/links/web/email-pro)).
 
 ## Procedimiento
 
@@ -79,7 +79,7 @@ Haga clic en las fichas siguientes para obtener una explicación ilustrada del f
 > 
 
 >
-> En función de la fecha de activación de su MX plan o si [esta ha sido migrada recientemente](https://www.ovhcloud.com/es-es/web-hosting/mxplan-migration/), es posible que disponga de la versión histórica o de la nueva versión del producto. Antes de continuar, es necesario identificarla.<br>
+> En función de la fecha de activación de su MX plan o si esta ha sido migrada recientemente, es posible que disponga de la versión histórica o de la nueva versión del producto. Antes de continuar, es necesario identificarla.<br>
 >
 > Para ello, conéctese a su [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action}. Haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente. Siga leyendo esta guía en función de su versión:<br>
 >

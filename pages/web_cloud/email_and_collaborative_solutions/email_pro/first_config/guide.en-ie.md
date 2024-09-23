@@ -92,7 +92,7 @@ Once you have added the domain name as an associated domain, check its configura
 
 You can use the `Diagnosis`{.action} column to check the domain name’s DNS configuration. A red box will appear if these configurations need to be changed. There are two possibilities:
 
-- **Automatic configuration when you add an OVHcloud domain name**: If you have just made the change, it may take a few hours before it is displayed in [the OVHcloud Control Panel](/links/manager){.external}.
+- **Automatic configuration when you add an OVHcloud domain name**: If you have just made the change, it may take a few hours before it is displayed in [the OVHcloud Control Panel](/links/manager).
 
 - **Manual configuration for a non-OVHcloud domain name**: Click on the red box to view the changes you will need to make.
     - *For a CNAME* record, you can use our guide on "[Creating a CNAME record when adding an associated domain](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)".

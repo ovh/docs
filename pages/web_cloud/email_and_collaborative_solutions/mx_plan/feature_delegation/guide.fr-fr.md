@@ -16,8 +16,8 @@ La délégation donne la possibilité à l'utilisateur d'un compte e-mail de gé
 
 ## Prérequis
 
-- Posséder une offre MX Plan. Celle-ci est disponible via : une [offre d’hébergement Web Cloud](https://www.ovhcloud.com/fr/web-hosting/), un [hébergement gratuit 100M](https://www.ovhcloud.com/fr/domains/free-web-hosting/) ou une offre MX Plan commandée séparément.
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Web Cloud`{.action}.
+- Posséder une offre MX Plan. Celle-ci est disponible via : une [offre d’hébergement Web Cloud](/links/web/hosting), un [hébergement gratuit 100M](/links/web/domains-free-hosting) ou une offre MX Plan commandée séparément.
+- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
 
 > [!warning]
 >
@@ -34,11 +34,11 @@ La délégation donne la possibilité à l'utilisateur d'un compte e-mail de gé
 > [!primary]
 >
 >La mise en place d'une délégation sur un compte e-mail le fait apparaître dans [l'espace client](
-https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr
+/links/manager
 ) concerné. Pour autant, seules les modifications indiquées dans la section [Objectif](#objective) de ce guide seront possibles dans cette situation.
 >
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie `Web Cloud`.
+Connectez-vous à votre [espace client OVHcloud](/links/manager) dans la partie `Web Cloud`.
 
 Cliquez sur `Emails`{.action}, puis choisissez le nom du service MX Plan concerné.
 

@@ -6,13 +6,13 @@ updated: 2024-09-03
 
 ## Obiettivo
 
-Con le soluzioni email OVHcloud puoi inviare e ricevere le tue email utilizzando il dispositivo e il client che preferisci. Per accedere a un account da qualsiasi luogo mediante un browser Web, OVHcloud fornisce il client di posta elettronica online Outlook Web App (OWA). La nostra pagina di accesso alla [Webmail](https://www.ovh.it/mail) è l’unico punto di accesso alla relativa OWA per tutti gli account email attivi su MX Plan, Email Pro e Hosted Exchange.
+Con le soluzioni email OVHcloud puoi inviare e ricevere le tue email utilizzando il dispositivo e il client che preferisci. Per accedere a un account da qualsiasi luogo mediante un browser Web, OVHcloud fornisce il client di posta elettronica online Outlook Web App (OWA). La nostra pagina di accesso alla [Webmail](/links/web/email) è l’unico punto di accesso alla relativa OWA per tutti gli account email attivi su MX Plan, Email Pro e Hosted Exchange.
 
 **Questa guida spiega come eseguire azioni di carattere generale con il tuo indirizzo email nell’interfaccia OWA.**
 
 ## Prerequisiti
 
-- Disporre di una soluzione di posta elettronica OVHcloud attiva (**MX Plan**, disponibile come parte dei nostri piani di [hosting Web](https://www.ovhcloud.com/it/web-hosting/), inclusi in un [hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting/) oppure ordinato separatamente con una soluzione indipendente; [**Hosted Exchange**](https://www.ovhcloud.com/it/emails/hosted-exchange/) o ancora [**Email Pro**](https://www.ovhcloud.com/it/emails/email-pro/))
+- Disporre di una soluzione di posta elettronica OVHcloud attiva (**MX Plan**, disponibile come parte dei nostri piani di [hosting Web](/links/web/hosting), inclusi in un [hosting gratuito 100M](/links/web/domains-free-hosting) oppure ordinato separatamente con una soluzione indipendente; [**Hosted Exchange**](/links/web/emails-hosted-exchange) o ancora [**Email Pro**](/links/web/email-pro))
 - Credenziali di accesso all’account di posta elettronica da configurare
 
 ## Procedura
@@ -26,7 +26,7 @@ Questa guida ti consentirà di comprendere meglio quello che è possibile ottene
 
 ### 1. Accedere alla Webmail OWA
 
-Per accedere alla Webmail OWA con il tuo indirizzo email, vai alla pagina generale di login [della Webmail](https://www.ovh.it/mail). Digita il tuo indirizzo email e la tua password, quindi clicca sul pulsante `Login`{.action}.
+Per accedere alla Webmail OWA con il tuo indirizzo email, vai alla pagina generale di login [della Webmail](/links/web/email). Digita il tuo indirizzo email e la tua password, quindi clicca sul pulsante `Login`{.action}.
 
 ![useowa](images/use-owa-step1.png){.thumbnail}
 

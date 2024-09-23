@@ -45,7 +45,7 @@ Para recuperar um ficheiro `.eml`, consulte a secção [Webmail](#webmail).
 
 ## Requisitos
 
-- Dispor de um endereço de e-mail numa das nossas [soluções de e-mail OVHcloud](https://www.ovhcloud.com/pt/emails/) ou numa solução externa.
+- Dispor de um endereço de e-mail numa das nossas [soluções de e-mail OVHcloud](/links/web/emails) ou numa solução externa.
 - Ter acesso ao endereço de e-mail através do seu webmail ou de um software de correio eletrónico.
 
 ## Instruções

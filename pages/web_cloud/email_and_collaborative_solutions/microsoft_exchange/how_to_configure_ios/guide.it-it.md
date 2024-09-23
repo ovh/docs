@@ -23,7 +23,7 @@ Gli account Exchange possono essere configurati su client di posta compatibili, 
 
 ## Prerequisiti
 
-- Disporre di un [account email Exchange](https://www.ovhcloud.com/it/emails/){.external}
+- Disporre di un [account email Exchange](/links/web/emails)
 - Aver installato l'applicazione Mail sul proprio dispositivo iOS
 - Disporre delle credenziali associate all’account email da configurare
 
@@ -35,7 +35,7 @@ Gli account Exchange possono essere configurati su client di posta compatibili, 
 >
 > Nel nostro esempio, usiamo il nome del server: ex**?**.mail.ovh.net. Dovrai sostituire il ""? " dalla cifra che indica il server del tuo servizio Exchange.
 >
-> Questa cifra è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, nella sezione `Web Cloud`{.action} e `Microsoft`{.action}.
+> Questa cifra è disponibile nello [Spazio Cliente OVHcloud](/links/manager), nella sezione `Web Cloud`{.action} e `Microsoft`{.action}.
 > Clicca su `Exchange`{.action} e poi sulla piattaforma Exchange. Il nome del server è visibile nel riquadro **Connessione** della `scheda Informazioni generali`{.action}.
 >
 
@@ -60,7 +60,7 @@ Per verificare la corretta configurazione dell’account esegui un test di invio
 
 Una volta configurato l’indirizzo email, non ti resta che utilizzarlo! A partire da questo momento puoi inviare e ricevere messaggi.
 
-OVHcloud propone un'applicazione Web con [funzionalità collaborative Exchange](https://www.ovhcloud.com/it/emails/){.external}, disponibile all'indirizzo <https://www.ovh.it/mail/>. e accessibile con le credenziali del tuo account.
+OVHcloud propone un'applicazione Web con [funzionalità collaborative Exchange](/links/web/emails), disponibile all'indirizzo [Webmail](/links/web/email). e accessibile con le credenziali del tuo account.
 
 > [!primary]
 >

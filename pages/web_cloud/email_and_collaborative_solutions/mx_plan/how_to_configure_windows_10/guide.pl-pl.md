@@ -12,13 +12,13 @@ Konta e-mail MX Plan mogą być skonfigurowane w jednym z kompatybilnych program
 
 ## Wymagania początkowe
 
-- Posiadanie konta e-mail MX Plan (zawartego w pakiecie MX Plan lub w usłudze [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external})
+- Posiadanie konta e-mail MX Plan (zawartego w pakiecie MX Plan lub w usłudze [hostingu OVHcloud](/links/web/hosting))
 - Instalacja aplikacji Poczta na Twoim urządzeniu
 - Dane do logowania do konta e-mail, które chcesz skonfigurować
 
 > [!primary]
 >
-> Czy używasz wcześniejszej wersji systemu Windows? Zapoznaj się z naszą dokumentacją: [Konfiguracja konta e-mail w aplikacji Poczta na urządzeniu z systemem Windows 8](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10){.external}.
+> Czy używasz wcześniejszej wersji systemu Windows? Zapoznaj się z naszą dokumentacją: [Konfiguracja konta e-mail w aplikacji Poczta na urządzeniu z systemem Windows 8](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10).
 >
 
 ## W praktyce
@@ -81,10 +81,10 @@ Jeśli wprowadzasz ręcznie dane techniczne w ustawieniach konta, poniżej znajd
 
 Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz zacząć wysyłać i odbierać wiadomości.
 
-OVHcloud oferuje aplikację internetową umożliwiającą korzystanie z Twojego konta e-mail przy użyciu przeglądarki. Jest ona dostępna pod adresem <https://www.ovh.pl/mail/>. Możesz się do niej zalogować, używając tych samych danych, których użyłeś do konfiguracji konta e-mail.
+OVHcloud oferuje aplikację internetową umożliwiającą korzystanie z Twojego konta e-mail przy użyciu przeglądarki. Jest ona dostępna pod adresem [Webmail](/links/web/email). Możesz się do niej zalogować, używając tych samych danych, których użyłeś do konfiguracji konta e-mail.
  
 ## Sprawdź również
 
-[Konfiguracja konta Exchange w aplikacji Poczta na urządzeniu z systemem Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_windows_10){.external}
+[Konfiguracja konta Exchange w aplikacji Poczta na urządzeniu z systemem Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_windows_10)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

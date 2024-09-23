@@ -29,7 +29,7 @@ Eis a lista dos softwares incluídos:
 
 ### Encomendar uma licença
 
-Aceda à página comercial [Microsoft 365 OVHcloud](https://www.ovh.com/pt/office-365-business){.external} e selecione a rubrica `Microsoft`{.action} da nossa secção `Web Cloud`{.action}.
+Aceda à página comercial [Microsoft 365 OVHcloud](/links/web/ms365) e selecione a rubrica `Microsoft`{.action} da nossa secção `Web Cloud`{.action}.
 
 Pode igualmente encomendar uma licença a partir da [Área de Cliente OVHcloud](/links/manager). Depois de conectado, selecione `Web Cloud`{.action} na faixa superior e clique no botão `Encomendar`{.action} e em `O365`{.action}.
 

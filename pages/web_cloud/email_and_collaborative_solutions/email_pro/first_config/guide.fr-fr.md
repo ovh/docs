@@ -12,16 +12,16 @@ Vous venez d’acquérir une solution E-mail Pro. Celle-ci vous permet de béné
 
 ## Prérequis
 
-- Disposer d'une offre [E-mail Pro](/links/web/email-pro){.external}.
+- Disposer d'une offre [E-mail Pro](/links/web/email-pro).
 - Avoir reçu l’e-mail vous confirmant l’installation de votre solution E-mail Pro.
 - Disposer d'un nom de domaine.
-- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 
 ### Étape 1 : accéder à la gestion de votre service
 
-Une fois le service E-mail Pro créé et disponible, vous pouvez le gérer depuis votre [espace client OVHcloud](/links/manager){.external}.
+Une fois le service E-mail Pro créé et disponible, vous pouvez le gérer depuis votre [espace client OVHcloud](/links/manager).
 
 Pour cela, connectez-vous à ce dernier, cliquez sur `E-mail Pro`{.action}, puis choisissez le nom du service concerné.
 
@@ -92,7 +92,7 @@ Une fois le nom de domaine ajouté en tant que domaine associé, vérifiez son p
 
 La colonne `Diagnostic`{.action} vous permet de contrôler la configuration DNS du nom de domaine. Une pastille rouge apparaîtra si ces paramètres doivent être modifiés. Il y a deux possibilités:
 
-- **Configuration automatique lors de l'ajout d'un nom de domaine OVHcloud** : si vous venez juste d'effectuer la modification, l’affichage dans [l'espace client OVHcloud](/links/manager){.external} peut prendre quelques heures.
+- **Configuration automatique lors de l'ajout d'un nom de domaine OVHcloud** : si vous venez juste d'effectuer la modification, l’affichage dans [l'espace client OVHcloud](/links/manager) peut prendre quelques heures.
 
 - **Configuration manuelle pour un nom de domaine non géré par OVHcloud** : cliquez sur la pastille rouge afin de découvrir les modifications à réaliser.
     - *Pour un enregistrement CNAME*, aidez-vous de notre guide « [Créer un champ CNAME à l’ajout d’un domaine associé](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname) ».
@@ -146,7 +146,7 @@ Une fois les informations complétées, cliquez sur le bouton `Suivant`{.action}
 
 ### Étape 5 : utiliser vos adresses e-mail
 
-Une fois vos comptes configurés, il ne vous reste plus qu'à les utiliser ! Pour cela, OVHcloud met à disposition un applicatif en ligne (une *webapp*). Ce dernier est accessible à l’adresse <https://www.ovh.com/fr/mail/> et vous devrez y renseigner les identifiants relatifs à votre adresse e-mail.
+Une fois vos comptes configurés, il ne vous reste plus qu'à les utiliser ! Pour cela, OVHcloud met à disposition un applicatif en ligne (une *webapp*). Ce dernier est accessible à l’adresse [Webmail](/links/web/email) et vous devrez y renseigner les identifiants relatifs à votre adresse e-mail.
 
 Si c'est la première fois que vous vous connectez à OWA avec cette adresse e-mail, vous serez invité à définir la langue de l'interface ainsi que le fuseau horaire. Ensuite, cliquez sur `Enregistrer`{.action} pour continuer.
 
@@ -167,7 +167,7 @@ Pour configurer votre adresse e-mail sur un logiciel de messagerie ou un apparei
 >
 > Dans notre exemple, nous utilisons la mention serveur : pro**?**.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service E-mail Pro.
 >
-> Retrouvez ce chiffre dans votre [espace client OVHcloud](/links/manager){.external}, dans la rubrique `Web Cloud`{.action} puis `E-mail Pro`{.action}. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
+> Retrouvez ce chiffre dans votre [espace client OVHcloud](/links/manager), dans la rubrique `Web Cloud`{.action} puis `E-mail Pro`{.action}. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
 >
 
 ## Aller plus loin

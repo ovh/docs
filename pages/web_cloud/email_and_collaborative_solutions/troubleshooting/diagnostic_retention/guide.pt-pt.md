@@ -18,9 +18,9 @@ Eliminou por erro um ou vários elementos (e-mail, contacto, calendário) e esva
 ## Requisitos
  
 - Ter uma solução de e-mail OVHcloud:
-    - **MX Plan** ([nova versão apenas](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)) proposto entre as nossas [ofertas de alojamento web](https://www.ovhcloud.com/pt/web-hosting/), incluído num [Alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/) 
-    - ou [**Hosted Exchange**](https://www.ovhcloud.com/pt/emails/hosted-exchange/)
-    - ou [**Email Pro**](https://www.ovhcloud.com/pt/emails/email-pro/)
+    - **MX Plan** ([nova versão apenas](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)) proposto entre as nossas [ofertas de alojamento web](/links/web/hosting), incluído num [Alojamento gratuito 100M](/links/web/domains-free-hosting) 
+    - ou [**Hosted Exchange**](/links/web/emails-hosted-exchange)
+    - ou [**Email Pro**](/links/web/email-pro)
 - Conhecer os dados de acesso do endereço de e-mail em questão
 
 ## Instruções
@@ -45,7 +45,7 @@ A recuperação dos elementos eliminados pode ser efetuada a partir do webmail (
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI?start=117" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Ligue-se ao endereço de e-mail em causa através do webmail (OWA): <https://www.ovhcloud.com/pt/mail/>.
+Ligue-se ao endereço de e-mail em causa através do webmail (OWA): [Webmail](/links/web/email).
 
 > [!primary]
 >

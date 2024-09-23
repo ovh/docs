@@ -17,8 +17,8 @@ Il vous est impossible de recevoir ou envoyer vos e-mails depuis votre logiciel 
 
 ## Prérequis
 
-- Posséder une offre **E-mail** associée à [solution d'hébergement OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/) ou une offre [Exchange](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/).
-- Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- Posséder une offre **E-mail** associée à [solution d'hébergement OVHcloud](/links/web/hosting) ou une offre [Exchange](/links/web/emails-hosted-exchange).
+- Être connecté à l'[espace client OVHcloud](/links/manager).
 
 ## En pratique
 
@@ -49,13 +49,13 @@ Si vous utilisez un logiciel de messagerie sur votre ordinateur (Outlook, Mail d
 
 ### Je ne parviens pas à recevoir d'e-mails car mon adresse e-mail est saturée, je n'ai plus d'espace. Que puis-je faire ?
 
-Si vous avez souscrit à [l'une de nos offres e-mail OVHcloud](https://www.ovhcloud.com/fr/emails/) et que l'un de vos comptes e-mail est saturé, consultez notre guide « [Gérer l'espace de stockage d'un compte e-mail](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota) ». Ce guide vous aidera à déterminer si vous pouvez optimiser l'espace existant ou s’il est nécessaire de changer d'offre e-mail pour augmenter la capacité de stockage.
+Si vous avez souscrit à [l'une de nos offres e-mail OVHcloud](/links/web/emails) et que l'un de vos comptes e-mail est saturé, consultez notre guide « [Gérer l'espace de stockage d'un compte e-mail](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota) ». Ce guide vous aidera à déterminer si vous pouvez optimiser l'espace existant ou s’il est nécessaire de changer d'offre e-mail pour augmenter la capacité de stockage.
 
 ### Les e-mails sont-ils fonctionnels depuis le webmail ? (**envoi** et/ou **réception**)
 
 Pour vous assurer que le dysfonctionnement n'est pas lié à une erreur de configuration, réalisez un test d'envoi et de réception directement via le webmail d'OVHcloud. Si tout fonctionne correctement, vérifiez la configuration de votre logiciel via les guides mis à votre disposition.
 
-Depuis le navigateur de votre ordinateur ou depuis un smartphone, allez sur l'adresse <https://www.ovh.com/ca/fr/mail/>.
+Depuis le navigateur de votre ordinateur ou depuis un smartphone, allez sur l'adresse [Webmail](/links/web/email).
 
 ![webmail](images/webmail.png){.thumbnail}
 
@@ -108,7 +108,7 @@ Vous trouverez ci-dessous la majorité des codes de réponses négatives SMTP ut
 |421|Service non disponible, canal de transmission en cours de fermeture|Provenance de l'erreur indéterminée, assurez-vous que l'envoi vers un autre domaine fonctionne. Si oui, veuillez réessayer l'envoi initial plus tard|
 |432|Réception du mail sur le serveur Exchange stoppé|Ce message d'erreur est retourne uniquement par les serveurs mail Microsoft Exchange. Contactez l'administrateur du serveur de messagerie de destination|
 |449|Une erreur de routage|Ce message d'erreur est retourné uniquement par les serveurs mail Microsoft Exchange. Microsoft recommande d'effectuer un diagnostic avec leur outil WinRoute|
-|450|Action de messagerie demandée non effectuée : boîte mail indisponible (par exemple, boîte mail occupée ou temporairement bloquée pour des raisons de sécurité ou de blacklistage)|Vérifiez si votre adresse IP du serveur de messagerie n'est pas blacklistée ([SpamHaus](https://check.spamhaus.org/){.external}), et vérifiez également si votre mail ne comporte pas des mots se référant à du SPAM.|
+|450|Action de messagerie demandée non effectuée : boîte mail indisponible (par exemple, boîte mail occupée ou temporairement bloquée pour des raisons de sécurité ou de blacklistage)|Vérifiez si votre adresse IP du serveur de messagerie n'est pas blacklistée ([SpamHaus](https://check.spamhaus.org/)), et vérifiez également si votre mail ne comporte pas des mots se référant à du SPAM.|
 |451|Action requise abandonnée : Erreur de traitement local|Cela peut être dû à une surcharge momentanée, ou à une vérification du SPF du domaine émetteur incorrecte. Référez-vous au message complémentaire fourni par le serveur, ou contactez l'administrateur de celui-ci si cela persiste|
 |452|Action demandée non effectuée : système de stockage insuffisant|Votre serveur de messagerie est « surchargé ». Cela pourrait également être causé par un trop grand nombre de messages qui tentent d'être envoyés à la fois. Veuillez vérifier votre boîte d'envoi puis réessayez|
 |455|Serveur incapable de recevoir les paramètres|Patientez quelque temps puis effectuez une nouvelle tentative. En cas d'échec, contactez l'administrateur du serveur de messagerie du destinataire|
@@ -124,7 +124,7 @@ Vous trouverez ci-dessous la majorité des codes de réponses négatives SMTP ut
 |551|Utilisateur non local|Ceci est en général utilisé comme une stratégie de prévention contre le spam. Il est indiqué que le relais de courrier n'est pas autorisé pour une raison quelconque à relayer votre message vers un autre serveur que le vôtre. Veuillez contacter votre fournisseur de service|
 |552|Action de messagerie demandée interrompue : espace de stockage dépassé|L'utilisateur que vous avez essayé de contacter n'a plus d'espace disponible pour recevoir des messages. Malheureusement, la seule solution est de contacter le destinataire via une autre méthode|
 |553|Action demandée non effectuée : adresse e-mail non autorisée|Cela est en général causé par une adresse e-mail de destination incorrecte. Veuillez vérifier que l'adresse e-mail en question est bien correcte|
-|554|Transaction échouée, "Aucun service SMTP ici"|Il s'agit en général d'un problème de blacklist. Vérifiez si votre adresse IP du serveur de messagerie n'est pas blacklistée ([SpamHaus](https://check.spamhaus.org/){.external})|
+|554|Transaction échouée, "Aucun service SMTP ici"|Il s'agit en général d'un problème de blacklist. Vérifiez si votre adresse IP du serveur de messagerie n'est pas blacklistée ([SpamHaus](https://check.spamhaus.org/))|
 |555|MAIL FROM / RCPT TO, paramètres non reconnus ou non mis en oeuvre|Le serveur SMTP sortant n'enregistre pas correctement l'adresse e-mail utilisée soit dans vos paramètres "De" ou "A". Veuillez vérifier que les adresses e-mail indiquées sont correctes, et vérifiez également que vous n'avez pas dépassé la limite définie par OVHcloud : 200 mails /heure /compte et 300 mails /heure /ip|
 
 ## Aller plus loin

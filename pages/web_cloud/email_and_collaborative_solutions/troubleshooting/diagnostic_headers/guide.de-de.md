@@ -45,7 +45,7 @@ Um eine `.eml` Datei abzurufen, gehen Sie direkt zum Abschnitt [Webmail](#webmai
 
 ## Voraussetzungen
 
-- Sie verwenden eine E-Mail-Adresse mit einem [OVHcloud E-Mail Dienst](https://www.ovhcloud.com/de/emails/) oder einer externen Lösung.
+- Sie verwenden eine E-Mail-Adresse mit einem [OVHcloud E-Mail Dienst](/links/web/emails) oder einer externen Lösung.
 - Sie haben über Webmail oder eine E-Mail-Software Zugriff auf die E-Mail-Adresse.
 
 ## In der praktischen Anwendung

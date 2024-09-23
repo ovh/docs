@@ -16,16 +16,16 @@ Każde konto e-mail OVHcloud dysponuje dedykowaną przestrzenią dyskową. Zarz�
 
 ## Wymagania początkowe
 
-- Posiadanie wcześniej skonfigurowanego rozwiązania poczty elektronicznej OVHcloud (**MX Plan**, zaproponowanego w naszej [ofercie hostingu](https://www.ovhcloud.com/pl/web-hosting/), zawartego w [Darmowy hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/) lub zamówionym oddzielnie jako rozwiązanie autonomiczne, takie jak [**Hosted Exchange**](https://www.ovhcloud.com/pl/emails/hosted-exchange/) lub [**Email Pro**](https://www.ovhcloud.com/pl/emails/email-pro/)).
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), sekcja `Web Cloud`{.action}.
+- Posiadanie wcześniej skonfigurowanego rozwiązania poczty elektronicznej OVHcloud (**MX Plan**, zaproponowanego w naszej [ofercie hostingu](/links/web/hosting), zawartego w [Darmowy hosting 100M](/links/web/domains-free-hosting) lub zamówionym oddzielnie jako rozwiązanie autonomiczne, takie jak [**Hosted Exchange**](/links/web/emails-hosted-exchange) lub [**Email Pro**](/links/web/email-pro)).
+- Dostęp do [Panelu klienta OVHcloud](/links/manager), sekcja `Web Cloud`{.action}.
 - Dostęp do danych adresów e-mail.
 
 > [!primary]
 >
 > **Szczególne przypadki**
 >
-> - Jeśli chodzi o bezpłatny Darmowy hosting 100M, konieczne jest wcześniejsze aktywowanie go przed utworzeniem konta e-mail. Operację tę możesz przeprowadzić w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przechodząc do odpowiedniej domeny.
-> - Zanim przejdziesz do niniejszego przewodnika, należy aktywować Twój pakiet MX Plan zawarty w [ofercie hostingu](https://www.ovhcloud.com/pl/web-hosting/). W tym celu zapoznaj się z naszym przewodnikiem "[Aktywuj konta e-mail zawarte w Twoim hostingu](/pages/web_cloud/web_hosting/activate-email-hosting)".
+> - Jeśli chodzi o bezpłatny Darmowy hosting 100M, konieczne jest wcześniejsze aktywowanie go przed utworzeniem konta e-mail. Operację tę możesz przeprowadzić w [Panelu klienta OVHcloud](/links/manager), przechodząc do odpowiedniej domeny.
+> - Zanim przejdziesz do niniejszego przewodnika, należy aktywować Twój pakiet MX Plan zawarty w [ofercie hostingu](/links/web/hosting). W tym celu zapoznaj się z naszym przewodnikiem "[Aktywuj konta e-mail zawarte w Twoim hostingu](/pages/web_cloud/web_hosting/activate-email-hosting)".
 
 ## W praktyce <a name="instructions"></a>
 
@@ -43,7 +43,7 @@ Możesz przeprowadzić tę operację w Panelu klienta, jeśli posiadasz uprawnie
 
 #### W Panelu klienta <a name="quotacontrolpanel"></a>
 
-W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) przejdź do sekcji `Web Cloud`{.action} i postępuj zgodnie z instrukcjami zawartymi w Twojej ofercie:
+W [Panelu klienta OVHcloud](/links/manager) przejdź do sekcji `Web Cloud`{.action} i postępuj zgodnie z instrukcjami zawartymi w Twojej ofercie:
 
 > [!tabs]
 > **E-maile (MXplan)**
@@ -64,7 +64,7 @@ W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=ht
 
 #### Z poziomu interfejsu Webmail <a name="quotawebmail"></a>
 
-Aby zalogować się do interfejsu Webmail, przejdź do strony <https://www.ovhcloud.com/pl/mail/>i wprowadź dane do logowania do konta e-mail. Wybierz poniżej interfejs webmail dla swojej usługi:
+Aby zalogować się do interfejsu Webmail, przejdź do strony [Webmail](/links/web/email)i wprowadź dane do logowania do konta e-mail. Wybierz poniżej interfejs webmail dla swojej usługi:
 
 > [!tabs]
 > **OWA**: **E-maile (MXplan)** / **E-mail Pro** / **Exchange**
@@ -102,7 +102,7 @@ Zwiększ rozmiar przestrzeni dyskowej Twojego konta e-mail, jeśli konto nie osi
 > [!tabs]
 > **E-maile (MXplan)**
 >>
->> Rozmiar konta MXplan może wynosić od 2,5 MB do 5 GB. Jeśli pojemność jest wysycona i mniejsza niż 5 GB, możesz zmienić jej pojemność poprzez [Panel klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).<br>
+>> Rozmiar konta MXplan może wynosić od 2,5 MB do 5 GB. Jeśli pojemność jest wysycona i mniejsza niż 5 GB, możesz zmienić jej pojemność poprzez [Panel klienta OVHcloud](/links/manager).<br>
 >> Z karty `Konta e-mail`{.action}, kliknij przycisk <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> po prawej stronie konta, które chcesz zmienić, po czym kliknij `Zmień`{.action}.
 >> W kratce `Quota`{.action} wybierz odpowiedni rozmiar, kliknij `Dalej`{.action}, a następnie `Zatwierdź`{.action}.<br><br>
 >> ![e-mail](images/email-quota-more01.png){.thumbnail}<br>
@@ -203,11 +203,11 @@ Z poniższego menu wybierz aktualną ofertę Twojego konta e-mail:
 > [!tabs]
 > **E-maile (MXplan)**
 >>
->> Jeśli rozmiar konta e-mail wynosi maksymalnie 5 GB, możesz przejść na ofertę [**Email Pro** o rozmiarze 10 GB](https://www.ovhcloud.com/pl/emails/email-pro/) lub [**Hosted Exchange** 50 GB](https://www.ovhcloud.com/pl/emails/hosted-exchange/). W tym celu zachęcamy do zamówienia wybranej oferty i zapoznania się z naszą dokumentacją "[Migracja konta e-mail MX Plan na konto E-mail Pro lub Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)". 
+>> Jeśli rozmiar konta e-mail wynosi maksymalnie 5 GB, możesz przejść na ofertę [**Email Pro** o rozmiarze 10 GB](/links/web/email-pro) lub [**Hosted Exchange** 50 GB](/links/web/emails-hosted-exchange). W tym celu zachęcamy do zamówienia wybranej oferty i zapoznania się z naszą dokumentacją "[Migracja konta e-mail MX Plan na konto E-mail Pro lub Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)". 
 >>
 > **Email Pro**
 >>
->> Oferta Email Pro posiada unikalną pojemność 10GB. Możesz wybrać opcję migracji na ofertę [**Hosted Exchange** 50 GB](https://www.ovhcloud.com/pl/emails/hosted-exchange/). W tym celu zachęcamy do zamówienia wybranej oferty i zapoznania się z naszą dokumentacją "[Migracja kont e-mail z jednej platformy e-mail OVHcloud do innej](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_platform)".
+>> Oferta Email Pro posiada unikalną pojemność 10GB. Możesz wybrać opcję migracji na ofertę [**Hosted Exchange** 50 GB](/links/web/emails-hosted-exchange). W tym celu zachęcamy do zamówienia wybranej oferty i zapoznania się z naszą dokumentacją "[Migracja kont e-mail z jednej platformy e-mail OVHcloud do innej](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_platform)".
 >>
 > **Exchange**
 >>
@@ -224,6 +224,6 @@ Z poniższego menu wybierz aktualną ofertę Twojego konta e-mail:
 
 [Przeniesienie kont e-mail z jednej platformy e-mail OVHcloud na inną](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_platform)
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i korzystania z rozwiązań OVHcloud, sprawdź naszą [ofertę wsparcia](https://www.ovhcloud.com/pl/support-levels/).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i korzystania z rozwiązań OVHcloud, sprawdź naszą [ofertę wsparcia](/links/support).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

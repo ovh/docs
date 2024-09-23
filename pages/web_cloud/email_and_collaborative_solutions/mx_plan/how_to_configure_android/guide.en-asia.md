@@ -20,11 +20,11 @@ You can configure MX Plan email addresses on email clients, if they are compatib
 >
 > OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> We have provided you with this guide in order to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/asia/directory/) and/or the service’s publisher if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
+> We have provided you with this guide in order to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) and/or the service’s publisher if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
 
 ## Requirements
 
-- an MX Plan email address (included in the MX Plan solution, or in an [OVHcloud web hosting plan](https://www.ovhcloud.com/asia/web-hosting/)).
+- an MX Plan email address (included in the MX Plan solution, or in an [OVHcloud web hosting plan](/links/web/hosting)).
 - You need to have the Gmail app installed on your device. You can install it from the Google Play Store if it is not already present.
 - the required credentials for the email address you would like to configure
 
@@ -105,7 +105,7 @@ Once you have configured your email address, you can start using it! You can now
 
 > [!success]
 >
-> OVHcloud offers a web application that allows you to access your email address from a web browser, at <https://www.ovhcloud.com/asia/mail/>. You can log in using your email credentials.
+> OVHcloud offers a web application that allows you to access your email address from a web browser, at [Webmail](/links/web/email). You can log in using your email credentials.
 
 ### POP, IMAP and SMTP settings
 

@@ -14,9 +14,9 @@ You have mistakenly deleted one or more items (email, contact, calendar appointm
 ## Requirements
  
 - An OVHcloud email solution:
-    - **MX Plan** ([new version only](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)), available as part of our [web hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/) or included in a [100M free hosting](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/)
-    - [**Hosted Exchange**](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/)
-    - [**Email Pro**](https://www.ovhcloud.com/en-gb/emails/email-pro/)
+    - **MX Plan** ([new version only](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)), available as part of our [web hosting plans](/links/web/hosting) or included in a [100M free hosting](/links/web/domains-free-hosting)
+    - [**Hosted Exchange**](/links/web/emails-hosted-exchange)
+    - [**Email Pro**](/links/web/email-pro)
 - Login details for the email account concerned
 
 ## Instructions
@@ -41,7 +41,7 @@ Deleted items can be recovered from webmail (OWA) and the Outlook email software
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI?start=117" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Log in to your email account via webmail (OWA): <https://www.ovhcloud.com/en-gb/mail/>.
+Log in to your email account via webmail (OWA): [Webmail](/links/web/email).
 
 > [!primary]
 >

@@ -14,12 +14,12 @@ Os endereços de e-mail do serviço MX Plan podem ser configurados num software 
 >
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção deste manual intitulada: "Quer saber mais?"
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links/partner) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção deste manual intitulada: "Quer saber mais?"
 > 
 
 ## Requisitos
 
-- Dispor de um endereço de e-mail MX Plan (incluído no serviço MX Plan ou num serviço de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/)).
+- Dispor de um endereço de e-mail MX Plan (incluído no serviço MX Plan ou num serviço de [alojamento web da OVHcloud](/links/web/hosting)).
 - Dispor da aplicação Correio instalada no seu dispositivo.
 - Dispor das credenciais do endereço de e-mail que pretende configurar.
 
@@ -83,7 +83,7 @@ Se precisar de inserir manualmente alguns dados técnicos nas preferências da c
 
 Depois de configurar o endereço de e-mail, só falta utilizá-lo! Pode desde já enviar e receber mensagens.
 
-A OVHcloud oferece uma aplicação web que permite aceder ao seu endereço de e-mail a partir do seu browser acessível no endereço <https://www.ovhcloud.com/pt/mail/>. Para aceder, só precisa dos dados de acesso relativos ao seu endereço de e-mail.
+A OVHcloud oferece uma aplicação web que permite aceder ao seu endereço de e-mail a partir do seu browser acessível no endereço [Webmail](/links/web/email). Para aceder, só precisa dos dados de acesso relativos ao seu endereço de e-mail.
  
 ## Quer saber mais?
 

@@ -16,7 +16,7 @@ Właśnie zakupiłeś usługę e-mail MX Plan. Umożliwia ona korzystanie z kont
 
 ## Wymagania początkowe
 
-- Wykupienie usługi MX Plan Jest on dostępny w ramach: [pakietów hostingowych](/links/web/hosting), [Darmowy hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/) zawartego w ofercie domeny (uprzednio aktywowanej) lub oferty MX Plan zamówionej oddzielnie.
+- Wykupienie usługi MX Plan Jest on dostępny w ramach: [pakietów hostingowych](/links/web/hosting), [Darmowy hosting 100M](/links/web/domains-free-hosting) zawartego w ofercie domeny (uprzednio aktywowanej) lub oferty MX Plan zamówionej oddzielnie.
 - Dostęp do [Panelu klienta OVHcloud](/links/manager), sekcja `Web Cloud`{.action}.
 
 > [!primary]

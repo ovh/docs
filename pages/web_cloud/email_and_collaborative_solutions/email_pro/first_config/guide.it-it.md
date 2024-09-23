@@ -16,16 +16,16 @@ La soluzione Email Pro permette di usufruire di un servizio di posta elettronica
 
 ## Prerequisiti
 
-- Disporre di una soluzione [Email Pro](/links/web/email-pro){.external}
+- Disporre di una soluzione [Email Pro](/links/web/email-pro)
 - Aver ricevuto l’email di conferma dell’installazione di Email Pro
 - Disporre di un dominio OVH
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
 ### Step 1: accedi alla gestione del servizio
 
-Per gestire la soluzione Email Pro accedi allo [Spazio Cliente OVHcloud](/links/manager){.external} e seleziona il tuo servizio nella sezione `Email Pro`{.action}.
+Per gestire la soluzione Email Pro accedi allo [Spazio Cliente OVHcloud](/links/manager) e seleziona il tuo servizio nella sezione `Email Pro`{.action}.
 
 > [!primary]
 >
@@ -94,7 +94,7 @@ A operazioni ultimata, il dominio aggiunto dovrebbe risultare come dominio assoc
 
 Nella colonna `Diagnostica`{.action} è possibile assicurarsi della corretta configurazione del dominio. Se è presente una casellina rossa, significa che è necessario modificare alcuni parametri. Quindi hai due possibilità:
 
-- ** In caso di configurazione automatica**, l’aggiornamento nello [Spazio Cliente OVHcloud](/links/manager){.external} potrebbe richiedere qualche ora.
+- ** In caso di configurazione automatica**, l’aggiornamento nello [Spazio Cliente OVHcloud](/links/manager) potrebbe richiedere qualche ora.
 
 - **Se il dominio inserito non è gestito da OVHcloud** : clicca sulla casellina rossa per visualizzare le modifiche da apportare.
     - *Per creare un record CNAME*, consulta la nostra guida "[Creare un record CNAME per aggiungere un dominio associato](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)".
@@ -148,7 +148,7 @@ Dopo aver completato tutti i campi clicca su `Continua`{.action}, verifica la co
 
 ### Step 5: utilizza gli indirizzi email
 
-Una volta creati gli account non ti resta che utilizzarli. Per accedervi OVHcloud mette a disposizione un’applicazione online (*webapp*), accessibile all’indirizzo <https://www.ovhcloud.com/it/mail/> usando le credenziali associate al tuo indirizzo di posta elettronica.
+Una volta creati gli account non ti resta che utilizzarli. Per accedervi OVHcloud mette a disposizione un’applicazione online (*webapp*), accessibile all’indirizzo [Webmail](/links/web/email) usando le credenziali associate al tuo indirizzo di posta elettronica.
 
 Se è la prima volta che ti connetti a OWA con questo indirizzo email, ti verrà chiesto di impostare la lingua dell’interfaccia utente e definire il fuso orario. Clicca su `Salva`{.action} per continuare.
 
@@ -169,7 +169,7 @@ Per configurare l’account su un altro client di posta o dispositivi come _smar
 >
 > Nel nostro esempio, usiamo il nome del server, ad esempio: pro**?**.mail.ovh.net, dove “?” dovrà essere sostituito con il numero che indica il server del servizio Email Pro.
 > 
-> Questa informazione è disponibile nello [Spazio Cliente OVHcloud](/links/manager){.external}, sezione `Web Cloud`{.action}, selezionando `Email Pro`{.action}. Il nome del server è visibile nel riquadro **Connessione** della `scheda Informazioni generali`{.action}.
+> Questa informazione è disponibile nello [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}, selezionando `Email Pro`{.action}. Il nome del server è visibile nel riquadro **Connessione** della `scheda Informazioni generali`{.action}.
 > 
 
 ## Per saperne di più

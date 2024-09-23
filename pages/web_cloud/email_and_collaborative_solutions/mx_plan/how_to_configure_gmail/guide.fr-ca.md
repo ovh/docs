@@ -14,12 +14,12 @@ Les adresses e-mail de l'offre MX Plan peuvent être configurées sur différent
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 > 
 
 ## Prérequis
 
-- Disposer d’une adresse e-mail MX Plan (comprise dans l’offre MX Plan ou dans une offre d’[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}).
+- Disposer d’une adresse e-mail MX Plan (comprise dans l’offre MX Plan ou dans une offre d’[hébergement web OVHcloud](/links/web/hosting)).
 - Disposer des identifiants relatifs à l'adresse e-mail OVHcloud que vous souhaitez paramétrer.
 - Disposer des identifiants du compte Gmail (Personnel ou Professionnel) sur lequel vous souhaitez paramétrer l'adresse OVHcloud.
 
@@ -84,7 +84,7 @@ Une fois les informations complétées, cochez la case à côté de `Connexion s
 
 ![mxplan](images/configuration-gmail-web-step5-ca.png){.thumbnail}
 
-Il ne vous reste plus qu'à valider cet ajout en renseignant un code de confirmation envoyé à votre adresse e-mail OVHcloud. Pour l'obtenir, connectez-vous à celle-ci comme d'habitude depuis notre interface en ligne accessible depuis : <https://www.ovh.com/ca/fr/mail/>. 
+Il ne vous reste plus qu'à valider cet ajout en renseignant un code de confirmation envoyé à votre adresse e-mail OVHcloud. Pour l'obtenir, connectez-vous à celle-ci comme d'habitude depuis notre interface en ligne accessible depuis : [Webmail](/links/web/email). 
 
 Une fois la validation effectuée, l'adresse e-mail OVHcloud apparaît alors dans l'onglet `Comptes et importation`{.action} auquel vous avez accéder en début de manipulation.
 
@@ -96,7 +96,7 @@ Pour envoyer un message avec votre adresse e-mail OVHcloud depuis l'interface en
 
 ![mxplan](images/configuration-gmail-web-step6.png){.thumbnail}
 
-Sachez également que vous pouvez toujours utiliser notre interface en ligne accessible depuis l'adresse <https://www.ovh.com/ca/fr/mail/> pour accéder à votre adresse e-mail OVHcloud. Vous pouvez vous y connecter grâce à ses identifiants.
+Sachez également que vous pouvez toujours utiliser notre interface en ligne accessible depuis l'adresse [Webmail](/links/web/email) pour accéder à votre adresse e-mail OVHcloud. Vous pouvez vous y connecter grâce à ses identifiants.
 
 ## Aller plus loin
 

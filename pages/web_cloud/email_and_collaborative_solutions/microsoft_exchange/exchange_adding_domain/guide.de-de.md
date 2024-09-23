@@ -16,16 +16,16 @@ Um die in Ihrer Exchange Lösung enthaltenen Accounts nutzen zu können, benöti
 
 ## Voraussetzungen
 
-- Sie verfügen über einen [Exchange Dienst](https://www.ovhcloud.com/de/emails/hosted-exchange/) oder [E-Mail Pro Dienst](https://www.ovhcloud.com/de/emails/email-pro/).
+- Sie verfügen über einen [Exchange Dienst](/links/web/emails-hosted-exchange) oder [E-Mail Pro Dienst](/links/web/email-pro).
 - Sie verfügen über einen oder mehrere Domainnamen.
 - Sie haben administrativen Zugang zur Verwaltung der Domainkonfiguration (zum [Bearbeiten der DNS Zone](/pages/web_cloud/domains/dns_zone_edit)).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
 ### Zugang zur Verwaltung Ihrer Dienstleistung
 
-Sobald Ihr Exchange oder E-Mail Pro Dienst eingerichtet und verfügbar ist, können Sie ihn über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verwalten.
+Sobald Ihr Exchange oder E-Mail Pro Dienst eingerichtet und verfügbar ist, können Sie ihn über Ihr [OVHcloud Kundencenter](/links/manager) verwalten.
 
 Im Bereich `Web Cloud`{.action}:
 
@@ -40,7 +40,7 @@ Um eine Domain hinzuzufügen, klicken Sie auf den Tab `Assoziierte Domains`{.act
 
 > [!warning]
 >
-> Alle auf Ihrem E-Mail-Dienst erstellten Adressen können alle Adressen dieses Dienstes im ihrem Verzeichnis sehen, auch solche mit einer anderen Domain. Um die Anzeige der Domains zu trennen, müssen Sie einen neuen [Exchange oder E-Mail Pro Dienst](https://www.ovhcloud.com/de/emails/) für die betreffende(n) Domain(s) bestellen.
+> Alle auf Ihrem E-Mail-Dienst erstellten Adressen können alle Adressen dieses Dienstes im ihrem Verzeichnis sehen, auch solche mit einer anderen Domain. Um die Anzeige der Domains zu trennen, müssen Sie einen neuen [Exchange oder E-Mail Pro Dienst](/links/web/emails) für die betreffende(n) Domain(s) bestellen.
 >
 
 ![Add Domain](images/add_domain_exchange_step1.png){.thumbnail}
@@ -92,7 +92,7 @@ Sobald die Domain als assoziierte Domain hinzugefügt ist, können Sie in der an
 
 - **Wenn Sie beim Hinzufügen der Domain eine automatische Konfiguration gewählt haben**: Warten Sie einige Minuten, bis die Änderungen im OVHcloud Kundencenter übernommen sind.
 
-- **Wenn Sie eine nicht von OVHcloud verwaltete Domain angegeben haben**: Klicken Sie auf das rote Diagnosefeld, um die notwendigen Änderungen anzuzeigen. Verwendet die Domain nicht die OVHcloud Konfiguration (die DNS-Server von OVHcloud), nehmen Sie die notwendigen Änderungen in dem Verwaltungsinterface vor, dass Sie für die Konfiguration Ihrer Domain verwenden. Zur Bearbeitung eines CNAME-Eintrags finden Sie weitere Informationen in [dieser Dokumentation](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname){.external}.
+- **Wenn Sie eine nicht von OVHcloud verwaltete Domain angegeben haben**: Klicken Sie auf das rote Diagnosefeld, um die notwendigen Änderungen anzuzeigen. Verwendet die Domain nicht die OVHcloud Konfiguration (die DNS-Server von OVHcloud), nehmen Sie die notwendigen Änderungen in dem Verwaltungsinterface vor, dass Sie für die Konfiguration Ihrer Domain verwenden. Zur Bearbeitung eines CNAME-Eintrags finden Sie weitere Informationen in [dieser Dokumentation](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname).
 
 > [!primary]
 >
@@ -109,11 +109,11 @@ Nun, da Sie die gewünschten Domains zu Ihrem Exchange Dienst hinzugefügt haben
 
 Zur Erinnerung: Alle für Ihren Dienst erstellten Adressen können alle Adressen dieses Dienstes im ihrem Verzeichnis anzeigen, auch solche mit einer anderen Domain.
 
-Nachdem Sie Ihre Accounts fertig eingerichtet haben, können Sie diese nun verwenden. OVHcloud stellt Ihnen hierfür **Webmail** zur Verfügung, das über die Adresse <https://www.ovh.com/de/mail/> erreichbar ist. Wenn Sie einen Drittanbieter-Client für Ihre E-Mail-Accounts verwenden, stellen Sie sicher, dass die Software mit dem Dienst kompatibel ist.
+Nachdem Sie Ihre Accounts fertig eingerichtet haben, können Sie diese nun verwenden. OVHcloud stellt Ihnen hierfür **Webmail** zur Verfügung, das über die Adresse [Webmail](/links/web/email) erreichbar ist. Wenn Sie einen Drittanbieter-Client für Ihre E-Mail-Accounts verwenden, stellen Sie sicher, dass die Software mit dem Dienst kompatibel ist.
 
 Falls Sie Hilfe bei der Einrichtung Ihres E-Mail-Accounts in einem E-Mail-Client oder auf einem Gerät (Smartphone, Tablet) benötigen oder Fragen zu den Funktionen Ihres E-Mail-Dienstes haben, lesen Sie unsere Anleitungen zu [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) oder [E-Mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro).
 
-Sie können Outlook Lizenzen über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} und Office 365 Lizenzen auf der Webseite <https://www.ovhcloud.com/de/collaborative-tools/microsoft-365/> erwerben. Wir empfehlen Ihnen, eine dieser Lösungen zu verwenden, falls Sie den Outlook E-Mail-Client oder andere Software der MS Office Suite nutzen möchten.
+Sie können Outlook Lizenzen über Ihr [OVHcloud Kundencenter](/links/manager) und Office 365 Lizenzen auf der Webseite [Webmail](/links/web/ms365) erwerben. Wir empfehlen Ihnen, eine dieser Lösungen zu verwenden, falls Sie den Outlook E-Mail-Client oder andere Software der MS Office Suite nutzen möchten.
 
 ### Einen Domainnamen von einer Plattform löschen
 
@@ -149,8 +149,8 @@ Klicken Sie im Tab `Assoziierte Domains`{.action} Ihres Dienstes auf `...`{.acti
 
 [OVHcloud DNS-Zone bearbeiten](/pages/web_cloud/domains/dns_zone_edit)
 
-Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
 Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

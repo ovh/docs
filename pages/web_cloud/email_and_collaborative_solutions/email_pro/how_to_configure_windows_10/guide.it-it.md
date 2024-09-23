@@ -19,7 +19,7 @@ Gli account Email Pro possono essere configurati su diversi client di posta elet
 
 ## Prerequisiti
 
-- Disporre di una soluzione [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/){.external}
+- Disporre di una soluzione [Email Pro](/links/web/email-pro)
 - Aver installato l’applicazione Posta sul proprio dispositivo
 - Disporre delle credenziali associate all’account email da configurare
 
@@ -31,7 +31,7 @@ Gli account Email Pro possono essere configurati su diversi client di posta elet
 >
 > Nel nostro esempio abbiamo utilizzato come nome del server "pro**?**.mail.ovh.net", dove "?" dovrà essere sostituito con il numero che indica il server del servizio Email Pro.
 >
-> Questa informazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Web Cloud`{.action}, selezionando `Email Pro`{.action}. Il nome del server è visibile nel riquadro **Connessione** della scheda `Informazioni generali`{.action}.
+> Questa informazione è disponibile nello [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}, selezionando `Email Pro`{.action}. Il nome del server è visibile nel riquadro **Connessione** della scheda `Informazioni generali`{.action}.
 > 
 
 Una volta avviata l’applicazione Posta sul tuo dispositivo, puoi aggiungere un nuovo account in due modi diversi.
@@ -81,12 +81,12 @@ Se hai necessità di inserire manualmente le preferenze per il tuo account, ecco
 
 Una volta configurato l’indirizzo email, non ti resta che utilizzarlo: da questo momento puoi infatti inviare e ricevere messaggi.
 
-OVHcloud propone anche un’applicazione Web con [funzionalità collaborative](https://www.ovhcloud.com/it/emails/){.external}. disponibile alla pagina <https://www.ovh.it/mail/> e accessibile con le credenziali del tuo account.
+OVHcloud propone anche un’applicazione Web con [funzionalità collaborative](/links/web/emails). disponibile alla pagina [Webmail](/links/web/email) e accessibile con le credenziali del tuo account.
 
 ## Per saperne di più
 
-[Configurare un account MX Plan sull’applicazione Posta per Windows 10](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10){.external}
+[Configurare un account MX Plan sull’applicazione Posta per Windows 10](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10)
 
-[Configurare un account Exchange sull’applicazione Posta per Windows 10](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_windows_10){.external}
+[Configurare un account Exchange sull’applicazione Posta per Windows 10](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_windows_10)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

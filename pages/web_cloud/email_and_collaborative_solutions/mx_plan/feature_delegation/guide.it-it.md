@@ -20,8 +20,8 @@ La delega offre all'utente di un account email la possibilità di gestire autono
 
 ## Prerequisiti
 
-- Disporre di una soluzione MX Plan Puoi effettuare questa operazione tramite: un'[offerta di hosting Web Cloud](https://www.ovhcloud.com/it/web-hosting/), un [Hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting/) o una soluzione MX Plan ordinata separatamente.
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione `Web Cloud`{.action}.
+- Disporre di una soluzione MX Plan Puoi effettuare questa operazione tramite: un'[offerta di hosting Web Cloud](/links/web/hosting), un [Hosting gratuito 100M](/links/web/domains-free-hosting) o una soluzione MX Plan ordinata separatamente.
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}.
 
 > [!warning]
 >
@@ -37,10 +37,10 @@ La delega offre all'utente di un account email la possibilità di gestire autono
 
 > [!primary]
 >
->La creazione di una delega su un account email lo mostra nello [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) interessato. Tuttavia, in questa situazione saranno possibili solo le modifiche indicate nella sezione [Obiettivo](#objective) della guida.
+>La creazione di una delega su un account email lo mostra nello [Spazio Cliente](/links/manager) interessato. Tuttavia, in questa situazione saranno possibili solo le modifiche indicate nella sezione [Obiettivo](#objective) della guida.
 >
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} nella sezione `Web Cloud`.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager) nella sezione `Web Cloud`.
 
 e seleziona il tuo servizio nella sezione `Email`{.action}.
 

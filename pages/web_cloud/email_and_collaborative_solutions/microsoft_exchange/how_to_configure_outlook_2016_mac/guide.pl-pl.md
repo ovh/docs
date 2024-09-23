@@ -10,13 +10,13 @@ Konta Exchange mogą być skonfigurowane w jednym z kompatybilnych programów po
 
 ## Wymagania początkowe
 
-- Wykupienie usługi [Exchange](https://www.ovhcloud.com/pl/emails/){.external}
+- Wykupienie usługi [Exchange](/links/web/emails)
 - Instalacja aplikacji Microsoft Outlook na Twoim urządzeniu Mac
 - Dane do logowania do konta e-mail, które chcesz skonfigurować
 
 > [!primary]
 >
-> Używasz programu Outlook na urządzeniu z systemem Windows? Zapoznaj się z naszą dokumentacją: [Konfiguracja konta Exchange w programie Outlook na urządzeniu z systemem Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016){.external}.
+> Używasz programu Outlook na urządzeniu z systemem Windows? Zapoznaj się z naszą dokumentacją: [Konfiguracja konta Exchange w programie Outlook na urządzeniu z systemem Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016).
 >
 
 ## W praktyce
@@ -39,7 +39,7 @@ Wpisz Twój adres e-mail, po czym kliknij `Dalej`{.action}. Jeśli pojawi się l
 |Adres poczty elektronicznej|Wpisz nazwę pozwalającą odróżnić to konto od Twoich pozostałych kont wyświetlających się w aplikacji Outlook.|
 |DOMENA\nazwa użytkownika lub adres poczty elektronicznej|Wpisz pełny adres e-mail.|
 |Hasło|Wpisz hasło wybrane dla tego konta e-mail.|
-|Serwer|W zależności od konfiguracji DNS Twojej domeny wskazanie serwera, na którym hostujesz usługę Exchange może być fakultatywne. Jeśli jest to wymagane, wskaż serwer, na którym hostowana jest Twoja usługa Exchange. Możesz znaleźć go w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} > zakładka `Informacje ogólne`{.action} dotyczące danej usługi Exchange > `Logowanie`{.action}.|
+|Serwer|W zależności od konfiguracji DNS Twojej domeny wskazanie serwera, na którym hostujesz usługę Exchange może być fakultatywne. Jeśli jest to wymagane, wskaż serwer, na którym hostowana jest Twoja usługa Exchange. Możesz znaleźć go w [Panelu klienta](/links/manager) > zakładka `Informacje ogólne`{.action} dotyczące danej usługi Exchange > `Logowanie`{.action}.|
 
 Po uzupełnieniu informacji kliknij przycisk `Dodaj konto`{.action}. Jeśli dane są prawidłowe, logowanie zakończy się sukcesem.
 
@@ -51,10 +51,10 @@ Wykonaj test wysyłki e-maili, aby sprawdzić, czy konto zostało poprawnie skon
 
 Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz zacząć wysyłać i odbierać wiadomości.
 
-OVHcloud oferuje aplikację internetową wyposażoną w [funkcje do pracy zespołowej](https://www.ovhcloud.com/pl/emails/){.external}. Jest ona dostępna pod adresem <https://www.ovh.pl/mail/>. Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail.
+OVHcloud oferuje aplikację internetową wyposażoną w [funkcje do pracy zespołowej](/links/web/emails). Jest ona dostępna pod adresem [Webmail](/links/web/email). Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail.
 
 ## Sprawdź również
 
-[Konfiguracja konta e-mail, włączonego do usługi MX Plan lub do usługi hostingu, w programie Outlook na urządzeniu Mac](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac){.external}.
+[Konfiguracja konta e-mail, włączonego do usługi MX Plan lub do usługi hostingu, w programie Outlook na urządzeniu Mac](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac).
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

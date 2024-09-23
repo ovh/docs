@@ -14,14 +14,14 @@ Avec l’option « Règles de gestion de la boîte de réception », vous pouvez
 
 ## Prérequis
 
-- une solution e-mail OVHcloud doit avoir été configurée au préalable (**MX Plan**, proposé parmi nos [offres d’hébergement web](https://www.ovhcloud.com/fr/web-hosting/), inclus dans un [hébergement gratuit 100M](https://www.ovhcloud.com/fr/domains/free-web-hosting/) ou commandé séparément comme solution autonome ; [**Hosted Exchange**](https://www.ovhcloud.com/fr/emails/hosted-exchange/) ou [**Email Pro**](https://www.ovhcloud.com/fr/emails/email-pro/))
+- une solution e-mail OVHcloud doit avoir été configurée au préalable (**MX Plan**, proposé parmi nos [offres d’hébergement web](/links/web/hosting), inclus dans un [hébergement gratuit 100M](/links/web/domains-free-hosting) ou commandé séparément comme solution autonome ; [**Hosted Exchange**](/links/web/emails-hosted-exchange) ou [**Email Pro**](/links/web/email-pro))
 - les paramètres de connexion de l’adresse e-mail que vous souhaitez configurer
 
 ## Instructions
 
 ### Étape 1 : Accéder à la section Options
 
-Connectez-vous à votre compte Exchange via le webmail [OVHcloud](https://www.ovh.com/fr/mail/). Cliquez sur l’icône de réglages en haut à droite pour afficher le menu « Options » et sélectionnez `Options`{.action}.
+Connectez-vous à votre compte Exchange via le webmail [OVHcloud](/links/web/email). Cliquez sur l’icône de réglages en haut à droite pour afficher le menu « Options » et sélectionnez `Options`{.action}.
 
 ![règles boîte de réception](images/exchange-rules-step1.png){.thumbnail}
 

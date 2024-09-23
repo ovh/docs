@@ -19,7 +19,7 @@ Es posible configurar sus cuentas MX Plan en el cliente de correo que usted util
 
 ## Requisitos
 
-- Tener una cuenta MX Plan (incluida en un MX Plan o en un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}).
+- Tener una cuenta MX Plan (incluida en un MX Plan o en un [plan de hosting de OVHcloud](/links/web/hosting)).
 - Disponer del nombre de usuario y la contraseña de la dirección de correo de OVHcloud que quiera configurar.
 - Disponer de las claves de la cuenta Gmail (Personal o Profesional) en la que quiera configurar la dirección de correo de OVHcloud.
 
@@ -84,7 +84,7 @@ Una vez introducidos los datos, marque la casilla `Conexión segura mediante TLS
 
 ![MX Plan](images/configuration-gmail-web-step5-ca.png){.thumbnail}
 
-Por último, debe validar la operación mediante un código de confirmación que recibirá en su dirección de correo de OVHcloud. Para solicitar este código, conéctese a su dirección de correo desde nuestra interfaz web disponible en <https://www.ovh.com/world/es/mail/>. 
+Por último, debe validar la operación mediante un código de confirmación que recibirá en su dirección de correo de OVHcloud. Para solicitar este código, conéctese a su dirección de correo desde nuestra interfaz web disponible en [Webmail](/links/web/email). 
 
 Después de validar la operación, la dirección de correo de OVHcloud aparecerá en la pestaña `Cuentas e importación`{.action}.
 
@@ -96,8 +96,8 @@ Para enviar un mensaje con su dirección de correo de OVHcloud desde la interfaz
 
 ![MX Plan](images/configuration-gmail-web-step6.png){.thumbnail}
 
-No olvide que también puede utilizar nuestra interfaz web en la dirección <https://www.ovh.com/world/es/mail/> para acceder a su dirección de correo de OVHcloud. Para conectarse solo necesitará las claves de acceso.
+No olvide que también puede utilizar nuestra interfaz web en la dirección [Webmail](/links/web/email) para acceder a su dirección de correo de OVHcloud. Para conectarse solo necesitará las claves de acceso.
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/).

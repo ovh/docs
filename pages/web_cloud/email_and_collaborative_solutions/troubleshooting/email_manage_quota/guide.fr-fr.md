@@ -12,16 +12,16 @@ Chaque compte e-mail OVHcloud dispose d'un espace de stockage dédié. Bien gér
 
 ## Prérequis
 
-- Disposer d'une solution e-mail OVHcloud préalablement configurée (**MX Plan**, proposée parmi nos [offres d’hébergement web](https://www.ovhcloud.com/fr/web-hosting/), incluse dans un [hébergement gratuit 100M](https://www.ovhcloud.com/fr/domains/free-web-hosting/) ou commandée séparément comme solution autonome, telle que [**Hosted Exchange**](https://www.ovhcloud.com/fr/emails/hosted-exchange/) ou [**Email Pro**](https://www.ovhcloud.com/fr/emails/email-pro/)).
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Web Cloud`{.action}.
+- Disposer d'une solution e-mail OVHcloud préalablement configurée (**MX Plan**, proposée parmi nos [offres d’hébergement web](/links/web/hosting), incluse dans un [hébergement gratuit 100M](/links/web/domains-free-hosting) ou commandée séparément comme solution autonome, telle que [**Hosted Exchange**](/links/web/emails-hosted-exchange) ou [**Email Pro**](/links/web/email-pro)).
+- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Web Cloud`{.action}.
 - Disposer des informations de connexion aux adresses e-mails concernées.
 
 > [!primary]
 >
 > **Cas particuliers**
 >
-> - Concernant l’hébergement gratuit 100M : il est impératif de l’activer au préalable afin de pouvoir créer une adresse e-mail. Vous pouvez effectuer cette opération depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), en vous positionnant sur le nom de domaine concerné.
-> - Dans le cadre d'un [hébergement web](https://www.ovhcloud.com/fr/web-hosting/), il est nécessaire d'activer votre offre MX Plan incluse avant de poursuivre la lecture de cette documentation. Pour cela, consultez notre guide « [Activer les adresses e-mail incluses dans votre hébergement web](/pages/web_cloud/web_hosting/activate-email-hosting) ».
+> - Concernant l’hébergement gratuit 100M : il est impératif de l’activer au préalable afin de pouvoir créer une adresse e-mail. Vous pouvez effectuer cette opération depuis votre [espace client OVHcloud](/links/manager), en vous positionnant sur le nom de domaine concerné.
+> - Dans le cadre d'un [hébergement web](/links/web/hosting), il est nécessaire d'activer votre offre MX Plan incluse avant de poursuivre la lecture de cette documentation. Pour cela, consultez notre guide « [Activer les adresses e-mail incluses dans votre hébergement web](/pages/web_cloud/web_hosting/activate-email-hosting) ».
 
 ## En pratique <a name="instructions"></a>
 
@@ -39,7 +39,7 @@ Vous pouvez réaliser cette action depuis l'espace client si vous avez la gestio
 
 #### Depuis l'espace client <a name="quotacontrolpanel"></a>
 
-Depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dirigez-vous dans la partie `Web Cloud`{.action} puis suivez les instructions selon votre offre:
+Depuis votre [espace client OVHcloud](/links/manager), dirigez-vous dans la partie `Web Cloud`{.action} puis suivez les instructions selon votre offre:
 
 > [!tabs]
 > **Emails (MXplan)**
@@ -60,7 +60,7 @@ Depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 #### Depuis le webmail <a name="quotawebmail"></a>
 
-Pour vous connecter au webmail, rendez-vous sur la page <https://www.ovhcloud.com/fr/mail/> et saisissez les informations de connexion à votre compte e-mail. Sélectionnez ensuite ci-dessous le webmail correspondant à votre offre :
+Pour vous connecter au webmail, rendez-vous sur la page [Webmail](/links/web/email) et saisissez les informations de connexion à votre compte e-mail. Sélectionnez ensuite ci-dessous le webmail correspondant à votre offre :
 
 > [!tabs]
 > **OWA** : **Emails (MXplan)** / **Email Pro** / **Exchange**
@@ -98,7 +98,7 @@ Il est possible d'augmenter la capacité de stockage de votre compte e-mail, si 
 > [!tabs]
 > **Emails (MXplan)**
 >>
->> La capacité d'un compte MXplan peut aller de 2,5 Mo à 5 Go. S'il est saturé et que sa capacité est inférieure à 5 Go, vous pouvez modifier sa capacité via l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).<br>
+>> La capacité d'un compte MXplan peut aller de 2,5 Mo à 5 Go. S'il est saturé et que sa capacité est inférieure à 5 Go, vous pouvez modifier sa capacité via l'[espace client OVHcloud](/links/manager).<br>
 >> Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} à droite du compte à modifier, puis cliquez sur `Modifier`{.action}.
 >> Depuis la case `Quota`{.action}, sélectionnez la taille qui vous convient, cliquez sur `Suivant`{.action} puis `Valider`{.action}.<br><br>
 >> ![email](images/email-quota-more01.png){.thumbnail}<br>
@@ -199,11 +199,11 @@ Sélectionnez, dans le menu ci-dessous, l'offre actuelle de votre compte e-mail 
 > [!tabs]
 > **Emails (MXplan)**
 >>
->> Si la capacité de votre compte e-mail est déjà à son maximum de 5 Go, vous pouvez opter pour une migration vers une offre [**Email Pro** de 10 Go](https://www.ovhcloud.com/fr/emails/email-pro/) ou [**Hosted Exchange** de 50 Go](https://www.ovhcloud.com/fr/emails/hosted-exchange/). Pour cela, nous vous invitons à commander l'offre qui vous convient et suivre notre documentation « [Migrer une adresse e-mail MX Plan vers un compte E-mail Pro ou Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel) ». 
+>> Si la capacité de votre compte e-mail est déjà à son maximum de 5 Go, vous pouvez opter pour une migration vers une offre [**Email Pro** de 10 Go](/links/web/email-pro) ou [**Hosted Exchange** de 50 Go](/links/web/emails-hosted-exchange). Pour cela, nous vous invitons à commander l'offre qui vous convient et suivre notre documentation « [Migrer une adresse e-mail MX Plan vers un compte E-mail Pro ou Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel) ». 
 >>
 > **Email Pro**
 >>
->> L'offre Email Pro dispose d'une capacité unique de 10Go. Vous pouvez opter pour une migration vers une offre [**Hosted Exchange** de 50 Go](https://www.ovhcloud.com/fr/emails/hosted-exchange/). Pour cela, nous vous invitons à commander l'offre qui vous convient et suivre notre documentation « [Migrer vos adresses e-mail d’une plateforme e-mail OVHcloud vers une autre](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_platform) ».
+>> L'offre Email Pro dispose d'une capacité unique de 10Go. Vous pouvez opter pour une migration vers une offre [**Hosted Exchange** de 50 Go](/links/web/emails-hosted-exchange). Pour cela, nous vous invitons à commander l'offre qui vous convient et suivre notre documentation « [Migrer vos adresses e-mail d’une plateforme e-mail OVHcloud vers une autre](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_platform) ».
 >>
 > **Exchange**
 >>
@@ -220,6 +220,6 @@ Sélectionnez, dans le menu ci-dessous, l'offre actuelle de votre compte e-mail 
 
 [Migrer vos adresses e-mail d’une plateforme e-mail OVHcloud vers une autre](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_platform)
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

@@ -10,14 +10,14 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 
 ## Prérequis
 
-- Disposer d'une offre [Exchange](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/){.external}.
+- Disposer d'une offre [Exchange](/links/web/emails-hosted-exchange).
 - Disposer du logiciel Microsoft Outlook installé sur votre appareil.
 - Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
 - Le champ SRV d'OVHcloud doit être correctement configuré dans la zone DNS du nom de domaine.
 
 > [!primary]
 >
-> Vous utilisez Outlook pour Mac ? Consultez notre documentation : [Configurer son compte Exchange sur Outlook pour Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac){.external}.
+> Vous utilisez Outlook pour Mac ? Consultez notre documentation : [Configurer son compte Exchange sur Outlook pour Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac).
 >
 
 ## En pratique
@@ -40,7 +40,7 @@ Une fenêtre de sécurité vous demandant de renseigner le **mot de passe** de l
 >
 > Si un message vous indique qu'Outlook n'a pas pu paramétrer votre compte, cela peut indiquer que le champ SRV d'OVHcloud n'est pas correctement configuré dans la zone DNS de votre nom de domaine.
 >
-> Nous vous conseillons de vérifier la configuration du nom de domaine paramétré sur votre service Exchange dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, onglet `Domaines associés`{.action}, puis colonne `Diagnostic`{.action} du tableau.
+> Nous vous conseillons de vérifier la configuration du nom de domaine paramétré sur votre service Exchange dans votre [espace client OVHcloud](/links/manager), onglet `Domaines associés`{.action}, puis colonne `Diagnostic`{.action} du tableau.
 >
 
 Si la configuration de votre nom de domaine est correcte, un message vous demandant d'autoriser une connexion vers le serveur d'OVHcloud apparaît. Acceptez cette connexion afin de permettre la configuration automatique de votre compte Exchange.

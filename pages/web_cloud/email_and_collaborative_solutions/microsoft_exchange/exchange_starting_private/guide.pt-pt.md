@@ -12,8 +12,8 @@ Acaba de efetuar a encomenda de uma plataforma Private Exchange. Este guia expli
 
 ## Requisitos
 
-- Ter encomendado uma [solução Private Exchange OVHcloud](https://www.ovh.com/pt/emails/private-exchange/){.external}.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Ter encomendado uma [solução Private Exchange OVHcloud](/links/web/emails-private-exchange).
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
@@ -21,7 +21,7 @@ Acaba de efetuar a encomenda de uma plataforma Private Exchange. Este guia expli
 
 Uma vez realizada a encomenda, receberá no endereço de e-mail referenciado na sua Área de Cliente, as informações para configurar a sua plataforma Private Exchange. 
 
-Para consultar este e-mail a partir da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu perfil, no topo da página à direita, e depois em `E-mails de serviço`{.action} e pesquise o e-mail com o assunto:
+Para consultar este e-mail a partir da sua [Área de Cliente OVHcloud](/links/manager), clique no seu perfil, no topo da página à direita, e depois em `E-mails de serviço`{.action} e pesquise o e-mail com o assunto:
 
 > **\[xx-11111-ovh] O seu serviço Private Exchange 20_xxx_ será entregue em breve!**
 
@@ -32,11 +32,11 @@ Este e-mail contém um link que permite completar duas etapas da configuração 
 - personalizar o link de acesso ao seu webmail (certificado SSL dedicado);
 - indicar um endereço de e-mail para validar o seu certificado (atenção: este endereço de e-mail deve existir e deverá conseguir aceder-lhe).
 
-Clique no link mencionado no e-mail e passe à [etapa 2 ](./#etapa-2-inicializacao-da-sua-plataforma){.external}.
+Clique no link mencionado no e-mail e passe à [etapa 2 ](./#etapa-2-inicializacao-da-sua-plataforma).
 
 ### Etapa 2: inicialização da sua plataforma
 
-Após ter clicado no link de e-mail na [etapa 1](./#etapa-1-rececao-do-e-mail-de-configuracao-da-sua-platforma){.external}, deve identificar-se na página exibida.
+Após ter clicado no link de e-mail na [etapa 1](./#etapa-1-rececao-do-e-mail-de-configuracao-da-sua-platforma), deve identificar-se na página exibida.
 
 Será então redirecionado para a página de configuração:
 ![first-use-private-exchange](images/first-use-private-exchange-02.png){.thumbnail}
@@ -55,16 +55,16 @@ Após a validação desta etapa surgirá uma mensagem a indicar que a configura�
 
 > [!primary]
 >
-> Esta etapa é facultativa se tiver assinalado a opção "**DNS Assist**" na [etapa 2](./#etape-2-initializacao-da-sua-plateforma){.external}.
+> Esta etapa é facultativa se tiver assinalado a opção "**DNS Assist**" na [etapa 2](./#etape-2-initializacao-da-sua-plateforma).
 > 
 
 Se o nome de domínio não for gerado na mesma conta de cliente ou não estiver alojado na OVHcloud, ser-lhe-á enviado um segundo e-mail contendo as informações necessárias para configurar manualmente a sua zona DNS.
 
-O e-mail contém os endereços IPv4 e IPv6 da sua plataforma. Indique estes endereços na zona DNS do subdomínio previamente criada na [etapa 2](./#etapa-2-inicializacao-da-sua-plataforma){.external}, sob as formas respetivas de um registo de tipo "A" e de um registo de tipo "AAAA". Para o orientar na criação de um nome de domínio OVHcloud, consulte o nosso guia ["Editar uma zona DNS"](/pages/web_cloud/domains/dns_zone_edit).
+O e-mail contém os endereços IPv4 e IPv6 da sua plataforma. Indique estes endereços na zona DNS do subdomínio previamente criada na [etapa 2](./#etapa-2-inicializacao-da-sua-plataforma), sob as formas respetivas de um registo de tipo "A" e de um registo de tipo "AAAA". Para o orientar na criação de um nome de domínio OVHcloud, consulte o nosso guia ["Editar uma zona DNS"](/pages/web_cloud/domains/dns_zone_edit).
 
 ### Etapa 4: validação do seu certificado SSL
 
-Após ter concluído a [etapa 2](./#etapa-2-inicializacao-da-sua-plataforma){.external}, ser-lhe-á enviado um e-mail para o endereço selecionado para validar o seu certificado SSL.
+Após ter concluído a [etapa 2](./#etapa-2-inicializacao-da-sua-plataforma), ser-lhe-á enviado um e-mail para o endereço selecionado para validar o seu certificado SSL.
 
 Este e-mail ser-lhe-á enviado pela entidade responsável pela emissão do certificado SSL com o assunto:
 
@@ -86,12 +86,12 @@ Assim que o servidor esteja pronto e disponível, ser-lhe-á enviado um e-mail d
 
 > **\[xx-11111-ovh] O seu serviço Private Exchange 20_xxx_ está pronto!**
 
-Para adicionar o primeiro nome de domínio à sua plataforma e configurar as contas, consulte o nosso guia ["Adicionar um domínio ao serviço Exchange"](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain){.external}
+Para adicionar o primeiro nome de domínio à sua plataforma e configurar as contas, consulte o nosso guia ["Adicionar um domínio ao serviço Exchange"](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)
 
 ## Quer saber mais?
 
-[Editar uma zona DNS](/pages/web_cloud/domains/dns_zone_edit){.external}
+[Editar uma zona DNS](/pages/web_cloud/domains/dns_zone_edit)
 
-[Adicionar um nome de domínio ao serviço Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain){.external}
+[Adicionar um nome de domínio ao serviço Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)
 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

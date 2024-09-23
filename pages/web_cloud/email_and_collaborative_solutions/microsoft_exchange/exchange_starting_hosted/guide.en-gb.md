@@ -18,16 +18,16 @@ With the Hosted Exchange service, you can get professional email accounts to use
 
 ## Requirements
 
-- You need to have a subscription to a [Hosted Exchange](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/) solution.
+- You need to have a subscription to a [Hosted Exchange](/links/web/emails-hosted-exchange) solution.
 - You need to have received an email confirming that your Hosted Exchange solution has been set up.
 - You must have a domain name.
-- You must be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+- You must be logged in to your [OVHcloud Control Panel](/links/manager).
 
 ## Instructions
 
 ### Access your service management
 
-Once your Hosted Exchange service has been created and is available, you can manage it from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+Once your Hosted Exchange service has been created and is available, you can manage it from your [OVHcloud Control Panel](/links/manager).
 
 To do this, log in and click `Microsoft`{.action}, then `Exchange`{.action}. The click on the name of the Hosted Exchange service concerned.
 
@@ -100,7 +100,7 @@ Once you have finished configuring your domain name, you can also configure addi
 > All of the addresses created on your Exchange service will be visible in the directory of addresses for that service, including those with a different domain name. To stop different domain names from being displayed this way, you will need to order a new Hosted Exchange solution for the domain name(s) concerned.
 >
 
-To add a new domain name, select the Hosted Exchange service concerned in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), and click on `Associated domains`{.action}. You will see a table showing all of the domain names currently configured, or about to be configured on your service. To add new ones, click on the `Add a domain`{.action} button, then follow the various steps of the process.
+To add a new domain name, select the Hosted Exchange service concerned in your [OVHcloud Control Panel](/links/manager), and click on `Associated domains`{.action}. You will see a table showing all of the domain names currently configured, or about to be configured on your service. To add new ones, click on the `Add a domain`{.action} button, then follow the various steps of the process.
 
 To find out more, please refer to this guide on [Adding a domain name to an Exchange service](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 
@@ -115,7 +115,7 @@ To find out more, please refer to this guide on [Adding a domain name to an Exch
 
 You can configure additional accounts if you have not already done so via the wizard.
 
-To do this, click on the Hosted Exchange service concerned in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), then on `Email accounts`{.action}. You will see a table showing all of the accounts currently configured, or about to be configured on your service.
+To do this, click on the Hosted Exchange service concerned in your [OVHcloud Control Panel](/links/manager), then on `Email accounts`{.action}. You will see a table showing all of the accounts currently configured, or about to be configured on your service.
 
 The accounts that have not yet been configured configuration will appear in the table as “*@configureme.me*”. To configure them, click on the pencil icon, then follow the steps.
 
@@ -128,7 +128,7 @@ The accounts that have not yet been configured configuration will appear in the 
 
 ### Use your email addresses
 
-Once you have configured your accounts, you can now start using them. To do this, OVHcloud offers the **Outlook Web App** (OWA) webmail app. You can access this via the following address: <https://www.ovhcloud.com/en-gb/mail/>. To log in, enter your email address credentials. If you require any assistance using OWA, please refer to [our documentation](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
+Once you have configured your accounts, you can now start using them. To do this, OVHcloud offers the **Outlook Web App** (OWA) webmail app. You can access this via the following address: [Webmail](/links/web/email). To log in, enter your email address credentials. If you require any assistance using OWA, please refer to [our documentation](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
 
 If this is your first time logging in to OWA with this email address, you will be prompted to set the interface language and time zone. Next, click `Save`{.action} to continue.
 
@@ -140,11 +140,11 @@ If this is your first time logging in to OWA with this email address, you will b
 
 If you would like to configure your email address on an email client or mobile device (e.g. a smartphone or tablet), please refer to [our documentation](/products/web-cloud-email-collaborative-solutions-microsoft-exchange). To optimise the way you use your Exchange email address on an email client, ensure that it is compatible with the service.
 
-OVHcloud offers optional Outlook licences with your Exchange email account in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+OVHcloud offers optional Outlook licences with your Exchange email account in the [OVHcloud Control Panel](/links/manager).
 
 To subscribe, go to our page on [Getting an Outlook licence for Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/office_outlook_license).
 
-You can also get [Office 365 licences](https://www.ovhcloud.com/en-gb/collaborative-tools/microsoft-365/). We recommend using one of these solutions if you would like to use the Outlook email client, or other software from the Microsoft Office suite.
+You can also get [Office 365 licences](/links/web/ms365). We recommend using one of these solutions if you would like to use the Outlook email client, or other software from the Microsoft Office suite.
 
 > [!primary]
 >
@@ -154,9 +154,9 @@ You can also get [Office 365 licences](https://www.ovhcloud.com/en-gb/collaborat
 
 ### Set up collaborative features (optional)
 
-Now that your Hosted Exchange service is configured and functional, you can set up the service’s collaborative features in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). You can use these features to create resources (meeting rooms, equipment, etc.), groups, and more.
+Now that your Hosted Exchange service is configured and functional, you can set up the service’s collaborative features in your [OVHcloud Control Panel](/links/manager). You can use these features to create resources (meeting rooms, equipment, etc.), groups, and more.
 
-To enable these features, select the Hosted Exchange service concerned in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), then choose which action to perform from the tabs that appear.
+To enable these features, select the Hosted Exchange service concerned in your [OVHcloud Control Panel](/links/manager), then choose which action to perform from the tabs that appear.
 
 For assistance with these features, please refer to [our documentation](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
 

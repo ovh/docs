@@ -14,12 +14,12 @@ As contas Exchange podem ser configuradas em vários softwares de e-mail compat�
 >
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção deste manual intitulada: "Quer saber mais?"
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links/partner) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção deste manual intitulada: "Quer saber mais?"
 > 
 
 ## Requisitos
 
-- Dispor de uma oferta [Exchange](https://www.ovhcloud.com/pt/emails/) .
+- Dispor de uma oferta [Exchange](/links/web/emails) .
 - Dispor da aplicação Correio instalada no seu dispositivo.
 - Ter acesso às credenciais do endereço de e-mail que pretende configurar.
 
@@ -45,7 +45,7 @@ Introduza as informações solicitadas:
 |Password | Indique a password do endereço de e-mail.|
 |Nome de utilizador | Introduza o endereço de e-mail completo.|
 |Domínio | Não preencher nada.|
-|Servidor | Indique o servidor no qual está alojado o seu serviço Exchange. Pode encontrá-lo no seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) , no separador `Informações gerais`{.action} do serviço Exchange em causa, depois no quadro `Connexion`{.action}|
+|Servidor | Indique o servidor no qual está alojado o seu serviço Exchange. Pode encontrá-lo no seu [Área de Cliente OVHcloud](/links/manager) , no separador `Informações gerais`{.action} do serviço Exchange em causa, depois no quadro `Connexion`{.action}|
 |O servidor necessita de uma ligação encriptada (SSL) | Deixe imperativamente esta opção selecionada.|
 |Nome da conta | Indique um nome que lhe permita reconhecer esta conta entre outras presentes na sua aplicação Correio.|
 
@@ -61,7 +61,7 @@ Pode efetuar um teste de envio para verificar se a conta está corretamente conf
 
 Depois de configurar o endereço de e-mail, só falta utilizá-lo! Pode desde já enviar e receber mensagens.
 
-A OVHcloud também disponibiliza uma aplicação web com [funções colaborativas](https://www.ovhcloud.com/pt/emails/) . Este endereço está disponível em <https://www.ovhcloud.com/pt/mail/>. Para aceder, só precisa dos dados de acesso do seu endereço de e-mail.
+A OVHcloud também disponibiliza uma aplicação web com [funções colaborativas](/links/web/emails) . Este endereço está disponível em [Webmail](/links/web/email). Para aceder, só precisa dos dados de acesso do seu endereço de e-mail.
 
 ## Quer saber mais?
 

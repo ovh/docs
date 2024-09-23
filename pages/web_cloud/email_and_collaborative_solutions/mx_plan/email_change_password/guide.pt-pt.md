@@ -15,8 +15,8 @@ As contas de e-mail da sua oferta OVHcloud são acessíveis graças à palavra-p
 
 ## Requisitos
 
-- Dispor de uma solução de e-mail OVHcloud previamente configurada (**MX Plan**, proposta entre as nossas [ofertas de alojamento web](https://www.ovhcloud.com/pt/web-hosting/), incluída num [Alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/) ou encomendada separadamente como solução autónoma, como o [**Hosted Exchange**](https://www.ovhcloud.com/pt/emails/hosted-exchange/) ou o [**Email Pro**](https://www.ovhcloud.com/pt/emails/email-pro/)).
-- Em função do método que utilizar: aceder à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na secção `Web Cloud`{.action}, ou aceder ao endereço de e-mail através do [webmail](https://www.ovhcloud.com/pt/mail/).
+- Dispor de uma solução de e-mail OVHcloud previamente configurada (**MX Plan**, proposta entre as nossas [ofertas de alojamento web](/links/web/hosting), incluída num [Alojamento gratuito 100M](/links/web/domains-free-hosting) ou encomendada separadamente como solução autónoma, como o [**Hosted Exchange**](/links/web/emails-hosted-exchange) ou o [**Email Pro**](/links/web/email-pro)).
+- Em função do método que utilizar: aceder à Área de [Cliente OVHcloud](/links/manager), na secção `Web Cloud`{.action}, ou aceder ao endereço de e-mail através do [webmail](/links/web/email).
 
 > [!primary]
 >
@@ -34,7 +34,7 @@ As contas de e-mail da sua oferta OVHcloud são acessíveis graças à palavra-p
 > [!warning]
 > Por razões de segurança, recomendamos que não utilize duas vezes a mesma palavra-passe, selecione uma palavra-passe que não tenha qualquer relação com as suas informações pessoais (evite as menções do seu apelido, nome próprio e data de nascimento, por exemplo) e que a renove regularmente.
 
-Na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), aceda à secção `Web Cloud`{.action} e siga as instruções indicadas na oferta:
+Na [Área de Cliente OVHcloud](/links/manager), aceda à secção `Web Cloud`{.action} e siga as instruções indicadas na oferta:
 
 > [!tabs]
 > **E-mails MXplan (versão histórica)**
@@ -79,7 +79,7 @@ A modificação da sua palavra-passe através do webmail está disponível para 
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Aceda à página "[Webmail](https://www.ovhcloud.com/pt/mail/)". Indique o seu endereço de e-mail completo e a respetiva palavra-passe. De seguida, clique no botão `Ligação`{.action}. 
+Aceda à página "[Webmail](/links/web/email)". Indique o seu endereço de e-mail completo e a respetiva palavra-passe. De seguida, clique no botão `Ligação`{.action}. 
 
 ![email](images/mxplan-password-new-step2.png){.thumbnail}
 
@@ -124,6 +124,6 @@ Na tabela abaixo, encontrará as informações necessárias para identificar a s
 
 [Primeiros passos com a solução Hosted Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>
