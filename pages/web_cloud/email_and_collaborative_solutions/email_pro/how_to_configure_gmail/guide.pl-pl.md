@@ -107,6 +107,10 @@ Pamiętaj, że w celu uzyskania dostępu do Twojego konta E-mail Pro OVHcloud, m
 
 ## Sprawdź również <a name="go-further"></a>
 
+> [!primary]
+>
+> Aby uzyskać więcej informacji na temat konfiguracji konta e-mail w interfejsie online Gmail, sprawdź [Centrum pomocy Google](https://support.google.com/mail/answer/21289?hl=fr&co=GENIE.Platform%3DDesktop).
+
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).

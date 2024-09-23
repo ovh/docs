@@ -107,6 +107,10 @@ Natürlich können Sie auch weiterhin unser Webinterface unter [Webmail](/links/
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
+> [!primary]
+>
+> Weitere Informationen zur Konfiguration einer E-Mail-Adresse über das Online-Gmail-Interface finden Sie [im Google Help Center](https://support.google.com/mail/answer/21289?hl=fr&co=GENIE.Platform%3DDesktop).
+
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).

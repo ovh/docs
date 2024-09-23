@@ -111,6 +111,10 @@ Tenha em conta que pode sempre utilizar a nossa interface online acessível a pa
 
 ## Quer saber mais? <a name="go-further"></a>
 
+> [!primary]
+>
+> Para obter mais informações sobre a configuração de um endereço de e-mail a partir da interface online do Gmail, consulte (a Central de Ajuda do Google)(https://support.google.com/mail/answer/21289?hl=fr&co=GENIE.Platform%3DDesktop).
+
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).

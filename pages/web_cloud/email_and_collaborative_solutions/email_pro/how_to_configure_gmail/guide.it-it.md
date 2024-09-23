@@ -107,6 +107,10 @@ i ricordiamo che per accedere all’account Email Pro OVHcloud è sempre possibi
 
 ## Per saperne di più <a name="go-further"></a>
 
+> [!primary]
+>
+> Per maggiori informazioni sulla configurazione di un indirizzo email dall’interfaccia Gmail online, consulta [il centro assistenza di Google](https://support.google.com/mail/answer/21289?hl=fr&co=GENIE.Platform%3DDesktop).
+
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).

@@ -107,6 +107,10 @@ Sachez également que vous pouvez toujours utiliser notre interface en ligne acc
 
 ## Aller plus loin <a name="go-further"></a>
 
+> [!primary]
+>
+> Pour plus d'informations sur la configuration d'une adresse e-mail depuis l'interface Gmail en ligne, consultez [le centre d'aide de Google](https://support.google.com/mail/answer/21289?hl=fr&co=GENIE.Platform%3DDesktop).
+
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
