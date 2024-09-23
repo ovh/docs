@@ -10,9 +10,12 @@ Il est possible que vous deviez réparer le bootloader GRUB. Ce guide va vous pe
 
 ## Prérequis
 
-- L'instance doit être en mode rescue (Vous pouvez consulter le guide [Comment activer le mode rescue sur une instance Public Cloud](/pages/public_cloud/compute/put_an_instance_in_rescue_mode))
+- Une [instance Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
 
 ## En pratique
+
+> [!warning]
+> L'instance doit être en mode rescue (Vous pouvez consulter le guide [Comment activer le mode rescue sur une instance Public Cloud](/pages/public_cloud/compute/put_an_instance_in_rescue_mode)).
 
 Connectez-vous sur l'instance, soit via le VNC de [l'espace client OVHcloud](/links/manager) ou via SSH.
 
