@@ -1,7 +1,7 @@
----
+![image](https://github.com/user-attachments/assets/14dff72c-a201-48ef-8393-b54ffe4e2c6c)---
 title: "Protecting a game server with the application firewall"
 excerpt: "Learn how to configure the OVHcloud GAME DDoS firewall"
-updated: 2023-12-19
+updated: 2024-09-23
 ---
 
 ## Objective
@@ -32,9 +32,9 @@ Our dedicated Bare Metal gaming servers include a DDoS protection specifically d
 
 ### Introduction
 
-The Anti-DDoS infrastructure, together with the Edge Network firewall, keeps the network safe from common threats (mostly focused on ISO OSI layers 3 and 4). On the other hand, hosting gaming applications can be a challenging experience in terms of network security. GAME DDoS Protection is here to help - this is a Layer 7 (application) firewall focused on protecting specific gaming protocols (usually using UDP). Its main advantages are:
+The Anti-DDoS infrastructure, together with the Edge Network firewall, keeps the network safe from common threats (mostly focused on ISO OSI layers 3 and 4). On the other hand, hosting gaming applications can be a challenging experience in terms of network security. GAME DDoS Protection is here to help - this is a Layer 7 (application) firewall focused on protecting specific gaming protocols. Its main advantages are:
 
-- **Distance**: We know that latency and its stability is crucial for gaming. These solutions are put as close as possible to the servers and work together with dedicated hardware.
+- **Low latency**: We know that latency and its stability is crucial for online gaming. These solutions are put as close as possible to the servers and work together with a high-performance hardware.
 - **2-way**: The platform analyses incoming and outgoing traffic for best understanding of every player's situation.
 - **Instant**: It can distinguish real players from harmful attacks on a server from the very first network packets.
 - **Always-on**: The ability to detect and stop attacks ensures a smooth experience for sensitive gaming applications without any disruptions and latency changes.
@@ -60,54 +60,97 @@ To configure gaming rules in the GAME firewall, log in to the OVHcloud Control P
 | Click on `Configure the GAME firewall`{.action}. |
 
 
+> [!primary]
+> It is important to note that GAME DDoS protection will not take any action unless game rules are configured.
+> 
+
+
 | ![add-rule-btn](images/firewall_game_03.png) |
 |:--:|
 | On the following screen, click the `Add a rule`{.action} button to add a rule to the GAME firewall. |
 
 
-You can set up to **30 rules per IP** to protect one or more games hosted on your server behind the GAME firewall. The list of supported game profiles can be seen [here](https://www.ovhcloud.com/en-gb/security/game-ddos-protection/).
+GAME firewall allows you to configure up to **100 rules per IP address** that points to the game server (the 3rd gen. of Bare Metal game servers released in 2024 release), or up to **30 rules per IP address** for the older Bare Metal game ranges. 
 
-> [!primary]
-> By default, the GAME firewall is preconfigured with certain rules that OVHcloud has determined work with the most popular games. However, for customers with a GAME Dedicated Server, we allow to go one step further and configure rules for ports as well.
-> 
+Please note that supported gaming protocols (game titles and versions that can be protected) may change over a time. Moreover, they can be different between older Bare Metal game server ranges and the newer ones. The most recent list of supported game profiles can be found [here](https://www.ovhcloud.com/en-gb/security/game-ddos-protection/).
+
 
 | ![confirm-new-rule](images/firewall_game_04.png) |
 |:--:|
-| Enable the ports as needed on the following screen and click on the `Confirm`{.action} button when you are finished adding your rules. You have now successfully configured GAME firewall rules. |
+| Configure game protections by selecting specific **Protocol** from the list and defining **port-range** on which your gaming application is receiving connections (please reffer to your game configuration manual) and click on the `Confirm`{.action} button to save. You have now successfully configured GAME firewall rules. |
 
-> [!primary]
-> It is important to note that GAME DDoS protection will not take any action unless rules are configured.
->
-> In addition, for the best protection, we strongly recommend that you set "Default policy = DROP", which will drop any traffic that does not match the defined rules. This way the listed application will be protected and nothing else will be able to reach your server.
-> 
+Game protections must not overlap in terms of ports defined.
+
+Option **other** may be selected if other applications are hosted on specific port(s) (for which there is no available protection) to let the customer traffic to pass-through. Please note that there is not much added security for the traffic matching rule "other" and it should be used with caution.
+
+Also, we strongly recommend to set **"Default policy = DROP"** on every IP pointing to your game server. That option will let GAME DDoS Protection to drop traffic that doesn't match any of defined rules. Saying it differently: all listed game application will be protected and nothing else will be able to reach out to your server.
 
 > [!warning]
-> GAME DDoS protection takes effect after the [Edge Network firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network). For it to work properly, the Edge Network protection cannot be too strict and needs to pass traffic to the GAME DDoS protection. It would be optimal to have a rule on the Edge Network firewall that allows all UDP traffic, and then let the GAME DDoS protection filter the specific UDP ports.
+> GAME DDoS Protection takes effect after the [Edge Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network). For both to work properly, the Edge Network Firewall cannot be too strict and needs to pass traffic to the GAME DDoS Protection. 
 >
 
-### Important notices
+### Game-specific notices
+
+#### Ark Survival Evolved
+
+- **Ark Survival Evolved** - basic protection engine
+- **Ark Survival Evolved v.311.78** - updated protection engine, added in the 3rd gen. of Bare Metal game servers (2024 release).
+
+#### Counter Strike 2
+
+- **Counter Strike 2** - new protecion engine added in the 3rd gen. of Bare Metal game servers (2024 release).
 
 #### FiveM
 
-FiveM is a mod of GTA V. Currently it is not fully recognized by Rockstar (game publisher).
-
-Due to this, we do not plan to release a public FiveM GAME firewall profile for layer 7 protection.
+- **FiveM** is Grant Theft Auto V multiplayer mod by Cfx.re which is now recognized by Rockstar game publisher. We added FiveM support in the 3rd gen. of Bare Metal game servers (2024 release).
 
 #### Rust
 
-GAME firewall supports Rust with a detailed profile. You can read more about hosting Rust on OVHcloud servers [here](https://www.ovhcloud.com/en-gb/bare-metal/game/rust-server/).
+- **Rust** is supported with a dedicated protection profile on all generations. Please note that we refreshed this protection (i.e.: added RakNet cookies support) in the 3rd gen. of Bare Metal game servers (2024 release).
+You can read more about hosting Rust on OVHcloud servers [here](https://www.ovhcloud.com/en-gb/bare-metal/game/rust-server/).
 
 #### Minecraft
 
-Minecraft is well supported in the following versions:
+Minecraft is well supported by the following profiles:
 
-- Minecraft Java edition 
-- Minecraft Pocket Edition
-- Minecraft Query
+- **Minecraft Java** - should be the best fit for all Minecraft Java versions. Protects Minecraft Query protocol behind, but it's also tuned for bigger traffic volumes.
+- **Minecraft Query** - general Minecraft Query protocol protection.
+- **Minecraft Bedrock** - Minecraft Bedrock protection (with RakNet cookie support).
+- **Minecraft Pocket Edition** - Minecraft Pocket Edition protection.
+
+#### Valheim
+
+- **Valheim** - new protecion engine added in the 3rd gen. of Bare Metal game servers (2024 release). 
 
 > [!primary]
-> For now Minecraft Java edition is protected in "default" mode and no additional setup is exposed. If you host bigger Minecraft servers, or with specific requirements, please reach our support using the [Help Centre](https://help.ovhcloud.com/csm?id=csm_get_help) with all the details to tune up the application profile.
+> If you host bigger service with one of the supported games, but still observe false-positives from Anti-DDoS Infrastructure systems, please reach our support using the [Help Centre](https://help.ovhcloud.com/csm?id=csm_get_help) with all the details to tune up the application profile.
 >
+
+### Using Additional IPs with game dedicated servers
+
+Additional IPs are offering a flexible way to manage your services across a variety of servers or services behind. They bring value also for your game-hosting infrastructure allowing to manage scalability or failover actions without an impact on public IP addresses. Also, with Additional IPs you can define different IP geolocation or even leverage your own IP block (using BYOIP service) with OVHcloud game range servers.
+
+While Additional IPs are bringing flexibility, there are situations that require some additional attention.
+
+#### GAME DDoS Protection is specific to the game server, but configured on per-IP basis
+
+To provide the most flexibility of configuration, different gaming protection rules can be set on different Additional IPs pointing to the same Bare Metal game server.
+Maximum number of such rules and available protection settings are defined on per-IP-address basis, but are specific to the particular Bare Metal game server generation behind. 
+
+Differences may be observed between: the newer game servers (3rd gen. of game Bare Metal servers, 2024 release) and the older game servers (previous generations of game Bare Metal, usually seen as Eco ranges).
+
+#### Moving Additional IP between servers
+
+While static configuration may be pretty simple, Additional IP moving actions may require few comments.
+
+Moving an IP from older generation of Bare Metal game server to newer generation will be transparent and result in keeping all rules and IP settings.
+
+Moving an IP from newer Bare Metal game server to the older generation will:
+- keep backward compatible rules (same profile name)
+- copy arkSurvivalEvolvedV311.78+ profile configuration into arkSurvivalEvolved (older one)
+- delete all other rules that are not supported on the older generation of Bare Metal game server
+
+Moving an IP from Bare Metal game server to a non-game server (or other services) will remove all GAME DDoS Protection rules from such IP as they are not supported outside Bare Metal game ranges.
 
 ## FAQ
 
@@ -117,7 +160,7 @@ No, GAME firewall is only available for our Bare Metal game dedicated servers.
 
 ### Can I disable GAME firewall protection?
 
-This is possible, if not recommended. You can do it by removing all game protocol rules from the configuration and disabling `Default policy: Drop`.
+This is possible, but not recommended. You can do it by removing all game protocol rules from the configuration and disabling `Default policy: Drop`.
 
 ### My game is not on the supported protocol list, what can I do?
 
