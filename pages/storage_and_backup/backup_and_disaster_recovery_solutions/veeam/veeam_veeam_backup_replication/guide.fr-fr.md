@@ -1,7 +1,7 @@
 ---
-title: 'Installer Veeam Backup & Replication'
-excerpt: 'Découvrez comment installer un serveur Veeam Backup & Replication avec Veeam Enterprise'
-updated: 2023-06-23
+title: "Installer Veeam Backup & Replication"
+excerpt: "Découvrez comment installer un serveur Veeam Backup & Replication avec Veeam Enterprise"
+updated: 2023-09-23
 ---
 
 ## Objectif
@@ -69,7 +69,7 @@ Vous serez redirigé vers l'assistant d'installation, il vous suffit de fermer l
 
 ### Créer un compte de service Veeam Enterprise
 
-#### Etape 1 - Lancer un compte de service
+#### Étape 1 - Lancer un compte de service
 
 Au préalable, il est nécessaire de générer un mot de passe **complexe**.
 
@@ -86,7 +86,7 @@ Notez que le nom du compte et le mot de passe correspondent à un exemple et doi
  * Nom du compte : OVHVeeamEnterprise
  * Mot de passe : P@ssword01
 
-####  Etape 2 - Définir les autorisations du compte de service
+####  Étape 2 - Définir les autorisations du compte de service
 
 Lancez la console Veeam.
 
@@ -112,7 +112,7 @@ De retour dans la fenêtre **Security**, vous pouvez vérifier que le compte est
 
 ![](images/veeamBandR_conf_5.png){.thumbnail}
 
-####  Etape 3 - Autorisations d'exécution et d'activation
+####  Étape 3 - Autorisations d'exécution et d'activation
 
 L'utilisateur OVHVeeamEntreprise est accessible uniquement en local, il faut donc ajouter les permissions dans l’interface graphique d’utilisateur Windows pour l'activation de la connexion à distance.
 
@@ -143,7 +143,7 @@ Via l’interface graphique d’utilisateur :
 
 Votre utilisateur OVHVeeamEntreprise est maintenant accessible en local et à distance.
 
-###  Etape 4 - Enregistrer le serveur Veeam Backup
+###  Étape 4 - Enregistrer le serveur Veeam Backup
 
 ## Depuis l'espace client OVHcloud
 
@@ -172,6 +172,18 @@ Lorsque l'activation est faite, vous retrouvez les informations principales sur 
 
 ![licence activée](images/veeam02.png){.thumbnail}
 
+**Mise à jour des identifiants de connexion depuis l'espace client** :
+
+Pour mettre à jour vos identifiants de connexion, vous pouvez utiliser le bouton `Mettre à jour mes informations`{.action}
+
+![Update 1](images/veeam_update_cred.png){.thumbnail}
+
+Remplissez sur la fenêtre qui s'affiche, l'`IP`, le `Nom d'utilisateur`, et le `Mot de passe`. 
+
+Puis pour terminer, cliquez sur `Ok`{.action}
+
+![Update 2](images/veeam_update_cred_2.png){.thumbnail}
+
 ## Avec l'API OVHcloud
 
 D'abord, récupérez votre serviceName :
@@ -191,7 +203,7 @@ Puis effectuez l'enregistrement :
 Vous devez vous munir des informations suivantes :
 
 * L'adresse IP publique par laquelle votre serveur **Veeam Backup & Replication** peut-etre contacté.
-* Le port de votre veeam backup (usuellement **9392/TCP**)
+* Le port de votre Veeam Backup (usuellement **9392/TCP**)
 * le login du compte de service précédemment crée
 * le mot de passe du compte de service
 
@@ -205,7 +217,29 @@ Vous pouvez obtenir l'adresse IP publique utilisée par Veeam Enterprise pour co
 > [!primary]
 > L'activation de votre serveur Veeam Backup & Replication peut prendre plusieurs heures.
 
-###  Etape 5 - Vérifier l'enregistrement
+**Mise à jour des identifiants de connexion depuis l'API** :
+
+> [!api]
+>
+> @api {v1} /veeam/veeamEnterprise POST /veeam/veeamEnterprise/{serviceName}/update
+>
+
+> **Paramètres** :
+> 
+> `serviceName` : Le nom de votre service, exemple `pcc-XXX-XXX-XXX-XXX`
+> 
+
+Exemple de **REQUEST BODY** nécessaire :
+
+```json
+{
+  "ip": "192.0.2.0",
+  "password": "XXX",
+  "username": "string"
+}
+```
+
+###  Étape 5 - Vérifier l'enregistrement
 
 Lancez la console Veeam.
 
@@ -226,6 +260,6 @@ Si tout s'est bien passé, vous devriez voir "Edition : Entreprise Plus".
 
 ## Aller plus loin
 
-Échangez avec notre communauté d’utilisateurs sur Discord : <https://discord.gg/ovhcloud>
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre Technical Account Manager ou rendez-vous sur [cette page](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs(/links/community), ou sur le channel dédié [Discord](https://discord.gg/ovhcloud).
