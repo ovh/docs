@@ -44,8 +44,8 @@ A présent, [créez deux instances](/pages/public_cloud/compute/public-cloud-fir
 
 ### Étape 3 - Se connecter à Tailscale
 
-1\. Connectez-vous à votre [compte Tailscale](https://login.tailscale.com/).
-2\. Allez dans l'onglet `Devices`{.action} et cliquez sur `Add Device`{.action}.
+1\. Connectez-vous à votre [compte Tailscale](https://login.tailscale.com/).  
+2\. Allez dans l'onglet `Devices`{.action} et cliquez sur `Add Device`{.action}.  
 3\. Sélectionnez `Linux server` comme type de périphérique.
 
 ![Tailscale - Ajouter un périphérique](images/tailscale01.png){.thumbnail}
