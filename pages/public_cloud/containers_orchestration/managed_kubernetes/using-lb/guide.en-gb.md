@@ -91,16 +91,16 @@ The `LoadBalancer` is the best option for a production environment, with two cav
 
 OVHcloud currently provides two types of load balancers that can be used with Managed Kubernetes Services:
 
-- [Load Balancer for Managed Kubernetes](https://www.ovhcloud.com/en-gb/public-cloud/load-balancer-kubernetes/), this load balancer type can only be used to expose resources of a Managed Kubernetes Service. It supports up to 2000 requests/second and a 200Mbits/s bandwidth. Please note that this Loadbalancer will be depracated from MKS Kubernetes version 1.32 and upwards.
-- [Public Load Balancer](https://www.ovhcloud.com/en-gb/public-cloud/load-balancer/), based on the OpenStack Octavia project, this load balancer type can also be used with standard OVHcloud instances. You can choose between three Load Balancer sizes (S,M,L), providing up to 40k requests/second and a 2 Gbits/second bandwidth. Other advantages are the capability to expose your Load Balancer privately (private-to-private) or publicly (public-to-private or public-to-public) using [Floating IPs](https://www.ovhcloud.com/en-gb/public-cloud/floating-ip/), the possibility to collect metrics and TCP/UDP protocols.
+- [Load Balancer for Managed Kubernetes](/links/public-cloud/load-balancer-kubernetes), this load balancer type can only be used to expose resources of a Managed Kubernetes Service. It supports up to 2000 requests/second and a 200Mbits/s bandwidth. Please note that this Loadbalancer will be depracated from MKS Kubernetes version 1.32 and upwards.
+- [Public Load Balancer](/links/public-cloud/load-balancer), based on the OpenStack Octavia project, this load balancer type can also be used with standard OVHcloud instances. You can choose between three Load Balancer sizes (S,M,L), providing up to 40k requests/second and a 2 Gbits/second bandwidth. Other advantages are the capability to expose your Load Balancer privately (private-to-private) or publicly (public-to-private or public-to-public) using [Floating IPs](/links/public-cloud/floating-ip), the possibility to collect metrics and TCP/UDP protocols.
 
 
 ### Supported annotations
 
 > [!primary]
-> This part of the documentation applies to [Load Balancer for Managed Kubernetes](https://www.ovhcloud.com/en-gb/public-cloud/load-balancer-kubernetes/).
+> This part of the documentation applies to [Load Balancer for Managed Kubernetes](/links/public-cloud/load-balancer-kubernetes).
 >
-> A dedicated documentation for [Public Load Balancer](https://www.ovhcloud.com/en-gb/public-cloud/load-balancer/) is available, please look at the [Expose your applications using a load balancer](pages/public_cloud/containers_orchestration/managed_kubernetes/expose_your_applications_using_a_load_balancer).
+> A dedicated documentation for [Public Load Balancer](/links/public-cloud/load-balancer) is available, please look at the [Expose your applications using a load balancer](/pages/public_cloud/containers_orchestration/managed_kubernetes/expose_your_applications_using_a_load_balancer).
 
 There are several annotations available to customize your load balancer:
 
@@ -281,6 +281,6 @@ No resources found
 
 ## Go further
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 - Join our [community of users](https://community.ovh.com/en/).
