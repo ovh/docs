@@ -1,11 +1,11 @@
 ---
 title: Expose your app deployed on an OVHcloud Managed Kubernetes Service
 excerpt: Find out how to use and expose your app deployed on an OVHcloud Managed Kubernetes Service
-updated: 2024-09-11
+updated: 2024-09-23
 ---
 
 > [!warning]
-> The Loadbalancer section of this documentation is about "LoadBalancer for Managed Kubernetes. If you want to benefit from the new MKS LoadBalancing solution "Public Cloud LoadBalancer" based on Octavia LoadBalancer, please refer to [this page](/pages/public_cloud/containers_orchestration/managed_kubernetes/expose_your_applications_using_a_load_balancer/).
+> The Loadbalancer section of this documentation is about "LoadBalancer for Managed Kubernetes Service. If you want to benefit from the new MKS LoadBalancing solution "Public Cloud LoadBalancer" based on Octavia LoadBalancer, please refer to [this page](/pages/public_cloud/containers_orchestration/managed_kubernetes/expose_your_applications_using_a_load_balancer).
 >
 > To force the usage of "LoadBalancer for Managed Kubernetes" in your MKS cluster, add this annotation `loadbalancer.ovhcloud.com/class: iolb` to your Kubernetes Service.
 >
