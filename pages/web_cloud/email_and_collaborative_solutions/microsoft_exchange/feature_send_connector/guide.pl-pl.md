@@ -78,7 +78,7 @@ Przed rozpoczęciem przygotuj poniższe informacje. Są one dostarczane przez do
 - Przypisana nazwa użytkownika (na przykład: adres e-mail) , **może być opcjonalna w zależności od konektora wysyłkowego**.
 - Hasło powiązane z nazwą użytkownika **może być opcjonalne w zależności od konektora nadawcy**.
 
-Następnie zaloguj się do API OVHcloud za pomocą danych identyfikacyjnych. Skorzystaj z naszego przewodnika [Pierwsze kroki z API OVHcloud ](pages/manage_and_operate/api/first-steps).
+Następnie zaloguj się do API OVHcloud za pomocą danych identyfikacyjnych. Skorzystaj z naszego przewodnika [Pierwsze kroki z API OVHcloud ](/pages/manage_and_operate/api/first-steps).
 
 Aby dodać łącznik wysyłania do platformy Exchange, użyj następującego wywołania API.
 

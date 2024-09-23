@@ -86,7 +86,7 @@ Siga los pasos descritos en la [documentación dedicada de Hostinger](https://su
 ### Obtener el código EPP o Auth
 
 Si desea **transferir** su dominio de Hostinger a otro agente registrador (como OVHcloud), el nuevo agente registrador puede solicitar un código de autorización (código "EPP" o "Auth") para comprobar que tiene derecho a actuar sobre el dominio.
-Para más información sobre el cambio de propietario de un dominio, consulte esta [guía](pages/web_cloud/domains/trade_domain).
+Para más información sobre el cambio de propietario de un dominio, consulte esta [guía](/pages/web_cloud/domains/trade_domain).
 
 > [!warning]
 >

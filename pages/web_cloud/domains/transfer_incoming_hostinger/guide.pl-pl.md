@@ -86,7 +86,7 @@ Postępuj zgodnie z instrukcjami zawartymi w [dokumentacji dedykowanej dla Hosti
 ### Uzyskaj kod EPP lub Auth
 
 Jeśli chcesz **przenieść** Twoją domenę z Hostinger do innego operatora (np. OVHcloud), nowy operator może poprosić o kod autoryzacyjny (kod "EPP" lub "Auth"), aby sprawdzić, czy masz uprawnienia do działania w związku z domeną.
-Aby zapoznać się ze zmianą właściciela domeny, zapoznaj się z tym [przewodnikiem](pages/web_cloud/domains/trade_domain).
+Aby zapoznać się ze zmianą właściciela domeny, zapoznaj się z tym [przewodnikiem](/pages/web_cloud/domains/trade_domain).
 
 > [!warning]
 >
