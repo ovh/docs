@@ -28,24 +28,16 @@ This feature allows you to:
 
 ## Instructions
 
-### Step 1 - Create or use an SSH Key
+### Step 1 - Create two instances in OVHcloud Local Zones
 
-To securely access your instances, you need an [SSH key](/pages/public_cloud/compute/creating-ssh-keys-pci). If you don’t already have one, you can generate one by running the following command:
+[Create two instances](/pages/public_cloud/compute/public-cloud-first-steps) in different OVHcloud Local Zones, such as Prague and Madrid.
 
-```bash
-ssh-keygen -t rsa -b 4096 -C "youremail@ovhcloud.com" -f ~/.ssh/tailscale-test -N ""
-```
+Ensure that public networking is enabled for both instances.
 
-This command will generate a 4096-bit RSA key pair and save it in the specified location.
+### Step 2 - Log into Tailscale
 
-### Step 2 - Create two instances in OVHcloud Local Zones
-
-Next, [create two instances](/pages/public_cloud/compute/public-cloud-first-steps) in different OVHcloud Local Zones, such as Prague and Madrid. Ensure that public networking is enabled for both instances.
-
-### Step 3 - Log into Tailscale
-
-1\. Log into your Tailscale account at [Tailscale](https://login.tailscale.com/).  
-2\. Go to the `Devices`{.action} tab and click `Add Device`{.action}.  
+1\. Log into your Tailscale account at [Tailscale](https://login.tailscale.com/).
+2\. Go to the `Devices`{.action} tab and click `Add Device`{.action}.
 3\. Select `Linux server` as the device type.
 
 ![Tailscale - Add device](images/tailscale01.png){.thumbnail}
@@ -56,9 +48,9 @@ Next, [create two instances](/pages/public_cloud/compute/public-cloud-first-step
 
 5\. Copy the provided install script for later use.
 
-### Step 4 - Install Tailscale on the Prague instance
+### Step 3 - Install Tailscale on the Prague instance
 
-SSH into the Prague instance using the SSH key created in Step 1:
+SSH into the Prague instance:
 
 ```bash
 ssh root@$PRAGUE_IP -i ~/.ssh/tailscale-test
@@ -83,7 +75,7 @@ Installation complete! Log in to start using Tailscale by running:
 tailscale up
 ```
 
-### Step 5 - Install Tailscale on the Madrid instance
+### Step 4 - Install Tailscale on the Madrid instance
 
 1\. SSH into the Madrid instance:
 
@@ -109,7 +101,7 @@ Installation complete! Log in to start using Tailscale by running:
 tailscale up
 ```
 
-### Step 6 - Verify the Tailscale network
+### Step 5 - Verify the Tailscale network
 
 To check the status of the Tailscale network, log in to one of your instances (e.g., the Prague instance) and run the following command:
 
@@ -124,7 +116,7 @@ The output should look like this, showing the connection between the two nodes:
 100.X.X.X   tailscale-node-madrid john.doe@ linux   -
 ```
 
-### Step 7 - Test the Connection Between Nodes
+### Step 6 - Test the Connection Between Nodes
 
 Now, test the connection between the two nodes using Tailscale’s ping command.
 
@@ -146,13 +138,13 @@ You should see a pong response indicating successful communication between the t
 pong from tailscale-node-madrid (100.X.X.X) via [X:X:X:X:X:X:X]:41641 in 34ms
 ```
 
-### Step 8 - Manage Key Expiry
+### Step 7 - Manage Key Expiry
 
 Tailscale nodes are assigned keys, and these keys can expire. If your nodes are expected to remain in the network for a longer period, you may want to disable key expiry. You can do this in the Tailscale admin panel, depending on your security and access requirements.
 
 ![Tailscale - Manage key expiry](images/tailscale04.png){.thumbnail}
 
-### Step 9 - Access Control
+### Step 8 - Access Control
 
 Tailscale creates a mesh network, meaning all nodes can communicate with each other by default. If you need more granular control, use Tailscale's Access Control Lists (ACLs) to specify which devices can communicate with others.
 

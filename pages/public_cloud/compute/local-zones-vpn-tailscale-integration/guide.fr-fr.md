@@ -28,24 +28,16 @@ Cette fonctionnalité vous permet de :
 
 ## En pratique
 
-### Étape 1 - Créer ou utiliser une clé SSH
+### Étape 1 - Créer deux instances dans les Local Zones OVHcloud
 
-Pour accéder en toute sécurité à vos instances, vous avez besoin d'une [clé SSH](/pages/public_cloud/compute/creating-ssh-keys-pci). Si vous n'en avez pas encore, vous pouvez en générer un en exécutant la commande suivante :
+[Créez deux instances](/pages/public_cloud/compute/public-cloud-first-steps) dans différentes Local Zones OVHcloud, comme Prague et Madrid.
 
-```bash
-ssh-keygen -t rsa -b 4096 -C "youremail@ovhcloud.com" -f ~/.ssh/tailscale-test -N ""
-```
+Assurez-vous que le réseau public est activé pour les deux instances.
 
-Cette commande va générer une paire de clés RSA 4096 bits et l'enregistrer à l'emplacement spécifié.
+### Étape 2 - Se connecter à Tailscale
 
-### Étape 2 - Créer deux instances dans les Local Zones OVHcloud
-
-A présent, [créez deux instances](/pages/public_cloud/compute/public-cloud-first-steps) dans différentes Local Zones OVHcloud, comme Prague et Madrid. Assurez-vous que le réseau public est activé pour les deux instances.
-
-### Étape 3 - Se connecter à Tailscale
-
-1\. Connectez-vous à votre [compte Tailscale](https://login.tailscale.com/).  
-2\. Allez dans l'onglet `Devices`{.action} et cliquez sur `Add Device`{.action}.  
+1\. Connectez-vous à votre [compte Tailscale](https://login.tailscale.com/).
+2\. Allez dans l'onglet `Devices`{.action} et cliquez sur `Add Device`{.action}.
 3\. Sélectionnez `Linux server` comme type de périphérique.
 
 ![Tailscale - Ajouter un périphérique](images/tailscale01.png){.thumbnail}
@@ -56,9 +48,9 @@ A présent, [créez deux instances](/pages/public_cloud/compute/public-cloud-fir
 
 5\. Copiez le script d'installation fourni pour une utilisation ultérieure.
 
-### Étape 4 - Installer Tailscale sur l'instance de Prague
+### Étape 3 - Installer Tailscale sur l'instance de Prague
 
-Connectez-vous en SSH dans l'instance de Prague en utilisant la clé SSH créée à l'étape 1 :
+Connectez-vous en SSH à l'instance de Prague :
 
 ```bash
 ssh root@$PRAGUE_IP -i ~/.ssh/tailscale-test
@@ -83,7 +75,7 @@ Installation complete! Log in to start using Tailscale by running:
 tailscale up
 ```
 
-### Étape 5 - Installer Tailscale sur l'instance de Madrid
+### Étape 4 - Installer Tailscale sur l'instance de Madrid
 
 1\. Connectez-vous en SSH à l'instance de Madrid :
 
@@ -109,7 +101,7 @@ Installation complete! Log in to start using Tailscale by running:
 tailscale up
 ```
 
-### Étape 6 - Vérifier le réseau Tailscale
+### Étape 5 - Vérifier le réseau Tailscale
 
 Pour vérifier l'état du réseau Tailscale, connectez-vous à l'une de vos instances (par exemple, l'instance de Prague) et exécutez la commande suivante :
 
@@ -124,7 +116,7 @@ La sortie devrait ressembler à ceci, montrant la connexion entre les deux nœud
 100.X.X.X   tailscale-node-madrid john.doe@ linux   -
 ```
 
-### Étape 7 - Tester la connexion entre les nœuds
+### Étape 6 - Tester la connexion entre les nœuds
 
 Maintenant, testez la connexion entre les deux nœuds à l'aide de la commande ping de Tailscale.
 
@@ -146,13 +138,13 @@ Une réponse pong indiquant une communication réussie entre les deux instances 
 pong from tailscale-node-madrid (100.X.X.X) via [X:X:X:X:X:X:X]:41641 in 34ms
 ```
 
-### Étape 8 - Gérer l'expiration de la clé
+### Étape 7 - Gérer l'expiration de la clé
 
 Les nœuds Tailscale se voient attribuer des clés, qui peuvent expirer. Si vos nœuds sont censés rester plus longtemps sur le réseau, vous pouvez désactiver l'expiration de la clé. Cette manipulation s’effectue depuis l'interface d’administration Tailscale en fonction de vos besoins en matière de sécurité et d’accès.
 
 ![Tailscale - Gérer l'expiration de la clé](images/tailscale04.png){.thumbnail}
 
-### Étape 9 - Contrôle d'accès
+### Étape 8 - Contrôle d'accès
 
 Tailscale crée un réseau maillé, ce qui signifie que tous les nœuds peuvent communiquer entre eux par défaut. Si vous avez besoin d'un contrôle plus granulaire, utilisez les listes de contrôle d'accès (ACL) de Tailscale pour spécifier quels périphériques peuvent communiquer avec d'autres.
 
