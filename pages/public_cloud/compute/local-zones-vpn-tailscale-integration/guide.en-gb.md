@@ -15,7 +15,7 @@ This feature allows you to:
 - Enable ephemeral nodes so that temporary instances are automatically removed from the Tailscale network when they are deleted.
 - Use Tailscale’s Access Control Lists (ACLs) to manage network permissions.
 
-This tutorial will guide you through the steps to integrate Tailscale into your OVHcloud Local Zone Public Cloud instances, providing a VPN-as-a-Service (VPNaaS) solution. Tailscale allows you to create a secure, peer-to-peer mesh network between your servers in different geographical locations.**
+**This tutorial will guide you through the steps to integrate Tailscale into your OVHcloud Local Zone Public Cloud instances, providing a VPN-as-a-Service (VPNaaS) solution. Tailscale allows you to create a secure, peer-to-peer mesh network between your servers in different geographical locations.**
 
 ## Requirements
 
@@ -44,8 +44,8 @@ Next, [create two instances](/pages/public_cloud/compute/public-cloud-first-step
 
 ### Step 3 - Log into Tailscale
 
-1\. Log into your Tailscale account at [Tailscale](https://login.tailscale.com/).
-2\. Go to the `Devices`{.action} tab and click `Add Device`{.action}.
+1\. Log into your Tailscale account at [Tailscale](https://login.tailscale.com/).  
+2\. Go to the `Devices`{.action} tab and click `Add Device`{.action}.  
 3\. Select `Linux server` as the device type.
 
 ![Tailscale - Add device](images/tailscale01.png){.thumbnail}
