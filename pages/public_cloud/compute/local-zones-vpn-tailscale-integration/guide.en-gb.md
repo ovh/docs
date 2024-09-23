@@ -1,40 +1,40 @@
 ---
 title: Local Zone VPN-as-a-Service (VPNaaS) with Tailscale Integration
 excerpt: Learn how to integrate Tailscale into your OVHcloud Local Zone servers, providing a VPN-as-a-Service (VPNaaS) solution
-updated: 2024-09-20
+updated: 2024-09-23
 ---
 
 ## Objective
 
-This tutorial will guide you through the steps to integrate Tailscale into your OVHcloud Local Zone servers, providing a VPN-as-a-Service (VPNaaS) solution. Tailscale allows you to create a secure, peer-to-peer mesh network between your servers in different geographical locations.
+This tutorial will guide you through the steps to integrate Tailscale into your OVHcloud Local Zone Public Cloud instabces, providing a VPN-as-a-Service (VPNaaS) solution. Tailscale allows you to create a secure, peer-to-peer mesh network between your servers in different geographical locations.
 
 ### Use Case
 
-Suppose you have servers in different OVHcloud Local Zones, such as Prague and Madrid, and you need to securely connect them. Instead of setting up complex VPN infrastructure, you can use Tailscale, which leverages WireGuard, to easily create an encrypted mesh network between your servers. This is particularly useful for developers, distributed systems, or secure cross-region communications.
+Suppose you have Public Clous instances in different OVHcloud Local Zones, such as Prague and Madrid, and you need to securely connect them. Instead of setting up a complex VPN infrastructure, you can use Tailscale, which leverages WireGuard, to easily create an encrypted mesh network between your instances. This is particularly useful for developers, distributed systems, or secure cross-region communications.
 
 ### What This Feature Enables
 
 This feature allows you to:
 
-- Set up a VPN mesh network for secure connections between servers in different OVHcloud Local Zones.
-- Easily connect and manage your servers via Tailscale.
-- Enable ephemeral nodes so that temporary servers are automatically removed from the Tailscale network when they are deleted.
+- Set up a VPN mesh network for secure connections between Public Cloud instances in different OVHcloud Local Zones.
+- Easily connect and manage your instances via Tailscale.
+- Enable ephemeral nodes so that temporary instances are automatically removed from the Tailscale network when they are deleted.
 - Use Tailscale’s Access Control Lists (ACLs) to manage network permissions.
 
 ## Requirements
 
-- An OVHcloud account (OVHcloud email is recommended).
-- SSH access to your OVHcloud Local Zone servers.
-- Two servers deployed in different OVHcloud Local Zones (we’ll use Prague and Madrid for this example).
-- A Tailscale account with admin access. 
-- A Tailscale Auth Key (which you will generate from the Tailscale admin panel).
-- Familiarity with SSH and basic terminal commands.
+- An [OVHcloud account](/pages/account_and_service_management/account_information/ovhcloud-account-creation) (OVHcloud email is recommended).
+- [Two Public Cloud instances](/pages/public_cloud/compute/public-cloud-first-steps) deployed in different [OVHcloud Local Zones](/links/public-cloud/local-zones) (we will use Prague and Madrid for this example).
+- [SSH access to your OVHcloud Local Zone Public Cloud Instances](/pages/public_cloud/compute/creating-ssh-keys-pci).
+- A [Tailscale](https://tailscale.com/) account with admin access.
+- A [Tailscale Auth Key](https://tailscale.com/kb/1085/auth-keys) (which you will generate from the Tailscale admin panel).
+- Familiarity with SSH and basic terminal commands. For more information on SSH, read our guide on [how to create and use SSH keys for Public Cloud instances](/pages/public_cloud/compute/creating-ssh-keys-pci).
 
 ## Instructions
 
 ### Step 1 - Create or Use an SSH Key
 
-To securely access your servers, you need an SSH key. If you don’t already have one, you can generate one by running the following command:
+To securely access your instances, you need an [SSH key](/pages/public_cloud/compute/creating-ssh-keys-pci). If you don’t already have one, you can generate one by running the following command:
 
 ```bash
 ssh-keygen -t rsa -b 4096 -C "youremail@ovhcloud.com" -f ~/.ssh/tailscale-test -N ""
@@ -44,7 +44,7 @@ This command will generate a 4096-bit RSA key pair and save it in the specified 
 
 ### Step 2 - Create Two Servers in OVHcloud Local Zones
 
-Next, create two servers in different OVHcloud Local Zones, such as Prague and Madrid. Ensure that public networking is enabled for both servers.
+Next, [create two instances](/pages/public_cloud/compute/public-cloud-first-steps) in different OVHcloud Local Zones, such as Prague and Madrid. Ensure that public networking is enabled for both servers.
 
 ### Step 3 - Log into Tailscale
 
@@ -60,15 +60,15 @@ Next, create two servers in different OVHcloud Local Zones, such as Prague and M
 
 5\. Copy the provided install script for later use.
 
-### Step 4 - Install Tailscale on the Prague Server
+### Step 4 - Install Tailscale on the Prague instance
 
-SSH into the Prague server using the SSH key created in Step 1:
+SSH into the Prague instance using the SSH key created in Step 1:
 
 ```bash
 ssh root@$PRAGUE_IP -i ~/.ssh/tailscale-test
 ```
 
-1\. Install Tailscale on the server by running the following command:
+1\. Install Tailscale on the instance by running the following command:
 
 ```bash
 curl -fsSL https://tailscale.com/install.sh | sh && sudo tailscale up --auth-key=$TAILSCALE-KEY
@@ -87,15 +87,15 @@ Installation complete! Log in to start using Tailscale by running:
 tailscale up
 ```
 
-### Step 5 - Install Tailscale on the Madrid Server
+### Step 5 - Install Tailscale on the Madrid instance
 
-1\. SSH into the Madrid server:
+1\. SSH into the Madrid instance:
 
 ```bash
 ssh root@$MADRID_IP -i ~/.ssh/tailscale-test
 ```
 
-2\. Repeat the Tailscale installation process on the Madrid server:
+2\. Repeat the Tailscale installation process on the Madrid instance:
 
 ```bash
 curl -fsSL https://tailscale.com/install.sh | sh && sudo tailscale up --auth-key=$TAILSCALE-KEY
@@ -103,10 +103,10 @@ curl -fsSL https://tailscale.com/install.sh | sh && sudo tailscale up --auth-key
 
 3\. **Approve the Node in the Admin Panel**:
 
-Like with the Prague server, a prompt will appear asking you to approve the Madrid node. The installation will remain pending until approval.
+Like with the Prague instance, a prompt will appear asking you to approve the Madrid node. The installation will remain pending until approval.
 Visit <https://login.tailscale.com/admin> and approve the new node.
 
-4\. After approval, the installation will finish, and you’ll see the following success message in the terminal:
+4\. After approval, the installation will finish, and you will see the following success message in the terminal:
 
 ```bash
 Installation complete! Log in to start using Tailscale by running:
@@ -115,7 +115,7 @@ tailscale up
 
 ### Step 6 - Verify the Tailscale Network
 
-To check the status of the Tailscale network, log into one of your servers (e.g., the Prague server) and run the following command:
+To check the status of the Tailscale network, log in to one of your instances (e.g., the Prague instance) and run the following command:
 
 ```bash
 tailscale status
@@ -132,19 +132,19 @@ The output should look like this, showing the connection between the two nodes:
 
 Now, test the connection between the two nodes using Tailscale’s ping command.
 
-On the Prague server, run:
+On the Prague instance, run:
 
 ```bash
 tailscale ping tailscale-node-madrid
 ```
 
-On the Madrid server, run:
+On the Madrid instance, run:
 
 ```bash
 tailscale ping tailscale-node-prague
 ```
 
-You should see a pong response indicating successful communication between the two servers, similar to this: 
+You should see a pong response indicating successful communication between the two instances, similar to this: 
 
 ```bash
 pong from tailscale-node-madrid (100.X.X.X) via [X:X:X:X:X:X:X]:41641 in 34ms
