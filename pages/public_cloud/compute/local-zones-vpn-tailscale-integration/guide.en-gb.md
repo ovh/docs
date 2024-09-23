@@ -1,18 +1,12 @@
 ---
-title: Local Zone VPN-as-a-Service (VPNaaS) with Tailscale Integration
-excerpt: Learn how to integrate Tailscale into your OVHcloud Local Zone servers, providing a VPN-as-a-Service (VPNaaS) solution
+title: Local Zone VPN-as-a-Service (VPNaaS) with Tailscale integration
+excerpt: Learn how to integrate Tailscale into your OVHcloud Local Zone instances, providing a VPN-as-a-Service (VPNaaS) solution
 updated: 2024-09-23
 ---
 
 ## Objective
 
-This tutorial will guide you through the steps to integrate Tailscale into your OVHcloud Local Zone Public Cloud instabces, providing a VPN-as-a-Service (VPNaaS) solution. Tailscale allows you to create a secure, peer-to-peer mesh network between your servers in different geographical locations.
-
-### Use Case
-
 Suppose you have Public Clous instances in different OVHcloud Local Zones, such as Prague and Madrid, and you need to securely connect them. Instead of setting up a complex VPN infrastructure, you can use Tailscale, which leverages WireGuard, to easily create an encrypted mesh network between your instances. This is particularly useful for developers, distributed systems, or secure cross-region communications.
-
-### What This Feature Enables
 
 This feature allows you to:
 
@@ -21,9 +15,11 @@ This feature allows you to:
 - Enable ephemeral nodes so that temporary instances are automatically removed from the Tailscale network when they are deleted.
 - Use Tailscale’s Access Control Lists (ACLs) to manage network permissions.
 
+This tutorial will guide you through the steps to integrate Tailscale into your OVHcloud Local Zone Public Cloud instances, providing a VPN-as-a-Service (VPNaaS) solution. Tailscale allows you to create a secure, peer-to-peer mesh network between your servers in different geographical locations.**
+
 ## Requirements
 
-- An [OVHcloud account](/pages/account_and_service_management/account_information/ovhcloud-account-creation) (OVHcloud email is recommended).
+- An [OVHcloud account](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
 - [Two Public Cloud instances](/pages/public_cloud/compute/public-cloud-first-steps) deployed in different [OVHcloud Local Zones](/links/public-cloud/local-zones) (we will use Prague and Madrid for this example).
 - [SSH access to your OVHcloud Local Zone Public Cloud Instances](/pages/public_cloud/compute/creating-ssh-keys-pci).
 - A [Tailscale](https://tailscale.com/) account with admin access.
@@ -32,7 +28,7 @@ This feature allows you to:
 
 ## Instructions
 
-### Step 1 - Create or Use an SSH Key
+### Step 1 - Create or use an SSH Key
 
 To securely access your instances, you need an [SSH key](/pages/public_cloud/compute/creating-ssh-keys-pci). If you don’t already have one, you can generate one by running the following command:
 
@@ -42,9 +38,9 @@ ssh-keygen -t rsa -b 4096 -C "youremail@ovhcloud.com" -f ~/.ssh/tailscale-test -
 
 This command will generate a 4096-bit RSA key pair and save it in the specified location.
 
-### Step 2 - Create Two Servers in OVHcloud Local Zones
+### Step 2 - Create two instances in OVHcloud Local Zones
 
-Next, [create two instances](/pages/public_cloud/compute/public-cloud-first-steps) in different OVHcloud Local Zones, such as Prague and Madrid. Ensure that public networking is enabled for both servers.
+Next, [create two instances](/pages/public_cloud/compute/public-cloud-first-steps) in different OVHcloud Local Zones, such as Prague and Madrid. Ensure that public networking is enabled for both instances.
 
 ### Step 3 - Log into Tailscale
 
@@ -113,7 +109,7 @@ Installation complete! Log in to start using Tailscale by running:
 tailscale up
 ```
 
-### Step 6 - Verify the Tailscale Network
+### Step 6 - Verify the Tailscale network
 
 To check the status of the Tailscale network, log in to one of your instances (e.g., the Prague instance) and run the following command:
 
