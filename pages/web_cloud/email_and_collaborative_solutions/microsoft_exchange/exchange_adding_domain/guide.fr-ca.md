@@ -102,11 +102,11 @@ Maintenant que vous avez ajouté les noms de domaine souhaités à votre service
 
 Pour rappel, toutes les adresses créées sur votre service seront en mesure de visualiser dans l'annuaire l'ensemble des adresses de ce service, y compris celles possédant un nom de domaine différent.
 
-Une fois les comptes totalement configurés, il ne vous reste plus qu’à les utiliser. Pour cela, OVHcloud met à votre disposition le **webmail** accessible à l’adresse [Webmail](/links/web/email). Pour une utilisation optimale de votre adresse sur un logiciel, assurez-vous de sa bonne compatibilité avec le service. 
+Une fois les comptes totalement configurés, il ne vous reste plus qu’à les utiliser. Pour cela, OVHcloud met à votre disposition le **webmail** accessible à l’adresse [Webmail](/links/web/email). Pour une utilisation optimale de votre adresse sur un logiciel, assurez-vous de sa bonne compatibilité avec le service.
 
 Si vous souhaitez configurer votre adresse e-mail sur un logiciel de messagerie ou un périphérique comme un smartphone ou une tablette, ou obtenir de l'aide concernant les fonctionnalités de votre service e-mail, consultez nos documentations accessibles depuis les pages [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
 
-Vous pouvez acquérir des licences Outlook dans l'[espace client OVHcloud](/links/manager) et des licences Office 365 sur la page [Microsoft 365](/links/web/ms365). Nous vous recommandons l'une de ces solutions si vous souhaitez bénéficier du logiciel de messagerie Outlook ou de plus de logiciels de la suite Office, selon vos besoins.
+Vous pouvez acquérir des licences Outlook dans l'[espace client OVHcloud](/links/manager). Nous vous recommandons l'une de ces solutions si vous souhaitez bénéficier du logiciel de messagerie Outlook ou de plus de logiciels de la suite Office, selon vos besoins.
 
 ### Supprimer un nom de domaine d'une plateforme
 
