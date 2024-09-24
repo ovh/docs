@@ -5,13 +5,13 @@ updated: 2024-09-23
 
 ## Objective
 
-This guide's objective is to help you better understand our GAME DDoS protection (GAME firewall) and to provide instructions on how to configure effective protection for servers that support it.
+This guide's objective is to help you better understand our GAME DDoS Protection (also known as GAME firewall) and to provide instructions on how to configure effective protection.
 
 > [!primary]
-> Find more information on our GAME DDoS protection on our website: <https://www.ovhcloud.com/en-gb/security/game-ddos-protection/>.
+> Find more information on our GAME DDoS Protection on our website: <https://www.ovhcloud.com/en-gb/security/game-ddos-protection/>.
 > 
 
-Our dedicated Bare Metal gaming servers include a DDoS protection specifically designed to secure gaming applications against targeted attacks, ensuring stability and accessibility for gamers. This dedicated protection solution is both robust and easy to use, allowing you to focus on developing your business without the distraction of defending against cybercrime.
+Our dedicated Bare Metal gaming servers include an additional network attack protection specifically designed to secure gaming applications against targeted attacks, ensuring stability and accessibility for gamers. This dedicated protection solution is both robust and easy to use, allowing you to focus on developing your business without the distraction of defending against cybercrime.
 
 | ![global-schema](images/global_schema_focus_game.png) |
 |:--:|
@@ -31,9 +31,9 @@ Our dedicated Bare Metal gaming servers include a DDoS protection specifically d
 
 ### Introduction
 
-The Anti-DDoS infrastructure, together with the Edge Network firewall, keeps the network safe from common threats (mostly focused on ISO OSI layers 3 and 4). On the other hand, hosting gaming applications can be a challenging experience in terms of network security. GAME DDoS Protection is here to help - this is a Layer 7 (application) firewall focused on protecting specific gaming protocols. Its main advantages are:
+General Anti-DDoS Infrastructure, together with the Edge Network firewall, keeps the network safe from common threats (mostly focused on ISO OSI layers 3 and 4). On the other hand, hosting gaming applications can be a challenging experience in terms of network security. **GAME DDoS Protection** is here to help - this is a Layer 7 (application) firewall focused on protecting specific gaming protocols. Its main advantages are:
 
-- **Low latency**: We know that latency and its stability is crucial for online gaming. These solutions are put as close as possible to the servers and work together with a high-performance hardware.
+- **Very low latency**: We know that latency and its stability is crucial for online gaming. These solutions are put as close as possible to the servers and work together with a high-performance hardware.
 - **2-way**: The platform analyses incoming and outgoing traffic for best understanding of every player's situation.
 - **Instant**: It can distinguish real players from harmful attacks on a server from the very first network packets.
 - **Always-on**: The ability to detect and stop attacks ensures a smooth experience for sensitive gaming applications without any disruptions and latency changes.
@@ -67,7 +67,7 @@ Then, for the selected IP, navigate to the GAME firewall configuration:
 Now, you can configure game protection rules for such IP address.
 
 > [!primary]
-> It is important to note that GAME DDoS protection will not take any action unless game rules are configured.
+> It is important to note that GAME DDoS Protection will not take any action unless game rules are configured.
 > 
 
 So, to enable GAME DDoS Protection, simply define game applications and network port range (or single port) on which such applications work:
@@ -77,7 +77,7 @@ So, to enable GAME DDoS Protection, simply define game applications and network 
 | On the following screen, click the `Add a rule`{.action} button to add a rule to the GAME firewall. |
 
 
-GAME firewall allows you to configure up to **100 rules per IP address** that points to the game server (the 3rd gen. of Bare Metal game servers released in 2024 release), or up to **30 rules per IP address** for the older Bare Metal game ranges. 
+GAME DDoS Protection allows you to configure up to **100 rules per IP address** that points to the game server (the 3rd gen. of Bare Metal game servers released in 2024), or up to **30 rules per IP address** for the older Bare Metal game ranges (usually seen as RISE-GAME or SYS-GAME).
 
 Please note that supported gaming protocols (game titles and versions that can be protected) may change over a time. Moreover, they can be different between older Bare Metal game server ranges and the newer ones. The most recent list of supported game profiles can be found [here](https://www.ovhcloud.com/en-gb/security/game-ddos-protection/).
 
@@ -144,7 +144,7 @@ While Additional IPs are bringing flexibility, there are situations that require
 To provide the most flexibility of configuration, different gaming protection rules can be set on different Additional IPs pointing to the same Bare Metal game server.
 Maximum number of such rules and available protection settings are defined on per-IP-address basis, but are specific to the particular Bare Metal game server generation behind. 
 
-Differences may be observed between: the newer game servers (3rd gen. of game Bare Metal servers, 2024 release) and the older game servers (previous generations of game Bare Metal, usually seen as RISE-/SYS-GAME).
+Differences may be observed between: the newer game servers (3rd gen. of game Bare Metal servers, released in 2024) and the older game servers (previous generations of Bare Metal game, usually seen as RISE-/SYS-GAME).
 
 ##### Veryfying supported game protections
 
