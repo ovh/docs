@@ -149,10 +149,16 @@ Differences may be observed between: the newer game servers (3rd gen. of game Ba
 ##### Veryfying supported game protections
 
 List of all supported GAME DDoS Protection protocols for a specific server can be seen on `GAME firewall`{.action} configuration page for any IP address pointing to that server, in the `game protocols`{.action} drop-down menu:
+
 | ![control-panel-game-protocols](images/game_protocols_list.png) |
+|:--:|
+| Reviewing list of supported protection protocols |
 
 For those, who prefer automation, such details can be retrieved using APIv6:
-| ![api-get-ip-game-protocols](images/firewall_game_api_get_proto.png) |
+> [!api]
+>
+> @api {v1} /ip GET /ip/{ip}/game/{ipOnGame}
+>
 
 Example API response:
 ```python
