@@ -1,6 +1,6 @@
 title: "Protecting a game server with the application firewall"
 excerpt: "Learn how to configure the OVHcloud GAME DDoS firewall"
-updated: 2024-09-23
+updated: 2024-09-24
 ---
 
 ## Objective
