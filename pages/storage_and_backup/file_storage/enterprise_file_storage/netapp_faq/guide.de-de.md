@@ -78,7 +78,7 @@ Die Mindestgröße einer Dienstleistung beträgt 1 TB und die maximale Größe 5
 
 ### Wie viele Enterprise File Storage Dienste kann ich über meine Kundenkennung erstellen?
 
-Es GBt keine Begrenzung der Anzahl der Dienstleistungen pro Kunden-Account.
+Es gibt keine Begrenzung der Anzahl der Dienstleistungen pro Kunden-Account.
 
 ### Wie viele Volumes maximal pro Dienstleistung?
 
@@ -104,11 +104,11 @@ Benutzer sind für die Durchführung und Verwaltung ihrer Backups verantwortlich
 
 Snapshots werden mindestens 5% des Speicherplatzes zugewiesen. Bei einem Dienst mit 5TB sind zum Beispiel 250GB für Snapshots reserviert.
 
-### Wie viele Snapshots GBt es pro Dienstleistung maximal?
+### Wie viele Snapshots gibt es pro Dienstleistung maximal?
 
 200\.
 
-### Wie viele Snapshots GBt es pro Volume maximal?
+### Wie viele Snapshots gibt es pro Volume maximal?
 
 200\.
 
@@ -126,7 +126,7 @@ Ihre Snapshots werden auf demselben Niveau gespeichert wie Ihr Dienst. Die Snaps
 
 ### Wie kann ich die Verwendung von Pools und Volumes nachverfolgen?
 
-Es GBt noch keine integrierten Metriken zur Überwachung der Verwendung von Pools und Volumes.
+Es gibt noch keine integrierten Metriken zur Überwachung der Verwendung von Pools und Volumes.
 
 ## Preisgestaltung
 

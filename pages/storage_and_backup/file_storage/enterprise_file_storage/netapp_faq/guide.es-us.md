@@ -24,7 +24,7 @@ Enterprise File Storage permite dar respuesta a numerosos casos prácticos a la 
 Permite externalizar el almacenamiento compartido de sus máquinas virtuales o servidores basados en Linux para diversas cargas de trabajo (aplicaciones críticas, bases de datos corporativas, CRM, ERP...) para aumentar la resiliencia global de su infraestructura y la calidad del servicio (QoS).<br>
 Enterprise File Storage permite responder a los casos de uso simple de servidores de archivos compartidos, para los que el servicio debe ofrecer un rendimiento elevado, alta disponibilidad y un ancho de banda garantizado e incluido.
 
-Esta solución también permite dar respuesta a casos prácticos más complejos, ya sea en caso de desbordamiento de cargas de trabajo on-premise o de migración a la nube. Pero también los ejemplos de backup de datos en la nube en el marco de planes de resiliencia, tanto como una buena práctica del mercado para la gestión y la perdurabilidad de los datos como para optimizar los costes operativos (datos calientes on-premises y datos TBios/fríos en la nube).
+Esta solución también permite dar respuesta a casos prácticos más complejos, ya sea en caso de desbordamiento de cargas de trabajo on-premise o de migración a la nube. Pero también los ejemplos de backup de datos en la nube en el marco de planes de resiliencia, tanto como una buena práctica del mercado para la gestión y la perdurabilidad de los datos como para optimizar los costes operativos (datos calientes on-premises y datos tibios/fríos en la nube).
 
 ### ¿Se puede gestionar Enterprise File Storage desde el área de cliente?
 
