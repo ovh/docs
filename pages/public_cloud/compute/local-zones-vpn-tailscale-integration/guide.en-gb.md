@@ -36,15 +36,15 @@ Ensure that public networking is enabled for both instances.
 
 ### Step 2 - Log into Tailscale
 
-1\. Log into your Tailscale account at [Tailscale](https://login.tailscale.com/).
-2\. Go to the `Devices`{.action} tab and click `Add Device`{.action}.
+1\. Log into your Tailscale account at [Tailscale](https://login.tailscale.com/).<br>
+2\. Go to the `Devices`{.action} tab and click `Add Device`{.action}.<br>
 3\. Select `Linux server` as the device type.
 
 ![Tailscale - Add device](images/tailscale01.png){.thumbnail}
 
 4\. Enable `ephemeral nodes` to ensure that nodes are automatically removed from the network when their corresponding server is deleted.
 
-![Tailscale - ephemeral nodes](images/tailscale02.png){.thumbnail}
+![Tailscale - ephemeral nodes](images/tailscale02.png){.thumbnail width="600"}
 
 5\. Copy the provided install script for later use.
 
@@ -66,7 +66,7 @@ curl -fsSL https://tailscale.com/install.sh | sh && sudo tailscale up --auth-key
 
 3\. Approve the node using the menu on the right (with the `...`{.action} button).
 
-![Tailscale - node approval](images/tailscale03.png){.thumbnail}
+![Tailscale - node approval](images/tailscale03.png){.thumbnail width="600"}
 
 4\. Once approved, you will see a success message in the terminal:
 
@@ -89,7 +89,7 @@ ssh root@$MADRID_IP -i ~/.ssh/tailscale-test
 curl -fsSL https://tailscale.com/install.sh | sh && sudo tailscale up --auth-key=$TAILSCALE-KEY
 ```
 
-3\. **Approve the Node in the Admin Panel**:
+3\. Approve the Node in the Admin Panel:
 
 Like with the Prague instance, a prompt will appear asking you to approve the Madrid node. The installation will remain pending until approval.
 Visit <https://login.tailscale.com/admin> and approve the new node.
@@ -142,7 +142,7 @@ pong from tailscale-node-madrid (100.X.X.X) via [X:X:X:X:X:X:X]:41641 in 34ms
 
 Tailscale nodes are assigned keys, and these keys can expire. If your nodes are expected to remain in the network for a longer period, you may want to disable key expiry. You can do this in the Tailscale admin panel, depending on your security and access requirements.
 
-![Tailscale - Manage key expiry](images/tailscale04.png){.thumbnail}
+![Tailscale - Manage key expiry](images/tailscale04.png){.thumbnail width="600"}
 
 ### Step 8 - Access Control
 

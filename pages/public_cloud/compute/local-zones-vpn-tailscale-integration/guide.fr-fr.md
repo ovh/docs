@@ -36,15 +36,15 @@ Assurez-vous que le réseau public est activé pour les deux instances.
 
 ### Étape 2 - Se connecter à Tailscale
 
-1\. Connectez-vous à votre [compte Tailscale](https://login.tailscale.com/).
-2\. Allez dans l'onglet `Devices`{.action} et cliquez sur `Add Device`{.action}.
+1\. Connectez-vous à votre [compte Tailscale](https://login.tailscale.com/).<br>
+2\. Allez dans l'onglet `Devices`{.action} et cliquez sur `Add Device`{.action}.<br>
 3\. Sélectionnez `Linux server` comme type de périphérique.
 
 ![Tailscale - Ajouter un périphérique](images/tailscale01.png){.thumbnail}
 
 4\. Activez l'option `ephemeral nodes` pour vous assurer que les nœuds sont automatiquement supprimés du réseau lorsque leur serveur correspondant est supprimé.
 
-![Tailscale - ephemeral nodes](images/tailscale02.png){.thumbnail}
+![Tailscale - ephemeral nodes](images/tailscale02.png){.thumbnail width="600"}
 
 5\. Copiez le script d'installation fourni pour une utilisation ultérieure.
 
@@ -66,7 +66,7 @@ curl -fsSL https://tailscale.com/install.sh | sh && sudo tailscale up --auth-key
 
 3\. Approuvez le nœud en utilisant le menu de droite (via le bouton `...`{.action}).
 
-![Tailscale - approbation du nœud](images/tailscale03.png){.thumbnail}
+![Tailscale - approbation du nœud](images/tailscale03.png){.thumbnail width="600"}
 
 4\. Une fois approuvé, un message de réussite s'affichera dans le terminal :
 
@@ -89,7 +89,7 @@ ssh root@$MADRID_IP -i ~/.ssh/tailscale-test
 curl -fsSL https://tailscale.com/install.sh | sh && sudo tailscale up --auth-key=$TAILSCALE-KEY
 ```
 
-3\. **Approuvez le nœud dans l'interface d'administration** :
+3\. Approuvez le nœud dans l'interface d'administration :
 
 Comme pour l'instance de Prague, une invite apparaît vous demandant d'approuver le nœud Madrid. L'installation reste en attente jusqu'à son approbation.
 Rendez-vous sur <https://login.tailscale.com/admin> et approuvez le nouveau nœud.
@@ -142,7 +142,7 @@ pong from tailscale-node-madrid (100.X.X.X) via [X:X:X:X:X:X:X]:41641 in 34ms
 
 Les nœuds Tailscale se voient attribuer des clés, qui peuvent expirer. Si vos nœuds sont censés rester plus longtemps sur le réseau, vous pouvez désactiver l'expiration de la clé. Cette manipulation s’effectue depuis l'interface d’administration Tailscale en fonction de vos besoins en matière de sécurité et d’accès.
 
-![Tailscale - Gérer l'expiration de la clé](images/tailscale04.png){.thumbnail}
+![Tailscale - Gérer l'expiration de la clé](images/tailscale04.png){.thumbnail width="600"}
 
 ### Étape 8 - Contrôle d'accès
 
