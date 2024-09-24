@@ -146,7 +146,38 @@ Maximum number of such rules and available protection settings are defined on pe
 
 Differences may be observed between: the newer game servers (3rd gen. of game Bare Metal servers, 2024 release) and the older game servers (previous generations of game Bare Metal, usually seen as RISE-/SYS-GAME).
 
-Visit `GAME firewall`.{action} configuration page in Control Panel to see available `game protocols`.{action} for any IP address pointing specific Bare Metal game server.
+##### Veryfying supported game protections
+
+List of all supported GAME DDoS Protection protocols for a specific server can be seen on `GAME firewall`{.action} configuration page for any IP address pointing to that server, in the `game protocols`{.action} drop-down menu:
+| ![control-panel-game-protocols](images/game_protocols_list.png) |
+
+For those, who prefer automation, such details can be retrieved using APIv6:
+| ![api-get-ip-game-protocols](images/firewall_game_api_get_proto.png) |
+
+Example API response:
+```python
+{
+    ipOnGame: "1.2.3.4"
+    maxRules: 30
+    state: "ok"
+    firewallModeEnabled: true
+  - supportedProtocols: [
+        "arkSurvivalEvolved"
+        "arma"
+        "gtaMultiTheftAutoSanAndreas"
+        "gtaSanAndreasMultiplayerMod"
+        "hl2Source"
+        "minecraftPocketEdition"
+        "minecraftQuery"
+        "mumble"
+        "other"
+        "rust"
+        "teamspeak2"
+        "teamspeak3"
+        "trackmaniaShootmania"
+    ]
+}
+```
 
 
 #### Moving an Additional IP between servers
@@ -158,12 +189,12 @@ While static configuration may be pretty clear, Additional IP moving actions may
     - will be transparent and result in keeping all protection rules and IP settings
 
 - **Moving an IP between Bare Metal game servers: from newer to older generation:**
-    - keep backward compatible rules (the same profile name)
-    - copy arkSurvivalEvolvedV311.78+ profile rules into arkSurvivalEvolved (older one)
-    - delete all other rules that are not supported on the older generation
-
+    - If destination server supports less protection rules than origin one, an error is displayed and action stopped.
+    - Backward compatible rules are kept (protection profile name must equal).
+    - Rules not supported on the destination server will be removed.
+    
 - **Moving an IP from Bare Metal game server to other servers or services:**
-    - delete all GAME DDoS Protection rules from such IP as they are not supported outside Bare Metal game servers.
+    - All GAME DDoS Protection rules from such IP will be deleted, as they are not supported outside Bare Metal game servers.
 
 
 ## FAQ
