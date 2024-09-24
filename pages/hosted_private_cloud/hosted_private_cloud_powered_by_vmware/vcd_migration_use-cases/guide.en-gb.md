@@ -15,7 +15,7 @@ updated: 2024-09-16
 
 ## Requirements
 
-- A managed VMware vSphere on OVHcloud solution.
+- A managed [VMware vSphere on OVHcloud](/links/hosted-private-cloud/vmware) offer.
 - You must have access to the [OVHcloud Control Panel](/links/manager) and be technical administrator of the managed VMware vSphere on OVHcloud infrastructure.
 
 ## Instructions
@@ -38,7 +38,7 @@ As a reminder, if you decide to switch to the managed VCD on OVHcloud offer, the
 
 ### Step 1 - Before migration (mandatory)
 
-#### Migration requests made before September 1st, 2024
+#### Migration requests made before November 1st, 2024
 
 > [!primary]
 >
@@ -60,12 +60,12 @@ Migrations will be carried out in 4 waves, from september, depending on the serv
 
 The planned schedule, which is compatible with these environments during the migration, is as follows:
 
-| **Waves** |     **Dates**     | **Target Offers** |  **NSX**   |  **vRack**  |  **vSAN**   | **Microsoft (SPLA)<br/>on OVHcloud** | **Summary of migration compatible environments**                                                                                                         |
-|:----------:|:-----------------:|:---------------:|:----------:|:-----------:|:-----------:|:------------------------------------:|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-|     ❶      | **November 2024** |    `Standard`    |     ❌      |      ❌      |      ❌      |                  ❌                   | - **Without** Microsoft Windows VM license (SPLA) provided by OVHcloud<br/>- **Without** NSX<br/>- **Without** High performance storage (vSAN)           |
-|     ❷      | **December 2024** |    `Standard`    |     ❌      |      ❌      |      ❌      |                  ✅                   | - **With** Microsoft Windows VM license (SPLA) provided by OVHcloud<br/>- **Without** NSX<br/>- **Without** High performance storage (vSAN)              |
-|     ❸      | **January 2024**  |    `Advanced`    |     ✅      |      ✅      |      ❌      |                  ✅                   | - **With** Microsoft Windows VM license (SPLA) provided by OVHcloud<br/>- **With** NSX + vRack support<br/>- **Without** High performance storage (vSAN) |
-|     ❹      | **February 2024** |    `Premium`     |     ✅      |      ✅      |      ✅      |                  ✅                   | - **With** Microsoft Windows license (SPLA) provided by OVHcloud<br/>- **With** NSX + vRack support<br/>- **With** High performance storage (vSAN)       |
+| **Waves**&nbsp; |     **Dates**     | **Target<br/>Offers** |  **NSX**   |  **vRack**  |  **vSAN**   | **Microsoft<br/>(SPLA)** | **Summary of migration<br/>compatible environments**                                                                                                         |
+|:---------------:|:-----------------:|:---------------------:|:----------:|:-----------:|:-----------:|:-------------------:|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    `Wave 1`     | **November 2024** |      `Standard`       |     ❌      |      ❌      |      ❌      |          ❌          | - **Without** Microsoft Windows VM license (SPLA) provided by OVHcloud<br/>- **Without** NSX<br/>- **Without** High performance storage (vSAN)           |
+|    `Wave 2`     | **December 2024** |      `Standard`       |     ❌      |      ❌      |      ❌      |          ✅          | - **With** Microsoft Windows VM license (SPLA) provided by OVHcloud<br/>- **Without** NSX<br/>- **Without** High performance storage (vSAN)              |
+|    `Wave 3`     | **January 2024**  |      `Advanced`       |     ✅      |      ✅      |      ❌      |          ✅          | - **With** Microsoft Windows VM license (SPLA) provided by OVHcloud<br/>- **With** NSX + vRack support<br/>- **Without** High performance storage (vSAN) |
+|    `Wave 4`     | **February 2024** |       `Premium`       |     ✅      |      ✅      |      ✅      |          ✅          | - **With** Microsoft Windows license (SPLA) provided by OVHcloud<br/>- **With** NSX + vRack support<br/>- **With** High performance storage (vSAN)       |
 
 During this process, your data will remain unchanged, except for vSAN Storage. Your IP addresses will also remain unchanged.
 
@@ -73,7 +73,7 @@ The migration date will be sent to you by email at least 15 days before the migr
 
 We recommend reading our guide [VMware Cloud Director - The fundamentals of VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts) to see which features are included in each migration wave of your environments.
 
-#### Applications made after September 1st, 2024
+#### Applications made after November 1st, 2024
 
 > [!primary]
 >
@@ -129,17 +129,17 @@ Here is a reminder of the tasks you still need to carry out, once the migration 
 
 #### Managed Veeam for VCD (mandatory)
 
-**Storage repository configuration**
+Backup is not set up by default following the VCD migration. You must subscribe to the **Managed Veeam for VCD** backup service in the control panel and configure it, if you want to protect your new environment.
 
-After the migration, you will need to configure your new **Veeam Data Platform** on managed VCD on OVHcloud storage implementation with the correct settings.
+**Storage repository configuration**
 
 These settings can be customized to suit your chosen service levels:
 
-| **Repository**&nbsp;&nbsp;&nbsp;&nbsp; |  **Target Offers**  | **Comments**                                                                          |
-|:---------------------------------------|:-------------------:|:--------------------------------------------------------------------------------------|
-| 🥉 `Bronze Repository (100 To)`        |     `Standard`      | - **Standard Object Storage**                                                         |
-| 🥈 `Silver Repository (100 To)`        |     `Advanced`      | - **Standard Object Storage** with off-site backup                                    |
-| 🥇 `Gold Repository (100 To)`          |      `Premium`      | - **High Performance Object Storage** with off-site backup and 14 immutability points |
+| **Repository**&nbsp;&nbsp;&nbsp;&nbsp; |  **Target Offer**  | **Comments**                                                                          |
+|:---------------------------------------|:------------------:|:--------------------------------------------------------------------------------------|
+| 🥉 `Bronze Repository (100 To)`        |     `Standard`     | - **Standard Object Storage**                                                         |
+| 🥈 `Silver Repository (100 To)`        |     `Advanced`     | - **Standard Object Storage** with off-site backup                                    |
+| 🥇 `Gold Repository (100 To)`          |     `Premium`      | - **High Performance Object Storage** with off-site backup and 14 immutability points |
 
 All these repositories have a storage quota of **100 To**. You can contact the [support](https://help.ovhcloud.com/csm?id=csm_get_help) teams to increase this quota.
 
