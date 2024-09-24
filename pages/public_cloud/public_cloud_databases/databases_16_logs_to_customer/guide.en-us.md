@@ -16,6 +16,7 @@ Public Cloud managed databases allow you to send logs of your service to your ow
 - A [Public Cloud database service](https://www.ovhcloud.com/en/public-cloud/databases/) up and running
 - Access to the [OVHcloud API](https://ca.api.ovh.com/console/)
 - A Logs Data Platform account within this OVHcloud account with at least one destination stream configured
+    - If you are not familiar with all the LDP *Stream* configuration possibilities, simply create a new one with the default options (indexing & websocket enabled, long-term storage disabled) for the purpose of this guide.
 - A running database service
 
 ## Instructions
@@ -26,8 +27,7 @@ Public Cloud managed databases allow you to send logs of your service to your ow
 
 - In the OVHcloud Control Panel, go to your LDP page.
 - Go to the `Data stream` tab.
-- Choose your target stream and click on `Edit`{.action}.
-- You can see the `streamId` in the URL `https://.../streams/<streamId>/edit`.
+- Choose your target stream and click on `Copy stream ID`{.action}.
 
 #### Retrieve your LDP destination `serviceName`:
 

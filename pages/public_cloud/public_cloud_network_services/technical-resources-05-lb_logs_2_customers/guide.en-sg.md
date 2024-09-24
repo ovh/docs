@@ -19,6 +19,7 @@ If you would like to find out more about Logs Data Platform before reading this 
 ## Requirements
 
 - A Logs Data Platform (LDP) account with at least one active *Stream* configured. This guide will walk you through all the necessary steps: [Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
+    - If you are not familiar with all the LDP *Stream* configuration possibilities, simply create a new one with the default options (indexing & websocket enabled, long-term storage disabled) for the purpose of this guide.
 - An up-and-running [Public Cloud Load Balancer](/pages/public_cloud/public_cloud_network_services/getting-started-01-create-lb-service).
 - Both the LDP account and the Public Cloud Load Balancer account must belong to the same OVHcloud account.
 
