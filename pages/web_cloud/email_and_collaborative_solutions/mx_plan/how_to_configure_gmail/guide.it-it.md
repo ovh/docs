@@ -1,7 +1,7 @@
 ---
 title: 'Configurare un account di posta su Gmail'
 excerpt: 'Come configurare un account MX Plan dall’interfaccia Web di Gmail'
-updated: 2023-11-20
+updated: 2024-09-24
 ---
 
 ## Obiettivo
@@ -12,10 +12,9 @@ Gli account email del servizio MX Plan possono essere configurati su client o ap
 
 > [!warning]
 >
-> OVHcloud mette a disposizione i servizi ma non si occupa della loro configurazione e gestione; garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
-> 
+> OVHcloud mette a disposizione i servizi ma non si occupa della loro configurazione e gestione; garantirne
 > Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio.  Per maggiori informazioni consulta la sezione “Per saperne di più”.
-> 
+>
 
 ## Prerequisiti
 
@@ -99,5 +98,9 @@ Per inviare email dall’account OVHcloud è necessario scegliere l’indirizzo 
 Ti ricordiamo che per accedere all’account OVHcloud è sempre possibile utilizzare la nostra Webmail disponibile all’indirizzo [Webmail](/links/web/email). 
 
 ## Per saperne di più
+
+> [!primary]
+>
+> Per maggiori informazioni sulla configurazione di un indirizzo email dall’interfaccia Gmail online, consulta [il centro assistenza di Google](https://support.google.com/mail/answer/21289?hl=it&co=GENIE.Platform%3DDesktop).
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

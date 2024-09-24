@@ -1,7 +1,7 @@
 ---
 title: 'Configurar una dirección de correo electrónico en la interfaz web de Gmail'
 excerpt: 'Cómo configurar una cuenta MX Plan en la interfaz web de Gmail'
-updated: 2023-11-20
+updated: 2024-09-24
 ---
 
 ## Objetivo
@@ -99,5 +99,9 @@ Para enviar un mensaje con su dirección de correo de OVHcloud desde la interfaz
 No olvide que también puede utilizar nuestra interfaz web en la dirección [Webmail](/links/web/email) para acceder a su dirección de correo de OVHcloud. Para conectarse solo necesitará las claves de acceso.
 
 ## Más información
+
+> [!primary]
+>
+> Para más información sobre la configuración de una dirección de correo electrónico desde la interfaz de Gmail en línea, visite [el Centro de ayuda de Google](https://support.google.com/mail/answer/21289?hl=es&co=GENIE.Platform%3DDesktop).
 
 Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/).

@@ -1,7 +1,7 @@
 ---
 title: 'Email Pro - Configure your email account on the Gmail online interface'
 excerpt: 'Find out how to configure an Email Pro account on the Gmail online interface'
-updated: 2024-09-17
+updated: 2024-09-24
 ---
 
 ## Objective
@@ -107,7 +107,7 @@ Please also note that you can still use our online interface, accessible via [We
 
 > [!primary]
 >
-> Find more information on configuring an email address with the Gmail online interface in the [Google Help Center](https://support.google.com/mail/answer/21289?hl=fr&co=GENIE.Platform%3DDesktop).
+> Find more information on configuring an email address with the Gmail online interface in the [Google Help Center](https://support.google.com/mail/answer/21289?hl=en&co=GENIE.Platform%3DDesktop).
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 

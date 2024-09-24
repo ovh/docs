@@ -1,7 +1,7 @@
 ---
 title: 'Email Pro - Configurar una cuenta en la interfaz web de Gmail'
 excerpt: 'Cómo configurar una cuenta Email Pro en la interfaz web de Gmail'
-updated: 2024-09-17
+updated: 2024-09-24
 ---
 
 ## Objetivo
@@ -109,7 +109,7 @@ No olvide que también puede utilizar nuestra interfaz web en la dirección [Web
 
 > [!primary]
 >
-> Para más información sobre la configuración de una dirección de correo electrónico desde la interfaz de Gmail en línea, visite [el Centro de ayuda de Google](https://support.google.com/mail/answer/21289?hl=fr&co=GENIE.Platform%3DDesktop).
+> Para más información sobre la configuración de una dirección de correo electrónico desde la interfaz de Gmail en línea, visite [el Centro de ayuda de Google](https://support.google.com/mail/answer/21289?hl=es&co=GENIE.Platform%3DDesktop).
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 

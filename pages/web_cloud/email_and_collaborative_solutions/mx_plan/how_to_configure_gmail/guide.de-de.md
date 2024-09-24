@@ -1,7 +1,7 @@
 ---
 title: 'Konfiguration Ihrer E-Mail-Adresse im Gmail-Webinterface'
 excerpt: 'In dieser Anleitung erfahren Sie, wie Sie eine MX Plan Adresse im Webinterface von Gmail einrichten.'
-updated: 2023-11-20
+updated: 2024-09-24
 ---
 
 ## Einleitung
@@ -34,7 +34,7 @@ E-Mail-Adressen aus dem MX Plan Angebot können auf verschiedenen, kompatiblen E
 
 Gehen Sie zunächst über Ihren Webbrowser in das Gmail-Webinterface. Geben Sie dort die Login-Daten Ihres Gmail-Accounts ein, um sich mit diesem zu verbinden.
 
-Wenn Sie im Interface eingeloggt sind, klicken Sie auf das Zahnrad-Symbol und anschließend auf `Alle Einstellungen anzeigen`{.action}. Klicken Sie im angezeigten Fenster auf den Tab `Konten und Import`{.action}. 
+Wenn Sie im Interface eingeloggt sind, klicken Sie auf das Zahnrad-Symbol und anschließend auf `Alle Einstellungen anzeigen`{.action}. Klicken Sie im angezeigten Fenster auf den Tab `Konten und Import`{.action}.
 
 ![mxplan](images/configuration-gmail-web-step1.png){.thumbnail}
 
@@ -44,9 +44,9 @@ Klicken Sie neben `Nachrichten von anderen Konten abrufen` auf `E-Mail-Konto hin
 
 Geben Sie jetzt die Einstellungen des POP-Servers (Eingangsserver) Ihrer OVHcloud E-Mail-Adresse ein:
 
-|Information|Beschreibung| 
-|---|---| 
-|Nutzername|Geben Sie die **vollständige** E-Mail-Adresse ein.|  
+|Information|Beschreibung|
+|---|---|
+|Nutzername|Geben Sie die **vollständige** E-Mail-Adresse ein.|
 |Passwort|Geben Sie das Passwort der E-Mail-Adresse ein.|
 |POP-Server|Tragen Sie den Server „ssl0.ovh.net“ ein.|
 |Port|Wählen Sie den Port „995“ aus.|
@@ -99,5 +99,9 @@ Um eine Nachricht mit Ihrer OVHcloud E-Mail-Adresse über das Gmail-Interface zu
 Natürlich können Sie auch weiterhin unser Webinterface unter[Webmail](/links/web/email) verwenden, um auf Ihre OVHcloud E-Mail-Adresse zuzugreifen. Loggen Sie sich hierzu wie gewohnt mit Ihren zugehörigen Login-Daten ein.
 
 ## Weiterführende Informationen
+
+> [!primary]
+>
+> Weitere Informationen zur Konfiguration einer E-Mail-Adresse über das Gmail-Interface finden Sie [im Google Help Center](https://support.google.com/mail/answer/21289?hl=de&co=GENIE.Platform%3DDesktop).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

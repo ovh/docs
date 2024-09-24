@@ -1,7 +1,7 @@
 ---
 title: 'E-Mail Pro - Konfigurieren Sie Ihr E-Mail-Konto im Gmail-Webinterface'
 excerpt: 'Erfahren Sie hier, wie Sie einen E-Mail Pro Account im Webinterface von Gmail einrichten'
-updated: 2024-09-17
+updated: 2024-09-24
 ---
 
 ## Ziel
@@ -109,7 +109,7 @@ Natürlich können Sie auch weiterhin unser Webinterface unter [Webmail](/links/
 
 > [!primary]
 >
-> Weitere Informationen zur Konfiguration einer E-Mail-Adresse über das Gmail-Interface finden Sie [im Google Help Center](https://support.google.com/mail/answer/21289?hl=fr&co=GENIE.Platform%3DDesktop).
+> Weitere Informationen zur Konfiguration einer E-Mail-Adresse über das Gmail-Interface finden Sie [im Google Help Center](https://support.google.com/mail/answer/21289?hl=de&co=GENIE.Platform%3DDesktop).
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 

@@ -1,7 +1,7 @@
 ---
 title: "E-mail Pro - Configurar o seu endereço de e-mail na interface online do Gmail"
 excerpt: "Aprenda a configurar uma conta E-mail Pro na interface on-line do Gmail"
-updated: 2024-09-17
+updated: 2024-09-24
 ---
 
 > [!primary]
@@ -113,7 +113,7 @@ Tenha em conta que pode sempre utilizar a nossa interface online acessível a pa
 
 > [!primary]
 >
-> Para obter mais informações sobre a configuração de um endereço de e-mail a partir da interface online do Gmail, consulte (a Central de Ajuda do Google)(https://support.google.com/mail/answer/21289?hl=fr&co=GENIE.Platform%3DDesktop).
+> Para obter mais informações sobre a configuração de um endereço de e-mail a partir da interface online do Gmail, consulte (a Central de Ajuda do Google)(https://support.google.com/mail/answer/21289?hl=pt&co=GENIE.Platform%3DDesktop).
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
