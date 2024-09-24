@@ -139,14 +139,17 @@ Additional IPs are offering a flexible way to manage your services across a vari
 
 While Additional IPs are bringing flexibility, there are situations that require some additional attention.
 
-#### GAME DDoS Protection is specific to the game server, but configured on per-IP basis
+#### Per-IP configuration but specific to game server generation
 
 To provide the most flexibility of configuration, different gaming protection rules can be set on different Additional IPs pointing to the same Bare Metal game server.
 Maximum number of such rules and available protection settings are defined on per-IP-address basis, but are specific to the particular Bare Metal game server generation behind. 
 
-Differences may be observed between: the newer game servers (3rd gen. of game Bare Metal servers, 2024 release) and the older game servers (previous generations of game Bare Metal, usually seen as Eco ranges).
+Differences may be observed between: the newer game servers (3rd gen. of game Bare Metal servers, 2024 release) and the older game servers (previous generations of game Bare Metal, usually seen as RISE-/SYS-GAME).
 
-#### Moving Additional IP between servers
+Visit `GAME firewall`.{action} configuration page in Control Panel to see available `game protocols`.{action} for any IP address pointing specific Bare Metal game server.
+
+
+#### Moving an Additional IP between servers
 
 While static configuration may be pretty clear, Additional IP moving actions may require few comments.
 
