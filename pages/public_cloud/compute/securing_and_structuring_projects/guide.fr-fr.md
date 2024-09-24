@@ -127,7 +127,7 @@ Voici un guide étape par étape pour créer la première politique :
 
 - Sous `Actions` dans `Groupes de permissions gérées`{.action}, laissez `Autoriser toutes les actions` décoché et choisissez `globalWriteAccess`{.action}.
 
-![Actions](images/Actions.png){.thumbnail}
+![Actions](images/actions.png){.thumbnail}
 
 Maintenant, les utilisateurs appartenant au `finance_developer_group` auront uniquement accès au tableau de bord et au projet Public Cloud sélectionné en accès écriture.
 
