@@ -1,7 +1,7 @@
 ---
 title: Enterprise File Storage - Concepts
 excerpt: Find out the basic concepts of Enterprise File Storage
-updated: 2022-04-07
+updated: 2024-09-24
 ---
 
 ## Objective
@@ -16,11 +16,11 @@ With Enterprise File Storage, you get NFS storage volumes that are fully managed
 
 Enterprise File Storage is a file system solution managed by OVHcloud, based on the NetApp&#174; ONTAP solution.
 
-You can order one or more storage spaces between 1 TiB and 58 TiB with your OVHcloud customer account, with a granularity of 1 TiB.
+You can order one or more storage spaces between 1 TB and 58 TB with your OVHcloud customer account, with a granularity of 1 TB.
 
 ### How the services work
 
-When you order an Enterprise File Storage service between 1 and 58 TiB via your OVHcloud account, you will receive an NFS storage space.
+When you order an Enterprise File Storage service between 1 and 58 TB via your OVHcloud account, you will receive an NFS storage space.
 
 By default, the OVHcloud account is the administrative, technical and billing contact for the service. You can find more information in our guide [“Managing contacts for your services”](/pages/account_and_service_management/account_information/managing_contacts).
 
@@ -84,16 +84,16 @@ You can find more information in the [“Managing volume snapshots”](/pages/st
 
 #### Limits of the Enterprise File Storage offer:
 
-- A service has an allocated and dedicated size between 1 TiB and 58 TiB.
-- The granularity of a service is 1 TiB
-- The number of volumes per service is limited to 10 volumes per TiB (e.g. 50 volumes for a 5TiB service)
+- A service has an allocated and dedicated size between 1 TB and 58 TB.
+- The granularity of a service is 1 TB
+- The number of volumes per service is limited to 10 volumes per TB (e.g. 50 volumes for a 5TB service)
 
 #### Volume limits:
 
-- A volume can't exceed the size of 29 TiB minus the 5% reserved for snapshots (1.45TiB), i.e. 27.55 TiB.
-- The minimum volume size is 100 GiB
-    - Size granularity for a volume: 1 GiB
-    - Maximum file size: 16 TiB
+- A volume can't exceed the size of 29 TB minus the 5% reserved for snapshots (1.45TB), i.e. 27.55 TB.
+- The minimum volume size is 100 GB
+    - Size granularity for a volume: 1 GB
+    - Maximum file size: 16 TB
 
 #### Limits of snapshots:
 
@@ -110,8 +110,8 @@ You can find more information in the [“Managing volume snapshots”](/pages/st
 
 #### Performance limits:
 
-- Minimum bandwidth per TiB: no minimum
-- Maximum bandwidth per TiB: 64 MiB/s and 4000 IOPS
+- Minimum bandwidth per TB: no minimum
+- Maximum bandwidth per TB: 64 MB/s and 4000 IOPS
 
 ### Calculation of a volume
 
@@ -127,7 +127,7 @@ You can find more information in the [“Managing volume snapshots”](/pages/st
 >
 > - The problem is that they are similar (2,4%) at the KB level, but at the TB level they have a 10% difference which increases exponentialy.
 >
-> - For Enterprise File Storage, because we want to be transparent with you, we will deliver the volume in TiB even if you see TB as unit because the general public is using TB.
+> - **For Enterprise File Storage, because we want to be transparent with you, we will deliver the volume in TiB even if you see TB as unit because the general public is using TB.**
 >
 > - So if you order a 1 TB Enterprise File Storage, in reality, you will have 1TiB = 1,09951 TB.
 >
