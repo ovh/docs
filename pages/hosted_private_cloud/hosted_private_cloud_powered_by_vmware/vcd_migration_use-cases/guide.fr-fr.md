@@ -24,7 +24,7 @@ Ce guide pratique a pour but de vous fournir des informations et des solutions s
 
 Il détaille également les prérequis pour chaque cas d'utilisation et le cas échéant, vous explique les éxigences pour migrer.
 
-|                                  **Images**                                   | **Étapes**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|                               **Espace client**                               | **Étapes**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 |:-----------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ![VCD Migration Bloc](images/vcd_migration_bloc_validation_en.png){thumbnail} | 1. Avant toute migration, il est important de vérifier la checklist des cas d'utilisations particuliers ci-dessous et de vous conformer aux recommandations associées.<br/>2. Une fois que vous aurez rempli ces exigences, vous pouvez vous connecter à l'espace client OVHcloud afin de signer (dans le bloc prévu à cet effet) les conditions particulières de l'environnement prévu à être migré (C&P). Un e-mail de confirmation vous sera envoyé avec un lien et un mot de passe temporaire pour accéder à VCD on OVHcloud.<br/>3. Les équipes OVHcloud migreront les VMs du datacenter (vDC) choisie, en utilisant un chemin de migration à chaud (vMotion).<br/> |
 
@@ -38,7 +38,7 @@ Pour rappel, si vous décidez de passer à l’offre VCD, les nouveaux tarifs ne
 
 ### Étape 1 - Avant la migration (obligatoire)
 
-#### Demandes faites avant le 1er septembre 2024
+#### Demandes faites avant le 1er novembre 2024
 
 > [!primary]
 > 
@@ -60,12 +60,12 @@ Les migrations seront effectuées en 4 vagues, à partir du mois de septembre, s
 
 Le calendrier prévisionnel, compatible avec ces environnements lors de la migration, est le suivant :
 
-| **Vagues** |     **Dates**     | **Offres cible** | **NSX** | **vRack** | **vSAN** | **Microsoft (SPLA)<br/>on OVHcloud** | **Résumé des environnements compatibles avec la migration**                                                                                          |                                                                                                                
-|:----------:|:-----------------:|:----------------:|:-------:|:---------:|:--------:|:------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------|
-|     ❶      | **Novembre 2024** |    `Standard`    |    ❌    |     ❌     |    ❌     |                  ❌                   | - **Sans** licence VM Microsoft Windows (SPLA) fournie par OVHcloud<br/>- **Sans** NSX<br/>- **Sans** High performance storage (vSAN)                 |
-|     ❷      | **Décembre 2024** |    `Standard`    |    ❌    |     ❌     |    ❌     |                  ✅                   | - **Avec** licence VM Microsoft Windows (SPLA) fournie par OVHcloud<br/>- **Sans** NSX<br/>- **Sans** High performance storage (vSAN)                 |
-|     ❸      | **Janvier 2024**  |    `Advanced`    |    ✅    |     ✅     |    ❌     |                  ✅                   | - **Avec** licence VM Microsoft Windows (SPLA) fournie par OVHcloud<br/>- **Avec** NSX + vRack support<br/>- **Sans** High performance storage (vSAN) |
-|     ❹      | **Février 2024**  |    `Premium`     |    ✅    |     ✅     |    ✅     |                  ✅                   | - **Avec** licence Microsoft Windows (SPLA) fournie par OVHcloud<br/>- **Avec** NSX + vRack support<br/>- **Avec** High performance storage (vSAN)    |
+| **Vague**&nbsp; |     **Date**      | **Offre<br/>cible** | **NSX** | **vRack** | **vSAN** | **Microsoft<br/>(SPLA)** | **Résumé des environnements<br/>compatibles avec la migration**                                                                                          |                                                                                                                
+|:---------------:|:-----------------:|:-------------------:|:-------:|:---------:|:--------:|:------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    `Vague 1`    | **Novembre 2024** |     `Standard`      |    ❌    |     ❌     |    ❌     |            ❌             | - **Sans** licence VM Microsoft Windows (SPLA) fournie par OVHcloud<br/>- **Sans** NSX<br/>- **Sans** High performance storage (vSAN)                    |
+|    `Vague 2`    | **Décembre 2024** |     `Standard`      |    ❌    |     ❌     |    ❌     |            ✅             | - **Avec** licence VM Microsoft Windows (SPLA) fournie par OVHcloud<br/>- **Sans** NSX<br/>- **Sans** High performance storage (vSAN)                    |
+|    `Vague 3`    | **Janvier 2024**  |     `Advanced`      |    ✅    |     ✅     |    ❌     |            ✅             | - **Avec** licence VM Microsoft Windows (SPLA) fournie par OVHcloud<br/>- **Avec** NSX + vRack support<br/>- **Sans** High performance storage (vSAN)    |
+|    `Vague 4`    | **Février 2024**  |      `Premium`      |    ✅    |     ✅     |    ✅     |            ✅             | - **Avec** licence Microsoft Windows (SPLA) fournie par OVHcloud<br/>- **Avec** NSX + vRack support<br/>- **Avec** High performance storage (vSAN)       |
 
 Au cours de ce processus, vos données resteront inchangées, à l'exception du vSAN Storage. Vos adresses IP resteront inchangées également.
 
@@ -73,7 +73,7 @@ La date de migration vous sera communiquée par e-mail au minimum 15 jours avant
 
 Nous vous invitons à lire le guide [VMware Cloud Director - Les concepts fondamentaux de VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts) pour voir les fonctionnalités incluses dans chaque vague de migration de vos environnements.
 
-#### Demandes faites après le 1er septembre 2024
+#### Demandes faites après le 1er novembre 2024
 
 > [!primary]
 >
@@ -128,6 +128,8 @@ Voici un rappel des tâches qu'il vous reste à mener, une fois la migration eff
 |       3️⃣        | 🔐 `Chiffrement VMs (KMS/OKMS ou vNKP)`      | Réactiver la politique de chiffrement pour les VMs dans VCD on OVHcloud avec votre solutions définie (KMS/OKMS/vNKP) après migration et lancer le chiffrement des VMs. | - Car il n'est pas possible à ce jour d'effectuer la migration avec des VMs, vApp chiffrées.<br/>L'import ou la configuration de votre solution de chiffrement (KMS/OKMS, vNKP) doit être réalisé avant activation du chiffrement des VMs dans VCD on OVHcloud                                                                    |
 
 #### Managed Veeam for VCD (obligatoire)
+
+La sauvegarde n'est pas configurée par défaut suite à la migration vers VCD. Vous devez souscrire au service de sauvegarde **Managed Veeam for VCD** et le configurer si vous souhaitez protéger votre environnement.
 
 **Configuration du répertoire de stockage**
 
