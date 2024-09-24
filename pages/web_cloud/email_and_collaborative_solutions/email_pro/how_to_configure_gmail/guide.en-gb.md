@@ -1,7 +1,7 @@
 ---
 title: 'Email Pro - Configure your email account on the Gmail online interface'
 excerpt: 'Find out how to configure an Email Pro account on the Gmail online interface'
-updated: 2024-09-17
+updated: 2024-09-24
 ---
 
 ## Objective
@@ -104,6 +104,10 @@ To send an email from your OVHcloud Email Pro address via the Gmail online inter
 Please also note that you can still use our online interface, accessible via [Webmail](/links/web/email), to access your OVHcloud Email Pro address. You just need to use your usual credentials to log in.
 
 ## Go further <a name="go-further"></a>
+
+> [!primary]
+>
+> Find more information on configuring an email address with the Gmail online interface in the [Google Help Center](https://support.google.com/mail/answer/21289?hl=en&co=GENIE.Platform%3DDesktop).
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 

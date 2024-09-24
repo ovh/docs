@@ -1,7 +1,7 @@
 ---
 title: 'Email Pro - Configura il tuo account di posta elettronica su Gmail'
 excerpt: 'Come configurare un account Email Pro dall’interfaccia Web di Gmail'
-updated: 2024-09-17
+updated: 2024-09-24
 ---
 
 ## Obiettivo
@@ -106,6 +106,10 @@ Per inviare email dall’account OVHcloud è necessario scegliere l’indirizzo 
 i ricordiamo che per accedere all’account Email Pro OVHcloud è sempre possibile utilizzare la nostra interfaccia disponibile all’indirizzo [Webmail](/links/web/email).
 
 ## Per saperne di più <a name="go-further"></a>
+
+> [!primary]
+>
+> Per maggiori informazioni sulla configurazione di un indirizzo email dall’interfaccia Gmail online, consulta [il centro assistenza di Google](https://support.google.com/mail/answer/21289?hl=it&co=GENIE.Platform%3DDesktop).
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 

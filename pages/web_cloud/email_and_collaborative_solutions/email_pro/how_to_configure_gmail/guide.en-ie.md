@@ -1,7 +1,7 @@
 ---
 title: 'Email Pro - Configuring an account on the Gmail online interface'
 excerpt: 'Find out how to configure an Email Pro account on the Gmail online interface'
-updated: 2024-09-17
+updated: 2024-09-24
 ---
 
 ## Objective
@@ -34,7 +34,7 @@ You can configure Email Pro accounts on email clients and online interfaces, if 
 > [!primary]
 >
 > In this guide, we will use as the server name: pro**?**.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
-> 
+>
 > You can find this information in the [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section, if you select `Professional Email`{.action}. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
 >
 
@@ -79,14 +79,14 @@ Then enter the sender name that will display when you send emails from this emai
 
 Now enter the settings for the SMTP server (outgoing server) of your OVHcloud Email Pro account:
 
-|Information|Description| 
-|---|---| 
+|Information|Description|
+|---|---|
 |SMTP server|Enter “pro**?**.mail.ovh.net”.|
 |Port|Select port 587.|
 |Username|Enter your **full** email address.|  
 |Password|Enter the password for your email address.|
 
-Once you have filled in the information requested, tick the box next to `Secured connection using TLS`{.action}, then click `Add Account`{.action}. If all the information is correct, the connection to the email address will be successful. 
+Once you have filled in the information requested, tick the box next to `Secured connection using TLS`{.action}, then click `Add Account`{.action}. If all the information is correct, the connection to the email address will be successful.
 
 ![emailpro](images/configuration-gmail-web-step5.png){.thumbnail}
 
@@ -105,6 +105,10 @@ To send an email from your OVHcloud Email Pro address via the Gmail online inter
 Please also note that you can still use our online interface, accessible via [Webmail](/links/web/email), to access your OVHcloud Email Pro address. You just need to use your usual credentials to log in.
 
 ## Go further <a name="go-further"></a>
+
+> [!primary]
+>
+> Find more information on configuring an email address with the Gmail online interface in the [Google Help Center](https://support.google.com/mail/answer/21289?hl=en&co=GENIE.Platform%3DDesktop).
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 

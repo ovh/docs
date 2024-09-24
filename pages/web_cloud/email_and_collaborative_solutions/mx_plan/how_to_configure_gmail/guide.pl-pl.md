@@ -1,7 +1,7 @@
 ---
 title: 'Konfiguracja konta e-mail w interfejsie online programu pocztowego Gmail'
 excerpt: 'Dowiedz się, jak skonfigurować konto e-mail MX Plan w interfejsie online programu pocztowego Gmail'
-updated: 2023-11-20
+updated: 2024-09-24
 ---
 
 ## Wprowadzenie
@@ -99,5 +99,9 @@ Aby wysłać wiadomość z konta e-mail OVHcloud za pośrednictwem interfejsu on
 Pamiętaj, że aby uzyskać dostęp do Twojego konta e-mail OVHcloud, możesz również użyć interfejsu OVHcloud online dostępnego pod adresem [Webmail](/links/web/email). Zaloguj się, używając Twoich danych identyfikacyjnych.
 
 ## Sprawdź również
+
+> [!primary]
+>
+> Aby uzyskać więcej informacji na temat konfiguracji konta e-mail w interfejsie online Gmail, sprawdź [Centrum pomocy Google](https://support.google.com/mail/answer/21289?hl=pl&co=GENIE.Platform%3DDesktop).
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>

@@ -1,7 +1,7 @@
 ---
 title: 'Email Pro - Skonfiguruj swoje konto e-mail w interfejsie online programu pocztowego Gmail'
 excerpt: 'Dowiedz się, jak skonfigurować konto E-mail Pro w interfejsie online programu pocztowego Gmail'
-updated: 2024-09-17
+updated: 2024-09-24
 ---
 
 ## Wprowadzenie
@@ -106,6 +106,10 @@ Aby wysłać wiadomość z konta E-mail Pro OVHcloud za pośrednictwem interfejs
 Pamiętaj, że w celu uzyskania dostępu do Twojego konta E-mail Pro OVHcloud, możesz również użyć interfejsu OVHcloud online dostępnego pod adresem [Webmail](/links/web/email). Zaloguj się, używając Twoich danych identyfikacyjnych.
 
 ## Sprawdź również <a name="go-further"></a>
+
+> [!primary]
+>
+> Aby uzyskać więcej informacji na temat konfiguracji konta e-mail w interfejsie online Gmail, sprawdź [Centrum pomocy Google](https://support.google.com/mail/answer/21289?hl=pl&co=GENIE.Platform%3DDesktop).
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 

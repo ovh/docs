@@ -1,7 +1,7 @@
 ---
 title: "Configurer son adresse e-mail sur l'interface en ligne de Gmail"
 excerpt: "Apprenez à configurer une adresse e-mail MX Plan sur l'interface en ligne de Gmail"
-updated: 2023-11-20
+updated: 2024-09-24
 ---
 
 ## Objectif
@@ -99,5 +99,9 @@ Pour envoyer un message avec votre adresse e-mail OVHcloud depuis l'interface en
 Sachez également que vous pouvez toujours utiliser notre interface en ligne accessible depuis l'adresse [Webmail](/links/web/email) pour accéder à votre adresse e-mail OVHcloud. Vous pouvez vous y connecter grâce à ses identifiants.
 
 ## Aller plus loin
+
+> [!primary]
+>
+> Pour plus d'informations sur la configuration d'une adresse e-mail depuis l'interface Gmail en ligne, consultez [le centre d'aide de Google](https://support.google.com/mail/answer/21289?hl=fr&co=GENIE.Platform%3DDesktop).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
