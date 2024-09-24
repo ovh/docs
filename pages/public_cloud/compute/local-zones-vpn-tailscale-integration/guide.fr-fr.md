@@ -1,7 +1,7 @@
 ---
 title: "Créer un VPN-as-a-Service (VPNaaS) pour vos instances Local Zones avec Tailscale"
 excerpt: "Découvrez comment intégrer Tailscale dans vos instance Local Zones OVHcloud pour mettre en place une solution VPN-as-a-Service (VPNaaS)"
-updated: 2024-09-23
+updated: 2024-09-24
 ---
 
 ## Objectif

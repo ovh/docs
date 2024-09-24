@@ -1,7 +1,7 @@
 ---
 title: Local Zone VPN-as-a-Service (VPNaaS) with Tailscale integration (EN)
 excerpt: Learn how to integrate Tailscale into your OVHcloud Local Zone instances, providing a VPN-as-a-Service (VPNaaS) solution
-updated: 2024-09-23
+updated: 2024-09-24
 ---
 
 ## Objective
