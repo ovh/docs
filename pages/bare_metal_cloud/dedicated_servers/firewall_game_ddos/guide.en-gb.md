@@ -120,10 +120,10 @@ You can read more about hosting Rust on OVHcloud servers [here](https://www.ovhc
 
 Minecraft is well supported by the following profiles:
 
-- **Minecraft Java** - should be the best fit for all Minecraft Java versions. Protects Minecraft Query protocol behind, but it's also tuned for bigger traffic volumes.
+- **Minecraft Java** - should be the best fit for all Minecraft Java versions. Protects Minecraft Query protocol, it's tuned for TCP traffic. Use with caution if other UDP games are hosted on the same IP. Added in 2024, available also for previous generations of Bare Metal game servers.
 - **Minecraft Query** - general Minecraft Query protocol protection.
-- **Minecraft Bedrock** - Minecraft Bedrock protection (with RakNet cookie support).
-- **Minecraft Pocket Edition** - Minecraft Pocket Edition protection.
+- **Minecraft Bedrock** - Minecraft Bedrock protection (with RakNet cookie support), added in the 3rd gen. of Bare Metal game servers (2024 release).
+- **Minecraft Pocket Edition** - Minecraft PE/Bedrock protection.
 
 #### Valheim
 
@@ -148,16 +148,20 @@ Differences may be observed between: the newer game servers (3rd gen. of game Ba
 
 #### Moving Additional IP between servers
 
-While static configuration may be pretty simple, Additional IP moving actions may require few comments.
+While static configuration may be pretty clear, Additional IP moving actions may require few comments.
 
-Moving an IP from older generation of Bare Metal game server to newer generation will be transparent and result in keeping all rules and IP settings.
 
-Moving an IP from newer Bare Metal game server to the older generation will:
-- keep backward compatible rules (same profile name)
-- copy arkSurvivalEvolvedV311.78+ profile configuration into arkSurvivalEvolved (older one)
-- delete all other rules that are not supported on the older generation of Bare Metal game server
+- **Moving an IP between Bare Metal game servers: from older to newer generation:**
+    - will be transparent and result in keeping all protection rules and IP settings
 
-Moving an IP from Bare Metal game server to a non-game server (or other services) will remove all GAME DDoS Protection rules from such IP as they are not supported outside Bare Metal game ranges.
+- **Moving an IP between Bare Metal game servers: from newer to older generation:**
+    - keep backward compatible rules (the same profile name)
+    - copy arkSurvivalEvolvedV311.78+ profile rules into arkSurvivalEvolved (older one)
+    - delete all other rules that are not supported on the older generation
+
+- **Moving an IP from Bare Metal game server to other servers or services:**
+    - delete all GAME DDoS Protection rules from such IP as they are not supported outside Bare Metal game servers.
+
 
 ## FAQ
 
