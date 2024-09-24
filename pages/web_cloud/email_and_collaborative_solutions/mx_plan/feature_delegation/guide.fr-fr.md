@@ -33,9 +33,7 @@ La délégation donne la possibilité à l'utilisateur d'un compte e-mail de gé
 
 > [!primary]
 >
->La mise en place d'une délégation sur un compte e-mail le fait apparaître dans [l'espace client](
-/links/manager
-) concerné. Pour autant, seules les modifications indiquées dans la section [Objectif](#objective) de ce guide seront possibles dans cette situation.
+> La mise en place d'une délégation sur un compte e-mail le fait apparaître dans [l'espace client](/links/manager) concerné. Pour autant, seules les modifications indiquées dans la section [Objectif](#objective) de ce guide seront possibles dans cette situation.
 >
 
 Connectez-vous à votre [espace client OVHcloud](/links/manager) dans la partie `Web Cloud`.
