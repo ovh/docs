@@ -1,7 +1,7 @@
 ---
 title: Enterprise File Storage - Concepts
 excerpt: Find out the basic concepts of Enterprise File Storage
-updated: 2022-04-07
+updated: 2024-09-24
 ---
 
 ## Objective
