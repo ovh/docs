@@ -1,4 +1,3 @@
-![image](https://github.com/user-attachments/assets/14dff72c-a201-48ef-8393-b54ffe4e2c6c)---
 title: "Protecting a game server with the application firewall"
 excerpt: "Learn how to configure the OVHcloud GAME DDoS firewall"
 updated: 2024-09-23
