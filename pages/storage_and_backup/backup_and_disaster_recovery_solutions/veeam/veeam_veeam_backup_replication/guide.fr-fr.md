@@ -1,7 +1,7 @@
 ---
 title: "Installer Veeam Backup & Replication"
 excerpt: "Découvrez comment installer un serveur Veeam Backup & Replication avec Veeam Enterprise"
-updated: 2024-09-23
+updated: 2024-09-24
 ---
 
 ## Objectif
@@ -174,13 +174,13 @@ Lorsque l'activation est faite, vous retrouvez les informations principales sur 
 
 **Mise à jour des identifiants de connexion depuis l'espace client** :
 
-Pour mettre à jour vos identifiants de connexion, vous pouvez utiliser le bouton `Mettre à jour mes informations`{.action}
+Pour mettre à jour vos identifiants de connexion, vous pouvez utiliser le bouton `Mettre à jour mes informations`{.action}.
 
 ![Update 1](images/veeam_update_cred.png){.thumbnail}
 
-Remplissez sur la fenêtre qui s'affiche, l'`IP`, le `Nom d'utilisateur`, et le `Mot de passe`. 
+Dans la fenêtre qui s'affiche, renseignez l'`IP`, le `Nom d'utilisateur`, et le `Mot de passe`. 
 
-Puis pour terminer, cliquez sur `Ok`{.action}
+Pour terminer, cliquez sur `OK`{.action}.
 
 ![Update 2](images/veeam_update_cred_2.png){.thumbnail}
 
