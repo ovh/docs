@@ -196,8 +196,9 @@ While static configuration may be pretty clear, Additional IP moving actions may
 
 - **Moving an IP between Bare Metal game servers: from newer to older generation:**
     - If destination server supports less protection rules than origin one, an error is displayed and action stopped.
-    - Backward compatible rules are kept (protection profile name must equal).
-    - Rules not supported on the destination server will be removed.
+    - Otherwise:
+        - Backward compatible rules are kept (protection profile name must equal).
+        - Rules that are not supported on the destination server will be removed.
     
 - **Moving an IP from Bare Metal game server to other servers or services:**
     - All GAME DDoS Protection rules from such IP will be deleted, as they are not supported outside Bare Metal game servers.
@@ -208,6 +209,10 @@ While static configuration may be pretty clear, Additional IP moving actions may
 ### Can I use GAME firewall on other ranges than Bare Metal game servers?
 
 No, GAME firewall is only available for our Bare Metal game dedicated servers.
+
+### How can I ensure automation for Additional IP between new and old generation of Bare Metal game servers?
+
+For that to work, please ensure you use maximum of 30 protection rules per IP or your automation scripts can manage removal & re-adding such rules before/after moving an IP to another server. Best idea is to use the latest generation of Bare Metal game servers as they came with many improvements.
 
 ### Can I disable GAME firewall protection?
 
