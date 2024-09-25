@@ -134,7 +134,7 @@ Install Velero, including all prerequisites, into the cluster and start the depl
 velero install \
   --features=EnableCSI \
   --provider aws \
-  --plugins velero/velero-plugin-for-aws:v1.6.0,velero/velero-plugin-for-csi:v0.4.0 \
+  --plugins velero/velero-plugin-for-aws:v1.10.1,velero/velero-plugin-for-csi:v0.4.0 \
   --bucket <your bucket name> \
   --secret-file ./credentials \
   --backup-location-config region=<public cloud region without digit>,s3ForcePathStyle="true",s3Url=https://s3.<public cloud region without digit>.cloud.ovh.net,checksumAlgorithm="" \
