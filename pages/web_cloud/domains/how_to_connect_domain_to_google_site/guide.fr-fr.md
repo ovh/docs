@@ -37,7 +37,7 @@ Avant de suivre les étapes de ce guide, nous vous conseillons de vous familiari
 >
 > Seul le propriétaire d'un Google Site peut le connecter à un nom de domaine. Si besoin, découvrez comment [modifier le propriétaire du Google site](https://support.google.com/sites/answer/97934){.external}.
 
-Lorsque vous utilisez un Google Site avec un nom de domaine OVHcloud, vous devez d'abord préparer votre hébergement en suivant les instructions de la section **Configurer un domaine personnalisé** depuis [**cette page du support Google**](https://support.google.com/sites/answer/9068867?hl=fr#zippy=).
+Lorsque vous utilisez un Google Site avec un nom de domaine OVHcloud, préparez d'abord votre hébergement en suivant les instructions de la section **Configurer un domaine personnalisé** depuis [**cette page du support Google**](https://support.google.com/sites/answer/9068867?hl=fr#zippy=){.external}.
 
 ### 2. Configurer vos enregistrements DNS sur votre compte OVHcloud
 
