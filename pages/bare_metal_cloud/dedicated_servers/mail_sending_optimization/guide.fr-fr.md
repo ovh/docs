@@ -71,7 +71,7 @@ Si vos serveurs DNS sont gérés par OVHcloud, consultez notre guide sur [l'édi
 
 Une fois la zone DNS de votre nom de domaine modifiée, un temps de propagation de 24 heures maximum est nécessaire afin que les modifications soient effectives.
 
-Pour configurer le chemin du *reverse* DNS dans le [espace client OVHcloud](/links/manager) veuillez vous référer à [notre guide dédié](/pages/bare_metal_cloud/virtual_private_servers/configuring-reverse-dns).
+Pour configurer le chemin du *reverse* DNS dans [l'espace client OVHcloud](/links/manager) veuillez vous référer à [notre guide dédié](/pages/bare_metal_cloud/virtual_private_servers/configuring-reverse-dns).
 
 ### Cas spécifiques d'envois d'e-mails
 

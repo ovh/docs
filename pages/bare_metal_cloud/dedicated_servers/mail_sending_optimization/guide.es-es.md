@@ -1,6 +1,6 @@
 ---
-title: 'Optimización del envío de correos electrónicos'
-excerpt: 'Averigüe cómo enviar correos electrónicos y limite el riesgo de que se marquen como spam'
+title: Cómo evitar que sus correos electrónicos sean marcados como spam
+excerpt: "Aprenda a aplicar las buenas prácticas de envío de correo electrónico para limitar el riesgo de bloqueo de los mensajes legítimos mediante la protección contra el spam"
 updated: 2024-01-24
 ---
 
@@ -59,42 +59,15 @@ El registro DMARC (Domain-based Message Authentication, Reporting and Conformanc
 
 Para más información, consulte nuestra guía sobre la [configuración de un registro DMARC](/pages/web_cloud/domains/dns_zone_dmarc).
 
-### Configurar el *Reverse IP* <a name="reverseip"></a>
+### ### Configurar la resolución inversa de IP <a name="reverseip"></a>
 
-Para optimizar el envío de correos electrónicos y evitar que sus correos sean bloqueado, usted puede configurar il *Reverse IP* con su nombre de dominio.
+Para optimizar aún más el envío de mensajes de correo y reducir el riesgo de bloqueo de los mensajes de correo, también puede configurar la resolución DNS inversa (*PTR record*) con su dominio.
 
 Si sus servidores DNS son gestionados por OVHcloud, consulte nuestra guía sobre [la edición de una zona DNS en OVHcloud desde el área de cliente](/pages/web_cloud/domains/dns_zone_edit).
 
 Una vez que haya editado la zona DNS del dominio, los cambios tardarán un máximo de 24 horas en propagarse.
 
-A continuación, añada el registro PTR (también conocido como registro inverso):
-
-En el [área de cliente de OVHcloud](/links/manager){.external}, acceda a la pestaña `Bare Metal Cloud`{.action} y abra `Network`{.action}. Haga clic en `IP`{.action}.
-
-Si desea configurar el Registro DNS inverso en una dirección Additional IP, abra la pestaña `Additional IP`{.action}.
-
-El menú desplegable en "**Mis direcciones IP públicas y servicios asociados**" le permite filtrar sus servicios por categorías.
-
-![IP inversa](images/filteripds.png){.thumbnail}
-
-Haga clic en el botón `...`{.action} a la derecha de la línea correspondiente y luego en `Cambiar el registro inverso`{.action}:
-
-![IP inversa](images/addreverse2022.png){.thumbnail}
-
-Introduzca su dominio en la sección `*Reverse IP*` y haga clic en `Aceptar`{.action}.
-
-![IP inversa](images/enterreverse.png){.thumbnail}
-
-> [!primary]
-> Al introducir su dominio en el registro inverso, comprueba de inmediato si el registro A devuelve la misma IP. Se utiliza en los procedimientos antispam, por lo que el registro A debe ser válido y propagado. Existen algunas reglas a seguir al introducir el registro inverso:
->
->  - el registro inverso no puede empezar por un `-`
->  - el registro inverso no puede tener más de 80 caracteres.
->  - el registro inverso no puede contener caracteres en mayúscula.
->  - el registro inverso debe terminar en un `.`
->
-> Por ejemplo: "MyDomain.ca" en el registro inverso sería **mydomain.ca.**
->
+Para configurar la ruta del registro DNS inverso en el [área de cliente de OVHcloud](/links/manager), consulte [nuestra guía dedicada](/pages/bare_metal_cloud/virtual_private_servers/configuring-reverse-dns).
 
 ### Casos específicos de envío de correos
 
@@ -154,6 +127,6 @@ Usted puede utilizar un sitio web como [Mail Tester](http://www.mail-tester.com/
 
 [Mejorar la seguridad del correo electrónico mediante un registro DMARC](/pages/web_cloud/domains/dns_zone_dmarc)
 
-Para recibir soporte y configurar sus soluciones OVHcloud, contacte con nuestra [red de partners OVHcloud](/links/partner).
+Para servicios especializados (posicionamiento web, desarrollo...), póngase en contacto con los [partners de OVHcloud](/links/partner).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>
+Interactúe con nuestra [comunidad de usuarios](/links/community).
