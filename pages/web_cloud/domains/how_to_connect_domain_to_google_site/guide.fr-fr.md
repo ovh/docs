@@ -70,7 +70,7 @@ Suivez les étapes dans l'ordre en parcourant les onglets suivants :
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png){.thumbnail}
 >>
 >> - Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre nom de domaine seul, sans sous-domaine (exemple : `mydomain.ovh.`), puis cliquez sur `Supprimer l'entrée`{.action}.<br>
->> - Si un enregistrement pour le sous-domaine « www » est présent (exemple : `www.mydomain.ovh.`), supprimez-le également pour qu'il ne rentre pas en conflit avec l'enregistrement CNAME que vous allez renseigner à l'étape 4. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre nom de domaine avec le sous-domaine « www » puis cliquez sur `Supprimer l'entrée`{.action}.<br>
+>> - Si un enregistrement pour le sous-domaine « www » est présent (exemple : `www.mydomain.ovh.`), supprimez-le également pour qu'il ne rentre pas en conflit avec l'enregistrement CNAME que vous allez renseigner à l'étape 4. Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre sous-domaine en « www » puis cliquez sur `Supprimer l'entrée`{.action}.<br>
 >> - Si vous n'avez pas d'enregistrement « AAAA » existant, passez à l'étape 3.
 > **Etape 3**
 >> **Enregistrement TXT**<br><br>
