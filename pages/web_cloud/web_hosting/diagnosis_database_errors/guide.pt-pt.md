@@ -1,7 +1,7 @@
 ---
 title: "Resolver os erros mais frequentes associados às bases de dados" 
 excerpt: "Diagnosticar os casos mais comuns de erros associados às bases de dados"
-updated: 2024-09-16
+updated: 2024-09-25
 ---
 
 > [!primary]

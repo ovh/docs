@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting common database errors"
 excerpt: "Find out how to diagnose the most common cases of database errors"
-updated: 2024-09-16
+updated: 2024-09-25
 ---
 
 ## Objective
