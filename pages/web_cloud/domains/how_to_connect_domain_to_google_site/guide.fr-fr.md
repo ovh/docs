@@ -29,7 +29,7 @@ Avant de suivre les étapes de ce guide, nous vous conseillons de vous familiari
 
 > [!warning]
 >
-> Votre zone DNS est potentiellement déjà préconfigurée ou liée à un hébergement. Nous allons voir comment identifier chaque enregistrement DNS nécessaire à la connexion avec votre Google Site. Certains devront être supprimés pour éviter de rentrer en conflit avec des enregistrements DNS requis dans cette configuration. D'autres seront simplement à modifier ou à créer. Pour une meilleure compréhension, nous utiliserons le nom de domaine « **mydomain.ovh** » comme exemple. Remplacez celui-ci par votre nom de domaine lors de la configuration.
+> Votre zone DNS est potentiellement déjà préconfigurée ou liée à un hébergement Web. Nous allons voir comment identifier chaque enregistrement DNS nécessaire à la connexion avec votre Google Site. Certains devront être supprimés pour éviter de rentrer en conflit avec des enregistrements DNS requis dans cette configuration. D'autres devront juste être modifiés ou créés. Pour une meilleure compréhension, nous utiliserons le nom de domaine « **mydomain.ovh** » comme exemple. Remplacez celui-ci par votre nom de domaine lors de la configuration.
 
 ### 1. Configurer votre Google Site
 
