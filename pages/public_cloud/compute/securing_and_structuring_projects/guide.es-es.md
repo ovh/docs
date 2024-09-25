@@ -130,7 +130,7 @@ Here is a step by step guide to create the first policy:
 
 - Under `Actions` in `Managed permission groups`{.action}, leave `Authorize all actions` unchecked and choose `globalWriteAccess`{.action}.
 
-![Actions](images/actions.png){.thumbnail}
+![Actions](images/actions2.png){.thumbnail}
 
 Now the users belonging to the `finance_developer_group` will have only access to the Control Panel and to the selected Public Cloud project in write access.
 
