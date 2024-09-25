@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Databases - Comment mettre en place le transfert de logs (EN)
 excerpt: Find out how to forward logs of your database service to your Logs Data Platform data stream
-updated: 2024-05-15
+updated: 2024-09-25
 ---
 
 ## Objective

@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Load Balancer TCP / HTTP / HTTPS Logs Forwarding (EN)
 excerpt: Find out how to forward your logs from a Public Cloud Load Balancer to Logs Data Platform
-updated: 2024-05-17
+updated: 2024-09-25
 ---
  
 ## Objective

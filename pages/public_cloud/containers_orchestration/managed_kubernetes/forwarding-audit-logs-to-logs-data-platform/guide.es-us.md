@@ -1,7 +1,7 @@
 ---
 title: Managed Kubernetes Service Audit Logs Forwarding
 excerpt: 'Find out how to forward Audit logs from an OVHcloud Managed Kubernetes Service cluster to Logs Data Platform'
-updated: 2024-05-07
+updated: 2024-09-25
 ---
  
 ## Objective
