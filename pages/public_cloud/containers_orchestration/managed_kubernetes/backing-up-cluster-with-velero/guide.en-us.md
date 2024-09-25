@@ -147,7 +147,7 @@ In our case, with the cluster in the `GRA` region, that meant:
 velero install \
   --features=EnableCSI \
   --provider aws \
-  --plugins velero/velero-plugin-for-aws:v1.6.0,velero/velero-plugin-for-csi:v0.4.0 \
+  --plugins velero/velero-plugin-for-aws:v1.10.1,velero/velero-plugin-for-csi:v0.4.0 \
   --bucket velero-s3 \
   --secret-file .aws/credentials \
   --backup-location-config region=gra,s3ForcePathStyle="true",s3Url=https://s3.gra.cloud.ovh.net,checksumAlgorithm="" \
