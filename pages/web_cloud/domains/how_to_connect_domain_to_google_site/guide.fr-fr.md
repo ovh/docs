@@ -86,7 +86,7 @@ Suivez les étapes dans l'ordre en parcourant les onglets suivants :
 >>  Pour identifier les enregistrements « CNAME » existants, cliquez sur le menu des filtres en haut du tableau d'enregistrements DNS et sélectionnez `CNAME`.<br>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-cname.png){.thumbnail}
 >>
->> - Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre sous-domaine en « www.» (exemple : `mydomain.ovh.`) puis cliquez sur `Modifier l'entrée`{.action}.<br>
+>> - Cliquez sur le bouton `...`{.action} à droite de la ligne du tableau correspondant à votre sous-domaine en « www » (exemple : `www.mydomain.ovh.`) puis cliquez sur `Modifier l'entrée`{.action}.<br>
 >> - Si vous n'avez pas d'enregistrement « CNAME » existant, cliquez sur le bouton `Ajouter une entrée`{.action} en haut à droite de votre écran et sélectionnez le « Champ de pointage » `CNAME`{.action}.
 >> Complétez le champ **Sous-domaine** avec la valeur `www` et saisissez `ghs.googlehosted.com.` dans le champ **Cible**. Ces valeurs étant amenées à changer, vérifiez-les sur la page « [Valeurs des enregistrements CNAME](https://support.google.com/a/answer/112038?sjid=3052810298579211755-EU){.external} » de la documentation officielle<br>
 >> Cliquez sur `Suivant`{.action} pour valider votre enregistrement « CNAME ».
