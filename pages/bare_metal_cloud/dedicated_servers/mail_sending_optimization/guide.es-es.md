@@ -71,7 +71,7 @@ A continuación, añada el registro PTR (también conocido como registro inverso
 
 En el [área de cliente de OVHcloud](/links/manager){.external}, acceda a la pestaña `Bare Metal Cloud`{.action} y abra `Network`{.action}. Haga clic en `IP`{.action}.
 
-Si desea configurar el Registro DNS inverso  en una dirección Additional IP, abra la pestaña `Additional IP`{.action}.
+Si desea configurar el Registro DNS inverso en una dirección Additional IP, abra la pestaña `Additional IP`{.action}.
 
 El menú desplegable en "**Mis direcciones IP públicas y servicios asociados**" le permite filtrar sus servicios por categorías.
 
@@ -127,7 +127,7 @@ Confirme la información y la suscripción a JMRP/SNDS se completará.
 
 Una vez que haya realizado estas acciones, si su IP aparece bloqueada, podrá solicitar su desbloqueo a través del [procedimiento junkmail](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&locale=en-us&ccsid=635857671692853062). El procedimiento suele tardar 48 horas.
 
-Microsoft puede a veces solicitarle la fecha de la primera facturación de su IP/servidor. En ese caso, envíe a Microsoft una copia de su factura e indique su IP/servidor (p. ej.: host nsXXX) en su respuesta.
+Microsoft puede a veces solicitarle la fecha de la primera facturación de su IP/servidor. En ese caso, envíe a Microsoft una copia de su factura e indique su IP/servidor (p. ej.: host ns1111111.ip-203-0-113.eu) en su respuesta.
 
 Para más información, [solicite ayuda](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&ccsid=6364926882037750656) a Microsoft.
 

@@ -64,7 +64,7 @@ Per maggiori informazioni, consulta la nostra guida sulla [configurazione di un 
 
 Per ottimizzare l'invio e ridurre i rischi di blocco delle tue email, è necessario configurare con il tuo dominio un reverse.
 
-Per prima cosa, crea un record A nella zona DNS del tuo dominio con l'indirizzo IP del tuo server come destinazione.
+Per prima cosa, crea un record `A` nella zona DNS del tuo dominio con l'indirizzo IP del tuo server come destinazione.
 
 Se i server DNS sono gestiti da OVHcloud, consulta la nostra guida [sulla modifica di una zona DNS OVHcloud dallo Spazio Cliente](/pages/web_cloud/domains/dns_zone_edit).
 
@@ -130,7 +130,7 @@ Conferma le informazioni e la sottoscrizione a JMRP/SNDS sarà completata.
 
 Una volta effettuate queste operazioni, se il tuo IP risulta bloccato, puoi richiedere di sbloccare il file utilizzando la [procedura junkmail](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&locale=en-us&ccsid=635857671692853062). La procedura richiede generalmente 48 ore.
 
-A volte Microsoft può richiedere la data della prima fatturazione del tuo IP/server. In questo caso, invia a Microsoft una copia della tua fattura e menziona il tuo IP/server (ad esempio: host nsXXX) nella tua risposta.
+A volte Microsoft può richiedere la data della prima fatturazione del tuo IP/server. In questo caso, invia a Microsoft una copia della tua fattura e menziona il tuo IP/server (ad esempio: host ns1111111.ip-203-0-113.eu) nella tua risposta.
 
 Per maggiori informazioni, invia una [richiesta di assistenza](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&ccsid=6364926882037750656) a Microsoft.
 
