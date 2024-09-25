@@ -48,7 +48,7 @@ Le tableau qui s'affiche liste l'ensemble des enregistrements DNS du nom de doma
 
 ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/tab-mydomain-anycast.png){.thumbnail}
 
-Chaque enregistrement DNS peut être modifié en cliquant sur le bouton `...`{.action} à droite de la ligne du tableau concernée puis en cliquant sur `Modifier l'entrée`{.action}.
+Chaque enregistrement DNS peut être modifié en cliquant sur le bouton `...`{.action} à droite de la ligne du tableau concernée, puis en cliquant sur `Modifier l'entrée`{.action}.
 
 Suivez les étapes dans l'ordre en parcourant les onglets suivants :
 
