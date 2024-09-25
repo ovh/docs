@@ -1,7 +1,7 @@
 ---
 title: How to configure reverse DNS for your server (PTR record)
 excerpt: Find out how to set up the reverse DNS resolution for your IP address in the OVHcloud Control Panel
-updated: 2024-09-17
+updated: 2024-09-24
 ---
 
 ## Objective
@@ -35,6 +35,17 @@ In the new window, enter your reverse path and click on `Validate`{.action}.
 ![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/enterreverse.png){.thumbnail}
 
 You can also edit the reverse path directly via the pen icon in the **Reverse DNS** column of the table.
+
+> [!warning]
+> When you enter your domain name in the reverse, it double checks immediately if the A Record is referring back to the same IP. This is used in anti-spam procedures, so your A Record must be valid and propagated. There are certain rules to follow while entering the reverse:
+> 
+>  - It cannot start with a `-`.
+>  - It cannot be longer than 80 characters.
+>  - It cannot contain uppercase characters.
+>  - It must end with a `.`.
+>
+> Example: "domain.tld" in the reverse record would be **"domain.tld"**.
+>
 
 > [!primary]
 >

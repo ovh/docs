@@ -1,7 +1,7 @@
 ---
 title: Reverse DNS Ihres Servers konfigurieren (PTR record)
 excerpt: Erfahren Sie hier, wie Sie die Reverse DNS-Auflösung Ihrer IP-Adresse über Ihr Kundencenter einrichten
-updated: 2024-09-17
+updated: 2024-09-24
 ---
 
 > [!primary]
@@ -39,6 +39,17 @@ Geben Sie Ihren Reverse-Pfad im neuen Fenster ein und klicken Sie auf `Bestätig
 ![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/enterreverse.png){.thumbnail}
 
 Sie können den Reverse-Pfad auch direkt mithilfe des Stift-Icons in der Spalte "**Reverse**" der Tabelle editieren.
+
+> [!warning]
+> Wenn Sie Ihren Domainnamen als *Reverse* eingeben, wird sofort überprüft, ob der A-Eintrag auf dieselbe IP verweist. Anti-Spam-Verfahren verwenden diese Methode, daher muss Ihr A-Eintrag gültig sein und propagiert werden. Bei der Eingabe des *Reverse* sind bestimmte Regeln zu beachten:
+>
+>  - Der *Reverse* darf nicht mit einem `-` beginnen.
+>  - Der *Reverse* darf höchstens 80 Zeichen enthalten.
+>  - Der *Reverse* darf keine Großbuchstaben enthalten.
+>  - Der *Reverse* muss mit einem `.` enden.
+>
+> Beispiel: Für "domain.tld" wäre der *Reverse*: **domain.tld.**
+>
 
 > [!primary]
 >
