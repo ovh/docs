@@ -1,7 +1,7 @@
 ---
 title: "Comment configurer le reverse DNS de votre serveur (enregistrement PTR)"
 excerpt: Découvrez comment mettre en place la résolution reverse DNS de votre adresse IP depuis votre espace client
-updated: 2024-09-17
+updated: 2024-09-24
 ---
 
 ## Objectif
@@ -35,6 +35,17 @@ Dans la nouvelle fenêtre, renseignez votre reverse et cliquez sur `Valider`{.ac
 ![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/enterreverse.png){.thumbnail}
 
 Vous pouvez également éditer le reverse directement via l'icône en forme de plume dans la colonne **Reverse DNS** du tableau.
+
+> [!warning]
+> Lorsque vous entrez votre nom de domaine dans le *reverse*, il vérifie immédiatement si l'enregistrement A renvoie à la même IP. Ceci est utilisé dans les procédures anti-spam, donc votre enregistrement A doit être valide et propagé. Il y a certaines règles à suivre lors de la saisie du *reverse* :
+>
+>  - le *reverse* ne peut pas commencer par un `-`
+>  - le *reverse* ne peut pas comporter plus de 80 caractères
+>  - le *reverse* ne peut pas contenir de caractères majuscules
+>  - le *reverse* doit se terminer par un `.`
+>
+> Exemple : « mydomain.ca » dans l'enregistrement *reverse* serait **mydomain.ca.**
+>
 
 > [!primary]
 >

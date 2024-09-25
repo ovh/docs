@@ -1,6 +1,6 @@
 ---
-title: Zoptymalizuj wysyłkę e-maili
-excerpt: Dowiedz się, jak wysyłać e-maile zmniejszając ryzyko spamu
+title: Jak zapobiec sytuacjom, w których Twoje e-maile są oznaczone jako spam
+excerpt: "Dowiedz się, jak zastosować dobre praktyki wysyłania wiadomości e-mail, aby ograniczyć ryzyko blokowania wiadomości uzasadnionych ochroną przed spamem"
 updated: 2024-01-24
 ---
 
@@ -61,44 +61,17 @@ Rekord DMARC (Domain-based Message Authentication, Reporting and Conformance) to
 
 Więcej informacji zawiera przewodnik dotyczący [konfigurowania rekordu DMARC](/pages/web_cloud/domains/dns_zone_dmarc).
 
-### Konfiguracja rewers (*reverse IP*) <a name="reverseip"></a>
+### Skonfiguruj odwrotną rozdzielczość adresów IP <a name="reverseip"></a>
 
-Aby zoptymalizować wysyłkę i zmniejszyć ryzyko blokady kont e-mail, należy skonfigurować rewers z Twoją domeną.
+Aby zoptymalizować wysyłkę e-maili i zmniejszyć ryzyko blokady e-maili, "możesz również skonfigurować odwrotny DNS (*PTR record*) dla Twojej domeny.
 
-Najpierw należy utworzyć rekord A w strefie DNS domeny, używając adresu IP Twojego serwera jako celu.
+Najpierw należy utworzyć rekord `A` w strefie DNS domeny, używając adresu IP Twojego serwera jako celu.
 
 Jeśli Twoje serwery DNS są zarządzane przez OVHcloud, zapoznaj się z naszym przewodnikiem [dotyczącym edycji strefy DNS OVHcloud w Panelu klienta](/pages/web_cloud/domains/dns_zone_edit).
 
 Po zmianie strefy DNS Twojej domeny konieczny jest czas propagacji wynoszący maksymalnie 24 godziny, aby modyfikacje stały się widoczne.
 
-Następnie dodaj rekordu PTR (znany również jako rewers):
-
-W [Panelu klienta OVHcloud](/links/manager){.external} przejdź do sekcji `Bare Metal Cloud`{.action}, a następnie otwórz `Network`{.action}. Następnie kliknij przycisk `IP`{.action}.
-
-Jeśli chcesz skonfigurować Rewers DNS na adresie Additional IP, kliknij zakładkę `Additional IP`{.action}.
-
-W rozwijanym menu pod "**Moje publiczne adresy IP i usługi powiązane**" możesz sortować Twoje usługi według kategorii.
-
-![Rewers IP](images/filteripds.png){.thumbnail}
-
-Kliknij przycisk `...`{.action} po prawej stronie odpowiedniej linii, a następnie `Zmień rewers`{.action}:
-
-![Rewers IP](images/addreverse2022.png){.thumbnail}
-
-Wprowadź nazwę Twojej domeny w sekcji `Rewers` i kliknij `Zatwierdź`{.action}.
-
-![Rewers IP](images/enterreverse.png){.thumbnail}
-
-> [!primary]
-> Po wpisaniu domeny do rewers sprawdzi on natychmiast, czy rekordu A odnosi się do tego samego IP. Jest to używane w procedurach antyspamowych, więc rekordu A musi być ważne i propagowane. Podczas wprowadzania rewers obowiązują następujące zasady:
->
->  - rewers nie może się rozpocząć od `-`
->  - rewers nie może zawierać więcej niż 80 znaków
->  - rewers nie może zawierać wielkich liter
->  - rewers musi się kończyć znakiem `.`
->
-> Przykład: "MyDomain.ca" w polu rewers byłoby **mydomain.ca.**
->
+Aby skonfigurować ścieżkę rewersu DNS w [Panelu klienta OVHcloud](/links/manager), zapoznaj się z [naszym przewodnikiem](/pages/bare_metal_cloud/virtual_private_servers/configuring-reverse-dns).
 
 ### Szczególne przypadki wysyłki e-maili
 
@@ -131,7 +104,7 @@ Potwierdź informacje i subskrypcję JMRP/SNDS zostanie zakończona.
 
 Po przeprowadzeniu tych operacji, jeśli Twój adres IP zostanie zablokowany, będziesz mógł zlecić jego odblokowanie przy użyciu [procedury junkmail](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&locale=en-us&ccsid=635857671692853062). Procedura zwykle trwa 48 godziny.
 
-Microsoft może czasem zapytać o datę płatności za pierwszy adres IP/serwer. W takim przypadku wyślij do Microsoft kopię Twojej faktury i wprowadź IP/serwer (np.: host nsXXX) w Twojej odpowiedzi.
+Microsoft może czasem zapytać o datę płatności za pierwszy adres IP/serwer. W takim przypadku wyślij do Microsoft kopię Twojej faktury i wprowadź IP/serwer (np.: host ns1111111.ip-203-0-113.eu) w Twojej odpowiedzi.
 
 Aby uzyskać więcej informacji, prosimy o otwarcie [wniosku o udzielenie pomocy](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&ccsid=6364926882037750656) przez Microsoft.
 
@@ -158,6 +131,6 @@ Może być interesujące, aby korzystać ze strony jak [Mail Tester](http://www.
 
 [Zwiększ bezpieczeństwo e-maili za pomocą rekordu DMARC](/pages/web_cloud/domains/dns_zone_dmarc)
 
-Aby wesprzeć Cię w uruchomieniu Twoich rozwiązań OVHcloud, skontaktuj się z naszą [siecią partnerów OVHcloud](/links/partner).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

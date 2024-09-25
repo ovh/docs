@@ -1,7 +1,7 @@
 ---
 title: "Jak skonfigurować rewers DNS Twojego serwera (rekord PTR)"
 excerpt: Dowiedz się, jak skonfigurować rewers DNS dla adresu IP z poziomu Panelu klienta OVHcloud
-updated: 2024-09-17
+updated: 2024-09-24
 ---
 
 > [!primary]
@@ -39,6 +39,17 @@ W nowym oknie wpisz rewers i kliknij na `Zatwierdź`{.action}.
 ![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/enterreverse.png){.thumbnail}
 
 Możesz również edytować rewers bezpośrednio za pomocą ikony pióra w kolumnie **Rewers DNS** tabeli.
+
+> [!warning]
+> Po wpisaniu domeny do rewers sprawdzi on natychmiast, czy rekordu A odnosi się do tego samego IP. Jest to używane w procedurach antyspamowych, więc rekordu A musi być ważne i propagowane. Podczas wprowadzania rewers obowiązują następujące zasady:
+>
+>  - rewers nie może się rozpocząć od `-`
+>  - rewers nie może zawierać więcej niż 80 znaków
+>  - rewers nie może zawierać wielkich liter
+>  - rewers musi się kończyć znakiem `.`
+>
+> Przykład: "MyDomain.ca" w polu rewers byłoby **mydomain.ca.**
+>
 
 > [!primary]
 >
