@@ -1,6 +1,6 @@
 ---
 title: Comment éviter que vos e-mails ne soient marqués comme spam
-excerpt: Découvrez comment appliquer les bonnes pratiques d'envoi d'e-mails afin de limiter les risques de blocage des e-mails légitimes par la protection contre les spams
+excerpt: "Découvrez comment appliquer les bonnes pratiques d'envoi d'e-mails afin de limiter les risques de blocage des e-mails légitimes par la protection contre les spams"
 updated: 2024-09-24
 ---
 
@@ -63,7 +63,7 @@ Pour plus d'informations, consultez notre guide sur la [configuration d'un enreg
 
 ### Configurer la résolution inverse des IP
 
-Afin d'optimiser davantage l'envoi d'e-mails et de diminuer le risque de blocage de vos e-mails, vous pouvez également configurer le chemin DNS inverse (*PTR record*) avec votre nom de domaine.
+Afin d'optimiser davantage l'envoi d'e-mails et de diminuer le risque de blocage de vos e-mails, so "vous pouvez également configurer la résolution DNS inverse (PTR record) avec votre nom de domaine.
 
 Vous devez tout d'abord créer un enregistrement `A` dans la zone DNS de votre domaine avec l'adresse IP de votre serveur comme cible.
 
