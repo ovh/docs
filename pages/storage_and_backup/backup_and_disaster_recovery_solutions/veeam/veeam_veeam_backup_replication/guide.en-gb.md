@@ -178,7 +178,7 @@ To update your login credentials, you can use the `Update my information`{.actio
 
 ![Update 1](images/veeam_update_cred.png){.thumbnail}
 
-In the window that pops up, enter the `IP`, `Username` and `Password`.
+In the window that pops up, inform the `IP`, `Username` and `Password`.
 
 Finally, click `OK`{.action}.
 
