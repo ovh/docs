@@ -1,7 +1,7 @@
 ---
 title: "Setting up Veeam Backup & Replication'
 excerpt: "Find out how to set up a Veeam Backup & Replication server with Veeam Enterprise"
-updated: 2024-09-24
+updated: 2024-09-25
 ---
 
 ## Objective
@@ -12,7 +12,7 @@ Veeam Backup & Replication is a data protection software. It offers its users a 
 
 ## Requirements
 
-- A [Veeam Enterprise solution](https://www.ovhcloud.com/en-gb/storage-solutions/veeam-enterprise/)
+- A [Veeam Enterprise solution](/links/hosted-private-cloud/veeam-enterprise)
 - Windows Server 2012 or a newer version
 
 ## Instructions
@@ -147,7 +147,7 @@ Your OVHVeeamEnterprise user is now accessible locally and remotely.
 
 #### From the OVHcloud Control Panel
 
-In your OVHcloud Control Panel, open the `Hosted Private Cloud`{.action} section and select your service labelled **backupserverenterprise** from `Platforms and services`{.action}. On this page, click on `Activate license`{.action} in the `Shortcuts` box.
+In your [OVHcloud Control Panel](/links/manager), open the `Hosted Private Cloud`{.action} section and select your service labelled **backupserverenterprise** from `Platforms and services`{.action}. On this page, click on `Activate license`{.action} in the `Shortcuts` box.
 
 To set up your environnement, make sure you have opened the ports from OVHcloud to your Veeam Backup and Replication servers:
 
@@ -160,9 +160,9 @@ To set up your environnement, make sure you have opened the ports from OVHcloud 
 
 In the new opened window, enter the following information:
 
-* The public IP address through which your server **Veeam Backup & Replication** can be contacted.
-* the login for the service account you have created.
-* the password for the service account.
+- The public IP address through which your server **Veeam Backup & Replication** can be contacted.
+- The login for the service account you have created.
+- The password for the service account.
 
 Then confirm with `OK`{.action}.
 
@@ -202,10 +202,10 @@ Then register it:
 
 You will need the following information:
 
- * the public IP address that can be used to contact your **Veeam Backup & Replication** server
- * your server’s **Veeam Backup & Replication** port (usually **9392/TCP**)
- * the login for the account you have just created
- * the password for your service account
+- the public IP address that can be used to contact your **Veeam Backup & Replication** server
+- your server’s **Veeam Backup & Replication** port (usually **9392/TCP**)
+- the login for the account you have just created
+- the password for your service account
 
 You can retrieve the public IP used by Veeam Enterprise to contact your **Veeam Backup & Replication** server via:
 
@@ -226,7 +226,7 @@ You can retrieve the public IP used by Veeam Enterprise to contact your **Veeam 
 
 > **Settings**:
 >
-> `serviceName`: Your service name, example `pcc-XXX-XXX-XXX-XXX`
+> `serviceName`: Your service name, e.g. `pcc-XXX-XXX-XXX-XXX`
 >
 
 Example of **REQUEST BODY** required:

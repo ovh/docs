@@ -1,7 +1,7 @@
 ---
 title: "Installer Veeam Backup & Replication"
 excerpt: "Découvrez comment installer un serveur Veeam Backup & Replication avec Veeam Enterprise"
-updated: 2024-09-24
+updated: 2024-09-25
 ---
 
 ## Objectif
@@ -12,14 +12,14 @@ Veeam Backup & Replication est un logiciel de protection des données. Il offre 
 
 ## Prérequis
 
-* Posséder une [offre Veeam Enterprise](https://www.ovhcloud.com/fr/storage-solutions/veeam-enterprise/){.external}.
-* Avoir à disposition une machine Windows Server 2012 ou une version plus récente.
+- Posséder une [offre Veeam Enterprise](/links/hosted-private-cloud/veeam-enterprise).
+- Avoir à disposition une machine Windows Server 2012 ou une version plus récente.
 
 ## En pratique
 
 ### Installer Veeam Backup & Replication
 
-Téléchargez la solution **Veeam Backup & Replication** depuis le site de [Veeam](https://www.veeam.com/downloads.html?ad=top-sub-menu){.external}. Si vous n'avez pas de compte, il sera nécessaire d'en créer un (celui-ci est gratuit).
+Téléchargez la solution **Veeam Backup & Replication** depuis le site de [Veeam](https://www.veeam.com/downloads.html?ad=top-sub-menu). Si vous n'avez pas de compte, il sera nécessaire d'en créer un (celui-ci est gratuit).
 
 Le fichier se présente sous la forme d'une image disque au format ISO. Après l'avoir transférée sur votre serveur, sélectionnez le lecteur CD de la machine puis choisissez l'image.
 
@@ -83,8 +83,8 @@ New-LocalUser "OVHVeeamEnterprise" -Password (ConvertTo-SecureString -AsPlainTex
 
 Notez que le nom du compte et le mot de passe correspondent à un exemple et doivent être remplacés :
 
- * Nom du compte : OVHVeeamEnterprise
- * Mot de passe : P@ssword01
+* Nom du compte : OVHVeeamEnterprise
+* Mot de passe : P@ssword01
 
 ####  Étape 2 - Définir les autorisations du compte de service
 
@@ -145,9 +145,9 @@ Votre utilisateur OVHVeeamEntreprise est maintenant accessible en local et à di
 
 ###  Étape 4 - Enregistrer le serveur Veeam Backup
 
-## Depuis l'espace client OVHcloud
+#### Depuis l'espace client OVHcloud
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, accédez à la section `Hosted Private Cloud`{.action} et sélectionnez `Plateformes et services`{.action}. Sélectionnez alors votre service **backupserverenterprise** puis cliquez sur `Activer la licence`{.action} dans la section `Raccourcis`.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), accédez à la section `Hosted Private Cloud`{.action} et sélectionnez `Plateformes et services`{.action}. Sélectionnez alors votre service **backupserverenterprise** puis cliquez sur `Activer la licence`{.action} dans la section `Raccourcis`.
 
 Pour configurer votre environnement, assurez-vous d'avoir ouvert les ports d'OVHcloud vers vos serveurs Veeam Backup and Replication :
 
@@ -160,9 +160,9 @@ Pour configurer votre environnement, assurez-vous d'avoir ouvert les ports d'OVH
 
 Dans la nouvelle fenêtre, saisissez les informations suivantes :
 
-* L'adresse IP publique par laquelle votre serveur **Veeam Backup & Replication** peut être contacté.
-* le login du compte de service précédemment créé.
-* le mot de passe du compte de service.
+- L'adresse IP publique par laquelle votre serveur **Veeam Backup & Replication** peut être contacté.
+- Le login du compte de service précédemment créé.
+- Le mot de passe du compte de service.
 
 Puis validez avec `OK`{.action}.
 
@@ -184,7 +184,7 @@ Pour terminer, cliquez sur `OK`{.action}.
 
 ![Update 2](images/veeam_update_cred_2.png){.thumbnail}
 
-## Avec l'API OVHcloud
+#### Via l'API OVHcloud
 
 D'abord, récupérez votre serviceName :
 
@@ -202,10 +202,10 @@ Puis effectuez l'enregistrement :
 
 Vous devez vous munir des informations suivantes :
 
-* L'adresse IP publique par laquelle votre serveur **Veeam Backup & Replication** peut-etre contacté.
-* Le port de votre Veeam Backup (usuellement **9392/TCP**)
-* le login du compte de service précédemment crée
-* le mot de passe du compte de service
+- L'adresse IP publique par laquelle votre serveur **Veeam Backup & Replication** peut-etre contacté.
+- Le port de votre Veeam Backup (usuellement **9392/TCP**)
+- le login du compte de service précédemment crée
+- le mot de passe du compte de service
 
 Vous pouvez obtenir l'adresse IP publique utilisée par Veeam Enterprise pour contacter votre serveur **Veeam Backup & Replication** via :
 
