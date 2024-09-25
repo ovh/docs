@@ -42,7 +42,7 @@ Lorsque vous utilisez un Google Site avec un nom de domaine OVHcloud, préparez 
 ### 2. Configurer vos enregistrements DNS sur votre compte OVHcloud
 
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager){.external} dans la section `Web Cloud`{.action}. Cliquez sur `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné. Positionnez-vous enfin sur l'onglet `Zone DNS`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager){.external}, puis rendez-vous dans la section `Web Cloud`{.action}. Cliquez sur `Noms de domaine`{.action} dans la colonne de gauche, puis choisissez le nom de domaine concerné. Positionnez-vous enfin sur l'onglet `Zone DNS`{.action}.
 
 Le tableau qui s'affiche liste l'ensemble des enregistrements DNS du nom de domaine sélectionné.
 
