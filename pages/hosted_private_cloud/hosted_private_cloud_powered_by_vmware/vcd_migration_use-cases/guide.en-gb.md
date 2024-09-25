@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - Migrate from VMware vSphere on OVHcloud"
 excerpt: "Find out how to prepare a migration from managed VMware vSphere on OVHcloud to a solution based on a managed VMware Cloud Director (VCD) on OVHcloud environnement"
-updated: 2024-09-16
+updated: 2024-09-25
 ---
 
 > [!primary]
@@ -24,7 +24,7 @@ This practical guide is designed to provide you with information and solutions o
 
 It also details the requirements for each use case, and if applicable, explains the requirements for a migration.
 
-| **Images**                                                                      | **Steps**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| **OVHcloud Control Panel**                                                                      | **Steps**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 |:--------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ![VCD Migration Block](images/vcd_migration_bloc_validation_en.png){thumbnail} | 1. Before migrating, it is important to read the checklist of specific use cases below and follow any associated recommendations.<br/>2. Once you have met these requirements, you can log in to the OVHcloud Control Panel to sign (in the provided field for this purpose) the specific conditions (T&Cs) of the environment which will be migrated. A confirmation email will be sent, containing a link and a temporary password to access VCD on OVHcloud. <br/>3. OVHcloud teams will migrate VMs from the chosen datacenter (vDC), using a hot migration path (vMotion).<br/> |
 
@@ -53,7 +53,7 @@ You can find all the information you need on our VCD pages:
 
 - [Webinar - Managed VMware Cloud Director on OVHcloud (video)](https://vimeo.com/936590009/b52b3ba8ce)
 - [Webinar - VMware by Broadcom New Offerings and Opportunities (video)](https://www.youtube.com/watch?v=aS2A9AhjnMg)
-- [OVHcloud.com - Managed VMware Cloud Director on OVHcloud](https://www.ovhcloud.com/en/lp/vmware-vcd-evolution/)
+- [OVHcloud.com - Managed VMware Cloud Director on OVHcloud](https://www.ovhcloud.com/en-gb/lp/vmware-vcd-evolution/)
 - [OVHcloud Labs - VMware Cloud Director on OVHcloud](https://labs.ovhcloud.com/en/vmware-cloud-director/)
 
 Migrations will be carried out in 4 waves, from september, depending on the services active in your environment.
