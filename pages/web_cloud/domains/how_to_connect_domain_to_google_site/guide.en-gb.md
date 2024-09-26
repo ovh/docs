@@ -56,7 +56,7 @@ Follow the steps in order by going through the following tabs:
 >> **Record A**<br><br>
 >> To identify existing A records, click the filter menu at the top of the DNS records table and select `A`.
 >>
->>![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-a.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-a.png){.thumbnail}
 >>
 >> - Click the `...`{.action} button to the right of the table row that corresponds to your domain name alone, without a subdomain (e.g. `mydomain.ovh.`), then click `Modify record`{.action}.<br>
 >> - If a record for the “www” subdomain is present (e.g.: `www.mydomain.ovh.`), delete it so that it does not conflict with the CNAME record you enter in step 4. Click the `...`{.action} button to the right of the table row for your www subdomain, then click `Delete record`{.action}.<br>
