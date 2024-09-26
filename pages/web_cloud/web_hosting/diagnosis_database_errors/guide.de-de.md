@@ -281,11 +281,11 @@ Diese Fehlermeldung wird bei der [Verbindung über phpMyAdmin](/pages/web_cloud/
 
 ### Anmeldung bei einer Cloud Databases-Datenbank nicht möglich
 
-Sie verfügen über einen [Web Cloud Databases](/products/web-cloud-clouddb) Server, mit dem Sie sich von Ihrem Computer oder einem Server außerhalb der Infrastruktur von OVHcloud mit Ihren Datenbanken verbinden können (/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server).
+Ein [Web Cloud Databases](/products/web-cloud-clouddb) Server erlaubt es, sich von Ihrem Computer oder einem Server außerhalb der Infrastruktur von OVHcloud mit Ihren Datenbanken zu [verbinden](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server).
 
-Wenn diese Verbindung nicht möglich ist, überprüfen Sie zunächst, ob Sie [Ihre öffentliche IP-Adresse autorisieren](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) die Verbindung zum Datenbankserver hergestellt haben.
+Wenn diese Verbindung nicht möglich ist, überprüfen Sie zunächst, dass [Ihre öffentliche IP-Adresse autorisiert ist](/pages/web_cloud/web_cloud_databases/starting_with_clouddb), die Verbindung zum Datenbankserver herzustellen.
 
-Wenn der Vorgang erfolgreich war, wenden Sie sich an Ihren Internetdienstanbieter oder [OVHcloud Partner](/links/partner). In dieser Situation können wir Ihnen leider keine Unterstützung anbieten.
+Wenn dies der Fall ist, wenden Sie sich an Ihren Internetdienstanbieter oder [OVHcloud Partner](/links/partner). In dieser Situation können wir Ihnen leider keine Unterstützung anbieten.
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
