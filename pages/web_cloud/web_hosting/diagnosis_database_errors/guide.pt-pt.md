@@ -226,7 +226,7 @@ Esta mensagem de erro aparece aquando da [importação de uma base de dados](/pa
 
 Para resolver esta anomalia, pode:
 
-- Aumentar a [quantidade de memória viva (RAM)](/pages/web_cloud/web_cloud_databases/configure-database-server#acompanhar-a-ram-consumida). Para isso, aceda ao servidor [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) afetado na rubrica `Bases de dados`{.action} do seu [Espaço Cliente OVHcloud](/links/manager). A seguir, clique no botão `...`{.action} na parte `RAM`, e `Alterar quantidade de RAM`{.action}.
+- Aumentar a [quantidade de memória viva (RAM)](/pages/web_cloud/web_cloud_databases/configure-database-server#acompanhar-a-ram-consumida). Para isso, aceda ao servidor [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) afetado na rubrica `Bases de dados`{.action} do seu [Área de Cliente OVHcloud](/links/manager). A seguir, clique no botão `...`{.action} na parte `RAM`, e `Alterar quantidade de RAM`{.action}.
 
 - Transferir a base de dados para várias operações em vez de uma (para qualquer questão relativa às operações a realizar, contacte a nossa [comunidade](/links/community) ou os [parceiros da OVHcloud](/links/partner). De facto, a OVHcloud não lhe poderá fornecer assistência).
 
