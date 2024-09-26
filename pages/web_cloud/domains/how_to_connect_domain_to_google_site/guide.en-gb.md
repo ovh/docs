@@ -121,4 +121,3 @@ For specialized services (SEO, development, etc.), contact the [OVHcloud partner
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our [community of users](/links/community).
-
