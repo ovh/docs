@@ -90,7 +90,7 @@ N'oubliez pas de remplacer tous les paramètres généraux suivants par vos prop
 
 - `FTP-login` : login FTP de votre hébergement web.
 - `ssh.cluster0XX.hosting.ovh.net` : remplacez les `XX` par le numéro du cluster où se trouve votre hébergement web. Si besoin, consultez notre guide « [Utiliser l'accès SSH de son hébergement web](/pages/web_cloud/web_hosting/ssh_on_webhosting) » pour retrouver cette information.
-- `/homez.XXX/FTP-main-login/` : modifiez les `XXX` par le numéro du *filer* et le `FTP-main-login` par les paramètres récupérés lors de l'[étape 2](#step2) de ce gyude.
+- `/homez.XXX/FTP-main-login/` : modifiez les `XXX` par le numéro du *filer* et le `FTP-main-login` par les paramètres récupérés lors de l'[étape 2](#step2) de ce guide.
 - `source_folder` : nom du dossier source à copier ou dans lequel se trouve le fichier à copier. *Si l'arborescence correspond à une succession de dossiers imbriqués, vous devrez préciser tous les noms des dossiers en les séparant par un `/`*.
 - `target_folder` : nom du dossier cible qui va recevoir le dossier ou le fichier local à copier. *Si l'arborescence correspond à une succession de dossiers imbriqués, vous devrez préciser tous les noms des dossiers en les séparant par un `/`*.
 - `file` : nom du fichier à copier à l'aide de la commande `scp`. N'oubliez pas également de préciser l'extension de ce fichier (exemples : *.html*, *.css*, *.php*, *.txt*, etc.).
