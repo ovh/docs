@@ -47,7 +47,7 @@ The table that opens lists all of the DNS records for the selected domain name.
 
 ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/tab-mydomain-anycast.png){.thumbnail}
 
-Each DNS record can be modified by clicking the '...`{.action}' button to the right of the table row concerned, then clicking `Modify record`{.action}.
+Each DNS record can be modified by clicking the `...`{.action} button to the right of the table row concerned, then clicking `Modify record`{.action}.
 
 Follow the steps in order by going through the following tabs:
 
