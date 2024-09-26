@@ -23,7 +23,7 @@ You have a domain name with OVHcloud and you want to connect it to a Google Site
 - You must have the [appropriate permissions](/pages/account_and_service_management/account_information/managing_contacts) to manage the domain name from your [OVHcloud Control Panel](/links/manager).
 - You must own and own a Google Site.
 
-## In practice
+## Instructions
 
 Before following the steps in this guide, we recommend that you get familiar with configuring a DNS zone by using our guide on [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit).
 
