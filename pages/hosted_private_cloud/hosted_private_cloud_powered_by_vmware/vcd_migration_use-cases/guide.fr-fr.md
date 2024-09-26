@@ -11,7 +11,7 @@ updated: 2024-09-26
 
 ## Objectif
 
-**L’objectif de ce guide est de vous fournir les informations nécessaires pour les migrations vers un environnement VMware Cloud Director on OVHcloud.**
+**L’objectif de ce guide est de vous fournir les informations nécessaires pour effectuer une migration vers un environnement VMware Cloud Director on OVHcloud.**
 
 ## Prérequis
 
@@ -79,7 +79,7 @@ Nous vous invitons à lire le guide [VMware Cloud Director - Les concepts fondam
 >
 > Les demandes de migration faites après le 1er septembre 2024 ont les mêmes prérequis que pour toutes les autres demandes de migrations évoquées dans ce guide.
 >
-> Vous devrez faire votre demande par le biais d'un [ticket au support](https://help.ovhcloud.com/csm?id=csm_get_help), ce qui vous permettra d'obtenir toutes les informations et de signer les conditions particulières de l'offre (C&P).
+> Vous devrez faire votre demande par le biais d'un [ticket au support](https://help.ovhcloud.com/csm?id=csm_get_help), ce qui vous permettra d'obtenir toutes les informations et de signer les termes et conditions particulières de l'offre VCD on OVHcloud.
 >
 
 Nous vous informerons ensuite de la date de migration et réaliserons celle-ci. 
