@@ -1,7 +1,7 @@
 ---
 title: "Resolver los errores más frecuentes asociados a las bases de datos"
 excerpt: "Diagnóstico de los errores más comunes relacionados con las bases de datos"
-updated: 2024-09-25
+updated: 2024-09-26
 ---
 
 > [!primary]
@@ -104,7 +104,7 @@ Desbloquee la base de datos de tres formas distintas:
 
 #### Método 1: cambiar la suscripción a un plan superior
 
-Si dispone de una fórmula **Personal** o **Profesional**, le recomendamos que cambie a [plan de hosting superior](/links/web/hosting). Este cambio de suscripción aumentará el tamaño de la base de datos, lo que la reabrirá automáticamente. Este método es el más sencillo y no necesita conocimientos técnicos específicos.
+Si dispone de una fórmula **Starter** o **Personal**, le recomendamos que cambie a [plan de hosting superior](/links/web/hosting). Este cambio de suscripción aumentará el tamaño de la base de datos, lo que la reabrirá automáticamente. Este método es el más sencillo y no necesita conocimientos técnicos específicos.
 
 > [!warning]
 >
@@ -124,12 +124,12 @@ Si utiliza un plan **Performance**, consulte el [método 2](#methode2).
 También puede migrar sus datos a una nueva base de datos:
 
 - Contrate, si es necesario, una [base de datos](/links/web/hosting-options-startsql) de mayor tamaño y lance su [creación](/pages/web_cloud/web_hosting/sql_create_database).
-- Realice un [exportar sus datos](/pages/web_cloud/web_hosting/sql_database_export) y a continuación [importar los](/pages/web_cloud/web_hosting/sql_importing_mysql_database) en la nueva base de datos;
+- [Duplique el contenido de la antigua base de datos](/pages/web_cloud/web_hosting/copy_database) en la nueva **o** realice un [exportar sus datos](/pages/web_cloud/web_hosting/sql_database_export) y a continuación [importar los](/pages/web_cloud/web_hosting/sql_importing_mysql_database) en la nueva base de datos;
 - Integre las claves de la nueva base de datos en el [archivo de configuración](#config_file) de su sitio web.
 
 > [!primary]
 >
-> Si dispone de un alojamiento **Performance**, también puede [activar gratis un servidor Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb#activacion-de-su-servidor-clouddb-incluido-con-su-plan-de-hosting).
+> Si dispone de un alojamiento **Performance**, también puede [activar gratis un servidor Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 >
 
 #### Método 3: eliminar datos innecesarios
@@ -152,13 +152,13 @@ Para optimizar su base de datos, siga las instrucciones de nuestra guía "[Confi
 > Si el asesoramiento ofrecido sobre la optimización de su base de datos no bastaba para desbloquear el acceso a su sitio web, le recomendamos que se ponga en contacto con nuestra [comunidad de usuarios](/links/community) o con los [partners de OVHcloud](/links/partner). Nosotros no podremos asistirle en este asunto.
 >
 
-### Memoria RAM rebasada
+### Memoria RAM rebasada (solo Web Cloud Databases)
 
-El siguiente mensaje, situado en la sección `Bases de datos`{.action} de su [área de cliente de OVHcloud](/links/manager), indica que su servidor [Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/) ha consumido una cantidad de recursos demasiado grande en la infraestructura de OVHcloud:
+El siguiente mensaje, situado en la sección `Web Cloud Databases`{.action} de su [área de cliente de OVHcloud](/links/manager), indica que su servidor [Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/) ha consumido una cantidad de recursos demasiado grande en la infraestructura de OVHcloud:
 
 ![ram-exceeded](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/ram-exceeded.png){.thumbnail}
 
-En ese caso, puede aumentar la [cantidad de memoria RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#cambiar-la-oferta-del-servidor-de-bases-de-datos) disponible desde la sección `Bases de datos`{.action} de su [área de cliente OVHcloud](/links/manager). En la pestaña `Información general`{.action}, haga clic en el botón `...`{.action} en la sección `RAM`.
+En ese caso, puede aumentar la [cantidad de memoria RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#cambiar-la-oferta-del-servidor-de-bases-de-datos) disponible desde la sección `Web Cloud Databases`{.action} de su [área de cliente OVHcloud](/links/manager). En la pestaña `Información general`{.action}, haga clic en el botón `...`{.action} en la sección `RAM`.
 
 > [!warning]
 >
@@ -166,7 +166,7 @@ En ese caso, puede aumentar la [cantidad de memoria RAM](/pages/web_cloud/web_cl
 > 
 > Para desvincular la base de datos, conéctese a su [área de cliente de OVHcloud](/links/manager) y seleccione `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento web en el que esté activado el Web Cloud Databases.
 >
-> En el área de `Configuración`, haga clic en los `...`{.action} a la derecha de la entrada de la `Base de datos privada` y haga clic en el botón `Desvincular`{.action}.
+> En el área de `Configuración`, haga clic en los `...`{.action} a la derecha de la mención `Web Cloud Databases` y haga clic en el botón `Desvincular`{.action}.
 >
 
 También puede optimizar su base de datos siguiendo las instrucciones de nuestra guía "[Configurar su servidor de bases de datos](/pages/web_cloud/web_cloud_databases/configure-database-server#gestionar-las-bases-de-datos)".
@@ -200,7 +200,7 @@ Este mensaje de error significa que la base de datos que está intentando import
 >
 > ¿Qué elementos del script de importación de mi base de datos pueden causar un error "#1044 - Access denied for user to database"?
 
-Tener un **"trigger"** en el script de importación de su base de datos no está autorizado en los servidores de alojamiento compartido de OVHcloud. En ese caso, importe la base de datos en un servidor [Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/).
+Tener un **"trigger"** en el script de importación de su base de datos no está autorizado en los servidores de alojamiento compartido de OVHcloud. En ese caso, importe la base de datos en un servidor [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 
 Por otro lado, no está permitida la siguiente petición:
 
@@ -226,7 +226,7 @@ Este mensaje de error aparece durante [la importación de una base de datos](/pa
 
 Para resolver esta anomalía, puede:
 
-- Aumentar la [cantidad de memoria RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#seguimiento-de-la-ram-consumida). Para ello, acceda al [servidor Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) correspondiente en la sección `Bases de datos`{.action} de su [área de cliente OVHcloud](/links/manager). Haga clic en el botón `...`{.action} en la sección `RAM` y, seguidamente, en `Cambiar la cantidad de RAM`{.action}.
+- Aumentar la [cantidad de memoria RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#seguimiento-de-la-ram-consumida). Para ello, acceda al servidor [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) correspondiente en la sección `Bases de datos`{.action} de su [área de cliente OVHcloud](/links/manager). Haga clic en el botón `...`{.action} en la sección `RAM` y, seguidamente, en `Cambiar la cantidad de RAM`{.action}.
 
 - Fraccione su base de datos para importarla en varias operaciones en lugar de una (para cualquier duda sobre las operaciones a realizar, contacte con nuestra [comunidad](/links/community) o con los [partners de OVHcloud](/links/partner). Nosotros no podremos asistirle en este asunto.
 
@@ -283,6 +283,14 @@ Compruebe el nombre del servidor que quiera registrar en su [área de cliente de
 >
 > Si desea conectarse a una base de datos en un servidor [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb), el nombre del servidor a introducir se inscribe en la pestaña `Información general`{.action}, parte `Datos de conexión`{.action}, `SQL`{.action} y en el `Nombre del host`{.action}.
 >
+
+### No es posible conectarse a una base de datos Cloud Databases
+
+Tener un servidor [Web Cloud Databases](/products/web-cloud-clouddb) le permite [conectarse a sus bases de datos](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server) desde su ordenador o un servidor externo a la infraestructura de OVHcloud.
+
+Si esta conexión no es posible, compruebe primero que ha [autorizado su dirección IP pública](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) a conectarse al servidor de bases de datos.
+
+Si esta operación se ha realizado correctamente, póngase en contacto con su proveedor de acceso a Internet o con los [partners de OVHcloud](/links/partner). No podremos asistirle en esta situación.
 
 ## Más información <a name="go-further"></a>
 
