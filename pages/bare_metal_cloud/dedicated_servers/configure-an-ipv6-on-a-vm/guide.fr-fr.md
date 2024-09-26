@@ -93,20 +93,22 @@ Une fois connecté au tableau de bord Proxmox, cliquez sur le nom de votre serve
 > **General**
 >>
 >> **Name:** Renseignez un nom pour votre VM.<br><br>
->>![create vm](images/create-vm-name.png){.thumbnail}<br>
+>>![create vm](images/create_vm_name.png){.thumbnail}<br>
 >> 
 > **OS**
 >> Cliquez sur la flèche déroulante à côté de `ISO image` pour sélectionner l'image de votre choix. Dans notre exemple, nous utilisons ubuntu 24.04 ISO.<br><br>
->>![iso image](images/select-iso.png){.thumbnail}<br>
+>>![iso image](images/select_iso.png){.thumbnail}<br>
 >>
 > **Confirm**
 >>
 >> Une fois fait, cliquez sur `Finish`{.action} pour créer la VM.<br><br>
->>![create vm](images/create-vm.png){.thumbnail}<br>
+>>![create vm](images/create_vm.png){.thumbnail}<br>
 
 Une fois la machine virtuelle créée, l’étape suivante consiste à la lancer et à procéder à l’installation du système d’exploitation.
 
-**Ubuntu et Debian 12** **(netplan)**
+**Configuration basee sur netplan**
+
+La configuration ci-dessous est basée sur Ubuntu 20.04.
 
 Une fois connecté à votre machine virtuelle, la première étape consiste à accéder au fichier de configuration :
 
@@ -133,9 +135,9 @@ network:
 
 Pour tester la connectivité de votre IPv6, exécutez la commande `ping` à l'adresse `2001:4860:4860::8888` :
 
-![ping](images/ping-debian.png){.thumbnail}<br>
+![ping](images/vm_ubuntu.png){.thumbnail}<br>
 
-**Debian** **(network interfaces)**
+**Configuration basee sur network interfaces**
 
 La configuration ci-dessous est basée sur Debian 11.
 
@@ -165,10 +167,10 @@ sudo systemctl restart networking.service
 
 Pour tester la connectivité de votre IPv6, exécutez la commande `ping` à l'adresse `2001:4860:4860::8888` :
 
-![ping](images/ping-debian.png){.thumbnail}
+![ping](images/vm_debian.png){.thumbnail}
 
 
-**Almalinux, Rocky Linux et Fedora** **(NetworkManager)**
+**Configuration basee sur NetworkManager**
 
 La configuration ci-dessous est basée sur Fedora 40.
 
@@ -182,12 +184,12 @@ sudo /etc/NetworkManager/system-connections
 
 Utilisez la commande `ls` pour afficher le fichier de configuration réseau. Dans notre exemple, notre fichier s'appelle `ens18.nmconnection`.
 
-![ls](images/ping-debian.png){.thumbnail}
+![ls](images/ls_command.png){.thumbnail}
 
 Ensuite, configurez l'adresse IPv6 de votre choix en remplaçant *YOUR_IPV6*, *IPV6_PREFIX* et *IPV6_GATEWAY* par vos propres valeurs.
 
 ```bash
-sudo nano /etc/NetworkManager/system-connections/ens18.nmconnections
+sudo nano /etc/NetworkManager/system-connections/ens18.nmconnection
 ```
 
 ```bash
@@ -206,23 +208,21 @@ sudo systemctl restart NetworkManager
 
 Pour tester la connectivité de votre IPv6, exécutez la commande `ping` à l'adresse `2001:4860:4860::8888` :
 
-![ping](images/ping-debian.png){.thumbnail}
-
-**CentOS**
-
-The configuration below is based on CentOS 9 stream.
+![ping](images/vm_alma_rocky.png){.thumbnail}
 
 #### Pour un conteneur
 
 Once your container has been created, click on it in the left-tab menu. Next, click on `Network`{.action}.
 
-Click on `edit`{.action} to edit the existing network.
+![container configuration](images/network_container.png){.thumbnail}
 
-![container configuration](images/create-vm.png){.thumbnail}
+Select the existing network and click on `edit`{.action}.
+
+![container configuration](images/edit_network.png){.thumbnail}
 
 Fill in the IPV6 fields with the correct information
 
-![container configuration](images/create-vm.png){.thumbnail}
+![container configuration](images/configure_ipv6_container.png){.thumbnail}
 
 Once done, click on `OK`{.action} to save the changes.
 
