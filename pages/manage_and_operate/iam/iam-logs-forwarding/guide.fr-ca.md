@@ -46,7 +46,7 @@ Pour activer la redirection, utilisez les API suivantes :
 |**Méthode**|**Type de journal**|**Chemin**|**Description**|
 | :-: | :-: | :-: | :-: |
 POST|Journaux d'audit|/me/logs/audit/forward|Transfère les journaux d'audit des comptes|
-POST|Journaux d'activité|/me/api/logs/forward|Journaux de l'API de transfert et des comptes du Panneau de configuration|
+POST|Journaux d'activité|/me/api/log/subscription|Journaux de l'API de transfert et des comptes du Panneau de configuration|
 POST|Accéder aux journaux de stratégie|/iam/logs/forward|Transfère les journaux IAM du compte vers un flux de journaux dédié|
 
 Par exemple, pour les journaux d'audit :
