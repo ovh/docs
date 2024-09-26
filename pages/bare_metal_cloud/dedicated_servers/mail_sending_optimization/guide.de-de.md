@@ -71,7 +71,7 @@ Wenn Ihr Domainname DNS-Server von OVHcloud verwendet, können Sie dazu unsere [
 
 Nach der Änderung der DNS-Zone Ihres Domainnamens ist eine Propagationszeit von maximal 24 Stunden erforderlich, bis die Änderungen wirksam sind.
 
-Alle Informationen zur Konfiguration des *Reverse* DNS-Pfads im [OVHcloud Kundencenter](/links/manager) finden Sie in [unserer Anleitung](/pages/bare_metal_cloud/virtual_private_servers/configure-reverse-dns).
+Alle Informationen zur Konfiguration des *Reverse* DNS-Pfads im [OVHcloud Kundencenter](/links/manager) finden Sie in [unserer Anleitung](/pages/bare_metal_cloud/virtual_private_servers/configuring-reverse-dns).
 
 ### Sonderfälle beim Versand von E-Mails
 
