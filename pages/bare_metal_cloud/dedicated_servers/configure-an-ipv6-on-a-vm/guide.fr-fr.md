@@ -1,7 +1,7 @@
 ---
 title: "Configurer une IPv6 sur une machine virtuelle"
 excerpt: "Découvrez comment configurer une adresse IPv6 sur une machine virtuelle"
-updated: 2024-09-11
+updated: 2024-09-26
 ---
 
 ## Objectif
@@ -36,7 +36,7 @@ Avant de débuter, et afin d’utiliser les mêmes terminologies durant les mani
 |Terme|Description|Exemple|
 |---|---|---|
 |YOUR_IPV6|Il s'agit d'une adresse IPv6 du bloc IPv6 attribué à votre serveur|2607:5300:xxxx:xxxx::1|
-|IPv6_PREFIX|Il s'agit du préfixe (ou *netmask*) de votre bloc IPv6, généralement de 64 ou /56|2607:5300:xxxx:xxxx::/64|
+|IPv6_PREFIX|Il s'agit du préfixe (ou *netmask*) de votre bloc IPv6, généralement de /64 ou /56|2607:5300:xxxx:xxxx::/64|
 |IPv6_GATEWAY|Il s'agit de la passerelle (ou *gateway*) de votre bloc IPv6|2607:5300:xxxx:ff:ff:ff:ff:ff ou fe80::1|
 
 Dans nos exemples, nous utiliserons l'éditeur de texte `nano`. Vous pouvez bien entendu utiliser l'éditeur de texte de votre choix.
@@ -135,7 +135,7 @@ network:
 
 Pour tester la connectivité de votre IPv6, exécutez la commande `ping` à l'adresse `2001:4860:4860::8888` :
 
-![ping](images/vm_ubuntu.png){.thumbnail}<br>
+![ping](images/vm_ubuntu.png){.thumbnail}
 
 **Configuration basee sur network interfaces**
 
@@ -212,23 +212,24 @@ Pour tester la connectivité de votre IPv6, exécutez la commande `ping` à l'ad
 
 #### Pour un conteneur
 
-Once your container has been created, click on it in the left-tab menu. Next, click on `Network`{.action}.
+Une fois votre conteneur créé, cliquez dessus dans le menu de gauche. Cliquez ensuite sur `Réseau`{.action}.
 
-![container configuration](images/network_container.png){.thumbnail}
+![configuration du conteneur](images/container_network.png){.thumbnail}
 
-Select the existing network and click on `edit`{.action}.
+Sélectionnez le réseau existant et cliquez sur `edit`{.action}.
 
-![container configuration](images/edit_network.png){.thumbnail}
+![configuration du conteneur](images/edit_network.png){.thumbnail}
 
-Fill in the IPV6 fields with the correct information
+Complétez les champs IPV6 avec les informations correctes
 
-![container configuration](images/configure_ipv6_container.png){.thumbnail}
+![configuration du conteneur](images/configure_ipv6_container.png){.thumbnail}
 
-Once done, click on `OK`{.action} to save the changes.
+Une fois fait, cliquez sur `OK`{.action} pour enregistrer les modifications.
 
-Connect to your container to verify the IPv6 connectivity with the `ping` command:
+Connectez-vous à votre conteneur pour vérifier la connectivité IPv6 avec la commande `ping` :
 
-![ping](images/ping-container.png){.thumbnail}
+![ping](images/container_ubuntu.png){.thumbnail}
 
-### Configuration sur Hyper-V
+## Aller plus loin
 
+Échangez avec notre [communauté d'utilisateurs](/links/community).
