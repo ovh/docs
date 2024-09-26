@@ -70,7 +70,8 @@ This will ensure that we stay consistent with the default "True" policy, like on
 
 ### Default settings
 
-Each networking port is attached to a security group which contains some specific rules.
+Each networking port is attached to a security group which contains specific rules. However, keep in mind that **security groups do not function for Metal Instances**.
+
 
 The "default" security group contains the following rules:
 
@@ -89,6 +90,11 @@ openstack security group rule list default
 The return shows that all connections are allowed for any protocol and in both directions.
 
 As a consequence, all the network ports (public and private) will allow every connection when you start an instance.
+
+### Known limitation for Metal Instances <a name="metal-instance-limit"></a>
+
+> **Note**: Security groups do not apply to Metal Instances, meaning that any firewall rules set via security groups will not be respected on Metal Instances. If you need to block ingress traffic on these instances, consider using the [Edge Network Firewall](https://help.ovhcloud.com/csm/en-ie-dedicated-servers-firewall-network?id=kb_article_view&sysparm_article=KB0043450).
+
 
 ### Managing your private firewall rules
 
