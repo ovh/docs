@@ -166,7 +166,7 @@ Nesta situação, pode aumentar a [quantidade de memória RAM](/pages/web_cloud/
 > 
 > Para desassociar a base de dados, aceda à [Área de Cliente OVHcloud]((/links/manager) e selecione `Web Cloud`{.action}. Clique em `Alojamentos`{.action} e escolha o alojamento web no qual o Web Cloud Databases está ativo.
 >
-> Na zona `Configuration`, clique em as o `...`{.action} à direita da menção `eb Cloud Databases`, e clique no botão `Desassociar`{.action}.
+> Na zona `Configuration`, clique em as o `...`{.action} à direita da menção `Web Cloud Databases`, e clique no botão `Desassociar`{.action}.
 >
 
 Também pode otimizar a sua base de dados seguindo as instruções do nosso guia "[Configurar o seu servidor de bases de dados](/pages/web_cloud/web_cloud_databases/configure-database-server#otimizar-as-bases-de-dados)".
