@@ -90,7 +90,7 @@ Follow the steps in order by going through the following tabs:
 >> **CNAME record**<br><br>
 >> To identify existing CNAME records, click on the filter menu at the top of the DNS records table and select `CNAME`.
 >>
->>![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-cname.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-cname.png){.thumbnail}
 >>
 >> - Click the `...`{.action} button to the right of the table row corresponding to your subdomain in “www” (e.g.: `www.mydomain.ovh.`), then click `Modify entry`{.action}.<br>
 >> - If you do not have an existing ‘CNAME’ record, click the `Add record`{.action} button in the top right-hand corner of your screen, and select the `CNAME`{.action} ‘Time and attendance record’.
