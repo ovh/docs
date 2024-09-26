@@ -1123,6 +1123,7 @@
                 + [Transferring a domain name to another registrar](web_cloud/domains/transfer_outgoing_domain)
                 + [Transferring a .uk domain name to another registrar](web_cloud/domains/transfer_outgoing_couk)
             + [Tutorials](web-cloud-domains-domain-names-tutorials)
+                + [How to connect an OVHcloud domain name to a Google Site](web_cloud/domains/how_to_connect_domain_to_google_site)
                 + [How to connect an OVHcloud domain name to a Shopify hosting plan](web_cloud/domains/how_to_connect_domain_to_shopify)
                 + [How to connect an OVHcloud domain name to a SquareSpace hosting plan](web_cloud/domains/how_to_connect_domain_to_squarespace)
                 + [How to connect an OVHcloud domain name to a Wix hosting plan](web_cloud/domains/how_to_connect_domain_to_wix)
