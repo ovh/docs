@@ -1,7 +1,7 @@
 ---
 title: Modificare un Volume Block Storage
 excerpt: "Scopri come modificare il tipo di un volume block storage utilizzando Openstack"
-updated: 2023-08-08
+updated: 2024-09-26
 ---
 
 > [!primary]

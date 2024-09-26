@@ -1,7 +1,7 @@
 ---
 title: Change your block storage volume type
 excerpt: Find out how to change your volume type using Openstack
-updated: 2023-08-03
+updated: 2024-09-26
 ---
 
 ## Objective
