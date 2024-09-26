@@ -1,7 +1,7 @@
 ---
-title: Managing firewall rules and port security on networks using OpenStack CLI
-excerpt: Find out how security groups work on Public Cloud
-updated: 2023-03-13
+title: Managing firewall rules and port security on networks using OpenStack CLI (including Metal Instances limitations)
+excerpt: Find out how security groups work on Public Cloud and their limitations on Metal Instances
+updated: 2024-09-26
 ---
 
 ## Objective
