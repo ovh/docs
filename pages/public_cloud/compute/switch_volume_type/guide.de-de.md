@@ -26,7 +26,7 @@ Als Standard ist die Migrationsrichtlinie auf `Never` eingestellt, da das Volume
 Diese Änderung kann über Horizon oder OpenStack CLI vorgenommen werden.
 
 > [!warning]
-> Wenn das Volume mit einer Instanz verbunden ist, müssen Sie es zuerst trennen, bevor Sie fortfahren. Weitere Informationen finden Sie in [diesem Abschnitt](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#volume-abtrennen) der entsprechenden Anleitung.
+> Wenn das Volume mit einer Instanz verbunden ist, müssen Sie es zuerst abtrennen, bevor Sie fortfahren. Weitere Informationen finden Sie in [diesem Abschnitt](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#volume-abtrennen) der entsprechenden Anleitung.
 >
 
 ### Über das Horizon-Interface
