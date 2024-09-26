@@ -69,7 +69,7 @@ Follow the steps in order by going through the following tabs:
 >> **AAAA record**<br><br>
 >> To identify the existing "AAAA" records, click on the filter menu at the top of the DNS records table and select `AAAA`.
 >>
->>![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-aaaa.png){.thumbnail}
 >>
 >> - Click the `...`{.action} button to the right of the table row for your single domain name, without a subdomain (e.g. `mydomain.ovh.`), then click `Delete record`{.action}.<br>
 >> - If a record for the “www” subdomain is present (e.g.: `www.mydomain.ovh.`), delete it as well so that it does not conflict with the CNAME record you enter in step 4. Click the `...`{.action} button to the right of the table row corresponding to your subdomain in “www” , then click `Delete record`{.action}.<br>
