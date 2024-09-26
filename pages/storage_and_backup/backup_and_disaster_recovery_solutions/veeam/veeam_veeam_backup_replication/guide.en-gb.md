@@ -1,7 +1,7 @@
 ---
-title: "Setting up Veeam Backup & Replication'
+title: "Setting up Veeam Backup & Replication"
 excerpt: "Find out how to set up a Veeam Backup & Replication server with Veeam Enterprise"
-updated: 2024-09-25
+updated: 2024-09-26
 ---
 
 ## Objective

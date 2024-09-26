@@ -1,205 +1,213 @@
 ---
-title: 'Instalar o Veeam Backup & Replication'
+title: 'Instalar o Veeam Backup & Replication (EN)'
 excerpt: 'Saiba como instalar um servidor Veeam Backup & Replication com Veeam Enterprise'
-updated: 2023-06-23
+updated: 2024-09-26
 ---
 
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
+## Objective
 
-## Sumário
+Veeam Backup & Replication is a data protection software. It offers its users a wide range of options for backing up, replicating and restoring their data.
 
-O Veeam Backup & Replication é um programa de proteção de dados, que oferece várias possibilidades de backup, replicação e restauro.
+**This guide explains how to set up a Veeam Backup & Replication server, then register it with an OVHcloud Veeam Enterprise licence server.**
 
-**Aprenda a instalar um servidor Veeam Backup & Replication e a registá-lo no nosso servidor de licenças Veeam Enterprise.**
+## Requirements
 
-## Requisitos
+- A [Veeam Enterprise solution](/links/hosted-private-cloud/veeam-enterprise)
+- Windows Server 2012 or a newer version
 
-- Dispor de um [serviço Veeam Enterprise](https://www.ovhcloud.com/pt/storage-solutions/veeam-enterprise/){.external}.
-- Dispor de máquina Windows Server 2012 ou uma versão mais recente.
+## Instructions
 
-## Instruções
+### Setting up Veeam Backup & Replication
 
-### Instalar o Veeam Backup & Replication
+Download the **Veeam Backup & Replication** solution from the [Veeam website](https://www.veeam.com/downloads.html?ad=top-sub-menu). If you do not have an account, you will need to set one up (account setup is free).
 
-Descarregue o programa **Veeam Backup & Replication** a partir do [site da Veeam](https://www.veeam.com/downloads.html?ad=top-sub-menu){.external}. Se não possui contas, será necessário criar uma (esta é gratuita).
+The file will appear in ISO disk image format. Once you have transferred it onto your server, select the server’s CD reader, then select the image.
 
-O ficheiro apresenta-se sob a forma de uma imagem de disco no formato ISO. Depois de o ter transferido para o servidor, selecione o leitor CD da máquina e escolha a imagem.
+On the server, you can then launch the installation wizard. Select `Veeam Backup & Replication (Install)`{.action}.
 
-Agora já pode executar o instalador na máquina. Selecione a opção `Veeam Backup & Replication Install`{.action}.
+![installation Veeam](images/veeamBandR_inst_01.png){.thumbnail}
 
-![Veeam Backup & Replication](images/veeamBandR_inst_01.png){.thumbnail}
+After you have read the licence agreement, accept the terms and click `Next`{.action}.
 
-Leia e aceite o contrato de licença e clique em `Next`{.action}.
+![terms conditions](images/veeamBandR_inst_02.png){.thumbnail}
 
-![Veeam Backup & Replication](images/veeamBandR_inst_02.png){.thumbnail}
+Click `Next`{.action} to skip the step of opening a licence file.
 
-Ignore a introdução do ficheiro de licença clicando em `Next`{.action}.
+![licence](images/veeamBandR_inst_03.png){.thumbnail}
 
-![Veeam Backup & Replication](images/veeamBandR_inst_03.png){.thumbnail}
+In the step where you select components to install, leave everything unchanged. However, depending on your requirements, you can change the destination path. Confirm by clicking `Next`{.action}.
 
-Na etapa de seleção dos componentes a instalar, não faça qualquer modificação. No entanto, se precisar, pode alterar o destino da instalação. A seguir, valide clicando em `Next`{.action}.
+![installation path](images/veeamBandR_inst_04.png){.thumbnail}
 
-![Veeam Backup & Replication](images/veeamBandR_inst_04.png){.thumbnail}
+The installation wizard will then carry out a requirement check. If you are working from a clean Windows installation, some components will be missing, but the installation wizard will download and install them automatically. Confirm by clicking `Next`{.action}.
 
-O instalador realizará uma análise dos requisitos. Se partir de uma instalação bruta de Windows, alguns componentes estarão em falta, mas não se preocupe: o instalador vai descarregar e instalar estes últimos de forma automática. A seguir, valide clicando em `Next`{.action}.
+![validation](images/veeamBandR_inst_05.png){.thumbnail}
 
-![Veeam Backup & Replication](images/veeamBandR_inst_05.png){.thumbnail}
+Next, wait for the missing components to be installed.
 
-Aguarde enquanto os requisitos são instalados.
+![installation](images/veeamBandR_inst_06.png){.thumbnail}
 
-![Veeam Backup & Replication](images/veeamBandR_inst_06.png){.thumbnail}
+Once the installations are complete, confirm the **Veeam Backup & Replication** setup by clicking `Next`{.action}.
 
-Após esta etapa, valide a instalação do **Veeam Backup & Replication** clicando em `Next`{.action}.
+![system check](images/veeamBandR_inst_07.png){.thumbnail}
 
-![Veeam Backup & Replication](images/veeamBandR_inst_07.png){.thumbnail}
+During the customisation stage of the setup, confirm the operation by clicking `Install`{.action}.
 
-Na etapa de personalização da instalação, aceite a configuração predefinida selecionando a opção `Install`{.action}.
+![customisation](images/veeamBandR_inst_08.png){.thumbnail}
 
-![Veeam Backup & Replication](images/veeamBandR_inst_08.png){.thumbnail}
+Next, wait for the installation to complete.
 
-Aguarde que a instalação seja finalizada.
+![progress bar](images/veeamBandR_inst_09.png){.thumbnail}
 
-![Veeam Backup & Replication](images/veeamBandR_inst_09.png){.thumbnail}
+Once it is complete, exit the installation wizard by clicking `Finish`{.action}.
 
-Quando esta for concluída, saia do instalador clicando em `Finish`{.action}.
+![finish install](images/veeamBandR_inst_10.png){.thumbnail}
 
-![Veeam Backup & Replication](images/veeamBandR_inst_10.png){.thumbnail}
-
-Será redirecionado para o assistente de instalação. Basta fechar a janela.
+You will be redirected to the launch wizard, simply close the window.
 
 <a name="create"></a>
 
-### Criar uma conta de serviço Veeam Enterprise
+### Creating a Veeam Enterprise service account
 
-#### Etapa 1 -  Criar a conta de serviço
+#### Step 1 - Launch a service account
 
-Em primeiro lugar, é necessário gerar uma palavra-passe **complexa**. Para isso, pode utilizar um gerador de palavras-passe.
+You will need to generate a **complex** password.
 
-Comece por lançar o Windows Powershell como administrador.
+To begin, launch Windows Powershell as an administrator.
 
-A seguir, crie uma conta de serviço introduzindo o seguinte comando a partir de um acesso de administrador:
+Next, create a service account, entering these lines of command:
 
 ```powershell
-New-LocalUser "OVHVeeamEnterprise" -Password (ConvertTo-SecureString -AsPlainText "P@ssword01" -Force) -Description "OVH Service Account for Veeam Enterprise" -PasswordNeverExpires:$true -UserMayNotChangePassword:$true -AccountNeverExpires:$true
+New-LocalUser "OVHVeeamEnterprise" -Password (ConvertTo-SecureString -AsPlainText "P@ssword01" -Force) -Description "OVHcloud Service Account for Veeam Enterprise" -PasswordNeverExpires:$true -UserMayNotChangePassword:$true -AccountNeverExpires:$true
 ```
 
-Tenha em atenção que o nome da conta e a palavra-passe correspondem a um exemplo, pelo que devem ser substituídos:
+Please note that the account name and password shown here are examples, and must be replaced with your own details:
 
-- Nome da conta: OVHVeeamEnterprise
-- Palavra-passe: P@ssword01
+- Account name: OVHVeeamEnterprise
+- Password: P@ssword01
 
-#### Etapa 2 - Definir as autorizações da conta de serviço
+#### Step 2 - Define the service account authorisations
 
-Abra a consola Veeam e conecte-se.
+Launch the Veeam console.
 
-![Veeam Backup & Replication](images/veeamBandR_use_12.png){.thumbnail}
+![veeam console](images/veeamBandR_use_12.png){.thumbnail}
 
-Verifique se está em modo **Community Edition** no canto inferior direito.
+Check that it is in **Community Edition** mode, in the bottom right-hand corner.
 
-![Veeam Backup & Replication](images/Veeamcommunity.png){.thumbnail}
+![free edition](images/Veeamcommunity.png){.thumbnail}
 
-No menu, clique em `Users and Roles`{.action}.
+Go to the menu, and click `Users and Roles`{.action}.
 
-![Veeam Backup & Replication](images/veeamBandR_conf_2.png){.thumbnail}
+![users and roles](images/veeamBandR_conf_2.png){.thumbnail}
 
-Na janela `Security`{.action}, selecione a opção `Add...`{.action}.
+In the `Security`{.action} window, select `Add...`{.action}.
 
-![Veeam Backup & Replication](images/veeamBandR_conf_3.png){.thumbnail}
+![security](images/veeamBandR_conf_3.png){.thumbnail}
 
-Na janela `Add User`{.action}, introduza a conta de serviço criada anteriormente. Selecione o papel **Veeam Backup Administrator** e valide clicando em `OK`{.action}.
+Then, in the "Add User" window, enter the service account name you have created. Select the **Veeam Backup Administrator** role and confirm by clicking `OK`{.action}.
 
-![Veeam Backup & Replication](images/veeamBandR_conf_4.png){.thumbnail}
+![add admin user](images/veeamBandR_conf_4.png){.thumbnail}
 
-Ao voltar à janela **Security**, pode verificar se a conta aparece.
+If you go back to the **Security** window, you can check that the account has been defined properly.
 
-![Veeam Backup & Replication](images/veeamBandR_conf_5.png){.thumbnail}
+![user added](images/veeamBandR_conf_5.png){.thumbnail}
 
-#### Etapa 3 - Autorizações de execução e de ativação
+#### Step 3 - Launch and Activation Permissions
 
-O utilizador OVHVeeamEnterprise só está acessível localmente. É necessário adicionar autorizações na interface gráfica Windows para ativar a ligação à distância.
+The OVHVeeamEnterprise user is only accessible locally, so it is necessary to add permissions in the Windows graphical user interface to enable the remote connection.
 
-Através da interface gráfica de utilizador:
+Via the graphical user interface:
 
-1. Na sua barra de pesquisa Windows, introduza `Component Services`{.action} e lance o serviço.
-2. No menu à esquerda e seguindo a arborescência, clique em `Component Services`{.action}, depois em `Computers`{.action} e depois em `My Computer`{.action}.
-3. À direita, no separador `Actions`{.action}, clique em `More Actions`{.action} e, a seguir, em `Properties`{.action}.
-4. Aceda à `COM Security`{.action} e, sob a segunda opção `Launch and Activation Permissions`{.action}, clique em `Edit Limits`{.action}. A seguir, clique em `Add...`{.action}.
+1. In your Windows search bar, type `Component Services`{.action} and launch the service.
+2. On the left menu and following the tree structure, click on `Component Services`{.action}, then on `Computers`{.action}, then on `My Computer`{.action}.
+3. On the right, under the `Actions`{.action} tab, click on `More Actions`{.action}, then on `Properties`{.action}.
+4. Go to `COM Security`{.action}, underneath the second section `Launch and Activation Permissions`{.action}, click on `Edit Limits`{.action}. Next, click on `Add...`{.action}.
 
 ![Launch and Activation Permissions](images/veeamuseradd.png){.thumbnail}
 
 <ol start="5">
- <li>Clique em <code class="action">Advanced...</code> para localizar a conta de serviço adicionada anteriormente. A seguir, clique em <code class="action">Find Now</code> e selecione o utilizador <code class="action">OVHVeeamEnterprise</code> na lista de utilizadores.</li>
+  <li>Click on <code class="action">Advanced</code> to locate the previously added service account and click on <code class="action">Find Now</code>. Select the <code class="action">OVHVeeamEnterprise</code> user from the list of users.</li>
 </ol>
 
 ![Launch and Activation Permissions](images/veeamuseradd1.png){.thumbnail}
 
 <ol start="6">
- <li>Clique em <code class="action">OK</code> para confirmar a seleção e em <code class="action">OK</code> para validar. De seguida, ative todas as permissões no utilizador <code class="action">OVHVeeamEnterprise</code>.</li>
+  <li>Click on <code class="action">OK</code> to confirm the selection, and on <code class="action">OK</code> to validate. Next, enable all permissions on the <code class="action">OVHVeeamEnterprise</code> user.</li>
 </ol>
 
 ![Launch and Activation Permissions](images/veeamuseradd3.png){.thumbnail}
 
 <ol start="7">
- <li>Clique em <code class="action">OK</code> para confirmar e <code class="action">Apply</code> para validar as alterações.</li>
+  <li>Click on <code class="action">OK</code> to confirm and on <code class="action">Apply</code> to validate the changes.</li>
 </ol>
 
-O seu utilizador OVHVeeamEnterprise está agora acessível local e à distância.
+Your OVHVeeamEnterprise user is now accessible locally and remotely.
 
-#### Etapa 4 - Registar o servidor Veeam Backup & Replication
+#### Step 4 - Register the Veeam Backup & Replication server
 
-##### Através da Área de Cliente OVHcloud
+#### From the OVHcloud Control Panel
 
-Ligue-se ao seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, aceda à secção Hosted Private Cloud {.ação} e selecione `Plataformas e serviços` {.ação}. De seguida, selecione o seu serviço **backupserverenterprise** e clique em `Ativar a licença`{.action} na secção `Atalho`.
+In your [OVHcloud Control Panel](/links/manager), open the `Hosted Private Cloud`{.action} section and select your service labelled **backupserverenterprise** from `Platforms and services`{.action}. On this page, click on `Activate license`{.action} in the `Shortcuts` box.
 
-Para configurar o seu ambiente, certifique-se de que abriu as portas da OVHcloud para os seus servidores Veeam Backup e Replication:
+To set up your environnement, make sure you have opened the ports from OVHcloud to your Veeam Backup and Replication servers:
 
-- `Porta 9392/TCP`
-- `Porta 9405/TCP`
+- `Port 9392/TCP`
+- `Port 9405/TCP`
 
-![installation Veeam](images/architecture.png){.thumbnail}
+![Veeam installation](images/architecture.png){.thumbnail}
 
-![Veeam Backup & Replication](images/veeam001.png){.thumbnail}
+![OVHcloud Control Panel](images/veeam001.png){.thumbnail}
 
-Na nova janela, introduza as seguintes informações:
+In the new opened window, enter the following information:
 
-- o endereço de IP público através do qual pode comunicar com o servidor **Veeam Backup & Replication**;
-- o nome de utilizador da conta criada anteriormente;
-- a palavra-passe da conta.
+- The public IP address through which your server **Veeam Backup & Replication** can be contacted.
+- The login for the service account you have created.
+- The password for the service account.
 
-Em seguida, confirme clicando em `OK`{.action}.
+Then confirm with `OK`{.action}.
 
-![Veeam Backup & Replication](images/veeam03.png){.thumbnail}
+![license activation](images/veeam03.png){.thumbnail}
 
-Quando a ativação estiver concluída, poderá encontrar as informações principais na página do serviço.
+Once you have activated it, you will find the main information on the service page.
 
-![Veeam Backup & Replication](images/veeam02.png){.thumbnail}
+![license activated](images/veeam02.png){.thumbnail}
 
-##### Com a API da OVHcloud
+**Updating login credentials via the OVHcloud Control Panel**:
 
-Para começar, obtenha o serviceName:
+To update your login credentials, you can use the `Update my information`{.action} button.
+
+![Update 1](images/veeam_update_cred.png){.thumbnail}
+
+In the window that pops up, inform the `IP`, `Username` and `Password`.
+
+Finally, click `OK`{.action}.
+
+![Update 2](images/veeam_update_cred_2.png){.thumbnail}
+
+#### Using the OVHcloud API
+
+First, retrieve your serviceName:
 
 > [!api]
 >
 > @api {v1} /veeam/veeamEnterprise GET /veeam/veeamEnterprise
 >
 
-De seguida, faça o registo:
+Then register it:
 
 > [!api]
 >
 > @api {v1} /veeam/veeamEnterprise POST /veeam/veeamEnterprise/{serviceName}/register
 >
 
-Necessitará das seguintes informações:
+You will need the following information:
 
-- o endereço de IP público através do qual pode comunicar com o servidor **Veeam Backup & Replication**;
-- a porta do servidor **Veeam Backup & Replication** (normalmente, **9392/TCP**);
-- o nome de utilizador da conta criada anteriormente;
-- a palavra-passe da conta.
+- the public IP address that can be used to contact your **Veeam Backup & Replication** server
+- your server’s **Veeam Backup & Replication** port (usually **9392/TCP**)
+- the login for the account you have just created
+- the password for your service account
 
-Pode obter da seguinte forma o endereço de IP público utilizado pelo Veeam Enterprise para comunicar com o servidor **Veeam Backup & Replication**:
+You can retrieve the public IP used by Veeam Enterprise to contact your **Veeam Backup & Replication** server via:
 
 > [!api]
 >
@@ -207,29 +215,51 @@ Pode obter da seguinte forma o endereço de IP público utilizado pelo Veeam Ent
 >
 
 > [!primary]
-> A ativação do seu servidor Veeam Backup & Replication pode levar algumas horas.
+> The activation of your Veeam Backup & Replication server can take several hours.
 
-#### Etapa 5 - Verificar o registo
+**Updating login credentials via the API**:
 
-Abra a consola Veeam e conecte-se.
+> [!api]
+>
+> @api {v1} /veeam/veeamEnterprise POST /veeam/veeamEnterprise/{serviceName}/update
+>
 
-![Veeam Backup & Replication](images/veeamBandR_use_12.png){.thumbnail}
+> **Settings**:
+>
+> `serviceName`: Your service name, e.g. `pcc-XXX-XXX-XXX-XXX`
+>
 
-No menu, clique em `License`{.action}.
+Example of **REQUEST BODY** required:
 
-![Veeam Backup & Replication](images/veeamBandR_lic_1.png){.thumbnail}
+```json
+{
+  "ip": "192.0.2.0",
+  "password": "XXX",
+  "username": "string"
+}
+```
 
-Verifique que a informação apresentada corresponde à sua licença da OVHcloud.
+#### Step 5 - Verify the registration
 
-Se correu tudo bem deve ver "Edition: Enterprise Plus".
+Launch the Veeam console.
+
+![console veeam](images/veeamBandR_use_12.png){.thumbnail}
+
+Go to the menu, then click `License`{.action}.
+
+![open menu](images/veeamBandR_lic_1.png){.thumbnail}
+
+Check that the information displayed is definitely for your OVHcloud licence.
+
+If everything went fine you should see "Edition: Enterprise Plus".
 
 > [!primary]
-> Agora pode desativar o utilizador que criou para criar o registo.
+> You can now disable the user that you have created to create the registration.
 
-![Veeam Backup & Replication](images/veeamBandR_lic_2.png){.thumbnail}
+![licence OVHcloud](images/veeamBandR_lic_2.png){.thumbnail}
 
-## Quer saber mais?
+## Go further
 
-Fale com a nossa comunidade de utilizadores no Discord: <https://discord.gg/ovhcloud>
+If you require training or technical support to implement our solutions, please contact your Technical Account Manager or visit [this page](/links/professional-services) to get a quote and request a custom analysis of your project from our Professional Services team experts.
 
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
