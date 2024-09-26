@@ -21,7 +21,7 @@ Notre infrastructure vous permet également de configurer l'IPv6 sur vos machine
 ## Prérequis
 
 - Disposer d’un [serveur dédié](/links/bare-metal/bare-metal) disposant d'un bloc IPv6 (/64) ou (/56) dans votre compte OVHcloud.
-- Avoir installez un système d'exploitation permettant la virtualisation (Proxmox, ESXi, Hyper-V etc..).
+- Avoir installez un système d'exploitation permettant la virtualisation (Proxmox, Hyper-V etc..).
 - Avoir toutes les informations relatives à votre IPv6 (préfix, passerelle...).
 - Avoir des connaissances de base en SSH et en réseau.
 
@@ -36,7 +36,7 @@ Avant de débuter, et afin d’utiliser les mêmes terminologies durant les mani
 |Terme|Description|Exemple|
 |---|---|---|
 |YOUR_IPV6|Il s'agit d'une adresse IPv6 du bloc IPv6 attribué à votre serveur|2607:5300:xxxx:xxxx::1|
-|IPv6_PREFIX|Il s'agit du préfixe (ou *netmask*) de votre bloc IPv6, généralement de 64|2607:5300:xxxx:xxxx::/64|
+|IPv6_PREFIX|Il s'agit du préfixe (ou *netmask*) de votre bloc IPv6, généralement de 64 ou /56|2607:5300:xxxx:xxxx::/64|
 |IPv6_GATEWAY|Il s'agit de la passerelle (ou *gateway*) de votre bloc IPv6|2607:5300:xxxx:ff:ff:ff:ff:ff ou fe80::1|
 
 Dans nos exemples, nous utiliserons l'éditeur de texte `nano`. Vous pouvez bien entendu utiliser l'éditeur de texte de votre choix.
@@ -81,11 +81,9 @@ IPv6_GATEWAY : `2607:5300:60:62FF:00FF:00FF:00FF:00FF` peut aussi être écrit c
 
 #### Pour une machine virtuelle
 
-Before you begin, make sure you have uploaded the ISO image to use for the installation of the VM.
+La première étape consiste à créer la machine virtuelle dans Proxmox.
 
-The first step is to create the virtual machine in Proxmox.
-
-Once you are connected to the Proxmox dashboard, click on your server's name in the left-corner, then on `Create VM`{.action}.
+Une fois connecté au tableau de bord Proxmox, cliquez sur le nom de votre serveur dans le coin gauche, puis sur `Créer VM`{.action}.
 
 ![create vm](images/create_vm_proxmox.png){.thumbnail}
 
@@ -94,29 +92,29 @@ Once you are connected to the Proxmox dashboard, click on your server's name in 
 > [!tabs]
 > **General**
 >>
->> **Name:** Enter a name for your VM.<br><br>
+>> **Name:** Renseignez un nom pour votre VM.<br><br>
 >>![create vm](images/create-vm-name.png){.thumbnail}<br>
 >> 
 > **OS**
->> Click on the drop down arrow next to `ISO image` to select the image of your choice. In our exmaple, we are using ubuntu 24.04 ISO.<br><br>
+>> Cliquez sur la flèche déroulante à côté de `ISO image` pour sélectionner l'image de votre choix. Dans notre exemple, nous utilisons ubuntu 24.04 ISO.<br><br>
 >>![iso image](images/select-iso.png){.thumbnail}<br>
 >>
 > **Confirm**
 >>
->> Once done, click on `Finish`{.action} to create the VM<br><br>
+>> Une fois fait, cliquez sur `Finish`{.action} pour créer la VM.<br><br>
 >>![create vm](images/create-vm.png){.thumbnail}<br>
 
-Once the virtual machine has been created, the next step is to launch it and proceed with the installation of the operating system. During the installation of the OS, make sure you do not configure the network.
+Une fois la machine virtuelle créée, l’étape suivante consiste à la lancer et à procéder à l’installation du système d’exploitation.
 
-**Ubuntu et Debian 12**
+**Ubuntu et Debian 12** **(netplan)**
 
-Once you are connected to your virtual machine, the first step is to access the configuration file
+Une fois connecté à votre machine virtuelle, la première étape consiste à accéder au fichier de configuration :
 
 ```bash
 sudo nano /etc/netplan/50-cloud-init.yaml
 ```
 
-Next, configure the IPv6 address of your choice, replacing *YOUR_IPV6*, *IPV6_PREFIX* and *IPV6_GATEWAY* with your own values.
+Ensuite, configurez l'adresse IPv6 de votre choix en remplaçant *YOUR_IPV6*, *IPV6_PREFIX* et *IPV6_GATEWAY* par vos propres valeurs.
 
 ```yaml
 network:
@@ -133,19 +131,21 @@ network:
     version: 2
 ```
 
-To test the connectivity of your IPv6, run the `ping` command:
+Pour tester la connectivité de votre IPv6, exécutez la commande `ping` à l'adresse `2001:4860:4860::8888` :
 
 ![ping](images/ping-debian.png){.thumbnail}<br>
 
-**Debian**
+**Debian** **(network interfaces)**
 
-Once you are connected to your virtual machine, the first step is to access the configuration file
+La configuration ci-dessous est basée sur Debian 11.
+
+Une fois connecté à votre machine virtuelle, la première étape consiste à accéder au fichier de configuration:
 
 ```bash
 sudo nano /etc/network/interfaces
 ```
 
-Next, configure the IPv6 address of your choice, replacing *YOUR_IPV6*, *IPV6_PREFIX* and *IPV6_GATEWAY* with your own values. Replace `ens18` with your own values
+Ensuite, configurez l'adresse IPv6 de votre choix en remplaçant *YOUR_IPV6*, *IPV6_PREFIX* et *IPV6_GATEWAY* par vos propres valeurs. Remplacez `ens18` par le nom de votre interface.
 
 ```console
 auto lo
@@ -157,18 +157,60 @@ address YOUR_IPV6/IPV6_PREFIX
 gateway IPV6_GATEWAY
 ```
 
-Once done, restart the network with the following command:
+Une fois fait, redémarrez le réseau avec la commande suivante :
 
 ```bash
 sudo systemctl restart networking.service
 ```
 
-To test the connectivity of your IPv6, run the `ping` command:
+Pour tester la connectivité de votre IPv6, exécutez la commande `ping` à l'adresse `2001:4860:4860::8888` :
 
 ![ping](images/ping-debian.png){.thumbnail}
 
 
-**Almalinux, Rocky Linux and CentOS**
+**Almalinux, Rocky Linux et Fedora** **(NetworkManager)**
+
+La configuration ci-dessous est basée sur Fedora 40.
+
+Fedora ainsi que les dernières versions d'Almalinux et de Rocky Linux utilisent maintenant des fichiers clés. NetworkManager a précédemment stocké des profils réseau au format ifcfg dans ce répertoire : `/etc/sysconfig/network-scripts/`. Cependant, le format ifcfg est désormais déconseillé. Par défaut, NetworkManager ne crée plus de profils dans ce format. Le fichier de configuration se trouve maintenant dans `/etc/NetworkManager/system-connections/`.
+
+Une fois connecté à votre machine virtuelle, la première étape consiste à accéder au fichier de configuration :
+
+```bash
+sudo /etc/NetworkManager/system-connections
+```
+
+Utilisez la commande `ls` pour afficher le fichier de configuration réseau. Dans notre exemple, notre fichier s'appelle `ens18.nmconnection`.
+
+![ls](images/ping-debian.png){.thumbnail}
+
+Ensuite, configurez l'adresse IPv6 de votre choix en remplaçant *YOUR_IPV6*, *IPV6_PREFIX* et *IPV6_GATEWAY* par vos propres valeurs.
+
+```bash
+sudo nano /etc/NetworkManager/system-connections/ens18.nmconnections
+```
+
+```bash
+[ipv6]
+method=manual # si la valeur est "auto", remplacez par "manual".
+may-fail=true
+address=YOUR_IPV6/IPv6_PREFIX
+gateway=2607:5300:xxxx:xxff:ff:ff:ff:ff
+```
+
+Une fois fait, redémarrez le réseau avec la commande suivante :
+
+```bash
+sudo systemctl restart NetworkManager
+```
+
+Pour tester la connectivité de votre IPv6, exécutez la commande `ping` à l'adresse `2001:4860:4860::8888` :
+
+![ping](images/ping-debian.png){.thumbnail}
+
+**CentOS**
+
+The configuration below is based on CentOS 9 stream.
 
 #### Pour un conteneur
 
@@ -187,3 +229,6 @@ Once done, click on `OK`{.action} to save the changes.
 Connect to your container to verify the IPv6 connectivity with the `ping` command:
 
 ![ping](images/ping-container.png){.thumbnail}
+
+### Configuration sur Hyper-V
+
