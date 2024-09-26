@@ -119,7 +119,7 @@ If you are already subscribing to a **Performance** offer, refer to [method 2](#
 You can also migrate your data to a new database:
 
 - Order a larger [database service](https://www.ovh.co.uk/cloud/cloud-databases/) if necessary, then [create the new database](/pages/web_cloud/web_hosting/sql_create_database);
-- [Duplicate the content of the old database](/pages/web_cloud/web_hosting/copy_database) in the new **or** perform an [export of your data](/pages/web_cloud/web_hosting/sql_database_export), then [import your data](/pages/web_cloud/web_hosting/sql_importing_mysql_database) in the new database;
+- [Duplicate the content of the old database](/pages/web_cloud/web_hosting/copy_database) to the new database **or** perform an [export of your data](/pages/web_cloud/web_hosting/sql_database_export), then [import your data](/pages/web_cloud/web_hosting/sql_importing_mysql_database) in the new database;
 - Integrate the credentials of the new database into the [configuration file](#config_file) of your site.
 
 > [!primary]
@@ -161,7 +161,7 @@ In this situation, you can increase the [amount of RAM](/pages/web_cloud/web_clo
 > 
 > To detach the database, log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action}. Click `Hosting plans`{.action}, then choose the web hosting plan that has the database activated.
 >
-> In the `Configuration` box, click the `...`{.action} button to the right of the `Web Cloud Databases` mention, then click the `Detach`{.action} button.
+> In the `Configuration` box, click the `...`{.action} button to the right of `Web Cloud Databases`, then click the `Detach`{.action} button.
 > 
 
 You can also optimise your database by following the instructions of our guide "[Configuring your database server](/pages/web_cloud/web_cloud_databases/configure-database-server#managing-your-databases)".
