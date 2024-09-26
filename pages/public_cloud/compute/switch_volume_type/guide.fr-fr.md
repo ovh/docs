@@ -1,7 +1,7 @@
 ---
 title: Modifier un Volume Block Storage
 excerpt: "Découvrez comment changer le type d'un volume block storage en utilisant Openstack"
-updated: 2023-08-03
+updated: 2024-09-26
 ---
 
 ## Objectif
@@ -20,6 +20,10 @@ Lors de la modification d'un type de volume Block Storage en un volume « High s
 Par défaut, la politque de migration est définie sur `Never` car le volume reste sur le même cluster CEPH. Cependant, pour le « High speed gen2 », le volume devra être migré vers un nouveau cluster.
 
 Cette modification peut être réalisée via Horizon ou via l’interface de ligne de commande OpenStack.
+
+> [!warning]
+> Si le volume est attaché à une Instance, vous devez d'abord le détacher avant de continuer. Pour plus d'informations, consultez [cette section](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#detacher-un-volume) du guide correspondant.
+>
 
 ### Depuis l'interface Horizon
 
