@@ -164,7 +164,7 @@ Nesta situação, pode aumentar a [quantidade de memória RAM](/pages/web_cloud/
 >
 > Para aumentar a RAM, o Web Cloud Databases não deve ser ativado através de um alojamento Performance. Se deseja aumentar a quantidade de memória RAM de uma base de dados incluída nas [ofertas performance](/links/web/hosting-performance-offer){.external}, primeiro tem de a desassociar.
 > 
-> Para desassociar a base de dados, aceda à [Área de Cliente OVHcloud]((/links/manager) e selecione `Web Cloud`{.action}. Clique em `Alojamentos`{.action} e escolha o alojamento web no qual o Web Cloud Databases está ativo.
+> Para desassociar a base de dados, aceda à [Área de Cliente OVHcloud](/links/manager) e selecione `Web Cloud`{.action}. Clique em `Alojamentos`{.action} e escolha o alojamento web no qual o Web Cloud Databases está ativo.
 >
 > Na zona `Configuration`, clique em as o `...`{.action} à direita da menção `Web Cloud Databases`, e clique no botão `Desassociar`{.action}.
 >
