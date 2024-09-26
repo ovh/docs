@@ -22,7 +22,7 @@ Par défaut, la politque de migration est définie sur `Never` car le volume res
 Cette modification peut être réalisée via Horizon ou via l’interface de ligne de commande OpenStack.
 
 > [!warning]
-> Si le volume est attaché à une Instance, vous devez d'abord le détacher avant de continuer. Pour plus d'informations, consultez [cette section](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#détacher-un-volume) du guide correspondant.
+> Si le volume est attaché à une Instance, vous devez d'abord le détacher avant de continuer. Pour plus d'informations, consultez [cette section](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#detacher-un-volume) du guide correspondant.
 >
 
 ### Depuis l'interface Horizon
