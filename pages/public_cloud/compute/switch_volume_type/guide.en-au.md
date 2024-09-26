@@ -21,6 +21,10 @@ The migration policy is set by default to `Never` as the volume stays on the sam
 
 This modification can be made via Horizon or the Openstack CLI.
 
+> [!warning]
+> If the block storage volume is attached to an Instance, you must first detach it before proceeding. For more information, consult [this section](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#detach-a-volume) of the corresponding guide.
+>
+
 ### From the Horizon Interface
 
 Log in to the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/) and make sure you are in the correct region. You can verify this on the top left corner. 

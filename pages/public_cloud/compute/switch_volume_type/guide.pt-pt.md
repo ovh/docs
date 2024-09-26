@@ -25,6 +25,10 @@ Por predefinição, a política de migração está definida para `Never`, uma v
 
 Esta alteração pode ser realizada através da interface Horizon ou através da interface de linha de comandos OpenStack.
 
+> [!warning]
+> Se o volume estiver associado a uma Instância, deve desligá-lo antes de continuar. Para obter mais informações, consulte [esta secção](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#desassociar-um-volume) no respetivo manual.
+>
+
 ### A partir da interface Horizon
 
 Conecte-se à [interface Horizon](https://horizon.cloud.ovh.net/auth/login/) e certifique-se de que está na região correta. Pode verificar isto no canto superior esquerdo. 

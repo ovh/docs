@@ -25,6 +25,10 @@ Domyślnie polityka migracji jest ustawiona na `Never`, ponieważ wolumin pozost
 
 Modyfikacja ta może zostać przeprowadzona za pośrednictwem interfejsu Horizon lub interfejsu wiersza polecenia OpenStack.
 
+> [!warning]
+> Jeśli wolumin jest podłączony do instancji, przed kontynuowaniem odłącz go. Aby uzyskać więcej informacji, zapoznaj się z [tą sekcją](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#odłącz-wolumen) w odpowiednim przewodniku.
+>
+
 ### Zarządzanie w interfejsie Horizon
 
 Zaloguj się do [interfejsu Horizon](https://horizon.cloud.ovh.net/auth/login/) i upewnij się, że jesteś we właściwej lokalizacji. Można to sprawdzić w lewym górnym rogu. 

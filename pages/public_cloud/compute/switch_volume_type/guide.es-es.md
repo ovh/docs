@@ -25,6 +25,10 @@ Por defecto, la política de migración se establece en `Never`, ya que el volum
 
 Esta modificación puede realizarse a través de Horizon o a través de la interfaz de línea de comandos OpenStack.
 
+> [!warning]
+> Si el volumen está asociado a una instancia, deberá desvincularlo antes de continuar. Para obtener más información, consulte la guía [esta sección](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#desvincular-un-volumen).
+>
+
 ### Horizon
 
 Conéctese a [Horizon](https://horizon.cloud.ovh.net/auth/login/) y asegúrese de estar en la zona correcta. Puede comprobarlo en la parte superior izquierda. 
