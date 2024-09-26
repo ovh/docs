@@ -79,7 +79,7 @@ Follow the steps in order by going through the following tabs:
 >> **TXT record**<br><br>
 >> To identify existing “TXT” records, click the filter menu at the top of the DNS records table and select `TXT`.
 >>
->>![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-txt.png){.thumbnail}
+>> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-txt.png){.thumbnail}
 >>
 >> - If there are "TXT" records for the domain name alone (e.g. `mydomain.ovh.`) and for its subdomain in www (e.g. `www.mydomain.ovh.`), delete them so that they do not conflict with the CNAME record you enter in step 4. Click the `...`{.action} button to the right of the table row corresponding to your subdomain in “www” , then click `Delete record`{.action}.<br>
 >> - You must create a record of type “TXT”. Click on the `Add record`{.action} button in the top right-hand corner of your screen and select the `TXT`{.action} “Pointing field”.
