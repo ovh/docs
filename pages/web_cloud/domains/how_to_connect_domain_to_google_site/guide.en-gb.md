@@ -1,7 +1,7 @@
 ---
 title: "How to connect an OVHcloud domain name to a Google Site"
 excerpt: "Prepare and configure your OVHcloud domain name’s DNS zone to connect to a Google Site"
-updated: 2024-09-25
+updated: 2024-09-26
 ---
 
 ## Objective
