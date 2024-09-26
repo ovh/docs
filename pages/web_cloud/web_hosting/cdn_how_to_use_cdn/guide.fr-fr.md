@@ -255,7 +255,7 @@ Pour accéder aux statistiques du CDN, effectuez les actions suivantes :
 4. Sélectionnez l'hébergement web concerné.
 5. Sur la page qui s'affiche, cliquez sur l'onglet `Statistiques et logs`{.action}.
 6. Dans la partie `Statistiques de visites`, cliquez sur le bouton `Voir les statistiques`{.action}.
-7. Vous êtes redirigé sur l'outil **OVHcloud Web Statistics**. Sur l'outil, cliquez sur le formulaire intitulé `Sélection du domaine` situé en haut de page, puis choisissez un nom de domaine pour lequel le CDN est actif.
+7. Vous êtes redirigé vers l'outil **OVHcloud Web Statistics**. Dans cet outil, cliquez sur le formulaire intitulé `Sélection du domaine`{.action} situé en haut de la page, puis choisissez un nom de domaine pour lequel le CDN est actif.
 8. Dans la colonne de droite, cliquez sur l'onglet `Cache`{.action}.
 
 Vous visualisez désormais les statistiques du CDN pour votre nom de domaine.
