@@ -1,7 +1,7 @@
 ---
 title: "Génération des logs des comptes OVHcloud avec Logs Data Platform"
 excerpt: "Découvrez comment transférer les logs des comptes clients OVHcloud vers Logs Data Platform"
-updated: 2024-02-29
+updated: 2024-09-26
 ---
 
 ## Objectif

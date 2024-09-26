@@ -1,7 +1,7 @@
 ---
 title: Generating OVHcloud account logs with Logs Data Platform (EN)
 excerpt: Find out how to forward OVHcloud customer account logs to Logs Data Platform
-updated: 2024-02-29
+updated: 2024-09-26
 ---
 
 ## Objective
