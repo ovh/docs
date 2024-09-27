@@ -251,9 +251,20 @@ Po skonfigurowaniu reguł i wybraniu opcji kliknij `Zastosuj konfigurację`{.act
 
 ### Wyświetl statystyki usługi CDN
 
-W zakładce `MultiSite`{.action} Twojego hostingu, w tabeli możesz wyświetlić statystyki usługi CDN, wskazując liczbę zapytań na minutę zmierzonych w tym CDN.
+Aby uzyskać dostęp do statystyk usługi CDN, wykonaj następujące czynności:
 
-![GeoCache](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/statistics.png){.thumbnail}
+1. Zaloguj się do [Panelu klienta OVHcloud](/links/manager).
+2. W wierszu u góry Panelu klienta kliknij zakładkę `Web Cloud`{.action}.
+3. W lewej kolumnie kliknij menu rozwijane `Hosting`{.action}.
+4. Wybierz odpowiedni hosting.
+5. Na stronie, która się wyświetli kliknij zakładkę `Statystyki i logi`{.action}.
+6. W sekcji `Statystyki odwiedzin na stronie` kliknij przycisk `Wyświetl statystyki`{.action}.
+7. Zostaniesz przekierowany do narzędzia **OVHcloud Web Statistics**. W tym narzędziu kliknij na formularz `Wybór domeny`{.action} znajdujący się na górze strony, następnie wybierz nazwę domeny, dla której aktywny jest CDN.
+8. W prawej kolumnie kliknij zakładkę `Cache`{.action}.
+
+Teraz wyświetlasz statystyki usługi CDN dla swojej domeny.
+
+Jeśli potrzebujesz więcej informacji, zapoznaj się z przewodnikiem "[Hosting - sprawdzanie statystyk i logów strony www](/pages/web_cloud/web_hosting/logs_and_statistics)".
 
 ### Jak przenieść pliki do pamięci cache w usłudze GeoCache?
 
