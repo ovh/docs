@@ -1,7 +1,7 @@
 ---
 title: 'Configurer le réseau sur Proxmox VE'
 excerpt: 'Découvrez comment configurer le réseau sur Proxmox VE'
-updated: 2024-08-21
+updated: 2024-09-27
 ---
 
 > [!primary]
@@ -198,7 +198,7 @@ ssh PUB_IP_DEDICATED_SERVER
 >>     bridge-stp off
 >>     bridge-fd 0
 >>     up ip route add ADDITIONAL_IP/32 dev vmbr0
->>     up ip route add ADDITIONAL_IP_BLOCK/28 dev vmbr0 
+>>     up ip route add ADDITIONAL_IP_BLOCK/28 dev vmbr0
 >> ```
 
 À ce stade, relancez les services réseau ou redémarrez le serveur :
@@ -233,7 +233,7 @@ Lorsque vous redémarrez les services réseau, les bridges (vmbr0 par exemple) p
 >> 
 > Ubuntu
 >> Contenu du fichier `/etc/netplan/01-$iface.yaml` :
->> 
+>>
 >> ```yaml
 >> network:
 >>   version: 2
@@ -264,7 +264,7 @@ ADDITIONAL_IP    				# doit retourner votre additional ip
 
 > [!primary]
 >
-> Il peut s'avérer nécessaire de redémarrer vos machines virtuelles pour que la configuration soit prise en compte.
+> Il peut s'avérer nécessaire de redémarrer les services réseau pour que la configuration soit prise en compte.
 
 ### Additional IP via le vRack
 
