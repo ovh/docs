@@ -288,7 +288,7 @@ Verifique o nome do servidor a inscrever no seu [Área de Cliente OVHcloud](/lin
 
 Dispor de um servidor [Web Cloud Databases](/products/web-cloud-clouddb) permite-lhe [ligar às suas bases de dados](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server) a partir do seu computador ou de um servidor externo à infraestrutura da OVHcloud.
 
-Se esta ligação se revelar impossível, comece por verificar que autorizou [o seu endereço IP público](/pages/web_cloud/web_databases/starting_with_clouddb) a ligar-se ao servidor de bases de dados.
+Se esta ligação se revelar impossível, comece por verificar que autorizou [o seu endereço IP público](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) a ligar-se ao servidor de bases de dados.
 
 Se esta operação tiver sido realizada com sucesso, contacte o seu Fornecedor de Serviços Internet (ISP) ou [parceiros da OVHcloud](/links/partner). Nesta situação, não poderemos fornecer-lhe assistência.
 
