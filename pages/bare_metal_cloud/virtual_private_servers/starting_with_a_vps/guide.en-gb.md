@@ -243,7 +243,7 @@ Please note that if you have selected a **distribution with application** (Plesk
 
 #### Windows distribution
 
-#### Step 1 : Finalize the Windows installation
+##### Step 1 : Finalize the Windows installation
 
 After the Windows operating system is installed, you receive an email with the account name of the default `Windows user`.
 
