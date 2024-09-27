@@ -188,6 +188,8 @@ ssh PUB_IP_DEDICATED_SERVER
 >> iface enp8s0f0np0 inet static
 >>     address PUB_IP_DEDICATED_SERVER/32
 >>     gateway 100.64.0.1
+>>     post-up echo 1 > /proc/sys/net/ipv4/ip_forward
+>>     post-up echo 1 > /proc/sys/ipv4/enp8s0f0np0/proxy_arp
 >> 
 >> auto vmbr0
 >> iface vmbr0 inet static
@@ -195,8 +197,8 @@ ssh PUB_IP_DEDICATED_SERVER
 >>     bridge-ports none
 >>     bridge-stp off
 >>     bridge-fd 0
->>     up ip route add ADDITIONAL_IP/32 dev $IFACE
->>     up ip route add ADDITIONAL_IP_BLOCK/28 dev $IFACE  
+>>     up ip route add ADDITIONAL_IP/32 dev vmbr0
+>>     up ip route add ADDITIONAL_IP_BLOCK/28 dev vmbr0 
 >> ```
 
 À ce stade, relancez les services réseau ou redémarrez le serveur :
@@ -230,13 +232,13 @@ Lorsque vous redémarrez les services réseau, les bridges (vmbr0 par exemple) p
 >> ```
 >> 
 > Ubuntu
->> Contenu du fichier `/etc/netplan/01-eth0.yaml` :
+>> Contenu du fichier `/etc/netplan/01-$iface.yaml` :
 >> 
 >> ```yaml
 >> network:
 >>   version: 2
 >>   ethernets:
->>     eth0:
+>>     $iface:
 >>       addresses:
 >>         - 192.168.0.3/24
 >>         - ADDITIONAL_IP/32 
@@ -259,6 +261,10 @@ Pour vérifier votre IP publique, depuis la VM :
 curl ifconfig.io
 ADDITIONAL_IP    				# doit retourner votre additional ip
 ```
+
+> [!primary]
+>
+> Il peut s'avérer nécessaire de redémarrer vos machines virtuelles pour que la configuration soit prise en compte.
 
 ### Additional IP via le vRack
 
