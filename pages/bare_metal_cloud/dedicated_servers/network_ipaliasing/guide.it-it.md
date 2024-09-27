@@ -1,7 +1,7 @@
 ---
 title: Configurare un Alias IP
 excerpt: 'Scopri come aggiungere uno o più Additional IP alla tua configurazione'
-updated: 2024-09-26
+updated: 2024-09-27
 ---
 
 > [!primary]
