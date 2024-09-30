@@ -1,5 +1,6 @@
 ---
 title: Comment changer mon offre xDSL/FTTH
+excerpt: "Découvrez comment modifier votre offre d'accès Internet depuis votre espace client OVHcloud"
 updated: 2024-09-30
 ---
 
@@ -11,7 +12,7 @@ Vous pouvez faire évoluer votre offre xDSL/FTTH afin de pouvoir accéder à de 
 
 - Disposer d'un accès xDSL/FTTH actif.
 - Disposer d'une offre éligible au changement d'offre.
-- Être connecté à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Télécom` :
+- Être connecté à l’[espace client OVHcloud](/links/manager), partie `Télécom` :
 
 ![espace client Telecom Accès Internet](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-01-fr-internet.png){.thumbnail}
 
@@ -33,7 +34,7 @@ Lors d'un changement d'offre vers les nouvelles offres FTTH Pro et xDSL Pro, vou
 
 ### Changer d’offre
 
-La demande de changement d'offre s'effectue via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).<br>
+La demande de changement d'offre s'effectue via votre [espace client OVHcloud](/links/manager).<br>
 Dans l'onglet `Télécom`{.action}, sélectionnez la rubrique `Accès Internet`{.action} puis choisissez le pack que vous souhaitez faire évoluer.<br>
 Cliquez ensuite sur `Changer d'offre`{.action} dans le cadre « Informations Générales ».
 
@@ -76,7 +77,7 @@ Lisez les contrats, cochez la case afin de les accepter puis cliquez sur le bout
 Comptez un délai d'une heure pour que le changement soit effectif, sauf pour les cas particuliers suivants :
 
 - en cas de remplacement du modem. Un délai de livraison de 24 à 48 heures est alors à prendre en compte suite à l'expédition du modem.
-- en cas de changement de collecte (Un changement physique au niveau de la ligne qui implique une demande auprès de l'opérateur de collecte). Un délai moyen de 7 à 10 jours peut alors être constaté, ainsi qu'une coupure probable du service.
+- en cas de changement de collecte (un changement physique au niveau de la ligne qui implique une demande auprès de l'opérateur de collecte). Un délai moyen de 7 à 10 jours peut alors être constaté, ainsi qu'une coupure probable du service.
 
 Suivant votre offre actuelle, un remplacement du modem peut s'avérer nécessaire. Cela vous sera indiqué lors du choix de votre nouvelle offre.
 
