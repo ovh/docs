@@ -14,11 +14,11 @@ updated: 2024-09-23
 
 ## Objective
 
-In this tutorial we are explaining how to use services on OVHcloud Managed Kubernetes service to expose your app by getting external traffic into your cluster. We will begin by listing the main methods to expose Kubernetes services outside the cluster, with its advantages and disadvantages. Then we will see a complete example of `LoadBalancer` service deployment.
+In this tutorial we are explaining how to use services on OVHcloud Managed Kubernetes service to expose your app by getting external traffic into your cluster. We will begin by listing the main methods to expose Kubernetes services outside the cluster, with their advantages and disadvantages. Then we will see a complete example of `LoadBalancer` service deployment.
 
 ## Before you begin
 
-This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-hello-world).
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-hello-world).
 
 > [!warning]
 > When a **LoadBalancer** Service resource is created inside a Managed Kubernetes cluster, a Load Balancer for a Managed Kubernetes Service is automatically created, allowing public access to your Kubernetes application.
@@ -26,11 +26,11 @@ This tutorial presupposes that you already have a working OVHcloud Managed Kuber
 
 ## Some concepts: ClusterIP, NodePort, Ingress and LoadBalancer
 
-When you begin to use Kubernetes for real applications, one of the first questions is how to get external traffic into your cluster. The [official doc](https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types){.external} gives you a good but rather dry explanation on the topic, but here we are trying to explain the concepts in a minimal, need-to-know way.
+When you begin to use Kubernetes for real applications, one of the first questions is how to get external traffic into your cluster. The [official doc](https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types){.external} gives you a good but rather dry explanation of the topic, but here we are trying to explain the concepts in a minimal, need-to-know way.
 
 There are several ways to route the external traffic into your cluster:
 
-- Using Kubernetes proxy and `ClusterIP`: The default Kubernetes `ServiceType` is `ClusterIP`, that exposes the `Service` on a cluster-internal IP. To reach the `ClusterIP` from an external source, you can open a Kubernetes proxy between the external source and the cluster. Its is usually only used for development.
+- Using Kubernetes proxy and `ClusterIP`: The default Kubernetes `ServiceType` is `ClusterIP`, which exposes the `Service` on a cluster-internal IP. To reach the `ClusterIP` from an external source, you can open a Kubernetes proxy between the external source and the cluster. It is usually only used for development.
 
 - Exposing services as `NodePort`: Declaring a `Service` of type `NodePort` exposes the service on each Node’s IP at a static port (the `NodePort`). You can then access the `Service` from the outside of the cluster by requesting `<NodeIp>:<NodePort>`. It can be used for production, with some limitations.
 
@@ -38,7 +38,7 @@ There are several ways to route the external traffic into your cluster:
 
 ### Using Kubernetes proxy and ClusterIP
 
-The default Kubernetes `ServiceType` is `ClusterIP`, that exposes the `Service` on a cluster-internal IP. To reach the `ClusterIP` from an external computer, you can open a Kubernetes proxy between the external computer and the cluster.
+The default Kubernetes `ServiceType` is `ClusterIP`, which exposes the `Service` on a cluster-internal IP. To reach the `ClusterIP` from an external computer, you can open a Kubernetes proxy between the external computer and the cluster.
 
 You can use `kubectl` to create such a proxy. When the proxy is up, you're directly connected to the cluster, and you can use the `Services` internal IP (ClusterIP).
 
@@ -55,7 +55,7 @@ Declaring a service of type `NodePort` exposes the `Service` on each Node’s IP
 It's rather cumbersome to use `NodePort` `Services` in production. As you are using non-standard ports, you often need to set up an external load balancer that listens on standard ports and redirects the traffic to the `<NodeIp>:<NodePort>`.
 
 > [!warning]
-> In our OVHcloud Managed Kubernetes you have an easy way to access `NodePort` services. You need to get the *nodes* URL, an URL solving via round-robin DNS to one random node of your cluster. As `NodePort` services are exposed in the same port on every Node, you can use this *nodes* URL to access them.
+> In our OVHcloud Managed Kubernetes you have an easy way to access `NodePort` services. You need to get the *nodes* URL, a URL solving via round-robin DNS to one random node of your cluster. As `NodePort` services are exposed in the same port on every Node, you can use this *nodes* URL to access them.
 >
 > In order to get the nodes URL, you get the *control plane* URL (the one given on `kubectl cluster-info`) and add the `nodes` element between the first and the second element of the URL
 >
@@ -68,7 +68,7 @@ It's rather cumbersome to use `NodePort` `Services` in production. As you are us
 > Metrics-server is running at https://xxxxxx.c1.gra9.k8s.ovh.net/api/v1/namespaces/kube-system/services/https:metrics-server:/proxy
 > ```
 >
-> In this case the *nodes* URL will be `https://xxxxxx.nodes.c1.gra9.k8s.ovh.net` and a service deployed on NodePort 30123 can be accessed on `https://xxxxxx.nodes.c1.gra9.k8s.ovh.net:30123`.
+> In this case, the *nodes* URL will be `https://xxxxxx.nodes.c1.gra9.k8s.ovh.net` and a service deployed on NodePort 30123 can be accessed on `https://xxxxxx.nodes.c1.gra9.k8s.ovh.net:30123`.
 
 > [!warning]
 > If your OVHcloud Managed Kubernetes is connected to a vRack, the `NodePort` is only exposed on your private subnet. So you have to check your private IPs on your nodes in your Nodepool and connect via one of these private IPs.
