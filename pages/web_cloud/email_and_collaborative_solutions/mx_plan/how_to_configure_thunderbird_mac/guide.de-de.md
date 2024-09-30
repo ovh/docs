@@ -1,5 +1,5 @@
 ---
-title: 'MX Plan - Konfigurieren Sie Ihr E-Mail-Konto in Thunderbird für macOS'
+title: 'MX Plan - Konfiguration Ihrer E-Mail-Adresse in Thunderbird für macOS'
 excerpt: 'Erfahren Sie hier, wie Sie Ihren Mailaccount in Thunderbird für macOS einrichten'
 updated: 2021-08-26
 ---
