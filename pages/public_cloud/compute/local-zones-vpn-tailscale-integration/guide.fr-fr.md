@@ -6,7 +6,7 @@ updated: 2024-09-24
 
 ## Objectif
 
-Supposons que vous ayez des instances Public Clous dans différentes zones locales OVHcloud, comme Prague et Madrid, et que vous ayez besoin de les connecter en toute sécurité. Au lieu de mettre en place une infrastructure VPN complexe, vous pouvez utiliser Tailscale, qui s'appuie sur WireGuard, pour créer facilement un réseau maillé crypté entre vos instances. Ceci est particulièrement utile pour les développeurs, les systèmes distribués ou les communications sécurisées entre les régions.
+Supposons que vous ayez des instances Public Cloud dans différentes zones locales OVHcloud, comme Prague et Madrid, et que vous ayez besoin de les connecter en toute sécurité. Au lieu de mettre en place une infrastructure VPN complexe, vous pouvez utiliser Tailscale, qui s'appuie sur WireGuard, pour créer facilement un réseau maillé crypté entre vos instances. Ceci est particulièrement utile pour les développeurs, les systèmes distribués ou les communications sécurisées entre les régions.
 
 Cette fonctionnalité vous permet de :
 
