@@ -1,5 +1,5 @@
 ---
-title: 'Konfiguration Ihrer E-Mail-Adresse auf iPhone oder iPad'
+title: "MX Plan - Konfigurieren Sie Ihr E-Mail-Konto in Mail für iPhone und iPad"
 excerpt: 'Erfahren Sie hier, wie Sie eine MX Plan Adresse auf iPhone oder iPad einrichten'
 updated: 2022-07-20
 ---

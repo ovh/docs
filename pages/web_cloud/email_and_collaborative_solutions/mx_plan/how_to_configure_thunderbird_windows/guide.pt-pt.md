@@ -1,5 +1,5 @@
 ---
-title: 'Configurar um endereço de e-mail no Thunderbird para Windows'
+title: 'MX Plan - Configure sua conta de e-mail no Thunderbird para macOS'
 excerpt: 'Encontre aqui as informações para configurar o seu endereço de e-mail no Thunderbird.'
 updated: 2021-08-26
 ---

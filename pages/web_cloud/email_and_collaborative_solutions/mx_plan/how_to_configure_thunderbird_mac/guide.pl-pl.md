@@ -1,5 +1,5 @@
 ---
-title: 'Konfiguracja konta e-mail w programie Thunderbird na urządzeniu z systemem macOS'
+title: 'MX Plan - Skonfiguruj swoje konto e-mail w programie Thunderbird dla systemu macOS'
 excerpt: 'Informacje dotyczące konfiguracji Twojego konta e-mail w programie Thunderbird znajdują się tutaj.'
 updated: 2021-08-26
 ---

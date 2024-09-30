@@ -1,5 +1,5 @@
 ---
-title: 'Configuring an email address on Thunderbird for macOS'
+title: 'MX Plan - Configure your email account on Thunderbird for macOS'
 excerpt: 'Find out how to configure your email address in Thunderbird'
 updated: 2021-08-26
 ---

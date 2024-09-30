@@ -169,6 +169,10 @@ Pour comprendre la différence entre l'utilisation du protocole POP et IMAP, nou
 
 ## Aller plus loin
 
+> [!primary]
+>
+> Pour plus d'informations sur la configuration d'une adresse e-mail depuis l'application Gmail sur Android, consultez [le centre d'aide de Google](https://support.google.com/mail/answer/6078445?hl=fr-CA&co=GENIE.Platform%3DAndroid#zippy=%2Cajouter-un-compte).
+
 [Configurer son compte E-mail Pro sur Android via l'application Gmail](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_android).
 
 [Configurer son compte Exchange sur Android via l'application Gmail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_android).

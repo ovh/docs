@@ -1,5 +1,5 @@
 ---
-title: 'Configurer son adresse e-mail sur Courrier pour Windows 10'
+title: 'MX Plan - Configurer son compte e-mail sur Courrier pour Windows'
 excerpt: "Apprenez à configurer votre adresse e-mail MX Plan sur l'application Courrier pour Windows"
 updated: 2018-04-04
 ---
@@ -89,8 +89,12 @@ Si vous êtes amené à renseigner manuellement des champs techniques dans les p
 Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
 
 OVHcloud propose une application web permettant d'accéder à votre adresse e-mail depuis votre navigateur internet accessible sur l’adresse [Webmail](/links/web/email). Vous pouvez vous y connecter grâce aux identifiants relatifs à votre adresse e-mail.
- 
+
 ## Aller plus loin
+
+> [!primary]
+>
+> Pour plus d'informations sur la configuration d'une adresse e-mail depuis le client de messagerie Courrier sur Windows, consultez [le centre d'aide de Mircrosoft](https://support.microsoft.com/fr-fr/office/configurer-l-e-mail-dans-l-application-courrier-7ff79e8b-439b-4b47-8ff9-3f9a33166c60).
 
 [Configurer son compte E-mail Pro sur l'application Courrier pour Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10)
 

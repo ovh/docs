@@ -1,5 +1,5 @@
 ---
-title: 'Konfiguration Ihrer E-Mail-Adresse auf macOS Mail'
+title: "MX Plan - Konfigurieren Sie Ihr E-Mail-Konto in Mail für macOS"
 updated: 2022-06-13
 ---
 

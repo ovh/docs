@@ -1,6 +1,6 @@
 ---
-title: 'Konfiguration Ihrer E-Mail-Adresse auf der Windows 10 Mail App'
-excerpt: 'Hier erfahren Sie, wie Sie Ihre MX Plan E-Mail-Adresse auf der Mail App von Windows 10 einrichten'
+title: 'MX Plan : Konfigurieren Sie Ihr E-Mail-Konto in Courrier für Windows'
+excerpt: 'Hier erfahren Sie, wie Sie Ihre MX Plan E-Mail-Adresse auf der Mail App von Windows einrichten'
 updated: 2018-04-04
 ---
 

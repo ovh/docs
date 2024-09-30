@@ -1,5 +1,5 @@
 ---
-title: Configurare un indirizzo email su Thunderbird per Windows
+title: Configura il tuo account di posta elettronica su Thunderbird per Windows
 excerpt: Trovi qui le informazioni per configurare il tuo indirizzo email su Thunderbird.
 updated: 2021-08-26
 ---

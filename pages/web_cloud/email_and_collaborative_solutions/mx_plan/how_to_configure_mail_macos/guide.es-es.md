@@ -1,5 +1,5 @@
 ---
-title: 'Configurar una cuenta de correo electrónico en Mail de macOS'
+title: 'MX Plan - Configure su cuenta de correo electrónico en Mail para macOS'
 updated: 2022-06-13
 ---
 

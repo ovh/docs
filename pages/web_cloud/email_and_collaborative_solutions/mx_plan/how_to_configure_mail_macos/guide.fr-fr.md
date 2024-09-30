@@ -1,5 +1,5 @@
 ---
-title: 'Configurer son adresse e-mail sur Mail de macOS'
+title: 'MX Plan - Configurer son compte e-mail sur Mail pour macOS'
 updated: 2022-06-13
 ---
 
@@ -79,5 +79,9 @@ Dans le cadre d'une configuration en **POP**, les valeurs sont les suivantes:
 >
 
 ## Aller plus loin
+
+> [!primary]
+>
+> Pour plus d'informations sur la configuration d'une adresse e-mail depuis l'application Outlook sur macOS, consultez [le centre d'aide Microsoft](https://support.microsoft.com/fr-fr/office/add-an-email-account-to-outlook-for-mac-6aeec61b-86af-40af-8ffe-985d0fc82ddb).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
