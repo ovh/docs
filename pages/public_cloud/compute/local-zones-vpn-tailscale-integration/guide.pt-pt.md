@@ -6,7 +6,7 @@ updated: 2024-09-24
 
 ## Objective
 
-Suppose you have Public Clous instances in different OVHcloud Local Zones, such as Prague and Madrid, and you need to securely connect them. Instead of setting up a complex VPN infrastructure, you can use Tailscale, which leverages WireGuard, to easily create an encrypted mesh network between your instances. This is particularly useful for developers, distributed systems, or secure cross-region communications.
+Suppose you have Public Cloud instances in different OVHcloud Local Zones, such as Prague and Madrid, and you need to securely connect them. Instead of setting up a complex VPN infrastructure, you can use Tailscale, which leverages WireGuard, to easily create an encrypted mesh network between your instances. This is particularly useful for developers, distributed systems, or secure cross-region communications.
 
 This feature allows you to:
 
