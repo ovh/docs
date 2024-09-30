@@ -1883,16 +1883,68 @@
     + [Bring your own IP (BYOIP)](network-byoip)
         + [How to use the Bring Your Own IP feature](network/bring_your_own_ip/bring-your-own-IP)
     + [Additional IP](network-additional-ip)
-        + [Getting started](network-additional-ip-getting-started)
-        + [Basic configuration](network-additional-ip-basic-configuration)
-        + [Concepts](network-additional-ip-concepts)
-        + [Migration](network-additional-ip-migration)
-        + [Tutorials](network-additional-ip-tutorials)
-        + [Security](network-additional-ip-security)
-        + [Support & Troubleshooting](network-additional-ip-support-and-troubleshoothing)
-        + [Additional resources](network-additional-ip-additional-resources)
-            + [Configuring an IPv6 block in a vRack](bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack)
-            + [Cancelling an Additional IP service](network/additional_ip/additional-IP-cancellation)
+        + [Cloud / Dedicated Server (bare metal)](network-additional-ip)
+            + https://help.ovhcloud.com/csm/en-dedicated-servers-network-ipv6?id=kb_article_view&sysparm_article=KB0043765
+            + https://help.ovhcloud.com/csm/en-dedicated-servers-proxmox-network-hg-scale?id=kb_article_view&sysparm_article=KB0043913
+        + [SAP on OVHcloud ](network-additional-ip)
+            + https://help.ovhcloud.com/csm/en-sap-hana-dedicated-server-sap-as-hpc?id=kb_article_view&sysparm_article=KB0057371
+        + [Network and security solutions ](network-additional-ip)
+            + https://help.ovhcloud.com/csm/en-load-balancer-iplb-faq?id=kb_article_view&sysparm_article=KB0044151
+        + [Bring your own IP (BYOIP)](network-additional-ip)
+            + https://help.ovhcloud.com/csm/en-ie-network-bring-your-own-ip?id=kb_article_view&sysparm_article=KB0044851
+        + [Load Balancer ](network-additional-ip)
+            + https://help.ovhcloud.com/csm/en-load-balancer-api-details?id=kb_article_view&sysparm_article=KB0044234
+            + https://help.ovhcloud.com/csm/en-load-balancer-loadbalancer-introduction?id=kb_article_view&sysparm_article=KB0044251
+            + https://help.ovhcloud.com/csm/en-load-balancer-using-iplb?id=kb_article_view&sysparm_article=KB0044226
+            + https://help.ovhcloud.com/csm/en-load-balancer-routing-foip?id=kb_article_view&sysparm_article=KB0044205
+            + https://help.ovhcloud.com/csm/en-load-balancer-routes?id=kb_article_view&sysparm_article=KB0044190
+        + [Reversibility](network-additional-ip)
+            + https://help.ovhcloud.com/csm/en-ie-reversibility-dedicated-servers-reversibility-policy?id=kb_article_view&sysparm_article=KB0062175
+        + [Virtual Private Servers](network-additional-ip)
+            + https://help.ovhcloud.com/csm/en-ie-vps-network-ipaliasing?id=kb_article_view&sysparm_article=KB0047586
+        + [Public Cloud Network Services](network-additional-ip)
+            + https://help.ovhcloud.com/csm/en-ie-public-cloud-network-buy-additional-ip?id=kb_article_view&sysparm_article=KB0050098
+            + https://help.ovhcloud.com/csm/en-ie-public-cloud-network-additional-ip-vs-floating-ip?id=kb_article_view&sysparm_article=KB0050162
+            + https://help.ovhcloud.com/csm/en-ie-public-cloud-network-concepts?id=kb_article_view&sysparm_article=KB0050139
+            + https://help.ovhcloud.com/csm/en-ie-public-cloud-network-configure-additional-ip?id=kb_article_view&sysparm_article=KB0050247
+            + https://help.ovhcloud.com/csm/en-ie-public-cloud-network-import-additional-ip?id=kb_article_view&sysparm_article=KB0050107
+            + https://help.ovhcloud.com/csm/en-public-cloud-network-migrate-additional-ip?id=kb_article_view&sysparm_article=KB0050129
+        + [Dedicated Servers](network-additional-ip)
+            + https://help.ovhcloud.com/csm/en-ie-dedicated-servers-network-virtual-mac?id=kb_article_view&sysparm_article=KB0043806
+            + https://help.ovhcloud.com/csm/en-ie-dedicated-servers-network-bridging?id=kb_article_view&sysparm_article=KB0043736
+            + https://help.ovhcloud.com/csm/en-ie-dedicated-servers-configure-an-ipv6-in-a-vrack?id=kb_article_view&sysparm_article=KB0062826
+            + https://help.ovhcloud.com/csm/en-ie-dedicated-servers-network-ipaliasing?id=kb_article_view&sysparm_article=KB0043752
+            + https://help.ovhcloud.com/csm/en-ie-dedicated-servers-esxi-network-hg-scale?id=kb_article_view&sysparm_article=KB0043420
+            + https://help.ovhcloud.com/csm/en-ie-dedicated-servers-proxmox-network-hg-scale?id=kb_article_view&sysparm_article=KB0043909
+            + https://help.ovhcloud.com/csm/en-ie-dedicated-servers-hyperv-network-hg-scale?id=kb_article_view&sysparm_article=KB0043583
+            + https://help.ovhcloud.com/csm/en-ie-dedicated-servers-firewall-network?id=kb_article_view&sysparm_article=KB0043450
+            + https://help.ovhcloud.com/csm/en-ie-dedicated-servers-getting-started-dedicated-server-eco?id=kb_article_view&sysparm_article=KB0043490
+            + https://help.ovhcloud.com/csm/en-dedicated-servers-migrate-data-between-servers?id=kb_article_view&sysparm_article=KB0043700
+            + https://help.ovhcloud.com/csm/en-network-security-dashboard?id=kb_article_view&sysparm_article=KB0060700
+            + https://help.ovhcloud.com/csm/en-dedicated-servers-ip-fo-move?id=kb_article_view&sysparm_article=KB0043711
+            + https://help.ovhcloud.com/csm/en-dedicated-servers-optimise-email-sending?id=kb_article_view&sysparm_article=KB0043640
+            + https://help.ovhcloud.com/csm/en-dedicated-servers-game-ddos-firewall?id=kb_article_view&sysparm_article=KB0060680
+            + https://help.ovhcloud.com/csm/en-dedicated-servers-foip-vrack-hyperv?id=kb_article_view&sysparm_article=KB0043621
+            + https://help.ovhcloud.com/csm/en-dedicated-servers-pfsense-bridging?id=kb_article_view&sysparm_article=KB0043897
+        + [Compute](network-additional-ip) 
+            + https://help.ovhcloud.com/csm/en-ie-public-cloud-compute-essential-information?id=kb_article_view&sysparm_article=KB0050387
+            + https://help.ovhcloud.com/csm/en-ie-public-cloud-compute-delete-project?id=kb_article_view&sysparm_article=KB0038416
+            + https://help.ovhcloud.com/csm/en-ie-public-cloud-compute-faq?id=kb_article_view&sysparm_article=KB0050751
+            + https://help.ovhcloud.com/csm/en-ie-public-cloud-compute-getting-started?id=kb_article_view&sysparm_article=KB0051014
+        + [VMware on OVHcloud](network-additional-ip)
+            + https://help.ovhcloud.com/csm/en-ie-vmware-add-ip-block?id=kb_article_view&sysparm_article=KB0045314
+            + https://help.ovhcloud.com/csm/en-ie-vmware-associate-email-vsphere-user?id=kb_article_view&sysparm_article=KB0046425
+        + [Managed Bare Metal](network-additional-ip)
+            + https://help.ovhcloud.com/csm/en-ie-managed-bare-metal-add-ip-block?id=kb_article_view&sysparm_article=KB0044472
+            + https://help.ovhcloud.com/csm/en-ie-managed-bare-metal-associate-email-vsphere-user?id=kb_article_view&sysparm_article=KB0044801
+            + https://help.ovhcloud.com/csm/en-managed-bare-metal-control-panel-ovhcloud?id=kb_article_view&sysparm_article=KB0044493
+        + [Nutanix on OVHcloud](network-additional-ip)
+            + https://help.ovhcloud.com/csm/en-ie-nutanix-public-ip?id=kb_article_view&sysparm_article=KB0045015
+            + https://help.ovhcloud.com/csm/en-ie-nutanix-metro-availability?id=kb_article_view&sysparm_article=KB0045190
+            + https://help.ovhcloud.com/csm/en-nutanix-high-level-documentation?id=kb_article_view&sysparm_article=KB0044890
+            + https://help.ovhcloud.com/csm/en-nutanix-ovh-gateway-documentation?id=kb_article_view&sysparm_article=KB0045003
+        + [Configuring an IPv6 block in a vRack](bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack)
+        + [Cancelling an Additional IP service](network/additional_ip/additional-IP-cancellation)
     + [Network and Security](network-security)
         + [Monitoring DDoS attacks with the Network Security Dashboard](bare_metal_cloud/dedicated_servers/network_security_dashboard)
     + [OVHcloud Connect](products/network-ovhcloud-connect)
