@@ -140,6 +140,12 @@ To prevent any conflict, we advise you to keep `DHCP` service running in your pr
 > If you create your subnet via the [OVHcloud APIv6](https://api.ovh.com/console/#/cloud/project/{serviceName}/network/private/{networkId}/subnet#POST), please ensure that this option `noGateway` is checked if you do not have a gateway on this subnet. Not doing so will result in faulty services of type LoadBalancer.
 >
 
+> [!warning]
+> If your cluster has been created using an Openstack Private Network, you should not change this private network's name nor the network's subnet name. 
+Indeed, the Openstack Cloud Controller Manager (CCM) is using the network name to create private network connectivity inside the cluster to link nodes to the private network.
+Changing either the private network name or the network's subnet name can cause unavailability of the scheduler as the node is labaled as 'NotSchedulable' and thus, pods cannot be scheduled anymore on 'NotSchedulable' labeled nodes.
+>
+
 ### Known not compliant IP ranges
 
 The following subnets are not compliant with the `vRack` feature and can generate some incoherent behaviours with our used overlay networks:
