@@ -251,9 +251,20 @@ Una volta configurate le regole e selezionate le opzioni, clicca su `Applica la 
 
 ### Visualizza le statistiche della CDN
 
-Nella scheda `Multisito`{.action} del tuo hosting, sotto la tabella, puoi visualizzare le statistiche della tua CDN, indicando il numero di richieste al minuto misurate su di esso.
+Per accedere alle statistiche della CDN, esegui queste operazioni:
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/statistics.png){.thumbnail}
+1. Accedi allo [Spazio Cliente OVHcloud](/links/manager).
+2. Nella riga superiore dello Spazio Cliente, clicca sulla scheda `Web Cloud`{.action}.
+3. Nella colonna di sinistra, clicca sul menu a tendina `Hosting`{.action}.
+4. Seleziona il tuo hosting Web.
+5. Clicca sulla scheda `Statistiche e log`{.action}.
+6. Nella sezione `Statistiche delle visite`, clicca sul pulsante `Visualizza le statistiche`{.action}.
+7. Sei reindirizzato allo strumento **OVHcloud Web Statistics**. Con questo strumento, clicca sul form intitolato `Selezione del dominio`{.action} situato nella parte superiore della pagina e seleziona un dominio con la CDN attiva.
+8. Nella colonna di destra, clicca sulla scheda `Cache`{.action}.
+
+Visualizzi le statistiche della CDN per il tuo dominio.
+
+In caso di necessità, consulta la nostra guida "[Hosting Web - Consultare le statistiche e i log di un sito Web](/pages/web_cloud/web_hosting/logs_and_statistics)" per maggiori informazioni.
 
 ### In che modo è possibile conservare in cache i file nella CDN?
 
