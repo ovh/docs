@@ -145,22 +145,25 @@ Retrouvez ci-dessous une comparaison des fonctionnalités fournies par OVHcloud 
 
 ### Étape 3 - Les limitations VMware CLoud Director on OVHcloud
 
-| Offres                   | Standard | Advanced | Premium | Comments                                                                                                                                                           |
-|--------------------------|----------|----------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| vCPU                     | 12       | 12       | 12      | - Number of CPU possible (per VM)                                                                                                                                  |
-| RAM                      | 128      | 128      | 128     | - Number of RAM possible  (per VM, minimum 0.5 Go)                                                                                                                 |
-| Network Card (per VM)    | 10       | 	10	     | 10      | - Network card limite available per VM for VCD on OVHcloud                                                                                                         |
-| Storage (To)             | 1.5      | 1.5      | 1.5     | - Storage size limitation (per VM on VMFS/NFS/vSAN)                                                                                                                |
-| Network Cards	           | 5        | 10	      | 10      | - Number of network cards possible  (per VM limitations)                                                                                                           |        
-| VMs (per vApp)	          | 128	     | 128	     | 128     | - Virtual machines per vApp                                                                                                                                        |
-| Snapshot usage (per VM)	 | 32	      | 32	      | 32	| - The snapshot limitation is 32 snapshot per VM and can be limited further if needed (for cost purposes)                                                           |
-| Edge Gateway (per Org)   | 	32 	    | 32 	     | 32	     | - Number of  Edge Gateway possible  (per Org limitations)                                                                                                          |
-| VMs                      | 	2000	   | 4000	    | 4000	   | - Number of VM possible (per Org limitations)                                                                                                                      |
- | VMs (per instance)       | 	20 000  |          |         | - The maximum number of virtual machines in a single VMware Cloud Director instance. This overrides the number of virtual machines that are supported on-premises. |
-| VMs (per  VCD instance)  | 	20 000  | 	20 000	 | 20 000	 | - The maximum number of virtual machines in a single VMware Cloud Director instance. This overrides the number of virtual machines that are supported on-premises  |
-| vApps (per VCD instance) | 	40 000	 | 40 000	  | 40 000	 | - The maximum number of vApp in a single VMware Cloud Director instance                                                                                            |
-| vApps (per Org)          | 10 000   | 10 000   | 10 000  | - The maximum number of vApps in an organization                                                                                                                   |
-| Catalogs 	               | 10 000   | 	10 000	 | 10 000  | - The total number of catalogs in all organizations.                                                                                                               |
+| Limites / Offres                | Standard | Advanced | Premium | Comments                                                                                                                                                           |
+|:--------------------------------|:--------:|:--------:|:-------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| vCPU                            |    12    |    12    |   12    | - Number of CPU possible (per VM)                                                                                                                                  |
+| RAM                             |   128    |   128    |   128   | - Number maximum of RAM possible (per VM, min 0.5 Go)                                                                                                              |
+| Network Card                    |    10    |   	10	   |   10    | - Network card limite available (per VM) for VCD on OVHcloud                                                                                                       |
+| Storage                         |   1.5    |   1.5    |   1.5   | - Storage size limitation in To (per VM on VMFS/NFS/vSAN)                                                                                                          |
+| Network Cards	                  |    5     |   10	    |   10    | - Number of network cards authorized (per VM limitations)                                                                                                          |        
+| VMs	                            |   128	   |   128	   |   128   | - Virtual machines numbers authorized per vApp (per vApp)	                                                                                                         |
+| Snapshot usage	                 |   32	    |   32	    |   32	   | - The snapshot limitation is 32 snapshot per VM and can be limited further if needed (for cost purposes)                                                           |
+| Edge Gateway                    |  	32 	   |   32 	   |   32	   | - Number of  Edge Gateway possible  (per Org limitations)                                                                                                          |
+| VMs                             |  	2000	  |  4000	   |  4000	  | - Number of VM possible (per Org limitations)                                                                                                                      |
+| VMs (per instance)              | 	20 000  |          |         | - The maximum number of virtual machines in a single VMware Cloud Director instance. This overrides the number of virtual machines that are supported on-premises. |
+| VMs (per  VCD instance)         | 	20 000  | 	20 000	 | 20 000	 | - The maximum number of virtual machines in a single VMware Cloud Director instance. This overrides the number of virtual machines that are supported on-premises  |
+| vApps                           | 	40 000	 | 40 000	  | 40 000	 | - The maximum number of vApp in a single VMware Cloud Director instance (per VCD instance)                                                                         |
+| vApps                           |  10 000  |  10 000  | 10 000  | - The maximum number of vApps in an organization (per org).                                                                                                        |
+| Catalogs 	                      |  10 000  | 	10 000	 | 10 000  | - The total number of catalogs in all organizations.                                                                                                               |
+| Resource pools per provider VDC |   	64	   |   64	    |   64    | The number of top-level resource pools per provider VDC.                                                                                                           |
+| Media	                          |  5000	   |  5000	   |  5000   | The total number of media files in all catalogs.                                                                                                                   |
+| Catalogs 	                      | 10 000	  | 10 000	  | 10 000  | The total number of catalogs in all organizations.                                                                                                                 |
 
 ## Aller plus loin
 
