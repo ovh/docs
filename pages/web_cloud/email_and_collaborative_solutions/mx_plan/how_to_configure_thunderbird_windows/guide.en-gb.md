@@ -73,4 +73,8 @@ If your email account has already been set up and you need to access the account
 
 ## Go further <a name="gofurther"></a>
 
+> [!primary]
+>
+> Configure an account manuallyFor more information on configuring an email address from the Thunderbird app on Windows, see [the Mozilla Help Center](https://support.mozilla.org/en-US/kb/manual-account-configuration#thunderbird:win10:tb115)
+
 Join our community of users on <https://community.ovh.com/en/>.

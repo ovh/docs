@@ -80,6 +80,10 @@ Eine OVHcloud Webanwendung, mit der Sie über Ihren Webbrowser auf Ihre E-Mail-A
  
 ## Weiterführende Informationen
 
+> [!primary]
+>
+> Weitere Informationen zum Konfigurieren einer E-Mail-Adresse über den Mail-Client unter Windows finden Sie im [Microsoft Help Center](https://support.microsoft.com/de-de/office/configure-l-mail-in-l-mail-application-mail-7ff79e8b-439b-4b47-8ff9-3f9a33166c60).
+
 [Konfiguration von E-Mail Pro auf der Windows Mail App](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10)
 
 [Konfiguration von Exchange auf der Windows Mail App](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_windows_10)

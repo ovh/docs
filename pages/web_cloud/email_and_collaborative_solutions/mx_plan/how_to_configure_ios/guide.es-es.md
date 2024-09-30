@@ -79,6 +79,10 @@ OVHcloud ofrece una aplicación web con la que podrá acceder a su dirección de
 
 ## Más información
 
+> [!primary]
+>
+> Para obtener más información sobre cómo configurar una dirección de correo electrónico desde la aplicación Mail en iOS, visite [el Centro de ayuda de Apple](https://support.apple.com/es-es/102619).
+
 [Configurar una cuenta Exchange en iPhone o iPad](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_ios)
 
 [Configurar una cuenta Email Pro en iPhone o iPad](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_ios)

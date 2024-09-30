@@ -84,8 +84,12 @@ Se precisar de inserir manualmente alguns dados técnicos nas preferências da c
 Depois de configurar o endereço de e-mail, só falta utilizá-lo! Pode desde já enviar e receber mensagens.
 
 A OVHcloud oferece uma aplicação web que permite aceder ao seu endereço de e-mail a partir do seu browser acessível no endereço [Webmail](/links/web/email). Para aceder, só precisa dos dados de acesso relativos ao seu endereço de e-mail.
- 
+
 ## Quer saber mais?
+
+> [!primary]
+>
+> Para obter mais informações sobre a configuração de um endereço de e-mail a partir do cliente de e-mail Mail no Windows, consulte [Centro de Ajuda da Microsoft](https://support.microsoft.com/pt-pt/office/configurar-o-e-mail-na-aplica%C3%A7%C3%A3o-correio-7ff79e8b-439b-4b47-8ff9-3f9a33166c60).
 
 [Configurar uma conta E-mail Pro na aplicação Correio para Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10)
 

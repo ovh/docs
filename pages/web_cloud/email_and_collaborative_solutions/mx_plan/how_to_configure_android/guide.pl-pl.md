@@ -173,6 +173,10 @@ Aby zrozumieć różnicę między używaniem protokołu POP i IMAP, rozbijemy el
 
 ## Sprawdź również
 
+> [!primary]
+>
+> Aby uzyskać więcej informacji na temat konfigurowania konta e-mail z poziomu aplikacji Gmail na urządzeniu z systemem Android, zobacz [Centrum pomocy Google](https://support.google.com/mail/answer/6078445?hl=pl-CA&co=GENIE.Platform%3DAndroid#zippy=-odaj-konto).
+
 [Konfiguracja konta E-mail Pro na urządzeniu z systemem Android przy użyciu aplikacji Gmail](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_android).
 
 [Konfiguracja konta Exchange na urządzeniu z systemem Android przy użyciu aplikacji Gmail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_android).

@@ -82,8 +82,12 @@ Se hai necessità di inserire manualmente le preferenze per il tuo account, ecco
 Una volta configurato l’indirizzo email, non ti resta che utilizzarlo: da questo momento puoi infatti inviare e ricevere messaggi.
 
 OVHcloud propone un’applicazione Web per accedere al tuo account email direttamente dal tuo browser, disponibile alla pagina [Webmail](/links/web/email) e accessibile con le credenziali del tuo account.
- 
+
 ## Per saperne di più
+
+> [!primary]
+>
+> Per ulteriori informazioni sulla configurazione di un indirizzo e-mail dal client di posta Posta in Windows, vedere [Guida in linea di Microsoft](https://support.microsoft.com/fr-fr/office/configurare-l-e-mail-nell-applicazione-posta-7ff79e8b-439b-4b47-8ff9-3f9a33166c60).
 
 [Configurare un account E-mail Pro nell’applicazione Posta per Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10)
 

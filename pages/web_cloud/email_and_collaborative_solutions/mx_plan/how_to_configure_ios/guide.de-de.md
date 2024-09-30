@@ -78,6 +78,10 @@ OVHcloud bietet auch eine Webanwendung an, mit der Sie über Ihren Webbrowser au
 
 ## Weiterführende Informationen
 
+> [!primary]
+>
+> Weitere Informationen zum Einrichten einer E-Mail-Adresse über die Mail App auf iOS finden Sie im [Apple Help Center](https://support.apple.com/de-de/102619).
+
 [Konfiguration von Exchange auf iPhone oder iPad](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_ios)
 
 [Konfiguration von E-Mail Pro auf iPhone oder iPad](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_ios)

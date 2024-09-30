@@ -78,4 +78,8 @@ Jeśli Twoje konto e-mail zostało już skonfigurowane i musisz mieć dostęp do
 
 ## Sprawdź również
 
+> [!primary]
+>
+> Ręczna konfiguracja kontaAby uzyskać więcej informacji na temat konfigurowania konta e-mail z poziomu aplikacji Thunderbird w systemie Windows, skorzystaj z [Centrum pomocy Mozilli](https://support.mozilla.org/pl/kb/reczna-konfiguracja-konta#thunderbird:mac:tb115)
+
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

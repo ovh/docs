@@ -5,6 +5,7 @@ updated: 2021-08-26
 ---
 
 > [!primary]
+>
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
@@ -15,6 +16,7 @@ MX Plan Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingericht
 **Diese Anleitung erklärt, wie Sie Ihre MX Plan E-Mail-Adresse auf Windows einrichten.**
 
 > [!warning]
+>
 > In dieser Anleitung erläutern wir die Verwendung einer oder mehrerer OVHcloud Lösungen mit externen Tools. Die durchgeführten Aktionen werden in einem bestimmten Kontext beschrieben. Denken Sie daran, diese an Ihre Situation anzupassen.
 >
 > Wir empfehlen Ihnen jedoch, sich bei Schwierigkeiten an einen [spezialisierten Dienstleister](/links/partner) zu wenden, und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
@@ -77,5 +79,9 @@ Wenn Ihr E-Mail-Account bereits eingerichtet ist und Sie auf die Account-Einstel
 ![Thunderbird](images/thunderbird-win-mxplan06.png){.thumbnail}
 
 ## Weiterführende Informationen <a name="gofurther"></a>
+
+> [!primary]
+>
+> Weitere Informationen zum Einrichten einer E-Mail-Adresse über die Thunderbird-App in Windows finden Sie im [Mozilla Help Center](https://support.mozilla.org/de/kb/manuell-ein-konto-konfigurieren#thunderbird:win10:tb115).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

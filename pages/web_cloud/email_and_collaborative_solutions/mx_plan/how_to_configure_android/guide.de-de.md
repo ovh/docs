@@ -173,6 +173,10 @@ Um den Unterschied zwischen der Verwendung des POP- und IMAP-Protokolls zu verst
 
 ## Weiterführende Informationen
 
+> [!primary]
+>
+> Weitere Informationen zum Einrichten einer E-Mail-Adresse über die Gmail-App auf Android finden Sie im [Google Help Center](https://support.google.com/mail/answer/6078445?hl=de-CA&co=GENIE.Platform%3DAndroid#zippy=%2Ca-a-account) hinzufügen.
+
 [Konfiguration Ihres E-Mail Pro Accounts in Android über die Gmail-App](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_android)
 
 [Konfiguration Ihres Exchange Accounts in Android über die Gmail-App](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_android)

@@ -83,4 +83,8 @@ Nell'ambito di una configurazione in **POP**, i valori sono i seguenti:
 
 ## Per saperne di più
 
+> [!primary]
+>
+> Per informazioni sulla configurazione di un indirizzo email dall’applicazione Mail su macOS, consulta [il centro assistenza Apple](https://support.apple.com/it-it/guide/mail/mail35803/mac).
+
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

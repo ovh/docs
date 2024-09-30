@@ -83,6 +83,10 @@ En una configuración en **POP**, los valores son los siguientes:
 
 ## Más información
 
+> [!primary]
+>
+> Para más información sobre la configuración de una dirección de correo electrónico desde la aplicación Mail en macOS, consulte [el centro de ayuda de Apple](https://support.apple.com/es-es/guide/mail/mail35803/mac).
+
 [Configurar una cuenta Email Pro en Mail de macOS](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_mail_macos)
 
 [Configurar una cuenta Exchange en Mail de macOS](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_mail_macos)

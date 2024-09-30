@@ -79,6 +79,10 @@ OVHcloud oferuje aplikację internetową umożliwiającą korzystanie z Twojego 
 
 ## Sprawdź również
 
+> [!primary]
+>
+> Aby uzyskać więcej informacji na temat konfigurowania konta e-mail z poziomu aplikacji Mail w systemie iOS, zobacz [Centrum pomocy Apple](https://support.apple.com/pl-pl/102619).
+
 [Konfiguracja konta Exchange na urządzeniu iPhone lub iPad](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_ios).
 
 [Konfiguracja konta e-mail Pro na urządzeniu iPhone lub iPad](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_ios).

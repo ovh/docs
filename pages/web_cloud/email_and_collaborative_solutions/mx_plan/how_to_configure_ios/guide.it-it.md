@@ -79,6 +79,10 @@ OVHcloud propone un'applicazione Web che permette di accedere al tuo indirizzo e
 
 ## Per saperne di più
 
+> [!primary]
+>
+> Per informazioni sulla configurazione di un indirizzo email dall’applicazione Mail su iOS, consulta [il centro assistenza Apple](https://support.apple.com/it-it/102619).
+
 [Configurare un account Exchange su un iPhone o un iPad](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_ios)
 
 [Configurare un account Email Pro su un iPhone o un iPad](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_ios)

@@ -76,6 +76,10 @@ Eine OVHcloud Webanwendung, mit der Sie über Ihren Webbrowser auf Ihre E-Mail-A
 
 ## Weiterführende Informationen
 
+> [!primary]
+>
+> Weitere Informationen zum Einrichten einer E-Mail-Adresse über die Outlook-App auf macOS finden Sie im [Microsoft Help Center](https://support.microsoft.com/de-de/office/add-an-email-account-to-outlook-for-mac-6aeec61b-86af-40af-8ffe-985d0fc82ddb).
+
 [Konfiguration von E-Mail Pro auf Outlook für Mac](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016_mac)
 
 [Konfiguration von Exchange auf Outlook für Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac)
