@@ -1,114 +1,180 @@
 ---
-title: 'Configurar una IP en una máquina virtual'
-excerpt: 'Cómo configurar una IP en una máquina virtual'
-updated: 2020-11-18
+title: Configure an IP address on a virtual machine
+excerpt: Learn how to configure an IP address on a virtual machine
+updated: 2024-09-30
 ---
 
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
-> 
+## Objective
 
-## Objetivo
+After you have created a virtual machine (VM), you can assign to it a public or private IP address so that the VM has internet and/or private network connectivity.
 
-Una vez que haya creado una máquina virtual (MV) en su infraestructura, puede asignarle una IP pública o privada.
+**This guide will show you how to assign a public or private IP address to a virtual machine.**
 
-**Esta guía explica cómo realizar esta configuración.**
+## Requirements
 
-## Requisitos
+- You must have already created a virtual machine.
+- You will need an IP block.
 
-- Haber creado una máquina virtual.
-- Tener un bloque de IP.
+## Instructions
 
-## Procedimiento
+### Retrieve your information
 
-### Obtener la información
+> [!tabs]
+> IPv4
+>>
+>> You can retrieve the information of your public IPv4 address block directly from the vSphere client, by going to the `Hosts and clusters`{.action} section. Then click on your datacentre and choose the `Configure`{.action} tab. Then click `Network`{.action} below `OVHcloud`.
+>>
+>> ![Configuration on the OVHcloud Network](images/01config_ip_ovh_network.png){.thumbnail}
+>>
+>> On each block delivered by OVHcloud, 5 IP addresses are reserved for network configuration and should never be used for your virtual machines. This is the first and the last four IPs in the block.
+>
+>> A Private Cloud IP block is organized as follows:
+>>
+>> - The first IP address marked as `reserved` corresponds to the network address.
+>> - The following IPs can be used for your virtual machines. They are marked as `Available` if no VM is using them, or as `Used` if they are being used.
+>> - The last four IPs in the block are reserved, two are dedicated to OVHcloud routers for operating the block, and the other two are used for gateway and broadcast.
+>>
+>> ![Advanced configuration on the OVH Network](images/02config_ip_ovh_network_advanced.png){.thumbnail}
+>>
+> IPv6
+>>
+>>> [!warning]
+>>>
+>>> By default, the IPv6 block delivered with your Dedicated Cloud is not activated, so you will need to open a [support request](https://help.ovhcloud.com/csm?id=csm_get_help) to request its activation.
+>>>
+>>
+>> You can retrieve your public IPv6 address block information via the OVHcloud Control Panel by going to the [Manage my IPs](https://www.ovh.com/manager/#/dedicated/ip?serviceType=pcc&page=1) section.
+>>
+>> Before you begin, and in order to use the same terminology during the changes, please read the table below. It references terms that we will use in this documentation:
+>>
+>> |Term|Description|Example|
+>> |---|---|---|
+>> |YOUR_IPV6|This is an IPv6 address of the IPv6 block assigned to your service|2001:41d0:xxxx:xxxx::1|
+>> |IPv6_PREFIX|This is the prefix (or *netmask*) of your IPv6 block, usually 64|2001:41d0:xxxx:xxxx::/56|
+>> |IPv6_GATEWAY|This is the gateway (or *gateway*) of your IPv6 block|2001:41d0:xxxx:xxxx:ffff:ffff:ffff:ffff|
+>>
 
-Puede consultar la información de su bloque de direcciones IP públicas directamente desde el cliente vSphere, accediendo a la sección `Hosts y Clusters`{.action}. Haga clic en su datacenter y seleccione la pestaña `Configurar`{.action}. Haga clic en "`Red`{.action}" debajo de `OVHcloud`.
+### Configure a public IP address
 
-![Configuración en la OVHcloud Network](images/01config_ip_ovh_network.png){.thumbnail}
-
-En cada bloque entregado por OVHcloud, 5 direcciones IP están reservadas a la configuración de la red y nunca deben utilizarse para sus máquinas virtuales. Se trata de la primera y las cuatro últimas IP del bloque.
-
-Un bloque IP Managed Bare Metal está organizado de la siguiente manera:
-
-- la primera dirección IP marcada como reservada (`Reserved`) corresponde a la dirección de red.
-- las siguientes IP pueden utilizarse en sus máquinas virtuales. Se indican como disponibles (`Available`) si ninguna MV las explota o como utilizadas (`Used`) en caso contrario.
-- las cuatro últimas IP del bloque están reservadas, dos están dedicadas a los routers de OVHcloud para el funcionamiento del bloque y las otras dos se utilizan para la puerta de enlace y el broadcast.
-
-![Configuración avanzada en la OVH Network](images/02config_ip_ovh_network_advanced.png){.thumbnail}
-
-### Configurar una IP pública
-
-Para configurar una IP pública en su máquina virtual, es necesario haber elegido previamente la interfaz `VMNetwork`{.action} en los parámetros de la tarjeta de red de su MV:
+To configure a public IP address on your virtual machine, you must first choose the `VMNetwork`{.action} interface in your VM network adapter settings:
 
 ![VMNetwork](images/03vmnetwork.png){.thumbnail}
 
+> [!tabs]
+> Linux IPv4
+>>
+>> Here is an example of a configuration on the Debian distribution:
+>>
+>> ![IP Interface](images/config_ip_interfaces.png){.thumbnail}
+>>
+>> ```sh
+>> auto eth0
+>> iface eth0 inet static
+>> address 46.105.220.xxx
+>> netmask 255.255.255.240
+>> broadcast 46.105.220.xxx
+>> gateway 46.105.220.xxx
+>> dns-nameservers 213.186.33.99
+>> ```
+>>
+>> Restart your network system with `systemctl restart networking`.
+>>
+>> You can check the configuration with `ip a`.
+>>
+>> If your virtual machine cannot find the network, make sure that the network adapter is configured on *VMNetwork* and not on *LocalPortGroup* or a VLAN, and that the adapter’s connection box is ticked.
+>>
+> Windows IPv4
+>>
+>> Here is an example of a configuration on Windows:
+>>
+>> In the `Control Panel`{.action}, go to `Network and Internet`{.action} then `Network and Sharing Center`{.action} and then `Modify the network adapter`{.action}.
+>>
+>> To go faster, you can click on the Windows search field and write `Run` (which corresponds to simultaneously pressing the *Windows* key and the *R* key of your keyboard). The Windows command console will open, and you can enter the following command:
+>>
+>> ```shell
+>> ncpa.cpl
+>> ```
+>>
+>> Then right-click the network adapter corresponding to the VMNetwork and select `Properties`{.action). Then select `TCP/IP v4 protocol`{.action} and click on `Properties`{.action) and enter your IP information as follows:
+>>
+>> ![Windows Configuration](images/config_ip_windows.png){.thumbnail}
+>>
+>>```sh
+>> IP Address: 46.105.220.xxx
+>> Subnet Mask: 255.255.255.240
+>> Default Gateway: 46.105.220.yyy
+>> DNS Server: 213.186.33.99
+>> ```
+>>
+> Linux IPv6
+>>
+>> Here is an example of a network configuration on the Debian distribution:
+>>
+>> ![IPv6 Interface](images/config_ip_interfaces_v6.png){.thumbnail}
+>>
+>> ```sh
+>> auto eth0
+>> iface eth0 inet6 static
+>> address 2001:41d0:xxxx:xxxx::
+>> netmask 56
+>> gateway 2001:41d0:xxxx:xxxx:ffff:ffff:ffff:ffff
+>> ```
+>>
+>> Restart your network system with `systemctl restart networking`.
+>>
+>> You can check the configuration with `ip a`.
+>>
+>> If your virtual machine cannot find the network, make sure to check if the network card is configured on VMNetwork and not on LocalPortGroup or a VLAN, and that the network card's connection checkbox is checked.
+>>
+> Windows IPv6
+>>
+>> Here is an example of a configuration on Windows:
+>>
+>> In the `Control Panel`{.action}, go to `Network and Internet`{.action} then `Network and Sharing Center`{.action} and then `Modify the network adapter`{.action}.
+>>
+>> To go faster, you can click on the Windows search field and write `Run` (which corresponds to simultaneously pressing the *Windows* key and the *R* key of your keyboard). The Windows command console will open, and you can enter the following command:
+>>
+>> ```shell
+>> ncpa.cpl
+>> ```
+>>
+>> Then right-click the network adapter corresponding to the VMNetwork and select `Properties`{.action). Then select `TCP/IP v4 protocol`{.action} and click on `Properties`{.action) and enter your IP information as follows:
+>>
+>> ![Windows IPv6 Configuration](images/config_ip_windows_v6.png){.thumbnail}
+>>
+>> ```sh
+>> IP Address: 2001:41d0:xxxx:xxxx::
+>> Subnet Mask: 56
+>> Default Gateway: 2001:41d0:xxxx:xxxx:ffff:ffff:ffff:ffff
+>> DNS Server: 2001:41d0:3:163::1
+>> ```
+>>
+
+### Configure a private IP address
+
+The process for configuring a private IP address is similar to that of a public IP address. However, you must use the network adapter configured for your VLAN or VxLAN.
+
+In your interface options, you can edit the following settings:
+
+- A VLAN interface (10 to 20 by default and linked to the vRack, you can create more by consulting [this guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/creation_vlan)).
+
+- A VxLAN interface (vxw-dvs, etc.).
+
+In your virtual machine settings, you can use a VLAN or a VxLAN:
+
+![VLAN for SDDC](images/04vlanBis.png){.thumbnail}
+
+![VLAN for SDDC](images/05vlan.png){.thumbnail}
+
+![VXLAN on the Private Cloud](images/06vxlan.png){.thumbnail}
+
 #### Linux
 
-A continuación le ofrecemos un ejemplo de configuración de la distribución Debian:
+Here is a configuration example on a Debian operating system:
 
-![Interface IP](images/config_ip_interfaces.jpg){.thumbnail}
+![Private IP address on Linux](images/linux_private.PNG){.thumbnail}
 
-```sh
-auto eth0
-iface eth0 inet static
-address 46.105.220.xxx
-netmask 255.255.255.240
-broadcast 46.105.220.xxx
-gateway 46.105.220.xxx
-dns-nameservers 213.186.33.99
-```
-
-Monte el mapa con un `ifup` de su interfaz.
-
-También podrá comprobar la configuración con un `ifconfig`.
-
-Si su máquina virtual no encuentra la red, compruebe que la tarjeta de red esté configurada en *VMNetwork* y no en *LocalPortGroup* o una VLAN y que la casilla de conexión de la tarjeta esté marcada.
-
-#### Windows
-
-A continuación le ofrecemos un ejemplo de configuración de Windows:
-
-En el `panel de configuración`{.action}, acceda a `Red e Internet`{.action}, `red, comparta`{.action} y `cambie el adaptador de red`{.action}.
-
-Para avanzar más rápido, puede pulsar sobre el campo de búsqueda Windows y escribir `Run` (que corresponde a pulsar simultáneamente la tecla *Windows* de su teclado y la tecla *R*). Se abrirá la consola de ejecución Windows y podrá introducir el siguiente comando:
-
-```shell
-ncpa.cpl
-```
-
-A continuación, haga clic derecho en el mapa de red correspondiente al VMNetwork y `Propiedades`{.action). Seleccione entonces el `Protocolo TCP/IP v4`{.action} y vuelva a hacer clic en "Propiedades" e introduzca la información de su IP como sigue:
-
-![Configuración Windows](images/config_ip_windows.jpg){.thumbnail}
-
-```sh
-Dirección IP: 46.105.220.xxx
-Máscara de subred: 255.255.255.240
-Puerta de enlace predeterminada: 46.105.220.yyy
-Servidor DNS: 213.186.33.99
-```
-
-### Configurar una IP privada
-
-La configuración de una IP privada es similar a la de una IP pública. No obstante, debe utilizar la tarjeta de red configurada para su VLAN.
-
-Al elegir la interfaz, puede editar los siguientes parámetros:
-
-- una interfaz de VLAN (10 a 20 por defecto y relacionados con el vRack, puede crear más VLAN consultando [esta guía](/pages/bare_metal_cloud/managed_bare_metal/vlan-creation)).
-
-En los parámetros de su máquina virtual, puede utilizar una VLAN :
-
-![VLAN](images/04vlanBis.png){.thumbnail}
-
-![VLAN](images/05vlan.png){.thumbnail}
-
-#### Linux
-
-A continuación le ofrecemos un ejemplo de configuración de la distribución Debian:
-
-![IP privada en Linux](images/linux_private.PNG){.thumbnail}
-
-Editando el archivo de interfaces, puede indicar una IP privada en el rango IP que usted elija:
+By editing the interfaces file, you can assign a private IP address on your chosen IP range:
 
 ```sh
 auto eth0
@@ -118,34 +184,34 @@ netmask 255.255.255.0
 gateway 192.168.70.254
 ```
 
-Monte el mapa con un `ifup` de su interfaz.
+Restart your network system with `systemctl restart networking`.
 
-También puede comprobar la configuración con un `ifconfig`.
+You can check the configuration with `ip a`.
 
 #### Windows
 
-A continuación le ofrecemos un ejemplo de configuración de Windows:
+Here is a configuration example for Windows:
 
-En el `panel de configuración`{.action}, acceda a `Red e Internet`{.action}, `Centro de red y recursos compartidos`{.action} y, por último, `Cambie el adaptador de red`{.action}.
+In the `configuration panel`{.action}, go to `Network and Internet`{.action}, then `Network and Sharing Centre`{.action}, and then to `Change Network Adapter`{.action}.
 
-Para avanzar más rápido, puede pulsar sobre el campo de búsqueda Windows y escribir `Run` (que corresponde a pulsar simultáneamente la tecla *Windows* de su teclado y la tecla *R*). Se abrirá la consola de ejecución Windows y podrá introducir el siguiente comando:
+To speed up the process, you can click on the Windows search field and write `Run` (or press the *Windows* and *R* keys at the same time). The Windows command console will open, and you can enter this command:
 
 ```shell
 ncpa.cpl
 ```
 
-A continuación, haga clic derecho en el mapa de red correspondiente al VMNetwork y `Propiedades`{.action). Seleccione el `Protocolo TCP/IP v4`{.action} y vuelva a hacer clic en "Propiedades" e introduzca la información de su IP de la siguiente forma:
+Right-click on the corresponding VMNetwork adapter and click `Properties`{.action}. Then select `TCP/IPv4 protocol`{.action} and click again on `Properties`{.action}, then enter your IP information as follows:
 
-![Configuración de Windows IP pública](images/windows_private.PNG){.thumbnail}
+![Configure a public IP address on Windows](images/windows_private.PNG){.thumbnail}
 
-Si modifica esta interfaz, puede indicar una IP privada en el rango IP de su elección:
+By modifying this interface, you can assign a private IP address on your chosen IP range:
 
 ```sh
-Dirección IP: 192.168.70.2
-Máscara de subred: 255.255.255.0
-Puerta de enlace predeterminada: 192.168.70.254
+IP address: 192.168.70.2
+Subnet mask: 255.255.255.0
+Default gateway: 192.168.70.254
 ```
 
-## Más información
+## Go further
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Join our community of users on <https://community.ovh.com/en/>.
