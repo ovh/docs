@@ -1,7 +1,7 @@
 ---
 title: Local Zone Compute - Funcionalidades, capacidades y límites
 excerpt: Descubra las funcionalidades, capacidades y límites actuales de las instancias de Local Zone
-updated: 2024-07-10
+updated: 2024-10-07
 ---
 
 > [!primary]
@@ -14,7 +14,7 @@ Las instancias Local Zone son una extensión de las [regiones](/links/public-clo
 
 Las instancias Local Zone están situadas estratégicamente cerca de las zonas de alta demanda de los usuarios. Su principal objetivo es minimizar el tiempo necesario para la transferencia de datos entre el usuario y la cloud, con el fin de que los servicios sean más rápidos y reactivos y respondan a las exigencias de Data Residency.
 
-Para más información, consulte nuestra [página dedicada a las instancias de Local Zone](https://www.ovhcloud.com/es/public-cloud/local-zone-compute/).
+Para más información, consulte nuestra [página dedicada a las instancias de Local Zone](/links/public-cloud/local-zones).
 
 **Descubra las funcionalidades y las capacidades actuales y futuras de las instancias de Zonas locales.**
 
@@ -30,7 +30,8 @@ Para más información, consulte nuestra [página dedicada a las instancias de L
 | Boot/Start | Sí |
 | Stop | Sí |
 | Block Storage | Sí |
-| Copias de seguridad de instancias | No |
+| Copias de seguridad de instancias | Sí |
+| Copias de seguridad automáticas | No |
 | Snapshots de volúmenes | No |
 | Copias de seguridad de volúmenes | No |
 | Object Storage | No |

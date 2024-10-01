@@ -1,7 +1,7 @@
 ---
 title: Local Zone Compute - Fonctionnalités, capacités et limites
 excerpt: Découvrez les fonctionnalités, les capacités et les limites actuelles des instances Local Zones
-updated: 2024-07-10
+updated: 2024-10-07
 ---
 
 ## Objectif
@@ -25,7 +25,8 @@ Retrouvez plus d’informations sur notre [page dédiée aux instances Local Zon
 | Boot/Start | Oui |
 | Stop | Oui |
 | Block Storage | Oui |
-| Sauvegardes des instances | Non |
+| Sauvegardes des instances | Oui |
+| Sauvegarde automatisée des instances | Non |
 | Snapshots de volumes| Non |
 | Sauvegardes de volumes | Non |
 | Object Storage | Non |
