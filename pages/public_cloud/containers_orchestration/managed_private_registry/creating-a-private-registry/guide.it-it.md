@@ -36,7 +36,7 @@ OVHcloud Managed Private Registry service provides you a managed, authenticated 
 
 ## Instructions
 
-1. First, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+1. First, log in to the [OVHcloud Control Panel](/links/manager).
 
 1. In the left menu, in the `Containers & Orchestration`{.action} section, select `Managed Private Registry`{.action}.
 

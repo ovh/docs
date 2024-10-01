@@ -14,7 +14,7 @@ Ten system pozwoli Ci na dostęp tylko do folderu "upload-vpn" w Twoich datastor
 
 ## Wymagania początkowe
 
-- Posiadanie aktywnego użytkownika utworzonego w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- Posiadanie aktywnego użytkownika utworzonego w [Panelu klienta OVHcloud](/links/manager){.external}.
 
 ## W praktyce
 

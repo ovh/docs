@@ -13,13 +13,13 @@ En quelques minutes, vous pouvez ajouter un nouveau datastore dans votre environ
 ## Prérequis
 
 - Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
-- Avoir un identifiant utilisateur actif (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
+- Avoir un identifiant utilisateur actif (créé dans l'[espace client OVHcloud](/links/manager))
 
 ## En pratique
 
 > [!warning]
 >
-> Les ressources ajoutées à partir de vSphere sont facturées à l'heure. Si vous souhaitez passer à une facturation mensuelle, vous pouvez changer les paramètres dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)).
+> Les ressources ajoutées à partir de vSphere sont facturées à l'heure. Si vous souhaitez passer à une facturation mensuelle, vous pouvez changer les paramètres dans l'[espace client OVHcloud](/links/manager)).
 > Pour plus de détails, consultez notre [présentation de l’espace client Hosted Private Cloud OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud).
 > 
 

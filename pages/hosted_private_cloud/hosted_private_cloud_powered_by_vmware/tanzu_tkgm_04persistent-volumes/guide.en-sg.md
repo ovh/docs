@@ -17,7 +17,7 @@ updated: 2024-01-10
 ## Requirements
 
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-sg/enterprise/products/hosted-private-cloud/) to receive login credentials
-- A user account with access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
+- A user account with access to the [OVHcloud Control Panel](/links/manager)
 - A user account with access to vSphere
 - You need to have deployed the **Workload** **TKG** cluster using the [Tanzu Management Cluster Grid administration guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/tanzu_tkgm_03manage).
 

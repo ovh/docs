@@ -16,7 +16,7 @@ This guide covers the creation of application tokens for AI Deploy.
 ## Requirements
 
 - a **Public cloud** project
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+- access to the [OVHcloud Control Panel](/links/manager)
 - a Running AI Deploy app (the deployed app in this guide uses the Docker image [infrastructureascode/hello-world](https://hub.docker.com/r/infrastructureascode/hello-world))
 
 ## Instructions

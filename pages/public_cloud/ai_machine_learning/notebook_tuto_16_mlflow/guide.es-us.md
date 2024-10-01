@@ -37,19 +37,19 @@ The different models will be tracked and compared thanks to **MLflow** in order 
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](
-https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
+/links/manager)
 - An AI Notebooks project created inside a [Public Cloud project](https://www.ovhcloud.com/es/public-cloud/) in your OVHcloud account
 - A user for AI Notebooks
 
 ## Instructions
 
 You can launch the notebook from the [OVHcloud Control Panel](
-https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) or via the [ovhai CLI](/pages/public_cloud/ai_machine_learning/cli_11_howto_run_notebook_cli).
+/links/manager) or via the [ovhai CLI](/pages/public_cloud/ai_machine_learning/cli_11_howto_run_notebook_cli).
 
 ### Launching a Jupyter notebook with "TensorFlow" via UI (Control Panel)
 
 To launch your notebook from the [OVHcloud Control Panel](
-https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), refer to the following steps.
+/links/manager), refer to the following steps.
 
 #### Code editor
 

@@ -29,7 +29,7 @@ Dans le cas d'une installatiion de la fibre FTTH, un technicien se déplace chez
 
 ### Comment puis-je activer mes services inclus ?
 
-Dès que vous recevez la confirmation que votre accès (ADSL, VDSL ou FTTH) est opérationnel, vous pouvez procéder à l'activation des services inclus dans votre pack via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+Dès que vous recevez la confirmation que votre accès (ADSL, VDSL ou FTTH) est opérationnel, vous pouvez procéder à l'activation des services inclus dans votre pack via votre [espace client OVHcloud](/links/manager).
 
 Une fois connecté, rendez-vous dans l'univers `Telecom`{.action} puis `Accès Internet`{.action}. Vous y retrouverez votre offre.
 
@@ -47,13 +47,13 @@ Vous trouverez de plus amples informations en vous rendant sur le guide [Rétabl
 
 #### Trucs et astuces : 
 
-L'ensemble des e-mails envoyés par OVHcloud sont accessibles depuis votre espace client. Pour retrouver vos derniers identifiants de connexion reçus par e-mail, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) depuis un autre accès à Internet ou un smartphone. Une fois connecté, cliquez puis sur `E-mails de service`{.action} à droite de l'écran.
+L'ensemble des e-mails envoyés par OVHcloud sont accessibles depuis votre espace client. Pour retrouver vos derniers identifiants de connexion reçus par e-mail, connectez-vous à votre [espace client OVHcloud](/links/manager) depuis un autre accès à Internet ou un smartphone. Une fois connecté, cliquez puis sur `E-mails de service`{.action} à droite de l'écran.
 
 ### Mon accès xDSL dysfonctionne. Que dois-je faire ?
 
 Si vous rencontrez un dysfonctionnement sur votre accès internet, commencez par éteindre et rallumer votre modem. 
 
-Si la liaison ne remonte pas, vous avez la possibilité d’utiliser notre assistant de dépannage. Pour y accéder, connectez-vous, depuis un autre accès à Internet ou un smartphone, à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) dans la section `Telecom`{.action}. Une fois positionné sur l’accès internet concerné, cliquez sur `Lancer le diagnostic`{.action}. 
+Si la liaison ne remonte pas, vous avez la possibilité d’utiliser notre assistant de dépannage. Pour y accéder, connectez-vous, depuis un autre accès à Internet ou un smartphone, à votre [espace client OVHcloud](/links/manager) dans la section `Telecom`{.action}. Une fois positionné sur l’accès internet concerné, cliquez sur `Lancer le diagnostic`{.action}. 
 
 Si cela ne fonctionne toujours pas, nous vous invitons à consulter la [carte des incidents en cours](https://www.ovhtelecom.fr/xdsl/incident/#/) pour vérifier les éventuels incidents génériques pouvant affecter votre connexion.
 

@@ -13,7 +13,7 @@ Un blocco IP Un blocco IP può essere utilizzato per rendere i tuoi servizi acce
 ## Prerequisiti
 
 - Essere contatto amministratore dell'infrastruttura [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/) per ricevere le credenziali di accesso.
-- Avere un utente attivo [creato nello Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere un utente attivo [creato nello Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
@@ -91,7 +91,7 @@ Se, in seguito, devi scollegare il blocco IP, puoi utilizzare questa chiamata AP
 > Questa chiamata interrompe la rete sulle VM che utilizzano gli IP in questione.
 >
 
-È possibile seguire la migrazione del blocco IP dal tuo[Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} nella sezione`Hosted Private Cloud`{.action} > `Private Cloud`{.action}. Clicca sul tuo servizio Hosted Private Cloud, quindi sulla scheda `Operazioni`{.action}.
+È possibile seguire la migrazione del blocco IP dal tuo[Spazio Cliente OVHcloud](/links/manager){.external} nella sezione`Hosted Private Cloud`{.action} > `Private Cloud`{.action}. Clicca sul tuo servizio Hosted Private Cloud, quindi sulla scheda `Operazioni`{.action}.
 
 Il riferimento dell’operazione è « removeIpRipeBlock ».
 

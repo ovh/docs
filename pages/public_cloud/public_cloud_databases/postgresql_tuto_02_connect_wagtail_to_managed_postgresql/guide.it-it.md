@@ -19,7 +19,7 @@ In this tutorial, we are going to show you how to install [Wagtail](https://wagt
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - A [Public Cloud project](https://www.ovhcloud.com/it/public-cloud/) in your OVHcloud account.
 - An up and running Public Cloud Database for PostgreSQL.
 - A Python environment with a stable version and public network connectivity (Internet). This tutorial was made using Python 3.9.7.
@@ -130,7 +130,7 @@ If you keep wagtail on default settings, a local SQLlite database will be used i
 
 Before creating the database, let's edit the `mysite/mysite/settings/base.py` file and adapt the connection parameters to the database.
 
-The useful parameters, available in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) are:
+The useful parameters, available in the [OVHcloud Control Panel](/links/manager) are:
 
 - The db Host, the db Port
     - Get them from the "General Information tab".

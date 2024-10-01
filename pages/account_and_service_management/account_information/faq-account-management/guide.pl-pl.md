@@ -10,7 +10,7 @@ Najczęściej zadawane pytania dotyczące zarządzania kontem OVHcloud.
 
 ### Jak otworzyć konto OVHcloud?
 
-Utworzenie konta OVHcloud jest darmowe. Dzięki niemu masz łatwy dostęp do swoich danych i możesz zarządzać swoimi usługami. Aby skorzystać z tej możliwości - nic prostszego - kliknij w [link](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+Utworzenie konta OVHcloud jest darmowe. Dzięki niemu masz łatwy dostęp do swoich danych i możesz zarządzać swoimi usługami. Aby skorzystać z tej możliwości - nic prostszego - kliknij w [link](/links/manager).
 Pamiętaj jednocześnie o tym, żeby zabezpieczyć dostęp do Twoich danych osobowych poprzez aktywację dwuskładnikowego uwierzytelnienia w sekcji „Moje konto”, następnie „Bezpieczeństwo” (przeczytaj również artykuł „Jak zabezpieczyć swoje konto”).
 
 #### Wskazówki i porady
@@ -21,7 +21,7 @@ Nie możesz odnaleźć Twojego kraju? Zmień język strony klikając na odpowied
 
 Swój identyfikator klienta, zwany także NIC-handle, znajdziesz w prawym górnym rogu na ostatniej fakturze. Zbudowany jest w następujący sposób: "ab00001-ovh" (pierwsze litery to zazwyczaj inicjały osoby, która założyła konto). Identyfikator jest również podawany we wszystkich wiadomościach e-mail wysyłanych przez OVHcloud (e-mail z potwierdzeniem utworzenia konta, e-mail z potwierdzeniem lub odnowieniem zamówienia itp.)
 
-Jeśli nie dysponujesz loginem, kliknij link „Nie pamiętam loginu lub hasła” na stronie [logowania do konta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wpisz adres e-mail przypisany do Twojego konta.
+Jeśli nie dysponujesz loginem, kliknij link „Nie pamiętam loginu lub hasła” na stronie [logowania do konta OVHcloud](/links/manager) i wpisz adres e-mail przypisany do Twojego konta.
 
 #### Porady i wskazówki
 

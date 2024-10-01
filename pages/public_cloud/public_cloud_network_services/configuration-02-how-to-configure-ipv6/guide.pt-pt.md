@@ -28,7 +28,7 @@ Por predefinição, apenas o endereço IPv4 é configurado.
 * Uma instância Public Cloud (qualquer modelo)
 * Dispor de um acesso administrativo (sudo) via SSH ou ambiente de trabalho remoto (Windows) ao seu servidor.
 * Ter conhecimentos básicos de rede.
-* Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+* Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 
 ## Instruções
 

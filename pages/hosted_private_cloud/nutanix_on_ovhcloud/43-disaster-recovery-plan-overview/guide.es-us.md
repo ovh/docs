@@ -19,7 +19,7 @@ This guide will take you through the possibilities offered by Nutanix clusters i
 - Multiple Nutanix clusters with either organisation:
     - Multiple Nutanix clusters at physically different sites at OVHcloud
     - A Nutanix cluster provided by OVHcloud and another Nutanix cluster from another provider
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - Access to your clusters via Prism Central
 - A vRack or IPSEC VPN connection between the two clusters, as required
 

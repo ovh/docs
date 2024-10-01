@@ -19,7 +19,7 @@ Ce guide a pour objectif d'expliquer les détails de la mise en œuvre de **vSph
 ## Prérequis
 
 - Avoir souscrit une offre [VMware on OVHcloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/).
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Avoir accès à l’interface de gestion vSphere.
 - Avoir la version de vSphere et des hôtes en version 7.0 Update 2 minimum.
 - A ce jour, la solution de réplication **Zerto** n'est pas compatible avec le chiffrement. Les VMs chiffrées ne pourront donc pas être répliquées.
@@ -43,7 +43,7 @@ La clé **DEK** est chiffrée à l'aide de la **KDK**. Elle est stockée et chif
 
 ### Autorisation d'un utilisateur à administrer le chiffrement sur un cluster VMware on OVHcloud 
 
-Connectez-vous à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), cliquez sur `Hosted Private Cloud`{.action} et choisissez votre cluster. Positionnez vous sur `Utilisateurs`{.action} et cliquez sur le bouton `...`{.action}.
+Connectez-vous à l'[espace client OVHcloud](/links/manager), cliquez sur `Hosted Private Cloud`{.action} et choisissez votre cluster. Positionnez vous sur `Utilisateurs`{.action} et cliquez sur le bouton `...`{.action}.
 
 ![00 add right from manager 01](images/00-add-right-from-manager01.png){.thumbnail}
 

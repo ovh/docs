@@ -57,7 +57,7 @@ A more detailed view:
 ### Compute resources details
 
 During the notebook creation, you can select **compute resources**, known as CPUs or GPUs.
-Their official pricing is available in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) or on the [OVHcloud Public Cloud website](https://www.ovhcloud.com/pt/public-cloud/prices/).
+Their official pricing is available in the [OVHcloud Control Panel](/links/manager) or on the [OVHcloud Public Cloud website](https://www.ovhcloud.com/pt/public-cloud/prices/).
 
 Rates for compute are mentioned per hour to facilitate reading of the prices, but the billing granularity remains **per minute**.
 

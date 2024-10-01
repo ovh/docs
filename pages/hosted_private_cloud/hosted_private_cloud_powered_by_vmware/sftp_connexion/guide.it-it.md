@@ -22,7 +22,7 @@ Questo metodo permette però di accedere esclusivamente alla cartella “upload-
 ## Prerequisiti
 
 - Essere contatto amministratore dell'infrastruttura [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/) per ricevere le credenziali di accesso.
-- Avere un utente attivo [creato nello Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere un utente attivo [creato nello Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 

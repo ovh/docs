@@ -23,7 +23,7 @@ Esta guía explica cómo:
 
 > [!primary]
 >
-> Tenga en cuenta que —en función de su lugar de residencia y de la legislación vigente, así como de los servicios contratados— es posible que algunas secciones de esta guía sean diferentes o no se apliquen a su caso particular. Para más información, consulte los contratos de OVHcloud desde el [área de cliente](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws): haga clic en su nombre en la esquina superior derecha de su pantalla, en `Productos y servicios`{.action} y, seguidamente, en la pestaña `Contratos`{.action}.
+> Tenga en cuenta que —en función de su lugar de residencia y de la legislación vigente, así como de los servicios contratados— es posible que algunas secciones de esta guía sean diferentes o no se apliquen a su caso particular. Para más información, consulte los contratos de OVHcloud desde el [área de cliente](/links/manager): haga clic en su nombre en la esquina superior derecha de su pantalla, en `Productos y servicios`{.action} y, seguidamente, en la pestaña `Contratos`{.action}.
 >
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/dfpPCa0mUyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -32,7 +32,7 @@ Esta guía explica cómo:
 
 Antes de continuar leyendo esta guía, debe cumplir los siguientes requisitos:
 
-- Tener acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Tener acceso al [área de cliente de OVHcloud](/links/manager).
 - Tener servicios de OVHcloud activos.
 - Ser [contacto de facturación](/pages/account_and_service_management/account_information/managing_contacts#definicion) de sus servicios de OVHcloud.
 - Tener una forma de pago válida en su cuenta de OVHcloud. Consulte nuestra guía "[Gestionar las formas de pago](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)".
@@ -72,7 +72,7 @@ Antes de continuar leyendo esta guía, debe cumplir los siguientes requisitos:
 
 ## Procedimiento
 
-Conéctese a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).<br>
+Conéctese a su [área de cliente de OVHcloud](/links/manager).<br>
 Haga clic en su nombre en la esquina superior derecha y seleccione `Productos y servicios`{.action}.
 
 ![productos y servicios](images/products-services-en.png){.thumbnail}

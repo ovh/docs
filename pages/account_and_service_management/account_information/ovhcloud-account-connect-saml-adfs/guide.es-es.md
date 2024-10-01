@@ -18,7 +18,7 @@ Puede utilizar la autenticación SSO (*Single Sign-On*) **única** para conectar
 
 - Los servicios AD FS (Active Directory Federation Services) deben ejecutarse en su servidor
 - Disponer de una [cuenta de OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 
@@ -123,7 +123,7 @@ Una vez completada la tabla de correspondencias, el servicio AD FS confía en OV
 
 ### Configurar la confianza de la cuenta de OVHcloud y configurar la conexión
 
-El AD FS se añadirá como proveedor de identidad de confianza al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), donde podrá proporcionar los metadatos del proveedor de identidad.
+El AD FS se añadirá como proveedor de identidad de confianza al [área de cliente de OVHcloud](/links/manager), donde podrá proporcionar los metadatos del proveedor de identidad.
 
 Haga clic en el nombre de su cuenta en la esquina superior derecha y, a continuación, vuelva a hacer clic en su nombre en la barra lateral.
 
@@ -212,7 +212,7 @@ A continuación, podrá desconectarse de su cuenta y reconectarse con su AD FS c
 
 ### Conexión mediante SSO
 
-En [la página de identificación de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), introduzca su [ID de cliente](/pages/account_and_service_management/account_information/ovhcloud-account-creation#cual-es-mi-id-de-cliente) seguido de **/idp** sin contraseña y haga clic en el botón `Login`{.action} .
+En [la página de identificación de OVHcloud](/links/manager), introduzca su [ID de cliente](/pages/account_and_service_management/account_information/ovhcloud-account-creation#cual-es-mi-id-de-cliente) seguido de **/idp** sin contraseña y haga clic en el botón `Login`{.action} .
 
 ![Conexión a la federación OVHcloud](images/ovhcloud_federation_login_1.png){.thumbnail}
 

@@ -16,7 +16,7 @@ updated: 2022-09-28
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Être connecté sur vos clusters via Prism Central.
 
 ## En pratique
@@ -73,7 +73,7 @@ L'accès à Prism Central est maintenu à l'aide du Load Balancer.
 
 Cette opération consiste à supprimer l'affectation du vRack à Roubaix et ensuite à étendre le vRack de Gravelines avec Roubaix. Les modifications du vRack se font au travers de l'espace client OVHcloud. 
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). 
+Connectez-vous à votre [espace client OVHcloud](/links/manager). 
 
 #### Suppression des éléments du vRack de Roubaix.
 

@@ -57,7 +57,7 @@ A única coisa a fazer é contactar rapidamente o seu banco para cancelar o cart
 
 #### Usou a palavra-passe da OVHcloud num site fraudulento
 
-Aceda à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e altere imediatamente a palavra-passe. Aconselhamos vivamente a ativação do segundo método de autenticação para garantir a segurança da sua conta.
+Aceda à [Área de Cliente](/links/manager){.external} e altere imediatamente a palavra-passe. Aconselhamos vivamente a ativação do segundo método de autenticação para garantir a segurança da sua conta.
 
 > [!primary]
 >

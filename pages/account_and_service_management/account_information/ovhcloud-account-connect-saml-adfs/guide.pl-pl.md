@@ -18,7 +18,7 @@ Do zalogowania się do konta OVHcloud możesz użyć **unikalnego** uwierzytelni
 
 - Usługi AD FS (Active Directory Federation Services) muszą być wykonywane na serwerze
 - Posiadanie [konta OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Zalogowanie do [Panelu klienta OVHcloud](/links/manager)
 
 ## W praktyce
 
@@ -123,7 +123,7 @@ Po utworzeniu tabeli korelacji Twoja usługa AD FS stała się zaufana OVHcloud 
 
 ### Budowa zaufania do konta OVHcloud i konfiguracja połączenia
 
-Opcja dodawania AD FS jako zaufanego dostawcy danych jest dostępna w [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), w którym możesz dostarczyć metadane dostawcy tożsamości.
+Opcja dodawania AD FS jako zaufanego dostawcy danych jest dostępna w [panelu klienta OVHcloud](/links/manager), w którym możesz dostarczyć metadane dostawcy tożsamości.
 
 [Kliknij nazwę konta w prawym górnym rogu, a następnie ponownie na pasku bocznym.
 
@@ -212,7 +212,7 @@ Następnie będziesz mógł wylogować się ze swojego konta i ponownie zalogowa
 
 ### Logowanie przez SSO
 
-Na [stronie logowania OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) wpisz [identyfikator](/pages/account_and_service_management/account_information/ovhcloud-account-creation#jaki-jest-moj-identyfikator-klienta), po którym następuje **/idp** bez hasła i kliknij przycisk `Login`{.action}.
+Na [stronie logowania OVHcloud](/links/manager) wpisz [identyfikator](/pages/account_and_service_management/account_information/ovhcloud-account-creation#jaki-jest-moj-identyfikator-klienta), po którym następuje **/idp** bez hasła i kliknij przycisk `Login`{.action}.
 
 ![Połączenie z federacją OVHcloud](images/ovhcloud_federation_login_1.png){.thumbnail}
 

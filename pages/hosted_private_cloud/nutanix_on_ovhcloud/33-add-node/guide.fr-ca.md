@@ -45,7 +45,7 @@ Les clusters Nutanix sont évolutifs. Il est possible de rajouter des nœuds dan
 ## Prérequis
 
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 - Être connecté sur la page des [API OVHcloud](https://ca.api.ovh.com/).
 - Être connecté sur le cluster via Prism Central.
 - Un serveur physique prêt à être configuré ajouté dans l'espace client OVHCloud.
@@ -62,7 +62,7 @@ Les nœuds à rajouter doivent avoir la même version d'**AOS** que ceux du clus
 
 ### Vérification de la livraison du nœud.
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et vérifiez qu'un nœud supplémentaire apparaît bien dans le cluster Nutanix.
+Connectez-vous à votre [espace client OVHcloud](/links/manager) et vérifiez qu'un nœud supplémentaire apparaît bien dans le cluster Nutanix.
 
 ![Nouveau Noeud](images/scaleup1.png){.thumbnail}
 

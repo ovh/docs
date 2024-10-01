@@ -19,7 +19,7 @@ It is based on the YOLOv8 open source [repository](https://github.com/ultralytic
 
 ## Requirements
 
-- You have access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- You have access to the [OVHcloud Control Panel](/links/manager).
 - You have created a Public Cloud project.
 - The ovhai CLI interface is installed on your system (find more information [here](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli)).
 - You have [Docker](https://www.docker.com/get-started) installed and configured to build images.

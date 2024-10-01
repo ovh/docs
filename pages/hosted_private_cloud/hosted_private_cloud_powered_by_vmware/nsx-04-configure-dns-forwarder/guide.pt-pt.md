@@ -19,7 +19,7 @@ You can use a DNS forwarder in NSX that centralises all DNS queries and redirect
 ## Requirements
 
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/) to receive login credentials
-- A user account with access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+- A user account with access to the [OVHcloud Control Panel](/links/manager)
 - You need to have **NSX** deployed with a segment configured in your NSX configuration. Use our guide on [segment management in NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-02-segment-management) for more information.
 
 ## Instructions

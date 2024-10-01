@@ -31,7 +31,7 @@ O Identificador de Cliente (ID) é um código pessoal. Trata-se de um nome de ut
 
 ## Requisitos
 
-- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Estar ligado à [Área de Cliente OVHcloud](/links/manager){.external}.
 - Ter as permissões de acesso necessárias para este tipo de operação.
 - Ter acesso ao Identificador de Cliente (ID de Cliente) do utilizador que irá ser definido como contacto.
 - Todos os utilizadores envolvidos na alteração de um contacto devem ter acesso à conta de e-mail associada aos seus perfis.
@@ -45,7 +45,7 @@ O Identificador de Cliente (ID) é um código pessoal. Trata-se de um nome de ut
 
 ### Aceder à área de gestão dos contactos <a name="gestion_des_contacts"></a>
 
-Aceda à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique no nome do cliente no canto superior direito e, em seguida, clique em `Gestão dos contactos`{.action}.
+Aceda à sua [Área de Cliente OVHcloud](/links/manager){.external}, clique no nome do cliente no canto superior direito e, em seguida, clique em `Gestão dos contactos`{.action}.
 
 ![Gestão de contactos](images/hubcontacts.png){.thumbnail}
 
@@ -101,7 +101,7 @@ Se um dos contactos não tiver recebido o e-mail, é possível que o endereço a
 
 ![Gestão de contactos](images/managing_contacts_06.png){.thumbnail}
 
-Se apenas um dos contactos confirmar a alteração, será mostrada uma mensagem para informar que o pedido precisa de ser confirmado por outro utilizador. A confirmação dos utilizadores pode demorar alguns minutos até ser atualizada na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+Se apenas um dos contactos confirmar a alteração, será mostrada uma mensagem para informar que o pedido precisa de ser confirmado por outro utilizador. A confirmação dos utilizadores pode demorar alguns minutos até ser atualizada na [Área de Cliente OVHcloud](/links/manager){.external}.
 
 ![Gestão de contactos](images/managing_contacts_007.png){.thumbnail}
 
@@ -113,7 +113,7 @@ Acaba de subscrever uma subscrição da OVHcloud que permite criar a sua própri
 
 > [!warning]
 >
-> Desaconselhamos que dê a qualquer terceiro as credenciais de acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+> Desaconselhamos que dê a qualquer terceiro as credenciais de acesso à [Área de Cliente OVHcloud](/links/manager).
 >
 
 Neste caso, dê ao seu fornecedor o direito de "[contacto técnico](#gestion_des_contacts)" no seu alojamento OVHcloud. Este acesso permitir-lhe-á efetuar as operações necessárias para que o seu site seja colocado online (adição de um domínio ou subdomínio no multi-site, instalação de um módulo 1 clique, modificação da palavra-passe FTP ou da base de dados, criação de um certificado SSL, etc).

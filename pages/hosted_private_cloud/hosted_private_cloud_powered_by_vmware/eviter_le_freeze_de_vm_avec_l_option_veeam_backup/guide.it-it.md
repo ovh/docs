@@ -17,7 +17,7 @@ Durante la creazione di uno Snapshot di una macchina virtuale localizzata in un 
 ## Prerequisiti
 
 - Essere contatto amministratore dell'infrastruttura [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/) per ricevere le credenziali di accesso.
-- Avere un utente attivo (creato nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it))
+- Avere un utente attivo (creato nello [Spazio Cliente OVHcloud](/links/manager))
 - Attiva l'opzione [Veeam Backup Managed](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/veeam-backup-managed/){.external}.
 
 ## Procedura

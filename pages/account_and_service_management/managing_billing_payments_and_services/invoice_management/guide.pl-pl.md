@@ -16,20 +16,20 @@ OVHcloud oddaje do Twojej dyspozycji Panel klienta, na którym możesz przegląd
 
 > [!primary]
 >
-> Możliwe jest, że niektóre części niniejszego przewodnika nie mają zastosowania w zależności od Twojej sytuacji, w zależności od tego, gdzie znajduje się siedziba Twojej firmy i pod jakie podlega ustawodawstwo. Jeśli masz wątpliwości, sprawdź zapisy w umowach OVHcloud dostępnych w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) (Kliknij w prawym górnym rogu ekranu Twoje imię i nazwisko, a następnie w menu kontekstowym kliknij `Zarządzanie usługami`{.action}, a następnie w zakładce `Regulaminy`{.action}).
+> Możliwe jest, że niektóre części niniejszego przewodnika nie mają zastosowania w zależności od Twojej sytuacji, w zależności od tego, gdzie znajduje się siedziba Twojej firmy i pod jakie podlega ustawodawstwo. Jeśli masz wątpliwości, sprawdź zapisy w umowach OVHcloud dostępnych w [Panelu klienta OVHcloud](/links/manager) (Kliknij w prawym górnym rogu ekranu Twoje imię i nazwisko, a następnie w menu kontekstowym kliknij `Zarządzanie usługami`{.action}, a następnie w zakładce `Regulaminy`{.action}).
 >
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/iiQmopMhzik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Wymagania początkowe
 
-- Zalogowanie się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) jako [kontakt księgowy](/pages/account_and_service_management/account_information/managing_contacts) dla Twojej usługi.
+- Zalogowanie się do [Panelu klienta OVHcloud](/links/manager) jako [kontakt księgowy](/pages/account_and_service_management/account_information/managing_contacts) dla Twojej usługi.
 
 ## W praktyce
 
 > [!primary]
 >
-> Każda faktura jest wysyłana e-mailem. Jest ona dostępna pod linkiem. Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), uwierzytelniając Twój adres. Każda faktura jest również dostępna w zakładce `Dashboard`{.action} w Panelu klienta.
+> Każda faktura jest wysyłana e-mailem. Jest ona dostępna pod linkiem. Zaloguj się do [Panelu klienta OVHcloud](/links/manager), uwierzytelniając Twój adres. Każda faktura jest również dostępna w zakładce `Dashboard`{.action} w Panelu klienta.
 >
 
 ### Informacje na Twojej fakturze
@@ -52,7 +52,7 @@ Faktura za usługę OVHcloud jest wysyłana po opłaceniu zamówienia lub odnowi
 
 #### Wyświetlanie i zarządzanie fakturami
 
-Aby sprawdzić faktury, przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij Twoją nazwę w prawym górnym rogu ekranu, a następnie w nowym menu, które się pojawi, kliknij `Faktury`{.action}.
+Aby sprawdzić faktury, przejdź do [Panelu klienta OVHcloud](/links/manager). Kliknij Twoją nazwę w prawym górnym rogu ekranu, a następnie w nowym menu, które się pojawi, kliknij `Faktury`{.action}.
 
 ![Płatności](images/hubinvoices.png){.thumbnail}
 
@@ -122,7 +122,7 @@ Zostanie wówczas [utworzone zamówienie](/pages/account_and_service_management/
 > Aby zlecić rezygnację z usługi w dniu jej wygaśnięcia, postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
 >
 
-Jeśli otrzymałeś fakturę, której nie uważasz za słuszną i chcesz zwrócić się o jej zwrot lub skorzystać z prawa do odstąpienia od umowy (/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#korzystanie-z-prawa-do-odstapienia-od-umowy), możesz złożyć skargę w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), z zastrzeżeniem zastosowania naszych [Ogólnych warunków korzystania z Usług](https://contract.eu.ovhapis.com/1.0/pdf/contrat_genServices-pl.pdf).
+Jeśli otrzymałeś fakturę, której nie uważasz za słuszną i chcesz zwrócić się o jej zwrot lub skorzystać z prawa do odstąpienia od umowy (/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#korzystanie-z-prawa-do-odstapienia-od-umowy), możesz złożyć skargę w [Panelu klienta OVHcloud](/links/manager), z zastrzeżeniem zastosowania naszych [Ogólnych warunków korzystania z Usług](https://contract.eu.ovhapis.com/1.0/pdf/contrat_genServices-pl.pdf).
 <br> Kliknij w prawym górnym rogu ekranu Twojej nazwy użytkownika, a następnie kliknij przycisk `Utwórz zgłoszenie`{.action}.
 
 ### Monitoruj płatności

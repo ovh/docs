@@ -12,7 +12,7 @@ This tutorial explains how to configure Grafana to use the API and how make call
 ## Requirements
 
 - A [Public Cloud project](https://www.ovhcloud.com/en-sg/public-cloud/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - A Grafana database running on your OVHcloud Public Cloud project (see [this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) to create a managed Grafana)
 
 ## Instructions

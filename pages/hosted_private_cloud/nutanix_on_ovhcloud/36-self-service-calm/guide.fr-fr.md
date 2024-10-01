@@ -16,7 +16,7 @@ updated: 2024-05-13
 ## Prérequis
 
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Être connecté sur le cluster via Prism Central.
 - Avoir des licences Self Service (CALM). Ces licences sont disponibles dans l'offre Nutanix on OVHcloud packagée (avec des limitations pour le pack **Starter**).
 - Posséder un VLAN supplémentaire dans votre cluster qui distribue des adresses IP en IPAM et possède un accès à Internet.

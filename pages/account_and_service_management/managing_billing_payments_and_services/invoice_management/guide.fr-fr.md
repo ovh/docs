@@ -12,7 +12,7 @@ OVHcloud met à votre disposition un espace vous permettant de consulter, gérer
 
 > [!primary]
 >
-> En fonction de votre lieu de résidence et de sa législation en vigueur, ainsi que du ou des produits concernés, il est possible que certaines parties de ce guide varient et/ou ne s’appliquent pas selon votre situation. Si vous avez le moindre doute, référez-vous à vos contrats OVHcloud disponibles dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) (Cliquez en haut à droite de votre écran sur votre nom puis, dans le menu contextuel, sur `Gestion des services`{.action} puis sur l'onglet `Contrats`{.action}).
+> En fonction de votre lieu de résidence et de sa législation en vigueur, ainsi que du ou des produits concernés, il est possible que certaines parties de ce guide varient et/ou ne s’appliquent pas selon votre situation. Si vous avez le moindre doute, référez-vous à vos contrats OVHcloud disponibles dans votre [espace client OVHcloud](/links/manager) (Cliquez en haut à droite de votre écran sur votre nom puis, dans le menu contextuel, sur `Gestion des services`{.action} puis sur l'onglet `Contrats`{.action}).
 >
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/696213687?h=78a6ea1e6e&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
@@ -20,13 +20,13 @@ OVHcloud met à votre disposition un espace vous permettant de consulter, gérer
 
 ## Prérequis
 
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) en tant que [contact facturation](/pages/account_and_service_management/account_information/managing_contacts) de votre service.
+- Être connecté à l'[espace client OVHcloud](/links/manager) en tant que [contact facturation](/pages/account_and_service_management/account_information/managing_contacts) de votre service.
 
 ## En pratique
 
 > [!primary]
 >
-> Chaque facture vous est envoyée par e-mail et accessible via un lien cliquable. Vous pourrez alors y accéder en vous authentifiant à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Toute facture reste également disponible depuis l'onglet `Tableau de bord`{.action} de votre espace client.
+> Chaque facture vous est envoyée par e-mail et accessible via un lien cliquable. Vous pourrez alors y accéder en vous authentifiant à votre [espace client OVHcloud](/links/manager). Toute facture reste également disponible depuis l'onglet `Tableau de bord`{.action} de votre espace client.
 >
 
 ### Comprendre votre facture
@@ -49,7 +49,7 @@ La facture de votre service OVHcloud vous est envoyée suite au règlement d'une
 
 #### Consulter et gérer ses factures
 
-Pour consulter vos factures, rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez sur votre nom en haut à droite de votre écran puis, dans le nouveau menu qui apparaît, sur `Factures`{.action}.
+Pour consulter vos factures, rendez-vous dans votre [espace client OVHcloud](/links/manager). Cliquez sur votre nom en haut à droite de votre écran puis, dans le nouveau menu qui apparaît, sur `Factures`{.action}.
 
 ![Facturation](images/hubinvoices.png){.thumbnail}
 
@@ -124,7 +124,7 @@ Un [bon de commande de régularisation](/pages/account_and_service_management/ma
 > Pour demander la résiliation de votre service à échéance, suivez les instructions de ce [guide](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
 >
 
-Si vous avez reçu une facture que vous ne considérez pas comme légitime et souhaitez en demander le remboursement, ou faire valoir votre [droit de rétractation](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#appliquer-le-droit-de-retractation), vous pouvez effectuer une réclamation via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), sous réserve de l'application de nos [Conditions Générales de Service](https://contract.eu.ovhapis.com/1.0/pdf/contrat_genServices-fr.pdf).
+Si vous avez reçu une facture que vous ne considérez pas comme légitime et souhaitez en demander le remboursement, ou faire valoir votre [droit de rétractation](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#appliquer-le-droit-de-retractation), vous pouvez effectuer une réclamation via votre [espace client OVHcloud](/links/manager), sous réserve de l'application de nos [Conditions Générales de Service](https://contract.eu.ovhapis.com/1.0/pdf/contrat_genServices-fr.pdf).
 <br> Cliquez en haut à droite de votre écran sur votre nom, puis sur `Créer un ticket`{.action}.
 
 ### Suivre vos paiements

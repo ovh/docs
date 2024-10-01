@@ -23,7 +23,7 @@ You can install this product on your OVHcloud infrastructure to take advantage o
 ## Requirements
 
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/) to receive login credentials
-- A user account with access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
+- A user account with access to the [OVHcloud Control Panel](/links/manager)
 - A user account with access to vSphere
 - A VLAN with internet access and a DHCP server
 - You must have these resources:

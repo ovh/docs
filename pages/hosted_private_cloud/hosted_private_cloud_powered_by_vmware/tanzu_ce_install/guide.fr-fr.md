@@ -19,7 +19,7 @@ Vous pouvez déployer ce produit sur votre infrastructure OVHcloud pour profiter
 ## Prérequis
 
 - Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
-- Avoir un identifiant actif dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Avoir un identifiant actif dans l'[espace client OVHcloud](/links/manager)
 - Avoir un identifiant actif dans vSphere
 - Avoir déployé une [NSX Edge Services Gateway](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx_deploying_edge_gateway)
 - Configurer le service [DHCP](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx_configurer_le_dhcp_sur_une_edge_gateway) sur la NSX Gateway
@@ -52,7 +52,7 @@ Pour notre exemple, la NSX Edge Services Gateway est paramétrée comme suit ave
 - Une règle SNAT traduit le réseau 172.16.13.1/24 par l'adresse publique xxx.xxx.xxx.226 pour l'accès externe<br>
 ![règle SNAT](images/en03nsxsnat.png){.thumbnail}
 
-Dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans l'onglet `Sécurité`{.action} de votre Hosted Private Cloud, ajoutez les adresses IP publiques utilisées à la liste des adresses autorisées à se connecter.<br>
+Dans l'[espace client OVHcloud](/links/manager), dans l'onglet `Sécurité`{.action} de votre Hosted Private Cloud, ajoutez les adresses IP publiques utilisées à la liste des adresses autorisées à se connecter.<br>
 Les adresses apparaîtront comme « Autorisé et mis en place ».
 
 ![adresses](images/en00ipsec.png){.thumbnail}

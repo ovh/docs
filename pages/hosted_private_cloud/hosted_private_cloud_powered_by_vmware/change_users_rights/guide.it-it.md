@@ -12,11 +12,11 @@ Il servizio Private Cloud di OVHcloud permette di assegnare agli utenti permessi
 ## Prerequisiti
 
 * Disporre di una soluzione [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/){.external}
-* Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+* Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 
 ## Procedura
 
-Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e, nella sezione `Hosted Private Cloud`{.action}, clicca su `Private Cloud`{.action} nella colonna a sinistra e seleziona il servizio su cui apportare la modifica.
+Accedi allo [Spazio Cliente](/links/manager){.external} e, nella sezione `Hosted Private Cloud`{.action}, clicca su `Private Cloud`{.action} nella colonna a sinistra e seleziona il servizio su cui apportare la modifica.
 
 Clicca sulla scheda `Utenti`{.action} e poi sui tre puntini in corrispondenza dell’utente in questione.
 

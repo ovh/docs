@@ -15,7 +15,7 @@ In dieser Anleitung geben wir Ihnen einen Überblick über die Verwaltung Ihrer 
 **Diese Anleitung erklärt, wie Sie eine Snapshot-Policy erstellen, auf Ihr Volume anwenden, auf Ihr Volume anwenden, modifizieren und löschen.**
 
 - Sie verfügen über einen OVHcloud Enterprise File Storage mit verfügbarem Volume.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## Grundlagen
 
@@ -26,7 +26,7 @@ Eine Snapshot-Policy erlaubt es, die Erstellung von Snapshots anhand verschieden
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie `Bare Metal Cloud`{.action} in der oberen Navigationsleiste aus. Öffnen Sie `Storage und Backup`{.action}, dann `Enterprise File Storage`{.action} im linken Menü und wählen Sie Ihre Dienstleistung in der Liste aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und wählen Sie `Bare Metal Cloud`{.action} in der oberen Navigationsleiste aus. Öffnen Sie `Storage und Backup`{.action}, dann `Enterprise File Storage`{.action} im linken Menü und wählen Sie Ihre Dienstleistung in der Liste aus.
 
 ### Snapshot-Policy erstellen
 

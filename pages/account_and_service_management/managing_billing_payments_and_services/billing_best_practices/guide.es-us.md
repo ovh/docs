@@ -17,7 +17,7 @@ Esta guía explica los requisitos necesarios para una buena gestión de su cuent
 ## Requisitos
 
 - Tener uno o más servicios de OVHcloud activos.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 
@@ -49,7 +49,7 @@ Asegúrese de que su dirección de correo electrónico esté siempre **actualiza
 > Añada también un **email de seguridad** a sus datos personales para evitar perder el acceso a su cuenta de cliente de OVHcloud.
 >
 
-También puede acceder a los mensajes de correo enviados por OVHcloud desde su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).<br>
+También puede acceder a los mensajes de correo enviados por OVHcloud desde su [área de cliente de OVHcloud](/links/manager).<br>
 Haga clic en su nombre en la esquina superior derecha de su pantalla y, seguidamente, en el menú de la derecha, haga clic en `Emails de servicio`{.action}.
 
 ![service_emails](images/service_emails.png){.thumbnail}
@@ -58,7 +58,7 @@ Haga clic en su nombre en la esquina superior derecha de su pantalla y, seguidam
 
 > [!primary]
 >
-> Para evitar interrupciones del servicio y garantizar el buen funcionamiento de la renovación automática, [guarde una forma de pago](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) en su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+> Para evitar interrupciones del servicio y garantizar el buen funcionamiento de la renovación automática, [guarde una forma de pago](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) en su [área de cliente de OVHcloud](/links/manager).
 >
 > Compruebe regularmente que su forma de pago es **válida**.
 >
@@ -72,7 +72,7 @@ Si decide no activar la renovación automática, recibirá notificaciones por co
 
 ### Seguimiento de sus pedidos
 
-¿Sabía que podía [seguir sus pedidos](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders) en su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)?<br>
+¿Sabía que podía [seguir sus pedidos](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders) en su [área de cliente de OVHcloud](/links/manager)?<br>
 En la pestaña `Panel de control`{.action} del menú superior de su pantalla, haga clic en `Ver mis pedidos`{.action}.
 
 ![viewmyorders](images/viewmyorders.png){.thumbnail}
@@ -81,7 +81,7 @@ Le informaremos de las etapas de la entrega y sabrá si es necesario realizar al
 
 ### Baja de servicios
 
-Si quiere dejar de utilizar uno de sus servicios, puede darlo de baja, pasar la renovación a modo manual o eliminarlo inmediatamente desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+Si quiere dejar de utilizar uno de sus servicios, puede darlo de baja, pasar la renovación a modo manual o eliminarlo inmediatamente desde el [área de cliente de OVHcloud](/links/manager).
 
 Haga clic en su nombre en la esquina superior derecha de su pantalla y, seguidamente, en `Productos y servicios`{.action}. En el lado derecho de su pantalla, haga clic en el botón `...`{.action} correspondiente al servicio en el que quiera realizar la acción y seleccione uno de los siguientes botones:
 

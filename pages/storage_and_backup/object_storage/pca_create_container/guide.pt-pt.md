@@ -23,13 +23,13 @@ O primeiro passo é a criação de um container que irá agrupar os seus ficheir
 
 ## Requisitos
 
-- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Estar ligado à [Área de Cliente OVHcloud](/links/manager){.external}.
 
 ## Instruções
 
 ### Criação de um container Public Cloud Archive a partir da Área de Cliente OVHcloud
 
-Ligue-se à sua [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, aceda à secção `Public Cloud`{.action} e selecione o projeto Public Cloud em causa. A seguir, clique em `Cloud Archive`{.action} na barra de navegação à esquerda, na secção `Storage`.
+Ligue-se à sua [Área de Cliente](/links/manager){.external}, aceda à secção `Public Cloud`{.action} e selecione o projeto Public Cloud em causa. A seguir, clique em `Cloud Archive`{.action} na barra de navegação à esquerda, na secção `Storage`.
 
 Se se tratar do seu primeiro container:
 

@@ -18,7 +18,7 @@ A OVH disponibiliza templates Windows e SQL server (em formato OVF) que pode usa
 ## Requisitos
 
 - Ter acesso ao web client ou ao thick client, consoante a versão utilizada.
-- [Ter ativado as licenças Windows](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#windows-licence){.external} na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} (separador `Licença Windows`{.action} do datacenter). 
+- [Ter ativado as licenças Windows](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#windows-licence){.external} na [Área de Cliente OVH](/links/manager){.external} (separador `Licença Windows`{.action} do datacenter). 
 
 ## Instruções
 

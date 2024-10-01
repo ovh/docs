@@ -29,7 +29,7 @@ In this guide you will:
 - Fix common issues
 - Store report on OVHcloud Object Storage
 
-You can use the *Reset cluster* function in the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} to reinitialize your cluster before following this tutorial.
+You can use the *Reset cluster* function in the Public Cloud section of the [OVHcloud Control Panel](/links/manager){.external} to reinitialize your cluster before following this tutorial.
 
 ## Requirements
 
@@ -302,7 +302,7 @@ In order to store your Popeye reports on an OVHcloud Object Storage, and general
 
 In order to do that you will create an OpenStack user.
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), go to the Public Cloud section and select the Public Cloud project concerned.
+Log in to the [OVHcloud Control Panel](/links/manager), go to the Public Cloud section and select the Public Cloud project concerned.
 
 Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Users & Roles`{.action} in the left-hand menu and click on `+ Add user`{.action}.
 

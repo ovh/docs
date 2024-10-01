@@ -13,7 +13,7 @@ To enhance security for your Managed Bare Metal infrastructure, you can restrict
 ## Requirements
 
 - a [Managed Bare Metal infrastructure](https://www.ovhcloud.com/en-sg/managed-bare-metal/)
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
+- access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 

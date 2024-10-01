@@ -13,7 +13,7 @@ This article is meant to guide you through the process of disabling and enabling
 
 ## Requirements
 
-- a user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)).
+- a user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](/links/manager)).
 - a deployed [NSX Edge Services Gateway](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx_deploying_edge_gateway).
 
 ## Instructions
@@ -66,7 +66,7 @@ Next, we will take a look at how to do this same process via VMware's API.
 
 To begin, download [Postman](https://www.postman.com/product/rest-client/) or another supported REST API client and either install the app or integrate it into your browser. Set authentication to be basic with your username and password.
 
-You can ensure the username has access to NSX via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au). This will be the same username and password used for your web-client login.
+You can ensure the username has access to NSX via the [OVHcloud Control Panel](/links/manager). This will be the same username and password used for your web-client login.
 
 Add one header Content-Type application/xml.<br>
 Refer to page 14 of the following document: [https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/nsx\_64\_api.pdf](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/nsx_64_api.pdf)

@@ -13,13 +13,13 @@ updated: 2020-05-27
 ## Requisitos
 
 - Dispor de uma infraestrutura Private Cloud com versão 6.0 ou superior.
-- Aceder à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na secção `Serviços Dedicados`{.action}.
+- Aceder à [Área de Cliente OVHcloud](/links/manager), na secção `Serviços Dedicados`{.action}.
 
 ## Instruções
 
 ### Ativar a opção de segurança
 
-Para poder ativar a certificação PCI DSS no seu Private Cloud, deve ter ativado a opção de segurança correspondente. Para verificar isto, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e certifique-se de que está na secção “Serviços Dedicados”. Clique em `Private Cloud`{.action} na coluna à esquerda e selecione o seu Private Cloud. 
+Para poder ativar a certificação PCI DSS no seu Private Cloud, deve ter ativado a opção de segurança correspondente. Para verificar isto, aceda à [Área de Cliente OVHcloud](/links/manager) e certifique-se de que está na secção “Serviços Dedicados”. Clique em `Private Cloud`{.action} na coluna à esquerda e selecione o seu Private Cloud. 
 
 A seguir, na janela `Informações gerais`{.action}, verifique que a opção <b>Payment Card Industry Data Security Standard (PCI DSS) </b>da parte “Opções de segurança” está ativada. **Tenha em conta que não é possível ativar simultaneamente várias opções de segurança num mesmo Private Cloud.**
 

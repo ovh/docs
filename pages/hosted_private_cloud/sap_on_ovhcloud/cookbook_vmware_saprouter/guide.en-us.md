@@ -10,7 +10,7 @@ This guides provides instructions for deploying an SAProuter on VMware on OVHclo
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we).
+- Access to the [OVHcloud Control Panel](/links/manager).
 - A [VMware on OVHcloud solution](https://www.ovhcloud.com/en/enterprise/products/hosted-private-cloud/) deployed.
 - Access to NSX with management rights.
 
@@ -25,7 +25,7 @@ If you didn't create a Network Firewall and a firewall rule for the public IP ad
 > [!tabs]
 > **Step 1**
 >>
->> Connect to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), open the `Bare Metal Cloud`{.action} tab, expand the `Network`{.action} menu then click on `IP`{.action}.
+>> Connect to your [OVHcloud Control Panel](/links/manager), open the `Bare Metal Cloud`{.action} tab, expand the `Network`{.action} menu then click on `IP`{.action}.
 >>
 >> If you have many public IP addresses or services, you can filter them with the `All service types`{.action} value and select `Hosting Private Cloud (VMware)`{.action}, or with the `All services`{.action} value and select your VMware on OVHcloud solution.
 >>

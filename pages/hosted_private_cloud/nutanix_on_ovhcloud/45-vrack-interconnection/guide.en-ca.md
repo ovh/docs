@@ -16,7 +16,7 @@ updated: 2022-09-28
 
 ## Requirements
 
-- You must be logged in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
+- You must be logged in to your [OVHcloud Control Panel](/links/manager).
 - You must be connected to your clusters via Prism Central.
 
 ## Instructions
@@ -73,7 +73,7 @@ Access to Prism Central is maintained using the Load Balancer.
 
 This operation involves deleting the vRack assignment in Roubaix and then extending the vRack from Gravelines to Roubaix. You can modify the vRack via the OVHcloud Control Panel. 
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca). 
+Log in to your [OVHcloud Control Panel](/links/manager). 
 
 #### Deleting Roubaix vRack elements.
 

@@ -24,7 +24,7 @@ Puede importar una dirección Additional IP que esté asociada a otro servicio d
 ## Requisitos
 
 - Tener un [proyecto de Public Cloud](https://www.ovhcloud.com/es/public-cloud/) en su cuenta de OVHcloud
-- Tener acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}
+- Tener acceso al [área de cliente de OVHcloud](/links/manager){.external}
 - Tener una [dirección Additional IP](https://www.ovhcloud.com/es/bare-metal/ip/)
 
 > [!warning]
@@ -33,7 +33,7 @@ Puede importar una dirección Additional IP que esté asociada a otro servicio d
 
 ## Procedimiento
 
-Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y seleccione su proyecto en la sección `Public Cloud `{.action}.
+Conéctese al [área de cliente de OVHcloud](/links/manager) y seleccione su proyecto en la sección `Public Cloud `{.action}.
 
 En el menú de la izquierda, abra `Public IPs`{.action} en `Network`.
 

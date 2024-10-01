@@ -11,7 +11,7 @@ Le service OVHcloud Load Balancer agit par défaut comme un mandataire ou « Pro
 ## Prérequis
 
 - Posséder une offre [OVHcloud Load balancer](https://www.ovh.com/fr/solutions/load-balancer/) dans votre compte OVHcloud.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Être connecté à l'[API OVHcloud](https://api.ovh.com/){.external}.
 
 ## En pratique
@@ -33,7 +33,7 @@ Les redirections personnalisées peuvent être spécifiées via l'espace client 
 
 ### Ajouter une redirection personnalisée depuis l'espace client OVHcloud
 
-Il est possible de définir une redirection personnalisée depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie `Bare Metal Cloud`{.action} puis `Load Balancer`{.action}.
+Il est possible de définir une redirection personnalisée depuis l'[espace client OVHcloud](/links/manager){.external} dans la partie `Bare Metal Cloud`{.action} puis `Load Balancer`{.action}.
 Cela peut-être effectué tant sur un nouveau frontend pendant sa création, que sur un frontend existant.
 
 #### Ajout d'un nouveau frontend

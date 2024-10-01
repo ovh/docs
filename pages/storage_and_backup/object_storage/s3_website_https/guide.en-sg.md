@@ -23,7 +23,7 @@ The following are the prerequisites to have in order to enable https:
 - A registered [domain name](https://www.ovhcloud.com/en-sg/domains/).
 - You need to order a TLS certificate associated with your domain name at OVHcloud (optional if you already have a trusted TLS certificate associated with your domain name).
 - You have to [enable web hosting on your S3 bucket](/pages/storage_and_backup/object_storage/s3_website).
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg).
+- Access to the [OVHcloud Control Panel](/links/manager).
 
 ## Instructions
 
@@ -31,7 +31,7 @@ The following are the prerequisites to have in order to enable https:
 
 #### Step 1.1 - Add your certificate
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), go to the `Bare Metal Cloud`{.action} section and click `Load Balancer`{.action}.
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and click `Load Balancer`{.action}.
 
 Select your Load Balancer from the list, click the `SSL certificates`{.action} tab then click `Add an SSL certificate`{.action}.
 

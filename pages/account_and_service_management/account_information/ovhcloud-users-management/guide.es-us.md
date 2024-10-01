@@ -76,7 +76,7 @@ Por ejemplo: **1234-567-89/johnsmith**.
 
 ![users-management](images/usersmanagement3.png){.thumbnail}
 
-A partir de ese momento, el usuario creado podrá iniciar sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} con este identificador. 
+A partir de ese momento, el usuario creado podrá iniciar sesión en el [área de cliente de OVHcloud](/links/manager){.external} con este identificador. 
 
 También podrá cambiar su contraseña y proteger el acceso a su cuenta activando la doble autenticación (esta última medida solo se aplicará a su acceso como usuario). A tal fin, puede consultar [la guía sobre la instrumentación de la doble autenticación](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa){.external}.
 

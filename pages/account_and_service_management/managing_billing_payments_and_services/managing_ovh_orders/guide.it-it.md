@@ -10,18 +10,18 @@ updated: 2022-05-06
 
 ## Obiettivo
 
-Lo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) permette di eseguire un ordine e interagire con esso.
+Lo [Spazio Cliente OVHcloud](/links/manager) permette di eseguire un ordine e interagire con esso.
 
 **Questa guida ti mostra come gestire gli ordini dallo Spazio Cliente OVHcloud.**
 
 > [!primary]
 >
-> Ti ricordiamo che in base al luogo di residenza, alla normativa vigente e ai servizi attivati, è possibile che alcune sezioni di questa guida varino o non siano applicabili alla tua situazione. In caso di necessità, consulta i contratti OVHcloud disponibili nello [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it): clicca sul tuo nome in alto a destra e poi su `Gestione dei servizi`{.action} nel menu contestuale e sulla scheda `Contratti`{.action}.
+> Ti ricordiamo che in base al luogo di residenza, alla normativa vigente e ai servizi attivati, è possibile che alcune sezioni di questa guida varino o non siano applicabili alla tua situazione. In caso di necessità, consulta i contratti OVHcloud disponibili nello [Spazio Cliente](/links/manager): clicca sul tuo nome in alto a destra e poi su `Gestione dei servizi`{.action} nel menu contestuale e sulla scheda `Contratti`{.action}.
 >
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Aver effettuato almeno un ordine in OVHcloud
 
 ## Procedura
@@ -39,11 +39,11 @@ Il buono d'ordine viene creato al momento dell'ordine. Elenca i prodotti ordinat
 |3|Metodi di pagamento registrati sul tuo account cliente. Per maggiori informazioni, consulta la guida [Gestire i metodi di pagamento](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).|
 |4|Metodi di pagamento disponibili. Verrai proposto solo per i metodi di pagamento autorizzati nel paese di origine dell'account o quelli associati al tipo di account registrato.|
 
-È possibile recuperare il buono d'ordine in qualsiasi momento direttamente dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), come spiegato di seguito.
+È possibile recuperare il buono d'ordine in qualsiasi momento direttamente dallo [Spazio Cliente OVHcloud](/links/manager), come spiegato di seguito.
 
 ### Visualizza i tuoi ordini nello Spazio Cliente OVHcloud
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e, nella scheda `Dashboard`{.action}, clicca su `Visualizza i tuoi ordini`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager) e, nella scheda `Dashboard`{.action}, clicca su `Visualizza i tuoi ordini`{.action}.
 
 ![Spazio Cliente](images/huborders.png){.thumbnail}
 
@@ -73,7 +73,7 @@ Per visualizzare il buono d’ordine in formato HTML, clicca sui tre puntini `..
 
 ### Monitora il tuo ordine
 
-Una volta generato il buono d'ordine, è possibile eseguire l'ordine direttamente dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it):
+Una volta generato il buono d'ordine, è possibile eseguire l'ordine direttamente dallo [Spazio Cliente OVHcloud](/links/manager):
 
 * Clicca sulla tua `dashboard`{.action}, poi su `Visualizza i tuoi ordini`{.action} e infine su `...`{.action} davanti al tuo ordine.
 * Seleziona `Stato dell'ordini`{.action}. Il controllo dell'ordine può essere visualizzato anche cliccando sullo stato dell'ordine nella colonna `Stato`.
@@ -102,7 +102,7 @@ Troverai tutte le modalità di applicazione del diritto di recesso nel prosieguo
 > Non si applica a determinati servizi (in particolare i [domini](https://www.ovhcloud.com/it/domains/) e i [certificati SSL Sectigo](https://www.ovhcloud.com/it/web-hosting/options/ssl/)). Al momento dell'ordine di questi prodotti, ti è quindi chiesto di rinunciare espressamente al tuo diritto di recesso, conformemente all'articolo L.221-28 del Codice del Consumo francese.
 >
 
-Se i criteri di idoneità al diritto di recesso sono soddisfatti, il diritto di recesso può essere esercitato direttamente dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it):
+Se i criteri di idoneità al diritto di recesso sono soddisfatti, il diritto di recesso può essere esercitato direttamente dallo [Spazio Cliente OVHcloud](/links/manager):
 
 * Clicca sulla tua `Dashboard`{.action}, poi su `Visualizza i tuoi ordini`{.action} e infine su `...`{.action} davanti al tuo ordine.
 * Seleziona `Annulla l’ordine`{.action}.

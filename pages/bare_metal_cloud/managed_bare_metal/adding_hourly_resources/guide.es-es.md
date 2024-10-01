@@ -13,7 +13,7 @@ La solución [Managed Bare Metal](https://www.ovhcloud.com/es-es/managed-bare-me
 ## Requisitos
 
 * Tener contratado un servicio [Managed Bare Metal](https://www.ovhcloud.com/es-es/managed-bare-metal/){.external}.
-* [Conceder al usuario el permiso "Adición de recursos"](/pages/bare_metal_cloud/managed_bare_metal/change-user-rights) para el datacenter correspondiente desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+* [Conceder al usuario el permiso "Adición de recursos"](/pages/bare_metal_cloud/managed_bare_metal/change-user-rights) para el datacenter correspondiente desde el [área de cliente de OVHcloud](/links/manager){.external}.
 * Estar conectado al cliente vSphere.
 
 ## Procedimiento

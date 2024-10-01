@@ -20,7 +20,7 @@ This guide will cover the creation of a new notebook from the OVHcloud Control P
 For the OVHcloud Control Panel:
 
 - A [Public Cloud project](https://www.ovhcloud.com/pt/public-cloud/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - A Public Cloud user with the `administrator` role
 - Data Processing activated (see [How to activate the Data Processing service](/pages/public_cloud/data_analytics/data_processing/30_HOWTO_activate_project) for details)
 
@@ -44,7 +44,7 @@ You can create notebooks in the [OVHcloud Control Panel](#controlpanel) or use t
 
 ### OVHcloud Control Panel <a name="controlpanel"></a>
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
 Access the administration UI for your OVHcloud Data Processing by clicking on `Data Processing`{.action} (1) in the left-hand menu and then click on `Create a notebook`{.action} (2).
 

@@ -14,7 +14,7 @@ Pode utilizar a autenticação SSO (*Single Sign-On*) para se ligar à sua conta
 
 - Ser administrador de um serviço Okta
 - Ter uma [conta OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 
 ## Instruções
 
@@ -78,7 +78,7 @@ O seu serviço Okta confia agora na OVHcloud enquanto prestadora de serviços. O
 
 ### Registar o Okta na conta OVHcloud e configurar a ligação
 
-Para adicionar o Okta como fornecedor de identidade de confiança, deve fornecer os metadados do fornecedor de identidade na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+Para adicionar o Okta como fornecedor de identidade de confiança, deve fornecer os metadados do fornecedor de identidade na sua [Área de Cliente OVHcloud](/links/manager).
 
 Clique no nome da sua conta no canto superior direito e, a seguir, no seu nome na barra lateral.
 
@@ -145,7 +145,7 @@ De seguida, poderá desligar a sua conta e voltar a ligar-se ao seu Okta enquant
 
 ### Ligação via SSO
 
-Na [página de identificação da OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), introduza o seu [identificador](/pages/account_and_service_management/account_information/ovhcloud-account-creation#qual-e-o-meu-identificador-de-cliente) seguido de **/idp** sem password e clique no botão `Ligação`{.action}.
+Na [página de identificação da OVHcloud](/links/manager), introduza o seu [identificador](/pages/account_and_service_management/account_information/ovhcloud-account-creation#qual-e-o-meu-identificador-de-cliente) seguido de **/idp** sem password e clique no botão `Ligação`{.action}.
 
 ![Ligação à Federação OVHcloud](images/ovhcloud_federation_login_1.png){.thumbnail}
 

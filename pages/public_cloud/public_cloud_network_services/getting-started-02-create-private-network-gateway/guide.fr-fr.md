@@ -8,14 +8,14 @@ updated: 2024-03-08
 
 Une [Gateway](https://www.ovhcloud.com/fr/public-cloud/gateway/) offre une méthode de connexion sortante sécurisée depuis vos instances en réseau privé, ou bien encore la possibilité d’utiliser des adresses Floating IP avec votre instance ou votre Load Balancer pour l’exposition de services.
 
-Ces opérations peuvent être réalisées depuis l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), l’[API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api) ou l’[API OVHcloud](https://eu.api.ovh.com/).
+Ces opérations peuvent être réalisées depuis l’[espace client OVHcloud](/links/manager), l’[API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api) ou l’[API OVHcloud](https://eu.api.ovh.com/).
 
 **Apprenez à créer un réseau privé avec une Gateway**
 
 ## Prérequis
 
 - Posséder un [projet Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud
-- Avoir accès à l’[API OVHcloud](https://eu.api.ovh.com/), à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou à l’environnement OpenStack ([Tutoriel](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api))
+- Avoir accès à l’[API OVHcloud](https://eu.api.ovh.com/), à l’[espace client OVHcloud](/links/manager) ou à l’environnement OpenStack ([Tutoriel](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api))
 - Pour OpenStack, il est nécessaire de mettre en place le client OpenStack
 
 ## En pratique
@@ -28,7 +28,7 @@ Ces opérations peuvent être réalisées depuis l’[espace client OVHcloud](ht
 > [!tabs]
 > **Etape 1**
 >>
->> Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et ouvrez votre projet `Public Cloud`{.action}.
+>> Connectez-vous à votre [espace client OVHcloud](/links/manager) et ouvrez votre projet `Public Cloud`{.action}.
 >>
 >> Cliquez sur `Gateway`{.action} dans le menu de gauche sous l'onglet **Network**.
 >>

@@ -22,7 +22,7 @@ updated: 2024-04-15
 
 ### Using the Control Panel
 
-To create an Object Storage bucket, first log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and open your `Public Cloud`{.action} project. Click on `Object Storage`{.action} in the navigation bar on the left and then on the `My containers`{.action} tab.
+To create an Object Storage bucket, first log in to your [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project. Click on `Object Storage`{.action} in the navigation bar on the left and then on the `My containers`{.action} tab.
 
 ![My Dashboard containers](images/highperf-create-container-2022092808185322.png)
 

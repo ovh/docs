@@ -17,7 +17,7 @@ O [vRack](https://www.ovh.pt/solucoes/vrack/) é uma rede privada que lhe permit
 ## Requisitos
 
 - Dispor de um [projeto Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project)
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}
 - um [utilizador OpenStack](/pages/public_cloud/compute/create_and_delete_a_user) (opcional)
 - Conhecimentos básicos de rede
 
@@ -31,7 +31,7 @@ Em função do seu perfil técnico e das suas necessidades, terá de escolher qu
 
 ### Área de Cliente OVHcloud
 
-A [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) é uma interface completa e unicamente visual, o que a torna uma interface ideal se tiver apenas uma VLAN a gerir. Não poderá personalizar o intervalo de endereços IP privados que será apenas em 10.x.x.x/16.
+A [Área de Cliente OVHcloud](/links/manager) é uma interface completa e unicamente visual, o que a torna uma interface ideal se tiver apenas uma VLAN a gerir. Não poderá personalizar o intervalo de endereços IP privados que será apenas em 10.x.x.x/16.
 
 As VLAN serão implementadas de forma padrão em todas as zonas. Apenas terá a possibilidade de ativar ou não as gateways.
 
@@ -112,7 +112,7 @@ Uma vez o vRack ativado, este serviço será identificado como "pn-xxxxx".
 
 #### A partir da Área de Cliente OVHcloud
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, aceda à secção `Public Cloud`{.action} e selecione o projeto Public Cloud à sua escolha no canto superior esquerdo.
+Aceda à [Área de Cliente OVHcloud](/links/manager){.external}, aceda à secção `Public Cloud`{.action} e selecione o projeto Public Cloud à sua escolha no canto superior esquerdo.
 
 ![seleção do projeto](images/vrack2021-05.png){.thumbnail}
 
@@ -441,7 +441,7 @@ Assim, por exemplo, se tiver uma interface pública *eth0*, terá ainda uma inte
 
 ##### **A partir da Área de Cliente OVHcloud** 
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, aceda à secção `Public Cloud`{.action} e selecione o projeto Public Cloud em questão no canto superior esquerdo.
+Aceda à [Área de Cliente OVHcloud](/links/manager){.external}, aceda à secção `Public Cloud`{.action} e selecione o projeto Public Cloud em questão no canto superior esquerdo.
 
 Clique em `Instances`{.action} no menu lateral esquerdo. A seguir, clique no botão `...`{.action} à direita da instância em causa e, a seguir, em `Dados da instância`{.action}.
 

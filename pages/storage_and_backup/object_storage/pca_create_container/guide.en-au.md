@@ -19,13 +19,13 @@ The first step is to create a container that will hold your files.
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
 ### Creating a Public Cloud Archive container from the customer area
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then, click on `Cloud Archive`{.action} in the left-hand navigation bar under "Storage".
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then, click on `Cloud Archive`{.action} in the left-hand navigation bar under "Storage".
 
 If this is your first container :
 

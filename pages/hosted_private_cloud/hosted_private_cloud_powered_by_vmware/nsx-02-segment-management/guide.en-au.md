@@ -30,7 +30,7 @@ The segments are linked to transport zones that are predefined by OVHcloud.
 ## Requirements
 
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-au/enterprise/products/hosted-private-cloud/) to receive login credentials.
-- A user account with access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
+- A user account with access to the [OVHcloud Control Panel](/links/manager).
 - **NSX** deployed.
 
 ## Instructions

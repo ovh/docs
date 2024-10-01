@@ -16,7 +16,7 @@ The goal of this tutorial is to see how it is possible to deploy **Triton Infere
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - [ovhai CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) installed
 - An AI Training project created inside a [Public Cloud project](https://www.ovhcloud.com/it/public-cloud/) in your OVHcloud account
 - A [user for AI Training](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)

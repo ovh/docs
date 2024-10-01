@@ -10,12 +10,12 @@ In the OVHcloud Control Panel, you can save and manage different payment methods
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - A valid payment method
 
 ## Instructions <a name="payment_methods"></a>
 
-In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), click on your name in the top right-hand corner, then select `Payment method`{.action}.
+In the [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then select `Payment method`{.action}.
 
 ![hubpayment](images/hubpayment.png){.thumbnail}
 
@@ -109,14 +109,14 @@ Then delete the payment method using the ID you obtained in the previous step:
 >
 > For more information, please refer to our guide [Getting started with the OVHcloud API](/pages/manage_and_operate/api/first-steps).
 >
-> If you experience any difficulties finding your payment methods via the OVHcloud API, use the `Edit description`{.action} function by clicking on the button `...`{.action} next to your payment method in the [Payment method](#payment_methods) section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we).
+> If you experience any difficulties finding your payment methods via the OVHcloud API, use the `Edit description`{.action} function by clicking on the button `...`{.action} next to your payment method in the [Payment method](#payment_methods) section of the [OVHcloud Control Panel](/links/manager).
 >
 
 ### Prepaid account
 
 #### What is the prepaid account?
 
-The *prepaid account* is added to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) as soon as it is created. It allows you to credit your customer account in advance and use these funds to pay for your orders and renewal invoices.
+The *prepaid account* is added to your [OVHcloud Control Panel](/links/manager) as soon as it is created. It allows you to credit your customer account in advance and use these funds to pay for your orders and renewal invoices.
 
 By crediting your account regularly, you will ensure that your services will never be interrupted for default on their [automatic renewal](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#automatic-renewal).
 

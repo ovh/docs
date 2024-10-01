@@ -8,11 +8,11 @@ updated: 2020-03-06
 
 In this guide, we will see how to cancel a running job using the Data Processing page in the OVHcloud Manager.
 
-In this guide, we are assuming that you're using the [OVHcloud Manager](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external} to use Data Processing platform and you have already submitted a job.  
+In this guide, we are assuming that you're using the [OVHcloud Manager](/links/manager){.external} to use Data Processing platform and you have already submitted a job.  
 
 ## Requirements 
 
-- Access to [OVHcloud Manager](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}
+- Access to [OVHcloud Manager](/links/manager){.external}
 - A running job that has been already submitted to Data Processing
 
 ## Instructions

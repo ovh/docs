@@ -9,7 +9,7 @@ updated: 2022-12-12
 
 OVHcloud provides you with options to enhance the security of your OVHcloud Control Panel and your services.
 
-You can restrict access to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) to certain IP addresses.
+You can restrict access to your [OVHcloud Control Panel](/links/manager) to certain IP addresses.
 By setting this option and securing your account with [two-factor authentication](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa), you can optimally secure your OVHcloud Control Panel against intrusion attempts.
 
 **This guide explains how to secure your OVHcloud account by limiting the IP addresses authorised to access it.**
@@ -21,7 +21,7 @@ By setting this option and securing your account with [two-factor authentication
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - Knowledge of the [password management recommendations for accessing your account](/pages/account_and_service_management/account_information/manage-ovh-password)
 
 ## Instructions
@@ -52,7 +52,7 @@ If you are using a 4G/5G network as an addition, remember to also retrieve the I
 
 ### Step 2 - Set up access restriction by IP
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we). Click on your `first and last name` in the top right corner, **then** on your `initials` in the blue menu that appears on the right.
+Log in to your [OVHcloud Control Panel](/links/manager). Click on your `first and last name` in the top right corner, **then** on your `initials` in the blue menu that appears on the right.
 
 ![Access from Manager](images/ip1.png){.thumbnail}
 
@@ -81,7 +81,7 @@ There are two sections for setting IP restrictions:
 >
 > In the `Default rule`{.action} section, **never** validate the default rule in `Denied`{.action} status **without first authorising** at least one of your public IP addresses in the `Configured IPs` section.
 >
-> Otherwise, you will block **all public IPs (including yours)** without any exceptions. Any login requests to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) will be denied, and you will need to carry out an administrative procedure to unblock your access.
+> Otherwise, you will block **all public IPs (including yours)** without any exceptions. Any login requests to your [OVHcloud Control Panel](/links/manager) will be denied, and you will need to carry out an administrative procedure to unblock your access.
 >
 > Be extremely vigilant on this point.
 >

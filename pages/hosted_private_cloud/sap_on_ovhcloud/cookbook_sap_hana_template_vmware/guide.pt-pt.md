@@ -10,7 +10,7 @@ This guide provides instructions for deploying a SLES for SAP virtual machine wi
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - A [SAP HANA on Private Cloud solution](https://www.ovhcloud.com/pt/hosted-private-cloud/sap-hana/) deployed
 - A [Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) in your OVHcloud account with:
     - [An S3 Object Storage bucket](/pages/storage_and_backup/object_storage/s3_create_bucket) and [an S3 user](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creation-dun-utilsateur) with read right

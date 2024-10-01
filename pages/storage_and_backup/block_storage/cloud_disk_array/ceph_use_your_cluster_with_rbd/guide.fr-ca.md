@@ -55,7 +55,7 @@ Créer le fichier `/etc/ceph/ceph.client.<ceph_user_name>.keyring`
 key = <my_user_key>
 ```
 
-`<mon_X_IP>` doit être remplacé par des moniteurs IP que vous pouvez trouver sur le gestionnaire du [Cloud Disk Array](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Sous "Plateformes et services", sélectionnez votre groupe Ceph.
+`<mon_X_IP>` doit être remplacé par des moniteurs IP que vous pouvez trouver sur le gestionnaire du [Cloud Disk Array](/links/manager). Sous "Plateformes et services", sélectionnez votre groupe Ceph.
 
 `<my_user_key>` doit être remplacée par la clé d'utilisateur que vous pouvez trouver sur le gestionnaire de votre Cloud Disk Array.
 

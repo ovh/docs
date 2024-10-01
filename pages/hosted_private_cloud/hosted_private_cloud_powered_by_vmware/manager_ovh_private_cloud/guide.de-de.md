@@ -12,14 +12,14 @@ Das OVHcloud Kundencenter bietet zahlreiche Optionen für die Konfiguration Ihre
 
 ## Voraussetzungen
 
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt und befinden sich unter `Hosted Private Cloud`{.action} im Bereich `Hosted Private Cloud`{.action}.
+- Sie sind in Ihrem [OVHcloud Kundencenter](/links/manager){.external} eingeloggt und befinden sich unter `Hosted Private Cloud`{.action} im Bereich `Hosted Private Cloud`{.action}.
 - Sie verfügen über ein [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/){.external} Produkt.
 
 ## In der praktischen Anwendung
 
 ### Tab "Allgemeine Informationen"
 
-Im Menüpunkt `Hosted Hosted Private Cloud`{.action} im Bereich `Hosted Private Cloud`{.action} Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} finden Sie eine allgemeine Übersicht.
+Im Menüpunkt `Hosted Hosted Private Cloud`{.action} im Bereich `Hosted Private Cloud`{.action} Ihres [OVHcloud Kundencenters](/links/manager){.external} finden Sie eine allgemeine Übersicht.
 
 ![Allgemeine Informationen](images/controlpanel1.png){.thumbnail}
 

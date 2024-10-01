@@ -17,7 +17,7 @@ This guide will show you how to interconnect two Nutanix clusters, provided by O
 ## Requirements
 
 - Two Nutanix clusters provided by OVHcloud, on different sites
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - Access to your clusters via Prism Central
 - A different private IP addressing scheme applied per cluster
 - Being familiar with uses for an IPsec VPN using the [Nutanix Disaster Recovery Plan guide](/pages/hosted_private_cloud/nutanix_on_ovhcloud/43-disaster-recovery-plan-overview)
@@ -122,7 +122,7 @@ From the `More` menu at the top, click `Soft Shutdown`{.action}.
 
 Retrieve information about the OVHcloud gateway network settings.
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), select your Nutanix cluster, and find the information in the `IPFO` field.
+Log in to the [OVHcloud Control Panel](/links/manager), select your Nutanix cluster, and find the information in the `IPFO` field.
 
 ![Get IP Fail OVER](images/02-get-ipfailover.png){.thumbnail}
 
@@ -458,7 +458,7 @@ From the `More` menu at the top, click `Soft Shutdown`{.action}.
 
 Retrieve information about the OVHcloud gateway network settings.
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), select your Nutanix cluster, and find the information in the `IPFO` field.
+Log in to the [OVHcloud Control Panel](/links/manager), select your Nutanix cluster, and find the information in the `IPFO` field.
 
 ![Get IP Fail OVER](images/02-get-ipfailover.png){.thumbnail}
 

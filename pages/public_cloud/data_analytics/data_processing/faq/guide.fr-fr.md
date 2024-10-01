@@ -30,7 +30,7 @@ No matter your level of expertise in Python or Java programming, the Data Proces
 
 ### From which countries can customers order the Data Processing solution?
 
-They can order Data Processing via [OVHcloud EU or CA Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. 
+They can order Data Processing via [OVHcloud EU or CA Control Panel](/links/manager){.external}. 
 <br>However, the product is not available via the OVHcloud US Control Panel.
 
 ### From which regions is the Data processing solution available?

@@ -23,7 +23,7 @@ Per gestire i tuoi servizi accedi allo Spazio Cliente OVHcloud,
 
 ### Accedi allo Spazio Cliente OVHcloud
 
-Accedi alla [pagina di autenticazione OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, inserisci il tuo identificativo cliente (o il tuo indirizzo email principale) e la password.
+Accedi alla [pagina di autenticazione OVHcloud](/links/manager){.external}, inserisci il tuo identificativo cliente (o il tuo indirizzo email principale) e la password.
 
 ![identificativo cliente](images/log-in.png){.thumbnail}
 

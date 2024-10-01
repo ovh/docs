@@ -72,7 +72,7 @@ Si votre mot de passe est compromis, nous vous recommandons vivement de le [modi
 
 #### Depuis votre espace client OVHcloud
 
-- Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur votre nom en haut à droite dans votre espace client, puis sur vos initiales.
+- Connectez-vous à votre [espace client OVHcloud](/links/manager){.external}, cliquez sur votre nom en haut à droite dans votre espace client, puis sur vos initiales.
 
 ![manage-ovh-password](images/newhub2.png){.thumbnail}
 

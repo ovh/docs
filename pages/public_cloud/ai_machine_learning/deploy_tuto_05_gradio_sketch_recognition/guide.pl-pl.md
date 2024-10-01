@@ -23,7 +23,7 @@ Overview of the app:
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- Access to the [OVHcloud Control Panel](/links/manager).
 - An AI Deploy project created inside a [Public Cloud project](https://www.ovhcloud.com/pl/public-cloud/) in your OVHcloud account.
 - A [user for AI Deploy](/pages/public_cloud/ai_machine_learning/gi_01_manage_users).
 - [Docker](https://www.docker.com/get-started) installed on your local computer.

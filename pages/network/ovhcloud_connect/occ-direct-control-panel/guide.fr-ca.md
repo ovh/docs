@@ -18,11 +18,11 @@ OVHcloud Connect permet d’étendre votre réseau d’entreprise avec votre ré
 
 - Posséder une [offre OVHcloud Connect Direct](https://www.ovhcloud.com/fr-ca/network-security/ovhcloud-connect/)
 - Disposer d'un [vRack OVHcloud](https://www.ovhcloud.com/fr-ca/network/vrack/)
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 
 ## En pratique
 
-Connectez-vous à [l’espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, cliquez sur `Bare Metal Cloud`{.action} puis sélectionnez l'onglet `Network`{.action}. Ensuite, cliquez sur `OVHcloud Connect`{.action} puis sur votre offre.
+Connectez-vous à [l’espace client OVHcloud](/links/manager){.external}, cliquez sur `Bare Metal Cloud`{.action} puis sélectionnez l'onglet `Network`{.action}. Ensuite, cliquez sur `OVHcloud Connect`{.action} puis sur votre offre.
 
 ![ovhcloud connect selection](images/occ_01.png){.thumbnail}
 

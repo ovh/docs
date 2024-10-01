@@ -13,7 +13,7 @@ updated: 2022-12-12
   
 A OVHcloud oferece-lhe opções para reforçar a segurança da sua Área de Cliente OVHcloud e dos seus serviços.
 
-Em particular, pode restringir o acesso ao seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) a determinados endereços IP.
+Em particular, pode restringir o acesso ao seu [Área de Cliente OVHcloud](/links/manager) a determinados endereços IP.
 A implementação desta opção, associada à proteção da sua conta com uma [dupla autenticação](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa), permite proteger de forma ótima a sua Área de Cliente OVHcloud contra eventuais tentativas de intrusão.
 
 **Descubra como proteger a sua conta OVHcloud limitando os endereços IP autorizados a aceder à mesma**
@@ -25,7 +25,7 @@ A implementação desta opção, associada à proteção da sua conta com uma [d
   
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Ter tomado conhecimento das [recomendações sobre a gestão da palavra-passe de acesso à sua conta](/pages/account_and_service_management/account_information/manage-ovh-password).
   
 ## Instruções
@@ -56,7 +56,7 @@ Se utilizar uma rede 4G/5G em complemento, não se esqueça de recuperar também
 
 ### Etapa 2 - Implementar uma restrição de acesso por IP
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no seu `nome e apelido` no canto superior direito **e** nos seus `iniciais` na coluna azul que aparece à direita.
+Aceda à [Área de Cliente OVHcloud](/links/manager). Clique no seu `nome e apelido` no canto superior direito **e** nos seus `iniciais` na coluna azul que aparece à direita.
 
 ![Access from Manager](images/ip1.png){.thumbnail}
 
@@ -85,7 +85,7 @@ Estão presentes duas secções para a implementação das restrições por IP:
 >
 > Na secção `Regra predefinida`{.action}, não valide **nunca** a regra por defeito no estado `Recusado`{.action} **sem ter autorizado** corretamente e no passado pelo menos um dos endereços IP públicos na secção `IP configurados`. 
 >
-> Caso contrário, bloqueará **absolutamente todos os IP públicos (incluindo os seus)** sem qualquer exceção. Já ninguém terá acesso ao seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e deverá realizar um procedimento administrativo para desbloquear a sua situação.
+> Caso contrário, bloqueará **absolutamente todos os IP públicos (incluindo os seus)** sem qualquer exceção. Já ninguém terá acesso ao seu [Área de Cliente OVHcloud](/links/manager) e deverá realizar um procedimento administrativo para desbloquear a sua situação.
 >
 > Esteja portanto extremamente vigilante quanto a este ponto.
 >

@@ -22,7 +22,7 @@ Ce guide vous présente l'ensemble des outils d'administration, autres que les i
 ## Prérequis
 
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Pour l'interface **REST API**, vous devez disposer d'une machine virtuelle sous Linux avec un éditeur de texte, afin d'exécuter les commandes **curl** et **jq**.
 
 > [!primary]

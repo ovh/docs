@@ -13,11 +13,11 @@ Możliwe jest powiązanie imienia, nazwiska, numeru telefonu i adresu e-mail z u
 ## Wymagania początkowe
 
 - Wykupienie usługi [Managed Bare Metal](https://www.ovhcloud.com/pl/managed-bare-metal/).
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 
 ## W praktyce
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji `Bare Metal Cloud`. Kliknij `Managed Bare Metal` na pasku usług po lewej stronie, po czym wybierz odpowiednią infrastrukturę.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Bare Metal Cloud`. Kliknij `Managed Bare Metal` na pasku usług po lewej stronie, po czym wybierz odpowiednią infrastrukturę.
 
 ![Użytkownik vsphere](images/addMailOnUser01.png){.thumbnail}
 

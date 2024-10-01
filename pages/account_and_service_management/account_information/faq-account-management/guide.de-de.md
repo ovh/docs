@@ -10,7 +10,7 @@ Hier finden Sie die häufigsten Fragen zur Verwaltung Ihres OVHcloud Accounts.
 
 ### Wie kann ich einen OVHcloud Account erstellen?
 
-Die Erstellung eines Accounts ist kostenfrei. Über Ihren Account können Sie Ihre Daten einsehen und Ihre Dienstleistungen einfach verwalten. Kicken Sie für die Erstellung eines Account einfach auf diesen [Link](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+Die Erstellung eines Accounts ist kostenfrei. Über Ihren Account können Sie Ihre Daten einsehen und Ihre Dienstleistungen einfach verwalten. Kicken Sie für die Erstellung eines Account einfach auf diesen [Link](/links/manager).
 Denken Sie bei der Erstellung des Accounts bitte gleich daran, Ihre persönlichen Informationen mit einer Zwei-Faktor-Authentifizierung zu schützen. Diese aktivieren Sie im Bereich „Mein Account“ unter „Sicherheit“ (siehe auch die folgende Frage „Wie kann ich meinen Account schützen?“).
 
 #### Tipps und Tricks
@@ -21,7 +21,7 @@ Sie konnten Ihren Standort nicht finden? Ändern Sie die Sprache der Seite, inde
 
 Ihre Kundenkennung steht auf Ihrer letzten Rechnung oben rechts. Sie sieht so aus: „ab00001-ovh“. Die ersten Buchstaben sind meist die Initialen der Person, die den Account erstellt hat. Diese Kundenkennung finden Sie auch in allen E-Mails von OVHcloud, zum Beispiel in Bestätigungs-E-Mails bei der Erstellung eines Accounts, Verlängerungen und neuen Bestellungen.
 
-Haben Sie Ihre Kundenkennung nicht gefunden? Dann können Sie auf den Link „Kennung oder Passwort vergessen“ auf der [Login-Seite](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) des OVHcloud-Accounts klicken. Geben Sie dann die E-Mail-Adresse an, die mit Ihrem Account verbunden ist.
+Haben Sie Ihre Kundenkennung nicht gefunden? Dann können Sie auf den Link „Kennung oder Passwort vergessen“ auf der [Login-Seite](/links/manager) des OVHcloud-Accounts klicken. Geben Sie dann die E-Mail-Adresse an, die mit Ihrem Account verbunden ist.
 
 #### Gut zu wissen:
 

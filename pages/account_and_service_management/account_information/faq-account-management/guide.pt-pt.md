@@ -10,7 +10,7 @@ Encontre as questões mais frequentes sobre a gestão da conta OVHcloud.
 
 ### Como criar uma conta OVHcloud?
 
-A criação de conta é gratuita. Este espaço facilita o acesso às suas informações e permite-lhe gerir todos os seus serviços. Para beneficiar disso, basta clicar [nesta ligação](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+A criação de conta é gratuita. Este espaço facilita o acesso às suas informações e permite-lhe gerir todos os seus serviços. Para beneficiar disso, basta clicar [nesta ligação](/links/manager).
 Aproveite para proteger o acesso aos seus dados pessoais ativando a autenticação dupla na rubrica “A minha conta”, secção “Segurança” (ver também a resposta à pergunta “Como proteger a minha conta?”).
 
 #### Truques e dicas:
@@ -21,7 +21,7 @@ Não encontra o seu país? Altere a língua do site clicando no canto superior d
 
 O seu ID de cliente, também conhecido como NIC-handle, encontra-se no canto superior direito da sua última fatura. Tem o seguinte formato: “ab00001-ovh” (as primeiras letras costumam ser as iniciais do nome da pessoa que criou a conta). Também pode consultar o ID de cliente em todos os e-mails enviados pela OVHcloud (e-mail de confirmação da criação da conta, e-mails de confirmação ou de renovação da encomenda, etc.)
 
-Se ainda não encontrou o seu ID de cliente, pode clicar na ligação "Perdeu o identificador ou a palavra-passe?" na página de [login à sua conta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), introduzindo o endereço de e-mail associado à sua conta.
+Se ainda não encontrou o seu ID de cliente, pode clicar na ligação "Perdeu o identificador ou a palavra-passe?" na página de [login à sua conta OVHcloud](/links/manager), introduzindo o endereço de e-mail associado à sua conta.
 
 #### Truques e dicas
 

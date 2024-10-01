@@ -20,7 +20,7 @@ You can add ISO images to the Nutanix system for later use when installing an op
 ## Requirements
 
 - a Nutanix cluster in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- access to the [OVHcloud Control Panel](/links/manager)
 - You must be connected to Prism Central on the cluster
 
 ## Overview of the image system in Nutanix

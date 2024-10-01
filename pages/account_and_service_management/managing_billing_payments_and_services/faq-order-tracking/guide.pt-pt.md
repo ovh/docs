@@ -14,11 +14,11 @@ Só pode efetuar o pagamento depois de identificar a sua encomenda através da s
 
 #### Truques e dicas
 
-Saiu da página da encomenda? Pode visualizá-la e pagá-la a partir da [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na rubrica `Encomendas`{.action}.
+Saiu da página da encomenda? Pode visualizá-la e pagá-la a partir da [Área de Cliente](/links/manager), na rubrica `Encomendas`{.action}.
 
 ### Como consultar o estado do pagamento?
 
-Aceda à sua [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e, na parte direita do painel de controlo, clique no atalho `Faturas`{.action}. Se existir uma fatura com pagamento pendente, ser-lhe-á sugerido que regularize a situação diretamente a partir do painel de controlo.
+Aceda à sua [Área de Cliente](/links/manager) e, na parte direita do painel de controlo, clique no atalho `Faturas`{.action}. Se existir uma fatura com pagamento pendente, ser-lhe-á sugerido que regularize a situação diretamente a partir do painel de controlo.
 
 #### Truques e dicas
 
@@ -26,7 +26,7 @@ Pode registar o seu método de pagamento na secção `Métodos de pagamento`{.ac
 
 ### Como acompanhar o estado da encomenda?
 
-Aceda à sua [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e, uma vez no painel de controlo, terá visibilidade sobre o estado das suas últimas encomendas na parte central da página. Se pretender aceder ao conjunto das suas encomendas, clique em `Ver as minhas encomendas`{.action}.
+Aceda à sua [Área de Cliente](/links/manager) e, uma vez no painel de controlo, terá visibilidade sobre o estado das suas últimas encomendas na parte central da página. Se pretender aceder ao conjunto das suas encomendas, clique em `Ver as minhas encomendas`{.action}.
 
 ![estado da encomenda](images/order_final-min.gif){.thumbnail}
 

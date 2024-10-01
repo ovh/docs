@@ -12,7 +12,7 @@ Nowa usługa Load Balancer oferuje różne typy równoważenia obciążenia (loa
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
+- Dostęp do [Panelu klienta OVH](/links/manager){.external}
 - Aktywna usługa Load Balancer
 - Utworzona farma serwerów
 

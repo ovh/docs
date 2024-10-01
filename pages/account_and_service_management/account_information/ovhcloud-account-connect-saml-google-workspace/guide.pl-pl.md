@@ -18,7 +18,7 @@ Możesz użyć uwierzytelnienia **SSO** (*Single Sign-On*), aby zalogować się 
 
 - Posiadanie statusu administratora usługi Google Workspace
 - Posiadanie [konta OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)wferee
-- Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dostęp do [Panelu client OVHcloud](/links/manager)
 
 ## W praktyce
 
@@ -83,7 +83,7 @@ Twoja usługa Google Workspace stała się dla OVHcloud zaufana jako dostawca us
 
 ### Budowa zaufania do konta OVHcloud i konfiguracja połączenia
 
-Dodanie Google workspace jako zaufanego dostawcy tożsamości odbywa się w [[Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), w którym możesz dostarczyć metadane dostawcy tożsamości.
+Dodanie Google workspace jako zaufanego dostawcy tożsamości odbywa się w [[Panelu client OVHcloud](/links/manager), w którym możesz dostarczyć metadane dostawcy tożsamości.
 
 Kliknij nazwę konta w prawym górnym rogu, a następnie ponownie na pasku bocznym.
 
@@ -170,7 +170,7 @@ Następnie będziesz mógł wylogować się z konta i ponownie zalogować się d
 
 ### Logowanie przez SSO
 
-Na [stronie logowania OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) wpisz [identyfikator](/pages/account_and_service_management/account_information/ovhcloud-account-creation#jaki-jest-moj-identyfikator-klienta), po którym następuje **/idp** bez hasła i kliknij przycisk `Login`{.action}.
+Na [stronie logowania OVHcloud](/links/manager) wpisz [identyfikator](/pages/account_and_service_management/account_information/ovhcloud-account-creation#jaki-jest-moj-identyfikator-klienta), po którym następuje **/idp** bez hasła i kliknij przycisk `Login`{.action}.
 
 ![Połączenie z federacją OVHcloud](images/ovhcloud_federation_login_1.png){.thumbnail}
 

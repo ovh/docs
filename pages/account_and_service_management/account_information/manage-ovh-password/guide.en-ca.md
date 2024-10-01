@@ -68,7 +68,7 @@ If your password has been compromised, we strongly recommend [changing it as soo
 
 #### Via the OVHcloud Control Panel
 
-- Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, click your name in the top right-hand corner, then click on your initials.
+- Log in to the [OVHcloud Control Panel](/links/manager){.external}, click your name in the top right-hand corner, then click on your initials.
 
 ![manage-ovh-password](images/newhub2.png){.thumbnail}
 

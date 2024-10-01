@@ -126,7 +126,7 @@ From the [OVH API](https://api.ovh.com){.external}, you can use the following ca
 
 ### Via the OVH Control Panel.
 
-You can define dedicated Additional IPs via the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} by going to the `Cloud`{.action} section, then `Load Balancer`{.action}.
+You can define dedicated Additional IPs via the [OVH Control Panel](/links/manager){.external} by going to the `Cloud`{.action} section, then `Load Balancer`{.action}.
 
 Once you have selected the Load Balancer you want to modify, create a new front-end, or edit an existing one.
 

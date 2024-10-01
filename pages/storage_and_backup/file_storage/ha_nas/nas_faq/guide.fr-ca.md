@@ -24,7 +24,7 @@ NAS-HA permet de centraliser les données de différentes charges de travail Lin
 
 ### Peut-on gérer le NAS-HA via un espace de configuration ?
 
-Oui, cet espace est accessible depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), rubrique `Bare Metal Cloud`{.action} puis `NAS et CDN`{.action}.
+Oui, cet espace est accessible depuis votre [espace client OVHcloud](/links/manager), rubrique `Bare Metal Cloud`{.action} puis `NAS et CDN`{.action}.
 
 ## Disponibilité
 
@@ -143,7 +143,7 @@ La fréquence des snapshots est administrable depuis votre espace client OVHclou
 - tous les trois jours ;
 - hebdomadaire.
 
-Vous pouvez aussi, à tout moment, créer des snapshots manuels, les conserver sans limitation de durée ou les supprimer. Cette fonctionnalité est disponible au sein de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) ou via l'appel [API](https://ca.api.ovh.com/) suivant :
+Vous pouvez aussi, à tout moment, créer des snapshots manuels, les conserver sans limitation de durée ou les supprimer. Cette fonctionnalité est disponible au sein de votre [espace client OVHcloud](/links/manager) ou via l'appel [API](https://ca.api.ovh.com/) suivant :
 
 > [!api]
 >

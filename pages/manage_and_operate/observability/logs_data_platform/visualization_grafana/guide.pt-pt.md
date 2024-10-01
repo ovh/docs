@@ -24,7 +24,7 @@ After some training you will be able to create this kind of dashboard:
 
 To access your logs from Grafana, you will need to setup an OpenSearch Alias and link them to your Graylog streams, so here we go again :
 
-1. Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+1. Log in to the [OVHcloud Control Panel](/links/manager).
 2. In the Alias panel, click on the `Add an alias`{.action} button
 3. Choose a name and define a description for your alias
 4. Save the entry by clicking the `Save`{.action} button

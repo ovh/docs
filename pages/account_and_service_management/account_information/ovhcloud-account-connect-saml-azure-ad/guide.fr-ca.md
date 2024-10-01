@@ -14,7 +14,7 @@ Vous pouvez utiliser l'authentification **SSO** (*Single Sign-On*) pour vous con
 
 - Avoir accès aux rôles **Administrateur d'applications** et **Administrateur d'utilisateurs** d'un service Entra ID
 - Disposer d'un [compte OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 
 ## En pratique
 
@@ -199,7 +199,7 @@ Utilisez ce lien pour télécharger le fichier de métadonnées de l'application
 
 ### Établir la confiance d'un compte OVHcloud et configurer la connexion
 
-L'ajout de votre application Entra ID en tant que fournisseur d'identité approuvé s'effectue dans [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) où vous pouvez fournir les métadonnées du fournisseur d'identité.
+L'ajout de votre application Entra ID en tant que fournisseur d'identité approuvé s'effectue dans [l'espace client OVHcloud](/links/manager) où vous pouvez fournir les métadonnées du fournisseur d'identité.
 
 #### Établir la confiance OVHcloud
 
@@ -259,7 +259,7 @@ Attention, si vous donnez le privilège `Aucun`, il sera nécessaire d'attribuer
 
 ### Connexion via SSO
 
-Sur [la page de connexion OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), renseignez votre [identifiant](/pages/account_and_service_management/account_information/ovhcloud-account-creation#quel-est-mon-identifiant-client) client suivi de **/idp** sans mot de passe puis cliquez sur le bouton `Login`{.action} .
+Sur [la page de connexion OVHcloud](/links/manager), renseignez votre [identifiant](/pages/account_and_service_management/account_information/ovhcloud-account-creation#quel-est-mon-identifiant-client) client suivi de **/idp** sans mot de passe puis cliquez sur le bouton `Login`{.action} .
 
 ![Ovhcloud SSO Login step 1](images/ovhcloud_sso_login_1.png){.thumbnail}
 

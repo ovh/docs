@@ -36,7 +36,7 @@ For these use cases, and other ones as well, you can do operations on Nodes. And
 ## Requirements
 
 - a [Public Cloud project](https://www.ovhcloud.com/es/public-cloud/) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
+- access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 

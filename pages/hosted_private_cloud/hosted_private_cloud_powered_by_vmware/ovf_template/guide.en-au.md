@@ -20,7 +20,7 @@ Windows VMs deployed from a template automatically use the SPLA licences provide
 ## Requirements
 
 - Web client access (HTML5)
-- [active Windows licences](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#windows-licence){.external} (activate via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}, in the `Windows licence`{.action} tab for the datacentre)
+- [active Windows licences](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#windows-licence){.external} (activate via the [OVHcloud Control Panel](/links/manager){.external}, in the `Windows licence`{.action} tab for the datacentre)
 
 ## Instructions
 

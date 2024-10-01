@@ -12,7 +12,7 @@ Votre solution xDSL OVHcloud vous permet d'accéder à différents types de cont
 
 ## Prérequis
 
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
+- Être connecté à l'[espace client OVHcloud](/links/manager){.external}, partie `Télécom`{.action}.
 - Disposer d'un ordinateur relié via un câble Ethernet au modem utilisant le lien xDSL que vous souhaitez tester.
 
 ## En pratique
@@ -31,7 +31,7 @@ Poursuivez la lecture de cette documentation selon la vérification que vous sou
 
 Cette opération se réalise en plusieurs étapes. Le but étant de pouvoir vérifier si votre connexion est saturée ou non.
 
-Pour débuter la manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`. Cliquez sur `Accès Internet`{.action}, sélectionnez le pack concerné puis l'accès que vous souhaitez vérifier. Assurez-vous alors d'être positionné sur l'onglet `Mon accès`{.action}.
+Pour débuter la manipulation, connectez-vous à votre [espace client OVHcloud](/links/manager){.external}, partie `Télécom`. Cliquez sur `Accès Internet`{.action}, sélectionnez le pack concerné puis l'accès que vous souhaitez vérifier. Assurez-vous alors d'être positionné sur l'onglet `Mon accès`{.action}.
 
 ![xdslsaturation](images/monacces-2022.png){.thumbnail}
 

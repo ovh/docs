@@ -18,11 +18,11 @@ Das bedeutet, dass dieses Guthabenkonto zuerst belastet wird und dann noch verbl
 ## Voraussetzungen
 
 - Sie verfügen über ein [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud/) in Ihrem OVHcloud Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter ein](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie Ihr Projekt aus. Öffnen Sie `Credit and Vouchers`{.action} im linken Menü.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter ein](/links/manager), gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie Ihr Projekt aus. Öffnen Sie `Credit and Vouchers`{.action} im linken Menü.
 
 > [!warning]
 >

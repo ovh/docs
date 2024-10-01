@@ -16,7 +16,7 @@ This tutorial presents two examples of using Weights & Biases. The first noteboo
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr);
+- access to the [OVHcloud Control Panel](/links/manager);
 - a Public Cloud project created;
 - a Public Cloud user with the ability to start AI Notebooks;
 - a Weights & Biases account, you can create it on their [website](https://wandb.ai/site). It's Free for individuals.

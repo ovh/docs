@@ -8,7 +8,7 @@ updated: 2023-01-16
 
 Follow this quickstart guide to deploy a containerised *Hello World* application on your OVHcloud Managed Kubernetes Service cluster, using the OVHcloud API.
 
-In this guide, we are assuming you're using the [OVHcloud API](https://api.ovh.com/) to manage your Kubernetes cluster. If you are using a different method, like the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), please take a look to the [Deploying a Hello World application with the OVHcloud Control Panel](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-hello-world) guide.
+In this guide, we are assuming you're using the [OVHcloud API](https://api.ovh.com/) to manage your Kubernetes cluster. If you are using a different method, like the [OVHcloud Control Panel](/links/manager), please take a look to the [Deploying a Hello World application with the OVHcloud Control Panel](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-hello-world) guide.
 
 ## Requirements
 

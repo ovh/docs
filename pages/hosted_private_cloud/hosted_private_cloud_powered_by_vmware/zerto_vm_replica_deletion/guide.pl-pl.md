@@ -19,7 +19,7 @@ Ten dokument pokazuje, jak usunąć te pliki i przywrócić funkcję VPG.
 ## Wymagania początkowe
 
 - Posiadanie kontaktu administracyjnego infrastruktury [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/), aby otrzymywać dane do logowania.
-- Posiadanie aktywnego identyfikatora użytkownika z uprawnieniami dla Zerto (utworzonego w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl))
+- Posiadanie aktywnego identyfikatora użytkownika z uprawnieniami dla Zerto (utworzonego w [Panelu klienta](/links/manager))
 - Wdrożenie [Zerto Virtual Replication](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/zerto_virtual_replication_as_a_service)
 
 ## W praktyce

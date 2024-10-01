@@ -14,11 +14,11 @@ Para abonar un pedido deberá identificarse utilizando su cuenta de cliente. A c
 
 #### Ideas y consejos
 
-¿Ha cerrado la página de la orden de pedido? Puede volver a abrirla para abonar el pedido desde el [área de cliente OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), en `Mis pedidos`{.action}.
+¿Ha cerrado la página de la orden de pedido? Puede volver a abrirla para abonar el pedido desde el [área de cliente OVHcloud](/links/manager), en `Mis pedidos`{.action}.
 
 ### ¿Cómo consultar el estado de un pago?
 
-Acceda a la sección `Facturas`{.action} disponible en la columna derecha del panel de control de su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Si tiene alguna factura pendiente de pago, podrá gestionar el pago directamente desde el panel de control.
+Acceda a la sección `Facturas`{.action} disponible en la columna derecha del panel de control de su [área de cliente de OVHcloud](/links/manager). Si tiene alguna factura pendiente de pago, podrá gestionar el pago directamente desde el panel de control.
 
 #### Ideas y consejos
 

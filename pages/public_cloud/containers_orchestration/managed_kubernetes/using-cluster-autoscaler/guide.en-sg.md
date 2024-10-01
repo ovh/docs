@@ -76,7 +76,7 @@ You can activate the autoscaler on several node pools, each of which can have a 
 >
 > A common configuration is to use non-autoscaled, monthly-billed node pools as base for your static workload, and autoscaled, hourly-billed node pools with smaller flavors for your dynamic workload.
 
-When you create your cluster, you can bootstrap a default node pool in it, and you can add others in the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) or directly [using the Kubernetes API](/pages/public_cloud/containers_orchestration/managed_kubernetes/managing-nodes).
+When you create your cluster, you can bootstrap a default node pool in it, and you can add others in the Public Cloud section of the [OVHcloud Control Panel](/links/manager) or directly [using the Kubernetes API](/pages/public_cloud/containers_orchestration/managed_kubernetes/managing-nodes).
 
 To list node pools, you can use:
 

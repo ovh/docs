@@ -14,7 +14,7 @@ Exporting your model in ONNX format allows you to **optimize the inference** of 
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Access to the [OVHcloud Control Panel](/links/manager).
 - A Public Cloud project created.
 - The ovhai CLI interface installed on your system (more information [here](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli)).
 - [Docker](https://www.docker.com/get-started) installed and configured to build images.
@@ -31,7 +31,7 @@ To be able to retrieve and use the ONNX model at the end of training, you need t
 
 If you do not feel comfortable with commands, this method may be more intuitive.
 
-First, go to the `Public Cloud` section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+First, go to the `Public Cloud` section of the [OVHcloud Control Panel](/links/manager).
 
 Then, select the `Object Storage` section (in the Storage category) and create a new object container by clicking `Storage` > `Object Storage` > `Create an object container`.
 
@@ -337,7 +337,7 @@ You can launch the training job using the UI or the CLI.
 
 If you do not feel comfortable with commands, this method may be more intuitive.
 
-First, go to the `Public Cloud` section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+First, go to the `Public Cloud` section of the [OVHcloud Control Panel](/links/manager).
 
 Then, select the `AI Training` section (in the AI & Machine Learning category) and create a new job by clicking `AI Training` > `Launch a new job`.
 

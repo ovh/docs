@@ -19,14 +19,14 @@ This guide will help you to:
 
 > [!primary]
 >
-> Depending on your place of residence, local legislation, and the solutions concerned, the details in this guide may vary or not apply to your situation. For further information, please refer to your OVHcloud contracts via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca): Click on your name in the top right-hand corner of your screen, then `Products and services`{.action}, then the `Contracts`{.action} tab.
+> Depending on your place of residence, local legislation, and the solutions concerned, the details in this guide may vary or not apply to your situation. For further information, please refer to your OVHcloud contracts via the [OVHcloud Control Panel](/links/manager): Click on your name in the top right-hand corner of your screen, then `Products and services`{.action}, then the `Contracts`{.action} tab.
 >
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/dfpPCa0mUyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Requirements
 
-- You have access to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
+- You have access to your [OVHcloud Control Panel](/links/manager).
 - Your OVHcloud services are active.
 - You are the [billing contact](/pages/account_and_service_management/account_information/managing_contacts#definition) of your OVHcloud services.
 - You have a valid payment method in your OVHcloud account (see our guide [Managing your payment methods](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)).

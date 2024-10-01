@@ -14,7 +14,7 @@ You can use **Single Sign-On** (SSO) to sign in to your OVHcloud account. To ena
 
 - Being an administrator of a Google Workspace service
 - An [OVHcloud account](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -79,7 +79,7 @@ Your Google Workspace service now trusts OVHcloud as a service provider. The nex
 
 ### Registering Google Workspace into the OVHcloud account and configuring the connection
 
-To add Google workspace as a trusted identity provider, you need to provide the identity provider metadata in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg).
+To add Google workspace as a trusted identity provider, you need to provide the identity provider metadata in the [OVHcloud Control Panel](/links/manager).
 
 Click your account name in the top-right corner, then on your name again in the sidebar.
 
@@ -166,7 +166,7 @@ You will then be able to log out of your account and log back in with your Googl
 
 ### Connecting via SSO
 
-On [the OVHcloud login page](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), enter your [login](/pages/account_and_service_management/account_information/ovhcloud-account-creation#what-is-my-nic-handle) followed by **/idp** without a password and click the `Login`{.action} button.
+On [the OVHcloud login page](/links/manager), enter your [login](/pages/account_and_service_management/account_information/ovhcloud-account-creation#what-is-my-nic-handle) followed by **/idp** without a password and click the `Login`{.action} button.
 
 ![Connection to OVHcloud federation](images/ovhcloud_federation_login_1.png){.thumbnail}
 

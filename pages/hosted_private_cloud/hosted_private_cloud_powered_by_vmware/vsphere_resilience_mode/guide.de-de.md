@@ -13,7 +13,7 @@ If you would like to carry out a resilience test on your VMware on OVHcloud infr
 ## Requirements
 
 - A [VMware on OVHcloud solution](https://www.ovhcloud.com/de/hosted-private-cloud/vmware/)
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 

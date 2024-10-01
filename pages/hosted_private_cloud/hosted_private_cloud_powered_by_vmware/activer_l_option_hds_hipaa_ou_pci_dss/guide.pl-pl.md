@@ -13,13 +13,13 @@ Możesz dostosować swoją chmurę prywatną do wymogów certyfikacji HDS lub PC
 ## Wymagania początkowe
 
 - Dysponowanie infrastrukturą Private Cloud w wersji co najmniej 6.0.
-- Dostęp do[Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), sekcja `Dedykowane`{.action}
+- Dostęp do[Panelu klienta](/links/manager), sekcja `Dedykowane`{.action}
 
 ## W praktyce
 
 ### Upewnić się, że opcja bezpieczeństwa jest aktywna.
 
-Aby dostosować swoją chmurę prywatną do certyfikacji HDS lub PCI DSS, należy aktywować jedną z odpowiednich opcji bezpieczeństwa. Aby sprawdzić jej stan, zaloguj się do swojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji „Dedykowane”. Kliknij opcję `Private Cloud`{.action}, a następnie wybierz odpowiednią usługę. 
+Aby dostosować swoją chmurę prywatną do certyfikacji HDS lub PCI DSS, należy aktywować jedną z odpowiednich opcji bezpieczeństwa. Aby sprawdzić jej stan, zaloguj się do swojego [panelu klienta OVHcloud](/links/manager) i przejdź do sekcji „Dedykowane”. Kliknij opcję `Private Cloud`{.action}, a następnie wybierz odpowiednią usługę. 
 
 W oknie, które się pojawi, kliknij kartę`Informacje ogólne`{.action}. Następnie sprawdź stan aktywacji opcji bezpieczeństwa w sekcji „Opcje bezpieczeństwa”. **Należy pamiętać, że na chwilę obecną nie można włączyć więcej niż jednej opcji bezpieczeństwa dla tej samej chmury prywatnej.**
 

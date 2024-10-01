@@ -33,7 +33,7 @@ You can activate the autoscaler on several node pools, each of which can have a 
 >
 > The source code of the following example is available in the public Github repository [public-cloud-examples](https://github.com/ovh/public-cloud-examples/tree/main/containers-orchestration/managed-kubernetes/autoscaler)
 
-When you create your cluster, you can bootstrap a default node pool in it, and you can add others in the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) or directly [using the Kubernetes API](/pages/public_cloud/containers_orchestration/managed_kubernetes/managing-nodes).
+When you create your cluster, you can bootstrap a default node pool in it, and you can add others in the Public Cloud section of the [OVHcloud Control Panel](/links/manager) or directly [using the Kubernetes API](/pages/public_cloud/containers_orchestration/managed_kubernetes/managing-nodes).
 
 
 ## Deploying a test workload

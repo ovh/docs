@@ -17,7 +17,7 @@ updated: 2022-11-15
 ## Prérequis
 
 - Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
-- Avoir un identifiant actif dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Avoir un identifiant actif dans l'[espace client OVHcloud](/links/manager)
 - Avoir un identifiant actif dans vSphere.
 
 ## Présentation pas à pas de la solution Tanzu Kubernetes Grid

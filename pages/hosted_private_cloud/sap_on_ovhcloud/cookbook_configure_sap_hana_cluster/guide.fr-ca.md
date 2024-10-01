@@ -14,7 +14,7 @@ Cette configuration réduit la durée maximale d'interruption admissible (RTO), 
 
 ## Prérequis
 
-- Un accès à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- Un accès à l'[espace client OVHcloud](/links/manager).
 - Une solution [SAP HANA on Private Cloud](https://www.ovhcloud.com/fr-ca/hosted-private-cloud/sap-hana/) déployée.
 - Deux machines virtuelles SAP HANA déployées ayant la même version SAP HANA installée.
 

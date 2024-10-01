@@ -979,8 +979,8 @@ In this step, you will simulate a disaster recovery scenario. The whole OVHcloud
 Next, you will perform the following tasks:
 
 - **Create** the multi-namespace backup, using a ClusterBackupPlan CRD that targets all important namespaces from your OVHcloud Managed Kubernetes Cluster.
-- **Delete** the OVHcloud Managed Kubernetes Cluster, using the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
-- **Create** a new OVHcloud Managed Kubernetes Cluster, using the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- **Delete** the OVHcloud Managed Kubernetes Cluster, using the [OVHcloud Control Panel](/links/manager).
+- **Create** a new OVHcloud Managed Kubernetes Cluster, using the [OVHcloud Control Panel](/links/manager).
 - **Re-install** TVK and configure the OVHcloud Object Storage bucket as S3 target (you're going to use the same S3 bucket, where your important backups are stored)
 - **Restore** all the important applications by using the TVK web console.
 - **Check** the OVHcloud Managed Kubernetes Cluster applications integrity.
@@ -1097,7 +1097,7 @@ You can also open the web console main dashboard and inspect the multi-namespace
 
 An important aspect to keep in mind is that whenever you destroy an OVHcloud Managed Kubernetes Cluster and then restore it, a new Load Balancer with a new external IP is created as well when TVK restores your ingress controller. So, please make sure to update your OVHcloud Managed DNS `A records` accordingly.
 
-Now, delete the whole OVHcloud Managed Kubernetes Cluster using the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+Now, delete the whole OVHcloud Managed Kubernetes Cluster using the [OVHcloud Control Panel](/links/manager).
 
 Next, re-create the cluster as described in [Creating a OVHcloud Managed Kubernetes Cluster](/pages/public_cloud/containers_orchestration/managed_kubernetes/creating-a-cluster#instructions).
 

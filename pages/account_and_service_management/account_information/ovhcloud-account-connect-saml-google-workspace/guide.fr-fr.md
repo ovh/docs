@@ -14,7 +14,7 @@ Vous pouvez utiliser l'authentification SSO (*Single Sign-On*) pour vous connect
 
 - Être administrateur d'un service Google Workspace
 - Disposer d'un [compte OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 
 ## En pratique
 
@@ -79,7 +79,7 @@ Votre service Google Workspace fait désormais confiance à OVHcloud en tant que
 
 ### Établir la confiance du compte OVHcloud et configurer la connexion
 
-L'ajout de votre Google workspace en tant que fournisseur d'identité de confiance s'effectue dans [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) où vous pouvez fournir les métadonnées du fournisseur d'identité.
+L'ajout de votre Google workspace en tant que fournisseur d'identité de confiance s'effectue dans [l'espace client OVHcloud](/links/manager) où vous pouvez fournir les métadonnées du fournisseur d'identité.
 
 Cliquez sur le nom de votre compte en haut à droite, puis de nouveau sur votre nom dans la barre latérale.
 
@@ -166,7 +166,7 @@ Vous pourrez ensuite vous déconnecter de votre compte et vous reconnecter avec 
 
 ### Connexion via SSO
 
-Sur [la page d'identification OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), renseignez votre [identifiant](/pages/account_and_service_management/account_information/ovhcloud-account-creation#quel-est-mon-identifiant-client) suivi de **/idp** sans mot de passe et cliquez sur le bouton `Login`{.action} .
+Sur [la page d'identification OVHcloud](/links/manager), renseignez votre [identifiant](/pages/account_and_service_management/account_information/ovhcloud-account-creation#quel-est-mon-identifiant-client) suivi de **/idp** sans mot de passe et cliquez sur le bouton `Login`{.action} .
 
 ![Connexion à la fédération OVHcloud](images/ovhcloud_federation_login_1.png){.thumbnail}
 

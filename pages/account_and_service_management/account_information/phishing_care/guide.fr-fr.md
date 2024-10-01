@@ -63,7 +63,7 @@ La seule chose à faire est de contacter rapidement votre banque afin de faire o
 
 #### Si vous avez entré votre mot de passe OVHcloud sur un site frauduleux
 
-Connectez-vous sur votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et modifiez immédiatement votre mot de passe.<br>
+Connectez-vous sur votre [espace client OVHcloud](/links/manager){.external} et modifiez immédiatement votre mot de passe.<br>
 
 Vous trouverez, sur notre guide « [Modifier le mot de passe de votre compte](/pages/account_and_service_management/account_information/manage-ovh-password) », la méthode pour modifier votre mot de passe depuis votre espace client, ainsi que nos recommandations pour générer un mot de passe efficace et le sauvegarder dans un gestionnaire de mots de passe. 
 

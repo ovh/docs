@@ -12,7 +12,7 @@ To read an introduction about Data Processing service you can visit [Data Proces
 
 ## Requirements 
 
-- Access to [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Access to [OVHcloud Manager](/links/manager){.external}
 - A job that has been already submitted to Data Processing
 
 ## Get your running job's logs
@@ -20,7 +20,7 @@ To read an introduction about Data Processing service you can visit [Data Proces
 When you launch a job with Data Processing, you may want to read your job's logs as it is running. 
 There are three ways to get live logs:
 
-- Using the [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Using the [OVHcloud Manager](/links/manager){.external}
 - Using the OVHcloud API
 - Using the Data Processing CLI
 
@@ -103,7 +103,7 @@ There is three ways to download your logs from your Object Storage:
 ### With the OVHcloud Manager
 To see your logs in the manager, you need to follow these steps:
 
-- Log in to the [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} and select `Public Cloud`{.action}.
+- Log in to the [OVHcloud Manager](/links/manager){.external} and select `Public Cloud`{.action}.
 - Select the project in which you submitted your job. 
 
 From here, you can either go to your Object Storage section of your Public Cloud project and select the `odp-logs`{.action} container. Then filter the list of object with your job ID to get its logs.
@@ -129,7 +129,7 @@ Please follow the OpenStack documentation on [installing the CLI](https://docs.o
 In order to authenticate with the CLI you will have to [set environment variables using an OpenStack RC file](https://docs.openstack.org/newton/user-guide/common/cli-set-environment-variables-using-openstack-rc.html){.external}.
 You can find your RC file by following these steps:
 
-- Log in to the [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} and select `Public Cloud`{.action}.
+- Log in to the [OVHcloud Manager](/links/manager){.external} and select `Public Cloud`{.action}.
 - Select the project in which you submitted your job. 
 - Select `Users & Roles`{.action} from the left panel.
 - Click on the `...`{.action} option button of your user and select `Download OpenStack's RC file`.
@@ -139,7 +139,7 @@ You can find your RC file by following these steps:
 
 In order to use the OpenStack API, you will need an OpenStack token. You can generate one in the OVHcloud manager by following these steps:
 
-- Log in to the [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} and select `Public Cloud`{.action}.
+- Log in to the [OVHcloud Manager](/links/manager){.external} and select `Public Cloud`{.action}.
 - Select the project in which you submitted your job in the sidebar. 
 - Select `Users & Roles`{.action} from the left panel.
 - Click on the `...`{.action} option button of your user and select `Generate an OpenStack token`.

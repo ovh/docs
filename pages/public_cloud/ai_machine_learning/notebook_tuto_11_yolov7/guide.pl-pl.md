@@ -14,7 +14,7 @@ It is based on the YOLOv7 open source [repository](https://github.com/WongKinYiu
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - An AI Notebooks project created inside a [Public Cloud project](https://www.ovhcloud.com/pl/public-cloud/) in your OVHcloud account
 - A user for AI Notebooks
 - A [Public Roboflow](https://public.roboflow.com/) account to access and download the [American Sign Language Letters Dataset](https://public.roboflow.com/object-detection/american-sign-language-letters/1)
@@ -32,7 +32,7 @@ This tutorial is based on the [American Sign Language Letters Dataset](https://p
 
 ### Create Object Storage containers
 
-If you want to create it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), go to the Object Storage section and create a new object container by clicking `Object Storage` > `Create an object container`.
+If you want to create it from the [OVHcloud Control Panel](/links/manager), go to the Object Storage section and create a new object container by clicking `Object Storage` > `Create an object container`.
 
 ![image](images/new-object-container.png){.thumbnail}
 
@@ -64,7 +64,7 @@ ovhai bucket create <region> asl-volov7-model
 
 You need to attach a volume if your data is in your OVHcloud Object Storage and you want to use it during your experiment, or if you need to save the results of your work in the Object Storage. For more information on data, volumes and permissions, see [our guide on data](/pages/public_cloud/ai_machine_learning/cli_17_how_to_cli_data_notebooks).
 
-If you want to launch it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), just follow this [guide](/pages/public_cloud/ai_machine_learning/notebook_guide_introduction_definition).
+If you want to launch it from the [OVHcloud Control Panel](/links/manager), just follow this [guide](/pages/public_cloud/ai_machine_learning/notebook_guide_introduction_definition).
 
 1. `Name your notebook`
 2. `Choose Jupyterlab editor`

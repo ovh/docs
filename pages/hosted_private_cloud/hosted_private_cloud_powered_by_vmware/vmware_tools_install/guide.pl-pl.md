@@ -12,7 +12,7 @@ Rozwiązanie VMware Tools zwiększa wydajność wirtualnej maszyny i pozwala kor
 
 ## Wymagania początkowe
 
-- Posiadanie aktywnego identyfikatora użytkownika (utworzonego w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl))
+- Posiadanie aktywnego identyfikatora użytkownika (utworzonego w [Panelu klienta OVHcloud](/links/manager))
 
 ## W praktyce
 

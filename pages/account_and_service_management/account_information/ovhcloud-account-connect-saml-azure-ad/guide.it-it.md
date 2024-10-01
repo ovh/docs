@@ -18,7 +18,7 @@ L'autenticazione **SSO** (*Single Sign-On*) è disponibile per accedere al tuo a
 
 - Avere accesso ai ruoli **Amministratore applicazioni** e **Amministratore utenti** di Entra ID
 - Disporre di un [account OVHcloud attivo](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
@@ -203,7 +203,7 @@ Utilizza questo link per scaricare il file di metadati dell'applicazione Entra I
 
 ### Creare la fiducia di un account OVHcloud e configurare la connessione
 
-L'applicazione Entra ID viene aggiunta come provider di identità approvato tramite [lo Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), dove è possibile fornire i metadati del provider.
+L'applicazione Entra ID viene aggiunta come provider di identità approvato tramite [lo Spazio Cliente OVHcloud](/links/manager), dove è possibile fornire i metadati del provider.
 
 #### Creare la fiducia di OVHcloud
 
@@ -263,7 +263,7 @@ Attenzione: se concedi il privilegio `Nessuno`, sarà necessario assegnare i dir
 
 ### Connexion via SSO
 
-Nella [pagina di identificazione OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), inserisci il tuo [identificativo cliente](/pages/account_and_service_management/account_information/ovhcloud-account-creation#qual-e-il-mio-identificativo-cliente) seguito da **/idp** senza password e clicca sul pulsante `Login`{.action}.
+Nella [pagina di identificazione OVHcloud](/links/manager), inserisci il tuo [identificativo cliente](/pages/account_and_service_management/account_information/ovhcloud-account-creation#qual-e-il-mio-identificativo-cliente) seguito da **/idp** senza password e clicca sul pulsante `Login`{.action}.
 
 ![Ovhcloud SSO Login step 1](images/ovhcloud_sso_login_1.png){.thumbnail}
 

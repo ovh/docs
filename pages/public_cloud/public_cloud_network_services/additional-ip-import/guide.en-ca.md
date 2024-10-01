@@ -24,7 +24,7 @@ Instead of buying additional ones, you can import an Additional IP address that 
 ## Requirements
 
 - A [Public Cloud project](https://www.ovhcloud.com/en-ca/public-cloud/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}
+- Access to the [OVHcloud Control Panel](/links/manager){.external}
 - An [Additional IP address](https://www.ovhcloud.com/en-ca/bare-metal/ip/){.external}
 
 > [!warning]
@@ -33,7 +33,7 @@ Instead of buying additional ones, you can import an Additional IP address that 
 
 ## Instructions
 
-In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), select your project from the `Public Cloud`{.action} section. 
+In the [OVHcloud Control Panel](/links/manager), select your project from the `Public Cloud`{.action} section. 
 
 In the left-hand menu, open `Public IPs`{.action} under `Network`.
 

@@ -18,7 +18,7 @@ Pode utilizar a autenticação **SSO** (*Single Sign-On*) para se ligar à sua c
 
 - Ter acesso às funções de **Administrador de aplicações** e **Administrador de utilizadores** de um serviço Entra ID
 - Ter uma [conta OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 
 ## Instruções
 
@@ -203,7 +203,7 @@ Utilize esta ligação para descarregar o ficheiro de metadados da aplicação E
 
 ### Criar a confiança de uma conta OVHcloud e configurar a ligação
 
-A adição da sua aplicação Entra ID como fornecedor de identidade aprovado é efetuada na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), onde poderá fornecer os metadados do fornecedor de identidade.
+A adição da sua aplicação Entra ID como fornecedor de identidade aprovado é efetuada na [Área de Cliente OVHcloud](/links/manager), onde poderá fornecer os metadados do fornecedor de identidade.
 
 #### Criar confiança na OVHcloud
 
@@ -263,7 +263,7 @@ Atenção: se conceder o privilégio `Nenhum`, será necessário atribuir permis
 
 ### Ligação via SSO
 
-Na [página de identificação da OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), introduza o seu [identificador de cliente](/pages/account_and_service_management/account_information/ovhcloud-account-creation#qual-e-o-meu-identificador-de-cliente) seguido de **/idp** sem password e clique no botão `Login`{.action}.
+Na [página de identificação da OVHcloud](/links/manager), introduza o seu [identificador de cliente](/pages/account_and_service_management/account_information/ovhcloud-account-creation#qual-e-o-meu-identificador-de-cliente) seguido de **/idp** sem password e clique no botão `Login`{.action}.
 
 ![Ovhcloud SSO Login step 1](images/ovhcloud_sso_login_1.png){.thumbnail}
 

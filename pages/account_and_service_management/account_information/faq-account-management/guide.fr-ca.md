@@ -21,7 +21,7 @@ Vous ne trouvez pas votre pays ? Modifiez la langue du site, en cliquant en haut
 
 Votre identifiant client, appelé également NIC-handle, est présent en haut à droite de votre dernière facture. Il est composé de la manière suivante : « ab00001-ovh » (les premières lettres sont généralement les initiales de la personne qui a créé le compte). Cet identifiant est aussi indiqué dans tous les e-mails envoyés par OVHcloud (email de confirmation de création du compte, e-mails de confirmation ou de renouvellement de commande,...)
 
-Si vous n’avez toujours pas retrouvé votre identifiant, vous avez la possibilité de cliquer sur le lien « Identifiant ou mot de passe oubliés » présent sur la page de [connexion au compte OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) en renseignant l’adresse e-mail associée à votre compte.
+Si vous n’avez toujours pas retrouvé votre identifiant, vous avez la possibilité de cliquer sur le lien « Identifiant ou mot de passe oubliés » présent sur la page de [connexion au compte OVHcloud](/links/manager) en renseignant l’adresse e-mail associée à votre compte.
 
 #### Trucs et astuces
 

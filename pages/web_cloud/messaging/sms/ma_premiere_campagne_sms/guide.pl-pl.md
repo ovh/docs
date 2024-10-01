@@ -15,13 +15,13 @@ OVHcloud udostępnia Ci zintegrowane z Panelem klienta narzędzia umożliwiając
 ## Wymagania początkowe
 
 - Posiadanie konta SMS OVHcloud z zasileniami SMS
-- Zalogowanie do[Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, część `Telefonia`{.action}, następnie `SMS`{.action}.
+- Zalogowanie do[Panelu klienta OVHcloud](/links/manager){.external}, część `Telefonia`{.action}, następnie `SMS`{.action}.
 
 ![Panel klienta Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
 ## W praktyce
 
-Zaloguj się do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz `Telefonia`{.action}. Następnie kliknij pozycję `SMS`{.action} po lewej stronie, po czym wybierz Twoje konto SMS.
+Zaloguj się do Panelu [klienta OVHcloud](/links/manager) i wybierz `Telefonia`{.action}. Następnie kliknij pozycję `SMS`{.action} po lewej stronie, po czym wybierz Twoje konto SMS.
 
 Pasek narzędzi oraz skróty ułatwiają dostęp do głównych funkcji służących do wysyłania kampanii SMS.
 

@@ -42,7 +42,7 @@ More information about configuring Floating IP is available on the [Public Cloud
 
 ### How to obtain public IP addresses in the OVHcloud Control Panel
 
-In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), in the `Public Cloud`{action} section, go to the `Network` section of the left-hand menu and select `Public IPs`{.action}. Here you can manage Additional IP and Floating IP addresses according to your needs.
+In the [OVHcloud Control Panel](/links/manager), in the `Public Cloud`{action} section, go to the `Network` section of the left-hand menu and select `Public IPs`{.action}. Here you can manage Additional IP and Floating IP addresses according to your needs.
 
 ![Concept IP](images/concip.png){.thumbnail}
 

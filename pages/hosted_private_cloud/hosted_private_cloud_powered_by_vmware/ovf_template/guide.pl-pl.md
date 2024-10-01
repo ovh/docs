@@ -18,7 +18,7 @@ OVH oferuje szablony Windows i SQL Server (w formacie OVF), które możesz wdro�
 ## Wymagania początkowe
 
 - Dostęp do klienta sieciowego lub do grubego klienta w zależności od używanej wersji
-- [Aktywowanie licencji Windows](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#licencje-windows){.external} w [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} (zakładka `Licencje Windows`{.action} w odpowiednim centrum danych) 
+- [Aktywowanie licencji Windows](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#licencje-windows){.external} w [Panelu klienta OVH](/links/manager){.external} (zakładka `Licencje Windows`{.action} w odpowiednim centrum danych) 
 
 ## W praktyce
 

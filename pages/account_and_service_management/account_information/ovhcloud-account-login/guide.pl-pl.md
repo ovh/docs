@@ -23,7 +23,7 @@ Zarządzanie usługami odbywa się głównie w Panelu klienta OVHcloud.
 
 ### Zaloguj się do Panelu klienta OVHcloud
 
-Przejdź [do strony uwierzytelniania OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, podaj identyfikator klienta (lub główny adres e-mail) i hasło.
+Przejdź [do strony uwierzytelniania OVHcloud](/links/manager){.external}, podaj identyfikator klienta (lub główny adres e-mail) i hasło.
 
 ![identyfikator klienta](images/log-in.png){.thumbnail}
 

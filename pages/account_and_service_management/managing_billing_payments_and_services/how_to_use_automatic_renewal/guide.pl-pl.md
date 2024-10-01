@@ -23,14 +23,14 @@ Z tego przewodnika dowiesz się:
 
 > [!primary]
 >
-> Niektóre elementy tego przewodnika mogą się różnić lub mogą nie mieć zastosowania w Twojej sytuacji, w zależności od miejsca pobytu, lokalnych przepisów i wykorzystywanych rozwiązań. Aby uzyskać szczegółowe informacje, sprawdź zapisy w umowach [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl): kliknij nazwę w prawym górnym rogu ekranu, kliknij `Produkty i usługi`{.action}, a następnie zakładkę `Regulaminy`{.action}.
+> Niektóre elementy tego przewodnika mogą się różnić lub mogą nie mieć zastosowania w Twojej sytuacji, w zależności od miejsca pobytu, lokalnych przepisów i wykorzystywanych rozwiązań. Aby uzyskać szczegółowe informacje, sprawdź zapisy w umowach [Panelu klienta OVHcloud](/links/manager): kliknij nazwę w prawym górnym rogu ekranu, kliknij `Produkty i usługi`{.action}, a następnie zakładkę `Regulaminy`{.action}.
 >
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/dfpPCa0mUyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Wymagania początkowe
 
-- Dostęp do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl);
+- Dostęp do Panelu [klienta OVHcloud](/links/manager);
 - Posiadanie aktywnych usług OVHcloud;
 - Posiadanie [kontaktu księgowego](/pages/account_and_service_management/account_information/managing_contacts#definicja) za usługi OVHcloud.
 - Posiadanie ważnego sposobu płatności na koncie OVHcloud. Zapoznaj się z przewodnikiem "[Zarządzanie sposobami płatności](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)".
@@ -72,7 +72,7 @@ Z tego przewodnika dowiesz się:
 
 ## W praktyce
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).<br>
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager).<br>
 Kliknij swoją nazwę w prawym górnym rogu i wybierz `Produkty i usługi`{.action}.
 
 ![produkty i usługi](images/products-services-en.png){.thumbnail}

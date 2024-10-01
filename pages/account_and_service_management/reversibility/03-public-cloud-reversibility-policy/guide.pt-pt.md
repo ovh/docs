@@ -42,7 +42,7 @@ Public cloud features are divided into three categories:
 
 ### Architecture listing
 
-All components of Public Cloud products are accessible through the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). This allows to visualize and manage the instances, volumes, object containers ... as well as the features that are attached to these components.
+All components of Public Cloud products are accessible through the [OVHcloud Control Panel](/links/manager). This allows to visualize and manage the instances, volumes, object containers ... as well as the features that are attached to these components.
 
 Horizon webUI also allows to view architecture components.
 

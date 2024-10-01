@@ -14,7 +14,7 @@ L'autenticazione SSO (*Single Sign-On*) è disponibile per accedere al tuo accou
 
 - Essere amministratore di un servizio Okta
 - Disporre di un [account OVHcloud attivo](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
@@ -78,7 +78,7 @@ Il tuo servizio Okta si fida di OVHcloud come provider di servizi. Lo step succe
 
 ### Salva Okta sull'account OVHcloud e configura la connessione
 
-Per aggiungere Okta come affidabilità provider, è necessario fornire i metadati del provider nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+Per aggiungere Okta come affidabilità provider, è necessario fornire i metadati del provider nel tuo [Spazio Cliente OVHcloud](/links/manager).
 
 Clicca sul nome del tuo account in alto a destra e poi di nuovo sul tuo nome nella barra laterale.
 
@@ -145,7 +145,7 @@ In seguito, potrai disconnetterti dal tuo account e collegarti nuovamente al tuo
 
 ### Connexion via SSO
 
-Nella [pagina di identificazione OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), inserisci il tuo [identificativo](/pages/account_and_service_management/account_information/ovhcloud-account-creation#qual-e-il-mio-identificativo-cliente) seguito da **/idp** senza password e clicca sul pulsante `Connessione`{.action}.
+Nella [pagina di identificazione OVHcloud](/links/manager), inserisci il tuo [identificativo](/pages/account_and_service_management/account_information/ovhcloud-account-creation#qual-e-il-mio-identificativo-cliente) seguito da **/idp** senza password e clicca sul pulsante `Connessione`{.action}.
 
 ![Connessione alla federazione OVHcloud](images/ovhcloud_federation_login_1.png){.thumbnail}
 

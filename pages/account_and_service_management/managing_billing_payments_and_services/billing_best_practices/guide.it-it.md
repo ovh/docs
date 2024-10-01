@@ -17,7 +17,7 @@ Questa guida ti mostra gli elementi essenziali per una corretta gestione del tuo
 ## Prerequisiti
 
 - Disporre di uno o più servizi OVHcloud attivi
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
@@ -49,7 +49,7 @@ Assicurati che il tuo indirizzo email sia sempre **aggiornato, sicuro e accessib
 > Aggiungi un'**email di recupero** alle tue informazioni personali per proteggerti da qualsiasi perdita di accesso al tuo account cliente OVHcloud.
 >
 
-Le email inviate da OVHcloud sono accessibili anche dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).<br>
+Le email inviate da OVHcloud sono accessibili anche dallo [Spazio Cliente OVHcloud](/links/manager).<br>
 Clicca sul tuo nome in alto a destra e poi su `Email di servizio`{.action} nel menu di destra.
 
 ![service_emails](images/service_emails.png){.thumbnail}
@@ -58,7 +58,7 @@ Clicca sul tuo nome in alto a destra e poi su `Email di servizio`{.action} nel m
 
 > [!primary]
 >
-> Per evitare interruzioni di servizio e garantire il corretto funzionamento del rinnovo automatico, [registra una modalità di pagamento](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+> Per evitare interruzioni di servizio e garantire il corretto funzionamento del rinnovo automatico, [registra una modalità di pagamento](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) nello [Spazio Cliente OVHcloud](/links/manager)
 >
 > Assicurati regolarmente che il tuo metodo di pagamento sia **valido**.
 >
@@ -72,7 +72,7 @@ Se decidi di non attivare il rinnovo automatico, riceverai una notifica via emai
 
 ### Controllo dei tuoi ordini
 
-Sapevate di poter [seguire i vostri ordini](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders) nel vostro [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) ?<br>
+Sapevate di poter [seguire i vostri ordini](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders) nel vostro [Spazio Cliente OVHcloud](/links/manager) ?<br>
 Accedi alla scheda `Dashboard`{.action} del menu superiore dello schermo e clicca su `Visualizza i tuoi ordini`{.action}.
 
 ![viewmyorders](images/viewmyorders.png){.thumbnail}
@@ -81,7 +81,7 @@ Riceverai gli step della consegna e saprai se hai bisogno di aiuto per effettuar
 
 ### Disattivazione dei servizi
 
-Per disattivare uno dei tuoi servizi, attivarlo manualmente o eliminarlo immediatamente dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+Per disattivare uno dei tuoi servizi, attivarlo manualmente o eliminarlo immediatamente dallo [Spazio Cliente OVHcloud](/links/manager).
 
 Clicca sul tuo nome in alto a destra e poi su `Prodotti e servizi`{.action}. Sul lato destro dello schermo, clicca sui tre puntini in corrispondenza del servizio che intendi utilizzare e seleziona uno dei pulsanti seguenti:
 

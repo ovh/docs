@@ -13,7 +13,7 @@ Cet article a pour but de vous guider dans le processus de désactivation et d'a
 
 ## Prérequis
 
-- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)).
+- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](/links/manager)).
 - Avoir déployé une [NSX Edge Services Gateway](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx_deploying_edge_gateway)
 
 ## En pratique
@@ -66,7 +66,7 @@ Nous verrons ensuite comment effectuer cette même manipulation via l’API de V
 
 Pour commencer, téléchargez [Postman](https://www.postman.com/product/rest-client/) ou un autre client API REST pris en charge et installez l'application ou intégrez-la dans votre navigateur. Définissez l'authentification de base avec votre nom d'utilisateur et votre mot de passe.
 
-Vous pouvez vous assurer que l’utilisateur a accès à NSX depuis [votre espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Il s'agit du même nom d'utilisateur et du même mot de passe que ceux utilisés pour votre connexion au client web.
+Vous pouvez vous assurer que l’utilisateur a accès à NSX depuis [votre espace client OVHcloud](/links/manager). Il s'agit du même nom d'utilisateur et du même mot de passe que ceux utilisés pour votre connexion au client web.
 
 Ajouter un en-tête Content-Type application/xml.<br>
 Pour plus d'informations, consultez la page 14 du document suivant : [[https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/nsx\_64\_api.pdf](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/nsx_64_api.pdf)

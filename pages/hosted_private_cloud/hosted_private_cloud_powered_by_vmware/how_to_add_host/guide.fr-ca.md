@@ -13,13 +13,13 @@ En quelques minutes, vous pouvez ajouter un nouvel hôte dans votre environnemen
 ## Prérequis
 
 - Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
-- Avoir un identifiant utilisateur actif (créé dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc))
+- Avoir un identifiant utilisateur actif (créé dans l'[espace client OVHcloud](/links/manager))
 
 ## En pratique
 
 > [!warning]
 >
-> Les ressources ajoutées à partir de vSphere sont facturées à l'heure. Si vous souhaitez passer à une facturation mensuelle, vous pouvez changer les paramètres dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)).
+> Les ressources ajoutées à partir de vSphere sont facturées à l'heure. Si vous souhaitez passer à une facturation mensuelle, vous pouvez changer les paramètres dans l'[espace client OVHcloud](/links/manager)).
 > Pour plus de détails, consultez notre [présentation de l’espace client Hosted Private Cloud OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud).
 > 
 

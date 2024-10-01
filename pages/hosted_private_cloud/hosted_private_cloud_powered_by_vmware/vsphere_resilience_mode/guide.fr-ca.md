@@ -13,7 +13,7 @@ Si vous souhaitez réaliser un test de résilience sur votre infrastructure VMwa
 ## Prérequis
 
 - Disposer d'une offre [VMware on OVHcloud](https://www.ovhcloud.com/fr-ca/hosted-private-cloud/vmware/).
-- Être connecté à [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- Être connecté à [l'espace client OVHcloud](/links/manager).
 
 ## En pratique
 

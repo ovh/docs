@@ -12,14 +12,14 @@ Das OVHcloud Kundencenter bietet zahlreiche Optionen für die Konfiguration Ihre
 
 ## Voraussetzungen
 
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt und befinden sich unter `Bare Metal Cloud`{.action} im Bereich `Managed Bare Metal`{.action}.
+- Sie sind in Ihrem [OVHcloud Kundencenter](/links/manager){.external} eingeloggt und befinden sich unter `Bare Metal Cloud`{.action} im Bereich `Managed Bare Metal`{.action}.
 - Sie verfügen über eine [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/){.external} Infrastruktur.
 
 ## In der praktischen Anwendung
 
 ### Tab "Allgemeine Informationen"
 
-Unter dem Menüpunkt `Bare Metal Cloud`{.action} im Bereich `Managed Bare Metal`{.action} Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} finden Sie eine allgemeine Übersicht.
+Unter dem Menüpunkt `Bare Metal Cloud`{.action} im Bereich `Managed Bare Metal`{.action} Ihres [OVHcloud Kundencenters](/links/manager){.external} finden Sie eine allgemeine Übersicht.
 
 ![Allgemeine Informationen](images/controlpanel1-e.png){.thumbnail}
 

@@ -15,7 +15,7 @@ Chaque session du service OVHcloud Load Balancer est maintenue par un système d
 ## Prérequis
 
 - Disposer d'un [Load Balancer OVHcloud](https://www.ovh.com/fr/solutions/load-balancer/){.external}.
-- Avoir accès à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, ou bien
+- Avoir accès à l'[espace client OVHcloud](/links/manager){.external}, ou bien
 - Avoir accès à l'[API OVHcloud](https://api.ovh.com/){.external}.
 
 ## En pratique
@@ -42,7 +42,7 @@ Les éléments suivants auront un impact sur la redirection de trafic :
 
 ### Modifier le mode de suivi de connexion d'une ferme via l'espace client OVHcloud
 
-Dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} rendez-vous dans la partie `Bare Metal Cloud`{.action} puis `Load Balancer`{.action}.
+Dans l'[espace client OVHcloud](/links/manager){.external} rendez-vous dans la partie `Bare Metal Cloud`{.action} puis `Load Balancer`{.action}.
 
 Pour modifier le suivi de connexion d'une ferme, il faut éditer celle-ci en allant dans l'onglet `Ferme de serveurs`{.action} puis cliquez sur le bouton d'édition `...`{.action} à droite  de la ferme voulue et sélectionnez `Modifier`{.action}.
 

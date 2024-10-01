@@ -64,7 +64,7 @@ Vous devriez obtenir le résultat ci-dessous :
 
 ### Étape 2 : importer votre liste dans l'espace client OVHcloud
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis sélectionnez `Telecom`{.action}. Sélectionnez ensuite `SMS`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager) puis sélectionnez `Telecom`{.action}. Sélectionnez ensuite `SMS`{.action}.
 
 Sélectionnez votre compte SMS puis cliquez sur l'onglet `Contacts`{.action} et sur `Créer une liste de contacts`{.action}.
 

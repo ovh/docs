@@ -14,11 +14,11 @@ Vous ne pouvez régler votre commande qu’une fois identifié à l’aide de vo
 
 #### Trucs et astuces
 
-Vous avez quitté la page de votre commande ? Vous pouvez la visualiser et la régler depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans `Mes commandes`{.action}.
+Vous avez quitté la page de votre commande ? Vous pouvez la visualiser et la régler depuis votre [espace client OVHcloud](/links/manager), dans `Mes commandes`{.action}.
 
 ### Comment consulter le statut de mon paiement ?
 
-Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), puis sur votre tableau de bord, cliquez sur le raccourci `Factures`{.action}, présent dans le bandeau de droite. Si une facture est en attente de paiement, directement sur votre tableau de bord, il vous sera proposé d'en régler le solde.
+Connectez-vous à votre [espace client](/links/manager), puis sur votre tableau de bord, cliquez sur le raccourci `Factures`{.action}, présent dans le bandeau de droite. Si une facture est en attente de paiement, directement sur votre tableau de bord, il vous sera proposé d'en régler le solde.
 
 #### Trucs et astuces
 

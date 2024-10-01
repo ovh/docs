@@ -28,7 +28,7 @@ HA-NAS erlaubt die Zentralisierung der Daten verschiedener Workloads von Linux u
 
 ### Kann das HA-NAS über eine Verwaltungsoberfläche genutzt werden?
 
-Ja, das ist in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) im Bereich `Bare Metal Cloud`{.action} und dann `NAS und CDN`{.action} möglich.
+Ja, das ist in Ihrem [OVHcloud Kundencenter](/links/manager) im Bereich `Bare Metal Cloud`{.action} und dann `NAS und CDN`{.action} möglich.
 
 ## Verfügbarkeit
 
@@ -147,7 +147,7 @@ Die Snapshot-Frequenz kann über Ihr OVHcloud Kundencenter verwaltet werden. Sie
 - Alle drei Tage
 - Wöchentlich
 
-Sie können auch jederzeit manuelle Snapshots erstellen, zeitlich unbegrenzt speichern oder löschen. Diese Funktion ist in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) oder über folgenden [API-Aufruf](https://api.ovh.com/) verfügbar:
+Sie können auch jederzeit manuelle Snapshots erstellen, zeitlich unbegrenzt speichern oder löschen. Diese Funktion ist in Ihrem [OVHcloud Kundencenter](/links/manager) oder über folgenden [API-Aufruf](https://api.ovh.com/) verfügbar:
 
 >[!api]
 >

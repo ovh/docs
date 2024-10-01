@@ -22,7 +22,7 @@ Ce guide vous présente les opérations que vous devez réaliser pour bien débu
 ## Prérequis
 
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 - Être connecté à Prism Central sur le cluster
 
 > [!warning]
@@ -147,7 +147,7 @@ Ouvrez la console après le redémarrage de la VM. Vous pouvez voir que la VM a 
 
 ##### Configuration du Load Balancer
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Ouvrez la page de configuration du Nutanix Cluster. 
+Connectez-vous à votre [espace client OVHcloud](/links/manager). Ouvrez la page de configuration du Nutanix Cluster. 
 
 Dans le cadre `Réseau du cluster` en bas de page, cliquez sur le Load Balancer.
 
@@ -411,7 +411,7 @@ Dans les paramètres du système, activez le "bureau à distance".
 
 ##### Configuration du Load Balancer
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Ouvrez la page de configuration du Nutanix Cluster. Dans le cadre `Réseau du cluster` en bas de page, cliquez sur le Load Balancer.
+Connectez-vous à votre [espace client OVHcloud](/links/manager). Ouvrez la page de configuration du Nutanix Cluster. Dans le cadre `Réseau du cluster` en bas de page, cliquez sur le Load Balancer.
 
 ![Configure Load Balancer 01 RDP](images/config-lb1-rdp.PNG){.thumbnail}
 

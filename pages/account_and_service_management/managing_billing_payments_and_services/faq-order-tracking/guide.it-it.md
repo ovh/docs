@@ -14,11 +14,11 @@ Il pagamento dell'ordine può essere effettuato solo dopo l'identificazione tram
 
 #### Consigli e suggerimenti
 
-Se hai chiuso la pagina del tuo ordine, è possibile visualizzarla ed effettuare il pagamento dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione `I tuoi ordini`{.action}.
+Se hai chiuso la pagina del tuo ordine, è possibile visualizzarla ed effettuare il pagamento dallo [Spazio Cliente OVHcloud](/links/manager), sezione `I tuoi ordini`{.action}.
 
 ### Come verificare lo stato di un pagamento?
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e, nel menu di scelta rapida nella parte destra dell’interfaccia, clicca su `Fatture`{.action}. Per le fatture in attesa di pagamento, verrà richiesto di provvedere al saldo direttamente nella dashboard.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager) e, nel menu di scelta rapida nella parte destra dell’interfaccia, clicca su `Fatture`{.action}. Per le fatture in attesa di pagamento, verrà richiesto di provvedere al saldo direttamente nella dashboard.
 
 #### Consigli e suggerimenti
 
@@ -26,7 +26,7 @@ Per pagare in modo automatico le fatture è possibile impostare una modalità di
 
 ### Come verificare lo stato di un ordine?
 
-Accedendo allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), nella parte centrale della dashboard viene mostrato lo stato dell’ultimo ordine effettuato. Per visualizzare la lista completa, clicca su `Visualizza i tuoi ordini`{.action}.
+Accedendo allo [Spazio Cliente OVHcloud](/links/manager), nella parte centrale della dashboard viene mostrato lo stato dell’ultimo ordine effettuato. Per visualizzare la lista completa, clicca su `Visualizza i tuoi ordini`{.action}.
 
 ![stato di un ordine](images/order_final-min.gif){.thumbnail}
 

@@ -16,7 +16,7 @@ VMware Tools è un software che migliora le performance di una macchina virtuale
 
 ## Prerequisiti
 
-- Avere un utente attivo (creato nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it))
+- Avere un utente attivo (creato nello [Spazio Cliente OVHcloud](/links/manager))
 
 ## Procedura
 

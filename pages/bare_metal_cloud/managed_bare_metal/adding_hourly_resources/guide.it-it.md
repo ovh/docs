@@ -13,7 +13,7 @@ Il servizio [Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/
 ## Prerequisiti
 
 * Disporre di una soluzione [Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/){.external}
-* [Attribuire il permesso "Aggiunta di risorse"](/pages/bare_metal_cloud/managed_bare_metal/change-user-rights) per il datacenter in questione all'utente dallo[Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
+* [Attribuire il permesso "Aggiunta di risorse"](/pages/bare_metal_cloud/managed_bare_metal/change-user-rights) per il datacenter in questione all'utente dallo[Spazio Cliente OVHcloud](/links/manager){.external}.
 * Essere connesso al client vSphere
 
 ## Procedura

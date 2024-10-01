@@ -12,7 +12,7 @@ Es posible solicitar la baja de su infraestructura Managed Bare Metal en cualqui
 
 ## Requisitos
 
-- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en el menú `Servidores`{.action} > `Managed Bare Metal`{.action}.
+- Estar conectado al [área de cliente de OVHcloud](/links/manager){.external}, en el menú `Servidores`{.action} > `Managed Bare Metal`{.action}.
 - Haber contratado una solución [Managed Bare Metal](https://www.ovhcloud.com/es/managed-bare-metal/){.external}.
 
 ## Procedimiento
@@ -24,7 +24,7 @@ Es posible solicitar la baja de su infraestructura Managed Bare Metal en cualqui
 
 ### 1\. Solicitar la baja del servicio desde el área de cliente de OVHcloud
 
-Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, acceda al menú `Servidores`{.action} (1), haga clic en la sección `Managed Bare Metal`{.action} (2) y seleccione su servicio en la lista (3).
+Conéctese al [área de cliente de OVHcloud](/links/manager){.external}, acceda al menú `Servidores`{.action} (1), haga clic en la sección `Managed Bare Metal`{.action} (2) y seleccione su servicio en la lista (3).
 
 En la columna «Gestión del servicio», haga clic en el botón con forma de tres puntos `...`{.action} (4) que aparece junto a la fecha de renovación. Por último, haga clic en `Eliminar el servicio`{.action} (5).
 

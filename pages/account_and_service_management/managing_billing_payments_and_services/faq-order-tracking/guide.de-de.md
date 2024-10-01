@@ -14,11 +14,11 @@ Sie können Ihre Bestellung erst bezahlen, wenn Sie sich über Ihren Kunden-Acco
 
 #### Tipps und Tricks
 
-Sie haben die Seite Ihrer Bestellung geschlossen? Dann können Sie diese in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) unter `Meine Bestellungen`{.action} einsehen und bezahlen.
+Sie haben die Seite Ihrer Bestellung geschlossen? Dann können Sie diese in Ihrem [OVHcloud Kundencenter](/links/manager) unter `Meine Bestellungen`{.action} einsehen und bezahlen.
 
 ### Wie kann ich meinen Zahlungsstatus einsehen?
 
-Melden Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) an. Auf Ihrem Dashboard klicken Sie dann auf den Shortcut `Rechnungen`{.action} auf dem rechten Banner. Wenn eine Rechnung aussteht, wird Ihnen auf Ihrem Dashboard vorgeschlagen, den Betrag zu begleichen.
+Melden Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) an. Auf Ihrem Dashboard klicken Sie dann auf den Shortcut `Rechnungen`{.action} auf dem rechten Banner. Wenn eine Rechnung aussteht, wird Ihnen auf Ihrem Dashboard vorgeschlagen, den Betrag zu begleichen.
 
 #### Tipps und Tricks
 

@@ -14,7 +14,7 @@ You can use **Single Sign-On** (SSO) to connect to your OVHcloud account. To ena
 
 - Active Directory Federation Services (AD FS) running on your server
 - An [OVHcloud account](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -119,7 +119,7 @@ With the mapping completed, your AD FS now trusts OVHcloud as a service provider
 
 ### Establishing OVHcloud account trust and configuring the connection
 
-Adding your AD FS as a trusted identity provider is done in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) where you can provide the identity provider metadata.
+Adding your AD FS as a trusted identity provider is done in the [OVHcloud Control Panel](/links/manager) where you can provide the identity provider metadata.
 
 Click your account name in the top-right corner, then on your name again in the sidebar.
 
@@ -208,7 +208,7 @@ You can then disconnect from your account and log in again with your AD FS as id
 
 ### Connect via SSO
 
-On the [OVHcloud login page](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), enter your [NIC handle](/pages/account_and_service_management/account_information/ovhcloud-account-creation#what-is-my-nic-handle) followed by **/idp** without entering a password, and click the `Login`{.action} button.
+On the [OVHcloud login page](/links/manager), enter your [NIC handle](/pages/account_and_service_management/account_information/ovhcloud-account-creation#what-is-my-nic-handle) followed by **/idp** without entering a password, and click the `Login`{.action} button.
 
 ![OVHcloud federation login](images/ovhcloud_federation_login_1.png){.thumbnail}
 

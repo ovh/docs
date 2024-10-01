@@ -58,7 +58,7 @@ Activer le lien de secours LTE sur un modem TG799vac nécessite quelques configu
 
 Pour que le lien de secours LTE fonctionne, le modem doit être sur le firmware « 17.1.7960.01 ».
 
-Afin de mettre à jour le modem, vous devez vous connecter à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie « Télécom ». Cliquez sur `Accès Internet`{.action}, puis sélectionnez le pack et l’accès Internet concerné. Assurez-vous d'être positionné sur l'onglet `Mon Modem`{.action}.
+Afin de mettre à jour le modem, vous devez vous connecter à votre [espace client OVHcloud](/links/manager){.external}, partie « Télécom ». Cliquez sur `Accès Internet`{.action}, puis sélectionnez le pack et l’accès Internet concerné. Assurez-vous d'être positionné sur l'onglet `Mon Modem`{.action}.
 
 Dans le cadre « Configurations avancées », sélectionnez le firmware « 17.1.7960.01 » dans la liste déroulante de la section `Firmware`.
 

@@ -68,7 +68,7 @@ Si estuviese comprometida, le recomendamos encarecidamente [que la cambie de inm
 
 #### Desde el área de cliente de OVHcloud
 
-- Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en su nombre en la esquina superior derecha y haga clic en sus iniciales.
+- Conéctese al [área de cliente de OVHcloud](/links/manager){.external}, haga clic en su nombre en la esquina superior derecha y haga clic en sus iniciales.
 
 ![manage-ovh-password](images/newhub2.png){.thumbnail}
 

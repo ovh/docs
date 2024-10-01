@@ -27,7 +27,7 @@ Unlike a locally hosted application, using AI Deploy offers extremely fast infer
 
 To build and deploy your Whisper app, you need:
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - An AI Deploy Project created inside a [Public Cloud project](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account
 - A [user for AI Deploy & Object Storage](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
 - [The OVHcloud AI CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) installed on your local computer
@@ -84,7 +84,7 @@ You can create your Object Storage bucket using either the UI (OVHcloud Control 
 >>
 >> If you do not feel comfortable with commands, this method may be more intuitive.
 >> 
->> First, go to the `Public Cloud`{.action} section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia).
+>> First, go to the `Public Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager).
 >>
 >> Then, select the `Object Storage`{.action} section (in the Storage category) and create a new object container by clicking `Storage`{.action} > `Object Storage`{.action} > `Create an object container`{.action}.
 >>

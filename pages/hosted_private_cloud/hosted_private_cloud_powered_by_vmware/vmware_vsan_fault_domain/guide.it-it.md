@@ -15,7 +15,7 @@ Questa guida ti mostra come funzionano e attuano i domini di guasti vSAN.
 ## Prerequisiti
 
 - Essere contatto amministratore dell'infrastruttura [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/) per ricevere le credenziali di accesso.
-- Avere un utente attivo con diritti specifici per NSX (creato nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere un utente attivo con diritti specifici per NSX (creato nello [Spazio Cliente OVHcloud](/links/manager)
 - Aver installato un [datastore vSan](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_vsan)
 
 ## Procedura

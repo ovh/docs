@@ -16,7 +16,7 @@ updated: 2022-11-16
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - Access to your clusters via **Prism Central**
 - You must have Nutanix licences and have them available on the Nutanix portal.
 - You must have your Nutanix login details on [Nutanix Official Site](https://www.nutanix.com).

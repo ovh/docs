@@ -469,7 +469,7 @@ ovhcloud
   nodePoolID = xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx
 ```
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), go to the `Public Cloud`{.action} section and click on `Managed Kubernetes Service`. <br>
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and click on `Managed Kubernetes Service`. <br>
 As you can see, your cluster has been successfuly created:
 
 ![Cluster created](images/cluster-created.png){.thumbnail}

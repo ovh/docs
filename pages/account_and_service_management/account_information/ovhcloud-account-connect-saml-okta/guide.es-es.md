@@ -14,7 +14,7 @@ Puede utilizar la autenticación SSO (*Single Sign-On*) para conectarse a su cue
 
 - Ser administrador de un servicio Okta
 - Disponer de una [cuenta de OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- Tienes acceso a tu [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
+- Tienes acceso a tu [área de cliente de OVHcloud](/links/manager)
 
 ## Procedimiento
 
@@ -78,7 +78,7 @@ Su servicio Okta ya confía en OVHcloud como proveedor de servicios. El siguient
 
 ### Guardar Okta en la cuenta de OVHcloud y configurar la conexión
 
-Para añadir a Okta como proveedor de identidad de confianza, debe proporcionar los metadatos del proveedor de identidad desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+Para añadir a Okta como proveedor de identidad de confianza, debe proporcionar los metadatos del proveedor de identidad desde el [área de cliente de OVHcloud](/links/manager).
 
 Haga clic en el nombre de su cuenta en la esquina superior derecha y, a continuación, vuelva a hacer clic en su nombre en la barra lateral.
 
@@ -145,7 +145,7 @@ A continuación, podrá desconectarse de su cuenta y reconectarse con su Okta co
 
 ### Conexión mediante SSO
 
-En [la página de identificación de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), introduzca su [identificador](/pages/account_and_service_management/account_information/ovhcloud-account-creation#cual-es-mi-id-de-cliente) seguido de **/idp** sin contraseña y haga clic en el botón `Conexión`{.action}.
+En [la página de identificación de OVHcloud](/links/manager), introduzca su [identificador](/pages/account_and_service_management/account_information/ovhcloud-account-creation#cual-es-mi-id-de-cliente) seguido de **/idp** sin contraseña y haga clic en el botón `Conexión`{.action}.
 
 ![Conexión a la federación OVHcloud](images/ovhcloud_federation_login_1.png){.thumbnail}
 

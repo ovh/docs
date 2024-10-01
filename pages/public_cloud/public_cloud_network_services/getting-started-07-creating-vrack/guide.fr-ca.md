@@ -13,7 +13,7 @@ Le [vRack](https://www.ovh.com/ca/fr/solutions/vrack/) est un réseau privé qui
 ## Prérequis
 
 - Posséder un [projet Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project)
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}
+- Être connecté à votre [espace client OVHcloud](/links/manager){.external}
 - Avoir [créé un utilisateur OpenStack](/pages/public_cloud/compute/create_and_delete_a_user) (facultatif)
 - Connaissances réseaux élémentaires
 
@@ -27,7 +27,7 @@ Selon votre profil technique et vos besoins, vous serez amenés à devoir choisi
 
 ### Espace client OVHcloud
 
-[L'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) est une interface entièrement et uniquement visuelle, ce qui en fait une interface idéale si vous n'avez qu'un seul VLAN à gérer. Vous ne pourrez personnaliser la plage d'IP privée qui sera uniquement en 10.x.x.x/16.
+[L'espace client OVHcloud](/links/manager) est une interface entièrement et uniquement visuelle, ce qui en fait une interface idéale si vous n'avez qu'un seul VLAN à gérer. Vous ne pourrez personnaliser la plage d'IP privée qui sera uniquement en 10.x.x.x/16.
 
 Les VLAN seront déployés par défaut sur toutes les zones. Vous aurez juste la possibilité d'activer ou non les passerelles.
 
@@ -108,7 +108,7 @@ Une fois le vRack actif, vous retrouverez ce service sous l’appellation « pn-
 
 #### Depuis l'espace client OVHcloud
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, accédez à la section `Public Cloud`{.action} et sélectionnez ensuite le projet Public Cloud de votre choix en haut à gauche.
+Connectez-vous à votre [espace client OVHcloud](/links/manager){.external}, accédez à la section `Public Cloud`{.action} et sélectionnez ensuite le projet Public Cloud de votre choix en haut à gauche.
 
 ![sélection project](images/vrack2021-05.png){.thumbnail}
 
@@ -439,7 +439,7 @@ Ainsi, par exemple, si vous avez une interface publique eth0, vous aurez en plus
 
 ##### **Depuis l'espace client OVHcloud** 
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, accédez à la section `Public Cloud`{.action} et sélectionnez ensuite le projet Public Cloud concerné en haut à gauche.
+Connectez-vous à votre [espace client OVHcloud](/links/manager){.external}, accédez à la section `Public Cloud`{.action} et sélectionnez ensuite le projet Public Cloud concerné en haut à gauche.
 
 Cliquez alors sur `Instances`{.action} dans le menu latéral de gauche. Cliquez ensuite sur le bouton `...`{.action} à droite de l'instance concernée puis sur `Détail de l'instance`{.action}.
 

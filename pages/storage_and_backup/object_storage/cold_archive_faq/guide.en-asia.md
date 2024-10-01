@@ -25,7 +25,7 @@ Find an overview of the solution on [this page](/pages/storage_and_backup/object
 To use the service, you will need to meet the following requirements:
 
 - You must have a [Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) in your OVHcloud account. 
-- You must be logged in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia).
+- You must be logged in to your [OVHcloud Control Panel](/links/manager).
 - You must have created a [S3 user](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage).
 
 ### What S3 features are available with the Cold Archive storage class? 

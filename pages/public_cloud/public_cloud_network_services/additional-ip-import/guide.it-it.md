@@ -24,7 +24,7 @@ Per configurare un indirizzo Additional IP sulle tue istanze Public Cloud, ad es
 ## Prerequisiti
 
 - Un [progetto Public Cloud](https://www.ovhcloud.com/it/public-cloud/) nel tuo account OVHcloud
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
 - Un [indirizzo Additional IP](https://www.ovhcloud.com/it/bare-metal/ip/){.external}
 
 > [!warning]
@@ -33,7 +33,7 @@ Per configurare un indirizzo Additional IP sulle tue istanze Public Cloud, ad es
 
 ## Procedura
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona il tuo progetto nella sezione `Public Cloud `{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager) e seleziona il tuo progetto nella sezione `Public Cloud `{.action}.
 
 Nel menu a sinistra, apri `Public IP`{.action} in `Network`.
 

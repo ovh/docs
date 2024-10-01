@@ -14,7 +14,7 @@ Ce système vous permettra d'accéder uniquement au dossier « upload-vpn » d
 
 ## Prérequis
 
-- Posséder un utilisateur actif créé depuis l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+- Posséder un utilisateur actif créé depuis l’[espace client OVHcloud](/links/manager){.external}.
 
 ## En pratique
 

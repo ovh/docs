@@ -24,7 +24,7 @@ updated: 2023-12-18
 ## Requirements
 
 - A Nutanix cluster in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - You must be connected to the cluster via Prism Central
 - You need to know the Prism Element admin password (when deploying a Nutanix cluster by OVHcloud this password is created in the same way as Prism Central but can be changed later)
 

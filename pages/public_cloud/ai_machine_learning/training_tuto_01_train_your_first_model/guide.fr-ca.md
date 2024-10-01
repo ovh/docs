@@ -35,7 +35,7 @@ This dataset is available on their [GitHub repository](https://github.com/zaland
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - An AI Training project created inside a [Public Cloud project](https://www.ovhcloud.com/fr-ca/public-cloud/) in your OVHcloud account
 - A user for AI Training
 - A Python script that trains a model

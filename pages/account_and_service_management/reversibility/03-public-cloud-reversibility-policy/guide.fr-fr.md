@@ -42,7 +42,7 @@ Les fonctionnalités Hosted Private Cloud sont divisées en trois catégories :
 
 ### Liste des architectures
 
-Tous les composants des produits Public Cloud sont accessibles via l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cela permet de visualiser et de gérer les instances, les volumes, les conteneurs d'objets ... ainsi que les fonctions associées à ces composants.
+Tous les composants des produits Public Cloud sont accessibles via l'[espace client OVHcloud](/links/manager). Cela permet de visualiser et de gérer les instances, les volumes, les conteneurs d'objets ... ainsi que les fonctions associées à ces composants.
 
 L'interface web Horizon permet également d'afficher les composants de l'architecture.
 

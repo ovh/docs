@@ -13,7 +13,7 @@ Prefect provides a flexible Python framework to easily combine tasks into workfl
 ## Requirements
 
 - An active OVHcloud account and its credentials
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - A [Public Cloud project](https://www.ovhcloud.com/es/public-cloud/)
 
 ## Instructions

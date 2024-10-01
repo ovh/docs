@@ -68,7 +68,7 @@ Se a sua palavra-passe estiver comprometida, recomendamos vivamente que a [alter
 
 #### A partir da sua Área de Cliente OVHcloud
 
-- Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique no seu nome (canto superior direito) e clicar nas suas iniciais.
+- Ligue-se à sua [Área de Cliente OVHcloud](/links/manager){.external}, clique no seu nome (canto superior direito) e clicar nas suas iniciais.
 
 ![manage-ovh-password](images/newhub2.png){.thumbnail}
 

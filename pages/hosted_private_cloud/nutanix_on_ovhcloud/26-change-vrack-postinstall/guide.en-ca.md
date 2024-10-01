@@ -20,13 +20,13 @@ A Nutanix cluster is delivered with its own vRack. In order to interconnect with
 
 - A Nutanix cluster in your OVHcloud account
 - An additional [vRack](https://www.ovh.com/ca/en/solutions/vrack/) service activated in your account
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
 ### Step 1: Removing services
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
+Log in to the [OVHcloud Control Panel](/links/manager).
 
 Open the Nutanix cluster vRack configuration page, select all the services (e.g. dedicated server, IP, load balancer) and click on `Remove`{.action}.
 

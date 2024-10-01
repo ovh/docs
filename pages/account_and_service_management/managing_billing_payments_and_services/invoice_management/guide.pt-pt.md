@@ -16,20 +16,20 @@ A OVHcloud disponibiliza-lhe um espaço que lhe permite consultar, gerir e pagar
 
 > [!primary]
 >
-> Em função do seu local de residência e da sua legislação em vigor, bem como do(s) produto(s) em causa, é possível que algumas partes deste guia variem e/ou não se apliquem consoante a sua situação. Caso tenha alguma dúvida, consulte os contratos da OVHcloud disponíveis na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) (clique no canto superior direito do ecrã no seu nome e, no menu contextual, na `Gestão dos serviços`{.action} e, a seguir, no separador `Contratos`{.action}).
+> Em função do seu local de residência e da sua legislação em vigor, bem como do(s) produto(s) em causa, é possível que algumas partes deste guia variem e/ou não se apliquem consoante a sua situação. Caso tenha alguma dúvida, consulte os contratos da OVHcloud disponíveis na sua [Área de Cliente OVHcloud](/links/manager) (clique no canto superior direito do ecrã no seu nome e, no menu contextual, na `Gestão dos serviços`{.action} e, a seguir, no separador `Contratos`{.action}).
 >
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/iiQmopMhzik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) enquanto [contacto de faturação](/pages/account_and_service_management/account_information/managing_contacts) do serviço.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager) enquanto [contacto de faturação](/pages/account_and_service_management/account_information/managing_contacts) do serviço.
 
 ## Instruções
 
 > [!primary]
 >
-> Cada fatura é enviada por e-mail e acessível através de uma ligação ao cliente. Poderá aceder através da autenticação da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Todas as faturas ficarão igualmente disponíveis no separador `Painel de controlo`{.action} da sua Área de Cliente.
+> Cada fatura é enviada por e-mail e acessível através de uma ligação ao cliente. Poderá aceder através da autenticação da [Área de Cliente OVHcloud](/links/manager). Todas as faturas ficarão igualmente disponíveis no separador `Painel de controlo`{.action} da sua Área de Cliente.
 >
 
 ### Secções de uma fatura da OVHcloud
@@ -50,14 +50,14 @@ A fatura do seu serviço OVHcloud é-lhe enviada após o pagamento de uma encome
 
 > [!primary]
 >
-> Se a menção “Extracto de conta” aparece na linha correspondente ao pagamento, isto significa que se trata de uma renovação automática. O método de pagamento utilizado será obrigatoriamente aquele que foi validado na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+> Se a menção “Extracto de conta” aparece na linha correspondente ao pagamento, isto significa que se trata de uma renovação automática. O método de pagamento utilizado será obrigatoriamente aquele que foi validado na [Área de Cliente OVHcloud](/links/manager).
 >
 
 ### Descobrir a área de faturação
 
 #### Consultar e gerir faturas
 
-Para consultar as suas faturas aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no seu nome no canto superior direito do ecrã e, no novo menu que aparecer, em `Faturas`{.action}.
+Para consultar as suas faturas aceda à [Área de Cliente OVHcloud](/links/manager). Clique no seu nome no canto superior direito do ecrã e, no novo menu que aparecer, em `Faturas`{.action}.
 
 ![Faturação](images/hubinvoices.png){.thumbnail}
 
@@ -127,7 +127,7 @@ Será criada uma [nota de encomenda de regularização](/pages/account_and_servi
 > Para solicitar a rescisão do serviço na data de expiração, siga as instruções deste [guia](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
 >
 
-Se recebeu uma fatura que não considera legítima e deseja pedir o seu reembolso, ou fazer valer o seu [direito de retratação](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#direito-de-retratacao), pode efetuar uma reclamação através do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), sob reserva da aplicação das nossas [Condições Gerais de Serviço](https://www.ovh.pt/suporte/documentos_legais/OVH_COND_GERAIS.pdf).
+Se recebeu uma fatura que não considera legítima e deseja pedir o seu reembolso, ou fazer valer o seu [direito de retratação](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#direito-de-retratacao), pode efetuar uma reclamação através do seu [Área de Cliente OVHcloud](/links/manager), sob reserva da aplicação das nossas [Condições Gerais de Serviço](https://www.ovh.pt/suporte/documentos_legais/OVH_COND_GERAIS.pdf).
 <br>Clique no canto superior direito do seu ecrã no seu nome e depois em `Criar um ticket`{.action}.
 
 ### Seguir os seus pagamentos

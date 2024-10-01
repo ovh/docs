@@ -13,11 +13,11 @@ All’utente vSphere di un servizio Managed Bare Metal è possibile associare co
 ## Prerequisiti
 
 - Disporre di una soluzione [Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/){.external}
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
-Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e, nella sezione `Bare Metal Cloud`, clicca su `Managed Bare Metal` nella colonna a sinistra e seleziona il servizio in questione.
+Accedi allo [Spazio Cliente](/links/manager) e, nella sezione `Bare Metal Cloud`, clicca su `Managed Bare Metal` nella colonna a sinistra e seleziona il servizio in questione.
 
 ![Utente vSphere](images/addMailOnUser01.png){.thumbnail}
 

@@ -19,7 +19,7 @@ For more information on how to train YOLOv5 on a custom dataset, refer to the fo
 
 ## Requirements
 
--   access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
+-   access to the [OVHcloud Control Panel](/links/manager)
 -   an AI Deploy project created inside a Public Cloud project
 -   a [user for AI Deploy](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
 -   [Docker](https://www.docker.com/get-started) installed on your local computer

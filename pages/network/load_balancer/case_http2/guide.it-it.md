@@ -17,7 +17,7 @@ L’ALPN (Application-Layer Protocol Negotiation) è un'estensione TLS che conse
 - Disporre di un [Load Balancer OVH](https://www.ovh.it/soluzioni/load-balancer/){.external}
 - Aver creato un front-end TCP
 - Aver creato una farm TCP e aver aggiunto i server
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Avere accesso allo [Spazio Cliente OVH](/links/manager){.external}
 
 ## Procedura
 

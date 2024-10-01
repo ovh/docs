@@ -24,12 +24,12 @@ Instead of buying additional ones, you can import an Additional IP address that 
 ## Requirements
 
 - A [Public Cloud project](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}
+- Access to the [OVHcloud Control Panel](/links/manager){.external}
 - An [Additional IP address](https://www.ovhcloud.com/en-au/bare-metal/ip/){.external}
 
 ## Instructions
 
-In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), select your project from the `Public Cloud`{.action} section. 
+In the [OVHcloud Control Panel](/links/manager), select your project from the `Public Cloud`{.action} section. 
 
 In the left-hand menu, open `Public IPs`{.action} under `Network`.
 

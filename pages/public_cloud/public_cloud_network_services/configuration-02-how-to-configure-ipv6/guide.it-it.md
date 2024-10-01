@@ -28,7 +28,7 @@ Di default è configurato soltanto l’IPv4 perciò.
 * Disporre di un qualsiasi modello di istanza Public Cloud
 * *Avere accesso amministrativo (sudo) via SSH o desktop remoto (Windows) al server
 * Possedere conoscenze base di rete
-* Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+* Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 

@@ -18,7 +18,7 @@ Esto se debe a que el snapshot de la máquina virtual está instalado en el back
 ## Requisitos
 
 - Ser contacto administrador de la infraestructura [Hosted Private Cloud](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/) para recibir las claves de conexión.
-- Tener un usuario activo (creado en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
+- Tener un usuario activo (creado en el [área de cliente de OVHcloud](/links/manager)
 - Activar la opción [Veeam Backup Managed](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/veeam-backup-managed/){.external}.
 
 ## Procedimiento

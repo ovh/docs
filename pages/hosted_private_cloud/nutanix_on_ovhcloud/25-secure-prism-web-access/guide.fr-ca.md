@@ -19,13 +19,13 @@ Une fois votre service livré, Prism Central est accessible sur l'Internet publi
 ## Prérequis
 
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 
 ## En pratique
 
 ### Étape 1 : trouver le Load Balancer concerné
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et ouvrez la page de configuration du Nutanix Cluster vRack.
+Connectez-vous à votre [espace client OVHcloud](/links/manager) et ouvrez la page de configuration du Nutanix Cluster vRack.
 
 Identifiez le nom de votre Load Balancer.
 

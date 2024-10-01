@@ -113,7 +113,7 @@ Pour redéployer la VM de la passerelle, vous aurez besoin des éléments suivan
 
 ##### **Vérifier l'adresse Additional IP**
 
-Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et accédez à la gestion de votre [vRack](https://www.ovhcloud.com/fr/network/vrack/){.external}. Vérifiez l'adresse Additional IP utilisée par le cluster Nutanix.
+Connectez-vous à l'[espace client OVHcloud](/links/manager) et accédez à la gestion de votre [vRack](https://www.ovhcloud.com/fr/network/vrack/){.external}. Vérifiez l'adresse Additional IP utilisée par le cluster Nutanix.
 
 ![Additional IP](images/check_subnet0.png){.thumbnail}
 

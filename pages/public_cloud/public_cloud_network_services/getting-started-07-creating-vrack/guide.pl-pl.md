@@ -17,7 +17,7 @@ Usługa [vRack](https://www.ovh.pl/rozwiazania/vrack/) to prywatna sieć, która
 ## Wymagania początkowe
 
 - [projekt Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project) na koncie OVHcloud
-- dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- dostęp do [Panelu klienta OVHcloud](/links/manager)
 - [użytkownika OpenStack](/pages/public_cloud/compute/create_and_delete_a_user) (opcjonalnie)
 - podstawowa wiedza w zakresie sieci komputerowych
 
@@ -31,7 +31,7 @@ W zależności od profilu technicznego i Twoich potrzeb, do Ciebie należy wybó
 
 ### Panel klienta OVHcloud
 
-[Panel klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) jest w pełni wizualnym interfejsem idealnie nadającym się do zarządzania tylko jedną siecią VLAN. Zakres prywatnych adresów IP nie będzie spersonalizowany. Będzie on dostępny w formacie 10.x.x.x/16.
+[Panel klienta OVHcloud](/links/manager) jest w pełni wizualnym interfejsem idealnie nadającym się do zarządzania tylko jedną siecią VLAN. Zakres prywatnych adresów IP nie będzie spersonalizowany. Będzie on dostępny w formacie 10.x.x.x/16.
 
 Sieć VLAN zostanie wdrożona domyślnie we wszystkich strefach. Będziesz mógł włączyć bramy lub nie.
 
@@ -107,7 +107,7 @@ Po aktywacji usługi jest ona dostępna w Panelu klienta w sekcji `Bare Metal Cl
 
 #### W Panelu klienta OVHcloud
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud.
 
 ![wybór projektu](images/vrack2021-05.png){.thumbnail}
 
@@ -435,7 +435,7 @@ Na przykład, jeśli masz interfejs publiczny *eth0*, dodasz interfejs *eth1*.
 
 ##### **W Panelu klienta OVHcloud** 
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud.
 
 Kliknij pozycję `Instances`{.action} na lewym pasku nawigacyjnym, a następnie kliknij pozycję `...`{.action} z prawej strony instancji. Wybierz opcję `Informacje o instancji`{.action} wystąpienia.
 

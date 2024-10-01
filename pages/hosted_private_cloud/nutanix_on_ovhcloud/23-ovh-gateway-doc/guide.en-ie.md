@@ -121,7 +121,7 @@ To redeploy the gateway VM you will need:
 
 ##### **Check the Additional IP address**
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and open the management section of your [vRack](https://www.ovhcloud.com/en-ie/network/vrack/){.external}. Verify the Additional IP address used by the Nutanix Cluster.
+Log in to the [OVHcloud Control Panel](/links/manager) and open the management section of your [vRack](https://www.ovhcloud.com/en-ie/network/vrack/){.external}. Verify the Additional IP address used by the Nutanix Cluster.
 
 ![Additional IP](images/check_subnet0.png){.thumbnail}
 

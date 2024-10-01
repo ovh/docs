@@ -18,7 +18,7 @@ L'autenticazione SSO (*Single Sign-On*) è **unica** per accedere al tuo account
 
 - I servizi AD FS (Active Directory Federation Services) devono essere eseguiti sul tuo server
 - Disporre di un [account OVHcloud attivo](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
@@ -123,7 +123,7 @@ Una volta terminata la tabella di corrispondenza, il servizio AD FS si fida di O
 
 ### Affidare la fiducia all'account OVHcloud e configurare la connessione
 
-L'aggiunta del tuo AD FS come affidabilità provider avviene [nello Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), dove è possibile fornire i metadati del provider.
+L'aggiunta del tuo AD FS come affidabilità provider avviene [nello Spazio Cliente OVHcloud](/links/manager), dove è possibile fornire i metadati del provider.
 
 Clicca sul nome del tuo account in alto a destra e poi di nuovo sul tuo nome nella barra laterale.
 
@@ -212,7 +212,7 @@ In seguito, potrai disconnetterti dal tuo account e collegarti con il tuo AD FS 
 
 ### Connessione via SSO
 
-Nella [pagina di identificazione OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), inserisci il tuo [identificativo cliente](/pages/account_and_service_management/account_information/ovhcloud-account-creation#qual-e-il-mio-identificativo-cliente) seguito da **/idp** senza password e clicca sul pulsante `Login`{.action}.
+Nella [pagina di identificazione OVHcloud](/links/manager), inserisci il tuo [identificativo cliente](/pages/account_and_service_management/account_information/ovhcloud-account-creation#qual-e-il-mio-identificativo-cliente) seguito da **/idp** senza password e clicca sul pulsante `Login`{.action}.
 
 ![Connessione alla federazione OVHcloud](images/ovhcloud_federation_login_1.png){.thumbnail}
 

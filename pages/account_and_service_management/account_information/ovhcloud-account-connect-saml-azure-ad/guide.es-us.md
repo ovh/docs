@@ -18,7 +18,7 @@ Puede utilizar la autenticación **SSO** (*Single Sign-On*) para conectarse a su
 
 - Tener acceso a las funciones de **administrador de aplicaciones** y **administrador de usuarios** de un servicio Entra ID
 - Disponer de una [cuenta de OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- Tienes acceso a tu [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
+- Tienes acceso a tu [Panel de configuración de OVHcloud](/links/manager)
 
 ## Procedimiento
 
@@ -203,7 +203,7 @@ Utilice este enlace para descargar el archivo de metadatos de la aplicación Ent
 
 ### Crear la confianza de una cuenta de OVHcloud y configurar la conexión
 
-La adición de su aplicación Entra ID como proveedor de identidad aprobado se realiza en [el área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), donde puede proporcionar los metadatos del proveedor de identidad.
+La adición de su aplicación Entra ID como proveedor de identidad aprobado se realiza en [el área de cliente de OVHcloud](/links/manager), donde puede proporcionar los metadatos del proveedor de identidad.
 
 #### Creación de confianza en OVHcloud
 
@@ -263,7 +263,7 @@ Atención: Si otorga el privilegio `Ninguno`, será necesario asignar permisos a
 
 ### Conexión mediante SSO
 
-En [la página de identificación de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), introduzca su [ID de cliente](/pages/account_and_service_management/account_information/ovhcloud-account-creation#cual-es-mi-id-de-cliente) seguido de **/idp** sin contraseña y haga clic en el botón `Login`{.action} .
+En [la página de identificación de OVHcloud](/links/manager), introduzca su [ID de cliente](/pages/account_and_service_management/account_information/ovhcloud-account-creation#cual-es-mi-id-de-cliente) seguido de **/idp** sin contraseña y haga clic en el botón `Login`{.action} .
 
 ![Ovhcloud SSO Login step 1](images/ovhcloud_sso_login_1.png){.thumbnail}
 

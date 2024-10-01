@@ -22,7 +22,7 @@ Lo Spazio Cliente OVHcloud permette di recuperare le credenziali SMPP, modificar
 ## Prerequisiti
 
 - Disporre di un [account SMS SMPP OVHcloud](https://www.ovhcloud.com/it/sms/api-sms/)
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) nella sezione `Telecom`{.action} > `SMS`{.action}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager) nella sezione `Telecom`{.action} > `SMS`{.action}
 
 ## Procedura
 

@@ -28,7 +28,7 @@ Rozwiązanie to pozwala również na rozwiązanie bardziej złożonych problemó
 
 ### Czy można zarządzać Enterprise File Storage w Panelu klienta?
 
-Tak, usługa ta jest dostępna bezpośrednio w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), w sekcji `Bare Metal Cloud`{.action}, następnie `Storage i Backup`{.action}.
+Tak, usługa ta jest dostępna bezpośrednio w [Panelu klienta OVHcloud](/links/manager), w sekcji `Bare Metal Cloud`{.action}, następnie `Storage i Backup`{.action}.
 
 ## Dostępność
 

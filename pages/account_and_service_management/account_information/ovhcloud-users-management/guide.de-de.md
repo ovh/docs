@@ -24,7 +24,7 @@ Bei OVHcloud haben Sie die Möglichkeit, lokale Benutzer zu erstellen und diesen
 ## Voraussetzungen
 
 - Sie verfügen über einen aktiven OVHcloud Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
@@ -76,7 +76,7 @@ Beispiel: **1234-567-89/johnsmith**.
 
 ![Benutzerverwaltung](images/usersmanagement3.png){.thumbnail}
 
-Der Benutzer kann sich von nun an mit dieser Kennung im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) einloggen. 
+Der Benutzer kann sich von nun an mit dieser Kennung im [OVHcloud Kundencenter](/links/manager) einloggen. 
 
 Darüber hinaus kann er sein Passwort ändern und seinen eigenen Zugang zu Ihrem Account mithilfe einer Zwei-Faktor-Authentifizierung zusätzlich schützen (diese betrifft nur den Zugriff als Benutzer). Um mehr über die Einrichtung der Zwei-Faktor-Authentifizierung zu erfahren, lesen Sie [diese Anleitung](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
 

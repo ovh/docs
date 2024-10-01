@@ -20,7 +20,7 @@ In this tutorial, we will use one of them and interpret the results.
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Access to the [OVHcloud Control Panel](/links/manager).
 - A [Public Cloud project](https://www.ovhcloud.com/es/public-cloud/) in your OVHcloud account.
 - An app with an API running in AI Deploy on your Public Cloud project.
 - A python environment, with enough CPU and RAM and internet access (a virtual machine is recommended).
@@ -44,7 +44,7 @@ Feel free to deploy any app and API that you would like to load test, as long as
 For this tutorial, we will load test a spam classifier API from the [AI Deploy app portfolio](/pages/public_cloud/ai_machine_learning/deploy_guide_05_app_portfolio).
 This API takes sentences (emails) as input text, and outputs a spam probability score. 
 
-You can deploy this API easily from the [OVHcloud control panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) or [OVHcloud CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli). A good strategy is to deploy with autoscaling, with minimum and maximum replicas. This way we will monitor the growth of used replicas.
+You can deploy this API easily from the [OVHcloud control panel](/links/manager) or [OVHcloud CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli). A good strategy is to deploy with autoscaling, with minimum and maximum replicas. This way we will monitor the growth of used replicas.
 
 Here is the CLI command used to deploy it, with autoscaling going from 1 to 5 replicas and a CPU threshold of 75%:
 

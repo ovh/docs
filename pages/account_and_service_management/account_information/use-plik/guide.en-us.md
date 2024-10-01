@@ -12,7 +12,7 @@ updated: 2022-02-14
 
 - An OVHcloud account
 
-If you do not already have one you can create one [here](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we).
+If you do not already have one you can create one [here](/links/manager).
 
 ## Instructions
 

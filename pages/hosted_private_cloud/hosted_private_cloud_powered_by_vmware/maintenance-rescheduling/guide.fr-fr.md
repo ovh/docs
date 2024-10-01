@@ -19,17 +19,17 @@ Lorsqu'une maintenance est programmée sur votre Hosted Private Cloud, un e-mail
 
 - Avoir reçu un e-mail de notification de maintenance indiquant spécifiquement que vous pouvez « **modifier la date d'exécution de la maintenance** ». Dans le cas contraire, la date de la maintenance ne peut pas être modifiée.
 - Être contact administrateur ou technique de l'infrastructure [VMware on OVHcloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/).
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou à l'[interface d'administration de vos services par API](https://eu.api.ovh.com/).
+- Être connecté à l'[espace client OVHcloud](/links/manager) ou à l'[interface d'administration de vos services par API](https://eu.api.ovh.com/).
 
 ## En pratique
 
 > [!success]
-> Les e-mails envoyés par OVHcloud sont également accessibles depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).<br>
+> Les e-mails envoyés par OVHcloud sont également accessibles depuis votre [espace client OVHcloud](/links/manager).<br>
 > Cliquez sur votre nom en haut à droite de votre écran puis sur `E-mails de service`{.action} dans le menu de droite.
 
 ### Depuis l'espace client OVHcloud
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) avec un compte administrateur.
+Connectez-vous à votre [espace client OVHcloud](/links/manager) avec un compte administrateur.
 
 Dans le menu `Hosted Private Cloud`{.action}, cliquez sur l'onglet `Operations`{.action}. Sélectionnez `À faire`{.action} dans le menu déroulant permettant de filtrer les opérations.
 

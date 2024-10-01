@@ -44,7 +44,7 @@ Thanks to the `Node Pool's template`, you will:
 ## Requirements
 
 - a [Public Cloud project](https://www.ovhcloud.com/fr/public-cloud/) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 

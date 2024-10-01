@@ -6,7 +6,7 @@ updated: 2020-02-12
 
 ## Ziel
 
-Das Passwort Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ist der Zugangsschlüssel zu allen Ihren Diensten und Informationen. Es muss von ausreichender Komplexität sein und regelmäßig erneuert werden, um deren Sicherheit zu gewährleisten.
+Das Passwort Ihres [OVHcloud Kundencenters](/links/manager) ist der Zugangsschlüssel zu allen Ihren Diensten und Informationen. Es muss von ausreichender Komplexität sein und regelmäßig erneuert werden, um deren Sicherheit zu gewährleisten.
 
 **Diese Anleitung erklärt, wie Sie Ihr Passwort anlegen, ändern und verwalten können.**
 
@@ -69,7 +69,7 @@ Das Prinzip ist einfach: Ein Masterpasswort, das hinreichend komplex sein muss, 
 
 #### Von Ihrem OVHcloud Kundencenter aus
 
-- Wenn Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) angemeldet sind, klicken Sie oben rechts auf Ihren Namen und dann auf Ihre Initialen.
+- Wenn Sie in Ihrem [OVHcloud Kundencenter](/links/manager) angemeldet sind, klicken Sie oben rechts auf Ihren Namen und dann auf Ihre Initialen.
 
 ![manage-ovh-password](images/newhub2.png){.thumbnail}
 

@@ -18,7 +18,7 @@ Find out how to manage virtual machines in a Nutanix cluster, and how to create 
 ## Requirements
 
 - a Nutanix cluster in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- access to the [OVHcloud Control Panel](/links/manager)
 - You must be connected to Prism Central on the cluster
 
 ## Overview of Virtual Machine Management in Prism Central

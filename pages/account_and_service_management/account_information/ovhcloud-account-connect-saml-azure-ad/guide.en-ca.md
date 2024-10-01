@@ -14,7 +14,7 @@ You can use **Single Sign-On** (SSO) to connect to your OVHcloud account. To ena
 
 - Belong to the **Application Administrator** and **User Administrator** roles of an Entra ID service
 - An [OVHcloud account](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -199,7 +199,7 @@ Use this link to download the Entra ID application metadata file in order to use
 
 ### Establishing OVHcloud account trust and configuring the connection
 
-Adding your Entra ID application as a trusted identity provider is done in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) where you can provide the identity provider metadata.
+Adding your Entra ID application as a trusted identity provider is done in the [OVHcloud Control Panel](/links/manager) where you can provide the identity provider metadata.
 
 #### Establish OVHcloud trust
 
@@ -259,7 +259,7 @@ Warning: if you give the `NONE` privilege, you will need to assign permissions t
 
 ### Connect via SSO
 
-On the [OVHcloud login page](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), enter your [NIC handle](/pages/account_and_service_management/account_information/ovhcloud-account-creation#what-is-my-nic-handle) followed by **/idp** without entering a password, and click the `Login`{.action} button.
+On the [OVHcloud login page](/links/manager), enter your [NIC handle](/pages/account_and_service_management/account_information/ovhcloud-account-creation#what-is-my-nic-handle) followed by **/idp** without entering a password, and click the `Login`{.action} button.
 
 ![Ovhcloud SSO Login step 1](images/ovhcloud_sso_login_1.png){.thumbnail}
 

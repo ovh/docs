@@ -19,7 +19,7 @@ Questo documento ti mostra come cancellare i file e riavviare la VPG.
 ## Prerequisiti
 
 - Essere contatto amministratore dell'infrastruttura [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/) per ricevere le credenziali di accesso.
-- Avere un utente attivo con diritti specifici per Zerto (creato nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it))
+- Avere un utente attivo con diritti specifici per Zerto (creato nello [Spazio Cliente OVHcloud](/links/manager))
 - Aver implementato [Zerto Virtual Replication](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/zerto_virtual_replication_as_a_service)
 
 ## Procedura

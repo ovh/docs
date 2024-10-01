@@ -17,7 +17,7 @@ Este guia contém os elementos indispensáveis a uma boa gestão da sua conta e 
 ## Requisitos
 
 - Dispor de um ou vários serviços ativos da OVHcloud.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
@@ -49,7 +49,7 @@ Certifique-se de que o seu endereço de e-mail está sempre **atualizado, seguro
 > Adicione um **e-mail de SOS** às suas informações pessoais para o proteger de qualquer perda de acesso à sua conta de cliente OVHcloud.
 >
 
-Os e-mails enviados pela OVHcloud também estão acessíveis a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).<br>
+Os e-mails enviados pela OVHcloud também estão acessíveis a partir da [Área de Cliente OVHcloud](/links/manager).<br>
 Clique no seu nome no canto superior direito do seu ecrã e, a seguir, nos `E-mails de serviço`{.action} no menu à direita.
 
 ![service_emails](images/service_emails.png){.thumbnail}
@@ -58,7 +58,7 @@ Clique no seu nome no canto superior direito do seu ecrã e, a seguir, nos `E-ma
 
 > [!primary]
 >
-> Para evitar qualquer interrupção de serviço e para o bom funcionamento da renovação automática, [Gerir os meus métodos de pagamento](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+> Para evitar qualquer interrupção de serviço e para o bom funcionamento da renovação automática, [Gerir os meus métodos de pagamento](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) na sua [Área de Cliente OVHcloud](/links/manager)
 >
 > Certifique-se regularmente de que o seu método de pagamento é **válido**.
 >
@@ -72,7 +72,7 @@ Se decidir não ativar a renovação automática, receberá notificações por e
 
 ### Seguimento das suas encomendas
 
-Sabia que podia [Gerir as encomendas da OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders) no seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)?<br>
+Sabia que podia [Gerir as encomendas da OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders) no seu [Área de Cliente OVHcloud](/links/manager)?<br>
 Basta aceder ao separador `Painel de controlo`{.action} do menu superior do seu ecrã e clicar em `Ver as minhas encomendas`{.action}.
 
 ![viewmyorders](images/viewmyorders.png){.thumbnail}
@@ -81,7 +81,7 @@ Será informado das etapas da entrega e saberá se são necessárias ações.
 
 ### Rescisão de serviços
 
-Se pretender deixar de utilizar um dos seus serviços, pode rescindir o serviço, passar a renovação em modo manual ou eliminá-lo imediatamente a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+Se pretender deixar de utilizar um dos seus serviços, pode rescindir o serviço, passar a renovação em modo manual ou eliminá-lo imediatamente a partir da [Área de Cliente OVHcloud](/links/manager).
 
 Clique primeiro no seu nome no canto superior direito do seu ecrã e, a seguir, em `Produtos e serviços`{.action}. No lado direito do ecrã, clique no botão `...`{.action} correspondente ao serviço sobre o qual deseja atuar e, em seguida, num dos botões seguintes:
 

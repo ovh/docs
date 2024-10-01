@@ -28,7 +28,7 @@ Estas direcciones Additional IP solo pueden migrar a las instancias de un mismo 
 
 ## Requisitos
 
-- Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+- Tener acceso al [área de cliente de OVHcloud](/links/manager){.external}.
 - Disponer al menos de una instancia. A tal efecto, consulte [la guía para crear una instancia desde el área de cliente](/pages/public_cloud/compute/public-cloud-first-steps#3-crear-una-instancia).
 
 > [!warning]
@@ -37,7 +37,7 @@ Estas direcciones Additional IP solo pueden migrar a las instancias de un mismo 
 
 ## Procedimiento
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto de Public Cloud correspondiente.
+Conéctese al [área de cliente de OVHcloud](/links/manager), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto de Public Cloud correspondiente.
 
 En el menú de la izquierda, abra `Public IPs`{.action} en `Network`.
 

@@ -16,7 +16,7 @@ updated: 2022-11-16
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Être connecté sur vos clusters via **Prism Central**.
 - Disposer de vos identifiants Nutanix sur le [Site officiel Nutanix](https://www.nutanix.com).
 - Avoir des licences valides avec votre identifiant Nutanix.

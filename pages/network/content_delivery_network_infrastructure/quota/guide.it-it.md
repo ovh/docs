@@ -12,7 +12,7 @@ La CDN (Content Delivery Network) è un servizio che permette di ottimizzare i t
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Avere accesso allo [Spazio Cliente OVH](/links/manager){.external}
 
 ## Procedura
 
@@ -20,7 +20,7 @@ La CDN (Content Delivery Network) è un servizio che permette di ottimizzare i t
 
 L’attivazione della CDN OVH permette di usufruire di **1 TB** di traffico incluso. Questa quota non si rinnova mensilmente con il servizio ma, indipendentemente dalla sua durata, una volta consumata è necessario ordinare una quota aggiuntiva.
 
-Il traffico supplementare può essere aggiunto direttamente dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}:
+Il traffico supplementare può essere aggiunto direttamente dallo [Spazio Cliente OVH](/links/manager){.external}:
 
 ![Aggiungere quota](images/add_quota.png){.thumbnail}
 

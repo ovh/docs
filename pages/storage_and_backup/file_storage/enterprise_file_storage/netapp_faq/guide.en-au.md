@@ -24,7 +24,7 @@ This solution can also be used to address more complex, practical cases, such as
 
 ### Can Enterprise File Storage be managed from the OVHcloud Control Panel?
 
-Yes, you can access this service directly from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) by going to the `Bare Metal Cloud`{.action} section, then `Storage and Backup`{.action}.
+Yes, you can access this service directly from your [OVHcloud Control Panel](/links/manager) by going to the `Bare Metal Cloud`{.action} section, then `Storage and Backup`{.action}.
 
 ## Availability
 

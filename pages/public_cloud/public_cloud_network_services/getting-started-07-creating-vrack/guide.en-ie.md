@@ -13,7 +13,7 @@ OVHcloud [vRack](https://www.ovh.ie/solutions/vrack/) is a private network solut
 ## Requirements
 
 - A [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - An [OpenStack user](/pages/public_cloud/compute/create_and_delete_a_user) (optional)
 - Basic networking knowledge
 
@@ -27,7 +27,7 @@ Depending on your technical profile and needs, it is mostly up to you which inte
 
 ### OVHcloud Control Panel
 
-The [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) is a fully visual interface, ideally suited for managing only one VLAN. You will not be able to customise the private IP range, which will be in 10.x.x.x/16.
+The [OVHcloud Control Panel](/links/manager) is a fully visual interface, ideally suited for managing only one VLAN. You will not be able to customise the private IP range, which will be in 10.x.x.x/16.
 
 The VLAN will be deployed by default to all zones. You will only have the option of activating the gateways or not.
 
@@ -103,7 +103,7 @@ Once the service is active, you will find it in your Control Panel in the `Bare 
 
 #### In the OVHcloud Control Panel
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and open your `Public Cloud`{.action} project.
+Log in to the [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project.
 
 Click on `Private Network`{.action} in left-hand navigation bar.
 
@@ -432,7 +432,7 @@ For example, if you have a public interface *eth0*, you will add the interface *
 
 ##### **In the OVHcloud Control Panel** 
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
 Click on `Instances`{.action} in the left-hand navigation bar and then on `...`{.action} to the right of the instance. Select `Instance details`{.action}.
 

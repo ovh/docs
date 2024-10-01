@@ -18,7 +18,7 @@ Pode utilizar a autenticação **SSO** (*Single Sign-On*) para se ligar à sua c
 
 - Ser administrador de um serviço Google Workspace
 - Ter uma [conta OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 
 ## Instruções
 
@@ -83,7 +83,7 @@ O seu serviço Google Workspace já confia na OVHcloud enquanto fornecedor de se
 
 ### Determinar a confiança da conta OVHcloud e configurar a ligação
 
-A adição do seu Google workspace como fornecedor de identidade é efetuada na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), onde pode fornecer os metadados ]do fornecedor de identidade.
+A adição do seu Google workspace como fornecedor de identidade é efetuada na [Área de Cliente OVHcloud](/links/manager), onde pode fornecer os metadados ]do fornecedor de identidade.
 
 Clique no nome da sua conta no canto superior direito e, a seguir, no seu nome na barra lateral.
 
@@ -170,7 +170,7 @@ De seguida, poderá desligar a sua conta e voltar a ligar-se ao seu Google Works
 
 ### Ligação via SSO
 
-Na [página de identificação da OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), introduza o seu [identificador de cliente](/pages/account_and_service_management/account_information/ovhcloud-account-creation#qual-e-o-meu-identificador-de-cliente) seguido de **/idp** sem password e clique no botão `Login`{.action}.
+Na [página de identificação da OVHcloud](/links/manager), introduza o seu [identificador de cliente](/pages/account_and_service_management/account_information/ovhcloud-account-creation#qual-e-o-meu-identificador-de-cliente) seguido de **/idp** sem password e clique no botão `Login`{.action}.
 
 ![Ligação à Federação OVHcloud](images/ovhcloud_federation_login_1.png){.thumbnail}
 

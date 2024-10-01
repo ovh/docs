@@ -23,7 +23,7 @@ El primer paso es crear un contenedor que agrupe sus archivos.
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
 
 Si utiliza Horizon:
 
@@ -33,7 +33,7 @@ Si utiliza Horizon:
 
 ### Creación de un contenedor Object Storage desde el área de cliente de OVHcloud <a name="controlpanel"></a>
 
-Conéctese al [área de cliente](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, acceda a la sección `Public Cloud`{.action} y seleccione el proyecto de Public Cloud correspondiente. A continuación, haga clic en `Object Storage`{.action} en la columna izquierda, en `Storage`.
+Conéctese al [área de cliente](/links/manager){.external}, acceda a la sección `Public Cloud`{.action} y seleccione el proyecto de Public Cloud correspondiente. A continuación, haga clic en `Object Storage`{.action} en la columna izquierda, en `Storage`.
 
 Haga clic en `Crear un contenedor de objetos`{.action}.
 

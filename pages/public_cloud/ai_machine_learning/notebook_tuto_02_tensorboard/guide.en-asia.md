@@ -18,7 +18,7 @@ The tutorial presents a simple example of launching **TensorBoard** in a noteboo
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+- access to the [OVHcloud Control Panel](/links/manager)
 - an AI Notebooks project created inside a Public Cloud project
 - a user for AI Notebooks
 
@@ -26,7 +26,7 @@ The tutorial presents a simple example of launching **TensorBoard** in a noteboo
 
 ### Launch and access Jupyter notebook
 
-If you want to launch it from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), just create a new notebook and select **TensorFlow** docker image.
+If you want to launch it from the [OVHcloud Control Panel](/links/manager), just create a new notebook and select **TensorFlow** docker image.
 
 If you want to launch it with the [CLI](/pages/public_cloud/ai_machine_learning/cli_11_howto_run_notebook_cli), just choose the name of your notebook (`<notebook-name>`) and the number of GPUs (`<nb-gpus>`) your want and use the following command:
 

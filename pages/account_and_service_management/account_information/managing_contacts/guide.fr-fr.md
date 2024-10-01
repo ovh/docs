@@ -31,7 +31,7 @@ L'identifiant client est un identifiant personnel que vous recevez par e-mail lo
 
 ## Prérequis
 
-- Être connecté à  votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
+- Être connecté à  votre [espace client OVHcloud](/links/manager){.external}
 - Disposer d'un accès à l'adresse e-mail renseignée dans votre profil.
 - Disposer de droits suffisants sur le service concerné.
 - Posséder l'identifiant client du nouveau contact (pour qui vous réalisez la modification).
@@ -46,7 +46,7 @@ L'identifiant client est un identifiant personnel que vous recevez par e-mail lo
 
 ### Accéder à la gestion des contacts <a name="gestion_des_contacts"></a>
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur le nom rattaché à votre identifiant client dans la barre de menu en haut à droite, puis cliquez sur `Gestion des contacts`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager){.external}, cliquez sur le nom rattaché à votre identifiant client dans la barre de menu en haut à droite, puis cliquez sur `Gestion des contacts`{.action}.
 
 ![Contact management](images/hubcontacts.png){.thumbnail}
 
@@ -104,7 +104,7 @@ Si l'un des contacts n'a pas reçu l'e-mail, il se peut que l'adresse de contact
 
 ![Contact management](images/managing_contacts_06.png){.thumbnail}
 
-Si un seul contact a validé le changement, un message apparaîtra, vous informant que la demande est toujours en attente de validation par l'autre contact. Si l'un des contacts vient tout juste de valider une demande, l'affichage dans [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) se mettra à jour sous quelques minutes.
+Si un seul contact a validé le changement, un message apparaîtra, vous informant que la demande est toujours en attente de validation par l'autre contact. Si l'un des contacts vient tout juste de valider une demande, l'affichage dans [l'espace client OVHcloud](/links/manager) se mettra à jour sous quelques minutes.
 
 ![Contact management](images/managing_contacts_007.png){.thumbnail}
 
@@ -116,7 +116,7 @@ Vous venez de souscrire à un abonnement OVHcloud permettant de créer votre pro
 
 > [!warning]
 >
-> Nous vous déconseillons de donner à un tiers, quel qu'il soit, les identifiants d'accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+> Nous vous déconseillons de donner à un tiers, quel qu'il soit, les identifiants d'accès à votre [espace client OVHcloud](/links/manager).
 >
 
 Dans cette situation, vous pouvez confier à votre prestataire le droit « [contact technique](#gestion_des_contacts) » sur votre hébergement OVHcloud.<br>

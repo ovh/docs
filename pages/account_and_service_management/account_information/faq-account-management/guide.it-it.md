@@ -21,7 +21,7 @@ Se non riesci a trovare la versione del sito OVHcloud del tuo Paese, clicca sull
 
 Il tuo identificativo cliente, chiamato anche NIC-handle, si trova in alto a destra dell'ultima fattura e ha un formato di questo tipo: ab00001-ovh (le prime lettere corrispondono in genere con le iniziali dell’utente che ha creato l’account). L’identificativo cliente è indicato anche in tutte le email inviate da OVHcloud (email di conferma di creazione dell’account, di rinnovo dell’ordine, ecc.).
 
-Se non riesci a trovare l’identificativo, clicca su "Non ricordi identificativo o password?" nella pagina di connessione allo [Spazio Cliente di OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e inserisci l'indirizzo email associato all’account.
+Se non riesci a trovare l’identificativo, clicca su "Non ricordi identificativo o password?" nella pagina di connessione allo [Spazio Cliente di OVHcloud](/links/manager) e inserisci l'indirizzo email associato all’account.
 
 #### Consigli e suggerimenti
 

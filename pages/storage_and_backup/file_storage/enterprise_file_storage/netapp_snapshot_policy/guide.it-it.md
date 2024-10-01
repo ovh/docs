@@ -17,7 +17,7 @@ Questa guida ti mostra la gestione delle politiche di Snapshot per i volumi Ente
 ## Prerequisiti
 
 - Un servizio Enterprise File Storage OVHcloud con un volume disponibile
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Nozioni di base
 
@@ -27,7 +27,7 @@ Una politica di Snapshot permette di automatizzare la creazione degli Snapshot u
 
 ## In pratica
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona la scheda `Bare Metal Cloud`{.action} nella barra di navigazione superiore. Apri `Storage e Backup`{.action} poi `Enterprise File Storage`{.action} nel menu a sinistra e seleziona il servizio dalla lista.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager) e seleziona la scheda `Bare Metal Cloud`{.action} nella barra di navigazione superiore. Apri `Storage e Backup`{.action} poi `Enterprise File Storage`{.action} nel menu a sinistra e seleziona il servizio dalla lista.
 
 ### Crea la tua politica di Snapshot
 

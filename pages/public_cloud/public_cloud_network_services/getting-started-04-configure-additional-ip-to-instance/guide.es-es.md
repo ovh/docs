@@ -181,7 +181,7 @@ Repita este procedimiento para cada dirección Additional IP.
 
 ### Windows Server (2016)
 
-Conéctese al [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto de Public Cloud correspondiente.
+Conéctese al [Panel de configuración de OVHcloud](/links/manager), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto de Public Cloud correspondiente.
 
 Abra `Instances`{.action} en el menú izquierdo. Haga clic en el nombre de su instancia. Acceda a la pestaña `Consola VNC`{.action}.
 
@@ -296,7 +296,7 @@ En la sección "Direcciones IP", compruebe que la dirección Additional IP se ha
 
 ### Diagnóstico
 
-En primer lugar, reinicie su instancia utilizando el sistema operativo de la instancia o el [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Si todavía no consigue establecer una conexión entre la red pública y su Additional IP y si sospecha que existe algún problema de red, deberá reiniciar la instancia en [modo de rescate](/pages/public_cloud/compute/put_an_instance_in_rescue_mode). A continuación, podrá configurar la dirección Additional IP directamente en la instancia.
+En primer lugar, reinicie su instancia utilizando el sistema operativo de la instancia o el [Panel de configuración de OVHcloud](/links/manager). Si todavía no consigue establecer una conexión entre la red pública y su Additional IP y si sospecha que existe algún problema de red, deberá reiniciar la instancia en [modo de rescate](/pages/public_cloud/compute/put_an_instance_in_rescue_mode). A continuación, podrá configurar la dirección Additional IP directamente en la instancia.
 
 Una vez que se haya conectado al modo de rescate por SSH, introduzca el siguiente comando:
 
@@ -304,7 +304,7 @@ Una vez que se haya conectado al modo de rescate por SSH, introduzca el siguient
 ifconfig ens3:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 ```
 
-Para probar la conexión, solo tiene que enviar un ping a su dirección Additional IP desde el exterior. Si responde en modo de rescate, probablemente significa que se ha producido un error de configuración. No obstante, si la IP todavía no funciona, informe a nuestro equipo del soporte creando un tíquet de soporte desde el [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+Para probar la conexión, solo tiene que enviar un ping a su dirección Additional IP desde el exterior. Si responde en modo de rescate, probablemente significa que se ha producido un error de configuración. No obstante, si la IP todavía no funciona, informe a nuestro equipo del soporte creando un tíquet de soporte desde el [Panel de configuración de OVHcloud](/links/manager).
 
 ## Más información
 

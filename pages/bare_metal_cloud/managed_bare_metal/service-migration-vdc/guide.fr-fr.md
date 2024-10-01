@@ -22,7 +22,7 @@ La migration d'une infrastructure vers un nouveau vDC comporte deux aspects:
 ## Prérequis
 
 * Une infrastructure PCC
-* Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie `Bare Metal Cloud`{.action} puis `Managed Bare Metal`{.action}.
+* Être connecté à votre [espace client OVHcloud](/links/manager){.external} dans la partie `Bare Metal Cloud`{.action} puis `Managed Bare Metal`{.action}.
 
 ## En pratique
 

@@ -10,7 +10,7 @@ Here are the most frequently asked questions about managing your OVHcloud accoun
 
 ### How do I create an OVHcloud account?
 
-Creating an account is free and simple. Your account is designed to give you easy access to your information, and help you manage your services. To create an account, [click here](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
+Creating an account is free and simple. Your account is designed to give you easy access to your information, and help you manage your services. To create an account, [click here](/links/manager).
 
 You can also secure access to your personal information by enabling two-factor authentication. You can do this by going to "My account", then "Security". For further information on how to keep your account secure, read the "How do I secure my account?" section below.
 
@@ -22,7 +22,7 @@ You can’t find your country? Change the website language by clicking on the fl
 
 Your username or customer ID — also called a NIC handle — is located in the top right-hand corner of your last invoice. It looks like this: “ab00001-ovh” (the first letters are normally the initials of the person who created the account). This username is also included in all emails sent by OVHcloud (account creation confirmation email, order confirmations, renewal emails, etc.).
 
-If you have not yet found your username, you can click on the “Forgotten your username or password?” link on the login page for your [OVHcloud account](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), and enter the email address associated with your account.
+If you have not yet found your username, you can click on the “Forgotten your username or password?” link on the login page for your [OVHcloud account](/links/manager), and enter the email address associated with your account.
 
 #### Tips and tricks
 

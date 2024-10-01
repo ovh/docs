@@ -76,7 +76,7 @@ Por exemplo: **1234-567-89/johnsmith**.
 
 ![users-management](images/usersmanagement3.png){.thumbnail}
 
-O utilizador em causa poderá desde logo aceder à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} por meio desse ID de utilizador. 
+O utilizador em causa poderá desde logo aceder à [Área de Cliente OVHcloud](/links/manager){.external} por meio desse ID de utilizador. 
 
 Ele poderá igualmente alterar a sua própria palavra-passe e proteger o seu próprio acesso à conta ativando uma medida de dupla autenticação (esta última só será aplicada ao acesso desse utilizador). Para esse efeito, aconselhamos a consulta do [guia respeitante à implementação da dupla autenticação](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa){.external}.
 

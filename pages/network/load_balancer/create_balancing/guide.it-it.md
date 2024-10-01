@@ -12,7 +12,7 @@ La nuova soluzione OVH Load Balancer offre diverse tipologie di ripartizione del
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVH](/links/manager)
 - Disporre di una server farm
 
 ## Procedura

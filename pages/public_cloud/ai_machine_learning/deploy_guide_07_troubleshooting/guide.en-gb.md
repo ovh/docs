@@ -10,7 +10,7 @@ This page gives you a few hints on how to debug your apps if you encounter some 
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - A [**Public Cloud** project](/pages/public_cloud/compute/create_a_public_cloud_project)
 
 ## Instructions

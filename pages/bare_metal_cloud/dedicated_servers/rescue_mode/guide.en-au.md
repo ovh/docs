@@ -259,7 +259,7 @@ Then edit the text field below as follows:
 
 Replace `string` with your public SSH key.
 
-The result should look as shown in the the following example:
+The result should look as shown in the following example:
 
 ![rescue key example](images/rescuekey.png){.thumbnail}
 

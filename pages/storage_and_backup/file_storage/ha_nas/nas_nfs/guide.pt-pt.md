@@ -33,7 +33,7 @@ O serviço NAS-HA da OVHcloud permite-lhe gerir um armazenamento de ficheiros ac
 
 As secções seguintes contêm exemplos de configuração para as distribuições/sistemas operativos mais utilizados. A primeira etapa consiste sempre em ligar-se ao seu servidor através de SSH ou ligando-se à interface gráfica do seu sistema operativo instalado. Os exemplos abaixo pressupõem que está ligado enquanto utilizador com autorizações elevadas.
 
-Também precisará do **nome interno** e **do endereço IP** do serviço NAS-HA que poderá encontrar no e-mail recebido após a instalação ou na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+Também precisará do **nome interno** e **do endereço IP** do serviço NAS-HA que poderá encontrar no e-mail recebido após a instalação ou na [Área de Cliente OVHcloud](/links/manager).
 
 As seguintes notações são utilizadas como argumentos nas secções da linha de comandos abaixo. Substitua-os pelos valores apropriados aquando da introdução dos comandos.
 

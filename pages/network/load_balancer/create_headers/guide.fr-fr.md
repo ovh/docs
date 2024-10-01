@@ -19,7 +19,7 @@ Si vous retrouvez uniquement des IP privées dans vos acces_log, ce guide est fa
 ## Prérequis
 
 - Posséder une offre [OVHcloud Load balancer](https://www.ovh.com/fr/solutions/load-balancer/) dans votre compte OVHcloud.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Posséder un service Web installé et configuré sur vos serveurs
 - Posséder un service Nginx installé et configuré sur vos serveurs
 

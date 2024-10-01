@@ -15,7 +15,7 @@ You can upload a file easily, but for real-time data such as metrics and logs, c
 
 This tutorial requires:
 
-- An access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
+- An access to the [OVHcloud Control Panel](/links/manager)
 - A [Public Cloud project](https://www.ovhcloud.com/en-ca/public-cloud/) in your OVHcloud account, running at least:
     - one Public Cloud Database for OpenSearch service running;
     - one or more additional compute instance running Linux, acting as a data injector. It can also be your computer, a Kubernetes cluster, etc.

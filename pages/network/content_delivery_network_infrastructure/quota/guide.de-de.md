@@ -12,7 +12,7 @@ Mithilfe des Content Delivery Network (CDN) können Sie die Antwortzeiten von We
 
 ## Voraussetzungen
 
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
+- Sie sind in Ihrem [OVHcloud Kundencenter](/links/manager){.external} eingeloggt.
 
 ## Beschreibung
 
@@ -20,7 +20,7 @@ Mithilfe des Content Delivery Network (CDN) können Sie die Antwortzeiten von We
 
 Bei der Bestellung erhalten Sie **1 TB** Traffic-Quota. Bitte beachten Sie, dass dieses nicht jeden Monat automatisch erneuert wird. Ist das Quota aufgebraucht (egal über welchen Zeitraum), muss neues Quota bestellt werden.
 
-Wenn Sie zusätzliches Quota benötigen, können Sie dieses direkt über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} bestellen.
+Wenn Sie zusätzliches Quota benötigen, können Sie dieses direkt über Ihr [OVHcloud Kundencenter](/links/manager){.external} bestellen.
 
 ![Quota hinzufügen](images/add_quota.png){.thumbnail}
 

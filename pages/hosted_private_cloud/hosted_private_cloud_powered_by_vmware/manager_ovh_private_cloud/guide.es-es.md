@@ -12,14 +12,14 @@ El área de cliente de OVHcloud ofrece múltiples opciones de configuración de 
 
 ## Requisitos
 
-- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Servidor`{.action}, y dentro, en `Private Cloud`{.action}.
+- Estar conectado al [área de cliente de OVHcloud](/links/manager){.external}, en la sección `Servidor`{.action}, y dentro, en `Private Cloud`{.action}.
 - Haber contratado un servicio [Private Cloud OVHcloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/){.external}.
 
 ## Procedimiento
 
 ### Información general
 
-Una vez en la sección `Servidor`{.action} del [área de cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `Private Cloud`{.action} y aparecerá la información general de su Private Cloud.
+Una vez en la sección `Servidor`{.action} del [área de cliente OVHcloud](/links/manager){.external}, haga clic en `Private Cloud`{.action} y aparecerá la información general de su Private Cloud.
 
 ![Información general](images/controlpanel1.png){.thumbnail}
 

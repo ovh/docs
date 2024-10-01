@@ -16,7 +16,7 @@ Tutti gli account SMS OVHcloud possono utilizzare una o più rubriche. Questa gu
 
 - Disporre di un account SMS OVHcloud attivo
 - Disporre di un programma di fogli di calcolo o un editor di testo
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Télécom`{.action} > `SMS`{.action}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}, sezione `Télécom`{.action} > `SMS`{.action}
 
 ![Spazio Cliente Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
@@ -24,7 +24,7 @@ Tutti gli account SMS OVHcloud possono utilizzare una o più rubriche. Questa gu
 
 ### Step 1: crea una rubrica di contatti nel tuo Spazio Cliente
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Quindi seleziona `SMS`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager). Quindi seleziona `SMS`{.action}.
 
 Clicca sull'account SMS interessato e seleziona `Contatti`{.action} > `Rubrica`{.action}.
 

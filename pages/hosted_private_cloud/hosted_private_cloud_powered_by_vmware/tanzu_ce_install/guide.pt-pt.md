@@ -19,7 +19,7 @@ You can deploy the product on an OVHcloud infrastructure to leverage its functio
 ## Requirements
 
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/) to receive login credentials
-- A user account with access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+- A user account with access to the [OVHcloud Control Panel](/links/manager)
 - A user account with access to vSphere
 - A deployed [NSX Edge Services Gateway](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx_deploying_edge_gateway)
 - [DHCP](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx_configurer_le_dhcp_sur_une_edge_gateway) services activated on the NSX Gateway
@@ -52,7 +52,7 @@ For our study case, the NSX Edge Services Gateway is set up with two interfaces 
 - a SNAT rule to translate adress range 172.16.13.1/24 into secondary public IP xxx.xxx.xxx.226 for external access <br>
 ![SNAT rule](images/en03nsxsnat.png){.thumbnail}
 
-In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), go to the `Security`{.action} tab of your Hosted Private Cloud and add the public IPs to the allowed adresses to connect.<br>
+In the [OVHcloud Control Panel](/links/manager), go to the `Security`{.action} tab of your Hosted Private Cloud and add the public IPs to the allowed adresses to connect.<br>
 The addresses should appear as "Authorised and set up".
 
 ![addresses](images/en00ipsec.png){.thumbnail}

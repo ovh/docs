@@ -18,7 +18,7 @@ Pode utilizar a autenticação SSO (*Single Sign-On*) **única** para se ligar �
 
 - Os serviços AD FS (Active Directory Federation Services) devem ser executados no seu servidor
 - Ter uma [conta OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Estar ligado à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
@@ -123,7 +123,7 @@ Uma vez terminada a tabela de correspondências, o seu serviço AD FS confia ago
 
 ### Determinar a confiança da conta OVHcloud e configurar a ligação
 
-A adição do AD FS como fornecedor de identidade de confiança pode ser efetuada na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), onde poderá fornecer os metadados do fornecedor de identidade.
+A adição do AD FS como fornecedor de identidade de confiança pode ser efetuada na [Área de Cliente OVHcloud](/links/manager), onde poderá fornecer os metadados do fornecedor de identidade.
 
 Clique no nome da sua conta no canto superior direito e, a seguir, no seu nome na barra lateral.
 
@@ -212,7 +212,7 @@ De seguida, poderá desligar a sua conta e voltar a ligar-se ao seu AD FS enquan
 
 ### Ligação via SSO
 
-Na [página de identificação da OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), introduza o seu [identificador de cliente](/pages/account_and_service_management/account_information/ovhcloud-account-creation#qual-e-o-meu-identificador-de-cliente) seguido de **/idp** sem password e clique no botão `Login`{.action}.
+Na [página de identificação da OVHcloud](/links/manager), introduza o seu [identificador de cliente](/pages/account_and_service_management/account_information/ovhcloud-account-creation#qual-e-o-meu-identificador-de-cliente) seguido de **/idp** sem password e clique no botão `Login`{.action}.
 
 ![Ligação à Federação OVHcloud](images/ovhcloud_federation_login_1.png){.thumbnail}
 

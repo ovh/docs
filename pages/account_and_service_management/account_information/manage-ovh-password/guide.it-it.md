@@ -67,7 +67,7 @@ Nel caso in cui la password risulti compromessa, consigliamo di [modificarla imm
 
 #### Dallo Spazio Cliente
 
-- Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca sul tuo nome in alto a destra e cliccare sulle vostre iniziali.
+- Accedi allo [Spazio Cliente](/links/manager){.external}, clicca sul tuo nome in alto a destra e cliccare sulle vostre iniziali.
 
 ![manage-ovh-password](images/newhub2.png){.thumbnail}
 

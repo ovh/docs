@@ -19,17 +19,17 @@ When a maintenance is scheduled on your Hosted Private Cloud service, you will b
 
 - You have received a maintenance notification email specifically stating that you can **change the maintenance date**. Otherwise, the maintenance cannot be rescheduled.
 - You are the administrative or technical contact for the [VMware on OVHcloud solution](https://www.ovhcloud.com/en-au/enterprise/products/hosted-private-cloud/) infrastructure.
-- You have access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) or the [API console for your services](https://ca.api.ovh.com/).
+- You have access to the [OVHcloud Control Panel](/links/manager) or the [API console for your services](https://ca.api.ovh.com/).
 
 ## Instructions
 
 > [!success]
-> Messages sent by OVHcloud are available in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) as well.<br>
+> Messages sent by OVHcloud are available in your [OVHcloud Control Panel](/links/manager) as well.<br>
 > Click on your name in the top right corner, then click on `Service emails`{.action} in the menu on the right.
 
 ### From the OVHcloud Control Panel
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) with the administrator account.
+Log in to the [OVHcloud Control Panel](/links/manager) with the administrator account.
 
 In the `Hosted Private Cloud`{.action} section, select your service and click on the `Operations`{.action} tab. Select `Available`{.action} from the drop-down menu to filter the operations.
 

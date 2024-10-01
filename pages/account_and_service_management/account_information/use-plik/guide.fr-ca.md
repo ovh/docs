@@ -12,7 +12,7 @@ updated: 2022-02-14
 
 - Disposer d'un compte OVHcloud
 
-Si vous n'avez pas déjà créé votre compte OVHcloud, vous pouvez le faire en cliquant [ici](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+Si vous n'avez pas déjà créé votre compte OVHcloud, vous pouvez le faire en cliquant [ici](/links/manager).
 
 ## En pratique
 

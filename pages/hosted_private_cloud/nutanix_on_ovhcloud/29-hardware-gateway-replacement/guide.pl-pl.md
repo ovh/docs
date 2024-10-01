@@ -23,7 +23,7 @@ Contact OVHcloud Sales to help you choose the right server.
 ## Requirements
 
 - A Nutanix cluster in your OVHcloud account.
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- Access to the [OVHcloud Control Panel](/links/manager).
 - You must be connected to the cluster via **Prism Central**. 
 - You have a [dedicated server](https://www.ovhcloud.com/pl/bare-metal/) in your OVHcloud account with several network cards, some on the public network, others on the private network. This server must be in the same data centre as the Nutanix cluster.
 
@@ -41,7 +41,7 @@ To replace the OVHgateway VM, we will use these settings:
 
 ### Retrieving information needed to deploy your server
 
-In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), click `Hosted Private Cloud`{.action} in the tab bar. Select your Nutanix cluster on the left-hand side, and note the name of the vRack associated with your Nutanix cluster in `Private network (vRack)`.
+In your [OVHcloud Control Panel](/links/manager), click `Hosted Private Cloud`{.action} in the tab bar. Select your Nutanix cluster on the left-hand side, and note the name of the vRack associated with your Nutanix cluster in `Private network (vRack)`.
 
 ![01 get nutanix vrack 01](images/01-get-nutanix-vrack01.png){.thumbnail}
 

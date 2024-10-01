@@ -59,7 +59,7 @@ Natychmiast skontaktuj się z bankiem i zablokuj kartę. Wskaż pracownikami ban
 
 #### Jeśli wpisałeś hasło OVHcloud na fałszywej stronie
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i natychmiast zmień hasło. Zalecamy również włączenie uwierzytelniania dwuetapowego, aby zabezpieczyć Twoje konto.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external} i natychmiast zmień hasło. Zalecamy również włączenie uwierzytelniania dwuetapowego, aby zabezpieczyć Twoje konto.
 
 > [!primary]
 >

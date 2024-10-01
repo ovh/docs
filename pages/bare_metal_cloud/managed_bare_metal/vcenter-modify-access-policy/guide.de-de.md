@@ -13,11 +13,11 @@ Um die Sicherheit Ihrer Managed Bare Metal Infrastruktur zu verbessern, können 
 ## Voraussetzungen
 
 - Sie nutzen ein Angebot der Art [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/){.external}.
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) angemeldet.
+- Sie sind in Ihrem [OVHcloud Kundencenter](/links/manager) angemeldet.
 
 ## Praktische Anwendung
 
-Melden Sie sich in Ihrem  [OVHcloud  Kundencenter an](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de). Gehen Sie in die Rubrik `Bare Metal Cloud`{.action} und wählen Sie dort Ihren Dienst unter `Managed Bare Metal`{.action} in der linken Navigationsleiste.
+Melden Sie sich in Ihrem  [OVHcloud  Kundencenter an](/links/manager). Gehen Sie in die Rubrik `Bare Metal Cloud`{.action} und wählen Sie dort Ihren Dienst unter `Managed Bare Metal`{.action} in der linken Navigationsleiste.
 
 Klicken Sie auf der Startseite des Dienstes auf `Sicherheit`{.action} und danach auf `Zugangseinstellungen für vCenter bearbeiten`{.action}.
 

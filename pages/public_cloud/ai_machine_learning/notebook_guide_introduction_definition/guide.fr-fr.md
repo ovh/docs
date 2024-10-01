@@ -11,7 +11,7 @@ The OVHcloud AI Notebooks service provides you Jupyter or VSCode notebooks, link
 ## Requirements
 
 - a [Public Cloud project](https://www.ovhcloud.com/fr/public-cloud/) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- access to the [OVHcloud Control Panel](/links/manager)
 - a Public Cloud user with `administrator` or `AI Training admin` role, see [here](/pages/public_cloud/ai_machine_learning/gi_01_manage_users) for more information
 
 ## Definition
@@ -31,7 +31,7 @@ AI Notebooks also provide an easy way to access data from your Object Storage, y
 
 ## Launch your first AI Notebook
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
 Access the administration UI for your OVHcloud AI Notebooks by clicking on `AI Notebooks`{.action} in the left-hand menu and click on `Create a Notebook`{.action}.
 

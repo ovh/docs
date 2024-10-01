@@ -53,7 +53,7 @@ Por lo tanto, para OVHcloud, el documento debe contener al menos la siguiente in
 
 ### Cómo introducir un número de Purchase Order (PO) en el área de cliente de OVHcloud
 
-Conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y, en la pestaña `Panel de control`{.action}, haga clic en `Ver mis pedidos`{.action}.
+Conéctese a su [área de cliente de OVHcloud](/links/manager) y, en la pestaña `Panel de control`{.action}, haga clic en `Ver mis pedidos`{.action}.
 
 ![Área de cliente](images/internalreference00.png){.thumbnail}
 

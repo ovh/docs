@@ -24,12 +24,12 @@ These Additional IP addresses can only be migrated to instances in the same proj
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}
+- Access to the [OVHcloud Control Panel](/links/manager){.external}
 - A [Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps) in your Public Cloud project
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) and open your `Public Cloud`{.action} project.
+Log in to the [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project.
 
 In the left-hand menu, open `Public IPs`{.action} under `Network`.
 

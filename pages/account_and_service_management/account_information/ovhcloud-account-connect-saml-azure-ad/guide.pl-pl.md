@@ -18,7 +18,7 @@ Możesz użyć uwierzytelnienia **SSO** (*Single Sign-On*), aby zalogować się 
 
 - Dostęp do ról **Administrator aplikacji** i **administrator użytkowników** usługi Entra ID
 - Posiadanie [konta OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)wferee
-- Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dostęp do [Panelu client OVHcloud](/links/manager)
 
 ## W praktyce
 
@@ -203,7 +203,7 @@ Użyj tego linku do pobrania pliku metadanych aplikacji Entra ID, aby później 
 
 ### Budowa zaufania do konta OVHcloud i konfiguracja połączenia
 
-Aplikacja Entra ID zostaje dodana jako zatwierdzony dostawca danych w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), w którym możesz dostarczyć metadane dostawcy tożsamości.
+Aplikacja Entra ID zostaje dodana jako zatwierdzony dostawca danych w Panelu [klienta OVHcloud](/links/manager), w którym możesz dostarczyć metadane dostawcy tożsamości.
 
 #### Zaufanie OVHcloud
 
@@ -263,7 +263,7 @@ Uwaga: jeśli nadasz tej grupie uprawnienia `Brak`, konieczne będzie przypisani
 
 ### Logowanie przez SSO
 
-Na [stronie logowania OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) wpisz [identyfikator](/pages/account_and_service_management/account_information/ovhcloud-account-creation#jaki-jest-moj-identyfikator-klienta), po którym następuje **/idp** bez hasła i kliknij przycisk `Login`{.action}.
+Na [stronie logowania OVHcloud](/links/manager) wpisz [identyfikator](/pages/account_and_service_management/account_information/ovhcloud-account-creation#jaki-jest-moj-identyfikator-klienta), po którym następuje **/idp** bez hasła i kliknij przycisk `Login`{.action}.
 
 ![Ovhcloud SSO Login step 1](images/ovhcloud_sso_login_1.png){.thumbnail}
 

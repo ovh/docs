@@ -19,7 +19,7 @@ Este documento muestra cómo borrar estos archivos y restaurar la VPG.
 ## Requisitos
 
 - Ser contacto administrador de la [infraestructura Hosted Private Cloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/) para recibir las claves de conexión.
-- Tener un usuario activo con permisos específicos para Zerto (creado en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)).
+- Tener un usuario activo con permisos específicos para Zerto (creado en el [área de cliente de OVHcloud](/links/manager)).
 - Haber desplegado [Zerto Virtual Replication.](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/zerto_virtual_replication_as_a_service)
 
 ## Procedimiento

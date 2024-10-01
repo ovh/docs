@@ -18,7 +18,7 @@ Puede utilizar la autenticación **SSO** (*Single Sign-On*) para conectarse a su
 
 - Ser administrador de un servicio Google Workspace
 - Disponer de una [cuenta de OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- Tienes acceso a tu [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Tienes acceso a tu [Panel de configuración de OVHcloud](/links/manager).
 
 ## Procedimiento
 
@@ -83,7 +83,7 @@ El servicio Google Workspace ya confía en OVHcloud como proveedor de servicios.
 
 ### Configurar la confianza de la cuenta de OVHcloud y configurar la conexión
 
-El Google workspace se añadirá como proveedor de identidad de confianza al [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), donde podrá proporcionar los metadatos del proveedor de identidad.
+El Google workspace se añadirá como proveedor de identidad de confianza al [Panel de configuración de OVHcloud](/links/manager), donde podrá proporcionar los metadatos del proveedor de identidad.
 
 Haga clic en el nombre de su cuenta en la esquina superior derecha y, a continuación, vuelva a hacer clic en su nombre en la barra lateral.
 
@@ -170,7 +170,7 @@ A continuación, podrá desconectarse de su cuenta y reconectarse con su Google 
 
 ### Conexión mediante SSO
 
-En [la página de identificación de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), introduzca su [ID de cliente](/pages/account_and_service_management/account_information/ovhcloud-account-creation#cual-es-mi-id-de-cliente) seguido de **/idp** sin contraseña y haga clic en el botón `Login`{.action} .
+En [la página de identificación de OVHcloud](/links/manager), introduzca su [ID de cliente](/pages/account_and_service_management/account_information/ovhcloud-account-creation#cual-es-mi-id-de-cliente) seguido de **/idp** sin contraseña y haga clic en el botón `Login`{.action} .
 
 ![Conexión a la federación OVHcloud](images/ovhcloud_federation_login_1.png){.thumbnail}
 

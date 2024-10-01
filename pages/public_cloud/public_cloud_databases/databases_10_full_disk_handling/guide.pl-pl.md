@@ -12,7 +12,7 @@ No matter the database technology, when no more physical disk space is available
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - A [Public Cloud database service](https://www.ovhcloud.com/pl/public-cloud/databases/) up and running
 
 ## Instructions
@@ -21,7 +21,7 @@ No matter the database technology, when no more physical disk space is available
 
 #### Disk space usage metrics
 
-As part of using your Public Cloud Databases service efficiently, you should keep an eye on the service metrics. You can access those in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) or using the [API](/pages/manage_and_operate/api/first-steps). You can also make use of [cross-service integrations](/pages/public_cloud/public_cloud_databases/databases_07_cross_service_integration) to gather, observe and alert based on services metrics.
+As part of using your Public Cloud Databases service efficiently, you should keep an eye on the service metrics. You can access those in the [OVHcloud Control Panel](/links/manager) or using the [API](/pages/manage_and_operate/api/first-steps). You can also make use of [cross-service integrations](/pages/public_cloud/public_cloud_databases/databases_07_cross_service_integration) to gather, observe and alert based on services metrics.
 
 #### Mail notifications
 

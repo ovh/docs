@@ -17,7 +17,7 @@ Ce guide vous explique comment remplacer la passerelle Internet sortante (OVHgat
 ## Prérequis
 
 - Disposer d'un cluster Nutanix fourni par OVHcloud.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Être connecté sur votre cluster via Prism Central.
 
 ## En pratique
@@ -85,7 +85,7 @@ Depuis le menu `More`{.action} en haut, cliquez sur `Soft Shutdown`{.action}.
 
 Récupérez les informations concernant les paramètres réseau de la passerelle OVHcloud.
 
-Connectez-vous à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), sélectionnez votre cluster Nutanix et relevez l'information se trouvant dans le champ `IPFO`.
+Connectez-vous à [l'espace client OVHcloud](/links/manager), sélectionnez votre cluster Nutanix et relevez l'information se trouvant dans le champ `IPFO`.
 
 ![Get IP Fail OVER](images/02-get-ipfailover.png){.thumbnail}
 

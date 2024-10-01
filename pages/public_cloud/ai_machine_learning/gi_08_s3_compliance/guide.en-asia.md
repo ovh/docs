@@ -13,7 +13,7 @@ This guide is intended to help you to use `S3 buckets` with **AI Tools** via the
 ## Requirements
 
 - A **Public Cloud project**.
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia).
+- Access to the [OVHcloud Control Panel](/links/manager).
 - A working `ovhai` CLI. See our guide on [how to install ovhai CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli).
 
 ## Instructions
@@ -26,7 +26,7 @@ Then, you will be able to use this bucket with the different **OVHcloud AI Tools
 
 First of all, you must have an S3-user with the correct rights to manage S3 buckets. 
 
-To do this, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then click on `Object Storage`{.action} in the left-hand menu.
+To do this, log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then click on `Object Storage`{.action} in the left-hand menu.
 
 Here, you can create your S3 user by clicking on `Create User`{.action}. If you already have AI Platform users, you can use them to use S3 buckets, instead of creating a new one.
 
@@ -154,7 +154,7 @@ There are two methods to [create a new S3 bucket](/pages/storage_and_backup/obje
 
 #### Using the Control Panel
 
-To create an **Object Storage bucket**, first log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and open your `Public Cloud`{.action} project. Click on `Object Storage`{.action} in the side bar and then on the `My containers`{.action} tab. Now, click the `Create an object container`{.action} button.
+To create an **Object Storage bucket**, first log in to your [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project. Click on `Object Storage`{.action} in the side bar and then on the `My containers`{.action} tab. Now, click the `Create an object container`{.action} button.
 
 First, select the solution you need.
 

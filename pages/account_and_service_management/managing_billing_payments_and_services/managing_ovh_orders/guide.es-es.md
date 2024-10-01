@@ -10,18 +10,18 @@ updated: 2022-05-06
 
 ## Objetivo
 
-Al realizar un pedido, puede realizar un seguimiento e interactuar con él desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+Al realizar un pedido, puede realizar un seguimiento e interactuar con él desde el [área de cliente de OVHcloud](/links/manager).
 
 **Esta guía explica cómo gestionar los pedidos desde el área de cliente de OVHcloud.**
 
 > [!primary]
 >
-> Tenga en cuenta que, en función de su lugar de residencia y de la legislación vigente, así como del producto o servicio en cuestión, es posible que algunos apartados de esta guía sean diferentes para usted o no se apliquen a su caso particular. Si lo necesita, consulte los contratos de OVHcloud disponibles en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es): haga clic en su nombre en la esquina superior derecha y, seguidamente, en `Gestión de servicios`{.action} en el menú contextual y en la pestaña `Contratos`{.action}.
+> Tenga en cuenta que, en función de su lugar de residencia y de la legislación vigente, así como del producto o servicio en cuestión, es posible que algunos apartados de esta guía sean diferentes para usted o no se apliquen a su caso particular. Si lo necesita, consulte los contratos de OVHcloud disponibles en el [área de cliente de OVHcloud](/links/manager): haga clic en su nombre en la esquina superior derecha y, seguidamente, en `Gestión de servicios`{.action} en el menú contextual y en la pestaña `Contratos`{.action}.
 >
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 - Haber realizado al menos un pedido en OVHcloud.
 
 ## Procedimiento
@@ -39,11 +39,11 @@ La orden de pedido se genera al realizar el pedido. En él se enumeran los produ
 |3|Formas de pago registradas en su cuenta de cliente. Para más información, consulte la guía [Gestionar mis formas de pago](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).|
 |4|Formas de pago disponibles. Solo se mostrarán las formas de pago autorizadas en el país de origen de la cuenta o las asociadas al tipo de cuenta registrada.|
 
-En cualquier momento puede consultar la orden de pedido desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), tal y como se explica a continuación.
+En cualquier momento puede consultar la orden de pedido desde el [área de cliente de OVHcloud](/links/manager), tal y como se explica a continuación.
 
 ### Acceder a los pedidos desde el área de cliente de OVHcloud.
 
-Para acceder al panel de gestión de pedidos, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y, en la pestaña `Panel de control`{.action}, haga clic en `Ver mis pedidos`{.action}.
+Para acceder al panel de gestión de pedidos, conéctese al [área de cliente de OVHcloud](/links/manager) y, en la pestaña `Panel de control`{.action}, haga clic en `Ver mis pedidos`{.action}.
 
 ![Área de cliente](images/huborders.png){.thumbnail}
 
@@ -73,7 +73,7 @@ Si desea ver el pedido en formato HTML, haga clic en `...`{.action} a la derecha
 
 ### Seguimiento del pedido
 
-Una vez generada la orden de pedido, puede realizar el seguimiento de su pedido desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es):
+Una vez generada la orden de pedido, puede realizar el seguimiento de su pedido desde el [área de cliente de OVHcloud](/links/manager):
 
 * Haga clic en su `Panel de control`{.action}, luego en `Ver mis pedidos`{.action} y, por último, en `...`{.action} delante del pedido;
 * Seleccione `Seguimiento del pedido`{.action}. El seguimiento del pedido también puede mostrarse haciendo clic en el estado de un pedido en la columna `Estado`.
@@ -102,7 +102,7 @@ Encontrará todas las modalidades de la aplicación de dicho derecho en los sigu
 > Por último, no se aplica a determinados servicios (especialmente los [nombres de dominio](https://www.ovhcloud.com/es-es/domains/) y los [certificados SSL Sectigo](https://www.ovhcloud.com/es-es/web-hosting/options/ssl/)). Al contratar estos productos, deberá renunciar expresamente a su derecho de desistimiento de conformidad con el artículo L.221-28 del Código de Consumo.
 >
 
-Si cumple con los requisitos necesarios para ejercer el derecho de desistimiento, podrá hacerlo directamente desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es):
+Si cumple con los requisitos necesarios para ejercer el derecho de desistimiento, podrá hacerlo directamente desde el [área de cliente de OVHcloud](/links/manager):
 
 * Haga clic en su `Panel de control`{.action}, luego en `Ver mis pedidos`{.action} y, por último, en `...`{.action} delante del pedido.
 * Seleccione `Cancelar el pedido`{.action}.

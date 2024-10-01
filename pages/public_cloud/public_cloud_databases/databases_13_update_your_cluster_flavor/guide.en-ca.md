@@ -10,11 +10,11 @@ Learn how to adjust the flavor of your cluster according to your needs.
 
 ## How to upgrade your flavor
 
-This option is available through the OVHcloud [API](https://ca.api.ovh.com/console/) and [Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
+This option is available through the OVHcloud [API](https://ca.api.ovh.com/console/) and [Control Panel](/links/manager).
 
 ### Requirements
 
-- Access to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) or to the [API](https://ca.api.ovh.com/console/)
+- Access to your [OVHcloud Control Panel](/links/manager) or to the [API](https://ca.api.ovh.com/console/)
 - A [Public Cloud project](https://www.ovhcloud.com/en-ca/public-cloud/) in your OVHcloud account
 
 ### Instructions

@@ -25,7 +25,7 @@ Overview of our image segmentation app:
 
 To deploy your app, you need:
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - An AI Deploy Project created inside a [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
 - A [user for AI Deploy](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
 - [The OVHcloud AI CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) installed on your local computer
@@ -117,13 +117,13 @@ In this tutorial, we will upload the `.zip` format.
 > If your model's weights and/or your .zip are in a folder, be careful to only add the files, not their folders. Otherwise, the path to these resources will no longer be directly attached to the root `/workspace`. The name of the folder must be specified before the name of the file, which means that you will need to adapt the application code, especially the places where the resource paths are mentioned (`variables.py` and `dataset_unzip()` function from `utils.py`).
 >
 
-You can upload your data to the cloud either by using the [OVHcloud Control Panel (UI)](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) or with the [OVHcloud AI CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli).
+You can upload your data to the cloud either by using the [OVHcloud Control Panel (UI)](/links/manager) or with the [OVHcloud AI CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli).
 
 #### Upload data via UI (Control Panel)
 
 If you do not feel comfortable with commands, this method will be more intuitive.
 
-First, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and access the `Public Cloud`{.action} section.
+First, log in to the [OVHcloud Control Panel](/links/manager) and access the `Public Cloud`{.action} section.
 
 Then, select the `Object Storage`{.action} section (in the Storage category) and [create a new object container](/pages/storage_and_backup/object_storage/pcs_create_container) by clicking `Storage`{.action} > `Object Storage`{.action} > `Create an object container`{.action}.
 

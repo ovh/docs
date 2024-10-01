@@ -14,7 +14,7 @@ Ces dernières vous permettent d'émettre et recevoir des appels. Elles peuvent 
 
 - Disposer d'un [pack ADSL/VDSL/FTTH](https://www.ovhtelecom.fr/offre-internet/) actif.
 - Disposer d'une ou plusieurs ligne(s) non activée(s) dans ce pack.
-- Être connecté à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Télécom` :
+- Être connecté à l’[espace client OVHcloud](/links/manager), partie `Télécom` :
 
 ![espace client Telecom Accès Internet](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-01-fr-internet.png){.thumbnail}
 
@@ -25,7 +25,7 @@ Ces dernières vous permettent d'émettre et recevoir des appels. Elles peuvent 
 Selon l'offre ADSL/VDSL/FTTH à laquelle vous avez souscrite, vous disposez d'au minimum 1 emplacement pour des lignes téléphoniques et de 0 à 1 emplacement pour une ligne fax virtuelle. 
 Lorsque vous activez une ligne, celle-ci va occuper un emplacement.
 
-Pour connaître le nombre d'emplacements libres restants, rendez vous dans la rubrique `Telecom` de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez ensuite sur `Accès Internet`{.action} et sélectionnez votre offre.
+Pour connaître le nombre d'emplacements libres restants, rendez vous dans la rubrique `Telecom` de votre [espace client OVHcloud](/links/manager). Cliquez ensuite sur `Accès Internet`{.action} et sélectionnez votre offre.
 
 En sélectionnant votre pack, vous obtenez une vue globale des services associés à ce dernier. Vous pourrez alors retrouver le nombre d'emplacements encore disponibles.
 
@@ -42,7 +42,7 @@ Il reste un emplacement libre, nous pouvons donc activer 1 ligne téléphonique 
 
 S'il vous reste des emplacements libres, vous pouvez activer vos lignes téléphoniques/FAX. 
 
-Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), sélectionnez votre pack dans la liste de vos services puis cliquez sur `Activer un service`{.action} dans le cadre « Téléphonie ».
+Pour cela, connectez-vous à votre [espace client OVHcloud](/links/manager), sélectionnez votre pack dans la liste de vos services puis cliquez sur `Activer un service`{.action} dans le cadre « Téléphonie ».
 
 ![activer une ligne](images/Activation02-edit.png){.thumbnail}
 

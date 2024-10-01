@@ -12,14 +12,14 @@ A Área de Cliente OVHcloud oferece-lhe várias opções de personalização da 
 
 ## Requisitos
 
-- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e aceder à secção `Bare Metal Cloud`{.action} e, depois, `Managed Bare Metal`{.action}.
+- Estar ligado à [Área de Cliente OVHcloud](/links/manager){.external} e aceder à secção `Bare Metal Cloud`{.action} e, depois, `Managed Bare Metal`{.action}.
 - Ter um produto [Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/){.external}.
 
 ## Instruções
 
 ### Separador geral
 
-Depois de aceder à secção  `Bare Metal Cloud`{.action} e `Managed Bare Metal`{.action} da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, visualizará um panorama geral da sua Managed Bare Metal:
+Depois de aceder à secção  `Bare Metal Cloud`{.action} e `Managed Bare Metal`{.action} da [Área de Cliente OVHcloud](/links/manager){.external}, visualizará um panorama geral da sua Managed Bare Metal:
 
 ![Informações gerais](images/controlpanel1-e.png){.thumbnail}
 

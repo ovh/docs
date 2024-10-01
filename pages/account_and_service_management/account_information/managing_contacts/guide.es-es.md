@@ -31,7 +31,7 @@ El identificador de cliente es un identificador personal que se envía por corre
 
 ## Requisitos
 
-- Estar conectado a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+- Estar conectado a su [área de cliente de OVHcloud](/links/manager){.external}.
 - Tener acceso a la dirección de correo electrónico que se indica en el perfil de su cuenta.
 - Tener los permisos necesarios sobre el servicio correspondiente.
 - Conocer el ID de cliente del nuevo contacto (para poder modificarlo).
@@ -46,7 +46,7 @@ El identificador de cliente es un identificador personal que se envía por corre
 
 ### Acceder a la gestión de los contactos <a name="gestion_des_contacts"></a>
 
-Conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en el nombre asociado a su identificador en la esquina superior derecha y seleccione `Gestión de contactos`{.action}.
+Conéctese a su [área de cliente de OVHcloud](/links/manager){.external}, haga clic en el nombre asociado a su identificador en la esquina superior derecha y seleccione `Gestión de contactos`{.action}.
 
 ![Gestión de contactos](images/hubcontacts.png){.thumbnail}
 
@@ -102,7 +102,7 @@ En caso de que uno de los contactos no haya recibido el mensaje de correo electr
 
 ![Gestión de contactos](images/managing_contacts_06.png){.thumbnail}
 
-Si solo uno de los contactos valida la solicitud de cambio, aparecerá un mensaje informándole de que la solicitud está pendiente de validación por parte del otro contacto. Si el contacto acaba de validar la solicitud de cambio, es posible que la información que se muestra en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} tarde unos minutos en actualizarse.
+Si solo uno de los contactos valida la solicitud de cambio, aparecerá un mensaje informándole de que la solicitud está pendiente de validación por parte del otro contacto. Si el contacto acaba de validar la solicitud de cambio, es posible que la información que se muestra en el [área de cliente de OVHcloud](/links/manager){.external} tarde unos minutos en actualizarse.
 
 ![Gestión de contactos](images/managing_contacts_007.png){.thumbnail}
 
@@ -114,7 +114,7 @@ Acaba de contratar una suscripción de OVHcloud que le permitirá crear su propi
 
 > [!warning]
 >
-> No se recomienda proporcionar a ningún tercero las claves de acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+> No se recomienda proporcionar a ningún tercero las claves de acceso al [área de cliente de OVHcloud](/links/manager).
 >
 
 En ese caso, conceda a su proveedor el derecho de "[contacto técnico](#gestion_des_contacts)" en su alojamiento de OVHcloud. Este acceso le permitirá realizar las manipulaciones necesarias para la puesta en línea de su sitio web (adición de un dominio o subdominio en el multisitio, instalación de un módulo en 1 clic, modificación de la contraseña FTP o de la base de datos, creación de un certificado SSL, etc.).

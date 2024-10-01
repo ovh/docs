@@ -349,7 +349,7 @@ Resources:
 Duration: 2m30s
 ```
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), go to the `Public Cloud`{.action} section and click on `Managed Private Registry`. <br>
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and click on `Managed Private Registry`. <br>
 As you can see, your registry has been successfuly created:
 
 ![Managed private registry](images/private-registry.png){.thumbnail}

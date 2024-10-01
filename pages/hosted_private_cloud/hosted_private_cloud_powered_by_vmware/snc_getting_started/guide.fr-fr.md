@@ -15,7 +15,7 @@ tout en maintenant le niveau de sécurité.
 ## Prérequis
 
 - Posséder une offre [Hosted Private Cloud SecNumCloud](https://www.ovhcloud.com/fr/hosted-private-cloud/vmware/){.external}.
-- Être connecté à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à [l'espace client OVHcloud](/links/manager).
 - Être connecté aux [API OVHCloud](https://api.ovh.com/){.external}.
 - Avoir [créé ses identifiants pour l'API OVHCloud](/pages/manage_and_operate/api/first-steps){.external}.
 

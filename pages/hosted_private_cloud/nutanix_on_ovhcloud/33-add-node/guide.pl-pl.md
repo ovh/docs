@@ -45,7 +45,7 @@ Nutanix clusters are scalable. You can add nodes to an existing cluster.
 ## Requirements
 
 - A Nutanix cluster in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - Access to the [OVHcloud API](https://api.ovh.com/).
 - You must be connected to the cluster via Prism Central
 - A ready-to-configure physical server added to the OVHcloud Control Panel
@@ -62,7 +62,7 @@ The nodes to be added must have the same version of **AOS** as the existing clus
 
 ### Checking node delivery.
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) and check that an additional node appears in the Nutanix cluster.
+Log in to your [OVHcloud Control Panel](/links/manager) and check that an additional node appears in the Nutanix cluster.
 
 ![New Node](images/scaleup1.png){.thumbnail}
 

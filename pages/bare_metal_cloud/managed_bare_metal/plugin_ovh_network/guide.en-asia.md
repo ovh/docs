@@ -49,7 +49,7 @@ The new reverse will then be displayed in the table.
 
 > [!primary]
 >
-> This configuration process is also accessible via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and the [OVHcloud APIs](https://ca.api.ovh.com/){.external}. 
+> This configuration process is also accessible via the [OVHcloud Control Panel](/links/manager) and the [OVHcloud APIs](https://ca.api.ovh.com/){.external}. 
 > 
 
 ## Go further

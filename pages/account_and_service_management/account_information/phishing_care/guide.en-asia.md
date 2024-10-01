@@ -59,7 +59,7 @@ The only thing you can do is contact your bank as soon as possible, to have your
 
 #### If you entered your OVHcloud password on a fraudulent site
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), and change your password. We strongly advise you to activate two-factor authentication, to permanently secure your account.
+Log in to your [OVHcloud Control Panel](/links/manager), and change your password. We strongly advise you to activate two-factor authentication, to permanently secure your account.
 
 > [!primary]
 >

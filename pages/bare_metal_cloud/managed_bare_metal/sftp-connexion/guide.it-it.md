@@ -14,7 +14,7 @@ Questo metodo permette però di accedere esclusivamente alla cartella “upload-
 
 ## Prerequisiti
 
-- Disporre di un account utente creato dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Disporre di un account utente creato dallo [Spazio Cliente OVHcloud](/links/manager){.external}
 
 ## Procedura
 

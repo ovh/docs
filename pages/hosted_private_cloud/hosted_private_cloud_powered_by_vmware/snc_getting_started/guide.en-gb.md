@@ -13,7 +13,7 @@ Once your vSphere SecNumCloud environment is delivered, you need to configure ac
 ## Requirements
 
 - You must have a [Hosted Private Cloud SecNumCloud solution](https://www.ovhcloud.com/en-gb/hosted-private-cloud/vmware/){.external}.
-- You must be logged in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+- You must be logged in to the [OVHcloud Control Panel](/links/manager).
 - You must be logged in to the [OVHcloud API](https://api.ovh.com/){.external}.
 - You must have [created your OVHcloud API credentials](/pages/manage_and_operate/api/first-steps){.external}.
 

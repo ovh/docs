@@ -18,7 +18,7 @@ Découvrez comment gérer des machines virtuelles dans un cluster Nutanix et com
 ## Prérequis
 
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 - Être connecté à Prism Central sur le cluster
 
 ## Présentation de la gestion des machines virtuelles dans Prism Central

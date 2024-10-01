@@ -25,7 +25,7 @@ Retrouvez une présentation de l'offre sur [cette page](/pages/storage_and_backu
 Pour utiliser le service, les prérequis sont les suivants :
 
 - Avoir un [projet Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project) dans votre compte OVHcloud. 
-- Etre connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Etre connecté à votre [espace client OVHcloud](/links/manager).
 - Avoir créé un [utilisateur S3](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage).
 
 ### Quelles sont les fonctions S3 disponibles avec la classe de stockage Cold Archive ? 

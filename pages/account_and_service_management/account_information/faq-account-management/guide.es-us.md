@@ -10,7 +10,7 @@ Consulte las preguntas más frecuentes sobre la gestión de la cuenta de OVHclou
 
 ### ¿Cómo crear una cuenta en OVHcloud?
 
-Crear una cuenta es gratis y le permite acceder a sus datos y gestionar sus servicios. Puede crear su cuenta desde la siguiente página: [www.ovh.com/manager/](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+Crear una cuenta es gratis y le permite acceder a sus datos y gestionar sus servicios. Puede crear su cuenta desde la siguiente página: [www.ovh.com/manager/](/links/manager).
 
 Una vez creada, puede proteger el acceso a sus datos personales activando la doble autenticación en la sección «Mi cuenta», en la pestaña «Seguridad» (consulte también la respuesta a la pregunta [«¿Cómo proteger mi cuenta?»](#protect-account)).
 
@@ -24,7 +24,7 @@ Si desea más información sobre la cuenta de cliente de OVHcloud, consulte nues
 
 Su identificador de cliente, también llamado ID de cliente o «NIC-handle», aparece en la esquina superior derecha de su última factura. Tiene el siguiente formato: «ab00001-ovh» (donde las primeras letras suelen corresponder a las iniciales de la persona que ha creado la cuenta). También puede consultar su identificador de cliente en todos los mensajes de correo electrónico enviados por OVHcloud (emails de confirmación de creación de su cuenta, emails de confirmación de un pedido o de renovación, etc.).
 
-Si todavía no ha encontrado su identificador, haga clic en el enlace «¿No recuerda su ID de cliente o contraseña?» que aparece en la página de [conexión al área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) e introduzca la dirección de correo electrónico asociada a su cuenta.
+Si todavía no ha encontrado su identificador, haga clic en el enlace «¿No recuerda su ID de cliente o contraseña?» que aparece en la página de [conexión al área de cliente de OVHcloud](/links/manager) e introduzca la dirección de correo electrónico asociada a su cuenta.
 
 #### Ideas y consejos
 

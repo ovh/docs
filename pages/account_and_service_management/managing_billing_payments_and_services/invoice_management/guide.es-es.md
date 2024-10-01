@@ -16,20 +16,20 @@ OVHcloud pone a su disposición un espacio que le permitirá consultar, administ
 
 > [!primary]
 >
-> En función de su lugar de residencia y de la legislación vigente, así como del producto o productos en cuestión, es posible que algunas partes de esta guía varíen o no se apliquen en función de su caso particular. En caso de duda, consulte los contratos de OVHcloud disponibles en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) (haga clic en su nombre en la esquina superior derecha de la pantalla y seleccione `Gestión de servicios`{.action} en el menú contextual y abra la pestaña `Contratos`{.action}).
+> En función de su lugar de residencia y de la legislación vigente, así como del producto o productos en cuestión, es posible que algunas partes de esta guía varíen o no se apliquen en función de su caso particular. En caso de duda, consulte los contratos de OVHcloud disponibles en el [área de cliente de OVHcloud](/links/manager) (haga clic en su nombre en la esquina superior derecha de la pantalla y seleccione `Gestión de servicios`{.action} en el menú contextual y abra la pestaña `Contratos`{.action}).
 >
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/iiQmopMhzik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Requisitos
 
-- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) como [contacto de facturación](/pages/account_and_service_management/account_information/managing_contacts) del servicio.
+- Estar conectado al [área de cliente de OVHcloud](/links/manager) como [contacto de facturación](/pages/account_and_service_management/account_information/managing_contacts) del servicio.
 
 ## Procedimiento
 
 > [!primary]
 >
-> Cada factura se enviará por correo electrónico y podrá acceder a ella a través de un enlace accesible. Podrá acceder autenticándose en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Todas las facturas están también disponibles en la pestaña `Panel de control`{.action} del área de cliente.
+> Cada factura se enviará por correo electrónico y podrá acceder a ella a través de un enlace accesible. Podrá acceder autenticándose en el [área de cliente de OVHcloud](/links/manager). Todas las facturas están también disponibles en la pestaña `Panel de control`{.action} del área de cliente.
 >
 
 ### Partes de una factura de OVH
@@ -52,7 +52,7 @@ La factura del servicio de OVHcloud se enviará una vez realizado el pago de un 
 
 #### Consultar y administrar las facturas de OVH
 
-Para consultar sus facturas, acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Haga clic en su nombre en la esquina superior derecha de su pantalla y, en el nuevo menú que aparecerá, haga clic en `Facturas`{.action}.
+Para consultar sus facturas, acceda al [área de cliente de OVHcloud](/links/manager). Haga clic en su nombre en la esquina superior derecha de su pantalla y, en el nuevo menú que aparecerá, haga clic en `Facturas`{.action}.
 
 ![Facturación](images/hubinvoices.png){.thumbnail}
 
@@ -122,7 +122,7 @@ Se generará una [orden de pedido de regularización](/pages/account_and_service
 > Para solicitar la baja al vencimiento del servicio, siga las indicaciones de esta [guía](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
 >
 
-Si ha recibido una factura que no considera legítima y desea solicitar el reembolso o hacer valer su [derecho de desistimiento](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#ejercer-el-derecho-de-desistimiento), puede realizar una reclamación a través de su [área de cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), sujeto a la aplicación de nuestras [Condiciones Generales de Servicio](https://www.ovh.es/soporte/documentos_legales/CondicionesGeneralesServicio.pdf).
+Si ha recibido una factura que no considera legítima y desea solicitar el reembolso o hacer valer su [derecho de desistimiento](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#ejercer-el-derecho-de-desistimiento), puede realizar una reclamación a través de su [área de cliente OVHcloud](/links/manager), sujeto a la aplicación de nuestras [Condiciones Generales de Servicio](https://www.ovh.es/soporte/documentos_legales/CondicionesGeneralesServicio.pdf).
 <br> Haga clic en su nombre en la esquina superior derecha de la pantalla y seleccione `Crear un tíquet`{.action}.
 
 ### Seguimiento de los pagos

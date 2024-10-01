@@ -34,7 +34,7 @@ OVHcloud HA-NAS ermöglicht Ihnen die Verwaltung eines über Netzwerk zugänglic
 
 Die folgenden Abschnitte enthalten Konfigurationsbeispiele für die am häufigsten verwendeten Distributionen/Betriebssysteme. Verbinden Sie sich zunächst per SSH mit Ihrem Server oder loggen Sie sich in die grafische Oberfläche Ihres installierten Betriebssystems ein. Die Beispiele und Instruktionen setzen voraus, dass Sie als Benutzer mit erhöhten Berechtigungen verbunden sind.
 
-Sie benötigen auch den **internen Namen** und die **IP-Adresse** Ihres HA-NAS, die Sie in der nach der Installation erhaltenen E-Mail oder in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) finden können.
+Sie benötigen auch den **internen Namen** und die **IP-Adresse** Ihres HA-NAS, die Sie in der nach der Installation erhaltenen E-Mail oder in Ihrem [OVHcloud Kundencenter](/links/manager) finden können.
 
 Die folgenden Notationen werden als Argumente in den Kommandozeilenabschnitten verwendet. Ersetzen Sie diese mit den entsprechenden Werten bei der Eingabe der Befehle.
 

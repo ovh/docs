@@ -13,11 +13,11 @@ Es posible restringir y gestionar el acceso al vCenter para mejorar la seguridad
 ## Requisitos
 
 - Tener una solución [Managed Bare Metal](https://www.ovhcloud.com/es/managed-bare-metal/){.external}.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 
-Desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Servidores`{.action} y, en el menú de la izquierda, seleccione su servicio en la columna `Managed Bare Metal.`{.action}
+Desde el [área de cliente de OVHcloud](/links/manager), acceda a la sección `Servidores`{.action} y, en el menú de la izquierda, seleccione su servicio en la columna `Managed Bare Metal.`{.action}
 
 Desde la página principal del servicio, haga clic en la pestaña `Seguridad`{.action} y, a continuación, en `Modificar la política de acceso al vCenter`{.action}.
 

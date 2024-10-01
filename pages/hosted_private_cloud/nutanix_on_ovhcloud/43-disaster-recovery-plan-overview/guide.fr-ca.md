@@ -19,7 +19,7 @@ Ce guide vous présente les possibilités offertes par les clusters Nutanix inst
 - Disposer de plusieurs clusters Nutanix avec l'une et/ou l'autre de ces organisations :
     - plusieurs clusters Nutanix sur des sites physiquement différents chez OVHcloud;
     - un cluster Nutanix fourni par OVHcloud et un autre cluster Nutanix chez un autre fournisseur.
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 - Être connecté sur vos clusters via Prism Central.
 - Avoir une interconnexion de type vRack ou VPN IPSEC entre les deux clusters en fonction des besoins.
 

@@ -16,7 +16,7 @@ However, if you would like to know how to do the same with Terraform, but over a
 
 - **OVHcloud requirements**
     - A [Public Cloud project](https://www.ovhcloud.com/de/public-cloud/) in your OVHcloud account
-    - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
+    - Access to the [OVHcloud Control Panel](/links/manager)
     - A private vRack network that can be accessed from your Public Cloud project (if you don’t have one, please refer to our guide [Configuring vRack for Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack).
     - An OpenStack user account in your Public Cloud project (if you don’t have one, please refer to the following guide: [Creating and deleting OpenStack users](/pages/public_cloud/compute/create_and_delete_a_user/).
 - **Terraform requirements**

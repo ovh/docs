@@ -12,7 +12,7 @@ Es posible solicitar la baja de su infraestructura Hosted Private Cloud en cualq
 
 ## Requisitos
 
-- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en el menú `Servidores`{.action} > `Private Cloud`{.action}.
+- Estar conectado al [área de cliente de OVHcloud](/links/manager){.external}, en el menú `Servidores`{.action} > `Private Cloud`{.action}.
 - Haber contratado una solución [Hosted Private Cloud](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/){.external}.
 
 ## Procedimiento
@@ -26,7 +26,7 @@ La solución Hosted Private Cloud se contrata sin período de permanencia. Sin e
 
 ### 1\. Solicitar la baja del servicio desde el área de cliente de OVHcloud
 
-Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, acceda al menú `Servidores`{.action} (1), haga clic en la sección `Private Cloud`{.action} (2) y seleccione su servicio en la lista (3).
+Conéctese al [área de cliente de OVHcloud](/links/manager){.external}, acceda al menú `Servidores`{.action} (1), haga clic en la sección `Private Cloud`{.action} (2) y seleccione su servicio en la lista (3).
 
 En la columna «Gestión del servicio», haga clic en el botón con forma de tres puntos `...`{.action} (4) que aparece junto a la fecha de renovación. Por último, haga clic en `Eliminar el servicio`{.action} (5).
 

@@ -14,7 +14,7 @@ Możesz użyć uwierzytelnienia SSO (*Single Sign-On*), aby zalogować się do T
 
 - Posiadanie statusu administratora usługi Okta
 - Posiadanie [konta OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 
 ## W praktyce
 
@@ -78,7 +78,7 @@ Twoja usługa Okta jest od tej pory zaufana w OVHcloud jako dostawca usług. Nas
 
 ### Zapisz Okta na koncie OVHcloud i skonfiguruj połączenie
 
-Aby dodać Okta jako zaufanego dostawcę tożsamości, należy dostarczyć metadane dostawcy tożsamości w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+Aby dodać Okta jako zaufanego dostawcę tożsamości, należy dostarczyć metadane dostawcy tożsamości w [Panelu klienta OVHcloud](/links/manager).
 
 Kliknij nazwę konta w prawym górnym rogu, a następnie ponownie na pasku bocznym.
 
@@ -145,7 +145,7 @@ Następnie będziesz mógł wylogować się z konta i ponownie zalogować się d
 
 ### Logowanie przez SSO
 
-Na [stronie logowania OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) wpisz swój [identyfikator](/pages/account_and_service_management/account_information/ovhcloud-account-creation#jaki-jest-moj-identyfikator-klienta), po którym następuje **/idp** bez hasła i kliknij przycisk `Logowanie`{.action}.
+Na [stronie logowania OVHcloud](/links/manager) wpisz swój [identyfikator](/pages/account_and_service_management/account_information/ovhcloud-account-creation#jaki-jest-moj-identyfikator-klienta), po którym następuje **/idp** bez hasła i kliknij przycisk `Logowanie`{.action}.
 
 ![Połączenie z federacją OVHcloud](images/ovhcloud_federation_login_1.png){.thumbnail}
 

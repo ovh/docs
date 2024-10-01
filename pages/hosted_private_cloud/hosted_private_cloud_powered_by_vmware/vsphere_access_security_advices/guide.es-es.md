@@ -12,7 +12,7 @@ Restringir el acceso a su infraestructura es una medida recomendable para garant
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
 
 ## Procedimiento
 
@@ -20,13 +20,13 @@ Restringir el acceso a su infraestructura es una medida recomendable para garant
 
 En primer lugar, debe restringir los accesos por IP. Le aconsejamos que utilice siempre un sistema de lista blanca. Esta técnica consiste en prohibir el acceso por defecto a todas las direcciones IP e indicar las direcciones que sí pueden acceder a la infraestructura.
 
-Puede realizar esta operación directamente desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Una vez conectado a su Private Cloud, abra la pestaña `Seguridad`{.action}. Se mostrará una tabla en la que podrá consultar las direcciones IP autorizadas o denegadas. Para añadir nuevas direcciones IP, haga clic en el botón `Añadir IP`{.action}, situado a la derecha.
+Puede realizar esta operación directamente desde el [área de cliente de OVHcloud](/links/manager){.external}. Una vez conectado a su Private Cloud, abra la pestaña `Seguridad`{.action}. Se mostrará una tabla en la que podrá consultar las direcciones IP autorizadas o denegadas. Para añadir nuevas direcciones IP, haga clic en el botón `Añadir IP`{.action}, situado a la derecha.
 
 ![Añadir IP](images/adding_ip.png){.thumbnail}
 
 ### Crear usuarios específicos
 
-Le recomendamos encarecidamente que cree un acceso personal para cada usuario que necesite acceder a la infraestructura. Puede realizar esta operación desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la pestaña `Usuarios`{.action}. Para añadir nuevos usuarios, haga clic en el botón `Crear un usuario`{.action}.
+Le recomendamos encarecidamente que cree un acceso personal para cada usuario que necesite acceder a la infraestructura. Puede realizar esta operación desde el [área de cliente de OVHcloud](/links/manager){.external}, en la pestaña `Usuarios`{.action}. Para añadir nuevos usuarios, haga clic en el botón `Crear un usuario`{.action}.
 
 ![Usuarios](images/users.png){.thumbnail}
 
@@ -54,7 +54,7 @@ A continuación, podrá administrar los permisos de cada usuario haciendo clic e
 
 Le recomendamos que cierre la sesión cuando termine de utilizar el cliente. Es posible añadir un plazo de expiración para limitar la duración de las sesiones.
 
-Puede configurar este parámetro directamente en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Una vez conectado a su Private Cloud, abra la pestaña `Seguridad`{.action}. A continuación, haga clic en el botón `Cambiar el plazo de expiración`{.action}, situado a la derecha.
+Puede configurar este parámetro directamente en el [área de cliente de OVHcloud](/links/manager){.external}. Una vez conectado a su Private Cloud, abra la pestaña `Seguridad`{.action}. A continuación, haga clic en el botón `Cambiar el plazo de expiración`{.action}, situado a la derecha.
 
 ![Expiración de la sesión](images/security-expiration.png){.thumbnail}
 

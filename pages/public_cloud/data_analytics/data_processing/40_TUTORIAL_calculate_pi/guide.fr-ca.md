@@ -15,7 +15,7 @@ We want to calculate the value of π (pi) with the Monte-Carlo method. It is bas
 This probabilty can be estimated by picking a high number of random points and then dividing the number of points within the circle by the total number of points.
 
 ## Requirements 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}
+- Access to the [OVHcloud Control Panel](/links/manager){.external}
 - An OVHcloud account 
 - A cloud project in your OVHcloud account (see [How to create a cloud project](/pages/public_cloud/compute/create_a_public_cloud_project){.external} for details.)
 - Data Processing activated (see [How to activate the Data Processing service](/pages/public_cloud/data_analytics/data_processing/30_HOWTO_activate_project){.external} for details.)

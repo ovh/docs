@@ -181,7 +181,7 @@ Ripeti questa procedura per ogni indirizzo Additional IP.
 
 ### Windows Server (2016)
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), accedi alla sezione `Public Cloud`{.action} e seleziona il tuo progetto.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager), accedi alla sezione `Public Cloud`{.action} e seleziona il tuo progetto.
 
 Apri `Instances`{.action} nel menu a sinistra. Clicca sul nome della tua istanza. Accedi alla scheda `Console VNC`{.action}.
 
@@ -296,7 +296,7 @@ Per verificare che l'indirizzo Additional IP sia stato aggiunto correttamente, a
 
 ### Diagnostica
 
-Riavvia l'istanza utilizzando il sistema operativo installato nell'istanza o dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Se non riesci ancora a stabilire una connessione tra la rete pubblica e il tuo Additional IP e sospetti un problema di rete, riavvia l'istanza in [modalità Rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode). A questo punto puoi configurare l'indirizzo Additional IP direttamente sull'istanza.
+Riavvia l'istanza utilizzando il sistema operativo installato nell'istanza o dallo [Spazio Cliente OVHcloud](/links/manager). Se non riesci ancora a stabilire una connessione tra la rete pubblica e il tuo Additional IP e sospetti un problema di rete, riavvia l'istanza in [modalità Rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode). A questo punto puoi configurare l'indirizzo Additional IP direttamente sull'istanza.
 
 Una volta effettuato l'accesso in Rescue mode via SSH, esegui questo comando:
 
@@ -304,7 +304,7 @@ Una volta effettuato l'accesso in Rescue mode via SSH, esegui questo comando:
 ifconfig ens3:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 ```
 
-Per testare la connessione, ti basta inviare un ping al tuo indirizzo Additional IP dall'esterno. Se risponde in modalità Rescue, significa probabilmente che si è verificato un errore di configurazione. Se l'IP non funziona ancora, informi i nostri team del supporto creando un ticket di assistenza dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+Per testare la connessione, ti basta inviare un ping al tuo indirizzo Additional IP dall'esterno. Se risponde in modalità Rescue, significa probabilmente che si è verificato un errore di configurazione. Se l'IP non funziona ancora, informi i nostri team del supporto creando un ticket di assistenza dallo [Spazio Cliente OVHcloud](/links/manager).
 
 ## Per saperne di più
 

@@ -12,7 +12,7 @@ We will use both the OpenStack Swift native API and its S3 API in read/write mod
 Samples are based on the well-known WordCount. We will first read data from a text file, then count the frequence of each word in this particular file.
 
 ## Requirements
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Access to the [OVHcloud Control Panel](/links/manager).
 - An OVHcloud account
 - A cloud project in your OVHcloud account (see [How to create a cloud project](/pages/public_cloud/compute/create_a_public_cloud_project){.external} for details).
 - Data Processing activated (see [How to activate the Data Processing service](/pages/public_cloud/data_analytics/data_processing/30_HOWTO_activate_project){.external} for details).

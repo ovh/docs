@@ -28,7 +28,7 @@ NAS-HA permite centralizar os dados de diferentes cargas de trabalho Linux, mas 
 
 ### É possível obter o NAS-HA através da área de gestão do serviço?
 
-Sim, este espaço pode ser acedido a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), secção `Bare Metal Cloud`{.action} e depois `NAS e CDN`{.action}.
+Sim, este espaço pode ser acedido a partir da [Área de Cliente OVHcloud](/links/manager), secção `Bare Metal Cloud`{.action} e depois `NAS e CDN`{.action}.
 
 ## Disponibilidade
 
@@ -147,7 +147,7 @@ A frequência das snapshots pode ser administrada a partir da Área de Cliente O
 - de 3 em 3 dias;
 - semanal.
 
-Também pode criar Snapshots manuais a qualquer momento. Esta funcionalidade está disponível no seio do seu [Espaço Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou através da [API](https://api.ovh.com/) seguinte:
+Também pode criar Snapshots manuais a qualquer momento. Esta funcionalidade está disponível no seio do seu [Espaço Cliente OVHcloud](/links/manager) ou através da [API](https://api.ovh.com/) seguinte:
 
 > [!api]
 >

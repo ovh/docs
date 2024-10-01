@@ -15,7 +15,7 @@ Niniejszy przewodnik wyjaśnia, jak działają i jak wdrażać obszary awarii vS
 ## Wymagania początkowe
 
 - Posiadanie kontaktu administracyjnego infrastruktury [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/), aby otrzymać dane do logowania.
-- Posiadanie aktywnego identyfikatora użytkownika z uprawnieniami dla NSX [utworzonego w Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Posiadanie aktywnego identyfikatora użytkownika z uprawnieniami dla NSX [utworzonego w Panelu klienta OVHcloud](/links/manager)
 - Wdrożenie [datastore vSan](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_vsan)
 
 ## W praktyce

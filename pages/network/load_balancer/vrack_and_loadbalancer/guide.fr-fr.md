@@ -15,7 +15,7 @@ Avant de vous lancer, si vous ne l’avez pas encore lue, nous vous conseillons 
 ## Prérequis
 
 - Posséder une offre [OVHcloud Load balancer](https://www.ovh.com/fr/solutions/load-balancer/) dans votre compte OVHcloud.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Être connecté à l'[API OVHcloud](https://api.ovh.com/){.external}.
 - Posséder une ferme configurée
 - Posséder un frontend configuré

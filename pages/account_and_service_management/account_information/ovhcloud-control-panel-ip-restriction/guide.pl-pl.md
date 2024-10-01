@@ -13,7 +13,7 @@ updated: 2022-12-12
   
 OVHcloud daje do Twojej dyspozycji opcje służące zwiększeniu bezpieczeństwa Twojego Panelu klienta OVHcloud i Twoich usług.
 
-W szczególności możesz ograniczyć dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) do niektórych adresów IP.
+W szczególności możesz ograniczyć dostęp do [Panelu klienta OVHcloud](/links/manager) do niektórych adresów IP.
 Uruchomienie tej opcji, w połączeniu z zabezpieczeniem Twojego konta przez [weryfikację dwuetapową](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa), pozwala na optymalne zabezpieczenie Twojego panelu klienta OVHcloud przed ewentualnymi próbami włamania.
 
 **Dowiedz się, jak zabezpieczyć konto OVHcloud ograniczając dostęp do adresów IP**
@@ -25,7 +25,7 @@ Uruchomienie tej opcji, w połączeniu z zabezpieczeniem Twojego konta przez [we
   
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 - Zapoznanie się z [zaleceniami dotyczącymi zarządzania hasłem dostępu do konta](/pages/account_and_service_management/account_information/manage-ovh-password).
   
 ## W praktyce
@@ -56,7 +56,7 @@ Jeśli używasz sieci 4G/5G jako uzupełnienie, pamiętaj o pobraniu również a
 
 ### Etap 2 - Wprowadzenie ograniczenia dostępu dla adresu IP
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij na Twoje `nazwisko i imię` w prawym górnym rogu **następnie** na Twoje `tim` w niebieskiej kolumnie, która pojawi się po prawej stronie.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager). Kliknij na Twoje `nazwisko i imię` w prawym górnym rogu **następnie** na Twoje `tim` w niebieskiej kolumnie, która pojawi się po prawej stronie.
 
 ![Access from Manager](images/ip1.png){.thumbnail}
 
@@ -85,7 +85,7 @@ Istnieją dwie sekcje dotyczące wprowadzania ograniczeń dla adresu IP:
 >
 > W sekcji `Domyślna reguła`{.action} nie zatwierdź **nigdy** domyślnej reguły w statusie `Odrzucony`{.action} **bez wcześniejszej zgody** poprawnie i wcześniej co najmniej jeden z publicznych adresów IP w sekcji `skonfigurowane IP` domyślnie. 
 >
-> W przeciwnym razie blokujesz **absolutnie wszystkie publiczne adresy IP (w tym twoje)** bez żadnych wyjątków. Nikt już nie będzie miał dostępu do Twojej [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przeprowadź procedurę administracyjną, aby odblokować Twoją sytuację.
+> W przeciwnym razie blokujesz **absolutnie wszystkie publiczne adresy IP (w tym twoje)** bez żadnych wyjątków. Nikt już nie będzie miał dostępu do Twojej [Panelu klienta OVHcloud](/links/manager) i przeprowadź procedurę administracyjną, aby odblokować Twoją sytuację.
 >
 > Bądźcie więc niezwykle czujny w tej kwestii.
 >

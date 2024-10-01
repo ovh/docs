@@ -20,7 +20,7 @@ Windows VMs deployed from a template automatically use the SPLA licences provide
 ## Requirements
 
 - Web client access (HTML5)
-- [active Windows licences](/pages/bare_metal_cloud/managed_bare_metal/manager-ovhcloud#windows-licence-tab) (activate via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}, in the `Windows licence`{.action} tab for the datacentre)
+- [active Windows licences](/pages/bare_metal_cloud/managed_bare_metal/manager-ovhcloud#windows-licence-tab) (activate via the [OVHcloud Control Panel](/links/manager){.external}, in the `Windows licence`{.action} tab for the datacentre)
 
 ## Instructions
 

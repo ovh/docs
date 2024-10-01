@@ -21,7 +21,7 @@ In this guide, we detail the actions to take for the topics in progress:
 ## Requirements
 
 - a [Hosted Private Cloud solution powered by VMware](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/){.external}
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - Access to the [OVHcloud API](https://api.ovh.com/){.external}. If required, please refer to our guide on [Getting started with OVHcloud](/pages/manage_and_operate/api/first-steps) APIs.
 - You need to have [created your login credentials for the OVHcloud API](/pages/manage_and_operate/api/first-steps){.external}.
 
@@ -175,7 +175,7 @@ To complete your migration, you can follow this guide: [Migrate to a new infrast
 
 #### Retrieving your PCC information in the OVHcloud Control Panel
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) with an administrator account.
+Log in to the [OVHcloud Control Panel](/links/manager) with an administrator account.
 
 Click on the `Hosted Private Cloud`{.action} tab and select your service from the `VMware`{.action} list.
 

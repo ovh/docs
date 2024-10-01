@@ -13,7 +13,7 @@ With our [vRack](https://www.ovh.com/sg/solutions/vrack/){.external} solution, y
 ## Requirements
 
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-sg/enterprise/products/hosted-private-cloud/) to receive login credentials
-- A user account with access to vSphere (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg))
+- A user account with access to vSphere (created in the [OVHcloud Control Panel](/links/manager))
 
 ## Technical background
 

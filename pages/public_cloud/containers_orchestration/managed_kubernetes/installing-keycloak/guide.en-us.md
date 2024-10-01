@@ -39,7 +39,7 @@ In this tutorial we are going to:
 - install Keycloak on a freshly created OVHcloud Managed Kubernetes Service cluster
 - configure a Keycloak instance in our Kubernetes cluster as an OIDC provider
 
-You can use the *Reset cluster* function in the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external} to reinitialize your cluster before following this tutorial.
+You can use the *Reset cluster* function in the Public Cloud section of the [OVHcloud Control Panel](/links/manager){.external} to reinitialize your cluster before following this tutorial.
 
 ## Requirements
 

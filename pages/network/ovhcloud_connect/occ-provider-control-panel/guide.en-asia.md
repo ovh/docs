@@ -18,7 +18,7 @@ With OVHcloud Connect, you can link your company network to your private OVHclou
 
 - An [OVHcloud Connect Provider solution](https://www.ovhcloud.com/asia/network-security/ovhcloud-connect/)
 - An OVHcloud [vRack](https://www.ovh.co.uk/solutions/vrack/)
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -28,11 +28,11 @@ Once you have ordered your OVHcloud Connect Provider solution, you will receive 
 
 Depending on the provider you have chosen, go to their portal to log in via the link provided in the order confirmation email. Then enter your service key and confirm the order presented to you.
 
-Next, check the activation status of your solution in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia). To do this, go to the `Bare Metal Cloud`{.action} section and click on `Network`{.action}. Next, open `OVHcloud Connect`{.action} and click on your solution. Your solution's status should have changed to “Active”.
+Next, check the activation status of your solution in the [OVHcloud Control Panel](/links/manager). To do this, go to the `Bare Metal Cloud`{.action} section and click on `Network`{.action}. Next, open `OVHcloud Connect`{.action} and click on your solution. Your solution's status should have changed to “Active”.
 
 ### Step 2: Associating a vRack
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), go to the `Bare Metal Cloud`{.action} section and click on `Network`{.action}. Next, open `OVHcloud Connect`{.action} and click on your solution.
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and click on `Network`{.action}. Next, open `OVHcloud Connect`{.action} and click on your solution.
 
 ![ovhcloud connect selection](images/occ_01.png){.thumbnail}
 

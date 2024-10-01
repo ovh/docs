@@ -19,7 +19,7 @@ NSX allows load balancing on a level 4 (TCP or UDP) layer or level 7 (HTTP or HT
 ## Requirements
 
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/) to receive login credentials.
-- A user account with access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- A user account with access to the [OVHcloud Control Panel](/links/manager).
 - Having **NSX** deployed with two segments configured in your NSX configuration, you can use this guide [Segment management in NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-02-segment-management).
 - Two virtual machines with NGINX enabled on one segment.
 

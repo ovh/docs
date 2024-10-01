@@ -9,12 +9,12 @@ This guide helps you to upload an Apache Spark job in Python to your OVHcloud Ob
 
 If you want to submit an Apache Spark job in Java or Scala language, you can read this document: [How to submit a Java/Scala job using Data Processing Manager](/pages/public_cloud/data_analytics/data_processing/20_GETTINGSTARTED_submit-java-scala-ui){.external}
 
-In this guide, we are assuming that you're using the [OVHcloud Manager](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external} to use the Data Processing platform.
+In this guide, we are assuming that you're using the [OVHcloud Manager](/links/manager){.external} to use the Data Processing platform.
 
 To read an introduction about the Data Processing service you can visit [Data Processing Overview](/pages/public_cloud/data_analytics/data_processing/00_CONCEPTS_Overview){.external}.
 
 ## Requirements
-- Access to [OVHcloud Manager](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}
+- Access to [OVHcloud Manager](/links/manager){.external}
 - An OVHcloud account
 - A cloud project in your OVHcloud account (see [How to create a cloud project](/pages/public_cloud/compute/create_a_public_cloud_project){.external} for details.)
 - An Openstack user in your cloud project and access to Openstack Horizon dashboard (see [How to create an Openstack user and access to Horizon](/pages/public_cloud/compute/introducing_horizon){.external} for details.)

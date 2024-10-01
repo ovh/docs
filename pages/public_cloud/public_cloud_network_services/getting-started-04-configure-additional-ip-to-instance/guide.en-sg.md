@@ -168,7 +168,7 @@ Repeat this procedure for each Additional IP address.
 
 ### Windows Server (2016)
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), go to the `Public Cloud`{.action} section, and select the Public Cloud project concerned.
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section, and select the Public Cloud project concerned.
 
 Open `Instances`{.action} in the left-hand menu and click on the name of your instance. Switch to the tab `VNC console`{.action}.
 
@@ -283,7 +283,7 @@ Back in the section "IP Addresses", verify that the Additional IP address was ad
 
 ### Troubleshooting
 
-First, soft-reboot your instance via the instance's OS or from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg). If you are still unable to establish a connection from the public network to your Additional IP and suspect a network problem, you need to reboot the instance in [rescue mode](/pages/public_cloud/compute/put_an_instance_in_rescue_mode). Then you can set up the Additional IP address directly on the instance.
+First, soft-reboot your instance via the instance's OS or from the [OVHcloud Control Panel](/links/manager). If you are still unable to establish a connection from the public network to your Additional IP and suspect a network problem, you need to reboot the instance in [rescue mode](/pages/public_cloud/compute/put_an_instance_in_rescue_mode). Then you can set up the Additional IP address directly on the instance.
 
 Once you are connected in rescue mode via SSH, enter the following command:
 
@@ -291,7 +291,7 @@ Once you are connected in rescue mode via SSH, enter the following command:
 ifconfig ens3:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 ```
 
-To test the connection, simply ping your Additional IP from the outside. If it responds in rescue mode, that probably means that there is a configuration error. If, however, the IP is still not working, please inform our support teams by creating a support request in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) for further investigations.
+To test the connection, simply ping your Additional IP from the outside. If it responds in rescue mode, that probably means that there is a configuration error. If, however, the IP is still not working, please inform our support teams by creating a support request in your [OVHcloud Control Panel](/links/manager) for further investigations.
 
 ## Go further
 

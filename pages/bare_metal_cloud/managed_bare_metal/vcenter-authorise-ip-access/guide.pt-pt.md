@@ -11,14 +11,14 @@ updated: 2020-11-18
 
 ## Requisitos
 
-* Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+* Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
 * Dispor de uma [infraestrutura Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/){.external} na sua conta OVHcloud.
 
 ## Instruções
 
 Quando [a política de acesso ao vCenter é limitada](/pages/bare_metal_cloud/managed_bare_metal/vcenter-modify-access-policy), é necessário adicionar os IP que serão autorizados a ligar-se ao serviço.
 
-A operação pode ser realizada a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external-link}. Na secção `Bare Metal Cloud`, clique na opção `Managed Bare Metal`. Selecione a infraestrutura e aceda ao separador `Segurança` e clique em `Adicionar um novo intervalo de endereços IP`{.action}.
+A operação pode ser realizada a partir da [Área de Cliente OVHcloud](/links/manager){.external-link}. Na secção `Bare Metal Cloud`, clique na opção `Managed Bare Metal`. Selecione a infraestrutura e aceda ao separador `Segurança` e clique em `Adicionar um novo intervalo de endereços IP`{.action}.
 
 ![vCenter](images/restrictIP.png){.thumbnail}
 

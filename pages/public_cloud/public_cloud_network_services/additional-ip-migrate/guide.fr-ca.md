@@ -18,7 +18,7 @@ Ce guide vous explique comment basculer une Additional IP d'une instance à une 
 ## Prérequis
 - Au moins deux instances Public Cloud démarrées
 - Une Additional IP
-- Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
+- Être connecté à l'[espace client OVHcloud](/links/manager)
 
 > [!warning]
 > Cette fonctionnalité n'est actuellement pas disponible pour les instances Metal.
@@ -31,7 +31,7 @@ Ce guide vous explique comment basculer une Additional IP d'une instance à une 
 > Une Additional IP ne peut pas être déplacée entre différentes zones. Par exemple, une IP localisée dans le datacentre de SBG peut être déplacée vers GRA ou RBX mais pas vers BHS.
 >
 
-Dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), sélectionnez votre projet dans la section `Public Cloud`{.action}.
+Dans votre [espace client OVHcloud](/links/manager), sélectionnez votre projet dans la section `Public Cloud`{.action}.
 
 Dans le menu de gauche, rendez-vous dans la section `Network` puis ouvrez la partie `Public IPs`{.action}. Cliquez sur l'onglet `Additional IP`{.action}.
 

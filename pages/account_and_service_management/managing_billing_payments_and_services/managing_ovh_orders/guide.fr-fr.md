@@ -6,18 +6,18 @@ updated: 2022-05-06
 
 ## Objectif
 
-Lorsque vous effectuez une commande, vous pouvez la suivre et interagir avec elle depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+Lorsque vous effectuez une commande, vous pouvez la suivre et interagir avec elle depuis votre [espace client OVHcloud](/links/manager).
 
 **Découvrez comment gérer vos commandes depuis votre espace client OVHcloud.**
 
 > [!primary]
 >
-> En fonction de votre lieu de résidence et de sa législation en vigueur, ainsi que du ou des produits concernés, il est possible que certaines parties de ce guide varient et/ou ne s’appliquent pas à votre situation. Si besoin, référez-vous à vos contrats OVHcloud disponibles dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) : cliquez sur votre nom en haut à droite puis sur `Gestion des services`{.action} dans le menu contextuel et sur l'onglet `Contrats`{.action}.
+> En fonction de votre lieu de résidence et de sa législation en vigueur, ainsi que du ou des produits concernés, il est possible que certaines parties de ce guide varient et/ou ne s’appliquent pas à votre situation. Si besoin, référez-vous à vos contrats OVHcloud disponibles dans votre [espace client OVHcloud](/links/manager) : cliquez sur votre nom en haut à droite puis sur `Gestion des services`{.action} dans le menu contextuel et sur l'onglet `Contrats`{.action}.
 >
 
 ## Prérequis
 
-- Être connecté à [l’espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à [l’espace client OVHcloud](/links/manager).
 - Avoir passé au moins une commande chez OVHcloud.
 
 ## En pratique
@@ -35,11 +35,11 @@ Le bon de commande est créé au moment du passage de votre commande. Il liste l
 |3|Moyens de paiement enregistrés sur votre compte client. Pour plus d'informations, consultez le guide [Gérer mes moyens de paiement](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).|
 |4|Méthodes de paiement disponibles. Seules les méthodes de paiement autorisés dans le pays d'origine du compte ou ceux liés au type de compte enregistré vous seront proposées.|
 
-Vous pouvez à tout moment retrouver votre bon de commande dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), comme expliqué ci-dessous.
+Vous pouvez à tout moment retrouver votre bon de commande dans votre [espace client OVHcloud](/links/manager), comme expliqué ci-dessous.
 
 ### Accéder aux bons de commandes dans l'espace client OVHcloud
 
-Pour accéder au panneau de gestion des commandes, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis, dans l'onglet `Tableau de bord`{.action}, cliquez sur `Voir mes commandes`{.action}.
+Pour accéder au panneau de gestion des commandes, connectez-vous à votre [espace client OVHcloud](/links/manager) puis, dans l'onglet `Tableau de bord`{.action}, cliquez sur `Voir mes commandes`{.action}.
 
 ![Espace client](images/huborders.png){.thumbnail}
 
@@ -69,7 +69,7 @@ Vous pouvez également afficher le bon de commande au format HTML en cliquant su
 
 ### Suivre votre commande
 
-Après génération de votre bon de commande, vous pouvez suivre votre commande depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) :
+Après génération de votre bon de commande, vous pouvez suivre votre commande depuis votre [espace client OVHcloud](/links/manager) :
 
 * Cliquez sur votre `Tableau de bord`{.action}, puis sur `Voir mes commandes`{.action} et enfin sur `...`{.action} devant votre commande.
 * Sélectionnez `Suivi de commande`{.action}. Le suivi de commande peut également être affiché en cliquant sur l'état d'une commande dans la colonne `État`.
@@ -98,7 +98,7 @@ Vous trouverez toutes les modalités d'application du droit de rétractation dan
 > Enfin, il ne s'applique pas à certains services (notamment les [noms de domaines](https://www.ovhcloud.com/fr/domains/) et les [certificats SSL Sectigo](https://www.ovhcloud.com/fr/web-hosting/options/ssl/)). Lors de la commande de ces produits, il vous est de ce fait demandé de renoncer expressément à votre droit de rétractation, conformément à l'article L.221-28 du code de la consommation.
 >
 
-Si les critères d'éligibilité au droit de rétractation sont remplis, il peut être mis en application directement depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) :
+Si les critères d'éligibilité au droit de rétractation sont remplis, il peut être mis en application directement depuis [l'espace client OVHcloud](/links/manager) :
 
 * Cliquez sur votre `Tableau de bord`{.action}, puis sur `Voir mes commandes`{.action} et enfin sur `...`{.action} devant votre commande.
 * Sélectionnez `Annuler la commande`{.action}.

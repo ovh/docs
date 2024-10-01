@@ -53,7 +53,7 @@ Per OVHcloud il documento deve quindi contenere almeno le seguenti informazioni:
 
 ### Come inserire un numero di Purchase Order (PO) nello Spazio Cliente OVHcloud
 
-Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e, nella scheda `Dashboard`{.action}, clicca su `Visualizza i tuoi ordini`{.action}.
+Accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e, nella scheda `Dashboard`{.action}, clicca su `Visualizza i tuoi ordini`{.action}.
 
 ![Spazio Cliente](images/internalreference00.png){.thumbnail}
 

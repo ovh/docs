@@ -12,14 +12,14 @@ Panel klienta OVHcloud oferuje liczne opcje konfiguracji Twojej infrastruktury M
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i przejście do sekcji `Bare Metal Cloud`{.action}, a następnie `Managed Bare Metal`{.action}
+- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external} i przejście do sekcji `Bare Metal Cloud`{.action}, a następnie `Managed Bare Metal`{.action}
 - Posiadanie usługi [Managed Bare Metal](https://www.ovhcloud.com/pl/managed-bare-metal/){.external}
 
 ## W praktyce
 
 ### Karta ogólna
 
-W sekcji `Managed Bare Metal`{.action} znajdującej się w części `Bare Metal Cloud`{.action} [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} masz dostęp do ogólnego podglądu infrastruktury Managed Bare Metal:
+W sekcji `Managed Bare Metal`{.action} znajdującej się w części `Bare Metal Cloud`{.action} [Panelu klienta OVHcloud](/links/manager){.external} masz dostęp do ogólnego podglądu infrastruktury Managed Bare Metal:
 
 ![Informacje ogólne](images/controlpanel1-e.png){.thumbnail}
 

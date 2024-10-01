@@ -31,7 +31,7 @@ Identyfikator klienta to osobisty login, który otrzymujesz e-mailem podczas two
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
 - Dostęp do adresu e-mail podanego w profilu.
 - Wystarczające uprawnienia dotyczące danej usługi.
 - Posiadanie identyfikatora klienta nowego kontaktu (dla którego wprowadzasz zmianę).
@@ -46,7 +46,7 @@ Identyfikator klienta to osobisty login, który otrzymujesz e-mailem podczas two
 
 ### Dostęp do zarządzania kontaktami <a name="gestion_des_contacts"></a>
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij nazwę powiązaną z Twoim identyfikatorem klienta na pasku menu w prawym górnym rogu, a następnie kliknij pozycję `Zarządzanie kontaktami`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager){.external}, kliknij nazwę powiązaną z Twoim identyfikatorem klienta na pasku menu w prawym górnym rogu, a następnie kliknij pozycję `Zarządzanie kontaktami`{.action}.
 
 ![Contact management](images/hubcontacts.png){.thumbnail}
 
@@ -102,7 +102,7 @@ Jeśli jeden z kontaktów nie otrzymał e-maila, może to na przykład oznaczać
 
 ![Contact management](images/managing_contacts_06.png){.thumbnail}
 
-Jeśli tylko jeden kontakt zatwierdzi zmianę, pojawi się komunikat informujący, że wniosek wciąż oczekuje na zatwierdzenie przez drugi kontakt. Gdy jeden z kontaktów zatwierdzi wniosek, informacje wyświetlane w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} zaktualizują się w ciągu kilku minut.
+Jeśli tylko jeden kontakt zatwierdzi zmianę, pojawi się komunikat informujący, że wniosek wciąż oczekuje na zatwierdzenie przez drugi kontakt. Gdy jeden z kontaktów zatwierdzi wniosek, informacje wyświetlane w [Panelu klienta OVHcloud](/links/manager){.external} zaktualizują się w ciągu kilku minut.
 
 ![Contact management](images/managing_contacts_007.png){.thumbnail}
 
@@ -114,7 +114,7 @@ Właśnie zamówiłeś abonament OVHcloud umożliwiający utworzenie własnego [
 
 > [!warning]
 >
-> Odradzamy udzielenie jakiejkolwiek osobie trzeciej danych dostępowych do Twojego [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+> Odradzamy udzielenie jakiejkolwiek osobie trzeciej danych dostępowych do Twojego [Panelu klienta](/links/manager).
 >
 
 W takiej sytuacji daj swojemu dostawcy prawo do [kontaktu technicznego](#gestion_des_contacts) na Twoim hostingu OVHcloud. Dostęp do strony pozwoli mu na wykonanie operacji niezbędnych do uruchomienia strony (dodanie domeny lub subdomeny do strony podpiętej w opcji MultiSite, zainstalowanie modułu za 1 kliknięciem, zmiana hasła FTP lub bazy danych, utworzenie certyfikatu SSL, itp.).

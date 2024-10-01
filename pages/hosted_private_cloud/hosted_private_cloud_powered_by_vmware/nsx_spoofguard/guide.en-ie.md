@@ -13,7 +13,7 @@ SpoofGuard protects against IP spoofing by maintaining a reference table of VM n
 ## Requirements
 
 - being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-ie/enterprise/products/hosted-private-cloud/) to receive login credentials
-- a user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie))
+- a user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](/links/manager))
 - an enabled [Distributed Firewall](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx_configurer_le_firewall_distribue)
 
 ## Instructions

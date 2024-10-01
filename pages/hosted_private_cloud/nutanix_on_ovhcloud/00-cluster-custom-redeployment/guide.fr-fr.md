@@ -17,7 +17,7 @@ updated: 2022-12-13
 ## Prérequis
 
 - Disposer d'un Cluster Nutanix dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 - Être connecté sur la page des [API OVHcloud](https://api.ovh.com/)
 
 > [!warning]

@@ -6,7 +6,7 @@ updated: 2024-01-19
 
 ## Objective
 
-You want to cancel one or more OVHcloud services. This guide will show you how to cancel your subscription via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
+You want to cancel one or more OVHcloud services. This guide will show you how to cancel your subscription via the [OVHcloud Control Panel](/links/manager).
 
 -First read the section "[What happens when an OVHcloud service is cancelled?](#consequences)".
 -Follow the steps described in the section "[How do I cancel my subscription?](#terminate)".
@@ -36,7 +36,7 @@ Before cancelling a service, you must be **certain**:
 ## Requirements
 
 - You must be the "administrative contact" of the service to be cancelled (for more information, see [this guide](/pages/account_and_service_management/account_information/managing_contacts#definition)).
-- You have access to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
+- You have access to your [OVHcloud Control Panel](/links/manager).
 - Your OVHcloud services to be cancelled are active (not suspended due to payment default).
 
 ## Instructions
@@ -47,7 +47,7 @@ However, there are **special cases** that are detailed [below](#specific-cases) 
 
 ### How do I cancel my subscription? <a name="terminate"></a>
 
-To cancel your service subscription, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), click on your name in the top right-hand corner, then on the `Products and services`{.action} button.
+To cancel your service subscription, log in to your [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then on the `Products and services`{.action} button.
 
 ![products and services](images/products-services.png){.thumbnail}
 
@@ -131,7 +131,7 @@ You can also [view your current resource usage](/pages/public_cloud/compute/anal
 > You can revoke a cancellation request up to 24 hours before the subscription end date.
 >
 
-To abort a cancellation request, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), click on your name in the top right-hand corner, then the `Products and services`{.action} button.
+To abort a cancellation request, log in to your [OVHcloud Control Panel](/links/manager), click on your name in the top right-hand corner, then the `Products and services`{.action} button.
 
 Next, click the `...`{.action} button to the right of the service for which a cancellation request is being made, then `Stop cancellation of service`{.action}
 

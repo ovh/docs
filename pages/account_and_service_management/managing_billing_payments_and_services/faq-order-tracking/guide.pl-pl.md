@@ -14,11 +14,11 @@ Możesz opłacić zamówienie tylko po zalogowaniu się do konta klienta. Wybier
 
 #### Wskazówki i porady
 
-Zamknąłeś stronę z Twoim zamówieniem? Możesz je wyświetlić i opłacić, korzystając z [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), w sekcji `Moje zamówienia`{.action}.
+Zamknąłeś stronę z Twoim zamówieniem? Możesz je wyświetlić i opłacić, korzystając z [Panelu klienta OVHcloud](/links/manager), w sekcji `Moje zamówienia`{.action}.
 
 ### Jak mogę sprawdzić status mojej płatności?
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), następnie na pasku po prawej stronie dashboardu kliknij `Płatności`{.action}. Jeśli któraś z faktur oznaczona jest jako oczekująca na płatność, zaproponujemy Ci uregulowanie salda.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager), następnie na pasku po prawej stronie dashboardu kliknij `Płatności`{.action}. Jeśli któraś z faktur oznaczona jest jako oczekująca na płatność, zaproponujemy Ci uregulowanie salda.
 
 #### Wskazówki i porady
 

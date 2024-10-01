@@ -26,7 +26,7 @@ Nutanix Leap permet :
 ## Prérequis
 
 - Disposer de deux clusters Nutanix dans votre compte OVHcloud.
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 - Être connecté à vos clusters via **Prism Central**.
 - Avoir mis en place une interconnexion entre deux clusters, par exemple à l'aide de ces technologies :
     - via un VPN IPsec comme détaillé dans le guide « [Interconnexion IPsec entre deux sites](/pages/hosted_private_cloud/nutanix_on_ovhcloud/44-ipsec-interconnection) »;

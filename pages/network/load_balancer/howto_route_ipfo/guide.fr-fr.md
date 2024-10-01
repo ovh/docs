@@ -131,7 +131,7 @@ Toujours depuis l'[API OVHcloud](https://api.ovh.com){.external}, l'appel suivan
 
 #### Depuis l'espace client OVHcloud
 
-Vous pouvez définir vos Additional IPs dédiées depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Rendez-vous dans la partie `Bare metal Cloud`{.action} puis dans `Load Balancer`{.action}.
+Vous pouvez définir vos Additional IPs dédiées depuis l'[espace client OVHcloud](/links/manager){.external}. Rendez-vous dans la partie `Bare metal Cloud`{.action} puis dans `Load Balancer`{.action}.
 
 Après avoir sélectionné le Load Balancer que vous souhaitez modifier, créez un nouveau frontend, ou éditez-en un existant.
 

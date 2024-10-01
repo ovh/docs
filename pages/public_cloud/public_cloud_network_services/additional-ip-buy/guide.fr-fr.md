@@ -23,7 +23,7 @@ Ces adresses Additional IP ne pourront être migrées que vers les instances d'u
 
 ## Prérequis
 
-- Être connecté à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+- Être connecté à l’[espace client OVHcloud](/links/manager){.external}.
 - Disposer d'au moins une instance. Consultez à cet effet [le guide pour créer une instance depuis l'espace client](/pages/public_cloud/compute/public-cloud-first-steps).
 
 > [!warning]
@@ -32,7 +32,7 @@ Ces adresses Additional IP ne pourront être migrées que vers les instances d'u
 
 ## En pratique
 
-Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.
+Connectez-vous à l'[espace client OVHcloud](/links/manager), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.
 
 Dans le menu de gauche, ouvrez `Public IPs`{.action} dans `Network`.
 

@@ -14,7 +14,7 @@ Le but de cet outil est de simplifier les démarches en ligne en limitant les en
 ## Prérequis
 
 - Avoir créé son compte sur [Chorus Pro](https://chorus-pro.gouv.fr/cpp/utilisateur?execution=e1s1&lang=fr_FR){.external}.
-- Être une administration publique et l'avoir déclaré comme tel dans l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+- Être une administration publique et l'avoir déclaré comme tel dans l'[espace client OVH](/links/manager){.external}.
 
 ## En pratique
 

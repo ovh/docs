@@ -28,7 +28,7 @@ Diese Additional IPs können nur für Instanzen desselben Projekts migriert werd
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben mindestens eine [Public Cloud Instanz](/pages/public_cloud/compute/public-cloud-first-steps) in Ihrem Kunden-Account.
 
 > [!warning]
@@ -37,7 +37,7 @@ Diese Additional IPs können nur für Instanzen desselben Projekts migriert werd
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie im Bereich `Public Cloud`{.action} Ihr Projekt aus.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und wählen Sie im Bereich `Public Cloud`{.action} Ihr Projekt aus.
 
 Öffnen Sie im linken Menü `Public IPs`{.action} unter `Network`.
 

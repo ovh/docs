@@ -23,17 +23,17 @@ Wenn Wartungsarbeiten geplant sind, die Ihre Hosted Private Cloud Infrastruktur 
 
 - Sie haben eine E-Mail mit der Benachrichtigung über die Wartungsarbeiten erhalten, in der ausdrücklich darauf hingewiesen wird, dass Sie **das Datum der Wartungsarbeiten** ändern können. Andernfalls können die Arbeiten nicht verschoben werden.
 - Sie sind als administrativer oder technischer Kontakt für die [[VMware on OVHcloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) Infrastruktur eingetragen.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) oder auf die  [OVHcloud API ](https://eu.api.ovh.com/).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) oder auf die  [OVHcloud API ](https://eu.api.ovh.com/).
 
 ## In der praktischen Anwendung
 
 > [!success]
-> Benachrichtigungen von OVHcloud sind auch in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verfügbar.<br>
+> Benachrichtigungen von OVHcloud sind auch in Ihrem [OVHcloud Kundencenter](/links/manager) verfügbar.<br>
 > Klicken Sie oben rechts auf Ihren Namen und dann im Menü auf `E-Mails von OVHcloud`{.action}.
 
 ### Im OVHcloud Kundencenter
 
-Loggen Sie sich mit dem Administrator-Account in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein.
+Loggen Sie sich mit dem Administrator-Account in Ihrem [OVHcloud Kundencenter](/links/manager) ein.
 
 Wählen Sie im Bereich `Hosted Private Cloud`{.action} Ihren Dienst aus und klicken Sie auf den Tab `Operationen`{.action}. Wählen Sie im Drop-down-Menü `Verfügbar`{.action}, um die Tasks zu filtern.
 

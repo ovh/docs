@@ -40,7 +40,7 @@ Order your solution on the [website](https://www.ovh.com/ca/en/storage-solutions
 
 ### Managing the service in the OVHcloud Control Panel
 
-In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), switch to the "Hosted Private Cloud" section and open the menu `Platforms and services`{.action} in the left-hand navigation bar.
+In your [OVHcloud Control Panel](/links/manager), switch to the "Hosted Private Cloud" section and open the menu `Platforms and services`{.action} in the left-hand navigation bar.
 
 ![veeam cloud connect](images/veeam-cloud-connect-manager-start1.png){.thumbnail}
 

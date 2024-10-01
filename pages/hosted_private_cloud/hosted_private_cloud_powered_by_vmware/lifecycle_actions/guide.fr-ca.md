@@ -21,7 +21,7 @@ Dans ce guide, nous détaillons les actions à mener pour les sujets en cours :
 ## Prérequis
 
 - Posséder une offre [VMware on OVHcloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/){.external}.
-- Être connecté à [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- Être connecté à [l'espace client OVHcloud](/links/manager).
 - Être connecté aux [API OVHCloud](https://api.ovh.com/){.external}. Au besoin, consultez le guide « [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) ».
 - Avoir [créé ses identifiants pour l'API OVHCloud](/pages/manage_and_operate/api/first-steps){.external}.
 
@@ -175,7 +175,7 @@ Pour réaliser votre migration, vous pouvez suivre ce guide : [Migrer vers une n
 
 #### Récupérer les informations de votre PCC dans l'espace client OVHcloud
 
-Connectez-vous à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) avec un compte administrateur.
+Connectez-vous à l'[espace client OVHcloud](/links/manager) avec un compte administrateur.
 
 Cliquez sur l'onglet `Hosted Private Cloud`{.action} et sélectionnez votre service dans la liste `VMware`{.action}.
 

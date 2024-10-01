@@ -16,11 +16,11 @@ El NAS (Network Attached Storage) es un servidor de archivos conectado a una red
 
 - Disponer de una dirección IP asociada a un servicio de OVHcloud (Hosted Private Cloud, Servidor Dedicado, VPS, Instancia Public Cloud, etc.).
 - Tener un [NAS-HA](https://www.ovh.es/nas/)
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager){.external}.
 
 ## Procedimiento
 
-El NAS-HA se gestiona desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+El NAS-HA se gestiona desde el [área de cliente de OVHcloud](/links/manager){.external}.
 
 Una vez que se haya conectado, haga clic en `Bare Metal Cloud`{.action} y, seguidamente, en `NAS y CDN`{.action} en el menú de la izquierda. Haga clic en su servicio para acceder al menú de administración.
 
