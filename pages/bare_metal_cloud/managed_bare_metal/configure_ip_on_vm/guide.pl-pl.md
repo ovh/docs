@@ -1,6 +1,6 @@
 ---
-title: 'Configurar una IP en una máquina virtual (EN)'
-excerpt: 'Cómo configurar una IP en una máquina virtual'
+title: Configure an IP address on a virtual machine (EN)
+excerpt: Learn how to configure an IP address on a virtual machine
 updated: 2024-09-30
 ---
 
