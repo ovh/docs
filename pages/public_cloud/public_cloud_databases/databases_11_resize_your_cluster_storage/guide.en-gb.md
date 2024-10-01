@@ -15,7 +15,7 @@ Learn how to adjust the storage space of your cluster according to your needs.
 
 ## How to increase or decrease storage
 
-You can increase or decrease the storage of your service at any time using either the OVHcloud [API](https://api.ovh.com/console/) or the [Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+You can increase or decrease the storage of your service at any time using either the OVHcloud [API](https://api.ovh.com/console/) or the [Control Panel](/links/manager).
 
 > [!primary]
 >
@@ -26,7 +26,7 @@ You can increase or decrease the storage of your service at any time using eithe
 
 #### Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) 
+- Access to the [OVHcloud Control Panel](/links/manager) 
 - A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
 
 #### Instructions

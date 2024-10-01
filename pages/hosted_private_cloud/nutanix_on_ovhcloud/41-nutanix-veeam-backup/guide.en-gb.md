@@ -22,7 +22,7 @@ Veeam Backup is a backup software available for Nutanix.
 ## Requirements
 
 - A Nutanix cluster in your OVHcloud account.
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+- Access to the [OVHcloud Control Panel](/links/manager).
 - You must be connected to the cluster via **Prism Central**. 
 - **Veeam Backup & Replication** installed on a virtual machine in your Nutanix cluster via this procedure: [Setting up Veeam Backup & Replication](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication).
 - Knowing the public IP address used by **Veeam Backup** to access the internet.
@@ -265,7 +265,7 @@ proxy_user@NUTANIX-PROXY~$sudo /etc/init.d/networking restart
 
 ### Creating the Enterprise File Storage volume via the OVHcloud Control Panel
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). In the `Bare Metal Cloud`{.action} tab, go to `Storage and Backup`{.action}. Select `Enterprise File Storage`{.action}, then the service that will be used for the **Veeam Backup**.
+Log in to the [OVHcloud Control Panel](/links/manager). In the `Bare Metal Cloud`{.action} tab, go to `Storage and Backup`{.action}. Select `Enterprise File Storage`{.action}, then the service that will be used for the **Veeam Backup**.
 
 ![Create Enterprise Storage Volume 01](images/04-create-enterprise-storage-volume01.png){.thumbnail}
 

@@ -22,7 +22,7 @@ This guide will show you all the administration tools, other than the **Prism Ce
 ## Requirements
 
 - a Nutanix cluster in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- access to the [OVHcloud Control Panel](/links/manager)
 - For the **REST API**, you must have a virtual machine running Linux with a text editor to run the **curl** and **jq** commands.
 
 > [!primary]

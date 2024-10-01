@@ -17,7 +17,7 @@ updated: 2022-11-25
 ## Requirements
 
 - a Nutanix Cluster in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- access to the [OVHcloud Control Panel](/links/manager)
 - access to the [OVHcloud API page](https://api.ovh.com/)
 
 ## Overview of versions supported on an OVHcloud Nutanix cluster

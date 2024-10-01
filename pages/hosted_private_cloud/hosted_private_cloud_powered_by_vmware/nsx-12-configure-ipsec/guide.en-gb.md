@@ -17,7 +17,7 @@ updated: 2023-07-05
 ## Prerequisites
 
 - Being the administrative contact for the [VMware on OVHcloud infrastructure](https://www.ovhcloud.com/en/enterprise/products/hosted-private-cloud/), and having received the connection credentials.
-- An active user account with specific rights for NSX (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)).
+- An active user account with specific rights for NSX (created in the [OVHcloud Control Panel](/links/manager)).
 - Having **NSX** deployed with two configured segments in your NSX configuration. Refer to our guide on [NSX segment management](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-02-segment-management) for more information.
 
 ## Instructions

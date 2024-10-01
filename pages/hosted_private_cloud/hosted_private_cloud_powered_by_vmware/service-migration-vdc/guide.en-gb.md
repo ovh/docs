@@ -34,7 +34,7 @@ There are two aspects involved in this process:
 ## Requirements
 
 - A PCC infrastructure (PREMIER or SDDC)
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) (`VMware`{.action} in the `Hosted Private Cloud`{.action} section)
+- Access to the [OVHcloud Control Panel](/links/manager) (`VMware`{.action} in the `Hosted Private Cloud`{.action} section)
 - Access to the vSphere Control Panel
 
 ## Instructions

@@ -14,11 +14,11 @@ You can only pay for your order once you have logged in to your customer account
 
 #### Tips and tricks
 
-Have you left the order page? You can view your order and pay for it in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), via the `My orders`{.action} section.
+Have you left the order page? You can view your order and pay for it in the [OVHcloud Control Panel](/links/manager), via the `My orders`{.action} section.
 
 ### How do I check my payment status?
 
-First of all, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). Next, go to your dashboard and click on the `Invoices`{.action}  shortcut in the banner on the right. If an invoice is due, you will be offered the option to pay the balance directly in the dashboard.
+First of all, log in to the [OVHcloud Control Panel](/links/manager). Next, go to your dashboard and click on the `Invoices`{.action}  shortcut in the banner on the right. If an invoice is due, you will be offered the option to pay the balance directly in the dashboard.
 
 #### Tips and tricks
 

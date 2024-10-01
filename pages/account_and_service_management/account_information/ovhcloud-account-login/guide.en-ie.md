@@ -19,7 +19,7 @@ Your services are managed mainly via the OVHcloud Control Panel.
 
 ### Logging in to the OVHcloud Control Panel
 
-Go to the [OVHcloud login page](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, enter your customer ID (NIC handle) or primary email address, and password.
+Go to the [OVHcloud login page](/links/manager){.external}, enter your customer ID (NIC handle) or primary email address, and password.
 
 ![NIC handle](images/log-in.png){.thumbnail}
 

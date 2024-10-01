@@ -13,7 +13,7 @@ When you configure the Content Delivery Network (CDN) for the first time, you ne
 ## Requirements
 
 - an [OVH Content Delivery Network (CDN)](https://www.ovh.co.uk/cdn/){.external} solution
-- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
+- access to the [OVH Control Panel](/links/manager){.external}
 - the permissions needed to manage your domain’s DNS zone
  
  
@@ -24,7 +24,7 @@ When you configure the Content Delivery Network (CDN) for the first time, you ne
 
 The first step of this configuration involves adding your subdomain to the CDN, so that it accepts HTTP(S) requests.
 
-To do this, go to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, click on the `Dedicated`{.action} tab, then go to `NAS and CDN`{.action}.
+To do this, go to the [OVH Control Panel](/links/manager){.external}, click on the `Dedicated`{.action} tab, then go to `NAS and CDN`{.action}.
 
 Next, click `Add a domain to the CDN`{.action}.
 

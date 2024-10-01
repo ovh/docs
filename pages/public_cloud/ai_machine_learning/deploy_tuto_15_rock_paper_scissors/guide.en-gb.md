@@ -12,7 +12,7 @@ In order to do this, you will use [Streamlit](https://streamlit.io/), a Python f
 
 ## Requirements
 
-- You have access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+- You have access to the [OVHcloud Control Panel](/links/manager).
 - You have created an AI Deploy project inside a Public Cloud project.
 - You have created a [user for AI Deploy](/pages/public_cloud/ai_machine_learning/gi_01_manage_users).
 - You have [Docker](https://www.docker.com/get-started) installed on your machine.

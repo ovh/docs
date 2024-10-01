@@ -18,13 +18,13 @@ To configure your Hosted Private Cloud for [healthcare data hosting](https://www
 >
 
 - a Private Cloud infrastructure in version 6.0 or higher
-- access to the `Hosted Private Cloud`{.action} section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- access to the `Hosted Private Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
 ### Ensure that the security option is enabled
 
-In order to adapt your Private Cloud for this certification, one of the corresponding security options must be enabled. To verify this, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), and make sure you are in the “Server” section. Click `Private Cloud`{.action} and select the service concerned. 
+In order to adapt your Private Cloud for this certification, one of the corresponding security options must be enabled. To verify this, log in to the [OVHcloud Control Panel](/links/manager), and make sure you are in the “Server” section. Click `Private Cloud`{.action} and select the service concerned. 
 
 In the window that appears, make sure you are on the `General information`{.action} tab. Then check the activation status of the security options in the "Options and compliance" section. 
 

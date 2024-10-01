@@ -12,7 +12,7 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+- Access to the [OVHcloud Control Panel](/links/manager).
 - A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account.
 - A PostgreSQL database running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
 - [Configure your PostgreSQL instance](/pages/public_cloud/public_cloud_databases/postgresql_07_prepare_for_incoming_connections) to accept incoming connections
@@ -45,7 +45,7 @@ It makes sense to have enough connections so that each CPU core on the server ha
 
 ### Create a connection pool
 
-To create a new connection pool, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and open your `Public Cloud`{.action} project.
+To create a new connection pool, log in to your [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project.
 
 Click on `Databases`{.action} in the left-hand navigation bar and select your PostgreSQL instance, then select the `Pools`{.action} tab.
 Click on `Add a pool`{.action}, and fill the form.

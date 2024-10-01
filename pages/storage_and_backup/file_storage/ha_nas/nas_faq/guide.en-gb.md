@@ -24,7 +24,7 @@ HA-NAS enables data to be centralised across different Linux workloads, as well 
 
 ### Can I manage my HA-NAS via a configuration panel?
 
-Yes, you can access it from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) by going to the `Bare Metal Cloud`{.action} section, then `NAS and CDN`{.action}.
+Yes, you can access it from your [OVHcloud Control Panel](/links/manager) by going to the `Bare Metal Cloud`{.action} section, then `NAS and CDN`{.action}.
 
 ## Availability
 
@@ -143,7 +143,7 @@ You can manage the frequency of snapshots from your OVHcloud Control Panel. You 
 - once every 3 days
 - once every week
 
-You can also create manual snapshots at any time, save them without any time limit, or delete them. This feature is available in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) or via the following [API](https://api.ovh.com/) call:
+You can also create manual snapshots at any time, save them without any time limit, or delete them. This feature is available in your [OVHcloud Control Panel](/links/manager) or via the following [API](https://api.ovh.com/) call:
 
 > [!api]
 >

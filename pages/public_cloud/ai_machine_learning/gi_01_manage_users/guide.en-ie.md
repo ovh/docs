@@ -13,7 +13,7 @@ The **users** of the AI Training platform are simply your Public Cloud users tha
 ## Requirements
 
 - A **Public cloud** project
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 

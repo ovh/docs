@@ -24,7 +24,7 @@ These Additional IP addresses can only be migrated to instances in the same proj
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
+- Access to the [OVHcloud Control Panel](/links/manager){.external}
 - A [Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps) in your Public Cloud project
 
 > [!warning]
@@ -33,7 +33,7 @@ These Additional IP addresses can only be migrated to instances in the same proj
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and open your `Public Cloud`{.action} project.
+Log in to the [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project.
 
 In the left-hand menu, open `Public IPs`{.action} under `Network`.
 

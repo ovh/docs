@@ -19,7 +19,7 @@ Being able to migrate IP addresses generally limits or removes the possibility t
 
 - At least two [Public Cloud instances](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
 - An Additional IP address
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
 > This feature is currently not available for Metal instances.
@@ -32,7 +32,7 @@ Being able to migrate IP addresses generally limits or removes the possibility t
 > An Additional IP cannot be moved between different zones. For example, an IP located in the SBG data centre can be moved to GRA or RBX, but cannot be moved to BHS.
 >
 
-In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), select your project from the `Public Cloud`{.action} section.
+In the [OVHcloud Control Panel](/links/manager), select your project from the `Public Cloud`{.action} section.
 
 In the left-hand menu, open `Public IPs`{.action} under `Network`. Click on the `Additional IP`{.action} tab.
 

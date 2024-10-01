@@ -17,7 +17,7 @@ updated: 2022-11-10
 ## Requirements
 
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
-- A user account with access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- A user account with access to the [OVHcloud Control Panel](/links/manager)
 - A user account with access to vSphere
 - You need to have the **Tanzu Kubernetes GRID** administration cluster installed, using the [Install Tanzu Kubernetes Grid](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/tanzu_tkgm_02installation) guide.
 - A VLAN with Internet access and a DHCP server
