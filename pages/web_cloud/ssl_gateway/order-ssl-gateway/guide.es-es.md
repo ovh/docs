@@ -32,7 +32,7 @@ Para contratar nuestra solución SSL Gateway, [haga clic aquí](/links/web/ssl-g
 
 Seleccione su producto y haga clic en `Contratar`{.action}.
 
-![order ssl gateway](images/configure-my-ssl-gateway.png){.thumbnail}
+![order ssl gateway](/pages/assets/screens/website/order/configure-my-ssl-gateway.png){.thumbnail}
 
 A continuación, introduzca el nombre de dominio o subdominio en el formulario `Busque su dominio`{.action} y haga clic en el icono con forma de lupa situado a la derecha.
 

@@ -32,7 +32,7 @@ Per ordinare la soluzione SSL Gateway, [clicca qui](/links/web/ssl-gateway).
 
 Scegli la tua offerta e clicca su `Ordina adesso`{.action}.
 
-![order ssl gateway](images/configure-my-ssl-gateway.png){.thumbnail}
+![order ssl gateway](/pages/assets/screens/website/order/configure-my-ssl-gateway.png){.thumbnail}
 
 Nella nuova pagina, inserisci nel form `Cerca il tuo dominio`{.action} il dominio o sottodominio interessato e clicca sull’icona a forma di lente di ingrandimento sulla destra.
 

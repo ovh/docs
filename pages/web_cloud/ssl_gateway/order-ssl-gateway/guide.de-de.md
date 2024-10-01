@@ -32,7 +32,7 @@ Um unser SSL Gateway Angebot zu bestellen, [klicken Sie hier](/links/web/ssl-gat
 
 Wählen Sie Ihr Angebot aus und klicken Sie auf `Jetzt bestellen`{.action}.
 
-![order ssl gateway](images/configure-my-ssl-gateway.png){.thumbnail}
+![order ssl gateway](/pages/assets/screens/website/order/configure-my-ssl-gateway.png){.thumbnail}
 
 Geben Sie auf der neu geöffneten Seite im Formular `Domainnamen suchen`{.action} die betreffende Domain oder Subdomain ein und klicken Sie dann auf das Lupensymbol rechts.
 

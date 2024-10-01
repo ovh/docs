@@ -28,7 +28,7 @@ To order our SSL Gateway solution, [click here](/links/web/ssl-gateway).
 
 Choose your solution, then click `Order now`{.action}.
 
-![order ssl gateway](images/configure-my-ssl-gateway.png){.thumbnail}
+![order ssl gateway](/pages/assets/screens/website/order/configure-my-ssl-gateway.png){.thumbnail}
 
 On the new page that pops up, enter the domain name or subdomain concerned in the `Search for your domain name`{.action} form, then click on the magnifying glass icon on the right.
 

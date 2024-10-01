@@ -32,7 +32,7 @@ Para encomendar a nossa oferta SSL Gateway, [clique aqui](/links/web/ssl-gateway
 
 Escolha a sua oferta e depois clique em `Encomendar agora`{.action}.
 
-![order ssl gateway](images/configure-my-ssl-gateway.png){.thumbnail}
+![order ssl gateway](/pages/assets/screens/website/order/configure-my-ssl-gateway.png){.thumbnail}
 
 Na nova página que se abrir, indique no formulário `Procure o seu nome de domínio`{.action} o nome de domínio ou subdomínio em causa e clique no ícone em forma de lupa à direita.
 
