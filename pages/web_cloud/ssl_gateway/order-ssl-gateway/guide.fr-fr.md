@@ -26,9 +26,9 @@ L'offre SSL Gateway est conçue pour vous faire bénéficier d'un certificat SSL
 
 Pour commander notre offre SSL Gateway, [cliquez ici](/links/web/ssl-gateway).
 
-Choisissez votre offre, puis cliquez sur `Activer maintenant`{.action}.
+Choisissez votre offre, puis cliquez sur `Commander maintenant`{.action}.
 
-![order ssl gateway](images/configure-my-ssl-gateway.png)
+![order ssl gateway](images/configure-my-ssl-gateway.png){.thumbnail}
 
 Sur la nouvelle page qui s'affiche, indiquez dans le formulaire `Rechercher votre nom de domaine`{.action} le nom de domaine ou le sous-domaine concerné, puis cliquez sur l'icône en forme de loupe sur la droite.
 
