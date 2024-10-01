@@ -144,7 +144,6 @@ export GOVC_DATACENTER=<Nom du datacenter par défaut au sens VMWare du terme>
 export GOVC_USERNAME=<Utilisateur vmware>
 export GOVC_PASSWORD=<Mot de passe>
 export GOVC_URL=<IP ou hostname du vsphere>
-export GOVC_INSECURE=1 # Ignorer les problèmes de certificat, utile en réseau local
 export GOVC_DATASTORE=<Datastore par défaut>
 
 # Si besoin d'utiliser un proxy réseau
