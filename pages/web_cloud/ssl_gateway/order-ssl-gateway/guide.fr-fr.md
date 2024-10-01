@@ -43,7 +43,7 @@ Notre système va ensuite détecter automatiquement la ou les adresses IP de vot
 
 > [!warning]
 >
-> - Si vous disposez de plusieurs adresses IP pour votre site web, vous pourrez n'en choisir qu'une seule lors de la commande.
+> - Si vous disposez de plusieurs adresses IP pour votre site web, vous ne pourrez choisir qu'une seule IP lors de la commande.
 > - Si vous disposez de l'offre Advanced, vous pourrez par la suite ajouter jusqu'à 2 IPs supplémentaires depuis votre [espace client OVHcloud](/links/manager).
 >
 
