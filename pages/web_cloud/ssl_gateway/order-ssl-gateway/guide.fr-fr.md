@@ -10,7 +10,7 @@ L'offre SSL Gateway est conçue pour vous faire bénéficier d'un certificat SSL
 
 > [!warning]
 >
-> Les SSL Gateway sont incompatibles avec les offres d'[hébergement mutualisés OVHcloud](/links/web/hosting). Si vous souhaitez bénéficier d'un certificat SSL pour ce type d'offre, consultez notre guide « [Gérer un certificat SSL sur son hébergement web](/pages/web_cloud/web_hosting/ssl_on_webhosting) ».
+> Les SSL Gateways sont incompatibles avec les offres d'[hébergements mutualisés OVHcloud](/links/web/hosting). Si vous souhaitez bénéficier d'un certificat SSL pour ce type d'offre, consultez notre guide « [Gérer un certificat SSL sur son hébergement web](/pages/web_cloud/web_hosting/ssl_on_webhosting) ».
 >
 
 **Découvrer comment commander un SSL Gateway.**
