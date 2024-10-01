@@ -26,7 +26,8 @@ Find more information on our [dedicated Local Zone Compute page](/links/public-c
 | Boot/Start | Yes |
 | Stop | Yes |
 | Block Storage | Yes |
-| Instance Backups | No |
+| Instance Backups | Yes |
+| Automatic Backups | No |
 | Volume Snapshots | No |
 | Volume Backups | No |
 | Object Storage | No |
