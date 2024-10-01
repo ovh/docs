@@ -1,5 +1,5 @@
 ---
-title: 'Configurar una cuenta de correo electrónico en Thunderbird para Windows'
+title: 'MX Plan - Configurar una cuenta de correo electrónico en Thunderbird para Windows'
 excerpt: 'Aquí encontrará la información necesaria para configurar su dirección de correo electrónico en Thunderbird'
 updated: 2024-10-01
 ---

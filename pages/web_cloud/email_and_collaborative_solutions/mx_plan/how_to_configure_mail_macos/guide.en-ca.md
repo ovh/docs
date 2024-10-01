@@ -1,10 +1,10 @@
 ---
-title: 'Configuring an email address on the macOS Mail app'
+title: 'MX Plan - Configure your email account on Mail for macOS'
 updated: 2024-10-01
 ---
 
 ---
-title: 'Configuring an email address on the macOS Mail app'
+title: 'MX Plan - Configure your email account on Mail for macOS'
 ---
 
 ## Objective

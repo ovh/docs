@@ -1,5 +1,5 @@
 ---
-title: 'Configuring an email address on the macOS Mail app'
+title: 'MX Plan - Configure your email account on Mail for macOS'
 excerpt: 'Find out how to configure an email address on the Mail app, for the following macOS operating systems - El Capitan, Sierra and High Sierra'
 updated: 2024-10-01
 ---

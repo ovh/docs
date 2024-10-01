@@ -1,5 +1,5 @@
 ---
-title: 'Configurer son adresse e-mail sur Thunderbird pour Windows'
+title: 'MX Plan - Configurer son adresse e-mail sur Thunderbird pour Windows'
 excerpt: 'Retrouvez ici les informations pour configurer votre adresse e-mail sur Thunderbird.'
 updated: 2024-10-01
 ---

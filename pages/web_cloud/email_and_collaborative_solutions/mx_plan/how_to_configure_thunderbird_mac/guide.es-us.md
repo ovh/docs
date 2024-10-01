@@ -1,5 +1,5 @@
 ---
-title: 'Configurar una cuenta de correo electrónico en Thunderbird para macOS'
+title: 'MX Plan - Configure su cuenta de correo electrónico en Thunderbird para macOS'
 excerpt: 'Aquí encontrará la información necesaria para configurar su dirección de correo electrónico en Thunderbird'
 updated: 2024-10-01
 ---

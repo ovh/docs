@@ -1,5 +1,5 @@
 ---
-title: 'Configurar una cuenta de correo electrónico en iPhone o iPad'
+title: "MX Plan - Configure su cuenta de correo electrónico en Mail para iPhone y iPad"
 excerpt: 'Cómo configurar una cuenta de correo electrónico en un iPhone o iPad'
 updated: 2024-10-01
 ---
