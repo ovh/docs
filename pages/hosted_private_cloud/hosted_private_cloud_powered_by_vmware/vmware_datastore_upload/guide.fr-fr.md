@@ -1,8 +1,22 @@
 ---
 title: "Téléverser des fichiers dans le datastore VMware vSphere on OVHcloud"
-excerpt: "Découvrez comment utiliser l'outil de téléversement de fichiers du datastore afin de pouvoir importer des données dans votre environnement VMware vSphere on OVHcloud managé"
+excerpt: "Découvrez comment utiliser l'outil de téléversement de fichiers du datastore et avec govc afin de pouvoir importer des données dans votre environnement VMware vSphere on OVHcloud managé"
 updated: 2024-10-01
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objectif
 
