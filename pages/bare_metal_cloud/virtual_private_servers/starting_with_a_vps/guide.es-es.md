@@ -355,7 +355,7 @@ Una vez configurado el VPS, puede proteger su dominio y su sitio web. Para ello,
 
 Puede instalar el certificado SSL directamente en el VPS. Consulte la documentación oficial de su distribución VPS.
 
-Para un proceso más automatizado, OVHcloud también ofrece la solución SSL Gateway. Para más información, consulte la [página del producto](https://www.ovh.es/ssl-gateway/) o la [guía](/products/web-cloud-ssl-gateway).
+Para un proceso más automatizado, OVHcloud también ofrece la solución SSL Gateway. Para más información, consulte la [página del producto](/links/web/ssl-gateway) o la [guía](/products/web-cloud-ssl-gateway).
 
 ## Más información
 
@@ -365,4 +365,4 @@ Para un proceso más automatizado, OVHcloud también ofrece la solución SSL Gat
 
 [Proteger un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
 
-Únase a nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).
