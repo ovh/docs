@@ -127,9 +127,9 @@ En plus du client API vSphere, ce dépôt comprend :
 - [vcsim](https://github.com/vmware/govmomi/blob/main/vcsim/README.md) - vSphere API mock framework
 - [toolbox](https://github.com/vmware/govmomi/blob/main/toolbox/README.md) - Framework des outils invités des VM
 
-**Installation et configuration**
+#### Installation et configuration
 
-Sur Linux
+**Sur Linux**
 
 Avec le binaire :
 
@@ -157,11 +157,11 @@ Voici par exemple pour Linux :
 ```bash
 # govc.env
 export GOVC_DATACENTER=<Nom du datacenter par défaut au sens VMWare du terme>
-export GOVC_USERNAME=<Utilisateur vmware>
-export GOVC_PASSWORD=<Mot de passe>
-export GOVC_URL=<IP ou hostname du vsphere>
+export GOVC_USERNAME=<Utilisateur local vmware>
+export GOVC_PASSWORD=<Mot de passe de l'utilisateur local VMware>
+export GOVC_URL=<IP ou hostname du vsphere> // Exemple : pcc-XXX-XX-XX-XX.ovh.XX
 export GOVC_INSECURE=1 # Ignorer les problèmes de certificat, utile en réseau local
-export GOVC_DATASTORE=<Datastore par défaut>
+export GOVC_DATASTORE=<Datastore par défaut> // Exemple : ssd-XXXXXX / storageLocal_XXX-XX-XX-XX / NFS_XXXXXX
 
 # Si besoin d'utiliser un proxy réseau
 # export HTTP_PROXY=http://XXX.XX.X.X:XXXXX
@@ -181,7 +181,7 @@ govc datastore.ls -dc=Datacenter2 -ds=Datastore1 -debug=true
 
 À noter que si vous utilisez la commande debug (le “=true” est optionnel, s’agissant d’un flag Go), un dossier caché .govmomi/debug sera créé avec des logs vous permettant de tracer votre problème.
 
-**Usage**
+#### Usage
 
 Nous allons vous exposer ici quelques commandes simples puis quelques examples d’applications concrètes.
 
