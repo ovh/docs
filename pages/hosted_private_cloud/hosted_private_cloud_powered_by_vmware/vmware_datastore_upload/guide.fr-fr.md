@@ -212,7 +212,7 @@ govc find vm -type m -name *prod*
 govc find . -type h -hardware.cpuInfo.numCpuCores 16
 ```
 
-**Lister les informations des Datastores**
+**Lister/téléverser/créer des dossiers dans un Datastore**
 
 Notamment avec l’usage des disques vous pouvez explorer le datastore spécifié en `envvar`, créer un dossier, y envoyer un fichier local, puis un fichier en `stdin`.
 
@@ -261,6 +261,284 @@ govc host.esxcli -host=$host network ip interface ipv4 get
 ```
 
 Les options disponibles pour esxcli sont accessibles [ici](https://pubs.vmware.com/vsphere-50/index.jsp?topic=%2Fcom.vmware.vcli.ref.doc_50%2Fesxcli_software.html)
+
+**Téléverser des fichiers**
+
+Voici un exemple de téléversement d'image iso avec `govc` :
+
+```bash
+govc datastore.upload image.iso dossier-isos/image.iso
+```
+
+**Listing complet des commandes govc**
+
+/// details | Usage of govc
+
+```bash
+Usage of govc:
+  about
+  about.cert
+  cluster.add
+  cluster.change
+  cluster.create
+  cluster.group.change
+  cluster.group.create
+  cluster.group.ls
+  cluster.group.remove
+  cluster.override.change
+  cluster.override.info
+  cluster.override.remove
+  cluster.rule.change
+  cluster.rule.create
+  cluster.rule.info
+  cluster.rule.ls
+  cluster.rule.remove
+  datacenter.create
+  datacenter.info
+  datastore.cluster.change
+  datastore.cluster.info
+  datastore.cp
+  datastore.create
+  datastore.disk.create
+  datastore.disk.inflate
+  datastore.disk.info
+  datastore.disk.shrink
+  datastore.download
+  datastore.info
+  datastore.ls
+  datastore.maintenance.enter
+  datastore.maintenance.exit
+  datastore.mkdir
+  datastore.mv
+  datastore.remove
+  datastore.rm
+  datastore.tail
+  datastore.upload
+  datastore.vsan.dom.ls
+  datastore.vsan.dom.rm
+  device.boot
+  device.cdrom.add
+  device.cdrom.eject
+  device.cdrom.insert
+  device.connect
+  device.disconnect
+  device.floppy.add
+  device.floppy.eject
+  device.floppy.insert
+  device.info
+  device.ls
+  device.remove
+  device.scsi.add
+  device.serial.add
+  device.serial.connect
+  device.serial.disconnect
+  device.usb.add
+  disk.create
+  disk.ls
+  disk.register
+  disk.rm
+  disk.snapshot.create
+  disk.snapshot.ls
+  disk.snapshot.rm
+  disk.tags.attach
+  disk.tags.detach
+  dvs.add
+  dvs.change
+  dvs.create
+  dvs.portgroup.add
+  dvs.portgroup.change
+  dvs.portgroup.info
+  env
+  events
+  export.ovf
+  extension.info
+  extension.register
+  extension.setcert
+  extension.unregister
+  fields.add
+  fields.info
+  fields.ls
+  fields.rename
+  fields.rm
+  fields.set
+  find
+  firewall.ruleset.find
+  folder.create
+  folder.info
+  guest.chmod
+  guest.chown
+  guest.df
+  guest.download
+  guest.getenv
+  guest.kill
+  guest.ls
+  guest.mkdir
+  guest.mktemp
+  guest.mv
+  guest.ps
+  guest.rm
+  guest.rmdir
+  guest.run
+  guest.start
+  guest.touch
+  guest.upload
+  host.account.create
+  host.account.remove
+  host.account.update
+  host.add
+  host.autostart.add
+  host.autostart.configure
+  host.autostart.info
+  host.autostart.remove
+  host.cert.csr
+  host.cert.import
+  host.cert.info
+  host.date.change
+  host.date.info
+  host.disconnect
+  host.esxcli
+  host.info
+  host.maintenance.enter
+  host.maintenance.exit
+  host.option.ls
+  host.option.set
+  host.portgroup.add
+  host.portgroup.change
+  host.portgroup.info
+  host.portgroup.remove
+  host.reconnect
+  host.remove
+  host.service
+  host.service.ls
+  host.shutdown
+  host.storage.info
+  host.storage.mark
+  host.storage.partition
+  host.vnic.change
+  host.vnic.info
+  host.vnic.service
+  host.vswitch.add
+  host.vswitch.info
+  host.vswitch.remove
+  import.ova
+  import.ovf
+  import.spec
+  import.vmdk
+  library.clone
+  library.create
+  library.deploy
+  library.export
+  library.import
+  library.info
+  library.ls
+  library.rm
+  library.session.ls
+  library.session.rm
+  library.sync
+  license.add
+  license.assign
+  license.assigned.ls
+  license.decode
+  license.label.set
+  license.ls
+  license.remove
+  logs
+  logs.download
+  logs.ls
+  ls
+  metric.change
+  metric.info
+  metric.interval.change
+  metric.interval.info
+  metric.ls
+  metric.reset
+  metric.sample
+  object.collect
+  object.destroy
+  object.method
+  object.mv
+  object.reload
+  object.rename
+  object.save
+  option.ls
+  option.set
+  permissions.ls
+  permissions.remove
+  permissions.set
+  pool.change
+  pool.create
+  pool.destroy
+  pool.info
+  role.create
+  role.ls
+  role.remove
+  role.update
+  role.usage
+  session.login
+  session.logout
+  session.ls
+  session.rm
+  snapshot.create
+  snapshot.remove
+  snapshot.revert
+  snapshot.tree
+  sso.group.create
+  sso.group.ls
+  sso.group.rm
+  sso.group.update
+  sso.service.ls
+  sso.user.create
+  sso.user.id
+  sso.user.ls
+  sso.user.rm
+  sso.user.update
+  tags.attach
+  tags.attached.ls
+  tags.category.create
+  tags.category.info
+  tags.category.ls
+  tags.category.rm
+  tags.category.update
+  tags.create
+  tags.detach
+  tags.info
+  tags.ls
+  tags.rm
+  tags.update
+  task.cancel
+  tasks
+  vapp.destroy
+  vapp.power
+  version
+  vm.change
+  vm.clone
+  vm.console
+  vm.create
+  vm.customize
+  vm.destroy
+  vm.disk.attach
+  vm.disk.change
+  vm.disk.create
+  vm.guest.tools
+  vm.info
+  vm.ip
+  vm.keystrokes
+  vm.markastemplate
+  vm.markasvm
+  vm.migrate
+  vm.network.add
+  vm.network.change
+  vm.option.info
+  vm.power
+  vm.question
+  vm.rdm.attach
+  vm.rdm.ls
+  vm.register
+  vm.unregister
+  vm.upgrade
+  vm.vnc
+```
+///
 
 ## Aller plus loin
 
