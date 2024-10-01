@@ -166,15 +166,15 @@ Pour les installations alternatives, consultez le dépot Git `Govc` VMware offic
 
 Le programme fournit un vaste choix d’arguments pour définir les conditions d’accès à l’API (par exemple son URL, l’utilisateur/mot de passe à utiliser, etc…) mais nous vous conseillons bien sûr d’utiliser des variables d’environnement pour gérer plus efficacement vos clusters, surtout si vous êtes amenés à vous connecter à plusieurs APIs. Au lieu de les définir à la volée, il vaut mieux les placer dans un fichier pour réutilisation lors d’une autre session.
 
-| **Variables d'environnements** |           **Standard**            |            **Premium (vSAN)**             | **Comments**                                                     | 
-|:------------------------------:|:---------------------------------:|:-----------------------------------------:|:-----------------------------------------------------------------|
-|       `GOVC_DATACENTER`        | `pcc-XXX-XX-XX-XX_datacenterXXXX` |     `pcc-XXX-XX-XX-XX_datacenterXXXX`     | Nom du datacenter par défaut au sens VMWare du terme.            | 
-|        `GOVC_USERNAME`         |              `jsnow`              |                  `jsnow`                  | Utilisateur local de connexion vSphere.                          |
-|        `GOVC_PASSWORD`         |         `John_passwordXX`         |             `John_passwordXX`             | Mot de passe de connexion de l'utilisateur local vSphere VMware. | 
-|           `GOVC_URL`           |     `pcc-XXX-XX-XX-XX.ovh.XX`     |         `pcc-XXX-XX-XX-XX.ovh.XX`         | IP ou hostname du vsphere.                                       |
-|        `GOVC_DATASTORE`        |     `ssd-XXXXXX / NFS-XXXXXX`     | `ssd-XXXXXX / NFS-XXXXXX / vsanDatastore` | Datastore utilisé par défaut.                                    |
-|          `HTTP_PROXY`          |     `http://XXX.XX.X.X:XXXXX`     |         `http://XXX.XX.X.X:XXXXX`         | L'url de votre server proxy sans https.                          |
-|         `HTTPS_PROXY`          |    `https://XXX.XX.X.X:XXXXX`     |        `https://XXX.XX.X.X:XXXXX`         | L'url de votre server proxy avec https.                          |
+| **Variables d'environnements** |           **Standard**            |            **Premium (vSAN)**             | **Comments**                                                                      | 
+|:------------------------------:|:---------------------------------:|:-----------------------------------------:|:----------------------------------------------------------------------------------|
+|       `GOVC_DATACENTER`        | `pcc-XXX-XX-XX-XX_datacenterXXXX` |     `pcc-XXX-XX-XX-XX_datacenterXXXX`     | - Nom du datacenter par défaut au sens VMWare du terme.                           | 
+|        `GOVC_USERNAME`         |              `jsnow`              |                  `jsnow`                  | - L'utilisateur local de connexion VMware vSphere on OVHcloud.                    |
+|        `GOVC_PASSWORD`         |         `John_passwordXX`         |             `John_passwordXX`             | - Le mot de passe de connexion de l'utilisateur local VMware vSphere on OVHcloud. | 
+|           `GOVC_URL`           |     `pcc-XXX-XX-XX-XX.ovh.XX`     |         `pcc-XXX-XX-XX-XX.ovh.XX`         | - IP ou hostname de l'environnement VMware vsphere on OVHcloud.                   |
+|        `GOVC_DATASTORE`        |     `ssd-XXXXXX / NFS-XXXXXX`     | `ssd-XXXXXX / NFS-XXXXXX / vsanDatastore` | - Datastore utilisé par défaut au sens VMWare du terme.                           |
+|          `HTTP_PROXY`          |     `http://XXX.XX.X.X:XXXXX`     |         `http://XXX.XX.X.X:XXXXX`         | - L'url de votre server proxy sans https.                                         |
+|         `HTTPS_PROXY`          |    `https://XXX.XX.X.X:XXXXX`     |        `https://XXX.XX.X.X:XXXXX`         | - L'url de votre server proxy avec https.                                         |
 
 Voici par exemple pour Linux :
 
