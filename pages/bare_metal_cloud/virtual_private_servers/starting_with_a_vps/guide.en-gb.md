@@ -1,7 +1,7 @@
 ---
 title: How to get started with a VPS
 excerpt: Find out how to manage a VPS in the OVHcloud Control Panel and the first steps of using a VPS, including remote connections and security measures
-updated: 2024-09-27
+updated: 2024-10-01
 ---
 
 ## Objective
@@ -21,8 +21,9 @@ A **V**irtual **P**rivate **S**erver (VPS) is a virtualized dedicated server tha
 
 - [Control Panel interface](#controlpanel)
 - [VPS functions available in the "Home" tab](#hometab)
-- [Connecting to your VPS (GNU/Linux-based OS)](#connect)
-- [Connecting to your Windows VPS](#winconnect)
+- [Logging in to your VPS](#connect)
+    - [GNU/Linux distribution](#linuxconnect)
+    - [Windows OS](#winconnect)
 - [Securing your VPS](#secure)
 - [Attaching a domain name](#domain)
 
@@ -43,11 +44,11 @@ Below, you will find basic information on your VPS, and the status of the servic
 > [!tabs]
 > Name
 >>
->> To customize the name of your VPS, click the `...`{.action} button, then select `Change name`{.action}. This feature is useful for easy navigation in the OVHcloud Control Panel when managing multiple VPS services. However, the internal name of the service remains in the format *vps-XXXXX.vps.ovh.net*.
+>> If you click on the `...`{.action} button and then select `Change name`{.action}, you can enter a distinguishing name for this VPS. This is useful for easier Control Panel navigation in case you are managing multiple VPS services but it has no impact otherwise. However, the internal name of the service remains in the format *vps-XXXXX.vps.ovh.net*.
 >>
 > Boot
 >>
->> The boot mode indicated is either in **normal mode**, where the server loads the installed operating system (*LOCAL*), or in **rescue mode**, provided by OVHcloud in case of troubleshooting. Use the `...`{.action} button to [reboot the VPS](#reboot-current-range) or boot it in rescue mode if necessary.
+>> The boot mode indicated is either the **normal mode**, in which the system loads the installed operating system (*LOCAL*) or the **rescue mode** provided by OVHcloud for troubleshooting purposes. Use the `...`{.action} button to [restart the VPS](#reboot-current-range) or boot it into rescue mode.
 >>
 >> You can find further information in our [rescue mode guide](/pages/bare_metal_cloud/virtual_private_servers/rescue).
 >>
@@ -57,18 +58,18 @@ Below, you will find basic information on your VPS, and the status of the servic
 >>
 >> > [!warning]
 >> >
->> > A reinstallation will erase all data currently hosted on the VPS (with the exception of additional disks).
+>> > A reinstallation will erase all data currently hosted on the VPS (additional disks excluded).
 >>
 >> > [!primary]
 >> >
 >> > If you have ordered a **Windows** VPS, you can only choose a Windows OS for reinstallation. Correspondingly, if Windows was not selected in the order process, it cannot be installed after the VPS is delivered.
 >>
 >>
->> Once the system is installed, you are responsible for implementing the security updates. You can find more information [below](#reinstallvps), as well as in our guide on [Securing a VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps).
+>> Once an operating system is installed, you assume the responsibility to implement security updates. You can find further information [below](#reinstallvps) and in our guide on [how to secure a VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps).
 >> 
 > Zone / Location
 >>
->> These sections provide information on the location of your VPS. This can be useful for identifying and assessing potential impacts on your service, such as those mentioned in the [incident or maintenance reports](https://bare-metal-servers.status-ovhcloud.com/).
+>> These sections provide information on the location of your VPS. This might be useful, for example, to identify potential impacts on your service mentioned in [incident and maintenance reports](https://bare-metal-servers.status-ovhcloud.com/).
 >>
  
 #### Your configuration
@@ -78,11 +79,12 @@ Click the tabs below to view details for this section.
 > [!tabs]
 > Model
 >>
->> This item shows the commercial reference which identifies the VPS model corresponding to the [VPS offers on our website](https://www.ovhcloud.com/en-gb/vps).
+>> This item shows the commercial reference which identifies the VPS model corresponding to the [VPS offers on our website](/links/bare-metal/vps).
 >>
 > vCores / Memory / Storage
 >> 
->> The current resources of your VPS are displayed here and can be upgraded separately by clicking on the respective button. Note that upgrades are limited by the chosen VPS model and might only be available by upscaling the service to a [higher range](https://www.ovhcloud.com/en-gb/vps).
+>> The current resources of your VPS are displayed here and can be upgraded separately by clicking on the respective button. Note that upgrades are limited by the chosen VPS model and might only be available by upscaling the service to a [higher range](/links/bare-metal/vps).
+>>
 > Additional disks
 >>
 >> Add additional disks to your VPS to increase your server’s storage capacity beyond that included in the initial configuration. For example, you can store backup data.
@@ -94,15 +96,15 @@ Click the tabs below to view details for this section.
 > [!tabs]
 > IPv4
 >>
->> The primary public IPv4 address of the VPS is configured automatically at installation. Find out more information about IP management in our guide [Configuring IP aliasing](/pages/bare_metal_cloud/virtual_private_servers/configuring-ip-aliasing).
+>> The primary public IPv4 address of the VPS is configured automatically at installation. Find out more information about IP management in our guide on [how to configure IP aliasing](/pages/bare_metal_cloud/virtual_private_servers/configuring-ip-aliasing).
 >>
 > IPv6 / Gateway
 >> 
->> Find here the public IPv6 address and the associated gateway address. These are automatically attached to the VPS during installation. You can find more information in [this guide](/pages/bare_metal_cloud/virtual_private_servers/configure-ipv6).
+>> Find here the public IPv6 address and the associated gateway address. These are automatically attached to the VPS at installation. See our guide on [how to configure IPv6](/pages/bare_metal_cloud/virtual_private_servers/configure-ipv6) for more information.
 >> 
 > Secondary DNS
 >>
->> This feature is useful for hosting DNS services. Please refer to our guide on [Configuring OVHcloud secondary DNS on a VPS](/pages/bare_metal_cloud/virtual_private_servers/adding-secondary-dns-on-vps) for further details.
+>> This feature is useful for hosting DNS services. Our guide on [how to configure OVHcloud secondary DNS on a VPS](/pages/bare_metal_cloud/virtual_private_servers/adding-secondary-dns-on-vps) describes it in detail.
 
 #### Backup
 
@@ -111,13 +113,13 @@ These options refer to additional VPS services which can be ordered in the Contr
 > [!tabs]
 > Snapshot
 >>
->> A snapshot on a VPS is an instant backup of the server’s state, which allows quick recovery of the system in the event of a problem. The `Snapshot` option allows you to create a manual snapshot as a single restore point.
+>> A snapshot on a VPS is an instant backup of the server’s state, which allows quick recovery of the system in the event of a problem. The `Snapshot` option allows you to create a manual snapshot as a singular restore point.
 >>
 > Automated backup
 >>
->> The `Automated backup` option allows you to schedule regular backups of your VPS. Unlike manual snapshots, this feature retains multiple restore points in time, providing you with continuous and automatic data protection (excluding additional disks).
+>> The `Automated backup` option allows you to schedule regular backups of your VPS (excluding additional disks). Compared to manual snapshots, this feature increases data security by retaining several restore points at regular intervals.
 
-You can find all information on the available backup solutions for your service on the [VPS product page](https://www.ovhcloud.com/en-gb/vps/options/) and in the [respective guides](/products/bare-metal-cloud-virtual-private-servers-backups).
+You can find all information on the available backup solutions for your service on the [VPS product page](/links/bare-metal/vps-options) and in the [respective guides](/products/bare-metal-cloud-virtual-private-servers-backups).
 
 #### Subscription
 
@@ -133,20 +135,20 @@ These sections show the most important information regarding the billing of your
 > This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](/links/partner) or reach out to [our community](/links/community) if you face difficulties or doubts concerning the administration, usage or implementation of services on a server.
 >
 
-#### Reinstall your VPS <a name="reinstallvps"></a>
+#### Reinstalling your VPS <a name="reinstallvps"></a>
 
-You can reinstall your VPS from your Control Panel. Click the `...`{.action} button to the right of `OS/Distribution`{.action}, then `Reinstall my VPS`{.action}.
+You can carry out reinstallations in your Control Panel. Click the `...`{.action} button to the right of **OS/Distribution**, then `Reinstall my VPS`{.action}.
 
 ![VPSnewreinstallation](images/2023panel_01.png){.thumbnail}
 
 In the popup window, choose an operating system from the drop-down list. The options offered represent [images compatible with an OVHcloud VPS](/pages/public_cloud/compute/image-life-cycle) and are immediately functional after installation.
 
-You can also select an **SSH key** to install on the system, if you have stored one previously in your [OVHcloud Control Panel](/links/manager). To find out more about this topic, please read our guide on [Creating and using SSH keys](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated) .
-If you have selected an SSH key and you do not need a username and password to log in, tick the `I do not wish to receive my VPS authentication codes by email box.`.
+You can also select an **SSH key** to install on the system, if you have stored one previously in your [OVHcloud Control Panel](/links/manager). To find out more about this topic, consult our guide on [how to create and use SSH keys](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).  
+If you have selected an SSH key and you do not need a username and password to log in, activate the option `I do not wish to receive my VPS authentication codes by email`.
 
 > [!warning]
 >
-> The reinstallation will format all the disks on the server. We strongly recommend taking a snapshot of your VPS before you continue, so that you can return to the previous state if you encounter any issues.
+> The reinstallation will format all the disks on the server. We recommend taking a snapshot of your VPS before you continue, so that you can return to the previous state if you encounter any issues.
 >
 
 > [!primary]
@@ -158,9 +160,9 @@ If you have selected an SSH key and you do not need a username and password to l
 > In order to have a **Windows** operating system running on a VPS, it has to be **selected in the order process**. A VPS with another OS installed cannot be reinstalled with Windows in the way described above.
 >
 
-The reinstallation process may take a few minutes.
+Please note that this process may take a few minutes.
 
-#### Restart your VPS <a name="reboot-current-range"></a>
+#### Restarting your VPS <a name="reboot-current-range"></a>
 
 A reboot might become necessary in order to apply updated configurations or to fix an issue. Whenever feasible, perform a "soft reboot" from the server's GUI (Windows, Plesk, etc.) or via the command line:
 
@@ -174,14 +176,14 @@ However, you can force a reboot at any time in your [OVHcloud Control Panel](/li
 
 <a name="connect"></a>
 
-### Log in to your VPS
+### Logging in to your VPS
 
 > [!warning]
 >
-> For security reasons, when you log in to your VPS for the first time, you will need to change the password you receive via email, and replace it with a strong new password. Once you have made the required changes, the interface you are using (e.g. Putty) may close automatically to disconnect. Then log in again with your new password.
+> For security reasons, when you log in to your VPS for the first time, you will need to replace the password you receive via email with a strong new password. Once you have made the required changes, the interface you are using (PuTTY for example) may close automatically due to a disconnection to the server. Log in again with your new password.
 >
 
-When you first install or reinstall from Control Panel, a user with elevated permissions is created automatically. This user will be named according to the operating system, for example “Ubuntu” or “Rocky Linux”.
+When you first install or reinstall from the OVHcloud Control Panel, a user with elevated permissions is created automatically. This user will be named according to the operating system, for example "ubuntu" or "rocky".
 
 You will then receive an email containing the username and password needed to connect to your VPS with SSH. SSH is a secure communication protocol, used to establish encrypted connections to a remote host.
 
@@ -194,20 +196,22 @@ ssh username@IPv4_VPS
 Example:
 
 ```bash
-ssh ubuntu@169.254.10.250
+ssh ubuntu@203.0.113.101
 ```
 
 You can use any third-party application compatible with **Open SSH** as well.
 
+<a name="linuxconnect"></a>
+
 #### GNU/Linux distribution
 
-Once logged in, change the current user's preset password to a strong password using this command :
+Once connected, you can replace the predefined password for the current user with a better passphrase by using this command:
 
 ```bash
 passwd
 ```
 
-On a GNU/Linux distribution, when you enter a password in the terminal, it does not appear on the screen for security reasons. You won't see any characters as you type your password.
+On a GNU/Linux distribution, **a password prompt will not display your keyboard inputs** for security reasons.
 
 Type your current password and press `Enter`{.action}. Enter the new passphrase and type it again at the next prompt to confirm it.
 
@@ -225,25 +229,25 @@ passwd: password updated successfully
 >
 > It is not necessary to use the "root" user account to get started with administrating your server. This account has to be enabled first in the server OS in order to use it. Moreover, SSH connections with the user "root" are **disabled** by default as a security measure.
 > 
-Unless stated otherwise, all administrative actions described in our documentation can be accomplished by the default user account, i.e. typing `sudo` followed by the respective command. Learn more about this topic in our guide on [How to configure user accounts and root access on a server](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
+Unless stated otherwise, all administrative actions described in our documentation can be accomplished by the default user account, i.e. typing `sudo` followed by the respective command. Learn more about this topic in our guide on [how to configure user accounts and root access on a server](/pages/bare_metal_cloud/dedicated_servers/changing_root_password_linux_ds).
 >
 
-**Here are some recommended steps** :
+**We recommend the following steps to proceed:**
 
-- Get familiar with SSH connections by reading our guide [Getting started with SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
-- Consider the use of SSH keys as an advanced and more convenient method for remote connections using our guide [Creating and using SSH keys](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
-- Use our guide [Secure a VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps) to protect your system against *brute force* automated attacks and other common threats.
+- Become more familiar with SSH connections by reading our guide on [how to get started with SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
+- Consider using SSH keys as an advanced, more convenient method for remote connections with the help of our guide on [how to create and use SSH keys](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
+- Use our guide on [how to secure a VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps) to harden your system against automated *brute force* attacks and other common threats.
 
 > [!primary]
 >
-Please note that if you have selected a **distribution with application** (Plesk, cPanel, Docker), generic security measures might not apply to your system. We recommend to refer to our guides [First steps with preinstalled applications](/pages/bare_metal_cloud/virtual_private_servers/apps_first_steps) and [Deploying cPanel on a VPS](/pages/bare_metal_cloud/virtual_private_servers/cpanel), as well as the official documentation of the respective publisher.
+Please note that if you have selected a **distribution with application** (Plesk, cPanel, Docker), generic security measures might not apply to your system. We recommend to refer to our documentation regarding the [first steps with preinstalled applications](/pages/bare_metal_cloud/virtual_private_servers/apps_first_steps) and [how to deploy cPanel on a VPS](/pages/bare_metal_cloud/virtual_private_servers/cpanel), as well as the official documentation of the respective publisher.
 >
 
 <a name="winconnect"></a>
 
-#### Windows distribution
+#### Windows Server
 
-##### Step 1 : Finalize the Windows installation
+##### Step 1: Finalize the Windows installation
 
 After the Windows operating system is installed, you receive an email with the account name of the default `Windows user`.
 
@@ -275,7 +279,7 @@ To complete the initial setup of your Windows VPS, follow the steps below by nav
 >>![KVM](/pages/assets/screens/other/windows/windows_login.png){.thumbnail}<br>
 >>
 
-##### Step 2 : Connect to the server with RDP
+##### Step 2: Connect to the server with RDP
 
 On your local Windows device, you can use the `Remote Desktop Connection` client application to connect to the VPS.
 
@@ -303,7 +307,7 @@ To activate them, follow the steps below by navigating through the tabs:
 >>
 > 2. **Open the "Run" utility**
 >>
->> Open the Windows `start` menu and click on `Run`{.action}.<br><br>
+>> Open the Windows `Start` menu and click on `Run`{.action}.<br><br>
 >>![KVM](/pages/assets/screens/other/windows/windows_start_run.png){.thumbnail}<br>
 >>
 > 3. **Open "msconfig"**
@@ -327,26 +331,26 @@ To access the log file in rescue mode, follow the instructions in the [VPS rescu
 
 As administrator of your VPS you are responsible for the security of the applications and data hosted on it.
 
-Please refer to our guide [Securing a VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps) for essential advice to protect your system.
+Please refer to our guide on [how to secure a VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps) for essential advice to protect your system.
 
 > [!primary]
 >
-Please note that if you have selected a **distribution with application** (Plesk, cPanel, Docker), generic security measures might not apply to your system. We recommend to refer to our guides [First steps with preinstalled applications](/pages/bare_metal_cloud/virtual_private_servers/apps_first_steps) and [Deploying cPanel on a VPS](/pages/bare_metal_cloud/virtual_private_servers/cpanel), as well as the official documentation of the respective publisher.
+Please note that if you have selected a **distribution with application** (Plesk, cPanel, Docker), generic security measures might not apply to your system. We recommend to refer to our guides on the [first steps with preinstalled applications](/pages/bare_metal_cloud/virtual_private_servers/apps_first_steps) and [how to deploy cPanel on a VPS](/pages/bare_metal_cloud/virtual_private_servers/cpanel), as well as the official documentation of the respective publisher.
 >
 
 <a name="domain"></a>
 
-### Link a domain name to your VPS
+### Attaching a domain name to your VPS
 
-Making your VPS available on the web usually includes attaching a domain name to it via DNS. If you manage your domain name at OVHcloud, please refer to our guide on [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit) for instructions.
+Making your VPS available on the web usually includes attaching a domain name to it via DNS. If you manage your domain name at OVHcloud, you can refer to our guide on [how to edit an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit) for instructions.
 
 #### Securing a domain name with an SSL certificate
 
-Once you have set up your VPS, we recommend securing your domain name and your website. This requires an SSL certificate, which allows your VPS to access the internet via *HTTPS* instead of *HTTP*, which is not secure.
+Once you have configured your VPS, you may want to secure your domain name and your website as well. This will require an SSL certificate, allowing internet access to your VPS via *HTTPS* instead of unsecured *HTTP*.
 
 You can install this SSL certificate manually, directly on the VPS. Please refer to the official documentation of your VPS distribution.
 
-To automate this process, OVHcloud also offers the SSL Gateway solution. Please refer to the [product page](https://www.ovh.co.uk/ssl-gateway/) or our [documentation](/products/web-cloud-ssl-gateway) for further information.
+To automate this process, OVHcloud also offers the SSL Gateway solution. Please refer to the [product page](/links/web/ssl-gateway) or our [documentation](/products/web-cloud-ssl-gateway) for further information.
 
 ## Go further
 
@@ -354,6 +358,6 @@ To automate this process, OVHcloud also offers the SSL Gateway solution. Please 
 
 [Introduction to SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
 
-[Securing a VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
+[How to secure a VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
 
 Join our [community of users](/links/community).
