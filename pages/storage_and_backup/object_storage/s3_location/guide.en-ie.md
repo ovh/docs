@@ -76,9 +76,21 @@ OVHcloud Object Storage S3 can be accessed through a unique endpoint: `https://s
         <td>4</td>
     </tr>
     <tr>
-        <td>Asia-Pacific</td>
+        <td rowspan=3>Asia-Pacific</td>
         <td>Singapore</td>
         <td>sgp</td>
+        <td>HTTPS</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>Sydney</td>
+        <td>ap-southeast-syd</td>
+        <td>HTTPS</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>Mumbai</td>
+        <td>ap-south-mum</td>
         <td>HTTPS</td>
         <td>4</td>
     </tr>
