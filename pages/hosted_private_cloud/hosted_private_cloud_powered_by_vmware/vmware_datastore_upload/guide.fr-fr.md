@@ -1,6 +1,6 @@
 ---
-title: "Téléverser des fichiers dans le datastore VMware vSphere on OVHcloud"
-excerpt: "Découvrez comment utiliser l'outil de téléversement de fichiers du datastore et avec govc afin de pouvoir importer des données dans votre environnement VMware vSphere on OVHcloud managé"
+title: "Téléverser des fichiers dans un datastore"
+excerpt: "Découvrez comment utiliser l'outil de téléversement de fichiers du datastore et la cli officiel govc afin de pouvoir importer des données dans votre environnement VMware vSphere on OVHcloud managé"
 updated: 2024-10-01
 ---
 
@@ -166,20 +166,31 @@ Pour les installations alternatives, consultez le dépot Git `Govc` VMware offic
 
 Le programme fournit un vaste choix d’arguments pour définir les conditions d’accès à l’API (par exemple son URL, l’utilisateur/mot de passe à utiliser, etc…) mais nous vous conseillons bien sûr d’utiliser des variables d’environnement pour gérer plus efficacement vos clusters, surtout si vous êtes amenés à vous connecter à plusieurs APIs. Au lieu de les définir à la volée, il vaut mieux les placer dans un fichier pour réutilisation lors d’une autre session.
 
+| **Variables d'environnements** |           **Standard**            |            **Premium (vSAN)**             | **Comments**                                                     | 
+|:------------------------------:|:---------------------------------:|:-----------------------------------------:|:-----------------------------------------------------------------|
+|       `GOVC_DATACENTER`        | `pcc-XXX-XX-XX-XX_datacenterXXXX` |     `pcc-XXX-XX-XX-XX_datacenterXXXX`     | Nom du datacenter par défaut au sens VMWare du terme.            | 
+|        `GOVC_USERNAME`         |              `jsnow`              |                  `jsnow`                  | Utilisateur local de connexion vSphere.                          |
+|        `GOVC_PASSWORD`         |         `John_passwordXX`         |             `John_passwordXX`             | Mot de passe de connexion de l'utilisateur local vSphere VMware. | 
+|           `GOVC_URL`           |     `pcc-XXX-XX-XX-XX.ovh.XX`     |         `pcc-XXX-XX-XX-XX.ovh.XX`         | IP ou hostname du vsphere.                                       |
+|        `GOVC_DATASTORE`        |     `ssd-XXXXXX / NFS-XXXXXX`     | `ssd-XXXXXX / NFS-XXXXXX / vsanDatastore` | Datastore utilisé par défaut.                                    |
+|          `HTTP_PROXY`          |     `http://XXX.XX.X.X:XXXXX`     |         `http://XXX.XX.X.X:XXXXX`         | L'url de votre server proxy sans https.                          |
+|         `HTTPS_PROXY`          |    `https://XXX.XX.X.X:XXXXX`     |        `https://XXX.XX.X.X:XXXXX`         | L'url de votre server proxy avec https.                          |
+
 Voici par exemple pour Linux :
 
 ```bash
 # govc.env
-export GOVC_DATACENTER=<Nom du datacenter par défaut au sens VMWare du terme> // Exemple : `pcc-XXX-XX-XX-XX_datacenterXXXX`
+export GOVC_DATACENTER=<Nom du datacenter par défaut au sens VMWare du terme>
 export GOVC_USERNAME=<Utilisateur local vmware>
 export GOVC_PASSWORD=<Mot de passe de l'utilisateur local VMware>
-export GOVC_URL=<IP ou hostname du vsphere> // Exemple : `pcc-XXX-XX-XX-XX.ovh.XX`
-export GOVC_DATASTORE=<Datastore par défaut> // Exemple : `ssd-XXXXXX / NFS-XXXXXX`
+export GOVC_URL=<IP ou hostname du vsphere>
+export GOVC_DATASTORE=<Datastore par défaut>
 
 # Si besoin d'utiliser un proxy réseau
 # export HTTP_PROXY=http://XXX.XX.X.X:XXXXX
 # export HTTPS_PROXY=http://XXX.XX.X.X:XXXXX
 ```
+
 Comme pour tout fichier contenant des variables, il suffit de le sourcer dans un terminal.
 
 ```bash
@@ -196,18 +207,18 @@ govc datastore.ls -dc=Datacenter2 -ds=Datastore1 -debug=true
 
 #### Usage
 
-Nous allons vous exposer ici quelques commandes simples puis quelques examples d’applications concrètes.
+Nous allons vous exposer ici la commande de téléversement.
 
-Tout d’abord, il faut comprendre qu’au sein d’un datacenter, sont regroupés les objets d’un même type, sous `VM`, `Network`, `Host` et `Datastore`. Ainsi, comme vous allez le deviner très vite, il existe deux méthodes pour lister les hosts, soit avec la commande `govc ls host` ou `govc find /host`.
+Tout d’abord, il faut comprendre qu’au sein d’un datacenter les objets sont regroupés au sein d’un même type, sous `VM`, `Network`, `Host` et `Datastore`. Ainsi, il existe une seule méthode pour téléverser des fichiers avec la commande `govc datastore.upload`.
 
 **Téléverser un iso**
 
-Voici un exemple de téléversement d'image iso avec `govc` :
+Voici un exemple de téléversement d'image iso avec `govc`, attention à bien localiser le dossier sur lequel vous voulez importer votre iso :
 
 ```bash
 govc datastore.upload image.iso dossier-isos/image.iso
 ```
-Télécharger uen ISO avec curl avant :
+Télécharger une ISO avec curl avant de la téléverser à l'aide d'un pipe :
 
 ```bash
 curl https://example.com/iso/image.iso | govc datastore.upload - dossier-isos/image.iso
