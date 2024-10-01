@@ -272,7 +272,7 @@ govc datastore.upload image.iso dossier-isos/image.iso
 
 **Listing complet des commandes govc**
 
-/// details | Usage of govc
+/// details | Usage de govc
 
 ```bash
 Usage of govc:
