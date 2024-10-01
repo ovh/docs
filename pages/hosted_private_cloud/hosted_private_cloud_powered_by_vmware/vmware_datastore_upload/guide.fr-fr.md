@@ -129,10 +129,26 @@ En plus du client API vSphere, ce dépôt comprend :
 
 **Installation et configuration**
 
+Sur Linux
+
+Avec le binaire :
+
 ```bash
-# Téléchargement de la version 0.22.1
-curl https://github.com/vmware/govmomi/releases/download/v0.22.1/govc_linux_amd64.gz | gunzip > /usr/bin/govc
+# extract govc binary to /usr/local/bin
+# note: the "tar" command must run with root permissions
+curl -L -o - "https://github.com/vmware/govmomi/releases/latest/download/govc_$(uname -s)_$(uname -m).tar.gz" | tar -C /usr/local/bin -xvzf - govc
 ```
+
+Via `go install` :
+
+```bash
+go install github.com/vmware/govmomi/govc@latest
+```
+Avec Docker :
+
+[L'image Docker](https://hub.docker.com/r/vmware/govc) `govc` est construite depuis ce [Dockerfile](https://github.com/vmware/govmomi/blob/main/Dockerfile.govc).
+
+Pour les installations alternatives, consultez le dépot Git `Govc` VMware officiel à [cette url](https://github.com/vmware/govmomi/blob/main/govc/README.md).
 
 Le programme fournit un vaste choix d’arguments pour définir les conditions d’accès à l’API (par exemple son URL, l’utilisateur/mot de passe à utiliser, etc…) mais nous vous conseillons bien sûr d’utiliser des variables d’environnement pour gérer plus efficacement vos clusters, surtout si vous êtes amenés à vous connecter à plusieurs APIs. Au lieu de les définir à la volée, il vaut mieux les placer dans un fichier pour réutilisation lors d’une autre session.
 
