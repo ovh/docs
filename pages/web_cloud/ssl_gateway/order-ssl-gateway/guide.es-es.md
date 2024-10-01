@@ -76,17 +76,17 @@ Una vez validada la orden de pedido, si no ha marcado la casilla `Gestiono la zo
 > [!faq]
 >
 > Caso 1: Su zona DNS es gestionada por los servidores DNS compartidos de OVHcloud.
->>>
+>>
 >> - Si su identificador es contacto *administrador* o *técnico* de esta zona DNS, deberá modificarlo en su [área de cliente de OVHcloud](/links/manager).
 >> - Si no es contacto *administrador* o *técnico* de esta zona DNS, póngase en contacto con la persona encargada de la misma para cambiarla.
->>>
+>>
 >> Consulte las instrucciones de la guía "[Crear una zona DNS de OVHcloud para un dominio](/pages/web_cloud/domains/dns_zone_create)", en su caso.
->>>
+>>
 >
 > Caso 2: Su zona DNS no está gestionada por los servidores DNS compartidos de OVHcloud.
->>>
+>>
 >> - En este caso, solo tiene que modificar la IP en su zona DNS accediendo a la interfaz de su proveedor o de su servidor dedicado.
->>>
+>>
 >
 
 Una vez introducidos los cambios en nuestra infraestructura, recibirá un mensaje de confirmación.
