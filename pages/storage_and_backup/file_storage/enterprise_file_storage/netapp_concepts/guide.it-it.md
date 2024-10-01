@@ -14,9 +14,9 @@ Enterprise File Storage permette di usufruire di volumi di storage NFS totalment
 
 **Come funziona l'offerta Enterprise File Storage.**
 
-## In pratica
+## Procedura
 
-### Enterprise File Storage, che cos'è?
+### Enterprise File Storage, cos'è?
 
 Enterprise File Storage è un'offerta di file system gestita da OVHcloud e basata sulla soluzione NetApp&#174; ONTAP.
 

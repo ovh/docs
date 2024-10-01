@@ -8,7 +8,7 @@ updated: 2022-04-07
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
 
-## Cel
+## Wprowadzenie
 
 Dzięki Enterprise File Storage możesz korzystać z wolumenów NFS w pełni zarządzanych przez OVHcloud. Z tego przewodnika na temat szybkiego uruchamiania usług Enterprise File Storage dowiesz się, w jaki sposób rozwiązanie to działa.
 

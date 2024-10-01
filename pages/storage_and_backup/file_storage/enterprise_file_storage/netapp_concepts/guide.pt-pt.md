@@ -14,7 +14,7 @@ Enterprise File Storage permite-lhe beneficiar de volumes de armazenamento NFS i
 
 **Descubra como funciona a oferta Enterprise File Storage.**
 
-## Na Prática
+## Instruções
 
 ### Enterprise File Storage, o que é?
 
