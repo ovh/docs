@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Endpoints et géo-disponibilité de l’Object Storage
-updated: 2024-08-09
+updated: 2024-10-01
 ---
 
 <style>
@@ -76,9 +76,21 @@ OVHcloud Object Storage S3 est accessible via un point de terminaison unique : `
         <td>4</td>
     </tr>
     <tr>
-        <td>Asie-Pacifique</td>
+        <td rowspan=3>Asia-Pacific</td>
         <td>Singapour</td>
         <td>sgp</td>
+        <td>HTTPS</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>Sydney</td>
+        <td>ap-southeast-syd</td>
+        <td>HTTPS</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>Mumbai</td>
+        <td>ap-south-mum</td>
         <td>HTTPS</td>
         <td>4</td>
     </tr>
@@ -231,4 +243,4 @@ Le mapping des opérations **READ(GET/LIST/HEAD)** sur le point de terminaison *
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).
