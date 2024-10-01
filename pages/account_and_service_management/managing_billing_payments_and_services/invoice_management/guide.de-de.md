@@ -16,20 +16,20 @@ OVHcloud stellt Ihnen einen Bereich zur Verfügung, über den Sie Ihre Rechnunge
 
 > [!primary]
 >
-> In Abhängigkeit von Ihrem Wohnsitz und der dort geltenden Rechtsordnung sowie den betreffenden Produkten können einige Details von den hier angeführten Informationen abweichen und/oder Teile dieser Anleitung nicht auf Ihre Situation zutreffen. Im Zweifel beachten Sie bitte die für Sie geltenden OVHcloud Verträge, die Sie jederzeit in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) einsehen können (Klicken Sie oben rechts neben Ihrem Bildschirm auf Ihren Namen, dann im Kontextmenü auf `Dienstverwaltung`{.action} und dann auf den Tab `Verträge`{.action}).
+> In Abhängigkeit von Ihrem Wohnsitz und der dort geltenden Rechtsordnung sowie den betreffenden Produkten können einige Details von den hier angeführten Informationen abweichen und/oder Teile dieser Anleitung nicht auf Ihre Situation zutreffen. Im Zweifel beachten Sie bitte die für Sie geltenden OVHcloud Verträge, die Sie jederzeit in Ihrem [OVHcloud Kundencenter](/links/manager) einsehen können (Klicken Sie oben rechts neben Ihrem Bildschirm auf Ihren Namen, dann im Kontextmenü auf `Dienstverwaltung`{.action} und dann auf den Tab `Verträge`{.action}).
 >
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/iiQmopMhzik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) als [Rechnungskontakt](/pages/account_and_service_management/account_information/managing_contacts) Ihres Dienstes.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) als [Rechnungskontakt](/pages/account_and_service_management/account_information/managing_contacts) Ihres Dienstes.
 
 ## In der praktischen Anwendung
 
 > [!primary]
 >
-> Jede Rechnung wird Ihnen per E-Mail in Form eines klickbaren Links gesendet, auf den Sie direkt zugreifen können, indem Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) authentifizieren. Alle Rechnungen bleiben auch über das `Dashboard`{.action} Ihres Kundencenters verfügbar.
+> Jede Rechnung wird Ihnen per E-Mail in Form eines klickbaren Links gesendet, auf den Sie direkt zugreifen können, indem Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) authentifizieren. Alle Rechnungen bleiben auch über das `Dashboard`{.action} Ihres Kundencenters verfügbar.
 >
 
 ### Aufbau Ihrer Rechnung
@@ -52,7 +52,7 @@ Die Rechnung zu Ihrer OVHcloud Dienstleistung wird Ihnen nach einer Bezahlung od
 
 #### Rechnungen einsehen und verwalten
 
-Um Ihre Rechnungen einzusehen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Klicken Sie auf Ihren Namen oben rechts neben Ihrem Bildschirm und dann im neu geöffneten Menü auf `Rechnungen`{.action}.
+Um Ihre Rechnungen einzusehen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein. Klicken Sie auf Ihren Namen oben rechts neben Ihrem Bildschirm und dann im neu geöffneten Menü auf `Rechnungen`{.action}.
 
 ![Rechnungsstellung](images/hubinvoices.png){.thumbnail}
 

@@ -16,7 +16,7 @@ updated: 2024-05-13
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - Access to your clusters via Prism Central
 - You need to have 3 Nutanix clusters within the OVHcloud infrastructure with **Pro** or **Ultimate** packs if you have a Nutanix on OVHcloud packaged service on both clusters in the P.R.A. These 3 clusters will need to be at remote sites for maximum security.
 - You must have less than 5 ms of latency between the two replicated clusters. Please note that latency is not covered by SLAs.

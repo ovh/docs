@@ -14,7 +14,7 @@ Dieses System lässt Sie nur auf den Ordner “upload-vpn” Ihrer Datastores zu
 
 ## Voraussetzungen
 
-- Sie verfügen über einen aktiven Nutzeraccount im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}.
+- Sie verfügen über einen aktiven Nutzeraccount im [OVHcloud Kundencenter](/links/manager){.external}.
 
 ## Praktische Anwendung
 

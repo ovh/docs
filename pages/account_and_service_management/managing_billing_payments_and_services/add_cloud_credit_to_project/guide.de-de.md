@@ -18,7 +18,7 @@ Das bedeutet, dass dieses Guthabenkonto zuerst belastet wird und dann noch verbl
 ## Voraussetzungen
 
 - Sie verfügen über ein [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud/) in Ihrem OVHcloud Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 

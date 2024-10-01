@@ -17,7 +17,7 @@ Das OVHcloud [vRack](https://www.ovh.de/loesungen/vrack/) ist ein privates Netzw
 ## Voraussetzungen
 
 - Sie verfügen über ein [Public Cloud Projekt](/pages/public_cloud/compute/create_a_public_cloud_project) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben einen [OpenStack User erstellt](/pages/public_cloud/compute/create_and_delete_a_user) (optional).
 - Sie haben Grundkenntnisse in Administration und Netzwerkkonfiguration.
 
@@ -31,7 +31,7 @@ Je nach Ihrem technischen Profil und Ihren Bedürfnissen müssen Sie entscheiden
 
 ### OVHcloud Kundencenter
 
-Das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ist ein ausschließlich visuelles Interface, ideal zur Verwaltung eines einzigen VLANs. Sie können den privaten IP-Bereich (10.x.x.x/16) nicht anpassen.
+Das [OVHcloud Kundencenter](/links/manager) ist ein ausschließlich visuelles Interface, ideal zur Verwaltung eines einzigen VLANs. Sie können den privaten IP-Bereich (10.x.x.x/16) nicht anpassen.
 
 Die VLANs werden standardmäßig in allen Zonen eingerichtet. Sie können nur die Gateways aktivieren und deaktivieren.
 
@@ -111,7 +111,7 @@ Sobald das vRack aktiv ist, finden Sie diesen Dienst unter der Bezeichnung "pn-x
 
 #### Über das OVHcloud Kundencenter
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus.
 
 Klicken Sie auf `Private Network`{.action} im linken Menü.
 
@@ -447,7 +447,7 @@ Wenn Sie zum Beispiel ein öffentliches Interface *eth0* haben, fügen Sie ein I
 
 ##### **Über das OVHcloud Kundencenter** 
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie dann das betreffende Public Cloud Projekt oben links aus.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie dann das betreffende Public Cloud Projekt oben links aus.
 
 Klicken Sie links im Menü auf `Instances`{.action}. Klicken Sie dann auf `...`{.action} rechts neben der betreffenden Instanz und anschließend auf `Instanz-Details`{.action}.
 

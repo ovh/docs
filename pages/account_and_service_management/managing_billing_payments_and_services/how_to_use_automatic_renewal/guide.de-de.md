@@ -23,14 +23,14 @@ Folgende Themen werden erläutert:
 
 > [!primary]
 >
-> Je nach Ihrem Wohnsitz, der örtlichen Gesetzgebung und Dienstleistungsart können manche Details dieser Anleitung variieren oder in ihrem Fall nicht zutreffen. Für konkrete Informationen können Sie Ihre OVHcloud Verträge im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) überprüfen: Klicken Sie auf Ihren Account-Namen oben rechts in der Anzeige, öffnen Sie `Produkte und Dienstleistungen`{.action} und wechseln Sie zum Tab `Verträge`{.action}.
+> Je nach Ihrem Wohnsitz, der örtlichen Gesetzgebung und Dienstleistungsart können manche Details dieser Anleitung variieren oder in ihrem Fall nicht zutreffen. Für konkrete Informationen können Sie Ihre OVHcloud Verträge im [OVHcloud Kundencenter](/links/manager) überprüfen: Klicken Sie auf Ihren Account-Namen oben rechts in der Anzeige, öffnen Sie `Produkte und Dienstleistungen`{.action} und wechseln Sie zum Tab `Verträge`{.action}.
 >
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/dfpPCa0mUyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie verfügen über aktive OVHcloud Dienste.
 - Sie sind [Rechnungskontakt](/pages/account_and_service_management/account_information/managing_contacts#definition) Ihrer OVHcloud Dienste.
 - Sie verfügen über ein gültiges Zahlungsmittel in Ihrem OVHcloud Account, siehe auch unsere Anleitung „[Zahlungsarten verwalten](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods)“.
@@ -72,7 +72,7 @@ Folgende Themen werden erläutert:
 
 ## In der praktischen Anwendung
 
-Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).<br>
+Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](/links/manager).<br>
 Klicken Sie oben rechts auf Ihren Namen und wählen Sie `Produkte und Dienstleistungen`{.action}.
 
 ![Produkte und Dienstleistungen](images/products-services-en.png){.thumbnail}

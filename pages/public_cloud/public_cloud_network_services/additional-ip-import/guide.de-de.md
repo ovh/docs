@@ -24,7 +24,7 @@ Im OVHcloud Kundencenter können Sie eine Additional IP-Adresse, die mit einem a
 ## Voraussetzungen
 
 - Sie haben ein [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie verfügen über eine [Additional IP-Adresse](https://www.ovhcloud.com/de/bare-metal/ip/).
 
 > [!warning]
@@ -33,7 +33,7 @@ Im OVHcloud Kundencenter können Sie eine Additional IP-Adresse, die mit einem a
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie im Bereich `Public Cloud`{.action} Ihr Projekt aus.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und wählen Sie im Bereich `Public Cloud`{.action} Ihr Projekt aus.
 
 Öffnen Sie im linken Menü `Public IPs`{.action} unter `Network`.
 

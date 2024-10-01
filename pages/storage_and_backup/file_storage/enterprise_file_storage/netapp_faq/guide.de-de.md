@@ -28,7 +28,7 @@ Mit dieser Lösung können auch komplexere praktische Fälle wie "on-premise" Wo
 
 ### Kann Enterprise File Storage über das Kundencenter verwaltet werden?
 
-Ja, diese Dienstleistung ist direkt über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) erreichbar, im Bereich `Bare Metal Cloud`{.action}, dann `Storage und Backup`{.action}.
+Ja, diese Dienstleistung ist direkt über Ihr [OVHcloud Kundencenter](/links/manager) erreichbar, im Bereich `Bare Metal Cloud`{.action}, dann `Storage und Backup`{.action}.
 
 ## Verfügbarkeit
 

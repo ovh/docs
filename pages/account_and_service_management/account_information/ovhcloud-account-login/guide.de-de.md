@@ -23,7 +23,7 @@ Die Verwaltung Ihrer Dienste erfolgt hauptsächlich über das OVHcloud Kundencen
 
 ### In das OVHcloud Kundencenter einloggen
 
-Gehen Sie auf die [Login-Seite von OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) und geben Sie Ihre Kundenkennung (oder Ihre Haupt-E-Mail-Adresse) und Ihr Passwort ein.
+Gehen Sie auf die [Login-Seite von OVHcloud](/links/manager) und geben Sie Ihre Kundenkennung (oder Ihre Haupt-E-Mail-Adresse) und Ihr Passwort ein.
 
 ![Kundenkennung](images/log-in.png){.thumbnail}
 

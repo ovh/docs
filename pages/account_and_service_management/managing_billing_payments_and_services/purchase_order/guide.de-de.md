@@ -53,7 +53,7 @@ Für OVHcloud muss das Dokument daher mindestens folgende Angaben enthalten:
 
 ### Wie Sie eine Purchase Order Nummer (PO) in Ihrem OVHcloud Kundencenter eingeben
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und klicken Sie dann im Tab `Dashboard`{.action} auf `Meine Bestellungen anzeigen`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und klicken Sie dann im Tab `Dashboard`{.action} auf `Meine Bestellungen anzeigen`{.action}.
 
 ![Kundencenter](images/internalreference00.png){.thumbnail}
 

@@ -24,7 +24,7 @@ Schema concept:
 ## Requirements
 
 - A [Public Cloud project](https://www.ovhcloud.com/de/public-cloud/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - A Grafana database running on your OVHcloud Public Cloud project. ([This guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to create a managed Grafana. If you need more details on the private network configuration use [this guide](/pages/public_cloud/public_cloud_databases/databases_08_vrack))
 
 ## Instructions
@@ -37,7 +37,7 @@ Schema concept:
 
 For this tutorial, we will use an Ubuntu 22.10 image to install NGINX.
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) and create a new compute instance in your vRack.
+Log in to your [OVHcloud Control Panel](/links/manager) and create a new compute instance in your vRack.
 If you need to expose your Reverse Proxy to a public network, please select the IP Floating address option.
 
 ### Install NGINX

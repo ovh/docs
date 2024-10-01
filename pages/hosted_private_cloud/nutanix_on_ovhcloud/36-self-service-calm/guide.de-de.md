@@ -17,7 +17,7 @@ updated: 2024-05-13
 ## Requirements
 
 - A Nutanix cluster in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - You must be connected to the cluster via Prism Central
 - Have Self Service (CALM) licences. These licences are available with the Nutanix on OVHcloud packaged service (with limitations for **Starter** pack)
 - An additional VLAN in your cluster that distributes IPAM IP addresses and has internet access
