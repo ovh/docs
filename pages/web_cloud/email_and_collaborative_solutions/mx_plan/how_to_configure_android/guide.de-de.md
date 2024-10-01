@@ -1,7 +1,7 @@
 ---
 title: "MX Plan - Konfiguration eines E-Mail-Accounts in Gmail für Android"
 excerpt: "Erfahren Sie hier, wie Sie einen MX Plan Account in Android über die Gmail-App einrichten"
-updated: 2023-12-15
+updated: 2024-10-01
 ---
 
 <style>
