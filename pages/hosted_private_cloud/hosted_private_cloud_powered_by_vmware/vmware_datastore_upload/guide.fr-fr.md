@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 ## Objectif
 
-**Découvrez comment téléverser des fichiers dans un dossier de votre banque de données depuis le client HTML VMware vSphere on OVHcloud.**
+**L'objectif est de téléverser des fichiers dans un dossier de votre banque de données vSphere.**
 
 ## Prérequis
 
@@ -131,7 +131,7 @@ Nommez votre dossier et cliquez sur `OK`{.action}.
 
 ![Datastore Upload - Create a folder](images/datastore_4.png){.thumbnail}
 
-### Étape 7 - Téléversement sur l'API VMware (govmomi)
+### Étape 7 - Téléversement avec govc vers l'API VMware
 
 Une bibliothèque Go pour interagir avec les API VMware vSphere (ESXi et/ou vCenter Server) est fournis par VMware.  Vous pouvez consulter le dépot github à [cette url](https://github.com/vmware/govmomi?tab=readme-ov-file)
 
@@ -170,12 +170,11 @@ Voici par exemple pour Linux :
 
 ```bash
 # govc.env
-export GOVC_DATACENTER=<Nom du datacenter par défaut au sens VMWare du terme>
+export GOVC_DATACENTER=<Nom du datacenter par défaut au sens VMWare du terme> // Exemple : `pcc-XXX-XX-XX-XX_datacenterXXXX`
 export GOVC_USERNAME=<Utilisateur local vmware>
 export GOVC_PASSWORD=<Mot de passe de l'utilisateur local VMware>
-export GOVC_URL=<IP ou hostname du vsphere> // Exemple : pcc-XXX-XX-XX-XX.ovh.XX
-export GOVC_INSECURE=1 # Ignorer les problèmes de certificat, utile en réseau local
-export GOVC_DATASTORE=<Datastore par défaut> // Exemple : ssd-XXXXXX / storageLocal_XXX-XX-XX-XX / NFS_XXXXXX
+export GOVC_URL=<IP ou hostname du vsphere> // Exemple : `pcc-XXX-XX-XX-XX.ovh.XX`
+export GOVC_DATASTORE=<Datastore par défaut> // Exemple : `ssd-XXXXXX / NFS-XXXXXX`
 
 # Si besoin d'utiliser un proxy réseau
 # export HTTP_PROXY=http://XXX.XX.X.X:XXXXX
@@ -201,358 +200,18 @@ Nous allons vous exposer ici quelques commandes simples puis quelques examples d
 
 Tout d’abord, il faut comprendre qu’au sein d’un datacenter, sont regroupés les objets d’un même type, sous `VM`, `Network`, `Host` et `Datastore`. Ainsi, comme vous allez le deviner très vite, il existe deux méthodes pour lister les hosts, soit avec la commande `govc ls host` ou `govc find /host`.
 
-**Lister les objets d’un DC**
-
-```bash
-govc ls
-
-# Le résultat donne :
-# /DC/vm
-# /DC/network
-# /DC/host
-# /DC/datastore
-
-govc ls vm/dossier-vm/vm-1
-govc ls host
-```
-
-**Lister tous les objets du vCenter**
-
-Lister les VM avec “prod” dans le nom. Enfin, lister les hosts avec 12 vcpu.
-
-```bash
-govc find /
-govc find vm -type m -name *prod*
-govc find . -type h -hardware.cpuInfo.numCpuCores 16
-```
-
-**Lister/téléverser/créer des dossiers dans un Datastore**
-
-Notamment avec l’usage des disques vous pouvez explorer le datastore spécifié en `envvar`, créer un dossier, y envoyer un fichier local, puis un fichier en `stdin`.
-
-
-```bash
-govc datastore.info
-govc datastore.ls dossier-1/
-govc datastore.mkdir dossier-isos/
-govc datastore.upload image.iso dossier-isos/image.iso
-curl https://example.com/iso/image.iso | govc datastore.upload - dossier-isos/image.iso
-```
-
-**Afficher les informations**
-
-Par exemple les informations étendues d’une VM, la snapshotter, la rebooter puis ouvrir une console (nécessite vmrc)
-
-```bash
-# À noter qu'il n'y a ni le DC, ni le prefix "vm" dans le path retourné par la commande govc ls, il est induit
-vm=Prod/Machine_virtuelle_1
-govc vm.info -e $vm
-govc snapshot.create $vm snapshot-$(date +%F)
-govc vm.power -r $vm
-xdg-open $(govc vm.console $vm)
-```
-
-Afficher les controlleurs et disques attachés à une VM, démonter un de ceux-là, en créer un nouveau sur le datastore, puis l’attacher à la VM. Enfin, attacher un nouvel ISO.
-
-```bash
-govc device.info -vm <VM>
-
-# Keep permet de ne pas supprimer le disque au déttachement ! disk_ref correspond à l'ID selon la VM spécifiée, par exemple "disk-1000-3"
-govc device.remove -keep -vm <VM> <disk_ref>
-govc datastore.disk.create -size 15G <disk_name>
-govc vm.disk.attach -vm <VM> -disk <path/to/disk_name.vmdk>
-
-# dev est le nom de device du cdrom, par exemple cdrom-3000
-govc device.cdrom.insert -vm <VM> -device <dev> <path/to/file.iso>
-```
-
-Récupérer sur quel `Host` tourne une `VM` donnée pour l’exemple par son `UUID`. Lister les informations et ressources disponibles sur l’Host et également ses interfaces/IPs.
-
-```bash
-host=$(govc vm.info -vm.uuid=4233b143-7171-e260-deaa-52921b064dfb | awk '/Host/ {print $2}')
-govc host.info $host
-govc host.esxcli -host=$host network ip interface ipv4 get
-```
-
-Les options disponibles pour esxcli sont accessibles [ici](https://pubs.vmware.com/vsphere-50/index.jsp?topic=%2Fcom.vmware.vcli.ref.doc_50%2Fesxcli_software.html)
-
-**Téléverser des fichiers**
+**Téléverser un iso**
 
 Voici un exemple de téléversement d'image iso avec `govc` :
 
 ```bash
 govc datastore.upload image.iso dossier-isos/image.iso
 ```
-
-**Listing complet des commandes govc**
-
-/// details | Usage de govc
+Télécharger uen ISO avec curl avant :
 
 ```bash
-Usage of govc:
-  about
-  about.cert
-  cluster.add
-  cluster.change
-  cluster.create
-  cluster.group.change
-  cluster.group.create
-  cluster.group.ls
-  cluster.group.remove
-  cluster.override.change
-  cluster.override.info
-  cluster.override.remove
-  cluster.rule.change
-  cluster.rule.create
-  cluster.rule.info
-  cluster.rule.ls
-  cluster.rule.remove
-  datacenter.create
-  datacenter.info
-  datastore.cluster.change
-  datastore.cluster.info
-  datastore.cp
-  datastore.create
-  datastore.disk.create
-  datastore.disk.inflate
-  datastore.disk.info
-  datastore.disk.shrink
-  datastore.download
-  datastore.info
-  datastore.ls
-  datastore.maintenance.enter
-  datastore.maintenance.exit
-  datastore.mkdir
-  datastore.mv
-  datastore.remove
-  datastore.rm
-  datastore.tail
-  datastore.upload
-  datastore.vsan.dom.ls
-  datastore.vsan.dom.rm
-  device.boot
-  device.cdrom.add
-  device.cdrom.eject
-  device.cdrom.insert
-  device.connect
-  device.disconnect
-  device.floppy.add
-  device.floppy.eject
-  device.floppy.insert
-  device.info
-  device.ls
-  device.remove
-  device.scsi.add
-  device.serial.add
-  device.serial.connect
-  device.serial.disconnect
-  device.usb.add
-  disk.create
-  disk.ls
-  disk.register
-  disk.rm
-  disk.snapshot.create
-  disk.snapshot.ls
-  disk.snapshot.rm
-  disk.tags.attach
-  disk.tags.detach
-  dvs.add
-  dvs.change
-  dvs.create
-  dvs.portgroup.add
-  dvs.portgroup.change
-  dvs.portgroup.info
-  env
-  events
-  export.ovf
-  extension.info
-  extension.register
-  extension.setcert
-  extension.unregister
-  fields.add
-  fields.info
-  fields.ls
-  fields.rename
-  fields.rm
-  fields.set
-  find
-  firewall.ruleset.find
-  folder.create
-  folder.info
-  guest.chmod
-  guest.chown
-  guest.df
-  guest.download
-  guest.getenv
-  guest.kill
-  guest.ls
-  guest.mkdir
-  guest.mktemp
-  guest.mv
-  guest.ps
-  guest.rm
-  guest.rmdir
-  guest.run
-  guest.start
-  guest.touch
-  guest.upload
-  host.account.create
-  host.account.remove
-  host.account.update
-  host.add
-  host.autostart.add
-  host.autostart.configure
-  host.autostart.info
-  host.autostart.remove
-  host.cert.csr
-  host.cert.import
-  host.cert.info
-  host.date.change
-  host.date.info
-  host.disconnect
-  host.esxcli
-  host.info
-  host.maintenance.enter
-  host.maintenance.exit
-  host.option.ls
-  host.option.set
-  host.portgroup.add
-  host.portgroup.change
-  host.portgroup.info
-  host.portgroup.remove
-  host.reconnect
-  host.remove
-  host.service
-  host.service.ls
-  host.shutdown
-  host.storage.info
-  host.storage.mark
-  host.storage.partition
-  host.vnic.change
-  host.vnic.info
-  host.vnic.service
-  host.vswitch.add
-  host.vswitch.info
-  host.vswitch.remove
-  import.ova
-  import.ovf
-  import.spec
-  import.vmdk
-  library.clone
-  library.create
-  library.deploy
-  library.export
-  library.import
-  library.info
-  library.ls
-  library.rm
-  library.session.ls
-  library.session.rm
-  library.sync
-  license.add
-  license.assign
-  license.assigned.ls
-  license.decode
-  license.label.set
-  license.ls
-  license.remove
-  logs
-  logs.download
-  logs.ls
-  ls
-  metric.change
-  metric.info
-  metric.interval.change
-  metric.interval.info
-  metric.ls
-  metric.reset
-  metric.sample
-  object.collect
-  object.destroy
-  object.method
-  object.mv
-  object.reload
-  object.rename
-  object.save
-  option.ls
-  option.set
-  permissions.ls
-  permissions.remove
-  permissions.set
-  pool.change
-  pool.create
-  pool.destroy
-  pool.info
-  role.create
-  role.ls
-  role.remove
-  role.update
-  role.usage
-  session.login
-  session.logout
-  session.ls
-  session.rm
-  snapshot.create
-  snapshot.remove
-  snapshot.revert
-  snapshot.tree
-  sso.group.create
-  sso.group.ls
-  sso.group.rm
-  sso.group.update
-  sso.service.ls
-  sso.user.create
-  sso.user.id
-  sso.user.ls
-  sso.user.rm
-  sso.user.update
-  tags.attach
-  tags.attached.ls
-  tags.category.create
-  tags.category.info
-  tags.category.ls
-  tags.category.rm
-  tags.category.update
-  tags.create
-  tags.detach
-  tags.info
-  tags.ls
-  tags.rm
-  tags.update
-  task.cancel
-  tasks
-  vapp.destroy
-  vapp.power
-  version
-  vm.change
-  vm.clone
-  vm.console
-  vm.create
-  vm.customize
-  vm.destroy
-  vm.disk.attach
-  vm.disk.change
-  vm.disk.create
-  vm.guest.tools
-  vm.info
-  vm.ip
-  vm.keystrokes
-  vm.markastemplate
-  vm.markasvm
-  vm.migrate
-  vm.network.add
-  vm.network.change
-  vm.option.info
-  vm.power
-  vm.question
-  vm.rdm.attach
-  vm.rdm.ls
-  vm.register
-  vm.unregister
-  vm.upgrade
-  vm.vnc
+curl https://example.com/iso/image.iso | govc datastore.upload - dossier-isos/image.iso
 ```
-///
 
 ## Aller plus loin
 
