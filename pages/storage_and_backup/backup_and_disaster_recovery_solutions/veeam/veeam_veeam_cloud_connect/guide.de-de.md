@@ -1,7 +1,7 @@
 ---
 title: Veeam Cloud Connect
 excerpt: Einführung zu Veeam Cloud Connect
-updated: 2023-11-02
+updated: 2024-10-01
 ---
 
 ## Ziel
@@ -17,7 +17,7 @@ Veeam Cloud Connect ist eine "Off-Site"-Backup-Lösung. Sie bietet eine einfache
 
 > [!primary]
 >
-> Unsere Veeam Cloud Connect Angebote sind derzeit nicht mit der neuesten von Veeam angebotenen Version (12) kompatibel. OVHcloud wird Version 11 bis auf weiteres anbieten. Bitte beachten Sie diesen Punkt bei der Veeam-Konfiguration Ihrer Dienstleistungen.
+> Unsere Veeam Cloud Connect Angebote sind derzeit mit der Veeam Version 12.1.1 kompatibel. Das Update auf die neueste Version 12.2 wird in Kürze von unseren Teams durchgeführt. Bitte beachten Sie dies bei der Konfiguration von Veeam für Ihre Veeam Cloud Connect Dienste.
 >
 
 ### Kompatible Dienste
