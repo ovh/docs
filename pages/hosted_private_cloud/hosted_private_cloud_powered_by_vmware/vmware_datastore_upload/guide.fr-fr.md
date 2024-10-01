@@ -1,7 +1,7 @@
 ---
 title: "Téléverser des fichiers dans le datastore VMware vSphere on OVHcloud"
 excerpt: "Découvrez comment utiliser l'outil de téléversement de fichiers du datastore afin de pouvoir importer des données dans votre environnement VMware vSphere on OVHcloud managé"
-updated: 2024-09-17
+updated: 2024-10-01
 ---
 
 ## Objectif
@@ -116,6 +116,135 @@ Depuis la section `Fichiers`{.action} de votre banque de données, cliquez sur `
 Nommez votre dossier et cliquez sur `OK`{.action}.
 
 ![Datastore Upload - Create a folder](images/datastore_4.png){.thumbnail}
+
+### Étape 7 - Téléversement sur l'API VMware (govmomi)
+
+Une bibliothèque Go pour interagir avec les API VMware vSphere (ESXi et/ou vCenter Server) est fournis par VMware.  Vous pouvez consulter le dépot github à [cette url](https://github.com/vmware/govmomi?tab=readme-ov-file)
+
+En plus du client API vSphere, ce dépôt comprend :
+
+- [govc](https://github.com/vmware/govmomi/blob/main/govc/README.md) - vSphere CLI
+- [vcsim](https://github.com/vmware/govmomi/blob/main/vcsim/README.md) - vSphere API mock framework
+- [toolbox](https://github.com/vmware/govmomi/blob/main/toolbox/README.md) - Framework des outils invités des VM
+
+**Installation et configuration**
+
+```bash
+# Téléchargement de la version 0.22.1
+curl https://github.com/vmware/govmomi/releases/download/v0.22.1/govc_linux_amd64.gz | gunzip > /usr/bin/govc
+```
+
+Le programme fournit un vaste choix d’arguments pour définir les conditions d’accès à l’API (par exemple son URL, l’utilisateur/mot de passe à utiliser, etc…) mais nous vous conseillons bien sûr d’utiliser des variables d’environnement pour gérer plus efficacement vos clusters, surtout si vous êtes amenés à vous connecter à plusieurs APIs. Au lieu de les définir à la volée, il vaut mieux les placer dans un fichier pour réutilisation lors d’une autre session.
+
+Voici par exemple pour Linux :
+
+```bash
+# govc.env
+export GOVC_DATACENTER=<Nom du datacenter par défaut au sens VMWare du terme>
+export GOVC_USERNAME=<Utilisateur vmware>
+export GOVC_PASSWORD=<Mot de passe>
+export GOVC_URL=<IP ou hostname du vsphere>
+export GOVC_INSECURE=1 # Ignorer les problèmes de certificat, utile en réseau local
+export GOVC_DATASTORE=<Datastore par défaut>
+
+# Si besoin d'utiliser un proxy réseau
+# export HTTP_PROXY=http://XXX.XX.X.X:XXXXX
+# export HTTPS_PROXY=http://XXX.XX.X.X:XXXXX
+```
+Comme pour tout fichier contenant des variables, il suffit de le sourcer dans un terminal.
+
+```bash
+source govc.env
+```
+
+Au lancement de chaques commandes, des options peuvent être modifiées à la volée pour surcharger les variables d’environnement, par exemple :
+
+```bash
+govc datastore.ls -dc=Datacenter2 -ds=Datastore1 -debug=true
+```
+
+À noter que si vous utilisez la commande debug (le “=true” est optionnel, s’agissant d’un flag Go), un dossier caché .govmomi/debug sera créé avec des logs vous permettant de tracer votre problème.
+
+**Usage**
+
+Nous allons vous exposer ici quelques commandes simples puis quelques examples d’applications concrètes.
+
+Tout d’abord, il faut comprendre qu’au sein d’un datacenter, sont regroupés les objets d’un même type, sous `VM`, `Network`, `Host` et `Datastore`. Ainsi, comme vous allez le deviner très vite, il existe deux méthodes pour lister les hosts, soit avec la commande `govc ls host` ou `govc find /host`.
+
+**Lister les objets d’un DC**
+
+```bash
+govc ls
+
+# Le résultat donne :
+# /DC/vm
+# /DC/network
+# /DC/host
+# /DC/datastore
+
+govc ls vm/dossier-vm/vm-1
+govc ls host
+```
+
+**Lister tous les objets du vCenter**
+
+Lister les VM avec “prod” dans le nom. Enfin, lister les hosts avec 12 vcpu.
+
+```bash
+govc find /
+govc find vm -type m -name *prod*
+govc find . -type h -hardware.cpuInfo.numCpuCores 16
+```
+
+**Lister les informations des Datastores**
+
+Notamment avec l’usage des disques vous pouvez explorer le datastore spécifié en `envvar`, créer un dossier, y envoyer un fichier local, puis un fichier en `stdin`.
+
+
+```bash
+govc datastore.info
+govc datastore.ls dossier-1/
+govc datastore.mkdir dossier-isos/
+govc datastore.upload image.iso dossier-isos/image.iso
+curl https://example.com/iso/image.iso | govc datastore.upload - dossier-isos/image.iso
+```
+
+**Afficher les informations**
+
+Par exemple les informations étendues d’une VM, la snapshotter, la rebooter puis ouvrir une console (nécessite vmrc)
+
+```bash
+# À noter qu'il n'y a ni le DC, ni le prefix "vm" dans le path retourné par la commande govc ls, il est induit
+vm=Prod/Machine_virtuelle_1
+govc vm.info -e $vm
+govc snapshot.create $vm snapshot-$(date +%F)
+govc vm.power -r $vm
+xdg-open $(govc vm.console $vm)
+```
+
+Afficher les controlleurs et disques attachés à une VM, démonter un de ceux-là, en créer un nouveau sur le datastore, puis l’attacher à la VM. Enfin, attacher un nouvel ISO.
+
+```bash
+govc device.info -vm <VM>
+
+# Keep permet de ne pas supprimer le disque au déttachement ! disk_ref correspond à l'ID selon la VM spécifiée, par exemple "disk-1000-3"
+govc device.remove -keep -vm <VM> <disk_ref>
+govc datastore.disk.create -size 15G <disk_name>
+govc vm.disk.attach -vm <VM> -disk <path/to/disk_name.vmdk>
+
+# dev est le nom de device du cdrom, par exemple cdrom-3000
+govc device.cdrom.insert -vm <VM> -device <dev> <path/to/file.iso>
+```
+
+Récupérer sur quel `Host` tourne une `VM` donnée pour l’exemple par son `UUID`. Lister les informations et ressources disponibles sur l’Host et également ses interfaces/IPs.
+
+```bash
+host=$(govc vm.info -vm.uuid=4233b143-7171-e260-deaa-52921b064dfb | awk '/Host/ {print $2}')
+govc host.info $host
+govc host.esxcli -host=$host network ip interface ipv4 get
+```
+
+Les options disponibles pour esxcli sont accessibles [ici](https://pubs.vmware.com/vsphere-50/index.jsp?topic=%2Fcom.vmware.vcli.ref.doc_50%2Fesxcli_software.html)
 
 ## Aller plus loin
 
