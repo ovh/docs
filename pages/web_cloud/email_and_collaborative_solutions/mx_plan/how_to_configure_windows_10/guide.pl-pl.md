@@ -87,7 +87,7 @@ OVHcloud oferuje aplikację internetową umożliwiającą korzystanie z Twojego 
 
 > [!primary]
 >
-> Aby uzyskać więcej informacji na temat konfigurowania konta e-mail przy użyciu klienta poczty w systemie Windows, zobacz [Centrum pomocy firmy Microsoft](https://support.microsoft.com/pl-pl/office/configurer-l-e-mail-in-l-application-courrier-7ff79e8b-439b-4b47-8ff9-3f9a33166c60).
+> Aby uzyskać więcej informacji na temat konfigurowania konta e-mail przy użyciu klienta Poczta w systemie Windows, zobacz [Centrum pomocy firmy Microsoft](https://support.microsoft.com/pl-pl/office/configurer-l-e-mail-in-l-application-courrier-7ff79e8b-439b-4b47-8ff9-3f9a33166c60).
 
 [Konfiguracja konta Exchange w aplikacji Poczta na urządzeniu z systemem Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_windows_10)
 

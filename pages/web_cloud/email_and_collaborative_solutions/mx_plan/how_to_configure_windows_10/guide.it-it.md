@@ -87,7 +87,7 @@ OVHcloud propone un’applicazione Web per accedere al tuo account email diretta
 
 > [!primary]
 >
-> Per ulteriori informazioni sulla configurazione di un indirizzo e-mail dal client di posta Posta in Windows, vedere [Guida in linea di Microsoft](https://support.microsoft.com/fr-fr/office/configurare-l-e-mail-nell-applicazione-posta-7ff79e8b-439b-4b47-8ff9-3f9a33166c60).
+> Per ulteriori informazioni sulla configurazione di un indirizzo e-mail dal client di Posta in Windows, vedere [Guida in linea di Microsoft](https://support.microsoft.com/it-it/office/configurare-la-posta-elettronica-nell-app-posta-7ff79e8b-439b-4b47-8ff9-3f9a33166c60).
 
 [Configurare un account E-mail Pro nell’applicazione Posta per Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10)
 
