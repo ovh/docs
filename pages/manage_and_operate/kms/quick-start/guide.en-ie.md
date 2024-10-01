@@ -48,7 +48,7 @@ After a few seconds, the KMS will be available in your Control Panel.
 
 ### Creating an encryption key with the OVHcloud console
 
-You can create an encryption key from the the dedicated menu of the OVHcloud console, using the `Create a key`{.action} button.
+You can create an encryption key from the dedicated menu of the OVHcloud console, using the `Create a key`{.action} button.
 
 ![Create a key](images/create_key_01.png){.thumbnail}
 

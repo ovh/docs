@@ -124,7 +124,7 @@ Create a new user account (replace `username` with the actual name of the user a
 sudo adduser username
 ```
 
-You have to provide a password for the new account. Then you are prompted to enter details for the the new user, which is optional.
+You have to provide a password for the new account. Then you are prompted to enter details for the new user, which is optional.
 
 ```text
 New password: 
