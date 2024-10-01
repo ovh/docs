@@ -1,7 +1,7 @@
 ---
 title: Premiers pas avec un VPS
 excerpt: "Apprenez à gérer un VPS dans votre espace client et découvrez les premières étapes de son utilisation, notamment les connexions à distance et les mesures de sécurité"
-updated: 2024-09-27
+updated: 2024-10-01
 ---
 
 ## Objectif
@@ -23,8 +23,9 @@ Un serveur privé virtuel (VPS) est un serveur dédié virtualisé qui vous offr
 
 - [Tableau de bord](#controlpanel)
 - [Fonctions VPS disponibles dans l’onglet « Accueil »](#hometab)
-- [Connexion à votre VPS (OS GNU/Linux)](#connect)
-- [Connexion à votre VPS Windows](#winconnect)
+- [Connexion à votre VPS](#connect)
+    - [Distribution GNU/Linux](#linuxconnect)
+    - [Distribution Windows](#winconnect)
 - [Sécuriser votre VPS](#secure)
 - [Attacher un nom de domaine](#domain)
 
@@ -80,11 +81,11 @@ Cliquez sur les onglets ci-dessous pour afficher les détails de cette section.
 > [!tabs]
 > Modèle
 >>
->> Cet élément indique la référence commerciale identifiant le modèle de VPS correspondant aux [offres VPS sur notre site](https://www.ovhcloud.com/fr/vps).
+>> Cet élément indique la référence commerciale identifiant le modèle de VPS correspondant aux [offres VPS sur notre site](/links/bare-metal/vps).
 >>
 > vCores / Mémoire / Stockage
 >> 
->> Les ressources actuelles de votre VPS sont affichées ici et peuvent être mises à jour séparément en cliquant sur le bouton correspondant. À noter que les mises à niveau sont limitées par le modèle de VPS choisi et peuvent uniquement être disponibles en passant à une [gamme supérieure](https://www.ovhcloud.com/fr/vps).
+>> Les ressources actuelles de votre VPS sont affichées ici et peuvent être mises à jour séparément en cliquant sur le bouton correspondant. À noter que les mises à niveau sont limitées par le modèle de VPS choisi et peuvent uniquement être disponibles en passant à une [gamme supérieure](/links/bare-metal/vps).
 > Disques additionnels
 >> 
 >> Ajoutez des disques supplémentaires à votre VPS pour augmenter la capacité de stockage de votre serveur au-delà de celle incluse dans la configuration initiale. Vous pouvez par exemple y stocker des données de sauvegarde.
@@ -119,7 +120,7 @@ Ces options se réfèrent à des services VPS supplémentaires qui peuvent être
 >> 
 >> L'option `Backup automatisé` permet de programmer des sauvegardes régulières de votre VPS. Contrairement aux snapshots manuels, cette fonctionnalité conserve plusieurs points de restauration dans le temps, vous offrant ainsi une protection continue et automatique de vos données (hors disques additionnels).
 
-Retrouvez toutes les informations sur les solutions de sauvegarde disponibles pour votre service sur la [page produit VPS](https://www.ovhcloud.com/fr/vps/options/) et dans nos [guides respectifs](/products/bare-metal-cloud-virtual-private-servers-backups).
+Retrouvez toutes les informations sur les solutions de sauvegarde disponibles pour votre service sur la [page produit VPS](/links/bare-metal/vps-options) et dans nos [guides respectifs](/products/bare-metal-cloud-virtual-private-servers-backups).
 
 #### Abonnement
 
@@ -197,10 +198,12 @@ ssh username@IPv4_VPS
 Exemple :
 
 ```bash
-ssh ubuntu@169.254.10.250
+ssh ubuntu@203.0.113.101
 ```
 
 Vous pouvez également utiliser toute application tierce compatible avec **Open SSH**.
+
+<a name="linuxconnect"></a>
 
 #### Distribution GNU/Linux
 
@@ -349,7 +352,7 @@ Une fois votre VPS configuré, nous vous recommandons de sécuriser votre nom de
 
 Ce certificat SSL peut être installé manuellement, directement sur le VPS. Reportez-vous à la documentation officielle de votre distribution VPS.
 
-Pour un processus plus automatisé, OVHcloud propose également la solution « SSL Gateway ». Référez-vous à la [page produit](https://www.ovh.com/fr/ssl-gateway/) ou à notre [documentation](/products/web-cloud-ssl-gateway) pour plus d’informations.
+Pour un processus plus automatisé, OVHcloud propose également la solution « SSL Gateway ». Référez-vous à la [page produit](/links/web/ssl-gateway) ou à notre [documentation](/products/web-cloud-ssl-gateway) pour plus d’informations.
 
 ## Allez plus loin
 
@@ -359,4 +362,4 @@ Pour un processus plus automatisé, OVHcloud propose également la solution « S
 
 [Sécuriser un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).
