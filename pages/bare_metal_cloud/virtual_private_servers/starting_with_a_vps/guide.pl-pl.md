@@ -1,7 +1,7 @@
 ---
 title: Pierwsze kroki z serwerem VPS
 excerpt: Dowiedz się, jak zarządzać serwerem VPS w Panelu klienta i poznaj pierwsze kroki korzystania z niego, w tym zdalne połączenia i środki bezpieczeństwa
-updated: 2024-04-05
+updated: 2024-10-01
 ---
 
 > [!primary]
@@ -10,13 +10,13 @@ updated: 2024-04-05
  
 ## Wprowadzenie
 
-Prywatny serwer wirtualny (VPS) to wirtualny serwer dedykowany. W przeciwieństwie do rozwiązań hostingowych OVHcloud, którymi zarządza OVHcloud, konfiguracja i konserwacja systemu VPS należy do Twoich kompetencji jako administratora systemu.
+Prywatny serwer wirtualny (VPS) to zwirtualizowany serwer dedykowany, który zapewnia większą elastyczność i kontrolę w porównaniu do tradycyjnych rozwiązań hostingowych. W przeciwieństwie do rozwiązań hostingowych zarządzanych przez OVHcloud, w których zadania związane z zarządzaniem są wykonywane, administrowanie serwerem VPS należy wyłącznie do Ciebie. Jako administrator systemu jesteś odpowiedzialny za konfigurację, konserwację i zabezpieczenie serwera, w celu zagwarantowania jego prawidłowego działania i niezawodności.
 
 **Poznaj informacje niezbędne do rozpoczęcia pracy z serwerem VPS.**
 
 ## Wymagania początkowe
 
-- Posiadanie serwera [VPS](https://www.ovhcloud.com/pl/vps/) w Panelu klienta OVHcloud
+- Posiadanie serwera [VPS](/links/bare-metal/vps) w Panelu klienta OVHcloud
 - Dostęp do [Panelu klienta OVHcloud](/links/manager)
 
 ## W praktyce
@@ -25,8 +25,9 @@ Prywatny serwer wirtualny (VPS) to wirtualny serwer dedykowany. W przeciwieństw
 
 - [Panel klienta](#controlpanel)
 - [Funkcje VPS dostępne w zakładce "Strona główna"](#hometab)
-- [Logowanie do serwera VPS (OS GNU/Linux)](#connect)
-- [Łączenie z serwerem VPS Windows](#winconnect)
+- [Logowanie do serwera VPS](#connect)
+    - [Dystrybucja GNU/Linux](#linuxconnect)
+    - [Dystrybucja Windows](#winconnect)
 - [Zabezpiecz Twój serwer VPS](#secure)
 - [Przypisz domenę](#domain)
 
@@ -42,52 +43,57 @@ Karta `Strona`{.action} główna zawiera ważne informacje o Twojej usłudze i u
 
 #### Twój VPS <a name="yourvps"></a>
 
-W tej części znajdziesz podstawowe informacje o serwerze VPS i stanie usługi. Kliknij poniższe zakładki, aby wyświetlić szczegółowe informacje.
+Poniżej znajdziesz podstawowe informacje o Twoim serwerze VPS oraz o stanie usługi. Kliknij poniższe zakładki, aby wyświetlić szczegółowe informacje.
 
 > [!tabs]
-> Nazwisko
+> Nazwa
 >>
->> Jeśli klikniesz `...`{.action}, a następnie wybierzesz `Zmień nazwę`{.action}, będziesz mógł wprowadzić osobną nazwę dla tego VPS. Funkcja ta jest przydatna w przypadku zarządzania kilkoma usługami VPS. Nazwa wewnętrznej usługi jest zapisana w formacie *vps-XXXXXXX.vps.ovh.net*.
+>> Aby spersonalizować nazwę serwera VPS, kliknij przycisk `...`{.action}, następnie wybierz `Zmień nazwę`{.action}. Funkcja ta jest przydatna w przypadku zarządzania kilkoma usługami VPS. Wewnętrzna nazwa usługi jest nadal w formacie *vps-XXXXX.vps.ovh.net*.
 >>
 > Boot
 >>
->> Wyświetlony tutaj tryb uruchamiania działa w trybie "normalnym", w którym system ładuje zainstalowany system operacyjny (*LOCAL*) lub w **trybie rescue** dostarczonym przez OVHcloud w przypadku rozwiązywania problemów. Użyj przycisku `...`{.action} aby [zrestartować serwer VPS](#reboot-current-range) lub uruchomić go w trybie Rescue.
+>> Wskazany tryb uruchamiania to **tryb normalny**, w którym serwer ładuje zainstalowany system operacyjny (*LOCAL*), lub **tryb rescue**, dostarczony przez OVHcloud w przypadku rozwiązywania problemów. Użyj przycisku `...`{.action} aby [zrestartować VPS](#reboot-current-range) lub uruchom go w trybie rescue, jeśli jest to wymagane.
 >>
->> Więcej informacji na ten temat znajdziesz w naszym przewodniku o [trybie Rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue).
+>> Więcej informacji na ten temat znajdziesz w przewodniku dotyczącym [trybu Rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue).
 >>
 > OS / Dystrybucja
 >>
->> Jest to aktualnie zainstalowany system operacyjny. Użyj przycisku `...`{.action} aby [ponownie zainstalować ten sam system operacyjny lub wybrać inny z dostępnych](#reinstallvps) opcji.
+>> est to aktualnie zainstalowany system operacyjny. Użyj przycisku `...`{.action} aby [ponownie zainstalować ten sam system operacyjny lub wybrać inny spośród dostępnych opcji](#reinstalvps).
 >>
->> Pamiętaj, że reinstalacja usunie wszystkie dane aktualnie hostowane na serwerze VPS (z wyjątkiem dodatkowych dysków).
+>> > [!warning]
+>> >
+>> > Reinstalacja usunie wszystkie dane aktualnie hostowane na serwerze VPS (z wyjątkiem dodatkowych dysków).
 >>
 >> > [!primary]
 >> >
->> > Jeśli zamówiłeś VPS **Windows**, możesz wybrać do reinstalacji tylko jeden OS Windows. Podobnie, jeśli system Windows nie został wybrany podczas zamówienia, nie może zostać zainstalowany po zainstalowaniu serwera VPS.
+>> > Jeśli zamówiłeś VPS **Windows**, możesz wybrać tylko system Windows do reinstalacji. Podobnie, jeśli system Windows nie został wybrany podczas zamówienia, nie może zostać zainstalowany po zainstalowaniu serwera VPS.
 >>
 >>
->> Po zainstalowaniu systemu wykonaj aktualizacje zabezpieczeń. Więcej informacji znajdziesz [poniżej](#reinstallvps) i w naszym przewodniku [Zabezpiecz serwer VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps).
+>> Po zainstalowaniu systemu wykonaj aktualizacje zabezpieczeń. Więcej informacji [poniżej](#reinstalvps) znajdziesz w naszym przewodniku "[Zabezpiecz serwer VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)".
 >> 
 > Strefa / Lokalizacja
 >>
->> W tych sekcjach znajdziesz informacje o lokalizacji serwera VPS. Może to być przydatne na przykład do identyfikacji skutków dla Twojej usługi wymienionych w [status reports](https://bare-metal-servers.status-ovhcloud.com/).
+>> W tych sekcjach znajdziesz informacje o lokalizacji serwera VPS. Może to być przydatne do zidentyfikowania i oceny ewentualnych skutków dla Twojej usługi, takich jak te wymienione w [raportach o awariach lub konserwacjach](https://bare-metal-servers.status-ovhcloud.com/).
 >>
- 
-#### Twoja konfiguracja
+
+### Twoja konfiguracja
 
 Kliknij poniższe karty, aby wyświetlić szczegóły tej sekcji.
 
 > [!tabs]
-> Model
+> Szablon
 >>
->> Ten element wskazuje model biznesowy identyfikujący model serwera VPS odpowiadający [ofertom VPS na naszej stronie](https://www.ovhcloud.com/pl/vps).
+>> Ten element służy do identyfikacji modelu serwera VPS odpowiadającego [ofertom VPS na naszej stronie](/links/bare-metal/vps).
 >>
 > vCores / Pamięć / Przestrzeń dyskowa
 >> 
->> Tutaj wyświetlają się bieżące zasoby Twojego serwera VPS. Możesz je zaktualizować osobno, klikając odpowiedni przycisk. Aktualizacje są ograniczone wybranym modelem VPS i mogą być dostępne tylko po przejściu na wyższą [gamę](https://www.ovhcloud.com/pl/vps).
->> 
+>> Aktualne zasoby serwera VPS wyświetlają się tutaj. Możesz je zaktualizować osobno, klikając odpowiedni przycisk. Aktualizacje są ograniczone wybranym modelem VPS i mogą być dostępne tylko po przejściu na [wyższą gamę](/links/bare-metal/vps).
+>>
+> Dodatkowe dyski
+>>
+>> Dodaj do serwera VPS dodatkowe dyski, aby zwiększyć przestrzeń dyskową serwera poza wstępną konfiguracją. Możesz na przykład przechowywać na nim dane kopii zapasowych.
 
-#### Adresy IP
+### IP
 
 Kliknij poniższe karty, aby wyświetlić szczegóły tej sekcji.
 
@@ -104,23 +110,28 @@ Kliknij poniższe karty, aby wyświetlić szczegóły tej sekcji.
 >>
 >> Funkcja ta jest przydatna przy instalowaniu usług DNS. Szczegółowo opisany jest [w przewodniku dotyczącym konfigurowania DNS secondary OVHcloud na serwerze VPS](/pages/bare_metal_cloud/virtual_private_servers/adding-secondary-dns-on-vps).
 
-#### Podsumowanie opcji
+### Kopia zapasowa
 
 Opcje te dotyczą dodatkowych usług VPS, które można zamówić w Panelu klienta.
 
-- Opcja `Snapshot` pozwala na utworzenie ręcznego snapshota jako pojedynczego punktu przywracania.
-- Opcja `Zautomatyzowany backup` zapasowych pozwala na zachowanie kilku snapshotów serwera VPS (z wyłączeniem dodatkowych dysków).
-- Opcja `Dodatkowe dyski` pozwala na podłączenie przestrzeni dyskowej do Twojego serwera VPS, na przykład w celu przechowywania danych kopii zapasowych.
+> [!tabs]
+> Snapshot
+>>
+>> Snapshot serwera VPS to natychmiastowa kopia stanu serwera, która umożliwia szybkie przywrócenie systemu w przypadku problemu. Opcja `Snapshot` pozwala na utworzenie ręcznego snapshota jako pojedynczego punktu przywracania.
+>>
+> Automatyczny backup
+>>
+>> Opcja `Automatyczny backup` pozwala na zaplanowanie regularnych kopii zapasowych serwera VPS. W przeciwieństwie do snapshotów wykonywanych ręcznie, funkcja ta zachowuje kilka punktów przywracania w czasie, zapewniając w ten sposób ciągłą i automatyczną ochronę danych (z wyłączeniem dodatkowych dysków).
 
-Wszystkie informacje na temat dostępnych dla Twojej usługi rozwiązań do tworzenia kopii zapasowych można znaleźć na [stronie produktu](https://www.ovhcloud.com/pl/vps/options/) oraz w odpowiednich [przewodnikach](/products/bare-metal-cloud-virtual-private-servers-backups).
+Wszystkie informacje dotyczące dostępnych dla Twojej usługi rozwiązań do tworzenia kopii zapasowych znajdują się na stronie [produkt VPS] (/links/bare-metal/vps-options) oraz w naszych [przewodnikach] (/products/bare-metal-cloud-virtual-private-servers-backups).
 
-#### Abonament
+### Subskrypcja
 
 W tych sekcjach znajdują się najważniejsze informacje dotyczące fakturowania usługi. Wszystkie informacje na ten temat znajdziesz w odpowiedniej [dokumentacji](/products/account-and-service-management-managing-billing-payments-and-services).
 
 <a name="hometab"></a>
 
-### Funkcje VPS dostępne w zakładce "Strona główna"
+## Funkcje VPS dostępne w zakładce "Strona główna"
 
 > [!warning]
 >
@@ -129,15 +140,21 @@ W tych sekcjach znajdują się najważniejsze informacje dotyczące fakturowania
 > Celem niniejszego przewodnika jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. Niemniej jednak, w przypadku trudności lub wątpliwości związanych z administrowaniem, użytkowaniem lub wdrażaniem usług na serwerze, zalecamy skontaktowanie się z [wyspecjalizowanym](https://partner.ovhcloud.com/pl/directory/) dostawcą usług lub [naszą społecznością](https://community.ovh.com/en/).
 >
 
-#### Reinstalacja serwera VPS <a name="reinstallvps"></a>
+### Reinstalacja serwera VPS <a name="reinstalacja vps"></a>
 
-Reinstalacja jest możliwa po zalogowaniu się do panelu klienta. Kliknij `...`{.action} obok **OS / Dystrybucja**, a następnie `Reinstalacja serwera VPS`{.action}.
+Reinstalacja serwera VPS może zostać przeprowadzona z poziomu panelu klienta. Kliknij przycisk`...`{.action} po prawej stronie `OS / Distribution`{.action}, a następnie `Reinstaluj mój VPS`{.action}.
 
-![Reinstalacja serwera VPS](images/2023panel_01.png){.thumbnail}
+![VPSnewreinstalacja](images/2023panel_01.png){.thumbnail}
 
-W oknie, które się pojawi, wybierz system operacyjny z rozwijanej listy. Proponowane opcje to obrazy [kompatybilne z serwerem VPS OVHcloud](/pages/public_cloud/compute/image-life-cycle) i są gotowe do użytku natychmiast po instalacji.
+W oknie, które się pojawi, wybierz system operacyjny z rozwijanej listy. Proponowane opcje to [obrazy kompatybilne z serwerem VPS OVHcloud] (/pages/public_cloud/compute/image-life-cycle), które zaczną działać natychmiast po instalacji.
 
-Możesz również wybrać **klucz SSH** do zainstalowania w systemie, jeśli wcześniej przechowywałeś go w Panelu [klienta OVHcloud](/links/manager). Więcej informacji na ten temat znajdziesz w przewodniku Tworzenie i [używanie kluczy SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
+Możesz również wybrać **klucz SSH** do zainstalowania w systemie, jeśli wcześniej przechowywałeś go w swoim [Panelu klienta OVHcloud](/links/manager). Więcej informacji na ten temat znajdziesz w przewodniku "[Tworzenie i używanie kluczy SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)".
+Jeśli wybrałeś klucz SSH i nie potrzebujesz identyfikatora i hasła, aby się zalogować, zaznacz kratkę `Nie chcę otrzymywać na e-mail danych do logowania dla mojego serwera VPS.`.
+
+> [!warning]
+>
+> Reinstalacja sformatuje wszystkie dyski serwera. Zalecamy utworzenie kopii zapasowej snapshot serwera VPS przed kontynuowaniem, aby w przypadku problemów móc wrócić do poprzedniego stanu.
+>
 
 > [!primary]
 >
@@ -148,9 +165,9 @@ Możesz również wybrać **klucz SSH** do zainstalowania w systemie, jeśli wcz
 > Aby posiadać system operacyjny **Windows** działający na serwerze VPS, należy **wybrać w procesie zamówienia**. Na serwerze VPS z innym zainstalowanym systemem operacyjnym nie można zainstalować systemu Windows w sposób opisany powyżej.
 >
 
-W Panelu klienta wyświetli się pasek postępu instalacji. Operacja ta może potrwać do 30 minut.
+Reinstalacja może zająć kilka minut.
 
-#### Restart serwera VPS <a name="reboot-current-range"></a>
+### Restart serwera VPS <a name="reboot-current-range"></a>
 
 Ponowne uruchomienie może być konieczne w celu zastosowania zaktualizowanych konfiguracji lub rozwiązania problemu. Jeśli to możliwe, wykonaj "restart oprogramowania" w graficznym interfejsie serwera (Windows, Plesk, ...) lub za pomocą wiersza poleceń:
 
@@ -164,7 +181,12 @@ Jednak w każdej chwili możesz wykonać "reboot sprzętowy" w Panelu [klienta O
 
 <a name="connect"></a>
 
-### Logowanie do serwera VPS (OS GNU/Linux)
+### Logowanie do serwera VPS
+
+> [!warning]
+>
+> Ze względów bezpieczeństwa podczas pierwszego logowania do serwera VPS należy zmienić hasło otrzymane na e-mail, aby zastąpić je nowym, silnym hasłem. Po wprowadzeniu modyfikacji interfejs, którego używasz (np. Putty) może zostać automatycznie zamknięty w celu wylogowania. Następnie zaloguj się ponownie przy użyciu nowego hasła.
+>
 
 Przy pierwszej instalacji lub podczas reinstalacji z Panelu sterowania automatycznie tworzony jest użytkownik z podwyższonym poziomem uprawnień. Ten użytkownik będzie nazwany w zależności od systemu operacyjnego, na przykład "ubuntu" lub "rocky".
 
@@ -179,10 +201,14 @@ ssh username@IPv4_VPS
 Przykład:
 
 ```bash
-ssh ubuntu@169.254.10.250
+ssh ubuntu@203.0.113.101
 ```
 
 Możesz również korzystać z dowolnej aplikacji innej firmy, która jest kompatybilna z **Open SSH**.
+
+<a name="linuxconnect"></a>
+
+#### Dystrybucja GNU/Linux
 
 Po zalogowaniu się możesz zmienić predefiniowane hasło bieżącego użytkownika na silne hasło, używając tego polecenia:
 
@@ -224,9 +250,9 @@ Należy pamiętać, że w przypadku wyboru **dystrybucji z aplikacją** (Plesk, 
 
 <a name="winconnect"></a>
 
-### Logowanie do VPS Windows
+#### VPS Windows
 
-### Krok 1: zakończenie instalacji systemu Windows
+#### Krok 1: zakończenie instalacji systemu Windows
 
 Po zainstalowaniu systemu operacyjnego Windows otrzymasz wiadomość e-mail z nazwą domyślnego konta użytkownika `Windows user`.
 
@@ -258,7 +284,7 @@ Aby dokończyć wstępną konfigurację serwera VPS Windows, wykonaj poniższe k
 >>![KVM](/pages/assets/screens/other/windows/windows_login.png){.thumbnail}<br>
 >>
 
-### Etap 2: łączenie się z serwerem za pomocą protokołu RDP
+#### Etap 2: łączenie się z serwerem za pomocą protokołu RDP
 
 Na lokalnym sprzęcie z systemem Windows możesz połączyć się z serwerem VPS za pomocą aplikacji klienckiej `Remote Desktop Connection`.
 
@@ -273,7 +299,7 @@ Możesz również użyć innej aplikacji innej firmy kompatybilnej z RDP. Jest t
 W przypadku wystąpienia problemów z tą procedurą sprawdź, czy na urządzeniu są dozwolone połączenia zdalne (RDP), sprawdzając ustawienia systemu, reguły zapory i możliwe ograniczenia sieciowe.
 >
 
-### Aktywacja dzienników rozruchu systemu Windows (opcjonalnie)
+#### Aktywacja dzienników rozruchu systemu Windows (opcjonalnie)
 
 Dzienniki rozruchowe systemu Windows mogą być przydatne w diagnostyce błędów serwera.
 
@@ -329,7 +355,7 @@ Po skonfigurowaniu Twojego serwera VPS, masz możliwość zabezpieczenia nazwy T
 
 Certyfikat SSL można zainstalować ręcznie, bezpośrednio na serwerze VPS. Zapoznaj się z oficjalną dokumentacją dotyczącą Twojej dystrybucji VPS.
 
-W przypadku bardziej zautomatyzowanego procesu OVHcloud oferuje również rozwiązanie SSL Gateway. Więcej informacji znajdziesz na [stronie produktu](https://www.ovh.pl/ssl-gateway/) lub w [przewodniku](/products/web-cloud-ssl-gateway) OVHcloud.
+W przypadku bardziej zautomatyzowanego procesu OVHcloud oferuje również rozwiązanie SSL Gateway. Więcej informacji znajdziesz na [stronie produktu](https://www.ovh.pl/ssl-gateway/) lub w [przewodniku](/links/web/ssl-gateway) OVHcloud.
 
 ## Sprawdź również
 

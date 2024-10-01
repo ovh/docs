@@ -1,7 +1,7 @@
 ---
 title: Primeros pasos con un VPS
 excerpt: Aprenda a gestionar un VPS en su área de cliente y descubra las primeras etapas de su uso, incluyendo las conexiones a distancia y las medidas de seguridad
-updated: 2024-04-05
+updated: 2024-10-01
 ---
 
 > [!primary]
@@ -179,7 +179,7 @@ ssh username@IPv4_VPS
 Por ejemplo:
 
 ```bash
-ssh ubuntu@169.254.10.250
+ssh ubuntu@203.0.113.101
 ```
 
 También puede utilizar cualquier aplicación de terceros compatible con **Open SSH**.

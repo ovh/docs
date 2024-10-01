@@ -6,7 +6,7 @@ updated: 2024-10-01
 
 ## Objective
 
-A **V**irtual **P**rivate **S**erver (VPS) is a virtualized dedicated server that gives you greater flexibility and control over traditional web hosting solutions. Unlike the hosting plans managed by OVHcloud, where management tasks are taken care of, the administration of a VPS is entirely your responsibility. As a system administrator, you are responsible for configuring, maintaining, and securing the server to ensure its proper operation and reliability.
+A **V**irtual **P**rivate **S**erver is a virtualized dedicated server that gives you greater flexibility and control over traditional web hosting solutions. Unlike the hosting plans managed by OVHcloud, where management tasks are taken care of, the administration of a VPS is entirely your responsibility. As a system administrator, you are responsible for configuring, maintaining, and securing the server to ensure its proper operation and reliability.
 
 **This guide provides all the information required for your first steps with a VPS.**
 
@@ -148,7 +148,7 @@ If you have selected an SSH key and you do not need a username and password to l
 
 > [!warning]
 >
-> The reinstallation will format all the disks on the server. We recommend taking a snapshot of your VPS before you continue, so that you can return to the previous state if you encounter any issues.
+> The reinstallation will overwrite all data on the server. We recommend taking a snapshot of your VPS before you continue, so that you can return to the previous state if you encounter any issues.
 >
 
 > [!primary]
@@ -170,7 +170,7 @@ A reboot might become necessary in order to apply updated configurations or to f
 sudo reboot
 ```
 
-However, you can force a reboot at any time in your [OVHcloud Control Panel](/links/manager). In the `Home`{.action} tab, click the `...`{.action} button next to `Boot` in the **Your VPS** section. Select `Reboot my VPS`{.action} and click `Confirm`{.action} in the window that pops up.
+However, you can force a "hard reboot" at any time in your [OVHcloud Control Panel](/links/manager). In the `Home`{.action} tab, click the `...`{.action} button next to `Boot` in the **Your VPS** section. Select `Reboot my VPS`{.action} and click `Confirm`{.action} in the window that pops up.
 
 ![Reboot](images/reboot-vps01.png){.thumbnail}
 
