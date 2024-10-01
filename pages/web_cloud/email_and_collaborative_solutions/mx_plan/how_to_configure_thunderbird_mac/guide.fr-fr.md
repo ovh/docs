@@ -1,7 +1,7 @@
 ---
 title: 'MX Plan - Configurer son compte e-mail sur Thunderbird pour macOS'
 excerpt: 'Découvrez comment configurer votre adresse e-mail MX Plan sur Thunderbird sur Mac OS'
-updated: 2021-08-26
+updated: 2024-10-01
 ---
 
 ## Objectif

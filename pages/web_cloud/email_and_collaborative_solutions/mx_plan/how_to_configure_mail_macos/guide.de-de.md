@@ -1,6 +1,6 @@
 ---
 title: "MX Plan - Konfiguration Ihrer E-Mail-Adresse in Mail für macOS"
-updated: 2022-06-13
+updated: 2024-10-01
 ---
 
 > [!primary]

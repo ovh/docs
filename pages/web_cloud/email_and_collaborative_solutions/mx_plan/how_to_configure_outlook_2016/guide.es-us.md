@@ -1,7 +1,7 @@
 ---
 title: "MX Plan - Configurar una dirección de correo electrónico en Outlook para Windows"
 excerpt: "Cómo configurar una cuenta MX Plan en Outlook para Windows"
-updated: 2024-02-16
+updated: 2024-10-01
 ---
 
 <style>
@@ -172,6 +172,10 @@ Para entender la diferencia entre el uso del protocolo POP e IMAP, vamos a detal
 > Esta descripción es un resumen y representa el funcionamiento estándar de ambos protocolos. Es posible configurar el PoP para que los mensajes de correo no se eliminen al recibir los mensajes. Nuestro objetivo es describir el funcionamiento nativo de estos dos protocolos.
 
 ## Más información
+
+> [!primary]
+>
+> Para obtener más información sobre la configuración de una dirección de correo electrónico desde la aplicación Outlook en macOS, consulte [el Centro de ayuda de Microsoft](https://support.microsoft.com/es-es/office/agregar-cuenta-de-correo-en-outlook-6e27792a-9267-4aa4-8bb6-c84ef146101b).
 
 [Configurar una cuenta Email Pro en Outlook para Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)
 

@@ -1,7 +1,7 @@
 ---
 title: 'MX Plan - Konfiguration Ihrer E-Mail-Adresse auf Outlook für macOS'
 excerpt: 'So konfigurieren Sie Ihre MX Plan E-Mail-Adresse auf Outlook für macOS'
-updated: 2018-05-31
+updated: 2024-10-01
 ---
 
 ## Einleitung

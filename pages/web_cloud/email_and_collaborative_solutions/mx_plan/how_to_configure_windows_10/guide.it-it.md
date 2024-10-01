@@ -1,7 +1,7 @@
 ---
 title: 'MX Plan - Configura il tuo account di posta elettronica su Courrier per Windows'
 excerpt: 'Scopri come configurare un account email MX Plan sull’applicazione Posta per Windows'
-updated: 2018-04-04
+updated: 2024-10-01
 ---
 
 ## Obiettivo

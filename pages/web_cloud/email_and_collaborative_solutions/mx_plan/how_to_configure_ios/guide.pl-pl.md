@@ -1,7 +1,7 @@
 ---
 title: "MX Plan - Skonfiguruj swoje konto e-mail w programie Mail dla systemu iPhone i iPad"
 excerpt: 'Dowiedz się, jak skonfigurować konto e-mail MX Plan na urządzeniu iPhone lub iPad'
-updated: 2022-07-20
+updated: 2024-10-01
 ---
 
 > [!primary]

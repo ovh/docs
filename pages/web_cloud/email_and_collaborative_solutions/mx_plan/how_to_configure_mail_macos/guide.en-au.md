@@ -1,7 +1,7 @@
 ---
 title: 'Configuring an email address on the macOS Mail app'
 excerpt: 'Find out how to configure an email address on the Mail app, for the following macOS operating systems - El Capitan, Sierra and High Sierra'
-updated: 2022-06-13
+updated: 2024-10-01
 ---
 
 ## Objective
@@ -79,5 +79,9 @@ For **POP** configuration, the values are:
 > When you configure your email address in **IMAP** and you want to change the configuration to **POP**, it is necessary to delete the account from Mac Mail and then recreate it in **POP** to change the configuration.
 
 ## Go further
-  
+
+> [!primary]
+>
+> For more information on configuring an email address from the Mail app on macOS, see [the Apple Help Center](https://support.apple.com/en-gb/guide/mail/mail35803/mac).
+
 Join our community of users on <https://community.ovh.com/en/>.

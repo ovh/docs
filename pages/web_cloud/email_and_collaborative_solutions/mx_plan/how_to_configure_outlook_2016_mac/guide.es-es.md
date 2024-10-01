@@ -1,7 +1,7 @@
 ---
 title: 'MX Plan - Configurar una dirección de correo electrónico en Outlook para macOS'
 excerpt: 'Cómo configurar una cuenta MX Plan en Outlook para macOS'
-updated: 2018-05-31
+updated: 2024-10-01
 ---
 
 ## Objetivo

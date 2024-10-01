@@ -1,7 +1,7 @@
 ---
 title: 'MX Plan - Configure sua conta de e-mail no Thunderbird para Windows'
 excerpt: "Saiba como configurar um endereço de e-mail MX Plan sobre a aplicação Correio para Windows"
-updated: 2018-04-04
+updated: 2024-10-01
 ---
 
 ## Objetivo

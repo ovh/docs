@@ -1,7 +1,7 @@
 ---
 title: 'MX Plan - Configure su cuenta de correo electrónico en Courrier para Windows'
 excerpt: 'Cómo configurar una cuenta de correo electrónico en la aplicación Correo de Windows'
-updated: 2018-04-04
+updated: 2024-10-01
 ---
 
 ## Objetivo

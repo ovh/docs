@@ -1,7 +1,7 @@
 ---
 title: 'MX Plan - Konfigurieren Sie Ihr E-Mail-Konto in Thunderbird für Windows'
 excerpt: 'Erfahren Sie hier, wie Sie Ihren Mailaccount in Thunderbird für Windows einrichten'
-updated: 2021-08-26
+updated: 2024-10-01
 ---
 
 > [!primary]

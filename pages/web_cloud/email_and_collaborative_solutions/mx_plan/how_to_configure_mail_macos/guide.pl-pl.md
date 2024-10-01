@@ -1,6 +1,6 @@
 ---
 title: 'MX Plan - Skonfiguruj swoje konto e-mail w programie Mail dla systemu macOS'
-updated: 2022-06-13
+updated: 2024-10-01
 ---
 
 > [!primary]

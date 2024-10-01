@@ -1,7 +1,7 @@
 ---
 title: 'MX Plan - Skonfiguruj swoje konto e-mail w programie Thunderbird dla systemu macOS'
 excerpt: 'Informacje dotyczące konfiguracji Twojego konta e-mail w programie Thunderbird znajdują się tutaj.'
-updated: 2021-08-26
+updated: 2024-10-01
 ---
 
 > [!primary]

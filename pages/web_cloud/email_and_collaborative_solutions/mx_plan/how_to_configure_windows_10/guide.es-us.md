@@ -1,7 +1,7 @@
 ---
 title: 'Configurar una cuenta de correo electrónico en la aplicación Correo de Windows 10'
 excerpt: 'Cómo configurar una cuenta de correo electrónico en la aplicación Correo de Windows'
-updated: 2018-04-04
+updated: 2024-10-01
 ---
 
 ## Objetivo
@@ -81,7 +81,11 @@ Si la aplicación le pide que introduzca de forma manual algunos datos técnicos
 Una vez que haya configurado la dirección de correo electrónico, ya puede empezar a utilizarla enviando y recibiendo mensajes.
 
 OVHcloud ofrece una aplicación web con la que podrá acceder a su cuenta de correo electrónico desde el navegador, disponible en la dirección [Webmail](/links/web/email). Puede acceder con el nombre de usuario y la contraseña de su dirección de correo electrónico.
- 
+
 ## Más información
+
+> [!primary]
+>
+> Para obtener más información sobre la configuración de una dirección de correo electrónico desde el cliente de correo de Windows, consulte [el Centro de ayuda de Microsoft](https://support.microsoft.com/es-es/office/config-l-mail-en-l-application-mail-7ff79e8b-439b-4b47-8ff9-3f9a33166c60).
 
 Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/).

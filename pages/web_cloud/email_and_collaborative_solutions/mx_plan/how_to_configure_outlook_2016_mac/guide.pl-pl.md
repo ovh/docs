@@ -1,7 +1,7 @@
 ---
 title: MX Plan - Konfiguracja konta e-mail w programie Outlook na urządzeniu z systemem macOS
 excerpt: Dowiedz się, jak skonfigurować konto e-mail MX Plan w programie Outlook na urządzeniu macOS
-updated: 2018-05-31
+updated: 2024-10-01
 ---
 
 ## Wprowadzenie

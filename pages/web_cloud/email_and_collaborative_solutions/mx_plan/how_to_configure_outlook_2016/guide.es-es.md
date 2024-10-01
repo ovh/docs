@@ -1,7 +1,7 @@
 ---
 title: "MX Plan - Configurar una dirección de correo electrónico en Outlook para Windows"
 excerpt: "Cómo configurar una cuenta MX Plan en Outlook para Windows"
-updated: 2024-02-16
+updated: 2024-10-01
 ---
 
 <style>

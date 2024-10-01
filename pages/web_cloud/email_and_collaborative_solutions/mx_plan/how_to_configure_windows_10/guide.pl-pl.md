@@ -1,7 +1,7 @@
 ---
 title: 'MX Plan - Skonfiguruj swoje konto e-mail w programie Courrier dla systemu Windows'
 excerpt: 'Dowiedz się, jak skonfigurować Twoje konto e-mail MX Plan w aplikacji Poczta na urządzeniu z systemem Windows'
-updated: 2018-04-04
+updated: 2024-10-01
 ---
 
 ## Wprowadzenie

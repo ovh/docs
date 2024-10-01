@@ -1,7 +1,7 @@
 ---
 title: 'Configuring your email address in the Mail application for Windows 10'
 excerpt: 'Find out how to configure your email address in the Mail app for Windows 10.'
-updated: 2018-04-04
+updated: 2024-10-01
 ---
 
 ## Objective
@@ -79,6 +79,10 @@ Once you have configured your email address, you can start using it! You can now
 OVHcloud also has a web application you can use to access your email account from your browser. You can access this application via the following address: [Webmail](/links/web/email). You can log in using your email credentials.
  
 ## Go further
+
+> [!primary]
+>
+> For more information about setting up an email address from the Mail on Windows email client, see [Microsoft Help Center](https://support.microsoft.com/en-gb/office/setting-email-in-mail-application-7ff79e8b-439b-4b47-8ff9-3f9a33166c60).
 
 [Configuring your Exchange account in the Mail app for Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_windows_10)
 

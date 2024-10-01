@@ -1,7 +1,7 @@
 ---
 title: MX Plan - Configura il tuo account di posta elettronica su Thunderbird per macOS
 excerpt: Trovi qui le informazioni per configurare il tuo indirizzo email su Thunderbird.
-updated: 2021-08-26
+updated: 2024-10-01
 ---
 
 > [!primary]

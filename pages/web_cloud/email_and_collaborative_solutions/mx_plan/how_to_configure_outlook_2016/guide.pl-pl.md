@@ -1,7 +1,7 @@
 ---
 title: "MX Plan - Konfiguracja konta e-mail w programie Outlook na urządzeniu z systemem Windows"
 excerpt: "Dowiedz się, jak skonfigurować Twoje konto e-mail MX Plan w programie Outlook na urządzeniu z systemem Windows"
-updated: 2024-02-16
+updated: 2024-10-01
 ---
 
 <style>
