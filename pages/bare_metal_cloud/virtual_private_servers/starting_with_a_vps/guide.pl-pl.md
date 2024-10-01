@@ -123,7 +123,7 @@ Opcje te dotyczą dodatkowych usług VPS, które można zamówić w Panelu klien
 >>
 >> Opcja `Automatyczny backup` pozwala na zaplanowanie regularnych kopii zapasowych serwera VPS. W przeciwieństwie do snapshotów wykonywanych ręcznie, funkcja ta zachowuje kilka punktów przywracania w czasie, zapewniając w ten sposób ciągłą i automatyczną ochronę danych (z wyłączeniem dodatkowych dysków).
 
-Wszystkie informacje dotyczące dostępnych dla Twojej usługi rozwiązań do tworzenia kopii zapasowych znajdują się na stronie [produkt VPS] (/links/bare-metal/vps-options) oraz w naszych [przewodnikach] (/products/bare-metal-cloud-virtual-private-servers-backups).
+Wszystkie informacje dotyczące dostępnych dla Twojej usługi rozwiązań do tworzenia kopii zapasowych znajdują się na stronie [produkt VPS](/links/bare-metal/vps-options) oraz w naszych [przewodnikach](/products/bare-metal-cloud-virtual-private-servers-backups).
 
 ### Subskrypcja
 
@@ -146,7 +146,7 @@ Reinstalacja serwera VPS może zostać przeprowadzona z poziomu panelu klienta. 
 
 ![VPSnewreinstalacja](images/2023panel_01.png){.thumbnail}
 
-W oknie, które się pojawi, wybierz system operacyjny z rozwijanej listy. Proponowane opcje to [obrazy kompatybilne z serwerem VPS OVHcloud] (/pages/public_cloud/compute/image-life-cycle), które zaczną działać natychmiast po instalacji.
+W oknie, które się pojawi, wybierz system operacyjny z rozwijanej listy. Proponowane opcje to [obrazy kompatybilne z serwerem VPS OVHcloud](/pages/public_cloud/compute/image-life-cycle), które zaczną działać natychmiast po instalacji.
 
 Możesz również wybrać **klucz SSH** do zainstalowania w systemie, jeśli wcześniej przechowywałeś go w swoim [Panelu klienta OVHcloud](/links/manager). Więcej informacji na ten temat znajdziesz w przewodniku "[Tworzenie i używanie kluczy SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)".
 Jeśli wybrałeś klucz SSH i nie potrzebujesz identyfikatora i hasła, aby się zalogować, zaznacz kratkę `Nie chcę otrzymywać na e-mail danych do logowania dla mojego serwera VPS.`.
