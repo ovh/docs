@@ -1,7 +1,7 @@
 ---
 title: "Gestion du reboot de vos serveurs avec la fonctionnalité OVHcloud Link Aggregation"
 excerpt: "Découvrez comment réaliser les redémarrages de vos serveurs OVHcloud fonctionnant à travers votre agrégation privée active"
-updated: 2024-10-01
+updated: 2024-10-02
 ---
 
 ## Objectif
@@ -33,7 +33,7 @@ La seule différence majeure notable est que les [réseaux privés](/pages/netwo
 Par conséquent, un serveur isolé de par son réseau privé empêche le mecanisme de démarrage. C'est à dire que lorsque les systèmes sont démarrés via le méthode **Netboot** (Network Boot), ces derniers s'appuient sur le réseau interne d'OVHcloud et ses services mutualisés.
 
 > [!warning]
-> Veuillez noter qu'avec les serveurs Advance de 2ème et 3ème génération sur une architecture T3 (une interface publique et une interface vrack), il n'est pas possible d'avoir deux interfaces dans le vrack et de faire du PXE.
+> Veuillez noter qu'avec les serveurs Advance de 2ème et 3ème génération sur une architecture T3 (une interface publique et une interface vRack), il n'est pas possible d'avoir deux interfaces dans le vRack et de faire du PXE.
 >
 
 ### Présentation rapide d'un démarrage en Netboot
