@@ -168,7 +168,7 @@ Para entender la diferencia entre el uso del protocolo POP e IMAP, vamos a desgl
 
 ## Más información
 
-[MXplan - Configurar una dirección de correo electrónico en Gmail para Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android).
+[MX Plan - Configurar una dirección de correo electrónico en Gmail para Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android).
 
 [Exchange - Configurar una dirección de correo electrónico en Gmail para Android](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_android).
 

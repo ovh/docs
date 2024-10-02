@@ -103,7 +103,7 @@ Una volta configurato l’indirizzo email, non ti resta che utilizzarlo! Da ques
 
 ## Per saperne di più <a name="go-further"></a>
 
-[MXplan - Configurare un indirizzo email in Gmail per Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android).
+[MX Plan - Configurare un indirizzo email in Gmail per Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android).
 
 [Email Pro - Configurare un indirizzo email in Gmail per Android](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_android).
 

@@ -104,7 +104,7 @@ Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz wysyła
 
 ## Sprawdź również <a name="go-further"></a>
 
-[MXplan - Konfiguracja konta e-mail w Gmailu na urządzeniu z systemem Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android).
+[MX Plan - Konfiguracja konta e-mail w Gmailu na urządzeniu z systemem Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android).
 
 [E-mail Pro - Konfiguracja konta e-mail w Gmailu na urządzeniu z systemem Android](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_android).
 

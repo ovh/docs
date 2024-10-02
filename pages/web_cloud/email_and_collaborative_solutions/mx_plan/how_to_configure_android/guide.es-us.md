@@ -1,5 +1,5 @@
 ---
-title: "MXplan - Configurar una dirección de correo electrónico en Gmail para Android"
+title: "MX Plan - Configurar una dirección de correo electrónico en Gmail para Android"
 excerpt: "Cómo configurar una cuenta MX Plan en Android utilizando la aplicación Gmail"
 updated: 2024-10-01
 ---

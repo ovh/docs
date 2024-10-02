@@ -1,5 +1,5 @@
 ---
-title: 'MXplan - Créer une réponse automatique sur une adresse e-mail'
+title: 'MX Plan - Créer une réponse automatique sur une adresse e-mail'
 excerpt: 'Découvrez comment mettre en place une réponse automatique sur une adresse e-mail'
 updated: 2024-05-24
 ---
