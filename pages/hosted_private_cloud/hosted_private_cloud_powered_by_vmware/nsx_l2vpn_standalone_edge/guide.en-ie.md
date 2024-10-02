@@ -101,7 +101,7 @@ The NAT has been configured on ports **5000** & **4500** for the IPSec tunnel.
 
 You need to call an APIv6 call to enable Promiscuous mode on your port. If you use a VLAN portgroup, you have all the access and rights to do so using the vSphere WebClient.
 
-If you are using vxlan, NSX-v vxlan, you cannot. To do this, you need to use the the “enableCarp” APIv6 call. To enable Carp on the VMs on a specific network adapter, we need to enable promiscuous mode on the port. 
+If you are using vxlan, NSX-v vxlan, you cannot. To do this, you need to use the “enableCarp” APIv6 call. To enable Carp on the VMs on a specific network adapter, we need to enable promiscuous mode on the port. 
 
 Go to [our API](https://api.ovh.com/console/#/dedicatedCloud) and locate this call:
 

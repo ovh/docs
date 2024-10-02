@@ -255,7 +255,7 @@
             + [How to create a Minecraft server on a VPS](bare_metal_cloud/virtual_private_servers/minecraft_server_on_vps)
             + [How to create a Palworld server](bare_metal_cloud/virtual_private_servers/palworld-server-on-vps)
             + [How to retrieve databases in rescue mode](bare_metal_cloud/dedicated_servers/restore-bdd-rescue)
-            + [How to set up up a web server (LAMP) on Debian or Ubuntu](bare_metal_cloud/dedicated_servers/installing_lamp_debian9_ubuntu18)
+            + [How to set up a web server (LAMP) on Debian or Ubuntu](bare_metal_cloud/dedicated_servers/installing_lamp_debian9_ubuntu18)
             + [How to install a web development environment on a VPS or a dedicated server](bare_metal_cloud/virtual_private_servers/install_env_web_dev_on_vps)
             + [How to install WordPress with Docker on a VPS or a dedicated server](bare_metal_cloud/virtual_private_servers/install_wordpress_docker_on_vps)
             + [How to install WordPress with WP-CLI on a VPS or a dedicated server](bare_metal_cloud/virtual_private_servers/install_wordpress_site_on_vps)
