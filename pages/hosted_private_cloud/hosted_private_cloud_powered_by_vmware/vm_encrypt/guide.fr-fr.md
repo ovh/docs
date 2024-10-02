@@ -1,7 +1,7 @@
 ---
-title: Activation du chiffrement des machines virtuelles (VM Encryption)
-excerpt: Découvrez comment mettre en oeuvre le chiffrement de vos machines virtuelles
-updated: 2020-06-29
+title: "Activation du chiffrement des machines virtuelles avec un KMS externe"
+excerpt: "Découvrez comment mettre en oeuvre le chiffrement de vos machines virtuelles avec un KMS externe non OVHcloud au sein de votre environnement VMware vSphere on OVHcloud managé"
+updated: 2024-10-02
 ---
 
 ## Objectif
@@ -12,8 +12,8 @@ Ce guide a pour objectif d'expliquer les détails de la mise en oeuvre de VM Enc
 
 ## Prérequis
 
-- Avoir souscrit une offre [Private Cloud](https://www.ovh.com/fr/private-cloud/){.external}.
-- Disposer d'un serveur de clé (KMS) externe compatible **[KMIP](https://en.wikipedia.org/wiki/Key_Management_Interoperability_Protocol_(KMIP)){.external} 1.1** et dans la [matrice de compatibilité](https://www.vmware.com/resources/compatibility/search.php?deviceCategory=kms&details=1&feature=293&page=1&display_interval=500&sortColumn=Partner&sortOrder=Asc){.external} VMware.
+- Avoir souscrit à une offre [Hosted Private Cloud](/links/hosted-private-cloud/vmware).
+- Disposer d'un serveur de clé (KMS) externe compatible **[KMIP](https://en.wikipedia.org/wiki/Key_Management_Interoperability_Protocol_(KMIP)) 1.1** et dans la [matrice de compatibilité](https://www.vmware.com/resources/compatibility/search.php?deviceCategory=kms&details=1&feature=293&page=1&display_interval=500&sortColumn=Partner&sortOrder=Asc) VMware.
 - Avoir accès à l’interface de gestion vSphere.
 - Posséder des machines virtuelles avec une version Hardware 13 (minimum).
 
@@ -45,7 +45,7 @@ Ici, il s'agit de la valeur à droite du signe égal :
 
 #### Via l'espace client OVHcloud
 
-Dans votre espace client, assurez-vous de vous situer dans la section `Hosted Private Cloud`. Cliquez sur `Private Cloud`{.action} dans la barre de services à gauche, puis sélectionnez le service Private Cloud concerné.
+Dans votre espace client, assurez-vous de vous situer dans la section `Hosted Private Cloud`. Cliquez sur `VMware`{.action} dans la barre de services à gauche, puis sélectionnez le service VMware concerné.
 
 Depuis la page principale du service, cliquez sur `Sécurité`{.action}.
 
@@ -200,4 +200,4 @@ Le déplacement des machines entre les hôtes est effectué par l'échange de cl
 
 ## Aller plus loin
 
-Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d’utilisateurs](/links/community).
