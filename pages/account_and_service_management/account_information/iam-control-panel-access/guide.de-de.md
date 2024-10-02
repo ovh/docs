@@ -1,7 +1,7 @@
 ---
 title: IAM-Richtlinien erstellen, um Benutzern das Anmelden im OVHcloud Kundencenter zu ermöglichen (EN)
 excerpt: "Find out how to grant the minimum rights required to log in to the OVHcloud Control Panel"
-updated: 2023-10-25
+updated: 2024-10-02
 ---
 
 ## Objective

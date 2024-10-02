@@ -1,7 +1,7 @@
 ---
 title: Jak utworzyć politykę IAM, aby umożliwić użytkownikowi logowanie się do Panelu klienta OVHcloud (EN)
 excerpt: "Find out how to grant the minimum rights required to log in to the OVHcloud Control Panel"
-updated: 2023-10-25
+updated: 2024-10-02
 ---
 
 ## Objective
