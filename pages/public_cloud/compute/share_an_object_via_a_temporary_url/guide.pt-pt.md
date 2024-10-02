@@ -1,7 +1,7 @@
 ---
 title: 'Partilhar um objeto com um endereço temporário'
 excerpt: 'Saiba como partilhar um objeto sem fornecer dados pessoais'
-updated: 2021-01-11
+updated: 2024-10-02
 ---
 
 ## Sumário 
@@ -86,19 +86,21 @@ Por exemplos, para os elementos abaixo:
 - **/v1/AUTH_tenant/default/file**: o caminho para o seu ficheiro. Não é necessário adicionar o ponto de acesso nesta fase.
 - **12345**: substituir pela sua senha.
 
-```
+No campo `AUTH_tenant`, substitua `tenant` pelo seu **OS_TENANT_ID** ou **OS_TENANT_NAME**.
+
+```bash
 swift tempurl GET 60 /v1/AUTH_tenant/default/file 12345
 ```
 
 Obtém o **tempURL** que lhe permite visualizar o **caminho para o ficheiro**, a **assinatura** e a **data de expiração**, tal como explicado anteriormente.
 
-```
+```bash
 v1/AUTH_tenant/default/file?temp_url_sig=8016dsdf3122d526afds60911cde59fds3&temp_url_expires=1401548543
 ```
 
 Para que o URL funcione corretamente, deverá adicionar o endereço do ponto de acesso antes do seu **tempURL**:
 
-```
+```bash
 https://storage.sbg1.cloud.ovh.net/v1/AUTH_tenant/default/file?temp_url_sig=8016dsdf3122d526afds60911cde59fds3&temp_url_expires=1401548543
 ```
 

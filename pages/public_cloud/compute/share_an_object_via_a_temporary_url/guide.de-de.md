@@ -1,7 +1,7 @@
 ---
 title: 'Objekt über eine temporäre URL teilen'
 excerpt: 'So teilen Sie ein Objekt, ohne persönliche Informationen weiterzugeben'
-updated: 2021-01-11
+updated: 2024-10-02
 ---
 
 ## Einleitung 
@@ -86,19 +86,21 @@ Zum Beispiel gilt für folgende Elemente:
 - **/v1/AUTH_tenant/default/file**: Pfad zu Ihrer Datei. An dieser Stelle ist es nicht notwendig, den Zugriffspunkt hinzuzufügen.
 - **12345**: durch Ihren Schlüssel zu ersetzen
 
-```
+Ersetzen Sie im Feld `AUTH_tenant` `tenant` durch Ihre **OS_TENANT_ID** oder den **OS_TENANT_NAME**.
+
+```bash
 swift tempurl GET 60 /v1/AUTH_tenant/default/file 12345
 ```
 
 Sie erhalten die **tempURL**, mit der Sie den **Dateipfad**, die **Signatur** und das **Ablaufdatum** wie bereits erwähnt anzeigen können.
 
-```
+```bash
 v1/AUTH_tenant/default/file?temp_url_sig=8016dsdf3122d526afds60911cde59fds3&temp_url_expires=1401548543
 ```
 
 Damit Ihre URL funktioniert, muss die Adresse des Zugriffspunkts vor der **tempURL** hinzugefügt werden:
 
-```
+```bash
 https://storage.sbg1.cloud.ovh.net/v1/AUTH_tenant/default/file?temp_url_sig=8016dsdf3122d526afds60911cde59fds3&temp_url_expires=1401548543
 ```
 

@@ -1,7 +1,7 @@
 ---
 title: 'Condividere un oggetto con un indirizzo temporaneo'
 excerpt: 'Come condividere un oggetto senza fornire informazioni personali'
-updated: 2021-01-11
+updated: 2024-10-02
 ---
 
 ## Obiettivo 
@@ -86,19 +86,21 @@ Ad esempio:
 - **/v1/AUTH_tenant/default/file**: percorso verso il file (in questa fase, non è necessario aggiungere il punto di accesso)
 - **12345**: da sostituire con la propria chiave
 
-```
+Nel campo `AUTH_tenant`, sostituire `tenant` con il proprio **OS_TENANT_ID** o **OS_TENANT_NAME**.
+
+```bash
 swift tempurl GET 60 /v1/AUTH_tenant/default/file 12345
 ```
 
 Lo script fornirà un **TempURL** in cui è indicato **percorso del file**, **firma** e **data di scadenza**.
 
-```
+```bash
 v1/AUTH_tenant/default/file?temp_url_sig=8016dsdf3122d526afds60911cde59fds3&temp_url_expires=1401548543
 ```
 
 Per il corretto funzionamento dell’URL è sufficiente aggiungere l’indirizzo del punto di accesso davanti al proprio **Temp URL**:
 
-```
+```bash
 https://storage.sbg1.cloud.ovh.net/v1/AUTH_tenant/default/file?temp_url_sig=8016dsdf3122d526afds60911cde59fds3&temp_url_expires=1401548543
 ```
 

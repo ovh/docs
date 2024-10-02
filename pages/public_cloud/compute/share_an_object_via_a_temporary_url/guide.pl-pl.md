@@ -1,7 +1,7 @@
 ---
 title: 'Udostępnianie obiektu za pomocą tymczasowego adresu'
 excerpt: 'Dowiedz się, jak udostępnić obiekt bez ujawniania danych osobowych'
-updated: 2021-01-11
+updated: 2024-10-02
 ---
 
 ## Wprowadzenie 
@@ -86,19 +86,21 @@ Na przykład dla poniższych elementów:
 - **/v1/AUTH_tenant/default/file**: ścieżka do Twojego pliku. Na tym etapie procedury nie jest konieczne dodawanie punktu dostępowego.
 - **12345**: zastąp Twoim kluczem.
 
-```
+W polu `AUTH_tenant` zastąp `tenant` swoim **OS_TENANT_ID** lub **OS_TENANT_NAME**.
+
+```bash
 swift tempurl GET 60 /v1/AUTH_tenant/default/file 12345
 ```
 
 Otrzymasz **tempURL**, który umożliwia wyświetlenie **ścieżki do pliku**, **podpisu** i **daty ważności**, jak wyjaśniono powyżej.
 
-```
+```bash
 v1/AUTH_tenant/default/file?temp_url_sig=8016dsdf3122d526afds60911cde59fds3&temp_url_expires=1401548543
 ```
 
 Aby URL działał poprawnie, dodaj adres punktu dostępowego przed**tempURL**:
 
-```
+```bash
 https://storage.sbg1.cloud.ovh.net/v1/AUTH_tenant/default/file?temp_url_sig=8016dsdf3122d526afds60911cde59fds3&temp_url_expires=1401548543
 ```
 
