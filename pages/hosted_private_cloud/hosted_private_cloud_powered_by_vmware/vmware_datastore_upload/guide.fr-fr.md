@@ -137,14 +137,14 @@ Avec le binaire :
 
 Vous pouvez télécharger le binaire depuis de dépot officiel Github VMware : https://github.com/vmware/govmomi/releases
 
-Le curl ci dessous extrait la bonne version nécessaire pour votre OS (`uname`), faite quand même attention à bien télécharger l'asset `Govc` qui dispose de la version d'OS (Freebsd, Linux, x64_86, arm etc..).
+Le curl ci-dessous extrait la bonne version nécessaire pour votre OS (`uname`), faite quand même attention à bien télécharger l'asset `Govc` qui dispose de la version d'OS (Freebsd, Linux, x64_86, arm etc..).
 
 ```bash
 # extract govc binary to /usr/local/bin
 # note: the "tar" command must run with root permissions
 curl -L -o - "https://github.com/vmware/govmomi/releases/latest/download/govc_$(uname -s)_$(uname -m).tar.gz" | tar -C /usr/local/bin -xvzf - govc
 ```
-**Remarque** : Vous devez être root pour éxécuter `tar` ou avoir les droits `sudo` suffisants.
+**Remarque** : Vous devez être root pour exécuter `tar` ou avoir les droits `sudo` suffisants.
 
 Avec go install :
 
@@ -172,7 +172,7 @@ Le programme fournit un vaste choix d’arguments pour définir les conditions d
 |              `HTTP_PROXY`              |                             `http://XXX.XX.X.X:XXXXX`                              |                               `http://XXX.XX.X.X:XXXXX`                               | - L'url de votre server proxy sans https.                                                                                                                                                                                                                                                                                                                                                                                            |
 |             `HTTPS_PROXY`              |                             `https://XXX.XX.X.X:XXXXX`                             |                              `https://XXX.XX.X.X:XXXXX`                               | - L'url de votre server proxy avec https.                                                                                                                                                                                                                                                                                                                                                                                            |
 
-Voici un exemple de configuation pour un OS Linux :
+Voici un exemple de configuration pour un OS Linux, n'oubliez pas de créer votre fichier `govc.env` à la racine du dossier sur lequel vous lancez le binaire.
 
 ```bash
 # govc.env
@@ -193,7 +193,7 @@ Comme pour tout fichier contenant des variables, il suffit de le sourcer dans un
 source govc.env
 ```
 
-Au lancement de chaques commandes, des options peuvent être modifiées à la volée pour surcharger les variables d’environnement, par exemple :
+Au lancement de chaque commande, des options peuvent être modifiées à la volée pour surcharger les variables d’environnement, par exemple :
 
 ```bash
 govc datastore.ls -dc=Datacenter2 -ds=Datastore1 -debug=true
@@ -214,7 +214,7 @@ Voici un exemple de téléversement d'une image iso avec `govc`. Attention à bi
 ```bash
 govc datastore.upload image.iso dossier-isos/image.iso
 ```
-Télécharger un ISO avec curl avant de le téléverser à l'aide d'un pipe shell :
+Télécharger un ISO avec curl avant de le téléverser à l'aide d'un tuyau (pipe) shell :
 
 ```bash
 curl https://example.com/iso/image.iso | govc datastore.upload - dossier-isos/image.iso
