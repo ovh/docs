@@ -1,7 +1,7 @@
 ---
 title: Known limits
 excerpt: 'Requirements and limits to respect'
-updated: 2024-10-01
+updated: 2023-12-20
 ---
 
 <style>
@@ -71,7 +71,7 @@ A Public Cloud Load Balancer has the following non-configurable timeouts:
 
 ## OpenStack
 
-Our Managed Kubernetes service is based on OpenStack, and your nodes and persistent volumes are built on it, using OVHcloud Public Cloud. As such, you can see them in the `Compute` > `Instances` section of your [OVHcloud Public Cloud Control Panel](/links/manager). Though it doesn't mean that you can deal directly with these nodes and persistent volumes the same way you can do it for other Public Cloud instances.
+Our Managed Kubernetes service is based on OpenStack, and your nodes and persistent volumes are built on it, using OVHcloud Public Cloud. As such, you can see them in the `Compute` > `Instances` section of your [OVHcloud Public Cloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). Though it doesn't mean that you can deal directly with these nodes and persistent volumes the same way you can do it for other Public Cloud instances.
 
 The *managed* part of OVHcloud Managed Kubernetes Service means that we have configured those nodes and volumes to be part of our Managed Kubernetes.  
 Please refrain from manipulating them from the *OVHcloud Public Cloud Control Panel* (modifying ports left opened, renaming, resizing volumes...), as you could break them.
@@ -140,14 +140,6 @@ To prevent any conflict, we advise you to keep `DHCP` service running in your pr
 > If you create your subnet via the [OVHcloud APIv6](https://api.ovh.com/console/#/cloud/project/{serviceName}/network/private/{networkId}/subnet#POST), please ensure that this option `noGateway` is checked if you do not have a gateway on this subnet. Not doing so will result in faulty services of type LoadBalancer.
 >
 
-> [!warning]
-> If your cluster has been created using an Openstack Private Network, you should not change this private network's name nor the network's subnet name. <br>>
-Indeed, the Openstack Cloud Controller Manager (CCM) is using the network name to create private network connectivity inside the cluster to link nodes to the private network.<br>
-Changing either the private network name or the network's subnet name will have an impact on future nodes to be deployed as the CCM cannot find network information. <br>
-The CCM cannot fetch private network information on Openstack side in order to initialize networking on the freshly deployed nodes on Kubernetes side.<br>
-Nodes will have a "uninitialized=true:NoSchedule" taint which prevents the [kube-scheduler](https://kubernetes.io/docs/concepts/scheduling-eviction/kube-scheduler/) to deploy pods on those new uninitialized nodes. Nodes impacted by this usecase doesn't have an External-IP as well.
->
-
 ### Known not compliant IP ranges
 
 The following subnets are not compliant with the `vRack` feature and can generate some incoherent behaviours with our used overlay networks:
@@ -179,6 +171,6 @@ You can manually [configure multi-attach persistent volumes with NAS-HA](/pages/
 
 ## Go further
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ie/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-- Join our [community of users](/links/community).
+- Join our [community of users](https://community.ovh.com/en/).
