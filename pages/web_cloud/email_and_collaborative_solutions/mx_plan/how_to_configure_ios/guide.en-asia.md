@@ -1,7 +1,7 @@
 ---
-title: Configuring an email address on iPhone and iPad
+title: "MX Plan - Configure your email account on Mail for iPhone and iPad"
 excerpt: Find out how to configure an MX Plan email address on iPhone and iPad
-updated: 2022-07-20
+updated: 2024-10-01
 ---
 
 ## Objective
@@ -74,6 +74,10 @@ OVHcloud also offers a web application you can use to access your email account 
 >
 
 ## Go further
+
+> [!primary]
+>
+> For more information on configuring an email address from the Mail app on iOS, see [Apple Help Center](https://support.apple.com/en-gb/102619).
 
 [Email FAQ](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 

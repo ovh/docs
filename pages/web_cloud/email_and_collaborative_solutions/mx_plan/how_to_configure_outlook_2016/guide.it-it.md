@@ -1,7 +1,7 @@
 ---
 title: "MX Plan - Configurare un indirizzo email su Outlook per Windows"
 excerpt: "Scopri come configurare un indirizzo email MX Plan su Outlook per Windows"
-updated: 2024-02-16
+updated: 2024-10-01
 ---
 
 <style>
@@ -178,6 +178,10 @@ Per comprendere la differenza tra l'utilizzo del protocollo POP e IMAP, andremo 
 > Questa descrizione è una sintesi, rappresenta il funzionamento standard di entrambi i protocolli. È possibile configurare il POP in modo che le email non vengano eliminate quando si raccolgono i messaggi. Il nostro obiettivo è descrivere il funzionamento nativo di questi due protocolli.
 
 ## Per saperne di più
+
+> [!primary]
+>
+> Per ulteriori informazioni sulla configurazione di un indirizzo e-mail dall'applicazione Outlook su macOS, vedere [Microsoft Help Center](https://support.microsoft.com/it-it/office/aggiungere-un-account-di-posta-in-outlook-6e27792a-9267-4aa4-8bb6-c84ef146101b).
 
 [Configurare un account Email Pro su Outlook per Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)
 

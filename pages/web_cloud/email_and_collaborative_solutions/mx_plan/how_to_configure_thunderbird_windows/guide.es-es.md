@@ -1,7 +1,7 @@
 ---
-title: 'Configurar una cuenta de correo electrónico en Thunderbird para Windows'
+title: 'MX Plan - Configure su cuenta de correo electrónico en Thunderbird para Windows'
 excerpt: 'Aquí encontrará la información necesaria para configurar su dirección de correo electrónico en Thunderbird'
-updated: 2021-08-26
+updated: 2024-10-01
 ---
 
 > [!primary]
@@ -26,7 +26,7 @@ Es posible configurar sus cuentas MX Plan en el cliente de correo que usted util
 - Disponer de una cuenta MX Plan (incluida en un MX Plan o en un plan de [hosting de OVHcloud](/links/web/hosting)).
 - Tener Thunderbird instalado en su Windows.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
- 
+
 ## Procedimiento
 
 ### Añadir la cuenta
@@ -77,5 +77,9 @@ Si su cuenta de correo ya está configurada y debe acceder a los parámetros de 
 ![Thunderbird](images/thunderbird-win-mxplan06.png){.thumbnail}
 
 ## Más información
+
+> [!primary]
+>
+> Configurar una cuenta manualmentePara obtener más información sobre cómo configurar una dirección de correo electrónico desde la aplicación Thunderbird en Windows, consulte [el Centro de ayuda de Mozilla](https://support.mozilla.org/es/kb/configuracion-automatica-de-las-cuentas#thunderbird:win10:tb115)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

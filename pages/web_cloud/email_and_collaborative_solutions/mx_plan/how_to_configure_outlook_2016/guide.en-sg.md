@@ -1,7 +1,7 @@
 ---
 title: "MX Plan - Configuring your email address in Outlook for Windows"
 excerpt: "Find out how to configure your MX Plan email address in Outlook for Windows"
-updated: 2024-02-16
+updated: 2024-10-01
 ---
 
 <style>
@@ -170,5 +170,9 @@ To understand the difference between POP and IMAP, we will detail the elements t
 > This description is a summary of the standard operation of these two protocols. You can set up POP to not delete emails from the server when you retrieve them. Our aim is to describe the native functioning of these two protocols.
 
 ## Go further <a name="gofurther"></a>
+
+> [!primary]
+>
+> For more information about configuring an email address from the Outlook app on macOS, see [Microsoft Help Center](https://support.microsoft.com/en-gb/office/add-email-account-in-Outlook-6e27792a-9267-4aa4-8bb6-c84ef146101b).
 
 Join our community of users on <https://community.ovh.com/en/>.

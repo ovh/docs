@@ -1,7 +1,7 @@
 ---
 title: "MX Plan - Konfiguration Ihrer E-Mail-Adressen in Outlook für Windows"
 excerpt: "Erfahren Sie hier, wie Sie Ihren Mailaccount in Outlook für Windows einrichten"
-updated: 2024-02-16
+updated: 2024-10-01
 ---
 
 <style>
@@ -176,6 +176,10 @@ Um den Unterschied zwischen der Verwendung des POP- und IMAP-Protokolls zu verst
 > Diese Beschreibung ist eine Zusammenfassung der Standardfunktionen beider Protokolle. Sie können auch POP so einstellen, dass E-Mails beim Abholen nicht gelöscht werden. Unser Ziel ist es, die native Funktionsweise dieser beiden Protokolle zu beschreiben.
 
 ## Weiterführende Informationen <a name="gofurther"></a>
+
+> [!primary]
+>
+> Weitere Informationen zum Einrichten einer E-Mail-Adresse über die Outlook-App auf macOS finden Sie im [Microsoft Help Center](https://support.microsoft.com/de-de/office/add-mail-account-in-outlook-6e27792a-9267-4aa4-8bb6-c84ef146101b).
 
 [Konfiguration von E-Mail Pro auf Outlook für Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)
 

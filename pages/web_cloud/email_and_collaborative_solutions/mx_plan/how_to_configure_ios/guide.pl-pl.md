@@ -1,7 +1,7 @@
 ---
-title: 'Konfiguracja konta e-mail na urządzeniu iPhone lub iPad'
+title: "MX Plan - Skonfiguruj swoje konto e-mail w programie Mail dla systemu iPhone i iPad"
 excerpt: 'Dowiedz się, jak skonfigurować konto e-mail MX Plan na urządzeniu iPhone lub iPad'
-updated: 2022-07-20
+updated: 2024-10-01
 ---
 
 > [!primary]
@@ -78,6 +78,10 @@ OVHcloud oferuje aplikację internetową umożliwiającą korzystanie z Twojego 
 >
 
 ## Sprawdź również
+
+> [!primary]
+>
+> Aby uzyskać więcej informacji na temat konfigurowania konta e-mail z poziomu aplikacji Mail w systemie iOS, zobacz [Centrum pomocy Apple](https://support.apple.com/pl-pl/102619).
 
 [Konfiguracja konta Exchange na urządzeniu iPhone lub iPad](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_ios).
 

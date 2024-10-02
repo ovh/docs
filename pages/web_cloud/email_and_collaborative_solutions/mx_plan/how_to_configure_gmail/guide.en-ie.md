@@ -1,5 +1,5 @@
 ---
-title: 'Configuring an email address on the Gmail online interface'
+title: 'MX Plan - Configuring an email address on the Gmail online interface'
 excerpt: 'Find out how to configure an MX Plan email address on the Gmail online interface'
 updated: 2024-09-24
 ---
@@ -102,6 +102,6 @@ Please also note that you can still use our online interface, accessible via [We
 
 > [!primary]
 >
-> Weitere Informationen zur Konfiguration einer E-Mail-Adresse über das Gmail-Interface finden Sie [im Google Help Center](https://support.google.com/mail/answer/21289?hl=de&co=GENIE.Platform%3DDesktop).
+> For more information on configuring an email address from the online Gmail interface, see [Google Help Center](https://support.google.com/mail/answer/21289?hl=en&co=GENIE.Platform%3DDesktop).
 
 Join our community of users on <https://community.ovh.com/en/>.

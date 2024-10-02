@@ -1,7 +1,7 @@
 ---
 title: "MX Plan - Configurar una dirección de correo electrónico en Gmail para Android"
 excerpt: "Cómo configurar una cuenta MX Plan en Android utilizando la aplicación Gmail"
-updated: 2023-12-15
+updated: 2024-10-01
 ---
 
 <style>
@@ -172,6 +172,10 @@ Para entender la diferencia entre el uso del protocolo POP e IMAP, vamos a desgl
 > Esta descripción es un resumen y representa el funcionamiento estándar de ambos protocolos. Es posible configurar el PoP para que los mensajes de correo no se eliminen al recibir los mensajes. El objetivo aquí es describir el funcionamiento nativo de estos dos protocolos y evitar manipulaciones adicionales para ajustarse a sus necesidades.
 
 ## Más información
+
+> [!primary]
+>
+> Para más información sobre la configuración de una dirección de correo electrónico desde la aplicación de Gmail en Android, consulte [el Centro de ayuda de Google](https://support.google.com/mail/answer/6078445?hl=es-CA&co=GENIE.Platform%3DAndroid#zippy=%2Añadir-una-cuenta).
 
 [Configurar una cuenta Email Pro en Android utilizando la aplicación Gmail](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_android)
 

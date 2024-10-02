@@ -1,7 +1,7 @@
 ---
 title: 'MX Plan - Configurar um endereço de e-mail no Outlook para macOS'
 excerpt: 'Saiba como configurar um endereço de e-mail MX Plan no Outlook para macOS'
-updated: 2018-05-31
+updated: 2024-10-01
 ---
 
 ## Sumário
@@ -81,6 +81,10 @@ Após a sua configuração, a conta de e-mail está pronta a usar e pode começa
 A OVHcloud também disponibiliza uma aplicação web que pode usar para aceder ao seu e-mail diretamente a partir do browser, disponível no endereço [Webmail](/links/web/email). Para aceder, só precisa dos dados de acesso do seu endereço de e-mail.
 
 ## Quer saber mais?
+
+> [!primary]
+>
+> Para obter mais informações sobre a configuração de um endereço de e-mail a partir da aplicação Outlook no macOS, consulte [Central de Ajuda da Microsoft](https://support.microsoft.com/pt-pt/office/add-an-email-account-to-outlook-for-mac-6aeec61b-86af-40af-8ffe-985d0fc82ddb).
 
 [Configurar uma conta Email Pro no Outlook para Mac](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016_mac).
 

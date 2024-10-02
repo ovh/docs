@@ -1,7 +1,7 @@
 ---
-title: 'Konfiguration Ihrer E-Mail-Adresse auf iPhone oder iPad'
+title: "MX Plan - Konfiguration Ihrer E-Mail-Adresse in Mail für iPhone und iPad"
 excerpt: 'Erfahren Sie hier, wie Sie eine MX Plan Adresse auf iPhone oder iPad einrichten'
-updated: 2022-07-20
+updated: 2024-10-01
 ---
 
 > [!primary]
@@ -77,6 +77,10 @@ OVHcloud bietet auch eine Webanwendung an, mit der Sie über Ihren Webbrowser au
 >
 
 ## Weiterführende Informationen
+
+> [!primary]
+>
+> Weitere Informationen zum Einrichten einer E-Mail-Adresse über die Mail App auf iOS finden Sie im [Apple Help Center](https://support.apple.com/de-de/102619).
 
 [Konfiguration von Exchange auf iPhone oder iPad](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_ios)
 

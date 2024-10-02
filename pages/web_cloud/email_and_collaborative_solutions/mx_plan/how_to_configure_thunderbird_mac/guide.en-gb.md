@@ -1,7 +1,7 @@
 ---
-title: 'Configuring an email address on Thunderbird for macOS'
+title: 'MX Plan - Configure your email account on Thunderbird for macOS'
 excerpt: 'Find out how to configure your email address in Thunderbird'
-updated: 2021-08-26
+updated: 2024-10-01
 ---
 
 ## Objective
@@ -73,5 +73,9 @@ If your email account has already been set up and you need to access the account
 ![Thunderbird](images/thunderbird-mac-mxplan06.png){.thumbnail}
 
 ## Go further <a name="gofurther"></a>
+
+> [!primary]
+>
+> Configure an account manuallyFor more information on configuring an email address from the Thunderbird app on Windows, see [the Mozilla Help Center](https://support.mozilla.org/en-US/kb/manual-account-configuration#thunderbird:mac:tb115)
 
 Join our community of users on <https://community.ovh.com/en/>.

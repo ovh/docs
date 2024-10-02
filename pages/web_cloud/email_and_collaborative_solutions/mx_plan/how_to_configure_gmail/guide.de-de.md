@@ -1,5 +1,5 @@
 ---
-title: 'Konfiguration Ihrer E-Mail-Adresse im Gmail-Webinterface'
+title: 'MX Plan - Konfiguration Ihrer E-Mail-Adresse im Gmail-Webinterface'
 excerpt: 'In dieser Anleitung erfahren Sie, wie Sie eine MX Plan Adresse im Webinterface von Gmail einrichten.'
 updated: 2024-09-24
 ---

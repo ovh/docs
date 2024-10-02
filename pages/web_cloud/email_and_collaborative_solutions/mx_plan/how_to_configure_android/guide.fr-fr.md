@@ -1,7 +1,7 @@
 ---
 title: "MX Plan - Configurer une adresse e-mail dans Gmail pour Android"
 excerpt: "Apprenez à configurer une adresse e-mail MX Plan sur Android, via l'application Gmail"
-updated: 2023-12-15
+updated: 2024-10-01
 ---
 
 <style>
@@ -168,6 +168,10 @@ Pour comprendre la différence entre l'utilisation du protocole POP et IMAP, nou
 > Ce desriptif est une synthèse, il représente le fonctionnement standard de ces deux protocoles. Il est possible de paramétrer le POP pour que les e-mails ne soit pas supprimés lorsque vous relevez vos e-mails. L'objectif, ici, est de décrire le fonctionnement natif de ces deux protocoles et vous éviter des manipulations supplémentaires afin de correspondre à votre besoin.
 
 ## Aller plus loin
+
+> [!primary]
+>
+> Pour plus d'informations sur la configuration d'une adresse e-mail depuis l'application Gmail sur Android, consultez [le centre d'aide de Google](https://support.google.com/mail/answer/6078445?hl=fr-CA&co=GENIE.Platform%3DAndroid#zippy=%2Cajouter-un-compte).
 
 [Configurer son compte E-mail Pro sur Android via l'application Gmail](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_android).
 

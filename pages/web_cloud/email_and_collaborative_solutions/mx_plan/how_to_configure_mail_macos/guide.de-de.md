@@ -1,6 +1,6 @@
 ---
-title: 'Konfiguration Ihrer E-Mail-Adresse auf macOS Mail'
-updated: 2022-06-13
+title: "MX Plan - Konfiguration Ihrer E-Mail-Adresse in Mail für macOS"
+updated: 2024-10-01
 ---
 
 > [!primary]
@@ -82,5 +82,9 @@ Bei einer **POP**-Konfiguration ergeben sich folgende Werte:
 > Wenn Sie Ihre E-Mail-Adresse als **IMAP** konfigurieren und die Konfiguration in **POP** ändern möchten, müssen Sie den Mac Mail-Account löschen und anschließend in **POP** neu erstellen, um die Konfiguration zu ändern.
 
 ## Weiterführende Informationen
- 
+
+> [!primary]
+>
+> Weitere Informationen zum Einrichten einer E-Mail-Adresse über die Mail App auf macOS finden Sie im [Apple Help Center](https://support.apple.com/de-de/guide/mail/mail35803/mac).
+
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

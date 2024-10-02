@@ -1,7 +1,7 @@
 ---
-title: Configurare un account email su un iPhone o un iPad
+title: "MX Plan - Configura il tuo account di posta elettronica su Mail per iPhone e iPad"
 excerpt: Come configurare un account email MX Plan su un iPhone o un iPad
-updated: 2022-07-20
+updated: 2024-10-01
 ---
 
 > [!primary]
@@ -78,6 +78,10 @@ OVHcloud propone un'applicazione Web che permette di accedere al tuo indirizzo e
 >
 
 ## Per saperne di più
+
+> [!primary]
+>
+> Per informazioni sulla configurazione di un indirizzo email dall’applicazione Mail su iOS, consulta [il centro assistenza Apple](https://support.apple.com/it-it/102619).
 
 [Configurare un account Exchange su un iPhone o un iPad](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_ios)
 

@@ -1,6 +1,6 @@
 ---
-title: 'Konfiguracja konta e-mail w aplikacji Mail na urządzeniach macOS'
-updated: 2022-06-13
+title: 'MX Plan - Skonfiguruj swoje konto e-mail w programie Mail dla systemu macOS'
+updated: 2024-10-01
 ---
 
 > [!primary]
@@ -82,5 +82,9 @@ W przypadku konfiguracji **POP** wartości są następujące:
 > Jeśli skonfigurujesz Twoje konto e-mail przy użyciu **IMAP** i chcesz zmienić konfigurację na **POP**, usuń konto e-mail Maca i odtworzyć je w **POP**, aby zmienić konfigurację.
 
 ## Sprawdź również
- 
+
+> [!primary]
+>
+> Aby uzyskać więcej informacji na temat konfigurowania konta e-mail z poziomu aplikacji Mail na urządzeniach z systemem macOS, skorzystaj z [Centrum pomocy Apple](https://support.apple.com/pl-pl/guide/mail/mail35803/mac).
+
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

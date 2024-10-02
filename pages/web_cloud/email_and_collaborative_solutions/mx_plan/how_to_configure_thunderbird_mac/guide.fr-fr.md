@@ -1,7 +1,7 @@
 ---
-title: 'Configurer son adresse e-mail sur Thunderbird pour Mac OS'
+title: 'MX Plan - Configurer son compte e-mail sur Thunderbird pour macOS'
 excerpt: 'Découvrez comment configurer votre adresse e-mail MX Plan sur Thunderbird sur Mac OS'
-updated: 2021-08-26
+updated: 2024-10-01
 ---
 
 ## Objectif
@@ -73,5 +73,10 @@ Si votre compte e-mail est déjà paramétré et que vous devez accéder aux par
 ![Thunderbird](images/thunderbird-mac-mxplan06.png){.thumbnail}
 
 ## Aller plus loin
+
+> [!primary]
+>
+> Pour plus d'informations sur la configuration d'une adresse e-mail depuis l'application Thunderbird sur macOS, consultez [le centre d'aide Mozilla](https://support.mozilla.org/fr/kb/configurer-un-compte-manuellement).
+
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

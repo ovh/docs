@@ -1,7 +1,7 @@
 ---
-title: 'Configurer son adresse e-mail sur Thunderbird pour Windows'
+title: 'MX Plan - Configurer son adresse e-mail sur Thunderbird pour Windows'
 excerpt: 'Retrouvez ici les informations pour configurer votre adresse e-mail sur Thunderbird.'
-updated: 2021-08-26
+updated: 2024-10-01
 ---
 
 ## Objectif
@@ -73,5 +73,9 @@ Si votre compte e-mail est déjà paramétré et que vous devez accéder aux par
 ![Thunderbird](images/thunderbird-win-mxplan06-ca.png){.thumbnail}
 
 ## Aller plus loin
+
+> [!primary]
+>
+> Pour plus d'informations sur la configuration d'une adresse e-mail depuis l'application Thunderbird sur Windows, consultez [le centre d'aide Mozilla](https://support.mozilla.org/fr/kb/configurer-un-compte-manuellement#thunderbird:win10:tb115).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

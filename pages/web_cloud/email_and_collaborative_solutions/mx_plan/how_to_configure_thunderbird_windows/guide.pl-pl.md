@@ -1,7 +1,7 @@
 ---
-title: 'Konfiguracja konta e-mail w programie Thunderbird na urządzeniu z systemem Windows'
+title: 'MX Plan - Skonfiguruj swoje konto e-mail w programie Thunderbird dla systemu Windows'
 excerpt: 'Informacje dotyczące konfiguracji Twojego konta e-mail w programie Thunderbird znajdują się tutaj.'
-updated: 2021-08-26
+updated: 2024-10-01
 ---
 
 > [!primary]
@@ -77,5 +77,9 @@ Jeśli Twoje konto e-mail zostało już skonfigurowane i musisz mieć dostęp do
 ![Thunderbird](images/thunderbird-win-mxplan06.png){.thumbnail}
 
 ## Sprawdź również
+
+> [!primary]
+>
+> Ręczna konfiguracja kontaAby uzyskać więcej informacji na temat konfigurowania konta e-mail z poziomu aplikacji Thunderbird w systemie Windows, skorzystaj z [Centrum pomocy Mozilli](https://support.mozilla.org/pl/kb/reczna-konfiguracja-konta#thunderbird:win10:tb115)
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

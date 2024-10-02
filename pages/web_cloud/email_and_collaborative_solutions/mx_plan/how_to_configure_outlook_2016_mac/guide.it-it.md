@@ -1,7 +1,7 @@
 ---
 title: 'MX Plan - Configurare un indirizzo email su Outlook per macOS'
 excerpt: 'Scopri come configurare il tuo indirizzo email MX Plan su Outlook per Mac'
-updated: 2018-05-31
+updated: 2024-10-01
 ---
 
 ## Obiettivo
@@ -75,6 +75,10 @@ Una volta configurato l’indirizzo email, non ti resta che utilizzarlo: da ques
 OVHcloud propone un’applicazione Web con [funzionalità collaborative](/links/web/emails), disponibile alla pagina [https://pro1.mail.ovh.net](https://pro1.mail.ovh.net) e accessibile con le credenziali del tuo indirizzo email.
 
 ## Per saperne di più
+
+> [!primary]
+>
+> Per ulteriori informazioni sulla configurazione di un indirizzo e-mail dall'applicazione Outlook su macOS, vedere [Microsoft Help Center](https://support.microsoft.com/it-it/office/add-an-email-account-to-outlook-for-mac-6aeec61b-86af-40af-8ffe-985d0fc82ddb).
 
 [Configurare un account Email Pro su Outlook per Mac](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016_mac).
 
