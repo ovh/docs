@@ -58,7 +58,7 @@ De plus, les administrateurs d'organisation ont la capacité de copier des élé
 
 <a name="key-features"></a>
 
-### Étape 2 - Fonctionnalités VMware Cloud Director on OVHcloud
+### Étape 2 - Les fonctionnalités
 
 Retrouvez ci-dessous une comparaison des fonctionnalités fournies par OVHcloud sur ses 3 offres de VMware Cloud Director on OVHcloud.
 
@@ -143,7 +143,7 @@ Retrouvez ci-dessous une comparaison des fonctionnalités fournies par OVHcloud 
 |:--------------------|:--------------:|:--------------:|:-------------:|:------------------------------------------------------|
 | `Aria operations` 	 |     ✅    	     |     ✅    	     |    ✅    	     | - Resource management Metrics, Dashboard, Reporting 	 |
 
-### Étape 3 - Les limitations VMware CLoud Director on OVHcloud
+### Étape 3 - Les limitations
 
 | Limites / Offres                | Standard | Advanced | Premium | Comments                                                                                                                                                           |
 |:--------------------------------|:--------:|:--------:|:-------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
