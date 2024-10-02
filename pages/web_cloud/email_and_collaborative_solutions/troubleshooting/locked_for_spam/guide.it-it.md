@@ -17,7 +17,7 @@ Quando il tuo indirizzo email è bloccato per SPAM, significa che sono state ril
 
 ## Procedura <a name="instructions"></a>
 
-Prima di proseguire e se il blocco si riferisce a un indirizzo email di tipo MXplan, identifica la versione di cui disponi per seguire il corretto processo di sblocco. Per distinguere le due versioni, utilizza la tabella qui sotto.
+Prima di proseguire e se il blocco si riferisce a un indirizzo email di tipo MX Plan, identifica la versione di cui disponi per seguire il corretto processo di sblocco. Per distinguere le due versioni, utilizza la tabella qui sotto.
 
 |Versione storica dell'offerta MX Plan|Nuova versione dell'offerta MX Plan|
 |---|---|

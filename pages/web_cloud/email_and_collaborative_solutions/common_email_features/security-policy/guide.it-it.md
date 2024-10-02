@@ -33,7 +33,7 @@ Per accedere alla politica di sicurezza del tuo servizio Exchange accedi allo [S
 
 > !primary]
 >
-> Se non vedi l'elemento `Plus`{.action} nel pannello di gestione della tua offerta `Email`{.action}, significa che sei su un'offerta MXplan storica. La politica di sicurezza non è gestita sulla soluzione MXplan storica.
+> Se non vedi l'elemento `Plus`{.action} nel pannello di gestione della tua offerta `Email`{.action}, significa che sei su un'offerta MX Plan storica. La politica di sicurezza non è gestita sulla soluzione MX Plan storica.
 
 Prosegui nella lettura di questa guida consultando la sezione corrispondente all’azione che vuoi effettuare:
 

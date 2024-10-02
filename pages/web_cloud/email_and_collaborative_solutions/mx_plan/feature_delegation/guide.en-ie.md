@@ -54,7 +54,7 @@ This opens a new section. Click the `+`{.action} button to the right of `Add a u
 
 ![delegation](images/mxplan-delegation-03.png){.thumbnail}
 
-You can delegate the management of your MXplan service to multiple OVHcloud customer accounts.
+You can delegate the management of your MX Plan service to multiple OVHcloud customer accounts.
 
 ### Delegating one or more email accounts to a user
 

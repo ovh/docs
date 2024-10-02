@@ -36,7 +36,7 @@ Les comptes e-mail de votre offre OVHcloud sont accessibles grâce au mot de pas
 Depuis votre [espace client OVHcloud](/links/manager), dirigez-vous dans la partie `Web Cloud`{.action} puis suivez les instructions selon votre offre :
 
 > [!tabs]
-> **Emails MXplan**
+> **Emails MX Plan**
 >>
 >> Cliquez sur `Emails`{.action} puis choisissez le nom du service MX Plan concerné. Positionnez-vous sur l'onglet `Emails`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. <br>
 >> Cliquez sur le bouton `...`{.action} puis sur `Modifier`{.action}.<br><br>
@@ -53,7 +53,7 @@ Depuis votre [espace client OVHcloud](/links/manager), dirigez-vous dans la part
 
 La modification de votre mot de passe via le webmail est disponible pour les offres email OVHcloud utilisant **OWA** (**O**utlook **W**eb **A**pp) :
 
-- Emails MXplan
+- Emails MX Plan
 - Exchange
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/z1D2wc7XWX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -89,7 +89,7 @@ Pour des raisons de sécurité et de confidentialité, il n'est pas possible de 
 
 ## Aller plus loin
 
-[Premiers pas avec la solution MXplan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
+[Premiers pas avec la solution MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 
 [Premiers pas avec la solution Hosted Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
 

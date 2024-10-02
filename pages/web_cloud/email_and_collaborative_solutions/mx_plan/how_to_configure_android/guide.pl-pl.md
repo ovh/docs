@@ -1,5 +1,5 @@
 ---
-title: "MXplan - Konfiguracja konta e-mail w Gmailu na Androida"
+title: "MX Plan - Konfiguracja konta e-mail w Gmailu na Androida"
 excerpt: "Dowiedz się, jak skonfigurować konto MX Plan na urządzeniu z systemem Android przy użyciu aplikacji Gmail"
 updated: 2023-12-15
 ---
@@ -16,7 +16,7 @@ updated: 2023-12-15
 
 ## Wprowadzenie
 
-Konta usługi MX Plan mogą być skonfigurowane w jednym z kompatybilnych programów pocztowych. Dzięki temu możesz wysyłać i odbierać wiadomości, korzystając z wybranej przez Ciebie aplikacji. W tym przewodniku wyjaśnimy proces konfiguracji konta e-mail MXplan z poziomu aplikacji Gmail obecnej na urządzeniach z systemem Android.
+Konta usługi MX Plan mogą być skonfigurowane w jednym z kompatybilnych programów pocztowych. Dzięki temu możesz wysyłać i odbierać wiadomości, korzystając z wybranej przez Ciebie aplikacji. W tym przewodniku wyjaśnimy proces konfiguracji konta e-mail MX Plan z poziomu aplikacji Gmail obecnej na urządzeniach z systemem Android.
 
 **Dowiedz się, jak skonfigurować konto MX Plan na urządzeniu z systemem Android przy użyciu aplikacji Gmail.**
 

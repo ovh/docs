@@ -79,7 +79,7 @@ Para consultar su correo desde un cliente de correo, consulte la sección "[Cons
 
 #### Eliminar una cuenta de correo
 
-Desde la nueva versión MXplan, cuando debe eliminarla, se habla de *reinicialización de la cuenta*.
+Desde la nueva versión MX Plan, cuando debe eliminarla, se habla de *reinicialización de la cuenta*.
 
 > [!warning]
 >

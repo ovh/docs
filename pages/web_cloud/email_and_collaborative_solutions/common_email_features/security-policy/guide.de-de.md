@@ -33,7 +33,7 @@ Um auf die Sicherheitseinstellungen Ihres E-Mail-Accounts zuzugreifen, loggen Si
 
 > [!primary]
 >
-> Wenn der Tab `Mehr`{.action} nicht im Verwaltungsbereich von `E-Mails`{.action} zu sehen ist, bedeutet das, dass Sie einen MXplan "Legacy" verwenden. Bei diesen MXplan Diensten gibt es keine spezielle Sicherheitsverwaltung.
+> Wenn der Tab `Mehr`{.action} nicht im Verwaltungsbereich von `E-Mails`{.action} zu sehen ist, bedeutet das, dass Sie einen MX Plan "Legacy" verwenden. Bei diesen MX Plan Diensten gibt es keine spezielle Sicherheitsverwaltung.
 
 Befolgen Sie nun die Anleitung entsprechend den von Ihnen gewünschten Aktionen.
 

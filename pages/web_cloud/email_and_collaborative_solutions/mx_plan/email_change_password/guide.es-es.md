@@ -39,14 +39,14 @@ Desde el [área de cliente de OVHcloud](/links/manager), acceda al apartado `Web
 > [!tabs]
 > **MXplan (versión histórica)**
 >>
->> Si no conoce el tipo de producto MXplan que posee, consulte el apartado [Identifique su producto MXplan](#whichmxplan).<br>
+>> Si no conoce el tipo de producto MX Plan que posee, consulte el apartado [Identifique su producto MX Plan](#whichmxplan).<br>
 >> Haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente. Abra la pestaña `Correo electrónico`{.action}. Se abrirá una ventana en la que se mostrarán las cuentas de correo existentes. <br>
 >> Haga clic en el botón `...`{.action} y seleccione `Cambiar la contraseña`{.action}.<br><br>
 >>![email](images/email-password-mxplan-legacy01.png){.thumbnail}<br>
 >>
-> **Emails MXplan (nueva versión)**
+> **Emails MX Plan (nueva versión)**
 >>
->> Si no conoce el tipo de producto MXplan que posee, consulte el apartado [Identifique su producto MXplan](#whichmxplan).<br>
+>> Si no conoce el tipo de producto MX Plan que posee, consulte el apartado [Identifique su producto MX Plan](#whichmxplan).<br>
 >> Haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente. Abra la pestaña `Correo electrónico`{.action}. Se abrirá una ventana en la que se mostrarán las cuentas de correo existentes. <br>
 >> Haga clic en el botón `...`{.action} y seleccione `Editar`{.action}.<br><br>
 >>![email](images/email-password-mxplan-new01.png){.thumbnail}<br>
@@ -68,7 +68,7 @@ Desde el [área de cliente de OVHcloud](/links/manager), acceda al apartado `Web
 
 La modificación de su contraseña a través del webmail está disponible para los servicios de correo electrónico de OVHcloud que utilizan **OWA** (**O**utlook **W**eb **A**pp):
 
-- Emails MXplan (nueva versión)
+- Emails MX Plan (nueva versión)
 - Email Pro
 - Exchange
 
@@ -108,9 +108,9 @@ Per motivi di sicurezza e riservatezza non è possibile **recuperare** una passw
 >
 > Se vuoi salvare una password, ti consigliamo di utilizzare un gestore di password come **Keepass** ad esempio.
 
-#### Identifique su solución MXplan <a name="whichmxplan"></a>
+#### Identifique su solución MX Plan <a name="whichmxplan"></a>
 
-En la siguiente tabla encontrará la información necesaria para identificar su solución MXplan.
+En la siguiente tabla encontrará la información necesaria para identificar su solución MX Plan.
 
 |Versión histórica de la solución MX Plan|Nueva versión de la solución MX Plan|
 |---|---|
@@ -118,7 +118,7 @@ En la siguiente tabla encontrará la información necesaria para identificar su 
 
 ## Más información
 
-[Primeros pasos con la solución MXplan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
+[Primeros pasos con la solución MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 
 [Primeros pasos con la solución Email Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
 

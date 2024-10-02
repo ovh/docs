@@ -25,7 +25,7 @@ La delega offre all'utente di un account email la possibilità di gestire autono
 
 > [!warning]
 >
-> Questa guida ti mostra come utilizzare il servizio MXplan storico. Per la nuova offerta non ci sono delegazioni. La modifica della password, i filtri e le risposte automatiche di un indirizzo email possono essere cambiati direttamente tramite la webmail OWA (**O**utlook **W**eb **A**pp). **Utilizza la tabella qui sotto per identificare la tua offerta.**
+> Questa guida ti mostra come utilizzare il servizio MX Plan storico. Per la nuova offerta non ci sono delegazioni. La modifica della password, i filtri e le risposte automatiche di un indirizzo email possono essere cambiati direttamente tramite la webmail OWA (**O**utlook **W**eb **A**pp). **Utilizza la tabella qui sotto per identificare la tua offerta.**
 >
 
 |Vecchia versione della soluzione MX Plan|Nuova versione della soluzione MX Plan|
@@ -44,7 +44,7 @@ Accedi allo [Spazio Cliente OVHcloud](/links/manager) nella sezione `Web Cloud`.
 
 e seleziona il tuo servizio nella sezione `Email`{.action}.
 
-Per visualizzare la lista degli account email della tua offerta MXplan, clicca sulla scheda `Email`{.action}.
+Per visualizzare la lista degli account email della tua offerta MX Plan, clicca sulla scheda `Email`{.action}.
 
 ![Delega](images/mxplan-delegation-01.png){.thumbnail}
 
@@ -60,7 +60,7 @@ Si apre una nuova finestra. Clicca sul pulsante `+`{.action} a destra della voce
 
 ![Delega](images/mxplan-delegation-03.png){.thumbnail}
 
-È possibile delegare la gestione del servizio MXplan a diversi identificativi OVHcloud.
+È possibile delegare la gestione del servizio MX Plan a diversi identificativi OVHcloud.
 
 ### Delegare uno o più account email a un identificativo
 

@@ -58,7 +58,7 @@ Okno wyświetla teraz informacje dotyczące konfiguracji trybów.
 > **Rozumienie trybów autorytatywnych i nieautorytatywnych**
 >
 > - Gdy wiadomość e-mail jest przesyłana do platformy E-mail Pro (*Inbound mail server Email Pro*) w trybie **autorytatywnym**, wszystkie adresy e-mail przypisane do Twojej domeny są hostowane tylko na tej platformie. <br> <br> Na przykład, jeśli wyślemy wiadomość e-mail na adres "*mary.johnson@mydomain.ovh*", serwer E-mail Pro "*Inbound mail server Email Pro*" zwróci nadawcy wiadomość o niepowodzeniu, ponieważ ten adres nie istnieje na serwerze E-mail Pro "*Inbound mail server Email Pro*".
-> - Gdy wiadomość e-mail jest wysyłana do platformy e-mail E-mail Pro (*Inbound mail server Email Pro*) w trybie **nieautorytatywnym**, oznacza to, że adresy e-mail Twojej domeny są rozdzielone między Twoją główną platformę e-mail (*Inbound mail server Email Pro*) i inną usługę e-mail (*Inbound mail server MXplan*). <br> <br> Na przykład jeśli wyślemy wiadomość e-mail na adres "*mary.johnson@mydomain.ovh*", serwer E-mail Pro *Inbound mail server Email Pro* prześle wiadomość e-mail do serwera MXplan "*Inbound mail server MXplan*", aby serwer mógł ją dostarczyć.
+> - Gdy wiadomość e-mail jest wysyłana do platformy e-mail E-mail Pro (*Inbound mail server Email Pro*) w trybie **nieautorytatywnym**, oznacza to, że adresy e-mail Twojej domeny są rozdzielone między Twoją główną platformę e-mail (*Inbound mail server Email Pro*) i inną usługę e-mail (*Inbound mail server MX Plan*). <br> <br> Na przykład jeśli wyślemy wiadomość e-mail na adres "*mary.johnson@mydomain.ovh*", serwer E-mail Pro *Inbound mail server Email Pro* prześle wiadomość e-mail do serwera MX Plan "*Inbound mail server MX Plan*", aby serwer mógł ją dostarczyć.
 >
 > ![Dodaj Domenę](images/authoritative-mode.png){.thumbnail}
 >
@@ -69,7 +69,7 @@ Okno wyświetla teraz informacje dotyczące konfiguracji trybów.
 
 Jeśli wybierzesz tryb **nieautorytatywny** i będziesz korzystać z usługi:
 
-- **E-mail OVHcloud (Exchange lub MXplan)**, wpisz bezpośrednio jako docelowy serwer e-mail "*mx1.mail.ovh.net*" (działa w ten sam sposób z *mx0.mail.ovh.net*, *mx2.mail.ovh.net*, *mx3.mail.ovh.net*, *mx4.mail.ovh.net* ).
+- **E-mail OVHcloud (Exchange lub MX Plan)**, wpisz bezpośrednio jako docelowy serwer e-mail "*mx1.mail.ovh.net*" (działa w ten sam sposób z *mx0.mail.ovh.net*, *mx2.mail.ovh.net*, *mx3.mail.ovh.net*, *mx4.mail.ovh.net* ).
 - **E-mail zewnętrzny względem OVHcloud (konkurencyjna oferta e-mail, prywatny serwer e-mail)** wprowadź w polu Serwer docelowy nazwę hosta serwera poczty przychodzącej dla tej usługi zewnętrznej, upewniając się, że zezwala ona na zapytania e-mail pochodzące z Twojej usługi E-mail Pro
 
 Wybór trybu nie jest ostateczny i możesz zmienić go po zalogowaniu się do Panelu klienta OVHcloud.

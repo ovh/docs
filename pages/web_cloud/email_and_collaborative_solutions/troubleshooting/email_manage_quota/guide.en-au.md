@@ -65,7 +65,7 @@ Before you perform any other operation on your email account, you will need to f
 
 You can increase the storage capacity of your email account, if it has not reached its maximum capacity. Below, you will find the approach to follow, depending on your solution:
 
-The capacity of an MXplan account can range from 2.5 MB to 5 GB. If it is full and its capacity is less than 5 GB, you can modify its capacity via the [OVHcloud Control Panel](/links/manager).<br>
+The capacity of an MX Plan account can range from 2.5 MB to 5 GB. If it is full and its capacity is less than 5 GB, you can modify its capacity via the [OVHcloud Control Panel](/links/manager).<br>
 In the `Email accounts`{.action} tab, click the button `...`{.action} to the right of the account you want to change, and then click `Edit`{.action}.
 From the `Quota`{.action} box, select the size that suits you, click `Next`{.action}, then `Confirm`{.action}.<br><br>
 ![email](images/email-quota-more01.png){.thumbnail}<br>
@@ -87,13 +87,13 @@ The role of email software is to convert your emails into files, so that they ca
 
 Below is a non-exhaustive list of configuration guides for email clients on computers, depending on the solution you have:
 
-Configuring an MXplan account on **Windows**:
+Configuring an MX Plan account on **Windows**:
 
 - [Mail on Windows 10](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10) (included with Windows)
-- [Outlook for Mxplan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)
+- [Outlook for MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)
 - [Thunderbird](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_thunderbird_windows) (free)
 
-Configuring an MXplan account on **macOS**:
+Configuring an MX Plan account on **macOS**:
 
 - [Mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_mail_macos) (included with macOS)
 - [Outlook](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac)

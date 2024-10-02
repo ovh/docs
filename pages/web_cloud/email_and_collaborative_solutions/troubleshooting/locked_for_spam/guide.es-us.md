@@ -17,7 +17,7 @@ Cuando su dirección de correo electrónico está bloqueada por SPAM, significa 
 
 ## Procedimiento <a name="instructions"></a>
 
-Antes de continuar, y si el bloqueo afecta a una dirección de correo electrónico de tipo MXplan, identifique la versión que tiene para consultar el progreso del proceso de desbloqueo. Compruebe cómo distinguir las dos versiones utilizando la siguiente tabla.
+Antes de continuar, y si el bloqueo afecta a una dirección de correo electrónico de tipo MX Plan, identifique la versión que tiene para consultar el progreso del proceso de desbloqueo. Compruebe cómo distinguir las dos versiones utilizando la siguiente tabla.
 
 |Versión histórica de la solución MX Plan|Nueva versión de la solución MX Plan|
 |---|---|

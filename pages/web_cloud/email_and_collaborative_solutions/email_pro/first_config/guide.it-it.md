@@ -58,7 +58,7 @@ Compare un messaggio con le informazioni relative alla configurazione della moda
 > **Informazioni sulle modalità Autoritativa e Non autoritativa**
 >
 > - Quando un’email viene trasmessa verso la piattaforma Email Pro (*Inbound mail server Email Pro*) in modalità **autoritativa**, significa che tutti gli indirizzi email del tuo dominio sono ospitati esclusivamente su questa piattaforma. <br> <br> Ad esempio, se si invia un’email all’indirizzo "*mary.johnson@mydomain.ovh*", il server Email Pro "*Inbound mail server Email Pro*" restituirà un messaggio di errore al mittente, in quanto questo indirizzo non esiste sul server Email Pro "*Inbound mail server Email Pro*".
-> - Quando un’email viene trasmessa verso la piattaforma Email Pro (*Inbound mail server Email Pro*) in modalità **non autoritativa**, significa che gli indirizzi email del dominio sono ripartiti tra la piattaforma email principale (*Inbound mail server Email Pro*) e un altro servizio di posta (*Inbound mail server MXplan*). <br> <br> Ad esempio, se si invia un’email all’indirizzo "*mary.johnson@mydomain.ovh*", il server Email Pro *Inbound mail server Email Pro* inoltrerà l’email al server MXplan "*Inbound mail server MXplan*" perché quest’ultimo possa consegnarla.
+> - Quando un’email viene trasmessa verso la piattaforma Email Pro (*Inbound mail server Email Pro*) in modalità **non autoritativa**, significa che gli indirizzi email del dominio sono ripartiti tra la piattaforma email principale (*Inbound mail server Email Pro*) e un altro servizio di posta (*Inbound mail server MX Plan*). <br> <br> Ad esempio, se si invia un’email all’indirizzo "*mary.johnson@mydomain.ovh*", il server Email Pro *Inbound mail server Email Pro* inoltrerà l’email al server MX Plan "*Inbound mail server MX Plan*" perché quest’ultimo possa consegnarla.
 >
 > ![Add Domain](images/authoritative-mode.png){.thumbnail}
 >
@@ -69,7 +69,7 @@ Compare un messaggio con le informazioni relative alla configurazione della moda
 
 Se si sceglie la modalità **non autoritativa** e si utilizza un servizio:
 
-- **E-mail OVHcloud (Exchange o MXplan)**, inserisci direttamente come server email di destinazione "*mx1.mail.ovh.net*" ( funziona allo stesso modo con *mx0.mail.ovh.net*, *mx2.mail.ovh.net*, *mx3.mail.ovh.net*, *mx4.mail.ovh.net* ).
+- **E-mail OVHcloud (Exchange o MX Plan)**, inserisci direttamente come server email di destinazione "*mx1.mail.ovh.net*" ( funziona allo stesso modo con *mx0.mail.ovh.net*, *mx2.mail.ovh.net*, *mx3.mail.ovh.net*, *mx4.mail.ovh.net* ).
 - **Email esterna a OVHcloud (offerta email concorrente, server email privato)**, inserisci nella casella server di posta di destinazione il nome host del server in entrata di questo servizio esterno assicurandoti che autorizzi le richieste email provenienti dal tuo servizio Email Pro
 
 La scelta della modalità non è definitiva e può essere modificata dallo Spazio Cliente OVHcloud.

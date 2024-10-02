@@ -57,11 +57,11 @@ Apresentamos a seguir uma lista não exaustiva dos elementos que podem compor um
 
 - O campo `Received` está presente no cabeçalho a cada passagem do e-mail num servidor de envio (SMTP). Geralmente, o nome do host do servidor é encontrado com o seu endereço IP e a data. Os campos `Received` são classificados da passagem mais recente à passagem mais antiga num servidor:
 <pre class="bgwhite"><code>
-Received: from mxplan7.mail.ovh.net (unknown [10.109.143.250])
+Received: from MX Plan7.mail.ovh.net (unknown [10.109.143.250])
 	by mo3005.mail-out.ovh.net (Postfix) with ESMTPS id 448F4140309
 	for &lt;john@mydomain.ovh&gt; ;Wed, 30 Jun 2021 13:12:40 +0000 (UTC)
 </code></pre>
-  *Aqui, o e-mail foi enviado do servidor mxplan7.mail.ovh.net para o servidor mo3005.mail-out.ovh.net a 30 de junho de 2021 às 13h12:40 (Fuseau Horaire UTC)*
+  *Aqui, o e-mail foi enviado do servidor MX Plan7.mail.ovh.net para o servidor mo3005.mail-out.ovh.net a 30 de junho de 2021 às 13h12:40 (Fuseau Horaire UTC)*
 
 - O campo `Return-Path` corresponde ao endereço de retorno quando o envio da mensagem falhou. o endereço de retorno é geralmente aquele que realizou o envio.
 <pre class="bgwhite"><code>

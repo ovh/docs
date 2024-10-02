@@ -57,11 +57,11 @@ Im Folgenden finden Sie eine nicht erschöpfende Liste der Elemente, aus denen e
 
 - Ein `Received` Eintrag ist im Header für jedem Durchgang der E-Mail auf einen Ausgangsserver (SMTP) enthalten. Der Hostname des Servers wird in der Regel mit seiner IP-Adresse und einem Zeitstempel angegeben. Die Einträge für `Received` sind vom letzten Durchgang zum ältesten Durchgang auf einem Server sortiert:
 <pre class="bgwhite"><code>
-Received: from mxplan7.mail.ovh.net (unknown [10.109.143.250])
+Received: from MX Plan7.mail.ovh.net (unknown [10.109.143.250])
 	by mo3005.mail-out.ovh.net (Postfix) with ESMTPS id 448F4140309
 	for &lt;john@mydomain.ovh&gt; ;Wed, 30 Jun 2021 13:12:40 +0000 (UTC)
 </code></pre>
-*Hier wurde die E-Mail vom Server mxplan7.mail.ovh.net zum Server mo3005.mail-out.ovh.net am 30. Juni 2021 um 13:12:40 Uhr (UTC-Zeitzone) übertragen.*
+*Hier wurde die E-Mail vom Server MX Plan7.mail.ovh.net zum Server mo3005.mail-out.ovh.net am 30. Juni 2021 um 13:12:40 Uhr (UTC-Zeitzone) übertragen.*
 
 - Der Eintrag `Return-Path` entspricht der Rücksendeadresse, wenn der Versand der Nachricht fehlgeschlagen ist. Die Rücksendeadresse ist im Allgemeinen die Versandadresse. 
 <pre class="bgwhite"><code>

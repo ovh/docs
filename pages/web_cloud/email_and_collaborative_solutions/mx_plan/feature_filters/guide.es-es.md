@@ -40,7 +40,7 @@ Conéctese al [área de cliente de OVHcloud](/links/manager) en la sección `Web
 
 Haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente.
 
-En la pestaña `Correo electrónico`{.action} de su servicio MXplan, encontrará la lista de sus direcciones de correo. En el cuadro de cuentas de correo puede verse una columna `Filtros`. Haga clic en el icono de embudo.
+En la pestaña `Correo electrónico`{.action} de su servicio MX Plan, encontrará la lista de sus direcciones de correo. En el cuadro de cuentas de correo puede verse una columna `Filtros`. Haga clic en el icono de embudo.
 
 ![correo electrónico](images/img_3239.png){.thumbnail}
 

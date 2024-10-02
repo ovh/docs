@@ -17,7 +17,7 @@ Jeśli Twój adres e-mail jest zablokowany z powodu SPAM-u, oznacza to, że pode
 
 ## W praktyce <a name="instructions"></a>
 
-Zanim przejdziesz dalej i jeśli blokada dotyczy konta e-mail typu MXplan, podaj wersję, którą posiadasz, aby śledzić prawidłowy proces odblokowania. Sprawdź, jak odróżnić dwie wersje, korzystając z poniższej tabeli.
+Zanim przejdziesz dalej i jeśli blokada dotyczy konta e-mail typu MX Plan, podaj wersję, którą posiadasz, aby śledzić prawidłowy proces odblokowania. Sprawdź, jak odróżnić dwie wersje, korzystając z poniższej tabeli.
 
 |Poprzednia wersja usługi MX Plan|Nowa wersja usługi MX Plan|
 |---|---|

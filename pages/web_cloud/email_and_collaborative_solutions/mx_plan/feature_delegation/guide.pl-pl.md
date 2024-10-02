@@ -25,7 +25,7 @@ Delegacja uprawnień daje użytkownikowi konta e-mail możliwość samodzielnego
 
 > [!warning]
 >
-> Poniższy przewodnik skierowany jest do posiadaczy "historycznej" oferty MXplan. W przypadku nowej oferty nie ma delegacji. Zmiana hasła, filtrów i autoresponderów konta e-mail może zostać bezpośrednio zmieniona przez Webmail OWA (**O**utlook **W**eb **A**pp). **Zidentyfikuj ofertę korzystając z poniższej tabeli.**
+> Poniższy przewodnik skierowany jest do posiadaczy "historycznej" oferty MX Plan. W przypadku nowej oferty nie ma delegacji. Zmiana hasła, filtrów i autoresponderów konta e-mail może zostać bezpośrednio zmieniona przez Webmail OWA (**O**utlook **W**eb **A**pp). **Zidentyfikuj ofertę korzystając z poniższej tabeli.**
 >
 
 |Poprzednia wersja usługi MX Plan|Nowa wersja usługi MX Plan|
@@ -44,7 +44,7 @@ Zaloguj się do [Panelu klienta OVHcloud](/links/manager) w sekcji `Web Cloud`.
 
 Kliknij E-maile na pasku usług, po czym wybierz odpowiednią usługę MX Plan.
 
-Aby wyświetlić listę kont e-mail w Twojej usłudze MXplan, kliknij zakładkę `E-maile`{.action}.
+Aby wyświetlić listę kont e-mail w Twojej usłudze MX Plan, kliknij zakładkę `E-maile`{.action}.
 
 ![delegacja uprawnień exchange](images/mxplan-delegation-01.png){.thumbnail}
 
@@ -60,7 +60,7 @@ Pojawi się nowe okno. Kliknij przycisk `+`{.action} po prawej stronie pozycji `
 
 ![delegacja uprawnień exchange](images/mxplan-delegation-03.png){.thumbnail}
 
-Możesz przypisać zarządzanie usługą MXplan do kilku identyfikatorów OVHcloud.
+Możesz przypisać zarządzanie usługą MX Plan do kilku identyfikatorów OVHcloud.
 
 ### Delegowanie jednego lub kilku kont e-mail ma identyfikator
 

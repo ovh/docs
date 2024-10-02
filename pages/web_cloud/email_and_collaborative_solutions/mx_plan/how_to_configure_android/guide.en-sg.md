@@ -12,7 +12,7 @@ updated: 2023-12-15
 
 ## Objective
 
-You can configure MX Plan email addresses on email clients, if they are compatible. By doing so, you can use your email address through your preferred device. In this guide, we will detail the process of configuring an MXplan email address in the Gmail application on Android devices.
+You can configure MX Plan email addresses on email clients, if they are compatible. By doing so, you can use your email address through your preferred device. In this guide, we will detail the process of configuring an MX Plan email address in the Gmail application on Android devices.
 
 **Find out how to configure an MX Plan email address on Android, via the Gmail app.**
 

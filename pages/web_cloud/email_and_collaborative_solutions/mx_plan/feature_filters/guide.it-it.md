@@ -26,7 +26,7 @@ Ad esempio: vuoi che tutte le email contenenti "[SPAM]" nell'oggetto siano elimi
 
 > [!warning]
 >
-> Questa guida ti mostra come utilizzare il servizio MXplan storico. Per la nuova offerta, i filtri vengono gestiti direttamente tramite la Webmail OWA (**O**utlook **W**eb **A**pp). Utilizza la tabella qui sotto per identificare la tua offerta.
+> Questa guida ti mostra come utilizzare il servizio MX Plan storico. Per la nuova offerta, i filtri vengono gestiti direttamente tramite la Webmail OWA (**O**utlook **W**eb **A**pp). Utilizza la tabella qui sotto per identificare la tua offerta.
 >
 
 Vecchia versione della soluzione MX Plan|Nuova versione della soluzione MX Plan|
@@ -40,7 +40,7 @@ Accedi allo [Spazio Cliente OVHcloud](/links/manager) nella sezione `Web Cloud`.
 
 E seleziona il tuo servizio nella sezione `Email`{.action}.
 
-Nella scheda `Email`{.action} del tuo servizio MXplan, visualizzi la lista dei tuoi indirizzi email. Una colonna `Filtri` è visibile nella tabella degli account email. Clicca sull'icona dell'imbuto.
+Nella scheda `Email`{.action} del tuo servizio MX Plan, visualizzi la lista dei tuoi indirizzi email. Una colonna `Filtri` è visibile nella tabella degli account email. Clicca sull'icona dell'imbuto.
 
 ![email](images/img_3239.png){.thumbnail}
 

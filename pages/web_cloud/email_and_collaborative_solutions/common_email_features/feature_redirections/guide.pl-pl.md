@@ -76,7 +76,7 @@ Kliknij poniższe zakładki, aby uzyskać ilustrowane wyjaśnienia dotyczące dz
 >
 > Rozdziały "[Utwórz przekierowanie](#redirect)" i "[Utwórz alias](#alias)" dotyczą wszystkich naszych ofert e-mail OVHcloud, **chyba że**:
 >
-> - posiadasz starszą wersję usługi MXplan (aby to sprawdzić, sprawdź ramkę poniżej).
+> - posiadasz starszą wersję usługi MX Plan (aby to sprawdzić, sprawdź ramkę poniżej).
 > - posiadasz domenę zarejestrowaną w OVHcloud bez dołączonej oferty e-mail.
 >
 > W przypadku tych dwóch wyjątków możliwe jest tylko przekierowanie. Zapraszamy do zapoznania się bezpośrednio z rozdziałem "[Tworzenie przekierowania lub aliasu na historycznej usłudze MX Plan lub nazwie domeny bez oferty e-mail](#mxplanlegacy)".

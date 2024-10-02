@@ -102,7 +102,7 @@ Zwiększ rozmiar przestrzeni dyskowej Twojego konta e-mail, jeśli konto nie osi
 > [!tabs]
 > **E-maile (MXplan)**
 >>
->> Rozmiar konta MXplan może wynosić od 2,5 MB do 5 GB. Jeśli pojemność jest wysycona i mniejsza niż 5 GB, możesz zmienić jej pojemność poprzez [Panel klienta OVHcloud](/links/manager).<br>
+>> Rozmiar konta MX Plan może wynosić od 2,5 MB do 5 GB. Jeśli pojemność jest wysycona i mniejsza niż 5 GB, możesz zmienić jej pojemność poprzez [Panel klienta OVHcloud](/links/manager).<br>
 >> Z karty `Konta e-mail`{.action}, kliknij przycisk <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> po prawej stronie konta, które chcesz zmienić, po czym kliknij `Zmień`{.action}.
 >> W kratce `Quota`{.action} wybierz odpowiedni rozmiar, kliknij `Dalej`{.action}, a następnie `Zatwierdź`{.action}.<br><br>
 >> ![e-mail](images/email-quota-more01.png){.thumbnail}<br>
@@ -144,11 +144,11 @@ Poniżej znajduje się niewyczerpująca lista przewodników konfiguracyjnych dla
 > [!tabs]
 > **E-maile (MXplan)**
 >>
->> Konfiguracja konta MXplan na **Windows* :<br><br>
+>> Konfiguracja konta MX Plan na **Windows* :<br><br>
 >> - [Poczta na urządzeniu z systemem Windows 10](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10) (zawarte w systemie Windows)<br>
->> - [Outlook for Mxplan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)
+>> - [Outlook for MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)
 >> - [Thunderbird](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_thunderbird_windows) (za darmo)<br><br>>
->> Konfiguracja konta MXplan na **macOS** :<br>
+>> Konfiguracja konta MX Plan na **macOS** :<br>
 >> - [Mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_mail_macos) (zawarte w macOS)<br>
 >> - [Outlook](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac)<br>
 >> - [Thunderbird](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_thunderbird_mac) (za darmo)

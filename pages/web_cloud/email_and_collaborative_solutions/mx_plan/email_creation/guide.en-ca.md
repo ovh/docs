@@ -75,7 +75,7 @@ To view your emails using an email client, please refer to the section ["View an
 
 #### Delete an email account
 
-With a new MXplan service, deleting an account is referred to as *resetting an account*.
+With a new MX Plan service, deleting an account is referred to as *resetting an account*.
 
 > [!warning]
 >

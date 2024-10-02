@@ -33,7 +33,7 @@ Para aceder à política do seu serviço de e-mail, aceda à [Área de Cliente O
 
 > [!primary]
 >
-> Se não vê o separador `Plus`{.action} no painel de gestão da sua oferta `E-mails`{.action}, isso significa que está numa oferta MXplan histórico. Não existe gestão da política de segurança na oferta MXplan histórico.
+> Se não vê o separador `Plus`{.action} no painel de gestão da sua oferta `E-mails`{.action}, isso significa que está numa oferta MX Plan histórico. Não existe gestão da política de segurança na oferta MX Plan histórico.
 
 Continue a ler este manual na secção correspondente à ação que pretende realizar:
 

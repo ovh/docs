@@ -44,7 +44,7 @@ Aceda à [Área de Cliente OVHcloud](/links/manager), na secção `Web Cloud`.
 
 Clique em `E-mails`{.action} e selecione o serviço MX Plan correspondente.
 
-Para apresentar a lista das contas de e-mail da sua oferta MXplan, clique no separador `Emails`{.action}.
+Para apresentar a lista das contas de e-mail da sua oferta MX Plan, clique no separador `Emails`{.action}.
 
 ![delegação](images/mxplan-delegation-01.png){.thumbnail}
 
@@ -60,7 +60,7 @@ Surge uma nova janela. Clique no botão `+`{.action} à direita da linha `Adicio
 
 ![delegação](images/mxplan-delegation-03.png){.thumbnail}
 
-Pode delegar a gestão do seu serviço MXplan em vários identificadores OVHcloud.
+Pode delegar a gestão do seu serviço MX Plan em vários identificadores OVHcloud.
 
 ### Delegar uma ou várias contas de e-mail tem um identificador
 

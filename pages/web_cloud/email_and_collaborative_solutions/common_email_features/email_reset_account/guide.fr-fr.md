@@ -24,7 +24,7 @@ Vous souhaitez :
 
 OVHcloud propose 3 solutions e-mail, la notion de suppression de compte est différente selon votre offre.
 
-- **Email MXplan** : cette offre est vendue sous la forme d'un pack de plusieurs comptes e-mail. Lorsque vous supprimez un compte, vous libérez un emplacement sur votre pack.
+- **Email MX Plan** : cette offre est vendue sous la forme d'un pack de plusieurs comptes e-mail. Lorsque vous supprimez un compte, vous libérez un emplacement sur votre pack.
 - **Email Pro** et **Hosted Exchange** : ces deux offres sont à la carte, vous commandez un abonnement individuel par compte e-mail. Lorsque vous voulez supprimer une adresse e-mail, il s'agit alors d'effectuer une **réinitialisation**. Une fois le compte e-mail réinitialisé, vous pouvez réutiliser ce compte pour créer une nouvelle adresse e-mail. Vous pouvez également [résilier l'abonnement](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#supprimer-des-comptes) de ce compte si vous souhaitez le supprimer définitivement.
 
 ### Supprimer ou réinitialiser un compte e-mail
@@ -32,16 +32,16 @@ OVHcloud propose 3 solutions e-mail, la notion de suppression de compte est diff
 Sélectionnez l'onglet correspondant à votre offre e-mail :
 
 > [!tabs]
-> **Emails MXplan historique**
+> **Emails MX Plan historique**
 >>
->> Pour vérifier si votre offre MXplan est une version historique ou nouvelle, référez-vous au tableau de la partie « [Identifiez votre offre MXplan](#whichmxplan) » de ce guide.<br><br>
+>> Pour vérifier si votre offre MX Plan est une version historique ou nouvelle, référez-vous au tableau de la partie « [Identifiez votre offre MX Plan](#whichmxplan) » de ce guide.<br><br>
 >>
 >> Cliquez sur `Emails`{.action} puis choisissez le nom du service MX Plan concerné. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. Cliquez sur le bouton `...`{.action} à droite du compte à modifier puis cliquez sur `Supprimer le compte`{.action}.<br><br>
 >>![email](images/email-mxplan-legacy-reset.png){.thumbnail}<br>
 >>
-> **Emails MXplan nouvelle version**
+> **Emails MX Plan nouvelle version**
 >>
->> Pour vérifier si votre offre MXplan est une version historique ou nouvelle, référez-vous au tableau de la partie « [Identifiez votre offre MXplan](#whichmxplan) » de ce guide.<br><br>
+>> Pour vérifier si votre offre MX Plan est une version historique ou nouvelle, référez-vous au tableau de la partie « [Identifiez votre offre MX Plan](#whichmxplan) » de ce guide.<br><br>
 >>
 >> Cliquez sur `Emails`{.action} puis choisissez le nom du service MX Plan concerné. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. Cliquez sur le bouton `...`{.action} à droite du compte à modifier puis cliquez sur `Réinitialiser ce compte`{.action}.<br><br>
 >>![email](images/email-mxplan-new-reset.png){.thumbnail}<br>
@@ -59,18 +59,18 @@ Sélectionnez l'onglet correspondant à votre offre e-mail :
 >>![email](images/exchange-reset.png){.thumbnail}<br>
 >>
 
-#### Identifiez votre offre MXplan <a name="whichmxplan"></a>
+#### Identifiez votre offre MX Plan <a name="whichmxplan"></a>
 
-Vous trouverez, dans le tableau ci-dessous, les informations nécessaires pour identifier votre offre MXplan.
+Vous trouverez, dans le tableau ci-dessous, les informations nécessaires pour identifier votre offre MX Plan.
 
 |Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
 |---|---|
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Repérez l'offre dans le cadre « Abonnement ».|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Repérez la « Référence serveur » dans le cadre « Résumé ».|
-|Sélectionnez l'onglet **Emails MXplan historique** ci-dessus dans ce guide.|Sélectionnez l'onglet **Emails MXplan nouvelle version** ci-dessus dans ce guide.|<br>
+|Sélectionnez l'onglet **Emails MX Plan historique** ci-dessus dans ce guide.|Sélectionnez l'onglet **Emails MX Plan nouvelle version** ci-dessus dans ce guide.|<br>
 
 ## Aller plus loin
 
-[Premiers pas avec la solution MXplan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
+[Premiers pas avec la solution MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 
 [Premiers pas avec la solution E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
 

@@ -79,7 +79,7 @@ Per consultare le tue email da un client di posta, consulta la sezione "[Consult
 
 #### Elimina un account email
 
-Dalla nuova versione MXplan, si parla di *reinizializzazione dell'account* quando si deve eliminarlo.
+Dalla nuova versione MX Plan, si parla di *reinizializzazione dell'account* quando si deve eliminarlo.
 
 > [!warning]
 >

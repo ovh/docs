@@ -44,7 +44,7 @@ Conéctese al [área de cliente de OVHcloud](/links/manager) en la sección `Web
 
 Haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente.
 
-Para ver la lista de cuentas de correo de su solución MXplan, haga clic en la pestaña `Correo electrónico`{.action}.
+Para ver la lista de cuentas de correo de su solución MX Plan, haga clic en la pestaña `Correo electrónico`{.action}.
 
 ![Delegación de permisos](images/mxplan-delegation-01.png){.thumbnail}
 
@@ -60,7 +60,7 @@ Se abrirá una nueva ventana. Haga clic en el botón `+`{.action} situado al fin
 
 ![Delegación de permisos](images/mxplan-delegation-03.png){.thumbnail}
 
-Puede delegar la gestión de su servicio MXplan en varias claves de OVHcloud.
+Puede delegar la gestión de su servicio MX Plan en varias claves de OVHcloud.
 
 ### Designar una o más cuentas de correo tiene un identificador
 

@@ -79,7 +79,7 @@ Para consultar os seus e-mails a partir de um software de correio eletrónico, c
 
 #### Eliminar uma conta de e-mail
 
-A partir da nova versão MXplan, fala-se de *reinicialização de conta* quando tem de a eliminar.
+A partir da nova versão MX Plan, fala-se de *reinicialização de conta* quando tem de a eliminar.
 
 > [!warning]
 >

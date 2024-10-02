@@ -22,7 +22,7 @@ Par exemple : vous souhaitez que tout e-mail contenant « [SPAM] » dans le suje
 
 > [!warning]
 >
-> Le guide suivant s'adresse aux détenteurs de l'offre MXplan « historique ». Pour la nouvelle offre, la gestion des filtres se fait directement via le webmail OWA (**O**utlook **W**eb **A**pp). Identifiez votre offre à l'aide du tableau ci-dessous.
+> Le guide suivant s'adresse aux détenteurs de l'offre MX Plan « historique ». Pour la nouvelle offre, la gestion des filtres se fait directement via le webmail OWA (**O**utlook **W**eb **A**pp). Identifiez votre offre à l'aide du tableau ci-dessous.
 >
 
 Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
@@ -36,7 +36,7 @@ Connectez-vous à votre [espace client OVHcloud](/links/manager) dans la partie 
 
 Cliquez sur `Emails`{.action}, puis choisissez le nom du service MX Plan concerné.
 
-Dans l'onglet `Emails`{.action} de votre service MXplan, vous trouverez la liste de vos adresses e-mail. Une colonne `Filtres` est visible dans le tableau des comptes e-mail. Cliquez sur l'icône d'entonnoir.
+Dans l'onglet `Emails`{.action} de votre service MX Plan, vous trouverez la liste de vos adresses e-mail. Une colonne `Filtres` est visible dans le tableau des comptes e-mail. Cliquez sur l'icône d'entonnoir.
 
 ![emails](images/img_3239.png){.thumbnail}
 

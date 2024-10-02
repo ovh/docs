@@ -79,7 +79,7 @@ Aby sprawdzić wiadomości e-mail za pomocą programu pocztowego, zapoznaj się 
 
 #### Usuń konto e-mail
 
-Od nowej wersji MXplan mówimy o *resecie konta*, kiedy musisz go usunąć.
+Od nowej wersji MX Plan mówimy o *resecie konta*, kiedy musisz go usunąć.
 
 > [!warning]
 >

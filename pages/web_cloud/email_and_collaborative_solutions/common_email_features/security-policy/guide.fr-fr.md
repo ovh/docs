@@ -33,7 +33,7 @@ Pour accéder à la politique de sécurité de votre service e-mail, connectez-v
 
 > [!primary]
 >
-> Si vous ne voyez pas apparaitre l'onglet `Plus`{.action} dans le panneau de gestion de votre offre `Emails`{.action}, cela signifie que vous êtes sur une offre MXplan historique. Il n'y a pas de gestion de la politique de sécurité sur l'offre MXplan historique.
+> Si vous ne voyez pas apparaitre l'onglet `Plus`{.action} dans le panneau de gestion de votre offre `Emails`{.action}, cela signifie que vous êtes sur une offre MX Plan historique. Il n'y a pas de gestion de la politique de sécurité sur l'offre MX Plan historique.
 
 Poursuivez ensuite vers le ou les aspects que vous souhaitez modifier.
 

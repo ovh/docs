@@ -37,16 +37,16 @@ Konta e-mail w ramach Twojej usługi OVHcloud są dostępne za pomocą przypisan
 W [Panelu klienta OVHcloud](/links/manager) przejdź do sekcji `Web Cloud`{.action} i postępuj zgodnie z instrukcjami zawartymi w Twojej ofercie:
 
 > [!tabs]
-> **E-maile MXplan (wersja historyczna)**
+> **E-maile MX Plan (wersja historyczna)**
 >>
->> Jeśli nie wiesz, jakiego typu jest Twoja oferta MXplan, zapoznaj się z naszym punktem [Sprawdź ofertę MXplan](#whichmxplan).<br>
+>> Jeśli nie wiesz, jakiego typu jest Twoja oferta MX Plan, zapoznaj się z naszym punktem [Sprawdź ofertę MX Plan](#whichmxplan).<br>
 >> Kliknij `E-maile`{.action}, po czym wybierz odpowiednią usługę MX Plan. Przejdź do zakładki `E-maile`{.action}. Pojawi się okno, w którym widoczne są istniejące konta e-mail. <br>
 >> Kliknij przycisk, `...`{.action} a następnie `Zmień hasło`{.action}.<br><br>
 >>![e-mail](images/email-password-mxplan-legacy01.png){.thumbnail}<br>
 >>
-> **E-maile MXplan (nowa wersja)**
+> **E-maile MX Plan (nowa wersja)**
 >>
->> Jeśli nie wiesz, jakiego typu jest Twoja oferta MXplan, zapoznaj się z naszym punktem [Sprawdź ofertę MXplan](#whichmxplan).<br>
+>> Jeśli nie wiesz, jakiego typu jest Twoja oferta MX Plan, zapoznaj się z naszym punktem [Sprawdź ofertę MX Plan](#whichmxplan).<br>
 >> Kliknij `E-maile`{.action}, po czym wybierz odpowiednią usługę MX Plan. Przejdź do zakładki `E-maile`{.action}. Pojawi się okno, w którym widoczne są istniejące konta e-mail. <br>
 >> Kliknij przycisk, po czym `...`{.action} kliknij `Zmień`{.action}.<br><br>
 >>![e-mail](images/email-password-mxplan-new01.png){.thumbnail}<br>
@@ -68,13 +68,13 @@ W [Panelu klienta OVHcloud](/links/manager) przejdź do sekcji `Web Cloud`{.acti
 
 Zmiana hasła za pomocą interfejsu webmail jest dostępna w przypadku ofert e-mail OVHcloud wykorzystujących **OWA** (**O**utlook **W**eb **A**pp):
 
-- E-maile MXplan (Nowa wersja)
+- E-maile MX Plan (Nowa wersja)
 - Email Pro
 - Exchange
 
 > [!warning]
 >
-> W ofercie **Email MXplan (wersja historyczna)** używamy interfejsu Webmail Roundcube. Zmiana hasła jest wykonywana tylko [w Panelu klienta](#controlpanel).
+> W ofercie **Email MX Plan (wersja historyczna)** używamy interfejsu Webmail Roundcube. Zmiana hasła jest wykonywana tylko [w Panelu klienta](#controlpanel).
 >
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube wideo player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -108,9 +108,9 @@ Ze względów bezpieczeństwa i prywatności nie jest możliwe **odzyskanie** ha
 >
 > Jeśli chcesz zachować hasło, zalecane jest użycie menedżera haseł, takiego jak **Keepass**.
 
-#### Zidentyfikuj ofertę MXplan <a name="whichmxplan"></a>
+#### Zidentyfikuj ofertę MX Plan <a name="whichmxplan"></a>
 
-W poniższej tabeli znajdziesz informacje niezbędne do identyfikacji Twojej oferty MXplan.
+W poniższej tabeli znajdziesz informacje niezbędne do identyfikacji Twojej oferty MX Plan.
 
 |Poprzednia wersja usługi MX Plan|Nowa wersja usługi MX Plan|
 |---|---|
@@ -118,7 +118,7 @@ W poniższej tabeli znajdziesz informacje niezbędne do identyfikacji Twojej ofe
 
 ## Sprawdź również
 
-[Pierwsze kroki z usługą MXplan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
+[Pierwsze kroki z usługą MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 
 [Pierwsze kroki z usługą E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
 

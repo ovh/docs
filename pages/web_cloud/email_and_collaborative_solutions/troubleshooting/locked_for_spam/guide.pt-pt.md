@@ -17,7 +17,7 @@ Quando o seu endereço de e-mail é bloqueado por SPAM, isto significa que foi d
 
 ## Instruções <a name="instructions"></a>
 
-Antes de prosseguir, e se o bloqueio afetar um endereço de e-mail do tipo MXplan, identifique a versão que possui para seguir o bom processo de desbloqueio. Com a ajuda do quadro abaixo, verifique como distinguir as duas versões.
+Antes de prosseguir, e se o bloqueio afetar um endereço de e-mail do tipo MX Plan, identifique a versão que possui para seguir o bom processo de desbloqueio. Com a ajuda do quadro abaixo, verifique como distinguir as duas versões.
 
 |Versão histórica da oferta MX Plan|Nova versão da oferta MX Plan|
 |---|---|

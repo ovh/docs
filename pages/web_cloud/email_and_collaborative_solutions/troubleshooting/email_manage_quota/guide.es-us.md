@@ -82,7 +82,7 @@ Es posible aumentar la capacidad de almacenamiento de su cuenta de correo si est
 > [!tabs]
 > **Emails (MXplan)**
 >>
->> La capacidad de una cuenta MXplan puede ir de 2,5 MB a 5 GB. Si está saturado y tiene una capacidad inferior a 5 GB, puede modificar su capacidad desde el [área de cliente de OVHcloud](/links/manager).<br>
+>> La capacidad de una cuenta MX Plan puede ir de 2,5 MB a 5 GB. Si está saturado y tiene una capacidad inferior a 5 GB, puede modificar su capacidad desde el [área de cliente de OVHcloud](/links/manager).<br>
 >> En la pestaña `Cuentas de correo`{.action}, haga clic en el botón `...`{.action}situado al final de la línea correspondiente a la cuenta que quiera modificar y seleccione `Editar`{.action}.
 >> En la casilla `Cuota`{.action}, seleccione el tamaño que más le convenga, haga clic en `Siguiente`{.action} y luego en `Aceptar`{.action}.<br><br>
 >> ![email](images/email-quota-more01.png){.thumbnail}<br>
@@ -122,11 +122,11 @@ A continuación ofrecemos una lista no exhaustiva de las guías de configuració
 > [!tabs]
 > **Emails (MXplan)**
 >>
->> Configuración de una cuenta MXplan en **Windows**:<br><br>
+>> Configuración de una cuenta MX Plan en **Windows**:<br><br>
 >> - [Correo en Windows 10](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10) (incluido con Windows)<br>
->> - [Outlook para Mxplan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)
+>> - [Outlook para MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)
 >> - [Thunderbird](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_thunderbird_windows) (gratuito)<br>>
->> Configuración de una cuenta MXplan en **macOS**:<br><br>
+>> Configuración de una cuenta MX Plan en **macOS**:<br><br>
 >> - [Mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_mail_macos) (incluido con macOS)<br>
 >> - [Outlook](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac)<br>
 >> - [Thunderbird](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_thunderbird_mac) (gratuito)<br>

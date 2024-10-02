@@ -58,7 +58,7 @@ A nova janela apresenta informações relativas à configuração dos modos.
 > **Compreender os modos autoritário e não autoritário**
 >
 > - Quando um e-mail é transmitido para a sua plataforma E-mail Pro (*Inbound mail server Email Pro*) em modo **autoritário**, isso significa que todos os endereços de e-mail do seu nome de domínio estão unicamente alojados nesta plataforma. <br> <br> Por exemplo, se enviarmos um e-mail para o endereço "*mary.johnson@mydomain.ovh*", o servidor E-mail Pro "*Inbound mail server Email Pro*" devolve uma mensagem de falha ao remetente, pois esse endereço não existe no servidor E-mail Pro "*Inbound mail server Email Pro*".
-> - Quando um e-mail é transmitido para a sua plataforma de e-mail E-mail Pro (*Inbound mail server Email Pro*) em modo **não autoritário**, isso significa que os endereços de e-mail do seu domínio são repartidos entre a sua plataforma de e-mail principal (*Inbound mail server Email Pro*) e outro serviço de e-mail (*Inbound mail server MXplan*). <br> <br> Por exemplo, se enviarmos um e-mail para o endereço "*mary.johnson@mydomain.ovh*", o servidor E-mail Pro *Inbound mail server Email Pro* transmitirá o e-mail ao servidor MXplan "*Inbound mail server MXplan*" para que este último o possa entregar.
+> - Quando um e-mail é transmitido para a sua plataforma de e-mail E-mail Pro (*Inbound mail server Email Pro*) em modo **não autoritário**, isso significa que os endereços de e-mail do seu domínio são repartidos entre a sua plataforma de e-mail principal (*Inbound mail server Email Pro*) e outro serviço de e-mail (*Inbound mail server MX Plan*). <br> <br> Por exemplo, se enviarmos um e-mail para o endereço "*mary.johnson@mydomain.ovh*", o servidor E-mail Pro *Inbound mail server Email Pro* transmitirá o e-mail ao servidor MX Plan "*Inbound mail server MX Plan*" para que este último o possa entregar.
 >
 > ![Add Domain](images/authoritative-mode.png){.thumbnail}
 >
@@ -69,7 +69,7 @@ A nova janela apresenta informações relativas à configuração dos modos.
 
 Se optar pelo modo **não autoritário** e utilizar um serviço:
 
-- **E-mail OVHcloud (Exchange ou MXplan)**, introduza diretamente como servidor de e-mail de destino "*mx1.mail.ovh.net*" ( funciona da mesma forma com *mx.mail.ovh.net*, *mx2.mail.ovh.net*, *mx3.mail.ovh.net*, *mx4.mail.ovh.net* ).
+- **E-mail OVHcloud (Exchange ou MX Plan)**, introduza diretamente como servidor de e-mail de destino "*mx1.mail.ovh.net*" ( funciona da mesma forma com *mx.mail.ovh.net*, *mx2.mail.ovh.net*, *mx3.mail.ovh.net*, *mx4.mail.ovh.net* ).
 - **E-mail externo à OVHcloud (oferta de e-mail concorrente, servidor de e-mail privado)**. Introduza na caixa servidor de e-mail de destino o nome do host do servidor de entrada deste serviço externo, certificando-se de que este autoriza os pedidos de e-mail provenientes do seu serviço E-mail Pro
 
 A escolha do modo não é definitiva e pode ser alterada a partir da Área de Cliente OVHcloud.

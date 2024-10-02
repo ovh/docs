@@ -28,7 +28,7 @@ Deseja:
 
 A OVHcloud propõe 3 soluções de e-mail, a noção de eliminação de conta é diferente consoante a sua oferta.
 
-- **E-mail MXplan**: esta oferta é vendida sob a forma de um pack de várias contas de e-mail. Quando eliminar uma conta, liberta um espaço no seu pack. 
+- **E-mail MX Plan**: esta oferta é vendida sob a forma de um pack de várias contas de e-mail. Quando eliminar uma conta, liberta um espaço no seu pack. 
 - **Email Pro** e **Hosted Exchange**: estas duas ofertas estão 'à la carte', encomenda uma subscrição individual por conta de e-mail. Se deseja eliminar um endereço de e-mail, trata-se de efetuar uma **reinicialização**. Uma vez a conta de e-mail reinicializada, pode reutilizar esta conta para criar um novo endereço de e-mail. Também pode [cancelar a assinatura](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#eliminar-contas) desta conta se pretender eliminá-la definitivamente.
 
 ### Eliminar ou reinicializar uma conta de e-mail
@@ -36,16 +36,16 @@ A OVHcloud propõe 3 soluções de e-mail, a noção de eliminação de conta é
 Selecione o separador correspondente à sua oferta de e-mail:
 
 > [!tabs]
-> **E-mails MXplan histórico**
+> **E-mails MX Plan histórico**
 >>
->> Para verificar se a sua oferta MX plan é uma versão histórica ou nova, consulte a tabela da parte "[Identifique a sua oferta MXplan](#whichmxplan)" deste manual.<br><br>
+>> Para verificar se a sua oferta MX plan é uma versão histórica ou nova, consulte a tabela da parte "[Identifique a sua oferta MX Plan](#whichmxplan)" deste manual.<br><br>
 >>
 >> Clique em `E-mails`{.action} e escolha o nome do serviço MX Plan em causa. Aceda ao separador `Contas de e-mail`{.action}. Na nova janela, podem ver-se as contas de e-mail existentes. Clique no botão `...`{.action} à direita da conta a modificar e, a seguir, em `Eliminar conta`{.action}.<br><br>
 >>![email](images/email-mxplan-legacy-reset.png){.thumbnail}<br>
 >>
-> **E-mails MXplan nova versão**
+> **E-mails MX Plan nova versão**
 >>
->> Para verificar se a sua oferta MX plan é uma versão histórica ou nova, consulte a tabela da parte "[Identifique a sua oferta MXplan](#whichmxplan)" deste manual.<br><br>
+>> Para verificar se a sua oferta MX plan é uma versão histórica ou nova, consulte a tabela da parte "[Identifique a sua oferta MX Plan](#whichmxplan)" deste manual.<br><br>
 >>
 >> Clique em `E-mails`{.action} e escolha o nome do serviço MX Plan em causa. Aceda ao separador `Contas de e-mail`{.action}. Na nova janela, podem ver-se as contas de e-mail existentes. Clique no botão `...`{.action} à direita da conta a modificar e, a seguir, em `Reinicializar esta conta`{.action}.<br><br>
 >>![e-mail](images/email-mxplan-new-reset.png){.thumbnail}<br>
@@ -63,18 +63,18 @@ Selecione o separador correspondente à sua oferta de e-mail:
 >>![email](images/exchange-reset.png){.thumbnail}<br>
 >>
 
-#### Identifique a sua oferta MXplan <a name="whichmxplan"></a>
+#### Identifique a sua oferta MX Plan <a name="whichmxplan"></a>
 
-Na tabela abaixo, encontrará as informações necessárias para identificar a sua oferta MXplan.
+Na tabela abaixo, encontrará as informações necessárias para identificar a sua oferta MX Plan.
 
 |Versão antiga da oferta MX Plan|Nova versão da oferta MX Plan|
 |---|---|
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Consulte o tipo de oferta na secção “Subscrição”.|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Consulte a Referência do servidor na secção "Resumo".|
-|Selecione o separador E-**mails MXplan histórico** acima neste guia.|Selecione o separador E-**mails MX plan, nova versão**, neste guia.|<br>
+|Selecione o separador E-**mails MX Plan histórico** acima neste guia.|Selecione o separador E-**mails MX plan, nova versão**, neste guia.|<br>
 
 ## Saiba mais
 
-[Primeiros passos com a solução MXplan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
+[Primeiros passos com a solução MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 
 [Primeiros passos com a solução E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
 

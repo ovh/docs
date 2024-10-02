@@ -102,7 +102,7 @@ Antes de efetuar qualquer operação na sua conta de e-mail, é necessário toma
 > [!tabs]
 > **E-mails (MXplan)**
 >>
->> A capacidade de uma conta MXplan pode variar entre 2,5 MB e 5 GB. Se estiver saturado e a sua capacidade for inferior a 5GB, pode alterar a sua capacidade através da [Área de Cliente OVHcloud](/links/manager).<br>
+>> A capacidade de uma conta MX Plan pode variar entre 2,5 MB e 5 GB. Se estiver saturado e a sua capacidade for inferior a 5GB, pode alterar a sua capacidade através da [Área de Cliente OVHcloud](/links/manager).<br>
 >> No separador `Contas de e-mail`{.action}, clique no botão `...`{.action} à direita da conta a modificar e, a seguir, em `Alterar`{.action}.
 >> Na casa `Quota`{.action}, selecione o tamanho que lhe convém, clique em `Seguinte`{.action} e depois `Validar`{.action}.<br><br>
 >> ![e-mail](images/email-quota-more01.png){.thumbnail}<br>
@@ -146,7 +146,7 @@ Encontrará abaixo uma lista não exaustiva dos guias de configuração para os 
 >>
 >> Configuração de uma conta MX plan em **Windows*:<br><br>
 >> - [Endereço do Windows 10](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10) (English) (incluído com Windows)<br>
->> - [Outlook para Mxplan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)
+>> - [Outlook para MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)
 >> - [Thunderbird](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_thunderbird_windows) (gratuito)<br><br>
 >> Configuração de uma conta MX plan em **macOS**:<br><br>
 >> - [Mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_mail_macos) (incluído com macOS)<br>

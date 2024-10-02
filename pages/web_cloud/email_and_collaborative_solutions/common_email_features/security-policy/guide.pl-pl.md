@@ -33,7 +33,7 @@ Aby przejść do polityki bezpieczeństwa usługi e-mail, zaloguj się do [Pane
 
 > [!primary]
 >
-> Jeśli nie wyświetla się zakładka `Więcej`{.action} w panelu zarządzania usługą `Emaile`{.action}, oznacza to, że jesteś na historycznej ofercie MXplan. Nie ma zarządzania polityką bezpieczeństwa w odniesieniu do oferty MXplan historyczny.
+> Jeśli nie wyświetla się zakładka `Więcej`{.action} w panelu zarządzania usługą `Emaile`{.action}, oznacza to, że jesteś na historycznej ofercie MX Plan. Nie ma zarządzania polityką bezpieczeństwa w odniesieniu do oferty MX Plan historyczny.
 
 Następnie przejdź do aspektów, które chcesz zmodyfikować.
 

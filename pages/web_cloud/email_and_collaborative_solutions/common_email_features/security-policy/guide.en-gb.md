@@ -33,7 +33,7 @@ To access the security policy of your email service, log in to your [OVHcloud Co
 
 > [!primary]
 >
-> If you do not see the `More`{.action} tab appear in the control panel of your `Emails`{.action} service, this means that you are on a legacy MXplan offer. There is no security policy management on the legacy MXplan solution.
+> If you do not see the `More`{.action} tab appear in the control panel of your `Emails`{.action} service, this means that you are on a legacy MX Plan offer. There is no security policy management on the legacy MX Plan solution.
 
 Continue to the aspect(s) you want to modify.
 

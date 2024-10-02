@@ -56,7 +56,7 @@ La fenêtre affiche désormais des informations concernant la configuration des 
 > **Comprendre les modes Autoritatif et Non-autoritatif**
 >
 > - Lorsqu'un e-mail est transmis vers votre plateforme E-mail Pro (*Inbound mail server Email Pro*) en mode **autoritatif**, cela signifie que toutes les adresses e-mail de votre nom de domaine sont uniquement hébergées sur cette plateforme.<br><br>Par exemple, si on envoie un e-mail à l'adresse « *mary.johnson@mydomain.ovh* », le serveur E-mail Pro « *Inbound mail server Email Pro* » renvoie un message d'échec à l'expéditeur, car cette adresse n'existe pas sur le serveur E-mail Pro « *Inbound mail server Email Pro* ».
-> - Lorsqu'un e-mail est transmis vers votre plateforme E-mail Pro (*Inbound mail server Email Pro*) en mode **non-autoritatif**, cela signifie que les adresses e-mail de votre nom de domaine sont réparties entre votre plateforme e-mail principale (*Inbound mail server Email Pro*) et un autre service e-mail (*Inbound mail server MXplan*).<br><br>Par exemple, si on envoie un e-mail à l'adresse « *mary.johnson@mydomain.ovh* », le serveur E-mail Pro *Inbound mail server Email Pro* transmettra l'e-mail au serveur MXplan « *Inbound mail server MXplan* » pour que ce dernier puisse le délivrer.
+> - Lorsqu'un e-mail est transmis vers votre plateforme E-mail Pro (*Inbound mail server Email Pro*) en mode **non-autoritatif**, cela signifie que les adresses e-mail de votre nom de domaine sont réparties entre votre plateforme e-mail principale (*Inbound mail server Email Pro*) et un autre service e-mail (*Inbound mail server MX Plan*).<br><br>Par exemple, si on envoie un e-mail à l'adresse « *mary.johnson@mydomain.ovh* », le serveur E-mail Pro *Inbound mail server Email Pro* transmettra l'e-mail au serveur MX Plan « *Inbound mail server MX Plan* » pour que ce dernier puisse le délivrer.
 >
 > ![Add Domain](images/authoritative-mode.png){.thumbnail}
 >
@@ -67,7 +67,7 @@ La fenêtre affiche désormais des informations concernant la configuration des 
 
 Si vous choisissez le mode **non-autoritatif** et que vous utilisez un service :
 
-- **E-mail OVHcloud (Exchange ou MXplan)**, saisissez directement comme serveur e-mail cible « *mx1.mail.ovh.net* » ( fonctionne de la même façon avec *mx0.mail.ovh.net*, *mx2.mail.ovh.net**, *mx3.mail.ovh.net**, *mx4.mail.ovh.net* ).
+- **E-mail OVHcloud (Exchange ou MX Plan)**, saisissez directement comme serveur e-mail cible « *mx1.mail.ovh.net* » ( fonctionne de la même façon avec *mx0.mail.ovh.net*, *mx2.mail.ovh.net**, *mx3.mail.ovh.net**, *mx4.mail.ovh.net* ).
 - **Email externe à OVHcloud (offre e-mail concurente, serveur e-mail privé)**, saisissez dans la case serveur e-mail cible le nom d'hôte du serveur entrant de ce service externe en s'assurant que celui-ci autorise les requêtes e-mail provenant de votre service E-mail Pro
 
 Le choix du mode n'est pas définitif et peut être modifié par la suite depuis l'espace client OVHcloud.

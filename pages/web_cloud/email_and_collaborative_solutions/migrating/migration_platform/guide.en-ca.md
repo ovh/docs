@@ -18,7 +18,7 @@ You want to migrate your email addresses on an Exchange platform to another Exch
 > To migrate an MX Plan solution to an Exchange platform, please follow our guide on [Migrating an MX Plan email address to an Exchange account](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel) .
 >
 
-**This guide explains how to migrate email addresses from one Exchange platform to another Exchange platform or MXplan.**
+**This guide explains how to migrate email addresses from one Exchange platform to another Exchange platform or MX Plan.**
 
 ## Requirements
 

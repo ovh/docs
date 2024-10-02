@@ -42,7 +42,7 @@ Caso contrário, aceda à [Cliente OVHcloud](/links/manager) e encomende o servi
 
 ### 3 - Realizar a migração
 
-Antes de iniciar a migração, terá de identificar a versão do MXPlan a partir da qual migra.
+Antes de iniciar a migração, terá de identificar a versão do MX Plan a partir da qual migra.
 
 Para isso, aceda à Área de [Cliente OVHcloud](/links/manager), na secção `Web Cloud`{.action}. Clique em `E-mails`{.action} e selecione o serviço correspondente. Consulte a tabela abaixo para consultar a versão em baixo.
 
@@ -51,7 +51,7 @@ Para isso, aceda à Área de [Cliente OVHcloud](/links/manager), na secção `We
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> A sua oferta situa-se no quadro "Subscrição"|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Poderá encontrar uma `Referência do servidor` na secção "Resumo" que começa por "mxplan-"|
 |Continuar a ler na secção «[Versão antiga da oferta MX Plan](#VersionHistoriqueMxplan)».|Continuar a ler na secção «[Nova versão da oferta MX Plan](#NouvelleVersionMxplan)».|
 
-#### 3.1 Migrar uma oferta MXPlan histórica <a name="VersionHistoriqueMxplan"></a>
+#### 3.1 Migrar uma oferta MX Plan histórica <a name="VersionHistoriqueMxplan"></a>
 
 > [!primary]
 >
@@ -65,7 +65,7 @@ A migração pode ser efetuada a partir de duas interfaces:<br>
 - **o do assistente de configuração Hosted Exchange**, apenas se encomendou um serviço Hosted Exchange e ainda não o configurou;
 - **do MX Plan**, quando tiver um serviço E-mail Pro ou Exchange (configurado ou não) e um endereço MX Plan que pretende migrar.
 
-> Lembre-se de que antes de iniciar a migração, certifique-se de que nenhum **reencaminhamento* ou que nenhum **atendedor automático* está configurado no seu MXplan.
+> Lembre-se de que antes de iniciar a migração, certifique-se de que nenhum **reencaminhamento* ou que nenhum **atendedor automático* está configurado no seu MX Plan.
 > ![email](images/mxplan-legacy-redirect.png){.thumbnail}
 
 Quando estiver pronto, continue a ler este manual em função da interface selecionada. Lembramos que o tempo de migração depende da quantidade de conteúdo a migrar para a sua nova conta. Pode variar de alguns minutos a várias horas.
@@ -97,7 +97,7 @@ Por fim, confirme a palavra-passe do endereço de e-mail original (aquela que pr
 
 ![Exchange](images/account_migration_steps.png){.thumbnail}
 
-#### 3.2 Migrar a nova versão do MXPlan <a name="NouvelleVersionMxplan"></a>
+#### 3.2 Migrar a nova versão do MX Plan <a name="NouvelleVersionMxplan"></a>
 
 > [!warning]
 >
@@ -109,11 +109,11 @@ Por fim, confirme a palavra-passe do endereço de e-mail original (aquela que pr
 >
 > Para mais informações sobre a adição de um domínio, siga [o guia E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config#2-adicionar-o-dominio) ou [o guia Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 
-A migração do seu MXPlan far-se-á em 3 grandes etapas, **Renomear**, **Criar** e **Migrar**.
+A migração do seu MX Plan far-se-á em 3 grandes etapas, **Renomear**, **Criar** e **Migrar**.
 
 ![Exchange](images/mxplan-migration-configure-account.gif){.thumbnail}
 
-1\. **Altere** o nome da conta MXPlan para migrar com um nome provisório (exemplo: para migrar a conta MX plan *john.smith@mydomain.ovh*, renome-a em *john.smith01@mydomain.ovh*).
+1\. **Altere** o nome da conta MX Plan para migrar com um nome provisório (exemplo: para migrar a conta MX plan *john.smith@mydomain.ovh*, renome-a em *john.smith01@mydomain.ovh*).
 
 No separador `Contas de e-mail`{.action} da plataforma MX Plan, clique no botão `...`{.action} e depois em `Alterar`{.action}.
 
@@ -129,7 +129,7 @@ No separador `Contas de e-mail`{.action} da plataforma E-mail Pro ou Exchange, c
 
 ![Exchange](images/mxplan-migration-configure-account02.png){.thumbnail}
 
-3\. **Migre** a conta MXPlan para a sua nova plataforma com a nossa ferramenta [OMM](https://omm.ovh.net/) (OVH Mail Migrator).
+3\. **Migre** a conta MX Plan para a sua nova plataforma com a nossa ferramenta [OMM](https://omm.ovh.net/) (OVH Mail Migrator).
 
 Para mais informações sobre OMM, consulte o nosso guia [Migrar contas de e-mail através do OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).
 
@@ -141,7 +141,7 @@ Após a migração, verifique que encontra os seus elementos ao aceder ao webmai
 
 Pode conservar ou eliminar a conta de origem com o nome provisório após esta migração.
 
-Se pretender eliminá-lo, aceda ao separador `Contas de e-mail`{.action} do MXPlan e clique no botão `...`{.action} e em `Reinicializar esta conta`{.action}.
+Se pretender eliminá-lo, aceda ao separador `Contas de e-mail`{.action} do MX Plan e clique no botão `...`{.action} e em `Reinicializar esta conta`{.action}.
 
 ### 4 - Domínios: Consultar, Verificar e Alterar dados DNS
 

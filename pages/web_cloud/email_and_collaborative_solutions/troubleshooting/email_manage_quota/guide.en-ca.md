@@ -78,7 +78,7 @@ You can increase the storage capacity of your email account, if it has not reach
 > [!tabs]
 > **Emails (MXplan)**
 >>
->> The capacity of an MXplan account can range from 2.5 MB to 5 GB. If it is full and its capacity is less than 5 GB, you can modify its capacity via the [OVHcloud Control Panel](/links/manager).<br>
+>> The capacity of an MX Plan account can range from 2.5 MB to 5 GB. If it is full and its capacity is less than 5 GB, you can modify its capacity via the [OVHcloud Control Panel](/links/manager).<br>
 >> In the `Email accounts`{.action} tab, click the button to the right `...`{.action}of the account you want to change, and then click `Edit`{.action}.
 >> From the `Quota`{.action} box, select the size that suits you, click `Next`{.action}, then `Confirm`{.action}.<br><br>
 >> ![email](images/email-quota-more01.png){.thumbnail}<br>
@@ -116,11 +116,11 @@ Below is a non-exhaustive list of configuration guides for email clients using:
 > [!tabs]
 > **Emails (MXplan)**
 >>
->> Configuring an MXplan account on **Windows**:<br><br>
+>> Configuring an MX Plan account on **Windows**:<br><br>
 >> - [Mail on Windows 10](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10) (included with Windows)<br>
->> - [Outlook for Mxplan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)
+>> - [Outlook for MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)
 >> - [Thunderbird](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_thunderbird_windows) (free)<br><br>
->> Configuring an MXplan account on **macOS**:<br><br>
+>> Configuring an MX Plan account on **macOS**:<br><br>
 >> - [Mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_mail_macos) (included with macOS)<br>
 >> - [Outlook](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac)<br>
 >> - [Thunderbird](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_thunderbird_mac) (free)<br>

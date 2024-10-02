@@ -40,7 +40,7 @@ Aceda à [Área de Cliente OVHcloud](/links/manager), na secção `Web Cloud`.
 
 Clique em `E-mails`{.action} e selecione o serviço MX Plan correspondente.
 
-No separador `E-mails`{.action} do serviço MXplan, encontrará a lista dos endereços de e-mail. Pode ver uma coluna de `filtros` na tabela de contas de e-mail. Clique no ícone de funil.
+No separador `E-mails`{.action} do serviço MX Plan, encontrará a lista dos endereços de e-mail. Pode ver uma coluna de `filtros` na tabela de contas de e-mail. Clique no ícone de funil.
 
 ![emails](images/img_3239.png){.thumbnail}
 

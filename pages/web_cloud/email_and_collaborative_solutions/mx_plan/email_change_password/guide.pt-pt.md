@@ -37,16 +37,16 @@ As contas de e-mail da sua oferta OVHcloud são acessíveis graças à palavra-p
 Na [Área de Cliente OVHcloud](/links/manager), aceda à secção `Web Cloud`{.action} e siga as instruções indicadas na oferta:
 
 > [!tabs]
-> **E-mails MXplan (versão histórica)**
+> **E-mails MX Plan (versão histórica)**
 >>
->> Se não conhece o tipo de oferta MXplan que possui, consulte o nosso parágrafo [Identifique a sua oferta MXplan](#whichmxplan).<br>
+>> Se não conhece o tipo de oferta MX Plan que possui, consulte o nosso parágrafo [Identifique a sua oferta MX Plan](#whichmxplan).<br>
 >> Clique em `E-mails`{.action} e escolha o nome do serviço MX Plan em causa. Aceda ao separador `E-mails`{.action}. Na nova janela, podem ver-se as contas de e-mail existentes. <br>
 >> Clique no botão `...`{.action} e, a seguir, em `Alterar a palavra-passe`{.action}.<br><br>
 >>![e-mail](images/email-password-mxplan-legacy01.png){.thumbnail}<br>
 >>
-> **E-mails MXplan (nova versão)**
+> **E-mails MX Plan (nova versão)**
 >>
->> Se não conhece o tipo de oferta MXplan que possui, consulte o nosso parágrafo [Identifique a sua oferta MXplan](#whichmxplan).<br>
+>> Se não conhece o tipo de oferta MX Plan que possui, consulte o nosso parágrafo [Identifique a sua oferta MX Plan](#whichmxplan).<br>
 >> Clique em `E-mails`{.action} e escolha o nome do serviço MX Plan em causa. Aceda ao separador `E-mails`{.action}. Na nova janela, podem ver-se as contas de e-mail existentes. <br>
 >> Clique no botão `...`{.action} e depois em `Alterar`{.action}.<br><br>
 >>![e-mail](images/email-password-mxplan-new01.png){.thumbnail}<br>
@@ -68,13 +68,13 @@ Na [Área de Cliente OVHcloud](/links/manager), aceda à secção `Web Cloud`{.a
 
 A modificação da sua palavra-passe através do webmail está disponível para as ofertas de e-mail OVHcloud que utilizam **OWA** (**O**utlook **W**eb **A**pp):
 
-- E-mails MXplan (Nova versão)
+- E-mails MX Plan (Nova versão)
 - Email Pro
 - Exchange
 
 > [!warning]
 >
-> A oferta **Emails MXplan (versão histórica)** utiliza o webmail Roundcube, a alteração da password faz-se unicamente [através da Área de Cliente](#controlpanel).
+> A oferta **Emails MX Plan (versão histórica)** utiliza o webmail Roundcube, a alteração da password faz-se unicamente [através da Área de Cliente](#controlpanel).
 >
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -108,9 +108,9 @@ Por razões de segurança e de confidencialidade, não é possível **recuperar*
 >
 > Se pretender armazenar uma palavra-passe, é aconselhável utilizar um gestor de palavra-passe, como, por exemplo, **Keepass**.
 
-#### Identifique a sua oferta MXplan <a name="whichmxplan"></a>
+#### Identifique a sua oferta MX Plan <a name="whichmxplan"></a>
 
-Na tabela abaixo, encontrará as informações necessárias para identificar a sua oferta MXplan.
+Na tabela abaixo, encontrará as informações necessárias para identificar a sua oferta MX Plan.
 
 |Versão antiga da oferta MX Plan|Nova versão da oferta MX Plan|
 |---|---|
@@ -118,7 +118,7 @@ Na tabela abaixo, encontrará as informações necessárias para identificar a s
 
 ## Quer saber mais?
 
-[Primeiros passos com a solução MXplan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
+[Primeiros passos com a solução MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 
 [Primeiros passos com a solução E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
 

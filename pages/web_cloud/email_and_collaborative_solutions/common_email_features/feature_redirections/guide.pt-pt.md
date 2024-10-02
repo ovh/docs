@@ -76,14 +76,14 @@ Clique nos separadores seguintes para obter explicações ilustradas sobre o fun
 >
 > Os capítulos "[criar um reencaminhamento](#redirect)" e "[criar um alias](#alias)" abrangem todas as nossas ofertas de e-mail OVHcloud, **exceto se**:
 >
-> - Se possui a versão histórica da oferta MXplan (para o verificar, pode consultar o quadro abaixo).
+> - Se possui a versão histórica da oferta MX Plan (para o verificar, pode consultar o quadro abaixo).
 > - possui um domínio registado na OVHcloud sem uma oferta de e-mail associada.
 >
 > Para estas duas exceções, só é possível o reencaminhamento. Sugerimos que consulte diretamente o capítulo "[Criar um reencaminhamento ou um alias numa oferta MX Plan histórica ou num domínio sem oferta de e-mail](#mxplanlegacy)".
 >
 
 >
-> Consoante a data de ativação da sua oferta MXplan ou se esta foi migrada recentemente, é possível que disponha da versão histórica ou da nova versão da oferta. Antes de prosseguir, deve identificar esta última.<br> 
+> Consoante a data de ativação da sua oferta MX Plan ou se esta foi migrada recentemente, é possível que disponha da versão histórica ou da nova versão da oferta. Antes de prosseguir, deve identificar esta última.<br> 
 >
 >
 > Para isso, aceda à [Área de Cliente OVHcloud](/links/manager), na parte `Web Cloud`{.action}. Clique em `Emails`{.action} e escolha o nome do serviço MX Plan em causa. Continue a ler em função da versão que possui:<br>
