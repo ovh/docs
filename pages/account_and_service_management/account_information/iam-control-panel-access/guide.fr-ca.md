@@ -29,6 +29,10 @@ Grâce à ces droits, un utilisateur pourra se connecter à l'espace client. Cep
 
 L'interface utilisateur permet de configurer une stratégie avec la configuration suivante :
 
+Ajouter la ou les identités auxquelles vous souhaitez donner accès.
+
+![Add identities](images/add_identities.png){.thumbnail}
+
 Ajouter un `resourceType` « OVHcloud customer account » et ajouter votre compte en tant que ressource.
 
 ![Account ressourceType](images/account_ressourceType.png){.thumbnail}

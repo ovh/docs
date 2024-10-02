@@ -29,6 +29,10 @@ With these rights, a user will be able to log in to the OVHcloud Control Panel. 
 
 Using the UI, you can set up a policy with the following configuration:
 
+Add the identites you want to give access to.
+
+![Add identities](images/add_identities.png){.thumbnail}
+
 Add a `resourceType` "OVHcloud customer account" and add your account as a resource.
 
 ![Account ressourceType](images/account_ressourceType.png){.thumbnail}
