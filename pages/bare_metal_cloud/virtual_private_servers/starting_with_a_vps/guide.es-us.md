@@ -127,7 +127,7 @@ Para más información sobre las soluciones de backup disponibles para su servic
 
 #### Suscripción
 
-En estas secciones se ofrece la información más importante sobre la facturación del servicio. Encontrará toda la información sobre este tema en la [documentación correspondiente](/products/account-and-service-managing-billing-payments-and-services).
+En estas secciones se ofrece la información más importante sobre la facturación del servicio. Encontrará toda la información sobre este tema en la [documentación correspondiente](/products/account-and-service-management-managing-billing-payments-and-services).
 
 <a name="hometab"></a>
 

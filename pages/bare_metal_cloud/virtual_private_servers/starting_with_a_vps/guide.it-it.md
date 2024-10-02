@@ -123,7 +123,7 @@ Queste opzioni si riferiscono a servizi VPS aggiuntivi ordinabili dallo Spazio C
 >>
 >> L’opzione `Backup automatizzato` permette di programmare backup regolari del VPS. A differenza degli Snapshot manuali, questa funzionalità conserva diversi punti di ripristino nel tempo, offrendoti una protezione continua e automatica dei dati (esclusi i dischi aggiuntivi).
 
-Tutte le informazioni sulle soluzioni di backup disponibili per il servizio sono disponibili nella [pagina dei prodotti VPS](/links/bare-metal/vps-options) e nelle nostre [guide rispettive](/products/bare-metal-cloud-virtual-private-servers-backup).
+Tutte le informazioni sulle soluzioni di backup disponibili per il servizio sono disponibili nella [pagina dei prodotti VPS](/links/bare-metal/vps-options) e nelle nostre [guide rispettive](/products/bare-metal-cloud-virtual-private-servers-backups).
 
 #### Abbonamento
 

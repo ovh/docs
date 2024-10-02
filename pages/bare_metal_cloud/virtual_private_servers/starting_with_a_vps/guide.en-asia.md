@@ -350,8 +350,6 @@ Once you have configured your VPS, you may want to secure your domain name and y
 
 You can install this SSL certificate manually, directly on the VPS. Please refer to the official documentation of your VPS distribution.
 
-To automate this process, OVHcloud also offers the SSL Gateway solution. Please refer to the [product page](/links/web/ssl-gateway) or our [documentation](/products/web-cloud-ssl-gateway) for further information.
-
 ## Go further
 
 [VPS FAQ](/pages/bare_metal_cloud/virtual_private_servers/vps-faq)
