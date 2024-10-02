@@ -1,12 +1,12 @@
 ---
 title: "Comment installer OverTheBox ?"
 excerpt: "Découvrez comment installer et configurer votre équipement OverTheBox"
-updated: 2024-07-17
+updated: 2024-09-26
 ---
 
 ## Objectif
 
-Découvrez comment installer et configurer votre équipement OverTheBox Plus ou IT v2 afin de profiter de votre offre OverTheBox.
+Découvrez comment installer et configurer votre équipement OverTheBox afin de profiter de votre offre OverTheBox.
 
 ## Prérequis
 
@@ -40,25 +40,42 @@ Pour le bon déroulement de la procédure d'installation, il est impératif que 
 >
 
 **Cas d'un modem Technicolor TG788 ou TG789 fourni par OVHcloud :** l'adresse IP par défaut d'un modem OVHcloud Technicolor TG788 ou TG789 est 192.168.**1**.254.
-**Cas d'un modem Technicolor TGTG799vac ou Zyxel fourni par OVHcloud :** l'adresse IP par défaut d'un modem OVHcloud Technicolor TG799vac ou Zyxel VMG8924-B10D est 192.168.**1**.1.
+**Cas d'un modem Technicolor TG799vac ou Zyxel fourni par OVHcloud :** l'adresse IP par défaut d'un modem OVHcloud Technicolor TG799vac ou Zyxel est 192.168.**1**.1.
 
 Il n'est donc pas possible de le cumuler avec un autre modem en 192.168.**1**.0/24.
 
 ### Étape 2 : branchement des modems
 
-Il est impératif de brancher les modems sur les ports **WAN** afin qu'ils soient correctement identifiés comme liens vers internet. Branchez ensuite votre ordinateur sur un des ports LAN de votre **OverTheBox**. Vous pouvez alors raccorder votre **OverTheBox** sur le courant électrique.
+Dans un premier temps, pour chaque modem, branchez un cable ethernet entre le port LAN du modem et le port **WAN** de votre **OverTheBox** afin qu'ils soient correctement identifiés comme liens vers internet.
+Branchez ensuite votre ordinateur sur un des ports LAN de votre **OverTheBox**. Vous pouvez alors raccorder votre **OverTheBox** sur le courant électrique.
 
-Dans le cas d'une OverTheBox Plus :
-
-![overthebox](images/installationV2-step2_OTBPlus.jpg){.thumbnail}
-
-**Exemple** : Le premier modem possède l'IP 192.168.**0**.1 et le deuxième l'IP 192.168.**1**.1.
-
-Dans le cas d'une OverTheBox IT v2 :
-
-![overthebox](images/installationV2-step2_OTBITv2_edit.jpg){.thumbnail}
-
-**Exemple** : Le premier modem possède l'IP 192.168.**0**.1 et le deuxième l'IP 192.168.**1**.1.
+> [!tabs]
+>  Starter / Business :
+>> Dans le cas d'une **OTB V3** ou **OTB V3 LTE** vendu avec les offres **OverTheBox Starter & Business**
+>>
+>> - **Modem 1**: Cable jaune, IP 192.168.**0**.1
+>> - **Modem 2**: Cable bleu, IP 192.168.**1**.1
+>> - **Votre Ordinateur**: Cable rouge
+>>
+>> ![overthebox](images/install-step2-OTBv3-2024.png){.thumbnail}
+>>
+> Plus
+>> Dans le cas d'une **OTB V2b** vendu avec les anciennes offres **OverTheBox Plus**
+>>
+>> - **Modem 1**: Cable jaune, IP 192.168.**0**.1
+>> - **Modem 2**: Cable bleu, IP 192.168.**1**.1
+>> - **Votre Ordinateur**: Cable rouge
+>>
+>> ![overthebox](images/install-step2-OTBv2b-2024.png){.thumbnail}
+>>
+> IT :
+>>
+>> - **Modem 1**: Cable jaune, IP 192.168.**0**.1
+>> - **Modem 2**: Cable bleu, IP 192.168.**1**.1
+>> - **Votre Ordinateur**: Cable rouge
+>>
+>> ![overthebox](images/install-step2-OTBv2c-2024.png){.thumbnail}
+>>
 
 > [!success]
 >
@@ -72,100 +89,83 @@ Dans le cas d'une OverTheBox IT v2 :
 > Les opérations qui suivent doivent être effectuées depuis un ordinateur connecté directement sur un des ports LAN de l'OverTheBox (câble gris sur l’image ci-dessus).
 >
 
-- Rendez-vous sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external}.
+Rendez-vous sur [http://overthebox.ovh](http://overthebox.ovh) ou [https://192.168.100.1](https://192.168.100.1){.external}.
 
-#### Automatiquement
+Sur la page d'authentification cliquez sur `Connexion`{.action}, par défaut aucun mot de passe n'est configuré.
 
-Lors de votre première connexion, un assistant d'installation se lance. **Nous vous invitons à suivre toutes les étapes sans exception**.
+Cliquez sur le bouton `Enregistrement`{.action}.
 
-#### Manuellement
+![overthebox](images/install-step3-1-start-2024.png){.thumbnail}
 
-- Cliquez sur le bouton `Enregistrement`{.action}.
+Puis suivez toutes les étapes suivantes :
 
-![overthebox](images/installationV2-step3-1.png){.thumbnail}
-
-- Sur l'écran d'enregistrement, cliquez sur le bouton `Connexion`{.action} pour vous connecter à votre compte OVHcloud.
-
-![overthebox](images/step3-login.png){.thumbnail}
-
-- Renseignez vos identifiants OVHcloud puis cliquez sur `Continue`{.action} puis autorisez la connexion API.
-
-- Une fois connecté, cliquez sur le **service OverTheBox** que vous souhaitez associer à votre appareil.
-
-![overthebox](images/installationV2-step3-2.png){.thumbnail}
-
-- Une fois le service associé, activez-le en cliquant sur le bouton `Activation`{.action}.
-
-![overthebox](images/step3-activation-service.png){.thumbnail}
+> [!tabs]
+> Connexion
+>>
+>> - Sur l'écran d'enregistrement, cliquez sur le bouton `Connexion`{.action} pour vous connecter à votre compte OVHcloud.
+>> - Renseignez vos identifiants OVHcloud puis cliquez sur `Continue`{.action} puis autorisez la connexion API.
+>> - La page vous redirigera sur la page d'authentification de l'interface web de l'**overTheBox**, cliquez à nouveau sur `Connexion`{.action}
+>> - Puis passez à l'étape enregistrement
+>>
+>> ![overthebox](images/install-step3-2-login-2024.png){.thumbnail}
+>>
+> Enregistrement
+>>
+>> - Une fois connecté, cliquez sur le **service OverTheBox** que vous souhaitez associer à votre appareil.
+>> - Puis passez à l'étape activation
+>>
+>> ![overthebox](images/install-step3-3-register-2024.png){.thumbnail}
+>>
+> Activation
+>>
+>> - Une fois le service associé, activez-le en cliquant sur le bouton `Activation`{.action}.
+>> - Puis passez à l'étape prêt
+>>
+>> ![overthebox](images/install-step3-4-activate-2024.png){.thumbnail}
+>>
+> Prêt
+>>
+>> - L'enregistrement est terminé et votre offre est désormais activée. Pour revenir à la page d'accueil, cliquez sur `OverTheBox`{.action} en haut à gauche de l'interface.
+>>
+>> ![overthebox](images/install-step3-5-ready-2024.png){.thumbnail}
+>>
 
 > [!success]
 >
-> L'enregistrement est terminé et votre offre est désormais activée. Pour revenir à la page d'accueil,  cliquez sur `OverTheBox`{.action} en haut à gauche de l'interface.
->
-
-![overthebox](images/step3-register-done.png){.thumbnail}
+> Votre service est désormais actif
 
 ### Étape 4 : vérifier le bon fonctionnement de votre service
 
-Le service OverTheBox est actif et opérationnel.
+Le service OverTheBox est actif et opérationnel, vous pouvez consultez l'**IP publique**  de votre service sur l'interface **TUN**.
 
-![overthebox](images/step4-service-ok.png){.thumbnail}
+![overthebox](images/install-step4-1-serviceok-2024.png){.thumbnail}
 
-> [!warning]
->
-> Les opérations qui suivent doivent être effectuées depuis un ordinateur connecté directement sur un des ports LAN de l'appareil (câble gris sur l’image ci-dessous).
->
+- Assurez-vous que l'installation se soit bien déroulée en vérifiant votre **IP publique** sur notre site [https://perf.overthebox.net/](https://perf.overthebox.net/){.external}. Vous devez obtenir une adresse IP similaire à 109.190.x.y ou 151.127.x.y identique au champs **WAN IP** de l'interface **TUN**.
 
-- Assurez-vous que l'installation se soit bien déroulée en vérifiant votre **IP publique** sur notre site [http://proof.ovh.net/](http://proof.ovh.net/){.external}. Vous devez obtenir une adresse IP similaire à 109.190.x.y ou 151.127.x.y.
-
-![overthebox](images/installationV2-step4-1.png){.thumbnail}
+![overthebox](images/install-step4-2-perf-2024.png){.thumbnail}
 
 > [!warning]
 >
-> Si malgré cette opération le site [http://proof.ovh.net/](http://proof.ovh.net/){.external} ne retourne toujours pas les bonnes informations, veuillez recommencer l'intégralité de l'étape 3 point par point.
->
-
-### Étape 5 : ajouter une connexion supplémentaire sur une OverTheBox Plus <a name="ajout-connexion"></a>
-
-> [!warning]
->
-> Ces configurations ne sont possibles que sur l'OverTheBox Plus.
->
-
-Pour le bon déroulement de la procédure d'installation, il est impératif que le modem de votre nouvelle connexion réponde aux mêmes conditions que dans l'étape 1 :
-
-- Le serveur DHCP du modem doit être **activé**.
-- Si vous avez plus d'un modem, ils doivent être respectivement sur des réseaux locaux différents.
-
-> [!warning]
->
-> Les opérations qui suivent doivent être effectuées depuis un ordinateur connecté directement sur un des ports LAN de l'OverTheBox.
->
-
-- Rendez-vous sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external}.
-- Cliquez sur **"Network"**.
-- Cliquez sur **"Switch"**.
-- Cliquez sur le port du switch qui sera utilisé pour brancher le modem (dans notre exemple le **12**). Assurez-vous qu'il est en mode **WAN**.
-- Cliquez sur **"Apply the new Configuration"**.
-
-![overthebox](images/installationV2-step5.png){.thumbnail}
-
-- Branchez simplement votre modem sur le port concerné (dans notre exemple le **12**) puis patientez quelques minutes.
-
-> [!success]
->
-> Votre système OverTheBox intégre maintenant la nouvelle connexion dans son agrégation de débit.
+> Si ces opérations ne retourne pas les bonnes informations, veuillez recommencer l'intégralité de l'étape 3 point par point.
 >
 
 ## Aller plus loin
+
+### Ajouter une interface 4G
+
+Si vous souhaitez configurer l'interface 4G de votre **OTB V3 LTE** ou ajouter une interface 4G par clé USB sur un autre modèle, consultez le guide « [Comment configurer un lien 4G sur OverTheBox?](/pages/web_cloud/internet/overthebox/plus_itv2_lte) ».
+
+### Ajouter une connexion supplémentaire
+
+Si vous souhaitez ajouter une connexion supplémentaire, consultez le guide « [Comment configurer une interface réseau ?](/pages/web_cloud/internet/overthebox/advanced_creer_une_interface_modem_manuellement) ».
 
 ### Ajouter un décodeur TV
 
 Si vous utilisez la télévision par Internet via l'un de vos fournisseurs d'accès, veuillez laisser le décodeur TV branché sur votre modem (si ce dernier n'est pas directement intégré dedans) afin d'éviter tout blocage du flux vidéo par votre opérateur si celui-ci passe par le service OverTheBox.
 
-### Réutiliser le WiFi de votre modem Zyxel
+### Ajouter un réseau WiFi
 
-Pour l'OverThebox Plus ou l'OverTheBox IT v2, les modems sont isolés dans leurs propre VLAN. Le WiFi des modems est donc indisponible depuis le réseau LAN de l'OverTheBox. Il est possible de réutiliser le WiFi d'un modem Zyxel fourni avec l'une de nos offres Internet. Pour plus d'informations, consultez notre guide [Comment réutiliser le wifi d'un modem Zyxel avec OverTheBox](/pages/web_cloud/internet/internet_access/comment_reutiliser_wifi_zyxel_otb){.external}.
+Les modems sont isolés dans leurs propre VLAN. Le WiFi des modems est donc indisponible depuis le réseau LAN de l'OverTheBox. Il est possible de réutiliser le WiFi d'un modem Zyxel fourni avec l'une de nos offres Internet. Pour plus d'informations, consultez notre guide « [Comment réutiliser le wifi d'un modem Zyxel avec OverTheBox](/pages/web_cloud/internet/internet_access/comment_reutiliser_wifi_zyxel_otb) ».
 Dans les autres cas de figure, il faudra utiliser un point d'accès WiFi dédié. Le WiFi de vos modems reste fonctionnel mais les équipements connectés ne profiteront pas de l'agrégation, ni du tunnel chiffré.
 
 N'hésitez pas à échanger avec notre communauté d'utilisateurs sur vos produits Télécom sur notre site [OVHcloud Community](https://community.ovh.com/c/telecom)
