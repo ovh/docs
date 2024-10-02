@@ -1,26 +1,12 @@
 ---
 title: "Téléverser des fichiers dans un datastore"
-excerpt: "Découvrez comment utiliser l'outil de téléversement de fichiers du datastore et la cli officiel govc afin de pouvoir importer des données dans votre environnement VMware vSphere on OVHcloud managé"
-updated: 2024-10-01
+excerpt: "Découvrez comment utiliser le client html de téléversement du datastore et avec govc afin de manipuler des données dans votre environnement VMware vSphere on OVHcloud managé"
+updated: 2024-10-02
 ---
-
-<style>
-details>summary {
-    color:rgb(33, 153, 232) !important;
-    cursor: pointer;
-}
-details>summary::before {
-    content:'\25B6';
-    padding-right:1ch;
-}
-details[open]>summary::before {
-    content:'\25BC';
-}
-</style>
 
 ## Objectif
 
-**L'objectif est de téléverser des fichiers dans un dossier de votre banque de données vSphere.**
+**L'objectif est de manipuler des données dans un dossier de votre banque de données vSphere.**
 
 ## Prérequis
 
