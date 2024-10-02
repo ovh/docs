@@ -1,7 +1,7 @@
 ---
 title: Known limits
 excerpt: 'Requirements and limits to respect'
-updated: 2024-10-01
+updated: 2024-10-02
 ---
 
 <style>
@@ -111,7 +111,7 @@ In any case, there are some ports that you shouldn't block on your instances if 
 - UDP Port 4789 (*kube-dns internal usage*): needed for DNS resolution between nodes
 - TCP Port 10250 (*kubelet*): needed for [communication between apiserver and worker nodes](https://kubernetes.io/docs/concepts/architecture/master-node-communication/#apiserver-to-kubelet)
 
-### About Openstack security groups
+### About OpenStack security groups
 
 In case you want to apply OpenStack security groups onto your nodes, it is mandatory to add the above ports in a ruleset concerning the `0.0.0.0/0` CIDR.
 
@@ -141,9 +141,10 @@ To prevent any conflict, we advise you to keep `DHCP` service running in your pr
 >
 
 > [!warning]
-> If your cluster has been created using an OpenStack Private Network, you should not change this private network's name nor the network's subnet name.<br>>
+> If your cluster has been created using an OpenStack Private Network, you should not change this private network's name nor the network's subnet name. <br>
 > Indeed, the OpenStack Cloud Controller Manager (CCM) is using the network name to create private network connectivity inside the cluster to link nodes to the private network.<br>
-> Changing either the private network name or the network's subnet name will have an impact on future nodes to be deployed as the CCM cannot find network information and thus cannot fetch private network information on OpenStack side in order to initialize networking on the freshly deployed nodes.<br>
+> Changing either the private network name or the network's subnet name will have an impact on future nodes to be deployed as the CCM cannot find network information.<br>
+> The CCM cannot fetch private network information on OpenStack side in order to initialize networking on the freshly deployed nodes on Kubernetes side.<br>
 > Nodes will have a "uninitialized=true:NoSchedule" taint which prevents the [kube-scheduler](https://kubernetes.io/docs/concepts/scheduling-eviction/kube-scheduler/) to deploy pods on those new uninitialized nodes. Nodes impacted by this use case don't have an External-IP as well.
 >
 
