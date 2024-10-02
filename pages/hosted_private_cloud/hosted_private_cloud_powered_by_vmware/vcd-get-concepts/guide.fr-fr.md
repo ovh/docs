@@ -1,12 +1,12 @@
 ---
 title: "VMware Cloud Director - Les concepts fondamentaux de VCD"
 excerpt: "Découvrez quelles sont les features, les limitations, ainsi que les concepts fondamentaux de VMware Cloud Director on OVHcloud"
-updated: 2024-09-26
+updated: 2024-10-02
 ---
 
 ## Objectif
 
-**L'objectif est de vous détailler les fondamentaux de VMware Cloud Director (VCD) on OVHcloud.**
+**L'objectif de cette page est de vous fournir une vue d'ensemble des fonctionnalités et limitations techniques des services managées par OVHcloud VMware cloud Director.**
 
 ### Étape 1 - Concepts fondamentaux
 
@@ -145,23 +145,23 @@ Retrouvez ci-dessous une comparaison des fonctionnalités fournies par OVHcloud 
 
 ### Étape 3 - Les limitations
 
-| Limites / Offres                  | Standard | Advanced | Premium | Comments                                                                                                                                                          |
-|:----------------------------------|:--------:|:--------:|:-------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| vCPU  (per VM)                    |    12    |    12    |   12    | - Number of CPU possible (per VM)                                                                                                                                 |
-| RAM   (per VM)                    |   128    |   128    |   128   | - Number maximum of RAM possible (per VM, min 0.5 Go)                                                                                                             |
-| Network Card (per VM)             |    10    |   	10	   |   10    | - Network card limite available (per VM) for VCD on OVHcloud                                                                                                      |
-| Edge Gateway                      |  	32 	   |   32 	   |   32	   | - Number of  Edge Gateway possible  (per Org limitations)                                                                                                         |
-| Storage                           |   1.5    |   1.5    |   1.5   | - Storage size limitation in To (per VM on NFS/vSAN)                                                                                                              |
-| Snapshot usage	                   |   32	    |   32	    |   32	   | - The snapshot limitation is 32 snapshot per VM and can be limited further if needed (for cost purposes)                                                          |
-| VMs	(per vApp)                    |   128	   |   128	   |   128   | - Virtual machines numbers authorized per vApp (per vApp)	                                                                                                        |
-| VMs (per org)                     |  	2000	  |  4000	   |  4000	  | - Number of VM possible (per Org limitations)                                                                                                                     |
-| VMs (per instance)                | 	20 000  | 	20 000	 | 20 000	 | - The maximum number of virtual machines in a single VMware Cloud Director instance. This overrides the number of virtual machines that are supported on-premises |
-| vApps  (per VCD instance)         | 	40 000	 | 40 000	  | 40 000	 | - The maximum number of vApp in a single VMware Cloud Director instance (per VCD instance)                                                                        |
-| vApps  (per org)                  |  10 000  |  10 000  | 10 000  | - The maximum number of vApps in an organization (per org).                                                                                                       |
-| Catalogs 	                        |  10 000  | 	10 000	 | 10 000  | - The total number of catalogs in all organizations.                                                                                                              |
-| Resource pools (per provider VDC) |   	64	   |   64	    |   64    | The number of top-level resource pools per provider VDC.                                                                                                          |
-| Media	                            |  5000	   |  5000	   |  5000   | The total number of media files in all catalogs.                                                                                                                  |
-| Catalogs 	                        | 10 000	  | 10 000	  | 10 000  | The total number of catalogs in all organizations.                                                                                                                |
+| **Limites / Offres**                | **Standard** | **Advanced** | **Premium** | **Comments**                                                                                                                                                       |
+|:------------------------------------|:------------:|:------------:|:-----------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `vCPU` (per VM)                     |      12      |      12      |     12      | - Number of the available vCPU (per VM).                                                                                                                           |
+| `RAM` (per VM)                      |     128      |     128      |     128     | - Number maximum of RAM possible (per VM, min 0.5 Go).                                                                                                             |
+| `Network Card` (per VM)             |      10      |     	10	     |     10      | - Network card limite available (per VM) for VCD on OVHcloud.                                                                                                      |
+| `Edge Gateway`                      |    	32 	     |     32 	     |     32	     | - Number of  Edge Gateway possible  (per Org limitations).                                                                                                         |
+| `Storage`                           |     1.5      |     1.5      |     1.5     | - Storage size limitation in To (per VM on NFS/vSAN).                                                                                                              |
+| `Snapshot usage`	                   |     32	      |     32	      |     32	     | - The snapshot limitation is 32 snapshot per VM and can be limited further if needed (for cost purposes).                                                          |
+| `VMs` (per vApp)                    |     128	     |     128	     |     128     | - Virtual machines numbers authorized per vApp (per vApp).	                                                                                                        |
+| `VMs` (per org)                     |    	2000	    |    4000	     |    4000	    | - Number of VM possible (per Org limitations).                                                                                                                     |
+| `VMs` (per instance)                |   	20 000    |   	20 000	   |   20 000	   | - The maximum number of virtual machines in a single VMware Cloud Director instance. This overrides the number of virtual machines that are supported on-premises. |
+| `vApps` (per VCD instance)          |   	40 000	   |   40 000	    |   40 000	   | - The maximum number of vApp in a single VMware Cloud Director instance (per VCD instance).                                                                        |
+| `vApps` (per org)                   |    10 000    |    10 000    |   10 000    | - The maximum number of vApps in an organization (per org).                                                                                                        |
+| `Catalogs` 	                        |    10 000    |   	10 000	   |   10 000    | - The total number of catalogs in all organizations.                                                                                                               |
+| `Resource pools` (per provider VDC) |     	64	     |     64	      |     64      | - The number of top-level resource pools per provider VDC.                                                                                                         |
+| `Media`	                            |    5000	     |    5000	     |    5000     | - The total number of media files in all catalogs.                                                                                                                 |
+| `Catalogs` 	                        |   10 000	    |   10 000	    |   10 000    | - The total number of catalogs in all organizations.                                                                                                               |
 
 ## Aller plus loin
 
