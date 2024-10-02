@@ -264,6 +264,8 @@ Le KMS étant régionalisé, l'accès à l'API se fait directement sur la régio
 
 Par exemple, pour un KMS créé sur la région **eu-west-rbx** : <https://eu-west-rbx.okms.ovh.net>
 
+Il est aussi possible d'utiliser le SDK en Golang dont la documentation est accessible sur le lien suivant : <https://pkg.go.dev/github.com/ovh/okms-sdk-go>
+
 #### Créer une clé de chiffrement par API
 
 La création d'une clé se fait par l'API suivante :

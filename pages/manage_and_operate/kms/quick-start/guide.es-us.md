@@ -264,6 +264,8 @@ Since the KMS is regionalized, you can access the API directly in its region: <h
 
 For example, for a KMS created in the **eu-west-rbx** region: <https://eu-west-rbx.okms.ovh.net>
 
+It's also possible to use the Golang SDK with the documentation available here : <https://pkg.go.dev/github.com/ovh/okms-sdk-go>
+
 #### Creating an encryption key via API
 
 You can create a key using the following API:
