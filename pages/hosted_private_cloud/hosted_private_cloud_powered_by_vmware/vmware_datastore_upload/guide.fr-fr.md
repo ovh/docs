@@ -1,7 +1,7 @@
 ---
 title: "Téléverser des fichiers dans un datastore"
 excerpt: "Découvrez comment utiliser le client html de téléversement du datastore et avec govc afin de manipuler des données dans votre environnement VMware vSphere on OVHcloud managé"
-updated: 2024-10-02
+updated: 2024-10-03
 ---
 
 ## Objectif
@@ -119,9 +119,9 @@ Nommez votre dossier et cliquez sur `OK`{.action}.
 
 ![Datastore Upload - Create a folder](images/datastore_4.png){.thumbnail}
 
-### Étape 2 - Téléversement avec govc depuis l'API VMware
+### Étape 2 - Téléversement avec Govc
 
-Une bibliothèque Go pour interagir avec les API VMware vSphere (ESXi et/ou vCenter Server) est fournis par VMware.  Vous pouvez consulter le dépot github à [cette url](https://github.com/vmware/govmomi?tab=readme-ov-file)
+Une bibliothèque Go pour interagir avec les API VMware vSphere (ESXi et/ou vCenter Server) est fournis par VMware. Vous pouvez consulter le `READ ME` du dépot Github à cette [url](https://github.com/vmware/govmomi?tab=readme-ov-file)
 
 En plus du client API vSphere, ce dépôt comprend :
 
@@ -129,96 +129,211 @@ En plus du client API vSphere, ce dépôt comprend :
 - [vcsim](https://github.com/vmware/govmomi/blob/main/vcsim/README.md) - vSphere API mock framework
 - [toolbox](https://github.com/vmware/govmomi/blob/main/toolbox/README.md) - Framework des outils invités des VM
 
-#### Installation et configuration de govc
+Voici les variables d'environnement qui seront nécessaire pour la configuration de l'authentification de Govc avec l'api VMware :
 
-**Sur Linux**
+|      **Variable d'environnement**      |                               **Standard/advanced**                               |                                **Premium (vSAN)**                                 | **Comments**                                                                                                                                                                                                                                                                                                                                                                                                                         | 
+|:--------------------------------------:|:---------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|           `GOVC_DATACENTER`            |                         `pcc-XXX-XX-XX-XX_datacenterXXXX`                         |                         `pcc-XXX-XX-XX-XX_datacenterXXXX`                         | - Nom du datacenter par défaut au sens VMWare du terme.                                                                                                                                                                                                                                                                                                                                                                              | 
+|            `GOVC_USERNAME`             |                                      `jsnow`                                      |                                      `jsnow`                                      | - L'utilisateur local de connexion VMware vSphere on OVHcloud. Vous pouvez vous passez de cette variable si vous spécifiez vos identifiants dans la variable `GOVC-URL`.                                                                                                                                                                                                                                                             |
+|            `GOVC_PASSWORD`             |                                 `John_passwordXX`                                 |                                 `John_passwordXX`                                 | - Le mot de passe de connexion de l'utilisateur local VMware vSphere on OVHcloud. Vous pouvez vous passez de cette variable si vous spécifiez vos identifiants dans la variable `GOVC-URL`.                                                                                                                                                                                                                                          | 
+|               `GOVC_URL`               | `user:pass@host`<br/>`vsphere.local`<br/>`vc.local`<br/>`pcc-XXX-XX-XX-XX.ovh.XX` | `user:pass@host`<br/>`vsphere.local`<br/>`vc.local`<br/>`pcc-XXX-XX-XX-XX.ovh.XX` | - L'IP ou hostname de l'hôte VMware vsphere on OVHcloud. Vous pouvez spécifier en plus l'identifiant utilisateur et le mot de passe, tel que `user:pass@host`. Et vous passez des variables `GOVC_USERNAME/PASSWORD`. Attention le `host` definit bien l'IP de vos ESX et non le `pcc-XXX-XXX-XXX-XXX`. Si vous utilisez govc au sein d'une VM de votre environnement vous pouvez ajouter en `host` : `vsphere.local` ou `vc.local`. |
+|            `GOVC_DATASTORE`            |                           `ssd-XXXXXX`<br/>`nfs-XXXXXX`                           |                 `ssd-XXXXXX`<br/>`nfs-XXXXXX`<br/>`vsanDatastore`                 | - Le Datastore utilisé par défaut au sens VMWare du terme.                                                                                                                                                                                                                                                                                                                                                                           |
+|             `GOVC_NETWORK`             |                                  `172.XX.XX.XX`                                   |                                  `172.XX.XX.XX`                                   | - Le Network par défaut au sens VMWare du terme. Vous pouvez les retrouver dans votre inventaire globale `Networks`.                                                                                                                                                                                                                                                                                                                 |
+|              `GOVC_HOST`               |                                  `172.XX.XX.XX`                                   |                                  `172.XX.XX.XX`                                   | - L'hôte par défaut au sens VMWare du terme. Vous pouvez les retrouver dans votre inventaire globale `Hosts`.                                                                                                                                                                                                                                                                                                                        |
+|          `GOVC_RESOURCE_POOL`          |                                    `ovhServer`                                    |                                    `ovhServer`                                    | - Le pool de ressource par défaut au sens VMWare du terme. Vous pouvez les retrouver dans votre inventaire globale `Ressource Pools`.                                                                                                                                                                                                                                                                                                |
+|              `HTTP_PROXY`              |                             `http://XXX.XX.X.X:XXXXX`                             |                             `http://XXX.XX.X.X:XXXXX`                             | - L'url de votre server proxy sans https.                                                                                                                                                                                                                                                                                                                                                                                            |
+|             `HTTPS_PROXY`              |                            `https://XXX.XX.X.X:XXXXX`                             |                            `https://XXX.XX.X.X:XXXXX`                             | - L'url de votre server proxy avec https.                                                                                                                                                                                                                                                                                                                                                                                            |
 
-Avec le binaire :
-
-Vous pouvez télécharger le binaire depuis de dépot officiel Github VMware : https://github.com/vmware/govmomi/releases
-
-Le curl ci-dessous extrait la bonne version nécessaire pour votre OS (`uname`), faite quand même attention à bien télécharger l'asset `Govc` qui dispose de la version d'OS (Freebsd, Linux, x64_86, arm etc..).
-
-```bash
-# extract govc binary to /usr/local/bin
-# note: the "tar" command must run with root permissions
-curl -L -o - "https://github.com/vmware/govmomi/releases/latest/download/govc_$(uname -s)_$(uname -m).tar.gz" | tar -C /usr/local/bin -xvzf - govc
-```
-**Remarque** : Vous devez être root pour exécuter `tar` ou avoir les droits `sudo` suffisants.
-
-Avec go install :
-
-```bash
-go install github.com/vmware/govmomi/govc@latest
-```
-Avec Docker :
-
-[L'image Docker](https://hub.docker.com/r/vmware/govc) `govc` est construite depuis ce [Dockerfile](https://github.com/vmware/govmomi/blob/main/Dockerfile.govc).
-
-Pour les installations alternatives, consultez le dépot Git `Govc` VMware officiel à [cette url](https://github.com/vmware/govmomi/blob/main/govc/README.md).
-
-Le programme fournit un vaste choix d’arguments pour définir les conditions d’accès à l’API (par exemple son URL, l’utilisateur/mot de passe etc..). Mais nous vous conseillons d’utiliser des variables d’environnements pour gérer plus efficacement vos clusters, surtout si vous êtes amenés à vous connecter à plusieurs APIs. Et de les placer dans un fichier pour une réutilisation ulterieur lors d’une autre session par exemple.
-
-|      **Variable d'environnement**      |                                    **Standard**                                    |                                  **Premium (vSAN)**                                   | **Comments**                                                                                                                                                                                                                                                                                                                                                                                                                         | 
-|:--------------------------------------:|:----------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|           `GOVC_DATACENTER`            |                         `pcc-XXX-XX-XX-XX_datacenterXXXX`                          |                           `pcc-XXX-XX-XX-XX_datacenterXXXX`                           | - Nom du datacenter par défaut au sens VMWare du terme.                                                                                                                                                                                                                                                                                                                                                                              | 
-|            `GOVC_USERNAME`             |                                      `jsnow`                                       |                                        `jsnow`                                        | - L'utilisateur local de connexion VMware vSphere on OVHcloud. Vous pouvez vous passez de cette variable si vous spécifiez vos identifiants dans la variable `GOVC-URL`.                                                                                                                                                                                                                                                             |
-|            `GOVC_PASSWORD`             |                                 `John_passwordXX`                                  |                                   `John_passwordXX`                                   | - Le mot de passe de connexion de l'utilisateur local VMware vSphere on OVHcloud. Vous pouvez vous passez de cette variable si vous spécifiez vos identifiants dans la variable `GOVC-URL`.                                                                                                                                                                                                                                          | 
-|               `GOVC_URL`               | `user:pass@host`<br/>`vsphere.local`<br/>`vc.local`<br/>`pcc-XXX-XX-XX-XX.ovh.XX`  |   `user:pass@host`<br/>`vsphere.local`<br/>`vc.local`<br/>`pcc-XXX-XX-XX-XX.ovh.XX`   | - L'IP ou hostname de l'hôte VMware vsphere on OVHcloud. Vous pouvez spécifier en plus l'identifiant utilisateur et le mot de passe, tel que `user:pass@host`. Et vous passez des variables `GOVC_USERNAME/PASSWORD`. Attention le `host` definit bien l'IP de vos ESX et non le `pcc-XXX-XXX-XXX-XXX`. Si vous utilisez govc au sein d'une VM de votre environnement vous pouvez ajouter en `host` : `vsphere.local` ou `vc.local`. |
-|            `GOVC_DATASTORE`            |                              `ssd-XXXXXX`<br/>`NFS-XXXXXX`                              |                      `ssd-XXXXXX`<br/>`NFS-XXXXXX`<br/>`vsanDatastore`                       | - Le Datastore utilisé par défaut au sens VMWare du terme.                                                                                                                                                                                                                                                                                                                                                                           |
-|             `GOVC_NETWORK`             |                                   `172.XX.XX.XX`                                   |                                    `172.XX.XX.XX`                                     | - Le Network par défaut au sens VMWare du terme. Vous pouvez les retrouver dans votre inventaire globale `Networks`.                                                                                                                                                                                                                                                                                                                 |
-|              `GOVC_HOST`               |                                   `172.XX.XX.XX`                                   |                                    `172.XX.XX.XX`                                     | - L'hôte par défaut au sens VMWare du terme. Vous pouvez les retrouver dans votre inventaire globale `Hosts`.                                                                                                                                                                                                                                                                                                                        |
-|          `GOVC_RESOURCE_POOL`          |                                    `ovhServer`                                     |                                      `ovhServer`                                      | - Le pool de ressource par défaut au sens VMWare du terme. Vous pouvez les retrouver dans votre inventaire globale `Ressource Pools`.                                                                                                                                                                                                                                                                                                |
-|              `HTTP_PROXY`              |                             `http://XXX.XX.X.X:XXXXX`                              |                               `http://XXX.XX.X.X:XXXXX`                               | - L'url de votre server proxy sans https.                                                                                                                                                                                                                                                                                                                                                                                            |
-|             `HTTPS_PROXY`              |                             `https://XXX.XX.X.X:XXXXX`                             |                              `https://XXX.XX.X.X:XXXXX`                               | - L'url de votre server proxy avec https.                                                                                                                                                                                                                                                                                                                                                                                            |
-
-Voici un exemple de configuration pour un OS Linux, n'oubliez pas de créer votre fichier `govc.env` à la racine du dossier sur lequel vous lancez le binaire.
-
-```bash
-# govc.env
-export GOVC_DATACENTER=<Nom du datacenter par défaut au sens VMWare du terme>
-export GOVC_USERNAME=<Utilisateur local vmware>
-export GOVC_PASSWORD=<Mot de passe de l'utilisateur local VMware>
-export GOVC_URL=<IP ou hostname du vsphere>
-export GOVC_DATASTORE=<Datastore par défaut>
-
-# Si besoin d'utiliser un proxy réseau
-# export HTTP_PROXY=http://XXX.XX.X.X:XXXXX
-# export HTTPS_PROXY=http://XXX.XX.X.X:XXXXX
-```
-
-Comme pour tout fichier contenant des variables, il suffit de le sourcer dans un terminal.
-
-```bash
-source govc.env
-```
-
-Au lancement de chaque commande, des options peuvent être modifiées à la volée pour surcharger les variables d’environnement, par exemple :
-
-```bash
-govc datastore.ls -dc=Datacenter2 -ds=Datastore1 -debug=true
-```
-
-À noter que si vous utilisez la commande debug (le “=true” est optionnel, s’agissant d’un flag Go), un dossier caché `.govmomi/debug` sera créé avec des logs vous permettant de tracer votre problème.
-
-#### Usage de govc
-
-Nous allons vous exposer ici la commande de téléversement.
-
-Tout d’abord, il faut comprendre qu’au sein d’un datacenter les objets sont regroupés au sein d’un même type, sous `VM`, `Network`, `Host` et `Datastore`. Ainsi, il existe une seule méthode pour téléverser des fichiers avec la commande `govc datastore.upload`.
-
-**Téléverser un iso**
-
-Voici un exemple de téléversement d'une image iso avec `govc`. Attention à bien localiser le dossier sur lequel vous voulez importer votre iso, si vous en avez un :
-
-```bash
-govc datastore.upload image.iso dossier-isos/image.iso
-```
-Télécharger un ISO avec curl avant de le téléverser à l'aide d'un tuyau (pipe) shell :
-
-```bash
-curl https://example.com/iso/image.iso | govc datastore.upload - dossier-isos/image.iso
-```
+> [!tabs]
+>
+> **Linux**
+> 
+>> **Installation**
+>> 
+>> Avec le binaire :
+>>
+>> Vous pouvez télécharger le binaire depuis les assets du dépot officiel Github VMware : https://github.com/vmware/govmomi/releases
+>>
+>> Le Curl ci-dessous choisi automatiquement la bonne version nécessaire pour votre système d'exploitation (`uname`) et télécharge le binaire en version compressé `tar.gz`.
+>>
+>> Vous devez avoir accès à internet pour pouvoir le télécharger sinon le curl ne fonctionnera pas. Si vous ne disposez pas de `curl`, `tar` et `uname`. Installez-les avant de lancer la commande en lançant cette commande :
+>> 
+>> Selon le système d'exploitation : `Ubuntu/debian -> apt`, `Redhat/Centos -> yum/dnf`.
+>> 
+>> Choisissez l'installateur que vous voulez.
+>> 
+>> ```bash
+>> sudo apt/dnf/yum install curl tar uname -y
+>> ```
+>> 
+>> Faite quand même attention à bien télécharger l'asset `Govc` qui dispose de la bonne version du système d'exploitation que vous utilisez (Windows/Linux, Linux/Freebsd, x64_86/arm, arm/arm64,  etc..).
+>> 
+>> 
+>> ```bash
+>> # extract govc binary to /usr/local/bin
+>> # note: the "tar" command must run with root permissions
+>> curl -L -o - "https://github.com/vmware/govmomi/releases/latest/download/govc_$(uname -s)_$(uname -m).tar.gz" | tar -C /usr/local/bin -xvzf - govc
+>> ```
+>> Nous vous conseillons aussi de bien verifier la somme du hash téléchargé.
+>> 
+>> ```bash
+>> wget https://github.com/vmware/govmomi/releases/download/v0.43.0/checksums.txt
+>> sha256sum govc_xxxx.tar.gz > checksums_govc_XX.txt
+>> sha256sum -c checksums_govc_XX.txt 2>&1 | grep OK
+>> ```
+>> 
+>> **Remarque** : Vous devez être root pour exécuter `tar` ou avoir les droits `sudo` suffisants. En fonction des droits de l'utilisateur utilisé sur votre système d'exploitation, vous devez aussi ajouter les droits d'exécution sur le binaire Govc par exemple.
+>> 
+>> Avec go install :
+>> 
+>> ```bash
+>> go install github.com/vmware/govmomi/govc@latest
+>> ```
+>> Avec Docker :
+>>
+>> Une image Docker peut être un bon moyen d'exécuter le binaire Govc de manière versionné et isolé.
+>> 
+>> [L'image Docker officielle VMware](https://hub.docker.com/r/vmware/govc) `govc` est construite depuis ce [Dockerfile](https://github.com/vmware/govmomi/blob/main/Dockerfile.govc).
+>> 
+>> Exemple d'exécution de l'image Docker govc avec les variables d'environnement voir les concepts dans la suite de la documentation. 
+>>
+>> ```bash
+>> docker run -e GOVC_USERNAME=XXXXX -e GOVC_PASSWORD=XXXXX -e GOVC_URL=https://pcc-XX-XX-XX-XX.ovh.de --rm -it vmware/govc /govc ls
+>> or
+>> docker run -e GOVC_URL=user:pass@host --rm -it vmware/govc /govc ls 
+>> ``` 
+>> 
+>> Pour les installations alternatives, consultez le dépot Git `Govc` VMware officiel à [cette url](https://github.com/vmware/govmomi/blob/main/govc/README.md).
+>>  
+>> **Configuration/Authentification**
+>> 
+>> Le programme vous fournit un vaste choix d’arguments pour définir les conditions d’accès à l’API (par exemple son URL, l’utilisateur/mot de passe etc..). Mais nous vous conseillons d’utiliser des variables d’environnements pour gérer plus efficacement vos clusters, surtout si vous êtes amenés à vous connecter à plusieurs APIs. Et de les placer dans un fichier pour une réutilisation ultérieur lors d’une autre session par exemple.
+>> 
+>> Voici un exemple de configuration pour un OS Linux, n'oubliez pas de créer votre fichier `govc.env` à la racine du dossier sur lequel vous lancez le binaire.
+>>
+>> ```bash
+>> # govc.env
+>> export GOVC_DATACENTER=<Nom du datacenter par défaut au sens VMWare du terme>
+>> export GOVC_USERNAME=<Utilisateur local vmware>
+>> export GOVC_PASSWORD=<Mot de passe de l'utilisateur local VMware>
+>> export GOVC_URL=<IP ou hostname du vsphere>
+>> export GOVC_DATASTORE=<Datastore par défaut>
+>> 
+>> # Si besoin d'utiliser un proxy réseau
+>> # export HTTP_PROXY=http://XXX.XX.X.X:XXXXX
+>> export HTTPS_PROXY=http://XXX.XX.X.X:XXXXX
+>> ```
+>>
+>> Comme pour tout fichier contenant des variables, il suffit de le sourcer dans un terminal.
+>>
+>> ```bash
+>> source govc.env
+>> ```
+>>
+>> Au lancement de chaque commande, des options peuvent être modifiées à la volée pour surcharger les variables d’environnement, par exemple :
+>>
+>> ```bash
+>> govc datastore.ls -dc=Datacenter2 -ds=Datastore1 -debug=true
+>> ```
+>>
+>> À noter que si vous utilisez la commande debug (le “=true” est optionnel, s’agissant d’un flag Go), un dossier caché `.govmomi/debug` sera créé avec des logs vous permettant de tracer votre problème.
+>>
+>> **Usage**
+>>
+>> Nous allons vous exposer ici la commande de téléversement.
+>> 
+>> Tout d’abord, il faut comprendre qu’au sein d’un datacenter les objets sont regroupés au sein d’un même type, sous `VM`, `Network`, `Host` et `Datastore`. Ainsi, il existe une seule méthode pour téléverser des fichiers avec la commande `govc datastore.upload`.
+>>
+>> **Téléverser un iso**
+>>
+>> Voici un exemple de téléversement d'une image iso avec `govc`. Attention à bien localiser le dossier sur lequel vous voulez importer votre iso, si vous en avez un :
+>>
+>> ```bash
+>> govc datastore.upload image.iso dossier-isos/image.iso
+>> ```
+>> Télécharger un ISO avec curl avant de le téléverser à l'aide d'un tuyau (pipe) shell :
+>>
+>> ```bash
+>> curl https://example.com/iso/image.iso | govc datastore.upload - dossier-iso/image.iso
+>> ```
+>>
+> **Windows**
+>
+>> **Installation**
+>>
+>> Depuis 2017 `Curl` et `bsdtar -> tar` sont installé par défaut, vous pouvez donc exécuter la commande ci-dessous avec `Powershell`, `CMD` ou le prompt que vous préférez. 
+>>
+>> ```powershell
+>> curl -L -o - "https://github.com/vmware/govmomi/releases/latest/download/govc_$(uname -s)_$(uname -m).tar.gz" | tar -C /usr/local/bin -xvzf - govc
+>> ``` 
+>> Si vous préférez, vous pouvez simplement lancer la decompression`Zip` de l'asset `Govc` Windows suivant (x86_64.zip) : https://github.com/vmware/govmomi/releases/download/v0.43.0/govc_Windows_x86_64.zip
+>>
+>> Faite bien attention à bien extraire le binaire à la racine du dossier sur lequel vous souhaitez exécuter le binaire. 
+>> 
+>> Avec Chocolatey :
+>> 
+>> Vous pouvez utiliser le dépot officiel Powershell Chocolatey, cependant nous vous recommandons la version la plus récente sur le dépot Github VMware (ci-dessus).
+>> 
+>> ```powershell
+>> Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+>> choco install govc
+>> choco install jq
+>> ```
+>> `jq` permet de lister correctement dans Powershell les retours Govc.
+>> 
+>> **Configuration/Authentification**
+>>  
+>> Il y a plusieurs façons de configurer des variables d'environnements avec Windows et Powershell, voici quelques exemples :
+>> 
+>> ```powershell
+>> # Set env variables with Set-item :
+>> Set-Item -Path env:GOVC_URL -Value “https://pcc-XX-XX-XX-XX.ovh.xx"
+>> 
+>> # Set env variables for your vCenter, just push Enter :
+>> $vcenter = "<your_vcenter_fqdn>"
+>> $cred = get-credential
+>> 
+>> # Credentials configuration :
+>> New-VICredentialStoreItem -Host $vcenter -User $cred.username -Password $cred.GetNetworkCredential().password
+>> 
+>> # Set env variables, just push enter :
+>> $env:GOVC_URL="https://"+$vcenter
+>> $env:GOVC_USERNAME=(Get-VICredentialStoreItem $vcenter).User
+>> $env:GOVC_PASSWORD=(Get-VICredentialStoreItem $vcenter).Password
+>> $env:GOVC_INSECURE="true"
+>> $env:GOVC_DATASTORE="<datastore_name>"
+>> $env:GOVC_NETWORK="<portgroup_name>"
+>> $env:GOVC_RESOURCE_POOL='*/Resources'
+>> 
+>> # Check GOVC variables :
+>> ls env:GOVC*
+>> 
+>> # Check configuration from env vars setup :
+>> Get-Item env:* | sort-object name
+>> govc about
+>> 
+>> # With jq :
+>> govc about -json | jq '.'
+>> ```
+>> 
+>> **Usage**
+>> 
+>> **Téléversement**
+>>
+>> Pour téléverser un iso avec powershell et Govc, lancez l'argument `Govc datastore.upload`
+>> 
+>> ```powershell
+>> govc datastore.upload - dossier-iso/image.iso
+>> ```
+>> 
+>> **Téléchargement + téléversement** 
+>> 
+>> ```powershell
+>> curl https://example.com/iso/image.iso | govc datastore.upload - dossier-isos/image.iso
+>> ```
+>> Govc dispose d'un grand nombre de commandes afin d'appeler l'api VMware pour gérer vos ressources managées. Nous vous invitons à voir la liste complete dans la documentation officielle.
+>> 
+>>
 
 ## Aller plus loin
 
