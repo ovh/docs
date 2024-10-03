@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - Audit des cas complexes de migration"
 excerpt: "Découvrez les méthodes d'examen des scénarios les plus complexes au sein de vos services VMware on OVHcloud dans le but de vous préparer à migrer vers VCD"
-updated: 2024-09-25
+updated: 2024-10-03
 ---
 
 > [!primary]
@@ -11,7 +11,7 @@ updated: 2024-09-25
 
 ## Objectif
 
-**L’objectif de ce guide est de vous fournir les informations nécessaires sur les migrations vers VMware Cloud Director on OVHcloud.**
+**L’objectif de ce guide est de vous fournir les informations nécessaires pour effectuer une migration vers un environnement VMware Cloud Director on OVHcloud.**
 
 ## Prérequis
 
@@ -42,9 +42,9 @@ Pour rappel, si vous décidez de passer à l’offre VCD, les nouveaux tarifs ne
 
 > [!primary]
 > 
-> La migration de vos environnements actuels VMware vSphere on OVHcloud peut être réalisée dès réception de votre demande.
-> 
-> **Important** : les conditions particulières (C&P) disponibles depuis début septembre 2024 dans l'espace client doivent être signées pour que la migration soit réalisée par les équipes OVHcloud.
+> La migration de vos environnements actuels VMware vSphere on OVHcloud peut être réalisée dès réception de votre demande effectuée par via un [ticket auprès du support](https://help.ovhcloud.com/csm?id=csm_get_help).
+>
+> **Important** : Les termes et conditions particulières (C&P) disponibles depuis début septembre 2024 dans l'espace client doivent être signés pour que la migration soit réalisée par les équipes OVHcloud.
 >
 
 Nous vous invitons à revoir la démonstration du produit et le webinaire pour vous familiariser avec cette nouvelle offre.
@@ -53,19 +53,19 @@ Vous retrouverez toutes les informations nécessaires sur nos pages dédiées à
 
 - [Webinar - Managed VMware Cloud Director on OVHcloud (vidéo EN)](https://vimeo.com/936590009/b52b3ba8ce)
 - [Webinar - VMware by Broadcom New Offerings and Opportunities (vidéo EN)](https://www.youtube.com/watch?v=aS2A9AhjnMg)
-- [OVHcloud.com - VMware Cloud Director on OVHcloud (FR)](https://www.ovhcloud.com/fr-ca/lp/vmware-vcd-evolution/)
+- [OVHcloud.com - VMware Cloud Director on OVHcloud (FR)](https://www.ovhcloud.com/fr/lp/vmware-vcd-evolution/)
 - [OVHcloud Labs - VMware Cloud Director on OVHcloud (EN)](https://labs.ovhcloud.com/en/vmware-cloud-director/)
 
 Les migrations seront effectuées en 4 vagues, à partir du mois de septembre, selon les services actifs dans votre environnement.
 
 Le calendrier prévisionnel, compatible avec ces environnements lors de la migration, est le suivant :
 
-| **Vagues**&nbsp; |     **Dates**     | **Offre<br/>cible** | **NSX** | **vRack** | **vSAN** | **Microsoft<br/>(SPLA)** | **Résumé des environnements<br/>compatibles avec la migration**                                                                                          |                                                                                                                
-|:----------------:|:-----------------:|:-------------------:|:-------:|:---------:|:--------:|:------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    `Vague 1`     | **Novembre 2024** |     `Standard`      |    ❌    |     ❌     |    ❌     |            ❌             | - **Sans** licence VM Microsoft Windows (SPLA) fournie par OVHcloud<br/>- **Sans** NSX<br/>- **Sans** High performance storage (vSAN)                    |
-|    `Vague 2`     | **Décembre 2024** |     `Standard`      |    ❌    |     ❌     |    ❌     |            ✅             | - **Avec** licence VM Microsoft Windows (SPLA) fournie par OVHcloud<br/>- **Sans** NSX<br/>- **Sans** High performance storage (vSAN)                    |
-|    `Vague 3`     | **Janvier 2024**  |     `Advanced`      |    ✅    |     ✅     |    ❌     |            ✅             | - **Avec** licence VM Microsoft Windows (SPLA) fournie par OVHcloud<br/>- **Avec** NSX + vRack support<br/>- **Sans** High performance storage (vSAN)    |
-|    `Vague 4`     | **Février 2024**  |      `Premium`      |    ✅    |     ✅     |    ✅     |            ✅             | - **Avec** licence Microsoft Windows (SPLA) fournie par OVHcloud<br/>- **Avec** NSX + vRack support<br/>- **Avec** High performance storage (vSAN)       |
+| **Vagues**&nbsp;&nbsp;&nbsp;&nbsp; |         **Dates**         | **Offre<br/>cible** | **NSX** | **vRack** | **Microsoft<br/>(SPLA)** | **Résumé des environnements compatibles avec la migration**                                                                                           |                                                                                                                
+|:----------------------------------:|:-------------------------:|:-------------------:|:-------:|:---------:|:------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------|
+|             `Vague 1`              |     **Novembre 2024**     |     `Standard`      |    ❌    |     ❌     |            ❌             | - **Sans** licence VM Microsoft Windows (SPLA) fournie par OVHcloud<br/>- **Sans** NSX<br/>- **Sans** High performance storage (vSAN)                 |
+|             `Vague 2`              | **Décembre/Janvier 2024** |     `Standard`      |    ❌    |     ❌     |            ✅             | - **Avec** licence VM Microsoft Windows (SPLA) fournie par OVHcloud<br/>- **Sans** NSX<br/>- **Sans** High performance storage (vSAN)                 |
+|             `Vague 3`              |     **Février 2024**      |     `Advanced`      |    ✅    |     ✅     |            ✅             | - **Avec** licence VM Microsoft Windows (SPLA) fournie par OVHcloud<br/>- **Avec** NSX + vRack support<br/>- **Sans** High performance storage (vSAN) |
+|             `Vague 4`              |     **Février 2024**      |      `Premium`      |    ✅    |     ✅     |            ✅             | - **Avec** licence Microsoft Windows (SPLA) fournie par OVHcloud<br/>- **Avec** NSX + vRack support<br/>- **Avec** High performance storage (vSAN)    |
 
 Au cours de ce processus, vos données resteront inchangées, à l'exception du vSAN Storage. Vos adresses IP resteront inchangées également.
 
@@ -79,7 +79,7 @@ Nous vous invitons à lire le guide [VMware Cloud Director - Les concepts fondam
 >
 > Les demandes de migration faites après le 1er septembre 2024 ont les mêmes prérequis que pour toutes les autres demandes de migrations évoquées dans ce guide.
 >
-> Vous devrez faire votre demande par le biais d'un [ticket au support](https://help.ovhcloud.com/csm?id=csm_get_help), ce qui vous permettra d'obtenir toutes les informations et de signer les termes et conditions de l'offre (C&P).
+> Vous devrez faire votre demande par le biais d'un [ticket au support](https://help.ovhcloud.com/csm?id=csm_get_help), ce qui vous permettra d'obtenir toutes les informations et de signer les termes et conditions particulières de l'offre VCD on OVHcloud.
 >
 
 Nous vous informerons ensuite de la date de migration et réaliserons celle-ci. 
@@ -113,19 +113,19 @@ Le tableau ci-dessous vous présente chacun des cas particuliers et des points b
 |      🔟       | 🔗 `Pools de ressources (partage)`           | Remplacer par les vApp dans VCD on OVHcloud                                                                                                          | - Les pools de ressources seront perdus après la migration car cette notion n'existe plus côté VCD on OVHcloud. Nous recommandons à la place l'utilisation des concepts de vApp au sein du control panel VCD on OVHcloud. | [Utilisation de vApps dans le control panel VCD on OVHcloud](https://docs.vmware.com/en/VMware-Cloud-Director/10.6/VMware-Cloud-Director-Tenant-Guide/GUID-AC48FB5E-4ADC-4835-AACE-B949B297A147.html)  |
 |      ⏸️       | 🆓 `Hosts + Datastore`                       | Libération des ressources (hôtes + datastore) dans VMware vSphere on OVHcloud                                                                        | - Les ressources (hôtes + datastore) gratuites "Freespare" et à l'heure "Hourly" doivent être libérées avant la migration, ou converties en ressources mensuelles ("Monthly").                                             | [Informations de facturation du Hosted Private Cloud](/pages/account_and_service_management/manage_billing_payment_and_services/facturation_private_cloud)                                             |
 
-### Étape 2 - Après la migration
+### Étape 2 - Après la migration (obligatoire)
 
 Voici un rappel des tâches qu'il vous reste à mener, une fois la migration effectuée (si vous êtes dans les cas d'usages suivants).
 
-#### Post action (non-obligatoire, seulement si cas d'usage présent)
+#### Post action (seulement pour les cas d'usage spécifiques)
 
-| **Post actions** | **Cas d'usages**                             | **Objectifs**                                                                                                                                                          | **Aides et références**                                                                                                                                                                                                                                                                                                           |
-|:----------------:|:---------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|       1️⃣        | 🏢🏢 `Multi-vDC`                             | Re-migrer les données des VMs, vApp vers vos datastore multi-vDc dans VCD on OVHcloud si vous êtes dans ce cas d'usage                                                 |                                                                                                                                                                                                                                                                                                                                   |
-|       5️⃣        | 🚫 `FT (tolérance au pannes)`                | Réactiver la FT (Fault Tolerance) sur les VMs dans VCD on OVHcloud                                                                                                     | - Faites un clic droit sur vos VMs et sélectionnez `Fault Tolerance` > `Activer Fault Tolerance` dans VCD on OVHcloud.                                                                                                                                                                                                        |
-|       6️⃣        | ⚠️ `Règles d'affinité/anti-affinité DRS`     | Reconstituer les règles d’affinités/anti-affinités dans VCD on OVHcloud                                                                                                | - [Créer une règle d'affinité de machine virtuelle dans VMware Cloud Director on OVHcloud](https://docs.vmware.com/fr/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-950F736F-76D5-4522-8E08-CF6727FC569C.html)                                                                                               |
-|       7️⃣        | 📀 `Périphériques spéciaux (CD, DVD, etc..)` | Rébrancher tous les équipements spéciaux nécessaire au bon fonctionnement des VMs dans VCD on OVHcloud                                                                 | - Car tous les périphériques spéciaux (CD, DVD, etc.) doivent être retirés avant la migration. [Insérer un support dans une machine virtuelle dans le VMware Cloud Director on OVHcloud](https://docs.vmware.com/fr/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-01E3E275-D076-464D-BDE3-65F19A0793AD.html) |
-|       3️⃣        | 🔐 `Chiffrement VMs (KMS/OKMS ou vNKP)`      | Réactiver la politique de chiffrement pour les VMs dans VCD on OVHcloud avec votre solutions définie (KMS/OKMS/vNKP) après migration et lancer le chiffrement des VMs. | - Car il n'est pas possible à ce jour d'effectuer la migration avec des VMs, vApp chiffrées.<br/>L'import ou la configuration de votre solution de chiffrement (KMS/OKMS, vNKP) doit être réalisé avant activation du chiffrement des VMs dans VCD on OVHcloud                                                                    |
+| **Post<br/>actions** | **Cas d'usages**                             | **Objectifs**                                                                                                                                                          | **Aides et références**                                                                                                                                                                                                                                                                                                           |
+|:---------------:|:---------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|       1️⃣       | 🏢🏢 `Multi-vDC`                             | Re-migrer les données des VMs, vApp vers vos datastore multi-vDc dans VCD on OVHcloud si vous êtes dans ce cas d'usage                                                 |                                                                                                                                                                                                                                                                                                                                   |
+|       5️⃣       | 🚫 `FT (tolérance au pannes)`                | Réactiver la FT (Fault Tolerance) sur les VMs dans VCD on OVHcloud                                                                                                     | - Faites un clic droit sur vos VMs et sélectionnez `Fault Tolerance` > `Activer Fault Tolerance` dans VCD on OVHcloud.                                                                                                                                                                                                        |
+|       6️⃣       | ⚠️ `Règles d'affinité/anti-affinité DRS`     | Reconstituer les règles d’affinités/anti-affinités dans VCD on OVHcloud                                                                                                | - [Créer une règle d'affinité de machine virtuelle dans VMware Cloud Director on OVHcloud](https://docs.vmware.com/fr/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-950F736F-76D5-4522-8E08-CF6727FC569C.html)                                                                                               |
+|       7️⃣       | 📀 `Périphériques spéciaux (CD, DVD, etc..)` | Rébrancher tous les équipements spéciaux nécessaire au bon fonctionnement des VMs dans VCD on OVHcloud                                                                 | - Car tous les périphériques spéciaux (CD, DVD, etc.) doivent être retirés avant la migration. [Insérer un support dans une machine virtuelle dans le VMware Cloud Director on OVHcloud](https://docs.vmware.com/fr/VMware-Cloud-Director/10.5/VMware-Cloud-Director-Tenant-Guide/GUID-01E3E275-D076-464D-BDE3-65F19A0793AD.html) |
+|       3️⃣       | 🔐 `Chiffrement VMs (KMS/OKMS ou vNKP)`      | Réactiver la politique de chiffrement pour les VMs dans VCD on OVHcloud avec votre solutions définie (KMS/OKMS/vNKP) après migration et lancer le chiffrement des VMs. | - Car il n'est pas possible à ce jour d'effectuer la migration avec des VMs, vApp chiffrées.<br/>L'import ou la configuration de votre solution de chiffrement (KMS/OKMS, vNKP) doit être réalisé avant activation du chiffrement des VMs dans VCD on OVHcloud                                                                    |
 
 #### Managed Veeam for VCD (obligatoire)
 
@@ -135,11 +135,11 @@ La sauvegarde n'est pas configurée par défaut suite à la migration vers VCD. 
 
 Ces paramètres pourront être personnalisés en fonction des niveaux de services choisis :
 
-| **Repository**&nbsp;&nbsp;&nbsp;&nbsp; | **Offre cible** | **Commentaires**                                                                                    |
-|:---------------------------------------|:---------------:|:----------------------------------------------------------------------------------------------------|
-| 🥉 `Bronze Repository (100 To)`        |   `Standard`    | - **Standard Object Storage**                                                                       |
-| 🥈 `Silver Repository (100 To)`        |   `Advanced`    | - **Standard Object Storage** avec copie de sauvegarde hors site                                    |
-| 🥇 `Gold Repository (100 To)`          |    `Premium`    | - **High Performance Object Storage** avec copie de sauvegarde hors site et 14 points d’immuabilité |
+| **Repository**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Offre cible** | **Commentaires**                                                                                    |
+|:---------------------------------------------|:---------------:|:----------------------------------------------------------------------------------------------------|
+| 🥉 `Bronze Repository (100 To)`              |   `Standard`    | - **Standard Object Storage**                                                                       |
+| 🥈 `Silver Repository (100 To)`              |   `Advanced`    | - **Standard Object Storage** avec copie de sauvegarde hors site                                    |
+| 🥇 `Gold Repository (100 To)`                |    `Premium`    | - **High Performance Object Storage** avec copie de sauvegarde hors site et 14 points d’immuabilité |
 
 Tous ces dépôts (*repositories*) ont un quota de stockage de **100 To**. Vous pouvez contacter les équipes de [support](https://help.ovhcloud.com/csm?id=csm_get_help) pour augmenter ce quota.
 
