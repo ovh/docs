@@ -241,22 +241,24 @@ Voici les variables d'environnement qui seront nécessaire pour la configuration
 >>
 >> **Usage**
 >>
->> Nous allons vous exposer ici la commande de téléversement.
+>> Nous allons vous exposer ici la commande de téléversement Govc `datastore.upload`.
 >> 
 >> Tout d’abord, il faut comprendre qu’au sein d’un datacenter les objets sont regroupés au sein d’un même type, sous `VM`, `Network`, `Host` et `Datastore`. Ainsi, il existe une seule méthode pour téléverser des fichiers avec la commande `govc datastore.upload`.
->>
->> **Téléverser un iso**
->>
->> Voici un exemple de téléversement d'une image iso avec `govc`. Attention à bien localiser le dossier sur lequel vous voulez importer votre iso, si vous en avez un :
 >>
 >> ```bash
 >> govc datastore.upload image.iso dossier-isos/image.iso
 >> ```
+>> Téléchargement + Téléversement :
+>>
+>> Voici un exemple de téléversement d'une image iso avec `govc`. Attention à bien localiser le dossier sur lequel vous voulez importer votre iso, si vous en avez un :
+>>
 >> Télécharger un ISO avec curl avant de le téléverser à l'aide d'un tuyau (pipe) shell :
 >>
 >> ```bash
 >> curl https://example.com/iso/image.iso | govc datastore.upload - dossier-iso/image.iso
 >> ```
+>> 
+>> Govc dispose d'un grand nombre de commandes afin d'appeler l'api VMware pour gérer vos ressources managées. Nous vous invitons à voir la liste complete dans la documentation officielle.
 >>
 > **Windows**
 >
@@ -330,13 +332,12 @@ Voici les variables d'environnement qui seront nécessaire pour la configuration
 >> govc datastore.upload - dossier-iso/image.iso
 >> ```
 >> 
->> Téléchargement + téléversement :
+>> Téléchargement + Téléversement :
 >> 
 >> ```powershell
 >> curl https://example.com/iso/image.iso | govc datastore.upload - dossier-isos/image.iso
 >> ```
 >> Govc dispose d'un grand nombre de commandes afin d'appeler l'api VMware pour gérer vos ressources managées. Nous vous invitons à voir la liste complete dans la documentation officielle.
->> 
 >>
 
 ## Aller plus loin
