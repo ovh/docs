@@ -14,8 +14,8 @@ Per condividere un file con un amico o un collega senza fornire le informazioni 
 
 ## Prerequisiti
 
-- [Aver preparato l’ambiente di sviluppo per utilizzare l’API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api){.ref}
-- Impostare le variabili d'ambiente OpenStack
+- Aver [preparato l’ambiente per utilizzare l’API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api).
+- [Impostare le variabili d'ambiente OpenStack](/pages/public_cloud/compute/loading_openstack_environment_variables).
 - Aver installato Python sul proprio dispositivo
 
 ## Procedura
@@ -29,7 +29,7 @@ TempURL è una funzionalità che permette di decidere quali file condividere, me
 - **parametro tempurlsign**, che corrisponde alla firma generata in base a chiave di sicurezza, metodo HTTP, percorso del file e data di scadenza
 - **parametro url_expires**, che corrisponde alla data di scadenza dell’indirizzo temporaneo
 
-### Genera l’indirizzo temporaneo (*TempURL*)
+### Genera l’indirizzo temporaneo (*tempURL*)
 
 #### 1. Genera la chiave
 

@@ -14,8 +14,8 @@ Quando pretende partilhar um ficheiro com alguém, não quer transmitir informa�
 
 ## Requisitos
 
-- [Ter preparado o ambiente para usar a API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api){.ref}.
-- [Carregar as variáveis do ambiente OpenStack](/pages/public_cloud/compute/loading_openstack_environment_variables){.ref} (versão em francês).
+- [Ter preparado o ambiente para usar a API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api).
+- [Carregar as variáveis de ambiente OpenStack](/pages/public_cloud/compute/loading_openstack_environment_variables).
 - Ter instalado o Python no seu ambiente de trabalho.
 
 ## Instruções

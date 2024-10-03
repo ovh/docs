@@ -14,9 +14,9 @@ Jeśli chcesz współdzielić plik z innym użytkownikiem, ze zrozumiałych wzgl
 
 ## Wymagania początkowe
 
-- [Przygotowanie środowiska do korzystania z API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api){.ref}
-- [Pobranie zmiennych środowiskowych OpenStack](/pages/public_cloud/compute/loading_openstack_environment_variables){.ref}
-- Python zainstalowany na stacji roboczej
+- [Przygotowanie środowiska do korzystania z API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api).
+- [Pobranie zmiennych środowiskowych OpenStack](/pages/public_cloud/compute/loading_openstack_environment_variables).
+- Python zainstalowany na stacji roboczej.
 
 ## W praktyce
 
@@ -98,7 +98,7 @@ Otrzymasz **tempURL**, który umożliwia wyświetlenie **ścieżki do pliku**, *
 v1/AUTH_tenant/default/file?temp_url_sig=8016dsdf3122d526afds60911cde59fds3&temp_url_expires=1401548543
 ```
 
-Aby URL działał poprawnie, dodaj adres punktu dostępowego przed**tempURL**:
+Aby URL działał poprawnie, dodaj adres punktu dostępowego przed **tempURL**:
 
 ```bash
 https://storage.sbg1.cloud.ovh.net/v1/AUTH_tenant/default/file?temp_url_sig=8016dsdf3122d526afds60911cde59fds3&temp_url_expires=1401548543
