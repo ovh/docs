@@ -169,7 +169,7 @@ Se a opção **Boost** for adequada às suas necessidades, encontrará abaixo as
 
 #### A faturação em caso de alteração da oferta <a name="billing"></a>
 
-Quando altera a sua oferta inicial para uma oferta superior, é aplicado um cálculo *pro rata temporis* até à próxima data de renovação dessa subscrição inicial.
+**Caso 1**: Quando altera a sua oferta inicial para uma oferta superior, é aplicado um cálculo *pro rata temporis* até à próxima data de renovação dessa subscrição inicial.
 Este cálculo corresponde à diferença de preço entre a sua oferta inicial e a sua nova oferta.
 
 > **Exemplo:**<br>
@@ -180,6 +180,19 @@ Este cálculo corresponde à diferença de preço entre a sua oferta inicial e a
 >
 > Por conseguinte, o montante correspondente à duração restante da subscrição **Perso** (2 meses, de 1 de novembro de 2024 a 1 de janeiro de 2025) é automaticamente subtraído do custo da nova subscrição **Pro* até 1 de janeiro de 2025. Você só pagará a diferença.
 > A partir de 1 de janeiro de 2025, a subscrição **Pro** é faturada ao preço atual.
+
+Siga [estas instruções](#modify) para realizar a sua alteração de oferta.
+
+**Caso 2**: Ao alterar a oferta inicial para uma oferta inferior, o tempo restante da subscrição para a oferta inicial será perdido de forma definitiva. Não será realizado qualquer reembolso durante o período restante, mesmo que tenha expirado o prazo de subscrição de vários meses. Por conseguinte, terá de pagar diretamente a totalidade da subscrição da oferta inferior.
+
+> **Exemplo:**<br>
+>
+> Subscreveu o serviço [Pro](/links/web/hosting-professional-offer) a partir de 1 de janeiro de 2024.
+>
+> Em 31 de outubro de 2024, a renovação será realizada a partir desta oferta **Pro** para uma subscrição na oferta [Perso](/links/web/hosting-personal-offer).<br>
+>
+> Por conseguinte, o montante correspondente à duração restante da subscrição **Pro** (2 meses, de 1 de novembro de 2024 a 1 de janeiro de 2025) é perdido.
+> A partir de 1 de novembro de 2024, a subscrição **Perso** é diretamente faturada ao preço em vigor (mesmo que tenha pago os 2 meses restantes da oferta **Pro*).
 
 Siga [estas instruções](#modify) para realizar a sua alteração de oferta.
 
