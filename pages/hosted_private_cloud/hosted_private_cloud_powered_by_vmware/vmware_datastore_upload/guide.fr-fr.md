@@ -294,21 +294,20 @@ Voici les variables d'environnement qui seront nécessaire pour la configuration
 >> # Set env variables with Set-item :
 >> Set-Item -Path env:GOVC_URL -Value “https://pcc-XX-XX-XX-XX.ovh.xx"
 >> 
->> # Set env variables for your vCenter, just push Enter :
+>> # Set env variables for your vCenter, just push "Enter" :
 >> $vcenter = "<your_vcenter_fqdn>"
 >> $cred = get-credential
 >> 
 >> # Credentials configuration :
 >> New-VICredentialStoreItem -Host $vcenter -User $cred.username -Password $cred.GetNetworkCredential().password
 >> 
->> # Set env variables, just push enter :
->> $env:GOVC_URL="https://"+$vcenter
->> $env:GOVC_USERNAME=(Get-VICredentialStoreItem $vcenter).User
->> $env:GOVC_PASSWORD=(Get-VICredentialStoreItem $vcenter).Password
->> $env:GOVC_INSECURE="true"
+>> # Set env variables, just push "Enter" :
+>> $env:GOVC_URL="https://"<pcc-XX-XX-XX-XX.ovh.xx>"
+>> $env:GOVC_USERNAME="<uname>"
+>> $env:GOVC_PASSWORD="<p4sswor_DXXXXXx>"
 >> $env:GOVC_DATASTORE="<datastore_name>"
 >> $env:GOVC_NETWORK="<portgroup_name>"
->> $env:GOVC_RESOURCE_POOL='*/Resources'
+>> $env:GOVC_RESOURCE_POOL="<ovhServer>"
 >> 
 >> # Check GOVC variables :
 >> ls env:GOVC*
