@@ -57,7 +57,7 @@ The versions installed depends on the Kubernetes version:
 
 ## CCM (Cloud-controller-manager)
 
-Our cloud-controller-manager (CCM) are based on the openstack cloud-controller-manager (OpenstackCCM) available in the [Cloud provider openstack](https://github.com/kubernetes/cloud-provider-openstack) repository.
+Our cloud-controller-manager (CCM) components are based on the openstack cloud-controller-manager (OpenstackCCM) available in the [Cloud provider openstack](https://github.com/kubernetes/cloud-provider-openstack) repository.
 
 * `1.26`: OVH IOLB CCM based on OpenstackCCM 1.18, OVH Octavia CCM based on OpenstackCCM 1.29
 * `1.27`: OVH IOLB CCM based on OpenstackCCM 1.18, OVH Octavia CCM based on OpenstackCCM 1.29
