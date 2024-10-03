@@ -267,8 +267,6 @@ Voici les variables d'environnement qui seront nécessaire pour la configuration
 >> curl -L -o - "https://github.com/vmware/govmomi/releases/latest/download/govc_$(uname -s)_$(uname -m).tar.gz" | tar -C /usr/local/bin -xvzf - govc
 >> ``` 
 >> Si vous préférez, vous pouvez simplement lancer la decompression`Zip` de l'asset `Govc` Windows suivant (x86_64.zip) : https://github.com/vmware/govmomi/releases/download/v0.43.0/govc_Windows_x86_64.zip
->>
->> Faite bien attention à bien extraire le binaire à la racine du dossier sur lequel vous souhaitez exécuter le binaire. 
 >> 
 >> Avec Chocolatey :
 >> 
