@@ -37,6 +37,11 @@ Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Ter uma zona DNS na Área de Cliente OVHcloud.
 - Dispor de direitos suficientes sobre a zona DNS a eliminar. Encontre mais informações no nosso guia "[Gerir os contactos dos seus serviços](/pages/account_and_service_management/account_information/managing_contacts)".
 
+> [!primary]
+>
+> Eliminar uma zona DNS não elimina o registo do nome de domínio ao qual está associada. Desta forma, não perderá o seu domínio ao eliminar uma zona DNS associada a este último.
+>
+
 ## Instruções
 
 > [!warning]
