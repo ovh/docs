@@ -1,6 +1,6 @@
 ---
-title: "Téléverser des fichiers dans un datastore"
-excerpt: "Découvrez comment utiliser le client html de téléversement du datastore et avec govc afin de manipuler des données dans votre environnement VMware vSphere on OVHcloud managé"
+title: "Téléverser un ISO dans un datastore"
+excerpt: "Découvrez comment utiliser le client html de téléversement du datastore et Govc afin de manipuler des données dans votre environnement VMware vSphere on OVHcloud managé"
 updated: 2024-10-03
 ---
 
