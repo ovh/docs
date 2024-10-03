@@ -8,6 +8,8 @@ updated: 2024-09-23
 
 **Ce guide explique comment sécuriser votre compte OVHcloud, gérer les identités, structurer vos projets Public Cloud et utiliser les politiques IAM pour restreindre les droits d'accès.**
 
+Cela peut être utile si vous faites partie d'une équipe plateforme et que votre objectif est de construire une Landing Zone pour votre organisation.
+
 ## Prérequis
 
 - Un compte OVHcloud actif
