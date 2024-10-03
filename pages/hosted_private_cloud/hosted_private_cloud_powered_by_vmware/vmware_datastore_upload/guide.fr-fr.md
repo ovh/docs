@@ -21,7 +21,7 @@ updated: 2024-10-03
 > Ce guide remplace la méthode SFTP, devenue obsolète : [Se connecter en SFTP](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/sftp_connexion).
 >
 
-### Étape 1 - Téléverser depuis le client HTML
+### Étape 1 - Téléverser avec le client HTML
 
 #### Accéder au datastore
 
@@ -119,7 +119,7 @@ Nommez votre dossier et cliquez sur `OK`{.action}.
 
 ![Datastore Upload - Create a folder](images/datastore_4.png){.thumbnail}
 
-### Étape 2 - Téléversement avec Govc
+### Étape 2 - Téléverser avec Govc
 
 Une bibliothèque Go pour interagir avec les API VMware vSphere (ESXi et/ou vCenter Server) est fournis par VMware. Vous pouvez consulter le `READ ME` du dépot Github à cette [url](https://github.com/vmware/govmomi?tab=readme-ov-file)
 
