@@ -1,7 +1,7 @@
 ---
 title: "Getting started with OVHcloud Key Management Service (KMS)"
 excerpt: "Discover the steps you need to take to set up your first Key Management Service (KMS), create a key, and access it"
-updated: 2024-09-13
+updated: 2024-10-03
 ---
 
 > [!warning]
@@ -263,6 +263,8 @@ Communication with the KMS, except for the key creation, is only available via A
 Since the KMS is regionalized, you can access the API directly in its region: <https://my-region.ovh.com.net>
 
 For example, for a KMS created in the **eu-west-rbx** region: <https://eu-west-rbx.okms.ovh.net>
+
+It's also possible to use the Golang SDK with the documentation available here : <https://pkg.go.dev/github.com/ovh/okms-sdk-go>
 
 #### Creating an encryption key via API
 
