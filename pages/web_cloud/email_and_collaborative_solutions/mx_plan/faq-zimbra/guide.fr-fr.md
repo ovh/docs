@@ -20,6 +20,11 @@ Zimbra propose de nombreuses fonctionnalités qui seront prochainement proposée
 
 Zimbra propose les mêmes fonctionnalités et une ergonomie proche de OWA. Un guide d'utilisation de Zimbra est disponible à [cette adresse](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra).
 
+### Comment puis-je configurer mon adresse e-mail sur un logiciel de messagerie ?
+
+Pour configurer votre adresse e-mail Zimbra sur votre logiciel de messagerie, consultez notre page
+« [Configurer son adresse e-mail Zimbra sur un logiciel de messagerie](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_mail_apps) ».
+
 ### La migration ouvre-t-elle de nouvelles fonctionnalités ?
 
 La migration vers le nouveau webmail maintient le même niveau de services que le précédent.

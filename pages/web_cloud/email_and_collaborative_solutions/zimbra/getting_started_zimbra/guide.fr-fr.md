@@ -1,7 +1,7 @@
 ---
 title: "Premiers pas avec l'offre Zimbra"
 excerpt: "Découvrez comment débuter avec votre offre Zimbra depuis votre espace client OVHcloud"
-updated: 2024-09-10
+updated: 2024-10-03
 ---
 
 <style>
@@ -42,7 +42,7 @@ Pour accéder à votre service Zimbra , connectez-vous à votre [espace client O
 
 Avant de débuter la configuration de vos comptes e-mail Zimbra, prenez connaissance des trois éléments qui structurent hiérarchiquement votre service Zimbra :
 
-- [**Organisation**](#organizations) : elle permet de regrouper les noms de domaine afin de les associer. **Il n'est pas nécessaire de créer une organisation pour pouvoir créer un compte e-mail**.
+- [**Organisation**](#organizations) : elle permet de regrouper les noms de domaine afin de les associer.
 - [**Nom de domaine**](#domains) : il est indispensable pour créer un compte e-mail. Vous devez en gérer au moins un depuis votre espace client OVHcloud et l'ajouter sur votre service Zimbra.
 - [**Comptes e-mail**](#emails) : en utilisant les noms de domaines ajoutés à votre service Zimbra, vous pourrez créer une adresse e-mail.
 
@@ -52,7 +52,7 @@ Le schéma ci-dessous résume le lien hiérarchique entre les éléments précé
 
 ### Organisations <a name="organizations"></a>
 
-Si vous ajoutez un grand nombre de noms de domaine sur votre service Zimbra, il peut être utile de les regrouper en les associant à une « oraganisation ». Depuis votre service Zimbra, cliquez sur `Organisation`{.action}.
+Si vous ajoutez un grand nombre de noms de domaine sur votre service Zimbra, il peut être utile de les regrouper en les associant à une « organisation ». Depuis votre service Zimbra, cliquez sur `Organisation`{.action}.
 
 #### Créer une organisation
 
@@ -75,7 +75,7 @@ Vous retrouvez dans cet onglet l'ensemble des noms de domaine ajoutés à votre 
 Le tableau des noms de domaine vous donne deux informations :
 
 - **Organisation** : elle est déterminée lorsque vous ajoutez votre nom de domaine, vous retrouverez automatiquement son label dans cette colonne.
-- **Nombre de comptes** : Vvus retrouvez ici tous les comptes qui ont été créés sous le nom de domaine concerné.
+- **Nombre de comptes** : Vous retrouvez ici tous les comptes qui ont été créés sous le nom de domaine concerné.
 
 #### Ajouter un nom de domaine
 
@@ -119,13 +119,24 @@ Complétez les informations qui s'affichent.
 >
 > Le choix du mot de passe doit respecter les conditions suivantes :
 >
-> - Minimum 9 caractères
-> - Maximum 30 caractères
+> - Minimum 10 caractères
+> - Maximum 64 caractères
+> - Minimum 1 majuscule
+> - Minimum 1 caractère spécial
 > - Aucun caractère accentué
 
 Cliquez sur `Confirmer`{.action} pour lancer la création du compte.
 
+### Consulter son compte e-mail <a name="mail-consult"></a>
+
+Pour consulter votre compte e-mail :
+
+- Connectez-vous au [webmail](/links/web/email) depuis un navigateur internet en saisissant votre adresse e-mail et votre mot de passe. Pour plus de détails consultez, notre page [Utiliser le webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)
+- Configurez un logiciel de messagerie sur votre ordinateur, votre smartphone ou votre tablette. Consultez notre page [Configurer son adresse e-mail Zimbra sur un logiciel de messagerie](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_mail_apps)
+
 ## Aller plus loin <a name="go-further"></a>
+
+[Configurer son adresse e-mail Zimbra sur un logiciel de messagerie](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_mail_apps)
 
 [Utiliser le webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)
 
