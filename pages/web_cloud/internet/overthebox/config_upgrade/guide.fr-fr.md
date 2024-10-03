@@ -1,7 +1,7 @@
 ---
 title: 'Comment mettre à jour un appareil OverTheBox'
 excerpt: 'Découvrez comment mettre à jour votre appareil OverTheBox'
-updated: 2024-09-04
+updated: 2024-10-03
 ---
 
 ## Objectif
@@ -74,7 +74,7 @@ Par défaut, un appareil OverTheBox est sur le canal `stable` qui contient la de
 D'autre canaux sont disponibles :
 
 - Le canal `beta` permet de tester la prochaine version du logiciel avant le déploiment sur le canal `stable`.
-- Les canaux de versions, comme `v0.8`, `v0.9`, permettent de maintenir votre matériel sur une version majeure précise. Seules des mises à jour mineures, telles que des correctifs, seront proposées.
+- Les canaux de versions, comme `v0.9`, `v1.0`, permettent de maintenir votre matériel sur une version majeure précise. Seules des mises à jour mineures, telles que des correctifs, seront proposées.
 
 Connectez-vous à votre [espace client OVHcloud](/links/manager), partie `Telecom`{.action}.
 
@@ -119,9 +119,9 @@ L'ensemble des modifications est consultable ici :
 | ---  | :---: | :---: | :---: | :---: | ---: |
 | v0.8 | v0.8.1 | 19.07.10 | 4.14.276 | v0.94 | nuc, ITv1, rpi3, v2b, v2c |
 | v0.9 | v0.9.5 | 21.02.5 | 5.4.217 | v0.96 | v2b, v2c |
-| v1.0 | v1.0.1 | 23.05.2 | 5.15.137 | v1 | v3, v2b, v2c |
+| v1.0 | v1.0.2 | 23.05.2 | 5.15.137 | v1 | v3lte, v3, v2b, v2c |
 | stable | v0.9.5 | 21.02.5 | 5.4.217 | v0.96 | v2b, v2c |
-| beta | v1.0.1 | 23.05.2 | 5.15.137 | v1 | v3, v2b, v2c |
+| beta | v1.0.2 | 23.05.2 | 5.15.137 | v1 | v3lte, v3, v2b, v2c |
 
 ### Installer manuellement une image
 
