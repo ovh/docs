@@ -33,6 +33,11 @@ For example, you may need to delete a DNS zone for your domain name at OVHcloud 
 - You have a DNS zone in your OVHcloud Control Panel.
 - You have sufficient rights on the DNS zone to be deleted. You can find more information in our guide “[Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts)”.
 
+> [!primary]
+>
+> Deleting a DNS zone doesn't delete the record of the domain name associated with it. You will not lose your domain name by deleting a DNS zone associated with it.
+>
+
 ## Instructions
 
 > [!warning]
