@@ -1574,6 +1574,7 @@
             + [Getting started on Zimbra](web_cloud/email_and_collaborative_solutions/zimbra/getting_started_zimbra)
             + [Using Zimbra webmail](web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)
             + [FAQ sur la solution Zimbra OVHcloud](web_cloud/email_and_collaborative_solutions/mx_plan/faq-zimbra)
+            + [Configurer son adresse e-mail Zimbra sur un logiciel de messagerie](web_cloud/email_and_collaborative_solutions/zimbra/zimbra_mail_apps)
     + [Internet](products/web-cloud-internet)
         + [Internet access](products/web-cloud-internet-internet-access)
             + [Getting started](web-cloud-internet-internet-access-getting-started)
