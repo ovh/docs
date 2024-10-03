@@ -65,14 +65,14 @@ network:
     ethernets: 
         ens22f0np0:
             match: 
-                macaddress: e8:eb:d3:f1:af:c8
+                macaddress: a1:b2:c3:d4:e5:c6
         ens22f1np1:
             match: 
-                macaddress: e8:eb:d3:f1:af:c9
+                macaddress: a1:b2:c3:d4:e5:c7
     bonds: 
         bond0:
             # MAC address of the server's main interface
-            macaddress: e8:eb:d3:f1:af:c8
+            macaddress: a1:b2:c3:d4:e5:c6
             accept-ra: false
             addresses: 
                 - 141.94.154.196/32
@@ -114,14 +114,14 @@ network:
     ethernets: 
         ens22f0np0:
             match: 
-                macaddress: e8:eb:d3:f1:af:c8
+                macaddress: a1:b2:c3:d4:e5:c6
         ens22f1np1:
             match: 
-                macaddress: e8:eb:d3:f1:af:c9
+                macaddress: a1:b2:c3:d4:e5:c7
     bonds: 
         bond0:
             # MAC address of the server's main interface
-            macaddress: e8:eb:d3:f1:af:c8
+            macaddress: a1:b2:c3:d4:e5:c6
             accept-ra: false
             dhcp4: true
             addresses: 
