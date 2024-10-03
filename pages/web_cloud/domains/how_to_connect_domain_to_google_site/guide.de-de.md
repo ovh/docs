@@ -1,7 +1,7 @@
 ---
 title: "Verbinden eines OVHcloud Domainnamens mit einem Google Site"
 excerpt: "Erfahren Sie hier, wie Sie die DNS-Zone Ihres OVHcloud Domainnamens konfigurieren, um sie mit einem Google Site zu verwenden"
-updated: 2024-10-01
+updated: 2024-10-03
 ---
 
 > [!primary]
