@@ -203,6 +203,7 @@
             + [Configuring the network on Proxmox VE](bare_metal_cloud/dedicated_servers/proxmox-network-HG-Scale)
             + [Configuring the network on ESXi on the High Grade & SCALE ranges](bare_metal_cloud/dedicated_servers/esxi-network-HG-Scale)
             + [Configuring OVHcloud Link Aggregation in the OVHcloud Control Panel](bare_metal_cloud/dedicated_servers/ola-enable-manager)
+            + [How to Configure Your NIC for OVHcloud Link Aggregation in Debian 12 (Netplan)](bare_metal_cloud/dedicated_servers/ola-enable-debian12-netplan)
             + [How to Configure Your NIC for OVHcloud Link Aggregation in Debian 9](bare_metal_cloud/dedicated_servers/ola-enable-debian9)
             + [How to Configure Your NIC for OVHcloud Link Aggregation in CentOS 7](bare_metal_cloud/dedicated_servers/ola-enable-centos7)
             + [How to Configure Your NIC for OVHcloud Link Aggregation in Windows Server 2019](bare_metal_cloud/dedicated_servers/ola-enable-w2k19)
