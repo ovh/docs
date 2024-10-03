@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - Migration depuis VMware vSphere on OVHcloud"
 excerpt: "Découvrez comment vous préparer à migrer depuis VMware vSphere on OVHcloud vers une offre basée sur un environnement VMware Cloud Director (VCD) on OVHcloud"
-updated: 2024-09-27
+updated: 2024-10-03
 ---
 
 > [!primary]
@@ -42,9 +42,9 @@ Pour rappel, si vous décidez de passer à l’offre VCD, les nouveaux tarifs ne
 
 > [!primary]
 > 
-> La migration de vos environnements actuels VMware vSphere on OVHcloud peut être réalisée dès réception de votre demande. Vous devrez faire votre demande par le biais d'un [ticket au support](https://help.ovhcloud.com/csm?id=csm_get_help).
+> La migration de vos environnements actuels VMware vSphere on OVHcloud peut être réalisée dès réception de votre demande effectuée par via un [ticket auprès du support](https://help.ovhcloud.com/csm?id=csm_get_help).
 >
-> **Important** : Les termes et conditions particulières (C&P) disponibles depuis début septembre 2024 dans l'espace client doivent être signées pour que la migration soit réalisée par les équipes OVHcloud.
+> **Important** : Les termes et conditions particulières (C&P) disponibles depuis début septembre 2024 dans l'espace client doivent être signés pour que la migration soit réalisée par les équipes OVHcloud.
 >
 
 Nous vous invitons à revoir la démonstration du produit et le webinaire pour vous familiariser avec cette nouvelle offre.
@@ -117,7 +117,7 @@ Le tableau ci-dessous vous présente chacun des cas particuliers et des points b
 
 Voici un rappel des tâches qu'il vous reste à mener, une fois la migration effectuée (si vous êtes dans les cas d'usages suivants).
 
-#### Post action (seulement pour cas d'usage spécifique)
+#### Post action (seulement pour les cas d'usage spécifiques)
 
 | **Post<br/>actions** | **Cas d'usages**                             | **Objectifs**                                                                                                                                                          | **Aides et références**                                                                                                                                                                                                                                                                                                           |
 |:---------------:|:---------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

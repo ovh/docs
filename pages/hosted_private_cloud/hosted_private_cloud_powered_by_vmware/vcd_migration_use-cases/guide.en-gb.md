@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - Migrate from VMware vSphere on OVHcloud"
 excerpt: "Find out how to prepare a migration from managed VMware vSphere on OVHcloud to a solution based on a managed VMware Cloud Director (VCD) on OVHcloud environnement"
-updated: 2024-09-25
+updated: 2024-10-03
 ---
 
 > [!primary]
@@ -42,7 +42,7 @@ As a reminder, if you decide to switch to the managed VCD on OVHcloud offer, the
 
 > [!primary]
 >
-> You can migrate your current VMware vSphere on OVHcloud environments as soon as you receive your request. You will need to submit your request via a [support ticket](https://help.ovhcloud.com/csm?id=csm_get_help).
+> You can migrate your current VMware vSphere on OVHcloud environments as soon as you submit a request to migrate via a [support ticket](https://help.ovhcloud.com/csm?id=csm_get_help).
 >
 > **Important**: The Particular Terms and Conditions (C&P) available since the beginning of September 2024 in the OVHcloud Control Panel must be signed for the migration to be carried out by the OVHcloud teams.
 >
@@ -117,7 +117,7 @@ The table below lists each individual blocking use cases, bottlenecks, and the c
 
 Here is a reminder of the tasks you still need to carry out, once the migration is complete (if you have the following uses).
 
-#### Post action (only for specific used cases)
+#### Post action (only for specific use cases)
 
 | **Post<br/>actions** | **Use cases**                                       | **Goals**                                                                                                                                                  | **Help and references**                                                                                                                                                                                                                                                                                   |
 |:---------------:|:----------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
