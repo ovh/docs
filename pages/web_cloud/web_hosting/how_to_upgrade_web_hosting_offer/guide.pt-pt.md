@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web: como fazer evoluir a sua oferta?"
 excerpt: "Saiba como alterar a forma de subscrição do seu plano de alojamento web da OVHcloud"
-updated: 2023-09-19
+updated: 2024-10-03
 ---
 
 > [!primary]
@@ -174,12 +174,12 @@ Este cálculo corresponde à diferença de preço entre a sua oferta inicial e a
 
 > **Exemplo:**<br>
 >
-> Subscreveu a subscrição [Perso](/links/web/hosting-personal-offer) em 1 de janeiro de 2022.
+> Subscreveu a subscrição [Perso](/links/web/hosting-personal-offer) em 1 de janeiro de 2024.
 >
-> Em 31 de outubro de 2022, a renovação desta oferta **Perso** passa para uma subscrição da oferta [Pro](/links/web/hosting-professional-offer).<br>
+> Em 31 de outubro de 2024, a renovação desta oferta **Perso** passa para uma subscrição da oferta [Pro](/links/web/hosting-professional-offer).<br>
 >
-> Por conseguinte, o montante correspondente à duração restante da subscrição **Perso** (2 meses, de 1 de novembro de 2022 a 1 de janeiro de 2023) é automaticamente subtraído do custo da nova subscrição **Pro* até 1 de janeiro de 2023. Você só pagará a diferença.
-> A partir de 1 de janeiro de 2023, a subscrição **Pro** é faturada ao preço atual.
+> Por conseguinte, o montante correspondente à duração restante da subscrição **Perso** (2 meses, de 1 de novembro de 2024 a 1 de janeiro de 2025) é automaticamente subtraído do custo da nova subscrição **Pro* até 1 de janeiro de 2025. Você só pagará a diferença.
+> A partir de 1 de janeiro de 2025, a subscrição **Pro** é faturada ao preço atual.
 
 Siga [estas instruções](#modify) para realizar a sua alteração de oferta.
 

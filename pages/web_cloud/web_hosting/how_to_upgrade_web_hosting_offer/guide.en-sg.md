@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting: How to change your solution?"
 excerpt: "Find out how to change the subscription offer for your OVHcloud Web Hosting"
-updated: 2023-09-19
+updated: 2024-10-03
 ---
 
 ## Objective
@@ -78,12 +78,12 @@ This calculation is the price difference between your original plan and your new
 
 > **Example:**<br>
 >
-> You have subscribed to a [Personal](/links/web/hosting-personal-offer) subscription on 1 January 2022.
+> You have subscribed to a [Personal](/links/web/hosting-personal-offer) subscription on 1 January 2024.
 >
-> On October 31, 2022, you upgrade this **Personal** plan to the [Pro](/links/web/hosting-professional-offer) plan.<br>
+> On October 31, 2024, you upgrade this **Personal** plan to the [Pro](/links/web/hosting-professional-offer) plan.<br>
 >
-> Therefore, the amount corresponding to the remaining duration on the **Personal** subscription (2 months, from 01 November 2022 to 01 January 2023) is automatically deducted from the cost of the new **Pro** subscription, until 01 January 2023. You will only pay the difference.
-> From 01 January 2023, the **Pro** subscription will then be billed at its current price.
+> Therefore, the amount corresponding to the remaining duration on the **Personal** subscription (2 months, from 01 November 2024 to 01 January 2025) is automatically deducted from the cost of the new **Pro** subscription, until 01 January 2025. You will only pay the difference.
+> From 01 January 2025, the **Pro** subscription will then be billed at its current price.
 
 Follow [these instructions](#modify) to change your solution.
 

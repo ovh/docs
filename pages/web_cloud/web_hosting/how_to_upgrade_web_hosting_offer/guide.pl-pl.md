@@ -1,7 +1,7 @@
 ---
 title: "Hosting: jak zmienić ofertę?"
 excerpt: "Dowiedz się, jak zmienić formułę abonamentu na hosting OVHcloud"
-updated: 2023-09-19
+updated: 2024-10-03
 ---
 
 > [!primary]
@@ -174,12 +174,12 @@ Obliczenie to stanowi różnicę w cenie między Twoją ofertą początkową a n
 
 > **Przykład:**<br>
 >
-> Zamówiłeś abonament [Perso](/links/web/hosting-personal-offer) od 1 stycznia 2022.
+> Zamówiłeś abonament [Perso](/links/web/hosting-personal-offer) od 1 stycznia 2024.
 >
-> 31 października 2022 zmienisz abonament z tej oferty **Perso** na ofertę [Pro](/links/web/hosting-professional-offer).<br>
+> 31 października 2024 zmienisz abonament z tej oferty **Perso** na ofertę [Pro](/links/web/hosting-professional-offer).<br>
 >
-> W związku z tym kwota za pozostały okres abonamentu **Perso** (2 miesiące, od 1 listopada 2022 do 1 stycznia 2023) jest automatycznie odliczana od kosztu nowego abonamentu **Pro**, do 1 stycznia 2023. Zapłacisz tylko za różnicę.
-> Od dnia 1 stycznia 2023 r. abonament **Pro** będzie fakturowany zgodnie z obowiązującym cennikiem.
+> W związku z tym kwota za pozostały okres abonamentu **Perso** (2 miesiące, od 1 listopada 2024 do 1 stycznia 2025) jest automatycznie odliczana od kosztu nowego abonamentu **Pro**, do 1 stycznia 2025. Zapłacisz tylko za różnicę.
+> Od dnia 1 stycznia 2025 r. abonament **Pro** będzie fakturowany zgodnie z obowiązującym cennikiem.
 
 Postępuj zgodnie z [tymi instrukcjami](#modify), aby zmienić ofertę.
 

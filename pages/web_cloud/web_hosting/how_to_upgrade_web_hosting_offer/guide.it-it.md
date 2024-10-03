@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web: come far evolvere la tua offerta?"
 excerpt: "Questa guida ti mostra come modificare il piano di abbonamento di un hosting Web OVHcloud"
-updated: 2023-09-19
+updated: 2024-10-03
 ---
 
 > [!primary]
@@ -174,12 +174,12 @@ Questo calcolo corrisponde alla differenza di prezzo tra il piano iniziale e il 
 
 > **Esempio:**<br>
 >
-> Hai sottoscritto un abbonamento [Personale](/links/web/hosting-personal-offer) il 1° gennaio 2022.
+> Hai sottoscritto un abbonamento [Personale](/links/web/hosting-personal-offer) il 1° gennaio 2024.
 >
-> Il 31 ottobre 2022, passerai da questa offerta **Personale** a un abbonamento sull'offerta [Pro](/links/web/hosting-professional-offer).<br>
+> Il 31 ottobre 2024, passerai da questa offerta **Personale** a un abbonamento sull'offerta [Pro](/links/web/hosting-professional-offer).<br>
 >
-> Di conseguenza, l'importo corrispondente alla durata residua dell'abbonamento **Personale** (2 mesi, dal 1° novembre 2022 al 1° gennaio 2023) viene automaticamente sottratto dal costo del nuovo abbonamento **Pro**, fino al 1° gennaio 2023. Pagherete solo la differenza.
-> A partire dal 1° gennaio 2023, ti sarà fatturato l'abbonamento **Pro** alla tariffa in vigore.
+> Di conseguenza, l'importo corrispondente alla durata residua dell'abbonamento **Personale** (2 mesi, dal 1° novembre 2024 al 1° gennaio 2025) viene automaticamente sottratto dal costo del nuovo abbonamento **Pro**, fino al 1° gennaio 2025. Pagherete solo la differenza.
+> A partire dal 1° gennaio 2025, ti sarà fatturato l'abbonamento **Pro** alla tariffa in vigore.
 
 Segui [queste istruzioni](#modify) per modificare l’offerta.
 

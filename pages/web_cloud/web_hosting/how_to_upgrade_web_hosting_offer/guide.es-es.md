@@ -1,7 +1,7 @@
 ---
 title: "Web hosting: ¿Cómo mejorar su solución?"
 excerpt: "Descubra cómo modificar la fórmula de suscripción de un plan de hosting de OVHcloud"
-updated: 2023-09-19
+updated: 2024-10-03
 ---
 
 > [!primary]
@@ -174,12 +174,12 @@ Este cálculo corresponde a la diferencia de precio entre su oferta inicial y su
 
 > **Ejemplo:**<br>
 >
-> Ha contratado una suscripción [Personal](/links/web/hosting-personal-offer) el 1 de enero de 2022.
+> Ha contratado una suscripción [Personal](/links/web/hosting-personal-offer) el 1 de enero de 2024.
 >
-> El 31 de octubre de 2022, cambiará de esta oferta **Perso** a una suscripción en el plan [Pro](/links/web/hosting-professional-offer).<br>
+> El 31 de octubre de 2024, cambiará de esta oferta **Perso** a una suscripción en el plan [Pro](/links/web/hosting-professional-offer).<br>
 >
-> Por lo tanto, el importe correspondiente al período restante de la suscripción **Perso** (2 meses, del 1 de noviembre de 2022 al 1 de enero de 2023) se restará automáticamente del coste de la nueva suscripción **Pro**, hasta el 1 de enero de 2023. Solo pagará la diferencia.
-> A partir del 1 de enero de 2023, la suscripción **Pro** se facturará al precio vigente.
+> Por lo tanto, el importe correspondiente al período restante de la suscripción **Perso** (2 meses, del 1 de noviembre de 2024 al 1 de enero de 2025) se restará automáticamente del coste de la nueva suscripción **Pro**, hasta el 1 de enero de 2025. Solo pagará la diferencia.
+> A partir del 1 de enero de 2025, la suscripción **Pro** se facturará al precio vigente.
 
 Siga [estas instrucciones](#modify) para realizar el cambio de producto.
 
