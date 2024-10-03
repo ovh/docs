@@ -263,6 +263,8 @@ Voici les variables d'environnement qui seront nécessaire pour la configuration
 >>
 >> Depuis 2017 `Curl` et `bsdtar -> tar` sont installé par défaut, vous pouvez donc exécuter la commande ci-dessous avec `Powershell`, `CMD` ou le prompt que vous préférez. 
 >>
+>> Avec Powershell :
+>> 
 >> ```powershell
 >> curl -L -o - "https://github.com/vmware/govmomi/releases/latest/download/govc_$(uname -s)_$(uname -m).tar.gz" | tar -C /usr/local/bin -xvzf - govc
 >> ``` 
@@ -280,9 +282,11 @@ Voici les variables d'environnement qui seront nécessaire pour la configuration
 >> `jq` permet de lister correctement dans Powershell les retours Govc.
 >> 
 >> **Configuration/Authentification**
->>  
->> Il y a plusieurs façons de configurer des variables d'environnements avec Windows et Powershell, voici quelques exemples :
->> 
+>>
+>> Avec Powershell :
+>>
+>> Il y a plusieurs façons de configurer des variables d'environnements avec Windows et Powershell, voici quelques exemples (voir les commentaires pour chaque commande et variable powershell).
+>>
 >> ```powershell
 >> # Set env variables with Set-item :
 >> Set-Item -Path env:GOVC_URL -Value “https://pcc-XX-XX-XX-XX.ovh.xx"
@@ -313,10 +317,11 @@ Voici les variables d'environnement qui seront nécessaire pour la configuration
 >> # With jq :
 >> govc about -json | jq '.'
 >> ```
->> 
+>> Il y a plusieurs façons de faire fonctionner Govc avec Windows, powershell étant la plus connue. Depuis Windows a mis en place WSL 2 (Windows subsystem for Linux) qui peut être une bonne alternative pour simplifier la configuration.
+>>
 >> **Usage**
 >> 
->> **Téléversement**
+>> Téléversement :
 >>
 >> Pour téléverser un iso avec powershell et Govc, lancez l'argument `Govc datastore.upload`
 >> 
@@ -324,7 +329,7 @@ Voici les variables d'environnement qui seront nécessaire pour la configuration
 >> govc datastore.upload - dossier-iso/image.iso
 >> ```
 >> 
->> **Téléchargement + téléversement** 
+>> Téléchargement + téléversement :
 >> 
 >> ```powershell
 >> curl https://example.com/iso/image.iso | govc datastore.upload - dossier-isos/image.iso
