@@ -1,7 +1,7 @@
 ---
 title: Kubernetes Plugins (CNI, CRI, CSI...) & softwares versions and reserved resources
 excerpt: ''
-updated: 2024-10-02
+updated: 2024-10-03
 ---
 
 We list here some details on the Control Panel, the plugins (CNI, CRI, CSI...) & software versions we use and the resources we reserve on each Node.
@@ -57,7 +57,7 @@ The versions installed depends on the Kubernetes version:
 
 ## CCM (Cloud-controller-manager)
 
-Our cloud-controller-manager (CCM) are based on the openstack cloud-controller-manager (OpenstackCCM) available in the [Cloud provider openstack](https://github.com/kubernetes/cloud-provider-openstack) repository.
+Our cloud-controller-manager (CCM) are based on the OpenStack cloud-controller-manager (OpenstackCCM) available in the [Cloud provider openstack](https://github.com/kubernetes/cloud-provider-openstack) repository.
 
 * `1.26`: OVH IOLB CCM based on OpenstackCCM 1.18, OVH Octavia CCM based on OpenstackCCM 1.29
 * `1.27`: OVH IOLB CCM based on OpenstackCCM 1.18, OVH Octavia CCM based on OpenstackCCM 1.29
