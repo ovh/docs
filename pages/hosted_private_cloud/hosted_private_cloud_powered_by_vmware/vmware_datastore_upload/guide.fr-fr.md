@@ -268,11 +268,13 @@ Voici les variables d'environnement qui seront nécessaire pour la configuration
 >>
 >> Avec Powershell :
 >> 
+>> Vous pouvez installer le binaire Govc avec Powershell en lançant la commande ci-dessous :
+>>
 >> ```powershell
 >> curl -L -o - "https://github.com/vmware/govmomi/releases/latest/download/govc_$(uname -s)_$(uname -m).tar.gz" | tar -C /usr/local/bin -xvzf - govc
 >> ``` 
->> Si vous préférez, vous pouvez simplement lancer la decompression`Zip` de l'asset `Govc` Windows suivant (x86_64.zip) : https://github.com/vmware/govmomi/releases/download/v0.43.0/govc_Windows_x86_64.zip
->> 
+>> Si vous préférez, vous pouvez simplement lancer la decompression du`Zip` de l'asset `Govc` Windows suivant (x86_64.zip) après l'avoir téléchargé à l'url suivante : https://github.com/vmware/govmomi/releases/download/v0.43.0/govc_Windows_x86_64.zip
+>>
 >> Avec Chocolatey :
 >> 
 >> Vous pouvez utiliser le dépot officiel Powershell Chocolatey, cependant nous vous recommandons la version la plus récente sur le dépot Github VMware (ci-dessus).
