@@ -6,7 +6,9 @@ updated: 2024-09-23
 
 ## Objective
 
-**This guide explains how to secure your OVHcloud account, manage identities, implement best practices for structuring your Public Cloud projects and use IAM policies to restrict access rights**
+**This guide explains how to secure your OVHcloud account, manage identities, implement best practices for structuring your Public Cloud projects and use IAM policies to restrict access rights.**
+
+This may be useful if you are part of a platform team and your goal is to build a Landing Zone for your organization.
 
 ## Requirements
 
