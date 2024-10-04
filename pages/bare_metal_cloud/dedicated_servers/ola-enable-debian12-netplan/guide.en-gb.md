@@ -158,7 +158,7 @@ If it is correct, apply it using the following command:
 sudo netplan apply
 ```
 
-This restart may take several minutes since it is building the bond interface.  To test that our bond is working, ping another server on the same vRack. If it works, you are all set. If it does not, double check your configurations or try rebooting the server.
+It may take several seconds for the bond interface to come up.
 
 ## Go further
 
