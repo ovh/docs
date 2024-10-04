@@ -47,13 +47,13 @@ Par exemple, si votre login FTP principal est `FTPLogin` et que vous souhaitez c
 Par exemple, si votre collaborateur a besoin d'accéder à l'ensemble de l'espace de stockage FTP de votre hébergement web, laisser ce formulaire vide. Dans le cas contraire, précisez le nom du répertoire dans lequel il sera autorisé à accéder (exemples : `www`, `blog`, `website1`, `www/development`, etc.).
 
 - *protocole de connexion* : permet de définir le ou les protocoles que l'utilisateur FTP pourra utiliser pour se connecter à l'espace de stockage FTP de votre hébergement web.
-Par exemple, si vous sélectionnez le troisième choix (les protocoles **FTP**,**SFTP** et **SSH**), l'utilisateur FTP aura la possibilité de se connecter avec les trois protocoles. Ainsi, votre collaborateur qui utilisera cet utilisateur FTP pourra, par exemple, choisir de se connecter en ligne de commande via le protocole **SSH** mais aussi gérer le contenu FTP à partir de ce même protocole.
+Par exemple, si vous sélectionnez le troisième choix (les protocoles **FTP**,**SFTP** et **SSH**), l'utilisateur FTP aura la possibilité de se connecter avec les trois protocoles. Ainsi, le collaborateur qui utilisera cet utilisateur FTP pourra, par exemple, choisir de se connecter en ligne de commande via le protocole **SSH** mais aussi gérer le contenu FTP à partir de ce même protocole.
 
 Une fois les paramètres définis, cliquez sur `Suivant`{.action} pour accder à l'étape 2 de la création du nouvel utilisateur FTP :
 
 ![FTP-SSH create user step 2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/create-user-step-2.png){.thumbnail}
 
-Lors de cette deuxième étape, vous devez uniquement définir le mot de passe du nouvel utilisateur FTP, puis confirmer celui-ci. Respectez la politique des mots de passe listée juste en dessous des deux formulaires pour passer à l'étape 3.
+Lors de cette deuxième étape, vous devez uniquement définir dans les 2 formulaires le mot de passe du nouvel utilisateur FTP, puis confirmer celui-ci. Respectez la politique des mots de passe listée juste en dessous des 2 formulaires pour passer à l'étape 3.
 
 Une fois votre mot de passe choisi et confirmé, cliquez sur `Suivant`{.action} pour accéder à l'étape 3 de la création du nouvel utilisateur FTP :
 
@@ -63,9 +63,9 @@ Cette dernière étape résume les paramètres choisis pour votre nouvel utilisa
 
 > [!primary]
 >
-> Une fois que vous avez validé la demande de création, la bonne prise en compte du nouvel utilisateur sur votre hébergement web peut prendre jusqu'à 15 minutes.
+> Une fois la demande de création validée, la bonne prise en compte du nouvel utilisateur sur votre hébergement web peut prendre jusqu'à 15 minutes.
 
-Si besoin, vous pourrez tester ce nouvel utilisateur FTP à l'aide de notre guide « [Se connecter à l’espace de stockage FTP de son hébergement web](/pages/web_cloud/web_hosting/ftp_connection) ».
+Si besoin, testez ce nouvel utilisateur FTP à l'aide de notre guide « [Se connecter à l’espace de stockage FTP de son hébergement web](/pages/web_cloud/web_hosting/ftp_connection) ».
 
 ### Modifier un utilisateur FTP
 
@@ -84,11 +84,11 @@ La fenêtre suivante apparaît :
 
 ![FTP-SSH edit user step 1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/modify-a-user-step1.png){.thumbnail}
 
-A l'exception du nom de l'utilisateur FTP et de son mot de passe associé, vous pouvez ici modifier le *dossier racine* et les *protocoles de connexion* activés pour l'utilisateur FTP. Si besoin, consultez la partie « [Créer un nouvel utilisateur FTP sur votre hébergement web](#create-ftp-user) » située plus haut dans ce guide pour plus d'informations sur le *dossier racine* et les *protocoles de connexion*.
+A l'exception du nom de l'utilisateur FTP et de son mot de passe associé, vous pouvez ici modifier le *dossier racine* et les *protocoles de connexion* définis pour l'utilisateur FTP. Si besoin, consultez la partie « [Créer un nouvel utilisateur FTP sur votre hébergement web](#create-ftp-user) » située plus haut dans ce guide pour plus d'informations sur le *dossier racine* et les *protocoles de connexion*.
 
 Par ailleurs, vous pouvez si nécessaire *désactiver l'utilisateur* en cochant la case prévue à cet effet. Cette option peut être très utile si vous souhaitez empêcher un collaborateur d'accéder à votre espace FTP sans supprimer les logs FTP et SSH qui lui sont associés. En effet, ces logs vous permettrons de déterminer quels ont été les opérations réalisées par votre collaborateur si vous constatez des interventions non désirées sur votre hébergement web.
 
-Une fois les modifications faites, cliquez sur `Suivant`{.action} pour accéder à l'étape 2, vérifier vos demandes de modifications lors de l'étape 2, puis cliquez sur `Valider`{.action} pour finaliser la demande de modification de l'utilisateur FTP sur votre hébergement web.
+Une fois les modifications faites, cliquez sur `Suivant`{.action} pour accéder à l'étape 2, vérifiez vos demandes de modifications lors de l'étape 2, puis cliquez sur `Valider`{.action} pour finaliser la demande de modification de l'utilisateur FTP sur votre hébergement web.
 
 > [!primary]
 >
