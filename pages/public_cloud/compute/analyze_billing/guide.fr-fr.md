@@ -1,7 +1,7 @@
 ---
 title: 'Informations concernant le mode de facturation Public Cloud'
 excerpt: 'Comprenez le mode de facturation des produits Public Cloud'
-updated: 2024-04-19
+updated: 2024-10-07
 ---
 
 ## Objectif
@@ -19,6 +19,9 @@ Ce fonctionnement ressemble à celui de certains opérateurs téléphoniques qui
 * Un [projet Public Cloud](https://www.ovhcloud.com/fr/public-cloud/){.external} dans votre compte OVHcloud
 * Une [instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps){.external}
 * Être connecté à l'[espace client OVHcloud](/links/manager){.external}
+
+> [!success]
+> Bénéficiez de prix réduits en vous engageant sur une période de 1 à 36 mois sur vos ressources Public Cloud. Plus d’informations sur notre page [Savings Plans](/links/public-cloud/savings-plan).
 
 ## Principe général
 

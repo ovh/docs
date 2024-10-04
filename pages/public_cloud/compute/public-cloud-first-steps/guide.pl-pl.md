@@ -1,7 +1,7 @@
 ---
 title: "Jak utworzyć instancję Public Cloud i się z nią połączyć"
 excerpt: "Dowiedz się, jak skonfigurować instancje Public Cloud w Panelu klienta OVHcloud oraz poznaj pierwsze kroki z instancjami"
-updated: 2024-08-21
+updated: 2024-10-07
 ---
 
 <style>
@@ -33,6 +33,9 @@ W zależności od Twoich potrzeb będziesz mógł skorzystać z Twojego projektu
 
 - [Projekt Public Cloud](/links/public-cloud/public-cloud) na koncie OVHcloud
 - Dostęp do [Panelu klienta OVHcloud](/links/manager)
+
+> [!success]
+> Skorzystaj z obniżonych cen, zobowiązując się do korzystania z zasobów Public Cloud przez okres od 1 do 36 miesięcy. Więcej informacji na stronie [Savings Plans](/links/public-cloud/savings-plan).
 
 ## W praktyce
 

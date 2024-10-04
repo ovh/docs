@@ -1,7 +1,7 @@
 ---
 title: 'Information regarding Public Cloud billing options'
 excerpt: 'Find out more about the different billing options for Public Cloud products'
-updated: 2024-04-19
+updated: 2024-10-07
 ---
 
 ## Objective
@@ -19,6 +19,9 @@ This system is similar to the one used by certain telephone operators, where the
 - A [Public Cloud project](https://www.ovhcloud.com/en/public-cloud/){.external} in your OVHcloud account
 - A [Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps){.external}
 - Access to the [OVHcloud Control Panel](/links/manager){.external}
+
+> [!success]
+> Take advantage of reduced prices by committing to a period of 1 to 36 months on your Public Cloud resources. More information on our [Savings Plans](/links/public-cloud/savings-plan) page.
 
 ## General design
 

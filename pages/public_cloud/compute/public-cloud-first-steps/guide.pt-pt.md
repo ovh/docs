@@ -1,7 +1,7 @@
 ---
 title: "Como criar uma instância Public Cloud e conectar-se a ela"
 excerpt: "Descubra como configurar instâncias Public Cloud na sua Área de Cliente OVHcloud, assim como os primeiros passos com as suas instâncias"
-updated: 2024-08-21
+updated: 2024-10-07
 ---
 
 <style>
@@ -33,6 +33,9 @@ Poderá depois ir mais longe com o seu projeto Public Cloud em função das suas
 
 - Um [projeto Public Cloud](/links/public-cloud/public-cloud) na sua conta OVHcloud
 - Acesso à [Área de Cliente OVHcloud](/links/manager)
+
+> [!success]
+> Tire partido de preços reduzidos comprometendo-se com um período de 1 a 36 meses nos seus recursos Public Cloud. Mais informações na nossa página [Savings Plans](/links/public-cloud/savings-plan).
 
 ## Instruções
 
