@@ -135,13 +135,13 @@ Backup is not set up by default following the VCD migration. You must subscribe 
 
 These settings can be customized to suit your chosen service levels:
 
-| **Repository**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |  **Target Offer**  | **Comments**                                                                          |
-|:---------------------------------------------|:------------------:|:--------------------------------------------------------------------------------------|
-| 🥉 `Bronze Repository (100 To)`              |     `Standard`     | - **Standard Object Storage**                                                         |
-| 🥈 `Silver Repository (100 To)`              |     `Advanced`     | - **Standard Object Storage** with off-site backup                                    |
-| 🥇 `Gold Repository (100 To)`                |     `Premium`      | - **High Performance Object Storage** with off-site backup and 14 immutability points |
+| **Repository**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |  **Target Offer**  | **Comments**                                                                          |
+|:---------------------------------------------------------|:------------------:|:--------------------------------------------------------------------------------------|
+| 🥉 `Bronze Repository (100 TB)`                          |     `Standard`     | - **Standard Object Storage**                                                         |
+| 🥈 `Silver Repository (100 TB)`                          |     `Advanced`     | - **Standard Object Storage** with off-site backup                                    |
+| 🥇 `Gold Repository (100 TB)`                            |     `Premium`      | - **High Performance Object Storage** with off-site backup and 14 immutability points |
 
-All these repositories have a storage quota of **100 To**. You can contact the [support](https://help.ovhcloud.com/csm?id=csm_get_help) teams to increase this quota.
+All these repositories have a storage quota of **100 TB**. You can contact the [support](https://help.ovhcloud.com/csm?id=csm_get_help) teams to increase this quota.
 
 For more information, please refer to our guide: [VMware Cloud Director - Veeam Data Platform backup](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-backup)
 
