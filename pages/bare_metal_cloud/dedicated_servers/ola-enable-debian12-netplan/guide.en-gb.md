@@ -125,7 +125,7 @@ network:
 ### Applying the configuration
 
 > [!primary]
-> The `netplan try`command can't be used with a NIC bond.
+> The `netplan try` command can't be used when configuring bonds.
 
 Apply the configuration using the following command:
 
