@@ -161,7 +161,7 @@ Les forfaits mobiles avec de plus petites enveloppes de données sont compatible
 
 ///
 
-/// details | Que se passe t'il si je dépasse le quota de data du forfait attaché à un lien 4 G?
+/// details | Que se passe t'il si je dépasse le quota de data du forfait attaché à un lien 4G ?
 
 Les conditions de votre opérateur mobile s'appliquent, cela peut être une facturation en hors-forfait ou une simple réduction de débit. Veuillez consulter les conditions générales de vente de votre forfait pour connaître le type de limitation appliqué en cas de dépassement.
 
