@@ -59,7 +59,7 @@ vi /etc/netplan# cat 50-bond.yaml
 
 To configure the bond interface, insert the following configuration:
 
-```bash
+```yaml
 network: 
     version: 2
     ethernets: 
