@@ -51,7 +51,7 @@ Once we have determined the names of our two NICs, we will configure NIC bonding
 
 ### Fixed IP configuration
 
-Create the interfaces file in a text editor of your choice using the following command:
+Replace the contents of `/etc/netplan/50-cloud-init.yaml` with:
 
 ```bash
 vi /etc/netplan# cat 50-bond.yaml
