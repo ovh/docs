@@ -49,7 +49,7 @@ ip a
 
 Once we have determined the names of our two NICs, we will configure NIC bonding in the OS. 
 
-### Fixed IP configuration
+### Static IP configuration
 
 Replace the contents of `/etc/netplan/50-cloud-init.yaml` with:
 
