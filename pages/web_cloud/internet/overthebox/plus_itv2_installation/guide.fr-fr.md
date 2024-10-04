@@ -53,7 +53,7 @@ Branchez ensuite votre ordinateur sur un des ports LAN de votre **OverTheBox**. 
 Cliquez sur l'onglet correspondant à votre offre OverTheBox :
 
 > [!tabs]
->  Starter / Business :
+>  Starter / Business
 >> Dans le cas d'une **OTB V3** ou **OTB V3 LTE** vendue avec les offres **OverTheBox Starter & Business**
 >>
 >> - **Modem 1**: Câble jaune, IP 192.168.**0**.1
@@ -71,7 +71,7 @@ Cliquez sur l'onglet correspondant à votre offre OverTheBox :
 >>
 >> ![overthebox](images/install-step2-OTBv2b-2024.png){.thumbnail width="800"}
 >>
-> IT :
+> IT
 >>
 >> - **Modem 1**: Câble jaune, IP 192.168.**0**.1
 >> - **Modem 2**: Câble bleu, IP 192.168.**1**.1
