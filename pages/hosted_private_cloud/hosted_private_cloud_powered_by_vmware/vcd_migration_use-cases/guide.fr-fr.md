@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - Migration depuis VMware vSphere on OVHcloud"
 excerpt: "Découvrez comment vous préparer à migrer depuis VMware vSphere on OVHcloud vers une offre basée sur un environnement VMware Cloud Director (VCD) on OVHcloud"
-updated: 2024-10-03
+updated: 2024-10-04
 ---
 
 > [!primary]
