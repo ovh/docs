@@ -1,7 +1,7 @@
 ---
 title: "Cómo crear una instancia de Public Cloud y conectarse a ella"
 excerpt: "Cómo configurar instancias de Public Cloud en el área de cliente de OVHcloud y cómo empezar a utilizar las instancias"
-updated: 2024-08-22
+updated: 2024-10-04
 ---
 
 <style>
@@ -28,6 +28,8 @@ Las instancias de Public Cloud son fáciles de desplegar y gestionar. Sin embarg
 A continuación, podrá ir un paso más allá con su proyecto de Public Cloud en función de sus necesidades.
 
 **Esta guía explica los primeros pasos con una instancia de Public Cloud.**
+
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/uulkyuwgOsk?si=h3d6-3ESXwv2YQwc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Requisitos
 

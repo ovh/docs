@@ -1,7 +1,7 @@
 ---
 title: How to create a Public Cloud instance and connect to it
 excerpt: Find out how to configure Public Cloud instances in the OVHcloud Control Panel and the first steps with your instances
-updated: 2024-08-21
+updated: 2024-10-04
 ---
 
 <style>
@@ -24,6 +24,8 @@ Public Cloud instances are easy to deploy and manage. However, being part of the
 You can then go further with your Public Cloud project according to your needs.
 
 **This guide explains how to get started with a Public Cloud instance.**
+
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/s-_nstgu8oc?si=KWVlSCO3oAPMhSZS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Requirements
 

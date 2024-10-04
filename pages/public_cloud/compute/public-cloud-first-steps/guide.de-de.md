@@ -1,7 +1,7 @@
 ---
 title: "Eine Public Cloud Instanz erstellen und darauf zugreifen"
 excerpt: "Erfahren Sie hier, wie Sie Public Cloud Instanzen in Ihrem OVHcloud Kundencenter konfigurieren, sowie die ersten Schritte mit Instanzen"
-updated: 2024-08-21
+updated: 2024-10-04
 ---
 
 <style>
@@ -28,6 +28,8 @@ Public Cloud Instanzen sind einfach einzurichten und zu verwalten. Als Teil des 
 Danach können Sie Ihr Public Cloud Projekt weiter spezialisieren, je nach Ihren Bedürfnissen.
 
 **Diese Anleitung erklärt die ersten Schritte mit einer Public Cloud Instanz.**
+
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/s-_nstgu8oc?si=KWVlSCO3oAPMhSZS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Voraussetzungen
 
