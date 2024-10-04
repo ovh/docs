@@ -1,34 +1,23 @@
 ---
-title: How to Configure Your NIC for OVHcloud Link Aggregation in Debian 12 (Netplan)
-excerpt: Enable OVHcloud Link Aggregation in your Debian 12 server
-updated: 2024-10-03
+title: "How to Configure Your NIC for Link Aggregation in Debian 12 or Ubuntu 24.04 (Netplan)"
+excerpt: "Enable Link Aggregation in your Debian 12 or Ubuntu 24.04 server"
+updated: 2024-10-04
 ---
 
 ## Objective
 
-OVHcloud Link Aggregation (OLA) technology is designed by our teams to increase your server’s availability, and boost the efficiency of your network connections. In just a few clicks, you can aggregate your network cards and make your network links redundant. This means that if one link goes down, traffic is automatically redirected to another available link.
+OVHcloud Link Aggregation technology is designed by our teams to increase your server’s availability, and boost the efficiency of your network connections. In just a few clicks, you can aggregate your network cards and make your network links redundant. This means that if one link goes down, traffic is automatically redirected to another available link. The available bandwidth is also doubled thanks to aggregation.
 
-**This guide explains how to bond your NICs to use them for OLA in Debian 12 (Netplan configuration).**
+**This guide explains how to bond your NICs to use them for Link Aggregation in Debian 12 / Ubuntu 24.04 Netplan configuration).**
 
 ## Requirements
 
 - [Configuring OVHcloud Link Aggregation in the OVHcloud Control Panel](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager)
 - Access to the [OVHcloud Control Panel](/links/manager)
 
-> [!warning]
->
-> You will need to download the ifenslave package on the server before enabling OLA in the OVHcloud Control Panel or API. To do so, please use the following command:
->
-> ```
-> apt install ifenslave
-> ```
->
-
 ## Instructions
 
-Because you have a private-private configuration for your NICs in OLA, you will be unable to SSH into the server. Thus, you will need to leverage the IPMI tool to access the server.
-
-To do so, first log in to your [OVHcloud Control Panel](/links/manager). In the `Bare Metal Cloud`{.action} section, select your server from `Dedicated Servers`{.action} and click the `IPMI`{.action} tab (1).
+First log in to your [OVHcloud Control Panel](/links/manager). In the `Bare Metal Cloud`{.action} section, select your server from `Dedicated Servers`{.action} and click the `IPMI`{.action} tab (1).
 
 Next, click the `From a Java applet (KVM)`{.action} button (2).
 
@@ -47,17 +36,11 @@ ip a
 > This command will yield numerous "interfaces." If you are having trouble determining which ones are your physical NICs, the first interface will still have the server's public IP address attached to it by default.
 >
 
-Once we have determined the names of our two NICs, we will configure NIC bonding in the OS. 
+Once we have determined the names of our two NICs, we will configure NIC bonding in the OS.
 
 ### Static IP configuration
 
-Replace the contents of `/etc/netplan/50-cloud-init.yaml` with:
-
-```bash
-vi /etc/netplan# cat 50-bond.yaml
-```
-
-To configure the bond interface, insert the following configuration:
+Replace the content of `/etc/netplan/50-cloud-init.yaml` with the following content:
 
 ```yaml
 network: 
@@ -100,15 +83,9 @@ network:
 
 ### DHCP configuration
 
-Create the interfaces file in a text editor of your choice using the following command:
+Replace the content of `/etc/netplan/50-cloud-init.yaml` with the following content:
 
-```bash
-vi /etc/netplan# cat 50-cloud-init.yaml_dhcp
-```
-
-To configure the bond interface, insert the following configuration:
-
-```bash
+```yaml
 network: 
     version: 2
     ethernets: 
@@ -144,15 +121,12 @@ network:
                 transmit-hash-policy: layer3+4
 ```
 
-### Testing and applying the configuration
+### Applying the configuration
 
-You can test your configuration using this command:
+> [!primary]
+> The `netplan try`command can't be used with a NIC bond.
 
-```bash
-sudo netplan try
-```
-
-If it is correct, apply it using the following command:
+Apply the configuration using the following command:
 
 ```bash
 sudo netplan apply
