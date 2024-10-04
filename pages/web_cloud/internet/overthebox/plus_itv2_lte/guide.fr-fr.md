@@ -20,7 +20,8 @@ Un lien 4G permet une continuité de service en cas de défaillance sur votre r�
 ### Configurer une OverTheBox V3 LTE
 
 Les matériels **OverTheBox V3 LTE** fournis par OVHcloud sont équipés d'un module 4G Cat12 (SIMCOM 7912E) permettant des débits théoriques descendant de 600Mbps et montant de 150Mbps.
-<br>Le port de la carte SIM se trouve sous le module à l’intérieur du boîtier.
+
+Le port de la carte SIM se trouve sous le module à l’intérieur du boîtier.
 
 #### Étape 1 : Insérer la carte SIM
 
@@ -29,7 +30,7 @@ Les matériels **OverTheBox V3 LTE** fournis par OVHcloud sont équipés d'un mo
 > Avant de réaliser ces manipulations, vous devez :
 >
 > - Vous décharger en touchant un objet métallique relié à la terre afin de limiter les risques de décharge électrostatique ([plus d'informations](https://fr.wikihow.com/%C3%A9viter-d%27endommager-un-ordinateur-par-une-d%C3%A9charge-%C3%A9lectrostatique)).
-> - Vérifier que le boitier est éteint et que son alimentation est **débranché**.
+> - Vérifier que le boitier est éteint et que son alimentation est **débranchée**.
 > - Vous munir d'un tournevis cruciforme.
 >
 
