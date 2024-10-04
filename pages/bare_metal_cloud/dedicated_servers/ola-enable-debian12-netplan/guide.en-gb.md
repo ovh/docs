@@ -69,6 +69,7 @@ network:
                   via: fe80::1
             nameservers: 
                 addresses: 
+                - 213.186.33.99
                 - 2001:41d0:3:163::1
             interfaces: 
                 - ens22f0np0
