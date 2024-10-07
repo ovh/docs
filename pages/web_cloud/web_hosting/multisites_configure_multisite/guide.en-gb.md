@@ -180,7 +180,7 @@ Click the yellow `A/AAAA` icon for more information. The following message will 
 
 To resolve DNS pointing issues for your domain name, and ensure that it points correctly to the web hosting plan you want, follow the steps described in our guide on [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit){.external}.
 
-##### A/AAAA gray
+##### Gray A/AAAA
 
 ![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-gray-info.png){.thumbnail}
 
