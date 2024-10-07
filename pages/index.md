@@ -1211,6 +1211,7 @@
             + [Installing SPIP manually](web_cloud/web_hosting/cms_manual_installation_spip)
         + [FTP and SSH](web-cloud-hosting-ftp-and-ssh)
             + [Tutorial - Using FileZilla with your OVHcloud hosting](web_cloud/web_hosting/ftp_filezilla_user_guide)
+            + [Web Hosting - How to manage FTP users](web_cloud/web_hosting/ftp_manage_users)
             + [Logging in to your Web Hosting plan’s storage space](web_cloud/web_hosting/ftp_connection)
             + [Changing a FTP user password](web_cloud/web_hosting/ftp_change_password)
             + [Managing your web hosting with Visual Studio Code via SFTP](web_cloud/web_hosting/handle_sftp_connexion_vscode)
