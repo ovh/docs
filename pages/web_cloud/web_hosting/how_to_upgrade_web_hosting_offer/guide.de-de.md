@@ -1,7 +1,7 @@
 ---
 title: "Webhosting: Wie kann ich mein Angebot wechseln?"
 excerpt: "Erfahren Sie hier, wie Sie das Abonnement Ihres OVHcloud Webhosting-Dienstes ändern können"
-updated: 2023-09-19
+updated: 2024-10-03
 ---
 
 > [!primary]
@@ -167,19 +167,32 @@ Wenn die Option **Boost** Ihren Anforderungen entspricht, finden Sie unten die A
 >> Die Tabelle zur Verwendung der Boost-Option wird angezeigt. Klicken Sie auf `Boost deaktivieren`{.action}.<br><br>
 >>![boost](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/boost-my-hosting-plan/deactivate-the-boost-plan.png){.thumbnail}<br>
 
-#### Abrechnung bei einem  Angebotswechsel <a name="billing"></a>
+#### Abrechnung bei einem Angebotswechsel <a name="billing"></a>
 
-Wenn Sie Ihr ursprüngliches Angebot auf ein höheres Angebot umstellen, wird eine anteilige *pro rata* Berechnung bis zum nächsten Verlängerungsdatum dieses ursprünglichen Angebots durchgeführt.
+**Fall 1**: Wenn Sie Ihr ursprüngliches Angebot auf ein höheres Angebot umstellen, wird eine anteilige *pro rata* Berechnung bis zum nächsten Verlängerungsdatum dieses ursprünglichen Angebots durchgeführt.
 Diese Berechnung entspricht der Preisdifferenz zwischen Ihrem ursprünglichen und Ihrem neuen Angebot.
 
-> **Beispiel:**<br>
+> **Beispiel:**
 >
-> Sie haben am 1. Januar 2022 ein [Basic Hosting](/links/web/hosting-personal-offer) abonniert.
+> Sie haben am 1. Januar 2024 ein [Basic Hosting](/links/web/hosting-personal-offer) abonniert.
 >
-> Am 31. Oktober 2022 wechseln Sie von diesem **Basic** Angebot zu einem Abo für das [Pro Hosting](/links/web/hosting-professional-offer).<br>
+> Am 31. Oktober 2024 wechseln Sie von diesem **Basic** Angebot zu einem Abo für das [Pro Hosting](/links/web/hosting-professional-offer).
 >
-> Folglich wird der Betrag für die verbleibende Laufzeit des **Basic** Abos (2 Monate vom 1. November 2022 bis zum 1. Januar 2023) automatisch von den Kosten des neuen **Pro** Abonnements bis zum 1. Januar 2023 abgezogen. Sie zahlen also nur die Differenz.
-> Ab dem 1. Januar 2023 wird Ihnen das **Pro** Abonnement dann nach dem geltenden Tarif berechnet.
+> Folglich wird der Betrag für die verbleibende Laufzeit des **Basic** Abos (2 Monate vom 1. November 2024 bis zum 1. Januar 2025) automatisch von den Kosten des neuen **Pro** Abonnements bis zum 1. Januar 2025 abgezogen. Sie zahlen also nur die Differenz.  
+> Ab dem 1. Januar 2025 wird Ihnen das **Pro** Abonnement dann nach dem geltenden Tarif berechnet.
+
+Folgen Sie [diesen Anweisungen](#modify), um Ihr Angebot zu wechseln.
+
+**Fall 2**: Wenn Sie Ihr ursprüngliches Angebot auf ein niedrigeres Angebot umstellen, verfällt die verbleibende Abonnementzeit für das ursprüngliche Angebot. Für diese verbleibende Zeit wird keine Rückerstattung vorgenommen, auch wenn noch mehrere Monate des Abonnements übrig sind. Sie zahlen also vollständig das Abonnement des niedrigeren Angebots vorab.
+
+> **Beispiel:**
+>
+> Sie haben am 1. Januar 2024 ein [Pro Hosting](/links/web/hosting-professional-offer) abonniert.
+>
+> Am 31. Oktober 2024 wechseln Sie von diesem **Pro** Angebot zu einem Abo für das [Basic Hosting](/links/web/hosting-personal-offer).
+>
+> Der Betrag für die verbleibende Laufzeit des Abonnements **Pro** (2 Monate, vom 1. November 2024 bis zum 1. Januar 2025) geht verloren.  
+> Ab dem 1. November 2024 wird Ihnen das Abonnement **Basic** nach dem geltenden Tarif abgerechnet (auch wenn Sie die verbleibenden 2 Monate des Angebots **Pro** bezahlt haben).
 
 Folgen Sie [diesen Anweisungen](#modify), um Ihr Angebot zu wechseln.
 
