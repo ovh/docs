@@ -1,12 +1,12 @@
 ---
 title: "Configurer une IPv6 sur une machine virtuelle"
 excerpt: "Découvrez comment configurer une adresse IPv6 sur une machine virtuelle"
-updated: 2024-09-26
+updated: 2024-10-07
 ---
 
 ## Objectif
 
-Internet Protocol version 6 (IPv6) est le successeur d'Internet Protocol version 4 (IPv4). Mis en place pour résoudre l’épuisement des adresses IPv4, IPv6 utilise des adresses de 128 bits au lieu d’adresses de 32 bits. Les serveurs des gammes High Grade, Scale et Advance (depuis juillet 2024) sont livrés avec un bloc /56 IPv6. Les anciens serveurs sont quant à eux livrés avec un bloc/64 IPv6. Un serveur livré avec un bloc /56 IPv6 permet de disposer jusqu'à 18 quintillions d’adresses IP.
+Internet Protocol version 6 (IPv6) est le successeur d'Internet Protocol version 4 (IPv4). Mis en place pour résoudre l’épuisement des adresses IPv4, IPv6 utilise des adresses de 128 bits au lieu d’adresses de 32 bits. Les serveurs des gammes High Grade, Scale et Advance (depuis juillet 2024) sont livrés avec un bloc /56 IPv6. Les anciens serveurs sont quant à eux livrés avec un bloc /64 IPv6. Un serveur livré avec un bloc /56 IPv6 permet de disposer de jusqu'à 18 quintillions d’adresses IP.
 
 Notre infrastructure vous permet également de configurer l'IPv6 sur vos machines virtuelles.
 
@@ -15,15 +15,18 @@ Notre infrastructure vous permet également de configurer l'IPv6 sur vos machine
 > [!warning]
 > OVHcloud met à votre disposition des services dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs et ne pourrons vous fournir d’assistance. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](links/directory) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section « Aller plus loin » de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section « Aller plus loin » de ce guide.
 >
 
 ## Prérequis
 
 - Disposer d’un [serveur dédié](/links/bare-metal/bare-metal) disposant d'un bloc IPv6 (/64) ou (/56) dans votre compte OVHcloud.
-- Avoir installez un système d'exploitation permettant la virtualisation (Proxmox, Hyper-V etc..).
-- Avoir toutes les informations relatives à votre IPv6 (préfix, passerelle...).
+- Avoir installé un système d'exploitation permettant la virtualisation (Proxmox, Hyper-V etc..).
+- Avoir toutes les informations relatives à votre IPv6 (préfixe, passerelle...).
 - Avoir des connaissances de base en SSH et en réseau.
+
+> [!warning]
+> Veuillez noter que nous ne proposons plus Vmware EXSi en tant que système d’exploitation. Par conséquent, les exemples de configuration de ce guide se concentreront sur Proxmox et Windows Hyper-V.
 
 ## En pratique
 
@@ -43,7 +46,7 @@ Dans nos exemples, nous utiliserons l'éditeur de texte `nano`. Vous pouvez bien
 
 ### Passerelle par défaut (Gateway)
 
-La première étape consiste à récupérer la passerelle (gateway) IPv6 assignée à votre serveur. Deux méthodes sont possibles:
+La première étape consiste à récupérer la passerelle (gateway) IPv6 assignée à votre serveur. Deux méthodes sont possibles :
 
 - Obtenir les informations réseau via l'espace client
 - Obtenir les informations réseau via les API
@@ -73,17 +76,13 @@ Exemple :
 
 IPv6_GATEWAY : `2607:5300:60:62FF:00FF:00FF:00FF:00FF` peut aussi être écrit comme `2607:5300:60:62FF:FF:FF:FF:FF`.
 
-> [!warning]
-> Please note that we no longer offer Vmware EXSi as an operating system, as a result, the configuration examples in this guide will focus on Proxmox and Windows Hyper-V.
->
-
-### Configuration sur Proxmox 
+### Configuration sur Proxmox
 
 #### Pour une machine virtuelle
 
 La première étape consiste à créer la machine virtuelle dans Proxmox.
 
-Une fois connecté au tableau de bord Proxmox, cliquez sur le nom de votre serveur dans le coin gauche, puis sur `Créer VM`{.action}.
+Une fois connecté au tableau de bord Proxmox, cliquez sur le nom de votre serveur dans le coin à gauche, puis sur `Créer VM`{.action}.
 
 ![create vm](images/create_vm_proxmox.png){.thumbnail}
 
@@ -92,21 +91,25 @@ Une fois connecté au tableau de bord Proxmox, cliquez sur le nom de votre serve
 > [!tabs]
 > **General**
 >>
->> **Name:** Renseignez un nom pour votre VM.<br><br>
->>![create vm](images/create_vm_name.png){.thumbnail}<br>
+>> **Name:** Renseignez un nom pour votre VM.
+>>
+>>![create vm](images/create_vm_name.png){.thumbnail}
 >> 
 > **OS**
->> Cliquez sur la flèche déroulante à côté de `ISO image` pour sélectionner l'image de votre choix. Dans notre exemple, nous utilisons ubuntu 24.04 ISO.<br><br>
->>![iso image](images/select_iso.png){.thumbnail}<br>
+>> Cliquez sur la flèche déroulante à côté de `ISO image` pour sélectionner l'image de votre choix. Dans notre exemple, nous utilisons ubuntu 24.04 ISO.
+>>
+>>![iso image](images/select_iso.png){.thumbnail}
 >>
 > **Confirm**
 >>
->> Une fois fait, cliquez sur `Finish`{.action} pour créer la VM.<br><br>
->>![create vm](images/create_vm.png){.thumbnail}<br>
+>> Une fois votre sélection faite, cliquez sur `Finish`{.action} pour créer la VM.
+>>
+>>![create vm](images/create_vm.png){.thumbnail}
+>>
 
 Une fois la machine virtuelle créée, l’étape suivante consiste à la lancer et à procéder à l’installation du système d’exploitation.
 
-**Configuration basee sur netplan**
+**Configuration basée sur Netplan**
 
 La configuration ci-dessous est basée sur Ubuntu 20.04.
 
@@ -116,7 +119,7 @@ Une fois connecté à votre machine virtuelle, la première étape consiste à a
 sudo nano /etc/netplan/50-cloud-init.yaml
 ```
 
-Ensuite, configurez l'adresse IPv6 de votre choix en remplaçant *YOUR_IPV6*, *IPV6_PREFIX* et *IPV6_GATEWAY* par vos propres valeurs.
+Configurez ensuite l'adresse IPv6 de votre choix en remplaçant *YOUR_IPV6*, *IPV6_PREFIX* et *IPV6_GATEWAY* par vos propres valeurs.
 
 ```yaml
 network:
@@ -125,7 +128,7 @@ network:
             dhcp4: true
             dhcp6: false
             addresses:
-              - YOUR_IPV6/IPV6_PREFIX  
+              - YOUR_IPV6/IPV6_PREFIX
             routes:
               - to: default
                 via: IPV6_GATEWAY
@@ -137,17 +140,17 @@ Pour tester la connectivité de votre IPv6, exécutez la commande `ping` à l'ad
 
 ![ping](images/vm_ubuntu.png){.thumbnail}
 
-**Configuration basee sur network interfaces**
+**Configuration basée sur network interfaces**
 
 La configuration ci-dessous est basée sur Debian 11.
 
-Une fois connecté à votre machine virtuelle, la première étape consiste à accéder au fichier de configuration:
+Une fois connecté à votre machine virtuelle, la première étape consiste à accéder au fichier de configuration :
 
 ```bash
 sudo nano /etc/network/interfaces
 ```
 
-Ensuite, configurez l'adresse IPv6 de votre choix en remplaçant *YOUR_IPV6*, *IPV6_PREFIX* et *IPV6_GATEWAY* par vos propres valeurs. Remplacez `ens18` par le nom de votre interface.
+Configurez ensuite l'adresse IPv6 de votre choix en remplaçant *YOUR_IPV6*, *IPV6_PREFIX* et *IPV6_GATEWAY* par vos propres valeurs. Remplacez `ens18` par le nom de votre interface.
 
 ```console
 auto lo
@@ -159,7 +162,7 @@ address YOUR_IPV6/IPV6_PREFIX
 gateway IPV6_GATEWAY
 ```
 
-Une fois fait, redémarrez le réseau avec la commande suivante :
+Une fois la configuration faite, redémarrez le réseau avec la commande suivante :
 
 ```bash
 sudo systemctl restart networking.service
@@ -186,7 +189,7 @@ Utilisez la commande `ls` pour afficher le fichier de configuration réseau. Dan
 
 ![ls](images/ls_command.png){.thumbnail}
 
-Ensuite, configurez l'adresse IPv6 de votre choix en remplaçant *YOUR_IPV6*, *IPV6_PREFIX* et *IPV6_GATEWAY* par vos propres valeurs.
+Configurez ensuite l'adresse IPv6 de votre choix en remplaçant *YOUR_IPV6*, *IPV6_PREFIX* et *IPV6_GATEWAY* par vos propres valeurs.
 
 ```bash
 sudo nano /etc/NetworkManager/system-connections/ens18.nmconnection
@@ -200,7 +203,7 @@ address=YOUR_IPV6/IPv6_PREFIX
 gateway=2607:5300:xxxx:xxff:ff:ff:ff:ff
 ```
 
-Une fois fait, redémarrez le réseau avec la commande suivante :
+Une fois la configuration faite, redémarrez le réseau avec la commande suivante :
 
 ```bash
 sudo systemctl restart NetworkManager
@@ -220,11 +223,11 @@ Sélectionnez le réseau existant et cliquez sur `edit`{.action}.
 
 ![configuration du conteneur](images/edit_network.png){.thumbnail}
 
-Complétez les champs IPV6 avec les informations correctes
+Complétez les champs IPV6 avec les bonnes informations.
 
 ![configuration du conteneur](images/configure_ipv6_container.png){.thumbnail}
 
-Une fois fait, cliquez sur `OK`{.action} pour enregistrer les modifications.
+Enfin, cliquez sur `OK`{.action} pour enregistrer les modifications.
 
 Connectez-vous à votre conteneur pour vérifier la connectivité IPv6 avec la commande `ping` :
 

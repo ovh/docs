@@ -1,7 +1,7 @@
 ---
 title: "Configure an IPv6 on a virtual machine"
 excerpt: "Find out how to configure an IPv6 address on a virtual machine"
-updated: 2024-09-26
+updated: 2024-10-07
 ---
 
 ## Objective
@@ -15,17 +15,21 @@ Our infrastructure also allows you to configure IPv6 on your virtual machines.
 > [!warning]
 > OVHcloud provides services that you are responsible for. Since we have no access to these machines, we are not their administrators and cannot provide you with assistance. You are responsible for your own software and security management.
 >
-> We have provided you with this guide in order to help you with common tasks. However, we recommend contacting a [specialist provider](links/directory) if you experience any difficulties or doubts when it comes to managing, using or securing your server. You can find more information in the “Go further” section of this guide.
+> We have provided you with this guide in order to help you with common tasks. However, we recommend contacting a [specialist provider](/links/partner) if you experience any difficulties or doubts when it comes to managing, using or securing your server. You can find more information in the “Go further” section of this guide.
 >
 
 ## Requirements
 
-- a [dedicated server](/links/bare-metal/bare-metal) with an IPv6 block (/64) or (/56) in your OVHcloud account.
-- an operating system with virtualization capabilities (Proxmox, Hyper-V, etc.).
+- A [dedicated server](/links/bare-metal/bare-metal) with an IPv6 block (/64) or (/56) in your OVHcloud account.
+- An operating system with virtualization capabilities (Proxmox, Hyper-V, etc.).
 - You must have all the information related to your IPv6 (prefix, gateway...).
-- basic knowledge of SSH and networking.
+- Basic knowledge of SSH and networking.
 
-## In practice
+> [!warning]
+> Please note that we no longer offer VMware EXSi as an operating system. As a result, the configuration examples in this guide will focus on Proxmox and Windows Hyper-V.
+>
+
+## Instructions
 
 The following sections contain the configurations of the distributions we currently offer and the most commonly used distributions/operating systems. The first step is always to connect to your server via SSH or via a GUI (RDP for a Windows server) connection session.
 
@@ -48,7 +52,7 @@ The first step is to retrieve the IPv6 gateway assigned to your server. Two meth
 - Get network information via the OVHcloud Control Panel
 - Get network information via the APIs
 
-#### Via your Control Panel
+#### Via the OVHcloud Control Panel
 
 Log in to your [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section, and select your server under the `Dedicated server`{.action} section.
 
@@ -73,10 +77,6 @@ Example:
 
 IPv6_GATEWAY : `2607:5300:60:62FF:00FF:00FF:00FF:00FF` can also be written as `2607:5300:60:62FF:FF:FF:FF:FF:FF`.
 
-> [!warning]
-> Please note that we no longer offer VMware EXSi as an operating system, as a result, the configuration examples in this guide will focus on Proxmox and Windows Hyper-V.
->
-
 ### Configuration on Proxmox
 
 #### For a virtual machine
@@ -92,21 +92,25 @@ Once you have logged in to the Proxmox dashboard, click on your server name in t
 > [!tabs]
 > **General**
 >>
->> **Name:** Enter a name for your VM.<br><br>
->>![create vm](images/create_vm_name.png){.thumbnail}<br>
+>> **Name:** Enter a name for your VM.
+>>
+>>![create vm](images/create_vm_name.png){.thumbnail}
 >>
 > **OS**
->> Click the dropdown arrow next to `ISO image` to select the image of your choice. In our example, we use ubuntu 24.04 ISO.<br><br>
->>![iso image](images/select_iso.png){.thumbnail}<br>
+>> Click the dropdown arrow next to `ISO image` to select the image of your choice. In our example, we use ubuntu 24.04 ISO.
+>>
+>>![iso image](images/select_iso.png){.thumbnail}
 >>
 > **Confirm**
 >>
->> Once you have done this, click `Finish`{.action} to create the VM.<br><br>
->>![create vm](images/create_vm.png){.thumbnail}<br>
+>> Once you have done this, click `Finish`{.action} to create the VM.
+>>
+>>![create vm](images/create_vm.png){.thumbnail}
+>>
 
 Once the virtual machine has been created, the next step is to launch it and install the operating system.
 
-**Configuration based on netplan**
+**Configuration based on Netplan**
 
 The configuration below is based on Ubuntu 20.04.
 
@@ -125,7 +129,7 @@ network:
             dhcp4: true
             dhcp6: false
             addresses:
-              - YOUR_IPV6/IPV6_PREFIX  
+              - YOUR_IPV6/IPV6_PREFIX
             routes:
               - to: default
                 via: IPV6_GATEWAY
