@@ -29,6 +29,8 @@ Danach können Sie Ihr Public Cloud Projekt weiter spezialisieren, je nach Ihren
 
 **Diese Anleitung erklärt die ersten Schritte mit einer Public Cloud Instanz.**
 
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/s-_nstgu8oc?si=KWVlSCO3oAPMhSZS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Voraussetzungen
 
 - Sie haben ein [Public Cloud Projekt](/links/public-cloud/public-cloud) in Ihrem OVHcloud Kunden-Account.

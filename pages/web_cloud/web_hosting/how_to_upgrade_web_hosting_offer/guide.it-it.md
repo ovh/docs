@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web: come far evolvere la tua offerta?"
 excerpt: "Questa guida ti mostra come modificare il piano di abbonamento di un hosting Web OVHcloud"
-updated: 2023-09-19
+updated: 2024-10-03
 ---
 
 > [!primary]
@@ -169,17 +169,30 @@ Se l’opzione **Boost** è adatta alle tue esigenze, trovi qui sotto le istruzi
 
 #### La fatturazione in caso di modifica dell'offerta <a name="billing"></a>
 
-Quando si passa da un'offerta iniziale a una superiore, il calcolo del *prorata temporis* viene applicato fino alla successiva data di rinnovo dell'abbonamento iniziale.
+**Caso 1**: quando si passa da un'offerta iniziale a una superiore, il calcolo del *prorata temporis* viene applicato fino alla successiva data di rinnovo dell'abbonamento iniziale.
 Questo calcolo corrisponde alla differenza di prezzo tra il piano iniziale e il nuovo piano.
 
 > **Esempio:**<br>
 >
-> Hai sottoscritto un abbonamento [Personale](/links/web/hosting-personal-offer) il 1° gennaio 2022.
+> Hai sottoscritto un abbonamento [Personale](/links/web/hosting-personal-offer) il 1° gennaio 2024.
 >
-> Il 31 ottobre 2022, passerai da questa offerta **Personale** a un abbonamento sull'offerta [Pro](/links/web/hosting-professional-offer).<br>
+> Il 31 ottobre 2024, passerai da questa offerta **Personale** a un abbonamento sull'offerta [Pro](/links/web/hosting-professional-offer).<br>
 >
-> Di conseguenza, l'importo corrispondente alla durata residua dell'abbonamento **Personale** (2 mesi, dal 1° novembre 2022 al 1° gennaio 2023) viene automaticamente sottratto dal costo del nuovo abbonamento **Pro**, fino al 1° gennaio 2023. Pagherete solo la differenza.
-> A partire dal 1° gennaio 2023, ti sarà fatturato l'abbonamento **Pro** alla tariffa in vigore.
+> Di conseguenza, l'importo corrispondente alla durata residua dell'abbonamento **Personale** (2 mesi, dal 1° novembre 2024 al 1° gennaio 2025) viene automaticamente sottratto dal costo del nuovo abbonamento **Pro**, fino al 1° gennaio 2025. Pagherete solo la differenza.
+> A partire dal 1° gennaio 2025, ti sarà fatturato l'abbonamento **Pro** alla tariffa in vigore.
+
+Segui [queste istruzioni](#modify) per modificare l’offerta.
+
+**Caso 2**: quando si passa da un'offerta iniziale a una inferiore, il tempo di abbonamento rimanente per l'offerta iniziale viene perso definitivamente. Anche se hai ancora diversi mesi di abbonamento, non verrà effettuato alcun rimborso per il tempo restante. Dovrai quindi pagare direttamente l'intero importo dell'abbonamento dell'offerta inferiore.
+
+> **Esempio:**<br>
+>
+> Hai sottoscritto un abbonamento [Pro](/links/web/hosting-professional-offer) il 1° gennaio 2024.
+>
+> Il 31 ottobre 2024, passerai da questa offerta **Pro** a un abbonamento sull'offerta [Personale](/links/web/hosting-personal-offer).<br>
+>
+> Di conseguenza, l'importo corrispondente alla durata restante dell'abbonamento **Pro** (2 mesi, dal 1° novembre 2024 al 1° gennaio 2025) viene perso.
+> A partire dal 1° novembre 2024, l'abbonamento **Personale** ti sarà fatturato direttamente alla tariffa in vigore (anche se hai pagato i 2 mesi restanti dell'offerta **Pro**).
 
 Segui [queste istruzioni](#modify) per modificare l’offerta.
 

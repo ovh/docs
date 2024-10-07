@@ -29,6 +29,8 @@ A continuación, podrá ir un paso más allá con su proyecto de Public Cloud en
 
 **Esta guía explica los primeros pasos con una instancia de Public Cloud.**
 
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/uulkyuwgOsk?si=h3d6-3ESXwv2YQwc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Requisitos
 
 - Un [proyecto Public Cloud](/links/public-cloud/public-cloud)  en su cuenta de OVHcloud

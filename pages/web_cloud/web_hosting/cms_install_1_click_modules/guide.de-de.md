@@ -1,7 +1,7 @@
 ---
 title: "Installation Ihrer Website mit 1-Klick-Modulen (CMS)"
 excerpt: "Erfahren Sie hier, wie Sie Ihre Website mithilfe unserer 1-Klick-Module installieren"
-updated: 2024-03-21
+updated: 2024-10-07
 ---
 
 > [!primary]
@@ -21,6 +21,7 @@ updated: 2024-03-21
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie verfügen über ein [OVHcloud Webhosting](/links/web/hosting) mit mindestens einer Datenbank.
 - Ihr OVHcloud Webhosting verwendet eine aktuelle PHP-Version und eine kompatible Ausführungsumgebung. Sie können den Stand der verschiedenen Versionen auf [dieser Seite](https://webhosting-infos.hosting.ovh.net/) überprüfen. Wenn nötig, nutzen Sie unsere [Anleitung](/pages/web_cloud/web_hosting/configure_your_web_hosting) zu diesem Thema, um diese Konfiguration schnell anpassen zu können.
+- Im FTP-Wurzelverzeichnis Ihres Webhostings muss eine konfigurierte [.ovhconfig Datei](/pages/web_cloud/web_hosting/configure_your_web_hosting) vorhanden sein.
 - Falls ein bereits vorhandenes Verzeichnis zur Installation des 1-Klick-Moduls verwendet werden soll, muss dieses leer sein.
 - Der Domainname (und gegebenenfalls die Subdomain) den Sie für Ihre Website verwenden möchten, ist auf Ihrem OVHcloud Webhosting als [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) deklariert.
 
@@ -209,17 +210,17 @@ Wenn Sie Hilfe zu den Funktionen Ihrer Website benötigen, gehen Sie auf die off
 
 ## Weiterführende Informationen
 
-[Finden Sie das richtige CMS für Ihre Website](/links/web/hosting-cms-comparison){.external}.
+[Das passende CMS für Ihre Website finden](/links/web/hosting-cms-comparison)
 
-[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite).
+[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)
 
-[Verwaltung einer Datenbank in Ihrem Webhosting](/pages/web_cloud/web_hosting/sql_create_database).
+[Verwaltung einer Datenbank in Ihrem Webhosting](/pages/web_cloud/web_hosting/sql_create_database)
 
-Entdecken Sie unsere [Web Cloud Databases](https://www.ovh.de/cloud/cloud-databases/){.external}.
+[Alles zu unseren Web Cloud Databases](https://www.ovh.de/cloud/cloud-databases/)
 
-[CMS verwalten](/pages/web_cloud/web_hosting/cms_manage_1_click_module).
+[CMS verwalten](/pages/web_cloud/web_hosting/cms_manage_1_click_module)
 
-[Ihr CMS deinstallieren](/pages/web_cloud/web_hosting/cms_manage_1_click_module#schritt-3-ihr-modul-loschen).
+[CMS deinstallieren](/pages/web_cloud/web_hosting/cms_manage_1_click_module#schritt-3-ihr-modul-loschen)
 
 Wenn Sie die volle Kontrolle über die Installation Ihres CMS behalten möchten, können Sie [ein CMS manuell auf Ihrem OVHcloud Webhosting installieren](/pages/web_cloud/web_hosting/cms_manual_installation).
 

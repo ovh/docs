@@ -1,7 +1,7 @@
 ---
 title: "Web hosting: ¿Cómo mejorar su solución?"
 excerpt: "Descubra cómo modificar la fórmula de suscripción de un plan de hosting de OVHcloud"
-updated: 2023-09-19
+updated: 2024-10-03
 ---
 
 > [!primary]
@@ -169,21 +169,34 @@ Si la opción **Boost** es adecuada para usted, encontrará a continuación las 
 
 #### La facturación en caso de cambio de producto <a name="billing"></a>
 
-Al cambiar su plan inicial a uno superior, se aplicará un cálculo de la parte proporcional* hasta la siguiente fecha de renovación de la suscripción inicial.
+**Caso 1**: Al cambiar su plan inicial a uno superior, se aplicará un cálculo de la parte proporcional* hasta la siguiente fecha de renovación de la suscripción inicial.
 Este cálculo corresponde a la diferencia de precio entre su oferta inicial y su nueva oferta.
 
 > **Ejemplo:**<br>
 >
-> Ha contratado una suscripción [Personal](/links/web/hosting-personal-offer) el 1 de enero de 2022.
+> Ha contratado una suscripción [Personal](/links/web/hosting-personal-offer) el 1 de enero de 2024.
 >
-> El 31 de octubre de 2022, cambiará de esta oferta **Perso** a una suscripción en el plan [Pro](/links/web/hosting-professional-offer).<br>
+> El 31 de octubre de 2024, cambiará de esta oferta **Perso** a una suscripción en el plan [Pro](/links/web/hosting-professional-offer).<br>
 >
-> Por lo tanto, el importe correspondiente al período restante de la suscripción **Perso** (2 meses, del 1 de noviembre de 2022 al 1 de enero de 2023) se restará automáticamente del coste de la nueva suscripción **Pro**, hasta el 1 de enero de 2023. Solo pagará la diferencia.
-> A partir del 1 de enero de 2023, la suscripción **Pro** se facturará al precio vigente.
+> Por lo tanto, el importe correspondiente al período restante de la suscripción **Perso** (2 meses, del 1 de noviembre de 2024 al 1 de enero de 2025) se restará automáticamente del coste de la nueva suscripción **Pro**, hasta el 1 de enero de 2025. Solo pagará la diferencia.
+> A partir del 1 de enero de 2025, la suscripción **Pro** se facturará al precio vigente.
 
 Siga [estas instrucciones](#modify) para realizar el cambio de producto.
 
-## Ir más allá <a name="go-further"></a>
+**Caso 2**: Al cambiar su plan inicial a un plan inferior, el tiempo de suscripción restante para el plan inicial se pierde definitivamente. No se realizará ningún reembolso por el tiempo restante, incluso si usted tiene varios meses de suscripción. Por lo tanto, deberá pagar directamente la totalidad de la suscripción de la oferta inferior.
+
+> **Ejemplo:**<br>
+>
+> Ha contratado una suscripción de [Pro](/links/web/hosting-professional-offer) el 1 de enero de 2024.
+>
+> El 31 de octubre de 2024, cambiará de esta oferta **Pro** a una suscripción en el plan [Personal](/links/web/hosting-personal-offer).<br>
+>
+> En consecuencia, se pierde el importe correspondiente al período restante de la suscripción **Pro** (2 meses, del 1 de noviembre de 2024 al 1 de enero de 2025).
+> A partir del 1 de noviembre de 2024, la suscripción **Perso** se facturará directamente al precio vigente (aunque haya pagado los 2 meses restantes de la oferta **Pro**).
+
+Siga [estas instrucciones](#modify) para realizar el cambio de producto.
+
+## Más información <a name="go-further"></a>
 
 [Consultar las estadísticas y los logs de un sitio alojado en un alojamiento compartido](/pages/web_cloud/web_hosting/logs_and_statistics)
 

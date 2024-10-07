@@ -25,6 +25,8 @@ Vous pourrez ensuite aller plus loin avec votre projet Public Cloud en fonction 
 
 **Ce guide vous détaille les premiers pas avec une instance Public Cloud.**
 
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/vWP1NdVsWXg?si=YdjGcVfOB1VyE9e-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Prérequis
 
 - Un [projet Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
