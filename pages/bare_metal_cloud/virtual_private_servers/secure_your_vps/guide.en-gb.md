@@ -243,13 +243,13 @@ Once you have completed your changes, save the file and close the editor.
 
 Restart the service to make sure it runs with the customisations applied:
 
-1\. Commande recommandée avec `systemctl` :
+1\. Recommended command with `systemctl`:
 
 ```bash
 sudo systemctl restart fail2ban
 ```
 
-2\. Commande avec `service` (ancienne méthode, toujours compatible) :
+2\. Order with `service` (old method, still compatible):
 
 ```bash
 sudo service fail2ban restart
