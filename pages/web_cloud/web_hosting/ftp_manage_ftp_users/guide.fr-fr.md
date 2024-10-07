@@ -53,7 +53,7 @@ Une fois les paramètres définis, cliquez sur `Suivant`{.action} pour accder à
 
 ![FTP-SSH create user step 2](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/create-user-step-2.png){.thumbnail}
 
-Lors de cette deuxième étape, vous devez uniquement définir dans les 2 formulaires le mot de passe du nouvel utilisateur FTP, puis confirmer celui-ci. Respectez la politique des mots de passe listée juste en dessous des 2 formulaires pour passer à l'étape 3.
+Lors de cette deuxième étape, vous devez uniquement définir et confirmer, dans les 2 formulaires, le mot de passe du nouvel utilisateur FTP. Respectez la politique des mots de passe listée juste en dessous des 2 formulaires pour passer à l'étape 3.
 
 Une fois votre mot de passe choisi et confirmé, cliquez sur `Suivant`{.action} pour accéder à l'étape 3 de la création du nouvel utilisateur FTP :
 
