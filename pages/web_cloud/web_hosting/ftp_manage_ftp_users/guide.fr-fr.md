@@ -47,7 +47,7 @@ Saisissez les paramètres du nouvel utilisateur FTP en définissant les élémen
     - Par exemple, si votre collaborateur a besoin d'accéder à l'ensemble de l'espace de stockage FTP de votre hébergement web, laissez ce formulaire vide. Dans le cas contraire, précisez le nom du répertoire auquel il sera autorisé à accéder (exemples : `www`, `blog`, `website1`, `www/development`, etc.).
 
 - *protocole de connexion* : permet de définir le ou les protocoles que l'utilisateur FTP pourra utiliser pour se connecter à l'espace de stockage FTP de votre hébergement web.
-Par exemple, si vous sélectionnez le troisième choix (les protocoles **FTP**,**SFTP** et **SSH**), l'utilisateur FTP aura la possibilité de se connecter avec les trois protocoles. Ainsi, le collaborateur qui utilisera cet utilisateur FTP pourra, par exemple, choisir de se connecter en ligne de commande via le protocole **SSH** mais aussi gérer le contenu FTP à partir de ce même protocole.
+    - Par exemple, si vous sélectionnez le troisième choix (les protocoles **FTP**,**SFTP** et **SSH**), l'utilisateur FTP pourra se connecter avec les trois protocoles. Ainsi, le collaborateur qui utilisera cet utilisateur FTP pourra, par exemple, choisir de se connecter en ligne de commande via le protocole **SSH** mais aussi gérer le contenu FTP à partir de ce même protocole.
 
 Une fois les paramètres définis, cliquez sur `Suivant`{.action} pour accder à l'étape 2 de la création du nouvel utilisateur FTP :
 
