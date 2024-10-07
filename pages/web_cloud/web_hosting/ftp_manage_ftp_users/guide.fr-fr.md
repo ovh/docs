@@ -86,7 +86,7 @@ La fenêtre suivante apparaît :
 
 A l'exception du nom de l'utilisateur FTP et de son mot de passe associé, vous pouvez ici modifier le *dossier racine* et les *protocoles de connexion* définis pour l'utilisateur FTP. Si besoin, consultez la partie « [Créer un nouvel utilisateur FTP sur votre hébergement web](#create-ftp-user) » située plus haut dans ce guide pour plus d'informations sur le *dossier racine* et les *protocoles de connexion*.
 
-Par ailleurs, vous pouvez si nécessaire *désactiver l'utilisateur* en cochant la case prévue à cet effet. Cette option peut être très utile si vous souhaitez empêcher un collaborateur d'accéder à votre espace FTP sans supprimer les logs FTP et SSH qui lui sont associés. En effet, ces logs vous permettrons de déterminer quels ont été les opérations réalisées par votre collaborateur si vous constatez des interventions non désirées sur votre hébergement web.
+Par ailleurs, vous pouvez si nécessaire *désactiver l'utilisateur* en cochant la case prévue à cet effet. Cette option peut être utile si vous souhaitez empêcher un collaborateur d'accéder à votre espace FTP sans supprimer les logs FTP et SSH qui lui sont associés. En effet, ces logs vous permettront de déterminer quelles ont été les opérations réalisées par votre collaborateur si vous constatez des interventions non désirées sur votre hébergement web.
 
 Une fois les modifications faites, cliquez sur `Suivant`{.action} pour accéder à l'étape 2, vérifiez vos demandes de modifications lors de l'étape 2, puis cliquez sur `Valider`{.action} pour finaliser la demande de modification de l'utilisateur FTP sur votre hébergement web.
 
