@@ -192,7 +192,7 @@ Segui [queste istruzioni](#modify) per modificare l’offerta.
 > Il 31 ottobre 2024, passerai da questa offerta **Pro** a un abbonamento sull'offerta [Personale](/links/web/hosting-personal-offer).<br>
 >
 > Di conseguenza, l'importo corrispondente alla durata restante dell'abbonamento **Pro** (2 mesi, dal 1° novembre 2024 al 1° gennaio 2025) viene perso.
-A partire dal 1° novembre 2024, l'abbonamento **Personale** ti sarà fatturato direttamente alla tariffa in vigore (anche se hai pagato i 2 mesi restanti dell'offerta **Pro**).
+> A partire dal 1° novembre 2024, l'abbonamento **Personale** ti sarà fatturato direttamente alla tariffa in vigore (anche se hai pagato i 2 mesi restanti dell'offerta **Pro**).
 
 Segui [queste istruzioni](#modify) per modificare l’offerta.
 
