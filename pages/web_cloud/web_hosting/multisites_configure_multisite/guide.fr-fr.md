@@ -172,7 +172,7 @@ Lorsque l'icône `A/AAAA` est verte dans la colonne `Diagnostic`, cela signifie 
 
 ![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-info.png){.thumbnail}
 
-Lorsque l'icône `A/AAAA` est jaune dans la colonne `Diagnostic`, cela signifie que l'enregistrement **A** (IPv4) et/ou **AAAA** (IPv6) de votre nom de domaine pointe vers une addresse IP, mais qu'il ne s'agit pas de celle de l'hébergement associé.
+Lorsque l'icône `A/AAAA` est jaune dans la colonne `Diagnostic`, cela signifie que l'enregistrement **A** (IPv4) et/ou **AAAA** (IPv6) de votre nom de domaine pointe vers une addresse IP, mais qu'il ne s'agit pas de celle de l'hébergement web depuis lequel vous consultez la colonne `Diagnostic`.
 Cliquez sur l'icône `A/AAAA` jaune pour plus d'informations. Le message suivant s'affiche :
 
 ![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-popup.png){.thumbnail}
