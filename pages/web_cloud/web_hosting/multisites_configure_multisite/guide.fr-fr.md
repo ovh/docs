@@ -188,7 +188,7 @@ Cliquez sur l'icône `A/AAAA` grise pour plus d'informations. Le message suivant
 
 ![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-popup.png){.thumbnail}
 
-Pour ajouter les enregistrements **A** ou **AAAA** et configurer correctement votre domaine, suivez les étapes décrites dans notre guide [« Éditer une zone DNS OVHcloud »](/pages/web_cloud/domains/dns_zone_edit){.external}.
+Pour ajouter les enregistrements **A** ou **AAAA** et configurer correctement votre nom de domaine, suivez les étapes décrites dans notre guide « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
 
 ### Étape 3 : mettre votre site web en ligne <a name="site-online"></a>
 
