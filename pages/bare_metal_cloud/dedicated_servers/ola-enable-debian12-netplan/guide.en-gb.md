@@ -8,22 +8,18 @@ updated: 2024-10-07
 
 OVHcloud Link Aggregation technology is designed by our teams to increase your server’s availability, and boost the efficiency of your network connections. In just a few clicks, you can aggregate your network cards and make your network links redundant. This means that if one link goes down, traffic is automatically redirected to another available link. The available bandwidth is also doubled thanks to aggregation.
 
-**This guide explains how to bond your NICs to use them for Link Aggregation in Debian 12 / Ubuntu 24.04 Netplan configuration).**
+**This guide explains how to bond your NICs to use them for Link Aggregation in Debian 12 / Ubuntu 24.04 (Netplan configuration).**
 
 ## Requirements
 
 - [Configuring OVHcloud Link Aggregation in the OVHcloud Control Panel](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager)
-- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
-First log in to your [OVHcloud Control Panel](/links/manager). In the `Bare Metal Cloud`{.action} section, select your server from `Dedicated Servers`{.action} and click the `IPMI`{.action} tab (1).
-
-Next, click the `From a Java applet (KVM)`{.action} button (2).
-
-![remote kvm](images/remote_kvm2022.png){.thumbnail}
-
-A JNLP program will download. Open the program to enter the IPMI. Log in using valid credentials for the server.
+> [!primary]
+>
+> If you lose network connection to your server, follow the "**Open KVM via Java applet**" steps from [this guide](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers).
+>
 
 By default, using an OVHcloud template, the NICs will be named either *ethX* or *enoX*. If you are not using an OVHcloud template, you can find the names of your interfaces using the following command:
 
