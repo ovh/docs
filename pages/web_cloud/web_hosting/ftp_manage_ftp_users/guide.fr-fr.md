@@ -12,7 +12,7 @@ Les offres d'hébergement web OVHcloud donnent accès à un espace de stockage F
 
 > [!primary]
 >
-> Ce guide est valable uniquement pour les hébergements web de type **Pro** ou **Performance**. Seuls ces 2 types d'offre permettent l'activation de plusieurs utilisateurs FTP.
+> Ce guide est valable uniquement pour les hébergements web de type **Pro** ou **Performance**. Seules ces 2 offres permettent l'activation de plusieurs utilisateurs FTP.
 
 ## Prérequis
 
