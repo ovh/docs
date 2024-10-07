@@ -177,7 +177,7 @@ Cliquez sur l'icône `A/AAAA` jaune pour plus d'informations. Le message suivant
 
 ![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-popup.png){.thumbnail}
 
-Pour résoudre les problèmes de pointage de votre nom de domaine et vous assurer qu'il pointe correctement vers l'hébergement souhaité, suivez les étapes décrites dans notre guide [« Éditer une zone DNS OVHcloud »](/pages/web_cloud/domains/dns_zone_edit){.external}.
+Pour résoudre les problèmes de pointage DNS de votre nom de domaine et vous assurer qu'il pointe correctement vers l'hébergement web souhaité, suivez les étapes décrites dans notre guide « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
 
 ##### A/AAAA gris
 
