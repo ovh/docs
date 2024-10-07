@@ -1,7 +1,7 @@
 ---
 title: Getting Started with Managed Rancher Service
 excerpt: 'Find out how to start using Managed Rancher Service on OVHcloud'
-updated: 2024-09-11
+updated: 2024-10-07
 ---
 
 ## Objective
@@ -13,6 +13,9 @@ Managed Rancher Service by OVHcloud provides a powerful platform for orchestrati
 
 - A [Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](/links/manager)
+
+> [!success]
+> Take advantage of reduced prices by committing to a period of 1 to 36 months on your Public Cloud resources. More information on our [Savings Plans](/links/public-cloud/savings-plan) page.
 
 ## Instructions
 

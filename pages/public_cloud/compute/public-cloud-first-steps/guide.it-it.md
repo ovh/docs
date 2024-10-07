@@ -1,7 +1,7 @@
 ---
 title: "Come creare un’istanza Public Cloud e connettersi"
 excerpt: "Scopri come configurare le istanze Public Cloud nello Spazio Cliente OVHcloud e come iniziare a utilizzare le istanze"
-updated: 2024-10-04
+updated: 2024-10-07
 ---
 
 <style>
@@ -35,6 +35,9 @@ Per saperne di più sul tuo progetto Public Cloud in base alle tue necessità.
 
 - Un [progetto Public Cloud](/links/public-cloud/public-cloud) nel tuo account OVHcloud
 - Accesso allo [Spazio Cliente OVHcloud](/links/manager)
+
+> [!success]
+> Approfittate dei prezzi ridotti impegnandovi per un periodo da 1 a 36 mesi sulle vostre risorse Public Cloud. Maggiori informazioni sulla nostra pagina [Savings Plans](/links/public-cloud/savings-plan).
 
 ## Procedura
 

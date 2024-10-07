@@ -1,7 +1,7 @@
 ---
 title: 'Información sobre el tipo de facturación cloud'
 excerpt: 'Cómo interpretar la facturación de las soluciones Public Cloud'
-updated: 2024-04-24
+updated: 2024-10-07
 ---
 
 > [!primary]
@@ -23,6 +23,9 @@ Este mecanismo es similar al de algunos operadores telefónicos que facturan a f
 - Tener un proyecto de [Public Cloud](https://www.ovhcloud.com/es/public-cloud/) en su cuenta de OVHcloud.
 - Una [instancia Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps){.external}.
 - Tener acceso al [área de cliente de OVHcloud](/links/manager){.external}.
+
+> [!success]
+> Benefíciese de precios reducidos comprometiéndose por un periodo de 1 a 36 meses en sus recursos de Nube Pública. Más información en nuestra página [Savings Plans](/links/public-cloud/savings-plan).
 
 ## Principio general
 

@@ -1,7 +1,7 @@
 ---
 title: "Comment créer une instance Public Cloud et s'y connecter"
 excerpt: "Découvrez comment configurer des instances Public Cloud dans votre espace client OVHcloud ainsi que les premières étapes avec vos instances"
-updated: 2024-10-04
+updated: 2024-10-07
 ---
 
 <style>
@@ -30,7 +30,10 @@ Vous pourrez ensuite aller plus loin avec votre projet Public Cloud en fonction 
 ## Prérequis
 
 - Un [projet Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
-- Accès à l’[espace client OVHcloud](/links/manager)
+- Être connecté à l’[espace client OVHcloud](/links/manager)
+
+> [!success]
+> Bénéficiez de prix réduits en vous engageant sur une période de 1 à 36 mois sur vos ressources Public Cloud. Plus d’informations sur notre page [Savings Plans](/links/public-cloud/savings-plan).
 
 ## En pratique
 
