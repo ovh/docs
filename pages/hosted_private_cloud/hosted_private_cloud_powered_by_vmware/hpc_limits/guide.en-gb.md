@@ -1,6 +1,6 @@
 ---
-title: Technical capabilities
-excerpt: 'Learn the technical capabilities and limitations of the OVHcloud Hosted Private Cloud'
+title: "Technical capabilities"
+excerpt: "Learn the technical capabilities and limitations of the OVHcloud Hosted Private Cloud"
 updated: 2023-03-23
 ---
 
@@ -36,4 +36,4 @@ updated: 2023-03-23
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

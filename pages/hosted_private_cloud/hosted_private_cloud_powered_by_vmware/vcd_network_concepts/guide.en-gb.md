@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - Network concepts and best practices"
 excerpt: "Discover the powerful networking capabilities of VMware Cloud Director on OVHcloud with this comprehensive guide (key concepts and features)"
-updated: 2024-08-23
+updated: 2024-10-07
 ---
 
 <style>
@@ -256,6 +256,15 @@ From a general point of view, the only limitations you can find within VCD on OV
 A little less granularity when it comes to low-level configuration.
 
 Of course, this can impact advanced networking features, although these features may be included in future phases.
+
+| Offres                                      | Standard | Advanced (NSX) | Premium (NSX+vSAN) | Comments                                                                                                                                                                                          |
+|:--------------------------------------------|:--------:|:--------------:|:------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Network cards                               |    10    |       10       |         10         | - Network card that can be added when starting a VM (per VM) in the VCD control panel                                                                                                             |
+| Numbers of Edge Gateway (per Org)           |    32    |       32       |         32         | - Number of possible Edge Gateways  (per Org limitations)                                                                                                                                         |
+| External Networks                           |   none   |     8 000      |       8 000        | - External networks connecting organization VDCs to physical networks. Backed by VMware vSphere port group, VLAN, or distributed virtual switch (dvSwitch) objects or backed by NSX-T T0 routers  |
+| IP Spaces                                   | 100 000  |    100 000     |      100 000       | - The maximum number of IP Spaces.                                                                                                                                                                |
+| Public IP                                   |    2     |       2        |         2          |                                                                                                                                                                                                   |
+| Cross VDC Networking Org VDCs per VDC Group |   none   |       16       |         16         | - Org VDC networks stretched to all VDCs in the same VDC Group                                                                                                                                    |
 
 **IPsec VPN Limitations**
 
