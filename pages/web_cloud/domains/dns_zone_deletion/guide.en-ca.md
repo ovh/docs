@@ -35,7 +35,7 @@ For example, you may need to delete a DNS zone for your domain name at OVHcloud 
 
 > [!primary]
 >
-> Deleting a DNS zone doesn't delete the record of the domain name associated with it. You will not lose your domain name by deleting a DNS zone associated with it.
+> Deleting a DNS zone will not delete the domain name associated with it. You will not lose your domain name by deleting a DNS zone associated with it.
 >
 
 ## Instructions
