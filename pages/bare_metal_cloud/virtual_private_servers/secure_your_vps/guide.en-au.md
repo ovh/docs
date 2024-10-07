@@ -1,7 +1,7 @@
 ---
 title: "How to secure a VPS"
 excerpt: "Find out how to apply basic security measures to protect your VPS against attacks and unauthorised access"
-updated: 2024-02-20
+updated: 2024-10-07
 ---
 
 ## Objective
@@ -10,23 +10,22 @@ When you order your VPS, you can choose a distribution or operating system to in
 
 **This guide provides some general tips for securing a GNU/Linux-based server.**
 
- 
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and security. Since we have no administrative access to your devices, it is your responsibility to manage the software and to ensure they function correctly.
 > 
-> This guide is designed to help you with the most common tasks. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-au/directory/) if you have difficulties or doubts concerning the administration, usage or implementation of security measures on a server.
+> This guide is designed to help you with the most common tasks. Nevertheless, we recommend that you contact a [specialist service provider](/links/partner) if you have difficulties or doubts concerning the administration, usage or implementation of security measures on a server.
 >
 
 ## Requirements
 
-- A [Virtual Private Server](https://www.ovhcloud.com/en-au/vps/) in your OVHcloud account
+- A [Virtual Private Server](/links/bare-metal/vps) in your OVHcloud account
 - Administrative access (sudo) via SSH to your server
 
 ## Instructions
 
 > [!primary]
 >
-> Bear in mind that this is a general guide based on an Ubuntu server OS. Some commands need to be adapted to the distribution or operating system you are using and some tips will advise you to use third-party tools. Please refer to the official documentation for these applications if you require assistance.
+> Bear in mind that this is a general guide based on Ubuntu, Debian and CentOS operating systems. Some commands need to be adapted to the distribution or operating system you are using and some tips will advise you to use third-party tools. Please refer to the official documentation for these applications if you require assistance.
 >
 > If you are configuring your first OVHcloud VPS, we recommend to consult our guide on [getting started with a VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps) before continuing.
 >
@@ -37,23 +36,47 @@ The following examples presume that you are logged in as a [user with elevated p
 
 Developers of distributions and operating systems offer frequent software package updates, very often for security reasons. Ensuring that your distribution or operating system is updated is a key point for securing your VPS.
 
-This update will take place in two steps:
-
-- Updating the package list
-
-```bash
-sudo apt update
-```
-
-- Updating the actual packages
-
-```bash
-sudo apt upgrade
-```
+> [!tabs]
+> Ubuntu
+>>
+>> This update will take place in two steps:
+>> 
+>> - Updating the package list:
+>> 
+>> ```bash
+>> sudo apt update
+>> ```
+>> 
+>> - Updating the actual packages:
+>> 
+>> ```bash
+>> sudo apt upgrade
+>> ```
+>>
+> Debian
+>> 
+>> ```bash
+>> sudo apt update && sudo apt upgrade
+>> ```
+>>
+>> The command is identical to Ubuntu because Debian and Ubuntu both use `apt`.
+>>
+> CentOS
+>>
+>> ```bash
+>> sudo yum update
+>> ```
+>>
+>> On CentOS, the command to update the operating system uses `yum` or `dnf`, depending on the version.
 
 This operation needs to be performed regularly to keep a system up-to-date.
 
 ### Changing the default SSH listening port <a name="changesshport"></a>
+
+> [!primary]
+>
+> For this section, the following command lines are the same for Ubuntu, Debian, and CentOS.
+>
 
 One of the first things to do on your server is configuring the SSH service's listening port. It is set to **port 22** by default, therefore server hacking attempts by robots will target this port. Modifying this setting by using a different port is a simple measure to harden your server against automated attacks.
 
@@ -151,9 +174,21 @@ Fail2ban is an intrusion prevention software framework designed to block IP addr
 
 To install the software package, use the following command:
 
-```bash
-sudo apt install fail2ban
-```
+> [!tabs]
+> Ubuntu and Debian
+>> 
+>> ```bash
+>> sudo apt install fail2ban
+>> ```
+>>
+> CentOS
+>>
+>> On CentOS 7 and CentOS 8 (or RHEL), first install the EPEL repository (**E**xtra **P**ackages for **E**nterprise **L**inux), then Fail2ban:
+>>
+>> ```bash
+>> sudo yum install epel-release
+>> sudo yum install fail2ban
+>> ```
 
 You can customise the Fail2ban configuration files to protect services that are exposed to the public Internet from repeated login attempts.
 
@@ -208,6 +243,14 @@ Once you have completed your changes, save the file and close the editor.
 
 Restart the service to make sure it runs with the customisations applied:
 
+1\. Recommended command with `systemctl`:
+
+```bash
+sudo systemctl restart fail2ban
+```
+
+2\. Command with `service` (legacy method, still compatible):
+
 ```bash
 sudo service fail2ban restart
 ```
@@ -231,7 +274,7 @@ Securing your data is a key element, which is why OVHcloud offers you several ba
 - The `Snapshot` option allows you to create a manual snapshot.
 - The `Automated Backup` option enables you to keep regular backups of your VPS (excluding additional disks).
 
-You can find all information on the available backup solutions for your service on the [product page](https://www.ovhcloud.com/en-au/vps/options/) and in the [respective guides](/products/bare-metal-cloud-virtual-private-servers).
+You can find all information on the available backup solutions for your service on the [product page](/links/bare-metal/vps-options) and in the [respective guides](/products/bare-metal-cloud-virtual-private-servers).
 
 ## Go further
 
