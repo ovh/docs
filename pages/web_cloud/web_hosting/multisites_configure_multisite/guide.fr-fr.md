@@ -156,7 +156,7 @@ Notez les éléments qui s’affichent, puis cliquez sur le bouton `Valider`{.ac
 
 #### Étape 2.3 : diagnostiquer vos noms de domaine <a name="diagnostic-domain"></a>
 
-Dans le tableau présent dans l'onglet `Multisite`, une colonne `Diagnostic` vous informe si votre nom de domaine pointe correctement vers l'hébergement associé. Elle permet de vérifier rapidement que la configuration DNS est bien alignée avec votre service d'hébergement, vous aidant ainsi à identifier et résoudre les problèmes de pointage éventuels. Pour chaque nom de domaine, trois valeurs de diagnostic sont possibles :
+Dans le tableau présent dans l'onglet `Multisite`, une colonne `Diagnostic` vous informe si votre nom de domaine pointe correctement vers l'hébergement web associé. Elle permet de vérifier rapidement que la configuration DNS de votre nom de domaine est correctement effectuée avec votre hébergement web. Ainsi, cette colonne vous aide à identifier et résoudre d'éventuels problèmes de pointage. Pour chaque nom de domaine, trois résultats de diagnostic sont possibles :
 
 - `A/AAAA` vert
 - `A/AAAA` jaune
