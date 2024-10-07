@@ -255,7 +255,7 @@ To access the CDN statistics, perform the following actions:
 4. Select the web hosting plan concerned.
 5. On the page that appears, click on the `Statistics and logs`{.action} tab.
 6. In the `Visit statistics` section, click the `View statistics`{.action} button.
-7. You are redirected to the tool **OVHcloud Web Statistics**. In this tool, click on the form labeled `Select domain`{.action} located at the top of the page, then choose a domain name for which the CDN is active.
+7. You are redirected to the tool **OVHcloud Web Statistics**. In this tool, click on the form labelled `Select domain`{.action} located at the top of the page, then choose a domain name for which the CDN is active.
 8. In the right column, click on the `Cache`{.action} tab.
 
 You will now see the CDN statistics for your domain name.
