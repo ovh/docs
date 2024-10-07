@@ -255,12 +255,12 @@ So greifen Sie auf die Statistiken des CDN zu:
 
 1. Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein.
 2. Klicken Sie oben im Kundencenter auf den Tab `Web Cloud`{.action}.
-3. Klicken Sie in der linken Spalte auf das Dropdown-Menü `Hosting-Pakete`{.action}.
+3. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action}.
 4. Wählen Sie das betreffende Webhosting aus.
-5. Klicken Sie auf der angezeigten Seite auf den Tab `Statistiken und Logs`{.action}.
+5. Klicken Sie auf den Tab `Statistiken und Logs`{.action}.
 6. Klicken Sie im Bereich `Statistiken der Seitenaufrufe` auf die Schaltfläche `Die Statistiken anzeigen`{.action}.
-7. Sie werden zum Tool **OVHcloud Web Statistics** weitergeleitet. Klicken Sie in diesem Werkzeug oben auf das Formular `Domainauswahl`{.action} und wählen Sie einen Domainnamen aus, für den das CDN aktiv ist.
-8. Klicken Sie in der rechten Spalte auf die Registerkarte `Cache`{.action}.
+7. Sie werden zum Tool **OVHcloud Web Statistics** weitergeleitet. Klicken Sie oben auf das Formular `Domainauswahl`{.action} und wählen Sie einen Domainnamen aus, für den das CDN aktiv ist.
+8. Klicken Sie in der rechten Spalte auf den Tab `Cache`{.action}.
 
 Sie sehen nun die Statistiken des CDN für Ihre Domain.
 
