@@ -41,7 +41,7 @@ La fenêtre suivante apparaît :
 Saisissez les paramètres du nouvel utilisateur FTP en définissant les éléments / formulaires suivants :
 
 - *utilisateur* : correspond au nom d'utilisateur FTP complet que vous allez définir pour votre collaborateur. Il devra l'utiliser pour se connecter à l'espace de stockage FTP de votre hébergement web. Quel que soit le nouvel utilisateur FTP créé sur votre hébergement web, le nom choisi sera toujours précédé du login FTP principal de votre hébergement web, suivi d'un trait d'union. 
-Par exemple, si votre login FTP principal est `FTPLogin` et que vous souhaitez créer un nouvel utilisateur FTP `user1`, le login FTP de votre nouvel utilisateur sera donc `FTPLogin-user1`.
+    - Par exemple, si votre login FTP principal est `FTPLogin` et que vous souhaitez créer un nouvel utilisateur FTP `user1`, le login FTP de votre nouvel utilisateur sera donc `FTPLogin-user1`.
 
 - *dossier racine* : correspond au nom du répertoire ou sous-répertoire dans lequel l'utilisateur FTP aura le droit de se connecter dans l'espace de stockage FTP. 
 Par exemple, si votre collaborateur a besoin d'accéder à l'ensemble de l'espace de stockage FTP de votre hébergement web, laisser ce formulaire vide. Dans le cas contraire, précisez le nom du répertoire dans lequel il sera autorisé à accéder (exemples : `www`, `blog`, `website1`, `www/development`, etc.).
