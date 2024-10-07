@@ -13,13 +13,13 @@ Lorsque vous commandez votre VPS, vous pouvez choisir une distribution ou un sys
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la sécurité et la responsabilité vous appartiennent.
 > En effet, nous n'avons pas accès aux données hébergées sur ces machines et n’en sommes pas les administrateurs. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
-> Nous mettons à disposition ce guide afin de vous accompagner au mieux sur les tâches courantes. Toutefois, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés ou des doutes quant à l’administration, l'utilisation ou la sécurisation de votre serveur.
+> Nous mettons à disposition ce guide afin de vous accompagner au mieux sur les tâches courantes. Toutefois, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés ou des doutes quant à l’administration, l'utilisation ou la sécurisation de votre serveur.
 > Plus d’informations dans la section « Aller plus loin » de ce guide.
 >
 
 ## Prérequis
 
-- Un [VPS](https://www.ovhcloud.com/fr/vps/) dans votre compte OVHcloud
+- Un [VPS](/links/bare-metal/vps) dans votre compte OVHcloud
 - Avoir un accès administrateur (sudo) à votre serveur via SSH
 
 ## En pratique
@@ -277,7 +277,7 @@ La sécurisation de vos données est un élément clé, c'est pourquoi OVHcloud 
 - L'option `Snapshot` qui vous permet de créer un instantané manuel.
 - L'option de `Sauvegarde automatique` vous permet de conserver des sauvegardes régulières de votre VPS (à l'exception des disques supplémentaires).
 
-Vous trouverez toutes les informations sur les solutions de sauvegarde disponibles pour votre service sur la [page produit](https://www.ovhcloud.com/fr/vps/options/) et dans les [guides respectifs](/products/bare-metal-cloud-virtual-private-servers).
+Vous trouverez toutes les informations sur les solutions de sauvegarde disponibles pour votre service sur la [page produit](/links/bare-metal/vps-options) et dans les [guides respectifs](/products/bare-metal-cloud-virtual-private-servers).
 
 ## Aller plus loin
 
@@ -291,4 +291,4 @@ Vous trouverez toutes les informations sur les solutions de sauvegarde disponibl
 
 [Configurer le Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

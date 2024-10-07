@@ -13,12 +13,12 @@ When you order your VPS, you can choose a distribution or operating system to in
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and security. Since we have no administrative access to your devices, it is your responsibility to manage the software and to ensure they function correctly.
 > 
-> This guide is designed to help you with the most common tasks. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) if you have difficulties or doubts concerning the administration, usage or implementation of security measures on a server.
+> This guide is designed to help you with the most common tasks. Nevertheless, we recommend that you contact a [specialist service provider](/links/partner) if you have difficulties or doubts concerning the administration, usage or implementation of security measures on a server.
 >
 
 ## Requirements
 
-- A [Virtual Private Server](https://www.ovhcloud.com/en-gb/vps/) in your OVHcloud account
+- A [Virtual Private Server](/links/bare-metal/vps) in your OVHcloud account
 - Administrative access (sudo) via SSH to your server
 
 ## Instructions
@@ -39,15 +39,15 @@ Developers of distributions and operating systems offer frequent software packag
 > [!tabs]
 > Ubuntu
 >>
->> This update will go through two steps.
+>> This update will take place in two steps:
 >> 
->> - Updating the package list :
+>> - Updating the package list:
 >> 
 >> ```bash
 >> sudo apt update
 >> ```
 >> 
->> - The actual update of the packages :
+>> - Updating the actual packages:
 >> 
 >> ```bash
 >> sudo apt upgrade
@@ -249,7 +249,7 @@ Restart the service to make sure it runs with the customisations applied:
 sudo systemctl restart fail2ban
 ```
 
-2\. Order with `service` (old method, still compatible):
+2\. Command with `service` (legacy method, still compatible):
 
 ```bash
 sudo service fail2ban restart
@@ -274,7 +274,7 @@ Securing your data is a key element, which is why OVHcloud offers you several ba
 - The `Snapshot` option allows you to create a manual snapshot.
 - The `Automated Backup` option enables you to keep regular backups of your VPS (excluding additional disks).
 
-You can find all information on the available backup solutions for your service on the [product page](https://www.ovhcloud.com/en-gb/vps/options/) and in the [respective guides](/products/bare-metal-cloud-virtual-private-servers).
+You can find all information on the available backup solutions for your service on the [product page](/links/bare-metal/vps-options) and in the [respective guides](/products/bare-metal-cloud-virtual-private-servers).
 
 ## Go further
 
