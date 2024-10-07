@@ -6,7 +6,7 @@ updated: 2024-10-04
 
 ## Objectif
 
-Les offres d'hébergement web OVHcloud donnent accès à un espace de stockage FTP. Cet espace FTP permet, par exemple, de mettre en ligne les fichiers de vos sites web ou de vos applications. L'accès à cet espace est possible via un utilisateur FTP ou SSH avec les mots de passe qui leurs sont associés. Dans le cadre de vos activités, vous pouvez être amenés à avoir plusieurs utilisateurs FTP pour vos différents collaborateurs.
+Les offres d'hébergement web OVHcloud donnent accès à un espace de stockage FTP. Cet espace FTP permet, par exemple, de mettre en ligne les fichiers de vos sites web ou de vos applications. L'accès à cet espace est possible via un utilisateur FTP ou SSH et le mot de passe associé. Dans le cadre de vos activités, vous pouvez être amené à avoir plusieurs utilisateurs FTP pour vos différents collaborateurs.
 
 **Découvrez comment créer, modifier ou supprimer des utilisateurs FTP sur votre hébergement web OVHcloud.**
 
