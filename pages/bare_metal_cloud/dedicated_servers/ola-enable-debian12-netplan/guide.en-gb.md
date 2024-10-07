@@ -1,7 +1,7 @@
 ---
 title: "How to Configure Your NIC for Link Aggregation in Debian 12 or Ubuntu 24.04 (Netplan)"
 excerpt: "Enable Link Aggregation in your Debian 12 or Ubuntu 24.04 server"
-updated: 2024-10-04
+updated: 2024-10-07
 ---
 
 ## Objective
@@ -58,8 +58,8 @@ network:
             macaddress: a1:b2:c3:d4:e5:c6
             accept-ra: false
             addresses: 
-                - 141.94.154.196/32
-                - 2001:41d0:254:c400::/56
+                - 203.0.113.1/32
+                - 2001:db8:1:1b00:203:0:112:0/56
             routes: 
                 - on-link: true
                   to: default
@@ -69,8 +69,8 @@ network:
                   via: fe80::1
             nameservers: 
                 addresses: 
-                - 213.186.33.99
-                - 2001:41d0:3:163::1
+                - 203.0.113.20
+                - 2001:db8:1:1b00:203:0:112:1
             interfaces: 
                 - ens22f0np0
                 - ens22f1np1
@@ -103,14 +103,14 @@ network:
             accept-ra: false
             dhcp4: true
             addresses: 
-                - 2001:41d0:254:c400::/56
+                - 2001:db8:1:1b00:203:0:112:0/56
             routes: 
                 - on-link: true
                   to: default
                   via: fe80::1
             nameservers: 
                 addresses: 
-                - 2001:41d0:3:163::1
+                - 2001:db8:1:1b00:203:0:112:1
             interfaces: 
                 - ens22f0np0
                 - ens22f1np1
