@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - Audit des cas complexes de migration"
 excerpt: "Découvrez les méthodes d'examen des scénarios les plus complexes au sein de vos services VMware on OVHcloud dans le but de vous préparer à migrer vers VCD"
-updated: 2024-10-04
+updated: 2024-10-07
 ---
 
 > [!primary]
@@ -60,12 +60,12 @@ Les migrations seront effectuées en 4 vagues, à partir du mois de septembre, s
 
 Le calendrier prévisionnel, compatible avec ces environnements lors de la migration, est le suivant :
 
-| **Vagues**&nbsp;&nbsp;&nbsp;&nbsp; |     **Dates**     | **Offre<br/>cible** | **NSX** | **vRack** | **Microsoft<br/>(SPLA)** | **Résumé des environnements compatibles avec la migration**                                                                                           |                                                                                                                
-|:----------------------------------:|:-----------------:|:-------------------:|:-------:|:---------:|:------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------|
-|             `Vague 1`              | **Novembre 2024** |     `Standard`      |    ❌    |     ❌     |            ❌             | - **Sans** licence VM Microsoft Windows (SPLA) fournie par OVHcloud<br/>- **Sans** NSX<br/>- **Sans** High performance storage (vSAN)                 |
-|             `Vague 2`              | **Janvier 2025**  |     `Standard`      |    ❌    |     ❌     |            ✅             | - **Avec** licence VM Microsoft Windows (SPLA) fournie par OVHcloud<br/>- **Sans** NSX<br/>- **Sans** High performance storage (vSAN)                 |
-|             `Vague 3`              | **Février 2025**  |     `Advanced`      |    ✅    |     ✅     |            ✅             | - **Avec** licence VM Microsoft Windows (SPLA) fournie par OVHcloud<br/>- **Avec** NSX + vRack support<br/>- **Sans** High performance storage (vSAN) |
-|             `Vague 4`              |   **Mars 2025**   |      `Premium`      |    ✅    |     ✅     |            ✅             | - **Avec** licence Microsoft Windows (SPLA) fournie par OVHcloud<br/>- **Avec** NSX + vRack support<br/>- **Avec** High performance storage (vSAN)    |
+| **Vagues**&nbsp;&nbsp;&nbsp;&nbsp;;&nbsp; |           **Dates**           | **Offre<br/>cible** | **NSX** | **vRack** | **Microsoft<br/>(SPLA)** | **Résumé des environnements compatibles avec la migration**                                                                                           |                                                                                                                
+|:-----------------------------------------:|:-----------------------------:|:-------------------:|:-------:|:---------:|:------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                 `Vague 1`                 |       **Novembre 2024**       |     `Standard`      |    ❌    |     ❌     |            ❌             | - **Sans** licence VM Microsoft Windows (SPLA) fournie par OVHcloud<br/>- **Sans** NSX<br/>- **Sans** High performance storage (vSAN)                 |
+|                 `Vague 2`                 | **Décembre 2024<br/>Janvier 2025** |     `Standard`      |    ❌    |     ❌     |            ✅             | - **Avec** licence VM Microsoft Windows (SPLA) fournie par OVHcloud<br/>- **Sans** NSX<br/>- **Sans** High performance storage (vSAN)                 |
+|                 `Vague 3`                 |       **Février 2025**        |     `Advanced`      |    ✅    |     ✅     |            ✅             | - **Avec** licence VM Microsoft Windows (SPLA) fournie par OVHcloud<br/>- **Avec** NSX + vRack support<br/>- **Sans** High performance storage (vSAN) |
+|                 `Vague 4`                 |         **Mars 2025**         |      `Premium`      |    ✅    |     ✅     |            ✅             | - **Avec** licence Microsoft Windows (SPLA) fournie par OVHcloud<br/>- **Avec** NSX + vRack support<br/>- **Avec** High performance storage (vSAN)    |
 
 Au cours de ce processus, vos données resteront inchangées, à l'exception du vSAN Storage. Vos adresses IP resteront inchangées également.
 
