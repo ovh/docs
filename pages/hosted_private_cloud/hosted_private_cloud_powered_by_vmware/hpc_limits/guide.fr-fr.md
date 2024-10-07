@@ -1,7 +1,7 @@
 ---
 title: "Capacités techniques"
 excerpt: "Retrouvez les capacités et limitations techniques des solutions Hosted Private Cloud fournies par OVHcloud"
-updated: 2024-09-26
+updated: 2023-03-23
 ---
 
 ## Objectif
