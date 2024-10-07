@@ -94,7 +94,7 @@ Une fois les modifications faites, cliquez sur `Suivant`{.action} pour accéder 
 >
 > Si vous souhaitez uniquement changer le mot de passe de l'utilisateur FTP, consultez notre guide « [Modifier le mot de passe d'un utilisateur FTP](/pages/web_cloud/web_hosting/ftp_change_password) ».
 >
-> Si votre modification consiste à vouloir changer le nom de l'utilisateur FTP, cette fonctionnalité est indisponible. Vous devrez obligatoirement [créer un nouvel utilisateur FTP](#create-ftp-user) avec le nouveau nom d'utilisateur désiré. Libre à vous ensuite de [supprimer l'ancien utilisateur FTP](#delete-ftp-user) si besoin.
+> Si vous souhaitez changer le nom de l'utilisateur FTP, sachez que cette fonctionnalité est indisponible. Vous devrez obligatoirement [créer un nouvel utilisateur FTP](#create-ftp-user) avec le nouveau nom d'utilisateur désiré. Libre à vous ensuite de [supprimer l'ancien utilisateur FTP](#delete-ftp-user) si besoin.
 
 ### Supprimer un utilisateur FTP <a name="delete-ftp-user"></a>
 
