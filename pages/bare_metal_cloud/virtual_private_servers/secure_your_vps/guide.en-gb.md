@@ -25,7 +25,7 @@ When you order your VPS, you can choose a distribution or operating system to in
 
 > [!primary]
 >
-> Bear in mind that this is a general guide based on an Ubuntu server OS. Some commands need to be adapted to the distribution or operating system you are using and some tips will advise you to use third-party tools. Please refer to the official documentation for these applications if you require assistance.
+> Bear in mind that this is a general guide based on Ubuntu, Debian and CentOS operating systems. Some commands need to be adapted to the distribution or operating system you are using and some tips will advise you to use third-party tools. Please refer to the official documentation for these applications if you require assistance.
 >
 > If you are configuring your first OVHcloud VPS, we recommend to consult our guide on [getting started with a VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps) before continuing.
 >
@@ -36,23 +36,47 @@ The following examples presume that you are logged in as a [user with elevated p
 
 Developers of distributions and operating systems offer frequent software package updates, very often for security reasons. Ensuring that your distribution or operating system is updated is a key point for securing your VPS.
 
-This update will take place in two steps:
-
-- Updating the package list
-
-```bash
-sudo apt update
-```
-
-- Updating the actual packages
-
-```bash
-sudo apt upgrade
-```
+> [!tabs]
+> Ubuntu
+>>
+>> This update will go through two steps.
+>> 
+>> - Updating the package list :
+>> 
+>> ```bash
+>> sudo apt update
+>> ```
+>> 
+>> - The actual update of the packages :
+>> 
+>> ```bash
+>> sudo apt upgrade
+>> ```
+>>
+> Debian
+>> 
+>> ```bash
+>> sudo apt update && sudo apt upgrade
+>> ```
+>>
+>> The command is identical to Ubuntu because Debian and Ubuntu both use `apt`.
+>>
+> CentOS
+>>
+>> ```bash
+>> sudo yum update
+>> ```
+>>
+>> On CentOS, the command to update the operating system uses `yum` or `dnf`, depending on the version.
 
 This operation needs to be performed regularly to keep a system up-to-date.
 
 ### Changing the default SSH listening port <a name="changesshport"></a>
+
+> [!primary]
+>
+> For this section, the following command lines are the same for Ubuntu, Debian, and CentOS.
+>
 
 One of the first things to do on your server is configuring the SSH service's listening port. It is set to **port 22** by default, therefore server hacking attempts by robots will target this port. Modifying this setting by using a different port is a simple measure to harden your server against automated attacks.
 
@@ -150,9 +174,21 @@ Fail2ban is an intrusion prevention software framework designed to block IP addr
 
 To install the software package, use the following command:
 
-```bash
-sudo apt install fail2ban
-```
+> [!tabs]
+> Ubuntu and Debian
+>> 
+>> ```bash
+>> sudo apt install fail2ban
+>> ```
+>>
+> CentOS
+>>
+>> On CentOS 7 and CentOS 8 (or RHEL), first install the EPEL repository (**E**xtra **P**ackages for **E**nterprise **L**inux), then Fail2ban:
+>>
+>> ```bash
+>> sudo yum install epel-release
+>> sudo yum install fail2ban
+>> ```
 
 You can customise the Fail2ban configuration files to protect services that are exposed to the public Internet from repeated login attempts.
 
@@ -206,6 +242,14 @@ The best practice approach is to enable Fail2ban only for the services that are 
 Once you have completed your changes, save the file and close the editor.
 
 Restart the service to make sure it runs with the customisations applied:
+
+1\. Commande recommandée avec `systemctl` :
+
+```bash
+sudo systemctl restart fail2ban
+```
+
+2\. Commande avec `service` (ancienne méthode, toujours compatible) :
 
 ```bash
 sudo service fail2ban restart
