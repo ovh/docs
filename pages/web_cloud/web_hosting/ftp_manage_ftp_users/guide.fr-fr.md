@@ -88,7 +88,7 @@ A l'exception du nom de l'utilisateur FTP et de son mot de passe associé, vous 
 
 Par ailleurs, vous pouvez si nécessaire *désactiver l'utilisateur* en cochant la case prévue à cet effet. Cette option peut être utile si vous souhaitez empêcher un collaborateur d'accéder à votre espace FTP sans supprimer les logs FTP et SSH qui lui sont associés. En effet, ces logs vous permettront de déterminer quelles ont été les opérations réalisées par votre collaborateur si vous constatez des interventions non désirées sur votre hébergement web.
 
-Une fois les modifications faites, cliquez sur `Suivant`{.action} pour accéder à l'étape 2, vérifiez vos demandes de modifications lors de l'étape 2, puis cliquez sur `Valider`{.action} pour finaliser la demande de modification de l'utilisateur FTP sur votre hébergement web.
+Une fois les modifications faites, cliquez sur `Suivant`{.action} pour accéder à l'étape 2. Vérifiez alors vos demandes de modifications, puis cliquez sur `Valider`{.action} pour finaliser la demande de modification de l'utilisateur FTP sur votre hébergement web.
 
 > [!primary]
 >
