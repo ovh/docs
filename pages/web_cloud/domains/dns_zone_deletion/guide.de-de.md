@@ -39,7 +39,7 @@ So kann es beispielsweise vorkommen, dass Sie eine DNS-Zone für Ihren Domainnam
 
 > [!primary]
 >
-> DNS-Zone löschen löscht nicht den zugehörigen Domaineintrag. Sie verlieren Ihren Domainnamen also nicht, wenn Sie eine mit Ihrer Domain verbundene DNS-Zone löschen.
+> DNS-Zone löschen löscht nicht den zugehörigen Domainnamen. Sie verlieren Ihren Domainnamen also nicht, wenn Sie dessen DNS-Zone löschen.
 >
 
 ## In der praktischen Anwendung
