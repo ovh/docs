@@ -1,7 +1,7 @@
 ---
 title: "Sécuriser un VPS"
 excerpt: "Découvrez comment mettre en place des mesures de sécurité basiques pour protéger votre VPS contre les attaques et les accès non autorisés"
-updated: 2024-10-04
+updated: 2024-10-07
 ---
 
 ## Objectif
@@ -60,6 +60,7 @@ Faire en sorte que votre distribution ou système d'exploitation est à jour est
 >> ```bash
 >> sudo apt update && sudo apt upgrade
 >> ```
+>>
 >> La commande est identique à Ubuntu car Debian et Ubuntu utilisent tous deux `apt`.
 >>
 > CentOS
@@ -67,6 +68,7 @@ Faire en sorte que votre distribution ou système d'exploitation est à jour est
 >> ```bash
 >> sudo yum update
 >> ```
+>>
 >> Sur CentOS, la commande pour mettre à jour le système d'exploitation utilise `yum` ou `dnf`, selon la version.
 
 Cette opération doit être effectuée régulièrement afin de maintenir un système à jour.
@@ -244,13 +246,13 @@ Une fois vos modifications terminées, enregistrez le fichier et fermez l'édite
 
 Redémarrez le service pour vous assurer qu'il s'exécute avec les personnalisations appliquées :
 
-1. Commande recommandée avec `systemctl` :
+1\. Commande recommandée avec `systemctl` :
 
 ```bash
 sudo systemctl restart fail2ban
 ```
 
-2. Commande avec `service` (ancienne méthode, toujours compatible) :
+2\. Commande avec `service` (ancienne méthode, toujours compatible) :
 
 ```bash
 sudo service fail2ban restart
