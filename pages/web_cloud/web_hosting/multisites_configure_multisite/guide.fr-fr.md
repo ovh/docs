@@ -166,7 +166,7 @@ Dans le tableau présent dans l'onglet `Multisite`, une colonne `Diagnostic` vou
 
 ![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-green-info.png){.thumbnail}
 
-Lorsque l'icône `A/AAAA` est verte dans la colonne `Diagnostic`, cela signifie que l'enregistrement **A** (pour les adresses IPv4) et/ou l'enregistrement **AAAA** (pour les adresses IPv6) de votre nom de domaine pointe correctement vers l'adresse IP de votre hébergement. Cela indique que la configuration DNS est conforme et que votre nom de domaine est bien relié à l'hébergement prévu.
+Lorsque l'icône `A/AAAA` est verte dans la colonne `Diagnostic`, cela signifie que l'enregistrement **A** (pour les adresses IPv4) et/ou l'enregistrement **AAAA** (pour les adresses IPv6) de votre nom de domaine pointe correctement vers l'adresse IP de votre hébergement web. La configuration DNS de votre nom de domaine est donc conforme pour fonctionner avec votre hébergement web.
 
 ##### A/AAAA jaune
 
