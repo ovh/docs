@@ -186,7 +186,7 @@ Follow [these instructions](#modify) to change your solution.
 >
 > On October 31, 2024, you downgrade this **Pro** plan to the [Personal](/links/web/hosting-personal-offer) plan.
 >
-> As a result, the amount corresponding to the remaining duration on the **Pro** subscription (2 months, from 01 November 2024 to 01 January 2025) is lost.  
+> As a result, the amount corresponding to the remaining duration on the **Pro** subscription (2 months, from 01 November 2024 to 01 January 2025) is lost.
 > From 01 November 2024, the **Personal** subscription is billed at the current price (even if you had paid for the remaining 2 months of the **Pro** offer).
 
 Follow [these instructions](#modify) to change your solution.
