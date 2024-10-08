@@ -237,6 +237,11 @@ Cliquez enfin sur `TERMINER`{.action}.
 
 ### Étape 4 - Création d'un réseau privé
 
+> [!warning]
+>
+> Vous pouvez consulter le guide suivant pour connaitre les limitations réseau au sein de VCD : [VMware Cloud Director - Concepts réseau et bonnes pratiques](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts).
+>
+
 /// details | Comment créer un réseau avec VMware Cloud Director on OVHcloud ?
 
 Nous allons à présent créer un nouveau réseau et joindre nos réglages préconfigurés.
