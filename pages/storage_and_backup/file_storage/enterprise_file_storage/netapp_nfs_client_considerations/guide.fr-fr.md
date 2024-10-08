@@ -1,22 +1,23 @@
 ---
-title: "Enterprise File Storage - Particularités des clients NFS Microsoft Windows"
+title: "Enterprise File Storage - Particularités concernant certains clients NFS"
 excerpt: "Paramètres spécifiques à vérifier et/ou à mettre en oeuvre concernant l'offre Enterprise File Storage"
 updated: 2024-10-08
 ---
 
 ## Objectif
 
-Permettre l'accès en lecture/écriture à votre EFS depuis un client NFS Microsoft Windows
+Permettre l'accès en lecture/écriture à votre EFS depuis certains clients NFS.
 
 
-### Vérification 1
+# Clients NFS Microsoft Windows  
 
-Assurez-vous que l'utilisateur Windows qui est utilisé pour accéder à votre EFS dispose de droits suffisants.
+### Assurez-vous que l'utilisateur Windows qui est utilisé pour accéder à votre EFS dispose de droits suffisants.
+
 En effet, le couple UID/GID doit être configuré à 0 (droit unix root).
  
 Si ce n'est pas le cas vous aurez des erreurs d'accès à votre EFS car, lorsque NFS est autorisé sur une machine Windows, un utilisateur UNIX est créé avec l'UID et le GID par défaut à -2 (ou 4294967294).
 
-Comme solution de contournement, l'UID et le GID peuvent être forcé à 0 sur la machine Windows qui accèdent à l'EFS
+Comme solution de contournement, l'UID et le GID peuvent être forcé à 0 sur la machine Windows qui accèdent à votre EFS
 
 - Démarrez l'éditeur de registre sur la machine cliente.
 - Localisez HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ClientForNFS\CurrentVersion\Default.
@@ -32,9 +33,7 @@ Documentations de référence:
 
 
  
-### Vérification 2
-
-Autorisez les connexions d'invités non sécurisées pour les protocoles SMB2 et SMB3
+### Autorisez les connexions d'invités non sécurisées pour les protocoles SMB2 et SMB3
  
 L'activation des connexions invités peut être nécessaire pour accéder à votre EFS car celui-ci ne fournit pas de compte utilisateur mais seulement un accès invité.
 
@@ -49,9 +48,7 @@ Documentation de référence:
 
  
 
-### Vérification 3
-
-Demandez l'activation de la fonctionnalité "showmount" au support OVHcloud
+### Demandez l'activation de la fonctionnalité "showmount" au support OVHcloud
  
 Pour des raisons de sécurité, l'option "showmount" permettant de lister les partages disponibles sur un serveur NFS est désactivée par défaut.
 Cependant, si vous obtenez des erreurs de type "erreur périphérique invalide" lors de certaines opérations d'écritures ou si vous utilisez une application qui doit absolument utiliser cette fonctionnalité, merci d'ouvrir un ticket au support afin de demander qu'elle soit activée exceptionnellement.
