@@ -1,7 +1,7 @@
 ---
 title: Enterprise File Storage - Conceitos
 excerpt: "Descubra os princípios de funcionamento da oferta Enterprise File Storage"
-updated: 2022-04-07
+updated: 2024-09-24
 ---
 
 > [!primary]
@@ -26,7 +26,7 @@ Pode encomendar um ou vários espaços de armazenamento entre 1TB e 58TB na sua 
 
 Quando encomenda, através da sua conta OVHcloud, um serviço Enterprise File Storage entre 1 e 58 TB, recebe um espaço de armazenamento NFS.
 
-A conta OVHcloud é, por predefinição, o contacto administrador, técnico e de faturação do serviço. Encontre mais informações no nosso guia "[Gerir os contactos dos seus serviços»](/pages/account_and_service_management/account_information/managing_contact)".
+A conta OVHcloud é, por predefinição, o contacto administrador, técnico e de faturação do serviço. Encontre mais informações no nosso guia "[Gerir os contactos dos seus serviços](/pages/account_and_service_management/account_information/managing_contact)".
 
 ![Enterprise File Storage 1](images/Netapp_Concept_1.png)
 

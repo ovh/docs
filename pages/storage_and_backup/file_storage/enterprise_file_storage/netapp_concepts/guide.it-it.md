@@ -1,7 +1,7 @@
 ---
 title: Enterprise File Storage - Concetti
 excerpt: "Scopri i principi di funzionamento dell'offerta Enterprise File Storage"
-updated: 2022-04-07
+updated: 2024-09-24
 ---
 
 > [!primary]
@@ -26,7 +26,7 @@ Puoi ordinare uno o più spazi di archiviazione tra 1TB e 58TB sul tuo account, 
 
 Quando ordini tramite il tuo account OVHcloud un servizio Enterprise File Storage da 1 a 58 TB, ricevi uno spazio di storage NFS.
 
-L'account OVHcloud è di default il contatto amministratore, tecnico e di fatturazione del servizio. Per maggiori informazioni consulta la nostra guida "[Gestire i contatti dei propri servizi"](/pages/account_and_service_management/account_information/managing_contacts)".
+L'account OVHcloud è di default il contatto amministratore, tecnico e di fatturazione del servizio. Per maggiori informazioni consulta la nostra guida "[Gestire i contatti dei propri servizi"](/pages/account_and_service_management/account_information/managing_contacts).
 
 ![Enterprise File Storage 1](images/Netapp_Concept_1.png)
 
@@ -95,7 +95,7 @@ Per maggiori informazioni, consulta la guida ["Gestire gli Snapshot di un volume
 - Un volume non può superare la dimensione di 29 TB meno il 5% riservato per gli Snapshot (1.45TB), cioè 27,55 TB
 - La dimensione minima di un volume è di 100 GB
     - Granularità per volume: 1 GB
-    <- Dimensione massima di un file: 16 TB
+    - Dimensione massima di un file: 16 TB
 
 #### Limiti degli Snapshot
 
@@ -136,6 +136,6 @@ Per maggiori informazioni, consulta la guida ["Gestire gli Snapshot di un volume
 
 ## Per saperne di più
 
-Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](https://www.ovhcloud.com/it/professional-services/) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
+Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](/links/professional-services) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

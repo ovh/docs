@@ -5,7 +5,7 @@ updated: 2024-09-24
 ---
 
 > [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón Contribuir de esta página.
 >
 
 ## Objetivo
@@ -26,7 +26,7 @@ Puede contratar uno o varios espacios de almacenamiento entre 1 TB y 58 TB en su
 
 Al contratar, a través de su cuenta de OVHcloud, un servicio Enterprise File Storage de entre 1 y 58 TB, recibirá un espacio de almacenamiento NFS.
 
-La cuenta OVHcloud es, por defecto, el contacto administrador, técnico y de facturación del servicio. Para más información, consulte nuestra guía «[Gestionar los contactos de sus servicios»](/pages/account_and_service_management/account_information/managing_contacts)».
+La cuenta OVHcloud es, por defecto, el contacto administrador, técnico y de facturación del servicio. Para más información, consulte nuestra guía [Gestionar los contactos de sus servicios](/pages/account_and_service_management/account_information/managing_contacts).
 
 ![Enterprise File Storage 1](images/Netapp_Concept_1.png)
 
@@ -51,7 +51,7 @@ Una vez contratado el servicio Enterprise File Storage, tendrá a su disposició
 > - El tamaño de un volumen es escalable, tanto al alza como a la baja.
 >
 
-Para más información, consulte la guía [«Gestionar los volúmenes»](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_volumes).
+Para más información, consulte la guía [Gestionar los volúmenes](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_volumes).
 
 ### Principio de funcionamiento de los ACL
 
@@ -66,7 +66,7 @@ Estas reglas están formadas por una dirección IP de origen de la red en format
 > Puede crear una o varias reglas por volumen.
 >
 
-Para más información, consulte la guía [«Gestionar las ACL de un volumen»](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_volume_acl).
+Para más información, consulte la guía [Gestionar las ACL de un volumen](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_volume_acl).
 
 ### Principio de funcionamiento de los snapshots
 
@@ -82,7 +82,7 @@ El consumo diario observado de los snapshots está comprendido entre el 1 y el 5
 
 ![Enterprise File Storage 4](images/Netapp_Concept_4.png)
 
-Para más información, consulte la guía [«Gestionar los snapshots de un volumen»](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_volume_snapshots).
+Para más información, consulte la guía [Gestionar los snapshots de un volumen](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_volume_snapshots).
 
 ### Límites de la oferta Enterprise File Storage
 
@@ -121,9 +121,9 @@ Para más información, consulte la guía [«Gestionar los snapshots de un volum
 >
 > ¿Cuál es la diferencia entre Terabyte (TB) y Tebibyte (TiB)?
 >
-> - T, el prefijo «tera-» es una métrica y un estándar IT que utiliza la base-10. 1 TB = 10^12 bytes = 1000000000000 bytes = 1000 GB.
+> - T, el prefijo "tera-" es una métrica y un estándar IT que utiliza la base-10. 1 TB = 10^12 bytes = 1000000000000 bytes = 1000 GB.
 >
-> - Ti, el prefijo «Tebi-», se creó más tarde como uno de los prefijos binarios que ahora son estándares IEC/ISO y que utilizan la base-2. Esto significa 1024^4=2^40. 1 TiB = 1099511627776 bytes= 1024 GiB.
+> - Ti, el prefijo "Tebi-", se creó más tarde como uno de los prefijos binarios que ahora son estándares IEC/ISO y que utilizan la base-2. Esto significa 1024^4=2^40. 1 TiB = 1099511627776 bytes= 1024 GiB.
 >
 > - Los ordenadores utilizan la base 2, por lo que la cantidad de almacenamiento que puede ver en su sistema operativo se expresa en TiB. Los proveedores de almacenamiento tienden a usar TB porque es un número mayor que TiB.
 >
@@ -136,6 +136,6 @@ Para más información, consulte la guía [«Gestionar los snapshots de un volum
 
 ## Más información
 
-Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es-es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
+Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](/links/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

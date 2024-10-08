@@ -1,7 +1,7 @@
 ---
 title: Enterprise File Storage - Koncepcje
 excerpt: "Sprawdź zasady działania oferty Enterprise File Storage"
-updated: 2022-04-07
+updated: 2024-09-24
 ---
 
 > [!primary]
@@ -51,7 +51,7 @@ Po zamówieniu usługi Enterprise File Storage, masz do dyspozycji usługę odpo
 > - Rozmiar wolumenu jest skalowalny, zarówno w górę, jak i w dół.
 >
 
-Więcej informacji na ten temat znajdziesz w przewodniku ["Zarządzanie wolumenami"] (/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_volumes).
+Więcej informacji na ten temat znajdziesz w przewodniku ["Zarządzanie wolumenami"](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_volumes).
 
 ### Zasada działania ACL
 
@@ -136,6 +136,6 @@ Więcej informacji znajdziesz w przewodniku ["Zarządzanie snapshotami wolumenu"
 
 ## Sprawdź również
 
-Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
+Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](/links/professional-services), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
 
 Dołącz do społeczności naszych użytkowników na <https://community.ovh.com/en/>.
