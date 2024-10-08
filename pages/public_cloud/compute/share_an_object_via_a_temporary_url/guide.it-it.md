@@ -1,7 +1,7 @@
 ---
 title: 'Condividere un oggetto con un indirizzo temporaneo'
 excerpt: 'Come condividere un oggetto senza fornire informazioni personali'
-updated: 2024-10-02
+updated: 2024-10-07
 ---
 
 ## Obiettivo 

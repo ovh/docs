@@ -1,7 +1,7 @@
 ---
 title: 'Sharing an object via a temporary URL'
 excerpt: 'Find out how to share an object via a temporary URL'
-updated: 2024-10-02
+updated: 2024-10-07
 ---
 
 ## Objective 

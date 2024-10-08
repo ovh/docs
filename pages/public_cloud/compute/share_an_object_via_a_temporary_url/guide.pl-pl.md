@@ -1,7 +1,7 @@
 ---
 title: 'Udostępnianie obiektu za pomocą tymczasowego adresu'
 excerpt: 'Dowiedz się, jak udostępnić obiekt bez ujawniania danych osobowych'
-updated: 2024-10-02
+updated: 2024-10-07
 ---
 
 ## Wprowadzenie 

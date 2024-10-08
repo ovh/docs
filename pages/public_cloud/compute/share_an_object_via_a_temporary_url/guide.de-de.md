@@ -1,7 +1,7 @@
 ---
 title: 'Objekt über eine temporäre URL teilen'
 excerpt: 'So teilen Sie ein Objekt, ohne persönliche Informationen weiterzugeben'
-updated: 2024-10-02
+updated: 2024-10-07
 ---
 
 ## Einleitung 
@@ -15,7 +15,7 @@ Wenn Sie eine Datei für einen anderen Benutzer freigeben, möchten Sie dabei na
 ## Voraussetzungen
 
 - [Sie haben die Umgebung für die Verwendung der OpenStack-API vorbereitet](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api).
-- Sie haben die OpenStack-Umgebungsvariablen eingerichtet.
+- [Sie haben die OpenStack-Umgebungsvariablen eingerichtet](/pages/public_cloud/compute/loading_openstack_environment_variables).
 - Python ist auf Ihrem System installiert.
 
 ## In der praktischen Anwendung
