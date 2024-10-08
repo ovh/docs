@@ -1,7 +1,7 @@
 ---
 title: Enterprise File Storage - Conceitos
 excerpt: "Descubra os princípios de funcionamento da oferta Enterprise File Storage"
-updated: 2022-04-07
+updated: 2024-09-24
 ---
 
 > [!primary]
@@ -10,73 +10,54 @@ updated: 2022-04-07
 
 ## Objetivo
 
-A oferta OVHcloud Enterprise File Storage permite-lhe encomendar pools de capacidade e gerir assim volumes de ficheiros acessíveis numa rede.
-Neste guia de arranque rápido, descubra os conceitos associados à sua oferta Enterprise File Storage bem como os limites da oferta.
+Enterprise File Storage permite-lhe beneficiar de volumes de armazenamento NFS inteiramente geridos pela OVHcloud. Neste guia de início rápido, descubra os conceitos associados ao seu serviço Enterprise File Storage, bem como os seus limites.
 
-**Saiba como funciona a oferta Enterprise File Storage.**
+**Descubra como funciona a oferta Enterprise File Storage.**
 
 ## Instruções
 
 ### Enterprise File Storage, o que é?
 
-Enterprise File Storage é uma oferta de sistema de ficheiros gerida pela OVHcloud e baseada na solução NetApp&#174; ONTAP Software-Defined Storage.
+Enterprise File Storage é uma oferta de sistema de ficheiros gerida pela OVHcloud e baseada na solução NetApp&#174; ONTAP.
 
-Pode encomendar um ou vários espaços de armazenamento entre 1TiB e 29TiB na sua conta.
+Pode encomendar um ou vários espaços de armazenamento entre 1TB e 58TB na sua conta, com uma granularidade de 1 TB.
 
-> [!primary]
->
-> Qual é a diferença entre Terabyte (TB) e Tebibyte (TiB)?
->
-> - T, o prefixo "tera-" é uma métrica e um standard IT que utiliza a base-10. Portanto, 1 TB = 1012 bytes = 100000000000 bytes = 1000 GB.
->
-> - Ti, o prefixo "Tebi-", foi criado mais tarde como um dos prefixos binários que são atualmente padrões IEC/ISO e que utiliza a base-2. Isto significa 10244=240. Portanto 1 TiB = 109951162776 bytes = 1024 GiB.
->
-> - Os computadores utilizam a base 2, pelo que a quantidade de armazenamento que pode ver no seu sistema operativo é expressa em TiB. Os fornecedores de armazenamento tendem a utilizar o TB, uma vez que este é um número superior ao TiB.
->
-> - O problema é que são semelhantes (2,4%) ao nível do KB, mas ao nível do TB, existe uma diferença de 10% e o aumento é exponencial.
->
-> - Para o Enterprise File Storage, porque queremos ser transparentes consigo, entregaremos o volume em TiB mesmo que veja o TB como unidade, porque o grande público utiliza o TB.
->
-> - Assim, se encomendar um serviço Enterprise File Storage de 1 TB, disporá de facto de 1 TiB = 1,09951 TB.
->
+### Princípio de funcionamento dos serviços
 
-### Princípio de funcionamento das capacidades pools
+Quando encomenda, através da sua conta OVHcloud, um serviço Enterprise File Storage entre 1 e 58 TB, recebe um espaço de armazenamento NFS.
 
-Quando encomenda, através da sua conta OVHcloud, um serviço Enterprise File Storage entre 1 e 29 TB, recebe uma capacidade pool NetApp&#174;.
-
-A conta OVHcloud é por predefinição o contacto administrador, técnico e faturação do serviço. Para mais informações, consulte o nosso manual ["Como gerir os contactos (gestores) dos serviços OVHcloud"](/pages/account_and_service_management/account_information/managing_contacts).
+A conta OVHcloud é, por predefinição, o contacto administrador, técnico e de faturação do serviço. Encontre mais informações no nosso guia "[Gerir os contactos dos seus serviços](/pages/account_and_service_management/account_information/managing_contact)".
 
 ![Enterprise File Storage 1](images/Netapp_Concept_1.png)
 
 > [!primary]
 >
-> Cada capacidade pool só pode pertencer a uma única conta OVHcloud (NIC-handle). No entanto, os contactos técnicos e de faturação podem ser alterados para outras contas.
+> Cada serviço só pode pertencer a uma única conta OVHcloud (NIC-handle). No entanto, os contactos técnicos e faturação podem ser alterados em benefício de outras contas.
 >
 
 ### Princípio de funcionamento dos seus volumes
 
-Uma vez a oferta Enterprise File Storage em serviço, pode criar um ou vários volumes na sua capacidade pool.
+Assim que tiver encomendado o seu serviço Enterprise File Storage, tem à sua disposição um serviço correspondente a uma capacidade de armazenamento. Neste serviço, pode criar um ou vários volumes, cada volume corresponde a uma partição.
 <br>Estes volumes permitem-lhe armazenar ficheiros e são acessíveis em rede através de um endereço IP fornecido pela OVHcloud.
-<br>A criação de um volume aciona automaticamente a criação de um caminho de acesso principal, bem como três caminhos de acesso secundários.
 
 ![Enterprise File Storage 2](images/Netapp_Concept_2.png)
 
 > [!primary]
 >
-> - Cada volume pertence a uma única capacidade pool, mas uma capacidade pool pode conter vários volumes.
+> - Cada volume pertence a um serviço, mas um serviço pode conter vários volumes.
 >
-> - O tamanho de um volume não pode ultrapassar o tamanho total da capacidade pool menos o espaço atribuído às snapshots que contém.
+> - O tamanho de um volume não pode ultrapassar o tamanho total do serviço menos o espaço alocado às snapshots que ele contém.
 >
-> - O tamanho de um volume é escalável, tanto em alta como em baixa.
+> - O tamanho de um volume é evolutivo, tanto no sentido ascendente como no sentido descendente.
 >
 
-Para mais informações, consulte o guia ["Gerir volumes"](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_volumes).
+Encontre mais informações no guia ["Gerir os seus volumes"](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_volumes).
 
-### Princípio de funcionamento dos ACL
+### Princípio de funcionamento das ACL
 
-Por razões de segurança, um volume não é imediatamente acessível através do seu caminho de acesso. É necessário criar regras na lista de controlo de acesso (ACL) do volume para permitir o acesso dos utilizadores.
+Por razões de segurança, um volume não é imediatamente acessível através do seu caminho. É necessário criar regras na ACL do volume para permitir que os utilizadores acedam ao volume.
 
-Estas regras são constituídas por um endereço de IP source da sua rede em formato x.x.x.x/x e um tipo de permissões, seja leitura apenas (RO) ou leitura/escrita (RW).
+Estas regras são constituídas por um endereço IP de origem da sua rede no formato x.x.x.x/x e por um tipo de direitos, quer seja apenas leitura (RO) ou leitura/escrita (RW).
 
 ![Enterprise File Storage 3](images/Netapp_Concept_3.png)
 
@@ -85,37 +66,73 @@ Estas regras são constituídas por um endereço de IP source da sua rede em for
 > Pode criar uma ou várias regras por volume.
 >
 
-Para mais informações, consulte o guia ["Gerir os ACL de um volume"](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_volume_acl).
+Encontre mais informações no guia ["Gerir as ACL de um volume"](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_volume_acl).
 
 ### Princípio de funcionamento das snapshots
 
-A tecnologia das snapshots de Enterprise File Storage oferece uma solução de proteção local de dados no mesmo equipamento para os restauros de ficheiros únicos.
+A tecnologia de snapshots do Enterprise File Storage oferece uma solução de proteção de dados local no mesmo equipamento para restauros de ficheiros únicos.
 
-Uma snapshot Enterprise File Storage é uma imagem de um volume com uma data e uma hora precisas.
+Uma snapshot Enterprise File Storage é uma imagem de um volume numa data e hora precisas.
 
-A criação demora apenas alguns segundos, independentemente do volume, da capacidade utilizada ou do nível de atividade sobre o volume.
+A criação demora apenas alguns segundos, independentemente do tamanho do volume, da capacidade utilizada ou do nível de atividade no volume.
 
-O snapshot é uma cópia dos metadados do volume num determinado momento (instantâneo do índice).
+A snapshot é uma cópia dos metadados do volume num determinado instante (instantâneo da tabela dos inodes).
 
-O consumo diário das snapshots varia entre 1 % e 5 % da capacidade do volume para numerosas aplicações. Por isso, a OVHcloud reserva 5% da sua capacidade para cada criação de volume.
+O consumo diário constatado das snapshots situa-se entre 1 e 5% da capacidade do volume para numerosas aplicações. Por conseguinte, a cada criação de volume, a OVHcloud reserva 5% da sua capacidade para as snapshots do mesmo.
 
 ![Enterprise File Storage 4](images/Netapp_Concept_4.png)
 
-Para mais informações, consulte o guia ["Gerir as snapshots de um volume"](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_volume_snapshots).
+Encontre mais informações no guia ["Gerir as snapshots de um volume"](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_volume_snapshots).
 
-### Limites da oferta Enterprise File Storage para a fase de testes externos (Beta)
+### Limites da oferta Enterprise File Storage
 
-Veja abaixo os limites das capacidades pools da oferta Enterprise File Storage:
+- Um serviço com um tamanho atribuído e dedicado entre 1 TB e 58 TB
+- A granularidade de um serviço é de 1TB
+- O número de volumes por serviço está limitado a 10 volumes por TB (por exemplo, 50 volumes para um serviço de 5 TB)
 
-- Uma capacidade pool tem um tamanho atribuído e dedicado compreendido entre 1TiB e 29TiB.
-- Uma capacidade pool está limitada a 20 volumes por TiB.
+#### Limites dos volumes
 
-Seguem-se os limites dos volumes:
+- Um volume não pode ultrapassar o tamanho de 29 TB menos os 5% reservados para as snapshots (1.45TB) ou seja, 27,55 TB
+- O tamanho mínimo de um volume é de 100 GB
+    - Granularidade de tamanho para um volume: 1 GB
+    - Tamanho máximo de ficheiro: 16 TB
 
-- Um volume não pode ultrapassar o tamanho de 29 TiB menos os 5% reservados para as snapshots (1.45TiB) ou seja, 27,55 TiB.
-- O tamanho mínimo de um volume é de 1GBB.
-- Um volume não pode ter mais de 255 snapshots.
-- Um volume tem um endereço IP na rede interna em 10.x.x da OVHcloud.
+#### Limites das snapshots
+
+- Um volume não pode ter mais de 200 snapshots.
+- Número máximo de políticas de snapshot por volume: 1
+- Número máximo de regras por política de snapshot: 4
+
+#### Limites ligados às ACL
+
+- Um volume tem um endereço IP na rede interna 10.x.x.x da OVHcloud.
+- Número máximo de vRack (private network service) associados ao serviço: 0 (o suporte da tecnologia vRack ainda não está disponível)
+- Número máximo de acessos list: 1 por volume
+- Número máximo de IPs por access list: 16 IPs por access list
+
+#### Limites de desempenho
+
+- Largura de banda mínima por TB: sem mínimo
+- Largura de banda máxima por TB: 64 MB/s e 4000 IOPS
+
+### Cálculo de um volume
+
+> [!primary]
+>
+> Qual é a diferença entre Terabyte (TB) e Tebibyte (TiB)?
+>
+> - T, o prefixo "tera-", é uma métrica e um standard IT que utiliza a base-10. Assim, 1 TB = 10^12 bytes = 10000000000 bytes = 1000 GB.
+>
+> - Ti, o prefixo "Tebi-", foi criado mais tarde como um dos prefixos binários que são atualmente padrões IEC/ISO e que utilizam a base-2. Isso significa 1024^4=2^40. Portanto 1 TiB = 1099511627776 bytes= 1024 GiB.
+>
+> - Os computadores usam a base 2, de modo que a quantidade de armazenamento que você pode ver em seu sistema operativo é expressa em TiB. Os fornecedores de armazenamento tendem a utilizar TB, uma vez que é um número maior que o TiB.
+>
+> - O problema é que eles são semelhantes (2,4%) no KB, mas no TB, há uma diferença de 10% e o aumento é exponencial.
+>
+> - **Para Enterprise File Storage, porque queremos ser transparentes consigo, entregaremos o volume em TiB mesmo se vir o TB como unidade, porque o grande público utiliza o TB.**
+>
+> - Assim, se encomendar um serviço Enterprise File Storage de 1 TB, disporá na realidade de 1 TiB = 1,09951 TB.
+>
 
 ## Saiba mais
 
