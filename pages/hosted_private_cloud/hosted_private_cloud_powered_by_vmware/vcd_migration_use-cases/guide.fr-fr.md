@@ -32,6 +32,8 @@ Ce déplacement à chaud permettra de limiter au minimum les coupures de vos ré
 
 Vos machines virtuelles resteront opérationnelles pendant la migration, sans temps d'arrêt. Néanmoins, il existe un risque de perte de certains paquets réseau lors du vMotion.
 
+![VCD Schema vMotion](images/vcd_migration_shema.png){thumbnail}
+
 Cette migration doit s’effectuer sans impact notable pour la plupart des applications, mais nous vous recommandons de les superviser étroitement tout au long du processus.
 
 Pour rappel, si vous décidez de passer à l’offre VCD, les nouveaux tarifs ne seront pas appliqués à vos serveurs/hôtes existants. Nous couvrirons l'augmentation du prix de la licence jusqu'à ce que la migration soit terminée.
