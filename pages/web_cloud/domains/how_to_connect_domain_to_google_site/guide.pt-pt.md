@@ -94,7 +94,7 @@ Siga as etapas em ordem nas seguintes guias:
 >>
 > **Etapa 4**
 >> **Registo CNAME**<br><br>
->> Para identificar os registos "CNAME" existentes, clique no menu Filtros na parte superior da tabela de registos DNS e selecione "CNAME`".
+>> Para identificar os registos "CNAME" existentes, clique no menu Filtros na parte superior da tabela de registos DNS e selecione "CNAME".
 >>
 >> ![dnszone](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/filter-cname.png){.thumbnail}
 >>
