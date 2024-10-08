@@ -101,7 +101,7 @@ Siga as etapas em ordem nas seguintes guias:
 >> - Clique no botão `...`{.action} à direita da linha da tabela correspondente ao seu subdomínio em "www" (exemplo: `www.mydomain.ovh.`) e depois clique em `Modificar entrada`{.action}.<br>
 >> - Se não tiver um registo "CNAME" existente, clique no botão `Adicionar uma entrada`{.action} no canto superior direito do ecrã e selecione o "Campo de apontamento" CNAME`{.action}.
 >>
->> Preencha o campo **Subdomínio** com o valor `www` e introduza `ghs.googlehosted.com.` no campo **Destino**. Uma vez que estes valores têm de ser alterados, verifique-os na página "[Valores dos registos CNAME](https://support.google.com/a/answer/112038?sjid=3052810298579211755-EU)" da documentação oficial<br>
+>> Preencha o campo **Subdomínio** com o valor `www` e introduza `ghs.googlehosted.com.` no campo **Destino**. Uma vez que estes valores têm de ser alterados, verifique-os na página "[Valores dos registos CNAME](https://support.google.com/a/answer/112038?sjid=3052810298579211755-EU)" da documentação oficial.<br>
 >> Clique em `Seguinte`{.action} para validar o seu registo "CNAME".
 
 A zona DNS está configurada para fazer a ligação a um Google Site.
