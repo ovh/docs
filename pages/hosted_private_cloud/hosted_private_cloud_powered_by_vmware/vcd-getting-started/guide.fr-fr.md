@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - Découvrez comment utiliser l'interface utilisateur de VCD"
 excerpt: "Découvrez l'interface utilisateur de VMware Cloud Director"
-updated: 2024-05-23
+updated: 2024-10-08
 ---
 
 ## Objectif

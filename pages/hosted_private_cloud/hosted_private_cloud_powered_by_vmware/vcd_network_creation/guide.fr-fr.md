@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - Création de composants réseaux via VCD on OVHcloud"
 excerpt: "Apprenez à créer facilement des composants réseaux au sein du control panel VCD on OVHcloud"
-updated: 2024-09-17
+updated: 2024-10-08
 ---
 
 <style>
