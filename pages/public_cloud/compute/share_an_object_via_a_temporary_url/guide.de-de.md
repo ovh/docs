@@ -1,7 +1,7 @@
 ---
 title: 'Objekt über eine temporäre URL teilen'
 excerpt: 'So teilen Sie ein Objekt, ohne persönliche Informationen weiterzugeben'
-updated: 2024-10-07
+updated: 2024-10-08
 ---
 
 ## Einleitung 

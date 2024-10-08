@@ -1,7 +1,7 @@
 ---
 title: 'Partilhar um objeto com um endereço temporário'
 excerpt: 'Saiba como partilhar um objeto sem fornecer dados pessoais'
-updated: 2024-10-07
+updated: 2024-10-08
 ---
 
 ## Sumário 

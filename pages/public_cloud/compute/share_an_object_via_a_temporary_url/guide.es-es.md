@@ -1,7 +1,7 @@
 ---
 title: 'Compartir un objeto con una URL temporal'
 excerpt: 'Cómo compartir un objeto sin comunicar información personal'
-updated: 2024-10-07
+updated: 2024-10-08
 ---
 
 ## Objetivo 
