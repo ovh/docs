@@ -1,7 +1,7 @@
 ---
 title: 'Partager son hébergement entre plusieurs sites'
 excerpt: "Découvrez comment héberger différents sites Internet sur votre offre d'hébergement web"
-updated: 2024-10-07
+updated: 2024-10-08
 ---
 
 ## Objectif

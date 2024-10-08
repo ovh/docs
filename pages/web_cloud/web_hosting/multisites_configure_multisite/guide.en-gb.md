@@ -1,7 +1,7 @@
 ---
 title: 'Hosting multiple websites on your Web Hosting plan'
 excerpt: 'Find out how to host several websites on your Web Hosting plan'
-updated: 2024-03-15
+updated: 2024-10-08
 ---
 
 ## Objective
@@ -161,7 +161,7 @@ In the table in the `Multisite` tab, a `Diagnostic` column informs you if your d
 
 - `A/AAAA` green
 - `A/YYYY` yellow
-- `A/AAAA` gray
+- `A/AAAA` grey
 
 ##### Green A/AAAA
 
@@ -174,18 +174,20 @@ When the `A/AAAA` icon is green in the `Diagnostic` column, this means that the 
 ![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-info.png){.thumbnail}
 
 When the `A/AAAA` icon is yellow in the `Diagnostic` column, this means that the **A** (IPv4) and/or **AAAA** (IPv6) record of your domain name points to an IP address, but it is not the IP address of the Web Hosting plan from which you are viewing the `Diagnostic` column.
+
 Click the yellow `A/AAAA` icon for more information. The following message will appear:
 
 ![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-popup.png){.thumbnail}
 
-To resolve DNS pointing issues for your domain name, and ensure that it points correctly to the web hosting plan you want, follow the steps described in our guide on [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit){.external}.
+To resolve DNS pointing issues for your domain name, and ensure that it points correctly to the web hosting plan you want, follow the steps described in our guide on [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit).
 
-##### Gray A/AAAA
+##### Grey A/AAAA
 
 ![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-gray-info.png){.thumbnail}
 
-When the `A/AAAA` icon is gray in the `Diagnostic` column, this means that the domain name does not currently point to any IP address and that no **A** or **AAAA** records are configured for this domain name.
-Click the gray `A/AAAA` icon for more information. The following message will appear:
+When the `A/AAAA` icon is grey in the `Diagnostic` column, this means that the domain name does not currently point to any IP address and that no **A** or **AAAA** records are configured for this domain name.
+
+Click the grey `A/AAAA` icon for more information. The following message will appear:
 
 ![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-gray-popup.png){.thumbnail}
 
