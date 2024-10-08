@@ -1,7 +1,7 @@
 ---
-title: "How to Configure Your NIC for Link Aggregation in Debian 12 or Ubuntu 24.04 (Netplan)"
-excerpt: "Enable Link Aggregation in your Debian 12 or Ubuntu 24.04 server"
-updated: 2024-10-07
+title: "How to configure Link Aggregation with LACP in Debian 12 or Ubuntu 24.04"
+excerpt: "Enable Link Aggregation in your Debian 12 or Ubuntu 24.04 server (Netplan)"
+updated: 2024-10-08
 ---
 
 ## Objective
@@ -12,16 +12,21 @@ OVHcloud Link Aggregation technology is designed by our teams to increase your s
 
 ## Requirements
 
-- [Configuring OVHcloud Link Aggregation in the OVHcloud Control Panel](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
+
+### Retrieving MAC addresses
+
+
+### Retrieving interfaces names
 
 > [!primary]
 >
 > If you lose network connection to your server, follow the "**Open KVM via Java applet**" steps from [this guide](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers).
 >
 
-By default, using an OVHcloud template, the NICs will be named either *ethX* or *enoX*. If you are not using an OVHcloud template, you can find the names of your interfaces using the following command:
+To retrieve the names of the interfaces, execute the following command:
 
 ```bash
 ip a
@@ -29,53 +34,73 @@ ip a
 
 > [!primary]
 >
-> This command will yield numerous "interfaces." If you are having trouble determining which ones are your physical NICs, the first interface will still have the server's public IP address attached to it by default.
+> This command will yield numerous "interfaces." If you are having trouble determining which ones are your physical interfaces, the first interface will still have the server's public IP address attached to it by default.
 >
 
-Once we have determined the names of our two NICs, we will configure NIC bonding in the OS.
+Once we have determined the names of our interfaces, we will configure interfaces bonding in the OS.
 
 ### Static IP configuration
 
-Replace the content of `/etc/netplan/50-cloud-init.yaml` with the following content:
+Replace the content of `/etc/netplan/50-cloud-init.yaml` with:
 
 ```yaml
-network: 
+network:
     version: 2
-    ethernets: 
+    ethernets:
         ens22f0np0:
-            match: 
+            match:
                 macaddress: a1:b2:c3:d4:e5:c6
         ens22f1np1:
-            match: 
+            match:
                 macaddress: a1:b2:c3:d4:e5:c7
-    bonds: 
+        ens33f0np0:
+            match:
+                macaddress: a1:b2:c3:d4:e5:d6
+        ens33f1np1:
+            match:
+                macaddress: a1:b2:c3:d4:e5:d7
+    bonds:
         bond0:
             # MAC address of the server's main interface
             macaddress: a1:b2:c3:d4:e5:c6
             accept-ra: false
-            addresses: 
+            addresses:
                 - 203.0.113.1/32
                 - 2001:db8:1:1b00:203:0:112:0/56
-            routes: 
+            routes:
                 - on-link: true
                   to: default
                   via: 100.64.0.1
                 - on-link: true
                   to: default
                   via: fe80::1
-            nameservers: 
-                addresses: 
-                - 203.0.113.20
-                - 2001:db8:1:1b00:203:0:112:1
-            interfaces: 
+            nameservers:
+                addresses:
+                - 213.186.33.99
+                - 2001:41d0:3:163::1
+            interfaces:
                 - ens22f0np0
                 - ens22f1np1
-            parameters: 
+            parameters:
                 mode: 802.3ad
                 mii-monitor-interval: 100
                 down-delay: 200
                 lacp-rate: slow
                 transmit-hash-policy: layer3+4
+        # Optional: private bond configuration
+        bond1:
+            # MAC address of the first private interface
+            macaddress: a1:b2:c3:d4:e5:d6
+            accept-ra: false
+            interfaces:
+                - ens33f0np0
+                - ens33f1np1
+            parameters:
+                mode: 802.3ad
+                mii-monitor-interval: 100
+                down-delay: 200
+                lacp-rate: slow
+                transmit-hash-policy: layer3+4 
 ```
 
 ### DHCP configuration
@@ -83,39 +108,59 @@ network:
 Replace the content of `/etc/netplan/50-cloud-init.yaml` with the following content:
 
 ```yaml
-network: 
+network:
     version: 2
-    ethernets: 
+    ethernets:
         ens22f0np0:
-            match: 
+            match:
                 macaddress: a1:b2:c3:d4:e5:c6
         ens22f1np1:
-            match: 
+            match:
                 macaddress: a1:b2:c3:d4:e5:c7
-    bonds: 
+        ens33f0np0:
+            match:
+                macaddress: a1:b2:c3:d4:e5:d6
+        ens33f1np1:
+            match:
+                macaddress: a1:b2:c3:d4:e5:d7
+    bonds:
         bond0:
             # MAC address of the server's main interface
             macaddress: a1:b2:c3:d4:e5:c6
             accept-ra: false
             dhcp4: true
-            addresses: 
+            addresses:
                 - 2001:db8:1:1b00:203:0:112:0/56
-            routes: 
+            routes:
                 - on-link: true
                   to: default
                   via: fe80::1
-            nameservers: 
-                addresses: 
-                - 2001:db8:1:1b00:203:0:112:1
-            interfaces: 
+            nameservers:
+                addresses:
+                - 2001:41d0:3:163::1
+            interfaces:
                 - ens22f0np0
                 - ens22f1np1
-            parameters: 
+            parameters:
                 mode: 802.3ad
                 mii-monitor-interval: 100
                 down-delay: 200
                 lacp-rate: slow
                 transmit-hash-policy: layer3+4
+        # Optional: private bond configuration
+        bond1:
+            # MAC address of the first private interface
+            macaddress: a1:b2:c3:d4:e5:d6
+            accept-ra: false
+            interfaces:
+                - ens33f0np0
+                - ens33f1np1
+            parameters:
+                mode: 802.3ad
+                mii-monitor-interval: 100
+                down-delay: 200
+                lacp-rate: slow
+                transmit-hash-policy: layer3+4 
 ```
 
 ### Applying the configuration
