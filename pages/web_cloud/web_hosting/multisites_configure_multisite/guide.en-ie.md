@@ -181,13 +181,13 @@ To resolve DNS pointing issues for your domain name, and ensure that it points c
 
 ##### Grey A/AAAA
 
-![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-gray-info.png){.thumbnail}
+![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-info.png){.thumbnail}
 
 When the `A/AAAA` icon is grey in the `Diagnostic` column, this means that the domain name does not currently point to any IP address and that no **A** or **AAAA** records are configured for this domain name.
 
 Click the grey `A/AAAA` icon for more information. The following message will appear:
 
-![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-gray-popup.png){.thumbnail}
+![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-popup.png){.thumbnail}
 
 To add the **A** or **AAAA** records and configure your domain name correctly, follow the steps described in our guide [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit).
 
