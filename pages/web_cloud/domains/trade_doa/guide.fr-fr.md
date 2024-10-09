@@ -1,7 +1,7 @@
 ---
 title: "Changer le propriétaire d’un domaine avec une Demande d'Opération AFNIC (DOA)"
 excerpt: "Découvrez comment réaliser une Demande d'Opération AFNIC (DOA)"
-updated: 2023-10-23
+updated: 2024-10-09
 ---
 
 ## Objectif
@@ -54,7 +54,7 @@ Voici un descriptif des éléments pouvant être renseignés dans la DOA :
 > Un bon de commande pour l’opération de changement de propriétaire doit obligatoirement être en cours.
 >
 
-La validation des e-mails envoyés lors de l'initialisation du changement de propriétaire ne sera pas nécessaire, chcune des parties complète le document et le retourne à OVHcloud en créant un ticket d'assistance depuis son [espace client OVHcloud](/links/manager) respectif.
+La validation des e-mails envoyés lors de l'initialisation du changement de propriétaire ne sera pas nécessaire, chacune des parties complète le document et le retourne à OVHcloud en créant un ticket d'assistance depuis son [espace client OVHcloud](/links/manager) respectif.
 
 La DOA devra également être accompagnée des documents justificatifs de l'ancien propriétaire ci-dessous.
 
@@ -82,7 +82,7 @@ La DOA devra également être accompagnée des documents justificatifs de l'anci
 > Un bon de commande pour l’opération de changement de propriétaire doit obligatoirement être en cours.
 >
 
-Ce DOA est utilisé dans le cas où le propriétaire actuel du domaine ne peut pas fournir son accord (décision de justice, liquidation judiciaire, décès, etc.).<br>
+Cette DOA est utilisée dans le cas où le propriétaire actuel du domaine ne peut pas fournir son accord (décision de justice, liquidation judiciaire, décès, etc.).<br>
 Seul le nouveau propriétaire complète le document et le retourne à OVHcloud, accompagné des pièces justifiant ce changement forcé, en créant un ticket d'assistance depuis son [espace client OVHcloud](/links/manager).
 
 > [!primary]
