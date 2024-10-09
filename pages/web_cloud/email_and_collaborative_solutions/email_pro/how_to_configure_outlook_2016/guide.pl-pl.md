@@ -1,7 +1,7 @@
 ---
 title: 'Email Pro - Skonfiguruj konto e-mail w programie Outlook dla systemu Windows'
 excerpt: 'Dowiedz się, jak skonfigurować konto E-mail Pro w programie Outlook na urządzeniu z systemem Windows'
-updated: 2021-07-05
+updated: 2024-10-09
 ---
 
 > [!primary]
@@ -93,6 +93,10 @@ Okno jest podzielone na dwie części, **Poczta przychodząca** i **Wychodząca*
 ![Outlook](images/config-outlook-emailpro07.png){.thumbnail}
 
 ## Sprawdź również
+
+> [!primary]
+>
+> Aby uzyskać więcej informacji na temat konfigurowania konta e-mail z poziomu aplikacji Outlook na urządzeniach z systemem macOS, zobacz [Centrum pomocy Microsoft](https://support.microsoft.com/pl-pl/office/dodawanie-konta-e-mail-do-programu-outlook-6e27792a-9267-4aa4-8bb6-c84ef146101b).
 
 [Konfiguracja konta e-mail w Outlook na urządzeniu z systemem Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016).
 

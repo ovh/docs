@@ -1,7 +1,7 @@
 ---
 title: "Exchange - Configurare un indirizzo email in Gmail per Android"
 excerpt: "Questa guida ti mostra come configurare un account Exchange su Android tramite l’applicazione Gmail"
-updated: 2024-03-20
+updated: 2024-10-09
 ---
 
 <style>
@@ -69,7 +69,6 @@ L’aggiunta di un account avverrà in modo diverso **se non ne è stato imposta
 >> 2. Seleziona `Impostazioni`{.action}<br><br>
 >> 3. Seleziona `Aggiungi account`{.action}<br><br>
 >> ![exchange android](images/android-existing.png){.thumbnail}
->>
 
 Segui i passaggi successivi di configurazione scorrendo le schede seguenti:
 
@@ -93,7 +92,6 @@ Segui i passaggi successivi di configurazione scorrendo le schede seguenti:
 > **Step 6**
 >> Per completare la configurazione, visualizzi il messaggio "Puoi iniziare a utilizzare il tuo account" e clicca su `OK`{.action}.<br><br>
 >> ![exchange android](images/exchange-android-05.png){.thumbnail .h-600}
->>
 
 Una volta configurato l’indirizzo email, non ti resta che utilizzarlo! Da questo momento è possibile inviare e ricevere messaggi dall’applicazione Gmail.
 
@@ -102,6 +100,10 @@ Una volta configurato l’indirizzo email, non ti resta che utilizzarlo! Da ques
 > OVHcloud propone un'applicazione Web che permette di accedere al tuo indirizzo email da un browser Web, all'indirizzo [Webmail](/links/web/email). accessibile utilizzando le credenziali del tuo account.
 
 ## Per saperne di più <a name="go-further"></a>
+
+> [!primary]
+>
+> Per ulteriori informazioni sulla configurazione di un indirizzo e-mail dall'applicazione Gmail su Android, consultare [Guida in linea di Google](https://support.google.com/mail/answer/6078445?hl=it-CA&co=GENIE.Platform%3DAndroid#zippy=%2Aggiungere-un-account).
 
 [MX Plan - Configurare un indirizzo email in Gmail per Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android).
 

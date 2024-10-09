@@ -1,7 +1,7 @@
 ---
 title: 'Email Pro - Richten Sie ein E-Mail-Konto in Outlook für Windows ein'
 excerpt: 'Erfahren Sie hier, wie Sie Ihren E-Mail Pro Account in Outlook für Windows einrichten'
-updated: 2021-07-05
+updated: 2024-10-09
 ---
 
 > [!primary]
@@ -92,6 +92,10 @@ Das Fenster ist in zwei Bereiche unterteilt, für **eingehende** und **ausgehend
 ![Outlook](images/config-outlook-emailpro07.png){.thumbnail}
 
 ## Weiterführende Informationen <a name="gofurther"></a>
+
+> [!primary]
+>
+> Weitere Informationen zum Einrichten einer E-Mail-Adresse über die Outlook-App auf macOS finden Sie im [Microsoft Help Center](https://support.microsoft.com/de-de/office/add-mail-account-in-outlook-6e27792a-9267-4aa4-8bb6-c84ef146101b).
 
 [Konfiguration Ihrer MX Plan Adresse mit Outlook für Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)
 

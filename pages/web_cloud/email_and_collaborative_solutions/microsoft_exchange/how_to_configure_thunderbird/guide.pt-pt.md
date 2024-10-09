@@ -1,7 +1,7 @@
 ---
-title: 'Configurar uma conta Exchange no Thunderbird para Windows'
+title: 'Exchange - Configure sua conta de e-mail no Thunderbird para macOS'
 excerpt: 'Encontre aqui o procedimento para adicionar uma conta Exchange para Thunderbird'
-updated: 2021-08-26
+updated: 2024-10-09
 ---
 
 ## Objetivo
@@ -87,5 +87,9 @@ Se a sua conta de e-mail já está configurada e tem de aceder aos parâmetros d
 ![Thunderbird](images/thunderbird-win-exchange06.png){.thumbnail}
 
 ## Saiba mais
+
+> [!primary]
+>
+> Configurar uma conta manualmentePara obter mais informações sobre a configuração de um endereço de e-mail a partir da aplicação Thunderbird no Windows, consulte [Central de Ajuda do Mozilla](https://support.mozilla.org/pt-BR/kb/configuracao-manual-de-conta#thunderbird:win10:tb115).
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

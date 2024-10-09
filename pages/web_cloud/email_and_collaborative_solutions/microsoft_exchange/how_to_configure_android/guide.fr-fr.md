@@ -1,7 +1,7 @@
 ---
 title: "Exchange - Configurer une adresse e-mail dans Gmail pour Android"
 excerpt: "Apprenez à configurer un compte Exchange sur Android, via l'application Gmail"
-updated: 2024-03-20
+updated: 2024-10-09
 ---
 
 <style>
@@ -34,7 +34,6 @@ Les adresses e-mail de l'offre Exchange peuvent être configurées sur différen
 > [!primary]
 >
 > Cette documentation a été réalisée depuis un appareil utilisant la version 13 d'Android.
->
 
 ## En pratique
 
@@ -46,7 +45,6 @@ Les adresses e-mail de l'offre Exchange peuvent être configurées sur différen
 >
 > Retrouvez ce chiffre dans votre [espace client OVHcloud](/links/manager), dans la rubrique `Web Cloud`{.action} puis `Microsoft`{.action}.
 > Cliquez sur `Exchange`{.action}, puis sur la plateforme Exchange souhaitée. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
->
 
 Sur l'écran d'accueil de votre appareil, rendez-vous dans l'application `Gmail`{.action}.
 
@@ -66,7 +64,6 @@ L’ajout d’un compte se fera différemment **si aucun compte n'est paramétr�
 >> 2. Sélectionnez `Paramètres`{.action}<br><br>
 >> 3. Sélectionnez `Ajouter un compte`{.action}<br><br>
 >> ![exchange android](images/android-existing.png){.thumbnail}
->>
 
 Suivez les étapes successives de configuration en parcourant les onglets ci-dessous :
 
@@ -90,7 +87,6 @@ Suivez les étapes successives de configuration en parcourant les onglets ci-des
 > **Etape 6**
 >> Le message « Vous pouvez dès à présent utiliser votre compte » devrait apparaitre, appuyez sur `OK`{.action} pour terminer la configuration.<br><br>
 >> ![exchange android](images/exchange-android-05.png){.thumbnail .h-600}
->>
 
 Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages depuis votre application Gmail.
 
@@ -99,6 +95,10 @@ Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vou
 > OVHcloud propose une application web permettant d'accéder à votre adresse e-mail depuis un navigateur web, à l’adresse [Webmail](/links/web/email). Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail.
 
 ## Aller plus loin <a name="go-further"></a>
+
+> [!primary]
+>
+> Pour plus d'informations sur la configuration d'une adresse e-mail depuis l'application Gmail sur Android, consultez [le centre d'aide de Google](https://support.google.com/mail/answer/6078445?hl=fr-CA&co=GENIE.Platform%3DAndroid#zippy=%2Cajouter-un-compte).
 
 [MX Plan - Configurer une adresse e-mail dans Gmail pour Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android).
 

@@ -1,5 +1,5 @@
 ---
-title: "Configurer son compte E-mail Pro sur Android avec l'application Microsoft Outlook"
+title: "E-mail Pro - Configurer son adresse e-mail sur Outlook pour Android"
 excerpt: "Découvrez comment configurer un compte E-mail Pro sur Adroid avec l'application Microsoft Outlook"
 updated: 2023-07-24
 ---
@@ -37,7 +37,6 @@ Récupérez le nom du serveur E-mail Pro qui apparaît en dessous de la mention 
 > [!warning]
 >
 > Récupérez bien le **bon nom** du serveur E-mail Pro où se trouve l'adresse e-mail que vous souhaitez configurer. En effet, celui-ci peut différer en fonction de l'ancienneté de votre offre E-mail Pro (pro1.mail.ovh.net, pro2.mail.ovh.net, etc.).
-> 
 
 Toujours dans l'onglet `Comptes e-mail`{.action} de votre plateforme *Email Pro*, un tableau s'affiche avec votre (vos) adresse(s) E-mail Pro.
 
@@ -51,7 +50,6 @@ La modification du mot de passe est prise en compte dans les 15 minutes suivante
 >
 > Si vous changez le mot de passe de votre adresse e-mail et que celle-ci est déjà utilisée par un autre appareil (logiciel de messagerie, ordinateur, tablette, smartphone, photocopieur, etc.), vous devrez mettre à jour le mot de passe sur ces autres appareils.
 > En effet, ces derniers ne seront plus en mesure de se connecter avec votre adresse e-mail via l'ancien mot de passe.
->
 
 A la fin de cette première étape, vous devez désormais avoir les éléments suivants en votre possession :
 
@@ -84,7 +82,6 @@ Dès lors, deux choix de configuration vous sont proposés en bas de votre écra
 >
 > Cependant et malgré une configuration en **POP3**, certains logiciels de messagerie / applications renvoient tout de même une copie de l'e-mail sur le serveur où se trouve votre adresse e-mail. Cette copie peut rester de manière temporaire ou permanente.
 > Pour savoir si votre application / logiciel en fait partie, contactez l'éditeur du logiciel directement.
->
 
 #### Cas n°1 : configuration de l'application Microsoft Outlook sur Android avec le protocole IMAP
 
@@ -158,6 +155,10 @@ Cette dernière va ensuite synchroniser / récupérer le contenu de votre adress
 Testez ensuite l'envoi et la réception d'e-mails depuis votre application Microsoft Outlook pour terminer la configuration.
 
 ## Aller plus loin <a name="go-further"></a>
+
+> [!primary]
+>
+> Pour plus d'informations sur la configuration d'une adresse e-mail depuis l'application Outlook sur Android, consultez [le centre d'aide Microsoft](https://support.microsoft.com/fr-fr/office/configurer-le-courrier-%C3%A9lectronique-%C3%A0-l-aide-de-l-application-outlook-pour-android-886db551-8dfa-4fd5-b835-f8e532091872).
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 

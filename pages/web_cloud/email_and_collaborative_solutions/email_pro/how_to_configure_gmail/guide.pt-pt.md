@@ -1,7 +1,7 @@
 ---
 title: "E-mail Pro - Configurar o seu endereço de e-mail na interface online do Gmail"
 excerpt: "Aprenda a configurar uma conta E-mail Pro na interface on-line do Gmail"
-updated: 2024-09-24
+updated: 2024-10-09
 ---
 
 > [!primary]

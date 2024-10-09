@@ -1,7 +1,7 @@
 ---
 title: 'Email Pro - Configuring an account on the Gmail online interface'
 excerpt: 'Find out how to configure an Email Pro account on the Gmail online interface'
-updated: 2024-09-24
+updated: 2024-10-09
 ---
 
 ## Objective

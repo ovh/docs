@@ -1,5 +1,5 @@
 ---
-title: "Configuring your Email Pro account on Android with the Microsoft Outlook application"
+title: "Email Pro - Configuring your email address in Outlook for Android"
 excerpt: "Find out how to configure an Email Pro account on Adroid with the Microsoft Outlook application"
 updated: 2023-07-25
 ---
@@ -158,6 +158,10 @@ The interface will then sync/retrieve the content of your email address, and dis
 Then try sending and receiving emails from your Microsoft Outlook application to complete the configuration.
 
 ## Go further <a name="go-further"></a>
+
+> [!primary]
+>
+> For more information on configuring an email address from the Outlook app on Android, see [Microsoft Help Center](https://support.microsoft.com/en-gb/office/set-up-email-in-the-outlook-for-android-app-886db551-8dfa-4fd5-b835-f8e532091872).
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 

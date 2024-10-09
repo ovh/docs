@@ -1,14 +1,14 @@
 ---
-title: 'Configuring your Email Pro account in the Mail application for Windows 10'
-excerpt: 'Find out how to configure an Email Pro account on the Mail application for Windows 10'
-updated: 2020-03-18
+title: 'Email Pro - Configure your email account on Courrier for Windows'
+excerpt: 'Find out how to configure an Email Pro account on the Mail application for Windows'
+updated: 2024-10-09
 ---
 
 ## Objective
 
 You can configure Email Pro accounts on email clients, if they are compatible. By doing so, you can use your email address through your preferred email application.
 
-**Find out how to configure an Email Pro account in the Mail application for Windows 10.**
+**Find out how to configure an Email Pro account in the Mail application for Windows.**
 
 > [!warning]
 >OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
@@ -84,8 +84,12 @@ OVHcloud also offers a web application that includes various [collaborative feat
 
 ## Go further
 
-[Configuring an email address included in an MX Plan package or web hosting plan in the Mail application for Windows 10](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10)
+> [!primary]
+>
+> For more information about setting up an email address from the Mail on Windows email client, see [Microsoft Help Center](https://support.microsoft.com/en-gb/office/setting-email-in-mail-application-7ff79e8b-439b-4b47-8ff9-3f9a33166c60).
 
-[Configuring your Exchange account in the Mail app for Windows 10](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_windows_10)
+[Configuring an email address included in an MX Plan package or web hosting plan in the Mail application for Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10)
+
+[Configuring your Exchange account in the Mail app for Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_windows_10)
 
 Join our community of users on <https://community.ovh.com/en/>.

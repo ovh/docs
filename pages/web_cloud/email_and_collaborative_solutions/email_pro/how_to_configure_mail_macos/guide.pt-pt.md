@@ -1,6 +1,6 @@
 ---
-title: 'Como configurar uma conta E-mail Pro no Mail do macOS'
-updated: 2022-06-13
+title: 'E-mail Pro - Configure sua conta de e-mail no Mail para macOS'
+updated: 2024-10-09
 ---
 
 > [!primary]
@@ -89,5 +89,9 @@ No âmbito de uma configuração em **POP**, os valores são os seguintes:
 > Quando configura o seu endereço de e-mail em **IMAP** e deseja alterar a configuração em **POP**, é necessário eliminar a conta de Mail do Mac e recriá-la em **POP** para alterar a configuração.
 
 ## Quer saber mais?
- 
+
+> [!primary]
+>
+> Para obter mais informações sobre a configuração de um endereço de e-mail a partir da aplicação Mail no macOS, consulte [Centro de Ajuda da Apple](https://support.apple.com/pt-pt/guide/mail/mail35803/mac).
+
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

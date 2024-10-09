@@ -1,14 +1,14 @@
 ---
-title: 'Configuring your Exchange account in the Mail app for Windows 10'
-excerpt: 'Find out how to configure an Exchange account on the Mail application for Windows 10'
-updated: 2018-04-04
+title: 'Exchange - Configure your email account on Courrier for Windows'
+excerpt: 'Find out how to configure an Exchange account on the Mail application for Windows'
+updated: 2024-10-09
 ---
 
 ## Objective
 
 You can configure Exchange accounts on email clients, if they are compatible. By doing so, you can use your email address through your preferred email application.
 
-**Find out how to configure an Exchange account in the Mail application for Windows 10.**
+**Find out how to configure an Exchange account in the Mail application for Windows.**
 
 ## Requirements
 
@@ -57,5 +57,9 @@ Once you have configured your email address, you can start using it! You can now
 OVHcloud also offers a web application that includes various collaborative features. You can access this application at [Webmail](/links/web/email). Log in using your email credentials.
 
 ## Go further
+
+> [!primary]
+>
+> For more information about setting up an email address from the Mail on Windows email client, see [Microsoft Help Center](https://support.microsoft.com/en-gb/office/setting-email-in-mail-application-7ff79e8b-439b-4b47-8ff9-3f9a33166c60).
 
 Join our community of users on <https://community.ovh.com/en/>.

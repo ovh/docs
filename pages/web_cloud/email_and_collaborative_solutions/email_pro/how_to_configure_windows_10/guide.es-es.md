@@ -1,14 +1,14 @@
 ---
-title: 'Configurar una cuenta Email Pro en la aplicación Correo de Windows 10'
-excerpt: 'Cómo configurar una cuenta Email Pro en la aplicación Correo de Windows 10'
-updated: 2020-03-18
+title: 'Email Pro - Configure su cuenta de correo electrónico en Correo para Windows'
+excerpt: 'Cómo configurar una cuenta Email Pro en la aplicación Correo de Windows'
+updated: 2024-10-09
 ---
 
 ## Objetivo
 
 Es posible configurar sus cuentas Email Pro en el cliente de correo que usted utilice, siempre que sea compatible, para poder acceder a ellas desde cualquiera de sus dispositivos.
 
-**Esta guía explica cómo configurar una cuenta Email Pro en la aplicación Correo de Windows 10.**
+**Esta guía explica cómo configurar una cuenta Email Pro en la aplicación Correo de Windows.**
 
 > [!warning]
 >
@@ -84,8 +84,12 @@ OVHcloud ofrece una aplicación web que tiene [funciones colaborativas](/links/w
 
 ## Más información
 
-[Configurar una cuenta de correo electrónico en la aplicación Correo de Windows 10](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10)
+> [!primary]
+>
+> Para obtener más información sobre la configuración de una dirección de correo electrónico desde el cliente de correo de Windows, consulte [el Centro de ayuda de Microsoft](https://support.microsoft.com/es-es/office/config-l-mail-en-l-application-mail-7ff79e8b-439b-4b47-8ff9-3f9a33166c60).
 
-[Configurar una cuenta Exchange en la aplicación Correo de Windows 10](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_windows_10)
+[Configurar una cuenta de correo electrónico en la aplicación Correo de Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10)
+
+[Configurar una cuenta Exchange en la aplicación Correo de Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_windows_10)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

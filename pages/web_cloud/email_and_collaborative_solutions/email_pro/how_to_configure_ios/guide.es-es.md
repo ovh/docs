@@ -1,7 +1,7 @@
 ---
-title: 'Configurar una cuenta Email Pro en iPhone o iPad'
+title: "Email Pro - Configure su cuenta de correo electrónico en Mail para iPhone y iPad"
 excerpt: 'Cómo configurar una cuenta Email Pro en iPhone o iPad utilizando la aplicación Mail'
-updated: 2021-05-21
+updated: 2024-10-09
 ---
 
 > [!primary]
@@ -75,6 +75,10 @@ OVHcloud también ofrece una aplicación web que tiene [funciones colaborativas]
 >
 
 ## Más información
+
+> [!primary]
+>
+> Para obtener más información sobre cómo configurar una dirección de correo electrónico desde la aplicación Mail en iOS, visite [el Centro de ayuda de Apple](https://support.apple.com/es-es/102619).
 
 [Configurar una cuenta de correo electrónico en iPhone o iPad](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_ios)
 

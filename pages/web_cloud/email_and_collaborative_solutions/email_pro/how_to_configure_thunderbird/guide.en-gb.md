@@ -1,7 +1,7 @@
 ---
-title: 'Configuring an Email Pro address on Thunderbird for Windows'
+title: 'Email Pro - Configuring an email address on Thunderbird for Windows'
 excerpt: 'Find out how to configure your Email Pro address in Thunderbird for Windows'
-updated: 2021-08-26
+updated: 2024-10-09
 ---
 
 ## Objective
@@ -86,5 +86,9 @@ If your email account has already been set up and you need to access the account
 ![Thunderbird](images/thunderbird-win-emailpro06.png){.thumbnail}
 
 ## Go further <a name="gofurther"></a>
+
+> [!primary]
+>
+> For more information on configuring an email address from the Thunderbird app on Windows, see the [Mozilla Help Center](https://support.mozilla.org/en-US/kb/manual-account-configuration#thunderbird:win10:tb115).
 
 Join our community of users on <https://community.ovh.com/en/>.

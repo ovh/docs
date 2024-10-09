@@ -1,7 +1,7 @@
 ---
 title: "Email Pro - Configurare un indirizzo email in Gmail per Android"
 excerpt: "Scopri come configurare un account Email Pro su Android tramite l’applicazione Gmail"
-updated: 2024-03-15
+updated: 2024-10-09
 ---
 
 <style>
@@ -166,6 +166,10 @@ Per comprendere la differenza tra l'utilizzo del protocollo POP e IMAP, scomponi
 > Questa descrizione è una sintesi, rappresenta il funzionamento standard di entrambi i protocolli. È possibile configurare il POP in modo che le email non vengano eliminate quando si raccolgono i messaggi. L’obiettivo è descrivere il funzionamento nativo di questi due protocolli ed evitare operazioni aggiuntive per rispondere alle tue necessità.
 
 ## Per saperne di più
+
+> [!primary]
+>
+> Per ulteriori informazioni sulla configurazione di un indirizzo e-mail dall'applicazione Gmail su Android, consultare [Guida in linea di Google](https://support.google.com/mail/answer/6078445?hl=it-CA&co=GENIE.Platform%3DAndroid#zippy=%2Aggiungere-un-account).
 
 [Configurare un indirizzo email su Android tramite l’applicazione Gmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android)
 

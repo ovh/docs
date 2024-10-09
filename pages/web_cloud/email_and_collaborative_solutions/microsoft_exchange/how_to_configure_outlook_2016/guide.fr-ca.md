@@ -1,7 +1,7 @@
 ---
 title: Exchange - Configurer son compte e-mail sur Outlook pour Windows
 excerpt: Apprenez à configurer un compte Exchange sur Outlook pour Windows
-updated: 2021-07-05
+updated: 2024-10-09
 ---
 
 ## Objectif
@@ -18,7 +18,6 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 > [!primary]
 >
 > Vous utilisez Outlook pour Mac ? Consultez notre documentation : [Configurer son compte Exchange sur Outlook pour Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac).
->
 
 ## En pratique
 
@@ -41,7 +40,6 @@ Une fenêtre de sécurité vous demandant de renseigner le **mot de passe** de l
 > Si un message vous indique qu'Outlook n'a pas pu paramétrer votre compte, cela peut indiquer que le champ SRV d'OVHcloud n'est pas correctement configuré dans la zone DNS de votre nom de domaine.
 >
 > Nous vous conseillons de vérifier la configuration du nom de domaine paramétré sur votre service Exchange dans votre [espace client OVHcloud](/links/manager), onglet `Domaines associés`{.action}, puis colonne `Diagnostic`{.action} du tableau.
->
 
 Si la configuration de votre nom de domaine est correcte, un message vous demandant d'autoriser une connexion vers le serveur d'OVHcloud apparaît. Acceptez cette connexion afin de permettre la configuration automatique de votre compte Exchange.
 
@@ -56,5 +54,9 @@ Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vou
 OVHcloud propose une application web disposant de fonctions collaboratives. Celle-ci est accessible à l’adresse <https://ex.mail.ovh.ca/>. Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail.
 
 ## Aller plus loin
+
+> [!primary]
+>
+> Pour plus d'informations sur la configuration d'une adresse e-mail depuis l'application Outlook sur Windows, consultez [le centre d'aide Microsoft](https://support.microsoft.com/fr-fr/office/ajouter-un-compte-de-courrier-dans-outlook-6e27792a-9267-4aa4-8bb6-c84ef146101b).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

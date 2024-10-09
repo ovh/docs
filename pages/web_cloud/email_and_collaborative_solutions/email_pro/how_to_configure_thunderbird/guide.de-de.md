@@ -1,7 +1,7 @@
 ---
-title: 'Konfiguration Ihrer E-Mail Pro Adresse mit Thunderbird für Windows'
+title: 'E-mail Pro - Konfigurieren Sie Ihr E-Mail-Konto in Thunderbird für Windows'
 excerpt: 'Erfahren Sie hier, wie Sie Ihren E-Mail Pro Account in Thunderbird für Windows einrichten'
-updated: 2021-08-26
+updated: 2024-10-09
 ---
 
 > [!primary]
@@ -89,5 +89,9 @@ Wenn Ihr E-Mail-Account bereits eingerichtet ist und Sie auf die Account-Einstel
 ![Thunderbird](images/thunderbird-win-emailpro06.png){.thumbnail}
 
 ## Weiterführende Informationen <a name="gofurther"></a>
+
+> [!primary]
+>
+> Weitere Informationen zum Einrichten einer E-Mail-Adresse über die Thunderbird-App in Windows finden Sie im [Mozilla Help Center](https://support.mozilla.org/de/kb/manuell-ein-konto-konfigurieren#thunderbird:win10:tb115).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -1,12 +1,11 @@
 ---
-title: 'Configurar una cuenta Email Pro en Thunderbird para Windows'
+title: 'Email Pro - Configure su cuenta de correo electrónico en Thunderbird para Windows'
 excerpt: 'Cómo configurar una cuenta Email Pro en Thunderbird para Windows'
-updated: 2021-08-26
+updated: 2024-10-09
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
->
 
 ## Objetivo
 
@@ -19,7 +18,6 @@ Es posible configurar sus cuentas Email Pro en el cliente de correo que usted ut
 > La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 > 
 > Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte el apartado «Más información» de esta guía.
-> 
 
 ## Requisitos
 
@@ -34,7 +32,6 @@ Es posible configurar sus cuentas Email Pro en el cliente de correo que usted ut
 > En nuestro ejemplo, hemos utilizado la mención servidor: pro**?**.mail.ovh.net. Sustituya la «?» por la cifra que designa al servidor de su servicio Email Pro.
 >
 > Puede consultar esta cifra en su [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action} y `Email Pro`{.action}. El nombre del servidor aparece en el marco **Conexión** de la pestaña `Información general`{.action}.
->
 
 ### Añadir la cuenta
 
@@ -72,7 +69,6 @@ Si necesita realizar alguna operación que pueda provocar la pérdida de los dat
 > En nuestro ejemplo, hemos utilizado la mención servidor: pro**?**.mail.ovh.net. Sustituya la «?» por la cifra que designa al servidor de su servicio Email Pro.
 >
 > Puede consultar esta cifra en su [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action} y `Email Pro`{.action}. El nombre del servidor aparece en el marco **Conexión** de la pestaña `Información general`{.action}.
->
 
 Si su cuenta de correo ya está configurada y debe acceder a los parámetros de la cuenta para modificarlos:
 
@@ -91,5 +87,9 @@ Si su cuenta de correo ya está configurada y debe acceder a los parámetros de 
 ![Thunderbird](images/thunderbird-win-emailpro06.png){.thumbnail}
 
 ## Más información
+
+> [!primary]
+>
+> Configurar una cuenta manualmentePara obtener más información sobre cómo configurar una dirección de correo electrónico desde la aplicación Thunderbird en Windows, consulte [el Centro de ayuda de Mozilla](https://support.mozilla.org/es/kb/configuracion-automatica-de-las-cuentas#thunderbird:win10:tb115).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

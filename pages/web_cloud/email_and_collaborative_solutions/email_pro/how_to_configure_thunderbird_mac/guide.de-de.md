@@ -1,7 +1,7 @@
 ---
-title: 'Konfiguration Ihrer Email Pro Adresse auf Thunderbird für macOS'
+title: 'E-mail Pro - Konfiguration Ihrer E-Mail-Adresse in Thunderbird für macOS'
 excerpt: 'Hier finden Sie die Informationen zur Konfiguration Ihrer Email Pro Adresse auf Thunderbird für macOS.'
-updated: 2021-08-26
+updated: 2024-10-09
 ---
 
 > [!primary]
@@ -86,5 +86,9 @@ Wenn Ihr E-Mail-Account bereits eingerichtet ist und Sie auf die Account-Einstel
 ![Thunderbird](images/thunderbird-mac-emailpro06.png){.thumbnail}
 
 ## Weiterführende Informationen <a name="gofurther"></a>
+
+> [!primary]
+>
+> Weitere Informationen zum Einrichten einer E-Mail-Adresse über die Thunderbird-App in Windows finden Sie im [Mozilla Help Center](https://support.mozilla.org/de/kb/manuell-ein-konto-konfigurieren#thunderbird:mac:tb115).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

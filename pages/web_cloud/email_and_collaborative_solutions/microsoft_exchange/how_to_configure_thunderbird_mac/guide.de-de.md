@@ -1,7 +1,7 @@
 ---
-title: 'Konfiguration Ihrer Exchange Adresse mit Thunderbird für macOS'
+title: 'Exchange - Konfiguration Ihrer E-Mail-Adresse in Thunderbird für macOS'
 excerpt: 'Erfahren Sie hier, wie Sie Ihren Exchange Account in Thunderbird für macOS einrichten'
-updated: 2021-08-26
+updated: 2024-10-09
 ---
 
 > [!primary]
@@ -18,7 +18,7 @@ Exchange Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingerich
 > In dieser Anleitung erläutern wir die Verwendung einer oder mehrerer OVHcloud Lösungen mit externen Tools. Die durchgeführten Aktionen werden in einem bestimmten Kontext beschrieben. Denken Sie daran, diese an Ihre Situation anzupassen.
 >
 > Wir empfehlen Ihnen jedoch, sich bei Schwierigkeiten an einen [spezialisierten Dienstleister](/links/partner) zu wenden, und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
->
+
 
 ## Voraussetzungen
 
@@ -31,9 +31,8 @@ Exchange Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingerich
 > [!primary]
 >
 > In dieser Anleitung verwenden wir den Servernamen: ex**?**.mail.ovh.net. Das "?" muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden Exchange Dienst ersetzt werden.
-> 
+>
 > Sie finden diese Information im [OVHcloud Kundencenter](/links/manager), wenn Sie im Bereich `Web Cloud`{.action} unter `Microsoft`{.action} und `Exchange`{.action} den Dienst auswählen. Der Servername wird im Kasten **Verbindung** auf der Seite `Allgemeine Informationen`{.action} angezeigt.
-> 
 
 ### Account hinzufügen
 
@@ -90,5 +89,9 @@ Wenn Ihr E-Mail-Account bereits eingerichtet ist und Sie auf die Account-Einstel
 ![Thunderbird](images/thunderbird-mac-exchange06.png){.thumbnail}
 
 ## Weiterführende Informationen <a name="gofurther"></a>
+
+> [!primary]
+>
+> Weitere Informationen zum Einrichten einer E-Mail-Adresse über die Thunderbird-App in Windows finden Sie im [Mozilla Help Center](https://support.mozilla.org/de/kb/manuell-ein-konto-konfigurieren#thunderbird:mac:tb115).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

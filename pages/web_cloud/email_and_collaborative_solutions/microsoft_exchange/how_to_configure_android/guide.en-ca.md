@@ -1,7 +1,7 @@
 ---
 title: "Exchange - Configure an email address in Gmail for Android"
 excerpt: "Find out how to configure an Exchange account on Android, via the Gmail app"
-updated: 2024-03-20
+updated: 2024-10-09
 ---
 
 <style>
@@ -23,7 +23,6 @@ Email accounts of the Exchange solution can be configured on various compatible 
 > This tutorial will show you how to use one or more OVHcloud solutions with external tools, and the changes you need to make in specific contexts. You may need to adapt the instructions according to your situation.
 >
 > If you experience any difficulties carrying out these operations, we recommend that you contact a specialist service provider and/or discuss the issue with our community. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#go-further) section of this guide.
->
 
 ## Requirements
 
@@ -34,7 +33,6 @@ Email accounts of the Exchange solution can be configured on various compatible 
 > [!primary]
 >
 > The instructions in this guide are based on a device that uses Android version 13.
->
 
 ## Instructions
 
@@ -65,7 +63,6 @@ Adding an account will be done differently **if no account is set up**, or **if 
 >> 2. Select `Settings`{.action}.<br><br>
 >> 3. Select `Add Account`{.action}.<br><br>
 >> ![Android Exchange](images/android-existing.png){.thumbnail}
->>
 
 Follow the next steps in the configuration process by clicking on the tabs below:
 
@@ -89,7 +86,6 @@ Follow the next steps in the configuration process by clicking on the tabs below
 > **Step 6**
 >> The message "You can now use your account" should appear. Tap `OK`{.action} to finish configuring your account.<br><br>
 >> ![Android Exchange](images/exchange-android-05.png){.thumbnail .h-600}
->>
 
 Once you have configured your email account, you can start using it! You can now send and receive messages from your Gmail application.
 
@@ -98,6 +94,10 @@ Once you have configured your email account, you can start using it! You can now
 > OVHcloud offers a web application that allows you to access your email account from a web browser, at [Webmail](/links/web/email). You can log in using your email account credentials.
 
 ## Go further <a name="go-further"></a>
+
+> [!primary]
+>
+> For more information on setting up an email address from the Gmail app on Android, see [Google Help Center](https://support.google.com/mail/answer/21289?hl=en&co=GENIE.Platform%3DAndroid&oco=1#zippy=%2Cadd-an-account).
 
 [MX Plan - Configuring an email address in Gmail for Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android).
 

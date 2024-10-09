@@ -1,6 +1,6 @@
 ---
-title: 'Konfiguration von E-Mail Pro auf macOS Mail'
-updated: 2022-06-13
+title: "E-Mail Pro - Konfiguration Ihrer E-Mail-Adresse in Mail für macOS"
+updated: 2024-10-09
 ---
 
 > [!primary]
@@ -25,7 +25,7 @@ E-Mail Pro Accounts können auf verschiedenen, kompatiblen E-Mail-Clients einger
 - Sie verfügen über eine [E-Mail Pro Adresse](/links/web/email-pro).
 - Sie verfügen über das auf Ihrem Mac installierte Mail-Programm.
 - Sie haben die Login-Daten der E-Mail-Adresse, die Sie einrichten möchten.
- 
+
 ## In der praktischen Anwendung
 
 > [!primary]
@@ -89,5 +89,9 @@ Bei einer **POP** Konfiguration sind die Werte:
 > Wenn Sie Ihre E-Mail-Adresse als **IMAP** konfigurieren und die Konfiguration zu **POP** ändern möchten, müssen Sie den Mac Mail-Account löschen und anschließend als **POP** neu erstellen, um die Konfiguration zu ändern.
 
 ## Weiterführende Informationen
- 
+
+> [!primary]
+>
+> Weitere Informationen zum Einrichten einer E-Mail-Adresse über die Mail App auf macOS finden Sie im [Apple Help Center](https://support.apple.com/de-de/guide/mail/mail35803/mac).
+
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

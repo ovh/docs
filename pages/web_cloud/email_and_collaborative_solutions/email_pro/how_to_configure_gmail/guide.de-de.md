@@ -1,7 +1,7 @@
 ---
 title: 'E-Mail Pro - Konfigurieren Sie Ihr E-Mail-Konto im Gmail-Webinterface'
 excerpt: 'Erfahren Sie hier, wie Sie einen E-Mail Pro Account im Webinterface von Gmail einrichten'
-updated: 2024-09-24
+updated: 2024-10-09
 ---
 
 ## Ziel

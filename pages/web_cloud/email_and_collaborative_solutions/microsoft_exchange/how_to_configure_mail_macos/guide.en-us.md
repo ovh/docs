@@ -1,7 +1,7 @@
 ---
-title: Exchange - Configuring your email account on macOS Mail
+title: 'Exchange - Configure your email account on Mail for macOS'
 excerpt: Find out how to configure your Exchange account on macOS Mail
-updated: 2024-04-16
+updated: 2024-10-09
 ---
 
 <style>
@@ -92,6 +92,10 @@ If your email account is already set up and you need to access the account setti
 ![mailmac](images/mail-mac-exchange06.png){.thumbnail .w-400 .h-600}
 
 ## Go further
+
+> [!primary]
+>
+> For more information on configuring an email address from the Mail app on macOS, see [the Apple Help Center](https://support.apple.com/en-gb/guide/mail/mail35803/mac).
 
 [FAQ emails](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 

@@ -72,16 +72,11 @@ Após a configuração, a conta de e-mail está pronta a usar e pode começar a 
 
 A OVHcloud oferece uma aplicação web que permite aceder ao seu endereço de e-mail a partir do seu browser [Webmail](/links/web/email). Para aceder, só precisa dos dados de acesso relativos ao seu endereço de e-mail.
 
-> [!primary]
->
-> Para obter mais informações sobre a configuração de um endereço de e-mail a partir da aplicação Mail para o iOS, consulte [Centro de Ajuda da Apple](https://support.apple.com/pt-pt/102619).
->
-
 ## Quer saber mais?
 
 > [!primary]
 >
->
+> Para obter mais informações sobre a configuração de um endereço de e-mail a partir da aplicação Mail para o iOS, consulte [Centro de Ajuda da Apple](https://support.apple.com/pt-pt/102619).
 
 [Configurar uma conta Exchange num iPhone ou num iPad](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_ios).
 

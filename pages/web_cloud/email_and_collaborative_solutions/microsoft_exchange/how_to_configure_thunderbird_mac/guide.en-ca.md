@@ -1,7 +1,7 @@
 ---
-title: 'Configuring your Exchange account in Thunderbird for macOS'
+title: 'Exchange - Configure your email account on Thunderbird for macOS'
 excerpt: 'Find out how to configure your Exchange account in Thunderbird for macOS'
-updated: 2021-08-26
+updated: 2024-10-09
 ---
 
 ## Objective
@@ -14,22 +14,22 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 > This guide will show you how to use one or more OVHcloud solutions with external tools, and the changes you need to make in specific contexts. You may need to adapt the instructions according to your situation.
 >
 > If you experience any difficulties carrying out these operations, we recommend that you contact a [specialist service provider](/links/partner) and/or discuss the issue with our community. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#gofurther) section of this guide.
->
+
 
 ## Requirements
 
 - an [OVHcloud Exchange account](/links/web/emails-hosted-exchange)
 - Thunderbird software installed on your macOS system
 - login credentials for the email account to be configured
- 
+
 ## Instructions
 
 > [!primary]
 >
 > In this guide, we use as the hostname: ex**?**.mail.ovh.ca. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
-> 
-> You can find this information in the [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section, if you select `Microsoft`{.action}. Click on `Exchange`{.action} and then on your service. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
 >
+> You can find this information in the [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section, if you select `Microsoft`{.action}. Click on `Exchange`{.action} and then on your service. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
+
 
 ### Adding the account
 
@@ -67,7 +67,6 @@ If you need to make a change that could lead to the loss of your email account d
 > In this guide, we use as the hostname: ex**?**.mail.ovh.ca. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
 > 
 > You can find this information in the [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section, if you select `Microsoft`{.action}. Click on `Exchange`{.action} and then on your service. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
->
 
 If your email account has already been set up and you need to access the account settings to change them:
 
@@ -86,5 +85,9 @@ If your email account has already been set up and you need to access the account
 ![Thunderbird](images/thunderbird-mac-exchange06.png){.thumbnail}
 
 ## Go further <a name="gofurther"></a>
+
+> [!primary]
+>
+> Configure an account manuallyFor more information on configuring an email address from the Thunderbird app on Windows, see [the Mozilla Help Center](https://support.mozilla.org/en-US/kb/manual-account-configuration#thunderbird:mac:tb115).
 
 Join our community of users on <https://community.ovh.com/en/>.

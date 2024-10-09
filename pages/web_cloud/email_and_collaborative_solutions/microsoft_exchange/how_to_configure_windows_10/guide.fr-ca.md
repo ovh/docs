@@ -1,14 +1,14 @@
 ---
-title: 'Configurer son compte Exchange sur Courrier pour Windows 10'
-excerpt: "Apprenez à configurer un compte Exchange sur l'application Courrier pour Windows 10"
-updated: 2018-04-04
+title: ‘Exchange - Configurer son compte e-mail sur Courrier pour Windows'
+excerpt: "Apprenez à configurer un compte Exchange sur l'application Courrier pour Windows"
+updated: 2024-10-09
 ---
 
 ## Objectif
 
 Les comptes Exchange peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d'utiliser votre adresse e-mail depuis l'appareil de votre choix.
 
-**Apprenez à configurer un compte Exchange sur l'application Courrier pour Windows 10.**
+**Apprenez à configurer un compte Exchange sur l'application Courrier pour Windows.**
 
 ## Prérequis
 
@@ -57,5 +57,9 @@ Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vou
 OVHcloud propose également une application web disposant de fonctions collaboratives. Celle-ci est accessible à l’adresse [Webmail](/links/web/email). Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail.
 
 ## Aller plus loin
+
+> [!primary]
+>
+> Pour plus d'informations sur la configuration d'une adresse e-mail depuis le client de messagerie Courrier sur Windows, consultez [le centre d'aide de Mircrosoft](https://support.microsoft.com/fr-fr/office/configurer-l-e-mail-dans-l-application-courrier-7ff79e8b-439b-4b47-8ff9-3f9a33166c60).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
