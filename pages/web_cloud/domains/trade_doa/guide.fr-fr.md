@@ -23,7 +23,7 @@ Si les situations décrites ci-dessus ne vous correspondent pas, sachez que l'AF
 >
 > La DOA doit obligatoirement être effectuée auprès de l'actuel bureau d'enregistrement du nom de domaine. Si le nom de domaine n'est pas enregistré chez OVHcloud, contactez le bureau d'enregistrement actuel du nom de domaine concerné pour réaliser une DOA à leur niveau.
 >
-> Exception faite de la procédure [SYRELI](https://www.syreli.fr/fr/){.external} évoquée [plus bas](#doa-syreli) dans ce guide. Une DOA ne peut pas être couplée à une opération de transfert du nom de domaine. Vous devrez d'abord réaliser votre DOA, puis réaliser une opération de transfert [entrant](/pages/web_cloud/domains/transfer_incoming_generic_domain) ou [sortant](/pages/web_cloud/domains/transfer_outgoing_domain) de votre nom de domaine.
+> Exception faite de la procédure [SYRELI](https://www.syreli.fr/fr/){.external} évoquée [plus bas](#doa-syreli) dans ce guide, une DOA ne peut pas être couplée à une opération de transfert du nom de domaine. Vous devrez d'abord réaliser votre DOA, puis réaliser une [opération de transfert entrant](/pages/web_cloud/domains/transfer_incoming_generic_domain) ou [sortant](/pages/web_cloud/domains/transfer_outgoing_domain) de votre nom de domaine.
 
 **Découvrez comment réaliser une Demande d'Opération AFNIC (DOA)**
 
