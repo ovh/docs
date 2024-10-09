@@ -161,7 +161,7 @@ La [procédure de **SY**stème de **RE**solution de **LI**tiges (**SYRELI**)](ht
 
 La procédure SYRELI étant payante, nous vous recommandons de vous assurer qu'elle correspond parfaitement à votre situation. Pour cela, n'hésitez pas à consulter le **règlement**, les **ressources** et les **cas de jurisprudence** mis à disposition par l'AFNIC sur leur site web dédié à la [procédure SYRELI](https://www.syreli.fr/fr/){.external}.
 
-Si, suite à cela, vous disposez d'une décision SYRELI favorable pour récupérer la propriété de votre nom de domaine et que vous souhaitez transférer ce dernier chez OVHcloud, c'est possible en réalisant les **4 étapes** suivantes :
+Si vous bénéficiez par la suite d'une décision SYRELI favorable pour récupérer la propriété de votre nom de domaine et que vous souhaitez transférer ce dernier chez OVHcloud, suivez les **4 étapes** ci-dessous :
 
 1. Si cela n'a pas déjà été réalisé lors de votre procédure SYRELI, remplissez une [DOA dans le cadre d'une transmission forcée (Recover)](#doa-recover).
 2. Préparez les documents à fournir avec la [DOA dans le cadre d'une transmission forcée (Recover)](#doa-recover), en fonction du statut du nouveau propriétaire (société, association, particulier).
