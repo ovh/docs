@@ -53,7 +53,6 @@ The MongoDB Kubernetes Operator supports the following resource specifications:
  - [Deploy and Configure MongoDB Database Resources](https://www.mongodb.com/docs/kubernetes-operator/upcoming/mdb-resources/#deploy-and-configure-mongodb-database-resources)
  - [Deploy MongoDB Resources on Multiple Kubernetes Clusters](https://www.mongodb.com/docs/kubernetes-operator/upcoming/multi-cluster/#deploy-mongodb-resources-on-multiple-kubernetes-clusters)
 
-
 ## We want your feedback!
 
 We would love to help answer questions and appreciate any feedback you may have.

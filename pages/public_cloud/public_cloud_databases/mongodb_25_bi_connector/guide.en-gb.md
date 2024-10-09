@@ -18,11 +18,11 @@ Refer to the MongoDB documentation for a [Quick Start Guide](https://www.mongodb
 
 ## Connect the BI tool to the OVHcloud cluster
 
-### STEP 1: Install the BI Connector
+### Step 1: Install the BI Connector
 
 Refer to the MongoDB documentation for [installing the BI connector](https://www.mongodb.com/docs/bi-connector/current/installation/#install-bi-connector-on-premises).
 
-### STEP 2: Launch the BI Connector
+### Step 2: Launch the BI Connector
 
 Refer to the MongoDB documentation for [launching the BI Connector](https://www.mongodb.com/docs/bi-connector/current/launch/#launch-bi-connector)
 
@@ -40,11 +40,9 @@ Refer to MongoDB documentation for addtional information on [starting the mongos
 
 ![alt text](./images/mongosqldCmd.png)
 
-
-### STEP 3: Connect BI Tools - Example with Tableau
+### Step 3: Connect BI Tools - Example with Tableau
 
 Refer to the MongoDB documentation for [connecting the BI tool](https://www.mongodb.com/docs/bi-connector/current/client-applications/).
-
 
 ![alt text](./images/ODBC-OVHcloud.PNG)
 

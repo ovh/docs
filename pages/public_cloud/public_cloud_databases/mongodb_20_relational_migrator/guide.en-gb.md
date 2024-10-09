@@ -21,16 +21,25 @@ The [MongoDB Relational Migrator](https://www.mongodb.com/fr-fr/products/tools/r
 
 ### Prerequisites
 
-- OVH cloud MongoDB instance
+- OVHcloud MongoDB instance
 - Access to the relational database you wish to migrate
 - Basic understanding of MongoDB and relational database concepts
 
 ### Step-by-Step Migration Process
-you can refer to the mongodb documentation for a [quick start guide](https://www.mongodb.com/docs/relational-migrator/getting-started/#get-started-with-relational-migrator).
+
+You can refer to the mongodb documentation for a [quick start guide](https://www.mongodb.com/docs/relational-migrator/getting-started/#get-started-with-relational-migrator).
 
 ## Migration Scenarios
+
 You can use Relational Migrator to migrate one legacy application at a time to MongoDB. Depending on your application's needs, you can migrate either with or without downtime.
 - [Migrate During Scheduled Downtime](https://www.mongodb.com/docs/relational-migrator/getting-started/migration-scenarios/#migrate-during-scheduled-downtime)
 - [Migrate Without Downtime](https://www.mongodb.com/docs/relational-migrator/getting-started/migration-scenarios/#migrate-without-downtime)
 - [Currently Unsupported Migration Scenarios](https://www.mongodb.com/docs/relational-migrator/getting-started/migration-scenarios/#currently-unsupported-migration-scenarios)
 
+## We want your feedback!
+
+We would love to help answer questions and appreciate any feedback you may have.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project. Join our community of users on <https://community.ovh.com/en/>.
+
+Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!

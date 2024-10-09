@@ -3,6 +3,7 @@ title: MongoDB - MongoDB readPreference and writeConcern
 excerpt: MongoDB readPreference and writeConcern
 updated: 2024-06-27
 ---
+
 > [!WARNING]
 > MongoDB parameters such as readPreference and writeConcern have performance implications.
 
@@ -17,8 +18,6 @@ By default, MongoDB's read preference is set to read from the primary node. This
 [WriteConcern](https://www.mongodb.com/docs/manual/reference/write-concern/) defines the level of acknowledgment required from the database when a write operation is performed, allowing you to balance between data durability and write performance. Together, these settings provide flexible and fine-grained control over data consistency, availability, and performance in your MongoDB deployment.
 
 MongoDB's write concern is meant to provide flexibility in balancing data durability and write performance. The **w=1** write concern means the write operation is acknowledged by only the primary node, offering lower latency and higher throughput, suitable for use cases where performance is critical and occasional data loss is acceptable. On the other hand, **majority** write concern, which is the defaut value, ensures the write is acknowledged by the majority of replica set members, providing higher data durability and consistency, ideal for applications where data integrity and reliability are paramount, such as financial transactions or critical data systems.
-
-
 
 ## ReadPreference
 

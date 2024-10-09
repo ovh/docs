@@ -8,17 +8,17 @@ updated: 2024-06-27
 
 This articles discusses essential best practices for managing MongoDB post-deployment. Key areas of focus include monitoring, backup strategies, security measures, upgrade procedures, and user and roles management. By following these guidelines, you can ensure your MongoDB environment remains secure, reliable, and performant, thus maximizing the efficiency and effectiveness of your database operations.
 
-
 # MongoDB Post-Deployment Operational Best Practices
 
 ## 1. Monitoring
-- **OVH cloud Built-in Monitoring Tools:**
-  - [Metrics tab](https://help.ovhcloud.com/csm/en-ie-public-cloud-databases-mongodb-monitoring?id=kb_article_view&sysparm_article=KB0061661): Provides comprehensive monitoring dashboards.
+
+- **OVHcloud Built-in Monitoring Tools:**
+  - [Metrics tab](/pages/public_cloud/public_cloud_databases/mongodb_15_monitoring): Provides comprehensive monitoring dashboards.
 - **Third-Party Tools:**
   - [Prometheus](https://prometheus.io/): Integrates with MongoDB Exporter for metrics collection.
   - [Grafana](https://grafana.com/): Visualizes metrics collected by Prometheus.
   - [Datadog](https://docs.datadoghq.com/integrations/mongo/?tab=replicaset): Offers deep MongoDB integration for metrics and alerts.
-  - [Hatchet](https://github.com/ralphsawaya/ovh/blob/main/MongoDoc/mongodb_01_Why_mongoDB/guide.en-gb.md#hatchet): Parses the logs to help you identify slow queries.
+  - [Hatchet](/pages/public_cloud/public_cloud_databases/mongodb_17_why_mongodb): Parses the logs to help you identify slow queries.
     
 - [**Key Metrics for Monitoring MongoDB Cluster**](https://www.mongodb.com/docs/atlas/review-available-metrics/#review-available-metrics)
   - **Normalized System CPU**: 
@@ -69,11 +69,12 @@ This articles discusses essential best practices for managing MongoDB post-deplo
 
 
 ## 2. Backup
-- **OVH Automated Backup Solutions:**
-  - [OVH Automated Cloud Backup](https://help.ovhcloud.com/csm/en-ie-public-cloud-databases-backups?id=kb_article_view&sysparm_article=KB0048698).
-  - [OVH Restore backup](https://help.ovhcloud.com/csm/en-ie-public-cloud-databases-restore-backup?id=kb_article_view&sysparm_article=KB0048800)
+
+- **OVHcloud Automated Backup Solutions:**
+  - [OVHcloud Automated Backup](/pages/public_cloud/public_cloud_databases/databases_05_automated_backups).
+  - [OVHcloud Restore Backup](/pages/public_cloud/public_cloud_databases/databases_06_restore_backup)
 - **Snapshot-based Backups**
-  - [mongodump and mongorestore](https://help.ovhcloud.com/csm/en-ie-public-cloud-databases-mongodb-backups-restores?id=kb_article_view&sysparm_article=KB0049107): Regular snapshots of the data.
+  - [mongodump and mongorestore](/pages/public_cloud/public_cloud_databases/mongodb_06_howto_backup_restore): Regular snapshots of the data.
 - **Backup Best Practices:**
   - **Frequency:** Regular backups (daily or hourly) depending on data criticality.
   - **Retention Policy:** Define retention policies to balance cost and availability.
@@ -81,13 +82,14 @@ This articles discusses essential best practices for managing MongoDB post-deplo
   - **Encryption:** Ensure backups are encrypted at rest and in transit.
 
 ## 3. Security
+
 - **Authentication and Authorization:**
   - **Enable Authentication:** Use SCRAM, LDAP, or Kerberos.
   - **Role-Based Access Control (RBAC):** Assign specific roles and permissions.
 - **Encryption:**
-  - **At-Rest Encryption**: OVH cloud Advanced plan automatically encrypts data at REST.
-  - **In-Transit Encryption:** TLS is enabled for all OVH cloud clusters.
-- [Network Security:](https://help.ovhcloud.com/csm/en-ie-public-cloud-databases-mongodb-managing-service?id=kb_article_view&sysparm_article=KB0049064)
+  - **At-Rest Encryption**: OVHcloud Advanced plan automatically encrypts data at REST.
+  - **In-Transit Encryption:** TLS is enabled for all OVHcloud clusters.
+- [Network Security:](/pages/public_cloud/public_cloud_databases/mongodb_02_manage_control_panel)
   - **Firewall:** Restrict access to MongoDB instances.
   - **IP Whitelisting:** Allow only trusted IP addresses to access the database.
 - **Auditing:**
@@ -95,6 +97,7 @@ This articles discusses essential best practices for managing MongoDB post-deplo
   - **Review Logs:** Regularly review audit logs for suspicious activities.
 
 ## 4. Upgrades
+
 - **Version Compatibility:**
   - [**Check Compatibility:**](https://www.mongodb.com/docs/drivers/about-compatibility/) Ensure new MongoDB versions are compatible with your [applications drivers](https://www.mongodb.com/docs/drivers/).
   - [**Read Release Notes:**](https://www.mongodb.com/docs/manual/release-notes/#release-notes) Understand new features, bug fixes, and deprecations.
@@ -107,7 +110,8 @@ This articles discusses essential best practices for managing MongoDB post-deplo
   - **Follow the Recommended Path:** Use the documented upgrade paths provided by MongoDB.
 
 ## 5. Users and Roles Management
-- [**User Management:**](https://help.ovhcloud.com/csm/en-ie-public-cloud-databases-mongodb-managing-service?id=kb_article_view&sysparm_article=KB0049064)
+
+- [**User Management:**](/pages/public_cloud/public_cloud_databases/mongodb_02_manage_control_panel)
   - **Create Users with Specific Roles:** Assign roles based on the principle of least privilege.
   - **Disable Unused Accounts:** Regularly review and disable inactive accounts.
 - [**Role Management:**](https://www.mongodb.com/docs/manual/reference/built-in-roles/#self-hosted-deployment-built-in-roles)
@@ -116,9 +120,10 @@ This articles discusses essential best practices for managing MongoDB post-deplo
   - **Strong Passwords:** Enforce strong password policies.
   - **Rotation Policies:** Implement regular password rotation policies.
 - **Multi-Factor Authentication (MFA):**
-  - **Enable MFA:** OVH cloud offers already MFA.
+  - **Enable MFA:** OVHcloud offers already MFA.
 
 ## 6. Performance Tuning
+
   - [**Use Appropriate Indexes:**](https://github.com/ralphsawaya/ovh/blob/main/MongoDoc/mongodb_02_Best_practise_to_implement%20_your_first_mongoDB_instance/guide.en-gb.md#indexing) Create indexes to support query patterns and Regularly review and optimize indexes.
 
 ## We want your feedback!
