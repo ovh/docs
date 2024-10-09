@@ -96,7 +96,7 @@ Once you have configured your email account, you can start using it! You can now
 
 > [!primary]
 >
-> For more information on setting up an email address from the Gmail app on Android, see [Google Help Center](https://support.google.com/mail/answer/21289?hl=en&co=GENIE.Platform%3DAndroid&oco=1#zippy=%2Cadd-an-account).
+> For more information on setting up an email address from the Gmail app on Android, see the [Google Help Center](https://support.google.com/mail/answer/21289?hl=en&co=GENIE.Platform%3DAndroid&oco=1#zippy=%2Cadd-an-account).
 
 [MX Plan - Configuring an email address in Gmail for Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android).
 

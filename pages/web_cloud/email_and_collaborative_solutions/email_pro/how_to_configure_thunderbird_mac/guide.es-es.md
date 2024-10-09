@@ -94,6 +94,6 @@ Si su cuenta de correo ya está configurada y debe acceder a los parámetros de 
 
 > [!primary]
 >
-> Configurar una cuenta manualmentePara obtener más información sobre cómo configurar una dirección de correo electrónico desde la aplicación Thunderbird en Windows, consulte [el Centro de ayuda de Mozilla](https://support.mozilla.org/es/kb/configuracion-automatica-de-las-cuentas#thunderbird:mac:tb115).
+> Para obtener más información sobre cómo configurar una dirección de correo electrónico desde la aplicación Thunderbird en Windows, consulte [el Centro de ayuda de Mozilla](https://support.mozilla.org/es/kb/configuracion-automatica-de-las-cuentas#thunderbird:mac:tb115).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
