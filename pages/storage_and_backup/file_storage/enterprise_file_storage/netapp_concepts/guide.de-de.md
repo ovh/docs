@@ -29,7 +29,7 @@ Wenn Sie über Ihren OVHcloud Kunden-Account einen Enterprise File Storage zwisc
 
 Der OVHcloud Kunden-Account ist standardmäßig der Admin-, Tech- und Rechnungskontakt des Dienstes. Weitere Informationen finden Sie in unserer Anleitung zur [Kontaktverwaltung Ihrer Dienste](/pages/account_and_service_management/account_information/managing_contacts).
 
-![Enterprise File Storage 1](images/NetApp_Concept_1.png)
+![Enterprise File Storage 1](images/Netapp_Concept_1.png)
 
 > [!primary]
 >
@@ -41,7 +41,7 @@ Der OVHcloud Kunden-Account ist standardmäßig der Admin-, Tech- und Rechnungsk
 Sobald Sie Ihren Enterprise File Storage-Dienst bestellt haben, steht Ihnen ein Speicherkapazitätsdienst zur Verfügung. In diesem Dienst können Sie ein oder mehrere Volumes erstellen, wobei jedes Volume einer Partition entspricht.
 <br>Diese Volumes ermöglichen es Ihnen, Dateien zu speichern, und sind über eine von OVHcloud bereitgestellte IP-Adresse im Netzwerk verfügbar.
 
-![Enterprise File Storage 2](images/NetApp_Concept_2.png)
+![Enterprise File Storage 2](images/Netapp_Concept_2.png)
 
 > [!primary]
 >
@@ -60,7 +60,7 @@ Aus Sicherheitsgründen ist ein Volume nicht sofort über seinen Zugriffspfad er
 
 Diese Regeln bestehen aus einer Quell-IP-Adresse Ihres Netzwerks im Format x.x.x.x/x und einem Berechtigungstyp, entweder nur lesen (RO) oder lesen/schreiben (RW).
 
-![Enterprise File Storage 3](images/NetApp_Concept_3.png)
+![Enterprise File Storage 3](images/Netapp_Concept_3.png)
 
 > [!primary]
 >
@@ -81,7 +81,7 @@ Der Snapshot ist eine Kopie der Volume-Metadaten zu einem bestimmten Zeitpunkt (
 
 Der tägliche Verbrauch von Snapshots liegt für viele Anwendungen zwischen 1% und 5% der Gesamtkapazität. Deshalb reserviert OVHcloud bei jeder Volume-Erstellung 5% von dessen Kapazität für Snapshots.
 
-![Enterprise File Storage 4](images/NetApp_Concept_4.png)
+![Enterprise File Storage 4](images/Netapp_Concept_4.png)
 
 Weitere Informationen finden Sie in der Anleitung "[Snapshots eines Volumes verwalten](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_volume_snapshots)".
 
