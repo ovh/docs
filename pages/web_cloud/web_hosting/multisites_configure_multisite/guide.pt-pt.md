@@ -20,6 +20,7 @@ Pode alojar vários websites no mesmo alojamento web, mesmo que os nomes de dom�
 - 2 : [Adicionar um domínio ou subdomínio](#add-domain)
     - 2.1 : [Adicionar um domínio registado na OVHcloud](#add-ovhcloud-domain)
     - 2.2 : [Adicionar um domínio externo](#add-external-domain)
+    - 2.3 : [Diagnosticar os seus nomes de domínio](#diagnostic-domain)
 - 3 : [Colocar o seu website online](#site-online)
 
 ## Requisitos
@@ -156,6 +157,42 @@ Tenha em atenção os elementos apresentados e clique no botão `Validar`{.actio
 >
 > As entradas DNS de tipo **A** e **TXT** devem obrigatoriamente ser colocadas na zona DNS ativa do seu nome de domínio para que este seja adicionado ao seu alojamento web. Apenas as entradas DNS de tipo **AAAA** são opcionais. 
 >
+
+#### Etapa 2.3: diagnosticar os seus nomes de domínio <a name="diagnostic-domain"></a>
+
+Na tabela apresentada no separador `Multisite`, aparecerá uma coluna `Diagnóstico` para informar se o domínio está a apontar corretamente para o alojamento web associado. Desta forma, poderá verificar rapidamente se a configuração DNS do domínio foi efetuada corretamente com o seu alojamento web. Desta forma, esta coluna ajuda a identificar e resolver potenciais problemas de apontamento. Para cada domínio, são possíveis três resultados de diagnóstico:
+
+- `A/AAAA` verde
+- `A/AAAA` amarelo
+- `A/AAAA` cinzento
+
+##### A/AAAA verde
+
+![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-green-info.png){.thumbnail}
+
+Quando o ícone `A/AAAA` é verde na coluna `Diagnóstico`, isto significa que o registo **A** (para os endereços IPv4) e/ou o registo **AAAA** (para os endereços IPv6) do seu domínio aponta corretamente para o endereço IP do seu alojamento web. A configuração DNS do seu domínio está em conformidade para funcionar com o seu alojamento web.
+
+##### A/AAAA amarelo
+
+![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-info.png){.thumbnail}
+
+Quando o ícone `A/AAAA` é amarelo na coluna `Diagnóstico`, isto significa que o registo **A** (IPv4) e/ou **AAAA** (IPv6) do seu domínio aponta para um endereço IP, mas que não é aquele do alojamento web a partir do qual consulta a coluna `Diagnóstico`.
+Clique no ícone `A/AAAA` amarelo para mais informações. Aparecerá a seguinte mensagem:
+
+![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-popup.png){.thumbnail}
+
+Para resolver os problemas de apontamento DNS do seu domínio e garantir que aponta corretamente para o alojamento web desejado, siga os passos descritos no nosso guia "[Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
+
+##### A/AAAA cinzento
+
+![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-info.png){.thumbnail}
+
+Quando o ícone `A/AAAA` está cinzento na coluna `Diagnóstico`, isto significa que o domínio não está atualmente apontado para nenhum endereço IP e que não está configurado nenhum registo **A** ou **AAAA** para este domínio.
+Clique no ícone `A/AAAA` cinzento para mais informações. Aparecerá a seguinte mensagem:
+
+![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-popup.png){.thumbnail}
+
+Para adicionar os registos **A** ou **AAAA** e configurar corretamente o seu domínio, siga os passos descritos no nosso manual "[Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
 ### Etapa 3: colocar o seu website online <a name="site-online"></a>
 
