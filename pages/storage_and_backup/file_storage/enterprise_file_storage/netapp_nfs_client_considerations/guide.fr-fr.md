@@ -10,7 +10,7 @@ updated: 2024-10-09
 
 ## Prérequis
 
-- Disposer d'une offre OVHcloud Enterprise File Storage
+- Disposer d'une offre [Enterprise File Storage](/links/storage/enterprise-file-storage)
 
 ## En pratique
 
@@ -59,8 +59,6 @@ Voici la procédure à suivre pour modifier votre stratégie de sécurité en co
 
 Pour des raisons de sécurité, l'option « showmount » permettant de lister les partages disponibles sur un serveur NFS est désactivée par défaut.
 Cependant, si vous obtenez des erreurs de type « erreur périphérique invalide » lors de certaines opérations d'écritures ou si vous utilisez une application qui doit absolument utiliser cette fonctionnalité, ouvrez un [ticket auprès du support OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help) afin de demander qu'elle soit activée exceptionnellement.
-
-Documentation de référence:
 
 > [!primary]
 >
