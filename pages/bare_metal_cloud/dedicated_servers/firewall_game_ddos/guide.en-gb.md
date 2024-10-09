@@ -51,12 +51,12 @@ To configure game protection rules for your Bare Metal Game server, log in to th
 - Go to `Network`{.action} in the left-hand sidebar.
 - Open `IP`{.action}.
 
-You can filter IP addresses by using the `All services`{.action} drop-down menu. Enter the name or category of the corresponding server:
+You can filter IP addresses by using the `All services`{.action} drop-down menu. Enter the name or category of the corresponding server:  
 | ![configure-game-firewall](images/ip_listing.png) |
 |:--:|
 | IP listing: Find your IP address by corresponding service |
 
-Navigate to the *Game firewall* configuration:
+Navigate to the *Game firewall* configuration:  
 | ![game-server](images/firewall_game_01_blur.png) |
 |:--:|
 | Click on the `...`{.action} button next to the IP address of your Game server. |
