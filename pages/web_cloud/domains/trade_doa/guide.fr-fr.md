@@ -159,7 +159,7 @@ Retrouvez ci-dessous la liste des documents à fournir en fonction de la situati
 
 La [procédure de **SY**stème de **RE**solution de **LI**tiges (**SYRELI**)](https://www.syreli.fr/fr/){.external} a été mise au point par [l'AFNIC](https://www.afnic.fr/produits-services/){.external} pour résoudre des situations particulières sur un nom de domaine au sens des articles [L.45-2 et L.45-6 du **C**ode des **P**ostes et des **C**ommunications **E**lectroniques (**CPCE**)](https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006150688){.external}. 
 
-La procédure SYRELI étant payante, nous vous recommandons de vous assurer que cette procédure correspond parfaitement à votre situation. Pour cela, n'hésitez pas à consulter le **règlement**, les **ressources** et les **cas de jurisprudence** mis à disposition par l'AFNIC sur leur site web dédié à la [procédure SYRELI](https://www.syreli.fr/fr/){.external}.
+La procédure SYRELI étant payante, nous vous recommandons de vous assurer qu'elle correspond parfaitement à votre situation. Pour cela, n'hésitez pas à consulter le **règlement**, les **ressources** et les **cas de jurisprudence** mis à disposition par l'AFNIC sur leur site web dédié à la [procédure SYRELI](https://www.syreli.fr/fr/){.external}.
 
 Si, suite à cela, vous disposez d'une décision SYRELI favorable pour récupérer la propriété de votre nom de domaine et que vous souhaitez transférer ce dernier chez OVHcloud, c'est possible en réalisant les **4 étapes** suivantes :
 
