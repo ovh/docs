@@ -20,6 +20,10 @@ Si les situations décrites ci-dessus ne vous correspondent pas, sachez que l'AF
 > Cette opération ne déplace pas votre nom de domaine vers un autre compte client OVHcloud et est limitée uniquement aux [extensions gérées par l'AFNIC](https://www.afnic.fr/produits-services/){.external}.
 >
 > Vous pourrez être amené à [modifier les contacts](/pages/account_and_service_management/account_information/managing_contacts) du nom de domaine une fois le domaine récupéré avec la DOA.
+>
+> La DOA doit obligatoirement être effectuée auprès de l'actuel bureau d'enregistrement du nom de domaine. Si le nom de domaine n'est pas enregistré chez OVHcloud, contactez le bureau d'enregistrement actuel du nom de domaine concerné pour réaliser une DOA à leur niveau.
+>
+> Exception faite de la procédure [SYRELI](https://www.syreli.fr/fr/){.external} évoquée [plus bas](#doa-syreli) dans ce guide. Une DOA ne peut pas être couplée à un transfert entrant ou sortant du nom de domaine. Vous devrez d'abord réaliser votre DOA, puis réaliser une opération de transfert [entrant](/pages/web_cloud/domains/transfer_incoming_generic_domain) ou [sortant](/pages/web_cloud/domains/transfer_outgoing_domain) de votre nom de domaine.
 
 **Découvrez comment réaliser une Demande d'Opération AFNIC (DOA)**
 
@@ -75,7 +79,7 @@ La DOA devra également être accompagnée des documents justificatifs de l'anci
 > Vous devez obligatoirement signer la DOA et renseigner le cachet de la société si nécessaire.
 >
 
-### DOA dans le cadre d'une transmission forcée (Recover)
+### DOA dans le cadre d'une transmission forcée (Recover) <a name="doa-recover"></a>
 
 > [!primary]
 >
@@ -149,6 +153,28 @@ Retrouvez ci-dessous la liste des documents à fournir en fonction de la situati
 > [!primary]
 >
 > Si vous vous trouvez dans l'incapacité de réaliser vous-même le bon de commande de changement de propriétaire depuis votre [espace client OVHcloud](/links/manager), vous pouvez, dans ce cas précis, contacter directement le support en créant un ticket d'assistance depuis votre espace client.
+>
+
+### Cas particulier : DOA dans le cadre d'une SYRELI (transmission forcée : Recover) + transfert entrant du nom de domaine chez OVHcloud <a name="doa-syreli"></a>
+
+La [procédure de **SY**stème de **RE**solution de **LI**tiges (**SYRELI**)](https://www.syreli.fr/fr/){.external} a été mise au point par [l'AFNIC](https://www.afnic.fr/produits-services/){.external} pour résoudre des situations particulières sur un nom de domaine au sens des articles [L.45-2 et L.45-6 du Code des Postes et des Communications Electroniques (CPCE)](https://www.legifrance.gouv.fr/codes/id/LEGISCTA000006150688){.external}. 
+
+La procédure SYRELI étant payante, nous vous recommandons de vous assurer que cette procédure correspond parfaitement à votre situation. Pour cela, n'hésitez pas à consulter le **règlement**, les **ressources** et les **cas de jurisprudence** mis à disposition par l'AFNIC sur leur site web dédié à la [procédure SYRELI](https://www.syreli.fr/fr/){.external}.
+
+Si, suite à cela, vous disposez d'une décision SYRELI favorable pour récupérer votre nom de domaine et que vous souhaitez transférer ce dernier chez OVHcloud, c'est possible en réalisant les étapes suivantes :
+
+1. Si cela n'a pas déjà été réalisé lors de votre procédure SYRELI, remplissez une [DOA dans le cadre d'une transmission forcée (Recover)](#doa-recover).
+2. Préparez les documents à fournir avec la [DOA dans le cadre d'une transmission forcée (Recover)](#doa-recover), en fonction du statut du nouveau propriétaire (société, association, particulier).
+3. Initiez le [transfert entrant](/pages/web_cloud/domains/transfer_incoming_generic_domain) du nom de domaine concerné chez OVHcloud. Lors de cette étape, vérifiez que le nouveau propriétaire déclaré correspond bien au nouveau propriétaire bénéficiant de la procédure SYRELI. Lorsque vous arriverez à l'étape vous demandant le *code de transfert* du nom de domaine, l'opération tombera automatiquement en erreur. Cette situation est normale et est liée au fait qu'il ne s'agit pas là d'un transfert classique. L'essentiel ici est que la commande soit initiée pour que le support d'OVHcloud puisse agir à partir de l'étape qui suit.
+4. Contactez le support d'OVHcloud en créant un ticket d'assistance depuis votre [espace client OVHcloud](/links/manager). Précisez dans le ticket le nom de domaine concerné, la décision SYRELI, la DOA complétée et l'ensemble des documents relatifs au nouveau propriétaire que vous avez préparé lors de l'étape 2.
+
+Dès que le support prend en charge votre demande et en fonction des délais de traitement de l'AFNIC (qui vérifiera les éléments fournis dans votre ticket d'assistance et validera ou non l'opération), le processus de traitement prends généralement entre 24 et 48 heures.
+
+Dès que l'AFNIC transmet un retour favorable, OVHcloud finalise le transfert entrant du nom de domaine. Vous pourrez ainsi l'administrer directement depuis votre [espace client OVHcloud](/links/manager).
+
+> [!primary]
+>
+> Si vous disposez d'une décision SYRELI favorable pour un nom de domaine chez OVHcloud et que vous osuhaitez réaliser un transfert sortant vers un autre bureau d'enregistrement, contactez le nouveau bureau d'enregistrement souhaité pour connaître les modalités à suivre à leur niveau pour réaliser ce transfert de nom de domaine.
 >
 
 ## Aller plus loin
