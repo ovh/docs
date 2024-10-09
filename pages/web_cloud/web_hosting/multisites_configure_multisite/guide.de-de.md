@@ -1,7 +1,7 @@
 ---
 title: Mehrere Websites auf einem Webhosting einrichten
 excerpt: Erfahren Sie hier, wie Sie ein Webhosting für mehrere Websites verwenden
-updated: 2024-03-15
+updated: 2024-10-08
 ---
 
 > [!primary]
@@ -20,6 +20,7 @@ Sie können mehrere Websites auf einem einzigen Webhosting-Angebot hosten, auch 
 - 2: [Eine Domain oder Subdomain hinzufügen](#add-domain)
     - 2.1: [Eine bei OVHcloud registrierte Domain hinzufügen](#add-ovhcloud-domain)
     - 2.2: [Eine externe Domain hinzufügen](#add-external-domain)
+    - 2.3: [Diagnose Ihrer Domainnamen](#diagnostic-domain)
 - 3: [Ihre Website online stellen](#site-online)
 
 ## Voraussetzungen
@@ -158,6 +159,42 @@ Jedes Hinzufügen einer Domain außerhalb von OVHcloud erfordert eine zusätzlic
 >
 > Die DNS-Einträge vom Typ **A** und **TXT** müssen zwingend in der aktiven DNS-Zone Ihres Domainnamens konfiguriert werden, damit er zu Ihrem Webhosting hinzugefügt werden kann. Nur DNS-Einträge vom Typ **AAAA** sind optional.
 >
+
+#### Schritt 2.3: Diagnose Ihrer Domainnamen <a name="diagnostic-domain"></a>
+
+In der Tabelle im Tab `Multisite` wird eine Spalte `Diagnose` angezeigt, die Sie darüber informiert, ob Ihr Domainname korrekt auf das zugehörige Webhosting verweist. Damit können Sie schnell überprüfen, ob die DNS-Konfiguration Ihrer Domain korrekt mit Ihrem Webhosting durchgeführt wurde. Auf diese Weise können Sie mit dieser Spalte potenzielle Zeigeprobleme identifizieren und beheben. Für jeden Domainnamen sind drei Diagnoseergebnisse möglich:
+
+- `A/AAAA` grün
+- `A/AAAA` gelb
+- `A/AAAA` grau
+
+##### A/AAAA grün
+
+![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-green-info.png){.thumbnail}
+
+Wenn das Symbol `A/AAAA` in der Spalte `Diagnose` grün ist, bedeutet dies, dass der **A** Eintrag (für IPv4-Adressen) und/oder der **AAAA** Eintrag (für IPv6-Adressen) Ihres Domainnamens korrekt auf die IP-Adresse Ihres Webhostings verweist. Die DNS-Konfiguration Ihrer Domain ist also für den Betrieb mit Ihrem Webhosting korrekt.
+
+##### A/AAAA gelb
+
+![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-info.png){.thumbnail}
+
+Wenn das Symbol `A/AAAA` in der Spalte `Diagnose` gelb angezeigt wird, bedeutet dies, dass der **A** (IPv4) und/oder **AAAA** (IPv6) Eintrag Ihres Domainnamens auf eine IP-Adresse verweist, jedoch nicht auf das Webhosting, von dem aus Sie die Spalte `Diagnose` aufrufen.
+Klicken Sie auf das gelbe Symbol `A/AAAA` für weitere Informationen. Die folgende Meldung wird angezeigt:
+
+![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-popup.png){.thumbnail}
+
+Um DNS-Verweisprobleme Ihrer Domain zu beheben und sicherzustellen, dass sie korrekt auf das gewünschte Webhosting verweist, folgen Sie den Schritten in unserer Anleitung „[Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)“.
+
+##### A/AAAA grau
+
+![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-info.png){.thumbnail}
+
+Wenn das Symbol `A/AAAA` in der Spalte `Diagnose` grau angezeigt wird, bedeutet dies, dass der Domainname derzeit auf keine IP-Adresse verweist und dass für diesen Domainnamen keine **A**- oder **AAAA**-Einträge konfiguriert sind.
+Klicken Sie auf das graue Symbol `A/AAAA` für weitere Informationen. Die folgende Meldung wird angezeigt:
+
+![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-popup.png){.thumbnail}
+
+Um die **A**- oder **AAAA**-Einträge hinzuzufügen und Ihren Domainnamen korrekt zu konfigurieren, folgen Sie den Schritten in unserer Anleitung „[Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)“.
 
 ### Schritt 3: Ihre Website online stellen <a name="site-online"></a>
 
