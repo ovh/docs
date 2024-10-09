@@ -1,7 +1,7 @@
 ---
 title: "How to configure Link Aggregation with LACP in Debian 12 or Ubuntu 24.04"
 excerpt: "Enable Link Aggregation in your Debian 12 or Ubuntu 24.04 server (Netplan) to increase your server’s availability and boost the efficiency of your network connections"
-updated: 2024-10-08
+updated: 2024-10-09
 ---
 
 ## Objective
@@ -59,14 +59,14 @@ Here's an output example:
        valid_lft 71613sec preferred_lft 71613sec
     inet6 2001:db8:1:1b00:203:0:112:0/56 scope global
        valid_lft forever preferred_lft forever
-    inet6 fe80::63f:72ff:fea9:c434/64 scope link
+    inet6 fe80::a6b2:c3ff:fed4:e5c6/64 scope link
        valid_lft forever preferred_lft forever
 3: ens22f1np1: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
     link/ether a1:b2:c3:d4:e5:c7 brd ff:ff:ff:ff:ff:ff
 4: ens33f0np0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
     link/ether a1:b2:c3:d4:e5:d6 brd ff:ff:ff:ff:ff:ff
 5: ens33f1np1: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
-    link/ether a1:b2:c3:d4:e5:d7 brd ff:ff:ff:ff:ff:ff 
+    link/ether a1:b2:c3:d4:e5:d7 brd ff:ff:ff:ff:ff:ff
 ```
 
 Once you have determined the names of your interfaces, you can configure interfaces bonding in the OS.
