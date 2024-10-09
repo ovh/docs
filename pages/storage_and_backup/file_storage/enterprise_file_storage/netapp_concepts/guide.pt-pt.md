@@ -26,7 +26,7 @@ Pode encomendar um ou vários espaços de armazenamento entre 1TB e 58TB na sua 
 
 Quando encomenda, através da sua conta OVHcloud, um serviço Enterprise File Storage entre 1 e 58 TB, recebe um espaço de armazenamento NFS.
 
-A conta OVHcloud é, por predefinição, o contacto administrador, técnico e de faturação do serviço. Encontre mais informações no nosso guia "[Gerir os contactos dos seus serviços](/pages/account_and_service_management/account_information/managing_contact)".
+A conta OVHcloud é, por predefinição, o contacto administrador, técnico e de faturação do serviço. Encontre mais informações no nosso guia "[Gerir os contactos dos seus serviços](/pages/account_and_service_management/account_information/managing_contacts)".
 
 ![Enterprise File Storage 1](images/Netapp_Concept_1.png)
 
@@ -136,6 +136,6 @@ Encontre mais informações no guia ["Gerir as snapshots de um volume"](/pages/s
 
 ## Saiba mais
 
-Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](https://www.ovhcloud.com/pt/professional-services/) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
+Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](/links/professional-services) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
 
 Junte-se à nossa comunidade de utilizadores <https://community.ovh.com/en/>.
