@@ -94,7 +94,8 @@ Find the following or similar lines:
 #ListenAddress 0.0.0.0
 ```
 
-Replace the number **22** with the port number of your choice. **Please do not enter a port number already used on your system**. To be safe, use a number between 49152 and 65535.<br>Save and exit the configuration file.
+Replace the number **22** with the port number of your choice. **Please do not enter a port number already used on your system**. To be safe, use a number between 49152 and 65535.  
+Save and exit the configuration file.
 
 If the line is "commented out" (i.e. if it is preceded by a "#") as shown in the example above, make sure to remove the "#" before saving the file so that the change takes effect. Example:
 
@@ -190,7 +191,7 @@ To install the software package, use the following command:
 >> sudo yum install fail2ban
 >> ```
 
-You can customise the Fail2ban configuration files to protect services that are exposed to the public Internet from repeated login attempts.
+You can customize the Fail2ban configuration files to protect services that are exposed to the public Internet from repeated login attempts.
 
 As recommended by Fail2ban, create a local configuration file for your services by copying the "jail" file:
 
@@ -218,7 +219,7 @@ maxretry = 5
 enabled = false
 ```
 
-This means that an IP address from which a host tries to connect will be blocked for ten minutes after the fifth unsuccessful login attempt.<br>
+This means that an IP address from which a host tries to connect will be blocked for ten minutes after the fifth unsuccessful login attempt.  
 However, all settings specified by `[DEFAULT]` and in subsequent sections stay disabled unless the line `enabled = true` is added for a service (listed below `# JAILS`).
 
 As an example of usage, having the following lines in the section `[sshd]` will activate restrictions only for the OpenSSH service:
@@ -237,11 +238,11 @@ In this example, any SSH login attempt that fails three times within five minute
 
 You can replace "ssh" with the actual port number in case you have changed it.
 
-The best practice approach is to enable Fail2ban only for the services that are actually running on the server. Each customised setting added under `# JAILS` will then be prioritised over the defaults.
+The best practice approach is to enable Fail2ban only for the services that are actually running on the server. Each customized setting added under `# JAILS` will then be prioritized over the defaults.
 
 Once you have completed your changes, save the file and close the editor.
 
-Restart the service to make sure it runs with the customisations applied:
+Restart the service to make sure it runs with the customization applied:
 
 1\. Recommended command with `systemctl`:
 
@@ -255,7 +256,7 @@ sudo systemctl restart fail2ban
 sudo service fail2ban restart
 ```
 
-Fail2ban has many settings and filters for customisation as well as preset options, for example when you want to add a layer of protection to an Nginx web server.
+Fail2ban has many settings and filters for customization as well as preset options, for example when you want to add a layer of protection to an Nginx web server.
 
 For any additional information and recommendations concerning Fail2ban, please refer to the [official documentation](https://www.fail2ban.org/wiki/index.php/Main_Page){.external} of this tool.
 
