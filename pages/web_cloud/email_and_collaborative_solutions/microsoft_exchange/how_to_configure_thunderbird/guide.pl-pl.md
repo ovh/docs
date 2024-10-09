@@ -94,6 +94,6 @@ Jeśli Twoje konto e-mail zostało już skonfigurowane i musisz mieć dostęp do
 
 > [!primary]
 >
-> Aby uzyskać więcej informacji na temat konfigurowania konta e-mail z poziomu aplikacji Thunderbird w systemie Windows, skorzystaj z [Centrum pomocy Mozilli](https://support.mozilla.org/pl/kb/reczna-konfiguracja-konta#thunderbird:win10:tb115).
+> Aby uzyskać więcej informacji na temat konfigurowania konta e-mail z poziomu aplikacji Thunderbird w systemie Windows, skorzystaj z [Centrum pomocy Mozilla](https://support.mozilla.org/pl/kb/reczna-konfiguracja-konta#thunderbird:win10:tb115).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

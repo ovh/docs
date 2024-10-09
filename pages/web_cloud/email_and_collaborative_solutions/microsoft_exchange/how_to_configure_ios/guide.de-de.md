@@ -69,7 +69,7 @@ OVHcloud bietet auch eine Webanwendung mit [kollaborativen Exchange-Funktionen](
 
 > [!primary]
 >
-> Bei Schwierigkeiten beim Empfang oder beim Versand von E-Mails konsultieren Sie bitte unsere [FAQ zu den OVHcloud E-Mail-Diensten](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails).
+> For more information on configuring an email address from the Mail app on iOS, see [Apple Help Center](https://support.apple.com/en-gb/102619).
 
 [Konfiguration Ihrer MX Plan E-Mail-Adresse auf iPhone oder iPad](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_ios)
 
