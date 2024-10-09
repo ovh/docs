@@ -193,16 +193,16 @@ Exemple de réponse API :
 Bien qu'une configuration d'ensemble de règles statique puisse être explicite, les actions de déplacement Additional IP peuvent nécessiter quelques commentaires.
 
 **Déplacement d’une IP d’une ancienne génération vers une nouvelle génération de serveurs Bare Metal Game :**  
-- Le processus est transparent et toutes les règles de protection et les paramètres IP seront conservés.
+    - Le processus est transparent et toutes les règles de protection et les paramètres IP seront conservés.
 
 **Déplacement d’une IP d’une nouvelle génération vers une ancienne génération de serveurs Bare Metal Game :**  
-- Si le serveur de destination prend en charge moins de règles de protection que le serveur d'origine, une erreur sera affichée et l'action sera arrêtée.
-- Sinon :
-- Les règles de compatibilité descendante sont conservées (le nom du profil de protection doit être égal).
-- Les règles qui ne sont pas prises en charge sur le serveur de destination seront supprimées.
+    - Si le serveur de destination prend en charge moins de règles de protection que le serveur d'origine, une erreur sera affichée et l'action sera arrêtée.
+    - Sinon :
+        - Les règles de compatibilité descendante sont conservées (le nom du profil de protection doit être égal).
+        - Les règles qui ne sont pas prises en charge sur le serveur de destination seront supprimées.
 
 **Déplacement d’une IP d’un serveur Bare Metal Game vers d’autres serveurs ou services :**  
-- Toutes les règles de protection anti-DDoS Game appliquées à l’IP seront supprimées, car elles ne sont pas supportées en dehors des serveurs Bare Metal Game.
+    - Toutes les règles de protection anti-DDoS Game appliquées à l’IP seront supprimées, car elles ne sont pas supportées en dehors des serveurs Bare Metal Game.
 
 
 ## FAQ
