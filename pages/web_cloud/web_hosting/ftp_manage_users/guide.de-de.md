@@ -1,6 +1,6 @@
 ---
-title: "Webhosting: Wie verwalte ich FTP-Benutzer?"
-excerpt: "Hier erfahren Sie, wie Sie FTP-Benutzer auf Ihrem OVHcloud Webhosting erstellen, bearbeiten oder löschen."
+title: "Webhosting: FTP-Benutzer verwalten"
+excerpt: "Erfahren Sie hier, wie Sie FTP-Benutzer auf Ihrem OVHcloud Webhosting erstellen, bearbeiten und löschen"
 updated: 2024-10-07
 ---
 
@@ -11,18 +11,18 @@ updated: 2024-10-07
 
 ## Ziel
 
-Die OVHcloud Webhosting-Angebote bieten Zugriff auf einen FTP-Speicherplatz. Mit diesem FTP-Bereich können Sie zum Beispiel die Dateien Ihrer Websites oder Anwendungen online stellen. Auf diesen können Sie über einen FTP- oder SSH-Benutzer und das zugehörige Passwort zugreifen. Im Rahmen Ihrer Aktivitäten kann es vorkommen, dass Sie mehrere FTP-Benutzer für Ihre verschiedenen Mitarbeiter haben.
+Die OVHcloud Webhostings bieten Zugriff auf einen FTP-Speicherplatz. Mit diesem FTP-Bereich können Sie zum Beispiel die Dateien Ihrer Websites oder Anwendungen online stellen. Auf diesen können Sie über einen FTP- oder SSH-Benutzer und das zugehörige Passwort zugreifen. Beispielsweise können Sie mehrere FTP-Zugänge für Ihre Mitarbeiter erstellen.
 
-**Erfahren Sie, wie Sie FTP-Benutzer auf Ihrem OVHcloud Webhosting erstellen, ändern oder löschen.**
+**Diese Anleitung erklärt, wie Sie FTP-Benutzer auf Ihrem OVHcloud Webhosting erstellen, ändern und löschen.**
 
 > [!primary]
 >
-> Diese Anleitung gilt nur für Webhostings vom Typ **Pro** oder **Performance**. Nur bei diesen beiden Angeboten können mehrere FTP-Benutzer aktiviert werden.
+> Diese Anleitung gilt nur für Webhostings der Reihen **Pro** und **Performance**. Nur bei diesen beiden Angeboten können mehrere FTP-Benutzer aktiviert werden.
 
 ## Voraussetzungen
 
-- Sie verfügen über ein kompatibles [OVHcloud Webhosting](/links/web/hosting) Angebot.
-- Sie sind in Ihrem [OVHcloud Kundencenter](/links/manager) eingeloggt und befinden sich im Bereich `Web Cloud`{.action}.
+- Sie verfügen über ein kompatibles [OVHcloud Webhosting](/links/web/hosting).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) im Bereich `Web Cloud`{.action}.
 
 ## In der praktischen Anwendung
 
@@ -43,16 +43,16 @@ Das folgende Fenster wird angezeigt:
 
 ![FTP-SSH create user step 1](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ftp-ssh/create-user-step-1.png){.thumbnail}
 
-Geben Sie die Einstellungen für den neuen FTP-Benutzer ein, indem Sie die folgenden Elemente / Formulare definieren:
+Geben Sie die Einstellungen für den neuen FTP-Benutzer ein, indem Sie die folgenden Elemente / Formulare bearbeiten:
 
-- *Benutzer*: Der vollständige FTP-Benutzername, den Sie für Ihren Mitarbeiter festlegen. Er muss sich damit mit dem FTP-Speicherplatz Ihres Webhostings verbinden. Unabhängig davon, welcher neue FTP-Benutzer auf Ihrem Webhosting erstellt wird, wird dem gewählten Namen immer der Haupt-FTP-Login Ihres Webhostings vorangestellt, gefolgt von einem Bindestrich.
-- Wenn zum Beispiel Ihr Haupt-FTP-Login `FTPLogin` ist und Sie einen neuen FTP-Benutzer `user1` erstellen möchten, lautet das FTP-Login Ihres neuen Benutzers `FTPLogin-user1`.
+- *Benutzer*: Der vollständige FTP-Benutzername, den Sie für diesen Account festlegen, um sich mit dem FTP-Speicherplatz Ihres Webhostings zu verbinden. Neu erstellten FTP-Benutzern auf Ihrem Webhosting wird immer der Haupt-FTP-Login Ihres Webhostings vorangestellt, gefolgt von einem Bindestrich.
+- Wenn zum Beispiel Ihr Haupt-FTP-Login `FTPLogin` ist und Sie einen neuen FTP-Benutzer `user1` erstellen, lautet der FTP-Login Ihres neuen Benutzers `FTPLogin-user1`.
 
 - *Wurzelverzeichnis*: Der Name des Verzeichnisses oder Unterverzeichnisses, in dem sich der FTP-Benutzer im FTP-Speicherbereich anmelden kann.
-- Wenn Ihr Mitarbeiter zum Beispiel auf den gesamten FTP-Speicherplatz Ihres Webhostings zugreifen muss, lassen Sie dieses Formular leer. Geben Sie andernfalls den Namen des Verzeichnisses an, auf das zugegriffen werden soll (Beispiele: `www`, `blog`, `website1`, `www/development` usw.).
+- Wenn der FTP-Benutzer zum Beispiel auf den gesamten FTP-Speicherplatz Ihres Webhostings zugreifen muss, lassen Sie dieses Formular leer. Geben Sie andernfalls den Namen des Verzeichnisses an, auf das zugegriffen werden soll (`www`, `blog`, `website1`, `www/development`, etc.).
 
 - *Verbindungsprotokoll*: Hier können Sie das oder die Protokolle festlegen, die der FTP-Benutzer für die Verbindung mit dem FTP-Speicherplatz Ihres Webhostings verwenden kann.
-- Wenn Sie beispielsweise die dritte Option auswählen (die Protokolle **FTP**,**SFTP** und **SSH**), kann sich der FTP-Benutzer mit allen drei Protokollen anmelden. So kann sich beispielsweise ein Mitarbeiter, der diesen FTP-Benutzer verwendet, über die Kommandozeile mit dem **SSH** Protokoll verbinden und den FTP-Inhalt über dasselbe Protokoll verwalten.
+- Wenn Sie beispielsweise die dritte Option auswählen (die Protokolle **FTP**,**SFTP** und **SSH**), kann sich der FTP-Benutzer mit allen drei Protokollen anmelden. So kann sich beispielsweise ein FTP-Benutzer über die Kommandozeile mit dem **SSH** Protokoll verbinden und Inhalte über dasselbe Protokoll verwalten.
 
 Nachdem Sie die Einstellungen festgelegt haben, klicken Sie auf `Weiter`{.action}, um zu Schritt 2 der Erstellung des neuen FTP-Benutzers zu gehen:
 
@@ -99,7 +99,7 @@ Nachdem Sie die Änderungen vorgenommen haben, klicken Sie auf `Weiter`{.action}
 >
 > Wenn Sie nur das Passwort des FTP-Benutzers ändern möchten, lesen Sie unsere Anleitung „[Passwort eines FTP-Benutzers ändern](/pages/web_cloud/web_hosting/ftp_change_password)“.
 >
-> Wenn Sie den FTP-Benutzernamen ändern möchten, ist diese Funktion nicht verfügbar. Es ist zwingend erforderlich, [einen neuen FTP-Benutzer erstellen](#create-ftp-user) mit dem gewünschten neuen Benutzernamen zu erstellen. Anschließend können Sie bei Bedarf [alten FTP-Benutzer löschen](#delete-ftp-user).
+> Wenn Sie den FTP-Benutzernamen ändern möchten, ist es erforderlich, [einen neuen FTP-Benutzer mit dem gewünschten Benutzernamen zu erstellen](#create-ftp-user). Anschließend können Sie bei Bedarf [den alten FTP-Benutzer löschen](#delete-ftp-user).
 
 ### FTP-Benutzer löschen <a name="delete-ftp-user"></a>
 
@@ -122,7 +122,7 @@ Klicken Sie auf `Bestätigen`{.action}, um den FTP-Benutzer dauerhaft von Ihrem 
 
 ## Weiterführende Informationen
 
-[Mit dem FTP-Speicherplatz eines Webhostings verbinden](/pages/web_cloud/web_hosting/ftp_connection).
+[Mit dem FTP-Speicherplatz eines Webhostings verbinden](/pages/web_cloud/web_hosting/ftp_connection)
 
 [Passwort eines FTP-Benutzers ändern](/pages/web_cloud/web_hosting/ftp_change_password)
 
