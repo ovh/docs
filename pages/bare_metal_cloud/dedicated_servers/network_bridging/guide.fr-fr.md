@@ -57,7 +57,7 @@ Cliquez sur le bouton `...`{.action} à côté de l'Additional IP de votre choix
 
 ![Ajouter une MAC virtuelle (1)](images/addvmac.png){.thumbnail}
 
-Sélectionnez « ovh », ou « vmware » si le système est un ESXI, dans la liste déroulante « Type », tapez un nom dans le champ « Nom de la machine virtuelle », puis cliquez sur `Valider`{.action}.
+Sélectionnez « ovh » (ou « vmware » si le système est un ESXI) dans la liste déroulante « Type ». Entrez un nom dans le champ « Nom de la machine virtuelle », puis cliquez sur `Valider`{.action}.
 
 ![Ajouter une MAC virtuelle (2)](images/addvmac2.png){.thumbnail}
 
