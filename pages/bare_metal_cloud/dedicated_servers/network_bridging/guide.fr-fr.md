@@ -65,7 +65,7 @@ Après quelques secondes, une adresse MAC virtuelle apparaîtra dans la colonne 
 
 ### Déterminer l'adresse de la passerelle (gateway) <a name="determinegateway"></a>
 
-Pour configurer vos machines virtuelles pour l'accès à Internet, vous devez connaître la passerelle de votre machine hôte, c’est-à-dire, votre serveur dédié.
+Pour configurer vos machines virtuelles pour l'accès à Internet, vous devez connaître la passerelle de votre machine hôte, c’est-à-dire votre serveur dédié.
 
 Vous pouvez récupérer l'adresse de la passerelle via [votre espace client](#viacontrolpanel) ou l’[API OVHcloud](#viaapi).
 
