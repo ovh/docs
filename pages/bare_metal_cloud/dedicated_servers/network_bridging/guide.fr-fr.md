@@ -387,6 +387,7 @@ touch /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
 
 
 Ajoutez cette ligne au fichier `99-disable-network-config.cfg` :
+
 ```bash
 network: {config: disabled}
 ```
