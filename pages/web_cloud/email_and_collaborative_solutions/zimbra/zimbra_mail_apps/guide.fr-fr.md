@@ -1,5 +1,5 @@
 ---
-title: "Configurer son adresse e-mail Zimbra sur un logiciel de messagerie"
+title: "Configurer une adresse e-mail Zimbra sur un logiciel de messagerie"
 excerpt: "Découvrez comment configurer votre logiciel de messagerie pour consulter les e-mails de votre comtpes Zimbra"
 updated: 2024-10-10
 ---
@@ -21,9 +21,9 @@ max-width:400px!important;
 
 ## Objectif
 
-Avec l'offre Zimbra, OVHcloud vous propose une plateforme de messagerie collaborative open source offrant toutes les fonctionnalités nécessaires à une utilisation professionnelle. Vous retrovuerez sur cette pages les informations nécessaires à la configuration de vos comptes e-mail Zimbra sur vos logiciels de messagerie préférés.
+Avec l'offre Zimbra, OVHcloud vous propose une plateforme de messagerie collaborative open source offrant toutes les fonctionnalités nécessaires à une utilisation professionnelle. Retrouvez sur cette page les informations nécessaires à la configuration de vos comptes e-mail Zimbra sur votre logiciel de messagerie préféré.
 
-**Découvrez comment configurer votre logiciel de messagerie pour consulter les e-mails de votre comtpes Zimbra**
+**Découvrez comment configurer votre logiciel de messagerie pour consulter les e-mails de votre comtpe Zimbra**
 
 ## Prérequis
 
@@ -34,7 +34,7 @@ Avec l'offre Zimbra, OVHcloud vous propose une plateforme de messagerie collabor
 
 ### Configurer son compte e-mail <a name="mail-config"></a>
 
-La configuration de votre compte e-mail Zimbra utilise les mêmes paramètres que l'offre MX Plan, incluse avec les hébergements Web OVHcloud ou en offre seule. C'est pourquoi les liens de configuration ci-dessous ont une mention "MX Plan" dans leur titre.
+La configuration de votre compte e-mail Zimbra utilise les mêmes paramètres que l'offre MX Plan, incluse avec les hébergements Web OVHcloud ou en offre seule. C'est pourquoi les liens de configuration ci-dessous ont une mention « MX Plan » dans leur titre.
 
 Cliquez sur l'onglet correspondant au type d'appareil que vous utilisez :
 

@@ -1,7 +1,7 @@
 ---
 title: FAQ sur la solution Zimbra OVHcloud
 excerpt: "Retrouvez les questions concernant la migration vers Zimbra pour l'offre MX Plan OVHcloud"
-updated: 2024-10-03
+updated: 2024-10-10
 ---
 
 ## Objectif
@@ -22,8 +22,7 @@ Zimbra propose les mêmes fonctionnalités et une ergonomie proche de OWA. Un gu
 
 ### Comment puis-je configurer mon adresse e-mail sur un logiciel de messagerie ?
 
-Pour configurer votre adresse e-mail Zimbra sur votre logiciel de messagerie, consultez notre page
-« [Configurer son adresse e-mail Zimbra sur un logiciel de messagerie](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_mail_apps) ».
+Consultez notre page « [Configurer son adresse e-mail Zimbra sur un logiciel de messagerie](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_mail_apps) ».
 
 ### La migration ouvre-t-elle de nouvelles fonctionnalités ?
 

@@ -152,8 +152,8 @@ Cliquez sur `Confirmer`{.action} pour lancer la création du compte.
 
 Pour consulter votre compte e-mail :
 
-- Connectez-vous au [webmail](/links/web/email) depuis un navigateur internet en saisissant votre adresse e-mail et votre mot de passe. Pour plus de détails consultez, notre page [Utiliser le webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)
-- Configurez un logiciel de messagerie sur votre ordinateur, votre smartphone ou votre tablette. Consultez notre page [Configurer son adresse e-mail Zimbra sur un logiciel de messagerie](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_mail_apps)
+- Connectez-vous au [webmail](/links/web/email) depuis un navigateur internet et saisissez votre adresse e-mail et votre mot de passe. Pour plus de détails consultez, notre page « [Utiliser le webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra) ».
+- Configurez un logiciel de messagerie sur votre ordinateur, votre smartphone ou votre tablette. Consultez notre page « [Configurer son adresse e-mail Zimbra sur un logiciel de messagerie](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_mail_apps) ».
 
 ## Aller plus loin <a name="go-further"></a>
 
