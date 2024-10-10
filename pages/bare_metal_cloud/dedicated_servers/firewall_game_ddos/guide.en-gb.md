@@ -192,40 +192,50 @@ API response example:
 
 While a static rule set configuration may be self-explanatory, Additional IP moving actions may require a few comments.
 
-**Moving an IP from an old generation to a new generation of Bare Metal Game servers:**  
+- **Moving an IP from an old generation to a new generation of Bare Metal Game servers:**
     - The process is transparent and all protection rules and IP settings will be kept.
 
-**Moving an IP from a new generation to an old generation of Bare Metal Game servers:** 
+- **Moving an IP from a new generation to an old generation of Bare Metal Game servers:**
     - If the destination server supports less protection rules than the origin one, an error will be displayed and the action will be stopped.
     - Otherwise:
         - Backward compatible rules are kept (protection profile name must equal).
         - Rules that are not supported on the destination server will be removed.
     
-**Moving an IP from a Bare Metal Game server to other servers or services:**  
+- **Moving an IP from a Bare Metal Game server to other servers or services:**
     - All Game DDoS Protection rules applied to the IP will be deleted, as they are not supported outside Bare Metal Game servers.
 
 
 ## FAQ
 
-### Can I use Game DDoS Protection on other ranges than Bare Metal Game servers?
+/// details | **Can I use Game DDoS Protection on other ranges than Bare Metal Game servers?**
 
 No, Game DDoS Protection is only available for our Bare Metal Game dedicated servers.
 
-### How can I ensure automation to work for an Additional IP between a new and an old generation of Bare Metal Game servers?
+///
+
+/// details | **How can I ensure automation to work for an Additional IP between a new and an old generation of Bare Metal Game servers?**
 
 You can either limit your protection rules to 30 per IP or configure your automation scripts so they can remove and add rules before and after moving an IP to another server. We recommend to use the latest generation of Bare Metal Game servers as they come with many improvements.
 
-### Can I disable Game DDoS Protection?
+///
+
+/// details | **Can I disable Game DDoS Protection?**
 
 This is possible, but not recommended. You can do it by removing all game protocol rules from the configuration and disabling the entry `Default policy: DROP`.
 
-### My game is not on the supported protocol list, what can I do?
+///
+
+/// details | **My game is not on the supported protocol list, what can I do?**
 
 You can propose your need on our [infrastructure solutions roadmap on GitHub](https://github.com/orgs/ovh/projects/16/views/14). This will help us to decide on prioritization of the next features to be developed.
 
-### While having configured my game with appropriate ports and default policy to drop, I still receive attacks that are impacting my Game server. What to do?
+///
+
+/// details | **While having configured my game with appropriate ports and default policy to drop, I still receive attacks that are impacting my Game server. What to do?**
 
 You will need to share relevant network traffic dumps as examples for such attacks (*.pcap* file) in order to request protection tuning of your profile. To do this, please log in to our [Help Centre](https://help.ovhcloud.com/csm?id=csm_get_help).
+
+///
 
 ## Go further
 
