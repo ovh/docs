@@ -1,5 +1,5 @@
 ---
-title: "Alojamento web : ambiente, versão PHP, .ovhconfig"
+title: "Alojamento web - Ambiente, versão PHP, .ovhconfig"
 excerpt: "Saiba como alterar o ambiente de execução, a versão PHP, a firewall aplicacional, o motor, o modo e o .ovhconfig de um alojamento web"
 updated: 2024-07-16
 ---

@@ -1239,7 +1239,7 @@
             + [MySQL migration to Percona Server for MySQL](web_cloud/web_hosting/percona_server_mysql_migration_info)
         + [Website optimisation](web-cloud-hosting-website-optimisation)
             + [Optimising the security of your website](web_cloud/web_hosting/secure_your_website)
-            + [Changing your web hosting plan offer](web_cloud/web_hosting/how_to_upgrade_web_hosting_offer)
+            + [Web Hosting - How to change your solution](web_cloud/web_hosting/how_to_upgrade_web_hosting_offer)
             + [Speeding up your website with CDN](web_cloud/web_hosting/cdn_how_to_use_cdn)
             + [Accessing a website’s logs and statistics on a Web Hosting](web_cloud/web_hosting/logs_and_statistics)
             + [Geolocating your website](web_cloud/web_hosting/multisites_geolocation)
