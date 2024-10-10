@@ -104,7 +104,7 @@ Nachdem Sie diese Informationen eingegeben haben, klicken Sie auf `Weiter`{.acti
 Wenn Sie eine bei OVHcloud registrierte Domain ausgewählt haben, können Sie deren DNS-Konfiguration automatisch oder manuell ändern.
 
 - **Automatische DNS-Konfiguration**: Setzen Sie einen Haken im Feld `Automatische Konfiguration (empfohlen)`{.action}.
-- **Manuelle DNS-Konfiguration**: Entfernen Sie den Haken im Feld `Automatische Konfiguration (empfohlen)`{.action} und notieren Sie sich die angezeigten Informationen. Wenn Sie diese Einstellung vornehmen möchten, lesen Sie unsere Anleitung ["Bearbeiten der OVHcloud DNS-Zone"](/pages/web_cloud/domains/dns_zone_edit){.external}.
+- **Manuelle DNS-Konfiguration**: Entfernen Sie den Haken im Feld `Automatische Konfiguration (empfohlen)`{.action} und notieren Sie die angezeigten Informationen. Wenn Sie diese Einstellung vornehmen möchten, lesen Sie unsere Anleitung ["Bearbeiten der OVHcloud DNS-Zone"](/pages/web_cloud/domains/dns_zone_edit){.external}.
 
 Klicken Sie auf `Bestätigen`{.action}, um die Domain hinzuzufügen. Dies kann bis zu einer Stunde dauern. Die Änderung der DNS-Konfiguration Ihrer Domain erfordert zusätzlich eine Propagationszeit von 4 bis 24 Stunden, bis sie voll wirksam ist.
 
@@ -162,7 +162,7 @@ Jedes Hinzufügen einer Domain außerhalb von OVHcloud erfordert eine zusätzlic
 
 #### Schritt 2.3: Diagnose Ihrer Domainnamen <a name="diagnostic-domain"></a>
 
-In der Tabelle im Tab `Multisite` wird eine Spalte `Diagnose` angezeigt, die Sie darüber informiert, ob Ihr Domainname korrekt auf das zugehörige Webhosting verweist. Damit können Sie schnell überprüfen, ob die DNS-Konfiguration Ihrer Domain korrekt mit Ihrem Webhosting durchgeführt wurde. Auf diese Weise können Sie mit dieser Spalte potenzielle Zeigeprobleme identifizieren und beheben. Für jeden Domainnamen sind drei Diagnoseergebnisse möglich:
+In der Tabelle im Tab `Multisite` wird eine Spalte `Diagnose` angezeigt, die Sie darüber informiert, ob Ihr Domainname korrekt auf das zugehörige Webhosting verweist. Damit können Sie schnell überprüfen, ob die DNS-Konfiguration korrekt für das Webhosting durchgeführt wurde und potenzielle DNS-Fehler identifizieren und beheben. Für jeden Domainnamen sind drei Diagnoseergebnisse möglich:
 
 - `A/AAAA` grün
 - `A/AAAA` gelb
@@ -172,25 +172,25 @@ In der Tabelle im Tab `Multisite` wird eine Spalte `Diagnose` angezeigt, die Sie
 
 ![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-green-info.png){.thumbnail}
 
-Wenn das Symbol `A/AAAA` in der Spalte `Diagnose` grün ist, bedeutet dies, dass der **A** Eintrag (für IPv4-Adressen) und/oder der **AAAA** Eintrag (für IPv6-Adressen) Ihres Domainnamens korrekt auf die IP-Adresse Ihres Webhostings verweist. Die DNS-Konfiguration Ihrer Domain ist also für den Betrieb mit Ihrem Webhosting korrekt.
+Wenn `A/AAAA` in der Spalte `Diagnose` grün ist, bedeutet dies, dass der **A**-Eintrag (für IPv4-Adressen) und/oder der **AAAA**-Eintrag (für IPv6-Adressen) Ihres Domainnamens korrekt auf die IP-Adresse Ihres Webhostings verweist. Die DNS-Konfiguration Ihrer Domain ist also für den Betrieb mit Ihrem Webhosting korrekt.
 
 ##### A/AAAA gelb
 
 ![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-info.png){.thumbnail}
 
-Wenn das Symbol `A/AAAA` in der Spalte `Diagnose` gelb angezeigt wird, bedeutet dies, dass der **A** (IPv4) und/oder **AAAA** (IPv6) Eintrag Ihres Domainnamens auf eine IP-Adresse verweist, jedoch nicht auf das Webhosting, von dem aus Sie die Spalte `Diagnose` aufrufen.
-Klicken Sie auf das gelbe Symbol `A/AAAA` für weitere Informationen. Die folgende Meldung wird angezeigt:
-
+Wenn `A/AAAA` in der Spalte `Diagnose` gelb angezeigt wird, bedeutet dies, dass der **A**-Eintrag (IPv4) oder **AAAA**-Eintrag (IPv6) Ihres Domainnamens auf eine IP-Adresse verweist, jedoch nicht auf das Webhosting, von dem aus Sie die Daten der Spalte `Diagnose` abrufen.  
+Klicken Sie auf `A/AAAA` für weitere Informationen. Die folgende Meldung wird angezeigt:
+-
 ![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-popup.png){.thumbnail}
 
-Um DNS-Verweisprobleme Ihrer Domain zu beheben und sicherzustellen, dass sie korrekt auf das gewünschte Webhosting verweist, folgen Sie den Schritten in unserer Anleitung „[Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)“.
+Um DNS-Fehler zu beheben und sicherzustellen, dass korrekt auf das gewünschte Webhosting verwiesen wird, folgen Sie den Schritten in unserer Anleitung „[Bearbeiten der OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)“.
 
 ##### A/AAAA grau
 
 ![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-info.png){.thumbnail}
 
-Wenn das Symbol `A/AAAA` in der Spalte `Diagnose` grau angezeigt wird, bedeutet dies, dass der Domainname derzeit auf keine IP-Adresse verweist und dass für diesen Domainnamen keine **A**- oder **AAAA**-Einträge konfiguriert sind.
-Klicken Sie auf das graue Symbol `A/AAAA` für weitere Informationen. Die folgende Meldung wird angezeigt:
+Wenn `A/AAAA` in der Spalte `Diagnose` grau angezeigt wird, bedeutet dies, dass der Domainname derzeit auf keine IP-Adresse verweist und dass für diesen Domainnamen keine **A**- oder **AAAA**-Einträge konfiguriert sind.  
+Klicken Sie auf `A/AAAA` für weitere Informationen. Die folgende Meldung wird angezeigt:
 
 ![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-popup.png){.thumbnail}
 
@@ -200,24 +200,24 @@ Um die **A**- oder **AAAA**-Einträge hinzuzufügen und Ihren Domainnamen korrek
 
 Sobald die Domain hinzugefügt wurde, muss nur noch die zugehörige Website online gestellt werden. Zur Erinnerung: Nehmen Sie diese Änderung in dem Wurzelverzeichnis vor, das Sie im vorherigen Schritt festgelegt haben.
 
-Um Ihnen dabei zu helfen, können Sie mithilfe der 1-Klick-Module von OVHcloud eine gebrauchsfertige Websitestruktur nutzen. Die Website wird dann automatisch im zuvor konfigurierten Wurzelverzeichnis installiert. Weitere Informationen zu den 1-Klick-Modulen finden Sie in unserer Anleitung [„Installation Ihrer Website mit 1-Klick-Modulen“](/pages/web_cloud/web_hosting/cms_install_1_click_modules){.external}. 
+Um Ihnen dabei zu helfen, können Sie mithilfe der 1-Klick-Module von OVHcloud eine gebrauchsfertige Websitestruktur nutzen. Die Website wird dann automatisch im zuvor konfigurierten Wurzelverzeichnis installiert. Weitere Informationen zu den 1-Klick-Modulen finden Sie in unserer Anleitung [„Installation Ihrer Website mit 1-Klick-Modulen“](/pages/web_cloud/web_hosting/cms_install_1_click_modules). 
 
-Möchten Sie Ihre Website hingegen manuell installieren, tragen Sie alle zugehörigen Dateien zusammen und stellen Sie diese im entsprechenden Wurzelverzeichnis auf Ihrem Speicherplatz online. Weitere Informationen zur manuellen Installation Ihrer Website finden Sie in unserer Anleitung [„Eine Website auf Ihrem Webhosting online stellen“](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online){.external}.
+Möchten Sie Ihre Website hingegen manuell installieren, tragen Sie alle zugehörigen Dateien zusammen und stellen Sie diese im entsprechenden Wurzelverzeichnis auf Ihrem Speicherplatz online. Weitere Informationen zur manuellen Installation Ihrer Website finden Sie in unserer Anleitung [„Eine Website auf Ihrem Webhosting online stellen“](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online).
 
 > [!primary]
 >
-> Wenn Sie mehrere Websites hinzufügen möchten, müssen Sie diese Schritte wiederholen.
+> Wenn Sie mehrere Websites hinzufügen möchten, wiederholen Sie diese Schritte.
 >
-> Achten Sie darauf, wie viele Websites Sie auf einem Webhosting betreiben. Je mehr Websites Sie einrichten, umso mehr Ressourcen Ihres Hostings werden beansprucht. Die [Webhosting-Vergleichsseite](/links/web/hosting){.external} gibt an, wie viele empfohlene Websites Sie auf Ihrem Speicherplatz hosten können.
+> Achten Sie darauf, wie viele Websites Sie auf einem Webhosting betreiben. Je mehr Websites Sie einrichten, umso mehr Ressourcen Ihres Hostings werden beansprucht. Die [Webhosting-Vergleichsseite](/links/web/hosting) gibt an, wie viele empfohlene Websites Sie auf Ihrem Speicherplatz hosten können.
 >
 
 ## Weiterführende Informationen
 
-[Installation Ihrer Website mit 1-Klick-Modulen](/pages/web_cloud/web_hosting/cms_install_1_click_modules){.external}
+[Installation Ihrer Website mit 1-Klick-Modulen](/pages/web_cloud/web_hosting/cms_install_1_click_modules)
 
-[Bearbeiten der DNS-Zone](/pages/web_cloud/domains/dns_zone_edit){.external}
+[Bearbeiten der DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)
 
-[Eine Website auf Ihrem Webhosting online stellen](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online){.external}
+[Eine Website auf Ihrem Webhosting online stellen](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, können Sie [hier unsere Support-Angebote einsehen](/links/support).
 
