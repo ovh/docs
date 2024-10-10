@@ -1,7 +1,7 @@
 ---
 title: 'Mode bridge IP'
 excerpt: 'Apprenez à utiliser le mode bridge pour configurer l’accès à Internet de vos machines virtuelles'
-updated: 2024-10-09
+updated: 2024-10-10
 ---
 
 > [!primary]
@@ -47,7 +47,7 @@ Pour cet exemple, nous utiliserons les valeurs suivantes dans nos exemples de co
 ### Assigner une adresse MAC virtuelle
 
 > [!warning]
-> Dans le cas d'un bloc d'IP, les adresses MAC virtuelles se créent sur les IP unitaires dans le bloc.
+> Dans le cas d'un bloc d'IP, les adresses MAC virtuelles se créent sur chaque IP individuelle dans le bloc.
 
 Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur le menu `Bare Metal Cloud`{.action} puis sur la section `Network`{.action}. Cliquez ensuite sur `IP`{.action}.
 
@@ -122,7 +122,7 @@ Vous pouvez maintenant démarrer votre machine virtuelle et passer aux étapes s
 
 > [!warning]
 >
-> L'hyperviseur ESXi n'est plus supporté par OVHcloud. Retrouvez plus d'informations sur [cette page dédiée](/pages/bare_metal_cloud/dedicated_servers/esxi-end-of-support/guide.fr-fr.md).
+> L'hyperviseur ESXi n'est plus supporté par OVHcloud. Retrouvez plus d'informations sur [cette page dédiée](/pages/bare_metal_cloud/dedicated_servers/esxi-end-of-support).
 > 
 
 > [!warning]
@@ -315,7 +315,7 @@ rtt min/avg/max/mdev = 24.925/28.028/30.840/2.254 ms
 ```
 
 Si vous recevez une réponse, cela signifie que l’Additional IP a été correctement configurée. Si ce n'est pas le cas, redémarrez votre machine virtuelle et recommencez la commande ping.
-Si vous souhaite zplus d'informations sur `nmcli`, redirigez vous vers [cette page](https://docs.redhat.com/fr/documentation/red_hat_enterprise_linux/7/html/networking_guide/sec-using_the_networkmanager_command_line_tool_nmcli)
+Si vous souhaitez plus d'informations sur `nmcli`, consultez [cette page](https://docs.redhat.com/fr/documentation/red_hat_enterprise_linux/7/html/networking_guide/sec-using_the_networkmanager_command_line_tool_nmcli).
 
 #### FreeBSD
 
@@ -377,16 +377,16 @@ Si vous recevez une réponse, cela signifie que l’Additional IP a été correc
 
 #### Ubuntu 
 
-Tout d'abord, désactivez Cloud-init :
+Tout d'abord, désactivez cloud-init :
+
 ```bash
 touch /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
 ```
 
 > [!warning]
 >
->Dans le cas ou vous souhaitez configurer votre VM avec Cloud-init, redirigez-vous vers [cette page](https://cloud-init.io/)
+> Si vous souhaitez configurer votre VM avec cloud-init, consultez vers [cette page](https://cloud-init.io/)
 >
-
 
 Ajoutez cette ligne au fichier `99-disable-network-config.cfg` :
 
