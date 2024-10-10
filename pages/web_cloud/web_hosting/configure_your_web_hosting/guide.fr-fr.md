@@ -1,5 +1,5 @@
 ---
-title: "Hébergement web : environnement, version PHP, « .ovhconfig »"
+title: "Hébergement web - Environnement, version PHP, « .ovhconfig »"
 excerpt: "Découvrez comment modifier l'environnement d'exécution, la version PHP, le pare-feu applicatif, le moteur, le mode et le « .ovhconfig » d'un hébergement web"
 updated: 2024-07-16
 ---
