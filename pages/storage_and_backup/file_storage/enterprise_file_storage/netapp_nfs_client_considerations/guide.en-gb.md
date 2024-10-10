@@ -1,7 +1,7 @@
 ---
 title: "Enterprise File Storage - NFS Client considerations"
 excerpt: "Specific settings to check and/or implement for the Enterprise File Storage solution"
-updated: 2024-10-09
+updated: 2024-10-10
 ---
 
 ## Objective
@@ -39,15 +39,15 @@ As a workaround, the UID and GID can be forced to 0 on the Windows machine that 
 > - <https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753302(v=ws.10)?redirectedfrom=MSDN>
 > - <https://kb.netapp.com/on-prem/ontap/da/NAS/NAS-KBs/Unable_to_perform_write_operations_on_an_export_mounted_on_a_Windows_machine>
 
-#### Allow unsecured guest connections for SMB2 and SMB3 protocols
+#### Allow insecure guest logons for SMB2 and SMB3 protocols
 
 You may need to enable guest connections to access your Enterprise File Storage, as it does not provide a user account, only guest access.
 
 To modify your security policy accordingly, follow these steps:
 
-- In a command prompt, launch `gpedit.msc` and select `Modify group policy`.
+- In a command prompt, launch `gpedit.msc` and select `Edit group policy`.
 - In the left pane, under `Local Computer Policy`, go to `Computer Configuration\Administrative Templates\Network\Lanman Workstation`.
-- Open `Enable unsecured guest connections`, select `Enabled`, then select `OK`.
+- Open `Enable insecure guest logons`, select `Enabled`, then select `OK`.
 
 > [!primary]
 >

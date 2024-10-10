@@ -1,7 +1,7 @@
 ---
 title: "Enterprise File Storage - Particularités concernant certains clients NFS"
 excerpt: "Paramètres spécifiques à vérifier et/ou à mettre en oeuvre concernant l'offre Enterprise File Storage"
-updated: 2024-10-09
+updated: 2024-10-10
 ---
 
 ## Objectif
