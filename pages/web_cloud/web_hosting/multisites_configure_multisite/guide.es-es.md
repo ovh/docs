@@ -160,7 +160,7 @@ Compruebe que la información que se muestra es correcta y haga clic en `Aceptar
 
 #### 2.3\. diagnosticar los dominios <a name="diagnostic-domain"></a>
 
-En la pestaña `Multisite` de la tabla, aparece una columna `Diagnostic` que informa si el dominio apunta correctamente al alojamiento web asociado. Permite comprobar rápidamente que la configuración DNS del dominio se ha realizado correctamente con el alojamiento web. Por ejemplo, esta columna le ayuda a identificar y resolver posibles problemas de tiempo y asistencia. Para cada dominio, se pueden obtener tres resultados de diagnóstico:
+En la pestaña `Multisitio` de la tabla, aparece una columna `Diagnóstico` que informa si el dominio apunta correctamente al alojamiento web asociado. Permite comprobar rápidamente que la configuración DNS del dominio se ha realizado correctamente con el alojamiento web. Por ejemplo, esta columna le ayuda a identificar y resolver posibles problemas de tiempo y asistencia. Para cada dominio, se pueden obtener tres resultados de diagnóstico:
 
 - `A/AAAA` verde
 - `A/AAAA` amarillo
