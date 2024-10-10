@@ -1,6 +1,6 @@
 ---
 title: Configurare un account Exchange su Mail di macOS 
-updated: 2021-12-28
+updated: 2024-10-09
 ---
 
 <style>
