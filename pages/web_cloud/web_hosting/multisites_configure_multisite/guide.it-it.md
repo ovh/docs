@@ -1,7 +1,7 @@
 ---
 title: 'Ospitare più siti su uno stesso hosting'
 excerpt: 'Questa guida ti mostra come condividere il tuo hosting Web tra più siti Internet'
-updated: 2024-03-15
+updated: 2024-10-08
 ---
 
 > [!primary]
@@ -20,6 +20,7 @@ Su una stessa soluzione di hosting è possibile ospitare più siti Internet, anc
 - 2 : [Aggiungi un dominio o un sottodominio](#add-domain)
     - 2.1 : [Aggiungere un dominio registrato in OVHcloud](#add-ovhcloud-domain)
     - 2.2 : [Aggiungere un dominio esterno](#add-external-domain)
+    - 2.3 : [Diagnosticare i tuoi domini](#diagnostic-domain)
 - 3 : [Mettere online il tuo sito Web](#site-online)
 
 ## Prerequisiti
@@ -156,6 +157,42 @@ annota i parametri indicati e clicca su `Conferma`{.action}. A questo punto, il 
 >
 > I record DNS di tipo **A** e **TXT** devono obbligatoriamente essere inseriti nella zona DNS attiva del tuo dominio perché sia aggiunto al tuo hosting Web. Sono opzionali solo i record DNS di tipo **AAAA**. 
 >
+
+#### Step 2.3: diagnostica i tuoi domini <a name="diagnostic-domain"></a>
+
+Nella tabella presente nella scheda `Multisito`, una colonna `Diagnostica` ti informa se il tuo dominio punta correttamente verso l’hosting Web associato. che permette di verificare rapidamente che la configurazione DNS del dominio sia stata effettuata correttamente con l’hosting Web. Questa colonna consente di identificare e risolvere eventuali problemi di puntamento. Per ogni dominio sono disponibili tre risultati diagnostici:
+
+- `A/AAAA` verde
+- `A/AAAA` giallo
+- `A/AAAA` grigio
+
+##### A/AAAA verde
+
+![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-green-info.png){.thumbnail}
+
+Quando l’icona `A/AAAA` è verde nella colonna `Diagnostica`, significa che il record **A** (per gli indirizzi IPv4) e/o il record **AAAA** (per gli indirizzi IPv6) del dominio punta correttamente verso l’indirizzo IP del tuo hosting Web. La configurazione DNS del dominio è quindi conforme per funzionare con l’hosting Web.
+
+##### A/AAAA giallo
+
+![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-info.png){.thumbnail}
+
+Quando l’icona `A/AAAA` è gialla nella colonna `Diagnostica`, significa che il record **A** (IPv4) e/o **AAAA** (IPv6) del dominio punta verso un indirizzo IP, ma non verso quello dell’hosting Web dal quale consulti la colonna `Diagnostica`.
+Clicca sull’icona `A/AAAA` gialla per maggiori informazioni. Viene visualizzato il seguente messaggio:
+
+![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-popup.png){.thumbnail}
+
+Per risolvere i problemi di puntamento DNS del dominio e garantire che punti correttamente verso l’hosting Web desiderato, segui gli step descritti nella nostra guida "[Modificare una zona DNS di OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
+
+##### A/AAAA grigio
+
+![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-info.png){.thumbnail}
+
+Se l’icona `A/AAAA` nella colonna `Diagnostica` è grigia, significa che il dominio non punta ad alcun indirizzo IP e che nessun record **A** o **AAAA** è configurato per questo dominio.
+Clicca sull’icona `A/AAAA` grigia per maggiori informazioni. Viene visualizzato il seguente messaggio:
+
+![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-popup.png){.thumbnail}
+
+Per aggiungere i record **A** o **AAAA** e configurare correttamente il dominio, segui gli step descritti nella nostra guida "[Modificare una zona DNS di OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
 ### Step 3: mettere online il tuo sito Web <a name="site-online"></a>
 
