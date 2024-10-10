@@ -1,5 +1,5 @@
 ---
-title: "Alojamento web: ativar um certificado SSL EV"
+title: "Alojamento web - Ativar um certificado SSL EV"
 excerpt: "Saiba como encomendar e instalar um certificado SSL EV no seu alojamento Web OVHcloud"
 updated: 2024-10-10
 ---

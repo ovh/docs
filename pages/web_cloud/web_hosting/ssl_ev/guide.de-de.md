@@ -1,5 +1,5 @@
 ---
-title: "Webhosting: EV SSL-Zertifikat aktivieren"
+title: "Webhosting - EV SSL-Zertifikat aktivieren"
 excerpt: "Erfahren Sie hier, wie Sie ein EV SSL-Zertifikat für Ihr OVHcloud Webhosting bestellen und installieren"
 updated: 2024-10-10
 ---
