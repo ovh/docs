@@ -70,9 +70,11 @@ Chaque jour, un e-mail contenant les statuts de l'ensemble des travaux effectué
 > [!warning]
 >
 > La suppression d'une machine virtuelle de votre inventaire ou d'un disque ne désactive pas le travail de sauvegarde relatif à cette machine. Celui-ci apparaîtra en erreur dans le rapport.
+>  
+> **Attention** : La limite sur les VMs doit être de 2 To pour pouvoir activer la sauvegarde.
 > 
-> Pour les offres **Advanced** et **Premium** la réplication actif de Veeam Managed Backup suit les schemas suivants :
->
+> Pour les offres **Advanced** et **Premium** la réplication entre région de *Veeam Managed Backup* suit les schemas suivants :
+> 
 
 Voici un schema des régions vers lesquelles les régions de la zone 1 sont répliqués vers la zone 2 :
 
@@ -80,17 +82,17 @@ Voici un schema des régions vers lesquelles les régions de la zone 1 sont rép
 
 Vous avez ici la correspondance des zones répliquées dans ce tableau, avec des informations complémentaires :
 
-| Environnement                 | Zone 1 | Zone 2 | Offres               | Comments                                                                                                                                                                                                                                    |
-|-------------------------------|--------|--------|----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Veeam + Vsphere               | BHS    | TOR    | Advanced<br/>Premium | - Les environnements vSphere managé des offres Advanced et Premium avec option Veeam Managed Backup pour la région de Montreal Beauharnois (BHS) sont répliqués vers la région de Toronto Cambridge (TOR).                                  |
-| Veeam + vSphere               | ERI    | RBX    | Advanced<br/>Premium | - Les environnements vSphere managé des offres Advanced et Premium avec option Veeam Managed Backup pour la région de Londre Erith (ERI) sont répliqués vers la région de France Roubaix (RBX).                                             |
-| Veeam + vSphere               | LIM    | SBG    | Advanced<br/>Premium | - Les environnements vSphere managé des offres Advanced et Premium avec option Veeam Managed Backup pour la région d'Allemagne Limburg (LIM) sont répliqués vers la région de France Strasbourg (SBG).                                      |
-| Veeam + vSphere               | RBX    | SBG    | Advanced<br/>Premium | - Les environnements vSphere managé des offres Advanced et Premium avec option Veeam Managed Backup pour la région de France Roubaix (RBX) sont répliqués vers la région de France Strasbourg (SBG).                                        |
-|                               |        |        |                      |                                                                                                                                                                                                                                             |
-| Veeam + vSphere SecNumCloud   | RBX    | SBG    | Advanced<br/>Premium | - Les environnements qualifiés SecNumCloud vSphere managé des offres Advanced et Premium avec option Veeam Managed Backup pour la région de France Roubaix (RBX) sont répliqués vers la région de France Strasbourg (SBG).                  |
-|  Veeam + vSphere SecNumCloud  | GRA    | RBX    | Advanced<br/>Premium | - Les environnements qualifiés SecNumCloud vSphere managé des offres Advanced et Premium avec option Veeam Managed Backup pour la région de France Gavelines (RBX) sont répliqués vers la région de France Roubaix (RBX).                   |
-|                               |        |        |                      |
-| Veeam + vSphere (for US only) | VIN    | HIL    | Advanced<br/>Premium | - Les environnements vSphere managé pour les offres Advanced et Premium avec option Veeam Managed Backup pour la région USA de Washington DC Vint Hill (VIN), la réplication est effectué vers la région de Seattle Hillsboro Oregon (HIL). |
+| SecNumCloud  | Zone 1  | Zone 2  | Replication<br/>inter-sites |        Offres        | Comments                                                                                                                                                |
+|:------------:|:-------:|:-------:|:---------------------------:|:--------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|      ❌       |  `BHS`  |  `TOR`  |             ✅️              | Advanced<br/>Premium | - La région de Montreal Beauharnois (BHS) et Toronto Cambridge (TOR) sont bien répliqués entre eux avec les offres Veeam Advanced/Premium.              |
+|      ❌       |  `ERI`  |  `RBX`  |             ❌                | Advanced<br/>Premium | - La région de Londre Erith (ERI) et France Roubaix (RBX) ne sont pas répliqués entre eux avec les offres Veeam Advanced/Premium.                       |
+|      ❌       |  `LIM`  |  `SBG`  |             ❌                | Advanced<br/>Premium | - La région d'Allemagne Limburg (LIM) et France Strasbourg (SBG) ne sont pas répliqués entre eux avec les offres Veeam Advanced/Premium.                |
+|      ❌       |  `RBX`  |  `SBG`  |             ✅️              | Advanced<br/>Premium | - La région de France Roubaix (RBX) et France Strasbourg (SBG) sont bien répliqués entre eux avec les offres Veeam Advanced/Premium.                    |
+|              |         |         |                             |                      |                                                                                                                                                         |
+|      ✅️      |  `RBX`  |  `SBG`  |             ✅️              | Advanced<br/>Premium | - La région de France Roubaix (RBX)et France Strasbourg (SBG) sont bien répliqués entr eux avec les offres Veeam Advanced/Premium.                      |
+|      ✅️      |  `GRA`  |  `RBX`  |            ❌                 | Advanced<br/>Premium | - Les régions de France Gavelines (RBX) et France Roubaix (RBX) ne se pas réplique pas entre eux avec les offres Veeam Advanced/Premium.                |
+|              |         |         |                             |                      |
+|      ❌       |  `VIN`  |  `HIL`  |             ✅️               | Advanced<br/>Premium | - Les régions USA de Washington DC Vint Hill (VIN) et Seattle Hillsboro Oregon (HIL) se réplique bien entre eux avec les offres Veeam Advanced/Premium. |
 
 
 
