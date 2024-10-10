@@ -392,7 +392,8 @@ Ajoutez cette ligne au fichier `99-disable-network-config.cfg` :
 network: {config: disabled}
 ```
 
-Ensuite, créez le fichier de configuration réseau dans /etc/netplan/ avec la commande suivante :
+Créez ensuite le fichier de configuration réseau dans `/etc/netplan/` avec la commande suivante :
+
 ```bash
 touch /etc/netplan/00-installer-config.yaml
 ```
