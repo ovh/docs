@@ -1,5 +1,5 @@
 ---
-title: "Alojamento web: como gerir utilizadores FTP?"
+title: "Alojamento web -Como gerir utilizadores FTP"
 excerpt: "Saiba como criar, modificar ou eliminar utilizadores FTP no seu alojamento web da OVHcloud"
 updated: 2024-10-07
 ---

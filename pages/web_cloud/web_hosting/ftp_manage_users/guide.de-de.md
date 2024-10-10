@@ -1,5 +1,5 @@
 ---
-title: "Webhosting: FTP-Benutzer verwalten"
+title: "Webhosting - FTP-Benutzer verwalten"
 excerpt: "Erfahren Sie hier, wie Sie FTP-Benutzer auf Ihrem OVHcloud Webhosting erstellen, bearbeiten und löschen"
 updated: 2024-10-07
 ---

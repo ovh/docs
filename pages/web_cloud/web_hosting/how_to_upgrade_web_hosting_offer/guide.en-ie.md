@@ -1,5 +1,5 @@
 ---
-title: "Web Hosting: How to change your solution?"
+title: "Web Hosting - How to change your solution"
 excerpt: "Find out how to change the subscription offer for your OVHcloud Web Hosting"
 updated: 2024-10-03
 ---

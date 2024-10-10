@@ -1,5 +1,5 @@
 ---
-title: "Hébergement web: comment faire évoluer son offre ?"
+title: "Hébergement web - Comment faire évoluer son offre"
 excerpt: "Découvrez comment modifier la formule d'abonnement de votre offre d'hébergement web OVHcloud"
 updated: 2024-10-03
 ---
