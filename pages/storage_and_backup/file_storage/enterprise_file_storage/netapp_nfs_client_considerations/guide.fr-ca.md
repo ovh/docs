@@ -6,7 +6,7 @@ updated: 2024-10-10
 
 ## Objectif
 
-**Découvez comment permettre l'accès en lecture/écriture à votre Entreprise File Storage depuis certains clients NFS.**
+**Découvrez comment permettre l'accès en lecture/écriture à votre Entreprise File Storage depuis certains clients NFS.**
 
 ## Prérequis
 
