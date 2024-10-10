@@ -1,12 +1,15 @@
 ---
 title: "Premiers pas avec l'offre Zimbra"
 excerpt: "Découvrez comment débuter avec votre offre Zimbra depuis votre espace client OVHcloud"
-updated: 2024-10-03
+updated: 2024-10-10
 ---
 
 <style>
 .w-400 {
-max-width:400px!important;
+  max-width:400px !important;
+}
+.h-400 {
+  max-height:400px !important;
 }
 </style>
 
@@ -38,6 +41,8 @@ Avec l'offre Zimbra, OVHcloud vous propose une plateforme de messagerie collabor
 
 Pour accéder à votre service Zimbra , connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur l'onglet `Web Cloud`{.action}. Dans la partie `E-mails`{.action}, cliquez sur `Zimbra`{.action}.
 
+![zimbra](images/zimbra_general_information.png){.thumbnail .w-400}
+
 ### Configurer votre service Zimbra
 
 Avant de débuter la configuration de vos comptes e-mail Zimbra, prenez connaissance des trois éléments qui structurent hiérarchiquement votre service Zimbra :
@@ -54,9 +59,13 @@ Le schéma ci-dessous résume le lien hiérarchique entre les éléments précé
 
 Si vous ajoutez un grand nombre de noms de domaine sur votre service Zimbra, il peut être utile de les regrouper en les associant à une « organisation ». Depuis votre service Zimbra, cliquez sur `Organisation`{.action}.
 
+![zimbra](images/zimbra_organization_tab.png){.thumbnail .w-400}
+
 #### Créer une organisation
 
 Pour créer une organisation, cliquez sur `Ajouter une organisation`{.action}. Définissez le `Nom` de l'organisation et le `Label de l'organisation`, ce dernier étant une description courte de l'organisation vous permettant de vous repérer lorsque vous filtrez l'affichage des noms de domaine et comptes e-mail de votre service Zimbra.
+
+![zimbra](images/zimbra_organization_add.png){.thumbnail .w-400}
 
 #### Filtrer par organisation
 
@@ -70,6 +79,10 @@ Pour retirer le filtre, cliquez simplement sur la croix du filtre.
 
 ### Domaines <a name="domains"></a>
 
+> [!warning]
+>
+> Pour un fonctionnement optimal lorsque vous utilisez le même nom de domaine entre les offres OVHcloud [Exchange](/links/web/emails-hosted-exchange), [E-mail Pro](/links/web/email-pro) et Zimbra, il est nécessaire de configurer le nom de domaine en `non-authoritatif`. Pour savoir comment configurer un nom de domaine en non-authoritatif sur une plateforme Exchange ou E-mail Pro, consultez notre guide [Ajouter un nom de domaine sur une plateforme e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
+
 Vous retrouvez dans cet onglet l'ensemble des noms de domaine ajoutés à votre service Zimbra. Ils doivent être gérés depuis votre espace client OVHcloud pour être ajoutés.
 
 Le tableau des noms de domaine vous donne deux informations :
@@ -77,11 +90,15 @@ Le tableau des noms de domaine vous donne deux informations :
 - **Organisation** : elle est déterminée lorsque vous ajoutez votre nom de domaine, vous retrouverez automatiquement son label dans cette colonne.
 - **Nombre de comptes** : Vous retrouvez ici tous les comptes qui ont été créés sous le nom de domaine concerné.
 
+![zimbra](images/zimbra_domain_tab.png){.thumbnail .w-400}
+
 #### Ajouter un nom de domaine
 
 Pour ajouter un nom de domaine à votre service Zimbra, cliquez sur l'onglet `Domaine`{.action} puis cliquez sur `Ajouter un domaine`{.action}.
 
 Si vous avez créé des organisations, sélectionnez l'une d'elles dans le menu déroulant, puis sélectionnez un nom de domaine dans la liste (il est nécessaire que les noms de domaines soient gérés dans votre espace client OVHcloud). Cliquez ensuite sur `Confirmer`{.action} pour finaliser l'ajout du nom de domaine.
+
+![zimbra](images/zimbra_domain_add.png){.thumbnail .w-400 .h400}
 
 ### Comptes e-mail <a name="emails"></a>
 
@@ -92,6 +109,8 @@ La gestion des adresses e-mail de votre service Zimbra se fait depuis l'onglet `
 - **Taille** : cette colonne vous affiche la capacité totale de votre compte e-mail et l'espace qu'il occupe actuellement.
 
 Vous retrouvez également en haut de cette page un lien vers le [Webmail](/links/web/email) pour pouvoir vous connecter directement au contenu de votre compte e-mail depuis votre navigateur internet.
+
+![zimbra](images/zimbra_emailaccounts_tab.png){.thumbnail .w-400}
 
 #### Créer un compte e-mail
 
@@ -112,8 +131,8 @@ Complétez les informations qui s'affichent.
 
 - **Prénom** : renseignez un prénom.
 - **Nom** : renseignez un nom.
-- **Nom complet** : renseignez le nom qui s'affichera en tant qu'expéditeur lorsque des e-mails seront envoyés depuis cette adresse.
-- **Mot de passe** : définissez un mot de passe fort composé de (au minimum) 9 caractères, une majuscule, une minuscule et un chiffre. Pour des raisons de sécurité, n'utilisez pas deux fois le même mot de passe. Choisissez-en un qui n'a aucun rapport avec vos informations personnelles (évitez par exemple de mentionner vos nom, prénom et date de naissance). Changez-le régulièrement.
+- **Nom à afficher** : renseignez le nom qui s'affichera en tant qu'expéditeur lorsque des e-mails seront envoyés depuis cette adresse.
+- **Mot de passe** : définissez un mot de passe fort composé de (au minimum) 10 caractères, une majuscule, une minuscule et un chiffre. Pour des raisons de sécurité, n'utilisez pas deux fois le même mot de passe. Choisissez-en un qui n'a aucun rapport avec vos informations personnelles (évitez par exemple de mentionner vos nom, prénom et date de naissance). Changez-le régulièrement.
 
 > [!warning]
 >
@@ -126,6 +145,8 @@ Complétez les informations qui s'affichent.
 > - Aucun caractère accentué
 
 Cliquez sur `Confirmer`{.action} pour lancer la création du compte.
+
+![zimbra](images/zimbra_emailaccounts_add.png){.thumbnail .w-400}
 
 ### Consulter son compte e-mail <a name="mail-consult"></a>
 

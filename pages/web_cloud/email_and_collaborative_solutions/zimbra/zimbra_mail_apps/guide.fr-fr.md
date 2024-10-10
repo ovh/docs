@@ -1,7 +1,7 @@
 ---
 title: "Configurer son adresse e-mail Zimbra sur un logiciel de messagerie"
 excerpt: "Découvrez comment configurer votre logiciel de messagerie pour consulter les e-mails de votre comtpes Zimbra"
-updated: 2024-10-03
+updated: 2024-10-10
 ---
 
 <style>
