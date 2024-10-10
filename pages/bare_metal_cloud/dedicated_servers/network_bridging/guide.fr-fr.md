@@ -398,7 +398,8 @@ Créez ensuite le fichier de configuration réseau dans `/etc/netplan/` avec la 
 touch /etc/netplan/00-installer-config.yaml
 ```
 
-Puis apliquez ces permissions sur `/etc/netplan` :
+Puis appliquez ces permissions sur `/etc/netplan` :
+
 ```bash
 cd /etc/netplan
 sudo chmod 600 *.yaml
