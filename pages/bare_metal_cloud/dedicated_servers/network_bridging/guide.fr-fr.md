@@ -405,6 +405,7 @@ sudo chmod 600 *.yaml
 ```
 
 Exécutez la commande suivante pour identifier le nom de votre interface :
+
 ```bash
 ip addr
 ```
