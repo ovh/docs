@@ -76,6 +76,6 @@ If your email account has already been set up and you need to access the account
 
 > [!primary]
 >
-> Configure an account manuallyFor more information on configuring an email address from the Thunderbird app on Windows, see [the Mozilla Help Center](https://support.mozilla.org/en-US/kb/manual-account-configuration#thunderbird:mac:tb115)
+> For more information on configuring an email address from the Thunderbird app on Windows, see [the Mozilla Help Center](https://support.mozilla.org/en-US/kb/manual-account-configuration#thunderbird:mac:tb115)
 
 Join our community of users on <https://community.ovh.com/en/>.

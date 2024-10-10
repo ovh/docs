@@ -1,7 +1,7 @@
 ---
 title: 'Email Pro - Configure uma conta de e-mail no Outlook para Windows'
 excerpt: 'Saiba como configurar uma conta Email Pro no Outlook para Windows'
-updated: 2021-07-05
+updated: 2024-10-09
 ---
 
 > [!primary]
@@ -93,6 +93,10 @@ A janela está dividida em duas partes, **Correio de entrada** e **Correio de sa
 ![Outlook](images/config-outlook-emailpro07.png){.thumbnail}
 
 ## Quer saber mais?
+
+> [!primary]
+>
+> Para obter mais informações sobre a configuração de um endereço de e-mail a partir da aplicação Outlook no macOS, consulte [Central de Ajuda da Microsoft](https://support.microsoft.com/pt-pt/office/adicionar-uma-conta-de-correio-em-outlook-6e27792a-9267-4aa4-8bb6-c84ef146101b).
 
 [Configurar um endereço de e-mail no Outlook para Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016) (versão em inglês).
 

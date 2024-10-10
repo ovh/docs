@@ -1,7 +1,7 @@
 ---
 title: 'Exchange - Configura il tuo account di posta elettronica su Outlook per Windows'
 excerpt: 'Scopri come configurare un account Exchange su Outlook per Windows'
-updated: 2021-07-05
+updated: 2024-10-09
 ---
  
 > [!primary]
@@ -32,7 +32,6 @@ Gli account Exchange possono essere configurati su client di posta compatibili, 
 > [!primary]
 >
 > Utilizzi Outlook e poi per Mac? Consulta la nostra documentazione: [Configurare un account Exchange su Outlook per Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac).
->
 
 ## Procedura
 
@@ -53,13 +52,12 @@ Gli account Exchange possono essere configurati su client di posta compatibili, 
 ![exchange](images/config-outlook-exchange02.png){.thumbnail}
 
 > [!primary]
-> 
+>
 > Se un messaggio ti indica che Outlook non ha potuto configurare il tuo account, ciò può indicare che il record SRV di OVHcloud non è stato configurato correttamente nella zona DNS del tuo dominio.
-> 
+>
 > ![exchange](images/config-outlook-exchange03.png){.thumbnail}
 >
 > Ti consigliamo di verificare la configurazione del dominio impostato sul tuo servizio Exchange accedendo allo [Spazio Cliente OVHcloud](/links/manager), scheda `Domini associati`{.action}, poi colonna `Diagnostica`{.action} della tabella.
->
 
 - Se la configurazione del tuo dominio è valida, può apparire un messaggio di autorizzazione alla connessione ai server di OVHcloud. Accetta il messaggio per consentire la configurazione automatica del tuo account Exchange.
 - In seguito, determina la periodicità di conservazione degli elementi del tuo account Exchange, **in locale sul tuo computer**. Clicca su `Seguente`{.action} e poi su `Fine`{.action}.
@@ -77,6 +75,10 @@ Il tuo indirizzo email Exchange e tutte le sue funzioni collaborative sono dispo
 Se è necessario effettuare un'operazione che potrebbe comportare la perdita dei dati del tuo account email, ti consigliamo di effettuare un backup preliminare dell'account email in questione. Per effettuare questa operazione, consulta il paragrafo "**Esporta da Windows**" nella nostra guida [Migrare manualmente il tuo indirizzo email](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration#esporta-da-windows).
 
 ## Per saperne di più
+
+> [!primary]
+>
+> Per ulteriori informazioni sulla configurazione di un indirizzo e-mail dall'applicazione Outlook su Windows, vedere [Microsoft Help Center](https://support.microsoft.com/it-it/office/aggiungere-un-account-di-posta-in-outlook-6e27792a-9267-4aa4-8bb6-c84ef146101b).
 
 [Configurare un account email su Outlook per Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)
 

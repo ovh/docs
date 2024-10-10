@@ -1,14 +1,14 @@
 ---
-title: 'Configurare un account Exchange con l’applicazione Posta per Windows 10'
-excerpt: 'Scopri come configurare un account Exchange con l’applicazione Posta per Windows 10'
-updated: 2018-04-04
+title: 'Exchange - Configura il tuo account di posta elettronica su Posta per Windows'
+excerpt: 'Scopri come configurare un account Exchange con l’applicazione Posta per Windows'
+updated: 2024-10-09
 ---
 
 ## Obiettivo
 
 Gli account Exchange possono essere configurati su client di posta compatibili, per permetterti di utilizzare il tuo account email dal dispositivo che preferisci.
 
-**Scopri come configurare un account Exchange con l’applicazione Posta per Windows 10.**
+**Scopri come configurare un account Exchange con l’applicazione Posta per Windows.**
 
 ## Prerequisiti
 
@@ -58,8 +58,12 @@ OVHcloud ti propone un'applicazione Web che dispone di [funzionalità collaborat
 
 ## Per saperne di più
 
-[Configurare un indirizzo email incluso nella soluzione MX Plan o in una soluzione di hosting Web con l’applicazione Posta per Windows 10](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10)
+> [!primary]
+>
+> Per ulteriori informazioni sulla configurazione di un indirizzo e-mail dal client di Posta in Windows, vedere [Guida in linea di Microsoft](https://support.microsoft.com/it-it/office/configurare-la-posta-elettronica-nell-app-posta-7ff79e8b-439b-4b47-8ff9-3f9a33166c60).
 
-[Configurare un account Email Pro con l’applicazione Posta per Windows 10](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10) (in inglese)
+[Configurare un indirizzo email incluso nella soluzione MX Plan o in una soluzione di hosting Web con l’applicazione Posta per Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10)
+
+[Configurare un account Email Pro con l’applicazione Posta per Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10) (in inglese)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

@@ -1,7 +1,7 @@
 ---
-title: 'Configurer son compte E-mail Pro sur Thunderbird pour Windows'
+title: 'E-mail Pro - Configurer son compte e-mail sur Thunderbird pour Windows'
 excerpt: 'Retrouvez ici comment configurer votre adresse E-mail Pro sur Thunderbird pour Windows'
-updated: 2021-08-26
+updated: 2024-10-09
 ---
 
 ## Objectif
@@ -87,5 +87,9 @@ Si votre compte e-mail est déjà paramétré et que vous devez accéder aux par
 ![Thunderbird](images/thunderbird-win-emailpro06.png){.thumbnail}
 
 ## Aller plus loin
+
+> [!primary]
+>
+> Pour plus d'informations sur la configuration d'une adresse e-mail depuis l'application Thunderbird sur Windows, consultez [le centre d'aide Mozilla](https://support.mozilla.org/fr/kb/configurer-un-compte-manuellement#thunderbird:win10:tb115).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

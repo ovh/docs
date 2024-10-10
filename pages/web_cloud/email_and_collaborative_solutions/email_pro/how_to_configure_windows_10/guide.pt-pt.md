@@ -1,14 +1,14 @@
 ---
-title: 'Configurar uma conta E-mail Pro no Correio para Windows 10'
-excerpt: "Saiba como configurar uma conta E-mail Pro na aplicação Correio para Windows 10"
-updated: 2020-03-18
+title: 'E-mail Pro - Configure sua conta de e-mail no Correio para Windows'
+excerpt: "Saiba como configurar uma conta E-mail Pro na aplicação Correio para Windows"
+updated: 2024-10-09
 ---
 
 ## Objetivo
 
 As contas E-mail Pro podem ser configuradas em vários softwares de e-mail compatíveis. Isto permite-lhe utilizar o seu endereço de e-mail no dispositivo que preferir.
 
-**Aprenda a configurar uma conta E-mail Pro sobre a aplicação Correio para Windows 10.**
+**Aprenda a configurar uma conta E-mail Pro sobre a aplicação Correio para Windows.**
 
 > [!warning]
 >
@@ -85,8 +85,12 @@ A OVHcloud também disponibiliza uma aplicação web com [funções colaborativa
 
 ## Quer saber mais?
 
-[Configurar um endereço de e-mail no serviço MX Plan ou num serviço de alojamento web na aplicação Correio para Windows 10](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10) 
+> [!primary]
+>
+> Para obter mais informações sobre a configuração de um endereço de e-mail a partir do cliente de e-mail Correio no Windows, consulte [Centro de Ajuda da Microsoft](https://support.microsoft.com/pt-pt/office/configurar-o-e-mail-na-aplica%C3%A7%C3%A3o-correio-7ff79e8b-439b-4b47-8ff9-3f9a33166c60).
 
-[Configurar uma conta Exchange na aplicação Correio para Windows 10](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_windows_10) 
+[Configurar um endereço de e-mail no serviço MX Plan ou num serviço de alojamento web na aplicação Correio para Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10)
+
+[Configurar uma conta Exchange na aplicação Correio para Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_windows_10)
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

@@ -1,7 +1,7 @@
 ---
 title: 'E-mail Pro - Configurer un compte e-mail sur Outlook pour Windows'
 excerpt: 'Découvrez comment configurer votre compte E-mail Pro sur Outlook pour Windows'
-updated: 2021-07-05
+updated: 2024-10-09
 ---
 
 ## Objectif
@@ -81,13 +81,17 @@ La fenêtre est divisée en deux parties, **Courrier entrant** et **Courrier sor
 > [!primary]
 >
 > Dans notre exemple, nous utilisons la mention serveur : pro**?**.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service E-mail Pro.
-> 
+>
 > Retrouvez ce chiffre dans votre [espace client OVHcloud](/links/manager), dans la rubrique `Web Cloud`{.action} puis `E-mail Pro`{.action}. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
-> 
+>
 
 ![Outlook](images/config-outlook-emailpro07.png){.thumbnail}
 
 ## Aller plus loin
+
+> [!primary]
+>
+> Pour plus d'informations sur la configuration d'une adresse e-mail depuis l'application Outlook sur macOS, consultez [le centre d'aide Microsoft](https://support.microsoft.com/fr-fr/office/ajouter-un-compte-de-courrier-dans-outlook-6e27792a-9267-4aa4-8bb6-c84ef146101b).
 
 [Configurer son adresse e-mail comprise dans l’offre MX Plan ou dans une offre d’hébergement web sur Outlook pour Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)
 

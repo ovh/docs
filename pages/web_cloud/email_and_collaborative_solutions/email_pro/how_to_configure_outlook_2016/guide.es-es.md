@@ -1,7 +1,7 @@
 ---
 title: 'Email Pro - Configure una cuenta de correo electrónico en Outlook para Windows'
 excerpt: 'Cómo configurar una cuenta Email Pro en Outlook para Windows'
-updated: 2021-07-05
+updated: 2024-10-09
 ---
 
 > [!primary]
@@ -93,6 +93,10 @@ La ventana está dividida en dos partes, **Correo entrante** y **Correo saliente
 ![Outlook](images/config-outlook-emailpro07.png){.thumbnail}
 
 ## Más información
+
+> [!primary]
+>
+> Para obtener más información sobre la configuración de una dirección de correo electrónico desde la aplicación Outlook en macOS, consulte [el Centro de ayuda de Microsoft](https://support.microsoft.com/es-es/office/agregar-cuenta-de-correo-en-outlook-6e27792a-9267-4aa4-8bb6-c84ef146101b).
 
 [Configurar una cuenta de correo electrónico en Outlook para Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)
 

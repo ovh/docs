@@ -102,6 +102,6 @@ Please also note that you can still use our online interface, accessible via [We
 
 > [!primary]
 >
-> For more information on configuring an email address from the online Gmail interface, see [Google Help Center](https://support.google.com/mail/answer/21289?hl=en&co=GENIE.Platform%3DDesktop).
+> For more information on configuring an email address from the online Gmail interface, see the [Google Help Center](https://support.google.com/mail/answer/21289?hl=en&co=GENIE.Platform%3DDesktop).
 
 Join our community of users on <https://community.ovh.com/en/>.

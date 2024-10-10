@@ -1,14 +1,14 @@
 ---
-title: 'Konfiguration von Exchange auf der Windows 10 Mail App'
-excerpt: 'Hier erfahren Sie, wie Sie Ihren Exchange Account auf der Mail App von Windows 10 einrichten.'
-updated: 2018-04-04
+title: 'Exchange - Konfiguration Ihrer E-Mail-Adresse in Windows Mail App'
+excerpt: 'Hier erfahren Sie, wie Sie Ihren Exchange Account auf der Mail App von Windows einrichten.'
+updated: 2024-10-09
 ---
 
 ## Einleitung
 
 Exchange Accounts können auf verschiedenen, kompatiblen E-Mail-Clients eingerichtet werden. So können Sie Ihre E-Mail-Adresse von dem von Ihnen bevorzugten Gerät aus verwenden.
 
-**In dieser Anleitung erfahren Sie, wie Sie Ihren Exchange Account auf der Mail App von Windows 10 einrichten.**
+**In dieser Anleitung erfahren Sie, wie Sie Ihren Exchange Account auf der Mail App von Windows einrichten.**
 
 ## Voraussetzungen
 
@@ -58,8 +58,12 @@ OVHcloud bietet Ihnen außerdem eine Webanwendung mit [kollaborativen Funktionen
 
 ## Weiterführende Informationen
 
-[Konfiguration Ihrer E-Mail-Adresse aus dem MX Plan Angebot oder einem Webhosting Angebot auf der Windows 10 Mail App](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10)
+> [!primary]
+>
+> Weitere Informationen zum Konfigurieren einer E-Mail-Adresse über den Mail App unter Windows finden Sie im [Microsoft Help Center](https://support.microsoft.com/de-de/office/configure-l-mail-in-l-mail-application-mail-7ff79e8b-439b-4b47-8ff9-3f9a33166c60).
 
-[Konfiguration von E-Mail Pro auf der Windows 10 Mail App](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10)
+[Konfiguration Ihrer E-Mail-Adresse aus dem MX Plan Angebot oder einem Webhosting Angebot auf der Windows Mail App](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10)
+
+[Konfiguration von E-Mail Pro auf der Windows Mail App](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

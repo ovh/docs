@@ -1,7 +1,7 @@
 ---
 title: Exchange - Konfiguracja konta e-mail w aplikacji Mail na macOS
 excerpt: Dowiedz się, jak skonfigurować konto Exchange w aplikacji Mail na macOS
-updated: 2024-04-16
+updated: 2024-10-09
 ---
 
 <style>
@@ -97,6 +97,10 @@ Jeśli Twoje konto e-mail zostało już skonfigurowane i musisz mieć dostęp do
 ![mailmac](images/mail-mac-exchange05.png){.thumbnail}
 
 ## Sprawdź również
+
+> [!primary]
+>
+> Aby uzyskać więcej informacji na temat konfigurowania konta e-mail z poziomu aplikacji Mail na urządzeniach z systemem macOS, skorzystaj z [Centrum pomocy Apple](https://support.apple.com/pl-pl/guide/mail/mail35803/mac).
 
 [FAQ e-maile](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 

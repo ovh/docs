@@ -1,7 +1,7 @@
 ---
 title: 'Email Pro - Set up an email account on Outlook for Windows'
 excerpt: 'Find out how to configure your Email Pro account in Outlook for Windows'
-updated: 2021-07-05
+updated: 2024-10-09
 ---
 
 ## Objective
@@ -87,6 +87,10 @@ The window is divided into two parts, **Incoming Mail** and **Outgoing Mail**. C
 ![Outlook](images/config-outlook-emailpro07.png){.thumbnail}
 
 ## Go further <a name="gofurther"></a>
+
+> [!primary]
+>
+> For more information about configuring an email address from the Outlook app on macOS, see [Microsoft Help Center](https://support.microsoft.com/en-gb/office/add-email-account-in-Outlook-6e27792a-9267-4aa4-8bb6-c84ef146101b).
 
 [Configuring your MX Plan address in Outlook for Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)
 

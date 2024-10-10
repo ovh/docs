@@ -1,7 +1,7 @@
 ---
-title: 'Exchange - Configure su cuenta de correo electrónico en Outlook para macOS'
+title: 'Exchange - Configurar una dirección de correo electrónico en Outlook para macOS'
 excerpt: 'Cómo configurar una cuenta Exchange en Outlook para Mac'
-updated: 2018-06-01
+updated: 2024-10-09
 ---
 
 ## Objetivo
@@ -11,9 +11,9 @@ Es posible configurar sus cuentas Exchange en el cliente de correo que usted uti
 > [!warning]
 >
 > La responsabilidad sobre la configuración y la gestión de los servicios que OVHcloud pone a su disposición recae íntegramente en usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
-> 
+>
 > Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte el apartado «Más información» de esta guía.
-> 
+
 
 ## Requisitos
 
@@ -61,6 +61,10 @@ Una vez que haya configurado la dirección de correo electrónico, ya puede empe
 OVHcloud ofrece una aplicación web que tiene [funciones colaborativas](/links/web/emails) y está disponible en la dirección [Webmail](/links/web/email). Puede conectarse con el nombre de usuario y la contraseña de su dirección de correo electrónico.
 
 ## Más información
+
+> [!primary]
+>
+> Para más información sobre la configuración de una dirección de correo electrónico desde la aplicación Outlook en macOS, consulte [el Centro de ayuda de Microsoft](https://support.microsoft.com/es-es/office/add-an-email-account-to-outlook-for-mac-6aeec61b-86af-40af-8ffe-985d0fc82ddb).
 
 [Configurar una cuenta de correo electrónico en Outlook para Mac](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac)
 

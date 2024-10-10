@@ -1,7 +1,7 @@
 ---
-title: 'Konfiguration von Exchange auf iPhone oder iPad'
+title: "Exchange - Konfiguration Ihrer E-Mail-Adresse in Mail für iPhone und iPad"
 excerpt: 'Erfahren Sie hier, wie Sie Ihren Exchange Account via Mail App auf einem iPhone oder iPad einrichten'
-updated: 2021-05-21
+updated: 2024-10-09
 ---
 
 > [!primary]
@@ -66,6 +66,10 @@ OVHcloud bietet auch eine Webanwendung mit [kollaborativen Exchange-Funktionen](
 >
 
 ## Weiterführende Informationen
+
+> [!primary]
+>
+> Weitere Informationen zum Einrichten einer E-Mail-Adresse über die Mail App auf iOS finden Sie im [Apple Help Center](https://support.apple.com/de-de/102619).
 
 [Konfiguration Ihrer MX Plan E-Mail-Adresse auf iPhone oder iPad](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_ios)
 

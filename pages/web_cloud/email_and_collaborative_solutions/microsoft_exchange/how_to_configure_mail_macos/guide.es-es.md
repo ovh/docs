@@ -1,7 +1,7 @@
 ---
 title: Exchange - Configurar una cuenta de correo en Mail de macOS
 excerpt: Cómo configurar una cuenta Exchange en Mail de macOS
-updated: 2024-04-16
+updated: 2024-10-09
 ---
 
 <style>
@@ -97,6 +97,10 @@ Si su cuenta de correo ya está configurada y debe acceder a los parámetros de 
 ![mailmac](images/mail-mac-exchange05.png){.thumbnail}
 
 ## Más información
+
+> [!primary]
+>
+> Para más información sobre la configuración de una dirección de correo electrónico desde la aplicación Mail en macOS, consulte [el centro de ayuda de Apple](https://support.apple.com/es-es/guide/mail/mail35803/mac).
 
 [FAQ e-mails](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 

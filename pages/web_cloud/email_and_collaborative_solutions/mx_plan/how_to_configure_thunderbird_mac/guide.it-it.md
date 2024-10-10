@@ -80,6 +80,6 @@ Se il tuo account email è già configurato e devi accedere alle impostazioni de
 
 > [!primary]
 >
-> Configurare un account manualmentePer ulteriori informazioni sulla configurazione di un account email dall'applicazione Thunderbird su Windows, vedere [Help Center Mozilla](https://support.mozilla.org/it/kb/configurazione-manuale-account#thunderbird:mac:tb115)
+> Per ulteriori informazioni sulla configurazione di un account email dall'applicazione Thunderbird su Windows, vedere [Help Center Mozilla](https://support.mozilla.org/it/kb/configurazione-manuale-account#thunderbird:mac:tb115)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

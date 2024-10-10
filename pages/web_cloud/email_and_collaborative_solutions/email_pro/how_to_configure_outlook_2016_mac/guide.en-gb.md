@@ -1,7 +1,7 @@
 ---
 title: 'Email Pro - Configure your email account on Outlook for macOS'
 excerpt: 'Find out how to configure your Email Pro account in Outlook for Mac.'
-updated: 2020-03-18
+updated: 2024-10-09
 ---
 
 ## Objective
@@ -77,6 +77,10 @@ Once you have configured your email address, you can start using it! You can now
 OVHcloud also offers a web application that includes various [collaborative features](/links/web/emails), accessible at [Webmail](/links/web/email). You can log in using your email credentials.
 
 ## Go further
+
+> [!primary]
+>
+> For more information on configuring an email address from the Outlook app on macOS, see [the Microsoft Help Center](https://support.microsoft.com/en-gb/office/add-an-email-account-to-outlook-for-mac-6aeec61b-86af-40af-8ffe-985d0fc82ddb).
 
 [Configuring an email address included in an MX Plan package or in a Web Hosting package in Outlook for Mac](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac)
 

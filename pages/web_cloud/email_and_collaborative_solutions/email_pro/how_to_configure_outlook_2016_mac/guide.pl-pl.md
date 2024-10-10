@@ -1,7 +1,7 @@
 ---
 title: 'Email Pro - Skonfiguruj swoje konto e-mail w programie Outlook dla systemu macOS'
 excerpt: 'Dowiedz się, jak skonfigurować konto E-mail Pro w programie Outlook na urządzeniu Mac'
-updated: 2020-03-18
+updated: 2024-10-09
 ---
 
 ## Wprowadzenie
@@ -80,6 +80,10 @@ Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz zaczą�
 OVHcloud oferuje również aplikację internetową [funkcje do pracy zespołowej](/links/web/emails). Jest ona dostępna pod adresem [Webmail](/links/web/email). Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail.
 
 ## Sprawdź również
+
+> [!primary]
+>
+> Aby uzyskać więcej informacji na temat konfigurowania konta e-mail z poziomu aplikacji Outlook na urządzeniach z systemem macOS, zobacz [Centrum pomocy Microsoft](https://support.microsoft.com/pl-pl/office/add-an-email-account-to-outlook-for-mac-6aeec61b-86af-40af-8ffe-985d0fc82ddb).
 
 [Konfiguracja konta e-mail, zawartego w usłudze MX Plan lub usłudze hostingu, w programie Outlook na urządzeniu Mac](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac)
 

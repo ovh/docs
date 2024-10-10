@@ -1,6 +1,6 @@
 ---
 title: Configurare un account Exchange su Mail di macOS 
-updated: 2021-12-28
+updated: 2024-10-09
 ---
 
 <style>
@@ -97,6 +97,10 @@ Se il tuo account email è già configurato e devi accedere alle impostazioni de
 ![mailmac](images/mail-mac-exchange06.png){.thumbnail .w-400 .h-600}
 
 ## Per saperne di più
+
+> [!primary]
+>
+> Per informazioni sulla configurazione di un indirizzo email dall’applicazione Mail su macOS, consulta [il centro assistenza Apple](https://support.apple.com/it-it/guide/mail/mail35803/mac).
 
 [FAQ e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 

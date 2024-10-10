@@ -1,5 +1,5 @@
 ---
-title: "Konfiguracja konta E-mail Pro na urządzeniu z systemem Android przy użyciu aplikacji Microsoft Outlook"
+title: "E-mail Pro - Konfiguracja konta e-mail w programie Outlook na urządzeniu z systemem Android"
 excerpt: "Dowiedz się, jak skonfigurować konto E-mail Pro w aplikacji Adroid przy użyciu aplikacji Microsoft Outlook"
 updated: 2023-07-25
 ---
@@ -162,6 +162,10 @@ Następnie zsynchronizuje ona / pobiera zawartość Twojego konta e-mail, aby wy
 Następnie przetestuj wysyłkę i odbiór e-maili z aplikacji Microsoft Outlook, aby zakończyć konfigurację.
 
 ## Przejdź dalej <a name="go-further"></a>
+
+> [!primary]
+>
+> Aby uzyskać więcej informacji na temat konfigurowania konta e-mail z poziomu aplikacji Outlook na urządzeniach z systemem Android, zobacz [Centrum pomocy Microsoft](https://support.microsoft.com/pl-pl/office/konfigurowanie-poczty-e-mail-w-aplikacji-outlook-dla-systemu-android-886db551-8dfa-4fd5-b835-f8e532091872).
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 

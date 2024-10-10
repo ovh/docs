@@ -1,7 +1,7 @@
 ---
-title: 'Exchange - Configure your email account on Outlook for macOS'
+title: 'Exchange - Configuring your email address in Outlook for macOS'
 excerpt: 'Find out how to configure your Exchange account in Outlook for macOS.'
-updated: 2018-06-01
+updated: 2024-10-09
 ---
 
 ## Objective
@@ -54,5 +54,9 @@ Once you have configured your email address, you can start using it! You can now
 OVHcloud offers a web application that includes various collaborative features, which can be accessed at <https://ex.mail.ovh.ca/>. You can log in using your email credentials.
 
 ## Go further
+
+> [!primary]
+>
+> For more information on configuring an email address from the Outlook app on macOS, see [the Microsoft Help Center](https://support.microsoft.com/en-gb/office/add-an-email-account-to-outlook-for-mac-6aeec61b-86af-40af-8ffe-985d0fc82ddb).
 
 Join our community of users on <https://community.ovh.com/en/>.

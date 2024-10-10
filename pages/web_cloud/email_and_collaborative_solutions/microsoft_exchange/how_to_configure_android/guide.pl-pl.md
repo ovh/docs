@@ -1,7 +1,7 @@
 ---
 title: "Exchange - Konfiguracja konta e-mail w Gmailu na Androida"
 excerpt: "Dowiedz się, jak skonfigurować konto Exchange na urządzeniu z systemem Android poprzez aplikację Gmail"
-updated: 2024-03-20
+updated: 2024-10-09
 ---
 
 <style>
@@ -70,7 +70,6 @@ Dodanie konta zostanie wykonane w inny sposób, **jeśli żadne konto nie jest s
 >> 2. Wybierz `Ustawienia`{.action}<br><br>
 >> 3. Wybierz `Dodaj konto`{.action}<br><br>
 >> ![Exchange Android](images/android-existing.png){.thumbnail}
->>
 
 Postępuj zgodnie z kolejnymi instrukcjami, przechodząc przez poniższe karty:
 
@@ -94,7 +93,6 @@ Postępuj zgodnie z kolejnymi instrukcjami, przechodząc przez poniższe karty:
 > **Etap 6**
 >> Wyświetli się komunikat "Możesz od tej chwili korzystać ze swojego konta". Naciśnij przycisk `OK`{.action}, aby zakończyć konfigurację.<br><br>
 >> ![Exchange Android](images/exchange-android-05.png){.thumbnail .h-600}
->>
 
 Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz wysyłać i odbierać wiadomości e-mail, korzystając z aplikacji Gmail.
 
@@ -104,9 +102,12 @@ Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz wysyła
 
 ## Sprawdź również <a name="go-further"></a>
 
+> [!primary]
+>
+> Aby uzyskać więcej informacji na temat konfigurowania konta e-mail z poziomu aplikacji Gmail na urządzeniu z systemem Android, zobacz [Centrum pomocy Google](https://support.google.com/mail/answer/6078445?hl=pl-CA&co=GENIE.Platform%3DAndroid#zippy=-odaj-konto).
+
 [MX Plan - Konfiguracja konta e-mail w Gmailu na urządzeniu z systemem Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android).
 
 [E-mail Pro - Konfiguracja konta e-mail w Gmailu na urządzeniu z systemem Android](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_android).
-
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>
