@@ -1,7 +1,7 @@
 ---
 title: "Changer le propriétaire d’un domaine avec une Demande d'Opération AFNIC (DOA)"
 excerpt: "Découvrez comment réaliser une Demande d'Opération AFNIC (DOA)"
-updated: 2024-10-09
+updated: 2024-10-10
 ---
 
 ## Objectif
@@ -168,9 +168,9 @@ Si vous bénéficiez par la suite d'une décision SYRELI favorable pour récupé
 3. Initiez le [transfert entrant](/pages/web_cloud/domains/transfer_incoming_generic_domain) du nom de domaine concerné chez OVHcloud. Lors de cette étape, vérifiez que le nouveau propriétaire déclaré correspond bien au nouveau propriétaire bénéficiant de la procédure SYRELI. Lorsque vous arriverez à l'étape de demande du code de transfert du nom de domaine, l'opération tombera automatiquement en erreur. Cette situation est normale et est liée au fait qu'il ne s'agit pas là d'un transfert classique. L'essentiel ici est que la commande soit initiée pour que le support OVHcloud puisse agir à partir de l'étape qui suit.
 4. Contactez le support OVHcloud en créant [un ticket d'assistance depuis le Centre d'Aide](https://help.ovhcloud.com/csm?id=csm_get_help). Précisez dans le ticket le nom de domaine concerné, la décision SYRELI, la DOA complétée et l'ensemble des documents relatifs au nouveau propriétaire que vous avez préparés lors de l'**étape 2**.
 
-Dès que le support prend en charge votre demande et en fonction des délais de traitement de l'AFNIC, le processus de traitement prend généralement entre 24 et 48 heures. En effet, l'AFNIC vérifiera les éléments fournis dans votre ticket d'assistance et validera ou non l'opération de transfert entrant.
+Dès que le support prend en charge votre demande et en fonction des délais de traitement de l'AFNIC, le processus de traitement prend généralement entre 24 et 48 heures. En effet, l'AFNIC vérifiera les éléments fournis dans votre ticket d'assistance et validera ou non l'opération de Recover.
 
-Dès que l'AFNIC transmet un retour favorable, OVHcloud finalise le transfert entrant du nom de domaine. Vous pourrez ainsi l'administrer directement depuis votre [espace client OVHcloud](/links/manager).
+Dès que l'AFNIC transmet un retour favorable, OVHcloud finalise l'opération de Recover auprès de l'AFNIC grâce a un code obtenu de leur part. OVHcloud peut ensuite valider le transfert entrant du nom de domaine. Vous pourrez ainsi l'administrer directement depuis votre [espace client OVHcloud](/links/manager).
 
 > [!primary]
 >
