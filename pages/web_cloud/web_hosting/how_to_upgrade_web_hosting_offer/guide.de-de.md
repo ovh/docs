@@ -1,5 +1,5 @@
 ---
-title: "Webhosting: Wie kann ich mein Angebot wechseln?"
+title: "Webhosting - Wie kann ich mein Angebot wechseln"
 excerpt: "Erfahren Sie hier, wie Sie das Abonnement Ihres OVHcloud Webhosting-Dienstes ändern können"
 updated: 2024-10-03
 ---
