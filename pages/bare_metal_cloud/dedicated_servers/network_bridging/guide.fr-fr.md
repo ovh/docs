@@ -13,6 +13,8 @@ updated: 2024-10-09
 
 La mise en réseau en mode bridge peut être utilisée pour configurer vos machines virtuelles. Quelques modifications sont nécessaires pour que la configuration fonctionne sur notre réseau.
 
+**Ce guide vous montre comment utiliser le mode bridge pour configurer l'accès à Internet pour vos machines virtuelles.**
+
 ## Prérequis
 
 * Posséder un serveur dédié avec un hyperviseur installé ([VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox, par exemple).
