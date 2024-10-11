@@ -1,5 +1,5 @@
 ---
-title: Configurare un account Exchange su Mail di macOS 
+title: Exchange - Configura il tuo account di posta elettronica su Mail per macOS 
 updated: 2024-10-09
 ---
 

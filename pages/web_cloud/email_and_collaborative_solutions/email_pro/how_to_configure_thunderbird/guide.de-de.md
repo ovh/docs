@@ -1,5 +1,5 @@
 ---
-title: 'E-mail Pro - Konfigurieren Sie Ihr E-Mail-Konto in Thunderbird für Windows'
+title: 'E-Mail Pro - Konfigurieren Sie Ihr E-Mail-Konto in Thunderbird für Windows'
 excerpt: 'Erfahren Sie hier, wie Sie Ihren E-Mail Pro Account in Thunderbird für Windows einrichten'
 updated: 2024-10-09
 ---

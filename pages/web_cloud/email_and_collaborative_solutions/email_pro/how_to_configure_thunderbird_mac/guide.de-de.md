@@ -1,5 +1,5 @@
 ---
-title: 'E-mail Pro - Konfiguration Ihrer E-Mail-Adresse in Thunderbird für macOS'
+title: 'E-Mail Pro - Konfiguration Ihrer E-Mail-Adresse in Thunderbird für macOS'
 excerpt: 'Hier finden Sie die Informationen zur Konfiguration Ihrer Email Pro Adresse auf Thunderbird für macOS.'
 updated: 2024-10-09
 ---

@@ -1,5 +1,5 @@
 ---
-title: 'CMX Plan - Configuring your email address in Outlook for macOS'
+title: 'MX Plan - Configuring your email address in Outlook for macOS'
 excerpt: 'Find out how to configure your email address in Outlook for macOS'
 updated: 2024-10-01
 ---

@@ -1,5 +1,5 @@
 ---
-title: ‘Exchange - Configurer son compte e-mail sur Courrier pour Windows'
+title: Exchange - Configurer son compte e-mail sur Courrier pour Windows
 excerpt: "Apprenez à configurer un compte Exchange sur l'application Courrier pour Windows"
 updated: 2024-10-09
 ---
