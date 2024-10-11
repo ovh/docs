@@ -36,6 +36,12 @@ Pour plus d'informations sur la facturation Public Cloud, consultez [notre guide
 
 ///
 
+/// details | Comment attacher une instance Public Cloud au Savings Plan que je viens de commander ?
+
+Il n'y a aucune action à effectuer. Toute instance déjà créée (ou prochainement créée) et correspondant au modèle choisi pour votre Savings Plan y sera automatiquement intégrée, sous réserve que la quantité de ressources du Savings Plan ne soit pas épuisée.
+
+///
+
 /// details | Comment puis-je faire évoluer mes instances si j’ai besoin de plus ou moins de ressources ?
 
 Toute instance peut être redimensionnée vers une plus puissante de la même gamme depuis l’espace client en cliquant sur `éditer`{.action} sur la page de l’instance. Il est également possible de redimensionner celle-ci vers un modèle inférieur, si elle a été lancée avec l'option « flex ». Cette option impose une taille de disque de 50 Go pour tous les modèles et permet ainsi les redimensionnements dans les deux sens.
