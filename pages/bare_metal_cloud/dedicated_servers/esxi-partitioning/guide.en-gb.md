@@ -31,7 +31,7 @@ OVHcloud installations of ESXi are therefore compliant with the configuration se
 
 ESXi 7.0 introduced a [boot option to configure the size of ESXi system partitions](https://kb.vmware.com/s/article/81166) because the increased size of the system partition could cause issues, especially on systems with small disks. OVHcloud includes this feature in the [OVHcloud Control Panel](https://ovh.com/manager/#/dedicated/configuration) and the [OVHcloud API](https://api.ovh.com/).
 
-Even with multiple disks available on a server, the ESXi OS installation uses only the first disk of the targeted disk group (see [OVHcloud API and OS Installation - Disk Groups](/pages/bare_metal_cloud/dedicated_servers/api-os-installation#disk-group)). Other disks may be configured afterwards to be used for virtual machines (see [How to add a datastore](/pages/bare_metal_cloud/dedicated_servers/hgrstor2_system_configuration#add-datastore)).
+Even with multiple disks available on a server, the ESXi OS installation uses only the first disk of the targeted disk group (see [OVHcloud API and OS Installation - Disk Groups](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh#disk-group)). Other disks may be configured afterwards to be used for virtual machines (see [How to add a datastore](/pages/bare_metal_cloud/dedicated_servers/hgrstor2_system_configuration#add-datastore)).
 
 There are 4 different values:
 
@@ -89,7 +89,7 @@ Then choose `Virtualisation`{.action}, `UNIX`{.action} and select the version of
 > The `Customise the partition configuration`{.action} option is not available, for the above reasons.
 >
 
-Choose the disk group on which you want ESXi to be installed. Note that only the first disk of this group will be used to install the OS. Find more information in [this guide](/pages/bare_metal_cloud/dedicated_servers/api-os-installation#disk-group).
+Choose the disk group on which you want ESXi to be installed. Note that only the first disk of this group will be used to install the OS. Find more information in [this guide](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh#disk-group).
 
 Click `Next`{.action} to continue.
 
@@ -112,16 +112,21 @@ When triggering an OS installation, the customer can optionally provide a `parti
 
 > [!api]
 >
-> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/install/start
+> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/reinstall
 >
 
 Example of payload:
 
 ```json
 {
-    "templateName": "esxi70_64",
-    "partitionSchemeName": "small",
-    "userMetadata": []
+    "operatingSystem": "esxi70_64",
+    "storage": [
+        {
+            "partitioning": {
+                "schemeName": "small"
+            }
+        }
+    ]
 }
 ```
 
