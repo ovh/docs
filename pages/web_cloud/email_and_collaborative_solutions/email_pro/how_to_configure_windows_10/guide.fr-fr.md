@@ -1,5 +1,5 @@
 ---
-title: ‘E-mail Pro - Configurer son compte e-mail sur Courrier pour Windows'
+title: E-mail Pro - Configurer son compte e-mail sur Courrier pour Windows
 excerpt: "Apprenez à configurer un compte E-mail Pro sur l'application Courrier pour Windows"
 updated: 2024-10-09
 ---
