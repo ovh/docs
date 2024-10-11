@@ -1,12 +1,12 @@
 ---
 title: "Activer et utiliser Veeam Managed Backup"
 excerpt: "Découvrez comment activer et utiliser l'option Veeam Managed Backup au sein de l'univers Hosted Private Cloud VMware on OVHcloud"
-updated: 2024-10-10
+updated: 2024-10-11
 ---
 
 ## Objectif
 
-**L'objectof de ce guide est de vous expliquer comment déployer et utiliser l'option Veeam Managed Backup en quelques minutes.**
+**L'objectif de ce guide est de vous expliquer comment déployer et utiliser l'option Veeam Managed Backup en quelques minutes.**
 
 ## Prérequis
 
