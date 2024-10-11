@@ -139,4 +139,34 @@ C'est le contenu de chacun de ses fichiers qui sera nécessaire pour réaliser l
 >
 > Si vous êtes concernés par cette situation et vous éprouvez des difficultés à réaliser ces opérations, contactez votre fournisseur SSL sur le sujet. Précisez-lui  que l'ensemble du contenu qu'il vous a délivré doit être réparti uniquement dans 3 fichiers `certificate.crt`, `ca_bundle.crt` et `private.key` afin que vous puissiez procéder à l'installation du certificat SSL.
 
-### Etape 3 -  <a name="step-3"></a>
+### Etape 3 -  Installer le certificat SSL personnalisé sur votre hébergement web <a name="step-3"></a>
+
+Si vous démarrer directement la lecture de ce guide à cette étape car vous disposiez déjà d'un certificat SSL externe commandé auprès d'un fournisseur SSL, vérifiez que vous disposez bien uniquement des 3 fichiers suivants : `certificate.crt`, `private.key` et `ca_bundle.crt`.
+
+> [!warning]
+>
+> Certains fournisseurs SSL délivrent le contenu des fichiers `certificate.crt` et `ca_bundle.crt` dans un seul et même fichier. Vous devrez séparer le contenu de ce fichier afin de reformer les fichiers `certificate.crt` et `ca_bundle.crt`. Ceci avant de réaliser l'[étape 3](#step-3) de ce guide.
+>
+> D'autres fournisseurs SSL délivrent le fichier `ca_bundle.crt` en plusieurs parties/fichiers. Vous devrez concaténer les contenus de ces fichiers afin de reformer un seul fichier `ca_bundle.crt`. Ceci avant de réaliser l'[étape 3](#step-3) de ce guide.
+>
+> Si vous êtes concernés par cette situation et vous éprouvez des difficultés à réaliser ces opérations, contactez votre fournisseur SSL sur le sujet. Précisez-lui  que l'ensemble du contenu qu'il vous a délivré doit être réparti uniquement dans 3 fichiers `certificate.crt`, `ca_bundle.crt` et `private.key` afin que vous puissiez procéder à l'installation du certificat SSL.
+
+**Avant de finaliser l'installation du certificat SSL sur votre hébergement web**, veillez à ce que **l'ensemble des noms de domaine et/ou sous-domaines** concernés par votre certificat SSL : 
+
+- pointent vers l'adresse IP de votre hébergement web ; 
+- sont déclarés en multiiste sur votre hébergement web.
+
+Si besoin et pour vous en assurer, consultez nos guides « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) » et « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
+
+Dès lors où tous les prérequis ci-dessus sont prêts et vérifiés, vous pourrez commencer la finalisation de l'installation de votre certificat SSL presonnalisé sur votre hébergement web.
+
+Pour cela, vous devrez effectuer les actions suivantes :
+
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
+2. Sur la ligne située en haut de l'espace client, cliquez sur l'onglet `Web Cloud`{.action}.
+3. Dans la colonne de gauche, cliquez sur le menu déroulant `Hébergements`{.action}.
+4. Sélectionnez l'hébergement web concerné.
+5. Sur la page qui s'affiche, restez dans l'onglet `Informations générales`{.action}.
+6. Positionnez-vous dans l'encadré intitulé `Configuration`.
+7. A droite de la mention `Certificat SSL`, cliquez sur le bouton `...`{.action}, puis sur `Commander un certificat SSL`{.action}.
+
