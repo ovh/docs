@@ -97,7 +97,7 @@ KMIP fournit un service compatible avec vCenter et le chiffrement basé sur l'h�
 
 #### Option 1 - Sans OKMS
 
-/// details | Avec un KMS externe (BYOK - non OVHcloud)
+/// details | Avec un KMS externe (BYOK - Non OVHcloud)
 
 > [!warning]
 >
@@ -128,7 +128,7 @@ Ainsi que des paramètres à l'ajout d'un cluster KMS externe :
 
 ///
 
-#### Option 2 - Avec KMS
+#### Option 2 - Avec OKMS
 
 /// details | Avec un KMS OVHcloud (OKMS)
 
