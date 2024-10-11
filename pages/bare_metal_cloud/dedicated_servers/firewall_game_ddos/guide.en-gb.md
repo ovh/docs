@@ -4,6 +4,20 @@ excerpt: "Learn how to configure the OVHcloud Game DDoS Protection firewall"
 updated: 2024-10-24
 ---
 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
 ## Objective
 
 This guide's objective is to help you better understand our Game DDoS Protection (also known as *Game firewall*) and to provide instructions on how to configure effective protection.
@@ -130,7 +144,7 @@ Minecraft is well supported by the following profiles:
 - **Valheim**: New protecion engine, added in the 3rd gen. of Bare Metal Game servers (2024 release). 
 
 > [!primary]
-> If you host a bigger service with one of the supported games, but still observe false positives from Anti-DDoS Infrastructure systems, please reach out to our support using the [Help Centre](https://help.ovhcloud.com/csm?id=csm_get_help) with all the details to tune up the application profile.
+> If you host a bigger service with one of the supported games, but still observe false positives from Anti-DDoS Infrastructure systems, please reach out to our support via the [Help Centre](https://help.ovhcloud.com/csm?id=csm_get_help) with all the details to be able to tune up the application profile. 
 >
 
 ### Using Additional IPs with Game dedicated servers

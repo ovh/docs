@@ -4,6 +4,20 @@ excerpt: "Découvrez comment configurer le OVHcloud Game DDoS Protection firewal
 updated: 2024-10-24
 ---
 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
 ## Objectif
 
 L’objectif de ce guide est de vous aider à mieux comprendre notre protection anti-DDoS Game (également appelée *Game firewall*) et de vous fournir des instructions sur la façon de configurer une protection efficace.
