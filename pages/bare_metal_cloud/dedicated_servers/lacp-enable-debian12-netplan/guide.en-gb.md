@@ -41,7 +41,7 @@ ip a
 
 > [!primary]
 >
-> This command will yield numerous "interfaces." If you are having trouble determining which ones are your physical interfaces, the first interface will still have the server's public IP address attached to it by default.
+> This command will yield numerous interfaces. If you are having trouble determining which ones are your physical interfaces, the first interface will still have the server's public IP address attached to it by default.
 >
 
 Here's an output example: 
