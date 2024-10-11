@@ -38,7 +38,7 @@ Pour plus d'informations sur la facturation Public Cloud, consultez [notre guide
 
 /// details | Comment attacher une instance Public Cloud au Savings Plan que je viens de commander ?
 
-Il n'y a aucune action à effectuer. Toute instance déjà créée (ou prochainement créée) et correspondant au modèle choisi pour votre Savings Plan y sera automatiquement intégrée, sous réserve que la quantité de ressources du Savings Plan ne soit pas épuisée.
+Il n'y a aucune action à effectuer. Toute instance déjà créée (ou prochainement créée) et correspondant au modèle choisi pour votre [Savings Plan](/links/public-cloud/savings-plan) y sera automatiquement intégrée, sous réserve que la quantité de ressources du Savings Plan ne soit pas épuisée.
 
 ///
 
@@ -65,9 +65,9 @@ Non car dès qu'une live-migration de votre instance aura lieu (et cela peut avo
 
 Suivez [ce lien](https://www.linux-kvm.org/page/Nested_Guests#Limitations) pour plus d'informations.
 
-### Connexion à une instance
-
 ///
+
+### Connexion à une instance
 
 /// details | Comment se connecter à une instance Public cloud ?
 
@@ -91,9 +91,9 @@ Afin de pouvoir utiliser les API Horizon ou OpenStack, vous devrez au préalable
 
 Nous vous invitons à consulter le guide [Création et suppression d’un utilisateur OpenStack](/pages/public_cloud/compute/create_and_delete_a_user).
 
-### Sauvegardes
-
 ///
+
+### Sauvegardes
 
 /// details | Est-il possible de sauvegarder mes serveurs Public Cloud ?
 
@@ -113,9 +113,9 @@ Non, un volume doit être détaché avant de pouvoir l'agrandir.
 
 Vous pouvez attacher jusqu'à 25 volumes additionnels par instance.
 
-### Réseau
-
 ///
+
+### Réseau
 
 /// details | Combien d'adresses IPv6 sont livrées avec mon instance ?
 
@@ -152,9 +152,9 @@ Nous vous invitons à consulter le guide de [gestion des règles de firewall et 
 
 Vous trouverez aussi tous les détails sur la [documentation OpenStack](https://docs.openstack.org/developer/dragonflow/specs/mac_spoofing.html) ou sur [superuser.openstack.org](https://superuser.openstack.org/articles/managing-port-level-security-openstack/).
 
-### Sécurité
-
 ///
+
+### Sécurité
 
 /// details | Comment mes serveurs sont-ils sécurisés ?
 
@@ -198,6 +198,6 @@ En effet, le *flag CPU SSBD* n'est pas disponible pour votre instance car il peu
 
 ///
 
-### Aller plus loin
+## Aller plus loin
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
