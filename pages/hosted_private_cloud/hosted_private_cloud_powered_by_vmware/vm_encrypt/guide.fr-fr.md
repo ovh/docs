@@ -160,7 +160,7 @@ Sélectionnez les fichiers de la machine virtuelle et les autres disques durs qu
 
 ![VM encryption storage](images/vm-encrypt_05.png){.thumbnail}
 
-Assurez-vous que les tâches se sont effectuées sans erreur.
+Assurez-vous que les tâches se sont effectuées sans erreurs.
 
 > [!primary]
 >
