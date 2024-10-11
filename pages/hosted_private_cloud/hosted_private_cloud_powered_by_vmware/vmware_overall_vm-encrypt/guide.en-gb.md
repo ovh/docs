@@ -110,7 +110,7 @@ You need to configure KMS on your Hosted Private Cloud VMware on OVHcloud, follo
 
 - [Guide 5 - HPC - Enabling VM encryption with an external KMS](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vm_encrypt)
 
-For this option, we will use in vSphere a **Standard Key Provider**
+For this option, we will use a **Standard Key Provider** in vSphere.
 
 ![Standard Key Provider](images/key_provider.png){.thumbnail}
 
@@ -140,7 +140,7 @@ Once you have ordered and activated your KMS with your Hosted Private Cloud, you
 
 - [Guide 2 - HPC - Enable VM encryption with OKMS](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_okms_vm-encrypt#add-okms)
 
-For this option, we will use in vSphere a **Standard Key Provider**
+For this option, we will use a **Standard Key Provider** in vSphere.
 
 ![Standard Key Provider](images/key_provider.png){.thumbnail}
 
@@ -169,7 +169,7 @@ This solution is convenient if you do not have an external KMS and you do not wa
 
 **How do I enable VM encryption with vNKP**?
 
-If you don't want the advantages of OVHcloud KMS (OKMS) and you still want to enable VM encryption, you can do this by adding in vSphere a **Native Key Provider**
+If you don't want the advantages of OVHcloud KMS (OKMS) and you still want to enable VM encryption, you can do this by adding a **Native Key Provider** in vSphere.
 
 ![Native Key Provider](images/key_provider_native.png){.thumbnail}
 
