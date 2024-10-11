@@ -1,7 +1,7 @@
 ---
 title: 'Comment configurer un lien 4G sur OverTheBox?'
 excerpt: "Découvrez comment ajouter un lien 4G afin d'améliorer la performances de votre OverTheBox"
-updated: 2024-10-04
+updated: 2024-10-11
 ---
 
 ## Objectif
@@ -33,6 +33,8 @@ Le port de la carte SIM se trouve sous le module à l’intérieur du boîtier.
 > - Vérifier que le boitier est éteint et que son alimentation est **débranchée**.
 > - Vous munir d'un tournevis cruciforme.
 >
+
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/eSX1XWrMHPY?si=_6zsyN5hkkbnC9fN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 > [!tabs]
 > Étape 1
