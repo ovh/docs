@@ -51,6 +51,10 @@ Avant de débuter la configuration de vos comptes e-mail Zimbra, prenez connaiss
 - [**Nom de domaine**](#domains) : il est indispensable pour créer un compte e-mail. Vous devez en gérer au moins un depuis votre espace client OVHcloud et l'ajouter sur votre service Zimbra.
 - [**Comptes e-mail**](#emails) : en utilisant les noms de domaines ajoutés à votre service Zimbra, vous pourrez créer une adresse e-mail.
 
+> [!primary]
+>
+> L'*organisation* sert à représenter une entité (une entreprise, une association, un projet personnel, etc.). Elle permet le cloisonnement des comptes e-mail, l'application de politiques de sécurité spécifiques (fonctionnalité à venir) et de déléguer les droits à une organisation (fonctionnalité à venir). L'utilisation d'organisations permet de faciliter la navigation dans votre plateforme Zimbra ainsi que sa gestion.
+
 Le schéma ci-dessous résume le lien hiérarchique entre les éléments précédemment cités.
 
 ![zimbra](images/zimbra_organization.png){.thumbnail .w-400}
