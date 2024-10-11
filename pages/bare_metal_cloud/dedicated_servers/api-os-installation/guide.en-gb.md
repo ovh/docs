@@ -1,7 +1,7 @@
 ---
 title: OVHcloud API and OS Installation
 excerpt: Use OVHcloud API to install or re-install an OS on your dedicated server
-updated: 2024-10-16
+updated: 2024-10-22
 ---
 
 ## Objective
@@ -164,86 +164,13 @@ Each question has the following attributes:
 
 ¹ If a mandatory question without default value is not answered, the API will return an error.
 
-### Disk Groups <a name="disk-group"></a>
-
-Some [dedicated servers](/links/bare-metal/bare-metal) have multiple groups of disks. For example, one group with SATA disks and another group with SSD disks. Those servers are sometimes also called **hybrid servers**.
-
-To list the disk groups and their disks, you can use the following API call in order to identify the disk group on which you want the OS to be installed:
-
-> [!api]
->
-> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/specifications/hardware
->
-
-Example reply:
-
-```json
-{
-  "bootMode": "uefi",
-  "defaultHardwareRaidSize": null,
-  "description": "SCALE-7 - AMD Epyc 7763",
-  "expansionCards": null,
-  "threadsPerProcessor": 128,
-  "memorySize": {
-    "unit": "MB",
-    "value": 524288
-  },
-  "defaultHardwareRaidType": null,
-  "diskGroups": [
-    {
-      "defaultHardwareRaidType": null,
-      "numberOfDisks": 2,
-      "diskGroupId": 1,
-      "diskType": "SSD",
-      "defaultHardwareRaidSize": null,
-      "diskSize": {
-        "unit": "GB",
-        "value": 480
-      },
-      "description": "2 X Disk SSD 480 GB, JBOD",
-      "raidController": null
-    },
-    {
-      "defaultHardwareRaidType": null,
-      "numberOfDisks": 2,
-      "diskGroupId": 2,
-      "diskType": "NVME",
-      "defaultHardwareRaidSize": null,
-      "diskSize": {
-        "unit": "GB",
-        "value": 1920
-      },
-      "raidController": null,
-      "description": "2 X Disk NVME 1920 GB, JBOD"
-    }
-  ],
-  "processorArchitecture": "x86_64",
-  "coresPerProcessor": 64,
-  "processorName": "Epyc7763",
-  "formFactor": "1u",
-  "motherboard": "S8036-M",
-  "numberOfProcessors": 1,
-  "usbKeys": null
-}
-```
-
-In this example, there are 2 disk groups:
-
-- the first one (diskGroupId=1) contains 2 x 480 GB disks.
-- the second one (diskGroupId=2) contains 2 x 1,9 TB disks.
-
-> [!primary]
->
-> By default, the OS will be installed on diskGroupId 1.
->
-
 ### Create an OS installation task <a name="install-task"></a>
 
 When you have gathered all the information that you need, you can create the OS installation task with the following API call:
 
 > [!api]
 >
-> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/install/start
+> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/reinstall
 >
 
 With the following parameters:
@@ -251,15 +178,16 @@ With the following parameters:
 |Parameter|Value|Required|
 |---|---|---|
 |serviceName|Server name|✅|
-|templateName|OS to install|✅|
-|diskGroupId|Id of the disk group on which the OS will be installed|❌|
-|customHostname|Custom hostname|❌|
-|userMetadata|Answers to the OS specific questions|❌|
+|operatingSystem|OS to install|✅|
+|customizations|OS reinstallation customizations|⚠️¹|
+|storage|OS reinstallation storage configurations|❌|
+|properties|Arbitrary properties to pass to cloud-init's config drive datasource|❌|
 
-`userMetadata` contains a list of key/value with the answers to the OS-specific questions:
+¹ Operating system specific, some customization(s) might be required on some operating systems.
 
-- Key must be the `name` of the question.
-- Value must be the answer to the question, in the requested `type`.
+`customizations` contains a hash with the answers to the OS-specific questions: hash key is the `name` of the question and its value is the answer to that question, in the requested `type`.
+
+`storage` contains customization related to disks & hardware RAID, partitions, software RAID, LVM, ZFS, etc. See [OVHcloud API & Partitioning](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh) for more details.
 
 #### Linux payload example
 
@@ -267,20 +195,11 @@ The following payload will install Debian 12 (Bookworm) with SSH key-based authe
 
 ```json
 {
-  "details": {
-    "customHostname": "mon-tux"
-  },
-  "templateName": "debian12_64",
-  "userMetadata": [
-    {
-      "key": "sshKey",
-      "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQC9xPpdqP3sx2H+gcBm65tJEaUbuifQ1uGkgrWtNY0PRKNNPdy+3yoVOtxk6Vjo4YZ0EU/JhmQfnrK7X7Q5vhqYxmozi0LiTRt0BxgqHJ+4hWTWMIOgr+C2jLx7ZsCReRk+fy5AHr6h0PHQEuXVLXeUy/TDyuY2JPtUZ5jcqvLYgQ== my-nuclear-power-plant"
-    },
-    {
-      "key": "postInstallationScript",
-      "value": "IyEvYmluL2Jhc2gKZWNobyAiY291Y291IHBvc3RJbnN0YWxsYXRpb25TY3JpcHQiID4gL29wdC9jb3Vjb3UKY2F0IC9ldGMvbWFjaGluZS1pZCAgPj4gL29wdC9jb3Vjb3UKZGF0ZSAiKyVZLSVtLSVkICVIOiVNOiVTIiAtLXV0YyA+PiAvb3B0L2NvdWNvdQo="
-    }
-  ]
+  "operatingSystem": "debian12_64",
+  "customizations": {
+    "sshKey": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQC9xPpdqP3sx2H+gcBm65tJEaUbuifQ1uGkgrWtNY0PRKNNPdy+3yoVOtxk6Vjo4YZ0EU/JhmQfnrK7X7Q5vhqYxmozi0LiTRt0BxgqHJ+4hWTWMIOgr+C2jLx7ZsCReRk+fy5AHr6h0PHQEuXVLXeUy/TDyuY2JPtUZ5jcqvLYgQ== my-nuclear-power-plant",
+    "postInstallationScript": "IyEvYmluL2Jhc2gKZWNobyAiY291Y291IHBvc3RJbnN0YWxsYXRpb25TY3JpcHQiID4gL29wdC9jb3Vjb3UKY2F0IC9ldGMvbWFjaGluZS1pZCAgPj4gL29wdC9jb3Vjb3UKZGF0ZSAiKyVZLSVtLSVkICVIOiVNOiVTIiAtLXV0YyA+PiAvb3B0L2NvdWNvdQo="
+  }
 }
 ```
 
@@ -310,20 +229,11 @@ The following payload will install Windows Server 2022 Standard (Core) in French
 
 ```json
 {
-  "details": {
-    "customHostname": "ma-fenetre"
-  },
-  "templateName": "win2022core-std_64",
-  "userMetadata": [
-    {
-      "key": "language",
-      "value": "fr-fr"
-    },
-    {
-      "key": "postInstallationScript",
-      "value": "ImNvdWNvdSBwb3N0SW5zdGFsbGF0aW9uU2NyaXB0UG93ZXJTaGVsbCIgfCBPdXQtRmlsZSAtRmlsZVBhdGggImM6XG92aHVwZFxzY3JpcHRcY291Y291LnR4dCIKKEdldC1JdGVtUHJvcGVydHkgLUxpdGVyYWxQYXRoICJSZWdpc3RyeTo6SEtMTVxTT0ZUV0FSRVxNaWNyb3NvZnRcQ3J5cHRvZ3JhcGh5IiAtTmFtZSAiTWFjaGluZUd1aWQiKS5NYWNoaW5lR3VpZCB8IE91dC1GaWxlIC1GaWxlUGF0aCAiYzpcb3ZodXBkXHNjcmlwdFxjb3Vjb3UudHh0IiAtQXBwZW5kCihHZXQtRGF0ZSkuVG9Vbml2ZXJzYWxUaW1lKCkuVG9TdHJpbmcoInl5eXktTU0tZGQgSEg6bW06c3MiKSB8IE91dC1GaWxlIC1GaWxlUGF0aCAiYzpcb3ZodXBkXHNjcmlwdFxjb3Vjb3UudHh0IiAtQXBwZW5kCg=="
-    }
-  ]
+  "operatingSystem": "win2022core-std_64",
+  "customizations": {
+    "language": "fr-fr",
+    "postInstallationScript": "ImNvdWNvdSBwb3N0SW5zdGFsbGF0aW9uU2NyaXB0UG93ZXJTaGVsbCIgfCBPdXQtRmlsZSAtRmlsZVBhdGggImM6XG92aHVwZFxzY3JpcHRcY291Y291LnR4dCIKKEdldC1JdGVtUHJvcGVydHkgLUxpdGVyYWxQYXRoICJSZWdpc3RyeTo6SEtMTVxTT0ZUV0FSRVxNaWNyb3NvZnRcQ3J5cHRvZ3JhcGh5IiAtTmFtZSAiTWFjaGluZUd1aWQiKS5NYWNoaW5lR3VpZCB8IE91dC1GaWxlIC1GaWxlUGF0aCAiYzpcb3ZodXBkXHNjcmlwdFxjb3Vjb3UudHh0IiAtQXBwZW5kCihHZXQtRGF0ZSkuVG9Vbml2ZXJzYWxUaW1lKCkuVG9TdHJpbmcoInl5eXktTU0tZGQgSEg6bW06c3MiKSB8IE91dC1GaWxlIC1GaWxlUGF0aCAiYzpcb3ZodXBkXHNjcmlwdFxjb3Vjb3UudHh0IiAtQXBwZW5kCg=="
+  }
 }
 ```
 
@@ -345,7 +255,7 @@ As you can see, this PowerShell script for Windows is equivalent to the previous
 
 > [!primary]
 >
-> For Windows OS, you can provide PowerShell or batch scripts. If you want to provide a batch script, please provide `cmd` value to key `postInstallationScriptExtension` in the `userMetadata` payload.
+> For Windows OS, you can provide PowerShell or batch scripts. If you want to provide a batch script, please provide `cmd` value to key `postInstallationScriptExtension` in the `customizations` section.
 >
 
 While running Windows post-installation script, the following files while remain:
@@ -363,17 +273,11 @@ While running Windows post-installation script, the following files while remain
 ```json
 {
     "taskId": 123456789,
-    "ticketReference": null,
-    "lastUpdate": "2024-01-26T17:57:10+01:00",
-    "needSchedule": false,
-    "startDate": "2024-01-26T17:57:10+01:00",
     "status": "init",
+    "startDate": "2024-01-26T17:57:10+01:00",
     "doneDate": null,
-    "tags": null,
-    "comment": "Start dedicated server installation",
-    "plannedInterventionId": null,
-    "note": null,
-    "function": "reinstallServer"
+    "function": "reinstallServer",
+    "comment": "Start bare metal OS installation"
 }
 ```
 
