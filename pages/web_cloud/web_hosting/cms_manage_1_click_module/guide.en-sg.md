@@ -1,7 +1,7 @@
 ---
 title: "How to manage your 1-click module"
 excerpt: "Find out how to manage your 1-click module in the OVHcloud Control Panel"
-updated: 2022-09-05
+updated: 2024-10-11
 ---
 
 ## Objective
@@ -49,42 +49,9 @@ You can also search for the email received after the creation of your module fro
 
 ### Change your module password <a name="password-change"></a>
 
-You can change the administrator password of your module via the [OVHcloud Control Panel](/links/manager) or by going directly to the login page of your website’s admin interface.
-In both cases, you will receive an email containing a link to reset your password.
-
 > [!primary]
 >
-> **What can you do if you did not receive the email to reset the admin password of your website?**
->
-> Check the `Spam`{.action} and `Trash`{.action} folders in your mailbox.
->
-> You can also view all emails sent by our services from your [OVHcloud Control Panel](/links/manager): click on your name in the top right-hand corner of the screen then, in the context menu, click on `Service emails`{.action}.
->
-> **Link validity period:**
->
-> - After receiving the password change email, the reset link will remain valid for 48 hours. 
-> - Once you click on this link, it will be valid for 30 minutes.
->
-
-> [!warning]
->
-> You can change the password for accessing your CMS admin interface via the OVHcloud Control Panel **only if the following conditions are met**:
->
-> - The CMS was installed with the "1-click module" option when you ordered your hosting package or from the OVHcloud Control Panel.
-> - The user (username, email address, etc.) has not been modified via the CMS or the database.
-> - The access page for your CMS administration interface has not been modified. In particular, the URL for accessing your CMS administration interface must not have been modified via the CMS. Restrictions on this same page should not be in place.
-> - The "prefix" of the tables in your database has not been modified from the CMS or the database directly.
->
-> Otherwise, you will need to follow the official documentation for the CMS you are using, or contact the CMS publisher directly.
->
-
-To change the password of your website’s administration interface **via the OVHcloud Control Panel**, click on `Web Cloud`{.action}, `Hosting`{.action}, the concerned hosting plan then on the `1-click modules`{.action} tab.
-
-Then, click on the `...`{.action} button to the right of the line related to your module, then on `Modify password`{.action} and on `Confirm`{.action}. You will receive an email with a password reset link within a few minutes.
-
-> [!primary]
->
-> If you cannot change your password for accessing your CMS administration interface from the OVHcloud Control Panel for the reasons listed above, you will find the official documentation below for the different CMSs offered for installation on our shared hosting plans:
+> You will find the official documentation below for the different CMSs offered for installation on our shared hosting plans:
 >
 > - WordPress : <https://wordpress.org/support/article/resetting-your-password/>
 > - Joomla! : <https://docs.joomla.org/How_do_you_recover_or_reset_your_admin_password%3F>

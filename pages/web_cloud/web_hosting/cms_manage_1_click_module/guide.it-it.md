@@ -1,7 +1,7 @@
 ---
 title: "Come gestire il tuo modulo in 1 click?"
 excerpt: "Questa guida ti mostra come gestire il tuo modulo in 1 click dallo Spazio Cliente OVHcloud"
-updated: 2022-09-05
+updated: 2024-10-11
 ---
 
 > [!primary]
@@ -54,42 +54,9 @@ Puoi anche ricercare l'email ricevuta durante la creazione del tuo modulo dal tu
 
 ### Modifica la password del tuo modulo <a name="password-change"></a>
 
-È possibile modificare la password del modulo dallo Spazio Cliente OVHcloud o accedendo direttamente alla pagina di connessione allo Spazio Cliente.
-In entrambi i casi, riceverai un'email di reimpostazione della password.
-
 > [!primary]
 >
-> **Cosa fare se non hai ricevuto l'email di reimpostazione della password amministratore del tuo sito?**
->
-> Nella casella di posta corrispondente, controlla le cartelle `Spam`{.action} e `Corbeille`{.action}.
->
-> Tutte le email inviate dai nostri servizi sono disponibili nello [Spazio Cliente OVHcloud](/links/manager): clicca sul nome in alto a destra dello schermo e, nel menu contestuale a destra dello schermo, clicca su `Email di servizio`{.action}.
->
-> **Durata di validità dei collegamenti:**
->
-> - Dopo aver ricevuto l'email di modifica della password, il link di reimpostazione resterà valido per 48 ore. 
-> - Dopo aver cliccato sul link, questo è valido solo per 30 minuti.
->
-
-> [!warning]
->
-> Per modificare la password di accesso all'interfaccia di amministrazione del tuo CMS dallo Spazio Cliente OVHcloud è possibile utilizzare **solo se vengono rispettate le seguenti condizioni**:
->
-> - Il CMS è stato installato utilizzando l'opzione "Modulo in 1 click" durante l'ordine del tuo hosting o dallo Spazio Cliente OVHcloud.
-> - L'utente (nome utente, indirizzo email, ecc...) non è stato modificato tramite il CMS o il database.
-> - La pagina di accesso all'interfaccia di amministrazione del tuo CMS non è stata modificata. In particolare, l'URL di accesso all'interfaccia di amministrazione del tuo CMS non deve essere stato modificato tramite il CMS. Non devono essere state introdotte restrizioni sulla stessa pagina.
-> - Il "prefisso" delle tabelle presenti nel tuo database non è stato modificato dal CMS o direttamente dal database.
->
-> In caso contrario, segui la documentazione ufficiale del CMS che utilizzi o contatta direttamente il fornitore del CMS. 
->
-
-Per modificare la password di accesso all'interfaccia di gestione del tuo sito **attraverso lo Spazio Cliente OVHcloud**, accedi al tuo [Spazio Cliente OVHcloud](/links/manager), clicca su `Web Cloud`{.action}, `Hosting`{.action}, sul tuo hosting e poi sulla scheda `CMS in 1 click`{.action}.
-
-Clicca sui tre puntini `...`{.action} a destra della riga relativa al tuo modulo e poi su `Modifica la password`{.action}. Clicca su `Conferma`{.action}. Riceverai entro pochi minuti un link per reimpostare la password.
-
-> [!primary]
->
-> Se non è possibile modificare la password di accesso all'interfaccia di gestione del tuo CMS dallo Spazio Cliente OVHcloud per i motivi citati in precedenza, consulta la documentazione ufficiale dei diversi CMS disponibili sull'hosting condiviso:
+> Consulta la documentazione ufficiale dei diversi CMS disponibili sull'hosting condiviso:
 >
 > - WordPress : <https://wordpress.org/support/article/resetting-your-password/>
 > - Joomla! : <https://docs.joomla.org/How_do_you_recover_or_reset_your_admin_password%3F>
