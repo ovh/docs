@@ -112,7 +112,7 @@ Il vous faut configurer KMS sur votre Hosted Private Cloud VMware on OVHcloud, e
 
 - « [Guide 5 - HPC - Activation du chiffrement de VM avec un KMS externe](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vm_encrypt) »
 
-Nous utiliserons pour L'option d'un **Fournisseur de clé standard** dans vSphere :
+Nous utiliserons pour cette option un **Fournisseur de clé standard** dans vSphere :
 
 ![Standard Key Provider](images/key_provider.png){.thumbnail}
 
