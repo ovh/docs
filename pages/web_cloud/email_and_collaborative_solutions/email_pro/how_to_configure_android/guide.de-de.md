@@ -1,5 +1,5 @@
 ---
-title: "E-mail Pro - Konfiguration eines E-Mail-Accounts in Gmail für Android"
+title: "E-Mail Pro - Konfiguration eines E-Mail-Accounts in Gmail für Android"
 excerpt: "Erfahren Sie hier, wie Sie einen E-Mail Pro Account in Android über die Gmail-App einrichten"
 updated: 2024-10-09
 ---

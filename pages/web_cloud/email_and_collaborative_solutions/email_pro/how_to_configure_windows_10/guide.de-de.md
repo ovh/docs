@@ -1,5 +1,5 @@
 ---
-title: 'E-mail Pro - Konfiguration Ihrer E-Mail-Adresse in Windows Mail App'
+title: 'E-Mail Pro - Konfiguration Ihrer E-Mail-Adresse in Windows Mail App'
 excerpt: 'Erfahren Sie hier, wie Sie Ihren E-Mail Pro Account auf der Mail App von Windows einrichten'
 updated: 2024-10-09
 ---
