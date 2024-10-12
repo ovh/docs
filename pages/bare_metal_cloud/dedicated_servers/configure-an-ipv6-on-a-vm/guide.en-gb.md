@@ -158,7 +158,7 @@ Select the adapter with the server’s IP, then tick the option `Allow managemen
 
 Next, go to the settings of the VM and click on `Network Adapter`{.action} in the left-hand tab. From the drop down list, select the virtual switch created above and click on `Apply`{.action}, then on `OK`{.action}.
 
-![virtual switch](images/virtual_switch.png){.thumbnail}
+![virtual switch](images/virtual_switch_1.png){.thumbnail}
 
 Once you have installed the operating system on the virtual machine, you can proceed with the [configuration](#configurationsteps) of the IPv6 IP address.
 

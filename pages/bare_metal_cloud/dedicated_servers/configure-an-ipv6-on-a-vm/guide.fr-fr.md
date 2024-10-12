@@ -156,7 +156,7 @@ Sélectionnez l'adaptateur avec l'adresse IP du serveur, puis cochez `Autoriser 
 
 Ensuite, allez dans les paramètres de la VM et cliquez sur `Network Adapter`{.action} dans l'onglet de gauche. Dans la liste déroulante, sélectionnez le commutateur virtuel créé ci-dessus et cliquez sur `Appliquer`{.action}, puis sur `OK`{.action}.
 
-![virtual switch](images/virtual_switch.png){.thumbnail}
+![virtual switch](images/virtual_switch_1.png){.thumbnail}
 
 Une fois le système d'exploitation installé sur la machine virtuelle, vous pouvez procéder à la [configuration](#configurationsteps) de l'adresse IPv6.
 
