@@ -1,7 +1,7 @@
 ---
 title: "Aktywacja kont e-mail zawartych w hostingu"
 excerpt: "Dowiedz się, jak aktywować konta e-mail zawarte w hostingu"
-updated: 2024-07-17
+updated: 2024-10-01
 ---
 
 > [!primary]

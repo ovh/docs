@@ -1,6 +1,6 @@
 ---
-title: Den Versand von E-Mails optimieren
-excerpt: Erfahren Sie hier, wie Sie das Spam-Risiko reduzieren, wenn Sie E-Mails versenden 
+title: Optimierung des E-Mail-Versands, damit Ihre E-Mails nicht als Spam markiert werden
+excerpt: Erfahren Sie hier, wie Sie mit vorbeugenden Maßnahmen das Risiko minimieren, dass Ihre legitimen E-Mails durch Spam-Schutz blockiert werden
 updated: 2024-01-24
 ---
 
@@ -61,45 +61,17 @@ Domain-based Message Authentication, Reporting and Conformance (DMARC) ist ein S
 
 Weitere Informationen finden Sie in unserer [Anleitung zum Konfigurieren eines DMARC-Eintrags](/pages/web_cloud/domains/dns_zone_dmarc).
 
-### *Reverse IP* konfigurieren <a name="reverseip"></a>
+### *Reverse* IP-Auflösung konfigurieren <a name="reverseip"></a>
 
-Um den Versand zu optimieren und das Risiko einer Blockierung Ihrer E-Mails zu verringern, muss ein IP-*Reverse*-Eintrag für Ihren Domainnamen konfiguriert werden.
+Um das Senden von E-Mails weiter zu optimieren und das Risiko einer Blockierung Ihrer E-Mails zu verringern, können Sie auch den *Reverse* DNS-Pfad (PTR-Eintrag) mit Ihrem Domainnamen konfigurieren.
 
 Erstellen Sie zunächst einen A-Eintrag in der DNS-Zone Ihres Domainnamens mit der IP-Adresse Ihres Servers als Ziel.
 
-Wenn Ihre DNS-Server von OVHcloud verwaltet werden, Sie dazu unsere [Anleitung zur Bearbeitung der OVHcloud DNS-Zone über Ihr Kundencenter](/pages/web_cloud/domains/dns_zone_edit).
+Wenn Ihr Domainname DNS-Server von OVHcloud verwendet, können Sie dazu unsere [Anleitung zur Bearbeitung der OVHcloud DNS-Zone über Ihr Kundencenter](/pages/web_cloud/domains/dns_zone_edit) befolgen.
 
 Nach der Änderung der DNS-Zone Ihres Domainnamens ist eine Propagationszeit von maximal 24 Stunden erforderlich, bis die Änderungen wirksam sind.
 
-Anschließend fügen Sie den PTR-Eintrag (auch *Reverse* genannt) hinzu:
-
-Gehen Sie in Ihrem [OVHcloud Kundencenter](/links/manager){.external} auf den Tab `Bare Metal Cloud`{.action} und öffnen Sie `Network`{.action}. Klicken Sie dann auf `IP`{.action}.
-
-Wenn Sie den *Reverse DNS* auf eine Additional IP-Adresse konfigurieren möchten, klicken Sie auf den Tab `Additional IP`{.action}.
-
-Das Dropdown-Menü unter "**Meine öffentlichen IP-Adressen und dazugehörigen Dienste**" erlaubt es Ihnen, Ihre Dienste nach Kategorie zu filtern.
-
-![IP Reverse](images/filteripds.png){.thumbnail}
-
-Klicken Sie auf den Button `...`{.action} rechts neben der entsprechenden Zeile und dann auf `Reverse ändern`{.action}:
-
-![IP Reverse](images/addreverse2022.png){.thumbnail}
-
-
-Geben Sie Ihren Domainnamen in den Bereich `Reverse` ein und klicken Sie auf `Bestätigen`{.action}.
-
-![IP Reverse](images/enterreverse.png){.thumbnail}
-
-> [!primary]
-> Wenn Sie Ihren Domainnamen als *Reverse* eingeben, wird sofort überprüft, ob der A-Eintrag auf dieselbe IP verweist. Dies wird bei Anti-Spam-Verfahren verwendet, daher muss Ihr A-Eintrag gültig sein und propagiert werden. Bei der Eingabe des *Reverse* sind bestimmte Regeln zu beachten:
->
->  - Der *Reverse* darf nicht mit einem `-` beginnen.
->  - Der *Reverse* darf höchstens 80 Zeichen enthalten.
->  - Der *Reverse* darf keine Großbuchstaben enthalten.
->  - Der *Reverse* muss mit einem `.` enden.
->
-> Beispiel: Für "domain.tld" wäre der *Reverse*: **domain.tld.**
->
+Alle Informationen zur Konfiguration des *Reverse* DNS-Pfads im [OVHcloud Kundencenter](/links/manager) finden Sie in [unserer Anleitung](/pages/bare_metal_cloud/virtual_private_servers/configuring-reverse-dns).
 
 ### Sonderfälle beim Versand von E-Mails
 
@@ -131,7 +103,7 @@ Bestätigen Sie die Angaben, um die Einrichtung von JMRP/SNDS abzuschließen.
 
 Wenn Ihre IP-Adresse nach Abschluss der Aktionen als gesperrt erscheint, können Sie das [Junkmail-Verfahren](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&locale=en-us&ccsid=635857671692853062) verwenden, um eine Entfernung von der Blacklist zu beantragen. Das Verfahren dauert in der Regel 48 Stunden.
 
-Microsoft wird Sie möglicherweise nach dem Datum der ersten Abrechnung Ihres Servers oder Ihrer IP-Adressen fragen. Senden Sie in diesem Fall Microsoft eine Kopie Ihrer Rechnung zu und geben Sie relevante IPs und Servernamen an (z.B.: Host ns3956771.ip-169-254-10.eu).
+Microsoft wird Sie möglicherweise nach dem Datum der ersten Abrechnung Ihres Servers oder Ihrer IP-Adressen fragen. Senden Sie in diesem Fall Microsoft eine Kopie Ihrer Rechnung zu und geben Sie relevante IPs und Servernamen an (z.B.: Hostname ns1111111.ip-203-0-113.eu).
 
 Für mehr Informationen hierzu können Sie bei Microsoft eine [Support-Anfrage erstellen](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&ccsid=6364926882037750656).
 

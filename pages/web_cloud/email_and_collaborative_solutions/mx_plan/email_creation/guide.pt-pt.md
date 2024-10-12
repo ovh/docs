@@ -16,7 +16,7 @@ Adquiriu um serviço de e-mail MX Plan. que lhe permite beneficiar de endereços
 
 ## Requisitos
 
-- Ter uma oferta MX Plan (incluída num plano de [alojamento web](/links/web/hosting), num [Alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/) ou disponível em separado).
+- Ter uma oferta MX Plan (incluída num plano de [alojamento web](/links/web/hosting), num [Alojamento gratuito 100M](/links/web/domains-free-hosting) ou disponível em separado).
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager), na secção `Web Cloud`{.action}.
 
 > [!primary]
@@ -79,7 +79,7 @@ Para consultar os seus e-mails a partir de um software de correio eletrónico, c
 
 #### Eliminar uma conta de e-mail
 
-A partir da nova versão MXplan, fala-se de *reinicialização de conta* quando tem de a eliminar.
+A partir da nova versão MX Plan, fala-se de *reinicialização de conta* quando tem de a eliminar.
 
 > [!warning]
 >

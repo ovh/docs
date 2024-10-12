@@ -1,7 +1,7 @@
 ---
 title: "MX Plan - Configuring an email address in Gmail for Android"
 excerpt: "Find out how to configure an MX Plan email address on Android, via the Gmail app"
-updated: 2023-12-15
+updated: 2024-10-01
 ---
 
 <style>
@@ -12,7 +12,7 @@ updated: 2023-12-15
 
 ## Objective
 
-You can configure MX Plan email addresses on email clients, if they are compatible. By doing so, you can use your email address through your preferred device. In this guide, we will detail the process of configuring an MXplan email address in the Gmail application on Android devices.
+You can configure MX Plan email addresses on email clients, if they are compatible. By doing so, you can use your email address through your preferred device. In this guide, we will detail the process of configuring an MX Plan email address in the Gmail application on Android devices.
 
 **Find out how to configure an MX Plan email address on Android, via the Gmail app.**
 
@@ -20,11 +20,11 @@ You can configure MX Plan email addresses on email clients, if they are compatib
 >
 > OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> We have provided you with this guide in order to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/asia/directory/) and/or the service’s publisher if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
+> We have provided you with this guide in order to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) and/or the service’s publisher if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
 
 ## Requirements
 
-- an MX Plan email address (included in the MX Plan solution, or in an [OVHcloud web hosting plan](https://www.ovhcloud.com/asia/web-hosting/)).
+- an MX Plan email address (included in the MX Plan solution, or in an [OVHcloud web hosting plan](/links/web/hosting)).
 - You need to have the Gmail app installed on your device. You can install it from the Google Play Store if it is not already present.
 - the required credentials for the email address you would like to configure
 
@@ -105,7 +105,7 @@ Once you have configured your email address, you can start using it! You can now
 
 > [!success]
 >
-> OVHcloud offers a web application that allows you to access your email address from a web browser, at <https://www.ovhcloud.com/asia/mail/>. You can log in using your email credentials.
+> OVHcloud offers a web application that allows you to access your email address from a web browser, at [Webmail](/links/web/email). You can log in using your email credentials.
 
 ### POP, IMAP and SMTP settings
 
@@ -168,5 +168,9 @@ To understand the difference between POP and IMAP, we will break down the elemen
 > This description is a summary, it represents the standard operation of these two protocols. You can configure the POP so that emails are not deleted when you check your emails. The goal here is to describe how these two protocols work natively and avoid any additional steps to match your needs.
 
 ## Go further
+
+> [!primary]
+>
+> For more information on setting up an email address from the Gmail app on Android, see the [Google Help Center](https://support.google.com/mail/answer/21289?hl=en&co=GENIE.Platform%3DAndroid&oco=1#zippy=%2Cadd-an-account).
 
 Join our community of users on <https://community.ovh.com/en/>.

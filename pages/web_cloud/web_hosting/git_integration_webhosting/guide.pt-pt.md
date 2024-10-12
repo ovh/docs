@@ -1,7 +1,7 @@
 ---
 title: "Configurar e utilizar o Git com o seu alojamento web OVHcloud"
 excerpt: "Saiba como configurar e utilizar o Git com o seu alojamento web na sua Área de Cliente OVHcloud"
-updated: 2024-08-22
+updated: 2024-09-12
 ---
 
 > [!primary]
@@ -19,6 +19,10 @@ No atual panorama digital, as empresas estão a tornar-se cada vez mais dinâmic
 - Ter um serviço de [alojamento web OVHcloud](/links/web/hosting).
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager), na secção Web Cloud.
 - Ter uma conta [GitHub](https://github.com/){.external} e ter acesso à mesma.
+
+> [!primary]
+>
+> À data, apenas a plataforma GitHub é suportada no âmbito da utilização com os serviços de alojamento Web da OVHcloud.
 
 ## Instruções
 
@@ -132,7 +136,7 @@ Depois de validar o formulário de associação do Git, será redirecionado para
 
 Um banner verde indica que o Git está sendo ativado. Siga a ativação do Git ao clicar no link `Tarefas em curso`{.action}.
 
-![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/ongoing-task-git-activation.png){.thumbnail}
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ongoing-tasks/ongoing-task-git-activation.png){.thumbnail}
 
 O estado `Em curso`{.action} indica que a associação do Git está em curso. O processo pode demorar alguns minutos. Quando a tarefa estiver concluída, o estado `Ativado`{.action} é apresentado.
 

@@ -1,7 +1,7 @@
 ---
-title: "Hosting: jak zmienić ofertę?"
+title: "Hosting WWW - Jak zmienić ofertę"
 excerpt: "Dowiedz się, jak zmienić formułę abonamentu na hosting OVHcloud"
-updated: 2023-09-19
+updated: 2024-10-03
 ---
 
 > [!primary]
@@ -169,17 +169,30 @@ Jeśli opcja **Boost** odpowiada Twoim potrzebom, poniżej znajdziesz instrukcje
 
 ### Płatności w przypadku zmiany oferty <a name="billing"></a>
 
-Jeśli zmienisz początkową ofertę na wyższą, do kolejnej daty odnowienia początkowej subskrypcji zostanie zastosowana zasada pro rata temporis*.
+**Przypadek 1**: Jeśli zmienisz początkową ofertę na wyższą, do kolejnej daty odnowienia początkowej subskrypcji zostanie zastosowana zasada pro rata temporis*.
 Obliczenie to stanowi różnicę w cenie między Twoją ofertą początkową a nową ofertą.
 
 > **Przykład:**<br>
 >
-> Zamówiłeś abonament [Perso](/links/web/hosting-personal-offer) od 1 stycznia 2022.
+> Zamówiłeś abonament [Perso](/links/web/hosting-personal-offer) od 1 stycznia 2024.
 >
-> 31 października 2022 zmienisz abonament z tej oferty **Perso** na ofertę [Pro](/links/web/hosting-professional-offer).<br>
+> 31 października 2024 zmienisz abonament z tej oferty **Perso** na ofertę [Pro](/links/web/hosting-professional-offer).<br>
 >
-> W związku z tym kwota za pozostały okres abonamentu **Perso** (2 miesiące, od 1 listopada 2022 do 1 stycznia 2023) jest automatycznie odliczana od kosztu nowego abonamentu **Pro**, do 1 stycznia 2023. Zapłacisz tylko za różnicę.
-> Od dnia 1 stycznia 2023 r. abonament **Pro** będzie fakturowany zgodnie z obowiązującym cennikiem.
+> W związku z tym kwota za pozostały okres abonamentu **Perso** (2 miesiące, od 1 listopada 2024 do 1 stycznia 2025) jest automatycznie odliczana od kosztu nowego abonamentu **Pro**, do 1 stycznia 2025. Zapłacisz tylko za różnicę.
+> Od dnia 1 stycznia 2025 r. abonament **Pro** będzie fakturowany zgodnie z obowiązującym cennikiem.
+
+Postępuj zgodnie z [tymi instrukcjami](#modify), aby zmienić ofertę.
+
+**Przypadek 2**: Zmiana oferty początkowej na niższą spowoduje definitywną utratę pozostałego czasu abonamentowego dla oferty początkowej. Za pozostały czas nie zostanie zwrócony żaden zwrot, nawet jeśli pozostało kilka miesięcy abonamentu. Oznacza to, że będziesz musiał zapłacić całą subskrypcję niższej oferty.
+
+> **Przykład:**<br>
+>
+> Zamówiłeś abonament [Pro](/links/web/hosting-professional-offer) od 1 stycznia 2024.
+>
+> Od 31 października 2024 przechodzisz z tej oferty **Pro** na abonament z ofertą [Perso](/links/web/hosting-personal-offer).<br>
+>
+> W związku z tym kwota za pozostały okres abonamentu **Pro** (2 miesiące, od 1 listopada 2024 do 1 stycznia 2025) zostaje utracona.
+> Od 1 listopada 2024 abonament **Perso** będzie fakturowany zgodnie ze standardowym cennikiem (nawet jeśli płatność za pozostałe 2 miesiące w ramach oferty **Pro**).
 
 Postępuj zgodnie z [tymi instrukcjami](#modify), aby zmienić ofertę.
 

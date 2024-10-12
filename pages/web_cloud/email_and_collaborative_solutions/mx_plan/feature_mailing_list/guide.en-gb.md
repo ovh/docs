@@ -34,8 +34,8 @@ The sender sends an email to the mailing list. The moderator receives an email w
 
 ## Requirements
 
-- an MX Plan 100 minimum or [web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external} eligible for mailing lists
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
+- an MX Plan 100 minimum or [web hosting plan](/links/web/hosting) eligible for mailing lists
+- access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -45,7 +45,7 @@ The sender sends an email to the mailing list. The moderator receives an email w
 >
 > A mailing list behaves like an email address. You cannot change its name. If you no longer like the name of a mailing list, you will need to create a new one and delete the old one.
 
-To create a mailing list, go to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} and click on the `Web Cloud`{.action} tab at the top.
+To create a mailing list, go to the [OVHcloud Control Panel](/links/manager) and click on the `Web Cloud`{.action} tab at the top.
 
 Click on `Emails`{.action} — then click on the domain name concerned. Go to the `Mailing lists`{.action} tab for your email service.
 

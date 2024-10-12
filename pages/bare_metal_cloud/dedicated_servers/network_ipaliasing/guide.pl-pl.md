@@ -1,7 +1,7 @@
 ---
 title: 'Konfiguracja adresu Additional IP jako aliasu'
 excerpt: 'Dowiedz się, jak dodać kilka adresów Additional IP do interfejsu'
-updated: 2024-03-25
+updated: 2024-09-27
 ---
 
 > [!primary]
@@ -56,7 +56,7 @@ Poniższe sekcje zawierają konfiguracje aktualnie oferowanych przez nas dystryb
 
 W poniższych przykładach użyjemy edytora tekstu `nano`. W przypadku niektórych systemów operacyjnych należy zainstalować go przed użyciem. Jeśli tak będzie, zostaniesz poproszony o jego wykonanie. Możesz użyć dowolnego edytora tekstu.
 
-### Debian 10/11
+### Debian 11
 
 Domyślnie plik konfiguracyjny znajduje się w katalogu`/etc/network/interfaces.d/`. Zaleca się, aby najpierw wykonać kopię zapasową odpowiedniego pliku konfiguracyjnego.
 
@@ -168,7 +168,7 @@ Pozostaje tylko zrestartować interfejs:
 sudo /etc/init.d/networking restart
 ```
 
-### Fedora 38 i kolejne wersje
+### Fedora 39 i kolejne wersje
 
 Fedora korzysta teraz z kluczowych plików (*keyfiles*).
 Fedora korzystała wcześniej z profili sieci przechowywanych przez NetworkManager w formacie ifcfg w katalogu `/etc/sysconfig/network-scripts/`.<br>
@@ -337,7 +337,7 @@ sudo netplan apply
 > Używając polecenia `netplan try`, system może zwrócić komunikat ostrzegawczy, taki jak `Permissions for /etc/netplan/xx-cloud-init.yaml are too open. Netplan configuration should NOT be accessible by others`. Oznacza to po prostu, że plik nie ma ograniczonych uprawnień. Nie ma to wpływu na konfigurację Additional IP. Aby uzyskać więcej informacji na temat uprawnień do plików, zobacz [oficjalną dokumentację Ubuntu](https://help.ubuntu.com/community/FilePermissions){.external}.
 >
 
-### CentOS, AlmaLinux (8 & 9), Rocky Linux (8 & 9)
+### AlmaLinux (8 & 9), Rocky Linux (8 & 9)
 
 łówny plik konfiguracyjny znajduje się w `/etc/sysconfig/network-scripts/`. W naszym przykładzie nazywa się `ifcfg-eth0`. Przed wprowadzeniem zmian sprawdź rzeczywistą nazwę pliku w tym folderze.
 
@@ -381,15 +381,9 @@ NETMASK=255.255.255.255
 BROADCAST=203.0.113.1
 ```
 
-#### Krok 3: restart interfejsu alias
+#### Krok 3: restart interfejsu
 
-Następnie zrestartuj swój interfejs. Zastąp `eth0:0` własnymi wartościami:
-
-```sh
-ifup eth0:0
-```
-
-#### Dla AlmaLinux i Rocky Linux
+Pozostaje tylko zrestartować interfejs:
 
 ```sh
 sudo systemctl restart NetworkManager

@@ -1,7 +1,7 @@
 ---
 title: Montage d'un NAS-HA via partage NFS
 excerpt: Découvrez comment vous connecter à votre NAS-HA en utilisant un partage NFS
-updated: 2024-09-04
+updated: 2024-09-18
 ---
 
 ## Objectif
@@ -291,7 +291,8 @@ XX.XX.XX.XX:/zpool-XXXXXX/DIR on /mnt type nfs4 (rw,relatime,vers=4.2,rsize=1310
 ### Forcer l'utilisation de NFSv3 dans certains cas
 
 - Étant donné que NFSv3 est sans état, les performances avec NFSv3 peuvent être nettement meilleures pour certaines charges de travail, en particulier pour les charges de travail qui font énormément d'appels de type OPEN, CLOSE, SETATTR et GETATTR.
-- Si vous hébergez sur votre partage NFS une base de données, sachez qu'en cas de déconnexions réseaux le mécanisme de verrous spécifique au protocole NFS v4.x peut provoquer un arrêt de votre application (consultez cette rfc pour plus de détails : <https://datatracker.ietf.org/doc/rfc3530/>).
+- Si vous hébergez une base de données sur votre partage NFS, sachez qu'en cas de déconnexions réseau le mécanisme de verrous spécifique au protocole NFSv4.x peut provoquer un arrêt de votre application (consultez cette rfc pour plus de détails : <https://datatracker.ietf.org/doc/rfc3530/>).
+- Si vous hébergez des machines virtuelles VMware sur votre partage NFS, sachez que le mécanisme de verrous intégré à la version NFSv4.x n’est pas compatible avec le mode de clustering implémenté sur votre NAS-HA (cluster en mode actif/passif expliqué sur [cette page](/links/storage/nas-ha)). Vous devez donc impérativement utiliser le protocole NFSv3 sous peine d’avoir une perte d’accès à votre datastore lors d’un incident impactant le serveur principal ou lors d’une opération de maintenance programmée.
 
 ### Améliorer les performances de lecture en modifiant l'attribut read_ahead_kb
 

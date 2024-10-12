@@ -1,7 +1,7 @@
 ---
 title: Enterprise File Storage - FAQ
 excerpt: 'FAQ zum Enterprise File Storage Dienst'
-updated: 2022-03-21
+updated: 2024-09-24
 ---
 
 > [!primary]
@@ -74,7 +74,7 @@ Wir empfehlen Ihnen, unsere Ansprechpartner für den Vertrieb oder den technisch
 
 ### Welche Speicherkapazitäten sind verfügbar?
 
-Die Mindestgröße einer Dienstleistung beträgt 1 TiB und die maximale Größe 58 TiB. Die Granularität beträgt 1 TiB.
+Die Mindestgröße einer Dienstleistung beträgt 1 TB und die maximale Größe 58 TB. Die Granularität beträgt 1 TB.
 
 ### Wie viele Enterprise File Storage Dienste kann ich über meine Kundenkennung erstellen?
 
@@ -82,13 +82,13 @@ Es gibt keine Begrenzung der Anzahl der Dienstleistungen pro Kunden-Account.
 
 ### Wie viele Volumes maximal pro Dienstleistung?
 
-Es können bis zu 10 Volumes pro Dienstleistung erstellt werden. Die Mindestgröße beträgt 100 GiB und die Höchstgröße 29 TiB.
+Es können bis zu 10 Volumes pro Dienstleistung erstellt werden. Die Mindestgröße beträgt 100 GB und die Höchstgröße 29 TB.
 
 ### Welches Performance-Level ist für Enterprise File Storage verfügbar?
 
-Enterprise File Storage wird mit einem garantierten Durchsatz (SLO) von 64 MB/s pro TiB und 4000 IOPS pro TiB geliefert.
+Enterprise File Storage wird mit einem garantierten Durchsatz (SLO) von 64 MB/s pro TB und 4000 IOPS pro TB geliefert.
 
-Bei der Lieferung eines Pools mit 10 TiB verfügen Sie beispielsweise über eine Bandbreite von 640 MB/s und 40.000 IOPS.
+Bei der Lieferung eines Pools mit 10 TB verfügen Sie beispielsweise über eine Bandbreite von 640 MB/s und 40.000 IOPS.
 
 ## Snapshots und Backups
 
@@ -102,7 +102,7 @@ Benutzer sind für die Durchführung und Verwaltung ihrer Backups verantwortlich
 
 ### Sind Snapshots in der Kapazität eines Dienstes enthalten?
 
-Snapshots werden mindestens 5% des Speicherplatzes zugewiesen. Bei einem Dienst mit 5TiB sind zum Beispiel 250GiB für Snapshots reserviert.
+Snapshots werden mindestens 5% des Speicherplatzes zugewiesen. Bei einem Dienst mit 5TB sind zum Beispiel 250GB für Snapshots reserviert.
 
 ### Wie viele Snapshots gibt es pro Dienstleistung maximal?
 

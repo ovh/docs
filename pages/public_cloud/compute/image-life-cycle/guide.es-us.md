@@ -8,7 +8,7 @@ updated: 2024-09-04
 
 This documentation will share the end of life (EOL) roadmap for OVHcloud images. OVHcloud follows the official life cycle of each distribution. This means that when a distribution reaches its end of life, it will also be the EOL of the corresponding OVHcloud image for VPS and Public Cloud services on the same date.
 
-This guide will provide you with information on the the end of life (EO) roadmap for OVHcloud images, as well as end-of-life and support announcements for distributions and software available with OVHcloud [VPS](https://www.ovhcloud.com/es/vps/os/) and [Public Cloud instances](https://www.ovhcloud.com/es/public-cloud/public-image-catalog/). Stay up to date on critical changes that could affect the security and performance of your services.
+This guide will provide you with information on the end of life (EO) roadmap for OVHcloud images, as well as end-of-life and support announcements for distributions and software available with OVHcloud [VPS](https://www.ovhcloud.com/es/vps/os/) and [Public Cloud instances](https://www.ovhcloud.com/es/public-cloud/public-image-catalog/). Stay up to date on critical changes that could affect the security and performance of your services.
 
 **Discover the lifecycle and end-of-life/end-of-support announcements for distributions and softwares for your VPS or Public Cloud instance.**
 

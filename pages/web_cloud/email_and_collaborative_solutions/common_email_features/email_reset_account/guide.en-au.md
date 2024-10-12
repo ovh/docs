@@ -16,8 +16,8 @@ You want to:
 
 ## Requirements
 
-- A preconfigured OVHcloud email solution **MX Plan** (available with a [web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/))
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) as the Admin contact of the email service concerned (section `Web Cloud`{.action})
+- A preconfigured OVHcloud email solution **MX Plan** (available with a [web hosting plan](/links/web/hosting))
+- Access to the [OVHcloud Control Panel](/links/manager) as the Admin contact of the email service concerned (section `Web Cloud`{.action})
 
 ## Instructions <a name="instructions"></a>
 
@@ -31,6 +31,6 @@ Open `Emails`{.action} in the side panel, then choose the name of the MX Plan se
 
 [Getting started with MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-au/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

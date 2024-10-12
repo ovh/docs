@@ -60,7 +60,7 @@ Clique em `Seguinte`{.action} e, a seguir, em `Confirmar`{.action} para modifica
 
 ### Verificar o estado da tarefa de ativação
 
-![gestão em curso](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/firewall-planned.png){.thumbnail}
+![gestão em curso](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ongoing-tasks/firewall-planned.png){.thumbnail}
 
 As tarefas de atualização da sua configuração multi-site serão listadas no separador `Operações em curso`{.action} (o estado inicial é "Planificado"). A firewall estará ativa assim que a sua tarefa de atualização deixar de aparecer na lista.
 

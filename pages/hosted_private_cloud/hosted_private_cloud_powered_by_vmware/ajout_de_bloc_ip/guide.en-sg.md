@@ -56,7 +56,7 @@ After confirming the last step, you can view the order form for your IP block. I
 
 ### Migrate an IP block between two Hosted Private Cloud services
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Gemao3Fd7rI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Gemao3Fd7rI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Migrating an IP block requires manually moving blocks through the OVHcloud APIv6.
 

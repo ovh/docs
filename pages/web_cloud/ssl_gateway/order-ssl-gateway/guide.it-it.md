@@ -1,110 +1,105 @@
 ---
-title: Attiva un SSL Gateway
-links: 
-   - docs/web_cloud/ssl_gateway/use_ssl_gateway/
-excerpt: Come rendere sicure le connessioni al tuo sito Web
-updated: 2022-12-01
+title: 'Ordinare un SSL Gateway'
+excerpt: 'Rendete sicure le connessioni al vostro sito web'
+updated: 2024-10-01
 ---
 
-## Informazioni generali
-
-### Prerequisiti
-
 > [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
-> - 
-> Un dominio o sottodominio attivo.
-> - 
-> Accesso alla zona DNS del dominio o sottodominio.
-> 
-> 
 
-## Effettua lordine
-- Per ordinare la soluzione SSL Gateway, accedi a [questa pagina](/links/web/ssl-gateway){.external}.
-- Scegli l’offerta e clicca su `Attivalo subito`{.action} o `Ordina`{.action}.
+## Obiettivo
 
-![pagina commerciale](images/1-en.png){.thumbnail}
-
-- Inserisci il tuo dominio o sottodominio attivo e clicca su `Seguente`{.action}.
-
-![ordine free](images/2-en.png){.thumbnail}
+L’offerta SSL Gateway è concepita per offrire ai propri utenti un certificato SSL per i domini e i servizi di hosting (VPS, server mail, server dedicati, ecc...).
 
 > [!warning]
 >
-> - 
-> Offerta Free:
-> 
-> Disponibile solo per i domini fino al 3° livello (www.example.org).
-> - 
-> Offerte Advanced e Enterprise:
-> 
-> Disponibili per i domini di 4° livello (blog.italia.example.org) e superiori.
-> 
-
-A questo punto il nostro sistema rileverà automaticamente il o gli indirizzi IP del tuo sito configurati sul dominio o sottodominio.
-
-- Se disponi di più IP, selezionane uno.
-- Scegli la zona geografica del tuo servizio SSL Gateway.
-- Se la zona DNS del dominio o sottodominio è gestita dal tuo account OVHcloud, seleziona la casella corrispondente per autorizzarci a modificare la configurazione per impostare il puntamento verso il tuo SSL Gateway.
-- Clicca su `Ordina`{.action}.
-
-![ordine free](images/3-en.png){.thumbnail}
-
-> [!primary]
+> Gli SSL Gateway sono incompatibili con le offerte di [hosting condivisi OVHcloud](/links/web/hosting). Per usufruire di un certificato SSL per questo tipo di servizi, consulta la nostra guida "[Gestire un certificato SSL su un hosting Web](/pages/web_cloud/web_hosting/ssl_on_webhosting)".
 >
-> Se disponi di più indirizzi IP per il tuo sito, dovrai sceglierne solo uno per ordine.
-> Se hai attivato l’offerta Advanced, in un secondo momento potrai aggiungere fino a 2 IP supplementari tramite lo Spazio Cliente OVHcloud.
-> 
 
-- Segui gli step e conferma il tuo ordine.
+**Come ordinare un SSL Gateway.**
 
-## Configura la tua zona DNS
-Se non hai selezionato l’opzione relativa alla modifica automatica, una volta confermato l’ordine ricevi un’email in cui ti viene chiesto di impostare entro 3 giorni il puntamento del tuo dominio o sottodominio verso l’infrastruttura OVHcloud.
+## Prerequisiti
+
+- Disporre di un [dominio](/links/web/domains) o sottodominio attivo.
+- Avere accesso alla zona DNS del dominio.
+
+## Procedura
+
+### Ordine
+
+Per ordinare la soluzione SSL Gateway, [clicca qui](/links/web/ssl-gateway).
+
+Scegli la tua offerta e clicca su `Ordina adesso`{.action}.
+
+![order ssl gateway](/pages/assets/screens/website/order/configure-my-ssl-gateway.png){.thumbnail}
+
+Nella nuova pagina, inserisci nel form `Cerca il tuo dominio`{.action} il dominio o sottodominio interessato e clicca sull’icona a forma di lente di ingrandimento sulla destra.
 
 > [!warning]
 >
-> Se non apporti le modifiche alla tua zona DNS entro questo termine, il tuo ordine verrà annullato.
-> 
+> - Offerta Gratuito: sono autorizzati solo i domini fino a 3 livelli (www.domain.tld).
+>
+> - Offerta Advanced : sono autorizzati i domini di 4° livello (blog.www.domain.tld) e superiori.
+>
 
-- 
+A questo punto il nostro sistema rileverà automaticamente il o gli indirizzi IP del sito configurati sul dominio o sottodominio. Se disponi di più IP, selezionane uno.
+
+> [!warning]
+>
+> - Se disponi di diversi indirizzi IP per il tuo sito Web, puoi scegliere un solo IP al momento dell'ordine.
+> - Se disponi dell'offerta Advanced, in seguito potrai aggiungere fino a 2 IP supplementari dal tuo [Spazio Cliente OVHcloud](/links/manager).
+>
+
+Quindi scegli la localizzazione del datacenter in cui installare l’SSL Gateway, tra le 2 disponibili.
+
+Se lo desideri e se disponibile al momento dell’ordine, spunta la casella `Gestisco la zona DNS di questo dominio e autorizzo OVHcloud a modificare automaticamente il record DNS richiesto`{.action}. La zona DNS associata al dominio o sottodominio verrà aggiornata automaticamente con l’indirizzo IP dell’SSL Gateway.
+
+> [!warning]
+>
+Le modifiche alla zona DNS potrebbero richiedere fino a 24 ore, a causa della cache dei provider Internet.
+>
+
+Verifica che tutte le tue scelte siano corrette nella pagina dell’ordine e clicca su `Continua`{.action}.
+
+Per terminare, lasciati guidare fino alla convalida / pagamento del tuo buono d'ordine.
+
+### Configurazione della zona DNS
+
+Una volta convalidato l’ordine, se non hai selezionato la casella `Gestisco la zona DNS di questo dominio e autorizzo OVHcloud a modificare automaticamente il record DNS richiesto`{.action}, riceverai un’email in cui ti viene chiesto di far puntare il tuo dominio o sottodominio all’infrastruttura OVHcloud entro 3 giorni.
+
+> [!warning]
+>
+> Se non modifichi la tua zona DNS entro 3 giorni, il tuo ordine verrà annullato.
+>
 
 > [!faq]
 >
-> Caso 1: la tua zona DNS è gestita dai server DNS condivisi OVHcloud.
->> 
->>     - Se il tuo identificativo è contatto amministratore o tecnico della zona DNS, potrai modificarla dallo Spazio Cliente OVHcloud.
->>     - Se non sei contatto amministratore o tecnico della zona DNS, per modificarla dovrai rivolgerti alla persona autorizzata.
-
->> 
->> > [!primary]
->> >
->> > Guida disponibile:
->> > - 
->> > Gestisci il tuo server DNS.
->> > 
->> > 
->> 
+> Caso 1: la zona DNS è gestita dai server DNS condivisi OVHcloud.
+>>
+>> - Se il tuo identificativo è contatto *amministratore* o *tecnico* della zona DNS, è necessario modificarla dallo [Spazio Cliente OVHcloud](/links/manager).
+>> - Se non sei contatto *amministratore* o *tecnico* della zona DNS, contatta il responsabile della zona DNS per modificarla.
+>>
+>> Se necessario, consulta le istruzioni contenute nella guida "[Creare una zona DNS OVHcloud per un dominio](/pages/web_cloud/domains/dns_zone_create)".
+>>
 >
-- 
-
-> [!faq]
->
-> Caso 2: la tua zona DNS non è gestita dai server DNS condivisi OVHcloud.
->> 
->>     - In questo caso, modifica l'IP nella tua zona DNS accedendo all'interfaccia del tuo provider o del tuo server dedicato.
+> Caso 2: la zona DNS non è gestita dai server DNS condivisi OVHcloud.
+>>
+>> - In questo caso, modifica l'IP nella tua zona DNS accedendo all'interfaccia del tuo provider o del tuo server dedicato.
+>>
 >
 
-Una volta effettuate le operazioni necessarie, riceverai un'altra email con la conferma del completamento della configurazione del servizio.
+Una volta effettuate le operazioni necessarie, riceverai un’email di conferma.
 
 > [!warning]
 >
-> La propagazione delle modifiche della tua zona DNS può richiedere fino a 24 ore a causa delle informazioni memorizzate in cache presso i provider Internet.
-> 
+Le modifiche alla zona DNS potrebbero richiedere fino a 24 ore, a causa della cache dei provider Internet.
+>
 
 ## Per saperne di più
-
+ 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
-
+ 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
-
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com>.
+ 
+Contatta la nostra [Community di utenti](/links/community).

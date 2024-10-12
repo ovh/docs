@@ -1,6 +1,6 @@
 ---
-title: 'Konfiguration Ihrer E-Mail-Adresse auf macOS Mail'
-updated: 2022-06-13
+title: "MX Plan - Konfiguration Ihrer E-Mail-Adresse in Mail für macOS"
+updated: 2024-10-01
 ---
 
 > [!primary]
@@ -17,12 +17,12 @@ MX Plan Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingericht
 >
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Genauere Informationen finden Sie im Teil „Weiterführende Informationen" dieser Anleitung.
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Genauere Informationen finden Sie im Teil „Weiterführende Informationen" dieser Anleitung.
 > 
 
 ## Voraussetzungen
 
-- Sie verfügen über eine MX Plan E-Mail-Adresse (im MX Plan Angebot oder in einem OVHcloud Webhosting [enthalten](https://www.ovhcloud.com/de/web-hosting/)).
+- Sie verfügen über eine MX Plan E-Mail-Adresse (im MX Plan Angebot oder in einem OVHcloud Webhosting [enthalten](/links/web/hosting)).
 - Sie verfügen über das auf Ihrem Mac installierte Mail-Programm.
 - Sie haben die Login-Daten der E-Mail-Adresse, die Sie einrichten möchten.
  
@@ -44,7 +44,7 @@ MX Plan Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingericht
 
 Wenn Ihre E-Mail-Adresse eingerichtet ist, können Sie sie verwenden. Sie können ab sofort E-Mails versenden und empfangen.
 
-OVHcloud bietet auch eine Webanwendung, mit der Sie über einen Webbrowser auf Ihre E-Mail-Adresse zugreifen können. Diese ist über <https://www.ovh.de/mail/> verfügbar. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden. Für Fragen zur Verwendung lesen Sie unsere Anleitung [Ihren Account über OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) oder [E-Mail-Adresse über das RoundCube Webmail verwenden](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
+OVHcloud bietet auch eine Webanwendung, mit der Sie über einen Webbrowser auf Ihre E-Mail-Adresse zugreifen können. Diese ist über[Webmail](/links/web/email) verfügbar. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden. Für Fragen zur Verwendung lesen Sie unsere Anleitung [Ihren Account über OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) oder [E-Mail-Adresse über das RoundCube Webmail verwenden](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
 
 ### Backup Ihrer E-Mail-Adresse abrufen
 
@@ -82,5 +82,9 @@ Bei einer **POP**-Konfiguration ergeben sich folgende Werte:
 > Wenn Sie Ihre E-Mail-Adresse als **IMAP** konfigurieren und die Konfiguration in **POP** ändern möchten, müssen Sie den Mac Mail-Account löschen und anschließend in **POP** neu erstellen, um die Konfiguration zu ändern.
 
 ## Weiterführende Informationen
- 
+
+> [!primary]
+>
+> Weitere Informationen zum Einrichten einer E-Mail-Adresse über die Mail App auf macOS finden Sie im [Apple Help Center](https://support.apple.com/de-de/guide/mail/mail35803/mac).
+
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

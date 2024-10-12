@@ -14,7 +14,7 @@ vRack (wirtualna szafa) OVHcloud pozwala na wirtualne zebranie kilku serwerów (
 
 **Dowiedz się, jak skonfigurować vRack na kilku serwerach dedykowanych.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZA7IsbDdAmc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/ZA7IsbDdAmc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Wymagania początkowe
 

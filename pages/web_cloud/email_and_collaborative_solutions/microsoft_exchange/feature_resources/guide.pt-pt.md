@@ -16,13 +16,13 @@ Esta função colaborativa do Exchange permite criar endereços de e-mail dedica
 
 ## Requisitos
 
-- Dispor de uma [solução Exchange OVHcloud](https://www.ovhcloud.com/pt/emails/hosted-exchange/) já configurada
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+- Dispor de uma [solução Exchange OVHcloud](/links/web/emails-hosted-exchange) já configurada
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
 - Dispor de dados de acesso para a(s) conta(s) de e-mail com acesso ao recurso.
 
 ## Instruções
 
-Ligue-se à sua Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e selecione `Web Cloud`{.action} na barra de navegação superior. Clique em `Microsoft`{.action} e, a seguir, em `Exchange`{.action}. De seguida, selecione o serviço Exchange em causa. Clique no separador `Plus +`{.action} e, a seguir, em `Recursos`{.action}.
+Ligue-se à sua Área de [Cliente OVHcloud](/links/manager) e selecione `Web Cloud`{.action} na barra de navegação superior. Clique em `Microsoft`{.action} e, a seguir, em `Exchange`{.action}. De seguida, selecione o serviço Exchange em causa. Clique no separador `Plus +`{.action} e, a seguir, em `Recursos`{.action}.
 
 ### 1 - criar um recurso
 
@@ -35,7 +35,7 @@ Clique no botão `Adicionar uma conta de recurso`{.action} para criar o seu prim
 |Nome|Descrição|
 |---|---|
 |E-mail do recurso|Introduza o endereço do recurso. Tenha em atenção que não pode escolher um endereço de e-mail existente.|
-|Nome do recurso|Nome completo que aparece na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e [no webmail OVHcloud](https://www.ovh.pt/mail/) (OWA).|
+|Nome do recurso|Nome completo que aparece na [Área de Cliente OVHcloud](/links/manager) e [no webmail OVHcloud](/links/web/email) (OWA).|
 |Capacidade|Pode definir a dimensão máxima de um recurso (especificando, por exemplo, o número de lugares sentados de uma peça ou os lugares sentados de um veículo de empresa partilhada).|
 |Permitir conflitos|Se esta opção for selecionada, poderá criar eventos de calendário que se sobreponham e envolvam o mesmo recurso.|
 |Tipo de recurso|Escolha o tipo de recurso: "Equipamento" ou "Sala".|
@@ -55,7 +55,7 @@ Os seus recursos podem ser geridos a partir da tabela do separador "Recursos". C
 Consulte também o nosso manual sobre [Partilha de calendários a partir da interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_calendar_sharing).
 >
 
-Ligue-se à sua conta Exchange através do [webmail OVHcloud](https://www.ovh.pt/mail/). Migre para a interface "Calendário" clicando no "aplicador" no canto superior esquerdo e selecionando o ícone `Calendário`{.action}.
+Ligue-se à sua conta Exchange através do [webmail OVHcloud](/links/web/email). Migre para a interface "Calendário" clicando no "aplicador" no canto superior esquerdo e selecionando o ícone `Calendário`{.action}.
 
 ![adicionar](images/exchange-calendars-step1.png){.thumbnail}
 

@@ -1,7 +1,7 @@
 ---
 title: 'Configurer et consulter le répondeur de sa ligne'
 excerpt: 'Apprenez à configurer et utiliser le répondeur de votre ligne téléphonique OVHcloud'
-updated: 2024-09-06
+updated: 2024-10-10
 ---
 
 ## Objectif
@@ -21,8 +21,8 @@ Chaque ligne OVHcloud est associée à un répondeur que vous pouvez personnalis
 
 ## Prérequis
 
-- Disposer d'une [ligne téléphonique OVHcloud](/links/telecom/telephonie){.external}.
-- Être connecté à l'[espace client OVHcloud](/links/manager){.external}, partie `Télécom`{.action}.
+- Disposer d'une [ligne téléphonique OVHcloud](/links/telecom/telephonie).
+- Être connecté à l'[espace client OVHcloud](/links/manager), partie `Télécom`{.action}.
 
 ![espace client Telecom VoIP](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
@@ -42,13 +42,13 @@ Poursuivez la lecture de cette documentation selon la manipulation que vous souh
 
 Il existe trois méthodes pour consulter les messages laissés sur votre répondeur. Poursuivez vers celle que vous souhaitez utiliser.
 
-- [Consulter son répondeur via un téléphone](#via-telephone){.external}.
-- [Consulter son répondeur via l'espace client](#via-espace-client){.external}.
-- [Consulter son répondeur via les notifications e-mail](#via-notifications){.external}.
+- [Consulter son répondeur via un téléphone](#via-telephone).
+- [Consulter son répondeur via l'espace client](#via-espace-client).
+- [Consulter son répondeur via les notifications e-mail](#via-notifications).
 
 > [!primary]
 >
-> Si votre répondeur vous indique que vous n'avez aucun nouveau message alors qu'un correspondant vous affirme en avoir laissé un, assurez-vous que votre ligne est associée au bon répondeur. Aidez-vous des informations de la section « [Associer une ligne à un répondeur](#associer){.external} » de cette documentation si nécessaire.
+> Si votre répondeur vous indique que vous n'avez aucun nouveau message alors qu'un correspondant vous affirme en avoir laissé un, assurez-vous que votre ligne est associée au bon répondeur. Aidez-vous des informations de la section « [Associer une ligne à un répondeur](#associer) » de cette documentation si nécessaire.
 >
 
 #### Consulter son répondeur via un téléphone <a name="via-telephone"></a>
@@ -60,20 +60,18 @@ Depuis votre ligne téléphonique OVHcloud, composez le **123** pour accéder au
 |Lignes françaises (+33)|+33 9 72 55 00 00|
 |Lignes belges FR (+32)|+32 23 18 55 55|
 |Lignes belges NL (+32)|+32 23 18 55 56|
-|Lignes espagnoles (+34)|+34 5 12 70 77 07|
 |Lignes suisses FR (+41)|+41 2 75 19 00 06|
 |Lignes suisses IT (+41)|+41 2 75 19 00 05|
 |Lignes suisses DE (+41)|+41 2 75 19 00 04|
-|Lignes anglaises (+44)|+44 33 06 84 01 06|
-|Lignes allemandes (+49)|+49 3 22 21 74 00 06|
+|Lignes anglaises (+44)|+44 33 06 84 01 00|
 
 Une fois en communication avec le serveur de messagerie, laissez-vous guider par celui-ci en appuyant sur les touches correspondant aux actions que vous souhaitez réaliser. Sachez que si vous appelez depuis une autre ligne, vous devrez indiquer le numéro associé au répondeur que vous souhaitez consulter, ainsi que son mot de passe d'accès à distance préalablement défini. 
 
-Si vous n'avez pas défini de mot de passe d'accès à distance : connectez-vous à votre [espace client OVHcloud](/links/manager){.external} partie Télécom, cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne concernée. Positionnez-vous ensuite sur l'onglet `Répondeur`{.action}, cliquez sur `Mot de passe accès répondeur`{.action} et suivez les indications.
+Si vous n'avez pas défini de mot de passe d'accès à distance : connectez-vous à votre [espace client OVHcloud](/links/manager) partie Télécom, cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne concernée. Positionnez-vous ensuite sur l'onglet `Répondeur`{.action}, cliquez sur `Mot de passe accès répondeur`{.action} et suivez les indications.
 
 #### Consulter son répondeur via votre espace client <a name="via-espace-client"></a>
 
-Connecté à votre [espace client OVHcloud](/links/manager){.external}, partie Télécom, cliquez sur `Téléphonie`{.action} puis sélectionnez la ligne pour laquelle vous souhaitez consulter le répondeur. Positionnez-vous ensuite sur l'onglet `Répondeur`{.action} et cliquez sur `Écoute et gestion des messages`{.action}.
+Connecté à votre [espace client OVHcloud](/links/manager), partie Télécom, cliquez sur `Téléphonie`{.action} puis sélectionnez la ligne pour laquelle vous souhaitez consulter le répondeur. Positionnez-vous ensuite sur l'onglet `Répondeur`{.action} et cliquez sur `Écoute et gestion des messages`{.action}.
 
 ![repondeur](images/voicemail-step7.png){.thumbnail}
 
@@ -89,7 +87,7 @@ Si vous souhaitez consulter ou modifier les adresses e-mail utilisées pour les 
 
 ### Personnaliser la configuration de son répondeur <a name="personnaliser"></a>
 
-Pour démarrer la manipulation, connectez-vous à votre [espace client OVHcloud](/links/manager){.external}, partie Télécom. Cliquez sur `Téléphonie`{.action} puis sélectionnez la ligne concernée. Positionnez-vous sur l'onglet `Répondeur`{.action} puis cliquez sur `Configuration du répondeur`{.action}. 
+Pour démarrer la manipulation, connectez-vous à votre [espace client OVHcloud](/links/manager), partie Télécom. Cliquez sur `Téléphonie`{.action} puis sélectionnez la ligne concernée. Positionnez-vous sur l'onglet `Répondeur`{.action} puis cliquez sur `Configuration du répondeur`{.action}. 
 
 ![repondeur](images/voicemail-step3.png){.thumbnail}
 
@@ -128,7 +126,7 @@ Trois parties sont visibles sur la page qui apparaît alors. Configurez votre r�
 
 Cette association s'effectue par le biais de deux manipulations : la première permet de choisir le répondeur qui pourra être consulté depuis la ligne et la seconde permet de définir vers quel répondeur les correspondants sont renvoyés.
 
-Pour débuter, connectez-vous à votre [espace client OVHcloud](/links/manager){.external}, partie Télécom. Cliquez sur `Téléphonie`{.action} puis sélectionnez la ligne concernée. Positionnez-vous sur l'onglet `Répondeur`{.action} puis cliquez sur `Choix de la messagerie par défaut`{.action}.
+Pour débuter, connectez-vous à votre [espace client OVHcloud](/links/manager), partie Télécom. Cliquez sur `Téléphonie`{.action} puis sélectionnez la ligne concernée. Positionnez-vous sur l'onglet `Répondeur`{.action} puis cliquez sur `Choix de la messagerie par défaut`{.action}.
 
 ![repondeur](images/voicemail-step1.png){.thumbnail}
 
@@ -140,7 +138,7 @@ Retournez vers la gestion du répondeur et positionnez-vous maintenant sur l'ong
 
 ![repondeur](images/voicemail-step9.png){.thumbnail}
 
-Sélectionnez, pour les renvois vers le répondeur, le même numéro de ligne sélectionné précédemment. Assurez-vous de faire correspondre les numéros. Si besoin, aidez-vous de notre documentation intitulée « [Filtrer et renvoyer ses appels](/pages/web_cloud/phone_and_fax/voip/comment_configurer_les_renvois_d_appels){.external} ».
+Sélectionnez, pour les renvois vers le répondeur, le même numéro de ligne sélectionné précédemment. Assurez-vous de faire correspondre les numéros. Si besoin, aidez-vous de notre documentation intitulée « [Filtrer et renvoyer ses appels](/pages/web_cloud/phone_and_fax/voip/comment_configurer_les_renvois_d_appels) ».
 
 Vous pouvez notamment définir le délai (en secondes) au bout duquel un apppel sera renvoyé vers le répondeur.
 
@@ -153,4 +151,4 @@ Vous avez la possibilité d’appliquer vos choix de configuration à plusieurs 
 - [Filtrer et renvoyer ses appels](/pages/web_cloud/phone_and_fax/voip/comment_configurer_les_renvois_d_appels)
 - Pour associer le déclenchement d'un répondeur à des conditions particulières (respect de certaines plages horaires, fermeture lors des jours fériés, etc.), consultez le guide « [Configurer des plages horaires et des fermetures exceptionnelles sur une ligne](/pages/web_cloud/phone_and_fax/voip/configure-time-slot-and-closing-time) ».
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

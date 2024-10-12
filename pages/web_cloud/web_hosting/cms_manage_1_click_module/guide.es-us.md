@@ -1,7 +1,7 @@
 ---
 title: "¿Cómo gestionar su módulo en 1 clic?"
 excerpt: "Descubra cómo gestionar su módulo en 1 clic desde el área de cliente de OVHcloud"
-updated: 2022-11-21
+updated: 2024-10-11
 ---
 
 > [!primary]
@@ -54,42 +54,9 @@ También puede consultar el mensaje de correo electrónico recibido al crear el 
 
 ### Cambiar la contraseña del módulo <a name="password-change"></a>
 
-Puede cambiar la contraseña de su módulo desde el [área de cliente de OVHcloud](/links/manager) o directamente desde la página de conexión al área de administrador de su sitio web.
-En ambos casos, recibirá un mensaje de correo electrónico con el fin de restaurar la contraseña.
-
 > [!primary]
 >
-> **¿Qué hacer si no ha recibido el email de restauración de la contraseña de administrador de su sitio web?**
->
-> Compruebe las carpetas `Spams`{.action} y `Papelera`{.action} en la cuenta de correo correspondiente.
->
-> También puede consultar todos los mensajes enviados por nuestros servicios desde el [área de cliente de OVHcloud](/links/manager): haga clic en su nombre en la esquina superior derecha de su pantalla y, en el menú contextual situado a la derecha de la pantalla, haga clic en `Emails de servicio`{.action}.
->
-> **Duración de validez de los enlaces :**
->
-> - Tras recibir el mensaje de correo electrónico de cambio de la contraseña, el enlace de restauración permanecerá válido durante 48 horas. 
-> - Al hacer clic en el enlace, este solo será válido durante 30 minutos.
->
-
-> [!warning]
->
-> La contraseña de acceso al panel de administración de su CMS desde el área de cliente de OVHcloud puede modificarse ** únicamente si se cumplen las siguientes condiciones:
->
-> - El CMS se ha instalado utilizando la opción "módulo en 1 clic" al contratar el alojamiento o desde el área de cliente de OVHcloud.
-> - El usuario (nombre de usuario, dirección de correo electrónico, etc.) no ha sido modificado a través del CMS o la base de datos.
-> La página de acceso al panel de administración del CMS no se ha modificado. En particular, la URL de acceso al panel de administración del CMS no debe haber sido modificada a través del CMS. Las restricciones en esta misma página no deben haber sido implementadas.
-> - El "prefijo" de las tablas de la base de datos no ha sido modificado directamente desde el CMS o la base de datos.
->
-> Si no utiliza el CMS, deberá consultar la documentación oficial del CMS que utilice o contactar directamente con el editor del CMS.
->
-
-Para cambiar la contraseña de acceso al panel de administración de su sitio web **desde el área de cliente de OVHcloud**, acceda al [área de cliente de OVHcloud](/links/manager), haga clic en `Web Cloud`{.action}, `Alojamientos`{.action}, el alojamiento correspondiente y abra la pestaña `Módulos en 1 clic`{.action}.
-
-A continuación, haga clic en el botón `...`{.action} a la derecha de la línea correspondiente al módulo y seleccione `Cambiar la contraseña`{.action}. Haga clic en `Aceptar`{.action}. En unos minutos recibirá por correo electrónico un enlace a la restauración de la contraseña.
-
-> [!primary]
->
-> Si no puede cambiar la contraseña de acceso al panel de administración de su CMS desde el área de cliente de OVHcloud por las razones anteriormente citadas, encontrará a continuación la documentación oficial para los diferentes CMS que ofrece instalar en nuestros alojamientos compartidos:
+> Encontrará a continuación la documentación oficial para los diferentes CMS que ofrece instalar en nuestros alojamientos compartidos:
 >
 > - WordPress : <https://wordpress.org/support/article/resetting-your-password/>
 > - Joomla! : <https://docs.joomla.org/How_do_you_recover_or_reset_your_admin_password%3F>

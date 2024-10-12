@@ -1,7 +1,7 @@
 ---
 title: "Exchange - Configurar um endereço de e-mail no Gmail para Android"
 excerpt: "Aprenda a configurar uma conta Exchange no Android através da aplicação Gmail"
-updated: 2024-03-20
+updated: 2024-10-09
 ---
 
 <style>
@@ -15,7 +15,6 @@ updated: 2024-03-20
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
 
 ## Objetivo
 
@@ -27,18 +26,17 @@ Os endereços de e-mail da oferta Exchange podem ser configurados em diferentes 
 >
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 >
-> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção «Quer saber mais?» deste guia.
+> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](/links/partner) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção «Quer saber mais?» deste guia.
 
 ## Requisitos
 
-- Ter o serviço [E-mail Pro](https://www.ovhcloud.com/pt/emails/){.external}.
+- Ter o serviço [E-mail Pro](/links/web/emails).
 - Ter a aplicação Gmail no seu dispositivo. Pode instalá-la a partir da Google Play Store.
 - Ter acesso às credenciais do endereço de e-mail que pretende configurar.
 
 > [!primary]
 >
 > Esta documentação foi feita a partir de um dispositivo que utiliza a versão 13 do Android.
->
 
 ## Instruções
 
@@ -48,9 +46,8 @@ Os endereços de e-mail da oferta Exchange podem ser configurados em diferentes 
 >
 > No nosso exemplo, utilizamos a menção servidor: ex**?**.mail.ovh.net. Deverá substituir o "? " pelo número que designa o servidor do seu serviço Exchange.
 >
-> Encontre este número na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na rubrica `Web Cloud`{.action} e depois `Microsoft`{.action}.
+> Encontre este número na sua [Área de Cliente OVHcloud](/links/manager), na rubrica `Web Cloud`{.action} e depois `Microsoft`{.action}.
 > Clique em `Exchange`{.action} e, a seguir, na plataforma Exchange pretendida. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.
->
 
 No ecrã principal do dispositivo, aceda à aplicação `Gmail`{.action}.
 
@@ -70,7 +67,6 @@ A adição de uma conta efetua-se de forma diferente **se nenhuma conta estiver 
 >> 2. Selecione `Definições`{.action}<br><br>
 >> 3. Selecione `Adicionar uma conta`{.action}<br><br>
 >> ![Exchange Android](images/android-existing.png){.thumbnail}
->>
 
 Siga as etapas sucessivas de configuração, navegando nos separadores abaixo:
 
@@ -94,17 +90,20 @@ Siga as etapas sucessivas de configuração, navegando nos separadores abaixo:
 > **Etapa 6**
 >> A mensagem « Pode utilizar a sua conta » deverá ser apresentada, prima `OK`{.action} para concluir a configuração.<br><br>
 >> ![Exchange Android](images/exchange-android-05.png){.thumbnail .h-600}
->>
 
 Após a configuração, a conta de e-mail está pronta a usar Pode desde já enviar e receber mensagens a partir da sua aplicação Gmail.
 
 > [!success]
 >
-> A OVHcloud disponibiliza uma aplicação web que pode utilizar para aceder ao seu e-mail diretamente a partir de um browser, no endereço <https://www.ovhcloud.com/pt/mail/>. Para aceder, só precisa dos dados de acesso do seu endereço de e-mail.
+> A OVHcloud disponibiliza uma aplicação web que pode utilizar para aceder ao seu e-mail diretamente a partir de um browser, no endereço [Webmail](/links/web/email). Para aceder, só precisa dos dados de acesso do seu endereço de e-mail.
 
 ## Quer saber mais? <a name="go-further"></a>
 
-[MXplan - Configurar um endereço de e-mail no Gmail para Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android).
+> [!primary]
+>
+> Para mais informações sobre a configuração de um endereço de e-mail a partir da aplicação Gmail para Android, consulte [o Centro de Ajuda do Google](https://support.google.com/mail/answer/6078445?hl=pt-CA&co=GENIE.Platform%3DAndroid#zippy=%2Caddir-uma-conta).
+
+[MX Plan - Configurar um endereço de e-mail no Gmail para Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android).
 
 [E-mail Pro - Configurar um endereço de e-mail no Gmail para Android](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_android).
 

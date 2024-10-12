@@ -1,7 +1,7 @@
 ---
-title: 'Configurar una cuenta de correo electrónico en Thunderbird para macOS'
+title: 'MX Plan - Configure su cuenta de correo electrónico en Thunderbird para macOS'
 excerpt: 'Aquí encontrará la información necesaria para configurar su dirección de correo electrónico en Thunderbird'
-updated: 2021-08-26
+updated: 2024-10-01
 ---
 
 > [!primary]
@@ -23,7 +23,7 @@ Es posible configurar sus cuentas MX Plan en el cliente de correo que usted util
 
 ## Requisitos
 
-- Disponer de una cuenta MX Plan (incluida en un MX Plan o en un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external}).
+- Disponer de una cuenta MX Plan (incluida en un MX Plan o en un plan de [hosting de OVHcloud](/links/web/hosting)).
 - Tener Thunderbird instalado en su macOS.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
  
@@ -52,7 +52,7 @@ En una configuración en **POP**, los valores son los siguientes:
 
 Una vez que haya configurado la dirección de correo electrónico, ya puede empezar a utilizarla enviando y recibiendo mensajes.
 
-OVHcloud también ofrece una aplicación web que permite acceder a su dirección de correo electrónico desde un navegador de internet. y está disponible en la dirección <https://www.ovh.es/mail/>. Puede conectarse con las credenciales de acceso de su dirección de correo electrónico. Si tiene cualquier duda sobre su uso, consulte nuestra guía [Consultar su cuenta Exchange desde la interfaz OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) o [Utilizar su dirección de correo desde el webmail Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
+OVHcloud también ofrece una aplicación web que permite acceder a su dirección de correo electrónico desde un navegador de internet. y está disponible en la dirección [Webmail](/links/web/email). Puede conectarse con las credenciales de acceso de su dirección de correo electrónico. Si tiene cualquier duda sobre su uso, consulte nuestra guía [Consultar su cuenta Exchange desde la interfaz OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) o [Utilizar su dirección de correo desde el webmail Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
 
 ### Obtener una copia de seguridad de su dirección de correo
 
@@ -77,5 +77,9 @@ Si su cuenta de correo ya está configurada y debe acceder a los parámetros de 
 ![Thunderbird](images/thunderbird-mac-mxplan06.png){.thumbnail}
 
 ## Más información
+
+> [!primary]
+>
+> Para obtener más información sobre cómo configurar una dirección de correo electrónico desde la aplicación Thunderbird en Windows, consulte [el Centro de ayuda de Mozilla](https://support.mozilla.org/es/kb/configuracion-automatica-de-las-cuentas#thunderbird:mac:tb115)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

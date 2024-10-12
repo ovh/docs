@@ -6,7 +6,7 @@ updated: 2020-03-09
 
 ## Objetivo
 
-[OVH Mail Migrator](https://omm.ovh.net/){.external} (OMM) es una herramienta creada por OVHcloud. Le permite migrar sus cuentas de correo electrónico de un proveedor de hosting a otro. El proceso tiene en cuenta los diferentes tipos de contenidos, por ejemplo, los correos electrónicos, los contactos, los calendarios y las tareas, siempre que estas últimas sean compatibles con sus cuentas de correo electrónico de OVHcloud. 
+[OVH Mail Migrator](https://omm.ovh.net/) (OMM) es una herramienta creada por OVHcloud. Le permite migrar sus cuentas de correo electrónico de un proveedor de hosting a otro. El proceso tiene en cuenta los diferentes tipos de contenidos, por ejemplo, los correos electrónicos, los contactos, los calendarios y las tareas, siempre que estas últimas sean compatibles con sus cuentas de correo electrónico de OVHcloud. 
 
 <b>Esta guía explica cómo utilizar la herramienta OMM para importar los distintos elementos de su cuenta de Gmail a su cuenta de correo electrónico de OVHcloud.</b>
 
@@ -14,7 +14,7 @@ updated: 2020-03-09
 
 ## Requisitos
 
-- Disponer de un servicio de correo electrónico en OVHcloud, como [Exchange](https://www.ovhcloud.com/es-es/emails/){.external}, [Email Pro](https://www.ovhcloud.com/es-es/emails/email-pro/){.external} o MX Plan (teniendo contratado un plan MX Plan o, incluso, mediante un plan de [Web hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external}).
+- Disponer de un servicio de correo electrónico en OVHcloud, como [Exchange](/links/web/emails), [Email Pro](/links/web/email-pro) o MX Plan (teniendo contratado un plan MX Plan o, incluso, mediante un plan de [Web hosting de OVHcloud](/links/web/hosting)).
 - Disponer del nombre de usuario y la contraseña de las cuentas de correo electrónico que quiera migrar (las cuentas de origen).
 - Disponer del nombre de usuario y la contraseña de las cuentas de correo electrónico de OVHcloud que recibirán los datos que se migran (las cuentas de destino).
 
@@ -24,9 +24,9 @@ updated: 2020-03-09
 
 > [!primary]
 > Para posibilitar la migración, es necesario activar el protocolo IMAP de su cuenta Gmail. Para ello, consulte la guía de Google
-> [«Consulta tu correo de Gmail a través de otras plataformas de correo electrónico»](https://support.google.com/mail/answer/7126229?hl=es){.external}.
+> [«Consulta tu correo de Gmail a través de otras plataformas de correo electrónico»](https://support.google.com/mail/answer/7126229?hl=es).
 
-Una vez activado el protocolo IMAP en su cuenta de Gmail, acceda a [la página de la herramienta OMM](https://omm.ovh.net/){.external}.
+Una vez activado el protocolo IMAP en su cuenta de Gmail, acceda a [la página de la herramienta OMM](https://omm.ovh.net/).
 
 Haga clic en `Migración`{.action} y, seguidamente, en `Nueva migración`{.action}.
 
@@ -73,7 +73,7 @@ Aparece la ventana de seguimiento de la migración (véase a continuación). Pue
 
 ![omm](images/OMM-gmail-step01-05.png){.thumbnail}
 
-En tal caso, acceda a la bandeja de entrada de su cuenta de Gmail y revise si ha recibido un correo electrónico con el asunto **«Alerta de seguridad importante sobre tu cuenta de Google vinculada»**. Se trata de una medida de seguridad instrumentada por Gmail. Para solucionar esta situación, consulte la guía [Cómo autorizar las conexiones poco seguras de Gmail](/pages/web_cloud/email_and_collaborative_solutions/migrating/security_gmail){.external}.
+En tal caso, acceda a la bandeja de entrada de su cuenta de Gmail y revise si ha recibido un correo electrónico con el asunto **«Alerta de seguridad importante sobre tu cuenta de Google vinculada»**. Se trata de una medida de seguridad instrumentada por Gmail. Para solucionar esta situación, consulte la guía [Cómo autorizar las conexiones poco seguras de Gmail](/pages/web_cloud/email_and_collaborative_solutions/migrating/security_gmail).
 
 Una vez **autorizadas las «Conexiones poco seguras»** en Gmail, puede reanudar la migración.
 
@@ -83,7 +83,7 @@ Una vez **autorizadas las «Conexiones poco seguras»** en Gmail, puede reanudar
 
 Para importar su calendario a su cuenta de OVHcloud, recupere una copia de seguridad de dicho calendario en la interfaz de Gmail. Para ello, consulte la guía oficial de Google:
 
-[Cómo exportar tu calendario de Google](https://support.google.com/calendar/answer/37111?hl=es){.external}
+[Cómo exportar tu calendario de Google](https://support.google.com/calendar/answer/37111?hl=es)
 
 Si tiene varios calendarios en su cuenta de Gmail, descargue un archivo comprimido. Cada calendario está disponible en formato **.ics**.
 
@@ -92,7 +92,7 @@ Si tiene varios calendarios en su cuenta de Gmail, descargue un archivo comprimi
 > [!primary]
 > La migración de los calendarios mediante la herramienta OMM solo es compatible con las cuentas de Exchange.
 
-Una vez recuperada la copia de seguridad de su calendario en formato **.ics**, acceda a [la página de la herramienta OMM](https://omm.ovh.net/){.external}.
+Una vez recuperada la copia de seguridad de su calendario en formato **.ics**, acceda a [la página de la herramienta OMM](https://omm.ovh.net/).
 
 Acceda a la pestaña `PST/ICS/VCF`{.action} en la parte superior y, seguidamente, haga clic en `Nueva migración PST/ICS/VCF`{.action}.
 
@@ -128,7 +128,7 @@ Aparece la ventana de seguimiento de la migración (véase a continuación). Pue
 Para importar los contactos a su cuenta de OVHcloud, recupere una copia de seguridad de estos en su interfaz de Gmail. Para ello, consulte la guía oficial de Google:
 
 [Crear copias de seguridad de contactos o exportarlos](https://support.google.com/contacts/answer/7199294?hl=es
-){.external}
+)
 
 > [!warning]
 > La exportación se debe hacer en formato vCard (**.vcf**) a través de la interfaz de Gmail. Esta opción se propone al final de la exportación.
@@ -159,7 +159,7 @@ Aparece la ventana de seguimiento de la migración, la que puede dejar abierta p
 
 ## Más información
 
-[Cómo autorizar las conexiones poco seguras en Gmail](/pages/web_cloud/email_and_collaborative_solutions/migrating/security_gmail){.external}.
+[Cómo autorizar las conexiones poco seguras en Gmail](/pages/web_cloud/email_and_collaborative_solutions/migrating/security_gmail).
 
-Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en](https://community.ovh.com/en/){.external}.
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en](https://community.ovh.com/en/).
 

@@ -126,7 +126,7 @@ Na nova janela, irá visualizar vários registos DNS. Para adicionar um SPF, tem
 
 #### Utilizar o registo SPF OVHcloud <a name="spfrecordovhcloud"></a>
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/tRiy0YKY8dw?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/tRiy0YKY8dw?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Escolheu o registo `SPF`{.action} e deseja aplicar a configuração da OVHcloud. que permite incluir o conjunto dos servidores de e-mail enviados pela OVHcloud para as seguintes ofertas de e-mail:
 

@@ -45,7 +45,7 @@ Para obtener un archivo `.eml`, consulte nuestra sección [Webmail](#webmail).
 
 ## Requisitos
 
-- Tener una dirección de correo electrónico en una de nuestras [soluciones de correo electrónico de OVHcloud](https://www.ovhcloud.com/es-es/emails/) o en una solución externa.
+- Tener una dirección de correo electrónico en una de nuestras [soluciones de correo electrónico de OVHcloud](/links/web/emails) o en una solución externa.
 - Tener acceso a la dirección de correo electrónico a través de un webmail o un cliente de correo.
 
 ## Procedimiento
@@ -57,11 +57,11 @@ A continuación se muestra una lista no exhaustiva de los elementos que pueden c
 
 - El campo `Received` aparece en la cabecera cada vez que pasa el email a un servidor de envío (SMTP). Por lo general, el nombre del host del servidor aparece con la dirección IP y la fecha. Los campos `Received` están clasificados desde el paso más reciente hasta el paso más antiguo de un servidor:
 <pre class="bgwhite"><code>
-Received: from mxplan7.mail.ovh.net (unknown [10.109.143.250])
+Received: from MX Plan7.mail.ovh.net (unknown [10.109.143.250])
 	by mo3005.mail-out.ovh.net (Postfix) with ESMTPS id 448F4140309
 	for &lt;john@mydomain.ovh&gt; ;Wed, 30 Jun 2021 13:12:40 +0000 (UTC)
 </code></pre>
-  *Aquí el mensaje de correo electrónico se transmitió desde el servidor mxplan7.mail.ovh.net al servidor mo3005.mail-out.ovh.net el 30 de junio de 2021 a las 13:12:40 (zona horaria UTC)*
+  *Aquí el mensaje de correo electrónico se transmitió desde el servidor MX Plan7.mail.ovh.net al servidor mo3005.mail-out.ovh.net el 30 de junio de 2021 a las 13:12:40 (zona horaria UTC)*
 
 - El campo `Return-Path` corresponde a la dirección de retorno cuando el mensaje no ha podido enviarse. La dirección de vuelta es generalmente la que ha realizado el envío.
 <pre class="bgwhite"><code>
@@ -164,7 +164,7 @@ Seleccione el email en el que quiera ver la cabecera. Haga clic **en la flecha**
 
 Vea también nuestro tutorial en vídeo:
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/2jia2s1_oIw?start=36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/2jia2s1_oIw?start=36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ##### **Obtener el archivo .eml**
 

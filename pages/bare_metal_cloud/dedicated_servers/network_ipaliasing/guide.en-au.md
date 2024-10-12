@@ -1,7 +1,7 @@
 ---
 title: 'Configuring IP aliasing'
 excerpt: 'Find out how to add Additional IP addresses to your server configuration'
-updated: 2024-03-15
+updated: 2024-09-27
 ---
 
 > [!primary]
@@ -52,7 +52,7 @@ Concerning different distribution releases, please note that the proper procedur
 
 In the examples below, we will use the `nano` text editor. With some operating systems, you will need to install it first before using it. If this is the case, you will be prompted to do so. You can, of course, use the text editor of your choice.
 
-### Debian 10/11
+### Debian 11
 
 By default, the configuration files are located in `/etc/network/interfaces.d/`. We recommend that you start by backing up the relevant configuration file. 
 
@@ -167,7 +167,7 @@ To restart the interface, use the following command:
 sudo /etc/init.d/networking restart
 ```
 
-### Fedora 37 and following
+### Fedora 39 and following
 
 Fedora now uses keyfiles. NetworkManager previously stored network profiles in ifcfg format in this directory: `/etc/sysconfig/network-scripts/`. However, the ifcfg format is now deprecated. By default, NetworkManager no longer creates new profiles in this format. The configuration file is now found in `/etc/NetworkManager/system-connections/`.
 
@@ -324,7 +324,7 @@ sudo netplan apply
 > When using the `netplan try` command, it is possible that the system returns a warning message such as `Permissions for /etc/netplan/xx-cloud-init.yaml are too open. Netplan configuration should NOT be accessible by others`. This simply means that the file does not have restrictive permissions. This does not affect the configuration of your Additional IP. For more information about file permissions, consult the [official documentation of ubuntu](https://help.ubuntu.com/community/FilePermissions){.external}.
 >
 
-### CentOS 7, AlmaLinux (8 & 9), Rocky Linux (8 & 9)
+### AlmaLinux (8 & 9), Rocky Linux (8 & 9)
 
 The main configuration file is located in `/etc/sysconfig/network-scripts/`. In this example it is called `ifcfg-eth0`. Before making changes, verify the actual file name in this folder.
 
@@ -370,13 +370,7 @@ BROADCAST=203.0.113.1
 
 #### Step 3: Restart the interface
 
-Next, restart your alias interface, replace `eth0:0` with your own values:
-
-```bash
-ifup eth0:0
-```
-
-#### For AlmaLinux and Rocky Linux
+Next, restart the network interface with the following command:
 
 ```bash
 sudo systemctl restart NetworkManager

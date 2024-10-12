@@ -1,7 +1,7 @@
 ---
 title: Creating an IAM policy to allow users access to the OVHcloud Control Panel
 excerpt: "Find out how to grant the minimum rights required to log in to the OVHcloud Control Panel"
-updated: 2023-10-25
+updated: 2024-10-02
 ---
 
 ## Objective
@@ -28,6 +28,10 @@ With these rights, a user will be able to log in to the OVHcloud Control Panel. 
 ### Using UI
 
 Using the UI, you can set up a policy with the following configuration:
+
+Add the identites you want to give access to.
+
+![Add identities](images/add_identities.png){.thumbnail}
 
 Add a `resourceType` "OVHcloud customer account" and add your account as a resource.
 

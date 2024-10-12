@@ -12,12 +12,12 @@ Na Área de Cliente OVHcloud, pode criar assinaturas universais (footers) para e
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
-- Dispor de um serviço [OVHcloud Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/) ou [E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/) já configurado.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+- Dispor de um serviço [OVHcloud Exchange](/links/web/emails-hosted-exchange) ou [E-mail Pro](/links/web/email-pro) já configurado.
 
 ## Instruções
 
-Para efetuar esta operação, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}:
+Para efetuar esta operação, aceda à [Área de Cliente OVHcloud](/links/manager):
 
 - **Exchange**: Clique em `Microsoft`{.action} na barra à esquerda e, a seguir, em `Exchange`{.action}.. 
 - **Email Pro**: Clique em `Email Pro`{.action}.

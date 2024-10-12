@@ -1,7 +1,7 @@
 ---
 title: "Zabezpieczenie serwera VPS"
 excerpt: "Dowiedz się, jak wdrożyć podstawowe środki bezpieczeństwa, aby chronić Twój serwer VPS przed atakami i nieautoryzowanym dostępem"
-updated: 2024-02-20
+updated: 2024-10-07
 ---
 
 > [!primary]
@@ -29,7 +29,7 @@ Kiedy zamawiasz serwer VPS, możesz wybrać dystrybucję lub system operacyjny d
 
 > [!primary]
 >
-> Pamiętaj, że jest to przewodnik oparty na systemie operacyjnym Ubuntu Server. Niektóre polecenia należy dostosować do używanej dystrybucji, a niektóre z nich wymagają użycia narzędzi zewnętrznych. W razie potrzeby skorzystaj z oficjalnej dokumentacji dotyczącej tych aplikacji.
+> Pamiętaj, że jest to ogólny przewodnik przygotowany na podstawie systemów operacyjnych Ubuntu, Debian i CentOS. Niektóre polecenia należy dostosować do używanej dystrybucji, a niektóre z nich wymagają użycia narzędzi zewnętrznych. W razie potrzeby skorzystaj z oficjalnej dokumentacji dotyczącej tych aplikacji.
 >
 > Jeśli skonfigurujesz Twój pierwszy VPS OVHcloud, zapoznaj się [z przewodnikiem dotyczącym uruchomienia serwera VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps).
 >
@@ -41,23 +41,47 @@ Poniższe przykłady zakładają, że jesteś zalogowany jako [użytkownik z du�
 Producenci dystrybucji i systemów operacyjnych proponują często aktualizacje pakietów ze względów bezpieczeństwa.<br>
 Aktualizacja dystrybucji lub systemu operacyjnego jest kluczowa dla zabezpieczenia serwera VPS.
 
-Aktualizacja ta zostanie wykonana w dwóch etapach.
-
-- Aktualizacja listy pakietów:
-
-```bash
-sudo apt update
-```
-
-- Aktualizacja pakietów:
-
-```bash
-sudo apt upgrade
-```
+> [!tabs]
+> Ubuntu
+>>
+>> Aktualizację tę przeprowadza się w dwóch krokach:
+>> 
+>> - Aktualizacja listy pakietów:
+>> 
+>> ```bash
+>> sudo apt update
+>> ```
+>> 
+>> - Aktualizacja aktualnych pakietów:
+>> 
+>> ```bash
+>> sudo apt upgrade
+>> ```
+>>
+> Debian
+>> 
+>> ```bash
+>> sudo apt update && sudo apt upgrade
+>> ```
+>>
+>> Polecenie jest identyczne z Ubuntu, ponieważ Debian i Ubuntu używają `apt`.
+>>
+> CentOS
+>>
+>> ```bash
+>> sudo yum update
+>> ```
+>>
+>> W przypadku CentOS polecenie aktualizacji systemu operacyjnego używa `yum` lub `dnf` w zależności od wersji.
 
 Operacja ta musi być wykonywana regularnie, aby utrzymać system na bieżąco.
 
 ### Zmień domyślny port SSH <a name="changesshport"></a>
+
+> [!primary]
+>
+> W tej sekcji poniższe wiersze poleceń są takie same w przypadku Ubuntu, Debiana i CentOS.
+>
 
 Jedna z pierwszych operacji, jakie należy przeprowadzić na serwerze, to konfiguracja portu wykorzystywanego do nasłuchiwania usługi SSH. Domyślnie jest on zdefiniowany na **porcie 22**, więc próby włamania na serwerze przez roboty będą wskazywać na ten port jako priorytet.
 Zmiana tego parametru na inny port to prosty sposób na wzmocnienie ochrony serwera przed automatycznymi atakami.
@@ -100,7 +124,7 @@ Powinno to wystarczyć do wdrożenia zmian. W przeciwnym razie zrestartuj serwer
 
 W przypadku najnowszych wersji Ubuntu, konfiguracja SSH jest zarządzana w pliku `ssh.socket`.
 
-Aby zaktualizować port SSH, edytuj wiersz `Listenstream` w pliku konfiguracyjnym za pomocą wybranego edytora tekstu (`nano` użyty w tym przykładzie):
+Aby zaktualizować port SSH, edytuj wiersz `ListenStream` w pliku konfiguracyjnym za pomocą wybranego edytora tekstu (`nano` użyty w tym przykładzie):
 
 ```console
 [Socket]
@@ -155,9 +179,21 @@ Pakiet ten jest zalecany, a w niektórych przypadkach nawet niezbędny, do ochro
 
 Aby zainstalować pakiet oprogramowania, użyj następującej komendy:
 
-```bash
-sudo apt install fail2ban
-```
+> [!tabs]
+> Ubuntu i Debian
+>> 
+>> ```bash
+>> sudo apt install fail2ban
+>> ```
+>>
+> CentOS
+>>
+>> Na CentOS 7 i CentOS 8 (lub RHEL) najpierw zainstaluj repozytorium EPEL (**E**xtra **P**ackages for **E**nterprise **L**inux), a następnie Fail2ban:
+>>
+>> ```bash
+>> sudo yum install epel-release
+>> sudo yum install fail2ban
+>> ```
 
 Możesz spersonalizować pliki konfiguracyjne Fail2ban, aby chronić usługi wystawione na działanie publicznego internetu przed próbami wielokrotnego połączenia.
 
@@ -211,6 +247,14 @@ Najlepsze podejście polega na aktywowaniu Fail2ban tylko w przypadku usług, kt
 Po zakończeniu modyfikacji zapisz plik i zamknij edytor.
 
 Zrestartuj usługę, aby upewnić się, że działa ona z zastosowanymi ustawieniami:
+
+1\. Polecenie zalecane `systemctl`:
+
+```bash
+sudo systemctl restart fail2ban
+```
+
+2\. Polecenie z `service` (stara metoda, nadal kompatybilna):
 
 ```bash
 sudo service fail2ban restart

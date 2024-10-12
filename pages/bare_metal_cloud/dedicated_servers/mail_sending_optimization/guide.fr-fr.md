@@ -1,7 +1,7 @@
 ---
-title: Optimiser l'envoi d'e-mails
-excerpt: Découvrez comment envoyer des e-mails en limitant le risque de spam
-updated: 2024-01-24
+title: Comment éviter que vos e-mails ne soient marqués comme spam
+excerpt: "Découvrez comment appliquer les bonnes pratiques d'envoi d'e-mails afin de limiter les risques de blocage des e-mails légitimes par la protection contre les spams"
+updated: 2024-09-24
 ---
 
 ## Objectif
@@ -14,7 +14,7 @@ De manière générale, les politiques anti-spam sont strictes. Afin de fluidifi
 >
 > OVHcloud met à votre disposition des services dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs. Il vous appartient de ce fait d'en assurer la gestion logicielle et la sécurisation au quotidien. Nous mettons à votre disposition ce guide afin de vous accompagner au mieux dans ces tâches courantes.
 >
-> Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. Plus d'informations dans la section [Aller plus loin](#aller-plus-loin) de ce guide.
+> Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. Plus d'informations dans la section [Aller plus loin](#aller-plus-loin) de ce guide.
 >
 
 ## Prérequis
@@ -29,9 +29,11 @@ De manière générale, les politiques anti-spam sont strictes. Afin de fluidifi
 
 ## En pratique
 
-### Configurer l'enregistrement SPF <a name="spfrecord"></a>
+<a name="spfrecord"></a>
 
-Dans le cas d'une infrastructure dédiée (serveur dédié, VPS, instance Public Cloud ou Hosted Private Cloud), l'enregistrement SPF (Sender Policy Framework) optimal se présente sous la forme :  `v=spf1 ip4:ipv4_du_serveur ~all`.
+### Configurer l'enregistrement SPF
+
+Dans le cas d'une infrastructure dédiée (serveur dédié, VPS, instance Public Cloud ou Hosted Private Cloud), l'enregistrement SPF (Sender Policy Framework) optimal se présente sous la forme : `v=spf1 ip4:ipv4_du_serveur ~all`.
 
 > [!primary]
 >
@@ -57,44 +59,19 @@ L'enregistrement DMARC (Domain-based Message Authentication, Reporting and Confo
 
 Pour plus d'informations, consultez notre guide sur la [configuration d'un enregistrement DMARC](/pages/web_cloud/domains/dns_zone_dmarc).
 
-### Configurer le *reverse IP* <a name="reverseip"></a>
+<a name="reverseip"></a>
 
-Toujours dans le but d'optimiser l'envoi et de réduire les risques de blocage de vos e-mails, un *reverse IP* doit être configuré avec votre nom de domaine.
+### Configurer la résolution inverse des IP
 
-Vous devez tout d'abord créer un enregistrement A dans la zone DNS de votre domaine avec l'adresse IP de votre serveur comme cible.
+Afin d'optimiser davantage l'envoi d'e-mails et de diminuer le risque de blocage de vos e-mails, so "vous pouvez également configurer la résolution DNS inverse (PTR record) avec votre nom de domaine.
+
+Vous devez tout d'abord créer un enregistrement `A` dans la zone DNS de votre domaine avec l'adresse IP de votre serveur comme cible.
 
 Si vos serveurs DNS sont gérés par OVHcloud, consultez notre guide sur [l'édition d'une zone DNS OVHcloud via votre espace client](/pages/web_cloud/domains/dns_zone_edit).
 
 Une fois la zone DNS de votre nom de domaine modifiée, un temps de propagation de 24 heures maximum est nécessaire afin que les modifications soient effectives.
 
-Une fois cela fait, ajoutez l'enregistrement PTR (également connu sous le nom de *reverse*) :
-
-Dans votre [espace client OVHcloud](/links/manager){.external}, rendez-vous dans la section `Bare Metal Cloud`{.action}, puis ouvrez `Network`{.action}. Cliquez ensuite sur `IP`{.action}. 
-
-Si vous souhaitez configurer le reverse DNS sur une adresse Additional IP, cliquez sur l'onglet `Additional IP`{.action}.
-
-Le menu déroulant sous « **Mes adresses IP publiques et services associés** » vous permet de filtrer vos services par catégorie.
-
-![Reverse IP](images/filteripds.png){.thumbnail}
-
-Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne correspondante puis sur `Modifier le reverse`{.action} :
-
-![Reverse IP](images/addreverse2022.png){.thumbnail}
-
-Entrez votre nom de domaine dans la section `Reverse DNS` et cliquez sur `Valider`{.action}.
-
-![Reverse IP](images/enterreverse.png){.thumbnail}
-
-> [!primary]
-> Lorsque vous entrez votre nom de domaine dans le *reverse*, il vérifie immédiatement si l'enregistrement A renvoie à la même IP. Ceci est utilisé dans les procédures anti-spam, donc votre enregistrement A doit être valide et propagé. Il y a certaines règles à suivre lors de la saisie du *reverse* :
->
->  - le *reverse* ne peut pas commencer par un `-`
->  - le *reverse* ne peut pas comporter plus de 80 caractères
->  - le *reverse* ne peut pas contenir de caractères majuscules
->  - le *reverse* doit se terminer par un `.`
->
-> Exemple : « MyDomain.ca » dans l'enregistrement *reverse* serait **mydomain.ca.**
->
+Pour configurer le chemin du *reverse* DNS dans [l'espace client OVHcloud](/links/manager) veuillez vous référer à [notre guide dédié](/pages/bare_metal_cloud/virtual_private_servers/configuring-reverse-dns).
 
 ### Cas spécifiques d'envois d'e-mails
 
@@ -127,7 +104,7 @@ Confirmez les informations et la souscription à JMRP/SNDS sera terminée.
 
 Une fois ces actions effectuées, si votre IP apparaît comme bloquée, vous pourrez alors demander à la débloquer via la [procédure junkmail](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&locale=en-us&ccsid=635857671692853062). La procédure prend généralement 48 heures.
 
-Microsoft peut parfois vous demander la date de la première facturation de votre IP/serveur. Dans ce cas de figure, envoyez à Microsoft une copie de votre facture et mentionnez votre IP/serveur (ex : host nsXXX) dans votre réponse.
+Microsoft peut parfois vous demander la date de la première facturation de votre IP/serveur. Dans ce cas de figure, envoyez à Microsoft une copie de votre facture et mentionnez votre IP/serveur (exemple : host ns1111111.ip-203-0-113.eu) dans votre réponse.
 
 Pour plus d'informations, veuillez ouvrir une [demande d'assistance](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&ccsid=6364926882037750656) auprès de Microsoft.
 
@@ -135,7 +112,7 @@ Pour plus d'informations, veuillez ouvrir une [demande d'assistance](https://sup
 >
 > **Refus de Microsoft**
 >
-> Il est possible que Microsoft refuse de débloquer votre ou vos adresse(s) IP, auquel cas OVHcloud ne pourra pas intervenir. Il est important de respecter les bonnes pratiques de Microsoft.
+> Il est possible que Microsoft refuse de débloquer votre adresse IP, auquel cas OVHcloud ne pourra pas intervenir. Il est important de respecter les bonnes pratiques de Microsoft.
 >
 
 #### Vers un serveur Gmail
@@ -146,7 +123,9 @@ L'ajout d'enregistrements spécifiques, tel qu'un enregistrement DMARC (Domain-b
 
 Il peut être intéressant d'utiliser un site comme [Mail Tester](http://www.mail-tester.com/) afin de vérifier que tous vos paramétrages sont corrects.
 
-## Aller plus loin <a name="go-further"></a>
+<a name="go-further"></a>
+
+## Aller plus loin
 
 [Améliorer la sécurité des e-mails via un enregistrement DKIM](/pages/web_cloud/domains/dns_zone_dkim)
 
@@ -154,6 +133,6 @@ Il peut être intéressant d'utiliser un site comme [Mail Tester](http://www.mai
 
 [Améliorer la sécurité des e-mails via un enregistrement DMARC](/pages/web_cloud/domains/dns_zone_dmarc)
 
-Pour être accompagné sur la mise en place de vos solutions OVHcloud, contactez notre [réseau de partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

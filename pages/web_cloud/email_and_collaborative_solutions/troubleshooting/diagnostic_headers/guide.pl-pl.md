@@ -45,7 +45,7 @@ Aby pobrać plik `.eml`, sprawdź sekcję [Webmail](#webmail).
 
 ## Wymagania początkowe
 
-- Posiadanie konta e-mail w jednym z naszych [rozwiązań e-mail OVHcloud](https://www.ovhcloud.com/pl/emails/) lub rozwiązania zewnętrznego.
+- Posiadanie konta e-mail w jednym z naszych [rozwiązań e-mail OVHcloud](/links/web/emails) lub rozwiązania zewnętrznego.
 - Dostęp do konta e-mail poprzez interfejs webmail lub program pocztowy.
 
 ## W praktyce
@@ -57,11 +57,11 @@ Poniżej znajduje się niewyczerpujący wykaz elementów, które mogą składać
 
 - Pole `Received` jest widoczne w nagłówku przy każdym przejściu z wiadomości e-mail na serwer poczty wychodzącej (SMTP). Nazwa hosta serwera jest zwykle widoczna wraz z adresem IP i datą. Pola `Received` są klasyfikowane od najświeższego przejścia do najstarszego przejścia na serwer:
 <pre class="bgwhite"><code>
-Received: from mxplan7.mail.ovh.net (unknown [10.109.143.250])
+Received: from MX Plan7.mail.ovh.net (unknown [10.109.143.250])
 	by mo3005.mail-out.ovh.net (Postfix) with ESMTPS id 448F4140309
 	for &lt;john@mydomain.ovh&gt; ;Wed, 30 Jun 2021 13:12:40 +0000 (UTC)
 </code></pre>
-  *Wiadomość e-mail została wysłana z serwera mxplan7.mail.ovh.net do serwera mo3005.mail-out.ovh.net w dniu 30 czerwca 2021 r. o godz. 13:12:40 (Strefa czasowa UTC)*
+  *Wiadomość e-mail została wysłana z serwera MX Plan7.mail.ovh.net do serwera mo3005.mail-out.ovh.net w dniu 30 czerwca 2021 r. o godz. 13:12:40 (Strefa czasowa UTC)*
 
 - Pole `Return-Path` odpowiada adresowi zwrotu, jeśli wysłanie wiadomości nie powiodło się. adres zwrotny jest zazwyczaj adresem, który wysłał przesyłkę.
 <pre class="bgwhite"><code>
@@ -164,7 +164,7 @@ Wybierz e-mail, dla którego chcesz wyświetlić nagłówek. Kliknij **strzałk�
 
 Zobacz także nasz samouczek wideo:
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UeNdpFwdXm0?start=36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/UeNdpFwdXm0?start=36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ##### **Pobierz plik .eml**
 

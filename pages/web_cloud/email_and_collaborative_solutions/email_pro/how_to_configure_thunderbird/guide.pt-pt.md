@@ -1,7 +1,7 @@
 ---
-title: 'Configurar uma conta E-mail Pro no Thunderbird para Windows'
+title: 'E-mail Pro - Configure sua conta de e-mail no Thunderbird para macOS'
 excerpt: 'Saiba como configurar o seu endereço E-mail Pro no Thunderbird para Windows'
-updated: 2021-08-26
+updated: 2024-10-09
 ---
 
 > [!primary]
@@ -18,23 +18,22 @@ As contas E-mail Pro podem ser configuradas em vários softwares de e-mail compa
 >
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção «Quer saber mais?» deste guia.
-> 
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](/links/partner) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção «Quer saber mais?» deste guia.
 
 ## Requisitos
 
-- Ter um endereço de [E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/).
+- Ter um endereço de [E-mail Pro](/links/web/email-pro).
 - Dispor do software Thunderbird instalado no seu Windows.
 - Dispor das credenciais do endereço de e-mail que pretende configurar.
- 
+
 ## Instruções
 
 > [!primary]
 >
 > No nosso exemplo, utilizamos a menção servidor: pro**?**.mail.ovh.net. Deverá substituir o "? " pelo número que designa o servidor do seu serviço E-mail Pro.
 >
-> Encontre este número na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na rubrica `Web Cloud`{.action} e, a seguir, `E-mail Pro`{.action}. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.
->
+> Encontre este número na sua [Área de Cliente OVHcloud](/links/manager), na rubrica `Web Cloud`{.action} e, a seguir, `E-mail Pro`{.action}. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.
+
 
 ### Adicionar a conta
 
@@ -59,7 +58,7 @@ No âmbito de uma configuração em **POP**, os valores são os seguintes:
 
 Após a configuração, a conta de e-mail está pronta a usar e pode começar a enviar e receber mensagens no seu dispositivo.
 
-A OVHcloud também disponibiliza uma aplicação web que permite aceder ao seu endereço de e-mail a partir de um browser. disponível no endereço <https://www.ovh.pt/mail/>. Para aceder, só precisa dos dados de acesso do seu endereço de e-mail. Para qualquer questão relativa à sua utilização, consulte o nosso manual [Consultar a sua conta Exchange a partir da interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
+A OVHcloud também disponibiliza uma aplicação web que permite aceder ao seu endereço de e-mail a partir de um browser. disponível no endereço [Webmail](/links/web/email). Para aceder, só precisa dos dados de acesso do seu endereço de e-mail. Para qualquer questão relativa à sua utilização, consulte o nosso manual [Consultar a sua conta Exchange a partir da interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
 ### Recuperar um backup do seu endereço de e-mail
 
@@ -71,8 +70,7 @@ Se tiver de efetuar uma operação suscetível de causar a perda dos dados da su
 >
 > No nosso exemplo, utilizamos a menção servidor: pro**?**.mail.ovh.net. Deverá substituir o "? " pelo número que designa o servidor do seu serviço E-mail Pro.
 >
-> Encontre este número na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na rubrica `Web Cloud`{.action} e, a seguir, `E-mail Pro`{.action}. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.
->
+> Encontre este número na sua [Área de Cliente OVHcloud](/links/manager), na rubrica `Web Cloud`{.action} e, a seguir, `E-mail Pro`{.action}. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.
 
 Se a sua conta de e-mail já está configurada e tem de aceder aos parâmetros da conta para os alterar:
 
@@ -85,11 +83,15 @@ Se a sua conta de e-mail já está configurada e tem de aceder aos parâmetros d
 
 ![Thunderbird](images/thunderbird-win-emailpro05.png){.thumbnail}
 
-- Para modificar os parâmetros associados ao **envio**dos seus e-mails, clique em `Servidor de saída (SMTP)`{.action} no fundo da coluna da esquerda.
+- Para modificar os parâmetros associados ao **envio** dos seus e-mails, clique em `Servidor de saída (SMTP)`{.action} no fundo da coluna da esquerda.
 - Clique no endereço de e-mail em questão na lista e, a seguir, em `Alterar`{.action}.
 
 ![Thunderbird](images/thunderbird-win-emailpro06.png){.thumbnail}
 
 ## Saiba mais
+
+> [!primary]
+>
+> Para obter mais informações sobre a configuração de um endereço de e-mail a partir da aplicação Thunderbird no Windows, consulte [Central de Ajuda do Mozilla](https://support.mozilla.org/pt-BR/kb/configuracao-manual-de-conta#thunderbird:win10:tb115).
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

@@ -12,7 +12,7 @@ Le niveau RAID par défaut pour les installations de serveurs OVHcloud est RAID 
 
 **Ce guide va vous aider à configurer la matrice RAID de votre serveur dans l'éventualité où elle doit être reconstruite en raison d'une corruption ou d'une panne de disque.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/t_BL_uOXQVA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/t_BL_uOXQVA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Prérequis
 

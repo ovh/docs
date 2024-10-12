@@ -34,8 +34,8 @@ Nadawca (sender) przesyła wiadomość e-mail do odbiorców z listy mailingowej.
 
 ## Wymagania początkowe
 
-- Posiadanie usługi kont e-mail w postaci co najmniej pakietu MX Plan 100 lub [hostingu WWW](https://www.ovhcloud.com/pl/web-hosting/){.external} obsługującego listy mailingowe.
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
+- Posiadanie usługi kont e-mail w postaci co najmniej pakietu MX Plan 100 lub [hostingu WWW](/links/web/hosting) obsługującego listy mailingowe.
+- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 
 ## W praktyce
 
@@ -45,7 +45,7 @@ Nadawca (sender) przesyła wiadomość e-mail do odbiorców z listy mailingowej.
 >
 > Lista mailingowa zachowuje się jak adres e-mail. Nie można zmienić jej nazwy. Jeśli nazwa listy mailingowej nie jest już dla Ciebie odpowiednia, utwórz nową i usuń starą.
 
-Aby utworzyć listę mailingową, przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i wybierz kartę `Web Cloud`{.action} znajdującą się u góry.
+Aby utworzyć listę mailingową, przejdź do [Panelu klienta OVHcloud](/links/manager) i wybierz kartę `Web Cloud`{.action} znajdującą się u góry.
 
 Po zalogowaniu kliknij w sekcję `E-maile`{.action}, a następnie nazwę danej domeny. Przejdź do karty `Listy mailingowe`{.action} w Twojej usłudze e-mail.
 

@@ -65,7 +65,7 @@ Pour des raisons de sécurité et de confidentialité, il n'est pas possible de 
 
 ### Comment limiter la réception de spams ?
 
-Pour limiter la réception de SPAMS, vous pouvez mettre en place des filtres sur vos e-mails (appelées « Filtres » sur l'offre MXPlan). Ils auront pour but de supprimer ou de déplacer des e-mails dans le dossier « courriers indésirables » dès leur réception.
+Pour limiter la réception de SPAMS, vous pouvez mettre en place des filtres sur vos e-mails (appelées « Filtres » sur l'offre MX Plan). Ils auront pour but de supprimer ou de déplacer des e-mails dans le dossier « courriers indésirables » dès leur réception.
 Pour ce faire, connectez-vous à votre [espace client OVHcloud](/links/manager), puis dans la rubrique `E-mail`, sélectionnez le domaine concerné , l'onglet `E-mail`{.action} puis dans la colonne `Filtre`{.action}, cliquez sur le bouton d'action.
 
 Si la colonne `Filtre`{.action} n'est pas présente dans votre espace-client, la création de filtres doit alors s'effectuer via des règles de gestion de boîte de réception dans le [webmail](/links/web/email). Vous pouvez consulter le guide suivant pour plus de détails : [Règles de boîte de réception depuis l'interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan).
@@ -74,11 +74,11 @@ Si la colonne `Filtre`{.action} n'est pas présente dans votre espace-client, la
 
 ### Mon adresse e-mail est saturée, je n'ai plus d'espace. Que puis-je faire ?
 
-Si vous avez souscrit à [l'une de nos offres e-mail OVHcloud](https://www.ovhcloud.com/fr/emails/) et que l'un de vos comptes e-mail est saturé, consultez notre guide « [Gérer l'espace de stockage d'un compte e-mail](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota) ». Ce guide vous aidera à déterminer si vous pouvez optimiser l'espace existant ou s’il est nécessaire de changer d'offre e-mail pour augmenter la capacité de stockage.
+Si vous avez souscrit à [l'une de nos offres e-mail OVHcloud](/links/web/emails) et que l'un de vos comptes e-mail est saturé, consultez notre guide « [Gérer l'espace de stockage d'un compte e-mail](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota) ». Ce guide vous aidera à déterminer si vous pouvez optimiser l'espace existant ou s’il est nécessaire de changer d'offre e-mail pour augmenter la capacité de stockage.
 
 ### Je souhaite changer d'offre e-mail pour mon adresse, comment puis-je le faire tout en gardant son contenu ?
 
-Vous souhaitez changer [d'offre e-mail](https://www.ovhcloud.com/fr/emails/) pour bénéficier de plus d'espace et de fonctionnalités, mais vous souhaitez conserver le contenu de votre adresse existante. Pour cela nous vous invitons à suivre l'un de nos guides de migration :
+Vous souhaitez changer [d'offre e-mail](/links/web/emails) pour bénéficier de plus d'espace et de fonctionnalités, mais vous souhaitez conserver le contenu de votre adresse existante. Pour cela nous vous invitons à suivre l'un de nos guides de migration :
 
 - [Migrer manuellement votre adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)
 - [Migrer des comptes e-mail via OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm)

@@ -1,8 +1,11 @@
 ---
 title: 'Configurer le réseau sur ESXi sur les gammes High Grade & SCALE'
 excerpt: 'Découvrez comment configurer le réseau sur ESXi sur les gammes High Grade & SCALE.'
-updated: 2024-07-08
+updated: 2024-09-13
 ---
+
+> [!warning]
+> L'hyperviseur ESXi n'est plus supporté par OVHcloud. Retrouvez plus d'informations sur [cette page dédiée](/pages/bare_metal_cloud/dedicated_servers/esxi-end-of-support).
 
 ## Objectif
 

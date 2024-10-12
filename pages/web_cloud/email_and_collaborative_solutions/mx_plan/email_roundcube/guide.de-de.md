@@ -15,7 +15,7 @@ Mit einem OVHcloud MX Plan können Sie E-Mails über eine Software oder ein Webm
 
 ## Voraussetzungen
 
-- Sie verfügen über einen OVHcloud **MX Plan**, als E-Mail-Dienst in unseren [Webhosting-Angeboten](https://www.ovhcloud.com/de/web-hosting/) sowie in [Kostenloses Hosting 100M](https://www.ovhcloud.com/de/domains/free-web-hosting/) enthalten oder separat als eigenständige Lösung bestellbar.
+- Sie verfügen über einen OVHcloud **MX Plan**, als E-Mail-Dienst in unseren [Webhosting-Angeboten](/links/web/hosting) sowie in [Kostenloses Hosting 100M](/links/web/domains-free-hosting) enthalten oder separat als eigenständige Lösung bestellbar.
 - Sie verfügen über die Logindaten des MX Plan E-Mail-Accounts, den Sie verwenden möchten. Weitere Informationen finden Sie in unserer Anleitung "[Erste Schritte mit MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)".
 
 ## In der praktischen Anwendung
@@ -55,7 +55,7 @@ Mit einem OVHcloud MX Plan können Sie E-Mails über eine Software oder ein Webm
 
 ### Einloggen in Roundcube Webmail <a name="#roundcube-connexion"></a>
 
-Gehen Sie auf die Seite <https://www.ovh.com/de/mail/>. Geben Sie eine E-Mail-Adresse und das Passwort ein und klicken Sie dann auf `Login`{.action}. 
+Gehen Sie auf die Seite [Webmail](/links/web/email). Geben Sie eine E-Mail-Adresse und das Passwort ein und klicken Sie dann auf `Login`{.action}. 
 
 ![Hosting](images/webmail_login.png){.thumbnail}
 
@@ -348,11 +348,11 @@ Um eine Antwort hinzuzufügen, klicken Sie unten in der Spalte `Schnellantworten
 
 ### Auto-Responder hinzufügen <a name="automatic-respond"></a>
 
-Um Ihrem E-Mail-Account eine automatische Antwort hinzufügen, wenn Sie abwesend oder nicht verfügbar sind, kann ein Auto-Responder genutzt werden. Diese Funktion kann aber nicht im Webmail, sondern nur im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/de/&ovhSubsidiary=de) im Verwaltungsinterface Ihrer E-Mail-Accounts aktiviert werden. Lesen Sie unsere Anleitung "[Einrichten von Auto-Antworten für E-Mails](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses/)".
+Um Ihrem E-Mail-Account eine automatische Antwort hinzufügen, wenn Sie abwesend oder nicht verfügbar sind, kann ein Auto-Responder genutzt werden. Diese Funktion kann aber nicht im Webmail, sondern nur im [OVHcloud Kundencenter](/links/manager) im Verwaltungsinterface Ihrer E-Mail-Accounts aktiviert werden. Lesen Sie unsere Anleitung "[Einrichten von Auto-Antworten für E-Mails](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses/)".
 
 ### Passwort Ihres E-Mail-Accounts ändern <a name="password"></a>
 
-Um das Passwort Ihres E-Mail-Accounts zu ändern, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/de/&ovhSubsidiary=de) im Verwaltungsinterface Ihres E-Mail-Accounts ein. Lesen Sie unsere Anleitung "[Passwort eines E-Mail-Accounts ändern](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password/)".
+Um das Passwort Ihres E-Mail-Accounts zu ändern, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) im Verwaltungsinterface Ihres E-Mail-Accounts ein. Lesen Sie unsere Anleitung "[Passwort eines E-Mail-Accounts ändern](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password/)".
 
 ### E-Mail verfassen <a name="email-writing"></a>
 

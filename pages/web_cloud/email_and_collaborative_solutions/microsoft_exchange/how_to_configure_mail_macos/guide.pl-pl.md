@@ -1,7 +1,7 @@
 ---
 title: Exchange - Konfiguracja konta e-mail w aplikacji Mail na macOS
 excerpt: Dowiedz się, jak skonfigurować konto Exchange w aplikacji Mail na macOS
-updated: 2024-04-16
+updated: 2024-10-09
 ---
 
 <style>
@@ -81,7 +81,7 @@ Konta Exchange mogą być skonfigurowane w  kompatybilnych programach pocztowych
 
 Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz zacząć wysyłać i odbierać wiadomości.
 
-OVHcloud oferuje również aplikację internetową umożliwiającą korzystanie z Twojego konta e-mail przy użyciu przeglądarki internetowej. Jest ona dostępna pod adresem <https://www.ovhcloud.com/pl/mail/>. Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail. W przypadku pytań dotyczących korzystania z tego konta, skorzystaj z naszego przewodnika [Korzystanie z interfejsu Outlook Web App wraz z kontem Exchange](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
+OVHcloud oferuje również aplikację internetową umożliwiającą korzystanie z Twojego konta e-mail przy użyciu przeglądarki internetowej. Jest ona dostępna pod adresem [Webmail](/links/web/email). Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail. W przypadku pytań dotyczących korzystania z tego konta, skorzystaj z naszego przewodnika [Korzystanie z interfejsu Outlook Web App wraz z kontem Exchange](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
 ### Pobierz kopię zapasową Twojego konta e-mail
 
@@ -97,6 +97,10 @@ Jeśli Twoje konto e-mail zostało już skonfigurowane i musisz mieć dostęp do
 ![mailmac](images/mail-mac-exchange05.png){.thumbnail}
 
 ## Sprawdź również
+
+> [!primary]
+>
+> Aby uzyskać więcej informacji na temat konfigurowania konta e-mail z poziomu aplikacji Mail na urządzeniach z systemem macOS, skorzystaj z [Centrum pomocy Apple](https://support.apple.com/pl-pl/guide/mail/mail35803/mac).
 
 [FAQ e-maile](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 

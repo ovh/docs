@@ -1,7 +1,7 @@
 ---
 title: "Acelerar un sitio web utilizando la CDN"
 excerpt: "Descubra cómo acelerar la carga de un sitio web en el alojamiento utilizando el servicio CDN"
-updated: 2024-03-12
+updated: 2024-10-07
 ---
 
 > [!primary]
@@ -252,9 +252,20 @@ Una vez que haya configurado las reglas y opciones, haga clic en `Aplicar la con
 
 ### Ver las estadísticas de la CDN
 
-En la pestaña `Multisitios`{.action} de su alojamiento, bajo la tabla, podrá consultar las estadísticas de su CDN, indicando el número de peticiones por minutos medidas sobre el mismo.
+Para acceder a las estadísticas de la CDN, lleve a cabo las siguientes acciones:
 
-![CDN](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-cdn/statistics.png){.thumbnail}
+1. Conéctese a su [área de cliente de OVHcloud](/links/manager).
+2. En la línea situada en la parte superior del área de cliente, haga clic en la pestaña `Web Cloud`{.action}.
+3. En la columna izquierda, haga clic en el menú desplegable `Alojamientos`{.action}.
+4. Seleccione el alojamiento web correspondiente.
+5. En la nueva página, haga clic en la pestaña `Estadísticas y logs`{.action}.
+6. En la sección `Estadísticas de visitas`, haga clic en el botón `Ver las estadísticas`{.action}.
+7. Será redirigido a la herramienta **OVHcloud Web Statistics**. En esta herramienta, haga clic en el formulario titulado `Selección del dominio`{.action} situado en la parte superior de la página y seleccione un dominio para el que esté activa la CDN.
+8. En la columna derecha, haga clic en la pestaña `Caché`{.action}.
+
+Ya puede consultar las estadísticas de la CDN para su dominio.
+
+Si lo necesita, consulte nuestra guía "[Web hosting - Consultar las estadísticas y logs de un sitio web](/pages/web_cloud/web_hosting/logs_and_statistics)" para más información.
 
 ### ¿Cómo guardar en caché los archivos en la CDN?
 

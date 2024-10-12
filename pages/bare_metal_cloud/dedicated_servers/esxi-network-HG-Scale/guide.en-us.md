@@ -1,8 +1,11 @@
 ---
 title: 'Configuring the network on ESXi on the High Grade & SCALE ranges'
 excerpt: 'Find out how to configure the network on VMware ESXi on the High Grade & SCALE ranges'
-updated: 2024-07-08
+updated: 2024-09-13
 ---
+
+> [!warning]
+> The ESXi hypervisor is no longer supported by OVHcloud. Find more information on [this dedicated page](/pages/bare_metal_cloud/dedicated_servers/esxi-end-of-support).
 
 ## Objective
 

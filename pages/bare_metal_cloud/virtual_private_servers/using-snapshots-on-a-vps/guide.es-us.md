@@ -1,7 +1,7 @@
 ---
 title: "Uso de instantáneas Snapshots en un servidor virtual privado (VPS)"
 excerpt: "Cómo activar y usar la opción Instantáneas  en el panel de control de OVHcloud"
-updated: 2024-04-15
+updated: 2024-09-18
 ---
 
 > [!primary]
@@ -30,11 +30,16 @@ Conéctese al [Panel de configuración de OVHcloud](/links/manager), acceda a la
 
 ### Paso 1: Suscribirse a la opción «Instantáneas»
 
-Acceda a la pestaña `Inicio`{.action} y desplácese hacia abajo hasta el cuadro «Resumen de opciones». Si el estado de «Snapshot» ya es «Activado», vaya directamente al paso 2. Si «Snapshot» todavía no está activado, haga clic en `...`{.action} junto a la opción «Instantáneas» y, seguidamente, en `Contratar`{.action} (en el menú contextual).
+Acceda a la pestaña `Inicio`{.action} y desplácese hacia abajo hasta el cuadro **Resumen de opciones**  
+. Si el estado de "Snapshot" ya es "Activado", vaya directamente al paso 2. Si "Snapshot" todavía no está activado, haga clic en `...`{.action} junto a la opción "Snapshot" y, seguidamente, en `Contratar`{.action} (en el menú contextual).
 
 ![snapshotvps](images/snapshot_vps_step1b.png){.thumbnail}
 
 En el siguiente paso, preste atención a la información sobre los precios y, a continuación, haga clic en `Contratar`{.action}. Se le guiará por el proceso de contratación y recibirá un mensaje de correo electrónico de confirmación.
+
+Para dar de baja la opción de servicio, haga clic en el botón `...`{.action} situado junto a "Snapshot" y seleccione `Dar de baja`{.action} en el menú contextual.
+
+![snapshotvps](images/snapshot_vps_cancel.png){.thumbnail}
 
 ### Paso 2: Tomar una instantánea
 

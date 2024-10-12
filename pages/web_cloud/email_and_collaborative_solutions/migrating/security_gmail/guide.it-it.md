@@ -22,7 +22,7 @@ Visualizzi il seguente messaggio, che fornisce i dettagli del tentativo di utili
 
 ![omm](images/OMM-gmail-security-02.png){.thumbnail}
 
-La nuova pagina ti informa che, nonostante la conferma da parte tua, è stato attivato un blocco. Quindi clicca direttamente su questo link: [myaccount.google.com/lesssecureapps](https://myaccount.google.com/lesssecureapps){.external}
+La nuova pagina ti informa che, nonostante la conferma da parte tua, è stato attivato un blocco. Quindi clicca direttamente su questo link: [myaccount.google.com/lesssecureapps](https://myaccount.google.com/lesssecureapps)
 
 ![omm](images/OMM-gmail-security-03.png){.thumbnail}
 
@@ -51,4 +51,4 @@ Dopo la convalida, questo messaggio ti conferma che la tua scelta è stata presa
 
 ## Per saperne di più
 
-[“Migrare un account Gmail verso OVHcloud con OVH Mail Migrator”](/pages/web_cloud/email_and_collaborative_solutions/migrating/migrate_gmail_to_ovhcloud_by_omm){.external}
+[“Migrare un account Gmail verso OVHcloud con OVH Mail Migrator”](/pages/web_cloud/email_and_collaborative_solutions/migrating/migrate_gmail_to_ovhcloud_by_omm)

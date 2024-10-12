@@ -1,7 +1,7 @@
 ---
 title: "Manage your server reboot with the OVHcloud Link Aggregation feature (EN)"
 excerpt: "Find out how to reboot your OVHcloud servers, working through your active private aggregation"
-updated: 2022-12-14
+updated: 2024-10-02
 ---
 
 ## Objective
@@ -31,6 +31,10 @@ We will present the case of [dedicated server(s)](/links/bare-metal/bare-metal) 
 This choice offers your infrastructure the best possible isolation/protection for your hosted service.<br>
 The only significant difference is that [private networks](/pages/network/ovhcloud_connect/occ-concepts-overview/#private-connection) do not have access to everything that does not belong to your infrastructure.<br>
 As a result, a server isolated by its private network prevents the boot mechanism. This means that when systems are booted via the **Netboot** (Network Boot) method, they are based on OVHcloud’s internal network and shared services.
+
+> [!warning]
+> Please note that with 2nd and 3rd generation Advance servers on a T3 architecture (one public interface and one vRack interface) it is not possible to have two interfaces in the vRack and configure PXE.
+>
 
 ### Netboot startup overview
 

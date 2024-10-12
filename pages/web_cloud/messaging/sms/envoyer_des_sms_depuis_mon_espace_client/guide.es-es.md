@@ -1,7 +1,7 @@
 ---
 title: Enviar SMS desde el área de cliente
 excerpt: Cómo enviar SMS fácilmente desde el área de cliente de OVHcloud
-updated: 2022-08-05
+updated: 2024-10-10
 ---
 
 ## Objetivo
@@ -13,13 +13,13 @@ Es posible enviar SMS directamente desde el área de cliente de OVHcloud.
 ## Requisitos
 
 - Disponer de una cuenta de SMS en OVHcloud con saldo de SMS.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Telecom`{.action}{.action} > `SMS`{.action}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager), en la sección `Telecom`{.action}{.action} > `SMS`{.action}.
 
 ![área de cliente Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
 ## Procedimiento
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y haga clic en `Telecom`{.action}. A continuación, haga clic en `SMS`{.action} y seleccione su cuenta de SMS.
+Conéctese al [área de cliente de OVHcloud](/links/manager) y haga clic en `Telecom`{.action}. A continuación, haga clic en `SMS`{.action} y seleccione su cuenta de SMS.
 
 En la pestaña **Inicio**, haga clic en el enlace `Enviar un SMS`{.action} del apartado **Quiero...**.
 
@@ -31,7 +31,7 @@ Una vez en la página de envío de los SMS, podrá configurar distintos parámet
 
 ![configurar remitente y destinatario](images/sms-send-control-panel02E.png){.thumbnail}
 
-En el desplegable `Remitente`{.action} (1), seleccione un número corto que permita responder (solo para las cuentas de OVHcloud Francia) o un remitente alfanumérico. Para más información sobre cómo crear un remitente, consulte el apartado [3. Elegir el remitente de SMS](./#3-elegir-el-remitente-del-sms) de esta guía.
+En el desplegable `Remitente`{.action} (1), seleccione un número corto que permita responder (solo para las cuentas de OVHcloud Francia) o un remitente alfanumérico. Para más información sobre cómo crear un remitente, consulte el apartado [3. Elegir el remitente de SMS](#3-elegir-el-remitente-del-sms) de esta guía.
 
 Introduzca a continuación el número del destinatario (2) en formato internacional (+346XXXXXXXX). También es posible enviar SMS a varios destinatarios. Puede hacerlo de dos formas diferentes:
 
@@ -63,11 +63,7 @@ Las tablas que ofrecemos a continuación recogen los caracteres autorizados con 
 
 Desplegando estas opciones, puede realizar un envío de SMS en diferido (1). Por defecto, el envío será inmediato.
 
-También puede configurar el tipo de envío (2), eligiendo entre los siguientes:
-
-- Estándar: Es el SMS más utilizado.
-- Flash: El SMS se muestra directamente en la pantalla del teléfono.
-- SIM: El SMS se guarda automáticamente en la tarjeta SIM del teléfono.
+También puede configurar el tipo de envío (2) (eligiendo entre Estándar, Flash y Sim) pero esta funcionalidad está desfasada.
 
 ### 3. Elegir el remitente del SMS
 
@@ -113,4 +109,4 @@ Existen diversas opciones a la hora de añadir un nuevo remitente de SMS (3):
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

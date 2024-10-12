@@ -1,7 +1,7 @@
 ---
 title: Change your block storage volume type
 excerpt: Find out how to change your volume type using Openstack
-updated: 2023-08-03
+updated: 2024-09-26
 ---
 
 ## Objective
@@ -20,6 +20,10 @@ When trying to change a block storage volume type to a "High speed gen2" one, th
 The migration policy is set by default to `Never` as the volume stays on the same CEPH cluster. However, for the "High speed gen2" type, the volume will need to be migrated to a new cluster.
 
 This modification can be made via Horizon or the Openstack CLI.
+
+> [!warning]
+> If the block storage volume is attached to an Instance, you must first detach it before proceeding. For more information, consult [this section](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#detach-a-volume) of the corresponding guide.
+>
 
 ### From the Horizon Interface
 

@@ -1,7 +1,7 @@
 ---
-title: "Using an EV SSL certificate for your website"
+title: "Web Hosting - Activating an EV SSL certificate"
 excerpt: "Find out how to order and install an EV SSL certificate for an OVHcloud web hosting plan"
-updated: 2023-06-08
+updated: 2024-10-10
 ---
 
 ## Objective

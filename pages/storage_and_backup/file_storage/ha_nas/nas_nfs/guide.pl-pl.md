@@ -1,7 +1,7 @@
 ---
 title: "Montowanie NAS-HA przy użyciu zasobów NFS"
 excerpt: "Dowiedz się, jak się zalogować do usługi NAS-HA przy użyciu protokołu NFS"
-updated: 2024-09-04
+updated: 2024-09-18
 ---
 
 > [!primary]
@@ -295,6 +295,7 @@ XX.XX.XX.XX:/zpool-XXXXXX/DIR on /mnt type nfs4 (rw,relatime,vers=4.2,rsize=1310
 
 - Ponieważ NFSv3 jest bezstanowy, wydajność z NFSv3 może być znacznie lepsza w przypadku niektórych obciążeń, zwłaszcza dla obciążeń, które wykonują wiele wywołań typu OPEN, CLOSE, SETATTR i GETATTR.
 - Jeśli na udziale NFS zainstalowana jest baza danych, należy pamiętać, że w przypadku rozłączenia sieci specyficzny mechanizm blokowania NFS v4.x może spowodować wyłączenie aplikacji (więcej informacji można znaleźć w rfc: <https://datatracker.ietf.org/doc/rfc3530/>).
+- Jeśli instalujesz wirtualne maszyny VMware na swoim koncie zasobów NFS, pamiętaj, że mechanizm blokowania zintegrowany z wersją NFSv4.x nie jest kompatybilny z trybem klastrowania zaimplementowanym na NAS-HA (klaster w trybie aktywnym/pasywnym, wyjaśniony na [tej stronie](/links/storage/nas-ha)). Konieczne jest zatem użycie protokołu NFSv3, ponieważ w przeciwnym razie dojdzie do utraty dostępu do datastore w przypadku incydentu dotykającego serwer główny lub w przypadku planowanych prac konserwacyjnych.
 
 ### Popraw wydajność odczytu, modyfikując atrybut read_ahead_kb
 
@@ -303,5 +304,5 @@ Niektóre jądra systemu Linux używają domyślnej wartości `read_ahead_kb` wy
 ## Sprawdź również
 
 Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
- 
+
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

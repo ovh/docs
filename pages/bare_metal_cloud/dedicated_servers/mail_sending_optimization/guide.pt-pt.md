@@ -1,6 +1,6 @@
 ---
-title: Otimizar o envio de e-mails
-excerpt: Saiba como enviar e-mails limitando o risco de spam
+title: Como evitar que os seus e-mails sejam marcados como spam
+excerpt: "Descubra como aplicar as boas práticas de envio de e-mails para reduzir os riscos de bloqueio de e-mails legítimos pela proteção contra spams"
 updated: 2024-01-24
 ---
 
@@ -61,44 +61,17 @@ O registo DMARC (Domain-based Message Authentication, Reporting and Conformance)
 
 Para obter mais informações, consulte o nosso manual sobre a [configuração de um registo DMARC](/pages/web_cloud/domains/dns_zone_dmarc).
 
-### Configurar a reverse (*reverse IP*) <a name="reverseip"></a>
+### Configurar a resolução inversa dos IP <a name="reverseip"></a>
 
-Sempre com o objetivo de otimizar o envio e de reduzir os riscos de bloqueio dos seus e-mails, uma reverse deve ser configurada com o seu nome de domínio.
+Para otimizar ainda mais o envio de e-mails e minimizar o risco de bloqueio dos seus e-mails, so pode igualmente configurar a resolução DNS inversa (*PTR record*) com o seu domínio.
 
-Em primeiro lugar, deve criar um registo A na zona DNS do seu domínio com o endereço IP do seu servidor como alvo.
+Em primeiro lugar, deve criar um registo `A` na zona DNS do seu domínio com o endereço IP do seu servidor como alvo.
 
 Se os seus servidores DNS são geridos pela OVHcloud, consulte o nosso guia sobre [a edição de uma zona DNS da OVHcloud através da Área de Cliente](/pages/web_cloud/domains/dns_zone_edit).
 
 Depois de alterar a zona DNS do domínio, é necessário aguardar 24 horas até que as alterações sejam efetivas.
 
-Depois de fazer isso, adicione o registo PTR (também conhecido como reverse):
-
-Na sua [Área de Cliente OVHcloud](/links/manager){.external}, aceda à secção `Bare Metal Cloud`{.action} e abra `Network`{.action}. De seguida, clique em `IP`{.action}. 
-
-Se deseja configurar a Reverse DNS num endereço Additional IP, clique no separador `Additional IP`{.action}.
-
-O menu pendente em "**Os meus endereços IP públicos e serviços associados**" permite-lhe filtrar os seus serviços por categoria.
-
-![Reverse IP](images/filteripds.png){.thumbnail}
-
-Clique no botão `...`{.action} à direita da linha correspondente e, a seguir, em `Modificar a reverse`{.action}:
-
-![Reverse IP](images/addreverse2022.png){.thumbnail}
-
-Introduza o seu domínio na secção `Reverse` e clique em `Validar`{.action}.
-
-![Reverse IP](images/enterreverse.png){.thumbnail}
-
-> [!primary]
-> Ao introduzir o seu nome de domínio na reverse, este verifica imediatamente se o registo A remete para o mesmo IP. Isto é utilizado nos procedimentos antisspam, pelo que o seu registo A deve ser válido e propagado. Há certas regras a seguir aquando da introdução da reverse:
->
->  - a reverse não pode começar por um `-`
->  - a reverse não pode ter mais de 80 caracteres
->  - a reverse não pode conter caracteres maiúsculos
->  - a reverse deve terminar com um `.`
->
-> Por exemplo: "MyDomain.ca" no registo reverse seria **mydomain.ca.**
->
+Para configurar o caminho da reverse DNS no [Área de Cliente OVHcloud](/links/manager) queira consultar [o nosso manual dedicado](/pages/bare_metal_cloud/virtual_private_servers/configuring-reverse-dns).
 
 ### Casos específicos de envio de e-mails
 
@@ -131,7 +104,7 @@ Confirme as informações e a subscrição à JMRP/SNDS estará terminada.
 
 Depois de realizar estas ações, se o seu IP aparecer como bloqueado, poderá pedir que o desbloqueie através do [procedimento junkmail](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&locale=en-us&ccsid=635857671692853062). O procedimento demora normalmente 48 horas.
 
-Por vezes, a Microsoft pode pedir-lhe a data da primeira faturação do seu IP/servidor. Nesse caso, envie à Microsoft uma cópia da sua fatura e indique o seu IP/servidor (ex: host nsXXX) na sua resposta.
+Por vezes, a Microsoft pode pedir-lhe a data da primeira faturação do seu IP/servidor. Nesse caso, envie à Microsoft uma cópia da sua fatura e indique o seu IP/servidor (ex: host ns1111111.ip-203-0-113.eu) na sua resposta.
 
 Para mais informações queira abrir um [pedido de assistência](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&ccsid=6364926882037750656) junto da Microsoft.
 
@@ -158,6 +131,6 @@ Pode ser interessante utilizar um site como o [Mail Tester](http://www.mail-test
 
 [Melhorar a segurança dos e-mails através de um registo DMARC](/pages/web_cloud/domains/dns_zone_dmarc)
 
-Para ser acompanhado sobre a implementação das suas soluções OVHcloud, contacte a nossa [rede de parceiros OVHcloud](/links/partner).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
  
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

@@ -1,7 +1,7 @@
 ---
 title: "Eine Public Cloud Instanz erstellen und darauf zugreifen"
 excerpt: "Erfahren Sie hier, wie Sie Public Cloud Instanzen in Ihrem OVHcloud Kundencenter konfigurieren, sowie die ersten Schritte mit Instanzen"
-updated: 2024-08-21
+updated: 2024-10-07
 ---
 
 <style>
@@ -29,10 +29,15 @@ Danach können Sie Ihr Public Cloud Projekt weiter spezialisieren, je nach Ihren
 
 **Diese Anleitung erklärt die ersten Schritte mit einer Public Cloud Instanz.**
 
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/s-_nstgu8oc?si=KWVlSCO3oAPMhSZS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Voraussetzungen
 
 - Sie haben ein [Public Cloud Projekt](/links/public-cloud/public-cloud) in Ihrem OVHcloud Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+
+> [!success]
+> Profitieren Sie von reduzierten Preisen, indem Sie sich für einen Zeitraum von 1 bis 36 Monaten für Ihre Public Cloud-Ressourcen verpflichten. Weitere Informationen finden Sie auf unserer Seite zu [Savings Plans](/links/public-cloud/savings-plan).
 
 ## In der praktischen Anwendung
 

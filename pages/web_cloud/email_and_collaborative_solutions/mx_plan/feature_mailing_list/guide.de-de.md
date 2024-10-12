@@ -34,8 +34,8 @@ Der Absender (sender) sendet die E-Mail an die Mailingliste. Der Moderator (mode
 
 ## Voraussetzungen
 
-- Sie verfügen über mindestens ein E-Mail-Angebot MX Plan 100 oder ein kompatibles [Webhosting](https://www.ovhcloud.com/de/web-hosting/).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie verfügen über mindestens ein E-Mail-Angebot MX Plan 100 oder ein kompatibles [Webhosting](/links/web/hosting).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung
 
@@ -45,7 +45,7 @@ Der Absender (sender) sendet die E-Mail an die Mailingliste. Der Moderator (mode
 >
 > Eine Mailingliste verhält sich wie eine E-Mail-Adresse. Es ist nicht möglich, den Namen zu ändern. Um den Namen einer Mailingliste zu ändern, müssen Sie die Liste neu erstellen und die alte löschen.
 
-Um Ihre Mailingliste zu erstellen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie oben die Kategorie `Web Cloud`{.action}.
+Um Ihre Mailingliste zu erstellen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und wählen Sie oben die Kategorie `Web Cloud`{.action}.
 
 Sobald die Verbindung hergestellt ist, klicken Sie auf `E-Mails`{.action} und dann auf den betreffenden Domainnamen. Wechseln Sie zur Registerkarte `Mailinglisten`{.action} Ihres E-Mail-Dienstes.
 

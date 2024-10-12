@@ -32,7 +32,7 @@ Diese Anleitung basiert auf den Informationen in der Microsoft-Dokumentation "[B
 >
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
 > 
 
 ### Methode 1: Manuelle Konfiguration
@@ -46,7 +46,7 @@ Die Installation von "Microsoft 365 Apps for enterprise" auf einem geteilten Com
 > Wenn Sie bereits die Lizenz Office 365 Proplus installiert haben, müssen Sie diese erst **entfernen**.
 >
 
-- Nach dem Entfernen [klicken Sie hier](https://www.microsoft.com/en-gb/download/details.aspx?id=49117){.external}, um das Microsoft 365 Deployment-Tool herunterzuladen.
+- Nach dem Entfernen [klicken Sie hier](https://www.microsoft.com/en-gb/download/details.aspx?id=49117), um das Microsoft 365 Deployment-Tool herunterzuladen.
 
 - **Starten** Sie das Deployment-Tool.
 

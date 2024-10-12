@@ -1,133 +1,150 @@
 ---
 title: Sauvegarder SAP HANA avec Veeam Backup and Replication
-excerpt: "Ce guide fournit des instructions générales pour sauvegarder une base de données SAP HANA avec Veeam Backup and Replication et Veeam Plug-in for SAP HANA"
-updated: 2023-09-05
+excerpt: "Ce guide fournit des instructions générales pour sauvegarder des bases de données SAP HANA avec Veeam Backup and Replication et Veeam Plug-in for SAP HANA"
+updated: 2024-09-17
 ---
 
 ## Objectif
 
-Ce guide fournit des instructions générales pour sauvegarder une base de données SAP HANA avec Veeam Backup and Replication et Veeam Plug-in for SAP HANA.
+Ce guide fournit des instructions générales pour sauvegarder des bases de données SAP HANA avec Veeam Backup and Replication 12.2 et Veeam Plug-in for SAP HANA.
 
-[Veeam Enterprise Plus avec OVHcloud](https://www.ovhcloud.com/fr-ca/storage-solutions/veeam-enterprise/) vous permet d’utiliser Veeam Backup and Replication au sein de votre infrastructure OVHcloud en bénéficiant d'un niveau de licence Veeam Enterprise Plus.
+[Veeam Enterprise Plus avec OVHcloud](https://www.ovhcloud.com/fr-ca/storage-solutions/veeam-enterprise/) vous permet d’utiliser Veeam Backup and Replication 12 au sein de votre infrastructure OVHcloud en bénéficiant d'un niveau de licence Veeam Enterprise Plus.
 
 ## Prérequis
 
 - Une base de données SAP HANA installée.
-- Un serveur Windows qui hébergera la solution [Veeam Backup and Replication](https://www.ovhcloud.com/fr-ca/storage-solutions/veeam-enterprise/).
-- Un espace de stockage partagé pour un besoin non SecNumCloud ou une machine virtuelle sur [VMware on OVHcloud qualifié SecNumCloud](https://www.ovhcloud.com/fr-ca/enterprise/products/secnumcloud/) faisant office de serveur NFS ou SMB pour un besoin SecNumCloud.
+- Un serveur Windows qui hébergera la solution [Veeam Backup and Replication](https://www.veeam.com/fr/products/veeam-data-platform/backup-recovery.html).
+- Un espace de stockage qui hébergera les sauvegardes.
+- Les [ouvertures firewall](https://helpcenter.veeam.com/docs/backup/plugins/ports_vpsh.html?ver=120) réalisées autorisant les communications entre vos serveurs.
 
 ## En pratique
 
-### Installation de Veeam Backup and Replication
+### 1 - Installation de Veeam Backup and Replication
 
-Si vous souhaitez être guidé sur l'installation de Veeam Backup and Replication sur votre serveur Windows, nous vous recommandons [notre guide](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication).
+Si vous souhaitez être guidé sur l'installation de Veeam Backup and Replication sur votre serveur Windows, [notre guide](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication) vous détaille l'ensemble des étapes.
 
-### Configuration du Backup Repository
+### 2 - Configuration du Backup Repository
 
 Après l'installation de Veeam Backup and Replication sur votre serveur Windows, vous devez réaliser la configuration du Backup Repository.
 
 Un Backup Repository est un espace de stockage où Veeam Backup and Replication héberge les sauvegardes.
 
-#### Configuration d'un Backup Repository pour un besoin non SecNumCloud
+À cette étape, deux cas de figure se présentent :
 
-Pour cette configuration, vous pouvez utiliser un espace de stockage partagé, ainsi qu'un Object Storage S3 pour sécuriser les sauvegardes sur une autre localisation.
+- [Votre infrastructure n'est pas une infrastructure qualifiée SecNumCloud](#nonsecnumcloud).
+- [Votre infrastructure est une infrastructure qualifiée SecNumCloud](#secnumcloud).
 
-**Création du Backup Repository**
+#### 2.1 - Configuration d'un Backup Repository pour un besoin non-SecNumCloud <a name="nonsecnumcloud"></a>
+
+Dans cette configuration, vous pouvez utiliser un espace de stockage, ainsi qu'un Object Storage S3 pour sécuriser les sauvegardes sur une autre région OVHcloud.
+
+##### 2.1.1 - Création du Backup Repository
 
 > [!tabs]
 > **Étape 1**
 >>
->> Dans la console Veeam Backup and Replication, sélectionnez `Backup Infrastructure`{.action}, puis `Backup Repositories`{.action}.
+>> Ouvrez la console Veeam Backup and Replication, sélectionnez `Backup Infrastructure`{.action}, puis `Backup Repositories`{.action}.
 >>
 >> Cliquez sur `Add Repository`{.action} pour démarrer l'assistant de configuration.
 >>
->> ![br_no_snc_1](images/br_no_snc_1.png){.thumbnail}
+>> ![backup_repository_1](images/backup_repository_1.png){.thumbnail}
 >>
 > **Étape 2**
 >>
->> Sélectionnez `Network attached storage`{.action}.
+>> Sélectionnez `Direct attached storage`{.action} ou `Network attached storage`{.action}, en fonction de votre situation.
 >>
->> ![br_no_snc_2](images/br_no_snc_2.png){.thumbnail}
+>> - `Direct attached storage`{.action} permet d'ajouter un serveur physique ou virtuel comme espace de stockage sans protocole NFS ou SMB.
+>> - `Network attached storage`{.action} permet d'ajouter un partage de fichiers via les protocoles NFS ou SMB (CIFS).
+>>
+>> ![backup_repository_2](images/backup_repository_2.png){.thumbnail}
 >>
 > **Étape 3**
 >>
->> Sélectionnez le protocole sur lequel votre serveur de partage de fichiers écoute.
+>> Vous serez guidé dans les étapes de configuration de la connexion à l'espace de stockage, telles que l'adresse IP ou le nom complet (FQDN) de votre serveur, ou encore le chemin où vous souhaitez stocker vos sauvegardes SAP HANA.
 >>
->> Vous serez guidé dans les étapes pour entrer les informations telles que l'adresse IP ou le nom complet (FQDN) de votre serveur, ou encore le chemin où vous souhaitez stocker vos sauvegardes SAP HANA.
+>> Retrouvez les étapes détaillées dans le guide d'utilisation de Veeam Backup and Replication 12.
 >>
->> ![br_no_snc_3](images/br_no_snc_3.png){.thumbnail}
+>> - [Direct attached storage with Windows](https://helpcenter.veeam.com/docs/backup/vsphere/repo_add.html?ver=120)
+>> - [Direct attached storage with Linux](https://helpcenter.veeam.com/docs/backup/vsphere/linux_repository_add.html?ver=120)
+>> - [Direct attached storage with Linux Hardened](https://helpcenter.veeam.com/docs/backup/vsphere/hardened_repository.html?ver=120)
+>> - [Network attached storage with SMB (CIFS) Share](https://helpcenter.veeam.com/docs/backup/vsphere/smb_share.html?ver=120)
+>> - [Network attached storage with NFS Share](https://helpcenter.veeam.com/docs/backup/vsphere/nfs_share.html?ver=120)
 >>
 > **Étape 4**
 >>
->> Votre Backup Repository de type NFS ou SMB est maintenant visible dans la console Veeam Backup and Replication et utilisable par les configurations de sauvegarde.
+>> Votre Backup Repository est maintenant visible dans la console Veeam Backup and Replication et utilisable par les configurations de sauvegarde.
 >>
->> Vous pouvez aller plus loin dans la configuration de ce Backup Repository en configurant des permissions d'accès à un utilisateur ou à un groupe d'utilisateurs spécifiques et en chiffrant les sauvegardes qui seront hébergées dans ce Backup Repository. Retrouvez plus d'informations à ce sujet dans le [guide Veeam](https://helpcenter.veeam.com/archive/backup/110/vsphere/access_permissions.html).
->> 
->> ![br_no_snc_4](images/br_no_snc_4.png){.thumbnail}
+>> Vous pouvez aller plus loin dans la configuration de ce Backup Repository en configurant des permissions d'accès à un utilisateur ou à un groupe d'utilisateurs spécifiques et en chiffrant les sauvegardes qui seront hébergées dans ce Backup Repository. Retrouvez plus d'informations à ce sujet dans le [guide d'utilisation de Veeam Backup and Replication 12](https://helpcenter.veeam.com/docs/backup/vsphere/access_permissions.html?ver=120).
+>>
+>> Si vous ne souhaitez pas procéder à la création d'un Backup Repository Object Storage, veillez à configurer les permissions d'accès pour ce Backup Repository. Vous pouvez ensuite continuer avec le chapitre [Installation de Veeam Plug-in for SAP HANA](#veeampluginhana).
+>>
+>> ![backup_repository_3](images/backup_repository_3.png){.thumbnail}
 >>
 
-**Création du Backup Repository Object Storage**
+##### 2.1.2 - Création du Backup Repository Object Storage (facultatif)
 
-Ce Backup Repository servira à sécuriser vos sauvegardes sur un autre espace de stockage et sur une autre localisation OVHcloud.
+Ce Backup Repository servira à sécuriser vos sauvegardes sur un second espace de stockage, pouvant être hébergé sur une seconde région OVHcloud.
 
-Pour découvrir les étapes de création d'un bucket Object Storage S3, nous vous recommandons [notre guide](/pages/storage_and_backup/object_storage/s3_create_bucket).
+Pour découvrir les étapes de création d'un bucket Object Storage S3, veuillez prendre connaissance des étapes détaillées dans [notre guide](/pages/storage_and_backup/object_storage/s3_create_bucket).
 
 > [!tabs]
 > **Étape 1**
 >>
->> Dans la console Veeam Backup and Replication, sélectionnez `Backup Infrastructure`{.action}, puis `Backup Repositories`{.action}.
+>> Ouvrez la console Veeam Backup and Replication, sélectionnez `Backup Infrastructure`{.action}, puis `Backup Repositories`{.action}.
 >>
 >> Cliquez à présent sur `Add Repository`{.action} pour démarrer l'assistant de configuration.
 >>
->> ![s3_no_snc_1](images/s3_no_snc_1.png){.thumbnail}
+>> ![backup_repository_s3_1](images/backup_repository_s3_1.png){.thumbnail}
 >>
 > **Étape 2**
 >>
 >> Sélectionnez `Object storage`{.action}.
 >>
->> ![s3_no_snc_2](images/s3_no_snc_2.png){.thumbnail}
+>> ![backup_repository_s3_2](images/backup_repository_s3_2.png){.thumbnail}
 >>
 > **Étape 3**
 >>
 >> Sélectionnez `S3 Compatible`{.action}.
 >>
->> ![s3_no_snc_3](images/s3_no_snc_3.png){.thumbnail}
+>> ![backup_repository_s3_3](images/backup_repository_s3_3.png){.thumbnail}
 >>
 > **Étape 4**
 >>
->> Indiquez un nom à votre Object Storage Repository
+>> Donnez un nom à votre Object Storage Repository.
 >>
->> ![s3_no_snc_4](images/s3_no_snc_4.png){.thumbnail}
+>> ![backup_repository_s3_4](images/backup_repository_s3_4.png){.thumbnail}
 >>
 > **Étape 5**
->> 
->> Entrez le `Service point`{.action} qui correspond à l'endpoint du bucket Object Storage S3 ainsi que la région.
 >>
->> Ajoutez les identifiants de l'utilisateur S3 qui possède le rôle Administrator sur ce bucket Object Storage S3. Il s'agit de la clé d'accès et de la clé secrète de l'utilisateur S3 associée au bucket Object Storage S3. Retrouvez plus d'informations sur l'utilisateur S3 dans [notre guide](/pages/storage_and_backup/object_storage/s3_identity_and_access_management).
+>> Entrez le `Service point`{.action} qui correspond à l'endpoint du bucket Object Storage S3, ainsi que la région (en minuscule) de votre bucket Object Storage S3.
 >>
->> ![s3_no_snc_5](images/s3_no_snc_5.png){.thumbnail}
+>> Ajoutez les identifiants de l'utilisateur S3 qui possède le rôle `Administrator`{.action} sur ce bucket Object Storage S3. Il s'agit de la clé d'accès et de la clé secrète de l'utilisateur S3 associée au bucket Object Storage S3. Retrouvez plus d'informations sur l'utilisateur S3 dans [notre guide](/pages/storage_and_backup/object_storage/s3_identity_and_access_management).
+>>
+>> ![backup_repository_s3_5](images/backup_repository_s3_5.png){.thumbnail}
 >>
 > **Étape 6**
->> 
+>>
 >> Indiquez le nom du bucket Object Storage S3 dans lequel vous souhaitez stocker vos sauvegardes SAP HANA.
 >>
 >> Vous devez également indiquer ou créer un répertoire dans ce bucket Object Storage S3.
 >>
->> ![s3_no_snc_6](images/s3_no_snc_6.png){.thumbnail}
+>> ![backup_repository_s3_6](images/backup_repository_s3_6.png){.thumbnail}
 >>
 > **Étape 7**
 >>
 >> Votre Backup Repository de type S3-compatible est maintenant visible dans la console Veeam Backup and Replication et utilisable par les configurations de sauvegarde.
 >>
->> ![s3_no_snc_7](images/s3_no_snc_7.png){.thumbnail}
+>> ![backup_repository_s3_7](images/backup_repository_s3_7.png){.thumbnail}
 >>
 
-**Création du Scale-out Backup Repository**
+##### 2.1.3 - Création du Scale-out Backup Repository (facultatif)
+
+La création d'un Scale-out Backup Repository permettra de sécuriser vos sauvegardes déposées sur votre premier Backup Repository en les copiant sur votre second Backup Repository sans action de votre part.
 
 > [!tabs]
 > **Étape 1**
 >>
->> Dans la console Veeam Backup and Replication, sélectionnez `Backup Infrastructure`{.action}, puis `Scale-out Repositories`{.action}.
+>> Ouvrez la console Veeam Backup and Replication, sélectionnez `Backup Infrastructure`{.action}, puis `Scale-out Repositories`{.action}.
 >>
 >> Cliquez à présent sur `Add Scale-out Repository`{.action} pour démarrer l'assistant de configuration.
 >>
@@ -155,10 +172,7 @@ Pour découvrir les étapes de création d'un bucket Object Storage S3, nous vou
 >>
 >> Cochez `Extend scale-out backup repository capacity with object storage`{.action}, puis sélectionnez le Backup Repository Object Storage précédemment créé.
 >>
->> - La première option permet de copier les sauvegardes sur l'Object Storage S3 dès que les sauvegardes ont été créées sur le stockage partagé.
->> - La seconde option permet de déplacer les sauvegardes sur l'Object Storage S3 après une période définie, libérant ainsi l'espace sur le stockage partagé.
->>
->> Nous conseillons d'activer ces deux options, garantissant une mise en sécurité de vos sauvegardes et une gestion automatisée du nettoyage sur le stockage partagé.
+>> Cochez l'option `Copy backups to object storage as soon as they are created`{.action} afin de répliquer les sauvegardes du premier Backup Repository sur le second Backup Repository immédiatement après leur création. Cette configuration permet une protection rapide de vos sauvegardes.
 >>
 >> ![sbr_no_snc_5](images/sbr_no_snc_5.png){.thumbnail}
 >>
@@ -172,218 +186,318 @@ Pour découvrir les étapes de création d'un bucket Object Storage S3, nous vou
 >>
 > **Étape 7**
 >>
->> Vous avez la possibilité d'autoriser tous les comptes utilisateurs à utiliser ce Scale-out Repository ou de limiter à une liste définie.
->>
->> Nous vous recommandons de n'autoriser que les comptes nécessaires.
+>> Vous avez la possibilité d'autoriser tous les comptes utilisateurs à utiliser ce Scale-out Repository ou de limiter à une liste définie. Nous vous recommandons de n'autoriser que les comptes nécessaires.
 >>
 >> ![sbr_no_snc_7](images/sbr_no_snc_7.png){.thumbnail}
 >>
 > **Étape 8**
 >>
->> Sur votre bucket Object Storage S3, vous avez à présent une arborescence que Veeam Backup and Replication a créée.
+>> Sur votre bucket Object Storage S3, une structure hiérarchique a été générée et configurée par Veeam Backup and Replication.
 >>
 >> ![sbr_no_snc_8](images/sbr_no_snc_8.png){.thumbnail}
 >>
 
-Une fois ces étapes réalisées, vous pouvez continuer ce guide avec le chapitre [Installation de Veeam Plug-in for SAP HANA](#installation-de-veeam-plug-in-for-sap-hana_1).
+Une fois ces étapes réalisées, vous pouvez continuer ce guide avec le chapitre [Installation de Veeam Plug-in for SAP HANA](#veeampluginhana).
 
-#### Configuration d'un Backup Repository pour un besoin SecNumCloud
+#### 2.2 - Configuration d'un Backup Repository pour un besoin SecNumCloud <a name="secnumcloud"></a>
+
+Dans cette configuration, l'espace de stockage doit également être hébergé sur une infrastructure qualifiée SecNumCloud.
+
+##### 2.2.1 - Création du Backup Repository
+
+> [!tabs]
+> **Étape 1**
+>>
+>> Ouvrez la console Veeam Backup and Replication, sélectionnez `Backup Infrastructure`{.action}, puis `Backup Repositories`{.action}.
+>>
+>> Cliquez sur `Add Repository`{.action} pour démarrer l'assistant de configuration.
+>>
+>> ![backup_repository_1](images/backup_repository_1.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Sélectionnez `Direct attached storage`{.action} ou `Network attached storage`{.action}, en fonction de votre situation.
+>>
+>> - `Direct attached storage`{.action} permet d'ajouter un serveur physique ou virtuel comme espace de stockage sans protocole NFS ou SMB.
+>> - `Network attached storage`{.action} permet d'ajouter un partage de fichiers via les protocoles NFS ou SMB (CIFS).
+>>
+>> ![backup_repository_2](images/backup_repository_2.png){.thumbnail}
+>>
+> **Étape 3**
+>>
+>> Vous serez guidé dans les étapes de configuration de la connexion à l'espace de stockage, telles que l'adresse IP ou le nom complet (FQDN) de votre serveur, ou encore le chemin où vous souhaitez stocker vos sauvegardes SAP HANA.
+>>
+>> Retrouvez les étapes détaillées dans le guide d'utilisation de Veeam Backup and Replication 12.
+>>
+>> - [Direct attached storage with Windows](https://helpcenter.veeam.com/docs/backup/vsphere/repo_add.html?ver=120)
+>> - [Direct attached storage with Linux](https://helpcenter.veeam.com/docs/backup/vsphere/linux_repository_add.html?ver=120)
+>> - [Direct attached storage with Linux Hardened](https://helpcenter.veeam.com/docs/backup/vsphere/hardened_repository.html?ver=120)
+>> - [Network attached storage with SMB (CIFS) Share](https://helpcenter.veeam.com/docs/backup/vsphere/smb_share.html?ver=120)
+>> - [Network attached storage with NFS Share](https://helpcenter.veeam.com/docs/backup/vsphere/nfs_share.html?ver=120)
+>>
+> **Étape 4**
+>>
+>> Votre Backup Repository est maintenant visible dans la console Veeam Backup and Replication et utilisable par les configurations de sauvegarde.
+>>
+>> Vous pouvez aller plus loin dans la configuration de ce Backup Repository en configurant des permissions d'accès à un utilisateur ou à un groupe d'utilisateurs spécifiques et en chiffrant les sauvegardes qui seront hébergées dans ce Backup Repository. Retrouvez plus d'informations à ce sujet dans le [guide d'utilisation de Veeam Backup and Replication 12](https://helpcenter.veeam.com/docs/backup/vsphere/access_permissions.html?ver=120).
+>>
+>> ![backup_repository_3](images/backup_repository_3.png){.thumbnail}
+>>
+
+Pour plus d'informations sur les configurations des Backup Repositories, nous vous invitons à consulter la [documentation de Veeam Backup and Replication](https://helpcenter.veeam.com/docs/backup/vsphere/backup_repository.html?ver=120).
 
 La solution Object Storage S3 n'est pour le moment pas qualifiée SecNumCloud. Elle ne peut donc être utilisée pour héberger vos sauvegardes dans un contexte SecNumCloud.
 
-Pour répondre à ce besoin, nous proposons de créer une machine virtuelle sur [VMware on OVHcloud qualifié SecNumCloud](https://www.ovhcloud.com/fr-ca/enterprise/products/secnumcloud/) faisant office de serveur NFS ou SMB.
+Si vous souhaitez sécuriser vos sauvegardes sur un second Backup Repository, veuillez répéter cette étape. Continuez ce guide avec l'étape [Installation de Veeam Plug-in for SAP HANA](#veeampluginhana), puis suivez le chapitre [Création du Backup Copy job](#backupcopyjob).
 
-> [!warning]
-> Dans le cas d'une utilisation d'une machine virtuelle pour héberger un serveur NFS ou SMB, veillez à protéger cette machine virtuelle et son contenu en dupliquant ses données sur une autre localisation.
+##### 2.2.2 - Création du Backup Copy job (facultatif) <a name="backupcopyjob"></a>
+
+Un Backup Copy job permet de dupliquer les sauvegardes d'un Backup Repository vers un autre, assurant ainsi la sécurité de ces sauvegardes sur un emplacement de stockage distinct. Cette opération est utile pour protéger les données critiques contre la perte ou la corruption, en les conservant sur un site de sauvegarde éloigné géographiquement. Grâce à cette fonctionnalité, vous pouvez configurer des stratégies de sauvegarde avancées pour garantir la résilience et la disponibilité de vos données en cas de sinistre.
+
+> [!primary]
 >
-> Pour répondre à ce besoin, la création d'un second Backup Repository sur une autre localisation peut être envisagée.
+> Les ports tcp/2500-3300 doivent être ouverts entre vos Backup Repositories.
 >
 
 > [!tabs]
 > **Étape 1**
 >>
->> Dans la console Veeam Backup and Replication, sélectionnez `Backup Infrastructure`{.action}, puis `Backup Repositories`{.action}.
+>> Ouvrez la console Veeam Backup and Replication, sélectionnez le menu `Home`{.action}, `Backup Copy`{.action}, puis `Application-level backup...`{.action}.
 >>
->> Cliquez à présent sur `Add Repository`{.action} pour démarrer l'assistant de configuration.
->>
->> ![br_snc_1](images/br_snc_1.png){.thumbnail}
+>> ![backup_copy_1](images/backup_copy_1.png)
 >>
 > **Étape 2**
 >>
->> Sélectionnez `Network attached storage`{.action}.
+>> Donnez un nom à votre Backup Copy job.
 >>
->> ![br_snc_2](images/br_snc_2.png){.thumbnail}
->>
-> **Étape 3**
->>
->> Sélectionnez le protocole sur lequel votre serveur de partage de fichiers écoute.
->>
->> Vous serez guidé dans les étapes pour entrer les informations telles que l'adresse IP ou le nom complet (FQDN) de votre serveur, ou encore le chemin où vous souhaitez stocker vos sauvegardes SAP HANA.
->>
->> ![br_snc_3](images/br_snc_3.png){.thumbnail}
->>
-> **Étape 4**
->>
->> Votre Backup Repository de type NFS ou SMB est maintenant visible dans la console Veeam Backup and Replication et utilisable par les configurations de sauvegarde.
->>
->> Vous pouvez aller plus loin dans la configuration de ce Backup Repository en configurant des permissions d'accès à un utilisateur ou à un groupe d'utilisateurs spécifiques et en chiffrant les sauvegardes qui seront hébergées dans ce Backup Repository. Retrouvez plus d'informations à ce sujet dans le [guide Veeam](https://helpcenter.veeam.com/archive/backup/110/vsphere/access_permissions.html).
->> 
->> ![br_snc_4](images/br_snc_4.png){.thumbnail}
->>
-
-Pour plus d'informations sur les configurations des Backup Repositories, nous vous invitons à consulter la [documentation de Veeam Backup Repository](https://helpcenter.veeam.com/archive/backup/110/vsphere/backup_repository.html).
-
-### Installation de Veeam Plug-in for SAP HANA
-
-1. Copiez Veeam Plugin for SAP-HANA de l'ISO Veeam Backup and Replication Installation vers votre serveur qui héberge votre base de données SAP HANA.
-
-2. Exécutez l'installation avec la commande :
-
-```bash
-rpm -i VeeamPluginforSAPHANA-xx.x.x.xxxx-x.x86_64.rpm
-```
-
-<ol start=3><li>Avec l'utilisateur SAP HANA (sid)adm, exécutez l'assistant de configuration :</li></ol>
-
-```bash
-./SapBackintConfigTool --wizard
-```
-
-```textile
-Enter backup server name or IP address: <Adresse IP de votre serveur Windows>
-Enter backup server port number [10006]:
-Enter username: <identifiant> (1)
-Enter password for <identifiant>: <mot de passe> (1)
-Available backup repositories:
-1. Backup Repository
-Enter repository number: <Entrez le numéro du Backup Repository précédemment créé>
-Configuration result:
-    SID <SID> has been configured
-```
-
-> [!primary]
-> (1) Nous conseillons de créer un compte dédié Veeam Backup and Replication ne possédant que les rôles Veeam Backup Operator et Veeam Restore Operator. Ne pouvant ajouter deux rôles pour le même utilisateur sur la même ligne dans la console Veeam Backup and Replication, vous devrez ajouter une seconde ligne pour le second rôle. Retrouvez plus d'informations à [cette adresse](https://helpcenter.veeam.com/archive/backup/110/vsphere/users_roles.html).
->
-
-<ol start=4><li>Vous pouvez à présent lancer une sauvegarde de votre base de données SAP HANA afin de vous assurer que votre configuration fonctionne comme vous le désirez.<br><br>
-
-Une tâche de sauvegarde SAP HANA est maintenant visible dans la console Veeam Backup and Replication.</li></ol>
-
-![veeam_job_1](images/veeam_job_1.png){.thumbnail}
-
-Si vous avez configuré un Scale-out Repository avec un Object Storage S3, vous devriez observer vos sauvegardes sur votre bucket Object Storage S3.
-
-![veeam_job_2](images/veeam_job_2.png){.thumbnail}
-
-Si vous souhaitez découvrir toutes les possibilités avec Veeam Plug-in for SAP HANA, nous vous conseillons de prendre connaissance de la documentation disponible sur [Veeam](https://helpcenter.veeam.com/archive/backup/110/plugins/sap_hana_plugin.html).
-
-### Planification des sauvegardes
-
-> [!warning]
-> La console Veeam Backup and Replication ne propose pas de planification avec l'utilisation de Veeam Plug-in for SAP HANA.
->
-
-Nous vous conseillons de vous référer à la [SAP Note 2782059](https://launchpad.support.sap.com/#/notes/2782059) qui présente quatre options pour planifier les sauvegardes sur une base de données SAP HANA.
-
-Voici un exemple de planification de sauvegardes SAP HANA via crontab.
-
-*Remplacez, dans les commandes ci-dessous, les caractères* `<SID>` *par le SID de votre base de données SAP HANA.*
-
-```bash
-# Sauvegarde complète du TENANTDB - LUN JEU DIM
-0 0 * * 1,4,7 /usr/sap/<SID>/HDB00/exe/hdbsql -U BACKUP "BACKUP DATA FOR <SID> USING BACKINT ('SCHEDULED_$(date +'%H%M%S%s')_COMPLETE_BACKUP')";
- 
-# Sauvegarde différentielle du TENANTDB - MAR MER VEN SAM
-0 0 * * 2,3,5,6 /usr/sap/<SID>/HDB00/exe/hdbsql -U BACKUP "BACKUP DATA DIFFERENTIAL FOR <SID> USING BACKINT ('SCHEDULE_$(date +'%H%M%S%s')_DIFFERENTIAL_BACKUP')";
- 
-# Sauvegarde complète du SYSTEMDB - DIM
-0 0 * * 7 /usr/sap/<SID>/HDB00/exe/hdbsql -U BACKUP "BACKUP DATA USING BACKINT ('SCHEDULE_$(date +'%H%M%S%s')_COMPLETE_BACKUP)";
-```
-
-> [!primary]
-> L'option `-U` permet d'appeler une clé stockée dans le hdbuserstore. Pour en savoir plus sur l'ajout d'une clé dans le hdbuserstore, nous vous invitons à prendre connaissance de la documentation SAP disponible à [cette adresse](https://help.sap.com/docs/SAP_HANA_PLATFORM/b3ee5778bc2e4a089d3299b82ec762a7/ddbdd66b632d4fe7b3c2e0e6e341e222.html?version=2.0.02&locale=en-US).
->
-> Dans cet exemple, la clé « BACKUP » a été créée contenant le couple identifiant / mot de passe d'un utilisateur sur la base de données SAP HANA ayant le rôle de sauvegarde. La liste des rôles devant être associés à cet utilisateur est disponible à [cette adresse](https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/c4b71703bb571014810ebb38dc59cf51.html).
->
-
-### Restauration
-
-Pour restaurer de votre base de données SAP HANA depuis une sauvegarde réalisée avec Veeam Backup and Replication, vous pouvez réaliser les étapes suivantes depuis SAP HANA Studio :
-
-> [!tabs]
-> **Étape 1**
->>
->> Sélectionnez le TENANTDB que vous souhaitez restaurer.
->>
->> Puis cliquez sur `Next`{.action}.
->>
->> ![hana_studio_recover_1](images/hana_studio_recover_1.png){.thumbnail}
->>
-> **Étape 2**
->>
->> Sélectionnez l'option que vous souhaitez utiliser pour restaurer votre TENANTDB :
->>
->> - Restaure à l'état le plus récent possible
->> - Restaure à une date et une heure précise
->> - Restaure via une sauvegarde précise
->> 
->> Puis cliquez sur `Next`{.action}.
->>
->> ![hana_studio_recover_2](images/hana_studio_recover_2.png){.thumbnail}
+>> ![backup_copy_2](images/backup_copy_2.png)
 >>
 > **Étape 3**
 >>
->> Veillez à sélectionner les options `Recover using the backup catalog`{.action} et `Search for the backup catalog in Backint only`{.action}.
+>> Ajoutez soit les Backup jobs qui gèrent vos sauvegardes de base de données SAP HANA, soit le Backup Repository où ces dernières sont stockées.
 >>
->> Puis cliquez sur `Next`{.action}.
+>> Dans ce guide, nous avons fait le choix d'utiliser le Backup job.
 >>
->> ![hana_studio_recover_3](images/hana_studio_recover_3.png){.thumbnail}
+>> ![backup_copy_3](images/backup_copy_3.png)
 >>
 > **Étape 4**
 >>
->> Le TENANTDB doit être éteint pour réaliser sa restauration.
+>> Sélectionnez votre second Backup Repository qui accueillera les copies des sauvegardes.
 >>
->> Veillez à arrêter votre système SAP lié à cette base de données SAP HANA avant de démarrer la restauration.
+>> Prenez connaissance des paramètres disponibles dans le menu `Advanced`{.action}.
 >>
->> ![hana_studio_recover_4](images/hana_studio_recover_4.png){.thumbnail}
+>> ![backup_copy_4](images/backup_copy_4.png)
 >>
 > **Étape 5**
 >>
->> Après quelques secondes, SAP HANA Studio affiche les sauvegardes complètes inscrites dans le catalogue de sauvegardes de votre base de données SAP HANA.
+>> Paramétrez les créneaux de réplication si vous le désirez. Par défaut, dès qu'une sauvegarde est réalisée, la copie est enclenchée.
 >>
->> Il est recommandé de cliquer sur `Check Availability`{.action} afin de s'assurer que la sauvegarde est toujours disponible dans son espace de stockage.
->>
->> Puis cliquez sur `Next`{.action}.
->>
->> ![hana_studio_recover_5](images/hana_studio_recover_5.png){.thumbnail}
+>> ![backup_copy_5](images/backup_copy_5.png)
 >>
 > **Étape 6**
 >>
->> Si vous n'avez pas modifié la localisation de vos sauvegardes des fichiers de log, vous pouvez cliquer sur `Next`{.action}.
+>> Votre Backup Copy job est à présent opérationnel.
 >>
->> Dans le cas contraire, veuillez indiquer le chemin. Puis cliquez sur `Next`{.action}.
->> 
->> ![hana_studio_recover_6](images/hana_studio_recover_6.png){.thumbnail}
+>> ![backup_copy_6](images/backup_copy_6.png)
+>>
+
+### 3 - Installation de Veeam Plug-in for SAP HANA <a name="veeampluginhana"></a>
+
+L'installation de Veeam Plug-in for SAP HANA peut être réalisée par deux méthodes :
+
+- La méthode « Standalone Mode » est une installation manuelle via le binaire extrait de l'ISO de Veeam Backup and Replication sur le serveur hébergeant la base de données SAP HANA. Cette méthode offre des fonctionnalités limitées à travers la console Veeam Backup and Replication.
+- La méthode « Managed Mode » est une installation automatisée effectuée via la console Veeam Backup and Replication et permet d'utiliser de nombreuses fonctionnalités telles que la planification d'un job de sauvegarde.
+
+Dans le cadre de cette documentation, nous utiliserons la méthode « Managed Mode » afin d'utiliser l'ensemble des fonctionnalités proposées par Veeam.
+
+#### 3.1 - Création du groupe de protection
+
+La création d'un groupe de protection est un pré-requis de l'installation de Veeam Plug-in for SAP HANA en Managed Mode.
+
+> [!tabs]
+> **Étape 1**
+>>
+>> Ouvrez la console Veeam Backup and Replication, sélectionnez `Inventory`{.action}, puis `Physical Infrastructure`{.action}.
+>>
+>> Cliquez sur `Create Protection Group`{.action}.
+>>
+>> ![pg_hana_1](images/pg_hana_1.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Cliquez sur `Individual computers`{.action}.
+>>
+>> ![pg_hana_2](images/pg_hana_2.png){.thumbnail}
+>>
+> **Étape 3**
+>>
+>> Donnez un nom à votre groupe de protection. Puis cliquez sur `Next`{.action}.
+>>
+>> ![pg_hana_3](images/pg_hana_3.png){.thumbnail}
+>>
+> **Étape 4**
+>>
+>> Ajoutez le ou les bases de données SAP HANA que vous souhaitez ajouter à ce groupe de protection. Vous pouvez par exemple regrouper vos bases de données de production. Puis cliquez sur `Next`{.action}.
+>>
+>> *Pour des raisons de sécurité, il est conseillé de créer un compte Linux dédié à la connexion de Veeam sur votre serveur afin de ne pas utiliser le compte root.*
+>>
+>> ![pg_hana_4](images/pg_hana_4.png){.thumbnail}
+>>
+> **Étape 5**
+>>
+>> Configurez la fréquence du scan du groupe de protection.
+>>
+>> Cochez `Install application plug-ins`{.action}. Cliquez sur `Configure`{.action}, puis cochez `SAP HANA`{.action}.
+>>
+>> Cliquez sur `Next`{.action} pour continuer.
+>>
+>> ![pg_hana_5](images/pg_hana_5.png){.thumbnail}
+>>
+> **Étape 6**
+>>
+>> La création du groupe de protection s'initialise, un premier scan est lancé sur la ou les bases de données SAP HANA que vous avez précédemment ajoutée(s) et l'installation de Veeam Plug-in for SAP HANA ainsi que ses dépendances est lancée.
+>>
+>> ![pg_hana_6](images/pg_hana_6.png){.thumbnail}
+>>
+
+#### 3.2 - Création du job de sauvegarde
+
+Suite à l'installation de Veeam Plug-in for SAP HANA en Managed mode, nous sommes à présent en capacité de créer un job de sauvegarde et de gérer sa planification via la console Veeam Backup and Replication.
+
+> [!tabs]
+> **Étape 1**
+>>
+>> Ouvrez la console Veeam Backup and Replication, sélectionnez le menu `Home`{.action}, `Backup job`{.action}, `Application`{.action}, puis `SAP HANA`{.action}.
+>>
+>> ![bj_hana_1](images/bj_hana_1.png){.thumbnail}
+>>
+> **Étape 2**
+>>
+>> Donnez un nom à votre job de sauvegarde SAP HANA. Puis cliquez sur `Next`{.action}.
+>>
+>> ![bj_hana_2](images/bj_hana_2.png){.thumbnail}
+>>
+> **Étape 3**
+>>
+>> Sélectionnez votre ou vos bases de données SAP HANA, ainsi que les TENANT associés (SYSTEMDB et/ou TENANTDB) que vous souhaitez gérer avec ce job de sauvegarde. Puis cliquez sur `Next`{.action}.
+>>
+>> ![bj_hana_3](images/bj_hana_3.png){.thumbnail}
+>>
+> **Étape 4**
+>>
+>> Sélectionnez le Backup repository dans lequel vous souhaitez déposer vos sauvegardes SAP HANA. Vous avez également la possibilité de gérer la rétention des sauvegardes dans ce Backup repository. La rétention ne supprime cependant pas les sauvegardes dans le catalogue des sauvegardes SAP HANA.
+>>
+>> Cliquez sur `Advanced...`{.action} afin de planifier les sauvegardes complètes, sélectionnez le type de sauvegardes incrémentales ou différentielles. Dans l'onglet `SAP HANA`{.action}, vous avez la possibilité de paramétrer le nombre de canaux pour optimiser la vitesse de sauvegarde SAP HANA. <a name="canaux"></a>
+>>
+>> Cliquez sur `Next`{.action} pour continuer.
+>>
+>> ![bj_hana_4](images/bj_hana_4.png){.thumbnail}
+>>
+> **Étape 5**
+>>
+>> Configurez les identifiants OS et de la base de données SAP HANA. Puis cliquez sur `Next`{.action}.
+>>
+>> *Pour des raisons de sécurité, il est conseillé de créer un compte Linux dédié à la connexion de Veeam sur votre serveur afin de ne pas utiliser le compte root. Il en va de même pour le compte permettant la connexion à la base de données SAP HANA, le compte n'ayant besoin que des privilèges de sauvegarde.*
+>>
+>> ![bj_hana_5](images/bj_hana_5.png){.thumbnail}
+>>
+> **Étape 6**
+>>
+>> Vous avez la possibilité de gérer les log backups soit par le mécanisme SAP HANA, soit par Veeam. En choisissant la gestion des log backups via Veeam, vous obtenez des informations détaillées sur les log backups dans la console Veeam Backup and Replication.
+>>
+>> Dans ce guide, nous avons fait le choix d'utiliser la gestion via Veeam afin de vous présenter la fonctionnalité.
+>>
+>> Cliquez sur `Next`{.action} pour continuer.
+>>
+>> ![bj_hana_6](images/bj_hana_6.png){.thumbnail}
 >>
 > **Étape 7**
 >>
->> Veillez à sélectionner l'option `Third-Party Backup Tool (Backint)`{.action} et à désélectionner l'option `File System`{.action}.
+>> Configurez la planification de l'exécution du Backup job. Puis cliquez sur `Apply`{.action}.
 >>
->> Puis cliquez sur `Next`{.action}.
->>
->> ![hana_studio_recover_7](images/hana_studio_recover_7.png){.thumbnail}
+>> ![bj_hana_7](images/bj_hana_7.png){.thumbnail}
 >>
 > **Étape 8**
 >>
->> La restauration de votre base de données SAP HANA démarre.
+>> Veillez à cocher `Enable the backup policy when I click Finish`{.action} afin d'activer le Backup job. Cliquez sur `Finish`{.action} pour terminer la configuration du Backup job.
 >>
->> ![hana_studio_recover_8](images/hana_studio_recover_8.png){.thumbnail}
+>> ![bj_hana_8](images/bj_hana_8.png){.thumbnail}
+>>
+> **Étape 9**
+>>
+>> Nous vous recommandons d'appliquer les paramètres suivants sur votre base de données SAP HANA :
+>>
+>> - Appliquez le paramètre [catalog_backup_using_backint](https://help.sap.com/docs/SAP_HANA_PLATFORM/009e68bc5f3c440cb31823a3ec4bb95b/514ab38a2e574c85a70ebba80ff16d99.html?locale=en-US&version=2.0.05#loio514ab38a2e574c85a70ebba80ff16d99__configSPS05_id_723) à `true` pour sauvegarder le catalogue de sauvegardes en dehors de votre base de données SAP HANA.
+>> - Appliquez le paramètre [data_backup_buffer_size](https://help.sap.com/docs/SAP_HANA_PLATFORM/009e68bc5f3c440cb31823a3ec4bb95b/514ab38a2e574c85a70ebba80ff16d99.html?locale=en-US&version=2.0.05#loio514ab38a2e574c85a70ebba80ff16d99__configSPS05_id_726) en suivant la méthode suivante : 512 MB * [le nombre de canaux](#canaux) (MAX: 4096 MB)
 >>
 
-Une fois la restauration réalisée avec succès, votre base de données SAP HANA est démarrée et disponible.
+Vous pouvez à présent lancer une sauvegarde de votre base de données SAP HANA afin de vous assurer que votre configuration fonctionne comme vous le désirez.
+
+Pour cela, il suffit de vous rendre dans le menu `Home`{.action}, de sélectionner `Jobs`{.action} puis `Applications`{.action}, puis de sélectionner votre Backup job et de cliquer sur `Full`{.action}. Cela aura pour effet de lancer une sauvegarde complète sur la ou les bases de données SAP HANA configurées dans ce Backup job.
+
+Vous pouvez suivre la progression du Backup job.
+
+![full_backup](images/full_backup.png){.thumbnail}
+
+Lors de l'exécution des log backups, vous avez la possibilité d'accéder à des informations détaillées.
+
+![log_backup](images/log_backup.png){.thumbnail}
+
+Si vous avez configuré un Scale-out Repository avec un bucket Object Storage S3, vous pouvez observer vos sauvegardes sur votre bucket Object Storage S3.
+
+![sbr_s3](images/sbr_s3.png){.thumbnail}
+
+Si vous êtes dans un contexte SecNumCloud et que vous souhaitez sécuriser vos sauvegardes sur un second Backup Repository, configurez un [Backup Copy job](#backupcopyjob).
+
+Si vous souhaitez découvrir toutes les possibilités avec Veeam Plug-in for SAP HANA, nous vous conseillons de prendre connaissance de la [documentation Veeam](https://helpcenter.veeam.com/docs/backup/plugins/sap_hana_plugin.html?ver=120).
+
+### 4 - Restauration
+
+Pour restaurer votre base de données SAP HANA depuis une sauvegarde réalisée avec Veeam Backup and Replication, vous pouvez réaliser les étapes suivantes depuis la console Veeam Backup and Replication et Veeam Explorer for SAP HANA.
+
+> [!primary]
+>
+> Les ports suivants doivent être ouverts entre votre serveur Veeam Backup and Replication et votre base de données SAP HANA :
+>
+> - SAP Host Agent HTTP – tcp/1128
+> - SOAP HTTP - tcp/5<NN\>13
+>
+> Si vous désirez effectuer la communication via le protocole HTTPS, les ports sont :
+>
+> - SAP Host Agent HTTPS - tcp/1129
+> - SOAP HTTPS - tcp/5<NN\>14
+>
+
+> [!tabs]
+> **Étape 1**
+>>
+>> Ouvrez la console Veeam Backup and Replication, sélectionnez `Home`{.action}, `Backups`{.action}, `Disk`{.action}, puis cliquez sur `Restore from SAP HANA backups...`{.action} en faisant un clic droit sur la sauvegarde de votre base de données SAP HANA.
+>>
+>> ![hana_recover_1.png](images/hana_recover_1.png)
+>>
+> **Étape 2**
+>>
+>> L'application Veeam Explorer for SAP HANA s'ouvre et vous permet de restaurer soit le SYSTEMDB, soit le TENANTDB de votre base de données SAP HANA. L'ensemble des modes de restauration sont disponibles :
+>>
+>> - [Restauration avec les sauvegardes les plus récentes](https://helpcenter.veeam.com/docs/backup/explorers/vehana_restore_single_latest.html?ver=120).
+>> - [Restauration à une date et heure précise (Point-in-Time Recovery)](https://helpcenter.veeam.com/docs/backup/explorers/vehana_restore_single_pit.html?ver=120).
+>> - [Restauration vers une autre base de données SAP HANA](https://helpcenter.veeam.com/docs/backup/explorers/vehana_restore_single_tas.html?ver=120).
+>>
+>> Vous serez guidé dans les étapes pour la restauration en fonction du mode sélectionné.
+>>
+>> ![hana_recover_2.png](images/hana_recover_2.png)
+>>
+> **Étape 3**
+>>
+>> La restauration de votre base de données SAP HANA s'exécute. Vous avez la possibilité de suivre la progression de la restauration via Veeam Explorer for SAP HANA.
+>>
+>> Une fois la restauration effectuée avec succès, votre base de données est démarrée.
+>>
+>> ![hana_recover_3.png](images/hana_recover_3.png)
+>>
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

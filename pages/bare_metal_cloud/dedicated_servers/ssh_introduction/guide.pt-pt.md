@@ -14,7 +14,7 @@ O protocolo de comunicação SSH (Secure Shell) é a ferramenta principal para e
 
 **Este guia explica-lhe como aceder ao seu servidor de forma segura graças ao SSH.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gi7JqUvcEt0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/gi7JqUvcEt0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 > [!warning]
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, é da sua responsabilidade assegurar o seu bom funcionamento.

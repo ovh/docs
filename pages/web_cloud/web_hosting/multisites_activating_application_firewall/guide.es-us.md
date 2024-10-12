@@ -60,7 +60,7 @@ Haga clic en `Siguiente`{.action} y, a continuación, en `Confirmar`{.action} pa
 
 ### Comprobar el estado de la tarea de activación
 
-![gestión en curso](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/firewall-planned.png){.thumbnail}
+![gestión en curso](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ongoing-tasks/firewall-planned.png){.thumbnail}
 
 Las tareas de actualización de su configuración multisitio se mostrarán en la pestaña `Operaciones en curso`{.action} (el estado inicial es "Planificado"). El cortafuegos estará activo desde que su tarea de actualización deje de aparecer en la lista.
 

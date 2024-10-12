@@ -16,14 +16,14 @@ Właśnie zakupiłeś usługę MX Plan. Pozwala ona na korzystanie z kont e-mail
 
 ## Wymagania początkowe
 
-- Posiadanie pakietu MX Plan Jest ona dostępna przez: oferta [hostingu](https://www.ovhcloud.com/pl/web-hosting/), bezpłatny [Darmowy hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/) lub oferta MX Plan.
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), sekcja `Web Cloud`{.action}.
+- Posiadanie pakietu MX Plan Jest ona dostępna przez: oferta [hostingu](/links/web/hosting), bezpłatny [Darmowy hosting 100M](/links/web/domains-free-hosting) lub oferta MX Plan.
+- Dostęp do [Panelu klienta OVHcloud](/links/manager), sekcja `Web Cloud`{.action}.
 
 ## W praktyce <a name="instructions"></a>
 
-Po utworzeniu i udostępnieniu usługi MX Plan możesz zarządzać nią w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W zależności od daty aktywacji usługi lub jeśli [usługa została niedawno migrowana](https://www.ovh.pl/mxplan-migration/), możliwe jest, że dysponujesz jej poprzednią lub nową wersją. Zanim przejdziesz dalej, ustal, jaką wersję posiadasz.
+Po utworzeniu i udostępnieniu usługi MX Plan możesz zarządzać nią w [Panelu klienta OVHcloud](/links/manager). W zależności od daty aktywacji usługi lub jeśli usługa została niedawno migrowana, możliwe jest, że dysponujesz jej poprzednią lub nową wersją. Zanim przejdziesz dalej, ustal, jaką wersję posiadasz.
 
-Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} > sekcja Web. Kliknij E-maile, po czym wybierz odpowiednią usługę MX Plan. Następnie postępuj zgodnie z instrukcjami odnoszącymi się do wersji, którą posiadasz.
+Zaloguj się do [Panelu klienta](/links/manager) > sekcja Web. Kliknij E-maile, po czym wybierz odpowiednią usługę MX Plan. Następnie postępuj zgodnie z instrukcjami odnoszącymi się do wersji, którą posiadasz.
 
 |Poprzednia wersja usługi MX Plan|Nowa wersja usługi MX Plan|
 |---|---|
@@ -64,7 +64,7 @@ Po skonfigurowaniu Twoich kont możesz zacząć ich używać. W tym celu możesz
 
 ##### **1. Korzystanie z Webmail Outlook Web App (OWA)**
 
-Zaloguj się na stronie [Logowanie do interfejsu Webmail](https://www.ovh.pl/mail/), po czym wprowadź odpowiedni adres e-mail oraz hasło. Kliknij następnie przycisk `Logowanie`{.action}.
+Zaloguj się na stronie [Logowanie do interfejsu Webmail](/links/web/email), po czym wprowadź odpowiedni adres e-mail oraz hasło. Kliknij następnie przycisk `Logowanie`{.action}.
 
 Podczas pierwszego logowania do interfejsu Webmail zostaniesz poproszony o określenie języka interfejsu oraz Twojej strefy czasowej. Wyświetli się wówczas Twoja skrzynka odbiorcza. Aby dowiedzieć się, jak korzystać z konta e-mail za pośrednictwem Webmail OWA, zapoznaj się z naszym przewodnikiem [Korzystanie z konta e-mail w interfejsie Webmail Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
@@ -121,7 +121,7 @@ Możesz to zrobić na dwa sposoby:
 
 - utworzyć przekierowanie w interfejsie webmail zgodnie z regułami skrzynki odbiorczej. W tym celu zapoznaj się z naszym przewodnikiem [Reguły skrzynki odbiorczej w interfejsie OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan#przyklad-1-przekierowanie-e-maili-na-inny-adres).
 
-- utworzyć przekierowanie w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Metoda ta pozwala na przykład na utworzenie aliasu, czyli przekierowanie nieistniejącego konta e-mail na istniejący adres e-mail. W tym celu zapoznaj się z naszym przewodnikiem [Korzystanie z przekierowań e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections#nowa-wersja-uslugi-mx-plan).
+- utworzyć przekierowanie w [Panelu klienta OVHcloud](/links/manager). Metoda ta pozwala na przykład na utworzenie aliasu, czyli przekierowanie nieistniejącego konta e-mail na istniejący adres e-mail. W tym celu zapoznaj się z naszym przewodnikiem [Korzystanie z przekierowań e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections#nowa-wersja-uslugi-mx-plan).
 
 ##### **Autoresponder**
 
@@ -180,7 +180,7 @@ Po skonfigurowaniu Twoich kont możesz zacząć ich używać. W tym celu możesz
 
 ##### **1. Skorzystaj z interfejsu Webmail RoundCube**
 
-Zaloguj się na stronie [Logowanie do interfejsu Webmail](https://www.ovh.pl/mail/), po czym wprowadź odpowiedni adres e-mail oraz hasło. Kliknij następnie przycisk `Logowanie`{.action}.
+Zaloguj się na stronie [Logowanie do interfejsu Webmail](/links/web/email), po czym wprowadź odpowiedni adres e-mail oraz hasło. Kliknij następnie przycisk `Logowanie`{.action}.
 
 Wyświetli się wówczas Twoja skrzynka odbiorcza. Aby dowiedzieć się, jak korzystać z konta e-mail za pośrednictwem Webmail RoundCube, zapoznaj się z naszym przewodnikiem [Korzystanie z konta e-mail w interfejsie Webmail RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
 

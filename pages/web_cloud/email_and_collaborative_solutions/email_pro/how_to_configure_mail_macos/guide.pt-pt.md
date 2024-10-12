@@ -1,6 +1,6 @@
 ---
-title: 'Como configurar uma conta E-mail Pro no Mail do macOS'
-updated: 2022-06-13
+title: 'E-mail Pro - Configure sua conta de e-mail no Mail para macOS'
+updated: 2024-10-09
 ---
 
 > [!primary]
@@ -17,12 +17,12 @@ As contas Email Pro podem ser configuradas em vários softwares de e-mail compat
 >
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção "Quer saber mais?" deste guia.
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](/links/partner) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção "Quer saber mais?" deste guia.
 > 
 
 ## Requisitos
 
-- Dispor de um endereço de [E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/).
+- Dispor de um endereço de [E-mail Pro](/links/web/email-pro).
 - Ter o software Mail instalado no seu Mac.
 - Dispor das credenciais do endereço de e-mail que pretende configurar.
  
@@ -32,7 +32,7 @@ As contas Email Pro podem ser configuradas em vários softwares de e-mail compat
 >
 > No nosso exemplo, utilizamos a menção servidor: pro<b>?</b>.mail.ovh.net. Deverá substituir o "? " pelo número que designa o servidor do seu serviço E-mail Pro.
 >
-> Encontre este número na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na rubrica `Web Cloud`{.action} e, a seguir, `E-mail Pro`{.action}. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.
+> Encontre este número na sua [Área de Cliente OVHcloud](/links/manager), na rubrica `Web Cloud`{.action} e, a seguir, `E-mail Pro`{.action}. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.
 >
 
 ### Adicionar a conta
@@ -51,7 +51,7 @@ As contas Email Pro podem ser configuradas em vários softwares de e-mail compat
 
 Após a configuração, a conta de e-mail está pronta a usar e pode começar a enviar e receber mensagens no seu dispositivo.
 
-A OVHcloud também disponibiliza uma aplicação web que permite aceder ao seu endereço de e-mail a partir de um browser. disponível no endereço <https://www.ovh.com/pt/mail/>. Para aceder, só precisa dos dados de acesso do seu endereço de e-mail. Para qualquer questão relativa à sua utilização, consulte o nosso manual [Utilizar o Outlook Web App com uma conta Exchange](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
+A OVHcloud também disponibiliza uma aplicação web que permite aceder ao seu endereço de e-mail a partir de um browser. disponível no endereço [Webmail](/links/web/email). Para aceder, só precisa dos dados de acesso do seu endereço de e-mail. Para qualquer questão relativa à sua utilização, consulte o nosso manual [Utilizar o Outlook Web App com uma conta Exchange](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
 ### Recuperar um backup do seu endereço de e-mail
 
@@ -89,5 +89,9 @@ No âmbito de uma configuração em **POP**, os valores são os seguintes:
 > Quando configura o seu endereço de e-mail em **IMAP** e deseja alterar a configuração em **POP**, é necessário eliminar a conta de Mail do Mac e recriá-la em **POP** para alterar a configuração.
 
 ## Quer saber mais?
- 
+
+> [!primary]
+>
+> Para obter mais informações sobre a configuração de um endereço de e-mail a partir da aplicação Mail no macOS, consulte [Centro de Ajuda da Apple](https://support.apple.com/pt-pt/guide/mail/mail35803/mac).
+
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

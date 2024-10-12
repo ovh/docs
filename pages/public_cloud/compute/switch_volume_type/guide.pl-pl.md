@@ -1,7 +1,7 @@
 ---
 title: Zmień wolumen Block Storage
 excerpt: "Dowiedz się, jak zmienić typ wolumenu block storage przy użyciu technologii Openstack"
-updated: 2023-08-08
+updated: 2024-09-26
 ---
 
 > [!primary]
@@ -24,6 +24,10 @@ W przypadku zmiany typu wolumenu Block Storage na wolumin "High speed gen2", pol
 Domyślnie polityka migracji jest ustawiona na `Never`, ponieważ wolumin pozostaje w tym samym klastrze CEPH. W przypadku "High speed gen2" wolumin musi zostać przeniesiony do nowego klastra.
 
 Modyfikacja ta może zostać przeprowadzona za pośrednictwem interfejsu Horizon lub interfejsu wiersza polecenia OpenStack.
+
+> [!warning]
+> Jeśli wolumin jest podłączony do instancji, przed kontynuowaniem odłącz go. Aby uzyskać więcej informacji, zapoznaj się z [tą sekcją](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#odacz-wolumen) w odpowiednim przewodniku.
+>
 
 ### Zarządzanie w interfejsie Horizon
 

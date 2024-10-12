@@ -1,7 +1,7 @@
 ---
-title: "MXplan - Konfiguracja konta e-mail w Gmailu na Androida"
+title: "MX Plan - Konfiguracja konta e-mail w Gmailu na Androida"
 excerpt: "Dowiedz się, jak skonfigurować konto MX Plan na urządzeniu z systemem Android przy użyciu aplikacji Gmail"
-updated: 2023-12-15
+updated: 2024-10-01
 ---
 
 <style>
@@ -16,7 +16,7 @@ updated: 2023-12-15
 
 ## Wprowadzenie
 
-Konta usługi MX Plan mogą być skonfigurowane w jednym z kompatybilnych programów pocztowych. Dzięki temu możesz wysyłać i odbierać wiadomości, korzystając z wybranej przez Ciebie aplikacji. W tym przewodniku wyjaśnimy proces konfiguracji konta e-mail MXplan z poziomu aplikacji Gmail obecnej na urządzeniach z systemem Android.
+Konta usługi MX Plan mogą być skonfigurowane w jednym z kompatybilnych programów pocztowych. Dzięki temu możesz wysyłać i odbierać wiadomości, korzystając z wybranej przez Ciebie aplikacji. W tym przewodniku wyjaśnimy proces konfiguracji konta e-mail MX Plan z poziomu aplikacji Gmail obecnej na urządzeniach z systemem Android.
 
 **Dowiedz się, jak skonfigurować konto MX Plan na urządzeniu z systemem Android przy użyciu aplikacji Gmail.**
 
@@ -24,11 +24,11 @@ Konta usługi MX Plan mogą być skonfigurowane w jednym z kompatybilnych progra
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 >
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. Niemniej jednak, w przypadku trudności zalecamy skontaktowanie się z [wyspecjalizowanym usługodawcą](https://partner.ovhcloud.com/pl/directory/) lub skontaktuj się z dostawcą usługi. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji „Sprawdź również”.
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. Niemniej jednak, w przypadku trudności zalecamy skontaktowanie się z [wyspecjalizowanym usługodawcą](/links/partner) lub skontaktuj się z dostawcą usługi. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji „Sprawdź również”.
 
 ## Wymagania początkowe
 
-- Posiadanie konta e-mail MX Plan (zawartego w usłudze MX Plan lub w usłudze [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/)).
+- Posiadanie konta e-mail MX Plan (zawartego w usłudze MX Plan lub w usłudze [hostingu OVHcloud](/links/web/hosting)).
 - Instalacja aplikacji Gmail na Twoim urządzeniu Możesz ją zainstalować w sklepie Google Play, jeśli jeszcze nie jest dostępna.
 - Posiadanie danych do logowania do konta e-mail, które chcesz skonfigurować.
 
@@ -109,7 +109,7 @@ Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz wysyła
 
 > [!success]
 >
-> OVHcloud oferuje aplikację internetową umożliwiającą korzystanie z Twojego konta e-mail przy użyciu wyszukiwarki, dostępną pod adresem <https://www.ovhcloud.com/pl/mail/>. Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail.
+> OVHcloud oferuje aplikację internetową umożliwiającą korzystanie z Twojego konta e-mail przy użyciu wyszukiwarki, dostępną pod adresem [Webmail](/links/web/email). Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail.
 
 ### Ustawienia POP, IMAP i SMTP
 
@@ -172,6 +172,10 @@ Aby zrozumieć różnicę między używaniem protokołu POP i IMAP, rozbijemy el
 > Ten opis jest syntezą, reprezentuje standardowe działanie obu protokołów. Możesz również ustawić POP, aby wiadomości e-mail nie były usuwane po odczytaniu wiadomości. Celem jest tutaj opisanie rodzimego działania tych dwóch protokołów i uniknięcie dodatkowych operacji, aby dostosować się do swoich potrzeb.
 
 ## Sprawdź również
+
+> [!primary]
+>
+> Aby uzyskać więcej informacji na temat konfigurowania konta e-mail z poziomu aplikacji Gmail na urządzeniu z systemem Android, zobacz [Centrum pomocy Google](https://support.google.com/mail/answer/6078445?hl=pl-CA&co=GENIE.Platform%3DAndroid#zippy=-odaj-konto).
 
 [Konfiguracja konta E-mail Pro na urządzeniu z systemem Android przy użyciu aplikacji Gmail](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_android).
 

@@ -1,7 +1,7 @@
 ---
 title: "Activer les adresses e-mails incluses dans votre hébergement web"
 excerpt: "Découvrez comment activer les adresses e-mails incluses avec votre offre d'hébergement web"
-updated: 2024-07-17
+updated: 2024-10-01
 ---
 
 ## Objectif
@@ -10,7 +10,7 @@ Si vous avez commandé un hébergement web sans l'attacher directement à un nom
 
 **Découvrez comment activer les adresses e-mails incluses avec votre offre d'hébergement web.**
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7D0ODJ2Vwcg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/7D0ODJ2Vwcg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Prérequis
 

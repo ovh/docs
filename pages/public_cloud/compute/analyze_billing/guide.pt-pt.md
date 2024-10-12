@@ -1,7 +1,7 @@
 ---
 title: 'Informações sobre o método de faturação cloud'
 excerpt: 'Saiba mais sobre o método de faturação dos produtos Public Cloud'
-updated: 2024-04-24
+updated: 2024-10-07
 ---
 
 > [!primary]
@@ -23,6 +23,9 @@ Este sistema é semelhante ao de certas operadoras que faturam ao final do mês 
 * um projeto [Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) criado na sua conta OVHcloud
 * uma [Instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external}
 * ter acesso à [Área de Cliente OVHcloud](/links/manager)
+
+> [!success]
+> Tire partido de preços reduzidos comprometendo-se com um período de 1 a 36 meses nos seus recursos Public Cloud. Mais informações na nossa página [Savings Plans](/links/public-cloud/savings-plan).
 
 ## Princípio geral
 

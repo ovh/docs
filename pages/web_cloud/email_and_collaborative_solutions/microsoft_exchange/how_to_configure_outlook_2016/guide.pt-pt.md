@@ -1,13 +1,11 @@
 ---
 title: 'Exchange - Configure sua conta de e-mail no Outlook para Windows'
 excerpt: 'Saiba como configurar uma conta Exchange no Outlook para Windows'
-updated: 2021-07-05
+updated: 2024-10-09
 ---
- 
+
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
- 
 
 ## Objetivo
 
@@ -18,21 +16,19 @@ As contas Exchange podem ser usadas com vários softwares de e-mail (desde que s
 > [!warning]
 >
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
-> 
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção «Quer saber mais?» deste guia.
-> 
+>
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](/links/partner) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção «Quer saber mais?» deste guia.
 
 ## Requisitos
 
-- Ter o serviço [E-mail Pro](https://www.ovhcloud.com/pt/emails/){.external}.
+- Ter o serviço [E-mail Pro](/links/web/emails).
 - Dispor do programa Microsoft Outlook ou posterior, instalado no seu computador.
 - Dispor das credenciais do endereço de e-mail que pretende configurar.
 - O campo SRV da OVHcloud deve estar corretamente configurado na zona DNS do domínio. Por favor, consulte o nosso guia [Adicionar um domínio ao serviço Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 
 > [!primary]
 >
-> Utiliza o Outlook e posterior para Mac? consulte o nosso manual [Configurar uma conta Exchange no Outlook para Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac){.external} (versão em inglês).
->
+> Utiliza o Outlook e posterior para Mac? consulte o nosso manual [Configurar uma conta Exchange no Outlook para Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac) (versão em inglês).
 
 ## Instruções
 
@@ -58,8 +54,8 @@ As contas Exchange podem ser usadas com vários softwares de e-mail (desde que s
 > 
 > ![Exchange](images/config-outlook-exchange03.png){.thumbnail}
 >
-> Sugerimos que verifique a configuração do domínio configurado no seu serviço Exchange na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), no separador `Domínios associados`{.action} e na coluna `Diagnóstico`{.action} da tabela.
->
+> Sugerimos que verifique a configuração do domínio configurado no seu serviço Exchange na [Área de Cliente OVHcloud](/links/manager), no separador `Domínios associados`{.action} e na coluna `Diagnóstico`{.action} da tabela.
+
 
 - Se a configuração do domínio estiver válida, poderá aparecer uma mensagem de autorização de ligação aos servidores da OVHcloud. Aceite este último para permitir a configuração automática da sua conta Exchange.
 - Determine a periodicidade de conservação dos elementos da sua conta Exchange, **localmente no seu computador**. Clique em `Seguinte`{.action} e, a seguir, em `Terminado`{.action}.
@@ -70,7 +66,7 @@ As contas Exchange podem ser usadas com vários softwares de e-mail (desde que s
 
 Após a configuração, a conta de e-mail está pronta a usar e pode começar a enviar e receber mensagens no seu dispositivo.
 
-O seu endereço de e-mail Exchange, bem como todas as suas funções de colaboração, estão igualmente disponíveis através da interface [OWA](https://www.ovh.pl/mail/). Para qualquer questão relativa à sua utilização, não hesite em consultar o nosso guia [Consultar a sua conta Exchange a partir da interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
+O seu endereço de e-mail Exchange, bem como todas as suas funções de colaboração, estão igualmente disponíveis através da interface [OWA](/links/web/email). Para qualquer questão relativa à sua utilização, não hesite em consultar o nosso guia [Consultar a sua conta Exchange a partir da interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
 ### Recuperar um backup do seu endereço de e-mail
 
@@ -78,8 +74,12 @@ Se tiver de efetuar uma operação suscetível de causar a perda dos dados da su
 
 ## Quer saber mais?
 
-[Configurar um endereço de e-mail no Outlook para Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016){.external}
+> [!primary]
+>
+> Para obter mais informações sobre a configuração de um endereço de e-mail a partir da aplicação Outlook no Windows, consulte [Central de Ajuda da Microsoft](https://support.microsoft.com/pt-pt/office/adicionar-uma-conta-de-correio-em-outlook-6e27792a-9267-4aa4-8bb6-c84ef146101b).
 
-[Configurar uma conta Email Pro no Outlook para Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016){.external}
+[Configurar um endereço de e-mail no Outlook para Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)
+
+[Configurar uma conta Email Pro no Outlook para Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)
 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

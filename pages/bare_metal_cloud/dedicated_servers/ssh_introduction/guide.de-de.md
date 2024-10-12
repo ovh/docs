@@ -14,7 +14,7 @@ Das Kommunikationsprotokoll SSH (*Secure Shell*) ist das meistgenutzte Verfahren
 
 **Diese Anleitung erklärt, wie Sie mithilfe von SSH auf Ihren Server zugreifen.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gi7JqUvcEt0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/gi7JqUvcEt0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 > [!warning]
 >

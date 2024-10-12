@@ -16,16 +16,16 @@ Błędy na kontach e-mail Exchange mogą mieć wiele przyczyn. Automatyczna diag
 
 ## Wymagania początkowe
 
-- Posiadanie [rozwiązania Exchange OVHcloud](https://www.ovhcloud.com/pl/emails/hosted-exchange/)
+- Posiadanie [rozwiązania Exchange OVHcloud](/links/web/emails-hosted-exchange)
 - Posiadanie danych identyfikacyjnych konta Exchange do sprawdzenia
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dostęp do [Panelu klienta OVHcloud](/links/manager)
 - Aktualizacja w [płatności](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) tej usługi i powiązanej domeny
 
 ## W praktyce
 
 ### Wykonaj diagnostykę
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) w sekcji `Web Cloud`{.action}. Wybierz `Microsoft`{.action} , następnie kliknij `Exchange`{.action} i wybierz Twoją usługę.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager) w sekcji `Web Cloud`{.action}. Wybierz `Microsoft`{.action} , następnie kliknij `Exchange`{.action} i wybierz Twoją usługę.
 
 ![Diagnostyka Exchange](images/img_4450.png){.thumbnail}
 
@@ -58,11 +58,11 @@ Zapoznaj się z naszym przewodnikiem [Co zrobić w przypadku blokady konta ze wz
 ### Abonament dotyczący konta wygasł <a name="expired"></a>
 
 Ponieważ abonament nie jest już aktywny, wysyłka i odbiór zostały wyłączone.<br>
-Aby ponownie włączyć abonament, wystarczy zmienić jego konfigurację [częstotliwość płatności](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#periodicity) w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+Aby ponownie włączyć abonament, wystarczy zmienić jego konfigurację [częstotliwość płatności](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#periodicity) w [Panelu klienta OVHcloud](/links/manager).
 
 ### Konto zostało zablokowane z powodu polityki bezpieczeństwa
 
-Jeśli w [Panelu klienta aktywowana jest polityka bezpieczeństwa](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), konto może zostać tymczasowo zablokowane.
+Jeśli w [Panelu klienta aktywowana jest polityka bezpieczeństwa](/links/manager), konto może zostać tymczasowo zablokowane.
 
 Możesz na przykład zdecydować, że konto zostanie zablokowane po kilku nieudanych próbach logowania, na czas określony przez Twoją opiekę.
 
@@ -74,7 +74,7 @@ Aby uzyskać więcej informacji na temat tej funkcji, zapoznaj się z naszym [pr
 
 Może to być spowodowane wpisaniem nieprawidłowego hasła do konta. Sprawdź najpierw, czy hasło jest poprawne. Zaloguj się do interfejsu [Webmail](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa), następnie zrestartuj diagnostykę.
 
-W razie potrzeby możesz zmienić hasło do wybranego konta w zakładce `Konta e-mail`{.action} w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Jeśli problem się powtórzy, utwórz zgłoszenie.
+W razie potrzeby możesz zmienić hasło do wybranego konta w zakładce `Konta e-mail`{.action} w [Panelu klienta OVHcloud](/links/manager). Jeśli problem się powtórzy, utwórz zgłoszenie.
 
 ### Wpis MX domeny jest nieprawidłowy
 

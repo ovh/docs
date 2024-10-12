@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Endpoints y geodisponibilidad del Object Storage (EN)
-updated: 2024-08-09
+updated: 2024-10-01
 ---
 
 <style>
@@ -76,14 +76,25 @@ OVHcloud Object Storage S3 can be accessed through a unique endpoint: `https://s
         <td>4</td>
     </tr>
     <tr>
-        <td>Asia-Pacific</td>
+        <td rowspan=3>Asia-Pacific</td>
         <td>Singapore</td>
         <td>sgp</td>
         <td>HTTPS</td>
         <td>4</td>
     </tr>
+    <tr>
+        <td>Sydney</td>
+        <td>ap-southeast-syd</td>
+        <td>HTTPS</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>Mumbai</td>
+        <td>ap-south-mum</td>
+        <td>HTTPS</td>
+        <td>4</td>
+    </tr>
 </table>
-
 
 The bucket endpoint is a URL, for example `https://my-bucket.s3.gra.io.cloud.ovh.net` that represents a virtual host style endpoint.
 
@@ -232,4 +243,4 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **perf** endpoint is t
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

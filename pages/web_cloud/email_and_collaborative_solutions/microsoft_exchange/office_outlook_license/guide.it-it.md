@@ -28,7 +28,7 @@ Dopo la sottoscrizione, puoi scaricare Outlook tra una delle 3 versioni seguenti
 
 #### Per un account Hosted Exchange
 
-Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione `Web Cloud`. Clicca su `Microsoft`{.action}, poi su `Exchange`{.action} e seleziona la piattaforma **Hosted Exchange** interessata.
+Accedi al tuo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`. Clicca su `Microsoft`{.action}, poi su `Exchange`{.action} e seleziona la piattaforma **Hosted Exchange** interessata.
 
 Clicca sull'icona `...`{.action} a destra dell'account e poi su `Ordina una licenza Outlook`{.action}.
 
@@ -44,7 +44,7 @@ Attendi qualche istante per la messa a disposizione della tua licenza Outlook ne
 
 #### Per un account Private Exchange
 
-Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione `Web Cloud`. Clicca su `Microsoft`{.action}, poi su `Exchange`{.action} e seleziona il servizio **Private Exchange** interessato.
+Accedi al tuo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`. Clicca su `Microsoft`{.action}, poi su `Exchange`{.action} e seleziona il servizio **Private Exchange** interessato.
 
 Clicca sull'icona `...`{.action} a destra dell'account e poi su `Attiva la licenza Outlook`{.action}.
 
@@ -79,7 +79,7 @@ Il file caricato è in formato .ISO, cioè un'immagine disco. Avvia l'installazi
 
 ### Elimina la licenza Outlook dal tuo account
 
-Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione `Web Cloud`. Seleziona il tuo servizio cliccando su `Microsoft`{.action} > `Exchange`{.action}.
+Accedi al tuo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`. Seleziona il tuo servizio cliccando su `Microsoft`{.action} > `Exchange`{.action}.
 
 Clicca sull'icona `...`{.action} a destra dell'account e poi su `Elimina la licenza Outlook`{.action}
 
