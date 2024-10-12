@@ -1,7 +1,7 @@
 ---
-title: "Configure an IPv6 on a virtual machine"
+title: "Configure an IPv6 address on a virtual machine"
 excerpt: "Find out how to configure an IPv6 address on a virtual machine"
-updated: 2024-10-07
+updated: 2024-10-11
 ---
 
 ## Objective
@@ -33,7 +33,7 @@ Our infrastructure also allows you to configure IPv6 on your virtual machines.
 
 The following sections contain the configurations of the distributions we currently offer and the most commonly used distributions/operating systems. The first step is always to connect to your server via SSH or via a GUI (RDP for a Windows server) connection session.
 
-On dedicated servers, the first IPv6 is declared as 2607:5300:xxxx:xxxx::/64. For example, if we have assigned your server the IPv6 range: `2607:5300:abcd:efgh::/64`, the first IPv6 on your server is: `2607:5300:abcd:efgh::/64`.
+On dedicated servers, the first IPv6 is declared as 2607:5300:xxxx:xxxx::/64. For example, if we have assigned your server the IPv6 range: `2607:5300:xxxx:xxxx::/64`, the first IPv6 on your server is: `2607:5300:xxxx:xxxx::/64`.
 
 Before you begin, and in order to use the same terminology during the changes, please read the table below. It references terms that we will use in this documentation:
 
@@ -75,11 +75,13 @@ Please note that the top "0" can be deleted in an IPv6 gateway.
 
 Example:
 
-IPv6_GATEWAY : `2607:5300:60:62FF:00FF:00FF:00FF:00FF` can also be written as `2607:5300:60:62FF:FF:FF:FF:FF:FF`.
+IPv6_GATEWAY : `2607:5300:60:62ff:00ff:00ff:00ff:00ff` can also be written as `2607:5300:60:62ff:ff:ff:ff:ff:ff`.
 
-### Configuration on Proxmox
+### Prepare the host
 
-#### For a virtual machine
+#### Proxmox
+
+**For a virtual machine**
 
 The first step is to create the virtual machine in Proxmox.
 
@@ -108,9 +110,61 @@ Once you have logged in to the Proxmox dashboard, click on your server name in t
 >>![create vm](images/create_vm.png){.thumbnail}
 >>
 
-Once the virtual machine has been created, the next step is to launch it and install the operating system.
+Once the operating system has been installed on the virtual machine, you can [configure](#configurationsteps) the IPv6 address.
 
-**Configuration based on Netplan**
+**For a container**
+
+Once you have created your container, click on it in the left-hand menu. Then click `Network`{.action}.
+
+![container configuration](images/container_network.png){.thumbnail}
+
+Select the existing network and click `edit`{.action}.
+
+![container configuration](images/edit_network.png){.thumbnail}
+
+Fill in the IPV6 fields with the correct information
+
+![container configuration](images/configure_ipv6_container.png){.thumbnail}
+
+Once you have done this, click `OK`{.action} to save the changes.
+
+Log in to your container to verify IPv6 connectivity with the `ping` command:
+
+![ping](images/container_ubuntu.png){.thumbnail}
+
+
+#### Windows Servers / Hyper-V
+
+The first step is to install the Hyper-V role on your Windows Server. For more information, consult the [official documentation](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server){.external}.
+
+Before configuring your virtual machine, you need to create a virtual switch.
+
+From the command line of your dedicated server, run the following command and note the name of the network adapter that contains the server's main IP address:
+
+```powershell
+ipconfig /all
+```
+
+> [!primary]
+> 
+> This step is only required once for a Hyper-V server. For all VMs, a **virtual switch** is required to connect the VM’s **virtual network adapters** to the server’s **physical adapter**.
+> 
+
+In the Hyper-V Manager, create a new virtual switch and set the connection type to `External`{.action}.
+
+Select the adapter with the server’s IP, then tick the option `Allow management operating system to share this network adapter`{.action}.
+
+![virtual switch](images/virtual_switch.png){.thumbnail}
+
+Next, go to the settings of the VM and click on `Network Adapter`{.action} in the left-hand tab. From the drop down list, select the virtual switch created above and click on `Apply`{.action}, then on `OK`{.action}.
+
+![virtual switch](images/virtual_switch.png){.thumbnail}
+
+Once you have installed the operating system on the virtual machine, you can proceed with the [configuration](#configurationsteps) of the IPv6 IP address.
+
+### Configure the IPv6 on virtual machines <a name="configurationsteps"></a>
+
+#### Configuration based on Netplan
 
 The configuration below is based on Ubuntu 20.04.
 
@@ -141,7 +195,7 @@ To test your IPv6 connectivity, run the `ping` command at `2001:4860:4860::8888`
 
 ![ping](images/vm_ubuntu.png){.thumbnail}
 
-**Configuration based on network interfaces**
+#### Configuration based on network interfaces
 
 The configuration below is based on Debian 11.
 
@@ -174,7 +228,7 @@ To test your IPv6 connectivity, run the `ping` command at `2001:4860:4860::8888`
 ![ping](images/vm_debian.png){.thumbnail}
 
 
-**Configuration based on NetworkManager**
+#### Configuration based on NetworkManager
 
 The configuration below is based on Fedora 40.
 
@@ -196,7 +250,7 @@ Next, configure the IPv6 address of your choice by replacing *YOUR_IPV6*, *IPV6_
 sudo nano /etc/NetworkManager/system-connections/ens18.nmconnection
 ```
 
-```bash
+```console
 [ipv6]
 method=manual # If the value is "auto", replace with "manual".
 may-fail=true
@@ -214,25 +268,6 @@ To test your IPv6 connectivity, run the `ping` command at `2001:4860:4860::8888`
 
 ![ping](images/vm_alma_rocky.png){.thumbnail}
 
-#### For a container
-
-Once you have created your container, click on it in the left-hand menu. Then click `Network`{.action}.
-
-![container configuration](images/container_network.png){.thumbnail}
-
-Select the existing network and click `edit`{.action}.
-
-![container configuration](images/edit_network.png){.thumbnail}
-
-Fill in the IPV6 fields with the correct information
-
-![container configuration](images/configure_ipv6_container.png){.thumbnail}
-
-Once you have done this, click `OK`{.action} to save the changes.
-
-Log in to your container to verify IPv6 connectivity with the `ping` command:
-
-![ping](images/container_ubuntu.png){.thumbnail}
 
 ## Go further
 

@@ -1,7 +1,7 @@
 ---
-title: "Configurer une IPv6 sur une machine virtuelle"
+title: "Configurer une adresse IPv6 sur une machine virtuelle"
 excerpt: "Découvrez comment configurer une adresse IPv6 sur une machine virtuelle"
-updated: 2024-10-07
+updated: 2024-10-11
 ---
 
 ## Objectif
@@ -32,7 +32,7 @@ Notre infrastructure vous permet également de configurer l'IPv6 sur vos machine
 
 Les sections suivantes contiennent les configurations des distributions que nous proposons actuellement et les distributions/systèmes d’exploitation les plus couramment utilisés. La première étape consiste toujours à vous connecter à votre serveur en SSH ou via une session de connexion GUI (RDP pour un serveur Windows).
 
-Sur les serveurs dédiés, la première IPv6 est déclarée comme 2607:5300:xxxx:xxxx::/64. Par exemple, si nous avons attribué à votre serveur la plage IPv6 : `2607:5300:abcd:efgh::/64`, la première IPv6 de votre serveur est : `2607:5300:abcd:efgh::/64`.
+Sur les serveurs dédiés, la première IPv6 est déclarée comme 2607:5300:xxxx:xxxx::/64. Par exemple, si nous avons attribué à votre serveur la plage IPv6 : `2607:5300:xxxx:xxxx::/64`, la première IPv6 de votre serveur est : `2607:5300:xxxx:xxxx::/64`.
 
 Avant de débuter, et afin d’utiliser les mêmes terminologies durant les manipulations, nous vous invitons à prendre connaissance du tableau ci-dessous. Il référence des termes que nous utiliserons dans cette documentation :
 
@@ -74,11 +74,13 @@ Veuillez noter que les "0" de tête peuvent être supprimés dans une passerelle
 
 Exemple :
 
-IPv6_GATEWAY : `2607:5300:60:62FF:00FF:00FF:00FF:00FF` peut aussi être écrit comme `2607:5300:60:62FF:FF:FF:FF:FF`.
+IPv6_GATEWAY : `2607:5300:60:62ff:00ff:00ff:00ff:00ff` peut aussi être écrit comme `2607:5300:60:62ff:ff:ff:ff:ff`.
 
-### Configuration sur Proxmox
+### Préparer l'hôte
 
-#### Pour une machine virtuelle
+#### Proxmox
+
+**Pour une machine virtuelle**
 
 La première étape consiste à créer la machine virtuelle dans Proxmox.
 
@@ -107,9 +109,60 @@ Une fois connecté au tableau de bord Proxmox, cliquez sur le nom de votre serve
 >>![create vm](images/create_vm.png){.thumbnail}
 >>
 
-Une fois la machine virtuelle créée, l’étape suivante consiste à la lancer et à procéder à l’installation du système d’exploitation.
+Une fois le système d'exploitation installé sur la machine virtuelle, vous pouvez procéder à la [configuration](#configurationsteps) de l'adresse IPv6.
 
-**Configuration basée sur Netplan**
+**Pour un conteneur**
+
+Une fois votre conteneur créé, cliquez dessus dans le menu de gauche. Cliquez ensuite sur `Réseau`{.action}.
+
+![configuration du conteneur](images/container_network.png){.thumbnail}
+
+Sélectionnez le réseau existant et cliquez sur `edit`{.action}.
+
+![configuration du conteneur](images/edit_network.png){.thumbnail}
+
+Complétez les champs IPV6 avec les bonnes informations.
+
+![configuration du conteneur](images/configure_ipv6_container.png){.thumbnail}
+
+Enfin, cliquez sur `OK`{.action} pour enregistrer les modifications.
+
+Connectez-vous à votre conteneur pour vérifier la connectivité IPv6 avec la commande `ping` :
+
+![ping](images/container_ubuntu.png){.thumbnail}
+
+#### Windows Server/Hyper-V
+
+La première étape consiste à installer le rôle Hyper-V sur votre serveur Windows. Pour plus d'informations, consultez la [documentation officielle](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server){.external}.
+
+Avant de configurer votre machine virtuelle, vous devez créer un commutateur virtuel.
+
+Depuis la ligne de commande de votre serveur dédié, exécutez la commande suivante et notez le nom de la carte réseau qui contient l'adresse IP principale du serveur :
+
+```powershell
+ipconfig /all
+```
+
+Dans le panneau de configuration Hyper-V, créez un nouveau commutateur virtuel et définissez le type de connexion sur `Externe`{.action}.
+
+Sélectionnez l'adaptateur avec l'adresse IP du serveur, puis cochez `Autoriser le système d'exploitation à partager cette carte réseau`{.action}.
+
+![virtual switch](images/virtual_switch.png){.thumbnail}
+
+> [!primary]
+> 
+> Cette étape n'est requise qu'une seule fois pour un serveur Hyper-V. Pour toutes les machines virtuelles, un commutateur virtuel est nécessaire pour connecter les cartes réseau virtuelles de la machine virtuelle à la carte physique du serveur.
+> 
+
+Ensuite, allez dans les paramètres de la VM et cliquez sur `Network Adapter`{.action} dans l'onglet de gauche. Dans la liste déroulante, sélectionnez le commutateur virtuel créé ci-dessus et cliquez sur `Appliquer`{.action}, puis sur `OK`{.action}.
+
+![virtual switch](images/virtual_switch.png){.thumbnail}
+
+Une fois le système d'exploitation installé sur la machine virtuelle, vous pouvez procéder à la [configuration](#configurationsteps) de l'adresse IPv6.
+
+### Configurer l'IPv6 sur les machines virtuelles <a name="configurationsteps"></a>
+
+#### Configuration basée sur Netplan
 
 La configuration ci-dessous est basée sur Ubuntu 20.04.
 
@@ -140,7 +193,7 @@ Pour tester la connectivité de votre IPv6, exécutez la commande `ping` à l'ad
 
 ![ping](images/vm_ubuntu.png){.thumbnail}
 
-**Configuration basée sur network interfaces**
+#### Configuration basée sur network interfaces
 
 La configuration ci-dessous est basée sur Debian 11.
 
@@ -173,7 +226,7 @@ Pour tester la connectivité de votre IPv6, exécutez la commande `ping` à l'ad
 ![ping](images/vm_debian.png){.thumbnail}
 
 
-**Configuration basee sur NetworkManager**
+#### Configuration basée sur NetworkManager
 
 La configuration ci-dessous est basée sur Fedora 40.
 
@@ -195,7 +248,7 @@ Configurez ensuite l'adresse IPv6 de votre choix en remplaçant *YOUR_IPV6*, *IP
 sudo nano /etc/NetworkManager/system-connections/ens18.nmconnection
 ```
 
-```bash
+```console
 [ipv6]
 method=manual # si la valeur est "auto", remplacez par "manual".
 may-fail=true
@@ -212,26 +265,6 @@ sudo systemctl restart NetworkManager
 Pour tester la connectivité de votre IPv6, exécutez la commande `ping` à l'adresse `2001:4860:4860::8888` :
 
 ![ping](images/vm_alma_rocky.png){.thumbnail}
-
-#### Pour un conteneur
-
-Une fois votre conteneur créé, cliquez dessus dans le menu de gauche. Cliquez ensuite sur `Réseau`{.action}.
-
-![configuration du conteneur](images/container_network.png){.thumbnail}
-
-Sélectionnez le réseau existant et cliquez sur `edit`{.action}.
-
-![configuration du conteneur](images/edit_network.png){.thumbnail}
-
-Complétez les champs IPV6 avec les bonnes informations.
-
-![configuration du conteneur](images/configure_ipv6_container.png){.thumbnail}
-
-Enfin, cliquez sur `OK`{.action} pour enregistrer les modifications.
-
-Connectez-vous à votre conteneur pour vérifier la connectivité IPv6 avec la commande `ping` :
-
-![ping](images/container_ubuntu.png){.thumbnail}
 
 ## Aller plus loin
 
