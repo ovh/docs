@@ -191,6 +191,19 @@ network:
     version: 2
 ```
 
+> [!warning]
+>
+> It is important to respect the alignment of each element in `yaml` files as represented in the example above. Do not use the tab key to create your spacing. Only the space key is needed. 
+>
+
+Save your changes to the config file and exit the editor.
+
+Apply the configuration:
+
+```bash
+sudo nano netplan apply
+```
+
 To test your IPv6 connectivity, run the `ping` command at `2001:4860:4860::8888`:
 
 ![ping](images/vm_ubuntu.png){.thumbnail}
@@ -217,7 +230,9 @@ address YOUR_IPV6/IPV6_PREFIX
 IPV6_GATEWAY gateway
 ```
 
-Once you have done this, reboot the network with the following command:
+Save your changes to the config file and exit the editor.
+
+Next, reboot the network with the following command:
 
 ```bash
 sudo systemctl restart networking.service
@@ -258,7 +273,9 @@ address=YOUR_IPV6/IPv6_PREFIX
 gateway=2607:5300:xxxx:xxff:ff:ff:ff:ff
 ```
 
-Once you have done this, reboot the network with the following command:
+Save your changes to the config file and exit the editor.
+
+Next, reboot the network with the following command:
 
 ```bash
 sudo systemctl restart NetworkManager

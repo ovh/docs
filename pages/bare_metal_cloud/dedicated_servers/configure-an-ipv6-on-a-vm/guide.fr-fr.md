@@ -189,6 +189,19 @@ network:
     version: 2
 ```
 
+> [!warning]
+>
+> Il est important de respecter l'alignement de chaque élément dans les fichiers `yaml` comme représenté dans l'exemple ci-dessus. N'utilisez pas la touche de tabulation pour créer votre espacement. Seule la touche espace doit être utilisée.
+>
+
+Enregistrez vos modifications dans le fichier de configuration et quittez l'éditeur.
+
+Appliquez la configuration :
+
+```bash
+netplan apply
+```
+
 Pour tester la connectivité de votre IPv6, exécutez la commande `ping` à l'adresse `2001:4860:4860::8888` :
 
 ![ping](images/vm_ubuntu.png){.thumbnail}
@@ -215,7 +228,9 @@ address YOUR_IPV6/IPV6_PREFIX
 gateway IPV6_GATEWAY
 ```
 
-Une fois la configuration faite, redémarrez le réseau avec la commande suivante :
+Enregistrez vos modifications dans le fichier de configuration et quittez l'éditeur.
+
+Ensuite, redémarrez le réseau avec la commande suivante :
 
 ```bash
 sudo systemctl restart networking.service
@@ -256,7 +271,9 @@ address=YOUR_IPV6/IPv6_PREFIX
 gateway=2607:5300:xxxx:xxff:ff:ff:ff:ff
 ```
 
-Une fois la configuration faite, redémarrez le réseau avec la commande suivante :
+Enregistrez vos modifications dans le fichier de configuration et quittez l'éditeur.
+
+Ensuite, redémarrez le réseau avec la commande suivante :
 
 ```bash
 sudo systemctl restart NetworkManager
