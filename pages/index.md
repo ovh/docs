@@ -195,6 +195,7 @@
             + [What are the IP addresses of the OVHcloud monitoring ?](bare_metal_cloud/dedicated_servers/network_ip_monitoring)
             + [Configuring IP aliasing](bare_metal_cloud/dedicated_servers/network_ipaliasing)
             + [Configuring IPv6 on dedicated servers](bare_metal_cloud/dedicated_servers/network_ipv6)
+            + [Configuring IPv6 on a virtual machine](bare_metal_cloud/dedicated_servers/configure-an-ipv6-on-a-vm)
             + [How to determine if your dedicated server supports virtual MAC addresses](bare_metal_cloud/dedicated_servers/network_support_virtual_mac)
             + [Assigning a Virtual MAC to a Failover IP](bare_metal_cloud/dedicated_servers/network_virtual_mac)
             + [Configuring the network on Windows Server with Hyper-V](bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale)
