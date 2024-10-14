@@ -86,7 +86,7 @@ You can find ir an exemple of the primary and destination site used for off-site
 
 No off-site backups copy are taken with the **Bronze** repository configuration.
 
-You can find the zone matching in detail for all OVHcloud managed Veeam Data platform solutions:
+The reste of all zone backup copy matching is detailed ir:
 
 |   Repository    |      Source       |    Destination     |   Offre cible    |
 |:---------------:|:-----------------:|:------------------:|:----------------:|

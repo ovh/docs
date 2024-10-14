@@ -87,7 +87,7 @@ Voici un exemple de site primaire et de destination utilisés pour la copie Veea
 
 Aucune sauvegarde hors site n'est effectué pour l'offre **Bronze** repository.
 
-Pour la correspondance des zones en detail pour l'ensemble des offres Veeam Data platform managé on OVHcloud :
+Le reste de toute la correspondance des zones et des copies de sauvegarde est détaillé ici :
 
 |   Repository    |      Source       |    Destination     |   Offre cible    |
 |:---------------:|:-----------------:|:------------------:|:----------------:|
