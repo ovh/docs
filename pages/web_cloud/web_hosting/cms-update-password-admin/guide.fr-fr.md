@@ -60,7 +60,6 @@ Vous avez accès à l'interface d'administration du CMS et vous connaissez votre
 > [!tabs]
 > WordPress
 >> Pour modifier votre mot de passe administrateur WordPress via l'interface de gestion du CMS, suivez les étapes de la section « [To Change Your Password](https://wordpress.org/documentation/article/reset-your-password/#to-change-your-password) » de la documentation officielle de WordPress.
->> 
 >>
 > PrestaShop
 >>
