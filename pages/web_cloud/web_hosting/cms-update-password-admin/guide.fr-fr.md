@@ -51,7 +51,7 @@ Vous avez encore accès à vos emails et à l’interface de connexion ? Cette m
 - Cliquez sur « Envoyer un nouveau mot de passe » ou « E-mail nouveau mot de passe ».
 - Ouvrez l'e-mail reçu et cliquez sur le lien fourni.
 >> - Saisissez votre nouveau mot de passe et confirmez.
-- Retournez sur la page de connexion de Drupal et connectez-vous avec le nouveau mot de passe que vous venez de définir.
+>> - Retournez sur la page de connexion de Drupal et connectez-vous avec le nouveau mot de passe que vous venez de définir.
 
 ### Modifier son mot de passe administrateur via le CMS <a name="via-cms"></a>
 
