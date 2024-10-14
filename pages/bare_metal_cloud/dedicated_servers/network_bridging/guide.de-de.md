@@ -1,6 +1,6 @@
 ---
 title: Network Bridge einrichten
-excerpt: Erfahren Sie hier, wie Sie den Internet-Zugang Ihrer virtuellen Maschinen konfigurieren
+excerpt: Erfahren Sie hier, wie Sie den Internet-Zugang für Ihre virtuellen Maschinen konfigurieren
 updated: 2024-10-10
 ---
 
@@ -21,7 +21,7 @@ Bridged Networking kann verwendet werden, um Ihre virtuellen Maschinen zu konfig
 
 - Sie verfügen über einen [Dedicated Server](/links/bare-metal/bare-metal) mit installiertem Hypervisor ([VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox, etc.).
 - Sie verfügen über mindestens eine mit dem Server verbundene [Additional IP](/links/network/additional-ip).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) oder der [OVHcloud API](/pages/manage_and_operate/api/first-steps) eingeloggt.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) oder die [OVHcloud API](/pages/manage_and_operate/api/first-steps).
 
 > [!warning]
 > Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](/links/bare-metal/eco-about) eingesetzt wird.
@@ -69,7 +69,7 @@ Nach einigen Sekunden erscheint eine virtuelle MAC-Adresse in der Spalte "Virtue
 
 ### Die Adresse des Gateways bestimmen <a name="determinegateway"></a>
 
-Um Ihre virtuellen Maschinen für den Internetzugriff zu konfigurieren, müssen Sie das Gateway Ihres Host-Servers kennen, d. h. Ihren dedizierten Server.
+Um Ihre virtuellen Maschinen für den Internetzugriff zu konfigurieren, müssen Sie das Gateway Ihres Host-Servers, also des Dedicated Servers, kennen.
 
 Sie können das Gateway auch über [Ihr Kundencenter](#viacontrolpanel) oder die [OVHcloud API](#viaapi) abrufen.
 
@@ -272,7 +272,7 @@ sudo rm -f etc/sysconfig/network-scripts/ifcfg-eth0
 sudo cp /etc/sysconfig/network-scripts/ifcfg-eth0.bak etc/sysconfig/network-scripts/ifcfg-eth0
 ```
 
-Sie können diese Datei dann über den Handler `nmcli` bearbeiten, `ADDITIONAL_IP` und `GATEWAY_IP`durch eigene Werte ersetzen.
+Sie können diese Datei dann mittels `nmcli` bearbeiten. Ersetzen Sie `ADDITIONAL_IP` und `GATEWAY_IP` durch eigene Werte.
 
 IP-Adresse hinzufügen:
 
@@ -292,7 +292,7 @@ DNS-Server hinzufügen:
 sudo nmcli connection modify interface_name IPv4.dns 213.186.33.99
 ```
 
-Ändern Sie die Konfiguration in "Manual"
+Ändern der Konfiguration zu "Manual":
 
 ```bash
 sudo nmcli connection modify interface_name IPv4.method manual
@@ -310,7 +310,7 @@ Starten Sie das Netzwerk mit folgendem Befehl neu:
 sudo nmcli device down interface_name;nmcli device up interface_name
 ```
 
-Um zu überprüfen, ob der virtuelle Computer vollständig mit dem Internet verbunden ist, verwenden Sie folgenden Befehl:
+Um zu überprüfen, ob die virtuelle Maschine mit dem Internet verbunden ist, verwenden Sie folgenden Befehl:
 
 ```bash
 ping -c 4 example.com
@@ -361,7 +361,7 @@ route_net1="-net GATEWAY_IP/32 -interface em0"
 route_net2="default GATEWAY_IP"
 ```
 
-Speichern und schließen Sie die Datei.<br>
+Speichern und schließen Sie die Datei.  
 Öffnen/erstellen Sie anschließend die Datei `/etc/resolv.conf` und fügen Sie die folgende Zeile ein:
 
 ```console
@@ -389,7 +389,7 @@ Wenn Sie eine Antwort erhalten, wurde die Additional IP korrekt konfiguriert. Is
 
 #### Ubuntu
 
-Deaktivieren Sie zuerst Cloud-init:
+Deaktivieren Sie zuerst cloud-init:
 
 ```bash
 touch /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
@@ -397,7 +397,7 @@ touch /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
 
 > [!warning]
 >
-> Wenn Sie Ihre VM mit cloud-init konfigurieren möchten, besuchen Sie [diese Seite](https://cloud-init.io/)
+> Wenn Sie Ihre VM mit cloud-init konfigurieren möchten, besuchen Sie [diese Seite](https://cloud-init.io/).
 >
 
 Fügen Sie diese Zeile zur Datei `99-disable-network-config.cfg` hinzu:
@@ -425,7 +425,7 @@ Führen Sie den folgenden Befehl aus, um den Namen Ihres Interface zu identifizi
 ip addr
 ```
 
-Erstellen Sie anschließend eine Kopie der Konfigurationsdatei, damit Sie jederzeit zur vorherigen Version zurückkehren können:
+Erstellen Sie anschließend eine Kopie der Konfigurationsdatei, damit Sie schnell zur vorherigen Version zurückkehren können:
 
 ```bash
 sudo cp /etc/netplan/00-installer-config.yaml /etc/netplan/00-installer-config.yaml.bak
