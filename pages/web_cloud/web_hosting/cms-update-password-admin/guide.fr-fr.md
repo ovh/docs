@@ -77,7 +77,7 @@ Vous avez accès à l'interface d'administration du CMS et vous connaissez votre
 
 Vous n'avez plus accès à l'interface d'administration du CMS ou vous ne pouvez pas utiliser la fonctionnalité « Mot de passe oublié » parce que l'adresse email associée est inaccessible ? Utilisez phpMyAdmin depuis votre [espace client OVHcloud](/links/manager) pour réinitialiser le mot de passe directement depuis la base de données.
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager) puis sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} et choisissez l'offre concernée. Dans l'onglet `Databases`{.action}, identifiez la base de données utilisée par votre CMS, cliquez sur le bouton `...`{.action} puis sur `Accéder à phpMyAdmin`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager) puis sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} et choisissez l'offre concernée. Dans l'onglet `Bases de données`{.action}, identifiez la base de données utilisée par votre CMS, cliquez sur le bouton `...`{.action} puis sur `Accéder à phpMyAdmin`{.action}.
 
 Saisissez les identifiants de la base de données (nom d'utilisateur et mot de passe) que vous avez définis lors de la création de la base de données. Une fois connecté à phpMyAdmin, sélectionnez ci-dessous l'onglet concerné.
 
