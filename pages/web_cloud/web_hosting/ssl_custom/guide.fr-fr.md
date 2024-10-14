@@ -201,7 +201,7 @@ Si le certificat SSL a correctement été généré par le fournisseur SSL et si
 >
 > Si besoin, consultez nos guides « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) » et « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) » pour régler cette situation.
 
-L'installation prend maximum 5 minutes.
+L'installation prend plusieurs minutes.
 
 Pour vérifier que l'installation est terminée, effectuez les actions suivantes :
 
