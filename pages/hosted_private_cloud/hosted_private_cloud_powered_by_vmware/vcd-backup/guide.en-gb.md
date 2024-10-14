@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - Backups with Veeam Data Platform"
 excerpt: "Find out how to perform backups and restoration with Veeam (Plug-in) Data Platform / Protection for managed VCD on OVHcloud"
-updated: 2024-08-23
+updated: 2024-10-14
 ---
 
 <style>
@@ -72,9 +72,19 @@ By default, you have the following repositories:
 - **Silver Repository**: This repository is based on the [OVHcloud Object Storage Standard](/links/public-cloud/object-storage) class. We will be using a Veeam SOBR (Scale-out Backup Repository) with performance tier buckets closer to your VCD environment, and a capacity tier from buckets in another OVHcloud region. We also use the Veeam SOBR copy mode to add the backups from the "performance extents" to the "capacity extents" as soon as they're created.
 - **Gold Repository**: This repository is based on the [OVHcloud Object Storage High performance](/links/public-cloud/object-storage) class. This repository includes the previous options + OVHcloud Object Storage "High performance".
 
-From the OVHcloud Control Panel, you can activate the "Gold Repository".
+From the OVHcloud Control Panel, you can activate the `Gold Repository`.
 
-All these repositories have a storage quota of 100To. You can reach out to the [support teams](https://help.ovhcloud.com/csm?id=csm_get_help) to increase this quota.
+All these repositories have a storage quota of 100 TB. You can reach out to the [support teams](https://help.ovhcloud.com/csm?id=csm_get_help) to increase this quota.
+
+You can find ir the primary and destination site used for off-site Veeam VCD backup copy (for the **Advanced/Premium** offers):
+
+![VCD Veeam 4 VCD Sites](images/vcd_veeam_zones.png){.thumbnail}
+
+- `Bronze Repository`: Roubaix (Europe)
+- `Silver Repository`: Roubaix -> Strasbourg (Europe)
+- `Gold Repository`: Roubaix -> Strasbourg (Europe)
+
+No off-site backups copy are taken with the **Bronze** repository configuration.
 
 - **Data included in backups:**
 
