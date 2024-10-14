@@ -73,7 +73,7 @@ Vous avez accès à l'interface d'administration du CMS et vous connaissez votre
 >>
 >> La documentation officielle de Drupal n'explique pas comment modifier le mot de passe administrateur via l'interface de connexion. Reportez-vous à la [documentation officielle de Drupal](https://www.drupal.org/node/44164) afin de trouver une autre méthode pour mettre à jour votre mot de passe.
 
-### Modifier son mot de passe administrateur via phpMyAdmin depuis l'espace client OVHcloud<a name="via-phpmyadmin"></a>
+### Modifier son mot de passe administrateur via phpMyAdmin depuis l'espace client OVHcloud <a name="via-phpmyadmin"></a>
 
 Vous n'avez plus accès à l'interface d'administration du CMS ou vous ne pouvez pas utiliser la fonctionnalité « Mot de passe oublié » parce que l'adresse email associée est inaccessible ? Utilisez phpMyAdmin depuis votre [espace client OVHcloud](/links/manager) pour réinitialiser le mot de passe directement depuis la base de données.
 
