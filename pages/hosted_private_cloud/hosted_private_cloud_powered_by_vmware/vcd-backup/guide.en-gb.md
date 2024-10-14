@@ -84,30 +84,30 @@ You can find ir an exemple of the primary and destination site used for off-site
 - `Silver Repository`: Roubaix -> Strasbourg (Europe)
 - `Gold Repository`: Roubaix -> Strasbourg (Europe)
 
-No off-site backups copy are taken with the **Bronze** repository configuration.
+No off-site backups copy are taken with the default **Bronze** repository configuration.
 
-The reste of all zone backup copy matching is detailed ir:
+The rest of the mapping for the backed up copy zones is detailed here:
 
-|   Repository    |      Source       |    Destination     |   Offre cible    |
-|:---------------:|:-----------------:|:------------------:|:----------------:|
-|     Bronze      |   Roubaix (fr)    |        None        |     Classic      |
-|     Bronze      |   Limburg (de)    |        None        |     Classic      |
-|     Bronze      |    Warsaw (pl)    |        None        |     Classic      |
-|     Bronze      |    Erith (uk)     |        None        |     Classic      |
-|     Bronze      |  Strasbourg (fr)  |        None        |     Classic      |
-|     Bronze      | Beauharnois (ca)  |        None        |     Classic      |
-|     Silver      |   Roubaix (fr)    |  Strasbourg (fr)   | Advanced/Premium |
-|     Silver      |   Limburg (de)    |  Strasbourg (fr)   | Advanced/Premium |
-|     Silver      |    Warsaw (pl)    |    Limburg (de)    | Advanced/Premium |
-|     Silver      |    Erith (uk)     |    Limburg (de)    | Advanced/Premium |
-|     Silver      |  Strasbourg (fr)  |    Roubaix (fr)    | Advanced/Premium |
-|     Silver      | Beauharnois (ca)  |   Cambridge (ca)   | Advanced/Premium |
-|      Gold       |   Roubaix (fr)    |  Strasbourg (fr)   | Advanced/Premium |
-|      Gold       |   Limburg (de)    |  Strasbourg (fr)   | Advanced/Premium |
-|      Gold       |   Limburg (de)    |    Roubaix (fr)    | Advanced/Premium |
-|      Gold       |    Erith (uk)     |    Limburg (de)    | Advanced/Premium |
-|      Gold       |  Strasbourg (fr)  |    Roubaix (fr)    | Advanced/Premium |
-|      Gold       | Beauharnois (ca)  | Cambridge/Tor (ca) | Advanced/Premium |
+|   Repository    |      Source       |    Destination     |
+|:---------------:|:-----------------:|:------------------:|
+|     Bronze      |   Roubaix (fr)    |        None        |
+|     Bronze      |   Limburg (de)    |        None        |
+|     Bronze      |    Warsaw (pl)    |        None        |
+|     Bronze      |    Erith (uk)     |        None        |
+|     Bronze      |  Strasbourg (fr)  |        None        |
+|     Bronze      | Beauharnois (ca)  |        None        |
+|     Silver      |   Roubaix (fr)    |  Strasbourg (fr)   |
+|     Silver      |   Limburg (de)    |  Strasbourg (fr)   |
+|     Silver      |    Warsaw (pl)    |    Limburg (de)    |
+|     Silver      |    Erith (uk)     |    Limburg (de)    |
+|     Silver      |  Strasbourg (fr)  |    Roubaix (fr)    |
+|     Silver      | Beauharnois (ca)  |   Cambridge (ca)   |
+|      Gold       |   Roubaix (fr)    |  Strasbourg (fr)   |
+|      Gold       |   Limburg (de)    |  Strasbourg (fr)   |
+|      Gold       |   Limburg (de)    |    Roubaix (fr)    |
+|      Gold       |    Erith (uk)     |    Limburg (de)    |
+|      Gold       |  Strasbourg (fr)  |    Roubaix (fr)    |
+|      Gold       | Beauharnois (ca)  | Cambridge/Tor (ca) |
 
 - **Data included in backups:**
 
