@@ -26,7 +26,7 @@ Plusieurs méthodes existent pour modifier le mot de passe administrateur de vot
 
 ### Modifier son mot de passe administrateur via l'e-mail automatique (mot de passe oublié) <a name="via-email"></a>
 
-Vous avez encore accès à vos emails et à l’interface de connexion ? Cette méthode est la plus rapide en évitant d'accéder aux paramètres du CMS ou de passer par phpMyAdmin.
+Vous avez encore accès à vos e-mails et à l’interface de connexion ? Cette méthode est la plus rapide en évitant d'accéder aux paramètres du CMS ou de passer par phpMyAdmin.
 
 > [!tabs]
 > WordPress
