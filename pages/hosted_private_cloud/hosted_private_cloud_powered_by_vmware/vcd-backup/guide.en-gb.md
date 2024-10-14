@@ -76,7 +76,7 @@ From the OVHcloud Control Panel, you can activate the `Gold Repository`.
 
 All these repositories have a storage quota of 100 TB. You can reach out to the [support teams](https://help.ovhcloud.com/csm?id=csm_get_help) to increase this quota.
 
-You can find ir the primary and destination site used for off-site Veeam VCD backup copy (for the **Advanced/Premium** offers):
+You can find ir an exemple of the primary and destination site used for off-site Veeam VCD backup copy (for the **Advanced/Premium** offers):
 
 ![VCD Veeam 4 VCD Sites](images/vcd_veeam_zones.png){.thumbnail}
 
@@ -85,6 +85,29 @@ You can find ir the primary and destination site used for off-site Veeam VCD bac
 - `Gold Repository`: Roubaix -> Strasbourg (Europe)
 
 No off-site backups copy are taken with the **Bronze** repository configuration.
+
+You can find the zone matching in detail for all OVHcloud managed Veeam Data platform solutions:
+
+|   Repository    |      Source       |    Destination     |   Offre cible    |
+|:---------------:|:-----------------:|:------------------:|:----------------:|
+|     Bronze      |   Roubaix (fr)    |        None        |     Classic      |
+|     Bronze      |   Limburg (de)    |        None        |     Classic      |
+|     Bronze      |    Warsaw (pl)    |        None        |     Classic      |
+|     Bronze      |    Erith (uk)     |        None        |     Classic      |
+|     Bronze      |  Strasbourg (fr)  |        None        |     Classic      |
+|     Bronze      | Beauharnois (ca)  |        None        |     Classic      |
+|     Silver      |   Roubaix (fr)    |  Strasbourg (fr)   | Advanced/Premium |
+|     Silver      |   Limburg (de)    |  Strasbourg (fr)   | Advanced/Premium |
+|     Silver      |    Warsaw (pl)    |    Limburg (de)    | Advanced/Premium |
+|     Silver      |    Erith (uk)     |    Limburg (de)    | Advanced/Premium |
+|     Silver      |  Strasbourg (fr)  |    Roubaix (fr)    | Advanced/Premium |
+|     Silver      | Beauharnois (ca)  |   Cambridge (ca)   | Advanced/Premium |
+|      Gold       |   Roubaix (fr)    |  Strasbourg (fr)   | Advanced/Premium |
+|      Gold       |   Limburg (de)    |  Strasbourg (fr)   | Advanced/Premium |
+|      Gold       |   Limburg (de)    |    Roubaix (fr)    | Advanced/Premium |
+|      Gold       |    Erith (uk)     |    Limburg (de)    | Advanced/Premium |
+|      Gold       |  Strasbourg (fr)  |    Roubaix (fr)    | Advanced/Premium |
+|      Gold       | Beauharnois (ca)  | Cambridge/Tor (ca) | Advanced/Premium |
 
 - **Data included in backups:**
 
