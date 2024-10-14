@@ -6,7 +6,7 @@ updated: 2024-10-14
 
 ## Objectif
 
-Vous avez perdu l’accès à votre interface d’administration de WordPress, PrestaShop, Joomla! ou Drupal ? Ou vous souhaitez simplement renforcer la sécurité de votre site web en modifiant le mot de passe administrateur ? Dans ce guide, nous vous expliquons pas à pas comment procéder, que ce soit directement via l’interface d’administration du CMS ou en utilisant phpMyAdmin depuis l’espace client OVHcloud.
+Vous avez perdu l’accès à votre interface d’administration de WordPress, PrestaShop, Joomla! ou Drupal ? Ou vous souhaitez juste renforcer la sécurité de votre site web en modifiant le mot de passe administrateur ? Dans ce guide, retrouvez pas à pas comment procéder, que ce soit directement via l’interface d’administration du CMS ou en utilisant phpMyAdmin depuis l’espace client OVHcloud.
 
 **Découvrez comment modifier votre mot de passe administrateur sur les CMS WordPress, PrestaShop, Joomla!, et Drupal, afin de garantir la sécurité et l'accès optimal à votre site web.**
 
