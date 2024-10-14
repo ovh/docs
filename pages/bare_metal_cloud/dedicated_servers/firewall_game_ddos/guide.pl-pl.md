@@ -33,7 +33,7 @@ Celem niniejszego przewodnika jest pomoc w lepszym zrozumieniu naszej ochrony an
 Nasze serwery dedykowane Bare Metal Gaming zapewniają dodatkową ochronę przed atakami sieciowymi specjalnie zaprojektowaną, aby zabezpieczyć aplikacje gier przed atakami ukierunkowanymi, zapewniając stabilność i dostępność graczy. Rozwiązanie to jest solidne i łatwe w użyciu, dzięki czemu możesz skoncentrować się na rozwoju firmy bez konieczności obrony przed cyberprzestępczością.
 
 | ![global-schema](images/global_schema_focus_game.png) |
-|:—:|
+|:--:|
 | Schemat usług infrastruktury i ochrony gier Anty-DDoS w OVHcloud |
 
 ## Wymagania początkowe
@@ -72,17 +72,17 @@ Aby skonfigurować reguły ochrony gier dla serwera Bare Metal Game, zaloguj si�
 Adresy IP można filtrować za pomocą rozwijanego menu `Wszystkie usługi`{.action}. Wpisz nazwę lub kategorię odpowiadającego serwera:
 
 | ![configure-game-firewall](images/ip_listing.png) |
-|:—:|
+|:--:|
 | Lista adresów IP: znajdź adres IP dla danej usługi |
 
 Sprawdź konfigurację *Firewall Game*:
 
 | ![game-server](images/firewall_game_01_blur.png) |
-|:—:|
+|:--:|
 | Kliknij przycisk`...`{.action} obok adresu IP Twojego serwera Game. |
 
 | ![configure-game-firewall](images/firewall_game_02.png) |
-|:—:|
+|:--:|
 | Kliknij `Skonfiguruj firewall GAME`{.action}. |
 
 Możesz teraz skonfigurować reguły ochrony gier dla wybranego adresu IP.
@@ -94,7 +94,7 @@ Możesz teraz skonfigurować reguły ochrony gier dla wybranego adresu IP.
 Aby włączyć ochronę DDoS Game, wystarczy zdefiniować aplikacje gier oraz przypisany do nich zakres portów sieciowych (lub pojedynczy port):
 
 | ![add-rule-btn](images/firewall_game_03.png) |
-|:—:|
+|:--:|
 | W następnym oknie kliknij przycisk `Dodaj regułę`{.action}, aby dodać regułę do *Firewall Game*. |
 
 
@@ -103,7 +103,7 @@ Ochrona anty-DDoS umożliwia skonfigurowanie do **100 reguł dla adresu IP**, kt
 Obsługiwane protokoły gier (tytuły i wersje gier, które mogą być chronione) mogą ulec zmianie w czasie. Ponadto mogą się one różnić od poprzednich i najnowszych gam serwerów Bare Metal Game. Najnowsza lista obsługiwanych profilów gier jest dostępna [tutaj](/links/security/ddos).
 
 | ![confirm-new-rule](images/firewall_game_04.png) |
-|:—:|
+|:--:|
 | Skonfiguruj zabezpieczenia gry, wybierając **Protokół** z listy i ustawiając **zakres portów**, na którym aplikacja gry odbiera połączenia (zapoznaj się z dokumentacją instalacji gry). Następnie kliknij przycisk `Potwierdź`{.action}, aby zarejestrować. Konfiguracja reguł dla *firewall game* została zakończona. |
 
 Reguły ochrony *Firewall Game* nie powinny nakładać się na siebie w zakresie zdefiniowanych portów.
@@ -171,7 +171,7 @@ Można zaobserwować różnice między najnowszymi serwerami Game (trzecia gener
 Wszystkie protokoły ochrony anty-DDoS Game obsługiwane dla danego serwera można znaleźć na stronie konfiguracyjnej `GAME firewall`{.action} dla każdego adresu IP wskazującego na ten serwer w rozwijanym menu `Game protocol`{.action}:
 
 | ![control-panel-game-protocols](images/game_protocols_list.png) |
-|:—:|
+|:--:|
 | Lista obsługiwanych protokołów ochrony |
 
 Jeśli wybierzesz automatyzację, szczegóły protokołu można pobrać za pomocą [APIv6 OVHcloud](/pages/manage_and_operate/api/first-steps):
