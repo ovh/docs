@@ -48,7 +48,7 @@ Vous avez encore accès à vos e-mails et à l’interface de connexion ? Cette 
 >> - Accédez à l'interface de connexion administrateur.
 >> - Cliquez sur le lien « Demander un nouveau mot de passe ».
 >> - Dans la boîte de dialogue qui apparaît, saisissez soit le nom d’utilisateur, soit l'adresse e-mail associée au compte administrateur.
-- Cliquez sur « Envoyer un nouveau mot de passe » ou « E-mail nouveau mot de passe ».
+>> - Cliquez sur « Envoyer un nouveau mot de passe » ou « E-mail nouveau mot de passe ».
 - Ouvrez l'e-mail reçu et cliquez sur le lien fourni.
 >> - Saisissez votre nouveau mot de passe et confirmez.
 >> - Retournez sur la page de connexion de Drupal et connectez-vous avec le nouveau mot de passe que vous venez de définir.
