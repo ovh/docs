@@ -76,14 +76,14 @@ Remplacez le terme `my_private` par le nom de fichier que vous avez choisi préc
 La clé privée s'affiche alors dans votre terminal sous cette forme : 
 
 ```ssh
------BEGIN CERTIFICATE REQUEST-----
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-XXXXXXXX The Private Key XXXXXXXXXX
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-------END CERTIFICATE REQUEST------
+-----BEGIN PRIVATE KEY-----
+XXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXX The Private Key XXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXX
+------END PRIVATE KEY------
 ```
 
-Ouvrez un logiciel de traitement de texte (bloc note, libre office, etc.), puis `copiez/collez`{.action} l'intégralité de la clé privée, y compris les termes `-----BEGIN CERTIFICATE REQUEST-----` et `-----END CERTIFICATE REQUEST-----`.
+Ouvrez un logiciel de traitement de texte (bloc note, libre office, etc.), puis `copiez/collez`{.action} l'intégralité de la clé privée, y compris les termes `-----BEGIN PRIVATE KEY-----` et `-----END PRIVATE KEY-----`.
 
 Enregistrez ce fichier est conservez-le précieusement pour la suite de ce guide si votre fournisseur SSL vous le demande lors de votre future commande.
 
@@ -154,11 +154,13 @@ Si vous démarrer directement la lecture de ce guide à cette étape car vous di
 **Avant de finaliser l'installation du certificat SSL sur votre hébergement web**, veillez à ce que **l'ensemble des noms de domaine et/ou sous-domaines** concernés par votre certificat SSL : 
 
 - pointent vers l'adresse IP de votre hébergement web ; 
-- sont déclarés en multiiste sur votre hébergement web.
+- sont déclarés en multisite sur votre hébergement web ;
+- la case `SSL` ne doit pas être cochée lors de l'ajout en multisite d'un nom de domaine/sous-domaine concerné par votre certificat SSL externe;
+- le statut `A générer` ou `Actif` ne doit pas déjà être présent pour chacun des noms de domaine/sous-domaines concernés par votre certificat SSL externe.
 
 Si besoin et pour vous en assurer, consultez nos guides « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) » et « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
 
-Dès lors où tous les prérequis ci-dessus sont prêts et vérifiés, vous pourrez commencer la finalisation de l'installation de votre certificat SSL presonnalisé sur votre hébergement web.
+Dès lors où tous les prérequis ci-dessus sont prêts et vérifiés, vous pourrez commencer la finalisation de l'installation de votre certificat SSL personnalisé sur votre hébergement web.
 
 Pour cela, effectuez les actions suivantes :
 
