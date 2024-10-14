@@ -18,7 +18,7 @@ Vous avez perdu l’accès à votre interface d’administration de WordPress, P
 
 ## En pratique
 
-Il existe plusieurs méthodes pour modifier le mot de passe administrateur de votre CMS selon votre situation :
+Plusieurs méthodes existent pour modifier le mot de passe administrateur de votre CMS selon votre situation :
 
 - [via l'e-mail automatique (mot de passe oublié)](#via-email)
 - [via l'interface d'administration de votre CMS](#via-cms)
