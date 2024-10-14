@@ -1,24 +1,24 @@
 ---
 title: "Comment changer le mot de passe administrateur de mon CMS (WordPress, PrestaShop, Joomla!, Drupal)"
-excerpt: "Découvrez comment mettre à jour le mot de passe administrateur de votre CMS WordPress, PrestaShop, Joomla! et Drupal"
-updated: 2024-10-10
+excerpt: "Découvrez comment modifier le mot de passe administrateur de votre CMS WordPress, PrestaShop, Joomla! et Drupal"
+updated: 2024-10-14
 ---
 
 ## Objectif
 
-Vous avez perdu l’accès à votre interface d’administration de WordPress, PrestaShop, Joomla! ou Drupal ? Ou vous souhaitez simplement renforcer la sécurité de votre site web en modifiant le mot de passe administrateur ? Dans ce guide, nous vous expliquons pas à pas comment changer le mot de passe administrateur de votre CMS, que ce soit directement via l’interface d’administration du CMS ou en utilisant phpMyAdmin depuis l’espace client OVHcloud.
+Vous avez perdu l’accès à votre interface d’administration de WordPress, PrestaShop, Joomla! ou Drupal ? Ou vous souhaitez simplement renforcer la sécurité de votre site web en modifiant le mot de passe administrateur ? Dans ce guide, nous vous expliquons pas à pas comment procéder, que ce soit directement via l’interface d’administration du CMS ou en utilisant phpMyAdmin depuis l’espace client OVHcloud.
 
-**Découvrez comment modifier votre mot de passe administrateur sur les CMS WordPress, PrestaShop, Joomla!, et Drupal, afin d'assurer la sécurité et l'accès optimal à votre site web.**
+**Découvrez comment modifier votre mot de passe administrateur sur les CMS WordPress, PrestaShop, Joomla!, et Drupal, afin de garantir la sécurité et l'accès optimal à votre site web.**
 
 ## Prérequis
 
 - Disposer d'une [offre d'hébergement Web Cloud](https://www.ovh.com/fr/hebergement-web/) permettant l'installation d'un module en 1 clic.
-- Avoir créé un module en 1 clic sur votre hébergement (Si vous n'avez pas encore effectué cette installation, suivez les instructions de ce [guide](/pages/web_cloud/web_hosting/cms_install_1_click_modules)).
+- Avoir créé un module en 1 clic sur votre hébergement (si vous n'avez pas encore effectué cette installation, suivez les instructions de ce [guide](/pages/web_cloud/web_hosting/cms_install_1_click_modules)).
 - Être connecté à votre [espace client OVHcloud](/links/manager) (uniquement pour la partie phpMyAdmin).
 
 ## En pratique
 
-Il existe plusieurs méthodes pour modifier votre mot de passe administrateur selon votre situation :
+Il existe plusieurs méthodes pour modifier le mot de passe administrateur de votre CMS selon votre situation :
 
 - [via l'e-mail automatique (mot de passe oublié)](#via-email)
 - [via l'interface d'administration de votre CMS](#via-cms)
@@ -31,7 +31,7 @@ Vous avez encore accès à vos emails et à l’interface de connexion ? Cette m
 > [!tabs]
 > WordPress
 >>
->> Pour modifier votre mot de passe administrateur WordPress via l'option « Mot de passe oublié », suivez les étapes de la section « [Grâce au Courrier électronique Automatique](https://codex.wordpress.org/fr:R%C3%A9initialisation_de_votre_mot_de_passe#Gr.C3.A2ce_au_Courrier_.C3.A9lectronique_Automatique) » de la documentation officielle de WordPress.
+>> Pour modifier votre mot de passe administrateur WordPress via l'option « Mot de passe oublié », suivez les étapes de la section « [Through the automatic emailer](https://wordpress.org/documentation/article/reset-your-password/#through-the-automatic-emailer) » de la documentation officielle de WordPress.
 >>
 > PrestaShop
 >>
@@ -39,7 +39,7 @@ Vous avez encore accès à vos emails et à l’interface de connexion ? Cette m
 >>
 > Joomla!
 >>
->> Pour modifier votre mot de passe administrateur Joomla! via l'option « Mot de passe oublié », suivez les étapes de la section « [Frontend](https://docs.joomla.org/Resetting_a_user_password/fr) » de la documentation officielle de Joomla!.
+>> Pour modifier votre mot de passe administrateur Joomla! via l'option « Mot de passe oublié », suivez les étapes de la section « [Frontend](https://docs.joomla.org/Resetting_a_user_password/en) » de la documentation officielle de Joomla!.
 >>
 > Drupal
 >>
@@ -64,11 +64,11 @@ Vous avez accès à l'interface d'administration du CMS et vous connaissez votre
 >>
 > PrestaShop
 >>
->> La documentation officielle de PrestaShop n'explique pas comment modifier le mot de passe administrateur via l'interface de connexion. Reportez-vous à la [documentation officielle de PrestaShop](https://help-center.prestashop.com/hc/fr/articles/10799006732818-R%C3%A9cup%C3%A9rer-son-mot-de-passe-admin) afin de trouver une autre méthode pour mettre à jour votre mot de passe.
+>> La documentation officielle de PrestaShop n'explique pas comment modifier le mot de passe administrateur via l'interface de connexion. Reportez-vous à la [documentation officielle de PrestaShop](https://help-center.prestashop.com/hc/en-us/articles/10799006732818-Recover-your-admin-password) afin de trouver une autre méthode pour mettre à jour votre mot de passe.
 >>
 > Joomla!
 >>
->> Pour modifier votre mot de passe administrateur Joomla! via l'interface d'administration, suivez les étapes de la section « [Backend](https://docs.joomla.org/Resetting_a_user_password/fr) » de la documentation officielle de Joomla!.
+>> Pour modifier votre mot de passe administrateur Joomla! via l'interface d'administration, suivez les étapes de la section « [Backend](https://docs.joomla.org/Resetting_a_user_password/en) » de la documentation officielle de Joomla!.
 >>
 > Drupal
 >>
@@ -85,24 +85,40 @@ Saisissez les identifiants de la base de données (nom d'utilisateur et mot de p
 > [!tabs]
 > WordPress
 >>
->> Suivez les étapes de la section « [Grâce à phpMyAdmin](https://codex.wordpress.org/fr:R%C3%A9initialisation_de_votre_mot_de_passe#Gr.C3.A2ce_.C3.A0_phpMyAdmin) » de la documentation officielle de WordPress.
+>> Suivez les étapes de la section « [Through phpMyAdmin](https://wordpress.org/documentation/article/reset-your-password/#through-phpmyadmin) » de la documentation officielle de WordPress.
 >>
 > PrestaShop
 >>
->> Suivez les étapes de la section « [Vous n'avez pas accès à votre adresse e-mail](https://help-center.prestashop.com/hc/fr/articles/10799006732818-R%C3%A9cup%C3%A9rer-son-mot-de-passe-admin) » de la documentation officielle de PrestaShop.
+>> Suivez les étapes de la section « [You do not have access to your e-mail address](https://help-center.prestashop.com/hc/en-us/articles/10799006732818-Recover-your-admin-password) » de la documentation officielle de PrestaShop.
 >>
 > Joomla!
 >>
->> Suivez les étapes de la section « [Réinitialisation dans phpMyAdmin](https://docs.joomla.org/Resetting_a_user_password/fr) » de la documentation officielle de Joomla!.
+>> Suivez les étapes de la section « [Resetting in phpMyAdmin](https://docs.joomla.org/Resetting_a_user_password/en) » de la documentation officielle de Joomla!.
 >>
 > Drupal
 >>
 >> Une fois connecté à phpMyAdmin, suivez les étapes suivantes :
 >> 
 >> - Sélectionnez la base de données que Drupal utilise pour votre site web.
->> - Localisez la table `users_field_data` (pour Drupal 8 et versions ultérieures) ou users (pour Drupal 7 et version antérieures).
+>> - Localisez la table `users_field_data` (pour Drupal 8 et versions ultérieures) ou users (pour Drupal 7 et versions antérieures).
 >> - Trouvez l’utilisateur administrateur avec `uid = 1`.
 >> - Cliquez sur `Modifier`.
 >> - Dans le champ `pass`, sélectionnez `MD5` dans la colonne `Fonction` à droite du champ.
 >> - Entrez un nouveau mot de passe dans la colonne de la valeur.
 >> - Validez et enregistrez les modifications.
+
+## Aller plus loin <a name="go-further"></a>
+
+[Comment gérer votre module en 1 clic ? ](/pages/web_cloud/web_hosting/cms_manage_1_click_module)
+
+[Tutoriel - Installer manuellement WordPress](/pages/web_cloud/web_hosting/cms_manual_installation_wordpress)
+
+[Tutoriel - Installer manuellement Joomla!](/pages/web_cloud/web_hosting/cms_manual_installation_joomla)
+
+[Tutoriel - Installer manuellement Drupal](/pages/web_cloud/web_hosting/cms_manual_installation_drupal)
+
+[Tutoriel - Installer manuellement PrestaShop](/pages/web_cloud/web_hosting/cms_manual_installation_prestashop)
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
+
+Échangez avec notre [communauté d'utilisateurs](/links/community).
