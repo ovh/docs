@@ -19,7 +19,7 @@ La mise en réseau en mode bridge peut être utilisée pour configurer vos machi
 
 * Posséder un serveur dédié avec un hyperviseur installé ([VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox, par exemple).
 * Bénéficier d'au moins une adresse [Additional IP](/links/network/additional-ip) routée vers le serveur.
-* Être connecté à votre [espace client OVHcloud](/links/manager) ou à l['API OVHcloud](/pages/pages/manage_and_operate/api/first-steps).
+* Être connecté à votre [espace client OVHcloud](/links/manager) ou à l['API OVHcloud](/pages/manage_and_operate/api/first-steps).
 
 > [!warning]
 > Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](/links/bare-metal/eco-about).
@@ -254,6 +254,7 @@ Une fois connecté au shell de votre machine virtuelle, exécutez la commande su
 ```bash
 ip a
 ```
+
 Effectuez ensuite une copie du fichier de configuration, afin de pouvoir revenir en arrière à tout moment :
 
 ```bash
@@ -266,29 +267,35 @@ En cas d'erreur, vous pourrez revenir en arrière grâce aux commandes ci-dessou
 sudo rm -f etc/sysconfig/network-scripts/ifcfg-eth0
 sudo cp /etc/sysconfig/network-scripts/ifcfg-eth0.bak etc/sysconfig/network-scripts/ifcfg-eth0
 ```
+
 Vous pouvez ensuite éditer ce fichier via le gestionnaire `nmcli`, remplacez `ADDITIONAL_IP` et `GATEWAY_IP`par vos propres valeurs.
 
 Ajoutez l'adresse IP :
+
 ```bash
 sudo nmcli connection modify interface_name IPv4.address ADDITIONAL_IP/32
 ```
 
 Ajoutez la Gateway :
+
 ```bash
 sudo nmcli connection modify interface_name IPv4.gateway GATEWAY_IP
 ```
 
 Ajoutez un serveur DNS :
+
 ```bash
 sudo nmcli connection modify interface_name IPv4.dns 213.186.33.99
 ```
 
 Changez la configuration en manuelle :
+
 ```bash
 sudo nmcli connection modify interface_name IPv4.method manual
 ```
 
 Rendez la configuration persistante :
+
 ```bash
 sudo nmcli con mod interface_name connection.autoconnect true
 ```
@@ -315,6 +322,7 @@ rtt min/avg/max/mdev = 24.925/28.028/30.840/2.254 ms
 ```
 
 Si vous recevez une réponse, cela signifie que l’Additional IP a été correctement configurée. Si ce n'est pas le cas, redémarrez votre machine virtuelle et recommencez la commande ping.
+
 Si vous souhaitez plus d'informations sur `nmcli`, consultez [cette page](https://docs.redhat.com/fr/documentation/red_hat_enterprise_linux/7/html/networking_guide/sec-using_the_networkmanager_command_line_tool_nmcli).
 
 #### FreeBSD
@@ -426,13 +434,13 @@ sudo rm -f /etc/netplan/00-installer-config.yaml
 sudo cp /etc/netplan/00-installer-config.yaml.bak /etc/netplan/00-installer-config.yaml
 ```
 
-Ensuite, ouvrez le fichier de configuration réseau situé dans `/etc/netplan/` avec la commande suivante :
+Ensuite, ouvrez le fichier de configuration réseau :
 
 ```bash
 sudo nano /etc/netplan/00-installer-config.yaml
 ```
 
-Une fois le fichier ouvert pour modification, modifiez-le avec le code suivant, en remplaçant `INTERFACE-NAME`, `ADDITIONAL_IP` et `GATEWAY_IP` par vos propres valeurs.
+Modifiez le fichier pour qu'il reflète la configuration ci-dessous, remplacez `INTERFACE-NAME`, `ADDITIONAL_IP` et `GATEWAY_IP` par vos propres valeurs.
 
 ```yaml
 network:
