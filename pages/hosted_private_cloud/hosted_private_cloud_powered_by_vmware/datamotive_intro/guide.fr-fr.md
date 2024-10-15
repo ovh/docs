@@ -21,6 +21,22 @@ Elle dispose de 3 produits au sein de ça solution :
 
 ### Étape 1 - Introduction
 
+#### Depuis la console Datamotive
+
+Pour vous connecter à la console Datamotive, utilisez l'adresse IP ou le nom de domaine que vous avez configuré : 
+
+- `Url` : https://XX.XX.XX.XX:5000/dashboard
+
+Le port d'accès utilisé par défaut à l'interface de management est le port `5000`.
+
+Si vous utilisez un annuaire Active Directory, vous pouvez utiliser le bouton `Sign In with Active Directory`.
+
+![Datamotive Login](images/datamotive_login.png){.thumbnail}
+
+Vous serez redirigé sur le dashboard Datamotive.
+
+![Datamotive Login](images/datamotive_dashboard.png){.thumbnail}
+
 ### Étape 2 - La console Web Datamotive
 
 ## Aller plus loin
