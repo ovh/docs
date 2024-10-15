@@ -45,13 +45,13 @@ To access your Zimbra service, log in to your [OVHcloud Control Panel](/links/ma
 
 Before you start configuring your Zimbra email accounts, take note of the three elements that structure your Zimbra service hierarchically:
 
-- [**Organization**](#organizations): It enables domain names to be grouped together in order to associate them.kkk
+- [**Organization**](#organizations): It enables domain names to be grouped together in order to associate them.
 - [**Domain name**](#domains): It is essential to create an email account. You will need to manage at least one domain name via the OVHcloud Control Panel, and add it to your Zimbra service.
 - [**Email accounts**](#emails): By using the domain names added to your Zimbra service, you can create an email address.
 
 > [!primary]
 >
-> An *Organization* is used to represent an entity (a company, association, personal project, etc.). It enables email accounts to be partitioned, specific security policies to be applied (future feature) and rights to be delegated to an organization (future feature). By using organizations, you can make it easier to browse and manage your Zimbra platform.
+> An *Organization* is used to represent an entity (company, association, personal project, etc.). It enables email accounts to be partitioned, specific security policies to be applied (upcoming feature) and rights to be delegated to an organization (upcoming feature). By using organizations, you can make it easier to browse and manage your Zimbra platform.
 
 The diagram below summarizes the hierarchical link between the above-mentioned elements.
 
@@ -59,7 +59,7 @@ The diagram below summarizes the hierarchical link between the above-mentioned e
 
 ### Organizations <a name="organizations"></a>
 
-If you are adding a large number of domain names to your Zimbra service, it may be useful to group them together by associating them with an "organization". From your Zimbra service, click `Organization`{.action}.
+If you are adding a large number of domain names to your Zimbra service, it may be useful to group them together by associating them with an "Organization". From your Zimbra service, click `Organization`{.action}.
 
 ![zimbra](images/zimbra_organization_tab.png){.thumbnail .w-400}
 
