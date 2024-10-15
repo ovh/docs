@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - Backups with Veeam Data Platform"
 excerpt: "Find out how to perform backups and restoration with Veeam (Plug-in) Data Platform / Protection for managed VCD on OVHcloud"
-updated: 2024-10-14
+updated: 2024-10-15
 ---
 
 <style>
@@ -76,7 +76,7 @@ From the OVHcloud Control Panel, you can activate the `Gold Repository`.
 
 All these repositories have a storage quota of 100 TB. You can reach out to the [support teams](https://help.ovhcloud.com/csm?id=csm_get_help) to increase this quota.
 
-You can find ir an exemple of the primary and destination site used for off-site Veeam VCD backup copy (for the **Advanced/Premium** offers):
+Here is an example of the primary and destination sites used for Veeam VCD copying of offsite backups (for the **Advanced/Premium** offers):
 
 ![VCD Veeam 4 VCD Sites](images/vcd_veeam_zones.png){.thumbnail}
 
@@ -84,9 +84,9 @@ You can find ir an exemple of the primary and destination site used for off-site
 - `Silver Repository`: Roubaix -> Strasbourg (Europe)
 - `Gold Repository`: Roubaix -> Strasbourg (Europe)
 
-No off-site backups copy are taken with the default **Bronze** repository configuration.
+No offsite backup is performed for the default configuration of the **Bronze** repository configuration.
 
-The rest of the mapping for the backed up copy zones is detailed here:
+The rest of the mapping for the backup zones is detailed here:
 
 |   Repository    |      Source       |    Destination     |
 |:---------------:|:-----------------:|:------------------:|

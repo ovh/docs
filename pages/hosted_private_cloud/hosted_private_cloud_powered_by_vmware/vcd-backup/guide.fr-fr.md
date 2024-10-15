@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - Sauvegarde avec Veeam Data Platform"
 excerpt: "Découvrez comment effectuer des sauvegardes et des restaurations avec Veeam (Plug-In) Data Platform / Protection pour votre VCD managé on OVHcloud"
-updated: 2024-10-14
+updated: 2024-10-15
 ---
 
 <style>
@@ -85,7 +85,7 @@ Voici un exemple de site primaire et de destination utilisés pour la copie Veea
 - `Silver Repository` : Roubaix -> Strasbourg
 - `Gold Repository` : Roubaix -> Strasbourg
 
-Aucune sauvegarde hors site n'est effectué pour la configuration par défaut du repository **Bronze**.
+Aucune sauvegarde hors site n'est effectuée pour la configuration par défaut du repository **Bronze**.
 
 Le reste de toute la correspondance des zones avec copie de sauvegarde est détaillé ici :
 
@@ -110,7 +110,7 @@ Le reste de toute la correspondance des zones avec copie de sauvegarde est déta
 |      Gold       |  Strasbourg (fr)  |  Roubaix (fr)   |
 |      Gold       | Beauharnois (ca)  | Cambridge (ca)  |
 
-**Données incluses dans les sauvegardes**
+- **Données incluses dans les sauvegardes :**
 
 Lorsque Veeam Backup & Replication réalise des sauvegardes de vApp et de VM, il capture en plus les métadonnées de vApp.
 
