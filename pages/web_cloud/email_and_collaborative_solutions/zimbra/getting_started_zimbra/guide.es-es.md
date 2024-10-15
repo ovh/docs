@@ -1,12 +1,15 @@
 ---
 title: "Primeros pasos con el producto Zimbra"
 excerpt: "Cómo empezar a utilizar la solución Zimbra desde el área de cliente de OVHcloud"
-updated: 2024-09-10
+updated: 2024-10-10
 ---
 
 <style>
 .w-400 {
-max-width:400px!important;
+  max-width:400px !important;
+}
+.h-400 {
+  max-height:400px !important;
 }
 </style>
 
@@ -42,13 +45,19 @@ Con el servicio Zimbra, OVHcloud le ofrece una plataforma de mensajería en cola
 
 Para acceder a su servicio Zimbra , conéctese a su [área de cliente de OVHcloud](/links/manager) y haga clic en la pestaña `Web Cloud`{.action}. {.action} En la sección `Direcciones de correo`{.action} de la columna izquierda, haga clic en `Zimbra`{.action}.
 
+![zimbra](images/zimbra_general_information.png){.thumbnail .w-400}
+
 ### Configurar su servicio Zimbra
 
 Antes de empezar a configurar las cuentas de correo de Zimbra, deberá analizar los tres elementos que estructuran jerárquicamente el servicio Zimbra :
 
-- [**Organización**](#organizations) : permite agrupar los nombres de dominio para asociarlos. **No es necesario crear una organización para poder crear una cuenta de correo**.
+- [**Organización**](#organizations) : permite agrupar los nombres de dominio para asociarlos.
 - [**Nombre de dominio**](#domains) : es indispensable para crear una cuenta de correo. Debe gestionar al menos uno desde el área de cliente de OVHcloud y añadirlo a su servicio Zimbra.
 - [**Cuentas de correo electrónico**](#emails) : Utilizando los nombres de dominio añadidos a su servicio Zimbra, podrá crear una dirección de correo electrónico.
+
+> [!primary]
+>
+> La *organización* se utiliza para representar una entidad (empresa, asociación, proyecto personal, etc.). Permite el aislamiento de las cuentas de correo, la aplicación de políticas de seguridad específicas (funcionalidad futura) y la delegación de los permisos a una organización (funcionalidad futura). El uso de organizaciones facilita la navegación y la gestión de la plataforma Zimbra.
 
 El diagrama siguiente resume la relación jerárquica entre los elementos mencionados anteriormente.
 
@@ -58,13 +67,15 @@ El diagrama siguiente resume la relación jerárquica entre los elementos mencio
 
 Si añade un gran número de dominios a su servicio Zimbra, puede ser útil reagruparlos asociándolos a una "organización". Desde su servicio Zimbra, haga clic en `Organización`{.action}.
 
+![zimbra](images/zimbra_organization_tab.png){.thumbnail .w-400}
+
 #### Crear una organización
 
 Para crear una organización, haga clic en `Agregar organización`{.action}. Establezca el `Nombre` de la organización y el `Label de la organización`, que es una breve descripción de la organización que le permite identificarse al filtrar la visualización de los nombres de dominio y cuentas de correo de su servicio Zimbra.
 
-#### Filtrar por organización
+![zimbra](images/zimbra_organization_add.png){.thumbnail .w-400}
 
-Una vez creadas las organizaciones, asegúrese de que los dominios declarados en el servicio Zimbra están asociados a una organización.
+#### Filtrar por organización
 
 Desde las fichas `Organización`{.action}, `Dominio`{.action} y `Cuentas de correo`{.action}, al hacer clic en el label de una organización, se crea un filtro que muestra únicamente los elementos asociados a esa organización.<br>
 Observe que el filtro se aplica cuando aparece el label junto al nombre del servicio Zimbra.<br>
@@ -74,6 +85,10 @@ Para retirar el filtro, simplemente haga clic en la cruz del filtro.
 
 ### Dominios <a name="domains"></a>
 
+> [!warning]
+>
+> Para un funcionamiento óptimo cuando utilice el mismo nombre de dominio entre los productos OVHcloud [Exchange](/links/web/emails-hosted-exchange), [E-mail Pro](/links/web/email-pro) y Zimbra, es necesario configurar el dominio en "no autoritativo". Para más información sobre cómo configurar un dominio sin autorización en una plataforma Exchange o Email Pro, consulte nuestra guía [Añadir un dominio a una plataforma de correo](/pages/web_cloud/email_and_colaborative_solutions/microsoft_exchange/exchange_adding_domain).
+
 En esta pestaña podrá consultar todos los dominios añadidos al servicio Zimbra. Es necesario gestionarlos desde el área de cliente de OVHcloud para poder añadirlos.
 
 En la tabla de dominios encontrará dos datos :
@@ -81,11 +96,15 @@ En la tabla de dominios encontrará dos datos :
 - **Organización** : esta se determina al añadir el dominio. En esta columna encontrará automáticamente la etiqueta.
 - **Número de cuentas** : Aquí encontrará todas las cuentas creadas con el dominio correspondiente.
 
+![zimbra](images/zimbra_domain_tab.png){.thumbnail .w-400}
+
 #### Añadir un dominio
 
 Para añadir un dominio a su servicio Zimbra, haga clic en la pestaña `Dominio`{.action} y luego en `Añadir un dominio`{.action}.
 
-Si ha creado alguna organización, seleccione una en el menú desplegable y, a continuación, un dominio de la lista (es necesario que los dominios estén gestionados en el área de cliente de OVHcloud). A continuación, haga clic en `Confirmar`{.action} para añadir el dominio.
+Seleccione una organización en el menú desplegable y, a continuación, seleccione un dominio de la lista (es necesario que los dominios estén gestionados en el área de cliente de OVHcloud). A continuación, haga clic en `Confirmar`{.action} para añadir el dominio.
+
+![zimbra](images/zimbra_domain_add.png){.thumbnail .w-400 .h400}
 
 ### Cuentas de correo <a name="email"></a>
 
@@ -96,6 +115,8 @@ La gestión de las direcciones de correo de su servicio Zimbra se realiza desde 
 - **Tamaño** : esta columna muestra la capacidad total de su cuenta de correo y el espacio que ocupa actualmente.
 
 En la parte superior de esta página también encontrará un enlace al [Webmail](/links/web/email) para poder conectarse directamente al contenido de su cuenta de correo desde su navegador de internet.
+
+![zimbra](images/zimbra_emailaccounts_tab.png){.thumbnail .w-400}
 
 #### Crear una cuenta de correo
 
@@ -116,20 +137,33 @@ Complete la información que se muestra.
 
 - **Nombre** : introduzca un nombre.
 - **Nombre** : introduzca un nombre.
-- **Nombre completo**  : Introduzca el nombre que quiera que figure como remitente cuando envíe mensajes desde esta dirección.
+- **Nombre a mostrar**  : Introduzca el nombre que quiera que figure como remitente cuando envíe mensajes desde esta dirección.
 - **Contraseña** : Establezca una contraseña segura que incluya (como mínimo) 9 caracteres, una mayúscula, una minúscula y una cifra. Por motivos de seguridad, no utilice la misma contraseña dos veces. Elija un nombre que no guarde relación con sus datos personales (por ejemplo, no incluya su nombre, apellidos ni fecha de nacimiento). Cámbielo regularmente.
 
 > [!warning]
 >
 > La elección de la contraseña debe respetar las siguientes condiciones :
 >
-> - Mínimo 9 caracteres
-> - Máximo 30 caracteres
+> - mínimo 10 caracteres
+> - Máximo 64 caracteres
+> - Mínimo 1 mayúscula
+> - Mínimo 1 carácter especial
 > - Sin caracteres acentuados
 
 Haga clic en `Confirmar`{.action} para crear la cuenta.
 
+![zimbra](images/zimbra_emailaccounts_add.png){.thumbnail .w-400}
+
+### Consultar su cuenta de correo <a name="mail-consult"></a>
+
+Para consultar su cuenta de correo:
+
+- Conéctese al [webmail](/links/web/email) desde un navegador de internet e introduzca su dirección de correo y contraseña. Para más información, consulte nuestra página "[Utilizar el webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)".
+- Configure un programa de mensajería en su ordenador, smartphone o tablet. Consulte nuestra página "[Configurar una dirección de correo electrónico de Zimbra en un cliente de correo](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_mail_apps)".
+
 ## Más información <a name="go-further"></a>
+
+[Configurar una dirección de correo electrónico de Zimbra en un cliente de correo](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_mail_apps)
 
 [Utilizar el webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)
 

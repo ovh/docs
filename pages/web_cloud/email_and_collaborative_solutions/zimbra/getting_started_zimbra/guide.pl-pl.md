@@ -1,12 +1,15 @@
 ---
 title: "Pierwsze kroki z ofertą Zimbra"
 excerpt: "Dowiedz się, jak rozpocząć korzystanie z oferty Zimbra z poziomu Panelu klienta OVHcloud"
-updated: 2024-09-10
+updated: 2024-10-10
 ---
 
 <style>
 .w-400 {
-max-width:400px!important;
+  max-width:400px !important;
+}
+.h-400 {
+  max-height:400px !important;
 }
 </style>
 
@@ -42,13 +45,19 @@ Z ofertą Zimbra OVHcloud oferuje platformę open source do przesyłania wiadomo
 
 Aby uzyskać dostęp do usługi Zimbra, zaloguj się do [panelu klienta OVHcloud](/links/manager) i kliknij zakładkę `Web Cloud`{.action}. W części `E-maile`{.action} kliknij `Zimbra`{.action}.
 
+![zimbra](images/zimbra_general_information.png){.thumbnail .w-400}
+
 ### Skonfiguruj usługę Zimbra
 
 Zanim rozpoczniesz konfigurację kont e-mail Zimbra, zapoznaj się z trzema elementami, które hierarchicznie porządkują Twoją usługę Zimbra:
 
-- [**Organisation**](#organizations): umożliwia pogrupowanie domen w grupy. **Nie musisz tworzyć organizacji, aby móc utworzyć konto e-mail**.
+- [**Organisation**](#organizations): umożliwia pogrupowanie domen w grupy.
 - [**Nazwa domeny**](#domains): niezbędne do założenia konta e-mail. Należy zarządzać co najmniej jednym z nich w Panelu klienta OVHcloud i dodać go do usługi Zimbra.
 - [**Konta e-mail**](#emaile): korzystając z domen dodanych do Twojej usługi Zimbra, będziesz mógł utworzyć adres e-mail.
+
+> [!primary]
+>
+> *Organizacja* służy do reprezentowania jednostki (firmy, stowarzyszenia, projektów osobistych, etc.). Pozwala ona na rozdzielenie kont e-mail, stosowanie określonych zasad bezpieczeństwa (funkcja, która zostanie wprowadzona) oraz na delegowanie uprawnień do organizacji (funkcja dostępna wkrótce). Korzystanie z organizacji ułatwia poruszanie się po platformie Zimbra i zarządzanie nią.
 
 Poniższy schemat podsumowuje hierarchiczne powiązanie między wyżej wymienionymi elementami.
 
@@ -58,13 +67,15 @@ Poniższy schemat podsumowuje hierarchiczne powiązanie między wyżej wymienion
 
 Jeśli dodajesz wiele domen do swojej usługi Zimbra, pomocne może być pogrupowanie ich w "organizację". W usłudze Zimbra kliknij `Organisation`{.action}.
 
+![zimbra](images/zimbra_organization_tab.png){.thumbnail .w-400}
+
 #### Utwórz organizację
 
 Aby utworzyć organizację, kliknij przycisk `Dodaj organizację`{.action}. Ustaw `Nazwa` organizacji oraz `Znak organizacji`, przy czym ten ostatni jest krótkim opisem organizacji pozwalającym na odnalezienie Cię podczas filtrowania wyświetlania nazw domen i kont e-mail Twojej usługi Zimbra.
 
-#### Filtruj według organizacji
+![zimbra](images/zimbra_organization_add.png){.thumbnail .w-400}
 
-Po utworzeniu organizacji upewnij się, że domeny zadeklarowane w Twojej usłudze Zimbra są powiązane z organizacją.
+#### Filtruj według organizacji
 
 Z zakładek `Organizacja`{.action}, `Domena`{.action} i `Konta e-mail`{.action}, klikając na etykietę organizacji, utworzysz filtr, który wyświetli tylko elementy powiązane z tą organizacją.<br>
 Możesz zauważyć, że filtr jest stosowany, gdy etykieta jest wyświetlana obok nazwy Twojej usługi Zimbra.<br>
@@ -74,6 +85,10 @@ Aby usunąć filtr, wystarczy kliknąć na krzyżyk filtra.
 
 ### Domeny <a name="domains"></a>
 
+> [!warning]
+>
+> Aby zapewnić optymalne działanie, jeśli używasz tej samej nazwy domeny między ofertami OVHcloud [Exchange](/links/web/emails-hosted-exchange), [E-mail Pro](/links/web/email-pro) i Zimbra, konieczne jest skonfigurowanie domeny jako `non-authoritative`. Aby dowiedzieć się, jak skonfigurować nieautorytatywną domenę na platformie Exchange lub E-mail Pro, zapoznaj się z naszym przewodnikiem [Dodaj domenę na platformie e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
+
 W tej karcie znajdziesz wszystkie nazwy domen dodane do Twojej usługi Zimbra. Aby je dodać, należy nimi zarządzać w Panelu klienta OVHcloud.
 
 Tabela domen podaje dwie informacje:
@@ -81,11 +96,15 @@ Tabela domen podaje dwie informacje:
 - **Organization** : Domena zostanie oznaczona po dodaniu nazwy. W tej kolumnie automatycznie odnajdziesz jej etykietę.
 - **Liczba kont** : w tej sekcji odnajdziesz wszystkie konta utworzone pod daną nazwą domeny.
 
+![zimbra](images/zimbra_domain_tab.png){.thumbnail .w-400}
+
 #### Dodaj domenę
 
 Aby dodać domenę do Twojej usługi Zimbra, kliknij w zakładkę `Domena`{.action}, następnie kliknij `Dodaj domenę`{.action}.
 
-Jeśli masz utworzone organizacje, wybierz jedną z nich z rozwijanego menu, a następnie wybierz domenę z listy (konieczne jest, aby nazwy domen były zarządzane w Panelu klienta OVHcloud). Następnie kliknij przycisk `Potwierdź`{.action}, aby dokończyć dodawanie domeny.
+Wybierz organizację z wyskakującego menu, a następnie wybierz nazwę domeny z listy (konieczne jest, aby nazwy domen były zarządzane w Panelu klienta OVHcloud). Następnie kliknij przycisk `Potwierdź`{.action}, aby dokończyć dodawanie domeny.
+
+![zimbra](images/zimbra_domain_add.png){.thumbnail .w-400 .h400}
 
 ### Konta email <a name="emails"></a>
 
@@ -96,6 +115,8 @@ Adresami e-mail usługi Zimbra można zarządzać w zakładce `Konta e-mail`{.ac
 - **Rozmiar** : w tej kolumnie wyświetlana jest całkowita pojemność konta e-mail oraz aktualnie zajęta przestrzeń.
 
 Na górze tej strony znajduje się również link do [Webmail](/links/web/email), dzięki któremu będziesz mógł połączyć się bezpośrednio z zawartością Twojego konta e-mail z poziomu przeglądarki internetowej.
+
+![zimbra](images/zimbra_emailaccounts_tab.png){.thumbnail .w-400}
 
 #### Załóż konto e-mail
 
@@ -116,20 +137,33 @@ Uzupełnij kolejne informacje, o które zostaniesz poproszony.
 
 - **Imię** : wpisz imię.
 - **Nazwa** : wprowadź nazwę.
-- **Nazwa wyświetlana** : wprowadź nazwę nadawcy, która ma się wyświetlać podczas wysyłki e-maili z tego adresu.
+- **Nazwa do wyświetlenia** : wprowadź nazwę nadawcy, która ma się wyświetlać podczas wysyłki e-maili z tego adresu.
 - **Hasło**: Ustaw hasło składające się z (minimum) 9 znaków, jednej wielkiej litery, jednej małej litery i jednej cyfry. Ze względów bezpieczeństwa nie używaj dwa razy tego samego hasła. Wybierz takie, które nie ma żadnego związku z Twoimi danymi osobowymi (np. unikaj podawania imienia, nazwiska i daty urodzenia). Zmieniaj ustawienia regularnie.
 
 > [!warning]
 >
 > Wybór hasła musi spełniać następujące warunki:
 >
-> - Minimum 9 znaków
-> - Maksymalnie 30 znaków
+> - Minimum 10 znaków
+> - Maksymalnie 64 znaki
+> - Minimum 1 wielka litera
+> - Minimum 1 znak specjalny
 > - Brak znaków akcentowanych
 
 Kliknij na `Potwierdź`{.action}, aby rozpocząć zakładanie konta.
 
+![zimbra](images/zimbra_emailaccounts_add.png){.thumbnail .w-400}
+
+### Sprawdź konto e-mail <a name="mail-consult"></a>
+
+Aby sprawdzić konto e-mail:
+
+- Zaloguj się do [webmail](/links/web/email) w przeglądarce internetowej i wprowadź swój adres e-mail oraz hasło. Więcej informacji znajdziesz na naszej stronie "[Korzystanie z poczty Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)".
+- Skonfiguruj program pocztowy na swoim komputerze, smartfonie lub tablecie. Odwiedź naszą stronę "[Konfiguracja konta e-mail Zimbra w programie pocztowym](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_mail_apps)".
+
 ## Sprawdź również <a name="go-further"></a>
+
+[Konfiguracja konta e-mail Zimbra w programie pocztowym](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_mail_apps)
 
 [Skorzystaj z poczty Zimbra Webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)
 
