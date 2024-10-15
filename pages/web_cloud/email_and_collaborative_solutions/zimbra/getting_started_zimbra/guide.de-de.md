@@ -57,7 +57,7 @@ Bevor Sie mit der Konfiguration Ihrer Zimbra E-Mail-Accounts beginnen, beachten 
 
 > [!primary]
 >
-> Die *Organisation* dient zur Darstellung einer Entität (Unternehmen, Verein, persönliches Projekt usw.). Sie erlaubt die Trennung von E-Mail-Accounts, die Anwendung spezifischer Sicherheitsrichtlinien (zukünftige Funktion) und die Übertragung von Rechten an eine Organisation (zukünftige Funktion). Die Verwendung von Organisationen vereinfacht die Navigation und Verwaltung Ihrer Zimbra-Plattform.
+> Die *Organisation* dient zur Abbildung einer Entität (Unternehmen, Verein, persönliches Projekt, etc.). Sie erlaubt die Trennung von E-Mail-Accounts, die Anwendung spezifischer Sicherheitsrichtlinien (zukünftige Funktion) und die Übertragung von Rechten an eine Organisation (zukünftige Funktion). Die Verwendung von Organisationen vereinfacht die Navigation und Verwaltung Ihres Zimbra Dienstes.
 
 Die folgende Abbildung zeigt die hierarchische Beziehung zwischen den oben genannten Elementen.
 
@@ -87,7 +87,8 @@ Um den Filter zu entfernen, klicken Sie auf das Filterkreuz.
 
 > [!warning]
 >
-> Für einen optimalen Betrieb, wenn Sie den gleichen Domainnamen zwischen den Angeboten OVHcloud [Exchange](/links/web/emails-hosted-exchange), [E-Mail Pro](/links/web/email-pro) und Zimbra verwenden, muss der Domainname als `nicht-authoritativ` konfiguriert werden. Weitere Informationen zum Konfigurieren eines nicht-autoritativen Domainnamens auf einer Exchange- oder E-Mail Pro-Plattform finden Sie in unserer Anleitung [Einen Domainnamen auf einer E-Mail-Plattform hinzufügen](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
+> Für einen optimalen Betrieb, wenn Sie den gleichen Domainnamen für OVHcloud [Exchange](/links/web/emails-hosted-exchange), [E-Mail Pro](/links/web/email-pro) und Zimbra verwenden, muss der Domainname als `nicht-autoritativ` konfiguriert werden.   Weitere Informationen zum Konfigurieren eines nicht-autoritativen Domainnamens für die Dienste Exchange und E-Mail Pro finden Sie in unserer Anleitung: [Domainnamen zu Ihrem Exchange Dienst hinzufügen](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
+>
 
 In diesem Tab finden Sie alle Domainnamen, die zu Ihrer Zimbra Dienstleistung hinzugefügt wurden. Sie müssen über Ihr OVHcloud Kundencenter verwaltet werden, um sie verwenden zu können.
 
@@ -102,7 +103,7 @@ Die Tabelle der Domainnamen enthält zwei Informationen:
 
 Um einen Domainnamen zu Ihrer Zimbra Dienstleistung hinzuzufügen, klicken Sie auf `Domain`{.action} und dann auf `Domain hinzufügen`{.action}.
 
-Wählen Sie im Dropdown-Menü eine Organisation aus, und wählen Sie einen Domänennamen aus der Liste aus (die in Ihrem OVHcloud Kundencenter verwaltet werden). Klicken Sie anschließend auf `Bestätigen`{.action}, um das Hinzufügen des Domainnamens abzuschließen.
+Wählen Sie im Dropdown-Menü eine Organisation aus, und dann einen Domainnamen (verwaltet in Ihrem OVHcloud Kundencenter) aus der Liste. Klicken Sie anschließend auf `Bestätigen`{.action}, um das Hinzufügen des Domainnamens abzuschließen.
 
 ![zimbra](images/zimbra_domain_add.png){.thumbnail .w-400 .h400}
 
@@ -111,7 +112,7 @@ Wählen Sie im Dropdown-Menü eine Organisation aus, und wählen Sie einen Domä
 Die Verwaltung der E-Mail-Accounts Ihrer Zimbra Dienstleistung erfolgt über den Tab `E-Mail-Accounts`{.action}. Die Tabelle enthält eine Liste der auf Ihrem Dienst vorhandenen E-Mail-Accounts sowie 3 Informationen zu jedem Account:
 
 - **Organisation**: Wenn der Domainname Ihres E-Mail-Accounts mit einer Organisation verbunden ist, finden Sie das zugehörige Label automatisch in dieser Spalte.
-- **Angebot**: Da Ihre Zimbra Dienstleistung mehrere Zimbra Angebote enthalten kann, finden Sie das Ihrem E-Mail-Account zugeordnete Angebot in dieser Spalte.
+- **Angebot**: Da Ihre Zimbra Dienstleistung mehrere Dienste enthalten kann, finden Sie den Ihrem E-Mail-Account zugeordneten Dienst in dieser Spalte.
 - **Größe**: Diese Spalte zeigt die Gesamtkapazität und den aktuellen Speicherplatz Ihres E-Mail-Accounts an.
 
 Außerdem finden Sie oben auf dieser Seite einen Link zum [Webmail](/links/web/email), um die Inhalte des E-Mail-Accounts im Webbrowser anzuzeigen.
