@@ -1199,6 +1199,7 @@
             + [Installer Camaleon CMS sur son hébergement Cloud Web](web_cloud/web_hosting/install-camaleon)
         + [CMS](web-cloud-hosting-cms)
             + [Setting up your website with 1-click modules](web_cloud/web_hosting/cms_install_1_click_modules)
+            + [How to change the admin password of my CMS](web_cloud/web_hosting/cms-update-password-admin)
             + [How to manage your 1-click module](web_cloud/web_hosting/cms_manage_1_click_module)
             + [Installing a CMS manually on your Web Hosting plan](web_cloud/web_hosting/cms_manual_installation)
             + [Installing WordPress manually](web_cloud/web_hosting/cms_manual_installation_wordpress)
