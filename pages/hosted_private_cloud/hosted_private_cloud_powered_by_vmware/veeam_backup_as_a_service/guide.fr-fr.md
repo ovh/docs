@@ -1,7 +1,7 @@
 ---
 title: "Activer et utiliser Veeam Managed Backup"
 excerpt: "Découvrez comment activer et utiliser l'option Veeam Managed Backup au sein de l'univers Hosted Private Cloud VMware on OVHcloud"
-updated: 2024-10-11
+updated: 2024-10-15
 ---
 
 ## Objectif
@@ -51,7 +51,7 @@ Vous verrez apparaître sur votre infrastructure vSphere une machine virtuelle c
 
 Maintenant que le service est en place, il suffit de réaliser les demandes de sauvegarde pour chaque machine virtuelle identifiée comme critique depuis le vSphere Web Client.
 
-Sélectionner le datacenter VMware, puis l'onglet `Configure`{.action} et choisissez `Backup Management`{.action} dans la section OVHCloud du menu.
+Sélectionnez le datacenter VMware, puis l'onglet `Configure`{.action} et choisissez `Backup Management`{.action} dans la section OVHCloud du menu.
 
 ![Backup Management](images/backupvm_01.png){.thumbnail}
 
@@ -73,10 +73,10 @@ Chaque jour, un e-mail contenant les statuts de l'ensemble des travaux effectué
 >  
 > **Attention** : La limite sur les VMs doit être de 2 To pour pouvoir activer la sauvegarde.
 > 
-> Pour les offres **Advanced** et **Premium** la réplication entre région de *Veeam Managed Backup* suit les schemas suivants :
+> Pour les offres **Advanced** et **Premium** la réplication entre régions de *Veeam Managed Backup* suit les schémas ci-dessous.
 > 
 
-Voici un schema des régions vers lesquelles les régions de la `zone 1` sont répliqués ou non vers la `zone 2` :
+Voici un schéma des régions vers lesquelles les régions de la `zone 1` sont répliquées ou non vers la `zone 2` :
 
 ![Veeam Replication Schema](images/veeam_replicated_zones_schema.png){.thumbnail}
 
@@ -84,19 +84,19 @@ Vous avez ici la correspondance des zones répliquées dans ce tableau, avec des
 
 | SecNumCloud  | Zone 1  | Zone 2  | Replication<br/>inter-sites |        Offres        | Comments                                                                                                                                                                    |
 |:------------:|:-------:|:-------:|:---------------------------:|:--------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|      ❌       |  `BHS`  |  `TOR`  |             ✅️              | Advanced<br/>Premium | - Les régions de Montreal Beauharnois (BHS) et Toronto Cambridge (TOR) sont bien répliqués entre eux avec les offres Veeam Managed Backup Advanced et Premium.              |
-|      ❌       |  `ERI`  |  `RBX`  |             ❌                | Advanced<br/>Premium | - Les régions de Londre Erith (ERI) et France Roubaix (RBX) ne sont pas répliqués entre eux avec les offres Veeam Managed Backup Advanced et Premium.                       |
-|      ❌       |  `LIM`  |  `SBG`  |             ❌                | Advanced<br/>Premium | - Les régions d'Allemagne Limburg (LIM) et France Strasbourg (SBG) ne sont pas répliqués entre eux avec les offres Veeam Managed Backup Managed Backup Advanced et Premium. |
-|      ❌       |  `RBX`  |  `SBG`  |             ✅️              | Advanced<br/>Premium | - Les régions de France Roubaix (RBX) et France Strasbourg (SBG) sont bien répliqués entre eux avec les offres Veeam Managed Backup Advanced et Premium.                    |
+|      ❌       |  `BHS`  |  `TOR`  |             ✅️              | Advanced<br/>Premium | - Les régions de Montreal Beauharnois (BHS) et Toronto Cambridge (TOR) sont bien répliquées entre elles avec les offres Veeam Managed Backup Advanced et Premium.              |
+|      ❌       |  `ERI`  |  `RBX`  |             ❌                | Advanced<br/>Premium | - Les régions de Londre Erith (ERI) et France Roubaix (RBX) ne sont pas répliquées entre elles avec les offres Veeam Managed Backup Advanced et Premium.                       |
+|      ❌       |  `LIM`  |  `SBG`  |             ❌                | Advanced<br/>Premium | - Les régions d'Allemagne Limburg (LIM) et France Strasbourg (SBG) ne sont pas répliquées entre elles avec les offres Veeam Managed Backup Managed Backup Advanced et Premium. |
+|      ❌       |  `RBX`  |  `SBG`  |             ✅️              | Advanced<br/>Premium | - Les régions de France Roubaix (RBX) et France Strasbourg (SBG) sont bien répliquées entre elles avec les offres Veeam Managed Backup Advanced et Premium.                    |
 |              |         |         |                             |                      |                                                                                                                                                                             |
-|      ✅️      |  `RBX`  |  `SBG`  |             ✅️              | Advanced<br/>Premium | - Les régions de France Roubaix (RBX) et France Strasbourg (SBG) sont bien répliqués entre eux avec les offres Veeam Managed Backup Advanced et Premium.                    |
-|      ✅️      |  `GRA`  |  `RBX`  |            ❌                 | Advanced<br/>Premium | - Les régions de France Gavelines (RBX) et France Roubaix (RBX) ne se pas réplique pas entre eux avec les offres Veeam Managed Backup Advanced et Premium.                  |
+|      ✅️      |  `RBX`  |  `SBG`  |             ✅️              | Advanced<br/>Premium | - Les régions de France Roubaix (RBX) et France Strasbourg (SBG) sont bien répliquées entre elles avec les offres Veeam Managed Backup Advanced et Premium.                    |
+|      ✅️      |  `GRA`  |  `RBX`  |            ❌                 | Advanced<br/>Premium | - Les régions de France Gravelines (RBX) et France Roubaix (RBX) ne se répliquent pas entre elles avec les offres Veeam Managed Backup Advanced et Premium.                  |
 |              |         |         |                             |                      |
-|      ❌       |  `VIN`  |  `HIL`  |             ✅️               | Advanced<br/>Premium | - Les régions USA de Washington DC Vint Hill (VIN) et Seattle Hillsboro Oregon (HIL) se réplique bien entre eux avec les offres Veeam Managed Backup Advanced et Premium.   |
+|      ❌       |  `VIN`  |  `HIL`  |             ✅️               | Advanced<br/>Premium | - Les régions USA de Washington DC Vint Hill (VIN) et Seattle Hillsboro Oregon (HIL) se répliquent bien entre elles avec les offres Veeam Managed Backup Advanced et Premium.   |
 
 ### Restaurer une sauvegarde
 
-Sélectionner le datacenter VMware, puis l'onglet `Configure`{.action} et choisissez `Backup Management`{.action} dans la section OVHcloud du menu.
+Sélectionnez le datacenter VMware, puis l'onglet `Configure`{.action} et choisissez `Backup Management`{.action} dans la section OVHcloud du menu.
 
 Dans la liste, sélectionnez la VM pour laquelle vous souhaitez restaurer une sauvegarde (celle-ci doit avoir un **backup state** à **Enabled**).
 
@@ -129,7 +129,7 @@ Pour effectuer ces actions, vous pouvez sélectionner le datacenter dans votre i
 
 ### Désactiver la sauvegarde d'une machine virtuelle
 
-Sélectionner le datacenter VMware, puis l'onglet `Configure`{.action} et choisissez `Backup Management`{.action} dans la section OVHcloud du menu.
+Sélectionnez le datacenter VMware, puis l'onglet `Configure`{.action} et choisissez `Backup Management`{.action} dans la section OVHcloud du menu.
 
 Dans la liste, sélectionnez la VM pour laquelle vous souhaitez désactiver la sauvegarde.
 
