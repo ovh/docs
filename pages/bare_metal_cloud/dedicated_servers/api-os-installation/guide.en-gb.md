@@ -187,7 +187,7 @@ With the following parameters:
 
 `customizations` contains a hash with the answers to the OS-specific questions: hash key is the `name` of the question and its value is the answer to that question, in the requested `type`.
 
-`storage` contains customization related to disks & hardware RAID, partitions, software RAID, LVM, ZFS, etc. See [OVHcloud API & Partitioning](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh) for more details.
+`storage` contains customization related to disks & hardware RAID, partitions, software RAID, LVM, ZFS, etc. See [OVHcloud API and Storage](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh) for more details.
 
 #### Linux payload example
 
@@ -323,7 +323,7 @@ You also can set it in the payload of the following API call :
 
 [Bring Your Own Linux (BYOLinux)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-linux)
 
-[OVHcloud API & Partitioning](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
+[OVHcloud API and Storage](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
 
 [Managing software RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft)
 

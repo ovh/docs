@@ -182,7 +182,7 @@ Avec les paramètres suivants :
 
 `customizations` contient une hash avec les réponses aux questions spécifiques à l'OS: la clé de la hash doit contenir le nom (`name`) de la question et sa valeur doit contenir la réponse à la question, dans le format qui correspond au `type` requis.
 
-`storage` contient la configuration liée aux disques & RAID matériels, partitions, RAID logiciels, LVM, ZFS, etc. Voir [API OVHcloud & Partitionnement](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh) pour plus de détails.
+`storage` contient la configuration liée aux disques & RAID matériels, partitions, RAID logiciels, LVM, ZFS, etc. Voir [API OVHcloud et Stockage](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh) pour plus de détails.
 
 #### Exemple d'un payload pour installer Linux
 
@@ -318,7 +318,7 @@ Et vous pouvez le modifier grace à l'appel suivant :
 
 [Bring Your Own Linux (BYOLinux)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-linux)
 
-[API OVHcloud & Partitionnement](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
+[API OVHcloud et Stockage](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
 
 [Gestion du RAID logiciel](/pages/bare_metal_cloud/dedicated_servers/raid_soft)
 

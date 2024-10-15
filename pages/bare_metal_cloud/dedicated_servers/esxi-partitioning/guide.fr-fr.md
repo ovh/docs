@@ -171,7 +171,7 @@ Vous pouvez utiliser l'appel API suivant afin d'obtenir le détail de chaque par
 
 [API OVHcloud et installation d'un OS](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
 
-[API OVHcloud & Partitionnement](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
+[API OVHcloud et Stockage](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
 
 [Gestion du RAID matériel](/pages/bare_metal_cloud/dedicated_servers/raid_hard)
 

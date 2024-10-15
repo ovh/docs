@@ -164,7 +164,7 @@ The following table gives an overview of well known customer errors and how to f
 |Could not download image located: `url`|Cannot download image from `imageURL`.|Check that a download with the `curl` command from your server works in rescue mode. If some HTTP specific headers are required, you can precise them with the `httpHeaders` argument.|
 |Bad `checkSumType` for downloaded file, got: `n` while expecting `m`.|Incorrect checksum.|- Please ensure that you have specified the correct checksum.<br />- Check that a download with the `curl` command from your server works in rescue mode.|
 
-See OVHcloud API & Partitioning [Common customer errors](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh#errors) for related partitioning issues.
+See OVHcloud API and Storage [Common customer errors](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh#errors) for related partitioning issues.
 
 ## Go further
 
@@ -172,7 +172,7 @@ See OVHcloud API & Partitioning [Common customer errors](/pages/bare_metal_cloud
 
 [OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
 
-[OVHcloud API & Partitioning](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
+[OVHcloud API and Storage](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
 
 [Bring Your Own Image (BYOI)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image)
 
