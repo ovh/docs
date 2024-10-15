@@ -6,7 +6,7 @@ updated: 2024-10-04
 
 ## Objectif
 
-**L'objectif est de manipuler des données dans un dossier de votre banque de données vSphere.**
+**Découvrez comment manipuler des données dans un dossier de votre banque de données vSphere.**
 
 ## Prérequis
 
