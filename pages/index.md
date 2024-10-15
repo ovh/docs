@@ -1225,6 +1225,7 @@
         + [SSL](web-cloud-hosting-ssl)
             + [Managing SSL certificates on a Web Hosting plan](web_cloud/web_hosting/ssl_on_webhosting)
             + [Activating HTTPS on your website with an SSL certificate](web_cloud/web_hosting/ssl-activate-https-website)
+            + [Web Hosting - Activating a DV SSL certificate](web_cloud/web_hosting/ssl_dv)
             + [Using an EV SSL certificate on your website](web_cloud/web_hosting/ssl_ev)
             + [Avoiding the common pitfalls of making your website secure with SSL](web_cloud/web_hosting/ssl_avoid_common_pitfalls_of_making_website_secure)
         + [Databases](web-cloud-hosting-databases)
