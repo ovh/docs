@@ -96,7 +96,7 @@ Saisissez les identifiants de la base de données (nom d'utilisateur et mot de p
 >>
 > Drupal
 >>
->> Une fois connecté à phpMyAdmin, suivez les étapes suivantes :
+>> Une fois connecté à phpMyAdmin, suivez ces étapes :
 >> 
 >> - Sélectionnez la base de données que Drupal utilise pour votre site web.
 >> - Localisez la table `users_field_data` (pour Drupal 8 et versions ultérieures) ou users (pour Drupal 7 et versions antérieures).
