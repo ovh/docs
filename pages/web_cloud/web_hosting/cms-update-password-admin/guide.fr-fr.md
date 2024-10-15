@@ -35,7 +35,7 @@ Vous avez encore accès à vos e-mails et à l’interface de connexion ? Cette 
 >>
 > PrestaShop
 >>
->> Accédez à l'interface de connexion PrestaShop de votre site web (de type `https://votre-domaine.com/admin/`), cliquez sur « Mot de passe oublié » et recevez un e-mail vous invitant à réinitialiser votre mot de passe.
+>> Accédez à l'interface de connexion PrestaShop de votre site web (de type `https://votre-domaine.com/admin/`), puis cliquez sur « Mot de passe oublié » pour recevoir un e-mail vous invitant à réinitialiser votre mot de passe.
 >>
 > Joomla!
 >>
