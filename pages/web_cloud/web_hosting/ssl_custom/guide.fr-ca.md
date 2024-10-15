@@ -12,7 +12,7 @@ OVHcloud propose plusieurs types de certificats SSL sur les offres d'[hébergeme
 
 En fonction de votre situation, il est possible que vous souhaitiez installer un certificat SSL différent de ceux proposés par OVHcloud sur votre hébergement web.
 
-**Découvrez comment importer et installer un certificat SSL personnalisé sur votre hébergement Web OVHcloud**
+**Découvrez comment importer et installer un certificat SSL personnalisé sur votre hébergement Web OVHcloud.**
 
 ## Prérequis 
 
