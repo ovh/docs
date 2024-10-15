@@ -60,7 +60,7 @@ Nach der Bestätigung dieses Schritts erhalten Sie eine Mitteilung, dass die Kon
 
 Wenn Ihre Domain nicht im selben Kunden-Account verwaltet oder nicht von OVHcloud gehostet wird, wird eine zweite E-Mail an Sie gesendet, die die erforderlichen Informationen für die manuelle Konfiguration Ihrer DNS-Zone enthält.
 
-Die E-Mail enthält die IPv4- und IPv6-Adressen Ihres Private Exchange Servers. Geben Sie diese Adressen in die DNS-Zone der zuvor in [Schritt 2](./#schritt-2-ihren-dienst-initialisieren) erstellten Subdomain jeweils als Eintrag vom Typ „A“ und vom Typ „AAAA“ ein. Bei einem OVHcloud-Domainnamen finden Sie weitere Informationen in unserer [passenden Anleitung](/pages/web_cloud/domains/dns_zone_edit).
+Die E-Mail enthält die IPv4- und IPv6-Adressen Ihres Private Exchange Servers. Geben Sie diese Adressen in die DNS-Zone der zuvor in [Schritt 2](./#schritt-2-ihren-dienst-initialisieren) erstellten Subdomain jeweils als Eintrag vom Typ „A“ und vom Typ "AAAA" ein. Bei einem OVHcloud-Domainnamen finden Sie weitere Informationen in unserer [passenden Anleitung](/pages/web_cloud/domains/dns_zone_edit).
 
 ### Schritt 4: Validierung des SSL-Zertifikats
 
