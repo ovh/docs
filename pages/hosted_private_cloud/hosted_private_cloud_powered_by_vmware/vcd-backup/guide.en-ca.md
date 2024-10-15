@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - Backup with Veeam Data Platform"
 excerpt: "Find out how to perform backups and restores with Veeam Data Platform integration"
-updated: 2024-08-23
+updated: 2024-10-15
 ---
 
 <style>
@@ -72,9 +72,42 @@ By default, you have the following repositories:
 - **Silver Repository**: This repository is based on the [OVHcloud Object Storage Standard](/links/public-cloud/object-storage) class. We will be using a Veeam SOBR (Scale-out Backup Repository) with performance tier buckets closer to your VCD environment, and a capacity tier from buckets in another OVHcloud region. We also use the Veeam SOBR copy mode to add the backups from the "performance extents" to the "capacity extents" as soon as they're created.
 - **Gold Repository**: This repository is based on the [OVHcloud Object Storage High performance](/links/public-cloud/object-storage) class. This repository includes the previous options + OVHcloud Object Storage "High performance".
 
-From the OVHcloud Control Panel, you can activate the "Gold Repository".
+From the OVHcloud Control Panel, you can activate the `Gold Repository`.
 
-All these repositories have a storage quota of 100To. You can reach out to the [support teams](https://help.ovhcloud.com/csm?id=csm_get_help) to increase this quota.
+All these repositories have a storage quota of 100 TB. You can reach out to the [support teams](https://help.ovhcloud.com/csm?id=csm_get_help) to increase this quota.
+
+Here is an example of the primary and destination sites used for Veeam VCD copying of offsite backups (for the **Advanced/Premium** offers):
+
+![VCD Veeam 4 VCD Sites](images/vcd_veeam_zones.png){.thumbnail}
+
+- `Bronze Repository`: Roubaix (Europe)
+- `Silver Repository`: Roubaix -> Strasbourg (Europe)
+- `Gold Repository`: Roubaix -> Strasbourg (Europe)
+
+No offsite backup is performed for the default configuration of the **Bronze** repository configuration.
+
+The rest of the mapping for the backup zones is detailed here:
+
+|   Repository    |      Source       |    Destination     |
+|:---------------:|:-----------------:|:------------------:|
+|     Bronze      |   Roubaix (fr)    |        None        |
+|     Bronze      |   Limburg (de)    |        None        |
+|     Bronze      |    Warsaw (pl)    |        None        |
+|     Bronze      |    Erith (uk)     |        None        |
+|     Bronze      |  Strasbourg (fr)  |        None        |
+|     Bronze      | Beauharnois (ca)  |        None        |
+|     Silver      |   Roubaix (fr)    |  Strasbourg (fr)   |
+|     Silver      |   Limburg (de)    |  Strasbourg (fr)   |
+|     Silver      |    Warsaw (pl)    |    Limburg (de)    |
+|     Silver      |    Erith (uk)     |    Limburg (de)    |
+|     Silver      |  Strasbourg (fr)  |    Roubaix (fr)    |
+|     Silver      | Beauharnois (ca)  |   Cambridge (ca)   |
+|      Gold       |   Roubaix (fr)    |  Strasbourg (fr)   |
+|      Gold       |   Limburg (de)    |  Strasbourg (fr)   |
+|      Gold       |   Limburg (de)    |    Roubaix (fr)    |
+|      Gold       |    Erith (uk)     |    Limburg (de)    |
+|      Gold       |  Strasbourg (fr)  |    Roubaix (fr)    |
+|      Gold       | Beauharnois (ca)  | Cambridge/Tor (ca) |
 
 - **Data included in backups:**
 
