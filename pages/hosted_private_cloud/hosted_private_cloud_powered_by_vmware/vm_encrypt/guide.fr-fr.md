@@ -1,7 +1,7 @@
 ---
 title: "Activation du chiffrement des machines virtuelles avec un KMS externe"
 excerpt: "Découvrez comment mettre en oeuvre le chiffrement de vos machines virtuelles avec un KMS externe non OVHcloud au sein de votre environnement VMware vSphere on OVHcloud managé"
-updated: 2024-10-11
+updated: 2024-10-15
 ---
 
 ## Objectif
@@ -17,7 +17,7 @@ updated: 2024-10-11
 
 ## En pratique
 
-Ce guide a pour objectif d'expliquer les détails de la mise en oeuvre du chiffrement de machine virtuelle sur l'offre Hosted Private Cloud VMware on OVHcloud, en employant une stratégie de stockage utilisant un **Fournisseur de clé Standard** ou KMS externe.
+Ce guide a pour objectif d'expliquer les détails de la mise en oeuvre du chiffrement de machines virtuells sur l'offre Hosted Private Cloud VMware on OVHcloud, en employant une stratégie de stockage utilisant un **Fournisseur de clé Standard** ou KMS externe.
 
 ### Récupérer l'empreinte du certificat du serveur de clé (KMS)
 
@@ -45,7 +45,7 @@ Ici, il s'agit de la valeur à droite du signe égal :
 
 #### Via l'espace client OVHcloud
 
-Dans votre espace client, assurez-vous de vous situer dans la section `Hosted Private Cloud`. 
+Dans votre espace client, assurez-vous de vous situer dans la section `Hosted Private Cloud`{.action}. 
 
 Cliquez sur `VMware`{.action} dans la barre de services à gauche, puis sélectionnez le service VMware concerné.
 
@@ -189,20 +189,20 @@ Le déplacement des machines entre les hôtes est effectué par l'échange de cl
 
 #### Vérifications de la configuration
 
-Vous pouvez verifier que vous disposez bien du petit cadenas ainsi que dans les informations de votre VM que le disque est bien chiffré. 
+Vérifiez qu'un petit cadenas est apparent, et que le disque est bien chiffré dans les informations de votre VM.
 
-Verifier dans les paramètres de votre VM que votre politique de stockage est bien celle qui utilise le chiffrement `VM encryption Policy`. 
+Vérifiez dans les paramètres de votre VM que votre politique de stockage est bien celle qui utilise le chiffrement `VM encryption Policy`. 
 
 ![vérification de la configuration](images/vm-encrypt_07.png){.thumbnail}
 
 ![vérification de la configuration](images/vm-encrypt_09.png){.thumbnail}
 
-Pour terminer, vous pouvez regarder les task et events pour avoir confirmation finale que la configuration a bien marché.
+Pour terminer, vous pouvez regarder les tasks et events pour avoir la confirmation finale que la configuration a bien fonctionné.
 
 ## Aller plus loin
 
-Si vous rencontrez des problèmes avec la configuration de votre KMS externe, nous vous invitons à contacter le [support](/links/support) ou réfléchir à utiliser un KMS OVHcloud (OKMS). 
+Si vous rencontrez des problèmes avec la configuration de votre KMS externe, nous vous invitons à contacter le [support](https://help.ovhcloud.com/csm?id=csm_get_help) ou à envisager d'utiliser un KMS OVHcloud (OKMS). 
 
-Vous pouvez ainsi lire le guide suivant, qui vous liste la procédure à suivre : [KMS for VMware on OVHcloud - Solution et cas d'usages pour chiffrer des VM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_overall_vm-encrypt).
+Vous pouvez ainsi lire le guide suivant, qui détaille la procédure à suivre : [KMS for VMware on OVHcloud - Solution et cas d'usages pour chiffrer des VM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_overall_vm-encrypt).
 
 Échangez avec notre [communauté d’utilisateurs](/links/community).
