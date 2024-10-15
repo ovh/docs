@@ -656,7 +656,7 @@ In this JSON, insert the template into `userData`. Warning: line breaks must be 
 
 [All you need to know to get started with Public Cloud](/pages/public_cloud/compute/00-essential-info-to-get-started-on-public-cloud)
 
-[Familiarise yourself with the Public Cloud interface](/pages/public_cloud/compute/03-public-cloud-interface-walk-me)
+[How to use the Public Cloud interface](/pages/public_cloud/compute/03-public-cloud-interface-walk-me)
 
 [Create your first OVHcloud Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project)
 

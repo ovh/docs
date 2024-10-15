@@ -545,7 +545,7 @@
     + [Compute](products/public-cloud-compute)
         + [Getting started](public-cloud-compute-getting-started)
             + [All you need to know to get started with Public Cloud](public_cloud/compute/00-essential-info-to-get-started-on-public-cloud)
-            + [Familiarise yourself with the Public Cloud interface](public_cloud/compute/03-public-cloud-interface-walk-me)
+            + [How to use the Public Cloud interface](public_cloud/compute/03-public-cloud-interface-walk-me)
             + [Creating your first OVHcloud Public Cloud project](public_cloud/compute/create_a_public_cloud_project)
             + [How to create a Public Cloud instance and connect to it](public_cloud/compute/public-cloud-first-steps)
             + [Activating a Windows licence for an instance in private mode](public_cloud/compute/activate-windows-license-private-mode)

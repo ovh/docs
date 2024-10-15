@@ -18,7 +18,7 @@ If you are already familiar with these concepts, you can continue discovering th
 
 - [Open an OVHcloud account](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
 - [Create your first Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project)
-- [Familiarise yourself with the Public Cloud interface](/pages/public_cloud/compute/03-public-cloud-interface-walk-me)
+- [How to use the Public Cloud interface](/pages/public_cloud/compute/03-public-cloud-interface-walk-me)
 - [Create your first instance](/pages/public_cloud/compute/public-cloud-first-steps)
 - [Manage quotas](/pages/public_cloud/compute/increasing_public_cloud_quota)
 
