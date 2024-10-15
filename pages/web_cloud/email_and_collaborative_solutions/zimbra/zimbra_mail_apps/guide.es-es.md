@@ -41,13 +41,13 @@ Haga clic en la ficha correspondiente al tipo de dispositivo que utilice:
 > [!tabs]
 > **Ordenador Windows**
 >>
->> - [Outlook para Windows](/pages/web_cloud/email_and_colaborative_solutions/mx_plan/how_to_configure_outlook_2016)
+>> - [Outlook para Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)
 >> - [Thunderbird para Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_thunderbird_windows)
->> - [Correo de Windows](/pages/web_cloud/email_and_colaborative_solutions/mx_plan/how_to_configure_windows_10)
+>> - [Correo de Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10)
 >>
 > **Ordenador Apple mac**
 >>
->> - [Outlook para macOS](/pages/web_cloud/email_and_colaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac)
+>> - [Outlook para macOS](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac)
 >> - [Mail for macOS](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_mail_macos)
 >> - [Thunderbird para macOS](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_thunderbird_mac)
 >>
@@ -57,7 +57,7 @@ Haga clic en la ficha correspondiente al tipo de dispositivo que utilice:
 >>
 > **Smartphone o tableta Android**
 >>
->> - [Gmail para Android](/pages/web_cloud/email_and_colaborative_solutions/mx_plan/how_to_configure_android)
+>> - [Gmail para Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android)
 >>
 > **Interfaz Web**
 >>

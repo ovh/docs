@@ -113,6 +113,6 @@ Se necessitar de inserir manualmente as definições **SMTP** nas preferências 
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
-Se deseja beneficiar de uma assistência ao uso e à configuração das suas soluções OVHcloud, sugerimos que consulte as nossas diferentes [ofertas de suporte](/links/suporte).
+Se deseja beneficiar de uma assistência ao uso e à configuração das suas soluções OVHcloud, sugerimos que consulte as nossas diferentes [ofertas de suporte](/links/support).
 
 Fale com a nossa [comunidade de utilizadores](/links/community).

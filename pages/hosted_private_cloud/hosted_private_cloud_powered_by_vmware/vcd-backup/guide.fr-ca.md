@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - Sauvegarde avec Veeam Data Platform"
 excerpt: "Découvrez comment effectuer des sauvegardes et restaurations avec l'intégration Veeam Data Platform"
-updated: 2024-08-23
+updated: 2024-10-15
 ---
 
 <style>
@@ -73,9 +73,42 @@ Par défaut, vous disposez des *repositories* (dépôts) suivants :
 - **Silver Repository** : Ce repository est basé sur la classe [OVHcloud Object Storage Standard](/links/public-cloud/object-storage). Nous utiliserons un Veeam SOBR (Scale-Out Backup Repository) avec des buckets de niveau de performance plus proches de votre environnement VCD et un niveau de capacité "tier" à partir de buckets d'une autre région OVHcloud. Nous utilisons également le mode de copie Veeam SOBR pour ajouter les sauvegardes des « performance extents » aux « capacity extents » dès leur création.
 - **Gold Repository** : Ce repository est basé sur la classe [OVHcloud Object Storage High performance](/links/public-cloud/object-storage). Il inclut les options précédentes + OVHcloud Object Storage "High performance".
 
-Depuis votre espace client, vous pouvez activer le "Gold Repository".
+Depuis votre espace client, vous pouvez activer le `Gold Repository`.
 
 Tous ces repositories ont un quota de stockage de 100 To. Vous pouvez contacter les [équipes de support](https://help.ovhcloud.com/csm?id=csm_get_help) pour augmenter ce quota.
+
+Voici un exemple de site primaire et de destination utilisés pour la copie Veeam VCD des sauvegardes hors site (dans les offres **Advanced/Premium**) :
+
+![VCD Veeam 4 VCD Sites](images/vcd_veeam_zones.png){.thumbnail}
+
+- `Bronze Repository` : Roubaix
+- `Silver Repository` : Roubaix -> Strasbourg
+- `Gold Repository` : Roubaix -> Strasbourg
+
+Aucune sauvegarde hors site n'est effectuée pour la configuration par défaut du repository **Bronze**.
+
+Le reste de toute la correspondance des zones avec copie de sauvegarde est détaillé ici :
+
+|   Repository    |      Source       |   Destination   |
+|:---------------:|:-----------------:|:---------------:|
+|     Bronze      |   Roubaix (fr)    |      None       |
+|     Bronze      |   Limburg (de)    |      None       |
+|     Bronze      |    Warsaw (pl)    |      None       |
+|     Bronze      |    Erith (uk)     |      None       |
+|     Bronze      |  Strasbourg (fr)  |      None       |
+|     Bronze      | Beauharnois (ca)  |      None       |
+|     Silver      |   Roubaix (fr)    | Strasbourg (fr) |
+|     Silver      |   Limburg (de)    | Strasbourg (fr) |
+|     Silver      |    Warsaw (pl)    |  Limburg (de)   |
+|     Silver      |    Erith (uk)     |  Limburg (de)   |
+|     Silver      |  Strasbourg (fr)  |  Roubaix (fr)   |
+|     Silver      | Beauharnois (ca)  | Cambridge (ca)  |
+|      Gold       |   Roubaix (fr)    | Strasbourg (fr) |
+|      Gold       |   Limburg (de)    | Strasbourg (fr) |
+|      Gold       |   Limburg (de)    |  Roubaix (fr)   |
+|      Gold       |    Erith (uk)     |  Limburg (de)   |
+|      Gold       |  Strasbourg (fr)  |  Roubaix (fr)   |
+|      Gold       | Beauharnois (ca)  | Cambridge (ca)  |
 
 - **Données incluses dans les sauvegardes :**
 
