@@ -1,7 +1,7 @@
 --- 
 title: "Konfiguracja konta e-mail Zimbra w programie pocztowym"
 excerpt: "Dowiedz się, jak skonfigurować program pocztowy, aby sprawdzać e-maile dotyczące Twojego konta Zimbra"
-Updated: 2024-10-10
+updated: 2024-10-10
 --- 
 
 <style>

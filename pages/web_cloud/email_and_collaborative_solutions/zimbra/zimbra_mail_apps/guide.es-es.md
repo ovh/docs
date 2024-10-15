@@ -1,5 +1,5 @@
 ---
-Title: "Configurar una dirección de correo electrónico de Zimbra en un cliente de correo"
+title: "Configurar una dirección de correo electrónico de Zimbra en un cliente de correo"
 excerpt: "Cómo configurar su cliente de correo para consultar el correo de su cuenta de Zimbra"
 updated: 2024-10-10
 ---
