@@ -1,7 +1,7 @@
 ---
 title: OVHcloud API and OS Installation
 excerpt: Use OVHcloud API to install or re-install an OS on your dedicated server
-updated: 2024-08-13
+updated: 2024-10-16
 ---
 
 ## Objective
@@ -389,6 +389,23 @@ You can also monitor the progress of the installation process with the following
 > [!api]
 >
 > @api {v1} /dedicated/server GET  /dedicated/server/{serviceName}/install/status
+>
+
+### Manage efi bootloader path <a name="manage-efi"></a>
+
+A default efi bootloader path is set when installing from OVH templates but you have the possibility to manage it : 
+You can retrieve it with the following API call : 
+
+> [!api]
+>
+> @api {v1} /dedicated/server GET  /dedicated/server/{serviceName}
+>
+
+and you can set it in the payload of the following API call : 
+
+> [!api]
+>
+> @api {v1} /dedicated/server PUT  /dedicated/server/{serviceName}
 >
 
 ## Go further

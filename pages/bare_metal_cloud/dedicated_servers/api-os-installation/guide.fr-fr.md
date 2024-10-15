@@ -1,7 +1,7 @@
 ---
 title: "API OVHcloud et installation d'un OS"
 excerpt: "Découvrez comment l'API OVHcloud vous permet d'installer ou de réinstaller un OS sur votre serveur"
-updated: 2024-08-13
+updated: 2024-10-16
 ---
 
 ## Objectif
@@ -384,6 +384,23 @@ Sinon vous pouvez aussi avoir un état détaillé de chaque étape de l'installa
 > [!api]
 >
 > @api {v1} /dedicated/server GET  /dedicated/server/{serviceName}/install/status
+>
+
+### Changer le chemin du bootloader efi <a name="manage-efi"></a>
+
+Une valeur de bootloader efi est mise par défaut lorsque vous installez à partir d'un template OVH, mais vous avez la possibilité de la modifier : 
+Vous pouvez récupérer le chemin par défaut à l'aide de cet appel : 
+
+> [!api]
+>
+> @api {v1} /dedicated/server GET  /dedicated/server/{serviceName}
+>
+
+et vous pouvez le modifier grace à l'appel suivant :
+
+> [!api]
+>
+> @api {v1} /dedicated/server PUT  /dedicated/server/{serviceName}
 >
 
 ## Aller plus loin
