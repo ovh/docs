@@ -6,19 +6,19 @@ updated: 2024-10-04
 
 ## Objective
 
-**The purpose is to manipulate data in a folder in your vSphere database.**
+**Find out how to manipulate data in a folder in your vSphere database.**
 
 ## Requirements
 
-- You must be logged in to the [OVHcloud Control Panel](/links/manager).
-- Be a technical administrator of the infrastructure [VMware on OVHcloud](/links/hosted-private-cloud/VMware).
-- If you use IAM, make sure you have the rights, roles, and actions to upload files or create directories in the datastore. For more information, please refer to our guide on [IAM for VMware on OVHcloud - Overview and FAQ](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_getting_started).
+- Access to the [OVHcloud Control Panel](/links/manager).
+- You must be the technical administrator of the [VMware on OVHcloud infrastructure](/links/hosted-private-cloud/vmware).
+- If you are using IAM, ensure that you have the rights, roles, and actions to upload files or create directories in the Datastore. For more information, please refer to our guide: [IAM for VMware on OVHcloud - Overview and FAQ](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_getting_started).
 
-## In practice
+## Instructions
 
 > [!primary]
 >
-> This guide replaces the SFTP method, which has become obsolete: [Log in as SFTP](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/sftp_connection).
+> This guide replaces the SFTP method, which is now deprecated: [Logging in via SFTP](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/sftp_connection).
 >
 
 ### Step 1 - Upload with HTML client
