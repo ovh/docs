@@ -113,6 +113,6 @@ Per l’invio delle email, se hai necessità di inserire manualmente le impostaz
 
 Per prestazioni specializzate (referenziazione, sviluppo, etc.), contatta i [partner OVHcloud](/links/partner).
 
-Per usufruire di un'assistenza per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [offerte di supporto](/link/supporto).
+Per usufruire di un'assistenza per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [offerte di supporto](/links/support).
 
 Contatta la nostra [Community di utenti](/links/community).

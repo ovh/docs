@@ -26,7 +26,7 @@ Zimbra oferece as mesmas funcionalidades e uma ergonomia semelhante ao OWA. Um g
 
 ### Como posso configurar o meu endereço de e-mail num software de e-mail?
 
-Consulte a nossa página « [Configurar o seu endereço de e-mail Zimbra num programa de correio eletrónico](/pages/web_cloud/email_and_collaborative_solutions/zimbra/mail_apps) ».
+Consulte a nossa página « [Configurar o seu endereço de e-mail Zimbra num programa de correio eletrónico](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_mail_apps) ».
 
 ### A migração oferece novas funcionalidades?
 
