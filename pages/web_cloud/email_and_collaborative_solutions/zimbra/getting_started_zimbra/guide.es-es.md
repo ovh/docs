@@ -87,7 +87,7 @@ Para retirar el filtro, simplemente haga clic en la cruz del filtro.
 
 > [!warning]
 >
-> Para un funcionamiento óptimo cuando utilice el mismo nombre de dominio entre los productos OVHcloud [Exchange](/links/web/emails-hosted-exchange), [E-mail Pro](/links/web/email-pro) y Zimbra, es necesario configurar el dominio en « no autoritativo ». Para más información sobre cómo configurar un dominio sin autorización en una plataforma Exchange o Email Pro, consulte nuestra guía [Añadir un dominio a una plataforma de correo](/pages/web_cloud/email_and_colaborative_solutions/microsoft_exchange/exchange_adding_domain).
+> Para un funcionamiento óptimo cuando utilice el mismo nombre de dominio entre los productos OVHcloud [Exchange](/links/web/emails-hosted-exchange), [E-mail Pro](/links/web/email-pro) y Zimbra, es necesario configurar el dominio en "no autoritativo". Para más información sobre cómo configurar un dominio sin autorización en una plataforma Exchange o Email Pro, consulte nuestra guía [Añadir un dominio a una plataforma de correo](/pages/web_cloud/email_and_colaborative_solutions/microsoft_exchange/exchange_adding_domain).
 
 En esta pestaña podrá consultar todos los dominios añadidos al servicio Zimbra. Es necesario gestionarlos desde el área de cliente de OVHcloud para poder añadirlos.
 
@@ -144,7 +144,7 @@ Complete la información que se muestra.
 >
 > La elección de la contraseña debe respetar las siguientes condiciones :
 >
->: mínimo 10 caracteres
+> - mínimo 10 caracteres
 > - Máximo 64 caracteres
 > - Mínimo 1 mayúscula
 > - Mínimo 1 carácter especial
@@ -158,8 +158,8 @@ Haga clic en `Confirmar`{.action} para crear la cuenta.
 
 Para consultar su cuenta de correo:
 
-- Conéctese al [webmail](/links/web/email) desde un navegador de internet e introduzca su dirección de correo y contraseña. Para más información, consulte nuestra página «[Utilizar el webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra) ».
-- Configure un programa de mensajería en su ordenador, smartphone o tablet. Consulte nuestra página «[Configurar una dirección de correo electrónico de Zimbra en un cliente de correo](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_mail_apps) ».
+- Conéctese al [webmail](/links/web/email) desde un navegador de internet e introduzca su dirección de correo y contraseña. Para más información, consulte nuestra página "[Utilizar el webmail Zimbra](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)".
+- Configure un programa de mensajería en su ordenador, smartphone o tablet. Consulte nuestra página "[Configurar una dirección de correo electrónico de Zimbra en un cliente de correo](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_mail_apps)".
 
 ## Más información <a name="go-further"></a>
 

@@ -51,7 +51,7 @@ Before you start configuring your Zimbra email accounts, take note of the three 
 
 > [!primary]
 >
-> *Organization* is used to represent an entity (a company, association, personal project, etc.). It enables email accounts to be partitioned, specific security policies to be applied (future feature) and rights to be delegated to an organization (future feature). By using organizations, you can make it easier to browse and manage your Zimbra platform.
+> An *Organization* is used to represent an entity (a company, association, personal project, etc.). It enables email accounts to be partitioned, specific security policies to be applied (future feature) and rights to be delegated to an organization (future feature). By using organizations, you can make it easier to browse and manage your Zimbra platform.
 
 The diagram below summarizes the hierarchical link between the above-mentioned elements.
 
@@ -154,8 +154,8 @@ Click `Confirm`{.action} to start creating the account.
 
 To view your email account:
 
-- Log in to [webmail](/links/web/email) from a web browser and enter your email address and password. For further details, please refer to our page “[Using Zimbra webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)”.
-- Configure an email software on your computer, smartphone or tablet. Visit our page “[Configuring your Zimbra email address in an email client](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_mail_apps)”.
+- Log in to [webmail](/links/web/email) from a web browser and enter your email address and password. For further details, please refer to our page "[Using Zimbra webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra)".
+- Configure an email software on your computer, smartphone or tablet. Visit our page "[Configuring your Zimbra email address in an email client](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_mail_apps)".
 
 ## Go further <a name="go-further"></a>
 

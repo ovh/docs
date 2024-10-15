@@ -51,7 +51,7 @@ Before you start configuring your Zimbra email accounts, take note of the three 
 
 > [!primary]
 >
-> *Organization* is used to represent an entity (a company, association, personal project, etc.). It enables email accounts to be partitioned, specific security policies to be applied (future feature) and rights to be delegated to an organization (future feature). By using organizations, you can make it easier to browse and manage your Zimbra platform.
+> An *Organization* is used to represent an entity (a company, association, personal project, etc.). It enables email accounts to be partitioned, specific security policies to be applied (future feature) and rights to be delegated to an organization (future feature). By using organizations, you can make it easier to browse and manage your Zimbra platform.
 
 The diagram below summarizes the hierarchical link between the above-mentioned elements.
 
