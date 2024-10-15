@@ -43,7 +43,7 @@ Vous avez encore accès à vos e-mails et à l’interface de connexion ? Cette 
 >>
 > Drupal
 >>
->> Pour modifier votre mot de passe administrateur Drupal via l'option « Mot de passe oublié », suivez les étapes suivantes :
+>> Pour modifier votre mot de passe administrateur Drupal via l'option « Mot de passe oublié », suivez ces étapes :
 >>
 >> - Accédez à l'interface de connexion administrateur.
 >> - Cliquez sur le lien « Demander un nouveau mot de passe ».
