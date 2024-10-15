@@ -157,7 +157,7 @@ Vérifiez également les point suivants :
 
 Si besoin et pour vous en assurer, consultez nos guides « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) » et « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
 
-Dès lors où tous ces prérequis sont respectés, vous pourvez commencer la finalisation de l'installation de votre certificat SSL personnalisé sur votre hébergement web.
+Dès lors où tous ces prérequis sont respectés, vous pouvez commencer la finalisation de l'installation de votre certificat SSL personnalisé sur votre hébergement web.
 
 Pour cela, effectuez les actions suivantes :
 
