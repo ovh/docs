@@ -87,7 +87,7 @@ Per rimuovere il filtro, fare semplicemente clic sulla croce del filtro.
 
 > [!warning]
 >
-> Per un funzionamento ottimale quando utilizzi lo stesso dominio tra le soluzioni OVHcloud [Exchange](/links/web/email-hosted-exchange), [Email Pro](/links/web/email-pro) e Zimbra, è necessario configurare il dominio in `non-autoritativa`. Per sapere come configurare un dominio in modalità non autoritativa su una piattaforma Exchange o Email Pro, consulta la nostra guida [Aggiungere un dominio su una piattaforma e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
+> Per un funzionamento ottimale quando utilizzi lo stesso dominio tra le soluzioni OVHcloud [Exchange](/links/web/emails-hosted-exchange), [Email Pro](/links/web/email-pro) e Zimbra, è necessario configurare il dominio in `non-autoritativa`. Per sapere come configurare un dominio in modalità non autoritativa su una piattaforma Exchange o Email Pro, consulta la nostra guida [Aggiungere un dominio su una piattaforma e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 
 In questa scheda vengono mostrati tutti i domini aggiunti al servizio Zimbra. Per poterli aggiungere, è necessario gestirli dallo Spazio Cliente OVHcloud.
 
