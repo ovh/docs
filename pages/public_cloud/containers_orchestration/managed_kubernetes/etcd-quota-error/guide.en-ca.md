@@ -1,7 +1,7 @@
 ---
 title: ETCD Quotas, usage, troubleshooting and error
 excerpt: 'Find out how to view ETCD quotas, usage and fix errors'
-updated: 2024-04-12
+updated: 2024-10-15
 ---
 
 ## Objective
