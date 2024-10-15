@@ -153,7 +153,7 @@ Si vous démarrez directement la lecture de ce guide à cette étape car vous di
 Vérifiez également les point suivants :
 
 - La case `SSL` ne doit pas être cochée lors de l'ajout en multisite d'un nom de domaine/sous-domaine concerné par votre certificat SSL externe.
-- Le statut `A générer` ou `Actif` ne doit pas déjà être présent pour chacun des noms de domaine/sous-domaines concernés par votre certificat SSL externe.
+- Le statut `À générer` ou `Activé` ne doit pas déjà être présent pour chacun des noms de domaine/sous-domaines concernés par votre certificat SSL externe.
 
 Si besoin et pour vous en assurer, consultez nos guides « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) » et « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
 
