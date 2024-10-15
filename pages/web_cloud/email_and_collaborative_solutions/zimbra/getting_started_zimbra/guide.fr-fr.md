@@ -53,7 +53,7 @@ Avant de débuter la configuration de vos comptes e-mail Zimbra, prenez connaiss
 
 > [!primary]
 >
-> L'*organisation* sert à représenter une entité (une entreprise, une association, un projet personnel, etc.). Elle permet le cloisonnement des comptes e-mail, l'application de politiques de sécurité spécifiques (fonctionnalité à venir) et de déléguer les droits à une organisation (fonctionnalité à venir). L'utilisation d'organisations permet de faciliter la navigation dans votre plateforme Zimbra ainsi que sa gestion.
+> L'*organisation* sert à représenter une entité (une entreprise, une association, un projet personnel, etc.). Elle permet le cloisonnement des comptes e-mail, l'application de politiques de sécurité spécifiques (fonctionnalité à venir) et de déléguer les droits des comptes e-mail qui la compose (fonctionnalité à venir). L'utilisation d'organisations permet de faciliter la navigation dans votre plateforme Zimbra ainsi que sa gestion.
 
 Le schéma ci-dessous résume le lien hiérarchique entre les éléments précédemment cités.
 
@@ -73,10 +73,10 @@ Pour créer une organisation, cliquez sur `Ajouter une organisation`{.action}. D
 
 #### Filtrer par organisation
 
-Une fois vos organisations créées, assurez-vous que les noms de domaine déclarés sur votre service Zimbra sont associés à une organisation.
+Depuis les onglets `Organisation`{.action}, `Domaine`{.action} et `Comptes e-mail`{.action}, en cliquant sur le label d'une organisation, vous créez un filtre qui affichera uniquement les éléments liés à cette organisation.
 
-Depuis les onglets `Organisation`{.action}, `Domaine`{.action} et `Comptes e-mail`{.action}, en cliquant sur le label d'une organisation, vous créez un filtre qui affichera uniquement les éléments liés à cette organisation.<br>
-Vous pouvez constater que le filtre est appliqué lorsque le label s'affiche à côté du nom de votre service Zimbra.<br>
+Vous pouvez constater que le filtre est appliqué lorsque le label s'affiche à côté du nom de votre service Zimbra.
+
 Pour retirer le filtre, cliquez simplement sur la croix du filtre.
 
 ![zimbra](images/zimbra_organization_filter.png){.thumbnail .w-400}
@@ -100,7 +100,7 @@ Le tableau des noms de domaine vous donne deux informations :
 
 Pour ajouter un nom de domaine à votre service Zimbra, cliquez sur l'onglet `Domaine`{.action} puis cliquez sur `Ajouter un domaine`{.action}.
 
-Si vous avez créé des organisations, sélectionnez l'une d'elles dans le menu déroulant, puis sélectionnez un nom de domaine dans la liste (il est nécessaire que les noms de domaines soient gérés dans votre espace client OVHcloud). Cliquez ensuite sur `Confirmer`{.action} pour finaliser l'ajout du nom de domaine.
+Sélectionnez une organisation dans le menu déroulant, puis sélectionnez un nom de domaine dans la liste (il est nécessaire que les noms de domaines soient gérés dans votre espace client OVHcloud). Cliquez ensuite sur `Confirmer`{.action} pour finaliser l'ajout du nom de domaine.
 
 ![zimbra](images/zimbra_domain_add.png){.thumbnail .w-400 .h400}
 

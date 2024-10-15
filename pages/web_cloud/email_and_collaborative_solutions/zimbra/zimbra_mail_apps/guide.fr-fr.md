@@ -75,7 +75,7 @@ Pour la réception des e-mails, lors du choix du type de compte, nous vous conse
 |Nom d'utilisateur|Renseignez l'adresse e-mail **complète**|
 |Mot de passe|Renseignez le mot de passe de l'adresse e-mail|
 |Serveur **EUROPE** (entrant)|pop.mail.ovh.net **ou** ssl0.ovh.net|
-|Serveur **AMERIQUE / ASIE-PACIFIQUE** (entrant)|pop.mail.ovh.ca **ou** ssl0.ovh.ca|
+|Serveur **AMERIQUE / ASIE-PACIFIQUE** (entrant)|pop.mail.ovh.ca|
 |Port|995|
 |Type de sécurité|SSL/TLS|
 
@@ -86,7 +86,7 @@ Pour la réception des e-mails, lors du choix du type de compte, nous vous conse
 |Nom d'utilisateur|Renseignez l'adresse e-mail **complète**|
 |Mot de passe|Renseignez le mot de passe de l'adresse e-mail|
 |Serveur **EUROPE** (entrant)|imap.mail.ovh.net **ou** ssl0.ovh.net|
-|Serveur **AMERIQUE / ASIE-PACIFIQUE** (entrant)|imap.mail.ovh.ca **ou** ssl0.ovh.ca|
+|Serveur **AMERIQUE / ASIE-PACIFIQUE** (entrant)|imap.mail.ovh.ca|
 |Port|993|
 |Type de sécurité|SSL/TLS|
 
@@ -99,7 +99,7 @@ Pour l'envoi des e-mails, si vous devez renseigner manuellement les paramètres 
 |Nom d'utilisateur|Renseignez l'adresse e-mail **complète**|
 |Mot de passe|Renseignez le mot de passe de l'adresse e-mail|
 |Serveur **EUROPE** (entrant)|smtp.mail.ovh.net **ou** ssl0.ovh.net|
-|Serveur **CANADA + ASIE** (entrant)|smtp.mail.ovh.ca **ou** ssl0.ovh.ca|
+|Serveur **AMERIQUE / ASIE-PACIFIQUE** (entrant)|smtp.mail.ovh.ca|
 |Port|465|
 |Type de sécurité|SSL/TLS|
 

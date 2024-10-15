@@ -1,7 +1,7 @@
 ---
 title: Domande frequenti sulla soluzione Zimbra OVHcloud
 excerpt: "Ritrova le domande relative alla migrazione a Zimbra per il servizio MX Plan di OVHcloud"
-updated: 2024-05-31
+updated: 2024-10-10
 ---
 
 > [!primary]
@@ -23,6 +23,10 @@ Zimbra propone numerose funzionalità che saranno disponibili prossimamente nei 
 ### Quali sono le differenze tra le Webmail Outlook Web App (OWA) e Zimbra?
 
 Zimbra offre le stesse funzionalità e un'ergonomia simile a OWA. Una guida all’utilizzo di Zimbra è già disponibile a [questo indirizzo](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_zimbra).
+
+### Come configurare un indirizzo email su un client di posta?
+
+Consulta la nostra pagina "[Configurare un indirizzo email Zimbra su un client di posta](/pages/web_cloud/email_and_collaborative_solutions/zimbra/zimbra_mail_apps)".
 
 ### La migrazione apre nuove funzionalità?
 
