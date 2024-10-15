@@ -12,11 +12,11 @@ Have you lost access to your WordPress, PrestaShop, Joomla! or Drupal administra
 
 ## Requirements
 
-- Have a [web hosting plan](/links/web/hosting) that allows you to install a 1-click module.
-- A 1-click module on your web hosting plan (if you have not already done this, follow the instructions in this [guide](/pages/web_cloud/web_hosting/cms_install_1_click_modules)).
-- You must be logged in to your [OVHcloud Control Panel](/links/manager) (only for the part linked to phpMyAdmin).
+- A [web hosting plan](/links/web/hosting) that allows you to install a 1-click module.
+- A 1-click module on your web hosting plan (if you have not done this already, follow the instructions from this [guide](/pages/web_cloud/web_hosting/cms_install_1_click_modules)).
+- Accesss to the [OVHcloud Control Panel](/links/manager) (only for the phpMyAdmin part of this guide).
 
-## In practice
+## Instructions
 
 There are several ways of changing the admin password for your CMS, depending on your situation:
 
@@ -31,24 +31,24 @@ Do you still have access to your emails and the login interface? This method is 
 > [!tabs]
 > WordPress
 >>
->> To change your WordPress admin password via the “Forgotten your password” option, follow the steps in the “[Through the automatic emailer](https://wordpress.org/documentation/article/reset-your-password/#through-the-automatic-emailer)” section of the official WordPress documentation.
+>> To change your WordPress admin password via the "Forgotten your password" option, follow the steps from the "[Through the automatic emailer](https://wordpress.org/documentation/article/reset-your-password/#through-the-automatic-emailer)" section of the official WordPress documentation.
 >>
 > PrestaShop
 >>
->> Access your website’s PrestaShop login interface (e.g. `https://your-domain.com/admin/`), then click “Forgotten your password” to receive an email prompting you to reset your password.
+>> Access your website’s PrestaShop login interface (e.g. `https://your-domain.com/admin/`), then click "Forgotten your password" to receive an email prompting you to reset your password.
 >>
 > Joomla!
 >>
->> To change your Joomla! admin password via the “Forgotten your password” option, follow the steps in the “[Frontend](https://docs.joomla.org/Resetting_a_user_password/en)” section of the official Joomla! documentation.
+>> To change your Joomla! admin password via the "Forgotten your password" option, follow the steps from the "[Frontend](https://docs.joomla.org/Resetting_a_user_password/en)" section of the official Joomla! documentation.
 >>
 > Drupal
 >>
->> To change your Drupal admin password via the “Forgotten your password” option, follow these steps:
+>> To change your Drupal admin password via the "Forgotten your password" option, follow these steps:
 >>
 >> - Access the admin login interface.
->> - Click on the “Request a new password” link.
+>> - Click on the "Request a new password" link.
 >> - In the dialog box that appears, enter either the username or the email address associated with the administrator account.
->> - Click “Send new password” or “Email new password”.
+>> - Click "Send new password" or "Email new password".
 >> - Open the email you have received and click on the link provided.
 >> - Enter your new password and confirm.
 >> - Go back to the Drupal login page and log in with the new password you have just set.
@@ -59,15 +59,15 @@ Do you have access to the CMS administration interface and know your current pas
 
 > [!tabs]
 > WordPress
->> To change your WordPress admin password via the CMS management interface, follow the steps in the “[To Change Your Password](https://wordpress.org/documentation/article/reset-your-password/#to-change-your-password)” section of the official WordPress documentation.
+>> To change your WordPress admin password via the CMS management interface, follow the steps from the "[To Change Your Password](https://wordpress.org/documentation/article/reset-your-password/#to-change-your-password)" section of the official WordPress documentation.
 >>
 > PrestaShop
 >>
->> The PrestaShop official documentation does not explain how to change the administrator password via the login interface. Please refer to [PrestaShop official documentation](https://help-center.prestashop.com/hc/en-us/articles/10799006732818-Recover-your-admin-password) to find another way to update your password.
+>> The PrestaShop official documentation doesn't explain how to change the administrator password via the login interface. Please refer to [PrestaShop official documentation](https://help-center.prestashop.com/hc/en-us/articles/10799006732818-Recover-your-admin-password) to find another way to update your password.
 >>
 > Joomla!
 >>
->> To change your Joomla! admin password via the admin interface, follow the steps in the “[Backend](https://docs.joomla.org/Resetting_a_user_password/en)” section of the official Joomla! documentation.
+>> To change your Joomla! admin password via the admin interface, follow the steps from the "[Backend](https://docs.joomla.org/Resetting_a_user_password/en)" section of the official Joomla! documentation.
 >>
 > Drupal
 >>
@@ -75,7 +75,7 @@ Do you have access to the CMS administration interface and know your current pas
 
 ### Change your admin password via phpMyAdmin in the OVHcloud Control Panel <a name="via-phpmyadmin"></a>
 
-Do you no longer have access to the CMS administration interface, or can't use the “Forgotten your password” feature because the associated email address can't be accessed? Use phpMyAdmin from your [OVHcloud Control Panel](/links/manager) to reset the password directly from the database.
+Do you no longer have access to the CMS administration interface, or can't use the "Forgotten your password" feature because the associated email address can't be accessed? Use phpMyAdmin from your [OVHcloud Control Panel](/links/manager) to reset the password directly from the database.
 
 Log in to your [OVHcloud Control Panel](/links/manager) then select `Web Cloud`{.action}. Click `Hosting`{.action} and select the solution concerned. In the `Databases`{.action} tab, identify the database used by your CMS, click the `...`{.action} button, then `Go to phpMyAdmin`{.action}.
 
@@ -84,15 +84,15 @@ Enter the database credentials (username and password) that you defined when you
 > [!tabs]
 > WordPress
 >>
->> Follow the steps in the “[Through phpMyAdmin](https://wordpress.org/documentation/article/reset-your-password/#through-phpmyadmin)” section of the official WordPress documentation.
+>> Follow the steps from the "[Through phpMyAdmin](https://wordpress.org/documentation/article/reset-your-password/#through-phpmyadmin)" section of the official WordPress documentation.
 >>
 > PrestaShop
 >>
->> Follow the steps in the “[You do not have access to your e-mail address](https://help-center.prestashop.com/hc/en-us/articles/10799006732818-Recover-your-admin-password)” section of the PrestaShop official documentation.
+>> Follow the steps from the "[You do not have access to your e-mail address](https://help-center.prestashop.com/hc/en-us/articles/10799006732818-Recover-your-admin-password)" section of the PrestaShop official documentation.
 >>
 > Joomla!
 >>
->> Follow the steps in the “[Resetting in phpMyAdmin](https://docs.joomla.org/Resetting_a_user_password/en)” section of the official Joomla! documentation.
+>> Follow the steps from the "[Resetting in phpMyAdmin](https://docs.joomla.org/Resetting_a_user_password/en)" section of the official Joomla! documentation.
 >>
 > Drupal
 >>
