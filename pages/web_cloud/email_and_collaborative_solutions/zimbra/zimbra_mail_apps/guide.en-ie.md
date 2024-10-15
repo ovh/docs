@@ -1,5 +1,5 @@
 ---
-title: "Configuring a Zimbra email address on an email client"
+title: "How to configure a Zimbra email address on an email client"
 excerpt: "Find out how to configure your email software to view emails from your Zimbra account"
 updated: 2024-10-10
 ---
@@ -21,20 +21,20 @@ max-width:400px!important;
 
 ## Objective
 
-With the Zimbra solution, OVHcloud offers an open-source collaborative messaging platform, with all the features you need for professional use. On this page, you can find the information you need to configure your Zimbra email accounts on your favorite email client.
+With the Zimbra solution, OVHcloud offers an open-source collaborative messaging platform, with all the features you need for professional use. On this page, you can find the information you need to configure your Zimbra email accounts on your preferred email client.
 
-**Find out how to configure your email software to check emails from your Zimbra account**
+**Find out how to configure your email software to manage emails from your Zimbra account.**
 
 ## Requirements
 
-- You need to have signed up to an email account on our Zimbra OVHcloud email solution.
-- You need to have installed an email client on the device of your choice.
+- An email account on our Zimbra OVHcloud email solution
+- An email client installed on the device of your choice
 
-## In practice
+## Instructions
 
 ### Configuring your email account <a name="mail-config"></a>
 
-Your Zimbra email account configuration uses the same settings as the MX Plan solution, which is included with OVHcloud Web Hosting plans or as a standalone solution. For this reason, the configuration links below have an “MX Plan” in their title.
+Your Zimbra email account configuration uses the same settings as the MX Plan email solution, which is included with OVHcloud Web Hosting plans as well. For this reason, the documentation pages linked below refer to "MX Plan".
 
 Click the tab for the type of device you are using:
 
@@ -64,27 +64,27 @@ Click the tab for the type of device you are using:
 >> - [Gmail online interface](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_gmail)
 >>
 
-### Reminder of POP, IMAP and SMTP settings <a name="popimap-settings"></a>
+### POP, IMAP and SMTP settings <a name="popimap-settings"></a>
 
-When you choose your account type, we recommend using **IMAP** to receive emails. However, you can select **POP**.
+When you choose your account type, we recommend using **IMAP** to receive emails. However, you can decide to use **POP**.
 
-- **For POP configuration**
+- **POP configuration**
 
 |Information|Description|
 |---|---|
-|Username|Enter the full email address **full**|
-|Password|Enter the password for the email address|
+|Username|Enter the **full** email address. |
+|Password|Enter the password for the email account|
 |Server **EUROPE** (incoming)|pop.mail.ovh.net **ou** ssl0.ovh.net|
 |Server **AMERICA / ASIA-PACIFIC** (incoming)|pop.mail.ovh.ca|
 |Port|995|
 |Security type|SSL/TLS|
 
-- **For IMAP configuration**
+- **IMAP configuration**
 
 |Information|Description|
 |---|---|
-|Username|Enter the full email address **full**|
-|Password|Enter the password for the email address|
+|Username|Enter the **full** email address. |
+|Password|Enter the password for the email account|
 |Server **EUROPE** (incoming)|imap.mail.ovh.net **ou** ssl0.ovh.net|
 |Server **AMERICA / ASIA-PACIFIC** (incoming)|imap.mail.ovh.ca|
 |Port|993|
@@ -96,8 +96,8 @@ For sending emails, if you need to enter the **SMTP** settings manually in your 
 
 |Information|Description|
 |---|---|
-|Username|Enter the full email address **full**|
-|Password|Enter the password for the email address|
+|Username|Enter the **full** email address. |
+|Password|Enter the password for the email account|
 |Server **EUROPE** (incoming)|smtp.mail.ovh.net **ou** ssl0.ovh.net|
 |Server **AMERICA / ASIA-PACIFIC** (incoming)|smtp.mail.ovh.ca|
 |Port|465|
