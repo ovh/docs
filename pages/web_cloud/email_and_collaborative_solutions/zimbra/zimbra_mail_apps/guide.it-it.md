@@ -1,8 +1,8 @@
---- 
+---
 title: "Configurare un indirizzo email Zimbra su un client di posta"
 excerpt: "Scopri come configurare il tuo client di posta per consultare le email del tuo account Zimbra"
 updated: 2024-10-10
---- 
+---
 
 <style>
 .w-400 {
