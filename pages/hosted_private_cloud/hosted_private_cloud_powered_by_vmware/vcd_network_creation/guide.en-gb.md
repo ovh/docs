@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - Creating network components from the VCD control panel"
 excerpt: "Find out how to easily create network components within the VCD on OVHcloud control panel"
-updated: 2024-09-17
+updated: 2024-10-08
 ---
 
 <style>
@@ -234,6 +234,11 @@ Finally, (step 5: Create an Edge Gateway) click on `FINISH`{.action}.
 ### Step 4 - Create a private network
 
 /// details | How do I create a network with VMware Cloud Director on OVHcloud?
+
+> [!warning]
+>
+> You can refer to the following guide to find out about network limitations within VCD: [VMware Cloud Director - Network concepts and best practices](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts).
+>
 
 We will now create a new network and attach our preconfigured settings.
 
