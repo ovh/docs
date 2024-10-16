@@ -1,27 +1,27 @@
 ---
-title: Activating and using Veeam Managed Backup
-excerpt: Find out how to enable and use the Veeam Managed Backup option to secure your VMs
-updated: 2021-12-07
+title: "Activating and using Veeam Managed Backup"
+excerpt: "Find out how to enable and use the Veeam Managed Backup option to secure your VMs within an Hosted Private Cloud VMware on OVHcloud univers"
+updated: 2024-10-15
 ---
 
 ## Objective
 
-Protecting and backing up your VMs is an essential part of ensuring long-term stability for your infrastructure. This is why we offer a managed backup solution based on Veeam Backup & Replication technology. You can use it to restore your data simply, by enabling automatic backup for your VMs.
-
-Backups are performed using a virtual machine (VM) within your [Hosted Private Cloud](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/veeam-backup-managed/) infrastructure. The backup data is outsourced to an independent storage space at OVHcloud. Backups are performed during night-time, with a retention time depending on the solution level you choose.
-
-**This guide explains how to deploy and use the Veeam Managed Backup option.**
+**The purpose of this guide is to explain how to deploy and use the Veeam Managed Backup option in just a few minutes.**
 
 ## Requirements
 
-- a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- a [Hosted Private Cloud infrastructure](/links/hosted-private-cloud/hosted-private-cloud)
+- give the [resources right](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/change_users_rights) for the concerned datacenter to the user from the [OVHcloud Control Panel](/links/manager).
 - a user account with access to vSphere and the permission ["Add resources"](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/change_users_rights) for the pertinent data centre
 - [vSphere High Availability (HA)](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_ha_high_availability) enabled
 - [Distributed Resource Scheduler (DRS)](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_drs_distributed_ressource_scheduler_new) enabled
 - Windows SPLA Licensing enabled
 
 ## Instructions
+
+Protecting and backing up your VMs is an essential part of ensuring long-term stability for your infrastructure. This is why we offer a managed backup solution based on Veeam Backup & Replication technology. You can use it to restore your data simply, by enabling automatic backup for your VMs.
+
+Backups are performed using a virtual machine (VM) within your [Hosted Private Cloud](/links/hosted-private-cloud/veeam-managed-backup) infrastructure. The backup data is outsourced to an independent storage space at OVHcloud. Backups are performed during night-time, with a retention time depending on the solution level you choose.
 
 ### Activating the backup option
 
@@ -67,6 +67,32 @@ Every day, an email containing the status of all the performed actions is sent t
 >
 > Removing a VM from your inventory or disk **does not disable** the backup job for that machine, regardless of the information in the report.
 >
+> **Warning**: The limit on VMs must be 2 TB in order to enable backup.
+>
+> For the **Advanced** and **Premium** offerings, *Veeam Managed Backup* region-to-region replication follows the diagrams below.
+>
+
+Here is a diagram of the regions from which the regions of `zone 1` are or are not replicated to `zone 2`:
+
+![Veeam Replication Schema](images/veeam_replicated_zones_schema.png){.thumbnail}
+
+Here, you will see a mapping of the replicated zones in this table, with additional information:
+
+|  SecNumCloud   | Zone 1 |       Zone 2        |                        Cross-site<br/>replication                         | Offers               | Comments                                                                                                                                                         |
+|:--------------:|:------:|:-------------------:|:-------------------------------------------------------------------------:|----------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|        ❌        | `BHS`  |        `TOR`        |                                    ✅️                                     | Advanced<br/>Premium | - The Montreal Beauharnois (BHS) and Toronto Cambridge (TOR) regions are well replicated with the Veeam Managed Backup Advanced and Premium solutions.           |
+|        ❌        | `ERI`  |        `RBX`        |                                     ❌                                     | Advanced<br/>Premium | - The regions of London Erith (ERI) and France Roubaix (RBX) are not replicated with the Veeam Managed Backup Advanced and Premium solutions.                    |
+|        ❌        | `LIM`  |        `SBG`        |                                     ❌                                     | Advanced<br/>Premium | - The regions of Germany Limburg (LIM) and France Strasbourg (SBG) are not replicated with the Veeam Managed Backup Advanced and Premium solutions.              |
+|        ❌        | `RBX`  |        `SBG`        |                                    ✅️                                     | Advanced<br/>Premium | - The regions of France Roubaix (RBX) and France Strasbourg (SBG) are well replicated with the Veeam Managed Backup Advanced and Premium solutions.              |
+|                |        |                     |                                                                           |                      |                                                                                                                                                                  |
+|       ✅️       | `RBX`  |        `SBG`        |                                    ✅️                                     | Advanced<br/>Premium | - The regions of France Roubaix (RBX) and France Strasbourg (SBG) are well replicated with the Veeam Managed Backup Advanced and Premium solutions.              |
+|       ✅️       | `GRA`  |        `RBX`        |                                     ❌                                     | Advanced<br/>Premium | - The regions of France Gravelines (RBX) and France Roubaix (RBX) do not replicate with each other with the Veeam Managed Backup Advanced and Premium solutions. |
+|                |        |                     |                                                                           |                      |                                                                                                                                                                  |
+|        ❌        | `VIN`  |        `HIL`        |                                    ✅️                                     | Advanced<br/>Premium | - The US regions of Washington DC Vint Hill (VIN) and Seattle Hillsboro Oregon (HIL) replicate well with the Veeam Managed Backup Advanced and Premium offers.   |
+
+
+
+
 
 ### Restoring a backup
 
@@ -105,7 +131,7 @@ To edit these settings, select the data centre in your inventory, click the tab 
 
 Select the VMware data centre, then the `Configure`{.action} tab and choose `Backup Management`{.action} from the OVHcloud section of the menu.
 
-Select the VM for which you want disable backups from the list.
+Select the VM for which you want to disable backups from the list.
 
 ![Machine Disable](images/restorebackup_01.png){.thumbnail}
 
@@ -127,9 +153,9 @@ Then confirm the deactivation by clicking `OK`{.action}.
 > [!primary]
 >
 > Follow the same instructions to disable the backup of a deleted VM.
-> It is also possible to disable the backup temporarily and reactivate it afterwards.
+> It is also possible to disable the backup temporarily and reactivate it afterward.
 >
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
