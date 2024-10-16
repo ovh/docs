@@ -220,7 +220,23 @@ L'attribut `ReplicationStatus` peut avoir les valeurs suivantes :
 > 
 > Si la réplication d'une ou plusieurs destinations échoue, la valeur de l'attribut devient *FAILED*.
 
-#### Exemples de configuration de réplication
+
+### Réplication entre buckets avec le verrouillage d'objet activé
+Le verrouillage d'objet peut être utilisé avec la réplication S3 pour permettre la copie automatique d'objets verrouillés entre les buckets. Pour les objets répliqués, la configuration du verrouillage d'objet du bucket source sera utilisée dans le bucket de destination. Toutefois, si vous téléversez un objet directement dans le bucket de destination (en dehors du processus de réplication), il utilisera la configuration de verrouillage du bucket de destination.
+
+> [!warning]
+> Pour répliquer des données dans des buckets avec un verrouillage d'objet, vous devez disposer des prérequis suivants:
+> - Le verrouillage d'objet doit être activé sur les buckets source et destination.
+> - vous devez fournir un jeton lorsque vous téléversez votre configuration de réplication sur le bucket source.
+
+Vous pouvez obtenir un jeton en contactant notre équipe de support. Une fois que vous avez obtenu le jeton, via le client en lignes de commande, vous pouvez le définir dans le paramètre "--token" de la commande put-bucket-replication :
+
+```bash
+$AWS s3api put-bucket-replication --replication-configuration "file://path_to_replication_conf_file" --bucket bucket_name --token $TOKEN
+```
+
+
+### Exemples de configuration de réplication
 
 Réplication simple entre 2 buckets :
 
