@@ -1609,6 +1609,7 @@
                 + [Comment activer le mode bridge sur un modem Zyxel](web_cloud/internet/internet_access/comment_activer_bridge_zyxel)
                 + [Comment activer un lien de secours LTE](web_cloud/internet/internet_access/comment_activer_backup_LTE)
                 + [Comment réutiliser le WiFi d'un modem Zyxel avec OverTheBox](web_cloud/internet/internet_access/comment_reutiliser_wifi_zyxel_otb)
+                + [Activer ou désactiver l'envoi d'e-mails depuis le SMTP OVHcloud](web_cloud/internet/internet_access/comment_activer_envoi_mail)
                 + [Gérer et configurer un bloc IP /29](web_cloud/internet/internet_access/comment_commander_et_gerer_un_bloc_ip_29)
                 + [Comment changer le backend ACS du modem](web_cloud/internet/internet_access/comment_changer_backend_acs)
                 + [Connectivity API](web_cloud/internet/internet_access/connectivity-api)
