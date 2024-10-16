@@ -52,7 +52,7 @@ openssl req -nodes -newkey rsa:2048 -sha256 -keyout my_private.key -out your_fil
 
 Substitua os termos `my_private` e `your_file_name` por qualquer nome de ficheiro.
 
-Uma vez iniciada a encomenda, o terminal solicitará cada uma das seguintes informações (para si, para a sua empresa ou para a sua associação). Depois de responder à pergunta, prima a tecla "ENTRADA" {.action} no teclado para apresentar a seguinte pergunta:
+Uma vez iniciada a encomenda, o terminal solicitará cada uma das seguintes informações (para si, para a sua empresa ou para a sua associação). Depois de responder à pergunta, prima a tecla `ENTRAE`{.action} no teclado para apresentar a seguinte pergunta:
 
 - `Country Name (2 letter code) [AU]`: introduza em maiúsculas o **Country Code** do seu país. Se necessário, encontre a lista de todos os **Country Codes** [aqui](https://www.iban.com/country-codes){.external}.
 - `State or Province Name (full name) [Some-State]` : introduza em maiúsculas o nome da sua região (ou do seu Estado se estiver, por exemplo, nos EUA).
@@ -62,7 +62,7 @@ Uma vez iniciada a encomenda, o terminal solicitará cada uma das seguintes info
 - `Common Name (e.g. server FQDN or YOUR name) []`: introduza o nome do domínio (exemplo: `domain.tld`) ou o subdomínio (exemplo: `sub.domain.tld`) para o qual deseja obter um certificado SSL. **Apenas um** nome de domínio ou subdomínio pode ser indicado aqui. Em função do fornecedor SSL, deverá indicar apenas o seu nome de domínio (exemplo: `domain.tld`) ou o seu subdomínio em "www" (exemplo: `www.domain.tld`). Informe-se previamente sobre este assumpto junto do seu fornecedor SSL.
 - `Email Address []`: introduza o seu endereço de e-mail.
 
-As perguntas seguintes são opcionais e destinam-se principalmente a utilizadores experientes. Em caso de dúvida, recomendamos-lhe vivamente que as passe pressionando a tecla "ENTRADA" {.action} no teclado até que o terminal deixe de fazer perguntas.
+As perguntas seguintes são opcionais e destinam-se principalmente a utilizadores experientes. Em caso de dúvida, recomendamos-lhe vivamente que as passe pressionando a tecla `ENTRAE`{.action} no teclado até que o terminal deixe de fazer perguntas.
 
 - `A challenge password []`: Para utilizadores experientes, introduza uma palavra-passe secreta que será utilizada entre o utilizador e o fornecedor do certificado SSL. Tenha em conta que, do lado da OVHcloud, a CSR e a chave privada não devem ser protegidas por palavra-passe para serem adicionadas a um alojamento partilhado OVHcloud.
 - `An optional company name []`: para utilizadores experientes, pode introduzir um nome diferente para a sua organização, empresa ou associação.
@@ -87,7 +87,7 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXX
 ------END PRIVATE KEY------
 ```
 
-Abra um programa de processamento de texto (bloco de notas, LibreOffice, etc.) e, em seguida, "copie/cole" {.action} a chave privada completa, incluindo os termos `-----BEGIN PRIVATE KEY-----` e `-----END PRIVATE KEY-----`.
+Abra um programa de processamento de texto (bloco de notas, LibreOffice, etc.) e, em seguida, `copie/cole`{.action} a chave privada completa, incluindo os termos `-----BEGIN PRIVATE KEY-----` e `-----END PRIVATE KEY-----`.
 
 Guarde este ficheiro. Guarde-o preciosamente para a continuação deste manual, caso o seu fornecedor SSL o solicite na sua próxima encomenda.
 
@@ -111,7 +111,7 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ------END CERTIFICATE REQUEST------
 ```
 
-Abra um programa de processamento de texto e, em seguida, "copie/cole" {.action} a totalidade da CSR, incluindo os termos `-----BEGIN CERTIFICATE REQUEST-----` e `-----END CERTIFICATE REQUEST-----`.
+Abra um programa de processamento de texto e, em seguida, `copie/cole`{.action} a totalidade da CSR, incluindo os termos `-----BEGIN CERTIFICATE REQUEST-----` e `-----END CERTIFICATE REQUEST-----`.
 
 Guarde este ficheiro. Guarde-o preciosamente para a continuação deste manual, caso o seu fornecedor SSL o solicite na sua próxima encomenda.
 
@@ -157,25 +157,25 @@ Se iniciar diretamente a leitura deste manual nesta etapa, uma vez que já disp�
 Verifique também o seguinte:
 
 - A casa `SSL` não deve ser selecionada aquando da adição em multi-site de um nome de domínio/subdomínio afetado pelo seu certificado SSL externo.
-- O estado `A gerar` ou `Ativado` não deve estar presente para cada um dos nomes de domínio/subdomínios abrangidos pelo seu certificado SSL externo.
+- O estado `A gerar / atualizar` ou `Ativado` não deve estar presente para cada um dos nomes de domínio/subdomínios abrangidos pelo seu certificado SSL externo.
 
-Se necessário, e para ficar a saber, consulte os nossos manuais "[Partilhar o alojamento entre vários sites](/páginas/web_cloud/web_hosting/multisites_configurado_multisite)" e "[Editar uma zona DNS da OVHcloud](/páginas/web_cloud/domains/dns_zone_edit)".
+Se necessário, e para ficar a saber, consulte os nossos manuais "[Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)" e "[Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
 Quando todos estes requisitos forem cumpridos, pode iniciar a finalização da instalação do seu certificado SSL personalizado no seu alojamento web.
 
 Para isso, efetue as seguintes ações:
 
 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-2. Na linha situada no topo da Área de Cliente, clique no separador "Web Cloud" {.action}.
+2. Na linha situada no topo da Área de Cliente, clique no separador `Web Cloud`{.action}.
 3. Na coluna da esquerda, clique no menu pendente `Alojamentos`{.action}.
 4. Selecione o alojamento web em causa.
 5. Na página que vai aparecer, permaneça no separador `Informações gerais`{.action}.
-6. Aceda à caixa chamada "Configuração".
+6. Aceda à caixa chamada `Configuração`.
 7. À direita da menção `Certificado SSL`, clique no botão `...`{.action} e, a seguir, em `Encomendar um certificado SSL`{.action}.
 
 ![Order an SSL certificate](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-an-ssl-certificate.png){.thumbnail}
 
-Na janela que surgir, selecione "Importação do seu certificado SSL" {.action} de entre a lista das opções possíveis e, a seguir, clique em "Seguinte" {.action}.
+Na janela que surgir, selecione `Importação de certificado SSL`{.action} de entre a lista das opções possíveis e, a seguir, clique em `Seguinte`{.action}.
 
 ![Order an SSL certificate](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-an-ssl-certificate-step-1-custom.png){.thumbnail}
 
@@ -183,9 +183,9 @@ Aparecerá a seguinte janela com 3 formulários a preencher:
 
 ![Order an SSL certificate](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-an-ssl-certificate-step-2-custom-empty.png){.thumbnail}
 
-- "Copiar o conteúdo do seu certificado (RSA apenas)": {.action} : introduza o conteúdo do ficheiro **certificate.crt** emitido pelo seu fornecedor SSL, incluindo os termos `-----BEGIN CERTIFICATE-----` e `-----END CERTIFICATE-----` (ou seus equivalentes). A encriptação RSA é a encriptação standard para os certificados SSL.
-- "Copiar o conteúdo da sua chave privada (não encriptada)": {.action}: introduza o conteúdo do ficheiro **private.key** fornecido pelo seu fornecedor SSL, incluindo os termos `-----BEGIN RSA PRIVATE KEY-----` e `-----END RSA PRIVATE KEY-----` (ou os seus equivalentes). Se *sem encriptação* significa que a chave privada não necessita de estar protegida com uma palavra-passe ou frase. Caso contrário, a instalação do certificado falhará.
-- "Copiar o conteúdo da cadeia de certificados"{.action}: introduza o conteúdo do ficheiro **ca_bundle.crt*** emitido pelo seu fornecedor SSL, incluindo os termos `-----BEGIN CERTIFICATE-----` e `-----END CERTIFICATE-----` (ou seus equivalentes).
+- `Copiar conteúdo do seu certificado (apenas RSA)`{.action}: introduza o conteúdo do ficheiro **certificate.crt** emitido pelo seu fornecedor SSL, incluindo os termos `-----BEGIN CERTIFICATE-----` e `-----END CERTIFICATE-----` (ou seus equivalentes). A encriptação RSA é a encriptação standard para os certificados SSL.
+- `Copiar o conteúdo da sua chave privada (não encriptada)`{.action}: introduza o conteúdo do ficheiro **private.key** fornecido pelo seu fornecedor SSL, incluindo os termos `-----BEGIN RSA PRIVATE KEY-----` e `-----END RSA PRIVATE KEY-----` (ou os seus equivalentes). Se *não encriptada* significa que a chave privada não necessita de estar protegida com uma palavra-passe ou frase. Caso contrário, a instalação do certificado falhará.
+- `Copiar o conteúdo da sua cadeia de certificados`{.action}: introduza o conteúdo do ficheiro **ca_bundle.crt** emitido pelo seu fornecedor SSL, incluindo os termos `-----BEGIN CERTIFICATE-----` e `-----END CERTIFICATE-----` (ou seus equivalentes).
 
 ![Order an SSL certificate](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-an-ssl-certificate-step-2-custom.png){.thumbnail}
 
@@ -198,22 +198,22 @@ Se o certificado SSL tiver sido gerado corretamente pelo fornecedor SSL e os req
 > Se você encontrar o erro `error check SAN from certificate`, isso é devido a pelo menos uma das seguintes situações:
 >
 > - pelo menos um domínio/subdomínio declarado no seu certificado SSL não aponta para o endereço IP do seu alojamento web;
-> - Pelo menos um domínio/subdomínio declarado no seu certificado SSL não é declarado no separador "Multisite" do seu alojamento web.
+> - Pelo menos um domínio/subdomínio declarado no seu certificado SSL não é declarado no separador `Multisite` do seu alojamento web.
 >
-> Consulte os nossos manuais "[Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configurado_multisite)" e "[Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)" para resolver esta situação.
+> Consulte os nossos manuais "[Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)" e "[Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)" para resolver esta situação.
 
 A instalação leva alguns minutos.
 
 Para verificar se a instalação foi concluída, execute as seguintes ações:
 
 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-2. Na linha situada no topo da Área de Cliente, clique no separador "Web Cloud" {.action}.
+2. Na linha situada no topo da Área de Cliente, clique no separador `Web Cloud`{.action}.
 3. Na coluna da esquerda, clique no menu pendente `Alojamentos`{.action}.
 4. Selecione o alojamento web em causa.
 5. Na página que vai aparecer, permaneça no separador `Informações gerais`{.action}.
 6. Aceda à caixa chamada `Configuração`.
 
-Se tudo estiver terminado, deverá encontrar, abaixo da menção `Certificado SSL`, um valor equivalente ao seguinte: `Sim - CUSTOM`.
+Se tudo estiver terminado, deverá encontrar, abaixo da menção `Certificado SSL`, um valor equivalente ao seguinte: `Sim - CUSTOM - CUSTOM`.
 
 ![Order an SSL certificate](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ssl-certificate-custom-enable.png){.thumbnail}
 
