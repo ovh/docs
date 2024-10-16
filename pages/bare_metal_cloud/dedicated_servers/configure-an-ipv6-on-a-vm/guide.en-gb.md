@@ -41,7 +41,7 @@ Before you begin, and in order to use the same terminology during the changes, p
 |---|---|---|
 |YOUR_IPV6|This is an IPv6 address of the IPv6 block assigned to your server|2607:5300:xxxx:xxxx::1|
 |IPv6_PREFIX|This is the prefix (or *netmask*) of your IPv6 block, usually /64 or /56|2607:5300:xxxx:xxxx::/64|
-|IPv6_GATEWAY|This is the gateway (or *gateway*) of your IPv6 block|2607:5300:xxxx:ff:ff:ff:ff:ff or fe80::1|
+|IPv6_GATEWAY|This is the gateway (or *gateway*) of your IPv6 block|2607:5300:xxxx:xx:ff:ff:ff:ff:ff or fe80::1|
 
 In our examples, we will use the `nano` text editor. You can of course use the text editor of your choice.
 
@@ -71,7 +71,7 @@ Execute the following API call, specifying the internal name of the server (exam
 > @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/specifications/network
 >
 
-Please note that the top "0" can be deleted in an IPv6 gateway.
+Please note that the preceeding "0s" can be deleted in an IPv6 gateway.
 
 Example:
 
@@ -270,7 +270,7 @@ sudo nano /etc/NetworkManager/system-connections/ens18.nmconnection
 method=manual # If the value is "auto", replace with "manual".
 may-fail=true
 address=YOUR_IPV6/IPv6_PREFIX
-gateway=2607:5300:xxxx:xxff:ff:ff:ff:ff
+gateway=IPV6_GATEWAY
 ```
 
 Save your changes to the config file and exit the editor.

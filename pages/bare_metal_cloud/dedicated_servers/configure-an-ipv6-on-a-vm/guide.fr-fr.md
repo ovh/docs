@@ -40,7 +40,7 @@ Avant de débuter, et afin d’utiliser les mêmes terminologies durant les mani
 |---|---|---|
 |YOUR_IPV6|Il s'agit d'une adresse IPv6 du bloc IPv6 attribué à votre serveur|2607:5300:xxxx:xxxx::1|
 |IPv6_PREFIX|Il s'agit du préfixe (ou *netmask*) de votre bloc IPv6, généralement de /64 ou /56|2607:5300:xxxx:xxxx::/64|
-|IPv6_GATEWAY|Il s'agit de la passerelle (ou *gateway*) de votre bloc IPv6|2607:5300:xxxx:ff:ff:ff:ff:ff ou fe80::1|
+|IPv6_GATEWAY|Il s'agit de la passerelle (ou *gateway*) de votre bloc IPv6|2607:5300:xxxx:xxff:ff:ff:ff:ff ou fe80::1|
 
 Dans nos exemples, nous utiliserons l'éditeur de texte `nano`. Vous pouvez bien entendu utiliser l'éditeur de texte de votre choix.
 
@@ -268,7 +268,7 @@ sudo nano /etc/NetworkManager/system-connections/ens18.nmconnection
 method=manual # si la valeur est "auto", remplacez par "manual".
 may-fail=true
 address=YOUR_IPV6/IPv6_PREFIX
-gateway=2607:5300:xxxx:xxff:ff:ff:ff:ff
+gateway=IPV6_GATEWAY
 ```
 
 Enregistrez vos modifications dans le fichier de configuration et quittez l'éditeur.
