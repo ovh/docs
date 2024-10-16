@@ -388,7 +388,8 @@ Sinon vous pouvez aussi avoir un état détaillé de chaque étape de l'installa
 
 ### Changer le chemin du bootloader efi <a name="manage-efi"></a>
 
-Une valeur de bootloader efi est mise par défaut lorsque vous installez à partir d'un template OVH, mais vous avez la possibilité de la modifier : 
+Une valeur de bootloader efi est mise par défaut lorsque vous installez à partir d'un template OVHcloud, mais vous avez la possibilité de la modifier.
+
 Vous pouvez récupérer le chemin par défaut à l'aide de cet appel : 
 
 > [!api]
@@ -396,7 +397,7 @@ Vous pouvez récupérer le chemin par défaut à l'aide de cet appel :
 > @api {v1} /dedicated/server GET  /dedicated/server/{serviceName}
 >
 
-et vous pouvez le modifier grace à l'appel suivant :
+Et vous pouvez le modifier grace à l'appel suivant :
 
 > [!api]
 >
