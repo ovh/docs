@@ -1,6 +1,6 @@
 ---
 title: "Object Storage - Création d'un bucket"
-excerpt : "Découvrez comment créer un bucket S3 Object Storage depuis votre espace client OVHcloud"
+excerpt: "Découvrez comment créer un bucket S3 Object Storage depuis votre espace client OVHcloud"
 updated: 2024-10-16
 ---
 
