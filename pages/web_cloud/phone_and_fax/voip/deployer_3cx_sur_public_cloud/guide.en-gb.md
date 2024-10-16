@@ -1,5 +1,5 @@
 ---
-title: "Deploying automatically the 3CX IPBX on OVHcloud Public Cloud"
+title: "How to deploy the 3CX IPBX automatically on OVHcloud Public Cloud"
 excerpt: "Find out how you can automatically deploy your 3CX IPBX on a Public Cloud instance via an XML template"
 updated: 2023-07-28
 ---
@@ -40,7 +40,7 @@ We will attach a *user-data* to the instance. When the instance is booted, this 
 
 The XML file is included in the template that we will attach to the instance when we create it.
 
-Here is the file to use to follow this tutorial:
+/// details | Here is the file to use to follow this tutorial:
 
 ```xml
 #!/bin/bash -e
@@ -567,6 +567,8 @@ systemctl reload nginx
 apt-get -y install 3cxpbx
 
 ```
+
+///
 
 In this template, there are two elements to modify for a first deployment test:
 
