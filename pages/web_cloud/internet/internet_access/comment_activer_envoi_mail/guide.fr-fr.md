@@ -1,7 +1,8 @@
 ---
 title: "Activer ou désactiver l'envoi d'e-mails depuis le SMTP OVHcloud"
 excerpt: "Découvrez comment activer ou désactiver l'envoi d'e-mails depuis votre connexion OVHcloud via l'espace client"
-updated: 2024-10-11
+updated: 2024-10-16
+flag: hidden
 ---
 
 ## Objectif
@@ -50,8 +51,6 @@ Dans le cadre « Informations générales », reportez-vous à l'élément de la
 
 ![Mail Sending status](images/MailSending-Disable.png){.thumbnail}
 
-
 ## Aller plus loin
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
-
