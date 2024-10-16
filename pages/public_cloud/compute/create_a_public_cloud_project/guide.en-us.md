@@ -31,7 +31,7 @@ Once the creation process is complete, your new Public Cloud project will be vis
 
 ![new project created](images/public-cloud-interface.png){.thumbnail width="400"}
 
-You now have access to the entire OVHcloud Public Cloud ecosystem. To discover this new interface, read our guide [Familiarise yourself with the Public Cloud interface ](/pages/public_cloud/compute/03-public-cloud-interface-walk-me).
+You now have access to the entire OVHcloud Public Cloud ecosystem. To discover this new interface, read our guide [How to use the Public Cloud interface ](/pages/public_cloud/compute/03-public-cloud-interface-walk-me).
 
 <a name="discovery"></a>
 
