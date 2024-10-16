@@ -393,7 +393,8 @@ You can also monitor the progress of the installation process with the following
 
 ### Manage efi bootloader path <a name="manage-efi"></a>
 
-A default efi bootloader path is set when installing from OVH templates but you have the possibility to manage it : 
+A default efi bootloader path is set when installing from OVHcloud templates but you have the possibility to manage it.
+
 You can retrieve it with the following API call : 
 
 > [!api]
@@ -401,7 +402,7 @@ You can retrieve it with the following API call :
 > @api {v1} /dedicated/server GET  /dedicated/server/{serviceName}
 >
 
-and you can set it in the payload of the following API call : 
+You also can set it in the payload of the following API call : 
 
 > [!api]
 >
