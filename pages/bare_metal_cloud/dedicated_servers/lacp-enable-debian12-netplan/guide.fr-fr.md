@@ -87,9 +87,9 @@ Voici un exemple de sortie :
     link/ether a1:b2:c3:d4:e5:d7 brd ff:ff:ff:ff:ff:ff
 ```
 
-Une fois que vous avez déterminé les noms de vos interfaces, vous pouvez configurer la liaison d'interfaces dans le système d'exploitation.
+Une fois que vous avez déterminé les noms de vos interfaces, vous pouvez configurer l'agrégation d'interfaces dans le système d'exploitation.
 
-### Configuration IP statique
+### Configuration IP fixe
 
 Remplacez le contenu de `/etc/netplan/50-cloud-init.yaml` par ce qui suit :
 
@@ -137,7 +137,7 @@ network:
                 down-delay: 200
                 lacp-rate: fast
                 transmit-hash-policy: layer3+4
-        # Facultatif: configuration d'une liaison privée
+        # Facultatif: configuration d'un agrégat privé
         bond1:
             # Adresse MAC de la première interface privée
             macaddress: a1:b2:c3:d4:e5:d6
@@ -197,7 +197,7 @@ network:
                 down-delay: 200
                 lacp-rate: fast
                 transmit-hash-policy: layer3+4
-        # Facultatif: configuration d'une liaison privé
+        # Facultatif: configuration d'un agrégat privé
         bond1:
             # Adresse MAC de la première interface privée
             macaddress: a1:b2:c3:d4:e5:d6
@@ -218,7 +218,7 @@ network:
 ### Application de la configuration
 
 > [!primary]
-> La commande `netplan try` ne peut pas être utilisée lors de la configuration des liaisons.
+> La commande `netplan try` ne peut pas être utilisée lors de la configuration des agrégats.
 
 Appliquez la configuration à l'aide de la commande suivante :
 
@@ -226,7 +226,7 @@ Appliquez la configuration à l'aide de la commande suivante :
 sudo netplan apply
 ```
 
-L'affichage de l'interface d'agrégation peut prendre plusieurs secondes.
+Un intervalle de quelques secondes peut être observé avant que les agrégats soient opérationnels.
 
 ## Aller plus loin
 

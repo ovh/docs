@@ -22,7 +22,7 @@ details[open]>summary::before {
 
 Link Aggregation Control Protocol (LACP) technology is designed to increase your server’s availability, and boost the efficiency of your network connections. You can aggregate your network cards and make your network links redundant. This means that if one link goes down, traffic is automatically redirected to another available link. The available bandwidth is also doubled thanks to aggregation.
 
-**This guide explains how to bond your interfaces to use them for link qggregation in Debian 12 / Ubuntu 24.04 (Netplan configuration).**
+**This guide explains how to bond your interfaces to use them for link aggregation in Debian 12 / Ubuntu 24.04 (Netplan configuration).**
 
 ## Requirements
 
@@ -226,7 +226,7 @@ Apply the configuration using the following command:
 sudo netplan apply
 ```
 
-It may take several seconds for the bond interface to come up.
+It may take several seconds for the bond interfaces to come up.
 
 ## Go further
 
