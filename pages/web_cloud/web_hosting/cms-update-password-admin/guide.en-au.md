@@ -1,5 +1,5 @@
 ---
-title: "How to change the admin password of my CMS (WordPress, PrestaShop, Joomla!, Drupal)"
+title: "How to change the admin password of a CMS"
 excerpt: "Find out how to change your CMS admin password directly via the CMS admin interface, or by using phpMyAdmin in the OVHcloud Control Panel"
 updated: 2024-10-15
 ---
@@ -23,6 +23,19 @@ There are several ways of changing the admin password for your CMS, depending on
 - [via automatic email (forgot password)](#via-email)
 - [via your CMS administration interface](#via-cms)
 - [via phpMyAdmin via the OVHcloud Control Panel](#via-phpmyadmin)
+
+> [!warning]
+>
+> OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
+>
+> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](/links/partner) or the publisher of the CMS you have chosen to install if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this tutorial.
+>
+> Find below the links to the respective official pages of the CMS mentioned above:
+>
+> - [WordPress](https://wordpress.com/support/){.external}
+> - [Joomla!](https://www.joomla.org/){.external}
+> - [Drupal](https://www.drupal.org/){.external}
+> - [PrestaShop](https://www.prestashop.com/en/support){.external}
 
 ### Change your admin password via automatic email (forgotten password) <a name="via-email"></a>
 
