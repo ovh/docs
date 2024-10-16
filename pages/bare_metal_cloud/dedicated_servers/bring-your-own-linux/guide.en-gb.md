@@ -1,7 +1,7 @@
 ---
 title: Bring Your Own Linux (BYOLinux)
 excerpt: Find out how to easily deploy your own Linux images on dedicated servers
-updated: 2024-07-19
+updated: 2024-10-17
 ---
 
 ## Objective
@@ -115,6 +115,10 @@ The Bring Your Own Linux (BYOLinux) payload should be similar to the following:
     {
       "key": "configDriveUserData",
       "value": "I2Nsb3VkLWNvbmZpZwpzc2hfYXV0aG9yaXplZF9rZXlzOgogIC0gc3NoLXJzYSBBQUFBQjhkallpdz09IG15c2VsZkBteWRvbWFpbi5uZXQKCnVzZXJzOgogIC0gbmFtZTogcGF0aWVudDAKICAgIHN1ZG86IEFMTD0oQUxMKSBOT1BBU1NXRDpBTEwKICAgIGdyb3VwczogdXNlcnMsIHN1ZG8KICAgIHNoZWxsOiAvYmluL2Jhc2gKICAgIGxvY2tfcGFzc3dkOiBmYWxzZQogICAgc3NoX2F1dGhvcml6ZWRfa2V5czoKICAgICAgLSBzc2gtcnNhIEFBQUFCOGRqWWl3PT0gbXlzZWxmQG15ZG9tYWluLm5ldApkaXNhYmxlX3Jvb3Q6IGZhbHNlCnBhY2thZ2VzOgogIC0gdmltCiAgLSB0cmVlCmZpbmFsX21lc3NhZ2U6IFRoZSBzeXN0ZW0gaXMgZmluYWxseSB1cCwgYWZ0ZXIgJFVQVElNRSBzZWNvbmRzCg=="
+    },
+    {
+      "key": "efiBootloaderPath",
+      "value": "\\efi\\debian\\grubx64.efi"
     }
   ]
 }
@@ -162,9 +166,11 @@ Once you completed the fields, start the deployment by clicking `Execute`{.actio
 | userMetadata/configDriveMetadata | Custom Cloud-Init metadata | ❌ |
 | userMetadata/httpHeaders?Key | HTTP Headers key  | ❌² |
 | userMetadata/httpHeaders?Value | HTTP Headers value | ❌² |
+| userMetadata/efiBootloaderPath | EFI bootloader path | ✅³ |
 
 ¹ Can either be a `#cloud-config` or a script. It must be in one-line, and have `\n` for line-return<br />
 ² Use only if you need HTTP Headers, such as `Basic Auth`<br />
+³ Examples of Efi bootloader path: Debian: \\efi\\debian\\grubx64.efi, Ubuntu:\\efi\\ubuntu\\grubx64.efi, Microsoft: \\efi\\microsoft\\boot\\bootmgfw.efi
 
 > [!primary]
 >

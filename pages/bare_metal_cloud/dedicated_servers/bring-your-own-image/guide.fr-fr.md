@@ -1,7 +1,7 @@
 ---
 title: Bring Your Own Image (BYOI)
 excerpt: Découvrez comment déployer facilement vos propres images sur des serveurs dédiés
-updated: 2024-07-19
+updated: 2024-10-17
 ---
 
 ## Objectif
@@ -87,7 +87,7 @@ Le contenu de la requête API de Bring Your Own Image (BYOI) doit être similair
 
 > [!warning]
 >
-> Dans la section `userMetadata`, seuls les champs `imageURL` et `imageType` sont obligatoires.
+> Dans la section `userMetadata`, seuls les champs `imageURL`, `imageType` et `efiBootloaderPath` sont obligatoires.
 >
 
 ```json
@@ -128,6 +128,10 @@ Le contenu de la requête API de Bring Your Own Image (BYOI) doit être similair
     {
       "key": "configDriveUserData",
       "value": "I2Nsb3VkLWNvbmZpZwpzc2hfYXV0aG9yaXplZF9rZXlzOgogIC0gc3NoLXJzYSBBQUFBQjhkallpdz09IG15c2VsZkBteWRvbWFpbi5uZXQKCnVzZXJzOgogIC0gbmFtZTogcGF0aWVudDAKICAgIHN1ZG86IEFMTD0oQUxMKSBOT1BBU1NXRDpBTEwKICAgIGdyb3VwczogdXNlcnMsIHN1ZG8KICAgIHNoZWxsOiAvYmluL2Jhc2gKICAgIGxvY2tfcGFzc3dkOiBmYWxzZQogICAgc3NoX2F1dGhvcml6ZWRfa2V5czoKICAgICAgLSBzc2gtcnNhIEFBQUFCOGRqWWl3PT0gbXlzZWxmQG15ZG9tYWluLm5ldApkaXNhYmxlX3Jvb3Q6IGZhbHNlCnBhY2thZ2VzOgogIC0gdmltCiAgLSB0cmVlCmZpbmFsX21lc3NhZ2U6IFRoZSBzeXN0ZW0gaXMgZmluYWxseSB1cCwgYWZ0ZXIgJFVQVElNRSBzZWNvbmRzCg=="
+    },
+    {
+      "key": "efiBootloaderPath",
+      "value": "\\efi\\debian\\grubx64.efi"
     }
   ]
 }
@@ -176,9 +180,11 @@ Une fois les champs complétés, démarrez le déploiement en cliquant sur `Exec
 | userMetadata/configDriveMetadata | Métadonnées Cloud-Init personnalisées | ❌ |
 | userMetadata/httpHeaders?Key | Clé des en-têtes HTTP | ❌² |
 | userMetadata/httpHeaders?Value | Valeur des en-têtes HTTP | ❌² |
+| userMetadata/efiBootloaderPath | Le chemin du bootloader EFI | ✅³ |
 
 ¹ Il peut s'agir d'un `#cloud-config` ou d'un script. Il doit être sur une ligne et avoir `\n` pour la ligne-retour.<br />
 ² À utiliser uniquement si vous avez besoin d'en-têtes HTTP, tels que `Basic Auth`<br />
+³ Examples de chemin EFI: Debian: \\efi\\debian\\grubx64.efi, Ubuntu:\\efi\\ubuntu\\grubx64.efi, Microsoft: \\efi\\microsoft\\boot\\bootmgfw.efi
 
 > [!primary]
 >
