@@ -1,8 +1,22 @@
 ---
 title: "How to configure Link Aggregation with LACP in Debian 12 or Ubuntu 24.04"
 excerpt: "Enable Link Aggregation in your Debian 12 or Ubuntu 24.04 server (Netplan) to increase your server’s availability and boost the efficiency of your network connections"
-updated: 2024-10-09
+updated: 2024-10-16
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objective
 
@@ -117,7 +131,7 @@ network:
                 mode: 802.3ad
                 mii-monitor-interval: 100
                 down-delay: 200
-                lacp-rate: slow
+                lacp-rate: fast
                 transmit-hash-policy: layer3+4
         # Optional: private bond configuration
         bond1:
@@ -131,11 +145,11 @@ network:
                 mode: 802.3ad
                 mii-monitor-interval: 100
                 down-delay: 200
-                lacp-rate: slow
+                lacp-rate: fast
                 transmit-hash-policy: layer3+4 
 ```
 
-### DHCP configuration
+/// details | DHCP configuration
 
 Replace the content of `/etc/netplan/50-cloud-init.yaml` with the following:
 
@@ -177,7 +191,7 @@ network:
                 mode: 802.3ad
                 mii-monitor-interval: 100
                 down-delay: 200
-                lacp-rate: slow
+                lacp-rate: fast
                 transmit-hash-policy: layer3+4
         # Optional: private bond configuration
         bond1:
@@ -191,9 +205,11 @@ network:
                 mode: 802.3ad
                 mii-monitor-interval: 100
                 down-delay: 200
-                lacp-rate: slow
+                lacp-rate: fast
                 transmit-hash-policy: layer3+4 
 ```
+
+///
 
 ### Applying the configuration
 
