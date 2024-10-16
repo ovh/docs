@@ -4,6 +4,10 @@ excerpt: "Saiba como importar e instalar um certificado SSL personalizado no seu
 updated: 2024-10-15
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
 ## Objetivo
 
 Os certificados Secure Socket Layer (SSL) permitem encriptar as trocas efetuadas a partir do seu website ou para o seu website. Isto evita que uma pessoa ou um robô malicioso venha "ouvir" claramente os pedidos enviados ou emitidos com o seu website.
@@ -21,13 +25,13 @@ Em função da sua situação, é possível que pretenda instalar um certificado
 - Encomendar ou dispor de um [nome de domínio](/links/web/domains) e dispor de direitos exclusivos sobre a sua utilização. O domínio não deve estar associado a um certificado SSL.
 - Ter acesso SSH (através de um terminal de computador, por exemplo) com OpenSSL instalado.
 
-## Na Prática
+## Instruções
 
 > [!warning]
 >
 > A OVHcloud oferece-lhe serviços cuja configuração, gestão e responsabilidade é da sua responsabilidade. Assim, deverá assegurar o seu bom funcionamento.
 >
-> Este guia fornece as instruções necessárias para realizar as operações mais habituais. Se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links/partner). De facto, não poderemos fornecer-lhe assistência no **instalação ou subscrição de um certificado SSL que não seja o [certificado SSL proposto pela OVHcloud](/links/web/hosting-options-ssl)**. Mais informações na secção "[Ir mais longe](#go-further)" deste guia.
+> Este guia fornece as instruções necessárias para realizar as operações mais habituais. Se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links/partner). De facto, não poderemos fornecer-lhe assistência no **instalação ou subscrição de um certificado SSL que não seja o [certificado SSL proposto pela OVHcloud](/links/web/hosting-options-ssl)**. Mais informações na secção "[Quer saber mais?](#go-further)" deste guia.
 >
 
 ### Etapa 1 - Obter um Certificate Signing Request (CSR) SSL <a name="step-1"></a>
@@ -42,9 +46,9 @@ Abra um terminal para estabelecer uma ligação em SSH. Esta ferramenta é insta
 
 No terminal, execute o seguinte comando:
 
-"ssh
+```ssh
 openssl req -nodes -newkey rsa:2048 -sha256 -keyout my_private.key -out your_file_name.csr -utf8
-"
+```
 
 Substitua os termos `my_private` e `your_file_name` por qualquer nome de ficheiro.
 
@@ -67,21 +71,21 @@ As perguntas seguintes são opcionais e destinam-se principalmente a utilizadore
 
 Para recuperar a chave privada gerada anteriormente e sempre a partir do seu terminal, execute o seguinte comando:
 
-"ssh
+```ssh
 cat my_private.key
-"
+```
 
 Substitua o termo `my_private` pelo nome do ficheiro que escolheu anteriormente no [etapa 1.1](#step-1.1) deste guia.
 
 A chave privada aparece no seu terminal desta forma:
 
-"ssh
------BEGIN PRIVATE KEY----- 
-XXXXXXXXXXXXXXXXXXXXXXX
-XXXXXXX The Private Key XXXXX
-XXXXXXXXXXXXXXXXXXXXXXX
-------END PRIVATE KEY------ 
-"
+```ssh
+-----BEGIN PRIVATE KEY-----
+XXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXX The Private Key XXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXX
+------END PRIVATE KEY------
+```
 
 Abra um programa de processamento de texto (bloco de notas, LibreOffice, etc.) e, em seguida, "copie/cole" {.action} a chave privada completa, incluindo os termos `-----BEGIN PRIVATE KEY-----` e `-----END PRIVATE KEY-----`.
 
@@ -91,21 +95,21 @@ Guarde este ficheiro. Guarde-o preciosamente para a continuação deste manual, 
 
 Para recuperar a CSR gerada anteriormente e sempre a partir do seu terminal, execute o seguinte comando:
 
-"ssh
+```ssh
 cat your_file_name.csr
-"
+```
 
 Substitua o termo `your_file_name` pelo nome do ficheiro que escolheu anteriormente no [etapa 1.1](#step-1.1) deste guia.
 
 A CSR aparece no seu terminal da seguinte forma:
 
-"ssh
------BEGIN CERTIFICADO REQUEST----- 
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-XXXXXXXXXX The CSR XXXXXXXXXXXX
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-------END CERTIFICADO REQUEST------ 
-"
+```ssh
+-----BEGIN CERTIFICATE REQUEST-----
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXX The CSR XXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+------END CERTIFICATE REQUEST------
+```
 
 Abra um programa de processamento de texto e, em seguida, "copie/cole" {.action} a totalidade da CSR, incluindo os termos `-----BEGIN CERTIFICATE REQUEST-----` e `-----END CERTIFICATE REQUEST-----`.
 
@@ -213,15 +217,15 @@ Se tudo estiver terminado, deverá encontrar, abaixo da menção `Certificado SS
 
 ![Order an SSL certificate](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ssl-certificate-custom-enable.png){.thumbnail}
 
-O seu certificado SSL personalizado já está instalado e ativo. Pode desde já utilizá-lo com o seu website passando, por exemplo, pelo seu [website em HTTPS](/pages/web_cloud/web_hosting/ssl-ativate-https-website).
+O seu certificado SSL personalizado já está instalado e ativo. Pode desde já utilizá-lo com o seu website passando, por exemplo, pelo seu [website em HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website).
 
-## Vá mais longe <a name="go-further"></a>
+## Quer saber mais? <a name="go-further"></a>
 
 [Alojamento web - Gerir um certificado SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting).
 
-[Alojamento web - alterar o seu website para HTTPS](/pages/web_cloud/web_hosting/ssl-ativate-https-website).
+[Alojamento web - alterar o seu website para HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website).
 
-[Erros comuns associados à segurança do seu website com SSL](/pages/web_cloud/web_hosting/ssl_common_pitfalls_of_making_website_secure).
+[Erros comuns associados à segurança do seu website com SSL](/pages/web_cloud/web_hosting/ssl_avoid_common_pitfalls_of_making_website_secure).
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 
