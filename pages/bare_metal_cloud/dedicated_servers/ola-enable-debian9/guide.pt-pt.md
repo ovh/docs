@@ -83,7 +83,7 @@ Finalmente, iremos reiniciar o daemon de rede usando o seguinte comando:
 systemctl restart networking
 ```
 
-Este reinício pode levar vários minutos, uma vez que está a construir a interface de ligação.  Para testar se a ligação está a funcionar, faça um teste de ping noutro servidor da mesma rede vRack. Se funcionar, está tudo pronto. Caso contrário, volte a verificar as suas configurações ou tente reiniciar o servidor.
+Este reinício pode levar vários segundos, uma vez que está a construir a interface de ligação. Para testar se a ligação está a funcionar, faça um teste de ping noutro servidor da mesma rede vRack. Se funcionar, está tudo pronto. Caso contrário, volte a verificar as suas configurações ou tente reiniciar o servidor.
 
 ## Quer saber mais?
 

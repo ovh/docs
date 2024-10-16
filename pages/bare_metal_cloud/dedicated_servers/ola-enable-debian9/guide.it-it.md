@@ -83,7 +83,7 @@ A questo punto riavvia il servizio di rete con il comando:
 systemctl restart networking
 ```
 
-Questa operazione potrebbe richiedere alcuni minuti per costruire l’interfaccia bond. Per testare il corretto funzionamento della nuova interfaccia creata, effettua il ping di un altro server presente nella stessa vRack. Se funziona, la procedura è conclusa. In caso contrario, verifica nuovamente la configurazione o prova a riavviare il server.
+Questa operazione potrebbe richiedere alcuni secondi per costruire l’interfaccia bond. Per testare il corretto funzionamento della nuova interfaccia creata, effettua il ping di un altro server presente nella stessa vRack. Se funziona, la procedura è conclusa. In caso contrario, verifica nuovamente la configurazione o prova a riavviare il server.
 
 ## Per saperne di più
 

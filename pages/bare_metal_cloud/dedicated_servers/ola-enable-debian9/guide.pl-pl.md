@@ -79,7 +79,7 @@ Na koniec zrestartuj demona sieciowego za pomocą następującego polecenia:
 restart sieci systemctl 
 ```
 
-Restart może trwać kilka minut, w tym czasie budowany jest interfejs powiązania.Aby sprawdzić, czy powiązanie działa, podłącz inny serwer do tego samego vRacka. Jeśli wszystko działa poprawnie, ustawienie jest prawidłowe. W przeciwnym razie sprawdź dokładnie Twoje konfiguracje lub spróbuj zrestartować serwer.
+Restart może trwać kilka sekund, w tym czasie budowany jest interfejs powiązania.Aby sprawdzić, czy powiązanie działa, podłącz inny serwer do tego samego vRacka. Jeśli wszystko działa poprawnie, ustawienie jest prawidłowe. W przeciwnym razie sprawdź dokładnie Twoje konfiguracje lub spróbuj zrestartować serwer.
 
 ## Podsumowanie
 

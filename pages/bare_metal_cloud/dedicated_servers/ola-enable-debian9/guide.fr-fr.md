@@ -79,7 +79,7 @@ Pour finir, il faudra redémarrer le service réseau à l’aide de la commande 
 systemctl restart networking
 ```
 
-Ce redémarrage peut prendre quelques minutes puisqu’il permet de mettre en place l’interface d’agrégation. Pour vérifier que cette agrégation fonctionne, effectuez un ping vers un autre serveur sur le même vRack. Si cela fonctionne, vous avez configuré la connexion correctement. Si ce n’est pas le cas, vérifiez vos configurations ou essayez de redémarrer le serveur.
+Ce redémarrage peut prendre quelques secondes puisqu’il permet de mettre en place l’interface d’agrégation. Pour vérifier que cette agrégation fonctionne, effectuez un ping vers un autre serveur sur le même vRack. Si cela fonctionne, vous avez configuré la connexion correctement. Si ce n’est pas le cas, vérifiez vos configurations ou essayez de redémarrer le serveur.
 
 ## Aller plus loin
 

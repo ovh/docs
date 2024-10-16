@@ -79,7 +79,7 @@ Finally, we will restart the networking daemon using the following command:
 systemctl restart networking
 ```
 
-This restart may take several minutes since it is building the bond interface.  To test that our bond is working, ping another server on the same vRack. If it works, you are all set. If it does not, double check your configurations or try rebooting the server.
+This restart may take several seconds since it is building the bond interface.  To test that our bond is working, ping another server on the same vRack. If it works, you are all set. If it does not, double check your configurations or try rebooting the server.
 
 ## Go further
 

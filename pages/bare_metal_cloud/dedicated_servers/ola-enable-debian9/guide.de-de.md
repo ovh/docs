@@ -79,7 +79,7 @@ Abschließend starten wir den Netzwerk-Daemon mit dem folgenden Befehl neu:
 systemctl restart networking
 ```
 
-Dieser Neustart kann einige Minuten dauern, da die Bond-Schnittstelle erstellt wird.  Um zu testen, ob unsere Verbindung funktioniert, senden Sie einen Ping-Befehl an einen anderen Server im selben vRack. Wenn es funktioniert, sind Sie bereit. Ist dies nicht der Fall, überprüfen Sie Ihre Einstellungen oder starten Sie den Server neu.
+Dieser Neustart kann einige Sekunden dauern, da die Bond-Schnittstelle erstellt wird.  Um zu testen, ob unsere Verbindung funktioniert, senden Sie einen Ping-Befehl an einen anderen Server im selben vRack. Wenn es funktioniert, sind Sie bereit. Ist dies nicht der Fall, überprüfen Sie Ihre Einstellungen oder starten Sie den Server neu.
 
 ## Weiterführende Informationen
 

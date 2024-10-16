@@ -83,7 +83,7 @@ Por último, reinicie el servicio de red utilizando el siguiente comando:
 systemctl restart networking
 ```
 
-Este reinicio puede tardar unos minutos ya que se está creando la interfaz de enlace.  Para comprobar que el enlace funciona correctamente, haga ping en otro servidor en el mismo vRack. Si funciona, ha configurado el enlace correctamente. En caso contrario, compruebe que la configuración es correcta o reinicie el servidor.
+Este reinicio puede tardar unos segundos ya que se está creando la interfaz de enlace.  Para comprobar que el enlace funciona correctamente, haga ping en otro servidor en el mismo vRack. Si funciona, ha configurado el enlace correctamente. En caso contrario, compruebe que la configuración es correcta o reinicie el servidor.
 
 ## Más información
 
