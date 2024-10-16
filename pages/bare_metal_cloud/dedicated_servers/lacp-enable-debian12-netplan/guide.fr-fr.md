@@ -1,6 +1,6 @@
 ---
-title: "How to configure Link Aggregation with LACP in Debian 12 or Ubuntu 24.04"
-excerpt: "Enable Link Aggregation in your Debian 12 or Ubuntu 24.04 server (Netplan) to increase your server’s availability and boost the efficiency of your network connections"
+title: "Comment configurer l'agrégation de liens avec LACP dans Debian 12 ou Ubuntu 24.04"
+excerpt: "Activez l'agrégation de liens dans votre serveur Debian 12 ou Ubuntu 24.04 (Netplan) pour augmenter la disponibilité de votre serveur et augmenter l'efficacité de vos connexions réseau"
 updated: 2024-10-16
 ---
 
@@ -18,40 +18,40 @@ details[open]>summary::before {
 }
 </style>
 
-## Objective
+## Objectif
 
-Link Aggregation Control Protocol (LACP) technology is designed to increase your server’s availability, and boost the efficiency of your network connections. You can aggregate your network cards and make your network links redundant. This means that if one link goes down, traffic is automatically redirected to another available link. The available bandwidth is also doubled thanks to aggregation.
+La technologie LACP (Link Aggregation Control Protocol) est conçue pour augmenter la disponibilité de votre serveur et améliorer l’efficacité de vos connexions réseau. Vous pouvez agréger vos cartes réseau et rendre vos liens réseau redondants. Cela signifie que si un lien tombe en panne, le trafic est automatiquement redirigé vers un autre lien disponible. La bande passante disponible est également doublée grâce à l’agrégation.
 
-**This guide explains how to bond your interfaces to use them for link qggregation in Debian 12 / Ubuntu 24.04 (Netplan configuration).**
+**Ce guide explique comment lier vos interfaces pour les utiliser pour l'agrégation de liens dans Debian 12 / Ubuntu 24.04 (configuration Netplan).**
 
-## Requirements
+## Prérequis
 
-- Access to the [OVHcloud Control Panel](/links/manager)
+- Ëtre connecté à l’[espace client OVHcloud](/links/manager)
 
-## Instructions
+## En pratique
 
 > [!primary]
-> The values (MAC addresses, IP addresses, etc.) shown in the configurations and examples below are provided as examples. Of course, you must replace these values with your own.
+> Les valeurs (adresses MAC, adresses IP, etc) indiquées dans les configurations et exemples ci-dessous le sont à titre d'exemples. Vous devez bien entendu remplacer ces valeurs par les vôtres.
 >
 
-### Retrieving MAC addresses
+### Récupération des adresses MAC
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and select your server from **Dedicated Servers**.
+Connectez-vous à l'[espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur parmi les **Serveurs dédiés**.
 
-Switch to the tab `Network Interfaces`{.action} and take note of the MAC addresses for each interface (public/private) which are displayed at the bottom of the menu. 
+Cliquez sur l'onglet `Interfaces réseau`{.action} et prenez note des adresses MAC de chaque interface (publique/privée) qui s'affichent en bas du menu.
 
 ![OVHcloud Control Panel](images/ControlPanel.png){.thumbnail}
 
-Now that you know which MAC addresses are associated to each type (public/private) of interface, you need to retrieve the interfaces names.
+Maintenant que vous savez quelles adresses MAC sont associées à chaque type (public/privé) d'interface, vous devez récupérer les noms des interfaces.
 
-### Retrieving interfaces names
+### Récupération des noms d'interfaces
 
 > [!primary]
 >
-> If you lose network connection to your server, follow the "**Open KVM**" steps from [this guide](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers).
+> Si vous perdez la connexion réseau à votre serveur, suivez les étapes intitulées « **Ouvrir un KVM** » de [ce guide](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers).
 >
 
-To retrieve the names of the interfaces, execute the following command:
+Pour récupérer les noms des interfaces, lancez la commande suivante :
 
 ```bash
 ip a
@@ -59,10 +59,10 @@ ip a
 
 > [!primary]
 >
-> This command will yield numerous interfaces. If you are having trouble determining which ones are your physical interfaces, the first interface will still have the server's public IP address attached to it by default.
+> Cette commande va afficher de nombreuses interfaces. Si vous avez des difficultés à déterminer quelles sont vos interfaces physiques, l'adresse IP publique du serveur reste attachée par défaut à la première interface.
 >
 
-Here's an output example: 
+Voici un exemple de sortie :
 
 ```text
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
@@ -87,11 +87,11 @@ Here's an output example:
     link/ether a1:b2:c3:d4:e5:d7 brd ff:ff:ff:ff:ff:ff
 ```
 
-Once you have determined the names of your interfaces, you can configure interfaces bonding in the OS.
+Une fois que vous avez déterminé les noms de vos interfaces, vous pouvez configurer la liaison d'interfaces dans le système d'exploitation.
 
-### Static IP configuration
+### Configuration IP statique
 
-Replace the content of `/etc/netplan/50-cloud-init.yaml` with the following:
+Remplacez le contenu de `/etc/netplan/50-cloud-init.yaml` par ce qui suit :
 
 ```yaml
 network:
@@ -111,7 +111,7 @@ network:
                 macaddress: a1:b2:c3:d4:e5:d7
     bonds:
         bond0:
-            # MAC address of the server's main public interface
+            # Adresse MAC de l'interface publique principale du serveur
             macaddress: a1:b2:c3:d4:e5:c6
             accept-ra: false
             addresses:
@@ -137,9 +137,9 @@ network:
                 down-delay: 200
                 lacp-rate: fast
                 transmit-hash-policy: layer3+4
-        # Optional: private bond configuration
+        # Facultatif: configuration d'une liaison privée
         bond1:
-            # MAC address of the first private interface
+            # Adresse MAC de la première interface privée
             macaddress: a1:b2:c3:d4:e5:d6
             accept-ra: false
             interfaces:
@@ -153,9 +153,9 @@ network:
                 transmit-hash-policy: layer3+4 
 ```
 
-/// details | DHCP configuration
+/// details | Configuration DHCP
 
-Replace the content of `/etc/netplan/50-cloud-init.yaml` with the following:
+Remplacez le contenu de `/etc/netplan/50-cloud-init.yaml` par ce qui suit :
 
 ```yaml
 network:
@@ -175,7 +175,7 @@ network:
                 macaddress: a1:b2:c3:d4:e5:d7
     bonds:
         bond0:
-            # MAC address of the server's main public interface
+            # Adresse MAC de l'interface publique principale du serveur
             macaddress: a1:b2:c3:d4:e5:c6
             accept-ra: false
             dhcp4: true
@@ -197,9 +197,9 @@ network:
                 down-delay: 200
                 lacp-rate: fast
                 transmit-hash-policy: layer3+4
-        # Optional: private bond configuration
+        # Facultatif: configuration d'une liaison privé
         bond1:
-            # MAC address of the first private interface
+            # Adresse MAC de la première interface privée
             macaddress: a1:b2:c3:d4:e5:d6
             accept-ra: false
             interfaces:
@@ -215,19 +215,19 @@ network:
 
 ///
 
-### Applying the configuration
+### Application de la configuration
 
 > [!primary]
-> The `netplan try` command can't be used when configuring bonds.
+> La commande `netplan try` ne peut pas être utilisée lors de la configuration des liaisons.
 
-Apply the configuration using the following command:
+Appliquez la configuration à l'aide de la commande suivante :
 
 ```bash
 sudo netplan apply
 ```
 
-It may take several seconds for the bond interface to come up.
+L'affichage de l'interface d'agrégation peut prendre plusieurs secondes.
 
-## Go further
+## Aller plus loin
 
-Join our [community of users](/links/community).
+Rejoignez notre [communauté d'utilisateurs](/links/community).
