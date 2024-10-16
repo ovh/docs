@@ -1,6 +1,6 @@
 ---
-title: 'Konfiguracja karty sieciowej (NIC) dla OVHcloud Link Aggregation w Debianie 9'
-excerpt: 'Dowiedz się, jak włączyć OVHcloud Link Aggregation na serwerze Debian 9'
+title: 'Konfiguracja karty sieciowej (NIC) dla OVHcloud Link Aggregation w Debianie 9-11'
+excerpt: 'Dowiedz się, jak włączyć OVHcloud Link Aggregation na serwerze Debian 9-11'
 updated: 2024-10-16
 ---
 
@@ -8,7 +8,7 @@ updated: 2024-10-16
 
 Technologia OVHcloud Link Aggregation (OLA) została przez nas zaprojektowana w celu zwiększenia dostępności serwera oraz podniesienia wydajności połączeń sieciowych. Możesz w prosty sposób przeprowadzić agregację kart sieciowych, dzięki czemu Twoje połączenia sieciowe staną się redundantne. Jeśli jedno połączenie zostanie zerwane, ruch zostanie automatycznie przekierowany do innego dostępnego łącza. 
 
-**Ten przewodnik wyjaśnia, jak powiązać interfejsy sieciowe i wykorzystać je do OLA w Debianie 9.**
+**Ten przewodnik wyjaśnia, jak powiązać interfejsy sieciowe i wykorzystać je do OLA w Debianie 9-11.**
 
 ## Wymagania początkowe
 
@@ -56,7 +56,7 @@ Spowoduje to otwarcie pustego pliku tekstowego. Aby skonfigurować powiązanie, 
 
 ```bash
 auto bond0
-  iface bond0 inet static
+iface bond0 inet static
   address 10.0.0.1/24
   bond-mode 802.3ad
   bond-slaves eno1 eno2

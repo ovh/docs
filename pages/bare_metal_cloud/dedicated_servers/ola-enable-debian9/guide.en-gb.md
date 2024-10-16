@@ -1,6 +1,6 @@
 ---
-title: How to Configure Your NIC for OVHcloud Link Aggregation in Debian 9
-excerpt: Enable OVHcloud Link Aggregation in your Debian 9 server
+title: How to Configure Your NIC for OVHcloud Link Aggregation in Debian 9 to 11
+excerpt: "Enable OVHcloud Link Aggregation in your Debian server (from Debian 9 to Debian11)"
 updated: 2024-10-16
 ---
 
@@ -8,7 +8,7 @@ updated: 2024-10-16
 
 OVHcloud Link Aggregation (OLA) technology is designed by our teams to increase your server’s availability, and boost the efficiency of your network connections. In just a few clicks, you can aggregate your network cards and make your network links redundant. This means that if one link goes down, traffic is automatically redirected to another available link.
 
-**This guide explains how to bond your NICs to use them for OLA in Debian 9.**  
+**This guide explains how to bond your NICs to use them for OLA in Debian (versions 9 to 11)**  
 
 ## Requirements
 
@@ -56,7 +56,7 @@ This will open an empty text file. To configure the bond interface, insert the f
 
 ```bash
 auto bond0
-  iface bond0 inet static
+iface bond0 inet static
   address 10.0.0.1/24
   bond-mode 802.3ad
   bond-slaves eno1 eno2
