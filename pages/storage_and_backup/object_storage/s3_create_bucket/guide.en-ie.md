@@ -1,28 +1,29 @@
 ---
 title: Object Storage - Creating a bucket
-updated: 2024-10-15
+excerpt: Learn how to create an S3 Object Storage bucket from the OVHcloud Control Panel
+updated: 2024-10-16
 ---
 
 ## Objective
 
-**This guide aims to familiarise you with creating a bucket**
+**Learn how to create an S3 Object Storage bucket from the OVHcloud Control Panel.**
 
 > [!primary]
 >
-> - If you are interested in storage class ***Standard object storage - SWIFT API***, please follow this [guide](/pages/storage_and_backup/object_storage/pcs_create_container)
-> - If you are interested in storage class ***Cloud Archive - SWIFT API***, please follow this [guide](/pages/storage_and_backup/object_storage/pca_create_container).
+> - If you are interested in the **Standard object storage - SWIFT API** storage class, follow this [guide](/pages/storage_and_backup/object_storage/pcs_create_container)
+> - If you are interested in the **Cloud Archive - SWIFT API** storage class, follow this [guide](/pages/storage_and_backup/object_storage/pca_create_container).
 >
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
-- Access to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager\&from=https://www.ovh.co.uk/\&ovhSubsidiary=GB)
+- A [Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) in your OVHcloud account
+- Access to your [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
 ### Using the Control Panel
 
-To create an Object Storage bucket, first log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and open your `Public Cloud`{.action} project. Click on `Object Storage`{.action} in the navigation bar on the left and then on the `My containers`{.action} tab.
+To create an Object Storage bucket, first log in to your [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project. Click on `Object Storage`{.action} in the navigation bar on the left and then on the `My containers`{.action} tab.
 
 ![My Dashboard containers](images/01_object_storage-bucket_listing.png)
 
@@ -64,11 +65,11 @@ Or you can create a new S3 user:
 
 ![Create S3 user](images/object_storage-bucke_creation_step4_4.png)
 
-At this stage, you can decide whether or not enabling **versioning**. 
-Versioning allows you to keep multiple variants of an object in the same bucket. This feature helps **preserve, retrieve, and restore every version of every object stored in your buckets**, making it easier to recover from unintended user actions or application failures. By default, versioning is disabled on buckets, and you must explicitly enable it. [More details.](https://help.ovhcloud.com/csm/en-public-cloud-storage-s3-versioning?id=kb_article_view&sysparm_article=KB0063856)
+At this stage, you can decide whether or not to enable **versioning**.
+
+Versioning allows you to keep multiple variants of an object in the same bucket. This feature helps **preserve, retrieve, and restore every version of every object stored in your buckets**, making it easier to recover from unintended user actions or application failures. By default, versioning is disabled on buckets, and you must explicitly enable it. Find more information about versioning on our [dedicated guide](/pages/storage_and_backup/object_storage/s3_versioning).
 
 ![Enabling versioning](images/object_storage-bucke_creation_step5.png)
-
 
 You can now decide whether or not you wish to **encrypt your data** using [SSE-S3 (server-side encryption with OVHcloud Managed Keys)](/pages/storage_and_backup/object_storage/s3_encrypt_your_objects_with_sse_c).
 
@@ -90,6 +91,6 @@ Click on the name of your bucket to view its details and content:
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ie/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
