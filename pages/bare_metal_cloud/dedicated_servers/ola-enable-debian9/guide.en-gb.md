@@ -1,7 +1,7 @@
 ---
 title: How to Configure Your NIC for OVHcloud Link Aggregation in Debian 9
 excerpt: Enable OVHcloud Link Aggregation in your Debian 9 server
-updated: 2022-01-07
+updated: 2024-10-16
 ---
 
 ## Objective
@@ -62,8 +62,8 @@ auto bond0
   bond-slaves eno1 eno2
   bond-miimon 100
   bond-downdelay 200
-  bond-lacp-rate 1
-  bond-xmit_hash_policy layer2+3
+  bond-lacp-rate fast
+  bond-xmit_hash_policy layer3+4
 
   up ip -6 addr add fc10:0000:0000:0001::/64 dev bond0
 ```
