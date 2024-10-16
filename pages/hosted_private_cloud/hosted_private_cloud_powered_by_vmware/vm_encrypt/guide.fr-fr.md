@@ -6,7 +6,7 @@ updated: 2024-10-15
 
 ## Objectif
 
-**Découvrez comment mettre en oeuvre le chiffrement de vos machines virtuelles avec VM Encryption.**
+**Découvrez comment mettre en oeuvre le chiffrement de vos machines virtuelles avec un KMS externe.**
 
 ## Prérequis
 
