@@ -1,13 +1,13 @@
 ---
 title: 'Tutorial on Ubika WAAP Gateway : securing your OVHcloud infrastructure'
 excerpt: 'Find out how to securing your OVHcloud infrastructure with Ubika WAAP Gateway'
-updated: 2024-09-16
+updated: 2024-10-16
 ---
 
 ## Objective
 
 In today’s digital age, web application security is critical for protecting cloud infrastructure from sophisticated cyber threats. As businesses increasingly adopt cloud solutions, ensuring that web applications and APIs are secure is essential for maintaining data integrity and preventing breaches.
-**U**bika **W**AAP **G**ateway (UWG) offers advanced Web Application and API Protection (WAAP) features, including powerful tools such as web application firewalls (WAFs), API protection, bot management, and DDoS mitigation. These tools help protect your cloud environment from a wide array of application-level threats. This guide provides step-by-step instructions for deploying and configuring Ubika WAAP Gateway on the OVHcloud Public Cloud. By following this guide, you will learn how to configure private networks for management and workload, deploy Ubika WAAP Gateway instances, set up High Availability (HA) using additional IP and vRack, and ensure a secure and reliable architecture for your cloud infrastructure.
+**U**bika **W**AAP **G**ateway (UWG) offers advanced Web Application and API Protection (WAAP) features, including powerful tools such as web application firewalls (WAFs), API protection, bot management, and DDoS mitigation. These tools help protect your cloud environment from a wide array of application-level threats. This guide provides step-by-step instructions for deploying and configuring Ubika WAAP Gateway on the OVHcloud Public Cloud. By following this guide, you will learn how to configure private networks for management and workload, deploy Ubika WAAP Gateway instances, set up High Availability (HA) using Additional IP and vRack and public IP routing, and ensure a secure and reliable architecture for your cloud infrastructure.
 
 **This guide explains how to securing your OVHcloud infrastructure with Ubika WAAP Gateway deployed on Public Cloud.**
 
@@ -18,9 +18,10 @@ In today’s digital age, web application security is critical for protecting cl
 - An [OpenStack user](/pages/public_cloud/compute/create_and_delete_a_user) (optional)
 - Basic networking knowledge
 - Ubika account on the [Ubika website](https://my.ubikasec.com/){.external}
-- Ensure that an appropriate block of additional IPs is available.
+- Ensure that an appropriate block of Additional IPs is available.
 - Ensure that the vRack is enabled and configured to allow secure communication between the components of the infrastructure.
-- Ubika WAAP Gateway License BYOL (**B**ring **Y**our **O**wn **L**icense), obtained directly from Ubika via the [official Ubika website](https://my.ubikasec.com/){.external}. You will need to provide it during the installation and configuration process.
+- Additional IP address for ensuring network failover and high availability setup.
+- Ubika WAAP Gateway Licence BYOL (**B**ring **Y**our **O**wn **L**icence), obtained directly from Ubika via the [official Ubika website](https://my.ubikasec.com/){.external}. You will need to provide it during the installation and configuration process.
 
 ## Instructions
 
@@ -28,27 +29,27 @@ In addition to the installation and configuration of UWG, this tutorial offers a
 
 - [Configure your vRack](#step1)
 - [Install and configure Ubika WAAP Gateway on your Public Cloud environment](#step2)
-- [Configure the licenses](#step3)
+- [Configure the licences](#step3)
 - [Create your web server environment](#step4)
 
 ### Configure your vRack <a name="step1"></a>
 
-In this step, we are configuring the vRack, a private virtual network provided by OVHcloud. The vRack allows you to interconnect multiple instances or servers within a Public Cloud environment, ensuring network isolation while maintaining secure communication. By adding your Public Cloud project and your IP block to the same vRack, you can enable your UWG instances to communicate securely, while keeping full control over IP address management.
+In this step, we are configuring the vRack, a private virtual network provided by OVHcloud. The vRack allows you to interconnect multiple instances or servers within a Public Cloud environment, ensuring network isolation while maintaining secure communication. By adding your Public Cloud project and your Additional IP block to the same vRack, along with public IP routing, you can enable your UWG instances to communicate securely, while keeping full control over IP address management. Private vRack network also allows you to secure Baremetal Cloud servers or Private Cloud VMs with security appliance deployed on top of Public Cloud.
 
-**Add your public cloud project and your IP block to the same vRack**
+**Add your public cloud project and your Additional IP block to the same vRack**
 
 Please refer to the guide [Configuring an IP block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack) for more information.
 
 Below is the architecture that we are going to set-up.
 
-![Ubika vrack](./images/ubika-rtvrack.png)
+![Ubika vrack](./images/ubika-vrack.png)
 
 ### Install and configure Ubika WAAP Gateway on your Public Cloud environment <a name="step2"></a>
 
 > [!primary]
 > In this tutorial, the installation and configuration of UWG is done primarily via the command line. Open a terminal to execute the instructions.
 >
-> Please note that all sections related to « High Availability » are optional. They are included to demonstrate how to set up the system with two instances in an active/passive mode for high availability. Normally, it can also function with just one instance if that is sufficient for your needs.
+> Please note that all sections related to « High Availability » are optional as well as using vRack network with Additional IP. They are included to demonstrate how to set up the system with two instances in an active/passive mode for high availability. In minimal version, it can also function with just one instance if that is sufficient for your needs.
 
 #### Configure Ubika WAAP Gateway management networking
 
@@ -220,7 +221,7 @@ UWG managed-2 :
 
 ![Ubika vrack](./images/virtual-interface-2.png)
 
-* Remove the default gateway and add the RTvRack gateway for each managed Ubika (Setup -> Networking -> Routes)
+* Remove the default gateway and add the vRack gateway for each managed Ubika (Setup -> Networking -> Routes)
 
 UWG managed-1 :
 
@@ -236,7 +237,7 @@ UWG managed-2 :
 
 * Add an IP of the IP block as Virtual IP
 
-![Ubika vrack](./images/ha-2-rtvrack.png)
+![Ubika vrack](./images/ha-2-vrack.png)
 
 * Add the two managed UWG instances as VRRP members using the workload interfaces (eth1)
 
@@ -246,17 +247,23 @@ UWG managed-2 :
 
 ![Ubika vrack](./images/ha-4.png)
 
-#### Configure the licenses <a name="step3"></a>
+#### Configure the licences <a name="step3"></a>
 
-Ubika WAAP Gateway licenses are available directly from Ubika via the [official Ubika website](https://my.ubikasec.com/){.external}. Depending on your deployment needs, you can choose between a single VM license or a High Availability mode license, which supports an Active-Backup configuration with two instances. The licenses also vary based on the SSL TPS (Transactions Per Second), supporting either multiple SSL certificates or failover capabilities.
+Ubika WAAP Gateway licences are available directly from Ubika via the [official Ubika website](https://my.ubikasec.com/){.external}. Depending on your deployment needs, you can choose between a single VM licence or a High Availability mode licence, which supports an Active-Backup configuration with two data-plane instances and one-or-more control plane instances. The licences also vary based on the SSL TPS (Transactions Per Second), supporting either multiple SSL certificates or failover capabilities.
 
-To apply the licenses, you will need to provide the following information to UWG :
+We strongly recommend to use latest compute instances for appliance deployments, i.e.:
+
+- C3-8 for basic needs and VMcloud licences.
+- C3-16, C3-32, C3-64 and C3-128 for Ubika Enterprise Edition 1500, 2450, 4450, 5450 and 6450 licences respectively.
+- C3-16 for small MGMT console, or C3-128 for big MGMT console (depends on the observability options enabled).
+
+To apply the licences, you will need to provide the following information to UWG :
 
 - Type of UWG deployment (single instance or HA)
 - Serial number of the UWG instance
 - Number of vCPUs and the amount of RAM allocated to each instance
 
-Once you receive the licenses from UWG, apply them to the corresponding instances to complete the setup.
+Once you receive the licences from Ubika, apply them to the corresponding instances to complete the setup.
 
 ### Create your web server environment <a name="step4"></a>
 
@@ -347,7 +354,7 @@ openstack loadbalancer member create --address 192.168.2.237 --protocol-port 80 
 ![Ubika vrack](./images/reverse-proxy.png)
 
 * Create a DNS A record for the webserver pointing to the virtual IP of the Ubika deployment
-![Ubika vrack](./images/dns-rtvrack.png)
+![Ubika vrack](./images/dns-vrack.png)
 
 * Get the VIP of the load balancer
 
@@ -372,3 +379,9 @@ curl http://ubika.lab-sg.architects.ovh
 
 ubika-test-webserver-1
 ```
+
+## Go further
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+Join our community of users on <https://community.ovh.com/en/>.

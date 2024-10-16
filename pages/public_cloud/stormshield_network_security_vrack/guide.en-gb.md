@@ -1,12 +1,12 @@
 ---
 title: 'Tutorial on Stormshield Network Security : securing your OVHcloud infrastructure'
 excerpt: 'Find out how to securing your OVHcloud infrastructure with Stormshield Network Security'
-updated: 2024-09-16
+updated: 2024-10-16
 ---
 
 ## Objective
 
-In today's rapidly evolving digital landscape, securing cloud infrastructure has become a top priority for organizations of all sizes. As businesses increasingly rely on cloud solutions for their operations, ensuring the protection of sensitive data and maintaining network integrity are critical tasks. **S**tormshield **N**etwork **S**ecurity (SNS) is a comprehensive security solution designed to protect cloud environments from a wide range of threats. This guide provides step-by-step instructions for deploying and configuring SNS on the OVHcloud Public Cloud with RTvRack, covering key features such as network firewalls, IPSec VPNs, and SSL/TLS VPNs. By following this guide, you will enhance the security of your OVHcloud Public Cloud infrastructure and ensure safe and secure operations.
+In today's rapidly evolving digital landscape, securing cloud infrastructure has become a top priority for organizations of all sizes. As businesses increasingly rely on cloud solutions for their operations, ensuring the protection of sensitive data and maintaining network integrity are critical tasks. **S**tormshield **N**etwork **S**ecurity (SNS) is a comprehensive security solution designed to protect cloud environments from a wide range of threats. This guide provides step-by-step instructions for deploying and configuring SNS on the OVHcloud Public Cloud with vRack and public IP routing, covering key features such as network firewalls, IPSec VPNs, and SSL/TLS VPNs. By following this guide, you will enhance the security of your OVHcloud Public Cloud infrastructure and ensure safe and secure operations.
 
 **This guide explains how to securing your OVHcloud infrastructure with Stormshield Network Security deployed on Public Cloud.**
 
@@ -17,7 +17,9 @@ In today's rapidly evolving digital landscape, securing cloud infrastructure has
 - An [OpenStack user](/pages/public_cloud/compute/create_and_delete_a_user) (optional)
 - Basic networking knowledge
 - Stormshield account on the [Stormshield website](https://www.stormshield.com/en/){.external}
-- Stormshield Network Security License BYOL (**B**ring **Y**our **O**wn **L**icense), obtained through [third-party partners or resellers](https://www.stormshield.com/partner/partner-finder/){.external}, as you will need to provide it during the installation and configuration process.
+- Ensure that the vRack is enabled and configured to allow secure communication between the components of the infrastructure.
+- Additional IP address for ensuring network failover and high availability setup.
+- Stormshield Network Security Licence BYOL (**B**ring **Y**our **O**wn **L**icence), obtained through [third-party partners or resellers](https://www.stormshield.com/partner/partner-finder/){.external}, as you will need to provide it during the installation and configuration process.
 
 ## Instructions
 
@@ -34,7 +36,7 @@ In addition to the installation and configuration of Stormshield Network Securit
 > [!primary]
 > In this tutorial, the installation and configuration of Stormshield Network Security is done primarily via the command line. Open a terminal to execute the instructions.
 >
-> Please note that all sections related to « High Availability » or « stormshield-2 » are optional. They are included to demonstrate how to set up the system with two instances in an active/passive mode for high availability. Normally, it can also function with just one instance if that is sufficient for your needs.
+> Please note that all sections related to « High Availability » or « stormshield-2 » are optional as well as using vRack network with Additional IP. They are included to demonstrate how to set up the system with two instances in an active/passive mode for high availability. In minimal version, it can also function with just one instance if that is sufficient for your needs.
 
 > [!primary]
 > In this scenario, we will use two virtual machines setup for the security appliance to achieve High Availability (HA), and an additional VM for management. This setup ensures failover protection and continuous service availability. For more examples and detailed guidance on scalability options, please refer to the [Stormshield's documentation](https://documentation.stormshield.eu/HOME/Content/Website_Topics/Root-HomePage-EN.htm){.external}.
@@ -42,9 +44,9 @@ In addition to the installation and configuration of Stormshield Network Securit
 
 #### Configure your vRack
 
-In this step, we are configuring the vRack, a private virtual network provided by OVHcloud. The vRack allows you to interconnect multiple instances or servers within a Public Cloud environment, ensuring network isolation while maintaining secure communication. By adding your Public Cloud project and your IP block to the same vRack, you can enable your SNS instances to communicate securely, while keeping full control over IP address management.
+In this step, we are configuring the vRack, a private virtual network provided by OVHcloud. The vRack allows you to interconnect multiple instances or servers within a Public Cloud environment, ensuring network isolation while maintaining secure communication. By adding your Public Cloud project and your Additional IP block to the same vRack, you can enable your SNS instances to communicate securely, while keeping full control over IP address management. Private vRack network also allows you to secure Baremetal Cloud servers or Private Cloud VMs with security appliance deployed on top of Public Cloud.
 
-**Add your public cloud project and your IP block to the same vRack**
+**Add your public cloud project and your Additional IP block to the same vRack**
 
 In this guide sample, the IP block is `147.135.161.152/29`.
 We use the first usable IP `147.135.161.153` for the first instance of SNS and use temporally the second usable IP `147.135.161.154` for the second SNS.
@@ -54,7 +56,7 @@ Please refer to the guide [Configuring an IP block in a vRack](/pages/bare_metal
 
 Below is the architecture that we are going to set-up.
 
-![SNS vrack](./images/stormshield-ha-rtvrack.png)
+![SNS vrack](./images/stormshield-ha-vrack.png)
 
 #### Configure OpenStack networking
 
@@ -92,24 +94,30 @@ openstack subnet create --network stormshield-ha --subnet-range 192.168.2.0/29 -
 
 Go to the `download` section of the [official Stormshield website](https://documentation.stormshield.eu/SNS/v4/fr/Content/PAYG_Deployment_Guide/Downloading_installation_file.htm){.external}. Log in to your Stormshield account and follow the instructions to download the Stormshield OpenStack image.
 
-Go to the folder where you have downloaded your SNS Openstack image and upload the image (for this tutorial, we use the image `utm-SNS-EVA-4.7.6-openstack.qcow2`) :
+Go to the folder where you have downloaded your SNS Openstack image and upload the image (for this tutorial, we use the image `utm-SNS-EVA-4.8.3-openstack.qcow2`) :
 
 ```console
-openstack image create --disk-format raw --container-format bare --file ./utm-SNS-EVA-4.7.6-openstack.qcow2 stormshield-SNS-EVA-4.7.6
+openstack image create --disk-format raw --container-format bare --file ./utm-SNS-EVA-4.8.3-openstack.qcow2 stormshield-SNS-EVA-4.7.6
 ```
 
 * Create the SNS instances (for this example, we called them `stormshield-1` and `stormshield-2`) :
 
 ```console
-openstack server create --flavor b2-15 --image stormshield-SNS-EVA-4.7.6 --network stormshield-ext --network stormshield-vlan200 --network stormshield-ha stormshield-1
+openstack server create --flavor b3-32 --image stormshield-SNS-EVA-4.7.6 --network stormshield-ext --network stormshield-vlan200 --network stormshield-ha stormshield-1
 ```
 
 ```console
-openstack server create --flavor b2-15 --image stormshield-SNS-EVA-4.7.6 --network stormshield-ext --network stormshield-vlan200 --network stormshield-ha stormshield-2
+openstack server create --flavor b3-32 --image stormshield-SNS-EVA-4.7.6 --network stormshield-ext --network stormshield-vlan200 --network stormshield-ha stormshield-2
 ```
 
 > [!primary]
-> In this tutorial, we use the `b2-15` instance. To avoid compatibility problems, we suggest to not use the following instance types : b3, c3, r3.
+> For performance reasons we suggest to use listed VM flavours for given SNS EVA licence types:
+>
+> - EVA1: B3-16 or B3-32 flavours
+> - EVA2: B3-32
+> - EVA3: B3-32 or B3-64
+> - EVA4: B3-128
+> - EVAU: B3-256
 >
 
 #### Configure the SNS instances
@@ -154,7 +162,7 @@ ennetwork
 
 * Do the same configuration for the second SNS but with the second IP address `147.135.161.154` of our IP block for the external interface instead of `147.135.161.153`.
 
-* Add a different license on both SNS instances by following the [official documentation](https://documentation.stormshield.eu/SNS/v4/en/Content/Installation_and_first_time_configuration/Firewall_license_installation.htm){.external}.
+* Add a different licence on both SNS instances by following the [official documentation](https://documentation.stormshield.eu/SNS/v4/en/Content/Installation_and_first_time_configuration/Firewall_license_installation.htm){.external}.
 
 * Create a firewall rule similar to this on both SNS in the web GUI :
 
@@ -521,3 +529,7 @@ PING <ip_address> (<ip_address>) 56(84) bytes of data.
 ```
 
 ## Go further
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+Join our community of users on <https://community.ovh.com/en/>.
