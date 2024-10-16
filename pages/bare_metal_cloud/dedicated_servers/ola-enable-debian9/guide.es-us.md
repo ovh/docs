@@ -1,7 +1,7 @@
 ---
-title: 'Configurar un NIC para el servicio OVHcloud Link Aggregation en Debian 9'
-excerpt: 'Activar el servicio OVHcloud Link Aggregation en un servidor Debian 9'
-updated: 2022-01-07
+title: 'Configurar un NIC para el servicio OVHcloud Link Aggregation en Debian 9 a 11'
+excerpt: 'Activar el servicio OVHcloud Link Aggregation en un servidor Debian 9 a 11'
+updated: 2024-10-16
 ---
 
 > [!primary]
@@ -12,7 +12,7 @@ updated: 2022-01-07
 
 La tecnología OVHcloud Link Aggregation (OLA) está diseñada para aumentar la disponibilidad de su servidor y mejorar la eficiencia de sus conexiones de red. En solo unos clics, es posible añadir sus tarjetas de red y hacer que sus enlaces de red sean redundantes. De este modo, si un enlace se cae, el tráfico se redirige automáticamente hacia otro enlace disponible.
 
-**Esta guía explica cómo conectar sus NIC (Network Interface Controller) para utilizarlos con el servicio OLA en Debian 9.**
+**Esta guía explica cómo conectar sus NIC (Network Interface Controller) para utilizarlos con el servicio OLA en Debian 9 a 11.**
 
 ## Requisitos
 
@@ -60,14 +60,14 @@ Se abrirá un archivo de texto vacío. Para configurar la interfaz de enlace, in
 
 ```bash
 auto bond0
-  iface bond0 inet static
+iface bond0 inet static
   address 10.0.0.1/24
   bond-mode 802.3ad
   bond-slaves eno1 eno2
   bond-miimon 100
   bond-downdelay 200
-  bond-lacp-rate 1
-  bond-xmit_hash_policy layer2+3
+  bond-lacp-rate fast
+  bond-xmit_hash_policy layer3+4
 
   up ip -6 addr add fc10:0000:0000:0001::/64 dev bond0
 ```
@@ -83,7 +83,7 @@ Por último, reinicie el servicio de red utilizando el siguiente comando:
 systemctl restart networking
 ```
 
-Este reinicio puede tardar unos minutos ya que se está creando la interfaz de enlace.  Para comprobar que el enlace funciona correctamente, haga ping en otro servidor en el mismo vRack. Si funciona, ha configurado el enlace correctamente. En caso contrario, compruebe que la configuración es correcta o reinicie el servidor.
+Este reinicio puede tardar unos segundos ya que se está creando la interfaz de enlace.  Para comprobar que el enlace funciona correctamente, haga ping en otro servidor en el mismo vRack. Si funciona, ha configurado el enlace correctamente. En caso contrario, compruebe que la configuración es correcta o reinicie el servidor.
 
 ## Más información
 
