@@ -222,7 +222,23 @@ The `ReplicationStatus` attribute can have the following values:
 > 
 > If one or more destination fail replication, the value of the attribute becomes "*FAILED*".
 
-#### Examples of replication configuration
+
+### Replication between buckets with object lock enabled
+Object Lock can be used with S3 Replication to enable automatic copying of locked objects across buckets. For replicated objects, the object lock configuration of the source bucket will be used in the destination bucket. However, if you upload an object directly to the destination bucket (outside of the replication process), it will use the lock configuration of the destination bucket.
+
+> [!warning]
+> To replicate data in buckets with object lock on, you must have the following prerequisites:
+> - Object Lock must be enabled on both source and destination buckets
+> - you must provide a token when uploading your replication configuration on the source bucket
+
+You can obtain a token by contacting our support team. Once you are provided a token, via the cli, you can set it in the "--token" parameter of the put-bucket-replication command:
+
+```bash
+$AWS s3api put-bucket-replication --replication-configuration "file://path_to_replication_conf_file" --bucket bucket_name --token $TOKEN
+```
+
+
+### Examples of replication configuration
 
 Simple replication between 2 buckets:
 
