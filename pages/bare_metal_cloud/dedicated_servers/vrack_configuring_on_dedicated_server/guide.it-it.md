@@ -1,7 +1,7 @@
 ---
 title: 'Configurare due o più server dedicati nella vRack'
 excerpt: 'Scopri come configurare due o più server dedicati nella vRack'
-updated: 2023-09-12
+updated: 2024-10-16
 ---
 
 > [!primary]
@@ -18,16 +18,16 @@ La vRack (rack virtuale) OVHcloud permette di unire virtualmente diversi server 
 
 ## Prerequisiti
 
-- Un servizio [vRack](https://www.ovh.it/soluzioni/vrack/) attivato nel tuo account
+- Un servizio [vRack](/links/network/vrack) attivato nel tuo account
 - Diversi [server dedicati](/links/bare-metal/bare-metal) (compatibili con la vRack)
 - Avere accesso amministratore (sudo) al server via SSH o RDP
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Aver selezionato una gamma di indirizzi IP privati
 
 > [!warning]
-> Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](https://eco.ovhcloud.com/it/about/).
+> Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](/links/bare-metal/eco-about).
 >
-> Per maggiori informazioni, consulta la nostra [a confronto](https://eco.ovhcloud.com/it/compare/).
+> Per maggiori informazioni, consulta la nostra [a confronto](/links/bare-metal/eco-compare).
 
 ## Procedura
 
@@ -80,7 +80,40 @@ Sulla linea che inizia con ```link ether```, verifica che questa interfaccia cor
 link ether f0:00:00:ef:0e:f0
 ```
 
-##### **Debian**
+##### **Debian 12**
+
+Utilizza il editor di testo scelto per aprire il file di configurazione di rete all'interno `/etc/netplan/`per modificarlo. Il file si chiama `50-cloud-init.yaml`.
+
+```bash
+editor /etc/netplan/50-cloud-init.yaml
+```
+
+Aggiungi la configurazione IP alla configurazione esistente dopo la linea `ethernet`:
+
+```yaml
+    ethernets:
+        NETWORK_INTERFACE:
+            dhcp4: no
+            addresses:
+              - 192.168.0.1/16
+```
+
+> [!warning]
+>
+> È importante rispettare l'allineamento di ciascun elemento nei file `yaml`, come indicato nell'esempio di cui sopra. Non utilizzare il tasto di tabulazione per creare la tua spaziatura. Deve essere utilizzato solo il tasto spazio.
+>
+
+Salva le modifiche nel file di configurazione e lascia l'editor.
+
+Applica la configurazione:
+
+```bash
+netplan apply
+```
+
+Ripeti questa procedura per gli altri server e attribuisci a ciascuno di essi un indirizzo IP non utilizzato a partire dalla tua gamma privata. Da questo momento, i tuoi server potranno comunicare tra loro sulla rete privata.
+
+##### **Debian 11**
 
 In un editor di testo, apri il file di configurazione di rete all'indirizzo `/etc/network/interfaces.d` per modificarlo. Il file si chiama `50-cloud-init`.
 
@@ -217,4 +250,4 @@ Ripeti questa procedura per gli altri server e attribuisci a ciascuno di essi un
 
 [Creare due o più VLAN nella vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack).
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).
