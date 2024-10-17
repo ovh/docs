@@ -188,6 +188,7 @@
             + [High Grade Dedicated Servers - Upgrading your SSD SAS Western Digital SS530 firmware](bare_metal_cloud/dedicated_servers/wdc-sas-ss530-fw-upgrade)
         + [Network and IP management](bare-metal-cloud-dedicated-servers-network-and-ip-management)
             + [Configuring an IPv6 block in a vRack](bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack)
+            + [Configuring an IPv6 address on a virtual machine](bare_metal_cloud/dedicated_servers/configure-an-ipv6-on-a-vm)
             + [Moving an Additional IP](bare_metal_cloud/dedicated_servers/move-failover-ip)
             + [Configuring the Edge Network Firewall](bare_metal_cloud/dedicated_servers/firewall_network)
             + [Protecting a game server with the application firewall](bare_metal_cloud/dedicated_servers/firewall_game_ddos)
