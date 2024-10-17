@@ -14,7 +14,7 @@ Instancje Local Zones są rozszerzeniem [regionów](/links/public-cloud/regions-
 
 Instancje Local Zones są strategicznie rozmieszczone w pobliżu obszarów o wysokim zapotrzebowaniu użytkowników. Ich głównym celem jest zminimalizowanie czasu potrzebnego na transfer danych między użytkownikiem a chmurą, aby usługi były szybsze i bardziej reaktywne oraz aby spełnić wymagania stawiane przez Data residency.
 
-Więcej informacji znajdziesz na naszej [stronie poświęconej instancjom Local Zone](/links/public-cloud/local-zones/).
+Więcej informacji znajdziesz na naszej [stronie poświęconej instancjom Local Zone](/links/public-cloud/local-zones).
 
 **Poznaj funkcje oraz aktualne i przyszłe możliwości instancji Local Zones.**
 
