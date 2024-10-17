@@ -1,7 +1,7 @@
 ---
 title: "Datamotive - Introduction"
 excerpt: "Découvrez une présentation de la solution de multi-cloud Datamotive, pour une hybridation de Hosted Private Cloud - VMware on OVHcloud avec d'autres plateform"
-updated: 2024-09-26
+updated: 2024-10-17
 ---
 
 ## Objectif
@@ -12,82 +12,46 @@ updated: 2024-09-26
 
 Orchestrateur multi-cloud, Datamotive a reussi à construire une solution qui permet de simplifier le processus d'hybridation des environnements cloud privée et publique.
 
-Elle dispose de 3 produits au sein de ça solution :
+### Introduction
+
+La plateforme de portabilité de la charge de travail multicloud et hybride de DataMotive offre la reprise après sinistre et la migration de la charge de travail en tant que produits en libre-service et permet une réplication et une récupération simplifiées entre les hyperviseurs.
+
+La plateforme **Datamotive Workload Portability** peut être utilisée pour protéger ou migrer vos machines virtuelles/instances sur le site principal en les répliquant périodiquement sur le site de récupération. Les machines virtuelles/instances protégées peuvent ensuite être récupérées selon les besoins dans le site de récupération en tant qu’instances natives cibles (par exemple, les instances protégées AWS EC2 sont récupérées en tant que machines virtuelles VMware natives).
+
+Ce guide fournit des informations sur le déploiement, la configuration et la gestion des produits Datamotive. Il fournit également une vue d'ensemble de la plateforme Datamotive et de ses différents composants.
+
+La plateforme dispose de 3 produits au sein de sa solution :
 
 * `EasyMigrate` : Transformer la portabilité et la gestion des charges de travail.
 * `EasyHybridDR` : Protégez vos charges de travail en toute transparence.
 * `EasyAnalytics` : Transformez vos données en informations exploitables.
 
-### Étape 1 - La console Datamotive
+### Public visé
 
-#### Comment se connecter à la console
+Ces informations sont destinées à toute personne souhaitant utiliser la solution Datamotive. Ces informations sont destinées aux administrateurs expérimentés de la virtualisation et de l'infrastructure cloud qui connaissent les technologies de virtualisation, la continuité des activités et les opérations des centres de données et du cloud.
 
-Pour vous connecter à la console Datamotive, utilisez l'adresse IP ou le nom de domaine que vous avez configuré : 
+**Version de la solution DataMotive prise en charge**
 
-- `Url` : https://XX.XX.XX.XX:5000/dashboard
+Le contenu de ce guide est applicable à la solution **Datamotive EasyMigrate & EasyHybridDR** version `1.1.2`.
 
-Le port d'accès utilisé par défaut à la console de management est le port `5000`.
+### Architecture des composants de DataMotive
 
-Si vous utilisez un annuaire Active Directory, vous pouvez utiliser le bouton `Sign In with Active Directory`.
+La plateforme **Datamotive Workload Portability** est composée des composants suivants déployés en tant que machines virtuelles indépendantes. Tous les composants sont livrés sous forme d’appliances virtuelles ou d’images de machines cloud natives, en fonction de l’infrastructure cible. Toutes les appliances virtuelles sont entièrement sécurisées et basées sur des images certifiées CIS Ubuntu-20 Server Edition.
 
-![Datamotive Login](images/datamotive_login.png){.thumbnail}
+1. **Datamotive Management Server** : une appliance virtuelle déployée dans une infrastructure de site protégée ou de récupération où les machines virtuelles doivent être protégées, récupérées ou migrées. *Management Server* fournit une interface utilisateur, une CLI et des API RESTful aux administrateurs informatiques pour qu’ils puissent effectuer les activités Day0-DayN. Le serveur fait également office de nœud de réplication. Il est livré en tant qu'OVA pour l'environnement VMware on OVHcloud, image pour OpenStack et image de machine native cloud pour les environnements OVHcloud, AWS, GCP et Azure.
+2. **Datamotive Replication Node** : une appliance virtuelle déployée sur un site protégé ou de récupération. Elle est utilisé pour exécuter les tâches de réplication de données. Ce nœud peut être utilisé pour augmenter la capacité de réplication globale de la solution en fonction du nombre de machines virtuelles/instances protégées. Le nombre maximum de tâches de réplication parallèle (1 tâche de réplication par disque/volume protégé) supporté par chaque nœud est défini par la limite fournie par les plateformes Cloud (la limite par défaut pour la réplication est de 40 et 25 pour la restauration). Il est livré en tant qu'OVA pour l'environnement VMware on OVHcloud, image pour OpenStack on OVHcloud et image de machine native cloud pour l'environnement OVHcloud, AWS, GCP et Azure. La solution DataMotive évolue horizontalement à l'aide des nœuds de réplication pour les environnements de grande taille où un grand nombre de charges de travail doivent être répliquées en parallèle.
+3. **Datamotive Prep Node** : une appliance virtuelle Windows déployée dans l'infrastructure du site de récupération (OVHcloud, VMware on OVHcloud, AWS, GCP ou Azure). Cette appliance est sous tension et utilisée uniquement lorsque les machines virtuelles Windows sont récupérées ou migrées. Il est livré en tant qu'OVA pour l'environnement VMware, image pour OpenStack et image de machine native cloud pour l'environnement AWS, GCP et Azure. Chaque nœud de préparation prend en charge la récupération parallèle d’un maximum de 25 machines virtuelles/instances.
+4. **Datamotive DeDupe Node** : une appliance virtuelle déployée à la fois dans l'infrastructure du site source et du site de récupération (public cloud) (OVHcloud, AWS, GCP et Azure). Il gère la somme de contrôle et les données des blocs de données transférés vers le site de récupération. Le nœud DeDupe, lorsqu’il est configuré pour être utilisé, permet d’utiliser des segments de données déjà répliqués, réduisant ainsi considérablement le transfert de données. Il est livré en tant qu'OVA pour l'environnement VMware on OVHcloud, image pour OpenStack on OVHcloud et image cloud native pour les environnements OVHcloud, AWS, GCP et Azure.
 
-Vous serez redirigé sur le dashboard Datamotive.
+### Architecture de référence de déploiement et topologie réseau
 
-![Datamotive Login](images/datamotive_dashboard.png){.thumbnail}
+![Datamotive](images/datamotive_schema.png){.thumbnail}
 
-### Étape 2 - Les fonctionnalités de la console
+### Que pouvez-vous faire avec Datamotive ?
 
-#### Configure
+Datamotive fournit actuellement une interface utilisateur graphique, des API et un kit de développement Python entièrement fonctionnels et intuitifs pour effectuer toutes les opérations prises en charge. Une fois déployé, les administrateurs peuvent accéder à l'interface utilisateur graphique de Datamotive en se connectant au serveur de gestion sur le site protégé. L'URL permettant d'accéder au serveur d'administration est Server IP Address>:5000. Les informations d'identification par défaut pour accéder à l'application sont administrateur/admin.
 
-La deuxième partie de la console Datamotive est la section de configuration `Configure`.
-
-Elle dispose de 3 sous-sections :
-
-- `Nodes`
-- `Sites`
-- `Protection Plans`
-
-La section **Nodes** permet de lister les nodes sur lequel vous avez connecté votre console. Vous disposez de toutes les informations utiles nécessaires tel que le `Hostname`, `Type`, `Platform Type`, `Version`, `Ports`, `Status`.
-
-![Datamotive Login](images/datamotive_nodes.png){.thumbnail}
-
-- `Name` : Nom de la VM ou de l'instance du nœud déployé.
-- `Hostname` : Adresse IP ou FQDN du noeud.
-- `Username` : Nom d'utilisateur du noeud déployé.
-- `Password` : Mot de passe du noeud déployé.
-- `Type` : Type de nœud, Replication - Le nœud agira en tant qu'unité de réplication sans état et gérera les opérations de réplication fournies. Déduplication - Le nœud effectuera la déduplication des données. Management - Le noeud agira en tant que serveur de gestion.
-- `Platform type` : Sur laquelle le nœud est déployé. Les types de plateforme pris en charge sont VMware, AWS, GCP, Azure et OpenStack.
-- `Management Port` : Port sur lequel le service de gestion est exécuté.
-- `Replication Data Port` : Port sur lequel le service de données de réplication est en cours d'exécution.
-- `Replication Controller Port` : Port sur lequel le service de contrôleur de réplication est en cours d'exécution.
-Vous disposez d'une bar d'edition qui vous permet d'ajouter des nodes, de les éditer, de les supprimer, de les allumer et les éteindre.
-
-Voici une capture de l'édition d'un node existant :
-
-![Datamotive Node](images/datamotive_nodes_edit.png){.thumbnail}
-
-Pour l'ajout d'un node, vous disposez de plusieurs types de node, `Management`, `Replication`, `Prep Node`, `Dedupe Server`.
-
-Voici une capture de la création d'un nouveau node :
-
-![Datamotive Node](images/datamotive_nodes_new.png){.thumbnail}
-
--`Sites`
-
-Pour la section **Sites** permet de lister les Sites pris en charge pour la protection et la récupération au sein de Datamotive.
-
-Pour créer un Site, vous devez avoir : `Name`, `Description`, `Site`, `Type`, `Platform Type`, `Node`, `Region`.
-
-Les nouveaux éléments de cette section sont la `Région` et le `Site Type` :
-
-- `Region` : Région du site cloud où le serveur de gestion est déployé et où la protection doit être effectuée.
-- `Site Type` : Les types de sites pris en charge, vous avez deux choix `Protection` et `Recover`.
-
-Vous avez aussi dans cette section une bar de Management avec la possibilité d'**Edition**, de **Création** et de **Suppression** de Sites.
-
-- `Protection Plans`
-
+Les administrateurs de reprise après sinistre peuvent effectuer les opérations Day1-DayN suivantes à l'aide de l'interface utilisateur graphique Datamotive. Les sections suivantes de ce document décrivent en détail l'interface utilisateur et les options associées.
 
 ## Aller plus loin
 
