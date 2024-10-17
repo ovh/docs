@@ -121,7 +121,7 @@ Saisissez les identifiants de la base de données (nom d'utilisateur et mot de p
 
 ## Aller plus loin <a name="go-further"></a>
 
-[Comment gérer votre module en 1 clic ](/pages/web_cloud/web_hosting/cms_manage_1_click_module)
+[Comment gérer votre module en 1 clic](/pages/web_cloud/web_hosting/cms_manage_1_click_module)
 
 [Tutoriel - Installer manuellement WordPress](/pages/web_cloud/web_hosting/cms_manual_installation_wordpress)
 
