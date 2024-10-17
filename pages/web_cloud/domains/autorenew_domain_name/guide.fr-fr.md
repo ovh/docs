@@ -1,7 +1,7 @@
 ---
 title: 'Comment renouveler mes noms de domaine OVHcloud'
 excerpt: 'Découvrez pourquoi et comment renouveler vos noms de domaine OVHcloud'
-updated: 2024-08-19
+updated: 2024-10-17
 ---
 
 ## Objectif 
@@ -124,6 +124,11 @@ Pour plus d'informations sur la résiliation des services OVHcloud, suivez les i
 
 ### Accéder à la facture du renouvellement de mon nom de domaine
 
+> [!primary]
+>
+> La facture n’est disponible que le jour du renouvellement du nom de domaine (30 jours après le prélèvement en cas de renouvellement automatique).
+>
+
 Une mention `Facture à payer` s'affiche lorsqu'une facture est en attente de règlement et lorsque :
 
 - Vous possédez des services en renouvellement automatique.
@@ -143,6 +148,9 @@ Il vous suffit alors de choisir l'action `Régler ma facture`{.action} qui vous 
 >> Au-delà de la période de rédemption, le nom de domaine entre dans une phase de suppression pouvant s'étaler sur plusieurs jours, avant de redevenir disponible dans le domaine public. Si vous souhaitez alors en récupérer l'usage, nous vous conseillons d'utiliser l'outil [Whois d'un nom de domaine](https://www.ovhcloud.com/fr/domains/whois/) pour vérifier sa disponibilité régulièrement.
 > Je ne souhaite pas renouveler mon nom de domaine mais le transférer vers un autre bureau d'enregistrement que OVHcloud. Comment faire ?
 >> Suivez les instructions de notre guide « [Transférer un nom de domaine vers un autre bureau d'enregistrement](/pages/web_cloud/domains/transfer_outgoing_domain) ».
+> Je suis en renouvellement automatique et j’ai été prélevé automatiquement. Or, je ne souhaite pas conserver mon nom de domaine et je veux être remboursé.
+>> Il est possible d’être automatiquement remboursé jusqu’à 10 jours avant la date de renouvellement effective du nom de domaine. Pour cela, résiliez le nom de domaine.
+
 
 ## Aller plus loin
 
