@@ -1,5 +1,5 @@
 ---
-title: "Configure an IPv6 address on a virtual machine"
+title: "Configuring an IPv6 address on a virtual machine"
 excerpt: "Find out how to configure an IPv6 address on a virtual machine"
 updated: 2024-10-17
 ---
