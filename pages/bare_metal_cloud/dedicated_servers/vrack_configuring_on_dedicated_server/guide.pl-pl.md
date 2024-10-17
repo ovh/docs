@@ -18,7 +18,7 @@ vRack (wirtualna szafa) OVHcloud pozwala na wirtualne zebranie kilku serwerów (
 
 ## Wymagania początkowe
 
-- Usługa [vRack](/links/network/vrac) włączona na Twoim koncie
+- Usługa [vRack](/links/network/vrack) włączona na Twoim koncie
 - Kilka [serwerów dedykowanych](/links/bare-metal/bare-metal) (kompatybilnych z vRack)
 - Dostęp administratora (sudo) do serwera przez SSH lub RDP
 - Dostęp do [Panelu klienta OVHcloud](/links/manager)

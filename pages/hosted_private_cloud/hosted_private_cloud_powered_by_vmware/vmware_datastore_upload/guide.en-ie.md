@@ -18,14 +18,14 @@ updated: 2024-10-04
 
 > [!primary]
 >
-> This guide replaces the SFTP method, which is now deprecated: [Logging in via SFTP](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/sftp_connection).
+> This guide replaces the SFTP method, which is now deprecated: [Logging in via SFTP](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/sftp_connexion).
 >
 
 ### Step 1 - Upload with HTML client
 
 #### Access the datastore
 
-Log in to the vSphere web interface, using the guide “[Log in to the vSphere on OVHcloud web console](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vsphere_interface_connection)” if necessary.
+Log in to the vSphere web interface, using the guide “[Log in to the vSphere on OVHcloud web console](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/sphere_interface_connexion)” if necessary.
 
 You then need to access the directories where you want to store your files (ISO, for example). The goal is to create a tree-view so that you can easily find your elements within your managed vSphere.
 
