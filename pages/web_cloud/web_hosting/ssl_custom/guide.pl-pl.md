@@ -23,7 +23,7 @@ Możliwe, że w zależności od Twojej sytuacji będziesz chciał zainstalować 
 - Dostęp do [panelu klienta OVHcloud](/links/manager).
 - Zamówić lub dysponować [hostingiem OVHcloud](/links/web/hosting), na którym nie został jeszcze zainstalowany żaden certyfikat SSL.
 - Zamówić lub dysponować [domeną](/links/web/domains) i mieć wyłączne prawa do jej używania. Nazwa domeny nie może być już powiązana z certyfikatem SSL.
-- Dostęp SSH (na przykład przez terminal komputerowy) z zainstalowanym oprogramowaniem OpenSSL.
+- Posiadanie OpenSSL lub kompatybilnej aplikacji zainstalowanej lokalnie na Twoim urządzeniu.
 
 ## W praktyce
 
@@ -40,11 +40,12 @@ Możliwe, że w zależności od Twojej sytuacji będziesz chciał zainstalować 
 >
 > Ten etap jest opcjonalny, jeśli certyfikat SSL został już wygenerowany i pobrany od Twojego dostawcy SSL lub jeśli dostawca proponuje wygenerowanie certyfikatu SSL podczas zamawiania certyfikatu. Jeśli tak jest, przejdź bezpośrednio do [etapu 2] (#step-2).
 
-#### 1.1 - Wygeneruj klucz prywatny i CSR przez SSH <a name="step-1.1"></a>
+#### 1.1 - Wygeneruj klucz prywatny i CSR za pomocą wiersza polecenia <a name="step-1.1"></a>
 
-Otwórz terminal, aby zalogować się przez SSH. Narzędzie jest zainstalowane domyślnie na MacOS lub Linuxie. Środowisko Windows wymaga instalacji programu, takiego jak PuTTY lub dodania funkcji "OpenSSH". Ponieważ operacja ta jest ściśle związana z używanym przez Ciebie systemem operacyjnym, nie możemy opisać jej przebiegu w tej dokumentacji.
+Do uruchomienia poniższych poleceń potrzebny będzie zestaw narzędzi OpenSSL dostępny w wielu dystrybucjach Linux. W przeciwnym razie zainstaluj ją za pomocą menedżera pakietów systemu lub użyj zgodnej aplikacji innej firmy. Środowisko Windows wymaga instalacji programu, takiego jak PuTTY lub dodania funkcji "OpenSSH".
+Ponieważ operacja ta jest ściśle związana z używanym przez Ciebie systemem operacyjnym, nie możemy opisać jej przebiegu w tej dokumentacji.
 
-W terminalu wpisz następujące polecenie:
+Otwórz interfejs wiersza poleceń (terminal) i wprowadź następujące polecenie:
 
 ```sh
 openssl req -nodes -newkey rsa:2048 -sha256 -keyout my_private.key -out your_file_name.csr -utf8

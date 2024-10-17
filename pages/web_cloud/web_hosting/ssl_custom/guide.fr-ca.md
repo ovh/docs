@@ -36,11 +36,12 @@ En fonction de votre situation, il est possible que vous souhaitiez installer un
 >
 > Cette étape est optionnelle si vous avez déjà généré et récupéré le certificat SSL auprès de votre fournisseur SSL ou si ce dernier propose la génération du CSR durant la commande du certificat SSL. Si tel est le cas, passez directement à l'[étape 2](#step-2).
 
-#### 1.1 - Générer la clé privée et la CSR en SSH <a name="step-1.1"></a>
+#### 1.1 - Générer la clé privée et la CSR en ligne de commande <a name="step-1.1"></a>
 
-Ouvrez un terminal pour vous connecter en SSH. Cet outil est installé par défaut sur macOS ou Linux. Un environnement Windows nécessitera l’installation d’un logiciel comme PuTTY ou l’ajout de la fonctionnalité « OpenSSH ». Cette démarche étant spécifique au système d’exploitation que vous utilisez, nous ne pouvons pas la détailler dans cette documentation.
+Pour exécuter les commandes suivantes, vous aurez besoin de la boîte à outil OpenSSL incluse dans de nombreuses distributions Linux. Sinon, installez-la via le gestionnaire de paquets du système ou utilisez une application tierce compatible. Un environnement Windows nécessitera l’installation d’un logiciel comme PuTTY ou l’ajout de la fonctionnalité « OpenSSH ». 
+Cette démarche étant spécifique au système d’exploitation que vous utilisez, nous ne pouvons pas la détailler dans cette documentation.
 
-Dans le terminal, lancez la commande suivante :
+Ouvrez votre interface de ligne de commande (terminal) et lancez la commande suivante :
 
 ```sh
 openssl req -nodes -newkey rsa:2048 -sha256 -keyout my_private.key -out your_file_name.csr -utf8

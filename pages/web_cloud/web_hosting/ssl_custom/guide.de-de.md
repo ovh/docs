@@ -40,11 +40,12 @@ Je nach Ihrer Situation kann es sein, dass Sie ein anderes SSL-Zertifikat als da
 >
 > Dieser Schritt ist optional, wenn Sie das SSL-Zertifikat bereits erstellt und von Ihrem SSL-Anbieter erhalten haben oder wenn dieser während der Bestellung des SSL-Zertifikats die Erstellung des CSR anbietet. Ist das der Fall, fahren Sie direkt mit [Schritt 2](#step-2) fort.
 
-#### 1.1 - Den privaten Schlüssel und die CSR per SSH generieren <a name="step-1.1"></a>
+#### 1.1 - Private Schlüssel und CSR in der Befehlszeile generieren <a name="step-1.1"></a>
 
-Öffnen Sie ein Terminal, um sich via SSH zu verbinden. Dieses Tool ist standardmäßig auf macOS oder Linux installiert. Für eine Windows-Umgebung muss eine Software wie PuTTY installiert oder die Funktion „OpenSSH“ hinzugefügt werden. Diese Vorgehensweise ist betriebssystemspezifisch, daher können wir sie in dieser Anleitung nicht im Detail beschreiben.
+Um die folgenden Befehle auszuführen, benötigen Sie das OpenSSL Toolkit, das in vielen Linux-Distributionen enthalten ist. Installieren Sie sie andernfalls über die Paketverwaltung des Systems, oder verwenden Sie eine kompatible Anwendung eines Drittanbieters. Für eine Windows-Umgebung muss eine Software wie PuTTY installiert oder die Funktion „OpenSSH“ hinzugefügt werden.
+Diese Vorgehensweise ist betriebssystemspezifisch, daher können wir sie in dieser Anleitung nicht im Detail beschreiben.
 
-Führen Sie im Terminal folgenden Befehl aus:
+Öffnen Sie Ihr Kommandozeileninterface (Terminal) und führen Sie folgenden Befehl aus:
 
 ```sh
 openssl req -nodes -newkey rsa:2048 -sha256 -keyout my_private.key -out your_file_name.csr -utf8

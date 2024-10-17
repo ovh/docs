@@ -40,11 +40,12 @@ OVHcloud propone diversi tipi di certificati SSL sulle offerte di [hosting condi
 >
 > Questo step è opzionale se hai già generato e recuperato il certificato SSL presso il tuo provider SSL o se quest'ultimo propone la generazione del CSR durante l'ordine del certificato SSL. In tal caso, passa direttamente allo [step 2](#step-2).
 
-#### 1.1 - Genera la chiave privata e la CSR in SSH <a name="step-1.1"></a>
+#### 1.1 - Genera chiave privata e CSR da riga di comando <a name="step-1.1"></a>
 
-Apri un terminale per accedere in SSH. Questo strumento è installato di default su macOS o Linux. Un ambiente Windows richiede l'installazione di un software come PuTTY o l'aggiunta della funzionalità "OpenSSH". Questa procedura è specifica al sistema operativo utilizzato e non può quindi essere descritta in questa guida.
+Per eseguire i comandi seguenti, è necessario utilizzare il toolkit OpenSSL incluso in molte distribuzioni Linux. In caso contrario, installarla tramite il gestore pacchetti del sistema o utilizzare un'applicazione di terze parti compatibile. Un ambiente Windows richiede l'installazione di un software come PuTTY o l'aggiunta della funzionalità "OpenSSH".
+Questa procedura è specifica al sistema operativo utilizzato e non può quindi essere descritta in questa guida.
 
-Nel terminale, esegui questo comando:
+Apri l’interfaccia della riga di comando (terminale) e esegui questo comando:
 
 ```sh
 openssl req -nodes -newkey rsa:2048 -sha256 -keyout my_private.key -out your_file_name.csr -utf8
