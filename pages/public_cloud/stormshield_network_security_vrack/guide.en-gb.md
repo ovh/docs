@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial on Stormshield Network Security : securing your OVHcloud infrastructure'
+title: 'Tutorial on Stormshield Network Security - Securing your OVHcloud infrastructure'
 excerpt: 'Find out how to secure your OVHcloud infrastructure with Stormshield Network Security'
 updated: 2024-10-17
 ---
@@ -26,10 +26,10 @@ In today's rapidly evolving digital landscape, securing cloud infrastructure has
 In addition to the installation and configuration of Stormshield Network Security, this tutorial offers different use cases based on your needs:
 
 - [Install and configure Stormshield Network Security on your Public Cloud environment](#step1)
-- [Usecase 1 : configure Stormshield Network Security to be used as a gateway](#step2)
-- [Usecase 2 : configure a NAT to access a private HTTP service from outside](#step3)
-- [Usecase 3 : IPsec tunnel (site-to-site)](#step4)
-- [Usecase 4 : SSL/TLS VPN (client-to-site)](#step5)
+- [Use case 1 : configure Stormshield Network Security to be used as a gateway](#step2)
+- [Use case 2 : configure a NAT to access a private HTTP service from outside](#step3)
+- [Use case 3 : IPsec tunnel (site-to-site)](#step4)
+- [Use case 4 : SSL/TLS VPN (client-to-site)](#step5)
 
 ### Install and configure Stormshield Network Security on your Public Cloud environment <a name="step1"></a>
 
@@ -168,13 +168,13 @@ Create a firewall rule similar to this on both SNS in the web GUI:
 
 ![SNS vrack](images/ha-filter.png)
 
-On the first SNS, create a group of firewalls (Configuration -> System -> High Availability). For the IP address, check which IP was assign to the HA interface by the OpenStack DHCP.
+On the first SNS, create a group of firewalls (`Configuration` > `System` > `High Availability`). For the IP address, check which IP was assign to the HA interface by the OpenStack DHCP.
 
 ![SNS vrack](images/ha-1.png)
 
 ![SNS vrack](images/ha-2.png)
 
-When the configuration of the HA is finished on the first SNS. Join the firewalls group on the second one:
+When the configuration of the HA is finished on the first SNS. Join the group of firewalls on the second one:
 
 ![SNS vrack](images/ha-3.png)
 
@@ -204,12 +204,12 @@ If everything is configured properly, after the reboot of the second SNS, you sh
 >>
 > **Step 3**
 >>
->> Limit the access to the GUI to your public IP and enable SSH:
+>>  Limit access to the GUI to your public IP and enable SSH:
 >> ![SNS vrack](images/configure-management-2.png)
 >>
 > **Step 4**
 >>
->> Limit the access to the SSH to your public IP:
+>> Limit SSH access to your public IP:
 >> ![SNS vrack](./images/configure-management-3.png)
 
 #### Re-synchronize the HA configuration
@@ -230,12 +230,12 @@ hasync
 
 You need to do this each time you update the configuration.
 
-### Usecases configuration
+### Use cases configuration
 
 After deploying SNS **E**lastic **V**irtual **A**ppliance (EVA) firewall, it can be used in multiple advanced security scenarios such as IPsec VPN, SSL/TLS VPN, network gateways (IN or OUT) as described below.
 Thanks to the vRack private network, listed VLANs can also be used outside Public Cloud environment: across BareMetal or Private Cloud products.
 
-#### Use case 1: configure Stormshield Network Security to be used as a gateway <a name="step2"></a>
+#### Use case 1: Configure Stormshield Network Security to be used as a gateway <a name="step2"></a>
 
 In this example, the virtual firewall will act as a secure gateway for private instances (or any other server) within the VLAN200 of the given vRack network. Such traffic can be a subject for URL filtering on the firewall.
 
@@ -291,8 +291,7 @@ curl -I https://www.ovh.com/manager/
 HTTP/2 200
 ```
 
-#### Use case 2: configure a NAT to access a private HTTP service from outside <a name="step3"></a>
-
+#### Use case 2: Configure a NAT to access a private HTTP service from outside <a name="step3"></a>
 
 In this example, the Internet should be able to reach the private web server installed in VLAN200. The aim of this configuration is to protect the web server with a network firewall.
 
@@ -379,7 +378,7 @@ Re-do all the steps in another region using the VLAN 201 instead of the VLAN 200
 
 Synchronize the two HA SNS instances:
 
-```console
+```bash
 ssh admin@<ip_address>
 hasync
 ```
@@ -446,7 +445,7 @@ UDP client network:
 
 ![SNS vrack](images/ssl-vpn-5.png)
 
-TCP client newtwork:
+TCP client network:
 
 ![SNS vrack](images/ssl-vpn-6.png)
 
@@ -539,4 +538,4 @@ PING <ip_address> (<ip_address>) 56(84) bytes of data.
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
