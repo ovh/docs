@@ -270,7 +270,6 @@ Amazon DocumentDB is a managed service that emulates the MongoDB API but does no
 
 
 ## MongoDB Drivers
-![alt text](./images/languageSupport.png)
 
 [MongoDB drivers](https://www.mongodb.com/docs/drivers/) provide the interface for applications to interact with MongoDB databases. They offer:
 
