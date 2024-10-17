@@ -37,10 +37,10 @@ There are two ways of accessing it, and you are free to choose the one that best
 
 **1\. From the menu `Inventory`{.action}:**
 
-|                                        **Images**                                         | **Steps**                                                                       |
-|:---------------------------------------------------------------------------------------:|:----------------------------------------------------------
-| ![vSphere Datastore Upload 01](images/datastore_inventory_2.png){.thumbnail}      | - Click `Inventory`{.action}.                                         |
-|![vSphere Datastore Upload 01](images/datastore.png){.thumbnail}<br/>![vSphere Datastore Upload 01](images/datastore_1.png){.thumbnail}| - From `pcc-XXX-XXX-XXX-XXX.ovh.XX`, click `Databases`{.action}. |
+|                                        **Images**                                         | **Steps**                                                          |
+|:---------------------------------------------------------------------------------------:|:-------------------------------------------------------------------|
+| ![vSphere Datastore Upload 01](images/datastore_inventory_2.png){.thumbnail}      | - Click `Inventory`{.action}.                                      |
+|![vSphere Datastore Upload 01](images/datastore.png){.thumbnail}<br/>![vSphere Datastore Upload 01](images/datastore_1.png){.thumbnail}| - From `pcc-XXX-XXX-XXX-XXX.ovh.XX`, click `Databases`{.action}.   |
 
 You will then find all of your datastores listed.
 
@@ -64,10 +64,10 @@ You can then launch this ISO file from a CD/DVD device within your VM, and launc
 
 This menu also links you to the `Files`{.action} upload interface:
 
-|                                        **Images**                                         | **Steps**                                                |
-|:-------------------------------------------------------------------------------------------:|:---------------------------------------------------
-| ![vSphere Global Inventory](images/global_inventory.png){.thumbnail}      | - Click `Global Inventory Lists`{.action}. |
-| ![vSphere Global Inventory Datastore](images/global_inventory_datastores.png){.thumbnail} | - Then on `Databases`{.action}.                  |
+|                                        **Images**                                         | **Steps**                                           |
+|:-------------------------------------------------------------------------------------------:|:----------------------------------------------------|
+| ![vSphere Global Inventory](images/global_inventory.png){.thumbnail}      | - Click `Global Inventory Lists`{.action}.          |
+| ![vSphere Global Inventory Datastore](images/global_inventory_datastores.png){.thumbnail} | - Then on `Databases`{.action}.                     |
 
 ![vSphere Global Inventory Datastore](images/global_inventory_datastores_2.png){.thumbnail}
 
