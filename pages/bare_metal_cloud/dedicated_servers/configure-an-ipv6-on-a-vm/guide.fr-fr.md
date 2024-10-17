@@ -1,7 +1,7 @@
 ---
 title: "Configurer une adresse IPv6 sur une machine virtuelle"
 excerpt: "Découvrez comment configurer une adresse IPv6 sur une machine virtuelle"
-updated: 2024-10-11
+updated: 2024-10-17
 ---
 
 ## Objectif
@@ -206,7 +206,7 @@ Pour tester la connectivité de votre IPv6, exécutez la commande `ping` à l'ad
 
 ![ping](images/vm_ubuntu.png){.thumbnail}
 
-#### Configuration basée sur network interfaces
+#### Configuration basée sur ENI
 
 La configuration ci-dessous est basée sur Debian 11.
 
@@ -245,7 +245,7 @@ Pour tester la connectivité de votre IPv6, exécutez la commande `ping` à l'ad
 
 La configuration ci-dessous est basée sur Fedora 40.
 
-Fedora ainsi que les dernières versions d'Almalinux et de Rocky Linux utilisent maintenant des fichiers clés. NetworkManager a précédemment stocké des profils réseau au format ifcfg dans ce répertoire : `/etc/sysconfig/network-scripts/`. Cependant, le format ifcfg est désormais déconseillé. Par défaut, NetworkManager ne crée plus de profils dans ce format. Le fichier de configuration se trouve maintenant dans `/etc/NetworkManager/system-connections/`.
+NetworkManager a précédemment stocké des profils réseau au format ifcfg dans ce répertoire : `/etc/sysconfig/network-scripts/`. Cependant, le format ifcfg est désormais déconseillé. Par défaut, NetworkManager ne crée plus de profils dans ce format. Le fichier de configuration se trouve maintenant dans `/etc/NetworkManager/system-connections/`.
 
 Une fois connecté à votre machine virtuelle, la première étape consiste à accéder au fichier de configuration :
 

@@ -1,7 +1,7 @@
 ---
 title: "Configure an IPv6 address on a virtual machine"
 excerpt: "Find out how to configure an IPv6 address on a virtual machine"
-updated: 2024-10-11
+updated: 2024-10-17
 ---
 
 ## Objective
@@ -208,7 +208,7 @@ To test your IPv6 connectivity, run the `ping` command at `2001:4860:4860::8888`
 
 ![ping](images/vm_ubuntu.png){.thumbnail}
 
-#### Configuration based on network interfaces
+#### Configuration based on ENI
 
 The configuration below is based on Debian 11.
 
@@ -247,7 +247,7 @@ To test your IPv6 connectivity, run the `ping` command at `2001:4860:4860::8888`
 
 The configuration below is based on Fedora 40.
 
-Fedora and the latest versions of Almalinux and Rocky Linux now use key files. NetworkManager has previously stored network profiles in ifcfg format in this directory: `/etc/sysconfig/network-scripts/`. However, the ifcfg format is now deprecated. By default, NetworkManager no longer creates profiles in this format. The configuration file is now located in `/etc/NetworkManager/system-connections/`.
+NetworkManager has previously stored network profiles in ifcfg format in this directory: `/etc/sysconfig/network-scripts/`. However, the ifcfg format is now deprecated. By default, NetworkManager no longer creates profiles in this format. The configuration file is now located in `/etc/NetworkManager/system-connections/`.
 
 Once you are logged in to your virtual machine, the first step is to access the configuration file:
 
