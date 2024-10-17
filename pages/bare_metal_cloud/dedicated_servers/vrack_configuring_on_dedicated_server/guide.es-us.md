@@ -1,7 +1,7 @@
 ---
 title: 'Configurar varios servidores dedicados en el vRack'
 excerpt: 'Cómo configurar varios servidores dedicados en el vRack'
-updated: 2024-10-16
+updated: 2024-10-17
 ---
 
 > [!primary]
@@ -18,16 +18,16 @@ El vRack (rack virtual) de OVHcloud permite agrupar virtualmente varios servidor
 
 ## Requisitos
 
-- Un servicio [vRack](/links/network/vrack) activado en su cuenta.
+- Un servicio [vRack](https://www.ovh.es/soluciones/vrack/) activado en su cuenta.
 - Varios [servidores dedicados](/links/bare-metal/bare-metal) (compatibles con el vRack).
 - Tener acceso de administrador (sudo) al servidor por SSH o RDP.
 - Tienes acceso a tu [área de cliente de OVHcloud](/links/manager).
 - Tener un rango de direcciones IP privadas.
 
 > [!warning]
-> Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](/links/bare-metal/eco-about).
+> Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](https://eco.ovhcloud.com/es-es/about/).
 >
-> Para más información, consulte nuestra [comparativa](/links/bare-metal/eco-compare/).
+> Para más información, consulte nuestra [comparativa](https://eco.ovhcloud.com/es-es/compare/).
 
 ## Procedimiento
 
@@ -250,4 +250,4 @@ Repita este procedimiento para los demás servidores y asígnele a cada uno de e
 
 [Crear varias VLAN en el vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack).
 
-Interactúe con nuestra [comunidad de usuarios](/links/community).
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

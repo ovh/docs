@@ -1,7 +1,7 @@
 ---
 title: 'Configurer le vRack sur vos serveurs dédiés'
 excerpt: 'Découvrez comment configurer le vRack sur plusieurs serveurs dédiés'
-updated: 2023-09-12
+updated: 2024-10-17
 ---
 
 ## Objectif
@@ -14,16 +14,16 @@ Le vRack (baie virtuelle) OVHcloud permet de rassembler virtuellement plusieurs 
 
 ## Prérequis
 
-- Un service [vRack](https://www.ovh.com/ca/fr/solutions/vrack/) activé dans votre compte
+- Un service [vRack](/links/network/vrack) activé dans votre compte
 - Plusieurs [serveurs dédiés](/links/bare-metal/bare-metal) (compatibles vRack)
 - Disposer d’un accès administrateur (sudo) au serveur via SSH ou RDP
 - Être connecté à votre [espace client OVHcloud](/links/manager)
 - Préparer la plage d'adresses IP privées que vous avez choisie
 
 > [!warning]
-> Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](https://eco.ovhcloud.com/fr-ca/about/).
+> Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](/links/bare-metal/eco-about).
 >
-> Consultez notre [comparatif](https://eco.ovhcloud.com/fr-ca/compare/) pour plus d’informations.
+> Consultez notre [comparatif](/links/bare-metal/eco-compare) pour plus d’informations.
 
 ## En pratique
 
@@ -76,7 +76,40 @@ Sur la ligne qui commence par ```link ether```, vous pouvez vérifier que cette 
 link ether f0:00:00:ef:0e:f0
 ```
 
-##### **Debian**
+##### **Debian 12**
+
+A l'aide de l'éditeur de texte de votre choix, ouvrez le fichier de configuration réseau se trouvant dans `/etc/netplan/` afin de l'éditer. Ici, le fichier s'appelle `50-cloud-init.yaml`.
+
+```bash
+editor /etc/netplan/50-cloud-init.yaml
+```
+
+Ajoutez la configuration IP à la configuration existante après la ligne `ethernets` :
+
+```yaml
+    ethernets:
+        NETWORK_INTERFACE :
+            dhcp4: no
+            addresses:
+              - 192.168.0.1/16
+```
+
+> [!warning]
+>
+> Il est important de respecter l'alignement de chaque élément dans les fichiers `yaml` comme représenté dans l'exemple ci-dessus. N'utilisez pas la touche de tabulation pour créer votre espacement. Seule la touche espace doit être utilisée.
+>
+
+Enregistrez vos modifications dans le fichier de configuration et quittez l'éditeur.
+
+Appliquez la configuration :
+
+```bash
+netplan apply
+```
+
+Répétez cette procédure pour vos autres serveurs et attribuez à chacun d'entre eux une adresse IP inutilisée à partir de votre plage privée. Dès lors, vos serveurs pourront communiquer entre eux sur le réseau privé.
+
+##### **Debian 11**
 
 Dans un éditeur de texte, ouvrez le fichier de configuration réseau situé dans `/etc/network/interfaces.d` pour le modifier. Ici, le fichier s'appelle `50-cloud-init`.
 
