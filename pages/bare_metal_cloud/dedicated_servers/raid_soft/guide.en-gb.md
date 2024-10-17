@@ -376,7 +376,7 @@ mount /dev/md4 /home
 
 [Hot Swap - Software RAID](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_soft)
 
-[OVHcloud API & Partitioning](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
+[OVHcloud API and Storage](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
 
 [Managing hardware RAID](/pages/bare_metal_cloud/dedicated_servers/raid_hard)
 
