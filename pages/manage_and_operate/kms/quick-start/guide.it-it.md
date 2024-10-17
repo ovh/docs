@@ -119,7 +119,7 @@ You can create a key using the following API:
 
 |**Method**|**Path**|**Description**|
 | :-: | :-: | :-: |
-|POST|/v1/servicekey|Create or import a CMK|
+|POST|/okms/resource/{okmsId}/serviceKey|Create or import a CMK|
 
 The API expects the following values:
 
