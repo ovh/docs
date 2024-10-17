@@ -1,5 +1,5 @@
 ---
-title: "Uploading an ISO in a datastore (EN)"
+title: "Uploading an ISO in a datastore"
 excerpt: "Find out how to use the html datastore upload client and Govc to manipulate data in your managed VMware vSphere on OVHcloud environment"
 updated: 2024-10-04
 ---
@@ -37,10 +37,10 @@ There are two ways of accessing it, and you are free to choose the one that best
 
 **1\. From the menu `Inventory`{.action}:**
 
-|                                        **Images**                                         | **Steps**                                                                       |
-|:---------------------------------------------------------------------------------------:|:----------------------------------------------------------
-| ![vSphere Datastore Upload 01](images/datastore_inventory_2.png){.thumbnail}      | - Click `Inventory`{.action}.                                         |
-|![vSphere Datastore Upload 01](images/datastore.png){.thumbnail}<br/>![vSphere Datastore Upload 01](images/datastore_1.png){.thumbnail}| - From `pcc-XXX-XXX-XXX-XXX.ovh.XX`, click `Databases`{.action}. |
+|                                        **Images**                                         | **Steps**                                                          |
+|:---------------------------------------------------------------------------------------:|:-------------------------------------------------------------------|
+| ![vSphere Datastore Upload 01](images/datastore_inventory_2.png){.thumbnail}      | - Click `Inventory`{.action}.                                      |
+|![vSphere Datastore Upload 01](images/datastore.png){.thumbnail}<br/>![vSphere Datastore Upload 01](images/datastore_1.png){.thumbnail}| - From `pcc-XXX-XXX-XXX-XXX.ovh.XX`, click `Databases`{.action}.   |
 
 You will then find all of your datastores listed.
 
@@ -64,10 +64,10 @@ You can then launch this ISO file from a CD/DVD device within your VM, and launc
 
 This menu also links you to the `Files`{.action} upload interface:
 
-|                                        **Images**                                         | **Steps**                                                |
-|:-------------------------------------------------------------------------------------------:|:---------------------------------------------------
-| ![vSphere Global Inventory](images/global_inventory.png){.thumbnail}      | - Click `Global Inventory Lists`{.action}. |
-| ![vSphere Global Inventory Datastore](images/global_inventory_datastores.png){.thumbnail} | - Then on `Databases`{.action}.                  |
+|                                        **Images**                                         | **Steps**                                           |
+|:-------------------------------------------------------------------------------------------:|:----------------------------------------------------|
+| ![vSphere Global Inventory](images/global_inventory.png){.thumbnail}      | - Click `Global Inventory Lists`{.action}.          |
+| ![vSphere Global Inventory Datastore](images/global_inventory_datastores.png){.thumbnail} | - Then on `Databases`{.action}.                     |
 
 ![vSphere Global Inventory Datastore](images/global_inventory_datastores_2.png){.thumbnail}
 
@@ -131,18 +131,18 @@ In addition to the vSphere API client, this repository includes:
 
 These are the environment variables that will be required to configure Govc authentication with the VMware api:
 
-|      **Environment variable**      |                                   **Standard**                                    |                         **Advanced/Premium (NSX + vSAN)**                         | **Comments**                                                                                                                                                                                                                                                                                                                                                                                                                         |
-|:--------------------------------------------------------------------------------------------------------- :---------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- --|
-|           `GOVC_DATACENTER`            |                         `pcc-XXX-XX-XX-XX_datacenterXXXX`                         |                         `pcc-XXX-XX-XX-XX_datacenterXXXX`                         | - The name of the default datacentre in the VMWare sense.                                                                                                                                                                                                                                                                                                                                                                              |
-|            `GOVC_USERNAME`             |                                      `uname`                                      |                                      `uname`                                      | - The local VMware vSphere on OVHcloud connection user. You can omit this variable if you specify your credentials in the `GOVC-URL` variable.                                                                                                                                                                                                                                                             |
-|            `GOVC_PASSWORD`             |                                 `p4sswor_DXXXXXx`                                 |                                 `p4sswor_DXXXXXx`                                 | - The login password for the local VMware vSphere on OVHcloud user. You can omit this variable if you specify your credentials in the `GOVC-URL` variable.                                                                                                                                                                                                                                          |
-|               `GOVC_URL`               | `user:pass@host`<br/>`vsphere.local`<br/>`vc.local`<br/>`pcc-XXX-XX-XX-XX.ovh.XX` | `user:pass@host`<br/>`vsphere.local`<br/>`vc.local`<br/>`pcc-XXX-XX-XX-XX.ovh.XX` | - The IP or hostname of the VMware vSphere on OVHcloud host. You can also specify the user ID and password, such as `user:pass@host`. And you pass variables `GOVC_USERNAME/PASSWORD`. Warning: the `host` defines the IP of your ESX and not the `pcc-XXX-XXX-XXX-XXX`. If you use govc within a VM in your environment, you can add in `host`: `vsphere.local` or `vc.local`. |
-|            `GOVC_DATASTORE`            |                           `ssd-XXXXXX`<br/>`nfs-XXXXXX`                           |                 `ssd-XXXXXX`<br/>`nfs-XXXXXX`<br/>`vsanDatastore`                 | - The default datastore in the VMWare sense.                                                                                                                                                                                                                                                                                                                                                                           |
-|             `GOVC_NETWORK`             |                                  `172.XX.XX.XX`                                   |                                  `172.XX.XX.XX`                                   | - The default network in the VMWare sense. You can find them in your global inventory `Networks`.                                                                                                                                                                                                                                                                                                                 |
-|              `GOVC_HOST`               |                                  `172.XX.XX.XX`                                   |                                  `172.XX.XX.XX`                                   | - The default host in the VMWare sense. You can find them in your global inventory `Hosts`.                                                                                                                                                                                                                                                                                                                        |
-|          `GOVC_RESOURCE_POOL`          |                                    `ovhServer`                                    |                                    `ovhServer`                                    | - The default resource pool in the VMWare sense. You can find them in your global inventory `Resource Pools`.                                                                                                                                                                                                                                                                                                |
-|              `HTTP_PROXY`              |                            `http://XXX.XX.XX.XX:XXXXX`                            |                            `http://XXX.XX.XX.XX:XXXXX`                            | - The URL of your proxy server without https.                                                                                                                                                                                                                                                                                                                                                                                            |
-|             `HTTPS_PROXY`              |                           `https://XXX.XX.XX.XX:XXXXX`                            |                           `https://XXX.XX.XX.XX:XXXXX`                            | - The URL of your proxy server with https.                                                                                                                                                                                                                                                                                                                                                                                            |
+|                                        **Environment variable**                                         |                                    **Standard**                                    |                          **Advanced/Premium (NSX + vSAN)**                          | **Comments**                                                                                                                                                                                                                                                                                                                                                                    |
+|:-------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                                            `GOVC_DATACENTER`                                            |                         `pcc-XXX-XX-XX-XX_datacenterXXXX`                          |                          `pcc-XXX-XX-XX-XX_datacenterXXXX`                          | - The name of the default datacentre in the VMWare sense.                                                                                                                                                                                                                                                                                                                       |
+|                                             `GOVC_USERNAME`                                             |                                      `uname`                                       |                                       `uname`                                       | - The local VMware vSphere on OVHcloud connection user. You can omit this variable if you specify your credentials in the `GOVC-URL` variable.                                                                                                                                                                                                                                  |
+|                                             `GOVC_PASSWORD`                                             |                                 `p4sswor_DXXXXXx`                                  |                                  `p4sswor_DXXXXXx`                                  | - The login password for the local VMware vSphere on OVHcloud user. You can omit this variable if you specify your credentials in the `GOVC-URL` variable.                                                                                                                                                                                                                      |
+|                                               `GOVC_URL`                                                | `user:pass@host`<br/>`vsphere.local`<br/>`vc.local`<br/>`pcc-XXX-XX-XX-XX.ovh.XX`  |  `user:pass@host`<br/>`vsphere.local`<br/>`vc.local`<br/>`pcc-XXX-XX-XX-XX.ovh.XX`  | - The IP or hostname of the VMware vSphere on OVHcloud host. You can also specify the user ID and password, such as `user:pass@host`. And you pass variables `GOVC_USERNAME/PASSWORD`. Warning: the `host` defines the IP of your ESX and not the `pcc-XXX-XXX-XXX-XXX`. If you use govc within a VM in your environment, you can add in `host`: `vsphere.local` or `vc.local`. |
+|                                            `GOVC_DATASTORE`                                             |                           `ssd-XXXXXX`<br/>`nfs-XXXXXX`                            |                  `ssd-XXXXXX`<br/>`nfs-XXXXXX`<br/>`vsanDatastore`                  | - The default datastore in the VMWare sense.                                                                                                                                                                                                                                                                                                                                    |
+|                                             `GOVC_NETWORK`                                              |                                   `172.XX.XX.XX`                                   |                                   `172.XX.XX.XX`                                    | - The default network in the VMWare sense. You can find them in your global inventory `Networks`.                                                                                                                                                                                                                                                                               |
+|                                               `GOVC_HOST`                                               |                                   `172.XX.XX.XX`                                   |                                   `172.XX.XX.XX`                                    | - The default host in the VMWare sense. You can find them in your global inventory `Hosts`.                                                                                                                                                                                                                                                                                     |
+|                                          `GOVC_RESOURCE_POOL`                                           |                                    `ovhServer`                                     |                                     `ovhServer`                                     | - The default resource pool in the VMWare sense. You can find them in your global inventory `Resource Pools`.                                                                                                                                                                                                                                                                   |
+|                                              `HTTP_PROXY`                                               |                            `http://XXX.XX.XX.XX:XXXXX`                             |                             `http://XXX.XX.XX.XX:XXXXX`                             | - The URL of your proxy server without https.                                                                                                                                                                                                                                                                                                                                   |
+|                                              `HTTPS_PROXY`                                              |                            `https://XXX.XX.XX.XX:XXXXX`                            |                            `https://XXX.XX.XX.XX:XXXXX`                             | - The URL of your proxy server with https.                                                                                                                                                                                                                                                                                                                                      |
 
 > [!tabs]
 >
@@ -174,7 +174,7 @@ These are the environment variables that will be required to configure Govc auth
 >> # note: the "tar" command must run with root permissions
 >> curl -L -o - "https://github.com/vmware/govmomi/releases/latest/download/govc_$(uname -s)_$(uname -m).tar.gz" | tar -C /usr/local/bin -xvzf - govc
 >> ```
->> 
+>>
 >> We also advise you to check the sum of the hash downloaded.
 >>
 >> ```bash
@@ -191,7 +191,7 @@ These are the environment variables that will be required to configure Govc auth
 >> ```bash
 >> go install github.com/vmware/govmomi/govc@latest
 >> ```
->> 
+>>
 >> With Docker:
 >>
 >> A Docker image can be a good way to run the Govc binary in a versioned, isolated way.
@@ -250,7 +250,7 @@ These are the environment variables that will be required to configure Govc auth
 >> ```bash
 >> gov datastore.upload image.iso folder-isos/image.iso
 >> ```
->> 
+>>
 >> Download + Upload :
 >>
 >> Here is an example of uploading an ISO image with `govc`. Be sure to locate the folder to which you want to import your ISO, if you have one:
@@ -276,7 +276,7 @@ These are the environment variables that will be required to configure Govc auth
 >> ```powershell
 >> curl -L -o - "https://github.com/vmware/govmomi/releases/latest/download/govc_$(uname -s)_$(uname -m).tar.gz" | tar -C /usr/local/bin -xvzf - govc
 >> ```
->> 
+>>
 >> If you prefer, you can simply unzip the following `Govc` Windows asset (x86_64.zip) after downloading it at the following URL: https://github.com/vmware/govmomi/releases/download/v0.43.0/govc_Windows_x86_64.zip
 >>
 >> With Chocolatey :
@@ -288,7 +288,7 @@ These are the environment variables that will be required to configure Govc auth
 >> choco install govc
 >> choco install jq
 >> ```
->> 
+>>
 >> `jq` allows you to list Govc returns correctly in Powershell.
 >>
 >> **Configuration/Authentication**
@@ -326,7 +326,7 @@ These are the environment variables that will be required to configure Govc auth
 >> # With jq :
 >> gov about -json | jq '.'
 >> ```
->> 
+>>
 >> There are several ways to make Govc work with Windows, powershell being the most well-known. But there is an alternative solution, Windows has implemented WSL 2 (Windows subsystem for Linux) which can be a good alternative to simplify the configuration.
 >>
 >> **Usage**
