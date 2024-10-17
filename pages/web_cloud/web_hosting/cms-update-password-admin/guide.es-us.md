@@ -52,7 +52,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 >>
 > PrestaShop
 >>
->> Acceda a la interfaz de conexión PrestaShop de su sitio web (de tipo `https://votre-domaine.com/admin/`) y haga clic en "Contraseña olvidada" para recibir un mensaje de correo electrónico invitándole a restaurar su contraseña.
+>> Acceda a la interfaz de conexión PrestaShop de su sitio web (de tipo `https://your-domain.com/admin/`) y haga clic en "Contraseña olvidada" para recibir un mensaje de correo electrónico invitándole a restaurar su contraseña.
 >>
 > Joomla!
 >>

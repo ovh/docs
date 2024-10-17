@@ -52,7 +52,7 @@ Nadal masz dostęp do poczty e-mail i do interfejsu logowania? Jest to najszybsz
 >>
 > PrestaShop
 >>
->> Przejdź do interfejsu logowania PrestaShop Twojej strony WWW (typu `https://votre-domaine.com/admin/`), następnie kliknij "Nie pamiętam hasła", aby otrzymać e-mail z prośbą o zresetowanie hasła.
+>> Przejdź do interfejsu logowania PrestaShop Twojej strony WWW (typu `https://your-domain.com/admin/`), następnie kliknij "Nie pamiętam hasła", aby otrzymać e-mail z prośbą o zresetowanie hasła.
 >>
 > Joomla!
 >>

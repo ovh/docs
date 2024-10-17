@@ -51,7 +51,7 @@ Sie haben noch Zugriff auf Ihre E-Mails und das Login-Interface? Diese Methode i
 >>
 > PrestaShop
 >>
->> Gehen Sie zum PrestaShop Login-Interface Ihrer Website (Typ `https://votre-domaine.com/admin/`) und klicken Sie dann auf „Passwort vergessen“, um eine E-Mail zu erhalten, in der Sie dazu aufgefordert werden, Ihr Passwort zurückzusetzen.
+>> Gehen Sie zum PrestaShop Login-Interface Ihrer Website (Typ `https://your-domain.com/admin/`) und klicken Sie dann auf „Passwort vergessen“, um eine E-Mail zu erhalten, in der Sie dazu aufgefordert werden, Ihr Passwort zurückzusetzen.
 >>
 > Joomla!
 >>
