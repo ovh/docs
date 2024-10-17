@@ -1,7 +1,7 @@
 ---
 title: "Powiadomienia o zakończeniu sprzedaży/utrzymanie bazy danych SQL"
 excerpt: "Powiadomienia o zakończeniu sprzedaży/utrzymanie bazy danych SQL"
-updated: 2024-09-06
+updated: 2024-10-17
 ---
 
 > [!primary]
@@ -12,7 +12,6 @@ Produkty objęte ogłoszeniami o zakończeniu sprzedaży i wycofaniu z eksploata
 
 |Wersja DBMS|Powiadomienie o zakończeniu cyklu życia|Zakończenie sprzedaży|Zakończenie obsługi|
 |---|---|---|---|
-|MySQL 5.7|2023-11-16|2024-02-16|2024-05-17|
 |MySQL 8.0|Do określenia|Do określenia|Do określenia|
 
 > [!primary]
