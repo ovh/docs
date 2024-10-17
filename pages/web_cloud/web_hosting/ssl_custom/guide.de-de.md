@@ -68,7 +68,7 @@ Die daraufhin gestellten Fragen sind optional und betreffen hauptsächlich erfah
 - `A challenge password []`: Geben Sie für fortgeschrittene Benutzer ein geheimes Passwort ein, das zwischen Ihnen und dem SSL-Zertifikatanbieter verwendet wird. Bitte beachten Sie, dass die CSR und der private Schlüssel auf Seiten von OVHcloud nicht durch ein Passwort geschützt sein müssen, um einem Shared Hosting von OVHcloud hinzugefügt zu werden.
 - `An optional company name []`: Für fortgeschrittene Benutzer können Sie einen anderen Namen für Ihre Organisation, Firma oder Organisation eingeben.
 
-#### 1.2 - Den privaten Schlüssel per SSH abrufen
+#### 1.2 - Den privaten Schlüssel abrufen
 
 Um den zuvor generierten privaten Schlüssel immer noch von Ihrem Terminal aus zu erhalten, führen Sie folgenden Befehl aus:
 
@@ -92,7 +92,7 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 Speichern Sie diese Datei und bewahren Sie sie sorgfältig für die weitere Verwendung dieser Anleitung auf, wenn Ihr SSL-Anbieter Sie bei Ihrer zukünftigen Bestellung dazu auffordert.
 
-#### 1.3 - Die CSR per SSH abrufen
+#### 1.3 - Die CSR abrufen
 
 Um die zuvor erstellte CSR immer über Ihr Terminal abzurufen, geben Sie folgenden Befehl ein:
 

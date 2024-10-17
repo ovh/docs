@@ -68,7 +68,7 @@ Le domande poste successivamente sono facoltative e riguardano principalmente gl
 - `A challenge password []`: per gli utenti esperti, immettere una password segreta che sarà utilizzata tra voi e il provider di certificati SSL. Ti ricordiamo che, per essere aggiunti a un hosting condiviso OVHcloud, la CSR e la chiave privata non devono essere protette da password.
 - `An optional company name []`: per gli utenti esperti, è possibile inserire un nome diverso per la propria organizzazione, società o associazione.
 
-#### 1.2 - Recupera la chiave privata in SSH
+#### 1.2 - Recupera la chiave privata
 
 Per recuperare la chiave privata generata in precedenza e sempre dal terminale, esegui il comando:
 
@@ -92,7 +92,7 @@ Apri un programma di videoscrittura (blocco note, LibreOffice, etc.) e poi `copi
 
 Salva questo file è importante conservarlo per il resto di questa guida se il tuo provider SSL lo richiede al momento del tuo ordine.
 
-#### 1.3 - Recuperare la CSR in SSH
+#### 1.3 - Recuperare la CSR
 
 Per recuperare la CSR generata in precedenza e sempre dal terminale, esegui questo comando:
 

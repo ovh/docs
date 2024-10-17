@@ -68,7 +68,7 @@ Kolejne pytania są opcjonalne i dotyczą głównie zaawansowanych użytkownikó
 - `A challenge password []` : w przypadku zaawansowanych użytkowników wprowadź tajne hasło, które będzie używane między Tobą a dostawcą certyfikatu SSL. Pamiętaj, że po stronie OVHcloud klucz CSR i klucz prywatny nie muszą być chronione hasłem, aby można je było dodać do hostingu www OVHcloud.
 - `An optional company name []` : w przypadku zaawansowanych użytkowników można wpisać inną nazwę organizacji, firmy lub stowarzyszenia.
 
-#### 1.2 - Pobierz klucz prywatny przez SSH
+#### 1.2 - Pobierz klucz prywatny
 
 Aby uzyskać klucz prywatny wygenerowany wcześniej i zawsze w Twoim urządzeniu, wprowadź następującą komendę:
 
@@ -92,7 +92,7 @@ Otwórz edytor tekstu (notatka, LibreOffice, itp.), następnie `kopiuj/wklej`{.a
 
 Zapisz ten plik i zachowaj go jako kontynuację tego przewodnika, jeśli zostaniesz poproszony przez dostawcę SSL o to podczas składania przyszłego zamówienia.
 
-#### 1.3 - Pobierz CSR przez SSH
+#### 1.3 - Pobierz CSR
 
 Aby pobrać poprzednio wygenerowany CSR, ale zawsze z poziomu terminala, wprowadź następującą komendę:
 

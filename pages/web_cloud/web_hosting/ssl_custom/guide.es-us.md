@@ -68,7 +68,7 @@ Las siguientes preguntas son opcionales y se refieren principalmente a usuarios 
 - `A challenge password []`: Para usuarios experimentados, introduzca una contraseña secreta que se utilizará entre usted y el proveedor de certificados SSL. Tenga en cuenta que, por lo que respecta a OVHcloud, la CSR y la clave privada no deben estar protegidas por una contraseña para poder añadirse a un alojamiento compartido de OVHcloud.
 - `An optional company name []`: para usuarios avanzados, puede introducir un nombre diferente para su organización, empresa o asociación.
 
-#### 1.2 - Obtener la clave privada por SSH
+#### 1.2 - Obtener la clave privada
 
 Para recuperar la clave privada generada anteriormente y siempre desde su terminal, ejecute el siguiente comando:
 
@@ -92,7 +92,7 @@ Abra un procesador de textos (bloc de notas, LibreOffice, etc.) y luego `copie/p
 
 Guarde este archivo y guárdelo cuidadosamente para el resto de esta guía si su proveedor SSL se lo pide al realizar su pedido.
 
-#### 1.3 - Obtener la CSR por SSH
+#### 1.3 - Obtener la CSR
 
 Para recuperar el CSR generado anteriormente y siempre desde su terminal, ejecute el siguiente comando:
 
