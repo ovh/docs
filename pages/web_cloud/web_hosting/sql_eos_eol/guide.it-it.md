@@ -1,7 +1,7 @@
 ---
 title: "Annunci di fine vendita/vita database SQL"
 excerpt: "Annunci di fine vendita/vita database SQL"
-updated: 2024-09-06
+updated: 2024-10-17
 ---
 
 > [!primary]
@@ -12,7 +12,6 @@ I prodotti coperti da questi annunci di fine vendita e di fine ciclo di vita son
 
 |Versione DBMS|Fine del ciclo di vita|Fine vendita|Fine supporto|
 |---|---|---|---|
-|MySQL 5.7|2023-11-16|2024-02-16|2024-05-17|
 |MySQL 8.0|Da definire|Da definire|Da definire|
 
 > [!primary]

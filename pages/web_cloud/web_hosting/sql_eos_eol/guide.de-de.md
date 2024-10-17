@@ -1,7 +1,7 @@
 ---
 title: "SQL Database Web Hosting EOL und EOS Ankündigungen"
 excerpt: "SQL Database Web Hosting EOL und EOS Ankündigungen"
-updated: 2024-09-06
+updated: 2024-10-17
 ---
 
 > [!primary]
@@ -14,7 +14,6 @@ Weitere Informationen finden Sie auf der Seite zur [EOL Policy für Managed Data
 
 |DBMS-Version|EOL Ankündigung|End-of-Sale|End-of-Support|
 |---|---|---|---|
-|MySQL 5.7|2023-11-16|2024-02-16|2024-05-17|
 |MySQL 8.0|Noch festzulegen|Noch festzulegen|Noch festzulegen|
 
 > [!primary]
