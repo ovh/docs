@@ -2023,6 +2023,7 @@
     + [Key Management Service (KMS)](manage-operate-kms)
         + [Getting started with OVHcloud Key Management Service (KMS)](manage_and_operate/kms/quick-start)
         + [OVHcloud KMS Architecture overview](manage_and_operate/kms/architecture-overview)
+        + [Using KMIP to communicate with OVHcloud KMS](manage_and_operate/kms/kms-kmip)
 + OVHcloud Labs
     + [Data Collector](products/ovhcloud-labs-data-collector)
         + [Getting started](ovhcloud-labs-data-collector-getting-started)
