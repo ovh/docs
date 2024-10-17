@@ -1,7 +1,7 @@
 ---
 title: "Web hosting - Instalar un certificado SSL personalizado"
 excerpt: "Descubra cómo importar e instalar un certificado SSL personalizado en un alojamiento web de OVHcloud"
-updated: 2024-10-15
+updated: 2024-10-17
 ---
 
 > [!primary]
@@ -46,7 +46,7 @@ Abra un terminal para conectarse por SSH. Esta herramienta se instala por defect
 
 En el terminal, ejecute el siguiente comando:
 
-```ssh
+```sh
 openssl req -nodes -newkey rsa:2048 -sha256 -keyout my_private.key -out your_file_name.csr -utf8
 ```
 
@@ -71,7 +71,7 @@ Las siguientes preguntas son opcionales y se refieren principalmente a usuarios 
 
 Para recuperar la clave privada generada anteriormente y siempre desde su terminal, ejecute el siguiente comando:
 
-```ssh
+```sh
 cat my_private.key
 ```
 
@@ -79,7 +79,7 @@ Sustituya el término `my_private` por el nombre de archivo que haya elegido ant
 
 La clave privada se mostrará en su terminal de la siguiente forma:
 
-```ssh
+```console
 -----BEGIN PRIVATE KEY-----
 XXXXXXXXXXXXXXXXXXXXXXXXXXX
 XXXXX The Private Key XXXXX
@@ -95,7 +95,7 @@ Guarde este archivo y guárdelo cuidadosamente para el resto de esta guía si su
 
 Para recuperar el CSR generado anteriormente y siempre desde su terminal, ejecute el siguiente comando:
 
-```ssh
+```sh
 cat your_file_name.csr
 ```
 
@@ -103,7 +103,7 @@ Sustituya el término `your_file_name` por el nombre de archivo que haya elegido
 
 El CSR se mostrará en su terminal con el siguiente formato:
 
-```ssh
+```console
 -----BEGIN CERTIFICATE REQUEST-----
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 XXXXXXXXXXXX The CSR XXXXXXXXXXXXXX

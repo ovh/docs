@@ -1,7 +1,7 @@
 ---
 title: "Webhosting - Benutzerdefiniertes SSL-Zertifikat installieren"
 excerpt: "Hier erfahren Sie, wie Sie ein personalisiertes SSL-Zertifikat auf Ihrem OVHcloud Webhosting importieren und installieren"
-updated: 2024-10-15
+updated: 2024-10-17
 ---
  
 > [!primary]
@@ -46,7 +46,7 @@ Je nach Ihrer Situation kann es sein, dass Sie ein anderes SSL-Zertifikat als da
 
 Führen Sie im Terminal folgenden Befehl aus:
 
-```ssh
+```sh
 openssl req -nodes -newkey rsa:2048 -sha256 -keyout my_private.key -out your_file_name.csr -utf8
 ```
 
@@ -71,7 +71,7 @@ Die daraufhin gestellten Fragen sind optional und betreffen hauptsächlich erfah
 
 Um den zuvor generierten privaten Schlüssel immer noch von Ihrem Terminal aus zu erhalten, führen Sie folgenden Befehl aus:
 
-```ssh
+```sh
 cat my_private.key
 ```
 
@@ -79,7 +79,7 @@ Ersetzen Sie den Begriff `my_private` durch den Dateinamen, den Sie zuvor in [Sc
 
 Der private Schlüssel wird dann in folgendem Format in Ihrem Terminal angezeigt:
 
-```ssh
+```console
 -----BEGIN PRIVATE KEY-----
 XXXXXXXXXXXXXXXXXXXXXXXXXXX
 XXXXX The Private Key XXXXX
@@ -95,7 +95,7 @@ Speichern Sie diese Datei und bewahren Sie sie sorgfältig für die weitere Verw
 
 Um die zuvor erstellte CSR immer über Ihr Terminal abzurufen, geben Sie folgenden Befehl ein:
 
-```ssh
+```sh
 cat your_file_name.csr
 ```
 
@@ -103,7 +103,7 @@ Ersetzen Sie den Begriff `your_file_name` durch den Dateinamen, den Sie zuvor in
 
 Die CSR erscheint dann in folgender Form in Ihrem Terminal:
 
-```ssh
+```console
 -----BEGIN CERTIFICATE REQUEST-----
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 XXXXXXXXXXXX The CSR XXXXXXXXXXXXXX
