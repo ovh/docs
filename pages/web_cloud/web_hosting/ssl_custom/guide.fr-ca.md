@@ -19,7 +19,7 @@ En fonction de votre situation, il est possible que vous souhaitiez installer un
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 - Commander ou disposer d'un [hébergement mutualisé OVHcloud](/links/web/hosting) sur lequel aucun certificat SSL n'est déjà installé.
 - Commander ou disposer d'un [nom de domaine](/links/web/domains) et disposer des droits exclusifs sur son utilisation. Le nom de domaine ne doit pas déjà être lié à un certificat SSL.
-- Disposer d'un accès SSH (via un terminal d'ordinateur par exemple) avec OpenSSL installé.
+- Disposer d'OpenSSL ou d'une application compatible installé en local sur votre appareil.
 
 ## En pratique
 

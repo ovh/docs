@@ -23,7 +23,7 @@ OVHcloud propone diversi tipi di certificati SSL sulle offerte di [hosting condi
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 - Ordinare o disporre di un [hosting condiviso OVHcloud](/links/web/hosting) sul quale non è già installato un certificato SSL.
 - Ordinare o disporre di un [dominio](/links/web/domains) e disporre dei diritti esclusivi sul suo utilizzo. Il dominio non deve essere già associato a un certificato SSL.
-- Avere accesso in SSH (ad esempio tramite un terminale da computer) con OpenSSL installato.
+- Aver installato sul proprio dispositivo OpenSSL o un’applicazione compatibile in locale.
 
 ## Procedura
 

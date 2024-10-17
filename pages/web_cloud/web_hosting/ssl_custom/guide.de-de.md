@@ -23,7 +23,7 @@ Je nach Ihrer Situation kann es sein, dass Sie ein anderes SSL-Zertifikat als da
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie bestellen oder verfügen über ein [OVHcloud Webhosting](/links/web/hosting), auf dem noch kein SSL Zertifikat installiert ist.
 - Sie bestellen oder verfügen über einen [Domainnamen](/links/web/domains) und dessen exklusive Nutzungsrechte. Der Domainname darf nicht bereits mit einem SSL-Zertifikat verbunden sein.
-- Sie haben einen SSH Zugang (zum Beispiel über ein Computerterminal) mit installiertem OpenSSL.
+- Sie haben OpenSSL oder eine kompatible Anwendung lokal auf Ihrem Gerät installiert.
 
 ## In der praktischen Anwendung
 
