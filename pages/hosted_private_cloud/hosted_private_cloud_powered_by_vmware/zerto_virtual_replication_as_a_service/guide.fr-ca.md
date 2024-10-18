@@ -1,7 +1,7 @@
 ---
 title: Utiliser Zerto Virtual Replication entre deux datacenters OVHcloud
 excerpt: Découvrez comment mettre en oeuvre Zerto Virtual Replication pour votre Plan de Reprise d'Activité entre deux offres Private Cloud.
-updated: 2023-10-23
+updated: 2024-10-18
 ---
 
 ## Objectif
@@ -25,8 +25,8 @@ Zerto Virtual Replication est une solution technique permettant de mettre en pla
 
 Les VRA sont ainsi déployés sur chaque hyperviseur et vont consommer des ressources pour effectuer la réplication :
 
-* vCPU : 1
-* RAM : 2 GB
+* vCPU : 2
+* RAM : 6 GB
 * Stockage : 36 GB
 
 À noter que pour le stockage, OVHcloud ajoute gratuitement un datastore dédié pour l'ensemble des VRA.

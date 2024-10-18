@@ -1,7 +1,7 @@
 ---
 title: Setting up Zerto Virtual Replication between two OVHcloud data centres
 excerpt: Discover how to set up Zerto Virtual Replication between your Private Cloud platforms
-updated: 2023-10-23
+updated: 2024-10-18
 ---
 
 ## Objective
@@ -14,12 +14,13 @@ For instructions for cross platforms set up, please our guide on [using Zerto be
 
 ## Requirements 
 
-- 2 Private Cloud platforms [Private Cloud](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/hosts/) on 2 different data centres
-- A public IP must be available in each data centre
+- 2 [Hosted Private Cloud](/links/hosted-private-cloud/vmware-prices) platforms environnement on 2 different hosts.
+- a public IP must be available in each datacenter.
 
 ### Zerto Virtual Replication Concepts
 
 Zerto Virtual Replication is a disaster recovery solution for vSphere. It enables replication virtual machines between Private Cloud platforms by capturing and propagating all disk operations to secondary site.
+
 It allows  automation and orchestration of actual failover or failover tests between sites.  
 
 #### Virtual Replication Appliance (VRA)
@@ -27,9 +28,9 @@ It allows  automation and orchestration of actual failover or failover tests bet
 Zerto works by deploying specific virtual machines on each hypervisor called Virtual Replication Appliance.
 They have a predefined configuration: 
 
-- vCPU: 1
-- RAM: 2 GB
-- Stockage: 36 GB
+- vCPU: 2
+- RAM: 6 GB
+- Storage: 36 GB
 
 All VRA are stored on a specific datastore, provided by OVHcloud.
 
@@ -369,4 +370,4 @@ Depending on failover options, the failback (if needed) may require differents s
 
 ## Go further 
 
-Discuss with other Zerto users on <https://community.ovh.com/en/>.
+Join our [community of users OVHcloud](/links/community).
