@@ -172,6 +172,24 @@ SSH PUB_IP_DEDICATED_SERVER
 >>
 >> ```
 > ADVANCE range
+>>
+>> - **Enable ip_forward**:
+>>
+>> Enable the `ip_forward` sysctl parameter. To do this, we recommend modifying the `sysctl.conf` configuration file.
+>>
+>> Add the following line to `/etc/sysctl.conf`:
+>>
+>> ```text
+>> # Enable ip_forward
+>> net.ipv4.ip_forward = 1
+>> ```
+>>
+>> Next, reload the sysctl configuration:
+>>
+>> ```bash
+>> sysctl -p
+>> ```
+>>
 >> For servers from the ADVANCE range that do not have 4 network interfaces, there is no need to configure bonding. You can go directly to configuring the available interfaces.
 >>
 >> Everything happens in the file `/etc/network/interfaces`:
@@ -188,7 +206,6 @@ SSH PUB_IP_DEDICATED_SERVER
 >> iface enp8s0f0np0 inet static
 >>     address PUB_IP_DEDICATED_SERVER/32
 >>     gateway 100.64.0.1
->>     post-up echo 1 > /proc/sys/net/ipv4/ip_forward
 >>     post-up echo 1 > /proc/sys/ipv4/enp8s0f0np0/proxy_arp
 >> 
 >> auto vmbr0
