@@ -38,7 +38,7 @@ En fonction de votre situation, il est possible que vous souhaitiez installer un
 
 #### 1.1 - Générer la clé privée et la CSR en ligne de commande <a name="step-1.1"></a>
 
-Pour exécuter les commandes suivantes, vous aurez besoin de la boîte à outil OpenSSL incluse dans de nombreuses distributions Linux. Sinon, installez-la via le gestionnaire de paquets du système ou utilisez une application tierce compatible. Un environnement Windows nécessitera l’installation d’un logiciel comme PuTTY ou l’ajout de la fonctionnalité « OpenSSH ». 
+Pour exécuter les commandes suivantes, vous aurez besoin de la boîte à outil OpenSSL incluse dans de nombreuses distributions Linux. Sinon, installez-la via le gestionnaire de paquets du système ou utilisez une application tierce compatible. Sous Windows, vous pouvez utiliser le sous-système Windows pour Linux (WSL) ou l'installer via une application tierce.
 Cette démarche étant spécifique au système d’exploitation que vous utilisez, nous ne pouvons pas la détailler dans cette documentation.
 
 Ouvrez votre interface de ligne de commande (terminal) et lancez la commande suivante :

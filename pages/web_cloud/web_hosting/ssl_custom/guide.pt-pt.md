@@ -42,7 +42,7 @@ Em função da sua situação, é possível que pretenda instalar um certificado
 
 #### 1.1 - Gerar a chave privada e a CSR em linha de comandos <a name="step-1.1"></a>
 
-Para executar os comandos a seguir, precisará da caixa de ferramentas OpenSSL incluída em várias distribuições Linux. Caso contrário, instale-a através do gestor de pacotes do sistema ou utilize uma aplicação de terceiros compatível. Um ambiente Windows necessitará da instalação de um software como o PuTTY ou da adição da funcionalidade « OpenSSH ».
+Para executar os comandos a seguir, precisará da caixa de ferramentas OpenSSL incluída em várias distribuições Linux. Caso contrário, instale-a através do gestor de pacotes do sistema ou utilize uma aplicação de terceiros compatível. No Windows, pode utilizar o subsistema Windows para Linux (WSL) ou instalá-lo através de uma aplicação de terceiros.
 Uma vez que esta operação depende do sistema operativo que utiliza, não podemos especificar todos os casos neste guia.
 
 Abra a interface de linha de comandos (terminal) e execute o seguinte comando:

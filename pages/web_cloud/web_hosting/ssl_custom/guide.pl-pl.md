@@ -42,7 +42,7 @@ Możliwe, że w zależności od Twojej sytuacji będziesz chciał zainstalować 
 
 #### 1.1 - Wygeneruj klucz prywatny i CSR za pomocą wiersza polecenia <a name="step-1.1"></a>
 
-Do uruchomienia poniższych poleceń potrzebny będzie zestaw narzędzi OpenSSL dostępny w wielu dystrybucjach Linux. W przeciwnym razie zainstaluj ją za pomocą menedżera pakietów systemu lub użyj zgodnej aplikacji innej firmy. Środowisko Windows wymaga instalacji programu, takiego jak PuTTY lub dodania funkcji "OpenSSH".
+Do uruchomienia poniższych poleceń potrzebny będzie zestaw narzędzi OpenSSL dostępny w wielu dystrybucjach Linux. W przeciwnym razie zainstaluj ją za pomocą menedżera pakietów systemu lub użyj zgodnej aplikacji innej firmy. W systemie Windows możesz używać podsystemu Windows dla systemu Linux (WSL) lub zainstalować go za pomocą aplikacji innej firmy.
 Ponieważ operacja ta jest ściśle związana z używanym przez Ciebie systemem operacyjnym, nie możemy opisać jej przebiegu w tej dokumentacji.
 
 Otwórz interfejs wiersza poleceń (terminal) i wprowadź następujące polecenie:

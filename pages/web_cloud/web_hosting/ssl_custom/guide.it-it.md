@@ -42,7 +42,7 @@ OVHcloud propone diversi tipi di certificati SSL sulle offerte di [hosting condi
 
 #### 1.1 - Genera chiave privata e CSR da riga di comando <a name="step-1.1"></a>
 
-Per eseguire i comandi seguenti, è necessario utilizzare il toolkit OpenSSL incluso in molte distribuzioni Linux. In caso contrario, installarla tramite il gestore pacchetti del sistema o utilizzare un'applicazione di terze parti compatibile. Un ambiente Windows richiede l'installazione di un software come PuTTY o l'aggiunta della funzionalità "OpenSSH".
+Per eseguire i comandi seguenti, è necessario utilizzare il toolkit OpenSSL incluso in molte distribuzioni Linux. In caso contrario, installarla tramite il gestore pacchetti del sistema o utilizzare un'applicazione di terze parti compatibile. In Windows, è possibile utilizzare il sottosistema Windows per Linux (WSL) o installarlo tramite un'applicazione di terze parti.
 Questa procedura è specifica al sistema operativo utilizzato e non può quindi essere descritta in questa guida.
 
 Apri l’interfaccia della riga di comando (terminale) e esegui questo comando:
