@@ -1,7 +1,7 @@
 ---
 title: "Activation du chiffrement des machines virtuelles avec un KMS externe"
 excerpt: "Découvrez comment mettre en oeuvre le chiffrement de vos machines virtuelles avec un KMS externe non OVHcloud au sein de votre environnement VMware vSphere on OVHcloud managé"
-updated: 2024-10-15
+updated: 2024-10-18
 ---
 
 ## Objectif
@@ -45,7 +45,7 @@ Ici, il s'agit de la valeur à droite du signe égal :
 
 #### Via l'espace client OVHcloud
 
-Dans votre espace client, assurez-vous de vous situer dans la section `Hosted Private Cloud`{.action}. 
+Connectez-vous à votre [espace client](/links/manager) et assurez-vous de vous situer dans la section `Hosted Private Cloud`{.action}. 
 
 Cliquez sur `VMware`{.action} dans la barre de services à gauche, puis sélectionnez le service VMware concerné.
 
@@ -70,7 +70,7 @@ Une fenêtre affiche la progression de la tâche.
 
 #### Avec l'API OVHcloud
 
-Les fonctions de chiffrement peuvent être activées grâce à l'API OVHcloud.
+Les fonctions de chiffrement peuvent être activées grâce à [l'API OVHcloud](/pages/manage_and_operate/api/first-steps).
 
 Pour récupérer votre « serviceName », utilisez l'appel API suivant :
 
