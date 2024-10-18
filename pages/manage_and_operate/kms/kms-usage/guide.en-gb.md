@@ -1,7 +1,7 @@
 ---
 title: "Using OVHcloud Key Management Service (KMS)"
 excerpt: "Encrypt or sign your data with the OVHcloud Key Management Service (KMS)"
-updated: 2024-10-17
+updated: 2024-10-18
 ---
 
 > [!warning]
@@ -12,28 +12,28 @@ updated: 2024-10-17
 
 ## Objective
 
-The purpose of this guide is to show you the steps you need to interact with the OVHcloud KMS to encrypt or sign your data.
+The purpose of this guide is to show you the steps to interact with the OVHcloud KMS to encrypt or sign your data.
 
 ## Requirements
 
 - An [OVHcloud customer account](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
-- [Order an OVHcloud KMS and created an access certificate](/pages/manage_and_operate/kms/quick-start)
+- [An OVHcloud KMS ordered and an access certificate created](/pages/manage_and_operate/kms/quick-start)
 
 ## Instructions
 
-### Contact the KMS
+### Contacting the KMS
 
-Communication with the KMS, except for the key creation, is only available via API.
+Communication with the KMS, except for key creation, is only available via API.
 
-Since the KMS is regionalized, you can access the API directly in its region: <https://my-region.ovh.com.net>
+Since the KMS is regionalized, you can access the API directly in its region: `https://my-region.ovh.com.net`.
 
-For example, for a KMS created in the **eu-west-rbx** region: <https://eu-west-rbx.okms.ovh.net>
+For example, for a KMS created in the **eu-west-rbx** region: <https://eu-west-rbx.okms.ovh.net>.
 
-It's also possible to use the Golang SDK with the documentation available here : <https://pkg.go.dev/github.com/ovh/okms-sdk-go>
+It's also possible to use the Golang SDK with the documentation available here : <https://pkg.go.dev/github.com/ovh/okms-sdk-go>.
 
 ### Using the KMS API via the Swagger UI
 
-You can access the KMS Swagger UI by clicking on the link in the OVHcloud Control Panel, in your KMS dashboard.
+You can access the KMS Swagger UI by clicking on the link in the [OVHcloud Control Panel](/links/manager), in your KMS dashboard.
 
 ![swagger](images/swagger.png){.thumbnail}
 
@@ -65,7 +65,7 @@ Then, you need to import it into your web browser.
 
 ![firefox-cert-manager](images/firefox-cert-manager.png){.thumbnail}
 
-- Click on `View Certificates...`{.action} to open the Certificate Manager. 
+- Click `View Certificates...`{.action} to open the Certificate Manager.
 - Go to the tab named `My Certificates`{.action}, then `Import...`{.action} and select the location of your `client.p12` file.
 - You will be prompted to enter the password you used during the PKCS#12 file creation.
 - After entering the password, your certificate will be imported and ready for use.
@@ -73,7 +73,7 @@ Then, you need to import it into your web browser.
 ##### On Chrome/Chromium
 
 - Type `chrome://settings/certificates` into the address bar.
-- Go to the `Your certificates`{.action} tab. Click on `Import`{.action} and select your `client.p12` file.
+- Go to the `Your certificates`{.action} tab. Click `Import`{.action} and select your `client.p12` file.
 - You will be prompted to enter the password you used during the PKCS#12 file creation.
 - After entering the password, your certificate will be imported and ready for use.
 
@@ -91,9 +91,9 @@ You can now use the Swagger UI interactively.
 
 ### Creating an encryption key via API
 
-Key creation can be perform either through the [OVHcloud API](https://eu.api.ovh.com/console/?section=%2Fokms&branch=v2) either on the specific OVHcloud KMS API. There is no difference on the result from the creation methode
+Key creation can be performed either through the [OVHcloud API](https://eu.api.ovh.com/console/?section=%2Fokms&branch=v2) or on the specific OVHcloud KMS API. There is no difference on the result from the creation method.
 
-On the case of the specific OVHcloud KMS API, you can create a key using the following API:
+In the case of the specific OVHcloud KMS API, you can create a key using the following API:
 
 |**Method**|**Path**|**Description**|
 | :-: | :-: | :-: |
@@ -286,7 +286,7 @@ You can generate a DK using the following API:
 
 |**Method**|**Path**|**Description**|
 | :-: | :-: | :-: |
-|POST|/v1/servicekey/{keyId}/datakey|Generate a DK derived from a CMK|
+|POST|/v1/servicekey/{keyId}/datakey|Generates a DK derived from a CMK|
 
 The API expects the following values:
 
@@ -295,7 +295,7 @@ The API expects the following values:
 |name|string|Key name|
 |size|Integer|Key Size (64-4096)|
 
-**Data Key Generation Example:**
+**Data Key generation example:**
 
 ```json
 {
@@ -316,7 +316,7 @@ The API will then return the Data Key:
 - **key** : encrypted key encoded in base64. This information must be stored with the encrypted data and will be used for decryption by the KMS.
 - **plaintext**: plain key encoded in base64. This information must be deleted once the encryption is complete and must not be backed up.
 
-The use of the Data Key is then done through encryption algorithms like AES-GCM which is not covered by this documentation.
+The use of the Data Key is then done through encryption algorithms like AES-GCM. This is not covered by this documentation.
 
 ![Decrypting with DK](images/Datakey_decrypt.png){.thumbnail}
 
@@ -334,7 +334,7 @@ The API expects the following values:
 
 And it returns the decrypted Data Key in a **plaintext** field.
 
-### Sign with the KMS
+### Signing with the KMS
 
 File signing is done using the private key of an asymmetric key pair.
 
@@ -421,7 +421,7 @@ The API expects the following values:
 |**Field**|**Value**|**Description**|
 | :-: | :-: | :-: |
 |message|string|Message to sign|
-|signature|string|Signature associated with message|
+|signature|string|Signature associated with the message|
 |alg|string|Signature algorithm|
 |isdigest|boolean|Whether the message is already hashed|
 

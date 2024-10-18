@@ -1,7 +1,7 @@
 ---
-title: "Utilisez votre OVHcloud Key Management Service (KMS)"
+title: "Utiliser votre OVHcloud Key Management Service (KMS)"
 excerpt: "Chiffrez ou signez vos données avec le Key Management Service (KMS) OVHcloud"
-updated: 2024-10-17
+updated: 2024-10-18
 ---
 
 > [!warning]
@@ -17,7 +17,7 @@ L'objectif de ce guide est de présenter les différentes étapes pour interagir
 ## Prérequis
 
 - Disposer d'un [compte client OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
-- Avoir [commandé un KMS OVHcloud et créer un certificat d'accès](/pages/manage_and_operate/kms/quick-start)
+- Avoir [commandé un KMS OVHcloud et créé un certificat d'accès](/pages/manage_and_operate/kms/quick-start)
 
 ## En pratique
 
@@ -25,7 +25,7 @@ L'objectif de ce guide est de présenter les différentes étapes pour interagir
 
 La communication avec le KMS pour les actions de chiffrement et de signature est disponible uniquement par API.
 
-Le KMS étant régionalisé, l'accès à l'API se fait directement sur la région de celui-ci : <https://my-region.okms.ovh.net>
+Le KMS étant régionalisé, l'accès à l'API se fait directement sur la région de celui-ci : `https://my-region.okms.ovh.net`.
 
 Par exemple, pour un KMS créé sur la région **eu-west-rbx** : <https://eu-west-rbx.okms.ovh.net>
 
@@ -33,11 +33,11 @@ Il est aussi possible d'utiliser le SDK en Golang dont la documentation est acce
 
 ### Utilisation de l'API KMS via l'interface utilisateur Swagger
 
-Il est possible d'accéder au swagger correspondant à votre KMS en cliquant sur le lien présent dans l'espace client au niveau du dashboard de votre KMS.
+Il est possible d'accéder au swagger correspondant à votre KMS en cliquant sur le lien présent dans [l'espace client](/links/manager) au niveau du dashboard de votre KMS.
 
 ![swagger](images/swagger.png){.thumbnail}
 
-Vous atterrirez sur la version non authentifiée de l'interface utilisateur Swagger, qui est destinée à la documentation de l'API. Si vous souhaitez utiliser la Swagger UI pour effectuer des requêtes sur votre propre KMS, vous devrez basculer vers la version authentifiée, dont le lien se trouve dans la section description:
+Vous êtes alors redirigé sur la version non authentifiée de l'interface utilisateur Swagger, qui est destinée à la documentation de l'API. Si vous souhaitez utiliser la Swagger UI pour effectuer des requêtes sur votre propre KMS, vous devez basculer vers la version authentifiée, dont le lien se trouve dans la section description :
 
 ![public-swagger-ui](images/public-swagger-ui.png){.thumbnail}
 
@@ -49,14 +49,14 @@ Pour accéder à l'interface utilisateur Swagger authentifiée, vous devez charg
 
 Pour cela, il faut le convertir au format PKCS#12. PKCS#12 est un format binaire permettant de stocker une chaîne de certificats et une clé privée dans un seul fichier chiffré. Il est couramment utilisé pour importer et exporter des certificats et des clés privées, en particulier dans les environnements qui nécessitent un transport sécurisé de ces éléments, tels que les serveurs Web et les applications clientes.
 
-Pour convertir vos informations d'identification KMS (normalement nommés `ID_certificate.pem` et `ID_privatekey.pem`) en PKCS#12 avec la CLI openssl, utilisez la commande suivante:
+Pour convertir vos informations d'identification KMS (normalement nommés `ID_certificate.pem` et `ID_privatekey.pem`) en PKCS#12 avec la CLI openssl, utilisez la commande suivante :
 
 ```bash
 openssl pkcs12 -export -in ID_certificate.pem  -inkey ID_privatekey.pem -out client.p12
 ```
 
 Vous serez invité à entrer un mot de passe qui sera utilisé pour le chiffrement symétrique du contenu du fichier.
-Ensuite, vous devez l'importer dans votre navigateur Web.
+Vous devez ensuite l'importer dans votre navigateur Web.
 
 ##### Sur Firefox
 
@@ -66,7 +66,7 @@ Ensuite, vous devez l'importer dans votre navigateur Web.
 ![firefox-cert-manager](images/firefox-cert-manager.png){.thumbnail}
 
 - Cliquez sur `View Certificates...`{.action} pour ouvrir le gestionnaire de certificats.
-- Accédez à l'onglet intitulé `My Certificates`{.action}, puis `Import...`{.action} et sélectionnez l'emplacement de votre fichier `client.p12`.
+- Accédez à l'onglet intitulé `My Certificates`{.action}, puis cliquez sur `Import...`{.action} et sélectionnez l'emplacement de votre fichier `client.p12`.
 - Vous serez invité à entrer le mot de passe que vous avez utilisé lors de la création du fichier PKCS#12.
 - Après avoir entré le mot de passe, votre certificat sera importé et prêt à l'emploi.
 
@@ -174,7 +174,7 @@ Les tailles et opérations possibles en fonction du type de clé sont les suivan
 
 A la création d'une clé, il est possible d'importer une clé existante.
 
-Pour cela il est possible d'ajouter un champ complémentaire **keys** dans le corps de la requête :
+Pour cela, vous pouvez ajouter un champ complémentaire **keys** dans le corps de la requête :
 
 ```json
 {
@@ -282,7 +282,7 @@ Pour plus de performances, il est possible de générer une Data Key (DK) depuis
 
 ![Chiffrement avec DK](images/Datakey_encrypt.png){.thumbnail}
 
-La génération d'une DK se fait par l'API suivante :
+La génération d'une DK se fait via l'API suivante :
 
 |**Méthode**|**Chemin**|**Description**|
 | :-: | :-: | :-: |
