@@ -42,7 +42,7 @@ Je nach Ihrer Situation kann es sein, dass Sie ein anderes SSL-Zertifikat als da
 
 #### 1.1 - Schlüsselpaar und CSR in der Befehlszeile generieren <a name="step-1.1"></a>
 
-Um die folgenden Befehle auszuführen, benötigen Sie das OpenSSL Toolkit, das in vielen Linux-Distributionen enthalten ist. Installieren Sie sie andernfalls über die Paketverwaltung des Systems, oder verwenden Sie eine kompatible Anwendung eines Drittanbieters.  
+Um die folgenden Befehle auszuführen, benötigen Sie das OpenSSL Toolkit, das in vielen Linux-Distributionen enthalten ist. Installieren Sie sie andernfalls über die Paketverwaltung des Systems. Unter Windows können Sie das Windows-Subsystem für Linux (WSL) verwenden oder OpenSSL über eine Drittanbieteranwendung installieren.  
 Diese Vorgehensweise ist betriebssystemspezifisch, daher können wir sie in dieser Anleitung nicht im Detail beschreiben.
 
 Öffnen Sie Ihr Kommandozeileninterface (Terminal) und führen Sie folgenden Befehl aus:
