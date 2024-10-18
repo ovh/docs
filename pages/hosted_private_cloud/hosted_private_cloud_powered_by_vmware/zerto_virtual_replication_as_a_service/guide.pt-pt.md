@@ -1,7 +1,7 @@
 ---
 title: Utilizar o Zerto Virtual Replication entre dois datacenters da OVHcloud
 excerpt: Saiba como implementar a Zerto Virtual Replication para o seu Plano de Recuperação de Desastres entre dois serviços Private Cloud.
-updated: 2023-10-23
+updated: 2024-10-18
 ---
 
 > [!primary]
@@ -20,7 +20,7 @@ Para outros casos, consulte o nosso manual sobre como [utilizar Zerto entre a OV
 
 ## Requisitos
 
-* Dispor de dois serviços [Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/){.external} em dois datacenters diferentes.
+* Dispor de dois serviços [Private Cloud](/links/hosted-private-cloud/vmware-prices){.external} em dois hosts diferentes.
 * Ter, em cada um deles, um endereço IP público livre.
 
 ### Conceitos da Zerto Virtual Replication
@@ -31,8 +31,8 @@ A Zerto Virtual Replication é uma solução técnica que permite replicar dados
 
 As VRA, implementadas em cada hipervisor, vão consumir recursos para efetuar a replicação:
 
-* vCPU: 1
-* RAM: 2 GB
+* vCPU: 2
+* RAM: 6 GB
 * Armazenamento: 36 GB
 
 Note-se que, relativamente ao armazenamento, a OVHcloud disponibiliza gratuitamente um datastore dedicado para o conjunto das VRA.
@@ -408,4 +408,4 @@ Se o failover foi feito **sem** a **Reverse Protection**, o processo de reversã
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com a nossa [comunidade de utilizadores](/links/community).
