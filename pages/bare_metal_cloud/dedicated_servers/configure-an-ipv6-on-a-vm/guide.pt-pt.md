@@ -164,7 +164,7 @@ Once you have installed the operating system on the virtual machine, you can pro
 
 #### Configuration based on Netplan
 
-The configuration below is based on Ubuntu 20.04.
+The configuration below is based on Ubuntu 24.04.
 
 Once you are logged in to your virtual machine, the first step is to access the configuration file:
 

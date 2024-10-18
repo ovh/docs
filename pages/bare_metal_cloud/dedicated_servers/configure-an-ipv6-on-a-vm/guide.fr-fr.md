@@ -164,7 +164,7 @@ Une fois le système d'exploitation installé sur la machine virtuelle, vous pou
 
 #### Configuration basée sur Netplan
 
-La configuration ci-dessous est basée sur Ubuntu 20.04.
+La configuration ci-dessous est basée sur Ubuntu 24.04.
 
 Une fois connecté à votre machine virtuelle, la première étape consiste à accéder au fichier de configuration :
 
