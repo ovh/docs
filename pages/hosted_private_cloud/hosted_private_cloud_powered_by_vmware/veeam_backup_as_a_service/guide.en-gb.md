@@ -1,21 +1,21 @@
 ---
 title: "Activating and using Veeam Managed Backup"
-excerpt: "Find out how to enable and use the Veeam Managed Backup option to secure your VMs within an Hosted Private Cloud VMware on OVHcloud univers"
-updated: 2024-10-15
+excerpt: "Find out how to enable and use the Veeam Managed Backup option to secure your VMs within a Hosted Private Cloud VMware on OVHcloud solution"
+updated: 2024-10-18
 ---
 
 ## Objective
 
-**The purpose of this guide is to explain how to deploy and use the Veeam Managed Backup option in just a few minutes.**
+**The purpose of this guide is to explain how to deploy and use the Veeam Managed Backup option within just a few minutes.**
 
 ## Requirements
 
-- a [Hosted Private Cloud infrastructure](/links/hosted-private-cloud/hosted-private-cloud)
-- give the [resources right](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/change_users_rights) for the concerned datacenter to the user from the [OVHcloud Control Panel](/links/manager).
-- a user account with access to vSphere and the permission ["Add resources"](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/change_users_rights) for the pertinent data centre
-- [vSphere High Availability (HA)](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_ha_high_availability) enabled
-- [Distributed Resource Scheduler (DRS)](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_drs_distributed_ressource_scheduler_new) enabled
-- Windows SPLA Licensing enabled
+- A [Hosted Private Cloud infrastructure](/links/hosted-private-cloud/hosted-private-cloud).
+- A user account with access to vSphere and the permission ["Add resources"](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/change_users_rights) for the pertinent data centre granted from the [OVHcloud Control Panel](/links/manager).
+- You must be logged in to the managed vSphere web client.
+- [vSphere High Availability (HA)](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_ha_high_availability) enabled.
+- [Distributed Resource Scheduler (DRS)](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_drs_distributed_ressource_scheduler_new) enabled.
+-[Windows SPLA Licensing](/pages/account_and_service_management/managing_billing_payments_and_services/facturation_private_cloud#licences-windows) enabled on the VMware on OVHcloud environment.
 
 ## Instructions
 
@@ -25,7 +25,7 @@ Backups are performed using a virtual machine (VM) within your [Hosted Private C
 
 ### Activating the backup option
 
-The first step is to order the service from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). To do this, go to the `Hosted Private Cloud`{.action} section of the `Hosted Private Cloud`{.action} tab. Click on the relevant vSphere infrastructure, then select the data centre. Click on the `Backup`{.action} tab.
+The first step is to order the service from the [OVHcloud Control Panel](/links/manager). To do this, go to the `Hosted Private Cloud`{.action} section of the `Hosted Private Cloud`{.action} tab. Click on the relevant vSphere infrastructure, then select the data centre. Click on the `Backup`{.action} tab.
 
 ![Enable backup](images/veeam-managed-controlp_new.png){.thumbnail}
 
@@ -76,7 +76,7 @@ Here is a diagram of the regions from which the regions of `zone 1` are or are n
 
 ![Veeam Replication Schema](images/veeam_replicated_zones_schema.png){.thumbnail}
 
-Here, you will see a mapping of the replicated zones in this table, with additional information:
+The following table details a mapping of the replicated zones, with additional information:
 
 |  SecNumCloud   | Zone 1 |       Zone 2        |                        Cross-site<br/>replication                         | Offers               | Comments                                                                                                                                                                  |
 |:--------------:|:------:|:-------------------:|:-------------------------------------------------------------------------:|----------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -89,10 +89,6 @@ Here, you will see a mapping of the replicated zones in this table, with additio
 |       ✅️       | `GRA`  |        `RBX`        |                                     ❌                                     | Advanced<br/>Premium | - The French regions of Gravelines (RBX) and Roubaix (RBX) are not replicated with each other with the Veeam Managed Backup Advanced and Premium offers.                  |
 |                |        |                     |                                                                           |                      |                                                                                                                                                                           |
 |        ❌        | `VIN`  |        `HIL`        |                                    ✅️                                     | Advanced<br/>Premium | - The United States regions of Washington DC Vint Hill (VIN) and Seattle Hillsboro Oregon (HIL) are replicated with the Veeam Managed Backup Advanced and Premium offers. |
-
-
-
-
 
 ### Restoring a backup
 
@@ -153,7 +149,7 @@ Then confirm the deactivation by clicking `OK`{.action}.
 > [!primary]
 >
 > Follow the same instructions to disable the backup of a deleted VM.
-> It is also possible to disable the backup temporarily and reactivate it afterward.
+> It is also possible to disable the backup temporarily and reactivate it afterwards.
 >
 
 ## Go further

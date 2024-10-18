@@ -1,7 +1,7 @@
 ---
 title: "Activer et utiliser Veeam Managed Backup"
 excerpt: "Découvrez comment activer et utiliser l'option Veeam Managed Backup au sein de l'univers Hosted Private Cloud VMware on OVHcloud"
-updated: 2024-10-15
+updated: 2024-10-18
 ---
 
 ## Objectif
@@ -15,7 +15,7 @@ updated: 2024-10-15
 * Être connecté au client web vSphere managé.
 * Avoir activé la [haute disponibilité (HA)](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_ha_high_availability).
 * Avoir activé le [Distributed Ressource Scheduler (DRS)](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_drs_distributed_ressource_scheduler_new) sur le ou les clusters.
-* Mettre en place la [gestion des licences Windows SPLA](/pages/account_and_service_management/managing_billing_payments_and_services/facturation_private_cloud#licences-windows)sur l'environnement VMware on OVHcloud.
+* Mettre en place la [gestion des licences Windows SPLA](/pages/account_and_service_management/managing_billing_payments_and_services/facturation_private_cloud#licences-windows) sur l'environnement VMware on OVHcloud.
 
 ## En pratique
 
@@ -25,7 +25,7 @@ Les sauvegardes sont réalisées à l'aide d'une machine virtuelle (VM) située 
 
 ### Activer le service
 
-La première étape consiste à activer le service depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Pour cela, rendez-vous dans la partie `VMware`{.action} de l'onglet `Hosted Private Cloud`{.action}. Cliquez sur l'infrastructure VMware vSphere concernée, puis sur le datacenter souhaité. Choisissez l'onglet `Backup`{.action}.
+La première étape consiste à activer le service depuis l'[espace client OVHcloud](/links/manager). Pour cela, rendez-vous dans la partie `VMware`{.action} de l'onglet `Hosted Private Cloud`{.action}. Cliquez sur l'infrastructure VMware vSphere concernée, puis sur le datacenter souhaité. Choisissez l'onglet `Backup`{.action}.
 
 ![Activer le backup](images/veeam-managed-controlp_new.png){.thumbnail}
 
@@ -96,7 +96,7 @@ Vous avez ici la correspondance des zones répliquées dans ce tableau, avec des
 
 ### Restaurer une sauvegarde
 
-Sélectionner le datacenter VMware, puis l'onglet `Configure`{.action} et choisissez `Backup Management`{.action} dans la section OVHcloud du menu.
+Sélectionnez le datacenter VMware, puis l'onglet `Configure`{.action} et choisissez `Backup Management`{.action} dans la section OVHcloud du menu.
 
 Dans la liste, sélectionnez la VM pour laquelle vous souhaitez restaurer une sauvegarde (celle-ci doit avoir un **backup state** à **Enabled**).
 
