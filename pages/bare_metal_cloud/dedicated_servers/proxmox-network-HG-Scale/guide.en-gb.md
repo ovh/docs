@@ -363,8 +363,6 @@ iface bond0 inet dhcp
         bond-slaves ens33f0 ens33f1
         bond-miimon 100
         bond-mode 802.3ad
-        post-up echo 1 > /proc/sys/net/ipv4/conf/bond0/proxy_arp
-        post-up echo 1 > /proc/sys/net/ipv4/ip_forward
 
 auto bond1
 # LACP aggregate on private interfaces
