@@ -20,18 +20,13 @@ Les niveaux de chiffrement SSL sont identiques entre ces trois types de certific
 
 La principale différence réside dans le niveau de vérifications qui sera réalisé par l'Autorité de Certification (AC) qui délivre le certificat SSL et atteste de son authenticité.
 
-> [!warning]
->
-> Sachez qu'une fois la commande initiée et transmise auprès de notre fournisseur de certificats/autorité de certification Sectigo, **aucun remboursement ne sera possible**.
->
-
 **Découvrez comment activer ou regénérer un certificat SSL gratuit Let's Encrypt sur votre hébergement Web OVHcloud.**
 
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 - Commander ou disposer d'un [hébergement mutualisé OVHcloud](/links/web/hosting) sur lequel aucun certificat SSL n'est déjà installé.
-- Commander ou disposer d'un [nom de domaine](/links/web/domains) et disposer des droits exclusifs sur son utilisation. Le nom de domaine ne doit pas déjà être lié à un certificat SSL.
+- Commander ou disposer d'un [nom de domaine](/links/web/domains) et disposer des droits exclusifs sur son utilisation. Le ou les noms de domaine/sous-domaines ne doivent pas déjà être liés à un certificat SSL.
 
 ## En pratique
 
@@ -49,7 +44,7 @@ Pour cela, effectuez les actions suivantes :
 4. Sélectionnez l'hébergement web concerné.
 5. Sur la page qui s'affiche, cliquez sur l'onglet `Multisite`{.action}.
 
-Le tableau qui s'affiche contient tous les noms de domaine/sous-domaines déjà déclarés en multisites sur votre hébergement web. La colonne « SSL » vous indique l'état d'activation des connexions SSL sécurisées sur vos noms de domaine/sous-domaines déclarés en multisites.
+Le tableau qui s'affiche contient tous les noms de domaine/sous-domaines déjà déclarés en multisites sur votre hébergement web. La colonne « SSL » indique l'état d'activation du SSL sur vos noms de domaine/sous-domaines déclarés en multisites.
 
 ![manage SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/ssls.png){.thumbnail}
 
@@ -57,33 +52,33 @@ Dans cette colonne et de manière générale, trois états peuvent apparaître 
 
 |État|Description|
 |---|---|
-|Activé|Un certificat SSL a déjà été activé pour cette entrée multisite. Si tel est le cas, [vérifiez que le certificat SSL est bien un certificat SSL Let's Encrypt](#check-ssl). Si oui, consultez le [cas particulier](#regenerate-ssl) situé plus bas dans ce guide. Sinon, consultez notre guide « [Hébergement web - Gérer un certificat SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting) » si vous souhaitez supprimer votre certificat SSL actuel (gratuit ou payant) par un certificat SSL Let's Encrypt.|
+|Activé|Un certificat SSL a déjà été activé pour cette entrée multisite. Si tel est le cas, [vérifiez que le certificat SSL est bien un certificat SSL Let's Encrypt](#check-ssl). Si oui, consultez d'abord le [cas particulier](#regenerate-ssl) situé plus bas dans ce guide. Sinon, consultez notre guide « [Hébergement web - Gérer un certificat SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting) » si vous souhaitez supprimer votre certificat SSL actuel (gratuit ou payant), puis le remplacer par un certificat SSL Let's Encrypt.|
 |À générer|Un certificat SSL a été activé pour cette entrée multisite, mais celui-ci n'est toujours pas techniquement actif. Pour cela, vous devrez [régénérer le certificat SSL Let's Encrypt](#regenerate-ssl) afin qu'il inclue les nouveaux noms de domaine/sous-domaines déclarés en multisite et pour lesquels le statut `À générer` est présent.|
 |Désactivé|Aucun certificat SSL n'est activé pour cette entrée multisite. Pour l'activer, suivez les étapes ci-dessous.|
 
 > [!primary]
 >
-> Si l'un de vos noms de domaine ou sous-domaines n'est pas encore déclaré sur votre hébergement web, consultez les guides suivants pour résoudre cette situation :
+> Si l'un de vos noms de domaine/sous-domaines n'est pas encore déclaré sur votre hébergement web, consultez les guides suivants pour résoudre cette situation :
 > - [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) ;
 > - [Liste des adresses IP des clusters et hébergements web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) ;
 > - [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
-Pour pré-attribuer l'option SSL Let's Encrypt sur un nom de domaine/sous-domaine déclaré en multisite sur votre hébergement web et toujours depuis l'onglet `Multisite`{.action}, effectuez les actions suivantes :
+Toujours depuis l'onglet `Multisite`{.action} et pour pré-attribuer l'option SSL Let's Encrypt sur un nom de domaine/sous-domaine déclaré en multisite sur votre hébergement web, effectuez les actions suivantes :
 
 1. Dans le tableau contenant tous les noms de domaine/sous-domaines déjà déclarés en multisites sur votre hébergement web, cliquez sur le bouton `...`{.action} à droite de la ligne du nom de domaine/sous-domaine concerné.
 2. Cliquez ensuite sur `Modifier le domaine`{.action}.
 3. Dans la fenêtre qui s'affiche, cochez la case `SSL`{.action}, puis cliquez sur `Suivant`{.action}.
 4. Dans la nouvelle fenêtre qui apparaît, vous retrouvez un résumé de la configuration de votre nom de domaine/sous-domaine. Cliquez sur `Valider`{.action} pour appliquer la modification demandée pour cette entrée multisite.
 
-Une fois la modification validée, le statut de la connexion sécurisée SSL pour l'entrée multisite concernée passera de `Désactivé` à `À générer` au bout de quelques secondes. Si vous avez d'autres noms de domaine/sous-domaines concernés parmi les entrées multisites de votre hébergement web, répétez l'opération autant de fois que néccessaire.
+Une fois la modification validée, le statut dans la colonne SSL pour l'entrée multisite concernée passera de `Désactivé` à `À générer` au bout de quelques secondes. Si vous avez d'autres noms de domaine/sous-domaines concernés parmi les entrées multisites de votre hébergement web, répétez l'opération autant de fois que néccessaire.
 
 ### 2. Activer un certificat SSL Let's Encrypt <a name="enable-ssl"></a>
 
-Avant de procéder à cette configuration, assurez-vous que l'[étape précédente](#multisite) a été effectuée correctement. Dans l'onglet `Multisite`{.action} de votre hébergement web, au moins un nom de domaine/sous-domaine doit avoir l'option SSL avec le statut `Activé` ou `A générer` pour activer le certificat SSL.
+Avant de procéder à cette configuration, assurez-vous que l'[étape précédente](#ssl-multisite) a été effectuée correctement. Dans l'onglet `Multisite`{.action} de votre hébergement web, au moins un nom de domaine/sous-domaine doit avoir l'option SSL avec le statut `Activé` ou `A générer` pour installer le certificat SSL Let's Encrypt.
 
 > [!warning]
 >
-> **Avant de poursuivre**, vérifiez que **l'ensemble des noms de domaine et/ou sous-domaines** concernés par votre futur certificat SSL :
+> **Avant de poursuivre**, vérifiez que **l'ensemble des noms de domaine et/ou sous-domaines** concernés par votre futur certificat SSL Let's Encrypt :
 > - pointent vers l'adresse IP de votre hébergement web ; 
 > - sont déclarés en multisite sur votre hébergement web.
 >
@@ -108,7 +103,7 @@ Dans la fenêtre qui apparaît, sélectionnez `Certificat gratuit (Let's Encrypt
 
 ![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-an-ssl-certificate-step-1-le.png){.thumbnail}
 
-La configuration du certificat peut prendre plusieurs heures.
+La mise en place du certificat SSL Let's Encrypt peut prendre plusieurs heures.
 
 <a name="check-ssl"></a>
 
@@ -129,9 +124,9 @@ Votre certificat SSL personnalisé est désormais installé et actif. Vous pouve
 
 ### Cas particulier : Regénérer le certificat SSL Let's Encrypt sur un hébergement web <a name="regenerate-ssl"></a>
 
-Lors de l'utilisation de votre hébergement web, vous pouvez être amenés à ajouter des noms de domaine/sous-domaines en multisite pour lesquels vous aurez besoin d'activer l'option SSL.
+Lors de l'utilisation de votre hébergement web, vous pouvez être amenés à ajouter par la suite des noms de domaine/sous-domaines en multisite pour lesquels vous aurez besoin d'activer l'option SSL.
 
-Même si vous avez déjà activé un certificat SSL Let's Encrypt précédemment pour certains de vos noms de domaine/sous-domaines, vous pouvez toujours en ajouter des nouveaux et ce, dans la limite des **99** noms de domaine/sous-domaines précisé plus haut dans ce guide.
+Même si vous avez déjà activé un certificat SSL Let's Encrypt précédemment pour certains de vos noms de domaine/sous-domaines, vous pouvez toujours en ajouter de nouveaux et ce, dans la limite des **99** noms de domaine/sous-domaines précisée plus haut dans ce guide.
 
 Pour cela, effectuez **dans l'ordre** les actions suivantes :
 
