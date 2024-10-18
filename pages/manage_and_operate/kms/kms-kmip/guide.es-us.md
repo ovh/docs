@@ -34,6 +34,14 @@ It brings an easy connection, and a reversible configuration.
 The configuration depends on the product to integrate, but does not need any specific configuration on the OVHcloud KMS other than generating an access certificate.
 Softwares editors usually offer dedicated guides for this purpose.
 
+As an example, the following products were validated with the OVHcloud KMS : 
+
+- [Nutanix](https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Security-Guide-v6_8:wc-security-data-encryption-setup-t.html)
+- [VMware](https://docs.vmware.com/en/VMware-vSphere/8.0/vsphere-security/GUID-9035D542-B76B-4244-966D-2A8D92ABF54C.html)
+- [MongoDB](https://www.mongodb.com/docs/manual/core/csfle/tutorials/kmip/kmip-automatic/)
+- [Barbican](https://docs.openstack.org/barbican/latest/install/barbican-backend.html#kmip-plugin)
+- [NetApp](https://docs.netapp.com/us-en/ontap/encryption-at-rest/configure-external-key-management-concept.html)
+
 ### Direct use
 
 It's also possible to use the KMIP API directly.
