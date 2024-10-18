@@ -363,7 +363,7 @@ If you check the VPG, you will see that the replication direction has changed.
 
 ### Prepare and trigger the failback
 
-Depending on failover options, the failback (if needed) may require differents steps.
+Depending on failover options, the failback (if needed) may require different steps.
 
 - If you have selected **Reverse Protection** during the failover, the failback is just a  **Failover Live** (refer to the relevant part of this guide).
 - If you have not enabled **Reverse Protection**, you need to create a new VPG, do a full sync and then do a **Failover Live** (refer to the relevant part of this guide).

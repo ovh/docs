@@ -1,27 +1,27 @@
 ---
-title: Utiliser Zerto Virtual Replication entre deux datacenters OVHcloud
-excerpt: Découvrez comment mettre en oeuvre Zerto Virtual Replication pour votre Plan de Reprise d'Activité entre deux offres Private Cloud.
+title: "Utiliser Zerto Virtual Replication entre deux datacenters OVHcloud"
+excerpt: "Découvrez comment mettre en oeuvre Zerto Virtual Replication pour votre Plan de Reprise d'Activité entre deux hôtes Hosted Private Cloud - VMware on OVHcloud"
 updated: 2024-10-18
 ---
 
 ## Objectif
 
-Ce guide a pour objectif d’expliquer les concepts et les détails de la mise en oeuvre de Zerto Virtual Replication entre deux datacenters OVHcloud.
-
-Pour les autres cas de figure., consultez notre guide sur comment [utiliser Zerto entre OVHcloud et une plateforme tierce](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/zerto-virtual-replication-customer-to-ovhcloud).
-
-**Découvrez comment mettre en oeuvre Zerto Virtual Replication pour votre Plan de Reprise d'Activité (PRA) entre deux offres Hosted Private Cloud.**
+**Ce guide a pour objectif d’expliquer les concepts et les détails de la mise en oeuvre de Zerto Virtual Replication pour votre Plan de Reprise d'Activité (PRA) entre deux datacentres de localité différente.**
 
 ## Prérequis
 
-* Posséder deux offres [Hosted Private Cloud](/links/hosted-private-cloud/vmware-prices) sur deux hôtes différents.
-* Avoir sur chacune d'entre elles une adresse IP publique libre.
+* Posséder deux hôtes different [Hosted Private Cloud - VMware on OVHcloud](/links/hosted-private-cloud/vmware-prices).
+* Avoir sur chacune d'entre elles une adresse IP publique disponible.
+
+## En pratique
 
 ### Concepts Zerto Virtual Replication
 
 Zerto Virtual Replication est une solution technique permettant de mettre en place une réplication des données entre infrastructures de virtualisation ou cloud. 
 
 Pour cela, elle s'appuie sur les hyperviseurs de la plateforme en déployant des machines virtuelles (VM) appelées Virtual Replication Appliance (VRA) qui se chargent de dupliquer les écritures vers les unités de stockage et les transmettent vers le site distant pour être écrites.
+
+Pour les autres cas de figure, consultez notre guide sur comment [utiliser Zerto entre OVHcloud et une plateforme tierce](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/zerto-virtual-replication-customer-to-ovhcloud).
 
 #### Virtual Replication Appliance (VRA)
 
@@ -63,22 +63,22 @@ Sélectionnez **Between two OVH Private Cloud solutions** puis cliquez sur `Acti
 
 La sélection du **Private Cloud** Primaire ainsi que le **datacenter** se font automatiquement en se basant sur l'infrastructure par laquelle vous avez accédé.
 
-Sélectionnz dans le menu déroulant une adresse IP publique **libre** issue du bloc d'IP publiques attaché au **Private Cloud**. Elle sera utilisée pour la mise en place du lien sécurisé entre les infrastructures.
+Sélectionnez dans le menu déroulant une adresse IP publique **libre** issue du bloc d'IP public attaché au **Private Cloud**. Elle sera utilisée pour la mise en place du lien sécurisé entre les infrastructures.
 
 Cliquer sur `Next`{.action},
 
 ![zerto ovh enable](images/zerto_OvhToOvh_enable_03.png){.thumbnail}
 
-La sélection du site secondaire est à faire parmi vos **Private Cloud** présents dans le menu déroulant. 
+La sélection du site secondaire est à faire parmi vos hôtes **VMware** présent dans le menu déroulant Hosted Private Cloud.
 
-À noter que seuls ceux éligibles sont présents et pour cela ils doivent répondre aux critères suivants :
+À noter que seuls ceux éligibles sont présents et pour cela, ils doivent répondre aux critères suivants :
 
 * Être physiquement dans une autre Localisation
 * Ne pas déjà avoir de réplication Zerto en place
 
-Sélectionnez ensuite le **datacenter** du **Private Cloud** de destination dans le menu déroulant.
+Sélectionnez ensuite le **datacentre** de l'hôte VMware de destination dans le menu déroulant.
 
-Sélectionnez dans le menu déroulant une adresse IP publique **libre** issue du bloc d'IP publiques attaché au **Private Cloud**. Elle sera utilisée pour la mise en place du lien sécurisé entre les infrastructures.
+Sélectionnez dans le menu déroulant une adresse IP publique **libre** issue du bloc d'IP public attaché au datacentre. Elle sera utilisée pour la mise en place du lien sécurisé entre les infrastructures.
 
 Cliquer sur `Next`{.action},
 
@@ -116,7 +116,7 @@ L'interface est accessible depuis les deux (2) infrastructures via l'adresse :
 
 > [!warning]
 >
-> Comme indiqué dans le corps de l'e-amil, les identifiants pour se connecter sont les même que ceux utilisés pour se connecter à l'interface vSphere.
+> Comme indiqué dans le corps de l'e-amil, les identifiants pour se connecter sont les mêmes que ceux utilisés pour se connecter à l'interface vSphere.
 >
 
 Une fois identifié, vous arrivez sur un écran affichant le tableau de bord :
@@ -142,7 +142,7 @@ Depuis le menu `Actions`{.action}, sélectionnez `Create VPG`{.action}
 Sur le premier écran :
 
 * Saisissez un nom pour le VPG, idéalement celui-ci doit être parlant dans un contexte opérationnel.
-* Sauf besoin particulier, la priorité définie a **Medium** peut-être laissée telle-quelle.
+* Sauf besoin particulier, la priorité définie a **Medium** peut-être laissé tel-quelle.
 
 Continuez en cliquant sur `NEXT`{.action}
 
@@ -173,8 +173,8 @@ On passe ensuite à l'étape de sélection du site distant :
 
 Puis on passe à l'étape des définitions des ressources distantes :
 
-* **Hosts** : Sélectionnez la ressource de calcul, qui peut-être un **host seul** (indiqué par son adresse IP et précédé du nom du cluster entre crochets le cas échéant), un **Ressource Pool** (commençant par RP suivi du nom du cluster puis du nom du Ressource Pool) ou un **Cluster** (via son nom). Seul un **Ressource Pool** ou un **Cluster** doit être sélectionné (ici Cluster1).
-* **Datastore** : Sélectionnez la ressource de stockage, qui peut-être un **Datastore seul** (indiqué par son nom et précédé du nom du **Storage Cluster** entre crochets le cas échéant) ou un **Storage Cluster** (via son nom).
+* **Hosts** : Sélectionnez la ressource de calcul, qui peut être un **host seul** (indiqué par son adresse IP et précédé du nom du cluster entre crochets le cas échéant), un **Ressource Pool** (commençant par RP suivi du nom du cluster puis du nom du Ressource Pool) ou un **Cluster** (via son nom). Seul un **Ressource Pool** ou un **Cluster** doit être sélectionné (ici Cluster1).
+* **Datastore** : Sélectionnez la ressource de stockage, qui peut être un **Datastore seul** (indiqué par son nom et précédé du nom du **Storage Cluster** entre crochets le cas échéant) ou un **Storage Cluster** (via son nom).
 
 Laissez les autres valeurs telles quelles sauf besoins avancés.
 
