@@ -93,7 +93,7 @@ If you own your own private key, it's possible to use it with a CSR.
 
 ![Create a certificate](images/create_certificat_03.png){.thumbnail}
 
-The second parr of the form allow you to indicate the [OVHcloud identities](/pages/manage_and_operate/iam/identities-management) associated to this certificate used to calculate access rights via the [OVHcloud IAM](/pages/account_and_service_management/account_information/iam-policy-ui).
+The second part of the form allow you to indicate the [OVHcloud identities](/pages/manage_and_operate/iam/identities-management) associated to this certificate used to calculate access rights via the [OVHcloud IAM](/pages/account_and_service_management/account_information/iam-policy-ui).
 It's possible to add the `root` identity to the certificate so not to be constrained by the OVHcloud IAM.
 
 ![Create a certificate](images/create_certificat_04.png){.thumbnail}

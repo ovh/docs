@@ -1,7 +1,7 @@
 ---
 title: "Getting started with OVHcloud Key Management Service (KMS)"
 excerpt: "Discover the steps you need to take to set up your first Key Management Service (KMS), create a key, and access it"
-updated: 2024-10-17
+updated: 2024-10-18
 ---
 
 > [!warning]
@@ -46,7 +46,7 @@ After a few seconds, the KMS will be available in your Control Panel.
 
 ![Order the KMS](images/order_kms_03.png){.thumbnail}
 
-### Through the administration console
+### Via the the administration console
 
 #### Create an encryption key
 
@@ -75,30 +75,30 @@ To reduce the risks of an unwanted deletion, it is mandatory to disable a key be
 To communicate with your KMS, you will need to create an access certificate.
 This will be used for any interaction with the KMS, either to create encryption keys or to carry out operations with them.
 
-It's possible to create this certificate from the dedicated entry on the administration console with the `Generate an access certificate`{.action} button
+It's possible to create this certificate from the dedicated entry on the administration console with the `Generate an access certificate`{.action} button.
 
 ![Create a certificate](images/create_certificat_01.png){.thumbnail}
 
-The first part of the form allow you to precise his validity duration and providing or not your own private key through a Certificate Signing Request (CSR).
+The first part of the form allow you to precise its validity duration and providing or not your own private key through a Certificate Signing Request (CSR).
 
-- Without providing a private key
+- Without providing a private key:
 
 If you do not provide a CSR, OVHcloud will generate the certificate and a private key as well.
 
 ![Create a certificate](images/create_certificat_02.png){.thumbnail}
 
-- With a CSR
+- With a CSR:
 
-If you own your own private key, it's possible to use it with a CSR
+If you own your own private key, it's possible to use it with a CSR.
 
 ![Create a certificate](images/create_certificat_03.png){.thumbnail}
 
-The second par of the form allow you to indicate the [OVHcloud identities](/pages/manage_and_operate/iam/identities-management) associate to this certificate used to calculate access rights via the [OVHcloud IAM](/pages/account_and_service_management/account_information/iam-policy-ui)
-It's possible to add the "root" identity to the certificate to not be constrain by the OVHcloud IAM
+The second part of the form allow you to indicate the [OVHcloud identities](/pages/manage_and_operate/iam/identities-management) associated to this certificate used to calculate access rights via the [OVHcloud IAM](/pages/account_and_service_management/account_information/iam-policy-ui).
+It's possible to add the `root` identity to the certificate so not to be constrained by the OVHcloud IAM.
 
 ![Create a certificate](images/create_certificat_04.png){.thumbnail}
 
-You need then to download the private key of the certificate.
+You then need to download the private key of the certificate.
 
 > [!warning]
 >
@@ -111,7 +111,7 @@ Finally it's possible to download the public key of the certificate from the das
 
 ![Create a certificate](images/create_certificat_06.png){.thumbnail}
 
-### Through API
+### Via the API
 
 #### Create an encryption key
 
