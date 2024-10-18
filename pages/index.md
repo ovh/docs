@@ -409,7 +409,7 @@
             + [Using the vSphere SDK](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_installation_api)
             + [VMware DRS (Distributed Resource Scheduler)](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_drs_distributed_ressource_scheduler_new)
             + [VMware Storage vMotion](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_storage_vmotion)
-            + [Enabling Virtual Machine Encryption (VM Encrypt)](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vm_encrypt)
+            + [Enabling Virtual Machine Encryption with external KMS](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vm_encrypt)
             + [Using VMware Hyperconvergence with vSAN](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_vsan)
             + [Adding an ESXi server to a vSAN cluster](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_vsan_add_host)
             + [Updating the vSAN disk format](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_vsan_disk_format_upgrade)
