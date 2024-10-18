@@ -49,14 +49,34 @@ La plateforme **Datamotive Workload Portability** est composée des composants s
 
 ### Que pouvez-vous faire avec Datamotive ?
 
-Datamotive fournit actuellement une interface utilisateur graphique, des API et un kit de développement Python entièrement fonctionnels et intuitifs pour effectuer toutes les opérations prises en charge. Une fois déployé, les administrateurs peuvent accéder à l'interface utilisateur graphique de Datamotive en se connectant au serveur de gestion sur le site protégé. L'URL permettant d'accéder au serveur d'administration est Server IP Address>:5000. Les informations d'identification par défaut pour accéder à l'application sont administrateur/admin.
+Datamotive fournit actuellement une interface utilisateur graphique, des API et un kit de développement Python entièrement fonctionnels et intuitifs pour effectuer toutes les opérations prises en charge. Une fois déployé, les administrateurs peuvent accéder à l'interface utilisateur graphique de Datamotive en se connectant au serveur de gestion sur le site protégé. 
+
+L'URL permettant d'accéder au serveur d'administration est : <https://<ADRESS_IP_or_FQDN>:5000>. 
+
+Les informations d'identification par défaut pour accéder à l'application sont `administrateur/admin`.
 
 Les administrateurs de reprise après sinistre peuvent effectuer les opérations Day1-DayN suivantes à l'aide de l'interface utilisateur graphique Datamotive. Les sections suivantes de ce document décrivent en détail l'interface utilisateur et les options associées.
+
+### La console de management
+
+Voici une vue de l'interface utilisateur de management auquel vous avez accès quand vous vous connectez :
+
+![Datamotive Console](images/datamotive_dashboard.png){.thumbnail}
+
+Vous pouvez accéder à toutes les fonctionnalités de Datamotive depuis le manuel d'utilisation sur le chemin d'accès de l'url `/docs`, par exemple : <https://<ADDRESS_IP_or_FQDN>:5000/docs>
+
+### Comment se connecter ?
+
+Vous pouvez vous connecter en accédant à l'url de votre environnement : <https://<ADDRESS_IP_or_FQDN>:5000>
+
+Vous accédez à cette interface :
+
+![Datamotive Login](images/datamotive_login.png){.thumbnail}
 
 ## Aller plus loin
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre Technical Account Manager ou rendez-vous sur [cette page](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit la solution Datamotive sur le [site Web](https://www.datamotive.io/).
+Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit la solution Datamotive sur le [site Web](<https://www.datamotive.io/>) officiel.
 
 Échangez avec notre [communauté d'utilisateurs OVHcloud](/links/community).

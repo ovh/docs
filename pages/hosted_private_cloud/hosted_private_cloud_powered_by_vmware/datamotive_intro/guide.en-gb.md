@@ -49,14 +49,34 @@ The **Datamotive Workload Portability** platform consists of the following compo
 
 ### What can you do with Datamotive?
 
-Datamotive currently provides a fully functional and intuitive graphical user interface, APIs, and Python SDK to perform all the supported operations. Once deployed, administrators can access the Datamotive graphical user interface by connecting to the management server at the protected site. The URL to access the management server is Server IP Address>:5000. The default credentials for accessing the application are administrator/admin.
+Datamotive currently provides a fully functional and intuitive graphical user interface, APIs, and Python SDK to perform all the supported operations. Once deployed, administrators can access the Datamotive graphical user interface by connecting to the management server at the protected site. 
+
+The URL to access the management server is : <https://<ADRESS_IP_or_FQDN>:5000>. 
+
+The default credentials for accessing the application are `administrator/admin`.
 
 Disaster recovery administrators can perform the following Day1-DayN operations using the Datamotive graphical user interface. The following sections of this document detail the user interface and associated options.
+
+### The management console
+
+Here is a view of the management user interface that you have access to when you log in:
+
+![Datamotive](images/datamotive_dashboard.png){.thumbnail}
+
+You can access all the Datamotive features from the user manual on the url path `/docs`, e.g.: <https://<ADDRESS_IP_or_FQDN>:5000/docs>
+
+### How do I log in?
+
+You can log in by accessing your environment’s URL: <https://<ADDRESS_IP_or_FQDN>:5000>
+
+You will access this interface:
+
+![Datamotive Login](images/datamotive_login.png){.thumbnail}
 
 ## Go further
 
 If you require training or technical support to implement our solutions, please contact your Technical Account Manager or visit [this page](/links/professional-services) to get a quote and request a custom analysis of your project from our Professional Services team experts.
 
-Ask questions, give feedback and interact directly with the team building the Datamotive solution on [website](https://www.datamotive.io/).
+Ask questions, give feedback and interact directly with the team building the Datamotive solution on the official [website](https://www.datamotive.io/).
 
-Join our [OVHcloud user community](/links/community).
+Join our [community of users OVHcloud](/links/community).
