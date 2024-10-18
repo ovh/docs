@@ -38,7 +38,7 @@ Możliwe, że w zależności od Twojej sytuacji będziesz chciał zainstalować 
 
 > [!primary]
 >
-> Ten etap jest opcjonalny, jeśli certyfikat SSL został już wygenerowany i pobrany od Twojego dostawcy SSL lub jeśli dostawca proponuje wygenerowanie certyfikatu SSL podczas zamawiania certyfikatu. Jeśli tak jest, przejdź bezpośrednio do [etapu 2] (#step-2).
+> Ten etap jest opcjonalny, jeśli certyfikat SSL został już wygenerowany i pobrany od Twojego dostawcy SSL lub jeśli dostawca proponuje wygenerowanie certyfikatu SSL podczas zamawiania certyfikatu. Jeśli tak jest, przejdź bezpośrednio do [etapu 2](#step-2).
 
 #### 1.1 - Wygeneruj klucz prywatny i CSR za pomocą wiersza polecenia <a name="step-1.1"></a>
 
