@@ -38,7 +38,7 @@ Depending on your situation, you may want to install a different SSL certificate
 
 #### 1.1 - Generate encryption keys and CSR file from the command line <a name="step-1.1"></a>
 
-To execute the following commands, you will need the toolkit OpenSSL which is included in many Linux distributions. Otherwise you can install it via the system's package manager or use a compatible third-party application.  
+To execute the following commands, you will need the toolkit OpenSSL which is included in many Linux distributions. Otherwise you can install it via the system's package manager. On Windows, you can use the Windows Subsystem for Linux (WSL) or install it via a third-party application.  
 Since this method is specific to the operating system you are using, we cannot detail it in this documentation.
 
 Open your command line interface (terminal) and issue the following command:
