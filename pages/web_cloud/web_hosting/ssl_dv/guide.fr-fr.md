@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Activer un certificat SSL DV"
 excerpt: "Découvrez comment activer un certificat SSL DV sur votre hébergement Web OVHcloud"
-updated: 2024-10-15
+updated: 2024-10-18
 ---
 
 ## Objectif
@@ -36,3 +36,84 @@ Pour les hébergements mutualisés OVHcloud, l'autorité de certification déliv
 - Commander ou disposer d'un [nom de domaine](/links/web/domains) et disposer des droits exclusifs sur son utilisation. Le nom de domaine ne doit pas déjà être lié à un certificat SSL.
 
 ## En pratique
+
+> [!warning]
+>
+> Les certificats SSL DV proposés chez OVHcloud ne sont valables que pour un seul nom de domaine/sous-domaine sur votre hébergement web. Cela signifie que si vous avez d'autres noms de domaine/sous-domaines déclarés en multisite sur votre hébergement web, ces derniers ne pourront pas bénéficier d'un certificat SSL.
+>
+> Si vous avez besoin d'activer un certificat SSL pour plusieurs noms de domaine/sous-domaines déclarés sur votre hébergement web, privilégiez l'installation d'un [certificat SSL gratuit Let's Encrypt](/links/web/hosting-options-ssl) ou installez votre propre [certificat SSL personnalisé](/pages/web_cloud/web_hosting/ssl_custom).
+>
+
+**Avant de commander le certificat SSL DV sur votre hébergement web**, vérifiez que **le nom de domaine/sous-domaine** concerné par votre certificat SSL : 
+
+- pointe vers l'adresse IP de votre hébergement web ; 
+- est déclaré en multisite sur votre hébergement web.
+
+Vérifiez également les point suivants :
+
+- La case `SSL` ne doit pas être cochée lors de l'ajout en multisite du nom de domaine/sous-domaine concerné par votre certificat SSL DV.
+- Le statut `A générer` ou `Actif` ne doit pas déjà être présent pour le nom de domaine/sous-domaine concerné par votre certificat SSL DV.
+
+Si besoin et pour vous en assurer, consultez nos guides « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) » et « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
+
+### Commander le certificat SSL DV
+
+Pour commander le certificat SSL DV, réalisez les actions suivantes :
+
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
+2. Sur la ligne située en haut de l'espace client, cliquez sur l'onglet `Web Cloud`{.action}.
+3. Dans la colonne de gauche, cliquez sur le menu déroulant `Hébergements`{.action}.
+4. Sélectionnez l'hébergement web concerné.
+5. Sur la page qui s'affiche, restez dans l'onglet `Informations générales`{.action}.
+6. Positionnez-vous dans l'encadré intitulé `Configuration`.
+7. A droite de la mention `Certificat SSL`, cliquez sur le bouton `...`{.action}, puis sur `Commander un certificat SSL`{.action}.
+
+
+![Order an SSL certificate](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-an-ssl-certificate.png){.thumbnail}
+
+Dans la fenêtre qui apparaît, sélectionnez `Certificat payant`{.action} parmi la liste des choix possibles.
+
+Sélectionnez ensuite le nom de domaine/sous-domaine concerné dans la liste déroulante qui apparaît, puis cliquez sur `Suivant`{.action}.
+
+Dans la nouvelle fenêtre qui s'affiche, cliquez sur `Valider`{.action} pour être redirigé vers le bon de commande de votre certificat SSL DV.
+
+Poursuivez la commande jusqu'au paiement afin de valider la demande de création du certificat SSL DV pour votre nom de domaine/sous-domaine sur votre hébergement web.
+
+> [!alert]
+>
+> Une fois la commande validée, la demande de certificat SSL DV est envoyée à l'autorité de certification Sectigo.
+>
+> Dès lors, aucun remboursement du SSL DV ne sera possible.
+
+L'installation du certificat SSL DV peut prendre jusqu'à **24** heures.
+
+### Vérifier l'activation du certificat SSL DV
+
+Pour vérifier que l'installation est terminée, effectuez les actions suivantes :
+
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
+2. Sur la ligne située en haut de l'espace client, cliquez sur l'onglet `Web Cloud`{.action}.
+3. Dans la colonne de gauche, cliquez sur le menu déroulant `Hébergements`{.action}.
+4. Sélectionnez l'hébergement web concerné.
+5. Sur la page qui s'affiche, restez dans l'onglet `Informations générales`{.action}.
+6. Positionnez-vous dans l'encadré intitulé `Configuration`.
+
+Si tout est terminé, vous devez retrouver, en dessous de la mention `Certificat SSL`, une valeur équivalente à celle-ci : `Oui - SECTIGO - DV`.
+
+![SSL DV certificate](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ssl-certificate-dv-enable.png){.thumbnail}
+
+Votre certificat SSL DV est désormais installé et actif. Vous pouvez dès à présent l'utiliser avec votre site web en passant, par exemple, votre [site web en HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website).
+
+## Aller plus loin <a name="go-further"></a>
+
+[Hébergement web - Gérer un certificat SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting).
+
+[Hébergement web - Passer son site web en HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website).
+
+[Erreurs courantes liées à la sécurisation de votre site web avec le SSL](/pages/web_cloud/web_hosting/ssl_avoid_common_pitfalls_of_making_website_secure).
+ 
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
+ 
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
+ 
+Échangez avec notre [communauté d'utilisateurs](/links/community).
