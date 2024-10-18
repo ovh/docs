@@ -1,7 +1,7 @@
 ---
 title: "Configuring an IPv6 address on a virtual machine"
-excerpt: "Find out how to configure an IPv6 address on a virtual machine"
-updated: 2024-10-17
+excerpt: "Find out how to configure an IPv6 address on a virtual machine for Proxmox VE or Microsoft Hyper-V Server on an OVHcloud Dedicated Server"
+updated: 2024-10-18
 ---
 
 ## Objective
@@ -10,7 +10,7 @@ Internet Protocol version 6 (IPv6) is the successor to Internet Protocol version
 
 Our infrastructure also allows you to configure IPv6 on your virtual machines.
 
-**This guide explains how to configure IPv6 addresses on your virtual machine.**
+**This guide explains how to configure an IPv6 address on a virtual machine for Proxmox VE or Microsoft Hyper-V Server on an OVHcloud Dedicated Server.**
 
 > [!warning]
 > OVHcloud provides services that you are responsible for. Since we have no access to these machines, we are not their administrators and cannot provide you with assistance. You are responsible for your own software and security management.
@@ -21,12 +21,12 @@ Our infrastructure also allows you to configure IPv6 on your virtual machines.
 ## Requirements
 
 - A [dedicated server](/links/bare-metal/bare-metal) with an IPv6 block (/64) or (/56) in your OVHcloud account.
-- An operating system with virtualization capabilities (Proxmox, Hyper-V, etc.).
-- You must have all the information related to your IPv6 (prefix, gateway...).
+- An operating system with virtualization capabilities (Proxmox VE, Hyper-V Server, etc.).
+- You must have all the information related to your IPv6 (prefix, gateway, etc.).
 - Basic knowledge of SSH and networking.
 
 > [!warning]
-> Please note that we no longer offer VMware EXSi as an operating system. As a result, the configuration examples in this guide will focus on Proxmox and Windows Hyper-V.
+> Please note that [we no longer offer VMware EXSi as an operating system](/pages/bare_metal_cloud/dedicated_servers/esxi-end-of-support). As a result, the configuration examples in this guide will focus on Proxmox VE and Windows Hyper-V.
 >
 
 ## Instructions
@@ -54,7 +54,7 @@ The first step is to retrieve the IPv6 gateway assigned to your server. Two meth
 
 #### Via the OVHcloud Control Panel
 
-Log in to your [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section, and select your server under the `Dedicated server`{.action} section.
+Log in to your [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section, and select your server under the `Dedicated servers`{.action} section.
 
 The IPv6 gateway assigned to your server is displayed in the `Network` section of the `General information`{.action} tab.
 
@@ -71,19 +71,18 @@ Execute the following API call, specifying the internal name of the server (exam
 > @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/specifications/network
 >
 
-Please note that the preceeding "0s" can be deleted in an IPv6 gateway.
-
-Example:
-
-IPv6_GATEWAY : `2607:5300:60:62ff:00ff:00ff:00ff:00ff` can also be written as `2607:5300:60:62ff:ff:ff:ff:ff:ff`.
+> [!success]
+> Please note that the preceeding "0s" can be deleted in an IPv6 gateway.
+>
+> Example: IPv6_GATEWAY : `2607:5300:60:62ff:00ff:00ff:00ff:00ff` can also be written as `2607:5300:60:62ff:ff:ff:ff:ff:ff`.
 
 ### Prepare the host
 
-#### Proxmox
+#### Proxmox VE
 
-**For a virtual machine**
+##### **For a virtual machine**
 
-The first step is to create the virtual machine in Proxmox.
+The first step is to create the virtual machine in Proxmox VE.
 
 Once you have logged in to the Proxmox dashboard, click on your server name in the left-hand corner, then `Create VM`{.action}.
 
@@ -112,17 +111,17 @@ Once you have logged in to the Proxmox dashboard, click on your server name in t
 
 Once the operating system has been installed on the virtual machine, you can [configure](#configurationsteps) the IPv6 address.
 
-**For a container**
+##### **For a container**
 
 Once you have created your container, click on it in the left-hand menu. Then click `Network`{.action}.
 
 ![container configuration](images/container_network.png){.thumbnail}
 
-Select the existing network and click `edit`{.action}.
+Select the existing network and click `Edit`{.action}.
 
 ![container configuration](images/edit_network.png){.thumbnail}
 
-Fill in the IPV6 fields with the correct information
+Fill in the IPV6 fields with the correct information.
 
 ![container configuration](images/configure_ipv6_container.png){.thumbnail}
 
@@ -132,8 +131,7 @@ Log in to your container to verify IPv6 connectivity with the `ping` command:
 
 ![ping](images/container_ubuntu.png){.thumbnail}
 
-
-#### Windows Servers / Hyper-V
+#### Windows Server / Hyper-V
 
 The first step is to install the Hyper-V role on your Windows Server. For more information, consult the [official documentation](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server){.external}.
 
@@ -156,7 +154,7 @@ Select the adapter with the server’s IP, then tick the option `Allow managemen
 
 ![virtual switch](images/virtual_switch.png){.thumbnail}
 
-Next, go to the settings of the VM and click on `Network Adapter`{.action} in the left-hand tab. From the drop down list, select the virtual switch created above and click on `Apply`{.action}, then on `OK`{.action}.
+Next, go to the settings of the VM and click on `Network Adapter`{.action} in the left-hand tab. From the drop down list, select the virtual switch created earlier and click on `Apply`{.action}, then on `OK`{.action}.
 
 ![virtual switch](images/virtual_switch_1.png){.thumbnail}
 
@@ -242,7 +240,6 @@ To test your IPv6 connectivity, run the `ping` command at `2001:4860:4860::8888`
 
 ![ping](images/vm_debian.png){.thumbnail}
 
-
 #### Configuration based on NetworkManager
 
 The configuration below is based on Fedora 40.
@@ -284,7 +281,6 @@ sudo systemctl restart NetworkManager
 To test your IPv6 connectivity, run the `ping` command at `2001:4860:4860::8888`:
 
 ![ping](images/vm_alma_rocky.png){.thumbnail}
-
 
 ## Go further
 

@@ -1,7 +1,7 @@
 ---
 title: "Configurer une adresse IPv6 sur une machine virtuelle"
-excerpt: "Découvrez comment configurer une adresse IPv6 sur une machine virtuelle"
-updated: 2024-10-17
+excerpt: "Découvrez comment configurer une adresse IPv6 sur une machine virtuelle pour Proxmox VE ou Microsoft Hyper-V Server sur un Serveur Dédié OVHcloud"
+updated: 2024-10-18
 ---
 
 ## Objectif
@@ -10,7 +10,7 @@ Internet Protocol version 6 (IPv6) est le successeur d'Internet Protocol version
 
 Notre infrastructure vous permet également de configurer l'IPv6 sur vos machines virtuelles.
 
-**Ce guide vous explique comment configurer des adresses IPv6 sur votre machine virtuelle.**
+**Ce guide vous explique comment configurer des adresses IPv6 sur votre machine virtuelle pour Proxmox VE ou Microsoft Hyper-V Server sur un Serveur Dédié OVHcloud.**
 
 > [!warning]
 > OVHcloud met à votre disposition des services dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs et ne pourrons vous fournir d’assistance. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
@@ -21,12 +21,12 @@ Notre infrastructure vous permet également de configurer l'IPv6 sur vos machine
 ## Prérequis
 
 - Disposer d’un [serveur dédié](/links/bare-metal/bare-metal) disposant d'un bloc IPv6 (/64) ou (/56) dans votre compte OVHcloud.
-- Avoir installé un système d'exploitation permettant la virtualisation (Proxmox, Hyper-V etc..).
-- Avoir toutes les informations relatives à votre IPv6 (préfixe, passerelle...).
+- Avoir installé un système d'exploitation permettant la virtualisation (Proxmox VE, Microsoft Hyper-V Server, etc.).
+- Avoir toutes les informations relatives à votre IPv6 (préfixe, passerelle, etc.).
 - Avoir des connaissances de base en SSH et en réseau.
 
 > [!warning]
-> Veuillez noter que nous ne proposons plus Vmware EXSi en tant que système d’exploitation. Par conséquent, les exemples de configuration de ce guide se concentreront sur Proxmox et Windows Hyper-V.
+> Veuillez noter que [nous ne proposons plus Vmware EXSi en tant que système d’exploitation](/pages/bare_metal_cloud/dedicated_servers/esxi-end-of-support). Par conséquent, les exemples de configuration de ce guide se concentreront sur Proxmox VE et Windows Hyper-V.
 
 ## En pratique
 
@@ -53,7 +53,7 @@ La première étape consiste à récupérer la passerelle (gateway) IPv6 assign�
 
 #### Via votre espace client
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveur dédiés`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveurs dédiés`{.action}.
 
 La passerelle IPv6 assignée à votre serveur est affichée dans la section `Réseau` de l'onglet `Informations générales`{.action}.
 
@@ -70,19 +70,19 @@ Exécutez l'appel API suivant, en indiquant le nom interne du serveur (exemple :
 > @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/specifications/network
 >
 
-Veuillez noter que les "0" de tête peuvent être supprimés dans une passerelle IPv6.
-
-Exemple :
-
-IPv6_GATEWAY : `2607:5300:60:62ff:00ff:00ff:00ff:00ff` peut aussi être écrit comme `2607:5300:60:62ff:ff:ff:ff:ff`.
+> [!success]
+> Veuillez noter que les "0" de tête peuvent être supprimés dans une passerelle IPv6.
+>
+> Exemple : IPv6_GATEWAY : `2607:5300:60:62ff:00ff:00ff:00ff:00ff` peut aussi être écrit comme `2607:5300:60:62ff:ff:ff:ff:ff`.
+>
 
 ### Préparer l'hôte
 
-#### Proxmox
+#### Proxmox VE
 
-**Pour une machine virtuelle**
+##### **Pour une machine virtuelle**
 
-La première étape consiste à créer la machine virtuelle dans Proxmox.
+La première étape consiste à créer la machine virtuelle dans Proxmox VE.
 
 Une fois connecté au tableau de bord Proxmox, cliquez sur le nom de votre serveur dans le coin à gauche, puis sur `Créer VM`{.action}.
 
@@ -93,12 +93,12 @@ Une fois connecté au tableau de bord Proxmox, cliquez sur le nom de votre serve
 > [!tabs]
 > **General**
 >>
->> **Name:** Renseignez un nom pour votre VM.
+>> **Name :** Renseignez un nom pour votre VM.
 >>
 >>![create vm](images/create_vm_name.png){.thumbnail}
 >> 
 > **OS**
->> Cliquez sur la flèche déroulante à côté de `ISO image` pour sélectionner l'image de votre choix. Dans notre exemple, nous utilisons ubuntu 24.04 ISO.
+>> Cliquez sur le menu déroulant à côté de `ISO image` pour sélectionner l'image de votre choix. Dans notre exemple, nous utilisons ubuntu 24.04 ISO.
 >>
 >>![iso image](images/select_iso.png){.thumbnail}
 >>
@@ -111,13 +111,13 @@ Une fois connecté au tableau de bord Proxmox, cliquez sur le nom de votre serve
 
 Une fois le système d'exploitation installé sur la machine virtuelle, vous pouvez procéder à la [configuration](#configurationsteps) de l'adresse IPv6.
 
-**Pour un conteneur**
+##### **Pour un conteneur**
 
 Une fois votre conteneur créé, cliquez dessus dans le menu de gauche. Cliquez ensuite sur `Réseau`{.action}.
 
 ![configuration du conteneur](images/container_network.png){.thumbnail}
 
-Sélectionnez le réseau existant et cliquez sur `edit`{.action}.
+Sélectionnez le réseau existant et cliquez sur `Edit`{.action}.
 
 ![configuration du conteneur](images/edit_network.png){.thumbnail}
 
@@ -131,7 +131,7 @@ Connectez-vous à votre conteneur pour vérifier la connectivité IPv6 avec la c
 
 ![ping](images/container_ubuntu.png){.thumbnail}
 
-#### Windows Server/Hyper-V
+#### Windows Server / Hyper-V
 
 La première étape consiste à installer le rôle Hyper-V sur votre serveur Windows. Pour plus d'informations, consultez la [documentation officielle](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server){.external}.
 
@@ -150,11 +150,11 @@ Sélectionnez l'adaptateur avec l'adresse IP du serveur, puis cochez `Autoriser 
 ![virtual switch](images/virtual_switch.png){.thumbnail}
 
 > [!primary]
-> 
+>
 > Cette étape n'est requise qu'une seule fois pour un serveur Hyper-V. Pour toutes les machines virtuelles, un commutateur virtuel est nécessaire pour connecter les cartes réseau virtuelles de la machine virtuelle à la carte physique du serveur.
-> 
+>
 
-Ensuite, allez dans les paramètres de la VM et cliquez sur `Network Adapter`{.action} dans l'onglet de gauche. Dans la liste déroulante, sélectionnez le commutateur virtuel créé ci-dessus et cliquez sur `Appliquer`{.action}, puis sur `OK`{.action}.
+Ensuite, allez dans les paramètres de la VM et cliquez sur `Network Adapter`{.action} dans l'onglet de gauche. Dans la liste déroulante, sélectionnez le commutateur virtuel créé plus tôt et cliquez sur `Appliquer`{.action}, puis sur `OK`{.action}.
 
 ![virtual switch](images/virtual_switch_1.png){.thumbnail}
 
@@ -240,7 +240,6 @@ Pour tester la connectivité de votre IPv6, exécutez la commande `ping` à l'ad
 
 ![ping](images/vm_debian.png){.thumbnail}
 
-
 #### Configuration basée sur NetworkManager
 
 La configuration ci-dessous est basée sur Fedora 40.
@@ -273,7 +272,7 @@ gateway=IPV6_GATEWAY
 
 Enregistrez vos modifications dans le fichier de configuration et quittez l'éditeur.
 
-Ensuite, redémarrez le réseau avec la commande suivante :
+Redémarrez ensuite le réseau avec la commande suivante :
 
 ```bash
 sudo systemctl restart NetworkManager
