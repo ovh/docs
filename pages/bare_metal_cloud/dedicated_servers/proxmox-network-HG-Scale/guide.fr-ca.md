@@ -1,7 +1,7 @@
 ---
-title: 'Configurer le réseau sur Proxmox VE'
+title: 'Configurer le réseau sur Proxmox VE sur les gammes High Grade, Scale & Advance'
 excerpt: 'Découvrez comment configurer le réseau sur Proxmox VE'
-updated: 2024-09-27
+updated: 2024-10-18
 ---
 
 > [!primary]
@@ -18,7 +18,6 @@ updated: 2024-09-27
 - Disposer d'un [serveur dédié OVHcloud](/links/bare-metal/bare-metal)
 - Disposer d'adresses [Additional IP](/links/network/additional-ip)
 - Être connecté à votre [espace client OVHcloud](/links/manager)
-
 
 > [!warning]
 >
@@ -53,7 +52,6 @@ Il faut :
 - créer un agrégat (linux bond), uniquement pour les gammes High Grade & SCALE ;
 - créer un bridge ;
 - autoriser le forwarding ;
-- autoriser le proxy_arp ;
 - ajouter les routes.
 
 #### Configurer l'hyperviseur
@@ -68,18 +66,15 @@ ssh PUB_IP_DEDICATED_SERVER
 > [!tabs]
 > Gammes High Grade & SCALE
 >>
->> - **Activation de l'ip_forward et du proxy_arp** :
+>> - **Activation de l'ip_forward** :
 >> 
->> Il faut activer les paramètres `sysctl` `ip_forward` et `proxy_arp`. Pour ce faire, il est recommandé de modifier le fichier de configuration `sysctl.conf`.
+>> Il faut activer le paramètre sysctl `ip_forward`. Pour ce faire, il est recommandé de modifier le fichier de configuration `sysctl.conf`.
 >> 
->> Ajoutez les lignes suivantes dans `/etc/sysctl.conf` :
+>> Ajoutez la ligne suivants dans `/etc/sysctl.conf` :
 >>
 >> ```text
 >> # Activation de l'ip_forward
 >> net.ipv4.ip_forward = 1
->> 
->> # Activation du proxy_arp pour le bond public
->> net.ipv4.conf.bond0.proxy_arp = 1
 >> ```
 >> 
 >> Ensuite, rechargez la configuration sysctl :
@@ -118,7 +113,7 @@ ssh PUB_IP_DEDICATED_SERVER
 >> 
 >> # Agrégat LACP sur les interfaces publiques
 >> # configuré en mode DHCP sur cet exemple
->> # Porte l'IP publique du serveur
+>> # Porte l’IP publique du serveur
 >> auto bond0
 >> iface bond0 inet static
 >>  address PUB_IP_DEDICATED_SERVER/32
@@ -147,7 +142,7 @@ ssh PUB_IP_DEDICATED_SERVER
 >> 	hwaddress GH:IJ:KL:12:34:56
 >>
 >> auto vmbr0
->> # Configuration du bridge avec une adresse privée et l'ajout de route(s) pour y envoyer les Additional IP
+>> # Configuration du bridge avec une adresse privée et l’ajout de route(s) pour y envoyer les Additional IP
 >> # A.B.C.D/X  => Subnet des Additional IP affectées au serveur, cela peut être un host avec du /32
 >> auto vmbr0
 >> iface vmbr0 inet dhcp
@@ -179,8 +174,8 @@ ssh PUB_IP_DEDICATED_SERVER
 >> 
 >> ```bash
 >> vi /etc/network/interfaces
->> ``` 
->> 
+>> ```
+>>
 >> ```bash
 >> auto lo
 >> iface lo inet loopback
@@ -189,9 +184,7 @@ ssh PUB_IP_DEDICATED_SERVER
 >> iface enp8s0f0np0 inet static
 >>     address PUB_IP_DEDICATED_SERVER/32
 >>     gateway 100.64.0.1
->>     post-up echo 1 > /proc/sys/net/ipv4/ip_forward
->>     post-up echo 1 > /proc/sys/ipv4/enp8s0f0np0/proxy_arp
->> 
+>>
 >> auto vmbr0
 >> iface vmbr0 inet static
 >>     address 192.168.0.1/24
@@ -210,28 +203,28 @@ systemctl restart networking.service
 
 Lorsque vous redémarrez les services réseau, les bridges (vmbr0 par exemple) peuvent être à l'état inactif. Cela est dû au fait que Proxmox déconnecte chaque VM des bridges et ne les reconnecte pas. Pour forcer la reconnexion des VM aux bridges, vous pouvez redémarrer les VM.
 
-#### Exemple de configuration VM cliente 
+#### Exemple de configuration VM cliente
 
 > [!tabs]
 > Debian
 >> Contenu du fichier `/etc/network/interfaces` :
->> 
+>>
 >> ```bash
 >> auto lo
 >> iface lo inet loopback
->> 
+>>
 >> auto eth0
 >> 
 >> iface eth0 inet static
 >>   address 192.168.0.2/24
->> 
+>>
 >> iface eth0 inet static
 >>   address ADDITIONAL_IP/32
 >>   # L'option "src" doit être définie afin que les paquets à destination d'Internet
 >>   # aient comme source l'IP publique et non l'IP privée 192.168.0.2
 >>   up ip route replace default via 192.168.0.1 dev $IFACE onlink src ADDITIONAL_IP  
 >> ```
->> 
+>>
 > Ubuntu
 >> Contenu du fichier `/etc/netplan/01-$iface.yaml` :
 >>
@@ -281,9 +274,9 @@ Cette configuration est plus souple, vous n'avez pas à associer d'Additional IP
 
 * Avoir réservé un bloc public d'adresses IP dans votre compte, avec un minimum de quatre adresses. Le bloc doit être pointé vers le vRack.
 * Préparer votre plage d'adresses IP privées choisies.
-* Posséder un [serveur compatible vRack](/links/bare-metal/bare-metal){.external}.
-* Activer un service [vRack](https://www.ovh.com/ca/fr/solutions/vrack/){.external}.
-* Être connecté à l'[espace client OVHcloud](/links/manager){.external}.
+* Posséder un [serveur compatible vRack](/links/bare-metal/bare-metal).
+* Activer un service [vRack](/links/network/vrack).
+* Être connecté à l'[espace client OVHcloud](/links/manager).
 
 #### Schéma de la configuration cible
 
@@ -362,19 +355,17 @@ iface ens35f1 inet manual
 
 auto bond0
 iface bond0 inet dhcp
-	bond-slaves ens33f0 ens33f1
+        bond-slaves ens33f0 ens33f1
         bond-miimon 100
-	bond-mode 802.3ad
-        post-up echo 1 > /proc/sys/net/ipv4/conf/bond0/proxy_arp
-        post-up echo 1 > /proc/sys/net/ipv4/ip_forward
+        bond-mode 802.3ad
 
 auto bond1
 # Agrégat LACP sur les interfaces privées
 # Pas d'IP dessus
 iface bond1 inet manual
-	bond-slaves ens35f0 ens35f1
+        bond-slaves ens35f0 ens35f1
         bond-miimon 100
-	bond-mode 802.3ad
+        bond-mode 802.3ad
 
 #Private
 
@@ -382,9 +373,9 @@ auto vmbr1
 # Bridge raccordé sur l'agrégat bond1
 # Pas besoin d'IP
 iface vmbr1 inet manual
-	bridge-ports bond1
-	bridge-stp off
-	bridge-fd 0
+        bond1 bridge-ports
+        bridge-stp off
+        bridge-fd 0
 
 ```
 
@@ -398,11 +389,11 @@ Contenu du fichier `/etc/network/interfaces` :
 auto lo ens18
 iface lo inet loopback
 iface ens18 inet static
-    address 46.105.135.97
-    netmask 255.255.255.240
-    gateway 46.105.135.110
+        address 46.105.135.97
+        netmask 255.255.255.240
+        gateway 46.105.135.110
 ```
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

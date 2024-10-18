@@ -1,7 +1,7 @@
 ---
-title: 'Configuring the network on Proxmox VE'
+title: 'Configuring the network on Proxmox VE on the High Grade, Scale & Advance ranges'
 excerpt: 'Find out how to configure the network on Proxmox VE'
-updated: 2024-09-27
+updated: 2024-10-18
 ---
 
 > [!primary]

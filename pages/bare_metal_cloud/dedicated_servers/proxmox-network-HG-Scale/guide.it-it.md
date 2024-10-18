@@ -1,7 +1,7 @@
 ---
-title: Configurare la rete su Proxmox VE (EN)
+title: Configurare la rete su Proxmox VE sulle gamme High Grade, Scale & Advance (EN)
 excerpt: Come configurare la rete su Proxmox VE
-updated: 2024-09-27
+updated: 2024-10-18
 ---
 
 > [!primary]
@@ -52,7 +52,6 @@ You need to:
 - create an aggregate (linux bond), only for the High Grade & SCALE ranges
 - create a bridge
 - authorize forwarding
-- authorize proxy_arp
 - add routes
 
 #### Configure the hypervisor
@@ -67,18 +66,15 @@ SSH PUB_IP_DEDICATED_SERVER
 > [!tabs]
 > High Grade & SCALE ranges
 >>
->> - **Enable ip_forward and proxy_arp**:
+>> - **Enable ip_forward**:
 >>
->> Enable the `sysctl` `ip_forward` and `proxy_arp` parameters. To do this, we recommend modifying the `sysctl.conf` configuration file.
+>> Enable the `ip_forward` sysctl parameter. To do this, we recommend modifying the `sysctl.conf` configuration file.
 >>
->> Add the following lines to `/etc/sysctl.conf`:
+>> Add the following line to `/etc/sysctl.conf`:
 >>
 >> ```text
 >> # Enable ip_forward
 >> net.ipv4.ip_forward = 1
->>
->> # Enabling proxy_arp for public bond
->> net.ipv4.conf.bond0.proxy_arp = 1
 >> ```
 >>
 >> Next, reload the sysctl configuration:
@@ -188,8 +184,6 @@ SSH PUB_IP_DEDICATED_SERVER
 >> iface enp8s0f0np0 inet static
 >>     address PUB_IP_DEDICATED_SERVER/32
 >>     gateway 100.64.0.1
->>     post-up echo 1 > /proc/sys/net/ipv4/ip_forward
->>     post-up echo 1 > /proc/sys/ipv4/enp8s0f0np0/proxy_arp
 >> 
 >> auto vmbr0
 >> iface vmbr0 inet static
@@ -363,8 +357,6 @@ iface bond0 inet dhcp
         bond-slaves ens33f0 ens33f1
         bond-miimon 100
         bond-mode 802.3ad
-        post-up echo 1 > /proc/sys/net/ipv4/conf/bond0/proxy_arp
-        post-up echo 1 > /proc/sys/net/ipv4/ip_forward
 
 auto bond1
 # LACP aggregate on private interfaces
