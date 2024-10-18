@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - Migrate from VMware vSphere on OVHcloud"
 excerpt: "Find out how to prepare a migration from managed VMware vSphere on OVHcloud to a solution based on a managed VMware Cloud Director (VCD) on OVHcloud environnement"
-updated: 2024-10-07
+updated: 2024-10-18
 ---
 
 > [!primary]
@@ -38,14 +38,7 @@ As a reminder, if you decide to switch to the managed VCD on OVHcloud offer, the
 
 ### Step 1 - Before migration (mandatory)
 
-#### Migration requests made before November 1st, 2024
-
-> [!primary]
->
-> You can migrate your current VMware vSphere on OVHcloud environments as soon as you submit a request to migrate via a [support ticket](https://help.ovhcloud.com/csm?id=csm_get_help).
->
-> **Important**: The Particular Terms and Conditions (C&P) available since the beginning of September 2024 in the OVHcloud Control Panel must be signed for the migration to be carried out by the OVHcloud teams.
->
+**Important**: The Particular Terms and Conditions (C&P) available since the beginning of September 2024 in the OVHcloud Control Panel must be signed for the migration to be carried out by the OVHcloud teams.
 
 Please review the product demo and webinar to familiarize yourself with this new offering.
 
@@ -72,19 +65,6 @@ During this process, your data will remain unchanged, except for vSAN Storage. Y
 The migration date will be sent to you by email at least 15 days before the migration starts.
 
 We recommend reading our guide [VMware Cloud Director - The fundamentals of VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts) to see which features are included in each migration wave of your environments.
-
-#### Applications made after November 1st, 2024
-
-> [!primary]
->
-> Migration requests made after 01 September 2024 have the same requirements as for all other migration requests mentioned in this guide.
->
-> You will need to submit your request via a [support ticket](https://help.ovhcloud.com/csm?id=csm_get_help), which will allow you to get all the information and sign the particular terms and conditions of the VCD on OVHcloud offer.
->
-
-We will then notify you of the migration date, then operate it.
-
-As a reminder, since early September, you can read and accept the Special Terms and Conditions of the VCD on OVHcloud solution in the OVHcloud Control Panel.
 
 #### Checklist before migration
 
