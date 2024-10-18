@@ -1,13 +1,15 @@
 ---
 title: 'Tutorial on Ubika WAAP Gateway - Securing your OVHcloud infrastructure'
 excerpt: 'Find out how to secure your OVHcloud infrastructure with Ubika WAAP Gateway'
-updated: 2024-10-16
+updated: 2024-10-18
 ---
 
 ## Objective
 
 In today’s digital age, web application security is critical for protecting cloud infrastructure from sophisticated cyber threats. As businesses increasingly adopt cloud solutions, ensuring that web applications and APIs are secure is essential for maintaining data integrity and preventing breaches.
-**U**bika **W**AAP **G**ateway (UWG) offers advanced Web Application and API Protection (WAAP) features, including powerful tools such as web application firewalls (WAFs), API protection, bot management, and DDoS mitigation. These tools help protect your cloud environment from a wide array of application-level threats. This guide provides step-by-step instructions for deploying and configuring Ubika WAAP Gateway on the OVHcloud Public Cloud. By following this guide, you will learn how to configure private networks for management and workload, deploy Ubika WAAP Gateway instances, set up High Availability (HA) using Additional IP and vRack and public IP routing, and ensure a secure and reliable architecture for your cloud infrastructure.
+**U**bika **W**AAP **G**ateway (UWG) offers advanced Web Application and API Protection (WAAP) features, including powerful tools such as web application firewalls (WAFs), API protection, bot management, and DDoS mitigation. These tools help protect your cloud environment from a wide array of application-level threats. 
+
+This guide provides step-by-step instructions for deploying and configuring Ubika WAAP Gateway on the OVHcloud Public Cloud. By following this guide, you will learn how to configure private networks for management and workload, deploy Ubika WAAP Gateway instances, set up High Availability (HA) using Additional IP and vRack and public IP routing, and ensure a secure and reliable architecture for your cloud infrastructure.
 
 **This guide explains how to secure your OVHcloud infrastructure with Ubika WAAP Gateway deployed on Public Cloud.**
 
@@ -18,10 +20,10 @@ In today’s digital age, web application security is critical for protecting cl
 - An [OpenStack user](/pages/public_cloud/compute/create_and_delete_a_user) (optional)
 - Basic networking knowledge
 - Ubika account on the [Ubika website](https://my.ubikasec.com/){.external}
-- Ensure that an appropriate block of Additional IPs is available.
-- Ensure that the vRack is enabled and configured to allow secure communication between the components of the infrastructure.
+- Ensure that an appropriate block of Additional IPs is available
+- Ensure that the vRack is enabled and configured to allow secure communication between the components of the infrastructure
 - [Additional IP address](/links/network/additional-ip) for ensuring network failover and high availability setup.
-- Ubika WAAP Gateway Licence BYOL (**B**ring **Y**our **O**wn **L**icence), obtained directly from Ubika via the [official Ubika website](https://my.ubikasec.com/){.external}. You will need to provide it during the installation and configuration process.
+- Ubika WAAP Gateway Licence BYOL (**B**ring **Y**our **O**wn **L**icence), obtained directly from Ubika via the [official Ubika website](https://my.ubikasec.com/){.external}. You will need to provide it during the installation and configuration process
 
 ## Instructions
 
@@ -40,9 +42,9 @@ In this step, we are configuring the vRack, a private virtual network provided b
 
 Please refer to the guide [Configuring an IP block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack) for more information.
 
-Below is the architecture that we are going to set-up.
+Below is the architecture that we are going to set-up:
 
-![Ubika vrack](./images/ubika-vrack.png)
+![Ubika vrack](images/ubika-vrack.png)
 
 ### Install and configure Ubika WAAP Gateway on your Public Cloud environment <a name="step2"></a>
 
@@ -101,7 +103,7 @@ openstack router add subnet 2481bcaf-efa2-419a-ad92-d6d27737dfd1 ubika-workload
 
 #### Deploy the Ubika WAAP Gateway instances
 
-Upload UWG image to OpenStack
+Upload UWG image to OpenStack:
 
 Go to the `download`{.action] section of the [official Ubika website](https://my.ubikasec.com/){.external}. Log in to your Ubika account and follow the instructions to download the UWG OpenStack image.
 
@@ -189,7 +191,7 @@ openstack port list --server ubika-management --network Ext-Net
 
 Log into the Ubika Java GUI and add the two managed UWG instances:
 
-![Ubika vrack](./images/login.png)
+![Ubika vrack](images/login.png)
 
 Get the management IP of the managed instances:
 
@@ -203,49 +205,49 @@ openstack port list --server ubika-managed-2 --network ubika-management
 
 Add the first managed UWG instance to the UWG management (`Setup` > `Boxes` > `Add`):
 
-![Ubika vrack](./images/managed-1.png)
+![Ubika vrack](images/managed-1.png)
 
 Add the second one:
 
-![Ubika vrack](./images/managed-2.png)
+![Ubika vrack](images/managed-2.png)
 
 Add a virtual interface to the `eth1` interface of each managed UWG instance and configure it with an IP of your IP block instead of the private IP (`Setup` > `Networking` > `IP Addresses`).
 
 UWG managed-1:
 
-![Ubika vrack](./images/virtual-interface-1.png)
+![Ubika vrack](images/virtual-interface-1.png)
 
 UWG managed-2:
 
-![Ubika vrack](./images/virtual-interface-2.png)
+![Ubika vrack](images/virtual-interface-2.png)
 
 Remove the default gateway and add the vRack gateway for each managed Ubika (`Setup` > `Networking` > `Routes`)
 
 UWG managed-1:
 
-![Ubika vrack](./images/default-gateway-1.png)
+![Ubika vrack](images/default-gateway-1.png)
 
 UWG managed-2:
 
-![Ubika vrack](./images/default-gateway-2.png)
+![Ubika vrack](images/default-gateway-2.png)
 
 Create a High Availability Active/Passive configuration (`Setup` > `High Availability` > `Add`):
 
-![Ubika vrack](./images/ha-1.png)
+![Ubika vrack](images/ha-1.png)
 
 Add an IP of the IP block as Virtual IP:
 
-![Ubika vrack](./images/ha-2-vrack.png)
+![Ubika vrack](images/ha-2-vrack.png)
 
 Add the two managed UWG instances as VRRP members using the workload interfaces (eth1):
 
-![Ubika vrack](./images/ha-3.png)
+![Ubika vrack](images/ha-3.png)
 
 Apply the configuration (top right corner button):
 
-![Ubika vrack](./images/ha-4.png)
+![Ubika vrack](images/ha-4.png)
 
-#### Configure the licences <a name="step3"></a>
+### Configure the licences <a name="step3"></a>
 
 Ubika WAAP Gateway licences are available directly from Ubika via the [official Ubika website](https://my.ubikasec.com/){.external}. Depending on your deployment needs, you can choose between a single VM licence or a High Availability mode licence, which supports an Active-Backup configuration with two data-plane instances and one-or-more control plane instances. The licences also vary based on the SSL TPS (Transactions Per Second), supporting either multiple SSL certificates or failover capabilities.
 
@@ -267,7 +269,7 @@ Once you receive the licences from Ubika, apply them to the corresponding instan
 
 In this section, we will create a web server environment and set up a load balancer to distribute traffic between multiple web servers. This step is crucial to validate the proper functioning of the network, security, and high availability settings of your UWG setup. By implementing a load balancer, we ensure that traffic is balanced across your web servers, enabling failover protection and redundancy, which is essential for maintaining service availability.
 
-**Create two web servers on the workload network**
+Create two web servers on the workload network
 
 Before executing the next OpenStack command, first create a `webserver.cloud-init` file and add the following content, adapting the parameters to your environment :
 
@@ -349,11 +351,11 @@ openstack loadbalancer member create --address 192.168.2.237 --protocol-port 80 
 
 Create a Reverse Proxy (Setup -> Reverse Proxy -> Add) on one of the Ubika managed box:
 
-![Ubika vrack](./images/reverse-proxy.png)
+![Ubika vrack](images/reverse-proxy.png)
 
 Create a DNS A record for the webserver pointing to the virtual IP of the Ubika deployment:
 
-![Ubika vrack](./images/dns-vrack.png)
+![Ubika vrack](images/dns-vrack.png)
 
 Get the VIP of the load balancer:
 
@@ -363,13 +365,13 @@ openstack loadbalancer show 29590860-2852-44c3-9514-dfb271bd9371
 
 Create a tunnel (`Setup` > `Tunnels` > `Add`):
 
-![Ubika vrack](./images/tunnel-1.png)
+![Ubika vrack](images/tunnel-1.png)
 
-![Ubika vrack](./images/tunnel-2.png)
+![Ubika vrack](images/tunnel-2.png)
 
 Apply the configuration:
 
-![Ubika vrack](./images/tunnel-3.png)
+![Ubika vrack](images/tunnel-3.png)
 
 Try to access to the webserver:
 
@@ -383,4 +385,4 @@ ubika-test-webserver-1
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
