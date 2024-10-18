@@ -1,5 +1,5 @@
 ---
-title: "Activating and using Veeam Managed Backup"
+title: "Activating and using Veeam Managed Backup (EN)"
 excerpt: "Find out how to enable and use the Veeam Managed Backup option to secure your VMs within a Hosted Private Cloud VMware on OVHcloud solution"
 updated: 2024-10-18
 ---
