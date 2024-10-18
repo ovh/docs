@@ -14,8 +14,8 @@ For instructions for cross platforms set up, please our guide on [using Zerto be
 
 ## Requirements 
 
-- 2 [Hosted Private Cloud](/links/hosted-private-cloud/vmware-prices) platforms environnement on 2 different hosts.
-- a public IP must be available in each datacenter.
+- 2 [Hosted Private Cloud](/links/hosted-private-cloud/vmware-prices) platform environnements on 2 different hosts.
+- A public IP must be available in each datacenter.
 
 ### Zerto Virtual Replication Concepts
 
@@ -370,4 +370,4 @@ Depending on failover options, the failback (if needed) may require differents s
 
 ## Go further 
 
-Join our [community of users OVHcloud](/links/community).
+Join our [community of users](/links/community).
