@@ -16,7 +16,7 @@ Ein Virtual Private Server (VPS) ist ein virtualisierter Dedicated Server, der I
 
 ## Voraussetzungen
 
-- Sie haben einen [VPS](/links/bare-metal/vps/) in Ihrem OVHcloud Kundencenter.
+- Sie haben einen [VPS](/links/bare-metal/vps) in Ihrem OVHcloud Kundencenter.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 ## In der praktischen Anwendung

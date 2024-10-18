@@ -10,7 +10,7 @@ updated: 2024-06-13
 
 ## Ziel
 
-Sie haben bereits einen Domainnamenamen bei OVHcloud und möchten ihn mit einem GoDaddy Hosting verbinden. In dieser Anleitung erfahren Sie, wie Sie die OVHcloud DNS-Zone bearbeiten, um die Konfiguration Ihres GoDaddy Hostings zu ermöglichen.
+Sie haben bereits einen Domainnamen bei OVHcloud und möchten ihn mit einem GoDaddy Hosting verbinden. In dieser Anleitung erfahren Sie, wie Sie die OVHcloud DNS-Zone bearbeiten, um die Konfiguration Ihres GoDaddy Hostings zu ermöglichen.
 
 **Erfahren Sie hier, wie Sie Ihren OVHcloud Domainnamen mit einem GoDaddy Hosting verbinden.**
 
@@ -71,7 +71,7 @@ Folgen Sie den in den Tabs aufgeführten Schritten:
 >> - Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile, die Ihrem Domainnamen ohne Subdomain entspricht (Beispiel: `mydomain.ovh.`), und klicken Sie dann auf `Eintrag bearbeiten`{.action}.<br>
 >> - Wenn ein Eintrag für die Subdomain "www" vorhanden ist (Beispiel: `www.mydomain.ovh.`), müssen Sie diesen löschen, damit er nicht mit dem in Schritt 4 angegebenen CNAME-Eintrag in Konflikt steht. Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile für Ihren Domainnamen und für die Subdomain "www." und klicken Sie dann auf `Eintrag löschen`{.action}.<br>
 >> - Wenn Sie noch keinen A-Eintrag haben, klicken Sie auf den Button `Eintrag hinzufügen`{.action} rechts oben und wählen Sie `A`{.action}<br><br>
->> Lassen Sie das Feld **Subdomain** leer und geben Sie die IPv4-Adresse ein *aus Ihrem GoDaddy Interface* im Feld **Ziel** ein.
+>> Lassen Sie das Feld **Subdomain** leer und geben Sie die IPv4-Adresse *aus Ihrem GoDaddy Interface* im Feld **Ziel** ein.
 >> Klicken Sie auf `Weiter`{.action}, bestätigen Sie Ihren A-Eintrag und fahren Sie mit Schritt 2 fort.
 > **Schritt 2**
 >> **AAAA-Eintrag**<br><br>
@@ -80,7 +80,7 @@ Folgen Sie den in den Tabs aufgeführten Schritten:
 >>
 >> - Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile, die Ihrer Domain ohne Subdomain entspricht (Beispiel: `mydomain.ovh.`), und klicken Sie dann auf `Eintrag löschen`{.action}.<br>
 >> - Wenn ein Eintrag für die Subdomain "www" vorhanden ist (Beispiel: `www.mydomain.ovh.`), löschen Sie diesen ebenfalls, damit er nicht in Konflikt mit dem CNAME-Eintrag steht, den Sie in Schritt 4 eingeben. Klicken Sie auf den Button `...`{.action} rechts in der Tabellenzeile zu Ihrer Domain mit der Subdomain "www" und dann auf `Eintrag löschen`{.action}.<br>
->> - Wenn Sie keinen existierenden „AAAA“-Eintrag haben, fahren Sie mit Schritt 3 fort.
+>> - Wenn Sie keinen existierenden "AAAA"-Eintrag haben, fahren Sie mit Schritt 3 fort.
 > **Schritt 3**
 >> **TXT-Eintrag**<br><br>
 >>  Um vorhandene TXT-Einträge zu identifizieren, klicken Sie oben in der Tabelle mit DNS-Einträgen auf das Filtermenü und wählen `TXT` aus.<br>
@@ -101,7 +101,7 @@ Die DNS-Zone ist nun zur Verwendung mit einem GoDaddy Hosting konfiguriert.
 
 > [!primary]
 >
-> Die Verifizierung Ihres Domainnamenamens kann bis zu 48 Stunden dauern.
+> Die Verifizierung Ihres Domainnamens kann bis zu 48 Stunden dauern.
 
 Wenn Sie einen E-Mail-Dienst von OVHcloud nutzen oder eines [unserer E-Mail-Angebote](/links/web/emails) abonnieren möchten, müssen Sie auch Ihre DNS-Zone entsprechend konfigurieren. Lesen Sie dazu unsere Anleitung zur [Konfiguration eines MX-Eintrags](/pages/web_cloud/domains/dns_zone_mx).
 

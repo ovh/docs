@@ -1,5 +1,5 @@
 ---
-title: "Familiarise yourself with the Public Cloud interface"
+title: "How to use the Public Cloud interface"
 excerpt: "Guided tour of the Public Cloud interface to explore the different sections"
 updated: 2021-12-06
 ---
