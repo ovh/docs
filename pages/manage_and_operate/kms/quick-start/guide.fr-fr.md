@@ -1,7 +1,7 @@
 ---
 title: "Premiers pas avec OVHcloud Key Management Service (KMS)"
 excerpt: "Mettez en oeuvre votre OVHcloud KMS"
-updated: 2024-10-17
+updated: 2024-10-18
 ---
 
 > [!warning]
@@ -75,26 +75,27 @@ Afin de limiter les risques de suppression accidentelle, il est nécessaire de d
 Afin de communiquer avec votre KMS, il est nécessaire de créer un certificat d'accès.
 Celui-ci sera utilisé pour toute interaction avec le KMS, que ce soit pour créer des clés de chiffrement ou effectuer des opérations avec celles-ci.
 
-Il est possible de créer ce certificat depuis le menu dédié de la console d'administration, en cliquant sur le bouton `Générer un certificat d'accès`{.action}
+Il est possible de créer ce certificat depuis le menu dédié de la console d'administration, en cliquant sur le bouton `Générer un certificat d'accès`{.action}.
 
 ![Créer un certificat](images/create_certificat_01.png){.thumbnail}
 
 La première partie du formulaire vous permet de préciser sa durée de validité ainsi que de fournir ou non votre propre clé privée via une Certificate Signing Request (CSR).
 
-- Sans fournir de clé privée
+- Sans fournir de clé privée :
 
 Si vous ne fournissez pas de CSR, OVHcloud génèrera le certificat d'accès ainsi qu'une clé privée.
 
 ![Créer un certificat](images/create_certificat_02.png){.thumbnail}
 
-- Avec une CSR
+- Avec une CSR :
 
 Si vous disposez de votre propre clé privée, il est possible de l'utiliser en fournissant une CSR.
 
 ![Créer un certificat](images/create_certificat_03.png){.thumbnail}
 
-La deuxième partie du formulaire permet d'indiquer les [identités OVHcloud](/pages/manage_and_operate/iam/identities-management) associées au certificat permettant de calculer les droits d'accès via l'[IAM OVHcloud](/pages/account_and_service_management/account_information/iam-policy-ui)
-Il est possible d'ajouter l'identitée "root" au certificat afin de ne pas être contraint par l'IAM OVHcloud
+La deuxième partie du formulaire permet d'indiquer les [identités OVHcloud](/pages/manage_and_operate/iam/identities-management) associées au certificat permettant de calculer les droits d'accès via l'[IAM OVHcloud](/pages/account_and_service_management/account_information/iam-policy-ui).
+
+Il est possible d'ajouter l'identitée `root` au certificat afin de ne pas être contraint par l'IAM OVHcloud.
 
 ![Créer un certificat](images/create_certificat_04.png){.thumbnail}
 
@@ -107,7 +108,7 @@ Il est ensuite nécessaire de télécharger la clé privée du certificat.
 
 ![Créer un certificat](images/create_certificat_05.png){.thumbnail}
 
-Enfin il est possible de télécharger la clé publique du certificat depuis le dashboard.
+Enfin, il est possible de télécharger la clé publique du certificat depuis le dashboard.
 
 ![Créer un certificat](images/create_certificat_06.png){.thumbnail}
 
