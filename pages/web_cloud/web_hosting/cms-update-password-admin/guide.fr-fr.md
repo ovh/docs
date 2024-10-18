@@ -30,7 +30,7 @@ Plusieurs méthodes existent pour modifier le mot de passe administrateur de vot
 > 
 > Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Cependant, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) ou l'éditeur du CMS ue vous aurez choisi d'installer si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « [Aller plus loin](#go-further) » de ce tutoriel.
 >
-> Pour contacter les différents éditeurs des CMS cités ci-dessus, retrouvez ci-après les liens vers leurs pages officielles respectives :
+> Pour contacter les différents éditeurs des CMS cités ci-dessus, retrouvez ci-dessous les liens vers leurs pages officielles respectives :
 >
 > - [WordPress](https://wordpress.com/fr/support/){.external}
 > - [Joomla!](https://www.joomla.org/){.external}
