@@ -39,7 +39,11 @@ Pour les hébergements mutualisés OVHcloud, l'autorité de certification déliv
 
 > [!warning]
 >
-> Les certificats SSL Sectigo DV proposés chez OVHcloud ne sont valables que pour un seul nom de domaine/sous-domaine sur votre hébergement web. Cela signifie que si vous avez d'autres noms de domaine/sous-domaines déclarés en multisite sur votre hébergement web, ces derniers ne pourront pas bénéficier d'un certificat SSL.
+> Les certificats SSL Sectigo DV proposés chez OVHcloud ne sont valables que pour l'un des deux cas suivants sur votre hébergement web :
+> - un seul nom de domaine + son sous-domaine en « www » (Exemple : `domain.tld` et `www.domain.tld`) ;
+> - un seul sous-domaine (Exemple : `sub.domain.tld`).
+>
+> Cela signifie que si vous avez d'autres noms de domaine/sous-domaines déclarés en multisite sur votre hébergement web, ces derniers ne pourront pas bénéficier d'un certificat SSL.
 >
 > Effectivement, il n'est possible d'installer qu'un seul certificat SSL par hébergement web.
 >
@@ -50,12 +54,24 @@ Pour les hébergements mutualisés OVHcloud, l'autorité de certification déliv
 - pointe vers l'adresse IP de votre hébergement web ; 
 - est déclaré en multisite sur votre hébergement web.
 
+> [!primary]
+>
+> Dans le cas où vous souhaitez souscrire à un certificat SSL Sectigo DV pour un nom de domaine (Exemple : `domain.tld`), vérifiez bien que son sous-domaine en « www » (Exemple : `www.domain.tld`) pointe bien également vers l'adresse IP de votre hébergement web et est correctement déclaré en multisite.
+>
+> En effet, le cas échéant et si vous commandez le certificat SSL Sectigo DV sans vous en assurer, vous devrez corriger cela à postériori. Vous devrez alors supprimer le certificat SSL Sectigo DV précédemment souscrit **sans être remboursé**, puis en commander un nouveau. Ceci afin que le nouveau certificat SSL Sectigo DV englobe bien à la fois votre nom de domaine `domain.tld` et son son sous-domaine en « www » `www.domain.tld`.
+>
+> Pour rappel, si vous souscrivez à un certificat SSL Sectigo DV directement pour un sous-domaine (Exemple : `sub.domain.tld`), vous n'êtes pas concerné par cette situation.
+
 Vérifiez également les point suivants :
 
 - La case `SSL` ne doit pas être cochée lors de l'ajout en multisite du nom de domaine/sous-domaine concerné par votre certificat SSL Sectigo DV.
 - Le statut `A générer` ou `Actif` ne doit pas déjà être présent pour le nom de domaine/sous-domaine concerné par votre certificat SSL Sectigo DV.
 
-Si besoin et pour vous en assurer, consultez nos guides « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) » et « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
+Si besoin et pour vous en assurer, consultez nos guides :
+
+- [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) ;
+- [Liste des adresses IP des clusters et hébergements web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) ;
+- [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
 ### Commander le certificat SSL Sectigo DV
 
