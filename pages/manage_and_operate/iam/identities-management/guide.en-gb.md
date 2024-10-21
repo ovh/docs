@@ -65,14 +65,14 @@ Configuring user groups is covered in the [local users management documentation]
 
 ### Users of OVHcloud products
 
-Some products offered by OVHcloud can also propose their own users, such as OpenStack, VMware vSphere or Object Storage.  
+Some products offered by OVHcloud can also propose their own users, such as OpenStack, VMware vSphere or Object Storage.
 Those users are independent from the OVHcloud account and are managed directly through the products concerned.
 
-For the products allowing to choose to use an OVHcloud identity (local user, service account, federated user) or a specific user, if you would like to maintain the reversibility of it and limit the dependency on OVHcloud, we recommend to use those specific users.  
+For the products allowing to choose to use an OVHcloud identity (local user, service account, federated user) or a specific user, if you would like to maintain the reversibility of it and limit the dependency on OVHcloud, we recommend to use those specific users.
 On the other hand, if you want to have centralized management across all your products, we suggest to use OVHcloud identities.
 
 ## Go further
 
 Identity management can be automated via the [OVHcloud APIs](/pages/manage_and_operate/api/first-steps) or via the [provider Terraform OVHcloud](/pages/manage_and_operate/terraform/terraform-at-ovhcloud).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

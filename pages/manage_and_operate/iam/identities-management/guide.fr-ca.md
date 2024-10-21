@@ -40,7 +40,7 @@ Pour qu'une application basée sur un token lié à un utilisateur local puisse 
 
 Les utilisateurs locaux peuvent être aussi référencés sous le nom de *sub-user* dans la documentation.
 
-Nous vous recommandons de mettre en place des utilisateurs locaux dès que plus d'une personne doivent se connecter sur votre compte OVHcloud a des fin de traçabilité.
+À des fin de traçabilité, nous vous recommandons de mettre en place des utilisateurs locaux dès que plus d'une personne doit se connecter sur votre compte OVHcloud.
 
 ### Comptes de services
 
@@ -56,7 +56,7 @@ Ce sont les comptes utilisateurs provenant d'une [fédération d'identité](/pro
 
 Les utilisateurs fédérés sont représentés par des groupes utilisateurs au niveau de la gestion des droits.
 
-Nous vous recommandons de mettre en place une fédération d'identité dès que le nombre de personne se connectant à votre compte OVHcloud devient suffisament conséquent, ou si vous souhaitez centraliser les accès sur un annuaire tier utilisé pour d'autres service qu'OVHcloud
+Nous vous recommandons de mettre en place une fédération d'identité dès que le nombre de personnes se connectant à votre compte OVHcloud devient suffisament conséquent, ou si vous souhaitez centraliser les accès sur un annuaire tiers utilisé pour d'autres services que OVHcloud.
 
 ### Groupes d'utilisateurs
 
@@ -65,14 +65,14 @@ La configuration des groupes d'utilisateurs est abordée dans la documentation d
 
 ### Utilisateurs des produits OVHcloud
 
-Certains produits mis a disposition par OVHcloud peuvent proposer en complément leurs propres utilisateurs, comme Openstack, VMware vSphere ou Object Storage.
-Ces utilisateurs sont indépendant du compte OVHcloud et sont gérés directement à travers les produits concernés.
+Certains produits mis à disposition par OVHcloud peuvent proposer leurs propres utilisateurs en complément, comme OpenStack, VMware vSphere ou Object Storage.
+Ces utilisateurs sont indépendants du compte OVHcloud et sont gérés directement à travers les produits concernés.
 
-Pour les produits permettant au choix d'utiliser une identité OVHcloud (utilisateur local, compte de service, utilisateur fédéré) ou un utilisateur spécifique du produit, si vous souhaitez maintenir la réversibilité de votre produit et limiter la dépendance à OVHcloud nous vous recommandons d'utiliser ces utilisateurs spécifiques.
-A l'inverse, si vous souhaitez disposer d'une gestion centralisée à travers tout vos produits nous vous recommandons d'utiliser des identités OVHcloud.
+Pour les produits permettant d'utiliser soit une identité OVHcloud (utilisateur local, compte de service, utilisateur fédéré) ou soit un utilisateur spécifique du produit, nous vous recommandons d'utiliser ces utilisateurs spécifiques si vous souhaitez maintenir la réversibilité de votre produit et limiter la dépendance à OVHcloud.
+A l'inverse, si vous souhaitez disposer d'une gestion centralisée à travers tout vos produits, nous vous recommandons d'utiliser des identités OVHcloud.
 
 ## Aller plus loin
 
 La gestion des identités peut être automatisée via les [API OVHcloud](/pages/manage_and_operate/api/first-steps) ou via le [provider Terraform OVHcloud](/pages/manage_and_operate/terraform/terraform-at-ovhcloud).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).
