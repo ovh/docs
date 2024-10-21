@@ -61,7 +61,7 @@ Pour les hébergements mutualisés OVHcloud, l'autorité de certification déliv
 >
 > En effet, le cas échéant et si vous commandez le certificat SSL Sectigo DV sans vous en assurer, vous devrez effectuer un correctif a posteriori. Vous devrez alors supprimer le certificat SSL Sectigo DV précédemment souscrit **sans être remboursé**, puis en commander un nouveau. L'objectif est que le nouveau certificat SSL Sectigo DV englobe bien à la fois votre nom de domaine `domain.tld` et son son sous-domaine en « www » `www.domain.tld`.
 >
-> Pour rappel, si vous souscrivez à un certificat SSL Sectigo DV directement pour un sous-domaine (Exemple : `sub.domain.tld`), vous n'êtes pas concerné par cette situation.
+> Pour rappel, si vous souscrivez à un certificat SSL Sectigo DV directement pour un sous-domaine (exemple : `sub.domain.tld`), vous n'êtes pas concerné par cette situation.
 
 Vérifiez également les point suivants :
 
