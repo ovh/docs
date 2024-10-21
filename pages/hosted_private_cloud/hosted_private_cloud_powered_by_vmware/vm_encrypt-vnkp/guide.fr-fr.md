@@ -1,7 +1,7 @@
 ---
-title: Activation du chiffrement des machines virtuelles avec vSphere Native Key Provider
-excerpt: Découvrez comment mettre en œuvre le chiffrement de vos machines virtuelles avec vSphere Native Key Provider
-updated: 2023-01-26
+title: "vNKP - Activation du chiffrement des machines virtuelles"
+excerpt: "Découvrez comment mettre en œuvre le chiffrement de vos machines virtuelles avec vSphere Native Key Provider"
+updated: 2024-10-21
 ---
 
 ## Objectif
@@ -10,11 +10,13 @@ Ce guide a pour objectif d'expliquer les détails de la mise en œuvre de **vSph
 
 **Découvrez comment mettre en œuvre le chiffrement de vos machines virtuelles à l'aide de vSphere Native Key Provider.**
 
-> [!warning]
+> [!primary]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
 >
 > Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
 >
+> Depuis 2024 OVHcloud met à disposition un KMS dedié (OKMS) pour gérer de ces services et le chiffrement de machines virtuelles au sein de votre environnement VMware on OVHcloud. C'est pourquoi nous recommendons la lecture du guide suivant [KMS for VMware on OVHcloud - Solution et cas d'usages pour chiffrer des VM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_overall_vm-encrypt) pour plus d'information sur les cas d'usages et les solutions qui s'offrent à vous dans l'utilisation OKMS.
+> 
 
 ## Prérequis
 
@@ -23,11 +25,6 @@ Ce guide a pour objectif d'expliquer les détails de la mise en œuvre de **vSph
 - Avoir accès à l’interface de gestion vSphere.
 - Avoir la version de vSphere et des hôtes en version 7.0 Update 2 minimum.
 - A ce jour, la solution de réplication **Zerto** n'est pas compatible avec le chiffrement. Les VMs chiffrées ne pourront donc pas être répliquées.
-
-> [!warning]
->
-> Il est possible que votre cluster **VMware on OVHcloud** ne soit pas en version 7.0 Update 2. Dans ce cas, contactez le support pour faire évoluer votre infrastructure.
->
 
 ## Présentation
 
@@ -40,6 +37,11 @@ Cette clé est poussée aux ESXi et permet de générer une autre clé, la **DEK
 La clé **DEK** est chiffrée à l'aide de la **KDK**. Elle est stockée et chiffrée avec la machine virtuelle. Vous trouverez plus de détails sur le chiffrement **VMware** en consultant les documentations officielles dans la section « [Aller plus loin](#gofurther) » de ce guide.
 
 ## En pratique
+
+> [!warning]
+>
+> Il est possible que votre cluster **VMware on OVHcloud** ne soit pas en version 7.0 Update 2. Dans ce cas, contactez le support pour faire évoluer votre infrastructure.
+>
 
 ### Autorisation d'un utilisateur à administrer le chiffrement sur un cluster VMware on OVHcloud 
 
@@ -192,4 +194,4 @@ Revenez sur **Services de données** et vous constaterez que le **Chiffrement de
 
 [Documentation VMware concernant vSphere Native Key Provider](https://docs.vmware.com/fr/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-54B9FBA2-FDB1-400B-A6AE-81BF3AC9DF97.html#GUID-54B9FBA2-FDB1-400B-A6AE-81BF3AC9DF97)
 
-Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d’utilisateurs](/links/community).
