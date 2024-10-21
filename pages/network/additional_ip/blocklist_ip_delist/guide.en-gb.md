@@ -1,7 +1,7 @@
 ---
 title: How to delist blocklisted IP addresses
 excerpt: Find out how to request the removal of an IP address from a blocklist if your services are impaired by anti-spam providers
-updated: 2024-09-30
+updated: 2024-10-21
 ---
 
 ## Objective
@@ -33,8 +33,8 @@ It is important to note that blocklists can include domain names and IP addresse
 - [Spamhaus](https://check.spamhaus.org/)
 
     - [Spamhaus Block List (SBL)](https://www.spamhaus.org/blocklists/spamhaus-blocklist/)  
-    If the IP is listed under the Spamhaus Blocklist (SBL), you will need to submit a support ticket in the [OVHcloud Help Centre](https://help.ovhcloud.com/csm?id=csm_get_help). Support will relay your case to our Abuse Team, who will then contact the Blocklist Provider.
-    - [Exploits Block List (XBL)](https://www.spamhaus.org/blocklists/exploits-blocklist/) or [Combined Spam Sources (CSS)](https://www.spamhaus.org/blocklists/combined-spam-sources/)  
+    If the [IP is listed under the Spamhaus Blocklist (SBL)](https://check.spamhaus.org/sbl/listings/ovh.net/), you will need to submit a support ticket in the [OVHcloud Help Centre](https://help.ovhcloud.com/csm?id=csm_get_help). Support will relay your case to our Abuse Team, who will then contact the Blocklist Provider. 
+    - [Exploits Block List (XBL)](https://www.spamhaus.org/blocklists/exploits-blocklist/) or [Combined Spam Sources (CSS)](https://www.spamhaus.org/blocklists/combined-spam-sources/)    
     If your IP is listed under Exploits Block List and/or Combined Spam Sources, this is due to configuration issues. Please follow the steps mentioned on the Spamhaus website to delist the IP (see the example below). Once you have followed the steps, you can delist it yourself.  
     /// details | Example
     
@@ -128,6 +128,17 @@ Delisting should take between 20 and 30 minutes to complete.
 
 ///
 
+
+#### MIPSpace
+
+/// details | More information...
+
+To [delist an IP from MIPSpace](https://www.mipspace.com/removal.php), first log in to the [OVHcloud Control Panel](/links/manager) and ensure that the following information is up-to-date:
+
+- [The reverse DNS resolution](/pages/bare_metal_cloud/virtual_private_servers/configuring-reverse-dns) (PTR record).
+- The details of your organization (*RWhois*) in the section `Network`{.action}: Open `IP`{.action} and then click the `Cogwheel button`{.action} on the right. Select `Manage my organisation`{.action} from the drop-down menu.
+
+///
 
 ## Go further
 

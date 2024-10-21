@@ -1,7 +1,7 @@
 ---
 title: "Comment retirer une adresse IP d'une liste d'adresses IP bloquées"
 excerpt: "Découvrez comment demander le retrait d'une adresse IP d'une blocklist si vos services sont impactés par des fournisseurs d'antispam"
-updated: 2024-10-08
+updated: 2024-10-21
 ---
 
 ## Objectif
@@ -32,8 +32,8 @@ Il est important de noter que les listes de blocage peuvent inclure des noms de 
 
 - [Spamhaus](https://check.spamhaus.org/)
     - [Spamhaus Block List (SBL)](https://www.spamhaus.org/blocklists/spamhaus-blocklist/)  
-    Si l’IP figure dans la liste de blocage (SBL) de Spamhaus, envoyez un ticket d’assistance dans le [Centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help). Le support transmettra votre cas à notre équipe chargée des signalement d'abus, qui contactera ensuite le fournisseur de la liste de blocage.
-    - [Exploits Block List (XBL)](https://www.spamhaus.org/blocklists/exploits-blocklist/) ou [Combined Spam Sources (CSS)](https://www.spamhaus.org/blocklists/mixed-spam-sources/)
+    Si [l’IP figure dans la liste de blocage (SBL) de Spamhaus](https://check.spamhaus.org/sbl/listings/ovh.net/), envoyez un ticket d’assistance dans le [Centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help). Le support transmettra votre cas à notre équipe chargée des signalement d'abus, qui contactera ensuite le fournisseur de la liste de blocage.
+    - [Exploits Block List (XBL)](https://www.spamhaus.org/blocklists/exploits-blocklist/) ou [Combined Spam Sources (CSS)](https://www.spamhaus.org/blocklists/mixed-spam-sources/)  
     Si votre IP figure dans la *Exploits Block List* et/ou dans la liste combinée des sources de spam, cela est dû à des problèmes de configuration. Veuillez suivre les étapes mentionnées sur le site Spamhaus pour retirer l'IP de la liste (voir l'exemple ci-dessous). Une fois les étapes suivies, vous pouvez le retirer vous-même de la liste.
     /// details | Exemple
 
@@ -46,8 +46,8 @@ Il est important de noter que les listes de blocage peuvent inclure des noms de 
 
 - [Barracuda](https://check.spamhaus.org/)
 
-- [SpamRATS](https://spamrats.com/lookup.php)
-    Si vous utilisez votre propre serveur de messagerie, vous devrez configurer le nom de domaine dans le champ PTR où se trouvent les coordonnées du responsable. Seuls les serveurs e-mail correctement configurés sont supprimés de cette liste.
+- [SpamRATS](https://spamrats.com/lookup.php)  
+    Si vous utilisez votre propre serveur de messagerie, vous devrez configurer le nom de domaine dans le champ PTR où se trouvent les coordonnées du responsable. Seuls les serveurs e-mail correctement configurés sont supprimés de cette liste.  
     Vous devrez également [configurer la résolution DNS inverse](/pages/bare_metal_cloud/virtual_private_servers/configuring-reverse-dns).
     > [!primary]
     > **Bonnes pratiques :**
@@ -121,6 +121,17 @@ Renseignez votre adresse IP, indiquez la raison de la demande de suppression, pu
 ![fabel example](images/blocklist3.png){.thumbnail}
 
 Le retrait de la liste devrait prendre entre 20 et 30 minutes.
+
+///
+
+#### MIPSpace
+
+/// details | Plus d'informations...
+
+Pour [retirer une IP de MIPSpace](https://www.mipspace.com/remove.php), connectez-vous d'abord à [votre espace client OVHcloud](/links/manager) et assurez-vous que les informations suivantes sont à jour :
+
+- [The reverse DNS resolution](/pages/bare_metal_cloud/virtual_private_servers/configuring-reverse-dns) (champ PTR).
+- Les détails de votre organisation (*RWhois*) dans la section `Network`{.action} : Ouvrez `IP`{.action} puis cliquez sur le bouton `Roue dentée`{.action} à droite. Sélectionnez `Gérer mes organisation`{.action} dans le menu déroulant.
 
 ///
 
