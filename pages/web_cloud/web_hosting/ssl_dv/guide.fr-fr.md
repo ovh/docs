@@ -42,7 +42,7 @@ Pour les hébergements mutualisés OVHcloud, l'autorité de certification déliv
 > Les certificats SSL Sectigo DV proposés chez OVHcloud ne sont valables que pour l'un des deux cas suivants sur votre hébergement web :
 >
 > - un seul nom de domaine + son sous-domaine en « www » (exemple : `domain.tld` et `www.domain.tld`) ;
-> - un seul sous-domaine (Exemple : `sub.domain.tld`).
+> - un seul sous-domaine (exemple : `sub.domain.tld`).
 >
 > Cela signifie que si vous avez d'autres noms de domaine/sous-domaines déclarés en multisite sur votre hébergement web, ces derniers ne pourront pas bénéficier d'un certificat SSL.
 >
