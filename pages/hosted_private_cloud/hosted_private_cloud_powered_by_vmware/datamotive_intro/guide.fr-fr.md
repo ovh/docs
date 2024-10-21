@@ -1,16 +1,16 @@
 ---
 title: "Datamotive - Introduction"
-excerpt: "Découvrez une présentation de la solution de multi-cloud Datamotive, pour une hybridation de Hosted Private Cloud - VMware on OVHcloud avec d'autres plateform"
-updated: 2024-10-17
+excerpt: "Découvrez une présentation de la solution de multi-cloud Datamotive, pour une hybridation de Hosted Private Cloud - VMware on OVHcloud avec d'autres plateformes"
+updated: 2024-10-21
 ---
 
 ## Objectif
 
-**L'objectif de ce quide est d'introduire la solution Datamotive au sein de l'univers Hosted Private Cloud - VMware on OVHcloud.**
+**L'objectif de ce quide est de présenter la solution Datamotive au sein de l'univers Hosted Private Cloud - VMware on OVHcloud.**
 
 ## En pratique
 
-Orchestrateur multi-cloud, Datamotive a reussi à construire une solution qui permet de simplifier le processus d'hybridation des environnements cloud privée et publique.
+Orchestrateur multi-cloud, Datamotive a reussi à construire une solution qui permet de simplifier le processus d'hybridation des environnements cloud privés et publics.
 
 ### Introduction
 
@@ -22,9 +22,9 @@ Ce guide fournit des informations sur le déploiement, la configuration et la ge
 
 La plateforme dispose de 3 produits au sein de sa solution :
 
-* `EasyMigrate` : Transformer la portabilité et la gestion des charges de travail.
-* `EasyHybridDR` : Protégez vos charges de travail en toute transparence.
-* `EasyAnalytics` : Transformez vos données en informations exploitables.
+- `EasyMigrate` : Transformez la portabilité et la gestion des charges de travail.
+- `EasyHybridDR` : Protégez vos charges de travail en toute transparence.
+- `EasyAnalytics` : Transformez vos données en informations exploitables.
 
 ### Public visé
 
@@ -36,12 +36,12 @@ Le contenu de ce guide est applicable à la solution **Datamotive EasyMigrate & 
 
 ### Architecture des composants de DataMotive
 
-La plateforme **Datamotive Workload Portability** est composée des composants suivants déployés en tant que machines virtuelles indépendantes. Tous les composants sont livrés sous forme d’appliances virtuelles ou d’images de machines cloud natives, en fonction de l’infrastructure cible. Toutes les appliances virtuelles sont entièrement sécurisées et basées sur des images certifiées CIS Ubuntu-20 Server Edition.
+La plateforme **Datamotive Workload Portability** est composée des éléments suivants déployés en tant que machines virtuelles indépendantes. Tous les composants sont livrés sous forme d’appliances virtuelles ou d’images de machines cloud natives, en fonction de l’infrastructure cible. Toutes les appliances virtuelles sont entièrement sécurisées et basées sur des images certifiées CIS Ubuntu-20 Server Edition.
 
-1. **Datamotive Management Server** : une appliance virtuelle déployée dans une infrastructure de site protégée ou de récupération où les machines virtuelles doivent être protégées, récupérées ou migrées. *Management Server* fournit une interface utilisateur, une CLI et des API RESTful aux administrateurs informatiques pour qu’ils puissent effectuer les activités Day0-DayN. Le serveur fait également office de nœud de réplication. Il est livré en tant qu'OVA pour l'environnement VMware on OVHcloud, image pour OpenStack et image de machine native cloud pour les environnements OVHcloud, AWS, GCP et Azure.
+1. **Datamotive Management Server** : une appliance virtuelle déployée dans une infrastructure de site protégée ou de récupération où les machines virtuelles doivent être protégées, récupérées ou migrées. *Management Server* fournit une interface utilisateur, une CLI et des API RESTful aux administrateurs pour qu’ils puissent effectuer les activités Day0-DayN. Le serveur fait également office de nœud de réplication. Il est livré en tant qu'OVA pour l'environnement VMware on OVHcloud, image pour OpenStack et image de machine native cloud pour les environnements OVHcloud, AWS, GCP et Azure.
 2. **Datamotive Replication Node** : une appliance virtuelle déployée sur un site protégé ou de récupération. Elle est utilisé pour exécuter les tâches de réplication de données. Ce nœud peut être utilisé pour augmenter la capacité de réplication globale de la solution en fonction du nombre de machines virtuelles/instances protégées. Le nombre maximum de tâches de réplication parallèle (1 tâche de réplication par disque/volume protégé) supporté par chaque nœud est défini par la limite fournie par les plateformes Cloud (la limite par défaut pour la réplication est de 40 et 25 pour la restauration). Il est livré en tant qu'OVA pour l'environnement VMware on OVHcloud, image pour OpenStack on OVHcloud et image de machine native cloud pour l'environnement OVHcloud, AWS, GCP et Azure. La solution DataMotive évolue horizontalement à l'aide des nœuds de réplication pour les environnements de grande taille où un grand nombre de charges de travail doivent être répliquées en parallèle.
 3. **Datamotive Prep Node** : une appliance virtuelle Windows déployée dans l'infrastructure du site de récupération (OVHcloud, VMware on OVHcloud, AWS, GCP ou Azure). Cette appliance est sous tension et utilisée uniquement lorsque les machines virtuelles Windows sont récupérées ou migrées. Il est livré en tant qu'OVA pour l'environnement VMware, image pour OpenStack et image de machine native cloud pour l'environnement AWS, GCP et Azure. Chaque nœud de préparation prend en charge la récupération parallèle d’un maximum de 25 machines virtuelles/instances.
-4. **Datamotive DeDupe Node** : une appliance virtuelle déployée à la fois dans l'infrastructure du site source et du site de récupération (public cloud) (OVHcloud, AWS, GCP et Azure). Il gère la somme de contrôle et les données des blocs de données transférés vers le site de récupération. Le nœud DeDupe, lorsqu’il est configuré pour être utilisé, permet d’utiliser des segments de données déjà répliqués, réduisant ainsi considérablement le transfert de données. Il est livré en tant qu'OVA pour l'environnement VMware on OVHcloud, image pour OpenStack on OVHcloud et image cloud native pour les environnements OVHcloud, AWS, GCP et Azure.
+4. **Datamotive DeDupe Node** : une appliance virtuelle déployée à la fois dans l'infrastructure du site source et du site de récupération (public cloud) (OVHcloud, AWS, GCP et Azure). Il gère le checksum et les données des blocs de données transférés vers le site de récupération. Le nœud DeDupe, lorsqu’il est configuré pour être utilisé, permet d’utiliser des segments de données déjà répliqués, réduisant ainsi considérablement le transfert de données. Il est livré en tant qu'OVA pour l'environnement VMware on OVHcloud, image pour OpenStack on OVHcloud et image cloud native pour les environnements OVHcloud, AWS, GCP et Azure.
 
 ### Architecture de référence de déploiement et topologie réseau
 
@@ -51,23 +51,23 @@ La plateforme **Datamotive Workload Portability** est composée des composants s
 
 Datamotive fournit actuellement une interface utilisateur graphique, des API et un kit de développement Python entièrement fonctionnels et intuitifs pour effectuer toutes les opérations prises en charge. Une fois déployé, les administrateurs peuvent accéder à l'interface utilisateur graphique de Datamotive en se connectant au serveur de gestion sur le site protégé. 
 
-L'URL permettant d'accéder au serveur d'administration est : <https://<ADRESS_IP_or_FQDN>:5000>. 
+L'URL permettant d'accéder au serveur d'administration est : `https://<ADRESS_IP_or_FQDN>:5000`.
 
 Les informations d'identification par défaut pour accéder à l'application sont `administrateur/admin`.
 
 Les administrateurs de reprise après sinistre peuvent effectuer les opérations Day1-DayN suivantes à l'aide de l'interface utilisateur graphique Datamotive. Les sections suivantes de ce document décrivent en détail l'interface utilisateur et les options associées.
 
-### La console de management
+### La console de gestion
 
-Voici une vue de l'interface utilisateur de management auquel vous avez accès quand vous vous connectez :
+Voici une vue de l'interface utilisateur de gestion auquel vous avez accès quand vous vous connectez :
 
 ![Datamotive Console](images/datamotive_dashboard.png){.thumbnail}
 
-Vous pouvez accéder à toutes les fonctionnalités de Datamotive depuis le manuel d'utilisation sur le chemin d'accès de l'url `/docs`, par exemple : <https://<ADDRESS_IP_or_FQDN>:5000/docs>
+Vous pouvez accéder à toutes les fonctionnalités de Datamotive depuis le manuel d'utilisation sur le chemin d'accès de l'url `/docs`, par exemple : `https://<ADDRESS_IP_or_FQDN>:5000/docs`.
 
 ### Comment se connecter ?
 
-Vous pouvez vous connecter en accédant à l'url de votre environnement : <https://<ADDRESS_IP_or_FQDN>:5000>
+Vous pouvez vous connecter en accédant à l'URL de votre environnement : `https://<ADDRESS_IP_or_FQDN>:5000`
 
 Vous accédez à cette interface :
 

@@ -1,7 +1,7 @@
 ---
 title: "Datamotive - Introduction"
 excerpt: "Discover an overview of the Datamotive multi-cloud solution, for a Hosted Private Cloud - VMware on OVHcloud hybridization with other platforms"
-updated: 2024-10-17
+updated: 2024-10-21
 ---
 
 ## Objective
@@ -22,9 +22,9 @@ This guide provides information on deploying, configuring, and managing Datamoti
 
 The platform has 3 products in its solution:
 
-* `EasyMigrate`: Transforming workload portability and management.
-* `EasyHybridDR`: Protect your workloads seamlessly.
-* `EasyAnalytics`: transform your data into actionable insights.
+- `EasyMigrate`: Transforming workload portability and management.
+- `EasyHybridDR`: Protect your workloads seamlessly.
+- `EasyAnalytics`: Transform your data into actionable insights.
 
 ### Target audience
 
@@ -51,7 +51,7 @@ The **Datamotive Workload Portability** platform consists of the following compo
 
 Datamotive currently provides a fully functional and intuitive graphical user interface, APIs, and Python SDK to perform all the supported operations. Once deployed, administrators can access the Datamotive graphical user interface by connecting to the management server at the protected site. 
 
-The URL to access the management server is : <https://<ADRESS_IP_or_FQDN>:5000>. 
+The URL to access the management server is : `https://<ADRESS_IP_or_FQDN>:5000`. 
 
 The default credentials for accessing the application are `administrator/admin`.
 
@@ -63,11 +63,11 @@ Here is a view of the management user interface that you have access to when you
 
 ![Datamotive](images/datamotive_dashboard.png){.thumbnail}
 
-You can access all the Datamotive features from the user manual on the url path `/docs`, e.g.: <https://<ADDRESS_IP_or_FQDN>:5000/docs>
+You can access all the Datamotive features from the user manual on the url path `/docs`, e.g.: `https://<ADDRESS_IP_or_FQDN>:5000/docs`.
 
 ### How do I log in?
 
-You can log in by accessing your environment’s URL: <https://<ADDRESS_IP_or_FQDN>:5000>
+You can log in by accessing your environment’s URL: `https://<ADDRESS_IP_or_FQDN>:5000`.
 
 You will access this interface:
 
