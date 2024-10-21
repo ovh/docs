@@ -229,7 +229,7 @@ O seu certificado SSL personalizado já está instalado e ativo. Pode desde já 
 [Erros comuns associados à segurança do seu website com SSL](/pages/web_cloud/web_hosting/ssl_avoid_common_pitfalls_of_making_website_secure).
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
-
-Se deseja beneficiar de uma assistência ao uso e à configuração das suas soluções OVHcloud, sugerimos que consulte as nossas diferentes [ofertas de suporte](/links/suporte).
-
-Fale com a nossa [comunidade de utilizadores](/links/community).
+ 
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
+ 
+Fale com nossa [comunidade de utilizadores](/links/community).
