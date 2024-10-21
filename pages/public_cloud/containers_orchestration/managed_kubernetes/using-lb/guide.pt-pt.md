@@ -1,16 +1,8 @@
 ---
-title: Expose your app deployed on an OVHcloud Managed Kubernetes Service
-excerpt: Find out how to use and expose your app deployed on an OVHcloud Managed Kubernetes Service
-updated: 2024-09-23
+title: Using the OVHcloud Managed Kubernetes LoadBalancer
+excerpt: Find out how to use and deploy an OVHcloud Managed Kubernetes LoadBalancer
+updated: 2024-05-08
 ---
-
-> [!warning]
-> The Loadbalancer section of this documentation is about "LoadBalancer for Managed Kubernetes Service. If you want to benefit from the new MKS LoadBalancing solution "Public Cloud LoadBalancer" based on Octavia LoadBalancer, please refer to [this page](/pages/public_cloud/containers_orchestration/managed_kubernetes/expose_your_applications_using_a_load_balancer).
->
-> To force the usage of "LoadBalancer for Managed Kubernetes" in your MKS cluster, add this annotation `loadbalancer.ovhcloud.com/class: iolb` to your Kubernetes Service.
->
-> Note: Starting from MKS Kubernetes version 1.31, "LoadBalancer for Managed Kubernetes" is no longer the default loadbalancer solution and will be replaced by Public Cloud Loadbalancer.
->
 
 ## Objective
 
@@ -56,11 +48,11 @@ It's rather cumbersome to use `NodePort` `Services` in production. As you are us
 
 > [!warning]
 > In our OVHcloud Managed Kubernetes you have an easy way to access `NodePort` services. You need to get the *nodes* URL, an URL solving via round-robin DNS to one random node of your cluster. As `NodePort` services are exposed in the same port on every Node, you can use this *nodes* URL to access them.
->
+> 
 > In order to get the nodes URL, you get the *control plane* URL (the one given on `kubectl cluster-info`) and add the `nodes` element between the first and the second element of the URL
->
+> 
 > Example:
->
+> 
 > ```
 > $ kubectl cluster-info
 > Kubernetes control plane is running at https://xxxxxx.c1.gra9.k8s.ovh.net
@@ -72,6 +64,7 @@ It's rather cumbersome to use `NodePort` `Services` in production. As you are us
 
 > [!warning]
 > If your OVHcloud Managed Kubernetes is connected to a vRack, the `NodePort` is only exposed on your private subnet. So you have to check your private IPs on your nodes in your Nodepool and connect via one of these private IPs.
+>
 
 ### Exposing services as LoadBalancer
 
@@ -91,16 +84,18 @@ The `LoadBalancer` is the best option for a production environment, with two cav
 
 OVHcloud currently provides two types of load balancers that can be used with Managed Kubernetes Services:
 
-- [Load Balancer for Managed Kubernetes](/links/public-cloud/load-balancer-kubernetes), this load balancer type can only be used to expose resources of a Managed Kubernetes Service. It supports up to 2000 requests/second and a 200Mbits/s bandwidth. Please note that this Loadbalancer will be depracated from MKS Kubernetes version 1.32 and upwards.
-- [Public Load Balancer](/links/public-cloud/load-balancer), based on the OpenStack Octavia project, this load balancer type can also be used with standard OVHcloud instances. You can choose between three Load Balancer sizes (S,M,L), providing up to 40k requests/second and a 2 Gbits/second bandwidth. Other advantages are the capability to expose your Load Balancer privately (private-to-private) or publicly (public-to-private or public-to-public) using [Floating IPs](/links/public-cloud/floating-ip), the possibility to collect metrics and TCP/UDP protocols.
+- [Load Balancer for Managed Kubernetes](https://www.ovhcloud.com/pt/public-cloud/load-balancer-kubernetes/), this load balancer type can only be used to expose resources of a Managed Kubernetes Service. It supports up to 2000 requests/second and a 200Mbits/s bandwidth.  
+- [Public Load Balancer](https://www.ovhcloud.com/pt/public-cloud/load-balancer/), based on the OpenStack Octavia project, this load balancer type can also be used with standard OVHcloud instances. You can choose between three Load Balancer sizes (S,M,L), providing up to 40k requests/second and a 2 Gbits/second bandwidth. Other advantages are the capability to expose your Load Balancer privately (private-to-private) or publicly (public-to-private or public-to-public) using [Floating IPs](https://www.ovhcloud.com/pt/public-cloud/floating-ip/), the possibility to collect metrics and TCP/UDP protocols.
 
+> [!warning] 
+> Usage of the [Public Load Balancer](https://www.ovhcloud.com/pt/public-cloud/load-balancer/) with a Managed Kubernetes Service is currently in Beta phase, you can retrieve all the related information and request an access by joining our [Container & Orchestration dedicated Discord channel](https://discord.com/channels/850031577277792286/1143208429872226325).
 
 ### Supported annotations
 
-> [!primary]
-> This part of the documentation applies to [Load Balancer for Managed Kubernetes](/links/public-cloud/load-balancer-kubernetes).
+> [!primary] 
+> This part of the documentation applies to [Load Balancer for Managed Kubernetes](https://www.ovhcloud.com/pt/public-cloud/load-balancer-kubernetes/).
 >
-> A dedicated documentation for [Public Load Balancer](/links/public-cloud/load-balancer) is available, please look at the [Expose your applications using a load balancer](/pages/public_cloud/containers_orchestration/managed_kubernetes/expose_your_applications_using_a_load_balancer).
+> A dedicated documentation for [Public Load Balancer](https://www.ovhcloud.com/pt/public-cloud/load-balancer/) will be published with the release of the Beta phase.
 
 There are several annotations available to customize your load balancer:
 
@@ -193,7 +188,7 @@ deployment.apps/hello-world-deployment configured
 ```
 
 > [!primary]
-> The application you have just deployed is a simple Nginx server with a single static *Hello World* page.
+> The application you have just deployed is a simple Nginx server with a single static *Hello World* page. 
 > Basically it just deploys the Docker image [`ovhplatform/hello`](https://hub.docker.com/r/ovhplatform/hello/)
 
 ### List the services
@@ -281,6 +276,6 @@ No resources found
 
 ## Go further
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pt/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 - Join our [community of users](https://community.ovh.com/en/).

@@ -1,7 +1,7 @@
 ---
-title: "Cycle de vie de la solution VMware on OVHcloud"
-excerpt: "VMware on OVHcloud"
-updated: 2024-08-09
+title: Cycle de vie de la solution VMware on OVHcloud
+excerpt: VMware on OVHcloud
+updated: 2024-01-22
 ---
 
 > [!warning]
@@ -13,27 +13,27 @@ updated: 2024-08-09
 
 **Cette page donne un aperçu de la politique de cycle de vie des services VMware on OVHcloud.**
 
-Le service Hosted Private Cloud VMware on OVHcloud propose une infrastructure dédiée basée sur les technologies VMware SDDC ainsi que sur les technologies d'autres partenaires (Veeam, Zerto...).
+Le service Hosted Private Cloud d'OVHcloud propose une infrastructure dédiée basée sur les technologies VMware SDDC ainsi que sur les technologies d'autres partenaires (Veeam, Zerto...).
 
 OVHcloud a une politique de cycle de vie du service afin de prendre en compte plusieurs facteurs, tels que :
 
-* le cycle de vie des composants logiciels intégrés, tel que déterminé par leurs éditeurs (VMware, Veeam, Zerto, etc.) ;
-* le cycle de vie des composants matériels ;
-* la compatibilité entre composants matériels et/ou logiciels ;
+* le cycle de vie des composants logiciels intégrés, tel que déterminé par leurs éditeurs (VMware, Veeam, Zerto, etc.);
+* le cycle de vie des composants matériels;
+* la compatibilité entre composants matériels et/ou logiciels;
 * les autres facteurs affectant la qualité du service.
 
 Cette politique de cycle de vie est fournie pour aider les clients à comprendre les raisons sous-jacentes des changements de version ou de gamme, à évaluer l'impact de chaque phase du cycle de vie sur le service et à préparer la transition vers une nouvelle version ou gamme.
 
 ### Gamme commerciale concernée
 
-**Hosted Private Cloud VMware on OVHcloud** :
+Hosted Private Cloud
 
-- DC2011 et DC2013 (AMD Opteron, AMD Bulldozer).
-- DC2014 & DC2016 (AMD PileDriver).
-- SDDC2014 et SDDC2016 (Intel Ivy Bridge, Intel Haswell).
-- SDDC2018 (Intel Broadwell, Intel Haswell).
-- Essentials (Intel Broadwell).
-- Premier (Intel Xeon Gold).
+* DC2011 et DC2013 (AMD Opteron, AMD Bulldozer)
+* DC2014 & DC2016 (AMD PileDriver)
+* SDDC2014 et SDDC2016 (Intel Ivy Bridge, Intel Haswell)
+* SDDC2018 (Intel Broadwell, Intel Haswell)
+* Essentials (Intel Broadwell)
+* Premier (Intel Xeon Gold)
 
 ## Chronologie du cycle de vie et définitions
 
@@ -41,7 +41,7 @@ Cette politique de cycle de vie est fournie pour aider les clients à comprendre
 
 #### End of Sales
 
-Il s'agit de la date à laquelle les ventes d'un nouveau service pour une gamme ou une version commerciale sont arrêtées. Passé cette date, les clients ne pourront plus démarrer un service sur la gamme ou la version commerciale abandonnée.
+Il s'agit de la date à laquelle les ventes d'un nouveau service pour une gamme ou une version commerciale sont arrêtées. Passée cette date, les clients ne pourront plus démarrer un service sur la gamme ou la version commerciale abandonnée.
 
 Une fois qu'une gamme commerciale spécifique est déclarée en *End of Sales*, le client pourra toujours utiliser et développer des instances existantes du service et ajouter des serveurs hôtes individuels supplémentaires. Les packs de cette gamme commerciale précédente ou de toute autre gamme commerciale antérieure ne seront plus disponibles pour commander de nouvelles instances du service. Les packs seront commercialisés uniquement pour la nouvelle gamme commerciale lancée sur le marché.
 
@@ -51,7 +51,7 @@ Une gamme ou une version commerciale atteindra généralement sa fin de commerci
 
 #### End of Growth
 
-Il s'agit de la date à laquelle la croissance d'une gamme ou d'une version commerciale est interrompue. Passé cette date, les clients ne pourront plus commander la gamme ou la version commerciale abandonnée.
+Il s'agit de la date à laquelle la croissance d'une gamme ou d'une version commerciale est interrompue. Passée cette date, les clients ne pourront plus commander la gamme ou la version commerciale abandonnée.
 
 Les *End of Growth* sont généralement annoncées avec un préavis minimum de trente (30) jours.
 
@@ -75,38 +75,38 @@ Les clients doivent anticiper le changement de gamme en testant à l'avance et e
 
 Le tableau suivant présente un résumé des différentes phases du cycle de vie du service. L'impact pour chaque gamme commerciale peut différer.
 
-|                    Phases                     | Disponibilité générale | Assistance générale | Période de grâce / Déclassement |
-|:---------------------------------------------:|:----------------------:|:-------------------:|:-------------------------------:|
-|    Ventes (démarrer de nouveaux services)     |           X            |                     |                                 |
-|        Croissance (services existants)        |           X            |          X          |                                 |
-| Mises à jour et mises à niveau de maintenance |           X            |          X          |                                 |
-|                  Assistance                   |           X            |          X          |                                 |
-|                      SLA                      |           X            |          X          |                                 |
-|              Corrections de bugs              |           X            |          X          |                                 |
-|  Assistance matérielle (pièces de rechange)   |           X            |          X          |                                 |
-|            Correctifs de sécurité             |           X            |          X          |                X                |
-|             Base de connaissances             |           X            |          X          |                X                |
+| Phases | Disponibilité générale | Assistance générale | Période de grâce / Déclassement |
+|:-----:|:-----:|:-----:|:-----:|
+| Ventes (démarrer de nouveaux services) | X | | |
+| Croissance (services existants) | X | X | |
+| Mises à jour et mises à niveau de maintenance | X | X | |
+| Assistance | X | X | |
+| SLA | X | X | |
+| Corrections de bugs | X | X | |
+| Assistance matérielle (pièces de rechange) | X | X | |
+| Correctifs de sécurité | X | X | X |
+| Base de connaissances | X | X | X |
 
 ## Statut de la gamme commerciale OVHcloud
 
 ### Hôtes (calcul)
 
-|                   Commercial Range                    | Disponibilité générale | End of Sales | End of Growth | End of Life |
-|:-----------------------------------------------------:|:----------------------:|:------------:|:-------------:|:-----------:|
-|                 DC2011 (AMD Opteron)                  |          2011          |  28/02/2015  |  28/02/2022   | 30/09/2022  |
-|                DC2013 (AMD Bulldozer)                 |          2013          |  28/02/2015  |  28/02/2022   | 30/09/2022  |
-|                DC2014 (AMD PileDriver)                |          2014          |  31/08/2017  |  28/02/2022   | 30/09/2022  |
-|                DC2016 (AMD PileDriver)                |          2016          |  30/11/2018  |  28/02/2022   | 30/09/2022  |
-| SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell) |          2016          |  30/04/2017  |  30/03/2026   | 31/07/2026  |
-|              SDDC2018 (Intel Broadwell)               |          2018          |  30/11/2018  |  30/03/2026   | 31/07/2026  |
-|             Essentials (Intel Broadwell)              |          2020          |  30/09/2025  |  30/03/2026   | 31/07/2026  |
-|               Premier (Intel Xeon Gold)               |          2020          |              |               |             |
+| Gamme commerciale | Disponibilité générale | End of Sales | End of Growth | End of Life |
+|:-----:|:-----:|:-----:|:-----:|:-----:|
+| DC2011 (AMD Opteron) | 2011 | 28/02/2015 | 28/02/2022 | 30/09/2022 |
+| DC2013 (AMD Bulldozer) | 2013 | 28/02/2015 | 28/02/2022 | 30/09/2022 |
+| DC2014 (AMD PileDriver) | 2014 | 31/08/2017 | 28/02/2022 | 30/09/2022 |
+| DC2016 (AMD PileDriver) | 2016 | 30/11/2018 | 28/02/2022 | 30/09/2022 |
+| SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell) | 2016 | 30/04/2017 | 30/09/2024 | 31/08/2025 |
+| SDDC2018 (Intel Broadwell) | 2018 | 30/11/2018 | 30/09/2024 | 31/08/2025 |
+| Essentials (Intel Broadwell) | 2020 |            |            |            |
+| Premier (Intel Xeon Gold) | 2020 |            |            |            |
 
 ## Logiciels intégrés
 
 ### Cycle de vie VMware
 
-Pour connaître la politique de cycle de vie des produits VMware, merci de vous référer à la publication de l'éditeur accessible à l'url suivante :
+Pour connaître la politique de cycle de vie des produits VMware, merci de vous référer à la publication de l'éditeur accessible à l'url suivante:
 
 [VMware Lifecycle](https://lifecycle.vmware.com/#/)
 
@@ -119,18 +119,18 @@ VMware a étendu le support de NSX Datacenter for vSphere sur les infrastructure
 
 ### Cycle de vie Veeam Backup & Replication
 
-Pour connaître la politique de cycle de vie des produits Veeam, merci de vous référer aux publications de l'éditeur accessibles aux URL suivantes :
+Pour connaître la politique de cycle de vie des produits Veeam, merci de vous référer aux publications de l'éditeur accessibles aux URL suivantes:
 
-- [Veeam Version Release](https://www.veeam.com/releasestatus_rn.pdf)
+[Veeam Version Release](https://www.veeam.com/releasestatus_rn.pdf)
 
-- [Veeam Lifecycle](https://www.veeam.com/product-lifecycle.html)
+[Veeam Lifecycle](https://www.veeam.com/product-lifecycle.html)
 
 ### Cycle de vie Zerto
 
-Pour connaître la politique de cycle de vie des produits Zerto, merci de vous référer à la publication de l'éditeur accessible à l'URL suivante :
+Pour connaître la politique de cycle de vie des produits Zerto, merci de vous référer à la publication de l'éditeur accessible à l'URL suivante:
 
-- [Zerto Virtual Replication Product Version Lifecycle Matrix](https://help.zerto.com/bundle/Lifecycle.Matrix.HTML/page/Content/Lifecycle_Matrix/Lifecycle_Matrix.htm#zerto_virtual_replication_product_version_lifecycle_matrix_r_893035264_1010900)
+[Zerto Virtual Replication Product Version Lifecycle Matrix](https://help.zerto.com/bundle/Lifecycle.Matrix.HTML/page/Content/Lifecycle_Matrix/Lifecycle_Matrix.htm#zerto_virtual_replication_product_version_lifecycle_matrix_r_893035264_1010900)
 
 ## Aller plus loin
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

@@ -10,7 +10,7 @@ updated: 2021-01-05
 
 ## Objetivo
 
-[A migração automática](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm) de um endereço de e-mail é possível através da nossa ferramenta [OVH Mail Migrator](https://omm.ovh.net/). Também pode migrar manualmente o seu endereço de e-mail através dos softwares de e-mail.
+[A migração automática](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm){.external} de um endereço de e-mail é possível através da nossa ferramenta [OVH Mail Migrator](https://omm.ovh.net/){.external}. Também pode migrar manualmente o seu endereço de e-mail através dos softwares de e-mail.
 
 **Saiba como migrar manualmente o seu endereço de e-mail.**
 
@@ -18,19 +18,19 @@ updated: 2021-01-05
 >
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 >
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](/links/partner) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção deste manual intitulada: "Quer saber mais?"
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção deste manual intitulada: "Quer saber mais?"
 >
 
 ## Requisitos
 
-- Ter um serviço de e-mail na OVHcloud, como uma oferta [Exchange](/links/web/emails), [E-mail Pro](/links/web/email-pro) ou MX Plan (através da oferta MX Plan ou incluída numa oferta de [alojamento web da OVHcloud](/links/web/hosting)).
+- Ter um serviço de e-mail na OVHcloud, como uma oferta [Exchange](https://www.ovhcloud.com/pt/emails/){.external}, [E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/){.external} ou MX Plan (através da oferta MX Plan ou incluída numa oferta de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}).
 - Ter dados de acesso relativos às contas de e-mail que pretende migrar (as contas de origem).
 - Ter dados de acesso relativos às contas de e-mail OVHcloud que recebem os dados migrados (as contas de destino).
 
 ## Instruções
 
 > [!primary]
-> Em primeiro lugar, verifique se a migração automática é possível através da nossa ferramenta [OVH Mail Migrator](https://omm.ovh.net/). Para isso, consulte o guia [Migrar contas de e-mail através do OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).
+> Em primeiro lugar, verifique se a migração automática é possível através da nossa ferramenta [OVH Mail Migrator](https://omm.ovh.net/){.external}. Para isso, consulte o guia [Migrar contas de e-mail através do OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm){.external}.
 
 Neste manual, realizámos as operações nos 3 softwares de e-mail mais utilizados, **Outlook**, **Mail** para Mac OS e **Thunderbird**.
 
@@ -42,9 +42,9 @@ As instruções que se seguem dividem - se em duas partes:
 
 ### Outlook
 
-Se possui uma conta de e-mail [Exchange OVHcloud](/links/web/emails-hosted-exchange), é possível exportá-la diretamente para o formato PST a partir da Área de Cliente.
+Se possui uma conta de e-mail [Exchange OVHcloud](https://www.ovhcloud.com/pt/emails/hosted-exchange/), é possível exportá-la diretamente para o formato PST a partir da Área de Cliente.
 
-Aceda à Área de [Cliente OVHcloud](/links/manager) e dirija-se à secção `Web Cloud`{.action}. Selecione `Microsoft`{.action}, a seguir, `Exchange`{.action}. Clique no nome do serviço Hosted Exchange em questão.
+Aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e dirija-se à secção `Web Cloud`{.action}. Selecione `Microsoft`{.action}, a seguir, `Exchange`{.action}. Clique no nome do serviço Hosted Exchange em questão.
 
 No separador `Contas de e-mail`{.action}, clique no botão `...`{.action} à direita da conta de e-mail a exportar e, a seguir, em `Exportar no formato PST`{.action}.
 
@@ -225,7 +225,7 @@ Poderá encontrar a janela de escolha do seu perfil com o seu novo perfil seleci
 
 Quando tiver feito o necessário seguindo as instruções de importação, verifique se os seus elementos estão presentes no servidor.
 
-Ligue-se ao [webmail](/links/web/email).
+Ligue-se ao [webmail](https://www.ovh.pt/mail/).
 
 Na caixa de entrada e na coluna da esquerda, irá encontrar as pastas e os e-mails do seu endereço de e-mail guardado.
 
@@ -234,6 +234,6 @@ Na caixa de entrada e na coluna da esquerda, irá encontrar as pastas e os e-mai
 
 ## Quer saber mais?
 
-[Migrar contas de e-mail através do OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm)
+[Migrar contas de e-mail através do OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm){.external}
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

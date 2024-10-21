@@ -19,7 +19,7 @@ Nous vous apportons une première approche de Heat et des *stacks* représentant
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVH](/links/manager).
+- Être connecté à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 - Avoir créé un projet Public Cloud.
 - Posséder un compte utilisateur OpenStack.
 - Savoir manipuler un fichier YAML.
@@ -214,4 +214,4 @@ Are you sure you want to delete this stack(s) [y/N]? y
 
 ## Aller plus loin
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

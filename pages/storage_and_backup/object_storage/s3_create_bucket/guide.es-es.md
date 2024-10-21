@@ -1,87 +1,74 @@
 ---
-title: Object Storage - Creando un bucket (EN)
-excerpt: Learn how to create an S3 Object Storage bucket from the OVHcloud Control Panel
-updated: 2024-10-16
+title: Object Storage - Creando un cubo (EN)
+updated: 2024-04-15
 ---
 
 ## Objective
 
-**Learn how to create an S3 Object Storage bucket from the OVHcloud Control Panel.**
+**This guide aims to familiarise you with creating a bucket**
 
 > [!primary]
 >
-> - If you are interested in the **Standard object storage - SWIFT API** storage class, follow this [guide](/pages/storage_and_backup/object_storage/pcs_create_container)
-> - If you are interested in the **Cloud Archive - SWIFT API** storage class, follow this [guide](/pages/storage_and_backup/object_storage/pca_create_container).
+> - If you are interested in storage class ***Standard object storage - SWIFT API***, please follow this [guide](/pages/storage_and_backup/object_storage/pcs_create_container)
+> - If you are interested in storage class ***Cloud Archive - SWIFT API***, please follow this [guide](/pages/storage_and_backup/object_storage/pca_create_container).
 >
 
 ## Requirements
 
-- A [Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) in your OVHcloud account
-- Access to your [OVHcloud Control Panel](/links/manager)
+- A [Public Cloud project](https://www.ovhcloud.com/es-es/public-cloud/) in your OVHcloud account
+- Access to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
 
 ## Instructions
 
 ### Using the Control Panel
 
-To create an Object Storage bucket, first log in to your [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project. Click on `Object Storage`{.action} in the navigation bar on the left and then on the `My containers`{.action} tab.
+To create an Object Storage bucket, first log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) and open your `Public Cloud`{.action} project. Click on `Object Storage`{.action} in the navigation bar on the left and then on the `My containers`{.action} tab.
 
-![My Dashboard containers](images/01_object_storage-bucket_listing.png)
+![My Dashboard containers](images/highperf-create-container-2022092808185322.png)
 
 Click `Create Object Container`{.action} and select your storage class:
 
-![Select your solution](images/object_storage-bucke_creation_step1.png)
-
-Select a deployment mode:
-
-> [!primary]
->
-> OVHcloud provides multiple deployment modes to meet different needs in terms of resilience, availability, and performance. Each mode is optimized for specific use cases and offers varying levels of redundancy and fault tolerance.
->
-
-![Select a deployment mode](images/object_storage-bucke_creation_step2.png)
+![Select your solution](images/highperf-create-container-20220928081750384.png)
 
 Select a region:
 
 > [!primary]
 >
-> Regions can vary depending on the chosen deployment mode.
+> Regions can vary depending on the storage class selected.
 >
 
-![Select a region](images/object_storage-bucke_creation_step3.png)
+![Select a region](images/highperf-create-container-20220928082104424.png)
 
 You must link a user to the bucket:
 
-![Link to user](images/object_storage-bucke_creation_step4_1.png)
+![Link to user](images/highperf-create-container-20220928082210758.png)
 
 To do this, you can either link an existing S3 user:
 
-![Link to user](images/object_storage-bucke_creation_step4_2.png)
+![Link to user](images/highperf-create-container-20220928082306958.png)
 
 You can view the user credentials by clicking on `View credentials`{.action}:
 
-![view credentials](images/object_storage-bucke_creation_step4_3.png)
+![view credentials](images/highperf-create-container-20220928082435427.png)
 
 Or you can create a new S3 user:
 
-![Create S3 user](images/object_storage-bucke_creation_step4_4.png)
+![Create S3 user](images/highperf-create-container-20220928082604314.png)
 
-At this stage, you can decide whether or not to enable **versioning**.
+The user credentials are then displayed:
 
-Versioning allows you to keep multiple variants of an object in the same bucket. This feature helps **preserve, retrieve, and restore every version of every object stored in your buckets**, making it easier to recover from unintended user actions or application failures. By default, versioning is disabled on buckets, and you must explicitly enable it. Find more information about versioning on our [dedicated guide](/pages/storage_and_backup/object_storage/s3_versioning).
+![User created credentials](images/highperf-create-container-20220928082836834.png)
 
-![Enabling versioning](images/object_storage-bucke_creation_step5.png)
+Name your bucket:
 
-You can now decide whether or not you wish to **encrypt your data** using [SSE-S3 (server-side encryption with OVHcloud Managed Keys)](/pages/storage_and_backup/object_storage/s3_encrypt_your_objects_with_sse_c).
+![Container name](images/highperf-create-container-20220928082938155.png)
 
-![Encryption](images/object_storage-bucke_creation_step6.png)
+Finally, decide whether or not you wish to encrypt your data using [SSE-S3 (server-side encryption with OVHcloud Managed Keys)](/pages/storage_and_backup/object_storage/s3_encrypt_your_objects_with_sse_c).
 
-Finally, name your bucket:
-
-![Container name](images/object_storage-bucke_creation_step7.png)
+![Encryption](images/create-container-encryption.PNG)
 
 Congratulations, your bucket is created:
-
-![Result](images/01_object_storage-bucket_listing.png)
+![Result](images/highperf-create-container-20220928083209650.png)
 
 ### Where to find the Endpoint URL of a bucket
 
@@ -91,6 +78,6 @@ Click on the name of your bucket to view its details and content:
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es-es/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

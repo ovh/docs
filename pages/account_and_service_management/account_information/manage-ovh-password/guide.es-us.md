@@ -85,8 +85,6 @@ Si estuviese comprometida, le recomendamos encarecidamente [que la cambie de inm
 
 - A continuación, aparece un mensaje indicando que la operación se ha realizado satisfactoriamente. Haga clic en el botón `«Continuar»`{.action} debajo de este mensaje para ser redirigido a la página de identificación. A continuación, introduzca su usuario y su nueva contraseña.
 
-<a name="lost-password"></a>
-
 #### En caso de haber olvidado la contraseña actual
 
 - Haga clic en `«¿Ha olvidado el identificador o la contraseña?»`{.action} cuando acceda a la ventana de identificación del área de cliente de OVHcloud.

@@ -1,6 +1,6 @@
 ---
-title: "Télécharger et transférer la sauvegarde d'une instance d'une région OpenStack à une autre"
-excerpt: "Découvrez comment télécharger et transférer une sauvegarde d'instance d'une région OpenStack à une autre tout en préservant la configuration et l'état de l'instance"
+title: "Transférer la sauvegarde d'une instance d'une région OpenStack à une autre"
+excerpt: "Découvrez comment transférer une sauvegarde d'instance d'une région OpenStack à une autre tout en préservant la configuration et l'état de l'instance"
 updated: 2023-09-25
 ---
 
@@ -137,4 +137,4 @@ $ openstack server create --key-name SSHKEY --flavor 98c1e679-5f2c-4069-b4da-4a4
 
 ## Aller plus loin
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

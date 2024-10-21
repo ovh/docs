@@ -1,16 +1,16 @@
 ---
 title: OVHcloud API and OS Installation (EN)
 excerpt: Use OVHcloud API to install or re-install an OS on your dedicated server
-updated: 2024-10-16
+updated: 2024-07-16
 ---
 
 ## Objective
 
-Fully automating OS installation or reinstallation on a [dedicated server](/links/bare-metal/bare-metal) with the [OVHcloud API](/pages/manage_and_operate/api/first-steps) can be interesting in various situations.
+Fully automating OS installation or reinstallation on a [dedicated server](https://www.ovhcloud.com/it/bare-metal/) with the [OVHcloud API](/pages/manage_and_operate/api/first-steps) can be interesting in various situations.
 
 ## Requirements
 
-- A [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account
+- A [dedicated server](https://www.ovhcloud.com/it/bare-metal/) in your OVHcloud account
 - Access to the [OVHcloud API](/pages/manage_and_operate/api/first-steps)
 
 > [!warning]
@@ -24,7 +24,7 @@ Fully automating OS installation or reinstallation on a [dedicated server](/link
 
 Log in to the [API console](https://api.ovh.com/) and go to the `/dedicated/server`{.action} section.
 
-You can list all your [dedicated servers](/links/bare-metal/bare-metal) with the following API call:
+You can list all your [dedicated servers](https://www.ovhcloud.com/it/bare-metal/) with the following API call:
 
 > [!api]
 >
@@ -62,7 +62,7 @@ You can find interesting information such as the following:
 |license/os|Information about OS license: licensing contract URL and licensing type|
 |license/usage|Same as license/os, but at the software layer if applicable|
 |filesystems|Compatible file systems types|
-|softRaidOnlyMirroring,lvmReady|Compatibility with hardware raids, software raids and LVM²|
+|hardRaidConfiguration,softRaidOnlyMirroring,lvmReady|Compatibility with hardware raids, software raids and LVM²|
 |inputs|OS specific questions (see explanation below)|
 
 ¹ Customers that don't use images from the OVHcloud catalogue (installation from a custom image ([BYOI](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image)/[BYOLinux](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-linux)), installation over the network, or manually via IPMI) are not affected by this limitation.<br />
@@ -166,7 +166,7 @@ Each question has the following attributes:
 
 ### Disk Groups <a name="disk-group"></a>
 
-Some [dedicated servers](/links/bare-metal/bare-metal) have multiple groups of disks. For example, one group with SATA disks and another group with SSD disks. Those servers are sometimes also called **hybrid servers**.
+Some [dedicated servers](https://www.ovhcloud.com/it/bare-metal/) have multiple groups of disks. For example, one group with SATA disks and another group with SSD disks. Those servers are sometimes also called **hybrid servers**.
 
 To list the disk groups and their disks, you can use the following API call in order to identify the disk group on which you want the OS to be installed:
 
@@ -389,23 +389,6 @@ You can also monitor the progress of the installation process with the following
 > [!api]
 >
 > @api {v1} /dedicated/server GET  /dedicated/server/{serviceName}/install/status
->
-
-### Manage efi bootloader path <a name="manage-efi"></a>
-
-A default efi bootloader path is set when installing from OVHcloud templates but you have the possibility to manage it.
-
-You can retrieve it with the following API call : 
-
-> [!api]
->
-> @api {v1} /dedicated/server GET  /dedicated/server/{serviceName}
->
-You also can set it in the payload of the following API call : 
-
-> [!api]
->
-> @api {v1} /dedicated/server PUT  /dedicated/server/{serviceName}
 >
 
 ## Go further

@@ -1,7 +1,7 @@
 ---
 title: 'Creating an OVHcloud account'
 excerpt: 'Find out how to create your OVHcloud account'
-updated: 2024-09-09
+updated: 2023-05-23
 ---
 
 ## Objective
@@ -19,7 +19,7 @@ You can create an account before or during the order process for your first OVHc
 
 ### How do I create my OVHcloud account?
 
-To create an OVHcloud account, simply go to [this page](/links/manager) and fill in the online form.
+To create an OVHcloud account, simply go to [this page](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external} and fill in the online form.
 
 ![account creation form](images/account-creation.png){.thumbnail}
 
@@ -47,11 +47,24 @@ Once you have entered and validated the code, fill in the rest of the form. In p
 
 Once you have created your account, you will automatically be logged in to your account’s dashboard.
 
-### What is my account ID? <a name="nic-handle"></a>
+### What is my NIC handle?
 
-Each OVHcloud customer account is associated with a unique ID, sometimes also called a NIC handle.
+Each OVHcloud customer account is associated with a unique ID, also called a NIC handle.
 
-For most accounts outside Europe, it is replaced by the primary email address entered into the OVHcloud account.
+It is usually made up of two letters followed by numbers, for example: **xx11111-ovh**.
+
+Your NIC-handle is what you will need to use in order to:
+
+- place orders online
+- manage all of your services easily via the OVHcloud Control Panel
+- identify your customer account when you contact OVHcloud support, so that they can answer your queries.
+
+Your NIC handle is displayed in the top right-hand corner under your name and email address.
+
+![NIC handle](images/nic-handle.png){.thumbnail}
+
+> [!warning]
+> Make a note of your NIC handle, as you will need it for each time you log in to your account.
 
 ## Go further
 
@@ -65,4 +78,4 @@ See also our guides for:
 
 [Securing your OVHcloud account with two-factor authentication](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa)
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

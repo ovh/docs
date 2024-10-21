@@ -129,7 +129,7 @@ Une fois configuré, vous pouvez re-charger la configuration :
 service nginx reload
 ```
 
-> [!primary]
+> [!info]
 >
 > Cet exemple utilise le protocole HTTP pour plus de simplicité. Si vous utilisez du HTTP, nous vous recommandons vivement d'utiliser les En-Têtes HTTP au lieu du ProxyProtocol sauf si votre service OVH Load Balancer est configuré en TCP. Cela peut se produire dans le cas d'une terminaison SSL pour du HTTP/2 par exemple.
 > 

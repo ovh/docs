@@ -1,7 +1,7 @@
 ---
 title: 'Konfiguration von E-Mail Pro'
 excerpt: 'Erfahren Sie hier, wie Sie Ihre E-Mail Pro Lösung einrichten'
-updated: 2024-09-03
+updated: 2024-06-13
 ---
 
 > [!primary]
@@ -96,7 +96,7 @@ Sobald die Domain als assoziierte Domain hinzugefügt ist, überprüfen Sie in d
 
 In der Spalte `Diagnose`{.action} können Sie sehen, ob die Konfiguration der MX-Felder der Domain korrekt ist. Ein rotes Feld zeigt an, dass die Konfiguration geändert werden muss.
 
-- **Automatische Konfiguration beim Hinzufügen eines Domainnamens von OVHcloud**: Wenn Sie gerade erst eine Änderung vorgenommen haben, kann es einige Stunden dauern, bis diese im [OVHcloud Kundencenter](/links/manager) angezeigt wird.
+- **Automatische Konfiguration beim Hinzufügen eines Domainnamens von OVHcloud**: Wenn Sie gerade erst eine Änderung vorgenommen haben, kann es einige Stunden dauern, bis diese im [OVHcloud Kundencenter](/links/manager){.external} angezeigt wird.
 
 - **Manuelle Konfiguration einer nicht von OVHcloud verwalteten Domain**: Klicken Sie auf das rote Feld, um zu sehen, welche Änderungen notwendig sind.
     - *CNAME-Eintrag*: Folgen Sie unserer Anleitung „[CNAME-Eintrag erstellen, um eine assoziierte Domain hinzuzufügen](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)“.
@@ -150,15 +150,7 @@ Wenn alle Angaben vollständig sind, klicken Sie auf `Weiter`{.action}. Überpr�
 
 ### Schritt 5: Ihre E-Mail-Adressen verwenden
 
-Nach Abschluss der Konfiguration können Sie Ihre E-Mail-Adressen verwenden. Dazu stellt Ihnen OVHcloud eine Online-Anwendung (*Web App*) zur Verfügung. Diese App ist über die Adresse [Webmail](/links/web/email) erreichbar. Geben Sie hier Ihre E-Mail-Adresse und das Passwort ein, um sich einzuloggen.
-
-Wenn Sie sich zum ersten Mal mit dieser E-Mail-Adresse bei OWA anmelden, werden Sie aufgefordert, die Sprache und die Zeitzone der Benutzeroberfläche festzulegen. Klicken Sie anschließend auf `Speichern`{.action}, um fortzufahren.
-
-> [!primary]
->
-> Zeitzonen werden nach [UTC (Coordinated Universal Time)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png) und nicht in alphabetischer Reihenfolge der Städte aufgeführt.
->
-> **Beispiel**: Für Westeuropa ist dies UTC +1 (Brüssel, Kopenhagen, Madrid, Paris).
+Nach Abschluss der Konfiguration können Sie Ihre E-Mail-Adressen verwenden. Dazu stellt Ihnen OVHcloud eine Online-Anwendung (*Web App*) zur Verfügung. Diese App ist über die Adresse <https://www.ovhcloud.com/de/mail/> erreichbar. Geben Sie hier Ihre E-Mail-Adresse und das Passwort ein, um sich einzuloggen.
 
 Wenn Sie Ihre E-Mail-Adresse auf einem E-Mail-Client oder einem Gerät (beispielsweise einem Smartphone oder einem Tablet) einrichten möchten, nutzen Sie hierzu die passende [E-Mail Pro Anleitung](/products/web-cloud-email-collaborative-solutions-email-pro). Wenn Sie nur die erforderlichen Daten zur Konfiguration Ihres E-Mail Pro Accounts benötigen, verwenden Sie die folgenden Einstellungen:
 

@@ -12,11 +12,11 @@ Le niveau RAID par défaut pour les installations de serveurs OVHcloud est RAID 
 
 **Ce guide va vous aider à configurer la matrice RAID de votre serveur dans l'éventualité où elle doit être reconstruite en raison d'une corruption ou d'une panne de disque.**
 
-<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/t_BL_uOXQVA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/t_BL_uOXQVA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Prérequis
 
-- Posséder un [serveur dédié](/links/bare-metal/bare-metal){.external} avec une configuration RAID logiciel.
+- Posséder un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/){.external} avec une configuration RAID logiciel.
 - Avoir accès à votre serveur via SSH en tant qu'administrateur (sudo).
 
 ## En pratique
@@ -385,4 +385,4 @@ mount /dev/md4 /home
 
 [Remplacement à chaud - RAID Matériel](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_hard)
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

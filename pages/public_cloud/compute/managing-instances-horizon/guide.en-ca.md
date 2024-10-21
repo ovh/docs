@@ -13,7 +13,7 @@ Beside the OVHcloud Control Panel, you can also manage your Public Cloud project
 ## Requirements
 
 - You need to have created a Public Cloud instance in your [OVHcloud Control Panel](/pages/public_cloud/compute/public-cloud-first-steps) or through the [Horizon interface](/pages/public_cloud/compute/create_instance_in_horizon)
-- [An SSH key](/pages/public_cloud/compute/creating-ssh-keys-pci)
+- [An SSH key](/pages/public_cloud/compute/public-cloud-first-steps#step-1-creating-ssh-keys)
 
 ## Access the management interface for the instance
 
@@ -155,7 +155,7 @@ If you lose access to your instance, either because of a bad configuration, or b
 > [!primary]
 >
 > You can access your instance directly through the VNC console. Only you will have to set up a password for the root user beforehand.
-> Consult [this guide](/pages/public_cloud/compute/public-cloud-first-steps#user-mgmt) for more information.
+> Consult [this guide](/pages/public_cloud/compute/become_root_and_change_password) for more information.
 > The VNC console can also be used as a first approach during a malfunction, to establish a diagnostic using the analysis of your instance's startup phase.
 > 
 
@@ -211,4 +211,4 @@ Then click `Confirm`{.action} to start the process.
 
 ## Go further
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

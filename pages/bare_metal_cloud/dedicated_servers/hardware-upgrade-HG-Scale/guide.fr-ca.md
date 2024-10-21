@@ -16,11 +16,11 @@ Nos serveurs High Grade et Scale vous proposent une option évolutive qui vous p
 ## Prérequis
 
 - Un serveur [High Grade](https://www.ovhcloud.com/fr-ca/bare-metal/high-grade/) ou [SCALE](https://www.ovhcloud.com/fr-ca/bare-metal/scale/)
-- Être connecté à votre [espace client OVHcloud](/links/manager)
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager).
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 
 Dans la section `Bare Metal Cloud`{.action}, sélectionnez votre serveur parmi les **Serveurs dédiés**. 
 

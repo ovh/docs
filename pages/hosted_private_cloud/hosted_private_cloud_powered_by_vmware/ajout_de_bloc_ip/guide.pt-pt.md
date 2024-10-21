@@ -58,7 +58,7 @@ Após ter confirmado o último passo, receberá uma nota de encomenda do seu blo
 
 ### Migrar um bloco IP entre dois Hosted Private Cloud
 
-<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Gemao3Fd7rI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Gemao3Fd7rI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 A migração de um bloco IP requer a deslocação manual dos blocos através da APIv6 OVHcloud.
 

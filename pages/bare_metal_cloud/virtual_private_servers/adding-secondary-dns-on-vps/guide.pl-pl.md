@@ -18,7 +18,7 @@ Jeśli skonfigurujesz serwer VPS jako serwer DNS, możesz użyć Secondary DNS O
 
 - Domena, do której masz dostęp jako administrator
 - Serwer [VPS](https://www.ovhcloud.com/pl/vps/) w Panelu klienta OVHcloud
-- Dostęp do [Panelu client OVHcloud](/links/manager)
+- Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 > [!warning]
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Jesteś tym samym odpowiedzialny za ich prawidłowe funkcjonowanie.
@@ -30,7 +30,7 @@ Jeśli skonfigurujesz serwer VPS jako serwer DNS, możesz użyć Secondary DNS O
 
 ### Etap 1: odzyskanie kodu <a name="retrievecode"></a>
 
-Zaloguj się do [Panelu client OVHcloud](/links/manager), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer w części `Prywatny serwer wirtualny`{.action}.
+Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer w części `Prywatny serwer wirtualny`{.action}.
 
 Przejdź do zakładki `DNS secondary`{.action} i kliknij przycisk `Dodaj domenę`{.action}.
 
@@ -52,7 +52,7 @@ Operacja jest inna w zależności od tego, gdzie są zarządzane DNS Twojej dome
 
 - Jeśli domena jest zarządzana przez zewnętrznego operatora domeny **lub** na tym etapie używa zewnętrznych serwerów DNS, zaloguj się do panelu klienta Twojego dostawcy DNS i dodaj w strefie DNS wpis TXT z subdomeną "ownercheck" oraz wartość dodaną wykonując [etap 1](#retrievecode).
 
-- Jeśli domena jest zarządzana przez OVHcloud jako operator **i** używa serwerów DNS OVHcloud, dodaj rekord TXT do sekcji `Web Cloud`{.action} w Twoim [Panelu client OVHcloud](/links/manager). Postępuj zgodnie z instrukcjami zawartymi w przewodniku "[Edytuj strefę DNS](/pages/web_cloud/domains/dns_zone_edit)”, jeśli nie znasz tego procesu.
+- Jeśli domena jest zarządzana przez OVHcloud jako operator **i** używa serwerów DNS OVHcloud, dodaj rekord TXT do sekcji `Web Cloud`{.action} w Twoim [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Postępuj zgodnie z instrukcjami zawartymi w przewodniku "[Edytuj strefę DNS](/pages/web_cloud/domains/dns_zone_edit)”, jeśli nie znasz tego procesu.
 
 ![Secondary DNS](images/sec-04.png){.thumbnail}
 

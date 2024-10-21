@@ -24,14 +24,14 @@ Der Standard-RAID-Level der OVHcloud Server ist RAID 1. Dieser verdoppelt das Vo
 
 ## Voraussetzungen
 
-- Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) mit Hardware-RAID.
+- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) mit Hardware-RAID.
 - Sie haben administrativen Zugriff (sudo) auf Ihren Server über SSH
 
 ## In der praktischen Anwendung
 
 ### Ihr OVHcloud Kundencenter verwenden
 
-Wählen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) Ihren Server aus, indem Sie `Dedicated Server`{.action} im Bereich `Bare Metal Cloud`{.action} öffnen.
+Wählen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) Ihren Server aus, indem Sie `Dedicated Server`{.action} im Bereich `Bare Metal Cloud`{.action} öffnen.
 
 Klicken Sie im Tab `Allgemeine Informationen`{.action} auf `...`{.action} neben `System (OS)` und danach auf `Installieren`{.action}.
 
@@ -65,7 +65,7 @@ df -h
 
 ### Rescue-Modus verwenden
 
-Wählen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) Ihren Server aus, indem Sie `Dedicated Server`{.action} im Bereich `Bare Metal Cloud`{.action} öffnen.
+Wählen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) Ihren Server aus, indem Sie `Dedicated Server`{.action} im Bereich `Bare Metal Cloud`{.action} öffnen.
 
 Klicken Sie im Bereich **Allgemeine Informationen** auf `...`{.action} neben `Boot`. Wählen Sie dann `Bearbeiten`{.action}, um den Startmodus zu ändern.
 

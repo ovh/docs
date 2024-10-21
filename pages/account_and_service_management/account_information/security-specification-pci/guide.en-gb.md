@@ -24,16 +24,16 @@ In addition to [the responsibility model for Public Cloud Instance](/pages/publi
 
 #### 2.1 Recommendations once the service is delivered
 
-When you sign up for the service, we recommend that you use SSH keys to access your Instance (rather than a login/password) for a better authentication security level for your administrators and to change it regularly. For more information on how to manage your SSH keys, consult this [guide](/pages/public_cloud/compute/creating-ssh-keys-pci).
+When you sign up for the service, we recommend that you use SSH keys to access your Instance (rather than a login/password) for a better authentication security level for your administrators and to change it regularly. For more information on how to manage your SSH keys, consult this [guide](/pages/public_cloud/compute/public-cloud-first-steps).
 
-You can use the user interface and the CLI to perform tasks. You must manage and secure your access to perform certain administrative tasks, as described in this [guide](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance).
+You can use the user interface and the CLI to perform tasks. You must manage and secure your ‘root’ access  to perform certain administrative tasks, as described in this [guide](/pages/public_cloud/compute/become_root_and_change_password).
 
 To filter connections, you must set up a firewall using IPtables. 
 
 #### 2.2 Vulnerability scans
 
-You are authorized to perform vulnerability scans on the service you have subscribed to. OVHcloud doesn't have to be previously informed.  
-Security measures deployed by OVHcloud (especially network protection) aren't disabled, because such an audit's purpose is to demonstrate a clear vision of the security level of the customer's infrastructure.  
+You are authorized to perform vulnerability scans on the service you have subscribed to. OVHcloud doesn't have to be previously informed.
+Security measures deployed by OVHcloud (especially network protection) aren't disabled, because such an audit's purpose is to demonstrate a clear vision of the security level of the customer's infrastructure.
 You are not authorized to use your service to scan other infrastructures.
 
 ### 3. Service Level Agreement (SLA)

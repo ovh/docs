@@ -22,7 +22,7 @@ This guide will help you to:
 > Depending on your place of residence, local legislation, and the solutions concerned, the details in this guide may vary or not apply to your situation. For further information, please refer to your OVHcloud contracts via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we): Click on your name in the top right-hand corner of your screen, then `Products and services`{.action}, then the `Contracts`{.action} tab.
 >
 
-<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/dfpPCa0mUyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dfpPCa0mUyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Requirements
 

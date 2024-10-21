@@ -131,4 +131,4 @@ In case you wish to scale down your instance, you can do this by performing the 
 
 [Resize a Public Cloud instance via Horizon](/pages/public_cloud/compute/resize_of_an_instance)
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

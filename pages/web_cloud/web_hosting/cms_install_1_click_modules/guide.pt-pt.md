@@ -1,7 +1,7 @@
 ---
 title: "Instalar o seu website com um 'módulo 1 clique' (CMS)"
 excerpt: "Descubra como instalar o seu website através dos nossos 'módulos 1 clique'"
-updated: 2024-10-07
+updated: 2024-03-21
 ---
 
 > [!primary]
@@ -14,14 +14,13 @@ Os "módulos 1 clique" permitem a instalação fácil e rápida de um website (s
 
 **Descubra como instalar o seu site através dos nossos "módulos 1 clique".**
 
-<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/ZrYmmPbMl4I?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZrYmmPbMl4I?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Requisitos
 
 - Dispor de um serviço de [alojamento web](/links/web/hosting) que inclua pelo menos uma base de dados.
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Utilizar uma versão recente de PHP e um ambiente de execução compatível no seu alojamento web da OVHcloud. Descubra o estado das diferentes versões disponíveis nesta [página](https://webhosting-infos.hosting.ovh.net/). Caso seja necessário, consulte o nosso [guia](/pages/web_cloud/web_hosting/configure_your_web_hosting) sobre o assumpto, para alterar rapidamente esta configuração.
-- Um ficheiro "[.ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)" configurado deve estar presente na raiz FTP do seu alojamento web.
 - O diretório (pasta raiz) onde será instalado o seu "módulo 1 clique" deve estar vazio ou atualmente inexistente.
 - O domínio (com subdomínio se desejar) que será utilizado no seu website deve ser declarado como [Multi-site](/pages/web_cloud/web_hosting/multisites_configure_multisite) no seu alojamento web da OVHcloud.
 

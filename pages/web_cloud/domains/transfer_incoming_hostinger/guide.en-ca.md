@@ -80,7 +80,7 @@ Follow the steps described in the [Hostinger dedicated documentation](https://su
 ### Get the EPP or Auth code
 
 If you would like to **transfer** your domain name from Hostinger to another registrar (such as OVHcloud), the new registrar can request an authorization code (“EPP” or “Auth”) to verify that you have the right to act on the domain name.
-To familiarize yourself with changing the owner of a domain name, please read this [guide](/pages/web_cloud/domains/trade_domain).
+To familiarize yourself with changing the owner of a domain name, please read this [guide](pages/web_cloud/domains/trade_domain).
 
 > [!warning]
 >

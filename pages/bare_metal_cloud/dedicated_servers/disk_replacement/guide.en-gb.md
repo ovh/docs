@@ -14,12 +14,12 @@ If you notice that a disk is faulty, or receive a notification email about a fau
 >
 > OVHcloud is providing you with services that you will be responsible for. We have no access to these machines, and therefore cannot manage them, so we cannot provide administrative assistance. You are responsible for your own software and security management.
 > 
-> This guide is designed to assist you in common tasks as much as possible. However, we recommend that you call upon a [specialist service provider](/links/partner) if you experience any issues or doubts when it comes to managing, using or securing your server. You can find more information in the “Go further” section of this guide.
+> This guide is designed to assist you in common tasks as much as possible. However, we recommend that you call upon a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) if you experience any issues or doubts when it comes to managing, using or securing your server. You can find more information in the “Go further” section of this guide.
 > 
 
 ## Requirements
 
-- a [Dedicated Server](/links/bare-metal/bare-metal){.external}
+- a [Dedicated Server](https://www.ovh.co.uk/dedicated_servers/){.external}
 - administrative (sudo) access to the server via SSH
 
 ## Instructions
@@ -178,4 +178,4 @@ If you have a server that uses soft RAID, we recommend that you resync your disk
 
 [Rescue Mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

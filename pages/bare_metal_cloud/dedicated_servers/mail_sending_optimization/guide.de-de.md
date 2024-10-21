@@ -1,6 +1,6 @@
 ---
-title: Optimierung des E-Mail-Versands, damit Ihre E-Mails nicht als Spam markiert werden
-excerpt: Erfahren Sie hier, wie Sie mit vorbeugenden Maßnahmen das Risiko minimieren, dass Ihre legitimen E-Mails durch Spam-Schutz blockiert werden
+title: Den Versand von E-Mails optimieren
+excerpt: Erfahren Sie hier, wie Sie das Spam-Risiko reduzieren, wenn Sie E-Mails versenden 
 updated: 2024-01-24
 ---
 
@@ -18,7 +18,7 @@ Allgemein sind Anti-Spam-Richtlinien strikt gehalten. Um den Versand von E-Mails
 >
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Implementierung der Dienste auf einem Server haben.
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Implementierung der Dienste auf einem Server haben.
 > 
 
 ## Voraussetzungen
@@ -61,17 +61,45 @@ Domain-based Message Authentication, Reporting and Conformance (DMARC) ist ein S
 
 Weitere Informationen finden Sie in unserer [Anleitung zum Konfigurieren eines DMARC-Eintrags](/pages/web_cloud/domains/dns_zone_dmarc).
 
-### *Reverse* IP-Auflösung konfigurieren <a name="reverseip"></a>
+### *Reverse IP* konfigurieren <a name="reverseip"></a>
 
-Um das Senden von E-Mails weiter zu optimieren und das Risiko einer Blockierung Ihrer E-Mails zu verringern, können Sie auch den *Reverse* DNS-Pfad (PTR-Eintrag) mit Ihrem Domainnamen konfigurieren.
+Um den Versand zu optimieren und das Risiko einer Blockierung Ihrer E-Mails zu verringern, muss ein IP-*Reverse*-Eintrag für Ihren Domainnamen konfiguriert werden.
 
 Erstellen Sie zunächst einen A-Eintrag in der DNS-Zone Ihres Domainnamens mit der IP-Adresse Ihres Servers als Ziel.
 
-Wenn Ihr Domainname DNS-Server von OVHcloud verwendet, können Sie dazu unsere [Anleitung zur Bearbeitung der OVHcloud DNS-Zone über Ihr Kundencenter](/pages/web_cloud/domains/dns_zone_edit) befolgen.
+Wenn Ihre DNS-Server von OVHcloud verwaltet werden, Sie dazu unsere [Anleitung zur Bearbeitung der OVHcloud DNS-Zone über Ihr Kundencenter](/pages/web_cloud/domains/dns_zone_edit).
 
 Nach der Änderung der DNS-Zone Ihres Domainnamens ist eine Propagationszeit von maximal 24 Stunden erforderlich, bis die Änderungen wirksam sind.
 
-Alle Informationen zur Konfiguration des *Reverse* DNS-Pfads im [OVHcloud Kundencenter](/links/manager) finden Sie in [unserer Anleitung](/pages/bare_metal_cloud/virtual_private_servers/configuring-reverse-dns).
+Anschließend fügen Sie den PTR-Eintrag (auch *Reverse* genannt) hinzu:
+
+Gehen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} auf den Tab `Bare Metal Cloud`{.action} und öffnen Sie `Network`{.action}. Klicken Sie dann auf `IP`{.action}.
+
+Wenn Sie den *Reverse DNS* auf eine Additional IP-Adresse konfigurieren möchten, klicken Sie auf den Tab `Additional IP`{.action}.
+
+Das Dropdown-Menü unter "**Meine öffentlichen IP-Adressen und dazugehörigen Dienste**" erlaubt es Ihnen, Ihre Dienste nach Kategorie zu filtern.
+
+![IP Reverse](images/filteripds.png){.thumbnail}
+
+Klicken Sie auf den Button `...`{.action} rechts neben der entsprechenden Zeile und dann auf `Reverse ändern`{.action}:
+
+![IP Reverse](images/addreverse2022.png){.thumbnail}
+
+
+Geben Sie Ihren Domainnamen in den Bereich `Reverse` ein und klicken Sie auf `Bestätigen`{.action}.
+
+![IP Reverse](images/enterreverse.png){.thumbnail}
+
+> [!primary]
+> Wenn Sie Ihren Domainnamen als *Reverse* eingeben, wird sofort überprüft, ob der A-Eintrag auf dieselbe IP verweist. Dies wird bei Anti-Spam-Verfahren verwendet, daher muss Ihr A-Eintrag gültig sein und propagiert werden. Bei der Eingabe des *Reverse* sind bestimmte Regeln zu beachten:
+>
+>  - Der *Reverse* darf nicht mit einem `-` beginnen.
+>  - Der *Reverse* darf höchstens 80 Zeichen enthalten.
+>  - Der *Reverse* darf keine Großbuchstaben enthalten.
+>  - Der *Reverse* muss mit einem `.` enden.
+>
+> Beispiel: Für "domain.tld" wäre der *Reverse*: **domain.tld.**
+>
 
 ### Sonderfälle beim Versand von E-Mails
 
@@ -103,7 +131,7 @@ Bestätigen Sie die Angaben, um die Einrichtung von JMRP/SNDS abzuschließen.
 
 Wenn Ihre IP-Adresse nach Abschluss der Aktionen als gesperrt erscheint, können Sie das [Junkmail-Verfahren](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&locale=en-us&ccsid=635857671692853062) verwenden, um eine Entfernung von der Blacklist zu beantragen. Das Verfahren dauert in der Regel 48 Stunden.
 
-Microsoft wird Sie möglicherweise nach dem Datum der ersten Abrechnung Ihres Servers oder Ihrer IP-Adressen fragen. Senden Sie in diesem Fall Microsoft eine Kopie Ihrer Rechnung zu und geben Sie relevante IPs und Servernamen an (z.B.: Hostname ns1111111.ip-203-0-113.eu).
+Microsoft wird Sie möglicherweise nach dem Datum der ersten Abrechnung Ihres Servers oder Ihrer IP-Adressen fragen. Senden Sie in diesem Fall Microsoft eine Kopie Ihrer Rechnung zu und geben Sie relevante IPs und Servernamen an (z.B.: Host ns3956771.ip-169-254-10.eu).
 
 Für mehr Informationen hierzu können Sie bei Microsoft eine [Support-Anfrage erstellen](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&ccsid=6364926882037750656).
 
@@ -130,6 +158,6 @@ Es kann hilfreich sein, eine Seite wie [Mail Tester](http://www.mail-tester.com/
 
 [E-Mail-Sicherheit durch DMARC-Eintrag verbessern](/pages/web_cloud/domains/dns_zone_dmarc)
 
-Kontaktieren Sie unser [OVHcloud Partner-Netzwerk](/links/partner), wenn Sie beim Einsatz Ihrer OVHcloud Lösungen Unterstützung benötigen.
+Kontaktieren Sie unser [OVHcloud Partner-Netzwerk](https://partner.ovhcloud.com/de/directory/), wenn Sie beim Einsatz Ihrer OVHcloud Lösungen Unterstützung benötigen.
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

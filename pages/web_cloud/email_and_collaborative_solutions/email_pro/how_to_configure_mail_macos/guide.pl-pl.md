@@ -1,6 +1,6 @@
 ---
-title: 'E-mail Pro - Skonfiguruj swoje konto e-mail w programie Mail dla systemu macOS'
-updated: 2024-10-09
+title: 'Konfiguracja konta E-mail Pro w aplikacji Mail na urządzeniach z systemem macOS'
+updated: 2022-06-13
 ---
 
 > [!primary]
@@ -22,17 +22,17 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 
 ## Wymagania początkowe
 
-- Posiadanie konta [E-mail Pro](/links/web/email-pro)
+- Posiadanie konta [E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/)
 - Instalacja programu Mail na Twoim urządzeniu Mac
 - Dane do logowania do konta e-mail, które chcesz skonfigurować
-
+ 
 ## W praktyce
 
 > [!primary]
 >
 > W przewodniku używamy oznaczenia serwera: pro<b>?</b>.mail.ovh.net. Zastąp “?” cyfrą oznaczającą serwer powiązany z Twoją usługą E-mail Pro.
 > 
-> Odszukaj cyfrę w [Panelu klienta OVHcloud](/links/manager), w sekcji `Web Cloud`{.action} =>  `E-mail Pro`{.action}. Nazwa serwera jest widoczna w ramce *Logowanie* w zakładce `Informacje ogólne`{.action}.
+> Odszukaj cyfrę w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, w sekcji `Web Cloud`{.action} =>  `E-mail Pro`{.action}. Nazwa serwera jest widoczna w ramce *Logowanie* w zakładce `Informacje ogólne`{.action}.
 >
 
 ### Dodaj konto
@@ -51,7 +51,7 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 
 Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz zacząć wysyłać i odbierać wiadomości.
 
-OVHcloud oferuje również aplikację internetową umożliwiającą korzystanie z Twojego konta e-mail przy użyciu przeglądarki internetowej. Jest ona dostępna pod adresem [Webmail](/links/web/email). Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail. W przypadku pytań dotyczących korzystania z tego konta, skorzystaj z naszego przewodnika [Sprawdź konto w interfejsie OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
+OVHcloud oferuje również aplikację internetową umożliwiającą korzystanie z Twojego konta e-mail przy użyciu przeglądarki internetowej. Jest ona dostępna pod adresem <https://www.ovh.pl/mail/>. Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail. W przypadku pytań dotyczących korzystania z tego konta, skorzystaj z naszego przewodnika [Sprawdź konto w interfejsie OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
 ### Pobierz kopię zapasową Twojego konta e-mail
 
@@ -89,9 +89,5 @@ W przypadku konfiguracji **POP** wartości są następujące:
 > Jeśli skonfigurujesz Twoje konto e-mail przy użyciu **IMAP** i chcesz zmienić konfigurację na **POP**, usuń konto e-mail Maca i odtworzyć je w **POP**, aby zmienić konfigurację.
 
 ## Sprawdź również
-
-> [!primary]
->
-> Aby uzyskać więcej informacji na temat konfigurowania konta e-mail z poziomu aplikacji Mail na urządzeniach z systemem macOS, skorzystaj z [Centrum pomocy Apple](https://support.apple.com/pl-pl/guide/mail/mail35803/mac).
-
+ 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

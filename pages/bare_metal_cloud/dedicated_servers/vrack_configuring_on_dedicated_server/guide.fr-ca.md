@@ -1,7 +1,7 @@
 ---
 title: 'Configurer le vRack sur vos serveurs dédiés'
 excerpt: 'Découvrez comment configurer le vRack sur plusieurs serveurs dédiés'
-updated: 2024-10-17
+updated: 2023-09-12
 ---
 
 ## Objectif
@@ -10,20 +10,20 @@ Le vRack (baie virtuelle) OVHcloud permet de rassembler virtuellement plusieurs 
 
 **Découvrez comment configurer le vRack sur plusieurs serveurs dédiés.**
 
-<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/ZA7IsbDdAmc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZA7IsbDdAmc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Prérequis
 
-- Un service [vRack](/links/network/vrack) activé dans votre compte
-- Plusieurs [serveurs dédiés](/links/bare-metal/bare-metal) (compatibles vRack)
+- Un service [vRack](https://www.ovh.com/ca/fr/solutions/vrack/) activé dans votre compte
+- Plusieurs [serveurs dédiés](https://www.ovh.com/ca/fr/serveurs-dedies/) (compatibles vRack)
 - Disposer d’un accès administrateur (sudo) au serveur via SSH ou RDP
-- Être connecté à votre [espace client OVHcloud](/links/manager)
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 - Préparer la plage d'adresses IP privées que vous avez choisie
 
 > [!warning]
-> Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](/links/bare-metal/eco-about).
+> Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](https://eco.ovhcloud.com/fr-ca/about/).
 >
-> Consultez notre [comparatif](/links/bare-metal/eco-compare) pour plus d’informations.
+> Consultez notre [comparatif](https://eco.ovhcloud.com/fr-ca/compare/) pour plus d’informations.
 
 ## En pratique
 
@@ -37,7 +37,7 @@ Vous serez redirigé vers une autre page pour valider la commande, l’opératio
 
 ### Étape 2 : ajouter vos serveurs au vRack
 
-Une fois le vRack activé dans votre compte, rendez-vous dans la section `Bare Metal Cloud`{.action} de votre [espace client OVHcloud](/links/manager), cliquez sur `Network`{.action} et ouvrez le menu `vRack`{.action}.
+Une fois le vRack activé dans votre compte, rendez-vous dans la section `Bare Metal Cloud`{.action} de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), cliquez sur `Network`{.action} et ouvrez le menu `vRack`{.action}.
 
 Sélectionnez votre vRack dans la liste pour afficher la liste des services éligibles. Cliquez sur chacun des serveurs que vous souhaitez ajouter au vRack, puis cliquez sur le bouton `Ajouter`{.action}.
 
@@ -60,7 +60,7 @@ Vous pouvez utiliser n'importe quelle plage d'IP privée de votre choix et n'imp
 
 Les noms des interfaces réseau de vos serveurs ne sont pas toujours les mêmes. Dans les exemples suivants, remplacez NETWORK_INTERFACE par le nom d'interface approprié.
 
-Le meilleur moyen de vérifier la bonne interface pour le vRack est de vérifier l'onglet `Interfaces réseau`{.action} de votre serveur dans votre [espace client OVHcloud](/links/manager). Dans le tableau du bas, notez l'adresse MAC qui est aussi le **Nom** de l'interface **Privée**.
+Le meilleur moyen de vérifier la bonne interface pour le vRack est de vérifier l'onglet `Interfaces réseau`{.action} de votre serveur dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Dans le tableau du bas, notez l'adresse MAC qui est aussi le **Nom** de l'interface **Privée**.
 
 ![Interface vRack](images/private_interface.png){.thumbnail}
 
@@ -70,46 +70,13 @@ Une fois connecté à votre serveur via SSH, vous pouvez lister vos interfaces r
 ip a
 ```
 
-Sur la ligne qui commence par ```link ether```, vous pouvez vérifier que cette interface correspond à l'interface **Privée** renseignée dans votre [espace client OVHcloud](/links/manager). Utilisez ce nom d'interface pour remplacer `NETWORK_INTERFACE` dans les configurations ci-dessous (exemple : `eno2`).
+Sur la ligne qui commence par ```link ether```, vous pouvez vérifier que cette interface correspond à l'interface **Privée** renseignée dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Utilisez ce nom d'interface pour remplacer `NETWORK_INTERFACE` dans les configurations ci-dessous (exemple : `eno2`).
 
 ```console
 link ether f0:00:00:ef:0e:f0
 ```
 
-##### **Debian 12**
-
-A l'aide de l'éditeur de texte de votre choix, ouvrez le fichier de configuration réseau se trouvant dans `/etc/netplan/` afin de l'éditer. Ici, le fichier s'appelle `50-cloud-init.yaml`.
-
-```bash
-editor /etc/netplan/50-cloud-init.yaml
-```
-
-Ajoutez la configuration IP à la configuration existante après la ligne `ethernets` :
-
-```yaml
-    ethernets:
-        NETWORK_INTERFACE :
-            dhcp4: no
-            addresses:
-              - 192.168.0.1/16
-```
-
-> [!warning]
->
-> Il est important de respecter l'alignement de chaque élément dans les fichiers `yaml` comme représenté dans l'exemple ci-dessus. N'utilisez pas la touche de tabulation pour créer votre espacement. Seule la touche espace doit être utilisée.
->
-
-Enregistrez vos modifications dans le fichier de configuration et quittez l'éditeur.
-
-Appliquez la configuration :
-
-```bash
-netplan apply
-```
-
-Répétez cette procédure pour vos autres serveurs et attribuez à chacun d'entre eux une adresse IP inutilisée à partir de votre plage privée. Dès lors, vos serveurs pourront communiquer entre eux sur le réseau privé.
-
-##### **Debian 11**
+##### **Debian**
 
 Dans un éditeur de texte, ouvrez le fichier de configuration réseau situé dans `/etc/network/interfaces.d` pour le modifier. Ici, le fichier s'appelle `50-cloud-init`.
 
@@ -246,4 +213,4 @@ Répétez cette procédure pour vos autres serveurs et attribuez à chacun d'ent
 
 [Créer plusieurs VLAN dans le vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack).
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

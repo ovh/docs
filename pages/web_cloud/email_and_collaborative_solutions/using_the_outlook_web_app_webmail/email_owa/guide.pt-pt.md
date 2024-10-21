@@ -1,18 +1,18 @@
 ---
 title: 'Utilizar o endereço de e-mail a partir do webmail Outlook Web App (OWA)'
 excerpt: 'Saiba como utilizar o seu endereço de e-mail a partir do webmail OWA'
-updated: 2024-09-03
+updated: 2024-03-26
 ---
 
 ## Sumário
 
-Com as soluções de e-mail OVHcloud pode enviar e receber e-mails utilizando um dispositivo e um cliente à sua escolha. Para aceder a uma conta a partir de qualquer local através do seu browser, a OVHcloud disponibiliza-lhe um cliente de e-mail online denominado Outlook Web App (OWA). A nossa [página de login](/links/web/email) é o único ponto de acesso à interface OWA para todas as contas de e-mail ativas no MX Plan, Email Pro e Hosted Exchange.
+Com as soluções de e-mail OVHcloud pode enviar e receber e-mails utilizando um dispositivo e um cliente à sua escolha. Para aceder a uma conta a partir de qualquer local através do seu browser, a OVHcloud disponibiliza-lhe um cliente de e-mail online denominado Outlook Web App (OWA). A nossa [página de login](https://www.ovh.pt/mail/) é o único ponto de acesso à interface OWA para todas as contas de e-mail ativas no MX Plan, Email Pro e Hosted Exchange.
 
 **Este guia explica-lhe como desempenhar ações comuns com o seu endereço de e-mail na interface OWA.**
 
 ## Requisitos
 
-- uma solução de e-mail OVHcloud já configurada (**MX Plan**, disponível como parte dos nossos [planos Web Hosting](/links/web/hosting), incluída num [Alojamento gratuito 100M](/links/web/domains-free-hosting) ou encomendada separadamente como solução autónoma; [**Hosted Exchange**](/links/web/emails-hosted-exchange) ou [**E-mail Pro**](/links/web/email-pro))
+- uma solução de e-mail OVHcloud já configurada (**MX Plan**, disponível como parte dos nossos [planos Web Hosting](https://www.ovhcloud.com/pt/web-hosting/), incluída num [Alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/) ou encomendada separadamente como solução autónoma; [**Hosted Exchange**](https://www.ovhcloud.com/pt/emails/hosted-exchange/) ou [**E-mail Pro**](https://www.ovhcloud.com/pt/emails/email-pro/))
 - credenciais de login para o endereço de e-mail que deseja configurar
 
 ## Instruções
@@ -26,7 +26,7 @@ Este guia fornece-lhe informações mais detalhadas sobre as habituais tarefas a
 
 ### 1. Aceder ao webmail OWA
 
-Para entrar no webmail OWA através do seu endereço de e-mail, aceda à [página de login](/links/web/email) geral. Introduza o seu endereço de e-mail e palavra-passe e clique no botão `Login`{.action}.
+Para entrar no webmail OWA através do seu endereço de e-mail, aceda à [página de login](https://www.ovh.pt/mail/) geral. Introduza o seu endereço de e-mail e palavra-passe e clique no botão `Login`{.action}.
 
 ![useowa](images/use-owa-step1.png){.thumbnail}
 
@@ -36,13 +36,7 @@ Para entrar no webmail OWA através do seu endereço de e-mail, aceda à [págin
 >
 > Para se familiarizar com a interface **Roundcube**, consulte o nosso guia [Webmail: Guia de utilização do Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
 
-Se for a primeira vez que acede ao OWA com este endereço de e-mail, ser-lhe-á pedido que defina o idioma da interface e o fuso horário. Em seguida, clique em ‘Guardar‘ {.action} para continuar.
-
-> [!primary]
->
-> Os fusos horários estão listados de acordo com [a norma UTC (tempo universal coordenado)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), e não por ordem alfabética das cidades.
->
-> **Exemplo** : Para a Europa Ocidental, trata-se de UTC +1 (Bruxelas, Copenhaga, Madrid, Paris).
+Se está a efetuar o login no webmail OWA pela primeira vez com este endereço de e-mail, ser-lhe-á solicitado que configure o idioma e o fuso horário na interface. Clique em `Guardar`{.action} para continuar.
 
 ![useowa](images/use-owa-step2.png){.thumbnail}
 
@@ -112,7 +106,7 @@ Para criar uma pasta, clique com o botão direito do rato no seu endereço de e-
 
 #### Criar regras inbox
 
-<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Para gerir as regras, clique no ícone de engrenagem na parte superior e, de seguida, em `Opções`{.action}.
 
@@ -132,7 +126,7 @@ Para instruções mais detalhadas sobre como criar regras inbox, consulte o noss
 
 #### Bloquear um remetente
 
-<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/UeNdpFwdXm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UeNdpFwdXm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Clique no ícone de engrenagem no canto superior direito e depois em `Opções`{.action}. Na coluna da esquerda, siga a árvore "Mail" em "Contas" e, a seguir, "Bloquear ou autorizar".
 
@@ -158,7 +152,7 @@ Nesta nova página, pode adicionar um novo contacto, criar uma lista de contacto
 
 ### Alterar a palavra-passe
 
-<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Pode alterar a palavra-passe da sua conta quando tiver iniciado uma sessão no OWA. Para o fazer, clique no ícone de engrenagem situado na parte superior e, de seguida, em `Opções`{.action}.
 

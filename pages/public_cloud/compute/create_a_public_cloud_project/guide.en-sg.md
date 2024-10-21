@@ -12,11 +12,11 @@ Creating a project is the first step in deploying [Public Cloud instances](https
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](/links/manager) and go to the `Public Cloud`{.action} section.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) and go to the `Public Cloud`{.action} section.
 
 Once you have read and understood the terms of the contracts, tick the corresponding box, then click `Discover the Public Cloud universe`{.action}.
 
@@ -31,7 +31,7 @@ Once the creation process is complete, your new Public Cloud project will be vis
 
 ![new project created](images/public-cloud-interface.png){.thumbnail width="400"}
 
-You now have access to the entire OVHcloud Public Cloud ecosystem. To discover this new interface, read our guide [How to use the Public Cloud interface ](/pages/public_cloud/compute/03-public-cloud-interface-walk-me).
+You now have access to the entire OVHcloud Public Cloud ecosystem. To discover this new interface, read our guide [Familiarise yourself with the Public Cloud interface ](/pages/public_cloud/compute/03-public-cloud-interface-walk-me).
 
 <a name="discovery"></a>
 
@@ -52,6 +52,6 @@ You now have access to the entire OVHcloud Public Cloud ecosystem. To discover t
 - [Deleting a Public Cloud project](/pages/public_cloud/compute/delete_a_project)
 - [Information regarding Public Cloud billing options](/pages/public_cloud/compute/analyze_billing)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-sg/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

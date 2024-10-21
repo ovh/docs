@@ -1,7 +1,7 @@
 ---
-title: "Email Pro - Configura il tuo account di posta elettronica su Mail per iPhone e iPad"
+title: 'Configurare un account Email Pro su un iPhone o un iPad'
 excerpt: 'Come configurare un account Email Pro su un iPhone o un iPad tramite l’applicazione Mail'
-updated: 2024-10-09
+updated: 2021-05-21
 ---
 
 > [!primary]
@@ -23,7 +23,7 @@ Gli account Email Pro possono essere configurati su client di posta compatibili 
 
 ## Prerequisiti
 
-- Disporre di un [account Email Pro](/links/web/email-pro)
+- Disporre di un [account Email Pro](https://www.ovhcloud.com/it/emails/email-pro/){.external}
 - Aver installato l'applicazione Mail sul proprio dispositivo iOS
 - Disporre delle credenziali associate all’account email da configurare
 
@@ -35,8 +35,8 @@ Gli account Email Pro possono essere configurati su client di posta compatibili 
 >
 > Nel nostro esempio abbiamo utilizzato come nome del server "pro**?**.mail.ovh.net", dove "?" dovrà essere sostituito con il numero che indica il server del servizio Email Pro.
 >
-> Questa informazione è disponibile nello [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}, selezionando `Email Pro`{.action}. Il nome del server è visibile nel riquadro **Connessione** della scheda `Informazioni generali`{.action}.
->
+> Questa informazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Web Cloud`{.action}, selezionando `Email Pro`{.action}. Il nome del server è visibile nel riquadro **Connessione** della scheda `Informazioni generali`{.action}.
+> 
 
 Sulla schermata Home del tuo dispositivo clicca su `Impostazioni`{.action} (icona a ruota dentata). L'aggiunta di un account si effettua in diversi modi, a seconda della tua versione iOS:
 
@@ -67,7 +67,7 @@ Se hai necessità di inserire manualmente le preferenze per il tuo account, ecco
 
 Una volta configurato l’indirizzo email, non ti resta che utilizzarlo! A partire da questo momento puoi inviare e ricevere messaggi.
 
-OVHcloud propone un'applicazione Web con [funzionalità collaborative](/links/web/emails), disponibile all'indirizzo [Webmail](/links/web/email). e accessibile con le credenziali del tuo account.
+OVHcloud propone un'applicazione Web con [funzionalità collaborative](https://www.ovhcloud.com/it/emails/){.external}, disponibile all'indirizzo <https://www.ovh.it/mail/>. e accessibile con le credenziali del tuo account.
 
 > [!primary]
 >
@@ -75,10 +75,6 @@ OVHcloud propone un'applicazione Web con [funzionalità collaborative](/links/we
 >
 
 ## Per saperne di più
-
-> [!primary]
->
-> Per informazioni sulla configurazione di un indirizzo email dall’applicazione Mail su iOS, consulta [il centro assistenza Apple](https://support.apple.com/it-it/102619).
 
 [Configurare un indirizzo email compreso nell'offerta MX Plan o in una soluzione di hosting Web su un iPhone o un iPad](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_ios)
 

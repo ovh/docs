@@ -19,11 +19,11 @@ Nuestros servidores High Grade y Scale le ofrecen una opción escalable que le p
 ## Requisitos
 
 - Un servidor [High Grade](https://www.ovhcloud.com/es/bare-metal/high-grade/) o [SCALE](https://www.ovhcloud.com/es/bare-metal/scale/)
-- Estar conectado a su [área de cliente de OVHcloud](/links/manager)
+- Estar conectado a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
 
 ## En la práctica
 
-Conéctese a su [área de cliente de OVHcloud](/links/manager).
+Conéctese a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
 En la sección `Bare Metal Cloud`{.action}, seleccione su servidor entre los **Servidores dedicados**.
 
@@ -79,7 +79,7 @@ Si desea programar la mejora de la memoria y el almacenamiento durante la misma 
 
 ## Más información <a name="go-further"></a>
  
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
  
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
  

@@ -1,7 +1,7 @@
 ---
 title: "Die häufigsten Datenbankfehler beheben"
 excerpt: "Erfahren Sie hier, wie Sie Fehler in Zusammenhang mit Datenbanken beheben"
-updated: 2024-09-26
+updated: 2023-10-26
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2024-09-26
 
 ## Ziel 
 
-Bei der Nutzung von Datenbanken können Unregelmäßigkeiten auftreten. Fehler beim Datenbankzugriff werden entweder direkt auf Ihrer Website oder in Ihrem [OVHcloud Kundencenter](/links/manager) sowie im [phpMyAdmin Interface](/pages/web_cloud/web_hosting/sql_create_database) angezeigt.
+Bei der Nutzung von Datenbanken können Unregelmäßigkeiten auftreten. Fehler beim Datenbankzugriff werden entweder direkt auf Ihrer Website oder in Ihrem [OVHcloud Kundencenter](/links/manager) sowie im [phpMyAdmin Interface](/pages/web_cloud/web_hosting/sql_create_database#auf-das-phpmyadmin-interface-zugreifen) angezeigt.
 
 **Diese Anleitung erklärt, wie Sie Fehler bei der Verwendung von Datenbanken mit OVHcloud Webhostings beheben können.**
 
@@ -42,7 +42,7 @@ Bei der Nutzung von Datenbanken können Unregelmäßigkeiten auftreten. Fehler b
 >
 > - Das **Rechenzentrum** und den *Filer* Ihres Webhostings finden Sie im Tab `Allgemeine Informationen`{.action}: Wählen Sie das Hosting unter `Hosting-Pakete`{.action} aus und wechseln zum Tab `Allgemeine Informationen`{.action}.
 > - Das **Cluster** Ihres Webhostings kann im Tab `FTP-SSH`{.action} eingesehen werden. Die Cluster-Kennung erscheint als Teil des Servernamens unter `FTP-Server`.
-> - Um den Namen des **Web Cloud Databases** zu finden, klicken Sie unter `Web Cloud Databases`{.action} auf den betreffenden Datenbankdienst. Die Server-Bezeichung (`Hostname`) befindet sich unter `SQL` im Feld `Verbindungsinformationen` des Tabs `Allgemeine Informationen`{.action}.
+> - Um den Namen des **Web Cloud Databases** zu finden, klicken Sie unter `Datenbanken`{.action} auf den betreffenden Datenbankdienst. Die Server-Bezeichung (`Hostname`) befindet sich unter `SQL` im Feld `Verbindungsinformationen` des Tabs `Allgemeine Informationen`{.action}.
 >
 
 #### Verbindungsdaten Ihrer Datenbank überprüfen <a name="config_file"></a>
@@ -103,7 +103,7 @@ Sie können Ihre Datenbank mit drei Methoden entsperren:
 
 #### Methode 1: Ihren Dienst upgraden
 
-Wenn Sie über ein Webhosting **Starter** oder **Basic** verfügen, empfehlen wir Ihnen, auf das [nächsthöhere Hosting-Angebot](/links/web/hosting) umzusteigen. Diese Erweiterung erhöht auch die Größe Ihrer Datenbank, was sie automatisch wieder öffnet. Diese Methode ist die einfachste und erfordert keine besondere technische Kompetenz.
+Wenn Sie über ein Webhosting **Basic** oder **Pro** verfügen, empfehlen wir Ihnen, auf das [nächsthöhere Hosting-Angebot](/links/web/hosting) umzusteigen. Diese Erweiterung erhöht auch die Größe Ihrer Datenbank, was sie automatisch wieder öffnet. Diese Methode ist die einfachste und erfordert keine besondere technische Kompetenz.
 
 > [!warning]
 >
@@ -123,12 +123,12 @@ Wenn Sie ein Webhosting **Performance** verwenden, gehen Sie zu [Methode 2](#met
 Sie können Ihre Daten auch auf eine neue Datenbank migrieren:
 
 - Wenn nötig, bestellen Sie einen [Datenbank-Dienst](/links/web/hosting-options-startsql) mit höherer Kapazität und [erstellen Sie die neue Datenbank](/pages/web_cloud/web_hosting/sql_create_database).
-- [Duplizieren Sie den Inhalt der alten Datenbank](/pages/web_cloud/web_hosting/copy_database) in die neue **oder** führen Sie einen [Export Ihrer Daten](/pages/web_cloud/web_hosting/sql_database_export) durch und [importieren Sie diese](/pages/web_cloud/web_hosting/sql_importing_mysql_database) in die neue Datenbank.
+- Führen Sie einen [Export Ihrer Daten](/pages/web_cloud/web_hosting/sql_database_export) durch und [importieren Sie diese](/pages/web_cloud/web_hosting/sql_importing_mysql_database) in die neue Datenbank.
 - Integrieren Sie die Login-Daten der neuen Datenbank in die [Konfigurationsdatei](#config_file) Ihrer Website.
 
 > [!primary]
 >
-> Wenn Sie über ein **Performance** Hosting-Paket verfügen, können Sie auch [kostenlos einen Web Cloud Databases Server aktivieren](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+> Wenn Sie über ein **Performance** Hosting-Paket verfügen, können Sie auch [kostenlos einen Web Cloud Databases Server aktivieren](/pages/web_cloud/web_cloud_databases/starting_with_clouddb#aktivierung-des-in-ihrem-webhosting-angebot-enthaltenen-clouddb-servers).
 >
 
 #### Methode 3: Unnötige Daten löschen
@@ -151,13 +151,13 @@ Um Ihre Datenbank zu optimieren, folgen Sie den Anweisungen in unserer Anleitung
 > Wenn die Optimierung Ihrer Datenbank nicht ausreicht, um den Zugriff auf Ihre Website zu entsperren, empfehlen wir Ihnen, unsere [User Community](/links/community) oder die [OVHcloud Partner](/links/partner) zu kontaktieren. Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
 >
 
-### Überschreitungen der RAM-Kapazität (nur Web Cloud Databases)
+### Überschreitungen der RAM-Kapazität
 
-In der unten abgebildeten Nachricht im Bereich `Web Cloud Databases`{.action} in Ihrem [OVHcloud Kundencenter](/links/manager) wird darauf hingewiesen, dass Ihre [Web Cloud Databases](https://www.ovh.de/cloud/cloud-databases/) zu viele Ressourcen auf der OVHcloud Infrastruktur verbraucht hat:
+In der unten abgebildeten Nachricht im Bereich `Datenbanken`{.action} in Ihrem [OVHcloud Kundencenter](/links/manager) wird darauf hingewiesen, dass Ihre [Web Cloud Databases](https://www.ovh.de/cloud/cloud-databases/) zu viele Ressourcen auf der OVHcloud Infrastruktur verbraucht hat:
 
 ![ram-exceeded](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/ram-exceeded.png){.thumbnail}
 
-In diesem Fall können Sie die [RAM-Kapazität](/pages/web_cloud/web_cloud_databases/configure-database-server#wechseln-des-datenbank-angebots) im Bereich `Web Cloud Databases`{.action} Ihres [OVHcloud Kundencenters](/links/manager) erhöhen. Klicken Sie im Tab `Allgemeine Informationen`{.action} auf die Schaltfläche `...`{.action} im Bereich `RAM`.
+In diesem Fall können Sie die [RAM-Kapazität](/pages/web_cloud/web_cloud_databases/configure-database-server#wechseln-des-datenbank-angebots) im Bereich `Datenbanken`{.action} Ihres [OVHcloud Kundencenters](/links/manager) erhöhen. Klicken Sie im Tab `Allgemeine Informationen`{.action} auf die Schaltfläche `...`{.action} im Bereich `RAM`.
 
 > [!warning]
 >
@@ -165,7 +165,7 @@ In diesem Fall können Sie die [RAM-Kapazität](/pages/web_cloud/web_cloud_datab
 > 
 > Loggen Sie sich zum Abtrennen der Datenbank in Ihr [OVHcloud Kundencenter](/links/manager) ein und öffnen Sie `Web Cloud`{.action}. Klicken Sie links auf `Hosting-Pakete`{.action} und wählen Sie das Webhosting mit der aktiven Web Cloud Databases aus.
 >
-> Klicken Sie im Bereich `Konfiguration` auf den Button `...`{.action} rechts neben `Web Cloud Databases`. Klicken Sie dann auf `Abtrennen`{.action}.
+> Klicken Sie im Bereich `Konfiguration` auf den Button `...`{.action} rechts neben `Private Datenbank`. Klicken Sie dann auf `Abtrennen`{.action}.
 >
 
 Sie können Ihre Datenbank auch weiter optimieren, indem Sie die Anweisungen in unserer Anleitung "[Ihren Datenbankserver konfigurieren](/pages/web_cloud/web_cloud_databases/configure-database-server#uberprufung-der-ram-nutzung)" befolgen.
@@ -195,7 +195,7 @@ Kontaktieren Sie gegebenenfalls unsere [Community](/links/community) oder einen 
 
 > [!success]
 >
-> Sie können keinen **Trigger** im Importskript Ihrer Datenbank verwenden. Importieren Sie in diesem Fall Ihre Datenbank auf einen [Web Cloud Databases Dienst](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+> Sie können keinen **Trigger** im Importskript Ihrer Datenbank verwenden. Importieren Sie in diesem Fall Ihre Datenbank auf einen [Web Cloud Databases Dienst](https://www.ovh.de/cloud/cloud-databases/).
 >
 
 Außerdem ist folgende Abfrage nicht zulässig:
@@ -278,14 +278,6 @@ Diese Fehlermeldung wird bei der [Verbindung über phpMyAdmin](/pages/web_cloud/
 >
 > Wenn Sie sich mit einer Datenbank auf [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) verbinden möchten, finden Sie den einzugebenden Servernamen im Tab `Allgemeine Informationen`{.action} im Bereich `Verbindungsinformationen`{.action} unter `SQL`{.action}, hier bezeichnet als `Hostname`{.action}.
 >
-
-### Anmeldung bei einer Cloud Databases-Datenbank nicht möglich
-
-Ein [Web Cloud Databases](/products/web-cloud-clouddb) Server erlaubt es, sich von Ihrem Computer oder einem Server außerhalb der Infrastruktur von OVHcloud mit Ihren Datenbanken zu [verbinden](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server).
-
-Wenn diese Verbindung nicht möglich ist, überprüfen Sie zunächst, dass [Ihre öffentliche IP-Adresse autorisiert ist](/pages/web_cloud/web_cloud_databases/starting_with_clouddb), die Verbindung zum Datenbankserver herzustellen.
-
-Wenn dies der Fall ist, wenden Sie sich an Ihren Internetdienstanbieter oder [OVHcloud Partner](/links/partner). In dieser Situation können wir Ihnen leider keine Unterstützung anbieten.
 
 ## Weiterführende Informationen <a name="go-further"></a>
 

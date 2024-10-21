@@ -16,7 +16,7 @@ Das OVHcloud RTM v2 Monitoringsystem wurde eingestellt und die entsprechenden Re
 
 ## Voraussetzungen
 
-- Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal), auf dem RTM v2 installiert wurde.
+- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/), auf dem RTM v2 installiert wurde.
 - Sie haben administrativen Zugriff auf Ihren Server über SSH.
 
 ## In der praktischen Anwendung
@@ -106,6 +106,6 @@ rm -f /etc/yum.repos.d/OVH-metrics.repo /etc/yum.repos.d/OVH-rtm.repo
 
 ## Weiterführende Informationen
 
-Wenn Sie für die Umsetzung unserer Lösungen eine Schulung oder technische Unterstützung benötigen, kontaktieren Sie Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um einen Kostenvoranschlag zu erhalten und unsere Experten im Professional Services Team um eine individuelle Analyse Ihres Projekts zu bitten.
+Wenn Sie für die Umsetzung unserer Lösungen eine Schulung oder technische Unterstützung benötigen, kontaktieren Sie Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](https://www.ovhcloud.com/de/professional-services/), um einen Kostenvoranschlag zu erhalten und unsere Experten im Professional Services Team um eine individuelle Analyse Ihres Projekts zu bitten.
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

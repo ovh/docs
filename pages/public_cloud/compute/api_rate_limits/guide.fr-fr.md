@@ -101,4 +101,4 @@ Voici quelques exemples de librairies bien connues pour implémenter la fonction
 
 ## Aller plus loin
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

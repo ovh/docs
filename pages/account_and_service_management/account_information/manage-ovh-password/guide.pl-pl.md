@@ -87,8 +87,6 @@ Jeśli Twoje hasło wykradzione, rekomendujemy [jego natychmiastową zmianę](./
 
 - Kiedy wykonasz te czynności, wyświetli się komunikat informujący o powodzeniu operacji. Kliknij przycisk `Kontynuuj`{.action} na dole wiadomości. Zostaniesz wówczas przekierowany na stronę logowania. Następnie wpisz nazwę użytkownika i nowe hasło.
 
-<a name="lost-password"></a>
-
 #### Jeśli nie znasz swojego aktualnego hasła
 
 - Kliknij przycisk `Nie pamiętasz nazwy użytkownika lub hasła?`{.action} w oknie logowania w Panelu klienta.

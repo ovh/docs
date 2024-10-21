@@ -1,12 +1,12 @@
 ---
 title: Tracking slow MySQL queries with Logs Data Platform
 excerpt: Keep your MySQL database at high speed with Logs Data Platform!
-updated: 2024-08-07
+updated: 2019-04-11
 ---
 
 ## Objective
 
-MySQL is one of the most popular options in database software. It has many features and can answer complex queries with great performance. But with time, your database expands itself, its complexity grows, and the performance will naturally decline. There are many tips available to improve the speed of your queries but to rectify this you will have to know which queries are slow.
+MySQL is one of the most popular database software. It has many features and can answer to complex queries with great performance. But with time, your database expands itself, its complexity grows, and the performance will naturally decline. There are many tips available to improve the speed of your queries but to rectify this you will have to know which queries are slow.
 
 This guide will help you to track your slowest queries and send them to Logs Data Platform for further analysis.
 
@@ -23,7 +23,7 @@ Before, you must read these three guides:
 ### Configure the MySQL slow query logs
 To send your logs to Logs Data Platform you first need to activate the slow query logs in your MySQL configuration.
 
-We recommend you refer to the official [MySQL documentation](http://dev.mysql.com/doc/){.external} for your own version of MySQL. For example here is a working configuration on MySQL 5.6:
+I recommend you to refer to the official [MySQL documentation](http://dev.mysql.com/doc/){.external} for your own version of MySQL. For example here is a working configuration on MySQL 5.6:
 
 ```ini
 # Here you can see queries with especially long duration
@@ -32,7 +32,7 @@ slow_query_log_file = /var/log/mysql/slow-queries.log
 long_query_time = 0.5
 ```
 
-If you add these lines to your MySQL configuration file and restart it, MySQL will then log any query taking longer than 0.5 seconds to complete in the file */var/log/mysql/slow-queries.log*
+If you add theses lines to your MySQL configuration file and restart it, MySQL will then log any query taking longer than 0.5 second to complete in the file */var/log/mysql/slow-queries.log*
 
 Here is a sample of the lines produced by the slow query log:
 
@@ -99,31 +99,16 @@ filebeat.config.modules:
   # Set to true to enable config reloading
   reload.enabled: false
 
-#================================ General =====================================
-
-# Optional fields that you can specify to add additional information to the
-# output.
-fields_under_root: true
-fields:
-  X-OVH-TOKEN: '<X-OVH-TOKEN-VALUE>'
-
-
 #----------------------------- Logstash output --------------------------------
 output.logstash:
-  # Boolean flag to enable or disable the output module.
-  enabled: true
-
   # The Logstash hosts
   hosts: ["<your_cluster>.logs.ovh.com:5044"]
 
-  # Enable SSL support. SSL is automatically enabled if any SSL setting is set.
   ssl.enabled: true
 
 ```
 
-Do not forget to replace **<X-OVH-TOKEN-VALUE>** with the write token value of your log stream.
-
-Enable filebeat MySQL support with the following command:
+Enable filebeat MySQL support with following command:
 
 ```shell-session
 $ ldp@ubuntu:~$ sudo filebeat modules enable mysql
@@ -150,9 +135,7 @@ It will generate a new module file: **/etc/filebeat/modules.d/mysql.yml**, pleas
     var.paths: ["/var/log/mysql-slow.log"]
 ```
 
-Launch Filebeat:
-
-Use:
+Launch Filebeat and try to run some slow queries in your database. For this you can use this [database sample](https://github.com/datacharmer/test_db){.external} and use join and like queries.
 
 ```shell-session
 $ ldp@ubuntu:~$ sudo systemctl restart filebeat.service
@@ -162,14 +145,6 @@ or
 
 ```shell-session
 $ ldp@ubuntu:~$ sudo /etc/init.d/filebeat restart
-```
-
-depending on your distribution.
-
-Try to run some slow queries in your database. For this you can use this [database sample](https://github.com/datacharmer/test_db){.external} and use join and like queries. Alternatively, you can use the MySQL Sleep query:
-
-```
-SELECT SLEEP(2);
 ```
 
 ### Exploit your results in Graylog

@@ -148,4 +148,4 @@ $ openstack image remove project <image> <UUID_Projet_A_Supprimer>
 
 [Transférer la sauvegarde d'une instance d'un datacenter à un autre](/pages/public_cloud/compute/transfer_instance_backup_from_one_datacentre_to_another).
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

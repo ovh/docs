@@ -18,7 +18,7 @@ W tym przypadku należy aktywować licencję ręcznie, aby uzyskać dostęp do w
 ## Wymagania początkowe
 
 - Posiadanie [projektu Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project)
-- Dostęp do Panelu [klienta OVHcloud](/links/manager)
+- Dostęp do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 - [Utworzenie użytkownika OpenStack](/pages/public_cloud/compute/create_and_delete_a_user)
 
 Zalecamy zapoznanie się z przewodnikiem  "[Dostęp do interfejsu Horizon](/pages/public_cloud/compute/introducing_horizon)" w celu zapoznania się z programem Horizon.
@@ -183,6 +183,6 @@ slmgr.vbs -dli
 
 [Dowiedz się, jak naprawić klucz aktywacyjny systemu Windows Server](/pages/bare_metal_cloud/dedicated_servers/windows_key).
 
-Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](/links/professional-services), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
+Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

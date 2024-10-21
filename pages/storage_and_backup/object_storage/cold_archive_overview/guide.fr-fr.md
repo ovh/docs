@@ -1,7 +1,7 @@
 ---
 title: Cold Archive - Présentation
 excerpt: Découvrez le service, ses fonctionnalités et sa facturation
-updated: 2024-08-05
+updated: 2024-06-28
 ---
 
 <style>
@@ -141,17 +141,10 @@ Object Storage est disponible via un point de terminaison public (IP publique).
 
 ## Tarification
 
-Nos tarifs sont détaillés [ici](https://www.ovhcloud.com/fr/public-cloud/prices/).
-
 La solution Cold Archive est facturée en fonction de l'espace d'archivage utilisé (sur bandes magnétiques) et de l'espace de dépôt utilisé (espace Object Storage) avec une granularité de 1 Go. Pour assurer sa lisibilité, le prix est affiché en Go/mois, mais la granularité de facturation est au Go/heure, considérant qu'il y a en moyenne 720 heures dans un mois.
 
 La durée minimale d'archivage est de 180 jours. En cas de suppression d'une archive dans ce délai d'engagement, le client se verra facturer un supplément calculé comme suit :
-
 (180 jours moins le nombre de jours pendant lesquels le service a été utilisé) x prix de la classe de stockage.
-
-Il est possible de démarrer l'archivage d'un bucket avec moins de 1 To de données, mais l'action d'archivage sera facturée au prix de 1 To.
-
-La facturation se fait à terme échu, c'est-à-dire que le client est facturé pour le stockage consommé au cours du mois écoulé.
 
 Il est possible de commencer à archiver un bucket avec moins de 1 To de données, mais l'action d'archivage sera facturée au prix de 1 To.
 

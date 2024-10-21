@@ -14,7 +14,7 @@ Protokół komunikacji SSH (Secure Shell) jest głównym narzędziem do tworzeni
 
 **Niniejszy przewodnik wyjaśnia, jak zabezpieczyć dostęp do serwera za pomocą SSH.**
 
-<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/gi7JqUvcEt0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gi7JqUvcEt0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 > [!warning]
 > OVHcloud udostępnia Ci usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywa na Ciebie. W związku z tym to do Ciebie należy zapewnienie prawidłowego funkcjonowania systemu.
@@ -24,7 +24,7 @@ Protokół komunikacji SSH (Secure Shell) jest głównym narzędziem do tworzeni
 
 ## Wymagania początkowe
 
-- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal) lub [VPS](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud
+- Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/) lub [VPS](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud
 - Aplikacja kliencka SSH (w wierszu poleceń lub w interfejsie graficznym)
 
 > [!primary]
@@ -37,7 +37,7 @@ Istnieje kilka metod autoryzacji połączenia z zdalnym urządzeniem przez SSH.<
 Poniższe instrukcje dotyczą metody uwierzytelniania za pomocą nazwy użytkownika i hasła.<br>
 Możesz również skonfigurować klucze SSH, aby aktywować bezpieczne połączenia bez hasła. Więcej informacji znajdziesz w naszym [przewodniku po kluczach SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 
-Dane do logowania (identyfikator klienta i hasło) są wysyłane e-mailem po zainstalowaniu lub zainstalowaniu serwera z poziomu [Panelu client OVHcloud](/links/manager).
+Dane do logowania (identyfikator klienta i hasło) są wysyłane e-mailem po zainstalowaniu lub zainstalowaniu serwera z poziomu [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 Nazwa użytkownika odpowiada systemowi operacyjnemu, na przykład `ubuntu` lub `debian`.<br>
 Aby się zalogować, podaj również adres IPv4 lub nazwę hosta serwera. Informacje te są dostępne w e-mailu instalacyjnym oraz w panelu klienta.
 
@@ -182,6 +182,6 @@ Więcej informacji znajdziesz w oficjalnej dokumentacji FAQ oraz w dokumentacji 
 
 [VPS w trybie rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
-Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](/links/professional-services), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
+Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

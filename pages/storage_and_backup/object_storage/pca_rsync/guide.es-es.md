@@ -23,7 +23,7 @@ Los archivos binarios precompilados están disponibles en la mayoría de las dis
 
 ### ID OpenStack
 
-Puede generar su identificador y contraseña OpenStack a través de esta [guía](/pages/public_cloud/compute/create_and_delete_a_user).
+Puede generar su identificador y contraseña OpenStack a través de esta [guía](/pages/public_cloud/compute/introducing_horizon).
 
 ### TenantName
 

@@ -163,4 +163,4 @@ Le volume redimensionné inclut désormais l'espace disque supplémentaire.
 
 [Créer et configurer un disque additionnel sur une instance](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

@@ -65,7 +65,7 @@ Una vez resuelto el problema, puede desbloquear la dirección IP realizando las 
 
 #### Desbloquear la dirección IP desde el área de cliente
 
-En el [área de cliente de OVHcloud](/links/manager), acceda a la sección `Bare Metal Cloud`{.action} y haga clic en `Network`{.action}. A continuación, haga clic en `IP`{.action}.
+En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Bare Metal Cloud`{.action} y haga clic en `Network`{.action}. A continuación, haga clic en `IP`{.action}.
 
 En el marco amarillo dedicado a las alertas, haga clic en la flecha desplegable `Ver todas mis alertas`{.action} para mostrar todas las alertas en su o sus direcciones IP.
 

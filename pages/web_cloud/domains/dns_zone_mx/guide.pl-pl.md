@@ -1,7 +1,7 @@
 ---
 title: "Konfiguracja rekordu MX dla emaili"
 excerpt: "Dowiedz się, jak skonfigurować rekord MX dla Twojej domeny w OVHcloud"
-updated: 2024-09-02
+updated: 2024-02-29
 ---
 
 > [!primary]
@@ -54,8 +54,6 @@ Dla tej samej domeny można skonfigurować wiele rekordów MX. W takim przypadku
 ### Wartości konfiguracji MX OVHcloud <a name="mxovhcloud"></a>
 
 Zapoznaj się z przedstawioną poniżej konfiguracją MX OVHcloud przewidzianą dla rozwiązań MX Plan (występującą samodzielnie lub włączoną do oferty [hostingu WWW OVHcloud](/links/web/hosting)), [E-mail Pro](/links/web/email-pro) oraz [Exchange](/links/web/emails). Na serwerach poczty elektronicznej OVH zainstalowane jest oprogramowanie antyspamowe i antywirusowe.
-
-Wartości te są wspólne dla wszystkich ofert z wyjątkiem [Private Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_private) i Dedicated Exchange.
 
 |Domena|TTL|Typ rekordu|Priorytet|Adres docelowy|
 |---|---|---|---|---|

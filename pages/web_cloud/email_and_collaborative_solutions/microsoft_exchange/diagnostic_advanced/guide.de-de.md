@@ -16,16 +16,16 @@ Da es eine Vielzahl von Gründen für mögliche Fehler bei Exchange-Accounts gib
 
 ## Voraussetzungen
 
-- Sie haben einen [OVHcloud Exchange](/links/web/emails-hosted-exchange) Dienst eingerichtet.
+- Sie haben einen [OVHcloud Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/) Dienst eingerichtet.
 - Sie verfügen über die Login-Daten für den zu überprüfenden Exchange Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben keine ausstehenden [Zahlungen](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) zu dieser Dienstleistung und der dazugehörigen Domain.
 
 ## In der praktischen Anwendung
 
 ### Diagnose durchführen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter ein](/links/manager) und gehen Sie in den Bereich `Web Cloud`{.action}. Öffnen Sie `Microsoft`{.action} und dann `Exchange`{.action}, und wählen Sie Ihre Dienstleistung aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter ein](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) und gehen Sie in den Bereich `Web Cloud`{.action}. Öffnen Sie `Microsoft`{.action} und dann `Exchange`{.action}, und wählen Sie Ihre Dienstleistung aus.
 
 ![Exchange-Diagnose](images/img_4450.png){.thumbnail}
 
@@ -58,11 +58,11 @@ Bitte folgen Sie den Anweisungen in [dieser Anleitung](/pages/web_cloud/email_an
 ### Das Abonnement des Accounts ist abgelaufen <a name="expired"></a>
 
 Da Ihr Abonnement nicht mehr aktiv ist, wurden Versand und Empfang deaktiviert.<br>
-Um Ihr Abonnement wieder zu aktivieren genügt es, die [Abrechnungsfrequenz](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#periodicity) im [OVHcloud Kundencenter](/links/manager) neu zu konfigurieren.
+Um Ihr Abonnement wieder zu aktivieren genügt es, die [Abrechnungsfrequenz](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#periodicity) im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) neu zu konfigurieren.
 
 ### Account aufgrund der Sicherheitsrichtlinien gesperrt
 
-Wenn im [OVHcloud Kundencenter](/links/manager) eine Sicherheitsrichtlinie aktiv ist, kann der Account vorübergehend gesperrt sein.
+Wenn im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eine Sicherheitsrichtlinie aktiv ist, kann der Account vorübergehend gesperrt sein.
 
 Sie können zum Beispiel festlegen, dass das Konto nach mehreren fehlgeschlagenen Anmeldeversuchen für eine von Ihnen festgelegte Zeitspanne gesperrt werden soll.
 
@@ -76,7 +76,7 @@ Vergewissern Sie sich zunächst über eine Webmail-Anmeldung, dass das Passwort 
 
 Dies kann durch die Eingabe eines falschen Account-Passworts verursacht werden. Überprüfen Sie zunächst, ob das Passwort korrekt ist, indem Sie sich [über Webmail einloggen](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa), und starten Sie dann die Diagnose neu.
 
-Wenn nötig können Sie das Passwort des betroffenen Accounts im Tab `E-Mail-Accounts`{.action} in Ihrem [OVHcloud Kundencenter](/links/manager) ändern. Wenn das Problem weiterhin besteht, erstellen Sie eine Support-Anfrage.
+Wenn nötig können Sie das Passwort des betroffenen Accounts im Tab `E-Mail-Accounts`{.action} in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ändern. Wenn das Problem weiterhin besteht, erstellen Sie eine Support-Anfrage.
 
 ### Der MX-Eintrag der Domain ist ungültig
 

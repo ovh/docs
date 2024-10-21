@@ -54,7 +54,7 @@ Vous devez obtenir les répertoires comme indiqué sur l'image suivante :
 
 Avant de poursuivre il vous faudra créer une paire de clés SSH depuis le poste que vous utiliserez pour vous connecter au dépôt SVN.
 
-Nous vous invitons à suivre le guide [Créer des clés SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#create-ssh-key).
+Nous vous invitons à suivre le guide [Créer des clés SSH](/pages/public_cloud/compute/public-cloud-first-steps#etape-1-creer-des-cles-ssh). Il n'est pas nécessaire de suivre l'étape [Importez votre clé SSH dans l’Espace client OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps#etape-1-creer-des-cles-ssh/#importez-votre-cle-ssh-dans-lespace-client-ovhcloud) dans ce guide.
 
 ### Ajout de la clé publique sur l'hébergement
 

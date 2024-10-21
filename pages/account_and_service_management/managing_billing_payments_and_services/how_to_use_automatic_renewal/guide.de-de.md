@@ -26,7 +26,7 @@ Folgende Themen werden erläutert:
 > Je nach Ihrem Wohnsitz, der örtlichen Gesetzgebung und Dienstleistungsart können manche Details dieser Anleitung variieren oder in ihrem Fall nicht zutreffen. Für konkrete Informationen können Sie Ihre OVHcloud Verträge im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) überprüfen: Klicken Sie auf Ihren Account-Namen oben rechts in der Anzeige, öffnen Sie `Produkte und Dienstleistungen`{.action} und wechseln Sie zum Tab `Verträge`{.action}.
 >
 
-<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/dfpPCa0mUyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dfpPCa0mUyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Voraussetzungen
 

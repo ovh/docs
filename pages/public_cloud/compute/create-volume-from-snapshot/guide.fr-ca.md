@@ -18,7 +18,7 @@ Cela peut être utile dans les cas suivants :
 
 ## Prérequis
 
-- Être connecté votre [espace client OVHcloud](/links/manager){.external}.
+- Être connecté votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 - Avoir une [instance Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/){.external} dans votre compte OVHcloud.
 - Avoir une sauvegarde disque dans la même région OpenStack.
 - Avoir accès à votre instance via SSH en tant qu'administrateur (sudo).
@@ -27,7 +27,7 @@ Cela peut être utile dans les cas suivants :
 
 ### Créer le disque à partir d'une sauvegarde
 
-Connectez-vous à [l'espace client OVHcloud](/links/manager), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Cliquez ensuite sur `Volume Snapshot`{.action} dans la barre de navigation de gauche sous `Storage`.
+Connectez-vous à [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Cliquez ensuite sur `Volume Snapshot`{.action} dans la barre de navigation de gauche sous `Storage`.
 
 À droite de la sauvegarde de votre choix, cliquez sur le bouton `...`{.action} puis sur `Créer un volume`{.action}.
 
@@ -63,4 +63,4 @@ Une fois l'attachement effectué, vous pouvez suivre les étapes suivantes pour 
 
 ## Aller plus loin
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

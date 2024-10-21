@@ -16,14 +16,14 @@ Usted acaba de adquirir una solución MX Plan que permite disfrutar de direccion
 
 ## Requisitos
 
-- Tener una solución MX Plan, que está disponible disponible en un [plan de hosting](/links/web/hosting), el [Alojamiento gratuito 100M](/links/web/domains-free-hosting) o la solución MX Plan.
-- Estar conectado al [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action}.
+- Tener una solución MX Plan, que está disponible disponible en un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/), el [Alojamiento gratuito 100M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/) o la solución MX Plan.
+- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), en la sección `Web Cloud`{.action}.
 
 ## Procedimiento <a name="instructions"></a>
 
-Una vez que la solución MX Plan haya sido creada y esté disponible, podrá administrarla desde el [área de cliente de OVHcloud](/links/manager). En función de cuándo haya activado su MX Plan o de si el servicio ha sido migrado recientemente, tendrá una versión diferente. Antes de continuar, compruebe de qué versión dispone.
+Una vez que la solución MX Plan haya sido creada y esté disponible, podrá administrarla desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). En función de cuándo haya activado su MX Plan o de si [el servicio ha sido migrado recientemente](https://www.ovh.es/mxplan-migration/), tendrá una versión diferente. Antes de continuar, compruebe de qué versión dispone.
 
-Para ello, conéctese al [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action}. Haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente. Siga leyendo esta guía en función de su versión:
+Para ello, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Web Cloud`{.action}. Haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente. Siga leyendo esta guía en función de su versión:
 
 |Versión histórica de la solución MX Plan|Nueva versión de la solución MX Plan|
 |---|---|
@@ -64,7 +64,7 @@ Una vez que haya creado las direcciones de correo, ya puede empezar a usarlas. P
 
 ##### **1. Utilizar el webmail Outlook Web App (OWA)**
 
-Vaya a la [página de conexión al webmail](/links/web/email) e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
+Vaya a la [página de conexión al webmail](https://www.ovh.es/mail/) e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
 
 La primera vez que se conecte al webmail, deberá seleccionar el idioma de la interfaz y la zona horaria en la que se encuentra. A continuación se abrirá la bandeja de entrada. Para más información, consulte nuestra guía [Utilizar una dirección de correo desde el webmail Outlook Web App (OWA)](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
@@ -121,7 +121,7 @@ Puede hacerlo de dos formas:
 
 - crear su redirección desde el webmail, a través de las reglas de la bandeja de entrada. Para ello, consulte nuestra guía Reglas de la bandeja de entrada desde la [interfaz OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan#ejemplo-1-redireccionamiento-de-mensajes-de-correo-electronico-a-otra-direccion).
 
-- crear la redirección desde el [área de cliente de OVHcloud](/links/manager). Este método permite, por ejemplo, crear un alias, es decir, redirigir una dirección de correo electrónico que no exista a una dirección de correo existente. Para ello, consulte nuestra guía [Utilizar las redirecciones de correo](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections#nueva-version-de-la-solucion-mx-plan).
+- crear la redirección desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Este método permite, por ejemplo, crear un alias, es decir, redirigir una dirección de correo electrónico que no exista a una dirección de correo existente. Para ello, consulte nuestra guía [Utilizar las redirecciones de correo](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections#nueva-version-de-la-solucion-mx-plan).
 
 ##### **Contestador**
 
@@ -180,7 +180,7 @@ Una vez que haya creado las direcciones de correo, ya puede empezar a usarlas. P
 
 ##### **1. Utilizar el webmail Roundcube**
 
-Vaya a la [página de conexión al webmail](/links/web/email) e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
+Vaya a la [página de conexión al webmail](https://www.ovh.es/mail/) e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
 
 Se abrirá la bandeja de entrada. Para más información, consulte nuestra guía [Webmail: Guía de uso de Roundcube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
 

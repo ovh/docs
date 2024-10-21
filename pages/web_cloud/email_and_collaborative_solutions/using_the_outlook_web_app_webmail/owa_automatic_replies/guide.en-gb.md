@@ -12,14 +12,14 @@ This Exchange feature allows you to set up automatic responses to emails sent to
 
 ## Requirements
 
-- an [OVHcloud Exchange solution](/links/web/emails-hosted-exchange) or [OVHcloud Email Pro](/links/web/email-pro) already set up
+- an [OVHcloud Exchange solution](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/) or [OVHcloud Email Pro](https://www.ovhcloud.com/en-gb/emails/email-pro/) already set up
 - access to your email account (email address and password)
 
 ## Instructions
 
 ### Activating the feature
 
-Log in to your Exchange account via the [OVHcloud webmail](/links/web/email). Click on the gear symbol on the top right to unfold the "Options" menu and select `Automatic replies`{.action}.
+Log in to your Exchange account via the [OVHcloud webmail](https://www.ovh.co.uk/mail). Click on the gear symbol on the top right to unfold the "Options" menu and select `Automatic replies`{.action}.
 
 ![owaoptions](images/exchange-autorep-step1.png){.thumbnail}
 

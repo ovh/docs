@@ -16,7 +16,7 @@ updated: 2024-07-08
 - A [Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](/links/manager)
 - An [S3 user](/pages/storage_and_backup/object_storage/s3_identity_and_access_management) already created
-- [AWS CLI installed and configured](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage)
+- [AWS CLI installed and configured](pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage)
 
 ## Instructions
 

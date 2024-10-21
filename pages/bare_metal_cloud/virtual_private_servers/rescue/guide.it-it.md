@@ -29,7 +29,7 @@ In caso di problemi al sistema, eseguire controlli in Rescue mode permette di de
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - Disporre di un [VPS OVHcloud](https://www.ovhcloud.com/it/vps/) già configurato
 
 > [!warning]
@@ -58,7 +58,7 @@ Una volta avviato il riavvio, comparirà un indicatore di stato che indica la du
 
 > [!primary]
 >
-> Riceverai un’email automatica con le credenziali SSH per accedere in Rescue mode. Attendi la ricezione dell'email prima di proseguire con qualsiasi operazione. Questa email è disponibile anche nello [Spazio Cliente OVHcloud](/links/manager). Per recuperarlo, clicca sul nome associato al tuo identificativo OVHcloud nella barra dei menu situata nell’angolo in alto a destra e seleziona `Email di servizio`{.action}.
+> Riceverai un’email automatica con le credenziali SSH per accedere in Rescue mode. Attendi la ricezione dell'email prima di proseguire con qualsiasi operazione. Questa email è disponibile anche nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Per recuperarlo, clicca sul nome associato al tuo identificativo OVHcloud nella barra dei menu situata nell’angolo in alto a destra e seleziona `Email di servizio`{.action}.
 >
 
 In seguito, dovrai [accedere al tuo server via SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction), utilizzando la password temporanea generata per la modalità rescue.

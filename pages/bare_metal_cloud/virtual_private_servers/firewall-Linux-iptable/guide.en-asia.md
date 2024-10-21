@@ -219,4 +219,4 @@ Feel free to experiment because you can always delete the rules you don't need, 
 
 ## Go further
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

@@ -20,13 +20,13 @@ No entanto, pode ligar-se ao seu servidor através do [modo rescue OVHcloud](/pa
 >
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 >
-> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](/links/partner) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further).
+> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further).
 >
 
 ## Requisitos
 
-- Ter um [servidor dedicado](/links/bare-metal/bare-metal) ou um [VPS](https://www.ovhcloud.com/pt/vps/) na sua conta OVHcloud
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
+- Ter um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/) ou um [VPS](https://www.ovhcloud.com/pt/vps/) na sua conta OVHcloud
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 
 ## Instruções
 
@@ -60,7 +60,7 @@ EEFFFFFFFFFFFFFFFFFFFGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGHhhhhhhhhhhhhhhhhhhhh
 
 Por razões de segurança, elimine a cadeia de chaves « antiga » (atualmente obsoleta) do ficheiro. Registe e saia do editor.
 
-Volte para o modo de arranque "normal" e reinicie o servidor na sua [Área de Cliente OVHcloud](/links/manager). Consulte o guia ["Ativar e utilizar o modo rescue"](#step2), se necessário.
+Volte para o modo de arranque "normal" e reinicie o servidor na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Consulte o guia ["Ativar e utilizar o modo rescue"](#step2), se necessário.
 
 Agora tem acesso ao servidor com o novo par de chaves SSH.
 

@@ -24,7 +24,7 @@ After subscribing, you can download the Outlook client as one of the following 3
 
 #### For a Hosted Exchange account
 
-Log in to your [OVHcloud Control Panel](/links/manager) and go to the `Web Cloud` section. Click `Microsoft`{.action}, then `Exchange`{.action}, and select the **Hosted Exchange** platform concerned.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and go to the `Web Cloud` section. Click `Microsoft`{.action}, then `Exchange`{.action}, and select the **Hosted Exchange** platform concerned.
 
 Click on the `...`{.action} icon to the right of the account concerned, then on `Order an Outlook`{.action} licence.
 
@@ -40,7 +40,7 @@ You will need to wait a few moments for your Outlook licence to become available
 
 #### For a Private Exchange account
 
-Log in to your [OVHcloud Control Panel](/links/manager) and go to the `Web Cloud` section. Click `Microsoft`{.action}, then `Exchange`{.action}, and select the **Private Exchange** platform concerned.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and go to the `Web Cloud` section. Click `Microsoft`{.action}, then `Exchange`{.action}, and select the **Private Exchange** platform concerned.
 
 Click on the `...`{.action} icon to the right of the account concerned, then on `Activate Outlook licence`{.action}.
 
@@ -75,7 +75,7 @@ The downloaded file is in the .ISO format, i.e. a disk image. Start the installa
 
 ### Deleting the Outlook licence from your account
 
-Log in to your [OVHcloud Control Panel](/links/manager) and go to the `Web Cloud` section. Click `Microsoft`{.action}, then `Exchange`{.action}. Next, select the Exchange service concerned.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and go to the `Web Cloud` section. Click `Microsoft`{.action}, then `Exchange`{.action}. Next, select the Exchange service concerned.
 
 Click on the `...`{.action} icon to the right of the account concerned, then on `Delete Outlook licence`{.action}.
 

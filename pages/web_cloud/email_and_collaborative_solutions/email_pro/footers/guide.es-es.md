@@ -11,9 +11,9 @@ El área de cliente de OVHcloud le permite crear firmas genéricas (pies de mens
 
 ## Requisitos
 
-- Tener acceso al [área de cliente de OVHcloud](/links/manager).
-- Tener una solución [Exchange](/links/web/emails-hosted-exchange) o [Email Pro](/links/web/email-pro) ya configuradas.
+- Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Tener una solución [Exchange](https://www.ovhcloud.com/es-es/emails/hosted-exchange/) o [Email Pro](https://www.ovhcloud.com/es-es/emails/email-pro/) ya configuradas.
 
 ## Procedimiento
 
-Siga nuestra guía [Qué hacer en caso de cuenta bloqueada por spam?](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/locked_for_spam) en la sección "Soluciones colaborativas de Microsoft".
+Siga nuestra guía [Qué hacer en caso de cuenta bloqueada por spam?](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/locked_for_spam){.external} en la sección "Soluciones colaborativas de Microsoft".

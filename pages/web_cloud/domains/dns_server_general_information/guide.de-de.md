@@ -14,7 +14,7 @@ updated: 2024-06-17
 
 **Diese Anleitung erklärt die Rolle der DNS-Server, was sie enthalten und wie sie mit einem Domainnamen zusammenarbeiten.**
 
-<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## In der praktischen Anwendung
 

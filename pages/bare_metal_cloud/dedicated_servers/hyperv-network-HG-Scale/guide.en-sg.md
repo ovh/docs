@@ -1,30 +1,20 @@
 ---
-title: 'Configuring the network on Windows Server with Hyper-V'
-excerpt: 'Find out how to configure the network on  Windows Server with Hyper-V'
-updated: 2024-08-07
+title: 'Configuring the network on Windows Server with Hyper-V on the High Grade & SCALE ranges'
+excerpt: 'Find out how to configure the network on  Windows Server with Hyper-V on the High Grade & SCALE ranges'
+updated: 2023-08-31
 ---
 
 ## Objective
 
-**This guide explains how to configure the network in  Windows Server with Hyper-V.**
-
-### High Grade & SCALE ranges
-
 On the High Grade & SCALE ranges, it is not possible to operate Additional IPs in *bridged* mode (via virtual MACs). It is therefore necessary to configure Additional IPs in routed mode or via the vRack.
 
-### Advance range
-
-As Advance servers only have 2 network interfaces, we advise configuring the server in full private mode with both interfaces in teaming connected to the vRack. A second server can act as an internet gateway with one interface connected to the private network and another connected to the public network.
-
-For this type of configuration, it is possible to use the IP aliasing as described in the article [Configuring IP aliasing](/pages/bare_metal_cloud/dedicated_servers/network_ipaliasing).
-
-It is also possible to set up such configuration (one interface on private network, the second on the public network) for each Hyper-V server and therefore not configure any teaming. In this case, the private network bandwidth is reduced and there’s no high availability on network interfaces.
+**This guide explains how to configure the network in  Windows Server with Hyper-V.**
 
 ## Requirements
 
-- An [OVHcloud dedicated server](/links/bare-metal/bare-metal)
-- Access to the [OVHcloud Control Panel](/links/manager)
-- An [Additional IP](/links/network/additional-ip)
+- An [OVHcloud dedicated server](https://www.ovhcloud.com/en-sg/bare-metal/)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
+- An [Additional IP](https://www.ovhcloud.com/en-sg/bare-metal/ip/)
 
 > [!warning]
 >
@@ -65,12 +55,12 @@ Ethernet 3                Mellanox ConnectX-5 Adapter #3                4 Up    
 
 In our example:
 
-- The public interfaces are `Ethernet 3` and `Ethernet 4`.
+- The public interfaces are `Ehernet 3` and `Ethernet 4`.
 - The private interfaces are `Ethernet` and `Ethernet 2`.
 
 > [!primary]
 >
-> Check that your configuration is similar. You can access information on MACs and public or private interfaces in your [OVHcloud Control Panel](/links/manager) or via the OVHcloud API.
+> Check that your configuration is similar. You can access information on MACs and public or private interfaces in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) or via the OVHcloud API.
 >
 
 Now go back to the Server Manager and go to `Local Server`{.action} and click on `Disabled`{.action} opposite `NIC Teaming`.
@@ -246,9 +236,9 @@ network:
 
 - A public block of IP addresses in your account, with a minimum of four addresses
 - Your chosen private IP address range
-- A [vRack compatible server](/links/bare-metal/bare-metal){.external}
-- A [vRack](/links/network/vrack){.external} service activated in your account
-- Access to the [OVHcloud Control Panel](/links/manager)
+- A [vRack compatible server](https://www.ovh.com/sg/solutions/vrack/){.external}
+- A [vRack](https://www.ovh.com/ca/en/solutions/vrack/){.external} service activated in your account
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
 
 #### Explanations
 
@@ -274,12 +264,12 @@ Ethernet 3                Mellanox ConnectX-5 Adapter #3                4 Up    
 
 In our example:
 
-- The public interfaces are `Ethernet 3` and `Ethernet 4`.
+- The public interfaces are `Ehernet 3` and `Ethernet 4`.
 - The private interfaces are `Ethernet` and `Ethernet 2`.
 
 > [!primary]
 >
-> Check that your configuration is similar. You can access information on MACs and public or private interfaces in your [OVHcloud Control Panel](/links/manager) or via the OVHcloud API.
+> Check that your configuration is similar. You can access information on MACs and public or private interfaces in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) or via the OVHcloud API.
 >
 
 Now go back to the Server Manager, go to `Local Server` and click on `Disabled`{.action} besides NIC Teaming.
@@ -358,4 +348,4 @@ network:
 
 ## Go further
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

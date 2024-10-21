@@ -14,7 +14,7 @@ The open source tool Terraform was developed to make the creation of complex clo
 
 As an example, this video shows how to easily scale the number of instances while keeping your existing infrastructure by changing only one line of code:
 
-<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/TFfKd24rzvE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TFfKd24rzvE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **This guide explains how to use Terraform with the Public Cloud by way of practical examples.**
 
@@ -242,7 +242,7 @@ openstack_compute_instance_v2.test_terraform_instance: Creation complete after 2
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 ```
 
-Now, log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and click on `Instances`{.action}.
+Now, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), go to the `Public Cloud`{.action} section and click on `Instances`{.action}.
 As you can see, your compute instance named "terraform_instance" is creating.
 
 > [!primary]
@@ -589,7 +589,7 @@ Nevertheless, two conditions apply:
 - You must have created a Public Cloud project during the last 3 months.
 
 If one of these business rules is not met, you will receive the following error: `"Found eligibility issues: challengePaymentMethod"`.<br>
-In that case, the only solution is to use the [OVHcloud Control Panel](/links/manager) to create a project.<br>
+In that case, the only solution is to use the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) to create a project.<br>
 You will then be challenged to validate that you are indeed the owner of the payment means used on your account (this challenge depends on the payment means and other parameters).
 
 Please understand these rules and extra human steps have been put in place as an extra safety for customers that might have leaked their OVHcloud credentials.<br>
@@ -633,4 +633,4 @@ terraform destroy
 
 ## Go further
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

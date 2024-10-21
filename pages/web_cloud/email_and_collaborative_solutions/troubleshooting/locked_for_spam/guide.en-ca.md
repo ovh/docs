@@ -109,6 +109,6 @@ These headers will help determine the path and origin of the emails sent.
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ca/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.

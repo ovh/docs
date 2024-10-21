@@ -6,7 +6,7 @@ updated: 2020-03-09
 
 ## Wprowadzenie
 
-[OVH Mail Migrator](https://omm.ovh.net/) (OMM) jest narzędziem przygotowanym przez OVHcloud. Umożliwia ono przeprowadzanie migracji kont e-mail od jednego dostawcy usług hostingowych do drugiego. Operacja obejmuje przeniesienie różnych typów treści, takich jak e-maile, kontakty, kalendarze i zadania, o ile są one kompatybilne z Twoimi kontami e-mail w OVHcloud. 
+[OVH Mail Migrator](https://omm.ovh.net/){.external} (OMM) jest narzędziem przygotowanym przez OVHcloud. Umożliwia ono przeprowadzanie migracji kont e-mail od jednego dostawcy usług hostingowych do drugiego. Operacja obejmuje przeniesienie różnych typów treści, takich jak e-maile, kontakty, kalendarze i zadania, o ile są one kompatybilne z Twoimi kontami e-mail w OVHcloud. 
 
 Z tego przewodnika dowiesz się, jak używać narzędzia OMM do importowania różnych elementów konta Gmail do konta e-mail OVHcloud.
 
@@ -14,7 +14,7 @@ Z tego przewodnika dowiesz się, jak używać narzędzia OMM do importowania ró
 
 ## Wymagania początkowe
 
-- Korzystanie z usługi poczty elektronicznej w OVHcloud, takiej jak [oferta Exchange](/links/web/emails), [E-mail Pro](/links/web/email-pro) lub MX Plan (w postaci oferty MX Plan lub kont e-mail dostępnych w ramach [hostingu OVHcloud](/links/web/hosting))
+- Korzystanie z usługi poczty elektronicznej w OVHcloud, takiej jak [oferta Exchange](https://www.ovhcloud.com/pl/emails/){.external}, [E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/){.external} lub MX Plan (w postaci oferty MX Plan lub kont e-mail dostępnych w ramach [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external})
 - Posiadanie danych dostępowych do kont e-mail, które chcesz przenieść (konta źródłowe)
 - Posiadanie danych dostępowych do kont e-mail OVHcloud, na które przeniesione zostaną dane (konta docelowe)
 
@@ -24,9 +24,9 @@ Z tego przewodnika dowiesz się, jak używać narzędzia OMM do importowania ró
 
 > [!primary]
 > Aby migracja była możliwa, na koncie Gmail trzeba aktywować protokół IMAP. W tym celu postępuj zgodnie z przewodnikiem Google dotyczącym
-> [aktywowania protokołu IMAP na koncie Gmail](https://support.google.com/mail/answer/7126229?hl=pl).
+> [aktywowania protokołu IMAP na koncie Gmail](https://support.google.com/mail/answer/7126229?hl=pl){.external}.
 
-Po aktywowaniu protokołu IMAP na koncie Google, przejdź do strony narzędzia [OMM](https://omm.ovh.net/).
+Po aktywowaniu protokołu IMAP na koncie Google, przejdź do strony narzędzia [OMM](https://omm.ovh.net/){.external}.
 
 Kliknij przycisk `Migracja`{.action}, a następnie `Nowa migracja`{.action}.
 
@@ -83,7 +83,7 @@ Gdy **zezwolisz na „mniej bezpieczne połączenia”** na koncie Gmail, możes
 
 Aby zaimportować kalendarz do konta OVHcloud, musisz pobrać jego kopię zapasową z panelu Gmail. W tym celu postępuj zgodnie z instrukcjami w przewodniku Google:
 
-[Eksportowanie kalendarza z konta Gmail](https://support.google.com/calendar/answer/37111?hl=pl)
+[Eksportowanie kalendarza z konta Gmail](https://support.google.com/calendar/answer/37111?hl=pl){.external}
 
 Jeśli na koncie Google masz kilka kalendarzy, pobierzesz plik archiwum do rozpakowania. Każdy kalendarz będzie w formacie **.ics**.
 
@@ -92,7 +92,7 @@ Jeśli na koncie Google masz kilka kalendarzy, pobierzesz plik archiwum do rozpa
 > [!primary]
 > Migracja kalendarzy przy użyciu narzędzia OMM jest możliwa tylko do kont Exchange.
 
-Po pobraniu kopii zapasowej kalendarza w formacie **.ics** przejdź do strony narzędzia [OMM](https://omm.ovh.net/).
+Po pobraniu kopii zapasowej kalendarza w formacie **.ics** przejdź do strony narzędzia [OMM](https://omm.ovh.net/){.external}.
 
 U góry wybierz kartę `PST/ICS/VCF`{.action}, a następnie kliknij pozycję `Nowa migracja PST/ICS/VCF`{.action}.
 
@@ -127,7 +127,7 @@ Pojawi się okno monitorowania migracji (poniżej). Możesz zostawić je otwarte
 
 Aby zaimportować kontakty do konta OVHcloud, musisz pobrać ich kopię zapasową z panelu Gmail. W tym celu postępuj zgodnie z instrukcjami w przewodniku Google:
 
-[Eksportowanie kontaktów z konta Gmail](https://support.google.com/contacts/answer/7199294?hl=pl)
+[Eksportowanie kontaktów z konta Gmail](https://support.google.com/contacts/answer/7199294?hl=pl){.external}
 
 > [!warning]
 > Eksport należy wykonać do formatu vCard (**.vcf**) przez panel Gmail. Ta opcja jest proponowana na koniec procesu eksportu.

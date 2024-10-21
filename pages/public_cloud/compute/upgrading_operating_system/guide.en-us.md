@@ -20,7 +20,7 @@ This tutorial will provide you with the steps to upgrade an end of life operatin
 
 ## Requirements
 
-- [Administrative access](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) to the server
+- [Root access](/pages/public_cloud/compute/become_root_and_change_password) to the server
 - [Backup](/pages/public_cloud/compute/save_an_instance) must be taken before starting
 
 ## Instructions
@@ -165,4 +165,4 @@ Verify if your applications are working as expected. In case there are issues, w
 
 ## Go further
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

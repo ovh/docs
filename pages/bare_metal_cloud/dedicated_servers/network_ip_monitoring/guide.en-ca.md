@@ -1,7 +1,7 @@
 ---
 title: What are the IP addresses of the OVHcloud monitoring?
 excerpt: Find here the IP addresses to fill in when setting up a firewall so that OVHcloud monitoring will continue to work on your server
-updated: 2024-09-06
+updated: 2023-09-21
 ---
 
 ## Objective
@@ -30,7 +30,6 @@ To implement a restrictive firewall, especially on ICMP, and continue to benefit
 |netmon-gra-probe|92.222.186.0/24|icmp|
 |netmon-bhs-probe|167.114.37.0/24|icmp|
 |netmon-sgp-probe|139.99.1.144/28|icmp|
-|netmon-waw-probe|193.70.125.118/32|icmp|
 |---|---|---|
 |ping.ovh.net|213.186.33.13|icmp|
 ||xxx.xxx.xxx.250 (xxx.xxx.xxx.aaa is the server ip)|icmp|
@@ -46,7 +45,7 @@ To implement a restrictive firewall, especially on ICMP, and continue to benefit
 
 ### Server monitoring
 
-Log in to the [OVHcloud Control Panel](/links/manager){.external} and select the `Bare Metal Cloud`{.action} tab. Select the server concerned in the `Dedicated servers`{.action} menu.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external} and select the `Bare Metal Cloud`{.action} tab. Select the server concerned in the `Dedicated servers`{.action} menu.
 
 You can set the monitoring status for a dedicated server from the `General information`{.action} tab (section **Service status**).
 
@@ -66,4 +65,4 @@ Click on `Confirm`{.action} to update your monitoring configuration.
 
 [Configure the Network Firewall.](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

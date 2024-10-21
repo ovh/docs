@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Databases - Premiers pas (EN)
 excerpt: Find out how to set up your managed database service in the OVHcloud Control Panel
-updated: 2024-10-04
+updated: 2024-02-29
 ---
 
 ## Objective
@@ -9,8 +9,6 @@ updated: 2024-10-04
 OVHcloud Databases as-a-service (DBaaS) allow you to focus on building and deploying cloud applications while OVHcloud takes care of the database infrastructure and maintenance.
 
 **This guide explains how to order a database solution in the OVHcloud Control Panel.**
-
-<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/y8Px-NhCRAE?si=cIXix30nL94aFeBi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Requirements
 

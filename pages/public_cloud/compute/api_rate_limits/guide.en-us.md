@@ -100,4 +100,4 @@ Some examples of well-known libraries to implement retry backoff in Python are:
 
 ## Go further
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

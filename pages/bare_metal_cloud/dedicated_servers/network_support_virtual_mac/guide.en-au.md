@@ -14,7 +14,7 @@ Support for the vMAC function is a prerequisite for all actions concerning virtu
 
 ## Requirements
 
-- A [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account
+- A [dedicated server](https://www.ovhcloud.com/en-au/bare-metal/) in your OVHcloud account
 - Access to the OVHcloud [API](https://ca.api.ovh.com/)
 
 > [!primary]
@@ -49,4 +49,4 @@ The result will show a "vmac / supported" entry which can be "true" or "false" (
 
 [First Steps with the OVHcloud API](/pages/manage_and_operate/api/first-steps)
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

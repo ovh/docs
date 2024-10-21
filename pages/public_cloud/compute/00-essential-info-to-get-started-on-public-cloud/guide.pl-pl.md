@@ -130,7 +130,7 @@ W praktyce znajdziesz tutaj również przewodniki, które pomogą Ci zacząć:
 |Dokumentacja|Szczegóły|
 |---|---|
 |[Utwórz pierwszą instancję](/pages/public_cloud/compute/public-cloud-first-steps)|Pierwszy przewodnik dotyczący uruchomienia serwera cloud w Panelu klienta OVHcloud.|
-|[Korzystanie z klucza SSH](/pages/public_cloud/compute/creating-ssh-keys-pci)| Aby zalogować się do instancji Linux, zapoznaj się z tym przewodnikiem dotyczącym korzystania z tej instancji.|
+|[Korzystanie z klucza SSH](/pages/public_cloud/compute/public-cloud-first-steps#krok-2-przechowywanie-kluczy-publicznych-w-panelu-klienta-ovhcloud_1)| Aby zalogować się do instancji Linux, zapoznaj się z tym przewodnikiem dotyczącym korzystania z tej instancji.|
 |[Konfiguracja prywatnej sieci](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack)|W OVHcloud prywatne sieci opierają się na technologii vRack. Niniejszy przewodnik pomaga Ci w uruchomieniu tej usługi.|
 |[Przypisz dodatkowy dysk do instancji](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)|Niniejszy przewodnik wyjaśnia, jak dodać przestrzeń dyskową do Twojej pierwszej instancji.|
 |[Dostęp do interfejsu Horizon](/pages/public_cloud/compute/introducing_horizon)|Interfejs Horizon OpenStack pozwala na wykonywanie niektórych zaawansowanych operacji.|
@@ -150,6 +150,6 @@ Jedną z największych zalet korzystania ze standardowych i otwartych technologi
 |[Kubernetes CLI Overview](https://kubernetes.io/docs/reference/kubectl/overview/) (EN)| Dokumentacja dotycząca najważniejszego klienta w wierszu poleceń "kubectl".|
 |[Kubernetes APIs Overview](https://kubernetes.io/docs/reference/using-api/) (EN)| Dokumentacja API Kubernetesa, przydatna przy przeglądzie możliwości.|
 
-Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](/links/professional-services), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
+Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

@@ -1,7 +1,7 @@
 ---
 title: "Como gerir o seu módulo em 1 clique?"
 excerpt: "Saiba como gerir o módulo 1 clique na Área de Cliente OVHcloud"
-updated: 2024-10-11
+updated: 2022-09-05
 ---
 
 > [!primary]
@@ -54,9 +54,42 @@ Também pode procurar o e-mail recebido durante a criação do módulo a partir 
 
 ### Modificar a palavra-passe do seu módulo <a name="password-change"></a>
 
+Pode alterar a palavra-passe do módulo a partir da [Área de Cliente OVHcloud](/links/manager) ou através de uma ligação direta à página de acesso ao espaço de administrador do seu website.
+Em ambos os casos, ser-lhe-á enviado um e-mail de reinicialização da password.
+
 > [!primary]
 >
-> Poderá consultar a documentação oficial para os diferentes CMS propostos em instalação nos nossos alojamentos partilhados:
+> **O que fazer se não tiver recebido o e-mail de reinicialização da password administrador do seu site?**
+>
+> Na caixa de e-mail em causa, verifique as pastas `Spams`{.action} e `Elementos suprimidos`{.action}.
+>
+> Pode igualmente encontrar o conjunto dos e-mails enviados pelos nossos serviços a partir do seu [Área de Cliente OVHcloud](/links/manager): clique no seu nome no canto superior direito do seu ecrã e, no menu contextual à direita do ecrã, clique em `E-mails de serviço`{.action}.
+>
+> **Duração dos vínculos:**
+>
+> - Depois de receber o e-mail de alteração da password, o link de reinicialização ficará válido durante 48 horas. 
+> - Depois de clicar na ligação, esta só é válida durante 30 minutos.
+>
+
+> [!warning]
+>
+> A alteração da palavra-passe de acesso à interface de gestão do seu CMS a partir da Área de Cliente OVHcloud só pode ser efetuada **se forem respeitadas as seguintes condições** :
+>
+> - O CMS foi instalado com a opção "módulo 1 clique" durante a encomenda do alojamento ou a partir da Área de Cliente OVHcloud.
+> O utilizador (nome de utilizador, endereço de e-mail, etc.) não foi modificado através do CMS ou da base de dados.
+> A página de acesso à interface de administração do seu CMS não foi alterada. Em particular, o URL de acesso à interface de administração do seu CMS não deve ter sido alterado através do CMS. Não devem ter sido impostas restrições nesta mesma página.
+> - O "prefixo" das tabelas presentes na sua base de dados não foi modificado a partir do CMS ou da base de dados diretamente.
+>
+> Caso contrário, deverá seguir a documentação oficial do CMS que utiliza ou contactar diretamente o editor do CMS.
+>
+
+Para alterar a palavra-passe de acesso à interface de administração do seu website **através da Área de Cliente OVHcloud**, clique em `Web Cloud`{.action}, `Alojamentos`{.action}, no alojamento em causa e no separador `Modules "1 clique"`{.action}.
+
+A seguir, clique no botão `...`{.action} à direita da linha relativa ao seu módulo e depois `Alterar palavra-passe`{.action}. Clique em `Validar`{.action}. Receberá dentro de alguns minutos por e-mail um link de reinicialização da sua password.
+
+> [!primary]
+>
+> Se não pode alterar a palavra-passe de acesso à interface de gestão do seu CMS a partir da Área de Cliente OVHcloud pelas razões indicadas acima, poderá consultar a documentação oficial para os diferentes CMS propostos em instalação nos nossos alojamentos partilhados:
 >
 > - WordPress : <https://wordpress.org/support/article/resetting-your-password/>
 > - Joomla! : <https://docs.joomla.org/How_do_you_recover_or_reset_your_admin_password%3F>

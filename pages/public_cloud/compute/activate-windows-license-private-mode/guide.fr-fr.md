@@ -14,7 +14,7 @@ Dans ce cas, vous devez activer la licence manuellement afin d'avoir accès à t
 ## Prérequis
 
 - Posséder un [projet Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project) dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](/links/manager)
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - [Avoir créé un utilisateur OpenStack](/pages/public_cloud/compute/create_and_delete_a_user)
 
 Nous vous recommandons de consulter le guide « [Accéder à l’interface Horizon](/pages/public_cloud/compute/introducing_horizon) » pour vous familiariser à Horizon.
@@ -179,6 +179,6 @@ slmgr.vbs -dli
 
 [Découvrez comment corriger la clé d’activation de votre Windows Server](/pages/bare_metal_cloud/dedicated_servers/windows_key).
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

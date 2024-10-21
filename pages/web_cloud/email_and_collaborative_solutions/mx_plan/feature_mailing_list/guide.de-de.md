@@ -1,7 +1,7 @@
 ---
 title: 'Mailinglisten verwalten und nutzen'
 excerpt: 'Erfahren Sie hier, wie Sie Mailinglisten verwenden'
-updated: 2024-08-07
+updated: 2023-08-01
 ---
 
 ## Ziel
@@ -34,18 +34,14 @@ Der Absender (sender) sendet die E-Mail an die Mailingliste. Der Moderator (mode
 
 ## Voraussetzungen
 
-- Sie verfügen über mindestens ein E-Mail-Angebot MX Plan 100 oder ein kompatibles [Webhosting](/links/web/hosting).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+- Sie verfügen über mindestens ein E-Mail-Angebot MX Plan 100 oder ein kompatibles [Webhosting](https://www.ovhcloud.com/de/web-hosting/).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
 ### Ihre Mailingliste erstellen
 
-> [!success]
->
-> Eine Mailingliste verhält sich wie eine E-Mail-Adresse. Es ist nicht möglich, den Namen zu ändern. Um den Namen einer Mailingliste zu ändern, müssen Sie die Liste neu erstellen und die alte löschen.
-
-Um Ihre Mailingliste zu erstellen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und wählen Sie oben die Kategorie `Web Cloud`{.action}.
+Um Ihre Mailingliste zu erstellen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie oben die Kategorie `Web Cloud`{.action}.
 
 Sobald die Verbindung hergestellt ist, klicken Sie auf `E-Mails`{.action} und dann auf den betreffenden Domainnamen. Wechseln Sie zur Registerkarte `Mailinglisten`{.action} Ihres E-Mail-Dienstes.
 
@@ -105,7 +101,7 @@ Das folgende Fenster wird angezeigt:
 
 Es gibt zwei Methoden zum Hinzufügen/Entfernen von Abonnenten:
 
-- Manuelle Eingabe von Adressen durch Klicken auf `E-Mail-Adresse hinzufügen`{.action}.
+- manuelle Eingabe von Adressen durch Klicken auf `E-Mail-Adresse hinzufügen`{.action}.
 - Import einer Textdatei mit einer E-Mail-Adresse pro Zeile durch Klicken auf das Download-Symbol über dem Eingaberahmen.
 
 #### Ihre Abonnentenliste in eine CSV-Datei exportieren

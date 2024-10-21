@@ -1,7 +1,7 @@
 ---
 title: 'Tworzenie baz danych i użytkowników na serwerze bazy danych'
 excerpt: 'Dowiedz się, jak utworzyć bazę danych na serwerze baz danych'
-updated: 2024-08-22
+updated: 2023-02-15
 ---
 
 > [!primary]
@@ -28,11 +28,6 @@ Przejdź do Panelu [klienta OVHcloud](/links/manager){.external}. Kliknij kartę
 Przejdź do karty `Bazy danych`, a następnie `Dodaj bazę danych`{.action}.
 
 ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database.png){.thumbnail}
-
-> [!primary]
->
-> Tworzenie schematów PostgreSQL jest aktualnie niedostępne na serwerach Web Cloud Databases.
->
 
 Wypełnij pola zgodnie z podanymi kryteriami. Możesz utworzyć użytkownika bezpośrednio zaznaczając okienko **"Utwórz użytkownika"**:
 

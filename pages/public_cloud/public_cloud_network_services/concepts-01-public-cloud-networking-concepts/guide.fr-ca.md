@@ -1,7 +1,7 @@
 ---
 title: Concepts - Réseau Public Cloud
 excerpt: "Découvrez quels sont les concepts de base du Public Cloud Networking"
-updated: 2024-08-05
+updated: 2022-11-02
 ---
 
 ## Objectif
@@ -18,9 +18,9 @@ Les réseaux privés du Public Cloud permettent de configurer votre réseau de m
 
 ### Réseaux privés du Public Cloud
 
-Les réseaux privés du Public Cloud sont construits au-dessus d’un [vRack](/links/network/vrack), un service OVHcloud fournissant un réseau privé global pouvant être affecté à un projet Public Cloud.
+Les réseaux privés du Public Cloud sont construits au-dessus d’un [vRack](https://www.ovh.com/ca/fr/solutions/vrack/), un service OVHcloud fournissant un réseau privé global pouvant être affecté à un projet Public Cloud.
 
-Le réseau privé Public Cloud est une ressource régionale qui peut être configurée de deux manières différentes : **mono-région** ou **multi-région**, où le terme « région » désigne les régions de disponibilité du Public Cloud. Retrouvez plus d'informations [sur notre site](/links/public-cloud/regions-pci).
+Le réseau privé Public Cloud est une ressource régionale qui peut être configurée de deux manières différentes : **mono-région** ou **multi-région**, où le terme « région » désigne les régions de disponibilité du Public Cloud. Retrouvez plus d'informations [sur notre site](https://www.ovhcloud.com/fr-ca/public-cloud/regions-availability/).
 
 - En mode **mono-région**, un seul réseau privé est créé (une région sélectionnée), sans possibilité de connectivité inter-région.
 - En mode **multi-région**, un réseau privé est créé dans chaque région sélectionnée. La connectivité entre les régions est rendue possible par la configuration d'un domaine de broadcast unique sur tous les réseaux privés (c'est-à-dire la configuration d'un même vRack, VLAN et sous-réseau sur les réseaux privés dans toutes les régions).
@@ -44,7 +44,7 @@ Le service DHCP de Public Cloud permet la configuration automatique des Floating
 
 ### Réseau vRack OVHcloud
 
-Le vRack OVHcloud est un réseau privé transverse. Il est conçu pour permettre des architectures privées complexes de plusieurs datacenters à l’échelle mondiale, interconnectant différents produits dans différents datacenters répartis dans différentes régions. Pour en savoir plus, rendez-vous sur la page web du [vRack](/links/network/vrack).
+Le vRack OVHcloud est un réseau privé transverse. Il est conçu pour permettre des architectures privées complexes de plusieurs datacenters à l’échelle mondiale, interconnectant différents produits dans différents datacenters répartis dans différentes régions. Pour en savoir plus, rendez-vous sur la page web du [vRack](https://www.ovh.com/ca/fr/solutions/vrack/).
 
 ### Réseau privé Public Cloud vs vRack OVHcloud
 
@@ -68,7 +68,7 @@ L'infrastructure OVHcloud offre de multiples façons d'accéder à Internet ou d
 
 Les instances Public Cloud utilisent des adresses IP publiques qui sont attachées à un port public pour l'accès à Internet. Comme chaque instance est exposée à Internet séparément, la sécurité doit être traitée sur chaque instance.
 
-Ce mode permet tout de même de connecter des instances à des réseaux privés à des fins d'interconnexion.
+Ce mode permet tout de même de connecter des instances à des réseaux privés à des fins d'interconnexion.}
 
 Les adresses IP publiques OVHcloud directement attachées aux instances en mode public **ne sont pas** conçues pour être déplacées vers d'autres instances ou services réseau. Pour une utilisation agnostique de l'infrastructure, la méthode conseillée est d'utiliser une adresse Floating IP qui est liée à votre service mais pas à l'instance spécifique.
 
@@ -107,15 +107,13 @@ Il est important de noter qu’une ressource (instance) reste totalement privée
 > La Gateway ne prend actuellement en charge que les réseaux privés mono-région. Il s'agit du mode de réseau privé recommandé pour les configurations de niveau « production » avec ce service (y compris le Load Balancer public-privé qui nécessite une Gateway). Les autres configurations ne sont pas prises en charge.
 >
 
-> [!primary]
-> L'adresse IP publique utilisée par la Gateway n'est pas une Floating IP : le cycle de vie de cette IP est lié à la durée de vie de la Gateway.
->
-
 #### Load Balancer dans un réseau privé <a name="loadbalancer"></a>
 
 OVHcloud propose un Load Balancer dans le cadre de l'écosystème Public Cloud. Il offre la plus grande flexibilité pour faire évoluer vos applications.
 
 Le Public Cloud Load Balancer reste entièrement privé, il a donc besoin d'un service Gateway pour accéder au réseau public et d'une Floating IP pour l'exposition du service sortant.
+
+![PCI Networking](images/netcon4.png){.thumbnail}
 
 Pour en savoir plus, consultez notre guide [Load Balancer](/pages/public_cloud/public_cloud_network_services/getting-started-01-create-lb-service) .
 
@@ -145,6 +143,6 @@ Apprenez-en plus sur les Additional IP et Floating IP sur la [page concept dédi
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

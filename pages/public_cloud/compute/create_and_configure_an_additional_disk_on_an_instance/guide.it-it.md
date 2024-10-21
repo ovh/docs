@@ -22,7 +22,7 @@ Ciò può essere utile nei seguenti casi:
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - Disporre di un'istanza [Public Cloud](https://www.ovhcloud.com/it/public-cloud/){.external} nel proprio account OVHcloud
 - Avere un accesso amministratore (sudo) alla tua istanza via SSH
 
@@ -35,7 +35,7 @@ Ciò può essere utile nei seguenti casi:
 
 ### Associa un nuovo volume
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), accedi alla sezione `Public Cloud`{.action} e seleziona il tuo progetto. Poi apri `Block Storage`{.action} nel menu a sinistra.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), accedi alla sezione `Public Cloud`{.action} e seleziona il tuo progetto. Poi apri `Block Storage`{.action} nel menu a sinistra.
 
 In questa sezione clicca sul pulsante `Crea un volume`{.action}.
 
@@ -70,7 +70,7 @@ Gli esempi che seguono presuppongono che tu sia connesso come utente con autoriz
 
 #### Con Linux
 
-Apri una [connessione SSH alla tua istanza](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) e utilizza il comando qui sotto per visualizzare i dischi associati.
+Apri una [connessione SSH alla tua istanza](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance) e utilizza il comando qui sotto per visualizzare i dischi associati.
 
 ```bash
 lsblk

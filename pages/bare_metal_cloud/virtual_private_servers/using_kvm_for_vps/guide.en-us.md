@@ -13,7 +13,7 @@ The KVM console allows you to connect directly to your VPS without the need to u
 ## Requirements
 
 - A [Virtual Private Server](https://www.ovhcloud.com/en/vps/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 
 ## Instructions
 
@@ -21,13 +21,13 @@ The KVM console allows you to connect directly to your VPS without the need to u
 
 #### With a current VPS range
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and select your server under `Virtual Private Servers`{.action}. In this section, click on `...`{.action} next to the name of your VPS in the "Your VPS" box.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), go to the `Bare Metal Cloud`{.action} section and select your server under `Virtual Private Servers`{.action}. In this section, click on `...`{.action} next to the name of your VPS in the "Your VPS" box.
 
 ![Open KVM](images/kvm-new1.png){.thumbnail}
 
 #### With older VPS ranges
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and select your server under `Virtual Private Servers`{.action}. In this section, click on the shortcut link labelled `KVM`{.action}.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), go to the `Bare Metal Cloud`{.action} section and select your server under `Virtual Private Servers`{.action}. In this section, click on the shortcut link labelled `KVM`{.action}.
 
 ![Click on the KVM button](images/kvm-new2.png){.thumbnail}
 
@@ -150,4 +150,4 @@ If problems arise with the KVM, here is the recommended API for accessing the KV
 
 ## Go further
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

@@ -22,9 +22,9 @@ Vous souhaitez migrer vos adresses e-mail présentes sur une plateforme Exchange
 
 ## Prérequis
 
-- Disposer d'une plateforme **«source»** avec des comptes [Exchange](/links/web/emails-hosted-exchange)  configurés.
-- Disposer d'une plateforme de **«destination»** avec des comptes [Exchange](/links/web/emails-hosted-exchange) ou MX Plan (via l'offre MX Plan ou incluse dans une offre d'[hébergement web OVHcloud](/links/web/hosting)). Cette plateforme doit disposer de comptes non configurés ou disponibles pour accueillir les adresses e-mail qui doivent être migrées.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+- Disposer d'une plateforme **«source»** avec des comptes [Exchange](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/){.external}  configurés.
+- Disposer d'une plateforme de **«destination»** avec des comptes [Exchange](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/){.external} ou MX Plan (via l'offre MX Plan ou incluse dans une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}). Cette plateforme doit disposer de comptes non configurés ou disponibles pour accueillir les adresses e-mail qui doivent être migrées.
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 ## En pratique
 
@@ -87,7 +87,7 @@ Pour plus d'information sur OMM, consultez notre guide [Migrer des comptes e-mai
 
 Le délai de migration dépend de la quantité de données à migrer vers votre nouveau compte. Celui-ci peut varier de quelques minutes à plusieurs heures.
 
-Vérifiez, après la migration, que vous retrouvez tous vos éléments en vous connectant au webmail à l'adresse [Webmail](/links/web/email).
+Vérifiez, après la migration, que vous retrouvez tous vos éléments en vous connectant au webmail à l'adresse <https://www.ovh.com/ca/fr/mail/>.
 
 Une fois la migration effectuée, vous pouvez conserver ou supprimer le compte d'origine avec le nom provisoire.
 
@@ -101,7 +101,7 @@ Pour cela, sélectionnez le service ou Exchange concerné, puis rendez-vous sur 
 
 > [!primary]
 >
-> Si vous venez juste de réaliser la migration ou de modifier un enregistrement DNS de votre domaine, il se peut que l’affichage dans l’[espace client OVHcloud](/links/manager) nécessite quelques heures pour se mettre à jour.
+> Si vous venez juste de réaliser la migration ou de modifier un enregistrement DNS de votre domaine, il se peut que l’affichage dans l’[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} nécessite quelques heures pour se mettre à jour.
 >
 
 Pour modifier la configuration, cliquez sur la pastille rouge et réalisez la manipulation demandée. Cette dernière nécessite un temps de propagation de 4 à 24 heures maximum avant d’être pleinement effective.
@@ -110,20 +110,20 @@ Pour modifier la configuration, cliquez sur la pastille rouge et réalisez la ma
 
 ### Utiliser vos adresses e-mail migrées
 
-Il ne vous reste plus qu’à utiliser vos adresses e-mail migrées. Pour cela, OVHcloud met à disposition un applicatif en ligne (_web app_) accessible à l’adresse [Webmail](/links/web/email). Vous devez y renseigner les identifiants relatifs à votre adresse e-mail.
+Il ne vous reste plus qu’à utiliser vos adresses e-mail migrées. Pour cela, OVHcloud met à disposition un applicatif en ligne (_web app_) accessible à l’adresse <https://www.ovh.com/ca/fr/mail/>. Vous devez y renseigner les identifiants relatifs à votre adresse e-mail.
 
 Si vous avez configuré l'un des comptes migrés sur un client de messagerie (exemple: Outlook, Thunderbird), vous devez de nouveau le paramétrer. Les informations de connexion au serveur OVHcloud ont changé suite à la migration.
-<br>Pour vous aider dans vos manipulations, consultez notre documentation depuis les sections des guides consacrées à [Hosted Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange). Si vous n'êtes pas en mesure de reconfigurer le compte dans l'immédiat, l'accès via l'applicatif en ligne est toujours possible.
+<br>Pour vous aider dans vos manipulations, consultez notre documentation depuis les sections des guides consacrées à [Hosted Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange){.external}. Si vous n'êtes pas en mesure de reconfigurer le compte dans l'immédiat, l'accès via l'applicatif en ligne est toujours possible.
 
 > [!primary]
 >
-> Vous pouvez également migrer manuellement des adresses e-mail vers OVHcloud en utilisant notre outil [OVH Mail Migrator (OMM)](https://omm.ovh.net/). Pour cela, vous devez être en possession des informations (utilisateur, mot de passe, serveurs) de l'e-mail source et de l'e-mail de destination.
+> Vous pouvez également migrer manuellement des adresses e-mail vers OVHcloud en utilisant notre outil [OVH Mail Migrator (OMM)](https://omm.ovh.net/){.external}. Pour cela, vous devez être en possession des informations (utilisateur, mot de passe, serveurs) de l'e-mail source et de l'e-mail de destination.
 >
 
 ## Aller plus loin
 
-[Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts).
+[Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts){.external}.
 
-[Guides Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
+[Guides Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange){.external}.
 
-Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com).
+Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.

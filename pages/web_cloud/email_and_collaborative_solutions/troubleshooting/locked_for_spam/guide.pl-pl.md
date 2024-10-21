@@ -17,7 +17,7 @@ Jeśli Twój adres e-mail jest zablokowany z powodu SPAM-u, oznacza to, że pode
 
 ## W praktyce <a name="instructions"></a>
 
-Zanim przejdziesz dalej i jeśli blokada dotyczy konta e-mail typu MX Plan, podaj wersję, którą posiadasz, aby śledzić prawidłowy proces odblokowania. Sprawdź, jak odróżnić dwie wersje, korzystając z poniższej tabeli.
+Zanim przejdziesz dalej i jeśli blokada dotyczy konta e-mail typu MXplan, podaj wersję, którą posiadasz, aby śledzić prawidłowy proces odblokowania. Sprawdź, jak odróżnić dwie wersje, korzystając z poniższej tabeli.
 
 |Poprzednia wersja usługi MX Plan|Nowa wersja usługi MX Plan|
 |---|---|
@@ -129,8 +129,8 @@ Nagłówki te pozwolą określić drogę i pochodzenie wysłanych wiadomości.
 
 ## Sprawdź również <a name="go-further"></a>
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

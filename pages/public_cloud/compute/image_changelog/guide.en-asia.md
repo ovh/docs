@@ -163,4 +163,4 @@ Changelog:
 
 ## Go further
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

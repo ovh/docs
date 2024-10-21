@@ -1,22 +1,8 @@
 ---
 title: 'Den OVHcloud Kunden-Account mit der Zwei-Faktor-Authentifizierung absichern'
 excerpt: 'Erfahren Sie hier, wie Sie die Sicherheit Ihres Accounts bei OVHcloud steigern können, indem Sie die Zwei-Faktor-Authentifizierung (2FA) aktivieren'
-updated: 2024-08-22
+updated: 2024-03-18
 ---
-
-<style>
-details>summary {
-    color:rgb(33, 153, 232) !important;
-    cursor: pointer;
-}
-details>summary::before {
-    content:'\25B6';
-    padding-right:1ch;
-}
-details[open]>summary::before {
-    content:'\25BC';
-}
-</style>
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
@@ -39,7 +25,7 @@ Diese Anleitung gliedert sich folgendermaßen:
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben ein Mobiltelefon (für die Methode per SMS), ein Smartphone oder Tablet (für die Methode über mobile Applikation) oder einen “Universal Second Factor (U2F)” Sicherheitsschlüssel.
 - Sie haben die [Empfehlungen zur Verwaltung des Zugangspassworts für Ihren Kunden-Account](/pages/account_and_service_management/account_information/manage-ovh-password) zur Kenntnis genommen.
 
@@ -90,7 +76,7 @@ Wir bieten vier verschiedene Methoden an (klicken Sie jeweils auf die Tabs, um d
 
 ### Schritt 1: Aktivieren Sie Ihre erste Methode der Zwei-Faktor-Authentifizierung <a name="enabling-2fa"></a>
 
-Verbinden Sie sich mit dem [OVHcloud Kundencenter](/links/manager){.external}, klicken Sie oben rechts auf Ihren Namen (1) und dann auf Ihre Initialen (2). Klicken Sie dann auf `Sicherheit`{.action} (3) und schließlich auf `Die Zwei-Faktor-Authentifizierung aktivieren`{.action} (4).
+Verbinden Sie sich mit dem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}, klicken Sie oben rechts auf Ihren Namen (1) und dann auf Ihre Initialen (2). Klicken Sie dann auf `Sicherheit`{.action} (3) und schließlich auf `Die Zwei-Faktor-Authentifizierung aktivieren`{.action} (4).
 
 ![Enabling 2FA](images/2024-001-enabling-2fa.png){.thumbnail}
 
@@ -156,7 +142,7 @@ Sie können die Notfall-Codes über Ihr Kundencenter neu generieren oder lösche
 
 ### Schritt 3 - Loggen Sie sich mit der Zwei-Faktor-Authentifizierung in Ihr OVHcloud Kundencenter ein <a name="login-2fa"></a>
 
-Gehen Sie auf die [Authentifizierungsseite im OVHcloud Kundencenter](/links/manager){.external} und geben Sie Ihre Kundenkennung (oder Ihre Haupt-E-Mail-Adresse) und Ihr Passwort ein.
+Gehen Sie auf die [Authentifizierungsseite im OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} und geben Sie Ihre Kundenkennung (oder Ihre Haupt-E-Mail-Adresse) und Ihr Passwort ein.
 
 Im Anmeldebildschirm wird die zuletzt verwendete oder aufgefüllte Methode der Zwei-Faktor-Authentifizierung angezeigt. Wenn Sie eine andere Methode verwenden möchten, klicken Sie auf den Button `Eine andere Methode verwenden`{.action}.
 
@@ -226,43 +212,22 @@ Wenn alle Ihre Geräte gelöscht sind, deaktivieren Sie die Notfall-Codes, indem
 
 #### Wenn Sie keinen Zugriff mehr auf Ihr OVHcloud Kundencenter haben <a name="2FA-deletion"></a>
 
-Wenn Sie über keine gültigen Geräte oder Notfall-Codes mehr verfügen, müssen Sie die Deaktivierung der Zwei-Faktor-Authentifizierung anfordern. Sie benötigen hierzu die für Ihren OVHcloud Kunden-Account erforderlichen Identitätsnachweise.
+Wenn keinen Zugriff auf validierte Geräte und auch keine gültigen Notfall-Codes mehr haben, können Sie die Zwei-Faktor-Authentifizierung deaktivieren, indem Sie unsere Support-Teams kontaktieren.
 
-Gehen Sie zunächst auf [die Authentifizierungsseite des OVHcloud Kundencenters](/links/manager).
-
-Geben Sie Ihre OVHcloud Kundenkennung und Ihr Passwort ein, um auf den Schritt der Zwei-Faktor-Authentifizierung zuzugreifen. Klicken Sie nun auf den Button `Ich habe keinen Zugang zu meinem Mobiltelefon, zum U2F-Sicherheitsschlüssel oder zu meinen Ersatzcodes mehr`{.action}.<br>
-Wenn diese Schaltfläche nicht angezeigt wird, klicken Sie auf die Schaltfläche `Andere Methode testen`{.action} und dann auf `Ich habe keinen Zugang zu meinem Mobiltelefon, zum U2F-Sicherheitsschlüssel oder zu meinen Ersatzcodes mehr`{.action}.
-
-Über dieses Interface können Sie die notwendigen Dokumente hochladen und an unsere Teams senden, um die Zwei-Faktor-Authentifizierung für Ihren Account zu deaktivieren.
-
-> [!warning]
->
-> - Achtung, stellen Sie bitte sicher, dass alle Dokumente korrekt und lesbar sind, bevor Sie sie versenden.
-> - **Akzeptierte Formate**: jpg, jpeg, pdf, png. Die maximale Dateigröße für jede Datei beträgt 10 MB.
-> - Bei ungültigen Dokumenten wird dieser Vorgang abgebrochen und Sie müssen einen neuen durchführen.
-
-Innerhalb von 72 Stunden erhalten Sie eine Bestätigung der Deaktivierung der Zwei-Faktor-Authentifizierung per E-Mail.
-
-/// details | Liste der Belege
+Bevor Sie uns kontaktieren, halten Sie folgende Unterlagen bereit:
 
 |OVHcloud Account-Typ|Vorzulegende Nachweise|
 |---|---|
 |Privatperson|- Beidseitige Kopie eines Identitätsnachweises (Personalausweis, Führerschein, Reisepass), ausgestellt auf den Inhaber des OVHcloud Kunden-Accounts|
 |Unternehmen|- Identitätsnachweis (Personalausweis, Führerschein, Reisepass) der zur Vetretung des Unternehmens berechtigten Person (sensible Daten können unkenntlich gemacht werden, nur der vollständige Name und das Ablaufdatum müssen sichtbar sein)<br><br>- Handelsregisterauszug des Unternehmens|
 
-///
-
 Kontaktieren Sie den OVHcloud Support unter +49 681 906730, sobald Ihre entsprechenden Nachweise vollständig vorliegen.
 
 > [!warning]
 >
-> Die Dokumente müssen uns von einer E-Mail-Adresse aus übermittelt werden, die in Ihrem OVHcloud Kunden-Account hinterlegt ist.
+>  Die Dokumente müssen uns von einer E-Mail-Adresse aus übermittelt werden, die in Ihrem OVHcloud Kunden-Account hinterlegt ist.
 
 Nach Überprüfung Ihrer Unterlagen kann ein Support-Mitarbeiter die Zwei-Faktor-Authentifizierung manuell aus Ihrem OVHcloud Kunden-Account entfernen.
-
-> [!success]
->
-> Aus Sicherheitsgründen empfehlen wir Ihnen, die Zwei-Faktor-Authentifizierung so schnell wie möglich wieder zu aktivieren, sobald der Zugriff auf Ihren Account wiederhergestellt wurde.
 
 ## Weiterführende Informationen
 

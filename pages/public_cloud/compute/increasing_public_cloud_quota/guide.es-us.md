@@ -18,7 +18,7 @@ Si desea crear más, es necesario aumentar el límite.
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 - [Disponer de una forma de pago válida](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) en el área de cliente de OVHcloud.
 
 ## Procedimiento
@@ -33,7 +33,7 @@ Puede aumentar la cuota de recursos de forma manual o automática.
 
 Este procedimiento le permite solicitar manualmente un aumento de cuota y validarlo con un pago inicial (crédito Public Cloud).
 
-Conéctese a su [área de cliente de OVHcloud](/links/manager), acceda a la sección `Public Cloud`{.action} y seleccione su proyecto de Public Cloud. En el apartado `Gestión del proyecto`, haga clic en `Quota and Regions`{.action}.
+Conéctese a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Public Cloud`{.action} y seleccione su proyecto de Public Cloud. En el apartado `Gestión del proyecto`, haga clic en `Quota and Regions`{.action}.
 
 ![access quota](images/raisepciquota1-2023.png){.thumbnail}
 
@@ -71,7 +71,7 @@ Esta opción le permite solicitar un aumento automático y gradual de su cuota d
 
 Este no es un proceso instantáneo y la cuota de recursos aumenta a lo largo del tiempo.
 
-Conéctese a su [área de cliente de OVHcloud](/links/manager), acceda a la sección `Public Cloud`{.action} y seleccione su proyecto de Public Cloud. En el apartado `Gestión del proyecto`, haga clic en `Quota and Regions`{.action}.
+Conéctese a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Public Cloud`{.action} y seleccione su proyecto de Public Cloud. En el apartado `Gestión del proyecto`, haga clic en `Quota and Regions`{.action}.
 
 En la barra lateral izquierda, haga clic en `Cuota y regiones`{.action}.
 

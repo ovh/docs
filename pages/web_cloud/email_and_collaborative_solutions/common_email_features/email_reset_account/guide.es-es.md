@@ -20,15 +20,15 @@ Quiere:
 
 ## Requisitos
 
-- Disponer de una solución de correo electrónico de OVHcloud previamente configurada (**MX Plan**, incluida en nuestros [planes de hosting](/links/web/hosting), incluida en un [Alojamiento gratuito 100M](/links/web/domains-free-hosting) o contratada por separado como solución autónoma, como [**Hosted Exchange**](/links/web/emails-hosted-exchange) o [**Email Pro**](/links/web/email-pro)).
-- Estar conectado al [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action}.
+- Disponer de una solución de correo electrónico de OVHcloud previamente configurada (**MX Plan**, incluida en nuestros [planes de hosting](https://www.ovhcloud.com/es-es/web-hosting/), incluida en un [Alojamiento gratuito 100M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/) o contratada por separado como solución autónoma, como [**Hosted Exchange**](https://www.ovhcloud.com/es-es/emails/hosted-exchange/) o [**Email Pro**](https://www.ovhcloud.com/es-es/emails/email-pro/)).
+- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Web Cloud`{.action}.
 - Disponer de la información de conexión a las direcciones de correo electrónico correspondientes.
 
 ## En la práctica <a name="instructions"></a>
 
 OVHcloud ofrece 3 soluciones de correo electrónico. El concepto de eliminación de cuenta es diferente según su solución.
 
-- **Email MX Plan**: esta solución se vende en forma de pack de varias cuentas de correo. Cuando elimina una cuenta, libera una ubicación en su pack. 
+- **Email MXplan**: esta solución se vende en forma de pack de varias cuentas de correo. Cuando elimina una cuenta, libera una ubicación en su pack. 
 - **Email Pro** y **Hosted Exchange**: estos dos productos son a la carta, usted contrata una suscripción individual por cuenta e-mail. Si quiere eliminar una dirección de correo, deberá **restaurar** la cuenta de correo. Una vez que haya restaurado la cuenta de correo, puede reutilizar la cuenta para crear una nueva dirección de correo. También puede [dar de baja la suscripción](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#eliminar-cuentas) de esta cuenta si desea eliminarla definitivamente.
 
 ### Eliminar o restaurar una cuenta de correo
@@ -38,14 +38,14 @@ Seleccione la pestaña correspondiente a su servicio de correo:
 > [!tabs]
 > **MX Plan histórico**
 >>
->> Para comprobar si su MX Plan es una versión histórica o nueva, consulte el cuadro de la sección "[Identifique su solución MX Plan](#whichmxplan)" de esta guía.<br><br>
+>> Para comprobar si su MXplan es una versión histórica o nueva, consulte el cuadro de la sección "[Identifique su solución MXplan](#whichmxplan)" de esta guía.<br><br>
 >>
 >> Haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente. Abra la pestaña `Cuentas de correo`{.action}. Se abrirá una ventana en la que se mostrarán las cuentas de correo existentes. Haga clic en el botón `...`{.action} situado a la derecha de la cuenta que desea modificar y, seguidamente, en `Eliminar la cuenta`{.action}.<br><br>
 >>![Correo electrónico](images/email-mxplan-legacy-reset.png){.thumbnail}<br>
 >>
-> **Emails MX Plan nueva versión**
+> **Emails MXplan nueva versión**
 >>
->> Para comprobar si su MX Plan es una versión histórica o nueva, consulte el cuadro de la sección "[Identifique su solución MX Plan](#whichmxplan)" de esta guía.<br><br>
+>> Para comprobar si su MXplan es una versión histórica o nueva, consulte el cuadro de la sección "[Identifique su solución MXplan](#whichmxplan)" de esta guía.<br><br>
 >>
 >> Haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente. Abra la pestaña `Cuentas de correo`{.action}. Se abrirá una ventana en la que se mostrarán las cuentas de correo existentes. Haga clic en el botón `...`{.action} situado al final de la línea correspondiente a la cuenta que quiera modificar y seleccione `Restaurar la cuenta`{.action}.<br><br>
 >>![Correo electrónico](images/email-mxplan-new-reset.png){.thumbnail}<br>
@@ -63,9 +63,9 @@ Seleccione la pestaña correspondiente a su servicio de correo:
 >>![Correo electrónico](images/exchange-reset.png){.thumbnail}<br>
 >>
 
-#### Identifique su solución MX Plan <a name="whichmxplan"></a>
+#### Identifique su solución MXplan <a name="whichmxplan"></a>
 
-En la siguiente tabla encontrará la información necesaria para identificar su solución MX Plan.
+En la siguiente tabla encontrará la información necesaria para identificar su solución MXplan.
 
 |Versión histórica de la solución MX Plan|Nueva versión de la solución MX Plan|
 |---|---|
@@ -74,7 +74,7 @@ En la siguiente tabla encontrará la información necesaria para identificar su 
 
 ## Más información
 
-[Primeros pasos con la solución MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
+[Primeros pasos con la solución MXplan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 
 [Primeros pasos con la solución Email Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
 
@@ -84,6 +84,6 @@ En la siguiente tabla encontrará la información necesaria para identificar su 
 
 [Gestionar la facturación de las cuentas Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange)
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte](/links/support).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte](https://www.ovhcloud.com/es-es/support-levels/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

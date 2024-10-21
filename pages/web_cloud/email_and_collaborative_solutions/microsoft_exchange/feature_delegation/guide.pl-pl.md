@@ -41,7 +41,7 @@ Po określeniu konta, dla którego będziesz nadawał uprawnienia, wybraniu praw
 
 ### Etap 1: nadanie uprawnień
 
-Aby rozpocząć operację, zaloguj się do [Panelu klienta](/links/manager):
+Aby rozpocząć operację, zaloguj się do [Panelu klienta](/links/manager){.external}:
 
 - **Exchange**: Kliknij `Microsoft`{.action}, po czym kliknij `Exchange`{.action}.
 - **Email Pro**: Kliknij `Email Pro`{.action}.
@@ -66,11 +66,11 @@ Teraz możesz zacząć korzystać z uprawnienia. Upewnij się, że posiadasz dan
 
 Sposób postępowania jest inny w zależności od prawa lub praw, jakie przydzieliłeś oraz programu lub interfejsu, którego będziesz używał do dostępu do konta e-mail. Kontynuuj lekturę niniejszego przewodnika w sekcji, która dotyczy prawa lub praw, które Cię dotyczą.
 
-- [Korzystanie z „prawa dostępu”](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#21-korzystanie-z-prawa-dostepu)
+- [Korzystanie z „prawa dostępu”](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#21-korzystanie-z-prawa-dostepu){.external}
 
-- [Korzystanie z „prawa do wysyłki poczty”](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#22-korzystanie-z-prawa-do-wysylki-poczty)
+- [Korzystanie z „prawa do wysyłki poczty”](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#22-korzystanie-z-prawa-do-wysylki-poczty){.external}
 
-- [Korzystanie z „prawa do wysyłki poczty w imieniu”](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#23-korzystanie-z-prawa-do-wysylki-poczty-w-imieniu)
+- [Korzystanie z „prawa do wysyłki poczty w imieniu”](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#23-korzystanie-z-prawa-do-wysylki-poczty-w-imieniu){.external}
 
 > [!warning]
 >
@@ -81,7 +81,7 @@ Sposób postępowania jest inny w zależności od prawa lub praw, jakie przydzie
 
 - **Przy użyciu webmail Outlook Web App (OWA)**
 
-Kliknij link [Webmail](/links/web/email) i wprowadź dane dostępowe do konta e-mail, dla którego udzielone zastało dane prawo. Po zalogowaniu kliknij prawym przyciskiem myszy nazwę konta w menu po lewej stronie, następnie zaznacz `Dodaj współdzielony katalog`{.action}.
+Kliknij link <https://www.ovh.pl/mail/> i wprowadź dane dostępowe do konta e-mail, dla którego udzielone zastało dane prawo. Po zalogowaniu kliknij prawym przyciskiem myszy nazwę konta w menu po lewej stronie, następnie zaznacz `Dodaj współdzielony katalog`{.action}.
 
 W oknie, które się wyświetla wskaż nazwę konta, którego dotyczy przyznane prawo, a następnie kliknij `Dodaj`{.action}. Konto wyświetla się wówczas w menu po lewej stronie. Możesz przejrzeć jego zawartość. 
 
@@ -105,7 +105,7 @@ Teraz kliknij `Ustawienia dodatkowe`{.action}. W nowym oknie przejdź do zakład
 
 - **Przy użyciu webmail Outlook Web App (OWA)**
 
-Kliknij link [Webmail](/links/web/email) i wprowadź dane dostępowe do konta e-mail, dla którego udzielone zastało dane prawo. Po zalogowaniu się kliknij przycisk `Nowa wiadomość`{.action} i rozpocznij pisanie e-maila.
+Kliknij link <https://www.ovh.pl/mail/> i wprowadź dane dostępowe do konta e-mail, dla którego udzielone zastało dane prawo. Po zalogowaniu się kliknij przycisk `Nowa wiadomość`{.action} i rozpocznij pisanie e-maila.
 
 W obszarze, który się wyświetli kliknij przycisk z trzema kropkami, po czym kliknij `Wyświetl pole „Od”`{.action}. Teraz kliknij przycisk `Od`{.action} i zaznacz konto (do którego posiadasz przydzielone prawo), które wyświetli się jako nadawca . Jeśli żądane konto się nie wyświetla, usuń to, które zostało wprowadzone i wpisz odpowiednie. 
 
@@ -131,7 +131,7 @@ Teraz możesz zredagować wiadomość e-mail i wysłać ją.
 
 - **Przy użyciu webmail Outlook Web App (OWA)**
 
-Kliknij link [Webmail](/links/web/email) i wprowadź dane dostępowe do konta e-mail, dla którego udzielone zastało dane prawo. Po zalogowaniu się kliknij przycisk `Nowa wiadomość`{.action} i rozpocznij pisanie e-maila.
+Kliknij link <https://www.ovh.pl/mail/> i wprowadź dane dostępowe do konta e-mail, dla którego udzielone zastało dane prawo. Po zalogowaniu się kliknij przycisk `Nowa wiadomość`{.action} i rozpocznij pisanie e-maila.
 
 W obszarze, który się wyświetli kliknij przycisk z trzema kropkami, po czym kliknij `Wyświetl pole „Od”`{.action} Teraz kliknij przycisk `Od`{.action} i zaznacz konto (do którego posiadasz przydzielone prawo), które wyświetli się jako nadawca . Jeśli żądane konto się nie wyświetla, usuń to, które zostało wprowadzone i wpisz odpowiednie. 
 

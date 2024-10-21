@@ -1,11 +1,8 @@
 ---
 title: 'Maîtriser et sécuriser votre serveur dédié ESXi dès son premier démarrage'
 excerpt: 'Découvrez les différents moyens vous permettant de sécuriser efficacement votre serveur dédié ESXi'
-updated: 2024-09-13
+updated: 2023-03-07
 ---
-
-> [!warning]
-> L'hyperviseur ESXi n'est plus supporté par OVHcloud. Retrouvez plus d'informations sur [cette page dédiée](/pages/bare_metal_cloud/dedicated_servers/esxi-end-of-support).
 
 ## Objectif
 
@@ -40,7 +37,7 @@ Nous nous appuierons pour cela sur les fonctions embarquées que propose VMware,
 
 ## Prérequis
 
-- Être connecté à l'[espace client OVHcloud](/links/manager){.external}.
+- Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 - Posséder un serveur dédié avec la solution ESXi déployée.
 - Avoir souscrit à une offre compatible avec notre fonctionnalité [Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network) si vous souhaitez l'utiliser pour effectuer le filtrage.
 
@@ -297,4 +294,4 @@ cat /path-to-my-key/key-ecdsa.pub | ssh root@esxi-host-ip 'cat >> /etc/ssh/keys-
 
 Vous pourrez trouver encore plus de détails sur les bonnes pratiques de sécurité dans [ce guide](https://core.vmware.com/security-configuration-guide) proposé par VMware.
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

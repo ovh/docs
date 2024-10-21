@@ -12,8 +12,8 @@ Every OVHcloud email account has a dedicated storage space. By managing your sto
 
 ## Requirements
 
-- a pre-configured OVHcloud email solution (**MX Plan**, available as part of our [web hosting plans](/links/web/hosting) package or ordered separately as a standalone solution, such as [**Hosted Exchange**](/links/web/emails-hosted-exchange));
-- access to the [OVHcloud Control Panel](/links/manager), and `Web Cloud`{.action} section ;
+- a pre-configured OVHcloud email solution (**MX Plan**, available as part of our [web hosting plans](https://www.ovhcloud.com/en-ca/web-hosting/) package or ordered separately as a standalone solution, such as [**Hosted Exchange**](https://www.ovhcloud.com/en-ca/emails/hosted-exchange/));
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), and `Web Cloud`{.action} section ;
 - access to the email addresses concerned.
 
 ## Instructions  <a name="instructions"></a>
@@ -32,7 +32,7 @@ You can do this via the OVHcloud Control Panel if you are managing the email ser
 
 #### From the Control Panel <a name="quotacontrolpanel"></a>
 
-In the [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, then follow the instructions for your solution:
+In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the `Web Cloud`{.action} section, then follow the instructions for your solution:
 
 > [!tabs]
 > **Emails (MXplan)**
@@ -48,7 +48,7 @@ In the [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} 
 
 #### From webmail <a name="quotawebmail"></a>
 
-To log in to webmail, go to the page [Webmail](/links/web/email) and enter the login information for your email account. Then select the webmail address for your solution below:
+To log in to webmail, go to the page <https://www.ovhcloud.com/en-ca/mail/> and enter the login information for your email account. Then select the webmail address for your solution below:
 
 Click the button on the <i class="icons-gear-concept icons-masterbrand-blue"></i>top right of your screen, then click `Options`{.action}. Click `My Account`{.action} in the `General`{.action} section in the left-hand column. You can view your account’s current quota in the lower right-hand corner of the form.
 
@@ -78,7 +78,7 @@ You can increase the storage capacity of your email account, if it has not reach
 > [!tabs]
 > **Emails (MXplan)**
 >>
->> The capacity of an MX Plan account can range from 2.5 MB to 5 GB. If it is full and its capacity is less than 5 GB, you can modify its capacity via the [OVHcloud Control Panel](/links/manager).<br>
+>> The capacity of an MXplan account can range from 2.5 MB to 5 GB. If it is full and its capacity is less than 5 GB, you can modify its capacity via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).<br>
 >> In the `Email accounts`{.action} tab, click the button to the right `...`{.action}of the account you want to change, and then click `Edit`{.action}.
 >> From the `Quota`{.action} box, select the size that suits you, click `Next`{.action}, then `Confirm`{.action}.<br><br>
 >> ![email](images/email-quota-more01.png){.thumbnail}<br>
@@ -116,11 +116,11 @@ Below is a non-exhaustive list of configuration guides for email clients using:
 > [!tabs]
 > **Emails (MXplan)**
 >>
->> Configuring an MX Plan account on **Windows**:<br><br>
+>> Configuring an MXplan account on **Windows**:<br><br>
 >> - [Mail on Windows 10](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10) (included with Windows)<br>
->> - [Outlook for MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)
+>> - [Outlook for Mxplan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)
 >> - [Thunderbird](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_thunderbird_windows) (free)<br><br>
->> Configuring an MX Plan account on **macOS**:<br><br>
+>> Configuring an MXplan account on **macOS**:<br><br>
 >> - [Mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_mail_macos) (included with macOS)<br>
 >> - [Outlook](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac)<br>
 >> - [Thunderbird](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_thunderbird_mac) (free)<br>
@@ -164,7 +164,7 @@ Select the current solution for your email account from the menu below:
 > [!tabs]
 > **Emails (MXplan)**
 >>
->> If your email account already has a maximum capacity of 5 GB, you can opt for a migration to a 50 GB [**Hosted Exchange** offer](/links/web/emails-hosted-exchange). To do this, please order the solution that suits you, and follow our guide on [Migrating an MX Plan email address to an Exchange account](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
+>> If your email account already has a maximum capacity of 5 GB, you can opt for a migration to a 50 GB [**Hosted Exchange** offer](https://www.ovhcloud.com/en-ca/emails/hosted-exchange/). To do this, please order the solution that suits you, and follow our guide on [Migrating an MX Plan email address to an Exchange account](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
 >>
 > **Exchange**
 >>
@@ -181,6 +181,6 @@ Select the current solution for your email account from the menu below:
 
 [Migrate your email addresses from one OVHcloud email platform to another](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_platform)
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ca/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.

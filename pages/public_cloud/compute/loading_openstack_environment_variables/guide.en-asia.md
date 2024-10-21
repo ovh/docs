@@ -10,7 +10,7 @@ By setting OpenStack environment variables on your desktop, you can use the Open
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
 - An [OpenStack user account](/pages/public_cloud/compute/create_and_delete_a_user)
 - OpenStack [installed on your system](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
 
@@ -20,7 +20,7 @@ By setting OpenStack environment variables on your desktop, you can use the Open
 
 To retrieve your environment variables, you can download the OpenRC file from the OpenStack user account you have created.
 
-Log in to the [OVHcloud Control Panel](/links/manager) and switch to the `Public Cloud`{.action} section. Select your Public Cloud project at the top of the left-hand sidebar.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and switch to the `Public Cloud`{.action} section. Select your Public Cloud project at the top of the left-hand sidebar.
 
 Click on `Users & Roles`{.action}, then click on the `...`{.action} to the right of your user, then select `Download OpenStack's RC file`{.action}.
 
@@ -75,4 +75,4 @@ set OS_PASSWORD="Your Horizon user password"
 
 To learn how to use OpenStack: [OpenStack documentation](https://docs.openstack.org/){.external}
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

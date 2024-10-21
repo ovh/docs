@@ -1,7 +1,7 @@
 ---
 title: "Jak zarządzać modułem za 1 kliknięciem?"
 excerpt: "Dowiedz się, jak zarządzać modułem za pomocą 1 kliknięcia w Panelu klienta OVHcloud"
-updated: 2024-10-11
+updated: 2022-09-05
 ---
 
 > [!primary]
@@ -54,9 +54,42 @@ Możesz również wyszukać e-mail otrzymany podczas tworzenia modułu w [Panelu
 
 ### Zmiana hasła do modułu <a name="password-change"></a>
 
+Hasło modułu można zmienić w Panelu klienta OVHcloud lub na stronie logowania do panelu administratora Twojej strony WWW.
+W obu przypadkach otrzymasz e-mail z prośbą o zresetowanie hasła.
+
 > [!primary]
 >
-> Zapoznaj się z oficjalną dokumentacją dotyczącą poszczególnych systemów CMS proponowanych w instalacji na hostingu:
+> **Co zrobić, jeśli nie otrzymałeś e-maila z resetem hasła administratora Twojej strony?**
+>
+> Na odpowiedniej skrzynce e-mail sprawdź foldery `Spams`{.action} i `Usunięte`{.action}.
+>
+> Wszystkie e-maile wysłane przez OVHcloud są również dostępne w [Panelu klienta OVHcloud](/links/manager): kliknij Twoją nazwę w prawym górnym rogu ekranu, a następnie w menu kontekstowym po prawej stronie ekranu kliknij `E-maile od działu wsparcia`{.action}.
+>
+> **Okres ważności linków:**
+>
+> - Link resetujący będzie ważny przez 48 godziny po otrzymaniu wiadomości e-mail o zmianie hasła. 
+> - Po kliknięciu na link jest on ważny przez 30 minut.
+>
+
+> [!warning]
+>
+> Zmiana hasła dostępu do interfejsu administracyjnego Twojego CMS w Panelu klienta OVHcloud może zostać wykonana **tylko wtedy, gdy spełnione są następujące warunki**:
+>
+> - CMS został zainstalowany w opcji "Moduł za 1 kliknięciem" podczas składania zamówienia na hosting lub w Panelu klienta OVHcloud.
+> - Użytkownik (nazwa użytkownika, adres e-mail, itp.) nie został zmodyfikowany za pośrednictwem CMS lub bazy danych.
+> - Strona dostępu do interfejsu administracyjnego Twojego CMS nie została zmieniona. W szczególności URL dostępu do interfejsu administracyjnego Twojego CMS nie może zostać zmodyfikowany za pomocą CMS. Nie należy wprowadzać ograniczeń na tej samej stronie.
+> - "Prefiks" tabel znajdujących się w Twojej bazie danych nie został zmieniony bezpośrednio z poziomu CMS lub bazy danych.
+>
+> W przeciwnym razie należy postępować zgodnie z oficjalną dokumentacją używanego przez Ciebie CMS lub skontaktować się bezpośrednio z producentem CMS-a.
+>
+
+Aby zmienić hasło dostępu do interfejsu administracyjnego Twojej strony **w Panelu klienta OVHcloud**, przejdź do [Panelu klienta OVHcloud](/links/manager), kliknij `Web Cloud`{.action}, `Hosting`{.action}, odpowiedni hosting, a następnie zakładkę `Moduły za 1 kliknięciem`{.action}.
+
+Następnie kliknij przycisk `...`{.action} znajdujący się po prawej stronie linii dla Twojego modułu, a następnie `Zmień hasło`{.action}. Kliknij `Zatwierdź`{.action}. W ciągu kilku minut otrzymasz e-mail z linkiem do zresetowania hasła.
+
+> [!primary]
+>
+> Jeśli nie możesz zmienić hasła dostępu do interfejsu administracyjnego Twojego CMS z poziomu Panelu klienta OVHcloud z powodów wymienionych powyżej, zapoznaj się z oficjalną dokumentacją dotyczącą poszczególnych systemów CMS proponowanych w instalacji na hostingu:
 >
 > - WordPress : <https://wordpress.org/support/article/resetting-your-password/>
 > - Joomla! : <https://docs.joomla.org/How_do_you_recover_or_reset_your_admin_password%3F>

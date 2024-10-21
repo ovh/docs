@@ -18,11 +18,11 @@ Para isso, pode delegar noutras contas de cliente da OVHcloud direitos de leitur
 ## Requisitos
 
 - Ter uma instância [Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) na sua conta OVHcloud
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 
 ## Instruções 
 
-Ligue-se à sua [Área de Cliente OVHcloud](/links/manager) e abra o seu projeto `Public Cloud`{.action}. Clique em `Contacts and Rights`{.action} na secção **Project Management**.
+Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e abra o seu projeto `Public Cloud`{.action}. Clique em `Contacts and Rights`{.action} na secção **Project Management**.
 
 Esta página permite-lhe ver os contactos associados ao seu projeto.
 
@@ -57,6 +57,6 @@ Para anular um acesso, clique no botão `...`{.action} e selecione a opção `El
 
 [Parâmetros de acesso e de segurança no Horizon](/pages/public_cloud/compute/access_and_security_in_horizon)
 
-Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](/links/professional-services) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
+Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](https://www.ovhcloud.com/pt/professional-services/) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

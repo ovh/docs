@@ -12,12 +12,12 @@ Dans votre espace client OVHcloud, vous pouvez créer des signatures universelle
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager)
-- Avoir souscrit une offre [Exchange OVHcloud](/links/web/emails-hosted-exchange) ou [Email Pro](/links/web/email-pro)
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Avoir souscrit une offre [Exchange OVHcloud](https://www.ovhcloud.com/fr/emails/hosted-exchange/) ou [Email Pro](https://www.ovhcloud.com/fr/emails/email-pro/)
 
 ## En pratique
 
-Pour effectuer cette manipulation, connectez-vous à votre [espace client OVHcloud](/links/manager):
+Pour effectuer cette manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr):
 
 - **Exchange**: Cliquez sur `Microsoft`{.action}, puis sur `Exchange`{.action}. 
 - **Email Pro**: Cliquez sur `Email Pro`{.action}.

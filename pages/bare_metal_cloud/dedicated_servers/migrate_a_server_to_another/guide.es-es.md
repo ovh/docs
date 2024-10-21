@@ -74,7 +74,7 @@ Para más información, consulte nuestra guía sobre [utilizar Backup Storage en
 > - No es posible migrar una IP desde una cuenta de OVHcloud a una cuenta de So you Start.
 >
 
-Si la reputación de sus direcciones IP es importante, le recomendamos encarecidamente que utilice las direcciones [Additional IP](/links/network/additional-ip), ya que pueden conservarse si se migra.
+Si la reputación de sus direcciones IP es importante, le recomendamos encarecidamente que utilice las direcciones [Additional IP](https://www.ovhcloud.com/es-es/bare-metal/ip/), ya que pueden conservarse si se migra.
 
 Una vez que disponga de estas direcciones Additional IP, solo tiene que moverlas al nuevo servidor.
 Para ello, consulte nuestra guía: [Mover una Additional IP](/pages/bare_metal_cloud/dedicated_servers/move-failover-ip).
@@ -92,8 +92,8 @@ Para más información, consulte nuestra documentación sobre los [dominios y DN
 
 ## Más información
 
-Si desea obtener ayuda para migrar su servidor, póngase en contacto con [nuestra red de partners](/links/partner).
+Si desea obtener ayuda para migrar su servidor, póngase en contacto con [nuestra red de partners](https://partner.ovhcloud.com/es-es/directory/).
 
-Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](/links/professional-services) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
+Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es-es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

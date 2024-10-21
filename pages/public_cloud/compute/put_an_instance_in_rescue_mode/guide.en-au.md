@@ -106,4 +106,4 @@ nova unrescue INSTANCE_ID
 
 [How to replace an SSH key pair on an instance](/pages/public_cloud/compute/replacing_lost_ssh_key)
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

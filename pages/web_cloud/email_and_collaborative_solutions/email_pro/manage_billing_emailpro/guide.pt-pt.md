@@ -16,14 +16,14 @@ A oferta E-mail Pro dispõe de uma gestão flexível no que diz respeito à fatu
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
-- Ter uma [conta E-mail Pro](/links/web/email-pro).
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Ter uma [conta E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/){.external}.
 
 ## Instruções
 
 ### Encomendar contas suplementares
 
-Aceda à Área de [Cliente OVHcloud](/links/manager) e dirija-se à secção `Web Cloud`{.action}. Clique em `E-mail Pro`{.action} e selecione a plataforma E-mail Pro em causa.
+Aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e dirija-se à secção `Web Cloud`{.action}. Clique em `E-mail Pro`{.action} e selecione a plataforma E-mail Pro em causa.
 
 Aceda ao separador `Contas de e-mail`{.action} e clique no botão `Encomendar contas`{.action} no canto superior direito.
 
@@ -53,7 +53,7 @@ Clique em `Seguinte`{.action} para aceder ao resumo das alterações que foram p
 
 ### Eliminar contas
 
-Para eliminar uma conta da plataforma E-mail Pro, primeiro tem de a cancelar passando a configuração da renovação para **Nenhuma**. Para isso, consulte o passo ["Alterar a periodicidade das contas"](#periodicity).
+Para eliminar uma conta da plataforma E-mail Pro, primeiro tem de a cancelar passando a configuração da renovação para **Nenhuma**. Para isso, consulte o passo ["Alterar a periodicidade das contas"](#periodicity){.external}.
 
 Após o cancelamento, a conta será suspensa na data de expiração. Se deseja eliminar o endereço de e-mail alojado pela conta antes da data de expiração, tem de o restaurar.
 

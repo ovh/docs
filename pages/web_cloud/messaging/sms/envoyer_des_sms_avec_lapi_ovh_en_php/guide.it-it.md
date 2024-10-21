@@ -35,7 +35,7 @@ Potrai acquisire nel tuo progetto la directory ./vendor/ovh/ovh/ oltre che il fi
 Per utilizzare l’API SMS sono necessari degli identificativi. Questi identificativi vengono creati una volta per individuare l’applicazione che invierà gli SMS. La loro durata di vita è configurabile.
 
 Crea i tuoi identificativi di Script (tutte le chiavi in una volta) su questa pagina:
-[https://api.ovh.com/createToken](https://eu.api.ovh.com/createToken/index.cgi?GET=/sms/&GET=/sms/*/jobs&POST=/sms/*/jobs) (questo URL permette di avere automaticamente le autorizzazioni per gli step descritti in questa guida).
+[https://api.ovh.com/createToken](https://eu.api.ovh.com/createToken/index.cgi?GET=/sms&GET=/sms/*/jobs&POST=/sms/*/jobs) (questo URL permette di avere automaticamente le autorizzazioni per gli step descritti in questa guida).
 
 ![creazione dei token](images/img_2451.jpg){.thumbnail}
 
@@ -70,7 +70,7 @@ A questo punto è possibile verificare se la connessione all’API è buona visu
 /**
  * Elenca e visualizza in dettaglio ogni account SMS
  * 
- * Fare riferimento all’indirizzo https://eu.api.ovh.com/createToken/index.cgi?GET=/sms/&GET=/sms/*/jobs&POST=/sms/*/jobs
+ * Fare riferimento all’indirizzo https://eu.api.ovh.com/createToken/index.cgi?GET=/sms&GET=/sms/*/jobs&POST=/sms/*/jobs
  * per generare le chiavi di accesso API per:
  *
  * GET /sms
@@ -120,7 +120,7 @@ Per inviare degli SMS, utilizza il metodo POST jobs: [https://api.ovh.com/consol
 /**
  * Invia un SMS poi visualizza l’elenco degli SMS in uscita.
  * 
- * Fare riferimento all’indirizzo https://eu.api.ovh.com/createToken/index.cgi?GET=/sms/&GET=/sms/*/jobs&POST=/sms/*/jobs
+ * Fare riferimento all’indirizzo https://eu.api.ovh.com/createToken/index.cgi?GET=/sms&GET=/sms/*/jobs&POST=/sms/*/jobs
  * per generare le chiavi di accesso API per:
  *
  * GET /sms

@@ -16,7 +16,7 @@ A um determinado momento da vida do seu servidor, pode sofrer uma avaria devido 
 
 ## Requisitos
 
-- Ter um [servidor dedicado](/links/bare-metal/bare-metal).
+- Ter um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/).
 - Reiniciar o servidor em [Modo Rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
 
 ## Instruções

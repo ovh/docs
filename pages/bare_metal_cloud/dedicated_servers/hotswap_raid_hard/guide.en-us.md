@@ -389,4 +389,4 @@ You can also check the progress of the rebuild with the following command :
 
 [Hot Swap - Software RAID](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_soft)
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

@@ -1,7 +1,7 @@
 ---
 title: "Configuring and using Git with an OVHcloud web hosting plan"
 excerpt: "Find out how to configure and use Git with your web hosting plan in the OVHcloud Control Panel"
-updated: 2024-09-12
+updated: 2024-07-25
 ---
 
 ## Objective
@@ -12,13 +12,9 @@ In today’s digital landscape, companies are becoming increasingly dynamic and 
 
 ## Requirements
 
-- An [OVHcloud Web Hosting](/links/web/hosting) plan.
+- You have an [OVHcloud Web Hosting](/links/web/hosting) plan.
 - Access to the [OVHcloud Control Panel](/links/manager), in the Web Cloud section.
-- A [GitHub](https://github.com/){.external} account on which you must be logged in.
-
-> [!primary]
->
-> To date, only the GitHub platform is supported for use with OVHcloud Web Hosting services.
+- You must have an account [GitHub](https://github.com/){.external} and be logged in.
 
 ## Instructions
 
@@ -92,7 +88,7 @@ Define a name for your deposit and fill in the requested information.
 
 Finally, click `Create Repository`{.action}.
 
-Copy the address of your GitHub repository. It must be of the form `https://github.com/<username>/<repository_name.git>`. Return to the Git association form and paste the address of your GitHub repository into the `Deposit`{.action} field. If the address format is not correct, the following error message appears:
+Copy the address of your GitHub repository. It must be of the form `https://github.com/<username>/<repository_name>`{.action}. Return to the Git association form and paste the address of your GitHub repository into the `Deposit`{.action} field. If the address format is not correct, the following error message appears:
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/error-wrong-git-repository-name.png){.thumbnail}
 
@@ -116,7 +112,7 @@ At the bottom of the Git association form, a `Configuring automatic deployment`{
 Before validating the Git association form, make sure that:
 
 - Your SSH key has been saved in your GitHub account.
-- The address of your GitHub repository is correct. It must be of the form `https://github.com/<username>/<repository_name.git>`.
+- The address of your GitHub repository is correct. It must be of the form `https://github.com/<username>/<repository_name>`{.action}.
 - The name of the GitHub repository branch is correct.
 - Your installation directory is empty.
 
@@ -132,7 +128,7 @@ After validating the Git association form, you are redirected to the Multisite t
 
 A green banner will show you that Git is being enabled. Follow the activation of Git by clicking on the `Current tasks`{.action} link.
 
-![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ongoing-tasks/ongoing-task-git-activation.png){.thumbnail}
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/ongoing-task-git-activation.png){.thumbnail}
 
 The status `Running`{.action} indicates that the Git association is in progress. The process may take several minutes. When the task is complete, the status `Enabled`{.action} is displayed.
 
@@ -153,7 +149,7 @@ In the table in the `Multisite`{.action} tab, identify the rows corresponding to
 
 For the exact cause of the error, see the information from the last deployment. In the table, identify the row corresponding to the domain name for which you want to view the logs for the last deployment. To the right of the line, click on the `...`{.action} button, then on `Latest deployment information`{.action}.
 
-![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/latest-deployment-information.png){.thumbnail}
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/info-last-deployment-button.png){.thumbnail}
 
 Once you have identified the error(s), associate Git again. Retry the operation by clicking on the `...`{.action} button on the corresponding line, then on `Link Git`{.action}.
 
@@ -161,7 +157,7 @@ Once you have identified the error(s), associate Git again. Retry the operation 
 
 Log in to your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, click `Hosting plans`{.action}, then choose the name of the web hosting plan concerned. Select the `Multisite`{.action} tab. In the table that appears, identify the row for the domain name that you want to deploy with Git. Ensure that the status of the Git column is `Enabled`{.action}. Click the `...`{.action} button, then `Deploy Git`{.action}.
 
-![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/deploy-git.png){.thumbnail}
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/deploy-git-button.png){.thumbnail}
 
 A confirmation message appears, along with a check box telling you that if there is a conflict during deployment, you can force remote (GitHub repository) changes on your local repository. Tick or untick the box depending on your choice, then click `Confirm`{.action} to validate the deployment.
 
@@ -237,7 +233,7 @@ Once you have deployed your GitHub repository on your web hosting plan, you can 
 
 Log in to your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, click `Hosting plans`{.action}, then choose the name of the web hosting plan concerned. Select the `Multisite`{.action} tab. In the table that appears, identify the row for the domain whose logs you want to view from the last deployment. To the right of the line, click the `...`{.action} button, then `Latest deployment information`{.action}.
 
-![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/latest-deployment-information.png){.thumbnail}
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/informations-last-git-deployment-button.png){.thumbnail}
 
 On this screen, you can view all the information related to the latest deployment.
 

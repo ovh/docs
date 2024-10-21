@@ -1,7 +1,7 @@
 ---
 title: "How to use snapshots on a VPS"
 excerpt: "Find out how to enable and use the Snapshot option in the OVHcloud Control Panel"
-updated: 2024-09-18
+updated: 2024-04-15
 ---
 
 ## Objective
@@ -17,25 +17,20 @@ Before applying backup options, we recommend to consult the [product pages and F
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 - An OVHcloud [VPS service](https://www.ovhcloud.com/en-au/vps/) already set up
 
 ## Instructions
 
-Log in to your [OVHcloud Control Panel](/links/manager), open the "Bare Metal Cloud" section, and select your server under `Virtual Private Servers`{.action}.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), open the "Bare Metal Cloud" section, and select your server under `Virtual Private Servers`{.action}.
 
 ### Step 1: Subscribing to the snapshot option
 
-From the `Home`{.action} tab, scroll down to the box labelled **Summary of options**.  
-If "Snapshot" is already set to "Enabled", go directly to step 2. If "Snapshot" is not yet enabled, click on `...`{.action} next to the option "Snapshot" and in the context menu click on `Order`{.action}.
+From the `Home`{.action} tab, scroll down to the box labelled **Summary of options**. If "Snapshot" is already set to "Enabled", go directly to step 2. If "Snapshot" is not yet enabled, click on `...`{.action} next to the option "Snapshot" and in the context menu click on `Order`{.action}.
 
 ![snapshotvps](images/snapshot_vps_step1b.png){.thumbnail}
 
 In the next step, please take note of the pricing information, then click on `Order`{.action}. You will be guided through the order process and receive a confirmation email.
-
-To cancel the service option, click on the button `...`{.action} next to the option "Snapshot" and choose `Close`{.action} from the context menu.
-
-![snapshotvps](images/snapshot_vps_cancel.png){.thumbnail}
 
 ### Step 2: Taking a snapshot
 
@@ -63,7 +58,7 @@ The current snapshot can be retrieved via download link. Click on `...`{.action}
 
 > [!primary]
 >
-> If your VPS is of an older product range, you might receive an error message because the option is not available for a legacy VPS. These older services have the following naming scheme: *vpsXXXX.ovh.net* (in which *X* stands for a number). You can verify this server reference on the `Home`{.action} tab in your [OVHcloud Control Panel](/links/manager).
+> If your VPS is of an older product range, you might receive an error message because the option is not available for a legacy VPS. These older services have the following naming scheme: *vpsXXXX.ovh.net* (in which *X* stands for a number). You can verify this server reference on the `Home`{.action} tab in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
 >
 
 In the popup window, click on `Generate download link`{.action}. 
@@ -189,4 +184,4 @@ Running  QEMU-GA            QEMU Guest Agent
 
 [Using automated backups on a VPS](/pages/bare_metal_cloud/virtual_private_servers/using-automated-backups-on-a-vps)
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

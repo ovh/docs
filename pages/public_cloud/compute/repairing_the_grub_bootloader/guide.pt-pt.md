@@ -14,14 +14,11 @@ updated: 2020-11-23
 
 ## Requisitos
 
-- Uma [Instância Public Cloud](/links/public-cloud/public-cloud) na sua conta OVHcloud
+- A instância deve estar em modo rescue (Consulte o guia [Passar uma instância em modo rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode))
 
 ## Instruções
 
-> [!warning]
-> A instância deve estar em modo rescue (Consulte o guia [Passar uma instância em modo rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode))
-
-Ligue-se à instância através do VNC da Área [de Cliente OVHcloud](/links/manager) ou através do SSH.
+Ligue-se à instância através do VNC da Área [de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) ou através do SSH.
 
 Introduza os seguintes comandos para montar o sistema de ficheiros distante e iniciar a reparação do GRUB:
 

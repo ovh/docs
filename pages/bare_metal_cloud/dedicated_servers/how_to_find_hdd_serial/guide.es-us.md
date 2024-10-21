@@ -16,7 +16,7 @@ Para minimizar el riesgo de error durante la sustitución de un disco duro, pedi
 
 ## Requisitos
 
-- Tener un [servidor dedicado](/links/bare-metal/bare-metal){.external}.
+- Tener un [servidor dedicado](https://www.ovh.com/world/es/servidores_dedicados/){.external}.
 - Tener acceso al servidor por SSH como administrador (sudo).
 - En servidores Windows, haber instalado la utilidad **sas2ircu** (disponible en el motor de búsqueda de [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu){.external}).
 

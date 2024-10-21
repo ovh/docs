@@ -18,11 +18,11 @@ W tym celu możesz przekazać innym kontom klienta OVHcloud uprawnienia do odczy
 ## Wymagania początkowe
 
 - Posiadanie instancji [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na Twoim koncie OVHcloud
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 ## W praktyce 
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i otwórz swój projekt `Public Cloud`{.action}. Kliknij `Contacts and Rights`{.action} w sekcji **Project Management**.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i otwórz swój projekt `Public Cloud`{.action}. Kliknij `Contacts and Rights`{.action} w sekcji **Project Management**.
 
 Na tej stronie możesz sprawdzić kontakty przypisane do Twojego projektu.
 
@@ -57,6 +57,6 @@ Aby cofnąć dostęp, kliknij przycisk `...`{.action} i wybierz `Usuń`{.action}
 
 [Parametry dostępu i bezpieczeństwa w Horizon](/pages/public_cloud/compute/access_and_security_in_horizon)
 
-Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](/links/professional-services), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
+Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

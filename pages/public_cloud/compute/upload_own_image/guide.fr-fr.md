@@ -12,7 +12,7 @@ OVHcloud offre aux clients Public Cloud des images prêtes à l'emploi, mais ég
 
 ## Prérequis
 
-- une [instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) sur votre espace client OVHcloud
+- une [instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#etape-3-creer-une-instance) sur votre espace client OVHcloud
 - votre propre image RAW/QCOW2 (formats recommandés) 
 - un utilisateur [OpenStack](/pages/public_cloud/compute/create_and_delete_a_user) 
 - un environnement [compatible avec la CLI OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api) (si vous utilisez CLI)
@@ -95,4 +95,4 @@ Une fois que votre image est prête à être importée, suivez les étapes ci-de
 
 ## Aller plus loin
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

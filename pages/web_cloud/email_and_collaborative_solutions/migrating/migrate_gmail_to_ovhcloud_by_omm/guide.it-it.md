@@ -6,7 +6,7 @@ updated: 2020-03-09
 
 ## Obiettivo
 
-[OVH Mail Migrator](https://omm.ovh.net/) è uno strumento creato per consentirti di migrare i tuoi account di posta elettronica da un hosting a un altro. Il processo include diversi tipi di contenuti, come email, contatti, calendari e task, a seconda della compatibilità con i tuoi account di posta elettronica OVHcloud. 
+[OVH Mail Migrator](https://omm.ovh.net/){.external} è uno strumento creato per consentirti di migrare i tuoi account di posta elettronica da un hosting a un altro. Il processo include diversi tipi di contenuti, come email, contatti, calendari e task, a seconda della compatibilità con i tuoi account di posta elettronica OVHcloud. 
 
 Questa guida ti spiega come utilizzare OMM per importare i vari elementi del tuo account Gmail verso un altro account di posta elettronica OVHcloud.
 
@@ -14,7 +14,7 @@ Questa guida ti spiega come utilizzare OMM per importare i vari elementi del tuo
 
 ## Prerequisiti
 
-- Disporre di una soluzione email OVHcloud, come [Exchange](/links/web/emails), [Email Pro](/links/web/email-pro) o MX Plan (inclusa nel servizio MX Plan o in una [soluzione di hosting Web OVHcloud](/links/web/hosting)).
+- Disporre di una soluzione email OVHcloud, come [Exchange](https://www.ovhcloud.com/it/emails/){.external}, [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/){.external} o MX Plan (inclusa nel servizio MX Plan o in una [soluzione di hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}).
 - Disporre delle credenziali relative agli account email da migrare
 - Disporre delle credenziali relative agli account e-mail OVHcloud che ricevono i dati migrati (gli account di destinazione).
 
@@ -24,9 +24,9 @@ Questa guida ti spiega come utilizzare OMM per importare i vari elementi del tuo
 
 > [!primary]
 > Per rendere possibile la migrazione, è necessario attivare il protocollo IMAP sul tuo account Gmail. Per farlo, segui la guida di Google
-> [come configurare IMAP per il tuo account Gmail](https://support.google.com/mail/answer/7126229?hl=it).
+> [come configurare IMAP per il tuo account Gmail](https://support.google.com/mail/answer/7126229?hl=it){.external}.
 
-Una volta attivato IMAP, accedi a [OMM](https://omm.ovh.net/).
+Una volta attivato IMAP, accedi a [OMM](https://omm.ovh.net/){.external}.
 
 Clicca su `Migrazione`{.action} e poi su `Nuova migrazione`{.action}.
 
@@ -73,7 +73,7 @@ A questo punto, compare una finestra con lo stato di avanzamento della migrazion
 
 ![omm](images/OMM-gmail-step01-05.png){.thumbnail}
 
-In questo caso, accedi alla casella di posta in arrivo del tuo account Gmail e controlla se hai ricevuto l’email con oggetto: **“Avviso di sicurezza”** Si tratta di una misura di sicurezza adottata da Gmail. Per risolvere questa situazione, consulta la guida:  [Consentire alle applicazioni meno sicure di accedere al tuo account Gmail](/pages/web_cloud/email_and_collaborative_solutions/migrating/security_gmail)
+In questo caso, accedi alla casella di posta in arrivo del tuo account Gmail e controlla se hai ricevuto l’email con oggetto: **“Avviso di sicurezza”** Si tratta di una misura di sicurezza adottata da Gmail. Per risolvere questa situazione, consulta la guida:  [Consentire alle applicazioni meno sicure di accedere al tuo account Gmail](/pages/web_cloud/email_and_collaborative_solutions/migrating/security_gmail){.external}
 
 Dopo aver **consentito l’accesso alle “applicazioni meno sicure”** su Gmail, puoi riavviare il processo di migrazione.
 
@@ -83,7 +83,7 @@ Dopo aver **consentito l’accesso alle “applicazioni meno sicure”** su Gmai
 
 Per importare il tuo calendario nel tuo account OVHcloud, recupera un backup del calendario dalla tua interfaccia Gmail. Per effettuare l’operazione, segui la guida ufficiale di Google :
 
-[Come esportare i calendari per il tuo account Gmail](https://support.google.com/calendar/answer/37111?hl=it)
+[Come esportare i calendari per il tuo account Gmail](https://support.google.com/calendar/answer/37111?hl=it){.external}
 
 Se disponi di più calendari sul tuo account Gmail, scarica un file di archivio da decomprimere. Ciascun calendario è disponibile in formato **.ics**.
 
@@ -92,7 +92,7 @@ Se disponi di più calendari sul tuo account Gmail, scarica un file di archivio 
 > [!primary]
 > La migrazione dei calendari tramite OMM è compatibile solo con gli account Exchange.
 
-Dopo aver recuperato il backup del tuo calendario nel formato **.ics**, accedi a [OMM](https://omm.ovh.net/).
+Dopo aver recuperato il backup del tuo calendario nel formato **.ics**, accedi a [OMM](https://omm.ovh.net/){.external}.
 
 Clicca sulla scheda `PST/ICS/VCF`{.action} situata in alto e poi su `Nuova migrazione PST/ICS/VCF`{.action}.
 
@@ -127,7 +127,7 @@ A questo punto, compare una finestra con lo stato di avanzamento della migrazion
 
 Per importare i tuoi contatti nel tuo account OVHcloud, recupera un backup dei contatti dalla tua interfaccia Gmail. Per effettuare l’operazione, segui la guida ufficiale di Google :
 
-[Come esportare i contatti dal tuo account Gmail](https://support.google.com/contacts/answer/7199294?hl=it)
+[Come esportare i contatti dal tuo account Gmail](https://support.google.com/contacts/answer/7199294?hl=it){.external}
 
 > [!warning]
 > L’esportazione deve essere effettuata nel formato vCard (**.vcf**) tramite l’interfaccia Gmail. Questa opzione ti viene proposta alla fine dell’esportazione.
@@ -158,7 +158,7 @@ Compare una finestra con lo stato di avanzamento della migrazione. Puoi lasciarl
 
 ## Per saperne di più
 
-[Consentire alle applicazioni meno sicure di accedere al tuo account Gmail](/pages/web_cloud/email_and_collaborative_solutions/migrating/security_gmail).
+[Consentire alle applicazioni meno sicure di accedere al tuo account Gmail](/pages/web_cloud/email_and_collaborative_solutions/migrating/security_gmail){.external}.
 
-Contatta la nostra Community di utenti all’indirizzo [https://community.ovh.com/en](https://community.ovh.com/en/)
+Contatta la nostra Community di utenti all’indirizzo [https://community.ovh.com/en](https://community.ovh.com/en/){.external}
 

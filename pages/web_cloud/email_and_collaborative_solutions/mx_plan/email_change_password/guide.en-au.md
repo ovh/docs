@@ -15,8 +15,8 @@ You can access your OVHcloud email accounts using the password associated with t
 
 ## Requirements
 
-- A preconfigured OVHcloud email solution (available with a [web hosting plan](/links/web/hosting)
-- Access to the [OVHcloud Control Panel](/links/manager) or access to the email account via [webmail](/links/web/email), depending on the method used
+- A preconfigured OVHcloud email solution (available with a [web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) or access to the email account via [webmail](https://www.ovhcloud.com/en-au/mail/), depending on the method used
 
 > [!primary]
 >
@@ -38,9 +38,9 @@ Click the `...`{.action} button, then click `Edit`{.action}.<br><br>
 
 Changing your password via webmail is available for OVHcloud email offer using **OWA** (**O**utlook **W**eb **A**pp):
 
-<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Go to the [webmail page](/links/web/email). Enter your full email address and password, then click the `Login`{.action} button. 
+Go to the [webmail page](https://www.ovhcloud.com/en-au/mail/). Enter your full email address and password, then click the `Login`{.action} button. 
 
 ![email](images/mxplan-password-new-step2.png){.thumbnail}
 
@@ -71,6 +71,6 @@ For security and confidentiality reasons, it is not possible to **retrieve** a p
 
 ## Go further
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-au/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.

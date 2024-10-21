@@ -1,12 +1,12 @@
 ---
 title: "Troubleshooting common database errors"
 excerpt: "Find out how to diagnose the most common cases of database errors"
-updated: 2024-09-26
+updated: 2023-10-26
 ---
 
 ## Objective
 
-Your database usage may result in anomalies on your website or error messages in the [OVHcloud Control Panel](/links/manager), as well as on the [phpMyAdmin interface](/pages/web_cloud/web_hosting/sql_create_database).
+Your database usage may result in anomalies on your website or error messages in the [OVHcloud Control Panel](/links/manager), as well as on the [phpMyAdmin interface](/pages/web_cloud/web_hosting/sql_create_database#accessing-the-phpmyadmin-interface).
 
 **Find out how to troubleshoot database errors with OVHcloud Web Hosting plans.**
 
@@ -38,7 +38,7 @@ First, check on [https://web-cloud.status-ovhcloud.com/](https://web-cloud.statu
 >
 > - To find your Web Hosting plan's data centre and filer (file server), open `Hosting plans`{.action} and select the plan concerned. The information is available in the `General information`{.action} tab.
 > - To find the **cluster** of servers on which your hosting is located, click on the `FTP-SSH`{.action} tab. The cluster identifier is part of the name of your `FTP server`.
-> - To retrieve the name of your **Web Cloud Databases** server, click on `Web Cloud Databases`{.action} in the left-hand menu, then on the relevant service. You can find the information concerned under the heading `Host name` in the `SQL` part of the `General information`{.action} tab.
+> - To retrieve the name of your **Web Cloud Databases** server, click on `Databases`{.action} in the left-hand menu, then on the relevant service. You can find the information concerned under the heading `Host name` in the `SQL` part of the `General information`{.action} tab.
 >
 
 #### Verify login credentials for your database <a name="config_file"></a>
@@ -99,7 +99,7 @@ There are three ways you can unblock your database in this situation.
 
 #### Method 1: Upgrade your subscription
 
-If you have a **Starter** or **Personal** Web Hosting plan, we recommend that you switch to the [high-performance offer](https://www.ovh.co.uk/web-hosting/). This subscription change will increase the size of your database which will automatically reopen it. This method is the simplest and does not require any particular technical expertise.
+If you have a **Personal** or **Professional** Web Hosting plan, we recommend that you switch to the [high-performance offer](https://www.ovh.co.uk/web-hosting/). This subscription change will increase the size of your database which will automatically reopen it. This method is the simplest and does not require any particular technical expertise.
 
 > [!warning]
 >
@@ -119,12 +119,12 @@ If you are already subscribing to a **Performance** offer, refer to [method 2](#
 You can also migrate your data to a new database:
 
 - Order a larger [database service](https://www.ovh.co.uk/cloud/cloud-databases/) if necessary, then [create the new database](/pages/web_cloud/web_hosting/sql_create_database);
-- [Duplicate the content of the old database](/pages/web_cloud/web_hosting/copy_database) to the new database **or** perform an [export of your data](/pages/web_cloud/web_hosting/sql_database_export), then [import your data](/pages/web_cloud/web_hosting/sql_importing_mysql_database) in the new database;
+- Perform an [export of your data](/pages/web_cloud/web_hosting/sql_database_export), then [import your data](/pages/web_cloud/web_hosting/sql_importing_mysql_database) in the new database;
 - Integrate the credentials of the new database into the [configuration file](#config_file) of your site.
 
 > [!primary]
 >
-> If you have a **Performance** Web Hosting plan, you can also [activate a free Web Cloud Databases service](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+> If you have a **Performance** Web Hosting plan, you can also [activate a free Web Cloud Databases service](/pages/web_cloud/web_cloud_databases/starting_with_clouddb#clouddb-server-activation-included-with-your-web-hosting-plan).
 >
 
 #### Method 3: Delete unnecessary data
@@ -147,13 +147,13 @@ To optimise your database, follow the instructions in our guide "[Configuring yo
 > If the advice on how to optimise your database is not sufficient to unblock the access to your website, we recommend you to contact our [community](/links/community) or [OVHcloud partners](/links/partner). We will not be able to assist you in this regard.
 >
 
-### RAM overflows (Web Cloud Databases only)
+### RAM overflows
 
-The following message in the `Web Cloud Databases`{.action} section of your [OVHcloud Control Panel](/links/manager) indicates that your [Web Cloud Databases](https://www.ovh.co.uk/cloud/cloud-databases/) server has consumed too much resources on the OVHcloud infrastructure:
+The following message in the `Databases`{.action} section of your [OVHcloud Control Panel](/links/manager) indicates that your [Web Cloud Databases](https://www.ovh.co.uk/cloud/cloud-databases/) server has consumed too much resources on the OVHcloud infrastructure:
 
 ![ram-exceeded](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/ram-exceeded.png){.thumbnail}
 
-In this situation, you can increase the [amount of RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#modifying-the-database-server-solution) available from the `Web Cloud Databases`{.action} section of your [OVHcloud Control Panel](/links/manager). In the `General information`{.action} tab, click on the `...`{.action} in the `RAM` section.
+In this situation, you can increase the [amount of RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#modifying-the-database-server-solution) available from the `Databases`{.action} section of your [OVHcloud Control Panel](/links/manager). In the `General information`{.action} tab, click on the `...`{.action} in the `RAM` section.
 
 > [!warning]
 >
@@ -161,7 +161,7 @@ In this situation, you can increase the [amount of RAM](/pages/web_cloud/web_clo
 > 
 > To detach the database, log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action}. Click `Hosting plans`{.action}, then choose the web hosting plan that has the database activated.
 >
-> In the `Configuration` box, click the `...`{.action} button to the right of `Web Cloud Databases`, then click the `Detach`{.action} button.
+> In the `Configuration` box, click the `...`{.action} button to the right of the `Private database` entry, then click the `Detach`{.action} button.
 > 
 
 You can also optimise your database by following the instructions of our guide "[Configuring your database server](/pages/web_cloud/web_cloud_databases/configure-database-server#managing-your-databases)".
@@ -191,7 +191,7 @@ If necessary, contact our [user community](/links/community) or [OVHcloud partne
 
 > [!success]
 >
-> You cannot have a "**trigger**" in your database’s import script on OVHcloud shared hosting servers. In this situation, import your database to a [Web Cloud Databases server](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+> You cannot have a "**trigger**" in your database’s import script on OVHcloud shared hosting servers. In this situation, import your database to a [Web Cloud Databases server](https://www.ovh.co.uk/cloud/cloud-databases/).
 >
 
 The following query is also not allowed:
@@ -218,7 +218,7 @@ This error message appears when [importing a database](/pages/web_cloud/web_clou
 
 To resolve this issue, you can use the following methods:
 
-- Increase the [amount of RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#modifying-the-database-server-solution): go to the [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) server concerned in the `Databases` section of your [OVHcloud Control Panel](/links/manager). Then click on the `...`{.action} button in the `RAM` section and select `Change the amount of RAM`{.action}.
+- Increase the [amount of RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#modifying-the-database-server-solution): go to the [Web Cloud Databases server](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) concerned in the `Databases` section of your [OVHcloud Control Panel](/links/manager). Then click on the `...`{.action} button in the `RAM` section and select `Change the amount of RAM`{.action}.
 
 - Split your database in order to import it through multiple operations instead of one. (For any questions on the necessary steps, contact our [community](/links/community) or [OVHcloud partners](/links/partner). We will not be able to assist you with this.)
 
@@ -275,14 +275,6 @@ Check the server name for the relevant database service in your [OVHcloud Contro
 >
 > If you want to connect to a database on a [Web Cloud Databases server](/pages/web_cloud/web_cloud_databases/starting_with_clouddb), the server name can be retrieved from the tab `General information`{.action}, in the box `Login information`{.action} under `SQL`{.action} and labelled as `Host name`{.action}.
 >
-
-### Unable to connect to a Cloud Databases database
-
-Having a [Web Cloud Databases](/products/web-cloud-clouddb) server allows you to [connect to your databases](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server) from your computer or a server outside of the OVHcloud infrastructure.
-
-If this connection is not possible, first check that you have [authorized your public IP address](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) connected to the database server.
-
-If this operation has been carried out, contact your ISP or the [OVHcloud partners](/links/partner). We will not be able to assist you in this situation.
 
 ## Go further <a name="go-further"></a>
 

@@ -14,12 +14,12 @@ Dostęp do interfejsu Horizon oraz API OpenStack odbywa się za pomocą kombinac
 
 **Niniejszy przewodnik wyjaśnia, jak zarządzać użytkownikami OpenStack w Panelu klienta OVHcloud.**
 
-<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/NC69nrb6QlA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NC69nrb6QlA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Wymagania początkowe
 
 - Projekt [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na Twoim koncie OVHcloud
-- Dostęp do [Panelu client OVHcloud](/links/manager)
+- Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 ## W praktyce
 
@@ -51,7 +51,7 @@ Po utworzeniu użytkownika OpenStack będziesz mógł użyć jego danych identyf
 
 ### Usuwanie użytkownika OpenStack
 
-Użytkownik OpenStack zostaje usunięty [Panelu client OVHcloud](/links/manager). W menu po lewej stronie kliknij `Users & Roles`{.action} w rubryce "Project management". 
+Użytkownik OpenStack zostaje usunięty [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W menu po lewej stronie kliknij `Users & Roles`{.action} w rubryce "Project management". 
 
 ![public-cloud](images/delete.png){.thumbnail}
 

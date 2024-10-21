@@ -12,7 +12,7 @@ Jumbo frames are Ethernet frames with more than 1500 bytes of payload. They can 
 
 ## Requirements
 
-- a [vRack](/links/network/vrack){.external}
+- a [vRack](https://www.ovh.co.uk/solutions/vrack/){.external}
 - run a shell as root
 
 > [!warning]
@@ -64,4 +64,4 @@ Iface <interface name> inet static
 
 ## Go further
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

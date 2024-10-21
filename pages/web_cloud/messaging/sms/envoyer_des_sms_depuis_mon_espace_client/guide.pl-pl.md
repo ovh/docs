@@ -1,7 +1,7 @@
 ---
 title: Wysyłanie wiadomości SMS z Panelu klienta
 excerpt: Dowiedz się, jak w łatwy sposób wysyłać wiadomości SMS z Panelu klienta OVHcloud
-updated: 2024-10-10
+updated: 2022-08-05
 ---
 
 ## Wprowadzenie
@@ -11,13 +11,13 @@ Wiadomości SMS możesz wysyłać bezpośrednio z Panelu klienta. W tym przewodn
 ## Wymagania początkowe
 
 - Posiadanie konta SMS OVHcloud z zasileniami SMS
-- Zalogowanie do[Panelu klienta OVHcloud](/links/manager), część `Telefonia`{.action}, następnie `SMS`{.action}.
+- Zalogowanie do[Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, część `Telefonia`{.action}, następnie `SMS`{.action}.
 
 ![Panel klienta Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
 ## W praktyce
 
-Zaloguj się do [Panelu klienta](/links/manager) i wybierz opcję `Telefonia`{.action}. Następnie kliknij pozycję `SMS`{.action} po lewej stronie i wybierz Twoje konto SMS.
+Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz opcję `Telefonia`{.action}. Następnie kliknij pozycję `SMS`{.action} po lewej stronie i wybierz Twoje konto SMS.
 
 Pole „Wyślij SMS” jest pierwszym dostępnym elementem na liście działań.
 
@@ -31,7 +31,7 @@ Po przejściu na stronę wysyłania wiadomości SMS możesz uzupełnić różne 
 
 Jako nadawcę wiadomości SMS (1) możesz wybrać numer skrócony umożliwiający otrzymanie odpowiedzi (dotyczy wyłącznie kont OVHcloud we Francji) lub nadawcę alfanumerycznego.
 Następnie podaj numer odbiorcy (2) w formacie międzynarodowym (+48xxxxxxxx).
-Więcej informacji na temat tworzenia nadawcy znajdziesz w [etapie 3: wybór nadawcy wiadomości SMS](#etap-3-wybor-nadawcy-wiadomosci-sms).
+Więcej informacji na temat tworzenia nadawcy znajdziesz w [etapie 3: wybór nadawcy wiadomości SMS](./#etap-3-wybor-nadawcy-wiadomosci-sms).
 
 Wiadomości SMS możesz także wysyłać do wielu odbiorców. Możesz to zrobić na dwa sposoby:
 
@@ -67,7 +67,11 @@ Użycie znaków niewymienionych w tych tabelach spowoduje przejście na kodowani
 
 W tej sekcji możesz przeprowadzić wysyłkę natychmiastową lub odroczoną (1).
 
-Proponujemy trzy formaty wysyłki (Standard / Flash / Sim) (2), ale ta funkcja jest przestarzała.
+Dostępne są również trzy formaty wysyłki (2):
+
+- Standard: najczęściej używana wiadomość SMS.
+- Flash: wiadomość SMS wyświetla się bezpośrednio na ekranie telefonu.
+- SIM: wiadomość SMS jest automatycznie zapisywana na karcie SIM telefonu.
 
 ### Etap 3: wybór nadawcy wiadomości SMS
 
@@ -113,4 +117,4 @@ Na stronie dodawania masz do dyspozycji kilka opcji, aby skonfigurować nowego n
 
 ## Sprawdź również
 
-Dołącz do społeczności [naszych użytkowników](/links/community).
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>

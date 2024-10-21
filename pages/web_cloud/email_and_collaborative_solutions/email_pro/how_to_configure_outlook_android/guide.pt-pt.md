@@ -1,11 +1,12 @@
 ---
-title: "E-mail Pro - Configurar um endereço de e-mail no Outlook para Android"
+title: "Configurar uma conta Email Pro em Android com a aplicação Microsoft Outlook"
 excerpt: "Saiba como configurar uma conta Email Pro no Adroid com a aplicação Microsoft Outlook"
 updated: 2023-07-25
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
 
 ## Objetivo
 
@@ -15,20 +16,21 @@ As contas E-mail Pro podem ser configuradas em vários softwares de e-mail compa
 
 ## Requisitos
 
-- Dispor de uma oferta [E-mail Pro](/links/web/email-pro).
+- Dispor de uma oferta [E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/){.external}.
 - Ter instalado a aplicação Microsoft Outlook no seu dispositivo Android. Pode descarregar esta última a partir do *Google Play Store*.
 
 > [!warning]
 >
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
->
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links/partner) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further) deste manual.
+> 
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further) deste manual.
+> 
 
 ## Instruções
 
 ### Etapa 1: recuperar as informações da conta E-mail Pro <a name="step1"></a>
 
-Ligue-se ao seu [Área de Cliente OVHcloud](/links/manager) e vá à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `E-mails Pro`{.action} e selecione a plataforma E-mail Pro onde está o endereço de e-mail a configurar.
+Ligue-se ao seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e vá à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `E-mails Pro`{.action} e selecione a plataforma E-mail Pro onde está o endereço de e-mail a configurar.
 
 Na nova página, clique no separador `Contas de e-mail`{.action}.
 
@@ -39,6 +41,7 @@ Obtenha o nome do servidor E-mail Pro que aparece por baixo da menção `Webmail
 > [!warning]
 >
 > Obtenha o **bom nome** do servidor E-mail Pro onde está o endereço de e-mail que pretende configurar. Esta opção pode variar em função da antiguidade da sua oferta E-mail Pro (pro1.mail.ovh.net, pro2.mail.ovh.net, etc.).
+> 
 
 Ainda no separador `Contas de e-mail`{.acção} da sua plataforma *Email Pro*, é apresentada uma tabela com o(s) seu(s) endereço(s) E-mail Pro.
 
@@ -52,6 +55,7 @@ A alteração da palavra-passe é tomada em conta nos 15 minutos seguintes, apro
 >
 > Se alterar a palavra-passe do seu endereço de e-mail e este já estiver a ser utilizado por outro dispositivo (software de correio eletrónico, computador, tablet, smartphone, fotocopiador, etc.), deverá atualizar a palavra-passe nestes outros dispositivos.
 > Estes não poderão aceder ao seu endereço de e-mail através da antiga palavra-passe.
+>
 
 No final desta primeira etapa, deve possuir os seguintes elementos:
 
@@ -75,7 +79,7 @@ A seguir, tem à sua disposição duas opções de configuração: `IMAP`{.actio
 |---|---|
 | ![Outlook-android-emailpro-login](images/Screenshot_Outlook_4.png){.thumbnail} | ![Outlook-android-emailpro-login](images/Screenshot_Outlook_2.png){.thumbnail} |
 
-> [!success]
+> [!success
 >
 > O protocolo de sincronização **IMAP** permite recuperar uma "imagem" dos e-mails presentes no seu endereço E-mail Pro lado servidor, para os apresentar na sua aplicação Microsoft Outlook, **sem** eliminar o e-mail do servidor E-mail Pro onde está o seu endereço de e-mail. Este protocolo é muito útil, especialmente se tiver vários dispositivos configurados com o seu endereço de e-mail.
 >
@@ -84,6 +88,7 @@ A seguir, tem à sua disposição duas opções de configuração: `IMAP`{.actio
 >
 > No entanto, apesar de uma configuração em **POP3**, alguns softwares de e-mail / aplicações enviam uma cópia do e-mail para o servidor onde está o seu endereço de e-mail. Esta cópia pode ser conservada de forma temporária ou permanente.
 > Para saber se a sua aplicação / software faz parte dela, contacte diretamente o editor do software.
+>
 
 #### Caso n°1: configuração da aplicação Microsoft Outlook em Android com o protocolo IMAP
 
@@ -119,7 +124,7 @@ De seguida, verifique que os parâmetros introduzidos correspondem aos elementos
 
 #### Caso n°2: configuração da aplicação Microsoft Outlook em Android com o protocolo "POP3"
 
-Clique em `POP3`{.action} na parte inferior do seu ecrã.
+Clique em `POP3`{.action} na parte inferior do seu ecrã. 
 
 Na nova página que aparece, o seu endereço de e-mail é pré-indicado.
 
@@ -158,12 +163,8 @@ A seguir, teste o envio e a receção de e-mails a partir da sua aplicação Mic
 
 ## Quer saber mais? <a name="go-further"></a>
 
-> [!primary]
->
-> Para obter mais informações sobre a configuração de um endereço de e-mail a partir da aplicação Outlook no Android, consulte [Central de Ajuda da Microsoft](https://support.microsoft.com/pt-pt/office/configurar-o-e-mail-na-aplicação-outlook-para-android-886db551-8dfa-4fd5-b835-f8e532091872).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
-
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 

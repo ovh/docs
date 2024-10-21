@@ -12,8 +12,8 @@ Per rafforzare la sicurezza del tuo account Exchange, puoi attivare l’autentic
 
 ## Prerequisiti
 
-- Disporre di una soluzione [Exchange OVHcloud](/links/web/emails)
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+- Disporre di una soluzione [Exchange OVHcloud](https://www.ovhcloud.com/it/emails/){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - Aver installato un’applicazione OTP su smartphone o tablet Android o iOS. 
 
 > [!primary]
@@ -33,7 +33,7 @@ Per rafforzare la sicurezza del tuo account Exchange, puoi attivare l’autentic
 
 Al momento della prima configurazione, è necessario attivare la doppia autenticazione sulla piattaforma prima di attivarla su un account.
 
-Accedi all’area `Web Cloud`{.action} del tuo[Spazio Cliente OVHcloud](/links/manager). Seleziona il tuo servizio cliccando su `Microsoft`{.action} > `Exchange`{.action}.
+Accedi all’area `Web Cloud`{.action} del tuo[Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Seleziona il tuo servizio cliccando su `Microsoft`{.action} > `Exchange`{.action}.
 
 Quindi seleziona la scheda `Sicurezza`{.action} della tua piattaforma e clicca su `Attiva`{.action}, sotto alla voce “Doppia autenticazione”. Infine, scorri fino in fondo alla pagina e clicca su `Salva modifiche`{.action} per completare l’operazione.
 
@@ -47,7 +47,7 @@ Sempre dalla piattaforma Exchange, seleziona la scheda `Account email`{.action}.
 
 ![2fa-exchange](images/2fa-exchange-01.png){.thumbnail}
 
-Per associare il tuo account all’applicazione OTP, accedi alla [webmail](/links/web/email).
+Per associare il tuo account all’applicazione OTP, accedi alla [webmail](https://www.ovh.it/mail).
 
 Al momento della prima connessione, compare un codice QR. Scansionalo tramite l’applicazione OTP, quindi inserisci il codice appena generato per effettuare l’accesso.
 
@@ -59,7 +59,7 @@ Per le connessioni successive, sarà necessario inserire solo il codice generato
 
 La doppia autenticazione può essere disattivata in tre modi diversi:
 
-Accedi all’area `Web Cloud`{.action} del tuo[Spazio Cliente OVHcloud](/links/manager). Seleziona il tuo servizio cliccando su `Microsoft`{.action} > `Exchange`{.action}.
+Accedi all’area `Web Cloud`{.action} del tuo[Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Seleziona il tuo servizio cliccando su `Microsoft`{.action} > `Exchange`{.action}.
 
 Dalla scheda `Account email`{.action} della piattaforma Exchange, clicca sui tre puntini `...`{.action} a destra dell’account su cui la doppia autenticazione è già attiva.
 

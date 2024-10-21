@@ -13,7 +13,7 @@ Découvrez comment configurer Veeam Agent pour Microsoft Windows pour sauvegarde
 
 ## Prérequis
 
-- Un [serveur Bare Metal OVHcloud sous Windows](/links/bare-metal/bare-metal)
+- Un [serveur Bare Metal OVHcloud sous Windows](https://www.ovhcloud.com/fr/bare-metal/)
 - Avoir installé [Veeam Backup and Replication 12.0](https://www.veeam.com/download-version.html?ad=downloads&tab=previous)
 - Le [logiciel d'installation Veeam Agent for Microsoft Windows 6.0.2](https://login.veeam.com/realms/veeamsso/protocol/openid-connect/auth?client_id=veeam-com&response_type=code&redirect_uri=https%3A%2F%2Fwww.veeam.com%2Foauth&scope=profile&state=e9a55dcbf050f86c5eb69ea264b8fb86) (un compte Veeam est requis)
 

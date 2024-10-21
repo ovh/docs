@@ -1,7 +1,7 @@
 ---
 title: Configurare un Alias IP
 excerpt: 'Scopri come aggiungere uno o più Additional IP alla tua configurazione'
-updated: 2024-09-27
+updated: 2024-03-25
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2024-09-27
 
 > [!primary]
 >
-> Dal 6 ottobre 2022, la nostra soluzione "Failover IP" si chiama [Additional IP](/links/network/additional-ip). Questo non ha alcun impatto sulla sua funzionalità.
+> Dal 6 ottobre 2022, la nostra soluzione "Failover IP" si chiama [Additional IP](https://www.ovhcloud.com/it/network/additional-ip/). Questo non ha alcun impatto sulla sua funzionalità.
 >
 
 ## Obiettivo
@@ -23,13 +23,13 @@ L'alias IP (o IP aliasing) è un tipo di configurazione del tuo server dedicato 
 >
 > OVHcloud mette a disposizione i servizi. OVHcloud non ha accesso a queste macchine, quindi non ne è il proprietario e non potrà fornirti assistenza. Garantire quotidianamente la gestione software e la sicurezza di queste macchine è quindi responsabilità dell’utente.
 >
-> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi relativamente ad amministrazione e sicurezza, ti consigliamo di contattare un [provider specializzato](/links/partner). Per maggiori informazioni consulta la sezione "Per saperne di più".
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi relativamente ad amministrazione e sicurezza, ti consigliamo di contattare un [provider specializzato](https://partner.ovhcloud.com/it/directory/). Per maggiori informazioni consulta la sezione "Per saperne di più".
 >
 
 ## Prerequisiti
 
-- Disporre di un [server dedicato](/links/bare-metal/bare-metal){.external}
-- Disporre di uno o più [Additional IP](/links/network/additional-ip){.external}
+- Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/){.external}
+- Disporre di uno o più [Additional IP](https://www.ovhcloud.com/it/bare-metal/ip/){.external}
 - Essere connesso al server in SSH (accesso *sudo*)
 
 > [!warning]
@@ -56,7 +56,7 @@ Nelle sezioni seguenti vengono illustrate le configurazioni delle distribuzioni 
 
 Negli esempi che seguono, utilizzeremo l’editor di testo `nano`. Con alcuni sistemi operativi, sarà necessario installarlo prima di utilizzarlo. In tal caso, verrà richiesto di farlo. È ovviamente possibile utilizzare qualsiasi editor di testo.
 
-### Debian 11
+### Debian 10/11
 
 Per impostazione predefinita, il file di configurazione si trova in `/etc/network/interfaces.d/`. È consigliabile iniziare effettuando il backup del file di configurazione corrispondente.
 
@@ -171,7 +171,7 @@ Per riavviare l’interfaccia esegui il comando:
 sudo /etc/init.d/networking restart
 ```
 
-### Fedora 39 e versioni successive
+### Fedora 38 e versioni successive
 
 Da questo momento, Fedora utilizza file chiave (*keyfiles*).
 In precedenza Fedora utilizzava profili di rete memorizzati da NetworkManager in formato ifcfg nella directory `/etc/sysconfig/network-scripts/`.<br>
@@ -342,7 +342,7 @@ sudo netplan apply
 > Quando si utilizza il comando `netplan try`, è possibile che il sistema restituisca un messaggio di avviso, ad esempio `Permissions for /etc/netplan/xx-cloud-init.yaml are too open. Netplan configuration should NOT be accessible by others`. Significa semplicemente che il file non dispone di autorizzazioni restrittive. e la configurazione dell’Additional IP resta invariata. Per maggiori informazioni sui permessi dei file, consulta la [documentazione ufficiale di ubuntu](https://help.ubuntu.com/community/FilePermissions){.external}.
 >
 
-### AlmaLinux (8 & 9), Rocky Linux (8 & 9)
+### CentOS, AlmaLinux (8 & 9), Rocky Linux (8 & 9)
 
 Il file di configurazione principale si trova in `/etc/sysconfig/network-scripts/`. Nel nostro esempio, si chiama `ifcfg-eth0`. Prima di apportare modifiche, verificare il nome file effettivo nella cartella.
 
@@ -386,9 +386,15 @@ NETMASK=255.255.255.255
 BROADCAST=203.0.113.1
 ```
 
-#### Step 3: riavvia l’interfaccia
+#### Step 3: riavvia l’interfaccia alias
 
-Per riavviare l’interfaccia esegui il comando:
+Riavvia l’interfaccia alias. Sostituisci `eth0:0` con i tuoi valori:
+
+```sh
+ifup eth0:0
+```
+
+#### Per AlmaLinux e Rocky Linux
 
 ```sh
 sudo systemctl restart NetworkManager

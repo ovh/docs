@@ -1,7 +1,7 @@
 ---
-title: 'Exchange - Configure sua conta de e-mail no Thunderbird para macOS'
+title: 'Configurar uma conta Exchange no Thunderbird para Windows'
 excerpt: 'Encontre aqui o procedimento para adicionar uma conta Exchange para Thunderbird'
-updated: 2024-10-09
+updated: 2021-08-26
 ---
 
 ## Objetivo
@@ -14,12 +14,12 @@ As contas Exchange podem ser configuradas em vários softwares de e-mail compat�
 >
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](/links/partner) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção «Quer saber mais?» deste guia.
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção «Quer saber mais?» deste guia.
 > 
 
 ## Requisitos
 
-- Ter um endereço de [Exchange](/links/web/emails-hosted-exchange).
+- Ter um endereço de [Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/).
 - Dispor do software Thunderbird instalado no seu Windows.
 - Dispor das credenciais do endereço de e-mail que pretende configurar.
  
@@ -29,7 +29,7 @@ As contas Exchange podem ser configuradas em vários softwares de e-mail compat�
 >
 > No nosso exemplo, utilizamos a menção servidor: ex**?**.mail.ovh.net. Deverá substituir o "? " pelo número que designa o servidor do seu serviço Exchange.
 > 
-> Encontre este número na sua [Área de Cliente OVHcloud](/links/manager), na rubrica `Web Cloud`{.action} e depois `Microsoft`{.action}/`Exchange`{.action}. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.
+> Encontre este número na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na rubrica `Web Cloud`{.action} e depois `Microsoft`{.action}/`Exchange`{.action}. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.
 > 
 
 ### Adicionar a conta
@@ -55,7 +55,7 @@ No âmbito de uma configuração em **POP**, os valores são os seguintes:
 
 Após a configuração, a conta de e-mail está pronta a usar e pode começar a enviar e receber mensagens no seu dispositivo.
 
-A OVHcloud também disponibiliza uma aplicação web que permite aceder ao seu endereço de e-mail a partir de um browser. disponível no endereço [Webmail](/links/web/email). Para aceder, só precisa dos dados de acesso do seu endereço de e-mail. Para qualquer questão relativa à sua utilização, consulte o nosso manual [Consultar a sua conta Exchange a partir da interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
+A OVHcloud também disponibiliza uma aplicação web que permite aceder ao seu endereço de e-mail a partir de um browser. disponível no endereço <https://www.ovh.pt/mail/>. Para aceder, só precisa dos dados de acesso do seu endereço de e-mail. Para qualquer questão relativa à sua utilização, consulte o nosso manual [Consultar a sua conta Exchange a partir da interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
 ### Recuperar um backup do seu endereço de e-mail
 
@@ -67,7 +67,7 @@ Se tiver de efetuar uma operação suscetível de causar a perda dos dados da su
 >
 > No nosso exemplo, utilizamos a menção servidor: ex**?**.mail.ovh.net. Deverá substituir o "? " pelo número que designa o servidor do seu serviço Exchange.
 > 
-> Encontre este número na sua [Área de Cliente OVHcloud](/links/manager), na rubrica `Web Cloud`{.action} e depois `Microsoft`{.action}/`Exchange`{.action}. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.
+> Encontre este número na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na rubrica `Web Cloud`{.action} e depois `Microsoft`{.action}/`Exchange`{.action}. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.
 > 
 
 Se a sua conta de e-mail já está configurada e tem de aceder aos parâmetros da conta para os alterar:
@@ -87,9 +87,5 @@ Se a sua conta de e-mail já está configurada e tem de aceder aos parâmetros d
 ![Thunderbird](images/thunderbird-win-exchange06.png){.thumbnail}
 
 ## Saiba mais
-
-> [!primary]
->
-> Para obter mais informações sobre a configuração de um endereço de e-mail a partir da aplicação Thunderbird no Windows, consulte [Central de Ajuda do Mozilla](https://support.mozilla.org/pt-BR/kb/configuracao-manual-de-conta#thunderbird:win10:tb115).
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

@@ -1,7 +1,7 @@
 ---
 title: 'Sécuriser votre nom de domaine avec DNSSEC'
 excerpt: 'Découvrez comment protéger votre nom de domaine du Cache Poisoning en activant le DNSSEC'
-updated: 2024-08-20
+updated: 2023-07-24
 ---
 
 ## Objectif 
@@ -15,11 +15,6 @@ Ainsi, ils peuvent rediriger les flux entrants de votre nom de domaine vers leur
 Le **D**omain **N**ame **S**ystem **SEC**urity extensions (**DNSSEC**), permet de protéger la configuration DNS de votre nom de domaine contre le « Cache poisoning » en vérifiant et en authentifiant les réponses DNS.
 
 **Découvrez comment activer le DNSSEC pour votre nom de domaine afin de le protéger contre le « Cache poisoning ».**
-
-> [!primary]
->
-> L'option DNSSEC est indisponible pour les noms de domaine dont l'extension est en **.it**.
->
 
 Pour plus d'informations sur le fonctionnement du **DNSSEC**, consultez notre page « [Comprendre le DNSSEC](/links/web/domains-dnssec){.external} ».
 

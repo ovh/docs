@@ -6,7 +6,7 @@ updated: 2024-03-27
 
 > [!primary]
 >
-> Since October 6th, 2022 our service "Failover IP" is named [Additional IP](/links/network/additional-ip). This renaming has no effect on its technical features.
+> Since October 6th, 2022 our service "Failover IP" is named [Additional IP](https://www.ovhcloud.com/en-sg/network/additional-ip/). This renaming has no effect on its technical features.
 >
 
 ## Objective
@@ -493,4 +493,4 @@ To test the connection, simply ping your Additional IP from the outside. If it r
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en/support-levels/).
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

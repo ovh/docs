@@ -10,7 +10,7 @@ updated: 2024-01-22
 
 ## Ziel
 
-Sie können anhand des in Ihrem [OVHcloud Kundencenter](/links/manager) angezeigten Referenznamens feststellen, ob ein VPS aus einer alten Reihe stammt: Wenn diese interne Referenz im Format *vpsXXXX.ovh.net* vorliegt (wobei *X* für eine Zahl steht) und Sie den entsprechenden VPS nicht auf [unsere aktuelle Produktreihe](https://www.ovhcloud.com/de/vps/) migriert haben, handelt es sich um einen *Legacy* VPS. 
+Sie können anhand des in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) angezeigten Referenznamens feststellen, ob ein VPS aus einer alten Reihe stammt: Wenn diese interne Referenz im Format *vpsXXXX.ovh.net* vorliegt (wobei *X* für eine Zahl steht) und Sie den entsprechenden VPS nicht auf [unsere aktuelle Produktreihe](https://www.ovhcloud.com/de/vps/) migriert haben, handelt es sich um einen *Legacy* VPS. 
 
 Die Referenz für einen VPS der aktuellen Reihe has das Format: *vps-XXXXXXX.vps.ovh.net* (wobei *X* eine Ziffer oder ein Buchstabe sein kann).
 
@@ -21,11 +21,12 @@ Für einen *Legacy* VPS bestehen einige Unterschiede bezüglich dessen Verwaltun
 ## Voraussetzungen
 
 - Sie haben einen [*Legacy* VPS](https://www.ovhcloud.com/de/vps/) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie links im Menü unter `Virtual Private Server`{.action} Ihren Server aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de
+) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie links im Menü unter `Virtual Private Server`{.action} Ihren Server aus.
 
 Im Tab `Startseite`{.action} finden Sie unter **Shortcuts** die wichtigsten Verwaltungsfunktionen Ihres VPS.
 
@@ -115,7 +116,7 @@ Verwenden Sie diese Option, um sich über KVM mit Ihrem VPS zu verbinden. Weiter
 
 ### Inhaber ändern
 
-Über diesen Link gelangen Sie zum Formular, das Sie ausfüllen müssen, wenn der Inhaber eines VPS gewechselt werden soll. Wenn Sie Hilfe bei diesem Vorgang benötigen, kontaktieren Sie unsere Support-Teams, indem Sie ein Ticket in Ihrem [OVHcloud Kundencenter](/links/manager) erstellen.
+Über diesen Link gelangen Sie zum Formular, das Sie ausfüllen müssen, wenn der Inhaber eines VPS gewechselt werden soll. Wenn Sie Hilfe bei diesem Vorgang benötigen, kontaktieren Sie unsere Support-Teams, indem Sie ein Ticket in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) erstellen.
 
 ### Zur neuen Reihe migrieren
 

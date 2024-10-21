@@ -18,7 +18,7 @@ Si configura su VPS como servidor DNS, puede utilizar el servicio DNS secundario
 
 - Un dominio al que puede acceder como administrador
 - Un servidor [VPS](https://www.ovhcloud.com/es/vps/) desde el área de cliente de OVHcloud
-- Haber iniciado sesión en el [Panel de configuración de OVHcloud](/links/manager)
+- Haber iniciado sesión en el [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
 
 > [!warning]
 > La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
@@ -30,7 +30,7 @@ Si configura su VPS como servidor DNS, puede utilizar el servicio DNS secundario
 
 ### Paso 1: recuperación del código de verificación <a name="retrievecode"></a>
 
-Conéctese al [Panel de configuración de OVHcloud](/links/manager), acceda a la sección `Bare Metal Cloud`{.action} de la barra de metal y seleccione el servidor en **servidores virtuales** privados en el menú de la izquierda.
+Conéctese al [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Bare Metal Cloud`{.action} de la barra de metal y seleccione el servidor en **servidores virtuales** privados en el menú de la izquierda.
 
 Abra la pestaña `DNS secundario`{.action} y haga clic en el botón `Añadir un dominio`{.action}.
 
@@ -52,7 +52,7 @@ La acción a realizar es diferente en función del lugar en el que se gestionen 
 
 - Si el dominio es gestionado por un agente registrador externo **o** utiliza en esta fase servidores DNS externos, conéctese al área de cliente de su proveedor DNS y añada, en la zona DNS, un registro de tipo TXT con el subdominio "ownercheck", así como el valor proporcionado ejecutando el [paso 1](#retrievecode).
 
-- Si el dominio es gestionado por OVHcloud como agente registrador **y** utiliza los servidores DNS de OVHcloud, añada el registro TXT en la sección `Web Cloud`{.action} de su [Panel de configuración de OVHcloud](/links/manager). Siga las indicaciones que le indicamos en la guía [Editar una zona DNS](/pages/web_cloud/domains/dns_zone_edit) si no está familiarizado con este proceso.
+- Si el dominio es gestionado por OVHcloud como agente registrador **y** utiliza los servidores DNS de OVHcloud, añada el registro TXT en la sección `Web Cloud`{.action} de su [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Siga las indicaciones que le indicamos en la guía [Editar una zona DNS](/pages/web_cloud/domains/dns_zone_edit) si no está familiarizado con este proceso.
 
 ![DNS secundario](images/sec-04.png){.thumbnail}
 

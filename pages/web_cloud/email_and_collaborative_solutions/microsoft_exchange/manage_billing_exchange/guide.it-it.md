@@ -1,7 +1,7 @@
 ---
 title: 'Gestire la fatturazione di un account Exchange'
 excerpt: 'Come effettuare le diverse azioni relative alla fatturazione del tuo servizio Exchange'
-updated: 2024-08-27
+updated: 2020-04-20
 ---
 
 ## Obiettivo
@@ -12,14 +12,14 @@ I servizi Hosted Exchange e Private Exchange offrono una gestione flessibile del
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
-- Disporre di una soluzione [Exchange](/links/web/emails-hosted-exchange).
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Disporre di una soluzione [Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/){.external}
 
 ## Procedura
 
-Accedi alla sezione `Webcloud`{.action} dello [Spazio Cliente OVHcloud](/links/manager). Seleziona il tuo servizio cliccando su `Microsoft`{.action} > `Exchange`{.action}.
+Accedi alla sezione `Webcloud`{.action} dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Seleziona il tuo servizio cliccando su `Microsoft`{.action} > `Exchange`{.action}.
 
-### Hosted Exchange
+### Hosted Exchange 
 
 #### Ordina account aggiuntivi
 
@@ -29,29 +29,29 @@ Quindi clicca sulla scheda `Account email`{.action} e poi sul pulsante `Azioni`{
 
 #### Modifica la frequenza di rinnovo dei tuoi account <a name="periodicity"></a>
 
-Dall’interfaccia di gestione del tuo servizio Exchange, clicca sul pulsante `Azioni`{.action} in alto a destra e poi su `Configura il rinnovo`{.action}.
+Dall’interfaccia di gestione del tuo servizio Exchange, clicca sul pulsante `Azioni`{.action} in alto a destra e poi su `Configura il rinnovo`{.action}. 
 
 ![billing_exchange](images/billing-exchange-01.png){.thumbnail}
 
 Accedi allo Spazio Cliente, clicca sul tuo nome utente in alto a destra e seleziona “I tuoi servizi”. Come puoi notare, è stato applicato un filtro per visualizzare soltanto la piattaforma Exchange su cui apportare la modifica.
 
-Clicca sui tre puntini `...`{.action} a destra della piattaforma Exchange e pi su `Modifica la fatturazione`{.action}.
+Clicca sui tre puntini `... `{.action} a destra della piattaforma Exchange e pi su `Modifica la fatturazione`{.action}.
 
 ![billing_exchange](images/billing-exchange-02.png){.thumbnail}
 
-Nella nuova pagina, è possibile visualizzare e modificare la fatturazione di ciascuno dei tuoi account. Le modifiche possono essere effettuate dal menu “**Rinnovo**” su uno o più account allo stesso tempo.  Le modifiche all’account saranno applicate alla data indicata nella colonna “**Scadenza**”.
+Nella nuova pagina, è possibile visualizzare e modificare la fatturazione di ciascuno dei tuoi account. Le modifiche possono essere effettuate dal menu “**Rinnovo**” su uno o più account allo stesso tempo.  Le modifiche all’account saranno applicate alla data indicata nella colonna “**Scadenza**”. 
 
 L’esempio che segue, ti mostra le operazioni da effettuare per passare a un rinnovo mensile del tuo account.
 
-> Nel primo step, clicca sulla voce “**Mensile**” in corrispondenza del tuo account e poi clicca sul pulsante `Continua`{.action} in basso a sinistra.
->
+> Nel primo step, clicca sulla voce “**Mensile**” in corrispondenza del tuo account e poi clicca sul pulsante `Continua`{.action} in basso a sinistra. 
+
 > Nel secondo step, un riepilogo ti indica che la modifica è stata applicata. Clicca sul pulsante `Invia`{.action} in basso a sinistra.
->
+
 > ![billing_exchange](images/billing-exchange-03.png){.thumbnail}
 
 #### Elimina account
 
-Per eliminare un account dalla tua piattaforma Hosted, è necessario, innanzitutto, disattivare l’account, modificando la sua configurazione di rinnovo in “**Annulla alla scadenza**”. Per farlo, consulta lo Step [“modifica la frequenza di rinnovo dei tuoi account.”](#periodicity).
+Per eliminare un account dalla tua piattaforma Hosted, è necessario, innanzitutto, disattivare l’account, modificando la sua configurazione di rinnovo in “**Annulla alla scadenza**”. Per farlo, consulta lo Step [“modifica la frequenza di rinnovo dei tuoi account.”](./#modifica-la-frequenza-di-rinnovo-dei-tuoi-account){.external}
 
 Una volta disattivato, il tuo account sarà sospeso alla data di scadenza. Per eliminare l’indirizzo email ospitato dall’account prima della data di scadenza, è necessario ripristinarlo.
 
@@ -71,18 +71,10 @@ Clicca sulla scheda `Account email`{.action}, poi sul pulsante `Azioni`{.action}
 
 #### Elimina account
 
-> [!warning]
->
-> Per poter eliminare un account email su una piattaforma Private Exchange, **è necessario che sia stato creato** (associato a un dominio della piattaforma Exchange). Impossibile eliminare un account non configurato.
-
 Dalla scheda `Account email`{.action}, clicca su `...`{.action} in corrispondenza dell’account interessato e poi clicca su `Elimina`{.action}.  L’account sarà rimosso dalla piattaforma immediatamente, quindi non sarà necessario disattivarlo.
 
 ![billing_exchange](images/billing-exchange-07.png){.thumbnail}
 
-## Per saperne di più <a name="go-further"></a>
+## Per saperne di più
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
-
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
-
-Contatta la nostra [Community di utenti](/links/community).
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

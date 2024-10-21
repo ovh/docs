@@ -41,7 +41,7 @@ Una vez que haya identificado la cuenta cuyos permisos quiere delegar y que haya
 
 ### 1. Activar la delegación
 
-Para acceder a la gestión del servicio, conéctese al [área de cliente de OVHcloud](/links/manager):
+Para acceder a la gestión del servicio, conéctese al [área de cliente de OVHcloud](/links/manager){.external}:
 
 - **Exchange**: Haga clic en `Microsoft`{.action} y seleccione `Exchange`{.action}. 
 - **Email Pro**: Haga clic en `Email Pro`{.action}.
@@ -66,9 +66,9 @@ Una vez configurada la delegación, ya puede empezar a utilizarla. Compruebe que
 
 El procedimiento es distinto según el permiso, y depende también de la aplicación (cliente de correo local o web) que utilice para conectarse a su cuenta de correo. Continúe leyendo esta guía en el apartado correspondiente al permiso o permisos que haya delegado.
 
-- [Utilizar el permiso de acceso completo](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#21-utilizar-el-permiso-de-acceso-completo)
-- [Utilizar el permiso de «enviar como»](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#22-utilizar-el-permiso-de-enviar-como)
-- [Utilizar el permiso de «enviar en nombre de»](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#23-utilizar-el-permiso-de-enviar-en-nombre-de)
+- [Utilizar el permiso de acceso completo](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#21-utilizar-el-permiso-de-acceso-completo){.external}
+- [Utilizar el permiso de «enviar como»](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#22-utilizar-el-permiso-de-enviar-como){.external}
+- [Utilizar el permiso de «enviar en nombre de»](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#23-utilizar-el-permiso-de-enviar-en-nombre-de){.external}
 
 > [!warning]
 >
@@ -79,7 +79,7 @@ El procedimiento es distinto según el permiso, y depende también de la aplicac
 
 **Desde Outlook Web App (OWA)**
 
-Vaya a la dirección [Webmail](/links/web/email) e introduzca las claves de la cuenta de correo que dispone del permiso delegado. Una vez que se haya conectado, haga clic derecho en el nombre de la cuenta en el menú de la izquierda y seleccione `Agregar carpeta compartida`{.action}.
+Vaya a la dirección <https://www.ovh.es/mail/> e introduzca las claves de la cuenta de correo que dispone del permiso delegado. Una vez que se haya conectado, haga clic derecho en el nombre de la cuenta en el menú de la izquierda y seleccione `Agregar carpeta compartida`{.action}.
 
 En la nueva ventana, indique el nombre de la cuenta para la que tiene el permiso delegado y haga clic en `Agregar`{.action}. La cuenta aparecerá en el menú de la izquierda, y podrá explorar su contenido.
 
@@ -103,7 +103,7 @@ A continuación, haga clic en `Más configuraciones`{.action}. En la nueva venta
 
 **Desde Outlook Web App (OWA)**
 
-Vaya a la dirección [Webmail](/links/web/email) e introduzca las claves de la cuenta de correo que dispone del permiso delegado. Una vez que se haya conectado, puede empezar a redactar un nuevo mensaje haciendo clic en el botón `+ Nuevo`{.action}.
+Vaya a la dirección <https://www.ovh.es/mail/> e introduzca las claves de la cuenta de correo que dispone del permiso delegado. Una vez que se haya conectado, puede empezar a redactar un nuevo mensaje haciendo clic en el botón `+ Nuevo`{.action}.
 
 En la ventana de redacción, haga clic en el botón `···`{.action} (Más acciones) y seleccione `Mostrar De`{.action}. A continuación, haga clic en `De`{.action} y seleccione la dirección que quiera que aparezca como remitente (y para la que usted debe disponer del permiso delegado). Si dicha dirección no aparece, elimine la dirección predeterminada e introduzca la nueva dirección.
 
@@ -129,7 +129,7 @@ Ya puede redactar su mensaje y enviarlo.
 
 **Desde Outlook Web App (OWA)**
 
-Vaya a la dirección [Webmail](/links/web/email) e introduzca las claves de la cuenta de correo que dispone del permiso delegado. Una vez que se haya conectado, puede empezar a redactar un nuevo mensaje haciendo clic en el botón `+ Nuevo`{.action}.
+Vaya a la dirección <https://www.ovh.es/mail/> e introduzca las claves de la cuenta de correo que dispone del permiso delegado. Una vez que se haya conectado, puede empezar a redactar un nuevo mensaje haciendo clic en el botón `+ Nuevo`{.action}.
 
 En la ventana de redacción, haga clic en el botón `···`{.action} (Más acciones) y seleccione `Mostrar De`{.action}. A continuación, haga clic en `De`{.action} y seleccione la dirección que quiera que aparezca como remitente (y para la que usted debe disponer del permiso delegado). Si dicha dirección no aparece, elimine la dirección predeterminada e introduzca la nueva dirección.
 

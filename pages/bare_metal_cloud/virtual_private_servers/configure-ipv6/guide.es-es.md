@@ -1,7 +1,7 @@
 ---
 title: "Configurar la IPv6 en un VPS"
 excerpt: 'Cómo configurar la IPv6 en un VPS de OVHcloud'
-updated: 2024-09-11
+updated: 2024-03-05
 ---
 
 > [!primary]
@@ -24,7 +24,7 @@ El protocolo de internet versión 6 (IPv6) es la última versión del protocolo 
 - Tener un [VPS de OVHcloud](https://www.ovhcloud.com/es-es/vps/){.external}.
 - Estar conectado al VPS por SSH (acceso root) o a través de un escritorio remoto (Windows).
 - Tener conocimientos básicos de redes.
-- Estar conectado al [área de cliente de OVHcloud](/links/manager){.external} o a la [API de OVHcloud](https://api.ovh.com/).
+- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} o a la [API de OVHcloud](https://api.ovh.com/).
 
 ## Procedimiento
 
@@ -55,7 +55,7 @@ En primer lugar, es necesario conocer la dirección IPV6 y la puerta de enlace I
 
 #### Desde el área de cliente <a name="viacontrolpanel"></a>
 
-Conéctese al [Panel de configuración de OVHcloud](/links/manager), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en la sección `Servidores Privados Virtuales`{.action}.
+Conéctese al [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en la sección `Servidores Privados Virtuales`{.action}.
 
 En el apartado IP podrá ver la dirección IPv6 y la puerta de enlace IPv6 asignadas al VPS. Anótelas y continúe en el apartado 2 « [Aplicar la configuración IPv6](#applyipv6). »
 
@@ -203,11 +203,9 @@ sudo cp /etc/network/interfaces.bak /etc/network/interfaces
 
 ##### Configuración con Netplan <a name="netplan"></a>
 
-Los archivos de configuración de red se encuentran en el directorio `/etc/netplan/`. Por defecto, el fichero de configuración principal se llama `50-cloud-init.yaml`. Antes de continuar, compruebe este archivo para ver si ya se ha configurado la dirección IPv6. En ese caso, no es necesario volver a configurar la dirección IPv6, ya que solo tiene una dirección IPv6 con su servidor VPS.
+Los archivos de configuración de red se encuentran en el directorio `/etc/netplan/`. Por defecto, el fichero de configuración principal se llama `50-cloud-init.yaml`.
 
-Si no se ha configurado la dirección IPv6, el mejor método es crear un archivo de configuración independiente para configurar la dirección IPv6 en el directorio `/etc/netplan/`. De este modo, podrá volver a revisar fácilmente los cambios en caso de error.
-
-Además, le recomendamos que ajuste los permisos para el archivo recién creado. Para más información sobre los permisos de los archivos, consulte la [documentación oficial de ubuntu](https://help.ubuntu.com/community/FilePermissions){.external}.
+El mejor enfoque consiste en crear un fichero de configuración independiente para configurar las direcciones IPv6 en el directorio `/etc/netplan/`. De esta forma, puede revertir fácilmente los cambios en caso de error.
 
 En nuestro ejemplo, nuestro archivo se llama `51-cloud-init-ipv6.yaml`:
 
@@ -222,34 +220,29 @@ network:
     version: 2
     ethernets:
         eth0:
-            dhcp6: false
+            dhcp6: no
             match:
               name: eth0
             addresses:
               - YOUR_IPV6/IPv6_PREFIX
             routes:
-# If IPV6_PREFIX is 128 then add link route to gateway
-#              - to: IPv6_GATEWAY
-#                scope: link
               - to: ::/0
                 via: IPv6_GATEWAY
 ```
 
-A continuación ofrecemos un ejemplo concreto (con prefijo /128):
+A continuación ofrecemos un ejemplo concreto:
 
 ```yaml
 network:
     version: 2
     ethernets:
         eth0:
-            dhcp6: false
+            dhcp6: no
             match:
               name: eth0
             addresses:
               - 2607:5300:201:abcd::7c5/128
             routes:
-              - to: 2607:5300:201:abcd::1
-                scope: link
               - to: ::/0
                 via: 2607:5300:201:abcd::1
 ```

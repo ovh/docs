@@ -75,4 +75,4 @@ In the example output above, `zroot` now has a size of 50 GB. ZFS is therefore w
 
 ## Go further
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

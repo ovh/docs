@@ -99,4 +99,4 @@ Find out how to use backups to clone or restore instances in [this guide](/pages
 
 [Using instance backups to create or restore an instance](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup)
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

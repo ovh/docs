@@ -12,8 +12,8 @@ Every OVHcloud email account has a dedicated storage space. By managing your sto
 
 ## Requirements
 
-- a pre-configured OVHcloud email solution (**MX Plan**, available as part of our [web hosting plans](/links/web/hosting));
-- access to the [OVHcloud Control Panel](/links/manager), and `Web Cloud`{.action} section ;
+- a pre-configured OVHcloud email solution (**MX Plan**, available as part of our [web hosting plans](https://www.ovhcloud.com/en-sg/web-hosting/));
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), and `Web Cloud`{.action} section ;
 - access to the email addresses concerned.
 
 ## Instructions  <a name="instructions"></a>
@@ -30,7 +30,7 @@ You can do this via the OVHcloud Control Panel if you are managing the email ser
 
 #### From the Control Panel <a name="quotacontrolpanel"></a>
 
-In the [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, then follow the instructions for your solution:
+In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), go to the `Web Cloud`{.action} section, then follow the instructions for your solution:
 
 Click `Emails`{.action}, then choose the name of the MX Plan service concerned. Go to the `Email`{.action} accounts tab. The window that appears will display the existing email accounts. In the `Size` column, you can see your email address’s current storage consumption.
 
@@ -38,7 +38,7 @@ Click `Emails`{.action}, then choose the name of the MX Plan service concerned. 
 
 #### From webmail <a name="quotawebmail"></a>
 
-To log in to webmail, go to the page [Webmail](/links/web/email) and enter the login information for your email account. Then select the webmail address for your solution below:
+To log in to webmail, go to the page <https://www.ovhcloud.com/en-sg/mail/> and enter the login information for your email account. Then select the webmail address for your solution below:
 
 Click the button on the <i class="icons-gear-concept icons-masterbrand-blue"></i>top right of your screen, then click `Options`{.action}. Click `My Account`{.action} in the `General`{.action} section in the left-hand column. You can view your account’s current quota in the lower right-hand corner of the form.
 
@@ -65,7 +65,7 @@ Before you perform any other operation on your email account, you will need to f
 
 You can increase the storage capacity of your email account, if it has not reached its maximum capacity. Below, you will find the approach to follow, depending on your solution:
 
-The capacity of an MX Plan account can range from 2.5 MB to 5 GB. If it is full and its capacity is less than 5 GB, you can modify its capacity via the [OVHcloud Control Panel](/links/manager).<br>
+The capacity of an MXplan account can range from 2.5 MB to 5 GB. If it is full and its capacity is less than 5 GB, you can modify its capacity via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg).<br>
 In the `Email accounts`{.action} tab, click the `...`{.action} button to the right of the account you want to change, and then click `Edit`{.action}.
 From the `Quota`{.action} box, select the size that suits you, click `Next`{.action}, then `Confirm`{.action}.<br><br>
 ![email](images/email-quota-more01.png){.thumbnail}<br>
@@ -87,13 +87,13 @@ The role of email software is to convert your emails into files, so that they ca
 
 Below is a non-exhaustive list of configuration guides for email clients on computers, depending on the solution you have:
 
-Configuring an MX Plan account on **Windows**:
+Configuring an MXplan account on **Windows**:
 
 - [Mail on Windows 10](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10) (included with Windows)
-- [Outlook for MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)
+- [Outlook for Mxplan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)
 - [Thunderbird](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_thunderbird_windows) (free)
 
-Configuring an MX Plan account on **macOS**:
+Configuring an MXplan account on **macOS**:
 
 - [Mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_mail_macos) (included with macOS)
 - [Outlook](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac)
@@ -123,6 +123,6 @@ Once you have installed your email software, follow the instructions below to pr
 
 [Manually migrate your email address](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-sg/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.

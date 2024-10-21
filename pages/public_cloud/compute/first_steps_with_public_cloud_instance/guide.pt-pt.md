@@ -10,7 +10,7 @@ updated: 2024-02-20
 
 ## Objetivo
 
-Pode gerir as suas instâncias Public Cloud na sua [Área de Cliente](/links/manager).
+Pode gerir as suas instâncias Public Cloud na sua [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 **Este guia explica em pormenor as ações disponíveis na Área de Cliente OVHcloud para uma instância Public Cloud.**
 
@@ -18,11 +18,11 @@ Pode gerir as suas instâncias Public Cloud na sua [Área de Cliente](/links/man
 
 - Um [projeto Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) na sua conta OVHcloud
 - Uma [instância Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) no seu projeto
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 
 ## Instruções
 
-Ligue-se à sua [Área de Cliente OVHcloud](/links/manager) e abra o seu projeto `Public Cloud`{.action}. 
+Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e abra o seu projeto `Public Cloud`{.action}. 
 
 ### Utilizar a interface de gestão das instâncias
 
@@ -59,7 +59,7 @@ A nova página que aparece apresenta uma versão modificada das opções [de cri
 
 - **Modificar o nome**: pode atribuir um nome à instância para uma maior facilidade de identificação.
 - **Modificar a imagem**: pode escolher outro sistema operativo para a instância (tenha em atenção que a reinstalação de uma instância eliminará todos os dados que contém).
-- **Modificar o modelo**: pode alterar o modelo de instância. Para mais informações sobre as opções, consulte [este manual](/pages/public_cloud/compute/public-cloud-first-steps#model).
+- **Modificar o modelo**: pode alterar o modelo de instância. Para mais informações sobre as opções, consulte [este manual](/pages/public_cloud/compute/public-cloud-first-steps#3o-passo-criacao-de-uma-instancia).
 - **Alterar o período de faturação**: pode alterar o período de faturação da instância de uma faturação à hora para uma faturação mensal. Para mais informações, consulte [este guia](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing).
 
 #### Criar um backup de uma instância
@@ -137,7 +137,7 @@ A seguir, clique no separador `Console VNC`{.action}.
 
 A consola VNC fornece um acesso direto à sua instância. Para que este acesso funcione, primeiro tem de configurar um nome de utilizador e uma palavra-passe na instância. 
 
-Para mais informações, consulte o nosso manual "[Criação e conexão a uma primeira instância Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#vnc-console)".
+Para mais informações, consulte o nosso manual "[Criação e conexão a uma primeira instância Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance)".
 
 ## Quer saber mais?
 
@@ -145,6 +145,6 @@ Para mais informações, consulte o nosso manual "[Criação e conexão a uma pr
 
 [Apresentação do Horizon](/pages/public_cloud/compute/introducing_horizon)
 
-Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](/links/professional-services) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
+Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](https://www.ovhcloud.com/pt/professional-services/) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

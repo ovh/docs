@@ -16,7 +16,7 @@ Office 365 Reseller (CSP2) ist ein Dienst, mit dem Sie verschiedene Arten von Mi
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie verfügen über eine [MPN ID](https://learn.microsoft.com/de-de/partner-center/mpn-create-a-partner-center-account) (Microsoft Partner Network IDentifier). 
 - Sie sind im Microsoft CSP (Cloud Solutions Provider) Programm als "indirekter Reseller" in der Region angemeldet, in der Sie aktiv sind (zum Beispiel: "EU" für Europa).
 
@@ -27,9 +27,9 @@ Office 365 Reseller (CSP2) ist ein Dienst, mit dem Sie verschiedene Arten von Mi
 > Eine MPN ID ist für jede Neubestellung notwendig.
 >
 
-Wenn Sie noch nicht über eine MPN ID verfügen, können Sie eine erstellen (sofern Sie die Bedingungen von Microsoft erfüllen), indem Sie diese offizielle Dokumentation von Microsoft befolgen: "[Was ist das Microsoft Cloud Partner Program?](https://learn.microsoft.com/de-de/partner-center/mpn-create-a-partner-center-account)".
+Wenn Sie noch nicht über eine MPN ID verfügen, können Sie eine erstellen (sofern Sie die Bedingungen von Microsoft erfüllen), indem Sie diese offizielle Dokumentation von Microsoft befolgen: "[Was ist das Microsoft Cloud Partner Program?](https://learn.microsoft.com/de-de/partner-center/mpn-create-a-partner-center-account){.external}".
 
-Um sich dann als indirekter Reseller anzumelden, lesen Sie die Microsoft Dokumentation "[Sich als indirekter Vertriebspartner registrieren](https://learn.microsoft.com/de-de/partner-center/enrolling-in-the-csp-program#enroll-as-an-indirect-reseller)".
+Um sich dann als indirekter Reseller anzumelden, lesen Sie die Microsoft Dokumentation "[Sich als indirekter Vertriebspartner registrieren](https://learn.microsoft.com/de-de/partner-center/enrolling-in-the-csp-program#enroll-as-an-indirect-reseller){.external}".
 
 > [!success]
 >
@@ -40,7 +40,7 @@ Um sich dann als indirekter Reseller anzumelden, lesen Sie die Microsoft Dokumen
 
 ### Office 365 Reseller bestellen
 
-Um einen Office 365 Reseller Dienst zu bestellen, loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und wählen Sie `Sunrise`{.action} im oberen Menu aus. Klicken Sie dann auf `Office 365 Revendeurs`{.action}.
+Um einen Office 365 Reseller Dienst zu bestellen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie `Sunrise`{.action} im oberen Menu aus. Klicken Sie dann auf `Office 365 Revendeurs`{.action}.
 
 - *Optional*: Sie können bei **der Erstellung** einer neuen Plattform eine personalisierte Subdomain definieren, indem Sie das dafür vorgesehene Feld ankreuzen (unter Vorbehalt der verfügbaren Namen).
 - Geben Sie Ihre zuvor bei Microsoft erstellte MPN ID ein.
@@ -60,7 +60,7 @@ Um einen Office 365 Reseller Dienst zu bestellen, loggen Sie sich in Ihr [OVHclo
 
 ### Office 365 Reseller Dienste verwalten
 
-Sobald der Office 365 Dienst verfügbar ist, können Sie ihn über Ihr [OVHcloud Kundencenter](/links/manager) verwalten.
+Sobald der Office 365 Dienst verfügbar ist, können Sie ihn über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verwalten.
 
 Gehen Sie hierzu in den Bereich `Sunrise`{.action}. Im Menü auf der linken Seite wählen Sie `Office 365 Revendeurs`{.action}, und dann den Dienst aus.
 
@@ -90,14 +90,14 @@ Mit <i class="icons-pen"></i> können Sie die Gesamtzahl der Lizenzen des Abonne
 
 > [!primary]
 >
-> Für Office 365 Education sind besondere Lizenzbedingungen von Microsoft einzuhalten. Die entsprechenden offiziellen Dokumente stehen Ihnen je nach Region und Sprache [hier](https://www.microsoft.com/licensing/docs) zur Verfügung.
+> Für Office 365 Education sind besondere Lizenzbedingungen von Microsoft einzuhalten. Die entsprechenden offiziellen Dokumente stehen Ihnen je nach Region und Sprache [hier](https://www.microsoft.com/licensing/docs){.external} zur Verfügung.
 >
 
 ![office365](images/sunrise_office365_CSP2_Subscribers.png){.thumbnail}
 
 ### Benutzer verwalten
 
-Sobald Sie über eine ausreichende Anzahl an Lizenzen verfügen, müssen Sie die Benutzer verwalten, die diese verwenden. Dieser Schritt erfolgt direkt über das [Verwaltungsportal von Microsoft](https://portal.office.com/Admin/Default.aspx).
+Sobald Sie über eine ausreichende Anzahl an Lizenzen verfügen, müssen Sie die Benutzer verwalten, die diese verwenden. Dieser Schritt erfolgt direkt über das [Verwaltungsportal von Microsoft](https://portal.office.com/Admin/Default.aspx){.external}.
 
 Um sich dort einzuloggen, geben Sie Ihre Kundenkennung und das Passwort ein, das Sie in der Bestätigungsmail von OVHcloud zur Installation Ihrer Lizenzgruppe erhalten haben. Diese Informationen werden an die bei der Erstellung der Lizenzgruppe angegebene Adresse versandt.
 

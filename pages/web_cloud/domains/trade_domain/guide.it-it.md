@@ -1,7 +1,7 @@
 ---
 title: "Cambiare il proprietario di un dominio"
 excerpt: "In questa guida troverai le informazioni necessarie per cambiare il proprietario di un dominio"
-updated: 2024-09-04
+updated: 2024-05-22
 ---
 
 > [!primary]
@@ -59,7 +59,7 @@ Accedi allo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.acti
 
 Nella scheda `Informazioni generali`{.action}, clicca sul pulsante **Abbonamento** nell'angolo in basso a destra. Clicca sui tre puntini `...`{.action} davanti ai **Contatti** e poi clicca su `Modifica proprietario`{.action}.
 
-![modifica del proprietario](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/change-owner.png){.thumbnail}
+![modifica del proprietario](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/change-domain-name-holder.png){.thumbnail}
 
 > [!warning]
 >
@@ -96,9 +96,9 @@ Se l'indirizzo email non viene modificato in seguito alla modifica del proprieta
 
 Se è necessario aggiornare alcune informazioni secondarie come il numero di telefono, l'indirizzo, ecc., non è necessario avviare una procedura commerciale. Queste informazioni possono essere modificate direttamente dallo [Spazio Cliente OVHcloud](/links/manager).
 
-Nella sezione **Abbonamento** della scheda `Informazioni generali`{.action}, clicca sui tre puntini `...`{.action} davanti ai **Contatti** e poi clicca su `Aggiorna le informazioni del proprietario`{.action}.
+Nella sezione **Abbonamento** della scheda `Informazioni generali`{.action}, clicca sui tre puntini `...`{.action} davanti ai **Contatti** e poi clicca su `Aggiorna le informazioni del proprietario `{.action}.
 
-![modifica del proprietario](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/refresh-holder-information.png){.thumbnail}
+![modifica del proprietario](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/refresh-owner-information.png){.thumbnail}
 
 Per questa operazione non è necessario confermare le modifiche tramite email.
 

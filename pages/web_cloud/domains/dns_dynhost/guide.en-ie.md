@@ -1,7 +1,7 @@
 ---
 title: "Configure dynamic DNS (DynHost/DynDNS) for your domain name"
 excerpt: "Find out how to configure a dynamic DNS record for your OVHcloud domain name"
-updated: 2024-09-04
+updated: 2024-07-12
 ---
 
 ## Objective
@@ -79,7 +79,7 @@ Once you are ready to create the DynHost record, go to the `DynHost`{.action} ta
 |Information|Description|
 |---|---|
 |Subdomain|Enter the subdomain that the DNS record must be dynamically updated for. This subdomain must be identical to the one you entered when you created the DynHost username. **If you would like to set up a DynHost directly for your domain name, leave this form blank**|
-|Target IP|Enter the IP address (IPv4 or IPv6) currently mapped in the DNS record. This is usually the public IP address of your Internet access box or your self-hosted server. In accordance with the DynHost principle, the IP will from now on be updated automatically. Only one IP address must be entered in this form.|
+|Target IP|Enter the IP address (IPv4 or IPv6) currently mapped in the DNS record. This is usually the public IP address of your Internet access box or your self-hosted server. In accordance with the DynHost principle, the IP will from now on be updated automatically.|
 
 > [!warning]
 >
@@ -89,11 +89,6 @@ Once you are ready to create the DynHost record, go to the `DynHost`{.action} ta
 ![dynhost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/create-a-dynhost.png){.thumbnail}
 
 Once you have filled in all of the required fields, click `Confirm`{.action}. The DynHost record will then appear in the table on the current page. Repeat this step if you need additional DynHost records.
-
-> [!primary]
->
-> If your domain or subdomain needs to be configured dynamically with, for example, an IPv4 and an IPv6, you can create two dynamic DNS records for the same domain or subdomain. The first dynamic DNS record will then be for IPv4 and the second for IPv6.
->
 
 ### Step 3: Automate the DynHost update
 

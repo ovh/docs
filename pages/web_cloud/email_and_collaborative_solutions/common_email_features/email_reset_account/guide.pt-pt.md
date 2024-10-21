@@ -20,15 +20,15 @@ Deseja:
 
 ## Requisitos
 
-- Dispor de uma solução de e-mail OVHcloud previamente configurada (**MX Plan**, proposta entre as nossas [ofertas de alojamento web](/links/web/hosting), incluída num [Alojamento gratuito 100M](/links/web/domains-free-hosting) ou encomendada separadamente como solução autónoma, como o [**Hosted Exchange**](/links/web/emails-hosted-exchange) ou o [**Email Pro**](/links/web/email-pro)).
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager), na secção `Web Cloud`{.action}.
+- Dispor de uma solução de e-mail OVHcloud previamente configurada (**MX Plan**, proposta entre as nossas [ofertas de alojamento web](https://www.ovhcloud.com/pt/web-hosting/), incluída num [Alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/) ou encomendada separadamente como solução autónoma, como o [**Hosted Exchange**](https://www.ovhcloud.com/pt/emails/hosted-exchange/) ou o [**Email Pro**](https://www.ovhcloud.com/pt/emails/email-pro/)).
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action}.
 - Ter acesso aos endereços de e-mail pertinentes.
 
 ## Prática <a name="instructions"></a>
 
 A OVHcloud propõe 3 soluções de e-mail, a noção de eliminação de conta é diferente consoante a sua oferta.
 
-- **E-mail MX Plan**: esta oferta é vendida sob a forma de um pack de várias contas de e-mail. Quando eliminar uma conta, liberta um espaço no seu pack. 
+- **E-mail MXplan**: esta oferta é vendida sob a forma de um pack de várias contas de e-mail. Quando eliminar uma conta, liberta um espaço no seu pack. 
 - **Email Pro** e **Hosted Exchange**: estas duas ofertas estão 'à la carte', encomenda uma subscrição individual por conta de e-mail. Se deseja eliminar um endereço de e-mail, trata-se de efetuar uma **reinicialização**. Uma vez a conta de e-mail reinicializada, pode reutilizar esta conta para criar um novo endereço de e-mail. Também pode [cancelar a assinatura](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#eliminar-contas) desta conta se pretender eliminá-la definitivamente.
 
 ### Eliminar ou reinicializar uma conta de e-mail
@@ -36,16 +36,16 @@ A OVHcloud propõe 3 soluções de e-mail, a noção de eliminação de conta é
 Selecione o separador correspondente à sua oferta de e-mail:
 
 > [!tabs]
-> **E-mails MX Plan histórico**
+> **E-mails MXplan histórico**
 >>
->> Para verificar se a sua oferta MX plan é uma versão histórica ou nova, consulte a tabela da parte "[Identifique a sua oferta MX Plan](#whichmxplan)" deste manual.<br><br>
+>> Para verificar se a sua oferta MX plan é uma versão histórica ou nova, consulte a tabela da parte "[Identifique a sua oferta MXplan](#whichmxplan)" deste manual.<br><br>
 >>
 >> Clique em `E-mails`{.action} e escolha o nome do serviço MX Plan em causa. Aceda ao separador `Contas de e-mail`{.action}. Na nova janela, podem ver-se as contas de e-mail existentes. Clique no botão `...`{.action} à direita da conta a modificar e, a seguir, em `Eliminar conta`{.action}.<br><br>
 >>![email](images/email-mxplan-legacy-reset.png){.thumbnail}<br>
 >>
-> **E-mails MX Plan nova versão**
+> **E-mails MXplan nova versão**
 >>
->> Para verificar se a sua oferta MX plan é uma versão histórica ou nova, consulte a tabela da parte "[Identifique a sua oferta MX Plan](#whichmxplan)" deste manual.<br><br>
+>> Para verificar se a sua oferta MX plan é uma versão histórica ou nova, consulte a tabela da parte "[Identifique a sua oferta MXplan](#whichmxplan)" deste manual.<br><br>
 >>
 >> Clique em `E-mails`{.action} e escolha o nome do serviço MX Plan em causa. Aceda ao separador `Contas de e-mail`{.action}. Na nova janela, podem ver-se as contas de e-mail existentes. Clique no botão `...`{.action} à direita da conta a modificar e, a seguir, em `Reinicializar esta conta`{.action}.<br><br>
 >>![e-mail](images/email-mxplan-new-reset.png){.thumbnail}<br>
@@ -63,18 +63,18 @@ Selecione o separador correspondente à sua oferta de e-mail:
 >>![email](images/exchange-reset.png){.thumbnail}<br>
 >>
 
-#### Identifique a sua oferta MX Plan <a name="whichmxplan"></a>
+#### Identifique a sua oferta MXplan <a name="whichmxplan"></a>
 
-Na tabela abaixo, encontrará as informações necessárias para identificar a sua oferta MX Plan.
+Na tabela abaixo, encontrará as informações necessárias para identificar a sua oferta MXplan.
 
 |Versão antiga da oferta MX Plan|Nova versão da oferta MX Plan|
 |---|---|
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Consulte o tipo de oferta na secção “Subscrição”.|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Consulte a Referência do servidor na secção "Resumo".|
-|Selecione o separador E-**mails MX Plan histórico** acima neste guia.|Selecione o separador E-**mails MX plan, nova versão**, neste guia.|<br>
+|Selecione o separador E-**mails MXplan histórico** acima neste guia.|Selecione o separador E-**mails MX plan, nova versão**, neste guia.|<br>
 
 ## Saiba mais
 
-[Primeiros passos com a solução MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
+[Primeiros passos com a solução MXplan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 
 [Primeiros passos com a solução E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
 
@@ -84,6 +84,6 @@ Na tabela abaixo, encontrará as informações necessárias para identificar a s
 
 [Gerir a faturação das suas contas Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange)
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

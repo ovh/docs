@@ -12,14 +12,14 @@ Através da opção "Regras inbox", poderá criar um conjunto elaborado de regra
 
 ## Requisitos
 
-- uma solução de e-mail OVHcloud já configurada (**MX Plan**, disponível como parte dos nossos [planos Web Hosting](/links/web/hosting), incluída num [Alojamento gratuito 100M](/links/web/domains-free-hosting) ou encomendada separadamente como solução autónoma; [**Hosted Exchange**](/links/web/emails-hosted-exchange) ou [**E-mail Pro**](/links/web/email-pro))
+- uma solução de e-mail OVHcloud já configurada (**MX Plan**, disponível como parte dos nossos [planos Web Hosting](https://www.ovhcloud.com/pt/web-hosting/), incluída num [Alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/) ou encomendada separadamente como solução autónoma; [**Hosted Exchange**](https://www.ovhcloud.com/pt/emails/hosted-exchange/) ou [**E-mail Pro**](https://www.ovhcloud.com/pt/emails/email-pro/))
 - credenciais de login para o endereço de e-mail que deseja configurar
 
 ## Instruções
 
 ### Passo 1: Navegar dentro da secção “Opções”
 
-Aceda à sua conta Exchange através do [webmail OVHcloud](/links/web/email). Clique no símbolo da engrenagem na parte superior direita para abrir o menu e selecione `Opções`{.action}.
+Aceda à sua conta Exchange através do [webmail OVHcloud](https://www.ovh.pt/mail/). Clique no símbolo da engrenagem na parte superior direita para abrir o menu e selecione `Opções`{.action}.
 
 ![inboxrules](images/exchange-rules-step1.png){.thumbnail}
 

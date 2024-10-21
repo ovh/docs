@@ -1,14 +1,14 @@
 ---
-title: 'Email Pro - Configure su cuenta de correo electrónico en Correo para Windows'
-excerpt: 'Cómo configurar una cuenta Email Pro en la aplicación Correo de Windows'
-updated: 2024-10-09
+title: 'Configurar una cuenta Email Pro en la aplicación Correo de Windows 10'
+excerpt: 'Cómo configurar una cuenta Email Pro en la aplicación Correo de Windows 10'
+updated: 2020-03-18
 ---
 
 ## Objetivo
 
 Es posible configurar sus cuentas Email Pro en el cliente de correo que usted utilice, siempre que sea compatible, para poder acceder a ellas desde cualquiera de sus dispositivos.
 
-**Esta guía explica cómo configurar una cuenta Email Pro en la aplicación Correo de Windows.**
+**Esta guía explica cómo configurar una cuenta Email Pro en la aplicación Correo de Windows 10.**
 
 > [!warning]
 >
@@ -19,7 +19,7 @@ Es posible configurar sus cuentas Email Pro en el cliente de correo que usted ut
 
 ## Requisitos
 
-- Tener una cuenta [Email Pro](/links/web/email-pro).
+- Tener una cuenta [Email Pro](https://www.ovhcloud.com/es-es/emails/email-pro/){.external}.
 - Tener la aplicación Correo instalada en su dispositivo.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
 
@@ -31,7 +31,7 @@ Es posible configurar sus cuentas Email Pro en el cliente de correo que usted ut
 >
 > En nuestro ejemplo, hemos utilizado la mención servidor: pro**?**.mail.ovh.net. Sustituya la «?» por la cifra que designa al servidor de su servicio Email Pro.
 >
-> Puede consultar esta cifra en su [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action} y `Email Pro`{.action}. El nombre del servidor aparece en el marco **Conexión** de la pestaña `Información general`{.action}.
+> Puede consultar esta cifra en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Web Cloud`{.action} y `Email Pro`{.action}. El nombre del servidor aparece en el marco **Conexión** de la pestaña `Información general`{.action}.
 >
 
 Abra la aplicación Correo en su dispositivo. Puede añadir una cuenta de dos formas distintas:
@@ -80,16 +80,12 @@ Si la aplicación le pide que introduzca de forma manual algunos datos técnicos
 
 Una vez que haya configurado la dirección de correo electrónico, ya puede empezar a utilizarla enviando y recibiendo mensajes.
 
-OVHcloud ofrece una aplicación web que tiene [funciones colaborativas](/links/web/emails) y está disponible en la dirección [Webmail](/links/web/email). Puede conectarse con el nombre de usuario y la contraseña de su dirección de correo electrónico.
+OVHcloud ofrece una aplicación web que tiene [funciones colaborativas](https://www.ovhcloud.com/es-es/emails/){.external} y está disponible en la dirección [https://www.ovh.es/mail/](https://www.ovh.es/mail/). Puede conectarse con el nombre de usuario y la contraseña de su dirección de correo electrónico.
 
 ## Más información
 
-> [!primary]
->
-> Para obtener más información sobre la configuración de una dirección de correo electrónico desde el cliente de correo de Windows, consulte [el Centro de ayuda de Microsoft](https://support.microsoft.com/es-es/office/config-l-mail-en-l-application-mail-7ff79e8b-439b-4b47-8ff9-3f9a33166c60).
+[Configurar una cuenta de correo electrónico en la aplicación Correo de Windows 10](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10){.external}
 
-[Configurar una cuenta de correo electrónico en la aplicación Correo de Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10)
-
-[Configurar una cuenta Exchange en la aplicación Correo de Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_windows_10)
+[Configurar una cuenta Exchange en la aplicación Correo de Windows 10](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_windows_10){.external}
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

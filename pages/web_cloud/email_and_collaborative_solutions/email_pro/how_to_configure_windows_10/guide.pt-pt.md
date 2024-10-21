@@ -1,25 +1,25 @@
 ---
-title: 'E-mail Pro - Configure sua conta de e-mail no Correio para Windows'
-excerpt: "Saiba como configurar uma conta E-mail Pro na aplicação Correio para Windows"
-updated: 2024-10-09
+title: 'Configurar uma conta E-mail Pro no Correio para Windows 10'
+excerpt: "Saiba como configurar uma conta E-mail Pro na aplicação Correio para Windows 10"
+updated: 2020-03-18
 ---
 
 ## Objetivo
 
 As contas E-mail Pro podem ser configuradas em vários softwares de e-mail compatíveis. Isto permite-lhe utilizar o seu endereço de e-mail no dispositivo que preferir.
 
-**Aprenda a configurar uma conta E-mail Pro sobre a aplicação Correio para Windows.**
+**Aprenda a configurar uma conta E-mail Pro sobre a aplicação Correio para Windows 10.**
 
 > [!warning]
 >
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](/links/partner) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção deste manual intitulada: "Quer saber mais?"
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção deste manual intitulada: "Quer saber mais?"
 > 
 
 ## Requisitos
 
-- Dispor de uma oferta [E-mail Pro](/links/web/email-pro) .
+- Dispor de uma oferta [E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/) .
 - Dispor da aplicação Correio instalada no seu dispositivo.
 - Ter acesso às credenciais do endereço de e-mail que pretende configurar.
 
@@ -31,7 +31,7 @@ As contas E-mail Pro podem ser configuradas em vários softwares de e-mail compa
 >
 > No nosso exemplo, utilizamos a menção servidor: pro**?**.mail.ovh.net. Deverá substituir o "? " pelo número que designa o servidor do seu serviço E-mail Pro.
 > 
-> Encontre este número no seu [Área de Cliente OVHcloud](/links/manager) , na rubrica `Web Cloud`{.action} depois `E-mail Pro`{.action}. O nome do servidor é visível no quadro **Ligação** do separador `Information Générale`{.action}.
+> Encontre este número no seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) , na rubrica `Web Cloud`{.action} depois `E-mail Pro`{.action}. O nome do servidor é visível no quadro **Ligação** do separador `Information Générale`{.action}.
 > 
 
 Uma vez lançada a aplicação Correio no seu dispositivo, a adição de uma conta pode ser efetuada de duas formas diferentes.
@@ -81,16 +81,12 @@ Caso a aplicação lhe solicite para inserir manualmente alguns dados técnicos 
 
 Depois de configurar o endereço de e-mail, só falta utilizá-lo! Pode desde já enviar e receber mensagens.
 
-A OVHcloud também disponibiliza uma aplicação web com [funções colaborativas](/links/web/emails). Este endereço está disponível em [Webmail](/links/web/email). Para aceder, só precisa dos dados de acesso do seu endereço de e-mail.
+A OVHcloud também disponibiliza uma aplicação web com [funções colaborativas](https://www.ovhcloud.com/pt/emails/). Este endereço está disponível em <https://www.ovh.com/fr/mail/>. Para aceder, só precisa dos dados de acesso do seu endereço de e-mail.
 
 ## Quer saber mais?
 
-> [!primary]
->
-> Para obter mais informações sobre a configuração de um endereço de e-mail a partir do cliente de e-mail Correio no Windows, consulte [Centro de Ajuda da Microsoft](https://support.microsoft.com/pt-pt/office/configurar-o-e-mail-na-aplica%C3%A7%C3%A3o-correio-7ff79e8b-439b-4b47-8ff9-3f9a33166c60).
+[Configurar um endereço de e-mail no serviço MX Plan ou num serviço de alojamento web na aplicação Correio para Windows 10](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10) 
 
-[Configurar um endereço de e-mail no serviço MX Plan ou num serviço de alojamento web na aplicação Correio para Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10)
-
-[Configurar uma conta Exchange na aplicação Correio para Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_windows_10)
+[Configurar uma conta Exchange na aplicação Correio para Windows 10](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_windows_10) 
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

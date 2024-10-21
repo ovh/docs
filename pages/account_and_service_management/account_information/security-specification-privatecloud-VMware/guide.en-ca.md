@@ -97,7 +97,7 @@ To enforce security access to your account on the Control Panel, we recommend ac
 With the administrator account, you are able to establish your own access policy to the vCenter, to create users and assign them different access rights to manage the resources, to access to the vSphere interface and management of the private and public network part. A guide and configuration details are available on [this link](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud).
 To enforce users authentication on the Private Cloud infrastructure, you can activate a two-factor authentication mechanism, available by subscription to [HDS or PCI DSS offers](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/utilisation_2FA). 
 
-Finally, if you have an AD server and need to manage your users access to your Private cloud with your own identity provider, you can activate this feature. 
+Finally, if you have an AD server and need to manage your users access to your Private cloud with your own identity provider, you can activate this feature by following [this guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/federation). 
 
 ### 7.2 - Data Plane
 

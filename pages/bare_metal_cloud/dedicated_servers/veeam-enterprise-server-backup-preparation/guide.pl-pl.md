@@ -12,7 +12,7 @@ Backing up a Bare Metal server with Veeam Enterprise involves several applicatio
 
 ## Requirements
 
-- An [OVHcloud Bare Metal server](/links/bare-metal/bare-metal)
+- An [OVHcloud Bare Metal server](https://www.ovhcloud.com/pl/bare-metal/)
 - A [Veeam Enterprise Backup solution](https://www.ovhcloud.com/pl/storage-solutions/veeam-enterprise/)
 - [OVHcloud Standard S3 Object Storage](https://www.ovhcloud.com/pl/public-cloud/object-storage/) (optional)
 
@@ -34,7 +34,7 @@ From here, you can keep reading to learn how to set up S3 Object Storage as your
 
 ### Setting up your Object Storage
 
-Object Storage creation and configuration can be done in the `Public Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager).
+Object Storage creation and configuration can be done in the `Public Cloud`{.action} section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 If you don't have already a Public Cloud project in your OVHcloud account, read our [Creating your first OVHcloud Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) guide.
 
@@ -74,7 +74,7 @@ Give the S3 user rights to the container by copying and pasting the text below i
 
 Make sure to replace `container name` with your actual Object Storage container name.
 
-From the [OVHcloud Control Panel](/links/manager), select `Public Cloud`{.action} and then `Object Storage`{.action} under the `Storage` section. Click on the more options `...`{.action} button to the right of the S3 user and choose `Import S3 Policy (JSON)`{.action}.
+From the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), select `Public Cloud`{.action} and then `Object Storage`{.action} under the `Storage` section. Click on the more options `...`{.action} button to the right of the S3 user and choose `Import S3 Policy (JSON)`{.action}.
 
 Select the JSON file you just edited and click `Import`{.action}.
 
@@ -100,7 +100,7 @@ Give the new repository a **Name** and click `Next`{.action}.
 
 Enter the **Service point** (Endpoint) and **Region** information for your S3 storage service.
 
-> You can find this information in the `Public Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager).
+> You can find this information in the `Public Cloud`{.action} section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 > Click `Object Storage`{.action} then click the `...`{.action} button to the right of your container and click `Display objects`{.action}.
 >
 > ![Object storage - display objects](images/backup-preparation-06.png){.thumbnail}
@@ -163,4 +163,4 @@ Back up your environment using the Linux or Windows guide below:
 - For Linux: [Backing Up a Bare Metal Linux Server with Veeam Enterprise](/pages/bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup-linux)
 - For Windows: [Backing Up a Bare Metal Server Using Veeam Agent for Windows](/pages/bare_metal_cloud/dedicated_servers/veeam-enterprise-server-backup-windows-agent)
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

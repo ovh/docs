@@ -116,4 +116,4 @@ cat /root/.ssh/authorized_keys2
 
 [Introduction au SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com>.

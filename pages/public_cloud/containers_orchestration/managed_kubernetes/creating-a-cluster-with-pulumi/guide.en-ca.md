@@ -1,7 +1,7 @@
 ---
 title: Creating a cluster with Pulumi
 excerpt: 'Create an OVHcloud Managed Kubernetes Service cluster with Pulumi'
-updated: 2024-09-13
+updated: 2023-09-18
 ---
 
 ## Objective
@@ -100,11 +100,10 @@ For your information, our OVH Pulumi provider currently supports Go but also Pyt
 
 Examples:
 
-- [Python](https://github.com/ovh/pulumi-ovh/tree/main/examples/kubernetes/ovh-python)
-- [Typescript](https://github.com/ovh/pulumi-ovh/tree/main/examples/kubernetes/ovh-typescript)
-- [C#](https://github.com/ovh/pulumi-ovh/tree/main/examples/kubernetes/ovh-csharp)
-- [Go](https://github.com/ovh/pulumi-ovh/tree/main/examples/kubernetes/ovh-go)
-- [Java](https://github.com/ovh/pulumi-ovh/tree/main/examples/kubernetes/ovh-java)
+- [Python](https://github.com/ovh/pulumi-ovh/tree/main/examples/ovh-python)
+- [Typescript](https://github.com/ovh/pulumi-ovh/tree/main/examples/ovh-typescript)
+- [C#](https://github.com/ovh/pulumi-ovh/tree/main/examples/ovh-csharp)
+- [Go](https://github.com/ovh/pulumi-ovh/tree/main/examples/ovh-go)
 
 ### Deploy your Kubernetes cluster in Go / Golang
 

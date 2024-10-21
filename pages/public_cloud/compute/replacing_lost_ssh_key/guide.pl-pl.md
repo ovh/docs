@@ -31,7 +31,7 @@ Nadal jednak możesz logować się do Twojej instancji w trybie Rescue OVHcloud,
 
 ### Etap 1: tworzenie nowej pary kluczy
 
-Utwórz nową parę kluczy SSH na Twoim lokalnym urządzeniu, postępując zgodnie z instrukcjami z pierwszej części [przewodnika dotyczącego tworzenia klucza SSH](/pages/public_cloud/compute/creating-ssh-keys-pci).
+Utwórz nową parę kluczy SSH na Twoim lokalnym urządzeniu, postępując zgodnie z instrukcjami z pierwszej części [przewodnika dotyczącego tworzenia klucza SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 
 ### Etap 2: dostęp do instancji w trybie Rescue
 

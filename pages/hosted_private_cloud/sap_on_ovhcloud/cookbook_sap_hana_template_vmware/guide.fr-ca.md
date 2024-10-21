@@ -1,7 +1,7 @@
 ---
 title: "Déployer une machine virtuelle avec SAP HANA et OVHcloud Backint Agent pré-installés"
 excerpt: "Ce guide fournit les instructions pour le déploiement d'une machine virtuelle SLES for SAP avec SAP HANA et OVHcloud Backint Agent pré-installés"
-updated: 2024-09-06
+updated: 2024-07-19
 ---
 
 ## Objectif
@@ -59,13 +59,11 @@ Une fois les sources SAP HANA déposées dans votre bucket Object Storage S3, vo
 
 ![new-virtual-machine](images/step-1.png){.thumbnail}
 
-2\. Entrez l'URL suivante dans le champ « URL » pour accéder à notre template OVF pour SAP HANA. puis cliquez sur `Next`{.action}.
+2\. Entrez l'URL suivante dans le champ « URL » pour accéder à notre template OVF pour SAP HANA, puis cliquez sur `Next`{.action}.
 <a name="ovf_link"></a>  
 
-L'URL ci-dessous est un exemple, vous devez remplacer la valeur `pcc-xxx-xxx-xxx-xxx.ovh.xxx` par l'URL de votre service VMware on OVHcloud.
-
 ```console
-https://plugin.pcc-xxx-xxx-xxx-xxx.ovh.xxx:3330/sles4sap-sap-hana-SLE15-SP5-Full-x86_64/sles4sap-sap-hana-SLE15-SP5-Full-x86_64.ovf
+https://templates-pcc-for-hana.s3.sbg.perf.cloud.ovh.net/sles4sap-sap-hana-SLE15-SP5-Full-x86_64/sles4sap-sap-hana-SLE15-SP5-Full-x86_64.ovf
 ```
 
 ![deploy-from-template](images/step-2.png){.thumbnail}

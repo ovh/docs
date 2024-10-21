@@ -40,7 +40,7 @@ Nous allons joindre à l'instance un *user-data*. Lors du démarrage de l'instan
 
 Le fichier XML est inclus dans le template que nous allons joindre à l'instance lors de sa création. 
 
-/// details | Voici le fichier à utiliser pour suivre ce guide : 
+Voici le fichier à utiliser pour suivre ce guide : 
 
 ```xml
 #!/bin/bash -e
@@ -567,8 +567,6 @@ systemctl reload nginx
 apt-get -y install 3cxpbx
 
 ```
-
-///
 
 Dans ce template, il y a deux éléments à modifier pour un premier test de déploiement :
 

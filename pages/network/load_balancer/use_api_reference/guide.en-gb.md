@@ -206,7 +206,7 @@ For a complete reference to the API functions of the OVH Load Balancer service, 
 > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/ssl/{id}
 > 
 
-### Delete an SSL certificate 
+### Delete a SSL certificate 
 
 > [!api]
 >

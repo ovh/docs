@@ -46,8 +46,8 @@ Poniżej przedstawiamy kontekst dla powyższego schematu:
 
 ## Wymagania początkowe
 
-- Wykupienie platformy [Private Exchange OVHcloud](/links/web/emails-private-exchange) lub [Trusted Exchange OVHcloud](/links/web/emails-trusted-exchange).
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
+- Wykupienie platformy [Private Exchange OVHcloud](https://www.ovhcloud.com/pl/emails/private-exchange/) lub [Trusted Exchange OVHcloud](https://www.ovhcloud.com/pl/enterprise/products/trusted-exchange/).
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 - Zalogowanie do [API OVHcloud](https://api.ovh.com/).
 - Posiadanie parametrów niezbędnych do skonfigurowania łącznika przesyłania. Skontaktuj się z dostawcą, który dostarcza Ci usługę.
 
@@ -69,7 +69,7 @@ W tym przewodniku znajdziesz również inne przydatne operacje dotyczące łącz
 
 > [!warning]
 >
-> Dodanie łącznika wysyłki jest zarezerwowane i zaplanowane dla ofert [Private Exchange OVHcloud](/links/web/emails-private-exchange) i [Trusted Exchange OVHcloud](/links/web/emails-trusted-exchange). Jeśli włączysz łącznik przesyłania w ofercie Exchange OVHcloud innej niż wyżej wymieniona, może to spowodować wyłączenie go przez naszych administratorów w dowolnym momencie ze względów bezpieczeństwa.
+> Dodanie łącznika wysyłki jest zarezerwowane i zaplanowane dla ofert [Private Exchange OVHcloud](https://www.ovhcloud.com/pl/emails/private-exchange/) i [Trusted Exchange OVHcloud](https://www.ovhcloud.com/pl/enterprise/products/trusted-exchange/). Jeśli włączysz łącznik przesyłania w ofercie Exchange OVHcloud innej niż wyżej wymieniona, może to spowodować wyłączenie go przez naszych administratorów w dowolnym momencie ze względów bezpieczeństwa.
 
 Przed rozpoczęciem przygotuj poniższe informacje. Są one dostarczane przez dostawcę łącznika nadawczego.
 
@@ -78,7 +78,7 @@ Przed rozpoczęciem przygotuj poniższe informacje. Są one dostarczane przez do
 - Przypisana nazwa użytkownika (na przykład: adres e-mail) , **może być opcjonalna w zależności od konektora wysyłkowego**.
 - Hasło powiązane z nazwą użytkownika **może być opcjonalne w zależności od konektora nadawcy**.
 
-Następnie zaloguj się do API OVHcloud za pomocą danych identyfikacyjnych. Skorzystaj z naszego przewodnika [Pierwsze kroki z API OVHcloud ](/pages/manage_and_operate/api/first-steps).
+Następnie zaloguj się do API OVHcloud za pomocą danych identyfikacyjnych. Skorzystaj z naszego przewodnika [Pierwsze kroki z API OVHcloud ](pages/manage_and_operate/api/first-steps).
 
 Aby dodać łącznik wysyłania do platformy Exchange, użyj następującego wywołania API.
 
@@ -326,8 +326,8 @@ Otrzymasz następujący wynik:
 
 [Dodanie domeny do usługi Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

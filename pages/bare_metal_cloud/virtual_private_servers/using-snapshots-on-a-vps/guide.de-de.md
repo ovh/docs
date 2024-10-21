@@ -1,7 +1,7 @@
 ---
 title: "Snapshots auf einem VPS verwenden"
 excerpt: "Erfahren Sie hier, wie Sie im OVHcloud Kundencenter die Snapshot-Option aktivieren und verwenden"
-updated: 2024-09-18
+updated: 2024-04-15
 ---
 
 > [!primary]
@@ -21,25 +21,21 @@ Bevor Sie Backup-Optionen anwenden, empfehlen wir, die [Produktseiten und FAQ](h
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben einen [VPS](https://www.ovhcloud.com/de/vps/) in Ihrem Kunden-Account.
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie unter `Virtual Private Server`{.action} Ihren Server aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie unter `Virtual Private Server`{.action} Ihren Server aus.
 
 ### Schritt 1: Snapshot-Option aktivieren
 
-Scrollen Sie im Tab `Start`{.action} nach unten zum Feld mit der Bezeichnung **Zusammenfassung der Optionen**.  
+Scrollen Sie im Tab `Start`{.action} nach unten zum Feld mit der Bezeichnung **Zusammenfassung der Optionen**. 
 Wenn sich die Option bereits im Status "Aktiviert" befindet, fahren Sie direkt mit Schritt 2 fort. Wenn "Snapshot" noch nicht aktiviert ist, klicken Sie auf `...`{.action} neben "Snapshot". Im Kontextmenü klicken Sie auf `Bestellen`{.action}.
 
 ![snapshotvps](images/snapshot_vps_step1b.png){.thumbnail}
 
 Beachten Sie im nächsten Schritt die Kosteninformation und klicken Sie dann auf `Bestellen`{.action}. Sie werden durch den Bestellvorgang geführt und erhalten eine Bestätigungsmail.
-
-Um die Dienstoption zu kündigen, klicken Sie auf `...`{.action} neben "Snapshot" und wählen `Kündigen`{.action} aus dem Kontextmenü.
-
-![snapshotvps](images/snapshot_vps_cancel.png){.thumbnail}
 
 ### Schritt 2: Einen Snapshot erstellen
 
@@ -68,7 +64,7 @@ Der aktuelle Snapshot kann über einen Download-Link abgerufen werden. Klicken S
 
 > [!primary]
 >
-> Wenn Ihr VPS aus einer älteren Produktreihe stammt, erhalten Sie möglicherweise eine Fehlermeldung, da die Option für einen Legacy VPS nicht verfügbar ist. Diese älteren Dienste erkennen Sie am folgenden Namensschema: *vpsXXXX.ovh.net* (wobei *X* für eine Zahl steht). Sie können diese Server-Referenz im Tab `Start`{.action} Ihres [OVHcloud Kundencenters](/links/manager) überprüfen.
+> Wenn Ihr VPS aus einer älteren Produktreihe stammt, erhalten Sie möglicherweise eine Fehlermeldung, da die Option für einen Legacy VPS nicht verfügbar ist. Diese älteren Dienste erkennen Sie am folgenden Namensschema: *vpsXXXX.ovh.net* (wobei *X* für eine Zahl steht). Sie können diese Server-Referenz im Tab `Start`{.action} Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) überprüfen.
 >
 
 Klicken Sie im Popup-Fenster auf `Download-Link erstellen`{.action}. 

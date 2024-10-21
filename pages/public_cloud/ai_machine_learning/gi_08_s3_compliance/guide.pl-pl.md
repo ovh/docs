@@ -8,7 +8,7 @@ updated: 2023-08-22
 
 This guide is intended to help you to use `S3 buckets` with **AI Tools** via the OVHcloud Control Panel and `ovhai` CLI. This will help you to manage your data when working with AI Notebooks, AI Training and AI Deploy.
 
-<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/h9errIk5oOU?si=88u-tnmzOFD5ND0T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/h9errIk5oOU?si=88u-tnmzOFD5ND0T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Requirements
 

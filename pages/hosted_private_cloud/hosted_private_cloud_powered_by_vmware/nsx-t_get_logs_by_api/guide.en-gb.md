@@ -35,7 +35,7 @@ For example, consider a rule that blocks all IP addresses between `192.168.211.0
 
 To access the configuration of a rule, click the settings button (in the form of a cogwheel) to the right of the rule you have chosen.
 
-![Configuration rules for the Gateway Firewall](images/01nsx-t_get_logs_by_api.png){.thumbnail}
+![Configuration rules for the the Gateway Firewall](images/01nsx-t_get_logs_by_api.png){.thumbnail}
 
 The rule settings are then available. Enable the `logging`{.action} option that should switch to green.
 

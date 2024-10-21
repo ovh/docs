@@ -10,7 +10,7 @@ updated: 2024-02-20
 
 ## Ziel
 
-Sie können Ihre Public Cloud Instanzen in Ihrem [Kundencenter](/links/manager) verwalten.
+Sie können Ihre Public Cloud Instanzen in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verwalten.
 
 **In dieser Anleitung werden die im OVHcloud Kundencenter für eine Public Cloud Instanz verfügbaren Aktionen beschrieben.**
 
@@ -18,11 +18,11 @@ Sie können Ihre Public Cloud Instanzen in Ihrem [Kundencenter](/links/manager) 
 
 - Sie haben ein [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud/) in Ihrem OVHcloud Kunden-Account.
 - Sie haben eine [Public Cloud Instanz](/pages/public_cloud/compute/public-cloud-first-steps) in Ihrem Projekt erstellt.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus.
 
 ### Das Instanzen-Verwaltungsinterface verwenden
 
@@ -59,7 +59,7 @@ Die neue Seite zeigt eine modifizierte Ansicht der Optionen zur [Erstellung von 
 
 - **Instanz-Name ändern**: Sie können der Instanz einen Namen geben, um die Identifikation zu vereinfachen.
 - **Image ändern**: Sie können ein anderes Betriebssystem für die Instanz auswählen. (Beachten Sie, dass bei der Reinstallation einer Instanz alle darauf liegenden Daten gelöscht werden.)
-- **Modell ändern**: Sie können auf einen anderen Instanz-Typ wechseln. Weitere Informationen zu diesen Optionen finden Sie in [dieser Anleitung](/pages/public_cloud/compute/public-cloud-first-steps#model).
+- **Modell ändern**: Sie können auf einen anderen Instanz-Typ wechseln. Weitere Informationen zu diesen Optionen finden Sie in [dieser Anleitung](/pages/public_cloud/compute/public-cloud-first-steps#schritt-3-instanz-erstellen).
 - **Abrechnungszeitraum ändern**: Sie können die Abrechnungsart der Instanz von stündlicher auf monatliche Abrechnung ändern. Weitere Informationen finden Sie in [dieser Anleitung](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing).
 
 #### Backup einer Instanz erstellen
@@ -137,7 +137,7 @@ Wechseln Sie dann vom Dashboard zum Tab `VNC-Konsole`{.action}.
 
 Die VNC-Konsole bietet direkten Zugriff auf Ihre Instanz. Damit dieser Zugang funktioniert, müssen Sie zuerst einen Benutzernamen und ein Passwort auf der Instanz konfigurieren. 
 
-Weitere Informationen zu den notwendigen Schritten finden Sie in unserer Anleitung zur [Erstellung einer Public Cloud Instanz](/pages/public_cloud/compute/public-cloud-first-steps#vnc-console).
+Weitere Informationen zu den notwendigen Schritten finden Sie in unserer Anleitung zur [Erstellung einer Public Cloud Instanz](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance).
 
 ## Weiterführende Informationen
 
@@ -145,6 +145,6 @@ Weitere Informationen zu den notwendigen Schritten finden Sie in unserer Anleitu
 
 [Einführung in Horizon](/pages/public_cloud/compute/introducing_horizon)
 
-Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
+Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](https://www.ovhcloud.com/de/professional-services/), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

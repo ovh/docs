@@ -46,8 +46,8 @@ Eis o contexto do diagrama acima:
 
 ## Requisitos
 
-- Ter subscrito uma plataforma [Private Exchange OVHcloud](/links/web/emails-private-exchange) ou [Trusted Exchange OVHcloud](/links/web/emails-trusted-exchange).
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+- Ter subscrito uma plataforma [Private Exchange OVHcloud](https://www.ovhcloud.com/pt/emails/private-exchange/) ou [Trusted Exchange OVHcloud](https://www.ovhcloud.com/pt/enterprise/products/trusted-exchange/).
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 - Ter acesso às [API da OVHcloud](https://api.ovh.com/).
 - Ter os parâmetros necessários para configurar o conector de envio. Aproxime-se do prestador que lhe entrega o serviço.
 
@@ -69,7 +69,7 @@ Neste guia, encontrará também outras operações úteis relativas aos conector
 
 > [!warning]
 >
-> A adição de um conector de envio é reservada e está prevista para as ofertas [Private Exchange OVHcloud](/links/web/emails-private-exchange) e [Trusted Exchange OVHcloud](/links/web/emails-trusted-exchange). Se ativar um conector de envio numa oferta Exchange OVHcloud que não as mencionadas anteriormente, poderá ver a oferta desativada a qualquer momento pelos nossos administradores, por razões de segurança.
+> A adição de um conector de envio é reservada e está prevista para as ofertas [Private Exchange OVHcloud](https://www.ovhcloud.com/pt/emails/private-exchange/) e [Trusted Exchange OVHcloud](https://www.ovhcloud.com/pt/enterprise/products/trusted-exchange/). Se ativar um conector de envio numa oferta Exchange OVHcloud que não as mencionadas anteriormente, poderá ver a oferta desativada a qualquer momento pelos nossos administradores, por razões de segurança.
 
 Antes de começar, precisará das seguintes informações: Devem ser fornecidas pelo prestador que emite o conector de envio.
 
@@ -78,7 +78,7 @@ Antes de começar, precisará das seguintes informações: Devem ser fornecidas 
 - o nome de utilizador associado (por exemplo, um endereço de e-mail) , **pode ser opcional em função do seu conector de envio**.
 - a palavra-passe associada ao nome de utilizador, **pode ser opcional consoante o seu conector de envio**.
 
-De seguida, aceda às API da OVHcloud com os seus dados de acesso. Não hesite em consultar o nosso guia [Primeiros passos com as API OVHcloud ](/pages/manage_and_operate/api/first-steps).
+De seguida, aceda às API da OVHcloud com os seus dados de acesso. Não hesite em consultar o nosso guia [Primeiros passos com as API OVHcloud ](pages/manage_and_operate/api/first-steps).
 
 Para adicionar um conector de envio à sua plataforma Exchange, utilize a seguinte chamada API.
 
@@ -326,8 +326,8 @@ Obtém o seguinte resultado:
 
 [Adicionar um domínio ao serviço Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

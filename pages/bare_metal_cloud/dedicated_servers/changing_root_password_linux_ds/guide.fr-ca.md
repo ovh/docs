@@ -16,7 +16,7 @@ Même si le serveur n’est pas utilisé à des fins nécessitant l’administra
 
 ## Prérequis
 
-- Un [serveur dédié](/links/bare-metal/bare-metal) ou un [VPS](https://www.ovhcloud.com/fr-ca/vps/) avec un système d'exploitation Linux dans votre compte OVHcloud
+- Un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/) ou un [VPS](https://www.ovhcloud.com/fr-ca/vps/) avec un système d'exploitation Linux dans votre compte OVHcloud
 - Disposer des identifiants de connexion reçus par e-mail suite à l'installation.
 
 ## En pratique
@@ -405,4 +405,4 @@ Cela devrait être suffisant pour appliquer les modifications. Sinon, redémarre
 
 [Sécuriser un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps)
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

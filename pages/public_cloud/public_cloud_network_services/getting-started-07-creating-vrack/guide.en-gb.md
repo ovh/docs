@@ -164,7 +164,7 @@ In the **Private Network Name** field, set a name for your private network.
 
 **Create a Gateway and connect to the private network**
 
-Select this option if you intend to create instances with a private network only. For more information, please consult the following guides: [Creating a private network with Gateway](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway) and [Creating and connecting to your first Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps).
+Select this option if you intend to create instances with a private network only. For more information, please consult the following guides: [Creating a private network with Gateway](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway) and [Creating and connecting to your first Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps#step-3-creating-an-instance).
 
 > [!warning]
 > If the option is greyed out, it means the region selected does not support it. For more information, please refer to our [regions availability](https://www.ovhcloud.com/en-gb/public-cloud/regions-availability/) page. 
@@ -244,7 +244,7 @@ There are two possible scenarios:
 
 ##### **In the OVHcloud Control Panel**
 
-If you need assistance, follow this guide first: [Creating an instance in the OVHcloud Control Panel](/pages/public_cloud/compute/public-cloud-first-steps). When creating an instance, you can specify, in Step 4, a private network to integrate your instance into. Choose your previously created vRack from the drop-down menu.
+If you need assistance, follow this guide first: [Creating an instance in the OVHcloud Control Panel](/pages/public_cloud/compute/public-cloud-first-steps#create-instance). When creating an instance, you can specify, in Step 4, a private network to integrate your instance into. Choose your previously created vRack from the drop-down menu.
 
 ![attach new instance](images/network-selection.png){.thumbnail}
 

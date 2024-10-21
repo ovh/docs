@@ -6,7 +6,7 @@ updated: 2024-01-22
 
 ## Objective
 
-You can identify an old-range VPS by the reference name displayed in your [OVHcloud Control Panel](/links/manager): If this internal identifier has the format *vpsXXXX.ovh.net* (in which *X* stands for a number) and you have not migrated the corresponding VPS to our [current product line](https://www.ovhcloud.com/en/vps/), this is a legacy VPS. There are a few differences to consider when managing such a service.
+You can identify an old-range VPS by the reference name displayed in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we): If this internal identifier has the format *vpsXXXX.ovh.net* (in which *X* stands for a number) and you have not migrated the corresponding VPS to our [current product line](https://www.ovhcloud.com/en/vps/), this is a legacy VPS. There are a few differences to consider when managing such a service.
 
 The reference name of a current VPS looks like this: *vps-XXXXXXX.vps.ovh.net* (where *X* can be a number or a letter).
 
@@ -15,11 +15,11 @@ The reference name of a current VPS looks like this: *vps-XXXXXXX.vps.ovh.net* (
 ## Requirements
 
 - A legacy [Virtual Private Server](https://www.ovhcloud.com/en/vps/vps-offer-migration/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](/links/manager), open `Bare Metal Cloud`{.action} and select your server from `Virtual Private Servers`{.action}. On the `Home`{.action} tab you can access the main VPS operations from the section **Shortcuts**.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), open `Bare Metal Cloud`{.action} and select your server from `Virtual Private Servers`{.action}. On the `Home`{.action} tab you can access the main VPS operations from the section **Shortcuts**.
 
 ![controlpanel](images/legacy_vps_1.png){.thumbnail}
 
@@ -107,7 +107,7 @@ Use this option to connect to your VPS via KVM. Find all the details in [our gui
 
 ### Change holder
 
-This link directs you to the form to fill out in case the owner of the VPS has to be changed. Contact our support teams by creating a ticket in the [OVHcloud Control Panel](/links/manager) if you need assistance with this procedure.
+This link directs you to the form to fill out in case the owner of the VPS has to be changed. Contact our support teams by creating a ticket in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) if you need assistance with this procedure.
 
 ### Migrate to the new range
 
@@ -123,4 +123,4 @@ Your VPS can be migrated to the current range automatically. Find out the benefi
 
 [Getting started with a VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

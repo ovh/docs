@@ -24,7 +24,7 @@ Tutorial przedstawia kroki, jakie należy podjąć, aby zaktualizować system op
 
 ## Wymagania początkowe
 
-- Dostęp [administratora do serwera](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance)
+- Dostęp [root do serwera](/pages/public_cloud/compute/become_root_and_change_password)
 - Wykonanie [kopii zapasowej instancji](/pages/public_cloud/compute/save_an_instance)
 
 ## W praktyce

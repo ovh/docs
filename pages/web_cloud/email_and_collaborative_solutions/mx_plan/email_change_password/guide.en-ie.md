@@ -15,8 +15,8 @@ You can access your OVHcloud email accounts using the password associated with t
 
 ## Requirements
 
-- A preconfigured OVHcloud email solution, such as [**Hosted Exchange**](/links/web/emails-hosted-exchange), [**Email Pro**](/links/web/email-pro) or **MX Plan** (available with a [web hosting plan](/links/web/hosting), a [100M free hosting](/links/web/domains-free-hosting), or ordered separately)
-- Access to the [OVHcloud Control Panel](/links/manager) or access to the email account via [webmail](/links/web/email), depending on the method used
+- A preconfigured OVHcloud email solution, such as [**Hosted Exchange**](https://www.ovhcloud.com/en-ie/emails/hosted-exchange/), [**Email Pro**](https://www.ovhcloud.com/en-ie/emails/email-pro/)) or **MX Plan** (available with a [web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/), a [100M free hosting](https://www.ovhcloud.com/en-ie/domains/free-web-hosting/), or ordered separately)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) or access to the email account via [webmail](https://www.ovhcloud.com/en-ie/mail/), depending on the method used
 
 > [!primary]
 >
@@ -34,7 +34,7 @@ You can access your OVHcloud email accounts using the password associated with t
 > [!warning]
 > For security reasons, we recommend not using the same password twice, and choosing one that does not contain any personal information (e.g. your surname, first name and date of birth). We also recommend renewing your password regularly.
 
-In the [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, then follow the instructions for your solution
+In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), go to the `Web Cloud`{.action} section, then follow the instructions for your solution
 
 > [!tabs]
 > **MX Plan email (legacy version)**
@@ -77,9 +77,9 @@ Changing your password via webmail is available for OVHcloud email offers using 
 > The email solution **MX Plan legacy** uses Roundcube webmail. You can only change your password [via the OVHcloud Control Panel](#controlpanel).
 >
 
-<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Go to the [webmail page](/links/web/email). Enter your full email address and password, then click the `Login`{.action} button. 
+Go to the [webmail page](https://www.ovhcloud.com/en-ie/mail/). Enter your full email address and password, then click the `Login`{.action} button. 
 
 ![email](images/mxplan-password-new-step2.png){.thumbnail}
 
@@ -124,6 +124,6 @@ In the table below, you will find the information you need to identify your MX P
 
 [Getting started with the Hosted Exchange solution](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our support [offers](/links/support).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our support [offers](https://www.ovhcloud.com/en-ie/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -20,7 +20,7 @@ Oltre a consentire un indirizzamento IP privato, la [vRack](https://www.ovh.it/s
 - Aver selezionato un intervallo di indirizzi IP privati
 - Disporre di un [server compatibile con la vRack](https://www.ovh.it/server_dedicati/){.external}
 - Aver attivato un servizio [vRack](https://www.ovh.it/soluzioni/vrack/){.external}
-- Essere connesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
+- Essere connesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 > [!warning]
 > Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](https://eco.ovhcloud.com/it/about/).
@@ -44,7 +44,7 @@ Oltre a consentire un indirizzamento IP privato, la [vRack](https://www.ovh.it/s
 > Questa configurazione permette di configurare gli IP di uno stesso blocco su più server, a condizione che questi server siano tutti nella stessa vRack del blocco IP. Il blocco IP deve avere almeno 2 indirizzi IP utilizzabili o più per farlo.
 >
 
-Nello [Spazio Cliente OVHcloud](/links/manager), accedi alla sezione `Bare Metal Cloud`{.action} e clicca su `Network`{.action}. In seguito, apri il menu `vRack`{.action}
+Nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), accedi alla sezione `Bare Metal Cloud`{.action} e clicca su `Network`{.action}. In seguito, apri il menu `vRack`{.action}
 
 Seleziona la tua vRack nella lista per visualizzare la lista dei servizi ammissibili. Clicca sul blocco IP che vuoi aggiungere alla vRack e clicca su `Aggiungi`{.action}.
 

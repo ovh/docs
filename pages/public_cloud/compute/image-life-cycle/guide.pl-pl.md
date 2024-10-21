@@ -1,161 +1,32 @@
 ---
-title: 'Public Cloud & VPS - Image and OS life cycle and end of life/support announcements'
-excerpt: Discover the lifecycle and end-of-life/end-of-support announcements for distributions and softwares for your VPS or Public Cloud instance
-updated: 2024-09-04
+title: 'Public Cloud & VPS - Cykl życia obrazów'
+excerpt: Poznaj cykl życia obrazów dostarczanych dla Public Cloud & VPS
+updated: 2023-06-19
 ---
 
-## Objective
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+>
 
-This documentation will share the end of life (EOL) roadmap for OVHcloud images. OVHcloud follows the official life cycle of each distribution. This means that when a distribution reaches its end of life, it will also be the EOL of the corresponding OVHcloud image for VPS and Public Cloud services on the same date.
+## Wprowadzenie
 
-This guide will provide you with information on the end of life (EO) roadmap for OVHcloud images, as well as end-of-life and support announcements for distributions and software available with OVHcloud [VPS](https://www.ovhcloud.com/pl/vps/os/) and [Public Cloud instances](https://www.ovhcloud.com/pl/public-cloud/public-image-catalog/). Stay up to date on critical changes that could affect the security and performance of your services.
+Ta strona zawiera dokumentację roadmapu *End of Life* lub EOL obrazów OVHcloud. OVHcloud stosuje oficjalny cykl życia każdej dystrybucji. Oznacza to, że kiedy dystrybucja spada pod koniec życia, odpowiadający jej obraz OVHcloud będzie miał również oznaczenie EOL w tym samym dniu w przypadku usług VPS i Public Cloud.
 
-**Discover the lifecycle and end-of-life/end-of-support announcements for distributions and softwares for your VPS or Public Cloud instance.**
+## Cykl życia dystrybucji
 
-## Distribution Life Cycle
-
-| Distribution                  | URL                                                                                       |
+| Dystrybucja                  | URL                                                                                       |
 | ----------------------------- | ----------------------------------------------------------------------------------------- |
-| Debian                        | [Life Cycle](https://wiki.debian.org/DebianReleases)                                      |
-| Ubuntu                        | [Life Cycle](https://wiki.ubuntu.com/Releases)                                            |
-| Centos                        | [Life Cycle](https://wiki.centos.org/About/Product)                                       |
-| Fedora                        | [Life Cycle](https://fedoraproject.org/wiki/Fedora_Release_Life_Cycle)                    |
-| Almalinux                     | [Life Cycle](https://wiki.almalinux.org/release-notes/)                                   |
-| Rocky Linux                   | [Life Cycle](https://wiki.rockylinux.org/rocky/version/)                                  |
-| CloudLinux                    | [Life Cycle](https://docs.cloudlinux.com/introduction/#cloudlinux-os-life-cycle)          |
-| Windows Server 2016           | [Life Cycle](https://docs.microsoft.com/en-us/lifecycle/products/windows-server-2016)     |
-| Windows Server 2019           | [Life Cycle](https://docs.microsoft.com/en-us/lifecycle/products/windows-server-2019)     |
-| Windows Server 2022           | [Life Cycle](https://docs.microsoft.com/en-us/lifecycle/products/windows-server-2022)     |
+| Debian                        | [Cykl życia](https://wiki.debian.org/DebianReleases)                                      |
+| Ubuntu                        | [Cykl życia](https://wiki.ubuntu.com/Releases)                                            |
+| Centos                        | [Cykl życia](https://wiki.centos.org/About/Product)                                       |
+| Fedora                        | [Cykl życia](https://fedoraproject.org/wiki/Fedora_Release_Life_Cycle)                    |
+| Almalinux                     | [Cykl życia](https://wiki.almalinux.org/release-notes/)                                   |
+| Rocky Linux                   | [Cykl życia](https://wiki.rockylinux.org/rocky/version/)                                  |
+| CloudLinux                    | [Cykl życia](https://docs.cloudlinux.com/introduction/#cloudlinux-os-life-cycle)          |
+| Windows Server 2016           | [Cykl życia](https://docs.microsoft.com/en-us/lifecycle/products/windows-server-2016)     |
+| Windows Server 2019           | [Cykl życia](https://docs.microsoft.com/en-us/lifecycle/products/windows-server-2019)     |
+| Windows Server 2022           | [Cykl życia](https://docs.microsoft.com/en-us/lifecycle/products/windows-server-2022)     |
 
-## End of Support/End of Life Announcements
+## Sprawdź również
 
-### AlmaLinuxOS
-
-Find more information on <https://endoflife.date/almalinux>.
-
-#### AlmaLinux 8
-
-- End of active support: 2024-05-31
-- End of security support: 2029-05-31
-
-#### AlmaLinux 9
-
-- End of active support: 2027-05-31
-- End of security support: 2032-05-31
-
-### CentOS
-
-Find more information on <https://endoflife.date/centos>.
-
-#### CentOS 7
-
-- End of Life: 2024-06-30
-
-### Debian
-
-Find more information on <https://endoflife.date/debian>.
-
-#### Debian 10
-
-- End of Support: 2024-06-30
-
-#### Debian 11
-
-- End of Support: 2026-06-30
-
-#### Debian 12
-
-- End of Support: 2028-06-30
-
-### Fedora Linux
-
-Find more information on <https://endoflife.date/fedora>.
-
-#### Fedora 37
-
-- End of Life: 2023-05-12
-
-#### Fedora 38
-
-- End of Life: 2024-05-21
-
-### Rocky Linux
-
-More information is available at <https://endoflife.date/rocky-linux>.
-
-#### Rocky Linux 8
-
-- End of active support: 2024-05-31
-- End of security support: 2029-05-31
-
-#### Rocky Linux 9
-
-- End of active support: 2027-05-31
-- End of security support: 2032-05-31
-
-### Ubuntu
-
-Find more information on <https://endoflife.date/ubuntu>.
-
-#### Ubuntu 20.04
-
-- End of security and maintenance support: 2025-04-02
-- End of extended security support: 2030-04-02
-
-#### Ubuntu 21.04
-
-- End of Life: 2022-01-20
-
-#### Ubuntu 22.04
-
-- End of security and maintenance support: 2027-04-01
-- End of extended security support: 2032-04-09
-
-#### Ubuntu 23.04
-
-- End of Life: 2024-01-25
-
-### Microsoft Windows Server
-
-Find more information on <https://endoflife.date/windows-server>.
-
-#### Windows Server 2016 Standard (Desktop)
-
-- End of active support: 2022-01-11
-- End of security support: 2027-01-12
-
-#### Windows Server 2019 Standard (Desktop)
-
-- End of active support: 2024-01-09
-- End of security support: 2029-01-09
-
-#### Windows Server 2022 Standard (Desktop)
-
-- End of active support: 2026-10-13
-- End of security support: 2031-10-14
-
-### AlmaLinux OS
-
-Find more information on <https://endoflife.date/almalinux>.
-
-#### AlmaLinux 8 - cPanel
-
-- End of Life (cPanel): 2029-03-01
-
-### Debian
-
-Find more information on <https://endoflife.date/debian>.
-
-#### Debian 10 - Plesk
-
-- End of Standard Support (Debian 10): 2024-06-30
-- End of Extended Support (Debian 10): 2025-07-01
-
-#### Debian 10 - Docker
-
-- End of security support: 2022-09-10
-- End of long-term support: 2024-06-30
-
-## Go further
-
-Join our [community of users](/links/community).
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

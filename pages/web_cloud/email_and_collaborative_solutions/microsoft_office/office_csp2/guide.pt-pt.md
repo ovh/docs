@@ -16,7 +16,7 @@ O Office 365 Revendedores (CSP2) é um serviço que lhe permite beneficiar de di
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 - Dispor de um [MPN ID](https://learn.microsoft.com/partner-center/mpn-create-a-partner-center-account) (Microsoft Partner Network IDentifier) 
 - Estar inscrito no programa CSP (Cloud Solution Provider) da Microsoft enquanto revendedor indireto na região em que exerce a sua atividade (por exemplo: "UE" para a Europa)
 
@@ -27,9 +27,9 @@ O Office 365 Revendedores (CSP2) é um serviço que lhe permite beneficiar de di
 > Para qualquer nova subscrição, é agora obrigatório dispor de um MPN ID.
 >
 
-Se ainda não dispõe de um MPN ID, pode criar um (se é elegível para as condições Microsoft) seguindo a documentação oficial da Microsoft ["O que é o Microsoft Cloud Partner Program? "](https://docs.microsoft.com/partner-center/mpn-create-a-partner-center-account).
+Se ainda não dispõe de um MPN ID, pode criar um (se é elegível para as condições Microsoft) seguindo a documentação oficial da Microsoft ["O que é o Microsoft Cloud Partner Program? "](https://docs.microsoft.com/partner-center/mpn-create-a-partner-center-account){.external}.
 
-Para se inscrever como revendedor indireto, convidamo-lo a consultar a documentação Microsoft ["Inscrever-se no programa Fornecedor de soluções Cloud"](https://docs.microsoft.com/partner-center/enrolling-in-the-csp-program#enroll-as-an-indirect-reseller).
+Para se inscrever como revendedor indireto, convidamo-lo a consultar a documentação Microsoft ["Inscrever-se no programa Fornecedor de soluções Cloud"](https://docs.microsoft.com/partner-center/enrolling-in-the-csp-program#enroll-as-an-indirect-reseller){.external}.
 
 O MPN ID permite-lhe obter um backup das subscrições que encomendará através da Área de Cliente OVHcloud. Este cashback está sujeito a regras definidas pela Microsoft, em função dos volumes de subscrições que gerará.
 
@@ -37,7 +37,7 @@ O MPN ID permite-lhe obter um backup das subscrições que encomendará através
 
 ### Encomendar um serviço Office 365 Revendedores
 
-Para encomendar um serviço Office 365 Revendedores, aceda à [Área de Cliente OVHcloud](/links/manager). Depois de conectar, selecione `Sunrise`{.action} no painel superior e clique em `Office 365 Revendedores`{.action}.
+Para encomendar um serviço Office 365 Revendedores, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Depois de conectar, selecione `Sunrise`{.action} no painel superior e clique em `Office 365 Revendedores`{.action}.
 
 - *Facultativo*: pode definir um **subdomínio personalizado** durante a criação de uma nova plataforma, selecionando a opção prevista para o efeito (sob reserva dos nomes disponíveis).
 - Introduza o seu MPN ID previamente criado junto da Microsoft.
@@ -59,7 +59,7 @@ Para encomendar um serviço Office 365 Revendedores, aceda à [Área de Cliente 
 
 ### Gerir o serviço Office 365 Revendedor
 
-Depois de criado e disponível o serviço Office 365, poderá geri-lo a partir da [Área de Cliente OVHcloud](/links/manager).
+Depois de criado e disponível o serviço Office 365, poderá geri-lo a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 Para isso, aceda à secção `Sunrise`{.action}. No menu à esquerda, escolha o `Office 365 Revendedores`{.action} e selecione o serviço.
 
@@ -89,14 +89,14 @@ O ícone <i class="icons-pen"></i>  permite modificar o número total de licenç
 
 > [!primary]
 >
-> Devem ser respeitadas condições particulares de utilização fornecidas pela Microsoft para as licenças Educação. Pode encontrar estes documentos oficiais em função da sua língua e região [aqui](https://www.microsoft.com/licensing/docs).
+> Devem ser respeitadas condições particulares de utilização fornecidas pela Microsoft para as licenças Educação. Pode encontrar estes documentos oficiais em função da sua língua e região [aqui](https://www.microsoft.com/licensing/docs){.external}.
 >
 
 ![office365](images/sunrise_office365_CSP2_Subscribers.png){.thumbnail}
 
 ### Gerir os utilizadores
 
-Agora que dispõe de um número de licenças suficiente, deve gerir os utilizadores que as utilizarão. Esta parte efetua-se diretamente a partir do [portal de administração Microsoft](https://portal.office.com/Admin/Default.aspx).
+Agora que dispõe de um número de licenças suficiente, deve gerir os utilizadores que as utilizarão. Esta parte efetua-se diretamente a partir do [portal de administração Microsoft](https://portal.office.com/Admin/Default.aspx){.external}.
 
 Para se conectar, deve introduzir o seu ID de utilizador bem como a palavra-passe enviada para o e-mail OVHcloud, confirmando a instalação do seu grupo de licenças. Estas informações devem ser enviadas para o endereço indicado aquando da criação do grupo de licenças.
 

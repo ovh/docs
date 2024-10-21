@@ -20,8 +20,8 @@ Quando aggiungi un dominio sulla tua piattaforma di posta, potrebbe esserti rich
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}.
-- Disporre di una soluzione [Exchange](/links/web/emails) o [Email Pro](/links/web/email-pro).
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione `Web Cloud`{.action}.
+- Disporre di una soluzione [Exchange](https://www.ovhcloud.com/it/emails/) o [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/).
 - Aver aggiunto un dominio sulla piattaforma di posta. Per maggiori informazioni, consulta la guida "[Aggiungere un dominio su una piattaforma email](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)".
 - Essere in grado di [configurare la zona DNS](/pages/web_cloud/domains/dns_zone_edit) del dominio dallo Spazio Cliente OVHcloud o dall’interfaccia di gestione in cui è registrato.
 
@@ -31,9 +31,9 @@ Quando aggiungi un dominio sulla tua piattaforma di posta, potrebbe esserti rich
 
 Il record CNAME viene utilizzato qui in quanto alias, punta verso una destinazione che, a sua volta, restituisce verso un indirizzo IP. Non si tratta quindi, di per sé, di un record associato a un servizio di posta elettronica.
 
-Nell'ambito delle nostre offerte [**Hosted Exchange**](/links/web/emails-hosted-exchange) e [**Email Pro**](/links/web/email-pro), il record CNAME viene utilizzato come codice di conferma (token) che sarà visibile nella zona DNS del dominio da convalidare. con lo scopo di verificare che l’utente della piattaforma email sia il gestore del dominio aggiunto.
+Nell'ambito delle nostre offerte [**Hosted Exchange**](https://www.ovhcloud.com/it/emails/hosted-exchange/) e [**Email Pro**](https://www.ovhcloud.com/it/emails/email-pro/), il record CNAME viene utilizzato come codice di conferma (token) che sarà visibile nella zona DNS del dominio da convalidare. con lo scopo di verificare che l’utente della piattaforma email sia il gestore del dominio aggiunto.
 
-Nel diagramma che segue, la piattaforma di posta elettronica ([Exchange](/links/web/emails) o [Email Pro](/links/web/email-pro)) è rappresentata dal frame verde.<br>
+Nel diagramma che segue, la piattaforma di posta elettronica ([Exchange](https://www.ovhcloud.com/it/emails/) o [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/)) è rappresentata dal frame verde.<br>
 Per formare gli indirizzi email aggiungi account (rappresentati da "**contact**", "**john.smith**" e "**mary.johnson**").<br>
 Il dominio **mydomain.ovh** è stato aggiunto alla piattaforma email (consulta la guida "[Aggiungere un dominio su una piattaforma email](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)").<br>
 Un codice di conferma viene generato dalla piattaforma (nel nostro esempio, sotto forma di "**abcd1-check**").<br>

@@ -5,7 +5,7 @@ updated: 2018-10-12
 ---
 
 ## Introduction
-In this case, we want to get sourceIP, scheme trouth OVH API LoadBalancing, without install our SSL Certitificate on it. This is helpful if you have many domains with many SSL certificates.
+In this case, we want to get sourceIP, scheme trouth OVH API LoadBalancing, without install our SSL Certitificate on it. This is helpfull if you have many domains with many SSL certificates.
 
 ## Requirements
 We assume you have already an OVH Load Balancer HTTP configured, if not follow ..refs:fr/fr/cloud/iplb/configure-iplb
@@ -15,7 +15,7 @@ You have :
 - An OVH Load Balancer service
 - Nginx (or Apache with mod_proxyprotocol) on an OVH backend
 - A domain (option)
-- An SSL certificate (option)
+- A SSL certificiate (option)
 
 ### Nginx Configuration
 For this example we use this minimal nginx configuration on each backend.
@@ -147,7 +147,7 @@ Create a new farm for each port on backend.
 > 
 
 ### Firewall
-Don't forget to allow IPLoadbalancing traffic to your backends:
+Don't forget to allow IPLoadbalancing trafic to your backends:
 
 > [!api]
 >

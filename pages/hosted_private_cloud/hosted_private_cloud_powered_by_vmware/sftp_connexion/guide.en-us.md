@@ -1,17 +1,11 @@
 ---
 title: 'Logging in via SFTP'
 excerpt: 'Find out how to log in to your Private Cloud via SFTP'
-updated: 2024-09-17
+updated: 2021-12-28
 ---
 
-> [!warning]
->
-> **This procedure is now deprecated**.
->
-> To upload files to your datastore, please use the method described in this guide: [Uploading files to the VMware vSphere on OVHcloud datastore](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_datastore_upload).
->
-
 ## Objective
+
 Connecting to your datastores via Secure File Transfer Protocol (SFTP) allows you to add local backup files to your infrastructure. You can connect from a graphical interface with software such as FileZilla, available on Windows and Mac. You can also log in using the command line from your Linux operating system.
 
 You will however only be able to access the "upload-vpn" folder of your datastores. Files outside this folder will not be accessible with this method.

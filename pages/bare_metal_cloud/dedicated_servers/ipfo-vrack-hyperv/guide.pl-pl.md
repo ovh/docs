@@ -20,7 +20,7 @@ Postępuj zgodnie z instrukcjami procesu instalacji Hyper-V, połączenia wirtua
 - Obraz ISO systemu operacyjnego, który zostanie zainstalowany na Twojej wirtualnej maszynie (CentOS 7 zostanie użyty jako przykład w tym przewodniku).
 - vRack dostarczony na Twoje konto OVHcloud.
 - Blok IP 4 adresów IP lub więcej.
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 > [!warning]
 > Funkcja ta może być niedostępna lub ograniczona na [serwerach dedykowanych **Eco**](https://eco.ovhcloud.com/pl/about/).

@@ -1,7 +1,7 @@
 ---
 title: 'Configurar una IP como alias'
 excerpt: 'Descubra cómo añadir direcciones Additional IP a la configuración de un servidor'
-updated: 2024-09-27
+updated: 2024-03-25
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2024-09-27
 
 > [!primary]
 >
-> Desde el 6 de octubre de 2022, nuestra solución "Failover IP" se denomina desde ahora [Additional IP](/links/network/additional-ip). Esto no afectará a sus funcionalidades.
+> Desde el 6 de octubre de 2022, nuestra solución "Failover IP" se denomina desde ahora [Additional IP](https://www.ovhcloud.com/es-es/network/additional-ip/). Esto no afectará a sus funcionalidades.
 >
 
 ## Objetivo
@@ -21,8 +21,8 @@ El alias de IP (*IP aliasing* en inglés) es una configuración especial de la r
 
 ## Requisitos
 
-- Tener un [servidor dedicado](/links/bare-metal/bare-metal){.external}
-- Tener una o más direcciones [Additional IP](/links/network/additional-ip){.external}.
+- Tener un [servidor dedicado](https://www.ovhcloud.com/es-es/bare-metal/){.external}
+- Tener una o más direcciones [Additional IP](https://www.ovhcloud.com/es-es/bare-metal/ip/){.external}.
 - Estar conectado al servidor por SSH (acceso *sudo*).
 
 > [!warning]
@@ -49,7 +49,7 @@ Las siguientes secciones contienen las configuraciones de distribuciones que ofr
 
 En los ejemplos siguientes utilizaremos el editor de texto `nano`. En algunos sistemas operativos, es necesario instalarlo antes de utilizarlo. En ese caso, se le pedirá que lo haga. Por supuesto, puede utilizar el editor de texto que prefiera.
 
-### Debian 11
+### Debian 10/11
 
 Por defecto, el fichero de configuración se encuentra en `/etc/network/interfaces.d/`. Se recomienda realizar una copia de seguridad del archivo de configuración correspondiente.
 
@@ -164,7 +164,7 @@ Por último, reinicie la interfaz con el siguiente comando:
 sudo /etc/init.d/networking restart
 ```
 
-### Fedora 39 y versiones posteriores
+### Fedora 38 y versiones posteriores
 
 Fedora ahora utiliza archivos clave (*keyfiles*).
 Fedora solía utilizar perfiles de red almacenados por NetworkManager en formato ifcfg en el directorio `/etc/sysconfig/network-scripts/`.<br>
@@ -331,7 +331,7 @@ sudo netplan apply
 > Al utilizar el comando `netplan try`, es posible que el sistema envíe un mensaje de advertencia como `Permissions for /etc/netplan/xx-cloud-init.yaml are too open. Netplan configuration should NOT be accessible by others`. Simplemente significa que el archivo no tiene permisos restrictivos. Esto no afecta a la configuración de su Additional IP. Para obtener más información sobre los permisos de archivo, consulte la [documentación oficial de ubuntu](https://help.ubuntu.com/community/FilePermissions){.external}.
 >
 
-### AlmaLinux (8 & 9), Rocky Linux (8 & 9)
+### CentOS, AlmaLinux (8 & 9), Rocky Linux (8 & 9)
 
 El archivo de configuración principal se encuentra en `/etc/sysconfig/network-scripts/`. En nuestro ejemplo, se denomina `ifcfg-eth0`. Antes de realizar cualquier cambio, compruebe el nombre de archivo real en esta carpeta.
 
@@ -375,9 +375,15 @@ NETMASK=255.255.255.255
 BROADCAST=203.0.113.1
 ```
 
-#### 3. Reinicio de la interfaz
+#### 3. Reinicio de la interfaz alias
 
-A continuación, reinicie la interfaz:
+A continuación, reinicie la interfaz alias. Sustituya `eth0:0` por sus propios valores:
+
+```sh
+ifup eth0:0
+```
+
+#### Para AlmaLinux y Rocky Linux
 
 ```sh
 sudo systemctl restart NetworkManager

@@ -16,22 +16,22 @@ Jeśli skonfigurujesz serwer dedykowany jako serwer DNS, możesz użyć DNS seco
 
 ## Wymagania początkowe
 
-- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal){.external}
+- Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/){.external}
 - Posiadanie [domeny](https://www.ovh.pl/domeny/){.external} podlegającej administracjom lub zarządzaniu technicznym
-- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}.
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 > [!warning]
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 > 
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności lub wątpliwości związanych z administrowaniem, użytkowaniem lub wdrażaniem usług na serwerze zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](/links/partner).
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności lub wątpliwości związanych z administrowaniem, użytkowaniem lub wdrażaniem usług na serwerze zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/).
 > 
 
 ## W praktyce
 
 ### Dodanie domeny <a name="ajoutdomaine"></a>
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Bare Metal Cloud`{.action}, a następnie wybierz swój serwer z `Serwery dedykowane`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Bare Metal Cloud`{.action}, a następnie wybierz swój serwer z `Serwery dedykowane`{.action}.
 
 Następnie kliknij zakładkę `DNS secondary`{.action}, a następnie przycisk `Dodaj domenę`{.action}.
 
@@ -67,7 +67,7 @@ Zanim dodasz domenę do DNS secondary OVHcloud, musisz potwierdzić, że zezwala
 
 - Jeśli domena jest zarządzana przez zewnętrznego operatora domeny lub na tym etapie korzysta z zewnętrznych serwerów DNS, zaloguj się do panelu klienta dostawcy DNS i dodaj rekord TXT z subdomeną "ownercheck" oraz wartością przedstawioną w etapie 2 [Dodania domeny"](#ajoutdomaine).
 
-- Jeśli domena jest zarządzana przez OVHcloud jako serwer do rejestracji i korzysta z serwerów DNS OVHcloud, zamknij okno klikając wcześniej na `Anuluj`{.action}. Następnie postępuj zgodnie z instrukcjami zawartymi w [tym przewodniku](/pages/web_cloud/domains/dns_zone_edit), aby dodać rekord TXT do Panelu [klienta OVHcloud](/links/manager).
+- Jeśli domena jest zarządzana przez OVHcloud jako serwer do rejestracji i korzysta z serwerów DNS OVHcloud, zamknij okno klikając wcześniej na `Anuluj`{.action}. Następnie postępuj zgodnie z instrukcjami zawartymi w [tym przewodniku](/pages/web_cloud/domains/dns_zone_edit), aby dodać rekord TXT do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ![DNS secondary](images/cp-04.png){.thumbnail}
 

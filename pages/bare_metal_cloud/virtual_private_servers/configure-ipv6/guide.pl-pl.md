@@ -1,7 +1,7 @@
 ---
 title: "Konfiguracja IPv6 na serwerze VPS"
 excerpt: "Dowiedz się, jak skonfigurować IPv6 na VPS OVHcloud"
-updated: 2024-09-11
+updated: 2024-03-05
 ---
 
 > [!primary]
@@ -24,7 +24,7 @@ IPv6 to najnowsza wersja *Internet Protocol* (IP). Każdy serwer VPS OVHcloud je
 - Posiadanie [serwera VPS OVHcloud](https://www.ovhcloud.com/pl/vps/){.external}.
 - Połączenie z serwerem VPS przez SSH (dostęp root) lub przez zdalny pulpit (Windows).
 - Posiadanie podstawowej wiedzy w zakresie sieci.
-- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external} lub [API OVHcloud](https://api.ovh.com/).
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} lub [API OVHcloud](https://api.ovh.com/).
 
 ## W praktyce
 
@@ -54,7 +54,7 @@ Pierwszy etap polega na pobraniu adresu IPv6 oraz bramy IPv6 przypisanych do Two
 
 #### W panelu klienta <a name="viacontrolpanel"></a>
 
-Zaloguj się do [Panelu client OVHcloud](/links/manager), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer w części `Prywatny serwer wirtualny`{.action}.
+Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer w części `Prywatny serwer wirtualny`{.action}.
 
 Adres IPv6 i brama IPv6 przypisane do Twojego serwera wyświetlają się w sekcji `IP`. Zapisz adres i bramę, po czym przejdź do etapu 2 “[Konfiguracja adresu IPv6](#applyipv6)”.
 
@@ -203,11 +203,9 @@ sudo cp /etc/network/interfaces.bak /etc/network/interfaces
 
 ##### Konfiguracja przy użyciu Netplan <a name="netplan"></a>
 
-Pliki konfiguracyjne sieci znajdują się w katalogu`/etc/netplan/`. Domyślnie główny plik konfiguracyjny ma nazwę `50-cloud-init.yaml`. Przed kontynuowaniem sprawdź najpierw ten plik, aby sprawdzić, czy adres IPv6 został już skonfigurowany. Jeśli tak jest, nie musisz ponownie konfigurować adresu IPv6, ponieważ dysponujesz tylko jednym adresem IPv6 na serwerze VPS.
+Pliki konfiguracyjne sieci znajdują się w katalogu`/etc/netplan/`. Domyślnie główny plik konfiguracyjny ma nazwę `50-cloud-init.yaml`.
 
-Jeśli adres IPv6 nie został skonfigurowany, najlepszym rozwiązaniem jest utworzenie oddzielnego pliku konfiguracyjnego w celu skonfigurowania adresu IPv6 w katalogu`/etc/netplan/`. W przypadku błędu możesz w prosty sposób wrócić do wprowadzonych zmian.
-
-Zalecamy również dostosowanie uprawnień nowo utworzonego pliku. Aby uzyskać więcej informacji na temat uprawnień plików, zobacz [oficjalną dokumentację Ubuntu](https://help.ubuntu.com/community/FilePermissions){.external}.
+Najlepszym rozwiązaniem jest utworzenie oddzielnego pliku konfiguracyjnego w celu skonfigurowania adresów IPv6 w katalogu`/etc/netplan/`. Dzięki temu możesz w prosty sposób wrócić do zmian w przypadku błędu.
 
 W naszym przykładzie plik nosi nazwę `51-cloud-init-ipv6.yaml`:
 
@@ -224,34 +222,29 @@ network:
     version: 2
     ethernets:
         eth0:
-            dhcp6: false
+            dhcp6: no
             match:
               name: eth0
             addresses:
               - YOUR_IPV6/IPv6_PREFIX
             routes:
-# If IPV6_PREFIX is 128 then add link route to gateway
-#              - to: IPv6_GATEWAY
-#                scope: link
               - to: ::/0
                 via: IPv6_GATEWAY
 ```
 
-Oto konkretny przykład (z prefiksem /128):
+Oto konkretny przykład:
 
 ```yaml
 network:
     version: 2
     ethernets:
         eth0:
-            dhcp6: false
+            dhcp6: no
             match:
               name: eth0
             addresses:
               - 2607:5300:201:abcd::7c5/128
             routes:
-              - to: 2607:5300:201:abcd::1
-                scope: link
               - to: ::/0
                 via: 2607:5300:201:abcd::1
 ```

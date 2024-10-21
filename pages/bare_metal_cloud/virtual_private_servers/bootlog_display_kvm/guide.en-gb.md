@@ -24,7 +24,7 @@ If your VPS has become unresponsive, you still have the possibility to access it
 ## Requirements
 
 - A [VPS](https://www.ovhcloud.com/en-gb/vps/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
 
@@ -37,7 +37,7 @@ If you still have access to your VPS via SSH, you can skip to [step 6](#step6).
 
 ### Step 1: Restart the VPS into rescue mode
 
-Log in to the [OVHcloud Control Panel](/links/manager) and initiate a server reboot in rescue mode. Refer to our [rescue mode guide](/pages/bare_metal_cloud/virtual_private_servers/rescue) if necessary.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and initiate a server reboot in rescue mode. Refer to our [rescue mode guide](/pages/bare_metal_cloud/virtual_private_servers/rescue) if necessary.
 
 ### Step 2: Perform initial verification
 
@@ -160,7 +160,7 @@ Then use the following command to regenerate the GRUB configuration file (the va
 ~$ grub2-mkconfig -o "$(readlink /etc/grub.cfg)"
 ```
 
-Once you have done the modifications, reboot your VPS in 'normal' mode in your [OVHcloud Control Panel](/links/manager). Boot log information should now appear when using the [KVM console](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps).
+Once you have done the modifications, reboot your VPS in 'normal' mode in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Boot log information should now appear when using the [KVM console](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps).
 
 ## Go further
 
@@ -168,4 +168,4 @@ Once you have done the modifications, reboot your VPS in 'normal' mode in your [
 
 [Activating rescue mode on a VPS](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
-Join our [community of users](/links/community).
+Join our community of users at <https://community.ovh.com/en/>.

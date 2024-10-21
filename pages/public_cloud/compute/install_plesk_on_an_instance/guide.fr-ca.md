@@ -19,8 +19,8 @@ Plesk est une interface de gestion de serveurs simple à prendre en main. Vous a
 
 ## Prérequis
 
-- [Avoir créé une instance depuis l'espace client OVHcloud](/links/public-cloud/public-cloud).
-- [Disposer d'un accès administrateur](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance).
+- [Avoir créé une instance depuis l'espace client OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps#etape-3-creer-une-instance).
+- [Passer root et définir un mot de passe](/pages/public_cloud/compute/become_root_and_change_password).
 
 ## En pratique
 
@@ -93,4 +93,4 @@ Une fois la nouvelle clé ajoutée, vous pouvez visualiser le type de licence in
 
 [Documentation officielle de Plesk](https://docs.plesk.com/en-US/onyx/){.external}.
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

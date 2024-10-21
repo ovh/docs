@@ -22,7 +22,7 @@ Może to być przydatne w następujących przypadkach:
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager){.external}
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 - Posiadanie [instancji Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external} na koncie OVHcloud
 - Posiadanie kopii zapasowej dysku w tym samym regionie OpenStack
 - Dostęp do instancji przez SSH jako administrator (sudo)
@@ -31,7 +31,7 @@ Może to być przydatne w następujących przypadkach:
 
 ### Utwórz dysk z kopii zapasowej
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Następnie kliknij `Volume Snapshot`{.action} na pasku nawigacji po lewej stronie w `Storage`.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Następnie kliknij `Volume Snapshot`{.action} na pasku nawigacji po lewej stronie w `Storage`.
 
 Po prawej stronie wybranej kopii zapasowej kliknij przycisk `...`{.action} a następnie `Utwórz wolumen`{.action}.
 

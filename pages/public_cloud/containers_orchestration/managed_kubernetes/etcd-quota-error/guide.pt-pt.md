@@ -1,7 +1,7 @@
 ---
 title: ETCD Quotas, usage, troubleshooting and error
 excerpt: 'Find out how to view ETCD quotas, usage and fix errors'
-updated: 2024-10-15
+updated: 2024-04-12
 ---
 
 ## Objective
@@ -32,7 +32,7 @@ rpc error: code = Unknown desc = The OVHcloud storage quota has been reached
 Each Kubernetes cluster has a dedicated quota on ETCD storage usage, calculated through the following formula:
 
 ```
-Quota = 10MB + (25MB per node)* (capped to 400MB)
+Quota = 10MB + (25MB per node)* (capped to 200MB)
 ```
 
 For example, a cluster with 3 `b2-7` servers has a quota of __85 MB__.

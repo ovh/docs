@@ -1,7 +1,7 @@
 ---
 title: 'Sharing an object via a temporary URL'
 excerpt: 'Find out how to share an object via a temporary URL'
-updated: 2024-10-08
+updated: 2021-01-11
 ---
 
 ## Objective 
@@ -14,9 +14,9 @@ When sharing a file with someone, you will of course want to avoid sharing your 
 
 ## Requirements
 
-- An [environment that is ready to use the OpenStack API](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api).
-- [The OpenStack environment variables set up](/pages/public_cloud/compute/loading_openstack_environment_variables).
-- Python installed on your system.
+- Python installed on your system
+- an environment that is ready to use the OpenStack API 
+- the OpenStack environment variables set up
 
 ## Instructions
 
@@ -86,21 +86,19 @@ For example, for the elements below:
 - **/v1/AUTH_tenant/default/file**: the path towards your file. You can add the access point later.
 - **12345**: to replace with your key.
 
-In the `AUTH_tenant` field, replace `tenant` with your **OS_TENANT_ID** or **OS_TENANT_NAME**.
-
-```bash
+```
 swift tempurl GET 60 /v1/AUTH_tenant/default/file 12345
 ```
 
 You get the **tempURL** which lets you see the **path to the file**, the **signature** and the **expiry date** as explained previously.
 
-```bash
+```
 v1/AUTH_tenant/default/file?temp_url_sig=8016dsdf3122d526afds60911cde59fds3&temp_url_expires=1401548543
 ```
 
 To make your URL function properly, you have to insert the access point address before your **tempURL**:
 
-```bash
+```
 https://storage.sbg1.cloud.ovh.net/v1/AUTH_tenant/default/file?temp_url_sig=8016dsdf3122d526afds60911cde59fds3&temp_url_expires=1401548543
 ```
 In the example above, this temporary address can be used to download the **file** to the **default** container for 60 seconds, without authentication. After that, the URL will no longer work.
@@ -111,4 +109,4 @@ In the example above, this temporary address can be used to download the **file*
 
 ## Go further
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

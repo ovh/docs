@@ -6,7 +6,7 @@ updated: 2020-03-09
 
 ## Objectif
 
-[OVH Mail Migrator](https://omm.ovh.net/) (OMM) est un outil créé par OVHcloud. Il permet de migrer vos comptes e-mail d'un hébergeur à un autre. Le processus prend en charge différents types de contenus, tels que les e-mails, les contacts, les calendriers et les tâches, tant que ces derniers sont compatibles avec vos comptes e-mail OVHcloud. 
+[OVH Mail Migrator](https://omm.ovh.net/){.external} (OMM) est un outil créé par OVHcloud. Il permet de migrer vos comptes e-mail d'un hébergeur à un autre. Le processus prend en charge différents types de contenus, tels que les e-mails, les contacts, les calendriers et les tâches, tant que ces derniers sont compatibles avec vos comptes e-mail OVHcloud. 
 
 Ce guide décrit comment utiliser OMM pour importer les différents éléments de votre compte Gmail vers votre compte email OVHcloud.
 
@@ -14,7 +14,7 @@ Ce guide décrit comment utiliser OMM pour importer les différents éléments d
 
 ## Prérequis
 
-- Disposer d'un service e-mail chez OVHcloud, tel qu'une [offre Exchange](/links/web/emails), [E-mail Pro](/links/web/email-pro) ou MX Plan (via l'offre MX Plan seule ou incluse dans une [offre d'hébergement web OVHcloud](/links/web/hosting)).
+- Disposer d'un service e-mail chez OVHcloud, tel qu'une [offre Exchange](https://www.ovhcloud.com/fr/emails/){.external}, [E-mail Pro](https://www.ovhcloud.com/fr/emails/email-pro/){.external} ou MX Plan (via l'offre MX Plan seule ou incluse dans une [offre d'hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external}).
 - Disposer des identifiants relatifs aux comptes e-mail que vous souhaitez migrer (les comptes source).
 - Disposer des identifiants relatifs aux comptes e-mail OVHcloud qui reçoivent les données migrées (les comptes de destination).
 
@@ -24,9 +24,9 @@ Ce guide décrit comment utiliser OMM pour importer les différents éléments d
 
 > [!primary]
 > Pour que la migration soit possible, il faut activer le protocole IMAP sur votre compte Gmail. Pour cela, suivez le guide de Google
-> [comment activer l'IMAP pour votre compte Gmail](https://support.google.com/mail/answer/7126229?hl=fr).
+> [comment activer l'IMAP pour votre compte Gmail](https://support.google.com/mail/answer/7126229?hl=fr){.external}.
 
-Une fois le protocole IMAP activé sur votre compte Gmail, rendez-vous sur [OMM](https://omm.ovh.net/).
+Une fois le protocole IMAP activé sur votre compte Gmail, rendez-vous sur [OMM](https://omm.ovh.net/){.external}.
 
 Cliquez sur `Migration`{.action} puis `Nouvelle migration`{.action}.
 
@@ -73,7 +73,7 @@ La fenêtre de suivi de migration (ci-dessous) s'affiche alors. Vous pouvez la l
 
 ![omm](images/OMM-gmail-step01-05.png){.thumbnail}
 
-Dans ce cas de figure, rendez-vous dans la boite de réception de votre compte Gmail et vérifiez si vous avez reçu l'e-mail avec l'objet **«Alerte de sécurité critique»**. Il s'agit d'une mesure de sécurité mise en place par Gmail. Afin de résoudre cette situation, suivez le guide : [Comment autoriser les connexions moins sécurisées sur Gmail](/pages/web_cloud/email_and_collaborative_solutions/migrating/security_gmail)
+Dans ce cas de figure, rendez-vous dans la boite de réception de votre compte Gmail et vérifiez si vous avez reçu l'e-mail avec l'objet **«Alerte de sécurité critique»**. Il s'agit d'une mesure de sécurité mise en place par Gmail. Afin de résoudre cette situation, suivez le guide : [Comment autoriser les connexions moins sécurisées sur Gmail](/pages/web_cloud/email_and_collaborative_solutions/migrating/security_gmail){.external}
 
 Après avoir **autorisé les «connexions moins sécurisées»** sur Gmail, vous pourrez relancer la migration.
 
@@ -83,7 +83,7 @@ Après avoir **autorisé les «connexions moins sécurisées»** sur Gmail, vous
 
 Pour importer votre calendrier vers votre compte OVHcloud, récupérez une sauvegarde de celui-ci depuis votre interface Gmail. Pour cela, suivez le guide officiel de Google :
 
-[Comment exporter ses calendriers pour votre compte Gmail](https://support.google.com/calendar/answer/37111?hl=fr)
+[Comment exporter ses calendriers pour votre compte Gmail](https://support.google.com/calendar/answer/37111?hl=fr){.external}
 
 Si vous avez plusieurs calendriers sur votre compte Gmail, vous téléchargerez un fichier d'archive à décompresser. Vous retrouverez chaque calendrier au format **.ics**.
 
@@ -92,7 +92,7 @@ Si vous avez plusieurs calendriers sur votre compte Gmail, vous téléchargerez 
 > [!primary]
 > La migration des calendriers par OMM n'est compatible que vers les comptes Exchange.
 
-Après avoir récupéré la sauvegarde de votre calendrier au format **.ics**, allez sur [OMM](https://omm.ovh.net/).
+Après avoir récupéré la sauvegarde de votre calendrier au format **.ics**, allez sur [OMM](https://omm.ovh.net/){.external}.
 
 Dirigez-vous sur l'onglet `PST/ICS/VCF`{.action} en haut, puis cliquez sur `Nouvelle migration PST/ICS/VCF`{.action}.
 
@@ -127,7 +127,7 @@ La fenêtre de suivi de migration (ci-dessous) s'affiche alors. Vous pouvez la l
 
 Pour importer vos contacts vers votre compte OVHcloud, récupérez une sauvegarde de ces derniers depuis votre interface Gmail. Pour cela, suivez le guide officiel de Google :
 
-[Comment exporter ses contacts pour votre compte Gmail](https://support.google.com/contacts/answer/7199294?hl=fr)
+[Comment exporter ses contacts pour votre compte Gmail](https://support.google.com/contacts/answer/7199294?hl=fr){.external}
 
 > [!warning]
 > L'export doit se faire au format vCard (**.vcf**) via l'interface Gmail. cette option vous est proposée à la fin de l'export.
@@ -158,6 +158,6 @@ La fenêtre de suivi de migration s'affiche, vous pouvez laisser celle-ci ouvert
 
 ## Aller plus loin
 
-[Comment autoriser les connexions moins sécurisées sur Gmail](/pages/web_cloud/email_and_collaborative_solutions/migrating/security_gmail).
+[Comment autoriser les connexions moins sécurisées sur Gmail](/pages/web_cloud/email_and_collaborative_solutions/migrating/security_gmail){.external}.
 
-Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com).
+Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.

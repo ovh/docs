@@ -1,15 +1,8 @@
 ---
 title: Ligar-se em SFTP
 excerpt: Saiba como se ligar ao seu Hosted Private Cloud em SFTP
-updated: 2024-09-17
+updated: 2021-12-28
 ---
-
-> [!warning]
->
-> **O procedimento tornou-se obsoleto (*deprecated*)**.
->
-> Para transferir ficheiros para os seus datastores, utilize o método descrito neste guia: [Uploading files to the VMware vSphere on OVHcloud datastore](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_datastore_upload) (EN).
->
 
 ## Objetivo
 

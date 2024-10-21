@@ -1,7 +1,7 @@
 ---
 title: "Einen VPS absichern"
 excerpt: "Erfahren Sie hier, wie Sie grundsätzliche Sicherheitsmaßnahmen anwenden, um Ihren VPS vor Angriffen und unbefugtem Zugriff zu schützen"
-updated: 2024-10-07
+updated: 2024-02-20
 ---
 
 > [!primary]
@@ -30,7 +30,7 @@ Wenn Sie Ihren VPS bestellen, können Sie eine Distribution oder ein Betriebssys
 
 > [!primary]
 >
-> Beachten Sie, dass dies eine allgemeine Anleitung ist, basierend auf Ubuntu, Debian und CentOS Distributionen. Einige Befehle müssen an die von Ihnen verwendete Distribution oder das Betriebssystem angepasst werden. Wir empfehlen gelegentlich die Verwendung externer Tools. Wenn Sie dazu Hilfe benötigen, lesen Sie die offizielle Dokumentation dieser Anwendungen.
+> Beachten Sie, dass dies eine allgemeine Anleitung ist, basierend auf einer Ubuntu Distribution. Einige Befehle müssen an die von Ihnen verwendete Distribution oder das Betriebssystem angepasst werden. Wir empfehlen gelegentlich die Verwendung externer Tools. Wenn Sie dazu Hilfe benötigen, lesen Sie die offizielle Dokumentation dieser Anwendungen.
 >
 > Wenn Sie Ihren ersten OVHcloud VPS konfigurieren, empfehlen wir, zum Einstieg unsere Anleitung zur [Ersteinrichtung eines VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps) zu nutzen.
 >
@@ -39,50 +39,26 @@ Die folgenden Beispiele setzen voraus, dass Sie als [Benutzer mit erhöhten Bere
 
 ### Systemupdate
 
-Entwickler von Distributionen und Betriebssystemen veröffentlichen häufig Softwarepaket-Updates, sehr oft aus Sicherheitsgründen.  
+Entwickler von Distributionen und Betriebssystemen veröffentlichen häufig Softwarepaket-Updates, sehr oft aus Sicherheitsgründen.<br>
 Regelmäßige Aktualisierung Ihrer Distribution oder Ihres Betriebssystems mittels Herunterladen und Installation von Updates ist somit ein wichtiger Punkt, um Ihren VPS zu sichern. 
 
-> [!tabs]
-> Ubuntu
->>
->> Dieses Update wird in zwei Schritten durchgeführt.
->> 
->> - Aktualisieren der Paketliste:
->> 
->> ```bash
->> sudo apt update
->> ```
->> 
->> - Aktualisierung der Pakete:
->> 
->> ```bash
->> sudo apt upgrade
->> ```
->>
-> Debian
->> 
->> ```bash
->> sudo apt update && sudo apt upgrade
->> ```
->>
->> Der Befehl entspricht Ubuntu, da sowohl Debian als auch Ubuntu `apt` verwenden.
->>
-> CentOS
->>
->> ```bash
->> sudo yum update
->> ```
->>
->> Bei CentOS verwendet der Befehl zum Aktualisieren des Betriebssystems je nach Version entweder `yum` oder  `dnf`.
+Dieses Update wird in zwei Schritten durchgeführt.
+
+- Aktualisierung der Paketliste:
+
+```bash
+sudo apt update
+```
+
+- Aktualisierung der Pakete:
+
+```bash
+sudo apt upgrade
+```
 
 Dieser Vorgang muss regelmäßig durchgeführt werden, um ein System auf dem neuesten Stand zu halten.
 
 ### Standard-SSH-Listening-Port ändern <a name="changesshport"></a>
-
-> [!primary]
->
-> Für diesen Abschnitt gelten die Befehlszeilen für Ubuntu, Debian und CentOS.
->
 
 Eine der ersten Aktionen auf Ihrem Server sollte die Konfiguration des Listening-Ports des SSH-Dienstes sein. Er ist standardmäßig auf **Port 22** eingestellt, deshalb zielen Hacking-Attacken von Bots auf diesen Port. Die Änderung dieser Einstellung zu einem individuellen Port ist eine einfache Maßnahme, um den Schutz Ihres Servers vor automatisierten Angriffen zu verbessern.
 
@@ -123,7 +99,7 @@ Dies sollte ausreichen, um die Änderungen umzusetzen. Sie können alternativ de
 
 Für die neuesten Ubuntu Versionen wird die SSH-Konfiguration nun in der Datei `ssh.socket` verwaltet.
 
-Um den SSH-Port zu aktualisieren, bearbeiten Sie die Zeile `ListenStream` in der Konfigurationsdatei mit einem Texteditor Ihrer Wahl (`nano` in diesem Beispiel verwendet):
+Um den SSH-Port zu aktualisieren, bearbeiten Sie die Zeile `Listenstream` in der Konfigurationsdatei mit einem Texteditor Ihrer Wahl (`nano` in diesem Beispiel verwendet):
 
 ```console
 [Socket]
@@ -173,26 +149,14 @@ Wir empfehlen Ihnen, Regeln für diese Firewall zu erstellen und an Ihre Nutzung
 
 ### Fail2ban installieren
 
-Fail2ban ist ein Sicherheitsframework zur Prävention unbefugter Zugriffe. Es dient dazu, IP-Adressen zu blockieren, von denen aus Bots oder Angreifer versuchen, in Ihr System einzudringen.  
+Fail2ban ist ein Sicherheitsframework zur Prävention unbefugter Zugriffe. Es dient dazu, IP-Adressen zu blockieren, von denen aus Bots oder Angreifer versuchen, in Ihr System einzudringen.<br>
 Dieses Paket wird empfohlen und ist in einigen Fällen sogar unerlässlich, um Ihren Server vor Angriffen der Typen *Brute Force* oder *Denial of Service* zu schützen.
 
 Um das Softwarepaket zu installieren verwenden Sie folgenden Befehl:
 
-> [!tabs]
-> Ubuntu und Debian
->> 
->> ```bash
->> sudo apt install fail2ban
->> ```
->>
-> CentOS
->>
->> Installieren Sie auf CentOS 7 und CentOS 8 (oder RHEL) zuerst das EPEL-Repository (**E**xtra **P**ackages for **E**nterprise **L**inux), dann Fail2ban:
->>
->> ```bash
->> sudo yum install epel-release
->> sudo yum install fail2ban
->> ```
+```bash
+sudo apt install fail2ban
+```
 
 Sie können die Fail2ban-Konfigurationsdateien personalisieren, um Dienste, die dem öffentlichen Internet ausgesetzt sind, vor wiederholten Verbindungsversuchen zu schützen.
 
@@ -222,7 +186,7 @@ maxretry = 5
 enabled = false
 ```
 
-Dies bedeutet, dass eine IP-Adresse, von der aus sich ein Host zu verbinden versucht, nach dem fünften gescheiterten Verbindungsversuch für 10 Minuten gesperrt wird.  
+Dies bedeutet, dass eine IP-Adresse, von der aus sich ein Host zu verbinden versucht, nach dem fünften gescheiterten Verbindungsversuch für 10 Minuten gesperrt wird.<br>
 Allerdings bleiben alle durch `[DEFAULT]` und in den darauf folgenden Abschnitten spezifizierten Parameter deaktiviert, es sei denn, die Zeile `enabled = true` wird für einen Dienst hinzugefügt (aufgelistet unter `# JAILS`).
 
 Anwendungsbeispiel: Die folgenden Zeilen im Abschnitt `[sshd]` aktivieren Einschränkungen ausschließlich für den Dienst OpenSSH:
@@ -247,21 +211,13 @@ Sobald Ihre Bearbeitungen abgeschlossen sind, speichern Sie die Datei und schlie
 
 Starten Sie den Dienst neu, um sicherzustellen, dass er mit den individualisierten Änderungen ausgeführt wird:
 
-1\. Empfohlener Befehl mit `systemctl`:
-
-```bash
-sudo systemctl restart fail2ban
-```
-
-2\. Befehl mit `service` (veraltete Methode, noch kompatibel):
-
 ```bash
 sudo service fail2ban restart
 ```
 
 Fail2ban verfügt über zahlreiche Einstellungen und Filter für die Individualisierung sowie vordefinierte Optionen, zum Beispiel wenn Sie einem Nginx Webserver eine zusätzliche Sicherheitsebene hinzufügen möchten.
 
-Weitere Informationen und Empfehlungen zu Fail2ban finden Sie in der [offiziellen Dokumentation](https://www.fail2ban.org/wiki/index.php/Main_Page) dieses Tools.
+Weitere Informationen und Empfehlungen zu Fail2ban finden Sie in der [offiziellen Dokumentation](https://www.fail2ban.org/wiki/index.php/Main_Page){.external} dieses Tools.
 
 ### Konfiguration der OVHcloud Network Firewall
 
@@ -283,8 +239,6 @@ Alle Informationen zu den für Ihren Dienst verfügbaren Backup-Lösungen finden
 ## Weiterführende Informationen
 
 [Erste Schritte mit einem VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps) 
-
-[SSH-Schlüssel verwenden](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
 
 [Firewall auf einem Windows Server konfigurieren](/pages/bare_metal_cloud/virtual_private_servers/activate-port-firewall-soft-win)
 

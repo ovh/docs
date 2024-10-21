@@ -20,7 +20,7 @@ updated: 2023-06-20
 ## Requisitos
 
 - Tener [una instancia de Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) sobre la facturación por **horas**
-- Tener acceso al [área de cliente de OVHcloud](/links/manager){.external} o al [interfaz de Horizon](/pages/public_cloud/compute/introducing_horizon)
+- Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} o al [interfaz de Horizon](/pages/public_cloud/compute/introducing_horizon)
 - Conocimiento de la [API de OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api) y de las [variables OpenStack](/pages/public_cloud/compute/loading_openstack_environment_variables)
 
 ## Procedimiento

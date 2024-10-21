@@ -1,7 +1,7 @@
 ---
 title: 'Configuring IP aliasing'
 excerpt: 'Find out how to add Additional IP addresses to your server configuration'
-updated: 2024-09-27
+updated: 2024-03-15
 ---
 
 > [!primary]
@@ -18,13 +18,13 @@ IP aliasing is a special network configuration for your OVHcloud dedicated serve
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](/links/partner) if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/asia/directory/) if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
 >
 
 ## Requirements
 
-- A [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account
-- An [Additional IP address](/links/network/additional-ip) or an Additional IP block (RIPE or ARIN)
+- A [dedicated server](https://www.ovhcloud.com/asia/bare-metal/) in your OVHcloud account
+- An [Additional IP address](https://www.ovhcloud.com/asia/bare-metal/ip/) or an Additional IP block (RIPE or ARIN)
 - Access via SSH or remote desktop connection for Windows
 - Basic networking and administration knowledge
 
@@ -52,7 +52,7 @@ Concerning different distribution releases, please note that the proper procedur
 
 In the examples below, we will use the `nano` text editor. With some operating systems, you will need to install it first before using it. If this is the case, you will be prompted to do so. You can, of course, use the text editor of your choice.
 
-### Debian 11
+### Debian 10/11
 
 By default, the configuration files are located in `/etc/network/interfaces.d/`. We recommend that you start by backing up the relevant configuration file. 
 
@@ -167,7 +167,7 @@ To restart the interface, use the following command:
 sudo /etc/init.d/networking restart
 ```
 
-### Fedora 39 and following
+### Fedora 37 and following
 
 Fedora now uses keyfiles. NetworkManager previously stored network profiles in ifcfg format in this directory: `/etc/sysconfig/network-scripts/`. However, the ifcfg format is now deprecated. By default, NetworkManager no longer creates new profiles in this format. The configuration file is now found in `/etc/NetworkManager/system-connections/`.
 
@@ -324,7 +324,7 @@ sudo netplan apply
 > When using the `netplan try` command, it is possible that the system returns a warning message such as `Permissions for /etc/netplan/xx-cloud-init.yaml are too open. Netplan configuration should NOT be accessible by others`. This simply means that the file does not have restrictive permissions. This does not affect the configuration of your Additional IP. For more information about file permissions, consult the [official documentation of ubuntu](https://help.ubuntu.com/community/FilePermissions){.external}.
 >
 
-### AlmaLinux (8 & 9), Rocky Linux (8 & 9)
+### CentOS 7, AlmaLinux (8 & 9), Rocky Linux (8 & 9)
 
 The main configuration file is located in `/etc/sysconfig/network-scripts/`. In this example it is called `ifcfg-eth0`. Before making changes, verify the actual file name in this folder.
 
@@ -370,7 +370,13 @@ BROADCAST=203.0.113.1
 
 #### Step 3: Restart the interface
 
-Next, restart the network interface with the following command:
+Next, restart your alias interface, replace `eth0:0` with your own values:
+
+```bash
+ifup eth0:0
+```
+
+#### For AlmaLinux and Rocky Linux
 
 ```bash
 sudo systemctl restart NetworkManager
@@ -552,4 +558,4 @@ It is necessary to provide:
 
 [Configuring a network bridge](/pages/bare_metal_cloud/dedicated_servers/network_bridging)
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

@@ -1,7 +1,7 @@
 ---
 title: "Exchange - Konfiguration von E-Mail-Accounts in Google Mail für Android"
 excerpt: "Erfahren Sie hier, wie Sie Ihren Exchange Account in Android über die Gmail-App einrichten"
-updated: 2024-10-09
+updated: 2024-03-20
 ---
 
 <style>
@@ -15,6 +15,7 @@ updated: 2024-10-09
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
+>
 
 ## Ziel
 
@@ -25,11 +26,12 @@ Exchange E-Mail-Accounts können auf verschiedenen, kompatiblen E-Mail-Clients k
 > [!warning]
 > In diesem Tutorial erläutern wir die Verwendung einer oder mehrerer OVHcloud Lösungen mit externen Tools. Die durchgeführten Aktionen werden in einem bestimmten Kontext beschrieben. Denken Sie daran, diese an Ihre Situation anzupassen.
 >
-> Wir empfehlen Ihnen jedoch, sich bei Schwierigkeiten an einen [spezialisierten Dienstleister](/links/partner) zu wenden oder Ihre Fragen an die [OVHcloud Community](https://community.ovh.com/en/) zu richten. Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten.
+> Wir empfehlen Ihnen jedoch, sich bei Schwierigkeiten an einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu wenden oder Ihre Fragen an die [OVHcloud Community](https://community.ovh.com/en/) zu richten. Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten.
+>
 
 ## Voraussetzungen
 
-- Sie haben einen [OVHcloud Exchange](/links/web/emails) Dienst eingerichtet.
+- Sie haben einen [OVHcloud Exchange](https://www.ovhcloud.com/de/emails/) Dienst eingerichtet.
 - Die Gmail-App ist auf Ihrem Gerät installiert. Sie können diese über den Google Play Store installieren.
 - Sie verfügen über Anmeldeinformationen für den zu konfigurierenden E-Mail-Account
 
@@ -46,7 +48,8 @@ Exchange E-Mail-Accounts können auf verschiedenen, kompatiblen E-Mail-Clients k
 >
 > In unseren Beispielen verwenden wir als Serverbezeichnung "ex?.mail.ovh.net". Das "?" muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden Exchange Dienst ersetzt werden.
 >
-> Sie finden diese Information im [OVHcloud Kundencenter](/links/manager). Öffnen Sie im Bereich `Web Cloud`{.action} unter `Microsoft`{.action} den Eintrag `Exchange`{.action}. Der Servername wird im Abschnitt Verbindung auf der Seite `Allgemeine Informationen`{.action} angezeigt.
+> Sie finden diese Information im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de). Öffnen Sie im Bereich `Web Cloud`{.action} unter `Microsoft`{.action} den Eintrag `Exchange`{.action}. Der Servername wird im Abschnitt Verbindung auf der Seite `Allgemeine Informationen`{.action} angezeigt.
+>
 
 Öffnen Sie auf Ihrem Gerät die App `Gmail`{.action}.
 
@@ -66,6 +69,7 @@ Das Hinzufügen eines Accounts erfolgt anders, je nachdem ob **noch kein Account
 >> 2. Wählen Sie `Einstellungen aus`{.action}.<br><br>
 >> 3. Wählen Sie `Konto hinzufügen aus`{.action}.<br><br>
 >> ![Exchange Android](images/android-existing.png){.thumbnail}
+>>
 
 Folgen Sie den in den Tabs aufgeführten Schritten:
 
@@ -89,18 +93,15 @@ Folgen Sie den in den Tabs aufgeführten Schritten:
 > **Schritt 6**
 >> Die Meldung "Sie können Ihr Konto jetzt verwenden" sollte angezeigt werden. Tippen Sie auf `OK`{.action}, um die Konfiguration abzuschließen.<br><br>
 >> ![Exchange Android](images/exchange-android-05.png){.thumbnail .h-600}
+>>
 
 Ihre E-Mail-Adresse ist nun fertig konfiguriert und Sie können jetzt E-Mails  über Ihre Gmail-App versenden und empfangen.
 
 > [!success]
 >
-> Eine OVHcloud Webanwendung, mit der Sie über einen Browser auf Ihre E-Mail-Accounts zugreifen können, ist verfügbar unter [Webmail](/links/web/email). Sie können sich mit den Login-Daten Ihres E-Mail-Accounts anmelden.
+> Eine OVHcloud Webanwendung, mit der Sie über einen Browser auf Ihre E-Mail-Accounts zugreifen können, ist verfügbar unter <https://www.ovhcloud.com/de/mail/>. Sie können sich mit den Login-Daten Ihres E-Mail-Accounts anmelden.
 
 ## Weiterführende Informationen <a name="go-further"></a>
-
-> [!primary]
->
-> Weitere Informationen zum Einrichten einer E-Mail-Adresse über die Gmail-App auf Android finden Sie im [Google Help Center](https://support.google.com/mail/answer/6078445?hl=de-CA&co=GENIE.Platform%3DAndroid#zippy=%2Ca-a-account).
 
 [MX Plan - Konfiguration eines E-Mail-Accounts in Gmail für Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android).
 

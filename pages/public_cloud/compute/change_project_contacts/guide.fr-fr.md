@@ -14,14 +14,14 @@ La modification de ces contacts permet de dissocier la gestion technique de la g
 ## Prérequis
 
 - Avoir un projet [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](/links/manager)
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Contacts administrateur et facturation dans la même filiale OVHcloud
 
 ## En pratique
 
 ### Modifier les contacts
 
-Connectez-vous à [l’espace client OVHcloud](/links/manager) et ouvrez votre projet `Public Cloud`{.action}. Cliquez sur `Contacts and Rights`{.action} dans la section **Project Management**.
+Connectez-vous à [l’espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et ouvrez votre projet `Public Cloud`{.action}. Cliquez sur `Contacts and Rights`{.action} dans la section **Project Management**.
 
 Cette page vous permet de voir les contacts administrateur et facturation associés à votre projet.
 
@@ -49,4 +49,4 @@ Pour une explication plus détaillée de cette procédure, nous vous invitons à
 
 [Déléguer des projets](/pages/public_cloud/compute/delegate_projects)
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

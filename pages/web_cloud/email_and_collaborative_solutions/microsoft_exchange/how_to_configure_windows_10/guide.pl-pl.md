@@ -1,18 +1,18 @@
 ---
-title: 'Exchange - Skonfiguruj swoje konto e-mail w programie Poczta dla systemu Windows'
-excerpt: 'Dowiedz się, jak skonfigurować konto Exchange w aplikacji Poczta na urządzeniu z systemem Windows'
-updated: 2024-10-09
+title: 'Konfiguracja konta Exchange w aplikacji Poczta na systemie Windows 10'
+excerpt: 'Dowiedz się, jak skonfigurować konto Exchange w aplikacji Poczta na urządzeniu z systemem Windows 10'
+updated: 2018-04-04
 ---
 
 ## Wprowadzenie
 
 Konta Exchange można skonfigurować w różnych kompatybilnych programach pocztowych. Dzięki temu możesz używać Twojego konta e-mail na wybranym urządzeniu.
 
-**Dowiedz się, jak skonfigurować konto Exchange w aplikacji Poczta na urządzeniu z systemem Windows.**
+**Dowiedz się, jak skonfigurować konto Exchange w aplikacji Poczta na urządzeniu z systemem Windows 10.**
 
 ## Wymagania początkowe
 
-- Wykupienie konta e-mail [Exchange](/links/web/emails)
+- Wykupienie konta e-mail [Exchange](https://www.ovhcloud.com/pl/emails/){.external}
 - Instalacja aplikacji Poczta na Twoim urządzeniu
 - Dane do logowania do konta e-mail, które chcesz skonfigurować
 
@@ -38,7 +38,7 @@ Następnie wpisz informacje:
 |Hasło|Wpisz hasło przypisane do tego konta e-mail.|
 |Nazwa użytkownika|Wpisz pełny adres e-mail.|
 |Domena|Pozostaw to pole puste.|
-|Serwer|Wskaż serwer, na którym hostowana jest Twoja usługa Exchange. Możesz znaleźć go w [Panelu klienta](/links/manager) > zakładka `Informacje ogólne`{.action} dotyczące danej usługi Exchange > `Połączenie`{.action}.|
+|Serwer|Wskaż serwer, na którym hostowana jest Twoja usługa Exchange. Możesz znaleźć go w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} > zakładka `Informacje ogólne`{.action} dotyczące danej usługi Exchange > `Połączenie`{.action}.|
 |Serwer wymaga szyfrowanego połączenia (SSL).|Pozostaw to pole zaznaczone.|
 |Nazwa konta|Wpisz nazwę pozwalającą odróżnić to konto od Twoich pozostałych kont wyświetlających się w aplikacji Poczta.|
 
@@ -54,14 +54,10 @@ Wykonaj test wysyłki e-maili, aby sprawdzić, czy konto zostało poprawnie skon
 
 Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz zacząć wysyłać i odbierać wiadomości.
 
-OVHcloud oferuje również aplikację internetową [funkcje do pracy zespołowej](/links/web/emails). Jest ona dostępna pod adresem [Webmail](/links/web/email). Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail.
+OVHcloud oferuje również aplikację internetową [funkcje do pracy zespołowej](https://www.ovhcloud.com/pl/emails/){.external}. Jest ona dostępna pod adresem <https://www.ovhcloud.com/pl/mail/>. Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail.
 
 ## Sprawdź również
 
-> [!primary]
->
-> Aby uzyskać więcej informacji na temat konfigurowania konta e-mail przy użyciu klienta Poczta w systemie Windows, zobacz [Centrum pomocy firmy Microsoft](https://support.microsoft.com/pl-pl/office/configurer-l-e-mail-in-l-application-courrier-7ff79e8b-439b-4b47-8ff9-3f9a33166c60).
-
-[Konfiguracja konta e-mail, zawartego w usłudze MX Plan lub usłudze hostingu, na urządzeniu w aplikacji Poczta na urządzeniu z systemem Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10)
+[Konfiguracja konta e-mail, zawartego w usłudze MX Plan lub usłudze hostingu, na urządzeniu w aplikacji Poczta na urządzeniu z systemem Windows 10](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10){.external}
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

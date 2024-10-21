@@ -12,7 +12,7 @@ Sur un système Windows, la redondance des données est assurée par la mise en 
 
 ## Prérequis
 
-- Un [serveur dédié Windows](/links/bare-metal/bare-metal) avec un miroir logiciel
+- Un [serveur dédié Windows](https://www.ovhcloud.com/fr-ca/bare-metal/) avec un miroir logiciel
 - Un accès administratif au serveur via RDP
 
 ## En pratique
@@ -400,4 +400,4 @@ Il est préférable de ne pas redémarrer le serveur tant que le processus de re
 
 ## Aller plus loin
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

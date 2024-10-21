@@ -1,7 +1,7 @@
 ---
 title: MX Plan - Konfiguracja konta e-mail w programie Outlook na urządzeniu z systemem macOS
 excerpt: Dowiedz się, jak skonfigurować konto e-mail MX Plan w programie Outlook na urządzeniu macOS
-updated: 2024-10-01
+updated: 2018-05-31
 ---
 
 ## Wprowadzenie
@@ -12,13 +12,13 @@ Konta usługi MX Plan mogą być skonfigurowane w jednym z kompatybilnych progra
 
 ## Wymagania początkowe
 
-- Konto e-mail MX Plan (zawarte w pakiecie MX Plan lub w ramach [hostingu OVHcloud](/links/web/hosting))
+- Konto e-mail MX Plan (zawarte w pakiecie MX Plan lub w ramach [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external})
 - Zainstalowany Microsoft Outlook na Twoim urządzeniu Mac
 - Dane do logowania do konta e-mail, które chcesz skonfigurować
 
 > [!primary]
 >
-> Używasz programu Outlook na urządzeniu z systemem Windows? Zapoznaj się z naszą dokumentacją: [Konfiguracja konta e-mail w programie Outlook na urządzeniu z systemem Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016).
+> Używasz programu Outlook na urządzeniu z systemem Windows? Zapoznaj się z naszą dokumentacją: [Konfiguracja konta e-mail w programie Outlook na urządzeniu z systemem Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016){.external}.
 >
 
 ## W praktyce
@@ -72,14 +72,10 @@ Jeśli wprowadzasz ręcznie dane techniczne w ustawieniach konta, poniżej znajd
 
 Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz zacząć wysyłać i odbierać wiadomości.
 
-OVHcloud oferuje aplikację internetową umożliwiającą korzystanie z Twojego konta e-mail przy użyciu wyszukiwarki. Jest ona dostępna pod adresem [Webmail](/links/web/email). Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail.
+OVHcloud oferuje aplikację internetową umożliwiającą korzystanie z Twojego konta e-mail przy użyciu wyszukiwarki. Jest ona dostępna pod adresem <https://www.ovh.pl/mail/>. Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail.
 
 ## Sprawdź również
 
-> [!primary]
->
-> Aby uzyskać więcej informacji na temat konfigurowania konta e-mail z poziomu aplikacji Outlook na urządzeniach z systemem macOS, zobacz [Centrum pomocy Microsoft](https://support.microsoft.com/pl-pl/office/add-an-email-account-to-outlook-for-mac-6aeec61b-86af-40af-8ffe-985d0fc82ddb).
-
-[Konfiguracja konta Exchange w programie Outlook na urządzeniu Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac)
+[Konfiguracja konta Exchange w programie Outlook na urządzeniu Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac){.external}
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

@@ -10,14 +10,11 @@ Es kann sein, dass Sie den GRUB Bootloader reparieren müssen. In dieser Anleitu
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [Public Cloud Instanz](/links/public-cloud/public-cloud).
+- Die Instanz muss sich im Rescue-Modus befinden (siehe Anleitung zum [Rescue-Modus](/pages/public_cloud/compute/put_an_instance_in_rescue_mode)).
 
 ## In der praktischen Anwendung
 
-> [!warning]
-> Die Instanz muss sich im Rescue-Modus befinden (siehe Anleitung zum [Rescue-Modus](/pages/public_cloud/compute/put_an_instance_in_rescue_mode)).
-
-Verbinden Sie sich mit der Instanz entweder über VNC im [OVHcloud Kundencenter](/links/manager) oder über SSH.
+Verbinden Sie sich mit der Instanz entweder über VNC im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) oder über SSH.
 
 Geben Sie folgende Befehle ein, um das Dateisystem zu mounten und die Reparatur von GRUB zu starten:
 

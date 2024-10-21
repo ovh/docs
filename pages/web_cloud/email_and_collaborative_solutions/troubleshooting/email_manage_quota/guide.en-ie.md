@@ -12,16 +12,16 @@ Every OVHcloud email account has a dedicated storage space. By managing your sto
 
 ## Requirements
 
-- A preconfigured OVHcloud email solution, such as [**Hosted Exchange**](/links/web/emails-hosted-exchange), [**Email Pro**](/links/web/email-pro)) or **MX Plan** (available with a [web hosting plan](/links/web/hosting), a [100M free hosting](/links/web/domains-free-hosting), or ordered separately)
-- Access to the [OVHcloud Control Panel](/links/manager)
+- A preconfigured OVHcloud email solution, such as [**Hosted Exchange**](https://www.ovhcloud.com/en-ie/emails/hosted-exchange/), [**Email Pro**](https://www.ovhcloud.com/en-ie/emails/email-pro/)) or **MX Plan** (available with a [web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/), a [100M free hosting](https://www.ovhcloud.com/en-ie/domains/free-web-hosting/), or ordered separately)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 - Login credentials for the email account concerned
 
 > [!primary]
 >
 > **Special cases**
 >
-> - Regarding the 100M free hosting solution, you will need to activate it beforehand in order to create an email account. You can do this from your [OVHcloud Control Panel](/links/manager) by going to the domain name concerned.
-> - For [web hosting plans](/links/web/hosting), you will need to activate your MX Plan before continuing with this guide. To do this, please refer to our guide on [Activating the email addresses included in your web hosting plan](/pages/web_cloud/web_hosting/activate-email-hosting).
+> - Regarding the 100M free hosting solution, you will need to activate it beforehand in order to create an email account. You can do this from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) by going to the domain name concerned.
+> - For [web hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/), you will need to activate your MX Plan before continuing with this guide. To do this, please refer to our guide on [Activating the email addresses included in your web hosting plan](/pages/web_cloud/web_hosting/activate-email-hosting).
 
 ## Instructions <a name="instructions"></a>
 
@@ -39,7 +39,7 @@ You can do this via the OVHcloud Control Panel if you are managing the email ser
 
 #### From the Control Panel <a name="quotacontrolpanel"></a>
 
-In the [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, then follow the instructions for your solution:
+In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), go to the `Web Cloud`{.action} section, then follow the instructions for your solution:
 
 > [!tabs]
 > **Emails (MX Plan)**
@@ -60,7 +60,7 @@ In the [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} 
 
 #### From webmail <a name="quotawebmail"></a>
 
-To log in to webmail, go to the page [Webmail](/links/web/email) and enter the login information for your email account. Select the webmail client of your solution below:
+To log in to webmail, go to the page <https://www.ovhcloud.com/en-ie/mail/> and enter the login information for your email account. Select the webmail client of your solution below:
 
 > [!tabs]
 > **OWA**: **Emails (MX Plan)** / **Email Pro** / **Exchange**
@@ -98,7 +98,7 @@ You can increase the storage capacity of your email account, if it has not reach
 > [!tabs]
 > **Emails (MX Plan)**
 >>
->> The capacity of an MX Plan account can range from 2.5 MB to 5 GB. If it is full and its capacity is less than 5 GB, you can modify its capacity via the [OVHcloud Control Panel](/links/manager).<br>
+>> The capacity of an MX Plan account can range from 2.5 MB to 5 GB. If it is full and its capacity is less than 5 GB, you can modify its capacity via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).<br>
 >> In the `Email accounts`{.action} tab, click the `...`{.action} button to the right of the account you want to change, and then click `Edit`{.action}.
 >> From the `Quota`{.action} box, select the desired size, click `Next`{.action}, then `Confirm`{.action}.<br><br>
 >> ![email](images/email-quota-more01.png){.thumbnail}<br>
@@ -200,11 +200,11 @@ Select the current solution for your email account from the menu below:
 > [!tabs]
 > **Emails (MX Plan)**
 >>
->> If your email account already has a maximum capacity of 5 GB, you can opt for a migration to a [10 GB **Email Pro** solution](/links/web/email-pro) or a 50 GB [**Hosted Exchange** offer](/links/web/emails-hosted-exchange). To do this, please order the solution that suits your needs, and follow our guide on [Migrating an MX Plan email account to Email Pro or Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel). 
+>> If your email account already has a maximum capacity of 5 GB, you can opt for a migration to a [10 GB **Email Pro** solution](https://www.ovhcloud.com/en-ie/emails/email-pro/) or a 50 GB [**Hosted Exchange** offer](https://www.ovhcloud.com/en-ie/emails/hosted-exchange/). To do this, please order the solution that suits your needs, and follow our guide on [Migrating an MX Plan email account to Email Pro or Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel). 
 >>
 > **Email Pro**
 >>
->> The Email Pro offer has a unique capacity of 10GB. You can choose to migrate to a [50 GB **Hosted Exchange** solution](/links/web/emails-hosted-exchange). To do this, order Hosted Exchange and follow our guide on [Migrating your email account from one OVHcloud email platform to another](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_platform).
+>> The Email Pro offer has a unique capacity of 10GB. You can choose to migrate to a [50 GB **Hosted Exchange** solution](https://www.ovhcloud.com/en-ie/emails/hosted-exchange/). To do this, order Hosted Exchange and follow our guide on [Migrating your email account from one OVHcloud email platform to another](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_platform).
 >>
 > **Exchange**
 >>
@@ -221,6 +221,6 @@ Select the current solution for your email account from the menu below:
 
 [Migrating your email account from one OVHcloud email platform to another](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_platform)
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ie/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.

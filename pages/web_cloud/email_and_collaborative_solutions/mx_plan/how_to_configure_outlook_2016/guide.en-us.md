@@ -1,7 +1,7 @@
 ---
 title: "MX Plan - Configuring your email address in Outlook for Windows"
 excerpt: "Find out how to configure your MX Plan email address in Outlook for Windows"
-updated: 2024-10-01
+updated: 2024-02-16
 ---
 
 <style>
@@ -20,12 +20,12 @@ You can configure MX Plan accounts on email clients, if they are compatible. By 
 > [!warning]
 > This guide will show you how to use one or more OVHcloud solutions with external tools, and the changes you need to make in specific contexts. You may need to adapt the instructions according to your situation.
 >
-> If you experience any difficulties carrying out these operations, we recommend that you contact a [specialist service provider](/links/partner) and/or discuss the issue with our community. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#gofurther) section of this guide.
+> If you experience any difficulties carrying out these operations, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en/directory/) and/or discuss the issue with our community. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#gofurther) section of this guide.
 >
 
 ## Requirements
 
-- an MX Plan email address, available as part of our [Web Hosting plans](/links/web/hosting)
+- an MX Plan email address, available as part of our [Web Hosting plans](https://www.ovhcloud.com/en/web-hosting/)
 - Microsoft Outlook or later installed on your device
 - login credentials for the email account to be configured
  
@@ -91,7 +91,7 @@ To configure your email address, follow the steps by clicking on the tabs below.
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVHcloud also has a web application you can use to access your email address from your browser. You can access this application at [Webmail](/links/web/email). You can log in using your email credentials. If you have any questions about how to use this interface, please refer to our guide on [Using the Outlook Web App](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
+OVHcloud also has a web application you can use to access your email address from your browser. You can access this application at <https://www.ovh.com/world/mail/>. You can log in using your email credentials. If you have any questions about how to use this interface, please refer to our guide on [Using the Outlook Web App](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
 ### Retrieving a backup of your email address
 
@@ -170,10 +170,6 @@ To understand the difference between POP and IMAP, we will detail the elements t
 > This description is a summary of the standard operation of these two protocols. You can set up POP to not delete emails from the server when you retrieve them. Our aim is to describe the native functioning of these two protocols.
 
 ## Go further <a name="gofurther"></a>
-
-> [!primary]
->
-> For more information about configuring an email address from the Outlook app on macOS, see [Microsoft Help Center](https://support.microsoft.com/en-gb/office/add-email-account-in-Outlook-6e27792a-9267-4aa4-8bb6-c84ef146101b).
 
 [Configuring your Exchange account in Outlook for Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016)
 

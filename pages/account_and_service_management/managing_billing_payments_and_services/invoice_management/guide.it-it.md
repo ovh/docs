@@ -19,7 +19,7 @@ OVHcloud mette a tua disposizione uno spazio per consultare, gestire e saldare l
 > In base al tuo luogo di residenza e alla legislazione in vigore, e al prodotto o ai prodotti in questione, è possibile che alcune sezioni di questa guida possano variare e/o non essere applicate in base alla tua situazione. In caso di dubbi, consulta i contratti disponibili nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) (clicca sul tuo nome in alto a destra e poi, nel menu contestuale, sulla `Gestione dei servizi`{.action} e poi sulla scheda `Contratti`{.action}).
 >
 
-<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/iiQmopMhzik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/iiQmopMhzik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Prerequisiti
 

@@ -1,11 +1,8 @@
 ---
 title: 'Konfiguracja sieci na ESXi w ofercie High Grade & SCALE'
 excerpt: 'Dowiedz się, jak skonfigurować sieć na ESXi w ofercie High Grade & SCALE'
-updated: 2024-09-13
+updated: 2024-07-08
 ---
-
-> [!warning]
-> Hypervisor ESXi nie jest już wspierany przez OVHcloud. Więcej informacji na temat [tej strony dedykowanej](/pages/bare_metal_cloud/dedicated_servers/esxi-end-of-support).
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
@@ -28,9 +25,9 @@ W ofercie High Grade & SCALE nie jest możliwe działanie adresów Additional IP
 
 * Rezerwacja bloku publicznych adresów IP na Twoim koncie z minimalną liczbą czterech adresów. Blok musi być skierowany do sieci vRack.
 * Przygotowanie Twojego zakresu wybranych prywatnych adresów IP
-* Posiadanie [serwera dedykowanego kompatybilnego z vRack](/links/bare-metal/bare-metal){.external}.
+* Posiadanie [serwera dedykowanego kompatybilnego z vRack](https://www.ovhcloud.com/pl/bare-metal/){.external}.
 * Aktywacja usługi [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external}
-* Dostęp do [panelu klienta OVHcloud](/links/manager){.external}.
+* Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 ## W praktyce
 
@@ -49,7 +46,7 @@ W ofercie High Grade & SCALE nie jest możliwe działanie adresów Additional IP
 
 ### Additional IP w sieci vRack
 
-Po pierwsze, dodaj blok publicznych adresów IP do sieci vRack. W tym celu przejdź do sekcji `Bare Metal Cloud`{.action} w [Panelu klienta OVHcloud](/links/manager){.external} i otwórz menu `vRack`{.action}.
+Po pierwsze, dodaj blok publicznych adresów IP do sieci vRack. W tym celu przejdź do sekcji `Bare Metal Cloud`{.action} w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i otwórz menu `vRack`{.action}.
 
 Wybierz z listy usługę vRack, aby wyświetlić listę usług, które chcesz zamówić. Kliknij publiczny blok adresów IP, który chcesz dodać do sieci vRack, następnie kliknij przycisk `Dodaj`{.action}.
 
@@ -66,7 +63,7 @@ Pierwszy vSwitch istnieje, ale zawiera tylko jeden interfejs `vmnic2`.
 
 > [!primary]
 >
-> Sprawdź, czy Twoja konfiguracja jest podobna. Informacje na temat publicznych lub prywatnych interfejsów MAC są dostępne w [Panelu klienta OVHcloud](/links/manager) lub poprzez API OVHcloud.
+> Sprawdź, czy Twoja konfiguracja jest podobna. Informacje na temat publicznych lub prywatnych interfejsów MAC są dostępne w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) lub poprzez API OVHcloud.
 >
 
 #### Wyjaśnienia

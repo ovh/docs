@@ -16,16 +16,16 @@ Gli errori sugli account email Exchange possono avere diverse cause. Una diagnos
 
 ## Prerequisiti
 
-- Disporre di una [soluzione Exchange OVHcloud](/links/web/emails-hosted-exchange) già installata
+- Disporre di una [soluzione Exchange OVHcloud](https://www.ovhcloud.com/it/emails/hosted-exchange/) già installata
 - Disporre delle credenziali di accesso per l'account Exchange da verificare
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - Essere aggiornato nei [pagamenti](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) di questo servizio e del dominio associato
 
 ## Procedura
 
 ### Realizza una diagnostica
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager) nella sezione `Web Cloud`{.action}. Seleziona `Microsoft`{.action}, clicca su `Exchange`{.action} e seleziona il tuo servizio.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) nella sezione `Web Cloud`{.action}. Seleziona `Microsoft`{.action}, clicca su `Exchange`{.action} e seleziona il tuo servizio.
 
 ![Diagnostica Exchange](images/img_4450.png){.thumbnail}
 
@@ -58,11 +58,11 @@ Consulta la nostra guida [Cosa fare in caso di account bloccato per Spam?](/page
 ### L'abbonamento all'account è scaduto <a name="expired"></a>
 
 Il tuo abbonamento non è più attivo e l'invio e la ricezione sono stati disattivati.<br>
-Per riattivare il tuo abbonamento, è sufficiente riconfigurarne la [periodicità di fatturazione](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#periodicity) nello [Spazio Cliente OVHcloud](/links/manager).
+Per riattivare il tuo abbonamento, è sufficiente riconfigurarne la [periodicità di fatturazione](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#periodicity) nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 
 ### La politica di sicurezza ha bloccato l'account
 
-Se nello [Spazio Cliente OVHcloud](/links/manager) è attiva una politica di sicurezza, l'account può essere temporaneamente bloccato.
+Se nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) è attiva una politica di sicurezza, l'account può essere temporaneamente bloccato.
 
 Ad esempio, puoi decidere di bloccare l'account dopo diversi tentativi di connessione non andati a buon fine, per un periodo determinato da te.
 
@@ -74,7 +74,7 @@ Per maggiori informazioni su questa funzionalità, consulta la nostra [guida sul
 
 Questa operazione può essere dovuta all'inserimento di una password dell'account non corretta. Verifica che la password sia corretta, accedendo alla [Webmail](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) e riavvia la diagnostica.
 
-Se necessario, modifica la password dell'account nella scheda `Account email`{.action} del tuo [Spazio Cliente OVHcloud](/links/manager). Se il problema persiste, crea una richiesta di assistenza.
+Se necessario, modifica la password dell'account nella scheda `Account email`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Se il problema persiste, crea una richiesta di assistenza.
 
 ### Il record MX del dominio non è valido
 

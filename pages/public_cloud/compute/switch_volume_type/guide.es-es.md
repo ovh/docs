@@ -1,7 +1,7 @@
 ---
 title: Modificar un Volume Block Storage
 excerpt: "Descubra cómo cambiar el tipo de un volume block storage utilizando OpenStack"
-updated: 2024-09-26
+updated: 2023-08-08
 ---
 
 > [!primary]
@@ -24,10 +24,6 @@ Al cambiar un tipo de volumen Block Storage a un volumen «High Speed gen2», la
 Por defecto, la política de migración se establece en `Never`, ya que el volumen permanece en el mismo cluster CEPH. Sin embargo, para el «High speed gen2», el volumen deberá migrarse a un nuevo cluster.
 
 Esta modificación puede realizarse a través de Horizon o a través de la interfaz de línea de comandos OpenStack.
-
-> [!warning]
-> Si el volumen está asociado a una instancia, deberá desvincularlo antes de continuar. Para obtener más información, consulte la guía [esta sección](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#desvincular-un-volumen).
->
 
 ### Horizon
 
@@ -79,6 +75,6 @@ $ openstack volume set --type high-speed-gen2 --retype-policy on-demand VOLUME_N
 
 ## Más información
 
-Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](/links/professional-services) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
+Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es-es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

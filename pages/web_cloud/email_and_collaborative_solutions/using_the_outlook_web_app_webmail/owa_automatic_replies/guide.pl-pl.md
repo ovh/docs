@@ -12,14 +12,14 @@ Ta funkcja programu Exchange umożliwia skonfigurowanie automatycznych odpowiedz
 
 ## Wymagania początkowe
 
- - Instalacja rozwiązania poczty elektronicznej OVHcloud [Exchange](/links/web/emails-hosted-exchange) lub [Email Pro](/links/web/email-pro)
+ - Instalacja rozwiązania poczty elektronicznej OVHcloud [Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/) lub [Email Pro](https://www.ovhcloud.com/fr/emails/email-pro/)
 - dostęp do konta e-mail (adres e-mail i hasło)
 
 ## W praktyce
 
 ### Włączanie funkcji
 
-Zaloguj się na konto Exchange przy użyciu interfejsu [OVHcloud webmail](/links/web/email). Kliknij ikonę koła zębatego w prawym górnym rogu, aby rozwinąć menu „Opcje”, i wybierz pozycję `Odpowiedzi automatyczne`{.action}.
+Zaloguj się na konto Exchange przy użyciu interfejsu [OVHcloud webmail](https://www.ovh.pl/mail/). Kliknij ikonę koła zębatego w prawym górnym rogu, aby rozwinąć menu „Opcje”, i wybierz pozycję `Odpowiedzi automatyczne`{.action}.
 
 ![owaoptions](images/exchange-autorep-step1.png){.thumbnail}
 

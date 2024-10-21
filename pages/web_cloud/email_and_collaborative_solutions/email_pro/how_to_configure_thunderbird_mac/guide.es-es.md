@@ -1,7 +1,7 @@
 ---
-title: 'Email Pro - Configure su cuenta de correo electrónico en Thunderbird para macOS'
+title: 'Configurar una cuenta Email Pro en Thunderbird para macOS'
 excerpt: 'Cómo configurar una cuenta Email Pro en Thunderbird para macOS'
-updated: 2024-10-09
+updated: 2021-08-26
 ---
 
 > [!primary]
@@ -23,7 +23,7 @@ Es posible configurar sus cuentas Email Pro en el cliente de correo que usted ut
 
 ## Requisitos
 
-- Disponer de una cuenta [Email Pro](/links/web/email-pro).
+- Disponer de una cuenta [Email Pro](https://www.ovhcloud.com/es-es/emails/email-pro/).
 - Tener Thunderbird instalado en su macOS.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
  
@@ -33,7 +33,7 @@ Es posible configurar sus cuentas Email Pro en el cliente de correo que usted ut
 >
 > En nuestro ejemplo, hemos utilizado la mención servidor: pro**?**.mail.ovh.net. Sustituya la «?» por la cifra que designa al servidor de su servicio Email Pro.
 >
-> Puede consultar esta cifra en su [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action} y `Email Pro`{.action}. El nombre del servidor aparece en el marco **Conexión** de la pestaña `Información general`{.action}.
+> Puede consultar esta cifra en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Web Cloud`{.action} y `Email Pro`{.action}. El nombre del servidor aparece en el marco **Conexión** de la pestaña `Información general`{.action}.
 >
 
 ### Añadir la cuenta
@@ -59,7 +59,7 @@ En una configuración en **POP**, los valores son los siguientes:
 
 Una vez que haya configurado la dirección de correo electrónico, ya puede empezar a utilizarla enviando y recibiendo mensajes.
 
-OVHcloud también ofrece una aplicación web que permite acceder a su dirección de correo electrónico desde un navegador de internet. y está disponible en la dirección [Webmail](/links/web/email). Puede conectarse con las credenciales de acceso de su dirección de correo electrónico. Si tiene cualquier duda sobre su uso, consulte nuestra guía [Consultar su cuenta Exchange desde la interfaz OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
+OVHcloud también ofrece una aplicación web que permite acceder a su dirección de correo electrónico desde un navegador de internet. y está disponible en la dirección <https://www.ovh.es/mail/>. Puede conectarse con las credenciales de acceso de su dirección de correo electrónico. Si tiene cualquier duda sobre su uso, consulte nuestra guía [Consultar su cuenta Exchange desde la interfaz OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
 ### Obtener una copia de seguridad de su dirección de correo
 
@@ -71,7 +71,7 @@ Si necesita realizar alguna operación que pueda provocar la pérdida de los dat
 >
 > En nuestro ejemplo, hemos utilizado la mención servidor: pro**?**.mail.ovh.net. Sustituya la «?» por la cifra que designa al servidor de su servicio Email Pro.
 >
-> Puede consultar esta cifra en su [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action} y `Email Pro`{.action}. El nombre del servidor aparece en el marco **Conexión** de la pestaña `Información general`{.action}.
+> Puede consultar esta cifra en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Web Cloud`{.action} y `Email Pro`{.action}. El nombre del servidor aparece en el marco **Conexión** de la pestaña `Información general`{.action}.
 >
 
 Si su cuenta de correo ya está configurada y debe acceder a los parámetros de la cuenta para modificarlos:
@@ -91,9 +91,5 @@ Si su cuenta de correo ya está configurada y debe acceder a los parámetros de 
 ![Thunderbird](images/thunderbird-mac-emailpro06.png){.thumbnail}
 
 ## Más información
-
-> [!primary]
->
-> Para obtener más información sobre cómo configurar una dirección de correo electrónico desde la aplicación Thunderbird en Windows, consulte [el Centro de ayuda de Mozilla](https://support.mozilla.org/es/kb/configuracion-automatica-de-las-cuentas#thunderbird:mac:tb115).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -28,7 +28,7 @@ Una vez contratada, puede descargar Outlook de una de las 3 versiones siguientes
 
 #### Para una cuenta Hosted Exchange
 
-Inicie sesión en el [área de cliente de OVHcloud](/links/manager) y acceda al apartado `Web Cloud`.Haga clic en `Microsoft`{.action}, luego en `Exchange`{.action} y seleccione la plataforma **Hosted Exchange** correspondiente.
+Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda al apartado `Web Cloud`.Haga clic en `Microsoft`{.action}, luego en `Exchange`{.action} y seleccione la plataforma **Hosted Exchange** correspondiente.
 
 Haga clic en el icono `...`{.action} a la derecha de la cuenta correspondiente y, seguidamente, en `Contratar una licencia Outlook`{.action}.
 
@@ -44,7 +44,7 @@ Espere a que se ponga a su disposición la licencia Outlook en el área de clien
 
 #### Para una cuenta Private Exchange
 
-Inicie sesión en el [área de cliente de OVHcloud](/links/manager) y acceda al apartado `Web Cloud`.Haga clic en `Microsoft`{.action}, luego en `Exchange`{.action} y seleccione la plataforma **Private Exchange** correspondiente.
+Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda al apartado `Web Cloud`.Haga clic en `Microsoft`{.action}, luego en `Exchange`{.action} y seleccione la plataforma **Private Exchange** correspondiente.
 
 Haga clic en el icono `...`{.action} a la derecha de la cuenta correspondiente y, seguidamente, en `Activar la licencia Outlook`{.action}.
 
@@ -79,7 +79,7 @@ El archivo descargado tiene el formato .ISO, es decir, una imagen de disco. Ejec
 
 ### Eliminar la licencia Outlook de su cuenta
 
-Inicie sesión en el [área de cliente de OVHcloud](/links/manager) y acceda al apartado `Web Cloud`.Haga clic en `Microsoft`{.action}, luego en `Exchange`{.action} y, por último, seleccione la plataforma Exchange correspondiente.
+Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda al apartado `Web Cloud`.Haga clic en `Microsoft`{.action}, luego en `Exchange`{.action} y, por último, seleccione la plataforma Exchange correspondiente.
 
 Haga clic en el icono `...`{.action} a la derecha de la cuenta correspondiente y, seguidamente, en `Eliminar la licencia Outlook.`{.action}
 

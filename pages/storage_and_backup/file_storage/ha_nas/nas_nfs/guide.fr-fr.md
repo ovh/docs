@@ -1,7 +1,7 @@
 ---
 title: Montage d'un NAS-HA via partage NFS
 excerpt: Découvrez comment vous connecter à votre NAS-HA en utilisant un partage NFS
-updated: 2024-09-18
+updated: 2024-03-12
 ---
 
 ## Objectif
@@ -257,46 +257,6 @@ Vous pouvez utiliser cette commande pour vérifier la version de votre montage a
 ```bash
 ubuntu@server:~$ nfsstat -m
 ```
-
-## Conseils pour optimiser la performance et/ou la stabilité de votre connexion NFS
-
-La plupart du temps, les options de montage par défaut configurées dans les clients Linux sont suffisantes afin d'obtenir des performances acceptables. Néanmoins, dans certaines situations, il peut s'avérer utile d'activer ou de désactiver certaines options afin d'avoir de meilleures performances globales.
-
-De plus, afin d'obtenir des performances optimales et d'éviter divers bugs identifiés dans le client NFS, nous vous recommandons d'utiliser un noyau Linux le plus récent possible.
-
-Retrouvez ci-dessous quelques éléments qui pourraient vous aider à affiner la configuration de votre client NFS.
-
-### Quelques options de montage à considérer
-
-Vous pouvez connaître les options de montage appliquées par votre client Linux avec la commande `mount -l`.
-  
-Exemple de retour de cette commande : 
-
-```bash
-XX.XX.XX.XX:/zpool-XXXXXX/DIR on /mnt type nfs4 (rw,relatime,vers=4.2,rsize=131072,wsize=131072,namlen=255,hard,proto=tcp,timeo=600,retrans=2,...)
-```
-  
-- `rsize=1048576` : définit le nombre maximal d'octets de données que le client NFS peut recevoir pour chaque requête de LECTURE réseau. Cette valeur s'applique lors de la lecture de données à partir d'un fichier sur un système de fichiers NFS. La plus grande taille possible (jusqu'à 1048576) garantit de meilleures performances. 
-- `wsize=1048576` : définit le nombre maximal d'octets de données que le client NFS peut envoyer pour chaque requête d'ÉCRITURE sur le réseau. Cette valeur s'applique lors de l'écriture de données dans un fichier dans un système de fichiers NFS. La plus grande taille possible (jusqu'à 1048576) garantit de meilleures performances. 
-- `hard` : définit le comportement de récupération du client NFS après l'expiration d'une requête, de sorte que les requêtes sont relancées indéfiniment jusqu'à ce que le serveur NAS-HA réponde. cette option vous garantit l'intégrité des données.
-- `timeo=150` : définit la valeur de délai d'attente que le client NFS utilise pour attendre une réponse avant de relancer une requête NFS. Utilisez une valeur d'au moins 150, ce qui équivaut à 15 secondes, pour éviter les baisses de performance.
-- `retrans=2` : définit à 2 le nombre de fois que le client NFS lance une requête avant de tenter une action de récupération.
-- `tcp` : pour accélérer le montage du système de fichiers en NFS v3 (pas nécessaire pour NFSv4.x qui utilise uniquement TCP).
-- `_netdev` : lorsque cette option est présente dans le fichier /etc/fstab, elle empêche l'OS du client d'essayer de monter le système de fichiers NFS tant que le réseau n'a pas été activé.
-- `nofail` : si l'OS de votre client doit pouvoir démarrer quel que soit l'état de votre système de fichiers NFS, ajoutez l'option `nofail`.
-- `actimeo=30` : la spécification `actimeo` définit tous les paramètres `acregmin`, `acregmax`, `acdirmin` et `acdirmax` à la même valeur. L'utilisation d'une valeur inférieure à 30 secondes peut entraîner une dégradation du niveau de performance, car les caches d'attributs des fichiers et des répertoires expirent trop rapidement.
-- `nfsvers` : évitez si possible d'utiliser la version 4.0 de NFS. Utilisez plutôt les versions 3, 4.1 ou 4.2 (autant que possible, utilisez la même version de NFS pour tous les clients connectés à un même partage NFS).
-- `nordirplus` : dans certains environnements avec de nombreux répertoires, où seules les informations d'un petit sous-ensemble d'entrées de répertoire sont utilisées par un client NFSv3, READDIRPLUS peut entrainer un ralentissement des performances. L'option nordirplus permet de désactiver cette fonctionnalité
-
-### Forcer l'utilisation de NFSv3 dans certains cas
-
-- Étant donné que NFSv3 est sans état, les performances avec NFSv3 peuvent être nettement meilleures pour certaines charges de travail, en particulier pour les charges de travail qui font énormément d'appels de type OPEN, CLOSE, SETATTR et GETATTR.
-- Si vous hébergez une base de données sur votre partage NFS, sachez qu'en cas de déconnexions réseau le mécanisme de verrous spécifique au protocole NFSv4.x peut provoquer un arrêt de votre application (consultez cette rfc pour plus de détails : <https://datatracker.ietf.org/doc/rfc3530/>).
-- Si vous hébergez des machines virtuelles VMware sur votre partage NFS, sachez que le mécanisme de verrous intégré à la version NFSv4.x n’est pas compatible avec le mode de clustering implémenté sur votre NAS-HA (cluster en mode actif/passif expliqué sur [cette page](/links/storage/nas-ha)). Vous devez donc impérativement utiliser le protocole NFSv3 sous peine d’avoir une perte d’accès à votre datastore lors d’un incident impactant le serveur principal ou lors d’une opération de maintenance programmée.
-
-### Améliorer les performances de lecture en modifiant l'attribut read_ahead_kb
-
-Certains noyaux Linux utilisent une valeur `read_ahead_kb` par défaut de 128 Ko. Nous vous recommandons d'augmenter cette valeur jusqu'à 15 Mo si vous avez des problèmes de performance en lecture. Pour plus d'informations, consultez cette page : <https://docs.kernel.org/admin-guide/abi-stable.html?highlight=read_ahead_kb#abi-sys-block-disk-queue-read-ahead-kb>. 
 
 ## Aller plus loin
 

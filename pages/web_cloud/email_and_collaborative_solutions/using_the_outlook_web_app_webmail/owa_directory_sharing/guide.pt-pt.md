@@ -12,19 +12,19 @@ Nem sempre convém delegar o uso ilimitado de uma conta de e-mail. A funcionalid
 
 > [!primary]
 >
-> Embora este guia se refira aos nossos serviços Exchange, as instruções aplicam-se igualmente às contas [E-mail Pro](/links/web/email-pro).
+> Embora este guia se refira aos nossos serviços Exchange, as instruções aplicam-se igualmente às contas [E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/).
 >
 
 ## Requisitos
 
-- Dispor de um serviço [Exchange OVHcloud](/links/web/emails-hosted-exchange).
+- Dispor de um serviço [Exchange OVHcloud](https://www.ovhcloud.com/pt/emails/hosted-exchange/).
 - Ter acesso à conta Exchange (com endereço de e-mail e palavra-passe).
 
 ## Instruções
 
 ### 1.º passo: Definir as autorizações de acesso a uma pasta
 
-Aceda à sua conta Exchange através do [webmail OVHcloud](/links/web/email). Com o botão direito do rato, clique na pasta que pretende partilhar. De seguida, selecione `Permissões de partilha`{.action}.
+Aceda à sua conta Exchange através do [webmail OVHcloud](https://www.ovh.pt/mail/). Com o botão direito do rato, clique na pasta que pretende partilhar. De seguida, selecione `Permissões de partilha`{.action}.
 
 ![sharefolder](images/exchange-folder-step1.png){.thumbnail}
 
@@ -84,7 +84,7 @@ Pode escolher um dos conjuntos de autorizações predefinidas («Nível de autor
 
 ![sharefolder](images/exchange-folder-step3.png){.thumbnail}
 
-Aceda à sua conta Exchange através do [webmail OVHcloud](/links/web/email). Faça clique com o botão direito sobre o nome da conta à esquerda e selecione `Adicionar pasta partilhada...`{.action} no menu de contexto. Na nova janela que se abrir, indique o nome da conta a partir da qual a pasta foi partilhada. Comece a digitar para visualizar sugestões de contactos, introduza um endereço de e-mail completo ou use a opção de pesquisa através do `Diretório de pesquisa`{.action}. Para confirmar, clique em `Adicionar`{.action}. A nova pasta partilhada vai surgir de imediato sob as outras pastas.
+Aceda à sua conta Exchange através do [webmail OVHcloud](https://www.ovh.pt/mail/). Faça clique com o botão direito sobre o nome da conta à esquerda e selecione `Adicionar pasta partilhada...`{.action} no menu de contexto. Na nova janela que se abrir, indique o nome da conta a partir da qual a pasta foi partilhada. Comece a digitar para visualizar sugestões de contactos, introduza um endereço de e-mail completo ou use a opção de pesquisa através do `Diretório de pesquisa`{.action}. Para confirmar, clique em `Adicionar`{.action}. A nova pasta partilhada vai surgir de imediato sob as outras pastas.
 
 ## Saiba mais
 

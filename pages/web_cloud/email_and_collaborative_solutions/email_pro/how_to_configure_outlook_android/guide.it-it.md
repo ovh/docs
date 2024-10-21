@@ -1,5 +1,5 @@
 ---
-title: "Email Pro - Configurare un indirizzo email su Outlook per Android"
+title: "Configurare un account Email Pro su Android con l'applicazione Microsoft Outlook"
 excerpt: "Questa guida ti mostra come configurare un account Email Pro su Adroid con l'applicazione Microsoft Outlook"
 updated: 2023-07-25
 ---
@@ -16,21 +16,21 @@ Gli account Email Pro possono essere configurati su client di posta compatibili,
 
 ## Prerequisiti
 
-- Disporre di una soluzione [Email Pro](/links/web/email-pro)
+- Disporre di una soluzione [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/){.external}
 - Aver installato l'applicazione Microsoft Outlook sul tuo dispositivo Android Puoi scaricarla dal *Google Play Store*.
 
 > [!warning]
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
 > 
-> Questa guida ti aiuta a eseguire le operazioni necessarie. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](/links/partner) o di contattare l'amministratore del servizio. OVH non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
+> Questa guida ti aiuta a eseguire le operazioni necessarie. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](https://partner.ovhcloud.com/it/directory/) o di contattare l'amministratore del servizio. OVH non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
 > 
 
 ## Procedura
 
 ### Step 1: recuperare le informazioni dell'account Email Pro <a name="step1"></a>
 
-Accedi alla sezione `Web Cloud`{.action} dello [Spazio Cliente OVHcloud](/links/manager). Nella colonna di sinistra, clicca su `Email Pro`{.action} e seleziona la piattaforma Email Pro dove vuoi configurare l'indirizzo email.
+Accedi alla sezione `Web Cloud`{.action} dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Nella colonna di sinistra, clicca su `Email Pro`{.action} e seleziona la piattaforma Email Pro dove vuoi configurare l'indirizzo email.
 
 Nella nuova pagina clicca sulla scheda `Account email`{.action}.
 
@@ -163,12 +163,8 @@ Prova l'invio e la ricezione delle email dalla tua applicazione Microsoft Outloo
 
 ## Per saperne di più <a name="go-further"></a>
 
-> [!primary]
->
-> Per ulteriori informazioni sulla configurazione di un indirizzo e-mail dall'applicazione Outlook su Android, vedere [Microsoft Help Center](https://support.microsoft.com/it-it/office/configurare-la-posta-elettronica-nell-app-outlook-per-android-886db551-8dfa-4fd5-b835-f8e532091872).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
-
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
 
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

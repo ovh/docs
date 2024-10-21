@@ -24,7 +24,7 @@ Este tutorial descreve os passos a seguir para atualizar um sistema operativo em
 
 ## Requisitos
 
-- Dispor de um [acesso de administrador ao servidor](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance)
+- Dispor de um [acesso root ao servidor](/pages/public_cloud/compute/become_root_and_change_password)
 - Ter efetuado [um backup da sua instância](/pages/public_cloud/compute/save_an_instance)
 
 ## Instruções

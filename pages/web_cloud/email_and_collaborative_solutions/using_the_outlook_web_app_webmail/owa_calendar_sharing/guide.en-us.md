@@ -12,14 +12,14 @@ This Exchange feature allows you to grant other people access to your calendars.
 
 ## Requirements
 
-- an [OVHcloud Exchange solution](/links/web/emails-hosted-exchange) already set up
+- an [OVHcloud Exchange solution](https://www.ovhcloud.com/en/emails/hosted-exchange/) already set up
 - access to your Exchange account (email address and password)
 
 ## Instructions
 
 ### Step 1: Selecting a calendar to share
 
-Log in to your Exchange account via the [OVHcloud webmail](/links/web/email). Switch to the "Calendar" interface by clicking on the "app launcher" in the top left-hand corner and then selecting the `Calendar`{.action} icon.
+Log in to your Exchange account via the [OVHcloud webmail](https://www.ovh.com/world/mail/). Switch to the "Calendar" interface by clicking on the "app launcher" in the top left-hand corner and then selecting the `Calendar`{.action} icon.
 
 ![sharecalendar](images/exchange-calendars-step1.png){.thumbnail}
 

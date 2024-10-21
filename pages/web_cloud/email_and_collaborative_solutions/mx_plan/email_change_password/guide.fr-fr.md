@@ -15,8 +15,8 @@ Les comptes e-mail de votre offre OVHcloud sont accessibles grâce au mot de pas
 
 ## Prérequis
 
-- Disposer d'une solution e-mail OVHcloud préalablement configurée (**MX Plan**, proposée parmi nos [offres d’hébergement web](/links/web/hosting), incluse dans un [hébergement gratuit 100M](/links/web/domains-free-hosting) ou commandée séparément comme solution autonome, telle que [**Hosted Exchange**](/links/web/emails-hosted-exchange) ou [**Email Pro**](/links/web/email-pro)).
-- Selon la méthode que vous utilisez : être connecté à l'[espace client OVHcloud](/links/manager) dans la partie `Web Cloud`{.action}, ou être connecté à l'adresse e-mail depuis le [webmail](/links/web/email).
+- Disposer d'une solution e-mail OVHcloud préalablement configurée (**MX Plan**, proposée parmi nos [offres d’hébergement web](https://www.ovhcloud.com/fr/web-hosting/), incluse dans un [hébergement gratuit 100M](https://www.ovhcloud.com/fr/domains/free-web-hosting/) ou commandée séparément comme solution autonome, telle que [**Hosted Exchange**](https://www.ovhcloud.com/fr/emails/hosted-exchange/) ou [**Email Pro**](https://www.ovhcloud.com/fr/emails/email-pro/)).
+- Selon la méthode que vous utilisez : être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) dans la partie `Web Cloud`{.action}, ou être connecté à l'adresse e-mail depuis le [webmail](https://www.ovh.com/fr/mail/).
 
 > [!primary]
 >
@@ -34,19 +34,19 @@ Les comptes e-mail de votre offre OVHcloud sont accessibles grâce au mot de pas
 > [!warning]
 > Pour des raisons de sécurité, nous vous recommandons de ne pas utiliser deux fois le même mot de passe, d'en choisir un qui n'a aucun rapport avec vos informations personnelles (évitez les mentions de votre nom, prénom et date de naissance, par exemple) et de le renouveler régulièrement.
 
-Depuis votre [espace client OVHcloud](/links/manager), dirigez-vous dans la partie `Web Cloud`{.action} puis suivez les instructions selon votre offre :
+Depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dirigez-vous dans la partie `Web Cloud`{.action} puis suivez les instructions selon votre offre :
 
 > [!tabs]
-> **Emails MX Plan (version historique)**
+> **Emails MXplan (version historique)**
 >>
->> Si vous ne connaissez pas le type d'offre MX Plan que vous possédez, consultez notre paragraphe [Identifiez votre offre MX Plan](#whichmxplan).<br><br>
+>> Si vous ne connaissez pas le type d'offre MXplan que vous possédez, consultez notre paragraphe [Identifiez votre offre MXplan](#whichmxplan).<br><br>
 >> Cliquez sur `Emails`{.action} puis choisissez le nom du service MX Plan concerné. Positionnez-vous sur l'onglet `Emails`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. <br>
 >> Cliquez sur le bouton `...`{.action} puis sur `Changer le mot de passe`{.action}.<br><br>
 >>![email](images/email-password-mxplan-legacy01.png){.thumbnail}<br>
 >>
-> **Emails MX Plan (nouvelle version)**
+> **Emails MXplan (nouvelle version)**
 >>
->> Si vous ne connaissez pas le type d'offre MX Plan que vous possédez, consultez notre paragraphe [Identifiez votre offre MX Plan](#whichmxplan).<br><br>
+>> Si vous ne connaissez pas le type d'offre MXplan que vous possédez, consultez notre paragraphe [Identifiez votre offre MXplan](#whichmxplan).<br><br>
 >> Cliquez sur `Emails`{.action} puis choisissez le nom du service MX Plan concerné. Positionnez-vous sur l'onglet `Emails`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. <br>
 >> Cliquez sur le bouton `...`{.action} puis sur `Modifier`{.action}.<br><br>
 >>![email](images/email-password-mxplan-new01.png){.thumbnail}<br>
@@ -68,18 +68,18 @@ Depuis votre [espace client OVHcloud](/links/manager), dirigez-vous dans la part
 
 La modification de votre mot de passe via le webmail est disponible pour les offres email OVHcloud utilisant **OWA** (**O**utlook **W**eb **A**pp) :
 
-- Emails MX Plan (Nouvelle version)
+- Emails MXplan (Nouvelle version)
 - Email Pro
 - Exchange
 
 > [!warning]
 >
-> L'offre **Emails MX Plan (version historique)** utilise le webmail Roundcube, le changement de mot de passe se fait uniquement [via l'espace client](#controlpanel).
+> L'offre **Emails MXplan (version historique)** utilise le webmail Roundcube, le changement de mot de passe se fait uniquement [via l'espace client](#controlpanel).
 >
 
-<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/z1D2wc7XWX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/z1D2wc7XWX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Accédez à la page « [Webmail](/links/web/email) ». Sur celle-ci, renseignez votre adresse e-mail complète, ainsi que son mot de passe actuel. Cliquez ensuite sur le bouton `Connexion`{.action}. 
+Accédez à la page « [Webmail](https://www.ovhcloud.com/fr/mail/) ». Sur celle-ci, renseignez votre adresse e-mail complète, ainsi que son mot de passe actuel. Cliquez ensuite sur le bouton `Connexion`{.action}. 
 
 ![email](images/mxplan-password-new-step2.png){.thumbnail}
 
@@ -108,9 +108,9 @@ Pour des raisons de sécurité et de confidentialité, il n'est pas possible de 
 >
 > Si vous souhaitez stocker un mot de passe, il est conseillé d'utiliser un gestionnaire de mot de passe, comme **Keepass** par exemple.
 
-### Identifiez votre offre MX Plan <a name="whichmxplan"></a>
+### Identifiez votre offre MXplan <a name="whichmxplan"></a>
 
-Vous trouverez, dans le tableau ci-dessous, les informations nécessaires pour identifier votre offre MX Plan.
+Vous trouverez, dans le tableau ci-dessous, les informations nécessaires pour identifier votre offre MXplan.
 
 |Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
 |---|---|
@@ -118,12 +118,12 @@ Vous trouverez, dans le tableau ci-dessous, les informations nécessaires pour i
 
 ## Aller plus loin
 
-[Premiers pas avec la solution MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
+[Premiers pas avec la solution MXplan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 
 [Premiers pas avec la solution E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
 
 [Premiers pas avec la solution Hosted Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

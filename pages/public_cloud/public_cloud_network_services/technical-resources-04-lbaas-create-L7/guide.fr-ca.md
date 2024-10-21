@@ -137,7 +137,7 @@ Après avoir créé une L7 policy, vous pouvez y ajouter des règles pour préci
 
 1\. **Accès aux options de la politique L7**
 
-Sur la page des politiques L7 de votre listener, localisez la politique pour laquelle vous souhaitez ajouter des règles. Cliquez sur le bouton `...`{.action} à côté de la politique concernée et sélectionnez `Gérer les L7 rules`{.action}.
+Sur la page des politiques L7 de votre listener, localisez la politique pour laquelle vous souhaitez ajouter des règles. Cliquez sur sur le bouton `...`{.action} à côté de la politique concernée et sélectionnez `Gérer les L7 rules`{.action}.
 
 ![Schema 1](images/Policy5.png){.thumbnail}
 

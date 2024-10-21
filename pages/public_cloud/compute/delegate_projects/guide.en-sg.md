@@ -15,11 +15,11 @@ To this end, you can delegate read-only or read/write permissions for your proje
 ### Requirements
 
 - A [Public Cloud project](https://www.ovhcloud.com/en-sg/public-cloud/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project. Click on `Contacts and Rights`{.action} in the **Project Management** section.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) and open your `Public Cloud`{.action} project. Click on `Contacts and Rights`{.action} in the **Project Management** section.
 
 On this page you can see the contacts associated with your project.
 
@@ -54,6 +54,6 @@ To revoke an access, click on the `...`{.action} button and then select `Delete`
 
 [Access and Security in Horizon](/pages/public_cloud/compute/access_and_security_in_horizon)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-sg/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

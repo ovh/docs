@@ -46,7 +46,7 @@ Instalar una solución Microsoft 365 Apps para una empresa en un ordenador compa
 > Si ya ha instalado la licencia Office 365 Proplus, deberá **desinstalarla**.
 >
 
-- Una vez desinstalada la licencia, [haga clic aquí](https://www.microsoft.com/en-us/download/details.aspx?id=49117) para descargar la herramienta de despliegue Microsoft 365.
+- Una vez desinstalada la licencia, [haga clic aquí](https://www.microsoft.com/en-us/download/details.aspx?id=49117){.external} para descargar la herramienta de despliegue Microsoft 365.
 
 - **Ejecute** la herramienta de despliegue en su máquina.
 

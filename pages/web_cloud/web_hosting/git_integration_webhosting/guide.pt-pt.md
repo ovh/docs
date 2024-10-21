@@ -1,324 +1,316 @@
 ---
-title: "Configurar e utilizar o Git com o seu alojamento web OVHcloud"
-excerpt: "Saiba como configurar e utilizar o Git com o seu alojamento web na sua Área de Cliente OVHcloud"
-updated: 2024-09-12
+title: "Configuring and using Git with an OVHcloud web hosting plan"
+excerpt: "Find out how to configure and use Git with your web hosting plan in the OVHcloud Control Panel"
+updated: 2024-07-25
 ---
 
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
+## Objective
 
-## Objetivo
+In today’s digital landscape, companies are becoming increasingly dynamic and innovative. The ability to effectively manage and deploy your website’s code is vital to maintaining your brand’s competitiveness and sustainability. Git, the most widely used version control system in the world, allows you to store your website's code on platforms like GitHub, allowing for better change traceability, as well as faster automation and deployments. As an OVHcloud customer, you benefit from a robust infrastructure to host your website, while leveraging the many benefits of Git and GitHub for website development and scalability.
 
-No atual panorama digital, as empresas estão a tornar-se cada vez mais dinâmicas e inovadoras. A capacidade de gerir e implementar eficazmente o código do seu website é essencial para manter a competitividade e a perenidade da sua marca. O Git, o sistema de gestão de versões mais utilizado do mundo, permite armazenar o código do seu website em plataformas como o GitHub, permitindo uma melhor rastreabilidade das modificações, assim como uma automatização e implementações mais rápidas. Enquanto cliente OVHcloud, beneficia de uma infraestrutura robusta para alojar o seu website, enquanto explora as numerosas vantagens do Git e do GitHub para o desenvolvimento e evolução do seu website.
+**Find out how to configure and use Git with your web hosting plan via the OVHcloud Control Panel.**
 
-**Saiba como configurar e utilizar o Git com o seu alojamento web a partir da Área de Cliente OVHcloud.**
+## Requirements
 
-## Requisitos
+- You have an [OVHcloud Web Hosting](/links/web/hosting) plan.
+- Access to the [OVHcloud Control Panel](/links/manager), in the Web Cloud section.
+- You must have an account [GitHub](https://github.com/){.external} and be logged in.
 
-- Ter um serviço de [alojamento web OVHcloud](/links/web/hosting).
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager), na secção Web Cloud.
-- Ter uma conta [GitHub](https://github.com/){.external} e ter acesso à mesma.
+## Instructions
 
 > [!primary]
 >
-> À data, apenas a plataforma GitHub é suportada no âmbito da utilização com os serviços de alojamento Web da OVHcloud.
-
-## Instruções
-
-> [!primary]
->
-> Para a associação e configuração do Git, deverá efetuar alterações na sua conta GitHub. Antes de começar o guia, aceda à sua conta GitHub.
+> To associate and configure Git, you will need to make changes to your GitHub account. Before starting the guide, log in to your GitHub account.
 >
 
-### Associar um diretório a Git <a name="associateGitRepo"></a>
+### Associate a directory with Git <a name="associateGitRepo"></a>
 
 > [!warning]
 >
-> Quando você associa um diretório ao Git, todos os domínios presentes nesse diretório também serão associados ao Git. Por exemplo, se o diretório correspondente ao site que associou for `www`, então todos os domínios associados ao diretório `www` também serão associados ao Git.
+> When you associate a directory with Git, all domain names in that directory will also be associated with Git. For example, if the directory corresponding to the website you are associating with is `www`, then all domain names associated with the `www` directory will also be associated with Git.
 >
 
-Aceda à [Área de Cliente OVHcloud](/links/manager) e efetue as seguintes ações:
+Log in to your [OVHcloud Control Panel](/links/manager) and perform the following actions:
 
-- Aceda ao separador `Web Cloud`{.action}.
-- Selecione o seu alojamento na rubrica `Alojamentos`{.action}, à esquerda.
-- Clique no separador `Multisite`{.action}.
-- Na tabela que aparece, identifique a linha correspondente ao diretório que deseja associar ao Git.
-- Clique no botão `...`{.action} e selecione `Associar o Git`{.action}.
+- Go to the `Web Cloud`{.action} tab.
+- Select your web hosting plan in the `Hosting plans`{.action} section on the left.
+- Click on the `Multisite`{.action} tab.
+- In the table that appears, identify the row corresponding to the directory you want to associate with Git.
+- Click on the button `...`{.action} then select `Link Git`{.action}.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/link-git.png){.thumbnail}
 
-O formulário de associação do Git é exibido. É necessário configurar vários elementos:
+The Git association form is displayed. There are several elements that need to be configured:
 
-- Chave SSH
-- Depósito GitHub
-- Ramo do repositório GitHub
-- Webhook (opcional)
+- SSH key
+- GitHub repository
+- GitHub repository branch
+- Webhook (optional)
 
-#### Associar uma chave SSH ao GitHub <a name="linkSSHKey"></a>
+#### Attach an SSH key to GitHub <a name="linkSSHKey"></a>
 
 > [!primary]
 >
-> A geração de uma chave SSH é uma etapa crucial, pois estabelece uma ligação segura e encriptada entre o diretório do seu website e o repositório GitHub. Esta chave garante que as transferências de dados e as alterações do código são efetuadas de forma segura e autenticada, evitando o acesso não autorizado e garantindo a integridade do código.
+> Generating an SSH key is a crucial step, as it establishes a secure and encrypted connection between your website’s directory and the GitHub repository. This key ensures that data transfers and code changes are done in a secure and authenticated manner, preventing unauthorised access and ensuring code integrity.
 >
 
-Copie e registe a chave SSH na sua conta GitHub. Isto permite estabelecer uma ligação segura sem necessidade de introduzir uma palavra-passe em cada operação Git que será levada a cabo.
+Copy and save the SSH key to your GitHub account. This way, you can establish a secure connection without having to enter a password each time you perform a Git operation.
 
-- Ligue-se à sua conta GitHub.
-- Clique na sua imagem de perfil no canto superior direito e, a seguir, em `Settings`{.action}.
-- Na nova página, clique em `SSH and GPG keys`{.action} na coluna da esquerda.
-- Selecione `New SSH key`{.action} ou `Add SSH key`{.action}.
+- Log in to your GitHub account.
+- Click on your profile picture in the top right-hand corner, then on `Settings`{.action}.
+- On the new page, click `SSH and GPG keys`{.action} in the left-hand column.
+- Select `New SSH key`{.action} or `Add SSH key`{.action}.
 
-Aparece o formulário que permite adicionar uma nova chave SSH:
+The form for adding a new SSH key will open:
 
-- **Title** : adicione uma descrição para a sua chave SSH. Por exemplo, pode dar um nome a esta chave "OVHcloud".
-- **Type of key** : deixe o valor predefinido `authentication key`{.action}
-- **Key** : cole a sua chave SSH.
+- **Title** : Add a description for your SSH key. For example, you can name this key “OVHcloud”.
+- **Type of key**: Leave the default value `authentication key`{.action}
+- **Key**: Paste your SSH key.
 
-Para validar as informações, clique em `Add SSH key`{.action}. Se solicitado, confirme o acesso à sua conta no GitHub.
+To confirm the information, click `Add SSH key`{.action}. If prompted, confirm access to your account in GitHub.
 
-#### Definir o repositório GitHub
+#### Set GitHub repository
 
-Volte para o formulário de associação do Git na sua Área de Cliente OVHcloud. Deve introduzir o endereço do seu repositório GitHub. Se você ainda não tem um repositório GitHub para o seu projeto, crie um.
+Return to the Git association form in the OVHcloud Control Panel. You must enter the address of your GitHub repository. If you don't have a GitHub repository for your project yet, create one.
 
-Para criar um novo repositório:
+To create a new repository:
 
-- Ligue-se à sua conta GitHub.
-- Clique na sua imagem de perfil no canto superior direito e, a seguir, em `Your repositories`{.action}.
-- À direita do ecrã que se abrir, clique em `New`{.action}.
+- Log in to your GitHub account.
+- Click on your profile picture in the top right-hand corner, then on `Your repositories`{.action}.
+- On the right of the screen that appears, click `New`{.action}.
 
-Defina um nome para o seu depósito e preencha as informações necessárias.
+Define a name for your deposit and fill in the requested information.
 
 > [!warning]
 >
-> Marque a opção `Add a README file` para que o GitHub inicialize corretamente o seu repositório.
+> Tick the option `Add a README file` for GitHub to correctly initialise your repository.
 >
 
-Por fim, clique em `Create Repository`{.action}.
+Finally, click `Create Repository`{.action}.
 
-Copie o endereço do seu repositório GitHub. Esta deve ser da forma `https://github.com/<username>/<repository_name.git>`. Volte para o formulário de associação do Git e cole o endereço do repositório GitHub no campo `Repositório`{.action}. Se o formato do endereço não estiver correto, aparecerá a seguinte mensagem de erro:
+Copy the address of your GitHub repository. It must be of the form `https://github.com/<username>/<repository_name>`{.action}. Return to the Git association form and paste the address of your GitHub repository into the `Deposit`{.action} field. If the address format is not correct, the following error message appears:
 
-![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/error-wrong-git-branch-name.png){.thumbnail}
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/error-wrong-git-repository-name.png){.thumbnail}
 
-Agora defina o ramo do seu repositório GitHub. O branch padrão é "main`", mas se você quiser usar outro branch, crie um no GitHub seguindo as etapas abaixo:
+Now define the branch of your GitHub repository. The default branch is `main`, but if you want to use another branch, create one on GitHub by following the steps below:
 
-- Ligue-se à sua conta GitHub.
-- Clique na sua imagem de perfil no canto superior direito e, a seguir, em `Your repositories`{.action}.
-- Dirija-se ao repositório GitHub em questão.
-- Clique em `Main`{.action} e, em seguida, em `View all rams`{.action}, ou clique diretamente no separador `x Branch`{.action}.
-- À direita do ecrã que se abrir, clique em `New branch`{.action}.
-- Indique o nome do novo ramo e confirme clicando em `Create new branch`{.action}.
+- Log in to your GitHub account.
+- Click on your profile picture in the top right-hand corner, then on `Your repositories`{.action}.
+- Go to the relevant GitHub repository.
+- Click `Main`{.action}, then `View all branches`{.action}, or directly click `x Branch`{.action}.
+- To the right of the screen that appears, click `New branch`{.action}.
+- Enter the name of the new branch and confirm by clicking `Create new branch`{.action}.
 
-Volte para o formulário de associação de Git na sua Área de Cliente OVHcloud e indique o nome do novo ramo que acabou de criar.
+Go back to the Git association form in the OVHcloud Control Panel, and enter the name of the new branch you have just created.
 
-#### Configurar a implementação automática
+#### Configure automatic deployment
 
-Na parte inferior do formulário de associação do Git, aparece uma secção `Configurar a implementação automática`{.action}, acompanhada do URL do webhook. Configurar um webhook permite que o seu repositório GitHub notifique automaticamente o seu alojamento web da OVHcloud dos eventos que ocorrem no repositório GitHub (nova implementação, alteração do código, etc.). Esta funcionalidade é particularmente útil se trabalha em grupo no mesmo projeto e deseja manter-se atualizado de todas as modificações do repositório GitHub. Para saber mais, descubra como [configurar um webhook no GitHub](#configureWebhook).
+At the bottom of the Git association form, a `Configuring automatic deployment`{.action} section will appear, along with the webhook URL. By configuring a webhook, your GitHub repository can automatically notify your OVHcloud web hosting plan of events that occur on the GitHub repository (new deployment, changes in code, etc.). This feature is especially useful if you work as a group on the same project and want to stay up to date with all changes in the GitHub repository. To learn more, learn how to [configure a webhook on GitHub](#configureWebhook).
 
-#### Validar a associação do Git
+#### Validate Git association
 
-Antes de validar o formulário de associação do Git, certifique-se de que:
+Before validating the Git association form, make sure that:
 
-- A sua chave SSH foi corretamente registada na sua conta GitHub.
-- O endereço do seu repositório GitHub está correto. Deve ser da forma `https://github.com/<username>/<repository_name.git>`.
-- O nome do ramo do repositório GitHub está correto.
-- O diretório de instalação está vazio.
+- Your SSH key has been saved in your GitHub account.
+- The address of your GitHub repository is correct. It must be of the form `https://github.com/<username>/<repository_name>`{.action}.
+- The name of the GitHub repository branch is correct.
+- Your installation directory is empty.
 
-Para validar as informações do formulário de associação do Git, clique em `Aplicar configuração`{.action}.
+To validate the information in the Git association form, click `Apply configuration`{.action}.
 
-### Ativação da associação do Git
+### Enabling Git association
 
-#### Sucesso da associação do Git
+#### Successful association of Git
 
-Depois de validar o formulário de associação do Git, será redirecionado para o separador Multisite.
+After validating the Git association form, you are redirected to the Multisite tab.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/banner-git-activation-ongoing.png){.thumbnail}
 
-Um banner verde indica que o Git está sendo ativado. Siga a ativação do Git ao clicar no link `Tarefas em curso`{.action}.
+A green banner will show you that Git is being enabled. Follow the activation of Git by clicking on the `Current tasks`{.action} link.
 
-![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ongoing-tasks/ongoing-task-git-activation.png){.thumbnail}
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/ongoing-task-git-activation.png){.thumbnail}
 
-O estado `Em curso`{.action} indica que a associação do Git está em curso. O processo pode demorar alguns minutos. Quando a tarefa estiver concluída, o estado `Ativado`{.action} é apresentado.
+The status `Running`{.action} indicates that the Git association is in progress. The process may take several minutes. When the task is complete, the status `Enabled`{.action} is displayed.
 
-Pode igualmente seguir a evolução da ativação do Git a partir do separador `Multisite`{.action}. Na tabela, identifique as linhas que correspondem ao diretório que deseja associar ao Git. Para cada uma das linhas em causa, na coluna `Git`{.action}, a menção `Em curso`{.action} indica-lhe que o Git está em curso de ativação.
+You can also track the progress of Git activation from the `Multisite`{.action} tab. In the table, identify the rows that correspond to the directory you want to associate with Git. For each of the rows concerned, in the `Git`{.action} column, the phrase `In progress`{.action} tells you that Git is being enabled.
 
-Quando a associação do Git é efetuada, o estado `Ativado`{.action} aparece na coluna `Git`{.action} para as linhas em causa.
+When the Git association is complete, the status `Enabled`{.action} appears in the `Git`{.action} column for the rows concerned.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/success-git-activation.png){.thumbnail}
 
-#### Erros da associação do Git
+#### Git association errors
 
-Na tabela do separador `Multisite`{.action}, identifique as linhas correspondentes ao diretório que pretende associar ao Git. Na coluna `Git`, se for apresentado `Erro`, significa que ocorreu, pelo menos, um dos seguintes erros:
+In the table in the `Multisite`{.action} tab, identify the rows corresponding to the directory you want to associate with Git. In the `Git` column, if the word `Error` appears, this means that at least one of the following errors has occurred:
 
-- A chave SSH não foi registada na sua conta GitHub.
-- O diretório de instalação não está vazio.
-- O endereço do repositório GitHub não existe ou está errado.
-- O ramo do repositório GitHub não existe ou o seu nome está errado.
+- The SSH key has not been saved in your GitHub account.
+- The installation directory is not empty.
+- The GitHub repository address does not exist or is incorrect.
+- The branch of the GitHub repository does not exist or its name is incorrect.
 
-Consulte as informações da última implementação para obter a causa exata do erro. Na tabela, identifique a linha correspondente ao nome de domínio cujos logs da última implementação pretende consultar. À direita da linha, clique no botão `...`{.action} e, a seguir, em `Informações da última implementação`{.action}.
+For the exact cause of the error, see the information from the last deployment. In the table, identify the row corresponding to the domain name for which you want to view the logs for the last deployment. To the right of the line, click on the `...`{.action} button, then on `Latest deployment information`{.action}.
 
-![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/latest-deployment-information.png){.thumbnail}
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/info-last-deployment-button.png){.thumbnail}
 
-Uma vez identificado o(s) erro(s), associe Git novamente. Repita a operação clicando no botão `...`{.action} da linha correspondente e, a seguir, em `Associar Git`{.action}.
+Once you have identified the error(s), associate Git again. Retry the operation by clicking on the `...`{.action} button on the corresponding line, then on `Link Git`{.action}.
 
-### Implementar o seu repositório GitHub no seu alojamento web OVHcloud
+### Deploy your GitHub repository on your OVHcloud web hosting plan
 
-Aceda à [Área de Cliente OVHcloud](/links/manager), vá à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} e escolha o nome do alojamento em causa. Selecione o separador `Multisite`{.action}. Na tabela que aparece, identifique a linha que corresponde ao nome de domínio que deseja implementar com o Git. Certifique-se de que o estado da coluna Git seja `Ativado`{.action}. Clique no botão `...`{.action} e, a seguir, em `Implementar o Git`{.action}.
+Log in to your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, click `Hosting plans`{.action}, then choose the name of the web hosting plan concerned. Select the `Multisite`{.action} tab. In the table that appears, identify the row for the domain name that you want to deploy with Git. Ensure that the status of the Git column is `Enabled`{.action}. Click the `...`{.action} button, then `Deploy Git`{.action}.
 
-![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/deploy-git.png){.thumbnail}
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/deploy-git-button.png){.thumbnail}
 
-Uma mensagem de confirmação será exibida, juntamente com uma caixa de seleção indicando que, em caso de conflito durante a implementação, você pode forçar as alterações remotas (do repositório GitHub) em seu repositório local. Selecione ou não a caixa de verificação conforme a sua escolha e depois clique em `Confirmar`{.action} para validar a implementação.
+A confirmation message appears, along with a check box telling you that if there is a conflict during deployment, you can force remote (GitHub repository) changes on your local repository. Tick or untick the box depending on your choice, then click `Confirm`{.action} to validate the deployment.
 
 > [!warning]
 >
-> Para evitar a perda das alterações locais, guarde-as antes de as substituir pelas alterações do ramo remoto.
+> To avoid losing your local changes, remember to save them before overwriting them with changes from the remote branch.
 >
 
-A nova versão do seu website foi corretamente implementada no seu alojamento OVHcloud. Se outras pessoas estiverem a trabalhar no mesmo projeto e estiverem a fazer alterações no repositório GitHub, pode [configurar um webhook no GitHub](#configureWebhook) para que as alterações sejam implementadas automaticamente no seu alojamento web. Isso evita que você implemente o Git manualmente, e seu alojamento web estará sempre atualizado.
+The new version of your website has been deployed on your OVHcloud hosting plan. If other people are working on the same project and they make changes on the GitHub repository, then you can [configure a webhook on GitHub](#configureWebhook) so that their changes are automatically deployed to your web hosting plan. This avoids having to deploy Git manually, and your web hosting plan will always be up-to-date.
 
-### Modificar um nome de domínio
+### Modify a domain name
 
-Aceda à [Área de Cliente OVHcloud](/links/manager), vá à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} e escolha o nome do alojamento em causa. Selecione o separador `Multisite`{.action}. Na tabela que aparece, identifique a linha que corresponde ao domínio que pretende alterar. Clique no botão `...`{.action} e, a seguir, em `Modificar o domínio`{.action}. Existem dois cenários possíveis:
+Log in to your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, click `Hosting plans`{.action}, then choose the name of the web hosting plan concerned. Select the `Multisite`{.action} tab. In the table that appears, identify the row for the domain you want to modify. Click the `...`{.action} button, then `Modify domain`{.action}. There are two possible scenarios:
 
-#### O nome de domínio não é o único associado ao mesmo diretório
+#### The domain name is not the only one attached to the same directory
 
-Aparecerá a seguinte janela:
+The following window appears:
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-step1.png){.thumbnail}
 
-Altere as informações à sua escolha e clique em `Seguinte`{.action}.
+Modify the information of your choice and click `Next`{.action}.
 
-Ser-lhe-á exibida uma segunda janela de confirmação, juntamente com o resumo das alterações efetuadas.
+A second confirmation window will appear, with a summary of your changes.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-step2.png){.thumbnail}
 
-Clique em `Confirmar`{.action} para validar as modificações do seu nome de domínio.
+Click `Confirm`{.action} to confirm your domain name changes.
 
-#### O nome de domínio é o único associado ao diretório
+#### The domain name is the only one attached to the directory
 
-Aparecerá a seguinte janela:
+The following window appears:
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-alone-domain-step1.png){.thumbnail}
 
-Como indicado na mensagem, [elimine a associação Git](#deleteGitAssociation) primeiro antes de modificar o domínio.
+As the message states, [delete your Git association](#deleteGitAssociation) first before changing your domain name.
 
-### Desassociar um nome de domínio
+### Detach a domain name
 
-Aceda à [Área de Cliente OVHcloud](/links/manager), vá à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} e escolha o nome do alojamento em causa. Selecione o separador `Multisite`{.action}. Na tabela que se abrir, identifique a linha correspondente ao domínio que pretende destacar do seu alojamento web da OVHcloud. Clique no botão `...`{.action} e, a seguir, em `Desassociar o domínio`{.action}. Existem dois cenários possíveis:
+Log in to your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, click `Hosting plans`{.action}, then choose the name of the web hosting plan concerned. Select the `Multisite`{.action} tab. In the table that appears, identify the line corresponding to the domain that you want to detach from your OVHcloud web hosting plan. Click the `...`{.action} button, then `Detach domain`{.action}. There are two possible scenarios:
 
-#### O nome de domínio não é o único associado ao mesmo diretório
+#### The domain name is not the only one attached to the same directory
 
-Aparecerá a janela seguinte.
+The following window will appear.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/detach-domain-popup.png){.thumbnail}
 
-Clique em `Confirmar`{.action} para validar a dissociação do seu nome de domínio.
+Click `Confirm`{.action} to confirm the detachment of your domain name.
 
-#### O nome de domínio é o único associado ao diretório
+#### The domain name is the only one attached to the directory
 
-Aparecerá a seguinte janela:
+The following window appears:
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/detach-alone-domain.png){.thumbnail}
 
-Como indicado na mensagem, [elimine a associação Git](#deleteGitAssociation) primeiro antes de desassociar o domínio.
+As the message states, [delete your Git association](#deleteGitAssociation) first before detaching your domain name.
 
-### Configurar o Git
+### Configure Git
 
-Aceda à [Área de Cliente OVHcloud](/links/manager), vá à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} e escolha o nome do alojamento em causa. Selecione o separador `Multisite`{.action}. Na tabela que aparece, identifique a linha correspondente ao diretório que deseja configurar com o Git. Clique no botão `...`{.action} e, a seguir, em `Configurar o Git`{.action}.
+Log in to your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, click `Hosting plans`{.action}, then choose the name of the web hosting plan concerned. Select the `Multisite`{.action} tab. In the table that appears, identify the row corresponding to the directory you want to configure with Git. Click the `...`{.action} button, then `Configure Git`{.action}.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/configure-git-button.png){.thumbnail}
 
-Aparecerão as seguintes informações:
+The following information is displayed:
 
-- Chave SSH: se ainda não o fez, [registe a chave SSH na sua conta GitHub](#linkSSHKey).
-- Depósito: endereço do seu repositório Git. Este campo está cinzento, pois não é possível alterar o endereço do repositório Git. Para alterar o URL do repositório Git, você precisa [remover a associação Git do seu diretório](#deleteGitAssociation) e, em seguida, [associar o diretório ao Git](#associateGitRepo).
-- Ramo: nome do ramo do repositório GitHub. Pode alterar este campo.
-- URL de webhook: se deseja otimizar as implementações no Git, [configure o webhook no GitHub](#configureWebhook).
+- SSH key: If you have not already done so, [save your SSH key in your GitHub account](#linkSSHKey).
+- Deposit: Address of your Git deposit. This field is grayed out because you cannot change the address of the Git repository. To change the Git repository URL, you must [remove Git association from your directory](#deleteGitAssociation) and then [associate directory to Git](#associateGitRepo) again.
+- Branch: Name of the branch of the GitHub repository. You can edit this field.
+- Webhook URL: If you want to optimise your deployments on Git, [configure the webhook on GitHub](#configureWebhook).
 
-### Informações da última implementação
+### Latest deployment information
 
-Depois de ter implementado o seu repositório GitHub no seu alojamento web, pode consultar as informações sobre a última implementação, como os erros, os testes ou qualquer informação útil.
+Once you have deployed your GitHub repository on your web hosting plan, you can view information on the latest deployment, such as errors, tests and any useful information. 
 
-Aceda à [Área de Cliente OVHcloud](/links/manager), vá à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} e escolha o nome do alojamento em causa. Selecione o separador `Multisite`{.action}. Na tabela que se abrir, identifique a linha correspondente ao domínio que pretende consultar os logs da última implementação. À direita da linha, clique no botão `...`{.action} e, a seguir, em `Informações da última implementação`{.action}.
+Log in to your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, click `Hosting plans`{.action}, then choose the name of the web hosting plan concerned. Select the `Multisite`{.action} tab. In the table that appears, identify the row for the domain whose logs you want to view from the last deployment. To the right of the line, click the `...`{.action} button, then `Latest deployment information`{.action}.
 
-![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/latest-deployment-information.png){.thumbnail}
+![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/informations-last-git-deployment-button.png){.thumbnail}
 
-Encontre neste ecrã todas as informações relativas à última implementação.
+On this screen, you can view all the information related to the latest deployment.
 
-### Eliminar a associação de Git <a name="deleteGitAssociation"></a>
+### Delete Git <a name="deleteGitAssociation"></a> association
 
-Aceda à [Área de Cliente OVHcloud](/links/manager), vá à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} e escolha o nome do alojamento em causa. Selecione o separador `Multisite`{.action}. Na tabela exibida, identifique a linha correspondente ao diretório cuja associação com o Git você deseja remover. Clique no botão `...`{.action} e, a seguir, em `Eliminar o Git`{.action}.
+Log in to your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, click `Hosting plans`{.action}, then choose the name of the web hosting plan concerned. Select the `Multisite`{.action} tab. In the table that opens, identify the row corresponding to the directory whose association with Git you want to remove. Click the `...`{.action} button, then `Delete Git`{.action}.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/delete-git-association-button.png){.thumbnail}
 
-Aparecerá a seguinte janela:
+The following window appears:
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/delete-git-association-popup.png){.thumbnail}
 
-A mensagem informa que a eliminação será aplicada ao conjunto dos nomes de domínio ligados ao seu diretório. Marque a caixa de seleção `Pretende esvaziar o conteúdo do diretório <your_repository>?`{.action} se deseja igualmente eliminar o conteúdo (pastas e ficheiros) do diretório.
+The message informs you that the deletion will apply to all domain names attached to your directory. Tick the `Do you want to empty the contents of the <your_directory> directory?`{.action} option if you also want to delete the contents (folders and files) of the directory.
 
-1\.	Se selecionar a caixa de verificação, surge a seguinte janela:
+1\.	If you select the check box, the following window appears:
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/delete-git-association-with-folder-popup-confirm.png){.thumbnail}
 
-Clique em `Confirmar`{.action} para validar a eliminação da associação Git do seu diretório, bem como o seu conteúdo.
+Click `Confirm`{.action} to confirm the deletion of the Git association from your directory, as well as its contents.
 
-2\.	Se a caixa de verificação não estiver selecionada, ser-lhe-á exibida a seguinte janela:
+2\.	If you do not select the check box, the following window appears:
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/delete-git-association-popup-confirm.png){.thumbnail}
 
-Clique em `Confirmar`{.action} para validar a eliminação da associação Git do seu diretório.
+Click `Confirm`{.action} to confirm the deletion of the Git association from your directory.
 
-### Configurar um webhook no GitHub
+### Configure a webhook on GitHub
 
-#### Obter o URL do webhook
+#### Retrieve the webhook URL
 
 > [!primary]
 >
-> Se você já estiver no formulário de associação do Git, copie o URL do webhook e vá para a etapa "[Configurar o webhook](#configureWebhook)".
+> If you are already in the Git association form, copy the webhook URL and go to the step “[Configure the webhook](#configureWebhook)”.
 >
 
-Aceda à [Área de Cliente OVHcloud](/links/manager), vá à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} e escolha o nome do alojamento em causa. Selecione o separador `Multisite`{.action}. Na tabela que aparece, identifique a linha correspondente ao diretório no qual pretende configurar um webhook. Clique no botão `...`{.action} e, a seguir, em `Configurar o Git`{.action}.
+Log in to your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section, click `Hosting plans`{.action}, then choose the name of the web hosting plan concerned. Select the `Multisite`{.action} tab. In the table that opens, identify the row that corresponds to the directory where you want to configure a webhook. Click the `...`{.action} button, then `Configure Git`{.action}.
 
 ![Multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/configure-git-button.png){.thumbnail}
 
-Na parte inferior do formulário, identifique o endereço do campo `URL do webhook`{.action} e copie-o. Agora você deve salvar o URL e configurar o webhook em sua conta do GitHub.
+At the bottom of the form that opens, identify the address of the `Webhook URL`{.action} field, and copy it. You will now need to save the URL and configure the webhook on your GitHub account.
 
-#### Configurar o webhook <a name="configureWebhook"></a>
+#### Configure the <a name="configureWebhook"></a> webhook
 
-Aceda à sua conta GitHub e ao repositório onde pretende configurar o webhook. Aceda ao separador `Settings`{.action} e, no menu lateral dos parâmetros, clique em `Webhooks`{.action}". Clique no botão `Add webhook`{.action} para aceder ao formulário:
+Log in to your GitHub account, and go to the repository where you want to configure the webhook. Go to the `Settings`{.action} tab, then in the settings side menu, click `Webhooks`{.action}. Click the `Add webhook`{.action} button to access the form:
 
-- **Payload URL** : introduza o URL fornecido no formulário de associação de Git (`URL do webhook`{.action}).
-- **Content type** : escolha `application/json`{.action} como tipo de conteúdo para os dados enviados.
-- **Secret** : o segredo é facultativo. O GitHub irá utilizá-lo para assinar as mensagens enviadas pelo webhook, reforçando assim a segurança.
-- **SSL verification** : se o seu website suporta o HTTPS, deixe esta opção ativada para uma segurança acrescida.
-- **Which events would you like to trigger this webhook?** : selecione os eventos que irão despoletar o envio do webhook. Para uma implementação automática, `Just the push event`{.action} (apenas o evento push) é frequentemente suficiente, mas pode escolher `Send me everything`{.action} para receber notificações para todos os eventos.
-- **Active** : certifique-se de que a caixa está selecionada para ativar o webhook.
+- **Payload URL**: Enter the URL provided in the Git association form (`Webhook URL`{.action}).
+- **Content type**: Choose `application/json`{.action} as the content type for the data sent.
+- **Secret**: The secret is optional. GitHub will use it to sign messages sent by the webhook, enhancing security.
+- **SSL verification**: If your website supports HTTPS, leave this option enabled for increased security.
+- **Which events would you like to trigger this webhook?**: Select the events that will trigger the webhook to be sent. For automatic deployment, `Just the push event`{.action} is often enough, but you can choose `Send me everything`{.action} to receive notifications for all events.
+- **Active**: Make sure that the box is ticked to enable the webhook.
 
-Clique em `Add webhook`{.action} para guardar e ativar o seu novo webhook.
+Click `Add webhook`{.action} to save and activate your new webhook.
 
-#### Testar o seu webhook
+#### Test your webhook
 
-Depois de criar o seu webhook no GitHub, vá à lista dos seus webhooks e selecione o que acabou de criar, ou clique em `Edit`{.action}.
+Once you have created your webhook in GitHub, go to the list of your webhooks and select the one you have just created, or click `Edit`{.action}.
 
-No ecrã que vai aparecer, clique no separador `Recent Deliveries`{.action}. Para enviar um evento de teste especificamente, o GitHub normalmente envia um evento `ping` quando o webhook é criado, e você pode usar o botão `Redeliver`{.action} ao lado deste evento para testá-lo.
+On the screen that appears, click on the `Recent Deliveries`{.action} tab. To send a test event specifically, GitHub usually sends a `ping` event when creating the webhook, and you can use the `Redeliver`{.action} button next to this event to test it.
 
-Se o teste tiver sido executado, o separador `Response`{.action} devolve um código 200. Se um código de erro for devolvido (geralmente 500 ou 400), isso significa que o webhook foi mal configurado. Volte para o formulário de adição de um webhook e verifique as informações, especificamente o URL do webhook fornecido pela OVHcloud.
+If the test has worked, the `Response`{.action} tab returns a code of 200. If an error code is returned (usually 500 or 400), this means that your webhook has been misconfigured. Return to the form for adding a webhook, and check the information, specifically the webhook URL provided by OVHcloud.
 
-#### Utilizar o webhook
+#### Use the webhook
 
-Depois de configurar o webhook, o código do site será atualizado automaticamente sempre que ocorrerem alterações no repositório GitHub. Por exemplo, se um dos seus colegas efetuar alterações no repositório GitHub, o código do seu website será atualizado localmente (no seu alojamento OVHcloud).
+Once your webhook has been set up, your website’s code will be updated automatically whenever changes occur on the GitHub repository. For example, if changes are made by one of your colleagues on the GitHub repository, then your website code will be updated locally (on your OVHcloud hosting plan).
 
-### Conclusão
+### Conclusion
 
-Acabou de associar o código do seu website com o Git, através do seu repositório GitHub. Agora pode implementar as modificações realizadas no repositório GitHub para o seu alojamento web ou implementá-las de forma automatizada graças ao webhook, consultar os logs das suas implementações e efetuar múltiplas ações, tudo a partir da sua Área de Cliente, em apenas alguns cliques.
+You have just linked your website code with Git, via your GitHub repository. You can now deploy the changes made on the GitHub repository to your web hosting plan, or deploy them in an automated way using the webhook. You can also view your deployment logs and perform multiple actions in just a few clicks via the OVHcloud Control Panel.
 
-## Quer saber mais?
+## Go further
 
-[Publicar um site num alojamento web](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)
+[Putting a website online on your web hosting plan](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online)
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
  
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
  
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
- 
-Fale com nossa [comunidade de utilizadores](/links/community).
+Join our [community of users](/links/community).

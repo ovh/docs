@@ -31,7 +31,7 @@ The only restrictions we impose regarding this keypair are:
 >
 > Only your **public** key needs to be shared with OVHcloud.
 > You should never share your **private** key,
-> and no one at OVHcloud should ever ask you for your private key.
+> and no one at OVHcloud should never ask you for your private key.
 >
 
 #### Get an existing PGP public key
@@ -268,7 +268,7 @@ $ ls
 
 Now your stream's archives are encrypted with your PGP public keys, and only the owner of the related private keys can decrypt the archives.
 
-But what if you lose access to your private keys or to your passphrase? In such a case, you won't be able to decrypt your archives anymore, and won't be able to see the archives content.
+But what if you lose access to your private keys or to your passphrase ? In such a case, you won't be able to decrypt your archives anymore, and won't be able to see the archives content.
 
 To avoid such a situation, we provide the `LDP Recovery Keys`. These are also PGP public keys you can use in your cold storage configuration, but which private keys are owned by OVHcloud. Thus if you chose to use `LDP Recovery Keys` in addition to your own keys, and you lose access to your private keys, OVHcloud teams will still be able to decrypt your archives, re-encrypt it with your new keys and send you these re-encrypted archives.
 

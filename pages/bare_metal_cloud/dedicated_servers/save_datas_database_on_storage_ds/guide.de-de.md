@@ -25,7 +25,7 @@ In diesem Tutorial lernen Sie, wie Sie einen OVHcloud Storage Server nach Ihren 
 ### Sie benötigen:
 
 - einen [OVHcloud Storage Server](https://www.ovhcloud.com/de/bare-metal/storage/){.external}
-- eine Produktionsinfrastruktur ([VPS](https://www.ovhcloud.com/de/vps/){.external}, [Dedicated Server](/links/bare-metal/bare-metal){.external}, [Public Cloud](https://www.ovhcloud.com/de/public-cloud/){.external}, ...)
+- eine Produktionsinfrastruktur ([VPS](https://www.ovhcloud.com/de/vps/){.external}, [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/){.external}, [Public Cloud](https://www.ovhcloud.com/de/public-cloud/){.external}, ...)
 - eine SSH-Verbindung zwischen dem Storage Server und der Produktionsinfrastruktur
 - empfohlen: ein privates Netzwerk zwischen Ihren Servern ([OVHcloud vRack](https://www.ovh.de/loesungen/vrack/){.external})
 
@@ -61,7 +61,7 @@ Kein RAID-Typ ist grundsätzlich besser als die anderen. Alle erfüllen bestimmt
 
 ### Schritt 2: Server installieren und konfigurieren
 
-Gehen Sie in Ihr [OVHcloud Kundencenter ](/links/manager){.external} und installieren Sie Ihren Server. Wie bereits erwähnt, verwenden wir Debian 9.4. Weitere Informationen finden Sie in unserer Anleitung [Erste Schritte mit einem Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#ihren-dedizierten-server-installieren-oder-reinstallieren){.external}.
+Gehen Sie in Ihr [OVHcloud Kundencenter ](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} und installieren Sie Ihren Server. Wie bereits erwähnt, verwenden wir Debian 9.4. Weitere Informationen finden Sie in unserer Anleitung [Erste Schritte mit einem Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#ihren-dedizierten-server-installieren-oder-reinstallieren){.external}.
 
 Wenn Sie das Betriebssystem für die Installation ausgewählt haben, setzen Sie einen Haken in dem Feld `Konfiguration der Partitionen anpassen`{.action}.
 

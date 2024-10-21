@@ -1,7 +1,7 @@
 ---
 title: 'Primeros pasos con el servicio Hosted Exchange'
 excerpt: 'Cómo configurar por primera vez el servicio Hosted Exchange'
-updated: 2024-09-03
+updated: 2023-03-06
 ---
 
 > [!primary]
@@ -22,16 +22,16 @@ El servicio Hosted Exchange le permite disfrutar de direcciones de correo electr
 
 ## Requisitos
 
-- Tener contratado un plan [Hosted Exchange](/links/web/emails-hosted-exchange).
+- Tener contratado un plan [Hosted Exchange](https://www.ovhcloud.com/es-es/emails/hosted-exchange/).
 - Haber recibido el email de confirmación de la instalación de la solución Hosted Exchange.
 - Tener un dominio.
-- Estar conectado al [área de cliente de OVHcloud](/links/manager).
+- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ## Procedimiento
 
 ### Acceder a la gestión del servicio
 
-Una vez que el servicio Hosted Exchange haya sido creado y esté disponible, puede administrarlo desde el [área de cliente de OVHcloud](/links/manager).
+Una vez que el servicio Hosted Exchange haya sido creado y esté disponible, puede administrarlo desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 Para ello, Haga clic en `Microsoft`{.action}, luego en `Exchange`{.action} y seleccione el servicio Hosted Exchange correspondiente.
 
@@ -78,20 +78,15 @@ Asigne un nombre a sus direcciones de correo Exchange y añada información adic
 
 #### **Caso particular**
 
-- Si configura su plataforma Exchange con un dominio no gestionado en el mismo área de cliente que esta plataforma, o con otro proveedor de dominio, tendrá la siguiente ventana :
-
-![Correo electrónico](images/exchange-wizard05.png){.thumbnail .w-640}
-
-Esta ventana le invita a añadir un **registro CNAME** en la zona DNS del dominio. Este registro permite comprobar que usted gestiona el dominio.
+- Si configura su plataforma Exchange con un dominio no gestionado en el mismo área de cliente que esta plataforma, o con otro proveedor de dominio, tendrá la siguiente ventana:<br>
+![Correo electrónico](images/exchange-wizard05.png){.thumbnail .w-640}<br>
+Esta ventana le invita a añadir un **registro CNAME** en la zona DNS del dominio. Este registro permite comprobar que usted gestiona el dominio.<br>
 
 > [!warning]
->
 > Sin esta validación por registro CNAME, no es posible utilizar la plataforma con este nombre de dominio.
 
-- Si configura su plataforma Exchange con un dominio no gestionado en el mismo área de cliente que esta plataforma, gestionada con otro proveedor de dominio, o si ha optado por configurar manualmente su nombre de dominio, se mostrará la siguiente ventana :
-
-![Correo electrónico](images/exchange-wizard06.png){.thumbnail .w-640}
-
+- Si configura su plataforma Exchange con un dominio no gestionado en el mismo área de cliente que esta plataforma, gestionada con otro proveedor de dominio, o si ha optado por configurar manualmente su nombre de dominio, se mostrará la siguiente ventana:<br>
+![Correo electrónico](images/exchange-wizard06.png){.thumbnail .w-640}<br>
 Aquí encontrará los valores que deberá introducir en su zona DNS. Los **registros MX** corresponden a la recepción del correo. El **registro SRV** se corresponde con la configuración automática de las direcciones de correo.
 
 Consulte la configuración de su zona DNS relativa a su servicio de correo en nuestra página "[Añadir un registro MX a la configuración del dominio](/pages/web_cloud/domains/dns_zone_mx)".
@@ -105,7 +100,7 @@ Una vez que haya configurado por primera vez el dominio, también puede configur
 > Todas las direcciones creadas en el servicio Exchange se mostrarán en el directorio de las direcciones del servicio, incluidas aquellas que posean un dominio diferente. Si desea crear directorios separados, deberá contratar un nuevo servicio Hosted Exchange para el o los dominios en cuestión.
 >
 
-Para añadir un nuevo dominio, seleccione el servicio Hosted Exchange correspondiente en el [área de cliente de OVHcloud](/links/manager) y abra la pestaña `Dominios asociados`{.action}. Se mostrará una tabla con los dominios ya configurados o que estén siendo configurados en el servicio. Haga clic en el botón `Añadir un dominio`{.action} y siga los pasos que se le indican para añadir el dominio.
+Para añadir un nuevo dominio, seleccione el servicio Hosted Exchange correspondiente en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y abra la pestaña `Dominios asociados`{.action}. Se mostrará una tabla con los dominios ya configurados o que estén siendo configurados en el servicio. Haga clic en el botón `Añadir un dominio`{.action} y siga los pasos que se le indican para añadir el dominio.
 
 Para más información, consulte la guía [Añadir un dominio a un servicio Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 
@@ -120,7 +115,7 @@ Para más información, consulte la guía [Añadir un dominio a un servicio Exch
 
 Puede configurar cuentas adicionales si lo desea y si no lo ha hecho ya a través del asistente.
 
-Para ello, acceda al servicio Hosted Exchange correspondiente en el [área de cliente de OVHcloud](/links/manager) y abra la pestaña `Cuentas de correo`{.action}. Se mostrará una tabla con las cuentas de correo ya configuradas o que estén siendo configuradas en el servicio.
+Para ello, acceda al servicio Hosted Exchange correspondiente en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y abra la pestaña `Cuentas de correo`{.action}. Se mostrará una tabla con las cuentas de correo ya configuradas o que estén siendo configuradas en el servicio.
 
 La tabla mostrará las cuentas pendientes de configurar con el formato *@configureme.me*. Para configurarlas, haga clic en el icono con forma de lápiz y siga los pasos que se le indican.
 
@@ -133,23 +128,15 @@ La tabla mostrará las cuentas pendientes de configurar con el formato *@configu
 
 ### Utilizar las direcciones de correo
 
-Una vez que haya configurado las cuentas, ¡ya puede utilizarlas! Para ello, OVHcloud pone a su disposición el webmail **Outlook Web App** (OWA). Puede acceder a ella en la dirección [Webmail](/links/web/email). Para acceder, introduzca las claves de su dirección de correo electrónico. Para más información, consulte las guías de OVHcloud sobre las [Soluciones colaborativas Microsoft](/products/web-cloud-email-collaborative-solutions-microsoft-exchange), en el apartado relativo a Outlook Web App (OWA).
-
-Si es la primera vez que inicia sesión en OWA con esta dirección de correo electrónico, se le pedirá que especifique el idioma de la interfaz y la zona horaria. Haga clic en `Guardar`{.action} para continuar.
-
-> [!primary]
->
-> Las zonas horarias se enumeran según [el estándar UTC (hora universal coordinada)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), no por orden alfabético de ciudades.
->
-> **Ejemplo** : Para Europa Occidental, se trata de UTC +1 (Bruselas, Copenhague, Madrid, París).
+Una vez que haya configurado las cuentas, ¡ya puede utilizarlas! Para ello, OVHcloud pone a su disposición el webmail **Outlook Web App** (OWA). Puede acceder a ella en la dirección <https://www.ovhcloud.com/es-es/mail/>. Para acceder, introduzca las claves de su dirección de correo electrónico. Para más información, consulte las guías de OVHcloud sobre las [Soluciones colaborativas Microsoft](/products/web-cloud-email-collaborative-solutions-microsoft-exchange), en el apartado relativo a Outlook Web App (OWA).
 
 Si desea configurar su cuenta de correo electrónico en un cliente de correo o un dispositivo externo (smartphone o tablet), consulte las guías de OVHcloud sobre las [soluciones colaborativas Microsoft](/products/web-cloud-email-collaborative-solutions-microsoft-exchange). Para un uso óptimo de su cuenta Exchange en un cliente de correo de escritorio, asegúrese de que este sea compatible con el servicio.
 
-OVHcloud ofrece, desde el [área de cliente de OVHcloud](/links/manager), licencias Outlook opcionales con su cuenta de correo Exchange.
+OVHcloud ofrece, desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), licencias Outlook opcionales con su cuenta de correo Exchange.
 
 Para suscribirse, consulte nuestra página "[Obtener una licencia Outlook para Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/office_outlook_license)". 
 
-También puede consultar [las licencias Office 365](/links/web/ms365). Si desea disfrutar del cliente de correo Outlook o de otros programas de la suite Office, le recomendamos una de estas soluciones.
+También puede consultar [las licencias Office 365](https://www.ovhcloud.com/es-es/collaborative-tools/microsoft-365/). Si desea disfrutar del cliente de correo Outlook o de otros programas de la suite Office, le recomendamos una de estas soluciones.
 
 > [!primary]
 >
@@ -159,9 +146,9 @@ También puede consultar [las licencias Office 365](/links/web/ms365). Si desea 
 
 ### Configuración de las funciones colaborativas (opcional)
 
-Una vez que el servicio Hosted Exchange haya sido configurado y esté operativo, ya puede activar las funcionalidades de colaboración en el [área de cliente de OVHcloud](/links/manager). Estas funciones permiten crear recursos (salas de reuniones, equipamiento...) y grupos, entre otros. 
+Una vez que el servicio Hosted Exchange haya sido configurado y esté operativo, ya puede activar las funcionalidades de colaboración en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Estas funciones permiten crear recursos (salas de reuniones, equipamiento...) y grupos, entre otros. 
 
-Para activar las distintas funciones, seleccione el servicio Hosted Exchange correspondiente en el [área de cliente de OVHcloud](/links/manager) y abra la pestaña correspondiente a la acción que quiera realizar.
+Para activar las distintas funciones, seleccione el servicio Hosted Exchange correspondiente en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y abra la pestaña correspondiente a la acción que quiera realizar.
 
 Para más información sobre estas funciones, consulte las guías de OVH sobre las [soluciones colaborativas Microsoft](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
 

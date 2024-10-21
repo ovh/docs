@@ -1,7 +1,7 @@
 ---
 title: "How to activate and use rescue mode"
 excerpt: "Find out how to use the OVHcloud rescue mode to troubleshoot your dedicated server"
-updated: 2024-08-23
+updated: 2024-05-21
 ---
 
 ## Objective
@@ -28,7 +28,7 @@ Usual tasks the rescue mode is appropriate for include:
 
 ## Requirements
 
-- A [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account
+- A [dedicated server](https://www.ovhcloud.com/en-ie/bare-metal/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
@@ -48,7 +48,7 @@ If your server has a Linux-based OS, select `rescue-customer`{.action} from the 
 Two authentication modes are available:
 
 - Password authentication
-- SSH key authentication
+- SSH Key authentication
 
 #### SSH Key authentication
 
@@ -57,14 +57,9 @@ Two authentication modes are available:
 > If you choose SSH Key authentication, make sure your public SSH key respects one of the formats `RSA`, `ECDSA`, or `ED25519`.
 >
 
-Select the “Authentication via SSH key” option, then enter your **public** SSH key in the dedicated text field.
+Select the “Authentication via SSH key” option, then enter your **public** SSH key in the dedicated text area.
 
 ![Linux SSH Key authentication](images/rescue-mode-08.png){.thumbnail}
-
-> [!primary]
-> 
-> You can add a default SSH key for rescue mode to a server via the OVHcloud API. See the [guide section below](#rescuessh) for details.
->
 
 #### Password authentication
 
@@ -205,9 +200,7 @@ vmfs6-fuse /dev/sdbX /mnt/datastore/
 
 To exit rescue mode, change the boot mode back to `Boot from the hard disk`{.action} in the [OVHcloud Control Panel](/links/manager) and restart the server from the command line.
 
-<a name="windowsrescue"></a>
-
-### Windows
+### Windows <a name="windowsrescue"></a>
 
 For servers with a Windows operating system, please refer to the [dedicated guide](/pages/bare_metal_cloud/dedicated_servers/rescue-customer-windows).
 
@@ -234,41 +227,8 @@ The following tools are already installed in this mode:
 |FileZilla|An open-source FTP client. It supports SSH and SSL protocols, and has a clear and intuitive drag-and-drop interface. You can use it to transfer your data to an FTP server, like the FTP backup service included with most OVHcloud server models.|
 |7-Zip|A utility for compressing and archiving files, which reads the following formats: ARJ, CAB, CHM, CPIO, CramFS, DEB, DMG, FAT, HFS, ISO, LZH, LZMA, MBR, MSI, NSIS, NTFS, RAR, RPM, SquashFS, UDF, VHD, WIM, XAR and Z. You can also use it to create your own archives in the following formats: BZIP2, GZIP, TAR, WIM, XZ, Z and ZIP.|
 
-<a name="rescuessh"></a>
-
-### How to add a default SSH key for rescue mode
-
-To speed up the process, you can add a default SSH key for rescue mode to your server via the [OVHcloud API](/pages/manage_and_operate/api/first-steps).
-
-To do this in the API web console, open the following API endpoint:
-
-> [!api]
->
-> @api {v1} /dedicated/server PUT /dedicated/server/{serviceName}
->
-
-Enter the internal name of your server in the appropriate field.
-
-Then edit the text field below as follows:
-
-```bash
-{
-  "rescueSshKey": "string"
-}
-```
-
-Replace `string` with your public SSH key.
-
-The result should look as shown in the following example:
-
-![rescue key example](images/rescuekey.png){.thumbnail}
-
-When you have entered your values correctly, click the button `TRY`{.action}.
-
-The SSH key field will now be filled automatically with this key string when changing the Netboot mode.
-
 ## Go further
 
 [Changing the admin password on a Windows dedicated server](/pages/bare_metal_cloud/dedicated_servers/changing-admin-password-on-windows)
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

@@ -1,7 +1,7 @@
 ---
 title: 'Securing your domain name with DNSSEC'
 excerpt: 'Protect your domain name from cache poisoning by activating DNSSEC'
-updated: 2024-08-20
+updated: 2023-07-26
 ---
 
 ## Objective 
@@ -15,11 +15,6 @@ This way, they can redirect incoming traffic for your domain name to their websi
 The **D**omain **N**ame **S**ystem **SEC**ecurity Extensions (**DNSSEC**) protect your domain name’s DNS configuration against *cache poisoning* by verifying and authenticating DNS responses.
 
 **Find out how to enable DNSSEC for your domain name to protect it against *cache poisoning*.**
-
-> [!primary]
->
-> The DNSSEC option is unavailable for domain names with the **.it** extension.
->
 
 For more information on how **DNSSEC** works, please visit our page “[Understanding DNSSEC](/links/web/domains-dnssec){.external}”.
 

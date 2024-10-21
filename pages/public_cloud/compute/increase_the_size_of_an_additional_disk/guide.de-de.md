@@ -18,7 +18,7 @@ Wenn Sie die maximale Kapazität Ihrer zusätzlichen Disk erreicht haben, könne
 
 - Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud) in Ihrem Public Cloud Projekt.
 - Sie haben eine [zusätzliche Disk](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) in Ihrem Projekt erstellt.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben administrativen Zugriff auf Ihre Instanz über SSH (Linux) oder RDP (Windows).
 
 ## In der praktischen Anwendung
@@ -27,7 +27,7 @@ In den folgenden Schritten wird vorausgesetzt, dass Sie bereits eine zusätzlich
 
 ### Größe der Disk ändern
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus. Klicken Sie dann im linken Menü auf `Block Storage`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus. Klicken Sie dann im linken Menü auf `Block Storage`{.action}.
 
 Wenn das Volume mit einer **Windows-Instanz** verbunden ist, klicken Sie auf `...`{.action} rechts neben dem betreffenden Volume und wählen Sie `Instanz trennen`{.action} aus.
 

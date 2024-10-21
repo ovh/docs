@@ -1,18 +1,18 @@
 ---
-title: 'Exchange - Configure your email account on Courrier for Windows'
-excerpt: 'Find out how to configure an Exchange account on the Mail application for Windows'
-updated: 2024-10-09
+title: 'Configuring your Exchange account in the Mail app for Windows 10'
+excerpt: 'Find out how to configure an Exchange account on the Mail application for Windows 10'
+updated: 2018-04-04
 ---
 
 ## Objective
 
 You can configure Exchange accounts on email clients, if they are compatible. By doing so, you can use your email address through your preferred email application.
 
-**Find out how to configure an Exchange account in the Mail application for Windows.**
+**Find out how to configure an Exchange account in the Mail application for Windows 10.**
 
 ## Requirements
 
-- You must have an [Exchange](/links/web/emails) account.
+- You must have an [Exchange](https://www.ovhcloud.com/en-gb/emails/){.external} account.
 - You must have Microsoft Outlook installed on your device.
 - You need to have the required credentials for the email address you would like to configure.
 
@@ -38,7 +38,7 @@ Enter the following information:
 |Password|Enter the password for your email address.|
 |User name|Enter your full email address.|
 |Domain|Leave this field blank.|
-|Server|Enter the details of the server your Exchange service is hosted on. You will find these in your [OVHcloud Control Panel](/links/manager) by going to the `General information`{.action} tab for the Exchange service concerned, then the `Connection`{.action} section.|
+|Server|Enter the details of the server your Exchange service is hosted on. You will find these in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} by going to the `General information`{.action} tab for the Exchange service concerned, then the `Connection`{.action} section.|
 |This server requires a secure connection (SSL)|You must leave this box ticked.|
 |Account name|Enter a name that will distinguish this account from any other accounts added in your Mail application.|
 
@@ -54,16 +54,12 @@ To check that the account has been correctly configured, you can send a test ema
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVHcloud also offers a web application that includes various [collaborative features](/links/web/emails). You can access this application at [Webmail](/links/web/email). Log in using your email credentials.
+OVHcloud also offers a web application that includes various [collaborative features](https://www.ovhcloud.com/en-gb/emails/){.external}. You can access this application at <[https://www.ovhcloud.com/en-gb/mail/>](https://www.ovhcloud.com/en-gb/mail/). Log in using your email credentials.
 
 ## Go further
 
-> [!primary]
->
-> For more information about setting up an email address from the Mail on Windows email client, see [Microsoft Help Center](https://support.microsoft.com/en-gb/office/setting-email-in-mail-application-7ff79e8b-439b-4b47-8ff9-3f9a33166c60).
+[Configuring an email address included in an MX Plan or web hosting plan on the Mail application for Windows 10](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10){.external}
 
-[Configuring an email address included in an MX Plan or web hosting plan on the Mail application for Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10)
-
-[Configuring your Email Pro account in the Mail app for Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10)
+[Configuring your Email Pro account in the Mail app for Windows 10](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10){.external}
 
 Join our community of users on <https://community.ovh.com/en/>.

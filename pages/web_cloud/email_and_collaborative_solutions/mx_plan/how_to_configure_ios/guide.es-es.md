@@ -1,7 +1,7 @@
 ---
-title: "MX Plan - Configure su cuenta de correo electrónico en Mail para iPhone y iPad"
+title: 'Configurar una cuenta de correo electrónico en iPhone o iPad'
 excerpt: 'Cómo configurar una cuenta MX Plan en un iPhone o iPad'
-updated: 2024-10-01
+updated: 2022-07-20
 ---
 
 > [!primary]
@@ -23,7 +23,7 @@ Es posible configurar sus cuentas MX Plan en el cliente de correo que usted util
 
 ## Requisitos
 
-- Disponer de una cuenta MX Plan (incluida en un MX Plan o en un plan de [hosting de OVHcloud](/links/web/hosting)).
+- Disponer de una cuenta MX Plan (incluida en un MX Plan o en un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external}).
 - Estar actualizado en los [pagos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) y [renovaciones](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) de los servicios asociados (dominio y alojamiento web).
 - Tener la aplicación Mail instalada en su dispositivo iOS.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
@@ -70,7 +70,7 @@ Si la aplicación le pide que introduzca de forma manual algunos datos técnicos
 
 Una vez que haya configurado la dirección de correo electrónico, ya puede empezar a utilizarla enviando y recibiendo mensajes.
 
-OVHcloud ofrece una aplicación web con la que podrá acceder a su dirección de correo electrónico desde el navegador de internet en la dirección [Webmail](/links/web/email). Puede acceder con el nombre de usuario y la contraseña de su dirección de correo electrónico.
+OVHcloud ofrece una aplicación web con la que podrá acceder a su dirección de correo electrónico desde el navegador de internet en la dirección <https://www.ovh.es/mail/>. Puede acceder con el nombre de usuario y la contraseña de su dirección de correo electrónico.
 
 > [!primary]
 >
@@ -79,13 +79,9 @@ OVHcloud ofrece una aplicación web con la que podrá acceder a su dirección de
 
 ## Más información
 
-> [!primary]
->
-> Para obtener más información sobre cómo configurar una dirección de correo electrónico desde la aplicación Mail en iOS, visite [el Centro de ayuda de Apple](https://support.apple.com/es-es/102619).
+[Configurar una cuenta Exchange en iPhone o iPad](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_ios){.external}
 
-[Configurar una cuenta Exchange en iPhone o iPad](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_ios)
-
-[Configurar una cuenta Email Pro en iPhone o iPad](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_ios)
+[Configurar una cuenta Email Pro en iPhone o iPad](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_ios){.external}
 
 [FAQ e-mails](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 

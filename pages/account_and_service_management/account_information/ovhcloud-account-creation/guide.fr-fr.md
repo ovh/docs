@@ -1,7 +1,7 @@
 ---
 title: 'Créer un compte OVHcloud'
 excerpt: 'Découvrez comment créer votre compte OVHcloud'
-updated: 2024-09-09
+updated: 2023-05-23
 ---
 
 ## Objectif
@@ -47,12 +47,11 @@ Une fois le code saisi et validé, complétez la suite du formulaire. Veillez no
 
 Votre compte créé, vous serez automatiquement connecté sur la page d'accueil, appelée « Tableau de bord », de votre compte.
 
-### Quel est mon identifiant client ? <a name="nic-handle"></a>
+### Quel est mon identifiant client ?
 
 Chaque compte client OVHcloud est associé à un identifiant unique, aussi appelé *NIC-handle*.
 
-Il est le plus souvent composé de deux lettres suivies de chiffres. Par exemple : **xx11111-ovh**.<br>
-Pour la plupart des comptes en dehors de l'Europe, il est souvent remplacé par l'adresse e-mail principale renseignée dans le compte OVHcloud.
+Il est le plus souvent composé de deux lettres suivies de chiffres. Par exemple : **xx11111-ovh**.
 
 Cet identifiant client vous permet :
 
@@ -69,7 +68,7 @@ Votre identifiant client est affiché en haut à droite sous votre nom et votre 
 
 ## Aller plus loin
 
-<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/odO58c4gJfc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/odO58c4gJfc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Maintenant que votre compte OVHcloud est créé, nous vous recommandons de suivre nos [recommandations sur la sécurité de votre compte et la gestion de vos données personnelles](/pages/account_and_service_management/account_information/all_about_username).
 
@@ -81,4 +80,4 @@ Consultez aussi nos guides pour :
 
 [Sécuriser votre compte OVHcloud avec la double authentification](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa)
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

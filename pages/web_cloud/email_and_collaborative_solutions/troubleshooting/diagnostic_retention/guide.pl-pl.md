@@ -18,9 +18,9 @@ Wykreśliłeś przez przypadek jeden lub kilka elementów (e-mail, kontakt, spot
 ## Wymagania początkowe
  
 - Posiadanie rozwiązania poczty elektronicznej OVHcloud:
-    - **MX Plan** ([tylko nowa wersja](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)) proponowany w naszej [ofercie hostingu www](/links/web/hosting) zawartej w darmowym [Darmowy hosting 100M](/links/web/domains-free-hosting)
-    - lub [**Hosted Exchange**](/links/web/emails-hosted-exchange)
-    - lub [**E-mail Pro**](/links/web/email-pro)
+    - **MX Plan** ([tylko nowa wersja](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)) proponowany w naszej [ofercie hostingu www](https://www.ovhcloud.com/pl/web-hosting/) zawartej w darmowym [Darmowy hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/)
+    - lub [**Hosted Exchange**](https://www.ovhcloud.com/pl/emails/hosted-exchange/)
+    - lub [**E-mail Pro**](https://www.ovhcloud.com/pl/emails/email-pro/)
 - Dane do logowania do odpowiedniego konta e-mail
 
 ## W praktyce
@@ -43,9 +43,9 @@ Usunięcie elementów można przywrócić w interfejsie Webmail (OWA) oraz w pro
 
 ### Jak przywrócić usunięte elementy?
 
-<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI?start=117" title="YouTube wideo player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI?start=117" title="YouTube wideo player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Zaloguj się na odpowiedni adres e-mail poprzez Webmail (OWA): [Webmail](/links/web/email).
+Zaloguj się na odpowiedni adres e-mail poprzez Webmail (OWA): <https://www.ovhcloud.com/pl/mail/>.
 
 > [!primary]
 >

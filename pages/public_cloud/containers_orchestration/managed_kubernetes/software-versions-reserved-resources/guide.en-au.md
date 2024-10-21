@@ -1,7 +1,7 @@
 ---
 title: Kubernetes Plugins (CNI, CRI, CSI...) & softwares versions and reserved resources
 excerpt: ''
-updated: 2024-10-03
+updated: 2024-07-05
 ---
 
 We list here some details on the Control Panel, the plugins (CNI, CRI, CSI...) & software versions we use and the resources we reserve on each Node.
@@ -10,12 +10,12 @@ We list here some details on the Control Panel, the plugins (CNI, CRI, CSI...) &
 
 Currently, we support the following Kubernetes releases:
 
+* `1.25` (deprecated)
 * `1.26`
 * `1.27`
 * `1.28`
 * `1.29`
 * `1.30`
-* `1.31`
 
 If you run a Managed Kubernetes Service using an older version we strongly encourage you to use the [version upgrade feature](/pages/public_cloud/containers_orchestration/managed_kubernetes/upgrading-kubernetes-version) to receive official support for your cluster.
 
@@ -35,36 +35,24 @@ The OS, kernel and Docker demon version on your nodes will be regularly updated.
 
 We use `containerd` as the default CRI
 
+* `1.25`: 1.6.20 (deprecated)
 * `1.26`: 1.6.20
 * `1.27`: 1.7.18
 * `1.28`: 1.7.18
 * `1.29`: 1.7.18
 * `1.30`: 1.7.18
-* `1.31`: 1.7.18
-
 ## CNI (Cluster Network Interface)
 
 The CNI plugin installed is [canal](https://github.com/projectcalico/canal){.external} which embedded [calico](https://github.com/projectcalico/calico){.external} for policy and [flannel](https://github.com/coreos/flannel/){.external} for networking.
 
 The versions installed depends on the Kubernetes version:
 
+* `1.25`: calico v3.27.3, flannel v0.21.3 (deprecated)
 * `1.26`: calico v3.27.3, flannel v0.21.3
 * `1.27`: calico v3.28.0, flannel v0.24.3
 * `1.28`: calico v3.28.0, flannel v0.24.3
 * `1.29`: calico v3.28.0, flannel v0.24.3
 * `1.30`: calico v3.28.0, flannel v0.24.3
-* `1.31`: calico v3.28.1, flannel v0.24.4
-
-## CCM (Cloud-controller-manager)
-
-Our cloud-controller-manager (CCM) are based on the OpenStack cloud-controller-manager (OpenstackCCM) available in the [Cloud provider openstack](https://github.com/kubernetes/cloud-provider-openstack) repository.
-
-* `1.26`: OVH IOLB CCM based on OpenstackCCM 1.18, OVH Octavia CCM based on OpenstackCCM 1.29
-* `1.27`: OVH IOLB CCM based on OpenstackCCM 1.18, OVH Octavia CCM based on OpenstackCCM 1.29
-* `1.28`: OVH IOLB CCM based on OpenstackCCM 1.18, OVH Octavia CCM based on OpenstackCCM 1.29
-* `1.29`: OVH IOLB CCM based on OpenstackCCM 1.18, OVH Octavia CCM based on OpenstackCCM 1.29
-* `1.30`: OVH IOLB CCM based on OpenstackCCM 1.18, OVH Octavia CCM based on OpenstackCCM 1.29
-* `1.31`: OVH IOLB CCM based on OpenstackCCM 1.18, OVH Octavia CCM based on OpenstackCCM 1.29
 
 ## CSI (Container Storage Interface)
 
@@ -72,23 +60,23 @@ The CSI plugin installed is [cinder](https://github.com/kubernetes/cloud-provide
 
 The versions depend on the Kubernetes cluster version:
 
+* `1.25`: csi-plugin v1.29.0, csi-attacher v4.3.0, csi-provisioner v3.5.0, csi-snapshotter v6.2.2, snapshot-controller: v6.2.2, csi-resizer v1.8.0 (deprecated)
 * `1.26`: csi-plugin v1.29.0, csi-attacher v4.3.0, csi-provisioner v3.5.0, csi-snapshotter v6.2.2, snapshot-controller: v6.2.2, csi-resizer v1.8.0
 * `1.27`: csi-plugin v1.29.0, csi-attacher v4.3.0, csi-provisioner v3.5.0, csi-snapshotter v6.2.2, snapshot-controller: v6.2.2, csi-resizer v1.8.0
 * `1.28`: csi-plugin v1.29.0, csi-attacher v4.4.2, csi-provisioner v3.6.2, csi-snapshotter v6.3.2, snapshot-controller: v6.3.2, csi-resizer v1.9.2
 * `1.29`: csi-plugin v1.29.0, csi-attacher v4.5.0, csi-provisioner v3.6.3, csi-snapshotter v6.3.3 snapshot-controller: v6.3.3, csi-resizer v1.10.0
 * `1.30`: csi-plugin v1.29.0, csi-attacher v4.5.0, csi-provisioner v3.6.3, csi-snapshotter v6.3.3 snapshot-controller: v6.3.3, csi-resizer v1.10.0
-* `1.31`: csi-plugin v1.29.0, csi-attacher v4.5.0, csi-provisioner v3.6.3, csi-snapshotter v6.3.3 snapshot-controller: v6.3.3, csi-resizer v1.10.0
 
 ## Other components
 
 The versions are:
 
+* `1.25`: coredns v1.11.1, metrics-server v0.6.4 (deprecated)
 * `1.26`: coredns v1.11.1, metrics-server v0.6.4
 * `1.27`: coredns v1.11.1, metrics-server v0.7.1
 * `1.28`: coredns v1.11.1, metrics-server v0.7.1
 * `1.29`: coredns v1.11.1, metrics-server v0.7.1
 * `1.30`: coredns v1.11.1, metrics-server v0.7.1
-* `1.31`: coredns v1.11.3, metrics-server v0.7.2
 
 ## Enabled policies
 

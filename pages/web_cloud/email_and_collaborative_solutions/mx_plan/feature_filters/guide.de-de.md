@@ -21,8 +21,8 @@ Zum Beispiel: Sie können jede E-Mail, die von unserem Spamschutz als Spam marki
 
 ## Voraussetzungen
 
-- Sie verfügen über ein MX Plan E-Mail-Angebot oder ein [Webhosting](/links/web/hosting).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+- Sie verfügen über ein MX Plan E-Mail-Angebot oder ein [Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external}.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 > [!warning]
 >
@@ -36,7 +36,7 @@ MX Plan Legacy|MX Plan neuere Version|
 
 ## In der praktischen Anwendung <a name="oldmxplan"></a>
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und wechseln Sie zum Bereich `Web Cloud`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wechseln Sie zum Bereich `Web Cloud`{.action}.
 
 Wählen Sie die Domain im Bereich `E-Mails`{.action} aus und gehen Sie auf den Tab `E-Mails`{.action}, um die Liste der E-Mail-Accounts Ihres MX Plan Angebots anzuzeigen.
 

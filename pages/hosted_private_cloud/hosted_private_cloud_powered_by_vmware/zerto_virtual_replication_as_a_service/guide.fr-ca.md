@@ -1,7 +1,7 @@
 ---
 title: Utiliser Zerto Virtual Replication entre deux datacenters OVHcloud
 excerpt: Découvrez comment mettre en oeuvre Zerto Virtual Replication pour votre Plan de Reprise d'Activité entre deux offres Private Cloud.
-updated: 2024-10-18
+updated: 2023-10-23
 ---
 
 ## Objectif
@@ -14,21 +14,19 @@ Pour les autres cas de figure., consultez notre guide sur comment [utiliser Zert
 
 ## Prérequis
 
-* Posséder deux offres [Hosted Private Cloud](/links/hosted-private-cloud/vmware-prices) sur deux hôtes différents.
+* Posséder deux offres [Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/){.external} sur deux locations différentes.
 * Avoir sur chacune d'entre elles une adresse IP publique libre.
 
 ### Concepts Zerto Virtual Replication
 
-Zerto Virtual Replication est une solution technique permettant de mettre en place une réplication des données entre infrastructures de virtualisation ou cloud. 
-
-Pour cela, elle s'appuie sur les hyperviseurs de la plateforme en déployant des machines virtuelles (VM) appelées Virtual Replication Appliance (VRA) qui se chargent de dupliquer les écritures vers les unités de stockage et les transmettent vers le site distant pour être écrites.
+Zerto Virtual Replication est une solution technique permettant de mettre en place une réplication des données entre infrastructures de virtualisation ou cloud. Pour cela elle s'appuie sur les hyperviseurs de la plateforme en déployant des machines virtuelles (VM) appelées Virtual Replication Appliance (VRA) qui se chargent de dupliquer les écritures vers les unités de stockage et les transmettent vers le site distant pour être écrites.
 
 #### Virtual Replication Appliance (VRA)
 
 Les VRA sont ainsi déployés sur chaque hyperviseur et vont consommer des ressources pour effectuer la réplication :
 
-* vCPU : 2
-* RAM : 6 GB
+* vCPU : 1
+* RAM : 2 GB
 * Stockage : 36 GB
 
 À noter que pour le stockage, OVHcloud ajoute gratuitement un datastore dédié pour l'ensemble des VRA.
@@ -305,7 +303,7 @@ En cas d'incident majeur sur le site principal ou dans le cadre d'un exercice en
 >
 > Le failover en mode **LIVE** sur Zerto Replication se fait en considérant le site principal comme indisponible, il faut donc faire attention à la configuration réseau afin d'éviter notamment tout conflit d'adressage IP.
 >
-> De plus, dans le cas où les deux Private Cloud se situent dans 2 pays différents, il est impossible de déplacer votre bloc IP d'un Private Cloud à un autre !
+> De plus, dans le cas où les deux Private Cloud se situent dans 2 pays différents, il est impossible de déplacer votre bloc IP d'un Private Cloud à un autre.
 >
 > L'ensemble des ressources qui seront démarrées sur le site secondaire vont devenir actives au niveau du traitement de données.
 >

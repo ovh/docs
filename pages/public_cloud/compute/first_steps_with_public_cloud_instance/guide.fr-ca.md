@@ -6,7 +6,7 @@ updated: 2024-02-20
 
 ## Objectif
 
-Vous pouvez gérer vos instances Public Cloud dans votre [espace client](/links/manager).
+Vous pouvez gérer vos instances Public Cloud dans votre [espace client](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 
 **Ce guide détaille les actions disponibles dans l'espace client OVHcloud pour une instance Public Cloud.**
 
@@ -14,11 +14,11 @@ Vous pouvez gérer vos instances Public Cloud dans votre [espace client](/links/
 
 - Un [projet Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/) dans votre compte OVHcloud
 - Une [instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) dans votre projet
-- Être connecté à votre [espace client OVHcloud](/links/manager)
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager) et ouvrez votre projet `Public Cloud`{.action}. 
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et ouvrez votre projet `Public Cloud`{.action}. 
 
 ### Utiliser l'interface de gestion des instances
 
@@ -55,7 +55,7 @@ La nouvelle page qui s'affiche alors présente une version modifiée des options
 
 - **Modifier le nom** : vous pouvez donner un nom à l'instance pour plus de facilité d'identification.
 - **Modifier l’image** : vous pouvez choisir un autre système d'exploitation pour l'instance (notez que la réinstallation d'une instance supprimera toutes les données qu'elle contient).
-- **Modifier le modèle** : vous pouvez changer de modèle d'instance. Veuillez vous référer à [ce guide](/pages/public_cloud/compute/public-cloud-first-steps#model) pour plus d'informations sur les options.
+- **Modifier le modèle** : vous pouvez changer de modèle d'instance. Veuillez vous référer à [ce guide](/pages/public_cloud/compute/public-cloud-first-steps#etape-3-creer-une-instance) pour plus d'informations sur les options.
 - **Modifier la période de facturation** : vous pouvez modifier la période de facturation de l'instance d'une facturation horaire à mensuelle. Veuillez vous référer à [ce guide](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing) pour plus d'informations.
 
 #### Créer un backup d'une instance
@@ -133,7 +133,7 @@ Cliquez alors sur l'onglet `Console VNC`{.action}.
 
 La console VNC fournit un accès direct à votre instance. Pour que cet accès fonctionne, vous devez d'abord configurer un nom d'utilisateur et un mot de passe sur l'instance. 
 
-Consultez notre guide « [Créer une première instance Public Cloud et s'y connecter](/pages/public_cloud/compute/public-cloud-first-steps#vnc-console) » pour plus d'informations.
+Consultez notre guide « [Créer une première instance Public Cloud et s'y connecter](/pages/public_cloud/compute/public-cloud-first-steps#etape-4-connexion-a-votre-instance) » pour plus d'informations.
 
 ## Aller plus loin
 
@@ -141,6 +141,6 @@ Consultez notre guide « [Créer une première instance Public Cloud et s'y conn
 
 [Présentation d'Horizon](/pages/public_cloud/compute/introducing_horizon)
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

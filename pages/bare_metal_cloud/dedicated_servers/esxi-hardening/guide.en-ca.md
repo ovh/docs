@@ -1,11 +1,8 @@
 ---
 title: 'Manage and secure your ESXi dedicated server from the outset'
 excerpt: 'Discover the various ways you can effectively secure your ESXi dedicated server'
-updated: 2024-09-13
+updated: 2023-03-07
 ---
-
-> [!warning]
-> The ESXi hypervisor is no longer supported by OVHcloud. Find more information on [this dedicated page](/pages/bare_metal_cloud/dedicated_servers/esxi-end-of-support).
 
 ## Objective
 
@@ -40,7 +37,7 @@ We will do this using the on-board features offered by VMware, as well as those 
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager){.external}
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}
 - A dedicated server with the ESXi solution deployed
 - An offer compatible with our [Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network) feature, if you would like to use it for filtering
 
@@ -297,4 +294,4 @@ cat /path-to-my-key/key-ecdsa.pub | ssh root@esxi-host-ip 'cat >> /etc/ssh/keys-
 
 You can find even more details on security best practices in [this VMware suggested guide](https://core.vmware.com/security-configuration-guide).
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

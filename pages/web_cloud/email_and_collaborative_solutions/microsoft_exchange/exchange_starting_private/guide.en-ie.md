@@ -12,8 +12,8 @@ This guide is for customers who have just ordered a Private Exchange platform. I
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](/links/manager)
-- an [OVHcloud Private Exchange solution](/links/web/emails-private-exchange)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- an [OVHcloud Private Exchange solution](https://www.ovhcloud.com/en-ie/emails/private-exchange/)
 
 ## Instructions
 
@@ -21,7 +21,7 @@ This guide is for customers who have just ordered a Private Exchange platform. I
 
 Once you have placed your order, you will be sent an email to your contact email address you have listed in the OVHcloud Control Panel. This email will contain the information you need to configure your Private Exchange platform. 
 
-To read this email via the [OVHcloud Control Panel](/links/manager), click on your account name in the top right-hand corner, then click on `Service emails`{.action}. Search for an email with the subject:
+To read this email via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), click on your account name in the top right-hand corner, then click on `Service emails`{.action}. Search for an email with the subject:
 
 > **\[xx-11111-ovh] Your Private Exchange 20_xxx_ service is being delivered.**
 

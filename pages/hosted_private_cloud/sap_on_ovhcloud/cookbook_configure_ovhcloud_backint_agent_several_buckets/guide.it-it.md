@@ -1,7 +1,7 @@
 ---
 title: "Use OVHcloud Backint Agent with several S3 Object Storage buckets"
 excerpt: "This guide provides instructions for using OVHcloud Backint Agent for SAP HANA with several S3 Object Storage buckets"
-updated: 2024-09-03
+updated: 2024-01-25
 ---
 
 ## Objective
@@ -26,30 +26,54 @@ OVHcloud Backint Agent for SAP HANA has been certified by SAP, you can find cert
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](/links/manager).
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - [A Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) in your OVHcloud account with:
-    - Two [S3 Object Storage buckets](/pages/storage_and_backup/object_storage/s3_create_bucket) and an [S3 user](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creating-a-user) with the read and write rights.
-- A SAP HANA database installed.
-- [OVHcloud Backint Agent for SAP HANA installed](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_install_ovhcloud_backint_agent).
+    - Two [S3 Object Storage buckets](/pages/storage_and_backup/object_storage/s3_create_bucket) and an [S3 user](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creating-a-user) with the read and write rights
+- A SAP HANA database installed
+- [OVHcloud Backint Agent for SAP HANA installed](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_install_ovhcloud_backint_agent)
 
 ## Instructions
 
 ### S3 Object Storage
 
-The S3 Object Storage bucket versioning must be enabled to ensure the correct operation of OVHcloud Backint Agent. The versioning allows you to keep several versions of a same object in your S3 Object Storage bucket.
+> [!primary]
+>
+> To get more information about the configuration and the usage of the AWS S3 CLI commands, please refer to the documentation [Getting started with Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage).
+>
+> It's not mandatory to install AWS S3 CLI on your SAP HANA server. All actions in this chapter can be done from your admin server or also from your laptop.
+>
+
+The S3 Object Storage buckets versioning must be enabled to ensure the correct operation of OVHcloud Backint Agent. The versioning allows you to keep several versions of a same object in your S3 Object Storage buckets.
 
 With SAP HANA backups, the versioning allows you to trigger several backups with the same name (for example "COMPLETE_DATA_BACKUP") and keeping the capacity to recover a specific version of the backup named "COMPLETE_DATA_BACKUP". If the versioning is not enabled, only the latest version of the backup named "COMPLETE_DATA_BACKUP" can be recovered.
 
-You can check the versioning status of your Object Storage S3 bucket by following these steps:
+To check if the versioning is enabled on your S3 Object Storage buckets, please execute the following command:
 
-1. Log in to the [OVHcloud Control Panel](/links/manager).
-2. Click `Public Cloud`{.action} and select your Public Cloud project. Then click `Object Storage`{.action}.
-3. Click on the S3 Object Storage bucket that will host backups of your SAP HANA database.
-4. Check the value of the `Versioning`{.action} parameter, it must have the value `Enabled`{.action}. If the value of this parameter is `Disabled`{.action}, click on `Enable versioning`{.action}.
+```bash
+aws --profile <profile_name> s3api get-bucket-versioning --bucket <bucket_name>
 
-| Versioning enabled | Versioning disabled |
-| --- | --- |
-| ![versioning_enabled](images/versioning_enabled.png){.thumbnail} | ![versioning_disabled](images/versioning_disabled.png){.thumbnail} |
+# Example :
+# aws --profile default s3api get-bucket-versioning --bucket my-sap-hana-bucket-data
+# aws --profile default s3api get-bucket-versioning --bucket my-sap-hana-bucket-log
+```
+
+Expected output for each S3 Object Storage bucket:
+
+```console
+{
+    "Status": "Enabled"
+}
+```
+
+If the output is empty, it means that the versioning of your S3 Object Storage buckets is not enabled. To fix it, please execute the following command:
+
+```bash
+aws --profile <profile_name> s3api put-bucket-versioning --bucket <bucket_name> --versioning-configuration Status=Enabled
+
+# Example :
+# aws --profile default s3api put-bucket-versioning --bucket my-sap-hana-bucket-data --versioning-configuration Status=Enabled
+# aws --profile default s3api put-bucket-versioning --bucket my-sap-hana-bucket-log --versioning-configuration Status=Enabled
+```
 
 ### Configuration
 
@@ -158,19 +182,7 @@ Both files are present in the repository `/usr/sap/<SID>/HDB<NI>/<hostname>/trac
 The `backint.log` file gives you information about the OVHcloud Backint Agent execution. For example, a permission issue with the S3 Object Storage bucket:
 
 ```log
-2024-02-08 14:10:41.266 backint started:
-  command: /usr/sap/HDB/SYS/global/hdb/opt/hdbbackint -f backup -p /usr/sap/HDB/SYS/global/hdb/opt/hdbbackint.cfg -i /var/tmp/hdbbackint_HDB.kwu3jY -o /var/tmp/hdbbackint_HDB.N1KX90 -u HDB -s 1707397841205 -c 2 -l COMPLETE
-  pid: 3702
-  input:
-  #SOFTWAREID "backint 1.04" "HANA HDB server 2.00.071.00.1687900751"
-  #PIPE "/usr/sap/HDB/SYS/global/hdb/backint/SYSTEMDB/FULL_BACKUP_databackup_0_1"
-2024-02-08 14:10:41.967 backint terminated:
-  pid: 3702
-  exit code: 1
-  output:
-  exception:
-  exception  1: no.110507  (Backup/Destination/Backint/impl/BackupDestBackint_Executor.cpp:250)
-      Backint exited with exit code 1 instead of 0. console output: Bucket information error in hdbbackint.cfg - 403 Forbidden
+botocore.exceptions.ClientError: An error occurred (AccessDenied) when calling the PutObject operation: Access Denied.
 ```
 
 The `backup.log` file gives you information about the backup execution through SAP HANA, its progress and its encountered errors.

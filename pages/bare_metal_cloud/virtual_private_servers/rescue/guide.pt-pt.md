@@ -29,7 +29,7 @@ Se encontrar um problema com o seu sistema, efetuar verificações em modo rescu
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager)
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 - Ter o seu [VPS OVHcloud](https://www.ovhcloud.com/pt/vps/){.external} já configurado.
 
 > [!warning]
@@ -42,7 +42,7 @@ Se encontrar um problema com o seu sistema, efetuar verificações em modo rescu
 
 ### Ativação do modo rescue
 
-Ligue-se à sua [Área de Cliente OVHcloud](/links/manager), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na secção `Servidor privado virtual`{.action}.
+Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na secção `Servidor privado virtual`{.action}.
 
 No separador `Acolhimento`{.action}, clique em `...`{.action} junto de "Boot" na zona **O seu VPS**.
 
@@ -58,7 +58,7 @@ Uma vez que a reinicialização tiver sido iniciada, será apresentada uma barra
 
 > [!primary]
 >
-> Receberá um e-mail automático com as informações de identificação SSH para aceder ao modo rescue. Aguarde a receção do e-mail antes de prosseguir com qualquer ação. Este e-mail também está disponível na sua [Área de Cliente OVHcloud](/links/manager). Para o encontrar, clique no seu nome de utilizador OVHcloud na barra de menus no canto superior direito e, em seguida, selecione `E-mails de serviço`{.action}.
+> Receberá um e-mail automático com as informações de identificação SSH para aceder ao modo rescue. Aguarde a receção do e-mail antes de prosseguir com qualquer ação. Este e-mail também está disponível na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Para o encontrar, clique no seu nome de utilizador OVHcloud na barra de menus no canto superior direito e, em seguida, selecione `E-mails de serviço`{.action}.
 >
 
 De seguida, deverá [aceder ao servidor através de SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction), utilizando a palavra-passe temporária gerada para o modo rescue.

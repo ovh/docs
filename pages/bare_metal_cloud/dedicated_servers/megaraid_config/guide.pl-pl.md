@@ -24,14 +24,14 @@ Domyślny poziom RAID serwerów OVHcloud to RAID 1. Podwaja on ilość zajętą 
 
 ## Wymagania początkowe
 
-- Posiadanie serwera [dedykowanego](/links/bare-metal/bare-metal){.external} ze sprzętową macierzą RAID
+- Posiadanie serwera [dedykowanego](https://www.ovhcloud.com/pl/bare-metal/){.external} ze sprzętową macierzą RAID
 - Dostęp do serwera przez SSH jako administrator (sudo)
 
 ## W praktyce
 
 ### Korzystanie z Panelu klienta OVHcloud
 
-W [Panelu client OVHcloud](/links/manager) wybierz Twój serwer, przechodząc do części `Bare Metal Cloud`{.action}, następnie wybierz `Serwery dedykowane`{.action}. 
+W [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) wybierz Twój serwer, przechodząc do części `Bare Metal Cloud`{.action}, następnie wybierz `Serwery dedykowane`{.action}. 
 
 W zakładce `Informacje ogólne`{.action} kliknij `...`{.action} naprzeciwko systemu operacyjnego, a następnie wybierz `Zainstaluj`{.action}.
 
@@ -65,7 +65,7 @@ df -h
 
 ### Korzystanie z trybu Rescue
 
-W [Panelu client OVHcloud](/links/manager) wybierz Twój serwer, przechodząc do części `Bare Metal Cloud`{.action}, następnie wybierz `Serwery dedykowane`{.action}.
+W [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) wybierz Twój serwer, przechodząc do części `Bare Metal Cloud`{.action}, następnie wybierz `Serwery dedykowane`{.action}.
 
 Wyszukaj "Boot" w polu **Informacje ogólne** i kliknij `...`{.action} a następnie `Zmień`{.action}, aby zmienić system startowy.
 

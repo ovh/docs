@@ -1,7 +1,7 @@
 ---
 title: "Zabezpieczenie domeny za pomocą DNSSEC"
 excerpt: "Dowiedz się, jak zabezpieczyć domenę przed atakiem DNSSEC"
-updated: 2024-08-20
+updated: 2023-07-26
 ---
 
 > [!primary]
@@ -19,11 +19,6 @@ Dzięki temu mogą przekierować przychodzące strumienie Twojej domeny na włas
 **D**omain **N**ame **S**ystem **SEC**urity wtyczki (**DNSSEC**) pozwala na ochronę konfiguracji DNS Twojej domeny przed "cache poisoning" poprzez weryfikację i uwierzytelnienie odpowiedzi DNS.
 
 **Dowiedz się, jak aktywować DNSSEC dla Twojej domeny, aby zapewnić jej ochronę przed atakiem "Cache poisoning".**
-
-> [!primary]
->
-> Opcja DNSSEC jest niedostępna dla domen z rozszerzeniem **.it**.
->
 
 Aby uzyskać więcej informacji na temat działania usługi **DNSSEC**, sprawdź naszą stronę "[Dowiedz się więcej o DNSSEC](/links/web/domains-dnssec){.external}".
 

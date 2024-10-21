@@ -73,7 +73,7 @@ Consultez notre guide pour [migrer des blocs IP entre deux services Managed Bare
 
 La vidéo ci-dessous vous détaillera également comment déplacer un bloc d'adresses IP entre deux Hosted Private Cloud. Cette méthode est également applicable à une solution Managed Bare Metal.
 
-<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Gemao3Fd7rI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Gemao3Fd7rI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Contexte VMware
 
@@ -194,11 +194,11 @@ Consultez notre guide pour [mettre en place Veeam Backup & Replication](/pages/s
 
 La vidéo ci-dessous vous détaille comment configurer un Hosted Private Cloud avec la solution Veeam Backup & Replication. Cette méthode est également applicable à une solution Managed Bare Metal.
 
-<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/f8ufrsP4PQw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/f8ufrsP4PQw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>La vidéo suivante vous détaille quant à elle comment faire une réplication de votre infrastructure Hosted Private Cloud avec la solution Veeam Backup & Replication. Ce tutoriel est aussi valable pour une solution Managed Bare Metal.
 
-<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/NqNtKrJSH8w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/NqNtKrJSH8w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>Vous pouvez également consulter [la documentation de Veeam](https://www.veeam.com/veeam_backup_10_0_user_guide_vsphere_pg.pdf){.external}.
 

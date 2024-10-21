@@ -12,7 +12,7 @@ OVHcloud offre aux clients Public Cloud des images d'applications préinstallée
 
 ## Prérequis
 
-- Une [instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) dans votre compte OVHcloud.
+- Une [instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#etape-3-creer-une-instance) dans votre compte OVHcloud.
 
 ## En pratique
 
@@ -20,7 +20,7 @@ OVHcloud offre aux clients Public Cloud des images d'applications préinstallée
 
 #### Installez l'application préinstallée de votre choix
 
-Depuis [l'espace client OVHcloud](/links/manager), les API OVHcloud ou de l'API OpenStack Horizon, installez l'application de votre choix sur votre instance Public Cloud.
+Depuis [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), les API OVHcloud ou de l'API OpenStack Horizon, installez l'application de votre choix sur votre instance Public Cloud.
 
 #### Détails de connexion à l'application
 
@@ -189,6 +189,6 @@ Aucune autre étape n'est nécessaire pour terminer la première configuration d
 
 ## Allez plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

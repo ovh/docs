@@ -18,7 +18,7 @@ El soporte de esta funcionalidad es un requisito previo para todas las acciones 
 
 ## Requisitos
 
-- Tener un [servidor dedicado](/links/bare-metal/bare-metal){.external}.
+- Tener un [servidor dedicado](https://www.ovhcloud.com/es-es/bare-metal/){.external}.
 - Estar conectado a la [API de OVHcloud](https://api.ovh.com/){.external}.
 
 > [!primary]

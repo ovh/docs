@@ -1,11 +1,8 @@
 ---
 title: 'Controle e proteja o seu servidor dedicado ESXi desde o seu primeiro começo'
 excerpt: 'Descubra os diferentes meios que lhe permitem proteger eficazmente o seu servidor dedicado ESXi'
-updated: 2024-09-13
+updated: 2023-03-22
 ---
-
-> [!warning]
-> O hipervisor ESXi já não é suportado pela OVHcloud. Encontre mais informações em [esta página dedicada](/pages/bare_metal_cloud/dedicated_servers/esxi-end-of-support).
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
@@ -44,7 +41,7 @@ Para isso, utilizaremos as funções de bordo propostas pela VMware, mas também
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 - Ter um servidor dedicado com a solução ESXi implementada.
 - Ter uma oferta compatível com a nossa funcionalidade [Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network) se pretender utilizá-la para efetuar a filtragem.
 

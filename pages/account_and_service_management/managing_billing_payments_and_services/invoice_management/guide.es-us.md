@@ -19,7 +19,7 @@ OVHcloud pone a su disposición un espacio que le permitirá consultar, administ
 > En función de su lugar de residencia y de la legislación vigente, así como del producto o productos en cuestión, es posible que algunas partes de esta guía varíen o no se apliquen en función de su caso particular. En caso de duda, consulte los contratos de OVHcloud disponibles en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) (haga clic en su nombre en la esquina superior derecha de la pantalla y seleccione `Gestión de servicios`{.action} en el menú contextual y abra la pestaña `Contratos`{.action}).
 >
 
-<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/iiQmopMhzik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/iiQmopMhzik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Requisitos
 

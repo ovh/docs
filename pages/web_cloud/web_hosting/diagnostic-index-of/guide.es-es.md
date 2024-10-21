@@ -34,13 +34,13 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 ## Procedimiento
 
-### Comprender el origen de la página "Index of"
+### Entender el origen de la página "Index of"
 
-Su nombre de dominio se declara para acceder a un directorio de destino (un "`Carpeta raíz`") en el servidor [FTP](/pages/web_cloud/web_hosting/ftp_connection) de su alojamiento web compartido. Para ello, abra la pestaña [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) de su alojamiento web alojado en el [área de cliente de OVHcloud](/links/manager).
+O seu nome de domínio é declarado para aceder a um diretório alvo (um `Carpeta raíz`) no servidor [FTP](/pages/web_cloud/web_hosting/ftp_connection) do seu alojamento web partilhado. Isto no separador [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) do seu alojamento web presente no seu [Área de Cliente OVHcloud](/links/manager).
 
-La página **Index of** indica que el directorio de destino no contiene un archivo **index.php** o **index.html**. Dicho archivo constituye el "*punto de entrada*" del sitio web. El nombre de este archivo está normalizado.
+A página **Index of** indica que o diretório-alvo em causa não contém ficheiros **index.php** ou **index.html**. Um ficheiro deste tipo constitui o "*ponto de entrada*" do seu website. O nome deste ficheiro está normalizado.
 
-Para mostrar su sitio web, deberá asociar su dominio a la `Carpeta raíz`, que contiene el archivo **index.php** o **index.html**, desde el apartado `Multisitio`{.action} del alojamiento.
+Para apresentar o seu website, deverá ligar o seu domínio ao `Carpeta raíz` que contém o ficheiro **index.php** ou **index.html**.
 
 > [!primary]
 >

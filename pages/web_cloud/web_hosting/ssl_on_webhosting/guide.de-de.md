@@ -83,11 +83,8 @@ Vergewissern Sie sich, dass der vorherige Schritt der [Aktivierung eines SSL-Zer
 >
 > Vergewissern Sie sich außerdem, dass die Multisite-Einträge, für die Sie die SSL Option aktivieren, auf die IP-Adresse des Webhostings zeigen. Diese Konfiguration wird Ihnen automatisch angeboten, wenn Sie einen Multisite-Eintrag hinzufügen oder ändern, muss aber manuell für eine Domain erfolgen, die nicht in Ihrem Kundencenter verwaltet wird.<br>
 > - Die IP-Adresse Ihres Webhostings finden Sie im Tab `Allgemeine Informationen`{.action} unter dem Eintrag `IPv4`.
->
 > ![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4.png){.thumbnail}
->
 > - Konfigurieren Sie die DNS-Zone der unter Multisites hinzugefügten Domain im Bereich `Domains`{.action}, im Tab `DNS-Zone`{.action}. Erstellen Sie einen entsprechenden `A`-Eintrag für Ihren Multisite-Eintrag oder editieren Sie ihn und geben Sie die IP-Adresse Ihres Hostings als `Ziel` ein.
->
 > ![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/modify-an-entry.png){.thumbnail}
 >
 > Für weitere Informationen lesen Sie unsere Anleitungen zur [Konfiguration eines Multisite-Eintrags](/pages/web_cloud/web_hosting/multisites_configure_multisite) oder [zur Konfiguration einer DNS Zone](/pages/web_cloud/domains/dns_zone_edit).

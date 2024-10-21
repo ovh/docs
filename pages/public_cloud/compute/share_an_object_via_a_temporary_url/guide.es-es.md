@@ -1,7 +1,7 @@
 ---
 title: 'Compartir un objeto con una URL temporal'
 excerpt: 'Cómo compartir un objeto sin comunicar información personal'
-updated: 2024-10-08
+updated: 2021-01-11
 ---
 
 ## Objetivo 
@@ -14,8 +14,8 @@ Si quiere enviar un archivo a otra persona, pero no desea facilitarle sus claves
 
 ## Requisitos
 
-- [Preparar el entorno para utilizar la API de OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api).
-- [Cargar las variables de entorno necesarias para OpenStack](/pages/public_cloud/compute/loading_openstack_environment_variables).
+- [Preparar el entorno para utilizar la API de OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api){.ref}.
+- Cargar las variables de entorno de OpenStack.
 - Tener Python instalado en su equipo.
 
 ## Procedimiento
@@ -84,21 +84,19 @@ Las operaciones que se describen a continuación pueden realizarse sin conexión
 - **/v1/AUTH_tenant/default/file**: Ruta del archivo (en esta etapa, no es necesario añadir el punto de acceso).
 - **12345**: Su clave.
 
-En el campo `AUTH_tenant`, sustituya `tenant` por su **OS_TENANT_ID** o **OS_TENANT_NAME**.
-
-```bash
+```
 swift tempurl GET 60 /v1/AUTH_tenant/default/file 12345
 ```
 
 Este comando devolverá la **tempURL**, donde podrá ver la **ruta del archivo**, la **firma** y la **fecha de expiración**.
 
-```bash
+```
 v1/AUTH_tenant/default/file?temp_url_sig=8016dsdf3122d526afds60911cde59fds3&temp_url_expires=1401548543
 ```
 
 Para que esta URL funcione correctamente, solo tiene que añadir al principio la dirección del punto de acceso:
 
-```bash
+```
 https://storage.sbg1.cloud.ovh.net/v1/AUTH_tenant/default/file?temp_url_sig=8016dsdf3122d526afds60911cde59fds3&temp_url_expires=1401548543
 ```
 

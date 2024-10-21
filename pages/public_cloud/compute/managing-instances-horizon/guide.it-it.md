@@ -17,7 +17,7 @@ Oltre allo Spazio Cliente OVHcloud, è possibile gestire anche i progetti Public
 ## Prerequisiti
 
 - Aver creato un'istanza Public Cloud dallo [Spazio Cliente OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps) o tramite l'[interfaccia Horizon](/pages/public_cloud/compute/create_instance_in_horizon).
-- [Aver creato una chiave SSH](/pages/public_cloud/compute/creating-ssh-keys-pci).
+- [Aver creato una chiave SSH](/pages/public_cloud/compute/public-cloud-first-steps#step-1-crea-chiavi-ssh).
 
 ## Procedura
 
@@ -161,7 +161,7 @@ In caso di perdita dell'accesso all'istanza a causa di una configurazione scorre
 > [!primary]
 >
 > Puoi accedere direttamente alla tua istanza tramite la console VNC. Per contro, è necessario configurare una password per l'utente root.
-> Per maggiori informazioni, consulta [questa guida](/pages/public_cloud/compute/public-cloud-first-steps#user-mgmt).
+> Per maggiori informazioni, consulta [questa guida](/pages/public_cloud/compute/become_root_and_change_password).
 > La console VNC può essere utilizzata anche come primo approccio in caso di malfunzionamento, per diagnosticare grazie all'analisi della fase di avvio dell'istanza.
 > 
 

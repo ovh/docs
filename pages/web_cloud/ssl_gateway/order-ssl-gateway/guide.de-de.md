@@ -1,105 +1,110 @@
 ---
-title: 'SSL Gateway bestellen'
-excerpt: 'Erfahren Sie hier, wie Sie Verbindungen zu Ihrer Website sichern'
-updated: 2024-10-01
+title: Ein SSL Gateway bestellen
+links: 
+   - docs/web_cloud/ssl_gateway/use_ssl_gateway/
+excerpt: Sichern Sie die Verbindungen zu Ihrer Website
+updated: 2022-12-01
 ---
 
+## Allgemeine Informationen
+
+### Voraussetzungen
+
 > [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
+> - 
+> Eine aktive Domain oder Subdomain
+> - 
+> Zugriff auf die DNS Zone
+> 
+> 
 
-## Ziel
+## Bestellung
+- Um unser SSL Gateway Angebot zu bestellen, gehen Sie auf [diese Seite](/links/web/ssl-gateway){.external}.
+- Wählen Sie Ihr Angebot und klicken Sie dann auf `Jetzt aktivieren`{.action} bzw. auf `Bestellen`{.action}.
 
-Das Angebot SSL Gateway wurde entwickelt, um Ihnen ein SSL Zertifikat für Ihren Domainnamen und Ihren Hosting-Dienst (VPS, Mailserver, Dedicated Server etc.) zur Verfügung zu stellen.
+![Angebotsseite](images/1-en.png){.thumbnail}
+
+- Geben Sie Ihre aktive Domain bzw. Subdomain an und klicken Sie anschließend auf `Weiter`{.action}.
+
+![Bestellung SSL Gateway Free](images/2-en.png){.thumbnail}
 
 > [!warning]
 >
-> Die SSL Gateways sind nicht mit den [OVHcloud Shared Hosting](/links/web/hosting) Angeboten kompatibel. Wenn Sie ein SSL-Zertifikat für dieses Angebot nutzen möchten, lesen Sie unsere Anleitung „[SSL-Zertifikat auf einem Webhosting verwalten](/pages/web_cloud/web_hosting/ssl_on_webhosting)“.
+> - 
+> SSL Gateway Free:
+> 
+> Sie können nur Domains bis zur dritten Ebene (www.example.org) verwenden.
+> - 
+> SSL Gateway Advanced oder Enterprise
+> 
+> Sie können auch Fourth-Level-Domains (blog.germany.example.org) oder Domains einer tieferen Ebene verwenden.
+> 
+
+Unser System wird daraufhin automatisch die IP-Adresse(n) Ihrer Website erkennen, die für Ihre Domain bzw. Subdomain konfiguriert sind.
+
+- Wenn sie mehrere IPs besitzen, wählen Sie eine davon aus.
+- Wählen Sie die geografische Zone Ihres SSL Gateway.
+- Wenn die DNS Zone der Domain bzw. Subdomain von OVHcloud verwaltet wird, setzen Sie ein Häkchen im entsprechenden Feld. Wir ändern dann automatisch die Konfiguration der DNS Zone, damit die Domain auf Ihr SSL Gateway zeigt.
+- Klicken Sie auf `Bestellen`{.action}
+
+![Bestellung SSL Gateway Free](images/3-en.png){.thumbnail}
+
+> [!primary]
 >
+> Wenn Sie mehrere IP-Adressen für Ihre Website besitzen, müssen Sie für die Bestellung eine davon auswählen.
+> Wenn Sie sich für das SSL Gateway Advanced entschieden haben, können Sie danach über Ihr Kundencenter bis zu 2 zusätzliche IPs hinzufügen.
+> 
 
-**Diese Anleitung erklärt, wie Sie ein SSL Gateway bestellen.**
+Folgen Sie allen weiteren Schritten und validieren Sie Ihren Bestellschein.
 
-## Voraussetzungen
-
-- Sie haben einen aktiven [Domainnamen](/links/web/domains) (oder Subdomain).
-- Sie haben Zugriff auf die DNS-Zone.
-
-## In der praktischen Anwendung
-
-### Bestellung
-
-Um unser SSL Gateway Angebot zu bestellen, [klicken Sie hier](/links/web/ssl-gateway).
-
-Wählen Sie Ihr Angebot aus und klicken Sie auf `Jetzt bestellen`{.action}.
-
-![order ssl gateway](/pages/assets/screens/website/order/configure-my-ssl-gateway.png){.thumbnail}
-
-Geben Sie auf der neuen Seite im Formular `Domainnamen suchen`{.action} den betreffende Domainnamen oder Subdomain ein und klicken Sie dann auf das Lupensymbol rechts.
+## Ihre DNS Zone konfigurieren
+Wenn Sie im Feld zur automatischen Änderung durch OVHcloud kein Häkchen gesetzt haben, werden Sie nach der Validierung Ihres Bestellscheins per E-Mail aufgefordert, Ihre Domain bzw. Subdomain innerhalb von 3 Tagen auf die OVHcloud Infrastruktur zeigen zu lassen.
 
 > [!warning]
 >
-> - Kostenlos: Es sind nur Domainnamen bis zum 3. Level (www.domain.tld) erlaubt.
->
-> - Erweitert: Domainnamen mit Level 4 und mehr (blog.www.domain.tld) sind erlaubt.
->
+> Wenn Sie den Eintrag Ihrer DNS Zone nicht innerhalb von 3 Tagen ändern, wird Ihre Bestellung storniert.
+> 
 
-Unser System erkennt dann automatisch die IP-Adressen Ihrer Website, die für Ihren Domainnamen oder Subdomain konfiguriert sind. Wenn Sie über mehrere IPs verfügen, wählen Sie eine aus.
-
-> [!warning]
->
-> - Auch wenn Sie mehrere IP-Adressen für Ihre Website haben, können Sie bei der Bestellung nur eine IP auswählen.
-> - Wenn Sie das Erweiterte Angebot nutzen, können Sie später über Ihr [OVHcloud Kundencenter](/links/manager) bis zu 2 zusätzliche IPs hinzufügen.
->
-
-Wählen Sie anschließend den Standort des Rechenzentrums, in dem Sie das SSL Gateway installieren möchten aus.
-
-Falls gewünscht und bei der Bestellung verfügbar, aktivieren Sie die Option `Ich verwalte die DNS-Zone dieser Domain und autorisiere OVHcloud, den erforderlichen DNS-Eintrag automatisch zu ändern`{.action}. Die Ihrem Domainnamen oder Ihrer Subdomain zugeordnete DNS Zone wird dann automatisch mit der IP-Adresse des SSL Gateways aktualisiert.
-
-> [!warning]
->
-> Aufgrund der Caches von ISPs kann es bis zu 24 Stunden dauern, bis Änderungen an Ihrer DNS-Zone wirksam werden.
->
-
-Stellen Sie sicher, dass alle Ihre Angaben auf der Bestellseite korrekt sind, und klicken Sie dann auf `Weiter`{.action}.
-
-Lassen Sie sich zum Abschluss zur Validierung / Zahlung Ihres Bestellscheins führen.
-
-### Konfiguration Ihrer DNS Zone
-
-Wenn Sie nach der Validierung Ihres Bestellscheins die Option `Ich verwalte die DNS-Zone dieser Domain und autorisiere OVHcloud, den erforderlichen DNS-Eintrag automatisch zu ändern`{.action}, erhalten Sie eine E-Mail mit der Aufforderung, Ihren Domainnamen oder Ihre Subdomain innerhalb von 3 Tagen auf die OVHcloud Infrastruktur verweisen zu lassen.
-
-> [!warning]
->
-> Ohne Änderung Ihrer DNS-Zone innerhalb von 3 Tagen wird Ihre Bestellung storniert.
->
+- 
 
 > [!faq]
 >
-> Fall 1: Ihre DNS Zone wird von den Shared DNS Servern von OVHcloud verwaltet.
->>
->> - Wenn Ihre Kundenkennung ein *Administrator* oder *technischer* Kontakt dieser DNS-Zone ist, müssen Sie diese in Ihrem [OVHcloud Kundencenter](/links/manager) ändern.
->> - Wenn Sie kein *Administrator* oder *technischer* Kontakt für diese DNS-Zone sind, wenden Sie sich an den zuständigen DNS-Zonenadministrator, um die Zone zu ändern.
->>
->> Befolgen Sie bei Bedarf die Anweisungen in der Anleitung „[OVHcloud DNS-Zone für eine Domainnamen erstellen](/pages/web_cloud/domains/dns_zone_create)“.
->>
+> Fall 1:  Ihre DNS Zone wird auf den Shared DNS Servern von OVHcloud verwaltet.
+>> 
+>>     - Wenn Sie selbst technischer oder Administrator-Kontakt für die DNS Zone sind, muss diese über Ihr Kundencenter geändert werden.
+>>     - Wenn Sie nicht der Kontakt für die DNS Zone sind, müssen Sie die zuständige Person kontaktieren, damit diese die nötigen Änderungen vornimmt.
+
+>> 
+>> > [!primary]
+>> >
+>> > Anleitung verfügbar:
+>> > - 
+>> > Bearbeiten der DNS Zone.
+>> > 
+>> > 
+>> 
 >
-> Fall 2: Ihre DNS Zone wird nicht von den Shared DNS Servern von OVHcloud verwaltet.
->>
->> - In diesem Fall ändern Sie die IP in Ihrer DNS Zone über das Interface Ihres Anbieters oder konfigurieren Sie Ihren zuständigen DNS-Server.
->>
+- 
+
+> [!faq]
+>
+> Fall 2: Ihre DNS Zone wird nicht auf den Shared DNS Servern von OVHcloud verwaltet.
+>> 
+>>     - In diesem Fall ändern Sie einfach über das Verwaltungsinterface Ihres Anbieters oder Ihres Dedicated Servers die IP-Adresse in Ihrer DNS Zone.
 >
 
-Sobald Ihre Änderung von unserer Infrastruktur übernommen wurde, erhalten Sie eine E-Mail-Bestätigung.
+Sobald Ihre Änderung von unserer Infrastruktur verarbeitet wurde, erhalten Sie eine Bestätigungs-E-Mail.
 
 > [!warning]
 >
->  Aufgrund der Caches von ISPs kann es bis zu 24 Stunden dauern, bis Änderungen an Ihrer DNS-Zone wirksam werden.
->
+> Wegen des Cache der Internetanbieter kann es bis zu 24 Stunden dauern, bis Änderungen an Ihrer DNS Zone wirksam werden.
+> 
 
 ## Weiterführende Informationen
- 
+
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
- 
+
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
- 
-Treten Sie unserer [User Community](/links/community) bei.
+
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

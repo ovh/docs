@@ -13,12 +13,12 @@ With OVHcloud Virtual Private Servers you have the possibility to add a secure s
 ## Requirements
 
 - A [VPS](https://www.ovhcloud.com/en/vps/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 - Administrative access via SSH or RDP to your VPS
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and select your server from `Virtual Private Servers`{.action}.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), go to the `Bare Metal Cloud`{.action} section and select your server from `Virtual Private Servers`{.action}.
 
 ### Subscribing to the additional disk option
 
@@ -299,4 +299,4 @@ From the `Home`{.action} tab, scroll down to the box labelled **Summary of optio
 
 ## Go further
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

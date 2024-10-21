@@ -1,7 +1,7 @@
 ---
 title: 'Zarządzanie fakturowaniem kont Exchange'
 excerpt: 'Dowiedz się, jak zarządzać fakturowaniem usługi Exchange'
-updated: 2024-08-27
+updated: 2020-04-20
 ---
 
 ## Wprowadzenie
@@ -12,14 +12,14 @@ Usługi Hosted Exchange i Private Exchange umożliwiają elastyczne zarządzenie
 
 ## Wymagania początkowe
 
-- Dostęp do [panelu klienta OVHcloud](/links/manager).
-- Wykupienie usługi [Exchange](/links/web/emails-hosted-exchange).
+- Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- Wykupienie usługi [Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/){.external}.
 
 ## W praktyce
 
-Zaloguj się do Twojego [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Webcloud`{.action}. Kliknij `Microsoft`{.action}, następnie `Exchange`{.action}, po czym wybierz odpowiednią usługę Exchange.
+Zaloguj się do Twojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji `Webcloud`{.action}. Kliknij `Microsoft`{.action}, następnie `Exchange`{.action}, po czym wybierz odpowiednią usługę Exchange.
 
-### Hosted Exchange
+### Hosted Exchange 
 
 #### Zamówienie dodatkowych kont
 
@@ -29,7 +29,7 @@ Przejdź do karty `Konta e-mail`{.action}, następnie kliknij przycisk `Akcje`{.
 
 #### Zmiana częstotliwości odnawiania usługi dla Twoich kont <a name="periodicity"></a>
 
-W oknie zarządzania Twoją usługą Exchange kliknij przycisk `Akcje`{.action} w prawym górnym rogu, a następnie wybierz opcję `Konfiguracja odnawiania usługi`{.action}.
+W oknie zarządzania Twoją usługą Exchange kliknij przycisk `Akcje`{.action} w prawym górnym rogu, a następnie wybierz opcję `Konfiguracja odnawiania usługi`{.action}. 
 
 ![billing_exchange](images/billing-exchange-01.png){.thumbnail}
 
@@ -39,19 +39,19 @@ Kliknij `...`{.action} z prawej strony platformy Exchange, a następnie `Zmień 
 
 ![billing_exchange](images/billing-exchange-02.png){.thumbnail}
 
-Pojawi się nowe okno, w którym możesz wyświetlać i zmieniać sposoby fakturowania dla każdego Twojego konta. Można wprowadzać zmiany w kolumnie „**Odnawianie**” dla jednego lub większej liczby kont jednocześnie. Każda zmiana w koncie zostanie wprowadzona w dniu wskazanym w kolumnie „**Data wygaśnięcia**”.
+Pojawi się nowe okno, w którym możesz wyświetlać i zmieniać sposoby fakturowania dla każdego Twojego konta. Można wprowadzać zmiany w kolumnie „**Odnawianie**” dla jednego lub większej liczby kont jednocześnie. Każda zmiana w koncie zostanie wprowadzona w dniu wskazanym w kolumnie „**Data wygaśnięcia**”. 
 
 Poniższy przykład zawiera działania, które należy przeprowadzić, aby przejść na comiesięczne odnawianie usługi dla konta.
 
 > W pierwszym etapie kliknij opcję „**Co miesiąc**” z prawej strony wybranego konta, a następnie wybierz `Dalej`{.action} na dole po lewej.
->
+
 > W drugim etapie wyświetli się podsumowanie wskazujące wprowadzoną zmianę. Kliknij przycisk `Wyślij`{.action} na dole po lewej.
->
+
 > ![billing_exchange](images/billing-exchange-03.png){.thumbnail}
 
 #### Usuwanie kont
 
-Aby usunąć konto z usługi Hosted, należy najpierw zrezygnować z niego, przechodząc procedurę konfiguracji jego odnawiania w sekcji „**Wygasa z końcem**”. W tym celu należy zapoznać się z etapem [„zmiana częstotliwości odnawiania kont”](#periodicity).
+Aby usunąć konto z usługi Hosted, należy najpierw zrezygnować z niego, przechodząc procedurę konfiguracji jego odnawiania w sekcji „**Wygasa z końcem**”. W tym celu należy zapoznać się z etapem [„zmiana częstotliwości odnawiania kont”](./#modifier-la-periodicite-de-vos-comptes){.external}.
 
 Po rezygnacji konto będzie zawieszone do daty wygaśnięcia. Jeśli chcesz usunąć adres e-mail obsługiwany na koncie przed jego datą wygaśnięcia, należy go zresetować.
 
@@ -71,18 +71,10 @@ Przejdź do karty `Konta e-mail`{.action}, następnie kliknij przycisk `Akcje`{.
 
 #### Usuwanie kont
 
-> [!warning]
->
-> Aby móc usunąć konto e-mail z platformy Private Exchange, **konieczne jest, aby zostało ono utworzone** (przypisane do nazwy domeny Twojej platformy Exchange). Nie można usunąć nieskonfigurowanego konta.
-
 W karcie `Konta e-mail`{.action} kliknij `...`{.action} z prawej strony danego konta i wybierz `Usuń`{.action}. Konto zostanie natychmiastowo usunięte z usługi, nie ma więc potrzeby przeprowadzenia procesu rezygnacji.
 
 ![billing_exchange](images/billing-exchange-07.png){.thumbnail}
 
-## Sprawdź również <a name="go-further"></a>
+## Sprawdź również
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
-
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
-
-Dołącz do [grona naszych użytkowników](/links/community).
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

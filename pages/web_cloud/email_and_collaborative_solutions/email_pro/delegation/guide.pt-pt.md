@@ -11,9 +11,9 @@ Os serviços Exchange e Email Pro permitem beneficiar de endereços de e-mail pr
 
 ## Requisitos
 
-- Dispor de um serviço [OVHcloud Exchange](/links/web/emails-hosted-exchange) ou [E-mail Pro](/links/web/email-pro) já configurado.
+- Dispor de um serviço [OVHcloud Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/) ou [E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/) já configurado.
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 - Dispor dos identificadores relativos à conta  que beneficiará dos novos direitos delegados.
 
 ## Instruções

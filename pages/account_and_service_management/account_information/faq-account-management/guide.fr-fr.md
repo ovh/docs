@@ -1,7 +1,7 @@
 ---
 title: FAQ sur la gestion du compte OVHcloud
 excerpt: Retrouvez les questions les plus fréquemment posées sur la gestion du compte OVHcloud
-updated: 2024-09-09
+updated: 2024-07-04
 ---
 
 ## Objectif
@@ -12,17 +12,19 @@ Retrouvez ici les questions les plus fréquemment posées sur la gestion de votr
 
 La création d'un compte est gratuite. Cet espace facilite l'accès à vos informations et permet de gérer vos services. Consultez notre guide [Créer un compte OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
 
-> [!success]
-> Une fois votre compte créé, pensez à le sécuriser en configurant une double authentification. Retrouvez plus d'informations dans notre guide [Sécuriser son compte OVHcloud avec la double authentification](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
+#### Trucs et astuces
+
+Une fois votre compte créé, pensez à le sécuriser en configurant une double authentification. Retrouvez plus d'informations dans notre guide [Sécuriser son compte OVHcloud avec la double authentification](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
 
 ### Où trouver mon identifiant OVHcloud ?
 
 Votre identifiant client, parfois également appelé « NIC-handle », est présent en haut à droite de votre dernière facture. Il ressemble à ceci : « xx99999-ovh » (les premières lettres sont généralement les initiales de la personne qui a créé le compte). Cet identifiant est aussi indiqué dans tous les e-mails envoyés par OVHcloud (e-mail de confirmation de création du compte, e-mails de confirmation ou de renouvellement de commande, etc.).
 
-Si vous n’avez toujours pas retrouvé votre identifiant, vous avez la possibilité de cliquer sur le lien « Identifiant ou mot de passe oubliés » présent sur la page de [connexion au compte OVHcloud](/links/manager) et renseignez l’adresse e-mail associée à votre compte.
+Si vous n’avez toujours pas retrouvé votre identifiant, vous avez la possibilité de cliquer sur le lien « Identifiant ou mot de passe oubliés » présent sur la page de [connexion au compte OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et renseignez l’adresse e-mail associée à votre compte.
 
-> [!success]
->À tout moment, lorsque vous êtes connecté à votre espace client, vous pouvez retrouver votre identifiant en haut à droite, en cliquant sur votre nom.
+#### Trucs et astuces
+
+À tout moment, lorsque vous êtes connecté à votre espace client, vous pouvez retrouver votre identifiant en haut à droite, en cliquant sur votre nom.
 
 ### Que faire si je ne parviens pas à me connecter à mon compte client ?
 
@@ -31,14 +33,13 @@ Pour tous ces cas de figure, consultez [cette documentation](/pages/account_and_
 
 ### Comment modifier mes informations personnelles ?
 
-Pour visualiser ou modifier vos coordonnées, connectez-vous à votre [espace client](/links/manager) grâce à vos identifiants. Vous accéderez à vos informations personnelles en cliquant directement sur les initiales de vos nom et prénom, en haut à droite de votre tableau de bord dans l'espace client. Accédez ensuite à la rubrique « Mon profil » de cette page.
+Pour visualiser ou modifier vos coordonnées, connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) grâce à vos identifiants. Vous accéderez à vos informations personnelles en cliquant directement sur les initiales de vos nom et prénom, en haut à droite de votre tableau de bord dans l'espace client. Accédez ensuite à la rubrique « Mon profil » de cette page.
 
 ![infos](images/infos-modif_final_comp-min.gif){.thumbnail}
 
-> [!success]
-> **Vous voulez modifier l'adresse e-mail de votre compte OVHcloud ?**
->
-> Une demande de confirmation sera d'abord envoyée à l'adresse e-mail actuellement renseignée dans votre espace client. Si vous n'avez plus accès à cette adresse mais que vous avez accès votre adresse e-mail de secours, créez un [ticket d'assistance via le Centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help) afin de remplacer votre adresse e-mail principale par l'adresse e-mail de secours.
+#### Trucs et astuces
+
+Vous voulez modifier l'adresse e-mail de votre compte OVHcloud ? Une demande de confirmation sera d'abord envoyée à l'adresse e-mail actuellement renseignée dans votre espace client. Si vous n'avez plus accès à cette adresse mais que vous avez accès votre adresse e-mail de secours, créez un [ticket d'assistance via le Centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help) afin de remplacer votre adresse e-mail principale par l'adresse e-mail de secours.
 
 Si vous n'avez accès ni à votre adresse e-mail, ni à votre espace client, ou que vous n'avez pas d'adresse e-mail de secours, il vous faudra suivre [cette procédure](https://www.ovh.com/fr/cgi-bin/fr/procedure/procedureChangeEmail.cgi).
 
@@ -46,21 +47,9 @@ Si vous n'avez accès ni à votre adresse e-mail, ni à votre espace client, ou 
 
 Vous devez entrer votre numéro de téléphone au format international.
 
-> [!success]
-> Pour le « 06 12 34 56 78 », renseignez donc « +33 612345678 ». Le « + 33 » est ajouté automatiquement en sélectionnant la France comme pays de résidence.
+#### Trucs et astuces
 
-### Où dois-je renseigner mon numéro SIRET ?
-
-Connectez-vous à votre [espace client](/links/manager), cliquez sur votre nom en haut à droite de votre compte puis cliquez sur vos initiales.
-
-Cliquez alors sur le bouton `Éditer mon profil`{.action}, dans le cadre `Mon profil`.
-
-Vous aurez ainsi accès aux informations personnelles de votre compte. Faites défiler l'écran jusqu'à la rubrique `Votre activité` pour trouver le champ `N° SIRET`. Une fois votre numéro renseigné, cliquez sur le bouton `Enregistrer les modifications`{.action}.
-
-> [!success]
-> **Où trouver mon numéro SIRET ?**
->
-> Votre numéro SIRET est composé de 14 chiffres. Cette donnée étant publique, vous pouvez la retrouver sur l’Annuaire des entreprises et sur le site de l’Insee. Vous la retrouvez également sur votre Kbis ou en tapant votre nom d’entreprise + SIRET sur un moteur de recherche.
+Pour le « 06 12 34 56 78 », renseignez donc « +33 612345678 ». Le « + 33 » est ajouté automatiquement en sélectionnant la France comme pays de résidence.
 
 ### Quels sont les impacts du RGPD sur mes données personnelles ?
 
@@ -71,14 +60,13 @@ Pour mieux connaître les impacts du règlement général sur la protection des 
 
 ### Comment modifier mon mot de passe OVHcloud ?
 
-Lorsque vous vous connectez à votre [espace client](/links/manager), rendez-vous sur votre tableau de bord. Cliquez ensuite sur vos initiales en haut à droite. Dans la rubrique `Mon compte`{.action}, cliquez sur l'onglet `Sécurité`{.action}. Vous pouvez alors modifier votre mot-de-passe actuel. Un message de sécurité apparaît alors pour vous informer que vous êtes sur le point d'effectuer un changement de mot de passe. A la suite de votre confirmation, vous allez recevoir (à l'adresse mail principale renseignée dans le compte)  un e-mail contenant la procédure à suivre. 
+Lorsque vous vous connectez à votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez-vous sur votre tableau de bord. Cliquez ensuite sur vos initiales en haut à droite. Dans la rubrique `Mon compte`{.action}, cliquez sur l'onglet `Sécurité`{.action}. Vous pouvez alors modifier votre mot-de-passe actuel. Un message de sécurité apparaît alors pour vous informer que vous êtes sur le point d'effectuer un changement de mot de passe. A la suite de votre confirmation, vous allez recevoir (à l'adresse mail principale renseignée dans le compte)  un e-mail contenant la procédure à suivre. 
 
 Retrouvez plus d'informations dans notre guide [Modifier le mot de passe de votre compte](/pages/account_and_service_management/account_information/manage-ovh-password).
 
-> [!success]
-> **Vous ne vous rappelez plus de votre mot de passe ?**
->
-> Rendez-vous sur la [page de connexion à votre espace client](/links/manager) et cliquez sur `Identifiant ou mot de passe oublié`{.action}. Renseignez votre identifiant ou l’adresse e-mail principale associée à votre compte OVHcloud, puis cliquez sur `Envoyer`{.action}. Un e-mail est alors envoyé à l’adresse e-mail de contact du compte, afin de confirmer la demande. Lisez attentivement les instructions et cliquez sur le lien qu’il contient.
+#### Trucs et astuces
+
+Si vous ne vous rappelez plus de votre mot-de-passe : rendez-vous sur la [page de connexion à votre espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et cliquez sur `Identifiant ou mot de passe oublié`{.action}. Renseignez votre identifiant ou l’adresse e-mail principale associée à votre compte OVHcloud, puis cliquez sur `Envoyer`{.action}. Un e-mail est alors envoyé à l’adresse e-mail de contact du compte, afin de confirmer la demande. Lisez attentivement les instructions et cliquez sur le lien qu’il contient.
 
 Si vous n'avez plus accès à cette adresse mais que vous avez accès votre adresse e-mail de secours, créez un [ticket d'assistance via le Centre d'aide](https://help.ovhcloud.com/csm?id=csm_get_help) afin de remplacer votre adresse e-mail principale par l'adresse e-mail de secours.
 
@@ -96,15 +84,17 @@ Avant toute modification, assurez-vous donc que toutes les adresses e-mail de co
 
 Si vous souhaitez récupérer un nom de domaine dont vous êtes le propriétaire enregistré auprès du registre (vous pouvez vérifier ces informations sur <https://www.ovh.com/fr/cgi-bin/tools/check_whois.pl>), mais que vous n’avez pas accès au compte client administrateur, nous vous invitons à suivre cette [procédure](https://www.ovh.com/fr/cgi-bin/fr/procedure/procedureChangeContacts.cgi).
 
-> [!success]
-> Un guide complet sur la gestion des contacts est disponible [ici](/pages/account_and_service_management/account_information/managing_contacts).
+#### Trucs et astuces
+
+Un guide complet sur la gestion des contacts est disponible [ici](/pages/account_and_service_management/account_information/managing_contacts).
 
 ### Comment paramétrer ou modifier un contact de facturation ?
 
 Connectez-vous à votre espace client grâce à vos identifiants. Une fois sur votre tableau de bord, cliquez ensuite sur le raccourci `Gestion de contacts`{.action}, situé dans le bandeau de droite.
 
-> [!success]
-> Si vous souhaitez en savoir plus sur la gestion des contacts, nous vous invitons à consulter ce guide détaillé : [« Gérer les contacts de ses services »](/pages/account_and_service_management/account_information/managing_contacts).
+#### Trucs et astuces
+
+Si vous souhaitez en savoir plus sur la gestion des contacts, nous vous invitons à consulter ce guide détaillé : [« Gérer les contacts de ses services »](/pages/account_and_service_management/account_information/managing_contacts).
 
 ### Comment sécuriser mon compte ?
 
@@ -114,7 +104,7 @@ Plusieurs solutions s'offrent à vous pour sécuriser votre compte telles que :
 - l'ajout d'une [double authentification](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa) ;
 - la configuration d'une [restriction par IP](/pages/account_and_service_management/account_information/ovhcloud-control-panel-ip-restriction).
 
-Ces options sont toutes disponibles dans l'onglet `Sécurité`{.action}, après avoir cliqué sur vos initiales en haut à droite du `Tableau de bord`{.action} de votre [espace client](/links/manager).
+Ces options sont toutes disponibles dans l'onglet `Sécurité`{.action}, après avoir cliqué sur vos initiales en haut à droite du `Tableau de bord`{.action} de votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 ### Comment activer la double authentification (2FA) sur mon compte OVHcloud ?
 

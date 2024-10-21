@@ -1,7 +1,7 @@
 ---
 title: "Zmiana właściciela domeny"
 excerpt: "W tym przewodniku znajdziesz różne informacje na temat zmiany właściciela domeny."
-updated: 2024-09-04
+updated: 2024-05-22
 ---
 
 > [!primary]
@@ -57,9 +57,9 @@ Zaloguj się do [Panelu klienta OVHcloud](/links/manager) w sekcji `Web Cloud`{.
 
 ### Etap 2: uruchomienie procedury zmiany właściciela
 
-W karcie `Informacje ogólne`{.action} przejdź do sekcji **Abonament** w prawym dolnym rogu. Kliknij `...`{.action} przed **kontaktami**, po czym kliknij `Zmiana właściciela`{.action}.
+W karcie `Informacje ogólne`{.action} przejdź do sekcji **Abonament** w prawym dolnym rogu. Kliknij `...`{.action} przed **kontaktami**, po czym kliknij `Zmień właściciela`{.action}.
 
-![zmiana właściciela](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/change-owner.png){.thumbnail}
+![zmiana właściciela](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/change-domain-name-holder.png){.thumbnail}
 
 > [!warning]
 >
@@ -98,7 +98,7 @@ Jeśli musisz zaktualizować niektóre informacje uboczne, takie jak numer telef
 
 W sekcji **Abonament** w zakładce `Informacje ogólne`{.action} kliknij `...`{.action} przed **kontaktami**, a następnie kliknij `Aktualizuj dane właściciela`{.action}.
 
-![zmiana właściciela](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/refresh-holder-information.png){.thumbnail}
+![zmiana właściciela](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/general-information/refresh-owner-information.png){.thumbnail}
 
 W przypadku tej operacji nie musisz potwierdzać modyfikacji za pomocą e-maila.
 

@@ -1,13 +1,13 @@
 ---
 title: "Gestion du reboot de vos serveurs avec la fonctionnalité OVHcloud Link Aggregation"
 excerpt: "Découvrez comment réaliser les redémarrages de vos serveurs OVHcloud fonctionnant à travers votre agrégation privée active"
-updated: 2024-10-02
+updated: 2022-12-14
 ---
 
 ## Objectif
 
 Ce guide a pour but de vous accompagner pour déployer tous les composants et services nécessaires au bon redémarrage de vos solutions OVHcloud en environnement **entièrement privé**.<br>
-Profitez d'une infrastructure privée sans avoir modifié la configuration par défaut de vos [serveurs dédiés OVHcloud](/links/bare-metal/bare-metal).
+Profitez d'une infrastructure privée sans avoir modifié la configuration par défaut de vos [serveurs dédiés OVHcloud](https://www.ovhcloud.com/fr/bare-metal/).
 
 > [!warning]
 >
@@ -23,18 +23,14 @@ Profitez d'une infrastructure privée sans avoir modifié la configuration par d
 > Si ces paramètres étaient amenés à être modifiés, nos équipes ne pourraient plus effectuer les tâches qui leur sont dédiées dans les conditions que nous avons choisies, et surtout vous risqueriez de rendre le démarrage inopérant.
 >
 
-Les [serveurs dédiés OVHcloud](/links/bare-metal/bare-metal) vous permettent de configurer/déclarer vos propres réseaux.<br>
+Les [serveurs dédiés OVHcloud](https://www.ovhcloud.com/fr/bare-metal/) vous permettent de configurer/déclarer vos propres réseaux.<br>
 Chaque serveur est muni au minimum de 2 interfaces réseaux, fonctionnant en réalité en liens agrégés et assurant la redondance en cas de panne.<br>
 Vous avez donc la possiblité d'utiliser/déclarer vos réseaux *publics* et *privés* en passant par notre solution [vRack](/pages/bare_metal_cloud/dedicated_servers/vrack_configuring_on_dedicated_server).
 
-Nous allons présenter le cas de [serveur(s) dédié(s)](/links/bare-metal/bare-metal) configuré(s) en mode **OLA**, c'est-à-dire possédant **uniquement** des réseaux privés.
+Nous allons présenter le cas de [serveur(s) dédié(s)](https://www.ovhcloud.com/fr/bare-metal/) configuré(s) en mode **OLA**, c'est-à-dire possédant **uniquement** des réseaux privés.
 Ce choix propose à votre infrastructure la meilleure isolation/protection possible pour votre service hébergé.<br>
 La seule différence majeure notable est que les [réseaux privés](/pages/network/ovhcloud_connect/occ-concepts-overview#prive) n'ont donc pas accès à tout ce qui n'appartient pas à votre infrastructure.<br>
 Par conséquent, un serveur isolé de par son réseau privé empêche le mecanisme de démarrage. C'est à dire que lorsque les systèmes sont démarrés via le méthode **Netboot** (Network Boot), ces derniers s'appuient sur le réseau interne d'OVHcloud et ses services mutualisés.
-
-> [!warning]
-> Veuillez noter qu'avec les serveurs Advance de 2ème et 3ème génération sur une architecture T3 (une interface publique et une interface vRack), il n'est pas possible d'avoir deux interfaces dans le vRack et de configurer PXE.
->
 
 ### Présentation rapide d'un démarrage en Netboot
 
@@ -80,12 +76,12 @@ Voici un schéma (logique) de démarrage Netboot :
 > 
 
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/manager/#/dedicated/configuration).
-- Posséder au moins un [serveur dédié](/links/bare-metal/bare-metal) ayant un système d'exploitation **déjà installé**.
+- Posséder au moins un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) ayant un système d'exploitation **déjà installé**.
 - Un serveur dédié supplémentaire avec les interfaces réseau configurées par défaut, à savoir un accès au réseau public et privé. Ce serveur hébergera tous les services (**DHCP** et **TFTP**). Le système d'exploitation sera celui de votre choix.
 - Avoir toutes les interfaces réseau de ce serveur en mode **privé**, ce qui sous-entend que vous avez préalablement configuré [notre fonctionnalité OLA](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager).<br>
 
 >
-> Pour vérifier que votre machine est éligible à notre procédure, connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur l'onglet `Bare Metal Cloud`{.action}.
+> Pour vérifier que votre machine est éligible à notre procédure, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et cliquez sur l'onglet `Bare Metal Cloud`{.action}.
 >
 > Sélectionnez votre serveur et vérifiez son éligibilité à `OLA: OVHcloud Link Aggregation` dans l'onglet `Interfaces réseau`{.action}.
 >
@@ -355,4 +351,4 @@ Il est fortement conseillé d'utiliser un service NTP, surtout si votre infrastr
 [Comprendre ou découvrir NTP](https://fr.wikipedia.org/wiki/Network_Time_Protocol).<br>
 [Comprendre ou découvrir Dnsmasq](https://wiki.debian.org/dnsmasq).<br>
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

@@ -53,7 +53,7 @@ An Additional IP is an additional IP in which can be joined with your primary IP
 ## How do I order a free SSL certificate ?
 It is possible to order a free SSL ceritificate for the OVHcloud Load Balancer..
 
-- To order a free SSL certificate, you can use the following API call and entering your domain in the `fqdn` field:
+- To order a free SSL certificate, you can use the following API call and entering your doman in the `fqdn` field:
 
 > [!api]
 >
@@ -64,7 +64,7 @@ It is possible to order a multi-domain certificate; the `fqdn` fields accepts a 
 
 For the orer to be completed, it is required that the domain name points to your OVHcloud Load Balancer.
 
-## How to list the SSL certificates associated with the OVHcloud Load Balancer ?
+## How to list the SSL certificates assocatiated with the OVHcloud Load Balancer ?
 
 - To list the SSL certificates associated with the OVHcloud Load Balancer, you can use the following API call:
 
@@ -75,7 +75,7 @@ For the orer to be completed, it is required that the domain name points to your
 
 The SSL certificates that have been ordered (free or not) will appear as `built`. Those added by yourself are will appear as `custom`.
 
-An SSL certificate appearing as `built_not_routed` is a certificate that has been order and delivered, but whose domain cannot be validated. Usually, this is because the domain to longer points to the OVHcloud Load Balancer.
+A SSL certificate appearing as `built_not_routed` is a certificate that has been order and delivered, but whose domain cannot be validated. Usually, this is becasue the domain to longer points to the OVHcloud Load Balancer.
 
 - To retrieve the details of an SSL certificate, you can use the following API call :
 

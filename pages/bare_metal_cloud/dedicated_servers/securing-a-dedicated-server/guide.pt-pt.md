@@ -22,7 +22,7 @@ Quando encomendar o seu servidor dedicado, pode escolher uma distribuição ou u
 
 ## Requisitos
 
-- Um [servidor dedicado](/links/bare-metal/bare-metal) na sua conta OVHcloud
+- Um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/) na sua conta OVHcloud
 - Ter acesso de administrador (sudo) ao seu servidor através de SSH
 
 ## Instruções
@@ -256,6 +256,6 @@ Para saber mais sobre as nossas soluções de armazenamento, consulte o nosso [m
 
 [Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
 
-Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](/links/professional-services) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
+Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](https://www.ovhcloud.com/pt/professional-services/) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

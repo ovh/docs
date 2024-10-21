@@ -16,16 +16,16 @@ Añadir un dominio a un servicio Exchange es un requisito indispensable para pod
 
 ## Requisitos
 
-- Tener una [solución Exchange](/links/web/emails) o [Email Pro](/links/web/email-pro).
+- Tener una [solución Exchange](https://www.ovhcloud.com/es-es/emails/) o [Email Pro](https://www.ovhcloud.com/es-es/emails/email-pro/).
 - Tener uno o más dominios.
 - Estar en condiciones de modificar la configuración del dominio ([zona DNS](/pages/web_cloud/domains/dns_zone_edit)).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ## Procedimiento
 
 ### Acceder a la gestión del servicio
 
-Una vez que el servicio Exchange o Email Pro haya sido creado y esté disponible, puede administrarlo desde el [área de cliente de OVHcloud](/links/manager).
+Una vez que el servicio Exchange o Email Pro haya sido creado y esté disponible, puede administrarlo desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 En la sección `Web Cloud`{.action}:
 
@@ -40,7 +40,7 @@ Para añadir un dominio, abra la pestaña `Dominios asociados`{.action}. Se most
 
 > [!warning]
 >
-> Todas las direcciones creadas en el servicio de correo podrán ver en el directorio el conjunto de direcciones de este servicio, incluidas aquellas que posean un nombre de dominio diferente. Para disociar la visualización de los dominios, debe contratar una nueva [solución Exchange o Email Pro](/links/web/emails) para el o los dominios en cuestión.
+> Todas las direcciones creadas en el servicio de correo podrán ver en el directorio el conjunto de direcciones de este servicio, incluidas aquellas que posean un nombre de dominio diferente. Para disociar la visualización de los dominios, debe contratar una nueva [solución Exchange o Email Pro](https://www.ovhcloud.com/es-es/emails/) para el o los dominios en cuestión.
 >
 
 ![Add Domain](images/add_domain_exchange_step1.png){.thumbnail}
@@ -109,11 +109,11 @@ Una vez que haya añadido los dominios, ya puede configurar sus cuentas de corre
 
 Le recordamos que todas las direcciones creadas en su servicio podrán ver en el directorio el conjunto de direcciones de este servicio, incluidas aquellas que posean un nombre de dominio diferente.
 
-Una vez que haya configurado las cuentas, ¡ya puede utilizarlas! Para ello, OVHcloud pone a su disposición el **webmail** disponible en la dirección [Webmail](/links/web/email). Para un uso óptimo de su dirección en un programa, asegúrese de que sea compatible con el servicio. 
+Una vez que haya configurado las cuentas, ¡ya puede utilizarlas! Para ello, OVHcloud pone a su disposición el **webmail** disponible en la dirección <https://www.ovhcloud.com/es-es/mail/>. Para un uso óptimo de su dirección en un programa, asegúrese de que sea compatible con el servicio. 
 
 Si desea configurar su cuenta de correo electrónico en un cliente de correo o un dispositivo (smartphone o tablet) u obtener ayuda sobre las funcionalidades de su servicio de correo, consulte la documentación disponible en las páginas [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) y [Email Pro](/products/web-cloud-email-collaborative-solutions-email-pro).
 
-Puede adquirir licencias Outlook en el [área de cliente de OVHcloud](/links/manager) y licencias de Office 365 en la página [Microsoft 365](/links/web/ms365). Si desea disfrutar del cliente de correo Outlook o de otros programas de la suite Office, le recomendamos una de estas soluciones.
+Puede adquirir licencias Outlook en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y licencias de Office 365 en la página <https://www.ovhcloud.com/es-es/collaborative-tools/microsoft-365/>. Si desea disfrutar del cliente de correo Outlook o de otros programas de la suite Office, le recomendamos una de estas soluciones.
 
 ### Eliminar un dominio de una plataforma
 
@@ -149,7 +149,7 @@ En la pestaña `Dominios asociados`{.action} de su plataforma, haga clic en el b
 
 [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](/links/partner).
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte.](/links/support)
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte.](https://www.ovhcloud.com/es-es/support-levels/)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

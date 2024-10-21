@@ -1,7 +1,7 @@
 ---
 title: "Exchange - Konfiguracja konta e-mail w Gmailu na Androida"
 excerpt: "Dowiedz się, jak skonfigurować konto Exchange na urządzeniu z systemem Android poprzez aplikację Gmail"
-updated: 2024-10-09
+updated: 2024-03-20
 ---
 
 <style>
@@ -27,12 +27,12 @@ Konta e-mail Exchange mogą być skonfigurowane w jednym z kompatybilnych progra
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 >
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. Niemniej jednak, w przypadku trudności zalecamy skontaktowanie się z [wyspecjalizowanym usługodawcą](/links/partner) lub skontaktuj się z dostawcą usługi. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji „Sprawdź również”.
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. Niemniej jednak, w przypadku trudności zalecamy skontaktowanie się z [wyspecjalizowanym usługodawcą](https://partner.ovhcloud.com/pl/) lub skontaktuj się z dostawcą usługi. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji „Sprawdź również”.
 
 
 ## Wymagania początkowe
 
-- Wykupienie konta e-mail [Exchange](/links/web/emails)
+- Wykupienie konta e-mail [Exchange](https://www.ovhcloud.com/pl/emails/){.external}
 - Zainstalowana aplikacja Gmail na Twoim urządzeniu (możesz pobrać ją z Google Play Store)
 - Dane do logowania do konta e-mail, które chcesz skonfigurować
 
@@ -49,7 +49,7 @@ Konta e-mail Exchange mogą być skonfigurowane w jednym z kompatybilnych progra
 >
 > Poniżej stosujemy przykładową nazwę serwera: ex**?*.mail.ovh.net. Chcesz zastąpić "? "cyfrą wskazującą serwer Twojej usługi Exchange.
 >
-> Liczbę tę odnajdziesz w [Panelu klienta OVHcloud](/links/manager), w sekcji `Web Cloud`{.action}, a następnie w wersji `Microsoft`{.action}.
+> Liczbę tę odnajdziesz w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, w sekcji `Web Cloud`{.action}, a następnie w wersji `Microsoft`{.action}.
 > Kliknij `Exchange`{.action}, a następnie wybraną platformę Exchange. Nazwa serwera jest widoczna w ramce **Połączenie** w karcie `Informacje ogólne`{.action}.
 
 Na ekranie Twojego urządzenia wybierz aplikację `Gmail`{.action}.
@@ -70,6 +70,7 @@ Dodanie konta zostanie wykonane w inny sposób, **jeśli żadne konto nie jest s
 >> 2. Wybierz `Ustawienia`{.action}<br><br>
 >> 3. Wybierz `Dodaj konto`{.action}<br><br>
 >> ![Exchange Android](images/android-existing.png){.thumbnail}
+>>
 
 Postępuj zgodnie z kolejnymi instrukcjami, przechodząc przez poniższe karty:
 
@@ -93,21 +94,19 @@ Postępuj zgodnie z kolejnymi instrukcjami, przechodząc przez poniższe karty:
 > **Etap 6**
 >> Wyświetli się komunikat "Możesz od tej chwili korzystać ze swojego konta". Naciśnij przycisk `OK`{.action}, aby zakończyć konfigurację.<br><br>
 >> ![Exchange Android](images/exchange-android-05.png){.thumbnail .h-600}
+>>
 
 Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz wysyłać i odbierać wiadomości e-mail, korzystając z aplikacji Gmail.
 
 > [!success]
 >
-> OVHcloud oferuje aplikację internetową umożliwiającą korzystanie z Twojego konta e-mail przy użyciu wyszukiwarki, dostępną pod adresem [Webmail](/links/web/email). Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail.
+> OVHcloud oferuje aplikację internetową umożliwiającą korzystanie z Twojego konta e-mail przy użyciu wyszukiwarki, dostępną pod adresem <https://www.ovhcloud.com/pl/mail/>. Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail.
 
 ## Sprawdź również <a name="go-further"></a>
 
-> [!primary]
->
-> Aby uzyskać więcej informacji na temat konfigurowania konta e-mail z poziomu aplikacji Gmail na urządzeniu z systemem Android, zobacz [Centrum pomocy Google](https://support.google.com/mail/answer/6078445?hl=pl-CA&co=GENIE.Platform%3DAndroid#zippy=-odaj-konto).
-
-[MX Plan - Konfiguracja konta e-mail w Gmailu na urządzeniu z systemem Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android).
+[MXplan - Konfiguracja konta e-mail w Gmailu na urządzeniu z systemem Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android).
 
 [E-mail Pro - Konfiguracja konta e-mail w Gmailu na urządzeniu z systemem Android](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_android).
+
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>

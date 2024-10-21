@@ -41,7 +41,7 @@ Wählen Sie zunächst den Account aus, für den Sie Berechtigungen vergeben möc
 
 ### Schritt 1: Delegation einrichten
 
-Loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](/links/manager) ein:
+Loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](/links/manager){.external} ein:
 
 - **Exchange**: Klicken Sie auf `Microsoft`{.action} und dann auf `Exchange`{.action}.
 - **Email Pro**: Klicken Sie auf `Email Pro`{.action}.
@@ -66,11 +66,11 @@ Nun, da die Delegation eingerichtet ist, können Sie die vergebenen Berechtigung
 
 Die Vorgehensweise für die Nutzung variiert je nach den vergebenen Rechten und der Software bzw. dem Webinterface, das Sie für den Zugang zu Ihrem E-Mail Account verwenden. Folgen Sie dieser Anleitung deshalb entsprechend der Berechtigungen, die Sie vergeben haben.
 
-- [Zugangsrechte nutzen](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#21-zugangsrechte-nutzen)
+- [Zugangsrechte nutzen](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#21-zugangsrechte-nutzen){.external}
 
-- [„Senden als“-Berechtigung nutzen](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#22-senden-als-berechtigung-nutzen)
+- [„Senden als“-Berechtigung nutzen](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#22-senden-als-berechtigung-nutzen){.external}
 
-- [„Senden im Auftrag von“-Berechtigung nutzen](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#23-senden-im-auftrag-von-berechtigung-nutzen)
+- [„Senden im Auftrag von“-Berechtigung nutzen](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#23-senden-im-auftrag-von-berechtigung-nutzen){.external}
 
 > [!warning]
 >
@@ -81,7 +81,7 @@ Die Vorgehensweise für die Nutzung variiert je nach den vergebenen Rechten und 
 
 - **Über die Outlook Web App (OWA)**
 
-Gehen Sie auf[Webmail](/links/web/email) und geben Sie die Login-Informationen des E-Mail Account ein, der die Berechtigungen erhalten hat. Wenn Sie eingeloggt sind, klicken Sie links im Menü auf den betreffenden Account und wählen Sie `Freigegebenen Ordner hinzufügen`{.action}.
+Gehen Sie auf <https://www.ovh.de/mail/> und geben Sie die Login-Informationen des E-Mail Account ein, der die Berechtigungen erhalten hat. Wenn Sie eingeloggt sind, klicken Sie links im Menü auf den betreffenden Account und wählen Sie `Freigegebenen Ordner hinzufügen`{.action}.
 
 Geben Sie im angezeigten Fenster den Namen des Accounts ein, für den Sie Zugangsrechte erhalten haben, und klicken Sie dann auf `Hinzufügen`{.action}. Der neue Account erscheint dann links im Menü und Sie können die Inhalte einsehen.
 
@@ -105,7 +105,7 @@ Klicken Sie nun auf `Weitere Einstellungen`{.action}. Gehen Sie im neuen Fenster
 
 - **Über die Outlook Web App (OWA)**
 
-Gehen Sie auf[Webmail](/links/web/email) und geben Sie die Login-Informationen des E-Mail Account ein, der die Berechtigungen erhalten hat. Wenn Sie eingeloggt sind, klicken Sie auf den Button `+ Neu`{.action}, um eine neue Nachricht zu verfassen.
+Gehen Sie auf <https://www.ovh.de/mail/> und geben Sie die Login-Informationen des E-Mail Account ein, der die Berechtigungen erhalten hat. Wenn Sie eingeloggt sind, klicken Sie auf den Button `+ Neu`{.action}, um eine neue Nachricht zu verfassen.
 
 Klicken Sie im angezeigten Bereich oben rechts auf die drei Punkte und dann auf `Absender anzeigen`{.action}. Klicken Sie danach auf den Button `Von`{.action} und wählen Sie die Adresse aus, die als Absender erscheinen soll (d. h. die Adresse, für die Ihnen die Berechtigung übertragen wurde). Wird diese nicht angezeigt, löschen Sie die vorausgefüllte Adresse und geben Sie die gewünschte Adresse ein.
 
@@ -131,7 +131,7 @@ Verfassen Sie nun Ihre Nachricht und versenden Sie diese.
 
 - **Über die Outlook Web App (OWA)**
 
-Gehen Sie auf[Webmail](/links/web/email) und geben Sie die Login-Informationen des E-Mail Account ein, der die Berechtigungen erhalten hat. Wenn Sie eingeloggt sind, klicken Sie auf den Button `+ Neu`{.action}, um eine neue Nachricht zu verfassen.
+Gehen Sie auf <https://www.ovh.de/mail/> und geben Sie die Login-Informationen des E-Mail Account ein, der die Berechtigungen erhalten hat. Wenn Sie eingeloggt sind, klicken Sie auf den Button `+ Neu`{.action}, um eine neue Nachricht zu verfassen.
 
 Klicken Sie im angezeigten Bereich oben rechts auf die drei Punkte und dann auf `Absender anzeigen`{.action}. Klicken Sie danach auf den Button `Von`{.action} und wählen Sie die Adresse aus, die als Absender erscheinen soll (d. h. die Adresse, für die Ihnen die Berechtigung übertragen wurde). Wird diese nicht angezeigt, löschen Sie die vorausgefüllte Adresse und geben Sie die gewünschte Adresse ein.
 

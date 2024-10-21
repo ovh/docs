@@ -1,7 +1,7 @@
 ---
-title: 'MX Plan - Skonfiguruj swoje konto e-mail w programie Thunderbird dla systemu Windows'
+title: 'Konfiguracja konta e-mail w programie Thunderbird na urządzeniu z systemem Windows'
 excerpt: 'Informacje dotyczące konfiguracji Twojego konta e-mail w programie Thunderbird znajdują się tutaj.'
-updated: 2024-10-01
+updated: 2021-08-26
 ---
 
 > [!primary]
@@ -23,7 +23,7 @@ Konta MX Plan mogą być skonfigurowane w jednym z kompatybilnych programów poc
 
 ## Wymagania początkowe
 
-- Posiadanie konta e-mail MX Plan (zawartego w usłudze MX Plan lub w usłudze [hostingu OVHcloud](/links/web/hosting)).
+- Posiadanie konta e-mail MX Plan (zawartego w usłudze MX Plan lub w usłudze [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}).
 - Instalacja programu Thunderbird na Twoim urządzeniu z systemem Windows.
 - Dane do logowania do konta e-mail, które chcesz skonfigurować.
  
@@ -52,7 +52,7 @@ W przypadku konfiguracji **POP** wartości są następujące:
 
 Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz zacząć wysyłać i odbierać wiadomości.
 
-OVHcloud oferuje również aplikację internetową umożliwiającą korzystanie z Twojego konta e-mail przy użyciu przeglądarki internetowej. Jest ona dostępna pod adresem [Webmail](/links/web/email). Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail. W przypadku pytań dotyczących korzystania z tego konta, skorzystaj z naszego przewodnika [Sprawdź konto Exchange w interfejsie OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) lub [Korzystaj z konta e-mail w interfejsie Webmail RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
+OVHcloud oferuje również aplikację internetową umożliwiającą korzystanie z Twojego konta e-mail przy użyciu przeglądarki internetowej. Jest ona dostępna pod adresem <https://www.ovh.pl/mail/>. Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail. W przypadku pytań dotyczących korzystania z tego konta, skorzystaj z naszego przewodnika [Sprawdź konto Exchange w interfejsie OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) lub [Korzystaj z konta e-mail w interfejsie Webmail RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
 
 ### Pobierz kopię zapasową Twojego konta e-mail
 
@@ -77,9 +77,5 @@ Jeśli Twoje konto e-mail zostało już skonfigurowane i musisz mieć dostęp do
 ![Thunderbird](images/thunderbird-win-mxplan06.png){.thumbnail}
 
 ## Sprawdź również
-
-> [!primary]
->
-> Aby uzyskać więcej informacji na temat konfigurowania konta e-mail z poziomu aplikacji Thunderbird w systemie Windows, skorzystaj z [Centrum pomocy Mozillia](https://support.mozilla.org/pl/kb/reczna-konfiguracja-konta#thunderbird:win10:tb115)
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

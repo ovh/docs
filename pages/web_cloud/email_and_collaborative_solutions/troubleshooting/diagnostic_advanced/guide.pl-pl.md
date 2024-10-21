@@ -17,7 +17,7 @@ Nie można odbierać ani wysyłać e-maili przy użyciu programu pocztowego lub 
 ## Wymagania początkowe
 
 - Posiadanie usługi **MX Plan** lub usługi **E-mail Pro** lub usługi **Exchange**.
-- Dostęp do [panelu klienta OVHcloud](/links/manager).
+- Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ## W praktyce
 
@@ -51,19 +51,19 @@ Jeśli korzystasz z programu pocztowego na Twoim komputerze (Outlook, Mail firmy
 
 ### Nie mogę otrzymywać e-maili, ponieważ mój adres e-mail jest zapełniony, nie mam więcej miejsca. Co mogę zrobić?
 
-Jeśli zamówiłeś [jedną z naszych ofert e-mail OVHcloud](/links/web/emails) i jedno z Twoich kont e-mail jest zapełnione, zapoznaj się z naszym przewodnikiem "[Zarządzanie przestrzenią dyskową konta e-mail](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota)". Przewodnik ten pomoże Ci określić, czy możesz zoptymalizować istniejącą przestrzeń lub czy konieczna jest zmiana oferty e-mail w celu zwiększenia przestrzeni dyskowej.
+Jeśli zamówiłeś [jedną z naszych ofert e-mail OVHcloud](https://www.ovhcloud.com/pl/emails/) i jedno z Twoich kont e-mail jest zapełnione, zapoznaj się z naszym przewodnikiem "[Zarządzanie przestrzenią dyskową konta e-mail](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota)". Przewodnik ten pomoże Ci określić, czy możesz zoptymalizować istniejącą przestrzeń lub czy konieczna jest zmiana oferty e-mail w celu zwiększenia przestrzeni dyskowej.
 
 ### Czy e-maile działają w interfejsie Webmail? (**wysyłka** i/lub **odbiór**)
 
 Aby upewnić się, że problem nie jest związany z błędem konfiguracji, przeprowadź test wysyłki i odbioru bezpośrednio przez interfejs webmail OVHcloud. Jeśli wszystko działa poprawnie, sprawdź konfigurację oprogramowania w dostępnych przewodnikach.
 
-Przejdź na adres z poziomu przeglądarki internetowej lub smartfona [Webmail](/links/web/email).
+Przejdź na adres z poziomu przeglądarki internetowej lub smartfona <https://www.ovh.pl/mail/>.
 
 ![webmail](images/webmail.png){.thumbnail}
 
 ### Nie mogę się zalogować do interfejsu Webmail 
 
-Upewnij się, że posiadasz właściwe hasło. W razie potrzeby możesz go zmienić. Sprawdź również, czy weryfikacja dwuetapowa jest aktywna ([tylko Exchange](/links/web/emails-hosted-exchange)).
+Upewnij się, że posiadasz właściwe hasło. W razie potrzeby możesz go zmienić. Sprawdź również, czy weryfikacja dwuetapowa jest aktywna ([tylko Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/)).
 
 W jaki sposób zmienić hasło do konta e-mail:
 
@@ -113,7 +113,7 @@ Poniżej znajdziesz większość ujemnych kodów odpowiedzi SMTP używanych prze
 |421|Usługa niedostępna, kanał transmisji w trakcie zamykania|Upewnij się, czy wysyłka wiadomości do innej domeny działa w wyniku błędu nieokreślonego. Jeśli tak, spróbuj ponownie później wysłać wiadomość|
 |432|Otrzymanie wiadomości e-mail na zatrzymanym serwerze Exchange|Ten komunikat błędu jest zwracany tylko przez serwery pocztowe Microsoft Exchange. Skontaktuj się z administratorem docelowego serwera poczty elektronicznej|
 |449|Błąd routingu|Ten komunikat błędu jest zwracany tylko przez serwery pocztowe Microsoft Exchange. Microsoft zaleca przeprowadzenie diagnostyki z ich narzędzie WinRoute|
-|450|Nie wykonano operacji poczty elektronicznej: niedostępna skrzynka e-mail (np. okupowana lub czasowo zablokowana skrzynka e-mail ze względów bezpieczeństwa lub lista czarna)|Sprawdź, czy Twój adres IP na serwerze poczty elektronicznej nie jest wyświetlany czarno ([SpamHaus](https://check.spamhaus.org/)) i sprawdź, czy Twój e-mail nie zawiera słów odnoszących się do SPAM.|
+|450|Nie wykonano operacji poczty elektronicznej: niedostępna skrzynka e-mail (np. okupowana lub czasowo zablokowana skrzynka e-mail ze względów bezpieczeństwa lub lista czarna)|Sprawdź, czy Twój adres IP na serwerze poczty elektronicznej nie jest wyświetlany czarno ([SpamHaus](https://check.spamhaus.org/){.external}) i sprawdź, czy Twój e-mail nie zawiera słów odnoszących się do SPAM.|
 |451|Zrezygnowałeś z działania: Błąd podczas przetwarzania lokalnego|Może to być spowodowane chwilowym przeciążeniem lub weryfikacją SPF nieprawidłowej domeny nadającej. Skontaktuj się z administratorem serwera, jeśli taka wiadomość zostanie utrzymana|
 |452|Operacja nie została wykonana: niewystarczający system przechowywania danych|Twój serwer poczty elektronicznej jest "przeciążony". Może to być również spowodowane zbyt dużą liczbę wiadomości, które próbują być wysyłane jednocześnie. Prosimy o sprawdzenie skrzynki pocztowej i spróbuj ponownie|
 |455|Serwer, który nie może otrzymać parametrów|Odczekaj chwilę i spróbuj ponownie. W przypadku awarii, skontaktuj się z administratorem serwera poczty elektronicznej odbiorcy|
@@ -129,7 +129,7 @@ Poniżej znajdziesz większość ujemnych kodów odpowiedzi SMTP używanych prze
 |551|Użytkownik nielokalny|Jest to powszechnie stosowane jako strategia zapobiegania spamowi. Wiadomo, że przekazywanie poczty nie jest dozwolone z jakiegokolwiek powodu, aby przekazać wiadomość do innego serwera niż twój. Skontaktuj się z dostawcą usług|
 |552|Polecenie połączenia zostało przerwane: przekroczona przestrzeń dyskowa|Użytkownik, z którym próbowałeś się skontaktować, nie ma już dostępnej przestrzeni na otrzymywanie wiadomości. Niestety, jedynym rozwiązaniem jest kontakt z odbiorcą za pomocą innej metody|
 |553|Operacja nie została wykonana: nieautoryzowany adres e-mail|Jest to zazwyczaj spowodowane przez nieprawidłowy adres e-mail docelowy. Sprawdź, czy dany adres e-mail jest poprawny|
-|554|Transakcja nie powiodła się, "Brak usług SMTP tutaj"|To zazwyczaj problem czarnej plamki. Sprawdź, czy Twój adres IP serwera poczty elektronicznej nie jest czarna ([SpamHaus](https://check.spamhaus.org/))|
+|554|Transakcja nie powiodła się, "Brak usług SMTP tutaj"|To zazwyczaj problem czarnej plamki. Sprawdź, czy Twój adres IP serwera poczty elektronicznej nie jest czarna ([SpamHaus](https://check.spamhaus.org/){.external})|
 |555|MAIL FROM / RCPT TO, ustawienia nie rozpoznane lub nie zostały wdrożone|Wychodzący serwer SMTP nie rejestruje poprawnie adresu e-mail używanego w ustawieniach "De" lub "A". Sprawdź, czy podane adresy e-mail są poprawne i sprawdź, czy nie przekroczyłeś limitu określonego przez OVHcloud: 200 e-maili /godzina /konto i 300 e-maili /godzina /ip|
 
 ## Sprawdź również

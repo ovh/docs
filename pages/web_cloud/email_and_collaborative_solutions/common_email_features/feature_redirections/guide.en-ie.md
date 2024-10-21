@@ -79,7 +79,7 @@ Click on the tabs below for an illustrated explanation of how aliases and redire
 >
 
 >
-> Depending on the date your MX Plan solution was activated and if it was recently migrated, you may have the legacy version or the new version of the solution. Before you proceed, you will need to identify it.<br>
+> Depending on the date your MX Plan solution was activated and if it was recently [migrated](https://www.ovhcloud.com/en-ie/web-hosting/mxplan-migration/), you may have the legacy version or the new version of the solution. Before you proceed, you will need to identify it.<br>
 >
 > To do this, log in to your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section and click on `Emails`{.action}. Choose the name of the relevant MX Plan service. Identify your solution according to the following table:<br>
 >

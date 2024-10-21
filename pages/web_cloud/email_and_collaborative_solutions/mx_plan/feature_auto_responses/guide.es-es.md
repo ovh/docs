@@ -1,5 +1,5 @@
 ---
-title: 'MX Plan - Crear una respuesta automática en una dirección de correo electrónico'
+title: 'MXplan - Crear una respuesta automática en una dirección de correo electrónico'
 excerpt: 'Cómo configurar una respuesta automática en una dirección de correo electrónico'
 updated: 2024-05-24
 ---
@@ -23,7 +23,7 @@ Si está ausente y no puede consultar su dirección de correo, puede implementar
 
 > [!primary]
 >
-> Si su dirección de correo electrónico está en un servicio [**Exchange**](/links/web/emails-hosted-exchange), [**Email Pro**](/links/web/email-pro) o si no hay una sección `Gestión de los contestadores`{.action} en su MX Plan, deberá crear una respuesta automática desde su webmail con ayuda de la documentación ["Configurar una respuesta automática desde la interfaz OWA"](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_automatic_replies).
+> Si su dirección de correo electrónico está en un servicio [**Exchange**](/links/web/emails-hosted-exchange), [**Email Pro**](/links/web/email-pro) o si no hay una sección `Gestión de los contestadores`{.action} en su MXplan, deberá crear una respuesta automática desde su webmail con ayuda de la documentación ["Configurar una respuesta automática desde la interfaz OWA"](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_automatic_replies).
 
 ### Creación de una respuesta automática
 

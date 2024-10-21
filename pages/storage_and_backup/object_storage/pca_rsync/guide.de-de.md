@@ -23,7 +23,7 @@ Vorkompilierte Binärdateien sind für die meisten Betriebssystemdistributionen 
 
 ### OpenStack ID
 
-Mithilfe dieser [Anleitung](/pages/public_cloud/compute/create_and_delete_a_user) können Sie Ihre OpenStack-Kennung und Ihr Passwort erstellen.
+Mithilfe dieser [Anleitung](/pages/public_cloud/compute/introducing_horizon) können Sie Ihre OpenStack-Kennung und Ihr Passwort erstellen.
 
 ### TenantName
 

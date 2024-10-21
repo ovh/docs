@@ -1,7 +1,7 @@
 ---
 title: "Crear una base de datos en un alojamiento web"
 excerpt: "Descubra cómo crear una base de datos en un alojamiento web de OVHcloud"
-updated: 2024-09-05
+updated: 2024-05-17
 ---
 
 > [!primary]
@@ -57,13 +57,8 @@ En la nueva ventana, seleccione la siguiente información:
 |Información|Descripción|  
 |---|---|
 |**Seleccione el tipo de base de datos**|Elija el tamaño de la base de datos. Este tamaño se refiere al espacio de almacenamiento de datos de la base de datos.|
-|**Seleccione el motor de la base de datos que quiere añadir**|Elija el motor que desea que utilice la base de datos. Actualmente, las bases de datos incluidas en su [plan de hosting de OVHcloud](/links/web/hosting) solo están disponibles con el motor MySQL.|
+|**Seleccione el motor de la base de datos que quiere añadir**|Elija el motor que desea que utilice la base de datos. Las bases de datos incluidas en su [plan de hosting de OVHcloud](/links/web/hosting) solo están disponibles con el motor MySQL.|
 |**Seleccione la versión de la base de datos que quiere añadir**|Elija la versión que utiliza el motor de la base de datos. Asegúrese de que su sitio web es compatible con la versión que ha elegido.|
-
-> [!primary]
->
-> La actualización de la versión del motor de una base de datos ya creada no está disponible en este momento.
->
 
 A continuación, haga clic en `Siguiente`{.action}.
 

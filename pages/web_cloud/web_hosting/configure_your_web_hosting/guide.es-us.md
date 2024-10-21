@@ -1,5 +1,5 @@
 ---
-title: "Web hosting - Entorno, versión PHP, .ovhconfig"
+title: "Web hosting : entorno, versión PHP, .ovhconfig"
 excerpt: "Descubra cómo cambiar el entorno de ejecución, la versión PHP, el firewall de aplicaciones, el motor, el modo y el .ovhconfig de un alojamiento web"
 updated: 2024-07-16
 ---
@@ -44,7 +44,7 @@ En resumen, modificar la configuración de un alojamiento web desde el [área de
 
 **Descubra cómo modificar el entorno de ejecución, la versión PHP, el firewall de aplicaciones, el motor, el modo y el archivo ".ovhconfig" de un alojamiento web.**
 
-<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/X31MNMLw064" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/X31MNMLw064" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Requisitos
 
@@ -97,7 +97,7 @@ Algunas versiones de PHP solo funcionan en determinados entornos de ejecución. 
 |---|---|
 |5.4, 5.5, 5.6 y 7.0|Legacy, Stable|
 |7.1, 7.2 y 7.3|Stable|
-|7.4, 8.0, 8.1,8.2 y 8.3|stable64|
+|7.4, 8.0, 8.1 y 8.2|stable64|
 
 > [!primary]
 >

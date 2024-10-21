@@ -16,7 +16,7 @@ The default Apache log line looks like this:
 
 This line already gives a lot of information but it can be difficult to extract really useful data from plain text logs. You might know that there is already lot of ways to export your Apache logs: logstash, beats, graylog-collector, syslog-ng, rsyslog, gelf apache module. But as we still have a lot to explore in the Logs Data Platform, let's start with something simple.
 
-This guide will present you with three non-intrusive ways to send logs to the Logs Data platform:
+This guide will present you with two non-intrusive ways to send logs to the Logs Data platform:
 
 - ask Apache to pipe log entries directly to the platform.
 - use [syslog-ng](https://syslog-ng.org/){.external} to parse and send all of your logs
@@ -36,7 +36,7 @@ In order to follow this guide you will need:
 
 > [!warning]
 >
-> The following procedure has the advantage of a quick setup but
+> The following procedure has the advantage to be set up very quickly but
 > is NOT recommended at all in production as it can block the Apache
 > process in the case of heavy traffic.
 > In production, please use a non-blocking solution like the second solution in this guide, or this one:
@@ -82,7 +82,7 @@ If you want to only send logs from a specific VirtualHost, or send specific info
 </VirtualHost>
 ```
 
-This is what you see on Graylog when you send your logs. The logs are already nicely parsed and you can immediately launch specific searches on them:
+This is what you see on Graylog when you send your logs. The logs are already nicely parsed and you can immediately launch specifics searches on them:
 
 ![apache Logs](images/apache-logs.png){.thumbnail}
 
@@ -140,11 +140,11 @@ The configuration is pretty similar to the one used in the first part of this do
  };
 ```
 
-To keep things brief, this extract has only the parts relevant to the access log file. [The syslog-ng tutorial](/pages/manage_and_operate/observability/logs_data_platform/ingestion_syslog_ng) covers the configuration for any syslog file (like the error log file). This configuration is only valid for syslog-ng 3.8+.
+To keep thing brief, this extract has only the parts relevant to the access log file. [The syslog-ng tutorial](/pages/manage_and_operate/observability/logs_data_platform/ingestion_syslog_ng) covers the configuration for any syslog file (like the error log file). This configuration is only valid for syslog-ng 3.8+.
 
 ### Apache logs format
 
-If you want to use your own log format and include some useful information here is a cheat sheet for you (Note that the labels follow [the field naming conventions](/pages/manage_and_operate/observability/logs_data_platform/getting_started_field_naming_convention)).
+If you want to use your own log format and include some useful information here is a cheat sheet for you (Note that the labels follows [the field naming conventions](/pages/manage_and_operate/observability/logs_data_platform/getting_started_field_naming_convention)).
 
 |Recommended Label|About|Format String of Apache mod_log_config|Format String of nginx log format|
 |---|---|---|---|

@@ -45,7 +45,7 @@ This header have inside the Ip of your client.
 ```
 
 ### X-Forwarded-Proto
-You can also get the scheme used by your client to reach OVH Load Balancer. This is helpful to redirect **HTTP** to **HTTPS**
+You can also get the scheme used by your client to reach OVH Load Balancer. This is helpfull to redirect **HTTP** to **HTTPS**
 
 #### Apache
 With htaccess, you can redirect your customers in HTTPS.

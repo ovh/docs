@@ -1,7 +1,7 @@
 ---
 title: "E-mail Pro - Configurer une adresse e-mail dans Gmail pour Android"
 excerpt: "Apprenez à configurer un compte E-mail Pro sur Android, via l'application Gmail"
-updated: 2024-10-09
+updated: 2024-03-15
 ---
 
 <style>
@@ -103,7 +103,7 @@ Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vou
 
 > [!success]
 >
-> OVHcloud propose une application web permettant d'accéder à votre adresse e-mail depuis un navigateur web, à l’adresse [Webmail](/links/web/email). Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail.
+> OVHcloud propose une application web permettant d'accéder à votre adresse e-mail depuis un navigateur web, à l’adresse <https://www.ovhcloud.com/fr/mail/>. Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail.
 
 ### Paramètres POP, IMAP et SMTP
 
@@ -167,11 +167,7 @@ Pour comprendre la différence entre l'utilisation du protocole POP et IMAP, nou
 
 ## Aller plus loin
 
-> [!primary]
->
-> Pour plus d'informations sur la configuration d'une adresse e-mail depuis l'application Gmail sur Android, consultez [le centre d'aide de Google](https://support.google.com/mail/answer/6078445?hl=fr-CA&co=GENIE.Platform%3DAndroid#zippy=%2Cajouter-un-compte).
-
-[MX Plan - Configurer une adresse e-mail dans Gmail pour Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android).
+[MXplan - Configurer une adresse e-mail dans Gmail pour Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android).
 
 [Exchange - Configurer une adresse e-mail dans Gmail pour Android](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_android).
 

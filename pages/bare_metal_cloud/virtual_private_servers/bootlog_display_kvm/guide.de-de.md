@@ -29,7 +29,7 @@ Wenn Ihr VPS nicht mehr antwortet, können Sie diesen in der Regel immer noch ü
 ## Voraussetzungen
 
 - Sie haben einen OVHcloud [VPS](https://www.ovhcloud.com/de/vps/) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
@@ -42,7 +42,7 @@ Wenn Sie noch regulär Zugriff auf Ihren VPS über SSH haben, können Sie zu [Sc
 
 ### Schritt 1: VPS im Rescue-Modus neu starten
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und starten Sie den Server im Rescue-Modus neu. Wenn nötig lesen Sie [unsere Anleitung zum Rescue-Modus](/pages/bare_metal_cloud/virtual_private_servers/rescue).
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und starten Sie den Server im Rescue-Modus neu. Wenn nötig lesen Sie [unsere Anleitung zum Rescue-Modus](/pages/bare_metal_cloud/virtual_private_servers/rescue).
 
 ### Schritt 2: Durchführung der ersten Überprüfung
 
@@ -165,7 +165,7 @@ Verwenden Sie anschließend folgenden Befehl, um die GRUB-Konfigurationsdatei zu
 ~$ grub2-mkconfig -o "$(readlink /etc/grub.cfg)"
 ```
 
-Wenn Sie die Änderungen vorgenommen haben, starten Sie Ihren VPS in Ihrem [OVHcloud Kundencenter](/links/manager) im 'normalen' Modus neu. Die Boot-Logs sollten nun bei Verwendung der [KVM-Konsole](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps) angezeigt werden.
+Wenn Sie die Änderungen vorgenommen haben, starten Sie Ihren VPS in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) im 'normalen' Modus neu. Die Boot-Logs sollten nun bei Verwendung der [KVM-Konsole](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps) angezeigt werden.
 
 ## Weiterführende Informationen
 

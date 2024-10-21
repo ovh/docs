@@ -21,11 +21,11 @@ Grâce à une interface graphique permettant l'automatisation des paramètres, l
 ## Prérequis
 
 - Disposer d'une offre [VPS](https://www.ovhcloud.com/fr/vps/){.external} avec une distribution [compatible](https://www.ovhcloud.com/fr/vps/os/).
-- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique
 
-Si vous disposez déjà d'un VPS et que vous souhaitez y installer cPanel, vous pouvez réinstaller le VPS à partir de votre [espace client OVHcloud](/links/manager) via un [OS compatible avec cPanel](https://www.ovhcloud.com/fr/vps/os/).
+Si vous disposez déjà d'un VPS et que vous souhaitez y installer cPanel, vous pouvez réinstaller le VPS à partir de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) via un [OS compatible avec cPanel](https://www.ovhcloud.com/fr/vps/os/).
 
 > [!warning]
 >

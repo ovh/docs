@@ -16,7 +16,7 @@ Su un sistema Windows, la ridondanza dei dati è assicurata dall'mirror del disc
 
 ## Prerequisiti
 
-- Un [server dedicato Windows](/links/bare-metal/bare-metal) con uno specchio software
+- Un [server dedicato Windows](https://www.ovhcloud.com/it/bare-metal/) con uno specchio software
 - Un accesso amministrativo al server tramite RDP
 
 ## Procedura

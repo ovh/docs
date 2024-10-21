@@ -1,7 +1,7 @@
 ---
 title: "Criar uma base de dados num alojamento web"
 excerpt: "Saiba como criar uma base de dados no seu alojamento web OVHcloud"
-updated: 2024-09-05
+updated: 2024-05-17
 ---
 
 > [!primary]
@@ -57,13 +57,8 @@ Na nova janela, selecione as seguintes informações:
 |Informação|Descrição|  
 |---|---| 
 |**Selecione o tipo de base de dados**|Selecione o tamanho da base de dados. Este tamanho refere-se ao espaço de que a sua base de dados dispõe para o armazenamento de dados.
-|**Selecione o motor da base de dados a adicionar**|Selecione o motor que pretende que a base de dados utilize. Atualmente, as bases de dados incluídas no seu [plano de alojamento web da OVHcloud](/links/web/hosting) só estão disponíveis com o motor MySQL.|
+|**Selecione o motor da base de dados a adicionar**|Selecione o motor que pretende que a base de dados utilize. As bases de dados incluídas no seu [plano de alojamento web da OVHcloud](/links/web/hosting) só estão disponíveis com o motor MySQL.|
 |**Selecione a versão da base de dados adicionar**|Selecione a versão utilizada pelo motor da base de dados. Certifique-se de que o seu website é compatível com a versão que escolheu.|
-
-> [!primary]
->
-> A atualização da versão do motor de uma base de dados já criada está atualmente indisponível.
->
 
 De seguida, clique em `Seguinte`{.action}.
 

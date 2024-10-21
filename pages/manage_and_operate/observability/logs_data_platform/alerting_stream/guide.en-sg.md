@@ -6,7 +6,7 @@ updated: 2022-07-28
 
 ## Objective
 
-Alerting is one of the most powerful features of the Logs Data Platform. It allows you to stop worrying about your logs and be prepared for a lot of situations: When you don't have any logs of a software for an unexpectedly long time, when the number of tasks completed is too low, when the traffic on your website is too high, or even when one specific keyword appears in any of your information feeds: all of these use cases can trigger an alert that will send you a message immediately.
+Alerting is one of the most powerful features of the Logs Data Platform. It allows you to stop worrying about your logs and be prepared for a lot of situations: When you don't have any logs of a software for an unexpected long time, when the number of tasks completed is too low, when the traffic on your website is too high, or even when one specific keyword appears in any of your information feeds: all of these use cases can trigger an alert that will send you a message immediately.
 
 This guide will help you to configure and use alerts on a particular field. We will provide an example with Apache logs.
 
@@ -20,7 +20,7 @@ In order to understand this guide you should read the following tutorials:
 
 ## Instructions
 
-### Why configure an alert on the Logs Data Platform?
+### Why configuring an alert on the Logs Data Platform ?
 
 The Logs Data Platform provides many ways to watch your logs in real time:
 
@@ -29,7 +29,7 @@ The Logs Data Platform provides many ways to watch your logs in real time:
 - The **Graylog dashboards** that refresh themselves in real-time.
 - Any software that can query the Graylog or ES APIs (OpenSearch Dashboards  or Grafana for example).
 
-The goal of the Alerting feature is to give you the freedom to not watch your logs. The Logs Data Platform can automatically inform you when something happens. There are 3 types of alerts:
+The goal of the Alerting feature is to give you the freedom to not watch your logs. The Logs Data Platform can automatically inform you when something happens. There are 3 types of alert:
 
 - **Counter alert**, like its name suggests, the counter alert can warn you when the number of logs is above or below a certain threshold.
 - **Numeric value alert** is triggered when a certain numeric field has an abnormal value. The value can be the mean value, the sum, the minimum, maximum, and even the standard deviation or the median.
@@ -45,7 +45,7 @@ For this tutorial, we will configure the 3 alerts that we can use for a website.
 
 #### Apache Server Configuration
 
-We will use the [Filebeat Apache format](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-module-apache.html#_virtual_host){.external} to send logs, this format allows the filebeat module to parse the relevant information. Here is a configuration file sample:
+We will use the [Filebeat Apache format](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-module-apache.html#_virtual_host){.external} to send logs, this format allow the filebeat module to parse the relevant informations. Here is a configuration file sample:
 
 ```ApacheConf
 <VirtualHost *:80>
@@ -175,7 +175,7 @@ As soon as the alert is fired you will receive a mail, detailing the alert condi
 
 ### Configuring an Field Aggregation alert condition
 
-A slow website is a poor experience for your users and can make you lose customers. There are many possible causes for a slowdown: too many connections, a misbehaving web application or an network problem. Fortunately, your Apache logs give you the response time of your server that you can use to trigger an alert when your website is too slow.
+A slow website is a poor experience for your users and can make you lose customers. There are many possible causes for a slowdown : too many connections, a misbehaving web application or an network problem. Fortunately, your Apache logs give you the response time of your server that you can use to trigger an alert when your website is too slow.
 
 To configure an alert based on your website's response time, Select the **Field aggregation** condition under the `Create an alert`{.action} drop box on the Alerting page. As with the Counter Alert, you have to fill the different fields to create your alert:
 

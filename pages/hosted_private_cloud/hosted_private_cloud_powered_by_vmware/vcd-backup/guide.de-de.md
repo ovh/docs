@@ -1,37 +1,22 @@
 ---
 title: "VMware Cloud Director - Backup with Veeam Data Platform (EN)"
 excerpt: "Find out how to perform backups and restores with Veeam Data Platform integration"
-updated: 2024-10-15
+updated: 2024-05-23
 ---
-
-<style>
-details>summary {
-    color:rgb(33, 153, 232) !important;
-    cursor: pointer;
-}
-details>summary::before {
-    content:'\25B6';
-    padding-right:1ch;
-}
-details[open]>summary::before {
-    content:'\25BC';
-}
-</style>
 
 ## Objective
 
-**This guide will show you how to back up and restore with the Veeam Plug-in for VMware vCloud Director managed on OVHcloud.**
+**This guide will show you how to back up and restore the Veeam Data Platform VCD plugin.**
 
 ## Requirements
 
-- An administrator vCloud Director account with a VCD Organization.
+- An administrator vCloud Director account with a VCD Organization
 - A user with the Organization Administrator role to connect to the Veeam Data Platform Self-Service Portal (the new admin user in a virtual datacentre has the default role).
 - You need to have read the VCD guides:
     - [VCD Basic concepts](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts)
     - [How to log in to your organization](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-logging)
     - [How to use the VCD user interface](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-getting-started)
-- You must be familiar with how Veeam Backup works. 
-- An understanding of the financial impact following the various load factors that apply when setting up this solution with VCD (see the [pricing grid for Veeam vCD on OVHcloud backups](/links/hosted-private-cloud/veeam-managed-backup).
+- You must be familiar with how Veeam Backup works
 
 ## Instructions
 
@@ -44,13 +29,13 @@ The Veeam Data Platform service is available and ready to use for all 3 OVHcloud
 > For the image processing and guest file system indexing options (compatible with the Veeam application) to work with Windows® virtual machines, the latest VMware tools must be installed. Linux VMs do not support application recognition or guest file system indexing.
 >
 > If you are using application-aware image processing for MS SQL or Oracle database backups, application-aware and item recovery options will not be supported. A full restore of the virtual machine must be performed, this implies a downtime window for all database users. You cannot manually restart an immutable backup failure. You must run an active full backup or wait for the next scheduled backup to run (see [Veeam documentation for more information](https://helpcenter.veeam.com/docs/backup/vsphere/vcloud_manage_backup.html?ver=120)).
->
 
-### Step 1 - Backup with Veeam Data Platform
+
+### Step 1 - Backup
+
+#### Access the Veeam Data Platform administration console
 
 The **Veeam Data Platform** service has a VCD plugin to back up VMs and vApps from any Virtual Data Center (VDC) in the organization. It is available at the organization level for any VMware Cloud Director user with the organization administrator role.
-
-/// details | Access the Veeam Data Platform administration console
 
 When using VCD Data Protection integration with Veeam to create backup jobs, you can choose any VM instance from any virtual datacentre in the organization.
 
@@ -64,52 +49,9 @@ The Veeam VCD Plugin window will open with a grey/black headband.
 
 ![VCD access to Veeam Backup](images/vcd_veeam_backup_repo_2.png){.thumbnail}
 
-#### Repository
+### Back up with Veeam Data Platform
 
-By default, you have the following repositories:
-
-- **Bronze Repository**: This repository is based on the [OVHcloud Object Storage Standard](/links/public-cloud/object-storage) class. We will be using a bucket closer to your VCD environment.
-- **Silver Repository**: This repository is based on the [OVHcloud Object Storage Standard](/links/public-cloud/object-storage) class. We will be using a Veeam SOBR (Scale-out Backup Repository) with performance tier buckets closer to your VCD environment, and a capacity tier from buckets in another OVHcloud region. We also use the Veeam SOBR copy mode to add the backups from the "performance extents" to the "capacity extents" as soon as they're created.
-- **Gold Repository**: This repository is based on the [OVHcloud Object Storage High performance](/links/public-cloud/object-storage) class. This repository includes the previous options + OVHcloud Object Storage "High performance".
-
-From the OVHcloud Control Panel, you can activate the `Gold Repository`.
-
-All these repositories have a storage quota of 100 TB. You can reach out to the [support teams](https://help.ovhcloud.com/csm?id=csm_get_help) to increase this quota.
-
-Here is an example of the primary and destination sites used for Veeam VCD copying of offsite backups (for the **Advanced/Premium** offers):
-
-![VCD Veeam 4 VCD Sites](images/vcd_veeam_zones.png){.thumbnail}
-
-- `Bronze Repository`: Roubaix (Europe)
-- `Silver Repository`: Roubaix -> Strasbourg (Europe)
-- `Gold Repository`: Roubaix -> Strasbourg (Europe)
-
-No offsite backup is performed for the default configuration of the **Bronze** repository configuration.
-
-The rest of the mapping for the backup zones is detailed here:
-
-|   Repository    |      Source       |    Destination     |
-|:---------------:|:-----------------:|:------------------:|
-|     Bronze      |   Roubaix (fr)    |        None        |
-|     Bronze      |   Limburg (de)    |        None        |
-|     Bronze      |    Warsaw (pl)    |        None        |
-|     Bronze      |    Erith (uk)     |        None        |
-|     Bronze      |  Strasbourg (fr)  |        None        |
-|     Bronze      | Beauharnois (ca)  |        None        |
-|     Silver      |   Roubaix (fr)    |  Strasbourg (fr)   |
-|     Silver      |   Limburg (de)    |  Strasbourg (fr)   |
-|     Silver      |    Warsaw (pl)    |    Limburg (de)    |
-|     Silver      |    Erith (uk)     |    Limburg (de)    |
-|     Silver      |  Strasbourg (fr)  |    Roubaix (fr)    |
-|     Silver      | Beauharnois (ca)  |   Cambridge (ca)   |
-|      Gold       |   Roubaix (fr)    |  Strasbourg (fr)   |
-|      Gold       |   Limburg (de)    |  Strasbourg (fr)   |
-|      Gold       |   Limburg (de)    |    Roubaix (fr)    |
-|      Gold       |    Erith (uk)     |    Limburg (de)    |
-|      Gold       |  Strasbourg (fr)  |    Roubaix (fr)    |
-|      Gold       | Beauharnois (ca)  | Cambridge/Tor (ca) |
-
-- **Data included in backups:**
+#### Data included in backups
 
 When Veeam Backup & Replication performs backups of vApp and VMs, it also captures vApp metadata.
 
@@ -125,7 +67,17 @@ The metadata for virtual applications (vApp) and VMs includes:
 
 The vApp/VM metadata is stored with the virtual machine content. Capturing vApp/VM metadata is important for recovery: without it, you will not be able to restore vApps and VMs to VMware Cloud Director.
 
-- **Backup jobs:**
+#### Repositories
+
+By default, you have the following **repositories**:
+
+1. **Bronze Repository**: Standard Object Storage.
+2. **Silver Repository**: Standard Object Storage + Offsite Backup.
+3. **Gold Repository**: High Performance Object Storage + Offsite Backup.
+
+These repositories have a storage size of **100GB**.
+
+#### Backup jobs
 
 Backup jobs require 4 default settings:
 
@@ -134,9 +86,11 @@ Backup jobs require 4 default settings:
 3. Guest Processing: Application-aware processing / Guest file system indexing / Guest operating system credentials
 4. Email notifications: Enabling email notifications
 
-For virtual machines managed by VMware Cloud Director, Veeam Backup & Replication offers a special type of backup job: VMware Cloud Director backup jobs. VMware Cloud Director backup jobs process VMware Cloud Director objects, ensure their proper recovery, and support Cloud Director specific features.
+For virtual machines managed by VMware Cloud Director, Veeam Backup & Replication offers a special type of backup job: VMware Cloud Director backup jobs. VMware Cloud Director backup jobs process VMware Cloud Director objects, ensure their proper recovery, and support for Cloud Director-specific functionality.
 
-- **How do I create a backup job with the Veeam Data Platform?**
+We recommend using the VMware Cloud Director backup jobs to back up the virtual machines managed by VMware Cloud Director. If you back up VMs managed by VMware Cloud Director using a regular backup job, Veeam Backup & Replication will perform a backup at the underlying vCenter server and will not capture the vApp metadata. As a result, you will not be able to restore a fully functional virtual machine on VMware Cloud Director.
+
+#### How do I create a backup job with the Veeam Data Platform?
 
 You are about to create your first backup job using the Veeam Data Platform VCD plugin:
 
@@ -187,9 +141,7 @@ If necessary, you can add monitoring options for your backup tasks. Finally, cli
 
 The backup job is listed.
 
-### VM backup
-
-**How do I back up a virtual machine with Veeam?**
+### How do I back up a virtual machine with Veeam?
 
 > [!primary]
 >
@@ -206,32 +158,36 @@ Choose a VM. Click `Actions`{.action}, then `Data Protection with Veeam`{.action
 
 ![VM Backup](images/vcd_veeam_backup_vm.png){.thumbnail}
 
-///
+### Step 2 - Restore
 
-### Step 2 - Restore with Veeam Data Platform
-
-/// details | How do I restore a VM?
+#### How do I restore a VM with the Veeam VCD plugin?
 
 Veeam Backup has several restore features:
 
+- File Level Restoration
+- Instant Recovery
 - Application Awareness
 - The strategy per VM (Policies)
+- The 3 repositories with storage class
+- Immutability (optional)
 
-**Data included in restores:**
+#### Data included in restores
 
 Veeam Backup & Replication enables full recovery of VMs to VMware Cloud Director. You can restore separate VMs to vApps, as well as VM data.
 
-Restore options include:
+For recovery, Veeam Backup & Replication uses VM metadata stored in a backup file and restores VM-specific attributes. As a result, you get a fully functional virtual machine in VMware Cloud Director, you do not need to import the restored virtual machine into VMware Cloud Director and adjust the settings manually.
 
+The backed-up objects can be restored to the same VMware Cloud Director hierarchy or to a different VMware Cloud Director environment. Restore options include:
+
+- Instant Recovery: **Instant Recovery**
 - Full restore for vApps and VMs: **Full restore for vApps and VMs**
 - Restoration of VM disks: **VM files**
 - Restoration of VM files: **VM disks**
+- Restoring guest OS files for VMs: **Item recovery**
 
 In this case, perform a **Full (full/full)** restore.
 
-#### Restoration of a VM
-
-**Full restoration of a VM (virtual machine):**
+#### Full restoration of a VM (virtual machine)
 
 With the OVHcloud Managed Backup service, you can restore standard VMs that are part of vApps, and standalone VMs that have been created in your OVHcloud VMware Cloud Director portal.
 
@@ -240,7 +196,7 @@ When you restore normal or standalone VMs in the vCloud Director hierarchy, the 
 - Veeam uses the captured vApp metadata to define the vApp settings and the original location of the virtual machine in the VMware Cloud Director hierarchy.
 - Veeam restores the VMs in the backup file to their original location or to another location. In addition, Veeam restores all VM settings.
 
-**How do I restore a VM using the Veeam Data Platform VCD plugin?**
+#### How do I restore a virtual machine using the Veeam Data Platform VCD plugin?
 
 To perform a full restore, click `Entire VM Restore`{.action}
 
@@ -258,14 +214,8 @@ In the final step, click `Finish`{.action}. If you wish, you can also launch the
 
 This process is simplified with VCD, Veeam and OVHcloud.
 
-**How do I restore a file using the Veeam Data Platform VCD plugin?**
-
-- **File level restore**: This option is not yet available.
-
-///
-
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

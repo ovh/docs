@@ -16,7 +16,7 @@ You can also use the OVHcloud Control Panel to manage your personal data, and de
 ## Requirements
 
 - an [OVHcloud account](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
-- access to the [OVHcloud Control Panel](/links/manager)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
 
 > [!primary]
 > If you experience any difficulties logging in to your account, please read the “[What do I do if I can't log in?](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure)” section of our guide on [Logging in to the OVHcloud Control Panel](/pages/account_and_service_management/account_information/ovhcloud-account-login).
@@ -62,7 +62,7 @@ Then, in the `My profile` box, click the `...`{.action} button, then `Edit my pr
 > [!warning]
 > As a reminder, it is **essential** that the backup email address is **different** from the account’s main email address.
 >
-> Avoid using email addresses linked to a domain name that you manage from your Control Panel. If your domain is blocked, you will no longer receive our notifications. If you are in this situation, follow [the procedures in this guide](/pages/account_and_service_management/account_information/ovhcloud-account-login#invalid-email).
+> Avoid using email addresses linked to a domain name that you manage from your Control Panel. If your domain is blocked, you will no longer receive our notifications.
 >
 
 #### Enabling two-factor authentication
@@ -78,7 +78,7 @@ You can find all the details to enable it in our guide on [Securing your OVHclou
 
 ### Changing your personal details
 
-You can change your account information via the Control Panel. To do this, click on your name in the top right-hand corner of the [OVHcloud Control Panel](/links/manager), then click on your initials.
+You can change your account information via the Control Panel. To do this, click on your name in the top right-hand corner of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), then click on your initials.
 
 ![NIC handle](images/newhub2.png){.thumbnail}
 
@@ -124,6 +124,7 @@ You can request for your NIC handle and all of the data associated with it to be
 To delete your NIC handle, you will need to meet the following conditions:
 >
 > - Your account must no longer contain any services.
+>
 > - Your account must not have any outstanding bills or unpaid orders.
 >
 
@@ -139,7 +140,7 @@ In this scenario, OVHcloud enables you to grant access to your account while pro
 
 A user can have read or write access to your account, or all of your services. You can create, manage and delete these users via the OVHcloud Control Panel. To find out more, please refer to our [guide on user management](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 
-### What to do in the event of identity theft?
+## What to do in the event of identity theft
 
 If you receive an email notifying you of an unknown connection to your OVHcloud account, we advise [changing your account password immediately](/pages/account_and_service_management/account_information/manage-ovh-password#change-your-password) and [securing it with two-factor authentication](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
 

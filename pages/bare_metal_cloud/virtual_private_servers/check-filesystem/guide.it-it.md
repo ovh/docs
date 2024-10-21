@@ -21,13 +21,13 @@ updated: 2023-09-20
 ## Prerequisiti
 
 - un [VPS](https://www.ovhcloud.com/it/vps/) nel tuo account OVHcloud
-- avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+- avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
 
 ### VPS GNU/Linux
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager) e avvia il riavvio del server in modalità Rescue. Se necessario, consulta la nostra [guida sulla modalità Rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue).
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e avvia il riavvio del server in modalità Rescue. Se necessario, consulta la nostra [guida sulla modalità Rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue).
 
 In seguito sarà possibile verificare la configurazione dei dischi:
 
@@ -93,7 +93,7 @@ fsck /dev/sdb1 -f
 
 Le istruzioni sopra riportate non si applicano generalmente a un VPS Windows, in quanto la verifica del file system non supporta NTFS. È possibile effettuare una verifica di coerenza NTFS sulle partizioni.
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager) e avvia il riavvio del server in modalità Rescue. Se necessario, consulta la nostra [guida sulla modalità Rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue).
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e avvia il riavvio del server in modalità Rescue. Se necessario, consulta la nostra [guida sulla modalità Rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue).
 
 In seguito sarà possibile verificare la configurazione dei dischi:
 

@@ -18,7 +18,7 @@ Se hai raggiunto la capacità massima del tuo disco aggiuntivo, aggiungi spazio 
 
 - Aver creato un’istanza [Public Cloud](https://www.ovhcloud.com/it/public-cloud/) nel tuo progetto Public Cloud.
 - Disporre di un [disco aggiuntivo](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) creato nel tuo progetto.
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 - Avere accesso amministrativo (sudo) alla tua istanza via SSH (Linux) o RDP (Windows).
 
 ## Procedura
@@ -27,7 +27,7 @@ Per gli step successivi, è necessario aver già configurato un disco aggiuntivo
 
 ### Modifica la dimensione del disco
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager) e apri il tuo progetto `Public Cloud`{.action}. Clicca su `Block Storage`{.action} nel menu a sinistra.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e apri il tuo progetto `Public Cloud`{.action}. Clicca su `Block Storage`{.action} nel menu a sinistra.
 
 Se il volume è associato a un'**istanza Windows**, clicca sul pulsante `...`{.action} a destra del volume corrispondente e seleziona `Scollega dall'istanza`{.action}.
 

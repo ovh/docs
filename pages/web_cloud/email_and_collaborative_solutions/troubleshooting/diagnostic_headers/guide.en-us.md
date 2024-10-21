@@ -41,7 +41,7 @@ To retrieve a `.eml` file, go to the [Webmail](#webmail) section below.
 
 ## Requirements
 
-- An email address using one of our [OVHcloud email solutions](/links/web/emails), or an external solution
+- An email address using one of our [OVHcloud email solutions](https://www.ovhcloud.com/en/emails/), or an external solution
 - Access to your email address via webmail or an email client
 
 ## Instructions
@@ -53,11 +53,11 @@ Below is a non-exhaustive list of the elements that can make up a header, along 
 
 - The `Received` field is present in the header each time the email is sent to an outgoing server (SMTP). The host name of the server is usually found with its IP address and a timestamp. The `Received` fields are sorted from the most recent pass to the oldest pass on a server:
 <pre class="bgwhite"><code>
-Received: from MX Plan7.mail.ovh.net (unknown [10.109.143.250])
+Received: from mxplan7.mail.ovh.net (unknown [10.109.143.250])
 	by mo3005.mail-out.ovh.net (Postfix) with ESMTPS id 448F4140309
 	for &lt;john@mydomain.ovh&gt; ;Wed, 30 Jun 2021 13:12:40 +0000 (UTC)
 </code></pre>
-  *Here the email was sent from server MX Plan7.mail.ovh.net to server mo3005.mail-out.ovh.net on 30 June 2021 at 13:12:40 (time zone UTC).*
+  *Here the email was sent from server mxplan7.mail.ovh.net to server mo3005.mail-out.ovh.net on 30 June 2021 at 13:12:40 (time zone UTC).*
 
 - The `Return-Path` field corresponds to the return address when the message failed to be sent. The return address is usually the one that sent the email.
 <pre class="bgwhite"><code>
@@ -143,7 +143,7 @@ To display the header, select the email you want and click on the **arrow** to t
 ![emails](images/owa01.png){.thumbnail}
 
 Also see our video tutorial:
-<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/UeNdpFwdXm0?start=36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UeNdpFwdXm0?start=36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ##### **Retrieving the .eml file**
 

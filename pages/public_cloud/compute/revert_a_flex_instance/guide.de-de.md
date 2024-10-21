@@ -18,7 +18,7 @@ Wenn sich Ihre Infrastruktur weiterentwickelt, müssen Sie unter Umständen den 
 
 ## Voraussetzungen
 
-- Sie haben eine [Public Cloud Instanz](/pages/public_cloud/compute/public-cloud-first-steps#configuration) mit der Flex-Option.
+- Sie haben eine [Public Cloud Instanz](/pages/public_cloud/compute/public-cloud-first-steps#schritt-3-instanz-erstellen) mit der Flex-Option.
 - Sie haben Zugriff auf das [Horizon Interface](/pages/public_cloud/compute/introducing_horizon).
 
 ## In der praktischen Anwendung

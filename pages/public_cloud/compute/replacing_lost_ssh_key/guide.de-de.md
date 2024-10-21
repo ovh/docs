@@ -32,7 +32,7 @@ Sie können sich jedoch weiterhin über den OVHcloud Rescue-Modus mit einem prov
 
 ### Schritt 1: Erstellen eines neuen Schlüsselpaars
 
-Erstellen Sie ein neues SSH-Schlüsselpaar auf Ihrem lokalen Gerät, wie im [ersten Abschnitt der Dokumentation zu SSH-Schlüsseln](/pages/public_cloud/compute/creating-ssh-keys-pci) beschrieben.
+Erstellen Sie ein neues SSH-Schlüsselpaar auf Ihrem lokalen Gerät, wie im [ersten Abschnitt der Dokumentation zu SSH-Schlüsseln](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated) beschrieben.
 
 ### Schritt 2: Auf Ihre Instanz im Rescue-Modus zugreifen
 

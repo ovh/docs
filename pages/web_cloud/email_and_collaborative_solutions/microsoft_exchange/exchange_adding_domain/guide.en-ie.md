@@ -12,16 +12,16 @@ To use the accounts included with an Exchange service, you will need to add a do
 
 ## Requirements
 
-- An [Exchange](/links/web/emails) or [Email Pro](/links/web/email-pro) solution
+- An [Exchange](https://www.ovhcloud.com/en-ie/emails/) or [Email Pro](https://www.ovhcloud.com/en-ie/emails/email-pro/) solution
 - One or more domain names
 - Administrative access to your domain name’s configuration (in order to [modify the DNS zone](/pages/web_cloud/domains/dns_zone_edit))
-- Access to the [OVHcloud Control Panel](/links/manager)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 ## Instructions
 
 ### Access your service management
 
-Once your Exchange or Email Pro service has been created and is available, you can manage it from your [OVHcloud Control Panel](/links/manager).
+Once your Exchange or Email Pro service has been created and is available, you can manage it from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
 
 In the `Web Cloud`{.action} section, open the appropriate service:
 
@@ -36,7 +36,7 @@ To add a domain name, click on the `Associated domains`{.action} tab. The table 
 
 > [!warning]
 >
-> All of the addresses created on your email service can view all of the addresses for this service in the directory, including those that have different domain names. To stop different domain names from being displayed this way, you will need to order a new [Exchange or Email Pro solution](/links/web/emails) for the domain name(s) concerned.
+> All of the addresses created on your email service can view all of the addresses for this service in the directory, including those that have different domain names. To stop different domain names from being displayed this way, you will need to order a new [Exchange or Email Pro solution](https://www.ovhcloud.com/en-ie/emails/) for the domain name(s) concerned.
 >
 
 ![Add Domain](images/add_domain_exchange_step1.png){.thumbnail}
@@ -106,11 +106,11 @@ Now that you have added the domain names to your service, you can configure your
 
 As a reminder, all of the addresses created on your service can view all of the addresses for this service in the directory, including those that have different domain names.
 
-Once you have finished configuring your accounts, you can now start using them. To do this, OVHcloud offers **webmail**, accessible via [Webmail](/links/web/email). I If you are using a third-party client with your email accounts, ensure that the software is compatible with the service. 
+Once you have finished configuring your accounts, you can now start using them. To do this, OVHcloud offers **webmail**, accessible via <https://www.ovhcloud.com/en-ie/mail/>. I If you are using a third-party client with your email accounts, ensure that the software is compatible with the service. 
 
 If you need help with configuring your email account on an email client or a device (e.g. a smartphone or tablet) or have questions about email service features, please refer to our documentation which you can access from the [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) and [Email Pro](/products/web-cloud-email-collaborative-solutions-email-pro) pages.
 
-You can purchase Outlook licences in the [OVHcloud Control Panel](/links/manager), and Office 365 licences on the following page: [Microsoft 365](/links/web/ms365).
+You can purchase Outlook licences in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), and Office 365 licences on the following page: <https://www.ovhcloud.com/en-ie/collaborative-tools/microsoft-365/>.
 
 We recommend using one of these solutions if you would like to use the Outlook email client, or other software from the Microsoft Office suite.
 
@@ -148,7 +148,7 @@ In the `Associated domains`{.action} tab for your platform, click on the `...`{.
 
 [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ie/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.

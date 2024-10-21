@@ -1,7 +1,7 @@
 ---
-title: "Exchange - Configurer son compte e-mail sur Mail pour iPhone et iPad"
+title: Configurer son compte Exchange sur un iPhone ou un iPad
 excerpt: Découvrez comment configurer un compte Exchange sur un iPhone ou un iPad, via l'application Mail
-updated: 2024-10-09
+updated: 2021-05-21
 ---
 
 ## Objectif
@@ -14,12 +14,12 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons ce guide à votre disposition afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+> Nous mettons ce guide à votre disposition afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 >
 
 ## Prérequis
 
-- Disposer d'un [compte e-mail Exchange](/links/web/emails-hosted-exchange).
+- Disposer d'un [compte e-mail Exchange](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/){.external}.
 - Disposer de l’application Mail installée sur votre appareil iOS.
 - Disposer des identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
 
@@ -31,7 +31,7 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 >
 > Dans notre exemple, nous utilisons la mention serveur : ex**?**.mail.ovh.ca. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service Exchange.
 >
-> Retrouvez ce chiffre dans votre [espace client OVHcloud](/links/manager), dans la rubrique `Web Cloud`{.action} puis `Microsoft`{.action}.
+> Retrouvez ce chiffre dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, dans la rubrique `Web Cloud`{.action} puis `Microsoft`{.action}.
 > Cliquez sur `Exchange`{.action}, puis sur la plateforme Exchange souhaitée. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
 >
 
@@ -56,7 +56,7 @@ Vous pouvez effectuer un test d'envoi pour vérifier que le compte est correctem
 
 Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
 
-OVHcloud propose également une application web disposant des [fonctions collaboratives Exchange](/links/web/emails-hosted-exchange) accessible à l’adresse [Webmail](/links/web/email). Vous pouvez vous y connecter grâce aux identifiants relatifs à votre adresse e-mail.
+OVHcloud propose également une application web disposant des [fonctions collaboratives Exchange](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/){.external} accessible à l’adresse <https://www.ovh.com/ca/fr/mail/>. Vous pouvez vous y connecter grâce aux identifiants relatifs à votre adresse e-mail.
 
 > [!primary]
 >
@@ -65,11 +65,7 @@ OVHcloud propose également une application web disposant des [fonctions collabo
 
 ## Aller plus loin
 
-> [!primary]
->
-> Pour plus d'informations sur la configuration d'une adresse e-mail depuis l'application Mail sur iOS, consultez [le centre d'aide Apple](https://support.apple.com/fr-fr/102619).
-
-[Configurer son adresse e-mail comprise dans l’offre MX Plan ou dans une offre d’hébergement web sur un iPhone ou un iPad](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_ios).
+[Configurer son adresse e-mail comprise dans l’offre MX Plan ou dans une offre d’hébergement web sur un iPhone ou un iPad](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_ios){.external}.
 
 [FAQ e-mails](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 

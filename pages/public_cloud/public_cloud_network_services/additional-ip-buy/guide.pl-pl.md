@@ -10,7 +10,7 @@ updated: 2023-01-04
 
 > [!primary]
 >
-> Od 6 października 2022 nasze rozwiązanie "Failover IP" nazywa się teraz [Additional IP](/links/network/additional-ip). To nie ma wpływu na jego funkcje.
+> Od 6 października 2022 nasze rozwiązanie "Failover IP" nazywa się teraz [Additional IP](https://www.ovhcloud.com/pl/network/additional-ip/). To nie ma wpływu na jego funkcje.
 >
 
 ## Wprowadzenie
@@ -29,7 +29,7 @@ Te adresy Additional IP można migrować tylko do instancji tego samego projektu
 ## Wymagania początkowe
 
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
-- Posiadanie co najmniej jednej instancji. W tym celu zapoznaj się z [przewodnikiem dotyczącym tworzenia instancji w Panelu klienta](/pages/public_cloud/compute/public-cloud-first-steps).
+- Posiadanie co najmniej jednej instancji. W tym celu zapoznaj się z [przewodnikiem dotyczącym tworzenia instancji w Panelu klienta](/pages/public_cloud/compute/public-cloud-first-steps#krok-3-tworzenie-instancji).
 
 > [!warning]
 > Ta funkcja nie jest aktualnie dostępna dla instancji Metal.

@@ -14,7 +14,7 @@ L'outil Open Source Terraform a été développé pour faciliter la création d'
 
 À titre d’exemple, la vidéo ci-dessous vous montre comment faire évoluer facilement le nombre d’instances, tout en conservant votre infrastructure existante, en ne modifiant qu’une seule ligne de code :
 
-<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/TFfKd24rzvE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TFfKd24rzvE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Découvrez comment utiliser Terraform sur le Public Cloud OVHcloud.**
 
@@ -242,7 +242,7 @@ openstack_compute_instance_v2.test_terraform_instance: Creation complete after 2
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 ```
 
-Connectez-vous maintenant à votre [espace client OVHcloud](/links/manager), cliquez sur ` Public Cloud`{.action} et cliquez sur `Instances`{.action}.
+Connectez-vous maintenant à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur ` Public Cloud`{.action} et cliquez sur `Instances`{.action}.
 Comme vous pouvez le voir, votre instance nommée "terraform_instance" est en train de se créer.
 
 > [!primary]
@@ -589,7 +589,7 @@ Néanmoins, deux conditions s’appliquent :
 - Avoir créé un projet Public Cloud au cours des 3 derniers mois.
 
 Si l'une de ces conditions n'est pas remplie, vous obtiendrez l'erreur suivante :  `Found eligibility issues: challengePaymentMethod`.<br>
-Dans ce cas, la seule solution est de vous connecter à votre [espace client OVHcloud](/links/manager) pour créer un projet.<br>
+Dans ce cas, la seule solution est de vous connecter à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) pour créer un projet.<br>
 Vous serez alors invité à valider que vous êtes bien le propriétaire des moyens de paiement utilisés sur ce compte (cette validation dépend des moyens de paiement et d'autres paramètres).
 
 Ces règles et ces actions supplémentaires ont été mises en place pour offrir une sécurité supplémentaire aux clients ayant pu divulguer leurs identifiants OVHcloud. Nous vous remercions donc de votre compréhension.<br>

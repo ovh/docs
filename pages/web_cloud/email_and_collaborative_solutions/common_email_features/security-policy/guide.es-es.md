@@ -12,8 +12,8 @@ El servicio de correo de OVHcloud permite disfrutar de direcciones de correo pro
 
 ## Requisitos
 
-- Tener un [plan de correo en OVHcloud](/links/web/emails).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager) y accedido a la sección `«Web»`{.action}.
+- Tener un [plan de correo en OVHcloud](https://www.ovh.com/es/emails/){.external}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y accedido a la sección `«Web»`{.action}.
 
 ## Procedimiento
 
@@ -21,10 +21,10 @@ En un servicio de correo, es posible configurar la política de seguridad para a
 
 - reforzar la seguridad de las cuentas de correo cuando los usuarios intentan conectarse;
 - aumentar la seguridad de las contraseñas de las cuentas del servicio de correo;
-- reforzar la comprobación de los mensajes entrantes en nuestros servidores destinados a sus direcciones de correo (solo para las cuentas [Exchange](/links/web/emails-hosted-exchange));
-- determinar cómo se mostrarán los mensajes no deseados en sus buzones de correo (solo para las cuentas [Exchange](/links/web/emails-hosted-exchange)).
+- reforzar la comprobación de los mensajes entrantes en nuestros servidores destinados a sus direcciones de correo (solo para las cuentas [Exchange](https://www.ovh.com/es/emails/hosted-exchange/){.external});
+- determinar cómo se mostrarán los mensajes no deseados en sus buzones de correo (solo para las cuentas [Exchange](https://www.ovh.com/es/emails/hosted-exchange/){.external}).
 
-Para acceder a la política de seguridad de su servicio de correo, conéctese al [área de cliente de OVHcloud](/links/manager), y diríjase a la sección `Web Cloud`{.action}. 
+Para acceder a la política de seguridad de su servicio de correo, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), y diríjase a la sección `Web Cloud`{.action}. 
 
 |Correo electrónico y Email Pro|Exchange| 
 |---|---| 

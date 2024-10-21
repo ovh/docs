@@ -13,7 +13,7 @@ Wenn Sie feststellen, dass eine Festplatte defekt ist, oder per E-Mail eine Syst
 > [!warning]
 >Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Denken Sie daran, diese Aktionen nötigenfalls an Ihre Situation anzupassen.
 >
-> Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister](/links/partner) oder stellen Sie Ihre Fragen in der [OVHcloud Community](https://community.ovh.com/en/). Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten.
+> Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) oder stellen Sie Ihre Fragen in der [OVHcloud Community](https://community.ovh.com/en/). Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten.
 >
 
 ## Voraussetzungen

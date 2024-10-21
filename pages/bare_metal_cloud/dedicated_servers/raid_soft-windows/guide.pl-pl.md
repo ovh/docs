@@ -16,7 +16,7 @@ W systemie Windows redundancja danych jest zapewniona przez mirrroring dysku gł
 
 ## Wymagania początkowe
 
-- Serwer [dedykowany Windows](/links/bare-metal/bare-metal) z oprogramowaniem lustrzanym
+- Serwer [dedykowany Windows](https://www.ovhcloud.com/pl/bare-metal/) z oprogramowaniem lustrzanym
 - Dostęp administracyjny do serwera przez RDP
 
 ## W praktyce

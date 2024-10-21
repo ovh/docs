@@ -1,7 +1,7 @@
 ---
-title: "MX Plan - Configurar um endereço de e-mail no Gmail para Android"
+title: "MXplan - Configurar um endereço de e-mail no Gmail para Android"
 excerpt: "Aprenda a configurar um endereço de e-mail MX Plan no Android através da aplicação Gmail"
-updated: 2024-10-01
+updated: 2023-12-15
 ---
 
 <style>
@@ -16,7 +16,7 @@ updated: 2024-10-01
 
 ## Objetivo
 
-Os endereços de e-mail do serviço MX Plan podem ser configurados em diferentes programas de e-mail compatíveis. Isto permite-lhe enviar e receber e-mails no dispositivo que preferir. Neste guia, vamos detalhar o processo de configuração de um endereço de e-mail MX Plan a partir da aplicação Gmail presente nos dispositivos Android.
+Os endereços de e-mail do serviço MX Plan podem ser configurados em diferentes programas de e-mail compatíveis. Isto permite-lhe enviar e receber e-mails no dispositivo que preferir. Neste guia, vamos detalhar o processo de configuração de um endereço de e-mail MXplan a partir da aplicação Gmail presente nos dispositivos Android.
 
 **Saiba como configurar um endereço de e-mail MX Plan no Android através da aplicação Gmail.**
 
@@ -24,11 +24,11 @@ Os endereços de e-mail do serviço MX Plan podem ser configurados em diferentes
 >
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 >
-> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](/links/partner) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção «Quer saber mais?» deste guia.
+> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção «Quer saber mais?» deste guia.
 
 ## Requisitos
 
-- Dispor de um endereço de e-mail MX Plan (incluído na oferta MX Plan ou numa oferta de [alojamento web da OVHcloud](/links/web/hosting)).
+- Dispor de um endereço de e-mail MX Plan (incluído na oferta MX Plan ou numa oferta de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/)).
 - Ter a aplicação Gmail no seu dispositivo. Se ainda não estiver presente, pode instalá-la a partir da Google Play Store.
 - Ter acesso às credenciais do endereço de e-mail que pretende configurar.
 
@@ -109,7 +109,7 @@ Após a configuração, a conta de e-mail está pronta a usar Pode desde já env
 
 > [!success]
 >
-> A OVHcloud disponibiliza uma aplicação web que pode utilizar para aceder ao seu e-mail diretamente a partir de um browser, no endereço [Webmail](/links/web/email). Para aceder, só precisa dos dados de acesso do seu endereço de e-mail.
+> A OVHcloud disponibiliza uma aplicação web que pode utilizar para aceder ao seu e-mail diretamente a partir de um browser, no endereço <https://www.ovhcloud.com/pt/mail/>. Para aceder, só precisa dos dados de acesso do seu endereço de e-mail.
 
 ### Parâmetros POP, IMAP e SMTP
 
@@ -172,10 +172,6 @@ Para compreender a diferença entre a utilização do protocolo POP e IMAP, vamo
 > Esta descrição é uma síntese, e representa o funcionamento padrão destes dois protocolos. É possível configurar o POP para que os e-mails não sejam eliminados quando recolhe os seus e-mails. O objetivo aqui é descrever o funcionamento nativo destes dois protocolos e evitar manipulações suplementares de forma a corresponder às suas necessidades.
 
 ## Quer saber mais?
-
-> [!primary]
->
-> Para mais informações sobre a configuração de um endereço de e-mail a partir da aplicação Gmail para Android, consulte [o Centro de Ajuda do Google](https://support.google.com/mail/answer/6078445?hl=pt-CA&co=GENIE.Platform%3DAndroid#zippy=%2Caddir-uma-conta).
 
 [Configurar a sua conta E-mail Pro no Android através da aplicação Gmail](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_android).
 

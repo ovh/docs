@@ -1,7 +1,7 @@
 ---
 title: 'Sistema di fatturazione dei servizi Cloud'
 excerpt: 'Come funziona il sistema di fatturazione dei servizi Public Cloud'
-updated: 2024-10-07
+updated: 2024-04-24
 ---
 
 ## Obiettivo
@@ -17,11 +17,8 @@ Questo sistema è molto simile a quello adottato da alcuni operatori telefonici,
 ## Prerequisiti
 
 * Aver già creato un progetto [Public Cloud](https://www.ovhcloud.com/it/public-cloud/) nel tuo account OVHcloud
-* [Disporre di un’istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps)
-* Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
-
-> [!success]
-> Approfittate dei prezzi ridotti impegnandovi per un periodo da 1 a 36 mesi sulle vostre risorse Public Cloud. Maggiori informazioni sulla nostra pagina [Savings Plans](/links/public-cloud/savings-plan).
+* [Disporre di un’istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#step-3-crea-unistanza)
+* Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Come funziona
 

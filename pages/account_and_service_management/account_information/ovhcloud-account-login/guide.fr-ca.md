@@ -17,7 +17,7 @@ La gestion de vos services s'effectue principalement via l'espace client OVHclou
 
 ## En pratique
 
-<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/odO58c4gJfc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/odO58c4gJfc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Se connecter à l'espace client OVHcloud
 
@@ -35,7 +35,7 @@ La suite de ce guide vous donne des méthodes pour résoudre les cas fréquents 
 
 En cas de perte ou d'oubli de votre mot de passe, consultez [ce guide détaillant la marche à suivre pour le modifier](/pages/account_and_service_management/account_information/manage-ovh-password#si-vous-ne-connaissez-plus-votre-mot-de-passe-actuel).
 
-### J'ai perdu mon mot de passe et mon adresse e-mail principale n'est plus valide <a name="invalid-email"></a>
+### J'ai perdu mon mot de passe et mon adresse e-mail principale n'est plus valide
 
 Dans ce cas de figure, la procédure de réinitialisation du mot de passe ne peut être effectuée depuis la page de connexion.
 

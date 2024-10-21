@@ -13,7 +13,7 @@ Une instance *flex* est une instance à disque unique (50 Go) offrant un process
 
 ## Prérequis
 
-- Posséder une [instance Public Cloud OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps#configuration) de type *flex*.
+- Posséder une [instance Public Cloud OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps#etape-3-creer-une-instance) de type *flex*.
 - [Créer un accès à l'interface Horizon](/pages/public_cloud/compute/introducing_horizon)
 
 ## En pratique
@@ -66,4 +66,4 @@ Vous pouvez également [modifier la configuration de l'instance](/pages/public_c
 
 ## Aller plus loin
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

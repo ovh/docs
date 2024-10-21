@@ -1,7 +1,7 @@
 ---
-title: "Jak skonfigurować rewers DNS Twojego serwera (rekord PTR)"
-excerpt: Dowiedz się, jak skonfigurować rewers DNS dla adresu IP z poziomu Panelu klienta OVHcloud
-updated: 2024-09-24
+title: "Konfiguracja rewersu DNS na serwerze VPS"
+excerpt: Dowiedz się, jak wdrożyć rewers DNS
+updated: 2024-06-10
 ---
 
 > [!primary]
@@ -10,58 +10,43 @@ updated: 2024-09-24
 
 ## Wprowadzenie
 
-Rewers DNS (*rDNS*) jest uzupełnieniem rozpoznawania DNS "*forward*", który pozwala na rozpoznawanie nazw domen na adresy IP. Dzięki rewersowi DNS adres IP może zostać rozpoznany jako domena (lub nazwa hosta), z którą jest powiązany. Oznacza to, że zapytania DNS skojarzonego adresu IP zwrócą tę domenę.
+**Rewers DNS** (*rDNS*) to uzupełnienie konfiguracji "klasycznej" serwerów DNS, która pozwala na konwersję domeny na adres IP (rekord typu **A**). Dzięki tego typu zapytaniu, adres IP może zostać usunięty w nazwie domeny (rejestracja typu **PTR**). Oznacza to, że zapytania DNS na danym adresie IP będą miały nazwę domeny.
 
-Konfiguracja rewersu DNS serwera jest szczególnie użyteczna podczas wysyłania e-maili. Weryfikacja serwera e-mail przez systemy ochrony antyspamowej będzie lepsza, jeśli zapytanie DNS adresu IP zostanie poprawnie rozwiązane.
+Konfiguracja **rewersu DNS** VPS jest szczególnie przydatna przy wysyłaniu e-maili. Ryzyko odrzucenia wiadomości przez system ochrony przed spamem zostanie zmniejszone, jeśli adres IP Twojego serwera poczty wychodzącej zostanie poprawnie rozwiązany w Twojej domenie.
 
-**Niniejszy przewodnik wyjaśnia, jak skonfigurować rewers DNS Twojego adresu IP w Panelu klienta OVHcloud.**
+**Dowiedz się, jak skonfigurować rewers DNS dla adresu lub adresów IP VPS.**
 
 ## Wymagania początkowe
 
-- Adres IP przypisany do usługi Twojego konta OVHcloud
-- Domena z jej rejestracją `A` powiązana z Twoją usługą
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
+- Posiadanie serwera [VPS](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud
+- Nazwa domeny z polem `A` wskazującym na VPS
+- Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 ## W praktyce
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Bare Metal Cloud`{.action} i otwórz `Network`{.action}. Następnie kliknij przycisk `IP`{.action}.
+Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Bare Metal Cloud`{.action} i otwórz `Network`{.action}. Następnie kliknij przycisk `IP`{.action}.
 
-Menu rozwijane w sekcji **Moje publiczne adresy IP i usługi powiązane** umożliwiają filtrowanie elementów tabeli dla usług i szybkie znajdowanie wybranego adresu IP.
+W rozwijanym menu **Moje publiczne adresy IP i usługi powiązane** możesz podzielić Twoje usługi na kategorie.
 
-![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/filterip.png){.thumbnail}
+![Reverse IP](images/filteripvps.png){.thumbnail}
 
-Kliknij `...`{.action} w linii danego adresu IP i wybierz `Zmień rewers`{.action}.
+Kliknij `...`{.action} w linii odpowiedniego adresu IP i wybierz `Zmień rewers`{.action}.
 
-![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/modifyreverse.png){.thumbnail}
+![Rewers DNS](images/modifyreverse.png){.thumbnail}
 
-W nowym oknie wpisz rewers i kliknij na `Zatwierdź`{.action}.
+W nowym oknie wprowadź rewers i kliknij `Zatwierdź`{.action}.
 
-![Reverse DNS](/pages/assets/screens/control_panel/product-selection/bare-metal-cloud/network/enterreverse.png){.thumbnail}
+![Rewers DNS](images/enterreverse.png){.thumbnail}
 
-Możesz również edytować rewers bezpośrednio za pomocą ikony pióra w kolumnie **Rewers DNS** tabeli.
-
-> [!warning]
-> Po wpisaniu domeny do rewers sprawdzi on natychmiast, czy rekordu A odnosi się do tego samego IP. Jest to używane w procedurach antyspamowych, więc rekordu A musi być ważne i propagowane. Podczas wprowadzania rewers obowiązują następujące zasady:
->
->  - rewers nie może się rozpocząć od `-`
->  - rewers nie może zawierać więcej niż 80 znaków
->  - rewers nie może zawierać wielkich liter
->  - rewers musi się kończyć znakiem `.`
->
-> Przykład: "MyDomain.ca" w polu rewers byłoby **mydomain.ca.**
->
+Rewers możesz również edytować bezpośrednio na ikonie kolumny **Reverse** tabeli.
 
 > [!primary]
 >
-> Jeśli modyfikacja nie działa zgodnie z oczekiwaniami, sprawdź, czy rekord `A` jest poprawnie skonfigurowany w strefie DNS Twojej domeny. Wprowadzenie zmian w strefie DNS może potrwać do 24 godzin, w przypadku gdy właśnie zmieniłeś rekord `A`.
->
-> Jeśli domena jest zarządzana przez OVHcloud jako operator **i korzysta z serwerów DNS OVHcloud**, zapoznaj się z [tym przewodnikiem](/pages/web_cloud/domains/dns_zone_edit).
+Jeśli modyfikacja nie działa zgodnie z oczekiwaniami, sprawdź, czy pole `A` jest poprawnie skonfigurowane w strefie DNS Twojej domeny. Uwaga, modyfikacja [strefy DNS](/pages/web_cloud/domains/dns_zone_edit) może trwać do 24 godzin, jeśli ostatnio zmieniłeś pole `A`.
 >
 
-## Sprawdź również
+## Sprawdź również <a name="gofurther"></a>
 
-[Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
-
-[Zmień serwery DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_edit)
+[Pierwsze kroki z serwerem VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
 
 Dołącz do [grona naszych użytkowników](/links/community).

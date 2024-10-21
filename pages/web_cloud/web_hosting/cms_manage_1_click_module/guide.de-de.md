@@ -1,7 +1,7 @@
 ---
 title: "1-Klick-Module verwalten"
 excerpt: "Erfahren Sie hier, wie Sie Ihr 1-Klick-Modul über Ihr OVHcloud Kundencenter verwalten"
-updated: 2024-10-11
+updated: 2022-09-05
 ---
 
 > [!primary]
@@ -53,9 +53,43 @@ Sie können auch die bei der Erstellung Ihres Moduls erhaltene E-Mail über Ihr 
 
 ### Passwort Ihres Moduls ändern <a name="password-change"></a>
 
+Sie können das Passwort Ihres Moduls über Ihr [OVHcloud Kundencenter](/links/manager) ändern oder direkt auf die Login-Seite Ihrer Website zum Administrator-Bereich gehen.
+
+In beiden Fällen wird Ihnen eine E-Mail zum Zurücksetzen des Passworts zugesandt.
+
 > [!primary]
 >
-> Finden Sie die offizielle Dokumentation zu den von unseren Webhostings unterstützten CMS:
+> **Was tun, wenn Sie die E-Mail zum Zurücksetzen des Administratorpassworts Ihrer Website nicht erhalten haben?**
+>
+> Überprüfen Sie in der betreffenden Mailbox die Ordner für `Spam`{.action} und `Gelöschte Elemente`{.action}.
+>
+> Sie finden auch alle von unseren Diensten versendeten E-Mails über Ihr [OVHcloud Kundencenter](/links/manager): Klicken Sie oben rechts auf Ihren Namen und dann im Kontextmenü auf `E-Mails vom Support`{.action}.
+>
+> **Laufzeit der Links:**
+>
+> - Nachdem Sie die E-Mail zur Passwortänderung erhalten haben, bleibt der Zurücksetzlink 48 Stunden lang gültig. 
+> - Nach Klick auf den Link ist er noch 30 Minuten gültig.
+>
+
+> [!warning]
+>
+> Die Änderung des Passworts für den Zugang zum Verwaltungsinterface Ihres CMS über das OVHcloud Kundencenter kann nur durchgeführt werden **wenn folgende Bedingungen erfüllt sind**:
+>
+> - Das CMS wurde mit der Option "1-Klick-Modul" bei der Bestellung Ihres Hostings oder über das OVHcloud Kundencenter installiert.
+> - Der Benutzer (Benutzername, E-Mail-Adresse, usw.) wurde nicht über das CMS oder die Datenbank geändert.
+> - Die Zugriffsseite zum Verwaltungsinterface Ihres CMS wurde nicht geändert. Insbesondere darf die URL für den Zugang zum Verwaltungsinterface Ihres CMS nicht über das CMS geändert worden sein. Auf dieser Seite dürfen keine Zugangsbeschränkungen liegen.
+> - Das "Präfix" der Tabellen in Ihrer Datenbank wurde weder über das CMS noch direkt über die Datenbank geändert.
+>
+> Ist das nicht der Fall, folgen Sie der offiziellen Dokumentation des verwendeten CMS oder kontaktieren Sie direkt den Herausgeber des CMS.
+>
+
+Um das Passwort für den Zugang zum Verwaltungsinterface Ihrer Website zu ändern, gehen Sie im [OVHcloud Kundencenter](/links/manager) zu `Web Cloud`{.action}. Klicken Sie auf `Hosting-Pakete`{.action} und auf das betreffende Hosting und dann auf den Tab `1-Klick-Module`{.action}.
+
+Klicken Sie dann auf den Button `...`{.action} rechts in der Zeile für Ihr Modul und dann auf `Passwort ändern`{.action}. Klicken Sie auf `Bestätigen`{.action}. Sie erhalten in einigen Minuten per E-Mail einen Link um Ihr Passwort zurückzusetzen.
+
+> [!primary]
+>
+> Wenn Sie Ihr Passwort für den Zugang zum Verwaltungsinterface Ihres CMS aus den oben genannten Gründen nicht über das OVHcloud Kundencenter ändern können, finden Sie die offizielle Dokumentation zu den von unseren Webhostings unterstützten CMS:
 >
 > - WordPress: <https://wordpress.org/support/article/resetting-your-password/>
 > - Joomla!: <https://docs.joomla.org/How_do_you_recover_or_reset_your_admin_password%3F>

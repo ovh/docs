@@ -1,15 +1,8 @@
 ---
 title: Connessione in SFTP
 excerpt: Come accedere al servizio Private Cloud in SFTP
-updated: 2024-09-17
+updated: 2021-12-28
 ---
-
-> [!warning]
->
-> **Questa procedura è obsoleta (*deprecated*)**.
->
-> Per caricare file nei datastore, utilizza il metodo descritto in questa guida: [Uploading files to the VMware vSphere on OVHcloud datastore](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_datastore_upload) (EN).
->
 
 ## Obiettivo
 

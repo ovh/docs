@@ -20,7 +20,7 @@ With the cloud-init module, you can configure your [Public Cloud instance](https
 ## Requirements
 
 - An [OVHcloud Public Cloud instance](https://www.ovhcloud.com/en-ie/public-cloud/){.external}
-- [SSH access](/pages/public_cloud/compute/public-cloud-first-steps) (sudo) to the instance
+- [SSH access](/pages/public_cloud/compute/public-cloud-first-steps#step-4-connecting-to-your-instance) (sudo) to the instance
 
 ## Instructions
 
@@ -74,4 +74,4 @@ sudo cat /etc/hosts
 
 ## Go further
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

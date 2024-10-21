@@ -1,7 +1,7 @@
 ---
-title: "MX Plan - Configurar una dirección de correo electrónico en Gmail para Android"
+title: "MXplan - Configurar una dirección de correo electrónico en Gmail para Android"
 excerpt: "Cómo configurar una cuenta MX Plan en Android utilizando la aplicación Gmail"
-updated: 2024-10-01
+updated: 2023-12-15
 ---
 
 <style>
@@ -16,7 +16,7 @@ updated: 2024-10-01
 
 ## Objetivo
 
-Es posible configurar sus cuentas MX Plan en el cliente de correo que usted utilice, siempre que sea compatible, para enviar y recibir mensajes desde su dispositivo sin necesidad de una nueva aplicación. Esta guía explica cómo configurar una cuenta MX Plan desde la aplicación Gmail de los dispositivos Android.
+Es posible configurar sus cuentas MX Plan en el cliente de correo que usted utilice, siempre que sea compatible, para enviar y recibir mensajes desde su dispositivo sin necesidad de una nueva aplicación. Esta guía explica cómo configurar una cuenta MXplan desde la aplicación Gmail de los dispositivos Android.
 
 **Esta guía explica cómo configurar una cuenta MX Plan en Android utilizando la aplicación Gmail.**
 
@@ -24,11 +24,11 @@ Es posible configurar sus cuentas MX Plan en el cliente de correo que usted util
 >
 > La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 >
-> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner) o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado «Más información» de esta guía.
+> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/) o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado «Más información» de esta guía.
 
 ## Requisitos
 
-- Disponer de una dirección de correo electrónico MX Plan (incluida en la solución MX Plan o en un plan de [hosting de OVHcloud](/links/web/hosting)).
+- Disponer de una dirección de correo electrónico MX Plan (incluida en la solución MX Plan o en un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/)).
 - Tener la aplicación Gmail instalada en su dispositivo. Puede instalarla desde Google Play Store si aún no está presente.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
 
@@ -109,7 +109,7 @@ Una vez que haya configurado la dirección de correo electrónico, ya puede empe
 
 > [!success]
 >
-> OVHcloud ofrece una aplicación web con la que podrá acceder a su dirección de correo electrónico desde el navegador, disponible en la dirección [Webmail](/links/web/email). Puede conectarse con las credenciales de acceso de su dirección de correo electrónico.
+> OVHcloud ofrece una aplicación web con la que podrá acceder a su dirección de correo electrónico desde el navegador, disponible en la dirección <https://www.ovhcloud.com/es/mail/>. Puede conectarse con las credenciales de acceso de su dirección de correo electrónico.
 
 ### Configuración POP, IMAP y SMTP
 
@@ -172,10 +172,6 @@ Para entender la diferencia entre el uso del protocolo POP e IMAP, vamos a desgl
 > Esta descripción es un resumen y representa el funcionamiento estándar de ambos protocolos. Es posible configurar el PoP para que los mensajes de correo no se eliminen al recibir los mensajes. El objetivo aquí es describir el funcionamiento nativo de estos dos protocolos y evitar manipulaciones adicionales para ajustarse a sus necesidades.
 
 ## Más información
-
-> [!primary]
->
-> Para más información sobre la configuración de una dirección de correo electrónico desde la aplicación de Gmail en Android, consulte [el Centro de ayuda de Google](https://support.google.com/mail/answer/6078445?hl=es-CA&co=GENIE.Platform%3DAndroid#zippy=%2Añadir-una-cuenta).
 
 [Configurar una cuenta Exchange en Android utilizando la aplicación Gmail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_android)
 

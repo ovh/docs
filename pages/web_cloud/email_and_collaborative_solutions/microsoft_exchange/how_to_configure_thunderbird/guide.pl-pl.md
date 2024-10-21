@@ -1,7 +1,7 @@
 ---
-title: 'Exchange - Skonfiguruj swoje konto e-mail w programie Thunderbird dla systemu Windows'
+title: 'Konfiguracja konta Exchange w programie Thunderbird na urządzeniu z systemem Windows'
 excerpt: 'Tutaj znajdziesz procedurę dodawania konta Exchange w programie Thunderbird'
-updated: 2024-10-09
+updated: 2021-08-26
 ---
 
 > [!primary]
@@ -23,7 +23,7 @@ Konta Exchange mogą być skonfigurowane w jednym z kompatybilnych programów po
 
 ## Wymagania początkowe
 
-- Posiadanie konta [Exchange](/links/web/emails-hosted-exchange).
+- Posiadanie konta [Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/).
 - Instalacja programu Thunderbird na Twoim urządzeniu z systemem Windows.
 - Dane do logowania do konta e-mail, które chcesz skonfigurować.
  
@@ -33,7 +33,7 @@ Konta Exchange mogą być skonfigurowane w jednym z kompatybilnych programów po
 >
 > Poniżej stosujemy przykładową nazwę serwera: ex**?**.mail.ovh.net. Chcesz zastąpić "? "cyfrą wskazującą serwer Twojej usługi Exchange.
 > 
-> Zapoznaj się z tą cyfrą w [Panelu klienta OVHcloud](/links/manager), w sekcji `Web Cloud`{.action}, a następnie w sekcji `Microsoft`{.action}/`Exchange`{.action}. Nazwa serwera jest widoczna w ramce **Połączenie** w karcie `Informacje ogólne`{.action}.
+> Zapoznaj się z tą cyfrą w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, w sekcji `Web Cloud`{.action}, a następnie w sekcji `Microsoft`{.action}/`Exchange`{.action}. Nazwa serwera jest widoczna w ramce **Połączenie** w karcie `Informacje ogólne`{.action}.
 > 
 
 ### Dodaj konto
@@ -59,7 +59,7 @@ W przypadku konfiguracji **POP** wartości są następujące:
 
 Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz zacząć wysyłać i odbierać wiadomości.
 
-OVHcloud oferuje również aplikację internetową umożliwiającą korzystanie z Twojego konta e-mail przy użyciu przeglądarki internetowej. Jest ona dostępna pod adresem [Webmail](/links/web/email). Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail. W przypadku pytań dotyczących korzystania z tego konta, skorzystaj z naszego przewodnika [Sprawdź konto Exchange w interfejsie OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
+OVHcloud oferuje również aplikację internetową umożliwiającą korzystanie z Twojego konta e-mail przy użyciu przeglądarki internetowej. Jest ona dostępna pod adresem <https://www.ovh.pl/mail/>. Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail. W przypadku pytań dotyczących korzystania z tego konta, skorzystaj z naszego przewodnika [Sprawdź konto Exchange w interfejsie OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
 ### Pobierz kopię zapasową Twojego konta e-mail
 
@@ -71,7 +71,7 @@ Jeśli musisz wykonać operację, która może spowodować utratę danych przypi
 >
 > Poniżej stosujemy przykładową nazwę serwera: ex**?**.mail.ovh.net. Chcesz zastąpić "? "cyfrą wskazującą serwer Twojej usługi Exchange.
 > 
-> Zapoznaj się z tą cyfrą w [Panelu klienta OVHcloud](/links/manager), w sekcji `Web Cloud`{.action}, a następnie w sekcji `Microsoft`{.action}/`Exchange`{.action}. Nazwa serwera jest widoczna w ramce **Połączenie** w karcie `Informacje ogólne`{.action}.
+> Zapoznaj się z tą cyfrą w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, w sekcji `Web Cloud`{.action}, a następnie w sekcji `Microsoft`{.action}/`Exchange`{.action}. Nazwa serwera jest widoczna w ramce **Połączenie** w karcie `Informacje ogólne`{.action}.
 > 
 
 Jeśli Twoje konto e-mail zostało już skonfigurowane i musisz mieć dostęp do parametrów konta, aby je zmienić:
@@ -91,9 +91,5 @@ Jeśli Twoje konto e-mail zostało już skonfigurowane i musisz mieć dostęp do
 ![Thunderbird](images/thunderbird-win-exchange06.png){.thumbnail}
 
 ## Sprawdź również
-
-> [!primary]
->
-> Aby uzyskać więcej informacji na temat konfigurowania konta e-mail z poziomu aplikacji Thunderbird w systemie Windows, skorzystaj z [Centrum pomocy Mozilla](https://support.mozilla.org/pl/kb/reczna-konfiguracja-konta#thunderbird:win10:tb115).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

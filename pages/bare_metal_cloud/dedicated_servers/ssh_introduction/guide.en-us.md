@@ -13,12 +13,12 @@ The SSH (Secure Shell) communication protocol is the main practice to establish 
 > [!warning]
 >OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->If you encounter any difficulties performing these actions, please contact a [specialist service provider](/links/partner) and/or discuss the issue with our community on https://community.ovh.com/en/. OVHcloud cannot provide you with technical support in this regard.
+>If you encounter any difficulties performing these actions, please contact a [specialist service provider](https://partner.ovhcloud.com/en/directory/) and/or discuss the issue with our community on https://community.ovh.com/en/. OVHcloud cannot provide you with technical support in this regard.
 >
 
 ## Requirements
 
-- A [dedicated server](/links/bare-metal/bare-metal) or a [VPS](https://www.ovhcloud.com/en/vps/) in your OVHcloud account
+- A [dedicated server](https://www.ovhcloud.com/en/bare-metal/) or a [VPS](https://www.ovhcloud.com/en/vps/) in your OVHcloud account
 - An SSH client application (command line or GUI)
 
 > [!primary]
@@ -29,7 +29,7 @@ The SSH (Secure Shell) communication protocol is the main practice to establish 
 
 There are multiple ways to authenticate a connection to a remote device via SSH. The following instructions will involve the authentication method with username and password. You can also configure SSH keys to enable secure logins without passwords. Find the details in our [SSH key guide](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 
-The login credentials (username and password) are sent to you by email after a server installation or reinstallation from the [OVHcloud Control Panel](/links/manager).
+The login credentials (username and password) are sent to you by email after a server installation or reinstallation from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we).
 
 The username corresponds to the operating system, for example `ubuntu` or `debian`. To connect, you also need to specify the IPv4 address or the hostname of the server. These details are available in the installation email and in the Control Panel.
 
@@ -174,6 +174,6 @@ Please consult the official FAQ and documentation of PuTTY for more information.
 
 [VPS rescue mode](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our user community on <https://community.ovh.com/en/>.

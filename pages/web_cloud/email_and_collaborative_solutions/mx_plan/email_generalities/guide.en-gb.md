@@ -12,14 +12,14 @@ If you have just purchased an MX Plan solution, this means you have email addres
 
 ## Requirements
 
-- An MX plan solution, available with a [web hosting plan](/links/web/hosting), a [100M free hosting](/links/web/domains-free-hosting), or ordered separately
-- Access to the [OVHcloud Control Panel](/links/manager), and `Web Cloud`{.action} section
+- An MX plan solution, available with a [web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/), a [100M free hosting](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/), or ordered separately
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), and `Web Cloud`{.action} section
 
 ## Instructions <a name="instructions"></a>
 
-Once the MX Plan solution has been created and is available, you can manage it from the [OVHcloud Control Panel](/links/manager). Depending on its activation date or if it has been migrated recently, you may have the old or new version of the solution. You will need to check this before you proceed any further.
+Once the MX Plan solution has been created and is available, you can manage it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Depending on its activation date or if [it has been migrated recently](https://www.ovh.co.uk/mxplan-migration/), you may have the old or new version of the solution. You will need to check this before you proceed any further.
 
-To do this, log in to the [OVHcloud Control Panel](/links/manager), and go to the `Web Cloud`{.action} section. Click `Emails`{.action}, and then choose the name of the MX Plan service concerned. Then you can proceed in accordance with the version you are using.
+To do this, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, and go to the `Web Cloud`{.action} section. Click `Emails`{.action}, and then choose the name of the MX Plan service concerned. Then you can proceed in accordance with the version you are using.
 
 |MX Plan legacy version|MX Plan new version|
 |---|---|
@@ -60,7 +60,7 @@ Once you have created your email addresses, you can start using them straight aw
 
 ##### **1. Using Outlook Web App (OWA) webmail**
 
-Go to the [Webmail login](/links/web/email) page, then enter the email address and password. Then click the `Login`{.action} button.
+Go to the [Webmail login](https://www.ovh.co.uk/mail/) page, then enter the email address and password. Then click the `Login`{.action} button.
 
 When you first log in to the webmail interface, you are prompted to set the interface language and your time zone. Your inbox will then appear. To find out how to use your email address via the OWA webmail interface, please refer to our [Outlook Web App user guide](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
@@ -117,7 +117,7 @@ You can do this in two ways:
 
 - Creating a redirection in the webmail interface, via inbox rules. To do this, please follow our guide on [Inbox rules in OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan#example-1-redirecting-emails-to-another-address).
 
-- Creating a redirection from your [OVHcloud Control Panel](/links/manager). For example, you can use this method to create an alias, i.e. redirect an email address that does not exist to an existing email address. To do this, please follow our guide on [Using email](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections#mx-plan-new-version) redirections.
+- Creating a redirection from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). For example, you can use this method to create an alias, i.e. redirect an email address that does not exist to an existing email address. To do this, please follow our guide on [Using email](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections#mx-plan-new-version) redirections.
 
 ##### **Automated responses**
 
@@ -176,7 +176,7 @@ Once you have created your email accounts, you can start using them straight awa
 
 ##### **1. Using RoundCube webmail**
 
-Go to the [webmail login](/links/web/email) page, then enter the email address and password. Then click the `Login`{.action} button.
+Go to the [webmail login](https://www.ovh.co.uk/mail/) page, then enter the email address and password. Then click the `Login`{.action} button.
 
 Your inbox will appear. To find out how to use your email accounts via the RoundCube webmail interface, use our guide on [Using your email account via the RoundCube webmail interface](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
 

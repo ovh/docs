@@ -1,7 +1,7 @@
 ---
 title: 'Criar uma conta OVHcloud'
 excerpt: 'Saiba como criar a sua conta OVHcloud'
-updated: 2024-09-09
+updated: 2023-05-23
 ---
 
 > [!primary]
@@ -23,7 +23,7 @@ A criação de uma conta pode ser realizada antes ou durante a encomenda do seu 
 
 ### Como criar a minha conta OVHcloud?
 
-Para criar uma conta OVHcloud, basta aceder a [esta página](/links/manager) e preencher o formulário online.
+Para criar uma conta OVHcloud, basta aceder a [esta página](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e preencher o formulário online.
 
 ![formulário criação conta](images/account-creation.png){.thumbnail}
 
@@ -51,12 +51,11 @@ Uma vez o código introduzido e validado, preencha o formulário. Tenha o cuidad
 
 A sua conta criada irá automaticamente ser ligada à página inicial, denominada "painel de controlo", da sua conta.
 
-### Qual é o meu identificador de cliente? <a name="nic-handle"></a>
+### Qual é o meu identificador de cliente?
 
 Cada conta de cliente da OVHcloud está associada a um identificador único, também chamado *NIC-handle*.
 
-Costuma ser composto por duas letras iniciais, seguidas de algarismos, e termina com «-ovh». Por exemplo: **xx11111-ovh**.<br>
-Para a maioria das contas fora da Europa, é frequentemente substituído pelo endereço de e-mail principal indicado na conta OVHcloud.
+Costuma ser composto por duas letras iniciais, seguidas de algarismos, e termina com «-ovh». Por exemplo: **xx11111-ovh**.
 
 Este identificador de cliente permite-lhe:
 
@@ -83,4 +82,4 @@ Consulte também os nossos guias para:
 
 [Proteger a sua conta OVHcloud com a dupla autenticação](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa)
 
-Fale com nossa [comunidade de utilizadores](/links/community).
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

@@ -14,7 +14,7 @@ Le support de cette fonctionalité est un pré-requis de toutes les actions conc
 
 ## Prérequis
 
-* Posséder [un serveur dédié](/links/bare-metal/bare-metal){.external}.
+* Posséder [un serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/){.external}.
 * Être connecté à l'[API OVHcloud](https://ca.api.ovh.com/){.external}.
 
 > [!primary]
@@ -51,4 +51,4 @@ Vous obtenez alors une liste avec une entrée « vmac / supported » qui sera à
 
 [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps)
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

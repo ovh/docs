@@ -19,8 +19,8 @@ Die Accounts Ihrer OVHcloud E-Mail-Dienste sind nur mit dem zugehörigen Passwor
 
 ## Voraussetzungen
 
-- Sie verfügen über eine bereits konfigurierte OVHcloud E-Mail-Lösung: [**Hosted Exchange**](/links/web/emails-hosted-exchange), [**Email Pro**](/links/web/email-pro) oder **MX Plan** (enthalten in einem [Webhosting](/links/web/hosting) oder [Kostenloses Hosting 100M](/links/web/domains-free-hosting) oder separat bestellt).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) oder auf den relevanten Account über [Webmail](/links/web/email), je nach verwendeter Methode.
+- Sie verfügen über eine bereits konfigurierte OVHcloud E-Mail-Lösung: [**Hosted Exchange**](https://www.ovhcloud.com/de/emails/hosted-exchange/), [**Email Pro**](https://www.ovhcloud.com/de/emails/email-pro/) oder **MX Plan** (enthalten in einem [Webhosting](https://www.ovhcloud.com/de/web-hosting/) oder [Kostenloses Hosting 100M](https://www.ovhcloud.com/de/domains/free-web-hosting/) oder separat bestellt).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) oder auf den relevanten Account über [Webmail](https://www.ovhcloud.com/de/mail/), je nach verwendeter Methode.
 
 > [!primary]
 >
@@ -38,7 +38,7 @@ Die Accounts Ihrer OVHcloud E-Mail-Dienste sind nur mit dem zugehörigen Passwor
 > [!warning]
 > Aus Sicherheitsgründen empfehlen wir, Passwörter nicht mehrfach zu verwenden, eines auszuwählen, das keine persönlichen Angaben enthält (Namen, Vornamen und Geburtsdatum) und es regelmäßig zu ändern.
 
-Gehen Sie in Ihrem [OVHcloud Kundencenter](/links/manager) in den Bereich `Web Cloud`{.action} und folgen Sie den passenden Anweisungen für Ihren E-Mail-Dienst:
+Gehen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) in den Bereich `Web Cloud`{.action} und folgen Sie den passenden Anweisungen für Ihren E-Mail-Dienst:
 
 > [!tabs]
 > **MX Plan E-Mail (Legacy)**
@@ -81,9 +81,9 @@ Die Änderung eines Passworts über Webmail ist für die OVHcloud E-Mail-Angebot
 > Die Dienste vom Typ **MX Plan Legacy** verwenden Roundcube Webmail. Die Passwortänderung erfolgt hier ausschließlich im [OVHcloud Kundencenter](#controlpanel).
 >
 
-<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube Video Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube Video Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Öffnen Sie die [Webmail-Seite](/links/web/email). Geben Sie dort Ihre vollständige E-Mail-Adresse und das aktuelle Passwort ein. Klicken Sie anschließend auf den Button `Login`{.action}.
+Öffnen Sie die [Webmail-Seite](https://www.ovhcloud.com/de/mail/). Geben Sie dort Ihre vollständige E-Mail-Adresse und das aktuelle Passwort ein. Klicken Sie anschließend auf den Button `Login`{.action}.
 
 ![E-Mail](images/mxplan-password-new-step2.png){.thumbnail}
 
@@ -128,6 +128,6 @@ In der dieser Tabelle finden Sie die notwendigen Informationen zur Identifizieru
 
 [Erste Schritte mit Hosted Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, können Sie unsere [Support-Angebote einsehen](/links/support).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, können Sie unsere [Support-Angebote einsehen](https://www.ovhcloud.com/de/support-levels/).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

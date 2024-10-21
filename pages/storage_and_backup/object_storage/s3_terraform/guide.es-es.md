@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Administrar un bucket S3 con Terraform (EN)
-updated: 2024-08-27
+updated: 2023-03-14
 ---
 
 ## Objective
@@ -16,7 +16,7 @@ This tutorial will show you how to automate some actions on S3 Object Storage wi
 
 - Have terraform command line installed (see this [tutorial](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli) from Hashicorp, the company behind Terraform). 
 - Have git command line installed
-- You will need to have set up an account to interact with the OVHcloud API (see this [tutorial](/pages/manage_and_operate/api/first-steps)). Depending on your needs in terms of permissions (http verbs PUT/GET/POST/DELETE), enter the route `/cloud/project/{serviceName}/region/{regionName}/storage/` to target S3 object storage where *{serviceName}* corresponds to your Public Cloud project id and *{regionName}* corresponds to the region where your resources will be located. From the application keys created, you will need to export the 4 environment variables :
+- You will need to have set up an account to interact with the OVHcloud API (see this [tutorial](/pages/manage_and_operate/api/first-steps)). From the application keys created, you will need to export the 4 environment variables :
 
 ```bash
 $ export OVH_ENDPOINT=ovh-eu
@@ -68,7 +68,7 @@ Now let's have a look at the content of the `main.tf` file:
 
 - The *variable* block defines the region and s3 endpoint that are used to create the bucket. You can update it according to your needs : check this [page](/pages/storage_and_backup/object_storage/s3_location) to know what region / endpoints are available.
 - The *Providers* block defines 2 providers : ovh and Hashicorp AWS one. The first one is necessary to create the user whose identity / credentials will be used for the latest.
-- The *User / Credential* block defines the user & credential that are visible in the Settings > Users & Roles tab. They are needed to configure the Hashicorp AWS provider.
+- The *User / Credential* block defines the user & credential that are visible in the Settings > Users & Roles tab. They are needed to configure the Hashicorp AWS provider.
 - The Bucket block defines the bucket itself.
 - The Output defines the access & secret key that may be useful for CLI usage.
 

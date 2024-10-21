@@ -60,9 +60,9 @@ Depending on which OVHcloud [Web Hosting plan](/links/web/hosting) you have, the
 >- At least one capital letter
 >- At least one lower-case letter
 >- At least one number
->- Must only contain letters and numbers
+>- Be composed only of numbers and letters
 
-Then go to the `Ongoing tasks`{.action} tab and refresh the page regularly. Your change will be effective within a few minutes.
+Then go to the `Ongoing Jobs`{.action} tab and refresh the page regularly. Your change will be effective within a few minutes.
 
 ### Step 3: Access your storage space
 

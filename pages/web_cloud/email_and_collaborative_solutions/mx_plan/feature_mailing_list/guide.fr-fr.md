@@ -1,12 +1,12 @@
 ---
 title: 'Gérer et utiliser les mailing lists'
 excerpt: 'Decouvrez dans ce guide comment utiliser les listes de diffusion.'
-updated: 2024-08-07
+updated: 2023-08-01
 ---
 
 ## Objectif
 
-Une mailing list vous permet de contacter des abonnés en masse, c'est à dire de diffuser un message ou une information à plusieurs destinataires à la fois. Cela peut avoir un intérêt dans le cadre d'un mailing d'information, par exemple, sur la sortie d'un nouveau produit (pour un site e-commerce) ou pour informer d'un prochain rassemblement (pour un site communautaire).
+Une mailing list vous permet de contacter des abonnés en masse, c'est à dire de diffuser un message ou une information à plusieurs destinataires à la fois. Cela peut avoir un intérêt dans le cadre d'un mailing d'information, par exemple, sur la sortie d'un nouveau produit (pour un site e-commerce) ou pour informer d'un prochain rassemblement (pour un site communautaire). 
 
 **Découvrez comment gérer vos mailing-lists**
 
@@ -34,18 +34,14 @@ L'expéditeur (sender) transmet l'e-mail à la mailing list. Le modérateur (mod
 
 ## Prérequis
 
-- Disposer d'une offre e-mail MX Plan 100 minimum ou d'un [Hébergement Web](/links/web/hosting) éligible aux listes de diffusion.
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+- Disposer d'une offre e-mail MX Plan 100 minimum ou d'un [Hébergement Web](https://www.ovhcloud.com/fr/web-hosting/){.external} éligible aux listes de diffusion.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique
 
 ### Créer sa mailing list
 
-> [!success]
->
-> Une mailing list se comporte comme une adresse e-mail, il n'est pas possible de modifier son nom. Si le nom d'une mailing list ne vous convient plus, vous devez en créer une nouvelle et supprimer l'ancienne.
-
-Afin de créer votre mailing list, rendez-vous dans votre [espace client OVHcloud](/links/manager)  et sélectionnez l'onglet `Web Cloud`{.action} en haut.
+Afin de créer votre mailing list, rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}  et sélectionnez l'onglet `Web Cloud`{.action} en haut.
 
 Une fois connecté, cliquez sur `Emails`{.action} puis sur le nom de domaine concerné. Dirigez-vous sur l'onglet `mailing lists`{.action} de votre service e-mail.
 

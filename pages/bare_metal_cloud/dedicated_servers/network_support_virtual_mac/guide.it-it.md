@@ -18,7 +18,7 @@ Il supporto di questa funzionalità è un prerequisito per tutte le azioni relat
 
 ## Prerequisiti
 
-- Possedere un [server dedicato](/links/bare-metal/bare-metal){.external}
+- Possedere un [server dedicato](https://www.ovhcloud.com/it/bare-metal/){.external}
 - Essere connesso all'[API OVHcloud](https://api.ovh.com/){.external}
 
 > [!primary]

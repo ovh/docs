@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting permission errors when enabling persistence
 excerpt: ''
-updated: 2024-08-14
+updated: 2021-12-17
 ---
 
 ## Objective
@@ -51,9 +51,8 @@ If you are in this case, please follow these instructions at your own risk:
 ```bash
 $ kubectl get storageclasses.storage.k8s.io 
 NAME                              PROVISIONER                RECLAIMPOLICY   VOLUMEBINDINGMODE   ALLOWVOLUMEEXPANSION   AGE
-csi-cinder-classic                cinder.csi.openstack.org   Delete          Immediate           true                   12d
-csi-cinder-high-speed (default)   cinder.csi.openstack.org   Delete          Immediate           true                   12d
-csi-cinder-high-speed-gen2        cinder.csi.openstack.org   Delete          Immediate           true                   5h11m
+csi-cinder-classic                cinder.csi.openstack.org   Delete          Immediate           true                   83d
+csi-cinder-high-speed (default)   cinder.csi.openstack.org   Delete          Immediate           true                   83d
 ```
 
 - Delete the concerned `StorageClass` that you are using by default 

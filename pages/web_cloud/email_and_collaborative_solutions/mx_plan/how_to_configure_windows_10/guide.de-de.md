@@ -1,7 +1,7 @@
 ---
-title: 'MX Plan - Konfiguration Ihrer E-Mail-Adresse in Courrier für Windows'
-excerpt: 'Hier erfahren Sie, wie Sie Ihre MX Plan E-Mail-Adresse auf der Mail App von Windows einrichten'
-updated: 2024-10-01
+title: 'Konfiguration Ihrer E-Mail-Adresse auf der Windows 10 Mail App'
+excerpt: 'Hier erfahren Sie, wie Sie Ihre MX Plan E-Mail-Adresse auf der Mail App von Windows 10 einrichten'
+updated: 2018-04-04
 ---
 
 ## Einleitung
@@ -12,7 +12,7 @@ E-Mail-Adressen aus dem MX Plan Angebot können auf einem kompatiblen E-Mail-Cli
 
 ## Voraussetzungen
 
-- Sie besitzen eine MX Plan E-Mail-Adresse (im MX Plan Angebot oder in einem [OVHcloud Webhosting Angebot](/links/web/hosting) enthalten).
+- Sie besitzen eine MX Plan E-Mail-Adresse (im MX Plan Angebot oder in einem [OVHcloud Webhosting Angebot](https://www.ovhcloud.com/de/web-hosting/){.external} enthalten).
 - Die Mail App ist auf Ihrem Gerät installiert.
 - Sie haben die Login-Daten der E-Mail-Adresse, die Sie einrichten möchten.
 
@@ -76,13 +76,9 @@ Wenn manuelle Änderungen in den Account-Einstellungen erforderlich sind, verwen
 
 Ihre E-Mail-Adresse ist nun fertig konfiguriert und Sie können jetzt Nachrichten versenden und empfangen.
 
-Eine OVHcloud Webanwendung, mit der Sie über Ihren Webbrowser auf Ihre E-Mail-Adresse zugreifen können, ist verfügbar unter[Webmail](/links/web/email). Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden.
+Eine OVHcloud Webanwendung, mit der Sie über Ihren Webbrowser auf Ihre E-Mail-Adresse zugreifen können, ist verfügbar unter <https://www.ovh.de/mail/>. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden.
  
 ## Weiterführende Informationen
-
-> [!primary]
->
-> Weitere Informationen zum Konfigurieren einer E-Mail-Adresse über den Mail-Client unter Windows finden Sie im [Microsoft Help Center](https://support.microsoft.com/de-de/office/configure-l-mail-in-l-mail-application-mail-7ff79e8b-439b-4b47-8ff9-3f9a33166c60).
 
 [Konfiguration von E-Mail Pro auf der Windows Mail App](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10)
 

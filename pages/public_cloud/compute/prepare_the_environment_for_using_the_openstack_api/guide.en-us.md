@@ -163,4 +163,4 @@ openstack --help
 
 [Setting OpenStack environment variables](/pages/public_cloud/compute/loading_openstack_environment_variables)
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

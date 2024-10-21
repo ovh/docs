@@ -14,7 +14,7 @@ Public Cloud managed databases allow you to focus on building and deploying clou
 
 Sometimes during a cluster lifecycle, it may happen that some action is required to keep it running smoothly. For example, a new patch version of some underlying OS package might get released to provide some fixes.
 
-## How are those operations carried out?
+## How are those operations carried away?
 
 - At some point, the system finds out that a maintenance operation becomes necessary. For example, a new version of some package participating in the service installation may become available.
 - It then exposes a new maintenance operation for your service, with a description showing what needs to be done, a status (`SCHEDULED`, `APPLYING`, `APPLIED`) and a scheduled date. That date is computed using the "maintenance time" property of your service.
@@ -22,7 +22,7 @@ Sometimes during a cluster lifecycle, it may happen that some action is required
 
 ## What is the expected impact on the service?
 
-The underlying VM often needs to be rebuilt, or the service needs to restart.
+The underlying VM often needs to get rebuild, or the service needs to restart.
 
 For single node services, that means there is a short period of time when your service becomes unavailable.
 
@@ -44,7 +44,7 @@ You can get a list of maintenances for a service through the dedicated API endpo
 
 ## How can I control the scheduling?
 
-You can change the maintenance time for your service to a time that suits you better. For example, if your application is less busy at night, you can target that timeframe. Be aware that this only affects future maintenance operation scheduling, it won't reschedule already existing operations.
+You can change the maintenance time for your service so to have maintenance operations scheduled at a time that suits you better. For example, if your application is less busy at night, you can target that timeframe. Be aware that this only affects future maintenance operation scheduling, it won't reschedule already existing operations.
 
 ![Choose Maintenance](images/maintenancesql2.png){.thumbnail}
 

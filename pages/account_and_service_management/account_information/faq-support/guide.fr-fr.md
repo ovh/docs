@@ -1,49 +1,18 @@
 ---
 title: FAQ sur le support OVHcloud
 excerpt: Retrouvez les questions les plus fréquemment posées sur le support OVHcloud
-updated: 2024-08-09
+updated: 2024-01-11
 ---
 
 ## Objectif
 
 Retrouvez ici les questions les plus fréquemment posées sur le support OVHcloud.
 
-<a name="sso"></a>
-
-## FAQ
-
-### Que faire si je rencontre des difficultés pour me connecter au centre d'aide ou à l'interface de gestion de mes tickets ?
-
-Les causes possibles de cette problématique peuvent être les suivantes :
-
-- Vous avez saisi un mauvais mot de passe.
-- Les cookies ne sont pas autorisés sur votre navigateur.
-- Vous tentez de vous connecter depuis un pays différent de votre pays de facturation.
-
-Voici les solutions à essayer :
-
-- **Mot de passe** : vérifiez que vous avez saisi le mot de passe correct ou réinitialisez votre mot de passe en suivant [cette documentation](/pages/account_and_service_management/account_information/manage-ovh-password#lost-password).
-- **Cookies** : assurez-vous d'autoriser les cookies sur votre navigateur.
-- **Pays de facturation** : vous pouvez essayer de vous connecter en utilisant l'une des deux passerelles appropriées en fonction de votre localisation et de votre pays de facturation :
-    - [Union européenne (UE)](https://help.ovhcloud.com/login_with_sso.do?glide_sso_id=5e9c81e66886e8901e111f908472f1e2)
-    - [Canada (CA)](http://help.ovhcloud.com/login_with_sso.do?glide_sso_id=e6292c24e02bb050476bf14567ec5ef1)
-
-Si le problème persiste, n'hésitez pas à contacter notre équipe d'assistance pour obtenir de l'aide.
-
-#### Trucs et Astuces
-
-Si vous rencontrez des difficultés pour vous connecter à votre espace client, vous pouvez également essayer de vous connecter en utilisant l'une des deux passerelles suivantes :
-
-- Union européenne (UE) : <https://www.ovh.com/auth/>
-- Canada (CA) : <https://ca.ovh.com/auth/>
-
-Cela peut résoudre certains problèmes de connexion.
-
 ### Que dois-je faire si je n'arrive pas à joindre le support par téléphone ?
 
 Pour éviter d'attendre au téléphone, nous vous invitons à créer une demande de support depuis le [Centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help). Cliquez sur le bouton `Création de ticket`{.action}.
 
-Vous pouvez également consulter l'ensemble de notre documentation (FAQ, guides, outils de diagnostic…) dans le [Centre d'aide](https://help.ovhcloud.com/csm/fr-documentation?id=kb_home). 
+Vous pouvez également consulter l'ensemble de notre documentation (FAQ, guides, outils de diagnostic…) dans le [Centre d'aide](https://help.ovhcloud.com/csm/fr-documentation?id=kb_home).
 
 ### Pourquoi le formulaire de création de ticket a-t-il évolué ?
 
@@ -59,7 +28,7 @@ Créez une demande d’assistance dans le [Centre d’aide OVHcloud](https://hel
 
 Le niveau de support associé à votre identifiant client est directement indiqué sur le tableau de bord de votre espace client, en dessous des initiales de vos nom et prénom. Si vous n’avez pas souscrit à un service de support payant, vous bénéficiez par défaut du niveau Standard.
 
-Découvrez et comparez les différents niveaux de support disponibles [ici](/links/support).
+Découvrez et comparez les différents niveaux de support disponibles [ici](https://www.ovhcloud.com/fr/support-levels/).
 
 ### Pourquoi OVHcloud a-t-il fait évoluer son support client ?
 
@@ -67,8 +36,8 @@ OVHcloud a pris cette décision afin d’améliorer l’expérience proposée. C
 
 OVHcloud propose donc désormais une offre de support plus large et plus précise. Elle s’adapte aux besoins des entreprises, tout en continuant à donner accès à des services de gestion autonome en ligne.
 
-Découvrez et comparez les différents niveaux de support disponibles [ici](/links/support).
+Découvrez et comparez les différents niveaux de support disponibles [ici](https://www.ovhcloud.com/fr/support-levels/).
 
 ## Aller plus loin
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

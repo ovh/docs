@@ -110,5 +110,5 @@ We can see that disk performance is approximately 891 IOPS.
 
 [Create and configure an additional disk on an Instance](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance){.external}
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.
 

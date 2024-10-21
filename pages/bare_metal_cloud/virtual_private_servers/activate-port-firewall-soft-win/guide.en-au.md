@@ -109,4 +109,4 @@ You can then make changes to the settings of the new rule you have created.
 
 ## Go further
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

@@ -1,7 +1,7 @@
 ---
 title: "MX Plan - Konfiguration eines E-Mail-Accounts in Gmail für Android"
 excerpt: "Erfahren Sie hier, wie Sie einen MX Plan Account in Android über die Gmail-App einrichten"
-updated: 2024-10-01
+updated: 2023-12-15
 ---
 
 <style>
@@ -23,12 +23,12 @@ E-Mail-Accounts aus dem MX Plan Angebot können auf allen kompatiblen E-Mail-Cli
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen an die [OVHcloud Community](https://community.ovh.com/en/) zu richten. Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren oder Ihre Fragen an die [OVHcloud Community](https://community.ovh.com/en/) zu richten. Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 ## Voraussetzungen
 
-- Sie haben einen MX Plan E-Mail-Account (im MX Plan Angebot oder in einem [OVHcloud Webhosting Angebot](/links/web/hosting) enthalten).
+- Sie haben einen MX Plan E-Mail-Account (im MX Plan Angebot oder in einem [OVHcloud Webhosting Angebot](https://www.ovhcloud.com/de/web-hosting/) enthalten).
 - Die Gmail-App ist auf Ihrem Gerät installiert. Sie können diese über den Google Play Store installieren, wenn sie noch nicht vorhanden ist.
 - Sie haben die Login-Daten des E-Mail-Accounts, den Sie einrichten möchten.
 
@@ -109,7 +109,7 @@ Wenn Ihr E-Mail-Account eingerichtet ist, können Sie ab sofort E-Mails über Ih
 
 > [!success]
 >
-> Eine OVHcloud Webanwendung, mit der Sie über einen Webbrowser auf Ihren E-Mail-Account zugreifen können, ist verfügbar unter [Webmail](/links/web/email). Sie können sich mit den Login-Daten Ihres E-Mail-Accounts anmelden.
+> Eine OVHcloud Webanwendung, mit der Sie über einen Webbrowser auf Ihren E-Mail-Account zugreifen können, ist verfügbar unter <https://www.ovhcloud.com/de/mail/>. Sie können sich mit den Login-Daten Ihres E-Mail-Accounts anmelden.
 
 ### POP-, IMAP- und SMTP-Einstellungen
 
@@ -172,10 +172,6 @@ Um den Unterschied zwischen der Verwendung des POP- und IMAP-Protokolls zu verst
 > Diese Beschreibung ist eine Zusammenfassung der Standardfunktionen beider Protokolle. Sie können auch **POP** so einstellen, dass E-Mails beim Abholen nicht gelöscht werden. Die Ausführungen ober dienen dazu, die native Funktionsweise dieser beiden Protokolle zu beschreiben und Ihren Aufwand zu minimieren.
 
 ## Weiterführende Informationen
-
-> [!primary]
->
-> Weitere Informationen zum Einrichten einer E-Mail-Adresse über die Gmail-App auf Android finden Sie im [Google Help Center](https://support.google.com/mail/answer/6078445?hl=de-CA&co=GENIE.Platform%3DAndroid#zippy=%2Ca-a-account).
 
 [Konfiguration Ihres E-Mail Pro Accounts in Android über die Gmail-App](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_android)
 

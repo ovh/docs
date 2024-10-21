@@ -1,7 +1,7 @@
 ---
 title: Gestão de snapshots de uma instância na interface Horizon
 excerpt: Como gerir as snapshots de uma instância na interface Horizon
-updated: 2024-09-04
+updated: 2022-01-31
 ---
 
 > [!primary]
@@ -17,7 +17,7 @@ Para tal, é possível que crie snapshots das suas instâncias, podendo utilizar
 
 ## Requisitos
 
-- Ter [criado uma instância Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) na sua conta OVHcloud
+- Ter [criado uma instância Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#3o-passo-criacao-de-uma-instancia) na sua conta OVHcloud
 - [Ter acesso à interface Horizon](/pages/public_cloud/compute/introducing_horizon)
 
 ## Instruções
@@ -38,44 +38,7 @@ Na nova janela, introduza as informações necessárias:
 
 ![Snapshot](images/createsnapshot2.png){.thumbnail}
 
-A snapshot será depois listada na secção `Images`{.action}. Por isso, é aconselhável atribuir um nome explícito a cada snapshot.
-
-### Restauro de uma snapshot
-
-É possível restaurar uma snapshot criando uma nova instância a partir desta.
-
-Na interface Horizon, clique no menu `Compute`{.action} à esquerda e, a seguir, em `Images`{.action}.
-
-Clique em `Launch`{.action} junto da snapshot selecionada.
-
-![restore snapshot](images/restoresnapshot.png){.thumbnail}
-
-Na janela pop-up, é necessário selecionar várias opções para concluir o restauro da snapshot.
-
-> [!tabs]
-> **Details**
->>
->> **Nome da instância (*Instance name*):** Indique o nome pretendido para a instância.<br>
->> **Count:** Selecione o número de instâncias a executar a partir da snapshot.<br><br>
->>![snapshot](images/restoresnapshot1.png){.thumbnail}<br>
->>
-> **Flavor**
->>
->> Selecione o *flavor* desejado. Certifique-se de que seleciona uma versão com recursos iguais ou superiores ao tamanho da imagem (snapshot).<br><br>>
->>![network](images/restoresnapshot2.png){.thumbnail}<br>
->>
-> **Rede (*Network*)**
->>
->> Selecione uma rede pública (Ext-Net) a associar à instância.<br><br>
->>![network](images/restoresnapshot3.png){.thumbnail}<br>
->>
-> **Keypair**
->>
->> Selecione (3), crie (1) ou importe (2) um par de chaves.<br><br>>
->>![network](images/restoresnapshot4.png){.thumbnail}<br>
->>
-
-Depois de fazer isso, clique em `Launch Instance`{.action} para iniciar a criação da sua instância.
+A snapshot será depois listada na secção `Images`{.action}. Por isso, é aconselhável atribuir um nome explícito a cada snapshot. 
 
 ### Eliminação de uma snapshot
 

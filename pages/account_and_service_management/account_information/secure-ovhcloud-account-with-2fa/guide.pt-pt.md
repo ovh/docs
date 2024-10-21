@@ -1,22 +1,8 @@
 ---
 title: 'Proteger a sua conta OVHcloud com a dupla autenticação'
 excerpt: 'Descubra como melhorar a segurança da sua conta OVHcloud ao ativar a dupla autenticação (2FA)'
-updated: 2024-08-22
+updated: 2024-03-18
 ---
-
-<style>
-details>summary {
-    color:rgb(33, 153, 232) !important;
-    cursor: pointer;
-}
-details>summary::before {
-    content:'\25B6';
-    padding-right:1ch;
-}
-details[open]>summary::before {
-    content:'\25BC';
-}
-</style>
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
@@ -39,7 +25,7 @@ Este manual permitir-lhe-á:
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 - Dispor de um telemóvel (para o método por SMS), um smartphone ou um tablet (para o método via aplicação móvel) ou uma chave de segurança Universal Second Factor (U2F).
 - Ter tomado conhecimento das [recomendações sobre a gestão da sua palavra-passe de acesso à sua conta](/pages/account_and_service_management/account_information/manage-ovh-password).
 
@@ -90,7 +76,7 @@ Existem quatro métodos diferentes (clique nos separadores abaixo para ver a apr
 
 ### Etapa 1 - Ativar o seu primeiro método de autenticação dupla <a name="enabling-2fa"></a>
 
-Aceda à [Área de Cliente OVHcloud](/links/manager){.external}. Clique no seu nome no canto superior direito (1) e nas iniciais (2). Em seguida, clique em `Segurança`{.action} (3) e, por fim, em `Ativar a dupla autenticação`{.action} (4).
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique no seu nome no canto superior direito (1) e nas iniciais (2). Em seguida, clique em `Segurança`{.action} (3) e, por fim, em `Ativar a dupla autenticação`{.action} (4).
 
 ![Enabling 2FA](images/2024-001-enabling-2fa.png){.thumbnail}
 
@@ -156,7 +142,7 @@ Pode regenerar ou eliminar os códigos de segurança a partir da Área de Client
 
 ### Etapa 3 - Aceder à Área de Cliente OVHcloud com a dupla autenticação <a name="login-2fa"></a>
 
-Aceda à [página de autenticação da Área de Cliente OVHcloud](/links/manager){.external} e introduza o seu identificador (ou o seu endereço de e-mail principal) e a palavra-passe.
+Aceda à [página de autenticação da Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e introduza o seu identificador (ou o seu endereço de e-mail principal) e a palavra-passe.
 
 O ecrã de acesso mostra o último método de autenticação dupla utilizado ou introduzido. Se desejar utilizar outro método, clique no botão `Experimentar outro método`{.action}.
 
@@ -197,7 +183,7 @@ Se o seu periférico (telemóvel/smartphone/chave de segurança) estiver perdido
 > - códigos de segurança válidos.
 >
 
-Para eliminar um periférico, aceda à [Área de Cliente OVHcloud](/links/manager){.external}. Clique no seu nome no canto superior direito e depois nas iniciais.
+Para eliminar um periférico, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique no seu nome no canto superior direito e depois nas iniciais.
 
 A seguir, clique em `Segurança`{.action}, depois nos `...`{.action} à direita do seu periférico a eliminar e, por fim, em `Eliminar`{.action}.
 
@@ -226,43 +212,21 @@ Depois de eliminar todos os periféricos, desative os códigos de segurança cli
 
 #### Se já não tem acesso à Área de Cliente OVHcloud <a name="2FA-deletion"></a>
 
-Se já não dispõe de dispositivos válidos nem de códigos de segurança válidos, deve pedir a desativação da dupla autenticação ao fornecer documentos de justificação de identidade correspondentes à sua conta OVHcloud.
+Se já não dispõe de periféricos válidos e se já não dispõe de códigos de segurança válidos, pode solicitar a desativação da dupla autenticação contactando as nossas equipas de suporte.
 
-Em primeiro lugar, aceda a [a página de autenticação na Área de Cliente OVHcloud](/links/manager).
-
-Introduza o seu identificador OVHcloud e a sua palavra-passe para aceder à etapa da dupla autenticação. Clique no botão `Perdi acesso ao meu telemóvel, à chave de segurança U2F ou aos meus códigos de segurança{.action}.<br>
-Se não vir este botão, clique no botão `Experimentar outro método`{.action} e, a seguir, em `Perdi acesso ao meu telemóvel, à chave de segurança U2F ou aos meus códigos de segurança`{.action}.
-
-A interface seguinte permite-lhe descarregar e enviar às nossas equipas os documentos necessários para desativar a dupla autenticação na sua conta.
-
-> [!warning]
->
-> - Atenção, certifique-se de que todos os seus documentos estão corretos e legíveis antes do envio.
-> - **Formatos aceites**: jpg, jpeg, pdf, png. O tamanho máximo do ficheiro para cada documento é de 10 MB.
-> - No caso de documentos inválidos, este procedimento será anulado e deverá efetuar um novo.
-
-Num prazo de 72 horas, receberá a confirmação da desativação da dupla autenticação por e-mail.
-
-/// details | Lista dos documentos comprovativos
+Antes de nos contactar, deverá apresentar os seguintes elementos comprovativos:
 
 |Tipo de conta OVHcloud|Documentos a apresentar|
 |---|---|
 |Particular|- Documento de identidade (cartão de cidadão, carta de condução, passaporte) do titular da conta OVHcloud<br><br>- Comprovativo de morada recente<br>**Se, após uma mudança de residência, não tiver atualizado o seu endereço na Área de Cliente OVHcloud, deverá fornecer:**<br>- Um comprovativo de morada no antigo endereço<br>- Um comprovativo de morada recente no novo endereço<br>Se vive agora num terceiro, deverá fornecer:<br>- Um comprovativo de morada recente em nome da pessoa que o aloja<br>- Certificado de alojamento assinado pela pessoa que o aloja|
 |Empresa|- Documento de identidade (cartão de cidadão, carta de condução, passaporte) do gerente da empresa<br><br>- Documento comprovativo do registo da empresa ou o código da certidão permanente<br><br>- Comprovativo de morada em nome da empresa|
 
-///
-
-Quando os seus documentos estiverem reunidos, contacte o suporte da OVHcloud em +351 213 155 642.
+Quando os seus documentos estiverem reunidos, contacte o suporte da OVHcloud em +351 213 155 642. 
 
 > [!warning]
->
 > Os documentos comprovativos devem ser-nos enviados a partir de um endereço de e-mail registado na sua conta OVHcloud.
 
 Após verificação dos seus documentos, um consultor poderá desativar manualmente a dupla autenticação na sua conta OVHcloud.
-
-> [!success]
->
-> Para efeitos de segurança, e uma vez restabelecido o acesso à sua conta, recomendamos que reative a dupla autenticação logo que possível.
 
 ## Quer saber mais?
 

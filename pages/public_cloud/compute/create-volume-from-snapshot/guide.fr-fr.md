@@ -63,4 +63,4 @@ Une fois l'attachement effectué, vous pouvez suivre les étapes suivantes pour 
 
 ## Aller plus loin
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

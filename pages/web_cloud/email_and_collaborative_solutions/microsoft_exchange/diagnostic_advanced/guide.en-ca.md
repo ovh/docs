@@ -12,16 +12,16 @@ Since there is a multitude of reasons why errors might occur on Exchange email a
 
 ## Requirements
 
-- an [OVHcloud Exchange solution](/links/web/emails-hosted-exchange) already set up
+- an [OVHcloud Exchange solution](https://www.ovhcloud.com/en-ca/emails/hosted-exchange/) already set up
 - credentials for the Exchange account to be checked
-- access to the [OVHcloud Control Panel](/links/manager)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 - being up to date in the [payments](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) for this service and the related domain name.
 
 ## Instructions
 
 ### Running the diagnostic
 
-Log in to your [OVHcloud Control Panel](/links/manager) and switch to `Web Cloud`{.action}. Open `Microsoft`{.action}, then `Exchange`{.action} and select your service.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) and switch to `Web Cloud`{.action}. Open `Microsoft`{.action}, then `Exchange`{.action} and select your service.
 
 ![Exchange Diagnostic](images/img_4450.png){.thumbnail}
 
@@ -54,11 +54,11 @@ Please follow the instructions in [this guide](/pages/web_cloud/email_and_collab
 ### Subscription to the account has expired <a name="expired"></a>
 
 Your subscription is no longer active, sending and receiving has been disabled.<br>
-To reactivate your subscription, simply reconfigure its [billing frequency](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#periodicity) in the [OVHcloud Control Panel](/links/manager).
+To reactivate your subscription, simply reconfigure its [billing frequency](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#periodicity) in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
 
 ### Account locked due to the security policy
 
-If there is a security policy activated in the [OVHcloud Control Panel](/links/manager), the account could be temporarily locked. 
+If there is a security policy activated in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), the account could be temporarily locked. 
 
 You can for example decide that the account will be locked after multiple unsuccessful login attempts, for a period of time determined by you. 
 
@@ -70,7 +70,7 @@ You can find more information about this topic in the [security policy guide](/p
 
 This can be caused by entering an incorrect account password. First verify via a [webmail login](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) that the password is correct, then restart the diagnostics.
 
-If necessary, you can change the password of the account concerned in the Exchange tab `Email accounts`{.action} of your [OVHcloud Control Panel](/links/manager). If the issue persists, create a support request.
+If necessary, you can change the password of the account concerned in the Exchange tab `Email accounts`{.action} of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca). If the issue persists, create a support request.
 
 ### The domain MX record is not valid
 

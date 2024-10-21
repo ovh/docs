@@ -24,8 +24,8 @@ In questo caso, è possibile accedere al server tramite la modalità Rescue di O
 
 ## Prerequisiti
 
-- Disporre di un [server dedicato](/links/bare-metal/bare-metal) o di un [VPS](https://www.ovhcloud.com/it/vps/) nel proprio account OVHcloud
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+- Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/) o di un [VPS](https://www.ovhcloud.com/it/vps/) nel proprio account OVHcloud
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 > [!primary]
 > Questa guida non si applica alle installazioni di **Windows** Server. Consulta le nostre guide "[Come cambiare la password amministratore su un server dedicato Windows](/pages/bare_metal_cloud/dedicated_servers/rcw-changing-admin-password-on-windows)" e "[Come cambiare la password amministratore su un VPS Windows](/pages/bare_metal_cloud/virtual_private_servers/resetting_a_windows_password)".
@@ -43,7 +43,7 @@ Non dimenticare di consultare anche le nostre guide di primo passo:
 >
 > OVHcloud mette a disposizione i servizi ma non si occupa della loro configurazione e gestione. garantirne il corretto funzionamento è quindi responsabilità dell’utente.
 >
-> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi relativamente all’amministrazione, all’utilizzo o all’implementazione dei servizi di un server, ti consigliamo di contattare un [provider specializzato](/links/partner) o [la nostra Community](https://community.ovh.com/en/).
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi relativamente all’amministrazione, all’utilizzo o all’implementazione dei servizi di un server, ti consigliamo di contattare un [provider specializzato](https://partner.ovhcloud.com/it/directory/) o [la nostra Community](https://community.ovh.com/en/).
 >
 
 <a name="step1"></a>
@@ -85,7 +85,7 @@ Retype new password:
 passwd: password updated successfully
 ```
 
-Utilizza la modalità di avvio **normal** del tuo server quando lo riavvii dallo [Spazio Cliente OVHcloud](/links/manager).
+Utilizza la modalità di avvio **normal** del tuo server quando lo riavvii dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 
 Se necessario, consulta la [guida del Rescue mode](#step1).
 

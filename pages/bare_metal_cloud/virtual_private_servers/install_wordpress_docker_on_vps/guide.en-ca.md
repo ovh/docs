@@ -18,7 +18,7 @@ Installing WordPress on a VPS or dedicated server has several advantages, such a
 
 ## Requirements
 
-- A [VPS](https://www.ovhcloud.com/en-ca/vps/) solution  or a [dedicated server](https://www.ovhcloud.com/en-ca/bare-metal/) in your [OVHcloud Control Panel](/links/manager)
+- A [VPS](https://www.ovhcloud.com/en-ca/vps/) solution  or a [dedicated server](https://www.ovhcloud.com/en-ca/bare-metal/) in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 - Administrative (sudo) access to your server via SSH
 - A domain name (registered with OVHcloud or another registrar)
 
@@ -221,7 +221,7 @@ You can now access WordPress from a browser. There are two ways of doing this:
 
 #### Link the domain name to the IP address of the VPS or dedicated server
 
-To access your website from a browser, first link the domain name of your WordPress website to the IP address of your VPS. Go to your [OVHcloud Control Panel](/links/manager). 
+To access your website from a browser, first link the domain name of your WordPress website to the IP address of your VPS. Go to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca). 
 
 In the left-hand menu, click `Domain names`{.action}, then select the domain name you have chosen for your WordPress website.
 
@@ -271,4 +271,4 @@ For some general tips on securing a GNU/Linux-based server, see our guides:
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/).
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

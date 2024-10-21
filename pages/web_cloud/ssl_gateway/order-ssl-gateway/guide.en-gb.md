@@ -1,101 +1,107 @@
 ---
-title: 'How to order an SSL Gateway'
-excerpt: 'Find out how to secure connections to your website'
-updated: 2024-10-01
+title: Order an SSL Gateway
+excerpt: Secure connections to your website
+updated: 2022-12-01
 ---
 
-## Objective
+## Overview
 
-The SSL Gateway solution is designed to give you an SSL certificate for your domain name and hosting service (VPS, mail server, dedicated server, etc.).
+### Requirements
+
+> [!primary]
+>
+> - 
+> You must have an active domain or subdomain.
+> - 
+> You must have DNS zone access for the domain.
+> 
+> 
+
+## Order
+- To order our SSL Gateway solution, [click here](https://www.ovh.co.uk/ssl-gateway){.external}.
+- Choose your solution, then click `Activate now`{.action} or `Order`{.action}.
+
+![commercial page](images/1-en.png){.thumbnail}
+
+- Enter your active domain or subdomain, then click `Next`{.action}.
+
+![free order](images/2-en.png){.thumbnail}
 
 > [!warning]
 >
-> SSL Gateways are not compatible with [OVHcloud web hosting](/links/web/hosting) offers. If you would like to use an SSL certificate for this type of solution, please read our guide on [Managing SSL certificates on a web hosting plan](/pages/web_cloud/web_hosting/ssl_on_webhosting).
+> - 
+> Free solution:
+> 
+> Only third level domains (www.example.org) are authorised.
+> - 
+> Advanced and Enterprise Solutions:
+> 
+> Fourth level domains (blog.france.example.org) and higher are authorised.
+> 
+
+Our system will then automatically detect your site’s IP address(es) configured on your domain or subdomain.
+
+- If you use several IPs, select one.
+- Choose the geographic zone of your SSL Gateway service
+- If the DNS zone of this domain or subdomain is managed by your OVHcloud account, tick the correct box so that we can automatically modify its configuration to point to your SSL Gateway.
+- Click `Order`{.action}.
+
+![free order](images/3-en.png){.thumbnail}
+
+> [!primary]
 >
+> If you use several IP addresses for your website, you will need to choose a single IP address for the order.
+> You can then add up to 2 additional IPs in your control panel, if you are using the Advanced solution.
+> 
 
-**This guide explains how to order an SSL Gateway.**
+- Then review and confirm your purchase order.
 
-## Requirements
-
-- An active [domain name](/links/web/domains) or subdomain
-- Access to the domain name’s DNS zone
-
-## Instructions
-
-### Order
-
-To order our SSL Gateway solution, [click here](/links/web/ssl-gateway).
-
-Choose your solution, then click `Order now`{.action}.
-
-![order ssl gateway](/pages/assets/screens/website/order/configure-my-ssl-gateway.png){.thumbnail}
-
-On the new page, enter the domain name or subdomain concerned in the `Search for your domain name`{.action} form, then click on the magnifying glass icon on the right.
+## Configuring your DNS zone
+If you have not ticked the automatic modification box once your purchase order has been validated, you will receive an email requesting that you point your domain or subdomain to OVHcloud servers within three days.
 
 > [!warning]
 >
-> - Free offer: Only domain names up to 3 levels (www.domain.tld) are authorized.
->
-> - Advanced offer: 4th level domain names (blog.www.domain.tld) and higher are authorized.
->
+> If you do not modify your DNS zone within 3 days, your order will be cancelled.
+> 
 
-Our system will then automatically detect your website’s IP address(es) configured on your domain name or subdomain. If you have several IPs, choose one.
-
-> [!warning]
->
-> - Even if you have several IP addresses for your website, you can only choose one IP when ordering.
-> - If you have the Advanced offer, you can then add up to 2 additional IPs from your [OVHcloud Control Panel](/links/manager).
->
-
-Then choose the location of the data centre where you want to install the SSL Gateway, from the 2 available.
-
-If you wish, and if it is available during the order, tick the `I manage the DNS zone of this domain and authorize OVHcloud to automatically modify the required DNS record`{.action}. The DNS zone associated with your domain name or subdomain will then be automatically updated with the SSL Gateway IP address.
-
-> [!warning]
->
-> Any changes to your DNS zone may take up to 24 hours to work, due to the caching on the ISPs.
->
-
-Check that all of your choices are correct on the order page, then click `Continue`{.action}.
-
-Finally, please follow the steps until you pay for your purchase order.
-
-### Configuration of your DNS zone
-
-Once your purchase order has been validated, and if you have not ticked the option `I manage the DNS zone of this domain and authorize OVHcloud to automatically modify the required DNS record`{.action}, you will be sent an email asking you to point your domain name or subdomain to the OVHcloud infrastructure within 3 days.
-
-> [!warning]
->
-> Without modifying your DNS zone within 3 days, your order will be cancelled.
->
+- 
 
 > [!faq]
 >
-> Case 1: Your DNS zone is managed by OVHcloud shared DNS servers.
->>
->> - If your NIC handle is an *administrator* or *technical* contact for this DNS zone, you will need to modify it in your [OVHcloud Control Panel](/links/manager).
->> - If you are not an *administrator* or *technical* contact for this DNS zone, contact the person in charge of this DNS zone to modify it.
->>
->> Refer to the instructions in the guide “[Creating an OVHcloud DNS zone for a domain name](/pages/web_cloud/domains/dns_zone_create)” if necessary.
->>
+> Scenario 1: your DNS zone is managed by OVH-hosted DNS servers.
+>> 
+>>     - If you are an administrative or technical contact for this DNS zone, you will need to modify this in your control panel.
+>>     - If you are not a contact for this DNS zone, you will need to contact the person managing it in order to modify it.
 >
-> Case 2: Your DNS zone is not managed by OVHcloud shared DNS servers.
->>
->> - In this case, modify the IP in your DNS zone by using your service provider’s interface or configure it on your appropriate DNS server.
->>
+
+> [!primary]
+>
+> Guide available:
+> - 
+> How to edit my DNS zone.
+> 
+> 
+
+- 
+
+> [!faq]
+>
+> Scenario 2: your DNS zone is not managed by OVH-hosted DNS servers.
+>> 
+>>     - In this case, you can simply modify the IP in your DNS zone by going to your service provider’s interface, or your dedicated server’s interface.
 >
 
 Once your modification has been processed by our infrastructure, you will receive a confirmation email.
 
 > [!warning]
 >
-> Any changes to your DNS zone may take up to 24 hours to work, due to the caching on the ISPs.
->
+> Any modifications made to your DNS zone can take up to 24 hours to propagate, depending on how often your ISP updates its cached records.
+> 
 
 ## Go further
- 
-For specialized services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
- 
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
+
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
- 
-Join our [community of users](/links/community).
+
+Join our community of users on <https://community.ovh.com/en/>. 

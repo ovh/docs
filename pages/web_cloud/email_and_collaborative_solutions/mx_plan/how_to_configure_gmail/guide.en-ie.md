@@ -1,7 +1,7 @@
 ---
-title: 'MX Plan - Configuring an email address on the Gmail online interface'
+title: 'Configuring an email address on the Gmail online interface'
 excerpt: 'Find out how to configure an MX Plan email address on the Gmail online interface'
-updated: 2024-09-24
+updated: 2023-11-20
 ---
 
 ## Objective
@@ -19,7 +19,7 @@ You can configure MX Plan email addresses on email clients and online interfaces
 
 ## Requirements
 
-- an MX Plan email address (included in the MX Plan solution and [OVHcloud Web Hosting plans](/links/web/hosting))
+- an MX Plan email address (included in the MX Plan solution and [OVHcloud Web Hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/){.external})
 - credentials for the OVHcloud email address you want to configure
 - credentials for the Gmail account (Personal or Professional) you want to configure the OVHcloud email address on
 
@@ -84,7 +84,7 @@ Once you have filled in the information requested, tick the box next to `Secured
 
 ![mxplan](images/configuration-gmail-web-step5.png){.thumbnail}
 
-At this stage, you simply need to confirm this addition by entering the confirmation code sent to your OVHcloud email address. To receive it, log on to our online interface as usual, via: [Webmail](/links/web/email). 
+At this stage, you simply need to confirm this addition by entering the confirmation code sent to your OVHcloud email address. To receive it, log on to our online interface as usual, via: <https://www.ovh.ie/mail/>. 
 
 Once you have pressed confirm, the OVHcloud email address will then appear in the `Accounts and Import`{.action} tab, which you accessed to start with.
 
@@ -96,12 +96,8 @@ To send an email from your OVHcloud email address via the Gmail online interface
 
 ![mxplan](images/configuration-gmail-web-step6.png){.thumbnail}
 
-Please also note that you can still use our online interface, accessible via [Webmail](/links/web/email), to access your OVHcloud email address. You just need to use your usual credentials to log in.
+Please also note that you can still use our online interface, accessible via <https://www.ovh.ie/mail/>, to access your OVHcloud email address. You just need to use your usual credentials to log in.
 
 ## Go further
-
-> [!primary]
->
-> For more information on configuring an email address from the online Gmail interface, see the [Google Help Center](https://support.google.com/mail/answer/21289?hl=en&co=GENIE.Platform%3DDesktop).
 
 Join our community of users on <https://community.ovh.com/en/>.

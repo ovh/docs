@@ -1,7 +1,7 @@
 ---
 title: Archiving your logs - Cold-storage
 excerpt: This long-term storage feature keeps your logs safely and cost efficiently over several years.
-updated: 2024-08-05
+updated: 2023-01-16
 ---
 
 ## Objective
@@ -22,13 +22,13 @@ On this page you will find the long-term storage toggle. Once enabled, you will 
 
 - The compression algorithm. We currently support [GZIP](http://www.gzip.org/){.external}, [DEFLATE (AKA zip)](http://www.zlib.net/feldspar.html){.external}, [Zstandard](https://facebook.github.io/zstd/){.external} or [LZMA (used by 7-Zip)](http://www.7-zip.org/7z.html){.external}.
 - The retention duration of your archives (from one year to ten years).
-- The storage backend for your logs (on [OVHcloud Object Storage](https://www.ovhcloud.com/fr/public-cloud/object-storage/){.external} or [OVHcloud Public Archive](https://www.ovhcloud.com/fr/public-cloud/cloud-archive/){.external}).
-- The content of your archives: GELF, one special field [X-OVH-TO-FREEZE](/pages/manage_and_operate/observability/logs_data_platform/getting_started_field_naming_convention), or both (you will get two separate archives in this case)
+- The storage backend for your logs (on [OVH Object Storage](https://www.ovhcloud.com/fr/public-cloud/object-storage/){.external} or [OVH Public Archive](https://www.ovhcloud.com/fr/public-cloud/cloud-archive/){.external}).
+- The content of your archives : GELF, one special field [X-OVH-TO-FREEZE](/pages/manage_and_operate/observability/logs_data_platform/getting_started_field_naming_convention), or both (you will get two separate archive in this case)
 - The activation of the notification for each new archive available.
 
-Note that OVHcloud Object Storage is more expensive than OVHcloud Public Archive but allows you to immediately download your archive whereas there is a delay (from 10 minutes to 4h) before being able to download your files on Public Archive. Depending on the urgency of your future logs retrieval, you will have to choose your backend accordingly.
+Note that OVHcloud Object Storage is more expensive than OVHcloud Public Archive but allow you to immediately download your archive whereas there is a delay (from 10 minutes to 4h) before being able to download your files on Public Archive. Depending or the urgency of your futures logs retrieval, you will have to choose your backend accordingly.
 
-The content of your archive is flexible. By default, you get the full log content in GELF format. But you can choose to have an archive containing only the value of the custom LDP field X-OVH-TO-FREEZE. This field can, for example, be used to keep your logs in a human-readable or original format. You can also choose to have two archives simultaneously: the original GELF and the X-OVH-TO-FREEZE archives.
+The content of your archive is flexible. By default, you get the full log content in GELF format. But you can choose to have an archive containing only the value of the custom LDP field X-OVH-TO-FREEZE. This field can for exemple be use to keep your logs in a human readable or original format. You can also choose to have two archives simultaneously: the original GELF and the X-OVH-TO-FREEZE archives.
 
 ![Edit menu](images/edit-1.png){.thumbnail}
 
@@ -38,28 +38,27 @@ As soon as you click on `Save`{.action}, the cold storage is activated. Here are
 >
 > As soon as the feature is activated, your logs will be stored for the specified duration. The effect is immediate so the billing of this feature will be also immediate.
 >
-> - Deactivating the cold storage on a stream will prevent the production of new archives but it won't delete the already produced archives. These archives will be kept for the duration configured.
+> - Deactivating the cold storage on a stream will prevent the producing of new archives but it won't delete the already produced archives. These archives will be kept for the duration configured.
 > - Changing the retention duration WILL delete any archive exceeding the new retention (Ex: choosing a one year retention will implicitly delete all archives older than one year).
-> - We push a daily archive of the 2 days old data you pushed. So every day you will get the archive of the day before yesterday.
+> - We push a daily archive of the 2 days old data you pushed. So every Day you will get the archive of the day before yesterday.
 > - When you activate the feature for the first time we can't create an archive for data older than two days before the activation.
 > - Deleting the stream WILL delete any archive associated. The stream must be alive to be able to keep its archive.
 >
 
 ### Retrieving the archives
 
-#### Using the OVHcloud Control Panel
+#### Using the OVHcloud Manager
 
 On a cold storage enabled stream (you can quickly see if they are with the archive checkbox), you have a new `Archives`{.action} item on the bottom of the stream menu. Click on it to navigate to the archives pages. On this page, you have a list of the archives produced. Each archive is named after its date, so you can quickly retrieve an archive of a particular day.
 
 ![Archive page](images/archive-1.png){.thumbnail}
 
-From this page you can launch the "unfreezing" process of your archive and make it available for download. This delay varies between 10 minutes to 4 hours depending on multiple factors like the size of the archive. There is no delay in the case you choose the **OVHcloud Object Storage** backend for your archives.
-
+From this page you can launch the "unfreezing" process of your archive and make it available for download. This delay varies between 10 minutes to 4 hours depending on multiple factors like the size of the archive. There is no delay in the case you choosed the **OVH Public Storage** backend for your archives.
 Once available, its status changes and a new `Download`{.action} action appears.
 
 #### Using the API
 
-If you want to download your logs using the API (to use them in a Big Data analysis platform for example), you can do all these steps by using the OVHcloud api available at [https://api.ovh.com](https://api.ovh.com){.external}. You can try all these steps with the [OVHcloud API Console](https://api.ovh.com/){.external}.
+If you want to download your logs using the API (to use them in a Big Data analysis platform for example), you can do all these steps by using the OVHcloud api available at [https://api.ovh.com](https://api.ovh.com){.external}. You can try all these steps with the [OVH API Console](https://api.ovh.com/){.external}.
 
 You will need your OVHcloud service name associated with your account. Your service name is the login logs-xxxxx that is displayed in the left of the OVHcloud Manager.
 
@@ -91,7 +90,7 @@ You will need your OVHcloud service name associated with your account. Your serv
 > - `streamId`: The stream you want archives from
 > - `archiveId`: The archive you want details from
 
-**You can generate a temporary URL download by using the following endpoint**
+**You can generate a temporary URL download by using this following endpoint**
 
 - Get a public temporary URL to access the archive:
 
@@ -105,24 +104,50 @@ You will need your OVHcloud service name associated with your account. Your serv
 > - `serviceName`: The internal ID of your Logs Data Platform service (string)
 > - `streamId`: The stream you want archives from.
 > - `archiveId`: The archive you want details from.
+> - `expirationInSeconds`: The URL expiration duration in seconds.
 >
-**Example result:**
+
+Using this call will generate a URL. You will have to make a GET on this URL to start the unfreezing of your archive. The first call will be a **HTTP 429 Error Code** meaning you will have to retry after some time. The time you will have to wait is in the response Header **Retry-After** and is specified in seconds. For example here is the result of the call with a curl.
 
 ```shell-session
-{
-  "expirationDate": "2024-07-31T12:27:22.797Z",
-  "url": "string"
-}
+$ curl --verbose -XGET "https://storage.gra1.cloud.ovh.net/v1/AUTH_5c3b113f595c40e789acdd1/gra2/57fe5853ce210200010a8d3a/2017-05-14.zip?temp_url_sig=20837885e7115aaf45c30b851dbf4666335c014a&temp_url_expires=1495038473"
+*   Trying 5.39.17.161...
+* Connected to storage.gra1.cloud.ovh.net (5.39.17.161) port 443 (#0)
+* found 173 certificates in /etc/ssl/certs/ca-certificates.crt
+* found 704 certificates in /etc/ssl/certs
+* ALPN, offering http/1.1
+* SSL connection using TLS1.2 / ECDHE_RSA_AES_128_GCM_SHA256
+*    server certificate verification OK
+*    server certificate status verification SKIPPED
+*    common name: storage.gra1.cloud.ovh.net (matched)
+*    server certificate expiration date OK
+*    server certificate activation date OK
+*    certificate public key: RSA
+*    certificate version: #3
+*    subject: OU=Domain Control Validated,OU=PositiveSSL Multi-Domain,CN=storage.gra1.cloud.ovh.net
+*    start date: Tue, 14 Feb 2017 00:00:00 GMT
+*    expire date: Wed, 14 Feb 2018 23:59:59 GMT
+*    issuer: C=GB,ST=Greater Manchester,L=Salford,O=COMODO CA Limited,CN=COMODO RSA Domain Validation Secure Server CA
+*    compression: NULL
+* ALPN, server did not agree to a protocol
+> GET /v1/AUTH_5c3b113f595c40e789acdd1/gra2/57fe5853ce210200010a8d3a/2017-05-14.zip?temp_url_sig=20837885e7115aaf45c30b851dbf4666335c014a&temp_url_expires=1495038473 HTTP/1.1
+> Host: storage.gra1.cloud.ovh.net
+> User-Agent: curl/7.43.0
+> Accept: */*
+>
+< HTTP/1.1 429 Too Many Requests
+< Retry-After: 300
+< Content-Length: 64
+< Content-Type: text/html; charset=UTF-8
+< X-Trans-Id: tx34c1342f0eb44d92b807b-00591b29c3
+< X-Openstack-Request-Id: tx34c1342f0eb44d92b807b-00591b29c3
+< Date: Tue, 16 May 2017 16:33:07 GMT
+<
+* Connection #0 to host storage.gra1.cloud.ovh.net left intact
+<html><h1>Too Many Requests</h1><p>Too Many Requests.</p></html>
 ```
 
-It will take some time (depending on the size of your archive file) for your archive to unfreeze. Once it has, you will need to use the API call again. If your archive is available, you will see a result like this:
-
-```shell-session
-{
-  "expirationDate": "2024-08-01T15:16:21.914370+00:00",
-  "url": "https://archive-<region>.logs.ovh.com/eyJub25jZSI6ICJQbFFmRVpELzJ3TVRhVDM2RHZUSUNsYkZMR0Q0SGlaMiIsICJkYXRhIjogIkxVRmd6czQzeUhiaTZWSnp6d1JuQ1M5UzJrbllYWUp0U1FBOHY0cS9BUlo4cVpIeldZTjJDakN4N1I3Y0FsVi94SUhqTUx4dUNBZmhwQUdpYnpoQ1pWUlhMc2dQTkVHWm9ZZTNLOFlueUFCMFMwNWdmaXJ5YkZyZmpuekZrYkZ4am5EYjE5YlR2ejg0NUlCQW9Ralg2T3JPUFMveXg2UjRiY1lLM0tETlVMZHRtcXRMaG53d2VoZGg3bkZZQzRXbVdmL0lUbjE4czYzQm9Zc1oxNW1VSkNFdVd1MmhlTFM1WWF0WnJzWWVrU0pRVmkwZVFYbi9zd3AwSG1yVzRTTFY5Z21oaG50NEI5akM5eXBzVWFUTlRRSFFkOGpVZk9rWFd2S1pKTDlQQTBkWHJ1OFlFNmNJaCtTSUVONWhybE5adUE2QmxYOUt6NmQrVnBTZGdlS3ByT0hRVFdJalBFZmpQMjhoUkVXKzF5eDY4cjJURXNZeUhMR3FwR3lUa0ZqYkd3PT0ifQ==/<archive-name>.gz"
-}
-```
+Here the **Retry-After** Header has a value of 300 seconds. After 300 seconds, you can issue the same call at the same URL to download the file.
 
 #### Using ldp-archive-mirror
 
@@ -131,7 +156,7 @@ The installation and configuration procedure is described on the related [github
 
 #### Content of the archive
 
-The data you retrieve in the archive is by default in [GELF format](https://go2docs.graylog.org/4-x/getting_in_log_data/gelf.html?tocpath=Getting%20in%20Log%20Data%7CLog%20Sources%7CGELF%7C_____0#GELFPayloadSpecification){.external}. It is ordered by the field timestamp and retains all additional fields that you would have added (with your [Logstash collector](/pages/manage_and_operate/observability/logs_data_platform/ingestion_logstash_dedicated_input) for example). Since this format is fully compatible with JSON, you can use it right away in any other system.
+The data you retrieve in the archive is by default in [GELF format](https://go2docs.graylog.org/4-x/getting_in_log_data/gelf.html?tocpath=Getting%20in%20Log%20Data%7CLog%20Sources%7CGELF%7C_____0#GELFPayloadSpecification){.external}. It is ordered by the field timestamp and retain all additional fields that you would have add (with your [Logstash collector](/pages/manage_and_operate/observability/logs_data_platform/ingestion_logstash_dedicated_input) for example). Since this format is fully compatible with JSON, you can use it right away in any other system.
 
 ```json
  {"_facility":"gelf-rb","_id":11,"_monitoring":"cb1068c485e738655cfe10df5df3a9a185aa8e301b5c8d0747b3502e8fdcc157","_type":"direct","full_message":"monitoring message (11) at 2017-05-17 09:58:08 +0000","host":"shinken","level":1,"short_message":"monitoring msg (11)","timestamp":1.4950150886486998E9}

@@ -1,7 +1,7 @@
 ---
 title: "Proteger um VPS"
 excerpt: "Saiba como implementar medidas básicas de segurança para proteger o seu VPS de ataques e acessos não autorizados"
-updated: 2024-10-07
+updated: 2024-02-20
 ---
 
 > [!primary]
@@ -29,7 +29,7 @@ Quando encomendar o seu VPS, pode escolher uma distribuição ou um sistema oper
 
 > [!primary]
 >
-> Tenha em conta que se trata de um guia geral baseado nos sistemas operativos Ubuntu, Debian e CentOS. Algumas encomendas precisam de ser adaptadas à distribuição que utiliza e certos truques convidam-no a utilizar ferramentas de terceiros. Consulte a documentação oficial destas aplicações caso necessite de ajuda.
+> Tenha em conta que se trata de um guia geral baseado num sistema operativo Ubuntu Server. Algumas encomendas precisam de ser adaptadas à distribuição que utiliza e certos truques convidam-no a utilizar ferramentas de terceiros. Consulte a documentação oficial destas aplicações caso necessite de ajuda.
 >
 > Se configurar o primeiro VPS da OVHcloud, recomendamos que consulte primeiro o nosso manual sobre [a implementação de um VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps).
 >
@@ -41,47 +41,23 @@ Os exemplos abaixo pressupõem que está ligado enquanto [utilizador com autoriz
 Os programadores de distribuições e de sistemas operativos propõem atualizações frequentes de pacotes, muitas vezes por razões de segurança.<br>
 Assegurar a atualização da sua distribuição ou sistema operativo é um ponto essencial para proteger o seu VPS.
 
-> [!tabs]
-> Ubuntu
->>
->> Esta atualização será realizada em duas etapas:
->> 
->> - Atualização da lista dos pacotes:
->> 
->> ```bash
->> sudo apt update
->> ```
->> 
->> - Atualização dos pacotes reais:
->> 
->> ```bash
->> sudo apt upgrade
->> ```
->>
-> Debian
->> 
->> ```bash
->> sudo apt update && sudo apt upgrade
->> ```
->>
->> O comando é idêntico ao Ubuntu porque Debian e Ubuntu utilizam o `apt`.
->>
-> CentOS
->>
->> ```bash
->> sudo yum update
->> ```
->>
->> No CentOS, o comando de atualização do sistema operativo utiliza `yum` or `dnf`, conforme a versão.
+Esta atualização terá duas etapas.
+
+- A atualização da lista dos pacotes:
+
+```bash
+sudo apt update
+```
+
+- A atualização dos pacotes propriamente dita:
+
+```bash
+sudo apt upgrade
+```
 
 Esta operação deve ser efetuada regularmente para manter um sistema atualizado.
 
 ### Modificar a porta de escuta SSH <a name="changesshport"></a>
-
-> [!primary]
->
-> Para esta secção, as seguintes linhas de comando são as mesmas para Ubuntu, Debian e CentOS.
->
 
 Uma das primeiras ações a realizar no seu servidor é a configuração da porta de escuta do serviço SSH. Por predefinição, este é definido na **porta 22**, pelo que as tentativas de hack do servidor por robots vão direcionar esta porta prioritariamente.
 A alteração deste parâmetro, em benefício de uma porta diferente, é uma medida simples para reforçar a proteção do seu servidor contra ataques automatizados.
@@ -181,21 +157,9 @@ Este pacote é recomendado, ou mesmo indispensável em certos casos, para proteg
 
 Para instalar o pacote de software, utilize o seguinte comando:
 
-> [!tabs]
-> Ubuntu e Debian
->> 
->> ```bash
->> sudo apt install fail2ban
->> ```
->>
-> CentOS
->>
->> Em CentOS 7 e CentOS 8 (ou RHEL), instale primeiro o repositório EPEL (**E**xtra **P**ackages for **E**nterprise **L**inux), e depois em Fail2ban:
->>
->> ```bash
->> sudo yum install epel-release
->> sudo yum install fail2ban
->> ```
+```bash
+sudo apt install fail2ban
+```
 
 Pode personalizar os ficheiros de configuração Fail2ban para proteger os serviços expostos à Internet pública contra as tentativas de ligações repetidas.
 
@@ -250,14 +214,6 @@ Depois de finalizar as suas modificações, registe o ficheiro e feche o editor.
 
 Reinicie o serviço para se certificar de que ele é executado com as personalizações aplicadas:
 
-1\. Comando recomendado com `systemctl`:
-
-```bash
-sudo systemctl restart fail2ban
-```
-
-2\. Comando com  `service` (método antigo, ainda compatível):
-
 ```bash
 sudo service fail2ban restart
 ```
@@ -287,9 +243,8 @@ Na [página do produto](https://www.ovhcloud.com/pt/vps/options/) e nos respetiv
 
 [VPS: primeira utilização](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps) 
 
-[Criar e utilizar chaves SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
-
 [Configurar a firewall em Windows](/pages/bare_metal_cloud/virtual_private_servers/activate-port-firewall-soft-win)
+
 
 [Configurar a firewall em Linux com iptables](/pages/bare_metal_cloud/virtual_private_servers/firewall-Linux-iptable)
 

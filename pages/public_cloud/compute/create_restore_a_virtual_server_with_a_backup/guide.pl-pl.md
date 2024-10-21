@@ -21,13 +21,13 @@ Może zajść konieczność przywrócenia instancji z kopii zapasowej, np. w prz
 ## Wymagania początkowe
 
 - Posiadanie kopii zapasowej instancji Public Cloud. Należy zapoznać się w tym celu z [instrukcją tworzenia kopii zapasowej](/pages/public_cloud/compute/save_an_instance).
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ## W praktyce
 
 ### Tworzenie instancji na podstawie kopii zapasowej
 
-Zaloguj się do swojego [panelu klient  OVHcloud](/links/manager){.external} i kliknij opcję`Public Cloud`{.action}. Wybierz odpowiedni projekt Public Cloud i kliknij `Instance backup`{.action} w sekcji `Storage`.
+Zaloguj się do swojego [panelu klient  OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i kliknij opcję`Public Cloud`{.action}. Wybierz odpowiedni projekt Public Cloud i kliknij `Instance backup`{.action} w sekcji `Storage`.
 
 ![public-cloud-instance-backup](images/restorebackup01.png){.thumbnail}
 
@@ -47,7 +47,7 @@ Niektóre elementy są wstępnie określone:
 
 Zdefiniuj nazwę nowej instancji, klucz SSH, vRack i okres rozliczeniowy, następnie kliknij przycisk `Utwórz instancję`{.action}.
 
-Aby uzyskać więcej informacji na temat tworzenia instancji, zapoznaj się z [tym przewodnikiem](/pages/public_cloud/compute/public-cloud-first-steps).
+Aby uzyskać więcej informacji na temat tworzenia instancji, zapoznaj się z [tym przewodnikiem](/pages/public_cloud/compute/public-cloud-first-steps#krok-3-tworzenie-instancji).
 
 > [!primary]
 >
@@ -56,7 +56,7 @@ Aby uzyskać więcej informacji na temat tworzenia instancji, zapoznaj się z [t
 
 ### Przywracanie instancji z kopii zapasowej
 
-Zaloguj się do swojego [panelu klient  OVHcloud](/links/manager){.external} i kliknij opcję`Public Cloud`{.action}. Następnie w menu po lewej stronie kliknij `Instancje`{.action}.
+Zaloguj się do swojego [panelu klient  OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i kliknij opcję`Public Cloud`{.action}. Następnie w menu po lewej stronie kliknij `Instancje`{.action}.
 
 ![public-cloud-instance-backup](images/restorebackup04.png){.thumbnail}
 

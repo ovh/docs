@@ -1,7 +1,7 @@
 ---
 title: Backup and Restore OVHcloud Managed Kubernetes Cluster, Namespace and Applications using TrilioVault for Kubernetes
 excerpt: 'Backup and Restore Cluster, Namespace and Applications using TVK'
-updated: 2024-08-14
+updated: 2022-08-11
 ---
 
 <style>
@@ -193,7 +193,6 @@ The output should look similar to (notice the provisioner is [hostpath.csi.k8s.i
 NAME                        PROVISIONER                RECLAIMPOLICY   VOLUMEBINDINGMODE   ALLOWVOLUMEEXPANSION   AGE
 csi-cinder-classic          cinder.csi.openstack.org   Delete          Immediate           true                   3d
 csi-cinder-high-speed       cinder.csi.openstack.org   Delete          Immediate           true                   3d
-csi-cinder-high-speed-gen2  cinder.csi.openstack.org   Delete          Immediate           true                   3d
 csi-hostpath-sc (default)   hostpath.csi.k8s.io        Retain          Immediate           false                  2d
 ```
 

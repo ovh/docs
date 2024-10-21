@@ -1,18 +1,18 @@
 ---
 title: 'Using the Outlook Web App with an email account'
 excerpt: 'Find out how to manage an email address using OWA webmail'
-updated: 2024-09-03
+updated: 2021-06-25
 ---
 
 ## Objective
 
-With an OVHcloud Email offer you can send and receive your emails using a device and client of your choice. To access an account from anywhere via web browser, OVHcloud provides an online email client called Outlook Web App (OWA). Our [webmail login page](/links/web/email) is the single point of access to the respective OWA for all active email accounts on your Email offer.
+With an OVHcloud Email offer you can send and receive your emails using a device and client of your choice. To access an account from anywhere via web browser, OVHcloud provides an online email client called Outlook Web App (OWA). Our [webmail login page](https://www.ovh.com.au/mail/) is the single point of access to the respective OWA for all active email accounts on your Email offer.
 
 **This guide explains how to use your email address with OWA and exemplifies the most important features of this interface.**
 
 ## Requirements
 
-- an OVHcloud email solution already set up (**MX Plan**, available as part of our [Web Hosting plans](/links/web/hosting)
+- an OVHcloud email solution already set up (**MX Plan**, available as part of our [Web Hosting plans](https://www.ovhcloud.com/en-au/web-hosting/)
 - login credentials for the email address you want to configure
 
 ## Instructions
@@ -26,17 +26,11 @@ This guide will give you a better understanding of the usual email account tasks
 
 ### 1. Accessing OWA webmail
 
-To log in to OWA webmail with your email address, go to the general [webmail login page](/links/web/email). Enter your full email address and password, then click the `Login`{.action} button.
+To log in to OWA webmail with your email address, go to the general [webmail login page](https://www.ovh.com.au/mail/). Enter your full email address and password, then click the `Login`{.action} button.
 
 ![useowa](images/use-owa-step1.png){.thumbnail}
 
 If this is your first time logging in to OWA webmail with this email address, you will be prompted to set the interface language and time zone. Click `Save`{.action} to continue.
-
-> [!primary]
->
-> Time zones are listed according to [the UTC (Coordinated Universal Time) standard](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), not in alphabetical order of cities.
->
-> **Example**: For Western Europe, it is the UTC +1 tranche (Brussels, Copenhagen, Madrid, Paris).
 
 ![useowa](images/use-owa-step2.png){.thumbnail}
 

@@ -1,7 +1,7 @@
 ---
 title: "Migrate Helm Charts from Chartmuseum to OCI"
 excerpt: "Find out how to migrate Helm Charts From Chartmuseum (Harbor < 2.8) to OCI"
-updated: 2024-10-18
+updated: 2023-07-18
 ---
 
 ## Objective
@@ -46,7 +46,7 @@ Then export the following variables:
 
 ```bash
 export HARBOR_URL=https://
-export HARBOR_USER=
+export HABOR_USER=
 export HARBOR_PASSWORD=
 ```
 

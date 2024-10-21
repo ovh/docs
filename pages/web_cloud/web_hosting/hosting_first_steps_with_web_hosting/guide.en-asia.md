@@ -164,7 +164,7 @@ With web hosting plans, OVHcloud offers 3 CDN solutions:
 
 - **CDN Basic**
 - **CDN Security**
-- **CDN Advanced**
+- **Advanced CDN**
 
 You can find more information on our CDN solutions in our guide on "[Speeding up your website with CDN](/pages/web_cloud/web_hosting/cdn_how_to_use_cdn)".
 

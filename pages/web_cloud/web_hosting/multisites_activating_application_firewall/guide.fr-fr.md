@@ -1,7 +1,7 @@
 ---
 title: "Activation du pare-feu applicatif"
 excerpt: "Découvrez comment activer le pare-feu applicatif sur une offre d'hébergement Web"
-updated: 2024-09-05
+updated: 2021-04-26
 ---
 
 ## Objectif
@@ -18,11 +18,6 @@ L'ensemble préconfiguré de règles de base, le « Core Rule Set » (CRS), de n
 - etc.
 
 **Ce guide vous explique comment activer le pare-feu applicatif depuis votre espace client OVHcloud, afin d'obtenir une protection améliorée.**
-
-> [!primary]
->
-> Du fait que votre hébergement web est présent sur une infrastructure mutualisée, la modification des paramètres de configuration du pare-feu est indisponible.
->
 
 ## Prérequis
 
@@ -46,7 +41,7 @@ Dans la nouvelle fenêtre, assurez-vous que **Application firewall** est défini
 
 Cliquez sur l'onglet `Multisite`{.action} de votre offre d'hébergement. Cliquez sur le bouton `...`{.action} à droite du nom de domaine concerné et sélectionnez l'option `Modifier le domaine`{.action}.
 
-![managemultisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-domain-2.png){.thumbnail}
+![managemultisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/modify-a-domain-2.png){.thumbnail}
 
 Dans la fenêtre de configuration, cochez la case `Activer le pare-feu`{.action}. Vous pouvez également inclure le sous-domaine `www` dans cette configuration en cochant la case en haut.
 
@@ -56,7 +51,7 @@ Cliquez sur `Suivant`{.action}, puis sur `Confirmer`{.action} pour modifier les 
 
 ### Vérifier l'état de la tâche d'activation
 
-![gestion en cours](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/ongoing-tasks/firewall-planned.png){.thumbnail}
+![gestion en cours](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/firewall-planned.png){.thumbnail}
 
 Les tâches de mise à jour de votre configuration multisite seront répertoriées dans l'onglet `Opérations en cours`{.action} (le statut initial est « Planifié »). Le pare-feu sera actif dès que sa tâche de mise à jour n'apparaîtra plus dans la liste.
 

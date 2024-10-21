@@ -16,8 +16,8 @@ By creating a delegation, you can enable an email account user to manage their o
 
 ## Requirements
 
-- an MX Plan solution, available as part of our [Web Hosting plans](/links/web/hosting), the [100M free hosting](/links/web/domains-free-hosting), or ordered separately as a standalone solution
-- access to the [OVHcloud Control Panel](/links/manager)
+- an MX Plan solution, available as part of our [Web Hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/), the [100M free hosting](https://www.ovhcloud.com/en-ie/domains/free-web-hosting/), or ordered separately as a standalone solution
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 > [!warning]
 >
@@ -33,10 +33,10 @@ By creating a delegation, you can enable an email account user to manage their o
 
 > [!primary]
 >
->When you set up a delegation on an email account, it will appear in the relevant [Control Panel](/links/manager). However, only the modifications listed in the [Objective](#objective) section of this guide will be possible in this situation.
+>When you set up a delegation on an email account, it will appear in the relevant [Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). However, only the modifications listed in the [Objective](#objective) section of this guide will be possible in this situation.
 >
 
-Log in to your [OVHcloud Control Panel](/links/manager) and select `Web Cloud`{.action}.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and select `Web Cloud`{.action}.
 
 Select the domain name from the `Emails`{.action}. Switch to the tab `Emails`{.action} to view the list of email accounts in your MX Plan solution.
 
@@ -54,7 +54,7 @@ This opens a new section. Click the `+`{.action} button to the right of `Add a u
 
 ![delegation](images/mxplan-delegation-03.png){.thumbnail}
 
-You can delegate the management of your MX Plan service to multiple OVHcloud customer accounts.
+You can delegate the management of your MXplan service to multiple OVHcloud customer accounts.
 
 ### Delegating one or more email accounts to a user
 

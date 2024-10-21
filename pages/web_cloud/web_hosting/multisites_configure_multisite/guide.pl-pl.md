@@ -1,7 +1,7 @@
 ---
 title: 'Instalacja kilku stron WWW na jednym hostingu'
 excerpt: 'Dowiedz się, jak zainstalować kilka stron WWW na hostingu'
-updated: 2024-10-08
+updated: 2024-03-15
 ---
 
 > [!primary]
@@ -20,7 +20,6 @@ Na jednym hostingu możesz zainstalować kilka stron WWW, nawet jeśli domeny ni
 - 2 : [Dodanie domeny lub subdomeny](#add-domain)
     - 2.1 : [Dodaj domenę zarejestrowaną w OVHcloud](#add-ovhcloud-domain)
     - 2.2 : [Dodaj domenę zewnętrzną](#add-external-domain)
-    - 2.3 : [Diagnostyka domen](#diagnostic-domain)
 - 3 : [Umieszczenie strony WWW online](#site-online)
 
 ## Wymagania początkowe
@@ -157,42 +156,6 @@ Zanotuj elementy, które się wyświetlą, następnie kliknij przycisk `Zatwierd
 >
 > Wpisy DNS typu **A** i **TXT** muszą być obowiązkowo umieszczone w aktywnej strefie DNS Twojej domeny, aby dodać je do Twojego hostingu. Opcjonalne są tylko wpisy DNS typu **AAAA**. 
 >
-
-#### Etap 2.3: diagnostyka Twoich domen <a name="diagnostic-domain"></a>
-
-W tabeli w zakładce `MultiSite` kolumna `Diagnostyka` informuje, czy Twoja domena wskazuje poprawnie na powiązany hosting. Dzięki temu można szybko sprawdzić, czy konfiguracja DNS Twojej domeny na hostingu jest prawidłowa. W ten sposób ta kolumna pomaga zidentyfikować i rozwiązać ewentualne problemy z wskazywaniem. Dla każdej domeny dostępne są trzy wyniki diagnostyki:
-
-- `A/AAAA` zielony
-- `A/AAAA` żółty
-- `A/AAAA` szary
-
-##### A/AAAA zielony
-
-![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-green-info.png){.thumbnail}
-
-Jeśli ikona `A/AAAA` jest zielona w kolumnie `Diagnostyka`, oznacza to, że rekord **A** (dla adresów IPv4) i/lub rekord **AAAA** (dla adresów IPv6) domeny wskazuje poprawnie adres IP hostingu. Konfiguracja DNS Twojej domeny jest zatem zgodna z konfiguracją umożliwiającą współpracę z Twoim hostingiem.
-
-##### A/AAAA żółty
-
-![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-info.png){.thumbnail}
-
-Jeśli ikona `A/AAAA` jest żółta w kolumnie `Diagnostyka`, oznacza to, że rekord **A** (IPv4) i/lub **AAAA** (IPv6) domeny wskazuje na adres IP, ale nie jest to adres hostingu, z którego sprawdzasz kolumnę `Diagnostyka`.
-Kliknij ikonę żółtego `A/AAAA`, aby uzyskać więcej informacji. Pojawi się następujący komunikat:
-
-![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-popup.png){.thumbnail}
-
-Aby rozwiązać problemy z przekierowaniem DNS Twojej domeny i upewnić się, że wskazuje poprawnie na wybrany hosting, postępuj zgodnie z instrukcjami zawartymi w przewodniku "[Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit)".
-
-##### A/AAAA szary
-
-![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-info.png){.thumbnail}
-
-Jeśli ikona `A/AAAA` jest szara w kolumnie `Diagnostyka`, oznacza to, że nazwa domeny nie wskazuje obecnie żadnego adresu IP i nie skonfigurowano żadnego rekordu **A** ani **AAAA** dla tej nazwy domeny.
-Kliknij szarą ikonę `A/AAAA`, aby uzyskać więcej informacji. Pojawi się następujący komunikat:
-
-![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-popup.png){.thumbnail}
-
-Aby dodać rekordy **A** lub **AAAA** i poprawnie skonfigurować domenę, postępuj zgodnie z instrukcjami zawartymi w przewodniku "[Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit)".
 
 ### Etap 3: umieszczenie strony WWW online <a name="site-online"></a>
 

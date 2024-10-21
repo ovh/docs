@@ -19,8 +19,8 @@ Plesk ist ein einfach zu verwendendes Server-Verwaltungsinterface. Sie können e
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [Public Cloud Instanz](/links/public-cloud/public-cloud).
-- Sie haben [administrativen Zugriff](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance).
+- Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud).
+- Sie haben [administrativen Zugriff](/pages/public_cloud/compute/become_root_and_change_password) auf Ihre Instanz über SSH.
 
 ## In der praktischen Anwendung
 

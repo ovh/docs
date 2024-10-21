@@ -1,7 +1,7 @@
 ---
-title: "Email Pro - Configure your email account on Gmail for Android"
+title: 'Email Pro - Configuring an Email Pro account in Gmail for Android'
 excerpt: 'Find out how to configure an Email Pro account on Android, via the Gmail app'
-updated: 2024-10-09
+updated: 2024-03-15
 ---
 
 <style>
@@ -104,7 +104,7 @@ messages from your Gmail application.
 > [!success]
 > 
 > OVHcloud offers a web application that allows you to access your email address from a web browser,
-> at the address [Webmail](/links/web/email). You can
+> at the address <https://www.ovhcloud.com/en-ie/mail/>. You can
 > log in using your email credentials.
 
 
@@ -170,10 +170,6 @@ To understand the difference between POP and IMAP, we will break down the elemen
 > This description is a summary, it represents the standard operation of these two protocols. You can configure the POP so that emails are not deleted when you check your emails. The goal here is to describe how these two protocols work natively and avoid any additional steps to match your needs.
 
 ## Go further
-
-> [!primary]
->
-> For more information on setting up an email address from the Gmail app on Android, see the [Google Help Center](https://support.google.com/mail/answer/21289?hl=en&co=GENIE.Platform%3DAndroid&oco=1#zippy=%2Cadd-an-account).
 
 [Configuring an email address included in an MX Plan or web hosting plan on Android, via the Gmail app](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android)
 

@@ -102,7 +102,7 @@ Data storage technology is based on S3 or SWIFT technology and you are able to i
 
 ### 9.1 Erasure of customer data
 
-Once the job is executed, no data are retained on OVHcloud infrastructure and all allocated resources are destroyed.
+Once the the job is executed, no data are retained on OVHcloud infrastructure and all allocated resources are destroyed.
 
 To destroy stored data and logs , you have to use API calls to destroy your Object Storage.
 

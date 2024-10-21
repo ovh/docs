@@ -1,7 +1,7 @@
 ---
 title: Backing-up an OVHcloud Managed Kubernetes cluster using Velero
 excerpt: Find out how to back-up an OVHcloud Managed Kubernetes cluster using Velero, including Persistent Volumes
-updated: 2024-09-25
+updated: 2024-06-21
 ---
 
 ## Objective
@@ -134,10 +134,10 @@ Install Velero, including all prerequisites, into the cluster and start the depl
 velero install \
   --features=EnableCSI \
   --provider aws \
-  --plugins velero/velero-plugin-for-aws:v1.10.1,velero/velero-plugin-for-csi:v0.4.0 \
+  --plugins velero/velero-plugin-for-aws:v1.6.0,velero/velero-plugin-for-csi:v0.4.0 \
   --bucket <your bucket name> \
   --secret-file ./credentials \
-  --backup-location-config region=<public cloud region without digit>,s3ForcePathStyle="true",s3Url=https://s3.<public cloud region without digit>.cloud.ovh.net,checksumAlgorithm="" \
+  --backup-location-config region=<public cloud region without digit>,s3ForcePathStyle="true",s3Url=https://s3.<public cloud region without digit>.cloud.ovh.net \
   --snapshot-location-config region=<public cloud region without digit>,enableSharedConfig=true
 ```
 
@@ -147,10 +147,10 @@ In our case, with the cluster in the `GRA` region, that meant:
 velero install \
   --features=EnableCSI \
   --provider aws \
-  --plugins velero/velero-plugin-for-aws:v1.10.1,velero/velero-plugin-for-csi:v0.4.0 \
+  --plugins velero/velero-plugin-for-aws:v1.6.0,velero/velero-plugin-for-csi:v0.4.0 \
   --bucket velero-s3 \
   --secret-file .aws/credentials \
-  --backup-location-config region=gra,s3ForcePathStyle="true",s3Url=https://s3.gra.cloud.ovh.net,checksumAlgorithm="" \
+  --backup-location-config region=gra,s3ForcePathStyle="true",s3Url=https://s3.gra.cloud.ovh.net \
   --snapshot-location-config region=gra,enableSharedConfig=true
 ```
 
@@ -161,7 +161,7 @@ $ velero install \
   --plugins velero/velero-plugin-for-aws:v1.6.0,velero/velero-plugin-for-csi:v0.4.0 \
   --bucket velero-s3 \
   --secret-file .aws/credentials \
-  --backup-location-config region=gra,s3ForcePathStyle="true",s3Url=https://s3.gra.cloud.ovh.net,checksumAlgorithm="" \
+  --backup-location-config region=gra,s3ForcePathStyle="true",s3Url=https://s3.gra.cloud.ovh.net \
   --snapshot-location-config region=gra,enableSharedConfig=true
 CustomResourceDefinition/backups.velero.io: attempting to create resource
 CustomResourceDefinition/backups.velero.io: attempting to create resource client

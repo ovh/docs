@@ -1,7 +1,7 @@
 ---
 title: "Attivare e utilizzare il Rescue mode"
 excerpt: "Scopri come utilizzare il Rescue mode OVHcloud per risolvere i problemi del tuo server dedicato"
-updated: 2024-08-23
+updated: 2024-05-21
 ---
 
 > [!primary]
@@ -64,11 +64,6 @@ In questa situazione, vengono proposte due modalità di autenticazione:
 Seleziona l’opzione "Autenticazione tramite chiave SSH" e inserisci la chiave SSH **pubblica* nella casella di testo dedicata.
 
 ![Autenticazione tramite chiave SSH](images/rescue-mode-08.png){.thumbnail}
-
-> [!primary]
-> 
-> È possibile aggiungere una chiave SSH di default per la modalità Rescue di un server tramite l’API OVHcloud. Per maggiori informazioni, consulta [questa parte di questa guida](#rescuessh).
->
 
 #### Autenticazione tramite password
 
@@ -235,39 +230,6 @@ Questi strumenti sono già installati in questa modalità:
 |TestDisk|Software di recupero dati. Ti permette di recuperare e modificare partizioni corrotte, ritrovare partizioni scomparse, riparare un settore di boot e ricostruire un MBR difettoso.|
 |FileZilla|Un client FTP open source. Prende in carico i protocolli SSH e SSL e dispone di un’interfaccia <i>Drag and Drop</i> (trascina e rilascia) chiara e intuitiva.  Può essere utilizzato per trasferire i tuoi dati verso un server FTP, come il backup FTP fornito con la maggior parte dei modelli di server OVHcloud.|
 |7-ZIP|Software per la compressione e archiviazione di file e cartelle, che legge questi formati: ARJ, CAB, CHM, CPIO, CramFS, DEB, DMG, FAT, HFS, ISO, LZH, LZMA, MBR, MSI, NSIS, NTFS, RAR, RPM, SquashFS, UDF, VHD, WIM, XAR e Z. Con 7-ZIP è inoltre possibile creare archivi nei formati: BZIP2, GZIP, TAR, WIM, XZ, Z e ZIP.|
-
-<a name="rescuessh"></a>
-
-### Come aggiungere una chiave SSH di default per la modalità Rescue
-
-Per accelerare il processo, è possibile aggiungere una chiave SSH di default per la modalità Rescue del server tramite l’[API OVHcloud](/pages/manage_and_operate/api/first-steps).
-
-A tale scopo, nella console Web API aprire il seguente endpoint API:
-
-> [!api]
->
-> @api {v1} /dedicated/server PUT /dedicated/server/{serviceName}
->
-
-Inserisci il nome interno del tuo server nel campo corrispondente.
-
-Modificare quindi il campo di testo seguente:
-
-```bash
-{
-  "rescueSshKey": "string"
-}
-```
-
-Sostituisci `string` con la tua chiave pubblica SSH.
-
-Il risultato deve essere simile a quanto indicato nell'esempio seguente:
-
-![rescue key example](images/rescuekey.png){.thumbnail}
-
-Una volta inseriti i valori corretti, clicca sul pulsante `TRY`{.action}.
-
-Il campo chiave SSH verrà riempito automaticamente con questa stringa di chiave quando si cambia modalità Netboot.
 
 ## Per saperne di più
 

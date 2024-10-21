@@ -17,12 +17,12 @@ Con i VPS OVHcloud è possibile aggiungere spazio di storage sicuro come opzione
 ## Prerequisiti
 
 - Disporre di un [VPS](https://www.ovhcloud.com/it/vps/) nel proprio account OVHcloud
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - Avere accesso amministrativo via SSH o RDP al VPS
 
 ## Procedura
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca su `Bare Metal Cloud`{.action} e seleziona il tuo server nella sezione `Server Privati Virtuali`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca su `Bare Metal Cloud`{.action} e seleziona il tuo server nella sezione `Server Privati Virtuali`{.action}.
 
 ### Ordina un disco aggiuntivo
 

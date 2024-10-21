@@ -12,14 +12,14 @@ L'offre E-mail Pro dispose d'une gestion flexible de la facturation des comptes.
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](/links/manager).
-- Disposer d'un [compte E-mail Pro](/links/web/email-pro).
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+- Disposer d'un [compte E-mail Pro](https://www.ovhcloud.com/fr/emails/email-pro/){.external}.
 
 ## En pratique
 
 ### Commander des comptes supplémentaires
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager) et rendez-vous dans la section `Web Cloud`{.action}. Cliquez sur `E-mail Pro`{.action} puis sélectionnez la plateforme E-mail Pro concernée.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et rendez-vous dans la section `Web Cloud`{.action}. Cliquez sur `E-mail Pro`{.action} puis sélectionnez la plateforme E-mail Pro concernée.
 
 Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `Commander des comptes`{.action} en haut à droite.
 
@@ -50,7 +50,7 @@ Cliquer sur `Suivant`{.action} pour accéder au résumé des changements qui ont
 
 ### Supprimer un compte <a name="deletion"></a>
 
-Pour supprimer un compte de votre plateforme E-mail Pro, il faut d'abord le résilier en passant la configuration de son renouvellement sur **Aucune**. Pour cela, consultez l'étape [« modifier la périodicité de vos comptes »](#periodicity).
+Pour supprimer un compte de votre plateforme E-mail Pro, il faut d'abord le résilier en passant la configuration de son renouvellement sur **Aucune**. Pour cela, consultez l'étape [« modifier la périodicité de vos comptes »](#periodicity){.external}.
 
 Après résiliation, le compte sera suspendu à sa date d'expiration. Si vous souhaitez supprimer l'adresse e-mail hébergée par le compte avant sa date d'expiration, vous pouvez réinitialiser le compte.
 

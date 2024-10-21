@@ -15,7 +15,7 @@ Dzięki usłudze MX Plan OVHcloud możesz wysyłać i odbierać e-maile za pośr
 
 ## Wymagania początkowe
 
-- Posiadanie rozwiązania poczty elektronicznej OVHcloud **MX Plan**, zaproponowanego w naszej [ofercie hostingu www](/links/web/hosting), zawartego w [Darmowy hosting 100M](/links/web/domains-free-hosting) lub zamówionego oddzielnie jako rozwiązanie autonomiczne.
+- Posiadanie rozwiązania poczty elektronicznej OVHcloud **MX Plan**, zaproponowanego w naszej [ofercie hostingu www](https://www.ovhcloud.com/pl/web-hosting/), zawartego w [Darmowy hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/) lub zamówionego oddzielnie jako rozwiązanie autonomiczne.
 - Dane do logowania do konta e-mail MX Plan, które chcesz sprawdzić Więcej informacji znajdziesz w przewodniku [Pierwsze kroki z usługą MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
 
 ## W praktyce
@@ -55,7 +55,7 @@ Dzięki usłudze MX Plan OVHcloud możesz wysyłać i odbierać e-maile za pośr
 
 ### Logowanie do interfejsu Webmail Roundcube <a name="roundcube-connexion"></a>
 
-Do zobaczenia na stronie [Webmail](/links/web/email). Wprowadź adres e-mail i hasło, a następnie kliknij `Łącze`{.action}. 
+Do zobaczenia na stronie <https://www.ovh.com/pl/mail/>. Wprowadź adres e-mail i hasło, a następnie kliknij `Łącze`{.action}. 
 
 ![hosting](images/webmail_login.png){.thumbnail}
 
@@ -347,11 +347,11 @@ Aby dodać odpowiedź, kliknij przycisk `+`{.action} w dolnej części kolumny `
 
 ### Dodaj autoresponder lub automatyczną odpowiedź <a name="automatic-respond"></a>
 
-Chcesz dodać automatyczną odpowiedź do Twojego konta e-mail, gdy jesteś nieobecny lub niedostępny. Funkcja ta nie może zostać aktywowana w interfejsie webmail, ale w [Panelu klienta OVHcloud](/links/manager) w interfejsie zarządzania Twoimi adresami e-mail. Zapoznaj się z przewodnikiem "[Tworzenie autorespondera dla konta e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses/)".
+Chcesz dodać automatyczną odpowiedź do Twojego konta e-mail, gdy jesteś nieobecny lub niedostępny. Funkcja ta nie może zostać aktywowana w interfejsie webmail, ale w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) w interfejsie zarządzania Twoimi adresami e-mail. Zapoznaj się z przewodnikiem "[Tworzenie autorespondera dla konta e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses/)".
 
 ### Zmiana hasła do Twojego konta e-mail <a name="password"></a>
 
-Aby zmienić hasło do Twojego konta e-mail, zaloguj się do [Panelu klienta OVHcloud](/links/manager), w interfejsie zarządzania Twoimi adresami e-mail. Zapoznaj się z naszym przewodnikiem "[Zmiana hasła do konta e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password/)".
+Aby zmienić hasło do Twojego konta e-mail, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), w interfejsie zarządzania Twoimi adresami e-mail. Zapoznaj się z naszym przewodnikiem "[Zmiana hasła do konta e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password/)".
 
 ### Redakcja e-maila <a name="email-writing"></a>
 

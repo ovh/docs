@@ -67,7 +67,7 @@ Deve também:
 >
 > Para isso, consulte os seguintes guias:
 >
-> - [Criar uma zona DNS na OVHcloud](/pages/web_cloud/domains/dns_zone_create)
+> - [Criar uma zona DNS na OVHcloud](pages/web_cloud/domains/dns_zone_create)
 > - [Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 >
 > Certifique-se também de que o agente de registo atual não vai fechar outros serviços, como, por exemplo, os endereços de correio eletrónico associados ao domínio.

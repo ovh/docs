@@ -12,14 +12,14 @@ Grupy w programie Exchange umożliwiają komunikację wielu uczestników naraz p
 
 ## Wymagania początkowe
 
-- dostęp do [Panelu klienta OVHcloud](/links/manager)
-- skonfigurowane [rozwiązanie OVHcloud Exchange](/links/web/emails-hosted-exchange)
+- dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- skonfigurowane [rozwiązanie OVHcloud Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/)
 
 ## W praktyce
 
 ### Krok 1: utworzenie nowej grupy
 
-Najpierw zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Webcloud`{.action} i wybierz usługę Exchange z kolumny znajdującej się w obszarze `Microsoft`{.action} `Exchange`{.action}. Kliknij kartę `Grupy`{.action} w menu poziomym.
+Najpierw zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Webcloud`{.action} i wybierz usługę Exchange z kolumny znajdującej się w obszarze `Microsoft`{.action} `Exchange`{.action}. Kliknij kartę `Grupy`{.action} w menu poziomym.
 
 ![contactgroups](images/exchange-groups-step1.png){.thumbnail}
 
@@ -30,7 +30,7 @@ Kliknięcie przycisku `Utwórz grupę kontaktów`{.action} spowoduje otwarcie no
 |Nazwa|Opis|
 |---|---|
 |Adres e-mail|Nowy adres do wysyłania wiadomości na listę wysyłkową. Uwaga: nie można podać istniejącego adresu e-mail.|
-|Nazwa grupy|Nazwa wyświetlana, która będzie widoczna w [Panelu klienta OVHcloud](/links/manager) oraz w interfejsie [OVHcloud webmail](/links/web/email) (OWA).|
+|Nazwa grupy|Nazwa wyświetlana, która będzie widoczna w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) oraz w interfejsie [OVHcloud webmail](https://www.ovh.pl/mail/) (OWA).|
 |Maks. rozmiar poczty przychodzącej/wychodzącej|Możesz określić maksymalny rozmiar przychodzących i wychodzących e-maili.|
 |Ukryj w programie Outlook|Po zaznaczeniu tego pola wyboru adres grupy nie będzie widoczny na liście adresów usługi Exchange.|
 |Wymagane uwierzytelnienie|Po zaznaczeniu tego pola wyboru tylko użytkownicy tej samej platformy będą mogli wysyłać wiadomości przy użyciu adresu grupy.|
@@ -66,7 +66,7 @@ Zastosowanie zmian wprowadzonych w usłudze może zająć kilka minut. Status wi
 
 ### Krok 3: wysyłanie wiadomości do grupy w interfejsie OWA
 
-Listę wysyłkową można przetestować za pośrednictwem interfejsu [OVHcloud webmail](/links/web/email) (OWA): wystarczy wysłać e-mail na adres grupy.
+Listę wysyłkową można przetestować za pośrednictwem interfejsu [OVHcloud webmail](https://www.ovh.pl/mail/) (OWA): wystarczy wysłać e-mail na adres grupy.
 
 ![contactgroups](images/exchange-groups-step6.png){.thumbnail}
 

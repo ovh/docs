@@ -1,11 +1,13 @@
 ---
 title: 'Exchange - Skonfiguruj swoje konto e-mail w programie Outlook dla systemu Windows'
 excerpt: 'Dowiedz się, jak skonfigurować konto Exchange w programie Outlook na urządzeniu z systemem Windows'
-updated: 2024-10-09
+updated: 2021-07-05
 ---
-
+ 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
+>
+ 
 
 ## Wprowadzenie
 
@@ -22,14 +24,15 @@ Konta Exchange mogą być skonfigurowane w jednym z kompatybilnych programów po
 
 ## Wymagania początkowe
 
-- Wykupienie usługi [Exchange](/links/web/emails).
+- Wykupienie usługi [Exchange](https://www.ovhcloud.com/pl/emails/){.external}.
 - Instalacja programu Microsoft Outlook lub nowszego oprogramowania na Twoim komputerze
 - Dane do logowania do konta e-mail, które chcesz skonfigurować
 - Pole SRV OVHcloud musi być poprawnie skonfigurowane w strefie DNS domeny. Sprawdź nasz przewodnik [Dodaj domenę do usługi Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 
 > [!primary]
 >
-> Używasz programu Outlook i później na urządzeniu Mac? Zapoznaj się z naszą dokumentacją: [Konfiguracja konta Exchange w programie Outlook na urządzeniu Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac).
+> Używasz programu Outlook i później na urządzeniu Mac? Zapoznaj się z naszą dokumentacją: [Konfiguracja konta Exchange w programie Outlook na urządzeniu Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac){.external}.
+>
 
 ## W praktyce
 
@@ -55,7 +58,8 @@ Konta Exchange mogą być skonfigurowane w jednym z kompatybilnych programów po
 > 
 > ![Exchange](images/config-outlook-exchange03.png){.thumbnail}
 >
-> Zalecamy sprawdzenie konfiguracji domeny w Twojej usłudze Exchange w [Panelu klienta OVHcloud](/links/manager), w zakładce `Powiązane domeny `{.action}, a następnie w kolumnie `Diagnostyka`{.action} w tabeli.
+> Zalecamy sprawdzenie konfiguracji domeny w Twojej usłudze Exchange w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), w zakładce `Powiązane domeny `{.action}, a następnie w kolumnie `Diagnostyka`{.action} w tabeli.
+>
 
 - Jeśli konfiguracja Twojej domeny jest prawidłowa, może pojawić się komunikat o autoryzacji połączenia z serwerami OVHcloud. Zaakceptuj to, aby umożliwić automatyczną konfigurację konta Exchange.
 - Następnie określ częstotliwość przechowywania danych na koncie Exchange, dostępna **lokalnie na komputerze**. Kliknij `Dalej`{.action}, a następnie `Zakończ`{.action}.
@@ -66,7 +70,7 @@ Konta Exchange mogą być skonfigurowane w jednym z kompatybilnych programów po
 
 Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz zacząć wysyłać i odbierać wiadomości.
 
-Twój adres e-mail Exchange oraz wszystkie jego funkcje do pracy zespołowej są również dostępne w interfejsie [OWA](/links/web/email). W przypadku pytań dotyczących korzystania z tego konta, zapoznaj się z naszym przewodnikiem [Sprawdź konto Exchange w interfejsie OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
+Twój adres e-mail Exchange oraz wszystkie jego funkcje do pracy zespołowej są również dostępne w interfejsie [OWA](https://www.ovh.pl/mail/). W przypadku pytań dotyczących korzystania z tego konta, zapoznaj się z naszym przewodnikiem [Sprawdź konto Exchange w interfejsie OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
 ### Pobierz kopię zapasową Twojego konta e-mail
 
@@ -74,12 +78,8 @@ Jeśli musisz wykonać operację, która może spowodować utratę danych przypi
 
 ## Sprawdź również
 
-> [!primary]
->
-> Aby uzyskać więcej informacji na temat konfigurowania konta e-mail z poziomu aplikacji Outlook na urządzeniach z systemem Windows, zobacz [Centrum pomocy Microsoft](https://support.microsoft.com/pl-pl/office/dodawanie-konta-e-mail-do-programu-outlook-6e27792a-9267-4aa4-8bb6-c84ef146101b).
+[Konfiguracja konta e-mail, zawartego w usłudze MX Plan lub usłudze hostingu, w programie Outlook na urządzeniu z systemem Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016){.external}.
 
-[Konfiguracja konta e-mail, zawartego w usłudze MX Plan lub usłudze hostingu, w programie Outlook na urządzeniu z systemem Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016).
-
-[Konfiguracja konta E-mail Pro w programie Outlook na urządzeniu z systemem Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016)
+[Konfiguracja konta E-mail Pro w programie Outlook na urządzeniu z systemem Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016){.external}
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

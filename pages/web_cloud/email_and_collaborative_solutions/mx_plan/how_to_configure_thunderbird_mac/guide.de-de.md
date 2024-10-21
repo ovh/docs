@@ -1,7 +1,7 @@
 ---
-title: 'MX Plan - Konfiguration Ihrer E-Mail-Adresse in Thunderbird für macOS'
+title: 'Konfiguration Ihrer E-Mail-Adresse mit Thunderbird für macOS'
 excerpt: 'Erfahren Sie hier, wie Sie Ihren Mailaccount in Thunderbird für macOS einrichten'
-updated: 2024-10-01
+updated: 2021-08-26
 ---
 
 > [!primary]
@@ -17,12 +17,12 @@ MX Plan Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingericht
 > [!warning]
 > In dieser Anleitung erläutern wir die Verwendung einer oder mehrerer OVHcloud Lösungen mit externen Tools. Die durchgeführten Aktionen werden in einem bestimmten Kontext beschrieben. Denken Sie daran, diese an Ihre Situation anzupassen.
 >
-> Wir empfehlen Ihnen jedoch, sich bei Schwierigkeiten an einen [spezialisierten Dienstleister](/links/partner) zu wenden, und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
+> Wir empfehlen Ihnen jedoch, sich bei Schwierigkeiten an einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu wenden, und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
 >
 
 ## Voraussetzungen
 
-- Sie verfügen über eine MX Plan E-Mail-Adresse (als MX Plan Dienst oder in einem [OVHcloud Webhosting](/links/web/hosting) enthalten).
+- Sie verfügen über eine MX Plan E-Mail-Adresse (als MX Plan Dienst oder in einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) enthalten).
 - Thunderbird ist auf Ihrem macOS-System installiert.
 - Sie verfügen über Anmeldeinformationen für die E-Mail-Adresse, die Sie konfigurieren möchten.
  
@@ -51,7 +51,7 @@ Für eine **POP** Konfiguration verwenden Sie die folgenden Werte:
 
 Sobald Ihre E-Mail-Adresse eingerichtet ist, können Sie sie verwenden. Sie können ab sofort E-Mails versenden und empfangen.
 
-OVHcloud bietet auch eine Webanwendung an, mit der Sie über Ihren Webbrowser auf Ihre E-Mail-Adresse zugreifen können:[Webmail](/links/web/email). Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden. Bei Fragen zu dessen Verwendung können Sie unsere Anleitung zur [Outlook Web App](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) (oder [RoundCube Webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube)) heranziehen.
+OVHcloud bietet auch eine Webanwendung an, mit der Sie über Ihren Webbrowser auf Ihre E-Mail-Adresse zugreifen können: <https://www.ovh.de/mail/>. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden. Bei Fragen zu dessen Verwendung können Sie unsere Anleitung zur [Outlook Web App](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) (oder [RoundCube Webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube)) heranziehen.
 
 ### Backup Ihrer E-Mail-Adresse
 
@@ -76,9 +76,5 @@ Wenn Ihr E-Mail-Account bereits eingerichtet ist und Sie auf die Account-Einstel
 ![Thunderbird](images/thunderbird-mac-mxplan06.png){.thumbnail}
 
 ## Weiterführende Informationen <a name="gofurther"></a>
-
-> [!primary]
->
-> Weitere Informationen zum Einrichten einer E-Mail-Adresse über die Thunderbird-App in Windows finden Sie im [Mozilla Help Center](https://support.mozilla.org/de/kb/manuell-ein-konto-konfigurieren#thunderbird:mac:tb115).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

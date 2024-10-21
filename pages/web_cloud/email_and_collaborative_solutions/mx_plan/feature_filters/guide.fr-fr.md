@@ -17,12 +17,12 @@ Par exemple : vous souhaitez que tout e-mail contenant « [SPAM] » dans le suje
 
 ## Prérequis
 
-- Disposer d'une offre e-mail MX Plan (disponible via : une offre d’[hébergement web](/links/web/hosting), l'[hébergement gratuit 100M](/links/web/domains-free-hosting) compris avec un nom de domaine, ou l'offre MX Plan commandée séparément).
-- Avoir accès à votre [espace client OVHcloud](/links/manager).
+- Disposer d'une offre e-mail MX Plan (disponible via : une offre d’[hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}, l'[hébergement gratuit 100M](https://www.ovhcloud.com/fr/domains/free-web-hosting/){.external} compris avec un nom de domaine, ou l'offre MX Plan commandée séparément).
+- Avoir accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 > [!warning]
 >
-> Le guide suivant s'adresse aux détenteurs de l'offre MX Plan « historique ». Pour la nouvelle offre, la gestion des filtres se fait directement via le webmail OWA (**O**utlook **W**eb **A**pp). Identifiez votre offre à l'aide du tableau ci-dessous.
+> Le guide suivant s'adresse aux détenteurs de l'offre MXplan « historique ». Pour la nouvelle offre, la gestion des filtres se fait directement via le webmail OWA (**O**utlook **W**eb **A**pp). Identifiez votre offre à l'aide du tableau ci-dessous.
 >
 
 Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
@@ -32,11 +32,11 @@ Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
 
 ## En pratique <a name="oldmxplan"></a>
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager) dans la partie `Web Cloud`.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie `Web Cloud`.
 
 Cliquez sur `Emails`{.action}, puis choisissez le nom du service MX Plan concerné.
 
-Dans l'onglet `Emails`{.action} de votre service MX Plan, vous trouverez la liste de vos adresses e-mail. Une colonne `Filtres` est visible dans le tableau des comptes e-mail. Cliquez sur l'icône d'entonnoir.
+Dans l'onglet `Emails`{.action} de votre service MXplan, vous trouverez la liste de vos adresses e-mail. Une colonne `Filtres` est visible dans le tableau des comptes e-mail. Cliquez sur l'icône d'entonnoir.
 
 ![emails](images/img_3239.png){.thumbnail}
 

@@ -18,7 +18,7 @@ In diesem Fall müssen Sie die Lizenz manuell aktivieren, um Zugriff auf alle Wi
 ## Voraussetzungen
 
 - Sie haben ein [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud/){.external} in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben einen [OpenStack User erstellt](/pages/public_cloud/compute/create_and_delete_a_user).
 
 Wir empfehlen, die [Einführung in das Horizon Interface](/pages/public_cloud/compute/introducing_horizon) zu lesen, um sich mit Horizon vertraut zu machen.
@@ -183,6 +183,6 @@ slmgr.vbs -dli
 
 [Den Aktivierungsschlüssel Ihres Windows Servers korrigieren](/pages/bare_metal_cloud/dedicated_servers/windows_key).
 
-Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
+Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](https://www.ovhcloud.com/de/professional-services/), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

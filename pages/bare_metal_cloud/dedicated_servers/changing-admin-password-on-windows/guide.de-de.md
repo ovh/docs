@@ -19,8 +19,8 @@ Bei der Installation oder Neuinstallation eines Windows-Betriebssystems wird Ihn
 
 ## Voraussetzungen
 
-- Sie verfügen über einen [Dedicated Server](/links/bare-metal/bare-metal){.external}, auf dem Windows installiert ist in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+- Sie verfügen über einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/){.external}, auf dem Windows installiert ist in Ihrem Kunden-Account.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
@@ -234,7 +234,7 @@ Write hive files? (y/n) [n] : y
 
 ### Schritt 4: Server neu starten 
 
-Beginnen Sie damit, den Netboot-Modus im [OVHcloud Kundencenter](/links/manager) wieder auf **Von Festplatte booten** umzustellen (siehe [Schritt 1](#bootinrescue)). 
+Beginnen Sie damit, den Netboot-Modus im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) wieder auf **Von Festplatte booten** umzustellen (siehe [Schritt 1](#bootinrescue)). 
 
 Zurück in der Kommandozeile hängen Sie die Partition wieder aus und starten den Server neu mit den folgenden Befehlen:
 
@@ -258,7 +258,7 @@ System is going down for reboot NOW!
 
 ### Schritt 5: Ein neues Passwort festlegen (IPMI) <a name="passwordreset"></a>
 
-Gehen Sie im [OVHcloud Kundencenter](/links/manager) auf den Tab `IPMI`{.action}, um eine KVM-Session zu öffnen.
+Gehen Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf den Tab `IPMI`{.action}, um eine KVM-Session zu öffnen.
 
 ![IPMI](images/adminpw_win_03.png){.thumbnail}
 
@@ -304,7 +304,7 @@ Genaue Informationen zur Vorgehensweise finden Sie in [der Anleitung zum Rescue-
 
 #### Schritt 2: Derzeitiges Passwort löschen
 
-Gehen Sie im [OVHcloud Kundencenter](/links/manager) auf den Tab `IPMI`{.action}, um eine KVM-Session zu öffnen.
+Gehen Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf den Tab `IPMI`{.action}, um eine KVM-Session zu öffnen.
 
 ![IPMI](images/adminpw_win_03.png){.thumbnail}
 
@@ -326,7 +326,7 @@ Der Server muss dann neu gestartet werden.
 
 #### Schritt 3: Server neu starten 
 
-Beginnen Sie damit, den Netboot-Modus im [OVHcloud Kundencenter](/links/manager) wieder auf **Von Festplatte booten** umzustellen (siehe [Schritt 1](#bootinwinrescue)).
+Beginnen Sie damit, den Netboot-Modus im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) wieder auf **Von Festplatte booten** umzustellen (siehe [Schritt 1](#bootinwinrescue)).
 
 Wechseln Sie wieder zum Fenster der KVM-Sitzung und wählen Sie die Herunterfahren-Option `Neu starten`{.action} über den Windows-Button unten links aus.
 

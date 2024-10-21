@@ -16,13 +16,13 @@ Diese kollaborative Exchange-Funktion erlaubt die Erstellung von E-Mail-Adressen
 
 ## Voraussetzungen
 
-- Sie haben einen [OVHcloud Exchange](/links/web/emails-hosted-exchange) Dienst eingerichtet.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+- Sie haben einen [OVHcloud Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/) Dienst eingerichtet.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie verfügen über Login-Daten für die E-Mail-Accounts mit Zugriff auf die Ressource.
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und wählen Sie unter `Microsoft`{.action} und `Exchange`{.action} Ihren Exchange Dienst aus.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie unter `Microsoft`{.action} und `Exchange`{.action} Ihren Exchange Dienst aus.
 Klicken Sie auf den Tab `Mehr +`{.action} und dann auf `Ressourcen`{.action}.
 
 ### Schritt 1: eine Ressource erstellen
@@ -36,7 +36,7 @@ Klicken Sie auf den Button `Ressourcen-Account hinzufügen`{.action} um Ihre ers
 |Name|Beschreibung|
 |---|---|
 |E-Mail-Adresse der Ressource|Geben Sie die Adresse der Ressource ein. Bitte beachten Sie, dass Sie keine existierende E-Mail-Adresse auswählen können.|
-|Name der Ressource|Anzeigename, der in Ihrem [OVHcloud Kundencenter](/links/manager) und im [OVHcloud Webmail](/links/web/email) (OWA) verwendet wird.|
+|Name der Ressource|Anzeigename, der in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) und im [OVHcloud Webmail](https://www.ovh.de/mail/) (OWA) verwendet wird.|
 |Kapazität|Sie können die maximale Größe einer Ressource festlegen (z.B. die Anzahl der Sitzplätze in einem Raum oder die Sitze in einem Unternehmensfahrzeug).|
 |Konflikte erlauben|Wenn Sie dies anhaken, können Sie sich überschneidende Kalenderereignisse mit derselben Ressource erstellen.|
 |Ressourcen-Typ|Wählen Sie den Ressourcentyp aus: "Ausrüstung" oder "Saal".|
@@ -56,7 +56,7 @@ Ihre Ressourcen können in der Tabelle im Tab "Ressourcen" verwaltet werden. Kli
 Nutzen Sie auch unsere Anleitung zur [Kalenderfreigabe über OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_calendar_sharing).
 >
 
-Verbinden Sie sich mit Ihrem Exchange Account über das [OVHcloud Webmail](/links/web/email). Wechseln Sie zum "Kalender"-Interface, indem Sie in der oberen linken Ecke auf den "Launcher"-Button klicken und anschließend den `Kalender`{.action} auswählen.
+Verbinden Sie sich mit Ihrem Exchange Account über das [OVHcloud Webmail](https://www.ovh.de/mail/). Wechseln Sie zum "Kalender"-Interface, indem Sie in der oberen linken Ecke auf den "Launcher"-Button klicken und anschließend den `Kalender`{.action} auswählen.
 
 ![Hinzufügen](images/exchange-calendars-step1.png){.thumbnail}
 

@@ -76,7 +76,7 @@ Vous pouvez ajouter des champs supplémentaires dans le sujet, tels que :
 https://www.ovh.com/cgi-bin/sms/http2sms.cgi?&account=XXXXXXX&login=XXXXXXX&password=XXXXXXX&from=XXXXXXX&to=XXXXXXX1,XXXXXXX2&message=XXXXXXX&deferred=XXXXXXX&class=X&smsCoding=X&noStop=X
 ```
 
-Remplacez les X par les informations ci-dessous :
+Remplacez les X par par les informations ci-dessous :
 
 |Paramètres|À remplacer par|
 |---|---|

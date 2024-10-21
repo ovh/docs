@@ -24,12 +24,14 @@ Di default, il server DNS configurato sulle istanze Public Cloud è quello di OV
 ## Prerequisiti
 
 - Disporre di un'[istanza Public Cloud](https://www.ovhcloud.com/it/public-cloud/) nel proprio account OVHcloud
-- Avere accesso amministratore all'istanza via SSH o RDP
+- Avere accesso amministratore (sudo) all'istanza via SSH o RDP
 - Conoscenze di base in rete e amministrazione
 
 ## Procedura
 
-Accedi alla tua istanza via SSH Per maggiori informazioni, consulta la guida [Connettersi a un'istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance).
+Accedi alla tua istanza via SSH Per maggiori informazioni, consulta la guida [Connettersi a un'istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance).
+
+Passare all'utente root. Se hai bisogno di aiuto, consulta la guida per [passare da root e impostare una password](/pages/public_cloud/compute/become_root_and_change_password).
 
 ### Debian / Ubuntu
 
@@ -61,9 +63,7 @@ Verifica che la configurazione sia stata eseguita correttamente con il comando:
 
 ```bash
 cat /etc/resolv.conf
-```
 
-```console
 domain openstacklocal
 search openstacklocal
 nameserver IP1
@@ -102,9 +102,7 @@ Recupera il nome della tua interfaccia pubblica:
 
 ```bash
 nmcli connection show
-```
-
-```console
+ 
 NAME         UUID                                  TYPE      DEVICE
 System eth0  5fb06bd0-0bb0-7ffb-45f1-d6edd65f3e03  ethernet  eth0
 ```
@@ -134,7 +132,7 @@ DNS configuration:
 
 ### Windows
 
-Accedi all'istanza tramite una sessione desktop remoto o con la console VNC. Per maggiori informazioni, consulta la guida [Connettersi a un'istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance).
+Accedi all'istanza tramite una sessione desktop remoto o con la console VNC. Per maggiori informazioni, consulta la guida [Connettersi a un'istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance).
 
 Apri le `Impostazioni di rete`{.action}.
 
@@ -156,6 +154,8 @@ In un PowerShell, il comando `nslookup` permette di verificare quale server DNS 
 ## Per saperne di più <a name="gofurther"></a>
 
 [Creare una prima istanza Public Cloud e connettersi](/pages/public_cloud/compute/public-cloud-first-steps)
+
+[Accedere come utente root e impostare una password](/pages/public_cloud/compute/become_root_and_change_password)
 
 [Modificare l’hostname di un’istanza Public Cloud](/pages/public_cloud/compute/changing_the_hostname_of_an_instance)
 

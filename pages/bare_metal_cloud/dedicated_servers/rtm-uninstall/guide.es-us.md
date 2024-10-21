@@ -16,7 +16,7 @@ El sistema de monitorización de OVHcloud RTM v2 ya está deteriorado y los dep�
 
 ## Requisitos
 
-- Un [servidor dedicado](/links/bare-metal/bare-metal) en el que se haya instalado RTM v2
+- Un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/) en el que se haya instalado RTM v2
 - Tener acceso de administrador (sudo) a su servidor a través de SSH
 
 ## Procedimiento
@@ -106,6 +106,6 @@ rm -f /etc/yum.repos.d/OVH-metrics.repo /etc/yum.repos.d/OVH-rtm.repo
 
 ## Más información
 
-Si necesita formación o asistencia técnica para la implementación de nuestras soluciones, póngase en contacto con su empresa o haga clic en [este enlace](/links/professional-services) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo Professional Services.
+Si necesita formación o asistencia técnica para la implementación de nuestras soluciones, póngase en contacto con su empresa o haga clic en [este enlace](https://www.ovhcloud.com/es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo Professional Services.
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

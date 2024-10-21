@@ -1,7 +1,7 @@
 ---
 title: "Ihren Domainnamen mit DNSSEC absichern"
 excerpt: "Erfahren Sie hier, wie Sie Ihre Domainnamen durch die Aktivierung von DNSSEC vor Cache Poisoning schützen können"
-updated: 2024-08-20
+updated: 2023-07-26
 ---
 
 > [!primary]
@@ -15,11 +15,6 @@ DNS-Server hosten DNS-Zonen, die die DNS-Konfiguration von Domainnamen enthalten
 In einigen Fällen können Daten, die über DNS-Server laufen, von Hackern abgefangen werden. Das Ziel ist, eingehenden Traffic für den betroffenen Domainnamen an ihre Websites und E-Mail-Adressen umzuleiten. Dazu wird der Cache des DNS-Servers manipuliert, um eine abweichende DNS-Konfiguration auf Ihren Domainnamen anzuwenden. Dies wird als "Cache Poisoning" bezeichnet. 
 
 Die **D**omain **N**ame **S**ystem **SEC**urity Extensions (**DNSSEC**) ermöglichen es, die DNS-Konfiguration Ihres Domainnamens durch Überprüfung und Authentifizierung der DNS-Antworten vor "Cache Poisoning" zu schützen.
-
-> [!primary]
->
-> Die DNSSEC Option ist für Domainnamen mit der Endung **.it** nicht verfügbar.
->
 
 **Diese Anleitung erklärt, wie Sie DNSSEC für Ihren Domainnamen aktivieren, um ihn vor "Cache Poisoning" zu schützen.**
 

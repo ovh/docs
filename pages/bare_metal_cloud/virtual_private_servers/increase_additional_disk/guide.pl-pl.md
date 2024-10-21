@@ -18,7 +18,7 @@ Jeśli osiągnąłeś maksymalną pojemność dodatkowego dysku, możesz zwięks
 
 - Jeden [VPS](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud.
 - Dodatkowy [dysk](/pages/bare_metal_cloud/virtual_private_servers/config_additional_disk) skonfigurowany na serwerze VPS.
-- Dostęp do [Panelu client OVHcloud](/links/manager).
+- Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 - Dostęp do serwera VPS przez SSH lub RDP.
 
 ## W praktyce
@@ -27,7 +27,7 @@ Poniższe etapy zakładają, że skonfigurowałeś dodatkowy dysk zgodnie z inst
 
 ### Zmień rozmiar dysku <a name="extend"></a>
 
-Zaloguj się do [Panelu client OVHcloud](/links/manager), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer spośród `Prywatne serwery wirtualne`{.action}.
+Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer spośród `Prywatne serwery wirtualne`{.action}.
 
 W sekcji **Podsumowanie opcji** kliknij przycisk `...`{.action} w sekcji `Dodatkowe dyski`. Wybierz `Zwiększ rozmiar dysku`{.action}.
 

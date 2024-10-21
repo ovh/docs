@@ -1,15 +1,8 @@
 ---
 title: Conectarse por SFTP
 excerpt: Cómo conectarse a Hosted Private Cloud por SFTP
-updated: 2024-09-17
+updated: 2021-12-28
 ---
-
-> [!warning]
->
-> **Este procedimiento ha quedado obsoleto (*deprecated*)**.
->
-> Para subir archivos a sus datastores, utilice el método descrito en esta guía: [Uploading files to the VMware vSphere on OVHcloud datastore](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_datastore_upload) (EN).
->
 
 ## Objetivo
 

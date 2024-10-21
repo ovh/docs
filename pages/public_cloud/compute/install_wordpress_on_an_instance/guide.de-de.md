@@ -22,7 +22,7 @@ Dieses Tutorial enthält die Grundschritte für die manuelle Installation von Wo
 
 - Sie haben ein [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud) in Ihrem Kunden-Account.
 - Sie haben eine [Public Cloud Instanz](/pages/public_cloud/compute/public-cloud-first-steps) mit Debian oder Ubuntu erstellt.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben administrativen Zugriff (sudo) auf Ihre Instanz über SSH.
 
 ## In der praktischen Anwendung
@@ -32,7 +32,7 @@ Dieses Tutorial enthält die Grundschritte für die manuelle Installation von Wo
 > Die folgenden Anweisungen sind für die Verwendung mit Debian 11 verifiziert. Da Ubuntu auf Debian basiert, sollte das Tutorial auch für eine aktuelle Ubuntu-Distribution funktionieren.
 >
 
-Um über einen Domainnamen auf Ihre Installation zuzugreifen, müssen Sie diesen mit Ihrer Instanz verknüpfen. Dazu müssen Sie die DNS-Zone bearbeiten, auf die Sie in Ihrem [OVHcloud Kundencenter](/links/manager) zugreifen können, vorausgesetzt OVHcloud ist Ihr Domain-Registrar **und** der Domainname verwendet die OVHcloud DNS-Server.
+Um über einen Domainnamen auf Ihre Installation zuzugreifen, müssen Sie diesen mit Ihrer Instanz verknüpfen. Dazu müssen Sie die DNS-Zone bearbeiten, auf die Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) zugreifen können, vorausgesetzt OVHcloud ist Ihr Domain-Registrar **und** der Domainname verwendet die OVHcloud DNS-Server.
 
 Weitere Informationen finden Sie in der [Anleitung zum Bearbeiten der DNS-Zone](/pages/web_cloud/domains/dns_zone_edit). Wenn der Domainname aktuell verwendet wird, konfigurieren Sie DNS erst nach der Installation des neuen WordPress und dem Einrichten Ihrer Website.
 

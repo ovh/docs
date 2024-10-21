@@ -19,7 +19,7 @@ Si vous constatez un défaut de disque ou que notre système vous a envoyé une 
 
 ## Prérequis
 
-- Être connecté en SSH à votre [serveur dédié OVHcloud](/links/bare-metal/bare-metal){.external} avec l'accès *root* (Linux).
+- Être connecté en SSH à votre [serveur dédié OVHcloud](https://www.ovh.com/ca/fr/serveurs-dedies/){.external} avec l'accès *root* (Linux).
 
 ## En pratique
 

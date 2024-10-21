@@ -12,14 +12,14 @@ Delegar permisos sobre toda una cuenta de correo no siempre es recomendable. La 
 
 ## Requisitos
 
-- Tener una [solución de Exchange en OVHcloud](/links/web/emails-hosted-exchange) ya configurada.
+- Tener una [solución de Exchange en OVHcloud](https://www.ovhcloud.com/es/emails/hosted-exchange/) ya configurada.
 - Tener acceso a la cuenta de Exchange (dirección de correo electrónico y contraseña).
 
 ## Procedimiento
 
 ### 1. Asignar permisos de acceso a una carpeta
 
-Inicie sesión en su cuenta de Exchange a través del [webmail de OVHcloud](/links/web/email). Haga clic derecho en la carpeta que desea compartir y seleccione la opción `Permisos...`{.action}.
+Inicie sesión en su cuenta de Exchange a través del [webmail de OVHcloud](https://www.ovhcloud.com/es/mail/). Haga clic derecho en la carpeta que desea compartir y seleccione la opción `Permisos...`{.action}.
 
 ![sharefolder](images/exchange-folder-step1.png){.thumbnail}
 
@@ -79,7 +79,7 @@ Existen conjuntos de permisos predefinidos (Nivel de permiso). Lo más sencillo 
 
 ![sharefolder](images/exchange-folder-step3.png){.thumbnail}
 
-Inicie sesión en su cuenta de Exchange a través del [webmail de OVHcloud](/links/web/email). En el menú de la izquierda, haga clic derecho en el nombre de su cuenta y seleccione la opción `Agregar carpeta compartida...`{.action}. En la nueva ventana, introduzca la cuenta del usuario que haya compartido la carpeta. Empiece a escribir para ver las sugerencias de sus contactos, introduzca una dirección de correo electrónico completa o utilice el `Directorio de la búsqueda`{.action}. Haga clic en `Agregar`{.action}. La nueva carpeta compartida aparecerá inmediatamente debajo de las demás carpetas.
+Inicie sesión en su cuenta de Exchange a través del [webmail de OVHcloud](https://www.ovhcloud.com/es/mail/). En el menú de la izquierda, haga clic derecho en el nombre de su cuenta y seleccione la opción `Agregar carpeta compartida...`{.action}. En la nueva ventana, introduzca la cuenta del usuario que haya compartido la carpeta. Empiece a escribir para ver las sugerencias de sus contactos, introduzca una dirección de correo electrónico completa o utilice el `Directorio de la búsqueda`{.action}. Haga clic en `Agregar`{.action}. La nueva carpeta compartida aparecerá inmediatamente debajo de las demás carpetas.
 
 ## Más información
 

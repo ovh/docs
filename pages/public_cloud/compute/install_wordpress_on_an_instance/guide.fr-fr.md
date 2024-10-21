@@ -16,7 +16,7 @@ Ce tutoriel fournit les étapes de base pour une installation manuelle de WordPr
 
 - Un projet [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud
 - Avoir une [instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) avec Debian ou Ubuntu installé
-- Être connecté à votre [espace client OVHcloud](/links/manager)
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Disposer d’un accès administratif (sudo) à votre instance via SSH
 
 ## En pratique
@@ -26,7 +26,7 @@ Ce tutoriel fournit les étapes de base pour une installation manuelle de WordPr
 > Les instructions suivantes sont vérifiées pour Debian 11. Ubuntu est basé sur Debian et le tutoriel devrait donc également fonctionner pour une distribution Ubuntu actuelle.
 >
 
-Afin d'accéder à votre installation via un nom de domaine, vous devez relier celui-ci à votre instance. Pour ce faire, vous devez éditer la zone DNS accessible depuis votre [espace client OVHcloud](/links/manager), à condition que OVHcloud soit votre bureau d’enregistrement **et** que le nom de domaine utilise les serveurs DNS OVHcloud.
+Afin d'accéder à votre installation via un nom de domaine, vous devez relier celui-ci à votre instance. Pour ce faire, vous devez éditer la zone DNS accessible depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), à condition que OVHcloud soit votre bureau d’enregistrement **et** que le nom de domaine utilise les serveurs DNS OVHcloud.
 
 Consultez le guide [Éditer sa zone DNS](/pages/web_cloud/domains/dns_zone_edit) pour en savoir plus. Si le nom de domaine est actuellement utilisé, ne configurez les DNS qu'après l'installation du nouveau WordPress et le démarrage de votre site web.
 
@@ -257,4 +257,4 @@ Certbot renouvelle automatiquement les certificats. Aucune autre étape n'est re
 
 ## Aller plus loin
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

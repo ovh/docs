@@ -1,7 +1,7 @@
 ---
 title: 'Configuring IPv6 on a VPS'
 excerpt: 'Find out how to configure IPv6 on your OVHcloud VPS'
-updated: 2024-09-11
+updated: 2024-02-15
 ---
 
 ## Objective
@@ -22,7 +22,7 @@ IPv6 is the latest version of the *Internet Protocol*. Each OVHcloud VPS server 
 - A [Virtual Private Server](https://www.ovhcloud.com/en-ie/vps/) in your OVHcloud account
 - Administrative access (sudo) via SSH or remote desktop (Windows) to your server
 - A basic understanding of networking
-- Access to the [OVHcloud Control Panel](/links/manager) / to the [OVHcloud API](https://api.ovh.com/)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) / to the [OVHcloud API](https://api.ovh.com/)
 
 ## Instructions
 
@@ -50,7 +50,7 @@ The first step is to identify the IPv6 address and the IPv6 gateway assigned to 
 
 #### Via the OVHcloud Control Panel <a name="viacontrolpanel"></a>
 
-Log in to the [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and select your server from `Virtual Private Servers`{.action}.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), go to the `Bare Metal Cloud`{.action} section and select your server from `Virtual Private Servers`{.action}.
 
 The IPv6 address and the IPv6 gateway assigned to your server will appear in the `IP` section of the `Home`{.action} tab. Once you have copied them, continue with [applying the IPv6 configuration](#applyipv6).
 
@@ -126,7 +126,7 @@ Moreover, keep in mind that the exact file names may vary.
 
 By default, the configuration files are located in `/etc/network/interfaces.d/`.
 
-The best practice is to create a separate configuration file in the `/etc/network/interfaces.d/` directory to configure the IPv6 address. In our example, our file is called `51-cloud-init-ipv6`:
+The best practice is to create a separate configuration file in the `/etc/network/interfaces.d/` directory to configure IPV6. In our example, our file is called `51-cloud-init-ipv6`:
 
 ```bash
 sudo nano /etc/network/interfaces.d/51-cloud-init-ipv6
@@ -192,11 +192,9 @@ sudo cp /etc/network/interfaces.bak /etc/network/interfaces
 
 ##### Configuration using Netplan <a name="netplan"></a>
 
-The network configuration files are located in the `/etc/netplan/` directory. By default, the main configuration file is called `50-cloud-init.yaml`. Before continuing, first check this file to see if the IPv6 address has already been configured. If so, you don't need to configure the IPv6 address again as you only have one IPv6 with your VPS server.
+The network configuration files are located in the `/etc/netplan/` directory. By default, the main configuration file is called `50-cloud-init.yaml`.
 
-If the IPv6 address has not been configured, the best approach is to create a separate configuration file to set up the IPv6 address in the `/etc/netplan/` directory. This way, you can easily revert the changes in case of an error.
-
-In addition, we recommend that you adjust the permissions for the newly created file. For more information about file permissions, consult the [official documentation of ubuntu](https://help.ubuntu.com/community/FilePermissions){.external}.
+The best approach is to create a separate configuration file for setting up IPv6 addresses in the `/etc/netplan/` directory. This way, you can easily revert the changes in case of an error.
 
 In our example, our file is named `51-cloud-init-ipv6.yaml`:
 
@@ -211,34 +209,29 @@ network:
     version: 2
     ethernets:
         eth0:
-            dhcp6: false
+            dhcp6: no
             match:
               name: eth0
             addresses:
               - YOUR_IPV6/IPv6_PREFIX
             routes:
-# If IPV6_PREFIX is 128 then add link route to gateway
-#              - to: IPv6_GATEWAY
-#                scope: link
               - to: ::/0
                 via: IPv6_GATEWAY
 ```
 
-**Configuration example** (with prefix /128):
+**Configuration example**:
 
 ```yaml
 network:
     version: 2
     ethernets:
         eth0:
-            dhcp6: false
+            dhcp6: no
             match:
               name: eth0
             addresses:
               - 2607:5300:201:abcd::7c5/128
             routes:
-              - to: 2607:5300:201:abcd::1
-                scope: link
               - to: ::/0
                 via: 2607:5300:201:abcd::1
 ```
@@ -475,4 +468,4 @@ In order to return to automatic management of your network by Cloud-init, delete
 
 ## Go further
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

@@ -63,7 +63,7 @@ Click on the tabs below for an illustrated explanation of how aliases and redire
 
 ## Requirements
 
-- A preconfigured OVHcloud email solution, such as [**Hosted Exchange**](/links/web/emails-hosted-exchange), [**Email Pro**](/links/web/email-pro) or **MX Plan** (available with a [web hosting plan](/links/web/hosting), a [100M free hosting](/links/web/domains-free-hosting), or ordered separately)
+- A preconfigured OVHcloud email solution, such as [**Hosted Exchange**](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/), [**Email Pro**](https://www.ovhcloud.com/en-gb/emails/email-pro/)) or **MX Plan** (available with a [web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/), a [100M free hosting](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/), or ordered separately)
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
@@ -79,7 +79,7 @@ Click on the tabs below for an illustrated explanation of how aliases and redire
 >
 
 >
-> Depending on the date your MX Plan solution was activated and if it was recently migrated, you may have the legacy version or the new version of the solution. Before you proceed, you will need to identify it.<br>
+> Depending on the date your MX Plan solution was activated and if it was recently [migrated](https://www.ovhcloud.com/en-gb/web-hosting/mxplan-migration/), you may have the legacy version or the new version of the solution. Before you proceed, you will need to identify it.<br>
 >
 > To do this, log in to your [OVHcloud Control Panel](/links/manager), go to the `Web Cloud`{.action} section and click on `Emails`{.action}. Choose the name of the relevant MX Plan service. Identify your solution according to the following table:<br>
 >

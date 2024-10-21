@@ -40,7 +40,7 @@ A dedicated server is a physical server ("bare metal") located in one of our dat
 
 > [!success]
 >
-> Find more information about server operating systems on [our web page](/links/bare-metal/os).
+> Find more information about server operating systems on [our web page](https://www.ovhcloud.com/en/bare-metal/os/).
 >
 
 You can easily reinstall your server or choose a different OS image to install in your [OVHcloud Control Panel](/links/manager). In the `General information`{.action} tab, click on `...`{.action} next to the operating system and then click `Install`{.action}.
@@ -55,7 +55,7 @@ In the popup window, select one of the installation options:
 
 > [!primary]
 >
-> Some proprietary operating systems or platforms such as Plesk and Windows require licences which generate additional fees. You can buy licences [via OVHcloud](/links/bare-metal/os) or from an external reseller. You will then need to apply your licence, in the operating system itself or by using your [OVHcloud Control Panel](/links/manager).
+> Some proprietary operating systems or platforms such as Plesk and Windows require licences which generate additional fees. You can buy licences [via OVHcloud](https://www.ovhcloud.com/en/bare-metal/os/) or from an external reseller. You will then need to apply your licence, in the operating system itself or by using your [OVHcloud Control Panel](/links/manager).
 >
 You can manage all your licences in the `Bare Metal Cloud`{.action} section under `Licences`{.action}. In this section, you can also order licences or add existing ones via the `Actions`{.action} button.
 >
@@ -303,4 +303,4 @@ To activate and use the backup storage, please refer to [this guide](/pages/bare
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

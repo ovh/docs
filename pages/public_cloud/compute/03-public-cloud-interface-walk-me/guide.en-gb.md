@@ -1,5 +1,5 @@
 ---
-title: "How to use the Public Cloud interface"
+title: "Familiarise yourself with the Public Cloud interface"
 excerpt: "Guided tour of the Public Cloud interface to explore the different sections"
 updated: 2021-12-06
 ---
@@ -12,7 +12,7 @@ You have just created your Public Cloud project, and you would like to find out 
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](/links/manager){.external}.
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
 - You need to have created your [first Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project).
 
 ## Instructions
@@ -76,7 +76,7 @@ There are several management tools available in your Public Cloud project, they 
 |**Horizon**|This is the [graphical interface](/pages/public_cloud/compute/introducing_horizon) usually available on OpenStack. It is not altered, which allows users who are used to this interface to easily navigate it.|
 |**Users and Roles**|Allows you to [create users](/pages/public_cloud/compute/create_and_delete_a_user) and assign them a role. These users can also access the APIs or the Horizon interface directly. For example, you can create a user for your standard maintenance operations, and a user for your automation tools, such as Terraform.|
 |**Quota and Regions**|This tool allows you to control the locations and resource limits available on your project.<br><br>**Quotas**: Based on certain criteria (number of bills already paid, use of other OVHcloud products), our system sets quotas (limits) on the number of resources you can create, in order to avoid any outstanding amounts. By default, the system increases your quotas automatically when certain criteria are met. However, you can [manually increase a quota](/pages/public_cloud/compute/increasing_public_cloud_quota#increasing-your-resources-quota-manually) from this tool.<br><br>**Regions**: Public Cloud is available in several locations around the world. Furthermore, each location can contain several “regions” (a concept unique to OpenStack). For example, for a European customer, the APAC (Asia Pacific) zone is disabled by default. If it suits your needs, you can activate new regions from this menu.|
-|**SSH Keys**|A tool that allows you to [manage your SSH keys](/pages/public_cloud/compute/creating-ssh-keys-pci) in a centralised way.|
+|**SSH Keys**|A tool that allows you to [manage your SSH keys](/pages/public_cloud/compute/public-cloud-first-steps#step-1-creating-ssh-keys) in a centralised way.|
 |**Billing Control**|Since the Public Cloud is based on *pay as you go*, invoices are issued at the end of the month. In [this menu](/pages/public_cloud/compute/analyze_billing), you can track your current usage, see a forecast for the next invoice, and of course see your previous invoices.|
 |**Credit and Vouchers**|This menu allows you to view the consumption of a voucher, add a voucher, or [add credit](/pages/account_and_service_management/managing_billing_payments_and_services/add_cloud_credit_to_project) directly to your Public Cloud project.|
 |**Contacts and Rights**|In addition to changing the technical contact or billing contact for your project, you will have the option of [adding other contacts](/pages/public_cloud/compute/change_project_contacts) (OVHcloud account) to manage your project technically. You can also add users in read-only mode.|
@@ -86,6 +86,6 @@ There are several management tools available in your Public Cloud project, they 
 
 [Creating and connecting to your first Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

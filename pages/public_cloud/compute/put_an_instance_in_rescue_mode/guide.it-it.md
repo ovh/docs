@@ -13,7 +13,7 @@ Se non riesci ad accedere alla tua istanza a causa di una configurazione non cor
 ## Prerequisiti
 
 - Aver creato un’istanza [Public Cloud](https://www.ovhcloud.com/it/public-cloud/){.external} nel tuo account OVHcloud
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
 
@@ -23,7 +23,7 @@ Se non riesci ad accedere alla tua istanza a causa di una configurazione non cor
 
 ### Attiva la modalità di ripristino
 
-Per prima cosa, accedi al tuo [Spazio Cliente OVHcloud](/links/manager){.external} e clicca sul menu `Public Cloud`{.action}.
+Per prima cosa, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e clicca sul menu `Public Cloud`{.action}.
 
 Poi, seleziona il tuo progetto Public Cloud dal menu a sinistra e vai su Istanze.
 

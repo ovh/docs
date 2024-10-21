@@ -1,7 +1,7 @@
 ---
 title: Enterprise File Storage - FAQ
 excerpt: 'FAQ dotyczący rozwiązania Entreprise File Storage'
-updated: 2024-09-24
+updated: 2022-03-21
 ---
 
 > [!primary]
@@ -74,7 +74,7 @@ Prosimy o dołączenie do usługi handlowej lub pomocy technicznej w celu zaproj
 
 ### Jakie są dostępne możliwości przechowywania danych?
 
-Minimalny rozmiar usługi to 1TB, a maksymalny rozmiar to 58TB. Granulat wynosi 1TB.
+Minimalny rozmiar usługi to 1TiB, a maksymalny rozmiar to 58TiB. Granulat wynosi 1TiB.
 
 ### Jak wiele usług Enterprise File Storage mogę tworzyć na koncie klienta?
 
@@ -82,13 +82,13 @@ Nie ma limitu liczby usług na konto klienta.
 
 ### Jaka jest maksymalna liczba woluminów na usługę?
 
-Możesz utworzyć maksymalnie 10 wolumenów na usługę. Minimalny rozmiar to 100GB, a maksymalny rozmiar to 29TB.
+Możesz utworzyć maksymalnie 10 wolumenów na usługę. Minimalny rozmiar to 100GiB, a maksymalny rozmiar to 29TiB.
 
 ### Jaki poziom wydajności jest dostępny dla Enterprise File Storage?
 
-Firma File Storage jest dostarczana z gwarantowanym przepływem 64MB/s na TB i 4000 IOPS na TB.
+Firma File Storage jest dostarczana z gwarantowanym przepływem 64MB/s na TiB i 4000 IOPS na TiB.
 
-Na przykład podczas dostarczania puli 10 TB możesz korzystać z przepustowości 640MB/s i 40000 IOPS.
+Na przykład podczas dostarczania puli 10 TiB możesz korzystać z przepustowości 640MB/s i 40000 IOPS.
 
 ## Snapshoty i kopie zapasowe
 
@@ -102,7 +102,7 @@ Użytkownicy są odpowiedzialni za zarządzanie kopiami zapasowymi (narzędzie i
 
 ### Czy snapshoty są zawarte w pojemności usługi?
 
-Do kopii zapasowych snapshot przydziela się co najmniej 5% przestrzeni dyskowej. Na przykład, w usłudze 5TB, 250GB jest zarezerwowane dla snapshotów.
+Do kopii zapasowych snapshot przydziela się co najmniej 5% przestrzeni dyskowej. Na przykład, w usłudze 5TiB, 250GiB jest zarezerwowane dla snapshotów.
 
 ### Jaka jest maksymalna liczba snapshotów na usługę?
 
@@ -132,7 +132,7 @@ Nie ma jeszcze zintegrowanych metryk, które mógłbyś monitorować wykorzystan
 
 ### Jaki rodzaj opłat jest przypisany do usługi?
 
-Enterprise File Storage to usługa płatna co miesiąc za wolumen (od 1 do 58 TB w odstępach 1 TB). Możliwe jest również, opcjonalnie, zobowiązanie się na czas użytkowania usługi (12, 24 lub 36 miesięcy).
+Enterprise File Storage to usługa płatna co miesiąc za wolumen (od 1 do 58 TiB w odstępach 1 TiB). Możliwe jest również, opcjonalnie, zobowiązanie się na czas użytkowania usługi (12, 24 lub 36 miesięcy).
 
 ## Sprawdź również
 

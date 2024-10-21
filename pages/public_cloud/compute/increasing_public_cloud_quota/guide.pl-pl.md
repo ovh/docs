@@ -18,7 +18,7 @@ Jeśli chcesz utworzyć więcej zasobów, musisz zwiększyć limit.
 
 ## Wymagania początkowe
 
-- Zalogowanie do [Panelu klienta OVHcloud](/links/manager).
+- Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 - [Posiadanie ważnego](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) sposobu płatności w Panelu klienta OVHcloud.
 
 ## Wskazówki
@@ -33,7 +33,7 @@ Możesz zwiększyć limit zasobów ręcznie lub automatycznie.
 
 Procedura ta pozwala na ręczne zażądanie zwiększenia rozmiaru projektu i jego zatwierdzenie z góry (zasilenie Public Cloud).
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz Twój projekt Public Cloud.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Public Cloud`{.action} i wybierz Twój projekt Public Cloud.
 
 Na lewym pasku bocznym kliknij pozycję `Quota and Regions`{.action}.
 
@@ -73,7 +73,7 @@ Ta opcja pozwala na żądanie automatycznego, stopniowego zwiększenia limitu za
 
 Nie jest to proces natychmiastowy, a przydział zasobów jest zwiększany z czasem.
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz Twój projekt Public Cloud.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Public Cloud`{.action} i wybierz Twój projekt Public Cloud.
 
 Na lewym pasku bocznym kliknij pozycję `Quota and Regions`{.action}.
 

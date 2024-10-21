@@ -1,7 +1,7 @@
 ---
 title: Local Zone Compute - Fonctionnalités, capacités et limites
 excerpt: Découvrez les fonctionnalités, les capacités et les limites actuelles des instances Local Zones
-updated: 2024-10-15
+updated: 2024-07-10
 ---
 
 ## Objectif
@@ -9,7 +9,7 @@ updated: 2024-10-15
 Les instances Local Zones sont une extension des [régions](/links/public-cloud/regions-pci) qui rapprochent les services OVHcloud de lieux spécifiques, offrant une latence réduite et des performances améliorées pour les applications.
 Les instances Local Zones sont stratégiquement placées à proximité des zones à forte demande des utilisateurs. Leur objectif principal est de minimiser le temps nécessaire au transfert des données entre l'utilisateur et le cloud, afin de rendre les services plus rapides et plus réactifs et de répondre aux exigences de Data residency.
 
-Retrouvez plus d’informations sur notre [page dédiée aux instances Local Zone](/links/public-cloud/local-zones).
+Retrouvez plus d’informations sur notre [page dédiée aux instances Local Zone](/links/public-cloud/local-zones)).
 
 **Découvrez les fonctionnalités ainsi que les capacités actuelles et à venir des instances Local Zones.**
 
@@ -25,8 +25,7 @@ Retrouvez plus d’informations sur notre [page dédiée aux instances Local Zon
 | Boot/Start | Oui |
 | Stop | Oui |
 | Block Storage | Oui |
-| Sauvegardes des instances | Oui |
-| Sauvegarde automatisée des instances | Non |
+| Sauvegardes des instances | Non |
 | Snapshots de volumes| Non |
 | Sauvegardes de volumes | Non |
 | Object Storage | Non |

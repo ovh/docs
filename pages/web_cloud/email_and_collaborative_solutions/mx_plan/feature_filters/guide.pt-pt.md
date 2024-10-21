@@ -21,8 +21,8 @@ Por exemplo: deseja que todo o e-mail que contenha "\[SPAM]" no assumpto seja el
 
 ## Requisitos
 
-- Ter um serviço de e-mail MX Plan (disponível através de: um plano de [alojamento web](/links/web/hosting), o [Alojamento gratuito 100M](/links/web/domains-free-hosting) incluído com um domínio ou a oferta MX Plan (encomendada separadamente).
-- Ter acesso à sua [Área de Cliente OVHcloud](/links/manager).
+- Ter um serviço de e-mail MX Plan (disponível através de: um plano de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external}, o [Alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/){.external} incluído com um domínio ou a oferta MX Plan (encomendada separadamente).
+- Ter acesso à sua [Área de Cliente OVHcloud](	https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 > [!warning]
 >
@@ -36,11 +36,11 @@ Versão antiga da oferta MX Plan|Nova versão da oferta MX Plan|
 
 ## Prática <a name="oldmxplan"></a>
 
-Aceda à [Área de Cliente OVHcloud](/links/manager), na secção `Web Cloud`.
+Aceda à Área de [Cliente OVHcloud](	https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`.
 
 Clique em `E-mails`{.action} e selecione o serviço MX Plan correspondente.
 
-No separador `E-mails`{.action} do serviço MX Plan, encontrará a lista dos endereços de e-mail. Pode ver uma coluna de `filtros` na tabela de contas de e-mail. Clique no ícone de funil.
+No separador `E-mails`{.action} do serviço MXplan, encontrará a lista dos endereços de e-mail. Pode ver uma coluna de `filtros` na tabela de contas de e-mail. Clique no ícone de funil.
 
 ![emails](images/img_3239.png){.thumbnail}
 

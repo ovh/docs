@@ -1,7 +1,7 @@
 ---
 title: Assigning a Virtual MAC to an Additional IP
 excerpt: This guide will show you how to create a virtual MAC address and assign it to an Additional IP address.
-updated: 2024-08-05
+updated: 2022-12-20
 ---
 
 ## Objective
@@ -12,17 +12,15 @@ OVHcloud allows you to associate a virtual MAC address with an IP address, so th
 
 ## Requirements
 
-- A [dedicated server](/links/bare-metal/bare-metal) that supports [virtual MACs](/pages/bare_metal_cloud/dedicated_servers/network_support_virtual_mac).
-- An [Additional IP address](/links/network/additional-ip){.external} or an Additional IP block (RIPE).
-- Access to your [OVHcloud Control Panel](/links/manager){.external} or to the [OVHcloud API](https://api.ovh.com/).
+- A [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) that supports [virtual MACs](/pages/bare_metal_cloud/dedicated_servers/network_support_virtual_mac).
+- An [Additional IP address](https://www.ovhcloud.com/en-gb/bare-metal/ip/){.external} or an Additional IP block (RIPE).
+- Access to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} or to the [OVHcloud API](https://api.ovh.com/).
 - Your server must support virtual MACs. To determine this, consult [this guide](/pages/bare_metal_cloud/dedicated_servers/network_support_virtual_mac).
 
 > [!warning]
-> This feature might be unavailable or limited on servers of the [**Eco** product line](/links/bare-metal/eco-about).
-> Please visit our [comparison page](/links/bare-metal/eco-compare) for more information.
+> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-gb/about/).
 >
-> This feature will soon be available for all High Grade, Scale and Advance servers from December 2024.
-> 
+> Please visit our [comparison page](https://eco.ovhcloud.com/en-gb/compare/) for more information.
 
 > [!primary]
 > If you are not familiar with using the OVHcloud API, please refer to our guide on [First steps with the OVHcloud APIs](/pages/manage_and_operate/api/first-steps).
@@ -79,7 +77,7 @@ Use the following API call:
 
 #### Via the OVHcloud Control Panel
 
-To remove a virtual MAC address associated with an Additional IP, you must first connect to your [Control Panel](/links/manager){.external}. Once connected, go to the `Bare Metal Cloud`{.action} section and click on `Network`{.action}. Next, open the `IP`{.action} menu. Select the correct server, so that the Additional IP (or IP block) attached to it appears.
+To remove a virtual MAC address associated with an Additional IP, you must first connect to your [Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Once connected, go to the `Bare Metal Cloud`{.action} section and click on `Network`{.action}. Next, open the `IP`{.action} menu. Select the correct server, so that the Additional IP (or IP block) attached to it appears.
 
 Finally, click on the `...`{.action} button on the right, then click `Delete a Virtual MAC`{.action}.
 
@@ -94,4 +92,4 @@ Use the following API call:
 
 ## Go further
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

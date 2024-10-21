@@ -10,7 +10,7 @@ updated: 2024-01-22
 
 ## Wprowadzenie
 
-Możesz sprawdzić, czy VPS pochodzi z poprzedniej gamy serwerów, używając nazwy wyświetlanej w [Panelu klienta](/links/manager): jeśli ten wewnętrzny numer referencyjny ma format *vpsXXXX.ovh.net* (gdzie *X* odpowiada liczbie) i nie przeniosłeś odpowiedniego serwera VPS do [naszej aktualnej gamy produktów](https://www.ovhcloud.com/pl/vps/), jest to VPS *legacy*. 
+Możesz sprawdzić, czy VPS pochodzi z poprzedniej gamy serwerów, używając nazwy wyświetlanej w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl): jeśli ten wewnętrzny numer referencyjny ma format *vpsXXXX.ovh.net* (gdzie *X* odpowiada liczbie) i nie przeniosłeś odpowiedniego serwera VPS do [naszej aktualnej gamy produktów](https://www.ovhcloud.com/pl/vps/), jest to VPS *legacy*. 
 
 Model VPS gamy dostępny obecnie: *vps-XXXXX.vps.ovh.net* (gdzie *X* może być cyfrą lub literą).
 
@@ -21,11 +21,11 @@ Serwer VPS *legacy* wymaga kilku różnic w zarządzaniu.
 ## Wymagania początkowe
 
 - [VPS *legacy*](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud
-- Zalogowanie do [Panelu klienta OVHcloud](/links/manager)
+- Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 ## W praktyce
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), otwórz zakładkę `Bare Metal Cloud`{.action} i wybierz Twój serwer spośród `Prywatne serwery wirtualne`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), otwórz zakładkę `Bare Metal Cloud`{.action} i wybierz Twój serwer spośród `Prywatne serwery wirtualne`{.action}.
 
 W zakładce `Strona główna`{.action} serwerów VPS można przejść do głównych operacji w sekcji **Szybki dostęp**.
 
@@ -115,7 +115,7 @@ Użyj tej opcji, aby połączyć się z serwerem VPS przez KVM. Szczegółowe in
 
 ### Zmiana właściciela
 
-Link ten przekierowuje Cię do formularza, który należy wypełnić w przypadku zmiany właściciela serwera VPS. Jeśli potrzebujesz pomocy w przeprowadzeniu tej procedury, skontaktuj się z naszymi zespołami pomocy, tworząc zgłoszenie w [Panelu klienta OVHcloud](/links/manager).
+Link ten przekierowuje Cię do formularza, który należy wypełnić w przypadku zmiany właściciela serwera VPS. Jeśli potrzebujesz pomocy w przeprowadzeniu tej procedury, skontaktuj się z naszymi zespołami pomocy, tworząc zgłoszenie w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ### Przejdź na nową gamę
 

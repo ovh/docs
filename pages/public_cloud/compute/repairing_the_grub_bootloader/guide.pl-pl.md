@@ -14,14 +14,11 @@ Możliwe, że trzeba naprawić bootloader GRUB. Niniejszy przewodnik pozwoli Ci 
 
 ## Wymagania początkowe
 
-- [Instancja Public Cloud](/links/public-cloud/public-cloud) utworzona na koncie OVHcloud
+- Instancja musi być w trybie Rescue (zapoznaj się z przewodnikiem [Zmień instancję w trybie rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode))
 
 ## W praktyce
 
-> [!warning]
-> Instancja musi być w trybie Rescue (zapoznaj się z przewodnikiem [Zmień instancję w trybie rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode))
-
-Zaloguj się do instancji za pomocą VNC w [Panelu klienta OVHcloud](/links/manager) lub przez SSH.
+Zaloguj się do instancji za pomocą VNC w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) lub przez SSH.
 
 Wprowadź następujące polecenia, aby zamontować zdalny system plików i rozpocząć naprawę GRUB:
 

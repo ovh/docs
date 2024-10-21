@@ -12,14 +12,14 @@ With the "Inbox rules" option, you can create an elaborate set of rules to handl
 
 ## Requirements
 
-- an OVHcloud email solution already set up (**MX Plan**, available as part of our [Web Hosting plans](/links/web/hosting), included in a [100M free hosting](/links/web/domains-free-hosting) or ordered separately as a standalone solution; [**Hosted Exchange**](/links/web/emails-hosted-exchange) or [**Email Pro**](/links/web/email-pro))
+- an OVHcloud email solution already set up (**MX Plan**, available as part of our [Web Hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/), included in a [100M free hosting](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/) or ordered separately as a standalone solution; [**Hosted Exchange**](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/) or [**Email Pro**](https://www.ovhcloud.com/en-gb/emails/email-pro/))
 - login credentials for the email address you want to configure
 
 ## Instructions
 
 ### Step 1: Navigating to the options section
 
-Log in to your Exchange account via the [OVHcloud webmail](/links/web/email). Click on the gear symbol on the top right to unfold the "Options" menu and select `Options`{.action}.
+Log in to your Exchange account via the [OVHcloud webmail](https://www.ovh.co.uk/mail). Click on the gear symbol on the top right to unfold the "Options" menu and select `Options`{.action}.
 
 ![inboxrules](images/exchange-rules-step1.png){.thumbnail}
 

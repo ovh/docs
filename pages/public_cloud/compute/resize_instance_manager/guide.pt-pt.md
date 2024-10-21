@@ -29,11 +29,11 @@ No seguimento de um crescimento da sua atividade, ou simplesmente porque tem nov
 ## Requisitos
 
 - Ter uma [instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) na sua conta OVHcloud.
-- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ## Instruções
 
-Inicie a sessão na [Área de Cliente OVHcloud](/links/manager), aceda à secção `Public Cloud`{.action} e selecione o projeto Public Cloud em questão. A seguir, clique em `Instâncias`{.action} no menu à esquerda. 
+Inicie a sessão na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), aceda à secção `Public Cloud`{.action} e selecione o projeto Public Cloud em questão. A seguir, clique em `Instâncias`{.action} no menu à esquerda. 
 
 A seguir, clique em `...`{.action} à direita da instância e selecione `Editar`{.action}.
 

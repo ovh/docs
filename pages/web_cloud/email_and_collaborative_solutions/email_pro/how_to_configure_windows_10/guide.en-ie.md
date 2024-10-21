@@ -1,14 +1,14 @@
 ---
-title: 'Email Pro - Configure your email account on Courrier for Windows'
-excerpt: 'Find out how to configure an Email Pro account on the Mail application for Windows'
-updated: 2024-10-09
+title: 'Configuring your Email Pro account in the Mail application for Windows 10'
+excerpt: 'Find out how to configure an Email Pro account on the Mail application for Windows 10'
+updated: 2020-03-18
 ---
 
 ## Objective
 
 You can configure Email Pro accounts on email clients, if they are compatible. By doing so, you can use your email address through your preferred email application.
 
-**Find out how to configure an Email Pro account in the Mail application for Windows.**
+**Find out how to configure an Email Pro account in the Mail application for Windows 10.**
 
 > [!warning]
 >OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
@@ -18,7 +18,7 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 
 ## Requirements
 
-- You must have an [Email Pro](/links/web/email-pro) account.
+- You must have an [Email Pro](https://www.ovhcloud.com/en-ie/emails/email-pro/) account.
 - You need to have the Mail application installed on your device.
 - You need to have the required credentials for the email address you would like to configure.
 
@@ -30,7 +30,7 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 >
 > In this guide, we will use as the server name: "pro**?**.mail.ovh.net". You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
 > 
-> You can find this information in the [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section, if you select `Professional Email`{.action}. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
+> You can find this information in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), in the `Web Cloud`{.action} section, if you select `Professional Email`{.action}. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
 >
 
 Once you have launched Mail on your device, you can add an account in two different ways:
@@ -80,16 +80,12 @@ If you need to enter any settings manually in your account preferences, the tech
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVHcloud also offers a web application that includes various [collaborative features](/links/web/emails), accessible at [Webmail](/links/web/email). You can log in using your email credentials.
+OVHcloud also offers a web application that includes various [collaborative features](https://www.ovhcloud.com/en-ie/emails/), accessible at <https://www.ovh.ie/mail/>. You can log in using your email credentials.
 
 ## Go further
 
-> [!primary]
->
-> For more information about setting up an email address from the Mail on Windows email client, see [Microsoft Help Center](https://support.microsoft.com/en-gb/office/setting-email-in-mail-application-7ff79e8b-439b-4b47-8ff9-3f9a33166c60).
+[Configuring an email address included in an MX Plan package or web hosting plan in the Mail application for Windows 10](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10)
 
-[Configuring an email address included in an MX Plan package or web hosting plan in the Mail application for Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10)
-
-[Configuring your Exchange account in the Mail app for Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_windows_10)
+[Configuring your Exchange account in the Mail app for Windows 10](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_windows_10)
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -1,7 +1,7 @@
 ---
 title: 'Finalise a maintenance intervention on your dedicated server'
 excerpt: "Find out what actions you can carry out yourself on your server following a maintenance intervention"
-updated: 2024-08-27
+updated: 2024-01-15
 ---
 
 ## Objective
@@ -14,7 +14,7 @@ Its goal is to support you and ensure that there is as little impact as possible
 
 ## Requirements
 
-- A [dedicated server](/links/bare-metal/bare-metal) in your OVHcloud account
+- A [dedicated server](https://www.ovhcloud.com/en-sg/bare-metal/) in your OVHcloud account
 
 ## Instructions
 
@@ -32,7 +32,7 @@ Continue reading this guide by clicking on the link for your installation:
     - [FreeBSD](#freebsd)
     - [Gentoo](#gentoo)
 - Virtualisation
-    - [Proxmox/Debian](#proxmox)
+    - [Proxmox](#proxmox)
     - [XenServer](#xenserver)
     - [ESXi](#esxi)
     - [Windows (hyper-V)](#windows)
@@ -44,8 +44,7 @@ Continue reading this guide by clicking on the link for your installation:
 
 <a name="ubuntu"></a>
 
-### Ubuntu
-
+### Ubuntu 
 If you are experiencing network connectivity issues (for example, no ping after a motherboard replacement), perform the following steps:
 
 1\. Reboot the server in [rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).<br>
@@ -148,15 +147,13 @@ root@rescue:~# mount /dev/my_system_disk /mnt
 ```
 
 3\. Check the configuration file `/mnt/etc/sysconfig/network-scripts/ifcfg-eth0`.
-
 4\. Back up the files and edit them to correct the MAC address:
 
 ```bash
 root@rescue:~# cp /mnt/etc/sysconfig/network-scripts/ifcfg-eth0 /mnt/etc/sysconfig/network-scripts/ifcfg-eth0.`date +%s`
 ```
 
-5\. Enter the new MAC address in the line `HWADDR=xx:xx:xx:xx:xx:xx`.
-
+5\. Enter the new MAC address in the line `HWADDR=xx.xx.xx.xx.xx.xx`.
 6\. Please remember to unmount the partition `/` before rebooting the server.
 
 <a name="smartos"></a>
@@ -464,7 +461,7 @@ root@rescue:~#
 
 <a name="proxmox"></a>
 
-### Proxmox/Debian
+### Proxmox
 
 If you are experiencing network connectivity issues (for example, no ping after a motherboard replacement), this may be related to an error during system startup caused by the old MAC address value still present:
 
@@ -515,7 +512,7 @@ root@rescue:~#
 2\. Create the `70-persistent-net.rules` file again and add:
 
 - The network interface name found in the `/mnt/etc/network/interfaces` file.
-- The new MAC address (viewable in the tab `Network interfaces`{.action} in the [OVHcloud Control Panel](/links/manager) or in the return of the command `ip link`).
+- The new MAC address (viewable in the tab `Network interfaces`{.action} in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) or in the return of the command `ip link`).
 
 ```bash
 root@rescue:~# cat /mnt/etc/udev/rules.d/70-persistent-net.rules
@@ -903,5 +900,5 @@ The image below is a summary of the actions mentioned above:
 ![select_efi](images/select_efi-v2.gif){.thumbnail}
 
 ## Go further <a name="go-further"></a>
-
-Join our [community of users](/links/community).
+  
+Join our community of users on <https://community.ovh.com/en/>.

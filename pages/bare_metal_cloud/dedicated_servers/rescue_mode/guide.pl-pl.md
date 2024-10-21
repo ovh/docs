@@ -1,7 +1,7 @@
 ---
 title: "Aktywacja i korzystanie z trybu Rescue"
 excerpt: "Dowiedz się, jak używać trybu Rescue OVHcloud do rozwiązywania problemów z serwerem dedykowanym"
-updated: 2024-08-23
+updated: 2024-05-21
 ---
 
 > [!primary]
@@ -64,11 +64,6 @@ W tej sytuacji dostępne są dwa tryby uwierzytelniania:
 Wybierz opcję "Uwierzytelnianie za pomocą klucza SSH", a następnie wpisz swój klucz SSH **publiczny** w dedykowanym polu tekstowym.
 
 ![Uwierzytelnianie za pomocą klucza SSH](images/rescue-mode-08.png){.thumbnail}
-
-> [!primary]
-> 
-> Możesz dodać domyślny klucz SSH dla trybu ratunkowego serwera za pośrednictwem API OVHcloud. Aby uzyskać więcej informacji, sprawdź [tę część tego przewodnika](#rescuessh).
->
 
 ### Uwierzytelnianie za pomocą hasła
 
@@ -234,39 +229,6 @@ W trybie tym zainstalowane są już następujące narzędzia:
 |TestDisk|Wydajna aplikacja do odzyskiwania danych.  Umożliwia odzyskiwanie i modyfikację uszkodzonych partycji, odnajdowanie zgubionych partycji, naprawę sektora rozruchowego, a nawet odbudowę uszkodzonego MBR. |
 |FileZilla|Open source’owy klient FTP  Obsługuje protokoły SSH i SSL, posiada przejrzysty i intuicyjny interfejs typu “przeciągnij i upuść”. Może być używany do przesyłania danych na serwer FTP, na przykład kopii zapasowej FTP dostarczanej z większością modeli serwerów OVHcloud.|
 |7-ZIP|Narzędzie do kompresji i archiwizacji plików czytające następujące formaty: ARJ, CAB, CHM, CPIO, CramFS, DEB, DMG, FAT, HFS, ISO, LZH, LZMA, MBR, MSI, NSIS, NTFS, RAR, RPM, SquashFS, UDF, VHD, WIM, XAR oraz Z. Umożliwia również tworzenie Twoich własnych archiwów w następujących formatach: BZIP2, GZIP, TAR, WIM, XZ, Z oraz ZIP.|
-
-<a name="rescuessh"></a>
-
-### Jak dodać domyślny klucz SSH dla trybu rescue
-
-Aby przyspieszyć ten proces, możesz dodać domyślny klucz SSH dla trybu Rescue Twojego serwera za pośrednictwem [API OVHcloud](/pages/manage_and_operate/api/first-steps).
-
-W tym celu w konsoli internetowej API otwórz następujący punkt końcowy API:
-
-> [!api]
->
-> @api {v1} /dedicated/server PUT /dedicated/server/{serviceName}
->
-
-W odpowiednim polu wpisz wewnętrzną nazwę serwera.
-
-Następnie zmodyfikuj poniższe pole tekstowe w następujący sposób:
-
-```bash
-{
-  "rescueSshKey": "string"
-}
-```
-
-Zastąp `string` publicznym kluczem SSH.
-
-Wynik powinien wyglądać jak pokazano w poniższym przykładzie:
-
-![rescue key example](images/rescuekey.png){.thumbnail}
-
-Po wpisaniu prawidłowych wartości kliknij przycisk `TRY`{.action}.
-
-Pole klucza SSH zostanie teraz automatycznie wypełnione tym ciągiem klucza podczas zmiany trybu Netboot.
 
 ## Sprawdź również
 

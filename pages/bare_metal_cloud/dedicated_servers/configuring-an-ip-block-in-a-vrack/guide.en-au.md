@@ -6,7 +6,7 @@ updated: 2023-08-31
 
 ## Objective
 
-As well as private IP addressing, the [vRack](/links/network/vrack){.external} also allows you to route public IP traffic through your server's [vRack](/links/network/vrack){.external} port using a public IP address block.
+As well as private IP addressing, the [vRack](https://www.ovh.com.au/solutions/vrack/){.external} also allows you to route public IP traffic through your server's [vRack](https://www.ovh.com.au/solutions/vrack/){.external} port using a public IP address block.
 
 **This guide will show you how to configure a block of public IP addresses for use with the vRack.**
 
@@ -15,8 +15,8 @@ As well as private IP addressing, the [vRack](/links/network/vrack){.external} a
 - A public block of IP addresses in your account, with a minimum of four addresses
 - Your chosen private IP address range
 - A [vRack compatible server](https://www.ovh.com.au/dedicated-servers/){.external}
-- A [vRack](/links/network/vrack){.external} service activated in your account
-- Access to the OVHcloud [Control Panel](/links/manager){.external}
+- A [vRack](https://www.ovh.com.au/solutions/vrack/){.external} service activated in your account
+- Access to the OVHcloud [Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}
 
 > [!warning]
 > This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-au/about/).
@@ -27,7 +27,7 @@ As well as private IP addressing, the [vRack](/links/network/vrack){.external} a
 
 > [!primary]
 >
-> For example purposes we'll be using an IP block of 46.105.135.96/28 and eth1 for the secondary network interface, which is dedicated to the [vRack](/links/network/vrack){.external}.
+> For example purposes we'll be using an IP block of 46.105.135.96/28 and eth1 for the secondary network interface, which is dedicated to the [vRack](https://www.ovh.co.uk/solutions/vrack/){.external}.
 > 
 > Also for example purposes, the network configuration file we refer to is located in `/etc/network/interfaces`. The equivalent file on your server may be located somewhere else, depending on your operating system. The file content may also be different. If you encounter any difficulties, please refer to the official documentation for your distribution.
 
@@ -40,7 +40,7 @@ As well as private IP addressing, the [vRack](/links/network/vrack){.external} a
 > This setup allows you to configure IPs of the same block on multiple servers, provided that these servers are all in the same vRack as the IP block. The IP block must have at least 2 usable IPs or more for this to be possible.
 >
 
-In your [OVHcloud Control Panel](/links/manager), go to the `Bare Metal Cloud`{.action} section and click on `Network`{.action}. Next, open the `vRack`{.action} menu.
+In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), go to the `Bare Metal Cloud`{.action} section and click on `Network`{.action}. Next, open the `vRack`{.action} menu.
 
 Select your vRack from the list to display the list of eligible services. Click the IP block you wish to add to the vRack and click on the `Add`{.action} button.
 
@@ -147,4 +147,4 @@ Now reboot your server to apply the changes.
 
 [Configuring the vRack between the Public Cloud and a Dedicated Server](/pages/bare_metal_cloud/dedicated_servers/configuring-the-vrack-between-the-public-cloud-and-a-dedicated-server){.external}
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

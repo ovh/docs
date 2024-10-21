@@ -26,7 +26,7 @@ Este manual permitir-lhe-á:
 > Em função do seu local de residência, da legislação local, assim como das soluções em questão, alguns pormenores deste guia podem variar ou não se aplicar à sua situação. Para mais informações, consulte os contratos da OVHcloud a partir da sua [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt): clique no seu nome no canto superior direito do seu ecrã, na `Produtos e serviços`{.action} e, a seguir, no separador `Contratos`{.action}.
 >
 
-<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/dfpPCa0mUyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dfpPCa0mUyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Requisitos
 

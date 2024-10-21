@@ -28,11 +28,11 @@ In seguito allo sviluppo della tua attività o semplicemente all’evoluzione de
 ## Prerequisiti
 
 - Disporre di un'istanza [Public Cloud](https://www.ovhcloud.com/it/public-cloud/) sul proprio account OVHcloud
-- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
 
-Accedi allo [Spazio Cliente OVHcloud](/links/manager), alla sezione `Public Cloud`{.action}, seleziona il tuo progetto. Clicca sulle `istanze`{.action} nel menu a sinistra. 
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), alla sezione `Public Cloud`{.action}, seleziona il tuo progetto. Clicca sulle `istanze`{.action} nel menu a sinistra. 
 
 Clicca sui tre puntini `...`{.action} a destra dell'istanza e seleziona `Modifica`{.action}.
 

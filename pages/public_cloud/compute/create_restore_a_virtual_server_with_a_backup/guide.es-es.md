@@ -21,13 +21,13 @@ Quizá necesite, en algún momento, restaurar su instancia utilizando un snapsho
 ## Requisitos
 
 - Disponer de un snapshot de una instancia de Public Cloud. Para ello, consulte [la guía dedicada a la creación de un snapshot](/pages/public_cloud/compute/save_an_instance).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ## Procedimiento
 
 ### Crear una instancia a partir de un snapshot
 
-Conéctese a su [área de cliente de OVHcloud](/links/manager){.external} y seleccione `Public Cloud`{.action}. Seleccione el proyecto de Public Cloud correspondiente y haga clic en `Instance backup`{.action} en la sección `Storage`.
+Conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y seleccione `Public Cloud`{.action}. Seleccione el proyecto de Public Cloud correspondiente y haga clic en `Instance backup`{.action} en la sección `Storage`.
 
 ![public-cloud-instance-backup](images/restorebackup01.png){.thumbnail}
 
@@ -47,7 +47,7 @@ Algunos elementos están predefinidos:
 
 Asigne un nombre a la nueva instancia, la llave SSH, el vRack y el período de facturación y haga clic en el botón `Crear la instancia`{.action}.
 
-Para más información sobre la creación de una instancia, consulte [la presente guía](/pages/public_cloud/compute/public-cloud-first-steps).
+Para más información sobre la creación de una instancia, consulte [la presente guía](/pages/public_cloud/compute/public-cloud-first-steps#3-crear-una-instancia).
 
 > [!primary]
 >
@@ -56,7 +56,7 @@ Para más información sobre la creación de una instancia, consulte [la present
 
 ### Restaurar una instancia a partir de un snapshot
 
-Conéctese a su [área de cliente de OVHcloud](/links/manager){.external} y seleccione `Public Cloud`{.action}. En el menú de la izquierda, haga clic en `Instancias`{.action}.
+Conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y seleccione `Public Cloud`{.action}. En el menú de la izquierda, haga clic en `Instancias`{.action}.
 
 ![public-cloud-instance-backup](images/restorebackup04.png){.thumbnail}
 

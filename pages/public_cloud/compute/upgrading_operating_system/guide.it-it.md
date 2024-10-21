@@ -24,7 +24,7 @@ Questa guida descrive gli step da seguire per aggiornare un sistema operativo al
 
 ## Prerequisiti
 
-- Avere un [accesso amministratore al server](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance)
+- Avere un [accesso root al server](/pages/public_cloud/compute/become_root_and_change_password)
 - Aver effettuato [un backup della tua istanza](/pages/public_cloud/compute/save_an_instance)
 
 ## Procedura

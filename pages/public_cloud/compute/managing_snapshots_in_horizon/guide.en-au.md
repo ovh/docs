@@ -1,6 +1,6 @@
 ---
 title: Managing snapshots of an instance in Horizon
-updated: 2024-09-04
+updated: 2022-01-31
 ---
 
 ## Objective
@@ -11,7 +11,7 @@ During your activity, you will probably need to back up your data, configuration
 
 ## Requirements
 
-- An [OVHcloud Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps) 
+- An [OVHcloud Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps#create-instance) 
 - [Access to the Horizon interface](/pages/public_cloud/compute/introducing_horizon)
 
 ## Instructions
@@ -32,44 +32,7 @@ Snapshot Name: Set a name for the snapshot and click on `Create Snapshot`{.actio
 
 ![Create snapshot](images/createsnapshot2.png){.thumbnail}
 
-The snapshot will then be listed in the `Images`{.action} section. For this reason, we recommend naming each snapshot explicitly.
-
-### Restore a snapshot
-
-You can restore a snapshot by creating a new instance from it.
-
-In the horizon interface, click on the `Compute`{.action} menu on the left side, then click on `Images`{.action}.
-
-Click on `Launch`{.action} next to the selected snapshot.
-
-![restore snapshot](images/restoresnapshot.png){.thumbnail}
-
-In the pop-up window, a number of options need to be selected to complete the restoration of the snapshot.
-
-> [!tabs]
-> **Details**
->>
->> **Instance Name:** Specify the name you want for the instance.<br>
->> **Count:** Select the amount of instances you want to launch from the snapshot.<br><br>
->>![snapshot](images/restoresnapshot1.png){.thumbnail}<br>
->>
-> **Flavor**
->>
->> Select the flavor you want. Make sure you select a flavor whose resources are equal to or greater than the size of the image (snapshot).<br><br>
->>![network](images/restoresnapshot2.png){.thumbnail}<br>
->>
-> **Network**
->>
->> Select a public network (Ext-Net) to attach to the instance.<br><br>
->>![network](images/restoresnapshot3.png){.thumbnail}<br>
->>
-> **Keypair**
->>
->> Select (3), create (1) or import (2) a key pair.<br><br>
->>![network](images/restoresnapshot4.png){.thumbnail}<br>
->>
-
-Once done, click on `Launch Instance`{.action} to begin the creation of your instance.
+The snapshot will then be listed in the `Images`{.action} section. For this reason, we recommend naming each snapshot explicitly. 
 
 ### Deleting a snapshot
 
@@ -81,4 +44,4 @@ Next, click the drop-down arrow next to the snapshot you want to delete and clic
 
 ## Go further
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

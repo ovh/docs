@@ -1,15 +1,8 @@
 ---
-title: "Se connecter en SFTP"
-excerpt: "Apprenez comment vous connecter à votre VMware vSphere on OVHcloud en SFTP"
-updated: 2024-09-17
+title: Se connecter en SFTP
+excerpt: Apprenez à vous connecter à votre Private Cloud en SFTP
+updated: 2021-12-28
 ---
-
-> [!warning]
-> 
-> **Cette procédure est à présent déconseillée (*deprecated*)**.
-> 
-> Pour téléverser des fichiers dans vos datastores, veuillez utiliser la méthode décrite dans ce guide : [Téléversement de fichiers depuis le Datastore VMware vSphere](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_datastore_upload).
->
 
 ## Objectif
 
@@ -21,8 +14,8 @@ Ce système vous permettra d'accéder uniquement au dossier « upload-vpn » d
 
 ## Prérequis
 
-- Être contact administrateur de l'infrastructure [Hosted Private Cloud](/links/hosted-private-cloud/vmware), pour recevoir des identifiants de connexion.
-- Avoir un identifiant utilisateur actif (créé dans l'[espace client OVHcloud](/links/manager))
+- Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), pour recevoir des identifiants de connexion.
+- Avoir un identifiant utilisateur actif (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
 
 ## En pratique
 
@@ -89,4 +82,4 @@ Dans votre interface vSphere, vous pourrez voir le contenu de ce que vous venez 
 
 ## Aller plus loin
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

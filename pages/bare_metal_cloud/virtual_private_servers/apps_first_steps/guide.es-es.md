@@ -22,7 +22,7 @@ OVHcloud ofrece a los clientes VPS imágenes de aplicaciones preinstaladas para 
 
 ### Instalar la aplicación preinstalada que desee
 
-Instale [la aplicación que desee desde el área de cliente de OVHcloud](/links/manager) o las API de OVHcloud. También puede consultar nuestra guía [Primeros pasos con un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps).
+Instale [la aplicación que desee desde el área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) o las API de OVHcloud. También puede consultar nuestra guía [Primeros pasos con un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps).
  
 #### cPanel
 

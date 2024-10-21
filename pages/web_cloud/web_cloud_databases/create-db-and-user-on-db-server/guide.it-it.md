@@ -1,7 +1,7 @@
 ---
 title: Crea i tuoi database e i tuoi utenti sul tuo database server
 excerpt: Come creare un database sul tuo database server
-updated: 2024-08-22
+updated: 2023-02-15
 ---
 
 > [!primary]
@@ -28,11 +28,6 @@ Accedi allo [Spazio Cliente OVHcloud](/links/manager){.external}. Clicca sulla s
 Clicca sulla scheda `Database` e infine su `Aggiungi un database`{.action}
 
 ![web-cloud-databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/databases/add-database.png){.thumbnail}
-
-> [!primary]
->
-> La creazione di schemi PostgreSQL non è al momento disponibile sui server Web Cloud Databases.
->
 
 Inserisci i campi rispettando i criteri indicati. È possibile creare un utente direttamente selezionando la casella **Creare un utente**:
 

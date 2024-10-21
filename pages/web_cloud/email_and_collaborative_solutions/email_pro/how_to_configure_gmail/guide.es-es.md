@@ -1,7 +1,7 @@
 ---
-title: 'Email Pro - Configurar una cuenta en la interfaz web de Gmail'
+title: 'Configurar una cuenta Email Pro en la interfaz web de Gmail'
 excerpt: 'Cómo configurar una cuenta Email Pro en la interfaz web de Gmail'
-updated: 2024-09-24
+updated: 2020-03-18
 ---
 
 ## Objetivo
@@ -13,13 +13,13 @@ Es posible configurar sus cuentas Email Pro en el cliente de correo que usted ut
 > [!warning]
 >
 > La responsabilidad sobre la configuración y la gestión de los servicios que OVHcloud pone a su disposición recae íntegramente en usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
->
+> 
 > Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte el apartado «Más información» de esta guía.
->
+> 
 
 ## Requisitos
 
-- Tener una cuenta [Email Pro](/links/web/email-pro).
+- Tener una cuenta [Email Pro](https://www.ovhcloud.com/es-es/emails/email-pro/){.external}.
 - Disponer del nombre de usuario y la contraseña de la cuenta Email Pro que quiera configurar.
 - Disponer de las claves de la cuenta Gmail en la que quiera configurar la dirección de correo de OVHcloud.
 
@@ -36,12 +36,12 @@ Es posible configurar sus cuentas Email Pro en el cliente de correo que usted ut
 >
 > En nuestro ejemplo, hemos utilizado la mención servidor: pro**?**.mail.ovh.net. Sustituya la «?» por la cifra que designa al servidor de su servicio Email Pro.
 >
-> Puede consultar esta cifra en su [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action} y `Email Pro`{.action}. El nombre del servidor aparece en el marco **Conexión** de la pestaña `Información general`{.action}.
+> Puede consultar esta cifra en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Web Cloud`{.action} y `Email Pro`{.action}. El nombre del servidor aparece en el marco **Conexión** de la pestaña `Información general`{.action}.
 >
 
 En primer lugar, acceda a la interfaz web de Gmail desde su navegador de internet. Introduzca la información de su cuenta Gmail y conéctese.
 
-Haga clic en el icono con forma de rueda dentada y seleccione `Ver todos los ajustes`{.action}. A continuación, haga clic en `Cuentas e importación`{.action}.
+Haga clic en el icono con forma de rueda dentada y seleccione `Ver todos los ajustes`{.action}. A continuación, haga clic en `Cuentas e importación`{.action}. 
 
 ![Email Pro](images/configuration-gmail-web-step1.png){.thumbnail}
 
@@ -51,9 +51,9 @@ En el apartado **Consultar el correo de otras cuentas**, haga clic en `Añadir u
 
 Introduzca a continuación la configuración del servidor POP (servidor de entrada) de su cuenta Email Pro de OVHcloud.
 
-|Campo|Descripción|
-|---|---|
-|Nombre de usuario|Introduzca la dirección de correo electrónico completa.|
+|Campo|Descripción| 
+|---|---| 
+|Nombre de usuario|Introduzca la dirección de correo electrónico completa.|  
 |Contraseña|Introduzca la contraseña de la dirección de correo electrónico.|
 |Servidor POP|Introduzca el servidor pro**?**.mail.ovh.net.|
 |Puerto|Seleccione el puerto **995**.|
@@ -68,11 +68,11 @@ Estas son las opciones que puede elegir:
 
 - **Archivar los mensajes entrantes (omitir Recibidos)**: Si selecciona esta opción, los mensajes importados desde su dirección de correo de OVHcloud no aparecerán en la bandeja de entrada de su cuenta de Gmail.
 
-Una vez introducidos los datos, haga clic en el botón `Añadir cuenta`{.action}. Si son correctos, la aplicación se conectará a la cuenta.
+Una vez introducidos los datos, haga clic en el botón `Añadir cuenta`{.action}. Si son correctos, la aplicación se conectará a la cuenta. 
 
 ![Email Pro](images/configuration-gmail-web-step3.png){.thumbnail}
 
-A continuación, si quiere enviar mensajes con su cuenta Email Pro de OVHcloud desde la interfaz web de Gmail, marque la casilla `Sí, deseo poder enviar mensajes como`{.action} y haga clic en `Paso siguiente`{.action}.
+A continuación, si quiere enviar mensajes con su cuenta Email Pro de OVHcloud desde la interfaz web de Gmail, marque la casilla `Sí, deseo poder enviar mensajes como`{.action} y haga clic en `Paso siguiente`{.action}. 
 
 Introduzca el nombre que quiere que aparezca en los mensajes que envíe desde esa dirección de correo, marque la casilla `Tratarlo como un alias`{.action} y haga clic en `Siguiente paso`{.action}.
 
@@ -80,18 +80,18 @@ Introduzca el nombre que quiere que aparezca en los mensajes que envíe desde es
 
 Introduzca a continuación la configuración del servidor SMTP (servidor de salida) de su cuenta Email Pro de OVHcloud.
 
-|Campo|Descripción|
-|---|---|
+|Campo|Descripción| 
+|---|---| 
 |Servidor SMTP|Introduzca el servidor pro**?**.mail.ovh.net.|
 |Puerto|Seleccione el puerto **587**.|
 |Nombre de usuario|Introduzca la dirección de correo electrónico completa.|  
 |Contraseña|Introduzca la contraseña de la dirección de correo electrónico.|
 
-Una vez introducidos los datos, marque la casilla `Conexión segura mediante TLS`{.action} y haga clic en `Añadir cuenta`{.action}. Si son correctos, la aplicación se conectará a la cuenta.
+Una vez introducidos los datos, marque la casilla `Conexión segura mediante TLS`{.action} y haga clic en `Añadir cuenta`{.action}. Si son correctos, la aplicación se conectará a la cuenta. 
 
 ![Email Pro](images/configuration-gmail-web-step5.png){.thumbnail}
 
-Por último, debe validar la operación mediante un código de confirmación que recibirá en su dirección Email Pro de OVHcloud. Para solicitar este código, conéctese a su dirección de correo desde nuestra interfaz web disponible en <https://pro1.mail.ovh.net>.
+Por último, debe validar la operación mediante un código de confirmación que recibirá en su dirección Email Pro de OVHcloud. Para solicitar este código, conéctese a su dirección de correo desde nuestra interfaz web disponible en <https://pro1.mail.ovh.net>. 
 
 Después de validar la operación, la dirección Email Pro de OVHcloud aparecerá en la pestaña `Cuentas e importación`{.action}.
 
@@ -103,16 +103,8 @@ Para enviar un mensaje con su dirección Email Pro de OVHcloud desde la interfaz
 
 ![Email Pro](images/configuration-gmail-web-step6.png){.thumbnail}
 
-No olvide que también puede utilizar nuestra interfaz web en la dirección [Webmail](/links/web/email) para acceder a su dirección Email Pro de OVHcloud. Para conectarse solo necesitará las claves de acceso.
+No olvide que también puede utilizar nuestra interfaz web en la dirección [https://www.ovh.es/mail/](https://www.ovh.es/mail/) para acceder a su dirección Email Pro de OVHcloud. Para conectarse solo necesitará las claves de acceso.
 
-## Más información <a name="go-further"></a>
+## Más información
 
-> [!primary]
->
-> Para más información sobre la configuración de una dirección de correo electrónico desde la interfaz de Gmail en línea, visite [el Centro de ayuda de Google](https://support.google.com/mail/answer/21289?hl=es&co=GENIE.Platform%3DDesktop).
-
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
-
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
-
-Interactúe con nuestra [comunidad de usuarios](/links/community).
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

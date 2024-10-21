@@ -1,7 +1,7 @@
 ---
 title: "Risolvi gli errori più frequenti associati ai database"
 excerpt: "Diagnostica i casi di errore più frequenti associati ai database"
-updated: 2024-09-26
+updated: 2023-10-26
 ---
 
 > [!primary]
@@ -37,11 +37,11 @@ L'utilizzo dei database può provocare alcune anomalie sul tuo sito o sul tuo [S
 Per prima cosa verifica su [https://web-cloud.status-ovhcloud.com/](https://web-cloud.status-ovhcloud.com/) che il tuo datacenter, il tuo cluster di hosting, il tuo server Web Cloud Databases o Cloud Database non sia interessato da un incidente sull'infrastruttura OVHcloud.
 
 > [!primary]
-> Per maggiori informazioni, accedi allo [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}:
+> Per maggiori informazioni, accedi allo Spazio Cliente OVHcloud (/links/manager), sezione `Web Cloud`{.action}:
 >
 > - Per recuperare la `Datacenter` del tuo hosting e la `Filer` (server di file), seleziona `Hosting`{.action} e poi l'hosting interessato. Queste informazioni sono disponibili nella scheda `Informazioni generali`{.action}.
 > - Per recuperare il **cluster** di server su cui è ospitato il tuo hosting, clicca su `FTP-SSH`{.action}. Questa informazione verrà mostrata nella `Server FTP`
-> - Per recuperare il nome del tuo server **Cloud Databases**, clicca su `Web Cloud Databases`{.action} e seleziona l'offerta corrispondente. Questa informazione è disponibile nella scheda `Host`{.action}.
+> - Per recuperare il nome del tuo server **Cloud Databases**, clicca su `Database`{.action} e seleziona l'offerta corrispondente. Questa informazione è disponibile nella scheda `Host`{.action}.
 >
 
 #### Verifica le credenziali di connessione al tuo database <a name="config_file"></a>
@@ -101,7 +101,7 @@ Tre metodi ti permettono di sbloccare il tuo database:
 
 ##### Metodo 1: attiva il tuo abbonamento su un'offerta superiore
 
-Se disponi di una formula **Starter** o **Personale**, ti consigliamo di passare all'[offerta di hosting superiore](/links/web/hosting). La modifica dell'abbonamento aumenterà la dimensione del tuo database e la riaprirà automaticamente. Si tratta del metodo più semplice e non richiede particolari competenze tecniche.
+Se disponi di una formula **Personale** o **Pro***, ti consigliamo di passare all'[offerta di hosting superiore](/links/web/hosting). La modifica dell'abbonamento aumenterà la dimensione del tuo database e la riaprirà automaticamente. Si tratta del metodo più semplice e non richiede particolari competenze tecniche.
 
 > [!warning]
 >
@@ -121,11 +121,11 @@ Se utilizzi un'offerta **Performance**, consulta la sezione [metodo 2](#methode2
 Puoi anche migrare i tuoi dati su un nuovo database:
 
 - Ordinare, se necessario, una [database](/links/web/hosting-options-startsql) di dimensione superiore e avviarne la [creazione](/pages/web_cloud/web_hosting/sql_create_database);
-- [Duplicare il contenuto del vecchio database](/pages/web_cloud/web_hosting/copy_database) nel nuovo **o** effettua un [export dei tuoi dati](/pages/web_cloud/web_hosting/sql_database_export), poi [importali](/pages/web_cloud/web_hosting/sql_importing_mysql_database) nel nuovo database;
+- Effettua un [export dei tuoi dati](/pages/web_cloud/web_hosting/sql_database_export), poi [importali](/pages/web_cloud/web_hosting/sql_importing_mysql_database) nel nuovo database;
 - Inserisci gli identificativi del nuovo database nel [file di configurazione](#config_file) del tuo sito.
 
 > [!primary]
-> Se disponi di un hosting **Performance**, puoi anche [attivare gratuitamente un server Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+> Se disponi di un hosting **Performance**, puoi anche [attivare gratuitamente un server Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb#attiva-il-tuo-server-clouddb-incluso-con-la-tua-offerta-di-hosting-web).
 >
 
 ##### Metodo 3: eliminare i dati non necessari
@@ -148,13 +148,13 @@ Per ottimizzare il tuo database, segui le istruzioni della nostra guida [Configu
 > Se i consigli forniti sull'ottimizzazione del database non sono sufficienti per sbloccare l'accesso al tuo sito, ti consigliamo di contattare la nostra [Community di utenti](/links/community) o i [partner OVHcloud](/links/partner). OVHcloud non potrà fornirti alcuna assistenza al riguardo.
 >
 
-### Superamento della capacità della RAM (solo Web Cloud Databases)
+Superamento della capacità della RAM
 
-Nella sezione `Web Cloud Databases`{.action} del tuo [Spazio Cliente OVHcloud](/links/manager) è riportato che il tuo server [Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/) ha consumato troppe risorse sull'infrastruttura OVHcloud:
+Nella sezione `Database`{.action} del tuo [Spazio Cliente OVHcloud](/links/manager) è riportato che il tuo server [Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/) ha consumato troppe risorse sull'infrastruttura OVHcloud:
 
 ![ram-exceeded](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/ram-exceeded.png){.thumbnail}
 
-In questa situazione è possibile aumentare la [quantità di memoria RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#monitora-la-ram-consumata) disponibile nella sezione `Web Cloud Databases`{.action} del tuo [Spazio Cliente OVHcloud](/links/manager). Nella scheda `Informazioni generali`{.action}, clicca sul pulsante `...`{.action} nella sezione `RAM`.
+In questa situazione è possibile aumentare la [quantità di memoria RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#monitora-la-ram-consumata) disponibile nella sezione `Database`{.action} del tuo [Spazio Cliente OVHcloud](/links/manager). Nella scheda `Informazioni generali`{.action}, clicca sul pulsante `...`{.action} nella sezione `RAM`.
 
 > [!warning]
 >
@@ -162,7 +162,7 @@ In questa situazione è possibile aumentare la [quantità di memoria RAM](/pages
 > 
 > Accedi allo [Spazio Cliente OVHcloud](/links/manager) e seleziona `Web Cloud`{.action}. Clicca su `Hosting`{.action} e seleziona l'hosting Web su cui è attivo il Web Cloud Databases.
 >
-> Nella zona `Configurazione`, clicca sui `...`{.action} in corrispondenza dell'menzione `Web Cloud Databases` e clicca su `Scollega`{.action}.
+> Nella zona `Configurazione`, clicca sui `...`{.action} in corrispondenza dell'entrata della `Database Privato` e clicca su `Scollega`{.action}.
 >
 
 Per ottimizzare il tuo database, segui le istruzioni della nostra guida "[Configurare il tuo server di database](/pages/web_cloud/web_cloud_databases/configure-database-server#ottimizza-i-tuoi-database)".
@@ -189,7 +189,7 @@ Questo messaggio di errore significa che il database che stai cercando di import
 
 > [!success]
 >
-> Avere un "**trigger**" nello script di importazione del tuo database non è autorizzato sui server di hosting condiviso OVHcloud. importa il tuo database su un server [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+> Avere un "**trigger**" nello script di importazione del tuo database non è autorizzato sui server di hosting condiviso OVHcloud. importa il tuo database su un server [Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/).
 >
 
 Inoltre, la seguente richiesta non è autorizzata:
@@ -273,14 +273,6 @@ Verifica il nome del server da iscrivere nel tuo [Spazio Cliente OVHcloud](/link
 >
 > Se vuoi connetterti a un database su un server [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) il nome del server da inserire è iscritto nella scheda `Informazioni generali`{.action}, `Informazioni di connessione`{.action}, `SQL`{.action} e nella sezione `Nome host`{.action}.
 >
-
-### Connessione impossibile su un database Cloud Databases
-
-Disporre di un server [Web Cloud Databases](/products/web-cloud-clouddb) permette di [accedere ai propri database](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server) dal proprio computer o da un server esterno all’infrastruttura OVHcloud.
-
-Se non riesci a effettuare questa connessione, verifica innanzitutto di aver [autorizzato il tuo indirizzo IP pubblico](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) a connettersi al server di database.
-
-Se l’operazione è stata effettuata correttamente, contatta il tuo ISP o i [partner OVHcloud](/links/partner). OVHcloud non sarà in grado di fornirti assistenza in questa situazione.
 
 ## Per saperne di più <a name="go-further"></a>
 

@@ -12,12 +12,12 @@ updated: 2020-03-26
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf das [OVHcloud Kundencenter](/links/manager).
-- Sie verfügen über eine bereits eingerichtete [OVHcloud Exchange](/links/web/emails-hosted-exchange) oder [E-Mail Pro](/links/web/email-pro) Lösung.
+- Sie haben Zugriff auf das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie verfügen über eine bereits eingerichtete [OVHcloud Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/) oder [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/) Lösung.
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](/links/manager)ein:
+Loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}ein:
 
 - **Exchange**: Klicken Sie auf `Microsoft`{.action} und dann auf `Exchange`{.action}.. 
 - **Email Pro**: Klicken Sie auf `Email Pro`{.action}.

@@ -41,7 +41,7 @@ Wir behelfen uns dabei der nativen Funktionen von VMware, als auch der Optionen 
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie verfügen über einen dedizierten Server mit ESXi installiert.
 - Sie haben einen separaten Dienst, der mit unserer [Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network) kompatibel ist, sofern Sie diese Option zur Filterung verwenden möchten.
 

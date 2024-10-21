@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Network Services - Known limits (EN)
 excerpt: 'Requirements and limits to respect'
-updated: 2024-08-09
+updated: 2024-04-03
 ---
 
 ## Vrack and Public Cloud projects
@@ -32,10 +32,6 @@ When a service is spawned in a subnet, it is using some IPs from the subnet CIDR
 | DHCP |	2 | |	
 | Public Cloud Gateway | 1	| 1 |
 | Public Cloud Load Balancer (Octavia)	| 3 | |	
-
-## ICMP traffic towards Load Balancer IP
-
-The traffic towards Load Balancer IP (private IP or floating IP) is filtered. Which means the `ping` on these IPs will not answer.
 
 ## We want your feedback!
 

@@ -18,7 +18,7 @@ Jeśli osiągniesz maksymalną pojemność dodatkowego dysku, możesz dodać prz
 
 - Instancja [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) w Twoim projekcie Public Cloud
 - [Dodatkowy dysk](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) utworzony w Twoim projekcie
-- Dostęp do [Panelu client OVHcloud](/links/manager)
+- Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 - Dostęp administracyjny (sudo) do Twojej instancji przez SSH (Linux) lub RDP (Windows)
 
 ## W praktyce
@@ -27,7 +27,7 @@ Kolejne etapy zakładają, że skonfigurowałeś już dodatkowy dysk zgodnie z i
 
 ### Zmień rozmiar dysku
 
-Zaloguj się do [Panelu client OVHcloud](/links/manager) i otwórz swój projekt `Public Cloud`{.action}. Następnie w menu po lewej stronie kliknij `Block Storage`{.action}.
+Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i otwórz swój projekt `Public Cloud`{.action}. Następnie w menu po lewej stronie kliknij `Block Storage`{.action}.
 
 Jeśli wolumen jest przypisany do **instancji Windows**, kliknij przycisk `...`{.action} z prawej strony odpowiedniego wolumenu i wybierz opcję `Odłącz instancję`{.action}.
 

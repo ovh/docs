@@ -19,7 +19,7 @@ Installer WordPress sur un VPS ou un serveur dédié présente plusieurs avantag
 
 ## Prérequis
 
-- Disposer d'une offre [VPS](https://www.ovhcloud.com/fr-ca/vps/) ou d'un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/) dans votre [espace client OVHcloud](/links/manager)
+- Disposer d'une offre [VPS](https://www.ovhcloud.com/fr-ca/vps/) ou d'un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/) dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 - Disposer d'un accès administrateur (sudo) via SSH à votre serveur
 - Disposer d'un nom de domaine (enregistré chez OVHcloud ou auprès d'un autre bureau d'enregistrements)
 
@@ -222,7 +222,7 @@ Vous pouvez maintenant accéder à WordPress depuis un navigateur. Deux possibil
 
 #### Relier le nom de domaine à l'adresse IP du VPS ou du serveur dédié
 
-Pour pouvoir accéder à votre site web depuis un navigateur, liez d'abord le nom de domaine de votre site web WordPress à l'adresse IP de votre VPS. Rendez-vous dans votre [espace client OVHcloud](/links/manager). 
+Pour pouvoir accéder à votre site web depuis un navigateur, liez d'abord le nom de domaine de votre site web WordPress à l'adresse IP de votre VPS. Rendez-vous dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). 
 
 Dans le menu de gauche, cliquez sur `Noms de domaine`{.action} puis sélectionnez le nom de domaine que vous avez choisi pour votre site WordPress.
 

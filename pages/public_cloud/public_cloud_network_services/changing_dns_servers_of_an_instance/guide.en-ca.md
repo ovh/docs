@@ -19,12 +19,14 @@ The default DNS server configured on instances you create will be the OVHcloud s
 ## Requirements
 
 - A [Public Cloud instance](https://www.ovhcloud.com/en-ca/public-cloud/) in your OVHcloud account
-- Administrative access to the instance via SSH or RDP
+- Administrative access (sudo) to the instance via SSH or RDP
 - Basic networking and administration knowledge
 
 ## Instructions
 
-Log in to your instance via SSH. Refer to our guide on [Connecting to a Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) if necessary.
+Log in to your instance via SSH. Refer to our guide on [Connecting to a Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance) if necessary.
+
+Switch to the root user. Refer to our guide on [Becoming the root user and selecting a password](/pages/public_cloud/compute/become_root_and_change_password) if necessary.
 
 ### Debian/Ubuntu
 
@@ -56,9 +58,7 @@ Check that the configuration has been applied properly with the following comman
 
 ```bash
 cat /etc/resolv.conf
-```
 
-```console
 domain openstacklocal
 search openstacklocal
 nameserver IP1
@@ -97,9 +97,7 @@ Retrieve the name of your public interface:
 
 ```bash
 nmcli connection show
-```
-
-```console
+ 
 NAME         UUID                                  TYPE      DEVICE
 System eth0  5fb06bd0-0bb0-7ffb-45f1-d6edd65f3e03  ethernet  eth0
 ```
@@ -129,7 +127,7 @@ DNS configuration:
 
 ### On Windows
 
-Connect to the instance via remote desktop session or with the VNC console. Refer to our guide on [Connecting to a Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance) if necessary.
+Connect to the instance via remote desktop session or with the VNC console. Refer to our guide on [Connecting to a Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance) if necessary.
 
 Open the `Network settings`{.action}.
 
@@ -151,6 +149,8 @@ In PowerShell, you can use the command `nslookup` to check which DNS server is u
 ## Go further <a name="gofurther"></a>
 
 [First steps with Public Cloud instances](/pages/public_cloud/compute/public-cloud-first-steps)
+
+[Becoming the root user and selecting a password](/pages/public_cloud/compute/become_root_and_change_password)
 
 [Changing the hostname of a Public Cloud instance](/pages/public_cloud/compute/changing_the_hostname_of_an_instance)
 

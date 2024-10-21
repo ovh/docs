@@ -174,7 +174,7 @@ Allo step successivo, vengono presentate diverse opzioni:
 
 **Crea un servizio Gateway e connettiti alla rete privata**
 
-Seleziona questa opzione se intendi creare istanze esclusivamente con rete privata. Per maggiori informazioni, consulta queste guide: [Creating a private network with Gateway (EN)](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway) e [Creare e connettersi a un’istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps).
+Seleziona questa opzione se intendi creare istanze esclusivamente con rete privata. Per maggiori informazioni, consulta queste guide: [Creating a private network with Gateway (EN)](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway) e [Creare e connettersi a un’istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#step-3-crea-unistanza).
 
 > [!warning]
 > Se l'opzione è grigia, significa che è incompatibile con la Region selezionata. Per maggiori informazioni, consulta la nostra pagina sulla [disponibilità dei prodotti Public Cloud per ogni Region](https://www.ovhcloud.com/fr-ca/public-cloud/regions-availability/).
@@ -253,7 +253,7 @@ Possono presentarsi due situazioni:
 
 ##### **Dallo Spazio Cliente OVHcloud**
 
-Consulta la guida [Creare un'istanza dallo Spazio Cliente](/pages/public_cloud/compute/public-cloud-first-steps). Durante la creazione di un'istanza, potrai specificare, nello step 5 puoi scegliere una modalità di rete e una rete privata nella quale integrare la tua istanza.
+Consulta la guida [Creare un'istanza dallo Spazio Cliente](/pages/public_cloud/compute/public-cloud-first-steps#create-instance). Durante la creazione di un'istanza, potrai specificare, nello step 5 puoi scegliere una modalità di rete e una rete privata nella quale integrare la tua istanza.
 
 ![attach new instance](images/network-selection.png){.thumbnail}
 

@@ -33,7 +33,7 @@ apt-get install jq
 
 ### Fetch your openrc.sh configuration
 
-From [OVHcloud Control Panel](/links/manager), fetch your `openrc.sh` configuration file. You can fetch it from OpenStack menu entry in the left panel and under the `...` button on the right `Download an OpenStack configuration file`. You might need to create an OpenStack user before.
+From [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), fetch your `openrc.sh` configuration file. You can fetch it from OpenStack menu entry in the left panel and under the `...` button on the right `Download an OpenStack configuration file`. You might need to create an OpenStack user before.
 
 ### Install openstack command line client
 
@@ -148,5 +148,5 @@ openstack image list | grep 'My Custom Image'
 
 ## Go further
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.
 

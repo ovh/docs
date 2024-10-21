@@ -20,15 +20,15 @@ Chcesz:
 
 ## Wymagania początkowe
 
-- Posiadanie wcześniej skonfigurowanego rozwiązania poczty elektronicznej OVHcloud (**MX Plan**, zaproponowanego w naszej [ofercie hostingu](/links/web/hosting), zawartego w [Darmowy hosting 100M](/links/web/domains-free-hosting) lub zamówionym oddzielnie jako rozwiązanie autonomiczne, takie jak [**Hosted Exchange**](/links/web/emails-hosted-exchange) lub [**Email Pro**](/links/web/email-pro))
-- Dostęp do [Panelu klienta OVHcloud](/links/manager), sekcja `Web Cloud`{.action}.
+- Posiadanie wcześniej skonfigurowanego rozwiązania poczty elektronicznej OVHcloud (**MX Plan**, zaproponowanego w naszej [ofercie hostingu](https://www.ovhcloud.com/pl/web-hosting/), zawartego w [Darmowy hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/) lub zamówionym oddzielnie jako rozwiązanie autonomiczne, takie jak [**Hosted Exchange**](https://www.ovhcloud.com/pl/emails/hosted-exchange/) lub [**Email Pro**](https://www.ovhcloud.com/pl/emails/email-pro/))
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, sekcja `Web Cloud`{.action}.
 - Dostęp do danych adresów e-mail
 
 ## W praktyce <a name="instructions"></a>
 
 OVHcloud oferuje 3 rozwiązania poczty elektronicznej. Pojęcie usunięcia konta różni się w zależności od wybranej oferty.
 
-- **E-mail MX Plan**: oferta ta jest sprzedawana w formie pakietu kilku kont e-mail. Po usunięciu konta, uruchomisz lokalizację dla pakietu. 
+- **E-mail MXplan**: oferta ta jest sprzedawana w formie pakietu kilku kont e-mail. Po usunięciu konta, uruchomisz lokalizację dla pakietu. 
 - **Email Pro** i **Hosted Exchange**: obie te oferty są na zamówienie. możesz zamówić indywidualny abonament na konto e-mail. Jeśli chcesz usunąć konto e-mail, musisz wykonać **reset**. Po zresetowaniu konta e-mail możesz ponownie użyć tego konta do utworzenia nowego konta e-mail. Możesz również [zrezygnować z subskrypcji](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#usuwanie-kont) tego konta, jeśli chcesz go definitywnie usunąć.
 
 ### Usuń lub zresetuj konto e-mail
@@ -36,16 +36,16 @@ OVHcloud oferuje 3 rozwiązania poczty elektronicznej. Pojęcie usunięcia konta
 Wybierz kartę odpowiadającą Twojej usłudze e-mail:
 
 > [!tabs]
-> **E-maile MX Plan**
+> **E-maile MXplan**
 >>
->> Aby sprawdzić, czy Twoja oferta MX Plan jest wersją historyczną czy nową, zapoznaj się z tabelą w części "[Sprawdź ofertę MX Plan](#whichmxplan)" tego przewodnika.<br><br>
+>> Aby sprawdzić, czy Twoja oferta MXplan jest wersją historyczną czy nową, zapoznaj się z tabelą w części "[Sprawdź ofertę MXplan](#whichmxplan)" tego przewodnika.<br><br>
 >>
 >> Kliknij `E-maile`{.action}, po czym wybierz odpowiednią usługę MX Plan. Przejdź do zakładki `Konta e-mail`{.action}. Pojawi się okno, w którym widoczne są istniejące konta e-mail. Kliknij przycisk <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> po prawej stronie konta, które ma zostać zmienione, a następnie kliknij polecenie `Usuń konto`{.action}.<br><br>
 >>![email](images/email-mxplan-legacy-reset.png){.thumbnail}<br>
 >>
-> **E-maile MX Plan nowa wersja**
+> **E-maile MXplan nowa wersja**
 >>
->> Aby sprawdzić, czy Twoja oferta MX Plan jest wersją historyczną czy nową, zapoznaj się z tabelą w części "[Sprawdź ofertę MX Plan](#whichmxplan)" tego przewodnika.<br><br>
+>> Aby sprawdzić, czy Twoja oferta MXplan jest wersją historyczną czy nową, zapoznaj się z tabelą w części "[Sprawdź ofertę MXplan](#whichmxplan)" tego przewodnika.<br><br>
 >>
 >> Kliknij na `E-maile`{.action}, następnie wybierz odpowiednią usługę MX Plan. Przejdź do zakładki `Konta e-mail`{.action}. Pojawi się okno, w którym widoczne są istniejące konta e-mail. Kliknij na przycisk <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> po prawej stronie konta, które chcesz zmienić, po czym kliknij przycisk `Zresetuj to konto`{.action}.<br><br>>>
 >>![e-mail](images/email-mxplan-new-reset.png){.thumbnail}<br>
@@ -63,18 +63,18 @@ Wybierz kartę odpowiadającą Twojej usłudze e-mail:
 >>![email](images/exchange-reset.png){.thumbnail}<br>
 >>
 
-#### Zidentyfikuj ofertę MX Plan <a name="whichmxplan"></a>
+#### Zidentyfikuj ofertę MXplan <a name="whichmxplan"></a>
 
-W poniższej tabeli znajdziesz informacje niezbędne do identyfikacji Twojej oferty MX Plan.
+W poniższej tabeli znajdziesz informacje niezbędne do identyfikacji Twojej oferty MXplan.
 
 |Poprzednia wersja usługi MX Plan|Nowa wersja usługi MX Plan|
 |---|---|
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Znajdź nazwę oferty w polu „Abonament”.|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Znajdź Oznaczenie serwera w polu "Podsumowanie".|
-|W tym przewodniku wybierz kartę **E-maile MX Plan historyczny**.|W tym przewodniku wybierz kartę **E-maile MX Plan w nowej wersji**.|<br>
+|W tym przewodniku wybierz kartę **E-maile MXplan historyczny**.|W tym przewodniku wybierz kartę **E-maile MXplan w nowej wersji**.|<br>
 
 ## Sprawdź również
 
-[Pierwsze kroki z usługą MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
+[Pierwsze kroki z usługą MXplan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 
 [Pierwsze kroki z usługą E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
 
@@ -84,6 +84,6 @@ W poniższej tabeli znajdziesz informacje niezbędne do identyfikacji Twojej ofe
 
 [Zarządzanie płatnościami za konta Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange)
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i korzystania z rozwiązań OVHcloud, sprawdź naszą [ofertę wsparcia](/links/support).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i korzystania z rozwiązań OVHcloud, sprawdź naszą [ofertę wsparcia](https://www.ovhcloud.com/pl/support-levels/).
 
 Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.

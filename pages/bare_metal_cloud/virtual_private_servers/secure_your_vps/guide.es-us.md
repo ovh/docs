@@ -1,7 +1,7 @@
 ---
 title: "Proteger un VPS"
 excerpt: "Esta guía explica cómo aplicar medidas de seguridad básicas para proteger su VPS de ataques y accesos no autorizados"
-updated: 2024-10-07
+updated: 2024-02-20
 ---
 
 > [!primary]
@@ -17,20 +17,20 @@ Al contratar su VPS, puede elegir una distribución o sistema operativo que quie
 > [!warning]
 > OVHcloud pone a su disposición servicios cuya configuración, seguridad y responsabilidad le pertenecen.
 > En efecto, no tenemos acceso a los datos alojados en estas máquinas ni somos los administradores. Por lo tanto, usted es responsable de la gestión del software y de la seguridad diaria.
-> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, le recomendamos que, si necesita ayuda, contacte con un [proveedor especializado](/links/partner) en caso de que tenga dificultades o dudas relativas a la administración, la utilización o la seguridad del servidor.
+> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, le recomendamos que, si necesita ayuda, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/) en caso de que tenga dificultades o dudas relativas a la administración, la utilización o la seguridad del servidor.
 > Más información en el apartado «Más información» de esta guía.
 >
 
 ## Requisitos
 
-- Un [VPS](/links/bare-metal/vps) en su cuenta de OVHcloud.
+- - Un [VPS](https://www.ovhcloud.com/es/vps/) en su cuenta de OVHcloud.
 - Tener acceso de administrador (sudo) al servidor por SSH.
 
 ## Procedimiento
 
 > [!primary]
 >
-> Tenga en cuenta que esta guía se basa en los sistemas operativos Ubuntu, Debian y CentOS. Tenga en cuenta que algunos comandos deben adaptarse a la distribución que utilice y que algunos consejos le invitan a utilizar herramientas de terceros. Si necesita ayuda, consulte la documentación oficial de estas aplicaciones.
+> Tenga en cuenta que se trata de una guía general basada en un sistema operativo Ubuntu Server. Tenga en cuenta que algunos comandos deben adaptarse a la distribución que utilice y que algunos consejos le invitan a utilizar herramientas de terceros. Si necesita ayuda, consulte la documentación oficial de estas aplicaciones.
 >
 > Si se trata de su primera configuración de un VPS de OVHcloud, consulte nuestra guía [Primeros pasos con un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps).
 >
@@ -42,49 +42,25 @@ Los siguientes ejemplos implican que está conectado como [usuario con permisos 
 Los desarrolladores de distribuciones y sistemas operativos ofrecen actualizaciones frecuentes de los paquetes, en muchas ocasiones por motivos de seguridad.<br>
 Garantizar que su distribución o sistema operativo estén actualizados es un aspecto fundamental para proteger su VPS.
 
-> [!tabs]
-> Ubuntu
->>
->> Esta actualización se realizará en dos pasos:
->> 
->> - Actualizando la lista de paquetes:
->> 
->> ```bash
->> sudo apt update
->> ```
->> 
->> - Actualizando los paquetes reales:
->> 
->> ```bash
->> sudo apt upgrade
->> ```
->>
-> Debian
->> 
->> ```bash
->> sudo apt update && sudo apt upgrade
->> ```
->>
->> El comando es idéntico a Ubuntu porque tanto Debian como Ubuntu utilizan `apt`.
->>
-> CentOS
->>
->> ```bash
->> sudo yum update
->> ```
->>
->> En CentOS, el comando para actualizar el sistema operativo utiliza `yum` o `dnf`, según la versión.
+Esta actualización consta de dos etapas.
+
+- Actualización de la lista de paquetes:
+
+```bash
+sudo apt update
+```
+
+- Actualización de los paquetes propiamente dichos:
+
+```bash
+sudo apt upgrade
+```
 
 Esta operación debe realizarse regularmente para mantener un sistema actualizado.
 
 ### Cambiar el puerto de escucha SSH por defecto <a name="changesshport"></a>
 
-> [!primary]
->
-> Para esta sección, las siguientes líneas de comando son las mismas para Ubuntu, Debian y CentOS.
->
-
-Una de las primeras acciones que deberá realizar en su servidor es configurar el puerto de escucha del servicio SSH. Por defecto, este se define en el **puerto 22**, por lo que los intentos de hackeo del servidor por parte de robots se dirigirán prioritariamente a este puerto.  
+Una de las primeras acciones que deberá realizar en su servidor es configurar el puerto de escucha del servicio SSH. Por defecto, este se define en el **puerto 22**, por lo que los intentos de hackeo del servidor por parte de robots se dirigirán prioritariamente a este puerto.
 La modificación de este parámetro, en beneficio de un puerto diferente, es una medida sencilla para reforzar la protección de su servidor contra los ataques automatizados.
 
 Para ello, edite el archivo de configuración del servicio con el editor de texto que desee (`nano` se utiliza en este ejemplo):
@@ -101,9 +77,9 @@ Encontrará las siguientes líneas o equivalentes:
 #ListenAddress 0.0.0.0
 ```
 
-Sustituya el número **22** por el número de puerto que desee.  
-**Recuerde que no debe indicar un número de puerto que ya esté en uso en su sistema**. Para mayor seguridad, utilice un número entre 49152 y 65535.  
-Guarde y cierre el archivo de configuración.
+Sustituya el número **22** por el número de puerto que desee.<br>
+**Recuerde que no debe indicar un número de puerto que ya esté en uso en su sistema**.
+Para mayor seguridad, utilice un número entre 49152 y 65535.<br>Guarde y cierre el archivo de configuración.
 
 Si la línea está "comentada" (es decir, precedida de un "#") como en el ejemplo anterior, asegúrese de eliminar el "#" antes de guardar el archivo para que se tenga en cuenta el cambio. Ejemplo:
 
@@ -125,7 +101,7 @@ Esto debería ser suficiente para aplicar los cambios. En caso contrario, reinic
 
 Para las últimas versiones de Ubuntu, la configuración SSH se gestiona ahora en el archivo /ssh.socket`.
 
-Para actualizar el puerto SSH, edite la línea `ListenStream` en el archivo de configuración con un editor de texto de su elección (`nano` utilizado en este ejemplo):
+Para actualizar el puerto SSH, edite la línea `Listenstream` en el archivo de configuración con un editor de texto de su elección (`nano` utilizado en este ejemplo):
 
 ```console
 [Socket]
@@ -180,21 +156,9 @@ Es recomendable, y en algunos casos incluso indispensable, proteger su servidor 
 
 Para instalar el paquete de software, utilice el siguiente comando:
 
-> [!tabs]
-> Ubuntu y Debian
->> 
->> ```bash
->> sudo apt install fail2ban
->> ```
->>
-> CentOS
->>
->> En CentOS 7 y CentOS 8 (o RHEL), instale primero el repositorio EPEL (**E**xtra **P**ackages for **E**nterprise **L**inux), luego Fail2ban:
->>
->> ```bash
->> sudo yum install epel-release
->> sudo yum install fail2ban
->> ```
+```bash
+sudo apt install fail2ban
+```
 
 Puede personalizar los archivos de configuración Fail2ban para proteger los servicios expuestos a la internet pública contra los intentos de conexión repetidos.
 
@@ -249,14 +213,6 @@ Una vez realizados los cambios, guarde el archivo y cierre el editor.
 
 Reinicie el servicio para asegurarse de que se ejecuta con las personalizaciones aplicadas:
 
-1\. Comando recomendado con `systemctl`:
-
-```bash
-sudo systemctl restart fail2ban
-```
-
-2\. Comando con `service` (método heredado, aún compatible):
-
 ```bash
 sudo service fail2ban restart
 ```
@@ -280,13 +236,11 @@ La protección de sus datos es un elemento clave. Por ese motivo, OVHcloud le of
 - La opción `Snapshot` que permite crear una instantánea manual.
 - La opción de `backup automático` permite conservar copias de seguridad regulares de su VPS (a excepción de los discos adicionales).
 
-En la [página de producto](/links/bare-metal/vps-options) y en las [respectivas guías](/products/bare-metal-cloud-virtual-private-servers) encontrará toda la información sobre las soluciones de backup disponibles para su servicio.
+En la [página de producto](https://www.ovhcloud.com/es/vps/options/) y en las [respectivas guías](/products/bare-metal-cloud-virtual-private-servers) encontrará toda la información sobre las soluciones de backup disponibles para su servicio.
 
 ## Más información
 
 [Primeros pasos con un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps) 
-
-[Crear claves SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
 
 [Configurar el firewall de Windows](/pages/bare_metal_cloud/virtual_private_servers/activate-port-firewall-soft-win)
 
@@ -294,4 +248,4 @@ En la [página de producto](/links/bare-metal/vps-options) y en las [respectivas
 
 [Configurar el firewall de red](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
 
-Interactúe con nuestra [comunidad de usuarios](/links/community).
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

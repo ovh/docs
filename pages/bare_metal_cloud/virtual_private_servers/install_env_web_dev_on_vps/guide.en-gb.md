@@ -22,7 +22,7 @@ If you would like to install a CMS (**C**ontent **M**anagement **S**ystem) on yo
 
 ## Requirements
 
-- A [VPS] solution (https://www.ovhcloud.com/en-gb/vps/) or a [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) in your [OVHcloud Control Panel](/links/manager)
+- A [VPS] solution (https://www.ovhcloud.com/en-gb/vps/) or a [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 - Administrative (sudo) access to your server via SSH
 
 ## Instructions
@@ -116,4 +116,4 @@ For some general tips on securing a GNU/Linux-based server, see our guides:
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

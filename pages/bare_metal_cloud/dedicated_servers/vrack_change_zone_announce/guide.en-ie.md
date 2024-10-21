@@ -6,13 +6,13 @@ updated: 2019-03-12
 
 ## Objective
 
-The [vRack](/links/network/vrack){.external} is a private network that allows you to configure the address between two or more [OVHcloud dedicated servers](/links/bare-metal/bare-metal){.external}.
+The [vRack](https://www.ovh.ie/solutions/vrack/){.external} is a private network that allows you to configure the address between two or more [OVHcloud dedicated servers](https://www.ovhcloud.com/en-ie/bare-metal/){.external}.
 
 **Learn how to set the announcement zone of an IP block in vRack.**
 
 ## Requirements:
 
-- A [vRack](/links/network/vrack){.external}
+- A [vRack](https://www.ovh.ie/solutions/vrack/){.external}
 - A [configured block of IP addresses in the vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack)
 - Basic network knowledge
 
@@ -50,7 +50,7 @@ Go to <https://api.ovh.com/console/>, then sign in with your OVHcloud customer I
 > @api {v1} /vrack GET /vrack
 > 
 
-This API allows you to retrieve the list of vRack services. If you can't identify the service concerned with these references, they can be found in the [OVHcloud Control Panel](/links/manager){.external}. To do this, go to the `Bare Metal Cloud`{.action} section, click on `Network`{.action} then “vRack”.
+This API allows you to retrieve the list of vRack services. If you can't identify the service concerned with these references, they can be found in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. To do this, go to the `Bare Metal Cloud`{.action} section, click on `Network`{.action} then “vRack”.
 
 > [!api]
 >
@@ -87,4 +87,4 @@ In this example, the tested IP address is now announced to **Gravelines**. This 
 
 ## Go further
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

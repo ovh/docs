@@ -32,7 +32,7 @@ Sin embargo, todavía puede conectarse a su instancia a través del modo de resc
 
 ### Paso 1: crear un nuevo par de claves
 
-Cree un nuevo par de llaves SSH en su dispositivo local, siguiendo las instrucciones de la primera parte de la [guía de creación de una llave SSH](/pages/public_cloud/compute/creating-ssh-keys-pci).
+Cree un nuevo par de llaves SSH en su dispositivo local, siguiendo las instrucciones de la primera parte de la [guía de creación de una llave SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 
 ### Paso 2: acceder a su instancia en modo de rescate
 

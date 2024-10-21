@@ -1,7 +1,7 @@
 ---
-title: "Hébergement web - Comment faire évoluer son offre"
+title: "Hébergement web: comment faire évoluer son offre ?"
 excerpt: "Découvrez comment modifier la formule d'abonnement de votre offre d'hébergement web OVHcloud"
-updated: 2024-10-03
+updated: 2023-09-14
 ---
 
 ## Objectif
@@ -165,30 +165,17 @@ Si l'option **Boost** convient à votre besoin, vous trouverez ci-dessous les in
 
 #### La facturation en cas de changement d'offre <a name="billing"></a>
 
-**Cas 1** : Lorsque vous modifiez votre offre initiale vers une offre supérieure, un calcul au *prorata temporis* est appliqué jusqu'à la prochaine date de renouvellement de cet abonnement initial.
+Lorsque vous modifiez votre offre initiale vers une offre supérieure, un calcul au *prorata temporis* est appliqué jusqu'à la prochaine date de renouvellement de cet abonnement initial.
 Ce calcul correspond à la différence de tarif entre votre offre initiale et votre nouvelle offre.
 
 > **Exemple :**<br>
 >
-> Vous avez souscrit à un abonnement [Perso](/links/web/hosting-personal-offer) au 1er janvier 2024.
+> Vous avez souscrit à un abonnement [Perso](/links/web/hosting-personal-offer) au 1er janvier 2022.
 >
-> Le 31 octobre 2024, vous passez de cette offre **Perso** à un abonnement sur l'offre [Pro](/links/web/hosting-professional-offer).<br>
+> Le 31 octobre 2022, vous passez de cette offre **Perso** à un abonnement sur l'offre [Pro](/links/web/hosting-professional-offer).<br>
 >
-> Par conséquent, le montant correspondant à la durée restante sur l'abonnement **Perso** (2 mois, du 1er novembre 2024 au 1er janvier 2025) est automatiquement soustrait du coût du nouvel abonnement **Pro**, jusqu'au 1er janvier 2025. Vous ne paierez que la différence.
-> À partir du 1er janvier 2025, l'abonnement **Pro** vous est ensuite facturé à son tarif en vigueur.
-
-Suivez [ces instructions](#modify) pour réaliser votre changement d'offre.
-
-**Cas 2** : Lorsque vous modifiez votre offre initiale vers une offre inférieure, le temps d'abonnement restant pour l'offre initiale est définitivement perdu. Aucun remboursement de ce temps restant ne sera effectué, même s'il vous restait plusieurs mois d'abonnement. Vous devrez donc directement payer l'intégralité de l'abonnement de l'offre inférieure.
-
-> **Exemple :**<br>
->
-> Vous avez souscrit à un abonnement [Pro](/links/web/hosting-professional-offer) au 1er janvier 2024.
->
-> Le 31 octobre 2024, vous passez de cette offre **Pro** à un abonnement sur l'offre [Perso](/links/web/hosting-personal-offer).<br>
->
-> Par conséquent, le montant correspondant à la durée restante sur l'abonnement **Pro** (2 mois, du 1er novembre 2024 au 1er janvier 2025) est perdu.
-> À partir du 1er novembre 2024, l'abonnement **Perso** vous est directement facturé à son tarif en vigueur (même si vous aviez payé les 2 mois restants de l'offre **Pro**).
+> Par conséquent, le montant correspondant à la durée restante sur l'abonnement **Perso** (2 mois, du 1er novembre 2022 au 1er janvier 2023) est automatiquement soustrait du coût du nouvel abonnement **Pro**, jusqu'au 1er janvier 2023. Vous ne paierez que la différence.
+> À partir du 1er janvier 2023, l'abonnement **Pro** vous est ensuite facturé à son tarif en vigueur.
 
 Suivez [ces instructions](#modify) pour réaliser votre changement d'offre.
 

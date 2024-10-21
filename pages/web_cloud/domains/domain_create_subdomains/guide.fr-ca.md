@@ -91,7 +91,7 @@ Deux cas de figure sont possibles :
 
 Si les serveurs DNS déclarés pour votre nom de domaine ont l'une des deux formes suivantes :
 
-- `dnsXX.ovh.ca` et `nsXX.ovh.ca` (où chacun des « X » représente un chiffre)
+- `dnsXX.ovh.net` et `nsXX.ovh.net` (où chacun des « X » représente un chiffre)
 - `dns200.anycast.me` et `ns200.anycast.me`
 
 Cela signifie que la zone DNS active de votre nom de domaine est bien active chez OVHcloud.

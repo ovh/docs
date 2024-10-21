@@ -15,13 +15,13 @@ However, you can still connect to your server via the OVHcloud rescue mode, whic
 > [!warning]
 >OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](/links/partner) or reach out to [our community](https://community.ovh.com/en/) if you face difficulties or doubts concerning the administration, usage or implementation of services on a server.
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-sg/directory/) or reach out to [our community](https://community.ovh.com/en/) if you face difficulties or doubts concerning the administration, usage or implementation of services on a server.
 >
 
 ## Requirements
 
-- A [dedicated server](/links/bare-metal/bare-metal) or a [VPS](https://www.ovhcloud.com/en-sg/vps/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](/links/manager)
+- A [dedicated server](https://www.ovhcloud.com/en-sg/bare-metal/) or a [VPS](https://www.ovhcloud.com/en-sg/vps/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
 
 ## Instructions
 
@@ -69,7 +69,7 @@ EEFFFFFFFFFFFFFGGGGGGGGGGGGGhhhhhhhhhhhhhhhhhhhhhhhhhh== new@sshkey
 
 For security reasons, delete the obsolete "old" key string from the file. Save your changes and exit the editor.
 
-Switch the boot mode back to "normal" and restart the server in your [OVHcloud Control Panel](/links/manager). Refer to the [rescue mode guide](#step2) if necessary.
+Switch the boot mode back to "normal" and restart the server in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg). Refer to the [rescue mode guide](#step2) if necessary.
 
 You have now access to the server with your new SSH key pair.
 
@@ -81,4 +81,4 @@ You have now access to the server with your new SSH key pair.
 
 [VPS rescue mode](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

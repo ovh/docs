@@ -20,11 +20,11 @@ Configurar a resolução **Reverse DNS** de uma instância é particularmente ú
 
 - Ter uma [instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) na sua conta OVHcloud.
 - Um domínio com o seu campo `A` apontando para a instância.
-- Estar ligado à [Área de Cliente OVHcloud](/links/manager).
+- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ## Instruções
 
-Aceda à [Área de Cliente OVHcloud](/links/manager), aceda à secção `Bare Metal Cloud`{.action} e abra o programa `Network`{.action}. De seguida, clique em `IP`{.action}.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), aceda à secção `Bare Metal Cloud`{.action} e abra o programa `Network`{.action}. De seguida, clique em `IP`{.action}.
 
 O menu suspenso em **Meus endereços IP públicos e serviços associados** permite filtrar os serviços por categoria.
 

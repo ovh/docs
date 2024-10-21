@@ -16,14 +16,14 @@ The list of certified OVHcloud products is available on the page “[OVHcloud pr
 
 ## Requirements
 
-- You must be logged in to your [OVHcloud Control Panel](/links/manager){.external}.
+- You must be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 - You must have signed up to the [Business or Enterprise level of support](https://www.ovhcloud.com/pl/support-levels/) for your OVHcloud account.
 
 ## Instructions
 
 ### Enabling the HDS option when creating a new Public Cloud project
 
-In your [OVHcloud Control Panel](/links/manager), create a new Public Cloud project.
+In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), create a new Public Cloud project.
 
 If you have subscribed to the Business or Enterprise support level, you can then tick the `Healthcare data hosting and HDS certification for this project` box.
 
@@ -33,7 +33,7 @@ You will then have access to the special conditions for hosting healthcare data.
 
 ### Enabling the HDS option on an existing Public Cloud project
 
-In your [OVHcloud Control Panel](/links/manager), select the Public Cloud project for which you would like the services to be HDS certified.
+In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), select the Public Cloud project for which you would like the services to be HDS certified.
 
 Click `Settings`{.action}. If you have subscribed to the Business or Enterprise support level, you can then tick the `Healthcare data hosting and HDS certification for this project` box.
 
@@ -47,4 +47,4 @@ Review the information and check the box for accepting the contracts. Finally, c
 
 [Public Cloud documentation](/products/public-cloud-compute)
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

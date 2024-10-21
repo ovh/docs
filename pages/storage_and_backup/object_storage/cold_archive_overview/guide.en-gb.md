@@ -1,7 +1,7 @@
 ---
 title: Cold Archive - Overview
 excerpt: Discover the service, understand the capabilities and billing
-updated: 2024-08-05
+updated: 2024-06-28
 ---
 
 <style>
@@ -141,16 +141,14 @@ The Object Storage is available through a public endpoint (public IP).
 
 ### Pricing
 
+<!--
 Our prices are described [here](https://www.ovhcloud.com/en-gb/public-cloud/prices/).
+-->
 
-The Cold Archive solution is billed based on the archived storage space used (on magnetic tapes) and the deposit space used (Object Storage space) with a granularity of 1 GB. To ensure readability, the price is displayed in GB/month, but the billing granularity is per GB/hour, considering there are an average of 720 hours in a month.
+The Cold Archive solution is invoiced according to the used archiving space (on magnetic tapes) and the used deposit space (Object Storage space) with a granularity of 1 GB. To ensure its readability, the price is displayed in GB/month, but the billing granularity is per GB/hour, considering that on average there are 720 hours in a month.
 
-The minimum archiving duration is 180 days. If an archive is deleted within this commitment period, the customer will be charged an additional fee calculated as follows:
-(180 days minus the number of days the service was used) x storage class price.
-
-It is possible to start archiving a bucket with less than 1 TB of data, but the archiving action will be billed at the price of 1 TB.
-
-Billing is done in arrears, meaning the customer is billed for the storage consumed in the past month.
+The minimum archiving period is 180 days. In the event that an archive is deleted within this commitment period, the customer will be charged an additional fee calculated as follows:
+(180 days minus the number of days during which the service was used) x price of the storage class.
 
 It is possible to start archiving a container with less than 1 TB of data, but the archiving action will be charged at the price of 1 TB.
 

@@ -1,7 +1,7 @@
 ---
 title: Transfert des logs (Logs Forwarding) TCP / HTTP / HTTPS du Load Balancer Public Cloud
 excerpt: Découvrez comment transférer vos logs depuis un Load Balancer Public Cloud vers Logs Data Platform
-updated: 2024-09-25
+updated: 2024-05-17
 ---
 
 ## Objectif
@@ -19,7 +19,6 @@ Si vous souhaitez en savoir plus sur Logs Data Platform avant de lire ce guide, 
 ## Prérequis
 
 - Un compte Logs Data Platform (LDP) avec au moins un *Stream* actif configuré. Ce guide vous guidera dans toutes les étapes nécessaires : [Quick start for Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start).
-    - Si vous ne connaissez pas toutes les possibilités de configuration d’un *Stream* LDP, il vous suffit d'en créer un nouveau avec les options par défaut (indexation & websocket activés, stockage longue durée désactivé) pour suivre ce guide.
 - Un [Load Balancer Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-01-create-lb-service) opérationnel.
 - Le compte LDP et le compte Public Cloud Load Balancer doivent appartenir au même compte OVHcloud.
 

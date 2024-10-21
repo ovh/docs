@@ -72,4 +72,4 @@ The mount point **/** is properly mounted from **/dev/vdb1**.
 
 ## Go further
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

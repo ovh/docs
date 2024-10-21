@@ -13,7 +13,7 @@ Instalacja CUDA (Compute Unified Device Architecture) na serwerze GPU wymaga prz
 
 ## Wymagania początkowe
 
-- [Posiadanie serwera GPU](/links/bare-metal/bare-metal){.external}
+- [Posiadanie serwera GPU](https://www.ovhcloud.com/pl/bare-metal/){.external}
 - Połączenie z serwerem za pomocą SSH
 
 ## W praktyce

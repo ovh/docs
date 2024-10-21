@@ -66,7 +66,7 @@ Una volta risolto il problema, puoi sbloccare il tuo indirizzo IP seguendo gli s
 
 #### Sblocca il tuo indirizzo IP dallo Spazio Cliente
 
-Nello [Spazio Cliente OVHcloud](/links/manager), accedi al menu `Bare Metal Cloud`{.action} e clicca su `Network`{.action}. Clicca su `IP`{.action}.
+Nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), accedi al menu `Bare Metal Cloud`{.action} e clicca su `Network`{.action}. Clicca su `IP`{.action}.
 
 Nel riquadro giallo dedicato agli alert, clicca sulla freccia a tendina `Visualizza tutti i tuoi alert`{.action} per visualizzare tutti gli alert sul tuo o sui tuoi indirizzi IP.
 

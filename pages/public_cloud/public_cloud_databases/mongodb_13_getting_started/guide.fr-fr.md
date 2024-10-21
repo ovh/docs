@@ -8,7 +8,7 @@ updated: 2024-02-05
 
 **This guide will take you through the first steps of creating and connecting to a forever-free MongoDB Discovery managed cloud database service.**
 
-<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/6Tl7kNNsONY?si=Q6WIVd-9qdBJfyGK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/6Tl7kNNsONY?si=Q6WIVd-9qdBJfyGK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Requirements
 

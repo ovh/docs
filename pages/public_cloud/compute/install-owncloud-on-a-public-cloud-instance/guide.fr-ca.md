@@ -32,7 +32,7 @@ Avant de suivre ce tutoriel, veuillez vous référer à ces guides :
 
 ## Prérequis
 
-- Avoir une [instance de Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/){.external} dans [l’espace client d’OVH](/links/manager){.external} avec Ubuntu 18.04 installé
+- Avoir une [instance de Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/){.external} dans [l’espace client d’OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} avec Ubuntu 18.04 installé
 - Accès root SSH sur l'Instance
 - [ Stockage d'objets](https://www.ovhcloud.com/fr-ca/public-cloud/object-storage/){.external} dans le même datacenter que votre Public Cloud Instance (facultatif)
 - [Disque supplémentaire de haute performance](https://www.ovhcloud.com/fr-ca/public-cloud/block-storage/){.external} dans le même datacenter que votre instance de Public Cloud (en option)
@@ -305,4 +305,4 @@ service apache2 start
 ```
 
 ## Aller plus loin
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

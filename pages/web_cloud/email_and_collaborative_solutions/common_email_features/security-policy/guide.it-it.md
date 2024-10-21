@@ -12,8 +12,8 @@ I servizi di posta elettronica di OVHcloud permette di usufruire di indirizzi em
 
 ## Prerequisiti
 
-- Disporre di un [servizio di posta elettronica OVHcloud](/links/web/emails).
-- Avere accesso alla sezione [Web](/links/manager) dello [Spazio Cliente OVHcloud](/links/manager)
+- Disporre di un [servizio di posta elettronica OVHcloud](https://www.ovhcloud.com/it/emails/){.external}.
+- Avere accesso alla sezione [Web](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
 
@@ -21,10 +21,10 @@ Il servizio di posta permette di configurare la politica di sicurezza in modo da
 
 - aumentare la sicurezza degli account Exchange quando gli utenti tentano di effettuare l’accesso
 - rendere più complesse le password associate agli account del servizio Exchange
-- rafforzare la verifica dei messaggi in entrata sui nostri server e destinati ai tuoi indirizzi email (esclusivamente per gli account [Exchange](/links/web/emails-hosted-exchange));
-- definire la modalità di visualizzazione dei messaggi indesiderati nei tuoi account di posta elettronica (esclusivamente per gli account [Exchange](/links/web/emails-hosted-exchange)).
+- rafforzare la verifica dei messaggi in entrata sui nostri server e destinati ai tuoi indirizzi email (esclusivamente per gli account [Exchange](https://www.ovhcloud.com/it/emails/hosted-exchange/){.external});
+- definire la modalità di visualizzazione dei messaggi indesiderati nei tuoi account di posta elettronica (esclusivamente per gli account [Exchange](https://www.ovhcloud.com/it/emails/hosted-exchange/){.external}).
 
-Per accedere alla politica di sicurezza del tuo servizio Exchange accedi allo [Spazio Cliente OVHcloud](/links/manager), sezione “Web”. 
+Per accedere alla politica di sicurezza del tuo servizio Exchange accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione “Web”. 
 
 |Emails e Email Pro|Exchange| 
 |---|---| 
@@ -33,7 +33,7 @@ Per accedere alla politica di sicurezza del tuo servizio Exchange accedi allo [S
 
 > !primary]
 >
-> Se non vedi l'elemento `Plus`{.action} nel pannello di gestione della tua offerta `Email`{.action}, significa che sei su un'offerta MX Plan storica. La politica di sicurezza non è gestita sulla soluzione MX Plan storica.
+> Se non vedi l'elemento `Plus`{.action} nel pannello di gestione della tua offerta `Email`{.action}, significa che sei su un'offerta MXplan storica. La politica di sicurezza non è gestita sulla soluzione MXplan storica.
 
 Prosegui nella lettura di questa guida consultando la sezione corrispondente all’azione che vuoi effettuare:
 

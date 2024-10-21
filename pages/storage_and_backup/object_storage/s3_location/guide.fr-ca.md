@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Endpoints et géo-disponibilité de l’Object Storage
-updated: 2024-10-01
+updated: 2024-07-05
 ---
 
 <style>
@@ -76,21 +76,9 @@ OVHcloud Object Storage S3 est accessible via un point de terminaison unique : `
         <td>4</td>
     </tr>
     <tr>
-        <td rowspan=3>Asia-Pacific</td>
+        <td>Asie-Pacifique</td>
         <td>Singapour</td>
         <td>sgp</td>
-        <td>HTTPS</td>
-        <td>4</td>
-    </tr>
-    <tr>
-        <td>Sydney</td>
-        <td>ap-southeast-syd</td>
-        <td>HTTPS</td>
-        <td>4</td>
-    </tr>
-    <tr>
-        <td>Mumbai</td>
-        <td>ap-south-mum</td>
         <td>HTTPS</td>
         <td>4</td>
     </tr>
@@ -109,34 +97,34 @@ Le mapping des opérations **WRITE(PUT)** sur le point de terminaison **io** est
         <th>Mapping OVHcloud à partir du 17/06/2024</th>
     </tr>
     <tr>
-        <td>EXPRESS_ONEZONE</td> 
+        <td>Express One Zone</td> 
         <td rowspan=9>Standard</td>
         <td>High Performance</td>
     </tr>
     <tr>
-        <td>STANDARD</td>
+        <td>Standard</td>
         <td rowspan=8>Standard</td>
     </tr>
     <tr>
         <td>Par défaut *</td>
     </tr>
     <tr>
-         <td>STANDARD_IA</td>     
+         <td>Standard IA</td>     
     </tr>
     <tr>
-        <td>INTELLIGENT_TIERING</td>
+        <td>Intelligent Tiering</td>
     </tr>
     <tr>
-        <td>ONEZONE_IA</td>
+        <td>One Zone IA</td>
     </tr>
     <tr>
-        <td>GLACIER_IR</td>
+        <td>Glacier Instant Retrieval</td>
     </tr>
     <tr>
-        <td>GLACIER</td>
+        <td>Glacier Flexible</td>
     </tr>
     <tr>
-        <td>DEEP_ARCHIVE</td>
+        <td>Glacier Deep Archive</td>
     </tr>
 </table>
 
@@ -150,11 +138,11 @@ Le mapping des opérations **READ(GET/LIST/HEAD)** sur le point de terminaison *
         <th>Mapping OVHcloud à partir du 17/06/2024</th>
     </tr>
     <tr>
-        <td>EXPRESS_ONEZONE</td> 
+        <td>Express One Zone</td> 
         <td>High Performance</td>
     </tr>
     <tr>
-        <td>STANDARD</td>
+        <td>Standard</td>
         <td>Standard</td>
     </tr>
 </table>
@@ -162,7 +150,7 @@ Le mapping des opérations **READ(GET/LIST/HEAD)** sur le point de terminaison *
 > [!warning]
 > Contrairement à AWS, Express One Zone sera traité comme une classe de stockage régulière par OVHcloud et toutes les fonctionnalités S3 et les opérations d'API seront disponibles.
 
-![Schema 1](images/io-mapping-v2.png)
+![Schema 1](images/io-mapping.png)
 
 > [!warning]
 > - La classe de stockage ne sera plus définie au niveau de la création du bucket, mais au niveau de l'upload d'objets individuels.
@@ -181,34 +169,34 @@ Le mapping des opérations **WRITE(PUT)** sur le point de terminaison **perf** e
         <th>Mapping OVHcloud à partir du 17/06/2024</th>
     </tr>
     <tr>
-        <td>EXPRESS_ONEZONE</td> 
+        <td>Express One Zone</td> 
         <td rowspan=9>High Performance</td>
         <td rowspan=3>High Performance</td>
     </tr>
     <tr>
-        <td>STANDARD</td>
+        <td>Standard</td>
     </tr>
     <tr>
         <td>Par défaut *</td>
     </tr>
     <tr>
-         <td>STANDARD_IA</td>
+         <td>Standard IA</td>
         <td rowspan=6>Standard</td>
     </tr>
     <tr>
-        <td>INTELLIGENT_TIERING</td>
+        <td>Intelligent Tiering</td>
     </tr>
     <tr>
-        <td>ONEZONE_IA</td>
+        <td>One Zone IA</td>
     </tr>
     <tr>
-        <td>GLACIER_IR</td>
+        <td>Glacier Instant Retrieval</td>
     </tr>
     <tr>
-        <td>GLACIER</td>
+        <td>Glacier Flexible</td>
     </tr>
     <tr>
-        <td>DEEP_ARCHIVE</td>
+        <td>Glacier Deep Archive</td>
     </tr>
 </table>
 
@@ -222,16 +210,16 @@ Le mapping des opérations **READ(GET/LIST/HEAD)** sur le point de terminaison *
         <th>Mapping OVHcloud à partir du 10/06/2024</th>
     </tr>
     <tr>
-        <td>STANDARD</td> 
+        <td>Standard</td> 
         <td>High Performance</td>
     </tr>
     <tr>
-        <td>STANDARD_IA</td>
+        <td>Standard IA</td>
         <td>Standard</td>
     </tr>
 </table>
 
-![Schema 2](images/perf-mapping-v2.png)
+![Schema 2](images/perf-mapping.png)
 
 ## Object Storage Swift
 
@@ -243,4 +231,4 @@ Le mapping des opérations **READ(GET/LIST/HEAD)** sur le point de terminaison *
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

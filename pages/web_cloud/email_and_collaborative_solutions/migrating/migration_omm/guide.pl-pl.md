@@ -10,13 +10,13 @@ updated: 2023-08-29
 
 ## Wprowadzenie
 
-[OVH Mail Migrator](https://omm.ovh.net/) to narzędzie stworzone przez OVHcloud. Umożliwia przeniesienie Twoich kont e-mail na konta e-mail OVHcloud lub zewnętrzną usługę e-mail. Operacja obejmuje przeniesienie różnych typów treści, takich jak e-maile, kontakty, kalendarze i zadania, o ile są one kompatybilne z Twoimi kontami e-mail w OVHcloud.
+[OVH Mail Migrator](https://omm.ovh.net/){.external} to narzędzie stworzone przez OVHcloud. Umożliwia przeniesienie Twoich kont e-mail na konta e-mail OVHcloud lub zewnętrzną usługę e-mail. Operacja obejmuje przeniesienie różnych typów treści, takich jak e-maile, kontakty, kalendarze i zadania, o ile są one kompatybilne z Twoimi kontami e-mail w OVHcloud.
 
 **Dowiedz się, jak przenieść Twoje konta e-mail do OVHcloud przy użyciu narzędzia OVH Mail Migrator.**
 
 ## Wymagania początkowe
 
-- Korzystanie z usługi poczty elektronicznej w OVHcloud, takiej jak [Exchange](/links/web/emails), [E-mail Pro](/links/web/email-pro) lub MX Plan (w postaci pakietu kont MX Plan lub kont e-mail dostępnych w ramach [hostingu OVHcloud](/links/web/hosting))
+- Korzystanie z usługi poczty elektronicznej w OVHcloud, takiej jak [Exchange](https://www.ovhcloud.com/pl/emails/){.external}, [E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/){.external} lub MX Plan (w postaci pakietu kont MX Plan lub kont e-mail dostępnych w ramach [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external})
 - Dane dostępowe do kont e-mail, które chcesz przenieść (konta źródłowe)
 - Dane dostępowe do kont e-mail OVHcloud, na które przeniesione zostaną dane (konta docelowe)
 

@@ -1,19 +1,19 @@
 ---
-title: 'Konfiguracja karty sieciowej (NIC) dla OVHcloud Link Aggregation w Debianie 9-11'
-excerpt: 'Dowiedz się, jak włączyć OVHcloud Link Aggregation na serwerze Debian 9-11'
-updated: 2024-10-16
+title: 'Konfiguracja karty sieciowej (NIC) dla OVHcloud Link Aggregation w Debianie 9'
+excerpt: 'Dowiedz się, jak włączyć OVHcloud Link Aggregation na serwerze Debian 9'
+updated: 2022-01-07
 ---
 
 ## Wprowadzenie
 
 Technologia OVHcloud Link Aggregation (OLA) została przez nas zaprojektowana w celu zwiększenia dostępności serwera oraz podniesienia wydajności połączeń sieciowych. Możesz w prosty sposób przeprowadzić agregację kart sieciowych, dzięki czemu Twoje połączenia sieciowe staną się redundantne. Jeśli jedno połączenie zostanie zerwane, ruch zostanie automatycznie przekierowany do innego dostępnego łącza. 
 
-**Ten przewodnik wyjaśnia, jak powiązać interfejsy sieciowe i wykorzystać je do OLA w Debianie 9-11.**
+**Ten przewodnik wyjaśnia, jak powiązać interfejsy sieciowe i wykorzystać je do OLA w Debianie 9.**
 
 ## Wymagania początkowe
 
 - [Konfiguracja karty sieciowej dla OVHcloud Link Aggregation w Panelu klienta](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager)
-- Dostęp do [Panelu klienta OVHcloud](/links/manager).
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 > [!warning]
 >
@@ -27,7 +27,7 @@ Technologia OVHcloud Link Aggregation (OLA) została przez nas zaprojektowana w 
 ## W praktyce
 
 Ponieważ konfiguracja kart sieciowych w OLA jest prywatna, nie będziesz mógł połączyć się z serwerem za pomocą SSH. W związku z tym do uzyskania dostępu do serwera użyj narzędzia IPMI.
-<br>Zaloguj się do [Panelu klienta OVHcloud](/links/manager). W części `Bare Metal Cloud`{.action} wybierz serwer z `Serwery dedykowane`{.action} i kliknij zakładkę `IPMI`{.action} (1).
+<br>Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W części `Bare Metal Cloud`{.action} wybierz serwer z `Serwery dedykowane`{.action} i kliknij zakładkę `IPMI`{.action} (1).
 
 Teraz kliknij przycisk `Z apletu Java (KVM)`{.action} (2).
 
@@ -56,14 +56,14 @@ Spowoduje to otwarcie pustego pliku tekstowego. Aby skonfigurować powiązanie, 
 
 ```bash
 auto bond0
-iface bond0 inet static
+  iface bond0 inet static
   address 10.0.0.1/24
   bond-mode 802.3ad
   bond-slaves eno1 eno2
   bond-miimon 100
   bond-downdelay 200
-  bond-lacp-rate fast
-  bond-xmit_hash_policy layer3+4
+  bond-lacp-rate 1
+  bond-xmit_hash_policy layer2+3
 
   up ip -6 addr add fc10:0000:0000:0001::/64 dev bond0
 ```
@@ -79,7 +79,7 @@ Na koniec zrestartuj demona sieciowego za pomocą następującego polecenia:
 restart sieci systemctl 
 ```
 
-Restart może trwać kilka sekund, w tym czasie budowany jest interfejs powiązania.Aby sprawdzić, czy powiązanie działa, podłącz inny serwer do tego samego vRacka. Jeśli wszystko działa poprawnie, ustawienie jest prawidłowe. W przeciwnym razie sprawdź dokładnie Twoje konfiguracje lub spróbuj zrestartować serwer.
+Restart może trwać kilka minut, w tym czasie budowany jest interfejs powiązania.Aby sprawdzić, czy powiązanie działa, podłącz inny serwer do tego samego vRacka. Jeśli wszystko działa poprawnie, ustawienie jest prawidłowe. W przeciwnym razie sprawdź dokładnie Twoje konfiguracje lub spróbuj zrestartować serwer.
 
 ## Podsumowanie
 

@@ -12,8 +12,8 @@ La mise en place d'un serveur web et des logiciels associés permet à votre ser
 
 ## Prérequis
 
-- Un [serveur dédié](/links/bare-metal/bare-metal), un [VPS](https://www.ovhcloud.com/fr-ca/vps/) ou une instance [Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/) dans votre compte OVHcloud (hors systèmes Windows)
-- Être connecté à votre [espace client OVHcloud](/links/manager).
+- Un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/), un [VPS](https://www.ovhcloud.com/fr-ca/vps/) ou une instance [Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/) dans votre compte OVHcloud (hors systèmes Windows)
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 - Un accès administratif à votre service via SSH
 
 > [!warning]
@@ -24,7 +24,7 @@ La mise en place d'un serveur web et des logiciels associés permet à votre ser
 
 ## En pratique
 
-Si une distribution Debian ou Ubuntu n'est pas déjà installée sur votre serveur, effectuez d'abord une réinstallation depuis votre [espace client OVHcloud](/links/manager). C'est la meilleure façon d'avoir un système propre pour votre serveur web et les applications qui s'y exécutent.
+Si une distribution Debian ou Ubuntu n'est pas déjà installée sur votre serveur, effectuez d'abord une réinstallation depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). C'est la meilleure façon d'avoir un système propre pour votre serveur web et les applications qui s'y exécutent.
 
 Suivez le guide correspondant pour installer une distribution sur votre service OVHcloud et vous y connecter en [SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) :
 
@@ -223,7 +223,7 @@ Vous pouvez aller plus loin avec l’UFW, par exemple si vous souhaitez restrein
 
 ### Étape 6 : configuration DNS (facultatif)
 
-L'accès à l'installation de votre serveur web via un nom de domaine nécessite de l'attacher à votre service. Pour ce faire, vous devez éditer la zone DNS accessible depuis votre [espace client OVHcloud](/links/manager), à condition qu’OVHcloud soit votre bureau d’enregistremente **et** que le nom de domaine utilise les serveurs DNS d’OVHcloud.
+L'accès à l'installation de votre serveur web via un nom de domaine nécessite de l'attacher à votre service. Pour ce faire, vous devez éditer la zone DNS accessible depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), à condition qu’OVHcloud soit votre bureau d’enregistremente **et** que le nom de domaine utilise les serveurs DNS d’OVHcloud.
 
 Consultez le guide « [Éditer une zone DNS](/pages/web_cloud/domains/dns_zone_edit) » pour en savoir plus. Si le nom de domaine est actuellement utilisé, configurez les DNS uniquement après que votre site web ou votre application soit prêt.
 

@@ -10,7 +10,7 @@ updated: 2022-12-20
 
 > [!primary]
 >
-> Od 6 października 2022 nasze rozwiązanie "Failover IP" nazywa się teraz [Additional IP](/links/network/additional-ip). To nie ma wpływu na jego funkcje.
+> Od 6 października 2022 nasze rozwiązanie "Failover IP" nazywa się teraz [Additional IP](https://www.ovhcloud.com/pl/network/additional-ip/). To nie ma wpływu na jego funkcje.
 >
 
 ## Wprowadzenie
@@ -28,9 +28,9 @@ Technologia ta pozwala na wymianę adresów IP między poszczególnymi rozwiąza
 
 ## Wymagania początkowe
 
-- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal){.external} w Panelu klienta
-- Posiadanie [adresu Additional IP](/links/network/additional-ip)
-- Dostęp do [panelu klienta OVHcloud](/links/manager)
+- Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/){.external} w Panelu klienta
+- Posiadanie [adresu Additional IP](https://www.ovhcloud.com/pl/bare-metal/ip/)
+- Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 > [!warning]
 > Funkcja ta może być niedostępna lub ograniczona na [serwerach dedykowanych **Eco**](https://eco.ovhcloud.com/pl/about/).
@@ -60,7 +60,7 @@ Technologia ta pozwala na wymianę adresów IP między poszczególnymi rozwiąza
 > Tylko blok o jednym rozmiarze (/32) będzie można przenieść z serwera dedykowanego na VPS.
 >
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), kliknij menu `Bare Metal Cloud`{.action} i otwórz sekcję `Network`{.action}. Następnie kliknij przycisk `IP`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij menu `Bare Metal Cloud`{.action} i otwórz sekcję `Network`{.action}. Następnie kliknij przycisk `IP`{.action}.
 
 Kliknij na zakładkę `Additional IP`{.action}.
 

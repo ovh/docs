@@ -1,7 +1,7 @@
 ---
 title: 'Alojar varios sitios web en un mismo hosting'
 excerpt: 'Descubra cómo utilizar un plan de hosting para alojar varios sitios web'
-updated: 2024-10-08
+updated: 2024-03-15
 ---
 
 > [!primary]
@@ -20,7 +20,6 @@ Es posible alojar varios sitios web en un mismo plan de hosting, aunque los domi
 - 2 : [Añadir un dominio o subdominio](#add-domain)
     - 2.1 : [Añadir un dominio registrado con OVHcloud](#add-ovhcloud-domain)
     - 2.2 : [Añadir un dominio externo](#add-external-domain)
-    - 2.3 : [Diagnosticar los dominios](#diagnostic-domain)
 - 3 : [Publicar un sitio web en internet](#site-online)
 
 ## Requisitos
@@ -157,42 +156,6 @@ Compruebe que la información que se muestra es correcta y haga clic en `Aceptar
 >
 > Los registros DNS de tipo **A** y **TXT** deben estar obligatoriamente situados en la zona DNS activa de su nombre de dominio para que sea añadido a su alojamiento web. Solo los registros DNS de tipo **AAAA** son opcionales. 
 >
-
-#### 2.3\. diagnosticar los dominios <a name="diagnostic-domain"></a>
-
-En la pestaña `Multisitio` de la tabla, aparece una columna `Diagnóstico` que informa si el dominio apunta correctamente al alojamiento web asociado. Permite comprobar rápidamente que la configuración DNS del dominio se ha realizado correctamente con el alojamiento web. Por ejemplo, esta columna le ayuda a identificar y resolver posibles problemas de tiempo y asistencia. Para cada dominio, se pueden obtener tres resultados de diagnóstico:
-
-- `A/AAAA` verde
-- `A/AAAA` amarillo
-- `A/AAAA` gris
-
-##### A/AAAA verde
-
-![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-green-info.png){.thumbnail}
-
-Cuando el icono `A/AAAA` está en verde en la columna `Diagnóstico`, significa que el registro **A** (para las direcciones IPv4) y/o el registro **AAAA** (para las direcciones IPv6) de su dominio apunta correctamente a la dirección IP de su alojamiento web. La configuración DNS de su dominio es, por lo tanto, compatible con el alojamiento web.
-
-##### A/AAAA amarillo
-
-![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-info.png){.thumbnail}
-
-Cuando el icono `A/AAAA` es amarillo en la columna `Diagnóstico`, significa que el registro **A** (IPv4) y/o **AAAA** (IPv6) de su dominio apunta a una dirección IP, pero no es el del alojamiento web desde el que consulta la columna `Diagnóstico`.
-Haga clic en el icono amarillo de `A/AAAA` para obtener más información. Aparecerá el siguiente mensaje:
-
-![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-popup.png){.thumbnail}
-
-Para solucionar los problemas de direccionamiento DNS de su dominio y asegurarse de que apunta correctamente al alojamiento web deseado, siga los pasos descritos en la guía "[Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
-
-##### A/AAAA gris
-
-![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-info.png){.thumbnail}
-
-Si el icono `A/AAAA` aparece atenuado en la columna `Diagnóstico`, significa que el dominio no apunta actualmente a ninguna dirección IP y que no hay ningún registro **A** o **AAAA** configurado para ese dominio.
-Haga clic en el icono gris de `A/AAAA` para obtener más información. Aparecerá el siguiente mensaje:
-
-![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-popup.png){.thumbnail}
-
-Para añadir los registros **A** o **AAAA** y configurar correctamente su dominio, siga los pasos descritos en la guía "[Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)".
 
 ### 3\. publicar un sitio web en internet <a name="site-online"></a>
 

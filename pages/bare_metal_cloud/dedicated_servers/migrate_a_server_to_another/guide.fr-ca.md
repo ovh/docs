@@ -40,7 +40,7 @@ Si un changement de version d'OS ou de logiciel est nécessaire, assurez-vous qu
 La migration des données consiste généralement à copier les fichiers d'un serveur à un autre. Pour cela, plusieurs solutions existent :
 
 - La plus simple est d'utiliser un logiciel adapté tel que [SFTP](/pages/bare_metal_cloud/dedicated_servers/comment-deposer-ou-recuperer-des-donnees-sur-un-serveur-dedie-via-sftp).
-- L'autre option est de [synchroniser les deux serveurs entres-eux](/pages/bare_metal_cloud/dedicated_servers/how-to-copy-data-from-one-dedicated-server-to-another-using-rsync).
+- L'autre option est de [synchroniser les deux serveurs entres-eux](/pages/bare_metal_cloud/dedicated_servers/how-to-copy-data-from-one-dedicated-server-to-another-using-rsync)).
 
 ### Utiliser le backup storage (disponible uniquement sur OVHcloud et So you Start)
 
@@ -55,7 +55,7 @@ L'option [Backup Storage](https://www.ovhcloud.com/fr-ca/bare-metal/backup-stora
 
 Vous pouvez autoriser l'accès à ce stockage depuis votre nouveau serveur. Ainsi, vous disposerez d'une passerelle permettant le transfert de vos données.
 
-Consultez notre guide « [utiliser backup storage sur un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage){.external} » pour plus d'informations.
+Consultez notre guide « [utiliser backup storage sur un serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/backup-storage/){.external} » pour plus d'informations.
 
 ### Migrer son Additional IP (disponible uniquement sur OVHcloud et So you Start)
 
@@ -68,7 +68,7 @@ Consultez notre guide « [utiliser backup storage sur un serveur dédié](/pages
 > - Il n'est pas possible d'effectuer la migration d'une IP depuis un compte OVHcloud vers un compte So you Start.
 >
 
-Si la réputation de vos adresses IP est importante, il est fortement conseillé d'utiliser des [Additional IP](/links/network/additional-ip), celles-ci pouvant être conservées en cas de migration.
+Si la réputation de vos adresses IP est importante, il est fortement conseillé d'utiliser des [Additional IP](https://www.ovhcloud.com/fr-ca/bare-metal/ip/), celles-ci pouvant être conservées en cas de migration.
 
 Une fois ces IP en votre possession, il vous suffira de déplacer celles-ci vers le nouveau serveur.<br>
 À cet effet, consultez notre guide dédié : [Déplacer une Additional IP](/pages/bare_metal_cloud/dedicated_servers/move-failover-ip).
@@ -88,6 +88,6 @@ Pour plus d'informations, consultez notre documentation sur les [domaines et DNS
 
 Pour bénéficier d'une assistance à la migration de votre serveur, nous vous proposons de contacter [notre réseau de partenaires](https://partner.ovhcloud.com/fr-ca/directory/).
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

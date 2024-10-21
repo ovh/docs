@@ -12,14 +12,14 @@ Con la opción «Reglas de la bandeja de entrada», puede crear un elaborado con
 
 ## Requisitos
 
-- Tener una solución de correo electrónico de OVHcloud configurada (**solución MX Plan**, disponible como parte de nuestros [planes de hospedaje web](/links/web/hosting), incluida en un [Alojamiento gratuito 100M](/links/web/domains-free-hosting) o contratada por separado como una solución independiente; [**Hosted Exchange**](/links/web/emails-hosted-exchange) o [**Email Pro**](/links/web/email-pro))
+- Tener una solución de correo electrónico de OVHcloud configurada (**solución MX Plan**, disponible como parte de nuestros [planes de hospedaje web](https://www.ovhcloud.com/es-es/web-hosting/), incluida en un [Alojamiento gratuito 100M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/) o contratada por separado como una solución independiente; [**Hosted Exchange**](https://www.ovhcloud.com/es-es/emails/hosted-exchange/) o [**Email Pro**](https://www.ovhcloud.com/es-es/emails/email-pro/))
 - Tener las credenciales de acceso de la dirección de correo electrónico que quiere configurar
 
 ## Procedimiento
 
 ### Paso 1: acceder a la sección «Opciones»
 
-Inicie sesión en su cuenta de Exchange a través del [correo electrónico basado en la web de OVHcloud](/links/web/email). Haga clic en el símbolo del engranaje en la parte superior derecha para desplegar el menú «Opciones» y seleccione `«Opciones»`{.action}.
+Inicie sesión en su cuenta de Exchange a través del [correo electrónico basado en la web de OVHcloud](https://www.ovh.es/mail). Haga clic en el símbolo del engranaje en la parte superior derecha para desplegar el menú «Opciones» y seleccione `«Opciones»`{.action}.
 
 ![inboxrules](images/exchange-rules-step1.png){.thumbnail}
 
@@ -52,7 +52,7 @@ Debido al gran número de condiciones y acciones disponibles, no podemos tratarl
 > [!warning]
 >OVHcloud le ofrece una serie de servicios cuya configuración y gestión recae sobre usted. Por lo tanto, es su responsabilidad asegurarse de que estos servicios funcionen correctamente.
 >
->El propósito de esta guía es ayudarle, en la medida de lo posible, con las tareas generales. No obstante, póngase en contacto con un [proveedor especializado](/links/partner) y/o el editor de <i>software</i> del servicio si tiene dificultades. Nosotros no podremos ayudarle en este aspecto. Puede encontrar información adicional en la sección «Más información» de esta guía.
+>El propósito de esta guía es ayudarle, en la medida de lo posible, con las tareas generales. No obstante, póngase en contacto con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) y/o el editor de <i>software</i> del servicio si tiene dificultades. Nosotros no podremos ayudarle en este aspecto. Puede encontrar información adicional en la sección «Más información» de esta guía.
 >
 
 #### Ejemplo 1: redireccionamiento de mensajes de correo electrónico a otra dirección

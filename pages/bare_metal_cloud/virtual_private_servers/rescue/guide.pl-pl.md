@@ -29,7 +29,7 @@ W przypadku problemów z systemem można przeprowadzić weryfikację w trybie Re
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](/links/manager)
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 - Posiadanie już skonfigurowanego [VPS OVHcloud](https://www.ovhcloud.com/pl/vps/)
 
 > [!warning]
@@ -42,7 +42,7 @@ W przypadku problemów z systemem można przeprowadzić weryfikację w trybie Re
 
 ### Aktywacja trybu Rescue
 
-Zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer w sekcji `Prywatne serwery wirtualne`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer w sekcji `Prywatne serwery wirtualne`{.action}.
 
 W zakładce `Strona główna`{.action} kliknij `...`{.action} obok "Boot" w strefie **Twój VPS**.
 
@@ -58,7 +58,7 @@ Po rozpoczęciu restartu pasek postępu wskazuje czas trwania zadania. Może to 
 
 > [!primary]
 >
-> Otrzymasz automatyczny e-mail z danymi do logowania SSH, w celu uzyskania dostępu do trybu Rescue. Prosimy o oczekiwanie na wiadomość e-mail przed kontynuowaniem jakichkolwiek działań. E-mail ten jest również dostępny w Twoim [Panelu klienta OVHcloud](/links/manager). Aby ją znaleźć, kliknij na nazwę powiązaną z Twoim identyfikatorem OVHcloud na pasku menu w prawym górnym rogu, następnie wybierz `E-maile dotyczące usługi`{.action}.
+> Otrzymasz automatyczny e-mail z danymi do logowania SSH, w celu uzyskania dostępu do trybu Rescue. Prosimy o oczekiwanie na wiadomość e-mail przed kontynuowaniem jakichkolwiek działań. E-mail ten jest również dostępny w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Aby ją znaleźć, kliknij na nazwę powiązaną z Twoim identyfikatorem OVHcloud na pasku menu w prawym górnym rogu, następnie wybierz `E-maile dotyczące usługi`{.action}.
 >
 
 Następnie [uzyskaj dostęp do Twojego serwera przez SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction), używając tymczasowego hasła wygenerowanego dla trybu Rescue.

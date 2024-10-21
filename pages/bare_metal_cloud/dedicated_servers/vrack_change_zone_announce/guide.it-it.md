@@ -6,7 +6,7 @@ updated: 2019-03-12
 
 ## Obiettivo
 
-La [vRack](https://www.ovh.it/soluzioni/vrack/){.external} è una rete privata che permette di configurare l’indirizzamento tra due o più [server dedicati](/links/bare-metal/bare-metal){.external} OVHcloud.
+La [vRack](https://www.ovh.it/soluzioni/vrack/){.external} è una rete privata che permette di configurare l’indirizzamento tra due o più [server dedicati](https://www.ovhcloud.com/it/bare-metal/){.external} OVHcloud.
 
 **Questa guida ti mostra come definire la zona annunciata nella vRack per un blocco IP.**
 
@@ -50,7 +50,7 @@ Accedi alla pagina delle [API OVHcloud](https://api.ovh.com/){.external} utilizz
 > @api {v1} /vrack GET /vrack
 > 
 
-Questa chiamata API consente di recuperare l'elenco di tutte le vRack create. Se i riferimenti mostrati non ti permettono di identificare la vRack, recupera l’informazione dallo [Spazio Cliente OVHcloud](/links/manager){.external}: nella sezione `Bare Metal Cloud`{.action} è sufficiente cliccare su `Network`{.action}, poi su `vRack`{.action} nella colonna a sinistra per visualizzare tutte le vRack attive.
+Questa chiamata API consente di recuperare l'elenco di tutte le vRack create. Se i riferimenti mostrati non ti permettono di identificare la vRack, recupera l’informazione dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}: nella sezione `Bare Metal Cloud`{.action} è sufficiente cliccare su `Network`{.action}, poi su `vRack`{.action} nella colonna a sinistra per visualizzare tutte le vRack attive.
 
 > [!api]
 >

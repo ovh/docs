@@ -16,7 +16,7 @@ Usted acaba de crear su proyecto de Public Cloud y quiere saber más sobre la in
 
 ## Requisitos
 
-- Estar conectado al [área de cliente de OVHcloud](/links/manager){.external}.
+- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 - Haber creado su [primer proyecto de Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project).
 
 ## Procedimiento
@@ -80,7 +80,7 @@ El proyecto de Public Cloud incluye diversas herramientas de gestión, que se en
 |**Horizon**|Es la [interfaz gráfica](/pages/public_cloud/compute/introducing_horizon) que usualmente se encuentra disponible en OpenStack. No se modifica, lo que permite a los usuarios que están acostumbrados a esta interfaz recuperar sus reflejos.|
 |**Users and Roles**|Permite [crear usuarios](/pages/public_cloud/compute/create_and_delete_a_user) y asignarles un rol. Estos usuarios permiten acceder directamente a las API o al panel Horizon. Por ejemplo, puede crear un usuario para las operaciones de mantenimiento habituales y un usuario para las herramientas de automatización, como Terraform.|
 |**Quota and Regions**|Esta herramienta le permite controlar las localizaciones y los límites de recursos disponibles para su proyecto.<br><br>**Cuotas**: Nuestro sistema, que respeta determinados criterios (número de facturas ya pagadas, uso de otros productos de OVHcloud), establece límites al número de recursos que puede crear para evitar problemas de impago. Por defecto, el sistema aumenta los límites automáticamente cuando se cumplen determinados criterios. Sin embargo, puede [aumentar manualmente una cuota](/pages/public_cloud/compute/increasing_public_cloud_quota#aumentar-manualmente-la-cuota-de-recursos) desde esta herramienta.<br><br>**Localizaciones**: Public Cloud está disponible en varias localizaciones del mundo. Además, cada localización puede tener varias "regiones" (concepto propio de OpenStack). Por ejemplo, para un cliente europeo, la zona APAC (Asia-Pacífico) está desactivada por defecto. Si esto se ajusta a sus necesidades, puede activar nuevas regiones desde este menú.|
-|**SSH Keys**|Una herramienta que le permite [gestionar sus llaves SSH](/pages/public_cloud/compute/creating-ssh-keys-pci) de forma centralizada.|
+|**SSH Keys**|Una herramienta que le permite [gestionar sus llaves SSH](/pages/public_cloud/compute/public-cloud-first-steps#1-crear-claves-ssh) de forma centralizada.|
 |**Billing Control**|Las facturas de Public Cloud funcionan en base al principio de pago por uso (en inglés, *pay-as-you-go*). En [este menú](/pages/public_cloud/compute/analyze_billing) podrá consultar su consumo actual, ver un pronóstico de la siguiente factura y, por supuesto, recuperar sus facturas anteriores.|
 |**Credit and Vouchers**|Este menú le permite consultar el consumo de un cupón, añadir uno o [añadir crédito](/pages/account_and_service_management/managing_billing_payments_and_services/add_cloud_credit_to_project) directamente en su proyecto de Public Cloud.|
 |**Contacts and Rights**|Este menú le permite añadir otros contactos (cuenta de OVHcloud) para administrar técnicamente su proyecto. También puede añadir usuarios para consultar únicamente *read-only*.|
@@ -90,6 +90,6 @@ El proyecto de Public Cloud incluye diversas herramientas de gestión, que se en
 
 [Crear y conectarse a una instancia de Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps)
 
-Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](/links/professional-services) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
+Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

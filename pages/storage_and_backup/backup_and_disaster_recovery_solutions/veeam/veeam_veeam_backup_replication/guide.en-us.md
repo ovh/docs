@@ -1,7 +1,7 @@
 ---
 title: 'Setting up Veeam Backup & Replication'
 excerpt: 'Find out how to set up a Veeam Backup & Replication server with Veeam Enterprise'
-updated: 2024-09-26
+updated: 2023-06-23
 ---
 
 ## Objective
@@ -12,14 +12,14 @@ Veeam Backup & Replication is a data protection software. It offers its users a 
 
 ## Requirements
 
-- A [Veeam Enterprise solution](/links/hosted-private-cloud/veeam-enterprise)
+- a [Veeam Enterprise solution](https://www.ovhcloud.com/en/storage-solutions/veeam-enterprise/){.external}
 - Windows Server 2012 or a newer version
 
 ## Instructions
 
 ### Setting up Veeam Backup & Replication
 
-Download the **Veeam Backup & Replication** solution from the [Veeam website](https://www.veeam.com/downloads.html?ad=top-sub-menu). If you do not have an account, you will need to set one up (account setup is free).
+Download the **Veeam Backup & Replication** solution from the [Veeam website](https://www.veeam.com/downloads.html?ad=top-sub-menu){.external}. If you do not have an account, you will need to set one up (account setup is free).
 
 The file will appear in ISO disk image format. Once you have transferred it onto your server, select the server’s CD reader, then select the image.
 
@@ -145,46 +145,33 @@ Your OVHVeeamEnterprise user is now accessible locally and remotely.
 
 #### Step 4 - Register the Veeam Backup & Replication server
 
-#### From the OVHcloud Control Panel
+##### **Using the OVHcloud Control Panel**
 
-In your [OVHcloud Control Panel](/links/manager), open the `Hosted Private Cloud`{.action} section and select your service labelled **backupserverenterprise** from `Platforms and services`{.action}. On this page, click on `Activate license`{.action} in the `Shortcuts` box.
+In your OVHcloud Control Panel, open the `Hosted Private Cloud`{.action} section and select your service labelled **backupserverenterprise** from `Platforms and services`{.action}. On this page, click on `Activate license`{.action} in the `Shortcuts` box.
 
 To set up your environnement, make sure you have opened the ports from OVHcloud to your Veeam Backup and Replication servers:
 
 - `Port 9392/TCP`
 - `Port 9405/TCP`
 
-![Veeam installation](images/architecture.png){.thumbnail}
+![installation Veeam](images/architecture.png){.thumbnail}
 
-![OVHcloud Control Panel](images/veeam001.png){.thumbnail}
+![control panel register](images/veeam001.png){.thumbnail}
 
-In the new opened window, enter the following information:
+In the new window, enter the following information:
 
-- The public IP address through which your server **Veeam Backup & Replication** can be contacted.
-- The login for the service account you have created.
-- The password for the service account.
+- The public IP address through which your **Veeam Backup & Replication** server can be reached.
+- The login credentials you have created previously (user name and password).
 
-Then confirm with `OK`{.action}.
+Validate by clicking `OK`{.action}.
 
-![license activation](images/veeam03.png){.thumbnail}
+![activation licence](images/veeam03.png){.thumbnail}
 
-Once you have activated it, you will find the main information on the service page.
+Once the activation is complete, you will find the main information on the service page.
 
-![license activated](images/veeam02.png){.thumbnail}
+![licence activated](images/veeam02.png){.thumbnail}
 
-**Updating login credentials via the OVHcloud Control Panel**:
-
-To update your login credentials, you can use the `Update my information`{.action} button.
-
-![Update 1](images/veeam_update_cred.png){.thumbnail}
-
-In the window that pops up, inform the `IP`, `Username` and `Password`.
-
-Finally, click `OK`{.action}.
-
-![Update 2](images/veeam_update_cred_2.png){.thumbnail}
-
-#### Using the OVHcloud API
+##### **Using the OVHcloud API**
 
 First, retrieve your serviceName:
 
@@ -202,10 +189,10 @@ Then register it:
 
 You will need the following information:
 
-- the public IP address that can be used to contact your **Veeam Backup & Replication** server
-- your server’s **Veeam Backup & Replication** port (usually **9392/TCP**)
-- the login for the account you have just created
-- the password for your service account
+ * the public IP address that can be used to contact your **Veeam Backup & Replication** server
+ * your server’s **Veeam Backup & Replication** port (usually **9392/TCP**)
+ * the login for the account you have just created
+ * the password for your service account
 
 You can retrieve the public IP used by Veeam Enterprise to contact your **Veeam Backup & Replication** server via:
 
@@ -216,28 +203,6 @@ You can retrieve the public IP used by Veeam Enterprise to contact your **Veeam 
 
 > [!primary]
 > The activation of your Veeam Backup & Replication server can take several hours.
-
-**Updating login credentials via the API**:
-
-> [!api]
->
-> @api {v1} /veeam/veeamEnterprise POST /veeam/veeamEnterprise/{serviceName}/update
->
-
-> **Settings**:
->
-> `serviceName`: Your service name, e.g. `pcc-XXX-XXX-XXX-XXX`
->
-
-Example of **REQUEST BODY** required:
-
-```json
-{
-  "ip": "192.0.2.0",
-  "password": "XXX",
-  "username": "string"
-}
-```
 
 #### Step 5 - Verify the registration
 
@@ -260,6 +225,6 @@ If everything went fine you should see "Edition: Enterprise Plus".
 
 ## Go further
 
-If you require training or technical support to implement our solutions, please contact your Technical Account Manager or visit [this page](/links/professional-services) to get a quote and request a custom analysis of your project from our Professional Services team experts.
+Join our community of Discord users: <https://discord.gg/ovhcloud>
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

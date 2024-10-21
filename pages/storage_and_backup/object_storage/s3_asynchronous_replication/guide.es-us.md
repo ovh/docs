@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Master asynchronous replication across your buckets (EN)
 excerpt: Learn how to automate and manage object replication across buckets for enhanced data availability, redundancy, and compliance
-updated: 2024-10-17
+updated: 2024-07-08
 ---
 
 ## Introduction
@@ -222,24 +222,7 @@ The `ReplicationStatus` attribute can have the following values:
 > 
 > If one or more destination fail replication, the value of the attribute becomes "*FAILED*".
 
-### Replication between buckets with object lock enabled
-
-Object Lock can be used with S3 Replication to enable automatic copying of locked objects across buckets. For replicated objects, the object lock configuration of the source bucket will be used in the destination bucket. However, if you upload an object directly to the destination bucket (outside of the replication process), it will use the lock configuration of the destination bucket.
-
-> [!warning]
-> To replicate data in buckets with object lock on, you must have the following prerequisites:
->
-> - Object Lock must be enabled on both source and destination buckets.
-> - You must provide a token when uploading your replication configuration on the source bucket.
->
-
-You can obtain a token by [contacting our support team](https://help.ovhcloud.com/csm?id=csm_get_help). Once you are provided with a token, you can set it via the cli in the `--token` parameter of the `put-bucket-replication` command:
-
-```bash
-$AWS s3api put-bucket-replication --replication-configuration "file://path_to_replication_conf_file" --bucket bucket_name --token $TOKEN
-```
-
-#### Example of replication configuration
+#### Examples of replication configuration
 
 Simple replication between 2 buckets:
 
@@ -442,6 +425,6 @@ $ aws s3api put-bucket-replication --bucket <source> --replication-configuration
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es/support-levels/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

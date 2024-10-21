@@ -164,7 +164,7 @@ net user Administrator *
 
 ![adminpw9](images/adminpw9.png){.thumbnail}
 
-Nous vous recommandons d'utiliser le clavier virtuel lors de la saisie de mots de passe dans cette interface.
+Nous vous recommandaons d'utiliser le clavier virtuel lors de la saisie de mots de passe dans cette interface.
 
 ## Aller plus loin
 

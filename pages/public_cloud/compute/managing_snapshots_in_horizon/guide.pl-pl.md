@@ -1,7 +1,7 @@
 ---
 title: Zarządzanie snapshotami instancji w horizon
 excerpt: Jak zarządzać snapshotami instancji w interfejsie Horizon.
-updated: 2024-09-06
+updated: 2022-01-31
 ---
 
 > [!primary]
@@ -9,7 +9,6 @@ updated: 2024-09-06
 >
 
 ## Wprowadzenie
-
 W trakcie swojej działalności prawdopodobnie będziesz wykonywać kopie zapasowe danych, konfiguracji i całych instancji. 
 Możliwe jest tworzenie zrzutów instancji, które będą mogły zostać wykorzystane do przywracania wcześniejszej konfiguracji lub do tworzenia dokładnej kopii instancji. 
 
@@ -17,7 +16,7 @@ Możliwe jest tworzenie zrzutów instancji, które będą mogły zostać wykorzy
 
 ## Wymagania początkowe
 
-- Utworzenie [instancji Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) na Twoim koncie OVHcloud
+- Utworzenie [instancji Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#krok-3-tworzenie-instancji) na Twoim koncie OVHcloud
 - [Dostęp do interfejsu Horizon](/pages/public_cloud/compute/introducing_horizon)
 
 ## W praktyce
@@ -39,43 +38,6 @@ W oknie, które się wyświetla wprowadź wymagane informacje:
 ![Tworzenie kopii zapasowej snapshot](images/createsnapshot2.png){.thumbnail}
 
 Snapshot zostanie wyświetlony w sekcji `Images`{.action}. Dlatego zalecamy nadawanie każdej kopii zapasowej snapshota odpowiedniej nazwy.
-
-### Przywracanie snapshota
-
-Możesz przywrócić snapshot, tworząc z niego nową instancję.
-
-W interfejsie Horizon kliknij menu `Compute`{.action} po lewej stronie, a następnie `Images`{.action}.
-
-Kliknij `Launch`{.action} obok wybranego snapshota.
-
-![restore snapshot](images/restoresnapshot.png){.thumbnail}
-
-W oknie podręcznym musi być zaznaczona pewna liczba opcji, aby zakończyć przywracanie snapshota.
-
-> [!tabs]
-> **Details**
->>
->> **Nazwa instancji (*Instance name*):** Wpisz wybraną nazwę instancji.<br>
->> **Count:** Wybierz liczbę instancji, które chcesz uruchomić z kopii zapasowej snapshot.<br><br>
->>![Snapshot](images/restoresnapshot1.png){.thumbnail}<br>
->>
-> **Flavor**
->>
->> Wybierz odpowiedni *flavor*. Upewnij się, że wybierasz wersję z zasobami równymi lub większymi niż rozmiar obrazu (snapshot).<br><br>
->>![network](images/restoresnapshot2.png){.thumbnail}<br>
->>
-> **Sieć (*Network*)**
->>
->> Wybierz sieć publiczną (Ext-Net), którą chcesz przypisać do instancji.<br><br>
->>![network](images/restoresnapshot3.png){.thumbnail}<br>
->>
-> **Keypair**
->>
->> Wybierz (3), utwórz (1) lub zaimportuj (2) parę kluczy.<br><br>
->>![network](images/restoresnapshot4.png){.thumbnail}<br>
->>
-
-Następnie kliknij `Launch Instance`{.action}, aby rozpocząć tworzenie instancji.
 
 ### Usunięcie snapshota
 

@@ -1,7 +1,7 @@
 ---
 title: "Email Pro - Configurar una dirección de correo electrónico en Gmail para Android"
 excerpt: "Cómo configurar una cuenta Email Pro en Android utilizando la aplicación Gmail"
-updated: 2024-10-09
+updated: 2024-03-15
 ---
 
 <style>
@@ -104,7 +104,7 @@ Una vez que haya configurado la dirección de correo electrónico, ¡ya puede em
 
 > [!success]
 >
-> OVHcloud ofrece una aplicación web con la que podrá acceder a su dirección de correo electrónico desde un navegador web en la dirección [Webmail](/links/web/email). Puede conectarse con las claves de su dirección de correo electrónico.
+> OVHcloud ofrece una aplicación web con la que podrá acceder a su dirección de correo electrónico desde un navegador web en la dirección <https://www.ovhcloud.com/es-es/mail/>. Puede conectarse con las claves de su dirección de correo electrónico.
 
 ### Configuración POP, IMAP y SMTP
 
@@ -168,11 +168,7 @@ Para entender la diferencia entre el uso del protocolo POP e IMAP, vamos a desgl
 
 ## Más información
 
-> [!primary]
->
-> Para más información sobre la configuración de una dirección de correo electrónico desde la aplicación de Gmail en Android, consulte [el Centro de ayuda de Google](https://support.google.com/mail/answer/6078445?hl=es-CA&co=GENIE.Platform%3DAndroid#zippy=%2Añadir-una-cuenta).
-
-[MX Plan - Configurar una dirección de correo electrónico en Gmail para Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android).
+[MXplan - Configurar una dirección de correo electrónico en Gmail para Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android).
 
 [Exchange - Configurar una dirección de correo electrónico en Gmail para Android](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_android).
 

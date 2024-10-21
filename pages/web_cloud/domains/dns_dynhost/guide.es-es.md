@@ -1,7 +1,7 @@
 ---
 title: "Configurar un DNS dinámico (DynHost/DynDNS) para un dominio"
 excerpt: "Descubra cómo configurar un registro DNS dinámico para un dominio de OVHcloud"
-updated: 2024-09-04
+updated: 2024-07-12
 ---
 
 > [!primary]
@@ -84,7 +84,7 @@ Para crear el registro DynHost, vuelva a la página principal de la pestaña `Dy
 |Campo|Descripción|
 |---|---|
 |Subdominio|Introduzca el subdominio al que pertenezca el registro DNS que deberá actualizarse dinámicamente. Este subdominio debe ser el mismo que haya indicado anteriormente al crear el usuario DynHost. **Si desea implementar un DynHost directamente para su dominio, deje este formulario de entrada vacío**|
-|IP de destino|Introduzca la dirección IP (IPv4 o IPv6) que vaya a utilizar el registro DNS. Es generalmente la dirección IP pública de su *box* Internet o de su servidor alojado. Según el principio DynHost, esta se actualizará automáticamente más adelante. Este formulario solo debe incluir una dirección IP.|
+|IP de destino|Introduzca la dirección IP (IPv4 o IPv6) que vaya a utilizar el registro DNS. Es generalmente la dirección IP pública de su *box* Internet o de su servidor alojado. Según el principio DynHost, esta se actualizará automáticamente más adelante.|
 
 > [!warning]
 >
@@ -93,12 +93,8 @@ Para crear el registro DynHost, vuelva a la página principal de la pestaña `Dy
 
 ![DynHost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/create-a-dynhost.png){.thumbnail}
 
-Una vez que haya completado todos los campos, haga clic en `Aceptar`{.action}. El registro aparecerá en la tabla. Repita esta operación para cada registro DynHost que quiera crear.
-
-> [!primary]
->
-> Si su dominio o subdominio necesita configurarse dinámicamente con, por ejemplo, una IPv4 y una IPv6, puede crear dos registros DNS dinámicos para el mismo dominio o subdominio. El primer registro DNS dinámico será para la IPv4 y el segundo para la IPv6.
->
+Una vez que haya completado todos los campos, haga clic en `Aceptar`{.action}. El registro aparecerá en la tabla.
+ Repita esta operación para cada registro DynHost que quiera crear.
 
 ### Etapa 3 : automatizar la actualización del DynHost
 

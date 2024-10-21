@@ -58,7 +58,7 @@ Es necesario que los directorios se muestren en la siguiente imagen:
 
 Antes de continuar, deberá crear un par de llaves SSH desde el equipo que utilizará para conectarse al repositorio SVN.
 
-Para más información, consulte la guía [Crear llaves SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#create-ssh-key).
+Para más información, consulte la guía [Crear llaves SSH](/pages/public_cloud/compute/public-cloud-first-steps#1-crear-claves-ssh). No es necesario seguir el progreso de la operación [Importar la llave SSH al área de cliente de OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps#1-crear-claves-ssh/#importacion-de-una-clave-ssh-en-el-area-de-cliente-de-ovhcloud) en esta guía.
 
 ### Adición de la clave pública al alojamiento
 

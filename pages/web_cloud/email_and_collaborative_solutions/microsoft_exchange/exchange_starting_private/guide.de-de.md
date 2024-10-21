@@ -12,8 +12,8 @@ Nach Bestellung einer Private Exchange Plattform sind einige Punkte zu beachten,
 
 ## Voraussetzungen
 
-- Sie haben einen [Private Exchange](/links/web/emails-private-exchange) Dienst in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+- Sie haben einen [Private Exchange](https://www.ovhcloud.com/de/emails/private-exchange/) Dienst in Ihrem Kunden-Account.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
@@ -21,7 +21,7 @@ Nach Bestellung einer Private Exchange Plattform sind einige Punkte zu beachten,
 
 Sobald die Bestellung aufgegeben wurde, erhalten Sie die Informationen zum Konfigurieren Ihres Private Exchange an die hinterlegte E-Mail-Adresse des Kunden-Accounts.
 
-Um diese E-Mail von Ihrem [OVHcloud-Kundencenter](/links/manager) aus einzusehen, klicken Sie auf Ihren Account-Namen oben rechts und klicken Sie danach auf `E-Mails von OVHcloud`{.action}. Suchen Sie nach der E-Mail mit folgendem Betreff:
+Um diese E-Mail von Ihrem [OVHcloud-Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) aus einzusehen, klicken Sie auf Ihren Account-Namen oben rechts und klicken Sie danach auf `E-Mails von OVHcloud`{.action}. Suchen Sie nach der E-Mail mit folgendem Betreff:
 
 > **\[xx-11111-ovh] Ihr Private Exchange 20_xxx_ wird bereitgestellt!**
 
@@ -60,7 +60,7 @@ Nach der Bestätigung dieses Schritts erhalten Sie eine Mitteilung, dass die Kon
 
 Wenn Ihre Domain nicht im selben Kunden-Account verwaltet oder nicht von OVHcloud gehostet wird, wird eine zweite E-Mail an Sie gesendet, die die erforderlichen Informationen für die manuelle Konfiguration Ihrer DNS-Zone enthält.
 
-Die E-Mail enthält die IPv4- und IPv6-Adressen Ihres Private Exchange Servers. Geben Sie diese Adressen in die DNS-Zone der zuvor in [Schritt 2](./#schritt-2-ihren-dienst-initialisieren) erstellten Subdomain jeweils als Eintrag vom Typ „A“ und vom Typ "AAAA" ein. Bei einem OVHcloud-Domainnamen finden Sie weitere Informationen in unserer [passenden Anleitung](/pages/web_cloud/domains/dns_zone_edit).
+Die E-Mail enthält die IPv4- und IPv6-Adressen Ihres Private Exchange Servers. Geben Sie diese Adressen in die DNS-Zone der zuvor in [Schritt 2](./#schritt-2-ihren-dienst-initialisieren) erstellten Subdomain jeweils als Eintrag vom Typ „A“ und vom Typ „AAAA“ ein. Bei einem OVHcloud-Domainnamen finden Sie weitere Informationen in unserer [passenden Anleitung](/pages/web_cloud/domains/dns_zone_edit).
 
 ### Schritt 4: Validierung des SSL-Zertifikats
 

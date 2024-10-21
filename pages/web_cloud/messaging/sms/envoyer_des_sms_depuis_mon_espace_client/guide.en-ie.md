@@ -1,7 +1,7 @@
 ---
 title: Sending SMS messages via the OVHcloud Control Panel
 excerpt: Find out how to send SMS messages simply via the OVHcloud Control Panel
-updated: 2024-10-10
+updated: 2022-08-05
 ---
 
 ## Objective
@@ -11,13 +11,13 @@ You can send SMS messages directly via the OVHcloud Control Panel. This guide gi
 ## Requirements
 
 - an OVHcloud SMS account with SMS credits
-- You must be logged in to [OVHcloud Control Panel](/links/manager), in the `Telecom`{.action} section, then `SMS`{.action}.
+- You must be logged in to [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, in the `Telecom`{.action} section, then `SMS`{.action}.
 
 ![SMS Telecom Control Panel](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](/links/manager), then select `Telecom`{.action}. Next, click `SMS`{.action} and your SMS account.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), then select `Telecom`{.action}. Next, click `SMS`{.action}, and your SMS account.
 
 The “Send an SMS” field is the first item available in the list of actions.
 
@@ -30,8 +30,8 @@ Once you have landed on the sending page for SMS messages, you will have differe
 ![send sms control panel](images/sms-send-control-panel02E.png){.thumbnail}
 
 For the SMS sender (1), you can either select a short number that allows recipients to send back replies (available for OVHcloud accounts in France only), or you can set an alpha-numeric sender name.
-Next, enter the recipient phone number (2) in international format (+44xxxxxxxxxx).
-For further information on how to create a sender, please refer to [Step 3: Choose an SMS sender](#step-3-choose-an-sms-sender).
+Next, enter the recipient phone number (2) in international format (+353xxxxxxxxxx).
+For further information on how to create a sender, please refer to [Step 3: Choose an SMS sender](./#step-3-choose-an-sms-sender).
 
 You can also send SMS messages to multiple recipients. There are two methods for doing this:
 
@@ -67,7 +67,11 @@ If you use characters that do not appear in these tables, the encoding with swit
 
 In this section, you can either send messages immediately, or set up delayed sending (1).
 
-Three sending formats (Standard/Flash/Sim) are also visible (2) but this feature is deprecated.
+Three sending formats are also available (2).
+
+- Standard: The most commonly-used SMS message.
+- Flash: The SMS message appears directly on the phone screen.
+- SIM: The SMS message is automatically saved on the phone’s SIM card.
 
 ### Step 3: Choose an SMS sender.
 
@@ -104,7 +108,7 @@ Once you are on the ‘Add’ page, you will see several options for configuring
 
 > [!primary]
 >
-> As part of our security policy, we ask for a supporting document. By default, this is a company or trademark letterhead, including the authorisation of an official with signature and stamp of the same company, a proof of identity.
+> As part of our security policy, we ask for a supporting document. By default, this is a company or trademark letterhead, including the authorisation of an official with signature and stamp of the same company, an identity paper, or a Kbis extract if it is not a trademark.
 >
 
 - **Add senders based on personal data**: You can request a sender based on the contact details saved on your OVHcloud account. A dropdown list of available senders will then appear.
@@ -113,4 +117,4 @@ Once you are on the ‘Add’ page, you will see several options for configuring
 
 ## Go further
 
-Join our [community of users](/links/community).
+Join our community of users on <https://community.ovh.com/en/>.

@@ -1,7 +1,7 @@
 ---
 title: 'Partager un objet avec une adresse temporaire'
 excerpt: 'Découvrez comment partager un objet sans fournir vos informations personnelles'
-updated: 2024-10-08
+updated: 2021-01-11
 ---
 
 ## Objectif 
@@ -14,9 +14,9 @@ Lorsque vous souhaitez partager un fichier avec quelqu'un d'autre, vous ne souha
 
 ## Prérequis
 
-- [Avoir préparé l'environnement pour utiliser l'API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api).
-- [Charger les variables d'environnement OpenStack](/pages/public_cloud/compute/loading_openstack_environment_variables).
-- Disposer de Python installé sur votre système.
+- [Avoir préparé l'environnement pour utiliser l'API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api){.ref}.
+- [Charger les variables d'environnement OpenStack](/pages/public_cloud/compute/loading_openstack_environment_variables){.ref}.
+- Disposer de Python installé sur votre poste.
 
 ## En pratique
 
@@ -46,7 +46,7 @@ Pour générer votre clé, plusieurs solutions s’offrent à vous, telles que l
 - date +%s | sha256sum
 - date +%s | md5sum 
 
-Une fois en possession de votre clé, vous pouvez configurer celle-ci sur votre projet à l'aide du client Swift. Prenez soin de remplacer la chaîne « 12345 » par votre clé :
+Une fois en possession de votre clé, vous pouvez configurer celle-ci sur votre projet à l'aide du client Swift. Prenez soin de remplacer la chaîne « 12345 » par votre clé) :
 
 ```bash
 swift post -m "Temp-URL-Key: 12345"
@@ -86,21 +86,19 @@ Par exemple, pour les éléments ci-dessous :
 - **/v1/AUTH_tenant/default/file** : le chemin vers votre fichier. Il n'est pas nécessaire d'ajouter le point d'accès à ce stade de la procédure.
 - **12345** : à remplacer par votre clé.
 
-Dans le champ `AUTH_tenant`, remplacez `tenant` par votre **OS_TENANT_ID** ou le **OS_TENANT_NAME**.
-
-```bash
+```
 swift tempurl GET 60 /v1/AUTH_tenant/default/file 12345
 ```
 
 Vous obtenez la **tempURL** qui vous permet de visualiser le **chemin vers le fichier**, la **signature** et la **date d'expiration** comme expliqué précédemment.
 
-```bash
+```
 v1/AUTH_tenant/default/file?temp_url_sig=8016dsdf3122d526afds60911cde59fds3&temp_url_expires=1401548543
 ```
 
 Pour que votre URL fonctionne correctement, vous devrez ajouter l'adresse du point d'accès devant votre **tempURL** :
 
-```bash
+```
 https://storage.sbg1.cloud.ovh.net/v1/AUTH_tenant/default/file?temp_url_sig=8016dsdf3122d526afds60911cde59fds3&temp_url_expires=1401548543
 ```
 
@@ -112,4 +110,4 @@ Dans l'exemple ci-dessus, cette adresse temporaire permet de télécharger le fi
 
 ## Aller plus loin
 
-Échangez avec notre [communauté d'utilisateurs](/links/community).
+Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com>.

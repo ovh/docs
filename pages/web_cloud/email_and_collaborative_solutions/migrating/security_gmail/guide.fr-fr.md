@@ -10,7 +10,7 @@ Ce guide vous détaille comment activer l'option « autoriser les applications m
 
 > [!primary]
 > 
-> Cette documentation est une étape liée au guide [«Migrer un compte Gmail vers une adresse e-mail OVHcloud via OVH Mail Migrator»](/pages/web_cloud/email_and_collaborative_solutions/migrating/migrate_gmail_to_ovhcloud_by_omm).
+> Cette documentation est une étape liée au guide [«Migrer un compte Gmail vers une adresse e-mail OVHcloud via OVH Mail Migrator»](/pages/web_cloud/email_and_collaborative_solutions/migrating/migrate_gmail_to_ovhcloud_by_omm){.external}.
 > 
 
 ## En pratique
@@ -23,7 +23,7 @@ Le message ci-dessous apparaît et mentionne les détails sur la tentative d'uti
 
 ![omm](images/OMM-gmail-security-02.png){.thumbnail}
 
-La fenêtre suivante vous informe que, malgré cette validation, un blocage est actif. Cliquez directement sur le lien suivant : [myaccount.google.com/lesssecureapps](https://myaccount.google.com/lesssecureapps)
+La fenêtre suivante vous informe que, malgré cette validation, un blocage est actif. Cliquez directement sur le lien suivant : [myaccount.google.com/lesssecureapps](https://myaccount.google.com/lesssecureapps){.external}
 
 ![omm](images/OMM-gmail-security-03.png){.thumbnail}
 
@@ -52,5 +52,5 @@ Après validation, le message ci-dessous indique que votre choix a bien été pr
 
 ## Aller plus loin
 
-[«Migrer une adresse Gmail vers une adresse e-mail OVHcloud via OVH Mail Migrator »](/pages/web_cloud/email_and_collaborative_solutions/migrating/migrate_gmail_to_ovhcloud_by_omm)
+[«Migrer une adresse Gmail vers une adresse e-mail OVHcloud via OVH Mail Migrator »](/pages/web_cloud/email_and_collaborative_solutions/migrating/migrate_gmail_to_ovhcloud_by_omm){.external}
 

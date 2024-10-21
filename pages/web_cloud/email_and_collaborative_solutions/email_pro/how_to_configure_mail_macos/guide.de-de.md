@@ -1,6 +1,6 @@
 ---
-title: "E-Mail Pro - Konfiguration Ihrer E-Mail-Adresse in Mail für macOS"
-updated: 2024-10-09
+title: 'Konfiguration von E-Mail Pro auf macOS Mail'
+updated: 2022-06-13
 ---
 
 > [!primary]
@@ -16,23 +16,23 @@ E-Mail Pro Accounts können auf verschiedenen, kompatiblen E-Mail-Clients einger
 > [!warning]
 >
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
->
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](/links/partner) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Genauere Informationen finden Sie im Teil “Weiterführende Informationen“ dieser Anleitung.
->
+> 
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Genauere Informationen finden Sie im Teil “Weiterführende Informationen“ dieser Anleitung.
+> 
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [E-Mail Pro Adresse](/links/web/email-pro).
+- Sie verfügen über eine [E-Mail Pro Adresse](https://www.ovhcloud.com/de/emails/email-pro/).
 - Sie verfügen über das auf Ihrem Mac installierte Mail-Programm.
 - Sie haben die Login-Daten der E-Mail-Adresse, die Sie einrichten möchten.
-
+ 
 ## In der praktischen Anwendung
 
 > [!primary]
 >
 > In dieser Anleitung verwenden wir als Serverbezeichnung: pro<b>?</b>.mail.ovh.net. Das „?“ muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden Email Pro Dienst ersetzt werden.
->
-> Sie finden diese Information im [OVHcloud Kundencenter](/links/manager), wenn Sie den betreffenden `E-Mail Pro`{.action} Dienst auswählen. Der Servername wird im Kasten **Verbindung** auf der Seite `Allgemeine Informationen`{.action} angezeigt.
+> 
+> Sie finden diese Information im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), wenn Sie den betreffenden `E-Mail Pro`{.action} Dienst auswählen. Der Servername wird im Kasten **Verbindung** auf der Seite `Allgemeine Informationen`{.action} angezeigt.
 >
 
 ### Account hinzufügen
@@ -51,7 +51,7 @@ E-Mail Pro Accounts können auf verschiedenen, kompatiblen E-Mail-Clients einger
 
 Wenn Ihre E-Mail-Adresse eingerichtet ist, können Sie sie verwenden. Sie können ab sofort E-Mails versenden und empfangen.
 
-OVHcloud bietet auch eine Webanwendung, mit der Sie über einen Webbrowser auf Ihre E-Mail-Adresse zugreifen können. Diese ist über[Webmail](/links/web/email) verfügbar. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden. Für Fragen zur Verwendung lesen Sie unsere Anleitung [Ihren Account über OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
+OVHcloud bietet auch eine Webanwendung, mit der Sie über einen Webbrowser auf Ihre E-Mail-Adresse zugreifen können. Diese ist über <https://www.ovh.de/mail/> verfügbar. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden. Für Fragen zur Verwendung lesen Sie unsere Anleitung [Ihren Account über OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
 ### Backup Ihrer E-Mail-Adresse abrufen
 
@@ -89,9 +89,5 @@ Bei einer **POP** Konfiguration sind die Werte:
 > Wenn Sie Ihre E-Mail-Adresse als **IMAP** konfigurieren und die Konfiguration zu **POP** ändern möchten, müssen Sie den Mac Mail-Account löschen und anschließend als **POP** neu erstellen, um die Konfiguration zu ändern.
 
 ## Weiterführende Informationen
-
-> [!primary]
->
-> Weitere Informationen zum Einrichten einer E-Mail-Adresse über die Mail App auf macOS finden Sie im [Apple Help Center](https://support.apple.com/de-de/guide/mail/mail35803/mac).
-
+ 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -1,7 +1,7 @@
 ---
 title: "Comment supprimer une zone DNS OVHcloud"
 excerpt: "Découvrez comment supprimer une zone DNS pour votre nom de domaine via votre espace client OVHcloud"
-updated: 2024-10-03
+updated: 2024-06-26
 ---
 
 ## Objectif
@@ -32,11 +32,6 @@ Vous pouvez, par exemple, être amené à supprimer une zone DNS pour votre nom 
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 - Avoir une zone DNS dans votre espace client OVHcloud.
 - Disposer des droits suffisants sur la zone DNS à supprimer. Retrouvez plus d'informations sur notre guide « [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts) ».
-
-> [!primary]
->
-> Supprimer une zone DNS ne supprime pas l'enregistrement du nom de domaine auquel elle est associée. Vous ne perdrez donc pas votre nom de domaine en supprimant une zone DNS associée à celui-ci.
->
 
 ## En pratique
 
