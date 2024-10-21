@@ -84,7 +84,8 @@ Avant de procéder à cette configuration, assurez-vous que l'[étape précéden
 > - pointent vers l'adresse IP de votre hébergement web ; 
 > - sont déclarés en multisite sur votre hébergement web.
 >
-> Si besoin et pour vous en assurer, consultez nos guides :
+> Pour vous en assurer, vous pouvez consulter nos guides :
+>
 > - [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) ;
 > - [Liste des adresses IP des clusters et hébergements web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) ;
 > - [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
