@@ -24,7 +24,7 @@ Pour les hébergements mutualisés OVHcloud, l'autorité de certification déliv
 
 > [!warning]
 >
-> Sachez qu'une fois la commande initiée et transmise auprès de notre fournisseur de certificats/autorité de certification Sectigo, **aucun remboursement ne sera possible**.
+> Une fois la commande du certificat réalisée et transmise à notre fournisseur de certificats/autorité de certification Sectigo, **aucun remboursement de commande n'est possible**.
 >
 
 **Découvrez comment activer un certificat SSL Sectigo DV sur votre hébergement Web OVHcloud.**
