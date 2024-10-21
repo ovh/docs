@@ -46,7 +46,7 @@ Pour les hébergements mutualisés OVHcloud, l'autorité de certification déliv
 >
 > Cela signifie que si vous avez d'autres noms de domaine/sous-domaines déclarés en multisite sur votre hébergement web, ces derniers ne pourront pas bénéficier d'un certificat SSL.
 >
-> Effectivement, il n'est possible d'installer qu'un seul certificat SSL par hébergement web.
+> En effet, il n'est possible d'installer qu'un seul certificat SSL par hébergement web.
 >
 > Si vous avez besoin d'activer un certificat SSL pour plusieurs noms de domaine/sous-domaines déclarés sur votre hébergement web, privilégiez l'installation d'un [certificat SSL gratuit Let's Encrypt](/links/web/hosting-options-ssl) ou installez votre propre [certificat SSL personnalisé](/pages/web_cloud/web_hosting/ssl_custom).
 
