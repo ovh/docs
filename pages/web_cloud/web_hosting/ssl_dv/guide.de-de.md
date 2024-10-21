@@ -90,7 +90,6 @@ So bestellen Sie das Sectigo DV SSL-Zertifikat:
 6. Gehen Sie in die Box mit dem Namen `Konfiguration`.
 7. Rechts neben `SSL-Zertifikat` klicken Sie auf den Button `...`{.action} und dann auf `SSL-Zertifikat bestellen`{.action}.
 
-
 ![Order an SSL certificate](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-an-ssl-certificate.png){.thumbnail}
 
 Wählen Sie im angezeigten Fenster `Kostenpflichtiges Zertifikat`{.action} aus der Liste der verfügbaren Optionen aus.
@@ -124,7 +123,7 @@ Nach Abschluss sollte unter `SSL-Zertifikat` ein Wert angezeigt werden, der dies
 
 ![SSL Sectigo DV certificate](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ssl-certificate-dv-enable.png){.thumbnail}
 
-Ihr personalisiertes Sectigo DV SSL-Zertifikat ist installiert und aktiv. Sie können es nun mit Ihrem Webhosting nutzen und zum Beispiel [HTTPS für Ihre Website aktivieren](/pages/web_cloud/web_hosting/ssl-activate-https-website).
+Ihr Sectigo DV SSL-Zertifikat ist installiert und aktiv. Sie können es nun mit Ihrem Webhosting nutzen und zum Beispiel [HTTPS für Ihre Website aktivieren](/pages/web_cloud/web_hosting/ssl-activate-https-website).
 
 ## Weiterführende Informationen <a name="go-further"></a>
 

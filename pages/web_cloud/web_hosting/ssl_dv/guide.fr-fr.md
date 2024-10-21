@@ -86,7 +86,6 @@ Pour commander le certificat SSL Sectigo DV, réalisez les actions suivantes :
 6. Positionnez-vous dans l'encadré intitulé `Configuration`.
 7. A droite de la mention `Certificat SSL`, cliquez sur le bouton `...`{.action}, puis sur `Commander un certificat SSL`{.action}.
 
-
 ![Order an SSL certificate](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-an-ssl-certificate.png){.thumbnail}
 
 Dans la fenêtre qui apparaît, sélectionnez `Certificat payant`{.action} parmi la liste des choix possibles.
