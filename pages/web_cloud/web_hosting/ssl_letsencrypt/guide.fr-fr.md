@@ -59,6 +59,7 @@ Dans cette colonne et de manière générale, trois états peuvent apparaître 
 > [!primary]
 >
 > Si l'un de vos noms de domaine/sous-domaines n'est pas encore déclaré sur votre hébergement web, consultez les guides suivants pour résoudre cette situation :
+>
 > - [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) ;
 > - [Liste des adresses IP des clusters et hébergements web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) ;
 > - [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
