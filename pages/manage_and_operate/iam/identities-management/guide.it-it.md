@@ -1,7 +1,7 @@
 ---
 title: "Presentazione delle identità che possono interagire all'interno di un account OVHcloud"
 excerpt: "Scopri i diversi tipi di identità che permettono di interagire con un prodotto OVHcloud"
-updated: 2024-03-05
+updated: 2024-10-21
 ---
 
 > [!primary]
@@ -44,6 +44,8 @@ Per utilizzare un’API OVHcloud in un’applicazione basata su token associato 
 
 Nella documentazione relativa agli utenti locali è inoltre possibile fare riferimento al nome *sub-user*.
 
+Per garantire la tracciabilità del percorso, consigliamo di installare degli utenti locali ogni volta che più di una persona deve accedere al tuo account OVHcloud.
+
 ### Account di servizio
 
 Gli account di servizio sono identità associate all’account OVHcloud. Questi account sono progettati per **interazioni macchina** con i prodotti OVHcloud in quanto basati su un’autenticazione di tipo cliente/token e i cui diritti di accesso dipendono dalle [politiche IAM](/pages/account_and_service_management/account_information/iam-policy-ui) messe in atto.
@@ -60,13 +62,23 @@ Sono gli account utente di una [federazione identità](/products/manage-operate-
 
 Gli utenti federati sono rappresentati da gruppi di utenti a livello di gestione dei diritti.
 
+Consigliamo di creare una federazione di identità quando il numero di persone che si connettono al tuo account OVHcloud diventa sufficientemente elevato, o se vuoi centralizzare gli accessi su un elenco terzi utilizzato per servizi diversi da OVHcloud.
+
 ### Gruppi di utenti
 
 Le diverse identità possono essere associate a gruppi di utenti per facilitarne la manipolazione.
 La configurazione dei gruppi di utenti è descritta nella documentazione di gestione degli [utenti locali](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 
+### Utenti dei prodotti OVHcloud
+
+Alcuni prodotti messi a disposizione da OVHcloud possono offrire agli utenti una soluzione aggiuntiva, come OpenStack, VMware vSphere o Object Storage.
+Questi utenti sono indipendenti dall'account OVHcloud e vengono gestiti direttamente attraverso i prodotti interessati.
+
+Per i prodotti che permettono di utilizzare un'identità OVHcloud (utente locale, account di servizio, utente federato) o un utente specifico del prodotto, consigliamo di utilizzare questi utenti specifici per mantenere la reversibilità del prodotto e limitare la dipendenza da OVHcloud.
+Per una gestione centralizzata su tutti i prodotti, consigliamo di utilizzare le identità OVHcloud.
+
 ## Per saperne di più <a name="go-further"></a>
 
 La gestione delle identità può essere automatizzata tramite le [API OVHcloud](/pages/manage_and_operate/api/first-steps) o tramite il [provider Terraform OVHcloud](/pages/manage_and_operate/terraform/terraform-at-ovhcloud).
 
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

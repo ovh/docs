@@ -1,7 +1,7 @@
 ---
 title: "Prezentacja tożsamości, które mogą współdziałać w ramach konta OVHcloud"
 excerpt: "Poznaj różne typy tożsamości pozwalające na korzystanie z produktu OVHcloud"
-updated: 2024-03-05
+updated: 2024-10-21
 ---
 
 > [!primary]
@@ -44,6 +44,8 @@ Aby aplikacja oparta na tokenach powiązana z użytkownikiem lokalnym mogła kor
 
 Użytkownicy lokalni mogą być również określani w dokumentacji jako *sub-user*.
 
+Zalecamy, aby w celu zapewnienia identyfikowalności włączyć użytkowników lokalnych, gdy tylko więcej niż jedna osoba będzie musiała zalogować się na Twoje konto OVHcloud.
+
 ### Kont usług
 
 Konta usług to tożsamości powiązane z Twoim kontem OVHcloud. Konta te są przeznaczone do **interakcji maszyn** z produktami OVHcloud, ponieważ opierają się na uwierzytelnianiu typu klient/token i których prawa dostępu zależą od wdrożonych [zasad IAM](/pages/account_and_service_management/account_information/iam-policy-ui).
@@ -60,13 +62,23 @@ To są konta użytkowników z [federacji tożsamości] (/products/manage-operate
 
 Użytkownicy federacyjni są reprezentowani przez grupy użytkowników na poziomie zarządzania prawami.
 
+Zalecamy utworzenie federacji tożsamości, gdy tylko liczba osób zaloguje się na Twoje konto OVHcloud stanie się wystarczająca lub jeśli chcesz scentralizować dostęp w katalogu osób trzecich używanym do świadczenia innych usług niż OVHcloud.
+
 ### Grupy użytkowników
 
 W celu ułatwienia operacji różne tożsamości można powiązać z grupami użytkowników.
 Konfiguracja grup użytkowników jest opisana w dokumentacji zarządzania [użytkownicy lokalni](/pages/account_and_service_management/account_information/ovhcloud-users-management).
 
+### Użytkownicy produktów OVHcloud
+
+Niektóre produkty udostępnione przez OVHcloud mogą dodatkowo proponować swoich własnych użytkowników, takie jak OpenStack, VMware vSphere lub Object Storage.
+Użytkownicy ci są niezależni od konta OVHcloud i są zarządzani bezpośrednio za pomocą odpowiednich produktów.
+
+W przypadku produktów umożliwiających korzystanie z tożsamości OVHcloud (użytkownik lokalny, konto usługi, użytkownik federacyjny) lub z tożsamości konkretnego użytkownika produktu zalecamy skorzystanie z tych użytkowników, jeśli chcesz zachować odwracalność produktu i ograniczyć zależność od OVHcloud.
+Jeśli chcesz, aby wszystkie Twoje produkty były zarządzane centralnie, zalecamy użycie tożsamości OVHcloud.
+
 ## Sprawdź również <a name="go-further"></a>
 
 Zarządzanie tożsamością można zautomatyzować za pośrednictwem interfejsów [API OVHcloud] (/pages/manage_and_operate/api/first-steps) lub za pośrednictwem [provider Terraform OVHcloud] (/pages/manage_and_operate/terraform/terraform-at-ovhcloud).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).
