@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Installer un certificat SSL personnalisé"
 excerpt: "Découvrez comment importer et installer un certificat SSL personnalisé sur votre hébergement Web OVHcloud"
-updated: 2024-10-15
+updated: 2024-10-17
 ---
 
 ## Objectif
@@ -12,14 +12,14 @@ OVHcloud propose plusieurs types de certificats SSL sur les offres d'[hébergeme
 
 En fonction de votre situation, il est possible que vous souhaitiez installer un certificat SSL différent de ceux proposés par OVHcloud sur votre hébergement web.
 
-**Découvrez comment importer et installer un certificat SSL personnalisé sur votre hébergement Web OVHcloud**
+**Découvrez comment importer et installer un certificat SSL personnalisé sur votre hébergement Web OVHcloud.**
 
 ## Prérequis 
 
 - Être connecté à votre [espace client OVHcloud](/links/manager).
 - Commander ou disposer d'un [hébergement mutualisé OVHcloud](/links/web/hosting) sur lequel aucun certificat SSL n'est déjà installé.
 - Commander ou disposer d'un [nom de domaine](/links/web/domains) et disposer des droits exclusifs sur son utilisation. Le nom de domaine ne doit pas déjà être lié à un certificat SSL.
-- Disposer d'un accès SSH (via un terminal d'ordinateur par exemple) avec OpenSSL installé.
+- Disposer d'OpenSSL ou d'une application compatible installée en local sur votre appareil.
 
 ## En pratique
 
@@ -36,13 +36,14 @@ En fonction de votre situation, il est possible que vous souhaitiez installer un
 >
 > Cette étape est optionnelle si vous avez déjà généré et récupéré le certificat SSL auprès de votre fournisseur SSL ou si ce dernier propose la génération du CSR durant la commande du certificat SSL. Si tel est le cas, passez directement à l'[étape 2](#step-2).
 
-#### 1.1 - Générer la clé privée et la CSR en SSH <a name="step-1.1"></a>
+#### 1.1 - Générer la clé privée et la CSR en ligne de commande <a name="step-1.1"></a>
 
-Ouvrez un terminal pour vous connecter en SSH. Cet outil est installé par défaut sur macOS ou Linux. Un environnement Windows nécessitera l’installation d’un logiciel comme PuTTY ou l’ajout de la fonctionnalité « OpenSSH ». Cette démarche étant spécifique au système d’exploitation que vous utilisez, nous ne pouvons pas la détailler dans cette documentation.
+Pour exécuter les commandes suivantes, vous aurez besoin de la boîte à outil OpenSSL incluse dans de nombreuses distributions Linux. Sinon, installez-la via le gestionnaire de paquets du système ou utilisez une application tierce compatible. Sous Windows, vous pouvez utiliser le sous-système Windows pour Linux (WSL) ou l'installer via une application tierce.
+Cette démarche étant spécifique au système d’exploitation que vous utilisez, nous ne pouvons pas la détailler dans cette documentation.
 
-Dans le terminal, lancez la commande suivante :
+Ouvrez votre interface de ligne de commande (terminal) et lancez la commande suivante :
 
-```ssh
+```sh
 openssl req -nodes -newkey rsa:2048 -sha256 -keyout my_private.key -out your_file_name.csr -utf8
 ```
 
@@ -63,11 +64,11 @@ Les questions posées ensuite sont optionnelles et concernent principalement les
 - `A challenge password []` : pour les utilisateurs avertis, saisissez un mot de passe secret qui sera utilisé entre vous et le fournisseur de certificat SSL. Sachez que, côté OVHcloud, la CSR et la clé privée ne doivent pas être protégées par un mot de passe pour être ajoutées à un hébergement mutualisé OVHcloud.
 - `An optional company name []` : pour les utilisateurs avertis, vous pouvez saisir un autre nom pour votre organisation, entreprise ou association.
 
-#### 1.2 - Récupérer la clé privée en SSH
+#### 1.2 - Récupérer la clé privée
 
 Pour récupérer la clé privée générée précédemment et toujours depuis votre terminal, lancez la commande suivante : 
 
-```ssh
+```sh
 cat my_private.key
 ```
 
@@ -75,7 +76,7 @@ Remplacez le terme `my_private` par le nom de fichier que vous avez choisi préc
 
 La clé privée s'affiche alors dans votre terminal sous cette forme : 
 
-```ssh
+```console
 -----BEGIN PRIVATE KEY-----
 XXXXXXXXXXXXXXXXXXXXXXXXXXX
 XXXXX The Private Key XXXXX
@@ -87,11 +88,11 @@ Ouvrez un logiciel de traitement de texte (bloc note, LibreOffice, etc.), puis `
 
 Enregistrez ce fichier est conservez-le précieusement pour la suite de ce guide si votre fournisseur SSL vous le demande lors de votre future commande.
 
-#### 1.3 - Récupérer la CSR en SSH
+#### 1.3 - Récupérer la CSR
 
 Pour récupérer la CSR générée précédemment et toujours depuis votre terminal, lancez la commande suivante : 
 
-```ssh
+```sh
 cat your_file_name.csr
 ```
 
@@ -99,7 +100,7 @@ Remplacez le terme `your_file_name` par le nom de fichier que vous avez choisi p
 
 La CSR s'affiche alors dans votre terminal sous cette forme : 
 
-```ssh
+```console
 -----BEGIN CERTIFICATE REQUEST-----
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 XXXXXXXXXXXX The CSR XXXXXXXXXXXXXX
@@ -153,7 +154,7 @@ Si vous démarrez directement la lecture de ce guide à cette étape car vous di
 Vérifiez également les point suivants :
 
 - La case `SSL` ne doit pas être cochée lors de l'ajout en multisite d'un nom de domaine/sous-domaine concerné par votre certificat SSL externe.
-- Le statut `A générer` ou `Actif` ne doit pas déjà être présent pour chacun des noms de domaine/sous-domaines concernés par votre certificat SSL externe.
+- Le statut `À générer` ou `Activé` ne doit pas déjà être présent pour chacun des noms de domaine/sous-domaines concernés par votre certificat SSL externe.
 
 Si besoin et pour vous en assurer, consultez nos guides « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) » et « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
 

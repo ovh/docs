@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - Migration depuis VMware vSphere on OVHcloud"
 excerpt: "Découvrez comment vous préparer à migrer depuis VMware vSphere on OVHcloud vers une offre basée sur un environnement VMware Cloud Director (VCD) on OVHcloud"
-updated: 2024-10-07
+updated: 2024-10-21
 ---
 
 > [!primary]
@@ -38,14 +38,7 @@ Pour rappel, si vous décidez de passer à l’offre VCD, les nouveaux tarifs ne
 
 ### Étape 1 - Avant la migration (obligatoire)
 
-#### Demandes faites avant le 1er novembre 2024
-
-> [!primary]
-> 
-> La migration de vos environnements actuels VMware vSphere on OVHcloud peut être réalisée dès réception de votre demande effectuée par via un [ticket auprès du support](https://help.ovhcloud.com/csm?id=csm_get_help).
->
-> **Important** : Les termes et conditions particulières (C&P) disponibles depuis début septembre 2024 dans l'espace client doivent être signés pour que la migration soit réalisée par les équipes OVHcloud.
->
+**Important** : Les termes et conditions particulières (C&P) disponibles depuis début septembre 2024 dans l'espace client doivent être signés pour que la migration soit réalisée par les équipes OVHcloud.
 
 Nous vous invitons à revoir la démonstration du produit et le webinaire pour vous familiariser avec cette nouvelle offre.
 
@@ -56,7 +49,7 @@ Vous retrouverez toutes les informations nécessaires sur nos pages dédiées à
 - [OVHcloud.com - VMware Cloud Director on OVHcloud (FR)](https://www.ovhcloud.com/fr/lp/vmware-vcd-evolution/)
 - [OVHcloud Labs - VMware Cloud Director on OVHcloud (EN)](https://labs.ovhcloud.com/en/vmware-cloud-director/)
 
-Les migrations seront effectuées en 4 vagues, à partir du mois de septembre, selon les services actifs dans votre environnement.
+Les migrations seront effectuées en 4 vagues, à partir du mois de novembre 2024, selon les services actifs dans votre environnement.
 
 Le calendrier prévisionnel, compatible avec ces environnements lors de la migration, est le suivant :
 
@@ -72,19 +65,6 @@ Au cours de ce processus, vos données resteront inchangées, à l'exception du 
 La date de migration vous sera communiquée par e-mail au minimum 15 jours avant le début de la migration.
 
 Nous vous invitons à lire le guide [VMware Cloud Director - Les concepts fondamentaux de VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts) pour voir les fonctionnalités incluses dans chaque vague de migration de vos environnements.
-
-#### Demandes faites après le 1er novembre 2024
-
-> [!primary]
->
-> Les demandes de migration faites après le 1er septembre 2024 ont les mêmes prérequis que pour toutes les autres demandes de migrations évoquées dans ce guide.
->
-> Vous devrez faire votre demande par le biais d'un [ticket au support](https://help.ovhcloud.com/csm?id=csm_get_help), ce qui vous permettra d'obtenir toutes les informations et de signer les termes et conditions particulières de l'offre VCD on OVHcloud.
->
-
-Nous vous informerons ensuite de la date de migration et réaliserons celle-ci. 
-
-Pour rappel, vous pouvez consulter et accepter les conditions particulières de l'offre VCD on OVHcloud dans votre espace client depuis début septembre.
 
 #### Checklist avant migration
 

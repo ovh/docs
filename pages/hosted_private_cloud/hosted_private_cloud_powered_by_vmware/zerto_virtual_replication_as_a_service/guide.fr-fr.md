@@ -1,7 +1,7 @@
 ---
 title: Utiliser Zerto Virtual Replication entre deux datacenters OVHcloud
 excerpt: Découvrez comment mettre en oeuvre Zerto Virtual Replication pour votre Plan de Reprise d'Activité entre deux offres Private Cloud.
-updated: 2022-02-11
+updated: 2024-10-18
 ---
 
 ## Objectif
@@ -14,19 +14,21 @@ Pour les autres cas de figure., consultez notre guide sur comment [utiliser Zert
 
 ## Prérequis
 
-* Posséder deux offres [Private Cloud](https://www.ovh.com/fr/private-cloud/){.external} sur deux locations différentes.
+* Posséder deux offres [Hosted Private Cloud](/links/hosted-private-cloud/vmware-prices) sur deux hôtes différents.
 * Avoir sur chacune d'entre elles une adresse IP publique libre.
 
 ### Concepts Zerto Virtual Replication
 
-Zerto Virtual Replication est une solution technique permettant de mettre en place une réplication des données entre infrastructures de virtualisation ou cloud. Pour cela elle s'appuie sur les hyperviseurs de la plateforme en déployant des machines virtuelles (VM) appelées Virtual Replication Appliance (VRA) qui se chargent de dupliquer les écritures vers les unités de stockage et les transmettent vers le site distant pour être écrites.
+Zerto Virtual Replication est une solution technique permettant de mettre en place une réplication des données entre infrastructures de virtualisation ou cloud. 
+
+Pour cela, elle s'appuie sur les hyperviseurs de la plateforme en déployant des machines virtuelles (VM) appelées Virtual Replication Appliance (VRA) qui se chargent de dupliquer les écritures vers les unités de stockage et les transmettent vers le site distant pour être écrites.
 
 #### Virtual Replication Appliance (VRA)
 
 Les VRA sont ainsi déployés sur chaque hyperviseur et vont consommer des ressources pour effectuer la réplication :
 
-* vCPU : 1
-* RAM : 2 GB
+* vCPU : 2
+* RAM : 6 GB
 * Stockage : 36 GB
 
 À noter que pour le stockage, OVHcloud ajoute gratuitement un datastore dédié pour l'ensemble des VRA.

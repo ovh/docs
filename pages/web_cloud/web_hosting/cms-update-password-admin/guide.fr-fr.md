@@ -1,5 +1,5 @@
 ---
-title: "Comment changer le mot de passe administrateur de mon CMS (WordPress, PrestaShop, Joomla!, Drupal)"
+title: "Comment changer le mot de passe administrateur d'un CMS"
 excerpt: "Découvrez comment modifier le mot de passe administrateur de votre CMS directement via l’interface d’administration du CMS ou en utilisant phpMyAdmin depuis l’espace client OVHcloud"
 updated: 2024-10-15
 ---
@@ -24,6 +24,19 @@ Plusieurs méthodes existent pour modifier le mot de passe administrateur de vot
 - [via l'interface d'administration de votre CMS](#via-cms)
 - [via phpMyAdmin depuis votre espace client OVHcloud](#via-phpmyadmin)
 
+> [!warning]
+>
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> 
+> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Cependant, si vous éprouvez des difficultés, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) ou à l'éditeur du CMS que vous aurez choisi d'installer. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « [Aller plus loin](#go-further) » de ce tutoriel.
+>
+> Pour contacter les différents éditeurs des CMS cités ci-dessus, retrouvez ci-dessous les liens vers leurs pages officielles respectives :
+>
+> - [WordPress](https://wordpress.com/fr/support/){.external}
+> - [Joomla!](https://www.joomla.org/){.external}
+> - [Drupal](https://www.drupal.org/){.external}
+> - [PrestaShop](https://www.prestashop.com/en/support){.external}
+
 ### Modifier son mot de passe administrateur via l'e-mail automatique (mot de passe oublié) <a name="via-email"></a>
 
 Vous avez encore accès à vos e-mails et à l’interface de connexion ? Cette méthode est la plus rapide en évitant d'accéder aux paramètres du CMS ou de passer par phpMyAdmin.
@@ -35,7 +48,7 @@ Vous avez encore accès à vos e-mails et à l’interface de connexion ? Cette 
 >>
 > PrestaShop
 >>
->> Accédez à l'interface de connexion PrestaShop de votre site web (de type `https://votre-domaine.com/admin/`), puis cliquez sur « Mot de passe oublié » pour recevoir un e-mail vous invitant à réinitialiser votre mot de passe.
+>> Accédez à l'interface de connexion PrestaShop de votre site web (de type `https://your-domain.com/admin/`), puis cliquez sur « Mot de passe oublié » pour recevoir un e-mail vous invitant à réinitialiser votre mot de passe.
 >>
 > Joomla!
 >>
@@ -108,7 +121,7 @@ Saisissez les identifiants de la base de données (nom d'utilisateur et mot de p
 
 ## Aller plus loin <a name="go-further"></a>
 
-[Comment gérer votre module en 1 clic ? ](/pages/web_cloud/web_hosting/cms_manage_1_click_module)
+[Comment gérer votre module en 1 clic](/pages/web_cloud/web_hosting/cms_manage_1_click_module)
 
 [Tutoriel - Installer manuellement WordPress](/pages/web_cloud/web_hosting/cms_manual_installation_wordpress)
 
