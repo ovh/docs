@@ -1,203 +1,208 @@
 ---
-title: Virtual Machine Encryption (VM Encryption) einrichten
+title: Virtual Machine Encryption (VM Encryption) einrichten (EN)
 excerpt: So aktivieren Sie die VMware-Funktion zur Verschlüsselung Ihrer virtuellen Maschinen
-updated: 2020-06-29
+updated: 2024-10-21
 ---
 
-## Einleitung
+## Objective
 
-Die vorliegende Anleitung erklärt die Vorgehensweise zur Einrichtung von VM Encryption auf der OVHcloud Private Cloud. Hierzu wird eine Storage-Strategie verfolgt, bei der ein externer *Key Management Server* (KMS) verwendet wird.
+**Find out how to implement encryption for your virtual machines with an external KMS.**
 
-**In dieser Anleitung erfahren Sie, wie Sie die VMware-Funktion zur Verschlüsselung Ihrer virtuellen Maschinen einrichten.**
+## Requirements
 
-## Voraussetzungen
+- You need to have signed up to a [Hosted Private Cloud](/links/hosted-private-cloud/vmware) offer.
+- An external key server (KMS) compatible with **[KMIP](https://en.wikipedia.org/wiki/Key_Management_Interoperability_Protocol_(KMIP)) 1.1** and in the VMware [compatibility matrix](https://www.vmware.com/resources/compatibility/search.php?deviceCategory=kms&details=1&feature=293&page=1&display_interval=500&sortColumn=Partner&sortOrder=Asc).
+- Access to the vSphere management interface.
+- Virtual machines with a Hardware 13 version (minimum).
 
-- Sie haben ein [Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/){.external} Angebot abonniert.
-- Sie verfügen über einen externen Key Management Server (KMS), der **[KMIP](https://en.wikipedia.org/wiki/Key_Management_Interoperability_Protocol_(KMIP)){.external}-1.1**-konform ist und in der [Kompatibilitätsmatrix](https://www.vmware.com/resources/compatibility/search.php?deviceCategory=kms&details=1&feature=293&page=1&display_interval=500&sortColumn=Partner&sortOrder=Asc){.external} von VMware aufgeführt wird.
-- Sie haben Zugriff auf das vSphere-Verwaltungsinterface.
-- Sie verfügen über virtuelle Maschinen mit Hardware-Version 13 oder höher.
+## Instructions
 
-## Beschreibung
+The purpose of this guide is to explain the details of implementing virtual machine encryption on the VMware on OVHcloud Hosted Private Cloud solution, using a storage strategy that uses a **Standard Key Provider** or external KMS.
 
-### Zertifikat-Thumbprint des Key Management Servers (KMS) abrufen
+### Retrieve Key Server Certificate Thumbprint (KMS)
 
-Je nach verwendetem KMS können Sie sich über den Browser auf Ihrem Server einloggen. Klicken Sie anschließend auf `View Certificate`{.action} und dann auf `Thumbprint`{.action}.
+Depending on your KMS, you can connect to the server using your browser. Then click `View Certificate`{.action} and `Thumbprint`{.action}.
 
-![Zertifikat-Thumbprint](images/certificate_thumbprints_01.png){.thumbnail}
+![certificate thumbprint](images/certificate_thumbprints_01.png){.thumbnail}
 
-![Zertifikat-Thumbprint](images/certificate_thumbprints_02.png){.thumbnail}
+![certificate thumbprint](images/certificate_thumbprints_02.png){.thumbnail}
 
-Extrahieren Sie den Wert aus der Zeile `SHA1 Fingerprint`.
+Extract the value from the  `SHA1 Fingerprint` line.
 
-Alternative Vorgehensweise mit OpenSSL:
+Here is another method with OpenSSL:
 
 ```shell
 openssl s_client -connect 192.0.2.1:5696 < /dev/null 2>/dev/null | openssl x509 -fingerprint -noout -in /dev/stdin
 ```
 
-Hier ist es der Wert rechts neben dem Gleichheitszeichen:
+Here, it is the value to the right of the equal sign:
 
 ```shell
 > SHA1 Fingerprint=7B:D9:46:BE:0C:1E:B0:27:CE:33:B5:2E:22:0F:00:84:F9:18:C6:61
 ```
 
-### Key Management Server (KMS) registrieren
+### Register your key server (KMS)
 
-#### Über das OVHcloud Kundencenter
+#### Via the OVHcloud Control Panel
 
-Begeben Sie sich in Ihrem Kundencenter in den Bereich `Hosted Private Cloud`. Klicken Sie im linken Menü auf `Private Cloud`{.action} und wählen Sie den betreffenden Private Cloud Dienst aus.
+Log in to the [OVHcloud Control Panel](/links/manager) and go to the `Hosted Private Cloud`{.action} section.
 
-Klicken Sie auf der Hauptseite des Dienstes auf `Sicherheit`{.action}.
+Click `VMware`{.action} in the services bar on the left-hand side, then select the VMware service concerned.
 
-![OVHcloud Kundencenter](images/vm-encrypt_nupanel_01.png){.thumbnail}
+From the main page of the service, click `Security`{.action}.
 
-Weiter unten auf der Seite finden Sie den Abschnitt „**Virtual Machine Encryption Key Management Servers**“. Klicken Sie auf den Button `Neuen KMS-Server hinzufügen`{.action}.
+![Manager Add Kms](/pages/assets/screens/control_panel/product-selection/hosted-private-cloud/vmware/security/add_kms.png){.thumbnail}
 
-![KMS-Server](images/vm-encrypt_manager_03.png){.thumbnail}
+Further down the page is the "**Virtual Machine Encryption Key Management Servers**" section. Click the `Add a new KMS server`{.action} button.
 
-Geben Sie im daraufhin geöffneten Fenster folgende Informationen ein:
+![server KMS](images/vm-encrypt_manager_03.png){.thumbnail}
 
-* die IP-Adresse des KMS
-* den zuvor abgerufenen SSL Thumbprint des KMS
+In the new window that opens, enter the following information:
 
-Bestätigen Sie, dass Sie die zugehörige Dokumentation gelesen haben, und bestätigen Sie anschließend den Vorgang, indem Sie auf `Weiter`{.action} klicken. 
+* The KMS IP address.
+* The SSLThumbprint of the KMS Server you previously retrieved.
 
-![KMS-Server](images/vm-encrypt_manager_04.png){.thumbnail}
+Confirm that you read this documentation, then confirm by clicking `Next`{.action}.
 
-Im nächsten Fenster wird der Prozessfortschritt angezeigt.
+![server KMS](images/vm-encrypt_manager_04.png){.thumbnail}
 
-#### Über die OVHcloud API
+A window displays the progress of the task.
 
-Verschlüsselungsfunktionen können über die OVHcloud API aktiviert werden.
+#### With the OVHcloud API
 
-Um Ihren „serviceName“ abzurufen, verwenden Sie folgenden API-Aufruf:
+Encryption features can be enabled [using the OVHcloud API](/pages/manage_and_operate/api/first-steps).
+
+To retrieve your "serviceName", use the following API call:
 
 > [!api]
 >
 > @api {v1} /dedicatedCloud GET /dedicatedCloud
 >
 
-Um zu überprüfen, dass die Verschlüsselung noch nicht aktiviert ist, verwenden Sie diesen API-Aufruf:
+To verify that encryption is not enabled yet, use this API call:
 
 > [!api]
 >
 > @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/vmEncryption
 >
 
-```shell
+```json
 >     "state": "disabled"
 ```
 
-Registrieren Sie anschließend Ihren KMS:
+Then register the KMS:
 
 > [!api]
 >
 > @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/kms
 >
 
-Hierzu benötigen Sie folgende Informationen:
+To make this change, you need the following information:
 
-* den zuvor abgerufenen „serviceName“
-* die IP-Adresse des KMS
-* den zuvor abgerufenen SSL Thumbprint des KMS
+* The serviceName previously retrieved.
+* The external KMS IP address.
+* The TLS fingerprint of the external KMS previously retrieved.
 
-### Key Management Server (KMS) zum vCenter hinzufügen
+### Adding your key server (KMS) to the vCenter
 
-#### Zu diesem Abschnitt
+#### About this part
 
-**Der vCenter-Server erstellt einen KMS-Cluster, wenn Sie Ihre erste KMS-Instanz hinzufügen.** 
+**The vCenter Server creates a KMS cluster when you add your first KMS instance.**
 
-- Wenn Sie den KMS hinzufügen, werden Sie aufgefordert, den Cluster als Standard festzulegen. Sie können diesen später anpassen. 
-- Nachdem das vCenter den ersten Cluster erstellt hat, können Sie neue KMS-Instanzen desselben Anbieters hinzufügen. 
-- Um den Cluster zu konfigurieren, benötigen Sie mindestens eine KMS-Instanz.
-- Wenn Ihre Umgebung KMS-Lösungen von verschiedenen Anbietern verwendet, können Sie mehrere KMS-Cluster hinzufügen. 
-- Wenn Ihre Umgebung mehrere KMS-Cluster beinhaltet und Sie den Standard-Cluster löschen, muss ein anderer Standard-Cluster festgelegt werden. Siehe „Festlegen des Standard-KMS-Clusters“.
+- When you add the KMS, you are prompted to set this cluster as default. You can change this later.
+- Once the vCenter has created the first cluster, you can add new KMS instances from the same provider to it.
+- You can configure the cluster with at a minimum of one KMS instance.
+- If your environment supports KMS solutions from different providers, you can add multiple KMS clusters.
+- If your environment includes multiple KMS clusters and you remove the default cluster, you must define a different one. See "Setting the Default KMS Cluster".
 
-#### Vorgehensweise
+#### Procedure
 
-Loggen Sie sich zunächst über den vSphere Web Client auf Ihrer Private Cloud ein. Durchsuchen Sie anschließend Ihre Inventarliste und wählen Sie das betreffende vCenter aus. Gehen Sie auf „Verwalten“ und dann auf „Key Management Server“. Klicken Sie auf `KMS hinzufügen`{.action}, geben Sie die KMS-Informationen im neu geöffneten Assistenten ein und klicken Sie anschließend auf `OK`{.action}.
-Bestätigen Sie das Zertifikat, indem Sie auf `Trust`{.action} klicken.
+Initiate the manipulation by connecting to your Hosted Private Cloud with the vSphere web client.
 
-![Vorgehensweise KMS hinzufügen](images/vm-encrypt_01.png){.thumbnail}
+Then browse your inventory list and select the vCenter concerned. Go to "Manage", then "Key Management Servers".
 
-Wählen Sie die folgenden Optionen aus:
+Click `Add > Add Standard Key Provider`{.action}.
 
-|Name der Option|Beschreibung|
-|---|---|
-|„KMS-Cluster“|Wählen Sie „Neuen Cluster erstellen“ aus, um einen neuen Cluster zu erhalten. Wenn bereits ein Cluster vorhanden ist, können Sie diesen auswählen.|
-|„Clustername“|Name des KMS-Clusters. Dieser Name kann für den Login auf Ihrem KMS erforderlich sein, wenn Ihr vCenter nicht verfügbar ist. Es ist sehr wichtig, dass der Name des Clusters einzigartig und für dieses Element repräsentativ ist.|
-|„Serveralias“|Alias für den KMS. Dieser Alias kann für den Login auf Ihrem KMS erforderlich sein, wenn Ihr vCenter nicht verfügbar ist.|
-|„Serveradresse“|IP-Adresse oder FQDN des KMS.|
-|„Serverport“|Port, an dem sich vCenter mit dem KMS verbindet. Der Standard-KMIP-Port ist 5696. Dieser kann abweichen, wenn der KMS eines anderen Anbieters auf einem bestimmten Port konfiguriert ist.|
-|„Proxy-Adresse“|Lassen Sie dieses Feld leer.|
-|„Proxyport“|Lassen Sie dieses Feld leer.|
-|„Benutzername“|Einige KMS-Anbieter erlauben, dass Benutzer Verschlüsselungsschlüssel isolieren, die von verschiedenen Benutzern oder Gruppen verwendet werden, indem sie einen Benutzernamen und ein Passwort angeben. Geben Sie nur dann einen Benutzernamen an, wenn Ihr KMS diese Funktion unterstützt und Sie beabsichtigen, sie zu verwenden.|
-|„Kennwort“|Einige KMS-Anbieter erlauben, dass Benutzer Verschlüsselungsschlüssel isolieren, die von verschiedenen Benutzern oder Gruppen verwendet werden, indem sie einen Benutzernamen und ein Passwort angeben. Geben Sie nur dann ein Passwort an, wenn Ihr KMS diese Funktion unterstützt und Sie beabsichtigen, sie zu verwenden.|
+![Add KMS](images/add_kms.png){.thumbnail}
 
-#### KMS-Zertifikat importieren
+Then specify the KMS information in the configuration wizard that appears:
 
-Die meisten KMS-Anbieter benötigen ein Zertifikat, um [eine sichere Verbindung mit dem vCenter herzustellen](https://docs.vmware.com/de/VMware-vSphere/6.5/com.vmware.vsphere.security.doc/GUID-0212CEF2-7871-4E00-ADF2-0C71401D5E1A.html){.external}.
+![Add KMS](images/vm-encrypt_01.png){.thumbnail}
 
-Wählen Sie über das vCenter, in das Sie den KMS hinzugefügt haben, ebendiesen KMS aus. Klicken Sie im Bereich „Alle Optionen“ auf „`Vertrauenswürdige Verbindung mit KMS einrichten`{.action}“
+Validate the certificate by clicking `Trust KMS`{.action}.
+
+#### Importing KMS certificate
+
+Most KMS providers require a certificate to [establish a secure connection](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.security.doc/GUID-0212CEF2-7871-4E00-ADF2-0C71401D5E1A.html){.external} with the vCenter.
+
+From the vCenter on which you added the KMS server, select it. In "All options", click `Establish a trusted link with KMS`{.action}.
 
 > [!warning]
 >
-> Stellen Sie sicher, dass das Zertifikat nicht mit einem Passwort verschlüsselt ist, wenn Sie es über den KMS herunterladen. Wenn Sie zum Beispiel einen Benutzer erstellen, erstellen Sie diesen ohne Passwort und laden Sie das Zertifikat für den KMS-Benutzer herunter.
-> 
+> Ensure that the certificate is not encrypted with a password when you download it from the KMS. For example, if you create a user, create one without a password and download the certificate for the KMS user.
+>
 
-![KMS-Zertifikat importieren](images/vm-encrypt_02.png){.thumbnail}
+![import KMS certificate](images/vm-encrypt_02.png){.thumbnail}
 
-#### Überprüfen, dass der KMS konfiguriert ist
+#### Check that the KMS is configured
 
-Stellen Sie sicher, dass der zum KMS gehörige „**Connection Status**“ als „Normal“ eingestellt ist.
+Verify that the "**Connection Status**" corresponding to the KMS is in "Normal" mode.
 
-![Connection Status überprüfen](images/vm-encrypt_03.png){.thumbnail}
+![verify connection status](images/vm-encrypt_03.png){.thumbnail}
 
-#### Speicherrichtlinien von „VM Encryption Storage“ bearbeiten
+#### Modify the storage policy of "VM Encryption Storage"
 
-Erstellen Sie eine virtuelle Maschine. Wenn diese fertig erstellt ist, klicken Sie mit der rechten Maustaste auf sie. Klicken Sie anschließend auf `VM Policies`{.action} und dann auf `Edit VM Storage Policies`{.action}.
+Create a virtual machine. Once you have created it, right-click it. Click `VM Policies`{.action} then `Edit VM Storage Policies`{.action}.
 
-![VM Encryption Storage](images/vm-encrypt_04.png){.thumbnail}
+![VM encryption storage](images/vm-encrypt_04.png){.thumbnail}
 
-Wählen Sie die Dateien der virtuellen Maschine sowie anderer Festplatten aus, die verschlüsselt werden sollen.
+Select the virtual machine files and other hard drives that need to be encrypted.
 
-![VM Encryption Storage](images/vm-encrypt_05.png){.thumbnail}
+![VM encryption storage](images/vm-encrypt_05.png){.thumbnail}
 
-Überprüfen Sie, dass die Tasks fehlerfrei abgeschlossen wurden.
+Ensure that the tasks were completed without errors.
 
 > [!primary]
 >
-> Wenn der KMS nicht korrekt konfiguriert ist und es beim Schlüsselaustausch zwischen vCenter und KMS zu Problemen kommt, wird im Task ein „RuntimeFault“-Fehler mit der Fehlermeldung „Cannot generate key“ angezeigt.
+> If the KMS is not configured correctly and there are faults with the key exchange between vCenter and KMS, there will be a "RuntimeFault" error in the task with a "Cannot generate key" error message.
 >
 
-#### Verschlüsseltes vMotion
+#### Encrypted vMotion
 
-Was vMotion betrifft, erfolgt die Verschlüsselung auf Ebene der virtuellen Maschine. Für die Synchronisierung werden 256-Bit-Verschlüsselungsschlüssel verwendet.
+For vMotion, encryption works at the virtual machine level. For synchronization, 256-bit encryption keys are used.
 
-Die Verschlüsselung des vMotion-Traffics geschieht auf Ebene des Kernels der virtuellen Maschine mit dem häufig verwendeten AES-GCM- (Advanced Encryption Standard-Galois Counter Mode) Algorithmus.
+vMotion traffic encryption works at the VM kernel level with the widely used AES-GCM (Advanced Encryption Standard-Galois Counter Mode) algorithm.
 
-Bearbeiten Sie die virtuelle Maschine und klicken Sie auf `VM Options`{.action}.
+Then modify your virtual machine and click `VM Options`{.action}
 
-Die Optionen müssen speziell ausgewählt werden, wenn vMotion verschlüsselt werden soll. Für ein verschlüsseltes vMotion gibt es drei mögliche Richtlinien:
+You must select the options if your vMotion needs to be encrypted. There are three policies for encrypted vMotion:
 
-|Status|Beschreibung|
-|---|---|
-|Disabled|Aus.|
-|Opportunistic|Nur verschlüsselt, wenn dies vom Quell-Host und ESXi-Ziel-Host unterstützt wird. Ist das nicht der Fall, wird vMotion nicht verschlüsselt.|
-|Required|Verschlüsselung wird verwendet.|
+|     Status      | Description                                                                                                                               |
+|:---------------:|:------------------------------------------------------------------------------------------------------------------------------------------
+|    Disabled     | - Off                                                                                                                                     |
+| Opportunities  | - Encryption only if supported by the source host and ESXi target host. Otherwise, vMotion will not be encrypted                          |
+|    Required     | - Encryption will be used                                                                                                                 |
 
-![Verschlüsseltes vMotion](images/vm-encrypt_06.png){.thumbnail}
+![encrypted vMotion](images/vm-encrypt_06.png){.thumbnail}
 
-Die Übertragung von Maschinen zwischen den Hosts geschieht über den Austausch einzigartiger Schlüssel, die über den vCenter-Server und nicht über den KMS generiert und bedient werden.
+Moving machines between hosts is done by exchanging unique keys, which are generated and served by the vCenter server, rather than by KMS.
 
-#### Konfiguration überprüfen
+#### Configuration checks
 
-![Konfiguration überprüfen](images/vm-encrypt_07.png){.thumbnail}
+Check that a small padlock is visible, and that the disk is correctly encrypted in your VM information.
 
-![Konfiguration überprüfen](images/vm-encrypt_08.png){.thumbnail}
+Check your VM settings to ensure that your storage policy is the one that uses `VM encryption Policy`.
 
-![Konfiguration überprüfen](images/vm-encrypt_09.png){.thumbnail}
+![configuration check](images/vm-encrypt_07.png){.thumbnail}
 
-## Weiterführende Informationen
+![configuration check](images/vm-encrypt_09.png){.thumbnail}
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Finally, you can look at the tasks and events to get the final confirmation that the configuration worked.
+
+## Go further
+
+If you are having problems configuring your external KMS, please contact our [support teams](https://help.ovhcloud.com/csm?id=csm_get_help) or consider using an OVHcloud KMS (OKMS).
+
+You can read the following guide, which details the procedure to follow: [KMS for VMware on OVHcloud - Solution and use cases for encrypting VMs](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_overall_vm-encrypt).
+
+Join our [community of users](/links/community).

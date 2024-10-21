@@ -1,7 +1,7 @@
 ---
 title: "Enabling VM encryption with an external KMS"
 excerpt: "Find out how to encrypt your virtual machines with an external KMS (non-OVHcloud) within your managed VMware vSphere on OVHcloud environment"
-updated: 2024-10-18
+updated: 2024-10-21
 ---
 
 ## Objective

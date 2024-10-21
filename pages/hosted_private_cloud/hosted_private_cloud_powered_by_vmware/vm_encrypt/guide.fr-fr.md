@@ -1,7 +1,7 @@
 ---
 title: "Activation du chiffrement des machines virtuelles avec un KMS externe"
 excerpt: "Découvrez comment mettre en oeuvre le chiffrement de vos machines virtuelles avec un KMS externe non OVHcloud au sein de votre environnement VMware vSphere on OVHcloud managé"
-updated: 2024-10-18
+updated: 2024-10-21
 ---
 
 ## Objectif
