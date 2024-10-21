@@ -18,7 +18,7 @@ This may be useful in the following cases:
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - A [Public Cloud instance](https://www.ovhcloud.com/en-ie/public-cloud/){.external} in your OVHcloud account
 - A volume snapshot in the same OpenStack region
 - Administrative access (sudo) to your instance via SSH or RDP
@@ -27,7 +27,7 @@ This may be useful in the following cases:
 
 ### Creating the disk from a backup
 
-Log in to [the OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and open your `Public Cloud`{.action} project. Then click `Volume Snapshot`{.action} in the left-hand navigation bar under `Storage`.
+Log in to [the OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project. Then click `Volume Snapshot`{.action} in the left-hand navigation bar under `Storage`.
 
 To the right of the backup you want to create a volume from, click the `...`{.action} button, then `Create a volume`{.action}.
 
@@ -63,4 +63,4 @@ Once the attachment is complete, you can follow these steps on how to configure 
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

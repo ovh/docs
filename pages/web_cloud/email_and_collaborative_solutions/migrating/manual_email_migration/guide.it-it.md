@@ -10,7 +10,7 @@ updated: 2021-01-05
 
 ## Obiettivo
 
-[La migrazione automatica](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm){.external} di un indirizzo email è possibile tramite il nostro tool [OVH Mail Migrator](https://omm.ovh.net/){.external}. Inoltre, è possibile migrare manualmente il tuo indirizzo email tramite client di posta.
+[La migrazione automatica](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm) di un indirizzo email è possibile tramite il nostro tool [OVH Mail Migrator](https://omm.ovh.net/). Inoltre, è possibile migrare manualmente il tuo indirizzo email tramite client di posta.
 
 **Questa guida ti mostra come migrare manualmente il tuo indirizzo email.**
 
@@ -23,14 +23,14 @@ updated: 2021-01-05
 
 ## Prerequisiti
 
-- Disporre di un servizio email OVHcloud, come [Exchange](https://www.ovhcloud.com/it/emails/){.external}, [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/){.external} o MX Plan (tramite l'offerta MX Plan o inclusa in un'offerta di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external})
+- Disporre di un servizio email OVHcloud, come [Exchange](/links/web/emails), [Email Pro](/links/web/email-pro) o MX Plan (tramite l'offerta MX Plan o inclusa in un'offerta di [hosting Web OVHcloud](/links/web/hosting))
 - Disporre delle credenziali relative agli account email da migrare
 - Disporre delle credenziali relative agli account e-mail OVHcloud che ricevono i dati migrati (gli account di destinazione).
 
 ## Procedura
 
 > [!primary]
-> Per prima cosa, verifica che la migrazione automatica sia possibile utilizzando il nostro tool [OVH Mail Migrator](https://omm.ovh.net/){.external}. Per effettuare questa operazione, consulta la guida [Migrare account email via OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm){.external}.
+> Per prima cosa, verifica che la migrazione automatica sia possibile utilizzando il nostro tool [OVH Mail Migrator](https://omm.ovh.net/). Per effettuare questa operazione, consulta la guida [Migrare account email via OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).
 
 In questa guida abbiamo eseguito le operazioni sui 3 client di posta più utilizzati, **Outlook**, **Mail** su Mac OS e **Thunderbird**.
 
@@ -42,9 +42,9 @@ Le seguenti istruzioni sono suddivise in due parti:
 
 ### Outlook
 
-Se disponi di un account email [Exchange OVHcloud](https://www.ovhcloud.com/it/emails/hosted-exchange/), è possibile esportarlo direttamente in formato PST dallo Spazio Cliente.
+Se disponi di un account email [Exchange OVHcloud](/links/web/emails-hosted-exchange), è possibile esportarlo direttamente in formato PST dallo Spazio Cliente.
 
-Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e clicca sulla sezione `Web Cloud`{.action}. Seleziona `Microsoft`{.action} e poi `Exchange`{.action}. Clicca sul nome del servizio Hosted Exchange interessato.
+Accedi al tuo [Spazio Cliente OVHcloud](/links/manager) e clicca sulla sezione `Web Cloud`{.action}. Seleziona `Microsoft`{.action} e poi `Exchange`{.action}. Clicca sul nome del servizio Hosted Exchange interessato.
 
 Nella scheda `Account email`{.action}, clicca sul pulsante `...`{.action} a destra dell'account da esportare e poi su `Esporta in formato PST`{.action}.
 
@@ -225,7 +225,7 @@ Puoi trovare la finestra di scelta del tuo profilo con il tuo nuovo profilo sele
 
 Verifica che i tuoi elementi siano presenti sul server quando hai effettuato l'operazione giusta seguendo le istruzioni d'importazione.
 
-Accedi alla [Webmail](https://www.ovh.it/mail/).
+Accedi alla [Webmail](/links/web/email).
 
 Nella casella di ricezione e nella colonna di sinistra, troverai le cartelle e le email del tuo indirizzo email salvato.
 
@@ -234,6 +234,6 @@ Nella casella di ricezione e nella colonna di sinistra, troverai le cartelle e l
 
 ## Per saperne di più
 
-[Migrare un account email con OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm){.external}
+[Migrare un account email con OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

@@ -1,7 +1,7 @@
 ---
 title: "Utilizar snapshots num alojamento VPS"
 excerpt: "Saiba como ativar e utilizar a opção Snapshot na Área de Cliente OVHcloud"
-updated: 2024-04-15
+updated: 2024-09-18
 ---
 
 > [!primary]
@@ -21,20 +21,25 @@ Antes de aplicar as opções de backup, recomendamos que consulte as [páginas e
 
 ## Requisitos
 
-- acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+- acesso à [Área de Cliente OVHcloud](/links/manager)
 - um [serviço VPS](https://www.ovhcloud.com/pt/vps/) OVHcloud já instalado
 
 ## Instruções
 
-Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na secção `Servidor privado virtual`{.action}.
+Ligue-se à sua [Área de Cliente OVHcloud](/links/manager), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na secção `Servidor privado virtual`{.action}.
 
 ### Passo 1: Subscrever a opção snapshot
 
-No separador `Inicial`{.action}, procure a caixa "Sumário de opções". Se "Snapshot" já estiver no estado "Ativada", passe diretamente para a etapa 2. Se "Snapshot" ainda não estiver ativado, clique em `...`{.action} ao lado da opção "Snapshot" e no respetivo menu clique em `Encomendar`{.action}.
+No separador `Inicial`{.action}, procure a caixa **Sumário de opções**.  
+Se "Snapshot" já estiver no estado "Ativada", passe diretamente para a etapa 2. Se "Snapshot" ainda não estiver ativado, clique em `...`{.action} ao lado da opção "Snapshot" e no respetivo menu clique em `Encomendar`{.action}.
 
 ![snapshotvps](images/snapshot_vps_step1b.png){.thumbnail}
 
 Na etapa seguinte, tome nota da informação relativa ao preço e depois clique em `Encomendar`{.action}. Será então guiado através do processo de encomenda que será confirmado com o envio de um e-mail.
+
+Para rescindir a opção de serviço, clique no botão `...`{.action} ao lado de "Snapshot" e escolha `Rescindir`{.action} no menu contextual.
+
+![snapshotvps](images/snapshot_vps_cancel.png){.thumbnail}
 
 ### Passo 2: Obter um snapshot
 
@@ -63,7 +68,7 @@ A snapshot em curso pode ser recuperada através de um link de download. Clique 
 
 > [!primary]
 >
-> Se o seu VPS é de uma gama antiga, é possível que receba uma mensagem de erro, pois a opção não está disponível nos VPS antigos. O seu VPS é de uma gama antiga se o seu modelo de atribuição for semelhante a: *vpsXXXX.ovh.net* (em que *X* representa um número). Pode verificar esta referência de servidor no separador `Página Inicial`{.action} da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+> Se o seu VPS é de uma gama antiga, é possível que receba uma mensagem de erro, pois a opção não está disponível nos VPS antigos. O seu VPS é de uma gama antiga se o seu modelo de atribuição for semelhante a: *vpsXXXX.ovh.net* (em que *X* representa um número). Pode verificar esta referência de servidor no separador `Página Inicial`{.action} da [Área de Cliente OVHcloud](/links/manager).
 >
 
 Na nova janela, clique em `Gerar o link de download`{.action}.

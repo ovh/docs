@@ -10,7 +10,7 @@ updated: 2024-06-13
 
 ## Ziel
 
-Sie haben bereits einen Domainnamenamen bei OVHcloud und möchten ihn mit einem Webflow Hosting verbinden. In dieser Anleitung erfahren Sie, wie Sie die OVHcloud DNS-Zone bearbeiten, um die Konfiguration Ihres Webflow Hostings zu ermöglichen.
+Sie haben bereits einen Domainnamen bei OVHcloud und möchten ihn mit einem Webflow Hosting verbinden. In dieser Anleitung erfahren Sie, wie Sie die OVHcloud DNS-Zone bearbeiten, um die Konfiguration Ihres Webflow Hostings zu ermöglichen.
 
 **Erfahren Sie hier, wie Sie Ihren OVHcloud Domainnamen mit einem Webflow Hosting verbinden.**
 
@@ -106,7 +106,7 @@ Die DNS-Zone ist nun zur Verwendung mit einem Webflow Hosting konfiguriert.
 
 > [!primary]
 >
-> Die Verifizierung Ihres Domainnamenamens kann bis zu 48 Stunden dauern.
+> Die Verifizierung Ihres Domainnamens kann bis zu 48 Stunden dauern.
 
 Wenn Sie einen E-Mail-Dienst von OVHcloud nutzen oder eines [unserer E-Mail-Angebote](/links/web/emails) abonnieren möchten, müssen Sie auch Ihre DNS-Zone entsprechend konfigurieren. Lesen Sie dazu unsere Anleitung zur [Konfiguration eines MX-Eintrags](/pages/web_cloud/domains/dns_zone_mx).
 

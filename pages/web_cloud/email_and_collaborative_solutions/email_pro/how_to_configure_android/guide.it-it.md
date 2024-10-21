@@ -1,7 +1,7 @@
 ---
 title: "Email Pro - Configurare un indirizzo email in Gmail per Android"
 excerpt: "Scopri come configurare un account Email Pro su Android tramite l’applicazione Gmail"
-updated: 2024-03-15
+updated: 2024-10-09
 ---
 
 <style>
@@ -43,7 +43,7 @@ Gli indirizzi email del servizio Email Pro possono essere configurati su client 
 >
 > Nel nostro esempio abbiamo utilizzato come nome del server "pro**?**.mail.ovh.net", dove "?" dovrà essere sostituito con il numero che indica il server del servizio Email Pro.
 >
-> Questa informazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione `Web Cloud`{.action}, selezionando `Email Pro`{.action}. Il nome del server è visibile nel riquadro **Connessione** della scheda `Informazioni generali`{.action}.
+> Questa informazione è disponibile nello [Spazio Cliente OVHcloud](/links/manager), sezione `Web Cloud`{.action}, selezionando `Email Pro`{.action}. Il nome del server è visibile nel riquadro **Connessione** della scheda `Informazioni generali`{.action}.
 >
 
 Sulla schermata Home del tuo dispositivo clicca sull’applicazione `Gmail`{.action}.
@@ -103,7 +103,7 @@ Una volta configurato l’indirizzo email, non ti resta che utilizzarlo! Da ques
 
 > [!success]
 >
-> OVHcloud propone un’applicazione Web che permette di accedere al tuo indirizzo email da un browser Web, disponibile alla pagina <https://www.ovhcloud.com/it/mail/>. e accessibile con le credenziali del tuo account.
+> OVHcloud propone un’applicazione Web che permette di accedere al tuo indirizzo email da un browser Web, disponibile alla pagina [Webmail](/links/web/email). e accessibile con le credenziali del tuo account.
 
 ### Impostazioni POP, IMAP e SMTP
 
@@ -166,6 +166,10 @@ Per comprendere la differenza tra l'utilizzo del protocollo POP e IMAP, scomponi
 > Questa descrizione è una sintesi, rappresenta il funzionamento standard di entrambi i protocolli. È possibile configurare il POP in modo che le email non vengano eliminate quando si raccolgono i messaggi. L’obiettivo è descrivere il funzionamento nativo di questi due protocolli ed evitare operazioni aggiuntive per rispondere alle tue necessità.
 
 ## Per saperne di più
+
+> [!primary]
+>
+> Per ulteriori informazioni sulla configurazione di un indirizzo e-mail dall'applicazione Gmail su Android, consultare [Guida in linea di Google](https://support.google.com/mail/answer/6078445?hl=it-CA&co=GENIE.Platform%3DAndroid#zippy=%2Aggiungere-un-account).
 
 [Configurare un indirizzo email su Android tramite l’applicazione Gmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android)
 

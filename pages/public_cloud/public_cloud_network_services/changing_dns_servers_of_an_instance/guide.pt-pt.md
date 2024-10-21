@@ -18,20 +18,18 @@ Pode adicionar um servidor secundário ou substituir esta configuração pela su
 > [!warning]
 > A OVHcloud fornece-lhe serviços cuja configuração e gestão são da sua responsabilidade. Por conseguinte, é da sua responsabilidade garantir que estes serviços funcionam corretamente.
 >
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades ou dúvidas relativamente à administração, utilização ou implementação de um serviço num servidor, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/). Para mais informações, aceda à secção [Quer saber mais](#gofurther)?
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades ou dúvidas relativamente à administração, utilização ou implementação de um serviço num servidor, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/). Para mais informações, aceda à secção [Quer saber mais](#gofurther).
 >
 
 ## Requisitos
 
 - Ter uma [instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) na sua conta OVHcloud.
-- Dispor de um acesso de administrador (sudo) à instância através de SSH ou RDP.
+- Dispor de um acesso de administrador à instância através de SSH ou RDP.
 - Conhecimentos básicos de rede e administração.
 
 ## Instruções
 
-Ligue-se à sua instância em SSH. Para mais informações, consulte o manual "[Aceder a uma instância Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance)".
-
-Passar para o utilizador root. Se necessário, consulte o nosso guia para [passar root e definir uma palavra-passe](/pages/public_cloud/compute/become_root_and_change_password).
+Ligue-se à sua instância em SSH. Para mais informações, consulte o manual "[Aceder a uma instância Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance)".
 
 ### Debian / Ubuntu
 
@@ -63,7 +61,9 @@ Verifique que a configuração foi corretamente aplicada com o seguinte comando:
 
 ```bash
 cat /etc/resolv.conf
+```
 
+```console
 domain openstacklocal
 search openstacklocal
 nameserver IP1
@@ -102,7 +102,9 @@ Obtenha o nome da sua interface pública:
 
 ```bash
 nmcli connection show
- 
+```
+
+```console
 NAME         UUID                                  TYPE      DEVICE
 System eth0  5fb06bd0-0bb0-7ffb-45f1-d6edd65f3e03  ethernet  eth0
 ```
@@ -132,7 +134,7 @@ DNS configuration:
 
 ### Windows
 
-Ligue-se à instância através de uma sessão de ambiente de trabalho remoto ou com a consola VNC. Para mais informações, consulte o guia "[Aceder a uma instância Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance)".
+Ligue-se à instância através de uma sessão de ambiente de trabalho remoto ou com a consola VNC. Para mais informações, consulte o guia "[Aceder a uma instância Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance)".
 
 Abra os `Parâmetros de rede`{.action}.
 
@@ -154,8 +156,6 @@ Num PowerShell, o comando `nslookup` permite verificar qual o servidor DNS utili
 ## Quer saber mais? <a name="gofurther"></a>
 
 [Criar uma primeira instância Public Cloud e ligar-se a ela](/pages/public_cloud/compute/public-cloud-first-steps)
-
-[Tornar-se o utilizador root e selecionar uma palavra-passe](/pages/public_cloud/compute/become_root_and_change_password)
 
 [Modificar o hostname de uma instância Public Cloud](/pages/public_cloud/compute/changing_the_hostname_of_an_instance)
 

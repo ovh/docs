@@ -20,7 +20,7 @@ Mit dem *cloud-init* Modul können Sie Ihre [Public Cloud Instanz](https://www.o
 ## Voraussetzungen
 
 - Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud).
-- Sie haben [administrativen Zugriff](/pages/public_cloud/compute/become_root_and_change_password) (sudo) auf Ihre Instanz über SSH.
+- Sie haben [administrativen Zugriff](/pages/public_cloud/compute/public-cloud-first-steps) (sudo) auf Ihre Instanz über SSH.
 
 ## In der praktischen Anwendung
 

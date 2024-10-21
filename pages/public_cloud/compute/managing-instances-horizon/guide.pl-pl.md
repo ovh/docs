@@ -17,7 +17,7 @@ Oprócz Panelu klienta OVHcloud możesz również zarządzać projektami Public 
 ## Wymagania początkowe
 
 - Utworzenie instancji Public Cloud w [Panelu klienta OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps) lub w [interfejsie Horizon](/pages/public_cloud/compute/create_instance_in_horizon).
-- [Utworzenie klucza SSH](/pages/public_cloud/compute/public-cloud-first-steps#krok-1-utworzenie-kluczy-ssh).
+- [Utworzenie klucza SSH](/pages/public_cloud/compute/creating-ssh-keys-pci).
 
 ## W praktyce
 
@@ -159,7 +159,7 @@ W przypadku utraty dostępu do instancji, wynikającej z nieprawidłowej konfigu
 > [!primary]
 >
 > Dostęp do instancji jest możliwy przez konsolę VNC. Przed skonfigurowaniem hasła dla użytkownika root należy jednak najpierw skonfigurować.
-> Więcej informacji znajdziesz [w tym przewodniku](/pages/public_cloud/compute/become_root_and_change_password).
+> Więcej informacji znajdziesz [w tym przewodniku](/pages/public_cloud/compute/public-cloud-first-steps#user-mgmt).
 > Konsola VNC może być również pierwszym podejściem w przypadku awarii, w celu postawienia diagnozy w wyniku analizy fazy uruchomienia instancji.
 > 
 

@@ -10,7 +10,7 @@ updated: 2024-01-22
 
 ## Objetivo
 
-Pode identificar se um VPS pertence a uma gama mais antiga graças ao nome de referência apresentado na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt): se esta referência interna estiver no formato *vpsXXXX.ovh.net* (em que *X* representa um algarismo) e não tiver migrado o VPS correspondente para a [nossa gama atual de produtos](https://www.ovhcloud.com/pt/vps/), trata-se de um VPS *legacy*. 
+Pode identificar se um VPS pertence a uma gama mais antiga graças ao nome de referência apresentado na sua [Área de Cliente OVHcloud](/links/manager): se esta referência interna estiver no formato *vpsXXXX.ovh.net* (em que *X* representa um algarismo) e não tiver migrado o VPS correspondente para a [nossa gama atual de produtos](https://www.ovhcloud.com/pt/vps/), trata-se de um VPS *legacy*. 
 
 A referência de um VPS da gama atual apresenta-se desta forma: *vps-XXXXXXX.vps.ovh.net* (em que *X* pode ser um algarismo ou uma letra).
 
@@ -21,11 +21,11 @@ Um VPS *legacy* implica algumas diferenças em termos de gestão.
 ## Requisitos
 
 - Um [VPS *legacy*](https://www.ovhcloud.com/pt/vps/) na sua conta OVHcloud
-- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Estar ligado à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
-Aceda à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), abra o separador `Bare Metal Cloud`{.action} e selecione o seu servidor entre os `Servidores privados virtuais`{.action}.
+Aceda à sua [Área de Cliente OVHcloud](/links/manager), abra o separador `Bare Metal Cloud`{.action} e selecione o seu servidor entre os `Servidores privados virtuais`{.action}.
 
 No separador `Página Inicial`{.action}, pode aceder às operações principais do VPS a partir da secção **Atalho**.
 
@@ -115,7 +115,7 @@ Utilize esta opção para se ligar ao seu VPS através do KVM. Encontre todos os
 
 ### Alterar titular
 
-Esta hiperligação irá encaminhá-lo para o formulário a preencher em caso de mudança de proprietário de um VPS. Se precisar de ajuda para efetuar este procedimento, contacte as nossas equipas de suporte através da criação de um ticket na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+Esta hiperligação irá encaminhá-lo para o formulário a preencher em caso de mudança de proprietário de um VPS. Se precisar de ajuda para efetuar este procedimento, contacte as nossas equipas de suporte através da criação de um ticket na sua [Área de Cliente OVHcloud](/links/manager).
 
 ### Migrar para a nova gama
 

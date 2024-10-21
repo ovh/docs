@@ -52,7 +52,7 @@ Ensuite, nous utiliserons cette Floating IP pour nous connecter à l'instance (V
 >> 
 >> Avant de créer votre instance, assurez-vous d'avoir créé un [réseau privé avec Gateway](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway).
 >>
->> Si vous avez besoin d'assistance pour créer une nouvelle instance, consultez d'abord notre guide pour [créer une instance depuis l'espace client OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps#create-instance). 
+>> Si vous avez besoin d'assistance pour créer une nouvelle instance, consultez d'abord notre guide pour [créer une instance depuis l'espace client OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps). 
 >>
 >>
 >> > [!warning]

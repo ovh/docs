@@ -381,7 +381,7 @@ The service will be discontinued on the expiry date.
 >
 >> > **serviceName** *
 >> >
->> >> The identifier of your Load Balancer, for exemple : "loadbalancer-abcdef0123456789" (String of characters)
+>> >> The identifier of your Load Balancer, for example : "loadbalancer-abcdef0123456789" (String of characters)
 >> >
 >> > **name** *
 >> >

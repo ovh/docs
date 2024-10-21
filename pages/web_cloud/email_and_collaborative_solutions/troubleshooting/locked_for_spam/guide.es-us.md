@@ -17,7 +17,7 @@ Cuando su dirección de correo electrónico está bloqueada por SPAM, significa 
 
 ## Procedimiento <a name="instructions"></a>
 
-Antes de continuar, y si el bloqueo afecta a una dirección de correo electrónico de tipo MXplan, identifique la versión que tiene para consultar el progreso del proceso de desbloqueo. Compruebe cómo distinguir las dos versiones utilizando la siguiente tabla.
+Antes de continuar, y si el bloqueo afecta a una dirección de correo electrónico de tipo MX Plan, identifique la versión que tiene para consultar el progreso del proceso de desbloqueo. Compruebe cómo distinguir las dos versiones utilizando la siguiente tabla.
 
 |Versión histórica de la solución MX Plan|Nueva versión de la solución MX Plan|
 |---|---|
@@ -107,8 +107,8 @@ Estos encabezados permiten determinar el rastro de la ruta y el origen de los me
 
 ## Más información <a name="go-further"></a>
 
-Para servicios especializados (posicionamiento web, desarrollo...), póngase en contacto con los [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
+Para servicios especializados (posicionamiento web, desarrollo...), póngase en contacto con los [partners de OVHcloud](/links/partner).
 
-Si desea ayuda para el uso y la configuración de sus soluciones de OVHcloud, consulte nuestras distintas [ofertas de soporte](https://www.ovhcloud.com/es/support-levels/).
+Si desea ayuda para el uso y la configuración de sus soluciones de OVHcloud, consulte nuestras distintas [ofertas de soporte](/links/support).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com>.

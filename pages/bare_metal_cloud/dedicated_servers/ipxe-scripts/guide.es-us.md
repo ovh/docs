@@ -15,7 +15,7 @@ updated: 2024-02-27
 > Este artículo está destinado a los usuarios con experiencia que al menos tienen conocimientos básicos sobre la [iniciación PXE](https://en.wikipedia.org/wiki/Preboot_Execution_Environment) y la implementación de OVHcloud: [iPXE](https://ipxe.org/).
 >
 
-En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) puede especificar un modo de arranque de una lista predefinida: disco principal o rescue.
+En el [área de cliente de OVHcloud](/links/manager) puede especificar un modo de arranque de una lista predefinida: disco principal o rescue.
 A través de la [API de OVHcloud](https://ca.api.ovh.com/), también puede definir scripts personalizados.
 
 Utilizar un script personalizado puede ser interesante en los siguientes casos:
@@ -25,7 +25,7 @@ Utilizar un script personalizado puede ser interesante en los siguientes casos:
 
 ## Requisitos
 
-- Un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/) **listo para ser booteado/reiniciado** en su cuenta de OVHcloud.
+- Un [servidor dedicado](/links/bare-metal/bare-metal) **listo para ser booteado/reiniciado** en su cuenta de OVHcloud.
 - Tener acceso a la [API de OVHcloud](https://ca.api.ovh.com/).
 
 > [!warning]
@@ -86,7 +86,7 @@ Ya puede reiniciar el servidor y este utilizará su script [iPXE](https://ipxe.o
 
 ### Otros modos de arranque <a name="leaveIpxeScript"></a>
 
-En cualquier momento puede volver al disco o al modo de rescate desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) (consulte nuestra guía "[Activar y utilizar el modo de rescate](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)") o a través de la [API de OVHcloud](https://ca.api.ovh.com/).
+En cualquier momento puede volver al disco o al modo de rescate desde el [área de cliente de OVHcloud](/links/manager) (consulte nuestra guía "[Activar y utilizar el modo de rescate](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)") o a través de la [API de OVHcloud](https://ca.api.ovh.com/).
 
 #### Cambiar a disco <a name="switchToDisk"></a>
 

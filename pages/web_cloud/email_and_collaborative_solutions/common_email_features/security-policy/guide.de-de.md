@@ -12,8 +12,8 @@ Mit den E-Mail-Diensten von OVHcloud können Sie professionelle E-Mail-Adressen 
 
 ## Voraussetzungen
 
-- Sie verfügen über einen [OVHcloud E-Mail-Dienst](https://www.ovhcloud.com/de/emails/).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) im Bereich `Web Cloud`{.action}.
+- Sie verfügen über einen [OVHcloud E-Mail-Dienst](/links/web/emails).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) im Bereich `Web Cloud`{.action}.
 
 ## In der praktischen Anwendung
 
@@ -21,10 +21,10 @@ Mit den E-Mail-Diensten von OVHcloud können Sie professionelle E-Mail-Adressen 
 
 - Sicherheit der E-Mail-Accounts bei Login-Versuchen der Benutzer erhöhen
 - Komplexität der Account-Passwörter Ihres E-Mail-Dienstes erhöhen
-- Überprüfung von auf unseren Servern eingehenden Nachrichten zu Ihren E-Mail-Adressen verschärfen (nur für [Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/) Accounts)
-- festlegen, wie „unerwünschte“ Nachrichten (Spam-Mails) in Ihren Posteingängen angezeigt werden (nur für [Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/) Accounts)
+- Überprüfung von auf unseren Servern eingehenden Nachrichten zu Ihren E-Mail-Adressen verschärfen (nur für [Exchange](/links/web/emails-hosted-exchange) Accounts)
+- festlegen, wie „unerwünschte“ Nachrichten (Spam-Mails) in Ihren Posteingängen angezeigt werden (nur für [Exchange](/links/web/emails-hosted-exchange) Accounts)
 
-Um auf die Sicherheitseinstellungen Ihres E-Mail-Accounts zuzugreifen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und begeben Sie sich in den Bereich `Web Cloud`{.action}. 
+Um auf die Sicherheitseinstellungen Ihres E-Mail-Accounts zuzugreifen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und begeben Sie sich in den Bereich `Web Cloud`{.action}. 
 
 |E-Mails und E-Mail Pro|Exchange| 
 |---|---| 
@@ -33,7 +33,7 @@ Um auf die Sicherheitseinstellungen Ihres E-Mail-Accounts zuzugreifen, loggen Si
 
 > [!primary]
 >
-> Wenn der Tab `Mehr`{.action} nicht im Verwaltungsbereich von `E-Mails`{.action} zu sehen ist, bedeutet das, dass Sie einen MXplan "Legacy" verwenden. Bei diesen MXplan Diensten gibt es keine spezielle Sicherheitsverwaltung.
+> Wenn der Tab `Mehr`{.action} nicht im Verwaltungsbereich von `E-Mails`{.action} zu sehen ist, bedeutet das, dass Sie einen MX Plan "Legacy" verwenden. Bei diesen MX Plan Diensten gibt es keine spezielle Sicherheitsverwaltung.
 
 Befolgen Sie nun die Anleitung entsprechend den von Ihnen gewünschten Aktionen.
 

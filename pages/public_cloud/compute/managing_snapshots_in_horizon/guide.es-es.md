@@ -1,7 +1,7 @@
 ---
 title: Gestionar las instantáneas de una instancia
 excerpt: Cómo gestionar una instantánea de una instancia en Horizon.
-updated: 2022-01-31
+updated: 2024-09-06
 ---
 
 > [!primary]
@@ -17,7 +17,7 @@ Para ello, puede crear instantáneas (snapshot) de sus instancias, que podrá ut
 
 ## Requisitos
 
-- Haber [creado una instancia de Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#3-crear-una-instancia) en su cuenta de OVHcloud
+- Haber [creado una instancia de Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) en su cuenta de OVHcloud
 - [Conectarse a Horizon](/pages/public_cloud/compute/introducing_horizon)
 
 ## Procedimiento
@@ -38,7 +38,44 @@ Se abrirá una ventana en la que deberá introducir la siguiente información:
 
 ![Create snapshot](images/createsnapshot2.png){.thumbnail}
 
-El snapshot se mostrará en la sección `Images`{.action}. Es recomendable asignar un nombre explícito a cada snapshot. 
+El snapshot se mostrará en la sección `Images`{.action}. Es recomendable asignar un nombre explícito a cada snapshot.
+
+### Restauración de un snapshot
+
+Es posible restaurar un snapshot creando una nueva instancia a partir de él.
+
+En la interfaz de Horizon, haga clic en el menú `Compute`{.action} a la izquierda y seleccione `Images`{.action}.
+
+Haga clic en `Launch`{.action} junto al snapshot seleccionado.
+
+![restore snapshot](images/restoresnapshot.png){.thumbnail}
+
+Para completar la restauración del snapshot, es necesario seleccionar una serie de opciones en la ventana emergente.
+
+> [!tabs]
+> **Details**
+>>
+>> **Nombre de la instancia (*Instance name*):** Especifique el nombre deseado para la instancia.<br>
+>> **Count:** Seleccione el número de instancias que quiere iniciar a partir del snapshot.<br><br>
+>>![snapshot](images/restoresnapshot1.png){.thumbnail}<br>
+>>
+> **Flavor**
+>>
+>> Seleccione el *flavor* deseado. Asegúrese de seleccionar una versión con recursos iguales o mayores que el tamaño de la imagen (snapshot).<br><br>
+>>![network](images/restoresnapshot2.png){.thumbnail}<br>
+>>
+> **Red (*Network*)**
+>>
+>> Seleccione una red pública (Ext-Net) para asociarla a la instancia.<br><br>
+>>![network](images/restoresnapshot3.png){.thumbnail}<br>
+>>
+> **Keypair**
+>>
+>> Seleccione (3), cree (1) o importe (2) un par de claves.<br><br>
+>>![network](images/restoresnapshot4.png){.thumbnail}<br>
+>>
+
+Haga clic en `Launch Instance`{.action} para empezar a crear su instancia.
 
 ### Eliminación de un snapshot
 

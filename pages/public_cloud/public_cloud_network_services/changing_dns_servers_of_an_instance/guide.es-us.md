@@ -24,14 +24,12 @@ Puede añadir un servidor secundario o sustituir esta configuración por la suya
 ## Requisitos
 
 - Tener una [instancia de Public Cloud](https://www.ovhcloud.com/es/public-cloud/) en su cuenta de OVHcloud.
-- Tener acceso de administrador (sudo) a la instancia a través de SSH o RDP.
+- Tener acceso de administrador a la instancia a través de SSH o RDP.
 - Conocimientos básicos de red y administración.
 
 ## Procedimiento
 
-Conéctese a su instancia por SSH. Para más información, consulte la guía [Conectarse a una instancia de Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance).
-
-Cambiar al usuario root. Si lo necesita, consulte nuestra guía para [cambiar a root y establecer una contraseña](/pages/public_cloud/compute/become_root_and_change_password).
+Conéctese a su instancia por SSH. Para más información, consulte la guía [Conectarse a una instancia de Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance).
 
 ### Debian / Ubuntu
 
@@ -63,7 +61,9 @@ Compruebe que la configuración se haya aplicado correctamente con el siguiente 
 
 ```bash
 cat /etc/resolv.conf
+```
 
+```console
 domain openstacklocal
 search openstacklocal
 nameserver IP1
@@ -102,7 +102,9 @@ Obtenga el nombre de su interfaz pública:
 
 ```bash
 nmcli connection show
- 
+```
+
+```console
 NAME         UUID                                  TYPE      DEVICE
 System eth0  5fb06bd0-0bb0-7ffb-45f1-d6edd65f3e03  ethernet  eth0
 ```
@@ -132,7 +134,7 @@ DNS configuration:
 
 ### Windows
 
-Conéctese a la instancia a través de una sesión de escritorio remoto o con la consola VNC. Para más información, consulte la guía [Conectarse a una instancia de Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance).
+Conéctese a la instancia a través de una sesión de escritorio remoto o con la consola VNC. Para más información, consulte la guía [Conectarse a una instancia de Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance).
 
 Abra los `Parámetros de red`{.action}.
 
@@ -154,8 +156,6 @@ En un PowerShell, el comando `nslookup` permite comprobar cuál es el servidor D
 ## Más información <a name="gofurther"></a>
 
 [Crear una primera instancia de Public Cloud y conectarse a ella](/pages/public_cloud/compute/public-cloud-first-steps)
-
-[Ejecutar comandos como root](/pages/public_cloud/compute/become_root_and_change_password)
 
 [Cambiar el hostname de una instancia de Public Cloud](/pages/public_cloud/compute/changing_the_hostname_of_an_instance)
 

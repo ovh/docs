@@ -1,7 +1,7 @@
 ---
-title: 'Configurar una cuenta Exchange en Thunderbird para Windows'
+title: 'Exchange - Configure su cuenta de correo electrónico en Thunderbird para Windows'
 excerpt: 'Cómo configurar una cuenta Exchange en Thunderbird para Windows'
-updated: 2021-08-26
+updated: 2024-10-09
 ---
 
 > [!primary]
@@ -23,7 +23,7 @@ Es posible configurar sus cuentas Exchange en el cliente de correo que usted uti
 
 ## Requisitos
 
-- Disponer de una cuenta [Exchange](https://www.ovhcloud.com/es/emails/hosted-exchange/).
+- Disponer de una cuenta [Exchange](/links/web/emails-hosted-exchange).
 - Tener Thunderbird instalado en su Windows.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
  
@@ -33,7 +33,7 @@ Es posible configurar sus cuentas Exchange en el cliente de correo que usted uti
 >
 > En nuestro ejemplo, utilizamos el nombre del servidor: ex**?**.mail.ovh.ca. Debe reemplazar el "? " por el número que designa el servidor del servicio Exchange.
 > 
-> Encontrará esta cifra en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la sección `Web Cloud`{.action} y, seguidamente, en el apartado `Microsoft`{.action}/`Exchange`{.action}. El nombre del servidor puede verse en el recuadro **Conexión** de la pestaña `Información General`{.action}.
+> Encontrará esta cifra en el [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action} y, seguidamente, en el apartado `Microsoft`{.action}/`Exchange`{.action}. El nombre del servidor puede verse en el recuadro **Conexión** de la pestaña `Información General`{.action}.
 > 
 
 ### Añadir la cuenta
@@ -59,7 +59,7 @@ En una configuración en **POP**, los valores son los siguientes:
 
 Una vez que haya configurado la dirección de correo electrónico, ya puede empezar a utilizarla enviando y recibiendo mensajes.
 
-OVHcloud también ofrece una aplicación web que permite acceder a su dirección de correo electrónico desde un navegador de internet. y está disponible en la dirección <https://www.ovh.com/world/es/mail/>. Puede conectarse con las credenciales de acceso de su dirección de correo electrónico. Si tiene cualquier duda sobre su uso, consulte nuestra guía [Consultar su cuenta Exchange desde la interfaz OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
+OVHcloud también ofrece una aplicación web que permite acceder a su dirección de correo electrónico desde un navegador de internet. y está disponible en la dirección [Webmail](/links/web/email). Puede conectarse con las credenciales de acceso de su dirección de correo electrónico. Si tiene cualquier duda sobre su uso, consulte nuestra guía [Consultar su cuenta Exchange desde la interfaz OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
 ### Obtener una copia de seguridad de su dirección de correo
 
@@ -71,7 +71,7 @@ Si necesita realizar alguna operación que pueda provocar la pérdida de los dat
 >
 > En nuestro ejemplo, utilizamos el nombre del servidor: ex**?**.mail.ovh.ca. Debe reemplazar el "? " por el número que designa el servidor del servicio Exchange.
 > 
-> Encontrará esta cifra en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la sección `Web Cloud`{.action} y, seguidamente, en el apartado `Microsoft`{.action}/`Exchange`{.action}.
+> Encontrará esta cifra en el [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action} y, seguidamente, en el apartado `Microsoft`{.action}/`Exchange`{.action}.
 > en la columna de la izquierda. El nombre del servidor puede verse en el recuadro **Conexión** de la pestaña `Información General`{.action}.
 > 
 
@@ -92,5 +92,9 @@ Si su cuenta de correo ya está configurada y debe acceder a los parámetros de 
 ![Thunderbird](images/thunderbird-win-exchange06.png){.thumbnail}
 
 ## Más información
+
+> [!primary]
+>
+> Para obtener más información sobre cómo configurar una dirección de correo electrónico desde la aplicación Thunderbird en Windows, consulte [el Centro de ayuda de Mozilla](https://support.mozilla.org/es/kb/configuracion-automatica-de-las-cuentas#thunderbird:win10:tb115).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -116,6 +116,10 @@ public-cloud-containers-orchestration-managed-private-registry-getting-started: 
 public-cloud-containers-orchestration-managed-private-registry-tutorials: Tutorials
 public-cloud-containers-orchestration-managed-rancher-service: Managed Rancher Service (MRS)
 public-cloud-containers-orchestration-managed-rancher-service-getting-started: Getting started
+public-cloud-containers-orchestration-managed-rancher-service-resources: Resources
+public-cloud-containers-orchestration-managed-rancher-service-creating-importing-kubernetes: Creating or importing a Kubernetes cluster
+public-cloud-containers-orchestration-managed-rancher-service-operations-kubernetes: Operations on a Kubernetes cluster
+public-cloud-containers-orchestration-managed-rancher-service-deploy-applications: Deploying applications with Rancher
 public-cloud-data-analytics: Data Analytics
 public-cloud-data-analytics-data-processing: Data Processing
 public-cloud-data-analytics-data-processing-concepts: Concetti
@@ -203,6 +207,7 @@ web-cloud-email-collaborative-solutions-microsoft-exchange-setting-up-email-appl
 web-cloud-email-collaborative-solutions-microsoft-exchange-setting-up-email-application-on-mobile-device: Installazione di un'applicazione di posta elettronica sul telefono cellulare
 web-cloud-email-collaborative-solutions-microsoft-exchange-troubleshooting: Risoluzione dei problemi
 web-cloud-email-collaborative-solutions-microsoft-office: Microsoft Office
+web-cloud-email-collaborative-solutions-zimbra: Zimbra
 web-cloud-domains: Domini
 web-cloud-domains-api: API
 web-cloud-domains-api-frequent-tasks: Compiti frequenti
@@ -272,6 +277,7 @@ web-cloud-hosting-tutorials: Tutorial
 web-cloud-hosting-tutorials-wordpress: Tutorial WordPress
 web-cloud-hosting-tutorials-cloud-web: Tutorial per Cloud Web
 web-cloud-hosting-website-optimisation: Ottimizzazione del tuo sito
+web-cloud-hosting-api: API
 web-cloud-ssl-gateway: SSL Gateway
 web-cloud-ssl-gateway-getting-started: Per iniziare
 web-cloud-web-paas-powered-by-platformsh: Web PaaS powered by Platform.sh
@@ -342,7 +348,6 @@ network-load-balancer-getting-started: Per iniziare
 network-load-balancer-setting-up: Avvio
 network-load-balancer-use-cases: Modalità di utilizzo
 network-load-balancer-viewing-statuses: Visualizzazione degli stati
-network-vrack-services: vRack Services
 network-content-delivery-network-cdninfrastructure: Content Delivery Network (CDN) Infrastructure
 manage-operate-api: API
 manage-operate-api-apiv6: APIv6

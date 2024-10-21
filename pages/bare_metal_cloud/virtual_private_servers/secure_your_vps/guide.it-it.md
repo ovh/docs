@@ -1,7 +1,7 @@
 ---
 title: "Mettere in sicurezza un VPS"
 excerpt: "Come impostare misure di sicurezza di base per proteggere il VPS da attacchi e accessi non autorizzati"
-updated: 2024-02-20
+updated: 2024-10-07
 ---
 
 > [!primary]
@@ -28,7 +28,7 @@ Al momento dell'ordine del tuo VPS, puoi scegliere una distribuzione o un sistem
 
 > [!primary]
 >
-> Ricordate che questa guida generale si basa su un sistema operativo Ubuntu Server. Alcuni comandi devono essere adattati alla distribuzione utilizzata e alcuni trucchi ti invitano a utilizzare strumenti di terze parti. In caso di necessità, consulta la documentazione ufficiale relativa a queste applicazioni.
+> È una guida generale basata sui sistemi operativi Ubuntu, Debian e CentOS. Alcuni comandi devono essere adattati alla distribuzione utilizzata e alcuni trucchi ti invitano a utilizzare strumenti di terze parti. In caso di necessità, consulta la documentazione ufficiale relativa a queste applicazioni.
 >
 > Per configurare il tuo primo VPS OVHcloud, consulta la nostra guida [sulla messa in servizio di un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps).
 >
@@ -40,23 +40,47 @@ Questi esempi presuppongono la connessione come [utente con elevate autorizzazio
 Gli sviluppatori di distribuzioni e di sistemi operativi propongono frequenti aggiornamenti di pacchetti, molto spesso per ragioni di sicurezza.<br>
 Garantire l'aggiornamento della distribuzione o del sistema operativo è un elemento essenziale per proteggere il VPS.
 
-L'aggiornamento avverrà in due fasi.
-
-- Aggiorna la lista dei pacchetti:
-
-```bash
-sudo apt update
-```
-
-- L'aggiornamento dei pacchetti in quanto tale:
-
-```bash
-sudo apt upgrade
-```
+> [!tabs]
+> Ubuntu
+>>
+>> Questo aggiornamento avverrà in due step:
+>> 
+>> - Aggiornamento dell'elenco dei pacchetti:
+>> 
+>> ```bash
+>> sudo apt update
+>> ```
+>> 
+>> - Aggiornamento dei pacchetti effettivi:
+>> 
+>> ```bash
+>> sudo apt upgrade
+>> ```
+>>
+> Debian
+>> 
+>> ```bash
+>> sudo apt update && sudo apt upgrade
+>> ```
+>>
+>> Il comando è identico a Ubuntu perché sia Debian che Ubuntu utilizzano `apt`.
+>>
+> CentOS
+>>
+>> ```bash
+>> sudo yum update
+>> ```
+>>
+>> Su CentOS, il comando per aggiornare il sistema operativo utilizza `yum` o `dnf`, a seconda della versione.
 
 Questa operazione deve essere effettuata regolarmente per mantenere un sistema aggiornato.
 
 ### Modifica la porta di default SSH <a name="changesshport"></a>
+
+> [!primario]
+>
+> Per questa sezione, le righe di comando seguenti sono le stesse per Ubuntu, Debian e CentOS.
+>
 
 Una delle prime operazioni da effettuare sul tuo server è la configurazione della porta di ascolto del servizio SSH. Di default, viene definita sulla **porta 22**, quindi i tentativi di hack del server da parte dei robot indirizzeranno questa porta in priorità.
 Modificare questo parametro a vantaggio di una porta diversa è una misura semplice per rafforzare la protezione del tuo server contro gli attacchi automatici.
@@ -100,7 +124,7 @@ Ciò dovrebbe essere sufficiente per attuare le modifiche. In caso contrario, ri
 
 Per le ultime versioni di Ubuntu, la configurazione SSH viene gestita nel file `ssh.socket`.
 
-Per aggiornare la porta SSH, modifica la riga `Listenstream` nel file di configurazione con un editor di testo a tua scelta (`nano` utilizzato in questo esempio):
+Per aggiornare la porta SSH, modifica la riga `ListenStream` nel file di configurazione con un editor di testo a tua scelta (`nano` utilizzato in questo esempio):
 
 ```console
 [Socket]
@@ -155,9 +179,21 @@ Questo pacchetto è indispensabile, in alcuni casi, per proteggere il tuo server
 
 Per installare il pacchetto software, utilizza questo comando:
 
-```bash
-sudo apt install fail2ban
-```
+> [!tabs]
+> Ubuntu e Debian
+>> 
+>> ```bash
+>> sudo apt install fail2ban
+>> ```
+>>
+> CentOS
+>>
+>> Su CentOS 7 e CentOS 8 (o RHEL), installare prima il repository EPEL (**E**xtra **P**ackages for **E**nterprise **L**inux), quindi Fail2ban:
+>>
+>> ```bash
+>> sudo yum install epel-release
+>> sudo yum install fail2ban
+>> ```
 
 Puoi personalizzare i file di configurazione Fail2ban per proteggere i servizi esposti a Internet pubblico dai ripetuti tentativi di connessione.
 
@@ -212,6 +248,14 @@ Una volta terminate le modifiche, salva il file e chiudi l'editor.
 
 Riavvia il servizio per assicurarti che venga eseguito con le personalizzazioni applicate:
 
+1\. Comando consigliato con `systemctl`:
+
+```bash
+sudo systemctl restart fail2ban
+```
+
+2\.  Comando con `service` (metodo legacy, ancora compatibile):
+
 ```bash
 sudo service fail2ban restart
 ```
@@ -240,6 +284,8 @@ Tutte le informazioni sulle soluzioni di backup disponibili per il tuo servizio 
 ## Per saperne di più
 
 [Iniziare a utilizzare un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps) 
+
+[Creare e utilizzare chiavi SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
 
 [Configura il firewall su Windows](/pages/bare_metal_cloud/virtual_private_servers/activate-port-firewall-soft-win)
 

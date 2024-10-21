@@ -12,7 +12,7 @@ A flex instance is a single size disk (50GB) instance which offers a faster proc
 
 ## Requirements
 
-- An [OVHcloud Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps#step-3-creating-an-instance) with the flex option
+- An [OVHcloud Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps#configuration) with the flex option
 - [Access to the Horizon interface](/pages/public_cloud/compute/introducing_horizon)
 
 ## Instructions
@@ -65,4 +65,4 @@ Alternatively, you can [edit the configuration of the instance](/pages/public_cl
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

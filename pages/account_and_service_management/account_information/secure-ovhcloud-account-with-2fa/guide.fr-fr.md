@@ -1,8 +1,22 @@
 ---
 title: 'Sécuriser son compte OVHcloud avec la double authentification'
 excerpt: 'Découvrez comment améliorer la sécurité de votre compte OVHcloud en activant la double authentification (2FA)'
-updated: 2024-03-18
+updated: 2024-08-22
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objectif
 
@@ -19,11 +33,11 @@ Ce guide vous permettra de :
 - [Connaître les démarches si votre téléphone/tablette/clé est perdu(e) / volé(e) / endommagé(e)](#lost-device)
 - [Savoir comment désactiver complètement la double authentification](#desactivation)
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/odO58c4gJfc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/odO58c4gJfc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Prérequis
 
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à l'[espace client OVHcloud](/links/manager).
 - Posséder un téléphone mobile (pour la méthode par SMS), un smartphone ou une tablette (pour la méthode via application mobile) ou une clé de sécurité Universal Second Factor (U2F).
 - Avoir pris connaissance des [recommandations sur la gestion du mot de passe d'accès à votre compte](/pages/account_and_service_management/account_information/manage-ovh-password).
 
@@ -74,7 +88,7 @@ Nous vous proposons quatre méthodes différentes (cliquez sur les onglets ci-d
 
 ### Étape 1 - Activer votre première méthode de double authentification <a name="enabling-2fa"></a>
 
-Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur votre nom en haut à droite (1) puis sur vos initiales (2). Cliquez ensuite sur `Sécurité`{.action} (3) et enfin sur `Activer la double authentification`{.action} (4).
+Connectez-vous à l'[espace client OVHcloud](/links/manager){.external}, cliquez sur votre nom en haut à droite (1) puis sur vos initiales (2). Cliquez ensuite sur `Sécurité`{.action} (3) et enfin sur `Activer la double authentification`{.action} (4).
 
 ![Enabling 2FA](images/2024-001-enabling-2fa.png){.thumbnail}
 
@@ -140,7 +154,7 @@ Vous pouvez regénérer ou supprimer les code de secours depuis votre espace cli
 
 ### Étape 3 - Se connecter à l'espace client OVHcloud avec la double authentification <a name="login-2fa"></a>
 
-Rendez-vous sur la [page d'authentification à l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et saisissez votre identifiant (ou votre adresse e-mail principale) et votre mot de passe.
+Rendez-vous sur la [page d'authentification à l'espace client OVHcloud](/links/manager){.external} et saisissez votre identifiant (ou votre adresse e-mail principale) et votre mot de passe.
 
 L'écran d'identification affiche la dernière méthode de double authentification utilisée ou renseignée. Si vous souhaitez en utiliser une autre, cliquez sur le bouton `Essayer une autre méthode`{.action}.
 
@@ -181,7 +195,7 @@ Si votre périphérique (téléphone mobile/smartphone/clé de sécurité) est p
 > - de codes de secours valides.
 >
 
-Pour supprimer un périphérique, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur votre nom en haut à droite, puis sur vos initiales.
+Pour supprimer un périphérique, connectez-vous à votre [espace client OVHcloud](/links/manager){.external}. Cliquez sur votre nom en haut à droite, puis sur vos initiales.
 
 Cliquez ensuite sur `Sécurité`{.action} puis sur les `...`{.action} à droite de votre périphérique à supprimer et enfin sur `Supprimer`{.action}.
 
@@ -210,9 +224,24 @@ Une fois tous vos périphériques supprimés, désactivez les codes de secours e
 
 #### Si vous n'avez plus accès à votre espace client OVHcloud <a name="2FA-deletion"></a>
 
-Si vous ne disposez plus de périphériques valides et si vous ne disposez plus de codes de secours valides, vous pouvez demander la désactivation de la double authentification en contactant nos équipes support.
+Si vous ne disposez plus de périphériques valides ni de codes de secours valides, vous devez alors demander la désactivation de la double authentification en fournissant des documents de justification d'identité correspondant à votre compte OVHcloud.
 
-Avant de nous contacter, vous devez réunir les éléments justificatifs suivants :
+Tout d'abord, accédez à [la page d'authentification à l'espace client OVHcloud](/links/manager).
+
+Renseignez votre identifiant OVHcloud et votre mot de passe pour accéder à l'étape de la double authentification. Cliquez alors sur le bouton `Je n’ai plus accès à mon mobile, à la clé de sécurité U2F ou à mes codes de secours`{.action}.<br>
+Si vous ne voyez pas ce bouton, cliquez sur le bouton `Essayer une autre méthode`{.action} puis sur `Je n’ai plus accès à mon mobile, à la clé de sécurité U2F ou à mes codes de secours`{.action}.
+
+L'interface suivante vous permet de téléverser et d'envoyer à nos équipes les documents nécessaires pour désactiver la double authentification sur votre compte.
+
+> [!warning]
+>
+> - Attention, veuillez vous assurer que tous vos documents sont corrects et lisibles avant envoi.
+> - **Formats acceptés** : jpg, jpeg, pdf, png. La taille maximale du fichier pour chaque document est de 10 Mo.
+> - En cas de documents non valides, cette procédure sera annulée et vous devrez en effectuer une nouvelle.
+
+Dans un délai de 72 heures, sous réserve que vos documents soient sont corrects et lisibles, vous recevrez la confirmation de la désactivation de la double authentification par e-mail.
+
+/// details | Liste des justificatifs
 
 |Type de compte OVHcloud|Justificatifs à fournir|
 |---|---|
@@ -222,14 +251,22 @@ Avant de nous contacter, vous devez réunir les éléments justificatifs suivant
 |Association|- Photocopie recto-verso d'une pièce d'identité (CNI, permis de conduire, passeport) du président de l'association<br><br>- Copie du dernier PV d'assemblée générale de l'association<br><br>- Copie du récépissé de déclaration de l'association<br><br>- Attestation sur papier à en-tête indiquant que le titulaire du compte OVHcloud vous donne le droit de gérer le compte et ses services|
 |Profession libérale|- Photocopie recto-verso d'une pièce d'identité (CNI, permis de conduire, passeport) au nom du titulaire du compte OVHcloud<br><br>- Avis de situation Sirene INSEE|
 
-Une fois vos justificatifs réunis, contactez le support OVHcloud par téléphone :
+///
 
-- Canada : 1-855-684-5463.
-- France : 1007 (composez le 0033 9 72 10 10 07 depuis une ligne en dehors de la France).
+En cas de difficultés, après avoir réuni vos documents justificatifs, vous pouvez contacter le support OVHcloud par téléphone :
+
+- Canada : 1-855-684-5463. (ouvert 24h/24, 7j/7)
+- France : 1007 (composez le 0033 9 72 10 10 07 depuis une ligne en dehors de la France) (ouvert de 09h à 18h du lundi au vendredi).
+
+> [!warning]
+>
+> Vos documents doivent nous être envoyés depuis une adresse e-mail **enregistrée sur votre compte OVHcloud**.
 
 Après vérification de vos documents, un conseiller pourra désactiver manuellement la double authentification sur votre compte OVHcloud et reviendra vers vous une fois cette action effectuée.
 
-A des fins de sécurité, une fois l'accès à votre compte rétabli, nous vous recommandons de réactiver la double authentification dès que possible.
+> [!success]
+>
+> À des fins de sécurité, une fois l'accès à votre compte rétabli, nous vous recommandons de réactiver la double authentification dès que possible.
 
 ## Aller plus loin
 

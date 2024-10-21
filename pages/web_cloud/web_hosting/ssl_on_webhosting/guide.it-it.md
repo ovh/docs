@@ -83,8 +83,11 @@ Prima di procedere con questa configurazione, assicurati che lo step precedente 
 >
 > Prima di proseguire, assicurati anche che il record o i record multisito per i quali attivi l'opzione SSL puntino verso l'indirizzo IP dell'hosting Web. Questa configurazione viene proposta automaticamente quando aggiungi o modifichi un record multisito, ma deve essere fatta manualmente per un dominio non gestito nel tuo Spazio Cliente.<br>
 > - Nella scheda `Informazioni generali`{.action}, clicca su `IPv4` e seleziona l'indirizzo IP del tuo hosting.
+>
 > ![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4.png){.thumbnail}
+>
 > - Configura la zona DNS del dominio dichiarato su multisito, dalla sezione `Domini`{.action}, nella scheda `Zona DNS`{.action}. Modifica o aggiungi un record di tipo `A` corrispondente al tuo record multisito e inserisci l'indirizzo IP del tuo hosting nella `Cible`.
+>
 > ![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/modify-an-entry.png){.thumbnail}
 >
 > Per maggiori informazioni, consulta le nostre guide [sulla configurazione di un record multisito](/pages/web_cloud/web_hosting/multisites_configure_multisite) o su [la configurazione di una zona DNS](/pages/web_cloud/domains/dns_zone_edit).

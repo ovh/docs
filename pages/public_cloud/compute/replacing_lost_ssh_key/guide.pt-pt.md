@@ -31,7 +31,7 @@ No entanto, pode ligar-se à sua instância através do modo rescue da OVHcloud,
 
 ### Etapa 1: Criar um novo par de chaves
 
-Crie um novo par de chaves SSH no seu dispositivo local, seguindo as instruções da primeira parte do [guia de criação de uma chave SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
+Crie um novo par de chaves SSH no seu dispositivo local, seguindo as instruções da primeira parte do [guia de criação de uma chave SSH](/pages/public_cloud/compute/creating-ssh-keys-pci).
 
 ### Etapa 2: aceder à sua instância em modo rescue
 

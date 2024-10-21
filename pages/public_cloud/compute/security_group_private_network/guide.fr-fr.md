@@ -162,4 +162,4 @@ openstack port set --security-group private 5be009d9-fc2e-4bf5-a152-dab52614b02d
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

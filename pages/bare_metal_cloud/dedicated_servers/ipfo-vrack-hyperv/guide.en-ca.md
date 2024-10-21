@@ -10,11 +10,11 @@ updated: 2021-02-25
 
 ## Requirements
 
-- A [vRack](https://www.ovh.com/ca/en/solutions/vrack/) compatible dedicated server with Windows Server installed
+- A [vRack](/links/network/vrack) compatible dedicated server with Windows Server installed
 - An ISO for the OS that will be installed on your VM (CentOS 7 will be used as an example in this guide)
 - A vRack delivered to your OVHcloud account
 - An Additional IP block of 4 or more IPs
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
 > This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-ca/about/).
@@ -144,4 +144,4 @@ You can also see in the example below how the `ifcfg-eth0` file should appear.
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

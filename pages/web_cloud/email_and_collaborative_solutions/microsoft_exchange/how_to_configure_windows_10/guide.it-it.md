@@ -1,18 +1,18 @@
 ---
-title: 'Configurare un account Exchange con l’applicazione Posta per Windows 10'
-excerpt: 'Scopri come configurare un account Exchange con l’applicazione Posta per Windows 10'
-updated: 2018-04-04
+title: 'Exchange - Configura il tuo account di posta elettronica su Posta per Windows'
+excerpt: 'Scopri come configurare un account Exchange con l’applicazione Posta per Windows'
+updated: 2024-10-09
 ---
 
 ## Obiettivo
 
 Gli account Exchange possono essere configurati su client di posta compatibili, per permetterti di utilizzare il tuo account email dal dispositivo che preferisci.
 
-**Scopri come configurare un account Exchange con l’applicazione Posta per Windows 10.**
+**Scopri come configurare un account Exchange con l’applicazione Posta per Windows.**
 
 ## Prerequisiti
 
-- Disporre di un’offerta [Exchange](https://www.ovhcloud.com/it/emails/){.external}
+- Disporre di un’offerta [Exchange](/links/web/emails)
 - Aver installato l’applicazione Posta sul proprio dispositivo
 - Disporre delle credenziali associate all’account email da configurare
 
@@ -38,7 +38,7 @@ Inserisci le informazioni richieste:
 |Password|Digita la password associata all’indirizzo email|
 |Nome utente|Inserisci l’indirizzo email completo|
 |Settore|Lasciare il campo vuoto|
-|Server|Seleziona il server che ospita il tuo servizio Exchange Puoi ritrovarlo nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} nella scheda `Informazioni generali`{.action} del servizio Exchange corrispondente, poi sotto la voce `Connessione`{.action}|
+|Server|Seleziona il server che ospita il tuo servizio Exchange Puoi ritrovarlo nel tuo [Spazio Cliente OVHcloud](/links/manager) nella scheda `Informazioni generali`{.action} del servizio Exchange corrispondente, poi sotto la voce `Connessione`{.action}|
 |Il server richiede una connessione cifrata (SSL)|Non rimuovere la spunta da questa casella|
 |Nome dell’account|Inserisci un nome che ti permetterà di riconoscere questo account tra quelli presenti nella tua applicazione Posta|
 
@@ -54,12 +54,16 @@ Per verificare la corretta configurazione dell’account esegui un test di invio
 
 Una volta configurato l’indirizzo email, non ti resta che utilizzarlo: da questo momento puoi infatti inviare e ricevere messaggi.
 
-OVHcloud ti propone un'applicazione Web che dispone di [funzionalità collaborative](https://www.ovhcloud.com/it/emails/){.external}. Accedi a questo link <https://www.ovhcloud.com/it/mail/> utilizzando le credenziali del tuo account.
+OVHcloud ti propone un'applicazione Web che dispone di [funzionalità collaborative](/links/web/emails). Accedi a questo link [Webmail](/links/web/email) utilizzando le credenziali del tuo account.
 
 ## Per saperne di più
 
-[Configurare un indirizzo email incluso nella soluzione MX Plan o in una soluzione di hosting Web con l’applicazione Posta per Windows 10](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10){.external}
+> [!primary]
+>
+> Per ulteriori informazioni sulla configurazione di un indirizzo e-mail dal client di Posta in Windows, vedere [Guida in linea di Microsoft](https://support.microsoft.com/it-it/office/configurare-la-posta-elettronica-nell-app-posta-7ff79e8b-439b-4b47-8ff9-3f9a33166c60).
 
-[Configurare un account Email Pro con l’applicazione Posta per Windows 10](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10){.external} (in inglese)
+[Configurare un indirizzo email incluso nella soluzione MX Plan o in una soluzione di hosting Web con l’applicazione Posta per Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10)
+
+[Configurare un account Email Pro con l’applicazione Posta per Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10) (in inglese)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

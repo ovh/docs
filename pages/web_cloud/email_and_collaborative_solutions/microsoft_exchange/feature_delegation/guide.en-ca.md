@@ -68,7 +68,7 @@ This will work differently depending on the permissions you have delegated, and 
 
 - **From the Outlook Web App (OWA)**
 
-Log in via the [OVHcloud webmail](https://www.ovh.co.uk/mail) using the credentials for the email account that has been delegated permissions. Once you are logged in, right-click on the name of the account in the menu on the left-hand side, then select `Add shared folder`{.action}.
+Log in via the [OVHcloud webmail](/links/web/email) using the credentials for the email account that has been delegated permissions. Once you are logged in, right-click on the name of the account in the menu on the left-hand side, then select `Add shared folder`{.action}.
 
 In the window that pops up, enter the name for the account that holds the delegated permissions, then click `Add`{.action}. The account will then appear in the left-hand menu, and you can view its content.
 
@@ -88,7 +88,7 @@ Next, click on `More Settings`{.action}. In the new window, go to the `Advanced`
 
 - **From the Outlook Web App (OWA)**
 
-Log in via the [OVHcloud webmail](https://www.ovh.co.uk/mail) using the credentials for the email account that has been delegated permissions. Once you have logged in, start editing a new email by clicking `+ New`{.action}.
+Log in via the [OVHcloud webmail](/links/web/email) using the credentials for the email account that has been delegated permissions. Once you have logged in, start editing a new email by clicking `+ New`{.action}.
 
 In the zone that appears, click on the three dots, then `Show From`{.action}. Then click on the `From`{.action} button, and select the email address you want to appear as the sender (i.e. the address you have delegated that permission for). If the address is not listed, delete the one that is already displayed, and enter the address you want to appear.
 
@@ -110,7 +110,7 @@ At this stage, you are now ready to write and send your email.
 
 - **From the Outlook Web App (OWA)**
 
-Log in via the [OVHcloud webmail](https://www.ovh.co.uk/mail) using the credentials for the email account that has been delegated permissions. Once you have logged in, start editing a new email by clicking `+ New`{.action}.
+Log in via the [OVHcloud webmail](/links/web/email) using the credentials for the email account that has been delegated permissions. Once you have logged in, start editing a new email by clicking `+ New`{.action}.
 
 In the zone that appears, click on the three dots, then `Show From`{.action}. Then click on the `From`{.action} button, and select the email address you want to appear as the sender (i.e. the address you have delegated permissions for). If the address is not listed, delete the one that is already displayed, and enter the address you want to appear.
 

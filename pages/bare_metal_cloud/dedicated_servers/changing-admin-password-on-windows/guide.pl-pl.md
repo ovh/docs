@@ -23,8 +23,8 @@ Podczas instalacji lub reinstalacji systemu operacyjnego Windows otrzymujesz has
 
 ## Wymagania początkowe
 
-- Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/){.external} z zainstalowanym systemem Windows
-- Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal){.external} z zainstalowanym systemem Windows
+- Dostęp do [panelu klienta OVHcloud](/links/manager){.external}.
 
 ## W praktyce
 
@@ -238,7 +238,7 @@ Write hive files? (y/n) [n]: tam
 
 ### Etap 4: restart serwera 
 
-Zacznij od zastąpienia netbootu **Uruchom z dysku twardego** w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) (patrz [Etap 1](./#etap-1-restart-serwera-w-trybie-rescue)). 
+Zacznij od zastąpienia netbootu **Uruchom z dysku twardego** w Panelu [klienta OVHcloud](/links/manager) (patrz [Etap 1](./#etap-1-restart-serwera-w-trybie-rescue)). 
 
 Wróć do wiersza poleceń, odmontuj partycję i zrestartuj serwer, używając następujących poleceń:
 
@@ -262,7 +262,7 @@ System is going down for reboot NOW!
 
 ### Etap 5: zdefiniowanie nowego hasła (IPMI)
 
-W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) przejdź do zakładki `IPMI`{.action}, aby otworzyć sesję KVM.
+W [Panelu klienta OVHcloud](/links/manager) przejdź do zakładki `IPMI`{.action}, aby otworzyć sesję KVM.
 
 ![IPMI](images/adminpw_win_03.png){.thumbnail}
 
@@ -308,7 +308,7 @@ Więcej informacji o trybie Rescue znajdziesz w [tym przewodniku](/pages/bare_me
 
 #### Etap 2: usuń aktualne hasło
 
-W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) przejdź do zakładki `IPMI`{.action}, aby otworzyć sesję KVM.
+W [Panelu klienta OVHcloud](/links/manager) przejdź do zakładki `IPMI`{.action}, aby otworzyć sesję KVM.
 
 ![IPMI](images/adminpw_win_03.png){.thumbnail}
 
@@ -330,7 +330,7 @@ Serwer musi zostać zrestartowany.
 
 #### Etap 3: zrestartuj serwer 
 
-Zacznij od zastąpienia netbootu **Uruchom z dysku twardego** w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) (patrz [Etap 1](./#etap-1-restart-serwera-w-trybie-rescue)).
+Zacznij od zastąpienia netbootu **Uruchom z dysku twardego** w Panelu [klienta OVHcloud](/links/manager) (patrz [Etap 1](./#etap-1-restart-serwera-w-trybie-rescue)).
 
 W oknie KVM wybierz opcję zatrzymania `Wykonaj restart`{.action} za pomocą przycisku Windows "Uruchom" w lewym dolnym rogu.
 

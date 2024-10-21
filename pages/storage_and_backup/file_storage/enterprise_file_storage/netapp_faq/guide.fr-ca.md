@@ -1,7 +1,7 @@
 ---
 title: Enterprise File Storage - FAQ
 excerpt: 'FAQ sur la solution Entreprise File Storage'
-updated: 2022-03-21
+updated: 2024-09-24
 ---
 
 ## Objectif
@@ -70,7 +70,7 @@ Nous vous invitons à joindre notre service commercial ou notre support techniqu
 
 ### Quelles sont les capacités de stockage disponibles ?
 
-La taille minimum d’un service est de 1TiB et la taille maximum est de 58TiB. La granularité est de 1TiB.
+La taille minimum d’un service est de 1TB et la taille maximum est de 58TB. La granularité est de 1TB.
 
 ### Combien de services Enterprise File Storage puis-je créer depuis mon compte client ?
 
@@ -78,13 +78,13 @@ Il n’y a pas de limite de nombre de services par compte client.
 
 ### Quel est le nombre de volumes maximum par service ?
 
-Il est possible de créer jusqu’à 10 volumes maximum par service. La taille minimum est de 100GiB et la taille maximum est de 29TiB.
+Il est possible de créer jusqu’à 10 volumes maximum par service. La taille minimum est de 100GB et la taille maximum est de 29TB.
 
 ### Quel niveau de performance est disponible avec Enterprise File Storage ?
 
-Enteprise File Storage est fourni avec un débit garanti de 64Mo/s par TiB et de 4000 IOPS par TiB.
+Enteprise File Storage est fourni avec un débit garanti de 64Mo/s par TB et de 4000 IOPS par TB.
 
-Par exemple, lors de la livraison d'un pool de 10 TiB, vous bénéficiez d'une bande passante de 640Mo/s et de 40000 IOPS.
+Par exemple, lors de la livraison d'un pool de 10 TB, vous bénéficiez d'une bande passante de 640Mo/s et de 40000 IOPS.
 
 ## Snapshots et sauvegardes
 
@@ -98,7 +98,7 @@ Les utilisateurs sont responsables de la gestion de leurs sauvegardes (outil et 
 
 ### Les snapshots sont-ils compris dans la capacité d’un service ?
 
-Un minimum de 5% de l’espace de stockage est attribué aux snapshots. Par exemple, sur un service de 5TiB, 250GiB sont réservés pour les snapshots.
+Un minimum de 5% de l’espace de stockage est attribué aux snapshots. Par exemple, sur un service de 5TB, 250GB sont réservés pour les snapshots.
 
 ### Quel est le nombre maximum de snapshots par service ?
 
@@ -128,7 +128,7 @@ Il n’existe pas encore de métriques intégrées pour suivre l’utilisation d
 
 ### Quel type de tarification est lié au service ?
 
-Enterprise File Storage est un service facturé mensuellement au volume (de 1 à 58 To par paliers de 1 To). Il est également possible, optionnellement, de s'engager sur une durée d'utilisation du service (12, 24 ou 36 mois).
+Enterprise File Storage est un service facturé mensuellement au volume (de 1 à 58 TB par paliers de 1 TB). Il est également possible, optionnellement, de s'engager sur une durée d'utilisation du service (12, 24 ou 36 mois).
 
 ## Aller plus loin
 

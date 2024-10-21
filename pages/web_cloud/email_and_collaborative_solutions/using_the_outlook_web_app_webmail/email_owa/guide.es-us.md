@@ -1,18 +1,18 @@
 ---
 title: 'Utilizar una dirección de correo desde Outlook en la Web'
 excerpt: 'Cómo utilizar una dirección de correo electrónico desde el webmail Outlook en la Web'
-updated: 2021-06-25
+updated: 2024-09-03
 ---
 
 ## Objetivo
 
-Con las soluciones de correo de OVHcloud puede enviar y recibir correo utilizando el dispositivo y el cliente de correo que usted desee. Para poder iniciar sesión en una cuenta desde cualquier lugar a través de un navegador, OVHcloud ofrece un cliente de correo online llamado Outlook Web App (OWA). Nuestra [página de inicio de sesión de webmail](https://www.ovh.com/world/es/mail/) es el único punto de acceso al OWA correspondiente para todas las cuentas activas de correo en MX Plan, Email Pro y Hosted Exchange.
+Con las soluciones de correo de OVHcloud puede enviar y recibir correo utilizando el dispositivo y el cliente de correo que usted desee. Para poder iniciar sesión en una cuenta desde cualquier lugar a través de un navegador, OVHcloud ofrece un cliente de correo online llamado Outlook Web App (OWA). Nuestra [página de inicio de sesión de webmail](/links/web/email) es el único punto de acceso al OWA correspondiente para todas las cuentas activas de correo en MX Plan, Email Pro y Hosted Exchange.
 
 **En esta guía aprenderá a realizar las acciones más habituales con su dirección de correo en la interfaz de OWA.**
 
 ## Requisitos
 
-- Tener una solución de correo electrónico de OVHcloud configurada (**solución MX Plan**, disponible como parte de nuestros [planes de hospedaje web](https://www.ovhcloud.com/es/web-hosting/) o [**Hosted Exchange**](https://www.ovhcloud.com/es/emails/hosted-exchange/))
+- Tener una solución de correo electrónico de OVHcloud configurada (**solución MX Plan**, disponible como parte de nuestros [planes de hospedaje web](/links/web/hosting) o [**Hosted Exchange**](/links/web/emails-hosted-exchange))
 - Tener las credenciales de acceso de la dirección de correo electrónico que quiere configurar
 
 ## Procedimiento
@@ -26,11 +26,17 @@ Esta guía le permitirá comprender mejor las tareas más habituales de la cuent
 
 ### 1. Acceder a OWA
 
-Para acceder al webmail de OWA con su dirección de correo electrónico, diríjase a la [página de inicio de sesión](https://www.ovh.com/world/es/mail/). Introduzca su dirección de correo electrónico completa y su contraseña, y haga clic en el botón `Iniciar sesión`{.action}.
+Para acceder al webmail de OWA con su dirección de correo electrónico, diríjase a la [página de inicio de sesión](/links/web/email). Introduzca su dirección de correo electrónico completa y su contraseña, y haga clic en el botón `Iniciar sesión`{.action}.
 
 ![useowa](images/use-owa-step1.png){.thumbnail}
 
-Si es la primera vez que accede a esta dirección de correo a través del webmail de OWA, se le pedirá que configure el idioma y la zona horaria. Haga clic en `Guardar`{.action} para continuar.
+Si es la primera vez que inicia sesión en OWA con esta dirección de correo electrónico, se le pedirá que especifique el idioma de la interfaz y la zona horaria. Haga clic en `Guardar`{.action} para continuar.
+
+> [!primary]
+>
+> Las zonas horarias se enumeran según [el estándar UTC (hora universal coordinada)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), no por orden alfabético de ciudades.
+>
+> **Ejemplo** : Para Europa Occidental, se trata de UTC +1 (Bruselas, Copenhague, Madrid, París).
 
 ![useowa](images/use-owa-step2.png){.thumbnail}
 
@@ -100,7 +106,7 @@ Para crear una carpeta nueva, haga clic derecho sobre el nombre de su dirección
 
 #### Crear reglas de la bandeja de entrada
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xnq6wvANUFs?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/xnq6wvANUFs?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Para gestionar las reglas, haga clic en el símbolo de engranaje en la parte superior, y después en`Opciones`{.action}.
 
@@ -120,7 +126,7 @@ Para obtener instrucciones más detalladas sobre la creación de reglas de la ba
 
 #### Bloquear un remitente
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/2jia2s1_oIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/2jia2s1_oIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Haga clic en el símbolo de engranaje en la esquina superior derecha y seleccione `Opciones`{.action}. En la columna de la izquierda, siga el árbol "Correo" en "Cuentas" > "Bloquear o autorizar".
 
@@ -146,7 +152,7 @@ En la página que aparece, puede añadir nuevos contactos, crear una lista de co
 
 ### Cambiar la contraseña
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xnq6wvANUFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/xnq6wvANUFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Puede cambiar la contraseña de su cuenta cuando haya iniciado sesión en OWA. Para ello, haga clic en el símbolo de engranaje en la parte superior, y después en`Opciones`{.action}.
 

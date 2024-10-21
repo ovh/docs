@@ -12,14 +12,14 @@ Ta funkcja programu Exchange umożliwia udzielanie dostępu do Twoich kalendarzy
 
 ## Wymagania początkowe
 
-- skonfigurowane [rozwiązanie OVHcloud Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/)
+- skonfigurowane [rozwiązanie OVHcloud Exchange](/links/web/emails-hosted-exchange)
 - dostęp do konta Exchange (adres e-mail i hasło)
 
 ## W praktyce
 
 ### Krok 1: wybór kalendarza do udostępnienia
 
-Zaloguj się na konto Exchange przy użyciu interfejsu [OVHcloud webmail](https://www.ovh.pl/mail/). Przejdź do interfejsu „Kalendarz”, klikając symbol „uruchamiania aplikacji” w lewym górnym rogu i wybierając ikonę `Kalendarz`{.action}.
+Zaloguj się na konto Exchange przy użyciu interfejsu [OVHcloud webmail](/links/web/email). Przejdź do interfejsu „Kalendarz”, klikając symbol „uruchamiania aplikacji” w lewym górnym rogu i wybierając ikonę `Kalendarz`{.action}.
 
 ![sharecalendar](images/exchange-calendars-step1.png){.thumbnail}
 

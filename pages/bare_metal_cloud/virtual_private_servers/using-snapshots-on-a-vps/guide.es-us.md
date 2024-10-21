@@ -1,7 +1,7 @@
 ---
 title: "Uso de instantáneas Snapshots en un servidor virtual privado (VPS)"
 excerpt: "Cómo activar y usar la opción Instantáneas  en el panel de control de OVHcloud"
-updated: 2024-04-15
+updated: 2024-09-18
 ---
 
 > [!primary]
@@ -21,20 +21,25 @@ Antes de aplicar las opciones de copia de seguridad, le recomendamos que consult
 
 ## Requisitos
 
-- Tener acceso al [panel de control de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Tener acceso al [panel de control de OVHcloud](/links/manager).
 - Tener un [servicio de servidor virtual privado (VPS)](https://www.ovhcloud.com/es/vps/) de OVHcloud configurado.
 
 ## Procedimiento
 
-Conéctese al [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en la sección `Servidores Privados Virtuales`{.action}.
+Conéctese al [Panel de configuración de OVHcloud](/links/manager), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en la sección `Servidores Privados Virtuales`{.action}.
 
 ### Paso 1: Suscribirse a la opción «Instantáneas»
 
-Acceda a la pestaña `Inicio`{.action} y desplácese hacia abajo hasta el cuadro «Resumen de opciones». Si el estado de «Snapshot» ya es «Activado», vaya directamente al paso 2. Si «Snapshot» todavía no está activado, haga clic en `...`{.action} junto a la opción «Instantáneas» y, seguidamente, en `Contratar`{.action} (en el menú contextual).
+Acceda a la pestaña `Inicio`{.action} y desplácese hacia abajo hasta el cuadro **Resumen de opciones**  
+. Si el estado de "Snapshot" ya es "Activado", vaya directamente al paso 2. Si "Snapshot" todavía no está activado, haga clic en `...`{.action} junto a la opción "Snapshot" y, seguidamente, en `Contratar`{.action} (en el menú contextual).
 
 ![snapshotvps](images/snapshot_vps_step1b.png){.thumbnail}
 
 En el siguiente paso, preste atención a la información sobre los precios y, a continuación, haga clic en `Contratar`{.action}. Se le guiará por el proceso de contratación y recibirá un mensaje de correo electrónico de confirmación.
+
+Para dar de baja la opción de servicio, haga clic en el botón `...`{.action} situado junto a "Snapshot" y seleccione `Dar de baja`{.action} en el menú contextual.
+
+![snapshotvps](images/snapshot_vps_cancel.png){.thumbnail}
 
 ### Paso 2: Tomar una instantánea
 
@@ -63,7 +68,7 @@ El snapshot actual puede recuperarse mediante un enlace de descarga. Haga clic e
 
 > [!primary]
 >
-> Si su VPS proviene de una antigua gama, es posible que reciba un mensaje de error, ya que la opción no está disponible en los antiguos VPS. Su VPS procede de una antigua gama si su modelo de denominación es similar a: *vpsXXXX.ovh.net* (donde *X* representa un número). Puede consultar esta referencia del servidor en la pestaña `Inicio`{.action} del [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+> Si su VPS proviene de una antigua gama, es posible que reciba un mensaje de error, ya que la opción no está disponible en los antiguos VPS. Su VPS procede de una antigua gama si su modelo de denominación es similar a: *vpsXXXX.ovh.net* (donde *X* representa un número). Puede consultar esta referencia del servidor en la pestaña `Inicio`{.action} del [área de cliente de OVHcloud](/links/manager).
 >
 
 En la nueva ventana, haga clic en `Generar el enlace de descarga`{.action}.

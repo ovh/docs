@@ -17,14 +17,14 @@ Konto **współdzielone** to skrzynka e-mail współdzielona między kilka kont 
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
-- Wykupienie usługi [Exchange OVHcloud](https://www.ovhcloud.com/pl/emails/hosted-exchange/).
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
+- Wykupienie usługi [Exchange OVHcloud](/links/web/emails-hosted-exchange).
 
 ## W praktyce
 
 ### Dodaj konto współdzielone
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Przejdź do sekcji `Web Cloud`{.action} i wybierz usługę w `Microsoft`{.action}, a następnie `Exchange`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager). Przejdź do sekcji `Web Cloud`{.action} i wybierz usługę w `Microsoft`{.action}, a następnie `Exchange`{.action}.
 
 Wybierz kartę `Konta współdzielone`{.action} w menu poziomym i kliknij `Dodaj konto współdzielone`{.action}.
 
@@ -83,7 +83,7 @@ W naszym przykładzie udostępniamy konta **guide-exchange@** i **test@** dostę
 
 ### Korzystanie z konta współdzielonego w OWAguide (webmail)
 
-Zaloguj się do Webmail Exchange (OWA) na adres <https://www.ovh.pl/mail/> z kontem e-mail uprawnionym do dostępu do konta współdzielonego.
+Zaloguj się do Webmail Exchange (OWA) na adres [Webmail](/links/web/email) z kontem e-mail uprawnionym do dostępu do konta współdzielonego.
 <br>W naszym przykładzie zalogujemy się do konta **guide-exchange@**.
 
 Po zalogowaniu, w kolumnie po lewej stronie, kliknij prawym przyciskiem myszy główny drzewo Twojego konta e-mail, a następnie kliknij `Dodaj współdzielony`{.action} katalog. 

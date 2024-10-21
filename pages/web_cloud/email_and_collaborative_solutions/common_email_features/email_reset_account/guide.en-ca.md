@@ -16,8 +16,8 @@ You want to:
 
 ## Requirements
 
-- A preconfigured OVHcloud email solution, such as [**Hosted Exchange**](https://www.ovhcloud.com/en-ca/emails/hosted-exchange/) or **MX Plan** (available with a [web hosting plan](https://www.ovhcloud.com/en-ca/web-hosting/))
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) as the Admin contact of the email service concerned (section `Web Cloud`{.action})
+- A preconfigured OVHcloud email solution, such as [**Hosted Exchange**](/links/web/emails-hosted-exchange) or **MX Plan** (available with a [web hosting plan](/links/web/hosting))
+- Access to the [OVHcloud Control Panel](/links/manager) as the Admin contact of the email service concerned (section `Web Cloud`{.action})
 
 ## Instructions <a name="instructions"></a>
 
@@ -51,6 +51,6 @@ Select the tab corresponding to your email solution:
 
 [Managing the billing of your Exchange accounts](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange)
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ca/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

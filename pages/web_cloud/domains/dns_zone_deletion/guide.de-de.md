@@ -1,7 +1,7 @@
 ---
 title: "Wie lösche ich eine OVHcloud DNS-Zone?"
 excerpt: "Diese Anleitung erklärt, wie Sie eine DNS-Zone für Ihre Domain über Ihr OVHcloud Kundencenter"
-updated: 2024-06-26
+updated: 2024-10-03
 ---
 
 > [!primary]
@@ -36,6 +36,11 @@ So kann es beispielsweise vorkommen, dass Sie eine DNS-Zone für Ihren Domainnam
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 - Sie haben eine DNS-Zone in Ihrem OVHcloud Kundencenter.
 - Sie verfügen über ausreichende Rechte für die zu löschende DNS-Zone. Weitere Informationen finden Sie in unserer Anleitung „[Verwaltung der Kontakte](/pages/account_and_service_management/account_information/managing_contacts)“.
+
+> [!primary]
+>
+> DNS-Zone löschen löscht nicht den zugehörigen Domainnamen. Sie verlieren Ihren Domainnamen also nicht, wenn Sie dessen DNS-Zone löschen.
+>
 
 ## In der praktischen Anwendung
 

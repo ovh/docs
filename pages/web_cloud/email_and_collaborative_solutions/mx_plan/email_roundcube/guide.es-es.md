@@ -15,7 +15,7 @@ Con el MX Plan de OVHcloud, puede enviar y recibir mensajes de correo desde un p
 
 ## Requisitos
 
-- Disponer de una solución de correo **MX Plan** de OVHcloud, [incluida](https://www.ovhcloud.com/es-es/web-hosting/) con un [Alojamiento gratuito 100M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/) o contratada por separado como solución autónoma.
+- Disponer de una solución de correo **MX Plan** de OVHcloud, [incluida](/links/web/hosting) con un [Alojamiento gratuito 100M](/links/web/domains-free-hosting) o contratada por separado como solución autónoma.
 - Disponer de los datos de conexión a la dirección de correo electrónico MX Plan que quiera consultar. Para más información, consulte nuestra guía Primeros [pasos con la solución MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
 
 ## Procedimiento
@@ -55,7 +55,7 @@ Con el MX Plan de OVHcloud, puede enviar y recibir mensajes de correo desde un p
 
 ### Conectarse al webmail Roundcube <a name="roundcube-connexion"></a>
 
-Acceda a la página <https://www.ovh.com/es/mail/>. Introduzca una dirección de correo electrónico y la contraseña, y haga clic en `Conexión`{.action}. 
+Acceda a la página [Webmail](/links/web/email). Introduzca una dirección de correo electrónico y la contraseña, y haga clic en `Conexión`{.action}. 
 
 ![hosting](images/webmail_login.png){.thumbnail}
 
@@ -346,11 +346,11 @@ Para añadir una respuesta, haga clic en el botón `+`{.action} situado en la pa
 
 ### Añadir un contestador o respuesta automática <a name="automatic-respond"></a>
 
-Desea añadir una respuesta automática a su dirección de correo cuando esté ausente o no esté disponible. Esta función no puede activarse desde el webmail, sino desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), en la interfaz de gestión de sus direcciones de correo. Consulte nuestra guía "[Crear un contestador para su dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses)".
+Desea añadir una respuesta automática a su dirección de correo cuando esté ausente o no esté disponible. Esta función no puede activarse desde el webmail, sino desde el [área de cliente de OVHcloud](/links/manager), en la interfaz de gestión de sus direcciones de correo. Consulte nuestra guía "[Crear un contestador para su dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses)".
 
 ### Cambiar la contraseña de su dirección de correo <a name="password"></a>
 
-Para cambiar la contraseña de una dirección de correo electrónico, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) desde el área de cliente de OVHcloud. Para más información, consulte nuestra guía "[Cambiar la contraseña de una dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password/)".
+Para cambiar la contraseña de una dirección de correo electrónico, conéctese al [área de cliente de OVHcloud](/links/manager) desde el área de cliente de OVHcloud. Para más información, consulte nuestra guía "[Cambiar la contraseña de una dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password/)".
 
 ### Redacción de un email <a name="email-writing"></a>
 

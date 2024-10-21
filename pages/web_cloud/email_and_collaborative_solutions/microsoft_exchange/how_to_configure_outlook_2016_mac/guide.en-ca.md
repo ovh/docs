@@ -1,7 +1,7 @@
 ---
-title: 'Exchange - Configure your email account on Outlook for macOS'
+title: 'Exchange - Configuring your email address in Outlook for macOS'
 excerpt: 'Find out how to configure your Exchange account in Outlook for macOS.'
-updated: 2018-06-01
+updated: 2024-10-09
 ---
 
 ## Objective
@@ -10,13 +10,13 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 
 ## Requirements
 
-- You must have an [Exchange](https://www.ovhcloud.com/en-ca/emails/hosted-exchange/){.external} solution.
+- You must have an [Exchange](/links/web/emails-hosted-exchange) solution.
 - You must have Microsoft Outlook installed on your Mac.
 - You need to have the required credentials for the email address you would like to configure.
 
 > [!primary]
 >
-> Are you using Outlook for Windows? Read our guide: [Configuring your Exchange account in Outlook for Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016){.external}.
+> Are you using Outlook for Windows? Read our guide: [Configuring your Exchange account in Outlook for Windows](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016).
 >
 
 ## Instructions
@@ -39,7 +39,7 @@ Enter your email address, then click `Continue`{.action}. If you are asked to ch
 |Mail address|Enter a name that will distinguish this account from any other accounts added in Outlook.|
 |DOMAIN\username or email address|Enter your full email address.|
 |Password|Enter the password for your email address.|
-|Server|Depending on the DNS configuration for your domain name, you may not need to enter the server. If you do, enter the details for the server your Exchange service is hosted on. You will find these details in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external} by going to the `General information`{.action} tab for the Exchange service concerned, then the `Connection`{.action} section.|
+|Server|Depending on the DNS configuration for your domain name, you may not need to enter the server. If you do, enter the details for the server your Exchange service is hosted on. You will find these details in your [OVHcloud Control Panel](/links/manager) by going to the `General information`{.action} tab for the Exchange service concerned, then the `Connection`{.action} section.|
 
 Once you have entered this information, click `Add account`{.action}. If the information is correct, Outlook will successfully connect to the account.
 
@@ -54,5 +54,9 @@ Once you have configured your email address, you can start using it! You can now
 OVHcloud offers a web application that includes various collaborative features, which can be accessed at <https://ex.mail.ovh.ca/>. You can log in using your email credentials.
 
 ## Go further
+
+> [!primary]
+>
+> For more information on configuring an email address from the Outlook app on macOS, see [the Microsoft Help Center](https://support.microsoft.com/en-gb/office/add-an-email-account-to-outlook-for-mac-6aeec61b-86af-40af-8ffe-985d0fc82ddb).
 
 Join our community of users on <https://community.ovh.com/en/>.

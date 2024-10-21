@@ -17,14 +17,14 @@ Una **cuenta compartida** es una cuenta de correo compartida entre varias cuenta
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
-- Haber contratado una solución [Exchange de OVHcloud](https://www.ovhcloud.com/es/emails/hosted-exchange/).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
+- Haber contratado una solución [Exchange de OVHcloud](/links/web/emails-hosted-exchange).
 
 ## Procedimiento
 
 ### Añadir una cuenta compartida
 
-Inicie sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), Acceda a la sección `Web Cloud`{.action} y seleccione su servicio, en `Microsoft`{.action}, luego en `Exchange`{.action}.
+Inicie sesión en el [área de cliente de OVHcloud](/links/manager), Acceda a la sección `Web Cloud`{.action} y seleccione su servicio, en `Microsoft`{.action}, luego en `Exchange`{.action}.
 
 Seleccione la pestaña `Cuentas compartidas`{.action} en el menú horizontal y haga clic en `Añadir cuenta compartida`{.action}.
 
@@ -83,7 +83,7 @@ En nuestro ejemplo, permitimos que las cuentas **guia-exchange@** y **test@** te
 
 ### Uso de la cuenta compartida desde OWA (webmail)
 
-Conéctese al webmail Exchange (OWA) en la dirección <https://www.ovh.es/mail/> con una cuenta de correo con derecho de acceso a la cuenta compartida.
+Conéctese al webmail Exchange (OWA) en la dirección [Webmail](/links/web/email) con una cuenta de correo con derecho de acceso a la cuenta compartida.
 <br>En nuestro ejemplo, nos conectamos con la cuenta **guia-exchange@**.
 
 Una vez que se haya conectado, haga clic derecho en el árbol principal de su dirección de correo electrónico y seleccione `Añadir carpeta compartida`{.action}. 

@@ -12,7 +12,7 @@ OVHcloud offers Public Cloud customers pre-installed application images for quic
 
 ## Requirements
 
-- A [Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps#step-3-creating-an-instance) in your OVHcloud account
+- A [Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps) in your OVHcloud account
 
 ## Instructions
 
@@ -20,7 +20,7 @@ OVHcloud offers Public Cloud customers pre-installed application images for quic
 
 #### Install your chosen pre-installed application
 
-Using the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) / API or the OpenStack Horizon / API, install your chosen application on your Public Cloud instance.
+Using the [OVHcloud Control Panel](/links/manager) / API or the OpenStack Horizon / API, install your chosen application on your Public Cloud instance.
 
 #### Application login details
 
@@ -186,6 +186,6 @@ No further steps are necessary to complete the first configuration of this appli
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

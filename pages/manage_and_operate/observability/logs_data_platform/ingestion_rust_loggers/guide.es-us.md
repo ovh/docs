@@ -1,11 +1,11 @@
 ---
 title: Pushing logs with a logging library - Rust - gelf_logger and log4rs-gelf
-updated: 2024-07-19
+updated: 2024-08-07
 ---
 
 ## Objective
 
-This guide will explain how to push your logs to Logs Data Platform using Rust.
+This guide will explain how to push your logs to Logs Data Platform using Rust with two differents libraries. Use the one you prefer.
 
 Rust has a logging implementation ([log](https://docs.rs/log/*/log/){.external}) which is widely used. OVHcloud has implemented this system to support the [GELF format](https://go2docs.graylog.org/4-x/getting_in_log_data/gelf.html?tocpath=Getting%20in%20Log%20Data%7CLog%20Sources%7CGELF%7C_____0#GELFPayloadSpecification#gelf-payload-specification){.external}:
 
@@ -17,20 +17,21 @@ Those loggers will:
 - serialize log entries using the serde_gelf crate.
 - bufferize the result into memory.
 - batch send over network using TCP/TLS.
-- a facility to ensure fields suits the [LDP naming conventions](/pages/manage_and_operate/observability/logs_data_platform/getting_started_field_naming_convention).
+- ensure fields follow the [LDP naming conventions](/pages/manage_and_operate/observability/logs_data_platform/getting_started_field_naming_convention).
 
 ## Requirements
 
 To complete this guide you will need:
 
-- Rust, we recommend the last stable version.
-- [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-account~productId~%27logs%29){.external}
+- Rust. We recommend the last stable version.
+- [An activated Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-account~productId~%27logs%29){.external}
 - [To create at least one Stream and get its token.](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
-- Install the **serde** crate with the **serde_derive** feature.
-- Install the **log** crate with the **serde** feature.
+- To install the [**serde**](https://serde.rs/){.external} crate with the **derive** feature.
+- To install the [**log**](https://crates.io/crates/log){.external} crate with the **serde** feature.
 
+## Instructions
 
-## gelf_logger
+### First method: gelf_logger
 
 You can install the **gelf_logger** crate by adding the dependency to your `Cargo.toml`:
 
@@ -113,7 +114,9 @@ Don't forget to modify the placeholder **<YOUR-WRITE-TOKEN>** to the actual valu
 
 You could also look at the [generated API documentaton](https://docs.rs/gelf_logger/*){.external}.
 
-## log4rs-gelf
+### Second method: log4rs-gelf
+
+This method is an alternative to the previous one. Please consider the following as a different rust project. You need to be familiar with the [log4rs framework](https://docs.rs/log4rs/latest/log4rs/){.external}
 
 Install **log4rs** and **log4rs-gelf** in your Rust project.
 
@@ -140,30 +143,42 @@ $ cargo add log4rs-gelf -F ovh-ldp
 ```
 
 
-### Examples
+#### Examples
 
-#### From a YAML configuration file
+##### From a YAML configuration file
+
+Copy the content of this yaml file in a file **log4rs.yaml**. This file will be retrieved by the rust program to configure the framework.
 
 ```yaml
 appenders:
+  stdout:
+    kind: console
   ldp:
     additional_fields:
+      X-OVH-TOKEN: <YOUR-WRITE-TOKEN>
       component: rust-cs
     buffer_duration: 5
     buffer_size: 5
-    hostname: 127.0.0.1
+    hostname: <YOUR-LDP-CLUSTER-ADDRESS>
     kind: buffer
     level: Informational
     null_character: true
     port: 12202
-    use_tls: false
+    use_tls: true
 root:
   appenders:
   - ldp
+  - stdout
   level: info
 ```
 
-And then:
+Don't forget to replace the placeholder **<YOUR-LDP-CLUSTER-ADDRESS>** with the cluster where your stream resides. There is no need to put the Gelf port. Example: "gra3.logs.ovh.com".
+
+Don't forget to replace the placeholder **<YOUR-WRITE-TOKEN>** with the actual value of the write token of your stream
+
+Replace the X-OVH-TOKEN value with your X-OVH-TOKEN stream value and the hostname with your cluster.
+
+Use this configuration in your project:
 
 ```rust
 use core::time;

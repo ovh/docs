@@ -1,6 +1,6 @@
 ---
-title: Ottimizza l'invio delle email
-excerpt: Scopri come inviare email limitando il rischio di spam
+title: Come evitare che le tue email siano contrassegnate come Spam
+excerpt: "Scopri come applicare le best practice per l’invio di email al fine di limitare i rischi di blocco delle email legittime da parte della protezione contro gli spam"
 updated: 2024-01-24
 ---
 
@@ -17,7 +17,7 @@ In generale, le politiche anti-spam sono severe. Per rendere più fluide le oper
 > [!warning]
 >OVHcloud fornisce i servizi di cui sei responsabile per la configurazione e la gestione. Sei quindi responsabile del loro corretto funzionamento.
 >
->Questa guida ti mostra come eseguire le operazioni necessarie per eseguire l'operazione. Tuttavia, in caso di difficoltà o dubbi relativamente all'amministrazione, all'utilizzo o alla realizzazione dei servizi su un server, ti consigliamo di contattare un fornitore di servizi specializzato.
+> Questa guida ti mostra come eseguire le operazioni necessarie per eseguire l'operazione. Tuttavia, in caso di difficoltà o dubbi relativamente all'amministrazione, all'utilizzo o alla realizzazione dei servizi su un server, ti consigliamo di contattare un [provider specializzato](/links/partner).
 >
 
 ## Prerequisiti
@@ -60,44 +60,17 @@ Il record DMARC (Domain-based Message Authentication, Reporting and Conformance)
 
 Per maggiori informazioni, consulta la nostra guida sulla [configurazione di un record DMARC](/pages/web_cloud/domains/dns_zone_dmarc).
 
-### Configura il reverse (*reverse IP*) <a name="reverseip"></a>
+### Configura la risoluzione inversa degli IP <a name="reverseip"></a>
 
-Per ottimizzare l'invio e ridurre i rischi di blocco delle tue email, è necessario configurare con il tuo dominio un reverse.
+Per ottimizzare ancora di più l'invio di email e ridurre il rischio di blocco delle tue email, "puoi anche configurare la risoluzione DNS inversa (*PTR record*) con il tuo dominio.
 
-Per prima cosa, crea un record A nella zona DNS del tuo dominio con l'indirizzo IP del tuo server come destinazione.
+Per prima cosa, crea un record `A` nella zona DNS del tuo dominio con l'indirizzo IP del tuo server come destinazione.
 
 Se i server DNS sono gestiti da OVHcloud, consulta la nostra guida [sulla modifica di una zona DNS OVHcloud dallo Spazio Cliente](/pages/web_cloud/domains/dns_zone_edit).
 
 Una volta modificata la zona DNS del dominio, la propagazione delle modifiche potrebbe richiedere fino a 24 ore.
 
-Aggiungi il record PTR (alias noto come reverse):
-
-Nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, accedi alla sezione `Bare Metal Cloud`{.action} e apri `Network`{.action}. Clicca su `IP`{.action}. 
-
-Per configurare il Reverse DNS su un indirizzo Additional IP, clicca sulla scheda `Additional IP`{.action}.
-
-Il menu a tendina "**I tuoi indirizzi IP pubblici e servizi associati**" ti permette di filtrare i tuoi servizi per categoria.
-
-![Reverse IP](images/filteripds.png){.thumbnail}
-
-Clicca sul pulsante `...`{.action} a destra della riga corrispondente e poi su `Modifica il reverse`{.action}:
-
-![Reverse IP](images/addreverse2022.png){.thumbnail}
-
-Inserisci il tuo dominio nella sezione `Reverse` e clicca su `Conferma`{.action}.
-
-![Reverse IP](images/enterreverse.png){.thumbnail}
-
-> [!primary]
-> Quando inserisci il tuo dominio nel reverse, verifica immediatamente se il record A restituisce lo stesso IP. Questa operazione viene utilizzata nelle procedure anti-spam e il record A deve essere valido e divulgato. Per inserire il reverse, è necessario seguire alcune regole:
->
->  - il reverse non può iniziare con un `-`
->  - il reverse non può contenere più di 80 caratteri
->  - il reverse non può contenere caratteri maiuscoli
->  - il reverse deve terminare con un `.`
->
-> Esempio: "MyDomain.ca" nel campo reverse sarebbe **mydomain.ca.**
->
+Per configurare il percorso del reverse DNS nello [Spazio Cliente OVHcloud](/links/manager), consulta la [nostra guida dedicata](/pages/bare_metal_cloud/virtual_private_servers/configuring-reverse-dns).
 
 ### Casi specifici di invio di email
 
@@ -130,7 +103,7 @@ Conferma le informazioni e la sottoscrizione a JMRP/SNDS sarà completata.
 
 Una volta effettuate queste operazioni, se il tuo IP risulta bloccato, puoi richiedere di sbloccare il file utilizzando la [procedura junkmail](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&locale=en-us&ccsid=635857671692853062). La procedura richiede generalmente 48 ore.
 
-A volte Microsoft può richiedere la data della prima fatturazione del tuo IP/server. In questo caso, invia a Microsoft una copia della tua fattura e menziona il tuo IP/server (ad esempio: host nsXXX) nella tua risposta.
+A volte Microsoft può richiedere la data della prima fatturazione del tuo IP/server. In questo caso, invia a Microsoft una copia della tua fattura e menziona il tuo IP/server (ad esempio: host ns1111111.ip-203-0-113.eu) nella tua risposta.
 
 Per maggiori informazioni, invia una [richiesta di assistenza](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&ccsid=6364926882037750656) a Microsoft.
 
@@ -157,6 +130,6 @@ Potrebbe essere utile utilizzare un sito come [Mail Tester](http://www.mail-test
 
 [Migliorare la sicurezza delle email tramite un record DMARC](/pages/web_cloud/domains/dns_zone_dmarc)
 
-Per essere accompagnato sull'implementazione delle soluzioni OVHcloud, contatta la nostra [rete di partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

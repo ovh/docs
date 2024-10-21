@@ -16,7 +16,7 @@ OVHcloud udostępnia klientom Public Cloud obrazy wstępnie zainstalowanych apli
 
 ## Wymagania początkowe
 
-- Instancja [Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#krok-3-tworzenie-instancji) na Twoim koncie OVHcloud.
+- Instancja [Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) na Twoim koncie OVHcloud.
 
 ## W praktyce
 
@@ -24,7 +24,7 @@ OVHcloud udostępnia klientom Public Cloud obrazy wstępnie zainstalowanych apli
 
 #### Zainstaluj wybraną wstępnie zainstalowaną aplikację
 
-W [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), API OVHcloud lub API OpenStack Horizon zainstaluj wybraną aplikację na Twojej instancji Public Cloud.
+W [panelu klienta OVHcloud](/links/manager), API OVHcloud lub API OpenStack Horizon zainstaluj wybraną aplikację na Twojej instancji Public Cloud.
 
 #### Szczegóły logowania do aplikacji
 
@@ -193,6 +193,6 @@ Nie musisz wykonywać żadnych innych kroków, aby zakończyć pierwszą konfigu
 
 ## Idź dalej
 
-Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
+Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](/links/professional-services), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
 
 Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.

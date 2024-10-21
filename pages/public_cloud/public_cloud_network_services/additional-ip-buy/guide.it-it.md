@@ -10,7 +10,7 @@ updated: 2023-01-04
 
 > [!primary]
 >
-> Dal 6 ottobre 2022, la nostra soluzione "Failover IP" si chiama [Additional IP](https://www.ovhcloud.com/it/network/additional-ip/). Questo non ha alcun impatto sulla sua funzionalità.
+> Dal 6 ottobre 2022, la nostra soluzione "Failover IP" si chiama [Additional IP](/links/network/additional-ip). Questo non ha alcun impatto sulla sua funzionalità.
 >
 
 ## Obiettivo
@@ -29,7 +29,7 @@ Questi indirizzi possono essere trasferiti esclusivamente verso le istanze di un
 ## Prerequisiti
 
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
-- Disporre di almeno un’istanza. A questo proposito, consulta [la guida per creare un’istanza dallo Spazio Cliente](/pages/public_cloud/compute/public-cloud-first-steps#step-3-crea-unistanza).
+- Disporre di almeno un’istanza. A questo proposito, consulta [la guida per creare un’istanza dallo Spazio Cliente](/pages/public_cloud/compute/public-cloud-first-steps).
 
 > [!warning]
 > Questa funzionalità al momento non è disponibile per le istanze Metal.

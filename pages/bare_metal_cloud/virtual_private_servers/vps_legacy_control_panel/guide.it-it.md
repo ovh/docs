@@ -10,7 +10,7 @@ updated: 2024-01-22
 
 ## Obiettivo
 
-Il nome visualizzato nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) permette di stabilire se un VPS appartiene a una gamma meno recente. Se invece la referenza interna è in formato *vpsXXXX.ovh.net* (dove *X* rappresenta una cifra) e non è stato effettuato il trasferimento del VPS corrispondente alla [nostra gamma attuale di prodotti](https://www.ovhcloud.com/it/vps/), si tratta di un VPS *legacy*. 
+Il nome visualizzato nello [Spazio Cliente OVHcloud](/links/manager) permette di stabilire se un VPS appartiene a una gamma meno recente. Se invece la referenza interna è in formato *vpsXXXX.ovh.net* (dove *X* rappresenta una cifra) e non è stato effettuato il trasferimento del VPS corrispondente alla [nostra gamma attuale di prodotti](https://www.ovhcloud.com/it/vps/), si tratta di un VPS *legacy*. 
 
 Il riferimento di un VPS della gamma attuale si presenta in questo modo: *vps-XXXXXXX.vps.ovh.net* (dove *X* può essere una cifra o una lettera).
 
@@ -21,11 +21,11 @@ Un VPS *legacy* implica alcune differenze in termini di gestione.
 ## Prerequisiti
 
 - Un [VPS *legacy*](https://www.ovhcloud.com/it/vps/) nel tuo account OVHcloud
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sulla scheda `Bare Metal Cloud`{.action} e seleziona il tuo server tra i `Server Privati Virtuali`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager), clicca sulla scheda `Bare Metal Cloud`{.action} e seleziona il tuo server tra i `Server Privati Virtuali`{.action}.
 
 Nella scheda `Home`{.action} è possibile accedere alle operazioni principali del VPS dalla sezione **Scelta rapida**.
 
@@ -115,7 +115,7 @@ Utilizza questa opzione per accedere al tuo VPS via KVM. Trovi tutti i dettagli 
 
 ### Cambia il proprietario
 
-Questo link ti indirizza al form da compilare in caso di cambio di proprietario di un VPS. Se hai bisogno di assistenza per effettuare questa procedura, contatta il nostro supporto creando un ticket nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+Questo link ti indirizza al form da compilare in caso di cambio di proprietario di un VPS. Se hai bisogno di assistenza per effettuare questa procedura, contatta il nostro supporto creando un ticket nel tuo [Spazio Cliente OVHcloud](/links/manager).
 
 ### Passa alla nuova gamma
 

@@ -1,7 +1,7 @@
 ---
 title: 'Condividere un oggetto con un indirizzo temporaneo'
 excerpt: 'Come condividere un oggetto senza fornire informazioni personali'
-updated: 2021-01-11
+updated: 2024-10-08
 ---
 
 ## Obiettivo 
@@ -14,8 +14,8 @@ Per condividere un file con un amico o un collega senza fornire le informazioni 
 
 ## Prerequisiti
 
-- [Aver preparato l’ambiente di sviluppo per utilizzare l’API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api){.ref}
-- Impostare le variabili d'ambiente OpenStack
+- Aver [preparato l’ambiente per utilizzare l’API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api).
+- [Impostare le variabili d'ambiente OpenStack](/pages/public_cloud/compute/loading_openstack_environment_variables).
 - Aver installato Python sul proprio dispositivo
 
 ## Procedura
@@ -29,7 +29,7 @@ TempURL è una funzionalità che permette di decidere quali file condividere, me
 - **parametro tempurlsign**, che corrisponde alla firma generata in base a chiave di sicurezza, metodo HTTP, percorso del file e data di scadenza
 - **parametro url_expires**, che corrisponde alla data di scadenza dell’indirizzo temporaneo
 
-### Genera l’indirizzo temporaneo (*TempURL*)
+### Genera l’indirizzo temporaneo (*tempURL*)
 
 #### 1. Genera la chiave
 
@@ -86,19 +86,21 @@ Ad esempio:
 - **/v1/AUTH_tenant/default/file**: percorso verso il file (in questa fase, non è necessario aggiungere il punto di accesso)
 - **12345**: da sostituire con la propria chiave
 
-```
+Nel campo `AUTH_tenant`, sostituire `tenant` con il proprio **OS_TENANT_ID** o **OS_TENANT_NAME**.
+
+```bash
 swift tempurl GET 60 /v1/AUTH_tenant/default/file 12345
 ```
 
 Lo script fornirà un **TempURL** in cui è indicato **percorso del file**, **firma** e **data di scadenza**.
 
-```
+```bash
 v1/AUTH_tenant/default/file?temp_url_sig=8016dsdf3122d526afds60911cde59fds3&temp_url_expires=1401548543
 ```
 
 Per il corretto funzionamento dell’URL è sufficiente aggiungere l’indirizzo del punto di accesso davanti al proprio **Temp URL**:
 
-```
+```bash
 https://storage.sbg1.cloud.ovh.net/v1/AUTH_tenant/default/file?temp_url_sig=8016dsdf3122d526afds60911cde59fds3&temp_url_expires=1401548543
 ```
 

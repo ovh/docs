@@ -1,18 +1,18 @@
 ---
 title: "E-Mail-Accounts über Outlook Web App (OWA) verwenden"
 excerpt: 'So verwenden Sie Ihre E-Mail-Adressen über OWA Webmail'
-updated: 2024-03-26
+updated: 2024-09-03
 ---
 
 ## Ziel
 
-Mit OVHcloud Hosted Exchange können Sie Ihre E-Mails mit einem Gerät und einem Client Ihrer Wahl senden und empfangen. Um von überall über einen Webbrowser auf ein Konto zuzugreifen, bietet OVHcloud einen Online-E-Mail-Client namens Outlook Web App (OWA). Unsere [Webmail-Anmeldeseite](https://www.ovh.de/mail) ist für alle aktiven E-Mail-Konten in MX Plan, Email Pro und Hosted Exchange der zentrale Zugriffspunkt auf die OWA Benutzeroberfläche.
+Mit OVHcloud Hosted Exchange können Sie Ihre E-Mails mit einem Gerät und einem Client Ihrer Wahl senden und empfangen. Um von überall über einen Webbrowser auf ein Konto zuzugreifen, bietet OVHcloud einen Online-E-Mail-Client namens Outlook Web App (OWA). Unsere [Webmail-Anmeldeseite](/links/web/email) ist für alle aktiven E-Mail-Konten in MX Plan, Email Pro und Hosted Exchange der zentrale Zugriffspunkt auf die OWA Benutzeroberfläche.
 
 **Diese Anleitung erläutert, wie Sie Ihre E-Mail-Adresse mit OWA verwenden und erklärt die wichtigsten Funktionen dieser Oberfläche.**
 
 ## Voraussetzungen
 
-- Sie haben bereits einen OVHcloud E-Mail-Dienst eingerichtet ([**Exchange**](https://www.ovhcloud.com/de/emails/), [**E-Mail Pro**](https://www.ovhcloud.com/de/emails/email-pro/) oder **MX Plan**, aus dem MX Plan Angebot oder als Teil eines [OVHcloud Webhostings](https://www.ovhcloud.com/de/web-hosting/)).
+- Sie haben bereits einen OVHcloud E-Mail-Dienst eingerichtet ([**Exchange**](/links/web/emails), [**E-Mail Pro**](/links/web/email-pro) oder **MX Plan**, aus dem MX Plan Angebot oder als Teil eines [OVHcloud Webhostings](/links/web/hosting)).
 - Sie verfügen über Anmeldeinformationen für die E-Mail-Adresse, die Sie konfigurieren möchten.
 
 ## In der praktischen Anwendung
@@ -28,17 +28,23 @@ Diese Anleitung vermittelt Ihnen ein besseres Verständnis der üblichen Funktio
 
 ### 1. Zugriff auf OWA Webmail
 
-Um sich mit Ihrer E-Mail-Adresse bei OWA Webmail anzumelden, rufen Sie die allgemeine [Webmail-Anmeldeseite](https://www.ovh.de/mail) auf. Geben Sie Ihre vollständige E-Mail-Adresse und Ihr Passwort ein und klicken Sie danach auf die Schaltfläche `Login`{.action}.
+Um sich mit Ihrer E-Mail-Adresse bei OWA Webmail anzumelden, rufen Sie die allgemeine [Webmail-Anmeldeseite](/links/web/email) auf. Geben Sie Ihre vollständige E-Mail-Adresse und Ihr Passwort ein und klicken Sie danach auf die Schaltfläche `Login`{.action}.
 
 ![useowa](images/use-owa-step1.png){.thumbnail}
 
 > [!warning]
-> 
+>
 > Wenn Sie zu einem **Roundcube** Interface weitergeleitet werden, bedeutet dies, dass Sie die Legacy-Version der MX Plan Lösung verwenden. Weitere Informationen zu Ihrem MX Plan finden Sie auf unserer Seite "[Erste Schritte mit MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)".
 >
 > Um sich mit dem **Roundcube** Interface vertraut zu machen, lesen Sie unsere Anleitung: [Verwendung Ihres E-Mail-Accounts mit Roundcube Webmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube).
 
 Wenn Sie sich zum ersten Mal mit dieser E-Mail-Adresse bei OWA Webmail anmelden, werden Sie aufgefordert, die Sprache und die Zeitzone der Benutzeroberfläche festzulegen. Um fortzufahren, klicken Sie auf `Speichern`{.action}.
+
+> [!primary]
+>
+> Zeitzonen werden nach [UTC (Coordinated Universal Time)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png) und nicht in alphabetischer Reihenfolge der Städte aufgeführt.
+>
+> **Beispiel**: Für Westeuropa ist dies UTC +1 (Brüssel, Kopenhagen, Madrid, Paris).
 
 ![useowa](images/use-owa-step2.png){.thumbnail}
 
@@ -108,7 +114,7 @@ Um einen neuen Ordner zu erstellen, klicken Sie mit der rechten Maustaste auf de
 
 #### Posteingangsregeln erstellen
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Zum Verwalten der Regeln klicken Sie oben auf das Zahnradsymbol und danach auf `Optionen`{.action}.
 
@@ -128,7 +134,7 @@ Ausführlichere Anweisungen zum Erstellen von Posteingangsregeln finden Sie in u
 
 ##### Einen Absender blockieren
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UeNdpFwdXm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/UeNdpFwdXm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Klicken Sie oben rechts auf das Zahnrad und dann auf "Optionen". Folgen Sie in der linken Spalte der Ordnerstruktur "E-Mail" unter "Accounts" und "Blockieren oder erlauben".
 
@@ -154,7 +160,7 @@ Auf dieser Seite können Sie einen neuen Kontakt hinzufügen, eine Kontaktliste 
 
 ### Passwort ändern
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Sie können Ihr Kontopasswort ändern, wenn Sie bei OWA angemeldet sind. Hierzu klicken Sie oben auf das Zahnradsymbol und danach auf `Optionen`{.action}.
 

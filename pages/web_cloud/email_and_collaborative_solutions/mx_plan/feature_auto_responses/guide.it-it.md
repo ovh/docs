@@ -1,5 +1,5 @@
 ---
-title: 'MXplan - Crea risposta automatica su un indirizzo email'
+title: 'MX Plan - Crea risposta automatica su un indirizzo email'
 excerpt: 'Come impostare una risposta automatica su un indirizzo email'
 updated: 2024-05-24
 ---
@@ -24,7 +24,7 @@ Quando sei assente e non sei in grado di consultare il tuo indirizzo email, puoi
 
 > [!primary]
 >
-> Se il tuo indirizzo email è su un'offerta [**Exchange**](/links/web/emails-hosted-exchange), [**Email Pro**](/links/web/email-pro) o non hai una sezione `Gestione delle risposte automatiche`{.action} nel tuo MXplan, dovrai creare la risposta automatica dalla tua Webmail utilizzando la documentazione ["Installare una risposta automatica dall'interfaccia OWA"](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_automatic_replies).
+> Se il tuo indirizzo email è su un'offerta [**Exchange**](/links/web/emails-hosted-exchange), [**Email Pro**](/links/web/email-pro) o non hai una sezione `Gestione delle risposte automatiche`{.action} nel tuo MX Plan, dovrai creare la risposta automatica dalla tua Webmail utilizzando la documentazione ["Installare una risposta automatica dall'interfaccia OWA"](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_automatic_replies).
 
 ### Crea la risposta automatica
 

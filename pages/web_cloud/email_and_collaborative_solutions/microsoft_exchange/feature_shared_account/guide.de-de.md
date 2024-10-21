@@ -17,14 +17,14 @@ Ein **freigegebenes Postfach** ist eine Mailbox, die zwischen mehreren Exchange 
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie haben einen [OVHcloud Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/) Dienst eingerichtet.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
+- Sie haben einen [OVHcloud Exchange](/links/web/emails-hosted-exchange) Dienst eingerichtet.
 
 ## In der praktischen Anwendung
 
 ### Freigegebenes Postfach hinzufügen
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie unter `Microsoft`{.action} und `Exchange`{.action} Ihren Exchange Dienst aus.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](/links/manager) ein und wählen Sie unter `Microsoft`{.action} und `Exchange`{.action} Ihren Exchange Dienst aus.
 
 Wählen Sie den Tab `Freigegebene Postfächer`{.action} aus und klicken Sie auf `Freigegebenes Postfach hinzufügen`{.action}.
 
@@ -84,7 +84,7 @@ In unserem Beispiel erlauben wir den Accounts **guide-exchange@** und **test@** 
 
 ### Nutzung des freigegebenen Postfachs über OWA (Webmail)
 
-Loggen Sie sich [im Webmail](https://www.ovh.de/mail/) mit einem Account ein, der Zugriff auf das freigegebene Postfach hat.
+Loggen Sie sich [im Webmail](/links/web/email) mit einem Account ein, der Zugriff auf das freigegebene Postfach hat.
 <br>In unserem Beispiel verbinden wir uns über den Account **guide-exchange@**.
 
 Wenn Sie eingeloggt sind, klicken Sie mit der rechten Maustaste auf Ihre E-Mail-Adresse in der linken Menüspalte. Wählen Sie aus dem Kontextmenü `Freigegebenen Ordner hinzufügen`{.action}. 

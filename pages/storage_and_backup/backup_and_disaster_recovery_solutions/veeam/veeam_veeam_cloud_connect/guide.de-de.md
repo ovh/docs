@@ -1,7 +1,7 @@
 ---
 title: Veeam Cloud Connect
 excerpt: Einführung zu Veeam Cloud Connect
-updated: 2023-11-02
+updated: 2024-10-01
 ---
 
 ## Ziel
@@ -17,17 +17,17 @@ Veeam Cloud Connect ist eine "Off-Site"-Backup-Lösung. Sie bietet eine einfache
 
 > [!primary]
 >
-> Unsere Veeam Cloud Connect Angebote sind derzeit nicht mit der neuesten von Veeam angebotenen Version (12) kompatibel. OVHcloud wird Version 11 bis auf weiteres anbieten. Bitte beachten Sie diesen Punkt bei der Veeam-Konfiguration Ihrer Dienstleistungen.
+> Unsere Veeam Cloud Connect Angebote sind mit der Veeam Version 12.1.1 kompatibel. Das Update auf die neueste Version 12.2 wird in Kürze von unseren Teams durchgeführt. Beachten Sie dies bei der Konfiguration von Veeam für Ihre Veeam Cloud Connect Dienste.
 >
 
 ### Kompatible Dienste
 
-Der Hauptvorteil von Veeam Cloud Connect liegt – abgesehen von der Einfachheit der Nutzung – darin, dass es funktioniert, unabhängig davon, wo Ihre Betriebsinfrastruktur gehostet wird. Es kann bei OVHcloud, einem anderen Anbieter oder an Ihren eigenen Standorten gehostet werden.
+Der Hauptvorteil von Veeam Cloud Connect liegt – abgesehen von der Einfachheit der Nutzung – darin, dass es unabhängig davon funktioniert wo Ihre Betriebsinfrastruktur gehostet wird. Es kann bei OVHcloud, einem anderen Anbieter oder an Ihren eigenen Standorten gehostet werden.
 
 Liste kompatibler OVHcloud Dienste:
 
 - [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/)
-- auf unseren [Dedicated Servern](https://www.ovh.com/de/dedicated_server/) gehostete virtuelle Maschinen, die via Microsoft Hyper-V oder VMware ESXi verwaltet werden
+- [Dedicated Server](https://www.ovh.com/de/dedicated_server/) als Hypervisor für virtuelle Maschinen, die via Microsoft Hyper-V oder VMware ESXi verwaltet werden
 
 ## In der praktischen Anwendung
 

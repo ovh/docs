@@ -1,7 +1,7 @@
 ---
 title: Enterprise File Storage - FAQ
 excerpt: 'Enterprise File Storage FAQ'
-updated: 2022-03-21
+updated: 2024-09-24
 ---
 
 ## Objective
@@ -70,7 +70,7 @@ Please contact our sales or technical support team to design an infrastructure t
 
 ### What storage capacity options are available?
 
-The minimum size of a service is 1TiB, and the maximum size is 58TiB. The granularity is 1TiB.
+The minimum size of a service is 1TB, and the maximum size is 58TB. The granularity is 1TB.
 
 ### How many Enterprise File Storage services can I create from my customer account?
 
@@ -78,13 +78,13 @@ There is no limit to the number of services per customer account.
 
 ### What is the maximum number of volumes per service?
 
-You can create up to 10 volumes per service. The minimum size is 100GiB and the maximum size is 29TiB.
+You can create up to 10 volumes per service. The minimum size is 100GB and the maximum size is 29TB.
 
 ### What level of performance is available with Enterprise File Storage?
 
-Enterprise File Storage comes with a guaranteed throughput service level objective (SLO) of 64MB/s per TiB and 4000 IOPS per TiB.
+Enterprise File Storage comes with a guaranteed throughput service level objective (SLO) of 64MB/s per TB and 4000 IOPS per TB.
 
-For example, when a 10 TiB pool is delivered, you get 640 MB/s bandwidth and 40,000 IOPS.
+For example, when a 10 TB pool is delivered, you get 640 MB/s bandwidth and 40,000 IOPS.
 
 ## Snapshots and backups
 
@@ -98,7 +98,7 @@ Customers are responsible for managing their own backup solution and policy. How
 
 ### Are snapshots included in the capacity of a service?
 
-Snapshots are allocated a minimum of 5% of the storage space. For example, on a 5TiB service, 250GiB are reserved for snapshots.
+Snapshots are allocated a minimum of 5% of the storage space. For example, on a 5TB service, 250GB are reserved for snapshots.
 
 ### What is the maximum number of snapshots per service?
 

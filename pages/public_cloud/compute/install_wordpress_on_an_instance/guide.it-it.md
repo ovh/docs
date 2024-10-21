@@ -27,7 +27,7 @@ Questa guida ti mostra gli step fondamentali per l'installazione manuale di Word
 
 - Un [progetto Public Cloud](https://www.ovhcloud.com/it/public-cloud/) nel tuo account OVHcloud.
 - Disporre di un'[istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) con Debian o Ubuntu installato.
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 - Un accesso amministratore (sudo) alla tua istanza via SSH.
 
 ## Procedura
@@ -37,7 +37,7 @@ Questa guida ti mostra gli step fondamentali per l'installazione manuale di Word
 > Per Debian 11 sono verificate le seguenti istruzioni. Ubuntu è basato su Debian e il tutorial dovrebbe quindi funzionare anche per una distribuzione Ubuntu attuale.
 >
 
-Per accedere alla tua installazione tramite un dominio, è necessario associarlo alla tua istanza. Per effettuare questa operazione è necessario modificare la zona DNS accessibile dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), a condizione che OVHcloud sia il tuo Registrar **e** che il dominio utilizzi i server DNS OVHcloud.
+Per accedere alla tua installazione tramite un dominio, è necessario associarlo alla tua istanza. Per effettuare questa operazione è necessario modificare la zona DNS accessibile dal tuo [Spazio Cliente OVHcloud](/links/manager), a condizione che OVHcloud sia il tuo Registrar **e** che il dominio utilizzi i server DNS OVHcloud.
 
 Per saperne di più, consulta la guida [Modifica la zona DNS](/pages/web_cloud/domains/dns_zone_edit). Se il dominio è utilizzato, configura i DNS solo dopo l'installazione del nuovo WordPress e l'avvio del tuo sito Web.
 

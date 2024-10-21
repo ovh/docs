@@ -17,7 +17,7 @@ Além da Área de Cliente OVHcloud, também pode gerir os seus projetos Public C
 ## Requisitos
 
 - Ter criado uma instância Public Cloud a partir da [Área de Cliente OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps) ou através da [interface Horizon](/pages/public_cloud/compute/create_instance_in_horizon).
-- [Ter criado uma chave SSH](/pages/public_cloud/compute/public-cloud-first-steps#1o-passo-criacao-de-chaves-ssh).
+- [Ter criado uma chave SSH](/pages/public_cloud/compute/creating-ssh-keys-pci).
 
 ## Prática
 
@@ -159,7 +159,7 @@ Em caso de perda de acesso à sua instância, devido a uma configuração incorr
 > [!primary]
 >
 > Pode aceder diretamente à sua instância através da consola VNC. No entanto, deverá configurar previamente uma palavra-passe para o utilizador root.
-> Para mais informações, consulte [este guia](/pages/public_cloud/compute/become_root_and_change_password).
+> Para mais informações, consulte [este guia](/pages/public_cloud/compute/public-cloud-first-steps#user-mgmt).
 > A consola VNC pode também servir de primeira aproximação em caso de avaria, de forma a estabelecer um diagnóstico graças à análise da fase de arranque da sua instância.
 > 
 

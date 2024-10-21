@@ -12,8 +12,8 @@ Właśnie złożyłeś zamówienie na platformę Private Exchange. Niniejszy prz
 
 ## Wymagania początkowe
 
-- Zamówienie [rozwiązania Private Exchange OVHcloud](https://www.ovhcloud.com/pl/emails/private-exchange/){.external}.
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- Zamówienie [rozwiązania Private Exchange OVHcloud](/links/web/emails-private-exchange).
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 
 ## W praktyce
 
@@ -21,7 +21,7 @@ Właśnie złożyłeś zamówienie na platformę Private Exchange. Niniejszy prz
 
 Po realizacji zamówienia otrzymasz na adres e-mail podany w Panelu klienta informacje umożliwiające skonfigurowanie platformy Private Exchange. 
 
-Aby przeczytać ten e-mail w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij swój profil w prawym górnym rogu, a następnie wybierz `E-maile od OVHcloud`{.action} i wyszukaj e-mail z następującym tematem:
+Aby przeczytać ten e-mail w [Panelu klienta OVHcloud](/links/manager), kliknij swój profil w prawym górnym rogu, a następnie wybierz `E-maile od OVHcloud`{.action} i wyszukaj e-mail z następującym tematem:
 
 > **[xx-11111-ovh] Trwa instalowanie usługi Exchange 20_xxx_**
 
@@ -32,11 +32,11 @@ Wiadomość zawiera link pozwalający ukończyć dwa etapy konfiguracji platform
 - personalizacja linku dostępu do poczty webmail (dedykowany certyfikat SSL);
 - podanie adresu e-mail do korespondencji, aby zatwierdzić posiadany certyfikat (uwaga: musi to być istniejący adres, ponieważ konieczny będzie dostęp do niego).
 
-Kliknij link w wiadomości e-mail, a następnie przejdź do poniższego [etapu 2 ](./#etap-2-uruchomienie-platformy){.external}.
+Kliknij link w wiadomości e-mail, a następnie przejdź do poniższego [etapu 2 ](./#etap-2-uruchomienie-platformy).
 
 ### Etap 2: uruchomienie platformy
 
-Po kliknięciu linka w e-mailu w [etapie 1](./#etap-1-odbior-e-maila-z-informacjami-dotyczacymi-konfiguracji-platformy){.external} zaloguj się na wyświetlonej stronie.
+Po kliknięciu linka w e-mailu w [etapie 1](./#etap-1-odbior-e-maila-z-informacjami-dotyczacymi-konfiguracji-platformy) zaloguj się na wyświetlonej stronie.
 
 Zostaniesz wówczas przekierowany na następującą stronę konfiguracji:
 ![first-use-private-exchange](images/first-use-private-exchange-02.png){.thumbnail}
@@ -55,16 +55,16 @@ Po zatwierdzeniu tego etapu otrzymasz wiadomość z informacją o ukończeniu ko
 
 > [!primary]
 >
-> Ten etap jest opcjonalny, jeśli zaznaczyłeś opcję „**DNS Assist**” w [etapu 2 ](./#etap-2-uruchomienie-platformy){.external}.
+> Ten etap jest opcjonalny, jeśli zaznaczyłeś opcję „**DNS Assist**” w [etapu 2 ](./#etap-2-uruchomienie-platformy).
 > 
 
 Jeśli Twoja nazwa domeny nie jest zarządzana z poziomu tego samego konta klienta lub też jest utrzymywana poza OVHcloud, otrzymasz drugi e-mail zawierający informacje niezbędne do ręcznej konfiguracji strefy DNS.
 
-E-mail zawiera adresy IPv4 i IPv6 Twojej platformy. Podaj te adresy w strefie DNS subdomeny prawdopodobnie utworzonej uprzednio w [etapu 2 ](./#etap-2-uruchomienie-platformy){.external} w formie wpisu typu „A” lub „AAAA”. W przypadku nazwy domeny w OVHCloud  zapoznaj się z naszym przewodnikiem [„Modyfikowanie strefy DNS”](/pages/web_cloud/domains/dns_zone_edit).
+E-mail zawiera adresy IPv4 i IPv6 Twojej platformy. Podaj te adresy w strefie DNS subdomeny prawdopodobnie utworzonej uprzednio w [etapu 2 ](./#etap-2-uruchomienie-platformy) w formie wpisu typu „A” lub „AAAA”. W przypadku nazwy domeny w OVHCloud  zapoznaj się z naszym przewodnikiem [„Modyfikowanie strefy DNS”](/pages/web_cloud/domains/dns_zone_edit).
 
 ### Etap 4: walidacja certyfikatu SSL
 
-Po ukończeniu [etapu 2 ](./#etap-2-uruchomienie-platformy){.external} otrzymasz e-mail na adres wskazany jako służący do walidacji certyfikatu SSL.
+Po ukończeniu [etapu 2 ](./#etap-2-uruchomienie-platformy) otrzymasz e-mail na adres wskazany jako służący do walidacji certyfikatu SSL.
 
 E-mail ten zostanie wysłany przez instytucję wydającą certyfikat SSL. Temat wiadomości będzie wyglądał następująco:
 

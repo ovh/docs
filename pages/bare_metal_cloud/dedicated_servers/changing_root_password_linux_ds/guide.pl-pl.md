@@ -20,7 +20,7 @@ Nawet jeśli serwer nie jest używany do celów, które wymagają administrowani
 
 ## Wymagania początkowe
 
-- [Serwer dedykowany](https://www.ovhcloud.com/pl/bare-metal/) lub [VPS](https://www.ovhcloud.com/pl/vps/) z systemem operacyjnym Linux na koncie OVHcloud
+- [Serwer dedykowany](/links/bare-metal/bare-metal) lub [VPS](https://www.ovhcloud.com/pl/vps/) z systemem operacyjnym Linux na koncie OVHcloud
 - Posiadanie danych do logowania otrzymanych w e-mailu po zakończonej instalacji.
 
 ## W praktyce
@@ -37,7 +37,7 @@ Sprawdź również nasze przewodniki:
 > [!warning]
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 >
-> Niniejszy przewodnik ułatwi Ci realizację bieżących zadań. Niemniej jednak, w przypadku trudności lub wątpliwości związanych z administrowaniem usługami, korzystaniem z nich lub ich wdrażaniem na serwerze, zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/directory/) lub [naszą społecznością](https://community.ovh.com/en/).
+> Niniejszy przewodnik ułatwi Ci realizację bieżących zadań. Niemniej jednak, w przypadku trudności lub wątpliwości związanych z administrowaniem usługami, korzystaniem z nich lub ich wdrażaniem na serwerze, zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](/links/partner) lub [naszą społecznością](https://community.ovh.com/en/).
 >
 
 > [!primary]

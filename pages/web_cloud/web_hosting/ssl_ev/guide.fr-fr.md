@@ -1,7 +1,7 @@
 ---
-title: "Utiliser un certificat SSL EV pour votre site Web"
+title: "Hébergement web - Activer un certificat SSL EV"
 excerpt: "Découvrez comment commander et installer un certificat SSL EV sur votre hébergement Web OVHcloud"
-updated: 2023-06-07
+updated: 2024-10-10
 ---
 
 ## Objectif

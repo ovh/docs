@@ -23,7 +23,7 @@ Os ficheiros binários pré-compilados estão disponíveis na maioria das distri
 
 ### ID OpenStack
 
-Para poder gerar o seu identificador e a sua palavra-passe OpenStack, utilize este [guia](/pages/public_cloud/compute/introducing_horizon).
+Para poder gerar o seu identificador e a sua palavra-passe OpenStack, utilize este [guia](/pages/public_cloud/compute/create_and_delete_a_user).
 
 ### TenantName
 

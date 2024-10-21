@@ -94,7 +94,7 @@ There are two possible scenarios:
 
 If the DNS servers declared for your domain name have one of the following two forms:
 
-- `dnsXX.ovh.net` and `nsXX.ovh.net` (where each of the "X" represents a number)
+- `dnsXX.ovh.ca` and `nsXX.ovh.ca` (where each of the "X" represents a number)
 - `dns200.anycast.me` and `ns200.anycast.me`
 
 This means that your domain name’s active DNS zone is active with OVHcloud.

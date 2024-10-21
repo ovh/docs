@@ -10,11 +10,14 @@ In some cases you might need to repair the GRUB bootloader. This guide will show
 
 ## Requirements
 
-- The instance must be in rescue mode (see [How to activate rescue mode on a Public Cloud instance](/pages/public_cloud/compute/put_an_instance_in_rescue_mode)).
+- A [Public Cloud instance](/links/public-cloud/public-cloud) in your OVHcloud account
 
 ## Instructions
 
-Connect to the instance, either via VNC in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) or via SSH.
+> [!warning]
+> The instance must be in rescue mode (see [How to activate rescue mode on a Public Cloud instance](/pages/public_cloud/compute/put_an_instance_in_rescue_mode)).
+
+Connect to the instance, either via VNC in the [OVHcloud Control Panel](/links/manager) or via SSH.
 
 Type the following commands to mount the remote file system and start GRUB repairs:
 
@@ -46,4 +49,4 @@ You can now leave the rescue mode and boot normally (see [How to activate rescue
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

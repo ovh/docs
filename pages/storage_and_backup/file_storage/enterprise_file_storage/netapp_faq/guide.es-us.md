@@ -1,7 +1,7 @@
 ---
 title: Enterprise File Storage - FAQ
 excerpt: FAQ en la solución Entreprise File Storage
-updated: 2022-03-21
+updated: 2024-09-24
 ---
 
 > [!primary]
@@ -74,7 +74,7 @@ Le invitamos a que contacte con nuestro servicio comercial o nuestro soporte té
 
 ### ¿Cuáles son las capacidades de almacenamiento disponibles?
 
-El tamaño mínimo de un servicio es de 1 TiB y el tamaño máximo es de 58 TiB. La granularidad es de 1TiB.
+El tamaño mínimo de un servicio es de 1 TB y el tamaño máximo es de 58 TB. La granularidad es de 1TB.
 
 ### ¿Cuántos servicios Enterprise File Storage puedo crear desde mi cuenta de cliente?
 
@@ -82,13 +82,13 @@ No hay límite de número de servicios por cuenta de cliente.
 
 ### ¿Cuál es el número máximo de volúmenes por servicio?
 
-Es posible crear un máximo de 10 volúmenes por servicio. El tamaño mínimo es de 100 GiB y el tamaño máximo es de 29 TiB.
+Es posible crear un máximo de 10 volúmenes por servicio. El tamaño mínimo es de 100 GB y el tamaño máximo es de 29 TB.
 
 ### ¿Qué nivel de rendimiento tiene Enterprise File Storage?
 
-Enterprise File Storage proporciona una tasa de transferencia garantizada de 64 MB/s por TiB y 4000 IOPS por TiB.
+Enterprise File Storage proporciona una tasa de transferencia garantizada de 64 MB/s por TB y 4000 IOPS por TB.
 
-Por ejemplo, cuando se entrega un pool de 10 TiB, se beneficia de un ancho de banda de 640 MB/s y 40000 IOPS.
+Por ejemplo, cuando se entrega un pool de 10 TB, se beneficia de un ancho de banda de 640 MB/s y 40000 IOPS.
 
 ## Snapshots y backups
 
@@ -102,7 +102,7 @@ Los usuarios son responsables de la gestión de sus copias de seguridad (herrami
 
 ### ¿Los snapshots están comprendidos en la capacidad de un servicio?
 
-Se asigna a los snapshots un mínimo del 5% del espacio de almacenamiento. Por ejemplo, en un servicio de 5TiB, se reservan 250 GiB para los snapshots.
+Se asigna a los snapshots un mínimo del 5% del espacio de almacenamiento. Por ejemplo, en un servicio de 5TB, se reservan 250 GB para los snapshots.
 
 ### ¿Cuál es el número máximo de snapshots por servicio?
 

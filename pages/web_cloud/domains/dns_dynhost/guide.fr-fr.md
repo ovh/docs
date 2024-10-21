@@ -1,7 +1,7 @@
 ---
 title: "Paramétrer un DNS dynamique (DynHost/DynDNS) pour votre nom de domaine"
 excerpt: "Découvrez comment paramétrer un enregistrement DNS dynamique pour votre nom de domaine OVHcloud"
-updated: 2024-07-12
+updated: 2024-09-04
 ---
 
 ## Objectif
@@ -79,7 +79,7 @@ Dès que vous êtes prêt à créer l'enregistrement DynHost, repositionnez-vous
 |Informations|Description|
 |---|---|
 |Sous-domaine|Renseignez le sous-domaine dont l'enregistrement DNS devra être mis à jour dynamiquement. Ce sous-domaine doit correspondre à celui renseigné lors de la création de l'utilisateur DynHost. **Si vous souhaitez mettre en place un DynHost directement pour votre nom de domaine, laissez ce formulaire de saisie vide**|
-|IP de destination|Renseignez l'adresse IP (IPv4 ou IPv6) qui doit être actuellement utilisée par l'enregistrement DNS. Il s'agit généralement de l'adresse IP publique de votre *box* Internet ou de votre serveur auto-hébergé. Selon le principe du DynHost, celle-ci sera mise à jour automatiquement par la suite.|
+|IP de destination|Renseignez l'adresse IP (IPv4 ou IPv6) qui doit être actuellement utilisée par l'enregistrement DNS. Il s'agit généralement de l'adresse IP publique de votre *box* Internet ou de votre serveur auto-hébergé. Selon le principe du DynHost, celle-ci sera mise à jour automatiquement par la suite. Une seule adresse IP doit être renseignée dans ce formulaire.|
 
 > [!warning]
 >
@@ -89,6 +89,11 @@ Dès que vous êtes prêt à créer l'enregistrement DynHost, repositionnez-vous
 ![dynhost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/create-a-dynhost.png){.thumbnail}
 
 Une fois les champs complétés, cliquez sur le bouton `Valider`{.action}. L'enregistrement DynHost apparaît alors dans le tableau présent sur la page actuelle. Répétez cette étape autant de fois que nécessaire si vous avez besoin d'enregistrements DynHost supplémentaires.
+
+> [!primary]
+>
+> Si votre nom de domaine ou sous-domaine doit être configuré dynamiquement avec, par exemple, une IPv4 et une IPv6, vous pouvez créer deux enregistrements DNS dynamiques pour le même nom de domaine ou sous-domaine. Le premier enregistrement DNS dynamique sera alors pour l'IPv4 et le second pour l'IPv6.
+>
 
 ### Étape 3 : automatiser le changement du DynHost
 

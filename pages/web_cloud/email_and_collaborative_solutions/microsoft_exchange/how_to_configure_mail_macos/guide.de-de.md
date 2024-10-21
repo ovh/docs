@@ -1,7 +1,7 @@
 ---
-title: Exchange - Konfiguration Ihres E-Mail Accounts in macOS Mail
+title: "Exchange - Konfiguration Ihrer E-Mail-Adresse in Mail für macOS"
 excerpt: Erfahren Sie hier, wie Sie Ihren Exchange Account in macOS Mail einrichten
-updated: 2024-04-16
+updated: 2024-10-09
 ---
 
 <style>
@@ -80,7 +80,7 @@ Exchange Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingerich
 
 Nach der Konfiguration der E-Mail-Adresse können Sie diese verwenden! Sie können ab sofort Nachrichten senden und empfangen.
 
-OVHcloud bietet Ihnen außerdem eine Webanwendung, mit der Sie über einen Webbrowser auf Ihren E-Mail-Account zugreifen können. Diese ist über <https://www.ovh.de/mail/> verfügbar. Sie können sich mit den Login-Daten Ihres E-Mail-Accounts anmelden.
+OVHcloud bietet Ihnen außerdem eine Webanwendung, mit der Sie über einen Webbrowser auf Ihren E-Mail-Account zugreifen können. Diese ist über[Webmail](/links/web/email) verfügbar. Sie können sich mit den Login-Daten Ihres E-Mail-Accounts anmelden.
 
 Wenn Sie Fragen zur Verwendung haben, lesen Sie unsere Anleitungen [Exchange-Account über das OWA-Interface aufrufen](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) und [E-Mail-Adresse über RoundCube Webmail verwenden](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube#ou-et-comment-à-au-webmail-roundcube).
 
@@ -98,6 +98,10 @@ Wenn Ihr E-Mail-Account bereits eingerichtet ist und Sie auf die Kontoeinstellun
 ![mailmac](images/mail-mac-exchange06.png){.thumbnail .w-400 .h-600}
 
 ## Weiterführende Informationen
+
+> [!primary]
+>
+> Weitere Informationen zum Einrichten einer E-Mail-Adresse über die Mail App auf macOS finden Sie im [Apple Help Center](https://support.apple.com/de-de/guide/mail/mail35803/mac).
 
 [E-Mail FAQ](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 

@@ -1,7 +1,7 @@
 ---
 title: "E-mail Pro - Konfiguracja konta e-mail w programie Gmail na urządzeniu z systemem Android"
 excerpt: "Dowiedz się, jak skonfigurować konto E-mail Pro na urządzeniu z systemem Android poprzez aplikację Gmail"
-updated: 2024-03-15
+updated: 2024-10-09
 ---
 
 <style>
@@ -103,7 +103,7 @@ Po zakończeniu konfiguracji konto jest gotowe do użytku! Możesz teraz wysyła
 
 > [!success]
 >
-> OVHcloud oferuje aplikację internetową dostępną pod adresem <https://www.ovhcloud.com/pl/mail/> umożliwiającą korzystanie z Twojego konta e-mail przy użyciu wyszukiwarki. Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail.
+> OVHcloud oferuje aplikację internetową dostępną pod adresem [Webmail](/links/web/email) umożliwiającą korzystanie z Twojego konta e-mail przy użyciu wyszukiwarki. Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail.
 
 ### Parametry POP, IMAP i SMTP
 
@@ -166,6 +166,10 @@ Aby zrozumieć różnicę między używaniem protokołu POP i IMAP, wyjaśnimy s
 > Ten opis jest syntezą, reprezentuje standardowe działanie obu protokołów. Możesz również ustawić POP, aby wiadomości e-mail nie były usuwane po odczytaniu wiadomości. Celem jest opisanie rodzimego działania tych dwóch protokołów i uniknięcie dodatkowych operacji, aby zaspokoić swoje potrzeby.
 
 ## Sprawdź również
+
+> [!primary]
+>
+> Aby uzyskać więcej informacji na temat konfigurowania konta e-mail z poziomu aplikacji Gmail na urządzeniu z systemem Android, zobacz [Centrum pomocy Google](https://support.google.com/mail/answer/6078445?hl=pl-CA&co=GENIE.Platform%3DAndroid#zippy=-odaj-konto).
 
 [Konfiguracja konta e-mail, zawartego w usłudze MX Plan lub usłudze hostingu, na urządzeniu z systemem Android przy użyciu aplikacji Gmail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android)
 

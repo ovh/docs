@@ -20,7 +20,7 @@ Desde el área de cliente de OVHcloud podrá gestionar sus datos personales y de
 ## Requisitos
 
 - Haber creado [su cuenta de OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 > [!primary]
 > Si necesita ayuda para conectarse a su cuenta, consulte la sección "[No consigo conectarme](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure)" de nuestra guía "[Conectarse al área de cliente de OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login)".
@@ -66,7 +66,7 @@ Haga clic en el cuadro `Mi perfil` en el botón `...`{.action} y luego en `Edita
 > [!warning]
 > Le recordamos que es **fundamental** que la dirección de correo electrónico alternativa sea **diferente** de la dirección de correo electrónico principal de la cuenta.
 >
-> Evite utilizar direcciones de correo asociadas a un dominio que gestione desde el área de cliente. En caso de corte en este dominio, no recibiría nuestras notificaciones.
+> Evite utilizar direcciones de correo asociadas a un dominio que gestione desde el área de cliente. En caso de corte en este dominio, no recibiría nuestras notificaciones. Si se encuentra en esta situación, siga [los procedimientos que se indican en esta guía](/pages/account_and_service_management/account_information/ovhcloud-account-login#invalid-email).
 >
 
 #### Activar la doble autenticación
@@ -82,7 +82,7 @@ Para más información, consulte nuestra guía [Proteger su cuenta de OVHcloud c
 
 #### Editar mis datos personales
 
-Puede modificar la información de su cuenta desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Para ello, haga clic en su nombre en la esquina superior derecha del área de cliente y seleccione sus iniciales.
+Puede modificar la información de su cuenta desde el [área de cliente de OVHcloud](/links/manager). Para ello, haga clic en su nombre en la esquina superior derecha del área de cliente y seleccione sus iniciales.
 
 Haga clic en el botón `...`{.action} en el recuadro `Mi perfil` y seleccione `Editar mi perfil`{.action}.
 
@@ -126,7 +126,6 @@ Puede solicitar la eliminación de su cuenta de OVHcloud y los datos asociados r
 > Para eliminar su cuenta de OVHcloud, debe cumplir las siguientes condiciones:
 >
 > - su cuenta ya no debe contener ningún servicio.
->
 > - Su cuenta no podrá tener facturas ni pedidos pendientes de pago.
 >
 

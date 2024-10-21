@@ -86,6 +86,8 @@ Se a sua palavra-passe estiver comprometida, recomendamos vivamente que a [alter
 
 - Surge então uma mensagem que lhe indica o êxito da operação. Clique no botão `Continuar`{.action} na zona inferior desta mensagem para ser encaminhado para a página de identificação. Introduza então a sua ID de utilizador e a sua nova palavra-passe.
 
+<a name="lost-password"></a>
+
 #### Se não se lembrar da sua palavra-passe atual
 
 - Clique em `ID de utilizador ou palavra-passe esquecida?`{.action} ao aceder à janela de identificação da sua Área de Cliente OVHcloud.

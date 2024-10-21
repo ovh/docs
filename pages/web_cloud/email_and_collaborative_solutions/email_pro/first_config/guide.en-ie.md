@@ -1,7 +1,7 @@
 ---
 title: 'Configuring your Email Pro solution'
 excerpt: 'Find out how to configure your Email Pro solution'
-updated: 2024-06-13
+updated: 2024-09-03
 ---
 
 ## Objective
@@ -92,7 +92,7 @@ Once you have added the domain name as an associated domain, check its configura
 
 You can use the `Diagnosis`{.action} column to check the domain name’s DNS configuration. A red box will appear if these configurations need to be changed. There are two possibilities:
 
-- **Automatic configuration when you add an OVHcloud domain name**: If you have just made the change, it may take a few hours before it is displayed in [the OVHcloud Control Panel](/links/manager){.external}.
+- **Automatic configuration when you add an OVHcloud domain name**: If you have just made the change, it may take a few hours before it is displayed in [the OVHcloud Control Panel](/links/manager).
 
 - **Manual configuration for a non-OVHcloud domain name**: Click on the red box to view the changes you will need to make.
     - *For a CNAME* record, you can use our guide on "[Creating a CNAME record when adding an associated domain](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)".
@@ -147,6 +147,12 @@ Once the information is complete, click on the `Next`{.action} button, check the
 ### Step 5: Use your email addresses
 
 Once you have configured your accounts, you can start using them straight away. To do this, OVHcloud offers an web application, available [here](/links/web/email). You will need to enter your email address and password to log in.
+
+> [!primary]
+>
+> Time zones are listed according to [the UTC (Coordinated Universal Time) standard](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), not in alphabetical order of cities.
+>
+> **Example**: For Western Europe, it is UTC +1 (Brussels, Copenhagen, Madrid, Paris).
 
 If you would like to configure your email address on an email client or device (e.g. a smartphone or tablet), you can refer to our [configuration guides](/products/web-cloud-email-collaborative-solutions-email-pro). If you simply need the information required to configure your Email Pro account, the settings to use are listed below:
 

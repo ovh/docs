@@ -44,14 +44,14 @@ By leveraging IPv6 within vRack, OVHcloud users can enjoy a more secure, efficie
 
 ## Requirements
 
-- A [vRack](https://www.ovhcloud.com/en-au/network/vrack/){.external} service activated in your account
-- A [vRack compatible server](https://www.ovhcloud.com/en-au/network/vrack/){.external} attached to your vRack network
+- A [vRack](/links/network/vrack){.external} service activated in your account
+- A [vRack compatible server](/links/network/vrack){.external} attached to your vRack network
 - Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
-> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-gb/about/).
+> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-au/about/).
 >
-> Please visit our [comparison page](https://eco.ovhcloud.com/en-gb/compare/) for more information.
+> Please visit our [comparison page](https://eco.ovhcloud.com/en-au/compare/) for more information.
 
 ## Instructions
 
@@ -61,7 +61,7 @@ While requesting a new Additional IPv6 block, it's important to note that the al
 
 /// details | Request a new Additional IPv6 block
 
-You can order your new addtional IPv6 block [here](https://www.ovh.com/manager/#/dedicated/ip/agoraOrder/ipv6?catalogName=ip).
+You can order your new additional IPv6 block [here](https://www.ovh.com/manager/#/dedicated/ip/agoraOrder/ipv6?catalogName=ip).
 
 ![configuration page](images/500.png){.thumbnail}
 
@@ -89,11 +89,11 @@ On the left side, the possible options (eligible services to be configured) are 
 
 On the right you see what is already configured with your vRack.
 
-Select your new Addtional IPv6 and add it to your vRack.
+Select your new Additional IPv6 and add it to your vRack.
 
 ![vrack selection](images/701.png){.thumbnail}
 
-You now have your new Addtional IPv6 added to your vRack.
+You now have your new Additional IPv6 added to your vRack.
 
 ### Static IP configuration
 
@@ -118,7 +118,7 @@ Don't forget to configure SLAAC on your host machine.
 
 When you request an additional IPv6, it is automatically assigned to your vRack.
 
-If you removed this new Addtional IPv6 from your vRack, you can assign it again using this POST method:
+If you removed this new Additional IPv6 from your vRack, you can assign it again using this POST method:
 
 > [!api]
 >

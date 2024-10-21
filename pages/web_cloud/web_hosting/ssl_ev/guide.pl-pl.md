@@ -1,7 +1,7 @@
 ---
-title: "Użyj certyfikatu SSL EV dla swojej strony www"
+title: "Hosting WWW - Aktywacja certyfikatu SSL EV"
 excerpt: "Dowiedz się, jak zamówić i zainstalować certyfikat SSL EV na Twoim hostingu WWW OVHcloud"
-updated: 2023-06-08
+updated: 2024-10-10
 ---
 
 > [!primary]

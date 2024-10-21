@@ -21,12 +21,12 @@ Na przykład: chcesz, aby wszystkie e-maile zawierające "[SPAM]" w temacie zost
 
 ## Wymagania początkowe
 
-- Posiadanie usługi e-mail MX Plan (dostępnej poprzez: [oferta hostingu](https://www.ovhcloud.com/pl/web-hosting/){.external}, bezpłatny [Darmowy hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/){.external} zawarty w ofercie domeny lub oferta MX Plan zamówiona oddzielnie).
-- Posiadanie dostępu do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
+- Posiadanie usługi e-mail MX Plan (dostępnej poprzez: [oferta hostingu](/links/web/hosting), bezpłatny [Darmowy hosting 100M](/links/web/domains-free-hosting) zawarty w ofercie domeny lub oferta MX Plan zamówiona oddzielnie).
+- Posiadanie dostępu do [Panelu klienta](/links/manager)
 
 > [!warning]
 >
-> Poniższy przewodnik skierowany jest do posiadaczy "historycznej" oferty MXplan. W przypadku nowej oferty zarządzanie filtrami odbywa się bezpośrednio w Webmail OWA (**O**utlook **W**eb **A**pp). Zidentyfikuj ofertę korzystając z poniższej tabeli.
+> Poniższy przewodnik skierowany jest do posiadaczy "historycznej" oferty MX Plan. W przypadku nowej oferty zarządzanie filtrami odbywa się bezpośrednio w Webmail OWA (**O**utlook **W**eb **A**pp). Zidentyfikuj ofertę korzystając z poniższej tabeli.
 >
 
 Poprzednia wersja usługi MX Plan|Nowa wersja usługi MX Plan|
@@ -36,11 +36,11 @@ Poprzednia wersja usługi MX Plan|Nowa wersja usługi MX Plan|
 
 ## W praktyce <a name="oldmxplan"></a>
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} w sekcji `Web Cloud`.
+Zaloguj się do [Panelu klienta OVHcloud](/links/manager) w sekcji `Web Cloud`.
 
 Kliknij E-maile na pasku usług, po czym wybierz odpowiednią usługę MX Plan.
 
-W zakładce `E-maile`{.action} w Twojej usłudze MXplan znajdziesz listę Twoich kont e-mail. Kolumna `Filtry` jest widoczna w tabeli kont e-mail. Kliknij ikonę lejka.
+W zakładce `E-maile`{.action} w Twojej usłudze MX Plan znajdziesz listę Twoich kont e-mail. Kolumna `Filtry` jest widoczna w tabeli kont e-mail. Kliknij ikonę lejka.
 
 ![emails](images/img_3239.png){.thumbnail}
 

@@ -17,7 +17,7 @@ This can be useful in cases where:
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - A [Public Cloud Instance](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
 - Administrative (sudo) access to your instance via SSH (Linux) or RDP (Windows)
 
@@ -30,7 +30,7 @@ This can be useful in cases where:
 
 ### Attaching a new volume
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and open your `Public Cloud`{.action} project. Then open `Block Storage`{.action} in the left-hand menu.
+Log in to the [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project. Then open `Block Storage`{.action} in the left-hand menu.
 
 In this section, click on the button `Create a volume`{.action}.
 
@@ -65,7 +65,7 @@ The examples below presume you are logged in as a user with elevated permissions
 
 #### Using Linux
 
-Establish an [SSH connection to your instance](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance), then use the command below to list the attached disks.
+Establish an [SSH connection to your instance](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance), then use the command below to list the attached disks.
 
 ```bash
 lsblk
@@ -353,7 +353,7 @@ If you wish to detach a volume from your instance, the best practice is to unmou
 
 #### On Linux
 
-Establish an [SSH connection to your instance](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance), then use the command below to list the attached disks.
+Establish an [SSH connection to your instance](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance), then use the command below to list the attached disks.
 
 ```bash
 lsblk
@@ -427,4 +427,4 @@ Click on `Confirm`{.action} in the pop up window to start the process.
 
 [Increasing the size of an additional disk](/pages/public_cloud/compute/increase_the_size_of_an_additional_disk)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

@@ -14,7 +14,7 @@ Si vous configurez votre VPS comme serveur DNS, vous pouvez utiliser le service 
 
 - Un nom de domaine auquel vous avez accès en tant qu’administrateur
 - Un serveur [VPS](https://www.ovhcloud.com/fr/vps/) dans votre espace client OVHcloud
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 
 > [!warning]
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d’en assurer le bon fonctionnement.
@@ -26,7 +26,7 @@ Si vous configurez votre VPS comme serveur DNS, vous pouvez utiliser le service 
 
 ### Étape 1 : récupération du code de validation <a name="retrievecode"></a>
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveur privés virtuels`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveur privés virtuels`{.action}.
 
 Basculez sur l'onglet `DNS Secondaire`{.action} et cliquez sur le bouton `Ajouter un domaine`{.action}.
 
@@ -48,7 +48,7 @@ L'action à effectuer est différente selon l'endroit où les DNS de votre nom d
 
 - Si le nom de domaine est géré par un bureau d'enregistrement externe **ou** s'il utilise à ce stade des serveurs DNS externes, connectez-vous à l'espace client de votre prestataire DNS et ajoutez, dans la zone DNS, une entrée de type TXT avec le sous-domaine « ownercheck » ainsi que la valeur fournie en exécutant l'[étape 1](#retrievecode).
 
-- Si le nom de domaine est géré par OVHcloud en tant que registrar **et** qu'il utilise les serveurs DNS d'OVHcloud, ajoutez l'enregistrement TXT dans la section `Web Cloud`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Suivez alors les instructions décrites dans notre guide « [Editer sa zone DNS](/pages/web_cloud/domains/dns_zone_edit) » si ce processus ne vous est pas familier.
+- Si le nom de domaine est géré par OVHcloud en tant que registrar **et** qu'il utilise les serveurs DNS d'OVHcloud, ajoutez l'enregistrement TXT dans la section `Web Cloud`{.action} de votre [espace client OVHcloud](/links/manager). Suivez alors les instructions décrites dans notre guide « [Editer sa zone DNS](/pages/web_cloud/domains/dns_zone_edit) » si ce processus ne vous est pas familier.
 
 ![DNS Secondaire](images/sec-04.png){.thumbnail}
 
