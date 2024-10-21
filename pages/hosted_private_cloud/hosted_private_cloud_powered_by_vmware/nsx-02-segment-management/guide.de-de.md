@@ -35,7 +35,7 @@ The segments are linked to transport zones that are predefined by OVHcloud.
 
 ## Instructions
 
->![primary]
+> [!primary]
 > Please note that the designations (such as the VLAN number) and IP addresses of the network configurations are provided as examples, and can be modified if required.
 
 ### Creating a segment in the NSX interface

@@ -20,8 +20,8 @@ A delegação dá ao utilizador de uma conta de e-mail a possibilidade de gerir 
 
 ## Requisitos
 
-- Dispor de uma oferta MX Plan Está disponível através de: uma [oferta de alojamento Web Cloud](https://www.ovhcloud.com/pt/web-hosting/), um [Alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/) ou uma oferta MX Plan encomendada separadamente.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na secção `Web Cloud`{.action}.
+- Dispor de uma oferta MX Plan Está disponível através de: uma [oferta de alojamento Web Cloud](/links/web/hosting), um [Alojamento gratuito 100M](/links/web/domains-free-hosting) ou uma oferta MX Plan encomendada separadamente.
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager), na secção `Web Cloud`{.action}.
 
 > [!warning]
 >
@@ -37,14 +37,14 @@ A delegação dá ao utilizador de uma conta de e-mail a possibilidade de gerir 
 
 > [!primary]
 >
->A criação de uma delegação numa conta de e-mail indica-o no [espaço de cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) em causa. No entanto, nesta situação, apenas serão possíveis as alterações indicadas na secção [Objetivo](#objective) deste guia.
+>A criação de uma delegação numa conta de e-mail indica-o no [espaço de cliente](/links/manager) em causa. No entanto, nesta situação, apenas serão possíveis as alterações indicadas na secção [Objetivo](#objective) deste guia.
 >
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`.
+Aceda à [Área de Cliente OVHcloud](/links/manager), na secção `Web Cloud`.
 
 Clique em `E-mails`{.action} e selecione o serviço MX Plan correspondente.
 
-Para apresentar a lista das contas de e-mail da sua oferta MXplan, clique no separador `Emails`{.action}.
+Para apresentar a lista das contas de e-mail da sua oferta MX Plan, clique no separador `Emails`{.action}.
 
 ![delegação](images/mxplan-delegation-01.png){.thumbnail}
 
@@ -60,7 +60,7 @@ Surge uma nova janela. Clique no botão `+`{.action} à direita da linha `Adicio
 
 ![delegação](images/mxplan-delegation-03.png){.thumbnail}
 
-Pode delegar a gestão do seu serviço MXplan em vários identificadores OVHcloud.
+Pode delegar a gestão do seu serviço MX Plan em vários identificadores OVHcloud.
 
 ### Delegar uma ou várias contas de e-mail tem um identificador
 

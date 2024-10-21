@@ -21,8 +21,8 @@ Por ejemplo: desea que se elimine todo email que contenga "[SPAM]" en el asunto.
 
 ## Requisitos
 
-- Disponer de una solución de correo MX Plan (disponible a través de: un [plan de hosting](https://www.ovhcloud.com/es/web-hosting/){.external}, el [Alojamiento gratuito 100M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/){.external} incluido con un dominio o la solución MX Plan contratada por separado.
-- Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+- Disponer de una solución de correo MX Plan (disponible a través de: un [plan de hosting](/links/web/hosting), el [Alojamiento gratuito 100M](/links/web/domains-free-hosting) incluido con un dominio o la solución MX Plan contratada por separado.
+- Tener acceso al [área de cliente de OVHcloud](/links/manager).
 
 > [!warning]
 >
@@ -36,11 +36,11 @@ Versión histórica de la solución MX Plan|Nueva versión de la solución MX Pl
 
 ## En la práctica <a name="oldmxplan"></a>
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} en la sección `Web Cloud`.
+Conéctese al [área de cliente de OVHcloud](/links/manager) en la sección `Web Cloud`.
 
 Haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente.
 
-En la pestaña `Correo electrónico`{.action} de su servicio MXplan, encontrará la lista de sus direcciones de correo. En el cuadro de cuentas de correo puede verse una columna `Filtros`. Haga clic en el icono de embudo.
+En la pestaña `Correo electrónico`{.action} de su servicio MX Plan, encontrará la lista de sus direcciones de correo. En el cuadro de cuentas de correo puede verse una columna `Filtros`. Haga clic en el icono de embudo.
 
 ![correo electrónico](images/img_3239.png){.thumbnail}
 

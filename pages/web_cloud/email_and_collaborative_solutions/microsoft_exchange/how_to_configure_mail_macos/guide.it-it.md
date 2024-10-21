@@ -1,6 +1,6 @@
 ---
-title: Configurare un account Exchange su Mail di macOS 
-updated: 2021-12-28
+title: Exchange - Configura il tuo account di posta elettronica su Mail per macOS 
+updated: 2024-10-09
 ---
 
 <style>
@@ -81,7 +81,7 @@ Gli account Exchange possono essere configurati su client di posta compatibili. 
 
 Una volta configurato l’indirizzo email, non ti resta che utilizzarlo! A partire da questo momento puoi inviare e ricevere messaggi.
 
-OVHcloud propone anche un'applicazione Web che permette di accedere al tuo indirizzo email da un browser Internet disponibile alla pagina <https://www.ovhcloud.com/it/mail/> accessibile utilizzando le credenziali del tuo account. Se hai bisogno di aiuto per effettuare questa operazione, consulta [il tuo account dall'interfaccia OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
+OVHcloud propone anche un'applicazione Web che permette di accedere al tuo indirizzo email da un browser Internet disponibile alla pagina [Webmail](/links/web/email) accessibile utilizzando le credenziali del tuo account. Se hai bisogno di aiuto per effettuare questa operazione, consulta [il tuo account dall'interfaccia OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
 ### Recuperare un backup del tuo indirizzo email
 
@@ -97,6 +97,10 @@ Se il tuo account email è già configurato e devi accedere alle impostazioni de
 ![mailmac](images/mail-mac-exchange06.png){.thumbnail .w-400 .h-600}
 
 ## Per saperne di più
+
+> [!primary]
+>
+> Per informazioni sulla configurazione di un indirizzo email dall’applicazione Mail su macOS, consulta [il centro assistenza Apple](https://support.apple.com/it-it/guide/mail/mail35803/mac).
 
 [FAQ e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 

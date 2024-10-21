@@ -18,7 +18,7 @@ GPU instances are technically similar to the instances from the older range, but
 ## Requirements
 
 - A Public Cloud project with access to the regions where most GPUs are available (GRA7, GRA9, GRA11 and BHS5)
-- [An SSH key](/pages/public_cloud/compute/public-cloud-first-steps#step-1-creating-ssh-keys) created to deploy a linux GPU instance.
+- [An SSH key](/pages/public_cloud/compute/creating-ssh-keys-pci) created to deploy a linux GPU instance.
 
 ## Instructions
 
@@ -37,7 +37,7 @@ Once you have logged in to [your OVHcloud Control Panel](/links/manager), go to 
 
 ![public-cloud](images/GPU-Flavors_2024.png){.thumbnail}
 
-Next, follow the remaining steps as detailed in [this guide](/pages/public_cloud/compute/public-cloud-first-steps#step-3-creating-an-instance). This process may take a few minutes.
+Next, follow the remaining steps as detailed in [this guide](/pages/public_cloud/compute/public-cloud-first-steps#create-instance). This process may take a few minutes.
 
 Once the instance is delivered, you can then log in and check for the graphics card: 
 
@@ -111,7 +111,7 @@ In the next step, go to the `Windows operating systems` tab and click ont the dr
 
 ![public-cloud](images/EN-WindowsImages_2024.png){.thumbnail}
 
-Next, follow the remaining steps as detailed in [this guide](/pages/public_cloud/compute/public-cloud-first-steps#step-3-creating-an-instance). This process may take a few minutes.
+Next, follow the remaining steps as detailed in [this guide](/pages/public_cloud/compute/public-cloud-first-steps#create-instance). This process may take a few minutes.
 
 > [!warning]
 >
@@ -157,4 +157,4 @@ Afterwards, all that’s left to do is to install the required driver, which wil
 
 ## Going further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

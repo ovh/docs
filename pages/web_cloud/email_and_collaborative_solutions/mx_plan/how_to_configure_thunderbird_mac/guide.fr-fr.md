@@ -1,7 +1,7 @@
 ---
-title: 'Configurer son adresse e-mail sur Thunderbird pour Mac OS'
+title: 'MX Plan - Configurer son compte e-mail sur Thunderbird pour macOS'
 excerpt: 'Découvrez comment configurer votre adresse e-mail MX Plan sur Thunderbird sur Mac OS'
-updated: 2021-08-26
+updated: 2024-10-01
 ---
 
 ## Objectif
@@ -19,7 +19,7 @@ Les comptes MX Plan peuvent être configurés sur différents logiciels de messa
 
 ## Prérequis
 
-- Disposer d’une adresse e-mail MX Plan (comprise dans l’offre MX Plan ou dans une offre d’[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external}).
+- Disposer d’une adresse e-mail MX Plan (comprise dans l’offre MX Plan ou dans une offre d’[hébergement web OVHcloud](/links/web/hosting)).
 - Disposer du logiciel Thunderbird installé sur votre Mac.
 - Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
  
@@ -48,7 +48,7 @@ Dans le cadre d'une configuration en **POP**, les valeurs sont les suivantes:
 
 Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
 
-OVHcloud propose aussi une application web permettant d'accéder à votre adresse e-mail depuis un navigateur internet. Celle-ci est accessible à l’adresse <https://www.ovh.com/fr/mail/>. Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail. Pour toute question relative à son utilisation, aidez-vous de notre guide [Consulter son compte Exchange depuis l’interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) ou [Utiliser son adresse e-mail depuis le webmail RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube#ou-et-comment-se-connecter-au-webmail-roundcube).
+OVHcloud propose aussi une application web permettant d'accéder à votre adresse e-mail depuis un navigateur internet. Celle-ci est accessible à l’adresse [Webmail](/links/web/email). Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail. Pour toute question relative à son utilisation, aidez-vous de notre guide [Consulter son compte Exchange depuis l’interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) ou [Utiliser son adresse e-mail depuis le webmail RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube#ou-et-comment-se-connecter-au-webmail-roundcube).
 
 ### Récupérer une sauvegarde de votre adresse e-mail
 
@@ -73,5 +73,10 @@ Si votre compte e-mail est déjà paramétré et que vous devez accéder aux par
 ![Thunderbird](images/thunderbird-mac-mxplan06.png){.thumbnail}
 
 ## Aller plus loin
+
+> [!primary]
+>
+> Pour plus d'informations sur la configuration d'une adresse e-mail depuis l'application Thunderbird sur macOS, consultez [le centre d'aide Mozilla](https://support.mozilla.org/fr/kb/configurer-un-compte-manuellement).
+
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

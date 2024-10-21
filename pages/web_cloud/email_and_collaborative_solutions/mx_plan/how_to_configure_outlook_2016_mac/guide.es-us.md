@@ -1,7 +1,7 @@
 ---
 title: 'MX Plan - Configurar una dirección de correo electrónico en Outlook para macOS'
 excerpt: 'Cómo configurar una cuenta MX Plan en Outlook para macOS'
-updated: 2018-05-31
+updated: 2024-10-01
 ---
 
 ## Objetivo
@@ -17,13 +17,13 @@ Es posible configurar sus cuentas MX Plan en el cliente de correo que usted util
 
 ## Requisitos
 
-- Tener una cuenta MX Plan (incluida en un MX Plan o en un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}).
+- Tener una cuenta MX Plan (incluida en un MX Plan o en un [plan de hosting de OVHcloud](/links/web/hosting)).
 - Tener la aplicación Microsoft Outlook instalada en su dispositivo Mac.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
 
 > [!primary]
 >
-> Si utiliza Outlook para Windows, consulte nuestra guía [Configurar una cuenta de correo electrónico en Outlook para Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016){.external}.
+> Si utiliza Outlook para Windows, consulte nuestra guía [Configurar una cuenta de correo electrónico en Outlook para Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016).
 >
 
 ## Procedimiento
@@ -77,8 +77,12 @@ En caso de que la aplicación le pida que introduzca de forma manual algunos dat
 
 Una vez que haya configurado la dirección de correo electrónico, ya puede empezar a utilizarla enviando y recibiendo mensajes.
 
-OVHcloud ofrece una aplicación web con la que podrá acceder a su cuenta de correo electrónico desde el navegador, disponible en la dirección <https://www.ovh.com/world/es/mail/>. Puede conectarse con el nombre de usuario y la contraseña de su dirección de correo electrónico.
+OVHcloud ofrece una aplicación web con la que podrá acceder a su cuenta de correo electrónico desde el navegador, disponible en la dirección [Webmail](/links/web/email). Puede conectarse con el nombre de usuario y la contraseña de su dirección de correo electrónico.
 
 ## Más información
+
+> [!primary]
+>
+> Para más información sobre la configuración de una dirección de correo electrónico desde la aplicación Outlook en macOS, consulte [el Centro de ayuda de Microsoft](https://support.microsoft.com/es-es/office/add-an-email-account-to-outlook-for-mac-6aeec61b-86af-40af-8ffe-985d0fc82ddb).
 
 Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/).

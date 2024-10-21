@@ -1,7 +1,7 @@
 ---
 title: MX Plan - Configurer son adresse e-mail sur Outlook pour macOS
 excerpt: Apprenez à configurer votre adresse e-mail MX Plan sur Outlook pour macOS
-updated: 2018-05-31
+updated: 2024-10-01
 ---
 
 ## Objectif
@@ -19,13 +19,13 @@ Les adresses e-mail de l'offre MX Plan peuvent être configurées sur un logicie
 
 ## Prérequis
 
-- Disposer d’une adresse e-mail MX Plan (comprise dans l’offre MX Plan ou dans une offre d’[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external}).
+- Disposer d’une adresse e-mail MX Plan (comprise dans l’offre MX Plan ou dans une offre d’[hébergement web OVHcloud](/links/web/hosting)).
 - Disposer de l'application Microsoft Outlook installée sur votre Mac.
 - Disposer des identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
 
 > [!primary]
 >
-> Vous utilisez Outlook pour Windows ? Consultez notre documentation : [Configurer son adresse e-mail sur Outlook pour Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016){.external}.
+> Vous utilisez Outlook pour Windows ? Consultez notre documentation : [Configurer son adresse e-mail sur Outlook pour Windows](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016).
 >
 
 ## En pratique
@@ -79,12 +79,16 @@ Si vous devez renseigner manuellement des champs techniques dans les préférenc
 
 Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
 
-OVHcloud propose aussi une application web permettant d'accéder à votre adresse e-mail depuis un navigateur internet. Celle-ci est accessible à l’adresse <https://www.ovh.com/fr/mail/>. Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail.
+OVHcloud propose aussi une application web permettant d'accéder à votre adresse e-mail depuis un navigateur internet. Celle-ci est accessible à l’adresse [Webmail](/links/web/email). Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail.
 
 ## Aller plus loin
 
-[Configurer son compte E-mail Pro sur Outlook pour Mac](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016_mac){.external}.
+> [!primary]
+>
+> Pour plus d'informations sur la configuration d'une adresse e-mail depuis l'application Outlook sur macOS, consultez [le centre d'aide Microsoft](https://support.microsoft.com/fr-fr/office/add-an-email-account-to-outlook-for-mac-6aeec61b-86af-40af-8ffe-985d0fc82ddb).
 
-[Configurer son compte Exchange sur Outlook pour Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac){.external}.
+[Configurer son compte E-mail Pro sur Outlook pour Mac](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016_mac).
+
+[Configurer son compte Exchange sur Outlook pour Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

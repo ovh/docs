@@ -1,7 +1,7 @@
 ---
-title: 'Configurare un NIC per il servizio OVHcloud Link Aggregation in Debian 9'
-excerpt: "Attivare l'opzione OVHcloud Link Aggregation sul tuo server Debian 9"
-updated: 2022-01-07
+title: 'Configurare un NIC per il servizio OVHcloud Link Aggregation in Debian 9 a 11'
+excerpt: "Attivare l'opzione OVHcloud Link Aggregation sul tuo server Debian 9 a 11"
+updated: 2024-10-16
 ---
 
 > [!primary]
@@ -12,12 +12,12 @@ updated: 2022-01-07
 
 La tecnologia OVHcloud Link Aggregation (OLA) è stata progettata dai team OVHcloud per aumentare la disponibilità dei server e potenziare le connessioni di rete. L’attivazione dell’opzione permette di aggregare in pochi click le schede di rete e rendere i collegamenti ridondati in modo che, in caso di malfunzionamenti, il traffico venga reindirizzato automaticamente verso il collegamento disponibile.
 
-**Questa guida ti mostra come associare i Network Interface Controller (NIC) per utilizzarli con il servizio OLA su un sistema Debian 9.**
+**Questa guida ti mostra come associare i Network Interface Controller (NIC) per utilizzarli con il servizio OLA su un sistema Debian 9 a 11.**
 
 ## Prerequisiti
 
 - [Configurare un NIC per il servizio OVHcloud Link Aggregation nello Spazio Cliente](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager)
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 > [!warning]
 >
@@ -31,7 +31,7 @@ La tecnologia OVHcloud Link Aggregation (OLA) è stata progettata dai team OVHcl
 ## Procedura
 
 Il tipo di configurazione disponibile in OLA per i nostri NIC non permette di accedere al server in SSH. Per stabilire la connessione alla macchina è quindi necessario utilizzare IPMI.
-<br>Per attivare il tool accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Nella sezione `Bare Metal Cloud`{.action}, seleziona il tuo server tra `Server dedicati`{.action} e clicca sulla scheda `IPMI`{.action} (1).
+<br>Per attivare il tool accedi allo [Spazio Cliente OVHcloud](/links/manager). Nella sezione `Bare Metal Cloud`{.action}, seleziona il tuo server tra `Server dedicati`{.action} e clicca sulla scheda `IPMI`{.action} (1).
 
 Clicca sul pulsante `Da una applet Java (KVM)`{.action} (2).
 
@@ -60,14 +60,14 @@ Si aprirà un file di testo vuoto. Per configurare l’interfaccia bond, inseris
 
 ```bash
 auto bond0
-  iface bond0 inet static
+iface bond0 inet static
   address 10.0.0.1/24
   bond-mode 802.3ad
   bond-slaves eno1 eno2
   bond-miimon 100
   bond-downdelay 200
-  bond-lacp-rate 1
-  bond-xmit_hash_policy layer2+3
+  bond-lacp-rate fast
+  bond-xmit_hash_policy layer3+4
 
   up ip -6 addr add fc10:0000:0000:0001::/64 dev bond0
 ```
@@ -83,7 +83,7 @@ A questo punto riavvia il servizio di rete con il comando:
 systemctl restart networking
 ```
 
-Questa operazione potrebbe richiedere alcuni minuti per costruire l’interfaccia bond. Per testare il corretto funzionamento della nuova interfaccia creata, effettua il ping di un altro server presente nella stessa vRack. Se funziona, la procedura è conclusa. In caso contrario, verifica nuovamente la configurazione o prova a riavviare il server.
+Questa operazione potrebbe richiedere alcuni secondi per costruire l’interfaccia bond. Per testare il corretto funzionamento della nuova interfaccia creata, effettua il ping di un altro server presente nella stessa vRack. Se funziona, la procedura è conclusa. In caso contrario, verifica nuovamente la configurazione o prova a riavviare il server.
 
 ## Per saperne di più
 

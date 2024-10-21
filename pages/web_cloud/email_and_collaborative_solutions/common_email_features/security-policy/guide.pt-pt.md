@@ -12,8 +12,8 @@ Os serviços de e-mail da OVHcloud disponibilizam endereços de e-mail profissio
 
 ## Requisitos
 
-- Ter uma [solução de e-mail na OVHcloud](https://www.ovhcloud.com/pt/emails/){.external}.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), secção `Web Cloud`{.action}.
+- Ter uma [solução de e-mail na OVHcloud](/links/web/emails).
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager), secção `Web Cloud`{.action}.
 
 ## Instruções
 
@@ -21,10 +21,10 @@ A gestão da política de segurança do seu serviço de e-mail pode interagir co
 
 - reforçar a segurança das contas de e-mail quando os utilizadores tentam conectar-se;
 - reforçar a segurança das palavras-passe das contas do serviço de e-mail;
-- reforçar a verificação das mensagens de entrada nos nossos servidores e com destino aos seus endereços de e-mail (exclusivamente para contas [Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/){.external};
-- definir a forma como as mensagens «indesejadas» são apresentadas nas caixas de entrada (exclusivamente para contas [Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/){.external}.
+- reforçar a verificação das mensagens de entrada nos nossos servidores e com destino aos seus endereços de e-mail (exclusivamente para contas [Exchange](/links/web/emails-hosted-exchange);
+- definir a forma como as mensagens «indesejadas» são apresentadas nas caixas de entrada (exclusivamente para contas [Exchange](/links/web/emails-hosted-exchange).
 
-Para aceder à política do seu serviço de e-mail, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e certifique-se de que está na secção `Web Cloud`{.action}. 
+Para aceder à política do seu serviço de e-mail, aceda à [Área de Cliente OVHcloud](/links/manager) e certifique-se de que está na secção `Web Cloud`{.action}. 
 
 |E-mails e E-mail Pro|Exchange| 
 |---|---| 
@@ -33,7 +33,7 @@ Para aceder à política do seu serviço de e-mail, aceda à [Área de Cliente O
 
 > [!primary]
 >
-> Se não vê o separador `Plus`{.action} no painel de gestão da sua oferta `E-mails`{.action}, isso significa que está numa oferta MXplan histórico. Não existe gestão da política de segurança na oferta MXplan histórico.
+> Se não vê o separador `Plus`{.action} no painel de gestão da sua oferta `E-mails`{.action}, isso significa que está numa oferta MX Plan histórico. Não existe gestão da política de segurança na oferta MX Plan histórico.
 
 Continue a ler este manual na secção correspondente à ação que pretende realizar:
 

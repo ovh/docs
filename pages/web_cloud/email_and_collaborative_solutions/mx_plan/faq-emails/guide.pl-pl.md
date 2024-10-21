@@ -69,7 +69,7 @@ Ze względów bezpieczeństwa i prywatności nie jest możliwe **odzyskanie** ha
 
 ### Jak ograniczyć ilość otrzymywanego spamu?
 
-Aby ograniczyć liczbę wiadomości-śmieci, możesz skonfigurować filtry dla poczty e-mail (w ofercie MXPlan — „Filtrowanie”). Ich celem jest usunięcie lub przeniesienie tego typu wiadomości do folderu „Spam” w momencie ich odebrania.
+Aby ograniczyć liczbę wiadomości-śmieci, możesz skonfigurować filtry dla poczty e-mail (w ofercie MX Plan — „Filtrowanie”). Ich celem jest usunięcie lub przeniesienie tego typu wiadomości do folderu „Spam” w momencie ich odebrania.
 W tym celu zaloguj się do [Panelu klienta OVHcloud](/links/manager), przejdź do rubryki `E-mail`, a następnie wybierz daną domenę, kartę `E-mail`{.action}, a potem w kolumnie `Filtrowanie`{.action} kliknij przycisk akcji.
 
 Jeśli w Panelu klienta nie widzisz kolumny `Filtrowanie`{.action}, wówczas tworzenie filtrów odbywa się za pośrednictwem reguł zarządzania skrzynką odbiorczą w interfejsie [webmail](/links/web/email). Więcej szczegółów znajdziesz w przewodniku: [Reguły skrzynki odbiorczej w interfejsie OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan).

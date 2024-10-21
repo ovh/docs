@@ -17,7 +17,7 @@ Non è possibile ricevere o inviare email dal tuo client di posta o dalla Webmai
 ## Prerequisiti
 
 - Disporre di una soluzione **MX Plan** o di una soluzione **Email Pro** o di una soluzione **Exchange**
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
@@ -51,19 +51,19 @@ Se utilizzi un client di posta sul tuo computer (Outlook, Mail di Mac, Thunderbi
 
 ### Non riesco a ricevere email perché il mio indirizzo email è pieno, non ho più spazio. Cosa posso fare?
 
-Se hai attivato [una delle nostre soluzioni email OVHcloud](https://www.ovhcloud.com/it/email/) e uno dei tuoi account è pieno, consulta la nostra guida "[Gestire lo spazio di storage di un account email](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota)". Questa guida ti mostra come ottimizzare lo spazio disponibile o se è necessario cambiare il tuo servizio di posta per aumentare lo spazio di storage.
+Se hai attivato [una delle nostre soluzioni email OVHcloud](/links/web/emails) e uno dei tuoi account è pieno, consulta la nostra guida "[Gestire lo spazio di storage di un account email](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/email_manage_quota)". Questa guida ti mostra come ottimizzare lo spazio disponibile o se è necessario cambiare il tuo servizio di posta per aumentare lo spazio di storage.
 
 ### Le email sono funzionali dalla Webmail? (**invio** e/o **ricezione**)
 
 Per assicurarti che il malfunzionamento non sia associato a un errore di configurazione, effettua un test di invio e di ricezione direttamente dalla Webmail di OVHcloud. Se tutto funziona correttamente, verifica la configurazione del tuo software tramite le guide disponibili.
 
-Dal browser del vostro computer o da uno smartphone, andate sull'indirizzo <https://www.ovh.it/mail/>.
+Dal browser del vostro computer o da uno smartphone, andate sull'indirizzo [Webmail](/links/web/email).
 
 ![webmail](images/webmail.png){.thumbnail}
 
 ### Non riesco a connettermi alla Webmail
 
-Assicurati di avere la password giusta. Se necessario, è possibile modificarlo. Verifica che la doppia autenticazione sia attiva ([solo Exchange](https://www.ovhcloud.com/it/emails/hosted-exchange/)).
+Assicurati di avere la password giusta. Se necessario, è possibile modificarlo. Verifica che la doppia autenticazione sia attiva ([solo Exchange](/links/web/emails-hosted-exchange)).
 
 Come modificare la password di un indirizzo email:
 
@@ -113,7 +113,7 @@ Di seguito trovi la maggior parte dei codici di risposta negativi SMTP utilizzat
 |421|Servizio non disponibile, canale di trasmissione in corso di chiusura|Provenienza dall'errore indefinito, assicurati che l'invio verso un altro dominio funzioni correttamente. In caso affermativo, riprova l'invio iniziale più tardi|
 |432|Ricezione dell'email sul server Exchange bloccato|Questo messaggio di errore viene restituito solo dai server mail Microsoft Exchange. Contatta l'amministratore del server di posta di destinazione|
 |449|Errore di routing|Questo messaggio di errore viene restituito solo dai server mail Microsoft Exchange. Microsoft consiglia di effettuare una diagnostica con il loro tool WinRoute|
-|450|Azione di messaggeria richiesta non effettuata: casella email non disponibile (ad esempio, una casella email occupata o temporaneamente bloccata per motivi di sicurezza o per ragioni di blacklist)|Verifica che il tuo indirizzo IP del server di posta non sia inserito nella blacklist ([SpamHaus](https://check.spamhaus.org/){.external}) e verifica che la tua email non contenga parole relative allo SPAM.|
+|450|Azione di messaggeria richiesta non effettuata: casella email non disponibile (ad esempio, una casella email occupata o temporaneamente bloccata per motivi di sicurezza o per ragioni di blacklist)|Verifica che il tuo indirizzo IP del server di posta non sia inserito nella blacklist ([SpamHaus](https://check.spamhaus.org/)) e verifica che la tua email non contenga parole relative allo SPAM.|
 |451|Azione richiesta abbandonata: Errore di trattamento locale|Ciò può essere dovuto a un sovraccarico temporaneo o a una verifica del record SPF del dominio di emissione non corretto. Fai riferimento al messaggio aggiuntivo fornito dal server o contatta l'amministratore del server se questo persiste|
 |452|Azione richiesta non effettuata: sistema di archiviazione insufficiente|Il tuo server di posta è "sovraccarico". Ciò potrebbe essere causato anche da troppi messaggi che cercano di essere inviati contemporaneamente. Verifica la tua casella di posta e riprova|
 |455|Server incapace di ricevere le impostazioni|Attendi qualche tempo e prova a riprovare. In caso di malfunzionamento, contatta l'amministratore del server di posta del destinatario|
@@ -129,7 +129,7 @@ Di seguito trovi la maggior parte dei codici di risposta negativi SMTP utilizzat
 |551|Utenti non locali|Questo viene generalmente utilizzato come strategia di prevenzione contro lo spam. Ti ricordiamo che il corriere di posta non è autorizzato per alcun motivo a trasferire il tuo messaggio verso un server diverso dal tuo. Contatta il tuo provider di servizi|
 |552|Azione di messaggistica richiesta interrotta: spazio di storage superato|L'utente che hai cercato di contattare non ha più spazio disponibile per ricevere messaggi. Purtroppo, l'unica soluzione è contattare il destinatario con un altro metodo|
 |553|Azione richiesta non effettuata: indirizzo email non autorizzato|La causa principale di questa operazione è in genere un indirizzo email di destinazione non corretto. Verifica che l'indirizzo email in questione sia corretto|
-|554|Operazione fallita, "Nessun servizio SMTP qui"|Di solito è un problema di blacklist. Verifica che il tuo indirizzo IP del server di posta non sia inserito nella blacklist ([SpamHaus](https://check.spamhaus.org/){.external})|
+|554|Operazione fallita, "Nessun servizio SMTP qui"|Di solito è un problema di blacklist. Verifica che il tuo indirizzo IP del server di posta non sia inserito nella blacklist ([SpamHaus](https://check.spamhaus.org/))|
 |555|MAIL FROM / RCPT TO, parametri non riconosciuti o non attuati|Il server SMTP in uscita non registra correttamente l'indirizzo email utilizzato nei parametri "Da" o "A". Verifica la correttezza degli indirizzi email indicati e verifica che non sia stato superato il limite definito da OVHcloud: 200 email/ora/account e 300 email/ora/ip|
 
 ## Per saperne di più

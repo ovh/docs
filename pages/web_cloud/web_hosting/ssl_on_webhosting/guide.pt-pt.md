@@ -83,8 +83,11 @@ Antes de realizar esta configuração, certifique-se de que a etapa anterior de 
 >
 > Antes de continuar, certifique-se de que as entradas multisite para as quais ativou a opção SSL apontam para o endereço IP do alojamento web. Esta configuração é-lhe automaticamente proposta quando adiciona ou modifica uma entrada multi-site, mas deve ser feita manualmente para um nome de domínio que não é gerido na sua Área de Cliente.<br>
 > - Encontre o endereço IP do seu alojamento a partir do separador `Informações gerais`{.action}, na menção `IPv4`.
+>
 > ![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4.png){.thumbnail}
+>
 > - Configure a zona DNS do domínio declarado em multi-site, a partir da rubrica `Domínio`{.action}, onglet `Zona DNS`{.action}. Altere ou adicione um registo de tipo `A` para a sua entrada multisite e indique o endereço IP do seu alojamento na `Alvo`.
+>
 > ![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dns-zone/modify-an-entry.png){.thumbnail}
 >
 > Para mais informações, consulte os nossos manuais [sobre a configuração de uma entrada multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) ou sobre [a configuração de uma zona DNS](/pages/web_cloud/domains/dns_zone_edit).

@@ -1,7 +1,7 @@
 ---
 title: 'Hosting multiple websites on your Web Hosting plan'
 excerpt: 'Find out how to host several websites on your Web Hosting plan'
-updated: 2024-03-15
+updated: 2024-10-08
 ---
 
 ## Objective
@@ -16,6 +16,7 @@ You can host multiple websites on a single Web Hosting plan, even if the domain 
 - 2: [Add a domain or subdomain](#add-domain)
     - 2.1: [Adding an OVHcloud-registered domain](#add-ovhcloud-domain)
     - 2.2: [Adding an external domain](#add-external-domain)
+    - 2.3: [Diagnose your domain names](#diagnostic-domain)
 - 3: [Put your website online](#site-online)
 
 ## Requirements
@@ -129,7 +130,7 @@ Now that you have added your domain, go to [Step 3: Put your website online](#si
 > ![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/find-ipv4-and-ipv6.png){.thumbnail}
 >
 
- You will now need to customise the way you add your domain. Please note that some of the options included in your [Web Hosting plan](/links/web/hosting){.external} cannot be enabled during this process. You will need to finalise this operation in order to use them, by modifying the multisite settings once the domain is attached.
+You will now need to customise the way you add your domain. Please note that some of the options included in your [Web Hosting plan](/links/web/hosting){.external} cannot be enabled during this process. You will need to finalise this operation in order to use them, by modifying the multisite settings once the domain is attached.
 
 |Information|Description|
 |---|---|
@@ -151,6 +152,44 @@ Check the information displayed, then click `Confirm`{.action}. Once you have do
 >
 > You need to **quickly** make these changes for your domain to be correctly added. Otherwise, your domain addition will be cancelled.
 >
+
+#### Step 2.3: Diagnose your domain names <a name="diagnostic-domain"></a>
+
+In the table in the `Multisite` tab, a `Diagnostic` column informs you if your domain name points correctly to the associated web hosting plan. This way, you can quickly check that your domain name’s DNS configuration has been correctly configured with your Web Hosting plan. This column helps you identify and resolve any pointing problems. For each domain name, there are three possible diagnostic results:
+
+- `A/AAAA` green
+- `A/YYYY` yellow
+- `A/AAAA` grey
+
+##### Green A/AAAA
+
+![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-green-info.png){.thumbnail}
+
+When the `A/AAAA` icon is green in the `Diagnostic` column, this means that the **A** record (for IPv4 addresses) and/or the **AAAA** record (for IPv6 addresses) of your domain name points correctly to the IP address of your Web Hosting plan. Your domain name’s DNS configuration is therefore compliant for your web hosting plan to work with.
+
+##### Yellow A/AAAA
+
+![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-info.png){.thumbnail}
+
+When the `A/AAAA` icon is yellow in the `Diagnostic` column, this means that the **A** (IPv4) and/or **AAAA** (IPv6) record of your domain name points to an IP address, but it is not the IP address of the Web Hosting plan from which you are viewing the `Diagnostic` column.
+
+Click the yellow `A/AAAA` icon for more information. The following message will appear:
+
+![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-yellow-popup.png){.thumbnail}
+
+To resolve DNS pointing issues for your domain name, and ensure that it points correctly to the web hosting plan you want, follow the steps described in our guide on [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit).
+
+##### Grey A/AAAA
+
+![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-info.png){.thumbnail}
+
+When the `A/AAAA` icon is grey in the `Diagnostic` column, this means that the domain name does not currently point to any IP address and that no **A** or **AAAA** records are configured for this domain name.
+
+Click the grey `A/AAAA` icon for more information. The following message will appear:
+
+![multisite](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/diagnostic-grey-popup.png){.thumbnail}
+
+To add the **A** or **AAAA** records and configure your domain name correctly, follow the steps described in our guide [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit).
 
 ### Step 3: Put your website online <a name="site-online"></a>
 

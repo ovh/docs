@@ -1,7 +1,7 @@
 ---
-title: 'Configurare un account MX Plan sull’applicazione Posta per Windows 10'
+title: 'MX Plan - Configura il tuo account di posta elettronica su Courrier per Windows'
 excerpt: 'Scopri come configurare un account email MX Plan sull’applicazione Posta per Windows'
-updated: 2018-04-04
+updated: 2024-10-01
 ---
 
 ## Obiettivo
@@ -12,13 +12,13 @@ Gli indirizzi email dell’offerta MX Plan possono essere configurati su un clie
 
 ## Prerequisiti
 
-- Disporre di un indirizzo email MX Plan compreso nell’offerta MX Plan o in un’offerta di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}
+- Disporre di un indirizzo email MX Plan compreso nell’offerta MX Plan o in un’offerta di [hosting Web OVHcloud](/links/web/hosting)
 - Aver installato l’applicazione Posta sul proprio dispositivo
 - Disporre delle credenziali associate all’indirizzo email da configurare
 
 > [!primary]
 >
-> Utilizzi una versione precedente di Windows? Consulta la nostra documentazione: [Configurare un account di posta elettronica nell’applicazione Posta per Windows 8](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10){.external}
+> Utilizzi una versione precedente di Windows? Consulta la nostra documentazione: [Configurare un account di posta elettronica nell’applicazione Posta per Windows 8](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10)
 >
 
 ## Procedura
@@ -81,9 +81,13 @@ Se hai necessità di inserire manualmente le preferenze per il tuo account, ecco
 
 Una volta configurato l’indirizzo email, non ti resta che utilizzarlo: da questo momento puoi infatti inviare e ricevere messaggi.
 
-OVHcloud propone un’applicazione Web per accedere al tuo account email direttamente dal tuo browser, disponibile alla pagina <https://www.ovh.it/mail/> e accessibile con le credenziali del tuo account.
- 
+OVHcloud propone un’applicazione Web per accedere al tuo account email direttamente dal tuo browser, disponibile alla pagina [Webmail](/links/web/email) e accessibile con le credenziali del tuo account.
+
 ## Per saperne di più
+
+> [!primary]
+>
+> Per ulteriori informazioni sulla configurazione di un indirizzo e-mail dal client di Posta in Windows, vedere [Guida in linea di Microsoft](https://support.microsoft.com/it-it/office/configurare-la-posta-elettronica-nell-app-posta-7ff79e8b-439b-4b47-8ff9-3f9a33166c60).
 
 [Configurare un account E-mail Pro nell’applicazione Posta per Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_windows_10)
 

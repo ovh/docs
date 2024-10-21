@@ -1,7 +1,7 @@
 ---
 title: "Activer et utiliser le mode rescue"
 excerpt: "Découvrez comment utiliser le mode rescue OVHcloud pour dépanner votre serveur dédié"
-updated: 2024-05-21
+updated: 2024-08-23
 ---
 
 ## Objectif
@@ -60,6 +60,11 @@ Dans cette situation, deux modes d'authentification vous sont proposés :
 Sélectionnez l'option « Authentification par clé SSH » puis saisissez votre clé SSH **publique** dans la zone de texte dédiée.
 
 ![Authentification par clé SSH](images/rescue-mode-08.png){.thumbnail}
+
+> [!primary]
+> 
+> Vous pouvez ajouter une clé SSH par défaut pour le mode rescue d'un serveur via l'API OVHcloud. Pour plus d'informations, consultez [cette partie de ce guide](#rescuessh).
+>
 
 #### Authentification par mot de passe
 
@@ -224,8 +229,41 @@ Les outils suivants sont déjà installés dans ce mode :
 |FileZilla|Un client FTP open source. Il prend en charge les protocoles SSH et SSL, et dispose d'une interface glisser-déposer claire et intuitive. Il peut être utilisé pour transférer vos données vers un serveur FTP, comme la sauvegarde FTP fournie avec la plupart des modèles de serveurs OVHcloud.|
 |7-ZIP|Un utilitaire de compression et d'archivage de fichiers qui lit les formats suivants : ARJ, CAB, CHM, CPIO, CramFS, DEB, DMG, FAT, HFS, ISO, LZH, LZMA, MBR, MSI, NSIS, NTFS, RAR, RPM, SquashFS, UDF, VHD, WIM, XAR et Z. Il vous permet également de créer vos propres archives dans les formats suivants : BZIP2, GZIP, TAR, WIM, XZ, Z et ZIP.|
 
+<a name="rescuessh"></a>
+
+### Comment ajouter une clé SSH par défaut pour le mode rescue
+
+Pour accélérer le processus, vous pouvez ajouter une clé SSH par défaut pour le mode rescue de votre serveur via l'[API OVHcloud](/pages/manage_and_operate/api/first-steps).
+
+Pour ce faire, dans la console Web API, ouvrez le point de terminaison API suivant :
+
+> [!api]
+>
+> @api {v1} /dedicated/server PUT /dedicated/server/{serviceName}
+>
+
+Renseignez le nom interne de votre serveur dans le champ approprié.
+
+Modifiez ensuite le champ de texte ci-dessous comme suit :
+
+```bash
+{
+  "rescueSshKey": "string"
+}
+```
+
+Remplacez `string` par votre clé publique SSH.
+
+Le résultat doit ressembler à ce qui est indiqué dans l'exemple suivant :
+
+![rescue key example](images/rescuekey.png){.thumbnail}
+
+Une fois les valeurs correctement entrées, cliquez sur le bouton `TRY`{.action}.
+
+Le champ de clé SSH sera désormais automatiquement rempli avec cette chaîne de clé lors du changement de mode Netboot.
+
 ## Aller plus loin
 
 [Modifier le mot de passe administrateur sur un serveur dédié Windows](/pages/bare_metal_cloud/dedicated_servers/changing-admin-password-on-windows)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

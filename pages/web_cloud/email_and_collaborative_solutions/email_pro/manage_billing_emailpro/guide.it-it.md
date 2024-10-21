@@ -16,14 +16,14 @@ L'offerta Email Pro dispone di una gestione flessibile riguardante la fatturazio
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
-- Disporre di un [account Email Pro](https://www.ovhcloud.com/it/emails/email-pro/){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+- Disporre di un [account Email Pro](/links/web/email-pro)
 
 ## Procedura
 
 ### Ordina account aggiuntivi
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e clicca sulla sezione `Web Cloud`{.action}. Clicca su `Email Pro`{.action} e seleziona il tuo servizio.
+Accedi allo [Spazio Cliente OVHcloud](/links/manager) e clicca sulla sezione `Web Cloud`{.action}. Clicca su `Email Pro`{.action} e seleziona il tuo servizio.
 
 Clicca sulla scheda `Account email`{.action} e poi sul pulsante `Ordina account`{.action} in alto a destra.
 
@@ -53,7 +53,7 @@ Clicca su `Continua`{.action} per visualizzare le modifiche richieste e poi clic
 
 ### Elimina account
 
-Per eliminare un account dalla tua piattaforma Email Pro, è necessario disattivarlo, modificandone la configurazione di rinnovo su **Nessuno**. Per farlo, consulta lo step ["modifica la periodicità dei tuoi account"](#periodicity){.external}.
+Per eliminare un account dalla tua piattaforma Email Pro, è necessario disattivarlo, modificandone la configurazione di rinnovo su **Nessuno**. Per farlo, consulta lo step ["modifica la periodicità dei tuoi account"](#periodicity).
 
 Una volta disattivato, il tuo account sarà sospeso alla data di scadenza. Per eliminare l’indirizzo email ospitato dall’account prima della data di scadenza, è necessario ripristinarlo.
 

@@ -12,8 +12,8 @@ Możesz wzmocnić bezpieczeństwo swojego konta Exchange za pomocą weryfikacji 
 
 ## Wymagania początkowe
 
-- Wykupienie usługi [Exchange OVHcloud](https://www.ovhcloud.com/pl/emails/hosted-exchange/){.external}.
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- Wykupienie usługi [Exchange OVHcloud](/links/web/emails-hosted-exchange).
+- Dostęp do [Panelu klienta OVHcloud](/links/manager).
 - Zainstalowanie aplikacji OTP na smartfonie lub tablecie z systemem Android lub iOS.
 
 > [!primary]
@@ -33,7 +33,7 @@ Możesz wzmocnić bezpieczeństwo swojego konta Exchange za pomocą weryfikacji 
 
 Przy pierwszej konfiguracji należy aktywować weryfikację dwuetapową w platformie, aby móc ją włączyć w koncie.
 
-Zaloguj się do swojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji `Web Cloud`{.action}. Kliknij `Microsoft`{.action}, a następnie `Exchange`{.action}. Na koniec wybierz swoją usługę Exchange.
+Zaloguj się do swojego [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. Kliknij `Microsoft`{.action}, a następnie `Exchange`{.action}. Na koniec wybierz swoją usługę Exchange.
 
 Wybierz kartę `Bezpieczeństwo`{.action} w platformie. Naciśnij przycisk `Aktywuj`{.action}, który znajduje się pod opcją „Weryfikacja dwuetapowa”. Na koniec przejdź na dół strony i kliknij `Zapisz zmiany`{.action}.
 
@@ -47,7 +47,7 @@ Pozostając w platformie Exchange, przejdź do karty `Konta e-mail`{.action}. Kl
 
 ![2fa-exchange](images/2fa-exchange-01.png){.thumbnail}
 
-Aby powiązać konto z Twoją aplikacją OTP, zaloguj się do [poczty webmail](https://www.ovh.pl/mail/).
+Aby powiązać konto z Twoją aplikacją OTP, zaloguj się do [poczty webmail](/links/web/email).
 
 Przy pierwszym logowaniu wyświetlony zostanie kod QR. Zeskanuj go za pomocą aplikacji OTP, a następnie wprowadź wygenerowany w aplikacji kod, aby się zalogować.
 
@@ -59,7 +59,7 @@ Podczas następnych logowań wymagany będzie jedynie kod wygenerowany przez apl
 
 Weryfikację dwuetapową Twojego konta można wyłączyć na trzy sposoby.
 
-Zaloguj się do swojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji `Web Cloud`{.action}. Kliknij `Microsoft`{.action}, a następnie `Exchange`{.action}. Na koniec wybierz swoją usługę Exchange.
+Zaloguj się do swojego [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}. Kliknij `Microsoft`{.action}, a następnie `Exchange`{.action}. Na koniec wybierz swoją usługę Exchange.
 
 Z poziomu karty `Konta e-mail`{.action} Twojej platformy Exchange kliknij `...`{.action} po prawej stronie konta z aktywną weryfikacją dwuetapową.
 

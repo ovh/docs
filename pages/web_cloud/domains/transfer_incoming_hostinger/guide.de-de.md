@@ -82,7 +82,7 @@ Folgen Sie den Schritten in der [Hostinger Dedicated Documentation](https://supp
 ### EPP- oder Auth-Code abrufen
 
 Wenn Sie einen Domainnamen von Hostinger zu einem anderen Registrar (wie OVHcloud) transferieren möchten, kann der neue Registrar einen Autorisierungscode (EPP-Code oder Auth-Code) anfordern, um zu überprüfen, ob Sie das Recht haben, in Bezug auf den Domainnamen zu handeln.
-Um sich mit der Änderung des Inhabers eines Domainnamens vertraut zu machen, lesen Sie diese [Anleitung](pages/web_cloud/domains/trade_domain).
+Um sich mit der Änderung des Inhabers eines Domainnamens vertraut zu machen, lesen Sie diese [Anleitung](/pages/web_cloud/domains/trade_domain).
 
 > [!warning]
 >

@@ -1,7 +1,7 @@
 ---
 title: "Creare un database su un hosting Web"
 excerpt: "Questa guida ti mostra come creare un database sul tuo hosting Web OVHcloud"
-updated: 2024-05-17
+updated: 2024-09-05
 ---
 
 > [!primary]
@@ -57,8 +57,13 @@ Nella nuova finestra, seleziona le informazioni richieste:
 |Informazione|Descrizione|  
 |---|---| 
 |**Seleziona il tipo di database**|Scegli la dimensione del database. Questa dimensione si riferisce allo spazio di cui dispone il tuo database per l'archiviazione dei dati.|
-|**Seleziona il motore del database da aggiungere**|Scegli il motore che il database deve utilizzare. I database inclusi nella [soluzione di hosting Web OVHcloud](/links/web/hosting) sono disponibili esclusivamente con il motore MySQL.|
+|**Seleziona il motore del database da aggiungere**|Scegli il motore che il database deve utilizzare. Al momento i database inclusi nella [soluzione di hosting Web OVHcloud](/links/web/hosting) sono disponibili esclusivamente con il motore MySQL.|
 |**Seleziona la versione del database da aggiungere**|Scegli la versione utilizzata dal motore del database. Assicurati che il sito Web sia compatibile con la versione scelta.|
+
+> [!primary]
+>
+> L'aggiornamento della versione del motore di un database già creato non è al momento disponibile.
+>
 
 Clicca su `Continua`{.action}.
 

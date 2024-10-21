@@ -1,7 +1,7 @@
 ---
 title: Quelles sont les adresses IP du monitoring OVHcloud ?
 excerpt: Retrouvez ici les adresses IP a renseigner lors de la mise en place d’un firewall, afin que le monitoring OVHcloud continue de fonctionner sur votre serveur.
-updated: 2023-09-21
+updated: 2024-09-06
 ---
 
 ## Objectif
@@ -30,6 +30,7 @@ Pour mettre en place un firewall restrictif, notamment sur l'ICMP, et continuer 
 |netmon-gra-probe|92.222.186.0/24|icmp|
 |netmon-bhs-probe|167.114.37.0/24|icmp|
 |netmon-sgp-probe|139.99.1.144/28|icmp|
+|netmon-waw-probe|193.70.125.118/32|icmp|
 |ping.ovh.net|213.186.33.13|icmp|
 |---|---|---|
 ||xxx.xxx.xxx.250 (xxx.xxx.xxx.aaa étant l'IP du serveur)|icmp|
@@ -44,7 +45,7 @@ Pour mettre en place un firewall restrictif, notamment sur l'ICMP, et continuer 
 
 ### Activer ou désactiver le monitoring
 
-Tout d’abord, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et sélectionnez l'onglet `Bare Metal Cloud`{.action}. Sélectionnez le serveur concerné dans le menu déroulant `Serveurs dédiés`{.action}.
+Tout d’abord, connectez-vous à votre [espace client OVHcloud](/links/manager){.external} et sélectionnez l'onglet `Bare Metal Cloud`{.action}. Sélectionnez le serveur concerné dans le menu déroulant `Serveurs dédiés`{.action}.
 
 Vous pouvez activer ou désactiver le monitoring d'un serveur dédié à partir de l'onglet `Informations générales`{.action}. L'option se situe dans la section `État des services`.
 

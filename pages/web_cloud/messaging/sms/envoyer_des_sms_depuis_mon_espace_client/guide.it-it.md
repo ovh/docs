@@ -1,7 +1,7 @@
 ---
 title: Inviare SMS dallo Spazio Cliente
 excerpt: Come inviare SMS facilmente dal tuo Spazio Cliente OVHcloud
-updated: 2022-08-05
+updated: 2024-10-10
 ---
 
 ## Obiettivo
@@ -11,13 +11,13 @@ updated: 2022-08-05
 ## Prerequisiti
 
 - Disporre di un account SMS OVHcloud con saldo SMS.
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Télécom`{.action} > `SMS`{.action}
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager), sezione `Télécom`{.action} > `SMS`{.action}
 
 ![Spazio Cliente Telecom SMS](/pages/assets/screens/control_panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
 
 ## Procedura
 
-Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `Telecom`{.action}. Quindi clicca su `SMS`{.action} e seleziona il tuo account SMS.
+Accedi allo [Spazio Cliente](/links/manager) e seleziona `Telecom`{.action}. Quindi clicca su `SMS`{.action} e seleziona il tuo account SMS.
 
 Il campo “Inviare un SMS” è il primo elemento disponibile nella lista delle azioni.
 
@@ -31,7 +31,7 @@ Una volta nella pagina di invio SMS, è necessario configurare tre distinti para
 
 Per il mittente dell’SMS (1), è possibile selezionare un numero breve che accetti le risposte (soltanto per gli account OVHcloud presenti in Francia) oppure un mittente alfanumerico.
 Quindi inserisci il numero del destinatario (2) nel formato internazionale (+336xxxxxxxx).
-Per maggiori informazioni sulla creazione di un mittente, consulta lo [step 3: scegli il mittente degli SMS](./#step-3-scegli-il-mittente-sms).
+Per maggiori informazioni sulla creazione di un mittente, consulta lo [step 3: scegli il mittente degli SMS](#step-3-scegli-il-mittente-sms).
 
 È possibile inviare SMS a più destinatari in due diversi modi: 
 
@@ -67,11 +67,7 @@ Attenzione: l’utilizzo di caratteri non presenti in queste tabelle comporta il
 
 In questa sezione è possibile effettuare un invio immediato o differito (1).
 
-Inoltre sono disponibili tre formati di invio (2): 
-
-- Standard:  l’SMS più comunemente utilizzato.
-- Flash : l’SMS appare direttamente sullo schermo del telefono.
-- SIM: l’SMS viene salvato automaticamente sulla carta SIM del telefono.
+Sono disponibili tre formati di invio (Standard/Flash/Sim) (2) ma questa funzionalità è obsoleta.
 
 ### Step 3: scegli il mittente del tuo SMS
 
@@ -117,4 +113,4 @@ Nella nuova pagina, sono disponibili diverse opzioni per configurare un nuovo mi
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>
+Contatta la nostra [Community di utenti](/links/community).

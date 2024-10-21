@@ -1,8 +1,11 @@
 ---
 title: 'Configuring the network on ESXi on the High Grade & SCALE ranges'
 excerpt: 'Find out how to configure the network on VMware ESXi on the High Grade & SCALE ranges'
-updated: 2024-07-08
+updated: 2024-09-13
 ---
+
+> [!warning]
+> The ESXi hypervisor is no longer supported by OVHcloud. Find more information on [this dedicated page](/pages/bare_metal_cloud/dedicated_servers/esxi-end-of-support).
 
 ## Objective
 
@@ -21,9 +24,9 @@ On the High Grade & SCALE ranges, it is not possible to manage Additional IPs in
 
 - A public block of IP addresses in your account, with a minimum of four addresses. The block must be pointed to the vRack.
 - Your chosen private IP address range.
-- A [vRack compatible dedicated server](https://www.ovhcloud.com/asia/bare-metal/){.external}.
-- A [vRack](https://www.ovh.com/asia/solutions/vrack/){.external} service activated in your account.
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia).
+- A [vRack compatible dedicated server](/links/bare-metal/bare-metal){.external}.
+- A [vRack](/links/network/vrack){.external} service activated in your account.
+- Access to the [OVHcloud Control Panel](/links/manager).
 
 ## Instructions
 
@@ -42,7 +45,7 @@ On the High Grade & SCALE ranges, it is not possible to manage Additional IPs in
 
 ### Additional IP via vRack
 
-First, add your public block of IP addresses to the vRack. To do so, go to the `Bare Metal Cloud`{.action} section of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and open the `vRack`{.action} menu.
+First, add your public block of IP addresses to the vRack. To do so, go to the `Bare Metal Cloud`{.action} section of your [OVHcloud Control Panel](/links/manager) and open the `vRack`{.action} menu.
 
 Select your vRack from the list to display the list of eligible services. Click on the IP block you want to add to the vRack and then click the `Add`{.action} button.
 
@@ -59,7 +62,7 @@ A first vSwitch exists but only has a `vmnic2` interface.
 
 > [!primary]
 >
-> Check that your configuration is similar. You can access information on MACs and public or private interfaces in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) or via the OVHcloud API.
+> Check that your configuration is similar. You can access information on MACs and public or private interfaces in your [OVHcloud Control Panel](/links/manager) or via the OVHcloud API.
 >
 
 #### Explanations
@@ -160,4 +163,4 @@ iface ens18 inet static
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

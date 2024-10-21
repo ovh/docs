@@ -20,13 +20,13 @@ Per accedere al tuo server in [modalità Rescue OVHcloud](/pages/bare_metal_clou
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
 >
-> Questa guida ti aiuta a realizzare le operazioni più ricorrenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a un [provider specializzato](https://partner.ovhcloud.com/it/directory/) o contattare l'amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#go-further) su questa guida.
+> Questa guida ti aiuta a realizzare le operazioni più ricorrenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a un [provider specializzato](/links/partner) o contattare l'amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#go-further) su questa guida.
 >
 
 ## Prerequisiti
 
-- Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/) o di un [VPS](https://www.ovhcloud.com/it/vps/) nel proprio account OVHcloud
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Disporre di un [server dedicato](/links/bare-metal/bare-metal) o di un [VPS](https://www.ovhcloud.com/it/vps/) nel proprio account OVHcloud
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 ## Procedura
 
@@ -60,7 +60,7 @@ EEFFFFFFFFFFFFFGGGGGGGGGGGGGhhhhhhhhhhhhhhhhhhhhhhhhhh== new@sshkey
 
 Per motivi di sicurezza, rimuovere la stringa di chiave "old" (ormai obsoleta) dal file. Salva e lascia l'editor.
 
-Riavvia la modalità "normale" di avvio e riavvia il server dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Se necessario, consulta la guida ["Attivare e utilizzare il Rescue mode"](#step2).
+Riavvia la modalità "normale" di avvio e riavvia il server dallo [Spazio Cliente OVHcloud](/links/manager). Se necessario, consulta la guida ["Attivare e utilizzare il Rescue mode"](#step2).
 
 A questo punto hai accesso al server con la tua nuova coppia di chiavi SSH.
 

@@ -18,8 +18,8 @@ Questo è in genere il metodo di connessione più sicuro e pratico.
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-- Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/) o di un [VPS](https://www.ovhcloud.com/it/vps/) nel proprio account OVHcloud
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
+- Disporre di un [server dedicato](/links/bare-metal/bare-metal) o di un [VPS](https://www.ovhcloud.com/it/vps/) nel proprio account OVHcloud
 - Installare preventivamente un'applicazione client SSH (riga di comando o GUI)
 - Avere accesso in SSH (sudo)
 
@@ -180,15 +180,15 @@ Se non è già installato (consulta la tua lista delle applicazioni o utilizza l
 
 Aprire `PuTTYgen` e selezionare uno degli algoritmi di crittografia supportati. In questo esempio viene utilizzato RSA. Inserisci 4096 come numero di bit nell’angolo inferiore destro e clicca sul pulsante `Generate`{.action}.
 
-![chiave PuTTy](images/puttygen_01.png){.thumbnail}
+![chiave PuTTy](/pages/assets/screens/other/web-tools/putty/puttygen_01.png){.thumbnail}
 
 Spostare liberamente il cursore del mouse nell'area sotto la barra di avanzamento:
 
-![chiave PuTTy](images/puttygen_02.gif){.thumbnail}
+![chiave PuTTy](/pages/assets/screens/other/web-tools/putty/puttygen_02.gif){.thumbnail}
 
 La chiave è pronta quando la barra di avanzamento è piena.
 
-![chiave PuTTy](images/puttygen_03.png){.thumbnail}
+![chiave PuTTy](/pages/assets/screens/other/web-tools/putty/puttygen_03.png){.thumbnail}
 
 Copiare la stringa di chiave completa negli Appunti per [aggiungerla al server](#addserverkey). Salvare entrambe le chiavi come file facendo clic sui pulsanti corrispondenti e immettere anche una frase segreta (*passphrase*) per proteggerle.
 
@@ -380,7 +380,7 @@ Se hai seguito le istruzioni delle sezioni "[Creazione di una coppia di chiavi S
 
 Apri `PuTTY` e apri la sottosezione `SSH` nel menu a sinistra, poi clicca su `Auth` e `Credentials`.
 
-![chiave PuTTy](images/puttygen_04.png){.thumbnail}
+![chiave PuTTy](/pages/assets/screens/other/web-tools/putty/puttygen_04.png){.thumbnail}
 
 Clicca sul pulsante `Browse`{.action} e seleziona il file della chiave privata `PuTTY` (`keyfile.ppk`) nella cartella in cui è stato salvato.
 
@@ -388,7 +388,7 @@ Il file di chiave è associato alla sessione SSH in corso. Seleziona `Session` n
 
 Immettere un nome per la connessione in `Saved Sessions` e fare clic su `Save`{.action} per aggiungerla alla lista.
 
-![chiave PuTTy](images/puttygen_05.png){.thumbnail}
+![chiave PuTTy](/pages/assets/screens/other/web-tools/putty/puttygen_05.png){.thumbnail}
 
 Da questo momento è possibile cliccare su questo elemento di `Session` e aprire una connessione al server. Per testarlo, clicca su `Open`{.action}. Se il file di chiave è stato protetto con una frase segreta, immetterla in questa fase.
 
@@ -407,6 +407,6 @@ Per configurare un'altra connessione al server, ripetere i passaggi seguenti:
 
 [Modalità Rescue su VPS](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
-Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](https://www.ovhcloud.com/it/professional-services/) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
+Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](/links/professional-services) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

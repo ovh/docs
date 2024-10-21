@@ -11,7 +11,7 @@ With the OVHcloud MX Plan, you can send and receive emails from third-party soft
 
 ## Requirements
 
-- An OVHcloud **MX Plan** email solution, included in our [web hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/), included in a [100M free hosting](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/) hosting plan, or ordered separately as a standalone solution.
+- An OVHcloud **MX Plan** email solution, included in our [web hosting plans](/links/web/hosting), included in a [100M free hosting](/links/web/domains-free-hosting) hosting plan, or ordered separately as a standalone solution.
 - Access to the MX Plan email account you would like to use; for more information, please refer to our guide [Getting started with an MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities).
 
 ## Instructions
@@ -51,7 +51,7 @@ With the OVHcloud MX Plan, you can send and receive emails from third-party soft
 
 ### Logging in to Roundcube <a name="roundcube-connexion"></a>
 
-Go to the page <https://www.ovh.co.uk/mail/>. Enter your email address and password, then click `Login`{.action}. 
+Go to the page [Webmail](/links/web/email). Enter your email address and password, then click `Login`{.action}. 
 
 ![hosting](images/webmail_login.png){.thumbnail}
 
@@ -343,11 +343,11 @@ To add a response, click the `+`{.action} button at the bottom of the `Replies` 
 
 ### Adding an autoresponder <a name="automatic-respond"></a>
 
-You want to add an automatic reply to your email account when you are absent or unavailable. This feature cannot be enabled via webmail, but via your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), in the management interface for your email accounts. Read our guide "[Creating an autoresponder for your email addresses](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses/)".
+You want to add an automatic reply to your email account when you are absent or unavailable. This feature cannot be enabled via webmail, but via your [OVHcloud Control Panel](/links/manager), in the management interface for your email accounts. Read our guide "[Creating an autoresponder for your email addresses](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses/)".
 
 ### Changing your email password <a name="password"></a>
 
-To change your email password, you will need to log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), in the interface for managing your email addresses. Read our guide "[Changing an email password](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password/)".
+To change your email password, you will need to log in to your [OVHcloud Control Panel](/links/manager), in the interface for managing your email addresses. Read our guide "[Changing an email password](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password/)".
 
 ### Writing an email <a name="email-writing"></a>
 

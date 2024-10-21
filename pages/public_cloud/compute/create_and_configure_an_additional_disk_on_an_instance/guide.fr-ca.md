@@ -17,7 +17,7 @@ Cela peut être utile dans les cas suivants :
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 - Disposer d'une instance [Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/){.external} dans votre compte OVHcloud
 - Avoir un accès administrateur (sudo) à votre instance via SSH
 
@@ -29,7 +29,7 @@ Cela peut être utile dans les cas suivants :
 
 ### Attacher un nouveau volume
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Ensuite, ouvrez `Block Storage`{.action} dans le menu de gauche.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Ensuite, ouvrez `Block Storage`{.action} dans le menu de gauche.
 
 Dans cette partie, cliquez sur le bouton `Créer un volume`{.action}.
 
@@ -64,7 +64,7 @@ Les exemples ci-dessous supposent que vous êtes connecté en tant qu'utilisateu
 
 #### Sous Linux
 
-Ouvrez une [connexion SSH à votre instance](/pages/public_cloud/compute/public-cloud-first-steps#etape-4-connexion-a-votre-instance), puis utilisez la commande ci-dessous pour lister les disques attachés.
+Ouvrez une [connexion SSH à votre instance](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance), puis utilisez la commande ci-dessous pour lister les disques attachés.
 
 ```bash
 lsblk
@@ -349,7 +349,7 @@ Si vous souhaitez détacher un volume de votre instance, la meilleure pratique e
 
 #### Sous Linux
 
-Ouvrez une [connexion SSH à votre instance](/pages/public_cloud/compute/public-cloud-first-steps#etape-3-creer-une-instance) puis utilisez la commande ci-dessous pour lister les disques attachés.
+Ouvrez une [connexion SSH à votre instance](/pages/public_cloud/compute/public-cloud-first-steps#create-instance) puis utilisez la commande ci-dessous pour lister les disques attachés.
 
 ```bash
 lsblk
@@ -423,4 +423,4 @@ Cliquez sur `Confirmer`{.action} dans la fenêtre qui s'affiche pour lancer le p
 
 [Augmenter la taille d’un disque supplémentaire](/pages/public_cloud/compute/increase_the_size_of_an_additional_disk)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

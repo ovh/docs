@@ -1,7 +1,7 @@
 ---
 title: "Configurar un registro MX para la gestión del correo"
 excerpt: "Descubra cómo configurar un registro MX en un dominio en OVHcloud"
-updated: 2024-02-29
+updated: 2024-09-02
 ---
 
 > [!primary]
@@ -54,6 +54,8 @@ Puede configurar varios registros MX para un mismo dominio. Es necesario definir
 ### Valores de la configuración MX de OVHcloud <a name="mxovhcloud"></a>
 
 A continuación ofrecemos la configuración MX de OVHcloud que deberá utilizar para nuestros MX Plan (solo o incluido en un plan de [hosting de OVHcloud](/links/web/hosting)), [Email Pro](/links/web/email-pro) y [Exchange](/links/web/emails). Nuestros servidores de correo disponen de antispam y antivirus integrado.
+
+Estos valores son comunes a todos los productos, excepto [Private Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_private) y Dedicated Exchange.
 
 |Dominio|TTL|Registro|Prioridad|Destino|
 |---|---|---|---|---|

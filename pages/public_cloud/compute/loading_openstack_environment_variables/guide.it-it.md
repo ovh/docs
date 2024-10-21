@@ -10,7 +10,7 @@ L’impostazione delle variabili d’ambiente OpenStack ti consente di utilizzar
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Aver creato un utente OpenStack. A questo proposito, consulta [l’apposita guida](/pages/public_cloud/compute/create_and_delete_a_user)
 - Aver preparato l’ambiente di sviluppo per utilizzare l’API OpenStack. A questo proposito, consulta questa guida: [Preparare l’ambiente per utilizzare l’API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
 
@@ -20,7 +20,7 @@ L’impostazione delle variabili d’ambiente OpenStack ti consente di utilizzar
 
 Per recuperare le variabili d’ambiente scarica il file OpenRC dall’utente OpenStack creato in precedenza.
 
-Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, accedi alla sezione `Public Cloud`{.action} e seleziona il tuo progetto Public Cloud in alto a sinistra.
+Accedi al tuo [Spazio Cliente OVHcloud](/links/manager){.external}, accedi alla sezione `Public Cloud`{.action} e seleziona il tuo progetto Public Cloud in alto a sinistra.
 <br> Nella sezione `Project Management`, clicca su `Users & Roles`{.action}, clicca sui `...`{.action} a destra del tuo utente e seleziona `Scarica il file RC di Openstack`{.action}.
 
 ![openstack-variables](images/pciopenstackvariables1e.png){.thumbnail}

@@ -15,8 +15,8 @@ Gli account email del servizio OVHcloud sono accessibili tramite la password ass
 
 ## Prerequisiti
 
-- Disporre di una soluzione email OVHcloud configurata precedentemente (**MX Plan**, inclusa nelle nostre [soluzioni di hosting Web](https://www.ovhcloud.com/it/web-hosting/), inclusa in un [Hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting/) o ordinata separatamente come soluzione autonoma, come [**Hosted Exchange**](https://www.ovhcloud.com/it/emails/hosted-exchange/) o [**Email Pro**](https://www.ovhcloud.com/it/emails/email-pro/))
-- In base al metodo utilizzato: essere connesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) nella sezione `Web Cloud`{.action} o essere connesso all'indirizzo email dalla [Webmail](https://www.ovhcloud.com/it/mail/).
+- Disporre di una soluzione email OVHcloud configurata precedentemente (**MX Plan**, inclusa nelle nostre [soluzioni di hosting Web](/links/web/hosting), inclusa in un [Hosting gratuito 100M](/links/web/domains-free-hosting) o ordinata separatamente come soluzione autonoma, come [**Hosted Exchange**](/links/web/emails-hosted-exchange) o [**Email Pro**](/links/web/email-pro))
+- In base al metodo utilizzato: essere connesso allo [Spazio Cliente OVHcloud](/links/manager) nella sezione `Web Cloud`{.action} o essere connesso all'indirizzo email dalla [Webmail](/links/web/email).
 
 > [!primary]
 >
@@ -34,19 +34,19 @@ Gli account email del servizio OVHcloud sono accessibili tramite la password ass
 > [!warning]
 > Per motivi di sicurezza, ti consigliamo di non utilizzare due volte la stessa password, sceglierne una che non ha alcun rapporto con le tue informazioni personali (ad esempio, eviti le indicazioni del tuo cognome, nome e data di nascita) e rinnovarla regolarmente.
 
-Dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), seleziona la sezione `Web Cloud`{.action} e segui le indicazioni fornite:
+Dallo [Spazio Cliente OVHcloud](/links/manager), seleziona la sezione `Web Cloud`{.action} e segui le indicazioni fornite:
 
 > [!tabs]
-> **Email MXplan (versione storica)**
+> **Email MX Plan (versione storica)**
 >>
->> Se non ricordi il tipo di offerta MXplan, consulta il paragrafo [Identifica la tua offerta MXplan](#whichmxplan).<br>
+>> Se non ricordi il tipo di offerta MX Plan, consulta il paragrafo [Identifica la tua offerta MX Plan](#whichmxplan).<br>
 >> Clicca su `Email`{.action} e poi seleziona il nome del servizio MX Plan. Clicca sulla scheda `Email`{.action}. Visualizzi una finestra con tutti gli account email esistenti. <br>
 >> Clicca sul pulsante `...`{.action} e poi su `Modifica la password`{.action}.<br><br>
 >>![email](images/email-password-mxplan-legacy01.png){.thumbnail}<br>
 >>
-> **Email MXplan (nuova versione)**
+> **Email MX Plan (nuova versione)**
 >>
->> Se non ricordi il tipo di offerta MXplan, consulta il paragrafo [Identifica la tua offerta MXplan](#whichmxplan).<br>
+>> Se non ricordi il tipo di offerta MX Plan, consulta il paragrafo [Identifica la tua offerta MX Plan](#whichmxplan).<br>
 >> Clicca su `Email`{.action} e poi seleziona il nome del servizio MX Plan. Clicca sulla scheda `Email`{.action}. Visualizzi una finestra con tutti gli account email esistenti. <br>
 >> Clicca sul pulsante `...`{.action} e poi su `Modifica`{.action}.<br><br>
 >>![email](images/email-password-mxplan-new01.png){.thumbnail}<br>
@@ -74,12 +74,12 @@ La modifica della password tramite la Webmail è disponibile per le soluzioni em
 
 > [!warning]
 >
-> L'offerta **Email MXplan (versione storica)** utilizza Roundcube, la modifica della password può essere effettuata solo [dallo Spazio Cliente](#controlpanel).
+> L'offerta **Email MX Plan (versione storica)** utilizza Roundcube, la modifica della password può essere effettuata solo [dallo Spazio Cliente](#controlpanel).
 >
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Accedi alla pagina [Webmail](https://www.ovhcloud.com/it/mail/), inserisci le tue credenziali e clicca sul pulsante `Connessione`{.action}. 
+Accedi alla pagina [Webmail](/links/web/email), inserisci le tue credenziali e clicca sul pulsante `Connessione`{.action}. 
 
 ![email](images/mxplan-password-new-step2.png){.thumbnail}
 
@@ -108,9 +108,9 @@ Per motivi di sicurezza e riservatezza non è possibile **recuperare** una passw
 >
 > Se vuoi salvare una password, ti consigliamo di utilizzare un gestore di password come **Keepass** ad esempio.
 
-#### Identifica la tua offerta MXplan <a name="whichmxplan"></a>
+#### Identifica la tua offerta MX Plan <a name="whichmxplan"></a>
 
-Nella tabella qui sotto trovi le informazioni necessarie per identificare la tua offerta MXplan.
+Nella tabella qui sotto trovi le informazioni necessarie per identificare la tua offerta MX Plan.
 
 |Vecchia versione della soluzione MX Plan|Nuova versione della soluzione MX Plan|
 |---|---|
@@ -119,12 +119,12 @@ Nella tabella qui sotto trovi le informazioni necessarie per identificare la tua
 
 ## Per saperne di più
 
-[Iniziare a utilizzare la soluzione MXplan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
+[Iniziare a utilizzare la soluzione MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 
 [Iniziare a utilizzare la soluzione Email Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
 
 [Iniziare a utilizzare la soluzione Hosted Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [soluzioni di supporto](https://www.ovhcloud.com/it/support-levels/).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [soluzioni di supporto](/links/support).
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

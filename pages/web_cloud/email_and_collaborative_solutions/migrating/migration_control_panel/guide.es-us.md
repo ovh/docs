@@ -17,10 +17,10 @@ OVHcloud ofrece varias soluciones de correo electrónico: MX Plan (incluido en u
 
 ## Requisitos
 
-- Disponer de una cuenta MX Plan (plan de [hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}).
-- Tener un servicio [Exchange](https://www.ovhcloud.com/es/emails/hosted-exchange/){.external} con al menos una cuenta no configurada (que aparecerá como "@configureme.me").
+- Disponer de una cuenta MX Plan (plan de [hosting de OVHcloud](/links/web/hosting)).
+- Tener un servicio [Exchange](/links/web/emails-hosted-exchange) con al menos una cuenta no configurada (que aparecerá como "@configureme.me").
 - **No haber configurado ninguna redirección en la dirección de correo MX Plan que quiera migrar.**
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
 
 ## Procedimiento
 
@@ -28,7 +28,7 @@ OVHcloud ofrece varias soluciones de correo electrónico: MX Plan (incluido en u
 
 Este paso es opcional si ya tiene un servicio Exchange al que quiere realizar la migración.
 
-En caso contrario, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y contrate el servicio Exchange que desee. Siga los pasos que se indican y espere a que se instale el servicio. Recibirá un mensaje de correo electrónico cuando haya finalizado la operación.
+En caso contrario, conéctese al [área de cliente de OVHcloud](/links/manager) y contrate el servicio Exchange que desee. Siga los pasos que se indican y espere a que se instale el servicio. Recibirá un mensaje de correo electrónico cuando haya finalizado la operación.
 
 > [!primary]
 >
@@ -37,16 +37,16 @@ En caso contrario, conéctese al [área de cliente de OVHcloud](https://ca.ovh.c
 
 ### 2\. Realizar la migración
 
-Antes de realizar la migración, deberá identificar la versión del MXPlan desde el que migrará.
+Antes de realizar la migración, deberá identificar la versión del MX Plan desde el que migrará.
 
-Para ello, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la sección `Web Cloud`{.action}. Haga clic en `Correo electrónico`{.action} y seleccione el servicio correspondiente. Continúe leyendo esta guía en el apartado correspondiente a la versión:
+Para ello, conéctese al [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action}. Haga clic en `Correo electrónico`{.action} y seleccione el servicio correspondiente. Continúe leyendo esta guía en el apartado correspondiente a la versión:
 
 |Versión histórica de la solución MX Plan|Nueva versión de la solución MX Plan|
 |---|---|
 |![Correo electrónico](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Su plan se sitúa en el marco "Suscripción"|![Correo electrónico](images/mxplan-starter-new-step1.png){.thumbnail}<br>En el recuadro "Resumen", encontrará una `referencia del servidor` que empieza por "mxplan-".|
 |Siga leyendo esta guía en el apartado [Versión histórica de la solución MX Plan](#VersionHistoriqueMxplan).|Siga leyendo esta guía en el apartado [Nueva versión de la solución MX Plan](#NouvelleVersionMxplan).|
 
-#### 3.1 Migrar una solución MXPlan histórica <a name="VersionHistoriqueMxplan"></a>
+#### 3.1 Migrar una solución MX Plan histórica <a name="VersionHistoriqueMxplan"></a>
 
 > [!primary]
 >
@@ -60,7 +60,7 @@ La migración puede realizarse desde dos interfaces:<br>
 - **el asistente de configuración Hosted Exchange**, solo si acaba de contratar un servicio Hosted Exchange y todavía no ha configurado nada en este último.
 - **la del MX Plan**, desde el momento en que tiene un servicio Exchange (configurado o no) y una dirección MX Plan que desea migrar.
 
-> Le recordamos que antes de iniciar la migración, asegúrese de que no haya ninguna **redirección** o ningún **contestador** configurado en su MXplan.
+> Le recordamos que antes de iniciar la migración, asegúrese de que no haya ninguna **redirección** o ningún **contestador** configurado en su MX Plan.
 > ![email](images/mxplan-legacy-redirect.png){.thumbnail}
 
 Continúe leyendo esta guía en la interfaz seleccionada. Le recordamos que el tiempo de migración dependerá de la cantidad de contenido que quiera migrar a su nueva cuenta. Éste puede variar desde unos minutos hasta varias horas.
@@ -74,7 +74,7 @@ Continúe leyendo esta guía en la interfaz seleccionada. Le recordamos que el t
 
 ##### **Migración desde el asistente de configuración de Exchange**
 
-Para ello, seleccione el servicio en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. El asistente aparecerá para ayudarle a configurar su nuevo servicio Exchange. Durante este proceso, podrá seleccionar las cuentas MX Plan que quiera migrar.
+Para ello, seleccione el servicio en el [área de cliente de OVHcloud](/links/manager). El asistente aparecerá para ayudarle a configurar su nuevo servicio Exchange. Durante este proceso, podrá seleccionar las cuentas MX Plan que quiera migrar.
 
 Si no aparece el asistente de configuración, la información general del servicio Exchange se mostrará en su lugar. En ese caso, deberá realizar la migración de sus cuentas a través de la interfaz MX Plan.
 
@@ -92,7 +92,7 @@ Por último, confirme la contraseña de la dirección de correo de origen (la qu
 
 ![exchange](images/account_migration_steps.png){.thumbnail}
 
-#### 3.2 Migrar la nueva versión del MXPlan <a name="NouvelleVersionMxplan"></a>
+#### 3.2 Migrar la nueva versión del MX Plan <a name="NouvelleVersionMxplan"></a>
 
 > [!warning]
 >
@@ -104,11 +104,11 @@ Por último, confirme la contraseña de la dirección de correo de origen (la qu
 >
 > Para más información sobre la adición de un dominio, consulte [la guía Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 
-La migración de su MXPlan se realizará en 3 grandes etapas: **Renombrar**, **Crear** y **Migrar**.
+La migración de su MX Plan se realizará en 3 grandes etapas: **Renombrar**, **Crear** y **Migrar**.
 
 ![exchange](images/mxplan-migration-configure-account.gif){.thumbnail}
 
-1\. **Cambie el nombre** de la cuenta MXPlan que quiera migrar con un nombre provisional (por ejemplo: para migrar la cuenta MX Plan *john.smith@mydomain.ovh*, cambie su nombre a *john.smith01@mydomain.ovh*).
+1\. **Cambie el nombre** de la cuenta MX Plan que quiera migrar con un nombre provisional (por ejemplo: para migrar la cuenta MX Plan *john.smith@mydomain.ovh*, cambie su nombre a *john.smith01@mydomain.ovh*).
 
 En la pestaña `Cuentas de correo`{.action} de su plataforma MX Plan, haga clic en el botón `...`{.action} y luego en `Editar`{.action}.
 
@@ -124,7 +124,7 @@ En la pestaña `Cuentas de correo`{.action} de su plataforma Exchange, haga clic
 
 ![exchange](images/mxplan-migration-configure-account02.png){.thumbnail}
 
-3\. **Migre** la cuenta MXPlan a la cuenta de su nueva plataforma utilizando nuestra herramienta [OMM](https://omm.ovh.net/) (OVH Mail Migrator).
+3\. **Migre** la cuenta MX Plan a la cuenta de su nueva plataforma utilizando nuestra herramienta [OMM](https://omm.ovh.net/) (OVH Mail Migrator).
 
 Para más información sobre OMM, consulte nuestra guía [Migrar cuentas de correo a través de OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).
 
@@ -132,11 +132,11 @@ Para más información sobre OMM, consulte nuestra guía [Migrar cuentas de corr
 
 El tiempo de migración dependerá de cuánto contenido quiera migrar a la nueva cuenta. Éste puede variar desde unos minutos hasta varias horas.
 
-Una vez realizada la migración, compruebe que los elementos que contiene se encuentren conectándose al webmail en la dirección <https://www.ovh.com/world/es/mail/>
+Una vez realizada la migración, compruebe que los elementos que contiene se encuentren conectándose al webmail en la dirección [Webmail](/links/web/email)
 
 Una vez realizada la migración, puede conservar o eliminar la cuenta original con el nombre provisional.
 
-Si quiere eliminarlo, abra la pestaña `Cuentas de correo`{.action} de su MXPlan y haga clic en el botón `...`{.action} y luego en `Restaurar la cuenta`{.action}.
+Si quiere eliminarlo, abra la pestaña `Cuentas de correo`{.action} de su MX Plan y haga clic en el botón `...`{.action} y luego en `Restaurar la cuenta`{.action}.
 
 ### 4\. Comprobar o modificar la configuración del dominio
 
@@ -146,7 +146,7 @@ Para ello, seleccione el servicio Exchange correspondiente y abra la pestaña `D
 
 > [!primary]
 >
-> Si acaba de realizar la migración o de modificar un registro DNS del dominio, es posible que la actualización tarde unas horas en mostrarse en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
+> Si acaba de realizar la migración o de modificar un registro DNS del dominio, es posible que la actualización tarde unas horas en mostrarse en el [área de cliente de OVHcloud](/links/manager).
 >
 
 Para modificar la configuración, haga clic en la etiqueta roja y realice la operación solicitada. Esta operación tarda entre 4 y 24 horas en propagarse y ser efectiva.
@@ -155,7 +155,7 @@ Para modificar la configuración, haga clic en la etiqueta roja y realice la ope
 
 ### 5\. Utilizar las direcciones de correo migradas
 
-Ya puede utilizar las direcciones de correo electrónico migradas. Para ello, OVHcloud pone a su disposición una aplicación online (_web app_) disponible en la dirección <https://www.ovh.com/world/es/mail/>. Introduzca las claves de su dirección de correo electrónico.
+Ya puede utilizar las direcciones de correo electrónico migradas. Para ello, OVHcloud pone a su disposición una aplicación online (_web app_) disponible en la dirección [Webmail](/links/web/email). Introduzca las claves de su dirección de correo electrónico.
 
 Si ha configurado alguna de las cuentas migradas en un cliente de correo (p. ej. Outlook), deberá volver a configurarlas. La información de conexión al servidor de OVHcloud ha cambiado tras la migración. Para más información, consulte nuestra guía en las secciones relativas a [Hosted Exchange](/products/web-cloud-email-collaborative-solutions-mx-plan). Si no puede reconfigurar la cuenta de forma inmediata, siempre es posible acceder a través de la aplicación online.
 
@@ -175,6 +175,6 @@ También puede migrar manualmente sus direcciones de correo a su nueva solución
 
 ## Más información
 
-[Guías Exchange](/products/web-cloud-email-collaborative-solutions-mx-plan){.external}.
+[Guías Exchange](/products/web-cloud-email-collaborative-solutions-mx-plan).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

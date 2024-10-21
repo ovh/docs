@@ -60,7 +60,7 @@ Una vez conectado, podrá tomar nota de su identificador, que se muestra en el �
 
 Si ha perdido o no recuerda su contraseña, consulte [esta guía, en la que se explican los pasos que deberá seguir para cambiarla](/pages/account_and_service_management/account_information/manage-ovh-password#en-caso-de-haber-olvidado-la-contrasena-actual).
 
-### He perdido mi contraseña y mi dirección de correo electrónico principal ya no es válida
+### He perdido mi contraseña y mi dirección de correo electrónico principal ya no es válida  <a name="invalid-email"></a>
 
 En este caso, no es posible restaurar la contraseña desde la página de conexión.
 

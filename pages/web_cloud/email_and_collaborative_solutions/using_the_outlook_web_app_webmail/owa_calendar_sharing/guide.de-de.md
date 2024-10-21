@@ -12,14 +12,14 @@ Mit dieser Exchange Funktion können Sie anderen Personen Zugriff auf Ihre Kalen
 
 ## Voraussetzungen
 
-- Sie haben bereits einen [OVHcloud Exchange](https://www.ovhcloud.com/de/emails/) Dienst eingerichtet.
+- Sie haben bereits einen [OVHcloud Exchange](/links/web/emails) Dienst eingerichtet.
 - Sie haben Zugriff auf Ihren Exchange Account (E-Mail-Adresse und Passwort)
 
 ## In der praktischen Anwendung
 
 ### Schritt 1: Auswahl eines Kalenders, der freigegeben werden soll
 
-Melden Sie sich über [OVHcloud Webmail](https://www.ovh.de/mail) bei Ihrem Exchange Account an. Wechseln Sie zur Benutzeroberfläche „Kalender“, indem Sie oben links auf den „App Launcher“ klicken und dann das`Kalender`{.action}-Symbol auswählen.
+Melden Sie sich über [OVHcloud Webmail](/links/web/email) bei Ihrem Exchange Account an. Wechseln Sie zur Benutzeroberfläche „Kalender“, indem Sie oben links auf den „App Launcher“ klicken und dann das`Kalender`{.action}-Symbol auswählen.
 
 ![sharecalendar](images/exchange-calendars-step1.png){.thumbnail}
 

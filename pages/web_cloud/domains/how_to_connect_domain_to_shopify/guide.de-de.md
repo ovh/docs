@@ -10,7 +10,7 @@ updated: 2024-04-09
 
 ## Ziel
 
-Sie haben bereits einen Domainnamenamen bei OVHcloud und möchten ihn mit einem Shopify Hosting verbinden. In dieser Anleitung erfahren Sie, wie Sie die OVHcloud DNS-Zone bearbeiten, um die Konfiguration Ihres Shopify Hostings zu ermöglichen.
+Sie haben bereits einen Domainnamen bei OVHcloud und möchten ihn mit einem Shopify Hosting verbinden. In dieser Anleitung erfahren Sie, wie Sie die OVHcloud DNS-Zone bearbeiten, um die Konfiguration Ihres Shopify Hostings zu ermöglichen.
 
 **Erfahren Sie hier, wie Sie Ihren OVHcloud Domainnamen mit einem Shopify Hosting verbinden.**
 
@@ -92,7 +92,7 @@ Loggen Sie sich hierzu ins Shopify-Verwaltungsinterface ein und führen Sie Schr
 
 > [!primary]
 >
-> Die Verifizierung Ihres Domainnamenamens kann bis zu 48 Stunden dauern.
+> Die Verifizierung Ihres Domainnamens kann bis zu 48 Stunden dauern.
 
 Wenn Sie einen E-Mail-Dienst von OVHcloud nutzen oder eines [unserer E-Mail-Angebote](/links/web/emails) abonnieren möchten, müssen Sie auch Ihre DNS-Zone entsprechend konfigurieren. Lesen Sie dazu unsere Anleitung zur [Konfiguration eines MX-Eintrags](/pages/web_cloud/domains/dns_zone_mx).
 

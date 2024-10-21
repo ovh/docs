@@ -1,7 +1,7 @@
 ---
 title: Installing Nginx Ingress on OVHcloud Managed Kubernetes
 excerpt: 'Find out how to install Nginx Ingress on OVHcloud Managed Kubernetes'
-updated: 2022-06-27
+updated: 2024-09-12
 ---
 
 In this tutorial we are going to guide you with the setup of [Nginx Ingress](https://github.com/kubernetes/ingress-nginx){.external} on your OVHcloud Managed Kubernetes Service.
@@ -10,43 +10,56 @@ In this tutorial we are going to guide you with the setup of [Nginx Ingress](htt
 
 This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-hello-world).
 
-You also need to have [Helm](https://docs.helm.sh/){.external} installer on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](/pages/public_cloud/containers_orchestration/managed_kubernetes/installing-helm) tutorial.
+You also need to have [Helm](https://docs.helm.sh/){.external} installer on your workstation and your cluster. Please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](/pages/public_cloud/containers_orchestration/managed_kubernetes/installing-helm) tutorial.
 
 ## Ingress resources and Nginx Ingress Controller
 
-In Kubernetes, an Ingress resource allows you to access to your Services from outside the cluster. The goal is to avoid creating a Load Balancer per Service but only one per Ingress.
+In Kubernetes, an Ingress resource allows you to access your Services from outside the cluster. The goal is to avoid creating a Load Balancer per Service but only one per Ingress.
 
 ![Kubernetes Ingress](images/ingress.png)
 
 An Ingress is implemented by a 3rd party: an Ingress Controller that extends specs to support additional features.
 
-In this tutorial you will install a Nginx Ingress Controller.<br>
-It is an Ingress controller for Kubernetes using a Nginx web server as a reverse proxy and Load Balancer.
+In this tutorial, you will install an Nginx Ingress Controller.  
+It is an Ingress controller for Kubernetes using an Nginx web server as a reverse proxy and Load Balancer.
 
-Specifically, when you are deploying and running a Nginx Ingress Controller, you will have a Pod that runs Nginx and watches the Kubernetes Control Plane for new and updated Ingress Resource objects.
+Specifically, when you are deploying and running an Nginx Ingress Controller, you will have a Pod that runs Nginx and watches the Kubernetes Control Plane for new and updated Ingress Resource objects.
 
 Imagine an Ingress Resource as a list of traffic routing rules for backend Services.
 
-After deploying the Nginx Ingress Controller, you will also have an OVHcloud Load Balancer. Thanks to this Load Balancer the external traffic will be routed to the Ingress Controller Pod running Nginx, which then forwards traffic to the appropriate backend Services you will configure in Ingress resources.
+After deploying the Nginx Ingress Controller, you will also have an OVHcloud Load Balancer. Thanks to this Load Balancer, the external traffic will be routed to the Ingress Controller Pod running Nginx, which then forwards traffic to the appropriate backend Services you will configure in Ingress resources.
+
+> [!warning]
+> **Important:** There are two different Ingress controllers for Nginx:
+> 
+> - [Nginx Inc Ingress Controller](https://github.com/nginxinc/kubernetes-ingress)
+> - [Kubernetes Ingress Nginx Controller](https://github.com/kubernetes/ingress-nginx) (the one covered in this guide)
+>
+> If you opt to install the first controller, please follow the instructions provided in the [Nginx Inc Ingress Controller documentation](https://github.com/nginxinc/kubernetes-ingress/tree/v3.3.2/examples/shared-examples/proxy-protocol) and use the OVH proxy protocol v1 by adding the following annotation to your service:
+>
+> ```yaml
+> service:
+>   annotations:
+>     service.beta.kubernetes.io/ovh-loadbalancer-proxy-protocol: v1
+> ```
 
 ## Installing the Nginx Ingress Controller Helm chart
 
-For this tutorial we are using the [Nginx Ingress Controller  Helm chart](https://github.com/kubernetes/ingress-nginx/tree/master/charts/ingress-nginx){.external} found on its own Helm repository.
+For this tutorial, we are using the [Nginx Ingress Controller Helm chart](https://github.com/kubernetes/ingress-nginx/tree/master/charts/ingress-nginx){.external} found on its own Helm repository.
 
 The chart is fully configurable, but here we are using the default configuration.
 
-```
+```bash
 helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 helm repo update
 helm -n ingress-nginx install ingress-nginx ingress-nginx/ingress-nginx --create-namespace
 ```
-
 The install process will begin:
 
 ```console
 $ helm -n ingress-nginx install ingress-nginx ingress-nginx/ingress-nginx --create-namespace
 NAME: ingress-nginx
-LAST DEPLOYED: Mon Jun 27 09:20:44 2022
+LAST DEPLOYED: Mon Sep 10 09:20:44 2024
 NAMESPACE: ingress-nginx
 STATUS: deployed
 REVISION: 1
@@ -54,8 +67,7 @@ TEST SUITE: None
 NOTES:
 ```
 
-At the end of the install, as usual with most Helm charts, you get the configuration information and some tips to
-test your `nginx-ingress`:
+At the end of the install, as usual with most Helm charts, you get the configuration information and some tips to test your `nginx-ingress`:
 
 ```console
 NOTES:
@@ -101,16 +113,15 @@ If TLS is enabled for the Ingress, a Secret containing the certificate and key m
   type: kubernetes.io/tls
 ```
 
-As the `LoadBalancer` creation is asynchronous, and the provisioning of the load balancer can take several minutes, you will surely get a `<pending>` `EXTERNAL-IP`. 
+As the `LoadBalancer` creation is asynchronous, and the provisioning of the load balancer can take several minutes, you will surely get a `<pending>` `EXTERNAL-IP`.
 
 If you try again in a few minutes you should get an `EXTERNAL-IP`:
 
 ```console
 $ kubectl get svc -n ingress-nginx ingress-nginx-controller
 NAME                       TYPE           CLUSTER-IP     EXTERNAL-IP       PORT(S)                      AGE
-ingress-nginx-controller   LoadBalancer   10.3.232.157   51.178.69.190   80:30903/TCP,443:31546/TCP   19h
+ingress-nginx-controller   LoadBalancer   10.3.232.157   51.178.69.190     80:30903/TCP,443:31546/TCP   19h
 ```
-
 You can then access your `nginx-ingress` at `http://[YOUR_LOAD_BALANCER_IP]` via HTTP or `https://[YOUR_LOAD_BALANCER_IP]` via HTTPS.
 
 Enter the following command to retrieve it:
@@ -126,10 +137,9 @@ $ export INGRESS_URL=$(kubectl get svc ingress-nginx-controller -n ingress-nginx
 echo Ingress URL: http://$INGRESS_URL/
 Ingress URL: http://51.178.69.190/
 ```
+In order to test your `nginx-ingress`, you can, for example, [install a WordPress](/pages/public_cloud/containers_orchestration/managed_kubernetes/installing-wordpress) on your cluster, and then create a YAML file for the Ingress that uses the controller:
 
-In order to test your `nginx-ingress`, you can for example [install a WordPress](/pages/public_cloud/containers_orchestration/managed_kubernetes/installing-wordpress) on your cluster, and then create a YAML file for the Ingress that uses the controller:
-
-```
+```yaml
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
@@ -148,6 +158,7 @@ spec:
               number: 80
         path: /
         pathType: Prefix
+
 ```
 
 > [!primary]
@@ -155,8 +166,8 @@ spec:
 
 In our example, the `ingress.yaml` produces this result:
 
-```
-apiVersion: networking.k8s.io/v1
+```yaml
+**apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   annotations:
@@ -175,14 +186,12 @@ spec:
                 port:
                   number: 80
 ```
-
 Apply the file:
 
-```
+```yaml
 kubectl apply -f ingress.yml
 ```
-
-And the Ingress is created. 
+And the Ingress is created.
 
 ```console
 $ kubectl apply -f ingress.yml 
@@ -195,6 +204,6 @@ So now if you point your browser to `http://$INGRESS_URL/`, you will see your Wo
 
 ## Go further
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pt/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assistance on your specific use case or project.
 
-- Join our [community of users](https://community.ovh.com/en/).
+- Join our [community of users](/links/community).

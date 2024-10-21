@@ -1,7 +1,7 @@
 ---
 title: "How to delete an OVHcloud DNS zone?"
 excerpt: "Find out how to delete a DNS zone for your domain name via the OVHcloud Control Panel"
-updated: 2024-06-26
+updated: 2024-10-03
 ---
 
 ## Objective
@@ -32,6 +32,11 @@ For example, you may need to delete a DNS zone for your domain name at OVHcloud 
 - You have access your [OVHcloud Control Panel](/links/manager).
 - You have a DNS zone in your OVHcloud Control Panel.
 - You have sufficient rights on the DNS zone to be deleted. You can find more information in our guide “[Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts)”.
+
+> [!primary]
+>
+> Deleting a DNS zone will not delete the domain name associated with it. You will not lose your domain name by deleting a DNS zone associated with it.
+>
 
 ## Instructions
 

@@ -1,7 +1,7 @@
 ---
-title: 'Configuring an Email Pro address on Thunderbird for macOS'
+title: 'Email Pro - Configure your email account on Thunderbird for macOS'
 excerpt: 'Find out how to configure your Email Pro address in Thunderbird for macOS'
-updated: 2021-08-26
+updated: 2024-10-09
 ---
 
 ## Objective
@@ -13,12 +13,12 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 > [!warning]
 > This guide will show you how to use one or more OVHcloud solutions with external tools, and the changes you need to make in specific contexts. You may need to adapt the instructions according to your situation.
 >
-> If you experience any difficulties carrying out these operations, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-ie/directory/) and/or discuss the issue with our community. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#gofurther) section of this guide.
+> If you experience any difficulties carrying out these operations, we recommend that you contact a [specialist service provider](/links/partner) and/or discuss the issue with our community. OVHcloud cannot provide you with technical support in this regard. You can find more information in the [Go further](#gofurther) section of this guide.
 > 
 
 ## Requirements
 
-- an [Email Pro](https://www.ovhcloud.com/en-ie/emails/email-pro/)account
+- an [Email Pro](/links/web/email-pro)account
 - Thunderbird software installed on your macOS system
 - login credentials for the email account to be configured
 
@@ -29,7 +29,7 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 >
 > In this guide, we will use as the server name: "pro**?**.mail.ovh.net". You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
 > 
-> You can find this information in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), in the `Web Cloud`{.action} section, if you select `Professional Email`{.action}. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
+> You can find this information in the [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section, if you select `Professional Email`{.action}. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
 >
 
 ### Adding the account
@@ -55,7 +55,7 @@ For **POP** configuration, the values are:
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVHcloud also has a web application you can use to access your email address from your browser. You can access this application at <https://www.ovh.ie/mail/>. You can log in using your email credentials. If you have any questions about how to use this interface, please refer to our guide on [Using the Outlook Web App](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
+OVHcloud also has a web application you can use to access your email address from your browser. You can access this application at [Webmail](/links/web/email). You can log in using your email credentials. If you have any questions about how to use this interface, please refer to our guide on [Using the Outlook Web App](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
 ### Retrieving a backup of your email address
 
@@ -67,7 +67,7 @@ If you need to make a change that could lead to the loss of your email account d
 >
 > In this guide, we will use as the server name: "pro**?**.mail.ovh.net". You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
 > 
-> You can find this information in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), in the `Web Cloud`{.action} section, if you select `Professional Email`{.action}. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
+> You can find this information in the [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section, if you select `Professional Email`{.action}. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
 >
 
 If your email account has already been set up and you need to access the account settings to change them:
@@ -87,5 +87,9 @@ If your email account has already been set up and you need to access the account
 ![Thunderbird](images/thunderbird-mac-emailpro06.png){.thumbnail}
 
 ## Go further <a name="gofurther"></a>
+
+> [!primary]
+>
+> For more information on configuring an email address from the Thunderbird app on Windows, see [the Mozilla Help Center](https://support.mozilla.org/en-US/kb/manual-account-configuration#thunderbird:mac:tb115).
 
 Join our community of users on <https://community.ovh.com/en/>.

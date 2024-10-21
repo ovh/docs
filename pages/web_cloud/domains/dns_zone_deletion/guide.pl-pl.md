@@ -1,7 +1,7 @@
 ---
 title: "Jak usunąć strefę DNS OVHcloud?"
 excerpt: "Dowiedz się, jak usunąć strefę DNS Twojej domeny z poziomu Panelu klienta OVHcloud"
-updated: 2024-06-26
+updated: 2024-10-03
 ---
 
 > [!primary]
@@ -35,7 +35,12 @@ Może zajść konieczność usunięcia strefy DNS dla Twojej domeny z OVHcloud w
 
 - Dostęp do [panelu klienta OVHcloud](/links/manager).
 - Strefa DNS w Panelu klienta OVHcloud.
-- Dysponujesz wystarczającymi uprawnieniami w strefie DNS, którą chcesz usunąć. Więcej informacji znajdziesz w przewodniku "[Zarządzanie kontaktami dla usług OVH](/pages/account_and_service_management/account_information/managing_contacts)".
+- Dysponujesz wystarczającymi uprawnieniami w strefie DNS, którą chcesz usunąć. Więcej informacji znajdziesz w przewodniku "[Zarządzanie kontaktami dla usług OVHcloud](/pages/account_and_service_management/account_information/managing_contacts)".
+
+> [!primary]
+>
+> Usunięcie strefy DNS nie powoduje usunięcia rekordu przypisanej do niej domeny. Nie utracisz domeny, usuwając powiązaną z domeną strefę DNS.
+>
 
 ## W praktyce
 

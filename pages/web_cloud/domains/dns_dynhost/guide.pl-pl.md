@@ -1,7 +1,7 @@
 ---
 title: "Konfiguracja dynamicznego DNS (DynHost/DynDNS) dla Twojej domeny"
 excerpt: "Dowiedz się, jak skonfigurować dynamiczny rekord DNS dla Twojej domeny OVHcloud"
-updated: 2024-07-12
+updated: 2024-09-04
 ---
 
 > [!primary]
@@ -83,7 +83,7 @@ Gdy jesteś gotowy, aby utworzyć rekord DynHost, przejdź ponownie na stronę g
 |Informacje|Opis|
 |---|---|
 |Subdomena|Wpisz subdomenę, której rekord DNS ma być aktualizowany dynamicznie. Subdomena ta ma odpowiadać subdomenie wskazanej podczas tworzenia identyfikatora DynHost. **Jeśli chcesz skonfigurować wpis DynHost bezpośrednio dla Twojej domeny, zostaw ten formularz pusty**|
-|Docelowy adres IP |Wpisz adres IP (tylko IPv4 lub IPv6), który ma być aktualnie używany przez rekord DNS. Zazwyczaj chodzi o publiczny adres IP Twojego *box* Internet lub Twojego serwera z własnym dostępem. Zgodnie z zasadą DynHost adres IP zostanie automatycznie aktualizowany w późniejszym czasie.|
+|Docelowy adres IP |Wpisz adres IP (tylko IPv4 lub IPv6), który ma być aktualnie używany przez rekord DNS. Zazwyczaj chodzi o publiczny adres IP Twojego *box* Internet lub Twojego serwera z własnym dostępem. Zgodnie z zasadą DynHost adres IP zostanie automatycznie aktualizowany w późniejszym czasie. W tym formularzu należy podać tylko jeden adres IP.|
 
 > [!warning]
 >
@@ -93,6 +93,11 @@ Gdy jesteś gotowy, aby utworzyć rekord DynHost, przejdź ponownie na stronę g
 ![dynhost](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/dynhost/create-a-dynhost.png){.thumbnail}
 
 Po uzupełnieniu pól kliknij przycisk `Zatwierdź`{.action}. Rekord DynHost pojawi się wówczas w tabeli figurującej na aktualnej stronie. Jeśli potrzebujesz dodatkowych identyfikatorów DynHost, powtórz ten etap tyle razy, ile to konieczne.
+
+> [!primary]
+>
+> Jeśli domena lub subdomena ma być konfigurowana dynamicznie, na przykład za pomocą adresów IPv4 i IPv6, możesz utworzyć dwa dynamiczne rekordy DNS dla tej samej domeny lub subdomeny. Pierwszy dynamiczny rekord DNS zostanie utworzony dla IPv4, a drugi dla IPv6.
+>
 
 ### Etap 3: automatyzacja zmiany DynHost
 

@@ -60,7 +60,7 @@ Una volta effettuato l'accesso, accedi allo Spazio Cliente e clicca sul tuo nome
 
 Se hai dimenticato o perso la password, [questa guida ti spiega la procedura da seguire per modificarla](/pages/account_and_service_management/account_information/manage-ovh-password#se-non-ricordi-piu-la-password).
 
-### Ho perso la password e il mio indirizzo email principale non è più valido
+### Ho perso la password e il mio indirizzo email principale non è più valido  <a name="invalid-email"></a>
 
 In questo caso, la procedura di reimpostazione della password non può essere effettuata dalla pagina di connessione.
 

@@ -12,19 +12,19 @@ Przyznanie pełnomocnictwa do korzystania z całego konta e-mail nie zawsze jest
 
 > [!primary]
 >
-> Choć ten przewodnik dotyczy usług Exchange, z instrukcji można skorzystać również w przypadku kont [E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/).
+> Choć ten przewodnik dotyczy usług Exchange, z instrukcji można skorzystać również w przypadku kont [E-mail Pro](/links/web/email-pro).
 >
 
 ## Wymagania początkowe
 
-- skonfigurowane [rozwiązanie OVHcloud Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/)
+- skonfigurowane [rozwiązanie OVHcloud Exchange](/links/web/emails-hosted-exchange)
 - dostęp do konta Exchange (adres e-mail i hasło)
 
 ## W praktyce
 
 ### Krok 1: definiowanie uprawnień dostępu do folderu
 
-Zaloguj się na konto Exchange przy użyciu interfejsu [OVHcloud webmail](https://www.ovh.pl/mail/). Kliknij prawym przyciskiem myszy folder do udostępnienia i wybierz z menu kontekstowego pozycję `Uprawnienia...`{.action}.
+Zaloguj się na konto Exchange przy użyciu interfejsu [OVHcloud webmail](/links/web/email). Kliknij prawym przyciskiem myszy folder do udostępnienia i wybierz z menu kontekstowego pozycję `Uprawnienia...`{.action}.
 
 ![sharefolder](images/exchange-folder-step1.png){.thumbnail}
 
@@ -84,7 +84,7 @@ Do wyboru są zestawy już zdefiniowanych uprawnień („Poziom uprawnień”). 
 
 ![sharefolder](images/exchange-folder-step3.png){.thumbnail}
 
-Zaloguj się na konto Exchange przy użyciu interfejsu [OVHcloud webmail](https://www.ovh.pl/mail/). Kliknij prawym przyciskiem myszy nazwę konta w lewym menu nawigacyjnym i wybierz pozycję `Dodaj folder współdzielony...`{.action} z menu kontekstowego. W nowym oknie wpisz nazwę konta, z którego został udostępniony folder. Zacznij wpisywać nazwę w celu wyświetlenia propozycji z Twoich kontaktów, wpisz cały adres e-mail lub użyj funkcji wyszukiwania `Wyszukaj w katalogu`{.action}. Potwierdź, klikając przycisk `Dodaj`{.action}. Nowy współdzielony folder pojawi się natychmiast pod innymi folderami.
+Zaloguj się na konto Exchange przy użyciu interfejsu [OVHcloud webmail](/links/web/email). Kliknij prawym przyciskiem myszy nazwę konta w lewym menu nawigacyjnym i wybierz pozycję `Dodaj folder współdzielony...`{.action} z menu kontekstowego. W nowym oknie wpisz nazwę konta, z którego został udostępniony folder. Zacznij wpisywać nazwę w celu wyświetlenia propozycji z Twoich kontaktów, wpisz cały adres e-mail lub użyj funkcji wyszukiwania `Wyszukaj w katalogu`{.action}. Potwierdź, klikając przycisk `Dodaj`{.action}. Nowy współdzielony folder pojawi się natychmiast pod innymi folderami.
 
 ## Sprawdź również
 

@@ -1,7 +1,7 @@
 ---
-title: Exchange - Configuring your email account on macOS Mail
+title: 'Exchange - Configure your email account on Mail for macOS'
 excerpt: Find out how to configure your Exchange account on macOS Mail
-updated: 2024-04-16
+updated: 2024-10-09
 ---
 
 <style>
@@ -76,7 +76,7 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVHcloud also has a web application you can use to access your email account from your browser. You can access this application at <https://www.ovhcloud.com/en-ca/mail/>. You can log in using your email credentials. If you have any questions about how to use it, you can refer to our guide on [Using the Outlook Web App with an Exchange account](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
+OVHcloud also has a web application you can use to access your email account from your browser. You can access this application at [Webmail](/links/web/email). You can log in using your email credentials. If you have any questions about how to use it, you can refer to our guide on [Using the Outlook Web App with an Exchange account](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa).
 
 ### Retrieve a backup of your email account
 
@@ -92,6 +92,10 @@ If your email account is already set up and you need to access the account setti
 ![mailmac](images/mail-mac-exchange06.png){.thumbnail .w-400 .h-600}
 
 ## Go further
+
+> [!primary]
+>
+> For more information on configuring an email address from the Mail app on macOS, see [the Apple Help Center](https://support.apple.com/en-gb/guide/mail/mail35803/mac).
 
 [FAQ emails](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 

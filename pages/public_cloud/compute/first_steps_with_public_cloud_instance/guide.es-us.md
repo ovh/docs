@@ -10,7 +10,7 @@ updated: 2024-02-20
 
 ## Objetivo
 
-Puede gestionar sus instancias de Public Cloud desde el [Panel de configuración](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+Puede gestionar sus instancias de Public Cloud desde el [Panel de configuración](/links/manager).
 
 **Esta guía explica las acciones disponibles en el área de cliente de OVHcloud para una instancia de Public Cloud.**
 
@@ -18,11 +18,11 @@ Puede gestionar sus instancias de Public Cloud desde el [Panel de configuración
 
 - Un [proyecto de Public Cloud](https://www.ovhcloud.com/es/public-cloud/) en su cuenta de OVHcloud
 - Una [instancia de Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) en su proyecto
-- Tienes acceso a tu [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
+- Tienes acceso a tu [Panel de configuración de OVHcloud](/links/manager)
 
 ## Procedimiento
 
-Conéctese al [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y abra su proyecto de `Public Cloud`{.action}. 
+Conéctese al [Panel de configuración de OVHcloud](/links/manager) y abra su proyecto de `Public Cloud`{.action}. 
 
 ### Utilizar la interfaz de gestión de instancias
 
@@ -59,7 +59,7 @@ Se abrirá una nueva página en la que podrá modificar las opciones de [creaci�
 
 - **Cambiar el nombre**: puede asignar un nombre a la instancia para facilitar la identificación.
 - **Modificar la imagen**: puede elegir otro sistema operativo para la instancia (tenga en cuenta que la reinstalación de una instancia eliminará todos los datos que contiene).
-- **Modificar el modelo**: puede cambiar el modelo de instancia. Para más información sobre las opciones, consulte [esta guía](/pages/public_cloud/compute/public-cloud-first-steps#3-crear-una-instancia).
+- **Modificar el modelo**: puede cambiar el modelo de instancia. Para más información sobre las opciones, consulte [esta guía](/pages/public_cloud/compute/public-cloud-first-steps#model).
 - **Modificar el período de facturación**: puede cambiar el período de facturación de la instancia desde una facturación mensual por horas. Para más información, consulte [esta guía](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing).
 
 #### Crear un backup de una instancia
@@ -137,7 +137,7 @@ A continuación, abra la pestaña `Consola VNC`{.action}.
 
 La consola VNC proporciona acceso directo a su instancia. Para que este acceso funcione, es necesario configurar primero un nombre de usuario y una contraseña en la instancia. 
 
-Consulte nuestra guía [Crear y conectarse a una instancia de Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#4-conectarse-a-una-instancia) para obtener más información.
+Consulte nuestra guía [Crear y conectarse a una instancia de Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#vnc-console) para obtener más información.
 
 ## Más información
 
@@ -145,6 +145,6 @@ Consulte nuestra guía [Crear y conectarse a una instancia de Public Cloud](/pag
 
 [Presentación de Horizon](/pages/public_cloud/compute/introducing_horizon)
 
-Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
+Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](/links/professional-services) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

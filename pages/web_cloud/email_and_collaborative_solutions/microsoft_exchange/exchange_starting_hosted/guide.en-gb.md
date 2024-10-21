@@ -1,7 +1,7 @@
 ---
 title: 'Getting started with the Hosted Exchange service'
 excerpt: 'Get started with a Hosted Exchange service'
-updated: 2023-03-06
+updated: 2024-09-03
 ---
 
 <style>
@@ -18,16 +18,16 @@ With the Hosted Exchange service, you can get professional email accounts to use
 
 ## Requirements
 
-- You need to have a subscription to a [Hosted Exchange](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/) solution.
+- You need to have a subscription to a [Hosted Exchange](/links/web/emails-hosted-exchange) solution.
 - You need to have received an email confirming that your Hosted Exchange solution has been set up.
 - You must have a domain name.
-- You must be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+- You must be logged in to your [OVHcloud Control Panel](/links/manager).
 
 ## Instructions
 
 ### Access your service management
 
-Once your Hosted Exchange service has been created and is available, you can manage it from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+Once your Hosted Exchange service has been created and is available, you can manage it from your [OVHcloud Control Panel](/links/manager).
 
 To do this, log in and click `Microsoft`{.action}, then `Exchange`{.action}. The click on the name of the Hosted Exchange service concerned.
 
@@ -52,7 +52,7 @@ Choose one of your domain names from the list, or select the check box `My domai
 
 #### Are you going to only use the OVHcloud Exchange solution with this domain name?
 
-The question "**Are you going to use OVHcloud Exchange only with this domain?**" will determine the type of configuration for your domain name. 
+The question "**Are you going to use OVHcloud Exchange only with this domain?**" will determine the type of configuration for your domain name.
 
 - If you use an Exchange offer alone or with other **OVHcloud email offers**, the configuration can be done automatically, or manually using only OVHcloud email servers.
 - If you are using your Exchange solution as a complement to an **external email service to the OVHcloud email offers**, you will be asked to enter the URL of your external email service’s incoming server under the heading `(SMTP) server`.
@@ -75,14 +75,18 @@ Determine the name of your Exchange email addresses, and add additional informat
 #### **Special case**
 
 - If you configure your Exchange platform with a domain name that is not managed on the same control panel as this platform, or with another domain name provider, you will see the following window:<br>
+
 ![email](images/exchange-wizard05.png){.thumbnail .w-640}<br>
+
 This window will prompt you to add a **CNAME record** to the domain name’s DNS zone. The purpose of this entry is to check that you are actually managing this domain name.<br>
 
 > [!warning]
 > Without this validation by CNAME record, you cannot use the platform with this domain name.
 
 - If you configure your Exchange platform with a domain name that is not managed on the same control panel as this platform, that is managed with another domain name provider, or if you have chosen to manually configure your domain name, the following window will appear:<br>
+
 ![email](images/exchange-wizard06.png){.thumbnail .w-640}<br>
+
 Here, you will find the values to enter into your DNS zone. The **MX records** correspond to the receiving servers of your emails. The **SRV field** corresponds to the automatic configuration of your email addresses.
 
 You can find the DNS zone configuration details for your email service on our [Add an MX record to your domain name’s configuration](/pages/web_cloud/domains/dns_zone_mx) page.
@@ -96,13 +100,13 @@ Once you have finished configuring your domain name, you can also configure addi
 > All of the addresses created on your Exchange service will be visible in the directory of addresses for that service, including those with a different domain name. To stop different domain names from being displayed this way, you will need to order a new Hosted Exchange solution for the domain name(s) concerned.
 >
 
-To add a new domain name, select the Hosted Exchange service concerned in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), and click on `Associated domains`{.action}. You will see a table showing all of the domain names currently configured, or about to be configured on your service. To add new ones, click on the `Add a domain`{.action} button, then follow the various steps of the process.
+To add a new domain name, select the Hosted Exchange service concerned in your [OVHcloud Control Panel](/links/manager), and click on `Associated domains`{.action}. You will see a table showing all of the domain names currently configured, or about to be configured on your service. To add new ones, click on the `Add a domain`{.action} button, then follow the various steps of the process.
 
 To find out more, please refer to this guide on [Adding a domain name to an Exchange service](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 
 > [!primary]
 >
-> If a domain name requires a specific action for its configuration, a red box will appear in the `Diagnostic`{.action} column of the table. By clicking on it, you will see the modifications that need to be made. If this domain name does not use OVHcloud configuration (its DNS servers), you will need to carry out the modifications in the interface you use to manage your domain name’s configuration. 
+> If a domain name requires a specific action for its configuration, a red box will appear in the `Diagnostic`{.action} column of the table. By clicking on it, you will see the modifications that need to be made. If this domain name does not use OVHcloud configuration (its DNS servers), you will need to carry out the modifications in the interface you use to manage your domain name’s configuration.
 >
 
 ![Add a domain](images/first-steps-hosted-exchange-add-domain.png)
@@ -111,7 +115,7 @@ To find out more, please refer to this guide on [Adding a domain name to an Exch
 
 You can configure additional accounts if you have not already done so via the wizard.
 
-To do this, click on the Hosted Exchange service concerned in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), then on `Email accounts`{.action}. You will see a table showing all of the accounts currently configured, or about to be configured on your service.
+To do this, click on the Hosted Exchange service concerned in your [OVHcloud Control Panel](/links/manager), then on `Email accounts`{.action}. You will see a table showing all of the accounts currently configured, or about to be configured on your service.
 
 The accounts that have not yet been configured configuration will appear in the table as “*@configureme.me*”. To configure them, click on the pencil icon, then follow the steps.
 
@@ -124,15 +128,23 @@ The accounts that have not yet been configured configuration will appear in the 
 
 ### Use your email addresses
 
-Once you have configured your accounts, you can now start using them. To do this, OVHcloud offers the **Outlook Web App** (OWA) webmail app. You can access this via the following address: <https://www.ovhcloud.com/en-gb/mail/>. To log in, enter your email address credentials. If you require any assistance using OWA, please refer to [our documentation](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
+Once you have configured your accounts, you can now start using them. To do this, OVHcloud offers the **Outlook Web App** (OWA) webmail app. You can access this via the following address: [Webmail](/links/web/email). To log in, enter your email address credentials. If you require any assistance using OWA, please refer to [our documentation](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
+
+If this is your first time logging in to OWA with this email address, you will be prompted to set the interface language and time zone. Next, click `Save`{.action} to continue.
+
+> [!primary]
+>
+> Time zones are listed according to [the UTC (Coordinated Universal Time) standard](https://en.wikipedia.org/wiki/Coordinated_Universal_Time#/media/File:World_Time_Zones_Map.png), not in alphabetical order of cities.
+>
+> **Example**: For Western Europe, it is UTC +1 (Brussels, Copenhagen, Madrid, Paris).
 
 If you would like to configure your email address on an email client or mobile device (e.g. a smartphone or tablet), please refer to [our documentation](/products/web-cloud-email-collaborative-solutions-microsoft-exchange). To optimise the way you use your Exchange email address on an email client, ensure that it is compatible with the service.
 
-OVHcloud offers optional Outlook licences with your Exchange email account in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+OVHcloud offers optional Outlook licences with your Exchange email account in the [OVHcloud Control Panel](/links/manager).
 
-To subscribe, go to our page on [Getting an Outlook licence for Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/office_outlook_license). 
+To subscribe, go to our page on [Getting an Outlook licence for Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/office_outlook_license).
 
-You can also get [Office 365 licences](https://www.ovhcloud.com/en-gb/collaborative-tools/microsoft-365/). We recommend using one of these solutions if you would like to use the Outlook email client, or other software from the Microsoft Office suite.
+You can also get [Office 365 licences](/links/web/ms365). We recommend using one of these solutions if you would like to use the Outlook email client, or other software from the Microsoft Office suite.
 
 > [!primary]
 >
@@ -142,9 +154,9 @@ You can also get [Office 365 licences](https://www.ovhcloud.com/en-gb/collaborat
 
 ### Set up collaborative features (optional)
 
-Now that your Hosted Exchange service is configured and functional, you can set up the service’s collaborative features in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). You can use these features to create resources (meeting rooms, equipment, etc.), groups, and more.
+Now that your Hosted Exchange service is configured and functional, you can set up the service’s collaborative features in your [OVHcloud Control Panel](/links/manager). You can use these features to create resources (meeting rooms, equipment, etc.), groups, and more.
 
-To enable these features, select the Hosted Exchange service concerned in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), then choose which action to perform from the tabs that appear.
+To enable these features, select the Hosted Exchange service concerned in your [OVHcloud Control Panel](/links/manager), then choose which action to perform from the tabs that appear.
 
 For assistance with these features, please refer to [our documentation](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
 

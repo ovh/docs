@@ -46,8 +46,8 @@ Here is the context of the diagram above:
 
 ## Requirements
 
-- An OVHcloud [Private Exchange](https://www.ovhcloud.com/en-gb/emails/private-exchange/) or [OVHcloud](https://www.ovhcloud.com/en-gb/enterprise/products/trusted-exchange/) Trusted Exchange platform.
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- An OVHcloud [Private Exchange](/links/web/emails-private-exchange) or [OVHcloud](/links/web/emails-trusted-exchange) Trusted Exchange platform.
+- Access to the [OVHcloud Control Panel](/links/manager)
 - Access to the [OVHcloud API](https://api.ovh.com/)
 - The configuration details needed for the send connector received from your service provider
 
@@ -69,7 +69,7 @@ You will also find other useful operations concerning send connectors in this gu
 
 > [!warning]
 >
-> The addition of a send connector is reserved and planned for the [OVHcloud Private Exchange](https://www.ovhcloud.com/en-gb/emails/private-exchange/) and [OVHcloud Trusted Exchange](https://www.ovhcloud.com/en-gb/enterprise/products/trusted-exchange/) solutions. If you enable a send connector on an OVHcloud Exchange solution other than the ones mentioned above, you risk having it disabled at any time by our administrators for security reasons.
+> The addition of a send connector is reserved and planned for the [OVHcloud Private Exchange](/links/web/emails-private-exchange) and [OVHcloud Trusted Exchange](/links/web/emails-trusted-exchange) solutions. If you enable a send connector on an OVHcloud Exchange solution other than the ones mentioned above, you risk having it disabled at any time by our administrators for security reasons.
 
 Before you begin, make sure you have the following information, provided by the service provider delivering the send connector.
 
@@ -78,7 +78,7 @@ Before you begin, make sure you have the following information, provided by the 
 - The associated username (e.g. email address) **may be optional, depending on your send connector**
 - The password associated with the user name **may be optional, depending on your send connector**
 
-Next, log in to the OVHcloud API console with your login credentials. Refer to our [Getting started guide for the OVHcloud API](pages/manage_and_operate/api/first-steps).
+Next, log in to the OVHcloud API console with your login credentials. Refer to our [Getting started guide for the OVHcloud API](/pages/manage_and_operate/api/first-steps).
 
 To add a send connector to your Exchange platform, use the following API call.
 
@@ -326,8 +326,8 @@ The result is as follows:
 
 [Adding a domain name to your Exchange service](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
 Join our community of users on <https://community.ovh.com/en/>.

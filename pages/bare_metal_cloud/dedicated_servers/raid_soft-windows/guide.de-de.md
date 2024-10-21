@@ -16,7 +16,7 @@ In einem Windows-System wird Datenredundanz durch Spiegelung des primären Laufw
 
 ## Voraussetzungen
 
-- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) mit Software-Mirror-Konfiguration.
+- Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) mit Software-Mirror-Konfiguration.
 - Sie haben administrativen Zugriff auf Ihren Server über RDP.
 
 ## In der praktischen Anwendung

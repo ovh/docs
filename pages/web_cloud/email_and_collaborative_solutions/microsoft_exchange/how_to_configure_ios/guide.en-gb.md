@@ -1,7 +1,7 @@
 ---
-title: Configuring an Exchange account on iPhone and iPad
+title: "Exchange - Configure your email account on Mail for iPhone and iPad"
 excerpt: Find out how to configure an Exchange account on iPhone and iPad, via the Mail app
-updated: 2021-05-21
+updated: 2024-10-09
 ---
 
 ## Objective
@@ -14,12 +14,12 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 >
 > OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. If you encounter any difficulties performing these actions, please contact a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) and/or discuss the issue with our community on https://community.ovh.com/en/. OVHcloud cannot provide you with technical support in this regard.
+> This guide is designed to assist you in common tasks as much as possible. If you encounter any difficulties performing these actions, please contact a [specialist service provider](/links/partner) and/or discuss the issue with our community on https://community.ovh.com/en/. OVHcloud cannot provide you with technical support in this regard.
 >
 
 ## Requirements
 
-- an [OVHcloud Exchange account](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/){.external}
+- an [OVHcloud Exchange account](/links/web/emails-hosted-exchange)
 - the Mail app installed on your iOS device
 - login credentials for the email account to be configured
 
@@ -31,7 +31,7 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 >
 > In our example, we use as the hostname: ex**?**.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server for your Exchange service.
 > 
-> You can find this information in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), in the `Web Cloud`{.action} section, if you select `Microsoft`{.action}. Click on `Exchange`{.action} and then on your service. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
+> You can find this information in the [OVHcloud Control Panel](/links/manager), in the `Web Cloud`{.action} section, if you select `Microsoft`{.action}. Click on `Exchange`{.action} and then on your service. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
 >
 
 On your device’s home screen, go to `Settings`{.action} (cogwheel icon). There are several ways you can add an account, depending on your iOS version:
@@ -55,7 +55,7 @@ To check that the account has been correctly configured, you can send a test ema
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVHcloud also offers a web application that includes [Exchange collaborative features](https://www.ovhcloud.com/en-gb/emails/){.external}, accessible via <https://www.ovh.co.uk/mail/>. You can log in using your email credentials.
+OVHcloud also offers a web application that includes [Exchange collaborative features](/links/web/emails), accessible via [Webmail](/links/web/email). You can log in using your email credentials.
 
 > [!primary]
 >
@@ -63,6 +63,10 @@ OVHcloud also offers a web application that includes [Exchange collaborative fea
 >
 
 ## Go further
+
+> [!primary]
+>
+> For more information on configuring an email address from the Mail app on iOS, see [Apple Help Center](https://support.apple.com/en-gb/102619).
 
 [Configuring a Web Hosting email address on iPhone and iPad](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_ios)
 

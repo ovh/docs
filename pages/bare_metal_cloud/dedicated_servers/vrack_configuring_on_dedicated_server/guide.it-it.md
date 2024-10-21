@@ -1,7 +1,7 @@
 ---
 title: 'Configurare due o più server dedicati nella vRack'
 excerpt: 'Scopri come configurare due o più server dedicati nella vRack'
-updated: 2023-09-12
+updated: 2024-10-17
 ---
 
 > [!primary]
@@ -14,20 +14,20 @@ La vRack (rack virtuale) OVHcloud permette di unire virtualmente diversi server 
 
 **Questa guida ti mostra come configurare la vRack su diversi server dedicati.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZA7IsbDdAmc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/ZA7IsbDdAmc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Prerequisiti
 
-- Un servizio [vRack](https://www.ovh.it/soluzioni/vrack/) attivato nel tuo account
-- Diversi [server dedicati](https://www.ovhcloud.com/it/bare-metal/) (compatibili con la vRack)
+- Un servizio [vRack](/links/network/vrack) attivato nel tuo account
+- Diversi [server dedicati](/links/bare-metal/bare-metal) (compatibili con la vRack)
 - Avere accesso amministratore (sudo) al server via SSH o RDP
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 - Aver selezionato una gamma di indirizzi IP privati
 
 > [!warning]
-> Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](https://eco.ovhcloud.com/it/about/).
+> Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](/links/bare-metal/eco-about).
 >
-> Per maggiori informazioni, consulta la nostra [a confronto](https://eco.ovhcloud.com/it/compare/).
+> Per maggiori informazioni, consulta la nostra [a confronto](/links/bare-metal/eco-compare).
 
 ## Procedura
 
@@ -41,7 +41,7 @@ Verrai reindirizzato verso un'altra pagina per confermare l'ordine. L'operazione
 
 ### Step 2: aggiungi i tuoi server alla vRack
 
-Una volta attivata la vRack, accedi alla sezione `Bare Metal Cloud`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca su `Network`{.action} e apri il menu `vRack`{.action}.
+Una volta attivata la vRack, accedi alla sezione `Bare Metal Cloud`{.action} del tuo [Spazio Cliente OVHcloud](/links/manager), clicca su `Network`{.action} e apri il menu `vRack`{.action}.
 
 Seleziona la tua vRack nella lista per visualizzare la lista dei servizi ammissibili. Clicca su ciascun server che vuoi aggiungere alla vRack e poi clicca sul pulsante `Aggiungi`{.action}.
 
@@ -64,7 +64,7 @@ Puoi utilizzare qualsiasi gamma di IP privati di tua scelta e qualsiasi indirizz
 
 I nomi delle interfacce di rete dei tuoi server non sono sempre gli stessi. Nei seguenti esempi, sostituisci NETWORK_INTERFACE con il nome di interfaccia appropriato.
 
-Per verificare la corretta interfaccia della vRack è necessario verificare la scheda `Interfacce di rete`{.action} del server nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Nella tabella in basso, indica l'indirizzo MAC, che è anche il **Nome** dell'interfaccia **Privata**.
+Per verificare la corretta interfaccia della vRack è necessario verificare la scheda `Interfacce di rete`{.action} del server nello [Spazio Cliente OVHcloud](/links/manager). Nella tabella in basso, indica l'indirizzo MAC, che è anche il **Nome** dell'interfaccia **Privata**.
 
 ![Interfaccia vRack](images/private_interface.png){.thumbnail}
 
@@ -74,13 +74,46 @@ Una volta effettuato l'accesso al server via SSH, è possibile visualizzare le i
 ip a
 ```
 
-Sulla linea che inizia con ```link ether```, verifica che questa interfaccia corrisponda all'interfaccia **Private** inserita nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Utilizza questo nome di interfaccia per sostituire `NETWORK_INTERFACE` nelle configurazioni seguenti (esempio: `eno2`).
+Sulla linea che inizia con ```link ether```, verifica che questa interfaccia corrisponda all'interfaccia **Private** inserita nel tuo [Spazio Cliente OVHcloud](/links/manager). Utilizza questo nome di interfaccia per sostituire `NETWORK_INTERFACE` nelle configurazioni seguenti (esempio: `eno2`).
 
 ```console
 link ether f0:00:00:ef:0e:f0
 ```
 
-##### **Debian**
+##### **Debian 12**
+
+Utilizza il editor di testo scelto per aprire il file di configurazione di rete all'interno `/etc/netplan/`per modificarlo. Il file si chiama `50-cloud-init.yaml`.
+
+```bash
+editor /etc/netplan/50-cloud-init.yaml
+```
+
+Aggiungi la configurazione IP alla configurazione esistente dopo la linea `ethernet`:
+
+```yaml
+    ethernets:
+        NETWORK_INTERFACE:
+            dhcp4: no
+            addresses:
+              - 192.168.0.1/16
+```
+
+> [!warning]
+>
+> È importante rispettare l'allineamento di ciascun elemento nei file `yaml`, come indicato nell'esempio di cui sopra. Non utilizzare il tasto di tabulazione per creare la tua spaziatura. Deve essere utilizzato solo il tasto spazio.
+>
+
+Salva le modifiche nel file di configurazione e lascia l'editor.
+
+Applica la configurazione:
+
+```bash
+netplan apply
+```
+
+Ripeti questa procedura per gli altri server e attribuisci a ciascuno di essi un indirizzo IP non utilizzato a partire dalla tua gamma privata. Da questo momento, i tuoi server potranno comunicare tra loro sulla rete privata.
+
+##### **Debian 11**
 
 In un editor di testo, apri il file di configurazione di rete all'indirizzo `/etc/network/interfaces.d` per modificarlo. Il file si chiama `50-cloud-init`.
 
@@ -217,4 +250,4 @@ Ripeti questa procedura per gli altri server e attribuisci a ciascuno di essi un
 
 [Creare due o più VLAN nella vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack).
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

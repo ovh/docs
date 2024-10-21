@@ -87,7 +87,7 @@ Segui gli step descritti nella [documentazione dedicata di Hostinger](https://su
 ### Ottenere il codice EPP o Auth
 
 Se vuoi **trasferire** il dominio da Hostinger verso un altro Registrar (come OVHcloud), il nuovo Registrar può richiedere un codice di autorizzazione (codice "EPP" o "Auth") per verificare che tu abbia il diritto di agire sul dominio.
-Per familiarizzare con la modifica del proprietario di un dominio, consulta questa [guida](pages/web_cloud/domains/trade_domain).
+Per familiarizzare con la modifica del proprietario di un dominio, consulta questa [guida](/pages/web_cloud/domains/trade_domain).
 
 > [!warning]
 >

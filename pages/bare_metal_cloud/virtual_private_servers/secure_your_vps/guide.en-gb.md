@@ -1,7 +1,7 @@
 ---
 title: "How to secure a VPS"
 excerpt: "Find out how to apply basic security measures to protect your VPS against attacks and unauthorised access"
-updated: 2024-02-20
+updated: 2024-10-07
 ---
 
 ## Objective
@@ -13,19 +13,19 @@ When you order your VPS, you can choose a distribution or operating system to in
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and security. Since we have no administrative access to your devices, it is your responsibility to manage the software and to ensure they function correctly.
 > 
-> This guide is designed to help you with the most common tasks. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) if you have difficulties or doubts concerning the administration, usage or implementation of security measures on a server.
+> This guide is designed to help you with the most common tasks. Nevertheless, we recommend that you contact a [specialist service provider](/links/partner) if you have difficulties or doubts concerning the administration, usage or implementation of security measures on a server.
 >
 
 ## Requirements
 
-- A [Virtual Private Server](https://www.ovhcloud.com/en-gb/vps/) in your OVHcloud account
+- A [Virtual Private Server](/links/bare-metal/vps) in your OVHcloud account
 - Administrative access (sudo) via SSH to your server
 
 ## Instructions
 
 > [!primary]
 >
-> Bear in mind that this is a general guide based on an Ubuntu server OS. Some commands need to be adapted to the distribution or operating system you are using and some tips will advise you to use third-party tools. Please refer to the official documentation for these applications if you require assistance.
+> Bear in mind that this is a general guide based on Ubuntu, Debian and CentOS operating systems. Some commands need to be adapted to the distribution or operating system you are using and some tips will advise you to use third-party tools. Please refer to the official documentation for these applications if you require assistance.
 >
 > If you are configuring your first OVHcloud VPS, we recommend to consult our guide on [getting started with a VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps) before continuing.
 >
@@ -36,23 +36,47 @@ The following examples presume that you are logged in as a [user with elevated p
 
 Developers of distributions and operating systems offer frequent software package updates, very often for security reasons. Ensuring that your distribution or operating system is updated is a key point for securing your VPS.
 
-This update will take place in two steps:
-
-- Updating the package list
-
-```bash
-sudo apt update
-```
-
-- Updating the actual packages
-
-```bash
-sudo apt upgrade
-```
+> [!tabs]
+> Ubuntu
+>>
+>> This update will take place in two steps:
+>> 
+>> - Updating the package list:
+>> 
+>> ```bash
+>> sudo apt update
+>> ```
+>> 
+>> - Updating the actual packages:
+>> 
+>> ```bash
+>> sudo apt upgrade
+>> ```
+>>
+> Debian
+>> 
+>> ```bash
+>> sudo apt update && sudo apt upgrade
+>> ```
+>>
+>> The command is identical to Ubuntu because Debian and Ubuntu both use `apt`.
+>>
+> CentOS
+>>
+>> ```bash
+>> sudo yum update
+>> ```
+>>
+>> On CentOS, the command to update the operating system uses `yum` or `dnf`, depending on the version.
 
 This operation needs to be performed regularly to keep a system up-to-date.
 
 ### Changing the default SSH listening port <a name="changesshport"></a>
+
+> [!primary]
+>
+> For this section, the following command lines are the same for Ubuntu, Debian, and CentOS.
+>
 
 One of the first things to do on your server is configuring the SSH service's listening port. It is set to **port 22** by default, therefore server hacking attempts by robots will target this port. Modifying this setting by using a different port is a simple measure to harden your server against automated attacks.
 
@@ -70,7 +94,8 @@ Find the following or similar lines:
 #ListenAddress 0.0.0.0
 ```
 
-Replace the number **22** with the port number of your choice. **Please do not enter a port number already used on your system**. To be safe, use a number between 49152 and 65535.<br>Save and exit the configuration file.
+Replace the number **22** with the port number of your choice. **Please do not enter a port number already used on your system**. To be safe, use a number between 49152 and 65535.  
+Save and exit the configuration file.
 
 If the line is "commented out" (i.e. if it is preceded by a "#") as shown in the example above, make sure to remove the "#" before saving the file so that the change takes effect. Example:
 
@@ -150,11 +175,23 @@ Fail2ban is an intrusion prevention software framework designed to block IP addr
 
 To install the software package, use the following command:
 
-```bash
-sudo apt install fail2ban
-```
+> [!tabs]
+> Ubuntu and Debian
+>> 
+>> ```bash
+>> sudo apt install fail2ban
+>> ```
+>>
+> CentOS
+>>
+>> On CentOS 7 and CentOS 8 (or RHEL), first install the EPEL repository (**E**xtra **P**ackages for **E**nterprise **L**inux), then Fail2ban:
+>>
+>> ```bash
+>> sudo yum install epel-release
+>> sudo yum install fail2ban
+>> ```
 
-You can customise the Fail2ban configuration files to protect services that are exposed to the public Internet from repeated login attempts.
+You can customize the Fail2ban configuration files to protect services that are exposed to the public Internet from repeated login attempts.
 
 As recommended by Fail2ban, create a local configuration file for your services by copying the "jail" file:
 
@@ -182,7 +219,7 @@ maxretry = 5
 enabled = false
 ```
 
-This means that an IP address from which a host tries to connect will be blocked for ten minutes after the fifth unsuccessful login attempt.<br>
+This means that an IP address from which a host tries to connect will be blocked for ten minutes after the fifth unsuccessful login attempt.  
 However, all settings specified by `[DEFAULT]` and in subsequent sections stay disabled unless the line `enabled = true` is added for a service (listed below `# JAILS`).
 
 As an example of usage, having the following lines in the section `[sshd]` will activate restrictions only for the OpenSSH service:
@@ -201,17 +238,25 @@ In this example, any SSH login attempt that fails three times within five minute
 
 You can replace "ssh" with the actual port number in case you have changed it.
 
-The best practice approach is to enable Fail2ban only for the services that are actually running on the server. Each customised setting added under `# JAILS` will then be prioritised over the defaults.
+The best practice approach is to enable Fail2ban only for the services that are actually running on the server. Each customized setting added under `# JAILS` will then be prioritized over the defaults.
 
 Once you have completed your changes, save the file and close the editor.
 
-Restart the service to make sure it runs with the customisations applied:
+Restart the service to make sure it runs with the customization applied:
+
+1\. Recommended command with `systemctl`:
+
+```bash
+sudo systemctl restart fail2ban
+```
+
+2\. Command with `service` (legacy method, still compatible):
 
 ```bash
 sudo service fail2ban restart
 ```
 
-Fail2ban has many settings and filters for customisation as well as preset options, for example when you want to add a layer of protection to an Nginx web server.
+Fail2ban has many settings and filters for customization as well as preset options, for example when you want to add a layer of protection to an Nginx web server.
 
 For any additional information and recommendations concerning Fail2ban, please refer to the [official documentation](https://www.fail2ban.org/wiki/index.php/Main_Page){.external} of this tool.
 
@@ -230,11 +275,13 @@ Securing your data is a key element, which is why OVHcloud offers you several ba
 - The `Snapshot` option allows you to create a manual snapshot.
 - The `Automated Backup` option enables you to keep regular backups of your VPS (excluding additional disks).
 
-You can find all information on the available backup solutions for your service on the [product page](https://www.ovhcloud.com/en-gb/vps/options/) and in the [respective guides](/products/bare-metal-cloud-virtual-private-servers).
+You can find all information on the available backup solutions for your service on the [product page](/links/bare-metal/vps-options) and in the [respective guides](/products/bare-metal-cloud-virtual-private-servers).
 
 ## Go further
 
 [Getting started with a VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
+
+[How to create and use SSH keys](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
 
 [Configuring the firewall on Windows](/pages/bare_metal_cloud/virtual_private_servers/activate-port-firewall-soft-win)
 
@@ -242,4 +289,4 @@ You can find all information on the available backup solutions for your service 
 
 [Network Firewall guide](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

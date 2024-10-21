@@ -1,7 +1,7 @@
 ---
 title: Korzystanie z Replikacji Zerto Virtual między dwoma centrami danych OVHcloud
 excerpt: Dowiedz się, jak skonfigurować Zerto Virtual Replication w planie awaryjnym w dwóch ofertach Private Cloud
-updated: 2023-10-23
+updated: 2024-10-18
 ---
 
 > [!primary]
@@ -20,7 +20,7 @@ W pozostałych przypadkach zapoznaj się z naszym przewodnikiem dotyczącym spos
 
 ## Wymagania początkowe
 
-- Posiadanie dwóch ofert [Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/){.external} w dwóch różnych lokalizacjach
+- Posiadanie dwóch ofert [Private Cloud](/links/hosted-private-cloud/vmware-prices) w dwóch różnych hostach
 - Posiadanie wolnego publicznego adresu IP w przypadku każdej z nich
 
 ### Koncepcja Zerto Virtual Replication
@@ -31,8 +31,8 @@ Zerto Virtual Replication jest technicznym rozwiązaniem umożliwiającym skonfi
 
 W ten sposób VRA są wdrażane na każdym hipernadzorcy i zużywają zasoby do wykonywania replikacji:
 
-- vCPU: 1
-- RAM: 2 GB
+- vCPU: 2
+- RAM: 6 GB
 - Przestrzeń dyskowa: 36 GB
 
 Do przestrzeni dyskowej OVHcloud dodaje bezpłatny dedykowany magazyn danych dla wszystkich VRA.
@@ -408,4 +408,4 @@ Jeśli migracja odbywała się **bez** **Reverse Protection**, powrót po awarii
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do społeczności [naszych użytkowników](/links/community).

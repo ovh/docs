@@ -20,7 +20,7 @@ El módulo **cloud-init** permite configurar una [instancia de Public Cloud](htt
 ## Requisitos
 
 - Haber creado una [instancia de Public Cloud](https://www.ovh.es/public-cloud/instancias/){.external}.
-- [Conectarse a la instancia por SSH](/pages/public_cloud/compute/public-cloud-first-steps#4-conectarse-a-una-instancia){.external} (sudo).
+- [Conectarse a la instancia por SSH](/pages/public_cloud/compute/public-cloud-first-steps) (sudo).
 
 ## Procedimiento
 

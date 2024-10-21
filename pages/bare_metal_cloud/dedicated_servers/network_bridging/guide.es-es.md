@@ -1,7 +1,7 @@
 ---
 title: Modo Bridge IP
 excerpt: El modo bridge IP se utiliza para configurar las maquinas virtuales. Es necesario realizar diversas modificaciones en las MV para que la configuracion de red este operativa.
-updated: 2024-07-15
+updated: 2024-10-10
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2024-07-15
 
 > [!primary]
 >
-> Desde el 6 de octubre de 2022, nuestra solución "Failover IP" se denomina desde ahora [Additional IP](https://www.ovhcloud.com/es-es/network/additional-ip/). Esto no afectará a sus funcionalidades.
+> Desde el 6 de octubre de 2022, nuestra solución "Failover IP" se denomina desde ahora [Additional IP](/links/network/additional-ip). Esto no afectará a sus funcionalidades.
 >
 
 ## Objetivo
@@ -19,13 +19,11 @@ La puesta en red en modo bridge puede utilizarse para configurar sus máquinas v
 
 **Esta guía explica cómo utilizar el modo bridge para configurar el acceso a internet para sus máquinas virtuales.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/TZZbPe9hCOk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
 ## Requisitos
 
 - Tener un servidor dedicado con un hipervisor instalado (por ejemplo, [VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server y Proxmox).
-- Tener al menos una dirección [Additional IP](https://www.ovhcloud.com/es-es/bare-metal/ip/) conectada al servidor.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager).
+- Tener al menos una dirección [Additional IP](/links/network/additional-ip) conectada al servidor.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager) o a la [API de OVHcloud](/pages/manage_and_operate/api/first-steps).
 
 > [!warning]
 > Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](/links/bare-metal/eco-about).
@@ -40,7 +38,7 @@ La puesta en red en modo bridge puede utilizarse para configurar sus máquinas v
 
 Los pasos básicos son siempre los mismos, independientemente de los sistemas utilizados:
 
-- creación de una dirección MAC virtual para una dirección IP de migración;
+- creación de una dirección MAC virtual para una [Additional IP](/links/network/additional-ip);
 - Abonar la dirección MAC de la máquina virtual (VM) a esta nueva dirección.
 - configurar **la dirección IP**, **la máscara de red**, **la pasarela** y **la ruta hacia la pasarela** dentro de la máquina virtual.
 
@@ -51,6 +49,9 @@ Para este ejemplo, utilizaremos los siguientes valores en nuestros ejemplos de c
 - "GATEWAY_IP": la dirección de su pasarela por defecto.
 
 ### Asignar una dirección MAC virtual
+
+> [!warning]
+> En el caso de un bloque de IP, las direcciones MAC virtuales se crean en cada IP individual del bloque.
 
 Conéctese al [área de cliente de OVHcloud](/links/manager), haga clic en el menú `Bare Metal Cloud`{.action} y seleccione la sección `Network`{.action}. Haga clic en `IP`{.action}.
 
@@ -71,13 +72,7 @@ Esta dirección MAC virtual será necesaria cuando configure su máquina virtual
 
 ### Establecer la dirección de la puerta de enlace (gateway) <a name="determinegateway"></a>
 
-Para configurar sus máquinas virtuales para el acceso a Internet, debe conocer la pasarela de su máquina host, es decir, su servidor dedicado. La dirección de la pasarela está formada por los tres primeros bytes de la dirección IP principal del servidor, el último byte es de 254. Por ejemplo, si la dirección IP principal del servidor es:
-
-- 203.0.113.1
-
-Su dirección de pasarela será:
-
-- 203.0.113.**254**
+Para configurar las máquinas virtuales para el acceso a Internet, es necesario conocer la puerta de enlace de su máquina host, es decir, su servidor dedicado.
 
 También puede recuperar la dirección de la pasarela a través de [su área de cliente](#viacontrolpanel) o la [API de OVHcloud](#viaapi).
 
@@ -133,6 +128,11 @@ Una vez iniciado el VPS, podrá pasar a las siguientes etapas, en función del s
 
 > [!warning]
 >
+> El hipervisor ESXi ya no es compatible con OVHcloud. Más información en [esta página dedicada](/pages/bare_metal_cloud/dedicated_servers/esxi-end-of-support).
+>
+
+> [!warning]
+>
 > Las siguientes instrucciones se aplican a una máquina virtual creada anteriormente con un sistema operativo instalado. Si no ha creado ninguna MV, consulte la guía [Crear una máquina virtual en el cliente host de VMware](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID-77AB6625-F968-4983-A230-A020C0A70326.html){.external} (EN) en la página VMware.
 >
 
@@ -160,7 +160,7 @@ De forma predeterminada, el archivo de configuración de red de la máquina virt
 Una vez conectado al shell de su máquina virtual, ejecute el siguiente comando para identificar el nombre de su interfaz:
 
 ```bash
-ls /sys/class/net
+ip a
 ```
 
 A continuación, realice una copia del archivo de configuración para poder volver atrás en cualquier momento:
@@ -252,14 +252,14 @@ rtt min/avg/max/mdev = 24.925/28.028/30.840/2.254 ms
 Si recibe una respuesta, significa que la Additional IP se ha configurado correctamente. En caso contrario, reinicie la máquina virtual e intente ping de nuevo.
 
 
-#### Sistemas operativos Red Hat basados en Red Hat (CentOS, Rocky Linux 8, Alma Linux 8, etc.)
+#### Sistemas operativos Red Hat basados en Red Hat (CentOS, Rocky Linux 8/9, Alma Linux 8/9, etc.)
 
-De forma predeterminada, el archivo de configuración de red de la máquina virtual se encuentra en `/etc/sysconfig/network-scripts/`. A modo de demostración, nuestro archivo se llama `ifcfg-eth0`:
+De forma predeterminada, el archivo de configuración de red de la máquina virtual se encuentra en `/etc/sysconfig/network-scripts/`.
 
 Una vez conectado al shell de su máquina virtual, ejecute el siguiente comando para identificar el nombre de su interfaz:
 
 ```bash
-ls /sys/class/net
+ip a
 ```
 
 A continuación, realice una copia del archivo de configuración para poder volver atrás en cualquier momento:
@@ -275,56 +275,42 @@ sudo rm -f etc/sysconfig/network-scripts/ifcfg-eth0
 sudo cp /etc/sysconfig/network-scripts/ifcfg-eth0.bak etc/sysconfig/network-scripts/ifcfg-eth0
 ```
 
-Modifique el fichero para que refleje la siguiente configuración, sustituya `ADDITIONAL_IP`, `GATEWAY_IP` y `MY:VI:RT:UA:LM:AC` por sus propios valores. Además, los parámetros «BOOTPROTO», «ONBOOT» y «DNS» deben ajustarse (o añadirse si faltan). No es necesario editar más líneas.
+A continuación, edite el fichero con el controlador `nmcli`, sustituya `ADDITIONAL_IP` y `GATEWAY_IP`por sus propios valores.
+
+Añada la dirección IP:
 
 ```bash
-sudo vi /etc/sysconfig/network-scripts/ifcfg-eth0
+sudo nmcli connection modify interface_name IPv4.address ADDITIONAL_IP/32
 ```
 
-```console
-PROXY_METHOD=none
-BROWSER_ONLY=no
-BOOTPROTO=none
-DEFROUTE=yes
-IPV4_FAILURE_FATAL=no
-IPV6INIT=yes
-IPV6_AUTOCONF=yes
-IPV6_DEFROUTE=yes
-IPV6_FAILURE_FATAL=no
-IPV6_ADDR_GEN_MODE=stable-privacy
-NAME=eth0
-UUID=120ae2c6-4aa6-xxxx-xxxx-xxxxxxxxxx
-DEVICE=eth0
-ONBOOT=yes
-NETMASK=255.255.255.255
-IPADDR=ADDITIONAL_IP
-GATEWAY=GATEWAY_IP
-HWADDR=MY:VI:RT:UA:LM:AC
-DNS=213.186.33.99
-```
-
-Guarde y cierre el archivo.<br>
-A continuación, cree un nuevo archivo, `route-(interface_name)`, en el directorio `/etc/sysconfig/network-scripts/` y defina las siguientes rutas predeterminadas para la interfaz mediante la puerta de enlace definida en el [paso 2](#determinegateway).
-
-En nuestro ejemplo, nuestro archivo se llama `route-eth0` (sustituya `eth0` por sus propios valores):
+Añada el servicio Gateway:
 
 ```bash
-sudo vi /etc/sysconfig/network-scripts/route-eth0
+sudo nmcli connection modify interface_name IPv4.gateway GATEWAY_IP
 ```
 
-Modifique el fichero para que refleje la siguiente configuración, sustituya `GATEWAY_IP` por su propio valor.
+Añada un servidor DNS:
 
-```console
-GATEWAY_IP dev eth0
-default via GATEWAY_IP dev eth0
+```bash
+sudo nmcli connection modify interface_name IPv4.dns 213.186.33.99
 ```
 
-Guarde y cierre el archivo.
+Cambie la configuración manualmente:
+
+```bash
+sudo nmcli connection modify interface_name IPv4.method manual
+```
+
+Conserve la configuración:
+
+```bash
+sudo nmcli con mod interface_name connection.autoconnect true
+```
 
 Reinicie la red con el siguiente comando:
 
 ```bash
-sudo systemctl restart network
+sudo nmcli device down interface_name;nmcli device up interface_name
 ```
 
 Para comprobar que la máquina virtual está totalmente conectada a Internet, utilice el siguiente comando:
@@ -344,61 +330,6 @@ rtt min/avg/max/mdev = 24.925/28.028/30.840/2.254 ms
 
 Si recibe una respuesta, significa que la Additional IP se ha configurado correctamente. En caso contrario, reinicie la máquina virtual e intente ping de nuevo.
 
-
-#### Rocky Linux 9 y Alma Linux 9
-
-En las versiones anteriores de Rocky Linux y Alma Linux, los perfiles de red se almacenaban en formato ifcfg en este directorio: `/etc/sysconfig/network-scripts/`. Sin embargo, el formato ifcfg está obsoleto y se ha sustituido por keyfiles. El archivo de configuración se encuentra ahora en el directorio: `/etc/NetworkManager/system-connections/`.
-
-Una vez conectado al shell de su máquina virtual, ejecute el siguiente comando para identificar el nombre de su interfaz:
-
-```bash
-ls /sys/class/net
-```
-
-A continuación, realice una copia del archivo de configuración para poder volver atrás en cualquier momento.
-
-Por ejemplo, nuestro archivo se llama `ens18-nmconnection`:
-
-```bash
-sudo cp /etc/NetworkManager/system-connections/ens18-nmconnection /etc/NetworkManager/system-connections/ens18-nmconnection.bak
-```
-
-Si comete algún error, puede volver atrás con los siguientes comandos:
-
-```bash
-sudo rm -f /etc/NetworkManager/system-connections/ens18-nmconnection
-sudo cp /etc/NetworkManager/system-connections/ens18-nmconnection.bak /etc/NetworkManager/system-connections/ens18-nmconnection
-```
-
-Modifique el fichero para que refleje la siguiente configuración, sustituyendo `ADDITIONAL_IP` y `GATEWAY_IP` por sus propios valores. En este ejemplo, el nombre de la interfaz es `ens18`. Reemplace este valor si no es aplicable.
-
-```console
-[ipv4]
-method=auto
-may-fail=false
-address1=ADDITIONAL_IP/32
-gateway=GATEWAY_IP
-```
-
-Guarde y cierre el archivo.<br>
-Reinicie la interfaz de red con el siguiente comando:
-
-Para comprobar que la máquina virtual está totalmente conectada a Internet, utilice el siguiente comando:
-
-```bash
-ping -c 4 example.com
-PING example.com (93.184.215.14) 56(84) bytes of data.
-64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=1 ttl=55 time=29.3 ms
-64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=2 ttl=55 time=24.9 ms
-64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=3 ttl=55 time=30.8 ms
-64 bytes from 93.184.215.14 (93.184.215.14): icmp_seq=4 ttl=55 time=27.0 ms
-
---- example.com ping statistics ---
-4 packets transmitted, 4 received, 0% packet loss, time 3004ms
-rtt min/avg/max/mdev = 24.925/28.028/30.840/2.254 ms
-```
-
-Si recibe una respuesta, significa que la Additional IP se ha configurado correctamente. En caso contrario, reinicie la máquina virtual e intente ping de nuevo.
 
 #### FreeBSD
 
@@ -407,7 +338,7 @@ Por defecto, el archivo de configuración de red de la máquina virtual se encue
 Una vez conectado al shell de su máquina virtual, ejecute el siguiente comando para identificar el nombre de su interfaz:
 
 ```bash
-ls /sys/class/net
+ifconfig
 ```
 
 A continuación, realice una copia del archivo de configuración para poder volver atrás en cualquier momento:
@@ -460,9 +391,37 @@ Si recibe una respuesta, significa que la Additional IP se ha configurado correc
 
 #### Ubuntu
 
-De forma predeterminada, el archivo de configuración de red se encuentra en la carpeta `/etc/netplan/`.
+En primer lugar, desactive cloud-init:
 
-En primer lugar, acceda a la consola para conectarse a su máquina virtual y ejecute el siguiente comando para identificar el nombre de su interfaz:
+```bash
+touch /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
+```
+
+> [!warning]
+>
+> Si quiere configurar su MV con cloud-init, visite [esta página](https://cloud-init.io/)
+>
+
+Añada esta línea al archivo `99-disable-network-config.cfg`:
+
+```bash
+network: {config: disabled}
+```
+
+A continuación, cree el archivo de configuración de red en `/etc/netplan/` con el siguiente comando:
+
+```bash
+touch /etc/netplan/00-installer-config.yaml
+```
+
+A continuación, aplique estos permisos en `/etc/netplan`:
+
+```bash
+cd /etc/netplan
+sudo chmod 600 *.yaml
+```
+
+Ejecute el siguiente comando para identificar el nombre de la interfaz:
 
 ```bash
 ip addr
@@ -481,13 +440,13 @@ sudo rm -f /etc/netplan/00-installer-config.yaml
 sudo cp /etc/netplan/00-installer-config.yaml.bak /etc/netplan/00-installer-config.yaml
 ```
 
-A continuación, abra el archivo de configuración de red situado en `/etc/netplan/` con el siguiente comando:
+A continuación, abra el archivo de configuración de red:
 
 ```bash
 sudo nano /etc/netplan/00-installer-config.yaml
 ```
 
-Una vez abierto el fichero para su modificación, modifíquelo con el siguiente código, sustituyendo `INTERFACE-NAME`, `ADDITIONAL_IP` y `GATEWAY_IP` por sus propios valores.
+Modifique el fichero para que refleje la siguiente configuración, sustituyendo `INTERFACE-NAME`, `ADDITIONAL_IP` y `GATEWAY_IP` por sus propios valores.
 
 ```yaml
 network:

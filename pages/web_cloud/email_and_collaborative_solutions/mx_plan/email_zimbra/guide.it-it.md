@@ -1,7 +1,7 @@
 ---
-title: "MX Plan - Utilizzare la webmail Zimbra"
+title: "Utilizzare la webmail Zimbra"
 excerpt: "Scopri l'interfaccia della Webmail Zimbra per i tuoi indirizzi email MX Plan di OVHcloud"
-updated: 2024-03-11
+updated: 2024-08-26
 ---
 
 > [!primary]
@@ -33,7 +33,7 @@ OVHcloud fornisce un servizio di webmail chiamato Zimbra per accedere a un accou
 
 ## Prerequisiti
 
-- Disporre di una soluzione email OVHcloud **MX Plan**, disponibile tra le nostre [offerte di hosting Web](https://www.ovhcloud.com/it/web-hosting/), inclusa in un [hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting/), o ordinata separatamente come soluzione autonoma.
+- Disporre di una soluzione email OVHcloud **MX Plan**, disponibile tra le nostre [offerte di hosting Web](/links/web/hosting), inclusa in un [hosting gratuito 100M](/links/web/domains-free-hosting), o ordinata separatamente come soluzione autonoma.
 - Disporre delle credenziali di accesso all’indirizzo email MX Plan da consultare. Per maggiori informazioni, consulta la nostra guida "[Iniziare a utilizzare il servizio MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)".
 
 ## Procedura
@@ -54,6 +54,9 @@ OVHcloud fornisce un servizio di webmail chiamato Zimbra per accedere a un accou
     - [Gestione delle cartelle](#contacts-folders)
     - [Gestione degli elenchi](#contacts-lists)
     - [Importa/Esporta contatti](#import-export)
+- [Calendario](#calendar)
+    - [Gestione calendari](#calendar-management)
+    - [Impegni](#tasks)
 - [Filtri](#filters)
     - [Come impostare i filtri](#filters-howto)
     - [Crea un filtro](#filters-creation)
@@ -63,7 +66,7 @@ OVHcloud fornisce un servizio di webmail chiamato Zimbra per accedere a un accou
 
 ### Accedi alla Webmail Zimbra <a name="login"></a>
 
-Accedi alla pagina <https://www.ovh.com/it/mail/>. Inserisci il tuo indirizzo e-mail e la password e clicca su `Invia`{.action}.
+Accedi alla pagina [Webmail](/links/web/email). Inserisci il tuo indirizzo e-mail e la password e clicca su `Invia`{.action}.
 
 ![Zimbra - connessione](images/ovhcloud-login-webmail.png){.thumbnail}
 
@@ -289,6 +292,31 @@ L'interfaccia Zimbra dispone di 2 menu di configurazione:
 >>
 >> Per configurare i filtri, consultate la sezione "[Filtri](#filters)" di questa guida.
 >>
+> **Agenda e promemoria**
+>>
+>> Consulta le impostazioni relative ai tuoi [calendari](#calendar).
+>>
+>> **Impostazioni Agenda generali**
+>>
+>> - **Agenda predefinita** : impostare il calendario predefinito da utilizzare quando si crea un evento nei calendari.
+>> - **Inizio settimana** : il giorno che compare per primo nella griglia del calendario.
+>> - **Inizio giorno feriale** : l'ora visualizzata nella parte superiore dell'intervallo orario visualizzato.
+>> - **Fine giorno feriale** : l'ora visualizzata nella parte inferiore dell'intervallo orario visualizzato.
+>> - **Fuso orario giorni feriali** utilizzato per i calendari.
+>> - **Durante la creazione o la modifica di eventi** : visualizzare i fusi orari per le ore di inizio e di fine.
+>> - **Condivisione** : `Attiva la delega per i clienti CALDav`. Questa opzione consente di gestire i calendari tramite un software che supporta il protocollo CALdav.
+>> - **Eventi rifiutati** : visualizzare un evento nel calendario, anche se è stato rifiutato.
+>>
+>> **Promemoria eventi**
+>>
+>> - **Invia promemoria via email a** : inviare promemoria di eventi a un indirizzo e-mail.
+>> - **Mostra notifiche del browser** : essere avvisati dal browser per i tuoi eventi.
+>> - **Orario promemoria predefinito** : timeout di richiamata predefinito quando viene attivato su un evento.
+>> - **Mostra promemoria per gli eventi scaduti** : continua a inviare promemoria dopo un evento.
+>>
+>> **Autorizzazione orari liberi/occupati**
+>>
+>> - **Autorizzazione per** : questo parametro riguarda esclusivamente lo stato di disponibilità associato ai calendari dell’indirizzo email. Questo significa che è possibile condividere il proprio stato "Occupato" o "Disponibile" con altri indirizzi email.
 
 ### Contatti <a name="contacts"></a>
 
@@ -359,6 +387,72 @@ Selezionare una delle due schede seguenti:
 >> Clicca su `Esporta`{.action} per aprire la finestra di esportazione. Seleziona il tipo di file da esportare e clicca su `Esporta adesso`{.action}.<br><br>
 >> ![Zimbra - Esportare](images/zimbra-20.png){.thumbnail}
 >>
+
+### Agenda <a name="calendar"></a>
+
+Clicca sull’icona `Agenda` nella barra superiore per accedere alla rubrica. Il codice è diviso in **3 parti**:
+
+- **(1) Elenco calendari** (a sinistra): gestisci i diversi calendari e sottocalendari.
+- **(2) Contenuto dei calendari** (al centro): visualizza il contenuto dei calendari e dei sottocalendari selezionati.
+- **(3) Elenco attività** (a destra): gestisci le attività e gli elenchi attività.
+
+![Zimbra - calendar](images/zimbra-calendar-view.png){.thumbnail}
+
+#### Gestione dei calendari <a name="calendar-management"></a>
+
+Per impostazione predefinita, nell’elenco `Mie agende` è presente un `Calendario` creato per impostazione predefinita. Questo calendario predefinito non può essere eliminato, ma sarà comunque possibile creare calendari personalizzati nel paragrafo successivo.
+
+###### 1- Creare un calendario <a name="calendar-add-calendar"></a>
+
+- **(1)**: Per creare un calendario, posiziona il cursore su `Mie agende` nella colonna di sinistra e clicca sul pulsante `+`. Inserisci un nome e definisci un colore, poi clicca su `Salva`{.action}
+
+È inoltre possibile creare calendari secondari.
+
+- **(2)**: Per creare un calendario secondario, spostare il cursore sul calendario per il quale si desidera crearne uno, quindi fare clic con il pulsante destro del mouse per visualizzare il menu a discesa. Clicca su `Aggiungi sottocalendario`. Inserisci un nome e definisci un colore, poi clicca su `Salva`{.action}
+
+![Zimbra - calendar](images/zimbra-calendar-add.png){.thumbnail .w-400}
+
+###### 2- Aggiungi un evento <a name="calendar-add-event"></a>
+
+- **(1)**: Clicca su `Nuovo evento`{.action} nell’angolo in alto a sinistra.
+- **(2)**: Fare clic sull'intervallo di tempo del calendario in cui si desidera aggiungere un evento. Per un’aggiunta semplificata, è sufficiente definire un titolo per l’evento e un luogo e cliccare su `Salva`{.action}. Per aggiungere maggiori dettagli sul tuo evento, clicca su `Aggiungi altri dettagli`{.action}
+
+![Zimbra - calendar](images/zimbra-calendar-event-add-01.png){.thumbnail .w-400}
+
+- **Inizio**: data e ora di inizio dell’evento. Se si seleziona `Tutto il giorno`, non sarà necessario inserire l'ora di inizio e di fine, poiché l'intero giorno verrà preso in considerazione.
+- **Fine**: data e ora di fine del tuo evento.
+- **Ripeti**: se si tratta di un evento ricorrente, definisci la sua frequenza.
+- **Luogo**: il luogo in cui si svolgerà l'evento, come ad esempio il nome di una sala riunioni.
+- **Attrezzatura**: cliccando su `Mostra l’attrezzatura`{.action}, visualizzi questa linea per definire un’attrezzatura condivisa da utilizzare per il tuo evento.
+- **Invitati**: gli indirizzi email dei partecipanti all'evento.
+- **Note**: messaggio che verrà inviato agli ospiti dell'evento.
+- **Promemoria**: essere avvisati prima dell'inizio dell'evento.
+- **Mostra come**: definisci se l'evento rende disponibili o meno i suoi ospiti durante lo svolgimento
+- **Agenda**: definire il calendario associato all'evento.
+
+Una volta definito l’evento, clicca su `Registra`{.action}.
+
+![Zimbra - calendar](images/zimbra-calendar-event-add-02.png){.thumbnail .w-400}
+
+##### 3- Modificare un evento <a name="calendar-modify-event"></a>
+
+#### Impegni <a name="tasks"></a>
+
+Le attività sono elementi separati dai calendari. Il loro scopo è quello di elencare le attività da effettuare senza associarvi una data di esecuzione o una data di scadenza. Queste attività sono complementari ai calendari.
+
+L'elenco Attività esiste per impostazione predefinita e non può essere eliminato, ma è possibile creare elenchi di attività personalizzati.
+
+- **(1)**: Per creare un'attività, clicca sul pulsante `...`{.action} e poi su `Nuova impegno`{.action} o semplicemente sul pulsante `+`{.action} accanto alla lista delle attività.
+
+- **(2)**: Per creare una nuova lista di attività, clicca sul pulsante `...`{.action} e poi su `Crea elenco...`{.action}.
+
+![Zimbra - calendar](images/zimbra-calendar-task-01.png){.thumbnail .w-400}
+
+Quando si crea un'attività, è possibile impostare una data di scadenza e una priorità per classificarle in base all'importanza e un menu a discesa per selezionare l'elenco delle attività.
+
+Clicca su `Salva`{.action} per completare la creazione dell’operazione.
+
+![Zimbra - calendar](images/zimbra-calendar-task-02.png){.thumbnail .w-400}
 
 ### Filtri <a name="filters"></a>
 

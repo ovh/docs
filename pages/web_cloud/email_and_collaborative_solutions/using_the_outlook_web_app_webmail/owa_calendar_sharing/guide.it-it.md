@@ -12,14 +12,14 @@ La funzionalità Exchange ti consente di fornire l’accesso ai tuoi calendari a
 
 ## Prerequisiti
 
-- Disporre di una [soluzione Exchange OVHcloud](https://www.ovhcloud.com/it/emails/hosted-exchange/) attiva
+- Disporre di una [soluzione Exchange OVHcloud](/links/web/emails-hosted-exchange) attiva
 - Avere accesso all’account Exchange (indirizzo email e password)
 
 ## Procedura
 
 ### Step 1: seleziona un calendario da condividere
 
-Per prima cosa, accedi al tuo account Exchange tramite la [Webmail OVHcloud](https://www.ovh.it/mail/). Per aprire l’interfaccia “Calendario”, clicca su “App Launcher” in alto a sinistra e seleziona l’icona a forma di `Calendario`{.action}.
+Per prima cosa, accedi al tuo account Exchange tramite la [Webmail OVHcloud](/links/web/email). Per aprire l’interfaccia “Calendario”, clicca su “App Launcher” in alto a sinistra e seleziona l’icona a forma di `Calendario`{.action}.
 
 ![sharecalendar](images/exchange-calendars-step1.png){.thumbnail}
 

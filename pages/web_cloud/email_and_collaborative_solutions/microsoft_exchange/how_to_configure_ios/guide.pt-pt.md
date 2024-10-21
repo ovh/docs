@@ -1,7 +1,7 @@
 ---
-title: 'Configurar a conta Exchange num iPhone ou num iPad'
+title: "Exchange - Configure sua conta de e-mail no Mail para iPhone e iPad"
 excerpt: 'Descubra como configurar uma conta Exchange num iPhone ou num iPad através da aplicação Mail'
-updated: 2021-05-21
+updated: 2024-10-09
 ---
 
 > [!primary]
@@ -18,12 +18,12 @@ As contas Exchange podem ser usadas com vários softwares de e-mail (desde que s
 >
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 >
-> Este guia explica como implementar algumas medidas para otimizar a performance e a segurança do seu sistema. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção «Quer saber mais?» deste guia.
+> Este guia explica como implementar algumas medidas para otimizar a performance e a segurança do seu sistema. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](/links/partner) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção «Quer saber mais?» deste guia.
 >
 
 ## Requisitos
 
-- Ter uma [conta de e-mail Exchange](https://www.ovhcloud.com/pt/emails/){.external}.
+- Ter uma [conta de e-mail Exchange](/links/web/emails).
 - Ter a aplicação Mail instalada no seu dispositivo iOS.
 - Ter acesso às credenciais do endereço de e-mail que pretende configurar.
 
@@ -35,7 +35,7 @@ As contas Exchange podem ser usadas com vários softwares de e-mail (desde que s
 >
 > No nosso exemplo, utilizamos a menção servidor: ex**?**.mail.ovh.net. Deverá substituir o "? " pelo número que designa o servidor do seu serviço Exchange.
 >
-> Encontre este número na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na rubrica `Web Cloud`{.action} e depois `Microsoft`{.action}.
+> Encontre este número na sua [Área de Cliente OVHcloud](/links/manager), na rubrica `Web Cloud`{.action} e depois `Microsoft`{.action}.
 > Clique em `Exchange`{.action} e, a seguir, na plataforma Exchange pretendida. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.
 >
 
@@ -60,7 +60,7 @@ Se quiser, pode efetuar um teste de envio para verificar se a conta está corret
 
 Após a configuração, a conta de e-mail está pronta a usar e pode começar a enviar e receber mensagens no seu dispositivo.
 
-A OVHcloud também disponibiliza uma aplicação web com [funcionalidades de colaboração Exchange](https://www.ovhcloud.com/pt/emails/){.external} acessível no endereço <https://www.ovh.pt/mail/>. Para aceder, só precisa dos dados de acesso relativos ao seu endereço de e-mail.
+A OVHcloud também disponibiliza uma aplicação web com [funcionalidades de colaboração Exchange](/links/web/emails) acessível no endereço [Webmail](/links/web/email). Para aceder, só precisa dos dados de acesso relativos ao seu endereço de e-mail.
 
 > [!primary]
 >
@@ -68,6 +68,10 @@ A OVHcloud também disponibiliza uma aplicação web com [funcionalidades de col
 >
 
 ## Quer saber mais?
+
+> [!primary]
+>
+> Para obter mais informações sobre a configuração de um endereço de e-mail a partir da aplicação Mail para o iOS, consulte [Centro de Ajuda da Apple](https://support.apple.com/pt-pt/102619).
 
 [Configurar o seu endereço de e-mail no serviço MX Plan ou num serviço de hosting web num iPhone ou num iPad](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_ios)
 

@@ -20,15 +20,15 @@ Quiere:
 
 ## Requisitos
 
-- Disponer de una solución de correo electrónico de OVHcloud previamente configurada (**MX Plan**, incluida en nuestros [planes de hosting](https://www.ovhcloud.com/es/web-hosting/) o contratada por separado como solución autónoma, como [**Hosted Exchange**](https://www.ovhcloud.com/es/emails/hosted-exchange/)).
-- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la sección `Web Cloud`{.action}.
+- Disponer de una solución de correo electrónico de OVHcloud previamente configurada (**MX Plan**, incluida en nuestros [planes de hosting](/links/web/hosting) o contratada por separado como solución autónoma, como [**Hosted Exchange**](/links/web/emails-hosted-exchange)).
+- Estar conectado al [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action}.
 - Disponer de la información de conexión a las direcciones de correo electrónico correspondientes.
 
 ## En la práctica <a name="instructions"></a>
 
 OVHcloud ofrece 3 soluciones de correo electrónico. El concepto de eliminación de cuenta es diferente según su solución.
 
-- **Email MXplan**: esta solución se vende en forma de pack de varias cuentas de correo. Cuando elimina una cuenta, libera una ubicación en su pack. 
+- **Email MX Plan**: esta solución se vende en forma de pack de varias cuentas de correo. Cuando elimina una cuenta, libera una ubicación en su pack. 
 - **Hosted Exchange**: estos dos productos son a la carta, usted contrata una suscripción individual por cuenta e-mail. Si quiere eliminar una dirección de correo, deberá **restaurar** la cuenta de correo. Una vez que haya restaurado la cuenta de correo, puede reutilizar la cuenta para crear una nueva dirección de correo. También puede [dar de baja la suscripción](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#eliminar-cuentas) de esta cuenta si desea eliminarla definitivamente.
 
 ### Eliminar o restaurar una cuenta de correo
@@ -36,8 +36,8 @@ OVHcloud ofrece 3 soluciones de correo electrónico. El concepto de eliminación
 Seleccione la pestaña correspondiente a su servicio de correo:
 
 > [!tabs]
-> **Emails MXplan**
->> Para comprobar si su MXplan es una versión histórica o nueva, consulte el cuadro de la sección "[Identifique su solución MXplan](#whichmxplan)" de esta guía.<br><br>
+> **Emails MX Plan**
+>> Para comprobar si su MX Plan es una versión histórica o nueva, consulte el cuadro de la sección "[Identifique su solución MX Plan](#whichmxplan)" de esta guía.<br><br>
 >> Haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente. Abra la pestaña `Cuentas de correo`{.action}. Se abrirá una ventana en la que se mostrarán las cuentas de correo existentes. Haga clic en el botón `...`{.action} situado al final de la línea correspondiente a la cuenta que quiera modificar y seleccione `Restaurar la cuenta`{.action}.<br><br>
 >>![Correo electrónico](images/email-mxplan-new-reset.png){.thumbnail}<br>
 >>
@@ -49,12 +49,12 @@ Seleccione la pestaña correspondiente a su servicio de correo:
 
 ## Más información
 
-[Primeros pasos con la solución MXplan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
+[Primeros pasos con la solución MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 
 [Primeros pasos con la solución Hosted Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
 
 [Gestionar la facturación de las cuentas Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange)
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte](https://www.ovhcloud.com/es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte](/links/support).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

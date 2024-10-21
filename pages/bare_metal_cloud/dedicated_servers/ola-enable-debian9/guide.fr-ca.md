@@ -1,19 +1,19 @@
 ---
-title: 'Comment configurer votre NIC pour la fonctionnalité OVHcloud Link Aggregation sur Debian 9'
-excerpt: 'Activer OVHcloud Link Aggregation sur votre Debian 9'
-updated: 2022-01-07
+title: 'Comment configurer votre NIC pour la fonctionnalité OVHcloud Link Aggregation sur Debian 9 à 11'
+excerpt: 'Activer OVHcloud Link Aggregation sur votre Debian (versions 9 à 11)'
+updated: 2024-10-16
 ---
 
 ## Objectif
 
 La technologie OVHcloud Link Aggregation (OLA) est conçue par nos équipes pour augmenter la disponibilité de votre serveur et améliorer l'efficacité de vos connexions réseau. En quelques clics, vous pouvez agréger vos cartes réseau et rendre vos liaisons réseau redondantes. Cela signifie que si une liaison tombe en panne, le trafic est automatiquement redirigé vers une autre liaison disponible.
 
-**Découvrez comment regrouper vos NIC (Network Interface Controller) pour les utiliser avec le service OLA sur Debian 9.**  
+**Découvrez comment regrouper vos NIC (Network Interface Controller) pour les utiliser avec le service OLA sur Debian (versions de 9 à 11).**  
 
 ## Prérequis
 
 - [Avoir configuré votre NIC pour la fonctionnalité OVHcloud Link Aggregation depuis l’espace client OVHcloud](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager)
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 
 > [!warning]
 >
@@ -27,7 +27,7 @@ La technologie OVHcloud Link Aggregation (OLA) est conçue par nos équipes pour
 ## En pratique
 
 Étant donné que nous avons une configuration privée-privée pour nos NIC sur OLA, il est impossible de se connecter en SSH au serveur. Par conséquent, vous devrez utiliser l’outil IPMI pour accéder au serveur.
-<br>Pour cela, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et allez à l'onglet `Bare Metal Cloud`{.action}. Sélectionnez votre serveur dans la liste sous la rubrique `Serveurs dédiés`{.action}.
+<br>Pour cela, connectez-vous à votre [espace client OVHcloud](/links/manager) et allez à l'onglet `Bare Metal Cloud`{.action}. Sélectionnez votre serveur dans la liste sous la rubrique `Serveurs dédiés`{.action}.
 
 Cliquez ensuite sur l'onglet `IPMI`{.action} (1) puis sur le bouton `Depuis un applet Java (KVM)`{.action} (2).
 
@@ -56,14 +56,14 @@ Ceci ouvrira un fichier texte vide. Pour configurer l’interface d’agrégatio
 
 ```bash
 auto bond0
-  iface bond0 inet static
+iface bond0 inet static
   address 10.0.0.1/24
   bond-mode 802.3ad
   bond-slaves eno1 eno2
   bond-miimon 100
   bond-downdelay 200
-  bond-lacp-rate 1
-  bond-xmit_hash_policy layer2+3
+  bond-lacp-rate fast
+  bond-xmit_hash_policy layer3+4
 
   up ip -6 addr add fc10:0000:0000:0001::/64 dev bond0
 ```
@@ -79,7 +79,7 @@ Pour finir, il faudra redémarrer le service réseau à l’aide de la commande 
 systemctl restart networking
 ```
 
-Ce redémarrage peut prendre quelques minutes puisqu’il permet de mettre en place l’interface d’agrégation. Pour vérifier que cette agrégation fonctionne, effectuez un ping vers un autre serveur sur le même vRack. Si cela fonctionne, vous avez configuré la connexion correctement. Si ce n’est pas le cas, vérifiez vos configurations ou essayez de redémarrer le serveur.
+Ce redémarrage peut prendre quelques secondes puisqu’il permet de mettre en place l’interface d’agrégation. Pour vérifier que cette agrégation fonctionne, effectuez un ping vers un autre serveur sur le même vRack. Si cela fonctionne, vous avez configuré la connexion correctement. Si ce n’est pas le cas, vérifiez vos configurations ou essayez de redémarrer le serveur.
 
 ## Aller plus loin
 

@@ -25,7 +25,7 @@ Here is the list of software included in the suite:
 
 ### How to order a licence
 
-Go to the [OVHcloud Microsoft 365](https://www.ovhcloud.com/en-gb/collaborative-tools/microsoft-365/)commercial page and click on the button `Order`{.action}.
+Go to the [OVHcloud Microsoft 365](/links/web/ms365)commercial page and click on the button `Order`{.action}.
 
 From the [OVHcloud Control Panel](/links/manager), select `Web Cloud`{.action} in the top menu, click the `Order`{.action} button and then `Office 365`{.action}.
 

@@ -16,16 +16,16 @@ Adicionar um domínio a um serviço Exchange é indispensável para poder utiliz
 
 ## Requisitos
 
-- Dispor de uma solução [Exchange](https://www.ovhcloud.com/pt/emails/) ou [Email Pro](https://www.ovhcloud.com/pt/emails/email-pro/).
+- Dispor de uma solução [Exchange](/links/web/emails) ou [Email Pro](/links/web/email-pro).
 - Dispor de um ou vários domínios.
 - Ter a possibilidade de alterar a configuração do domínio [zona DNS](/pages/web_cloud/domains/dns_zone_edit).
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 
 ## Instruções
 
 ### Aceder à gestão do seu serviço
 
-Depois de ativado, o serviço Exchange ou E-mail Pro pode ser gerido a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+Depois de ativado, o serviço Exchange ou E-mail Pro pode ser gerido a partir da [Área de Cliente OVHcloud](/links/manager).
 
 Na secção `Web Cloud`{.action}:
 
@@ -40,7 +40,7 @@ Para adicionar um domínio, clique no separador `Domínios associados`{.action}.
 
 > [!warning]
 >
-> Todos os endereços criados no seu serviço de e-mail poderão visualizar no diretório o conjunto dos endereços deste serviço, incluindo os que possuem um nome de domínio diferente. Para dissociar a apresentação dos domínios, deve encomendar uma nova [solução Exchange ou Email Pro](https://www.ovhcloud.com/pt/emails/) para o(s) domínio(s) em causa.
+> Todos os endereços criados no seu serviço de e-mail poderão visualizar no diretório o conjunto dos endereços deste serviço, incluindo os que possuem um nome de domínio diferente. Para dissociar a apresentação dos domínios, deve encomendar uma nova [solução Exchange ou Email Pro](/links/web/emails) para o(s) domínio(s) em causa.
 >
 
 ![Add Domain](images/add_domain_exchange_step1.png){.thumbnail}
@@ -109,11 +109,11 @@ Agora que adicionou os domínios desejados ao seu serviço, pode configurar as s
 
 Relembramos que todos os endereços criados no seu serviço poderão visualizar no diretório o conjunto dos endereços deste serviço, incluindo os que possuem um nome de domínio diferente.
 
-Depois de configurar as contas, só precisa de as utilizar. Para isso, a OVHcloud coloca à sua disposição o **webmail** acessível no endereço <https://www.ovh.com/pt/mail/>. Para otimizar a utilização do seu endereço num software, certifique-se de que este é compatível com o serviço. 
+Depois de configurar as contas, só precisa de as utilizar. Para isso, a OVHcloud coloca à sua disposição o **webmail** acessível no endereço [Webmail](/links/web/email). Para otimizar a utilização do seu endereço num software, certifique-se de que este é compatível com o serviço. 
 
 Se pretender configurar o seu endereço de e-mail num software de correio eletrónico ou periférico, como um smartphone ou um tablet, ou obter ajuda relativamente às funcionalidades do seu serviço de e-mail, consulte os nossos documentos acessíveis a partir das páginas [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) e [E-mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro).
 
-Pode adquirir licenças Outlook na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e licenças Office 365 na página <https://www.ovhcloud.com/pt/collaborative-tools/microsoft-365/>. Caso pretenda usufruir do software de correio eletrónico Outlook ou de outros programas da suite Office, recomendamos uma destas soluções.
+Pode adquirir licenças Outlook na [Área de Cliente OVHcloud](/links/manager) e licenças Office 365 na página [Microsoft 365](/links/web/ms365). Caso pretenda usufruir do software de correio eletrónico Outlook ou de outros programas da suite Office, recomendamos uma destas soluções.
 
 ### Eliminar um domínio de uma plataforma
 
@@ -149,7 +149,7 @@ No separador `Domínio associados`{.action} da sua plataforma, clique no botão 
 
 [Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/)
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](/links/partner).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support)
 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

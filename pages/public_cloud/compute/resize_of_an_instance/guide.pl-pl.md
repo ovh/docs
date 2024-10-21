@@ -32,7 +32,7 @@ Jeśli Twoja działalność się rozwija i zapotrzebowanie na zasoby wzrasta, mo
 
 ## Wymagania początkowe
 
-- Utworzenie [instancji Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#krok-3-tworzenie-instancji) na Twoim koncie OVHcloud
+- Utworzenie [instancji Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) na Twoim koncie OVHcloud
 - [Dostęp do interfejsu Horizon](/pages/public_cloud/compute/introducing_horizon)
 
 ## W praktyce

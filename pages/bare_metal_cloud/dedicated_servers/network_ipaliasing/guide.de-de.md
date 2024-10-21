@@ -1,7 +1,7 @@
 ---
 title: "Konfiguration von IP-Aliasing"
 excerpt: "Erfahren Sie hier, wie Sie Additional IPs zu Ihrer Konfiguration hinzufügen"
-updated: 2024-03-25
+updated: 2024-09-27
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2024-03-25
 
 > [!primary]
 >
-> Seit dem 6. Oktober 2022 heißt unser Dienst "Failover-IP" nun [Additional IP](https://www.ovhcloud.com/de/network/additional-ip/). Die Namensänderung hat keine Auswirkungen auf dessen technische Funktionen.
+> Seit dem 6. Oktober 2022 heißt unser Dienst "Failover-IP" nun [Additional IP](/links/network/additional-ip). Die Namensänderung hat keine Auswirkungen auf dessen technische Funktionen.
 >
 
 ## Ziel
@@ -22,13 +22,13 @@ IP-Aliasing ist eine spezielle Konfiguration im Netzwerk Ihres Servers, mit der 
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren oder Ihre Fragen an die [OVHcloud Community](https://community.ovh.com/en/) zu richten, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Implementierung der Dienste auf einem Server haben.
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, einen [spezialisierten Dienstleister](/links/partner) zu kontaktieren oder Ihre Fragen an die [OVHcloud Community](https://community.ovh.com/en/) zu richten, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Implementierung der Dienste auf einem Server haben.
 >
 
 ## Voraussetzungen
 
-- Sie verfügen über einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/).
-- Sie verfügen mindestens eine [Additional IP](https://www.ovhcloud.com/de/bare-metal/ip/).
+- Sie verfügen über einen [Dedicated Server](/links/bare-metal/bare-metal).
+- Sie verfügen mindestens eine [Additional IP](/links/network/additional-ip).
 - Sie haben administrativen Zugriff (sudo) auf Ihren Server über SSH oder GUI.
 
 > [!warning]
@@ -55,7 +55,7 @@ Beachten Sie die folgende Terminologie, die in Codebeispielen und Anweisungen de
 
 In unseren Beispielen verwenden wir den Texteditor `nano`. Bei einigen Betriebssystemen muss es vor der Verwendung installiert werden. Ist das der Fall, werden Sie dazu aufgefordert. Sie können natürlich auch einen beliebigen Texteditor verwenden.
 
-### Debian 10/11
+### Debian 11
 
 Standardmäßig befindet sich die Konfigurationsdatei unter `/etc/network/interfaces.d/`. Es wird empfohlen, zunächst eine Sicherungskopie der entsprechenden Konfigurationsdatei zu erstellen.
 
@@ -170,7 +170,7 @@ Im letzten Schritt starten Sie das Interface neu:
 sudo /etc/init.d/networking restart
 ```
 
-### Fedora 38 und spätere Versionen
+### Fedora 39 und spätere Versionen
 
 Fedora verwendet nunmehr Schlüsseldateien (*keyfiles*).
 Fedora speicherte zuvor im Verzeichnis `/etc/sysconfig/network-scripts/` Netzwerkprofile im Format ifcfg.<br>
@@ -339,7 +339,7 @@ sudo netplan apply
 > Bei Verwendung des Befehls `netplan try` kann eine Warnmeldung wie `Permissions for /etc/netplan/xx-cloud-init.yaml are too open. Netplan configuration should NOT be accessible by others`. Das bedeutet nur, dass die Datei keine einschränkenden Berechtigungen hat. Dies hat keine Auswirkungen auf die Konfiguration Ihrer Additional IP. Weitere Informationen zu Dateiberechtigungen finden Sie in der [offiziellen Dokumentation von Ubuntu](https://help.ubuntu.com/community/FilePermissions){.external}.
 >
 
-### CentOS, AlmaLinux (8 & 9), Rocky Linux (8 & 9)
+### AlmaLinux (8 & 9), Rocky Linux (8 & 9)
 
 Die Hauptkonfigurationsdatei befindet sich unter `/etc/sysconfig/network-scripts/`. In unserem Beispiel heißt es `ifcfg-eth0`. Überprüfen Sie Ihren Dateinamen in diesem Ordner, bevor Sie Änderungen vornehmen.
 
@@ -385,13 +385,7 @@ BROADCAST=203.0.113.1
 
 #### Schritt 3: Interface neu starten
 
-Im letzten Schritt starten Sie Ihr Interface neu:
-
-```sh
-ifup eth0:0
-```
-
-#### Für AlmaLinux und Rocky Linux
+Als letzten Schritt starten Sie Ihr Interface neu:
 
 ```sh
 sudo systemctl restart NetworkManager

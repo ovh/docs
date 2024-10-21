@@ -17,14 +17,14 @@ La tecnología Intel SGX proporciona funciones avanzadas de seguridad mediante e
 
 - Tener un servidor dedicado compatible con la opción [SGX](https://www.ovhcloud.com/es/bare-metal/intel-software-guard-extensions/){.external}
 - Disponer de las claves de conexión recibidas por correo electrónico tras la instalación
-- Tener acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) o a la [API de OVHcloud](https://ca.api.ovh.com/)
+- Tener acceso al [área de cliente de OVHcloud](/links/manager) o a la [API de OVHcloud](https://ca.api.ovh.com/)
 - Tener instalado Ubuntu 18.04 o similar en el servidor
 
 ## Procedimiento
 
 ### Desde el área de cliente de OVHcloud
 
-Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor al que quiere activar SGX en la sección **Servidores dedicados** del menú de la izquierda.
+Conéctese al [área de cliente de OVHcloud](/links/manager), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor al que quiere activar SGX en la sección **Servidores dedicados** del menú de la izquierda.
 
 #### Activación de la opción
 

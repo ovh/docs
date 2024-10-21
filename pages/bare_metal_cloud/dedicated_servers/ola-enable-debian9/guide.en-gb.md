@@ -1,19 +1,19 @@
 ---
-title: How to Configure Your NIC for OVHcloud Link Aggregation in Debian 9
-excerpt: Enable OVHcloud Link Aggregation in your Debian 9 server
-updated: 2022-01-07
+title: How to Configure Your NIC for OVHcloud Link Aggregation in Debian 9 to 11
+excerpt: "Enable OVHcloud Link Aggregation in your Debian server (from Debian 9 to Debian11)"
+updated: 2024-10-16
 ---
 
 ## Objective
 
 OVHcloud Link Aggregation (OLA) technology is designed by our teams to increase your server’s availability, and boost the efficiency of your network connections. In just a few clicks, you can aggregate your network cards and make your network links redundant. This means that if one link goes down, traffic is automatically redirected to another available link.
 
-**This guide explains how to bond your NICs to use them for OLA in Debian 9.**  
+**This guide explains how to bond your NICs to use them for OLA in Debian (versions 9 to 11)**  
 
 ## Requirements
 
 - [Configuring OVHcloud Link Aggregation in the OVHcloud Control Panel](/pages/bare_metal_cloud/dedicated_servers/ola-enable-manager)
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!warning]
 >
@@ -27,7 +27,7 @@ OVHcloud Link Aggregation (OLA) technology is designed by our teams to increase 
 ## Instructions
 
 Because you have a private-private configuration for your NICs in OLA, you will be unable to SSH into the server. Thus, you will need to leverage the IPMI tool to access the server.
-<br>To do so, first log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). In the `Bare Metal Cloud`{.action} section, select your server from `Dedicated Servers`{.action} and click the `IPMI`{.action} tab (1).
+<br>To do so, first log in to your [OVHcloud Control Panel](/links/manager). In the `Bare Metal Cloud`{.action} section, select your server from `Dedicated Servers`{.action} and click the `IPMI`{.action} tab (1).
 
 Next, click the `From a Java applet (KVM)`{.action} button (2).
 
@@ -56,14 +56,14 @@ This will open an empty text file. To configure the bond interface, insert the f
 
 ```bash
 auto bond0
-  iface bond0 inet static
+iface bond0 inet static
   address 10.0.0.1/24
   bond-mode 802.3ad
   bond-slaves eno1 eno2
   bond-miimon 100
   bond-downdelay 200
-  bond-lacp-rate 1
-  bond-xmit_hash_policy layer2+3
+  bond-lacp-rate fast
+  bond-xmit_hash_policy layer3+4
 
   up ip -6 addr add fc10:0000:0000:0001::/64 dev bond0
 ```
@@ -79,7 +79,7 @@ Finally, we will restart the networking daemon using the following command:
 systemctl restart networking
 ```
 
-This restart may take several minutes since it is building the bond interface.  To test that our bond is working, ping another server on the same vRack. If it works, you are all set. If it does not, double check your configurations or try rebooting the server.
+This restart may take several seconds since it is building the bond interface.  To test that our bond is working, ping another server on the same vRack. If it works, you are all set. If it does not, double check your configurations or try rebooting the server.
 
 ## Go further
 
@@ -91,4 +91,4 @@ This restart may take several minutes since it is building the bond interface.  
 
 [How to Configure Your NIC for OVHcloud Link Aggregation in SLES 15](/pages/bare_metal_cloud/dedicated_servers/ola-enable-sles15)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

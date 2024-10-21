@@ -9,7 +9,7 @@ updated: 2022-04-06
 <b>Esta guía explica cómo activar la opción «Autorizar las aplicaciones poco seguras» en su cuenta de Gmail.</b>
 
 > [!primary] Esta documentación constituye una etapa vinculada a la guía
-> [«Migrar una cuenta de Gmail a una dirección de correo electrónico de OVHcloud a través de OVH Mail Migrator»](/pages/web_cloud/email_and_collaborative_solutions/migrating/migrate_gmail_to_ovhcloud_by_omm){.external}
+> [«Migrar una cuenta de Gmail a una dirección de correo electrónico de OVHcloud a través de OVH Mail Migrator»](/pages/web_cloud/email_and_collaborative_solutions/migrating/migrate_gmail_to_ovhcloud_by_omm)
 
 ## Procedimiento
 
@@ -21,7 +21,7 @@ Aparece el siguiente mensaje, en el que se indican los detalles del intento de u
 
 ![omm](images/OMM-gmail-security-02.png){.thumbnail}
 
-En la siguiente ventana, se le informa que, a pesar de esta validación, hay un bloqueo activo. Haga clic directamente en el siguiente enlace: [myaccount.google.com/lesssecureapps](https://myaccount.google.com/lesssecureapps){.external}
+En la siguiente ventana, se le informa que, a pesar de esta validación, hay un bloqueo activo. Haga clic directamente en el siguiente enlace: [myaccount.google.com/lesssecureapps](https://myaccount.google.com/lesssecureapps)
 
 ![omm](images/OMM-gmail-security-03.png){.thumbnail}
 
@@ -50,4 +50,4 @@ Tras la validación, el siguiente mensaje le indica que su elección ha sido con
 
 ## Más información
 
-[«Migrar una cuenta de Gmail a una dirección de correo electrónico de OVHcloud a través de OVH Mail Migrator»](/pages/web_cloud/email_and_collaborative_solutions/migrating/migrate_gmail_to_ovhcloud_by_omm){.external}
+[«Migrar una cuenta de Gmail a una dirección de correo electrónico de OVHcloud a través de OVH Mail Migrator»](/pages/web_cloud/email_and_collaborative_solutions/migrating/migrate_gmail_to_ovhcloud_by_omm)

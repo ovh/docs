@@ -16,16 +16,16 @@ Cada conta de e-mail da OVHcloud dispõe de um espaço de armazenamento dedicado
 
 ## Requisitos
 
-- Dispor de uma solução de e-mail OVHcloud previamente configurada (**MX Plan**, proposta entre as nossas [ofertas de alojamento web](https://www.ovhcloud.com/pt/web-hosting/), incluída num [alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/) ou encomendada separadamente como solução autónoma, como o [**Hosted Exchange**](https://www.ovhcloud.com/pt/emails/hosted-exchange/) ou o [**Email Pro**](https://www.ovhcloud.com/pt/emails/email-pro/))
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na secção `Web Cloud`{.action}.
+- Dispor de uma solução de e-mail OVHcloud previamente configurada (**MX Plan**, proposta entre as nossas [ofertas de alojamento web](/links/web/hosting), incluída num [alojamento gratuito 100M](/links/web/domains-free-hosting) ou encomendada separadamente como solução autónoma, como o [**Hosted Exchange**](/links/web/emails-hosted-exchange) ou o [**Email Pro**](/links/web/email-pro))
+- Ter acesso à [Área de Cliente OVHcloud](/links/manager), na secção `Web Cloud`{.action}.
 - Dispor das informações de ligação aos endereços de e-mail em causa.
 
 > [!primary]
 >
 > **Casos especiais**
 >
-> - Relativamente ao Alojamento gratuito 100M: é obrigatório ativá-lo antes para poder criar um endereço de e-mail. Pode efetuar esta operação a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), posicionando-se no domínio em questão.
-> - No âmbito de um [alojamento web](https://www.ovhcloud.com/pt/web-hosting/), é necessário ativar a oferta MX Plan incluída antes de continuar a ler este manual. Para isso, consulte o nosso manual "[Ativar os endereços de e-mail incluídos no seu alojamento web](/pages/web_cloud/web_hosting/activate-email-hosting)".
+> - Relativamente ao Alojamento gratuito 100M: é obrigatório ativá-lo antes para poder criar um endereço de e-mail. Pode efetuar esta operação a partir da [Área de Cliente OVHcloud](/links/manager), posicionando-se no domínio em questão.
+> - No âmbito de um [alojamento web](/links/web/hosting), é necessário ativar a oferta MX Plan incluída antes de continuar a ler este manual. Para isso, consulte o nosso manual "[Ativar os endereços de e-mail incluídos no seu alojamento web](/pages/web_cloud/web_hosting/activate-email-hosting)".
 
 ## Instruções <a name="instructions"></a>
 
@@ -43,7 +43,7 @@ Pode realizar esta ação a partir da Área de Cliente se tem a gestão do servi
 
 #### A partir da Área de Cliente <a name="quotacontrolpanel"></a>
 
-Na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), aceda à secção `Web Cloud`{.action} e siga as instruções indicadas na oferta:
+Na [Área de Cliente OVHcloud](/links/manager), aceda à secção `Web Cloud`{.action} e siga as instruções indicadas na oferta:
 
 > [!tabs]
 > **E-mails (MXplan)**
@@ -64,7 +64,7 @@ Na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from
 
 #### A partir do webmail <a name="quotawebmail"></a>
 
-Para se ligar ao webmail, aceda à página <https://www.ovhcloud.com/pt/mail/>e introduza as informações de ligação à sua conta de e-mail. De seguida, selecione o webmail correspondente à sua oferta:
+Para se ligar ao webmail, aceda à página [Webmail](/links/web/email)e introduza as informações de ligação à sua conta de e-mail. De seguida, selecione o webmail correspondente à sua oferta:
 
 > [!tabs]
 > **OWA**: **E-mails (MXplan)** / **Email Pro** / **Exchange**
@@ -102,7 +102,7 @@ Antes de efetuar qualquer operação na sua conta de e-mail, é necessário toma
 > [!tabs]
 > **E-mails (MXplan)**
 >>
->> A capacidade de uma conta MXplan pode variar entre 2,5 MB e 5 GB. Se estiver saturado e a sua capacidade for inferior a 5GB, pode alterar a sua capacidade através da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).<br>
+>> A capacidade de uma conta MX Plan pode variar entre 2,5 MB e 5 GB. Se estiver saturado e a sua capacidade for inferior a 5GB, pode alterar a sua capacidade através da [Área de Cliente OVHcloud](/links/manager).<br>
 >> No separador `Contas de e-mail`{.action}, clique no botão `...`{.action} à direita da conta a modificar e, a seguir, em `Alterar`{.action}.
 >> Na casa `Quota`{.action}, selecione o tamanho que lhe convém, clique em `Seguinte`{.action} e depois `Validar`{.action}.<br><br>
 >> ![e-mail](images/email-quota-more01.png){.thumbnail}<br>
@@ -146,7 +146,7 @@ Encontrará abaixo uma lista não exaustiva dos guias de configuração para os 
 >>
 >> Configuração de uma conta MX plan em **Windows*:<br><br>
 >> - [Endereço do Windows 10](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_windows_10) (English) (incluído com Windows)<br>
->> - [Outlook para Mxplan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)
+>> - [Outlook para MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016)
 >> - [Thunderbird](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_thunderbird_windows) (gratuito)<br><br>
 >> Configuração de uma conta MX plan em **macOS**:<br><br>
 >> - [Mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_mail_macos) (incluído com macOS)<br>
@@ -203,11 +203,11 @@ Selecione, no menu abaixo, a oferta atual da sua conta de e-mail:
 > [!tabs]
 > **E-mails (MXplan)**
 >>
->> Se a capacidade da sua conta de e-mail já está a um máximo de 5GB, pode optar por uma migração para uma oferta [**Email Pro** de 10GB](https://www.ovhcloud.com/pt/emails/email-pro/) ou [**Hosted Exchange** de 50GB](https://www.ovhcloud.com/pt/emails/hosted-exchange/). Para isso, sugerimos que encomende a oferta mais adequada e siga a documentação "[Migrar um endereço de e-mail MX Plan para uma conta E-mail Pro ou Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)". 
+>> Se a capacidade da sua conta de e-mail já está a um máximo de 5GB, pode optar por uma migração para uma oferta [**Email Pro** de 10GB](/links/web/email-pro) ou [**Hosted Exchange** de 50GB](/links/web/emails-hosted-exchange). Para isso, sugerimos que encomende a oferta mais adequada e siga a documentação "[Migrar um endereço de e-mail MX Plan para uma conta E-mail Pro ou Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel)". 
 >>
 > **Email Pro**
 >>
->> A oferta Email Pro dispõe de uma capacidade única de 10GB. Pode optar por uma migração para uma oferta [**Hosted Exchange** de 50GB](https://www.ovhcloud.com/pt/emails/hosted-exchange/). Para isso, sugerimos que encomende a oferta mais adequada e siga o nosso manual "[Migrar os endereços de e-mail de uma plataforma de e-mail da OVHcloud para outra](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_platform)".
+>> A oferta Email Pro dispõe de uma capacidade única de 10GB. Pode optar por uma migração para uma oferta [**Hosted Exchange** de 50GB](/links/web/emails-hosted-exchange). Para isso, sugerimos que encomende a oferta mais adequada e siga o nosso manual "[Migrar os endereços de e-mail de uma plataforma de e-mail da OVHcloud para outra](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_platform)".
 >>
 > **Exchange**
 >>
@@ -224,6 +224,6 @@ Selecione, no menu abaixo, a oferta atual da sua conta de e-mail:
 
 [Migrar os endereços de e-mail de uma plataforma de e-mail OVHcloud para outra](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_platform)
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](/links/support).
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

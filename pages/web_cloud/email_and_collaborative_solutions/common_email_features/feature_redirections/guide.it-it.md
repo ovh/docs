@@ -68,7 +68,7 @@ Fare clic sulle schede seguenti per illustrare il funzionamento di alias e reind
 ## Prerequisiti
 
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
-- Disporre di una soluzione email OVHcloud configurata precedentemente (**MX Plan**, inclusa nelle nostre [soluzioni di hosting Web](https://www.ovhcloud.com/it/web-hosting/), inclusa in un [Hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting/) o ordinata separatamente come soluzione autonoma, come [Hosted Exchange](https://www.ovhcloud.com/it/emails/hosted-exchange/) o [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/))
+- Disporre di una soluzione email OVHcloud configurata precedentemente (**MX Plan**, inclusa nelle nostre [soluzioni di hosting Web](/links/web/hosting), inclusa in un [Hosting gratuito 100M](/links/web/domains-free-hosting) o ordinata separatamente come soluzione autonoma, come [Hosted Exchange](/links/web/emails-hosted-exchange) o [Email Pro](/links/web/email-pro))
 
 ## Procedura
 
@@ -76,14 +76,14 @@ Fare clic sulle schede seguenti per illustrare il funzionamento di alias e reind
 >
 >Le sezioni "[creare un reindirizzamento](#redirect)" e "[creare un alias](#alias)" riguardano tutte le nostre soluzioni di posta OVHcloud, **a meno che**:
 >
-> - se disponi della versione storica dell'offerta MXplan (per verificarla, consulta la riquadro qui sotto).
+> - se disponi della versione storica dell'offerta MX Plan (per verificarla, consulta la riquadro qui sotto).
 > - se hai un dominio registrato in OVHcloud senza un servizio email associato,
 >
 > Per entrambe le eccezioni, è possibile solo il reindirizzamento. Per maggiori informazioni, consulta il capitolo "[Creare un reindirizzamento o un alias su un'offerta MX Plan storico o un dominio senza offerta email](#mxplanlegacy)".
 >
 
 >
-> In base alla data di attivazione della tua offerta MXplan o in caso [di recente migrazione della soluzione](https://www.ovhcloud.com/it/web-hosting/mxplan-migration/), è possibile che tu disponga della versione storica o della nuova versione dell'offerta. Prima di proseguire, è necessario identificarla.<br>
+> In base alla data di attivazione della tua offerta MX Plan o in caso di recente migrazione della soluzione, è possibile che tu disponga della versione storica o della nuova versione dell'offerta. Prima di proseguire, è necessario identificarla.<br>
 >
 > Accedi alla sezione `Web Cloud`{.action} dello [Spazio Cliente OVHcloud](/links/manager). Clicca su `Email`{.action} e seleziona il servizio MX Plan interessato. Prosegui nella lettura di questa guida in base alla versione di cui disponi:<br>
 >
@@ -210,7 +210,7 @@ Per seguire gli step descritti, clicca su ciascuna scheda qui sotto:
 
 > [!tabs]
 > **Passo 1**
->> Di default, ti trovi nella scheda `Informazioni generali`{.action} della tua soluzione MXPlan. Clicca sulla scheda `Email`{.action} e poi sul pulsante `Gestisci i reindirizzamenti`{.action} a destra.<br><br>
+>> Di default, ti trovi nella scheda `Informazioni generali`{.action} della tua soluzione MX Plan. Clicca sulla scheda `Email`{.action} e poi sul pulsante `Gestisci i reindirizzamenti`{.action} a destra.<br><br>
 >> ![email](images/mxplan-legacy-1.png){.thumbnail}<br>
 >>
 > **Passo 2**

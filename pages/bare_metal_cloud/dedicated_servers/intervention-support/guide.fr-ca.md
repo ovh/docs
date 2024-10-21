@@ -1,7 +1,7 @@
 ---
 title: 'Finaliser une intervention de maintenance réalisée sur votre serveur dédié'
 excerpt: "Découvrez quelles actions peuvent être à effectuer par vos soins sur votre serveur suite à une intervention de maintenance"
-updated: 2024-01-15
+updated: 2024-08-27
 ---
 
 ## Objectif
@@ -13,7 +13,7 @@ Elle a pour objectif de vous accompagner et faire en sorte qu'il y ait le moins 
 
 ## Prérequis
 
-- Posséder un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/){.external}.
+- Posséder un [serveur dédié](/links/bare-metal/bare-metal).
 
 ## En pratique
 
@@ -26,12 +26,12 @@ Poursuivez la lecture de ce guide en cliquant sur le lien correspondant à votre
 
 - Système d'exploitation
     - [Ubuntu](#ubuntu)
-    - [CentOS/Alma Linux](#centos-almalinux)
+    - [CentOS / Alma Linux](#centos-almalinux)
     - [SmartOS](#smartos)
     - [FreeBSD](#freebsd)
     - [Gentoo](#gentoo)
 - Virtualisation
-    - [Proxmox](#proxmox)
+    - [Proxmox / Debian](#proxmox)
     - [XenServer](#xenserver)
     - [ESXi](#esxi)
     - [Windows (hyper-V)](#windows)
@@ -43,7 +43,8 @@ Poursuivez la lecture de ce guide en cliquant sur le lien correspondant à votre
 
 <a name="ubuntu"></a>
 
-### Ubuntu 
+### Ubuntu
+
 Si vous rencontrez un souci de connectivité réseau (par exemple, pas de ping après le remplacement de la carte mère), effectuez les actions suivantes :
 
 1\. Redémarrez le serveur en [mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).<br>
@@ -133,7 +134,7 @@ Dans certain cas, il est nécessaire de propager la nouvelle adresse MAC dans le
 
 <a name="centos-almalinux"></a>
 
-### CentOS/Alma Linux
+### CentOS / Alma Linux
 
 Si vous rencontrez un souci de connectivité réseau (par exemple, pas de ping après le remplacement de la carte mère), effectuez les actions suivantes : 
 
@@ -145,13 +146,15 @@ root@rescue:~# mount /dev/my_system_disk /mnt
 ```
 
 3\. Vérifiez le fichier de configuration `/mnt/etc/sysconfig/network-scripts/ifcfg-eth0`.
+
 4\. Sauvegardez les fichiers et éditez-les afin de corriger l'adresse MAC :
 
 ```bash
 root@rescue:~# cp /mnt/etc/sysconfig/network-scripts/ifcfg-eth0 /mnt/etc/sysconfig/network-scripts/ifcfg-eth0.`date +%s`
 ```
 
-5\. Renseignez la nouvelle adresse MAC à la ligne `HWADDR=xx.xx.xx.xx.xx.xx`.
+5\. Renseignez la nouvelle adresse MAC à la ligne `HWADDR=xx:xx:xx:xx:xx:xx`.
+
 6\. N'oubliez pas de démonter la partition `/` avant de redémarrer le serveur.
 
 <a name="smartos"></a>
@@ -459,7 +462,7 @@ root@rescue:~#
 
 <a name="proxmox"></a>
 
-### Proxmox
+### Proxmox / Debian
 
 Si vous rencontrez un souci de connectivité réseau (par exemple, pas de ping après le remplacement de la carte mère), cela peut être lié à une erreur lors du démarrage du système, erreur causée par l'ancienne valeur d'adresse MAC toujours présente :
 
@@ -510,7 +513,7 @@ root@rescue:~#
 2\. Créez à nouveau le fichier `70-persistent-net.rules` et ajoutez :  
 
 - Le nom de l'interface réseau trouvé dans le fichier `/mnt/etc/network/interfaces`.
-- La nouvelle adresse MAC (visible dans l'onglet `Interfaces réseau`{.action} de l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) ou dans le retour de la commande `ip link`).
+- La nouvelle adresse MAC (visible dans l'onglet `Interfaces réseau`{.action} de l'[espace client OVHcloud](/links/manager) ou dans le retour de la commande `ip link`).
 
 ```bash
 root@rescue:~# cat /mnt/etc/udev/rules.d/70-persistent-net.rules
@@ -791,7 +794,7 @@ SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="xx:xx:xx:xx:xx:x
 SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="xx:xx:xx:xx:xx:xx", ATTR{dev_id}=="0x0", ATTR{type}=="1", KERNEL=="eth*", NAME="private"
 ```
 
-4\. Allez dans le repertoire `/boot/grub/` et créez une sauvegarde du fichier `grub.cfg`.<br>
+4\. Allez dans le repertoire `/boot/grub/` et créez une sauvegarde du fichier `grub.cfg`.
 5\. Editez le fichier `/etc/default/grub` et modifiez la ligne commençant par `GRUB_CMDLINE_LINUX` pour obtenir ceci :
 
 ```bash
@@ -899,4 +902,4 @@ L'image ci-dessous est un résumé des actions citées plus haut :
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -1,7 +1,7 @@
 ---
 title: "Instalar su sitio web con un 'módulo en 1 clic' (CMS)"
 excerpt: Descubra cómo instalar su sitio web a través de nuestros "módulos en 1 clic"
-updated: 2024-03-21
+updated: 2024-10-07
 ---
 
 > [!primary]
@@ -14,13 +14,14 @@ Los módulos en 1 clic permiten instalar un sitio web fácil y rápidamente (sin
 
 **Descubra cómo instalar su sitio web a través de nuestros "módulos en 1 clic".**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZrYmmPbMl4I?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/ZrYmmPbMl4I?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Requisitos
 
 - Tener contratado un [plan de hosting](/links/web/hosting) que incluya al menos una base de datos. 
 - Estar conectado al [área de cliente de OVHcloud](/links/manager).
 - Utilizar una versión reciente de PHP y un entorno de ejecución compatible en su alojamiento web de OVHcloud. Descubra el estado de las distintas versiones disponibles en esta [página](https://webhosting-infos.hosting.ovh.net/). Si lo necesita, consulte nuestra [documentación](/pages/web_cloud/web_hosting/configure_your_web_hosting) para cambiar rápidamente esta configuración.
+- Debe haber un archivo configurado "[.ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)" en la raíz FTP de su alojamiento web.
 - El directorio (directorio raíz) en el que se instalará el módulo en 1 clic debe estar vacío o no existe actualmente.
 - El dominio (y el subdominio si así lo desea) que vaya a utilizar para su sitio web debe estar declarado como [Multisitio](/pages/web_cloud/web_hosting/multisites_configure_multisite) en su alojamiento web de OVHcloud.
 

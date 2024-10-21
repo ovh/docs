@@ -1,7 +1,7 @@
 ---
 title: "Sécuriser un VPS"
 excerpt: "Découvrez comment mettre en place des mesures de sécurité basiques pour protéger votre VPS des attaques et des accès non autorisés"
-updated: 2024-02-20
+updated: 2024-10-07
 ---
 
 ## Objectif
@@ -12,21 +12,21 @@ Lorsque vous commandez votre VPS, vous pouvez choisir une distribution ou un sys
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la sécurité et la responsabilité vous appartiennent.
-> En effet, nous n'avons pas accès aux données hébergés sur ces machines et n’en sommes pas les administrateurs. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
-> Nous mettons à disposition ce guide afin de vous accompagner au mieux sur les tâches courantes. Toutefois, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) si vous éprouvez des difficultés ou des doutes quant à l’administration, l'utilisation ou la sécurisation de votre serveur.
+> En effet, nous n'avons pas accès aux données hébergées sur ces machines et n’en sommes pas les administrateurs. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
+> Nous mettons à disposition ce guide afin de vous accompagner au mieux sur les tâches courantes. Toutefois, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) si vous éprouvez des difficultés ou des doutes quant à l’administration, l'utilisation ou la sécurisation de votre serveur.
 > Plus d’informations dans la section « Aller plus loin » de ce guide.
 >
 
 ## Prérequis
 
-- Un [VPS](https://www.ovhcloud.com/fr-ca/vps/) dans votre compte OVHcloud
+- Un [VPS](/links/bare-metal/vps) dans votre compte OVHcloud
 - Avoir un accès administrateur (sudo) à votre serveur via SSH
 
 ## En pratique
 
 > [!primary]
 >
-> Gardez à l'esprit qu’il s’agit d’un guide général basé sur un système d’exploitation Ubuntu Server. Certaines commandes nécessitent d’être adaptées à la distribution que vous utilisez et certaines astuces vous invitent à utiliser des outils tiers. Veuillez vous référer à la documentation officielle de ces applications si vous avez besoin d'aide.
+> Gardez à l'esprit qu’il s’agit d’un guide général basé sur les systèmes d’exploitation Ubuntu, Debian et CentOS. Certaines commandes nécessitent d’être adaptées à la distribution que vous utilisez et certaines astuces vous invitent à utiliser des outils tiers. Veuillez vous référer à la documentation officielle de ces applications si vous avez besoin d'aide.
 >
 > S'il s'agit de votre première configuration d'un VPS OVHcloud, nous vous invitons à consulter en premier lieu notre guide [Débuter avec un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps).
 >
@@ -38,25 +38,49 @@ Les exemples suivants supposent que vous êtes connecté en tant qu'[utilisateur
 Les développeurs de distributions et de systèmes d’exploitation proposent de fréquentes mises à jour de paquets, très souvent pour des raisons de sécurité.<br>
 Faire en sorte que votre distribution ou système d'exploitation est à jour est un point essentiel pour sécuriser votre VPS.
 
-Cette mise à jour passera par deux étapes.
-
-- La mise à jour de la liste des paquets :
-
-```bash
-sudo apt update
-```
-
-- La mise à jour des paquets à proprement parler :
-
-```bash
-sudo apt upgrade
-```
+> [!tabs]
+> Ubuntu
+>>
+>> Cette mise à jour passera par deux étapes.
+>> 
+>> - La mise à jour de la liste des paquets :
+>> 
+>> ```bash
+>> sudo apt update
+>> ```
+>> 
+>> - La mise à jour des paquets à proprement parler :
+>> 
+>> ```bash
+>> sudo apt upgrade
+>> ```
+>>
+> Debian
+>> 
+>> ```bash
+>> sudo apt update && sudo apt upgrade
+>> ```
+>>
+>> La commande est identique à Ubuntu car Debian et Ubuntu utilisent tous deux `apt`.
+>>
+> CentOS
+>>
+>> ```bash
+>> sudo yum update
+>> ```
+>>
+>> Sur CentOS, la commande pour mettre à jour le système d'exploitation utilise `yum` ou `dnf`, selon la version.
 
 Cette opération doit être effectuée régulièrement afin de maintenir un système à jour.
 
 ### Modifier le port d'écoute SSH par défaut <a name="changesshport"></a>
 
-L'une des premières actions à effectuer sur votre serveur est la configuration du port d'écoute du service SSH. Par défaut, celui-ci est défini sur le **port 22** donc les tentatives de hack du serveur par des robots vont cibler ce port en priorité.
+> [!primary]
+>
+> Pour cette section, les lignes de commande qui suivent sont identiques pour Ubuntu, Debian et CentOS.
+>
+
+L'une des premières actions à effectuer sur votre serveur est la configuration du port d'écoute du service SSH. Par défaut, celui-ci est défini sur le **port 22**, donc les tentatives de hack du serveur par des robots vont cibler ce port en priorité.
 La modification de ce paramètre, au profit d'un port différent, est une mesure simple pour renforcer la protection de votre serveur contre les attaques automatisées.
 
 Pour cela, modifiez le fichier de configuration du service avec l'éditeur de texte de votre choix (`nano` est utilisé dans cet exemple) :
@@ -136,7 +160,7 @@ En général, les tâches qui ne requièrent pas de privilèges root doivent êt
 
 ### Configurer le pare-feu interne (iptables)
 
-Les distributions GNU/Linux courantes sont fournies avec un service de pare-feu nommé iptables. Par défaut, ce service ne possède aucune règle active. Vous pouvez le constater en tapant la commande suivante :
+Les distributions GNU/Linux courantes sont fournies avec un service de pare-feu nommé iptables. Par défaut, ce service ne possède aucune règle active. Vous pouvez le constater en tapant la commande suivante :
 
 ```bash
 iptables -L
@@ -151,11 +175,23 @@ Il est alors recommandé de créer et d’ajuster à votre utilisation des règl
 Fail2ban est un framework de prévention contre les intrusions dont le but est de bloquer les adresses IP depuis lesquelles des bots ou des attaquants tentent de pénétrer dans votre système.<br>
 Ce paquet est recommandé, voire indispensable dans certains cas, pour protéger votre serveur des attaques de types *Brute Force* ou *Denial of Service*.
 
-Pour installer le package logiciel, utilisez la commande suivante :
+Pour installer le package logiciel, utilisez la commande suivante :
 
-```bash
-sudo apt install fail2ban
-```
+> [!tabs]
+> Ubuntu et Debian
+>> 
+>> ```bash
+>> sudo apt install fail2ban
+>> ```
+>>
+> CentOS
+>>
+>> Sur CentOS 7 et CentOS 8 (ou RHEL), installez d'abord le dépôt EPEL (**E**xtra **P**ackages for **E**nterprise **L**inux), puis Fail2ban :
+>>
+>> ```bash
+>> sudo yum install epel-release
+>> sudo yum install fail2ban
+>> ```
 
 Vous pouvez personnaliser les fichiers de configuration Fail2ban pour protéger les services exposés à l'Internet public contre les tentatives de connexion répétées.
 
@@ -210,6 +246,14 @@ Une fois vos modifications terminées, enregistrez le fichier et fermez l'édite
 
 Redémarrez le service pour vous assurer qu'il s'exécute avec les personnalisations appliquées :
 
+1\. Commande recommandée avec `systemctl` :
+
+```bash
+sudo systemctl restart fail2ban
+```
+
+2\. Commande avec `service` (ancienne méthode, toujours compatible) :
+
 ```bash
 sudo service fail2ban restart
 ```
@@ -233,11 +277,13 @@ La sécurisation de vos données est un élément clé, c'est pourquoi OVHcloud 
 - L'option `Snapshot` qui vous permet de créer un instantané manuel.
 - L'option de `Sauvegarde automatique` vous permet de conserver des sauvegardes régulières de votre VPS (à l'exception des disques supplémentaires).
 
-Vous trouverez toutes les informations sur les solutions de sauvegarde disponibles pour votre service sur la [page produit](https://www.ovhcloud.com/fr-ca/vps/options/) et dans les [guides respectifs](/products/bare-metal-cloud-virtual-private-servers).
+Vous trouverez toutes les informations sur les solutions de sauvegarde disponibles pour votre service sur la [page produit](/links/bare-metal/vps-options) et dans les [guides respectifs](/products/bare-metal-cloud-virtual-private-servers).
 
 ## Aller plus loin
 
 [Débuter avec un VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps)
+
+[Créer et utiliser des clés SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated)
 
 [Configurer le pare-feu sous Windows](/pages/bare_metal_cloud/virtual_private_servers/activate-port-firewall-soft-win)
 
@@ -245,4 +291,4 @@ Vous trouverez toutes les informations sur les solutions de sauvegarde disponibl
 
 [Configurer le Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
 
-changez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

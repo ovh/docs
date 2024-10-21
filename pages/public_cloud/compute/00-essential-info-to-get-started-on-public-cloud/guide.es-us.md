@@ -134,7 +134,7 @@ En la práctica, a continuación le ofrecemos algunas guías que le ayudarán en
 |Documentación|Detalles|
 |---|---|
 |[Crear la primera instancia](/pages/public_cloud/compute/public-cloud-first-steps)|Esta es la primera guía práctica para iniciar un servidor cloud desde el área de cliente de OVHcloud.|
-|[Uso de una llave SSH](/pages/public_cloud/compute/introducing_horizon)| Para conectarse a una instancia Linux, necesitará utilizar una conexión SSH en esta guía.|
+|[Uso de una llave SSH](/pages/public_cloud/compute/creating-ssh-keys-pci)| Para conectarse a una instancia Linux, necesitará utilizar una conexión SSH en esta guía.|
 |[Configuración de la red privada](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack)|En OVHcloud, la tecnología vRack utiliza las redes privadas. Esta guía le ayudará a realizar esta operación.|
 |[Asociar un disco adicional a una instancia](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance)|Esta guía explica cómo añadir almacenamiento adicional a la primera instancia de OVH.|
 |[Conectarse a Horizon](/pages/public_cloud/compute/introducing_horizon)|La interfaz Horizon de OpenStack permite realizar determinadas acciones avanzadas. Así es como conectarse a ella.|
@@ -154,6 +154,6 @@ Una de las grandes ventajas de utilizar tecnologías estándares y abiertas, com
 |[Kubernetes CLI Overview](https://kubernetes.io/docs/reference/kubectl/overview/) (EN)| Documentación del cliente imprescindible en línea de comandos "kubectl".|
 |[Kubernetes APIs Overview](https://kubernetes.io/docs/reference/using-api/) (EN)| Documentación de la API de Kubernetes, útil para tener una visión general de las posibilidades.|
 
-Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es-es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
+Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](/links/professional-services) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

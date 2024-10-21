@@ -1,7 +1,7 @@
 ---
 title: "Creating a database on your web hosting plan"
 excerpt: "Find out how to create a database on your OVHcloud web hosting plan"
-updated: 2024-05-17
+updated: 2024-09-05
 ---
 
 ## Objective
@@ -53,8 +53,13 @@ In the window that opens, select the following information:
 |Information|Description|  
 |---|---|
 |**Select the type of database**|Choose the size of the database. This size refers to the space available to your database for storing data.|
-|**Select the database engine to be added**|Choose the engine you want the database to use. The databases included in your [OVHcloud web hosting plan](/links/web/hosting) are only available with the MySQL engine.|
+|**Select the database engine to be added**|Choose the engine you want the database to use. Currently, the databases included in your [OVHcloud web hosting plan](/links/web/hosting) are only available with the MySQL engine.|
 |**Select the version of the database to be added**|Choose the version used by the database engine. Make sure your website is compatible with the version you have chosen.|
+
+> [!primary]
+>
+> Engine version update for a database already created is currently unavailable.
+>
 
 Click on `Next`{.action}.
 
@@ -127,7 +132,7 @@ This information is essential for your website to connect to the database.
 If you need to retrieve this connection information, log in to your [OVHcloud Control Panel](/links/manager) and go to the `Web Cloud`{.action} section. Click `Hosting plans`{.action} in the left-hand column, select the hosting plan on which you want to retrieve the information for connecting to your database, then click on the `Databases`{.action} tab.
 
 You will find the information required to connect to your database in the table that appears. This excludes passwords for security reasons.
-+-
+
 > [!warning]
 >
 > If you do not have the password for your database connection, please read our guide on [Changing your database password](/pages/web_cloud/web_hosting/sql_change_password).

@@ -1,7 +1,7 @@
 ---
 title: 'Email Pro - Configure su cuenta de correo electrónico en Outlook para macOS'
 excerpt: 'Cómo configurar una cuenta Email Pro en Outlook para Mac'
-updated: 2020-03-18
+updated: 2024-10-09
 ---
 
 ## Objetivo
@@ -17,13 +17,13 @@ Es posible configurar sus cuentas Email Pro en el cliente de correo que usted ut
 
 ## Requisitos
 
-- Tener una cuenta [Email Pro](https://www.ovhcloud.com/es-es/emails/email-pro/){.external}.
+- Tener una cuenta [Email Pro](/links/web/email-pro).
 - Tener la aplicación Microsoft Outlook instalada en su dispositivo Mac.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
 
 > [!primary]
 >
-> Si utiliza Outlook para Windows, consulte nuestra guía [Configurar una cuenta Email Pro en Outlook para Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016){.external}.
+> Si utiliza Outlook para Windows, consulte nuestra guía [Configurar una cuenta Email Pro en Outlook para Windows](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_outlook_2016).
 >
 
 ## Procedimiento
@@ -34,7 +34,7 @@ Es posible configurar sus cuentas Email Pro en el cliente de correo que usted ut
 >
 > En nuestro ejemplo, hemos utilizado la mención servidor: pro**?**.mail.ovh.net. Sustituya la «?» por la cifra que designa al servidor de su servicio Email Pro.
 >
-> Puede consultar esta cifra en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Web Cloud`{.action} y `Email Pro`{.action}. El nombre del servidor aparece en el marco **Conexión** de la pestaña `Información general`{.action}.
+> Puede consultar esta cifra en su [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action} y `Email Pro`{.action}. El nombre del servidor aparece en el marco **Conexión** de la pestaña `Información general`{.action}.
 >
 
 Abra la aplicación Outlook en su dispositivo. Puede añadir una cuenta de dos formas distintas:
@@ -75,12 +75,16 @@ En caso de que la aplicación le pida que introduzca de forma manual algunos dat
 
 Una vez que haya configurado la dirección de correo electrónico, ya puede empezar a utilizarla enviando y recibiendo mensajes.
 
-OVHcloud ofrece una aplicación web que tiene [funciones colaborativas](https://www.ovhcloud.com/es-es/emails/){.external} y está disponible en la dirección [https://www.ovh.es/mail/](https://www.ovh.es/mail/). Puede conectarse con el nombre de usuario y la contraseña de su dirección de correo electrónico.
+OVHcloud ofrece una aplicación web que tiene [funciones colaborativas](/links/web/emails) y está disponible en la dirección [Webmail](/links/web/email). Puede conectarse con el nombre de usuario y la contraseña de su dirección de correo electrónico.
 
 ## Más información
 
-[Configurar una cuenta de correo electrónico en Outlook para Mac](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac){.external}
+> [!primary]
+>
+> Para más información sobre la configuración de una dirección de correo electrónico desde la aplicación Outlook en macOS, consulte [el Centro de ayuda de Microsoft](https://support.microsoft.com/es-es/office/add-an-email-account-to-outlook-for-mac-6aeec61b-86af-40af-8ffe-985d0fc82ddb).
 
-[Configurar una cuenta Exchange en Outlook para Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac){.external}
+[Configurar una cuenta de correo electrónico en Outlook para Mac](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac)
+
+[Configurar una cuenta Exchange en Outlook para Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

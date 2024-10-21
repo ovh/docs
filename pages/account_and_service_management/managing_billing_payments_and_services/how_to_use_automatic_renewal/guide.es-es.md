@@ -26,7 +26,7 @@ Esta guía explica cómo:
 > Tenga en cuenta que —en función de su lugar de residencia y de la legislación vigente, así como de los servicios contratados— es posible que algunas secciones de esta guía sean diferentes o no se apliquen a su caso particular. Para más información, consulte los contratos de OVHcloud desde el [área de cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es): haga clic en su nombre en la esquina superior derecha de su pantalla, en `Productos y servicios`{.action} y, seguidamente, en la pestaña `Contratos`{.action}.
 >
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dfpPCa0mUyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/dfpPCa0mUyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Requisitos
 
@@ -51,7 +51,7 @@ Antes de continuar leyendo esta guía, debe cumplir los siguientes requisitos:
 >> Si no ha registrado ninguna [forma de pago](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods), se le enviará una factura por correo electrónico. En ese caso, solo tendrá que abonarla online.
 >>
 >> Para los servicios con una frecuencia de renovación automática superior a 1 mes (3 meses, 6 meses, 12 meses), el mes anterior a la fecha de renovación automática le enviaremos un recordatorio por correo electrónico, en el que se indicarán los servicios que van a renovarse próximamente.
->>Si no desea prolongar alguno de estos servicios, solo tiene que [darlo de baja en su área de cliente](pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
+>>Si no desea prolongar alguno de estos servicios, solo tiene que [darlo de baja en su área de cliente](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
 >>
 >> **Atención**: la ausencia de una forma de pago en su cuenta no activa la baja automática de sus servicios. Para dar de baja servicios, consulte nuestra guía "[Cómo dar de baja los servicios de OVHcloud ](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services)".
 >>

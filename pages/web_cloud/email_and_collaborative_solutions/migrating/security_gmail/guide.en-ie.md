@@ -9,7 +9,7 @@ updated: 2022-04-06
 This guide details how to enable the “authorise less secure apps” option on your Gmail account.
 
 > [!primary] This documentation is a step linked to our guide on
-> [Migrating a Gmail account to an OVHcloud email address via the OVH Mail Migrator.](/pages/web_cloud/email_and_collaborative_solutions/migrating/migrate_gmail_to_ovhcloud_by_omm){.external}
+> [Migrating a Gmail account to an OVHcloud email address via the OVH Mail Migrator.](/pages/web_cloud/email_and_collaborative_solutions/migrating/migrate_gmail_to_ovhcloud_by_omm)
 
 ## Instructions
 
@@ -21,7 +21,7 @@ The message below will appear, listing details on the attempt to use a protocol 
 
 ![omm](images/OMM-gmail-security-02.png){.thumbnail}
 
-The next window will inform you that in spite of this confirmation, the block will still be active. Click on the following link: [myaccount.google.com/lesssecureapps](https://myaccount.google.com/lesssecureapps){.external}
+The next window will inform you that in spite of this confirmation, the block will still be active. Click on the following link: [myaccount.google.com/lesssecureapps](https://myaccount.google.com/lesssecureapps)
 
 ![omm](images/OMM-gmail-security-03.png){.thumbnail}
 
@@ -50,4 +50,4 @@ Once you have confirmed, the message below will show that your choice has been p
 
 ## Go further
 
-[Migrating a Gmail account to an OVHcloud email address via the OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migrate_gmail_to_ovhcloud_by_omm){.external}
+[Migrating a Gmail account to an OVHcloud email address via the OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migrate_gmail_to_ovhcloud_by_omm)

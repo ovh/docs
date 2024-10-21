@@ -28,7 +28,7 @@ Po zamówieniu programu Outlook możesz pobrać jedną z 3 wersji:
 
 #### W przypadku konta Hosted Exchange
 
-Zaloguj się do Twojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji `Web Cloud`. Kliknij `Microsoft`{.action}, następnie `Exchange`{.action} i wybierz odpowiednią platformę **Hosted Exchange**.
+Zaloguj się do Twojego [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`. Kliknij `Microsoft`{.action}, następnie `Exchange`{.action} i wybierz odpowiednią platformę **Hosted Exchange**.
 
 Kliknij ikonę `...`{.action} po prawej stronie wybranego konta, a następnie `Zamów licencję Outlook`{.action}.
 
@@ -44,7 +44,7 @@ Odczekaj kilka chwil, aż licencja Outlook zostanie udostępniona w Panelu klien
 
 #### W przypadku konta Private Exchange
 
-Zaloguj się do Twojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji `Web Cloud`. Kliknij `Microsoft`{.action}, następnie `Exchange`{.action} i wybierz odpowiednią platformę **Private Exchange**.
+Zaloguj się do Twojego [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`. Kliknij `Microsoft`{.action}, następnie `Exchange`{.action} i wybierz odpowiednią platformę **Private Exchange**.
 
 Kliknij ikonę `...`{.action} po prawej stronie wybranego konta, a następnie `Aktywuj licencję Outlook`{.action}.
 
@@ -79,7 +79,7 @@ Pobrany plik ma format .ISO, czyli obraz dysku. Uruchom instalację i wprowadź 
 
 ### Usuń licencję Outlook z konta
 
-Zaloguj się do Twojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji `Web Cloud`. Kliknij `Microsoft`{.action}, następnie `Exchange`{.action}, po czym wybierz odpowiednią usługę Exchange.
+Zaloguj się do Twojego [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`. Kliknij `Microsoft`{.action}, następnie `Exchange`{.action}, po czym wybierz odpowiednią usługę Exchange.
 
 Kliknij ikonę `...`{.action} po prawej stronie wybranego konta, a następnie `Usuń licencję Outlook`{.action}
 

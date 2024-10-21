@@ -1,7 +1,7 @@
 ---
 title: "Exchange - Configurar una dirección de correo electrónico en Gmail para Android"
 excerpt: "Cómo configurar una cuenta Exchange en Android utilizando la aplicación Gmail"
-updated: 2024-03-20
+updated: 2024-10-09
 ---
 
 <style>
@@ -15,7 +15,6 @@ updated: 2024-03-20
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
->
 
 ## Objetivo
 
@@ -27,7 +26,7 @@ Las direcciones de correo de la solución Exchange pueden configurarse en distin
 >
 > La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 >
-> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/) o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado «Más información» de esta guía.
+> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](/links/partner) o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado «Más información» de esta guía.
 
 ## Objetivo
 
@@ -37,14 +36,13 @@ Esta guía explica cómo configurar una cuenta Exchange en Android utilizando la
 
 ## Requisitos
 
-- Tener un servicio [Exchange](https://www.ovhcloud.com/es-es/emails/){.external}.
+- Tener un servicio [Exchange](/links/web/emails).
 - Tener la aplicación Gmail instalada en su dispositivo. Puede instalarla desde Google Play Store.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
 
 > [!primary]
 >
 > Esta documentación se ha realizado desde un dispositivo que utiliza la versión 13 de Android.
->
 
 ## Procedimiento
 
@@ -54,8 +52,7 @@ Esta guía explica cómo configurar una cuenta Exchange en Android utilizando la
 >
 > En nuestros ejemplos, utilizamos la mención servidor: ex**?**.mail.ovh.net. Deberá sustituir el «?» por el número que designa el servidor del servicio Email Pro.
 >
-> Puede consultar esta cifra en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Web Cloud`{.action}, y en la sección `Email Pro`{.action}. El nombre del servidor puede verse en el recuadro **«Conexión»** de la pestaña `Información General`{.action}.
->
+> Puede consultar esta cifra en el [área de cliente de OVHcloud](/links/manager), en la sección `Web Cloud`{.action}, y en la sección `Email Pro`{.action}. El nombre del servidor puede verse en el recuadro **«Conexión»** de la pestaña `Información General`{.action}.
 
 Abra la aplicación `Gmail`{.action} desde la pantalla de inicio de su dispositivo.
 
@@ -75,7 +72,6 @@ La adición de una cuenta se realizará de forma diferente **si no hay ninguna c
 >> 2. Seleccione `Configuración`{.action}<br><br>
 >> 3. Seleccione `Añadir una cuenta`{.action}<br><br>
 >> ![Exchange Android](images/android-existing.png){.thumbnail}
->>
 
 Siga los siguientes pasos de configuración en las fichas siguientes:
 
@@ -99,17 +95,20 @@ Siga los siguientes pasos de configuración en las fichas siguientes:
 > **Paso 6**
 >> Debería aparecer el mensaje "Ya puede utilizar su cuenta" , presione `Aceptar`{.action} para finalizar la configuración.<br><br>
 >> ![Exchange Android](images/exchange-android-05.png){.thumbnail .h-600}
->>
 
 Una vez que haya configurado la dirección de correo electrónico, ya puede empezar a utilizarla Ya puede enviar y recibir mensajes desde su aplicación Gmail.
 
 > [!success]
 >
-> OVHcloud ofrece una aplicación web con la que podrá acceder a su dirección de correo electrónico desde el navegador, disponible en la dirección <https://www.ovhcloud.com/es-es/mail/>. Puede conectarse con las credenciales de acceso de su dirección de correo electrónico.
+> OVHcloud ofrece una aplicación web con la que podrá acceder a su dirección de correo electrónico desde el navegador, disponible en la dirección [Webmail](/links/web/email). Puede conectarse con las credenciales de acceso de su dirección de correo electrónico.
 
 ## Más información <a name="go-further"></a>
 
-[MXplan - Configurar una dirección de correo electrónico en Gmail para Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android).
+> [!primary]
+>
+> Para más información sobre la configuración de una dirección de correo electrónico desde la aplicación de Gmail en Android, consulte [el Centro de ayuda de Google](https://support.google.com/mail/answer/6078445?hl=es-CA&co=GENIE.Platform%3DAndroid#zippy=%2Añadir-una-cuenta).
+
+[MX Plan - Configurar una dirección de correo electrónico en Gmail para Android](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_android).
 
 [Email Pro - Configurar una dirección de correo electrónico en Gmail para Android](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_android).
 

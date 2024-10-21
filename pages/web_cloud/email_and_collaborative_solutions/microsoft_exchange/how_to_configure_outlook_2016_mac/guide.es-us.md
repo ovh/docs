@@ -1,7 +1,7 @@
 ---
 title: 'Exchange - Configure su cuenta de correo electrónico en Outlook para macOS'
 excerpt: 'Cómo configurar una cuenta Exchange en Outlook para macOS'
-updated: 2018-06-01
+updated: 2024-10-09
 ---
 
 ## Objetivo
@@ -17,13 +17,13 @@ Es posible configurar sus cuentas Exchange en el cliente de correo que usted uti
 
 ## Requisitos
 
-- Tener un servicio [Exchange](https://www.ovhcloud.com/es/emails/){.external}.
+- Tener un servicio [Exchange](/links/web/emails).
 - Tener la aplicación Microsoft Outlook instalada en su dispositivo Mac.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
 
 > [!primary]
 >
-> Si utiliza Outlook para Windows, consulte nuestra guía [Configurar una cuenta Exchange en Outlook para Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016){.external}.
+> Si utiliza Outlook para Windows, consulte nuestra guía [Configurar una cuenta Exchange en Outlook para Mac](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016).
 >
 
 ## Procedimiento
@@ -46,7 +46,7 @@ Introduzca su dirección de correo electrónico y haga clic en `Continuar`{.acti
 |Dirección de correo electrónico|Introduzca un nombre que le permita diferenciar su cuenta del resto de cuentas de su aplicación Outlook.|
 |DOMINIO\nombre de usuario o dirección de correo electrónico|Introduzca la dirección de correo electrónico completa.|
 |Contraseña|Introduzca la contraseña de la dirección de correo electrónico.|
-|Servidor|Según la configuración DNS de su dominio, es posible que no sea obligatorio introducir un servidor. Si fuera necesario, indique el servidor en el que está alojado su servicio Exchange. Puede consultar esta información desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la pestaña `Información general`{.action} de su servicio Exchange, en el recuadro **Conexión**.|
+|Servidor|Según la configuración DNS de su dominio, es posible que no sea obligatorio introducir un servidor. Si fuera necesario, indique el servidor en el que está alojado su servicio Exchange. Puede consultar esta información desde el [área de cliente de OVHcloud](/links/manager), en la pestaña `Información general`{.action} de su servicio Exchange, en el recuadro **Conexión**.|
 
 Una vez introducidos los datos, haga clic en el botón `Agregar cuenta`{.action}. Si son correctos, la aplicación se conectará a la cuenta.
 
@@ -58,10 +58,15 @@ Si lo desea, puede realizar una prueba de envío para comprobar que la cuenta es
 
 Una vez que haya configurado la dirección de correo electrónico, ya puede empezar a utilizarla enviando y recibiendo mensajes.
 
-OVHcloud ofrece una aplicación web que tiene [funciones colaborativas](https://www.ovhcloud.com/es/emails/){.external} y está disponible en la dirección <https://www.ovhcloud.com/es/mail/>. Puede conectarse con el nombre de usuario y la contraseña de su dirección de correo electrónico.
+OVHcloud ofrece una aplicación web que tiene [funciones colaborativas](/links/web/emails) y está disponible en la dirección [Webmail](/links/web/email). Puede conectarse con el nombre de usuario y la contraseña de su dirección de correo electrónico.
 
 ## Más información
 
-[Configurar una cuenta de correo electrónico en Outlook para Mac](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac){.external}
+> [!primary]
+>
+> Para más información sobre la configuración de una dirección de correo electrónico desde la aplicación Outlook en macOS, consulte [el Centro de ayuda de Microsoft](https://support.microsoft.com/es-es/office/add-an-email-account-to-outlook-for-mac-6aeec61b-86af-40af-8ffe-985d0fc82ddb).
+
+
+[Configurar una cuenta de correo electrónico en Outlook para Mac](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_outlook_2016_mac)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

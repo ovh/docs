@@ -1,7 +1,7 @@
 ---
 title: 'Configurar varios servidores dedicados en el vRack'
 excerpt: 'Cómo configurar varios servidores dedicados en el vRack'
-updated: 2023-09-12
+updated: 2024-10-17
 ---
 
 > [!primary]
@@ -14,20 +14,20 @@ El vRack (rack virtual) de OVHcloud permite agrupar virtualmente varios servidor
 
 **Esta guía explica cómo configurar el vRack en varios servidores dedicados.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZA7IsbDdAmc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/ZA7IsbDdAmc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Requisitos
 
-- Un servicio [vRack](https://www.ovh.com/world/es/soluciones/vrack/) activado en su cuenta.
-- Varios [servidores dedicados](https://www.ovhcloud.com/es/bare-metal/) (compatibles con el vRack).
+- Un servicio [vRack](https://www.ovh.es/soluciones/vrack/) activado en su cuenta.
+- Varios [servidores dedicados](/links/bare-metal/bare-metal) (compatibles con el vRack).
 - Tener acceso de administrador (sudo) al servidor por SSH o RDP.
-- Tienes acceso a tu [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Tienes acceso a tu [área de cliente de OVHcloud](/links/manager).
 - Tener un rango de direcciones IP privadas.
 
 > [!warning]
-> Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](https://eco.ovhcloud.com/es/about/).
+> Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](https://eco.ovhcloud.com/es-es/about/).
 >
-> Para más información, consulte nuestra [comparativa](https://eco.ovhcloud.com/es/compare/).
+> Para más información, consulte nuestra [comparativa](https://eco.ovhcloud.com/es-es/compare/).
 
 ## Procedimiento
 
@@ -41,7 +41,7 @@ Será redirigido a otra página para validar el pedido. La operación tardará u
 
 ### Paso 2: añadir sus servidores al vRack
 
-Una vez que haya activado el vRack en su cuenta, acceda a la sección `Bare metal Cloud`{.action} de su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en `Network`{.action} y abra el menú `vRack`{.action}.
+Una vez que haya activado el vRack en su cuenta, acceda a la sección `Bare metal Cloud`{.action} de su [área de cliente de OVHcloud](/links/manager), haga clic en `Network`{.action} y abra el menú `vRack`{.action}.
 
 Seleccione el vRack en la lista para ver la lista de servicios compatibles. Haga clic en cada uno de los servidores que quiera añadir al vRack y, seguidamente, en el botón `Añadir`{.action}.
 
@@ -64,7 +64,7 @@ Puede utilizar cualquier rango de IP privadas de su elección y cualquier direcc
 
 Los nombres de las interfaces de red de los servidores no son siempre los mismos. En los siguientes ejemplos, sustituya NETWORK_INTERFACE por el nombre de interfaz apropiado.
 
-La mejor forma de comprobar la interfaz del vRack es comprobar la pestaña `Interfaces de red`{.action} del servidor en el [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). En la tabla inferior, tenga en cuenta la dirección MAC, que es también el **Nombre** de la interfaz **privada**.
+La mejor forma de comprobar la interfaz del vRack es comprobar la pestaña `Interfaces de red`{.action} del servidor en el [Panel de configuración de OVHcloud](/links/manager). En la tabla inferior, tenga en cuenta la dirección MAC, que es también el **Nombre** de la interfaz **privada**.
 
 ![Interfaz vRack](images/private_interface.png){.thumbnail}
 
@@ -74,13 +74,46 @@ Una vez que se haya conectado al servidor por SSH, podrá ver las interfaces de 
 ip a
 ```
 
-En la línea que empieza por ```link ether```, puede comprobar que esta interfaz se corresponde con la interfaz **privada** que haya introducido en el [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Utilice este nombre de interfaz para reemplazar `NETWORK_INTERFACE` en las configuraciones siguientes (por ejemplo: `eno2`).
+En la línea que empieza por ```link ether```, puede comprobar que esta interfaz se corresponde con la interfaz **privada** que haya introducido en el [Panel de configuración de OVHcloud](/links/manager). Utilice este nombre de interfaz para reemplazar `NETWORK_INTERFACE` en las configuraciones siguientes (por ejemplo: `eno2`).
 
 ```console
 link ether f0:00:00:ef:0e:f0
 ```
 
-##### **Debian**
+##### **Debian 12**
+
+Utilice el editor de texto que desee para editar el archivo de configuración de red situado en `/etc/netplan/`. El archivo se llama `50-cloud-init.yaml`.
+
+```bash
+editor /etc/netplan/50-cloud-init.yaml
+```
+
+Añada la configuración IP a la configuración existente después de la línea `ethernets`:
+
+```yaml
+    ethernets:
+        NETWORK_INTERFACE:
+            dhcp4: no
+            addresses:
+              - 192.168.0.1/16
+```
+
+> [!warning]
+>
+> Es importante respetar la alineación de cada elemento en los archivos `yaml` como se muestra en el ejemplo anterior. No use la tecla de tabulación para crear el espacio. Sólo se debe utilizar la tecla espacio.
+>
+
+Guarde los cambios en el archivo de configuración y salga del editor.
+
+Aplique la configuración:
+
+```bash
+netplan apply
+```
+
+Repita este procedimiento para los demás servidores y asígnele a cada uno de ellos una dirección IP no utilizada desde su rango privado. A continuación, los servidores podrán comunicarse entre sí en la red privada.
+
+##### **Debian 11**
 
 En un editor de texto, abra el archivo de configuración de red en `/etc/network/interfaces.d` para cambiarlo. El archivo se llama `50-cloud-init`.
 

@@ -19,12 +19,12 @@ A snapshot of an additional volume serves two general purposes:
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- Access to the [OVHcloud Control Panel](/links/manager)
 - A [Block storage volume](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) created in your [Public Cloud](https://www.ovhcloud.com/en-au/public-cloud/) project
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), go to the `Public Cloud`{.action} section, and select the Public Cloud project concerned. Then open `Block Storage`{.action} in the left-hand navigation bar under **Storage**.
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section, and select the Public Cloud project concerned. Then open `Block Storage`{.action} in the left-hand navigation bar under **Storage**.
 
 ![Volume Snapshot](images/volume_snapshot01.png){.thumbnail}
 
@@ -62,4 +62,4 @@ Click on the button `...`{.action} to `Delete`{.action} a snapshot or to `Create
 
 [Increasing the size of an additional disk](/pages/public_cloud/compute/increase_the_size_of_an_additional_disk)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

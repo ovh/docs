@@ -11,7 +11,7 @@ updated: 2024-02-27
 > This article is intended for experienced users who have at least basic knowledge about [Preboot Execution Environment (PXE)](https://en.wikipedia.org/wiki/Preboot_Execution_Environment) and its implementation being used at OVHcloud: [iPXE](https://ipxe.org/).
 >
 
-In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), it is possible to specify a boot mode among a predefined list: primary disk or rescue.<br>
+In the [OVHcloud Control Panel](/links/manager), it is possible to specify a boot mode among a predefined list: primary disk or rescue.<br>
 With the [OVHcloud API](https://api.ovh.com/), you can define custom scripts.
 
 Using a custom script can be useful in the following use cases:
@@ -22,7 +22,7 @@ Using a custom script can be useful in the following use cases:
 
 ## Requirements
 
-- A [dedicated server](https://www.ovhcloud.com/en-ie/bare-metal/) **ready to be booted/rebooted** in your OVHcloud account.
+- A [dedicated server](/links/bare-metal/bare-metal) **ready to be booted/rebooted** in your OVHcloud account.
 - Access to the [OVHcloud API](https://api.ovh.com/).
 
 > [!warning]
@@ -83,7 +83,7 @@ You can now reboot your server and it will use your [iPXE](https://ipxe.org/) to
 
 ### Changing boot modes <a name="leaveIpxeScript"></a>
 
-You can now switch back to disk or rescue boot from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) (see our guide on [Activating and using rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)), or the [OVHcloud API](https://api.ovh.com/).
+You can now switch back to disk or rescue boot from the [OVHcloud Control Panel](/links/manager) (see our guide on [Activating and using rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)), or the [OVHcloud API](https://api.ovh.com/).
 
 #### Switch to disk <a name="switchToDisk"></a>
 
@@ -109,4 +109,4 @@ You can now see that the attribute value `bootScript` is null.
 
 [iPXE - open source boot firmware](https://ipxe.org/)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

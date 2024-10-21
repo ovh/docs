@@ -1,7 +1,7 @@
 ---
 title: Zerto Virtual Replication zwischen zwei OVHcloud Rechenzentren verwenden
 excerpt: Erfahren Sie hier, wie Sie Zerto Virtual Replication für Ihren Disaster Recovery Plan einrichten
-updated: 2023-10-23
+updated: 2024-10-18
 ---
 
 > [!primary]
@@ -18,7 +18,7 @@ Weitere Anwendungsbeispiele finden Sie in unserer Anleitung zu "[Zerto zwischen 
 
 ## Voraussetzungen
 
-- Sie verfügen über je eine [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) Infrastruktur an zwei verschiedenen Standorten.
+- Sie verfügen über je eine [Hosted Private Cloud](/links/hosted-private-cloud/vmware-prices) Infrastruktur an zwei verschiedenen Hosts.
 - Sie haben eine freie öffentliche IP-Adresse auf jeder dieser Hosted Private Clouds.
 
 ### Funktionsweise von Zerto Virtual Replication
@@ -29,8 +29,8 @@ Zerto Virtual Replication ist eine technische Lösung, die die Einrichtung einer
 
 Die Virtual Replication Appliances werden auf jedem Hypervisor deployt und verbrauchen Ressourcen, um die Replikation durchzuführen:
 
-- vCPU: 1
-- RAM: 2 GB
+- vCPU: 2
+- RAM: 6 GB
 - Speicher: 36 GB
 
 Hinweis: Was den Speicher betrifft, fügt OVHcloud einen dedizierten Datastore für alle VRAs hinzu.
@@ -406,4 +406,4 @@ Wenn Sie das Failover **ohne Reverse Protection** durchgeführt haben, muss für
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Für den Austausch mit unserer [User Community](/links/community).
