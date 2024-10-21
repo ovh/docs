@@ -80,6 +80,7 @@ Avant de procéder à cette configuration, assurez-vous que l'[étape précéden
 > [!warning]
 >
 > **Avant de poursuivre**, vérifiez que **l'ensemble des noms de domaine et/ou sous-domaines** concernés par votre futur certificat SSL Let's Encrypt :
+>
 > - pointent vers l'adresse IP de votre hébergement web ; 
 > - sont déclarés en multisite sur votre hébergement web.
 >
