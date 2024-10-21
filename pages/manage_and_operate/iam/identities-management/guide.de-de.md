@@ -44,7 +44,7 @@ Damit eine tokenbasierte Anwendung, die an einen lokalen Benutzer gebunden ist, 
 
 Lokale Benutzer können in der Dokumentation auch als *sub-user* bezeichnet werden.
 
-Aus Gründen der Rückverfolgbarkeit empfehlen wir Ihnen, lokale Benutzer einzurichten, sobald sich mehr als eine Person mit Ihrem OVHcloud Account verbinden muss.
+Aus Gründen der Rückverfolgbarkeit empfehlen wir Ihnen, lokale Benutzer einzurichten, sobald sich mehr als eine Person mit Ihrem OVHcloud Kunden-Account verbinden muss.
 
 ### Service Accounts
 
@@ -62,19 +62,19 @@ Dies sind Benutzerkonten aus einem [Identitätsverbund](/products/manage-operate
 
 Verbundbenutzer werden auf Ebene der Rechteverwaltung durch Benutzergruppen dargestellt.
 
-Wir empfehlen Ihnen, einen Identitätsverbund einzurichten, sobald sich genügend Personen mit Ihrem OVHcloud Account verbinden oder wenn Sie den Zugriff auf ein Drittverzeichnis zentralisieren möchten, das für andere Dienste als OVHcloud verwendet wird.
+Wir empfehlen, einen Identitätsverbund einzurichten, sobald sich genügend Personen mit Ihrem OVHcloud Kunden-Account verbinden oder wenn Sie den Zugriff auf ein Drittverzeichnis zentralisieren möchten, das für andere Dienste als OVHcloud verwendet wird.
 
 ### Benutzergruppen
 
-Verschiedene Identitäten können Benutzergruppen zugeordnet werden, um deren Handhabung zu erleichtern.
+Verschiedene Identitäten können Benutzergruppen zugeordnet werden, um deren Handhabung zu erleichtern.  
 Die Konfiguration von Benutzergruppen wird in der Dokumentation zur [Verwaltung lokaler Benutzer](/pages/account_and_service_management/account_information/ovhcloud-users-management) behandelt.
 
 ### Benutzer von OVHcloud Produkten
 
-Einige von OVHcloud bereitgestellte Produkte bieten möglicherweise zusätzliche Nutzer an, wie OpenStack, VMware vSphere oder Object Storage.
-Diese Benutzer sind unabhängig vom OVHcloud Account und werden direkt über die betreffenden Produkte verwaltet.
+Einige von OVHcloud bereitgestellte Produkte bieten möglicherweise zusätzliche Nutzer an, wie OpenStack, VMware vSphere oder Object Storage.  
+Diese Benutzer sind unabhängig vom OVHcloud Kunden-Account und werden direkt über die betreffenden Produkte verwaltet.
 
-Bei Produkten, die die Verwendung einer OVHcloud Identität (lokaler Benutzer, Dienstkonto, Verbundbenutzer) oder eines bestimmten Benutzers des Produkts ermöglichen, empfehlen wir Ihnen, diese spezifischen Benutzer zu verwenden, wenn Sie die Reversibilität Ihres Produkts beibehalten und die Abhängigkeit von OVHcloud begrenzen möchten.
+Bei Produkten, die die Verwendung einer OVHcloud Identität (lokaler Benutzer, Dienstkonto, Verbundbenutzer) oder eines bestimmten Benutzers des Produkts ermöglichen, empfehlen wir Ihnen, diese spezifischen Benutzer zu verwenden, wenn Sie die Reversibilität Ihres Produkts beibehalten und die Abhängigkeit von OVHcloud begrenzen möchten.  
 Umgekehrt empfehlen wir Ihnen, OVHcloud Identitäten zu verwenden, wenn Sie eine zentrale Verwaltung über alle Ihre Produkte hinweg wünschen.
 
 ## Weiterführende Informationen
