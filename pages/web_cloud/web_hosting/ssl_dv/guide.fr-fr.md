@@ -57,7 +57,7 @@ Pour les hébergements mutualisés OVHcloud, l'autorité de certification déliv
 
 > [!primary]
 >
-> Dans le cas où vous souhaitez souscrire à un certificat SSL Sectigo DV pour un nom de domaine (Exemple : `domain.tld`), vérifiez bien que son sous-domaine en « www » (Exemple : `www.domain.tld`) pointe bien également vers l'adresse IP de votre hébergement web et est correctement déclaré en multisite.
+> Dans le cas où vous souhaitez souscrire à un certificat SSL Sectigo DV pour un nom de domaine (exemple : `domain.tld`), vérifiez bien que son sous-domaine en « www » (exemple : `www.domain.tld`) pointe bien également vers l'adresse IP de votre hébergement web et est correctement déclaré en multisite.
 >
 > En effet, le cas échéant et si vous commandez le certificat SSL Sectigo DV sans vous en assurer, vous devrez corriger cela à postériori. Vous devrez alors supprimer le certificat SSL Sectigo DV précédemment souscrit **sans être remboursé**, puis en commander un nouveau. Ceci afin que le nouveau certificat SSL Sectigo DV englobe bien à la fois votre nom de domaine `domain.tld` et son son sous-domaine en « www » `www.domain.tld`.
 >
