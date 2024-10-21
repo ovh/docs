@@ -129,7 +129,7 @@ Votre certificat SSL personnalisé est désormais installé et actif. Vous pouve
 
 Lors de l'utilisation de votre hébergement web, vous pouvez être amené à ajouter par la suite des noms de domaine/sous-domaines en multisite pour lesquels vous aurez besoin d'activer l'option SSL.
 
-Même si vous avez déjà activé un certificat SSL Let's Encrypt précédemment pour certains de vos noms de domaine/sous-domaines, vous pouvez toujours en ajouter de nouveaux et ce, dans la limite des **99** noms de domaine/sous-domaines précisée plus haut dans ce guide.
+Même si vous avez déjà activé un certificat SSL Let's Encrypt pour certains de vos noms de domaine/sous-domaines, vous pouvez toujours en ajouter de nouveaux (dans la limite des **99** noms de domaine/sous-domaines précisée plus haut dans ce guide).
 
 Pour cela, effectuez **dans l'ordre** les actions suivantes :
 
