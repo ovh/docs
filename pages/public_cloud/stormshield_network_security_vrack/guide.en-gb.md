@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial on Stormshield Network Security : securing your OVHcloud infrastructure'
 excerpt: 'Find out how to securing your OVHcloud infrastructure with Stormshield Network Security'
-updated: 2024-10-16
+updated: 2024-10-21
 ---
 
 ## Objective
@@ -12,11 +12,11 @@ In today's rapidly evolving digital landscape, securing cloud infrastructure has
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- An [OpenStack user](/pages/public_cloud/compute/create_and_delete_a_user) (optional)
-- Basic networking knowledge
-- Stormshield account on the [Stormshield website](https://www.stormshield.com/en/){.external}
+- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account.
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+- An [OpenStack user](/pages/public_cloud/compute/create_and_delete_a_user) (optional).
+- Basic networking knowledge.
+- Stormshield account on the [Stormshield website](https://www.stormshield.com/en/){.external}.
 - Ensure that the vRack is enabled and configured to allow secure communication between the components of the infrastructure.
 - Additional IP address for ensuring network failover and high availability setup.
 - Stormshield Network Security Licence BYOL (**B**ring **Y**our **O**wn **L**icence), obtained through [third-party partners or resellers](https://www.stormshield.com/partner/partner-finder/){.external}, as you will need to provide it during the installation and configuration process.
@@ -302,7 +302,7 @@ In this example, Internet should be able to reach-out to the private webserver i
 >>
 >> Install Nginx on the ubuntu-webserver instance :
 >> ```console
->>sudo apt-get update
+>> sudo apt-get update
 >> sudo apt-get install -y nginx
 >> ```
 > **Step 2**
