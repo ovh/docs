@@ -700,7 +700,7 @@
             + [Public Cloud Databases - How to update your service flavor](public_cloud/public_cloud_databases/databases_13_update_your_cluster_flavor)
             + [Public Cloud Databases - How to update your service plan](public_cloud/public_cloud_databases/databases_14_upgrade_your_cluster_plan)
             + [Public Cloud Databases - How to setup logs forwarding](public_cloud/public_cloud_databases/databases_16_logs_to_customer)
-            + [Public Cloud Databases - How to setup your Kuberbenetes database operator](public_cloud/public_cloud_databases/databases_12_operator)
+            + [Public Cloud Databases - How to setup your Kubernetes database operator](public_cloud/public_cloud_databases/databases_12_operator)
             + [Public Cloud Databases - How to setup a service integration](public_cloud/public_cloud_databases/databases_07_cross_service_integration)
         + [MongoDB](products/public-cloud-databases-mongodb)
             + [Guides](public-cloud-databases-mongodb-guides)
