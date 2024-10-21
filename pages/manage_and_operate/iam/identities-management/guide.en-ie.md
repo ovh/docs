@@ -1,7 +1,7 @@
 ---
 title: "Presentation of identities that can interact within an OVHcloud account"
 excerpt: "Discover the different types of identities that allow you to interact with an OVHcloud product"
-updated: 2024-03-05
+updated: 2024-10-21
 ---
 
 ## Objective
@@ -40,6 +40,8 @@ In order for an application based on a token linked to a local user to use an OV
 
 Local users can also be referred to as *sub-users* in the documentation.
 
+We recommend to use local users as soon as more than one person should connect to your OVHcloud account in order to assure tracability of the actions
+
 ### Service accounts
 
 Service accounts are identities associated with your OVHcloud account. These accounts are designed for **machine interactions** with OVHcloud products, as they are based on client/token authentication, and access rights depend on the [IAM policies](/pages/account_and_service_management/account_information/iam-policy-ui) implemented.
@@ -48,18 +50,26 @@ The creation of service accounts is covered in a [dedicated documentation](/page
 
 A service account can then be used for [login on OVHcloud APIs](/pages/account_and_service_management/account_information/authenticate-api-with-service-account) as well as on third-party APIs such as those exposed by [OpenStack](/pages/manage_and_operate/iam/authenticate-api-openstack-with-service-account).
 
-Logging in with service accounts is not yet supported on SDKs and Terraform provider.
-
 ### Federated users
 
 These are user accounts from an [identity federation](/products/manage-operate-user-federation). These users come from a third-party directory, and are therefore not managed directly by OVHcloud. Their access rights depend on the [IAM policies](/pages/account_and_service_management/account_information/iam-policy-ui) implemented.
 
 Federated users are represented by user groups in rights management.
 
+We recommand to use identity federation as soon as the number of person that should connect to your OVHcloud account became large enough, or if you want to centralise your access to a third party directory used for other services than OVHcloud
+
 ### User groups
 
 The different identities can be associated in user groups to make them easier to manipulate.
 Configuring user groups is covered in the [local users management documentation](/pages/account_and_service_management/account_information/ovhcloud-users-management).
+
+### Users of OVHcloud products
+
+Some products offer by OVHcloud can also propose their own users, such as Openstack, VMware vSphere or Object Storage.
+Those users are independant from the OVHcloud account and are managed directly through the products concerned.
+
+For the products allowing to choose to use an OVHcloud identity (local user, service account, federated user) or a specific user, if you would like to maintain the reversibility of it and limit the dependency with OVHcloud we recommand to use those specific users.
+On the opposite, if you want to have a centralise management accross all your products we suggest to use OVHcloud identities.
 
 ## Go further
 

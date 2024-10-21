@@ -1,7 +1,7 @@
 ---
 title: "Présentation des identités pouvant interagir au sein d'un compte OVHcloud"
 excerpt: "Découvrez les différents types d'identités permettant d'interagir avec un produit OVHcloud"
-updated: 2024-03-05
+updated: 2024-10-21
 ---
 
 ## Objectif
@@ -40,6 +40,8 @@ Pour qu'une application basée sur un token lié à un utilisateur local puisse 
 
 Les utilisateurs locaux peuvent être aussi référencés sous le nom de *sub-user* dans la documentation.
 
+Nous vous recommandons de mettre en place des utilisateurs locaux dès que plus d'une personne doivent se connecter sur votre compte OVHcloud a des fin de traçabilité.
+
 ### Comptes de services
 
 Les comptes de services sont des identités associés à votre compte OVHcloud. Ces comptes sont conçus pour les **interactions machines** avec les produits OVHcloud car basés sur une authentification de type client/token et dont les droits d'accès dépendent des [politiques IAM](/pages/account_and_service_management/account_information/iam-policy-ui) mises en oeuvre.
@@ -48,18 +50,26 @@ La création des comptes de services est abordée dans la [documentation dédié
 
 Un compte de service peut ensuite être utilisé pour la [connexion sur les APIs OVHcloud](/pages/account_and_service_management/account_information/authenticate-api-with-service-account) ainsi que sur des API tierces comme celles exposées par [OpenStack](/pages/manage_and_operate/iam/authenticate-api-openstack-with-service-account).
 
-La connexion avec des comptes de services n'est pas encore supportée sur les SDK et le provider Terraform.
-
 ### Utilisateurs fédérés
 
 Ce sont les comptes utilisateurs provenant d'une [fédération d'identité](/products/manage-operate-user-federation). Ces utilisateurs proviennent d'un annuaire tiers et ne sont donc pas gérés directement par OVHcloud. Leurs droits d'accès dépendent des [politiques IAM](/pages/account_and_service_management/account_information/iam-policy-ui) mises en oeuvre.
 
 Les utilisateurs fédérés sont représentés par des groupes utilisateurs au niveau de la gestion des droits.
 
+Nous vous recommandons de mettre en place une fédération d'identité dès que le nombre de personne se connectant à votre compte OVHcloud devient suffisament conséquent, ou si vous souhaitez centraliser les accès sur un annuaire tier utilisé pour d'autres service qu'OVHcloud
+
 ### Groupes d'utilisateurs
 
 Les différentes identités peuvent être associées dans des groupes d'utilisateurs afin d'en faciliter la manipulation.
 La configuration des groupes d'utilisateurs est abordée dans la documentation de gestion des [utilisateurs locaux](/pages/account_and_service_management/account_information/ovhcloud-users-management).
+
+### Utilisateurs des produits OVHcloud
+
+Certains produits mis a disposition par OVHcloud peuvent proposer en complément leurs propres utilisateurs, comme Openstack, VMware vSphere ou Object Storage.
+Ces utilisateurs sont indépendant du compte OVHcloud et sont gérés directement à travers les produits concernés.
+
+Pour les produits permettant au choix d'utiliser une identité OVHcloud (utilisateur local, compte de service, utilisateur fédéré) ou un utilisateur spécifique du produit, si vous souhaitez maintenir la réversibilité de votre produit et limiter la dépendance à OVHcloud nous vous recommandons d'utiliser ces utilisateurs spécifiques.
+A l'inverse, si vous souhaitez disposer d'une gestion centralisée à travers tout vos produits nous vous recommandons d'utiliser des identités OVHcloud.
 
 ## Aller plus loin
 
