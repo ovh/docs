@@ -49,7 +49,7 @@ Vous retrouverez toutes les informations nécessaires sur nos pages dédiées à
 - [OVHcloud.com - VMware Cloud Director on OVHcloud (FR)](https://www.ovhcloud.com/fr/lp/vmware-vcd-evolution/)
 - [OVHcloud Labs - VMware Cloud Director on OVHcloud (EN)](https://labs.ovhcloud.com/en/vmware-cloud-director/)
 
-Les migrations seront effectuées en 4 vagues, à partir du mois de septembre, selon les services actifs dans votre environnement.
+Les migrations seront effectuées en 4 vagues, à partir du mois de novembre 2024, selon les services actifs dans votre environnement.
 
 Le calendrier prévisionnel, compatible avec ces environnements lors de la migration, est le suivant :
 
