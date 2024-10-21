@@ -101,7 +101,7 @@ Poursuivez la commande jusqu'au paiement afin de valider la demande de création
 >
 > Une fois la commande validée, la demande de certificat SSL Sectigo DV est envoyée à l'autorité de certification Sectigo.
 >
-> Dès lors, aucun remboursement du SSL Sectigo DV ne sera possible.
+> Dès lors, aucun remboursement du SSL Sectigo DV n'est possible.
 
 L'installation du certificat SSL Sectigo DV peut prendre jusqu'à **24** heures.
 
