@@ -666,6 +666,8 @@
             + [Public Cloud Load Balancer TCP / HTTP / HTTPS Logs Forwarding](public_cloud/public_cloud_network_services/technical-resources-05-lb_logs_2_customers)
         + [Tutorials](public-cloud-network-tutorials)
             + [Configuring a secure Load Balancer with Let's Encrypt](public_cloud/public_cloud_network_services/tutorials-01-secure-lb-letsencrypt)
+            + [Securing your OVHcloud infrastructure with Stormshield Network Security](public_cloud/public_cloud_network_services/tutorial-stormshield_network_security_vrack)
+            + [Securing your OVHcloud infrastructure with Ubika WAAP Gateway](public_cloud/public_cloud_network_services/tutorial-ubika_vrack)
     + [Public Cloud Databases](products/public-cloud-databases)
         + [General information](public-cloud-databases-general-information)
             + [Public Cloud Databases Concepts - Security overview](public_cloud/public_cloud_databases/information_01_security_overview)
