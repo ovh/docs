@@ -1,7 +1,7 @@
 ---
 title: MX Plan - Configurer son compte e-mail sur Mail pour macOS
 excerpt: Découvrez comment configurer votre adresse e-mail MX Plan sur Mail de macOS
-updated: 2024-10-01
+updated: 2024-10-22
 ---
 
 <style>
@@ -137,7 +137,7 @@ Pour la réception des e-mails, lors du choix du type de compte, nous vous conse
 |Port|993|
 |Type de sécurité|SSL/TLS|
 
-Pour l'envoi des e-mails, si vous devez renseigner manuellement les paramètres **SMTP** dans les préférences du compte, retrouverez ci-dessous les paramètres à utiliser :
+Pour l'envoi des e-mails, si vous devez renseigner manuellement les paramètres **SMTP** dans les préférences du compte, retrouvez ci-dessous les paramètres à utiliser :
 
 - **Configuration SMTP**
 
