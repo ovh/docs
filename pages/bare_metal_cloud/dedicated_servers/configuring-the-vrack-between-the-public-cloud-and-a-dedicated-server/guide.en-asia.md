@@ -28,7 +28,7 @@ The OVHcloud [vRack](https://www.ovh.com/asia/solutions/vrack) allows you to con
 ### Add a Public Cloud project to the vRack
 
 > [!warning]
-> If you do not have a vRack in your account, you need to order one before proceeding. This service is free of charge.
+> If you do not have a vRack in your account, you need to [order one](/links/network/vrack) before proceeding. This service is free of charge.
 >
 
 Once your [Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) is set up, you will need to add it to the vRack.
