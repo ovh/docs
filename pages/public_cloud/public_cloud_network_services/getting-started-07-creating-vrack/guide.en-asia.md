@@ -1,7 +1,7 @@
 ---
 title: 'Configuring vRack for Public Cloud'
 excerpt: 'Find out how to set up vRack for your Public Cloud instances'
-updated: 2024-10-17
+updated: 2024-10-22
 ---
 
 ## Objective
@@ -27,9 +27,9 @@ Depending on your technical profile and needs, it is mostly up to you which inte
 
 ### OVHcloud Control Panel
 
-The [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) is a fully visual interface, ideally suited for managing only one VLAN. You will not be able to customise the private IP range, which will be in 10.x.x.x/16.
+The [OVHcloud Control Panel](/links/manager) is a fully visual interface, ideally suited for managing multiple VLANs. You will also have the possibility to customise the private IP range, which by default is in 10.x.x.x/16.
 
-The VLAN will be deployed by default to all zones. You will only have the option of activating the gateways or not.
+The VLAN will be deployed by to the selected Region. You will also have the option of activating the gateways or not, enabling DHCP distributions, etc.
 
 You can also manage billing for your services in the OVHcloud Control Panel.
 
@@ -97,21 +97,19 @@ For that you need to cherry-pick the correct terraform provider & resource. Find
 
 ### Step 1: Activating and managing a vRack <a name="activation"></a>
 
-Using the vRack itself is free of charge and it can be delivered within a few minutes. However, to create a vRack service, it is necessary to generate and validate an order form first.
-
-Once the service is active, you will find it in your Control Panel in the `Bare Metal Cloud`{.action} section, labelled "pn-xxxxxx".
-
 #### In the OVHcloud Control Panel
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and open your `Public Cloud`{.action} project.
+> [!primary]
+> This does not apply to newly created projects, which are automatically delivered with a vRack. To view the vRack once the project has been created, go the `Bare Metal Cloud`{.action} menu and click on `Network`{.action} in the left tab. Click on `vRack private network`{.action} to view the vRack(s).
+>
 
-Click on `Private Network`{.action} in left-hand navigation bar.
+Using the vRack itself is free of charge and it can be delivered within a few minutes. However, to create a vRack service, it is necessary to generate and validate an order form first.
 
-![Private Network](images/vrack2021-02.png){.thumbnail}
+Once the service is active, you will find it in your Control Panel in the `Bare Metal Cloud`{.action} section > `Network`{.action} > `vRack private network`{.action}. Labelled "pn-xxxxxx".
 
-Click on the button `To get started, create a vRack`{.action}. You will then have to choose to create a new vRack or to use an existing vRack. In our example, we will create a new vRack. Once you have made your choice, click `Create`{.action}.
+From the list of eligible services, select the project you want to add to the vRack and click the `Add`{.action} button.
 
-![vRack creation](images/vrack3.png){.thumbnail}
+![add project to vrack](images/addprojectvrack.png){.thumbnail}
 
 To continue the configuration of your vRack in the OVHcloud Control Panel, skip to the section [Creating a VLAN in the OVHcloud Control Panel](./#creating-a-vlan-in-the-ovhcloud-control-panel) of this guide.
 
@@ -233,7 +231,7 @@ There are two possible scenarios:
 - The instance to be integrated does not exist yet.
 - An existing instance needs to be added to the vRack.
 
-#### **In case of a new instance**
+**In case of a new instance**
 
 #### In the OVHcloud Control Panel
 
@@ -411,7 +409,7 @@ nova list
 +--------------------------------------+--------------------+--------+------------+-------------+--------------------------------------------------+
 ```
 
-#### **In case of an existing instance**
+**In case of an existing instance**
 
 The OVHcloud Control Panel allows you to attach an instance to one or more private networks but does not offer advanced network interface configuration. If you want to customise further, you will need to manage them either through the OVHcloud APIv6, through the OpenStack APIs or via Horizon.
 
@@ -424,7 +422,7 @@ For example, if you have a public interface *eth0*, you will add the interface *
 > You will therefore need to set a static IP or configure DHCP, depending on your infrastructure.
 >
 
-##### **In the OVHcloud Control Panel**
+#### In the OVHcloud Control Panel
 
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
@@ -440,11 +438,11 @@ In the popup window that appears, select the private network(s) to attach to you
 
 ![attach network](images/vrack9.png){.thumbnail}
 
-##### **Managing network interfaces with the OVHcloud APIv6**
+#### With the OVHcloud APIv6
 
 Please refer to [this section](/pages/public_cloud/public_cloud_network_services/getting-started-08-creating-vrack-with-api#in-case-of-an-existing-instance) of the corresponding guide.
 
-##### **Managing network interfaces with OpenStack Horizon**
+#### With OpenStack Horizon
 
 Log in to the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/){.external} as mentioned [above](./#horizon).
 
@@ -456,7 +454,7 @@ Select `Compute` and then `Instances` from the menu.
 
 ![Horizon compute instances](images/horizon2.png){.thumbnail}
 
-#### Adding a private interface
+**Adding a private interface**
 
 To add an interface, click on the arrow in the "Actions" column to access the possible actions on the instance. Select `Attach Interface`{.action}.
 
@@ -472,7 +470,7 @@ Select your interface and confirm.
 ><br>It is your responsibility to correctly configure the interface through DHCP or by using the proper IP addresses through a static IP configuration.
 >
 
-#### Removing a private interface
+**Removing a private interface**
 
 > [!warning]
 > Deleting an interface is permanent.
@@ -489,7 +487,7 @@ Select your interface and confirm.
 
 ![Horizon detach interface](images/horizon6.png){.thumbnail}
 
-##### **Managing network interfaces with the OpenStack API**
+#### With the OpenStack API
 
 To use OpenStack APIs, if you have not already done so, consider preparing your work environment as described in the [first part of this guide](./#openstack-api).
 
@@ -651,4 +649,4 @@ nova interface-detach 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx 12345678-abcd-ef01-23
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
