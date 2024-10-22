@@ -69,7 +69,7 @@ Para los alojamientos compartidos de OVHcloud, la autoridad de certificación qu
 
 Compruebe también lo siguiente:
 
-- La casilla « `SSL`» no debe estar marcada al añadir en multisitio el dominio o subdominio correspondiente a su certificado SSL Sectigo DV.
+- La casilla `SSL` no debe estar marcada al añadir en multisitio el dominio o subdominio correspondiente a su certificado SSL Sectigo DV.
 - El estado `Por generar` o `Activado` no debe estar presente para el dominio o subdominio correspondiente a su certificado SSL Sectigo DV.
 
 Para más información, consulte nuestras guías:
