@@ -51,18 +51,20 @@ Suivez les étapes d'installation en cliqueant sur les onglets ci-dessous :
 >> ![mailmac](images/mail-mac-email02.png){.thumbnail .w-400 .h-600}
 >>
 > **Etape 3**
->> Dans la fenêtre suivante, complétez les informations :<br>
->> - **Adresse e-mail** 
->> - **Nom d'utilisateur** : Saisissez votre adresse e-mail complète 
+>> Dans la fenêtre suivante, complétez les informations :
+>>
+>> - **Adresse e-mail**
+>> - **Nom d'utilisateur** : Saisissez votre adresse e-mail complète
 >> - **Mot de passe**
 >> - **Type de compte** : Sélectionnez `IMAP` (recommandé) ou `POP`
 >> - **Serveur de réception** :
->>   - **EUROPE** : Saisissez `imap.mail.ovh.net` ou `ssl0.ovh.net`
->>   - **AMERIQUE/ASIE** : Saisissez `imap.mail.ovh.ca`
+>>    - **EUROPE** : Saisissez `imap.mail.ovh.net` ou `ssl0.ovh.net`
+>>    - **AMERIQUE/ASIE** : Saisissez `imap.mail.ovh.ca`
 >> - **Serveur d'envoi** :
->>   - **EUROPE** : Saisissez `smtp.mail.ovh.net` ou `ssl0.ovh.net`
->>   - **AMERIQUE/ASIE** : Saisissez `smtp.mail.ovh.ca`
->> Pour finaliser la configuration, cliquez sur `Se connecter`{.action}<br>
+>>    - **EUROPE** : Saisissez `smtp.mail.ovh.net` ou `ssl0.ovh.net`
+>>    - **AMERIQUE/ASIE** : Saisissez `smtp.mail.ovh.ca`
+>>
+>> Pour finaliser la configuration, cliquez sur `Se connecter`{.action}
 >>
 >> > [!warning]
 >> >
