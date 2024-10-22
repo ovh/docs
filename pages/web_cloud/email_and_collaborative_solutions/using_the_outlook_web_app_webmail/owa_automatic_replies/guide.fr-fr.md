@@ -19,7 +19,7 @@ Cette fonctionnalité d’Exchange vous permet de configurer des réponses autom
 
 > [!warning]
 >
-> Si votre adresse e-mail est liée à une offre **MX Plan** (incluse avec les [hébergements web](/links/web/hosting) et les [hébergements gratuit 100M](/links/web/domains-free-hosting)), il y a une section `Gestion des répondeurs`{.action} dans votre espace client. Vous devrez alors créer une réponse automatique depuis votre espace client OVHcloud en vous aidant de la documentation [« MX Plan - Créer une réponse automatique sur une adresse e-mail »](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses).
+> Si votre adresse e-mail est liée à une offre **MX Plan** (incluse avec les [hébergements web](/links/web/hosting) et les [hébergements gratuits 100M](/links/web/domains-free-hosting)),  votre espace client propose une section intitulée `Gestion des répondeurs`{.action}. Vous devez alors créer une réponse automatique depuis votre espace client OVHcloud en vous aidant de la documentation [« MX Plan - Créer une réponse automatique sur une adresse e-mail »](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses).
 
 ### Activer la fonctionnalité
 
