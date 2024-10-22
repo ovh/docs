@@ -1,7 +1,7 @@
 ---
 title: Bring Your Own Image (BYOI) (EN)
 excerpt: Find out how to easily deploy your own images on dedicated servers
-updated: 2024-07-19
+updated: 2024-10-22
 ---
 
 ## Objective
@@ -80,56 +80,30 @@ Log in to the [API console](https://api.ovh.com/) and go to the `/dedicated/serv
 
 > [!api]
 >
-> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/install/start
+> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/reinstall
 >
 
 The Bring Your Own Image (BYOI) payload should be similar to the following:
 
 > [!warning]
 >
-> In the `userMetadata` section, only `imageURL` and `imageType` are mandatory.
+> In the `customizations` section, only `imageURL` and `imageType` are mandatory.
 >
 
 ```json
 {
-  "details": {
-    "customHostname": "myCustomBYOI"
-  },
-  "templateName": "byoi_64",
-  "userMetadata": [
-    {
-      "key": "sshKey",
-      "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQC9xPpdqP3sx2H+gcBm65tJEaUbuifQ1uGkgrWtNY0PRKNNPdy+3yoVOtxk6Vjo4YZ0EU/JhmQfnrK7X7Q5vhqYxmozi0LiTRt0BxgqHJ+4hWTWMIOgr+C2jLx7ZsCReRk+fy5AHr6h0PHQEuXVLXeUy/TDyuY2JPtUZ5jcqvLYgQ== my-nuclear-power-plant"
+  "operatingSystem": "byoi_64",
+  "customizations": {
+    "imageURL": "https://cdimage.debian.org/cdimage/cloud/bullseye/20230124-1270/debian-11-generic-amd64-20230124-1270.raw",
+    "imageType": "raw",
+    "sshKey": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQC9xPpdqP3sx2H+gcBm65tJEaUbuifQ1uGkgrWtNY0PRKNNPdy+3yoVOtxk6Vjo4YZ0EU/JhmQfnrK7X7Q5vhqYxmozi0LiTRt0BxgqHJ+4hWTWMIOgr+C2jLx7ZsCReRk+fy5AHr6h0PHQEuXVLXeUy/TDyuY2JPtUZ5jcqvLYgQ== my-nuclear-power-plant",
+    "imageCheckSum": "2cbd3dd5606ef95a5cfa47943b3ad453fcc43522915be7f559a296a71395f82f88e621e558df7aa5f3d2e62c20043f9430ad18c900e565a1c070066e8d008aaa",
+    "httpHeaders": {
+      "Authorization": "Basic bG9naW46cGFzc3dvcmQ="
     },
-    {
-      "key": "imageURL",
-      "value": "https://cdimage.debian.org/cdimage/cloud/bullseye/20230124-1270/debian-11-generic-amd64-20230124-1270.raw"
-    },
-    {
-      "key": "imageType",
-      "value": "raw"
-    },
-    {
-      "key": "httpHeaders0Key",
-      "value": "Authorization"
-    },
-    {
-      "key": "httpHeaders0Value",
-      "value": "Basic bG9naW46cGFzc3dvcmQ="
-    },
-    {
-      "key": "imageCheckSum",
-      "value": "2cbd3dd5606ef95a5cfa47943b3ad453fcc43522915be7f559a296a71395f82f88e621e558df7aa5f3d2e62c20043f9430ad18c900e565a1c070066e8d008aaa"
-    },
-    {
-      "key": "imageCheckSumType",
-      "value": "sha512"
-    },
-    {
-      "key": "configDriveUserData",
-      "value": "I2Nsb3VkLWNvbmZpZwpzc2hfYXV0aG9yaXplZF9rZXlzOgogIC0gc3NoLXJzYSBBQUFBQjhkallpdz09IG15c2VsZkBteWRvbWFpbi5uZXQKCnVzZXJzOgogIC0gbmFtZTogcGF0aWVudDAKICAgIHN1ZG86IEFMTD0oQUxMKSBOT1BBU1NXRDpBTEwKICAgIGdyb3VwczogdXNlcnMsIHN1ZG8KICAgIHNoZWxsOiAvYmluL2Jhc2gKICAgIGxvY2tfcGFzc3dkOiBmYWxzZQogICAgc3NoX2F1dGhvcml6ZWRfa2V5czoKICAgICAgLSBzc2gtcnNhIEFBQUFCOGRqWWl3PT0gbXlzZWxmQG15ZG9tYWluLm5ldApkaXNhYmxlX3Jvb3Q6IGZhbHNlCnBhY2thZ2VzOgogIC0gdmltCiAgLSB0cmVlCmZpbmFsX21lc3NhZ2U6IFRoZSBzeXN0ZW0gaXMgZmluYWxseSB1cCwgYWZ0ZXIgJFVQVElNRSBzZWNvbmRzCg=="
-    }
-  ]
+    "imageCheckSumType": "sha512",
+    "configDriveUserData": "I2Nsb3VkLWNvbmZpZwpzc2hfYXV0aG9yaXplZF9rZXlzOgogIC0gc3NoLXJzYSBBQUFBQjhkallpdz09IG15c2VsZkBteWRvbWFpbi5uZXQKCnVzZXJzOgogIC0gbmFtZTogcGF0aWVudDAKICAgIHN1ZG86IEFMTD0oQUxMKSBOT1BBU1NXRDpBTEwKICAgIGdyb3VwczogdXNlcnMsIHN1ZG8KICAgIHNoZWxsOiAvYmluL2Jhc2gKICAgIGxvY2tfcGFzc3dkOiBmYWxzZQogICAgc3NoX2F1dGhvcml6ZWRfa2V5czoKICAgICAgLSBzc2gtcnNhIEFBQUFCOGRqWWl3PT0gbXlzZWxmQG15ZG9tYWluLm5ldApkaXNhYmxlX3Jvb3Q6IGZhbHNlCnBhY2thZ2VzOgogIC0gdmltCiAgLSB0cmVlCmZpbmFsX21lc3NhZ2U6IFRoZSBzeXN0ZW0gaXMgZmluYWxseSB1cCwgYWZ0ZXIgJFVQVElNRSBzZWNvbmRzCg=="
+  }
 }
 ```
 
@@ -167,15 +141,15 @@ Once you completed the fields, start the deployment by clicking `Execute`{.actio
 
 | Field | Description | Required |
 |-|-|-|
-| userMetadata/sshKey | SSH public key | ❌ |
-| userMetadata/imageURL | Your image URL | ✅ |
-| userMetadata/imageType | Your image format (qcow2, raw) | ✅ |
-| userMetadata/imageCheckSum | Your image's checksum | ❌ |
-| userMetadata/imageCheckSumType | Your image's checksum type (md5, sha1, sha256, sha512) | ❌ (except if checksum provided) |
-| userMetadata/configDriveUserData | Your configDrive file content¹ | ❌ |
-| userMetadata/configDriveMetadata | Custom Cloud-Init metadata | ❌ |
-| userMetadata/httpHeaders?Key | HTTP Headers key  | ❌² |
-| userMetadata/httpHeaders?Value | HTTP Headers value | ❌² |
+| customizations/sshKey | SSH public key | ❌ |
+| customizations/imageURL | Your image URL | ✅ |
+| customizations/imageType | Your image format (qcow2, raw) | ✅ |
+| customizations/imageCheckSum | Your image's checksum | ❌ |
+| customizations/imageCheckSumType | Your image's checksum type (md5, sha1, sha256, sha512) | ❌ (except if checksum provided) |
+| customizations/configDriveUserData | Your configDrive file content¹ | ❌ |
+| customizations/configDriveMetadata | Custom Cloud-Init metadata | ❌ |
+| customizations/httpHeaders?Key | HTTP Headers key  | ❌² |
+| customizations/httpHeaders?Value | HTTP Headers value | ❌² |
 
 ¹ Can either be a `#cloud-config` or a script. It must be in one-line, and have `\n` for line-return<br />
 ² Use only if you need HTTP Headers, such as `Basic Auth`<br />

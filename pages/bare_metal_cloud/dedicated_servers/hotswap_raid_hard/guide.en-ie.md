@@ -383,7 +383,7 @@ You can also check the progress of the rebuild with the following command :
 
 [Configuring MegaRAID for RAID Level 0](/pages/bare_metal_cloud/dedicated_servers/megaraid_config)
 
-[OVHcloud API & Partitioning](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
+[OVHcloud API and Storage](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
 
 [Managing software RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft)
 

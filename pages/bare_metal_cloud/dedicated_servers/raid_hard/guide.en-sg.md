@@ -426,7 +426,7 @@ RAID actions menu, select an option:  [1-99 or e/p/w or 0 to quit] 0
 
 [Configuring MegaRAID for RAID Level 0](/pages/bare_metal_cloud/dedicated_servers/megaraid_config)
 
-[OVHcloud API & Partitioning](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
+[OVHcloud API and Storage](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
 
 [Managing software RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft)
 

@@ -1,6 +1,6 @@
 ---
-title: Serveurs Dédiés - Partitionnement d'ESXi
-excerpt: Utilisez l'espace client OVHcloud ou l'API OVHcloud pour personnaliser la taille de la partition système d'ESXi
+title: "Serveurs Dédiés - Partitionnement d'ESXi"
+excerpt: "Utilisez l'espace client OVHcloud ou l'API OVHcloud pour personnaliser la taille de la partition système d'ESXi"
 updated: 2024-09-13
 ---
 

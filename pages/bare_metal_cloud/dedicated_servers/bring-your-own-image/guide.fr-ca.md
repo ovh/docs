@@ -1,7 +1,7 @@
 ---
 title: Bring Your Own Image (BYOI)
 excerpt: Découvrez comment déployer facilement vos propres images sur des serveurs dédiés
-updated: 2024-07-19
+updated: 2024-10-22
 ---
 
 ## Objectif
@@ -80,56 +80,30 @@ Connectez-vous sur [https://api.ovh.com/](https://api.ovh.com/){.external} puis 
 
 > [!api]
 >
-> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/install/start
+> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/reinstall
 >
 
 Le contenu de la requête API de Bring Your Own Image (BYOI) doit être similaire au fichier JSON suivant :
 
 > [!warning]
 >
-> Dans la section `userMetadata`, seuls les champs `imageURL` et `imageType` sont obligatoires.
+> Dans la section `customizations`, seuls les champs `imageURL` et `imageType` sont obligatoires.
 >
 
 ```json
 {
-  "details": {
-    "customHostname": "myCustomBYOI"
-  },
-  "templateName": "byoi_64",
-  "userMetadata": [
-    {
-      "key": "sshKey",
-      "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQC9xPpdqP3sx2H+gcBm65tJEaUbuifQ1uGkgrWtNY0PRKNNPdy+3yoVOtxk6Vjo4YZ0EU/JhmQfnrK7X7Q5vhqYxmozi0LiTRt0BxgqHJ+4hWTWMIOgr+C2jLx7ZsCReRk+fy5AHr6h0PHQEuXVLXeUy/TDyuY2JPtUZ5jcqvLYgQ== my-nuclear-power-plant"
+  "operatingSystem": "byoi_64",
+  "customizations": {
+    "imageURL": "https://cdimage.debian.org/cdimage/cloud/bullseye/20230124-1270/debian-11-generic-amd64-20230124-1270.raw",
+    "imageType": "raw",
+    "sshKey": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQC9xPpdqP3sx2H+gcBm65tJEaUbuifQ1uGkgrWtNY0PRKNNPdy+3yoVOtxk6Vjo4YZ0EU/JhmQfnrK7X7Q5vhqYxmozi0LiTRt0BxgqHJ+4hWTWMIOgr+C2jLx7ZsCReRk+fy5AHr6h0PHQEuXVLXeUy/TDyuY2JPtUZ5jcqvLYgQ== my-nuclear-power-plant",
+    "imageCheckSum": "2cbd3dd5606ef95a5cfa47943b3ad453fcc43522915be7f559a296a71395f82f88e621e558df7aa5f3d2e62c20043f9430ad18c900e565a1c070066e8d008aaa",
+    "httpHeaders": {
+      "Authorization": "Basic bG9naW46cGFzc3dvcmQ="
     },
-    {
-      "key": "imageURL",
-      "value": "https://cdimage.debian.org/cdimage/cloud/bullseye/20230124-1270/debian-11-generic-amd64-20230124-1270.raw"
-    },
-    {
-      "key": "imageType",
-      "value": "raw"
-    },
-    {
-      "key": "httpHeaders0Key",
-      "value": "Authorization"
-    },
-    {
-      "key": "httpHeaders0Value",
-      "value": "Basic bG9naW46cGFzc3dvcmQ="
-    },
-    {
-      "key": "imageCheckSum",
-      "value": "2cbd3dd5606ef95a5cfa47943b3ad453fcc43522915be7f559a296a71395f82f88e621e558df7aa5f3d2e62c20043f9430ad18c900e565a1c070066e8d008aaa"
-    },
-    {
-      "key": "imageCheckSumType",
-      "value": "sha512"
-    },
-    {
-      "key": "configDriveUserData",
-      "value": "I2Nsb3VkLWNvbmZpZwpzc2hfYXV0aG9yaXplZF9rZXlzOgogIC0gc3NoLXJzYSBBQUFBQjhkallpdz09IG15c2VsZkBteWRvbWFpbi5uZXQKCnVzZXJzOgogIC0gbmFtZTogcGF0aWVudDAKICAgIHN1ZG86IEFMTD0oQUxMKSBOT1BBU1NXRDpBTEwKICAgIGdyb3VwczogdXNlcnMsIHN1ZG8KICAgIHNoZWxsOiAvYmluL2Jhc2gKICAgIGxvY2tfcGFzc3dkOiBmYWxzZQogICAgc3NoX2F1dGhvcml6ZWRfa2V5czoKICAgICAgLSBzc2gtcnNhIEFBQUFCOGRqWWl3PT0gbXlzZWxmQG15ZG9tYWluLm5ldApkaXNhYmxlX3Jvb3Q6IGZhbHNlCnBhY2thZ2VzOgogIC0gdmltCiAgLSB0cmVlCmZpbmFsX21lc3NhZ2U6IFRoZSBzeXN0ZW0gaXMgZmluYWxseSB1cCwgYWZ0ZXIgJFVQVElNRSBzZWNvbmRzCg=="
-    }
-  ]
+    "imageCheckSumType": "sha512",
+    "configDriveUserData": "I2Nsb3VkLWNvbmZpZwpzc2hfYXV0aG9yaXplZF9rZXlzOgogIC0gc3NoLXJzYSBBQUFBQjhkallpdz09IG15c2VsZkBteWRvbWFpbi5uZXQKCnVzZXJzOgogIC0gbmFtZTogcGF0aWVudDAKICAgIHN1ZG86IEFMTD0oQUxMKSBOT1BBU1NXRDpBTEwKICAgIGdyb3VwczogdXNlcnMsIHN1ZG8KICAgIHNoZWxsOiAvYmluL2Jhc2gKICAgIGxvY2tfcGFzc3dkOiBmYWxzZQogICAgc3NoX2F1dGhvcml6ZWRfa2V5czoKICAgICAgLSBzc2gtcnNhIEFBQUFCOGRqWWl3PT0gbXlzZWxmQG15ZG9tYWluLm5ldApkaXNhYmxlX3Jvb3Q6IGZhbHNlCnBhY2thZ2VzOgogIC0gdmltCiAgLSB0cmVlCmZpbmFsX21lc3NhZ2U6IFRoZSBzeXN0ZW0gaXMgZmluYWxseSB1cCwgYWZ0ZXIgJFVQVElNRSBzZWNvbmRzCg=="
+  }
 }
 ```
 
@@ -167,15 +141,15 @@ Une fois les champs complétés, démarrez le déploiement en cliquant sur `Exec
 
 | Champ | Description | Obligatoire |
 |-|-|-|
-| userMetadata/sshKey | La clé publique SSH | ❌ |
-| userMetadata/imageURL | L'URL de votre image | ✅ |
-| userMetadata/imageType | Le type/format de votre image (qcow2, raw) | ✅ |
-| userMetadata/imageCheckSum | Checksum de votre image | ❌ |
-| userMetadata/imageCheckSumType | Type de checksum de votre image. (md5, sha1, sha256, sha512) | ❌ (sauf si checksum fourni) |
-| userMetadata/configDriveUserData | Contenu de votre fichier configDrive¹ | ❌ |
-| userMetadata/configDriveMetadata | Métadonnées Cloud-Init personnalisées | ❌ |
-| userMetadata/httpHeaders?Key | Clé des en-têtes HTTP | ❌² |
-| userMetadata/httpHeaders?Value | Valeur des en-têtes HTTP | ❌² |
+| customizations/sshKey | La clé publique SSH | ❌ |
+| customizations/imageURL | L'URL de votre image | ✅ |
+| customizations/imageType | Le type/format de votre image (qcow2, raw) | ✅ |
+| customizations/imageCheckSum | Checksum de votre image | ❌ |
+| customizations/imageCheckSumType | Type de checksum de votre image. (md5, sha1, sha256, sha512) | ❌ (sauf si checksum fourni) |
+| customizations/configDriveUserData | Contenu de votre fichier configDrive¹ | ❌ |
+| customizations/configDriveMetadata | Métadonnées Cloud-Init personnalisées | ❌ |
+| customizations/httpHeaders?Key | Clé des en-têtes HTTP | ❌² |
+| customizations/httpHeaders?Value | Valeur des en-têtes HTTP | ❌² |
 
 ¹ Il peut s'agir d'un `#cloud-config` ou d'un script. Il doit être sur une ligne et avoir `\n` pour la ligne-retour.<br />
 ² À utiliser uniquement si vous avez besoin d'en-têtes HTTP, tels que `Basic Auth`<br />

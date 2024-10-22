@@ -10,7 +10,7 @@ updated: 2024-09-13
 ## Objective
 
 With [OVHcloud dedicated servers](/links/bare-metal/bare-metal), you can freely [configure partitioning](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh). This gives customers a wide range of options when installing an operating system. ESXi is an exception because it is a UNIX-based, proprietary system with a proprietary installer.<br />
-OVHcloud installations of ESXi are therefore compliant with the configuration set by the software publisher. Since ESXi 7.0, it is possible to choose between 4 different predefined partitioning layouts. This guide will show you how to select a partitioning layout in the [OVHcloud Control Panel](https://ovh.com/manager/#/dedicated/configuration) or via the [OVHcloud API](https://ca.api.ovh.com/).
+OVHcloud installations of ESXi are therefore compliant with the configuration set by the software publisher. Since ESXi 7.0, it is possible to choose between 4 different predefined partitioning layouts. This guide will show you how to select a partitioning layout in the [OVHcloud Control Panel](https://ovh.com/manager/#/dedicated/configuration) or via the [OVHcloud API](https://api.ovh.com/).
 
 > [!primary]
 >
@@ -20,7 +20,7 @@ OVHcloud installations of ESXi are therefore compliant with the configuration se
 ## Requirements
 
 - A [dedicated server](/links/bare-metal/bare-metal) **ready to be installed/reinstalled** in your OVHcloud account that is compatible with ESXi
-- Access to the [OVHcloud Control Panel](https://ovh.com/manager/#/dedicated/configuration) and/or the [OVHcloud API](https://ca.api.ovh.com/)
+- Access to the [OVHcloud Control Panel](https://ovh.com/manager/#/dedicated/configuration) and/or the [OVHcloud API](https://api.ovh.com/)
 
 > [!alert]
 >
@@ -29,9 +29,9 @@ OVHcloud installations of ESXi are therefore compliant with the configuration se
 
 ## Instructions
 
-ESXi 7.0 introduced a [boot option to configure the size of ESXi system partitions](https://kb.vmware.com/s/article/81166) because the increased size of the system partition could cause issues, especially on systems with small disks. OVHcloud includes this feature in the [OVHcloud Control Panel](https://ovh.com/manager/#/dedicated/configuration) and the [OVHcloud API](https://ca.api.ovh.com/).
+ESXi 7.0 introduced a [boot option to configure the size of ESXi system partitions](https://kb.vmware.com/s/article/81166) because the increased size of the system partition could cause issues, especially on systems with small disks. OVHcloud includes this feature in the [OVHcloud Control Panel](https://ovh.com/manager/#/dedicated/configuration) and the [OVHcloud API](https://api.ovh.com/).
 
-Even with multiple disks available on a server, the ESXi OS installation uses only the first disk of the targeted disk group (see [OVHcloud API and OS Installation - Disk Groups](/pages/bare_metal_cloud/dedicated_servers/api-os-installation#disk-group)). Other disks may be configured afterwards to be used for virtual machines (see [How to add a datastore](/pages/bare_metal_cloud/dedicated_servers/hgrstor2_system_configuration#add-datastore)).
+Even with multiple disks available on a server, the ESXi OS installation uses only the first disk of the targeted disk group (see [OVHcloud API and OS Installation - Disk Groups](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh#disk-group)). Other disks may be configured afterwards to be used for virtual machines (see [How to add a datastore](/pages/bare_metal_cloud/dedicated_servers/hgrstor2_system_configuration#add-datastore)).
 
 There are 4 different values:
 
@@ -53,7 +53,7 @@ As you can see, no datastore is created on the first disk with the `max` partiti
 >
 > Did you know?
 >
-> [VMware on OVHcloud solutions](https://www.ovhcloud.com/en/hosted-private-cloud/vmware/) are based on ESXi with the partitioning layout `small`.
+> [VMware on OVHcloud solutions](https://www.ovhcloud.com/en-gb/hosted-private-cloud/vmware/) are based on ESXi with the partitioning layout `small`.
 >
 
 ### How to select the partitioning scheme
@@ -89,7 +89,7 @@ Then choose `Virtualisation`{.action}, `UNIX`{.action} and select the version of
 > The `Customise the partition configuration`{.action} option is not available, for the above reasons.
 >
 
-Choose the disk group on which you want ESXi to be installed. Note that only the first disk of this group will be used to install the OS. Find more information in [this guide](/pages/bare_metal_cloud/dedicated_servers/api-os-installation#disk-group).
+Choose the disk group on which you want ESXi to be installed. Note that only the first disk of this group will be used to install the OS. Find more information in [this guide](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh#disk-group).
 
 Click `Next`{.action} to continue.
 
@@ -112,16 +112,21 @@ When triggering an OS installation, the customer can optionally provide a `parti
 
 > [!api]
 >
-> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/install/start
+> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/reinstall
 >
 
 Example of payload:
 
 ```json
 {
-    "templateName": "esxi70_64",
-    "partitionSchemeName": "small",
-    "userMetadata": []
+    "operatingSystem": "esxi70_64",
+    "storage": [
+        {
+            "partitioning": {
+                "schemeName": "small"
+            }
+        }
+    ]
 }
 ```
 
@@ -167,7 +172,7 @@ You can use the following API call to get the details for each partition:
 
 [OVHcloud API & OS installation](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
 
-[OVHcloud API & Partitioning](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
+[OVHcloud API and Storage](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
 
 [Managing hardware RAID](/pages/bare_metal_cloud/dedicated_servers/raid_hard)
 

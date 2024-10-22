@@ -1,7 +1,7 @@
 ---
 title: "API OVHcloud et installation d'un OS"
 excerpt: "Découvrez comment l'API OVHcloud vous permet d'installer ou de réinstaller un OS sur votre serveur"
-updated: 2024-10-16
+updated: 2024-10-22
 ---
 
 ## Objectif
@@ -159,86 +159,13 @@ Chaque question a les attributs suivants :
 
 ¹ Si une question obligatoire ne possédant pas de valeur par défaut est laissée sans réponse, alors l'API retournera une erreur.
 
-### Grappes de disques <a name="disk-group"></a>
-
-Certains [serveurs dédiés](/links/bare-metal/bare-metal) possèdent plusieurs grappes ou groupes de disques. Par exemple une grappe avec des disques SATA et une grappe avec des disques SSD. Nous appelons ces types de serveurs des **serveurs hybrides**.
-
-Pour lister les grappes et leurs disques, vous pouvez utiliser l'appel suivant afin de déterminer le groupe de disque sur lequel vous souhaitez effectuer votre installation OS :
-
-> [!api]
->
-> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/specifications/hardware
->
-
-Exemple de retour :
-
-```json
-{
-  "bootMode": "uefi",
-  "defaultHardwareRaidSize": null,
-  "description": "SCALE-7 - AMD Epyc 7763",
-  "expansionCards": null,
-  "threadsPerProcessor": 128,
-  "memorySize": {
-    "unit": "MB",
-    "value": 524288
-  },
-  "defaultHardwareRaidType": null,
-  "diskGroups": [
-    {
-      "defaultHardwareRaidType": null,
-      "numberOfDisks": 2,
-      "diskGroupId": 1,
-      "diskType": "SSD",
-      "defaultHardwareRaidSize": null,
-      "diskSize": {
-        "unit": "GB",
-        "value": 480
-      },
-      "description": "2 X Disk SSD 480 GB, JBOD",
-      "raidController": null
-    },
-    {
-      "defaultHardwareRaidType": null,
-      "numberOfDisks": 2,
-      "diskGroupId": 2,
-      "diskType": "NVME",
-      "defaultHardwareRaidSize": null,
-      "diskSize": {
-        "unit": "GB",
-        "value": 1920
-      },
-      "raidController": null,
-      "description": "2 X Disk NVME 1920 GB, JBOD"
-    }
-  ],
-  "processorArchitecture": "x86_64",
-  "coresPerProcessor": 64,
-  "processorName": "Epyc7763",
-  "formFactor": "1u",
-  "motherboard": "S8036-M",
-  "numberOfProcessors": 1,
-  "usbKeys": null
-}
-```
-
-Dans cet exemple, vous avez 2 grappes :
-
-- la première (diskGroupId=1) contient 2 disques de 480 Go chacun,
-- la seconde (diskGroupId=2) contient 2 disques de 1,9 To chacun.
-
-> [!primary]
->
-> Par défaut, le système d’exploitation est installé sur le diskGroupId 1.
->
-
 ### Lancer et suivre la demande d'installation <a name="install-task"></a>
 
 Lorsque vous avez rassemblé toutes les informations nécessaires, vous pouvez lancer l'installation de l'OS, en utilisant l'appel suivant :
 
 > [!api]
 >
-> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/install/start
+> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/reinstall
 >
 
 Avec les paramètres suivants :
@@ -246,15 +173,16 @@ Avec les paramètres suivants :
 |Paramètre|Valeur|Requis|
 |---|---|---|
 |serviceName|Le nom de votre serveur|✅|
-|templateName|Le nom de l'OS à installer|✅|
-|diskGroupId|L'id de la grappe de disques sur laquelle l'OS sera installé|❌|
-|customHostname|Nom d'hôte personnalisé|❌|
-|userMetadata|Les réponses aux questions spécifiques de l'OS|❌|
+|operatingSystem|Le nom de l'OS à installer|✅|
+|customizations|Personnalisation de la réinstallation OS|⚠️¹|
+|storage|Configuration du stockage de la réinstallation OS|❌|
+|properties|Propriétés arbitraires à passer au datasource config drive de cloud-init|❌|
 
-`userMetadata`{.action} contient une liste de clés/valeurs donnant les réponses aux questions :
+¹ Spécifique au système d'exploitation, certaines personnalisations peuvent être requises dans certains cas.
 
-- La clé doit contenir le nom (`name`{.action}) de la question.
-- La valeur doit contenir la réponse à la question, dans le format qui correspond au `type`{.action} requis.
+`customizations` contient une hash avec les réponses aux questions spécifiques à l'OS : la clé de la hash doit contenir le nom (`name`) de la question et sa valeur doit contenir la réponse à la question, dans le format qui correspond au `type` requis.
+
+`storage` contient la configuration liée aux disques & RAID matériels, partitions, RAID logiciels, LVM, ZFS, etc. Voir [API OVHcloud et Stockage](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh) pour plus de détails.
 
 #### Exemple d'un payload pour installer Linux
 
@@ -262,20 +190,11 @@ Ce payload permet d'installer Debian 12 (Bookworm) avec une clé SSH publique et
 
 ```json
 {
-  "details": {
-    "customHostname": "mon-tux"
-  },
-  "templateName": "debian12_64",
-  "userMetadata": [
-    {
-      "key": "sshKey",
-      "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQC9xPpdqP3sx2H+gcBm65tJEaUbuifQ1uGkgrWtNY0PRKNNPdy+3yoVOtxk6Vjo4YZ0EU/JhmQfnrK7X7Q5vhqYxmozi0LiTRt0BxgqHJ+4hWTWMIOgr+C2jLx7ZsCReRk+fy5AHr6h0PHQEuXVLXeUy/TDyuY2JPtUZ5jcqvLYgQ== my-nuclear-power-plant"
-    },
-    {
-      "key": "postInstallationScript",
-      "value": "IyEvYmluL2Jhc2gKZWNobyAiY291Y291IHBvc3RJbnN0YWxsYXRpb25TY3JpcHQiID4gL29wdC9jb3Vjb3UKY2F0IC9ldGMvbWFjaGluZS1pZCAgPj4gL29wdC9jb3Vjb3UKZGF0ZSAiKyVZLSVtLSVkICVIOiVNOiVTIiAtLXV0YyA+PiAvb3B0L2NvdWNvdQo="
-    }
-  ]
+  "operatingSystem": "debian12_64",
+  "customizations": {
+    "sshKey": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQC9xPpdqP3sx2H+gcBm65tJEaUbuifQ1uGkgrWtNY0PRKNNPdy+3yoVOtxk6Vjo4YZ0EU/JhmQfnrK7X7Q5vhqYxmozi0LiTRt0BxgqHJ+4hWTWMIOgr+C2jLx7ZsCReRk+fy5AHr6h0PHQEuXVLXeUy/TDyuY2JPtUZ5jcqvLYgQ== my-nuclear-power-plant",
+    "postInstallationScript": "IyEvYmluL2Jhc2gKZWNobyAiY291Y291IHBvc3RJbnN0YWxsYXRpb25TY3JpcHQiID4gL29wdC9jb3Vjb3UKY2F0IC9ldGMvbWFjaGluZS1pZCAgPj4gL29wdC9jb3Vjb3UKZGF0ZSAiKyVZLSVtLSVkICVIOiVNOiVTIiAtLXV0YyA+PiAvb3B0L2NvdWNvdQo="
+  }
 }
 ```
 
@@ -305,20 +224,11 @@ Ce payload permet d'installer Windows Server 2022 Standard (Core) en français a
 
 ```json
 {
-  "details": {
-    "customHostname": "ma-fenetre"
-  },
-  "templateName": "win2022core-std_64",
-  "userMetadata": [
-    {
-      "key": "language",
-      "value": "fr-fr"
-    },
-    {
-      "key": "postInstallationScript",
-      "value": "ImNvdWNvdSBwb3N0SW5zdGFsbGF0aW9uU2NyaXB0UG93ZXJTaGVsbCIgfCBPdXQtRmlsZSAtRmlsZVBhdGggImM6XG92aHVwZFxzY3JpcHRcY291Y291LnR4dCIKKEdldC1JdGVtUHJvcGVydHkgLUxpdGVyYWxQYXRoICJSZWdpc3RyeTo6SEtMTVxTT0ZUV0FSRVxNaWNyb3NvZnRcQ3J5cHRvZ3JhcGh5IiAtTmFtZSAiTWFjaGluZUd1aWQiKS5NYWNoaW5lR3VpZCB8IE91dC1GaWxlIC1GaWxlUGF0aCAiYzpcb3ZodXBkXHNjcmlwdFxjb3Vjb3UudHh0IiAtQXBwZW5kCihHZXQtRGF0ZSkuVG9Vbml2ZXJzYWxUaW1lKCkuVG9TdHJpbmcoInl5eXktTU0tZGQgSEg6bW06c3MiKSB8IE91dC1GaWxlIC1GaWxlUGF0aCAiYzpcb3ZodXBkXHNjcmlwdFxjb3Vjb3UudHh0IiAtQXBwZW5kCg=="
-    }
-  ]
+  "operatingSystem": "win2022core-std_64",
+  "customizations": {
+    "language": "fr-fr",
+    "postInstallationScript": "ImNvdWNvdSBwb3N0SW5zdGFsbGF0aW9uU2NyaXB0UG93ZXJTaGVsbCIgfCBPdXQtRmlsZSAtRmlsZVBhdGggImM6XG92aHVwZFxzY3JpcHRcY291Y291LnR4dCIKKEdldC1JdGVtUHJvcGVydHkgLUxpdGVyYWxQYXRoICJSZWdpc3RyeTo6SEtMTVxTT0ZUV0FSRVxNaWNyb3NvZnRcQ3J5cHRvZ3JhcGh5IiAtTmFtZSAiTWFjaGluZUd1aWQiKS5NYWNoaW5lR3VpZCB8IE91dC1GaWxlIC1GaWxlUGF0aCAiYzpcb3ZodXBkXHNjcmlwdFxjb3Vjb3UudHh0IiAtQXBwZW5kCihHZXQtRGF0ZSkuVG9Vbml2ZXJzYWxUaW1lKCkuVG9TdHJpbmcoInl5eXktTU0tZGQgSEg6bW06c3MiKSB8IE91dC1GaWxlIC1GaWxlUGF0aCAiYzpcb3ZodXBkXHNjcmlwdFxjb3Vjb3UudHh0IiAtQXBwZW5kCg=="
+  }
 }
 ```
 
@@ -340,7 +250,7 @@ Comme vous pouvez le constater, le script PowerShell pour Windows est similaire 
 
 > [!primary]
 >
-> Pour les OS Windows, vous pouvez fournir des scripts PowerShell ou batch. Si vous souhaitez fournir un script batch, vous devez le préciser en spécifiant la valeur `cmd` à la clé `postInstallationScriptExtension` dans le payload `userMetadata`.
+> Pour les OS Windows, vous pouvez fournir des scripts PowerShell ou batch. Si vous souhaitez fournir un script batch, vous devez le préciser en spécifiant la valeur `cmd` à la clé `postInstallationScriptExtension` dans le payload `customizations`.
 >
 
 Lors de l'exécution du script de post-installation Windows, les fichiers suivants persistent :
@@ -358,17 +268,11 @@ Lors de l'exécution du script de post-installation Windows, les fichiers suivan
 ```json
 {
     "taskId": 123456789,
-    "ticketReference": null,
-    "lastUpdate": "2024-01-26T17:57:10+01:00",
-    "needSchedule": false,
-    "startDate": "2024-01-26T17:57:10+01:00",
     "status": "init",
+    "startDate": "2024-01-26T17:57:10+01:00",
     "doneDate": null,
-    "tags": null,
-    "comment": "Start dedicated server installation",
-    "plannedInterventionId": null,
-    "note": null,
-    "function": "reinstallServer"
+    "function": "reinstallServer",
+    "comment": "Start bare metal OS installation"
 }
 ```
 
@@ -390,12 +294,13 @@ Sinon vous pouvez aussi avoir un état détaillé de chaque étape de l'installa
 
 Une valeur de bootloader efi est mise par défaut lorsque vous installez à partir d'un template OVHcloud, mais vous avez la possibilité de la modifier.
 
-Vous pouvez récupérer le chemin par défaut à l'aide de cet appel :
+Vous pouvez récupérer le chemin par défaut à l'aide de cet appel : 
 
 > [!api]
 >
 > @api {v1} /dedicated/server GET  /dedicated/server/{serviceName}
 >
+
 Et vous pouvez le modifier grace à l'appel suivant :
 
 > [!api]
@@ -413,7 +318,7 @@ Et vous pouvez le modifier grace à l'appel suivant :
 
 [Bring Your Own Linux (BYOLinux)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-linux)
 
-[API OVHcloud & Partitionnement](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
+[API OVHcloud et Stockage](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
 
 [Gestion du RAID logiciel](/pages/bare_metal_cloud/dedicated_servers/raid_soft)
 

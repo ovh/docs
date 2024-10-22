@@ -383,6 +383,8 @@ mount /dev/md4 /home
 
 [Substituir um disco a quente num servidor com RAID por software](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_soft){.external}
 
+[OVHcloud API and Storage](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
+
 [RAID por hardware (EN)](/pages/bare_metal_cloud/dedicated_servers/raid_hard){.external}
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
