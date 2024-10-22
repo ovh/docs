@@ -1,7 +1,7 @@
 ---
 title: "KMS for VMware on OVHcloud - VM encryption use case scenarios"
-excerpt: "Discover the solutions available to you for encrypting VMs with or without OKMS in your managed OVHcloud Hosted Private Cloud VMware vSphere"
-updated: 2024-10-11
+excerpt: "Discover the solutions available to you for encrypting VMs within the OVHcloud univers"
+updated: 2024-10-22
 ---
 
 <style>
@@ -20,7 +20,7 @@ content:'\25BC';
 
 > [!primary]
 >
-> This feature is available in beta version.
+> This feature is available in beta version. This guide can evolve and be updated in the future with the advances of our teams in charge of this product.
 >
 
 ## Objective
@@ -82,7 +82,9 @@ This architecture is redundant and thus allows you to suffer breakdowns without 
 
 #### KMIP
 
-KMIP provides a service compatible with vCenter and host-based encryption within VMware vSphere on OVHcloud.
+The **KMIP** protocol (**K**ey **M**management **I**interoperability **P**protocol) is an extensible communication protocol that defines message formats for manipulating cryptographic keys on a key management server. It provides a service compatible with vCenter and host-based encryption within VMware vSphere on OVHcloud.
+
+For more information, please refer to our guide on [Usage of KMIP protocol](/pages/manage_and_operate/kms/kms-kmip) .
 
 ### Step 2 - Overview of the choices to encrypt virtual machines
 
