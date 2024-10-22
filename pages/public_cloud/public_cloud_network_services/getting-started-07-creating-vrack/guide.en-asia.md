@@ -1,7 +1,7 @@
 ---
 title: 'Configuring vRack for Public Cloud'
 excerpt: 'Find out how to set up vRack for your Public Cloud instances'
-updated: 2024-10-14
+updated: 2024-10-22
 ---
 
 ## Objective
@@ -233,7 +233,7 @@ There are two possible scenarios:
 - The instance to be integrated does not exist yet.
 - An existing instance needs to be added to the vRack.
 
-#### **In case of a new instance**
+**In case of a new instance**
 
 #### In the OVHcloud Control Panel
 
@@ -411,7 +411,7 @@ nova list
 +--------------------------------------+--------------------+--------+------------+-------------+--------------------------------------------------+
 ```
 
-#### **In case of an existing instance**
+**In case of an existing instance**
 
 The OVHcloud Control Panel allows you to attach an instance to one or more private networks but does not offer advanced network interface configuration. If you want to customise further, you will need to manage them either through the OVHcloud APIv6, through the OpenStack APIs or via Horizon.
 
@@ -424,7 +424,7 @@ For example, if you have a public interface *eth0*, you will add the interface *
 > You will therefore need to set a static IP or configure DHCP, depending on your infrastructure.
 >
 
-##### **In the OVHcloud Control Panel**
+#### In the OVHcloud Control Panel
 
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
@@ -440,11 +440,11 @@ In the popup window that appears, select the private network(s) to attach to you
 
 ![attach network](images/vrack9.png){.thumbnail}
 
-##### **Managing network interfaces with the OVHcloud APIv6**
+#### With the OVHcloud APIv6
 
 Please refer to [this section](/pages/public_cloud/public_cloud_network_services/getting-started-08-creating-vrack-with-api#in-case-of-an-existing-instance) of the corresponding guide.
 
-##### **Managing network interfaces with OpenStack Horizon**
+#### With OpenStack Horizon
 
 Log in to the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/){.external} as mentioned [above](./#horizon).
 
@@ -456,7 +456,7 @@ Select `Compute` and then `Instances` from the menu.
 
 ![Horizon compute instances](images/horizon2.png){.thumbnail}
 
-#### Adding a private interface
+**Adding a private interface**
 
 To add an interface, click on the arrow in the "Actions" column to access the possible actions on the instance. Select `Attach Interface`{.action}.
 
@@ -472,7 +472,7 @@ Select your interface and confirm.
 ><br>It is your responsibility to correctly configure the interface through DHCP or by using the proper IP addresses through a static IP configuration.
 >
 
-#### Removing a private interface
+**Removing a private interface**
 
 > [!warning]
 > Deleting an interface is permanent.
@@ -489,7 +489,7 @@ Select your interface and confirm.
 
 ![Horizon detach interface](images/horizon6.png){.thumbnail}
 
-##### **Managing network interfaces with the OpenStack API**
+#### With the OpenStack API
 
 To use OpenStack APIs, if you have not already done so, consider preparing your work environment as described in the [first part of this guide](./#openstack-api).
 
@@ -651,4 +651,4 @@ nova interface-detach 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx 12345678-abcd-ef01-23
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
