@@ -4,10 +4,6 @@ excerpt: "Descubra cómo activar o regenerar un certificado SSL gratuito Let's E
 updated: 2024-10-22
 ---
 
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
->
-
 ## Objetivo
 
 Los certificados Secure Socket Layer (SSL) permiten cifrar los intercambios realizados desde o hacia su sitio web. Esto evita que una persona o robot malintencionado venga a "escuchar" claramente las peticiones enviadas o enviadas a su sitio web.
@@ -129,7 +125,7 @@ Si todo ha terminado, debe encontrar un valor equivalente a este que aparece deb
 
 ![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/tab-ssl-le.png){.thumbnail}
 
-Su certificado SSL Let's Encrypt ya está instalado y activo. Ya puede utilizarlo con su (los) nuevo(s) sitio(s) web pasando, por ejemplo, su (los) nuevo(s) [web en HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website).
+Su certificado SSL Let's Encrypt ya está instalado y activo. Ya puede utilizarlo con su (los) nuevo(s) sitio(s) web pasando, por ejemplo, su (los) nuevo(s) [sitio(s) web en HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website).
 
 ### Caso particular: Regenerar el certificado SSL Let's Encrypt en un alojamiento web <a name="regenerate-ssl"></a>
 
