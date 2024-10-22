@@ -99,7 +99,7 @@ This step offers several configuration options. For the purpose of this guide, w
 >> For Public Cloud, you set a unique VLAN ID per private network. It is not possible to set the same VLAN ID on two different private networks.
 >>
 >> [!primary] 
-> Unlike dedicated servers (when using a VLAN ID other than 0), there is no need to include the VLAN ID directly in the network configuration file of the Public Cloud instance once it is set in the OVHcloud Control Panel.
+>> Unlike dedicated servers (when using a VLAN ID other than 0), there is no need to include the VLAN ID directly in the network configuration file of the Public Cloud instance once it is set in the OVHcloud Control Panel.
 >>
 >> An example: If your instance private network is tagged with VLAN 2, this VLAN ID should be included in the network configuration of the dedicated server only. For more information consult the following guide: [Create multiple VLANs in the vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack).<br>
 >>
