@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - Network concepts and best practices"
 excerpt: "Discover the powerful networking capabilities of VMware Cloud Director on OVHcloud with this comprehensive guide (key concepts and features)"
-updated: 2024-10-21
+updated: 2024-10-22
 ---
 
 <style>
@@ -128,20 +128,23 @@ The types of network supported within an organization’s vDC:
 
 > [!tabs]
 > Direct
-> > - An organization’s vDC network that has a direct connection to one of the external networks that are provisioned by the system administrator and rely on vSphere resources.
-> > - Direct networks are supported for organization VDCs that rely on NSX. Direct networks are accessible by multiple organization VDCs. Virtual machines belonging to different organization VDCs can connect to this network and see the traffic.
-> > - A direct network provides direct Layer 2 connectivity to virtual machines outside of the organization VDC.
-> > - Virtual machines outside of this organization VDC can connect directly to the virtual machines inside the organization VDC.
-> > - **Note**: Only OVHcloud can add a direct organization VDC network.
+>>
+>> - An organization’s vDC network that has a direct connection to one of the external networks that are provisioned by the system administrator and rely on vSphere resources.
+>> - Direct networks are supported for organization VDCs that rely on NSX. Direct networks are accessible by multiple organization VDCs. Virtual machines belonging to different organization VDCs can connect to this network and see the traffic.
+>> - A direct network provides direct Layer 2 connectivity to virtual machines outside of the organization VDC.
+>> - Virtual machines outside of this organization VDC can connect directly to the virtual machines inside the organization VDC.
+>> - **Note**: Only OVHcloud can add a direct organization VDC network.
 > Isolated (internal)
-> > - Isolated networks can only be accessed by the same organization vDC.
-> > - Only virtual machines located in this organization vDC can connect to the internal organization VDC network and see the traffic for it.
-> > - Isolated networks are supported for organizational VDCs that rely on NSX or NSX Data Center for vSphere.  The isolated organization VDC network provides an organization VDC with an isolated private network to which multiple virtual machines and vApp can connect. This network does not provide connectivity to virtual machines outside of the organization VDC. Machines outside the organization VDC cannot connect to machines inside the organization VDC.
+>>
+>> - Isolated networks can only be accessed by the same organization vDC.
+>> - Only virtual machines located in this organization vDC can connect to the internal organization VDC network and see the traffic for it.
+>> - Isolated networks are supported for organizational VDCs that rely on NSX or NSX Data Center for vSphere. The isolated organization VDC network provides an organization VDC with an isolated private network to which multiple virtual machines and vApp can connect. This network does not provide connectivity to virtual machines outside of the organization VDC. Machines outside the organization VDC cannot connect to machines inside the organization VDC.
 > Routed
-> > - Routed networks can only be accessed by the same organization vDC. Only virtual machines inside this organization vDC can connect to this network.
-> > - This network also provides controlled access to an external network. As a system administrator or organization administrator, you can configure Network Address Translation (NAT), Firewall, and VPN settings to make certain virtual machines accessible from the external network.
-> > - Routed networks are supported for organizational VDCs that rely on NSX or NSX Data Center for vSphere.
-> >
+>>
+>> - Routed networks can only be accessed by the same organization vDC. Only virtual machines inside this organization vDC can connect to this network.
+>> - This network also provides controlled access to an external network. As a system administrator or organization administrator, you can configure Network Address Translation (NAT), Firewall, and VPN settings to make certain virtual machines accessible from the external network.
+>> - Routed networks are supported for organizational VDCs that rely on NSX or NSX Data Center for vSphere.
+>>
 
 Organizational virtual datacentre (vDC) networks enable **vApps**/VMs to communicate with each other or with networks external to the organization.
 
@@ -310,7 +313,7 @@ You can now follow the steps in the following guide: [“Guide 2 - VMware Cloud 
 
 **Useful network concept**
 
-To strengthen your network knowledge within the OVHcloud universe, please visit: <https://www.ovhcloud.com/en-gb/network/>.
+To strengthen your network knowledge within the OVHcloud universe, please visit [our dedicated page](/links/network/network).
 
 If you require training or technical support to implement our solutions, please contact your sales representative or click [this link](/links/professional-services) to get a quote and request a custom analysis of your project from our Professional Services team experts.
 

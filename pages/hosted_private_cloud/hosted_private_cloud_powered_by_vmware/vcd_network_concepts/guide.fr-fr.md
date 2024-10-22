@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - Concepts réseau et bonnes pratiques"
 excerpt: "Découvrez les puissantes capacités de mise en réseau de VMware Cloud Director on OVHcloud avec ce guide complet sur les concepts et fonctionnalités clés"
-updated: 2024-10-21
+updated: 2024-10-22
 ---
 
 <style>
@@ -121,21 +121,24 @@ Les types de réseau supportés au sein d'un vDC d'organisation :
 
 > [!tabs]
 > Direct
-> > - Un réseau vDC d'organisation disposant d'une connexion directe à l'un des réseaux externes qui sont provisionnés par l'administrateur système et qui reposent sur des ressources vSphere. 
-> > - Les réseaux directs sont pris en charge pour les VDC d'organisation qui reposent sur NSX. Les réseaux directs sont accessibles par plusieurs VDC d'organisation. Des machines virtuelles appartenant à différents VDC d'organisation peuvent se connecter à ce réseau et en voir le trafic. Un réseau direct fournit une connectivité directe de couche 2 aux machines virtuelles situées à l'extérieur du VDC d'organisation. 
-> > - Les machines virtuelles situées à l'extérieur de ce VDC d'organisation peuvent se connecter directement aux machines virtuelles dans le VDC d'organisation. 
-> > - **Note** : Seul OVHcloud peut ajouter un réseau VDC d'organisation direct.
+>>
+>> - Un réseau vDC d'organisation disposant d'une connexion directe à l'un des réseaux externes qui sont provisionnés par l'administrateur système et qui reposent sur des ressources vSphere.
+>> - Les réseaux directs sont pris en charge pour les VDC d'organisation qui reposent sur NSX. Les réseaux directs sont accessibles par plusieurs VDC d'organisation. Des machines virtuelles appartenant à différents VDC d'organisation peuvent se connecter à ce réseau et en voir le trafic. Un réseau direct fournit une connectivité directe de couche 2 aux machines virtuelles situées à l'extérieur du VDC d'organisation.
+>> - Les machines virtuelles situées à l'extérieur de ce VDC d'organisation peuvent se connecter directement aux machines virtuelles dans le VDC d'organisation. 
+>> - **Note** : Seul OVHcloud peut ajouter un réseau VDC d'organisation direct.
 > Isolé (interne)
-> > - Les réseaux isolés sont accéssibles uniquement par le même vDC d'organisation. 
-> > - Seules les machines virtuelles situées dans ce vDC d'organisation peuvent se connecter au réseau du VDC d'organisation interne et en voir le trafic. 
-> > - Les réseaux isolés sont pris en charge pour les VDC d'organisation qui reposent sur NSX ou sur NSX Data Center for vSphere. Le réseau du VDC d'organisation isolé fournit à un VDC d'organisation un réseau privé isolé auquel plusieurs machines virtuelles et vApp peuvent se connecter. Ce réseau ne fournit aucune connectivité aux machines virtuelles situées à l'extérieur du VDC d'organisation. 
-> > - Les machines situées à l'extérieur du VDC d'organisation ne peuvent pas se connecter aux machines situées à l'intérieur du VDC d'organisation.
+>>
+>> - Les réseaux isolés sont accessibles uniquement par le même vDC d'organisation.
+>> - Seules les machines virtuelles situées dans ce vDC d'organisation peuvent se connecter au réseau du VDC d'organisation interne et en voir le trafic.
+>> - Les réseaux isolés sont pris en charge pour les VDC d'organisation qui reposent sur NSX ou sur NSX Data Center for vSphere. Le réseau du VDC d'organisation isolé fournit à un VDC d'organisation un réseau privé isolé auquel plusieurs machines virtuelles et vApp peuvent se connecter. Ce réseau ne fournit aucune connectivité aux machines virtuelles situées à l'extérieur du VDC d'organisation.
+>> - Les machines situées à l'extérieur du VDC d'organisation ne peuvent pas se connecter aux machines situées à l'intérieur du VDC d'organisation.
 > Routé
-> > - Les réseaux routés sont accéssibles seulement avec le même vDC d'organisation. 
-> > - Seules les machines virtuelles situées à l'intérieur de ce vDC d'organisation peuvent se connecter à ce réseau. Ce réseau fournit également un accès contrôlé à un réseau externe. 
-> > - En tant qu'administrateur système ou administrateur d'organisation, vous pouvez configurer des paramètres de traduction d'adresse réseau (NAT), de pare-feu et VPN pour rendre certaines machines virtuelles accéssibles depuis le réseau externe. 
-> > - Les réseaux routés sont pris en charge pour les VDC d'organisation qui reposent sur NSX ou sur NSX Data Center for vSphere.
-> >
+>>
+>> - Les réseaux routés sont accessibles seulement avec le même vDC d'organisation.
+>> - Seules les machines virtuelles situées à l'intérieur de ce vDC d'organisation peuvent se connecter à ce réseau. Ce réseau fournit également un accès contrôlé à un réseau externe.
+>> - En tant qu'administrateur système ou administrateur d'organisation, vous pouvez configurer des paramètres de traduction d'adresse réseau (NAT), de pare-feu et VPN pour rendre certaines machines virtuelles accessibles depuis le réseau externe.
+>> - Les réseaux routés sont pris en charge pour les VDC d'organisation qui reposent sur NSX ou sur NSX Data Center for vSphere.
+>>
 
 Les réseaux de centres de données virtuels (vDC) d'organisation permettent aux **vApp/VM** de communiquer entre elles ou avec des réseaux externes à l'organisation.
 
@@ -303,7 +306,7 @@ Vous pouvez maintenant suivre les étapes du guide suivant : [« Guide 2 - VMwar
 
 **Notions réseau OVHcloud utiles**
 
-Pour renforcer vos connaissances réseau au sein de l'univers OVHcloud consultez la page : <https://www.ovhcloud.com/fr/network/>.
+Pour renforcer vos connaissances réseau au sein de l'univers OVHcloud consultez [notre page dédiée](/links/network/network).
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
