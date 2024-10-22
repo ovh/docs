@@ -72,7 +72,7 @@ This can be configured in step 2.
 
 ![configure network](images/configure_private_network.png){.thumbnail}
 
-This step offers several configuration options, for the purpose of this guide, we will focus on the necessary ones. Click on the tabs below to view the details:
+This step offers several configuration options. For the purpose of this guide, we will focus on the necessary ones. Click on the tabs below to view the details:
 
 > [!tabs]
 > **Private Network Name**
