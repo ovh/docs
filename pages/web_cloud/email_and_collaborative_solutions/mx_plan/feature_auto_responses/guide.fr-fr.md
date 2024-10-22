@@ -17,7 +17,7 @@ Lorsque vous êtes absent et que vous n'êtes pas en mesure de consulter votre a
 
 ## En pratique
 
-> [!primary]
+> [!warning]
 >
 > Si votre adresse e-mail est sur une offre [**Exchange**](/links/web/emails-hosted-exchange), [**Email Pro**](/links/web/email-pro) ou qu'il n'y a pas de section `Gestion des répondeurs`{.action} dans votre MX Plan, vous devrez alors créer une réponse automatique depuis votre webmail en vous aidant de la documentation [« Mettre en place une réponse automatique depuis l’interface OWA »](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/owa_automatic_replies).
 
