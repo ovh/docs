@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - Concepts réseau et bonnes pratiques"
 excerpt: "Découvrez les puissantes capacités de mise en réseau de VMware Cloud Director on OVHcloud avec ce guide complet sur les concepts et fonctionnalités clés"
-updated: 2024-08-23
+updated: 2024-10-07
 ---
 
 <style>
@@ -254,6 +254,15 @@ D'un point de vue général, les seules limitations que vous pouvez retrouver au
 Un peu moins de granularité est offerte en matière de configuration bas niveau.
 
 Bien sûr, cela peut avoir un impact sur les fonctionnalités avancées en matière de réseau, même si ces fonctionnalités peuvent être incluses dans les phases futures.
+
+| Offres                                      | Standard | Advanced (NSX) | Premium (NSX+vSAN) | Comments                                                                                                                                                                                          |
+|:--------------------------------------------|:--------:|:--------------:|:------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Network cards                               |    10    |       10       |         10         | - Network card that can be added when starting a VM (per VM) in the VCD control panel                                                                                                             |
+| Numbers of Edge Gateway (per Org)           |    32    |       32       |         32         | - Number of possible Edge Gateways  (per Org limitations)                                                                                                                                         |
+| External Networks                           |   none   |     8 000      |       8 000        | - External networks connecting organization VDCs to physical networks. Backed by VMware vSphere port group, VLAN, or distributed virtual switch (dvSwitch) objects or backed by NSX-T T0 routers  |
+| IP Spaces                                   | 100 000  |    100 000     |      100 000       | - The maximum number of IP Spaces.                                                                                                                                                                |
+| Public IP                                   |    2     |       2        |         2          |                                                                                                                                                                                                   |
+| Cross VDC Networking Org VDCs per VDC Group |   none   |       16       |         16         | - Org VDC networks stretched to all VDCs in the same VDC Group                                                                                                                                    |
 
 **Limitations VPN IPsec**
 
