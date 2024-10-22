@@ -1,7 +1,7 @@
 ---
 title: "Datamotive - Introduction"
 excerpt: "Découvrez une présentation de la solution de multi-cloud Datamotive, pour une hybridation de Hosted Private Cloud - VMware on OVHcloud avec d'autres plateformes"
-updated: 2024-10-21
+updated: 2024-10-22
 ---
 
 ## Objectif

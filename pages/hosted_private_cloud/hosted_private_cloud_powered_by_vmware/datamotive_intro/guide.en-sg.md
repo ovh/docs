@@ -1,7 +1,7 @@
 ---
 title: "Datamotive - Introduction"
 excerpt: "Discover an overview of the Datamotive multi-cloud solution, for a Hosted Private Cloud - VMware on OVHcloud hybridization with other platforms"
-updated: 2024-10-21
+updated: 2024-10-22
 ---
 
 ## Objective
