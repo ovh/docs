@@ -88,9 +88,9 @@ Prima di procedere con questa configurazione, assicurati che lo [step precedente
 >
 > Per maggiori informazioni, consulta le nostre guide:
 >
-> - [Ospitare più siti su uno stesso hosting](/pages/web_cloud/web_hosting/multisiti_configurare_multisito);
-> - [Elenco degli indirizzi IP di cluster e hosting Web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP);
-> - [Modificare una zona DNS in OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
+> - [Ospitare più siti su uno stesso hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite);
+> - [Lista degli indirizzi IP di cluster e hosting Web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP);
+> - [Modificare una zona DNS di OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
 Per attivare il certificato SSL Let's Encrypt, esegui queste operazioni:
 
@@ -99,12 +99,12 @@ Per attivare il certificato SSL Let's Encrypt, esegui queste operazioni:
 3. Nella colonna di sinistra, clicca sul menu a tendina `Hosting`{.action}.
 4. Seleziona il tuo hosting Web.
 5. Nella nuova pagina, rimani nella scheda `Informazioni generali`{.action}.
-6. Posizionati nel riquadro intitolato `Configuration`.
+6. Posizionati nel riquadro intitolato `Configurazione`.
 7. A destra della voce `Certificato SSL`, clicca sul pulsante `...`{.action} e poi su `Ordina un certificato SSL`{.action}.
 
 ![Order an SSL certificate](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-an-ssl-certificate.png){.thumbnail}
 
-Nella nuova finestra, seleziona `Certificato gratuito (Let's Encrypt)`{.action} tra le opzioni disponibili e clicca su `Avanti`{.action} per confermare la richiesta di attivazione dell’SSL.
+Nella nuova finestra, seleziona `Certificato gratuito (Let's Encrypt)`{.action} tra le opzioni disponibili e clicca su `Continua`{.action} per confermare la richiesta di attivazione dell’SSL.
 
 ![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-an-ssl-certificate-step-1-le.png){.thumbnail}
 
@@ -119,13 +119,13 @@ Per verificare che l'installazione sia stata completata, eseguire le operazioni 
 3. Nella colonna di sinistra, clicca sul menu a tendina `Hosting`{.action}.
 4. Seleziona il tuo hosting Web.
 5. Nella nuova pagina, rimani nella scheda `Informazioni generali`{.action}.
-6. Posizionati nel riquadro intitolato `Configuration`.
+6. Posizionati nel riquadro intitolato `Configurazione`.
 
-Se tutto è terminato, sotto la voce `Certificato SSL` trovi un valore equivalente: `Sì - LETSENCRYPT - DV`.
+Se tutto è terminato, sotto la voce `Certificato SSL` è necessario trovare un valore equivalente: `Sì - LETSENCRYPT - DV`.
 
 ![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/tab-ssl-le.png){.thumbnail}
 
-A questo punto il tuo certificato SSL personalizzato è installato ed è attivo. Da questo momento è possibile utilizzarlo con il proprio sito o i propri siti Web, passando ad esempio il proprio o i propri [siti Web in HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website).
+Il tuo certificato SSL Let's Encrypt è installato e attivo. Da questo momento è possibile utilizzarlo con i nuovi siti Web, passando, ad esempio, i nuovi [siti Web in HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website).
 
 ### Caso particolare: Rigenerare il certificato SSL Let's Encrypt su un hosting Web <a name="regenerate-ssl"></a>
 
@@ -141,7 +141,7 @@ A tale scopo, eseguire **nell'ordine** le operazioni seguenti:
 4. Nella colonna di sinistra, clicca sul menu a tendina `Hosting`{.action}.
 5. Seleziona il tuo hosting Web.
 6. Nella nuova pagina, rimani nella scheda `Informazioni generali`{.action}.
-7. Posizionati nel riquadro intitolato `Configuration`.
+7. Posizionati nel riquadro intitolato `Configurazione`.
 8. A destra della voce `Certificato SSL`, clicca sul pulsante `...`{.action} e poi su `Rigenera il certificato SSL`{.action}.
 
 ![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/regenerate-ssl-certificate.png){.thumbnail}
@@ -154,9 +154,9 @@ Questa operazione potrebbe richiedere qualche ora.
 >
 > Let's Encrypt, l'autorità che fornisce il certificato SSL, [limita a cinque il numero di rigenerazioni possibili alla settimana](https://letsencrypt.org/docs/rate-limits/){.external}. Pertanto, prestare attenzione alle diverse rigenerazioni che si possono eseguire a breve termine in modo da non essere temporaneamente bloccati.
 
-![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ssl-rigeneration.png){.thumbnail}
+![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ssl-regeneration.png){.thumbnail}
 
-Il tuo certificato SSL personalizzato è stato rigenerato ed è attivo. Da questo momento è possibile utilizzarlo con i nuovi siti Web, passando, ad esempio, i nuovi [siti Web in HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website).
+Il tuo certificato SSL Let's Encrypt è stato rigenerato ed è attivo. Da questo momento è possibile utilizzarlo con i nuovi siti Web, passando, ad esempio, i nuovi [siti Web in HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website).
 
 ## Per saperne di più
 
@@ -164,10 +164,10 @@ Il tuo certificato SSL personalizzato è stato rigenerato ed è attivo. Da quest
 
 [Hosting Web - Modificare il proprio sito Web in HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website).
 
-[Errori comuni associati alla protezione del sito Web con SSL](/pages/web_cloud/web_hosting/ssl_avoid_common_pitfalls_of_making_website_secure).
-
-Per prestazioni specializzate (referenziazione, sviluppo, etc.), contatta i [partner OVHcloud](/links/partner).
-
-Per usufruire di un'assistenza per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [offerte di supporto](/link/supporto).
-
+[Errori comuni associati alla protezione del sito Web con il certificato SSL](/pages/web_cloud/web_hosting/ssl_avoid_common_pitfalls_of_making_website_secure).
+ 
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](/links/partner).
+ 
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](/links/support).
+ 
 Contatta la nostra [Community di utenti](/links/community).

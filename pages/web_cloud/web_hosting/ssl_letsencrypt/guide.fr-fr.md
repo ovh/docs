@@ -125,7 +125,7 @@ Si tout est terminé, vous devez retrouver, en dessous de la mention `Certificat
 
 ![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/tab-ssl-le.png){.thumbnail}
 
-Votre certificat SSL personnalisé est désormais installé et actif. Vous pouvez dès à présent l'utiliser avec votre (vos) site(s) web en passant, par exemple, votre (vos) [site(s) web en HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website).
+Votre certificat SSL Let's Encrypt est désormais installé et actif. Vous pouvez dès à présent l'utiliser avec votre (vos) site(s) web en passant, par exemple, votre (vos) [site(s) web en HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website).
 
 ### Cas particulier : Regénérer le certificat SSL Let's Encrypt sur un hébergement web <a name="regenerate-ssl"></a>
 
@@ -156,7 +156,7 @@ Cette étape peut prendre plusieurs heures.
 
 ![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ssl-regeneration.png){.thumbnail}
 
-Votre certificat SSL personnalisé est désormais regénéré et actif. Vous pouvez dès à présent l'utiliser avec votre (vos) nouveau(x) site(s) web en passant, par exemple, votre (vos) nouveau(x) [site(s) web en HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website).
+Votre certificat SSL Let's Encrypt est désormais regénéré et actif. Vous pouvez dès à présent l'utiliser avec votre (vos) nouveau(x) site(s) web en passant, par exemple, votre (vos) nouveau(x) [site(s) web en HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website).
 
 ## Aller plus loin
 

@@ -75,9 +75,9 @@ In the `Multisite`{.action} tab, and to pre-assign the Let’s Encrypt SSL optio
 
 Once the modification has been validated, the status in the SSL column for the multisite entry concerned will change from "Disabled" to "To generate" after a few seconds. If you have other domain names/subdomains concerned in the multisite records of your Web Hosting plan, repeat the operation as many times as necessary.
 
-### 2. Enable a Let's Encrypt <a name="enable-ssl"></a> SSL certificate
+### 2. Enable a Let's Encrypt SSL certificate <a name="enable-ssl"></a>
 
-Before you proceed with this configuration, ensure that the [previous step](#ssl-multisite) has been completed correctly. In the `Multisite`{.action} tab of your Web Hosting plan, at least one domain/subdomain must have the SSL option with the status `Activated` or `To generate` to install the Let's Encrypt SSL certificate.
+Before you proceed with this configuration, ensure that the [previous step](#ssl-multisite) has been completed correctly. In the `Multisite`{.action} tab of your Web Hosting plan, at least one domain/subdomain must have the SSL option with the status `Enabled` or `To generate` to install the Let's Encrypt SSL certificate.
 
 > [!warning]
 >
@@ -89,18 +89,18 @@ Before you proceed with this configuration, ensure that the [previous step](#ssl
 > To check this, you can refer to our guides:
 >
 > - [Hosting multiple websites on your web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite);
-> - [List of IP addresses for clusters and web hosting](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP);
-> - [Edit an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit).
+> - [IP address list for Web Hosting clusters](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP);
+> - [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit).
 
 To activate your Let's Encrypt SSL certificate, perform the following steps:
 
 1. Log in to your [OVHcloud Control Panel](/links/manager).
-2. On the line at the top of the Control Panel, click on the `Web Cloud`{.action} tab.
-3. In the left-hand column, click on the `Hosting`{.action} dropdown menu.
+2. At the top of the Control Panel, click on the `Web Cloud`{.action} tab.
+3. In the left-hand column, click on the `Hosting plans`{.action} drop-down menu.
 4. Select the web hosting plan concerned.
 5. On the page that appears, stay in the `General Information`{.action} tab.
-6. Go to the box labeled `Configuration`.
-7. To the right of `SSL certificate`, click on the '...`{.action} button, then `Order an SSL certificate`{.action}.
+6. Go to the box labelled `Configuration`.
+7. To the right of `SSL certificate`, click on the `...`{.action} button, then `Order an SSL certificate`{.action}.
 
 ![Order an SSL certificate](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-an-ssl-certificate.png){.thumbnail}
 
@@ -115,17 +115,17 @@ It may take several hours to set up the Let's Encrypt SSL certificate.
 To verify that the installation is complete, perform the following actions:
 
 1. Log in to your [OVHcloud Control Panel](/links/manager).
-2. On the line at the top of the Control Panel, click on the `Web Cloud`{.action} tab.
-3. In the left-hand column, click on the `Hosting`{.action} dropdown menu.
+2. At the top of the Control Panel, click on the `Web Cloud`{.action} tab.
+3. In the left-hand column, click on the `Hosting plans`{.action} drop-down menu.
 4. Select the web hosting plan concerned.
 5. On the page that appears, stay in the `General Information`{.action} tab.
-6. Go to the box labeled `Configuration`.
+6. Go to the box labelled `Configuration`.
 
-If everything is finished, you will find a value below the mention `SSL certificate` equivalent to this: `Yes - LETSENCRYPT - DV`.
+If everything is finished, you will find a value below `SSL certificate` equivalent to this: `Yes - LETSENCRYPT - DV`.
 
 ![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/tab-ssl-le.png){.thumbnail}
 
-Your custom SSL certificate is now installed and active. You can now use it with your website(s) by switching, for example, to your [website(s) in HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website).
+Your Let's Encrypt SSL certificate is now installed and active. You can now use it with your new website(s) by switching, for example, to your new [website(s) in HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website).
 
 ### Special case: Regenerate the Let's Encrypt SSL certificate on a Web Hosting plan <a name="regenerate-ssl"></a>
 
@@ -137,11 +137,11 @@ To do this, perform the following **actions in order**:
 
 1. Log in to your [OVHcloud Control Panel](/links/manager).
 2. Pre-assign the Let's Encrypt SSL certificate to your new domain/subdomains as detailed in [Part 1](#ssl-multisite) of this guide.
-3. On the line at the top of the Control Panel, click the `Web Cloud`{.action} tab.
-4. In the left-hand column, click on the `Hosting`{.action} dropdown menu.
+3. At the top of the Control Panel, click on the `Web Cloud`{.action} tab.
+4. In the left-hand column, click on the `Hosting plans`{.action} drop-down menu.
 5. Select the web hosting plan concerned.
 6. On the page that appears, stay in the `General Information`{.action} tab.
-7. Go to the box labeled `Configuration`.
+7. Go to the box labelled `Configuration`.
 8. To the right of `SSL certificate`, click the `...`{.action} button, then `Regenerate SSL certificate`{.action}.
 
 ![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/regenerate-ssl-certificate.png){.thumbnail}
@@ -156,18 +156,18 @@ This step may take several hours.
 
 ![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/ssl-regeneration.png){.thumbnail}
 
-Your customized SSL certificate is now regenerated and active. You can now use it with your new website(s) by switching, for example, to your new [website(s) in HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website).
+Your Let's Encrypt SSL certificate is now regenerated and active. You can now use it with your new website(s) by switching, for example, to your new [website(s) in HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website).
 
 ## Go further
 
-[Web Hosting - Manage an SSL certificate](/pages/web_cloud/web_hosting/ssl_on_webhosting).
+[Web Hosting - Managing an SSL certificate](/pages/web_cloud/web_hosting/ssl_on_webhosting).
 
 [Web Hosting - Switch your website to HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website).
 
 [Common errors related to securing your website with SSL](/pages/web_cloud/web_hosting/ssl_avoid_common_pitfalls_of_making_website_secure).
-
-For specialized services (SEO, development, etc.), contact the [OVHcloud partners](/links/partner).
-
-If you would like assistance with using and configuring your OVHcloud solutions, we recommend referring to our range of [support solutions](/links/support).
-
+ 
+For specialized services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
+ 
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
+ 
 Join our [community of users](/links/community).
