@@ -103,7 +103,7 @@ This step offers several configuration options. For the purpose of this guide, w
 >>
 >> An example: If your instance private network is tagged with VLAN 2, this VLAN ID should be included in the network configuration of the dedicated server only. For more information consult the following guide: [Create multiple VLANs in the vRack](/pages/bare_metal_cloud/dedicated_servers/creating-multiple-vlans-in-a-vrack).<br>
 >>
-> **DHCP address distribution options:**
+> **DHCP address distribution options**
 >>
 >> You can keep the default private IP range or use a different one.
 >>
