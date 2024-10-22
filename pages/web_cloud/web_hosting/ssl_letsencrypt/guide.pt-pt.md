@@ -1,24 +1,28 @@
---- 
+---
 title: "Alojamento web - Ativar um certificado SSL gratuito Let's Encrypt"
 excerpt: "Saiba como ativar ou regenerar um certificado SSL gratuito Let's Encrypt no seu alojamento web"
-updated: 2024-10-21
---- 
+updated: 2024-10-22
+---
+
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
 
 ## Objetivo
 
-Os certificados Secure Socket Layer (SSL) permitem encriptar as trocas efetuadas a partir do seu website ou para o seu website. Isto evita que uma pessoa ou um robô malicioso venha « ouvir » claramente os pedidos enviados ou emitidos com o seu website.
+Os certificados Secure Socket Layer (SSL) permitem encriptar as trocas efetuadas a partir ou para o seu website. Isto evita que uma pessoa ou um robô malicioso venha "ouvir" claramente os pedidos enviados ou enviados com o seu website.
 
-A OVHcloud oferece vários tipos de certificados SSL nas nossas ofertas de [alojamento partilhado OVHcloud](/links/web/hosting). São apresentados no nosso guia « [Alojamento Web - Gerir um certificado SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting) ». Os certificados SSL são incontornáveis para a segurança do seu website.
+A OVHcloud propõe vários tipos de certificados SSL nas nossas ofertas de [alojamento partilhado OVHcloud](/links/web/hosting). Estes são apresentados no nosso guia "[Gerir um certificado SSL no seu alojamento web](/pages/web_cloud/web_hosting/ssl_on_webhosting)". Os certificados SSL são incontornáveis para a segurança do seu website.
 
 Existem três tipos de certificados SSL:
 
 - Domain Validation (DV)
-- Organization validation (OV)
-- Extended Validation (EV)
+- Organização de validação (OV)
+- Extended Validação (EV)
 
-Os níveis de encriptação SSL são iguais entre os três tipos de certificado.
+Os níveis de encriptação SSL são idênticos entre estes três tipos de certificados.
 
-A principal diferença reside no nível de verificações que será realizado pela Autoridade de Certificação (AC) que emite o certificado SSL e atesta a sua autenticidade.
+A principal diferença reside no nível de controlos que será realizado pela Autoridade de Certificação (AC) que emite o certificado SSL e certifica a sua autenticidade.
 
 A Let's Encrypt é uma autoridade de certificação gratuita, automatizada, aberta e sem fins lucrativos. Encontre mais informações em <https://letsencrypt.org/pt/about/>.
 
@@ -28,9 +32,9 @@ A Let's Encrypt é uma autoridade de certificação gratuita, automatizada, aber
 
 - Ter acesso à [Área de Cliente OVHcloud](/links/manager).
 - Encomendar ou dispor de um [alojamento partilhado OVHcloud](/links/web/hosting) no qual já não está instalado nenhum certificado SSL.
-- Encomendar ou dispor de um [nome de domínio](/links/web/domains) e dispor de direitos exclusivos sobre a sua utilização. O(s) domínio(s)/subdomínio(s) não deve(m) já estar associado(s) a um certificado SSL.
+- Encomendar ou dispor de um [nome de domínio](/links/web/domains) e dispor de direitos exclusivos sobre a sua utilização. O domínio não deve estar associado a um certificado SSL.
 
-## Na Prática
+## Instruções
 
 ### 1. Pré-atribuir o futuro certificado SSL Let's Encrypt ao(s) seu(s) domínio(s)/subdomínio(s) <a name="ssl-multisite"></a>
 
@@ -41,12 +45,12 @@ Portanto, antes de instalar o certificado SSL Let's Encrypt, deverá preparar to
 Para isso, efetue as seguintes ações:
 
 1. Aceda à [Área de Cliente OVHcloud](/links/manager).
-2. Na linha situada no topo da Área de Cliente, clique no separador "Web Cloud" {.action}.
+2. Na linha situada no topo da Área de Cliente, clique no separador `Web Cloud`{.action}.
 3. Na coluna da esquerda, clique no menu pendente `Alojamentos`{.action}.
 4. Selecione o alojamento web em causa.
-5. Na página que se abrir, clique no separador "Multi-site"{.action}.
+5. Na página que vai aparecer, clique no separador `Multisite`{.action}.
 
-Aparecerá uma tabela com todos os domínios/subdomínios já declarados em multi-sites no seu alojamento web. A coluna « SSL » indica o estado de ativação do SSL nos domínios/subdomínios declarados em multi-sites.
+Aparecerá uma tabela com todos os domínios/subdomínios já declarados em multi-sites no seu alojamento web. A coluna "SSL" indica o estado de ativação do SSL nos domínios/subdomínios declarados em multi-sites.
 
 ![manage SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/ssls.png){.thumbnail}
 
@@ -54,26 +58,26 @@ Nesta coluna, por norma, podem ser apresentados três estados:
 
 |Estado|Descrição|
 |---|---| 
-|Ativado|Um certificado SSL já foi ativado para esta entrada multisite. Se tal for o caso, [verifique se o certificado SSL é um certificado SSL Let's Encrypt](#check-ssl). Se sim, consulte primeiro o [caso particular](#regenerate-ssl) situado mais abaixo neste guia. Caso contrário, consulte o nosso guia « [Alojamento Web - Gerir um certificado SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting) » se pretender eliminar o seu certificado SSL atual (gratuito ou pago), e depois substituí-lo por um certificado SSL Let's Encrypt.|
-|A gerar|Um certificado SSL foi ativado para esta entrada multisite, mas ainda não está tecnicamente ativo. Para isso, deverá [regenerar o certificado SSL Let's Encrypt](#regenerate-ssl) para que inclua os novos nomes de domínio/subdomínios declarados em multi-site e para os quais o estado "A gerar" está presente.|
+|Ativado|Um certificado SSL já foi ativado para esta entrada multisite. Se tal for o caso, [verifique se o certificado SSL é um certificado SSL Let's Encrypt](#check-ssl). Se sim, consulte primeiro o [caso particular](#regenerate-ssl) situado mais abaixo neste guia. Caso contrário, consulte o nosso guia "[Alojamento Web - Gerir um certificado SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting)" se pretender eliminar o seu certificado SSL atual (gratuito ou pago), e depois substituí-lo por um certificado SSL Let's Encrypt.|
+|A gerar / atualizar|Um certificado SSL foi ativado para esta entrada multisite, mas ainda não está tecnicamente ativo. Para isso, deverá [regenerar o certificado SSL Let's Encrypt](#regenerate-ssl) para que inclua os novos nomes de domínio/subdomínios declarados em multi-site e para os quais o estado `A gerar / atualizar` está presente.|
 |Desativado|Não foi ativado nenhum certificado SSL para esta entrada multisite. Para o ativar, proceda do seguinte modo:|
 
 > [!primary]
 >
 > Se ainda não tiver declarado um dos seus domínios/subdomínios no seu alojamento web, consulte os seguintes guias para resolver esta situação:
 >
-> - [Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configurado_multisite) ;
+> - [Partilhar o alojamento entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) ;
 > - [Lista dos endereços IP dos clusters e alojamentos web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) ;
 > - [Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
-Ainda no separador "Multi-site"{.action} e para pré-atribuir a opção SSL Let's Encrypt num domínio/subdomínio declarado em multi-site no seu alojamento web, efetue as seguintes ações:
+Ainda no separador `Multisite`{.action} e para pré-atribuir a opção SSL Let's Encrypt num domínio/subdomínio declarado em multi-site no seu alojamento web, efetue as seguintes ações:
 
 1. Na tabela que contém todos os domínios/subdomínios já declarados em multi-sites no seu alojamento web, clique no botão `...`{.action} à direita da linha do nome de domínio/subdomínio em causa.
 2. De seguida, clique em `Modificar o domínio`{.action}.
 3. Na janela que se abrir, selecione a opção `SSL`{.action} e clique em `Seguinte`{.action}.
-4. Na nova janela que aparece, encontrará um resumo da configuração do seu domínio/subdomínio. Clique em "Validar"{.action} para aplicar a alteração solicitada para esta entrada multisite.
+4. Na nova janela que aparece, encontrará um resumo da configuração do seu domínio/subdomínio. Clique em `Validar`{.action} para aplicar a alteração solicitada para esta entrada multisite.
 
-Depois de validada a alteração, o estado da entrada multisite correspondente na coluna SSL passará de "Desativado" para "Gerar" após alguns segundos. Se tiver outros domínios/subdomínios afetados nas entradas multisites do seu alojamento web, repita o processo as vezes que forem necessárias.
+Depois de validada a alteração, o estado da entrada multisite correspondente na coluna SSL passará de `Desativado` para `A gerar / atualizar` após alguns segundos. Se tiver outros domínios/subdomínios afetados nas entradas multisites do seu alojamento web, repita o processo as vezes que forem necessárias.
 
 ### 2. Ativar um certificado SSL Let's Encrypt <a name="enable-ssl"></a>
 

@@ -1,26 +1,30 @@
---- 
+---
 title: "Hosting Web - Attivare un certificato SSL gratuito Let's Encrypt"
 excerpt: "Scopri come attivare o rigenerare un certificato SSL gratuito Let's Encrypt sul tuo hosting Web"
-updated: 2024-10-21
---- 
+updated: 2024-10-22
+---
+
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
+>
 
 ## Obiettivo
 
-I certificati Secure Socket Layer (SSL) permettono di cifrare gli scambi effettuati da o verso il sito Web. In questo modo si evita che una persona o un robot malevolo "ascolti" chiaramente le richieste inviate o inviate con il sito Web.
+I certificati Secure Socket Layer (SSL) permettono di cifrare gli scambi effettuati da o verso il tuo sito Web. In questo modo si evita che una persona o un robot malevolo "ascolti" chiaramente le richieste inviate o inviate al tuo sito Web.
 
-OVHcloud propone diversi tipi di certificati SSL sulle nostre soluzioni di [hosting condiviso OVHcloud](/links/web/hosting). Sono presentati nella nostra guida "[Hosting Web - Gestire un certificato SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting)". I certificati SSL sono indispensabili per la sicurezza del sito Web.
+OVHcloud propone diversi tipi di certificati SSL sulle nostre offerte di [hosting condiviso OVHcloud](/links/web/hosting). Per maggiori informazioni, consulta la guida [Gestire un certificato SSL su un hosting Web](/pages/web_cloud/web_hosting/ssl_on_webhosting). I certificati SSL sono indispensabili per la sicurezza del tuo sito Web.
 
 Esistono tre tipi di certificati SSL:
 
-- Domain Validation (DV)
-- Organization validation (OV)
-- Extended Validation (EV)
+- Domain Conferma (DV)
+- Organizzazione di conferma (OV)
+- Extended Conferma (EV)
 
 I livelli di crittografia SSL sono identici tra questi tre tipi di certificati.
 
-La principale differenza risiede nel livello di controlli che saranno effettuati dall'Autorità di Certificazione (CA) che rilascia il certificato SSL e ne attesta l'autenticità.
+La differenza principale risiede nel livello di verifica che sarà realizzato dall'Autorità di certificazione (AC) che rilascia il certificato SSL e ne attesta l'autenticità.
 
-Let's Encrypt è un'autorità di certificazione gratuita, automatizzata, aperta e no-profit. Per maggiori informazioni, consulta la pagina <https://letsencrypt.org/fr/about/>.
+Let's Encrypt è un'autorità di certificazione gratuita, automatizzata, aperta e no-profit. Per maggiori informazioni, consulta la pagina <https://letsencrypt.org/it/about/>.
 
 **Questa guida ti mostra come attivare o rigenerare un certificato SSL gratuito Let's Encrypt su un hosting Web OVHcloud.**
 
@@ -28,11 +32,11 @@ Let's Encrypt è un'autorità di certificazione gratuita, automatizzata, aperta 
 
 - Avere accesso allo [Spazio Cliente OVHcloud](/links/manager).
 - Ordinare o disporre di un [hosting condiviso OVHcloud](/links/web/hosting) sul quale non è già installato un certificato SSL.
-- Ordinare o disporre di un [dominio](/links/web/domains) e disporre dei diritti esclusivi sul suo utilizzo. Il dominio o i domini/sottodomini non devono essere già associati a un certificato SSL.
+- Ordinare o disporre di un [dominio](/links/web/domains) e disporre dei diritti esclusivi sul suo utilizzo. Il dominio non deve essere già associato a un certificato SSL.
 
-## In pratica
+## Procedura
 
-### 1. Preattribuire il futuro certificato SSL Let's Encrypt al(i) dominio(i)/sottodominio(i) <a name="ssl-multisito"></a>
+### 1. Preattribuire il futuro certificato SSL Let's Encrypt al(i) dominio(i)/sottodominio(i) <a name="ssl-multisite"></a>
 
 A differenza di altri certificati, il [certificato SSL gratuito Let's Encrypt](/links/web/hosting-options-ssl) può essere attivato per più domini o sottodomini contemporaneamente. Nel limite di **99** domini o sottodomini per ogni hosting Web.
 
@@ -48,7 +52,7 @@ Per effettuare questa operazione, esegui le operazioni seguenti:
 
 Visualizzi una tabella con tutti i domini e sottodomini registrati su un hosting Web. La colonna "SSL" indica lo stato di attivazione dell'SSL sui tuoi domini/sottodomini dichiarati in multisito.
 
-![manage SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisito/ssls.png){.thumbnail}
+![manage SSL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/multisite/ssls.png){.thumbnail}
 
 In questa colonna, e in generale, possono essere visualizzati tre stati:
 
@@ -62,15 +66,15 @@ In questa colonna, e in generale, possono essere visualizzati tre stati:
 >
 > Se uno dei tuoi domini/sottodomini non è stato ancora dichiarato sul tuo hosting Web, consulta le guide seguenti per risolvere la situazione:
 >
-> - [Ospitare più siti su uno stesso hosting](/pages/web_cloud/web_hosting/multisiti_configurare_multisito);
-> - [Elenco degli indirizzi IP di cluster e hosting Web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP);
-> - [Modificare una zona DNS in OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
+> - [Ospitare più siti su uno stesso hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite);
+> - [Lista degli indirizzi IP di cluster e hosting Web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP);
+> - [Modificare una zona DNS di OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
 
 Sempre nella scheda `Multisito`{.action} e per pre-attribuire l’opzione SSL Let’s Encrypt a un dominio/sottodominio dichiarato multisito sul tuo hosting Web, esegui queste operazioni:
 
 1. Nella tabella contenente tutti i domini/sottodomini già dichiarati in multisiti sul tuo hosting Web, clicca sul pulsante `...`{.action} a destra della riga del nome di dominio/sottodominio interessato.
 2. Clicca su `Modifica il dominio`{.action}.
-3. Nella nuova finestra, seleziona la voce `SSL`{.action} e clicca su `Avanti`{.action}.
+3. Nella nuova finestra, seleziona la voce `SSL`{.action} e clicca su `Continua`{.action}.
 4. Visualizzi una sintesi della configurazione del tuo dominio/sottodominio. Clicca su `Conferma`{.action} per applicare la modifica richiesta per questo record multisito.
 
 Una volta convalidata la modifica, lo stato nella colonna SSL della voce multisito passerà da `Disattivato` a `Da generare` in pochi secondi. Se disponi di altri domini o sottodomini interessati tra i record multisito del tuo hosting Web, ripeti l’operazione tutte le volte che vuoi.

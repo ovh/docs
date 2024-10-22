@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Activer un certificat SSL gratuit Let's Encrypt"
 excerpt: "Découvrez comment activer ou regénérer un certificat SSL gratuit Let's Encrypt sur votre hébergement Web"
-updated: 2024-10-21
+updated: 2024-10-22
 ---
 
 ## Objectif

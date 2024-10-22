@@ -1,24 +1,24 @@
 ---
 title: "Web Hosting - Activate a free Let's Encrypt SSL certificate"
 excerpt: "Find out how to activate or regenerate a free Let's Encrypt SSL certificate on your Web Hosting plan"
-updated: 2024-10-21
+updated: 2024-10-22
 ---
 
 ## Objective
 
-With Secure Socket Layer (SSL) certificates, you can encrypt the exchanges made from or to your website. This prevents a malicious person or robot from coming to "listen" clearly to requests sent or sent with your website.
+You can use Secure Socket Layer (SSL) certificates to encrypt any exchange of data on your website. This prevents unauthorised persons and malicious robots from viewing requests to or from your website.
 
-OVHcloud offers several types of SSL certificates on our [OVHcloud web hosting] solutions (/links/web/hosting). They are listed in our guide on [Web Hosting - Managing an SSL certificate](/pages/web_cloud/web_hosting/ssl_on_webhosting). SSL certificates are essential for the security of your website.
+OVHcloud offers several types of SSL certificates for [OVHcloud web hosting solutions](/links/web/hosting). They are set out in our guide on [Managing an SSL certificate on a web hosting plan](/pages/web_cloud/web_hosting/ssl_on_webhosting). SSL certificates are essential for the security of your website.
 
 There are three types of SSL certificates:
 
 - Domain Validation (DV)
-- Organization validation (OVH)
+- Organisation Validation (OV)
 - Extended Validation (EV)
 
-The SSL encryption levels are identical between these three certificate types.
+SSL encryption levels are the same between these certificate types.
 
-The main difference lies in the level of checks that will be carried out by the Certification Authority (CA) that issues the SSL certificate and attests to its authenticity.
+The main difference lies in the level of checks that will be carried out by the Certificate Authority (CA) that issues the SSL certificate and attests to its authenticity.
 
 Let's Encrypt is a free, automated, open, non-profit certification authority. You can find more information on <https://letsencrypt.org/en/about/>.
 
@@ -26,11 +26,11 @@ Let's Encrypt is a free, automated, open, non-profit certification authority. Yo
 
 ## Requirements
 
-- You must be logged in to your [OVHcloud Control Panel](/links/manager).
-- Order or have an [OVHcloud web hosting plan](/links/web/hosting) on which no SSL certificate is already installed.
-- Order or have a [domain name](/links/web/domains) and have exclusive rights on its use. The domain/subdomain(s) must not already be linked to an SSL certificate.
+- You have access to the [OVHcloud Control Panel](/links/manager).
+- You plan to order an SSL secured [OVHcloud web hosting plan](/links/web/hosting) or you have a web hosting plan in your customer account without an SSL certificate installed.
+- You manage a [domain name](/links/web/domains) for which you have exclusive rights. The domain name must not already be linked to an SSL certificate.
 
-## In practice
+## Instructions
 
 ### 1. Pre-assign the future Let's Encrypt SSL certificate to your domain/subdomain(s) <a name="ssl-multisite"></a>
 
@@ -41,8 +41,8 @@ Therefore, before installing the Let's Encrypt SSL certificate, you will need to
 To do this, perform the following steps:
 
 1. Log in to your [OVHcloud Control Panel](/links/manager).
-2. On the line at the top of the Control Panel, click on the `Web Cloud`{.action} tab.
-3. In the left-hand column, click on the `Hosting`{.action} dropdown menu.
+2. At the top of the Control Panel, click on the `Web Cloud`{.action} tab.
+3. In the left-hand column, click on the `Hosting plans`{.action} dropdown menu.
 4. Select the web hosting plan concerned.
 5. On the page that appears, click on the `Multisite`{.action} tab.
 
@@ -63,17 +63,17 @@ In this column, and in general, three states can appear:
 > If one of your domain names/sub-domains has not yet been declared on your web hosting plan, please refer to the following guides to resolve this situation:
 >
 > - [Hosting multiple websites on your web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite);
-> - [List of IP addresses for clusters and web hosting](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP);
-> - [Edit an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit).
+> - [IP address list for Web Hosting clusters](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP);
+> - [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit).
 
 In the `Multisite`{.action} tab, and to pre-assign the Let’s Encrypt SSL option to a domain/subdomain declared as multisite on your Web Hosting plan, perform the following actions:
 
-1. In the table containing all the domain names/sub-domains already declared as multisites on your web hosting plan, click on the '...`{.action} button to the right of the row for the domain name/sub-domain concerned.
+1. In the table containing all the domain names/sub-domains already declared as multisites on your web hosting plan, click on the `...`{.action} button to the right of the row for the domain name/sub-domain concerned.
 2. Then click `Modify domain`{.action}.
 3. In the window that pops up, tick the `SSL`{.action} box, then click `Next`{.action}.
 4. In the new window that pops up, you will find a summary of your domain/subdomain configuration. Click `Confirm`{.action} to apply the requested change for this multisite entry.
 
-Once the modification has been validated, the status in the SSL column for the multisite entry concerned will change from "Disabled" to "To generate" after a few seconds. If you have other domain names/subdomains concerned in the multisite records of your Web Hosting plan, repeat the operation as many times as necessary.
+Once the modification has been validated, the status in the SSL column for the multisite entry concerned will change from `Disabled` to `To generate` after a few seconds. If you have other domain names/subdomains concerned in the multisite records of your Web Hosting plan, repeat the operation as many times as necessary.
 
 ### 2. Enable a Let's Encrypt SSL certificate <a name="enable-ssl"></a>
 
