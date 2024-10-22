@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - Network concepts and best practices"
 excerpt: "Discover the powerful networking capabilities of VMware Cloud Director on OVHcloud with this comprehensive guide (key concepts and features)"
-updated: 2024-08-23
+updated: 2024-10-22
 ---
 
 <style>
@@ -19,8 +19,8 @@ details[open]>summary::before {
 </style>
 
 > [!primary]
-> 
-> VCD on OVHcloud is currently in Alpha phase. This guide may be incomplete.
+>
+> VCD on OVHcloud is currently in Alpha phase. This guide can evolve and be updated in the future with the advances of our teams in charge of this product.
 >
 
 ## Objective
@@ -125,6 +125,26 @@ The types of network supported within an organization’s vDC:
 | Direct              | - An organization’s vDC network that has a direct connection to one of the external networks that are provisioned by the system administrator and rely on vSphere resources.  <br><br>  - Direct networks are supported for organization VDCs that rely on NSX. Direct networks are accessible by multiple organization VDCs.   Virtual machines belonging to different organization VDCs can connect to this network and see the traffic.    <br><br> - A direct network provides direct Layer 2 connectivity to virtual machines outside of the organization VDC.  <br><br> - Virtual machines outside of this organization VDC can connect directly to the virtual machines inside the organization VDC.  <br><br>  Note: Only OVHcloud can add a direct organization VDC network. |
 | Isolated (Internal) | - Isolated networks can only be accessed by the same organization vDC.  <br><br> - Only virtual machines located in this organization vDC can connect to the internal organization VDC network and see the traffic for it. <br><br> - Isolated networks are supported for organizational VDCs that rely on NSX or NSX Data Center for vSphere.  The isolated organization VDC network provides an organization VDC with an isolated private network to which multiple virtual machines and vApp can connect.  <br><br> This network does not provide connectivity to virtual machines outside of the organization VDC. Machines outside the organization VDC cannot connect to machines inside the organization VDC.                                                                  |
 | Routing             | - Routed networks can only be accessed by the same organization vDC.  <br><br> - Only virtual machines inside this organization vDC can connect to this network.   <br><br> - This network also provides controlled access to an external network. As a system administrator or organization administrator, you can configure Network Address Translation (NAT), Firewall, and VPN settings to make certain virtual machines accessible from the external network. <br><br> Routed networks are supported for organizational VDCs that rely on NSX or NSX Data Center for vSphere.                                                                                                                                                                                                    |
+
+> [!tabs]
+> Direct
+>>
+>> - An organization’s vDC network that has a direct connection to one of the external networks that are provisioned by the system administrator and rely on vSphere resources.
+>> - Direct networks are supported for organization VDCs that rely on NSX. Direct networks are accessible by multiple organization VDCs. Virtual machines belonging to different organization VDCs can connect to this network and see the traffic.
+>> - A direct network provides direct Layer 2 connectivity to virtual machines outside of the organization VDC.
+>> - Virtual machines outside of this organization VDC can connect directly to the virtual machines inside the organization VDC.
+>> - **Note**: Only OVHcloud can add a direct organization VDC network.
+> Isolated (internal)
+>>
+>> - Isolated networks can only be accessed by the same organization vDC.
+>> - Only virtual machines located in this organization vDC can connect to the internal organization VDC network and see the traffic for it.
+>> - Isolated networks are supported for organizational VDCs that rely on NSX or NSX Data Center for vSphere. The isolated organization VDC network provides an organization VDC with an isolated private network to which multiple virtual machines and vApp can connect. This network does not provide connectivity to virtual machines outside of the organization VDC. Machines outside the organization VDC cannot connect to machines inside the organization VDC.
+> Routed
+>>
+>> - Routed networks can only be accessed by the same organization vDC. Only virtual machines inside this organization vDC can connect to this network.
+>> - This network also provides controlled access to an external network. As a system administrator or organization administrator, you can configure Network Address Translation (NAT), Firewall, and VPN settings to make certain virtual machines accessible from the external network.
+>> - Routed networks are supported for organizational VDCs that rely on NSX or NSX Data Center for vSphere.
+>>
 
 Organizational virtual datacentre (vDC) networks enable **vApps**/VMs to communicate with each other or with networks external to the organization.
 
@@ -293,10 +313,10 @@ You can now follow the steps in the following guide: [“Guide 2 - VMware Cloud 
 
 **Useful network concept**
 
-To strengthen your network knowledge within the OVHcloud universe, visit our website page: <https://www.ovhcloud.com/asia/network/>.
+To strengthen your network knowledge within the OVHcloud universe, please visit [our dedicated page](/links/network/network).
 
-If you require training or technical assistance in implementing our solutions, please contact your sales representative or click on [this link](/links/professional-services) for a quote and request a custom analysis of your project from our Professional Services team experts.
+If you require training or technical support to implement our solutions, please contact your sales representative or click [this link](/links/professional-services) to get a quote and request a custom analysis of your project from our Professional Services team experts.
 
-Ask questions, give your feedback and interact directly with the team building our Hosted Private Cloud services on the dedicated Discord channel: <https://discord.gg/ovhcloud>. 
+Ask questions, give your feedback and interact directly with the team building our Hosted Private Cloud services on the dedicated channel [Discord](https://discord.gg/ovhcloud).
 
-To join and exchange with our [community of users](/links/community).
+Join our [community of users](/links/community).
