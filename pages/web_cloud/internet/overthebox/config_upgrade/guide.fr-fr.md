@@ -113,15 +113,26 @@ L'ensemble des modifications est consultable ici :
 
 ## Aller plus loin
 
+### Impossible de se connecter à l'OverTheBox après une mise à jour
+
+Il est recommandé d'attendre environ dix minutes après le lancement de la mise à jour de l'OverTheBox avant de se connecter.
+En effectuant une mise à jour ou un reset, les baux DHCP précédemment alloués aux appareils du LAN ne sont plus considérés comme étant émis par l'OverTheBox, cela peut possiblement induire des problèmes pour les équipement du LAN.
+
+Dans ce cas les recommandations sont :
+- Débrancher le câble réseau entre l'ordinateur et l'OverTheBox puis le rebrancher au bout d'environ une minute.
+- Redémarrer les services réseau sur l'ordinateur.
+- Redémarrer l'ordinateur pour le "forcer" à oublier l'ancien lease DHCP.
+- Si aucune des étapes précédentes ne fonctionne, débrancher électriquement l'OverTheBox environ une minute puis rebrancher la.
+
 ### Matrice des versions
 
 | Canal | OverTheBox | OpenWRT | Linux | MPTCP | Compatibilité du matériel |
 | ---  | :---: | :---: | :---: | :---: | ---: |
 | v0.8 | v0.8.1 | 19.07.10 | 4.14.276 | v0.94 | nuc, ITv1, rpi3, v2b, v2c |
 | v0.9 | v0.9.6 | 21.02.5 | 5.4.217 | v0.96 | v2b, v2c |
-| v1.0 | v1.0.2 | 23.05.2 | 5.15.137 | v1 | v3lte, v3, v2b, v2c |
+| v1.0 | v1.0.3 | 23.05.5 | 5.15.167 | v1 | v3lte, v3, v2b, v2c |
 | stable | v0.9.6 | 21.02.5 | 5.4.217 | v0.96 | v2b, v2c |
-| beta | v1.0.2 | 23.05.2 | 5.15.137 | v1 | v3lte, v3, v2b, v2c |
+| beta | v1.0.3 | 23.05.5 | 5.15.167 | v1 | v3lte, v3, v2b, v2c |
 
 ### Installer manuellement une image
 
