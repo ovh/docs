@@ -133,13 +133,13 @@ Validate the certificate by clicking `Trust KMS`{.action}.
 
 #### Importing KMS certificate
 
-Most KMS providers require a certificate to [establish a secure connection](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.security.doc/GUID-0212CEF2-7871-4E00-ADF2-0C71401D5E1A.html){.external} with the vCenter.
+Most KMS providers require a certificate to [establish a secure connection](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.security.doc/GUID-0212CEF2-7871-4E00-ADF2-0C71401D5E1A.html) with the vCenter.
 
 From the vCenter on which you added the KMS server, select it. In "All options", click `Establish a trusted link with KMS`{.action}.
 
 > [!warning]
 >
-> Ensure that the certificate is not encrypted with a password when you download it from the KMS. For example, if you create a user, create one without a password and download the certificate for the KMS user.
+> Ensure that the certificate is not encrypted with a password when you download it from the KMS. For example, if you create a user, create one without passwords and download the certificate for the KMS user.
 >
 
 ![import KMS certificate](images/vm-encrypt_02.png){.thumbnail}
