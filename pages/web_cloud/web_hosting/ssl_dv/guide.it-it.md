@@ -4,10 +4,6 @@ excerpt: "Questa guida ti mostra come attivare un certificato SSL Sectigo DV su 
 updated: 2024-10-21
 ---
 
-> [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
->
-
 ## Obiettivo
 
 I certificati Secure Socket Layer (SSL) permettono di cifrare gli scambi effettuati da o verso il sito Web. In questo modo si evita che una persona o un robot malevolo "ascolti" chiaramente le richieste inviate dal sito Web.
@@ -104,7 +100,7 @@ Prosegui con l’ordine fino al saldo dell’ordine per confermare la richiesta 
 >
 > Una volta convalidato l'ordine, la richiesta di certificato SSL Sectigo DV viene inviata all'autorità di certificazione Sectigo.
 >
-> Da questo momento non è possibile rimborsare l'SSL Sectigo DV.
+> Da questo momento, SSL Sectigo DV non può essere rimborsato.
 
 L'installazione del certificato SSL Sectigo DV può richiedere fino a **24** ore.
 
