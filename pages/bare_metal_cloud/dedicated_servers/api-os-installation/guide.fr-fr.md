@@ -1,6 +1,6 @@
 ---
-title: API OVHcloud et installation d'un OS
-excerpt: Découvrez comment l'API OVHcloud vous permet d'installer ou de réinstaller un OS sur votre serveur
+title: "API OVHcloud et installation d'un OS"
+excerpt: "Découvrez comment l'API OVHcloud vous permet d'installer ou de réinstaller un OS sur votre serveur"
 updated: 2024-10-22
 ---
 
@@ -180,7 +180,7 @@ Avec les paramètres suivants :
 
 ¹ Spécifique au système d'exploitation, certaines personnalisations peuvent être requises dans certains cas.
 
-`customizations` contient une hash avec les réponses aux questions spécifiques à l'OS: la clé de la hash doit contenir le nom (`name`) de la question et sa valeur doit contenir la réponse à la question, dans le format qui correspond au `type` requis.
+`customizations` contient une hash avec les réponses aux questions spécifiques à l'OS : la clé de la hash doit contenir le nom (`name`) de la question et sa valeur doit contenir la réponse à la question, dans le format qui correspond au `type` requis.
 
 `storage` contient la configuration liée aux disques & RAID matériels, partitions, RAID logiciels, LVM, ZFS, etc. Voir [API OVHcloud et Stockage](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh) pour plus de détails.
 

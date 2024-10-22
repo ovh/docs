@@ -164,7 +164,7 @@ Le tableau suivant donne un aperçu des erreurs clients les plus connues et de l
 |Could not download image located : `url`|Impossible de télécharger l'image située : `imageURL`.|Vérifiez qu'un téléchargement avec `curl` depuis votre serveur en rescue fonctionne. Si des en-têtes HTTP sont requises, vous devez les spécifier à l'aide des paramètres `httpHeaders`.|
 |Bad `checkSumType` for downloaded file, got : `n` while expecting `m`.|Le checksum est incorrect.|- Assurez-vous de spécifier le bon checksum<br />- Vérifiez qu'un téléchargement avec `curl` depuis votre serveur en rescue fonctionne.|
 
-Voir section [erreurs clients fréquentes](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh#errors) de la page API OVHcloud et Stockage pour les erreurs spécifiques au partitionnement.
+Voir la section « [erreurs clients fréquentes](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh#errors) » de la page API OVHcloud et Stockage pour les erreurs spécifiques au partitionnement.
 
 ## Aller plus loin
 

@@ -1,6 +1,6 @@
 ---
 title: API OVHcloud et Stockage
-excerpt: Découvrez comment l'API OVHcloud vous permet de personnaliser la configuration des disques, RAID matériels/logiciels et du partitionnement lors de l'installation de l'OS sur votre serveur
+excerpt: "Découvrez comment l'API OVHcloud vous permet de personnaliser la configuration des disques, RAID matériels/logiciels et du partitionnement lors de l'installation de l'OS sur votre serveur"
 updated: 2024-10-22
 ---
 
@@ -17,7 +17,7 @@ Cela vous donnera plus de détails sur le moteur qui s'exécute en arrière-plan
 Fournir des détails avancés sur la configuration du stockage peut vous aider à comprendre pourquoi :
 
 - votre personnalisation du stockage n'a pu être appliquée sur votre serveur dédié.
-- le personnalisation du stockage réelle sur votre serveur dédié est légèrement différent de ce que vous aviez demandé.
+- la personnalisation du stockage réelle sur votre serveur dédié est légèrement différente de ce que vous aviez demandé.
 
 ## Prérequis
 
@@ -77,9 +77,9 @@ Dans cette page, nous nous focaliserons seulement sur la sous-hash `storage` du 
 
 ### Grappes de disques <a name="disk-group"></a>
 
-Certains [serveurs dédiés](/links/bare-metal/bare-metal) possèdent plusieurs grappes ou groupes de disques. Par exemple une grappe avec des disques SATA et une grappe avec des disques SSD. Nous appelons ces types de serveurs des **serveurs hybrides**.
+Certains [serveurs dédiés](/links/bare-metal/bare-metal) possèdent plusieurs grappes ou groupes de disques. Par exemple, une grappe avec des disques SATA et une grappe avec des disques SSD. Nous appelons ces types de serveurs des **serveurs hybrides**.
 
-Pour lister les grappes et leurs disques, vous pouvez utiliser l'appel suivant afin de déterminer le groupe de disque sur lequel vous souhaitez effectuer votre installation OS :
+Pour lister les grappes et leurs disques, vous pouvez utiliser l'appel suivant afin de déterminer le groupe de disques sur lequel vous souhaitez effectuer votre installation OS :
 
 > [!api]
 >
@@ -170,23 +170,23 @@ Example avec une installation OS de Debian 12 (Bookworm) sur le diskGroupId 2:
 
 > [!warning]
 >
-> Pour l'instant, l'API ne supporte que l'installation OS et la personnalisation du stockage sur 1 seule grappe de disque. Vous pouvez impliquer de 1 à tous les disques de la grappe choisie dans la personnalisation du stockage. Cependant, tous les autres disques seront effacées mais seront visibles par l'OS installé, et peuvent être utilisés/configurés après pour stocker des données.
+> Pour l'instant, l'API ne supporte que l'installation OS et la personnalisation du stockage sur 1 seule grappe de disque. Vous pouvez impliquer de 1 à tous les disques de la grappe choisie dans la personnalisation du stockage. Cependant, tous les autres disques seront effacés mais seront visibles par l'OS installé, et peuvent être utilisés/configurés ultérieurement pour stocker des données.
 >
 
 ### RAID Hardware <a name="hard-raid"></a>
 
-Cette section est seulement applicable pour les serveurs qui ont au moins un contrôleur RAID matériel dans l'un de ses [grappes de disques](#disk-group).
+Cette section est seulement applicable pour les serveurs qui ont au moins un contrôleur RAID matériel dans l'une de leurs [grappes de disques](#disk-group).
 
 #### Serveur & Compatibilité du RAID matériel
 
-Vous pouvez utiliser le call API suivant, afin de savoir si votre serveur dédié est compatible:
+Vous pouvez utiliser le call API suivant afin de savoir si votre serveur dédié est compatible :
 
 > [!api]
 >
 > @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/install/hardwareRaidProfile
 >
 
-Si votre serveur dédié n'a pas de contrôleur RAID matériel, l'appel répond avec une erreur HTTP 403 (Forbidden) et le message suivant:
+Si votre serveur dédié n'a pas de contrôleur RAID matériel, l'appel répond avec une erreur HTTP 403 (Forbidden) et le message suivant :
 
 ```json
 {
@@ -234,7 +234,7 @@ Exemple de réponse pour un serveur qui possède un RAID matériel :
 
 > [!warning]
 >
-> Pour l'instant, l'API ne supporte que la personnalisation du RAID matériel pour 1 seule contrôleur de RAID matériel. Si votre serveur possède plusieurs contrôleurs de RAID matériel sur lesquels vous souhaitez personnaliser leurs configurations, vous pouvez configurer le(s) autre(s) contrôleur(s) que celui de la grappe de disques choisis pour l'installation OS **avant** la reinstallation OS (vous pouvez aussi le faire une fois la réinstallation OS terminée, mais nous vous recommandons de le faire **avant**, afin d'éviter tout risque de mauvaise manipulation qui aurait pour conséquence une perte de données).
+> Pour l'instant, l'API ne supporte que la personnalisation du RAID matériel pour 1 seul contrôleur de RAID matériel. Si votre serveur possède plusieurs contrôleurs de RAID matériel sur lesquels vous souhaitez personnaliser leurs configurations, vous pouvez configurer le(s) autre(s) contrôleur(s) que celui de la grappe de disques choisie pour l'installation OS **avant** la réinstallation OS (vous pouvez aussi le faire une fois la réinstallation OS terminée, mais nous vous recommandons de le faire **avant**, afin d'éviter tout risque de mauvaise manipulation qui aurait pour conséquence une perte de données).
 >
 
 Exemple d'une installation OS avec un RAID 1 matériel entre les 2 premiers disques de la grappe de disques :
@@ -287,12 +287,12 @@ Dans cet exemple : tous les 12 disques seront impliqués dans le RAID matériel 
 
 > [!primary]
 >
-> Le RAID matériel est à une couche qui n'est pas visible par l'OS. Ainsi, tous les OSes sont "compatibles" avec le RAID matériel.
+> Le RAID matériel est à une couche qui n'est pas visible par l'OS. Ainsi, tous les OS sont « compatibles » avec le RAID matériel.
 >
 
 Tous les disques impliqués dans la configuration du RAID matériel seront vus comme 1 seul disque virtuel par l'OS.
 
-Par conséquent, si vous avez impliqué tous les disques de la grappe de disque cible dans une configuration de RAID matériel, configurer un RAID logiciel par dessus ne sera pas applicable, puisque l'OS ne voit qu'1 seul disque virtuel.
+Par conséquent, si vous avez impliqué tous les disques de la grappe de disques cible dans une configuration de RAID matériel, configurer un RAID logiciel par dessus ne sera pas applicable, puisque l'OS ne voit qu'1 seul disque virtuel.
 
 ### Partitionnement <a name="partitioning"></a>
 
@@ -316,7 +316,7 @@ Le tableau suivant donne une vue d'ensemble des différents composants de partit
 
 #### OS & Compatibilité du partitionnement <a name="os-partitioning-compatibility"></a>
 
-Puisque la configuration du partitionnement sera visible par l'OS, l'OS choisis pour l'installation a un impact sur les possibilités que vous avez dans la personnalisation de votre partitionnement.
+Puisque la configuration du partitionnement sera visible par l'OS, l'OS choisi pour l'installation a un impact sur les possibilités de personnalisation de votre partitionnement.
 
 Dans la section `/dedicated/installationTemplate`{.action}, vous pouvez obtenir les détails tels que la compatibilité LVM, la disponibilité du système de fichiers pour un OS en particulier :
 
@@ -350,14 +350,14 @@ Par exemple :
 |noPartitioning|Si vrai, ce système d'exploitation ne supporte pas la personnalisation du partitionnement|
 |softRaidOnlyMirroring|Si vrai, ce système d'exploitation ne supporte que partiellement la personnalisation du partitionnement (seulement les raids logiciels de niveaux 0 et 1 peuvent être configurés et assignés aux 2 premiers disques de la grappe de disques)|
 
-Le call API suivant peut être utilisé pour lister les différents schémas de partitionnement d'u système d'exploitation en particulier. La plupart des systèmes d'exploitation supportent la personnalisation du partitionnement et ont par conséquent une seule schéma appelé "default". Seulement certains d'entre-eux qui ne supportent pas la personnalisation du partitionnement (`noPartitioning` vaut `true`) et **peuvent** par conséquent avoir plusieurs schémas de partitionnement.
+Le call API suivant peut être utilisé pour lister les différents schémas de partitionnement d'un système d'exploitation en particulier. La plupart des systèmes d'exploitation supportent la personnalisation du partitionnement et ont par conséquent un seul schéma appelé « default ». Seuls certains d'entre-eux ne supportent pas la personnalisation du partitionnement (`noPartitioning` vaut `true`) et **peuvent** par conséquent avoir plusieurs schémas de partitionnement.
 
 > [!api]
 >
 > @api {v1} /dedicated/installationTemplate GET  /dedicated/installationTemplate/{templateName}/partitionScheme
 >
 
-Les calls API suivants peuvent être utilisés pour savoir quel partitionnement sera appliqué par défaut si aucune personnalisation du partitionnement n'est spécifiée ou si non supportée par l'OS.
+Les calls API suivants peuvent être utilisés pour savoir quel partitionnement sera appliqué par défaut si aucune personnalisation du partitionnement n'est spécifiée ou si elle n'est pas supportée par l'OS.
 
 > [!api]
 >
@@ -409,7 +409,7 @@ Afin de rendre l'API OVHcloud la plus simple possible, il est nécessaire que vo
 
 #### API & Partitionnement
 
-Exemple d'installation OS avec un partitionnement personnalisé :
+Exemple d'installation d'OS avec un partitionnement personnalisé :
 
 > [!api]
 >
@@ -456,7 +456,7 @@ Exemple d'installation OS avec un partitionnement personnalisé :
 > Si non spécifié, `raidLevel` aura pour valeur 1.
 >
 
-Dans cet exemple seulement les 2 premiers disques de la grappe sont impliqués dans le partitionnement (càd dans le RAID logiciel).
+Dans cet exemple, seuls les 2 premiers disques de la grappe sont impliqués dans le partitionnement (c'est à dire dans le RAID logiciel).
 
 > [!primary]
 >
@@ -495,7 +495,7 @@ La sous-hash `extras` est optionnelle. Pour l'instant, cette dernière peut êtr
 }
 ```
 
-Dans cette exemple, le point de montage `/` concerne un dataset ZFS dans un zpool nommé "poule" de type raidz1. Veuillez vérifier afin d'obtenir la correspondance entre les raidz et les niveaux de RAID standards.
+Dans cet exemple, le point de montage `/` concerne un dataset ZFS dans un zpool nommé "poule" de type raidz1. Veuillez vérifier afin d'obtenir la correspondance entre les raidz et les niveaux de RAID standards.
 
 > [!primary]
 >
@@ -552,7 +552,7 @@ Le tableau suivant donne un aperçu des erreurs clients les plus connues et de l
 
 #### Auto-correction des données d'entrée client
 
-Afin d'améliorer l'expérience client, réduire la charge de travail du support OVHcloud et éviter les changements brutaux qui pourraient avoir un impact pour le client, certaines saisies effectuées par le client sont automatiquement corrigées ou modifiées par le backend. Le tableau suivant donne une vue d'ensemble de ce qui est actuellement auto-corrigé / changé :
+Afin d'améliorer l'expérience client, de réduire la charge de travail du support OVHcloud et d'éviter les changements brutaux qui pourraient avoir un impact pour le client, certaines saisies effectuées par le client sont automatiquement corrigées ou modifiées par le backend. Le tableau suivant donne une vue d'ensemble de ce qui est actuellement auto-corrigé / changé :
 
 |Sujet|Description|
 |---|---|
