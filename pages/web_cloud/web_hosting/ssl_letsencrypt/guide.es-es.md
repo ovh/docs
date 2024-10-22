@@ -129,7 +129,7 @@ Si todo ha terminado, debe encontrar un valor equivalente a este que aparece deb
 
 ![managessl](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/tab-ssl-le.png){.thumbnail}
 
-Su certificado SSL Let's Encrypt ya está instalado y activo. Ya puede utilizarlo con su (los) nuevo(s) sitio(s) web pasando, por ejemplo, su (los) nuevo(s) [web en HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website).
+Su certificado SSL Let's Encrypt ya está instalado y activo. Ya puede utilizarlo con su (los) nuevo(s) sitio(s) web pasando, por ejemplo, su (los) nuevo(s) [sitio(s) web en HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website).
 
 ### Caso particular: Regenerar el certificado SSL Let's Encrypt en un alojamiento web <a name="regenerate-ssl"></a>
 
