@@ -43,14 +43,17 @@ Suivez les étapes d'installation en cliqueant sur les onglets ci-dessous :
 
 > [!tabs]
 > **Etape 1**
+>>
 >> Sélectionnez `Autre compte Mail`{.action} puis cliquez sur `Compte Mail`{.action}.<br>
 >> ![mailmac](images/mail-mac-email01.png){.thumbnail .w-400 .h-600}
 >>
 > **Etape 2**
+>>
 >> Saisissez, dans la fenêtre « **Ajouter un compte Mail** », les informations suivantes : <br><br>- Un **Nom** pour votre compte e-mail <br>- Votre **Adresse e-mail** <br>- Le **Mot de passe** de votre adresse e-mail<br>
 >> ![mailmac](images/mail-mac-email02.png){.thumbnail .w-400 .h-600}
 >>
 > **Etape 3**
+>>
 >> Dans la fenêtre suivante, complétez les informations :
 >>
 >> - **Adresse e-mail**<br>- **Nom d'utilisateur** : Saisissez votre adresse e-mail complète<br>- **Mot de passe**<br>-**Type de compte** : Sélectionnez `IMAP` (recommandé) ou `POP`<br> - **Serveur de réception** :<br>    - **EUROPE** : Saisissez `imap.mail.ovh.net` ou `ssl0.ovh.net`<br>    - **AMERIQUE/ASIE** : Saisissez `imap.mail.ovh.ca`<br> - **Serveur d'envoi** :<br>    - **EUROPE** : Saisissez `smtp.mail.ovh.net` ou `ssl0.ovh.net`<br>    - **AMERIQUE/ASIE** : Saisissez `smtp.mail.ovh.ca`
