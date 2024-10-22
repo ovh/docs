@@ -45,7 +45,7 @@ En plus de l'installation et de la configuration de Stormshield Network Security
 > Veuillez noter que toutes les rubriques relatives à la « Haute disponibilité » ou à « Stormshield-2 » sont facultatives, de même que l'utilisation du réseau vRack avec Additional IP. Ils sont inclus pour montrer comment mettre en place le système avec deux instances en mode actif/passif pour une haute disponibilité. Dans une version minimale, il peut également fonctionner avec une seule instance si cela suffit à vos besoins.
 
 > [!primary]
-> Dans ce scénario, nous utiliserons deux machines virtuelles configurées pour l'appliance de sécurité afin d'atteindre la haute disponibilité (**H**igh **A**vailability ou HA) et une machine virtuelle supplémentaire pour la gestion. Cette configuration assure une protection contre le basculement et une disponibilité continue du service. Pour plus d'exemples et des conseils détaillés sur les options d'évolutivité, veuillez consulter la [documentation de Stormshield](https://documentation.stormshield.eu/HOME/Content/Website_Topics/Root-HomePage-FR.htm){.external}.
+> Dans ce scénario, nous utiliserons deux machines virtuelles configurées pour l'appliance de sécurité afin d'atteindre la haute disponibilité (**H**igh **A**vailability ou HA) et une machine virtuelle supplémentaire pour l'administration. Cette configuration assure une protection contre le basculement et une disponibilité continue du service. Pour plus d'exemples et de conseils détaillés sur les options d'évolutivité, veuillez consulter la [documentation de Stormshield](https://documentation.stormshield.eu/HOME/Content/Website_Topics/Root-HomePage-FR.htm){.external}.
 
 #### Configurer votre vRack
 
@@ -59,7 +59,7 @@ L'adresse de la passerelle est `147.135.161.158`.
 
 Reportez-vous au guide [Configurer un bloc IP dans un vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack) pour plus d'informations.
 
-Ci-dessous, l'architecture que nous allons mettre en place.
+Voici ci-dessous l'architecture que nous allons mettre en place.
 
 ![SNS vrack](images/stormshield-ha-vrack.png){.thumbnail}
 
@@ -159,7 +159,7 @@ Mask=255.255.0.0
 ...
 ```
 
-Appliquer la nouvelle configuration réseau
+Appliquez la nouvelle configuration réseau :
 
 ```bash
 ennetwork
@@ -287,7 +287,7 @@ Connectez-vous en SSH à l'instance SNS :
 ssh -A admin@<ip_instance>
 ```
 
-Depuis l'instance SNS, connectez-vous en SSH au serveur web Ubuntu. Vérifiez quelle IP a été assignée à votre instance de serveur web Ubuntu par le DHCP OpenStack :
+Depuis l'instance SNS, connectez-vous en SSH au serveur web Ubuntu. Vérifiez quelle adresse IP a été assignée à votre instance de serveur web Ubuntu par le DHCP OpenStack :
 
 ```bash
 ssh ubuntu@<adresse_ip>
@@ -359,7 +359,7 @@ Refaites toutes les étapes dans une autre région en utilisant le VLAN 201 au l
 
 ##### **Configurer le premier site**
 
-- [Ajoutez un objet hôte](https://documentation.stormshield.eu/SNS/v4/fr/Content/Stormshield_Network_SSO_Agent_Linux/Configure_Firewall_Objects.htm){.external} for the remote SNS and add a network object for the VLAN201 remote private network.
+- [Ajoutez un objet hôte](https://documentation.stormshield.eu/SNS/v4/fr/Content/Stormshield_Network_SSO_Agent_Linux/Configure_Firewall_Objects.htm){.external} pour le SNS distant et ajoutez un objet réseau pour le réseau privé distant VLAN201.
 
 - [Créez un tunnel de site à site standard](https://documentation.stormshield.eu/SNS/v4/fr/Content/User_Configuration_Manual_SNS_v4/IPSec_VPN/Encryption_policy-Tunnels_tab-Site_to_Site-Creating.htm){.external}.
 
@@ -476,7 +476,7 @@ Configurez le serveur VPN SSL :
 
 ##### **Gestion des droits des utilisateurs**
 
-Ajoutez l'autorisation à votre utilisateur d'utiliser le serveur VPN SSL (`Configuration` > `Utilisateurs` > `Privilèges d'accès` > `Accès détaillé` > `Ajouter`)
+Ajoutez l'autorisation à votre utilisateur d'utiliser le serveur VPN SSL (`Configuration` > `Users` > `Access privileges` > `Detailed Access` > `Add`)
 
 Recherchez votre utilisateur :
 
@@ -507,7 +507,7 @@ hasync
 > Pour tester la connectivité SSL/TLS, utilisez n'importe quel appareil sur lequel OpenVPN est installé. Cet exemple inclut le test d'un client OpenVPN au-dessus d'une instance OpenStack dans une autre région.
 >
 
-Téléchargez le fichier de configuration VPN (`Configuration` > `VPN` > `VPN SSL` > `Configuration avancée` > `Exporter le fichier de configuration`).
+Téléchargez le fichier de configuration VPN (`Configuration` > `VPN` > `SSL VPN` > `Advanced configuration` > `Export the configuration file`).
 
 Créez une instance client OpenVPN publique dans la région de votre choix :
 
