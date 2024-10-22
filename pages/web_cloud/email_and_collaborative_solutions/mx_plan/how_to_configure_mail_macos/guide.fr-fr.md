@@ -55,7 +55,7 @@ Suivez les étapes d'installation en cliqueant sur les onglets ci-dessous :
 >> - **Adresse e-mail** 
 >> - **Nom d'utilisateur** : Saisissez votre adresse e-mail complète 
 >> - **Mot de passe**
->> - **Type de compte** : Sélectionnez `POP` ou `IMAP` (recommandé)
+>> - **Type de compte** : Sélectionnez `IMAP` (recommandé) ou `POP`
 >> - **Serveur de réception** :
 >>   - **EUROPE** : Saisissez `imap.mail.ovh.net` ou `ssl0.ovh.net`
 >>   - **AMERIQUE/ASIE** : Saisissez `imap.mail.ovh.ca`
@@ -72,7 +72,7 @@ Suivez les étapes d'installation en cliqueant sur les onglets ci-dessous :
 
 > [!warning]
 >
-> Si, après avoir suivi les étapes de configuration ci-dessous, vous rencontrez un défaut d'envoi ou de réception. Consultez la rubrique [Modifier les paramètres existants](#modify-settings)
+> Si, après avoir suivi les étapes de configuration ci-dessous, vous rencontrez un défaut d'envoi ou de réception, consultez la rubrique [Modifier les paramètres existants](#modify-settings)
 
 ### Utiliser l'adresse e-mail
 
@@ -93,9 +93,9 @@ Si votre compte e-mail est déjà paramétré et que vous devez accéder aux par
 - Dans la section `Serveur de réception (POP)` ou `Serveur de réception (IMAP)`, saisissez votre adresse e-mail complète dans la case `Nom d'utilisateur`{.action} ainsi que le `Mot de passe`{.action} associé dans la case prévue à cet effet.
 - Dans la section `Serveur de d'envoi (SMTP)` saisissez votre adresse e-mail complète dans la case `Nom d'utilisateur`{.action} ainsi que le `Mot de passe`{.action} associé dans la case prévue à cet effet.
 - Décochez les cases `Gérer automatiquement les réglages de connexion`{.action} pour faire apparaitre les paramètres de `Port`{.action} et `Authentification`{.action}.
-- Assurez-vous que les cases `Utiliser TLS/SSL`{.action} soient cochées.
-- Dans les menus déroulants `Authentification`{.action}, assurez-vous que `Mot de passe` soit sélectionné.
-- Pour les cases `Nom de l'hôte`{.action} et `Port`{.action}, référez-vous aux valeurs de la rubrique « [Rappel des paramètres POP, IMAP et SMTP](#popimap-settings) », **en s'assurant de bien correspondre au type de serveur (IMAP, POP et SMTP) et à votre région (Europe ou Asie-Pacifique)**.
+- Assurez-vous que les cases `Utiliser TLS/SSL`{.action} sont cochées.
+- Dans les menus déroulants `Authentification`{.action}, vérifiez que `Mot de passe` est sélectionné.
+- Pour les cases `Nom de l'hôte`{.action} et `Port`{.action}, référez-vous aux valeurs de la rubrique « [Rappel des paramètres POP, IMAP et SMTP](#popimap-settings) ». **Vérifiez bien que le type de serveur (IMAP, POP et SMTP) correspond à votre région (Europe ou Asie-Pacifique)**.
 
 Pour finaliser la configuration, cliquez sur `Enregistrer`{.action}.
 
@@ -105,8 +105,7 @@ Pour finaliser la configuration, cliquez sur `Enregistrer`{.action}.
 >
 > **Changer sa configuration**
 >
-> Si votre adresse e-mail est configurée en **IMAP** et que vous souhaitez changer cette configuration en **POP**, vous devez supprimer le compte sur Mail de MacOS puis le recréer en **POP**, et inversement lorsque votre configuration est initialement en **POP**.
->
+> Si votre adresse e-mail est configurée en **IMAP** et que vous souhaitez changer cette configuration en **POP**, vous devez supprimer le compte sur Mail de MacOS puis le recréer en **POP**.
 
 ### Rappel des paramètres POP, IMAP et SMTP <a name="popimap-settings"></a>
 
@@ -138,7 +137,7 @@ Pour la réception des e-mails, lors du choix du type de compte, nous vous conse
 |Port|993|
 |Type de sécurité|SSL/TLS|
 
-Pour l'envoi des e-mails, si vous devez renseigner manuellement les paramètres **SMTP** dans les préférences du compte, vous trouverez ci-dessous les paramètres à utiliser :
+Pour l'envoi des e-mails, si vous devez renseigner manuellement les paramètres **SMTP** dans les préférences du compte, retrouverez ci-dessous les paramètres à utiliser :
 
 - **Configuration SMTP**
 
@@ -159,11 +158,11 @@ Pour l'envoi des e-mails, si vous devez renseigner manuellement les paramètres 
 
 ### Que faire si je ne parviens pas à recevoir/envoyer mes e-mails ?
 
-- Si vous constatez l'apparition de l'icône visible sur la capture ci-dessous, il s'agit d'une déconnexion réseau. Vérifier que votre connexion internet fonctionne correctement.
+- Si vous constatez l'apparition de l'icône visible sur la capture ci-dessous, il s'agit d'une déconnexion réseau. Vérifiez que votre connexion à Internet fonctionne correctement.
 
 ![mailmac](images/mail-mac-disconnect.png){.thumbnail .w-400 .h-600}
 
-- Si vous constatez l'apparition de l'icône visible sur la capture ci-dessous, il s'agit d'un défaut de synchronisation. Vérifiez les paramètres de configuration de votre compte e-mail en consultant la rubrique [Modifier les paramètres existants](#modify-settings)
+- Si vous constatez l'apparition de l'icône visible sur la capture ci-dessous, il s'agit d'un défaut de synchronisation. Vérifiez les paramètres de configuration de votre compte e-mail en consultant la rubrique [Modifier les paramètres existants](#modify-settings).
 
 ![mailmac](images/mail-mac-fail.png){.thumbnail .w-400 .h-600}
 
