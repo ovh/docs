@@ -10,7 +10,7 @@ updated: 2024-10-21
 
 ## Objetivo
 
-Los certificados Secure Socket Layer (SSL) permiten cifrar los intercambios efectuados desde o hacia su sitio web. Esto evita que una persona o un robot malicioso venga a «escuchar» claramente las peticiones emitidas desde su sitio web.
+Los certificados Secure Socket Layer (SSL) permiten cifrar los intercambios efectuados desde o hacia su sitio web. Esto evita que una persona o un robot malicioso venga a "escuchar" claramente las peticiones emitidas desde su sitio web.
 
 OVHcloud ofrece varios tipos de certificados SSL en los planes de [hosting OVHcloud](/links/web/hosting). Estos se describen en la guía "[Alojamiento web - Gestionar un certificado SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting)". Los certificados SSL son indispensables para la seguridad de su sitio web.
 
