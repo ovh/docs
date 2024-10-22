@@ -1,7 +1,7 @@
 ---
 title: 'Mettre en place un répondeur automatique depuis l’interface OWA'
 excerpt: Découvrez comment mettre en place une réponse automatique sous OWA
-updated: 2020-07-20
+updated: 2024-10-22
 ---
 
 ## Objectif
