@@ -84,7 +84,7 @@ This step offers several configuration options. For the purpose of this guide, w
 >> By default, the VLAN ID for dedicated servers is **0**. To use this VLAN ID for an instance, it will be necessary to tag the private network with VLAN **0** as well.
 >> Tick the **Set a VLAN ID** box and select VLAN ID **0**.
 >>
->> If you do not tick the box, the system will assign a random VLAN ID number to your private network.<br>
+>> If you do not tick the box, the system will assign a random VLAN ID number to your private network.
 >>
 >> If you already have an existing private network with VLAN ID 0, this box will be ticked by default and greyed out.
 >> 
