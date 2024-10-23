@@ -4,6 +4,20 @@ excerpt: Find out how to request the removal of an IP address from a blocklist i
 updated: 2024-10-21
 ---
 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
 ## Objective
 
 Blocklisting, also known as blacklisting, is a spam-fighting tool used on IPs (or IP ranges) to block email that is considered spam or may contain malware. If an email domain or IP address is blocklisted, emails from that domain name or IP address may not reach their client - impacting deliverability and sender reputation. Emails that do go through may go to the recipient's spam folder rather than their inbox.
@@ -49,7 +63,8 @@ It is important to note that blocklists can include domain names and IP addresse
 
 - [SpamRATS](https://spamrats.com/lookup.php)  
     If you are running your own email server, you will need to configure the domain name in the PTR record, where the contact information for the responsible party can be found. Only properly configured email servers are removed from this list.  
-    You will also need to [configure the reverse DNS resolution](/pages/bare_metal_cloud/virtual_private_servers/configuring-reverse-dns).  
+    You will also need to [configure the reverse DNS resolution](/pages/bare_metal_cloud/virtual_private_servers/configuring-reverse-dns).
+    
     > [!primary]
     > **Best practices:**
     > 

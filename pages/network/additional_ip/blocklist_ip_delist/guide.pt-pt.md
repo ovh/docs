@@ -26,7 +26,7 @@ updated: 2024-10-21
 
 - Os seus serviços não estão atualmente afetados por um processo de comunicação de abuso.
 
-## Na Prática
+## Instruções
 
 ### Fornecedores suportados
 
@@ -49,7 +49,8 @@ updated: 2024-10-21
 
 - [SpamRATS](https://spamrats.com/lookup.php)  
     Se utilizar o seu próprio servidor de correio eletrónico, deverá configurar o domínio no campo PTR onde estão localizados os dados do responsável. Só os servidores de e-mail corretamente configurados são eliminados da lista.  
-    Deverá também [configurar a resolução DNS inversa](/pages/bare_metal_cloud/virtual_private_servers/configuring-reverse-dns).  
+    Deverá também [configurar a resolução DNS inversa](/pages/bare_metal_cloud/virtual_private_servers/configuring-reverse-dns).
+    
     > [!primary]
     > **Boas práticas:**
     >
