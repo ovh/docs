@@ -326,7 +326,7 @@ Dans cet exemple, Internet doit pouvoir atteindre le serveur web privé install�
 >>
 >> Créez une règle NAT similaire à celle-ci :
 >>
-![SNS vrack](images/nat-2.png){.thumbnail}
+>> ![SNS vrack](images/nat-2.png){.thumbnail}
 >>
 > **Étape 4**
 >>
