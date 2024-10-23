@@ -1,7 +1,7 @@
 ---
 title: "KMS for VMware on OVHcloud - VM encryption use case scenarios"
-excerpt: "Discover the solutions available to you for encrypting VMs within the OVHcloud univers"
-updated: 2024-10-22
+excerpt: "Find out which solutions are available to you for encrypting VMs within the OVHcloud universe"
+updated: 2024-10-23
 ---
 
 <style>

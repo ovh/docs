@@ -1,7 +1,7 @@
 ---
-title: "KMS for VMware on OVHcloud - Solution et cas d'usages pour chiffrer des VM"
-excerpt: "Découvrez les solutions qui s'offrent à vous pour le chiffrement de VM avec ou sans OKMS au sein de votre Hosted Private Cloud VMware vSphere managé on OVHcloud"
-updated: 2024-10-11
+title: "KMS for VMware on OVHcloud - Solution et cas d'usages pour chiffrer des VMs"
+excerpt: "Découvrez les solutions qui s'offrent à vous pour le chiffrement de vos machines virtuelles au sein de l'univers OVHcloud"
+updated: 2024-10-23
 ---
 
 <style>
@@ -20,7 +20,7 @@ details[open]>summary::before {
 
 > [!primary]
 >
-> Cette fonctionnalité est disponible en version bêta.
+> Cette fonctionnalité est disponible en version bêta. Ce guide peut donc évoluer et être mis à jour à l'avenir avec les avancées de nos équipes en charge de ce produit.
 >
 
 ## Objectif
@@ -31,7 +31,7 @@ details[open]>summary::before {
 
 - Disposer d'un [compte client OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
 - Avoir souscrit une offre [VMware on OVHcloud](/links/hosted-private-cloud/vmware).
-- Avoir accès à l’interface de gestion vSphere de votre Hosted Private Cloud VMware on OVHcloud).
+- Avoir accès à l’interface de gestion vSphere de votre Hosted Private Cloud VMware on OVHcloud.
 - Disposer des droits IAM suffisants avec votre compte de service OVHcloud et vos ressources KMS Hosted Private Cloud VMware on OVHcloud. Consultez les guides suivants :
     - [IAM pour VMware on OVHcloud - Présentation et FAQ](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_getting_started).
     - [IAM pour VMware on OVHcloud - Comment activer IAM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_activation).
@@ -82,7 +82,9 @@ Cette architecture est redondante et permet ainsi de subir des pannes sans que c
 
 #### KMIP
 
-KMIP fournit un service compatible avec vCenter et le chiffrement basé sur l'hôte au sein de VMware vSphere on OVHcloud.
+Le protocole **KMIP** (**K**ey **M**anagement **I**nteroperability **P**rotocol) est un protocole de communication extensible qui définit des formats de message pour la manipulation de clés cryptographiques sur un serveur de gestion de clés. Il fournit un service compatible avec vCenter et le chiffrement basé sur l'hôte au sein de VMware vSphere on OVHcloud. 
+
+Pour plus d'informations, vous pouvez consulter le guide « [Utilisation du protocole KMIP](/pages/manage_and_operate/kms/kms-kmip) ».
 
 ### Étape 2 - Présentation des choix pour chiffrer des machines virtuelles
 
