@@ -1,7 +1,7 @@
 ---
 title: "vNKP - Activation du chiffrement des machines virtuelles"
 excerpt: "Découvrez comment mettre en œuvre le chiffrement de vos machines virtuelles avec vSphere Native Key Provider"
-updated: 2024-10-21
+updated: 2024-10-23
 ---
 
 ## Objectif
@@ -13,7 +13,7 @@ Ce guide a pour objectif d'expliquer les détails de la mise en œuvre de **vSph
 > [!primary]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
 >
-> Depuis 2024 OVHcloud met à disposition un KMS dedié (OKMS -> OVHcloud KMS) pour gérer ces services et le chiffrement de machines virtuelles au sein de votre environnement VMware on OVHcloud. Le guide [KMS for VMware on OVHcloud - Solution et cas d'usages pour chiffrer des VM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_overall_vm-encrypt) vous explique les cas d'usages et les solutions qui s'offrent à vous dans l'utilisation du KMS OVHcloud. 
+> Depuis 2024, OVHcloud met à disposition un KMS dedié (OKMS -> OVHcloud KMS) pour gérer ces services et le chiffrement de machines virtuelles au sein de votre environnement VMware on OVHcloud. Le guide [KMS for VMware on OVHcloud - Solution et cas d'usages pour chiffrer des VM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_overall_vm-encrypt) vous explique les cas d'usages et les solutions qui s'offrent à vous dans l'utilisation du KMS OVHcloud. 
 > 
 > Si vous rencontrez des difficultés, contactez votre Technical Account Manager ou rendez-vous sur [cette page](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
@@ -39,12 +39,12 @@ La clé **DEK** est chiffrée à l'aide de la **KDK**. Elle est stockée et chif
 
 > [!warning]
 >
-> Il est possible que votre cluster **VMware on OVHcloud** ne soit pas en version 7.0 Update 2. Dans ce cas, contactez le support pour faire évoluer votre infrastructure.
+> Il est possible que votre cluster **VMware on OVHcloud** ne soit pas en version 7.0 Update 2. Dans ce cas, [contactez le support](https://help.ovhcloud.com/csm?id=csm_get_help) pour faire évoluer votre infrastructure.
 >
 
 ### Autorisation d'un utilisateur à administrer le chiffrement sur un cluster VMware on OVHcloud 
 
-Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur `Hosted Private Cloud`{.action} et choisissez votre cluster. Positionnez-vous sur `Utilisateurs`{.action} et cliquez sur le bouton `...`{.action}.
+Connectez-vous à l'[espace client OVHcloud](/links/manager), cliquez sur `Hosted Private Cloud`{.action} et choisissez votre cluster. Positionnez-vous sur `Utilisateurs`{.action} et cliquez sur le bouton `...`{.action}.
 
 ![00 add right from manager 01](images/00-add-right-from-manager01.png){.thumbnail}
 
