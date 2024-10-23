@@ -2029,7 +2029,7 @@
         + [Getting started with OVHcloud Key Management Service (KMS)](manage_and_operate/kms/quick-start)
         + [Using the OVHcloud Key Management Service (KMS) with your data](manage_and_operate/kms/kms-usage)
         + [OVHcloud KMS Architecture overview](manage_and_operate/kms/architecture-overview)
-        + [Connect a compatible product using KMIP protocol vith OVHcloud KMS](manage_and_operate/kms/kms-kmip)
+        + [Connect a compatible product using KMIP protocol with OVHcloud KMS](manage_and_operate/kms/kms-kmip)
 + OVHcloud Labs
     + [Data Collector](products/ovhcloud-labs-data-collector)
         + [Getting started](ovhcloud-labs-data-collector-getting-started)
