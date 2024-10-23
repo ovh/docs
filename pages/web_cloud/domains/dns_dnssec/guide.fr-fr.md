@@ -84,7 +84,7 @@ Une fois ces 4 paramètres récupérés, effectuez les actions suivantes :
 
 ![dnssec](/pages/assets/screens/control_panel/product-selection/web-cloud/domain-dns/ds-records/edit-plus-dashboard.png){.thumbnail}
 
-### Cas 3 - Votre nom de domaine n'est pas enregistré chez OVHcloud et utilise les serveurs DNS d'OVHcloud**
+### Cas 3 - Votre nom de domaine n'est pas enregistré chez OVHcloud et utilise les serveurs DNS d'OVHcloud
 
 > [!warning]
 >
@@ -92,7 +92,7 @@ Une fois ces 4 paramètres récupérés, effectuez les actions suivantes :
 
 A l'inverse du **cas 2**, vous devrez ici récupérer côté OVHcloud les paramètres d'activation du DNSSEC (« Key Tag » / « Flag » / « Algorithm » / « Clé publique (encodée en base64) »).
 
-Pour cela, vous devrez passer par les APIs OVHcloud en effectuant les actions suivantes : 
+Pour cela, vous devrez passer par les API OVHcloud en effectuant les actions suivantes : 
 
  - Rendez-vous sur notre site [API OVHcloud](/links/api) (vérifiez bien que vous êtes sur `https://eu.api.ovh.com` si vos services sont hébergés en Europe et sur `https://ca.api.ovh.com` s'ils sont hébergés en dehors de l'Europe).
  - Sur la page qui s'affiche, cliquez au centre sur `Explore the OVHcloud API`{.action}.
