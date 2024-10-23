@@ -34,21 +34,21 @@ Il est important de noter que les listes de blocage peuvent inclure des noms de 
     - [Spamhaus Block List (SBL)](https://www.spamhaus.org/blocklists/spamhaus-blocklist/)  
     Si [l’IP figure dans la liste de blocage (SBL) de Spamhaus](https://check.spamhaus.org/sbl/listings/ovh.net/), créez une demande d’assistance depuis le [centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help). Notre équipe de support transmettra votre demande à notre équipe chargée des signalement d'abus, qui contactera ensuite le fournisseur de la liste de blocage.
     - [Exploits Block List (XBL)](https://www.spamhaus.org/blocklists/exploits-blocklist/) ou [Combined Spam Sources (CSS)](https://www.spamhaus.org/blocklists/mixed-spam-sources/)  
-    Si votre IP figure dans la *Exploits Block List* et/ou dans la liste combinée des sources de spam, cela est dû à des problèmes de configuration. Veuillez suivre les étapes mentionnées sur le site Spamhaus pour retirer l'IP de la liste (voir l'exemple ci-dessous). Une fois les étapes suivies, vous pouvez le retirer vous-même de la liste.
+    Si votre IP figure dans la *Exploits Block List* et/ou dans la liste combinée des sources de spam, cela est dû à des problèmes de configuration. Veuillez suivre les étapes mentionnées sur le site Spamhaus pour retirer l'IP de la liste (voir l'exemple ci-dessous). Une fois les étapes suivies, vous pouvez le retirer vous-même de la liste.  
     /// details | Exemple
 
-    ![spamhaus example](images/blocklist1.png){.thumbnail}
+    ![spamhaus example](images/blocklist1.png){.thumbnail}  
     ![spamhaus example](images/blocklist2.png){.thumbnail}
 
     ///
 
 - [SpamCop](https://www.spamcop.net/bl.shtml)
 
-- [Barracuda](https://check.spamhaus.org/)
+- [Barracuda](https://www.barracudacentral.org/lookups)
 
 - [SpamRATS](https://spamrats.com/lookup.php)  
     Si vous utilisez votre propre serveur de messagerie, vous devrez configurer le nom de domaine dans le champ PTR où se trouvent les coordonnées du responsable. Seuls les serveurs e-mail correctement configurés sont supprimés de cette liste.  
-    Vous devrez également [configurer la résolution DNS inverse](/pages/bare_metal_cloud/virtual_private_servers/configuring-reverse-dns).
+    Vous devrez également [configurer la résolution DNS inverse](/pages/bare_metal_cloud/virtual_private_servers/configuring-reverse-dns).  
     > [!primary]
     > **Bonnes pratiques :**
     > 
@@ -112,7 +112,7 @@ Si vous êtes actuellement concerné(e) par cette situation, nous vous recommand
 
 /// details | Plus d'informations...
 
-Pour retirer une IP de la liste de Fabel Spamsource, accédez à leur [page de retrait de la liste](https://www.spamsources.fabel.dk/delist).
+Pour retirer une IP de la liste de Fabel Spamsources, accédez à leur [page de retrait de la liste](https://www.spamsources.fabel.dk/delist).
 
 Cliquez sur `Please login to continue`{.action}, entrez votre adresse e-mail et vérifiez votre boîte de réception. Utilisez le code de vérification pour terminer la connexion.
 

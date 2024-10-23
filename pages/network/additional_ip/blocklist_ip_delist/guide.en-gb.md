@@ -33,8 +33,8 @@ It is important to note that blocklists can include domain names and IP addresse
 - [Spamhaus](https://check.spamhaus.org/)
 
     - [Spamhaus Block List (SBL)](https://www.spamhaus.org/blocklists/spamhaus-blocklist/)  
-    If the [IP is listed under the Spamhaus Blocklist (SBL)](https://check.spamhaus.org/sbl/listings/ovh.net/), you will need to submit a support ticket in the [OVHcloud Help Centre](https://help.ovhcloud.com/csm?id=csm_get_help). Support will relay your case to our Abuse Team, who will then contact the Blocklist Provider. 
-    - [Exploits Block List (XBL)](https://www.spamhaus.org/blocklists/exploits-blocklist/) or [Combined Spam Sources (CSS)](https://www.spamhaus.org/blocklists/combined-spam-sources/)    
+    If the [IP is listed under the Spamhaus Blocklist (SBL)](https://check.spamhaus.org/sbl/listings/ovh.net/), you will need to submit a support ticket in the [OVHcloud Help Centre](https://help.ovhcloud.com/csm?id=csm_get_help). Support will relay your case to our Abuse Team, who will then contact the Blocklist Provider.
+    - [Exploits Block List (XBL)](https://www.spamhaus.org/blocklists/exploits-blocklist/) or [Combined Spam Sources (CSS)](https://www.spamhaus.org/blocklists/combined-spam-sources/)  
     If your IP is listed under Exploits Block List and/or Combined Spam Sources, this is due to configuration issues. Please follow the steps mentioned on the Spamhaus website to delist the IP (see the example below). Once you have followed the steps, you can delist it yourself.  
     /// details | Example
     
@@ -45,7 +45,7 @@ It is important to note that blocklists can include domain names and IP addresse
 
 - [SpamCop](https://www.spamcop.net/bl.shtml)
 
-- [Barracuda](https://check.spamhaus.org/)
+- [Barracuda](https://www.barracudacentral.org/lookups)
 
 - [SpamRATS](https://spamrats.com/lookup.php)  
     If you are running your own email server, you will need to configure the domain name in the PTR record, where the contact information for the responsible party can be found. Only properly configured email servers are removed from this list.  
@@ -62,7 +62,7 @@ It is important to note that blocklists can include domain names and IP addresse
 
 /// details | More information...
 
-To request removal, visit this web page from the IP address that has been blocklisted. You should be delisted immediately.
+To request removal, visit [this web page](http://www.usenix.org.uk/content/rblremove) from the IP address that has been blocklisted. You should be delisted immediately.
 
 You can also do this with the tools *telnet*, *curl* or *wget*.
 
@@ -116,7 +116,7 @@ If you are currently affected by this, we recommend the following:
 
 /// details | More information...
 
-To delist an IP from Fabel Spamsource, navigate to their [delisting page](https://www.spamsources.fabel.dk/delist).
+To delist an IP from Fabel Spamsources, navigate to their [delisting page](https://www.spamsources.fabel.dk/delist).
 
 Click `Please login to continue`{.action}, enter your email address, and check your email inbox. Use the verification code to finish logging in.
 
