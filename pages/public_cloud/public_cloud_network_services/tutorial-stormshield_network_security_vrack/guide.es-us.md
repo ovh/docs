@@ -127,7 +127,7 @@ openstack server create --flavor b3-32 --image stormshield-SNS-EVA-4.7.6 --netwo
 
 #### Configure the SNS instances
 
-Log into the [OVHcloud Control Panel](/links/mamager), go to the `Public Cloud`{.action} section, and select the relevant Public Cloud project. In the left menu, click on `Instances`{.action} under the **Compute** tab, then find your two SNS instances.
+Log into the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section, and select the relevant Public Cloud project. In the left menu, click on `Instances`{.action} under the **Compute** tab, then find your two SNS instances.
 
 Access the VNC console for both SNS instances and configure the keyboard layout and the password.
 
@@ -326,7 +326,7 @@ In this example, the Internet should be able to reach the private web server ins
 >>
 >> Create a NAT rule like this one:
 >>
-![SNS vrack](images/nat-2.png){.thumbnail}
+>> ![SNS vrack](images/nat-2.png){.thumbnail}
 >>
 > **Step 4**
 >>
