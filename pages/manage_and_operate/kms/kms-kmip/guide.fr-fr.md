@@ -1,7 +1,7 @@
 ---
-title: "Utilisation du protocole KMIP"
+title: "Connecter un produit compatible en utilisant le protocole KMIP"
 excerpt: "Comment communiquer avec le KMS OVHcloud avec le protocole KMIP"
-updated: 2024-10-18
+updated: 2024-10-23
 ---
 
 > [!warning]
@@ -24,7 +24,7 @@ L'objectif de ce guide est de présenter l'utilisation du protocole KMIP ainsi q
 ### Description
 
 Le protocole [KMIP](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=kmip) (Key Management Interoperability Protocol) est un protocole conçu pour standardiser les communications avec un KMS.
-Ainsi tout produit supportant le KMIP (comme VMware vSphere, Veeam, Nutanix, etc.) peut nativement s'interfacer avec un KMS compatible KMIP comme le KMS OVHcloud.
+Ainsi tout produit supportant le KMIP (comme VMware vSphere, Veeam, Nutanix, etc.) peut nativement s'interfacer avec un KMS compatible KMIP comme le KMS OVHcloud, que ces produits soient hébergés par OVHcloud ou non
 
 Cela permet d'assurer une connexion facilitée, ainsi que la réversibilité de cette configuration.
 

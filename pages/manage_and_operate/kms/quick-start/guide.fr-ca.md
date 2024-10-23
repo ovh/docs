@@ -1,7 +1,7 @@
 ---
 title: "Premiers pas avec OVHcloud Key Management Service (KMS)"
 excerpt: "Mettez en oeuvre votre OVHcloud KMS"
-updated: 2024-10-18
+updated: 2024-10-23
 ---
 
 > [!warning]
@@ -380,6 +380,14 @@ L'API renvoie le certificat au format PEM :
 ```
 
 Copiez la valeur du champ **certificatePEM** dans un fichier **client.cert**.
+
+### Utiliser le KMS OVHcloud
+
+Une fois votre KMS OVHcloud initialisé, il est possible de l'utiliser de deux manières différentes :
+
+- En utilisant les [API Rest](/pages/manage_and_operate/kms/kms-usage), si vous souhaitez utiliser manuellement les API pour chiffrer ou signer vos données
+- En utilisant le [protocole KMIP](/pages/manage_and_operate/kms/kms-kmip), si vous souhaitez connecter n'importe quel produit compatible KMIP avec le KMS OVHcloud
+
 
 ## Aller plus loin
 

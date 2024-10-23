@@ -1,7 +1,7 @@
 ---
-title: "Usage of KMIP protocol"
+title: "Connect a compatible product using KMIP protocol"
 excerpt: "How to communicate with the OVHcloud KMS using KMIP protocol"
-updated: 2024-10-18
+updated: 2024-10-23
 ---
 
 > [!warning]
@@ -17,7 +17,7 @@ The purpose of this guide is to show you the usage of the KMIP protocol and the 
 ## Requirements
 
 - An [OVHcloud customer account](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
-- [An OVHcloud KMS ordered and an access certificate created](/pages/manage_and_operate/kms/quick-start)
+- An [OVHcloud KMS ordered and an access certificate created](/pages/manage_and_operate/kms/quick-start)
 
 ## Instructions
 
@@ -25,7 +25,7 @@ The purpose of this guide is to show you the usage of the KMIP protocol and the 
 
 [KMIP](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=kmip) (Key Management Interoperability Protocol) is a protocol designed to standardise the communications with a KMS.
 
-So any producs supporting KMIP (such as VMware vSphere, Veeam, Nutanix, etc.) can natively be interfaced with a KMIP compatible KMS such as the OVHcloud KMS.
+So any producs supporting KMIP (such as VMware vSphere, Veeam, Nutanix, etc.) can natively be interfaced with a KMIP compatible KMS such as the OVHcloud KMS, hosted by OVHcloud or not.
 
 It brings an easy connection, and a reversible configuration.
 
@@ -34,7 +34,7 @@ It brings an easy connection, and a reversible configuration.
 The configuration depends on the product to integrate, but does not need any specific configuration on the OVHcloud KMS other than generating an access certificate.
 Softwares editors usually offer dedicated guides for this purpose.
 
-As an example, the following products were validated with the OVHcloud KMS : 
+As an example, the following products were validated with the OVHcloud KMS :
 
 - [Nutanix](https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Security-Guide-v6_8:wc-security-data-encryption-setup-t.html)
 - [VMware](https://docs.vmware.com/en/VMware-vSphere/8.0/vsphere-security/GUID-9035D542-B76B-4244-966D-2A8D92ABF54C.html)
@@ -61,10 +61,10 @@ Details of the coverage is available here:
 
 > **Legend:**
 >
-> - N/A : Not Applicable 
-> * ✅ : Fully compatible
-> * 🚧 : Partially compatible
-> * ❌ : Not implemented
+> - N/A : Not Applicable
+> - ✅ : Fully compatible
+> - 🚧 : Partially compatible
+> - ❌ : Not implemented
 > - 🚫 : Deprecated
 
 #### Messages
