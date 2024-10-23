@@ -45,7 +45,7 @@ En plus de l'installation et de la configuration de Stormshield Network Security
 > Veuillez noter que toutes les rubriques relatives à la « Haute disponibilité » ou à « Stormshield-2 » sont facultatives, de même que l'utilisation du réseau vRack avec Additional IP. Ils sont inclus pour montrer comment mettre en place le système avec deux instances en mode actif/passif pour une haute disponibilité. Dans une version minimale, il peut également fonctionner avec une seule instance si cela suffit à vos besoins.
 
 > [!primary]
-> Dans ce scénario, nous utiliserons deux machines virtuelles configurées pour l'appliance de sécurité afin d'atteindre la haute disponibilité (**H**igh **A**vailability ou HA) et une machine virtuelle supplémentaire pour l'administration. Cette configuration assure une protection du failover et une disponibilité continue du service. Pour plus d'exemples et de conseils détaillés sur les options d'évolutivité, veuillez consulter la [documentation de Stormshield](https://documentation.stormshield.eu/HOME/Content/Website_Topics/Root-HomePage-FR.htm){.external}.
+> Dans ce scénario, nous utiliserons deux machines virtuelles configurées pour l'appliance de sécurité afin d'atteindre la haute disponibilité (**H**igh **A**vailability ou HA), ainsi qu'une machine virtuelle supplémentaire pour l'administration et la gestion de l'appliance de sécurité. Cette configuration garantit la protection contre les pannes et la disponibilité continue du service. Pour plus d'exemples et de conseils détaillés sur les options d'évolutivité, veuillez consulter la [documentation de Stormshield](https://documentation.stormshield.eu/HOME/Content/Website_Topics/Root-HomePage-FR.htm){.external}.
 
 #### Configurer votre vRack
 

@@ -62,7 +62,7 @@ Voici l'architecture que nous allons mettre en place :
 #### Configurer le réseau de gestion Ubika WAAP Gateway
 
 > [!primary]
-> Dans ce scénario, nous utiliserons deux machines virtuelles configurées pour l'appliance de sécurité afin d'atteindre la haute disponibilité (HA) et une machine virtuelle supplémentaire pour la gestion. Cette configuration assure une protection du failover et une disponibilité continue du service. Pour plus d'exemples et de conseils détaillés sur les options d'évolutivité, veuillez vous référer à la [documentation Ubika](https://www.ubikasec.com/ressources/){.external}.
+> Dans ce scénario, nous utiliserons deux machines virtuelles configurées pour l'appliance de sécurité afin d'atteindre la haute disponibilité (HA), ainsi qu'une machine virtuelle supplémentaire pour l'administration et la gestion de l'appliance de sécurité. Cette configuration garantit la protection contre les pannes et la disponibilité continue du service. Pour plus d'exemples et de conseils détaillés sur les options d'évolutivité, veuillez vous référer à la [documentation Ubika](https://www.ubikasec.com/ressources/){.external}.
 
 Créez un réseau privé pour la gestion de l'infrastructure :
 
