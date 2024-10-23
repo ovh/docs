@@ -1,7 +1,7 @@
 ---
 title: 'Comment mettre à jour un appareil OverTheBox'
 excerpt: 'Découvrez comment mettre à jour votre appareil OverTheBox'
-updated: 2024-10-03
+updated: 2024-10-23
 ---
 
 ## Objectif
@@ -115,14 +115,15 @@ L'ensemble des modifications est consultable ici :
 
 ### Impossible de se connecter à l'OverTheBox après une mise à jour
 
-Il est recommandé d'attendre environ dix minutes après le lancement de la mise à jour de l'OverTheBox avant de se connecter.
-En effectuant une mise à jour ou un reset, les baux DHCP précédemment alloués aux appareils du LAN ne sont plus considérés comme étant émis par l'OverTheBox, cela peut possiblement induire des problèmes pour les équipement du LAN.
+Il est recommandé d'attendre environ dix minutes après le lancement de la mise à jour de l'OverTheBox avant de s'y connecter.
+En effectuant une mise à jour ou une réinitialisation, les baux DHCP précédemment alloués aux appareils du LAN ne sont plus considérés comme étant émis par l'OverTheBox, cela peut potentiellement induire des problèmes pour les équipement du LAN.
 
-Dans ce cas les recommandations sont :
-- Débrancher le câble réseau entre l'ordinateur et l'OverTheBox puis le rebrancher au bout d'environ une minute.
-- Redémarrer les services réseau sur l'ordinateur.
-- Redémarrer l'ordinateur pour le "forcer" à oublier l'ancien lease DHCP.
-- Si aucune des étapes précédentes ne fonctionne, débrancher électriquement l'OverTheBox environ une minute puis rebrancher la.
+Dans ce cas, les recommandations sont les suivantes :
+
+- Débranchez le câble réseau entre l'ordinateur et l'OverTheBox puis rebranchez-le au bout d'environ une minute.
+- Redémarrez les services réseau sur l'ordinateur.
+- Redémarrerzl'ordinateur pour le « forcer » à oublier l'ancien lease DHCP.
+- Si aucune des étapes précédentes ne fonctionne, débranchez électriquement l'OverTheBox pendant environ une minute puis rebranchez-la.
 
 ### Matrice des versions
 
