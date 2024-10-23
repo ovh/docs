@@ -382,10 +382,10 @@ Copy the value of the **certificatePEM** field to a **client.cert** file.
 
 ### Use the OVHcloud KMS
 
-Once your OVHcloud KMS set-up, there is two different way to use it :
+Once your OVHcloud KMS is set up, there are two different ways to use it:
 
-- Using the [Rest API](/pages/manage_and_operate/kms/kms-usage), if you want to manually use the API to encrypt or sign your data
-- Using the [KMIP protocol](/pages/manage_and_operate/kms/kms-kmip), if you want to connect any KMIP compatible products with your OVHcloud KMS
+- Using the [Rest API](/pages/manage_and_operate/kms/kms-usage) if you want to manually use the API to encrypt or sign your data.
+- Using the [KMIP protocol](/pages/manage_and_operate/kms/kms-kmip) if you want to connect any KMIP compatible product with your OVHcloud KMS.
 
 ## Go further
 
