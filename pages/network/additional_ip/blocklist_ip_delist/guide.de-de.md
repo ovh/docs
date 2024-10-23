@@ -4,6 +4,20 @@ excerpt: Erfahren Sie hier, wie Sie die Entfernung von IP-Adressen aus einer Blo
 updated: 2024-10-21
 ---
 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
 ## Ziel
 
 Die *Blocklist* (auch *Blacklist*) ist ein Anti-Spam-Tool, das für IP-Adressen (oder IP-Adressbereiche) verwendet wird, um E-Mails zu blockieren, die als Spam eingestuft wurden oder Schadsoftware enthalten könnten. Wenn ein E-Mail-Domainname oder eine IP-Adresse blockiert ist, können E-Mails von diesem Domainnamen oder dieser IP-Adresse nicht an ihren Empfänger-Client gelangen, was sich auf die Zustellbarkeit und den Ruf des Absenders auswirkt. E-Mails, die dennoch versendet werden, können dann in den Spam-Ordner des Empfängers statt den Posteingang geleitet werden.
@@ -49,7 +63,8 @@ Beachten Sie, dass Blocklisten auch Domainnamen und IP-Adressen enthalten könne
 
 - [SpamRATS](https://spamrats.com/lookup.php)  
     Wenn Sie Ihren eigenen E-Mail-Server verwenden, müssen Sie den PTR-Eintrag des Domainnamens konfigurieren, der die entsprechenden Kontaktdaten beinhaltet. Nur korrekt konfigurierte E-Mail-Server werden aus dieser Liste entfernt.  
-    Sie müssen außerdem die [Reverse DNS-Auflösung konfigurieren](/pages/bare_metal_cloud/virtual_private_servers/configuring-reverse-dns).  
+    Sie müssen außerdem die [Reverse DNS-Auflösung konfigurieren](/pages/bare_metal_cloud/virtual_private_servers/configuring-reverse-dns).
+    
     > [!primary]
     > **Gute Praxis:**
     > 
@@ -121,7 +136,7 @@ Klicken Sie auf `Please login to continue`{.action}, geben Sie Ihre E-Mail-Adres
 
 Geben Sie Ihre IP-Adresse und eine Begründung für die Anfrage und klicken Sie dann auf den Button `Submit Query`{.action}.
 
-![Beispiel](images/blockList3.png){.thumbnail}
+![Beispiel](images/blocklist3.png){.thumbnail}
 
 Das Entfernen von der Liste sollte zwischen 20 und 30 Minuten dauern.
 

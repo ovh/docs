@@ -4,6 +4,20 @@ excerpt: "Dowiedz się, jak zlecić usunięcie adresu IP z listy bloków, jeśli
 updated: 2024-10-21
 ---
 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
 ## Wprowadzenie
 
 *Blocklist* (lub lista blokowania) to narzędzie do walki ze spamem używane do blokowania wiadomości e-mail rozpoznawanych jako spam lub mogących zawierać złośliwe oprogramowanie (adresów IP lub zakresów adresów IP). Jeśli domena e-mail lub adres IP są zablokowane(e), e-maile pochodzące z tej domeny lub adresu IP mogą nie dotrzeć do ich klienta (serwer poczty przychodzącej / antywirus), co ma wpływ na dostarczalność i reputację nadawcy. Wiadomości, które mimo to dotrą do odbiorców, mogą zostać wysłane do folderu spamu odbiorcy, a nie do jego skrzynki odbiorczej.
@@ -49,7 +63,8 @@ Należy pamiętać, że listy blokowania mogą zawierać domeny i adresy IP, kt�
 
 - [SpamRATS](https://spamrats.com/lookup.php)  
     Jeśli używasz własnego serwera poczty e-mail, wpisz nazwę domeny w polu PTR, w którym znajdują się dane kontaktowe menedżera. Z tej listy są usuwane tylko prawidłowo skonfigurowane serwery e-mail.  
-    Musisz również [skonfigurować odwrotną konfigurację DNS](/pages/bare_metal_cloud/virtual_private_servers/configuring-reverse-dns).  
+    Musisz również [skonfigurować odwrotną konfigurację DNS](/pages/bare_metal_cloud/virtual_private_servers/configuring-reverse-dns).
+    
     > [!primary]
     > **Dobre praktyki:**
     >
@@ -119,7 +134,7 @@ Kliknij `Please login to continue`{.action}, wprowadź adres e-mail i sprawdź s
 
 Wpisz adres IP, podaj przyczynę zlecenia usunięcia, następnie kliknij przycisk `Submit Query`{.action}.
 
-![fabel przykłady](obrazy/blocklist3.png){.thumbnail}
+![fabel przykłady](images/blocklist3.png){.thumbnail}
 
 Usunięcie listy powinno zająć od 20 do 30 minut.
 

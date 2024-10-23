@@ -4,6 +4,20 @@ excerpt: "Cómo solicitar la retirada de una dirección IP de una lista de bloqu
 updated: 2024-10-21
 ---
 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
 ## Objetivo
 
 La *blocklist* (o lista negra) es una herramienta antispam que se utiliza en las direcciones IP (o rangos de direcciones IP) para bloquear los mensajes de correo electrónico que se consideran spam o que pueden contener programas maliciosos. Si se bloquea un dominio de correo electrónico o una dirección IP, es posible que los mensajes de correo electrónico procedentes de ese dominio o dirección IP no lleguen a su cliente (servidor entrante o antivirus), lo que afecta a la entrega y reputación del remitente. Los mensajes de correo electrónico que llegan a la bandeja de entrada se pueden enviar a la carpeta de correo basura del destinatario en lugar de a la bandeja de entrada.
@@ -49,7 +63,8 @@ Es importante tener en cuenta que las listas negras pueden incluir nombres de do
 
 - [SpamRATS](https://spamrats.com/lookup.php)  
     Si utiliza su propio servidor de correo, deberá configurar el nombre de dominio en el campo PTR, que contiene la información de contacto del responsable. Sólo se eliminan de esta lista los servidores de correo configurados correctamente.  
-    También deberá [configurar la resolución DNS inversa](/pages/bare_metal_cloud/virtual_private_servers/configuring-reverse-dns).  
+    También deberá [configurar la resolución DNS inversa](/pages/bare_metal_cloud/virtual_private_servers/configuring-reverse-dns).
+    
     > [!primary]
     > **Buenas prácticas:**
     >

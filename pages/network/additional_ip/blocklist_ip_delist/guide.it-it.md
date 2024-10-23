@@ -4,6 +4,20 @@ excerpt: "Scopri come richiedere la rimozione di un indirizzo IP da una blocklis
 updated: 2024-10-21
 --- 
 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
 ## Obiettivo
 
 La *blocklist* (o lista di blocco) è uno strumento di lotta contro lo spam utilizzato sugli indirizzi IP (o classi di indirizzi IP) per bloccare le email considerate come spam o che potrebbero contenere malware. Se un dominio di posta o un indirizzo IP viene bloccato, è possibile che le email provenienti da tale dominio o indirizzo IP non raggiungano il client (server in entrata/antivirus), compromettendo l'adempienza a obblighi contrattuali e la reputazione del mittente. Le email che arrivano comunque ad essere trasmesse possono essere instradate nella cartella spam del destinatario invece che verso la sua casella di posta.
@@ -49,7 +63,8 @@ La *blocklist* (o lista di blocco) è uno strumento di lotta contro lo spam util
 
 - [SpamRATS](https://spamrats.com/lookup.php)  
     Se si utilizza un server di posta elettronica di proprietà dell'utente, sarà necessario configurare il dominio nel campo PTR in cui sono contenuti i dati di contatto del proprietario. Solo i server di posta configurati correttamente verranno rimossi da questo elenco.  
-    Sarà inoltre necessario [configurare la risoluzione DNS inversa](/pages/bare_metal_cloud/virtual_private_servers/configuring-reverse-dns).  
+    Sarà inoltre necessario [configurare la risoluzione DNS inversa](/pages/bare_metal_cloud/virtual_private_servers/configuring-reverse-dns).
+    
     > [!primary]
     > **Best practice:**
     >
