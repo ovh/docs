@@ -113,7 +113,7 @@ Téléversez l'image UWG image vers OpenStack:
 
 Rendez-vous dans la section `download`{.action} du [site officiel d'Ubika](https://my.ubikasec.com/){.external}. Connectez-vous à votre compte Ubika et suivez les instructions pour télécharger l'image UWG OpenStack.
 
-Rendez-vous dans le dossier où vous avez téléchargé votre image UWG OpenStack et téléversez l'image UWG OpenStack (pour ce tutoriel, nous utilisons l'image `UBIKA_WAAP_Gateway-generic-cloud-6.11.10+51a56f6201.b56855.qcow2`) :
+Rendez-vous dans le dossier où vous avez téléchargé votre image UWG OpenStack et importez l'image UWG OpenStack (pour ce tutoriel, nous utilisons l'image `UBIKA_WAAP_Gateway-generic-cloud-6.11.10+51a56f6201.b56855.qcow2`) :
 
 ```bash
 openstack image create --disk-format raw --container-format bare --file ~/Downloads/UBIKA_WAAP_Gateway-generic-cloud-6.11.10+51a56f6201.b56855.qcow2 Ubika-WAAP-Gateway-6.11.10
