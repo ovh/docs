@@ -1,7 +1,7 @@
 ---
 title: 'Securing your OVHcloud infrastructure with Ubika WAAP Gateway'
 excerpt: 'Find out how to secure your OVHcloud infrastructure with Ubika WAAP Gateway deployed on Public Cloud'
-updated: 2024-10-21
+updated: 2024-10-23
 ---
 
 ## Objective
@@ -28,7 +28,7 @@ This guide provides step-by-step instructions for deploying and configuring Ubik
 - A Ubika account on the [Ubika website](https://my.ubikasec.com/){.external}
 - Ensure that an appropriate block of Additional IPs is available
 - Ensure that the vRack is enabled and configured to allow secure communication between the components of the infrastructure
-- [Additional IP address](/links/network/additional-ip) for ensuring network failover and high availability setup.
+- [Additional IP address](/links/network/additional-ip) for ensuring network failover and high availability setup
 - Ubika WAAP Gateway Licence BYOL (**B**ring **Y**our **O**wn **L**icence), obtained directly from Ubika via the [official Ubika website](https://my.ubikasec.com/){.external}. You will need to provide it during the installation and configuration process
 
 ## Instructions

@@ -1,39 +1,39 @@
 ---
-title : 'Sécuriser votre infrastructure OVHcloud avec Ubika WAAP Gateway'
+title: 'Sécuriser votre infrastructure OVHcloud avec Ubika WAAP Gateway'
 excerpt: 'Découvrez comment sécuriser votre infrastructure OVHcloud avec Ubika WAAP Gateway déployé sur Public Cloud'
-updated : 2024-10-22
+updated: 2024-10-23
 ---
 
 ## Objectif
 
-À l'ère numérique actuelle, la sécurité des applications web est essentielle pour protéger l'infrastructure cloud contre les cybermenaces sophistiquées. Alors que les entreprises adoptent de plus en plus des solutions cloud, il est essentiel de garantir la sécurité des applications web et des API pour maintenir l'intégrité des données et prévenir les violations.
-**U**bika **W**AAP **G**ateway (UWG) offre des fonctionnalités avancées de protection des applications web et des API (WAAP), y compris des outils puissants tels que les pare-feu d'applications web (WAF), la protection des API, la gestion des bots et la mitigation des attaques DDoS. Ces outils vous aident à protéger votre environnement cloud contre un large éventail de menaces au niveau des applications.
+À l'ère numérique actuelle, la sécurité des applications web est essentielle pour protéger une infrastructure cloud contre les cybermenaces sophistiquées. Alors que les entreprises adoptent de plus en plus des solutions cloud, il est essentiel de garantir la sécurité des applications web et des API pour maintenir l'intégrité des données et prévenir les violations.
+**U**bika **W**AAP **G**ateway (UWG) offre des fonctionnalités avancées de protection des applications web et des API (WAAP), y compris des outils puissants tels que les pare-feux d'applications web (WAF), la protection des API, la gestion des bots et la mitigation des attaques DDoS. Ces outils vous aident à protéger votre environnement cloud contre un large éventail de menaces au niveau des applications.
 
-Ce guide fournit des instructions détaillées sur le déploiement et la configuration d'Ubika WAAP Gateway sur le Public Cloud d'OVHcloud. En suivant ce guide, vous apprendrez à configurer des réseaux privés pour la gestion et la charge de travail, à déployer des instances Ubika WAAP Gateway, à mettre en place une haute disponibilité (HA) en utilisant Additional IP, le vRack et le routage des IP publiques, et à assurer une architecture sécurisée et fiable pour votre infrastructure cloud.
+Ce guide fournit des instructions détaillées sur le déploiement et la configuration d'Ubika WAAP Gateway sur le Public Cloud OVHcloud. En suivant ce guide, vous apprendrez à configurer des réseaux privés pour la gestion et la charge de travail, à déployer des instances Ubika WAAP Gateway, à mettre en place une haute disponibilité (HA) en utilisant Additional IP, le vRack et le routage des IP publiques, et à assurer une architecture sécurisée et fiable pour votre infrastructure cloud.
 
-**Ce guide explique comment sécuriser votre infrastructure OVHcloud avec la passerelle WAAP Ubika déployée sur Public Cloud.**
+**Ce guide explique comment sécuriser votre infrastructure OVHcloud avec Ubika WAAP Gateway déployé sur Public Cloud.**
 
 > [!warning]
-> Ce guide vous explique comment utiliser une ou plusieurs solutions OVHcloud avec des outils externes et décrit les actions à effectuer dans un contexte spécifique, en adaptant les instructions à votre situation.
+> Ce tutoriel vous explique comment utiliser une ou plusieurs solutions OVHcloud avec des outils externes et décrit les actions à effectuer dans un contexte spécifique. Vous devrez peut-être adapter les instructions en fonction de votre situation.
 >
-> Si vous rencontrez des difficultés pour effectuer ces actions, veuillez contacter un [prestataire de services spécialisé](/links/partner) et/ou discuter du problème avec notre communauté. Plus d'informations dans la section [Aller plus loin](#gofurther) de ce guide.
+> Si vous éprouvez des difficultés à appliquer ces instructions, nous vous recommandons de faire appel à un [prestataire spécialisé](/links/partner) et/ou discuter du problème avec notre communauté. Pour plus d'informations, consultez la section [Aller plus loin](#gofurther) de ce tutoriel.
 >
 
 ## Prérequis
 
 - Un [projet Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project) dans votre compte OVHcloud.
-- Accès à l'[espace client OVHcloud](/links/manager).
-- Un [utilisateur OpenStack](/pages/public_cloud/compute/create_and_delete_a_user) (optionnel).
-- Connaissances de base en réseau.
-- Un compte Ubika sur le [site web d'Ubika](https://my.ubikasec.com/){.external}.
-- S'assurer qu'un bloc d'Additional IP approprié est disponible.
+- Être connecté à l'[espace client OVHcloud](/links/manager).
+- Un [utilisateur OpenStack](/pages/public_cloud/compute/create_and_delete_a_user) (facultatif).
+- Des connaissances de base en réseau.
+- Un compte Ubika créé via le [site web d'Ubika](https://my.ubikasec.com/){.external}.
+- S'assurer qu'un bloc approprié d'addresses Additional IP est disponible.
 - S'assurer que le vRack est activé et configuré pour permettre une communication sécurisée entre les composants de l'infrastructure.
-- Une [Additional IP](/links/network/additional-ip) pour assurer le basculement du réseau et la configuration de la haute disponibilité.
-- Licence Ubika WAAP Gateway BYOL (**B**ring **Y**our **O**wn **L**icence), obtenue directement auprès d'Ubika via le [site officiel d'Ubika](https://my.ubikasec.com/){.external}. Vous devrez le fournir lors de l'installation et de la configuration
+- Une adresse [Additional IP](/links/network/additional-ip) pour permettre le failover et la configuration de la haute disponibilité.
+- Une licence Ubika WAAP Gateway BYOL (**B**ring **Y**our **O**wn **L**icence), obtenue directement auprès d'Ubika via le [site officiel Ubika](https://my.ubikasec.com/){.external}. Vous devrez la fournir lors de l'installation et de la configuration.
 
 ## En pratique
 
-En plus de l'installation et de la configuration d'UWG, ce tutoriel propose un cas d'utilisation où vous testerez UWG en déployant et en exécutant une application web sur votre infrastructure Public Cloud :
+En plus de l'installation et de la configuration d'UWG, ce tutoriel propose un cas d'usage où vous testerez UWG en déployant et en exécutant une application web sur votre infrastructure Public Cloud :
 
 - [Configurer votre vRack](#step1)
 - [Installer et configurer Ubika WAAP Gateway sur votre environnement Public Cloud](#step2)
@@ -55,16 +55,16 @@ Voici l'architecture que nous allons mettre en place :
 ### Installer et configurer Ubika WAAP Gateway sur votre environnement Public Cloud <a name="step2"></a>
 
 > [!primary]
-> Dans ce tutoriel, l'installation et la configuration d'UWG s'effectue principalement via la ligne de commande. Ouvrez un terminal pour exécuter les instructions.
+> Dans ce tutoriel, l'installation et la configuration d'UWG s'effectuent principalement via la ligne de commande. Ouvrez un terminal pour exécuter les instructions.
 >
-> Veuillez noter que toutes les rubriques relatives à la « Haute disponibilité » sont facultatives ainsi que l'utilisation du réseau vRack avec Additional IP. Ils sont inclus pour montrer comment mettre en place le système avec deux instances en mode actif/passif pour une haute disponibilité. Dans une version minimale, il peut également fonctionner avec une seule instance si cela suffit à vos besoins.
+> Veuillez noter que toutes les rubriques relatives à la « Haute disponibilité » sont facultatives ainsi que l'utilisation du réseau vRack avec Additional IP. Ces rubriques sont fournies pour montrer comment mettre en place le système avec deux instances en mode actif/passif pour une haute disponibilité. Dans une version minimale, il peut également fonctionner avec une seule instance si cela suffit à vos besoins.
 
 #### Configurer le réseau de gestion Ubika WAAP Gateway
 
 > [!primary]
-> Dans ce scénario, nous utiliserons deux machines virtuelles configurées pour l'appliance de sécurité afin d'atteindre la haute disponibilité (HA) et une machine virtuelle supplémentaire pour la gestion. Cette configuration assure une protection contre le basculement et une disponibilité continue du service. Pour plus d'exemples et de conseils détaillés sur les options d'évolutivité, veuillez vous référer à la [documentation Ubika](https://www.ubikasec.com/ressources/){.external}.
+> Dans ce scénario, nous utiliserons deux machines virtuelles configurées pour l'appliance de sécurité afin d'atteindre la haute disponibilité (HA) et une machine virtuelle supplémentaire pour la gestion. Cette configuration assure une protection du failover et une disponibilité continue du service. Pour plus d'exemples et de conseils détaillés sur les options d'évolutivité, veuillez vous référer à la [documentation Ubika](https://www.ubikasec.com/ressources/){.external}.
 
-Créer un réseau privé pour la gestion de l'infrastructure :
+Créez un réseau privé pour la gestion de l'infrastructure :
 
 ```bash
 openstack network create --provider-network-type vrack --provider-segment 1000 ubika-management
@@ -109,11 +109,11 @@ openstack router add subnet 2481bcaf-efa2-419a-ad92-d6d27737dfd1 ubika-workload
 
 #### Déployer les instances Ubika WAAP Gateway
 
-Upload UWG image to OpenStack:
+Téléversez l'image UWG image vers OpenStack:
 
 Rendez-vous dans la section `download`{.action} du [site officiel d'Ubika](https://my.ubikasec.com/){.external}. Connectez-vous à votre compte Ubika et suivez les instructions pour télécharger l'image UWG OpenStack.
 
-Rendez-vous dans le dossier où vous avez téléchargé votre image UWG OpenStack et téléchargez l'image UWG OpenStack (pour ce tutoriel, nous utilisons l'image `UBIKA_WAAP_Gateway-generic-cloud-6.11.10+51a56f6201.b56855.qcow2`) :
+Rendez-vous dans le dossier où vous avez téléchargé votre image UWG OpenStack et téléversez l'image UWG OpenStack (pour ce tutoriel, nous utilisons l'image `UBIKA_WAAP_Gateway-generic-cloud-6.11.10+51a56f6201.b56855.qcow2`) :
 
 ```bash
 openstack image create --disk-format raw --container-format bare --file ~/Downloads/UBIKA_WAAP_Gateway-generic-cloud-6.11.10+51a56f6201.b56855.qcow2 Ubika-WAAP-Gateway-6.11.10
@@ -189,7 +189,7 @@ Répétez ces étapes pour créer une seconde instance gérée UWG, mais utilise
 
 #### Configurer le HA sur les instances gérées par UWG
 
-Obtenir l'IP publique de l'instance de gestion :
+Récupérez l'IP publique de l'instance de gestion :
 
 ```bash
 openstack port list --server ubika-management --network Ext-Net
@@ -255,13 +255,13 @@ Appliquez la configuration (bouton en haut à droite de l'interface) :
 
 ### Configurer les licences <a name="step3"></a>
 
-Les licences Ubika WAAP Gateway sont disponibles directement auprès d'Ubika via le [site officiel d'Ubika](https://my.ubikasec.com/){.external}. En fonction de vos besoins de déploiement, vous pouvez choisir entre une licence de machine virtuelle unique ou une licence en mode Haute disponibilité, qui prend en charge une configuration Active-Backup avec deux instances de plan de données et une ou plusieurs instances de plan de contrôle. Les licences varient également en fonction du SSL TPS (Transactions par seconde), prenant en charge plusieurs certificats SSL ou des capacités de basculement.
+Les licences Ubika WAAP Gateway sont disponibles directement auprès d'Ubika via le [site officiel d'Ubika](https://my.ubikasec.com/){.external}. En fonction de vos besoins de déploiement, vous pouvez choisir entre une licence de machine virtuelle unique ou une licence en mode Haute disponibilité, qui prend en charge une configuration Active-Backup avec deux instances de data-plane et une ou plusieurs instances de control-plane. Les licences varient également en fonction du SSL TPS (Transactions Par Seconde), prenant en charge plusieurs certificats SSL ou des capacités de failover.
 
-Il est fortement recommandé d'utiliser les dernières instances de calcul pour les déploiements d'appliances, par exemple :
+Il est fortement recommandé d'utiliser les dernières générations d'instances compute pour les déploiements d'appliances, par exemple :
 
 - C3-8 pour les besoins de base et les licences VMcloud.
-- Licences C3-16, C3-32, C3-64 et C3-128 pour Ubika Enterprise Edition 1500, 2450, 4450, 5450 et 6450 respectivement.
-- C3-16 pour la petite console MGMT, ou C3-128 pour la grande console MGMT (dépend des options d'observabilité activées).
+- C3-16, C3-32, C3-64 et C3-128 respectivement pour les licences Ubika Enterprise Edition 1500, 2450, 4450, 5450 et 6450.
+- C3-16 pour la petite console MGMT, ou C3-128 pour la grande console MGMT (en fonction des options d'observabilité activées).
 
 Pour appliquer les licences, vous devrez fournir les informations suivantes à UWG :
 
@@ -273,7 +273,7 @@ Une fois que vous avez reçu les licences d'Ubika, appliquez-les aux instances c
 
 ### Créez votre environnement de serveur web <a name="step4"></a>
 
-Dans cette section, nous allons créer un environnement de serveur web et mettre en place un load balancer pour répartir le trafic entre plusieurs serveurs web. Cette étape est cruciale pour valider le bon fonctionnement du réseau, la sécurité et les paramètres de haute disponibilité de votre configuration UWG. En mettant en œuvre un répartiteur de charge, nous assurons l'équilibre du trafic sur vos serveurs web. Cela permet une protection et une redondance en cas de basculement, ce qui est essentiel pour maintenir la disponibilité du service.
+Dans cette section, nous allons créer un environnement de serveur web et mettre en place un load balancer pour répartir le trafic entre plusieurs serveurs web. Cette étape est cruciale pour valider le bon fonctionnement du réseau, la sécurité et les paramètres de haute disponibilité de votre configuration UWG. En mettant en œuvre un load balancer, nous assurons l'équilibre du trafic sur vos serveurs web. Cela permet une protection et une redondance en cas de failover, ce qui est essentiel pour maintenir la disponibilité du service.
 
 Créez deux serveurs web sur le réseau de charge de travail.
 
@@ -307,19 +307,19 @@ openstack server create --flavor b3-8 --image "Ubuntu 22.04" --network ubika-wor
 openstack server create --flavor b3-8 --image "Ubuntu 22.04" --network ubika-workload ubika-test-webserver-2 --key-name <username> --user-data ./webserver.cloud-init
 ```
 
-Créez un load balancer privé Octavia :
+Créez un load balancer Octavia privé :
 
 ```bash
 openstack loadbalancer create --name ubika-test-webserver --vip-subnet-id ubika-workload
 ```
 
-Vérifiez l'état du load balancer : il doit être `ACTIF` :
+Vérifiez l'état du load balancer, il doit être `ACTIF` :
 
 ```bash
 openstack loadbalancer show 367ecaef-28f6-4866-9af2-7ce519ba688f
 ```
 
-Créez un listener HTTP pour l'équilibrage de charge :
+Créez un listener HTTP pour le load balancer :
 
 ```bash
 openstack loadbalancer listener create --name ubika-test-webserver --protocol HTTP --protocol-port 80 29590860-2852-44c3-9514-dfb271bd9371
@@ -329,7 +329,7 @@ openstack loadbalancer listener create --name ubika-test-webserver --protocol HT
 openstack loadbalancer pool create --name ubika-test-webserver --listener 3e77b59f-0abb-4861-b0a5-7de442ee6d1b --protocol HTTP --lb-algorithm ROUND_ROBIN
 ```
 
-Créez un contrôle d'intégrité pour le pool de serveurs principaux d'équilibrage de charge :
+Créez un contrôle d'intégrité (*health check*) pour le pool de backends du load balancer :
 
 ```bash
 openstack loadbalancer healthmonitor create --type HTTP --delay 5 --timeout 5 --max-retries 3 212ff492-6935-4810-973f-83b7346e72ac
@@ -389,6 +389,6 @@ ubika-test-webserver-1
 
 ## Aller plus loin <a name="gofurther"></a>
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l'équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l'équipe Professional Services.
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre [communauté d'utilisateurs](/links/community).

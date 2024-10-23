@@ -1,7 +1,7 @@
 ---
 title: 'Securing your OVHcloud infrastructure with Stormshield Network Security'
 excerpt: 'Find out how to secure your OVHcloud infrastructure with Stormshield Network Security deployed on Public Cloud'
-updated: 2024-10-21
+updated: 2024-10-23
 ---
 
 ## Objective
@@ -11,7 +11,7 @@ In today's rapidly evolving digital landscape, securing cloud infrastructures ha
 **This guide explains how to secure your OVHcloud infrastructure with Stormshield Network Security deployed on Public Cloud.**
 
 > [!warning]
-> This guide will show you how to use one or more OVHcloud solutions with external tools, and will describe the actions to be carried out in a specific context. ou may need to adapt the instructions according to your situation.
+> This guide will show you how to use one or more OVHcloud solutions with external tools, and will describe the actions to be carried out in a specific context. You may need to adapt the instructions according to your situation.
 >
 > If you encounter any difficulties performing these actions, please contact a [specialist service provider](/links/partner) and/or discuss the issue with our community. You can find more information in the [Go further](#gofurther) section of this guide.
 >
@@ -53,8 +53,8 @@ In this step, we are configuring the vRack, a private virtual network provided b
 
 **Add your Public Cloud project and your Additional IP block to the same vRack.**
 
-For example purposes in this guide, the IP block is `147.135.161.152/29`.
-We use the first usable IP `147.135.161.153` for the first instance of SNS and use temporally the second usable IP `147.135.161.154` for the second SNS.
+For example purposes in this guide, the IP block is `147.135.161.152/29`.<br>
+We use the first usable IP `147.135.161.153` for the first instance of SNS and use temporally the second usable IP `147.135.161.154` for the second SNS.<br>
 The gateway address is `147.135.161.158`.
 
 Please refer to the guide [Configuring an IP block in a vRack](/pages/bare_metal_cloud/dedicated_servers/configuring-an-ip-block-in-a-vrack) for more information.
@@ -159,7 +159,7 @@ Mask=255.255.0.0
 ...
 ```
 
-Apply the new network configuration
+Apply the new network configuration:
 
 ```bash
 ennetwork
@@ -183,13 +183,13 @@ When the configuration of the HA is finished on the first SNS, join the group of
 
 ![SNS vrack](images/ha-3.png){.thumbnail}
 
-![SNS vrack](./images/ha-4.png){.thumbnail}
+![SNS vrack](images/ha-4.png){.thumbnail}
 
 The second SNS external interface will now use the same IP address as the first SNS. Therefore the `147.135.161.154` IP address can be used for something else now.
 
 If everything is configured properly, after the reboot of the second SNS, you should see something similar to this in the Health Indicators of the HA Link:
 
-![SNS vrack](./images/ha-5.png){.thumbnail}
+![SNS vrack](images/ha-5.png){.thumbnail}
 
 #### Configure and secure the SNS management
 
@@ -219,7 +219,7 @@ If everything is configured properly, after the reboot of the second SNS, you sh
 >>
 >> Restrict SSH access to your public IP:
 >>
->> ![SNS vrack](./images/configure-management-3.png){.thumbnail}
+>> ![SNS vrack](images/configure-management-3.png){.thumbnail}
 
 #### Re-synchronize the HA configuration
 
@@ -326,13 +326,13 @@ In this example, the Internet should be able to reach the private web server ins
 >>
 >> Create a NAT rule like this one:
 >>
-![SNS vrack](./images/nat-2.png){.thumbnail}
+![SNS vrack](images/nat-2.png){.thumbnail}
 >>
 > **Step 4**
 >>
 >> Create a filter rule like this one:
 >>
->> ![SNS vrack](./images/nat-3.png){.thumbnail}
+>> ![SNS vrack](images/nat-3.png){.thumbnail}
 >>
 
 Test to access the website from outside:
@@ -392,7 +392,7 @@ Re-do all the steps in another region using the VLAN 201 instead of the VLAN 200
 >>
 >> Add a filter rule like this one to allow traffic through the tunnel:
 >>
->>![SNS vrack](./images/ipsec-8.png){.thumbnail}
+>>![SNS vrack](images/ipsec-8.png){.thumbnail}
 >>
 
 Synchronize the two HA SNS instances:
