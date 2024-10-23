@@ -1,78 +1,56 @@
 ---
 title: "VMware Cloud Director - FAQ"
-excerpt: "Frequently asked questions on VCD"
-updated: 2024-05-23
+excerpt: "Find the most frequently asked questions about VCD"
+updated: 2024-10-23
 ---
 
 ## FAQ
 
-<a name="VCDonOVH"></a>
+**Find below the most frequently asked questions about VMWare Cloud Director on OVHcloud**
 
-### What is VMware Cloud Director by OVHcloud?
-
-This is a new product available within the VMware on OVHcloud offers that provides you with a virtual Datacenter powered by VMware technology, on top of a mutualized infrastructure hosted and operated by OVHcloud.
-
-VMware Cloud Director by OVHcloud will be available in 3 tiers:
-
-- VCD Standard, providing the standard VMware stack virtualization capabilities.
-- VCD Advanced, including advanced networking & security capabilities on top of the Standard tier.
-- VCD Premium, adding high-performance vSAN storage to the Advanced tier.
-
-Please see [our key features page](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts#key-features) for more information.
-
-<a name="migrationVCD"></a>
-
-### How will the migration be done by OVHcloud?
-
-If you choose to migrate to VCD, OVHcloud will be handling the migration for you.
-
-As an exception, we won’t be charging the new current server/host prices during the migration process. We’ll absorb the costs of the license price increase while the migration is ongoing. Whether or not you choose to continue using the current solution, you will still benefit from the new VCD prices right away, starting on May 1st 2024.
-
-However, our goal is to migrate to VCD as soon as we’re ready. We’ll notify you 1 to 2 weeks before your migration starts, which will be carried out with zero downtime. If, for technical reasons, a live migration cannot be done, we’ll discuss with you how to proceed best.
-
-<a name="migrationdata"></a>
-
-### How are you migrating my data to VCD?
-
-Your data stays on the Leclerc v3 filers, we will expose the storage to VCD like we are exposing the storage to vSphere. The "live" migration between two hosts with the same CPU (Intel) is done via vMotion.
-
-<a name="accessAPI"></a>
-
-### Can I still have access to vSphere ESXi and vCenter API with VMware Cloud Director?
-
-With VMware Cloud Director, you cannot access to vSphere ESXi and vCenter API. You will have access to Cloud Director API, and you can use tools such as Terraform.
-
-<a name="backupTools"></a>
-
-### Can I still use products like Veeam, Naviko, Rubik to backup my VMs?
-
-No, with VMware Cloud Director, you cannot use tools that request access to vSphre ESXi or vCenter.
-
-For backup, we will propose Veeam Managed Backup with an integrated plugin for VM backups.
-We will propose 3 types of jobs by default, but you can add different policies if you need.
-
-Consumption will be based on VMs per month and storage consumption per month.
-
-<a name="rulesvSphere"></a>
-
-### Can I use rules such as affinity and anti-affinity as previously used with vSphere?
-
-With VMware Cloud Director, you are able to set group affinity for Virtual Machines and rules such as anti-affinity to separate different virtual machines.
-
-<a name="certifications"></a>
-
-### Which certifications apply to the new VCD service?
-
-At the service launch, no specific certification will be applicable to the VMware Cloud Director by OVHcloud service.
-
-However, supporting HDS, ISO27001, SOC2 or PCI-DSS certifications are clearly our roadmap objectives.
-
-### Can I choose the "Thin or Thick disk" type when I create a new virtual machine or disk with VCD?
-
-No, with VMware Cloud Director, each disk consumes storage in a Virtual Datacentre (VDC) organization. There is no associated "Thin or Thick" setting for a tenant.
+> [!faq]
+> **What is VMware Cloud Director on OVHcloud**? <a name="VCDonOVH"></a>
+> > This is a new product available in the VMware on OVHcloud solution, which provides you with a virtual datacentre powered by VMware technology, in addition to a shared infrastructure hosted and operated by OVHcloud.
+> >
+> > VMware Cloud Director on OVHcloud will be available in 3 tiers:
+> > - VCD Standard, providing the standard VMware stack virtualization capabilities.
+> > - VCD Advanced, including advanced networking & security capabilities on top of the Standard tier.
+> > - VCD Premium, adding high-performance vSAN storage to the Advanced tier.
+> >
+> > For more information, see the page [VMware Cloud Director - The fundamentals of VCD](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-get-concepts#key-features).
+> >
+> **How will the migration be carried out by OVHcloud**? <a name="migrationVCD"></a>
+> > If you choose to migrate to VCD, OVHcloud will perform the migration for you, you can follow the following guide [VMware Cloud Director - Audit tricky use cases of migration](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_migration_use-cases) for further information on the full process.
+> > By exception, we will not charge the new current server/host prices during the migration process. We will absorb the costs of raising the price of licenses during the migration. Whether you choose to continue using the current solution or not, you will immediately benefit from the new VCD rates from May 1st, 2024.
+> > However, our goal is to migrate to VCD as soon as we are ready. We will notify you 1 to 2 weeks before the start of your migration, which will be carried out with no downtime. If, for technical reasons, a live migration cannot be carried out, we will discuss with you the best way to proceed.
+> >
+> **How are you migrating my data to VCD**? <a name="migrationdata"></a>
+> > Your data remains on the Leclerc v3 *filers*. We will expose the storage to VCD just as we expose the storage to vSphere. Live migration between two hosts with the same CPU (Intel) is done via vMotion.
+> >
+> **Can I still access vSphere ESXi and the vCenter API with VMware Cloud Director**? <a name="accessAPI"></a>
+> > With VMware Cloud Director, you cannot access the vSphere ESXi and vCenter APIs. You will have access to the Cloud Director API and can use tools like [Terraform](https://registry.terraform.io/providers/vmware/vcd/latest/docs).
+> >
+> **Can I still use products like Veeam, Naviko, Rubik to back up my VMs**? <a name="backupTools"></a>
+> > No. With VMware Cloud Director, you cannot use a tool requesting access to vSphere ESXi or vCenter. However, we have set up a managed Veeam solution for setting up your backups.
+> >
+> **How are backups configured with VCD**?
+> > For backups, we will offer you **Veeam Managed Backup** with an integrated plugin for VM backups, you can follow the following guide for more information: [VMware Cloud Director - Backup with Veeam Data Platform](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-backup).
+> > For backup configuration, we offer 3 types of jobs by default with Veeam, but you can add different policies if required. You may incur fees when you enable the Veeam Data Platform plugin.
+> > Consumption will be based on VMs and by month, and storage consumption by month.
+> >
+> **Can I use rules like affinity and anti-affinity as before with vSphere**? <a name="rulesvSphere"></a>
+> > With VMware Cloud Director, you can define group affinity for virtual machines and rules like anti-affinity to isolate different virtual machines.
+> >
+> **Which certifications apply to the new VCD service**? <a name="certifications"></a>
+> > When the service is launched, OVHcloud will not apply any specific certification to the VMware Cloud Director service.
+> > However, support for HDS, ISO27001, SOC2 or PCI-DSS certifications is one of the objectives of our roadmap.
+> >
+> **Can I choose the Thin or Thick disk type with VMware Cloud Director when I create a new virtual machine or disk**?
+> > No. With VMware Cloud Director, each disk consumes storage in a Virtual Datacentre (vDC) organization. There is no associated Thin or Thick setting for a tenant.
+> >
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you require training or technical support to implement our solutions, contact your sales representative or click [this link](/links/professional-services) to get a quote and request a custom analysis of your project from our Professional Services team experts.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

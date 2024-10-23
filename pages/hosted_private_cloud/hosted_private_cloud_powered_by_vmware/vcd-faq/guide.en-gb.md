@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - FAQ"
 excerpt: "Find the most frequently asked questions about VCD"
-updated: 2024-10-22
+updated: 2024-10-23
 ---
 
 ## FAQ
@@ -21,7 +21,7 @@ updated: 2024-10-22
 > >
 > **How will the migration be carried out by OVHcloud**? <a name="migrationVCD"></a>
 > > If you choose to migrate to VCD, OVHcloud will perform the migration for you, you can follow the following guide [VMware Cloud Director - Audit tricky use cases of migration](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_migration_use-cases) for further information on the full process.
-> > By exception, we will not charge the new current server/host prices during the migration process. We will absorb the costs of raising the price of licenses during the migration. Whether you choose to continue using the current solution or not, you will immediately benefit from the new VCD rates from 01 May 2024.
+> > By exception, we will not charge the new current server/host prices during the migration process. We will absorb the costs of raising the price of licenses during the migration. Whether you choose to continue using the current solution or not, you will immediately benefit from the new VCD rates from May 1st, 2024.
 > > However, our goal is to migrate to VCD as soon as we are ready. We will notify you 1 to 2 weeks before the start of your migration, which will be carried out with no downtime. If, for technical reasons, a live migration cannot be carried out, we will discuss with you the best way to proceed.
 > >
 > **How are you migrating my data to VCD**? <a name="migrationdata"></a>
@@ -53,4 +53,4 @@ updated: 2024-10-22
 
 If you require training or technical support to implement our solutions, contact your sales representative or click [this link](/links/professional-services) to get a quote and request a custom analysis of your project from our Professional Services team experts.
 
-Join our [community of users](https://community.ovh.com).
+Join our [community of users](/links/community).
