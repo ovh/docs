@@ -1902,6 +1902,7 @@
     + [Additional IP](network-additional-ip)
         + [Configuring an IPv6 block in a vRack](bare_metal_cloud/dedicated_servers/configure-an-ipv6-in-a-vrack)
         + [Cancelling an Additional IP service](network/additional_ip/additional-IP-cancellation)
+        + [How to delist blocklisted IP addresses](network/additional_ip/blocklist_ip_delist)
     + [Network and Security](network-security)
         + [Monitoring DDoS attacks with the Network Security Dashboard](bare_metal_cloud/dedicated_servers/network_security_dashboard)
     + [OVHcloud Connect](products/network-ovhcloud-connect)
