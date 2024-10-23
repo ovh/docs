@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Activer un certificat SSL EV"
 excerpt: "Découvrez comment commander et installer un certificat SSL EV sur votre hébergement Web OVHcloud"
-updated: 2024-10-10
+updated: 2024-10-22
 ---
 
 ## Objectif
@@ -55,9 +55,57 @@ Pour vérifier si vous êtes éligible à la souscription d'un certificat SSL EV
 
 ### Etape 1 : commander le certificat SSL EV
 
+Les certificats SSL Sectigo EV proposés chez OVHcloud ne sont valables que pour l'un des deux cas suivants sur votre hébergement web :
+
+ - un seul nom de domaine + son sous-domaine en « www » (exemple : `domain.tld` et `www.domain.tld`) ;
+ - un seul sous-domaine (exemple : `sub.domain.tld`).
+
+Cela signifie que si vous avez d'autres noms de domaine/sous-domaines déclarés en multisite sur votre hébergement web, ces derniers ne pourront pas bénéficier d'un certificat SSL.
+
+En effet, il n'est possible d'installer qu'un seul certificat SSL par hébergement web.
+
+Si vous avez besoin d'activer un certificat SSL pour plusieurs noms de domaine/sous-domaines déclarés sur votre hébergement web, privilégiez l'installation d'un [certificat SSL gratuit Let's Encrypt](/links/web/hosting-options-ssl) ou installez votre propre [certificat SSL personnalisé](/pages/web_cloud/web_hosting/ssl_custom).
+
 #### 1.1 - Pour un domaine et un hébergement déjà existants chez OVHcloud
 
-Consultez notre guide sur comment [gérer un certificat SSL sur son hébergement web](/pages/web_cloud/web_hosting/ssl_on_webhosting) et sélectionnez le **Certificat SSL EV** une fois arrivé dans le tunnel de commande.
+> [!warning]
+>
+> **Avant de poursuivre**, vérifiez que **le nom de domaine et/ou sous-domaine** concerné par votre futur certificat SSL Sectigo EV :
+>
+> - pointe vers l'adresse IP de votre hébergement web ; 
+> - est déclaré en multisite sur votre hébergement web.
+>
+> Pour vous en assurer, vous pouvez consulter nos guides :
+>
+> - [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) ;
+> - [Liste des adresses IP des clusters et hébergements web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) ;
+> - [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit).
+>
+> Dans le cas où vous souhaitez souscrire à un certificat SSL Sectigo EV pour un nom de domaine (exemple : `domain.tld`), vérifiez bien que son sous-domaine en « www » (exemple : `www.domain.tld`) pointe bien également vers l'adresse IP de votre hébergement web et est correctement déclaré en multisite.
+>
+> En effet, le cas échéant et si vous commandez le certificat SSL Sectigo EV sans vous en assurer, vous devrez effectuer un correctif a posteriori. Vous devrez alors supprimer le certificat SSL Sectigo EV précédemment souscrit **sans être remboursé**, puis en commander un nouveau. L'objectif est que le nouveau certificat SSL Sectigo EV englobe bien à la fois votre nom de domaine `domain.tld` et son son sous-domaine en « www » `www.domain.tld`.
+>
+> Pour rappel, si vous souscrivez à un certificat SSL Sectigo EV directement pour un sous-domaine (exemple : `sub.domain.tld`), vous n'êtes pas concerné par cette situation.
+
+Pour commander le certificat SSL Sectigo EV, réalisez les actions suivantes :
+
+1. Connectez-vous à votre [espace client OVHcloud](/links/manager).
+2. Sur la ligne située en haut de l'espace client, cliquez sur l'onglet `Web Cloud`{.action}.
+3. Dans la colonne de gauche, cliquez sur le menu déroulant `Hébergements`{.action}.
+4. Sélectionnez l'hébergement web concerné.
+5. Sur la page qui s'affiche, restez dans l'onglet `Informations générales`{.action}.
+6. Positionnez-vous dans l'encadré intitulé `Configuration`.
+7. A droite de la mention `Certificat SSL`, cliquez sur le bouton `...`{.action}, puis sur `Commander un certificat SSL`{.action}.
+
+![Order an SSL certificate](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/order-an-ssl-certificate.png){.thumbnail}
+
+Dans la fenêtre qui apparaît, sélectionnez `Certificat payant`{.action} parmi la liste des choix possibles.
+
+Sélectionnez ensuite le nom de domaine/sous-domaine concerné dans la liste déroulante qui apparaît, puis cliquez sur `Suivant`{.action}.
+
+Dans la nouvelle fenêtre qui s'affiche, cliquez sur `Valider`{.action} pour être redirigé vers le bon de commande de votre certificat SSL EV.
+
+Sélectionnez le **Certificat SSL EV** une fois arrivé dans le tunnel de commande, puis poursuivez la commande.
 
 Renseignez avec exactitude les informations demandées par **Sectigo** avant que ne vous soit délivré le certificat SSL EV. 
 
