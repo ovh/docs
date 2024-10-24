@@ -1643,7 +1643,6 @@
                 + [Ajouter un lien LTE sur OverTheBox](web_cloud/internet/overthebox/plus_itv2_lte)
             + [Advanced setup](web-cloud-internet-overthebox-advanced-setup)
                 + [Créer manuellement une interface modem](web_cloud/internet/overthebox/advanced_creer_une_interface_modem_manuellement)
-                + [Configurer un VLAN sur OverTheBox](web_cloud/internet/overthebox/advanced_configuration_de_vlan)
                 + [Ajouter un serveur Active Directory à OverTheBox](web_cloud/internet/overthebox/advanced_ajouter_un_serveur_active_directory_dans_les_options_dhcp)
                 + [Utiliser un serveur VPN PPTP avec OverTheBox](web_cloud/internet/overthebox/advanced_Utiliser_un_serveur_PPTP)
                 + [Installer l'image OverTheBox sur votre matériel](web_cloud/internet/overthebox/advanced_installer_limage_overthebox_sur_votre_materiel)
