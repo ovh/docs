@@ -298,6 +298,8 @@ A continuación, el disco dañado ya podrá ser sustituido por un técnico del d
 
 [RAID por software](/pages/bare_metal_cloud/dedicated_servers/raid_soft)
 
+[OVHcloud API and Storage](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
+
 [RAID por hardware](/pages/bare_metal_cloud/dedicated_servers/raid_hard)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

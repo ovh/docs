@@ -294,7 +294,7 @@ Die defekte Festplatte kann jetzt von einem Techniker im Rechenzentrum ausgetaus
 
 [Erfahren Sie hier, wie Sie das RAID Array Ihres Servers rekonfigurieren](/pages/bare_metal_cloud/dedicated_servers/raid_soft)
 
-[OVHcloud API & Partitioning](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh) (Englisch)
+[OVHcloud API and Storage](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh) (Englisch)
 
 [Managing hardware RAID](/pages/bare_metal_cloud/dedicated_servers/raid_hard) (Englisch)
 

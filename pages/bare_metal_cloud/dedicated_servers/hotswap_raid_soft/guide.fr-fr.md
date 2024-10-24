@@ -294,7 +294,7 @@ Le disque défectueux est désormais prêt à être remplacé par un technicien 
 
 [Gestion du RAID logiciel](/pages/bare_metal_cloud/dedicated_servers/raid_soft)
 
-[API OVHcloud & Partitionnement](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
+[API OVHcloud et Stockage](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
 
 [Gestion du RAID matériel](/pages/bare_metal_cloud/dedicated_servers/raid_hard)
 

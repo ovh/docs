@@ -292,6 +292,8 @@ O disco danificado já pode ser substituído por um técnico do datacenter. Uma 
 
 ## Quer saber mais?
 
-* [RAID por software](/pages/bare_metal_cloud/dedicated_servers/raid_soft){.external}
+[RAID por software](/pages/bare_metal_cloud/dedicated_servers/raid_soft){.external}
+
+[OVHcloud API and Storage](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

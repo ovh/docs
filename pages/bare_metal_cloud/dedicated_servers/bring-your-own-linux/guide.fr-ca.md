@@ -1,7 +1,7 @@
 ---
 title: Bring Your Own Linux (BYOLinux)
 excerpt: Découvrez comment déployer facilement vos propres images Linux sur des serveurs dédiés
-updated: 2024-07-19
+updated: 2024-10-22
 ---
 
 ## Objectif
@@ -74,49 +74,28 @@ Connectez-vous sur [https://api.ovh.com/](https://api.ovh.com/){.external} puis 
 
 > [!api]
 >
-> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/install/start
+> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/reinstall
 >
 
 Le contenu de la requête API de Bring Your Own Linux (BYOLinux) doit être similaire au fichier JSON suivant :
 
 > [!warning]
 >
-> Dans la section `userMetadata`, seul le champ `imageURL` est obligatoire.
+> Dans la section `customizations`, seul le champ `imageURL` est obligatoire.
 >
 
 ```json
 {
-  "details": {
-    "customHostname": "myCustomBYOLinux"
-  },
-  "partitionSchemeName": "default",
-  "templateName": "byolinux_64",
-  "userMetadata": [
-    {
-      "key": "imageURL",
-      "value": "https://github.com/ashmonger/akution_test/releases/download/0.5-compress/deb11k6.qcow2"
+  "operatingSystem": "byolinux_64",
+  "customizations": {
+    "imageURL": "https://github.com/ashmonger/akution_test/releases/download/0.5-compress/deb11k6.qcow2",
+    "imageCheckSum": "367f26c915f39314dde155db3a2b0326803e06975d1f4be04256f8b591e38fd4062d36eb7d50e99da7a50b7f4cd69640e56a4ab93e8e0274e4e478e0f84b5d29",
+    "httpHeaders": {
+      "Authorization": "Basic bG9naW46cGFzc3dvcmQ="
     },
-    {
-      "key": "httpHeaders0Key",
-      "value": "Authorization"
-    },
-    {
-      "key": "httpHeaders0Value",
-      "value": "Basic bG9naW46cGFzc3dvcmQ="
-    },
-    {
-      "key": "imageCheckSum",
-      "value": "367f26c915f39314dde155db3a2b0326803e06975d1f4be04256f8b591e38fd4062d36eb7d50e99da7a50b7f4cd69640e56a4ab93e8e0274e4e478e0f84b5d29"
-    },
-    {
-      "key": "imageCheckSumType",
-      "value": "sha512"
-    },
-    {
-      "key": "configDriveUserData",
-      "value": "I2Nsb3VkLWNvbmZpZwpzc2hfYXV0aG9yaXplZF9rZXlzOgogIC0gc3NoLXJzYSBBQUFBQjhkallpdz09IG15c2VsZkBteWRvbWFpbi5uZXQKCnVzZXJzOgogIC0gbmFtZTogcGF0aWVudDAKICAgIHN1ZG86IEFMTD0oQUxMKSBOT1BBU1NXRDpBTEwKICAgIGdyb3VwczogdXNlcnMsIHN1ZG8KICAgIHNoZWxsOiAvYmluL2Jhc2gKICAgIGxvY2tfcGFzc3dkOiBmYWxzZQogICAgc3NoX2F1dGhvcml6ZWRfa2V5czoKICAgICAgLSBzc2gtcnNhIEFBQUFCOGRqWWl3PT0gbXlzZWxmQG15ZG9tYWluLm5ldApkaXNhYmxlX3Jvb3Q6IGZhbHNlCnBhY2thZ2VzOgogIC0gdmltCiAgLSB0cmVlCmZpbmFsX21lc3NhZ2U6IFRoZSBzeXN0ZW0gaXMgZmluYWxseSB1cCwgYWZ0ZXIgJFVQVElNRSBzZWNvbmRzCg=="
-    }
-  ]
+    "imageCheckSumType": "sha512",
+    "configDriveUserData": "I2Nsb3VkLWNvbmZpZwpzc2hfYXV0aG9yaXplZF9rZXlzOgogIC0gc3NoLXJzYSBBQUFBQjhkallpdz09IG15c2VsZkBteWRvbWFpbi5uZXQKCnVzZXJzOgogIC0gbmFtZTogcGF0aWVudDAKICAgIHN1ZG86IEFMTD0oQUxMKSBOT1BBU1NXRDpBTEwKICAgIGdyb3VwczogdXNlcnMsIHN1ZG8KICAgIHNoZWxsOiAvYmluL2Jhc2gKICAgIGxvY2tfcGFzc3dkOiBmYWxzZQogICAgc3NoX2F1dGhvcml6ZWRfa2V5czoKICAgICAgLSBzc2gtcnNhIEFBQUFCOGRqWWl3PT0gbXlzZWxmQG15ZG9tYWluLm5ldApkaXNhYmxlX3Jvb3Q6IGZhbHNlCnBhY2thZ2VzOgogIC0gdmltCiAgLSB0cmVlCmZpbmFsX21lc3NhZ2U6IFRoZSBzeXN0ZW0gaXMgZmluYWxseSB1cCwgYWZ0ZXIgJFVQVElNRSBzZWNvbmRzCg=="
+  }
 }
 ```
 
@@ -154,14 +133,14 @@ Une fois les champs complétés, démarrez le déploiement en cliquant sur `Exec
 
 | Champ | Description | Obligatoire |
 |-|-|-|
-| userMetadata/sshKey | La clé publique SSH | ❌ |
-| userMetadata/imageURL | L'URL de votre image Linux | ✅ |
-| userMetadata/imageCheckSum | Checksum de votre image | ❌ |
-| userMetadata/imageCheckSumType | Type de checksum de votre image. (md5, sha1, sha256, sha512) | ❌ (sauf si checksum fourni) |
-| userMetadata/configDriveUserData | Contenu de votre fichier configDrive¹ | ❌ |
-| userMetadata/configDriveMetadata | Métadonnées Cloud-Init personnalisées | ❌ |
-| userMetadata/httpHeaders?Key | Clé des en-têtes HTTP | ❌² |
-| userMetadata/httpHeaders?Value | Valeur des en-têtes HTTP | ❌² |
+| customizations/sshKey | La clé publique SSH | ❌ |
+| customizations/imageURL | L'URL de votre image Linux | ✅ |
+| customizations/imageCheckSum | Checksum de votre image | ❌ |
+| customizations/imageCheckSumType | Type de checksum de votre image. (md5, sha1, sha256, sha512) | ❌ (sauf si checksum fourni) |
+| customizations/configDriveUserData | Contenu de votre fichier configDrive¹ | ❌ |
+| customizations/configDriveMetadata | Métadonnées Cloud-Init personnalisées | ❌ |
+| customizations/httpHeaders?Key | Clé des en-têtes HTTP | ❌² |
+| customizations/httpHeaders?Value | Valeur des en-têtes HTTP | ❌² |
 
 ¹ Il peut s'agir d'un `#cloud-config` ou d'un script. Il doit être sur une ligne et avoir `\n` pour la ligne-retour.<br />
 ² À utiliser uniquement si vous avez besoin d'en-têtes HTTP, tels que `Basic Auth`<br />
@@ -185,7 +164,7 @@ Le tableau suivant donne un aperçu des erreurs clients les plus connues et de l
 |Could not download image located : `url`|Impossible de télécharger l'image située : `imageURL`.|Vérifiez qu'un téléchargement avec `curl` depuis votre serveur en rescue fonctionne. Si des en-têtes HTTP sont requises, vous devez les spécifier à l'aide des paramètres `httpHeaders`.|
 |Bad `checkSumType` for downloaded file, got : `n` while expecting `m`.|Le checksum est incorrect.|- Assurez-vous de spécifier le bon checksum<br />- Vérifiez qu'un téléchargement avec `curl` depuis votre serveur en rescue fonctionne.|
 
-Voir section [erreurs clients fréquentes](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh#errors) de la page API OVHcloud & Partitionnement pour les erreurs spécifiques au partitionnement.
+Voir la section « [erreurs clients fréquentes](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh#errors) » de la page API OVHcloud et Stockage pour les erreurs spécifiques au partitionnement.
 
 ## Aller plus loin
 
@@ -193,7 +172,7 @@ Voir section [erreurs clients fréquentes](/pages/bare_metal_cloud/dedicated_ser
 
 [API OVHcloud et installation d'un OS](/pages/bare_metal_cloud/dedicated_servers/api-os-installation)
 
-[API OVHcloud & Partitionnement](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
+[API OVHcloud et Stockage](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
 
 [Bring Your Own Image (BYOI)](/pages/bare_metal_cloud/dedicated_servers/bring-your-own-image)
 

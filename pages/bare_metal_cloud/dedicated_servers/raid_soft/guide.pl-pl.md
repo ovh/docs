@@ -379,7 +379,10 @@ mount /dev/md4 /home
 
 ## Sprawdź również
 
-* [Wymiana dysku bez wyłączania serwera – Programowa macierz RAID](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_soft){.external}
-* [Sprzętowa macierz RAID (EN)](/pages/bare_metal_cloud/dedicated_servers/raid_hard){.external}
+[Wymiana dysku bez wyłączania serwera – Programowa macierz RAID](/pages/bare_metal_cloud/dedicated_servers/hotswap_raid_soft){.external}
+
+[OVHcloud API and Storage](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
+
+[Sprzętowa macierz RAID (EN)](/pages/bare_metal_cloud/dedicated_servers/raid_hard){.external}
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

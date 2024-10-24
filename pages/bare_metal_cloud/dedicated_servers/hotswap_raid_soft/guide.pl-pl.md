@@ -292,6 +292,8 @@ Niesprawny dysk jest teraz gotowy do wymiany przez technika w centrum danych. Po
 
 ## Sprawdź również
 
-* [Programowa macierz RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft){.external}
+[Programowa macierz RAID](/pages/bare_metal_cloud/dedicated_servers/raid_soft){.external}
+
+[OVHcloud API and Storage](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

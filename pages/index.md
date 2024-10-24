@@ -176,7 +176,7 @@
             + [How to configure and rebuild software RAID](bare_metal_cloud/dedicated_servers/raid_soft)
             + [Configuring a software mirror (RAID) on Windows](bare_metal_cloud/dedicated_servers/raid_soft-windows)
             + [Managing Hardware RAID](bare_metal_cloud/dedicated_servers/raid_hard)
-            + [OVHcloud API & Partitioning](bare_metal_cloud/dedicated_servers/partitioning_ovh)
+            + [OVHcloud API and Storage](bare_metal_cloud/dedicated_servers/partitioning_ovh)
             + [Creating a Windows partition on a server with hardware RAID](bare_metal_cloud/dedicated_servers/windows_raid_hard)
             + [Hot Swap - Raid Hard](bare_metal_cloud/dedicated_servers/hotswap_raid_hard)
             + [Hot-swapping a disk on a server with a software RAID configuration](bare_metal_cloud/dedicated_servers/hotswap_raid_soft)
