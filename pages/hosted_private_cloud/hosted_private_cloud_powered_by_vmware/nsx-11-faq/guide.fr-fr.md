@@ -189,11 +189,8 @@ updated: 2024-09-24
 > > Oui, OVHcloud réalise des sauvegardes, vous pouvez les retrouver dans votre control panel NSX-T.
 > > Cette sauvegarde n'est pas destinée à la restauration lors d'une mauvaise manipulation, mais de support en cas de corruption des différents contrôleurs NSX-T.
 > > 
-> Est-il possible d'avoir la livraison d'un vDC NSX-T dans un PCC 2016, existe-t-il des problèmes de livraison ? <a name="nsxtinto2016pcc"></a>
+> Est-il possible d'avoir la livraison d'un vDC NSX-T dans un VMware vSphere managé de 2016, existe-t-il des problèmes de livraison ? <a name="nsxtinto2016pcc"></a>
 > > Oui, c'est possible, il n'y a pas de contraintes actuellement.
-> >
-> Avez-vous une date d'ETA pour la version 4.1.1 ? <a name="etarelease"></a>
-> > L'ETA était prévue pour fin octobre 2023.
 > >
 > Des limitations supplémentaires sont-elles présentes dans un contexte SecNumCloud** ? <a name="snclimitations"></a>
 > > Il n’y a pas de limitations supplémentaires par rapport à un environnement non-SNC.
