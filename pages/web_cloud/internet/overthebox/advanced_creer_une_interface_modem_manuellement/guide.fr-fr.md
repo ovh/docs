@@ -36,7 +36,7 @@ Cette section explique comment modifier la topologie réseau par défaut d'une *
 
 Les OTB V3, V3 LTE et V2c ont **quatre** interfaces physiques, par défaut **trois** interfaces **WAN** et **une** interface **LAN**. Il est possible de transformer une interface WAN en interface LAN.
 
-[!tabs]
+> [!tabs]
 > 1. Suppression
 >>
 >> - Rendez-vous dans l'onglet `Network > Interfaces`{.action}.
@@ -98,7 +98,7 @@ Cette section explique comment modifier la configuration des interfaces d'une **
 
 Si vous souhaitez qu'une interface utilise une IP statique plutôt que le DHCP de votre modem.
 
-[!tabs]
+> [!tabs]
 > 1. Changer de protocole
 >>
 >> - Rendez-vous dans l'onglet `Network > Interfaces`{.action}.
@@ -139,7 +139,7 @@ Si vous souhaitez qu'une interface utilise le PPPoE plutôt que le DHCP de votre
 
 Tout d'abord, consultez le guide « [Configurer un routeur manuellement](/pages/web_cloud/internet/internet_access/advanced_config_router_manually) » pour obtenir vos **identifiants de connexion PPP** ainsi que votre **profil d'accès internet**
 
-[!tabs]
+> [!tabs]
 > 1. Changer de protocole
 >>
 >> - Rendez-vous dans l'onglet `Network > Interfaces`{.action}.
@@ -219,7 +219,7 @@ Cette section est indiquée pour vous si :
 > Le protocole `uqmi` est disponible nativement sur **OverTheBox**, mais l'usage de `ModemManager` est recommandé.
 >
 
-[!tabs]
+> [!tabs]
 > 1. Exploration
 >>
 >> - Rendez-vous dans l'onglet `Status > Mobile Service`{.action}.
@@ -289,9 +289,9 @@ Cette section est indiquée pour vous si :
 
 Ce guide contient de nombreuses informations vous permettant d'établir des configurations avancées de vos interfaces.
 
-- Pour des configurations à base de VLAN, consultez les étapes 3 et 4 de la section « [Configurer une interface en PPPoE](pppoe) ».
+- Pour des configurations à base de VLAN, consultez les étapes 3 et 4 de la section « [Configurer une interface en PPPoE](#pppoe) ».
 - Pour la création manuelle d'une interface WAN, consultez l'étape 3 de la section « [Configurer une interface en 4G](#4g) », en particulier les paramètres de la section `Advanced Settings` et `Firewall`.
-- Pour la création et la configuration d'un bridge, consultez la section « [OTB V3 et V2c](v3-v2c) ».
+- Pour la création et la configuration d'un bridge, consultez la section « [OTB V3 et V2c](#v3-v2c) ».
 
 **OverTheBox** étant basé sur **OpenWRT**, vous pouvez également consulter la [documentation OpenWRT](https://openwrt.org/docs/start).
 
