@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - How to use the VCD user interface"
 excerpt: "Discover the VCD user interface"
-updated: 2024-05-23
+updated: 2024-10-08
 ---
 
 ## Objective
@@ -95,6 +95,11 @@ Here are the 3 main elements of the Application section, you can also see that w
 ![Applications Overview](images/vcd_overview_application.gif){.thumbnail}
 
 ### Networking
+
+> [!primary]
+>
+> You can refer to the following guide to find out about network limitations within VCD: [VMware Cloud Director - Network concepts and best practices](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd_network_concepts).
+>
 
 VMware Cloud Director networking allows the organization’s provider and customer to create and consume networking resources from a vSphere or NSX environment.
 As a result, clients can create network segments and configure services finely with or without DHCP, perform NAT firewall but also use load balancing integrations for example.
