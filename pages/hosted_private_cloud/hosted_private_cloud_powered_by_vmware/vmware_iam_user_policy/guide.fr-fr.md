@@ -1,7 +1,7 @@
 ---
 title: "IAM pour VMware on OVHcloud - Comment associer un utilisateur à une politique IAM globale"
 excerpt: "Découvrez comment associer une identité OVHcloud à une politique IAM"
-updated: 2024-05-23
+updated: 2024-10-24
 ---
 
 > [!warning]
@@ -25,19 +25,27 @@ updated: 2024-05-23
 Connectez-vous à votre [espace client OVHcloud](/links/manager). Cliquez sur votre nom en haut à droite de l'espace client puis cliquez sur vos initiales pour accéder à la rubrique `Mon compte`{.action}.<br>
 Sous `Mon compte`{.action}, cliquez sur `Identités et accès (IAM)`{.action} et restez dans l'onglet `Politiques.`{.action}.
 
-![IAM USER POLICY](images/iam_user_policy_4.png){.thumbnail}
+![IAM USER POLICY](images/iam_policies.png){.thumbnail}
 
-Vous retrouverez vos politiques que vous avez déjà créées.
+Vous retrouverez vos politiques que vous avez déjà créés.
 
-Cliquez sur le bouton `...`{.action} à droite de la politique IAM concenée puis cliquez sur `Gérer les identités associées`{.action}.
+Cliquez sur votre politique `Ma politique`{.action} ou sur `Modifier ma politique`{.action}.
 
-Renseignez alors l'identité souhaitée. Il peut s'agir d'utilisateurs, d'un NIC, d'une adresse e-mail, de groupes d'utilisateurs.
+![IAM USER POLICY](images/iam_policies_modify.png){.thumbnail}
+
+Renseignez alors l'identité souhaitée dans les zones `Utilisateurs locaux` et `Groupes utilisateurs`.
+
+En cliquant sur `Ajouter des utilisateurs`{.action} ou `Ajouter des groupes utilisateurs`{.action}.
+
+![IAM USER POLICY](images/iam_add_user.png){.thumbnail}
 
 Uniquement les Groupes IAM (et non les groupes IAM vSphere) apparaissent automatiquement, attention à bien copier-coller votre choix sans fautes.
 
-Validez votre choix en cliquant sur `Ajouter`{.action}.
+Validez l'ajout de votre utilisateur en cliquant sur `Ajouter`{.action}.
 
-![IAM user policy](images/iam_user_policy_3.png){.thumbnail}
+Puis pour terminer votre politique, cliquez sur `Modifier la politique`{.action}.
+
+**Remarque** : Si votre identité n'est pas présente, vous devez l'ajouter à votre control panel OVHcloud auparavant.
 
 ## Aller plus loin
 
