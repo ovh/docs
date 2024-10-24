@@ -95,9 +95,17 @@ Please read our guide on [Creating and deleting an OpenStack user](/pages/public
 
 ### Backups
 
+/// details | What are the backup options for my instance?
+
+You can create a backup of an instance at any time via the OVHcloud Control Panel. You can use a backup to restore your instance to an old configuration, or recreate it.
+
+Please read our guide on [Backing up an instance](/pages/public_cloud/compute/save_an_instance).
+
+///
+
 /// details | Can I back up my Public Cloud servers?
 
-You can create a backup of an instance at any time via the OVHcloud Control Panel. You can use a backup to restore your instance to an old configuration, or recreate it. These backups are stored and invoiced in the same way as the images in "Private Image". With the OpenStack APIs, you can download them from the OVHcloud infrastructure, or from other projects.
+You can create backup instances of your servers at any time, with no limitations. These backups are stored and invoiced in the same way as the images in "Private Image". With the OpenStack APIs, you can download them from the OVHcloud infrastructure, or from other projects.
 
 Please read our guide on [Backing up an instance](/pages/public_cloud/compute/save_an_instance).
 
