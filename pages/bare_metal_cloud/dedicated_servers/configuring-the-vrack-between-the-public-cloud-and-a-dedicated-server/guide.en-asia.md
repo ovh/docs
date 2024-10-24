@@ -1,7 +1,7 @@
 ---
 title: 'Configuring the vRack between the Public Cloud and a Dedicated Server'
 excerpt: 'Find out how to configure private networking between a Public Cloud instance and a Dedicated Server'
-updated: 2024-10-22
+updated: 2024-10-24
 ---
 
 ## Objective
@@ -14,7 +14,7 @@ The OVHcloud [vRack](https://www.ovh.com/asia/solutions/vrack) allows you to con
 
 - An [OVHcloud Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps)
 - A [vRack](https://www.ovh.com/asia/solutions/vrack) service activated in your account
-- A [Dedicated Server](/links/bare-metal/bare-metal){.external} compatible with the vRack
+- A [Dedicated Server](/links/bare-metal/bare-metal) compatible with the vRack
 - Access to the [OVHcloud Control Panel](/links/manager)
 - A private IP address range of your choice
 
@@ -63,7 +63,7 @@ Click on the button `Add Private Network`{.action}. The following page allows yo
 
 In step 1, select the region in which you want the private network to be located.
 
-![select region](images/vrack2022-03.png){.thumbnail}
+![select region](images/vrack2024-01.png){.thumbnail}
 
 For both services to communicate with each other, they have to be tagged with the same **VLAN ID**.
 
@@ -85,7 +85,6 @@ This step offers several configuration options. For the purpose of this guide, w
 >>
 >> If you do not tick the box, the system will assign a random VLAN ID number to your private network.
 >>
->> If you already have an existing private network with VLAN ID 0, this box will be ticked by default and greyed out.
 >> 
 > **Using a different VLAN ID**
 >>
@@ -115,7 +114,7 @@ In the corresponding instance dashboard, click on the `...`{.action} button in t
 
 In the popup window that appears, select the private network(s) to attach to your instance and click on `Attach`{.action}.
 
-![attach network](images/attach_network.png){.thumbnail} 
+![attach network](images/attach_network.png){.thumbnail}
 
 ### Configure your network interfaces
 

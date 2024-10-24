@@ -1,7 +1,7 @@
 ---
 title: 'Configuring vRack for Public Cloud'
 excerpt: 'Find out how to set up vRack for your Public Cloud instances'
-updated: 2024-10-22
+updated: 2024-10-24
 ---
 
 ## Objective
@@ -12,8 +12,8 @@ The OVHcloud [vRack](https://www.ovh.com/asia/solutions/vrack/) is a private net
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}
+- A [Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_projec) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](/links/manager)
 - An [OpenStack user](/pages/public_cloud/compute/create_and_delete_a_user) (optional)
 - Basic networking knowledge
 
@@ -29,7 +29,7 @@ Depending on your technical profile and needs, it is mostly up to you which inte
 
 The [OVHcloud Control Panel](/links/manager) is a fully visual interface, ideally suited for managing multiple VLANs. You will also have the possibility to customise the private IP range, which by default is in 10.x.x.x/16.
 
-The VLAN will be deployed by to the selected Region. You will also have the option of activating the gateways or not, enabling DHCP distributions, etc.
+The VLAN will be deployed to the selected Region. You will also have the option of activating the gateways or not, enabling DHCP distributions, etc.
 
 You can also manage billing for your services in the OVHcloud Control Panel.
 
@@ -105,6 +105,12 @@ For that you need to cherry-pick the correct terraform provider & resource. Find
 
 Using the vRack itself is free of charge and it can be delivered within a few minutes. However, to create a vRack service, it is necessary to generate and validate an order form first.
 
+Go to the `Bare Metal Cloud`{.action} menu and click on the `Order`{.action} button. Under this menu, click on `vRack`{.action}.
+
+![Order vrack](images/ordering_vrack_2024.png){.thumbnail}
+
+You will be redirected to another page to validate the order, it will take a few minutes for the vRack to be setup in your account.
+
 Once the service is active, you will find it in your Control Panel in the `Bare Metal Cloud`{.action} section > `Network`{.action} > `vRack private network`{.action}. Labelled "pn-xxxxxx".
 
 From the list of eligible services, select the project you want to add to the vRack and click the `Add`{.action} button.
@@ -142,7 +148,9 @@ In the OVHcloud Control Panel, you can assign the VLAN of your choice and custom
 
 #### Creating a private network in the OVHcloud Control Panel
 
-Once a vRack exists, click on `Private Network`{.action} in the left-hand menu under **Network**.
+Once you have your vRack set, the next step is to create a private network.
+
+In the Public cloud tab, click on `Private Network`{.action} in the left-hand menu under **Network**.
 
 ![VLAN creation](images/vrack2022-03.png){.thumbnail}
 
@@ -424,7 +432,7 @@ For example, if you have a public interface *eth0*, you will add the interface *
 
 #### In the OVHcloud Control Panel
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
+Log in to the [OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
 Click on `Instances`{.action} in the left-hand navigation bar and then on `...`{.action} to the right of the instance. Select `Instance details`{.action}.
 
