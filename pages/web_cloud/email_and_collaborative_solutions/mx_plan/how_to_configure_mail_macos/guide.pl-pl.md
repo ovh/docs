@@ -173,7 +173,7 @@ Jeśli chcesz wysyłać wiadomości e-mail, wprowadź ręcznie ustawienia **SMTP
 [E-mail Pro - Konfiguracja konta e-mail w aplikacji Mail na urządzeniach iPhone i iPad](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_ios)
 
 [Exchange - Konfiguracja konta e-mail w aplikacji Mail na urządzeniach z systemem macOS](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_ios)<br>
-[Exchange - Konfiguracja konta e-mail w aplikacji Mail na urządzeniach iPhone i iPad](strony/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_mail_macos)
+[Exchange - Konfiguracja konta e-mail w aplikacji Mail na urządzeniach iPhone i iPad](pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_mail_macos)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
