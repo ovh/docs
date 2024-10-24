@@ -56,8 +56,8 @@ updated: 2024-10-24
 > > Selon les besoins, il est possible de créer une instance virtuelle de Tie-0 appelée VRF, cette VRF ne pourra pas être connectée sur internet.
 > >
 > Le bouton "Edit" dans NSX pour une Tier-0 est désactivé, comment puis-je configurer la Gateway publique ? <a name="publicgateway"></a>
-> > C'est impossible par défaut. Les Tier-0 Gateways sont hébergées chacune sur un host différent, HA (High Availability) est activée et un VIP est configuré entre les 2 EDGES afin de maintenir la continuité de service. La partie HA est déjà préconfigurée par OVHcloud.
-> > Ce n'est plus le cas dans la version 4.1.1
+> > C'est impossible par défaut. Les Tier-0 Gateways sont hébergées chacune sur un host différent, HA (High Availability) est activée et une IP virtuelle (VIP) est configuré entre les 2 EDGES afin de maintenir la continuité de service. La partie HA est déjà préconfigurée par OVHcloud.
+> > Ce n'est plus le cas dans la version `4.1.1`.
 > >
 > Puis-je configurer une Tier-0 Gateway active-active afin d’avoir une double bande passante ("garantie" 10+10=20Gb/s et "théorique" 25+25=50Gb/s) ? 
 > > Non, c'est impossible par défaut, la configuration est gérée par OVHcloud et se fait en mode actif/passif avec un VIP (10 Gbp/s de bande passante garantie).
@@ -75,13 +75,13 @@ updated: 2024-10-24
 > > Non, c'est impossible pour la Tier-1. Différents outils sont disponibles dans NSX pour répondre à ces besoins.
 > >
 > Comment puis-je ajouter des IP publiques** ? <a name="addpublicicip"></a>
-> > L'ajout d'IP publiques supplémentaires peut se faire via le routage "next hop" en spécifiant comme ressource l'environnement VMware vSphere managé (pcc) et en next hop la VIP publique de la T0.
+> > L'ajout d'IP publiques supplémentaires peut se faire via le routage "next hop" en spécifiant comme ressource l'environnement VMware vSphere managé (pcc) et en `next hop` l'IP virtuelle (VIP) publique de la T0.
 > >
 > Est-ce que les blocs d’adresses IP peuvent être utilisés/distribués entre deux DC VMware dans un même vSphere managé ? <a name="ipblockdistribution"></a>
 > > Les blocs d'adresses IP sont dépendants de l'environnement VMware vSphere managé (pcc) et non du vDC. Il est donc possible d'utiliser le même bloc d'adresses IP entre plusieurs datacentres virtuels (sans aucune modification).
-> > Un bloc d'IP public routé sur la VIP de T0 ne pourra être utilisé dans un autre VDC sur le "VMnetwork", le subnet défini sur l'interface de la T0 est utilisable sur les autres vDC du même vSphere managé via le segment NSX "ovh-t0-public".
+> > Un bloc d'IP public routé sur l'IP virtuelle (VIP) de votre T0 ne pourra être utilisé dans un autre `VMnetwork` vDC. Le subnet défini sur l'interface de la T0 est utilisable sur les autres vDC du même vSphere managé via le segment NSX `ovh-t0-public`.
 > >
-> Doit-on mettre à jour les clusters afin de pouvoir utiliser NSX-T dans un environnement Vsphère 7.0.3 ? <a name="updatensxtvsphere703"></a>
+> Doit-on mettre à jour les clusters afin de pouvoir utiliser NSX-T dans un environnement Vsphère `7.0.3` ? <a name="updatensxtvsphere703"></a>
 > > Dans ce cas, il n'est pas nécessaire de mettre à jour les clusters.
 > > 
 > Comment sont gérés les IP lors de la migration ? <a name="managemigrationip"></a>
@@ -90,12 +90,12 @@ updated: 2024-10-24
 > >
 > Pour la migration vDC, il faut passer le DS en global. Un retour arrière est-il possible sur cette configuration ? <a name="vdcmigration"></a>
 > > Le datastore global est géré au niveau de l'espace client ou de l’API OVHcloud.
-> > Cela vous permet de globaliser votre datastore qui sera visible depuis votre nouveau vDC. Il vous permet de faire un compute vMotion et non un stockage vMotion des VM.
-> > Dans ce cas, une restauration n'est pas possible, il vous faudra commander un nouveau datastore et y appliquer une vMotion pour libérer le global.
+> > Cela vous permet de globaliser votre datastore qui sera visible depuis votre nouveau vDC. Il vous permet de faire un `Compute` vMotion et non un `Storage` vMotion des machines virtuelles.
+> > Dans ce cas, une restauration n'est pas possible, il vous faudra commander un nouveau datastore et y appliquer un vMotion pour le libérer globalement.
 > >
-> Quel est l’impact client de la migration vers NSX 4.1.1 ? <a name="nsxmigrationimpact"></a>
-> > Il n'y a normalement pas de temps d'arrêt, une tâche de maintenance sera initiée, y compris un déplacement des Edges avec un Vmotion.
-> > Du côté de l'utilisateur, il n'y a pas de tâche spécifique à planifier.
+> Quel est l’impact de la migration vers NSX-T `4.1.1` ? <a name="nsxmigrationimpact"></a>
+> > Il n'y a normalement pas de temps d'arrêt, une tâche de maintenance sera initiée, y compris un déplacement des Edges avec un vMotion.
+> > Aucune tâche spécifique est à planifier sur vos environnements managés.
 > >
 > Allez-vous fournir des formations et de la documentation pour améliorer les compétences NSX-T ? <a name="docandtrainingnsxt"></a>
 > >
@@ -103,7 +103,7 @@ updated: 2024-10-24
 > > - [VMware on OVHcloud](/products/hosted-private-cloud-hosted-private-cloud-powered-by-vmware)
 > >
 > Si une migration NSX-V a été planifiée vers une solution tierce pfSense, doit-on repartir sur une demande de création d'un nouveau vDC sans NSX-V ? Peut-on le faire sur le vDC existant ? <a name="nsxtmigrationpfsense"></a>
-> > Dans ce cas, vous n'avez pas besoin de commander un nouveau DC, mais assurez-vous de désactiver toutes vos fonctionnalités NSX-V afin que OVHcloud puisse désactiver le composant.
+> > Dans ce cas, vous n'avez pas besoin de commander un nouveau vDC, mais assurez-vous de désactiver toutes vos fonctionnalités NSX-V afin que OVHcloud puisse désactiver le composant.
 > >
 > Est-ce que l'output Internet est configurable ? En d’autres termes, est-il possible de déployer l’interface ? <a name="internetoutput"></a>
 > > Il n'est pas possible de gérer l'output Internet dans NSX car Edge est géré par OVHcloud, mais vous pouvez configurer le réseau sur votre VM (vSphere managé).
@@ -116,15 +116,15 @@ updated: 2024-10-24
 > > Lors de ce déplacement d'IP, une coupure de service de courte durée peut se produire. En fonction de votre topologie réseau, vous pouvez avoir une continuité via le service vRack des flux entre les différents workloads portés par une exposition des fronts NSX-V, vous déplacez les différentes machines vers le second DC et à travers le vRack le flux continue à remonter vers vos fronts NSX-V précédents.
 > > Le temps d'arrêt dépend donc de la complexité de votre environnement.
 > >
-> Quel sera le débit des cartes des edge-node, sachant que le T0 sera mutualisé ? <a name="bandwidthedgenode"></a>
+> Quel sera le débit des cartes des edge-nodes, sachant que le T0 sera mutualisé ? <a name="bandwidthedgenode"></a>
 > > Cela dépendra des services activés (LoadBalancer/NAT/Firewall, etc.)
 > >
 > Est-ce que le vRack fonctionne avec les NSX-T ?  <a name="vrackwithnsxt"></a>
 > > Oui, le vRack fonctionne avec NSX-T.
 > > Vous avez la possibilité d'y accéder à partir de groupes de ports dans vSphere ou de segments de VLAN grâce à NSX.
 > >
-> Le cluster de VMs aura-t-il accès au vRack ? Ou le vRack sera-t-il uniquement connecté aux Edge Node ? <a name="vrackaccess"></a>
-> > Le cluster NSX est bien compatible avec un vRack OVHcloud. Vous pouvez ajouter le service NSX dans votre vRack OVHcloud VMware vSphere managé (pcc). Retrouvez plus d'informations à propos de vRack sur [cette page](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vrack_and_hosted_private_cloud).
+> Le cluster de mach ines virtuelles aura-t-il accès au vRack OVHcloud ? Ou est-ce que le vRack sera-t-il connecté aux edge nodes ? <a name="vrackaccess"></a>
+> > Le cluster NSX est bien compatible avec un vRack OVHcloud. Vous pouvez ajouter le service NSX dans le vRack de votre VMware vSphere managé (pcc). Retrouvez plus d'informations sur [cette page](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vrack_and_hosted_private_cloud).
 > >
 > Puis-je configurer High Availability (HA) ? <a name="ha"></a> 
 > > Non, les routeurs NSX Edges sont configurées par OVHcloud suivant les bonnes pratiques VMware officielle de gestion d'infrastructure privée en matière de haute disponibilité (HA).
@@ -134,16 +134,16 @@ updated: 2024-10-24
 > >
 > Actuellement, nous avons 300 edges et environ 5000 RDP simultanés. La configuration moyenne "4 vcpu / 8 Go RAM / 200 Go" va-t-elle tenir pour les flux ? <a name="averageconfiguration"></a>
 > > Le dimensionnement dépendra des services que vous activerez ou consommerez sur vos edges (firewall ou load balancing...).
-> > Aujourd'hui, le nœud edge de taille M peut ne pas vous convenir, la version 4.1.1 vous accordera de nouvelles fonctionnalités comme « Edge nodes scale up », vous permettant de passer aux profils L ou XL.
+> > Aujourd'hui, le nœud edge de taille Medium peut ne pas vous convenir, la version `4.1.1` vous accordera de nouvelles fonctionnalités comme « Edge nodes scale up », vous permettant de passer aux profils L ou XL.
 > > Tout dépend de vos cas d’usage et des métriques dont vous disposez sur votre plateforme.
 > >
-> Si nous ne voulons pas d’un VRF pour fractionner le T0, quelle serait la solution en dehors de la formation ou de l’achat d’un nouveau vSphere managé ? <a name="VRF"></a>
-> > Il est possible de ne pas utiliser le VRF et d'utiliser le T1.
-> > Vous pouvez utiliser un T1, hébergeant les workloads qui le sous-tendent. Dans ce cas, le T1 est utilisé comme un « mini » VRF mais les flux seront mélangés à l'intérieur du T0.
-> > L'avantage de faire un VRF en T0 est de maintenir le partitionnement de la table de routage des éléments allant vers le réseau externe de la plateforme vSphere.
+> Si nous ne voulons pas d’un VRF pour fractionner la T0, quelle serait la solution en dehors de la formation ou de l’achat d’un nouveau vSphere managé ? <a name="VRF"></a>
+> > Il est possible de ne pas utiliser le VRF et d'utiliser la T1.
+> > Vous pouvez utiliser un T1, hébergeant les workloads qui le sous-tendent. Dans ce cas, la T1 est utilisé comme un « mini » VRF mais les flux seront mélangés à l'intérieur du T0.
+> > L'avantage de faire un VRF en T0 est de maintenir le partitionnement de la table de routage des éléments allant vers le réseau externe de votre plateforme VMware vSphere managé.
 > >
 > Puis-je utiliser l’API OVHcloud pour configurer et utiliser NSX ? <a name="api"></a>
-> > Oui, il est possible de le faire, voici un exemple des appels API v1 que vous pouvez utiliser au sein de l'univers /dedicatedcloud :
+> > Oui, il est possible de le faire, voici un exemple des appels API v1 que vous pouvez utiliser au sein de l'univers **/dedicatedcloud** :
 > >
 > > > [!api]
 > > >
@@ -201,22 +201,22 @@ updated: 2024-10-24
 > Existe-t-il une sauvegarde en dehors de SecNumCloud ? <a name="semnumcloudbackupoutside"></a>
 > > Il n'existe pas de différence entre les sauvegardes dans les environnements qualifiés SecNumCloud et non SecNumCloud.
 > >
-> Pourquoi y a-t-il une modification tarifaire pour NSX-T et sa version 4.1.1 ? <a name="pricingnsxton411version"></a> 
+> Pourquoi y a-t-il une modification tarifaire pour NSX-T et sa version `4.1.1` ? <a name="pricingnsxton411version"></a> 
 > > La hausse des tarifs des offres NSX est basée sur : 
 > >
 > > - la hausse de nos coûts basée sur l’inflation de l’ensemble de nos services en 2022 et 2023.
 > > - Les frais de licence NSX-T.
 > > - Les coûts liés à l’infrastructure de gestion NSX.
 > >
-> Est-ce que les dates d'engagements et le prix initial sur les PCC sont conservés lors d'une migration pour la durée de l'engagement ? <a name="pricemigrationpcc"></a>
+> Est-ce que les dates et le prix initial des environnements managés sont conservés lors d'une migration pour toute la durée de l'engagement ? <a name="pricemigrationpcc"></a>
 > > L’engagement et les conditions ne seront pas automatiquement maintenus.
 > > Nous vous invitons à prendre contact avec votre interlocuteur privilégié chez OVHcloud afin de mettre en place de nouvelles conditions commerciales.
 > > 
 > Pendant la phase de migration, devra-t-on payer en double notre plateforme durant un mois et ensuite se faire rembourser le mois suivant ? <a name="priceduringmigration"></a>
 > > OVHcloud vous remboursera 1 mois de frais d’hébergement et de gestion NSX sur votre prochaine facture après la commande de votre nouveau centre de données virtuelle (vDC) (1 mois = 30 jours).
 > >
-> Y a-t-il un coût supplémentaire à l'utilisation du LoadBalancer Advanced (avec WAF) et d'un IPS/IDS distribué ? <a name="pricealbandipsids"></a>
-> > Oui, la version de base de load balancing applicatif (ALB) n'est pas incluse dans la licence NSX-T. Nous la proposerons sous forme d'option supplémentaire.
+> Y a-t-il un coût supplémentaire à l'utilisation du Load Balancer Advanced (avec WAF) et d'un IPS/IDS distribué ? <a name="pricealbandipsids"></a>
+> > Oui, la version de base de load balancer applicatif avec firewall (ALB + WAF) n'est pas incluse dans la licence NSX-T. Nous la proposerons sous forme d'option supplémentaire.
 
 ## Aller plus loin
 
