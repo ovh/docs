@@ -149,8 +149,8 @@ Pour l'envoi des e-mails, si vous devez renseigner manuellement les paramètres 
 |---|---|
 |Nom d'utilisateur|Renseignez l'adresse e-mail **complète**|
 |Mot de passe|Renseignez le mot de passe de l'adresse e-mail|
-|Serveur **EUROPE** (entrant)|smtp.mail.ovh.net **ou** ssl0.ovh.net|
-|Serveur **AMERIQUE / ASIE-PACIFIQUE** (entrant)|smtp.mail.ovh.ca|
+|Serveur **EUROPE** (sortant)|smtp.mail.ovh.net **ou** ssl0.ovh.net|
+|Serveur **AMERIQUE / ASIE-PACIFIQUE** (sotant)|smtp.mail.ovh.ca|
 |Port|465|
 |Type de sécurité|SSL/TLS|
 
@@ -172,22 +172,20 @@ Pour l'envoi des e-mails, si vous devez renseigner manuellement les paramètres 
 
 ## Aller plus loin
 
+> [!primary]
+>
+> Pour plus d'informations sur la configuration d'une adresse e-mail depuis l'application Mail sur macOS, consultez [le centre d'aide Apple](https://support.apple.com/fr-fr/guide/mail/mail35803/mac).
+
 [MX Plan - Configurer son compte e-mail sur Mail pour iPhone et iPad](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/how_to_configure_ios)
 
 [E-mail Pro - Configurer son compte e-mail sur Mail pour macOS](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_mail_macos)<br>
 [E-mail Pro - Configurer son compte e-mail sur Mail pour iPhone et iPad](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_ios)
 
 [Exchange - Configurer son compte e-mail sur Mail de macOS](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_ios)<br>
-[Exchange - Configurer son compte e-mail sur Mail pour iPhone et iPad](pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_mail_macos/guide.fr-fr.md)
+[Exchange - Configurer son compte e-mail sur Mail pour iPhone et iPad](pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_mail_macos)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](/links/support).
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
-
-> [!primary]
->
-> Pour plus d'informations sur la configuration d'une adresse e-mail depuis l'application Mail sur macOS, consultez [le centre d'aide Apple](https://support.apple.com/fr-fr/guide/mail/mail35803/mac).
-
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
