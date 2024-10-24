@@ -1,8 +1,12 @@
 ---
 title: "Web Cloud Databases - How to retrieve logs"
 excerpt: "Find out how to retrieve the logs of your databases hosted on your Web Cloud Databases server"
-updated: 2024-03-07
+updated: 2024-10-24
 ---
+
+> [!primary]
+>
+> **This guide is currently being updated. Some information may be incomplete or out of date. Thank you for your understanding.**
 
 ## Objective
 

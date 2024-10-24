@@ -1,12 +1,12 @@
 ---
 title: 'Web Cloud Databases - Como recuperar os logs ?'
 excerpt: 'Saiba como recuperar os logs das suas bases de dados alojadas no servidor Web Cloud Databases'
-updated: 2024-03-07
+updated: 2024-10-24
 ---
 
 > [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
+> **Este guia está atualmente em curso de atualização. Algumas informações poderão estar incompletas ou desatualizadas. Agradecemos a sua compreensão.**
 
 ## Objetivo
 

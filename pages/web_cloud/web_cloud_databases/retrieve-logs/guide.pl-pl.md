@@ -1,12 +1,12 @@
 ---
 title: 'Web Cloud Databases - Jak pobrać logi?'
 excerpt: 'Dowiedz się, jak pobrać logi baz danych zainstalowanych na serwerze Web Cloud Databases'
-updated: 2024-03-07
+updated: 2024-10-24
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji” na tej stronie.
 >
+> **Trwa aktualizacja tego przewodnika. Niektóre informacje mogą być niekompletne lub nieaktualne. Dziękujemy za zaufanie.**
 
 ## Wprowadzenie
 
