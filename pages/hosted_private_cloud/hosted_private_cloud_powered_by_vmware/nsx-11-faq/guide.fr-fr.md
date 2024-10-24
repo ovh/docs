@@ -26,7 +26,7 @@ updated: 2024-09-24
 > > La fin de vie de NSX-V étant prévue pour le 31 juillet 2024. Cette date étant passé, la migration ne peut plus être effectuée.
 > >
 > Quelle est la date maximale à laquelle faire la demande d'accompagnement de migration ? <a name="deadlineassistance"></a>
-> > Il n'est donc plus possible d'effectuer cette migration à ce jour. Contactez le support si vous êtes toujours dans ce cas aujourd'hui.
+> > Il n'est plus possible d'effectuer cette migration à ce jour. [Contactez le support](https://help.ovhcloud.com/csm?id=csm_get_help) si vous êtes encore dans cette situation aujourd'hui.
 > >
 > Que se passe-t-il si nous n’avons pas migré avant le 31 juillet 2024 ? <a name="nsxvmigrationend"></a>
 > > OVHcloud ne supprime pas le service, mais ne peut pas garantir le même niveau d'engagement de service (SLA). Un document doit donc être signé sous forme de clause contractuelle fixant la responsabilité sur la fin de vie de NSX-V depuis le 31 juillet 2024 en cas de problème.
