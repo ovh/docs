@@ -6,7 +6,7 @@ updated: 2024-05-23
 
 ## Objectif
 
-**Ce guide vous présente les principes de fonctionnement de IAM au sein de votre offre VMware on OVHcloud**.
+**Ce guide vous présente les principes de fonctionnement, les limitations et une FAQ de IAM au sein de votre offre VMware on OVHcloud**.
 
 ## Prérequis
 
@@ -15,6 +15,13 @@ updated: 2024-05-23
 - Avoir un ou plusieurs produits Hosted Private Cloud - VMware on OVHcloud liés à ce compte (Hosted Private Cloud powered by VMware, Service Pack VMware).
 
 ## En pratique
+
+> [!primary]
+> 
+> Vous ne pourrez pas à ce jour bénéficier des fonctionnalités IAM sur les offres Hosted Private Cloud VMware vSphere certifiés PCIDSS ou HDS ainsi que les offres qualifiées SecNumCloud.
+> Il en est de même pour les environnements managés avec NSX activé.
+> VMware Cloud Director on OVHcloud n'est aussi pas compatible avec IAM à ce jour, mais les équipes de recherches travail sur l'adaptabilité de ces technologies.
+>
 
 ### Comment fonctionne IAM et Hosted Private Cloud - VMware on OVHcloud ?
 
@@ -39,15 +46,13 @@ Le diagramme ci-dessous permet de comprendre comment fonctionne IAM avec l'ensem
 
 Les diagrammes ci-dessous sont dédiés à l'utilisation avec Hosted Private Cloud - VMware on OVHcloud : 
 
-## FAQ
+## Foire aux question
 
 ### Quelles sont les limitations de IAM avec Hosted Private Cloud - VMware on OVHcloud ?
 
 > [!primary]
 >
 > À date, un rôle IAM vSphere ne peut pas être géré grâce aux groupes de permissions managées.
->
-> Vous ne pourrez pas à ce jour bénéficier des fonctionnalités IAM sur notre plateforme Hosted Private Cloud VMware on OVHcloud PCIDSS, SNC, HDS). Il en est de même pour les PCC avec NSX activé.
 >
 
 IAM est actuellement dans une version BETA sur la plateforme OVHcloud. Les infrastructures bénéficiant des offres de sécurité réseau renforcée (NSX) ou d'un service certifié (Hébergement de Données de Santé (HDS), Hébergement de données bancaires (PCI-DSS) ou SecNumCloud (SNC)) ne peuvent actuellement pas utiliser l'IAM OVHcloud.
