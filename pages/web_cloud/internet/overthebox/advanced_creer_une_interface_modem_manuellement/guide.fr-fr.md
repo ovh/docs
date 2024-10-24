@@ -42,7 +42,7 @@ Les OTB V3, V3 LTE et V2c ont **quatre** interfaces physiques, par défaut **tro
 >> - Rendez-vous dans l'onglet `Network > Interfaces`{.action}.
 >> - Supprimez l'interface que vous souhaitez ajouter au LAN avec le bouton `Delete`{.action}, dans notre exemple `eth3_dhcp`.
 >> - Confirmez vos changements avec le bouton `Save & Apply`{.action}.
->> - Puis passez à l'étape 2 « Ajout au bridge ».
+>> - Puis passez à l'étape 2 « Modifier le bridge ».
 >>
 >> ![overthebox](images/step1-v3-1-removeInterface-2024.png){.thumbnail}
 >>
