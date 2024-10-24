@@ -1,7 +1,7 @@
 ---
 title: Kubernetes Plugins (CNI, CRI, CSI...) & softwares versions and reserved resources
 excerpt: ''
-updated: 2024-10-03
+updated: 2024-10-24
 ---
 
 We list here some details on the Control Panel, the plugins (CNI, CRI, CSI...) & software versions we use and the resources we reserve on each Node.
@@ -84,10 +84,10 @@ The versions depend on the Kubernetes cluster version:
 The versions are:
 
 * `1.26`: coredns v1.11.1, metrics-server v0.6.4
-* `1.27`: coredns v1.11.1, metrics-server v0.7.1
-* `1.28`: coredns v1.11.1, metrics-server v0.7.1
-* `1.29`: coredns v1.11.1, metrics-server v0.7.1
-* `1.30`: coredns v1.11.1, metrics-server v0.7.1
+* `1.27`: coredns v1.11.3, metrics-server v0.7.2
+* `1.28`: coredns v1.11.3, metrics-server v0.7.2
+* `1.29`: coredns v1.11.3, metrics-server v0.7.2
+* `1.30`: coredns v1.11.3, metrics-server v0.7.2
 * `1.31`: coredns v1.11.3, metrics-server v0.7.2
 
 ## Enabled policies
