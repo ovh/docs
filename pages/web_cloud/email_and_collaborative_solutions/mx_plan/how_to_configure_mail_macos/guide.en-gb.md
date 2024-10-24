@@ -76,7 +76,7 @@ Follow the installation steps by clicking on the tabs below:
 
 > [!warning]
 >
-> If, after following the configuration steps below, you encounter a sending or receiving error, see the [Modify existing settings](#modify-settings) topic
+> If, after following the configuration steps below, you encounter a sending or receiving error, go to the section [Modify existing settings](#modify-settings).
 
 ### Use email address
 
@@ -94,7 +94,7 @@ If your email account has already been set up and you need to access the account
 
 - Click `Mail`{.action} in the menu bar at the top of your screen, then click `Preferences`{.action}.
 - Select the account concerned in the left-hand column, then click `Server settings`{.action}.
-- In the `Incoming Mail Server (POP)` or `Incoming Mail Server(IMAP)` section, enter your full email address in the `User name`{.action} box, and the `Password`{.action} associated with it in the box provided.
+- In the `Incoming Mail Server (POP)` or `Incoming Mail Server (IMAP)` section, enter your full email address in the `User name`{.action} box, and the `Password`{.action} associated with it in the box provided.
 - In the `Outgoing Mail Server (SMTP)` section, enter your full email address in the `Username`{.action} box, and the `Password`{.action} associated in the box provided.
 - Untick the `Automatically manage connection settings`{.action} boxes to display the `Port`{.action} and `Authentication`{.action} settings.
 - Make sure that the `Use TLS/SSL`{.action} boxes are ticked.
@@ -119,24 +119,24 @@ When you choose your account type, we recommend using **IMAP** to receive emails
 >
 > Please note down the value that corresponds to your location (**EUROPE** or **AMERICA/ASIA-PACIFIC**)
 
-- **For POP configuration**
+- **POP configuration**
 
 |Information|Description|
 |---|---|
 |Username|Enter the full email address **full**|
 |Password|Enter the password for the email address|
-|Server **EUROPE** (incoming)|pop.mail.ovh.net **ou** ssl0.ovh.net|
+|Server **EUROPE** (incoming)|pop.mail.ovh.net **or** ssl0.ovh.net|
 |Server **AMERICA/ASIA-PACIFIC** (incoming)|pop.mail.ovh.ca|
 |Port|995|
 |Security type|SSL/TLS|
 
-- **For IMAP configuration**
+- **IMAP configuration**
 
 |Information|Description|
 |---|---|
 |Username|Enter the full email address **full**|
 |Password|Enter the password for the email address|
-|Server **EUROPE** (incoming)|imap.mail.ovh.net **ou** ssl0.ovh.net|
+|Server **EUROPE** (incoming)|imap.mail.ovh.net **or** ssl0.ovh.net|
 |Server **AMERICA / ASIA-PACIFIC** (incoming)|imap.mail.ovh.ca|
 |Port|993|
 |Security type|SSL/TLS|
@@ -149,7 +149,7 @@ For sending emails, if you have to enter the **SMTP** settings manually in your 
 |---|---|
 |Username|Enter the full email address **full**|
 |Password|Enter the password for the email address|
-|Server **EUROPE** (outgoing)|smtp.mail.ovh.net **ou** ssl0.ovh.net|
+|Server **EUROPE** (outgoing)|smtp.mail.ovh.net **or** ssl0.ovh.net|
 |Server **AMERICA / ASIA-PACIFIC** (outgoing)|smtp.mail.ovh.ca|
 |Port|465|
 |Security type|SSL/TLS|
@@ -184,7 +184,7 @@ For sending emails, if you have to enter the **SMTP** settings manually in your 
 [Exchange - Configuring your email account on macOS Mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_ios)<br>
 [Exchange - Configuring your email account on Mail for iPhone and iPad](pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_mail_macos/guide.fr-fr.md)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
+For specialized services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](/links/support).
 
