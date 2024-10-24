@@ -1,7 +1,7 @@
 ---
 title: "IAM pour VMware on OVHcloud - Présentation et FAQ"
 excerpt: "Découvrez comment fonctionne IAM avec vSphere"
-updated: 2024-05-23
+updated: 2024-10-24
 ---
 
 ## Objectif
@@ -62,6 +62,14 @@ Un rôle IAM ne peut être ajouté que grâce aux actions manuelles dans une pol
 ### Est-ce que je peux activer IAM facilement ?
 
 Oui, vous pouvez activer IAM via un seul bouton dans l'espace client OVHcloud. Pour plus d'informations, consultez le guide « [Comment activer IAM](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_activation) ».
+
+Voici la capture de IAM désactivé :
+
+![IAM Activation Non Enabled](images/iam_enabled.png){.thumbnail}
+
+Voici la capture de IAM activé :
+
+![IAM IAM Activation Enabled](images/iam_disabled.png){.thumbnail}
 
 ### Est-ce que je peux choisir entre un utilisateur local et un utilisateur IAM lors de la connexion à vSphere ?
 
