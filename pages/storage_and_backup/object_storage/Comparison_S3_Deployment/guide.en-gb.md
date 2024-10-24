@@ -1,7 +1,7 @@
 ---
-title: Comparison of S3 Deployment Modes: 3-AZ, 1-AZ, and Local Zones Overview  
-excerpt: Explore OVHcloud's S3 Object Storage deployment modes  
-updated: 2021-10-24  
+title: Comparison of S3 Deployment Modes: 3-AZ, 1-AZ, and Local Zones Overview
+excerpt: Explore OVHcloud's S3 Object Storage deployment modes
+updated: 2021-10-24
 ---
 
 ## Overview
