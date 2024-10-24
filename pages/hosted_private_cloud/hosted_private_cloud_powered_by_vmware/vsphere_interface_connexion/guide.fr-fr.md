@@ -35,7 +35,7 @@ Cliquez sur la rubrique `Managed VMware vSphere `{.action}, sélectionnez votre 
 
 ![Connexion à l'interface vSphere HTML5](images/managed_vsphere_all.png){.thumbnail}
 
-Pour listez vos environnement VMware cliquez sur `Tous mes services`{.action}.
+Pour lister vos environnements VMware, cliquez sur `Tous mes services`{.action}.
 
 Pour accéder à la section utilisateur `Gestion des autorisations utilisateur dans le vSphere client`{.action}, cliquez sur `Créer un utilisateur`{.action} ou `Modifier`{.action} un utilisateur.
 
