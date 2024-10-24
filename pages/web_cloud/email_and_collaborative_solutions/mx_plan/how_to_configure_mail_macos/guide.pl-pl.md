@@ -116,7 +116,7 @@ Jeśli chcesz otrzymywać e-maile, wybierz rodzaj konta. Zalecamy użycie **IMAP
 |---|---|
 |Nazwa użytkownika|Wpisz pełny adres e-mail **complete**|
 |Hasło|Wpisz hasło wybrane dla tego konta e-mail|
-|Serwer **EUROPE** (ruch przychodzący)|pop.mail.ovh.net **ou** ssl0.ovh.net|
+|Serwer **EUROPE** (ruch przychodzący)|pop.mail.ovh.net **lub** ssl0.ovh.net|
 |Serwer **AMERYKA / AZJA-PACYFIK** (ruch przychodzący)|pop.mail.ovh.ca|
 |Port|995|
 |Typ zabezpieczeń|SSL/TLS|
@@ -127,7 +127,7 @@ Jeśli chcesz otrzymywać e-maile, wybierz rodzaj konta. Zalecamy użycie **IMAP
 |---|---|
 |Nazwa użytkownika|Wpisz pełny adres e-mail **complete**|
 |Hasło|Wpisz hasło wybrane dla tego konta e-mail|
-|Serwer **EUROPE** (ruch przychodzący)|imap.mail.ovh.net **ou** ssl0.ovh.net|
+|Serwer **EUROPE** (ruch przychodzący)|imap.mail.ovh.net **lub** ssl0.ovh.net|
 |Serwer **AMERYKA / AZJA-PACYFIK** (ruch przychodzący)|imap.mail.ovh.ca|
 |Port|993|
 |Typ zabezpieczeń|SSL/TLS|
@@ -140,7 +140,7 @@ Jeśli chcesz wysyłać wiadomości e-mail, wprowadź ręcznie ustawienia **SMTP
 |---|---|
 |Nazwa użytkownika|Wpisz pełny adres e-mail **complete**|
 |Hasło|Wpisz hasło wybrane dla tego konta e-mail|
-|Serwer **EUROPE** (ruch wychodzący)|smtp.mail.ovh.net **ou** ssl0.ovh.net|
+|Serwer **EUROPE** (ruch wychodzący)|smtp.mail.ovh.net **lub** ssl0.ovh.net|
 |Serwer **AMERYKA / AZJA-PACYFIK** (ruch wychodzący)|smtp.mail.ovh.ca|
 |Port|465|
 |Typ zabezpieczeń|SSL/TLS|
@@ -173,7 +173,7 @@ Jeśli chcesz wysyłać wiadomości e-mail, wprowadź ręcznie ustawienia **SMTP
 [E-mail Pro - Konfiguracja konta e-mail w aplikacji Mail na urządzeniach iPhone i iPad](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_ios)
 
 [Exchange - Konfiguracja konta e-mail w aplikacji Mail na urządzeniach z systemem macOS](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_ios)<br>
-[Exchange - Konfiguracja konta e-mail w aplikacji Mail na urządzeniach iPhone i iPad](strony/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_mail_macos/guide.fr-en.md)
+[Exchange - Konfiguracja konta e-mail w aplikacji Mail na urządzeniach iPhone i iPad](strony/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_mail_macos)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 

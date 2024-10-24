@@ -125,7 +125,7 @@ Para a receção dos e-mails, ao escolher o tipo de conta, recomendamos uma util
 
 |Informação|Descrição|
 |---|---|
-|Nome de utilizador|Introduza o endereço de e-mail **completo*|
+|Nome de utilizador|Introduza o endereço de e-mail **completo**|
 |Palavra-passe|Introduza a palavra-passe do endereço de e-mail|
 |Servidor **EUROPA** (entrada)|imap.mail.ovh.net **ou** ssl0.ovh.net|
 |Servidor **AMÉRICA/ÁSIA-PACÍFICO** (entrada)|imap.mail.ovh.ca|
@@ -138,7 +138,7 @@ Se necessita de inserir manualmente as definições **SMTP** nas preferências d
 
 |Informação|Descrição|
 |---|---|
-|Nome de utilizador|Introduza o endereço de e-mail **completo*|
+|Nome de utilizador|Introduza o endereço de e-mail **completo**|
 |Palavra-passe|Introduza a palavra-passe do endereço de e-mail|
 |Servidor **EUROPA** (de saída)|smtp.mail.ovh.net **ou** ssl0.ovh.net|
 |Servidor **AMÉRICA/ÁSIA-PACÍFICO** (de saída)|smtp.mail.ovh.ca|
@@ -173,7 +173,7 @@ Se necessita de inserir manualmente as definições **SMTP** nas preferências d
 [E-mail Pro - Configurar a sua conta de e-mail no Mail para o iPhone e o iPad](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_ios)
 
 [Exchange - Configurar a sua conta de e-mail no Mail do macOS](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_ios)<br>
-[Exchange - Configurar a sua conta de e-mail no Mail para o iPhone e o iPad](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_mail_macos/guide.pt-pt.md)
+[Exchange - Configurar a sua conta de e-mail no Mail para o iPhone e o iPad](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_mail_macos)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](/links/partner).
 

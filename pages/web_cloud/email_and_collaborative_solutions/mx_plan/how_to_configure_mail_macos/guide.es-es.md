@@ -1,6 +1,6 @@
 ---
 title: 'MX Plan - Configure su cuenta de correo electrónico en Mail para macOS'
-excerpt: Cómo configurar una cuenta MX Plan en Mail de macOS
+excerpt: Descubra cómo configurar una cuenta MX Plan en Mail de macOS
 updated: 2024-10-22
 ---
 
@@ -39,15 +39,15 @@ Es posible configurar sus cuentas MX Plan en el cliente de correo que usted util
 
 - **Si ya ha configurado una cuenta**: haga clic en `Mail`{.action} en el menú superior y seleccione `Cuentas`{.action}.
 
-Siga los pasos de instalación haciendo clic en las fichas siguientes:
+Siga los etapas de instalación haciendo clic en las fichas siguientes:
 
 > [!tabs]
-> **Paso 1**
+> **Etapa 1**
 >>
 >> Seleccione `Otra cuenta Mail`{.action} y haga clic en `Cuenta Mail`{.action}.<br><br>
 >> ![mailmac](images/mail-mac-email01.png){.thumbnail .w-400 .h-600}
 >>
-> **Paso 2**
+> **Etapa 2**
 >>
 >> Introduzca la siguiente información en la ventana "**Añadir una cuenta de correo**": <br><br>
 >> - Un **Nombre** para su cuenta de correo
@@ -55,7 +55,7 @@ Siga los pasos de instalación haciendo clic en las fichas siguientes:
 >> - El **Contraseña** de su dirección de correo<br>
 >> ![mailmac](images/mail-mac-email02.png){.thumbnail .w-400 .h-600}
 >>
-> **Paso 3**
+> **Etapa 3**
 >>
 >> Introduzca la información en la siguiente ventana:
 >>
@@ -182,7 +182,7 @@ Para el envío de mensajes de correo electrónico, si debe introducir manualment
 [Email Pro - Configurar una cuenta de correo electrónico en Mail para iPhone e iPad](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_ios)
 
 [Exchange - Configurar una cuenta de correo electrónico en Mail de macOS](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_ios)<br>
-[Exchange - Configurar una cuenta de correo electrónico en Mail para iPhone e iPad](pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_mail_macos/guide.fr-fr.md)
+[Exchange - Configurar una cuenta de correo electrónico en Mail para iPhone e iPad](pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_mail_macos)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 

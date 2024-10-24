@@ -182,7 +182,7 @@ For sending emails, if you have to enter the **SMTP** settings manually in your 
 [Email Pro - Configuring your email account on Mail for iPhone and iPad](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_ios)
 
 [Exchange - Configuring your email account on macOS Mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_ios)<br>
-[Exchange - Configuring your email account on Mail for iPhone and iPad](pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_mail_macos/guide.fr-fr.md)
+[Exchange - Configuring your email account on Mail for iPhone and iPad](pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_mail_macos)
 
 For specialized services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 

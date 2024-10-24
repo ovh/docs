@@ -182,7 +182,7 @@ Pour l'envoi des e-mails, si vous devez renseigner manuellement les paramètres 
 [E-mail Pro - Configurer son compte e-mail sur Mail pour iPhone et iPad](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_ios)
 
 [Exchange - Configurer son compte e-mail sur Mail de macOS](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_ios)<br>
-[Exchange - Configurer son compte e-mail sur Mail pour iPhone et iPad](pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_mail_macos/guide.fr-fr.md)
+[Exchange - Configurer son compte e-mail sur Mail pour iPhone et iPad](pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_mail_macos)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](/links/partner).
 
