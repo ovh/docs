@@ -1,6 +1,6 @@
 ---
 title: "OVHcloud products HDS certification"
-updated: 2024-03-28
+updated: 2024-10-24
 ---
 
 ## Objective
@@ -21,7 +21,7 @@ Clients using HDS products must subscribe to a Business or Enterprise support. T
 
 | **Product** | **Certified** | 
 | --- | ---  | 
-| Dedicated Server | yes excluding Eco and Advance ranges | 
+| Dedicated Server | yes excluding Eco ranges | 
 | Nutanix on OVHcloud | yes | 
 | Enterprise File Storage | yes | 
 | Block Storage | yes | 
