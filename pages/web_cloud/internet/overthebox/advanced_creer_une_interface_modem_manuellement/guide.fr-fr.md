@@ -177,7 +177,7 @@ Tout d'abord, consultez le guide « [Configurer un routeur manuellement](/pages/
 >> - Rendez-vous dans l'onglet `Devices`{.action}.
 >> - Cliquez sur le bouton `Add device configuration...`{.action}.
 >>
->> ![overthebox](images/step1-ppp-4-addVlan-2024.png){.thumbnail}
+>> ![overthebox](images/step2-ppp-4-addVlan-2024.png){.thumbnail}
 >>
 >> - Dans le paramètre `Device type`{.action}, renseignez `VLAN 802.1q`.
 >> - Dans le paramètre `Base device`{.action}, renseignez l'interface. Pour notre exemple, `eth2`.
