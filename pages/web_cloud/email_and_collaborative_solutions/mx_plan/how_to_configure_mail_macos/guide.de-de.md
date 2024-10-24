@@ -60,17 +60,17 @@ Folgen Sie den Installationsschritten, indem Sie unten auf die Registerkarten kl
 >> Geben Sie im folgenden Fenster die folgenden Informationen ein:
 >>
 >> - **E-Mail-Adresse**
->> - **Benutzername**: Geben Sie Ihre vollständige E-Mail-Adresse ein
+>> - **Benutzername**: Geben Sie Ihre vollständige E-Mail-Adresse ein.
 >> - **Passwort**
->> - **Account-Typ**: Wählen Sie `IMAP` (empfohlen) oder `POP`
->> - **Empfangsserver**:<br>- **EUROPE**: Geben Sie `imap.mail.ovh.net` oder `ssl0.ovh.net`<br>- **AMERIKA/ASIEN**: Geben Sie `imap.mail.ovh.ca` ein
->> - **sendender Server**:<br>- **EUROPE**: Geben Sie `smtp.mail.ovh.net` oder `ssl0.ovh.net`<br>- **AMERIKA/ASIEN**: Geben Sie `smtp.mail.ovh.ca` ein
+>> - **Account-Typ**: Wählen Sie `IMAP` (empfohlen) oder `POP`.
+>> - **Empfangsserver**:<br>- **EUROPA**: Geben Sie `imap.mail.ovh.net` oder `ssl0.ovh.net` ein.<br>- **AMERIKA/ASIEN**: Geben Sie `imap.mail.ovh.ca` ein.
+>> - **Sendender Server**:<br>- **EUROPA**: Geben Sie `smtp.mail.ovh.net` oder `ssl0.ovh.net` ein.<br>- **AMERIKA/ASIEN**: Geben Sie `smtp.mail.ovh.ca` ein.
 >>
->> Klicken Sie auf `Verbinden`{.action}, um die Konfiguration abzuschließen
+>> Klicken Sie auf `Verbinden`{.action}, um die Konfiguration abzuschließen.
 >>
 >> > [!warning]
 >> >
->> > Die rote Meldung "**Kontoname oder Kennwort kann nicht überprüft werden**" j erscheint, wenn das Fenster das erste Mal angezeigt wird. Wenn diese Meldung jedoch nach der Validierung weiterhin angezeigt wird, sind die eingegebenen Informationen fehlerhaft.<br><br>
+>> > Die rote Meldung "**Kontoname oder Kennwort kann nicht überprüft werden**" erscheint, wenn das Fenster das erste Mal angezeigt wird. Wenn diese Meldung jedoch nach der Validierung weiterhin angezeigt wird, sind die eingegebenen Informationen fehlerhaft.<br><br>
 >>
 >> ![mailmac](images/mail-mac-email03.png){.thumbnail .w-400 .h-600}
 
@@ -92,14 +92,14 @@ Wenn Sie eine Änderung vornehmen müssen, die den Verlust der Daten Ihres E-Mai
 
 Wenn Ihr E-Mail-Account bereits eingerichtet ist und Sie auf die Account-Einstellungen zugreifen müssen, um diese zu ändern:
 
-- Klicken Sie auf `Mail`{.action} im Menü oben auf Ihrem Bildschirm und dann auf `Einstellungen`{.action}.
+- Klicken Sie auf `Mail`{.action} im Menü oben und dann auf `Einstellungen`{.action}.
 - Wählen Sie den betreffenden Account in der linken Spalte aus und klicken Sie auf `Servereinstellungen`{.action}.
 - Geben Sie im Bereich `Empfangsserver (POP)` oder `Empfangsserver (IMAP)` Ihre vollständige E-Mail-Adresse in das Feld `Benutzername`{.action} sowie das zugehörige `Passwort`{.action} in das dafür vorgesehene Feld ein.
 - Geben Sie im Bereich `Versand-Server (SMTP)` Ihre vollständige E-Mail-Adresse in das Feld `Benutzername`{.action} sowie das zugeordnete `Passwort`{.action} in das dafür vorgesehene Feld ein.
-- Deaktivieren Sie die Kontrollkästchen `Verbindungseinstellungen automatisch verwalten`{.action}, um die Einstellungen für `Port`{.action} und `Authentifizierung`{.action} anzuzeigen.
-- Stellen Sie sicher, dass die Kontrollkästchen `TLS/SSL verwenden`{.action} aktiviert sind.
+- Deaktivieren Sie die Option `Verbindungseinstellungen automatisch verwalten`{.action}, um die Einstellungen für `Port`{.action} und `Authentifizierung`{.action} anzuzeigen.
+- Stellen Sie sicher, dass die Optionen `TLS/SSL verwenden`{.action} aktiviert sind.
 - Stellen Sie in den Dropdown-Menüs `Authentifizierung`{.action} sicher, dass `Passwort` ausgewählt ist.
-- Beziehen Sie sich für die Felder `Hostname`{.action} und `Port`{.action} auf die Werte unter „[POP-, IMAP- und SMTP-Parameterrückruf](#popimap-settings)“. **Stellen Sie sicher, dass der Servertyp (IMAP, POP und SMTP) Ihrer Region (Europa oder Asien-Pazifik) entspricht**.
+- Nutzen Sie für die Felder `Hostname`{.action} und `Port`{.action} die Werte unter„[POP-, IMAP- und SMTP-Einstellungen](#popimap-settings). **Stellen Sie sicher, dass der Servertyp (IMAP, POP und SMTP) Ihrer Region (Europa oder Asien-Pazifik) entspricht**.
 
 Um die Konfiguration abzuschließen, klicken Sie auf `Speichern`{.action}.
 
@@ -111,32 +111,32 @@ Um die Konfiguration abzuschließen, klicken Sie auf `Speichern`{.action}.
 >
 > Wenn Ihre E-Mail-Adresse mit **IMAP** konfiguriert ist und Sie diese Konfiguration in **POP** ändern möchten, müssen Sie das Mail-Konto von MacOS löschen und es dann mit **POP** neu erstellen.
 
-### POP-, IMAP- und SMTP-Einstellungen zurückrufen <a name="popimap-settings"></a>
+### POP-, IMAP- und SMTP-Einstellungen <a name="popimap-settings"></a>
 
-Für den Empfang von E-Mails empfehlen wir Ihnen bei der Auswahl des Kontotyps die Verwendung von **IMAP**. Sie können jedoch **POP** auswählen.
+Für den Empfang von E-Mails empfehlen wir bei der Auswahl des Kontotyps die Verwendung von **IMAP**. Sie können sich aber auch für **POP** entscheiden
 
 > [!warning]
 >
-> Es ist notwendig, den Ihrem Standort entsprechenden Wert richtig zu notieren (**EUROPE** oder **AMERICA/ASIEN-PAZIFIK**)
+> Es ist notwendig, den Ihrem Standort entsprechenden Wert zu verwenden (**EUROPA** oder **AMERIKA/ASIEN-PAZIFIK**).
 
-- **Für eine POP-Konfiguration**
+- **POP-Konfiguration**
 
 |Information|Beschreibung|
 |---|---|
-|Benutzername|Geben Sie die E-Mail-Adresse ein **vollständig**|
-|Passwort|Geben Sie das Passwort der E-Mail-Adresse ein|
-|Server **EUROPE** (eingehend)|pop.mail.ovh.net **oder** ssl0.ovh.net|
+|Benutzername|Geben Sie die **vollständige** E-Mail-Adresse ein. |
+|Passwort|Geben Sie das Passwort des E-Mail-Accounts ein.|
+|Server **EUROPA** (eingehend)|pop.mail.ovh.net **oder** ssl0.ovh.net|
 |Server **AMERIKA / ASIEN-PAZIFIK** (eingehend)|pop.mail.ovh.ca|
 |Port|995|
 |Sicherheitstyp|SSL/TLS|
 
-- **Für eine IMAP-Konfiguration**
+- **IMAP-Konfiguration**
 
 |Information|Beschreibung|
 |---|---|
-|Benutzername|Geben Sie die E-Mail-Adresse ein **vollständig**|
-|Passwort|Geben Sie das Passwort der E-Mail-Adresse ein|
-|Server **EUROPE** (eingehend)|imap.mail.ovh.net **oder** ssl0.ovh.net|
+|Benutzername|Geben Sie die **vollständige** E-Mail-Adresse ein. |
+|Passwort|Geben Sie das Passwort des E-Mail-Accounts ein.|
+|Server **EUROPA** (eingehend)|imap.mail.ovh.net **oder** ssl0.ovh.net|
 |Server **AMERIKA / ASIEN-PAZIFIK** (eingehend)|imap.mail.ovh.ca|
 |Port|993|
 |Sicherheitstyp|SSL/TLS|
@@ -147,10 +147,10 @@ Wenn Sie zum Senden von E-Mails die **SMTP**-Einstellungen in den Kontoeinstellu
 
 |Information|Beschreibung|
 |---|---|
-|Benutzername|Geben Sie die E-Mail-Adresse ein **vollständig**|
-|Passwort|Geben Sie das Passwort der E-Mail-Adresse ein|
-|Server **EUROPE** (ausgehend)|smtp.mail.ovh.net **oder** ssl0.ovh.net|
-|Server **AMERIKA / ASIEN-PAZIFIK** (ausgehend)|smtp.mail.ovh.ca|
+|Benutzername|Geben Sie die **vollständige** E-Mail-Adresse ein. |
+|Passwort|Geben Sie das Passwort des E-Mail-Accounts ein.|
+|Server **EUROPA** (eingehend)|smtp.mail.ovh.net **oder** ssl0.ovh.net|
+|Server **AMERIKA / ASIEN-PAZIFIK** (eingehend)|smtp.mail.ovh.ca|
 |Port|465|
 |Sicherheitstyp|SSL/TLS|
 
@@ -158,15 +158,15 @@ Wenn Sie zum Senden von E-Mails die **SMTP**-Einstellungen in den Kontoeinstellu
 >
 > **Konfiguration ändern**
 >
-> Wenn Sie Ihre E-Mail-Adresse als **IMAP** konfigurieren und die Konfiguration in **POP** ändern möchten, müssen Sie den Mac Mail-Account löschen und anschließend in **POP** neu erstellen, um die Konfiguration zu ändern.
+> Wenn Sie Ihren E-Mail-Account als **IMAP** konfigurieren und die Konfiguration in **POP** ändern möchten, müssen Sie den Mac Mail-Account löschen und anschließend in **POP** neu erstellen, um die Konfiguration zu ändern.
 
 ### Was kann ich tun, wenn ich meine E-Mails nicht empfangen/senden kann?
 
-- Wenn das Symbol auf der folgenden Abbildung angezeigt wird, handelt es sich um eine Netzwerktrennung. Stellen Sie sicher, dass die Internetverbindung ordnungsgemäß funktioniert.
+- Wenn das Symbol wie in der Abbildung unten angezeigt wird, handelt es sich um einen Netzwerkfehler. Stellen Sie sicher, dass die Internetverbindung ordnungsgemäß funktioniert.
 
 ![mailmac](images/mail-mac-disconnect.png){.thumbnail .w-400 .h-600}
 
-- Wenn das Symbol auf dem unten stehenden Bildschirmfoto angezeigt wird, handelt es sich um einen Synchronisierungsfehler. Überprüfen Sie die Konfigurationseinstellungen Ihres E-Mail-Accounts unter [Vorhandene Einstellungen ändern](#modify-settings).
+- Wenn das Symbol wie in der Abbildung unten angezeigt wird, handelt es sich um einen Synchronisierungsfehler. Überprüfen Sie die Konfigurationseinstellungen Ihres E-Mail-Accounts unter [Vorhandene Einstellungen ändern](#modify-settings).
 
 ![mailmac](images/mail-mac-fail.png){.thumbnail .w-400 .h-600}
 
@@ -184,8 +184,8 @@ Wenn Sie zum Senden von E-Mails die **SMTP**-Einstellungen in den Kontoeinstellu
 [Exchange - E-Mail-Account auf macOS Mail einrichten](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_ios)<br>
 [Exchange - E-Mail-Account auf Mail für iPhone und iPad einrichten](pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_mail_macos/guide.fr-de.md)
 
-Für spezielle Dienstleistungen (Referenzierung, Entwicklung etc.) wenden Sie sich bitte an die [OVHcloud Partner](/links/partner).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](/links/partner).
 
-Wenn Sie Hilfe bei der Verwendung und Konfiguration Ihrer OVHcloud Lösungen benötigen, empfehlen wir Ihnen unsere verschiedenen [Support-Angebote](/links/support).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](/links/support).
 
-Für den Austausch mit unserer [User Community](/links/community).
+Treten Sie unserer [User Community](/links/community) bei.
