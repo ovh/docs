@@ -1,7 +1,7 @@
 ---
 title: Configuring the API server flags on an OVHcloud Managed Kubernetes cluster
 excerpt: 'Find out how to configure the managed components of your Kubernetes: CoreDNS, IPVS, and even API server admission plugins on an OVHcloud Managed Kubernetes cluster'
-updated: 2024-07-05
+updated: 2024-10-24
 ---
 
 <style>
@@ -243,7 +243,7 @@ resource "ovh_cloud_project_kube" "cluster" {
   service_name = var.service_name
   name         = "my-super-cluster"
   region       = "GRA5"
-  version      = "1.30"
+  version      = "1.31"
 
   customization {
     apiserver {
@@ -256,7 +256,7 @@ resource "ovh_cloud_project_kube" "cluster" {
 }
 ```
 
-In this resources configuration, we ask Terraform to create a Kubernetes cluster, in the GRA5 region, using the Kubernetes version 1.30, while disabling the "AlwaysPullImages" admission plugin (e.g. in order to avoid our kubelet agents from reaching the Docker Hub download rate limit).
+In this resources configuration, we ask Terraform to create a Kubernetes cluster, in the GRA5 region, using the Kubernetes version 1.31, while disabling the "AlwaysPullImages" admission plugin (e.g. in order to avoid our kubelet agents from reaching the Docker Hub download rate limit).
 
 Now we need to initialise Terraform, generate a plan, and apply it.
 
@@ -324,7 +324,7 @@ Terraform will perform the following actions:
       + status                      = (known after apply)
       + update_policy               = (known after apply)
       + url                         = (known after apply)
-      + version                     = "1.30"
+      + version                     = "1.31"
 
       + customization {
           + apiserver {
@@ -373,7 +373,7 @@ Terraform will perform the following actions:
       + status                      = (known after apply)
       + update_policy               = (known after apply)
       + url                         = (known after apply)
-      + version                     = "1.30"
+      + version                     = "1.31"
 
       + customization {
           + apiserver {
@@ -450,7 +450,7 @@ Terraform will perform the following actions:
       - status                      = "READY" -> null
       - update_policy               = "ALWAYS_UPDATE" -> null
       - url                         = "xxxxxx.c2.gra.k8s.ovh.net" -> null
-      - version                     = "1.30" -> null
+      - version                     = "1.31" -> null
 
       - customization {
           - apiserver {
