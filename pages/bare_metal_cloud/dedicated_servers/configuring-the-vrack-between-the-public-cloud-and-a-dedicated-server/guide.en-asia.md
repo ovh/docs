@@ -38,7 +38,7 @@ From the list of eligible services, select the project you want to add to the vR
 
 ![add project to vrack](images/addprojectvrack.png){.thumbnail}
 
-### Integrating an instance into vRack
+### Integrating an instance into the vRack
 
 Two situations may arise:
 
