@@ -92,7 +92,7 @@ Zapoznaj się z przewodnikiem [Tworzenie i usuwanie użytkownika OpenStack](/pag
 
 ///
 
-## Kopii zapasowych
+### Kopii zapasowych
 
 /// details | Czy można wykonać kopię zapasową serwerów Public Cloud?
 
@@ -114,7 +114,7 @@ Możesz przypisać do 25 dodatkowych wolumenów do każdej instancji.
 
 ///
 
-## Sieć
+### Sieć
 
 /// details | Ile adresów IPv6 jest dostarczanych z moją instancją?
 
