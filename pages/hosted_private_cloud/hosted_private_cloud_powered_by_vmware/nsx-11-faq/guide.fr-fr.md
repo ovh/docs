@@ -1,7 +1,7 @@
 ---
 title: "NSX - Foire aux questions"
 excerpt: "Retrouvez une foire aux questions des scénarios les plus fréquents concernant l'utilisation de NSX au sein de l'écosystème Hosted Private Cloud"
-updated: 2024-09-24
+updated: 2024-10-24
 ---
 
 ## Objectif
@@ -12,12 +12,12 @@ updated: 2024-09-24
 
 > [!faq] 
 > Quels sont les différences entre les packs d’assistance <a name="diffencepack"></a>
-> > Tous les packs sont basés sur des jours (1 jour = 8 heures). 1 jour, 2 jours (parfois plus).
-> > La première approche est la même pour tous les packs avec une phase de découverte, mais la durée du pack dépendra de la complexité de l'environnement et de la maturité du client.
-> > Cette question sera étudiée avec l'équipe Professional Services lors d'un premier appel d'évaluation.
+> > Tous les packs sont basés sur un décompte jours/heures, par exemple : 1 jour = 8 heures, 2 jours = 16 heures (parfois plus).
+> > La première approche est la même pour tous les packs avec une phase de découverte, mais la durée du pack dépendra de la complexité de l'environnement et de la maturité de votre offre managé en place.
+> > Cette question sera étudiée avec les équipes [Professional Services](/links/professional-services) lors d'un premier appel d'évaluation.
 > >
 > Comment puis-je protéger mes machines virtuelles directement exposées sur Internet avec une IP Publique ? <a name="public ip"></a>
-> > Vous pouvez positionner l'interface externe de vos VM dans un segment "ovh-t0-public" et ensuite sécuriser vos flux avec le Distributed Firewall de NSX.
+> > Vous pouvez positionner l'interface externe de vos machines virtuelles dans un segment `ovh-t0-public` et ensuite sécuriser vos flux avec le Distributed Firewall de NSX.
 > >
 > Quelle est la date de fin de vie de NSX-V ? <a name="eofnsxv"></a>
 > > VMware a décidé d'initier la fin de vie (EOL) de NSX-V depuis janvier 2022. OVHcloud a obtenu une extension de support jusqu'au 31 juillet 2024.
@@ -29,9 +29,9 @@ updated: 2024-09-24
 > > Il n'est plus possible d'effectuer cette migration à ce jour. Cependant, [contactez le support](https://help.ovhcloud.com/csm?id=csm_get_help) ou votre technical account manager (TAM) si vous avez besoin de plus d'information sur vos possibilités à ce jour.
 > >
 > Que se passe-t-il si nous n’avons pas migré avant le 31 juillet 2024 ? <a name="nsxvmigrationend"></a>
-> > OVHcloud ne supprime pas le service, mais ne peut pas garantir le même niveau d'engagement de service (SLA). Un document doit donc être signé sous forme de clause contractuelle fixant la responsabilité sur la fin de vie de NSX-V depuis le 31 juillet 2024 en cas de problème.
+> > OVHcloud ne supprime pas le service, mais nous ne pouvons pas garantir le même niveau d'engagement de service (SLA). Un document doit donc être signé sous forme de clause contractuelle fixant la responsabilité sur la fin de vie de NSX-V depuis le 31 juillet 2024 en cas de problème.
 > >
-> Est-il possible de faire du BGP (Border Gateway Protocol) ? <a name="bgp"></a>
+> Est-il possible de faire du Border Gateway Protocol (BGP) ? <a name="bgp"></a>
 > > Il est impossible de faire du BGP public (peer avec les router internet OVHcloud).
 > > Il est toutefois possible de faire du BGP (privé) avec un vRack via une passerelle Tier-0 ou une passerelle VRF de niveau 0, ou dans un tunnel IPsec via une Tier-0 uniquement.
 > > 
