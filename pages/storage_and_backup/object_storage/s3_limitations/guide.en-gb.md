@@ -31,7 +31,7 @@ Discover how to maximize your performance with [this guide](/pages/storage_and_b
 ### Maximum number of buckets per project
 
 - 100 (default)
-- 1000 (requires a manual intervention, please contact the support teams)
+- 1000 (requires a manual intervention, please [contact the support teams](https://help.ovhcloud.com/csm?id=csm_get_help))
 
 ### Maximum number of objects in a bucket
 
