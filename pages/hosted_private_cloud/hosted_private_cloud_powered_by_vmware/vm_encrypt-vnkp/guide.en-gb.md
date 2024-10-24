@@ -1,7 +1,7 @@
 ---
 title: "vNKP - Enabling virtual machine encryption"
 excerpt: "Find out how to implement virtual machine encryption with vSphere Native Key Provider"
-updated: 2024-10-23
+updated: 2024-10-24
 ---
 
 ## Objective
@@ -20,9 +20,9 @@ The aim of this guide is to explain the implementation details of **vSphere Nati
 
 ## Requirements
 
-- You must have signed up to a [VMware on OVHcloud] solution (/links/hosted-private-cloud/VMware).
-- You must be logged in to your [OVHcloud Control Panel](/links/manager).
-- access to the vSphere management interface.
+- You must have signed up to a [VMware on OVHcloud](/links/hosted-private-cloud/VMware) solution.
+- Access to the [OVHcloud Control Panel](/links/manager).
+- Access to the vSphere management interface.
 - vSphere and hosts version 7.0 Update 2 or higher.
 - The **Zerto** replication solution is not currently compatible with encryption. This means that encrypted VMs cannot be replicated.
 
@@ -38,7 +38,7 @@ In detail, when encrypting a virtual machine, the ESXi host generates a **DEK** 
 
 > [!warning]
 >
-> Your **VMware on OVHcloud** cluster may not be in version 7.0 Update 2. If so, please contact support to upgrade your infrastructure.
+> Your **VMware on OVHcloud** cluster may not be in version 7.0 Update 2. If so, please [contact support](https://help.ovhcloud.com/csm?id=csm_get_help) to upgrade your infrastructure.
 >
 
 ### Authorising a user to administer encryption on a Hosted Private Cloud cluster powered by VMware 

@@ -1,7 +1,7 @@
 ---
 title: "vNKP - Activation du chiffrement des machines virtuelles"
 excerpt: "Découvrez comment mettre en œuvre le chiffrement de vos machines virtuelles avec vSphere Native Key Provider"
-updated: 2024-10-23
+updated: 2024-10-24
 ---
 
 ## Objectif
