@@ -1,12 +1,12 @@
 ---
 title: "Web Cloud Databases - Logs abrufen"
 excerpt: "Erfahren Sie hier, wie Sie die Logs Ihrer Datenbanken erhalten, die auf Ihrem Web Cloud Databases Server gehostet werden"
-updated: 2024-03-07
+updated: 2024-10-24
 ---
 
 > [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
+> **Diese Anleitung wird derzeit aktualisiert. Einige Informationen sind möglicherweise unvollständig oder veraltet. Vielen Dank für Ihr Verständnis.**
 
 ## Ziel
 
