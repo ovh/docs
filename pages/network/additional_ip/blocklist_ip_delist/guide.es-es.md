@@ -1,7 +1,7 @@
 ---
 title: "Cómo eliminar una dirección IP de una lista de direcciones IP bloqueadas"
 excerpt: "Cómo solicitar la retirada de una dirección IP de una lista de bloqueo si sus servicios se ven afectados por proveedores de antispam"
-updated: 2024-10-21
+updated: 2024-10-24
 ---
 
 <style>
@@ -47,7 +47,9 @@ Es importante tener en cuenta que las listas negras pueden incluir nombres de do
 - [Spamhaus](https://check.spamhaus.org/)
 
     - [Spamhaus Block List (SBL)](https://www.spamhaus.org/blocklists/spamhaus-blocklist/)  
-    Si [la IP aparece en la lista de bloqueo (SBL) de Spamhaus](https://check.spamhaus.org/sbl/listings/ovh.net/), cree una solicitud de asistencia desde el [centro de ayuda de OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help). Nuestro equipo de soporte remitirá su solicitud a nuestro equipo de informes de abuso, que se pondrá en contacto con el proveedor de la lista negra.
+    Si [la IP figura en la lista de bloqueo (SBL) de Spamhaus](https://check.spamhaus.org/sbl/listings/ovh.net/), significa que ya ha sido contactado por correo electrónico por nuestro equipo de denuncias de abuso.<br>
+    El mensaje de correo electrónico enviado por nuestro equipo proviene de una dirección similar a la siguiente: `ticket+ABCDEFGHIJ.ID@abuse.ovh.net` (el número de tíquet siempre está en mayúsculas y el ID que sigue está formado por 4 caracteres alfanuméricos).<br>
+    Siga las instrucciones de este correo electrónico para corregir la situación. Una vez que haya tomado las medidas correctivas necesarias, enviaremos dichas medidas a Spamhaus para pedirles que eliminen su IP de la lista, ya que Spamhaus es el único responsable de tomar las medidas necesarias para responder a nuestra solicitud.
     - [Exploits Block List (XBL)](https://www.spamhaus.org/blocklists/exploits-blocklist/) o [Combined Spam Sources (CSS)](https://www.spamhaus.org/blocklists/combined-spam-sources/)  
     Si su IP aparece en la *Exploits Block List* y/o en la lista combinada de fuentes de spam, se debe a problemas de configuración. Siga los pasos que se indican en el sitio de Spamhaus para eliminar la IP de la lista (ver el ejemplo a continuación). Una vez que haya seguido los pasos, puede quitarlo de la lista.  
     /// details | Ejemplo

@@ -1,7 +1,7 @@
 ---
 title: "Comment retirer une adresse IP d'une liste d'adresses IP bloquées"
 excerpt: "Découvrez comment demander le retrait d'une adresse IP d'une blocklist si vos services sont impactés par des fournisseurs d'antispam"
-updated: 2024-10-21
+updated: 2024-10-24
 ---
 
 <style>
@@ -45,10 +45,13 @@ Il est important de noter que les listes de blocage peuvent inclure des noms de 
 ### Fournisseurs pris en charge
 
 - [Spamhaus](https://check.spamhaus.org/)
+
     - [Spamhaus Block List (SBL)](https://www.spamhaus.org/blocklists/spamhaus-blocklist/)  
-    Si [l’IP figure dans la liste de blocage (SBL) de Spamhaus](https://check.spamhaus.org/sbl/listings/ovh.net/), créez une demande d’assistance depuis le [centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help). Notre équipe de support transmettra votre demande à notre équipe chargée des signalement d'abus, qui contactera ensuite le fournisseur de la liste de blocage.
+    Si [l’IP figure dans la liste de blocage (SBL) de Spamhaus](https://check.spamhaus.org/sbl/listings/ovh.net/), cela signifie que vous avez déjà été contacté par e-mail par notre équipe en charge des signalements d'abus.<br>
+    L'e-mail envoyé par notre équipe provient d'une adresse similaire à celle-ci : `ticket+ABCDEFGHIJ.ID@abuse.ovh.net` (le numéro de ticket est toujours en lettres capitales et l'ID qui suit est composé de 4 caractères alphanumériques).<br>
+    Suivez les instructions fournies dans cet e-mail afin de remédier à la situation. Une fois des mesures correctives prises par vos soins, nous transmettrons ces mesures à Spamhaus pour leur demander que votre IP soit retirée de la liste, Spamhaus étant seul décisionnaire des suites à donner à notre demande.
     - [Exploits Block List (XBL)](https://www.spamhaus.org/blocklists/exploits-blocklist/) ou [Combined Spam Sources (CSS)](https://www.spamhaus.org/blocklists/mixed-spam-sources/)  
-    Si votre IP figure dans la *Exploits Block List* et/ou dans la liste combinée des sources de spam, cela est dû à des problèmes de configuration. Veuillez suivre les étapes mentionnées sur le site Spamhaus pour retirer l'IP de la liste (voir l'exemple ci-dessous). Une fois les étapes suivies, vous pouvez le retirer vous-même de la liste.  
+    Si votre IP figure dans la *Exploits Block List* et/ou dans la liste combinée des sources de spam, cela est dû à des problèmes de configuration. Veuillez suivre les étapes mentionnées sur le site Spamhaus pour retirer l'IP de la liste (voir l'exemple ci-dessous). Une fois les étapes suivies, vous pouvez le retirer vous-même de la liste.
     /// details | Exemple
 
     ![spamhaus example](images/blocklist1.png){.thumbnail}  
