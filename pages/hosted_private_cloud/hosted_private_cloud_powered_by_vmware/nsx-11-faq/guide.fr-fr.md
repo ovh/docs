@@ -19,15 +19,17 @@ updated: 2024-09-24
 > Comment puis-je protéger mes machines virtuelles directement exposées sur Internet avec une IP Publique ? <a name="public ip"></a>
 > > Vous pouvez positionner l'interface externe de vos VM dans un segment "ovh-t0-public" et ensuite sécuriser vos flux avec le Distributed Firewall de NSX.
 > >
-> Quelle est la date limite pour la migration vers NSX-T ? Quelle est la date de fin de vie de NSX-V ? <a name="eofnsxv"></a>
-> > La fin de vie de NSX-V est prévue pour le 31 juillet 2024, la migration doit être effectuée avant cette date.
+> Quelle est la date de fin de vie de NSX-V ? <a name="eofnsxv"></a>
+> > VMware a décidé d'initier la fin de vie (EOL) de NSX-V depuis janvier 2022. OVHcloud a obtenu une extension de support jusqu'au 31 juillet 2024.
+> >
+> Quelle est la date fin de support pour les demandes de migration vers NSX-T ? 
+> > La fin de vie de NSX-V étant prévue pour le 31 juillet 2024. Cette date étant passé, la migration ne peut plus être effectuée.
 > >
 > Quelle est la date maximale à laquelle faire la demande d'accompagnement de migration ? <a name="deadlineassistance"></a>
-> > La fin de vie de NSX-V est prévue pour le 30 juin 2024, vous pouvez le faire dès à présent pour vous laisser le temps d'effectuer votre migration.
+> > Il n'est donc plus possible d'effectuer cette migration à ce jour. Contactez le support si vous êtes toujours dans ce cas aujourd'hui.
 > >
 > Que se passe-t-il si nous n’avons pas migré avant le 31 juillet 2024 ? <a name="nsxvmigrationend"></a>
-> > OVHcloud ne supprime pas le service, mais ne peut pas garantir de SLA. Le client devra signer un document par lequel OVHcloud s’engage à quitter NSX-V à une date déterminée.
-> > VMware a décidé d'initier la fin de vie de NSX-V depuis janvier 2022. OVHcloud a obtenu une extension de support jusqu'au 2024-07-31.
+> > OVHcloud ne supprime pas le service, mais ne peut pas garantir le même niveau d'engagement de service (SLA). Un document doit donc être signé sous forme de clause contractuelle fixant la responsabilité sur la fin de vie de NSX-V depuis le 31 juillet 2024 en cas de problème.
 > >
 > Est-il possible de faire du BGP ? <a name="bgp"></a>
 > > Il est impossible de faire du BGP public (peer avec les router internet OVHcloud).
