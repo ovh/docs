@@ -577,6 +577,7 @@
                 + [First steps with preinstalled applications](public_cloud/compute/apps_first_steps)
                 + [Starting an instance on an attached volume](public_cloud/compute/start_instance_on_attached_volume)
                 + [Shelve or pause an instance](public_cloud/compute/suspend_or_pause_an_instance)
+                + [Obtaining Source IP in Octavia](public_cloud/containers_orchestration/managed_kubernetes/Octavia_Tutorial_Add_proxy_protocol)
             + [Managing instances from the OVHcloud Control Panel](public-cloud-compute-instance-management-control-panel)
                 + [Backing up an instance](public_cloud/compute/save_an_instance)
                 + [Using instance backups to create or restore an instance](public_cloud/compute/create_restore_a_virtual_server_with_a_backup)
