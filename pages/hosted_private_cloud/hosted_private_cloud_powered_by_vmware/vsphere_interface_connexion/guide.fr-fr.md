@@ -1,7 +1,7 @@
 ---
 title: "Se connecter à l’interface web vSphere"
 excerpt: "Découvrez les différentes façons de se connecter à votre interface web vSphere managée depuis l'interface Hosted Private Cloud VMware on OVHcloud"
-updated: 2024-08-21
+updated: 2024-10-24
 ---
 
 ## Objectif
@@ -10,7 +10,7 @@ updated: 2024-08-21
 
 ## Prérequis
 
-- Être administrateur de l'infrastructure [Hosted Private Cloud](/links/hosted-private-cloud/vmware).
+- Être administrateur de l'infrastructure [Hosted Private Cloud - vSphere managé](/links/hosted-private-cloud/vmware).
 - Avoir ajouté des adresses IP dans la section `Sécurité` de votre [espace client OVHcloud](/links/manager). Pour plus d'informations, consultez notre guide « [Autoriser des IP à se connecter au vCenter](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/autoriser_des_ip_a_se_connecter_au_vcenter) ».
 
 Pour utiliser IAM, vous devez activer la fonctionnalité afin de déléguer la gestion des droits avec un rôle. Veuillez lire les guides :
@@ -29,11 +29,15 @@ Pour se connecter à la console web vSphere managée, vous avez besoin d'identif
 
 Vous pouvez gérer vos identifiants de connexion depuis l'espace client OVHcloud de votre produit VMware managé on OVHcloud.
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur l'onglet `Hosted Private Cloud`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager) et cliquez sur l'onglet `Hosted Private Cloud`{.action}
 
-Cliquez sur la rubrique `VMware`{.action}, sélectionnez votre infrastructure puis rendez-vous dans l'onglet `Utilisateurs`{.action}.
+Cliquez sur la rubrique `Managed VMware vSphere `{.action}, sélectionnez votre infrastructure puis rendez-vous dans l'onglet `Utilisateurs`{.action}.
 
-Sous la section `Gestion des autorisations utilisateur dans le vSphere client`{.action}, cliquez sur `Créer un utilisateur`{.action} ou `Modifier`{.action} un utilisateur.
+![Connexion à l'interface vSphere HTML5](images/managed_vsphere_all.png){.thumbnail}
+
+Pour listez vos environnement VMware cliquez sur `Tous mes services`{.action}.
+
+Pour accéder à la section utilisateur `Gestion des autorisations utilisateur dans le vSphere client`{.action}, cliquez sur `Créer un utilisateur`{.action} ou `Modifier`{.action} un utilisateur.
 
 ![Connexion à l'interface vSphere HTML5](/pages/assets/screens/control_panel/product-selection/hosted-private-cloud/vmware/vmware_users.png){.thumbnail}
 
