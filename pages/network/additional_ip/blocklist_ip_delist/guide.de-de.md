@@ -1,7 +1,7 @@
 ---
 title: IP-Adresse von Blocklisten entfernen
 excerpt: Erfahren Sie hier, wie Sie die Entfernung von IP-Adressen aus einer Blockliste anfordern können, wenn Ihre Dienste durch Antispam-Anbieter beeinträchtigt sind
-updated: 2024-10-21
+updated: 2024-10-24
 ---
 
 <style>
@@ -46,8 +46,10 @@ Beachten Sie, dass Blocklisten auch Domainnamen und IP-Adressen enthalten könne
 
 - [Spamhaus](https://check.spamhaus.org/)
 
-    - [Spamhaus Block List (SBL)](https://www.spamhaus.org/blocklists/spamhaus-blocklist/)  
-    Wenn die IP auf der [Spamhaus Blocklist (SBL)](https://check.spamhaus.org/sbl/listings/ovh.net/) ist, erstellen Sie eine Support-Anfrage über das [OVHcloud Help Center](https://help.ovhcloud.com/csm?id=csm_get_help). Unser Support-Team leitet Ihre Anfrage an unser Abuse Team weiter, das dann den Anbieter der Blocklist kontaktiert.
+    - [Spamhaus Block List (SBL)](https://www.spamhaus.org/blocklists/spamhaus-blocklist/)
+    Wenn [die IP auf der Spamhaus Blocklist (SBL) ist](https://check.spamhaus.org/sbl/listings/ovh.net/), wurden Sie bereits per E-Mail von unserem Abuse Team kontaktiert.<br>
+    Die von unserem Team versandte E-Mail stammt von einer Adresse in der Form: `ticket+ABCDEFGHIJ.ID@abuse.ovh.net` (die Ticketnummer ist immer in Großbuchstaben geschrieben, die folgende ID besteht aus 4 alphanumerischen Zeichen).<br>
+    Folgen Sie den Anweisungen in dieser E-Mail, um die Situation zu beheben. Sobald Sie Abhilfemaßnahmen ergriffen haben, leiten wir diese Maßnahmen an Spamhaus weiter, mit der Aufforderung Ihre IP-Adresse von der Liste zu entfernen. Spamhaus entscheidet dann über die weitere Bearbeitung unserer Anfrage.
     - [Exploits Block List (XBL)](https://www.spamhaus.org/blocklists/exploits-blocklist/) oder [Combined Spam Sources (CSS)](https://www.spamhaus.org/blocklists/combined-spam-sources/)    
     Wenn Ihre IP-Adresse in *Exploits Block List* oder *Combined Spam Sources*, aufgeführt ist, liegt dies an Konfigurationsproblemen. Befolgen Sie die Schritte auf der Spamhaus-Website, um die IP-Adresse aus der Liste zu entfernen (siehe Beispiel unten). Wenn Sie die Schritte korrekt ausgeführt haben, können Sie damit die IP von der Liste entfernen.  
     /// details | Beispiel

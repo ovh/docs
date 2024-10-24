@@ -1,7 +1,7 @@
 ---
 title: How to delist blocklisted IP addresses
 excerpt: Find out how to request the removal of an IP address from a blocklist if your services are impaired by anti-spam providers
-updated: 2024-10-21
+updated: 2024-10-24
 ---
 
 <style>
@@ -47,7 +47,9 @@ It is important to note that blocklists can include domain names and IP addresse
 - [Spamhaus](https://check.spamhaus.org/)
 
     - [Spamhaus Block List (SBL)](https://www.spamhaus.org/blocklists/spamhaus-blocklist/)  
-    If the [IP is listed under the Spamhaus Blocklist (SBL)](https://check.spamhaus.org/sbl/listings/ovh.net/), you will need to submit a support ticket in the [OVHcloud Help Centre](https://help.ovhcloud.com/csm?id=csm_get_help). Support will relay your case to our Abuse Team, who will then contact the Blocklist Provider.
+    If the [IP is listed under the Spamhaus Blocklist (SBL)](https://check.spamhaus.org/sbl/listings/ovh.net/), this means you have already been contacted by email by our abuse reporting team.<br>
+    The email sent by our team comes from an address similar to this one: `ticket+ABCDEFGHIJ.ID@abuse.ovh.net` (the ticket number is always in capital letters and the ID that follows is composed of 4 alphanumeric characters).<br>
+    Follow the instructions in this email to resolve the situation. Once you have taken corrective measures, we will forward these measures to Spamhaus to request that your IP be removed from the list, as Spamhaus will be the sole decision-maker on the action to be taken on our request.
     - [Exploits Block List (XBL)](https://www.spamhaus.org/blocklists/exploits-blocklist/) or [Combined Spam Sources (CSS)](https://www.spamhaus.org/blocklists/combined-spam-sources/)  
     If your IP is listed under Exploits Block List and/or Combined Spam Sources, this is due to configuration issues. Please follow the steps mentioned on the Spamhaus website to delist the IP (see the example below). Once you have followed the steps, you can delist it yourself.  
     /// details | Example
