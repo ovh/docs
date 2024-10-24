@@ -17,19 +17,19 @@ Ajouter un accès à distance à votre OverTheBox permet une gestion et une surv
 
 ## En pratique
 
-### Création
+### Création de l'accès à distance
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager), partie `Telecom`{.action}.
-Cliquez sur `OverThebox`{.action} dans la barre de services à gauche, puis sélectionnez le service OverTheBox que vous souhaitez acceder à distance.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), partie `Telecom`{.action}.<br>
+Cliquez sur `OverThebox`{.action} dans la barre de services à gauche, puis sélectionnez le service OverTheBox auquel vous souhaitez acceder à distance.<br>
 Cliquez sur `Accès à distance`{.action}.
 
 Informations à inscrire dans la partie `Ajouter un accès à distance`{.action} :
 
 - **IP autorisée** : Cette adresse IP publique sera la seule autorisée à se connecter sur l'OverTheBox à distance. Laissez ce champ vide si l'IP autorisée doit être celle de votre connexion actuelle.
-- **Port exposé** : Port de l'**OverTheBox** qui sera contacté lors de l'accès à distance. Choisir **443** pour un accès à distance via le navigateur ou **22** pour un accès via SSH.
+- **Port exposé** : Port de l'**OverTheBox** qui sera contacté lors de l'accès à distance. Choisissez **443** pour un accès à distance via le navigateur ou **22** pour un accès via SSH.
 - **Date d'expiration** : Date à laquelle l'accès à distance sera fermé.
 - **Clef publique** : Obligatoire pour les connexions de type SSH, cette clef permet une connexion sécurisée.
-- Valider la création à l'aide du bouton `Valider`{.action}
+- Validez la création à l'aide du bouton `Valider`{.action}.
 - Une fois l'action créée, patientez quelques minutes le temps que l'accès à distance se configure.
 
 > [!primary]
@@ -39,11 +39,11 @@ Informations à inscrire dans la partie `Ajouter un accès à distance`{.action}
 
 ![overthebox](images/step1-create-2024.png){.thumbnail}
 
-### Connexion
+### Connexion à distance
 
 > [!primary]
 >
-> Pour une connexion sur l'interface web, il est possible que le navigateur alerte sur un possible problème de sécurité. La connexion est bien chiffrée, mais le navigateur ne reconnaît pas le certificat SSL, car il n'est pas signé par une autorité de certification.
+> Pour une connexion sur l'interface web, il est possible que le navigateur alerte sur un possible problème de sécurité. La connexion est bien chiffrée mais le navigateur ne reconnaît pas le certificat SSL car il n'est pas signé par une autorité de certification.
 >
 
 > [!tabs]
@@ -60,7 +60,7 @@ Informations à inscrire dans la partie `Ajouter un accès à distance`{.action}
 >> ![overthebox](images/step2-connectssh-2024.png){.thumbnail}
 >>
 
-### Suppression
+### Suppression de l'accès à distance
 
 Vous pouvez supprimer un accès à distance en cliquant sur le symbole en forme de poubelle.
 
