@@ -8,22 +8,26 @@ updated: 2024-10-24
 
 This page provides an overview of the technical limitations of the OVHcloud S3 Object Storage offer.
 
-## Performances
+## Performance
+
 ### Maximum bandwidth per connection
 
-1 Gbps / connection
+1 Gbps/connection.
 
-As **OVHcloud S3 Object Storage** is an highly distributed system, using **parallel requests** will help overcoming this limitation. Depending on your application and use case, this can be accomplished by simultaneously initiating requests (also called concurrent requests). 
-Discover how to maximize your performance through [this guide](https://help.ovhcloud.com/csm/en-gb-public-cloud-storage-s3-optimizing-performance?id=kb_article_view&sysparm_article=KB0062327)
+As **OVHcloud S3 Object Storage** is a highly distributed system, using **parallel requests** will help overcome this limitation. Depending on your application and use case, this can be accomplished by simultaneously initiating requests (also called concurrent requests). 
+
+Discover how to maximize your performance with [this guide](/pages/storage_and_backup/object_storage/s3_performance_optimization).
 
 ### Maximum number of write requests per second on a bucket
 
-300 (beyond that, the quality of service is no longer guaranteed)
+300 (beyond this number, the quality of service is no longer guaranteed).
 
-This maximum value is a soft limit and can be easily overcame by adopting good practices to distribute the I/Os as widely as possible in the object storage cluster, taking advantage of the **sharding mechanism**. 
-Discover how to maximize your performance through [this guide](https://help.ovhcloud.com/csm/en-gb-public-cloud-storage-s3-optimizing-performance?id=kb_article_view&sysparm_article=KB0062327)
+This maximum value is a soft limit and can be easily overcome by adopting best practices to distribute the I/Os as widely as possible in the object storage cluster, taking advantage of the **sharding mechanism**.
+
+Discover how to maximize your performance with [this guide](/pages/storage_and_backup/object_storage/s3_performance_optimization).
 
 ## Bucket limitations
+
 ### Maximum number of buckets per project
 
 - 100 (default)
@@ -36,13 +40,14 @@ Unlimited
 ### Name assignment
 
 - Must be between 3 and 63 characters long.
-- Must begin and end with lower case alphanumeric characters (a to z and 0 to 9).
+- Must begin and end with lowercase alphanumeric characters (a to z and 0 to 9).
 - Must be unique within OVHcloud.
-- May contain the following punctuation marks: "." and "-".
-- Must not contain multiple punctuation marks in a row (".." or " -." or ".-" or " --").
-- Must not look like an IP address (192.168.1.1).
+- May contain the following punctuation marks: `.` and `-`.
+- Must not contain multiple punctuation marks in a row (e.g. `..` or `-.` or `.-` or `--`).
+- Must not look like an IP address (e.g. 192.168.1.1).
 
 ## Object limitations
+
 ### Maximum size per object / mpu / part
 
 #### Via a single PUT
@@ -56,14 +61,14 @@ Maximum 5 GB per object (for an object which size is above 5GB, use a multi-part
 
 The theoretical maximum size of a single large object uploaded via MPU is thus 48TB.
 
-## Project lmimitation
+## Project lmimitations
+
 ### Maximum number of user accounts per project
 
 1,000
 
-
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Join our [community of users](/links/community).
