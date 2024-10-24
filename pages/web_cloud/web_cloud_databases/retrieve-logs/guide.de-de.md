@@ -6,7 +6,7 @@ updated: 2024-10-24
 
 > [!primary]
 >
-> **Dieses Handbuch wird derzeit aktualisiert. Einige Informationen sind möglicherweise unvollständig oder veraltet. Vielen Dank für Ihr Verständnis.**
+> **Diese Anleitung wird derzeit aktualisiert. Einige Informationen sind möglicherweise unvollständig oder veraltet. Vielen Dank für Ihr Verständnis.**
 
 ## Ziel
 
