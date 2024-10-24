@@ -26,13 +26,13 @@ details[open]>summary::before {
 
 Die Abrechnung erfolgt zwischen dem 01\. und 05\. eines Monats und richtet sich nach dem Verbrauch des Vormonats. Wenn Sie sich für die monatliche Abrechnung entschieden haben, wird Ihnen die Monatspauschale für den kommenden Monat zusammen mit dem Verbrauch des Vormonats (Instanzen, Object Storage) berechnet. Bei einer Umstellung auf die monatliche Abrechnung einer Ressource erfolgt eine sofortige anteilige Abrechnung für den laufenden Monat.
 
-Bitte beachten Sie, dass jede Instanz abgerechnet wird, bis sie aus Ihrem OVHcloud Kundencenter gelöscht wird.
+Beachten Sie, dass jede Instanz abgerechnet wird, bis sie aus Ihrem OVHcloud Kundencenter gelöscht wird.  
 Sie können Ihren Verbrauch anhand von Prognosen aus Ihrer Nutzungshistorie verfolgen. Darüber hinaus können Sie für jedes Public Cloud Projekt eine separate Abrechnung wählen, was eine Neuabrechnung innerhalb Ihres Unternehmens ermöglicht.
 
-Um von einem Abrechnungsmodus zum anderen zu wechseln, lesen Sie unsere Anleitung [Von der stündlichen auf monatliche Abrechnung umstellen](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing).
+Um von einem Abrechnungsmodus zum anderen zu wechseln, nutzen Sie unsere Anleitung: [Von der stündlichen auf monatliche Abrechnung umstellen](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing).
 
 > [!success]
-> Profitieren Sie von reduzierten Preisen, indem Sie Ihre Public Cloud-Ressourcen für einen Zeitraum von 1 bis 36 Monaten abonnieren. Weitere Informationen finden Sie auf unserer Seite [Savings Plans](/links/public-cloud/savings-plan).
+> Profitieren Sie von reduzierten Preisen, indem Sie Ihre Public Cloud-Ressourcen für einen Zeitraum von 1 bis 36 Monaten abonnieren. Weitere Informationen finden Sie auf unserer Webseite: [Savings Plan](/links/public-cloud/savings-plan).
 
 ///
 
@@ -44,7 +44,7 @@ Es sind keine Aktionen erforderlich. Jede bereits erstellte (oder in Kürze erst
 
 /// details | Wie kann ich meine Instanzen anpassen, wenn ich mehr oder weniger Ressourcen benötige?
 
-Jede Instanz kann über das Kundencenter auf eine leistungsstärkere Instanz der gleichen Reihe umgestellt werden, indem Sie im Dashboard der Instanz links auf `Bearbeiten`{.action} klicken. Wenn die Option "Flex" gewählt wurde, können Sie diese auch auf ein günstigeres Modell herunterstufen. Diese Option erfordert eine fixe Festplattengröße von 50 GB für alle Modelle und ermöglicht so eine Anpassung in beide Richtungen.
+Jede Instanz kann über das Kundencenter auf eine leistungsstärkere Instanz der gleichen Reihe umgestellt werden, indem Sie im Dashboard der Instanz links auf `Bearbeiten`{.action} klicken. Wenn die Option "Flex" gewählt wurde, können Sie diese auch auf ein günstigeres Modell herunterstufen. Diese Option erfordert eine fixe Speicherplatzgröße von 50 GB für alle Modelle und ermöglicht so eine Anpassung in beide Richtungen.
 
 In jedem Fall erfordert die Umstellung der Instanz einen Neustart.
 
@@ -60,9 +60,9 @@ Ja, die von OVHcloud bereitgestellten Cloud-Images enthalten *cloud-init*-Skript
 
 Ja und nein.
 
-Ja, da die Option aktiviert ist (der *Flag* "CPU VMX" ist verfügbar). Damit können Sie jede darauf basierende Virtualisierungslösung mit Ihrer Instanz verwenden (KVM, QEMU, VirtualBox, Xen, HyperV, etc.).
+Ja, da die Option aktiviert ist (*Flag* "CPU VMX" ist verfügbar). Damit können Sie jede darauf basierende Virtualisierungslösung mit Ihrer Instanz verwenden (KVM, QEMU, VirtualBox, Xen, HyperV, etc.).
 
-Nein, denn sobald eine Live-Migration Ihrer Instanz stattfindet (und das kann jederzeit geschehen, basierend auf dem Lebenszyklus des zugrunde liegenden Hypervisors), kann dies eine *Kernel Panic* auslösen.
+Nein, denn sobald eine Live-Migration Ihrer Instanz stattfindet (und das kann jederzeit geschehen, basierend auf dem Lebenszyklus des zugrunde liegenden Hypervisors), kann dies einen *Kernel Panic* auslösen.
 
 Weitere Informationen finden Sie unter [diesem Link](https://www.linux-kvm.org/page/Nested_Guests#Limitations).
 
