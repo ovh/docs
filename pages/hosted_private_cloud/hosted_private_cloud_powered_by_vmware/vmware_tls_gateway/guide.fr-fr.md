@@ -109,9 +109,7 @@ Pour plus d'information sur les connectivités réseaux au sein de votre Hosted 
 
 La passerelle tls héberge les certificats sur un serveur Web classique. Cela permet d'avoir une connexion https sécurisée à votre client Web HTML vCenter. Le certificat est formaté tel que `pcc-xxx-xxx-xxx-xxx.ovh.(com|ca|pl ...)`, et est commandé par notre robot. Et poussé vers le vCenter et la passerelle tls. 
 
-De nombreux certificats sont hébergés sur la tls Gateway. 
-
-Tout ce dont vous avez besoin pour vos fonctionnalités vSphere managées et utilisées dans votre environnement (Zerto, NSX, vRops, plugins vSphere, etc..).
+De nombreux certificats sont hébergés sur la tls Gateway, voici les principaux :
 
 |   Service   |             Url              | Comments                                                                               |
 |:-----------:|:----------------------------:|:---------------------------------------------------------------------------------------|
