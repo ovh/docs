@@ -211,6 +211,213 @@ Retour API pour l'option `sendLogToCustomer`, sur un pcc avec NSX-T activé par 
 }
 ```
 
+Pour verifier les compatibilités avec vos options de sécurité et votre environnement, vous pouvez utiliser cet appel API.
+
+Sur un pcc avec NSX-T activé par exemple :
+
+> [!api]
+>
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/securityOptions/compatibilityMatrix
+>
+> **Paramètres** :
+>
+> - `ServiceName` : Votre pcc sous la forme, ("pcc-XXX-XX-XX-XX").
+>
+
+```json
+[
+  {
+    "description": "Deploy a LogInsight forwarder to gather all VMware logs of a Private Cloud",
+    "enabled": false,
+    "name": "vrliForwarder",
+    "reason": null,
+    "compatible": true,
+    "state": "disabled"
+  },
+  {
+    "state": "disabled",
+    "compatible": true,
+    "reason": null,
+    "name": "privateGw",
+    "enabled": false,
+    "description": "Deploy a gateway in private VLAN to allow access to Private Cloud through private network instead of public network"
+  },
+  {
+    "description": "Force TLSv1.2+ protocol on a Private Cloud",
+    "enabled": true,
+    "name": "tls1.2",
+    "reason": null,
+    "compatible": true,
+    "state": "delivered"
+  },
+  {
+    "compatible": false,
+    "reason": {
+      "code": "BAD_ZONE",
+      "message": "This option can only be enabled on the following zones : sbg2a, rbx1a, gra2a"
+    },
+    "state": "disabled",
+    "enabled": false,
+    "description": "SNC certification pack",
+    "name": "snc"
+  },
+  {
+    "state": "delivered",
+    "reason": null,
+    "compatible": true,
+    "name": "hids",
+    "description": "Configure HIDS software on a Private Cloud",
+    "enabled": true
+  },
+  {
+    "state": "disabled",
+    "compatible": false,
+    "reason": {
+      "code": "GENERIC_ERROR",
+      "message": "This option is incompatible with OVHcloud IAM option"
+    },
+    "name": "advancedSecurity",
+    "enabled": false,
+    "description": "Advanced security features pack"
+  },
+  {
+    "enabled": true,
+    "description": "Allow access to Private Cloud datastores through gateway SSL with SFTP",
+    "name": "sftp",
+    "compatible": true,
+    "reason": null,
+    "state": "delivered"
+  },
+  {
+    "name": "grsecKernel",
+    "description": "Use grsec kernel",
+    "enabled": true,
+    "state": "delivered",
+    "reason": null,
+    "compatible": true
+  },
+  {
+    "description": "Deploy a syslog forwarder to gather all VMware logs of a Private Cloud",
+    "enabled": true,
+    "name": "logForwarder",
+    "reason": null,
+    "compatible": true,
+    "state": "delivered"
+  },
+  {
+    "description": "Configure a WAF on gateway SSL",
+    "enabled": false,
+    "name": "waf",
+    "reason": null,
+    "compatible": true,
+    "state": "disabled"
+  },
+  {
+    "description": "HIPAA certification pack",
+    "enabled": false,
+    "name": "hipaa",
+    "reason": {
+      "message": "This option can only be enabled on the following zones : vin1c, hil1c",
+      "code": "BAD_ZONE"
+    },
+    "compatible": false,
+    "state": "disabled"
+  },
+  {
+    "name": "sendLogToCustomer",
+    "enabled": false,
+    "description": "Deploy a logstash instance to forward Private Cloud logs to customer",
+    "state": "disabled",
+    "compatible": false,
+    "reason": {
+      "code": "MISSING_REQUIREMENTS_OPTIONS",
+      "message": "This option cannot be enabled because the following options are required but not enabled : vrliForwarder"
+    }
+  },
+  {
+    "name": "spla",
+    "enabled": true,
+    "description": "Allow Windows deploiements from template factory",
+    "state": "delivered",
+    "compatible": true,
+    "reason": null
+  },
+  {
+    "reason": null,
+    "compatible": true,
+    "state": "delivered",
+    "description": "Default pack",
+    "enabled": true,
+    "name": "base"
+  },
+  {
+    "state": "disabled",
+    "reason": null,
+    "compatible": true,
+    "name": "nids",
+    "description": "Configure NIDS software on a Private Cloud",
+    "enabled": false
+  },
+  {
+    "state": "disabled",
+    "compatible": false,
+    "reason": {
+      "message": "This option cannot be enabled anymore",
+      "code": "ACTION_IMPOSSIBLE"
+    },
+    "name": "sslV3",
+    "enabled": false,
+    "description": "Allow SSLv3 on gateway SSL"
+  },
+  {
+    "compatible": false,
+    "reason": {
+      "message": "This option is incompatible with OVHcloud IAM option",
+      "code": "GENERIC_ERROR"
+    },
+    "state": "disabled",
+    "enabled": false,
+    "description": "HDS certification pack",
+    "name": "hds"
+  },
+  {
+    "state": "delivered",
+    "compatible": true,
+    "reason": null,
+    "name": "contentLibrary",
+    "enabled": true,
+    "description": "Access to OVHcloud content libraries"
+  },
+  {
+    "compatible": true,
+    "reason": null,
+    "state": "delivered",
+    "enabled": true,
+    "description": "Filter network access on gateway SSL",
+    "name": "accessNetworkFiltered"
+  },
+  {
+    "name": "pcidss",
+    "description": "PCIDSS certification pack",
+    "enabled": false,
+    "state": "disabled",
+    "reason": {
+      "message": "This option is incompatible with OVHcloud IAM option",
+      "code": "GENERIC_ERROR"
+    },
+    "compatible": false
+  },
+  {
+    "state": "disabled",
+    "compatible": true,
+    "reason": null,
+    "name": "sessionTimeout",
+    "enabled": false,
+    "description": "Configure session timeout"
+  }
+]
+```
+
 Comme indiqué précédemment, si vous rencontrez des difficultés pour activer une option ou si vous avez des questions contactez votre réferent technical account manager ou le [support](https://help.ovhcloud.com/csm?id=csm_get_help) OVHcloud.
 
 ### Étape 4 - Transition vers TLS 1.3
