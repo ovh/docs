@@ -1,7 +1,7 @@
 ---
 title: "TLS Gateway - Présentation des concepts et options"
 excerpt: "Découvrez comment fonctionne une passerelle TLS au sein d'un environnement Hosted Private Cloud VMware vSphere managé on OVHcloud"
-updated: 2024-10-28
+updated: 2024-10-30
 ---
 
 ## Objectif
