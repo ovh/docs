@@ -16,19 +16,19 @@ updated: 2024-10-28
 
 OVHcloud s’efforce en permanence de fournir des instruments stables et sécurisés pour la gestion de votre infrastructure virtuelle. Pour atteindre cet objectif, nous visons à nous conformer aux normes établies de l'industrie, en particulier dans le contexte d'une communication de confiance.
 
-Ce nouveau type d'architecture vous permet de construire un environnement Hosted Private CLoud sécurisé sur tous les points d'entrée à l'aide d'un certain nombre de fonctionnalités garanties.  
+Ce nouveau type d'architecture vous permet de construire un environnement **Hosted Private Cloud - VMware on OVHcloud** sécurisé sur tous les points d'entrée à l'aide d'un certain nombre de fonctionnalités garanties.  
 
-Ce point d'entrée étant maintenant cette **passerelle tls** pour l'ensemble de votre infrastructure managé VMware on OVHcloud. 
+Ce point d'entrée étant maintenant cette **passerelle tls** pour l'ensemble de votre infrastructure managé.
 
-Voici un schéma d'exemple d'une architecture type 2 tiers (2 localisations) :
+Voici un schéma d'exemple d'une architecture type 2 tiers (avec 2 localisations) :
 
 ![Schema TLS Gateway](images/Schema_ssl_gateway.png){.thumbnail}
 
-Nous allons maintenant poursuivre avec une introduction, les fonctionnalités, les tarifs et ainsi que le fonctionnement interne de la passerelle tls.
+Nous allons maintenant poursuivre d'abord avec une introduction et les fonctionnalités. Puis les tarifs, mais aussi avec le fonctionnement interne de la passerelle.
 
 ### Étape 1 - Introduction
 
-La mise en place de votre passerelle est automatique en fonction le l'offre choisie dans votre environnement Hosted Private Cloud - VMware on OVHcloud. Si vous avez souscrit à une offre standard, vous bénéficierez du pack de base (voir listing pack/option). Une majoration de votre abonnement est mise en place sur l'offre tls Gateway (passerelle tls) Avancée et Premium compris dans le prix total souscrit.
+La mise en place de votre passerelle est automatique en fonction le l'offre choisie dans votre environnement Hosted Private Cloud - VMware on OVHcloud. Si vous avez souscrit à une offre standard, vous bénéficierez du pack de base (voir listing pack/option). Une majoration de votre abonnement est mise en place sur l'offre tls Gateway (passerelle tls) Avancée et Premium compris dans le prix total souscrit (passerelle tls = environ 10% du prix total souscrit). 
 
 Vous n'avez pas besoin d'activer votre passerelle TLS. Cependant, vous pouvez contacter votre technical account manager ou le [support OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help) pour activer certaines options.
 
@@ -141,7 +141,11 @@ Si vous avez besoin de plus d'information sur la private gateway, suivez le guid
 
 ### Étape 3 - Options de sécurité avec l'API
 
-Pour verifier vos options de sécurités actuelles et les compatibilités avec vos environnements, vous pouvez utiliser ces appels API :
+> [!primary]
+>
+> Retrouvez plus d'informations sur l'API OVHcloud dans notre guide [Premiers pas avec l'API OVHcloud](/pages/manage_and_operation/api/first-steps).
+
+Pour verifier vos options de sécurités actuelles et les compatibilités avec vos environnements, vous pouvez utiliser les appels api suivants :
 
 > [!api]
 > 
@@ -151,9 +155,9 @@ Pour verifier vos options de sécurités actuelles et les compatibilités avec v
 > 
 > - `ServiceName` : Votre pcc sous la forme, ("pcc-XXX-XX-XX-XX").
 > - `option` : Option sécurité cible, exemple : (Allowed: accessNetworkFiltered ┃ advancedSecurity ┃ base ┃ contentLibrary ┃ grsecKernel ┃ hds ┃ hids ┃ hipaa ┃ logForwarder ┃ nids ┃ pcidss ┃ privateCustomerVlan ┃ privateGw ┃ sendLogToCustomer ┃ sessionTimeout ┃ sftp ┃ snc ┃ spla ┃ sslV3 ┃ tls1.2 ┃ tokenValidation ┃ twoFa ┃ twoFaFail2ban ┃ vrliForwarder ┃ waf). 
-> 
+>
 
-Retour API pour l'option `advancedSecurity`, sur un pcc avec NSX-T activé par exemple :
+/// details | Retour API pour l'option `advancedSecurity`, sur un pcc avec NSX-T activé par exemple :
 
 ```json
 {
@@ -180,8 +184,9 @@ Retour API pour l'option `advancedSecurity`, sur un pcc avec NSX-T activé par e
   ]
 }
 ```
+///
 
-Retour API pour l'option `base`, sur un pcc sans NSX-T activé par exemple :
+/// details | Retour API pour l'option `base`, sur un pcc sans NSX-T activé par exemple :
 
 ```json
 {
@@ -198,8 +203,9 @@ Retour API pour l'option `base`, sur un pcc sans NSX-T activé par exemple :
   ]
 }
 ```
+///
 
-Retour API pour l'option `sendLogToCustomer`, sur un pcc avec NSX-T activé par exemple :
+/// details | Retour API pour l'option `sendLogToCustomer`, sur un pcc avec NSX-T activé par exemple :
 
 ```json
 {
@@ -210,10 +216,11 @@ Retour API pour l'option `sendLogToCustomer`, sur un pcc avec NSX-T activé par 
   ]
 }
 ```
+///
 
-Pour verifier les compatibilités avec vos options de sécurité et votre environnement, vous pouvez utiliser cet appel API.
+/// details | Pour verifier les compatibilités avec les options de sécurité et votre environnement, utiliser l'appel API suivant.
 
-Sur un pcc avec NSX-T activé par exemple :
+Sur un pcc avec NSX-T activé, par exemple :
 
 > [!api]
 >
@@ -417,8 +424,9 @@ Sur un pcc avec NSX-T activé par exemple :
   }
 ]
 ```
+///
 
-Comme indiqué précédemment, si vous rencontrez des difficultés pour activer une option ou si vous avez des questions contactez votre réferent technical account manager ou le [support](https://help.ovhcloud.com/csm?id=csm_get_help) OVHcloud.
+Comme indiqué précédemment, si vous rencontrez des difficultés pour activer une option ou si vous avez des questions, contactez votre réferent technical account manager ou le [support](https://help.ovhcloud.com/csm?id=csm_get_help) OVHcloud.
 
 ### Étape 4 - Transition vers TLS 1.3
 
@@ -434,6 +442,6 @@ Nous recommandons fortement à nos clients d'envisager de migrer vers vSphere 8 
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre Technical Account Manager ou rendez-vous sur [cette page](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit nos services Hosted Private Cloud sur le [channel Discord dédié](https://discord.gg/ovhcloud).
+Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit nos services Hosted Private Cloud sur le channel [Discord](https://discord.gg/ovhcloud) dédié.
 
 Rejoindre et échangez avec notre [communauté d'utilisateurs OVHcloud](/links/community).
