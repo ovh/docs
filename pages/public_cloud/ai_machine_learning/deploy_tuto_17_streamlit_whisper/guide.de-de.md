@@ -37,7 +37,7 @@ To build and deploy your Whisper app, you need:
 
 You are going to follow different steps to deploy your Whisper application:
 
-- [Whisper Model Sslection](#step-1-whisper-model-selection)
+- [Whisper Model Selection](#step-1-whisper-model-selection)
 - [Download Whisper Model in the Object Storage](#step-2-download-whisper-model-in-the-object-storage)
 - [Whisper app development](#step-3-whisper-app-development)
 - [Whisper app deployment](#step-4-whisper-app-deployment)
