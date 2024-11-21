@@ -1,7 +1,7 @@
 ---
 title: Moving an Additional IP
 excerpt: Find out how to move an Additional IP in the Control Panel or via the OVHcloud API
-updated: 2022-12-20
+updated: 2024-11-20
 ---
 
 > [!primary]
@@ -16,7 +16,9 @@ Additional IP addresses can be moved between the services you use. This provides
 With this technology, you can switch IP addresses from one solution to another in less than a minute, with virtually no interruption to services for your users. It is useful for service migrations (e.g. moving projects from development to production), or when switching to a backup server during a technical issue.
 
 > [!primary]
-> An Additional IP cannot be moved from one zone to another. For example, an IP located in the SBG data centre can be moved to GRA or RBX, but cannot be moved to BHS.
+> You can assign your IP address blocks to any compatible service within a region. IP address blocks in a region can be moved from one datacenter to another within that region but cannot be moved outside of that region.
+>
+> Except for the 3 regions eu-west-gra, eu-west-rbx, and eu-west-sbg, where IP address blocks can be moved between these three regions.
 >
 > Migration only works for whole blocks, it is not possible to migrate individual IPs within a block.
 
@@ -95,6 +97,26 @@ To move the IP address, use the following call:
 
 - `serviceName`: the destination dedicated server reference
 - `ip`: the Additional IP address to move
+
+### Limitations
+
+Please note that there are certain limitations when moving an additional IP or an additional IP block. These limitations mostly apply to regions. 
+
+The table below shows the compatibility between regions.
+
+For more information, consult our list of [available regions](https://www.ovhcloud.com/en/network/additional-ip/).
+
+| Zones          | eu-west-par | eu-west-gra | eu-west-rbx | eu-west-sbg | eu-west-lim | eu-central-war | eu-west-eri | ca-east-bhs | ca-east-tor |
+|----------------|-------------|-------------|-------------|-------------|-------------|----------------|-------------|-------------|-------------|
+| eu-west-par    |      ✅        |      ❌       |     ❌        |     ❌        |      ❌       |      ❌          |       ❌       |       ❌      |     ❌      |
+| eu-west-gra    |       ❌      |       ✅       |      ✅       |      ✅      |       ❌       |       ❌         |       ❌        |     ❌        |    ❌        |
+| eu-west-sbg    |       ❌        |      ✅       |      ✅       |      ✅       |      ❌       |      ❌           |      ❌       |      ❌        |    ❌        |
+| eu-west-lim    |        ❌       |      ✅       |      ✅        |     ✅        |     ✅       |      ❌         |      ❌        |     ❌        |     ❌       |
+| eu-central-war |      ✅       |      ✅       |     ✅       |      ✅       |      ❌        |       ✅         |       ❌       |       ❌       |       ❌        |
+| eu-west-eri    |         ❌      |       ✅      |        ✅     |       ✅      |      ❌       |       ❌         |     ✅        |      ❌         |      ❌       |
+| ca-east-bhs    |     ❌        |      ❌       |    ❌         |        ❌    |        ❌       |      ❌          |       ❌      |     ✅        |      ❌       |
+| ca-east-tor    |    ❌         |      ❌       |     ❌        |        ❌       |      ❌       |       ❌         |      ❌       |      ❌       |       ✅      |
+
 
 ## Go further
 
