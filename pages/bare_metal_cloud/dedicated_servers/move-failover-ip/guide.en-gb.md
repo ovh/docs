@@ -11,7 +11,7 @@ updated: 2024-11-22
 
 ## Objective
 
-Additional IP addresses can be moved between the services you use. This provides an advantage since you can maintain your IP reputation, your SEO and improve the continuity of service of your applications and systems.
+Additional IP addresses blocks can be moved between the services you use. This provides an advantage since you can maintain your IP reputation, your SEO and improve the continuity of service of your applications and systems.
 
 With this technology, you can switch IP addresses from one solution to another in less than a minute, with virtually no interruption to services for your users. It is useful for service migrations (e.g. moving projects from development to production), or when switching to a backup server during a technical issue.
 
@@ -20,9 +20,11 @@ With this technology, you can switch IP addresses from one solution to another i
 >
 > Except for the 3 regions eu-west-gra, eu-west-rbx, and eu-west-sbg, where IP address blocks can be moved between these three regions.
 >
+> A region is a geographical area composed of one or more datacenters.
+>
 > Migration only works for whole blocks, it is not possible to migrate individual IPs within a block.
 
-**This guide explains how to move an Additional IP in your OVHcloud Control Panel or via the OVHcloud API.**
+**This guide explains how to move an Additional IP block in your OVHcloud Control Panel or via the OVHcloud API.**
 
 ## Requirements
 
@@ -106,7 +108,7 @@ To move the IP address block, use the following call:
 
 Please note that there are certain limitations when moving an additional IP block. The table below shows the compatibility between regions.
 
-For more information, consult our list of [available regions](https://www.ovhcloud.com/en/network/additional-ip/).
+For more information, consult our list of [available regions](/links/network/additional-ip).
 
 | Regions          | eu-west-par | eu-west-gra | eu-west-rbx | eu-west-sbg | eu-west-lim | eu-central-war | eu-west-eri | ca-east-bhs | ca-east-tor |
 |----------------|-------------|-------------|-------------|-------------|-------------|----------------|-------------|-------------|-------------|

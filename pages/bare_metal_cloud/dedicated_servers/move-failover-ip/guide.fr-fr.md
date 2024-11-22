@@ -1,7 +1,7 @@
 ---
 title:  Déplacer une Additional IP
-excerpt: "Découvrez comment déplacer une Additional IP depuis l'espace client ou via les API OVHcloud"
-updated: 2022-12-20
+excerpt: "Découvrez comment déplacer un bloc Additional IP depuis l'espace client ou via les API OVHcloud"
+updated: 2024-11-22
 ---
 
 > [!primary]
@@ -11,17 +11,21 @@ updated: 2022-12-20
 
 ## Objectif
 
-Les Additional IP peuvent être déplacées entres les services que vous utilisez. L'intérêt est de ne pas perdre votre réputation, votre référencement et d'améliorer la continuité de service de vos applications et systèmes.
+Les blocs Additional IP peuvent être déplacées entres les services que vous utilisez. L'intérêt est de ne pas perdre votre réputation, votre référencement et d'améliorer la continuité de service de vos applications et systèmes.
 
 Cette technologie vous permet d’échanger les adresses IP d'une solution à l'autre en moins d'une minute, pratiquement sans aucune interruption pour vos utilisateurs. Elle peut être utilisée lors des migrations de services (déplacement des projets de l'environnement de développement à celui de production, par exemple) ou lors du basculement vers un serveur de secours en cas de défaillance.
 
 > [!primary]
-> Une Additional IP ne peut pas être déplacée d'une zone à l'autre. Par exemple, une IP située dans le datacenter SBG pourra être déplacée vers GRA ou RBX mais ne pourra pas être déplacée vers BHS.
+> Vous pouvez attribuer vos blocs d’adresses IP à n’importe quel service compatible au sein d’une région. Les blocs d’adresses IP d’une région peuvent être déplacés d’un centre de données à un autre, mais uniquement au sein de cette même région.
+>
+> Sauf pour les 3 régions eu-west-gra, eu-west-rbx et eu-west-sbg, où les blocs d'adresses IP peuvent être déplacés entre ces trois régions.
+>
+> Une région est une zone géographique composée d'un ou de plusieurs datacenters.
 >
 > La migration ne fonctionne que pour des blocs entiers, il n'est pas possible de migrer des IP individuelles au sein d'un bloc.
 >
 
-**Découvrez comment déplacer une Additional IP depuis votre espace client OVHcloud ou via les API OVHcloud.**
+**Découvrez comment déplacer un block Additional IP depuis votre espace client OVHcloud ou via les API OVHcloud.**
 
 ## Prérequis
 
@@ -51,7 +55,12 @@ Cette technologie vous permet d’échanger les adresses IP d'une solution à l'
 > Si un bloc IP est déplacé/ajouté dans le vRack, il n’est plus lié à un serveur physique. Dans ce cas, toute adresse MAC virtuelle sera perdue pendant le transfert.
 >
 
-### Déplacer une IP depuis l'espace client OVHcloud
+### Blocs IP géolocalisés
+
+Si vous commandez un bloc additional IP sur un serveur mais que vous choisissez une localisation différente (géolocalisation) pour le bloc IP, ce bloc IP ne peut pas être déplacé vers un autre serveur situé dans le même pays que ce bloc. Par exemple, un bloc additional IP géolocalisé en Pologne et commandé sur un serveur situé dans un datacenters en France ne peut pas être déplacé vers un serveur situé dans un datacenters en Pologne.
+
+
+### Déplacer un bloc IP depuis l'espace client OVHcloud
 
 > [!warning]
 > Seul un bloc de taille unique (/32) pourra être déplacé depuis un serveur dédié vers un VPS.
@@ -61,11 +70,11 @@ Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur le
 
 Cliquez sur l'onglet `Additional IP`{.action}.
 
-![gerer IP](images/manageIPs2022.png){.thumbnail}
+![gerer IP](images/manageIPs2024.png){.thumbnail}
 
 Cliquez sur le bouton `...`{.action} à droite de l'adresse IP à déplacer puis sur `Déplacer Additional IP`{.action}.
 
-![espace client](images/moveadditionalIP.png){.thumbnail}
+![espace client](images/move_ip.png){.thumbnail}
 
 Dans le menu contextuel qui apparaît, sélectionnez le service vers lequel déplacer l'adresse IP.
 
@@ -73,12 +82,12 @@ Cliquez sur `Suivant`{.action} puis sur `Valider`{.action}.
 
 ![espace client](images/moveadditionalIP2.png){.thumbnail}
 
-### Déplacer une IP via les API
+### Déplacer un bloc IP via les API
 
 Connectez-vous sur la page web des [API OVHcloud](https://api.ovh.com/).
 
-Dans un premier temps, il est préférable de vérifier si l'adresse IP peut bien être déplacée.
-<br>Pour vérifier si l'IP peut être déplacée vers un de vos serveurs dédiés, utilisez l'appel suivant :
+Dans un premier temps, il est préférable de vérifier si le bloc IP peut bien être déplacée.
+<br>Pour vérifier si le bloc IP peut être déplacée vers un de vos serveurs dédiés, utilisez l'appel suivant :
 
 > [!api]
 >
@@ -97,6 +106,25 @@ Pour déplacer l'adresse IP, utilisez l'appel suivant :
 
 - `serviceName` : la référence du serveur dédié de destination
 - `ip` : l'adresse Additional IP à déplacer
+
+
+### Restrictions <a name="limitations"></a>
+
+Veuillez noter qu'il existe certaines limitations lors du déplacement d'un bloc d'adresse IP, Le tableau ci-dessous montre la compatibilité entre les régions.
+
+Pour plus d'informations, consultez notre liste de [régions disponibles](/links/network/additional-ip).
+
+
+| Régions          | eu-west-par | eu-west-gra | eu-west-rbx | eu-west-sbg | eu-west-lim | eu-central-war | eu-west-eri | ca-east-bhs | ca-east-tor |
+|----------------|-------------|-------------|-------------|-------------|-------------|----------------|-------------|-------------|-------------|
+| eu-west-par    |      ✅        |      ❌       |     ❌        |     ❌        |      ❌       |      ❌          |       ❌       |       ❌      |     ❌      |
+| eu-west-gra    |       ❌      |       ✅       |      ✅       |      ✅      |       ❌       |       ❌         |       ❌        |     ❌        |    ❌        |
+| eu-west-sbg    |       ❌        |      ✅       |      ✅       |      ✅       |      ❌       |      ❌           |      ❌       |      ❌        |    ❌        |
+| eu-west-lim    |        ❌       |      ✅       |      ✅        |     ✅        |     ✅       |      ❌         |      ❌        |     ❌        |     ❌       |
+| eu-central-war |      ✅       |      ✅       |     ✅       |      ✅       |      ❌        |       ✅         |       ❌       |       ❌       |       ❌        |
+| eu-west-eri    |         ❌      |       ✅      |        ✅     |       ✅      |      ❌       |       ❌         |     ✅        |      ❌         |      ❌       |
+| ca-east-bhs    |     ❌        |      ❌       |    ❌         |        ❌    |        ❌       |      ❌          |       ❌      |     ✅        |      ❌       |
+| ca-east-tor    |    ❌         |      ❌       |     ❌        |        ❌       |      ❌       |       ❌         |      ❌       |      ❌       |       ✅      |
 
 ## Aller plus loin
 
