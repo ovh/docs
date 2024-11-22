@@ -1,7 +1,7 @@
 ---
 title: Moving an Additional IP
-excerpt: Find out how to move an Additional IP in the Control Panel or via the OVHcloud API
-updated: 2024-11-20
+excerpt: Find out how to move an Additional IP block in the Control Panel or via the OVHcloud API
+updated: 2024-11-22
 ---
 
 > [!primary]
@@ -16,7 +16,7 @@ Additional IP addresses can be moved between the services you use. This provides
 With this technology, you can switch IP addresses from one solution to another in less than a minute, with virtually no interruption to services for your users. It is useful for service migrations (e.g. moving projects from development to production), or when switching to a backup server during a technical issue.
 
 > [!primary]
-> You can assign your IP address blocks to any compatible service within a region. IP address blocks in a region can be moved from one datacenter to another within that region but cannot be moved outside of that region.
+> You can assign your IP address blocks to any compatible service within a region. IP address blocks in a region can be moved from one datacenter to another within that region but cannot be moved outside of that region. Consult our [Limitations](#limitations) section below.
 >
 > Except for the 3 regions eu-west-gra, eu-west-rbx, and eu-west-sbg, where IP address blocks can be moved between these three regions.
 >
@@ -51,7 +51,11 @@ With this technology, you can switch IP addresses from one solution to another i
 > If an IP block is moved/added to the vRack, it is no longer linked to a physical server. In this case, any virtual MAC address will be lost during the transfer.
 >
 
-### Moving an IP from the OVHcloud Control Panel
+### Geolocalised IP blocks
+
+If you order an additional IP block on a server but choose a different location (geolocation) for the IP block, this IP block cannot be moved to another server located in the same country as this block. For example, an additional IP block geolocated in Poland and ordered on a server located in a French data centre cannot be moved to a server located in a Polish data centre.
+
+### Moving an IP block from the OVHcloud Control Panel
 
 > [!warning]
 > Only a single size block (/32) can be moved from a dedicated server to a VPS.
@@ -61,24 +65,24 @@ Log in to the [OVHcloud Control](/links/manager), go to the `Bare Metal Cloud`{.
 
 Click the `Additional IP`{.action} tab.
 
-![manage IPs](images/manageIPs2022.png){.thumbnail}
+![manage IPs](images/manageIPs2024.png){.thumbnail}
 
-Next, click on the `...`{.action} button to the right of the IP address you want to move and select `Move Additional IP`{.action}.
+Next, click on the `...`{.action} button to the right of the IP address block you want to move and select `Move Additional IP`{.action}.
 
-![move Additional](images/moveadditionalIP.png){.thumbnail}
+![move Additional](images/move_ip.png){.thumbnail}
 
-In the pop-up window, select the service to move the IP address to from the menu.
+In the pop-up window, select the service to move the IP address block to from the menu.
 
 ![move Additional](images/moveadditionalIP2.png){.thumbnail}
 
 Click `Next`{.action}, then `Confirm`{.action}.
 
-### Moving an IP via the API
+### Moving an IP block via the API
 
 Log in to the OVHcloud [API webpage](https://api.ovh.com/).
 
-First, it is best to check if the IP address can be moved.
-<br>To check if the IP can be moved to one of your dedicated servers, use the following call:
+First, it is best to check if the IP address block can be moved.
+<br>To check if the IP block can be moved to one of your dedicated servers, use the following call:
 
 > [!api]
 >
@@ -88,7 +92,7 @@ First, it is best to check if the IP address can be moved.
 - `serviceName`: the destination dedicated server reference
 - `ip`: the Additional IP address to move
 
-To move the IP address, use the following call:
+To move the IP address block, use the following call:
 
 > [!api]
 >
@@ -98,15 +102,13 @@ To move the IP address, use the following call:
 - `serviceName`: the destination dedicated server reference
 - `ip`: the Additional IP address to move
 
-### Limitations
+### Limitations <a name="limitations"></a>
 
-Please note that there are certain limitations when moving an additional IP or an additional IP block. These limitations mostly apply to regions. 
-
-The table below shows the compatibility between regions.
+Please note that there are certain limitations when moving an additional IP block. The table below shows the compatibility between regions.
 
 For more information, consult our list of [available regions](https://www.ovhcloud.com/en/network/additional-ip/).
 
-| Zones          | eu-west-par | eu-west-gra | eu-west-rbx | eu-west-sbg | eu-west-lim | eu-central-war | eu-west-eri | ca-east-bhs | ca-east-tor |
+| Regions          | eu-west-par | eu-west-gra | eu-west-rbx | eu-west-sbg | eu-west-lim | eu-central-war | eu-west-eri | ca-east-bhs | ca-east-tor |
 |----------------|-------------|-------------|-------------|-------------|-------------|----------------|-------------|-------------|-------------|
 | eu-west-par    |      ✅        |      ❌       |     ❌        |     ❌        |      ❌       |      ❌          |       ❌       |       ❌      |     ❌      |
 | eu-west-gra    |       ❌      |       ✅       |      ✅       |      ✅      |       ❌       |       ❌         |       ❌        |     ❌        |    ❌        |
