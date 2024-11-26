@@ -87,7 +87,7 @@ Cliquez sur `Suivant`{.action} puis sur `Valider`{.action}.
 Connectez-vous sur la page web des [API OVHcloud](https://api.ovh.com/).
 
 Dans un premier temps, il est préférable de vérifier si le bloc IP peut bien être déplacé.
-<br>Pour vérifier si le bloc IP peut être déplacée vers un de vos serveurs dédiés, utilisez l'appel suivant :
+<br>Pour vérifier si le bloc IP peut être déplacé vers un de vos serveurs dédiés, utilisez l'appel suivant :
 
 > [!api]
 >
