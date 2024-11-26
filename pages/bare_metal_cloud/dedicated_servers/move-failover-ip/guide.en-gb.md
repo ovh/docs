@@ -1,7 +1,7 @@
 ---
 title: Moving an Additional IP
 excerpt: Find out how to move an Additional IP block in the Control Panel or via the OVHcloud API
-updated: 2024-11-22
+updated: 2024-11-26
 ---
 
 > [!primary]
@@ -11,7 +11,7 @@ updated: 2024-11-22
 
 ## Objective
 
-Additional IP addresses blocks can be moved between the services you use. This provides an advantage since you can maintain your IP reputation, your SEO and improve the continuity of service of your applications and systems.
+Additional IP addresses can be moved between the services you use. This provides an advantage since you can maintain your IP reputation, your SEO and improve the continuity of service of your applications and systems.
 
 With this technology, you can switch IP addresses from one solution to another in less than a minute, with virtually no interruption to services for your users. It is useful for service migrations (e.g. moving projects from development to production), or when switching to a backup server during a technical issue.
 
@@ -55,7 +55,7 @@ With this technology, you can switch IP addresses from one solution to another i
 
 ### Geolocalised IP blocks
 
-If you order an additional IP block on a server but choose a different location (geolocation) for the IP block, this IP block cannot be moved to another server located in the same country as this block. For example, an additional IP block geolocated in Poland and ordered on a server located in a French data centre cannot be moved to a server located in a Polish data centre.
+If you order an additional IP block on a server but choose a different location (geolocation) for the IP block, this IP block cannot be moved to another server located in the same country as this block. For example, an additional IP block geolocated in Poland (eu-central-war) and ordered on a server located in a French datacentre (eu-west-gra) cannot be moved to a server located in a Polish datacentre (eu-central-war). The IP block can only be moved to an eligible server located in a French datacentre.
 
 ### Moving an IP block from the OVHcloud Control Panel
 
@@ -69,11 +69,11 @@ Click the `Additional IP`{.action} tab.
 
 ![manage IPs](images/manageIPs2024.png){.thumbnail}
 
-Next, click on the `...`{.action} button to the right of the IP address block you want to move and select `Move Additional IP`{.action}.
+Next, click on the `...`{.action} button to the right of the additional IP or block of IP addresses you want to move and select `Move Additional IP`{.action} or `Attach this IP block to another service`{.action}.
 
 ![move Additional](images/move_ip.png){.thumbnail}
 
-In the pop-up window, select the service to move the IP address block to from the menu.
+In the pop-up window, select the service to move the IP address to from the menu.
 
 ![move Additional](images/moveadditionalIP2.png){.thumbnail}
 

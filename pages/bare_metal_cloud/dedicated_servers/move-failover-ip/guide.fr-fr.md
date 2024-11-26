@@ -11,7 +11,7 @@ updated: 2024-11-25
 
 ## Objectif
 
-Les blocs Additional IP peuvent être déplacées entres les services que vous utilisez. L'intérêt est de ne pas perdre votre réputation, votre référencement et d'améliorer la continuité de service de vos applications et systèmes.
+Les Additional IP peuvent être déplacées entres les services que vous utilisez. L'intérêt est de ne pas perdre votre réputation, votre référencement et d'améliorer la continuité de service de vos applications et systèmes.
 
 Cette technologie vous permet d’échanger les adresses IP d'une solution à l'autre en moins d'une minute, pratiquement sans aucune interruption pour vos utilisateurs. Elle peut être utilisée lors des migrations de services (déplacement des projets de l'environnement de développement à celui de production, par exemple) ou lors du basculement vers un serveur de secours en cas de défaillance.
 
@@ -57,7 +57,7 @@ Cette technologie vous permet d’échanger les adresses IP d'une solution à l'
 
 ### Blocs IP géolocalisés
 
-Si vous commandez un bloc additional IP sur un serveur mais que vous choisissez une localisation différente (géolocalisation) pour le bloc IP, ce bloc IP ne peut pas être déplacé vers un autre serveur situé dans le même pays que ce bloc. Par exemple, un bloc additional IP géolocalisé en Pologne et commandé sur un serveur situé dans un datacenter en France ne peut pas être déplacé vers un serveur situé dans un datacenter en Pologne.
+Si vous commandez un bloc additional IP sur un serveur mais que vous choisissez une localisation différente (géolocalisation) pour le bloc IP, ce bloc IP ne peut pas être déplacé vers un autre serveur situé dans le même pays que ce bloc. Par exemple, un bloc additional IP géolocalisé en Pologne (eu-central-war) et commandé sur un serveur situé dans un datacenter en France (eu-west-gra) ne peut pas être déplacé vers un serveur situé dans un datacenter en Pologne (eu-central-war). Le bloc IP ne peut être déplacé que vers un serveur éligible situé dans un datacenter en France.
 
 
 ### Déplacer un bloc IP depuis l'espace client OVHcloud
@@ -72,7 +72,7 @@ Cliquez sur l'onglet `Additional IP`{.action}.
 
 ![gerer IP](images/manageIPs2024.png){.thumbnail}
 
-Cliquez sur le bouton `...`{.action} à droite du bloc adresse IP à déplacer puis sur `Déplacer Additional IP`{.action}.
+Cliquez sur le bouton `...`{.action} à droite de l'adresse IP ou du bloc d'adresses IP que vous souhaitez déplacer, puis sur `Déplacer Additional IP`{.action} ou sur `Associer ce bloc d’IP à un autre service`{.action}.
 
 ![espace client](images/move_ip.png){.thumbnail}
 
