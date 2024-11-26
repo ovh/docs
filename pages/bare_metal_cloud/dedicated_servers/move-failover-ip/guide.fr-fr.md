@@ -110,7 +110,7 @@ Pour déplacer l'adresse IP, utilisez l'appel suivant :
 
 ### Restrictions <a name="limitations"></a>
 
-Veuillez noter qu'il existe certaines limitations lors du déplacement d'un bloc d'adresse IP, Le tableau ci-dessous montre la compatibilité entre les régions.
+Veuillez noter qu'il existe certaines limitations lors du déplacement d'un bloc d'adresses IP, Le tableau ci-dessous montre la compatibilité entre les régions.
 
 Pour plus d'informations, consultez notre liste de [régions disponibles](/links/network/additional-ip).
 
