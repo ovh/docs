@@ -57,7 +57,7 @@ Cette technologie vous permet d’échanger les adresses IP d'une solution à l'
 
 ### Blocs IP géolocalisés
 
-Si vous commandez un bloc additional IP sur un serveur mais que vous choisissez une localisation différente (géolocalisation) pour le bloc IP, ce bloc IP ne peut pas être déplacé vers un autre serveur situé dans le même pays que ce bloc. Par exemple, un bloc additional IP géolocalisé en Pologne et commandé sur un serveur situé dans un datacenters en France ne peut pas être déplacé vers un serveur situé dans un datacenters en Pologne.
+Si vous commandez un bloc additional IP sur un serveur mais que vous choisissez une localisation différente (géolocalisation) pour le bloc IP, ce bloc IP ne peut pas être déplacé vers un autre serveur situé dans le même pays que ce bloc. Par exemple, un bloc additional IP géolocalisé en Pologne et commandé sur un serveur situé dans un datacenter en France ne peut pas être déplacé vers un serveur situé dans un datacenter en Pologne.
 
 
 ### Déplacer un bloc IP depuis l'espace client OVHcloud
