@@ -125,7 +125,6 @@ For more information, consult our list of [available regions](/links/network/add
 | ap-southeast-syd|    ❌         |      ❌       |     ❌        |        ❌       |      ❌       |       ❌         |      ❌       |      ❌       |       ❌       | ❌      |     ✅       |
 
 
-
 ## Go further
 
 Join our [community of users](/links/community).
