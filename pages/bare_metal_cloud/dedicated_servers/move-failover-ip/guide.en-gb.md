@@ -18,7 +18,7 @@ With this technology, you can switch IP addresses from one solution to another i
 > [!primary]
 > You can assign your IP address blocks to any compatible service within a region. IP address blocks in a region can be moved from one datacenter to another within that region but cannot be moved outside of that region. Consult our [Limitations](#limitations) section below.
 >
-> Except for the 3 regions eu-west-gra, eu-west-rbx, and eu-west-sbg, where IP address blocks can be moved between these three regions.
+> Except for the 3 regions eu-west-gra, eu-west-rbx, and eu-west-sbg: IP address blocks can be moved between these three regions.
 >
 > A region is a geographical area composed of one or more datacenters.
 >
