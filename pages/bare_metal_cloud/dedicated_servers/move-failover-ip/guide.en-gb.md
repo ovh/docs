@@ -69,7 +69,7 @@ Click the `Additional IP`{.action} tab.
 
 ![manage IPs](images/manageIPs2024.png){.thumbnail}
 
-Next, click on the `...`{.action} button to the right of the additional IP or block of IP addresses you want to move and select `Move Additional IP`{.action} or `Attach this IP block to another service`{.action}.
+Next, click the `...`{.action} button to the right of the additional IP or block of IP addresses you want to move and select `Move Additional IP`{.action} or `Attach this IP block to another service`{.action}.
 
 ![move Additional](images/move_ip.png){.thumbnail}
 
