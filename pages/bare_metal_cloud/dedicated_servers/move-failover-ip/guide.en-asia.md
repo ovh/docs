@@ -1,7 +1,7 @@
 ---
 title: Moving an Additional IP
-excerpt: Find out how to move an Additional IP block in the Control Panel or via the OVHcloud API
-updated: 2024-11-26
+excerpt: Find out how to move an Additional IP in the Control Panel or via the OVHcloud API
+updated: 2024-11-28
 ---
 
 > [!primary]
@@ -24,7 +24,7 @@ With this technology, you can switch IP addresses from one solution to another i
 >
 > Migration only works for whole blocks, it is not possible to migrate individual IPs within a block.
 
-**This guide explains how to move an Additional IP block in your OVHcloud Control Panel or via the OVHcloud API.**
+**This guide explains how to move an Additional IP in your OVHcloud Control Panel or via the OVHcloud API.**
 
 ## Requirements
 
@@ -69,7 +69,7 @@ Click the `Additional IP`{.action} tab.
 
 ![manage IPs](images/manageIPs2024.png){.thumbnail}
 
-Next, click on the `...`{.action} button to the right of the additional IP or block of IP addresses you want to move and select `Move Additional IP`{.action} or `Attach this IP block to another service`{.action}.
+Next, click on the `...`{.action} button to the right of the IP address you want to move and select `Move Additional IP`{.action}.
 
 ![move Additional](images/move_ip.png){.thumbnail}
 
@@ -79,12 +79,12 @@ In the pop-up window, select the service to move the IP address to from the menu
 
 Click `Next`{.action}, then `Confirm`{.action}.
 
-### Moving an IP block via the API
+### Moving an IP via the API
 
 Log in to the OVHcloud [API webpage](https://ca.api.ovh.com/).
 
-First, it is best to check if the IP address block can be moved.
-<br>To check if the IP block can be moved to one of your dedicated servers, use the following call:
+First, it is best to check if the IP address can be moved.
+<br>To check if the IP can be moved to one of your dedicated servers, use the following call:
 
 > [!api]
 >
@@ -94,7 +94,7 @@ First, it is best to check if the IP address block can be moved.
 - `serviceName`: the destination dedicated server reference
 - `ip`: the Additional IP address to move
 
-To move the IP address block, use the following call:
+To move the IP address, use the following call:
 
 > [!api]
 >
