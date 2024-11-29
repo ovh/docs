@@ -1,7 +1,7 @@
 ---
 title:  Déplacer une Additional IP
-excerpt: "Découvrez comment déplacer un bloc Additional IP depuis l'espace client ou via les API OVHcloud"
-updated: 2024-11-26
+excerpt: "Découvrez comment déplacer une Additional IP depuis l'espace client ou via les API OVHcloud"
+updated: 2024-11-28
 ---
 
 > [!primary]
@@ -25,7 +25,7 @@ Cette technologie vous permet d’échanger les adresses IP d'une solution à l'
 > La migration ne fonctionne que pour des blocs entiers, il n'est pas possible de migrer des IP individuelles au sein d'un bloc.
 >
 
-**Découvrez comment déplacer un bloc Additional IP depuis votre espace client OVHcloud ou via les API OVHcloud.**
+**Découvrez comment déplacer une Additional IP depuis votre espace client OVHcloud ou via les API OVHcloud.**
 
 ## Prérequis
 
@@ -60,7 +60,7 @@ Cette technologie vous permet d’échanger les adresses IP d'une solution à l'
 Si vous commandez un bloc additional IP sur un serveur mais que vous choisissez une localisation différente (géolocalisation) pour le bloc IP, ce bloc IP ne peut pas être déplacé vers un autre serveur situé dans le même pays que ce bloc. Par exemple, un bloc additional IP géolocalisé en Pologne (eu-central-war) et commandé sur un serveur situé dans un datacenter en France (eu-west-gra) ne peut pas être déplacé vers un serveur situé dans un datacenter en Pologne (eu-central-war). Le bloc IP ne peut être déplacé que vers un serveur éligible situé dans un datacenter en France.
 
 
-### Déplacer un bloc IP depuis l'espace client OVHcloud
+### Déplacer une IP depuis l'espace client OVHcloud
 
 > [!warning]
 > Seul un bloc de taille unique (/32) pourra être déplacé depuis un serveur dédié vers un VPS.
@@ -72,7 +72,7 @@ Cliquez sur l'onglet `Additional IP`{.action}.
 
 ![gerer IP](images/manageIPs2024.png){.thumbnail}
 
-Cliquez sur le bouton `...`{.action} à droite de l'adresse IP ou du bloc d'adresses IP que vous souhaitez déplacer, puis sur `Déplacer Additional IP`{.action} ou sur `Associer ce bloc d’IP à un autre service`{.action}.
+Cliquez sur le bouton `...`{.action} à droite de l'adresse IP à déplacer puis sur `Déplacer Additional IP`{.action} ou sur `Associer ce bloc d’IP à un autre service`{.action}.
 
 ![espace client](images/move_ip.png){.thumbnail}
 
@@ -82,12 +82,12 @@ Cliquez sur `Suivant`{.action} puis sur `Valider`{.action}.
 
 ![espace client](images/moveadditionalIP2.png){.thumbnail}
 
-### Déplacer un bloc IP via les API
+### Déplacer une IP via les API
 
 Connectez-vous sur la page web des [API OVHcloud](https://ca.api.ovh.com/).
 
-Dans un premier temps, il est préférable de vérifier si le bloc IP peut bien être déplacé.
-<br>Pour vérifier si le bloc IP peut être déplacé vers un de vos serveurs dédiés, utilisez l'appel suivant :
+Dans un premier temps, il est préférable de vérifier si l'adresse IP peut bien être déplacée.
+<br>Pour vérifier si l'IP peut être déplacée vers un de vos serveurs dédiés, utilisez l'appel suivant :
 
 > [!api]
 >

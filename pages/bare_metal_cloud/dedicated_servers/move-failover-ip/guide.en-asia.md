@@ -57,7 +57,7 @@ With this technology, you can switch IP addresses from one solution to another i
 
 If you order an additional IP block on a server but choose a different location (geolocation) for the IP block, this IP block cannot be moved to another server located in the same country as this block. For example, an additional IP block geolocated in Poland (eu-central-war) and ordered on a server located in a French datacentre (eu-west-gra) cannot be moved to a server located in a Polish datacentre (eu-central-war). The IP block can only be moved to an eligible server located in a French datacentre.
 
-### Moving an IP block from the OVHcloud Control Panel
+### Moving an IP from the OVHcloud Control Panel
 
 > [!warning]
 > Only a single size block (/32) can be moved from a dedicated server to a VPS.
@@ -69,7 +69,7 @@ Click the `Additional IP`{.action} tab.
 
 ![manage IPs](images/manageIPs2024.png){.thumbnail}
 
-Next, click on the `...`{.action} button to the right of the IP address you want to move and select `Move Additional IP`{.action}.
+Next, click the `...`{.action} button to the right of the additional IP or block of IP addresses you want to move and select `Move Additional IP`{.action} or `Attach this IP block to another service`{.action}.
 
 ![move Additional](images/move_ip.png){.thumbnail}
 
