@@ -1,7 +1,7 @@
 ---
 title: Moving an Additional IP
 excerpt: Find out how to move an Additional IP in the Control Panel or via the OVHcloud API
-updated: 2024-11-28
+updated: 2024-12-02
 ---
 
 > [!primary]
@@ -54,6 +54,8 @@ With this technology, you can switch IP addresses from one solution to another i
 >
 
 ### Geolocalised IP blocks
+
+The geolocation of an IP address is independent of its region of attachment.
 
 If you order an additional IP block on a server but choose a different location (geolocation) for the IP block, this IP block cannot be moved to another server located in the same country as this block. For example, an additional IP block geolocated in Poland (eu-central-war) and ordered on a server located in a French datacentre (eu-west-gra) cannot be moved to a server located in a Polish datacentre (eu-central-war). The IP block can only be moved to an eligible server located in a French datacentre.
 
