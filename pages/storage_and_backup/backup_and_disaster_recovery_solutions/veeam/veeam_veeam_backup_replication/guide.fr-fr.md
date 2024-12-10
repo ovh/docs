@@ -1,7 +1,7 @@
 ---
 title: "Installer Veeam Backup & Replication"
 excerpt: "Découvrez comment installer un serveur Veeam Backup & Replication avec Veeam Enterprise"
-updated: 2024-09-26
+updated: 2024-12-10
 ---
 
 ## Objectif
@@ -14,6 +14,7 @@ Veeam Backup & Replication est un logiciel de protection des données. Il offre 
 
 - Posséder une [offre Veeam Enterprise](/links/hosted-private-cloud/veeam-enterprise).
 - Avoir à disposition une machine Windows Server 2012 ou une version plus récente.
+- Utiliser Veeam Backup & Replication v12.2 ou une version antérieure (v12.3 non compatible).
 
 ## En pratique
 
