@@ -341,10 +341,10 @@ This error should be resolvable by modifying the Windows Registry: Open the Wind
 
 ##### Linux
 
-Establish an SSH connection to your server, and type the following command:
+Establish an SSH connection to your server, install cifs-utils if applicable, and type the following command:
 
 ```sh
-mount -t cifs -o sec=ntlm,uid=root,gid=100,dir_mode=0700,username=root,password= //HostName/ServiceName /mnt/FolderMount
+mount -t cifs -o vers=2.0,uid=root,gid=100,dir_mode=0700,username=root,password= //HostName/ServiceName /mnt/FolderMount
 ```
 
 The code example above contains variables, which you will need to substitute with your own values.
@@ -352,6 +352,8 @@ The code example above contains variables, which you will need to substitute wit
 * **HostName**: The host name of your backup storage
 * **ServiceName**: The name of your server (e.g. ns0000000.ip-123-123-123.net)
 * **FolderMount**: The folder where you want to mount the share (it must already exist)
+
+cifs-utils is needed for hostname resolution ([src](https://serverfault.com/questions/609365/cifs-mount-in-fstab-succeeds-on-ip-fails-on-hostname-written-in-etc-hosts)). Otherwise use IP address. SMB versions 2.1 and 3.0 are not supported as of December '24. 
 
 ## Go further
 
