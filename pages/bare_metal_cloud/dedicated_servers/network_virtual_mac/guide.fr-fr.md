@@ -18,11 +18,12 @@ OVHcloud vous permet d’associer une adresse MAC virtuelle à une adresse IP, a
 - Votre serveur doit supporter les MAC virtuelles. Consultez [ce guide](/pages/bare_metal_cloud/dedicated_servers/network_support_virtual_mac) afin de le déterminer.
 
 > [!warning]
-> Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](/links/bare-metal/eco-about).
+> - Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](/links/bare-metal/eco-about).
 > Consultez notre [comparatif](/links/bare-metal/eco-compare) pour plus d’informations.
-> 
-> Cette fonctionnalité sera prochainement disponible pour l'ensemble des serveurs de gammes Advance à partir de Décembre 2024, puis sur les gammes Scale et High Grade en début d'année 2025.
-> 
+>
+> - Les serveurs ADVANCE Gen 3 (gamme 2024) supportent 32 vMACs différentes
+>
+> - Cette fonctionnalité sera disponible sur les gammes Scale et High Grade courant 2025. 
 
 > [!primary]
 > Si vous n'êtes pas familier avec l'utilisation de l'API OVHcloud, consultez notre guide « [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) ».
@@ -93,6 +94,14 @@ Utilisez l'appel API suivant :
 >
 > @api {v1} /dedicated/server DELETE /dedicated/server/{serviceName}/virtualMac/{macAddress}/virtualAddress/{ipAddress}
 >
+
+## FAQ
+
+**Que se passe-t-il si je déplace un bloc avec des vMACs sur un serveur Gen 3 possédant déjà 32 vMACs ?**
+
+Le bloc ne sera pas déplacé.
+
+Exemple : si vous tentez de déplacer un bloc de 4 IPs avec des vMACs différentes attachées sur un serveur ayant déjà 30 vMACs le bloc ne sera pas déplacé car le total de vMACs serait supérieur aux 32 vMACs autorisées
 
 ## Aller plus loin
 
