@@ -1,12 +1,12 @@
 ---
 title: 'Déterminer si la fonctionnalité des MAC virtuelles est supportée sur un serveur dédié'
 excerpt: "Découvrez comment déterminer si la fonctionalité des MAC virtuelles est supportée sur un serveur dédié via l'API OVHcloud"
-updated: 2021-12-09
+updated: 2024-12-13
 ---
 
 ## Objectif
 
-Afin d'utiliser la fonctionnalité des MAC virtuelles (VMAC) sur un serveur dédié, vous devez tout d'abord déterminer si ce serveur support cette fonctionnalité.
+Afin d'utiliser la fonctionnalité des MAC virtuelles (VMAC) sur un serveur dédié, vous devez tout d'abord déterminer si ce serveur supporte cette fonctionnalité.
 
 Le support de cette fonctionalité est un pré-requis de toutes les actions concernant les MAC virtuelles.
 
