@@ -103,11 +103,11 @@ endpoint = awscli_plugin_endpoint
 # region = <public_cloud_region_without_digit>
 region = gra #for example
 s3 =
-  endpoint_url = https://s3.<public_cloud_region_without_digit>.cloud.ovh.net
+  endpoint_url = https://s3.<public_cloud_region_without_digit>.io.cloud.ovh.net
   signature_version = s3v4
   addressing_style = virtual
 s3api =
-  endpoint_url = https://s3.<public_cloud_region_without_digit>.cloud.ovh.net
+  endpoint_url = https://s3.<public_cloud_region_without_digit>.io.cloud.ovh.net
 ```
 
 #### Create an Object Storage bucket for Velero
@@ -137,7 +137,7 @@ velero install \
   --plugins velero/velero-plugin-for-aws:v1.10.1,velero/velero-plugin-for-csi:v0.4.0 \
   --bucket <your bucket name> \
   --secret-file ./credentials \
-  --backup-location-config region=<public cloud region without digit>,s3ForcePathStyle="true",s3Url=https://s3.<public cloud region without digit>.cloud.ovh.net,checksumAlgorithm="" \
+  --backup-location-config region=<public cloud region without digit>,s3ForcePathStyle="true",s3Url=https://s3.<public cloud region without digit>.io,checksumAlgorithm="" \
   --snapshot-location-config region=<public cloud region without digit>,enableSharedConfig=true
 ```
 
@@ -154,7 +154,7 @@ velero install \
   --plugins velero/velero-plugin-for-aws:v1.10.1 \
   --bucket <your bucket name> \
   --secret-file ./credentials \
-  --backup-location-config region=<public cloud region without digit>,s3ForcePathStyle="true",s3Url=https://s3.<public cloud region without digit>.cloud.ovh.net,checksumAlgorithm="" \
+  --backup-location-config region=<public cloud region without digit>,s3ForcePathStyle="true",s3Url=https://s3.<public cloud region without digit>.io,checksumAlgorithm="" \
   --snapshot-location-config region=<public cloud region without digit>,enableSharedConfig=true
 ```
 
@@ -167,7 +167,7 @@ velero install \
   --plugins velero/velero-plugin-for-aws:v1.10.1,velero/velero-plugin-for-csi:v0.4.0 \
   --bucket velero-s3 \
   --secret-file .aws/credentials \
-  --backup-location-config region=gra,s3ForcePathStyle="true",s3Url=https://s3.gra.cloud.ovh.net,checksumAlgorithm="" \
+  --backup-location-config region=gra,s3ForcePathStyle="true",s3Url=https://s3.gra.io,checksumAlgorithm="" \
   --snapshot-location-config region=gra,enableSharedConfig=true
 ```
 
@@ -180,7 +180,7 @@ velero install \
   --plugins velero/velero-plugin-for-aws:v1.10.1 \
   --bucket velero-s3 \
   --secret-file .aws/credentials \
-  --backup-location-config region=gra,s3ForcePathStyle="true",s3Url=https://s3.gra.cloud.ovh.net,checksumAlgorithm="" \
+  --backup-location-config region=gra,s3ForcePathStyle="true",s3Url=https://s3.gra.io,checksumAlgorithm="" \
   --snapshot-location-config region=gra,enableSharedConfig=true
 ```
 
@@ -191,7 +191,7 @@ $ velero install \
   --plugins velero/velero-plugin-for-aws:v1.6.0,velero/velero-plugin-for-csi:v0.4.0 \
   --bucket velero-s3 \
   --secret-file .aws/credentials \
-  --backup-location-config region=gra,s3ForcePathStyle="true",s3Url=https://s3.gra.cloud.ovh.net,checksumAlgorithm="" \
+  --backup-location-config region=gra,s3ForcePathStyle="true",s3Url=https://s3.gra.io,checksumAlgorithm="" \
   --snapshot-location-config region=gra,enableSharedConfig=true
 CustomResourceDefinition/backups.velero.io: attempting to create resource
 CustomResourceDefinition/backups.velero.io: attempting to create resource client
