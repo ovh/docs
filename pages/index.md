@@ -1054,6 +1054,7 @@
     + [Analytics](products/public-cloud-data-analytics)
         + [General information](products/public-cloud-data-analytics-general-information)
             + [Analytics - Security overview](public_cloud/public_cloud_databases/information_01_security_overview)
+            + [Analytics - Lifecycle policy](public_cloud/data_analytics/analytics/information_02_lifecycle_policy)
             + [Analytics - Capabilities and Limitations](public_cloud/data_analytics/analytics/information_05_capabilities)
             + [Analytics - Automated Backups](public_cloud/data_analytics/analytics/information_07_automated_backups)
         + [Data Processing](products/public-cloud-data-analytics-data-processing)
