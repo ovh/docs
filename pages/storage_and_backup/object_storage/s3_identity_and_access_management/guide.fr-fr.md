@@ -1,21 +1,21 @@
 ---
 title: Object Storage - Gestion des identités et des accès
-excerpt: Ce guide a pour objectif de vous montrer la gestion de vos identités et accès à vos ressources S3 Object Storage
+excerpt: Ce guide a pour objectif de vous montrer la gestion de vos identités et accès à vos ressources Object Storage
 updated: 2022-09-27
 ---
 
 ## Objectif
 
-Ce guide a pour objectif de vous montrer la gestion de vos identités et accès à vos ressources S3 Object Storage.
+Ce guide a pour objectif de vous montrer la gestion de vos identités et accès à vos ressources Object Storage.
 
 ## Prérequis
 
-- Un [projet Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Un [projet Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
+- Être connecté à votre [espace client OVHcloud](/links/manager)
 
 ## En pratique
 
-Connectez-vous à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Cliquez ensuite sur `Object Storage`{.action} dans le menu de gauche.
+Connectez-vous à [l'espace client OVHcloud](/links/manager), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Cliquez ensuite sur `Object Storage`{.action} dans le menu de gauche.
 
 ### Création d'un utilisateur
 
@@ -23,11 +23,11 @@ Cliquez sur `Créer un utilisateur`{.action}.
 
 Si vous avez déjà des utilisateurs OpenStack, vous pouvez selectionner l'un d'entre eux :
 
-![Add S3 user](images/highperf-identity-and-access-management-20220928085304931.png)
+![Add Object Storage user](images/highperf-identity-and-access-management-20220928085304931.png)
 
 Puis :
 
-![Add S3 user](images/highperf-identity-and-access-management-2022092808554688.png)
+![Add Object Storage user](images/highperf-identity-and-access-management-2022092808554688.png)
 
 > [!primary]
 >
@@ -36,7 +36,7 @@ Puis :
 
 Sinon, créez un nouvel utilisateur :
 
-![Add S3 user](images/highperf-identity-and-access-management-20220928085501719.png)
+![Add Object Storage user](images/highperf-identity-and-access-management-20220928085501719.png)
 
 Une fois votre utilisateur créé, vous verrez les informations d'identification :
 
@@ -81,9 +81,9 @@ Sélectionnez le profil d'accès pour cet utilisateur et cliquez sur `Confirmer`
 
 ### Gestion avancée des accès aux ressources
 
-Vous pouvez cependant affiner les droits via l'import d'un fichier de configuration JSON. Pour cela, rendez-vous dans l'onglet `Utilisateurs de stratégies S3`{.action}.
+Vous pouvez cependant affiner les droits via l'import d'un fichier de configuration JSON. Pour cela, rendez-vous dans l'onglet `Utilisateurs de stratégies Object Storage `{.action}.
 
-![S3 users](images/highperf-identity-and-access-management-20220928084435242.png)
+![Object Storage users](images/highperf-identity-and-access-management-20220928084435242.png)
 
 Cliquez sur le bouton  `...`{.action} à droite de votre utilisateur puis sur `Importer un fichier JSON`{.action}.
 
@@ -163,6 +163,6 @@ Quelques exemples de fichiers de configuration JSON :
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

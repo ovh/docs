@@ -1,12 +1,8 @@
 ---
 title: 'Assegnare un MAC virtuale a un Additional IP'
 excerpt: 'Scopri come aggiungere un indirizzo MAC virtuale e come associarlo a un Additional IP'
-updated: 2024-08-05
+updated: 2024-12-13
 ---
-
-> [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
->
 
 ## Obiettivo
 
@@ -16,16 +12,17 @@ OVHcloud ti permette di associare un indirizzo MAC virtuale a un indirizzo IP al
 
 ## Prerequisiti
 
-- Possedere un [server dedicato](https://www.ovh.it/server_dedicati/){.external}
-- Disporre di un [indirizzo Additional IP](/links/network/additional-ip){.external} o di un blocco Additional IP (RIPE)
-- Essere connesso allo [Spazio Cliente OVHcloud](/links/manager){.external} o all'[API OVHcloud](https://api.ovh.com/)
+- Possedere un [server dedicato](/links/bare-metal/bare-metal)
+- Disporre di un [indirizzo Additional IP](/links/network/additional-ip) o di un blocco Additional IP (RIPE)
+- Essere connesso allo [Spazio Cliente OVHcloud](/links/manager) o all'[API OVHcloud](/links/api)
 - Il tuo server deve supportare i MAC virtuali. Consulta [questa guida](/pages/bare_metal_cloud/dedicated_servers/network_support_virtual_mac) per determinarlo
 
 > [!warning]
-> Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](/links/bare-metal/eco-about).
-> Per maggiori informazioni, consulta la nostra [a confronto](/links/bare-metal/eco-compare).
+> - Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](/links/bare-metal/eco-about). Per maggiori informazioni, consulta la nostra [a confronto](/links/bare-metal/eco-compare).
 >
-> Questa funzionalità sarà presto disponibile per tutti i server delle gamme High Grade, Scale e Advance a partire da dicembre 2024.
+> - I server Advance di terza generazione (dotati di processori EPYC 4004 Series) supportano 32 vMAC differenti.
+>
+> - Questa funzionalità sarà disponibile sulle gamme Scale e High Grade nel 2025.
 
 > [!primary]
 > Se non conosci l'utilizzo dell'API OVHcloud, consulta la nostra guida [Iniziare a utilizzare le API OVHcloud](/pages/manage_and_operate/api/first-steps).
@@ -41,7 +38,7 @@ OVHcloud ti permette di associare un indirizzo MAC virtuale a un indirizzo IP al
 
 #### Tramite lo Spazio Cliente OVHcloud
 
-Una volta connesso allo [Spazio Cliente OVHcloud](/links/manager){.external}, accedi al menu `Bare Metal Cloud`{.action} e apri la sezione `Network`{.action}. Quindi, clicca su `IP`{.action}.
+Una volta connesso allo [Spazio Cliente OVHcloud](/links/manager), accedi al menu `Bare Metal Cloud`{.action} e apri la sezione `Network`{.action}. Quindi, clicca su `IP`{.action}.
 
 Clicca sulla scheda `Additional IP`{.action}.
 
@@ -84,7 +81,7 @@ Utilizza questa chiamata API:
 
 #### Tramite lo Spazio Cliente OVHcloud
 
-Per eliminare un indirizzo MAC virtuale associato a un Additional IP, collegati al tuo [Spazio Cliente](/links/manager){.external}, accedi al menu `Bare Metal Cloud`{.action} e apri la sezione `Network`{.action}. Quindi, clicca su `IP`{.action}. Seleziona il server per visualizzare gli Additional IP o i blocchi IP associati.
+Per eliminare un indirizzo MAC virtuale associato a un Additional IP, collegati al tuo [Spazio Cliente](/links/manager), accedi al menu `Bare Metal Cloud`{.action} e apri la sezione `Network`{.action}. Quindi, clicca su `IP`{.action}. Seleziona il server per visualizzare gli Additional IP o i blocchi IP associati.
 
 Infine clicca sul pulsante `...`{.action} sulla destra e seleziona la voce `Elimina il MAC virtuale`{.action}.
 
@@ -97,6 +94,14 @@ Utilizza questa chiamata API:
 > @api {v1} /dedicated/server DELETE /dedicated/server/{serviceName}/virtualMac/{macAddress}/virtualAddress/{ipAddress}
 >
 
+## FAQ
+
+- **Cosa succede se trasferisco un blocco con vMAC su un server Advance di terza generazione (dotato di un processore EPYC 4004 Series) che possiede già 32 vMACs?**
+
+Il blocco non verrà spostato.
+
+Esempio: se tentate di spostare un blocco di 4 IP con vMAC diversi collegati su un server che ha già 30 vMAC, il blocco non verrà spostato perché il totale di vMAC sarebbe superiore ai 32 vMAC autorizzati.
+
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

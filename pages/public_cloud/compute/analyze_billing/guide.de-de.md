@@ -1,7 +1,7 @@
 ---
 title: 'Informationen zu den Abrechnungsoptionen der Public Cloud'
 excerpt: 'Erfahren Sie mehr über die verschiedenen Abrechnungsoptionen für Public Cloud-Produkte'
-updated: 2024-10-07
+updated: 2025-01-07
 ---
 
 ## Ziel
@@ -16,7 +16,7 @@ Dieses System ähnelt dem einiger Telefonieanbieter, wobei am Monatsende die Anz
 
 ## Voraussetzungen
 
-- Sie haben ein [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud/){.external} in Ihrem Kunden-Account.
+- Sie haben ein [Public Cloud Projekt](/links/public-cloud/public-cloud) in Ihrem Kunden-Account.
 - Sie haben eine [Public Cloud Instanz](/pages/public_cloud/compute/public-cloud-first-steps) erstellt.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
@@ -36,10 +36,6 @@ Speziell für Instanzen vom Typ *Virtual Machines* wird der Abrechnungszähler g
 Für jedes Cloud Projekt gibt es eine eigene Rechnung, die alle im Laufe des Monats abgerechneten Ressourcen zusammenfasst. Diese Rechnung wird am ersten Tag des Folgemonats erstellt.
 
 ### Beispiel
-
->[!warning]
-> Bitte beachten Sie, dass eine stündliche Instanz unabhängig vom Zeitpunkt der Erstellung der Instanz stundenweise abgerechnet wird. Wenn Sie eine Abrechnungszeit von 60 Minuten nutzen möchten, müssen Sie Ihre Instanz zur vollen Stunde starten, zum Beispiel um 13:00 oder 14:00 Uhr.
->
 
 Das folgende Beispiel veranschaulicht, wie das in der Praxis funktioniert.
 
@@ -99,7 +95,7 @@ Wenn Sie Benachrichtigungen erhalten möchten, wenn die Prognose für die Nutzun
 
 ### Instanzen
 
-Die Preise für Cloud-Instanzen (oder Cloud-Computing-Server) werden im OVHcloud Kundencenter angezeigt, bevor Sie eine Instanz erstellen. Sie können die Preise auch auf der [Produktseite](https://www.ovhcloud.com/de/public-cloud/prices/){.external} einsehen.
+Die Preise für Cloud-Instanzen (oder Cloud-Computing-Server) werden im OVHcloud Kundencenter angezeigt, bevor Sie eine Instanz erstellen. Sie können die Preise auch auf der [Produktseite](/links/public-cloud/prices) einsehen.
 
 > [!primary]
 >
@@ -144,7 +140,7 @@ Die Berechnung lautet: (Preis pro GB pro Monat */* 720) *x* Anzahl Stunden *x* A
 
 Die Anzahl GB pro Stunde entspricht der maximalen Anzahl GB, die während einer Stunde gespeichert sind. Wenn ein Benutzer beispielsweise 15 GB um 16:20, 17 GB um 16:40 und 14 GB um 16:50 Uhr hat, berechnet OVHcloud 17 GB für den Zeitraum 16:00 - 17:00.
 
-Die Preise für Storage sind auf der [OVHcloud Website](https://www.ovhcloud.com/de/public-cloud/storage/){.external} einsehbar.
+Die Preise für Storage sind auf der [OVHcloud Website](/links/public-cloud/storage) einsehbar.
 
 #### Zusätzliche Volumes
 
@@ -160,7 +156,7 @@ Snapshots zusätzlicher Volumes werden genauso abgerechnet wie die Volumes selbs
 
 #### Instanz-Snapshots und Images
 
-Snapshots und Images von Instanzen (mit Ausnahme der von OVHcloud bereitgestellten Images) werden unabhängig von Instanz und Image-Typ zu einem pauschalen Preis per GB und Monat berechnet. Gehen Sie auf die [Produktseite](https://www.ovhcloud.com/de/public-cloud/prices/){.external}, um die Preise einzusehen.
+Snapshots und Images von Instanzen (mit Ausnahme der von OVHcloud bereitgestellten Images) werden unabhängig von Instanz und Image-Typ zu einem pauschalen Preis per GB und Monat berechnet. Gehen Sie auf die [Produktseite](/links/public-cloud/prices), um die Preise einzusehen.
 
 #### Object Storage
 
@@ -194,4 +190,4 @@ Für den Archive Storage werden drei Elemente in Rechnung gestellt:
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

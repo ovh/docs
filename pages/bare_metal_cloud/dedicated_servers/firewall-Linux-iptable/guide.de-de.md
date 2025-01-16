@@ -1,7 +1,7 @@
 ---
 title: Konfiguration der Linux Firewall mit iptables
 excerpt: Erfahren Sie hier, wie Sie einen Server mit iptables sichern
-updated: 2024-07-12
+updated: 2024-12-20
 ---
 
 > [!primary]
@@ -32,7 +32,9 @@ Firewalls implementieren Regeln, die erlaubten und gesperrten Traffic verwalten.
 >
 > Diese Anleitung verwendet Befehle für eine Ubuntu Server Distribution.
 >
-> Es handelt sich hierbei um eine generelle Vorgehensweise. Möglicherweise müssen aufgrund der Distribution und/oder des Betriebssystems, das Sie verwenden, einige Befehle entsprechend angepasst werden. Vereinzelt wird Ihnen geraten, ein Tool eines Drittanbieters zu verwenden. Bei Fragen zur Nutzung eines solchen Tools lesen Sie bitte die offizielle Dokumentation des jeweiligen Herausgebers.  
+> Es handelt sich hierbei um eine generelle Vorgehensweise. Möglicherweise müssen aufgrund der Distribution oder des Betriebssystems, das Sie verwenden, einige Befehle entsprechend angepasst werden. Vereinzelt wird Ihnen geraten, ein Tool eines Drittanbieters zu verwenden. Bei Fragen zur Nutzung eines solchen Tools lesen Sie die offizielle Dokumentation des jeweiligen Herausgebers.  
+>
+> Die meisten der hier beschriebenen Regeln gehen davon aus, dass Ihr *iptables* so konfiguriert ist, dass es eingehenden Datenverkehr selektiv zulässt und dann *DROP* anwendet. Wenn Sie vorhaben, eine andere Art von Konfiguration einzurichten, empfehlen wir Ihnen, die zugehörige Dokumentation zu konsultieren.
 >
 
 ### Schritt 1: Ihr System aktualisieren
@@ -92,7 +94,7 @@ Um alle aktuellen Regeln auf Ihrem Server anzuzeigen, geben Sie folgenden Befehl
 sudo iptables -L
 ```
 
-Das System zeigt den Status Ihrer Tabellen an.<br>
+Das System zeigt den Status Ihrer Firewall an.  
 Die Ausgabe enthält drei Ketten:
 
 ![Check-Current-iptables](images/Check-Current-iptables.PNG){.thumbnail}
@@ -105,12 +107,12 @@ Um Traffic von Ihrem eigenen System (*localhost*) zu erlauben, fügen Sie die Ei
 sudo iptables -A INPUT -i lo -j ACCEPT
 ```
 
-Dieser Befehl konfiguriert die Firewall, um den *Input*-Traffic für das Interface (-i) von *localhost* (lo) zu akzeptieren. Damit wird dieser Traffic über Ihre Firewall übertragen.
+Dieser Befehl konfiguriert die Firewall, um den *Input*-Traffic für das Interface (-i) von *localhost* (lo) zu akzeptieren. Damit wird dieser Traffic über Ihre Firewall übertragen.  
 Sie müssen diese Regel festlegen, damit Anwendungen mit der Schnittstelle des *localhost* kommunizieren können.
 
 ### Schritt 5: Traffic auf bestimmten Ports erlauben <a name="step5"></a>
 
-Diese Regeln erlauben den Traffic auf spezifischen Ports, die Sie mithilfe der unten aufgeführten Befehle festlegen.
+Diese Regeln erlauben den Traffic auf spezifischen Ports, die Sie mithilfe der unten aufgeführten Befehle festlegen.  
 Ein Port ist ein Kommunikationsendpunkt für einen bestimmten Datentyp.
 
 Um HTTP-Web-Traffic zu erlauben geben Sie folgenden Befehl ein:
@@ -119,7 +121,7 @@ Um HTTP-Web-Traffic zu erlauben geben Sie folgenden Befehl ein:
 sudo iptables -A INPUT -p tcp -—dport 80 -j ACCEPT
 ```
 
-Um eingehenden SSH-Traffic (Secure Shell) zu erlauben, geben Sie Folgendes ein. (Beachten Sie dabei, dass der Standardport 22 im Beispiel verwendet wird. Wenn Sie eine andere Portnummer nutzen müssen die Befehle entsprechend angepasst werden.)
+Um eingehenden SSH-Traffic (Secure Shell) zu erlauben, geben Sie Folgendes ein. (Beachten Sie dabei, dass der Standardport 22 im Beispiel verwendet wird. Wenn Sie eine andere Portnummer nutzen, müssen die Befehle entsprechend angepasst werden.)
 
 ```bash
 sudo iptables -A INPUT -p tcp -—dport 22 -j ACCEPT
@@ -234,7 +236,7 @@ Dadurch werden die Regeln direkt im IPV4-Ordner gespeichert.
 
 Beim nächsten Start Ihres Systems lädt *iptables* automatisch die Firewall-Regeln.
 
-Sie können nun Firewall-Regeln mit *iptables* für Ihren Linux-Server konfigurieren.
+Sie können nun Firewall-Regeln mit *iptables* für Ihren Linux-Server konfigurieren.  
 Zögern Sie nicht, zu experimentieren, denn Sie können nicht mehr benötigte Regeln immer wieder löschen, oder alle Regeln leeren und neu starten.
 
 ## Weiterführende Informationen

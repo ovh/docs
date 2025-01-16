@@ -11,8 +11,8 @@ This guide is designed to familiarise you with the management of your containers
 ## Requirements
 
 - A [Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
-- An [S3 user](/pages/storage_and_backup/object_storage/s3_identity_and_access_management) already created
+- Access to the [OVHcloud Control Panel](/links/manager)
+- An [Object Storage user](/pages/storage_and_backup/object_storage/s3_identity_and_access_management) already created
 
 ## Instructions
 
@@ -33,7 +33,7 @@ user@host:~$ pip3 install awscli
 
 #### Collect Credentials
 
-- You will need your user's Access key* and *Secret key*. You can access this information in the ‘S3 users’ tab in your Control Panel.
+- You will need your user's Access key* and *Secret key*. You can access this information in the ‘Object Storage users’ tab in your Control Panel.
 - You will also need your *url_endpoint*. If you have already created your bucket, you can access this information from the `My containers` tab, then in the details of your bucket. Otherwise, follow this [guide](/pages/storage_and_backup/object_storage/s3_location).
 
 #### Configuration
@@ -247,6 +247,6 @@ aws s3api s3api delete-object-tagging --bucket <bucket_name> --key test1
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pl/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

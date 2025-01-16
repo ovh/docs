@@ -1,12 +1,8 @@
 ---
 title: Gestione dei token
 excerpt: Come utilizzare i token via API Keystone
-updated: 2023-06-15
+updated: 2024-12-10
 ---
-
-> [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
->
 
 ## Obiettivo
 
@@ -173,6 +169,17 @@ Connection: close
 Si raccomanda vivamente di utilizzare le librerie che permettono la gestione trasparente dei token. In questo modo, fornendo semplicemente i credenziali di accesso alla libreria, i token saranno automaticamente generati, utilizzati e rinnovati senza doverne gestire a livello applicativo.
 
 Ci sono molte librerie nei diversi linguaggi. Per maggiori informazioni, consulta [la lista ufficiale](https://wiki.openstack.org/wiki/SDKs){.external}.
+
+#### Eliminazione del token
+
+```bash
+curl -i -X DELETE \
+  -H "X-Auth-Token: $OS_TOKEN" \
+  -H "X-Subject-Token: $OS_TOKEN" \
+  "http://localhost:5000/v3/auth/tokens"
+```
+
+Se non ci sono errori, si ottiene una risposta vuota.
 
 ## Per saperne di più
 

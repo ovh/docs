@@ -1,7 +1,7 @@
 ---
 title: "Migrer son site web et ses services associés vers OVHcloud"
 excerpt: "Découvrez comment migrer votre site web, votre nom de domaine, votre base de données et vos e-mails chez OVHcloud sans interruption de services"
-updated: 2024-06-24
+updated: 2025-01-08
 ---
 
 ## Objectif
@@ -201,7 +201,7 @@ Réitérez l'opération pour l'ensemble de vos comptes e-mail.
 > Si vos adresses e-mail étaient configurées en POP sans conservation de copies des e-mails sur votre ancien serveur e-mail, ou si vous disposez des e-mails enregistrés « en local » sur vos appareils, seule l'**option 2** pourra être réalisée.
 >
 
-**Option 2** : effectuez une sauvegarde du contenu de vos anciennes adresses e-mail à l'aide d'un logiciel de messagerie (Outlook, Mail pour macOS, etc.). Reconfigurez votre logiciel de messagerie puis importez la sauvegarde dans votre nouvelle adresse e-mail OVHcloud.
+**Option 2** : effectuez une sauvegarde du contenu de vos anciennes adresses e-mail à l'aide d'un logiciel de messagerie (Outlook, Mail pour macOS, etc.). Reconfigurez votre logiciel de messagerie puis importez la sauvegarde dans votre nouvelle adresse e-mail OVHcloud. Retrouvez plus d'informations dans notre guide « [Migrer manuellement votre adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration) ».
 
 ### Etape 8 : reconfigurer vos logiciels de messagerie <a name="step8"></a>
 

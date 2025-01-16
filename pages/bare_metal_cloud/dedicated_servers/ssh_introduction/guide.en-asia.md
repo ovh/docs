@@ -130,7 +130,7 @@ Example:
 nano ~/.ssh/known_hosts
 ```
 
-Locate the the "offending" line that was specified in the warning message, in this example it would be the third one. Highlight and delete the entire line.
+Locate the "offending" line that was specified in the warning message, in this example it would be the third one. Highlight and delete the entire line.
 
 Save the changes and exit the editor. You will have to confirm the new fingerprint at the next server login.
 
@@ -212,7 +212,7 @@ Alternatively, you can navigate to this folder, right-click on the file and open
 
 ![known_hosts](images/windowskh.png){.thumbnail}
 
-Locate the the "offending" line that was specified in the warning message, in this example it would be the third one. Highlight and delete the entire line.
+Locate the "offending" line that was specified in the warning message, in this example it would be the third one. Highlight and delete the entire line.
 
 Save the changes and exit the editor. You will have to confirm the new fingerprint at the next server login.
 

@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Billing and lifecycle
 excerpt: Learn how we bill AI Deploy
-updated: 2023-04-04
+updated: 2025-01-13
 ---
 
 > [!primary]
@@ -24,12 +24,12 @@ AI Deploy is linked to a Public Cloud project. The whole project is billed at th
 OVHcloud AI deploy allows deployment of Docker images, and each deployment is called an `app`. 
 During its lifetime, the app will go through the following status:
 
-- `QUEUED`: the app deployment request is about to be processed. First arrived, first deployed.
-- `INITIALIZING`: the app is being started and, if any, the remote data is synchronized. To learn more about data synchronization, please check out the [Data - How it works](/pages/public_cloud/ai_machine_learning/gi_02_concepts_data#how-it-works) documentation.
-- `RUNNING`: the app is running, you can connect to it and use it. Compute resources (GPUs/CPUs) are allocated to your specific app and an HTTP endpoint is available.
-- `SCALING`: the app deployment is scaling up or down, depending of the scaling configuration. While scaling, the app is still available if it was running before.
-- `STOPPING`: the app is stopping, your compute resources are freed. Ephemeral data is deleted.
-- `STOPPED`: the app ended normally. You can restart it whenever you want or delete it.
+- `QUEUED`: the app deployment request is about to be processed.
+- `INITIALIZING`: the app is being started and, if any, the remote data is synchronized from the Object Storage. To learn more about data synchronization, please check out the [Data - How it works](/pages/public_cloud/ai_machine_learning/gi_02_concepts_data#how-it-works) documentation.
+- `SCALING`: First, the system allocates the necessary compute resources (CPU/GPU) for the app. Then, the specified Docker image is pulled for use in the app. This status is also entered when the number of app replicas is being increased or decreased.
+- `RUNNING`: At least one replica of the app is available and accessible via its endpoint. As the app scales up to create new replicas, the status transitions back to `SCALING`. However, there is no interruption in service, and the original replica(s) remain accessible during this time.
+- `STOPPING`: the app is stopping, your compute resources are freed. Ephemeral data is deleted. If any, remote data is synchronized back to the Object Storage.
+- `STOPPED`: the app ended normally. You can restart it whenever you want or delete it. It will keep the same endpoint.
 - `FAILED`: the app ended in error, e.g. the Docker image is invalid (unreachable, built with linux/arm, ...).
 - `ERROR`: the app ended due to a backend error (issue on OVHcloud side). You may reach our support.
 - `DELETING`: the app is being removed. When it is deleted, you will no longer see it, it will no longer exist.
@@ -59,18 +59,14 @@ We **do not provide** a pay-per-call pricing so far.
 - For this optional Object Storage, Egress traffic when communicated outside OVHcloud
 - Private Docker registry if any.
 
-Visual explanations about paid items:
-
-![image](images/ai.deploy.items.png){.thumbnail}
-
-A more detailed view:
+Here is a detailed graph that illustrates every step that is billed or not during the AI Deploy workflow:
 
 ![image](images/ai.deploy.billing.png){.thumbnail}
 
 ### Compute resources details
 
 During the app creation, you can select **compute resources**, known as CPUs or GPUs.
-Their official pricing is available in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) or on the [OVHcloud Public Cloud website](https://www.ovhcloud.com/en/public-cloud/prices/).
+Their official pricing is available in the [OVHcloud Control Panel](/links/manager) or on the [OVHcloud Public Cloud website](/links/public-cloud/prices).
 
 Rates for compute are mentioned per hour to facilitate reading of the prices, but the billing granularity remains **per minute**.
 
@@ -85,7 +81,7 @@ Once you select the compute resources, you can specify the scaling strategy:
 
 Each compute resource (CPU or GPU) comes with local storage, that we can consider ephemeral since this storage space is not saved when you stop or delete an AI Deploy app.
 
-The sizing depends on the selected amount of compute resources, check the details on the [OVHcloud Public Cloud website](https://www.ovhcloud.com/en/public-cloud/prices/).
+The sizing depends on the selected amount of compute resources, check the details on the [OVHcloud Public Cloud website](/links/public-cloud/prices).
 
 This storage space can be used by your Docker image, for local operations.
 
@@ -150,5 +146,4 @@ Please send us your questions, feedback and suggestions to improve the service:
 
 - On the OVHcloud [Discord server](https://discord.gg/ovhcloud)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
-
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.

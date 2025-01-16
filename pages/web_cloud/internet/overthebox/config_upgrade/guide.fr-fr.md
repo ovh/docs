@@ -1,7 +1,7 @@
 ---
 title: 'Comment mettre à jour un appareil OverTheBox ?'
 excerpt: 'Découvrez comment mettre à jour votre appareil OverTheBox'
-updated: 2024-11-25
+updated: 2024-12-23
 ---
 
 ## Objectif
@@ -129,11 +129,16 @@ Dans ce cas, les recommandations sont les suivantes :
 
 | Canal | OverTheBox | OpenWRT | Linux | MPTCP | Compatibilité du matériel |
 | ---  | :---: | :---: | :---: | :---: | ---: |
-| v0.8_deprecated | v0.8.1 | 19.07.10 | 4.14.276 | v0.94 | nuc, ITv1, rpi3|
+| v0.8_deprecated | v0.8.2 | 19.07.10 | 4.14.276 | v0.94 | nuc, ITv1, rpi3|
 | v0.9 | v0.9.6 | 21.02.5 | 5.4.217 | v0.96 | v2b, v2c |
-| v1.0 | v1.0.3 | 23.05.5 | 5.15.167 | v1 | v3lte, v3, v2b, v2c |
+| v1.0 | v1.0.4 | 23.05.5 | 5.15.167 | v1 | v3lte, v3, v2b, v2c |
 | stable | v0.9.6 | 21.02.5 | 5.4.217 | v0.96 | v2b, v2c |
-| beta | v1.0.3 | 23.05.5 | 5.15.167 | v1 | v3lte, v3, v2b, v2c |
+| beta | v1.0.4 | 23.05.5 | 5.15.167 | v1 | v3lte, v3, v2b, v2c |
+
+### Revenir sur une version antérieure
+
+Il n'est pas possible de revenir sur une version antérieure depuis l'espace client, car cela nécessite une réinitialisation de la configuration de l'**OverTheBox**.
+Il est toutefois possible de revenir sur une version antérieure depuis l'interface web locale, consultez la section `Mise à jour depuis l'interface web locale` du guide « [Installer l’image OverTheBox sur votre matériel](/pages/web_cloud/internet/overthebox/advanced_installer_limage_overthebox_sur_votre_materiel) ».
 
 ### Installer manuellement une image
 

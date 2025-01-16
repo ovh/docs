@@ -1,12 +1,12 @@
 ---
-title: "Comparaison des modes de déploiement S3 - Présentation des régions 3-AZ / 1-AZ / Local Zones"
-excerpt: "Découvrez les modes de déploiement de l'Object Storage S3 OVHcloud"
-updated: 2024-11-25
+title: "Comparaison des modes de déploiement Object Storage - Présentation des régions 3-AZ / 1-AZ / Local Zones"
+excerpt: "Découvrez les modes de déploiement de l'Object Storage OVHcloud"
+updated: 2024-12-11
 ---
 
 ## Objectif
 
-OVHcloud propose plusieurs modes de déploiement pour son offre [Object Storage S3](/links/public-cloud/object-storage), chacun adapté à des besoins spécifiques en matière de résilience, de disponibilité, de performances et de latence. Cette page fournit une explication détaillée des caractéristiques de chaque mode de déploiement, suivie d'une comparaison pour aider les utilisateurs à choisir l'option la plus adaptée à leurs besoins.
+OVHcloud propose plusieurs modes de déploiement pour son offre [Object Storage](/links/public-cloud/object-storage), chacun adapté à des besoins spécifiques en matière de résilience, de disponibilité, de performances et de latence. Cette page fournit une explication détaillée des caractéristiques de chaque mode de déploiement, suivie d'une comparaison pour aider les utilisateurs à choisir l'option la plus adaptée à leurs besoins.
 
 ## Concepts
 
@@ -26,7 +26,7 @@ Le service de Object Storage d'OVHcloud propose trois principaux modes de déplo
 
 #### Infrastructure et redondance
 
-Une région 1-AZ se compose d'une **seule zone de disponibilité qui couvre plusieurs datacenters dans la même région**, utilisant une conception redondante 2N+1. Cette configuration offre une résilience contre les défaillances de rack de serveurs et de disques durs, mais elle peut être vulnérable à une panne plus globale d'un datacenter. Notez que, dans une région 1-AZ, le service Object Storage S3 est situé dans un datacenter spécifique et, en cas de panne dans ce datacenter, l'accès aux données pourrait être impacté, même si les autres datacenters de la zone restent opérationnels.
+Une région 1-AZ se compose d'une **seule zone de disponibilité qui couvre plusieurs datacenters dans la même région**, utilisant une conception redondante 2N+1. Cette configuration offre une résilience contre les défaillances de rack de serveurs et de disques durs, mais elle peut être vulnérable à une panne plus globale d'un datacenter. Notez que, dans une région 1-AZ, le service Object Storage est situé dans un datacenter spécifique et, en cas de panne dans ce datacenter, l'accès aux données pourrait être impacté, même si les autres datacenters de la zone restent opérationnels.
 
 #### Caractéristiques
 
@@ -105,9 +105,9 @@ Les Local Zones rapprochent les services d'OVHcloud des utilisateurs finaux, min
 | Caractéristiques          | Région 1-AZ                              | Région 3-AZ                            | Local Zones                             |
 |---------------------------|------------------------------------------|----------------------------------------|-------------------------------------------|
 | **Structure de déploiement** | Zone de disponibilité unique               | Trois zones indépendantes              | Zone de disponibilité unique              |
-| **Redondance**             | 2N+1 interne                               | Redondance inter-zones                 | Pas de redondance entre zones             |
-| **Disponibilité des données** | Limitée si panne d'un datacenter, mais résilience à la panne de serveurs/disques | Maintenue entre zones de disponibilité  | Limitée à la Local Zone                  |
-| **Latence**               | Modérée                                   | Faible entre zones de disponibilité    | Ultra-faible pour les utilisateurs finaux |
+| **Redondance**             | 2N+1 interne                               | Redondance inter-zones                 | Triple réplication locale           |
+| **Disponibilité des données** | Limitée si panne d'un datacenter, mais résilience à la panne de serveurs/disques | Maintenue entre zones de disponibilité  | Limitée si panne d'un datacenter, mais résilience à la panne de serveurs/disques  |
+| **Latence**               | Faible pour les utilisateurs finaux proches | Faible pour les utilisateurs finaux proches et ultra-faible entre zones de disponibilité | Faible pour les utilisateurs finaux proches |
 | **Cas d'utilisation**     | Applications générales, sauvegardes       | Applications critiques                 | Applications sensibles à la latence, application régionales       |
 | **Coût**                  | Optimisé                                  | Plus élevé, en raison d'une résilience accrue      | Dépend de la zone et des besoins en matière de latence / performances          |
 
@@ -115,7 +115,6 @@ Les Local Zones rapprochent les services d'OVHcloud des utilisateurs finaux, min
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et une analyse personnalisée de votre projet.
 
-Pour des détails supplémentaires et de l’assistance sur les modes de déploiement S3, consultez [ce guide](/pages/storage_and_backup/object_storage/cold_archive_getting_started).
+Pour des détails supplémentaires et de l’assistance sur les modes de déploiement Object Storage, consultez [ce guide](/pages/storage_and_backup/object_storage/cold_archive_getting_started).
 
 Échangez avec notre [communauté d'utilisateurs](/links/community) et notre communauté sur [Discord](https://discord.gg/ovhcloud).
-

@@ -1,12 +1,12 @@
 ---
 title: Jak odnawiać usługi OVHcloud
 excerpt: Dowiedz się, jak zarządzać usługami i odnawianiem usług w Panelu klienta
-updated: 2024-11-12
+updated: 2024-12-23
 ---
 
 ## Wprowadzenie
 
-Menu **Moje usługi** w Panelu klienta OVHcloud umożliwia sprawdzenie statusu usług, ich odnowienie, zmianę typu odnowienia, regulowanie faktur lub antycypowanie płatności.
+Menu **Moje rozwiązania i usługi** w Panelu klienta OVHcloud umożliwia sprawdzenie statusu usług, ich odnowienie, zmianę typu odnowienia, regulowanie faktur lub antycypowanie płatności.
 
 Z tego przewodnika dowiesz się:
 
@@ -19,7 +19,7 @@ Z tego przewodnika dowiesz się:
 
 > [!primary]
 >
-> Niektóre elementy tego przewodnika mogą się różnić lub mogą nie mieć zastosowania w Twojej sytuacji, w zależności od miejsca pobytu, lokalnych przepisów i wykorzystywanych rozwiązań. Aby uzyskać szczegółowe informacje, sprawdź zapisy w umowach [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl): kliknij nazwę w prawym górnym rogu ekranu, kliknij `Produkty i usługi`{.action}, a następnie zakładkę `Regulaminy`{.action}.
+> Niektóre elementy tego przewodnika mogą się różnić lub mogą nie mieć zastosowania w Twojej sytuacji, w zależności od miejsca pobytu, lokalnych przepisów i wykorzystywanych rozwiązań. Aby uzyskać szczegółowe informacje, sprawdź zapisy w umowach [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl): kliknij nazwę w prawym górnym rogu ekranu, kliknij `Moje rozwiązania i usługi`{.action}, a następnie zakładkę `Regulaminy`{.action}.
 >
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/dfpPCa0mUyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -69,23 +69,23 @@ Z tego przewodnika dowiesz się:
 ## W praktyce
 
 Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).<br>
-Kliknij swoją nazwę w prawym górnym rogu i wybierz `Produkty i usługi`{.action}.
+Kliknij swoją nazwę w prawym górnym rogu i wybierz `Moje rozwiązania i usługi`{.action}.
 
 ![produkty i usługi](/pages/assets/screens/control_panel/product-selection/right-column/products-services.png){.thumbnail}
 
 ### Wyświetl typ odnowienia <a name="renewal-type"></a>
 
-Na stronie **Moje usługi** znajduje się tabela wyszczególniająca Twoje usługi OVHcloud. Znajdziesz tam nazwy swoich usług, ich rodzaj, dostępność (Domyślny składnik `aktywów`), status (rodzaj odnowienia, działanie do przeprowadzenia itd.), kolejną datę odnowienia lub rozwiązania umowy oraz przycisk `...`{.action} przeznaczony do działań możliwych do przeprowadzenia dla każdej usługi.
+Na stronie **Moje rozwiązania i usługi** znajduje się tabela wyszczególniająca Twoje usługi OVHcloud. Znajdziesz tam nazwy swoich usług, ich rodzaj, dostępność (Domyślny składnik `aktywów`), status (rodzaj odnowienia, działanie do przeprowadzenia itd.), kolejną datę odnowienia lub rozwiązania umowy oraz przycisk `...`{.action} przeznaczony do działań możliwych do przeprowadzenia dla każdej usługi.
 
-![Moje usługi](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/my-services-en.png){.thumbnail}
+![Moje usługi](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
 
 > [!success]
 > Narzędzia do sortowania, filtrowania i wyszukiwania są dostępne nad tabelą.
 > Możesz sortować kolumny w kolejności rosnącej lub malejącej, wyszukiwać nazwy usług lub zastosować filtr, aby wyświetlić tylko niektóre usługi zgodnie z wybranymi kryteriami.
 >
-> Kryteria filtrowania zostaną wyświetlone nad tabelą. Oto przykład filtra umożliwiającego wyświetlenie nazw domen, których odnowienie jest wykonywane ręcznie i których data zakończenia abonamentu wygasa przed miesiącem.
+> Kryteria filtrowania zostaną wyświetlone nad tabelą. Oto przykład filtra umożliwiającego wyświetlenie nazw domen, których odnowienie jest wykonywane ręcznie.
 >
-> ![manageautomaticrenewal](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/filters-en.png){.thumbnail}
+> ![manageautomaticrenewal](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/filters-en.png){.thumbnail}
 
 <a name="actions"></a>
 
@@ -96,16 +96,16 @@ Na stronie **Moje usługi** znajduje się tabela wyszczególniająca Twoje usłu
 > Niektóre działania mogą nie być dostępne w zależności od tego, czy dana usługa kwalifikuje się do odnowienia ręcznego.
 >
 
-Po prawej stronie usługi kliknij przycisk`...`{.action} w kolumnie `Filtruj`, a następnie wybierz odpowiednią akcję.
+Po prawej stronie usługi kliknij przycisk `...`{.action} w kolumnie `Filtruj`, a następnie wybierz odpowiednią akcję.
 
-![menu actions](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/actions-en.png){.thumbnail}
+![menu actions](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/actions-en.png){.thumbnail}
 
 **Każda operacja została wyszczególniona w jednej z poniższych kart.**
 
 > [!tabs]
 > **Skonfiguruj odnowienie**
 >>
->> ![Skonfiguruj odnowienie](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/configure-renewal-en.png){.thumbnail}
+>> ![Skonfiguruj odnowienie](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/configure-renewal-en.png){.thumbnail}
 >>
 >> Kliknij na akcję `Skonfiguruj odnowienie`{.action}. W zależności od wybranej usługi, możesz ustawić odnawianie ręczne lub wybrać częstotliwość odnawiania automatycznego. W razie potrzeby będziesz mógł wybrać rodzaj i częstotliwość odnowienia.
 >>
@@ -115,7 +115,7 @@ Po prawej stronie usługi kliknij przycisk`...`{.action} w kolumnie `Filtruj`, a
 >>
 > **Prognoza płatności**
 >>
->>![antycypowanie płatności](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/forward-payment-en.png){.thumbnail}
+>>![antycypowanie płatności](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/forward-payment-en.png){.thumbnail}
 >>
 >> To działanie jest dostępne w przypadku usług z opcją **automatycznego odnowienia**.
 >>
@@ -124,9 +124,9 @@ Po prawej stronie usługi kliknij przycisk`...`{.action} w kolumnie `Filtruj`, a
 >> Możesz odnowić te usługi w dowolnym momencie przed ich wygaśnięciem, a także wybrać czas ich odnowienia.
 >> W tym przypadku zamówiony czas ważności zostanie dodany do bieżącego czasu ważności. Nie tracisz pozostałego czasu ważności usługi.
 >>
-> **Rezygnacja z umowy terminowej**
+> **Rezygnuję z usługi**
 >>
->> ![Zrezygnuj](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/cancel-en.png){.thumbnail}
+>> ![Zrezygnuj](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancel-en.png){.thumbnail}
 >>
 >> To działanie jest dostępne w przypadku usług z opcją **automatycznego odnowienia**.
 >>
@@ -136,7 +136,7 @@ Po prawej stronie usługi kliknij przycisk`...`{.action} w kolumnie `Filtruj`, a
 >>
 > **Odnów usługę**
 >>
->> ![Odnów usługę](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/renew-service-en.png){.thumbnail}
+>> ![Odnów usługę](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/renew-service-en.png){.thumbnail}
 >>
 >> To działanie jest dostępne tylko w przypadku usług wymagających odnowienia **odnowienie ręczne**.
 >>
@@ -145,7 +145,7 @@ Po prawej stronie usługi kliknij przycisk`...`{.action} w kolumnie `Filtruj`, a
 >>
 > **Ureguluj należności**
 >>
->> ![Zapłać fakturę](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/pay-bill-en.png){.thumbnail}
+>> ![Zapłać fakturę](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/pay-bill-en.png){.thumbnail}
 >>
 >> Pojawi się informacja `Faktura do zapłaty`, gdy faktura oczekuje na płatność i gdy:
 >>
@@ -161,7 +161,7 @@ Po prawej stronie usługi kliknij przycisk`...`{.action} w kolumnie `Filtruj`, a
 
 Działania zbiorcze na usługach możesz wykonać, zaznaczając kilka usług w tabeli i klikając przycisk `Operacje`{.action}.
 
-![operacje zbiorcze](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/batch-actions-en.png){.thumbnail}
+![operacje zbiorcze](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/batch-actions-en.png){.thumbnail}
 
 W poniższej tabeli przedstawiono możliwe działania zbiorcze.
 
@@ -197,7 +197,7 @@ W poniższej tabeli przedstawiono możliwe działania zbiorcze.
 >> Jeśli Twoja domena również została zawieszona i odnowiona, może to oznaczać, że czas propagacji DNS wyniesie do 48 godzin.
 >> Aby zapobiec niedostępności wszystkich Twoich krytycznych usług, zalecamy automatyczne odnawianie usług i regularne sprawdzanie [czy Twoje sposoby płatności są aktualne](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).
 > Abonament za usługę wygasa w lipcu 2024. Jest styczeń 2024 roku i chcę go odnowić na rok. Czy w związku z tym abonament wygaśnie w lipcu 2025 r., czy w styczniu 2025 r.?
->> Po przedłużeniu okresu odnowienia usługi (na 1 rok lub na krótszy okres) okres ten zostanie dodany do kolejnej daty wejścia w życie, która będzie widoczna w tabeli "Moje usługi". W Twoim przypadku usługa będzie odnawiana do lipca 2025 roku.
+>> Po przedłużeniu okresu odnowienia usługi (na 1 rok lub na krótszy okres) okres ten zostanie dodany do kolejnej daty wejścia w życie, która będzie widoczna w tabeli "Moje rozwiązania i usługi". W Twoim przypadku usługa będzie odnawiana do lipca 2025 roku.
 > Subskrypcja mojej usługi wygasła 1 stycznia 2024 r. i zapomniałem ją odnowić. Właśnie odnowiłem go 16 stycznia 2024 na 6 miesięcy, ale widzę, że wygaśnie on 1 lipca 2024 roku, a nie 16 lipca 2024. Czy to normalne?
 >> Tak, to normalne, odnawianie rozpoczyna się w dniu wygaśnięcia subskrypcji.
 

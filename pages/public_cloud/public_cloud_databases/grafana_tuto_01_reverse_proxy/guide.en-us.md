@@ -1,15 +1,15 @@
 ---
-title: Grafana - Tutorial - Expose your Grafana in your private network via a reverse proxy NGINX
-excerpt: "Expose your Grafana to internet through a NGINX reverse proxy"
-updated: 2023-02-06
+title: Dashboards - Tutorial - Expose your Dashboards instance in your private network via a reverse proxy NGINX
+excerpt: "Expose your Dashboards instance to internet through a NGINX reverse proxy"
+updated: 2024-12-11
 ---
 
 ## Objective
 
 Public Cloud Databases can be deployed over public network (internet) or private network.
-When using private network, you don't have access by default to monitoring tools we provide as a service, like Public Cloud Databases for Grafana (metrics) or Opensearch (logs).
+When using private network, you don't have access by default to monitoring tools we provide as a service, like Public Cloud Databases for Dashboards (metrics) or Opensearch (logs).
 
-**This guide explains how to expose your managed Grafana to internet through the configuration of a NGINX instance in reverse proxy mode.**
+**This guide explains how to expose your managed Dashboards to internet through the configuration of a NGINX instance in reverse proxy mode.**
 
 Schema concept:
 
@@ -18,14 +18,14 @@ Schema concept:
 > [!warning]
 > OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialist service provider or reaching out to [our community](https://community.ovh.com/en/) if you experience any issues.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialist service provider or reaching out to [our community](/links/community) if you experience any issues.
 >
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/en/public-cloud/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
-- A Grafana database running on your OVHcloud Public Cloud project. ([This guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to create a managed Grafana. If you need more details on the private network configuration use [this guide](/pages/public_cloud/public_cloud_databases/databases_08_vrack))
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](/links/manager)
+- A Dashboards running on your OVHcloud Public Cloud project. ([This guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to create a managed Dashboards. If you need more details on the private network configuration use [this guide](/pages/public_cloud/public_cloud_databases/databases_08_vrack))
 
 ## Instructions
 
@@ -37,7 +37,7 @@ Schema concept:
 
 For this tutorial, we will use an Ubuntu 22.10 image to install NGINX.
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and create a new compute instance in your vRack.
+Log in to your [OVHcloud Control Panel](/links/manager) and create a new compute instance in your vRack.
 If you need to expose your Reverse Proxy to a public network, please select the IP Floating address option.
 
 ### Install NGINX
@@ -96,7 +96,7 @@ server {
 
 ```
 
-Be careful, replace the hostname of the Grafana server ***your-grafana-12345abc-12345abc.database.cloud.ovh.net:443*** by your own.
+Be careful, replace the hostname of the Dashboards server ***your-grafana-12345abc-12345abc.database.cloud.ovh.net:443*** by your own.
 
 Also update the certificates and SSL key. If necessary, you can create them for testing purposes or in a non-productive environment using the following command:
 
@@ -119,16 +119,16 @@ Then force the system to reload the kernel variables:
 sudo sysctl -p
 ```
 
-## Connect to your managed Grafana
+## Connect to your managed Dashboards
 
 Connect to your https reverse proxy server with your browser (accept the SSL certificate if needed). You do have now access to your predefined or customized dashboards.
 
-![Grafana dashboard](images/pcdb-expose-grafana-to-internet-20230208190332776.png)
+![Grafana® dashboard](images/pcdb-expose-grafana-to-internet-20230208190332776.png)
 
 ## We want your feedback!
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/PwPqWUpN8G> and interact directly with the team that builds our databases service!

@@ -476,7 +476,7 @@ Logs Data Platform supports your custom templates. As for indices and aliases, t
 - The prefix of the indices involved in the template MUST start by **`<username>-i-`**, the "\*" character must be after this prefix
 - The alias attached to your template must follow the usual convention: **`<username>-a-<suffix>`**
 
-Here is an exemple of a template for a user **logs-ab-12345**:
+Here is an example of a template for a user **logs-ab-12345**:
 
 ```shell-session
 $ curl -u <username>:<password> -XPUT -H 'Content-Type: application/json' 'https://gra2.logs.ovh.com:9200/_template/template_for_logs-ab-12345_indices' -d '

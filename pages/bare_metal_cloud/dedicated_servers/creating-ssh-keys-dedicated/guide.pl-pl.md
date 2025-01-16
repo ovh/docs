@@ -1,58 +1,74 @@
 ---
-title: Twórz i używaj kluczy SSH
-excerpt: Dowiedz się, jak utworzyć parę kluczy SSH na Twoim komputerze i wykorzystać je do nawiązania bezpiecznego połączenia z serwerem
-updated: 2024-06-26
+title: "Jak tworzyć i używać kluczy uwierzytelniających do połączeń SSH z serwerami OVHcloud"
+excerpt: "Dowiedz się, jak tworzyć pary kluczy OpenSSH na Twoim lokalnym urządzeniu i jak je używać do nawiązywania bezpiecznych połączeń z serwerem dedykowanym lub VPS"
+updated: 2025-01-06
 ---
 
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji” na tej stronie.
->
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Wprowadzenie
 
-Protokół SSH umożliwia korzystanie z bezpiecznego kanału w niezabezpieczonej sieci w architekturze klient-serwer, łączącego klienta SSH z serwerem SSH. Stworzenie zestawu kluczy SSH pozwala na otrzymanie klucza publicznego i prywatnego. Klucz publiczny możesz umieścić na serwerze, a następnie połączyć się z nim za pomocą klienta, który ma odpowiedni klucz prywatny. Jeśli publiczne i prywatne klucze SSH będą zgodne, zalogujesz się bez konieczności podawania hasła.
+Protokół SSH pozwala na ustanowienie bezpiecznego kanału komunikacyjnego w sieciach publicznych w architekturze klient-serwer. Do uwierzytelnienia połączeń SSH między dwoma zaufanymi hostami, takimi jak komputer stacjonarny i serwer zdalny, można użyć par kluczy.
 
-Jest to zazwyczaj najbezpieczniejsza i najwygodniejsza metoda połączenia.
+Zestaw kluczy składa się z klucza publicznego, który można udostępniać, oraz klucza prywatnego, który pozostaje tajny. Umieszczony na serwerze klucz publiczny pozwala każdemu klientowi z odpowiednim kluczem prywatnym na zalogowanie się bez konieczności wprowadzania hasła.
 
-**Ten przewodnik wyjaśnia, jak skonfigurować klucze SSH na urządzeniu lokalnym, aby zabezpieczyć połączenia ze zdalnymi serwerami.**
+Ta metoda komunikacji jest zazwyczaj najlepszym kompromisem między bezpieczeństwem i wygodą.
+
+**Dowiedz się, jak tworzyć pary kluczy uwierzytelniania na urządzeniu lokalnym i zarządzać nimi oraz łączyć się z serwerami zdalnymi.**
 
 ## Wymagania początkowe
 
-- Dostęp do [panelu klienta OVHcloud](/links/manager)
-- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal) lub [VPS](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud
-- Zainstaluj najpierw aplikację klienta SSH (wiersz poleceń lub GUI)
-- Dostęp administratora (sudo) przez SSH
+- Posiadanie [serwera dedykowanego](/links/bare-metal/bare-metal) lub [VPS](/links/bare-metal/vps) na koncie OVHcloud
+- Aplikacja do zdalnego połączenia kompatybilna z protokołem OpenSSH
 
 > [!primary]
-> Ten przewodnik nie dotyczy standardowych instalacji **Windows Server**, ponieważ są one oparte na `Remote Desktop Protocol` (RDP) dla połączeń. Połączenia SSH są natomiast używane w trybie Rescue OVHcloud. Więcej informacji znajduje się w sekcji [Sprawdź również](#gofurther) niniejszego przewodnika.
+> Ten przewodnik nie dotyczy standardowych połączeń z systemami operacyjnymi **Windows Server**, ponieważ domyślnie łączą się one z `Remote Desktop Protocol` (RDP). Połączenia SSH są natomiast używane w trybie Rescue OVHcloud.
+>
+> Więcej informacji znajdziesz w sekcji [Sprawdź również](#gofurther) niniejszego przewodnika.
 >
 
 ## W praktyce
 
-Sprawdź przewodniki "Pierwsze kroki": <a name="getstarted"></a>
+<a name="getstarted"></a>
+
+Sprawdź przewodniki "Pierwsze kroki":
 
 - dla [serwera dedykowanego](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server);
 - dla [serwera dedykowanego z gamy **Eco**](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server-eco);
 - dla serwera [VPS](/pages/bare_metal_cloud/virtual_private_servers/starting_with_a_vps).
 
-Zapoznaj się również z przewodnikiem dotyczącym wprowadzenia do [protokołu SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
+### Tworzenie par kluczy dla połączeń OpenSSH
 
-<a name="create-ssh-key"></a>
+Poniższe instrukcje wyjaśniają, jak tworzyć pary kluczy do zdalnych połączeń za pomocą **OpenSSH** w **wierszu poleceń** i zarządzać nimi. Większość obecnych systemów operacyjnych zawiera tę funkcję bez konieczności instalowania dodatkowego oprogramowania.
 
-### Tworzenie pary kluczy SSH
+Jeśli preferujesz graficzny interfejs użytkownika, istnieje wiele aplikacji dla każdego typu systemu operacyjnego, które umożliwiają łączenie się ze zdalnymi hostami za pomocą protokołu OpenSSH.
 
-Poniższe instrukcje dotyczą dwóch metod użycia kluczy SSH:
+Na przykład [PuTTY](https://putty.org/) to oprogramowanie open source z wieloma przydatnymi funkcjami. Dowiedz się, jak z niego korzystać podczas łączenia się z serwerami OVHcloud, korzystając z naszego szczegółowego tutoriala:
 
-- [Tworzenie pary kluczy **OpenSSH** i łączenie się z serwerem za pomocą klienta SSH z linii poleceń](#openssh)
-- [Utworzenie pary kluczy `PuTTY` i połączenie z serwerem z klienta SSH `PuTTY`](#useputty)
+- [Jak używać PuTTY](/pages/web_cloud/web_hosting/ssh_using_putty_on_windows)
 
-Możesz używać obu metod jednocześnie, ale należy pamiętać, że `PuTTY` przechowuje pliki kluczy w określonym formacie, przez co są one niezgodne z plikami kluczy SSH utworzonymi z klientem **OpenSSH**.
+> [!primary]
+>
+> Jeśli podczas próby logowania otrzymasz komunikat o błędzie, sprawdź, czy ustawienia i informacje o logowaniu są poprawne oraz czy system i zainstalowane aplikacje zostały poprawnie zaktualizowane. Jeśli otrzymasz ostrzeżenie typu `REMOTE HOST IDENTIFICATION HAS CHANGED`, zapoznaj się z naszym [przewodnikiem wprowadzającym do SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
+>
 
-Oznacza to, że klucz prywatny utworzony przy użyciu klienta SSH z linii poleceń należy najpierw przekonwertować na [format `PuTTY` i odwrotnie](https://www.chiark.greenend.org.uk/~sgtatham/putty/faq.html#faq-ssh2-keyfmt){.external}.
+### Konfiguracja par kluczy z dystrybucji GNU/Linux lub macOS
 
-#### Tworzenie pary kluczy SSH z linii poleceń <a name="openssh"></a>
+/// details | Rozwiń tę sekcję
 
-Na komputerze **Mac** lub urządzeniu, na którym zainstalowany jest system operacyjny **Linux**, otwórz aplikację wiersza poleceń (`Terminal`).
+Otwórz aplikację wiersza poleceń (`Terminal`) na lokalnym urządzeniu.
 
 Upewnij się, że masz folder o nazwie `.ssh` w katalogu `$HOME`. Jeśli taki folder nie istnieje, utwórz go:
 
@@ -60,47 +76,45 @@ Upewnij się, że masz folder o nazwie `.ssh` w katalogu `$HOME`. Jeśli taki fo
 mkdir ~/.ssh
 ```
 
-W bieżącym systemie operacyjnym **Windows** otwórz wiersz poleceń, wpisując "cmd" na pasku wyszukiwania (lub otwórz `PowerShell` z menu).
+Aby utworzyć parę kluczy, użyj polecenia `ssh-keygen`. Opcja`-t` umożliwia określenie metody szyfrowania.
 
-Przejdź do katalogu`.ssh` aktywnego użytkownika **Windows** (domyślnie: `C:\Users\WindowsUsername.ssh`):
+> [!primary]
+>
+> `Ed25519` jest uważany za najbezpieczniejszą metodę, ale `RSA` jest wartościową alternatywą. Oba są kompatybilne z Panelem klienta OVHcloud, jeśli chcesz [przechowywać klucze publiczne na Twoim koncie klienta](/pages/bare_metal_cloud/dedicated_servers/import-keys-control-panel).
 
-```powershell
-cd .ssh
-```
-
-<a name="createnewkey"></a>
-Następnie utwórz 4096-bitowy klucz RSA przy użyciu następującego polecenia:
+Przykłady:
 
 ```bash
-ssh-keygen -b 4096
+ssh-keygen -t ed25519 -a 100
 ```
-
-Używając opcji `-t` z tym poleceniem, można określić inną metodę szyfrowania, na przykład:
 
 ```bash
-ssh-keygen -t ed25519 -a 256
+ssh-keygen -t rsa -b 4096 -a 100
 ```
 
-W wierszu polecenia zapisz nowo utworzony klucz w pliku standardowym:
+Poniższy monit służy do nadania nazwy nowo utworzonemu kluczowi lub do użycia standardowej nazwy pliku:
 
 ```console
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user/.ssh/id_rsa):
 ```
 
-Potwierdź klawiszem `Enter`, aby zaakceptować proponowaną nazwę pliku lub wpisać pojedynczą nazwę pliku. Ma to znaczenie, jeśli w katalogu `ssh` umieszczono kilka par kluczy. Więcej informacji na ten temat znajdziesz w sekcji "[Zarządzanie wieloma kluczami SSH na Twoim lokalnym sprzęcie](#multiplekeys)" tego przewodnika.<br>
-W tym przykładzie zastosowano standardowe nazwy plików `id_rsa` i `id_rsa.pub`.
+Jeśli potwierdzisz parametrem `Enter`{.action} bez wpisania nazwy, zostanie użyta standardowa nazwa pliku (`id_rsa` w tym przykładzie).
 
-Możesz zabezpieczyć klucz SSH za pomocą hasła (*passphrase*) podczas następnej operacji. Jest to zalecane w celu zwiększenia bezpieczeństwa.
+Jeśli w przyszłości planowane jest użycie wielu par kluczy, wprowadź indywidualną nazwę pliku w celu zidentyfikowania klucza. Więcej informacji na ten temat można znaleźć poniżej w sekcji **Zarządzanie wieloma kluczami uwierzytelniania na urządzeniu lokalnym**.
+
+Poniższe przykłady wyjściowe będą w dalszym ciągu używać nazw plików `id_rsa` i `id_rsa.pub` w celach ilustracyjnych.
+
+Możesz zabezpieczyć klucz SSH przy użyciu tajnego hasła. Jest to zalecane w celu zwiększenia bezpieczeństwa.
 
 > [!warning]
 >
-> Dostęp zdalny do serwera musi być tak bezpieczny jak urządzenie klienckie przechowujące klucz prywatny. Ochrona urządzenia i plików przed nieautoryzowanym dostępem jest zatem kluczowa w przypadku korzystania z kluczy SSH.
-> 
-> Ze względów wygody i bezpieczeństwa warto skorzystać z managera haseł na Twoim urządzeniu, takiego jak rozwiązanie open source `KeePass`.
-> 
+> W przypadku używania kluczy uwierzytelniających dostęp zdalny do serwera jest równie bezpieczny jak urządzenie klienckie przechowujące klucz prywatny. Dlatego niezwykle ważna jest ochrona urządzenia i zawartych na nim kluczowych plików przed nieuprawnionym dostępem.
+>
+> Dla większej wygody i bezpieczeństwa, przechowuj tajne hasła w menedżerze haseł na swoim urządzeniu, takim jak rozwiązanie open source **KeePass**.
+>
 
-Wszystkie klucze SSH muszą być przechowywane w katalogu`.ssh`. Rozszerzenie `.pub` zostanie dodane do nazw plików kluczy publicznych.
+Domyślnie wszystkie klucze SSH są przechowywane w katalogu `.ssh` Pliki klucza publicznego będą miały `.pub` dodane do nazwy pliku.
 
 ```console
 Your identification has been saved in /home/user/.ssh/id_rsa.
@@ -121,12 +135,13 @@ The key's randomart image is:
 +----[SHA256]-----+
 ```
 
-<a name="publickey"></a>
-
-Aby wyświetlić i wyeksportować klucz publiczny, użyj polecenia `cat` w pliku klucza`.pub`. Skopiuj cały ciąg klucza do schowka, aby go [dodać do serwera](#addserverkey).
+Aby wyświetlić i wyeksportować klucz publiczny, użyj polecenia `cat` w pliku klucza `.pub` lub otwórz go w edytorze tekstu.
 
 ```bash
 cat ~/.ssh/id_rsa.pub
+```
+
+```console
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC8teh2NJ42qYZV98gTNhumO1b6rMYIkAfRVazl
 k6dSS3xf2MXJ4YHsDacdjtJ+evXCFBy/IWgdkFtcvsGAMZ2N1RdvhDyQYcy6NDaJCBYw1K6Gv5fJ
 SHCiFXvMF0MRRUSMneYlidxUJg9eDvdygny4xOdC6c1JrPrSgOc2nQuKeMpOoOWLINIswg1IIFVk
@@ -135,165 +150,22 @@ i4ANmLy7NULWK36yU0Rp9bFJ4o0/4PTkZiDCsK0QyHhAJXdLN7ZHpfJtHIPCnexmwIMLfIhCWhO5
  user@hostname
 ```
 
+Skopiuj ten ciąg klucza, aby [dodać do nowego serwera](#getstarted) lub [zaimportować do panelu klienta](/pages/bare_metal_cloud/dedicated_servers/import-keys-control-panel).
+
 > [!primary]
 >
-> W terminalu **MacOS** polecenia `pbcopy` i `pbpaste` umożliwiają szybsze zarządzanie ciągami klawiszy. Na przykład, użyj tego polecenia, aby skopiować klucz z pliku `id_rsa.pub` do Schowka:
+> W terminalu **macOS** polecenia `pbcopy` i `pbpaste` umożliwiają szybsze zarządzanie ciągami kluczy. Na przykład, użyj tego polecenia, aby skopiować klucz z pliku `id_rsa.pub` do schowka:
 >
 > `pbcopy < ~/.ssh/id_rsa.pub`
 >
 
-W systemie operacyjnym **Windows** otwórz plik za pomocą aplikacji `Notatnik` w Eksploratorze plików (kliknij plik prawym przyciskiem myszy i wybierz opcję Otwórz z) lub użyj jednej z następujących komend (w `\Users\WindowsUsername\.ssh`):
+### Zarządzanie wieloma kluczami uwierzytelniającymi na urządzeniu lokalnym
 
-- `cmd`
+Do łączenia się z różnymi hostami zdalnymi lub urządzeniami sieci lokalnej można używać wielu par kluczy SSH.
 
-```powershell
-more id_rsa.pub
-```
+Ponieważ wszystkie kluczowe pliki muszą znajdować się w folderze`.ssh` katalogu `home` twojego użytkownika, nazwy plików muszą być różne. Podczas tworzenia nowej pary kluczy i żądania nazwy pliku należy wprowadzić wybraną nazwę, na przykład nazwę serwera.
 
-- `powershell`
-
-```powershell
-cat id_rsa.pub
-```
-
-Skopiuj cały ciąg klucza do schowka, aby go [dodać do serwera](#addserverkey).
-
-> [!primary]
->
-> **Korzystanie ze Schowka**
->
-> Podczas pracy w wierszu poleceń **Windows** kliknij prawym przyciskiem myszy, aby **wkleić** zawartość Schowka w oknie wiersza polecenia. Aby **skopiować** ciąg z okna wiersza polecenia, podświetl go myszą, a następnie naciśnij klawisz `Enter`. Funkcje te można również odnaleźć po kliknięciu prawym przyciskiem myszy na pasku menu.
->
-
-#### Utwórz parę kluczy SSH za pomocą polecenia PuTTY <a name="useputty"></a>
-
-[PuTTY](https://putty.org/){.external} to oprogramowanie klienckie SSH open source z graficznym interfejsem użytkownika, dostępne dla **Windows** i innych systemów operacyjnych. Jest dostępne dodatkowe oprogramowanie do tworzenia kluczy SSH: `PuTTY Key Generator` (`PuTTYgen`).
-
-> [!primary]
->
-> Głównym celem `PuTTY` jest zarządzanie połączeniami SSH urządzenia klienckiego **Windows** z serwerem **GNU/Linux**. `PuTTY` przechowuje pliki kluczy w określonym formacie, przez co są niezgodne z plikami kluczy SSH utworzonymi z klientem **OpenSSH** zawartymi natywnie w większości nowoczesnych systemów operacyjnych.
->
-> W razie potrzeby, jak wyjaśniono powyżej w tym przewodniku, klucze wygenerowane w *wierszu poleceń* można [przekonwertować na format `PPK`](https://www.chiark.greenend.org.uk/~sgtatham/putty/faq.html#faq-ssh2-keyfmt), aby używać ich z klientem `PuTTY`. Jeśli chcesz wygodniej korzystać z kluczy SSH, wybierz opcję i zastosuj się do niej (klucze prywatne **OpenSSH** lub klucze prywatne `PuTTY`).
->
-
-Jeśli aplikacja nie jest jeszcze zainstalowana (sprawdź listę aplikacji lub użyj funkcji wyszukiwania), pobierz `PuTTY` z [oficjalnej strony](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html){.external}. Zalecany standardowy pakiet instalacyjny zawiera już `PuTTYgen`, ale jest również dostępny jako plik autonomiczny w witrynie sieci Web.
-
-Otwórz polecenie `PuTTYgen` i wybierz jeden z obsługiwanych algorytmów szyfrowania. W tym przykładzie zastosowano RSA. Wpisz 4096 jako liczbę bitów w prawym dolnym rogu i kliknij przycisk `Generate`{.action}.
-
-![klucz PuTTy](/pages/assets/screens/other/web-tools/putty/puttygen_01.png){.thumbnail}
-
-Przesuwaj kursor myszy swobodnie w obszarze pod paskiem postępu:
-
-![klucz PuTTy](/pages/assets/screens/other/web-tools/putty/puttygen_02.gif){.thumbnail}
-
-Klucz jest gotowy, gdy pasek postępu jest pełny.
-
-![klucz PuTTy](/pages/assets/screens/other/web-tools/putty/puttygen_03.png){.thumbnail}
-
-Skopiuj kompletny ciąg klucza do Schowka, aby go [dodać do serwera](#addserverkey). Zapisz oba klucze jako pliki, klikając odpowiednie przyciski i wprowadzając hasło (*passphrase*), aby je chronić.
-
-> [!warning]
->
-> Dostęp zdalny do serwera musi być tak bezpieczny jak urządzenie klienckie przechowujące klucz prywatny. Ochrona urządzenia i plików przed nieautoryzowanym dostępem jest zatem kluczowa w przypadku korzystania z kluczy SSH.
-> 
-> Ze względów wygody i bezpieczeństwa warto skorzystać z managera haseł na Twoim urządzeniu, takiego jak rozwiązanie open source `KeePass`.
->
-
-Jedną z zalet korzystania z `PuTTY` jest możliwość zapisywania różnych połączeń jako "sesji". Więcej informacji znajdziesz poniżej w sekcji "[Zarządzanie wieloma kluczami SSH na Twoim lokalnym urządzeniu](#puttykeys)".
-
-Aby dowiedzieć się więcej o połączeniach SSH, sprawdź przewodniki [pierwsze kroki](#getstarted)" i nasze wprowadzenie do [protokołu SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
-
-### Dodawanie kluczy SSH do serwera <a name="addserverkey"></a>
-
-#### Transfer kluczy publicznych utworzonych w systemach opartych na GNU/Linux, MacOS lub BSD
-
-Jeśli stworzyłeś pary kluczy SSH w systemie opartym na GNU/Linux, MacOS lub BSD, możesz użyć komendy `ssh-copy-id`, aby dodać publiczne klucze do Twojego serwera.
-
-Narzędzie `ssh-copy-id` kopiuje klucze publiczne do pliku `~/.ssh/authorized_keys` na określonym serwerze zdalnym i w razie potrzeby automatycznie tworzy plik w tym katalogu.
-
-```bash
-ssh-copy-id user@IP_ADDRESS
-```
-
-Domyślnie funkcja `ssh-copy-id` spróbuje przetransferować wszystkie klucze publiczne do katalogu `~/.ssh` użytkownika lokalnego. Jeśli jednak potrzebujesz dodać tylko jeden klucz publiczny, możesz określić ten plik klucza za pomocą opcji `-i` ze ścieżką do pliku:
-
-```bash
-ssh-copy-id -i ~/.ssh/KeyFileName user@IP_ADDRESS
-```
-
-Przykład:
-
-```bash
-ssh-copy-id -i ~/.ssh/VPS_rsa.pub ubuntu@203.0.113.100
-```
-
-Zostanie wyświetlony monit o podanie hasła użytkownika, który otrzyma taką wiadomość, jak poniżej.
-
-```console
-Number of key(s) added: 1
-
-Now try logging into the machine, with:   "ssh 'user@server-ip'"
-and check to make sure that only the key(s) you wanted were added.
-```
-
-Jeśli pojawi się komunikat o błędzie, możesz dodać klucze publiczne ręcznie, wykonując poniższe czynności.
-
-> [!primary]
->
-> Ze względu na obowiązujące zasady bezpieczeństwa para kluczy nie powinna być używana przez wielu użytkowników. Ponieważ każdy użytkownik w systemach GNU/Linux ma własny plik `authorized_keys` w `~/.ssh/`, możesz użyć polecenia `ssh-copy-id`, jak pokazano powyżej, i dostosować `KeyFileName` i `user` po [utworzeniu pary kluczy](#openssh).
->
-
-#### Ręczne dodawanie kluczy publicznych do serwera
-
-[Zaloguj się](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) do Twojego serwera i upewnij się, że znajdujesz się w katalogu`$HOME` Twojego użytkownika. Jeśli taki katalog jeszcze nie istnieje, utwórz folder `.ssh`:
-
-```bash
-mkdir ~/.ssh
-```
-
-Aby zapisać klucz dla bieżącego użytkownika, otwórz (lub utwórz) plik `authorized_keys` w preferowanym edytorze tekstu (w tym przykładzie użyto nano`):
-
-```bash
-nano ~/.ssh/authorized_keys
-```
-
-Wklej [**klucz publiczny**](#publickey) do tego pliku. Zapisz plik i zamknij edytor. Uruchom ponownie serwer  (`sudo reboot`) lub tylko zrestartuj usługę OpenSSH za pomocą jednego z następujących poleceń (odpowiednie polecenie może się różnić w zależności od Twojego systemu operacyjnego):
-
-```bash
-sudo systemctl restart ssh
-```
-
-```bash
-sudo systemctl restart sshd
-```
-
-Aby sprawdzić, czy klucz jest prawidłowo skonfigurowany, zaloguj się do serwera przy użyciu następującego polecenia. Zastąp "user" nazwą użytkownika, dla którego zostały utworzone klucze, oraz "IP_ADDRESS" adresem IP (lub nazwą hosta) serwera, do którego chcesz uzyskać dostęp:
-
-```bash
-ssh user@IP_ADDRESS
-```
-
-Na przykład:
-    
-```bash
-ssh ubuntu@203.0.113.100
-```
-
-### Dodawanie dodatkowych kluczy publicznych do serwera
-
-Aby dodać klucze SSH dla innych użytkowników uzyskujących dostęp do Twojego serwera, powtórz kroki tworzenia klucza, ale użyj odpowiedniego folderu `$HOME` lub katalogu **Windows** `Users` danego użytkownika do tworzenia i przechowywania kluczy SSH (lub uruchom polecenia na urządzeniu dedykowanym tej osoby). Następnie dodaj nowy klucz publiczny do serwera w `authorized_keys`, jak opisano powyżej.
-
-### Usuwanie kluczy publicznych z serwera
-
-Otwórz plik `authorized_keys` [jak opisano powyżej](#addserverkey) i usuń ciąg klucza odpowiadający użytkownikowi, którego dostęp ma zostać odwołany.
-
-Zapisz plik i zamknij edytor.
-
-### Zarządzanie wieloma kluczami SSH na lokalnym sprzęcie <a name="multiplekeys"></a>
-
-Do łączenia się z różnymi zdalnymi hostami można używać wielu par kluczy SSH. Jeśli używasz `PuTTY`, przejdź do [odpowiedniej sekcji](#puttykeys) poniżej.
-
-Ponieważ wszystkie klucze muszą być umieszczone w folderze `ssh` na urządzeniu lokalnym, nazwy plików muszą być różne. Gdy [utworzysz nową parę kluczy](#createnewkey) i zostaniesz poproszony o podanie nazwy pliku, wprowadź wybraną nazwę. Dopasuj go np. do nazwy serwera.
+Przykład wyjścia:
 
 ```console
 Generating public/private rsa key pair.
@@ -303,27 +175,25 @@ Your identification has been saved in /home/user/.ssh/KeyFileName_rsa.
 Your public key has been saved in /home/user/.ssh/KeyFileName_rsa.pub.
 ```
 
-Podczas łączenia się z odpowiednim serwerem określ nazwę pliku klucza, oprócz szczegółów dotyczących użytkownika i serwera:
+Podczas łączenia się z odpowiednim serwerem określ nazwę pliku klucza prywatnego obok szczegółów użytkownika i serwera połączenia:
 
 ```bash
 ssh -i ~/.ssh/KeyFileName user@IP_ADDRESS
 ```
 
-Na przykład:
+Przykład:
 
 ```bash
-ssh -i ~/.ssh/myVPS_rsa ubuntu@203.0.113.100
+ssh -i ~/.ssh/myServer_rsa ubuntu@203.0.113.100
 ```
 
-Jak zostało to przedstawione w poprzednich sekcjach, te same instrukcje będą działać na kliencie **Windows**. Zamień tylko `~/` na ścieżkę folderu użytkownika **Windows**, domyślnie `C:\Users\WindowsUsername\`. Na przykład: `ssh -i C:\Users\Username\.ssh/myVPS_rsa ubuntu@203.0.113.100`.
+#### Użycie pliku "config"
 
-### Użycie pliku "config"
+Alternatywą dla dodania opcji `-i` za każdym razem jest edycja pliku o nazwie `config` w folderze `~/.ssh`. Umożliwia konfigurację szczegółów różnych połączeń (nazwa użytkownika, port, plik klucza, ustawienia opcjonalne, etc.)
 
-Alternatywą dla dodania opcji `-i` za każdym razem jest zmiana pliku o nazwie `config` w folderze `~/.ssh` (`\Users\Username\.ssh` dla **Windows**). Umożliwia konfigurację szczegółów różnych połączeń (nazwa użytkownika, port, plik klucza, ustawienia opcjonalne, etc.)
+Jeśli plik istnieje wewnątrz `.ssh`, prawdopodobnie zawiera już informacje. W zależności od środowiska pracy rozważ utworzenie kopii zapasowej oryginału.
 
-Jeśli ten plik istnieje w lokalizacji `.ssh`, prawdopodobnie zawiera już informacje. W zależności od środowiska pracy rozważ utworzenie kopii zapasowej oryginału.
-
-Przykładowa zawartość katalogu `.ssh`:
+Przykład wyjścia z listy zawartości katalogu` ssh`:
 
 ```bash
 ls ~/.ssh/
@@ -333,72 +203,264 @@ ls ~/.ssh/
 config    id_rsa    id_rsa.pub    known_hosts     known_hosts.old
 ```
 
-Plik `config` pozwala na zapisanie kilku połączeń SSH oraz ich indywidualnych ustawień, oprócz standardowych wartości. Wykorzystanie pełnego potencjału tego pliku może być skomplikowane, ponieważ jest to szczególnie przydatne dla zaawansowanych użytkowników, którzy regularnie zarządzają kilkoma serwerami.
+Plik `config` pozwala na zapisanie kilku połączeń SSH oraz ich indywidualnych ustawień, poza standardowymi wartościami. Wykorzystanie pełnego potencjału tego pliku może być skomplikowane, ponieważ jest to szczególnie przydatne dla zaawansowanych użytkowników, którzy zarządzają kilkoma serwerami.
 
-Poniżej prosty przykład ilustrujący, jak skonfigurować połączenie SSH z serwerem VPS.<br>
+Oto prosty przykład konfiguracji połączenia SSH z serwerem.  
 Otwórz plik i dodaj następujące wiersze u góry:
 
 ```console
-Host vps
+Host dedicated_server
     HostName 203.0.113.100
-    IdentityFile ~/.ssh/myVPS_rsa
+    IdentityFile ~/.ssh/myServer_rsa
 ```
 
-Będziesz mógł następnie zalogować się do VPS jako alias, który określiłeś jako `Host`:
+Użyj poprawnego adresu IP i nazwy pliku klucza. Pierwszy wiersz, rozpoczynający się od `Host`, definiuje nazwę tego połączenia (w tym przykładzie dedicated_server`).
+
+Następnie możesz zalogować się do serwera, zastępując adres IP serwera nazwą aliasu identyfikującą to połączenie (`Host`):
 
 ```bash
-ssh ubuntu@vps
+ssh username@connection_name
 ```
 
-W poprzednim przykładzie określono tylko adres IP serwera i plik klucza, ale można dodać więcej szczegółów. Aby skonfigurować połączenie SSH z drugim serwerem o nazwie użytkownika "rocky", [zmodyfikowany port SSH](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps#changesshport) "49160" oraz klucz prywatny w pliku "myserver_rsa", rozszerz zawartość pliku, jak pokazano w poniższym przykładzie:
+Przykład:
+
+```bash
+ssh ubuntu@dedicated_server
+```
+
+W poprzednim przykładzie określono tylko adres IP serwera i plik klucza, ale można dodać więcej szczegółów.  
+Aby skonfigurować połączenie SSH z drugim zdalnym hostem o nazwie użytkownika "rocky", zmodyfikowanym porcie SSH "49160" i kluczu prywatnym w pliku "myVPS_rsa", rozszerz zawartość pliku, jak pokazano w poniższym przykładzie:
 
 ```console
-Host vps
-    HostName 203.0.113.100
-    IdentityFile ~/.ssh/myVPS_rsa
-
 Host dedicated_server
+    HostName 203.0.113.100
+    IdentityFile ~/.ssh/myServer_rsa
+
+Host vps
     HostName 203.0.113.101
     User rocky
     Port 49160
-    IdentityFile ~/.ssh/myserver_rsa
+    IdentityFile ~/.ssh/myVPS_rsa
 ```
 
-Możesz następnie połączyć się z tym serwerem po wpisaniu:
+Następnie będziesz mógł zalogować się do drugiego hosta wprowadzając:
 
 ```bash
-ssh dedicated_server
+ssh vps
 ```
 
-Więcej informacji znajdziesz na [odpowiedniej stronie `man`](https://manpages.org/ssh_config/5){.external}.
+Więcej informacji na temat pliku `config` można znaleźć na [odpowiedniej stronie `man`](https://manpages.org/ssh_config/5).
 
-### Korzystanie z PuTTY <a name="puttykeys"></a>
+///
 
-Jeśli postępujesz zgodnie z instrukcjami w sekcjach "[Tworzenie pary kluczy SSH za pomocą `PuTTY`](#useputty)" i "[Dodawanie kluczy SSH do serwera](#addserverkey)", dysponujesz parą kluczy pozwalającą na połączenie z serwerem. 
 
-`PuTTY` może zapisać poświadczenia i parametry połączenia SSH jako `Session`. Pozwala to również na łączenie się z różnymi serwerami za pomocą pojedynczych kluczy.
+### Jak skonfigurować pary kluczy na urządzeniu z systemem Windows
 
-Otwórz `PuTTY` i rozwiń podsekcję `SSH` w menu po lewej stronie, następnie kliknij `Auth` i `Credentials`.
+/// details | Rozwiń tę sekcję
 
-![klucz PuTTy](/pages/assets/screens/other/web-tools/putty/puttygen_04.png){.thumbnail}
+Otwórz wiersz polecenia, wpisując "cmd" na pasku wyszukiwania (lub otwórz program PowerShell w menu "Start").
 
-Kliknij przycisk `Browse`{.action} i wybierz plik klucza prywatnego `PuTTY` (`keyfile.ppk`) w folderze, w którym go zapisałeś.
+Otwórz katalog`.ssh` aktywnego konta użytkownika systemu Windows (ścieżka domyślna: `C:\Users\WindowsUsername\.ssh`):
 
-Plik klucza jest teraz skojarzony z bieżącą sesją SSH. Przejdź na `Session` w menu po lewej stronie i wprowadź dane logowania do [logowania do serwera](#getstarted) (`username@IPv4_address`).
 
-Wprowadź nazwę tego połączenia w polu `Saved Sessions` i kliknij `Save`{.action}, aby dodać je do listy.
+```bash
+cd .ssh
+```
 
-![klucz PuTTy](/pages/assets/screens/other/web-tools/putty/puttygen_05.png){.thumbnail}
+Aby utworzyć parę kluczy, użyj polecenia `ssh-keygen`. Opcja `-t` umożliwia określenie metody szyfrowania.
 
-Od tej chwili możesz kliknąć na ten element `session` i otworzyć połączenie z Twoim serwerem. Aby go przetestować, kliknij na `Open`{.action}. Jeśli plik klucza jest chroniony hasłem, wpisz je na tym etapie.
+> [!primary]
+>
+> `Ed25519` jest uważany za najbezpieczniejszą metodę, ale `RSA` jest wartościową alternatywą. Oba są kompatybilne z Panelem klienta OVHcloud, jeśli chcesz [przechowywać klucze publiczne na Twoim koncie klienta](/pages/bare_metal_cloud/dedicated_servers/import-keys-control-panel).
 
-Aby skonfigurować inne połączenie z serwerem, powtórz następujące kroki:
+Przykłady:
 
-- [Utwórz parę kluczy](#useputty).
-- [Dodaj klucz publiczny do swojego serwera](#addserverkey).
-- [Podaj szczegóły dotyczące serwera i dodaj plik klucza do `PuTTY`](#puttykeys).
+```bash
+ssh-keygen -t ed25519 -a 100
+```
 
-## Sprawdź również <a name="gofurther"></a>
+```bash
+ssh-keygen -t rsa -b 4096 -a 100
+```
+
+Poniższy monit służy do nadania nazwy nowo utworzonemu kluczowi lub do użycia standardowej nazwy pliku:
+
+```console
+Generating public/private rsa key pair.
+Enter file in which to save the key (C:\Users\Username/.ssh/id_rsa):
+```
+
+Jeśli potwierdzisz przyciskiem `Enter`{.action} bez podania nazwy, zostanie użyta standardowa nazwa pliku (w tym przykładzie `id_rsa`).
+
+Jeśli w przyszłości planowane jest użycie wielu par kluczy, wprowadź indywidualną nazwę pliku w celu zidentyfikowania klucza. Więcej informacji na ten temat można znaleźć poniżej w sekcji **Zarządzanie wieloma kluczami uwierzytelniania na urządzeniu lokalnym**.
+
+Poniższe przykłady wyjściowe będą w dalszym ciągu używać nazw plików `id_rsa` i `id_rsa.pub` w celach ilustracyjnych.
+
+Możesz zabezpieczyć klucz SSH przy użyciu tajnego hasła. Jest to zalecane w celu zwiększenia bezpieczeństwa.
+
+> [!warning]
+>
+> W przypadku używania kluczy uwierzytelniających dostęp zdalny do serwera jest równie bezpieczny jak urządzenie klienckie przechowujące klucz prywatny. Dlatego niezwykle ważna jest ochrona urządzenia i zawartych na nim kluczowych plików przed nieuprawnionym dostępem.
+>
+> Poufne hasła są przechowywane w menedżerze haseł na Twoim komputerze, np. w rozwiązaniu open source **KeePass**.
+>
+
+Domyślnie wszystkie klucze SSH są przechowywane w katalogu` ssh`. Pliki klucza publicznego będą miały '.pub` dodane do nazwy pliku.
+
+```console
+Your identification has been saved in id_rsa.
+Your public key has been saved in id_rsa.pub.
+The key fingerprint is:
+SHA256:MRk+Y0zCOoOkferhkTvMpcMsYspj212lK7sEauNap user@hostname
+The key's randomart image is:
++---[RSA 4096]----+
+|     .. o        |
+|    . .= o       |
+|   o o  X        |
+|. . . .          |
+|. .=.o .S.       |
+| =o.o.  .   .    |
+|o +   .  . o ..  |
+|.. .  .   oEoo . |
+|o.        .o+oo  |
++----[SHA256]-----+
+```
+
+Możesz otworzyć plik klawiszy za pomocą edytora tekstu (Notepad, Notepad++, itp.). W Eksploratorze plików Windows kliknij plik prawym przyciskiem myszy i wybierz opcję "Otwórz za pomocą".  
+Można także użyć jednej z następujących komend (w katalogu`\Users\WindowsUsername\.ssh`):
+
+- `cmd`
+
+```bash
+more id_rsa.pub
+```
+
+- `powershell`
+
+```bash
+cat id_rsa.pub
+```
+
+Skopiuj ten ciąg klucza, aby [dodać do nowego serwera](#getstarted) lub [zaimportować do panelu klienta](/pages/bare_metal_cloud/dedicated_servers/import-keys-control-panel).
+
+> [!primary]
+>
+> **Korzystanie ze Schowka**
+>
+> Podczas pracy z wiersza polecenia **Windows** kliknij prawym przyciskiem myszy plik **wklej** zawartość Schowka w oknie wiersza polecenia. Aby **skopiować** ciąg z okna wiersza polecenia, podświetl je, a następnie naciśnij klawisz `Enter`{.action}. Funkcje te można również znaleźć, klikając prawym przyciskiem myszy pasek menu w oknie wiersza polecenia.
+>
+
+### Zarządzanie wieloma kluczami uwierzytelniającymi na urządzeniu lokalnym
+
+Do łączenia się z różnymi hostami zdalnymi lub urządzeniami sieci lokalnej można używać wielu par kluczy SSH.
+
+Ponieważ wszystkie kluczowe pliki muszą znajdować się w folderze `.ssh` w katalogu użytkowników systemu Windows, nazwy plików muszą być różne. Gdy tworzysz nową parę kluczy i jest wymagana nazwa pliku, wprowadź wybraną nazwę, na przykład nazwę serwera.
+
+Przykład wyjścia:
+
+```console
+Generating public/private rsa key pair.
+Enter file in which to save the key (C:\Users\Username/.ssh/id_rsa): KeyFileName_rsa
+
+Your identification has been saved in KeyFileName_rsa.
+Your public key has been saved in KeyFileName_rsa.pub.
+```
+
+Podczas łączenia się z odpowiednim serwerem określ nazwę pliku klucza prywatnego obok szczegółów użytkownika i serwera połączenia:
+
+```bash
+ssh -i C:\Users\Username\.ssh/KeyFileName user@IP_ADDRESS
+```
+
+Przykład:
+
+```bash
+ssh -i C:\Users\Username\.ssh/myServer_rsa ubuntu@203.0.113.100
+```
+
+#### Użycie pliku "config"
+
+Alternatywą dla dodania opcji `-i` za każdym razem jest edycja pliku o nazwie `config` wewnątrz folderu `C:\Users\Username\.ssh`. Umożliwia konfigurację szczegółów różnych połączeń (nazwa użytkownika, port, plik klucza, ustawienia opcjonalne, etc.)
+
+Jeśli plik istnieje wewnątrz `.ssh`, prawdopodobnie zawiera już informacje. W zależności od środowiska pracy rozważ utworzenie kopii zapasowej oryginału.
+
+Przykład wyjścia z listy zawartości katalogu `.ssh`:
+
+```bash
+C:\Users\Username\.ssh>dir /B
+```
+
+```console
+config
+id_rsa
+id_rsa.pub
+known_hosts    
+known_hosts.old
+```
+
+Plik `config` pozwala na zapisanie kilku połączeń SSH oraz ich indywidualnych ustawień, poza standardowymi wartościami. Wykorzystanie pełnego potencjału tego pliku może być skomplikowane, ponieważ jest to szczególnie przydatne dla zaawansowanych użytkowników, którzy zarządzają kilkoma serwerami.
+
+Oto prosty przykład konfiguracji połączenia SSH z serwerem.  
+Otwórz plik i dodaj następujące wiersze u góry:
+
+```console
+Host dedicated_server
+    HostName 203.0.113.100
+    IdentityFile ~/.ssh/myServer_rsa
+```
+
+Użyj poprawnego adresu IP i nazwy pliku klucza. Pierwszy wiersz, rozpoczynający się od `Host`, definiuje nazwę tego połączenia (w tym przykładzie `dedicated_server`).
+
+Zaloguj się do serwera, zastępując adres IP serwera nazwą aliasu identyfikującą to połączenie (`Host`):
+
+```bash
+ssh username@connection_name
+```
+
+Przykład:
+
+```bash
+ssh ubuntu@dedicated_server
+```
+
+W poprzednim przykładzie określono tylko adres IP serwera i plik klucza, ale można dodać więcej szczegółów.  
+Aby skonfigurować połączenie SSH z drugim zdalnym hostem o nazwie użytkownika "rocky", zmodyfikowanym porcie SSH "49160" i kluczu prywatnym w pliku "myVPS_rsa", rozszerz zawartość pliku, jak pokazano w poniższym przykładzie:
+
+```console
+Host dedicated_server
+    HostName 203.0.113.100
+    IdentityFile C:\Users\Username\.ssh/myServer_rsa
+
+Host vps
+    HostName 203.0.113.101
+    User rocky
+    Port 49160
+    IdentityFile C:\Users\Username\.ssh/myVPS_rsa
+```
+
+Następnie będziesz mógł zalogować się do drugiego hosta wprowadzając:
+
+```bash
+ssh vps
+```
+
+Więcej informacji na temat pliku `config` można znaleźć na [odpowiedniej stronie `man`](https://manpages.org/ssh_config/5).
+
+///
+
+
+### Dodawanie dodatkowych kluczy publicznych do serwera
+
+Aby dodać uwierzytelnianie za pomocą klucza dla innych użytkowników uzyskujących dostęp do Twojego serwera, utwórz nową parę kluczy, ale użyj odpowiedniego folderu `$HOME` lub **Windows** `Users` danego użytkownika do przechowywania kluczy uwierzytelniających (lub uruchom polecenia na dedykowanym urządzeniu tej osoby).  
+Następnie dodaj nowy ciąg klucza publicznego do serwera w pliku `authorized_keys`, jak opisano powyżej.
+
+### Usuwanie kluczy publicznych z serwera
+
+Otwórz plik `authorized_keys` na Twoim serwerze w sposób opisany powyżej, a następnie usuń ciąg klucza odpowiadający kontu użytkownika, którego dostęp chcesz odwołać.
+
+<a name="gofurther"></a>
+
+## Sprawdź również
 
 [Wprowadzenie do protokołu SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
 
@@ -406,6 +468,8 @@ Aby skonfigurować inne połączenie z serwerem, powtórz następujące kroki:
 
 [Tryb Rescue na serwerze VPS](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 
-Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](/links/professional-services), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](/links/partner).
 
-Dołącz do naszej społeczności użytkowników: <https://community.ovh.com/en/>.
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
+
+Dołącz do [grona naszych użytkowników](/links/community).

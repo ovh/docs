@@ -36,7 +36,7 @@ Un Backup Repository est un espace de stockage où Veeam Backup and Replication 
 
 #### 2.1 - Configuration d'un Backup Repository pour un besoin non-SecNumCloud <a name="nonsecnumcloud"></a>
 
-Dans cette configuration, vous pouvez utiliser un espace de stockage, ainsi qu'un Object Storage S3 pour sécuriser les sauvegardes sur une autre région OVHcloud.
+Dans cette configuration, vous pouvez utiliser un espace de stockage, ainsi qu'un Object Storage pour sécuriser les sauvegardes sur une autre région OVHcloud.
 
 ##### 2.1.1 - Création du Backup Repository
 
@@ -85,7 +85,7 @@ Dans cette configuration, vous pouvez utiliser un espace de stockage, ainsi qu'u
 
 Ce Backup Repository servira à sécuriser vos sauvegardes sur un second espace de stockage, pouvant être hébergé sur une seconde région OVHcloud.
 
-Pour découvrir les étapes de création d'un bucket Object Storage S3, veuillez prendre connaissance des étapes détaillées dans [notre guide](/pages/storage_and_backup/object_storage/s3_create_bucket).
+Pour découvrir les étapes de création d'un bucket Object Storage, veuillez prendre connaissance des étapes détaillées dans [notre guide](/pages/storage_and_backup/object_storage/s3_create_bucket).
 
 > [!tabs]
 > **Étape 1**
@@ -116,17 +116,17 @@ Pour découvrir les étapes de création d'un bucket Object Storage S3, veuillez
 >>
 > **Étape 5**
 >>
->> Entrez le `Service point`{.action} qui correspond à l'endpoint du bucket Object Storage S3, ainsi que la région (en minuscule) de votre bucket Object Storage S3.
+>> Entrez le `Service point`{.action} qui correspond à l'endpoint du bucket Object Storage, ainsi que la région (en minuscule) de votre bucket Object Storage.
 >>
->> Ajoutez les identifiants de l'utilisateur S3 qui possède le rôle `Administrator`{.action} sur ce bucket Object Storage S3. Il s'agit de la clé d'accès et de la clé secrète de l'utilisateur S3 associée au bucket Object Storage S3. Retrouvez plus d'informations sur l'utilisateur S3 dans [notre guide](/pages/storage_and_backup/object_storage/s3_identity_and_access_management).
+>> Ajoutez les identifiants de l'utilisateur Object Storage qui possède le rôle `Administrator`{.action} sur ce bucket Object Storage. Il s'agit de la clé d'accès et de la clé secrète de l'utilisateur Object Storage associée au bucket Object Storage. Retrouvez plus d'informations sur l'utilisateur Object Storage dans [notre guide](/pages/storage_and_backup/object_storage/s3_identity_and_access_management).
 >>
 >> ![backup_repository_s3_5](images/backup_repository_s3_5.png){.thumbnail}
 >>
 > **Étape 6**
 >>
->> Indiquez le nom du bucket Object Storage S3 dans lequel vous souhaitez stocker vos sauvegardes SAP HANA.
+>> Indiquez le nom du bucket Object Storage dans lequel vous souhaitez stocker vos sauvegardes SAP HANA.
 >>
->> Vous devez également indiquer ou créer un répertoire dans ce bucket Object Storage S3.
+>> Vous devez également indiquer ou créer un répertoire dans ce bucket Object Storage.
 >>
 >> ![backup_repository_s3_6](images/backup_repository_s3_6.png){.thumbnail}
 >>
@@ -192,7 +192,7 @@ La création d'un Scale-out Backup Repository permettra de sécuriser vos sauveg
 >>
 > **Étape 8**
 >>
->> Sur votre bucket Object Storage S3, une structure hiérarchique a été générée et configurée par Veeam Backup and Replication.
+>> Sur votre bucket Object Storage, une structure hiérarchique a été générée et configurée par Veeam Backup and Replication.
 >>
 >> ![sbr_no_snc_8](images/sbr_no_snc_8.png){.thumbnail}
 >>
@@ -246,7 +246,7 @@ Dans cette configuration, l'espace de stockage doit également être hébergé s
 
 Pour plus d'informations sur les configurations des Backup Repositories, nous vous invitons à consulter la [documentation de Veeam Backup and Replication](https://helpcenter.veeam.com/docs/backup/vsphere/backup_repository.html?ver=120).
 
-La solution Object Storage S3 n'est pour le moment pas qualifiée SecNumCloud. Elle ne peut donc être utilisée pour héberger vos sauvegardes dans un contexte SecNumCloud.
+La solution Object Storage n'est pour le moment pas qualifiée SecNumCloud. Elle ne peut donc être utilisée pour héberger vos sauvegardes dans un contexte SecNumCloud.
 
 Si vous souhaitez sécuriser vos sauvegardes sur un second Backup Repository, veuillez répéter cette étape. Continuez ce guide avec l'étape [Installation de Veeam Plug-in for SAP HANA](#veeampluginhana), puis suivez le chapitre [Création du Backup Copy job](#backupcopyjob).
 
@@ -443,7 +443,7 @@ Lors de l'exécution des log backups, vous avez la possibilité d'accéder à de
 
 ![log_backup](images/log_backup.png){.thumbnail}
 
-Si vous avez configuré un Scale-out Repository avec un bucket Object Storage S3, vous pouvez observer vos sauvegardes sur votre bucket Object Storage S3.
+Si vous avez configuré un Scale-out Repository avec un bucket Object Storage, vous pouvez observer vos sauvegardes sur votre bucket Object Storage.
 
 ![sbr_s3](images/sbr_s3.png){.thumbnail}
 

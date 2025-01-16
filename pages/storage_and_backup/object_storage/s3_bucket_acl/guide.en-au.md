@@ -5,7 +5,7 @@ updated: 2023-08-09
 
 ## Overview
 
-By default, all resources (buckets, objects) and sub-resources (lifecycle configuration, webite configuration, ...etc) are private in OVHcloud S3 Object Storage. Only the resource owner, i.e the user account that creates it, has full control.
+By default, all resources (buckets, objects) and sub-resources (lifecycle configuration, webite configuration, ...etc) are private in Object Storage. Only the resource owner, i.e the user account that creates it, has full control.
 
 Access to private resources can be granted via access policies.
 
@@ -16,7 +16,7 @@ Access policies can be categorized broadly into 2 types :
 
 ### User based
 
-Access policies attached to a specific user are called user policies. A user policy is evaluated using OVHcloud S3 Object Storage IAM permissions and applies only to the specific user it is attached to.
+Access policies attached to a specific user are called user policies. A user policy is evaluated using Object Storage IAM permissions and applies only to the specific user it is attached to.
 
 ### Resource based
 
@@ -36,7 +36,7 @@ Akin to user policies, a bucket policy controls permissions for a bucket and the
 
 > [!warning]
 >
-> Bucket policies is a feature that is not yet available for OVHcloud S3 Object Storage.
+> Bucket policies is a feature that is not yet available for Object Storage.
 >
 
 ## Manage permissions with ACLs
@@ -301,6 +301,6 @@ You might consider using user policies if you want to set **cross-resource** per
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-au/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
+Join our [community of users](/links/community).

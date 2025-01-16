@@ -13,7 +13,7 @@ Public cloud database engines are managed services, which means that they are no
 > Advanced configuration is available for the following Public Cloud Databases engines :
 >
 > - Cassandra
-> - Grafana
+> - Dashboards
 > - Kafka
 > - Kafka Connect
 > - MySQL

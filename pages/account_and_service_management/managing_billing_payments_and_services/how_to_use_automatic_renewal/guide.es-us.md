@@ -1,12 +1,12 @@
 ---
 title: Gestionar la renovación de los servicios
 excerpt: Descubra cómo gestionar la renovación de los servicios de OVHcloud desde el área de cliente
-updated: 2024-11-12
+updated: 2024-12-23
 ---
 
 ## Objetivo
 
-El menú **Mis servicios** de su área de cliente de OVHcloud le permite consultar el estado de sus servicios, renovarlos, cambiar su tipo de renovación, regularizar las facturas o anticipar su pago.
+El menú **Mis soluciones y servicios** de su área de cliente de OVHcloud le permite consultar el estado de sus servicios, renovarlos, cambiar su tipo de renovación, regularizar las facturas o anticipar su pago.
 
 Esta guía explica cómo:
 
@@ -19,7 +19,7 @@ Esta guía explica cómo:
 
 > [!primary]
 >
-> Tenga en cuenta que —en función de su lugar de residencia y de la legislación vigente, así como de los servicios contratados— es posible que algunas secciones de esta guía sean diferentes o no se apliquen a su caso particular. Para más información, consulte los contratos de OVHcloud desde el [área de cliente](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws): haga clic en su nombre en la esquina superior derecha de su pantalla, en `Productos y servicios`{.action} y, seguidamente, en la pestaña `Contratos`{.action}.
+> Tenga en cuenta que —en función de su lugar de residencia y de la legislación vigente, así como de los servicios contratados— es posible que algunas secciones de esta guía sean diferentes o no se apliquen a su caso particular. Para más información, consulte los contratos de OVHcloud desde el [área de cliente](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws): haga clic en su nombre en la esquina superior derecha de su pantalla, en `Mis soluciones y servicios`{.action} y, seguidamente, en la pestaña `Contratos`{.action}.
 >
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/dfpPCa0mUyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -69,23 +69,23 @@ Antes de continuar leyendo esta guía, debe cumplir los siguientes requisitos:
 ## Procedimiento
 
 Conéctese a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).<br>
-Haga clic en su nombre en la esquina superior derecha y seleccione `Productos y servicios`{.action}.
+Haga clic en su nombre en la esquina superior derecha y seleccione `Mis soluciones y servicios`{.action}.
 
 ![productos y servicios](/pages/assets/screens/control_panel/product-selection/right-column/products-services.png){.thumbnail}
 
 ### Mostrar el tipo de renovación <a name="renewal-type"></a>
 
-La página **Mis servicios** contiene una tabla de gestión de los servicios de OVHcloud. Puede consultar su nombre, el tipo de servicio, la disponibilidad del servicio (`Activo` por defecto), su estado (tipo de renovación, acción a realizar, etc.), la próxima fecha de aplicación de la renovación o de la baja, así como un botón `...`{.action} dedicado a las acciones posibles para cada servicio.
+La página **Gestión de mis soluciones y servicios** contiene una tabla de gestión de los servicios de OVHcloud. Puede consultar su nombre, el tipo de servicio, la disponibilidad del servicio (`Activo` por defecto), su estado (tipo de renovación, acción a realizar, etc.), la próxima fecha de aplicación de la renovación o de la baja, así como un botón `...`{.action} dedicado a las acciones posibles para cada servicio.
 
-![mis servicios](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/my-services-en.png){.thumbnail}
+![mis servicios](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
 
 > [!success]
 > Las herramientas de ordenación, filtrado y búsqueda están disponibles sobre la tabla.
 > Puede ordenar las columnas en orden ascendente o descendente, buscar el nombre de uno de sus servicios o aplicar un filtro para mostrar únicamente algunos de sus servicios según los criterios de su elección.
 >
-> Los criterios de filtrado se mostrarán sobre la tabla. A continuación ofrecemos un ejemplo de filtro que permite ver los dominios cuya renovación es manual y cuya fecha de finalización de la suscripción expira antes de un mes.
+> Los criterios de filtrado se mostrarán sobre la tabla. A continuación ofrecemos un ejemplo de filtro que permite ver los dominios cuya renovación es manual.
 >
->![manageautomaticrenewal](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/filters-en.png){.thumbnail}
+>![manageautomaticrenewal](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/filters-en.png){.thumbnail}
 
 <a name="actions"></a>
 
@@ -98,14 +98,14 @@ La página **Mis servicios** contiene una tabla de gestión de los servicios de 
 
 A la derecha de un servicio, haga clic en el botón `...`{.action} en la columna `Acciones` y seleccione la acción que desee.
 
-![menu actions](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/actions-en.png){.thumbnail}
+![menu actions](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/actions-en.png){.thumbnail}
 
 **Cada acción se detalla en una de las fichas siguientes.**
 
 > [!tabs]
 > **Configurar la renovación**
 >>
->> ![configurar la renovación](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/configure-renewal-en.png){.thumbnail}
+>> ![configurar la renovación](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/configure-renewal-en.png){.thumbnail}
 >>
 >> Haga clic en la acción `Configurar la renovación`{.action}. Según el servicio elegido, puede configurarlo con renovación manual o elegir la frecuencia de renovación automática. En su caso, podrá elegir el tipo de renovación y la frecuencia de la misma.
 >>
@@ -115,7 +115,7 @@ A la derecha de un servicio, haga clic en el botón `...`{.action} en la columna
 >>
 > **Adelantar el pago**
 >>
->> ![anticipar el pago](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/forward-payment-en.png){.thumbnail}
+>> ![anticipar el pago](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/forward-payment-en.png){.thumbnail}
 >>
 >> Esta acción está disponible para los servicios con **renovación automática**.
 >>
@@ -124,9 +124,9 @@ A la derecha de un servicio, haga clic en el botón `...`{.action} en la columna
 >> Puede renovar estos servicios en cualquier momento antes de su expiración, así como elegir la duración de su renovación.
 >> En este caso, el período de validez contratado se sumará al tiempo de validez en curso. No perderá el tiempo de validez restante.
 >>
-> **Cancelar mi compromiso**
+> **Dar de baja mi servicio**
 >>
->> ![dar de baja](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/cancel-en.png){.thumbnail}
+>> ![dar de baja](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancel-en.png){.thumbnail}
 >>
 >> Esta acción está disponible para los servicios configurados en **renovación automática**.
 >>
@@ -136,7 +136,7 @@ A la derecha de un servicio, haga clic en el botón `...`{.action} en la columna
 >>
 > **Renovar el servicio**
 >>
->> ![Renovar el servicio](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/renew-service-en.png){.thumbnail}
+>> ![Renovar el servicio](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/renew-service-en.png){.thumbnail}
 >>
 >> Esta acción solo está disponible para los servicios con **renovación manual**.
 >>
@@ -145,7 +145,7 @@ A la derecha de un servicio, haga clic en el botón `...`{.action} en la columna
 >>
 > **Abonar mi factura**
 >>
->> ![Pagar una factura](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/pay-bill-en.png){.thumbnail}
+>> ![Pagar una factura](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/pay-bill-en.png){.thumbnail}
 >>
 >> Una mención `Factura a pagar` aparece cuando una factura está pendiente de pago y cuando:
 >>
@@ -161,7 +161,7 @@ A la derecha de un servicio, haga clic en el botón `...`{.action} en la columna
 
 Puede realizar acciones agrupadas seleccionando varios servicios en la tabla y haciendo clic en el botón `Acciones`{.action}.
 
-![acciones agrupadas](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/batch-actions-en.png){.thumbnail}
+![acciones agrupadas](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/batch-actions-en.png){.thumbnail}
 
 El siguiente cuadro explica en detalle cuáles son las acciones que pueden agruparse.
 
@@ -196,7 +196,7 @@ El siguiente cuadro explica en detalle cuáles son las acciones que pueden agrup
 >> Si su dominio también ha sido suspendido y ha sido renovado, el plazo puede ser superior y llegar hasta las 48 horas, correspondientes al plazo de propagación DNS.
 >> Para protegerse de la no disponibilidad de acceso a todos sus servicios críticos, le recomendamos que dé prioridad a la renovación automática y que [compruebe periódicamente que sus formas de pago están actualizadas](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).
 > La suscripción de mi servicio expira en julio de 2024. Estamos en enero de 2024 y quiero renovarlo por un año. ¿La suscripción caducará en julio de 2025 o en enero de 2025?
->> Cuando se prorroga la renovación de un servicio (por un período de 1 año o más corto), este período se añade a la siguiente fecha de vigencia que se indica en la tabla "Mis servicios". En su caso, el servicio se renovará hasta julio de 2025.
+>> Cuando se prorroga la renovación de un servicio (por un período de 1 año o más corto), este período se añade a la siguiente fecha de vigencia que se indica en la tabla "Gestión de mis soluciones y servicios". En su caso, el servicio se renovará hasta julio de 2025.
 > La suscripción a mi servicio expiró el 1 de enero de 2024 y se me olvidó renovarlo. Acabo de renovarlo el 16 de enero de 2024 por seis meses, pero constato que expirará el 1 de julio de 2024 y no el 16 de julio de 2024. ¿Es esto normal?
 >> Sí, es normal. La renovación comienza en la fecha de expiración de la suscripción.
 

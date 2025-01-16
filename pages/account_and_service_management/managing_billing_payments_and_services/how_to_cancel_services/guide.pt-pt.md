@@ -1,7 +1,7 @@
 ---
 title: Como cancelar os meus serviços OVHcloud
 excerpt: Descubra como interromper as suas subscrições OVHcloud a partir da Área de Cliente
-updated: 2024-01-19
+updated: 2024-12-23
 ---
 
 ## Objetivo
@@ -47,13 +47,13 @@ No entanto, existem **casos especiais** que são detalhados [mais abaixo](#speci
 
 ### Como cancelar a subscrição <a name="terminate"></a>
 
-Para rescindir a subscrição do seu serviço, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome em cima à direita e, a seguir, clique no botão `Produtos e serviços`{.action}.
+Para rescindir a subscrição do seu serviço, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome em cima à direita e, a seguir, clique no botão `As minhas ofertas e serviços`{.action}.
 
 ![produtos e serviços](/pages/assets/screens/control_panel/product-selection/right-column/products-services.png){.thumbnail}
 
-Clique então no botão `...`{.action} à direita do serviço a rescindir, e depois em `Rescindir o meu compromisso`{.action}.
+Clique então no botão `...`{.action} à direita do serviço a rescindir, e depois em `Rescindir o meu serviço`{.action}.
 
-![Cancelar](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/cancel-en.png){.thumbnail}
+![Cancelar](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancel-en.png){.thumbnail}
 
 Especifique as razões do seu pedido de rescisão e clique em `Validar`{.action}.
 
@@ -64,9 +64,9 @@ Especifique as razões do seu pedido de rescisão e clique em `Validar`{.action}
 > Por isso, não hesite em nos dizer mais sobre a sua experiência pessoal com a OVHcloud através do formulário proposto aquando da rescisão. Agradecemos desde já a sua contribuição para a melhoria dos nossos produtos.
 >
 
-O cancelamento do seu serviço terá lugar na **data de entrada em vigor** indicada na tabela "Os meus serviçoa". Se não vir o estado "Rescisão solicitada" aparecer, atualize a página.
+O cancelamento do seu serviço terá lugar na **data de entrada em vigor** indicada na tabela "Gestão das minhas ofertas e serviços". Se não vir o estado "Rescisão agendada" aparecer, atualize a página.
 
-![pedido de rescisão](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/cancellation-request.png){.thumbnail}
+![pedido de rescisão](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancellation-request.png){.thumbnail}
 
 ### Casos particulares <a name="specific-cases"></a>
 
@@ -125,22 +125,22 @@ Também pode [consultar o seu consumo atual](/pages/public_cloud/compute/analyze
 > Pode anular um pedido de rescisão até 24 horas antes do fim da subscrição.
 >
 
-Para anular um pedido de rescisão, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome no canto superior direito e no botão `Produtos e serviços`{.action}.
+Para anular um pedido de rescisão, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome no canto superior direito e no botão `As minhas ofertas e serviços`{.action}.
 
 A seguir, clique no botão `...`{.action} à direita do serviço que é objeto de um pedido de rescisão e, a seguir, em `Anular a rescisão do serviço`{.action}.
 
-![cancel_terminação](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/cancel_termination.png){.thumbnail}
+![cancel_terminação](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancel_termination.png){.thumbnail}
 
 Por fim, clique em `Confirmar a anulação`{.action}.
 
-A anulação da rescisão produz efeitos imediatos. Atualize a página "O meus Serviços" se continuar a ver o estado "Rescisão solicitada".
+A anulação da rescisão produz efeitos imediatos. Atualize a página "O meus Serviços" se continuar a ver o estado "Rescisão agendada".
 
 ## FAQ
 
 > [!faq]
 >
 > Não consigo cancelar um serviço. O que fazer?
->> Se não conseguir rescindir um serviço (o botão `Rescindir o meu compromisso`{.action} não está disponível), este poderá ser um dos casos particulares detalhados [mais acima neste guia](#specific-cases).
+>> Se não conseguir rescindir um serviço (o botão `Rescindir o meu serviço`{.action} não está disponível), este poderá ser um dos casos particulares detalhados [mais acima neste guia](#specific-cases).
 >> Verifique também se estão preenchidas as seguintes condições:
 >>
 >> - Deve ser o "contacto administradoa" do serviço. Para obter mais informações, consulte [este manual](/pages/account_and_service_management/account_information/managing_contacts#definition).
@@ -153,7 +153,7 @@ A anulação da rescisão produz efeitos imediatos. Atualize a página "O meus S
 > Como eliminar a minha conta OVHcloud?
 >> O encerramento da sua conta de cliente OVHcloud e a eliminação dos seus dados pessoais só é possível se:
 >>
->> 1. Já não tem serviços visíveis na secção [O meus Serviços](https://www.ovh.com/manager/dedicated/#/billing/autoRenew). Caso contrário, deverá começar por solicitar a sua rescisão e aguardar a sua eliminação.
+>> 1. Já não tem serviços visíveis na secção [As minhas ofertas e serviços](https://www.ovh.com/manager/dedicated/#/billing/autoRenew). Caso contrário, deverá começar por solicitar a sua rescisão e aguardar a sua eliminação.
 >> 2. Não possui faturas com pagamento pendente. Caso contrário, deverá proceder ao seu pagamento clicando no botão `Pagar imediatamente`{.action} nas ações de massas da página [As minhas faturas](https://www.ovh.com/manager/#/dedicated/billing/history).
 >> 3. Não possui encomendas em curso. Verifique-o em [esta página](https://www.ovh.com/manager/#/dedicated/billing/orders/orders).
 >> 4. A sua conta pré-paga não é positiva. Verifique-o em [esta página](https://www.ovh.com/manager/#/dedicated/billing/payment/ovhaccount).

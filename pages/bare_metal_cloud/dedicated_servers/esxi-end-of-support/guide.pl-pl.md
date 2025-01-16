@@ -28,7 +28,6 @@ Warto również zapoznać się z [ofertami Hosted Private Cloud proponowanymi pr
 
 - [Zarządzanie serwerem dedykowanym ESXi od pierwszego uruchomienia](/pages/bare_metal_cloud/dedicated_servers/esxi-hardening)
 - [Serwery dedykowane - Partycjonowanie ESXi](/pages/bare_metal_cloud/dedicated_servers/esxi-partitioning) (EN)
-- [Konfiguracja sieci na ESXi w gamie High Grade & Scale](/pages/bare_metal_cloud/dedicated_servers/esxi-network-HG-Scale)
 - [Serwery dedykowane ESXi - FAQ](https://help.ovhcloud.com/csm/en-gb-dedicated-servers-esxi-faq?id=kb_article_view&sysparm_article=KB0056381) (EN)
 
 ## Sprawdź również

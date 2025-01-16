@@ -29,7 +29,7 @@ Przewodnik ten wyjaśnia, jak skonfigurować oprogramowanie Cyberduck, aby móc 
 ## Wymagania początkowe
 
 - Pobierz i zainstaluj [Cyberduck](https://cyberduck.io/).
-- Posiadanie identyfikatorów użytkowników (*OS_USERNAME*) i projektów (*OS_PROJECT_NAME* lub *OS_ANT_NAME*), które można uzyskać, pobierając plik "OpenRC" z menu [Users and Roles](/pages/public_cloud/compute/loading_openstack_environment_variables#etap-1-zgromadzenie-zmiennych) w Twoim [Panelu klienta Public Cloud OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- Posiadanie identyfikatorów użytkowników (*OS_USERNAME*) i projektów (*OS_PROJECT_NAME* lub *OS_ANT_NAME*), które można uzyskać, pobierając plik "OpenRC" z menu [Users and Roles](/pages/public_cloud/compute/loading_openstack_environment_variables#etap-1-zgromadzenie-zmiennych) w Twoim [Panelu klienta Public Cloud OVHcloud](/links/manager).
 - Posiadanie hasła użytkownika OpenStack
 
 Jeśli nie znasz hasła użytkownika OpenStack, możesz je zmienić zgodnie z [tym przewodnikiem](/pages/public_cloud/compute/change_openstack_user_password_in_horizon).
@@ -69,6 +69,6 @@ Kliknij `Połącz`{.action}. Po zalogowaniu będziesz miał dostęp do drzewa sw
 
 [Pierwsze kroki z API Swift](/pages/storage_and_backup/object_storage/pcs_getting_started_with_the_swift_api)
 
-Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
+Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](/links/professional-services), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

@@ -10,8 +10,8 @@ This guide shows how to access Object Storage data from your [**notebooks**](/pa
 
 ## Requirements
 
-- a [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
+- access to the [OVHcloud Control Panel](/links/manager)
 - a Public Cloud user with `Administrator` or `AI Training operator` role, see [here](/pages/public_cloud/ai_machine_learning/gi_01_manage_users) for more information
 
 ## Upload data to your Object Storage
@@ -35,7 +35,7 @@ Let's assume that a file named `my-dataset.zip` exists locally on your computer 
 
 > [!warning]
 >
-> If you choose an S3 solution, please note that they are not yet compatible with our AI products from the Control Panel. **To use S3 buckets, you will need to use [ovhai](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli)**. The Control Panel allows you to use Swift containers only.
+> If you choose an S3* compatible Object Storage solution, please note that they are not yet compatible with our AI products from the Control Panel (UI). **To use S3 compatible buckets, you will need to use [ovhai](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli)**. The Control Panel allows you to use Swift containers only.
 >
 
 If you want to know more about the different storage solutions, refer to this [page](/products/storage-backup).
@@ -85,6 +85,7 @@ You will now see your `my-dataset.zip` file displayed in your object container.
 > [!primary]
 >
 > You can also create a new empty `my-weights` container in which you can save your **connection weights** (or your **validated model**) at the end of your training.
+>
 
 We assume that we now have two object containers available:
 
@@ -113,7 +114,7 @@ You can attach your different types of data to your notebook.
 
 > [!warning]
 >
-> As mentioned before, S3 buckets are not yet compatible with our AI products from the Control Panel. To use S3 solutions, you will need to use [ovhai](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli)**.
+> As mentioned before, S3 compatible buckets are not yet compatible with our AI products from the Control Panel. To use S3 compatible solutions, you will need to use the [ovhai](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) CLI.
 >
 
 #### Access with Read-Only permissions
@@ -183,4 +184,6 @@ Please send us your questions, feedback and suggestions to improve the service:
 
 - On the OVHcloud [Discord server](https://discord.gg/ovhcloud)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ie/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+**\***: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

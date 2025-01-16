@@ -1,7 +1,7 @@
 ---
 title: Configurar a firewall em Linux com iptables
 excerpt: Saiba como proteger um servidor com iptables
-updated: 2024-07-12
+updated: 2024-12-20
 ---
 
 > [!primary]
@@ -34,6 +34,8 @@ As firewalls funcionam definindo regras que regulem o tráfego autorizado e o qu
 > Este guia indica os comandos para uma distribuição Ubuntu Server.
 >
 > Manual para utilização geral. Poderá ter de adaptar alguns comandos consoante a distribuição e/ou o sistema operativo que utiliza. Poderá ser-lhe sugerida a utilização de ferramentas de terceiros. Em caso de dúvidas relacionadas com a sua utilização, consulte a documentação oficial.  
+>
+> A maioria das regras descritas neste guia assume que o seu iptables está configurado por defeito para DROP o tráfego de entrada, e que permite seletivamente o tráfego de entrada. Caso pretenda efetuar outro tipo de configuração, recomendamos que consulte a documentação adicional.
 >
 
 ### Etapa 1: atualizar o sistema

@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Ma base de données est saturée, que faire ?"
 excerpt: "Découvrez comment agir lorsque votre base de données est saturée"
-updated: 2024-12-09
+updated: 2024-12-17
 ---
 
 ## Objectif
@@ -197,6 +197,80 @@ DROP TABLE `table_1`
 ```
 
 > Dans cet exemple, la commande supprime la table **table_1** et l'ensemble des lignes qu'elle contient.
+
+### Etape 4 : Sortir la base de donnée du statut « READ ONLY » (lecture seule)
+
+Nos robots en charge des vérifications des quotas passent très régulièrement sur nos infrastructures.
+S'ils constatent, lors de leur passage sur vos services, que votre base de données n'est plus en **overquota**, ils retirent automatiquement le statut « READ ONLY » (lecture seule).
+Dès lors que vous avez effectué les opérations nécessaires sur votre base de données, il vous suffit donc de patienter jusqu'à ce que nos robots passent sur vos services.
+
+Cependant, vous pouvez forcer leur passage sur vos services pour accélérer le processus. Pour cela, vous devez demander à nos robots de recalculer le quota de votre service/base de données.
+
+#### Recalculer le quota pour une base de données incluse avec votre offre d'hébergement web
+
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **5** étapes.
+
+> [!tabs]
+> **Etape 1**
+>>
+>> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
+>>
+>> ![recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etape 2**
+>>
+>> Cliquez sur le menu déroulant `Hébergements`{.action}, puis choisissez l'hébergement web concerné.
+>>
+>> ![recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/web-hosting-selection.png){.thumbnail}
+>>
+> **Etape 3**
+>>
+>> Sur la page qui s'affiche, cliquez sur l'onglet `Bases de données`{.action}. 
+>>
+>> ![recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/databases.png){.thumbnail}
+>> 
+> **Etape 4**
+>>
+>> Sur la nouvelle page, un tableau contenant vos bases de données créées apparaît. A droite de la base de données concernée, cliquez sur le bouton `...`{.action}, puis sur `Recalculer le quota`{.action}. 
+>>
+>> ![recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota.png){.thumbnail}
+>> 
+> **Etape 5**
+>>
+>> Dans la fenêtre qui s'affiche, cliquez directement sur le bouton `Valider`{.action}.
+>>
+>> ![recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota-validation.png){.thumbnail}
+>>
+>> Une fois lancée, l'opération peut prendre plusieurs minutes. Lorsqu'elle se termine, le statut « READ ONLY » de votre base de données disparaît.
+>> Votre base de données est alors de nouveau pleinement opérationnelle.
+>>
+
+#### Recalculer le quota pour une base de données hébergée sur une solution Web Cloud Databases
+
+Cliquez sur les onglets ci-dessous pour afficher successivement chacune des **3** étapes.
+
+> [!tabs]
+> **Etape 1**
+>>
+>> Connectez-vous à votre [espace client OVHcloud](/links/manager), puis rendez-vous dans la partie `Web Cloud`{.action}.
+>>
+>> ![recalculate quota Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etape 2**
+>>
+>> Cliquez sur le menu déroulant `Web Cloud Databases`{.action}, puis choisissez la solution Web Cloud Databases concernée.
+>>
+>> ![recalculate quota Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/wcdb-server-selection.png){.thumbnail}
+>>
+> **Etape 3**
+>>
+>> Dans le cadre **Informations générales** vous trouverez la mention **Espace utilisé**. Cliquez sur le bouton `...`{.action} à droite puis sur `Rafraîchir le quota de votre base de données`{.action}.
+>>
+>> ![recalculate quota Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/refresh-your-database-quota.png){.thumbnail}
+>>
+>> Une fois lancée, l'opération peut prendre plusieurs minutes. Lorsqu'elle se termine, le statut « READ ONLY » de votre base de données disparaît.
+>> Votre base de données est alors de nouveau pleinement opérationnelle.
+>>
 
 ## Aller plus loin <a name="go-further"></a>
 

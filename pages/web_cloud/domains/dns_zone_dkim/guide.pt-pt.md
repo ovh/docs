@@ -342,8 +342,8 @@ Siga os **5 passos** clicando sucessivamente em cada um dos 5 separadores seguin
 >> Os valores `"status": "toSet"` e `"status": "disabled"` significam que os registos CNAME devem ser configurados. Guarde os 2 valores `cname` num ficheiro de texto e passe à etapa seguinte.
 >>
 > **4. Configurar o registo DNS**
->> A partir de [Área de Cliente OVHcloud](/links/manager), na qual está alojado o nome de domínio do seu serviço de e-mail, no separador `Web Cloud`.{.action}, clique em `Domínios`.{.action} na coluna da esquerda e selecione o domínio em causa.<br>
->> Aceda ao separador `Zona DNS`.{.action} e clique em `Adicionar uma entrada`.{.action} na janela que irá aparecer. Escolha "CNAME" e complete de acordo com os valores que obteve.
+>> A partir de [Área de Cliente OVHcloud](/links/manager), na qual está alojado o nome de domínio do seu serviço de e-mail, no separador `Web Cloud`{.action}, clique em `Domínios`{.action} na coluna da esquerda e selecione o domínio em causa.<br>
+>> Aceda ao separador `Zona DNS`{.action} e clique em `Adicionar uma entrada`{.action} na janela que irá aparecer. Escolha "CNAME" e complete de acordo com os valores que obteve.
 >>
 >> Decompõe-se os valores do exemplo na etapa "**3. Obter o registo DNS**":
 >>

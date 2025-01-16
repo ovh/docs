@@ -1,12 +1,8 @@
 ---
 title: Token-Verwaltung
 excerpt: 'Erfahren Sie hier, wie Sie Token über die Keystone API verwenden'
-updated: 2023-06-15
+updated: 2024-12-10
 ---
-
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
->
 
 ## Ziel
 
@@ -173,6 +169,17 @@ Es wird empfohlen, Bibliotheken (Libraries) zu verwenden, die eine transparente 
 
 Es gibt viele Bibliotheken in verschiedenen Sprachen. Für weitere Informationen überprüfen Sie die [offizielle Liste](https://wiki.openstack.org/wiki/SDKs){.external}.
 
+#### Löschen des Tokens
+
+```bash
+curl -i -X DELETE \
+  -H "X-Auth-Token: $OS_TOKEN" \
+  -H "X-Subject-Token: $OS_TOKEN" \
+  "http://localhost:5000/v3/auth/tokens"
+```
+
+Sie erhalten nur eine Ausgabe, wenn es einen Fehler gibt.
+
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

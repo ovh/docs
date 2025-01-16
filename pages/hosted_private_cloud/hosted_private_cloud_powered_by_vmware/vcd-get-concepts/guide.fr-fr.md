@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - Les concepts fondamentaux de VCD"
 excerpt: "Decouvrez les concepts fondamentaux de VMware Cloud Director"
-updated: 2024-06-10
+updated: 2024-12-19
 ---
 
 ## Objectif
@@ -104,7 +104,7 @@ Retrouvez ci-dessous une comparaison des fonctionnalités fournies par OVHcloud 
 
 | Features                        	 | Standard 	| Advanced 	| Premium 	| Comments                                                                                                                                                                                           	        |
 |-----------------------------------|----------	|----------	|---------	|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Routing & Switching IPv4        	 | ✅        	| ✅        	| ✅       	| Network segments, distributed & non distributed routing, Routed Network with/without NAT BGP/ DHCP/ DNS/ Static routes Cross virtual DC Networking on the same site. Not supported: OSPF, VRF Lite 	        |
+| Routing & Switching IPv4        	 |         	| ✅        	| ✅       	| Network segments, distributed & non distributed routing, Routed Network with/without NAT BGP/ DHCP/ DNS/ Static routes Cross virtual DC Networking on the same site. Not supported: OSPF, VRF Lite 	        |
 | Public IPv4 Range               	 | ✅        	| ✅        	| ✅       	| 	                                                                                                                                                                                                           |
 | Private Network - vRack support   | ✅        	| ✅        	| ✅       	| In Roadmap                                                                                                                                                                                                	 |
 | Routing & Switching IPv6        	 |          	|          	|         	| in Roadmap                                                                                                                                                                                         	        |
@@ -145,6 +145,6 @@ Retrouvez ci-dessous une comparaison des fonctionnalités fournies par OVHcloud 
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

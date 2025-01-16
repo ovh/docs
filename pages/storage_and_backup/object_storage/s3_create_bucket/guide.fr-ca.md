@@ -1,12 +1,12 @@
 ---
 title: "Object Storage - Création d'un bucket"
-excerpt: "Découvrez comment créer un bucket S3 Object Storage depuis votre espace client OVHcloud"
+excerpt: "Découvrez comment créer un bucket Object Storage depuis votre espace client OVHcloud"
 updated: 2024-10-16
 ---
 
 ## Objectif
 
-**Découvrez comment créer un bucket S3 Object Storage depuis votre espace client OVHcloud.**
+**Découvrez comment créer un bucket Object Storage depuis votre espace client OVHcloud.**
 
 > [!primary]
 >
@@ -53,7 +53,7 @@ Vous devez lier un utilisateur au bucket :
 
 ![Link a user](images/object_storage-bucke_creation_step4_1.png)
 
-Pour cela, vous pouvez lier un utilisateur S3 existant :
+Pour cela, vous pouvez lier un utilisateur Object Storage existant :
 
 ![Link a user](images/object_storage-bucke_creation_step4_2.png)
 
@@ -61,9 +61,9 @@ Vous pouvez voir les informations d'identification de l'utilisateur, en cliquant
 
 ![view credentials](images/object_storage-bucke_creation_step4_3.png)
 
-Si vous n'en avez pas déjà un, vous pouvez créer un nouvel utilisateur S3 :
+Si vous n'en avez pas déjà un, vous pouvez créer un nouvel utilisateur Object Storage :
 
-![Create S3 user](images/object_storage-bucke_creation_step4_4.png)
+![Create Object Storage user](images/object_storage-bucke_creation_step4_4.png)
 
 À ce stade, vous pouvez décider d'activer ou non le **versioning**.
 
@@ -71,7 +71,7 @@ Le contrôle de version (*versioning*) vous permet de conserver plusieurs varian
 
 ![Activation du versionning](images/object_storage-bucke_creation_step5.png)
 
-Vous pouvez ensuite décider si vous souhaitez ou non **chiffrer vos données** à l'aide de [SSE-S3 (chiffrement côté serveur avec les clés managées OVHcloud)](/pages/storage_and_backup/object_storage/s3_encrypt_your_objects_with_sse_c).
+Vous pouvez ensuite décider si vous souhaitez ou non **chiffrer vos données** à l'aide de [SSE-OMK (chiffrement côté serveur avec les clés managées OVHcloud)](/pages/storage_and_backup/object_storage/s3_encrypt_your_objects_with_sse_c).
 
 ![Encryption](images/object_storage-bucke_creation_step6.png)
 

@@ -1,7 +1,7 @@
 ---
 title: OpenSearch - Capabilities and Limitations
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for OpenSearch
-updated: 2024-05-27
+updated: 2025-01-07
 ---
 
 ## Objective
@@ -125,7 +125,7 @@ You can further customise your OpenSearch by using advanced parameters. See the 
 
 #### Backups
 
-*Essential* plan clusters are automatically backed up hourly and daily. Backup retention is 24 hours for hourly backups and 2 days for daily backups.
+*Essential* plan clusters are automatically backed up hourly and daily. Backup retention is 24 hours for hourly backups and 3 days for daily backups.
 
 *Business* plan clusters are automatically backed up hourly and daily. Backup retention is 24 hours for hourly backups and 14 days for daily backups.
 
@@ -135,7 +135,7 @@ See the [Automated Backups guide](/pages/public_cloud/public_cloud_databases/dat
 
 #### Logs and metrics
 
-Logs and metrics are available through the Control Panel, API and can be forwarded to Logs Data Platform. Additionally, cross service integration can be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your OpenSearch metrics in Grafana. See the [Cross Service Integration documentation](/pages/public_cloud/public_cloud_databases/databases_07_cross_service_integration) for more information. For more details on logs forwarding, see the [Public Cloud Databases - How to setup logs forwarding](/pages/public_cloud/public_cloud_databases/databases_16_logs_to_customer) guide.
+Logs and metrics are available through the Control Panel, API and can be forwarded to Logs Data Platform. Additionally, cross service integration can be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your OpenSearch metrics in Dashboards. See the [Cross Service Integration documentation](/pages/public_cloud/public_cloud_databases/databases_07_cross_service_integration) for more information. For more details on logs forwarding, see the [Public Cloud Databases - How to setup logs forwarding](/pages/public_cloud/public_cloud_databases/databases_16_logs_to_customer) guide.
 
 - **Logs retention**: 1000 lines of logs
 - **Metrics retention**: 1 calendar month

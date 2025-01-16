@@ -1,13 +1,8 @@
 ---
 title: "vRack Services - Exposing a Managed Service on your vRack"
 excerpt: "Discover how to expose your managed service on the vRack using the vRack Services product and the Service Endpoint feature."
-updated: 2024-11-25
+updated: 2024-12-19
 ---
-
-> [!warning]
-> Usage of vRack Services is currently in Beta phase.
-> This guide may be incomplete and will be extended during the Beta phase. Our team remains available on our dedicated Discord Channel, do not hesitate to join and reach us: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our Network services.
-
 
 ## Objective
 
@@ -474,7 +469,6 @@ Output:
 - Modifying the subnet range will cause an interruption of the associated service endpoints (during the reconfiguration period).
 - The valid VLAN ID range is from 2 to 4094. The value `null` is allowed (no VLAN / untagged).
 - Each subnet address range must be unique for a given vRack Services. Overlaps are detected and discarded when the subnet is created.
-    - During the beta, a maximum of 1 subnet per vRack Services can be defined by the customer.
 - Modifying the VLAN ID will cause an interruption of the associated service endpoints (during the reconfiguration period).
 - Each VLAN ID must be unique for a given vRack Services.
 - The first and last IP addresses of the subnet cannot be used and therefore must not be configured on any of the servers connected to the vRack associated with the vRack Services.

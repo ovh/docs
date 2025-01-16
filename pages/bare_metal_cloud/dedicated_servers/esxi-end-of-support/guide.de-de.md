@@ -28,7 +28,6 @@ Wir empfehlen Ihnen als Alternative auch die [OVHcloud Hosted Private Cloud Ange
 
 - [ESXi Dedicated Server absichern](/pages/bare_metal_cloud/dedicated_servers/esxi-hardening)
 - [Dedicated Server - ESXi-Partitionierung](/pages/bare_metal_cloud/dedicated_servers/esxi-partitioning) (EN)
-- [Netzwerk auf ESXi auf den High Grade & SCALE Reihen konfigurieren](/pages/bare_metal_cloud/dedicated_servers/esxi-network-HG-Scale)
 - [ESXi Dedicated Server - FAQ](https://help.ovhcloud.com/csm/en-gb-dedicated-servers-esxi-faq?id=kb_article_view&sysparm_article=KB0056381) (EN)
 
 ## Weiterführende Informationen

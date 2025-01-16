@@ -1,7 +1,7 @@
 ---
 title: Configuring the firewall on Linux with iptables
 excerpt: Find out how to secure a server with iptables
-updated: 2023-02-27
+updated: 2024-12-20
 ---
 
 ## Objective
@@ -30,6 +30,8 @@ Firewalls work by defining rules that govern both authorised and blocked traffic
 >
 > This guide is for general use. You may need to adapt some commands depending on the distribution and/or operating system you are using. Some tips may suggest using third-party tools. If you have any questions about their use, please refer to their official documentation.
 >
+> Most of the rules outlined in this guide assume that your iptables is configured by default to DROP incoming traffic, and that you selectively authorize incoming traffic. If you intend to set up a different type configuration, we recommend that you consult the additional documentation.
+> 
 
 ### Step 1: Update your system
 

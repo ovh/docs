@@ -1,7 +1,7 @@
 ---
 title: FAQ fatturazione e pagamento
 excerpt: Scopri le domande più frequenti su fatturazione e pagamento
-updated: 2023-06-05
+updated: 2024-12-23
 ---
 
 ## Obiettivo
@@ -29,13 +29,13 @@ Per alcune soluzioni (come domini, hosting Web, VPS e server dedicati) è possib
 
 #### Consigli e suggerimenti
 
-Per consultare lo stato dei servizi e gestire il loro rinnovo, accedi alla sezione `I tuoi servizi`{.action} dello Spazio Cliente.
+Per consultare lo stato dei servizi e gestire il loro rinnovo, accedi alla sezione `Le mie offerte e servizi`{.action} dello Spazio Cliente.
 Per effettuare il rinnovo manuale, accedi alla pagina <https://www.ovh.it/cgi-bin/order/renew.cgi>
 Per maggiori informazioni, consulta la guida [Gestire il rinnovo dei servizi](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
 
 ### Come attivare il rinnovo automatico?
 
-Accedi allo Spazio Cliente e, nel menu di scelta rapida nella parte destra dell’interfaccia, clicca su `Prodotti e servizi`{.action}. Clicca sui tre puntini in corrispondenza del servizio interessato e seleziona l’opzione `Attiva il pagamento automatico`{.action}.
+Accedi allo Spazio Cliente e, nel menu di scelta rapida nella parte destra dell’interfaccia, clicca su `Le mie offerte e servizi`{.action}. Clicca sui tre puntini in corrispondenza del servizio interessato e seleziona l’opzione `Attiva il pagamento automatico`{.action}.
 
 #### Consigli e suggerimenti
 
@@ -44,7 +44,7 @@ Per maggiori informazioni, consulta la guida [Gestire il rinnovo dei servizi](/p
 
 ### Come disattivare il rinnovo automatico?
 
-Accedi allo Spazio Cliente e, nel menu di scelta rapida nella parte destra dell’interfaccia, clicca su `Prodotti e servizi`{.action}. Clicca sui tre puntini in corrispondenza del servizio interessato e seleziona l’opzione `Configura il rinnovo`{.action}. A questo punto è possibile scegliere la modalità manuale. Ricordiamo che questo tipo di rinnovo è disponibile solo per alcuni servizi come domini, hosting Web, VPS e server dedicati.
+Accedi allo Spazio Cliente e, nel menu di scelta rapida nella parte destra dell’interfaccia, clicca su `Le mie offerte e servizi`{.action}. Clicca sui tre puntini in corrispondenza del servizio interessato e seleziona l’opzione `Configura il rinnovo`{.action}. A questo punto è possibile scegliere la modalità manuale. Ricordiamo che questo tipo di rinnovo è disponibile solo per alcuni servizi come domini, hosting Web, VPS e server dedicati.
 
 Per disattivare un servizio, consulta la pagina [Come disattivare un servizio?](#cancelservice)
 
@@ -91,7 +91,7 @@ Se sul conto prepagato OVHcloud è disponibile del credito, verrà utilizzato di
 
 ### Come conoscere la data del prossimo pagamento?
 
-Tutte le date di rinnovo sono disponibili nella sezione `Prodotti e servizi`{.action} dello Spazio Cliente.
+Tutte le date di rinnovo sono disponibili nella sezione `Le mie offerte e servizi`{.action} dello Spazio Cliente.
 
 Ti ricordiamo che le soluzioni con rinnovo automatico vengono in genere rinnovate il primo giorno del mese, ma la frequenza di rinnovo può variare in base al servizio.
 
@@ -143,7 +143,7 @@ I pagamenti eseguiti tramite il nostro sito Web e i prelievi automatici sono ele
 
 ### Come disattivare un servizio? <a name="cancelservice"></a>
 
-Per soluzioni come domini, hosting Web, server dedicati e VPS, accedi alla sezione `Prodotti e servizi`{.action} disponibile nell’interfaccia dello Spazio Cliente OVHcloud. Clicca sui tre puntini in corrispondenza del servizio interessato e seleziona l’opzione `Disattiva il servizio alla data di scadenza`{.action}. Se hai già effettuato la richiesta in precedenza è possibile annullarla cliccando su `Annulla la disattivazione del servizio`{.action}.
+Per soluzioni come domini, hosting Web, server dedicati e VPS, accedi alla sezione `Le mie offerte e servizi`{.action} disponibile nell’interfaccia dello Spazio Cliente OVHcloud. Clicca sui tre puntini in corrispondenza del servizio interessato e seleziona l’opzione `Disattivare il servizio`{.action}. Se hai già effettuato la richiesta in precedenza è possibile annullarla cliccando su `Annulla la disattivazione del servizio`{.action}.
 
 L’operazione diventerà effettiva al termine del periodo di validità o dell’impegno contrattuale relativo al servizio. È possibile effettuare o annullare una richiesta fino a 24 ore prima della scadenza.
 

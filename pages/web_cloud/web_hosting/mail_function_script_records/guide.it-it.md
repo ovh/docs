@@ -1,7 +1,7 @@
 ---
 title: "Gestire l’invio delle email automatiche"
 excerpt: "Questa guida ti mostra come monitorare e gestire le email automatiche inviate da un hosting Web OVHcloud"
-updated: 2024-09-05
+updated: 2024-12-16
 ---
 
 ## Obiettivo
@@ -55,7 +55,7 @@ Visualizzi una serie di informazioni per visualizzare l'attività dell'invio di 
 
 Sulla destra, diversi pulsanti permettono di gestire l'invio di email automatiche dal tuo hosting Web. A seconda dello stato del servizio, alcuni potrebbero non essere disponibili.
 
-- **Elimina le email**: cancella le email presenti nella coda di attesa e sblocca l'invio delle email.
+- **Elimina le email**: cancella le email presenti nella coda di attesa e sblocca l'invio delle email. Per motivi di riservatezza, le email in coda non sono raggiungibili da parte di OVHcloud. È possibile visualizzare queste email solo se sono state precedentemente salvate nel database del sito Web prima di essere inviate.
 - **Email in errore**: permette l'accesso ai log delle ultime email inviate in errore. in cui sono indicati gli indirizzi email associati all’errore. Attenzione: la cronologia non verrà ripristinata anche se decidi di `Blocca l'invio`{.action} o di `Sblocca l'invio`{.action}.
 - **Blocca l'invio**: blocca la distribuzione dell'invio delle email automatiche dal tuo hosting Web. Le email generate dai tuoi script dopo il blocco non saranno inviate, ma conservate in coda per un massimo di 72 ore.
 - **Sblocca l'invio**: sblocca l'invio delle email automatiche dal tuo hosting Web. Le email in coda verranno rimesse in distribuzione.
@@ -96,6 +96,20 @@ Se ricevete correttamente il messaggio *The email has been sent successfully!* s
 - **Verifica la dimensione totale della tua email**: L'email inviata non deve superare la dimensione totale di **10 MB** (inclusa incapsulazione e intestazione). Il contenuto stesso della tua email non dovrà quindi superare i **7/8 MB**.
 
 ### gestire gli stati "Non attivo", "Bounce" e "SPAM"
+
+In questa sezione sono disponibili i dettagli di ogni stato che ha bloccato la funzionalità email.
+
+> [!warning]
+>
+> Prima di descrivere nei dettagli ogni stato, è necessario comprendere i punti che possono danneggiare la reputazione del dominio o impedire la ricezione delle email.
+>
+> Verificare quanto segue:
+>
+> - la configurazione del [record SPF](/pages/web_cloud/domains/dns_zone_spf) nella zona DNS del nome di dominio.
+> - la configurazione di [il record DMARC](/pages/web_cloud/domains/dns_zone_dmarc) nella zona DNS del nome di dominio, **solo se il server di destinazione lo richiede**.
+> - Verifica la reputazione dell'indirizzo IP che invia ([quella del tuo hosting Web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_ip)), utilizzando uno strumento come [MXtoolbox](https://mxtoolbox.com/) o [Spamhaus](https://check.spamhaus.org/).
+> - L'email non contiene elementi che possono essere interpretati come SPAM. Per maggiori informazioni, consulta la sezione "[Caso 3: Invio di email legittime considerate come SPAM](#elements-list-spam)" di questa guida.
+> - In caso di assenza di blocco da parte di OVHcloud e se l’email non è stata ricevuta o rifiutata dal destinatario, contatta il destinatario per chiedere di verificare se l’email è stata bloccata a livello del server di destinazione.
 
 #### Lo stato "Non attivo"
 
@@ -158,7 +172,7 @@ Clicca su `Rimuovi le email`{.action}, cancella tutte le email dalla coda di att
 
 In questo caso è necessario effettuare un spurgo per cancellare gli SPAM in attesa di invio.
 
-- **Caso 3: Invio di email legittime considerate SPAM**:
+- **Caso 3: Invio di email legittime considerate SPAM**: <a name="elements-list-spam"></a>
 
 Se all'origine delle email che hanno causato il blocco, trovi qui di seguito alcuni esempi di**modalità da evitare** durante l'invio di un'email (in modo che non sia considerato troppo "facilmente" come SPAM):
 

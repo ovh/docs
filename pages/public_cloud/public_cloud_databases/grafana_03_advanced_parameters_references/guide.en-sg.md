@@ -1,7 +1,7 @@
 ---
-title: Grafana - Advanced parameters references
-excerpt: This guide lists all the supported advanced parameters that allow you to configure your Public Cloud Databases for Grafana according to your use cases
-updated: 2023-02-06
+title: Dashboards - Advanced parameters references
+excerpt: This guide lists all the supported advanced parameters that allow you to configure your Public Cloud Databases for Dashboards according to your use cases
+updated: 2024-12-11
 ---
 
 <style>
@@ -29,13 +29,13 @@ updated: 2023-02-06
 
 ## Objective
 
-This guide lists all the supported advanced parameters that allow you to configure your Public Cloud Databases for Grafana according to your use cases.
+This guide lists all the supported advanced parameters that allow you to configure your Public Cloud Databases for Dashboards according to your use cases.
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/en-sg/public-cloud/) in your OVHcloud account   
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - A database running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)   
-- Access to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) or to the [OVHcloud API](https://api.ovh.com/console/)   
+- Access to your [OVHcloud Control Panel](/links/manager) or to the [OVHcloud API](/links/api)
 
 ## Instructions
 
@@ -48,9 +48,9 @@ This guide lists all the supported advanced parameters that allow you to configu
 
 Please refer to this [guide](/pages/public_cloud/public_cloud_databases/databases_03_advanced_configuration#using-api) to find out how to change your advanced parameters from the OVHcloud API.
 
-### Advanced parameters for Grafana
+### Advanced parameters for Dashboards
 
-Below you can find a summary of every configuration option available for Grafana service:
+Below you can find a summary of every configuration option available for Dashboards service:
 
 | | |
 |---|---|
@@ -101,6 +101,6 @@ Below you can find a summary of every configuration option available for Grafana
 
 Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-sg/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

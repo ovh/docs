@@ -43,7 +43,7 @@ Questo metodo rappresenta in genere il miglior compromesso tra sicurezza e prati
 
 ### Creazione di coppie di chiavi per le connessioni OpenSSH
 
-Nelle istruzioni seguenti viene descritto come creare e gestire coppie di chiavi per connessioni remote con **OpenSSH** dalla riga di comando. La maggior parte dei sistemi operativi esistenti include questa funzionalità senza la necessità di installare software aggiuntivo.
+Nelle istruzioni seguenti viene descritto come creare e gestire coppie di chiavi per connessioni remote con **OpenSSH** dalla **riga di comando**. La maggior parte dei sistemi operativi esistenti include questa funzionalità senza la necessità di installare software aggiuntivo.
 
 Se si preferisce un'interfaccia utente grafica, è possibile trovare numerose applicazioni software per ogni tipo di sistema operativo che consentono di connettersi a host remoti tramite il protocollo OpenSSH.
 
@@ -361,7 +361,7 @@ Your public key has been saved in KeyFileName_rsa.pub.
 Quando ci si connette all'istanza corrispondente, specificare il nome del file della chiave privata oltre ai dettagli dell'utente e del server di connessione:
 
 ```bash
-ssh -i C:\Users\Username\.ssh/KeyFileName" user@IP_ADDRESS
+ssh -i C:\Users\Username\.ssh/KeyFileName user@IP_ADDRESS
 ```
 
 Esempio:

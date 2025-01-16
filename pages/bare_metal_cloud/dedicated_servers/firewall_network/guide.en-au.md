@@ -1,8 +1,9 @@
 ---
 title: Enabling and configuring the Edge Network Firewall
 excerpt: Find out how to configure the Edge Network Firewall for your services
-updated: 2024-01-05
+updated: 2024-12-16
 ---
+
 ## Objective
 
 To protect customer services exposed on public IP addresses, OVHcloud offers a stateless firewall that is configured and integrated into the **Anti-DDoS infrastructure**: the Edge Network Firewall. It allows to limit service exposure to DDoS attacks, by dropping specified network flows coming from outside of the OVHcloud network.
@@ -33,6 +34,11 @@ To protect customer services exposed on public IP addresses, OVHcloud offers a s
 The Edge Network Firewall reduces exposure to network DDoS attacks by allowing users to copy some of the server's firewall rules to the edge of the OVHcloud network. This blocks incoming attacks as close to their source as possible, reducing the risk of saturating server resources or rack connections in the event of major attacks.
 
 ### Enabling Edge Network Firewall
+
+> [!primary]
+>
+> To date, this feature is only available for IPv4 addresses.
+>
 
 > [!primary]
 >

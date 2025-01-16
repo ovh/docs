@@ -26,7 +26,7 @@ Se non conosci la gestione dello storage da riga di comando, alcune soluzioni gr
 ## Prerequisiti
 
 - Scarica e installa [Cyberduck](https://cyberduck.io/).
-- Disporre delle credenziali utente (*OS_USERNAME*) e progetto (*OS_PROJECT_NAME* o *OS_TENANT_NAME*) è possibile scaricare il file "OpenRC" nel menu [Users and Roles](/pages/public_cloud/compute/loading_openstack_environment_variables#step-1-recupera-le-variabili) dallo [Spazio Cliente Public Cloud OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+- Disporre delle credenziali utente (*OS_USERNAME*) e progetto (*OS_PROJECT_NAME* o *OS_TENANT_NAME*) è possibile scaricare il file "OpenRC" nel menu [Users and Roles](/pages/public_cloud/compute/loading_openstack_environment_variables#step-1-recupera-le-variabili) dallo [Spazio Cliente Public Cloud OVHcloud](/links/manager).
 - Disporre della password utente OpenStack
 
 Per modificare la password utente OpenStack, consulta [questa guida](/pages/public_cloud/compute/change_openstack_user_password_in_horizon).
@@ -66,6 +66,6 @@ Clicca su `Connetti`{.action}. Una volta effettuato l'accesso, visualizzerai i d
 
 [Come utilizzare l'API Swift](/pages/storage_and_backup/object_storage/pcs_getting_started_with_the_swift_api)
 
-Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](https://www.ovhcloud.com/it/professional-services/) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
+Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](/links/professional-services) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

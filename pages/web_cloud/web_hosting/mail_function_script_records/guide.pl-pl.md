@@ -1,7 +1,7 @@
 ---
 title: "Monitoring i zarządzanie automatycznymi wiadomościami e-mail na Twoim hostingu"
 excerpt: "Dowiedz się, jak monitorować i zarządzać automatycznymi wiadomościami e-mail wysyłanymi z hostingu OVHcloud"
-updated: 2024-09-05
+updated: 2024-12-16
 ---
 
 ## Wprowadzenie 
@@ -55,7 +55,7 @@ Na stronie wyświetla się kilka informacji umożliwiających wyświetlenie akty
 
 Po prawej stronie możesz zarządzać wysyłką automatycznych wiadomości e-mail z Twojego hostingu. Niektóre z nich mogą nie być dostępne w zależności od statusu usługi.
 
-- **Usuń wiadomości e-mail** : usuwa wiadomości e-mail oczekujące w kolejce i odblokowuje wysyłkę e-maili.
+- **Usuń wiadomości e-mail** : usuwa wiadomości e-mail oczekujące w kolejce i odblokowuje wysyłkę e-maili. Ze względu na konieczność zachowania poufności informacji, dostęp do wiadomości e-mail oczekujących w kolejce jest niemożliwy po stronie OVHcloud. Możesz wyświetlić te e-maile tylko wtedy, gdy zostały wcześniej zapisane w bazie danych Twojej strony WWW przed wysłaniem.
 - **E-maile z błędami** : umożliwia dostęp do logów ostatnich e-maili z błędami podczas wysyłki. Na tej stronie znajdziesz adresy e-mail, których dotyczy powiązany z nimi błąd. Uwaga, ta historia nie zostanie zresetowana, nawet jeśli zdecydujesz się na `Usuń wiadomości e-mail`{.action} lub `Odblokuj wysyłkę`{.action}.
 - **Blokuj wysyłkę** : blokuje dystrybucję automatycznych wiadomości e-mail wysyłanych z Twojego hostingu. Wiadomości e-mail generowane przez Twoje skrypty po zablokowaniu będą czekały w kolejce przez 72 godziny.
 - **Odblokuj wysyłkę** : odblokuj wysyłkę automatycznych wiadomości e-mail z Twojego hostingu. Wiadomości oczekujące w kolejce zostaną ponownie przydzielone do dystrybucji.
@@ -96,6 +96,20 @@ Jeśli otrzymasz wiadomość *The e-mail has been sent successfully!* na adres e
 - **Sprawdź całkowity rozmiar wiadomości e-mail**: Wysłany e-mail nie może przekraczać całkowitego rozmiaru **10 MB** (w tym kapsułka i nagłówek). Treść Twojej wiadomości e-mail nie powinna zatem przekraczać **7/8 MB**.
 
 ### Zarządzaj statusami "Nieaktywny", "Bounce" i "SPAM"
+
+W tej części znajdziesz szczegółowe informacje o każdym stanie, który spowodował zablokowanie Twojej funkcji e-mail.
+
+> [!warning]
+>
+> Zanim wyszczególnisz każdy z tych statusów, musisz zrozumieć punkty, które mogą pogorszyć reputację Twojej domeny lub zablokować otrzymywanie e-maili.
+>
+> Zweryfikuj z wyprzedzeniem następujące elementy:
+>
+> - Konfiguracja [rekordu SPF](/pages/web_cloud/domains/dns_zone_spf) w strefie DNS domeny.
+> - Konfiguracja [rekordu DMARC](/pages/web_cloud/domains/dns_zone_dmarc) w strefie DNS domeny, **tylko, jeśli serwer docelowy tego wymaga**.
+> - Sprawdź reputację adresu IP, z którego została wysłana wiadomość (w Twoim przypadku to adres [hosting](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_ip)), za pomocą narzędzi takich jak [MXtoolbox](https://mxtoolbox.com/) lub [Spamhaus](https://check.spamhaus.org/).
+> - E-mail nie zawiera elementów, które można zinterpretować jako SPAM. Lista tych elementów znajduje się w części "[Przypadek nr 3: Wysyłanie legalnych wiadomości e-mail uznanych za SPAM](#elements-list-spam)" niniejszego przewodnika.
+> - Jeśli e-mail nie został zablokowany przez OVHcloud i nie został odebrany lub odrzucony przez odbiorcę, skontaktuj się z adresatem, aby sprawdzić, czy wiadomość nie została zablokowana na serwerze poczty przychodzącej.
 
 ### Stan "Nieaktywny"
 
@@ -158,7 +172,7 @@ Następnie kliknij polecenie `Czyszczenie e-maili`{.action}, usunie wszystkie e-
 
 W tym przypadku obowiązkowe jest czyszczenie SPAM oczekujących na wysyłkę.
 
-- **Przypadek nr 3: Wysyłka prawidłowych wiadomości e-mail uznanych za SPAM**:
+- **Przypadek nr 3: Wysyłka prawidłowych wiadomości e-mail uznanych za SPAM**: <a name="elements-list-spam"></a>
 
 Poniżej znajdziesz kilka przykładów użycia **sposobów, których należy unikać** podczas wysyłania wiadomości e-mail (aby nie był on uważany za zbyt "łatwy" jako SPAM):
 

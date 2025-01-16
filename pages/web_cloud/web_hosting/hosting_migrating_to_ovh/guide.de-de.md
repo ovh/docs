@@ -1,7 +1,7 @@
 ---
 title: "Migration Ihrer Website und zugehörigen Dienste zu OVHcloud"
 excerpt: "Erfahren Sie hier, wie Sie Ihre Website, Ihren Domainnamen, Ihre Datenbank und E-Mails ohne Dienstunterbrechung zu OVHcloud migrieren"
-updated: 2024-06-24
+updated: 2025-01-08
 ---
 
 ## Ziel
@@ -204,7 +204,7 @@ Wiederholen Sie den Vorgang für alle Ihre E-Mail-Accounts.
 > Wenn Ihre E-Mail-Accounts als "POP" ohne Aufbewahrung von E-Mail-Kopien auf Ihrem E-Mail-Server konfiguriert sind oder wenn Sie E-Mails haben, die nur lokal auf Ihrem Gerät gespeichert sind, kommt nur **Option 2** in Frage.
 >
 
-**Option 2**: Backup des Inhalts Ihrer E-Mail-Accounts mithilfe einer E-Mail-Software (Outlook, Mac Mail, etc.) durchführen, Ihr E-Mail-Programm neu einrichten und das Backup in Ihre neuen OVHcloud E-Mail-Accounts importieren.
+**Option 2**: Backup des Inhalts Ihrer E-Mail-Accounts mithilfe einer E-Mail-Software (Outlook, Mac Mail, etc.) durchführen, Ihr E-Mail-Programm neu einrichten und das Backup in Ihre neuen OVHcloud E-Mail-Accounts importieren. Weitere Informationen finden Sie in unserer Anleitung „[Ihre E-Mail-Adresse manuell migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)“.
 
 ### Schritt 8: Ihre E-Mail-Software rekonfigurieren <a name="step8"></a>
 

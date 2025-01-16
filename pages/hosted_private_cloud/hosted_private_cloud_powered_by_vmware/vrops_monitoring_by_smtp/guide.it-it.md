@@ -21,7 +21,7 @@ The first step is to open a *flow* on the OVHcloud API to enable vROps to commun
 
 You can check that the flow has been opened using this [endpoint](https://api.ovh.com/console/#/dedicatedCloud/%7BserviceName%7D/vrops/outgoingFlow/%7BoutgoingFlowId%7D~GET).
 
-To do this, use the following API call :
+To do this, use the following API call:
 
 > [!api]
 >
@@ -46,7 +46,7 @@ To do this, go to the `Configure` section, then the `Alerts`{.action} section.
 
 ![Panel Alert](images/vrops_alerts_pannel.png)
 
-Several types of alerts are available, just select `Outbound Settings`.{.action}.
+Several types of alerts are available, just select `Outbound Settings`{.action}.
 
 ![Panel Alert2](images/vrops_alert_menu2.png)
 

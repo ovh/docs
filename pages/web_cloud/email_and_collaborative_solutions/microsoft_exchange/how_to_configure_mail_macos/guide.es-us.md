@@ -13,10 +13,6 @@ max-height:600px!importante;
 }
 </style>
 
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
->
-
 ## Objetivo
 
 Es posible configurar sus cuentas Exchange en el cliente de correo electrónico que usted utilice, siempre que sea compatible. para poder acceder a ellas desde cualquiera de sus dispositivos. La aplicación Mail en macOS está disponible gratuitamente en todos los Mac.
@@ -55,25 +51,25 @@ Es posible configurar sus cuentas Exchange en el cliente de correo electrónico 
 > [!tabs]
 > **Paso 1**
 >> Seleccione `Exchange`{.action}<br><br>
->>![mailmac](images/mail-mac-exchange01.png){.thumbnail .w-400 .h-600}
->>>
+>> ![mailmac](images/mail-mac-exchange01.png){.thumbnail .w-400 .h-600}
+>>
 > **Paso 2**
 >> Introduzca el **Nombre** de su cuenta de correo electrónico y su **Dirección de correo electrónico** y haga clic en `Iniciar sesión`{.action} <br><br>
->>![mailmac](images/mail-mac-exchange02.png){.thumbnail .w-400 .h-600}
->>>
+>> ![mailmac](images/mail-mac-exchange02.png){.thumbnail .w-400 .h-600}
+>>
 > **Paso 3**
 >> En la siguiente ventana, haga clic en `Configuración manual`{.action}: <br><br>- Defina el **Nombre** que se mostrará en la interfaz de navegación <br>- Deje su **dirección de correo electrónico**<br>- Deje su **Contraseña** introducida <br><br>Para finalizar la configuración, haga clic en `Conectar`{.action} <br><br>
->>![mailmac](images/mail-mac-exchange03.png){.thumbnail .w-400 .h-600}
->>>
+>> ![mailmac](images/mail-mac-exchange03.png){.thumbnail .w-400 .h-600}
+>>
 > **Paso 4**
 >> Escriba: <br><br>- Dirección de correo electrónico: deje su dirección de correo electrónico completa<br>- Nombre de usuario: deje su dirección de correo electrónico completa <br>- Contraseña: deje su **contraseña**<br> - URL interna: **ex?.mail.ovh.net** (sustituya el **?** por [el número de su servidor Exchange](#addaccount))<br>- URL externa: **ex?.mail.ovh.net** (sustituya el **?*** por [el número de su servidor Exchange](#addaccount))<br><br>
->>>
+>>
 >> > [!warning]
->>>
+>> >
 >> > Es normal que aparezca el mensaje en rojo «**No se puede comprobar el nombre o la contraseña de la cuenta**» la primera vez que aparece la ventana. Sin embargo, si este mensaje persiste después de la validación, significa que la información introducida es incorrecta.<br><br>
->>>
->>![mailmac](images/mail-mac-exchange04.png){.thumbnail .w-400 .h-600}
->>>
+>>
+>> ![mailmac](images/mail-mac-exchange04.png){.thumbnail .w-400 .h-600}
+>>
 > **Paso 5**
 >> Además de sus mensajes de correo, puede seleccionar otras funcionalidades Exchange que desea gestionar desde su Mac. <br><br>![mailmac](images/mail-mac-exchange05.png){.thumbnail .w-400 .h-600}
 

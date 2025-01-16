@@ -1,12 +1,12 @@
 ---
 title: Como renovar os meus serviços OVHcloud
 excerpt: Saiba como gerir os seus serviços e a sua renovação na sua Área de Cliente
-updated: 2024-11-12
+updated: 2024-12-23
 ---
 
 ## Objetivo
 
-O menu **Os meus serviços** da sua Área de Cliente OVHcloud permite-lhe verificar o estado dos seus serviços, renová-los, alterar o tipo de renovação, regularizar faturas ou antecipar o pagamento.
+O menu **As minhas ofertas e serviços** da sua Área de Cliente OVHcloud permite-lhe verificar o estado dos seus serviços, renová-los, alterar o tipo de renovação, regularizar faturas ou antecipar o pagamento.
 
 Este manual permitir-lhe-á:
 
@@ -19,7 +19,7 @@ Este manual permitir-lhe-á:
 
 > [!primary]
 >
-> Em função do seu local de residência, da legislação local, assim como das soluções em questão, alguns pormenores deste guia podem variar ou não se aplicar à sua situação. Para mais informações, consulte os contratos da OVHcloud a partir da sua [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt): clique no seu nome no canto superior direito do seu ecrã, na `Produtos e serviços`{.action} e, a seguir, no separador `Contratos`{.action}.
+> Em função do seu local de residência, da legislação local, assim como das soluções em questão, alguns pormenores deste guia podem variar ou não se aplicar à sua situação. Para mais informações, consulte os contratos da OVHcloud a partir da sua [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt): clique no seu nome no canto superior direito do seu ecrã, na `As minhas ofertas e serviços`{.action} e, a seguir, no separador `Contratos`{.action}.
 >
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/dfpPCa0mUyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -71,23 +71,23 @@ Antes de continuar a ler este guia, deve preencher as seguintes condições:
 ## Instruções
 
 Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).<br>
-Clique no seu nome no canto superior direito e escolha `Produtos e serviços`{.action}.
+Clique no seu nome no canto superior direito e escolha `As minhas ofertas e serviços`{.action}.
 
 ![produtos e serviços](/pages/assets/screens/control_panel/product-selection/right-column/products-services.png){.thumbnail}
 
 ### Apresentar o tipo de renovação <a name="renewal-type"></a>
 
-A página **Os meus serviços** contém uma tabela de gestão dos seus serviços OVHcloud. Nele, pode encontrar os nomes, o tipo de serviço, a disponibilidade do serviço (`Ativo` por defeito), o seu estado (tipo de renovação, ação a realizar, etc.), a próxima data de efeito da renovação ou da rescisão, bem como um botão `...`{.action} dedicado às ações possíveis para cada serviço.
+A página **Gestão das minhas ofertas e serviços** contém uma tabela de gestão dos seus serviços OVHcloud. Nele, pode encontrar os nomes, o tipo de serviço, a disponibilidade do serviço (`Ativo` por defeito), o seu estado (tipo de renovação, ação a realizar, etc.), a próxima data de efeito da renovação ou da rescisão, bem como um botão `...`{.action} dedicado às ações possíveis para cada serviço.
 
-![Os meus serviços](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/my-services-en.png){.thumbnail}
+![Os meus serviços](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
 
 > [!success]
 > Estão disponíveis ferramentas de ordenação, filtragem e pesquisa por cima da tabela.
 > Pode ordenar as colunas na ordem crescente ou decrescente, procurar o nome de um dos seus serviços ou aplicar um filtro para apresentar apenas alguns dos seus serviços, em função de critérios à sua escolha.
 >
-> Os seus critérios de filtragem serão, então, apresentados por cima do quadro. Eis um exemplo de filtro que permite apresentar os nomes de domínios cuja renovação é manual e cuja data de fim de subscrição expira antes de um mês.
+> Os seus critérios de filtragem serão, então, apresentados por cima do quadro. Eis um exemplo de filtro que permite apresentar os nomes de domínios cuja renovação é manual.
 >
->![manageautomaticréwal](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/filters-en.png){.thumbnail}
+>![manageautomaticréwal](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/filters-en.png){.thumbnail}
 
 <a name="actions"></a>
 
@@ -100,14 +100,14 @@ A página **Os meus serviços** contém uma tabela de gestão dos seus serviços
 
 À direita de um serviço, clique no botão `...`{.action} na coluna `Açōes` e, a seguir, numa ação à sua escolha.
 
-![menu ações](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/actions-en.png){.thumbnail}
+![menu ações](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/actions-en.png){.thumbnail}
 
 **Cada ação é descrita em pormenor num dos separadores abaixo.**
 
 > [!tabs]
 > **Configurar a renovação**
 >>
->> ![configurar a renovação](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/configure-renewal-en.png){.thumbnail}
+>> ![configurar a renovação](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/configure-renewal-en.png){.thumbnail}
 >>
 >> Clique na ação `Configurar a renovação`{.action}. Em função do serviço escolhido, pode parametrizá-lo para renovação manual ou escolher a frequência de renovação automática. Se necessário, poderá então escolher o tipo de renovação, bem como a frequência da mesma.
 >>
@@ -117,7 +117,7 @@ A página **Os meus serviços** contém uma tabela de gestão dos seus serviços
 >>
 > **Antecipar o pagamento**
 >>
->> ![antecipar o pagamento](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/forward-payment-en.png){.thumbnail}
+>> ![antecipar o pagamento](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/forward-payment-en.png){.thumbnail}
 >>
 >> Esta ação está disponível para os serviços **renovação automática**.
 >>
@@ -126,9 +126,9 @@ A página **Os meus serviços** contém uma tabela de gestão dos seus serviços
 >> Pode renovar estes serviços a qualquer momento antes de eles expirarem, bem como escolher o período de renovação dos mesmos.
 >> Neste caso, o período de validade subscrito será adicionado ao período de validade a decorrer. Não perderá o tempo de validade restante.
 >>
-> **Rescindir o meu compromisso**
+> **Rescindir o meu serviço**
 >>
->> ![Cancelar](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/cancel-en.png){.thumbnail}
+>> ![Cancelar](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancel-en.png){.thumbnail}
 >>
 >> Esta ação está disponível para os serviços parametrizados para **renovação automática**.
 >>
@@ -138,7 +138,7 @@ A página **Os meus serviços** contém uma tabela de gestão dos seus serviços
 >>
 > **Renovar o serviço**
 >>
->> ![Renovar serviço](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/renew-service-en.png){.thumbnail}
+>> ![Renovar serviço](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/renew-service-en.png){.thumbnail}
 >>
 >> Esta ação está apenas disponível para os serviços **renovação manual**.
 >>
@@ -147,7 +147,7 @@ A página **Os meus serviços** contém uma tabela de gestão dos seus serviços
 >>
 > **Pagar a minha fatura**
 >>
->> ![Pagar uma fatura](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/pay-bill-en.png){.thumbnail}
+>> ![Pagar uma fatura](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/pay-bill-en.png){.thumbnail}
 >>
 >> Aparece uma fatura com pagamento pendente quando:
 >>
@@ -163,7 +163,7 @@ A página **Os meus serviços** contém uma tabela de gestão dos seus serviços
 
 Tem a possibilidade de realizar ações agrupadas, selecionando vários serviços no quadro e clicando no botão `Ações`{.action}.
 
-![ações agrupadas](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/batch-actions-en.png){.thumbnail}
+![ações agrupadas](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/batch-actions-en.png){.thumbnail}
 
 O seguinte quadro especifica as ações agrupadas possíveis.
 
@@ -199,7 +199,7 @@ O seguinte quadro especifica as ações agrupadas possíveis.
 >> Se o domínio for também suspenso e tiver sido renovado, o período de tempo poderá ser superior - 48 horas, consoante o tempo de propagação do DNS.
 >> Para o proteger de uma indisponibilidade de acesso para todos os seus serviços críticos, recomendamos que privilegie a renovação automática e [verifique regularmente se os seus métodos de pagamento estão atualizados](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).
 > A subscrição do meu serviço expira em julho de 2024. Estamos em janeiro de 2024 e quero renová-lo por um ano. A assinatura expirará em julho de 2025 ou em janeiro de 2025?
->> Quando prorroga um serviço (por um ano ou por um período mais curto), este período será adicionado à próxima data de efeito visível na tabela "Os Meus Serviços". No seu caso, o seu serviço será renovado até julho de 2025.
+>> Quando prorroga um serviço (por um ano ou por um período mais curto), este período será adicionado à próxima data de efeito visível na tabela "Gestão das minhas ofertas e serviços". No seu caso, o seu serviço será renovado até julho de 2025.
 > A subscrição do meu serviço expirou em 1 de janeiro de 2024 e esqueci-me de o renovar. Acabei de o renovar em 16 de janeiro de 2024 por 6 meses, mas verifico que expira em 1 de julho de 2024 e não em 16 de julho de 2024. Isso é normal?
 >> Sim, trata-se da renovação normal a partir da data de expiração da subscrição.
 

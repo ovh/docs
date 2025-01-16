@@ -1,23 +1,23 @@
 ---
-title: Grafana - Tutorial - How to use the Grafana API
-excerpt: "Learn how to use the Grafana API"
-updated: 2023-04-06
+title: Dashboards - Tutorial - How to use the Grafana® API
+excerpt: "Learn how to use the Grafana® API"
+updated: 2024-12-11
 ---
 
 ## Objective
 
-Using the Grafana API is not obvious and already clearly documented.
-This tutorial explains how to configure Grafana to use the API and how make calls to the exposed API.
+Using the Grafana® API is not obvious and already clearly documented.
+This tutorial explains how to configure Grafana® to use the API and how make calls to the exposed API.
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
-- A Grafana database running on your OVHcloud Public Cloud project (see [this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) to create a managed Grafana)
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](/links/manager)
+- A Dashboards service running on your OVHcloud Public Cloud project (see [this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) to create a managed Dashboards service)
 
 ## Instructions
 
-### Create a Grafana service account
+### Create a Grafana® service account
 
 In the configuration menu, display the `Service accounts`{.action} tab:
 
@@ -47,9 +47,9 @@ The created token appears in the tokens list:
 
 ![Grafana service accounts token list](images/sa-account-created-tokens-list.png){.thumbnail}
 
-You are ready to use this token with the Grafana API.
+You are ready to use this token with the Grafana® API.
 
-### Use the Grafana API
+### Use the Grafana® API
 
 > [!primary]
 >
@@ -57,7 +57,7 @@ You are ready to use this token with the Grafana API.
 
 > [!warning]
 > 
-> Don't forget to set the `Authorised IP addresses` in the Grafana configuration. See our guide on [Configuring your Grafana instance to accept incoming connections](https://www.ovhcloud.com/asia/publiccloud/databases/grafana/configure-grafana-instance/) for more details.
+> Don't forget to set the `Authorised IP addresses` in the Dashboards configuration. See our guide on [Configuring your Grafana instance to accept incoming connections](/pages/public_cloud/public_cloud_databases/grafana_02_prepare_for_incoming_connections) for more details.
 
 To send a request to the API you must use the previously created token and set it in the request header as a "Bearer token":
 
@@ -90,12 +90,12 @@ curl -H "Authorization: Bearer $GRAFANA_API_TOKEN" https://grafana-xxxxxxxxx-yyy
 
 ```
 
-Here it is, you can now use all the power of the Grafana API.
+Here it is, you can now use all the power of the Grafana® API.
 
 ## We want your feedback!
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/PwPqWUpN8G> and interact directly with the team that builds our databases service!

@@ -50,18 +50,22 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 
 > [!tabs]
 > **Etape 1**
+>>
 >> Sélectionnez `Exchange`{.action}<br><br> 
 >> ![mailmac](images/mail-mac-exchange01.png){.thumbnail .w-400 .h-600}
 >>
 > **Etape 2**
+>>
 >> Saisissez le **Nom** de votre compte e-mail et votre **Adresse e-mail**, puis cliquez sur `Se connecter`{.action} <br><br> 
 >> ![mailmac](images/mail-mac-exchange02.png){.thumbnail .w-400 .h-600}
 >>
 > **Etape 3**
+>>
 >> Dans la fenêtre suivante, cliquez sur `Configuration manuelle`{.action} : <br><br>- Définissez le **Nom** qui s'affichera dans l'interface de navigation <br>- Laissez votre **adresse e-mail**<br>- Laissez votre **Mot de passe** déjà saisi <br><br>Pour finaliser la configuration, cliquez sur `Se connecter`{.action} <br><br> 
 >> ![mailmac](images/mail-mac-exchange03.png){.thumbnail .w-400 .h-600}
 >>
 > **Etape 4**
+>>
 >> Saisissez: <br><br>- Adresse e-mail : laissez votre adresse e-mail complète<br>- Nom d'utilisateur : laissez votre adresse e-mail complète <br>- Mot de passe : laissez votre **mot de passe**<br> - URL interne : **ex?.mail.ovh.net** (remplacez le **?** par [le numéro de votre serveur Exchange](#addaccount))<br>- URL externe : **ex?.mail.ovh.net** (remplacez le **?** par [le numéro de votre serveur Exchange](#addaccount))<br><br>
 >>
 >> > [!warning]
@@ -71,6 +75,7 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 >> ![mailmac](images/mail-mac-exchange04.png){.thumbnail .w-400 .h-600}
 >>
 > **Etape 5**
+>>
 >> En plus de vos e-mails, vous pouvez sélectionner d'autres fonctionnalités Exchange que vous souhaitez gérer depuis votre Mac. <br><br>![mailmac](images/mail-mac-exchange05.png){.thumbnail .w-400 .h-600}
 
 ### Utiliser l'adresse e-mail

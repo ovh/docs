@@ -1,7 +1,7 @@
 ---
 title: Best practices for managing your OVHcloud services and account
 excerpt: Find out about the best ways to manage your invoices, orders, payment methods and account
-updated: 2022-05-02
+updated: 2024-12-23
 ---
 
 ## Objective
@@ -79,10 +79,10 @@ You will find out the steps of delivery and you will know if actions are require
 
 If you want to stop using one of your services, you can either cancel it, set its renewal to manual mode or delete it immediately through your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
 
-First click on your name at the top right of your screen, then on `Products and services`{.action}. On the right side of your screen, click on the `...`{.action} button corresponding to the service you want to act on, then click on one of the following buttons:
+First click on your name at the top right of your screen, then on `My solutions & services`{.action}. On the right side of your screen, click on the `...`{.action} button corresponding to the service you want to act on, then click on one of the following buttons:
 
 - `Configure renewal`{.action}: On the following screen, you'll be able to switch the `Renewal type` of your service to `Manual`. Then click on `Next`{.action} and `Confirm`{.action}. Before the expiration date of your service, you will receive several notifications by email. If you don't renew your service, it will be **permanently** deleted.
-- `Cancel`{.action}: On the following screen, specify the reasons for your cancellation request, then click on `Confirm`{.action}. On the expiration date of your service, it will be **permanently** deleted.
+- `Cancel my subscription`{.action}: On the following screen, specify the reasons for your cancellation request, then click on `Confirm`{.action}. On the expiration date of your service, it will be **permanently** deleted.
 - `Delete immediately`{.action}: On the following screen, click on `Confirm`{.action}. You will be sent a confirmation email. After your validation, your service will be **immediately and permanently** deleted.
 
 To get more information about the termination of your services, consult the [How to cancel your OVHcloud services](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services) guide.

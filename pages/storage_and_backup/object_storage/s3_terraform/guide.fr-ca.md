@@ -1,5 +1,5 @@
 ---
-title: Object Storage - Gérer un bucket S3 avec Terraform
+title: Object Storage - Gérer un bucket Object Storage avec Terraform
 updated: 2024-08-27
 ---
 
@@ -7,16 +7,16 @@ updated: 2024-08-27
 
 Ce tutoriel va vous permettre d'automatiser et d'orchestrer des actions pour utiliser l'Object Storage - S3 API avec Terraform. Terraform est un outil open source permettant d'orchestrer la provision et la mise à disposition des ressources. Les actions suivantes seront automatisées :
 
-- la création d'un utilisateur S3 ;
+- la création d'un Object Storage ;
 - la création d'un conteneur d'objet ;
 - la copie d'un objet dans un bucket ;
-- la gestion des accès des utilisateurs avec *S3 policies*.
+- la gestion des accès des utilisateurs avec *S3 **\*** policies*.
 
 ## Prérequis
 
 - Installer la CLI Terraform  (se réferer au [tutoriel](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli) d'Hashicorp, la société qui a créé Terraform). 
 - Installer la commande git 
-- Avoir accès aux API v6 (consultez notre guide de [premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps)). En fonction de vos besoins en termes de permissions (verbes http PUT/GET/POST/DELETE), renseignez la route `/cloud/project/{serviceName}/region/{regionName}/storage/` pour cibler le stockage objet S3 où *{serviceName}* correspond à votre id de projet Public Cloud et *{regionName}* correspond à la région où vos ressources vont être localisées. Une fois les accès aux API créés, exportez les 4 IDs dans les variables, tel que décrit ci-dessous :
+- Avoir accès aux API v6 (consultez notre guide de [premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps)). En fonction de vos besoins en termes de permissions (verbes http PUT/GET/POST/DELETE), renseignez la route `/cloud/project/{serviceName}/region/{regionName}/storage/` pour cibler Object Storage où *{serviceName}* correspond à votre id de projet Public Cloud et *{regionName}* correspond à la région où vos ressources vont être localisées. Une fois les accès aux API créés, exportez les 4 IDs dans les variables, tel que décrit ci-dessous :
 
 ```bash
 $ export OVH_ENDPOINT=ovh-eu
@@ -31,7 +31,7 @@ $ export OVH_CONSUMER_KEY=Your_token(or_CK)
 $ export TF_VAR_OVH_PUBLIC_CLOUD_PROJECT_ID=Your_public_cloud_project_id
 ```
 
-**Si vous n'avez pas la CLI AWS configurée**, vous devez paramétrer les access key S3 et secret keys S3, peu importe leur valeur car elles seront surchargées. Cela est dû à une limitation de Terraform au moment de son initialisation (référez-vous au [ticket Terraform associé](https://github.com/hashicorp/terraform/issues/2430)) :
+**Si vous n'avez pas la CLI AWS configurée**, vous devez paramétrer les access key et secret keys Object Storage, peu importe leur valeur car elles seront surchargées. Cela est dû à une limitation de Terraform au moment de son initialisation (référez-vous au [ticket Terraform associé](https://github.com/hashicorp/terraform/issues/2430)) :
 
 ```bash
 $ export AWS_ACCESS_KEY_ID="no_need_to_define_an_access_key"  
@@ -40,7 +40,7 @@ $ export AWS_SECRET_ACCESS_KEY="no_need_to_define_a_secret_key"
 
 ## En pratique
 
-### Gérer un bucket S3 avec Terraform @OVHcloud
+### Gérer un bucket Object Storage avec Terraform @OVHcloud
 
 #### Initialisation
 
@@ -95,7 +95,7 @@ $ terraform destroy
 > - Le secret créé par ce script est stocké dans le *[local state back-end](https://developer.hashicorp.com/terraform/language/settings/backends/local)*. Si vous utilisez ce back-end en production, assurez-vous de gérer le *state file* comme un secret.
 >
 
-### Automatisation des S3 policies avec Terraform
+### Automatisation des policies Object Storage avec Terraform
 
 #### Initialisation
 
@@ -123,7 +123,7 @@ Regardez à présent le contenu du fichier `main.tf` file et comparez avec l'exe
 
 - Le bloc *User / Credential* définit 3 *user & credentials* : un *user* va être utilisateur du bucket et le créer, les deux autres vont avoir les droits read/write pour l'un et les accès read-only access pour l'autre.
 - Le bloc *Bucket* réalise la création d'un objet dans un bucket.
-- Le bloc *Policy* définit 2 S3 policies, une pour read/write et l'autre pour read-only.
+- Le bloc *Policy* définit 2 policies Object Storage, une pour read/write et l'autre pour read-only.
 
 #### Run
 
@@ -145,6 +145,8 @@ $ terraform destroy
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
+
+**\*** : S3 est une marque déposée appartenant à Amazon Technologies, Inc. Les services de OVHcloud ne sont pas sponsorisés, approuvés, ou affiliés de quelque manière que ce soit.

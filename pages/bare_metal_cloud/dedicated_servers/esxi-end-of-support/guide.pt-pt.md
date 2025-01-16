@@ -28,7 +28,6 @@ Aconselhamos que estude igualmente as [ofertas Hosted Private Cloud disponibiliz
 
 - [Controlar e proteger o seu servidor dedicado ESXi desde o primeiro arranque](/pages/bare_metal_cloud/dedicated_servers/esxi-hardening)
 - [Servidores Dedicados - Particionamento do ESXi](/pages/bare_metal_cloud/dedicated_servers/esxi-partitioning) (EN)
-- [Configurar a rede no ESXi nas gamas High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/esxi-network-HG-Scale)
 - [Servidores dedicados ESXi - FAQ](https://help.ovhcloud.com/csm/en-gb-dedicated-servers-esxi-faq?id=kb_article_view&sysparm_article=KB0056381) (EN)
 
 ## Quer saber mais?

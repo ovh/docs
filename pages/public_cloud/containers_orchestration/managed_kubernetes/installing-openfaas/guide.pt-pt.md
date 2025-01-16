@@ -1,25 +1,10 @@
 ---
-title: Installing a FaaS platform on OVHcloud Managed Kubernetes using OpenFaaS
-excerpt: Find out how to install a FaaS platform on OVHcloud Managed Kubernetes using OpenFaaS
-updated: 2020-05-12
+title: How to install OpenFaaS CE on OVHcloud Managed Kubernetes
+excerpt: Find out how to install OpenFaaS CE on OVHcloud Managed Kubernetes
+updated: 2025-01-07
 ---
 
-In this tutorial we are going to guide you with the install of a *Functions as a Service* (FaaS) platform on OVHcloud Managed Kubernetes service. 
-
-The question of *how to install a FaaS platform on OVH* comes recurrently, and in this tutorial you will get some answers with a quick and painless solution: install the FaaS platform over OVHcloud Managed Kubernetes. 
-
-That's the beauty of the rich Kubernetes ecosystem, you can find projects to address many different use case, from the [game server with Agones](https://www.ovh.com/fr/blog/deploying-game-servers-with-agones-on-ovh-managed-kubernetes/) to a FaaS platform...
-
-We have tested several FaaS platform on OVHcloud Managed Kubernetes. Our objective was a solution:
-
-- Easy to deploy, ideally a simple [Helm chart](https://github.com/helm/helm){.external}
-- Manageable with both an UI and a CLI, because different customers have different needs
-- Auto-scalable, both is ascending and descending senses
-- With a comprehensive documentation
-
-We tested lots of platforms, like [Kubeless](https://kubeless.io/){.external}, [OpenWhisk](https://github.com/apache/incubator-openwhisk){.external}, [OpenFaaS](https://github.com/openfaas/faas){.external} and [Fission](https://github.com/fission/fission){.external}, and I must said that all of them performed quite well. 
-
-At the end, the one that scored the best on our objectives was OpenFaaS, so we decided to use it as reference for this tutorial.
+The following guide details an OpenFaas installation on an OVHcloud Managed Kubernetes Service (MKS) cluster. [OpenFaaS](https://www.openfaas.com/) is a framework to build serverless functions on top of Kubernetes. Before installing OpenFaaS Community Edition (CE), make sure you read the [end-user license agreement (EULA)](https://github.com/openfaas/faas/blob/master/EULA.md), to understand the limits of this version of OpenFaaS vs the Standard and Enterprise edition.
 
 ## Before you begin
 
@@ -31,40 +16,24 @@ You also need to have [Helm](https://docs.helm.sh/){.external} installed on your
 
 ![OpenFaas logo](images/openfaas-logo.png){.thumbnail}
 
-[OpenFaaS](https://github.com/openfaas/faas){.external} is an open source framework for building Serverless functions with Docker and Kubernetes. The project is mature, very popular and active with more than 14k stars on GitHub, a hundred of contributors, and lots of users, both corporate and private.
+[OpenFaaS](https://github.com/openfaas/faas){.external} is an open source framework for building Serverless functions with Docker and Kubernetes.
 
-OpenFaaS is very simple to deploy (with an Helm chart,including an Operator allowing use of CRDs i.e. `kubectl get functions`), it has both a CLI and an UI, it manages well the auto-scaling and its doc is really complete (with in bonus a nice Slack channel to discuss about it!). 
-
-Technically, OpenFaaS is composed of several functional blocks: 
-
-- The *Function Watchdog*, a tiny golang HTTP server that transforms any Docker image into a serverless function
-
-- The *API Gateway*, providing an external route into functions and collecting metrics 
-
-- The *UI Portal*, allowing to create and invoke functions
-
-- The *CLI* (essentially a REST client for the *API Gateway*), used to deploy any container as a function
-
-Functions can be written on  many languages (I have mainly tested on JavaScript, Go and Python), using handy templates or simple a Dockerfile. 
-
-![OpenFaas architecture](images/openfaas-architecture.png){.thumbnail}
+More details about the OpenFaaS architecture can be found in the [official documentation](https://docs.openfaas.com/architecture/stack).
 
 ## Deploying OpenFaaS on OVHcloud Managed Kubernetes
 
-There are several ways to install Agones in a Kubernetes cluster. In this post we choose the easiest one: installing with [Helm](https://helm.sh/){.external}.
+The official Helm chart for OpenFaas is [published on the faas-netes repository](https://github.com/openfaas/faas-netes/blob/master/chart/openfaas){.external}. The following section describes how to install it on your OVHcloud Managed Kubernetes cluster.
 
-The official Helm chart for OpenFaas is [available on faas-netes repository](https://github.com/openfaas/faas-netes/blob/master/chart/openfaas){.external}.
-
-### Adding the OpenFaaS helm chart
+### 1. Load the OpenFaaS helm chart repository
 
 The OpenFaaS Helm chart isn't available in Helm's standard `stable` repository. You need to add their repository to your Helm install:
 
-```
+```console
 helm repo add openfaas https://openfaas.github.io/faas-netes/
 helm repo update
 ```
 
-### Creating the namespaces
+### 2. Create the required namespaces
 
 OpenFaaS guidelines advise to create two [namespaces](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/), one for OpenFaaS core services and one for the functions:
 
@@ -72,9 +41,9 @@ OpenFaaS guidelines advise to create two [namespaces](https://kubernetes.io/docs
 kubectl apply -f https://raw.githubusercontent.com/openfaas/faas-netes/master/namespaces.yml
 ```
 
-### Generating secrets
+### 3. Generate credentials
 
-A FaaS platform open to the internet seems a bad idea. We are generating secrets  to enable authentication on the gateway.
+To secure the access to OpenFaaS UI Portal and REST API, you can generate a password using the following commands:
 
 ```
 # generate a random password
@@ -85,29 +54,29 @@ kubectl -n openfaas create secret generic basic-auth \
 --from-literal=basic-auth-password="$PASSWORD"
 ```
 
->[!primary] 
-> You will need this password later on the tutorial, for example to access the UI portal. You can see it at any moment in the terminal session by doing `echo $PASSWORD`.   
+>[!primary]
+> You will need this password later on the tutorial, for example to access the UI portal. You can see it at any moment in the terminal session by doing `echo $PASSWORD`.
 
 ### Deploying the Helm chart
 
 The Helm chart can be deployed in three modes: `LoadBalancer`, `NodePort` and `Ingress`. For us the simplest way is simply using our external Load Balancer, so we will deploy it in `LoadBalancer` by setting the `--set serviceType=LoadBalancer` option.
 
 > [!primary]
-> If you want to better understand the difference between these three modes, you can read our [Getting external traffic into Kubernetes – ClusterIp, NodePort, LoadBalancer, and Ingress](https://www.ovh.com/fr/blog/getting-external-traffic-into-kubernetes-clusterip-nodeport-loadbalancer-and-ingress/) blog post
+> If you want to better understand the difference between these three modes, you can read our [dedicated guide](/pages/public_cloud/containers_orchestration/managed_kubernetes/using-lb/#some-concepts-clusterip-nodeport-ingress-and-loadbalancer).
 
 Deploy the Helm chart:
 
-```
+```console
 helm upgrade openfaas --install openfaas/openfaas \
-    --namespace openfaas  \
-    --set basic_auth=true \
-    --set functionNamespace=openfaas-fn \
-    --set serviceType=LoadBalancer
+  --namespace openfaas  \
+  --set basic_auth=true \
+  --set functionNamespace=openfaas-fn \
+  --set serviceType=LoadBalancer
 ```
 
-As suggested in the install message, you can verify that OpenFaaS has started by running:
+As suggested in the installation message, you can verify that OpenFaaS has started by running:
 
-```
+```console
 kubectl --namespace=openfaas get deployments -l "release=openfaas, app=openfaas"
 ```
 
@@ -124,174 +93,122 @@ prometheus     1         1         1            1           33s
 queue-worker   1         1         1            1           33s
 ```
 
-## Install the FaaS CLI and log into the API Gateway
+### 4. Connect to the Gateway
 
-The easiest way to interact with your new OpenFaaS platform is intalling `faas-cli`, the command line client for OpenFaaS (on a Linux or Mac, or in a WSL linux terminal in Windows):
+Get the public IP of your gateway service using:
 
-```
-curl -sL https://cli.openfaas.com | sh
-```
-
-You can now use the CLI to log into the gateway. The CLI need the public URL of the OpenFaaS `LoadBalancer`, you can get it via `kubectl`:
-
-```
+```console
 kubectl get svc -n openfaas gateway-external -o wide
 ```
 
 > [!warning]
-> At this moment you can get an `EXTERNAL-IP &lt;none>`, or `EXTERNAL-IP &lt;PENDING>`.
+> At this moment, your `EXTERNAL-IP` could be still `PENDING`.
 >
-> ```console
-$ kubectl get svc -n openfaas gateway-external -o wide
-> NAME               TYPE           CLUSTER-IP    EXTERNAL-IP                        PORT(S)          AGE    
-> gateway-external   LoadBalancer   10.3.xxx.yyy  PENDING                           8080:30012/TCP   10s   
-> 
-```
+>```console
+>$ kubectl get svc -n openfaas gateway-external -o wide
+> NAME               TYPE           CLUSTER-IP    EXTERNAL-IP                        PORT(S)          AGE
+> gateway-external   LoadBalancer   x.x.x.x       PENDING                           8080:30012/TCP   10s
 >
->The problem come from the `LoadBalancer` creation, that is asynchronous, and the provisioning of the load balancer can take several minutes.
-> Please try again in a few minutes, and you will normally see the newly assigned URL.
+>```
+>
+> The provisioning of the load balancer can take several minutes.
+> Check again until the `EXTERNAL-IP` is filled with a public IP address.
 
-Export the URL to a `OPENFAAS_URL` variable
+Once the public IP address is available, you may access the OpenFaaS UI at `http://PUBLIC_IP:8080`.
 
+![UI Portal](images/ui-portal-01.jpg){.thumbnail}
+
+### 5. Connect using the CLI
+
+Another way to interact with your new OpenFaaS platform is installing `faas-cli`, the command line client for OpenFaaS (on a Linux or Mac, or in a WSL linux terminal in Windows). Download the latest version of the CLI client from the [official release page](https://github.com/openfaas/faas-cli/releases).
+
+You can now use the CLI to log into the gateway. The CLI needs the public IP address of the OpenFaaS `LoadBalancer`, you can get it using the commands from the [previous section](#4-connect-to-the-gateway):
+
+```console
+PASSWORD=$(kubectl -n openfaas get secret basic-auth -o jsonpath="{.data.basic-auth-password}" | base64 --decode)
+echo -n $PASSWORD | ./faas-cli login -g http://EXTERNAL_IP:8080 -u admin --password-stdin
 ```
-export OPENFAAS_URL=[THE_URL_OF_YOUR_LOADBALANCER]:[THE_EXTERNAL_PORT]
+
+Sample output:
+
+```console
+Calling the OpenFaaS server to validate the credentials...
+WARNING! Communication is not secure, please consider using HTTPS. Letsencrypt.org offers free SSL/TLS certificates.
+credentials saved for admin http://EXTERNAL_IP:8080
 ```
 
-> [!primary]
-> You will need this URL later on the tutorial, for example to access the UI portal. You can see it at any moment in the terminal session by doing `echo $OPENFAAS_URL`. 
-
-And connect to the gateway:
-
-```
-echo -n $PASSWORD | ./faas-cli login -g $OPENFAAS_URL -u admin --password-stdin
-```
-
-Now you're connected to the gateway, and you can send commands to the OpenFaaS platform. 
+Now you're connected to the gateway, and you can send commands to the OpenFaaS platform.
 
 By default, there is no function installed on your OpenFaaS platform, as you can verify with the `faas-cli list` command.
 
-In my own deployment (URLs and IP changed), the precedent operations gave:
-
-```console
-$ kubectl get svc -n openfaas gateway-external -o wide
-NAME               TYPE           CLUSTER-IP     EXTERNAL-IP   PORT(S)          AGE     SELECTOR
-gateway-external   LoadBalancer   10.3.xxx.yyy   xy.xy.xy.xy   8080:30012/TCP   9m10s   app=gateway
-
-$ export OPENFAAS_URL=xy.xy.xy.xy:8080
-
-$ echo -n $PASSWORD | ./faas-cli login -g $OPENFAAS_URL -u admin --password-stdin
-Calling the OpenFaaS server to validate the credentials...
-WARNING! Communication is not secure, please consider using HTTPS. Letsencrypt.org offers free SSL/TLS certificates.
-credentials saved for admin http://xy.xy.xy.xy:8080
- 
-$ ./faas-cli version
-  ___                   _____           ____
- / _ \ _ __   ___ _ __ |  ___|_ _  __ _/ ___|
-| | | | '_ \ / _ \ '_ \| |_ / _` |/ _` \___ \
-| |_| | |_) |  __/ | | |  _| (_| | (_| |___) |
- \___/| .__/ \___|_| |_|_|  \__,_|\__,_|____/
-      |_|
-
-CLI:
- commit:  f7c29ea19b5df9d7aa87e9c70aacf4d9315da2cd
- version: 0.12.4
-
-Gateway
- uri:     http://xy.xy.xy.xy:8080
- version: 0.18.17
- sha:     18f6c720b50db7da5f9c410f9fd3369ed7aff379
- commit:  Extract a caching function_query type
-
-Provider
- name:          faas-netes
- orchestration: kubernetes
- version:       0.10.5
- sha:           9be50543b372381a505e9e54a1356bb076c8f01f
-
-$ ./faas-cli list
-Function                      	Invocations    	Replicas
 ```
+./faas-cli list -g http://EXTERNAL_IP:8080
+```
+
+This section focused on how to install OpenFaaS. The next section will introduce how to import and invoke functions.
 
 ## Deploying and invoking functions
 
-You can easily deploy functions on your OpenFaaS platform using the CLI, with the command `faas-cli up`:
+You can easily deploy functions on your OpenFaaS platform using the web UI, or the CLI:
 
-Let's use [some sample functions](https://raw.githubusercontent.com/openfaas/faas/master/stack.yml) from the OpenFaaS repository:
+[Some sample functions](https://github.com/openfaas/store-functions) are available in the official OpenFaaS project. For example, to import `figlet`, a function that generates ASCII art banners from plain text:
 
+```console
+./faas-cli deploy -g http://EXTERNAL_IP:8080 --name figlet --image ghcr.io/openfaas/figlet:latest
 ```
-./faas-cli deploy -f https://raw.githubusercontent.com/openfaas/faas/master/stack.yml
-```
 
-Doing a `faas-cli list` command now will show the deployed functions:
+`faas-cli list` command now will show the deployed functions:
 
 ```console
 $ ./faas-cli list
-Function                      	Invocations    	Replicas
-base64                        	0              	1    
-echoit                        	0              	1    
-hubstats                      	0              	1    
-markdown                      	0              	1    
-nodeinfo                      	0              	1    
-wordcount                     	0              	1    
+Function                        Invocations     Replicas
+figlet                          1               1
 ```
 
-Let's invoke one of those functions, for example `wordcount` (a function that takes the syntax of the unix [`wc`](https://en.wikipedia.org/wiki/Wc_(Unix)){.external} command, giving us the number of lines, words and characters on the input data):
-
-```
-echo 'I love when a plan comes together' | ./faas-cli invoke wordcount
-```
+Let's invoke the newly imported functions:
 
 ```console
-$ echo 'I love when a plan comes together' | ./faas-cli invoke wordcount
-       1         7        34
+echo 'Hello from OVH MKS' | ./faas-cli invoke -g http://EXTERNAL_IP:8080 figlet
 ```
 
-## Invoking a function without the CLI
-
-You can use the `faas-cli describe` command to get the public URL of your function, and then call it directly with your favorite HTTP library (or the good old `curl`):
-
-```console
-$ ./faas-cli describe wordcount
-Name:                wordcount
-Status:              Ready
-Replicas:            1
-Available replicas:  1
-Invocations:         1
-Image:               functions/alpine:latest
-Function process:    
-URL:                 http://xxxxx657xx.lb.c1.gra.k8s.ovh.net:8080/function/wordcount
-Async URL:           http://xxxxx657xx.lb.c1.gra.k8s.ovh.net:8080/async-function/wordcount
-Labels:              faas_function : wordcount
-Annotations:         prometheus.io.scrape : false
-
-$ curl -X POST --data-binary "I love when a plan comes together" "http://xxxxx657xx.lb.c1.gra.k8s.ovh.net:8080/function/wordcount"
-       0         7        33
-```
-
-## Containers everywhere...
-
-The main interest of a FaaS platform is to be able to deploy your own functions.
-In OpenFaaS you can write your these function on many languages, not only the usual suspects (JavaScript, Python, Go...). That's is done because on OpenFaaS you can deploy basically any container as a function. As a side effect of it, you need to package your functions as containers in order to deploy them.
-
-That also means that in order to create your own functions, you need to have [Docker](https://www.docker.com/){.external} installed in your workstation, and you will need to push the images in a Docker registry, either the official one or a private one.
-
-If you need a private registry, you can use our [OVHcloud Managed Private Registry](/products/public-cloud-containers-orchestration-managed-private-registry). For this tutorial we are choosing to deploy our image on the official Docker registry.
+This section detailed how to import and use existing functions. The next section will introduce how to create custom functions.
 
 ## Writing our first function
 
-For our first example, we are going to create a deploy a *hello word* function in JavaScript using [NodeJS](https://nodejs.org/){.external}. Let's begin by creating and scaffolding the function folder:
+### Prerequisites
+
+In order to publish and deploy a function to your MKS cluster, you will need:
+
+* A public container registry accessible from your MKS cluster and your workstation, such as [dockerhub](https://hub.docker.com/) or github registry.
+
+> [!warning]
+> At the moment, OpenFaaS Community Edition only supports public images. Check the related documentation for private registries with [OpenFaaS Pro](https://docs.openfaas.com/reference/private-registries/)
+>
+
+### Code the function
+
+All available templates are available in the [official template repository](https://github.com/openfaas/templates), or can be listed using:
 
 ```
+./faas-cli template store list
+```
+
+This example will use [NodeJS](https://nodejs.org/){.external} to create a *hello world* function. Let's begin by creating and scaffolding the function folder:
+
+```console
 mkdir hello-js-project
 cd hello-js-project
-../faas-cli new hello-js --lang node
+../faas-cli new hello-js --lang node20 -g http://EXTERNAL_IP:8080
 ```
 
-The CLI will download a JS function template from OpenFaaS repository, generate a function description file (`hello-js.yml` in our case) and a folder for the function source code (`hello-js`). For NodeJS, you will find a `package.json` (for example to declare eventual dependencies to your function) and a `handler.js` (the function main code) in this folder.
+The CLI will download a JS function template from OpenFaaS repository, generate a function description file (`hello-js.yml` in our case) and a folder for the function source code (`hello-js`). For NodeJS, you will find a `package.json` (for example to declare dependencies to your function) and a `handler.js` (the function main code) in this folder.
 
-Edit `hello-js.yml` to set the name of the image you'll want to upload to docker registry:
+In `hello-js.yml`, set the following parameters according to your configuration:
 
-`hello-js.yml` 
+- `provider.gateway`: the URL to your OpenFaaS gateway.
+- `functions.image`: the URL to your docker registry. In this example, a dockerhub repository will be used.
+
+`hello-js.yml`
 ```yaml
 version: 1.0
 provider:
@@ -301,28 +218,10 @@ functions:
   hello-js:
     lang: node
     handler: ./hello-js
-    image: ovhplatform/openfaas-hello-js:latest
+    image: docker.io/openfaas/hello-js:latest # The URL to a public repository.
 ```
 
-The function described in the `handler.js` file is really simple. It exports a function with two parameters, a `context` where you will receive the request data, and a `callback` that you will call at the end of yur function and where you will pass the response data.
-
-```javascript
-"use strict"
-
-module.exports = (context, callback) => {
-    callback(undefined, {status: "done"});
-}
-```
-
-Let's edit it to send back our *hello world* message:
-
-```javascript
-"use strict"
-
-module.exports = (context, callback) => {
-    callback(undefined, {message: 'Hello world'});
-}
-```
+The function described in `hello-js/handler.js` is really simple. It exports a function with two parameters, a `context` where you will receive the request data, and a `callback` that you will call at the end of your function and where you will pass the response data.
 
 Now you can build the Docker image and push it to the public Docker registry:
 
@@ -330,7 +229,7 @@ Now you can build the Docker image and push it to the public Docker registry:
 # Build the image
 ../faas-cli build -f hello-js.yml
 # Login at Docker Registry, needed to push the image
-docker login     
+docker login
 # Push the image to the registry
 ../faas-cli push -f hello-js.yml
 ```
@@ -341,32 +240,21 @@ With the image in the registry, let's deploy and invoke the function with the Op
 # Deploy the function
 ../faas-cli deploy -f hello-js.yml
 # Invoke the function
-../faas-cli invoke hello-js
+../faas-cli -g http://EXTERNAL_IP:8080 invoke hello-js
+# Enter your input, and press Ctrl+D
+Hello
+# Response:
+{"body":"\"Hello\\n\"","content-type":"text/plain"}
 ```
 
-Congratulations, you have written and deployed your first OpenFaaS function.
-
-## Using the OpenFaaS UI Portal
-
-You can test the UI portal by pointing your browser to your OpenFaaS gateway URL (the one you have set on the `$OPENFAAS_URL` variable), and when asked, using the user `admin` and the password you have set on the `$PASSWORD` variable.
-
-![UI Portal](images/ui-portal-01.jpg){.thumbnail}
-
-In the UI Portal you will find the list of the deployed functions, and for each function you can find it description, invoke it and see the result.
-
-![UI Portal](images/ui-portal-02.jpg){.thumbnail}
-
-![UI Portal](images/ui-portal-03.jpg){.thumbnail}
+Congratulations, you have written and deployed your first OpenFaaS function using Node. See the [official documentation](https://docs.openfaas.com/languages/node/) to go further.
 
 ## Where do we go from here?
 
-So now you have a working OpenFaaS platform on your OVHcloud Managed Kubernetes cluster.
-
-To learn more about OpenFaaS, and how you can get a maximum profit from it, please refer to the [official OpenFaaS documentation](https://docs.openfaas.com/){.external}. You can also follow the [OpenFaaS workshops](https://github.com/openfaas/workshop){.external} to learn in a more practical way.  
+To learn more about OpenFaaS, please refer to the [official OpenFaaS documentation](https://docs.openfaas.com/){.external}. You can also follow the [OpenFaaS workshops](https://github.com/openfaas/workshop){.external} to learn in a more practical way.
 
 ## Go further
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pt/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-- Join our [community of users](https://community.ovh.com/en/).
-
+- Join our [community of users](/links/community).

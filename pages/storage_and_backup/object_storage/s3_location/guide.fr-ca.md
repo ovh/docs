@@ -9,11 +9,11 @@ td:nth-of-type(2) {
 }
 </style>
 
-Nous avons conçu les classes de stockage S3 pour qu’elles soient **compatibles avec l’API S3**, considérée comme une référence sur le marché du stockage objet. Vous pouvez donc utiliser l'Object Storage avec la plupart des outils de gestion de données via les points de terminaison définis par région et non par classe de stockage.
+Nous avons conçu les classes de stockage Object Storage pour qu’elles soient **compatibles avec S3 \***, considérée comme une référence sur le marché du stockage objet. Vous pouvez donc utiliser l'Object Storage avec la plupart des outils de gestion de données via les points de terminaison définis par région et non par classe de stockage.
 
-## Object Storage S3
+## Object Storage
 
-OVHcloud Object Storage S3 est accessible via un point de terminaison unique : `https://s3.<region>.io.cloud.ovh.net`. Ce point de terminaison unique peut traiter tous les buckets et tous les objets dans les classes de stockage Standard et High Performance. Toutes les opérations de l'API S3 sont prises en charge avec ce point de terminaison unique.
+OVHcloud Object Storage est accessible via un point de terminaison unique : `https://s3.<region>.io.cloud.ovh.net`. Ce point de terminaison unique peut traiter tous les buckets et tous les objets dans les classes de stockage Standard et High Performance. Toutes les opérations sont prises en charge avec ce point de terminaison unique.
 
 ### Liste des régions disponibles
 
@@ -192,7 +192,7 @@ Le mapping des opérations **READ(GET/LIST/HEAD)** sur le point de terminaison *
 </table>
 
 > [!warning]
-> Contrairement à AWS, Express One Zone sera traité comme une classe de stockage régulière par OVHcloud et toutes les fonctionnalités S3 et les opérations d'API seront disponibles.
+> Contrairement à AWS, Express One Zone sera traité comme une classe de stockage régulière par OVHcloud et toutes les fonctionnalités et opérations d'API seront disponibles.
 
 ![Schema 1](images/io-mapping-v2.png)
 
@@ -202,7 +202,7 @@ Le mapping des opérations **READ(GET/LIST/HEAD)** sur le point de terminaison *
 
 ### Rétrocompatibilité des points de terminaison
 
-Bien que le point de terminaison **io** soit le point de terminaison préféré pour accéder au service OVHcloud Object Storage, le point de terminaison **historique** `https://s3.<region>.perf.cloud.ovh.net` sera toujours maintenu à des fins de rétrocompatibilité pour les outils et les applications qui ne prennent pas en charge la dernière classe de stockage AWS Express One Zone. Ce point de terminaison historique sera également en mesure de prendre en charge tous les buckets et tous les objets dans les classes de stockage Standard et High Performance et prendra en charge toutes les opérations d'API S3, y compris `listBucket`.
+Bien que le point de terminaison **io** soit le point de terminaison préféré pour accéder au service OVHcloud Object Storage, le point de terminaison **historique** `https://s3.<region>.perf.cloud.ovh.net` sera toujours maintenu à des fins de rétrocompatibilité pour les outils et les applications qui ne prennent pas en charge la dernière classe de stockage AWS Express One Zone. Ce point de terminaison historique sera également en mesure de prendre en charge tous les buckets et tous les objets dans les classes de stockage Standard et High Performance et prendra en charge toutes les opérations, y compris `listBucket`.
 
 Le mapping des opérations **WRITE(PUT)** sur le point de terminaison **perf** est le suivant :
 
@@ -276,3 +276,5 @@ Le mapping des opérations **READ(GET/LIST/HEAD)** sur le point de terminaison *
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
+
+**\*** : S3 est une marque déposée appartenant à Amazon Technologies, Inc. Les services de OVHcloud ne sont pas sponsorisés, approuvés, ou affiliés de quelque manière que ce soit.

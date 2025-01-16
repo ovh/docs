@@ -1,12 +1,8 @@
 ---
 title: Aktivieren und Konfigurieren der Edge Network Firewall
 excerpt: Erfahren Sie hier, wie Sie die Edge Network Firewall konfigurieren
-updated: 2024-01-05
+updated: 2024-12-16
 ---
-
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
->
 
 ## Ziel
 
@@ -29,9 +25,9 @@ Zum Schutz von Diensten, die über öffentliche IP-Adressen zugänglich sind, bi
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager).
 
 > [!warning]
-> Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](https://eco.ovhcloud.com/de/about/) eingesetzt wird.
+> Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](/links/bare-metal/eco-about) eingesetzt wird.
 >
-> Weitere Informationen finden Sie auf der [Vergleichsseite](https://eco.ovhcloud.com/de/compare/).
+> Weitere Informationen finden Sie auf der [Vergleichsseite](/links/bare-metal/eco-compare).
 
 ## In der praktischen Anwendung
 
@@ -41,10 +37,14 @@ Die Edge Network Firewall reduziert die Anfälligkeit für DDoS-Angriffe im Netz
 
 > [!primary]
 >
+> Derzeit ist diese Funktion nur für IPv4-Adressen verfügbar.
+
+> [!primary]
+>
 > Die Edge Network Firewall schützt eine bestimmte, mit einem Server (oder Dienst) verbundene IP. Wenn Sie also einen Server mit mehreren IP-Adressen haben, müssen Sie jede IP separat konfigurieren.
 > 
 
-Klicken Sie im OVHcloud Kundencenter auf den Bereich `Bare Metal Cloud`{.action} und anschließend auf das Menü `Netzwerk`{.action}} links. Gehen Sie zum Tab `Öffentliche IP Adressen`{.action}. Über das Dropdown-Menü unter **Meine öffentlichen IP-Adressen und zugehörige Dienste** können Sie Ihre Dienste nach Kategorien filtern.
+Klicken Sie im OVHcloud Kundencenter auf den Bereich `Bare Metal Cloud`{.action} und anschließend auf das Menü `Netzwerk`{.action} links. Gehen Sie zum Tab `Öffentliche IP Adressen`{.action}. Über das Dropdown-Menü unter **Meine öffentlichen IP-Adressen und zugehörige Dienste** können Sie Ihre Dienste nach Kategorien filtern.
 
 ![filter service](images/selectservice_cut.png){.thumbnail}
 

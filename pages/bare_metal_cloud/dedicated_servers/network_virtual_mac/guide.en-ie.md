@@ -1,7 +1,7 @@
 ---
 title: Assigning a Virtual MAC to an Additional IP
 excerpt: This guide will show you how to create a virtual MAC address and assign it to an Additional IP address.
-updated: 2022-12-20
+updated: 2024-12-13
 ---
 
 ## Objective
@@ -13,15 +13,16 @@ OVHcloud allows you to associate a virtual MAC address with an IP address, so th
 ## Requirements
 
 - A [dedicated server](/links/bare-metal/bare-metal) that supports [virtual MACs](/pages/bare_metal_cloud/dedicated_servers/network_support_virtual_mac).
-- An [Additional IP address](/links/network/additional-ip){.external} or an Additional IP block (RIPE).
-- Access to your [OVHcloud Control Panel](/links/manager){.external} or to the [OVHcloud API](https://api.ovh.com/).
+- An [Additional IP address](/links/network/additional-ip) or an Additional IP block (RIPE).
+- Access to your [OVHcloud Control Panel](/links/manager) or to the [OVHcloud API](/links/api).
 - Your server must support virtual MACs. To determine this, consult [this guide](/pages/bare_metal_cloud/dedicated_servers/network_support_virtual_mac).
 
 > [!warning]
-> This feature might be unavailable or limited on servers of the [**Eco** product line](/links/bare-metal/eco-about).
-> Please visit our [comparison page](/links/bare-metal/eco-compare) for more information.
+> - This feature might be unavailable or limited on servers of the [**Eco** product line](/links/bare-metal/eco-about). Please visit our [comparison page](/links/bare-metal/eco-compare) for more information.
 >
-> This feature will soon be available for all High Grade, Scale and Advance servers from December 2024.
+> - Third generation Advance servers (powered by EPYC 4004 Series processors) support 32 different vMACs.
+>
+> - This feature will be available on the Scale and High Grade ranges during 2025.
 > 
 
 > [!primary]
@@ -60,7 +61,7 @@ When the 'Add a virtual MAC' box appears, select a type from the dropdown list, 
 > [!primary]
 >
 > Do not forget to assign the virtual MAC address created in your virtual machine configuration.
-> 
+>
 
 #### Via the OVHcloud API
 
@@ -79,7 +80,7 @@ Use the following API call:
 
 #### Via the OVHcloud Control Panel
 
-To remove a virtual MAC address associated with an Additional IP, you must first connect to your [control panel](/links/manager){.external}. Once connected, go to the `Bare Metal Cloud`{.action} section and click on `Network`{.action}. Next, open the `IP`{.action} menu. Select the correct server, so that the Additional IP (or IP block) attached to it appears.
+To remove a virtual MAC address associated with an Additional IP, you must first connect to your [Control Panel](/links/manager). Once connected, go to the `Bare Metal Cloud`{.action} section and click on `Network`{.action}. Next, open the `IP`{.action} menu. Select the correct server, so that the Additional IP (or IP block) attached to it appears.
 
 Finally, click on the `...`{.action} button on the right, then click `Delete a Virtual MAC`{.action}.
 
@@ -91,6 +92,14 @@ Use the following API call:
 >
 > @api {v1} /dedicated/server DELETE /dedicated/server/{serviceName}/virtualMac/{macAddress}/virtualAddress/{ipAddress}
 >
+
+## FAQ
+
+- **What happens if I move a block with vMACs on a 3rd generation Advance server (powered by an EPYC 4004 Series processor) that already has 32 vMACs?**
+
+The block will not be moved.
+
+Example: if you try to move a block of 4 IPs with different vMACs attached on a server that already has 30 vMACs the block will not be moved because the total of vMACs would be greater than the 32 vMACs allowed.
 
 ## Go further
 

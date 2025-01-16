@@ -1,23 +1,23 @@
 ---
-title: Object Storage - Héberger un site statique dans un bucket S3
-excerpt: Apprenez à configurer un bucket S3 pour héberger un site web statique
+title: Object Storage - Héberger un site statique dans un bucket Object Storage
+excerpt: Apprenez à configurer un bucket Object Storage pour héberger un site web statique
 updated: 2024-05-20
 ---
 
 ## Objectif
 
-**Découvrez comment créer, configurer et activer un site statique hébergé dans un bucket S3.**
+**Découvrez comment créer, configurer et activer un site statique hébergé dans un bucket Object Storage.**
 
 ## Prérequis
 
-- Un bucket S3 avec une ACL en lecture publique
+- Un bucket Object Storage avec une ACL en lecture publique
 - Vos ressources statiques (HTML, CSS, images, js, etc.)
 
 ## En pratique
 
 ### Étape 1 : téléverser les resources du site web
 
-Un bucket S3 est un conteneur d'objets « plat ». Il ne fournit aucune organisation hiérarchique comme le système de fichiers de votre ordinateur. Cependant, vous pouvez créer une hiérarchie logique en utilisant des noms de clés d'objet qui impliquent une structure de dossiers.
+Un bucket Object Storage est un conteneur d'objets « plat ». Il ne fournit aucune organisation hiérarchique comme le système de fichiers de votre ordinateur. Cependant, vous pouvez créer une hiérarchie logique en utilisant des noms de clés d'objet qui impliquent une structure de dossiers.
 
 **Exemple** :
 
@@ -98,11 +98,11 @@ http://{bucket-name}.s3-website.{region}.io.cloud.ovh.net
 
 > [!warning]
 > - Assurez-vous que la région dans laquelle vous hébergez votre bucket supporte la classe de stockage que vous choisissez. Vous pouvez consulter la liste des classes de stockage prises en charge par région [ici](/pages/storage_and_backup/object_storage/s3_location).
-> - Par défaut, les endpoints d'un site OVHcloud S3 Object Storage ne prennent pas en charge le HTTPS. Afin d'activer le HTTPS, vous pouvez utiliser le service OVHcloud Load Balancer pour créer un proxy pour votre site web. Pour plus d’informations, vous pouvez consulter la section "Aller plus loin" de ce guide.
+> - Par défaut, les endpoints d'un site OVHcloud Object Storage ne prennent pas en charge le HTTPS. Afin d'activer le HTTPS, vous pouvez utiliser le service OVHcloud Load Balancer pour créer un proxy pour votre site web. Pour plus d’informations, vous pouvez consulter la section "Aller plus loin" de ce guide.
 
 ## Aller plus loin
 
-[Activer HTTPS sur un site statique S3 avec un fqdn personnalisé](/pages/storage_and_backup/object_storage/s3_website_https)
+[Activer HTTPS sur un site statique avec un fqdn personnalisé](/pages/storage_and_backup/object_storage/s3_website_https)
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 

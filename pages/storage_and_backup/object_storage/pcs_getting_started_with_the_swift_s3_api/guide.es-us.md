@@ -4,24 +4,20 @@ excerpt: "Cómo utilizar la API Swift S3"
 updated: 2024-06-21
 ---
 
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
->
+## Objective
 
-## Objetivo
+The Swift s3api middleware providing S3 API compatibility has been enabled on all Public Cloud regions.
 
-El middleware Swift s3api que garantiza la compatibilidad de la API S3 ha sido activado en todas las regiones del Public Cloud.
+**This guide will help you access objects in Swift using a software designed to interact with S3-compatible endpoints.**
 
-**Esta guía explica cómo acceder a los objetos Swift utilizando un programa diseñado para interactuar con puntos de terminación compatibles con S3.**
+## Requirements
 
-## Requisitos
+- [Prepare the environment to use the OpenStack API](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
+- [Get the Openstack RC File v3 from Horizon](/pages/public_cloud/compute/loading_openstack_environment_variables)
 
-- [Preparar el entorno para utilizar la API de OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
-- [Parámetros de acceso y seguridad en Horizon](/pages/public_cloud/compute/access_and_security_in_horizon)
+## Instructions
 
-## Procedimiento
-
-### Establecer las variables de entorno OpenStack
+### Set the OpenStack environment variables
 
 ```bash
 user@host:~$ source <user_name>-openrc.sh
@@ -30,7 +26,7 @@ Please enter your OpenStack Password for project <project_name> as user <user_na
 user@host:~$
 ```
 
-### Instalar el cliente OpenStack si es necesario
+### Install OpenStack client if needed
 
 ```bash
 user@host:~$ pip install python-openstackclient
@@ -38,14 +34,14 @@ user@host:~$ pip install python-openstackclient
 user@host:~$
 ```
 
-Consulte [aquí](https://docs.openstack.org/python-openstackclient/latest/) la referencia de los pedidos de OpenStack.
+OpenStack client command reference [here](https://docs.openstack.org/python-openstackclient/latest/).
 
-### Crear claves de conexión EC2
+### Create EC2 credentials
 
-Los tokens S3 son diferentes, necesita 2 parámetros (**access** y **secreto**) para generar un token S3.
-La información de identificación se almacenará de forma segura en Keystone. Para generarla:
+S3 tokens are different, you need 2 parameters (**access** and **secret**) to generate a S3 token.
+These credentials will be safely stored in Keystone. To generate it:
 
-#### Generar el token S3 con el cliente python-openstack
+With python-openstack client:
 
 ```bash
 user@host:~$ openstack ec2 credentials create
@@ -62,7 +58,7 @@ user@host:~$ openstack ec2 credentials create
 +------------+----------------------------------------------------------------------------------------------------------------------------+
 ```
 
-#### Generar el token S3 con curl
+With curl:
 
 ```bash
 . openrc.sh
@@ -84,9 +80,9 @@ curl -s -X POST -H "Content-Type: application/json" -H "X-Auth-Token: $OS_TOKEN"
 }
 ```
 
-### Configurar el cliente AWS
+### Configure AWS client
 
-Instale el cliente AWS y configure como sigue:
+Install the AWS client and configure it as follows:
 
 ```bash
 user@host:~$ pip install awscli
@@ -111,17 +107,17 @@ s3api =
   endpoint_url = https://s3.<region>.cloud.ovh.net
 ```
 
-El acceso de tipo `alojamiento virtual` y el acceso de tipo `ruta de acceso` están incluidos en todas las regiones, pero le recomendamos que utilice el estilo `alojado virtual`, ya que el acceso de tipo `ruta de acceso` se reducirá a partir del 30 de septiembre de 2020.
+Virtual hosted-style and path-style access are supported in all regions, but we recommend to use virtual hosted-style since path-style access will be deprecated after September 30, 2020.
 
-### Utilizar el cliente AWS
+### Use AWS client
 
-Utilice el siguiente comando para consultar la lista de contenedores:
+List buckets (containers):
 
 ```bash
 user@host:~$ aws --profile default s3 ls
 ```
 
-Utilice el siguiente comando para crear un nuevo bucket:
+Create a new bucket:
 
 ```bash
 user@host:~$ aws --profile default s3 mb s3://bucket
@@ -129,45 +125,48 @@ user@host:~$ aws --profile default s3 mb s3://bucket
 
 > [!primary]
 >
-> Los buckets S3 solo pueden crearse en la estrategia PCS (almacenamiento de objetos).
+> S3 Buckets can only be created on PCS policy (Object Storage).
 >
 
 > [!primary]
 >
-> El nombre del contenedor debe cumplir las siguientes reglas:
->  
-> - El nombre del contenedor puede tener entre 3 y 63 caracteres, y solo puede contener caracteres minúsculos, cifras, puntos y guiones.  
-> - Cada nombre del contenedor debe comenzar por una letra minúscula o una cifra.  
-> - El nombre del contenedor no puede contener guiones bajos, terminar con guiones, tener puntos seguidos o utilizar guiones adyacentes a puntos.  
-> - El nombre del contenedor no puede formatearse como una dirección IP (198.51.100.24).  
+> The container name must respect the following rules.
+>
+> - The bucket name can be between 3 and 63 characters long, and can contain only lower-case characters, numbers, periods, and dashes.  
+> - Each bucket name must start with a lowercase letter or number.  
+> - The bucket name cannot contain underscores, end with a dash, have consecutive periods, or use dashes adjacent to periods.  
+> - The bucket name cannot be formatted as an IP address (198.51.100.24).  
 >
 
-Utilice el siguiente comando para descargar un archivo local en Swift:
+Upload a local file to Swift:
 
 ```bash
 user@host:~$ aws --profile default s3 cp file.txt s3://bucket/file.txt
 ```
 
-Utilice el siguiente comando para descargar un objeto desde Swift:
+Download an object from Swift:
 
 ```bash
-user@host:~$ aws --profile default s3 cp file.txt s3://bucket/file.txt
+user@host:~$ aws --profile default s3 cp s3://bucket/file.txt file.txt
 ```
 
-Utilice el siguiente comando para eliminar un objeto Swift:
+Delete a Swift object:
 
 ```bash
 user@host:~$ aws --profile default s3 rm s3://bucket/file.txt
 ```
 
-Utilice el siguiente comando para eliminar un bucket:
+Delete a bucket:
 
 ```bash
 user@host:~$ aws --profile default s3 rb s3://bucket
 ```
 
-## Más información
+## Go further
 
-Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
+- OpenStack client command reference [here](https://docs.openstack.org/python-openstackclient/latest/)
+- S3 client command reference [here](https://docs.aws.amazon.com/cli/latest/reference/s3/index.html)
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+Join our [community of users](/links/community).

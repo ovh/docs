@@ -1,12 +1,8 @@
 ---
 title: Konfiguration der Linux Firewall mit iptables
 excerpt: Erfahren Sie hier, wie Sie einen Server mit iptables sichern
-updated: 2023-02-27
+updated: 2024-12-20
 ---
-
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
->
 
 ## Ziel
 
@@ -33,6 +29,8 @@ Firewalls implementieren Regeln, die erlaubten und gesperrten Traffic verwalten.
 > Diese Anleitung verwendet Befehle für eine Ubuntu Server Distribution.
 >
 > Es handelt sich hierbei um eine generelle Vorgehensweise. Möglicherweise müssen aufgrund der Distribution und/oder des Betriebssystems, das Sie verwenden, einige Befehle entsprechend angepasst werden. Vereinzelt wird Ihnen geraten, ein Tool eines Drittanbieters zu verwenden. Bei Fragen zur Nutzung eines solchen Tools lesen Sie bitte die offizielle Dokumentation des jeweiligen Herausgebers.  
+>
+> Die meisten der hier beschriebenen Regeln gehen davon aus, dass Ihr *iptables* so konfiguriert ist, dass es eingehenden Datenverkehr selektiv zulässt und dann *DROP* anwendet. Wenn Sie vorhaben, eine andere Art von Konfiguration einzurichten, empfehlen wir Ihnen, die zugehörige Dokumentation zu konsultieren.
 >
 
 ### Schritt 1: Ihr System aktualisieren

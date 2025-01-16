@@ -1,7 +1,7 @@
 ---
 title: Enterprise File Storage - Klonowanie wolumenu
 excerpt: "Dowiedz się, jak sklonować wolumen z rozwiązania Enterprise File Storage za pomocą API OVHcloud"
-Updated: 2024-12-09
+updated: 2024-12-09
 ---
 
 ## Cel
@@ -37,7 +37,7 @@ Tworzenie regularnych punktów kopii zapasowych za pomocą [Polityka snapshotów
 
 ## Wymagania
 
-- Wykupienie usługi OVHcloud [Enterprise File Storage] (/links/storage/enterprise-file-storage)
+- Wykupienie usługi OVHcloud [Enterprise File Storage](/links/storage/enterprise-file-storage)
 - Połączenie z [API OVHcloud](/links/api)
 - Posiadanie wolumenu Enterprise File Storage z kopią zapasową `manual`
 
@@ -52,7 +52,7 @@ Tworzenie regularnych punktów kopii zapasowych za pomocą [Polityka snapshotów
 
 - Do klonowania woluminu można używać tylko snapshotów typu `manual`.
 Jeśli jednak chcesz sklonować wolumen za pomocą snapshota typu `automatic`, możesz zachować ten snapshot i przekształcić go w snapshot typu `manual`.
-[Przewodnik na temat zachowywania automatycznych snapshotów] (/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_hold_automatic_snapshot) zawiera więcej informacji.
+[Przewodnik na temat zachowywania automatycznych snapshotów](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_hold_automatic_snapshot) zawiera więcej informacji.
 
 - Tworzenie sklonowanego wolumenu z poziomu snapshota typu `system` nie jest obsługiwane.
 

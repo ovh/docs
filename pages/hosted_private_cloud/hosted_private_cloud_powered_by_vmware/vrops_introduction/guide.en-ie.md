@@ -69,7 +69,7 @@ The Optimize section gives you an insight and recommendations on the capacity of
 
 ### Plan
 
-The Plan section gives you trend and capacity management tools so you can future proof your infrastructure.<br>
+The Plan section gives you trend and capacity management tools so you can future-proof your infrastructure.<br>
 Cost analysis and planning is also helpful for budgeting purposes.
 
 ![plan section](images/en09plan.png){.thumbnail}
@@ -77,13 +77,13 @@ Cost analysis and planning is also helpful for budgeting purposes.
 ### Configure
 
 The Configure section defines your metrics and threshold reactions through policies and alerts.<br>
-You will be able to set up groups, profile, policies and/or alerts and appropriate response to tailor your infrastructure needs.
+You will be able to set up groups, profile, policies and/or alerts, and appropriate responses to tailor your infrastructure needs.
 
 ![configure section](images/en10configure.png){.thumbnail}
 
 ### Automation
 
-The Automation section schedules one time or scheduled maintenance jobs.<br>
+The Automation section schedules one-time or scheduled maintenance jobs.<br>
 Those jobs can be assigned to single or multiple objects over multiple spaces.
 
 ![automation section](images/en11automation.png){.thumbnail}

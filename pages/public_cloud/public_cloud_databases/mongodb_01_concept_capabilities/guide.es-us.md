@@ -1,7 +1,7 @@
 ---
 title: MongoDB - Capabilities and Limitations
 excerpt: Find out what are the capabilities and limitations of the Public Cloud Databases for MongoDB offer
-updated: 2024-07-09
+updated: 2025-01-06
 ---
 
 ## Objective
@@ -25,53 +25,44 @@ The Public Cloud Databases offer is available in the following regions:
 
 The Public Cloud Databases offer supports the following MongoDB versions:
 
-- MongoDB 5.0
 - MongoDB 6.0
 - MongoDB 7.0
+- MongoDB 8.0 (Soon)
 
 Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/public_cloud_databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. Additionally, MongoDB recommends always installing and using the latest stable version of MongoDB. See [MongoDB Versioning](https://docs.mongodb.com/manual/reference/versioning/){.external} for more information.
 
 ### MongoDB Drivers
 
-You can use any one of the [MongoDB-recommended drivers](https://docs.mongodb.com/drivers/){.external} to access your cluster.
+[MongoDB drivers](https://www.mongodb.com/docs/drivers/){.external} provide the interface for applications to interact with MongoDB databases. They offer:
+
+- **Native Language Support**: Drivers are available for various programming languages, including JavaScript (Node.js), Python, Java, C#, PHP, Ruby, Go, and more.
+- **Asynchronous Operations**: Many drivers support non-blocking, asynchronous operations to improve performance.
+- **Comprehensive Documentation**: Detailed guides and examples to help developers implement database operations.
+- **Compatibility**: Drivers are designed to work seamlessly with MongoDB features, ensuring reliable and efficient data manipulation.
+
+These drivers ensure that applications can efficiently and securely communicate with MongoDB databases across different programming environments.
 
 ### Plans
 
-Six plans are available:
-
-- *Essential*
-- *Discovery*
-- *Business*
-- *Production*
-- *Enterprise*
-- *Advanced*
-
-Here is an overview of the various plans' capabilities:
+Here is an overview of the capabilities of the three plans available:
 
 | Plan         | Number of nodes | MongoDB License | BI Connector  | Compass   |
 | ------------ | --------------- | --------------- | ------------  | --------- |
-| *Essential*  | 1               | Community       | Not available | Available |
 | *Discovery*  | 3               | Community       | Not available | Available |
-| *Business*   | 3 to 8          | Community       | Not available | Available |
 | *Production* | 3               | Community       | Not available | Available |
-| *Enterprise* | 3 to 8          | Enterprise      | Available     | Available |
 | *Advanced*   | 3 to 7          | Enterprise      | Available     | Available |
 
 Your choice of plan affects the number of nodes your cluster can run as well as the MongoDB license type.
 
-> [!primary]
-> Be aware that you will be able to upgrade your plan but you won't be able to downgrade it afterwards.
-
 #### Nodes
 
-- *Essential*: The cluster supports at most one node.
 - *Discovery*: The cluster contains 3 nodes.
-- *Business*, *Production*, *Enterprise* and *Advanced*: The cluster can support 3 to 8 nodes including optionally an analytics node.
+- *Production* and *Advanced*: The cluster can support 3 to 8 nodes including optionally an analytics node.
 
 #### License type
 
-- *Essential*, *Discovery*, *Business* and *Production* plans use the MongoDB Community license.
-- *Enterprise* and *Advanced* plans upgrade your cluster so that it uses the MongoDB Enterprise license, giving you the capability to use the [MongoDB BI Connector](https://www.mongodb.com/products/bi-connector){.external} as well as [MongoDB Compass](https://www.mongodb.com/products/compass){.external}.
+- *Discovery*, and *Production* plans use the MongoDB Community license.
+- *Advanced* plan upgrades your cluster so that it uses the MongoDB Enterprise license.
 
 License cost is included inside the service plans. You cannot bring your own licenses.
 
@@ -108,9 +99,9 @@ Once your service is up and running, you will be able to specify IP addresses (o
 
 *Discovery* plan clusters are not backed up.
 
-*Business* and *Production* plan clusters are automatically backed up daily. Backup retention is 7 days.
+*Production* plan clusters are automatically backed up daily. Backup retention is 7 days.
 
-*Enterprise* and *Advanced* plan clusters are automatically backed up daily, with [PITR](https://en.wikipedia.org/wiki/Point-in-time_recovery){.external} support. Backup retention is 30 days with PITR capability for the last 24 hours.
+*Advanced* plan clusters are automatically backed up daily, with [PITR](https://en.wikipedia.org/wiki/Point-in-time_recovery){.external} support. Backup retention is 30 days with PITR capability for the last 24 hours.
 
 See the [Automated Backups guide](/pages/public_cloud/public_cloud_databases/databases_05_automated_backups) for more information.
 
@@ -159,6 +150,8 @@ Furthermore, user creation from the MongoDB Shell is **not** supported: You need
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project. Join our community of users on <https://community.ovh.com/en/>.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project. 
+
+Join our [community of users](/links/community).
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!

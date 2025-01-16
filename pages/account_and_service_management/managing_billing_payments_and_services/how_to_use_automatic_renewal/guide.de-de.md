@@ -1,12 +1,12 @@
 ---
 title: Wie verlängere ich meine OVHcloud Dienste?
 excerpt: Erfahren Sie hier, wie Sie Ihre Dienstleistungen und deren Verlängerung in Ihrem Kundencenter verwalten
-updated: 2024-11-12
+updated: 2024-12-23
 ---
 
 ## Ziel
 
-Das Menü **Meine Dienste** in Ihrem OVHcloud Kundencenter ermöglicht es Ihnen, den Status Ihrer Dienstleistungen zu überprüfen, diese zu verlängern, den Verlängerungstyp zu ändern, Rechnungen zu begleichen oder deren Zahlung im Voraus zu planen.
+Das Menü **Meine Angebote und Dienste** in Ihrem OVHcloud Kundencenter ermöglicht es Ihnen, den Status Ihrer Dienstleistungen zu überprüfen, diese zu verlängern, den Verlängerungstyp zu ändern, Rechnungen zu begleichen oder deren Zahlung im Voraus zu planen.
 
 Folgende Themen werden erläutert:
 
@@ -19,7 +19,7 @@ Folgende Themen werden erläutert:
 
 > [!primary]
 >
-> Je nach Ihrem Wohnsitz, der örtlichen Gesetzgebung und Dienstleistungsart können manche Details dieser Anleitung variieren oder in ihrem Fall nicht zutreffen. Für konkrete Informationen können Sie Ihre OVHcloud Verträge im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) überprüfen: Klicken Sie auf Ihren Account-Namen oben rechts in der Anzeige, öffnen Sie `Produkte und Dienstleistungen`{.action} und wechseln Sie zum Tab `Verträge`{.action}.
+> Je nach Ihrem Wohnsitz, der örtlichen Gesetzgebung und Dienstleistungsart können manche Details dieser Anleitung variieren oder in ihrem Fall nicht zutreffen. Für konkrete Informationen können Sie Ihre OVHcloud Verträge im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) überprüfen: Klicken Sie auf Ihren Account-Namen oben rechts in der Anzeige, öffnen Sie `Meine Angebote und Dienste`{.action} und wechseln Sie zum Tab `Verträge`{.action}.
 >
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/dfpPCa0mUyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -69,23 +69,23 @@ Folgende Themen werden erläutert:
 ## In der praktischen Anwendung
 
 Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).<br>
-Klicken Sie oben rechts auf Ihren Namen und wählen Sie `Produkte und Dienstleistungen`{.action}.
+Klicken Sie oben rechts auf Ihren Namen und wählen Sie `Meine Angebote und Dienste`{.action}.
 
 ![Produkte und Dienstleistungen](/pages/assets/screens/control_panel/product-selection/right-column/products-services.png){.thumbnail}
 
 ### Verlängerungstyp anzeigen <a name="renewal-type"></a>
 
-Die Seite **Meine Dienste** enthält eine Tabelle zur Verwaltung Ihrer OVHcloud Dienstleistungen. Sie finden dort deren Namen, den Typ der Dienstleistung, die Verfügbarkeit der Dienstleistung (z.B. `Aktiv`), deren Status (Art der Verlängerung, durchzuführende Aktion, etc.), das nächste Datum, an dem die Verlängerung oder Kündigung wirksam wird, sowie den Button `...`{.action} zum Zugriff die möglichen Aktionen für jeden Dienst.
+Die Seite **Verwaltung meiner Angebote und Dienste** enthält eine Tabelle zur Verwaltung Ihrer OVHcloud Dienstleistungen. Sie finden dort deren Namen, den Typ der Dienstleistung, die Verfügbarkeit der Dienstleistung (z.B. `Aktiv`), deren Status (Art der Verlängerung, durchzuführende Aktion, etc.), das nächste Datum, an dem die Verlängerung oder Kündigung wirksam wird, sowie den Button `...`{.action} zum Zugriff die möglichen Aktionen für jeden Dienst.
 
-![Meine Dienstleistungen](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/my-services-en.png){.thumbnail}
+![Meine Dienstleistungen](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
 
 > [!success]
 > Sortier-, Filter- und Such-Tools stehen über der Tabelle zur Verfügung.
 > Sie können die Spalten in aufsteigender oder absteigender Reihenfolge sortieren, den Namen einer Ihrer Dienstleistungen suchen oder einen Filter anwenden, um nur einige Ihrer Dienstleistungen nach Ihren eigenen Kriterien anzuzeigen.
 >
-> Ihre Filterkriterien werden dann über der Tabelle angezeigt. Im Folgenden finden Sie ein Beispiel für einen Filter zum Anzeigen von Domainnamen mit manueller Verlängerung, deren Ablaufdatum vor einem Monat liegt.
+> Ihre Filterkriterien werden dann über der Tabelle angezeigt. Im Folgenden finden Sie ein Beispiel für einen Filter zum Anzeigen von Domainnamen mit manueller Verlängerung.
 >
-> ![manageAutomaticRenewal](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/filters-en.png){.thumbnail}
+> ![manageAutomaticRenewal](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/filters-en.png){.thumbnail}
 
 <a name="actions"></a>
 
@@ -98,14 +98,14 @@ Die Seite **Meine Dienste** enthält eine Tabelle zur Verwaltung Ihrer OVHcloud 
 
 Rechts neben einem Dienst klicken Sie auf den Button `...`{.action} in der Spalte `Aktionen` und dann auf die gewünschte Aktion.
 
-![Menü Aktionen](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/actions-en.png){.thumbnail}
+![Menü Aktionen](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/actions-en.png){.thumbnail}
 
 **Die Aktionen werden jeweils im entsprechenden Tab beschrieben.**
 
 > [!tabs]
 > **Verlängerung konfigurieren**
 >>
->>![Verlängerung konfigurieren](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/configure-renewal-en.png){.thumbnail}
+>>![Verlängerung konfigurieren](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/configure-renewal-en.png){.thumbnail}
 >>
 >> Klicken Sie auf die Aktion `Verlängerung konfigurieren`{.action}. Je nach gewähltem Dienst können Sie die manuelle Verlängerung einstellen oder das Intervall für die automatische Verlängerung auswählen. In diesem Fall können Sie die Verlängerungsart sowie die Häufigkeit der Verlängerung auswählen.
 >>
@@ -115,7 +115,7 @@ Rechts neben einem Dienst klicken Sie auf den Button `...`{.action} in der Spalt
 >>
 > **Vorauszahlen**
 >>
->>![Zahlung vorziehen](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/forward-payment-en.png){.thumbnail}
+>>![Zahlung vorziehen](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/forward-payment-en.png){.thumbnail}
 >>
 >> Diese Aktion wird für Dienstleistungen mit **automatischer Verlängerung** angeboten.
 >>
@@ -124,11 +124,11 @@ Rechts neben einem Dienst klicken Sie auf den Button `...`{.action} in der Spalt
 >> Sie können diese Dienste jederzeit vor ihrem Ablaufdatum verlängern und die Dauer ihrer Verlängerung auswählen.
 >> In diesem Fall wird die abonnierte Laufzeit der Gültigkeitsdauer hinzugefügt. Sie verlieren die verbleibende Laufzeit nicht.
 >>
-> **Meine Vertragsbindung kündigen**
+> **Meinen Dienst kündigen**
 >>
->>![Kündigen](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/cancel-en.png){.thumbnail}
+>>![Kündigen](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancel-en.png){.thumbnail}
 >>
->> Diese Aktion wird für Dienste angezeigt, die als **Automatische Verlängerung*** eingestellt sind.
+>> Diese Aktion wird für Dienste angezeigt, die als **Automatische Verlängerung** eingestellt sind.
 >>
 >> Durch Auswahl dieser Aktion werden die automatische Verlängerung und Zahlung für den ausgewählten Dienst deaktiviert.
 >>
@@ -136,7 +136,7 @@ Rechts neben einem Dienst klicken Sie auf den Button `...`{.action} in der Spalt
 >>
 > **Dienst verlängern**
 >>
->>![Dienstleistung verlängern](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/renew-service-en.png){.thumbnail}
+>>![Dienstleistung verlängern](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/renew-service-en.png){.thumbnail}
 >>
 >> Diese Aktion ist nur für Dienstleistungen mit **manueller Verlängerung** verfügbar.
 >>
@@ -145,7 +145,7 @@ Rechts neben einem Dienst klicken Sie auf den Button `...`{.action} in der Spalt
 >>
 > **Meine Rechnung bezahlen**
 >>
->>![Rechnung bezahlen](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/pay-bill-en.png){.thumbnail}
+>>![Rechnung bezahlen](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/pay-bill-en.png){.thumbnail}
 >>
 >> Eine Meldung der Art `Rechnung zu bezahlen` erscheint, wenn eine Rechnung noch nicht beglichen wurde und außerdem folgendes zutrifft:
 >>
@@ -161,7 +161,7 @@ Rechts neben einem Dienst klicken Sie auf den Button `...`{.action} in der Spalt
 
 Sie können gruppierte Aktionen ausführen, indem Sie mehrere Dienste in der Tabelle auswählen und dann auf den Button `Aktionen`{.action} klicken.
 
-![Gruppierte Aktionen](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/batch-actions-en.png){.thumbnail}
+![Gruppierte Aktionen](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/batch-actions-en.png){.thumbnail}
 
 In der folgenden Tabelle sind die möglichen gruppierten Aktionen aufgeführt.
 
@@ -199,7 +199,7 @@ In der folgenden Tabelle sind die möglichen gruppierten Aktionen aufgeführt.
 >> Wenn Ihr Domainname ebenfalls gesperrt und dann verlängert wurde, kann die Frist bis zu 48 Stunden betragen, entsprechend der möglichen Propagationszeit für DNS.
 >> Um Ihre kritischen Dienste vor Unerreichbarkeit zu schützen, empfehlen wir, die automatische Verlängerung zu verwenden und [regelmäßig sicherzustellen, dass Ihre Zahlungsarten gültig sind](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).
 > Das Abonnement meiner Dienstleistung läuft im Juli 2024 ab. Es ist Januar 2024 und ich möchte es für ein Jahr verlängern. Wird das Abonnement dann im Juli 2025 oder im Januar 2025 ablaufen?
->> Wenn Sie die Verlängerung eines Dienstes verlängern (um ein Jahr oder einen kürzeren Zeitraum), wird dieser Zeitraum zum nächsten in der Tabelle „Meine Dienste“ sichtbaren Gültigkeitsdatum hinzugefügt. In Ihrem Fall wird Ihr Dienst bis Juli 2025 verlängert.
+>> Wenn Sie die Verlängerung eines Dienstes verlängern (um ein Jahr oder einen kürzeren Zeitraum), wird dieser Zeitraum zum nächsten in der Tabelle „Verwaltung meiner Angebote und Dienste“ sichtbaren Gültigkeitsdatum hinzugefügt. In Ihrem Fall wird Ihr Dienst bis Juli 2025 verlängert.
 > Das Abonnement meiner Dienstleistung ist am 1. Januar 2024 abgelaufen und ich habe vergessen, es zu verlängern. Ich habe es soeben am 16. Januar 2024 für 6 Monate verlängert, aber ich stelle fest, dass es am 1. Juli 2024 und nicht am 16. Juli 2024 ausläuft. Ist das normal?
 >> Ja, dies ist normal, die Verlängerung beginnt zum Ablaufdatum des Abonnements.
 

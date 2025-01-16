@@ -76,7 +76,7 @@ This feature is not yet available in the Control Panel.
 
 ### Enabling Audit Log Forwarding using APIs
 
-You will have to define the targeted *Stream* of one of your LDP account on which you want your logs to be forwarded to. The enablement of the forwarding will create a subscription for this stream id.
+You will have to define the targeted *Stream* of one of your LDP accounts to which you want your logs forwarded. The enablement of the forwarding will create a subscription for this stream id.
 
 You can retrieve the API specifications in the [OVH API Portal](https://ca.api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#post-/dbaas/logs/-serviceName-/output/graylog/stream).
 

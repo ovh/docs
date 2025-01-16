@@ -603,7 +603,7 @@ Avete configurato il vostro IPv6 ma non funziona nulla?
 
 Esiste una semplice procedura per determinare se il difetto è nella configurazione o nella rete OVHcloud.
 
-Innanzitutto, [metti il tuo server in modalità di salvataggio] (/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
+Innanzitutto, [metti il tuo server in modalità di salvataggio](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
 
 Quindi utilizzare i seguenti comandi per configurare il proprio IPv6 in modo non persistente, sostituendo "YOUR_IPV6", "IPV6_PREFIX" e "IPV6_GATEWAY" con le proprie informazioni:
 

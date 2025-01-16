@@ -1,7 +1,7 @@
 ---
-title: "Ativar os endereços de e-mail incluídos no seu alojamento web"
+title: "Alojamento web - Ativar os endereços de e-mail incluídos"
 excerpt: "Saiba como ativar os endereços de e-mail incluídos na sua oferta de alojamento web"
-updated: 2024-10-01
+updated: 2024-12-12
 ---
 
 ## Objetivo
@@ -75,7 +75,15 @@ Na tabela `Configuração`, clique no botão `...`{.action} à direita de `Ender
 
 > [!warning]
 >
-> Para confirmar a eliminação da oferta de e-mail associada ao seu alojamento web, receberá por e-mail um link de validação. É essencial clicar nesta ligação para que a operação de eliminação seja lançada.
+> Para confirmar a eliminação da oferta de e-mail associada ao seu alojamento web, ser-lhe-á enviado um link de validação por e-mail. Deve clicar obrigatoriamente neste link para que a operação de eliminação seja iniciada.
+
+#### Caso particular - Eliminação do serviço de e-mail associado ao seu alojamento web (para o associar a outro domínio)
+
+Por razões de segurança, a eliminação definitiva de uma oferta de e-mail pode levar vários dias após ter clicado no link de validação de eliminação.
+
+Se deseja eliminar a oferta de e-mail associada ao seu alojamento web de forma a associá-lo a outro domínio, e **apenas** neste caso preciso, deve confirmar por escrito o seu pedido de aceleração de eliminação da oferta. Para isso, contacte o suporte criando um ticket de assistência a partir do seu [centro de ajuda OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help). O ticket de assistência deve **obrigatoriamente** ser criado a partir da conta de cliente (e do identificador de cliente correspondente) que administra o serviço a eliminar.
+
+Uma vez o pedido processado, poderá associar a oferta de e-mail associada ao seu alojamento web a outro domínio.
 
 ## Quer saber mais?
 

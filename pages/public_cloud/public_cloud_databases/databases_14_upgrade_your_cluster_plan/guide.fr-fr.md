@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Databases - Comment mettre à jour votre plan de service (EN)
 excerpt: Find out how to upgrade the service plan of your cluster
-updated: 2024-08-09
+updated: 2025-01-06
 ---
 
 ## Objective
@@ -9,8 +9,8 @@ updated: 2024-08-09
 Learn how to upgrade the service plan of your cluster according to your needs.
 
 > [!warning]
-> Once you have upgraded your solution, you will not be able to downgrade to a lower solution.
 >
+> Once you have upgraded your solution, you will not be able to downgrade to a lower solution.
 
 ## Requirements
 
@@ -21,19 +21,18 @@ Learn how to upgrade the service plan of your cluster according to your needs.
 
 ### Using the OVHcloud Control Panel
 
-To upgrade the service plan of your cluster, log in to the OVHcloud Control Panel and open your Public Cloud project. Click `Databases`{.action} in the left navigation bar and select your engine instance.
+To upgrade the service plan of your cluster, log in to the OVHcloud Control Panel and open your Public Cloud project. Click `Databases`{.action} in the left navigation bar, select your engine instance then click the `Configuration`{.action} tab.
 
 ![Cluster overview](images/cluster_overview.png)
 
-In the `General information`{.action} tab, click `Upgrade your plan`{.action} and choose the desired new plan of your cluster. Then click `Confirm`{.action}.
+Click `Edit`{.action} on the "Plan" line and adjust the Plan of your cluster.
 
 ![Change solution](images/plan_change_view.png)
-
-Curently the OVHcloud Control Panel does not allow downgrading the service plan for some engines but you can do it using the API.
 
 ### Using the OVHcloud API
 
 > [!success]
+>
 > If you are not familiar with using the OVHcloud API, please refer to our guide on [Getting started with the OVHcloud API](/pages/manage_and_operate/api/first-steps).
 
 To upgrade or downgrade the service plan of your cluster, use the following API call:

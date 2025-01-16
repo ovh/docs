@@ -1,7 +1,7 @@
 ---
 title: Backing-up an OVHcloud Managed Kubernetes cluster using Velero
 excerpt: Find out how to back-up an OVHcloud Managed Kubernetes cluster using Velero, including Persistent Volumes
-updated: 2024-11-20
+updated: 2025-01-10
 ---
 
 ## Objective
@@ -10,7 +10,7 @@ In this tutorial, we are using [Velero](https://velero.io/){.external} to backup
 
 Velero is an Open Source tool to safely backup and restore, perform disaster recovery, and migrate Kubernetes cluster resources.
 
-For cluster configuration backup, we are using our Public Cloud's Swift Object Storage with the Swift S3 API as storage backend for Velero. Velero uses the S3 protocol to store the cluster backups on a S3 compatible object storage.
+For cluster configuration backup, we are using our Public Cloud's Swift Object Storage with the Swift S3 API as storage backend for Velero. Velero uses the Amazon S3 protocol to store the cluster backups on a S3 **\*** compatible object storage.
 
 For Persistent Volumes backup, we are using the [CSI snapshot support for Velero](https://velero.io/docs/v1.8/csi/), that enables Velero to backup and restore CSI-backed volumes using the Kubernetes CSI Snapshot Beta APIs.
 
@@ -20,13 +20,13 @@ This tutorial presupposes that you already have a working OVHcloud Managed Kuber
 
 ## Instructions
 
-### Creating the S3 bucket for Velero
+### Creating the Object Storage bucket for Velero
 
-Velero needs a S3 bucket as storage backend to store the data from your cluster. In this section you will create your S3 bucket on OVHcloud Object Storage.
+Velero needs a S3 compatible bucket as storage backend to store the data from your cluster. In this section you will create your S3 bucket on OVHcloud Object Storage.
 
 #### Preparing your working environment
 
-Before creating your S3 bucket you need to:
+Before creating your Object Storage bucket you need to:
 
 - [Prepare your environment to use the OpenStack API](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
 
@@ -51,7 +51,7 @@ Please enter your OpenStack Password for project <project_name> as user <user_na
 
 #### Creating EC2 credentials
 
-S3 tokens are different, you need 2 parameters (**access** and **secret**) to generate a S3 token.
+Object Storage tokens are different, you need 2 parameters (**access** and **secret**) to generate an Object Storage token.
 
 These credentials will be safely stored in Keystone. To generate them with `python-openstack` client:
 
@@ -91,7 +91,7 @@ aws_access_key_id=<AWS_ACCESS_KEY_ID>
 aws_secret_access_key=<AWS_SECRET_ACCESS_KEY>
 ```
 
-Where `<AWS_ACCESS_KEY_ID>` and `<AWS_SECRET_ACCESS_KEY>` are the **access** and **secret** S3 credentials generated in the precedent step.
+Where `<AWS_ACCESS_KEY_ID>` and `<AWS_SECRET_ACCESS_KEY>` are the **access** and **secret** Object Storage credentials generated in the precedent step.
 
 Complete and write down the configuration into `~/.aws/config`:
 
@@ -103,14 +103,14 @@ endpoint = awscli_plugin_endpoint
 # region = <public_cloud_region_without_digit>
 region = gra #for example
 s3 =
-  endpoint_url = https://s3.<public_cloud_region_without_digit>.cloud.ovh.net
+  endpoint_url = https://s3.<public_cloud_region_without_digit>.io.cloud.ovh.net
   signature_version = s3v4
   addressing_style = virtual
 s3api =
-  endpoint_url = https://s3.<public_cloud_region_without_digit>.cloud.ovh.net
+  endpoint_url = https://s3.<public_cloud_region_without_digit>.io.cloud.ovh.net
 ```
 
-#### Create a S3 bucket for Velero
+#### Create an Object Storage bucket for Velero
 
 Create a new bucket:
 
@@ -137,7 +137,7 @@ velero install \
   --plugins velero/velero-plugin-for-aws:v1.10.1,velero/velero-plugin-for-csi:v0.4.0 \
   --bucket <your bucket name> \
   --secret-file ./credentials \
-  --backup-location-config region=<public cloud region without digit>,s3ForcePathStyle="true",s3Url=https://s3.<public cloud region without digit>.cloud.ovh.net,checksumAlgorithm="" \
+  --backup-location-config region=<public cloud region without digit>,s3ForcePathStyle="true",s3Url=https://s3.<public cloud region without digit>.io.cloud.ovh.net,checksumAlgorithm="" \
   --snapshot-location-config region=<public cloud region without digit>,enableSharedConfig=true
 ```
 
@@ -154,7 +154,7 @@ velero install \
   --plugins velero/velero-plugin-for-aws:v1.10.1 \
   --bucket <your bucket name> \
   --secret-file ./credentials \
-  --backup-location-config region=<public cloud region without digit>,s3ForcePathStyle="true",s3Url=https://s3.<public cloud region without digit>.cloud.ovh.net,checksumAlgorithm="" \
+  --backup-location-config region=<public cloud region without digit>,s3ForcePathStyle="true",s3Url=https://s3.<public cloud region without digit>.io.cloud.ovh.net,checksumAlgorithm="" \
   --snapshot-location-config region=<public cloud region without digit>,enableSharedConfig=true
 ```
 
@@ -167,7 +167,7 @@ velero install \
   --plugins velero/velero-plugin-for-aws:v1.10.1,velero/velero-plugin-for-csi:v0.4.0 \
   --bucket velero-s3 \
   --secret-file .aws/credentials \
-  --backup-location-config region=gra,s3ForcePathStyle="true",s3Url=https://s3.gra.cloud.ovh.net,checksumAlgorithm="" \
+  --backup-location-config region=gra,s3ForcePathStyle="true",s3Url=https://s3.gra.io.cloud.ovh.net,checksumAlgorithm="" \
   --snapshot-location-config region=gra,enableSharedConfig=true
 ```
 
@@ -180,7 +180,7 @@ velero install \
   --plugins velero/velero-plugin-for-aws:v1.10.1 \
   --bucket velero-s3 \
   --secret-file .aws/credentials \
-  --backup-location-config region=gra,s3ForcePathStyle="true",s3Url=https://s3.gra.cloud.ovh.net,checksumAlgorithm="" \
+  --backup-location-config region=gra,s3ForcePathStyle="true",s3Url=https://s3.gra.io.cloud.ovh.net,checksumAlgorithm="" \
   --snapshot-location-config region=gra,enableSharedConfig=true
 ```
 
@@ -191,7 +191,7 @@ $ velero install \
   --plugins velero/velero-plugin-for-aws:v1.6.0,velero/velero-plugin-for-csi:v0.4.0 \
   --bucket velero-s3 \
   --secret-file .aws/credentials \
-  --backup-location-config region=gra,s3ForcePathStyle="true",s3Url=https://s3.gra.cloud.ovh.net,checksumAlgorithm="" \
+  --backup-location-config region=gra,s3ForcePathStyle="true",s3Url=https://s3.gra.io.cloud.ovh.net,checksumAlgorithm="" \
   --snapshot-location-config region=gra,enableSharedConfig=true
 CustomResourceDefinition/backups.velero.io: attempting to create resource
 CustomResourceDefinition/backups.velero.io: attempting to create resource client
@@ -929,6 +929,8 @@ Please refer to [official Velero documentation](https://velero.io/docs/){.extern
 
 ## Go further
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es-es/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-- Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
+
+**\***: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

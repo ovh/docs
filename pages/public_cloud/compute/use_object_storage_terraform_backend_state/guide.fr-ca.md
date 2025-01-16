@@ -45,7 +45,7 @@ Mais l’usage courant, en environnement de production, est de le stocker à dis
 
 ![Terraform state schema](images/schema.png){.thumbnail}
 
-Par exemple, vous pouvez stocker votre état Terraform sur un conteneur Object Storage High Performance (S3) d’OVHcloud.
+Par exemple, vous pouvez stocker votre état Terraform sur un conteneur Object Storage High Performance d’OVHcloud.
 
 Pour ce faire, vous devez configurer un `backend` dans vos fichiers de configuration Terraform HCL.
 
@@ -91,7 +91,7 @@ terraform {
       skip_region_validation      = true
       skip_s3_checksum            = true
 
-      # The following fields should be added if your S3 user credentials are not
+      # The following fields should be added if your Object Storage user credentials are not
       # already configured in files ~/.aws/credentials, ~/.aws/config or in
       # environment variables.
       access_key                  = "s3 user access key"
@@ -117,7 +117,7 @@ terraform {
       skip_requesting_account_id  = true
       skip_s3_checksum            = true
 
-      # The following fields should be added if your S3 user credentials are not
+      # The following fields should be added if your Object Storage user credentials are not
       # already configured in files ~/.aws/credentials, ~/.aws/config or in
       # environment variables.
       access_key                  = "s3 user access key"
@@ -126,7 +126,7 @@ terraform {
 }
 ```
 
-Dans ce fichier, vous définissez un backend [Swift Terraform](https://www.terraform.io/language/settings/backends/s3) dans la région `gra`. N'hésitez pas à modifier ce paramètre si vous avez créé un conteneur Object Storage dans une autre région.
+Dans ce fichier, vous définissez un backend [Object Storage Terraform](https://www.terraform.io/language/settings/backends/s3) dans la région `gra`. N'hésitez pas à modifier ce paramètre si vous avez créé un conteneur Object Storage dans une autre région.
 
 ### Terraform Init
 

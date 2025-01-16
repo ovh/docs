@@ -1,5 +1,5 @@
 ---
-title: "Object Storage - Utiliser S3 Object Storage avec WinSCP"
+title: "Object Storage - Utiliser Object Storage avec WinSCP"
 excerpt: Apprenez à configurer WinSCP pour gérer vos buckets et vos objets
 updated: 2023-10-16
 ---
@@ -14,7 +14,7 @@ updated: 2023-10-16
 
 - Un bucket
 - Un utilisateur avec les droits d'accès requis sur le bucket
-- Vos identifiants S3 (access_key et secret_access_key).
+- Vos identifiants Object Storage (access_key et secret_access_key).
 
 Consultez notre guide [Object Storage - Premiers pas avec Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage).
 
@@ -28,7 +28,7 @@ Démarrez WinSCP. La boîte de dialogue de connexion s'affiche. Dans la boîte d
 
 2. Sur le nœud Nouveau site, sélectionnez le protocole `Amazon S3`{.action}.
 
-![S3 file protocol](images/S3_file_protocol.png)
+![Amazon S3 file protocol](images/S3_file_protocol.png)
 
 3. Entrez votre Endpoint (sans `https://`) correspondant à votre classe de stockage et définissez le champ `Port number` sur `443`.
 
@@ -59,7 +59,7 @@ Entrez ensuite votre `clé secrète`
 
 7. Résultat
 
-Une fois connecté, vous verrez une liste de vos buckets S3 sous la forme de *dossiers* dans le dossier racine.
+Une fois connecté, vous verrez une liste de vos buckets Object Storage sous la forme de *dossiers* dans le dossier racine.
 
 > [!warning]
 >

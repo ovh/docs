@@ -5,7 +5,7 @@ updated: 2024-07-08
 ---
 
 > [!primary]
-> Ce guide documente l'utilisation via l'API S3. Les futures mises à jour de ce guide détailleront le fonctionnement via l'espace client OVHcloud.
+> Ce guide documente l'utilisation via l'API. Les futures mises à jour de ce guide détailleront le fonctionnement via l'espace client OVHcloud.
 
 ## Objectif
 
@@ -15,7 +15,7 @@ updated: 2024-07-08
 
 - [Un projet Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project) dans votre compte OVHcloud
 - Etre connecté à [l'espace client OVHcloud](/links/manager)
-- [Un utilisateur S3](/pages/storage_and_backup/object_storage/s3_identity_and_access_management) déjà créé
+- [Un utilisateur Object Storage](/pages/storage_and_backup/object_storage/s3_identity_and_access_management) déjà créé
 - [AWS CLI installé et configuré](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage)
 
 ## En pratique
@@ -49,7 +49,7 @@ La gestion de versions ajoute une couche de protection à vos données en conser
 
 ### Identifiants de versions
 
-Chaque objet a un identifiant de version unique, que le versioning S3 soit activé ou non. Dans un bucket avec versioning activé, cet identifiant de version distingue une version des autres versions du même objet.
+Chaque objet a un identifiant de version unique, que le versioning soit activé ou non. Dans un bucket avec versioning activé, cet identifiant de version distingue une version des autres versions du même objet.
 
 - **Version actuelle :** la version la plus récemment créée d'un objet (avec la valeur de métadonnée `LastModifiedDate` la plus récente).
 - **Versions non actuelles :** versions créées précédemment (avec leurs propres identifiants de version uniques).
@@ -84,7 +84,7 @@ Lorsque le versioning est activé :
 
 #### Via l'AWS CLI
 
-Pour activer le versioning sur un bucket de stockage d'objets S3, utilisez la commande suivante :
+Pour activer le versioning sur un bucket Object Storage, utilisez la commande suivante :
 
 ```sh
 aws s3api put-bucket-versioning --bucket my-bucket --versioning-configuration Status=Enabled
@@ -118,7 +118,7 @@ La suspension du versioning empêche les nouveaux objets de recevoir un identifi
 
 ### Considérations importantes
 
-- **Coûts de stockage :** chaque version d'un objet est stockée comme un objet complet, ce qui entraîne des coûts de stockage S3 standard.
+- **Coûts de stockage :** chaque version d'un objet est stockée comme un objet complet, ce qui entraîne des coûts de stockage Object Storage - Standard.
 - **Application :** lorsque le versioning est activé, il s'applique à tous les objets dans le bucket, y compris ceux ajoutés avant l'activation du versioning.
 - **Suspension :** la suspension du versioning ne supprime pas les versions existantes. Elle empêche seulement la création de nouvelles versions.
 - **Permissions :** seul le propriétaire du bucket peut activer ou suspendre le versioning.

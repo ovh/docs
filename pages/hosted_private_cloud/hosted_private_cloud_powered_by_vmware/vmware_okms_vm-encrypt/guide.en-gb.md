@@ -672,7 +672,7 @@ To complete step 3, click `NEXT`{.action}.
 
 In step 4 (storage compatibility), yu have the compatibility and incompatibility of your Hosted Private Cloud VMware on OVHcloud datacentre (Dedicated Cloud).
 
-When you have finished checking the compatibility of your storage space, click `NEXT`{action}.
+When you have finished checking the compatibility of your storage space, click `NEXT`{.action}.
 
 ![VM Storage Policies Creation 04](images/vsphere_vm_policie_4-optim-resize.png){.thumbnail}
 

@@ -1,7 +1,7 @@
 ---
 title: 'Configuring a network bridge'
 excerpt: 'Find out how to configure your virtual machines for access to the public internet'
-updated: 2024-10-10
+updated: 2024-12-13
 ---
 
 > [!primary]
@@ -15,7 +15,7 @@ Bridged networking can be used to configure your virtual machines. Some tweaking
 
 ## Requirements
 
-- A dedicated server with a hypervisor installed (e.g. [VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox, etc.)
+- A dedicated server with a hypervisor installed (e.g. Citrix Xen Server, Proxmox, etc.)
 - At least one [Additional IP address](/links/network/additional-ip) routed to the server.
 - Access to the [OVHcloud Control Panel](/links/manager) or the [OVHcloud API](/pages/manage_and_operate/api/first-steps).
 
@@ -24,9 +24,9 @@ Bridged networking can be used to configure your virtual machines. Some tweaking
 >
 > Please visit our [comparison page](/links/bare-metal/eco-compare) for more information.
 >
-> This guide is not applicable to servers of the ranges [Scale](https://www.ovhcloud.com/en-sg/bare-metal/scale/) and [High Grade](https://www.ovhcloud.com/en-sg/bare-metal/high-grade/). The same applies to the Advance range of servers featuring AMD Epyc 4K and 8K CPUs, launched in July 2024.
+> This guide is not applicable to servers of the ranges [Scale](https://www.ovhcloud.com/en-sg/bare-metal/scale/) and [High Grade](https://www.ovhcloud.com/en-sg/bare-metal/high-grade/).
 > 
-> Refer to the following guides instead: [Configuring the network on ESXi on the High Grade & SCALE ranges](/pages/bare_metal_cloud/dedicated_servers/esxi-network-HG-Scale), [Configuring the network on Proxmox VE on the High Grade & SCALE ranges](/pages/bare_metal_cloud/dedicated_servers/proxmox-network-HG-Scale) and [Configuring the network on Windows Server with Hyper-V on the High Grade & SCALE ranges](/pages/bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale).
+> Refer to the following guides instead: [Configuring the network on Proxmox VE on the High Grade & SCALE ranges](/pages/bare_metal_cloud/dedicated_servers/proxmox-network-HG-Scale) and [Configuring the network on Windows Server with Hyper-V on the High Grade & SCALE ranges](/pages/bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale).
 >
 
 ## Instructions

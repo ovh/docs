@@ -8,7 +8,7 @@ In this tutorial, we are using [Stash](https://stash.run/){.external} to backup 
 
 Stash is an open source tool to safely backup and restore, perform disaster recovery, and migrate Kubernetes persistent volumes.
 
-We are using our Public Cloud's Swift Object Storage with the Swift S3 API as storage backend for Stash. Stash uses the S3 protocol to store the cluster backups on a S3 compatible object storage.
+We are using our Public Cloud's Swift Object Storage with the Swift S3 API as storage backend for Stash. Stash uses the Amazon S3 protocol to store the cluster backups on a S3 **\*** compatible object storage.
 
 ---
 
@@ -20,14 +20,14 @@ You also need to have [Helm](https://docs.helm.sh/) installer on your workstatio
 
 ---
 
-## Create the S3 bucket for Stash
+## Create the Object Storage bucket for Stash
 
-Stash needs a S3 bucket as storage backend to store the data from your cluster.  
-In this section you will create your S3 bucket on Swift.
+Stash needs an Object Storage bucket as storage backend to store the data from your cluster.  
+In this section you will create your Object Storage bucket on Swift.
 
 ### Prepare your working environment
 
-Before creating your S3 bucket you need to:
+Before creating your Object Storage bucket you need to:
 
 - [Prepare your environement to use the OpenStack API](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
 
@@ -52,7 +52,7 @@ Please enter your OpenStack Password for project &lt;project_name> as user &lt;u
 
 ### Create EC2 credentials
 
-S3 tokens are different, you need 2 parameters (**access** and **secret**) to generate a S3 token.
+Object Storage tokens are different, you need 2 parameters (**access** and **secret**) to generate an Object Storage token.
 
 These credentials will be safely stored in Keystone. To generate them with `python-openstack` client:
 
@@ -97,7 +97,7 @@ s3 =
   addressing_style = virtual
 ```
 
-### Create a S3 bucket for Stash
+### Create an Object Storage bucket for Stash
 
 Create a new bucket:
 
@@ -105,9 +105,9 @@ Create a new bucket:
 aws --profile default s3 mb s3://s3-stash
 ```
 
-### Create a Kubernetes `Secret` to store S3 credentials
+### Create a Kubernetes `Secret` to store Object Storage credentials
 
-To give Stash access to the S3 bucket, you need to put the credentials (the `access_key` and the `secret_access_key`) into a Kubernetes `Secret`.
+To give Stash access to the Object Storage bucket, you need to put the credentials (the `access_key` and the `secret_access_key`) into a Kubernetes `Secret`.
 
 ```bash
 kubectl create namespace nginx-example
@@ -579,9 +579,9 @@ nginx-backup-1586938564   BackupConfiguration   nginx-backup   Succeeded   77s
 
 We can see above that the backup session has succeeded. Now, we are going to verify that the `VolumeSnapshot` has been created and the snapshots has been stored in the respective backend.
 
-### Verifying Volume Snapshots in OVHcloud Cloud Manager
+### Verifying Volume Snapshots in OVHcloud Cloud Control Panel
 
-The snapshots are visible on the . To see then, go to Object Storage section, where you will find the S3 bucket you have created. By clicking on the bucket you will see the list of objects, including all the snapshot beginning with the `/backup/demo/deployment/stash-demo` we had defined in the `Repository`:
+The snapshots are visible on the [OVHcloud Control Panel](/links/manager). To see thmn, go to Object Storage section, where you will find the Object Storage bucket you have created. By clicking on the bucket you will see the list of objects, including all the snapshot beginning with the `/backup/demo/deployment/stash-demo` we had defined in the `Repository`:
 
 ![Snapshots onb OVHcloud Manager](images/snapshots-on-manager.png){.thumbnail}
 
@@ -759,6 +759,8 @@ release "stash" uninstalled
 
 ## Go further
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr-ca/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-- Join our [community of users](/links/community).
+Join our [community of users](/links/community).
+
+**\***: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

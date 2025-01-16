@@ -1,12 +1,12 @@
 ---
 title: Managing renewal for OVHcloud services
 excerpt: Find out how to manage automatic renewal for your services via the OVHcloud Control Panel
-updated: 2024-11-12
+updated: 2024-12-23
 ---
 
 ## Objective
 
-The **My services** menu in the OVHcloud Control Panel allows you to check the status of your services, renew them, modify their renewal type, pay your bills, or pay in advance.
+The **My solutions & services** menu in the OVHcloud Control Panel allows you to check the status of your services, renew them, modify their renewal type, pay your bills, or pay in advance.
 
 This guide will help you to:
 
@@ -19,7 +19,7 @@ This guide will help you to:
 
 > [!primary]
 >
-> Depending on your place of residence, local legislation, and the solutions concerned, the details in this guide may vary or not apply to your situation. For further information, please refer to your OVHcloud contracts via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg): Click on your name in the top right-hand corner of your screen, then `Products and services`{.action}, then the `Contracts`{.action} tab.
+> Depending on your place of residence, local legislation, and the solutions concerned, the details in this guide may vary or not apply to your situation. For further information, please refer to your OVHcloud contracts via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg): Click on your name in the top right-hand corner of your screen, then `My solutions & services`{.action}, then the `Contracts`{.action} tab.
 >
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/dfpPCa0mUyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -69,23 +69,23 @@ This guide will help you to:
 ## Instructions
 
 Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/en/&ovhSubsidiary=en).<br>
-Click your name in the top right-hand corner, then choose `Products and services`{.action}.
+Click your name in the top right-hand corner, then choose `My solutions & services`{.action}.
 
 ![products and services](/pages/assets/screens/control_panel/product-selection/right-column/products-services.png){.thumbnail}
 
 ### Display renewal type <a name="renewal-type"></a>
 
-The **My services** page contains a table for managing your OVHcloud services. You can find their names, the type of service, service availability (`Active` by default), its status (renewal type, action to be taken, etc.), the next renewal or cancellation date of effect, and a `...`{.action} button dedicated to the possible actions for each service.
+The **Manage my solutions and services** page contains a table for managing your OVHcloud services. You can find their names, the type of service, service availability (`Active` by default), its status (renewal type, action to be taken, etc.), the next renewal or cancellation date of effect, and a `...`{.action} button dedicated to the possible actions for each service.
 
-![my services](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/my-services-en.png){.thumbnail}
+![my services](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
 
 > [!success]
 > Sorting, filtering, and searching tools are available above the table.
 > You can sort the columns in ascending or descending order, search for the name of one of your services, or apply a filter to display only some of your services according to the criteria of your choice.
 >
-> Your filter criteria will then be displayed above the table. Here is an example of a filter that can be used to display domain names that are renewed manually and have a subscription end date that expires before one month.
+> Your filter criteria will then be displayed above the table. Here is an example of a filter that can be used to display domain names that are renewed manually.
 >
-> ![manageautomaticrenewal](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/filters-en.png){.thumbnail}
+> ![manageautomaticrenewal](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/filters-en.png){.thumbnail}
 
 <a name="actions"></a>
 
@@ -98,14 +98,14 @@ The **My services** page contains a table for managing your OVHcloud services. Y
 
 To the right of a service, click the `...`{.action}' button in the `Actions` column, then click on the action you want to perform.
 
-![actions menu](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/actions-en.png){.thumbnail}
+![actions menu](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/actions-en.png){.thumbnail}
 
 **Each action is detailed in one of the tabs below.**
 
 > [!tabs]
 > **Configure renewal**
 >>
->>![configure renewal](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/configure-renewal-en.png){.thumbnail}
+>>![configure renewal](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/configure-renewal-en.png){.thumbnail}
 >>
 >> Click the `Configure renewal`{.action} action. Depending on the service you have chosen, you can set it to manual renewal, or choose the automatic renewal frequency.
 >>
@@ -115,7 +115,7 @@ To the right of a service, click the `...`{.action}' button in the `Actions` col
 >>
 > **Bring forward payment**
 >>
->>![anticipate payment](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/forward-payment-en.png){.thumbnail}
+>>![anticipate payment](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/forward-payment-en.png){.thumbnail}
 >>
 >> This action is available for services with **automatic renewal**.
 >>
@@ -124,9 +124,9 @@ To the right of a service, click the `...`{.action}' button in the `Actions` col
 >> You can renew these services at any time before their expiry, as well as choose the renewal duration.
 >> In this case, the duration of validity subscribed to will be added to the current validity period. You will not lose any remaining validity time.
 >>
-> **Cancel subscription**
+> **Cancel my subscription**
 >>
->>![cancel](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/cancel-en.png){.thumbnail}
+>>![cancel](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancel-en.png){.thumbnail}
 >>
 >> This action is available for services set to **automatic renewal**.
 >>
@@ -136,7 +136,7 @@ To the right of a service, click the `...`{.action}' button in the `Actions` col
 >>
 > **Renew service**
 >>
->>![Renew service](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/renew-service-en.png){.thumbnail}
+>>![Renew service](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/renew-service-en.png){.thumbnail}
 >>
 >> This action is only available for services with **manual renewal**.
 >>
@@ -145,7 +145,7 @@ To the right of a service, click the `...`{.action}' button in the `Actions` col
 >>
 > **Pay my bill**
 >>
->>![Pay a bill](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/pay-bill-en.png){.thumbnail}
+>>![Pay a bill](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/pay-bill-en.png){.thumbnail}
 >>
 >> A `Bill to pay` statement is displayed when an invoice is awaiting payment and when:
 >>
@@ -161,7 +161,7 @@ To the right of a service, click the `...`{.action}' button in the `Actions` col
 
 You can perform group actions by selecting several services in the table, then clicking on the `Actions`{.action} button.
 
-![bulk actions](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/batch-actions-en.png){.thumbnail}
+![bulk actions](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/batch-actions-en.png){.thumbnail}
 
 The table below details the possible group actions.
 
@@ -199,7 +199,7 @@ The table below details the possible group actions.
 >> If your domain name was also suspended and has been renewed, the delay may be longer, and may take up to 48 hours, corresponding to the DNS propagation delay.
 >> To protect your critical services from becoming inaccessible, we recommend to prioritise automatic renewal and to [check regularly that your payment methods are up to date](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).
 > My service subscription expires in July 2024. It's January 2024, and I want to renew it for another year. Will the subscription then expire in July 2025 or January 2025?
->> When you extend the renewal period for a service (for 1 year or a shorter period), this period is added to the next date of effect shown in the "My services" table. In your case, your service will be renewed until July 2025.
+>> When you extend the renewal period for a service (for 1 year or a shorter period), this period is added to the next date of effect shown in the "Manage my solutions and services" table. In your case, your service will be renewed until July 2025.
 > My service subscription expired on January 1st 2024 and I forgot to renew it. I have just renewed it on January 16, 2024, for six months, but I note that it will expire on July 1, 2024, and not on July 16, 2024. Is that normal?
 >> Yes, it is normal, the renewal starts on the expiry date of the subscription. 
 

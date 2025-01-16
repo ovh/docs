@@ -29,7 +29,7 @@ In this guide you will:
 - Visualize the events in UI
 - Forward and store the events in an OVHcloud Object Storage bucket
 
-You can use the *Reset cluster* function in the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external} to reinitialize your cluster before following this tutorial.
+You can use the *Reset cluster* function in the Public Cloud section of the [OVHcloud Control Panel](/links/manager) to reinitialize your cluster before following this tutorial.
 
 ## Requirements
 
@@ -281,21 +281,21 @@ Click the "EVENTS" tab:
 
 You should see the previous events generated thanks to our tests.
 
-### Archiving the events to an OVHcloud Object Storage container (S3)
+### Archiving the events to an OVHcloud Object Storage container
 
-You can also save/push the events to an OVHcloud Object Storage bucket (compatible with S3 API) to archive the outputs and be able to analyze them later if you want.
+You can also save/push the events to an OVHcloud Object Storage bucket (compatible with the S3 **\*** API) to archive the outputs and be able to analyze them later if you want.
 
 To do that, you need to have an Object Storage container. If you don't already had one, you can follow the [Creating an Object Storage container](/pages/storage_and_backup/object_storage/s3_create_bucket) guide.
 
 For this guide, our Object Storage container is:
 
-- a `High Performance Object Storage - S3 API`
+- a `S3 compatible Object Storage - High Performance`
 - in `GRA` region
 - with a newly created user
 - named `falco`
 
 > [!primary]
-> Save the S3 credentials, you will use the `S3 access key` and the `S3 secret key` in the coming `helm install` command.
+> Save the Object Storage credentials, you will use the `Object Storage access key` and the `Object Storage secret key` in the coming `helm install` command.
 
 ![OVHcloud Object Storage](images/object-storage.png){.thumbnail}
 
@@ -404,11 +404,11 @@ $ kubectl logs -l app.kubernetes.io/part-of=falcosidekick --all-containers -n fa
 2024/04/05 12:58:27 [INFO]  : AWS S3 - Upload payload OK
 ```
 
-Great, the logs confirm that the events have been pushed to the UI and also to the OVHcloud S3 bucket.
+Great, the logs confirm that the events have been pushed to the UI and also to the OVHcloud Object Storage bucket.
 
 You can check on your OVHcloud Object Storage `falco` container/bucket that the output has been correctly stored:
 
-![OVHcloud S3 bucket falco](images/bucket.png){.thumbnail}
+![OVHcloud Object Storage bucket falco](images/bucket.png){.thumbnail}
 
 ### What's next?
 
@@ -419,7 +419,7 @@ After receving events we can, for example, forward the alerts to other multiples
 - Slack
 - Discord
 - Elasticsearch
-- S3 (done)
+- Amazon S3 (done)
 - SMTP
 - Opsgenie
 - Webhook
@@ -446,6 +446,8 @@ helm uninstall falco -n falco
 
 ## Go further
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ca/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-- Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
+
+**\***: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

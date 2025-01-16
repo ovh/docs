@@ -12,7 +12,7 @@ updated: 2024-08-05
 
 ## Objective
 
-[OVHcloud Cold Archive](https://www.ovhcloud.com/en/public-cloud/cold-archive/) is a class of storage designed for long-term storage of rarely accessed data.
+[OVHcloud Cold Archive](/links/public-cloud/cold-archive) is a class of storage designed for long-term storage of rarely accessed data.
 
 Its main features are:
 
@@ -43,7 +43,7 @@ The service allows you to focus on building and deploying cloud applications whi
 
 ### Concepts
 
-The service is fully managed by OVHcloud and accessible through the S3 API.
+The service is fully managed by OVHcloud and accessible through the S3 **\*** compatible API.
 
 ![Archive](images/restoring.PNG){.thumbnail}
 
@@ -91,7 +91,7 @@ You can track the different steps of your data by the status of your bucket
 
 ### Network, upload and retrieval performances
 
-Cold Archive is a service based on Object Storage - S3 API. Performance and limitations (number of buckets, account, maximum bandwidth per connection, number of requests per second on bucket, maximum size per object / mpu / part, etc.) are available [here](/pages/storage_and_backup/object_storage/s3_limitations)
+Cold Archive is a service based on Object Storage. Performance and limitations (number of buckets, account, maximum bandwidth per connection, number of requests per second on bucket, maximum size per object / mpu / part, etc.) are available [here](/pages/storage_and_backup/object_storage/s3_limitations)
 
 To upload your data, the maximum bandwidth is **1 Gbps per logical connection** and the number of connections that can be used in parallel is **unlimited**.
 
@@ -125,7 +125,7 @@ Magnetic tapes are built to last for decades (as opposed to an average of five y
 
 Using server-side encryption with customer-provided encryption keys (SSE-C) allows you to set your own encryption keys.
 
-When you upload an object, Object Storage - S3 API uses the encryption key you provide to apply AES-256 encryption to your data. When you retrieve an object, you must provide the same encryption key as part of your request. Object Storage - S3 API first verifies that the encryption key you provided matches and then decrypts the object before returning the object data to you.
+When you upload an object, Object Storage uses the encryption key you provide to apply AES-256 encryption to your data. When you retrieve an object, you must provide the same encryption key as part of your request. Object Storage first verifies that the encryption key you provided matches and then decrypts the object before returning the object data to you.
 
 #### Immutability by WORM
 
@@ -141,7 +141,7 @@ The Object Storage is available through a public endpoint (public IP).
 
 ### Pricing
 
-Our prices are described [here](https://www.ovhcloud.com/en/public-cloud/prices/).
+Our prices are described [here](/links/public-cloud/prices).
 
 The Cold Archive solution is billed based on the archived storage space used (on magnetic tapes) and the deposit space used (Object Storage space) with a granularity of 1 GB. To ensure readability, the price is displayed in GB/month, but the billing granularity is per GB/hour, considering there are an average of 720 hours in a month.
 
@@ -165,3 +165,5 @@ Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask question
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assistance on your specific use case or project.
 
 Join our [community of users](/links/community).
+
+**\***: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

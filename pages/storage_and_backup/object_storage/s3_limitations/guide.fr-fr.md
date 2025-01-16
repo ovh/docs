@@ -1,12 +1,12 @@
 ---
 title: Object Storage - Limites techniques
-excerpt: "Retrouvez ici les limites techniques de l'offre S3 Object Storage"
+excerpt: "Retrouvez ici les limites techniques de l'offre Object Storage"
 updated: 2024-11-12
 ---
 
 ## Objectif
 
-Retrouvez ici les limites techniques relatives à l'offre S3 Object Storage OVHcloud.
+Retrouvez ici les limites techniques relatives à l'offre Object Storage.
 
 ## Performance
 
@@ -14,7 +14,7 @@ Retrouvez ici les limites techniques relatives à l'offre S3 Object Storage OVHc
 
 1 Gbps / connexion.
 
-Étant donné que la solution **S3 Object Storage OVHcloud** est un système hautement distribué, l’utilisation de **requêtes parallèles** vous aidera à surmonter cette limitation. En fonction de votre application et de votre cas d'usage, cette opération peut être effectuée en initiant simultanément des requêtes (également appelées *concurrent requests*).
+Étant donné que la solution **Object Storage** est un système hautement distribué, l’utilisation de **requêtes parallèles** vous aidera à surmonter cette limitation. En fonction de votre application et de votre cas d'usage, cette opération peut être effectuée en initiant simultanément des requêtes (également appelées *concurrent requests*).
 
 Découvrez comment maximiser vos performances avec [ce guide](/pages/storage_and_backup/object_storage/s3_performance_optimization).
 
@@ -81,10 +81,11 @@ La taille théorique maximale d’un seul *Large Object* uploadé via MPU est do
 
 ### Disponibilité des fonctionnalités
 
-Consultez notre guide [Object Storage - Compatibilité S3](/pages/storage_and_backup/object_storage/s3_s3_compliancy).
+Consultez notre guide [Object Storage - Compatibilité](/pages/storage_and_backup/object_storage/s3_s3_compliancy).
 
 ## Aller plus loin
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
+

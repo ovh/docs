@@ -1,12 +1,12 @@
 ---
 title: Object Storage - Optimising Performance
-excerpt: This guide walks you through various methods to optimise the performance of your OVHcloud S3 Object Storage buckets, including using byte range fetches, multipart uploads and other methods
+excerpt: This guide walks you through various methods to optimise the performance of your Object Storage buckets, including using byte range fetches, multipart uploads and other methods
 updated: 2024-03-27
 ---
 
 ## Objective
 
-There are several ways to optimise the performance of your buckets on OVHcloud S3 Object Storage. The following guide will walk you through the different optimization methods.
+There are several ways to optimise the performance of your buckets on Object Storage. The following guide will walk you through the different optimization methods.
 
 ### Using byte range fetch
 
@@ -19,6 +19,7 @@ To download part of an object, you must use additional parameters to specify whi
 ```bash
 user@host:~$ aws s3api get-object --bucket test-bucket --key filename --range bytes=0-500 object_part
 ```
+
 ### Using MPUs
 
 You can upload a single object as a collection of parts using multipart upload. These parts are yours to upload separately and in any sequence. You can retransmit a part without affecting the others if the transmission of a part fails. Once you have downloaded all the parts, OVHcloud Object Storage assembles them and rebuilds the object.
@@ -206,7 +207,7 @@ It is also possible to significantly optimise performances by adopting good prac
 
 OpenIO is a software defined storage solution on which OVHcloud Object Storage is based on.
 
-In OpenIO, a **container** is basically an internal logical entity that contains all the objects for a given bucket. Each container is associated with an internal metadata database that lists all the addresses in the cluster of the objects contained in it. By default, an S3 bucket is associated with one container but this can change with the sharding mechanism.
+In OpenIO, a **container** is basically an internal logical entity that contains all the objects for a given bucket. Each container is associated with an internal metadata database that lists all the addresses in the cluster of the objects contained in it. By default, an Object Storage bucket is associated with one container but this can change with the sharding mechanism.
 
 Sharding is the mechanism by which a container is split into 2 new sub-containers (and thus its associated metadata database is also split in 2) when it reaches **a critical number of objects** called **shards**.
 
@@ -289,6 +290,6 @@ When applicable, we recommend that you increase the object/part size as much as 
 
 ## Go further <a name="go-further"></a>
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

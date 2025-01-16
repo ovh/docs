@@ -8,9 +8,9 @@ updated: 2024-02-26
 
 The RACI below details shared responsibilities between OVHcloud and the customer for the Public Cloud Object Storage service. This shared model can help relieve the customer’s operational burden for the following service ranges : 
 
-- Standard Object Storage-S3 API
-- High Performance Object Storage-S3 API
-- Standard Object Storage-Swift API
+- Standard Object Storage
+- High Performance Object Storage
+- Standard Object Storage-Swift
 
 | Roles |
 | --- |
@@ -25,7 +25,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Choose the Object Storage container service range following business needs (SWIFT, S3 High Speed, S3 Standard, ...) | RA | I |
+| Choose the Object Storage container service range following business needs (SWIFT, High Speed, Standard, ...) | RA | I |
 | Provide personal data needed for service subscription | RA | I |
 | Choose service location| RA | I |
 
@@ -36,15 +36,13 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
 | Produce, route, deliver and maintain physical and virtuel Instances for service hosting | I | RA |
-| Create S3 credentials for an OpenStack user | RA |  |
+| Create Object Storage credentials for an OpenStack user | RA |  |
 
 #### 2.2. Reversibility model
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Use S3 API to import data in bucket | RA |  |
-
-
+| Use S3 **\*** compatible API to import data in bucket | RA |  |
 
 ### 3. Service usage
 
@@ -66,7 +64,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | --- | --- | --- |
 | Manage access rights to the OVHcloud Control Panel | RA | I |
 | Manage physical and logical access to infrastructures for OVHcloud teams |  | RA |
-| Manage S3 security policy of containers and object created | RA |  |
+| Manage Object Storage security policy of containers and object created | RA |  |
 
 ##### **3.1.3. Monitoring**
 
@@ -133,11 +131,13 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Destroy data from the Object Storage Containers Service via API S3 | RA |  |
+| Destroy data from the Object Storage Containers Service via the S3 compatible API | RA |  |
 | Destroy end-of-life storage devices |  | RA |
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/it/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our community of users on <https://community.ovh.com/en/>
+Join our [community of users](/links/community).
+
+**\***: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

@@ -36,7 +36,7 @@ At this stage, two scenarios can occur:
 
 #### 2.1 - Configuration of the Backup Repository for non-SecNumCloud needs <a name="nonsecnumcloud"></a>
 
-In this configuration, you can use a storage space, as well as an Object Storage S3 to secure the backups in another OVHcloud region.
+In this configuration, you can use a storage space, as well as an Object Storage to secure the backups in another OVHcloud region.
 
 ##### 2.1.1 - Creation of the Backup Repository
 
@@ -85,7 +85,7 @@ In this configuration, you can use a storage space, as well as an Object Storage
 
 This Backup Repository will be used to secure your backups on a secondary storage space, which can be hosted on a second OVHcloud region.
 
-To discover the steps to create an Object Storage S3 bucket, please refer to the detailed steps in [our guide](/pages/storage_and_backup/object_storage/s3_create_bucket).
+To discover the steps to create an Object Storage bucket, please refer to the detailed steps in [our guide](/pages/storage_and_backup/object_storage/s3_create_bucket).
 
 > [!tabs]
 > **Step 1**
@@ -116,17 +116,17 @@ To discover the steps to create an Object Storage S3 bucket, please refer to the
 >>
 > **Step 5**
 >>
->> Enter the `Service point`{.action} which corresponds to the Object Storage S3 endpoint, as well as the region (in lowercase) of your Object Storage S3.
+>> Enter the `Service point`{.action} which corresponds to the Object Storage endpoint, as well as the region (in lowercase) of your Object Storage.
 >>
->> Add the credentials of the S3 user who has the `Administrator`{.action} role on this Object Storage S3. This includes the access key and the secret key of the S3 user associated with the Object Storage S3. Find more information about the S3 user in [this guide](/pages/storage_and_backup/object_storage/s3_identity_and_access_management).
+>> Add the credentials of the Object Storage user who has the `Administrator`{.action} role on this Object Storage. This includes the access key and the secret key of the Object Storage user associated with the Object Storage. Find more information about the Object Storage user in [this guide](/pages/storage_and_backup/object_storage/s3_identity_and_access_management).
 >>
 >> ![backup_repository_s3_5](images/backup_repository_s3_5.png){.thumbnail}
 >>
 > **Step 6**
 >>
->> Indicate the name of the Object Storage S3 bucket where you want to store your SAP HANA backups.
+>> Indicate the name of the Object Storage bucket where you want to store your SAP HANA backups.
 >>
->> You must also indicate or create a directory in this Object Storage S3 bucket.
+>> You must also indicate or create a directory in this Object Storage bucket.
 >>
 >> ![backup_repository_s3_6](images/backup_repository_s3_6.png){.thumbnail}
 >>
@@ -192,7 +192,7 @@ Creating a Scale-out Backup Repository will secure your backups deposited in you
 >>
 > **Step 8**
 >>
->> On your Object Storage S3 bucket, a hierarchical structure has been generated and configured by Veeam Backup and Replication.
+>> On your Object Storage bucket, a hierarchical structure has been generated and configured by Veeam Backup and Replication.
 >>
 >> ![sbr_no_snc_8](images/sbr_no_snc_8.png){.thumbnail}
 >>
@@ -246,7 +246,7 @@ In this configuration, the storage space must also be hosted on a SecNumCloud-qu
 
 For more information on configuring Backup Repositories, please refer to the [Veeam Backup and Replication documentation](https://helpcenter.veeam.com/docs/backup/vsphere/backup_repository.html?ver=120).
 
-The Object Storage S3 solution is not currently qualified as SecNumCloud-compliant and cannot be used to host backups in a SecNumCloud context.
+The Object Storage solution is not currently qualified as SecNumCloud-compliant and cannot be used to host backups in a SecNumCloud context.
 
 If you wish to secure your backups on a second Backup Repository, please repeat this step. Continue with the guide at the step [Installation of Veeam Plug-in for SAP HANA](#veeampluginhana), and then follow the chapter [Creation of the Backup Copy job](#backupcopyjob).
 
@@ -443,7 +443,7 @@ When performing log backups, you have the option to access detailed information.
 
 ![log_backup](images/log_backup.png){.thumbnail}
 
-If you have configured a Scale-out Repository with an S3 Object Storage bucket, you can observe your backups on your S3 Object Storage bucket.
+If you have configured a Scale-out Repository with an Object Storage bucket, you can observe your backups on your Object Storage bucket.
 
 ![sbr_s3](images/sbr_s3.png){.thumbnail}
 

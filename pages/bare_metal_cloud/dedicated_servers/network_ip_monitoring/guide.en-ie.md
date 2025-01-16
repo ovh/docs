@@ -1,7 +1,7 @@
 ---
 title: What are the IP addresses of the OVHcloud monitoring?
 excerpt: Find here the IP addresses to fill in when setting up a firewall so that OVHcloud monitoring will continue to work on your server
-updated: 2024-09-06
+updated: 2025-01-14
 ---
 
 ## Objective
@@ -31,6 +31,10 @@ Reverse|IP|Protocol|
 |netmon-bhs-probe|167.114.37.0/24|icmp|
 |netmon-sgp-probe|139.99.1.144/28|icmp|
 |netmon-waw-probe|193.70.125.118/32|icmp|
+|netmon-mum-probe|148.113.25.1/32|icmp|
+|netmon-syd-probe|139.99.187.247/32|icmp|
+|netmon-tor-probe|72.251.7.222/32|icmp|
+|netmon-eri-probe|51.195.135.163/32|icmp|
 |---|---|---|
 |ping.ovh.net|213.186.33.13|icmp|
 ||xxx.xxx.xxx.250 (xxx.xxx.xxx.aaa is the server ip)|icmp|

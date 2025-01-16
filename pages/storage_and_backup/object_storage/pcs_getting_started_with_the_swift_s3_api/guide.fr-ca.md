@@ -123,8 +123,20 @@ Utilisez la commande suivante pour créer un nouveau bucket :
 user@host:~$ aws --profile default s3 mb s3://bucket
 ```
 
-S3 ne prend plus en charge la création de noms de bukcet contenant des lettres majuscules ou des traits de soulignement.
-Les buckets S3 ne peuvent être créés que sur la stratégie PCS (Stockage d'objets).
+> [!primary]
+>
+> Les buckets S3 ne peuvent être créés que sur la stratégie PCS (Stockage d'objets).
+>
+
+> [!primary]
+>
+> Le nom du conteneur doit respecter les règles suivantes
+>  
+> - Le nom du conteneur peut comporter entre 3 et 63 caractères, et ne peut contenir que des caractères minuscules, des chiffres, des points et des tirets.  
+> - Chaque nom du conteneur doit commencer par une lettre minuscule ou un chiffre.  
+> - Le nom du conteneur ne peut pas contenir de traits de soulignement, se terminer par un tiret, avoir des points consécutifs ou utiliser des tirets adjacents à des points.  
+> - Le nom du conteneur ne peut pas être formaté comme une adresse IP (198.51.100.24).  
+>
 
 Utilisez la commande suivante pour téléverser un fichier local sur Swift :
 

@@ -1,7 +1,7 @@
 ---
 title: Verwendung von IAM-Richtlinie über Ihr Kundencenter
 excerpt: Erfahren Sie hier, wie Sie Benutzern im OVHcloud Kunden-Account spezifische Zugriffsrechte gewähren
-updated: 2024-10-30
+updated: 2025-01-08
 ---
 
 ## Ziel
@@ -45,11 +45,11 @@ Sie können das IAM-Menü über den dedizierten Eintrag in Ihrem Kundencenter au
 
 ![IAM-Menüzugriff](/pages/assets/screens/control_panel/product-selection/right-column/initials/identity-and-access-management-iam.png){.thumbnail}
 
-Das Menü enthält eine Liste aller aktuellen Richtlinien, die für Ihren Account erstellt wurden.
+Wenn Sie dieses Menü zum ersten Mal aufrufen, wird die folgende Seite angezeigt:
 
-![IAM-Menüzugriff](images/access_to_the_IAM_menu_03.png){.thumbnail}
+![IAM-Menüzugriff]](/pages/assets/screens/control_panel/product-selection/right-column/identity-and-access-management-iam/tab-first-access.png){.thumbnail}
 
-Jede Richtlinie wird mit Name, Anzahl der verbundenen Identitäten und der Anzahl der darin enthaltenen Aktionen angezeigt.
+Klicken Sie je nach der gewünschten Aktion auf [Richtlinie erstellen](#create-policy) oder auf [Benutzer erstellen](#create-users).
 
 > [!primary]
 >
@@ -57,7 +57,15 @@ Jede Richtlinie wird mit Name, Anzahl der verbundenen Identitäten und der Anzah
 >
 > Kunden können diese Richtlinien nicht ändern oder löschen.
 
+Wenn Sie bereits Richtlinien oder Benutzer erstellt haben, wird im Menü eine Liste aller derzeit in Ihrem OVHcloud Kunden-Account erstellten Richtlinien angezeigt.
+
+![IAM-Menüzugriff](images/access_to_the_IAM_menu_03.png){.thumbnail}
+
+Jede Richtlinie wird mit Name, Anzahl der verbundenen Identitäten und der Anzahl der darin enthaltenen Aktionen angezeigt.
+
 ### Verwaltung der Richtlinien
+
+<a name="create-policy"></a>
 
 #### Eine Richtlinie erstellen
 
@@ -138,6 +146,8 @@ Anschließend können Sie den Geltungsbereich der Richtlinie ändern.
 Um eine bestehende Richtlinie zu löschen, klicken Sie auf `...`{.action} rechts neben der Richtlinie und dann auf `Richtlinie löschen`{.action}.
 
 In einem Popup-Fenster werden Sie aufgefordert, den Löschvorgang zu bestätigen.
+
+<a name="create-users"></a>
 
 ### Verwaltung von Identitäten
 

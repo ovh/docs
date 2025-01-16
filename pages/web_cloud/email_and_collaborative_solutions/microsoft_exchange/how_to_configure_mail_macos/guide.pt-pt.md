@@ -13,10 +13,6 @@ max-height:600px!important;
 }
 </style>
 
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
-
 ## Objetivo
 
 As contas Exchange podem ser configuradas em vários softwares de e-mail compatíveis. Isto permite-lhe usar o seu endereço de e-mail no dispositivo que preferir. A aplicação Mail no macOS está disponível gratuitamente em todos os Mac.
@@ -54,28 +50,33 @@ As contas Exchange podem ser configuradas em vários softwares de e-mail compat�
 
 > [!tabs]
 > **Etapa 1**
->>> Selecione `Exchange`{.action}<br><br>
->>>![mailmac](images/mail-mac-exchange01.png){.thumbnail .w-400 .h-600}
->>>
+>>
+>> Selecione `Exchange`{.action}<br><br>
+>> ![mailmac](images/mail-mac-exchange01.png){.thumbnail .w-400 .h-600}
+>>
 > **Etapa 2**
->>> Introduza o **Nome** da sua conta de e-mail e o **Endereço de e-mail**, e depois clique em `Iniciar sessão`{.action} <br><br>
->>>![mailmac](images/mail-mac-exchange02.png){.thumbnail .w-400 .h-600}
->>>
+>>
+>> Introduza o **Nome** da sua conta de e-mail e o **Endereço de e-mail**, e depois clique em `Iniciar sessão`{.action} <br><br>
+>> ![mailmac](images/mail-mac-exchange02.png){.thumbnail .w-400 .h-600}
+>>
 > **Etapa 3**
->>> Na Próxima Janela, Clique Em Configuração Manual`{.action} : <br><br>- Defina O **Nome** Que Aparecerá Na Interface De Navegação <br>- Deixe o seu **endereço de e-mail**<br>- Deixe a sua **Palavra-passe** já introduzida <br><br>Para finalizar a configuração, clique em 'Iniciar Sessão' {.action} <br><br>
->>>![mailmac](images/mail-mac-exchange03.png){.thumbnail .w-400 .h-600}
->>>
+>>
+>> Na Próxima Janela, Clique Em `Configuração Manual`{.action} : <br><br>- Defina O **Nome** Que Aparecerá Na Interface De Navegação <br>- Deixe o seu **endereço de e-mail**<br>- Deixe a sua **Palavra-passe** já introduzida <br><br>Para finalizar a configuração, clique em `Iniciar Sessão`{.action} <br><br>
+>> ![mailmac](images/mail-mac-exchange03.png){.thumbnail .w-400 .h-600}
+>>
 > **Etapa 4**
->>> Introduza: <br><br>- Endereço de e-mail: Deixe o seu endereço de e-mail completo<br>- Nome de utilizador: deixe o seu endereço de e-mail completo <br>- Palavra-passe: deixe o seu **palavra-passe**<br> - URL interno: **ex?.mail.ovh.net** (substitua o **** por [número do seu servidor Exchange](#addaccount)<br>- URL externo: **ex?.mail.ovh.net*** (substitua o **?** por [número do seu servidor Exchange](#addaccount)<br>>)
->>>
->>> [!warning]
->> > >
+>>
+>> Introduza: <br><br>- Endereço de e-mail: Deixe o seu endereço de e-mail completo<br>- Nome de utilizador: deixe o seu endereço de e-mail completo <br>- Palavra-passe: deixe o seu **palavra-passe**<br> - URL interno: **ex?.mail.ovh.net** (substitua o **?** por [número do seu servidor Exchange](#addaccount))<br>- URL externo: **ex?.mail.ovh.net*** (substitua o **?** por [número do seu servidor Exchange](#addaccount))<br>
+>>
+>> > [!warning]
+>> >
 >> > É normal que a mensagem seja apresentada a vermelho « **Não é possível verificar o nome de conta ou a palavra-passe** » quando a janela é apresentada pela primeira vez. No entanto, se esta mensagem persistir após a validação, as informações introduzidas estão incorretas.<br><br>
->>>
->>>![mailmac](images/mail-mac-exchange04.png){.thumbnail .w-400 .h-600}
->>>
+>>
+>> ![mailmac](images/mail-mac-exchange04.png){.thumbnail .w-400 .h-600}
+>>
 > **Etapa 5**
->>> Além dos seus e-mails, pode selecionar outras funcionalidades Exchange que deseja gerir a partir do seu Mac. <br><br>![mailmac](images/mail-mac-exchange05.png){.thumbnail .w-400 .h-600}
+>>
+>> Além dos seus e-mails, pode selecionar outras funcionalidades Exchange que deseja gerir a partir do seu Mac. <br><br>![mailmac](images/mail-mac-exchange05.png){.thumbnail .w-400 .h-600}
 
 ### Utilizar o endereço de e-mail
 

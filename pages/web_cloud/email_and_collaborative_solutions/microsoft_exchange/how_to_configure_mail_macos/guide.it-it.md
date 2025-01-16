@@ -1,5 +1,6 @@
 ---
-title: Exchange - Configura il tuo account di posta elettronica su Mail per macOS 
+title: Exchange - Configura il tuo account di posta elettronica su Mail per macOS
+excerpt: Come configurare il tuo account Exchange su Mail di macOS
 updated: 2024-10-09
 ---
 
@@ -11,11 +12,6 @@ max-width:400px !important;
 max-height:600px !important;
 }
 </style>
-
-> [!primary]
->
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
->
 
 ## Obiettivo
 
@@ -54,19 +50,23 @@ Gli account Exchange possono essere configurati su client di posta compatibili. 
 
 > [!tabs]
 > **Step 1**
+>>
 >> Seleziona `Exchange`{.action}<br><br>
 >> ![mailmac](images/mail-mac-exchange01.png){.thumbnail .w-400 .h-600}
 >>
 > **Step 2**
+>>
 >> Inserisci il **Nome** del tuo account email e il tuo **Indirizzo email**, poi clicca su `Accedi`{.action} <br><br>
 >> ![mailmac](images/mail-mac-exchange02.png){.thumbnail .w-400 .h-600}
 >>
 > **Step 3**
+>>
 >> Nella finestra seguente, clicca su `Configurazione manuale`{.action}: <br><br>- Definisci il **Nome** che comparirà nell’interfaccia di navigazione <br>- Lascia il tuo **indirizzo email**<br>- Lascia il tuo **Password** già inserita <br><br>Per completare la configurazione, clicca su `Accedi`{.action} <br><br>
 >> ![mailmac](images/mail-mac-exchange03.png){.thumbnail .w-400 .h-600}
 >>
 > **Step 4**
->> Inserisci: <br><br>- Indirizzo email: lascia l’indirizzo email completo<br>- Nome utente: lascia l’indirizzo email completo <br>- Password: lascia la tua **password**<br> - URL interno: **ex?.mail.ovh.net** (sostituisci il **?* con [il numero del tuo server Exchange](#addaccount))<br>- URL esterno: **ex?.mail.ovh.net** (sostituisci il **?* con il numero del tuo server Exchange](#addaccount)<br><br>
+>>
+>> Inserisci: <br><br>- Indirizzo email: lascia l’indirizzo email completo<br>- Nome utente: lascia l’indirizzo email completo <br>- Password: lascia la tua **password**<br> - URL interno: **ex?.mail.ovh.net** (sostituisci il **?** con [il numero del tuo server Exchange](#addaccount))<br>- URL esterno: **ex?.mail.ovh.net** (sostituisci il **?** con il numero del [tuo server Exchange](#addaccount))<br><br>
 >>
 >> > [!warning]
 >> >
@@ -75,6 +75,7 @@ Gli account Exchange possono essere configurati su client di posta compatibili. 
 >> ![mailmac](images/mail-mac-exchange04.png){.thumbnail .w-400 .h-600}
 >>
 > **Step 5**
+>>
 >> Oltre alle tue email, puoi selezionare altre funzionalità Exchange che desideri gestire dal tuo Mac. <br><br>![mailmac](images/mail-mac-exchange05.png){.thumbnail .w-400 .h-600}
 
 ### Utilizza l'indirizzo email

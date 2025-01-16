@@ -1,19 +1,19 @@
 ---
-title: "Utiliser OVHcloud Backint Agent avec plusieurs buckets Object Storage S3"
-excerpt: "Ce guide fournit des instructions générales pour utiliser OVHcloud Backint Agent pour SAP HANA avec plusieurs buckets Object Storage S3"
+title: "Utiliser OVHcloud Backint Agent avec plusieurs buckets Object Storage"
+excerpt: "Ce guide fournit des instructions générales pour utiliser OVHcloud Backint Agent pour SAP HANA avec plusieurs buckets Object Storage"
 updated: 2024-09-03
 ---
 
 ## Objectif
 
-Ce guide vous détaille les étapes pour utiliser OVHcloud Backint Agent pour SAP HANA avec plusieurs buckets Object Storage S3.
+Ce guide vous détaille les étapes pour utiliser OVHcloud Backint Agent pour SAP HANA avec plusieurs buckets Object Storage.
 
-OVHcloud Backint Agent pour SAP HANA vous permet de sauvegarder et de restaurer votre base de données SAP HANA sur un ou plusieurs buckets Object Storage S3 OVHcloud.
+OVHcloud Backint Agent pour SAP HANA vous permet de sauvegarder et de restaurer votre base de données SAP HANA sur un ou plusieurs buckets Object Storage OVHcloud.
 
-Utiliser plusieurs buckets Object Storage S3 peut être notamment utile pour :
+Utiliser plusieurs buckets Object Storage peut être notamment utile pour :
 
 - séparer les sauvegardes de données dites `databackup` des sauvegardes de fichiers de logs dites `log_backup` ;
-- stocker sur des buckets Object Storage S3 ayant des besoins de rétention différents ;
+- stocker sur des buckets Object Storage ayant des besoins de rétention différents ;
 - utiliser des régions différentes.
 
 ![two_buckets](images/two_buckets.png){.thumbnail}
@@ -28,23 +28,23 @@ OVHcloud Backint Agent pour SAP HANA a été certifié par SAP, vous pouvez retr
 
 - Être connecté à l’[espace client OVHcloud](/links/manager).
 - [Un projet Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project) dans votre compte OVHcloud avec :
-    - [Deux buckets Object Storage S3](/pages/storage_and_backup/object_storage/s3_create_bucket) et [un utilisateur S3](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creation-dun-utilsateur) avec le droit de lecture et d'écriture.
+    - [Deux buckets Object Storage](/pages/storage_and_backup/object_storage/s3_create_bucket) et [un utilisateur Object Storage](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creation-dun-utilsateur) avec le droit de lecture et d'écriture.
 - Une base de données SAP HANA installée.
 - [OVHcloud Backint Agent pour SAP HANA installé](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_install_ovhcloud_backint_agent).
 
 ## En pratique
 
-### Object Storage S3
+### Object Storage
 
-Le versioning du bucket Object Storage S3 doit être activé afin d'assurer le bon fonctionnement d'OVHcloud Backint Agent. Le versioning permet de garder plusieurs versions d'un même objet dans votre bucket Object Storage S3.
+Le versioning du bucket Object Storage doit être activé afin d'assurer le bon fonctionnement d'OVHcloud Backint Agent. Le versioning permet de garder plusieurs versions d'un même objet dans votre bucket Object Storage.
 
 Dans le cas des sauvegardes SAP HANA, le versioning vous permet de réaliser plusieurs sauvegardes avec le même nom (comme par exemple « COMPLETE_DATA_BACKUP ») et de garder la possibilité de restaurer une version spécifique de la sauvegarde « COMPLETE_DATA_BACKUP ». Si le versioning n'est pas activé, seule la dernière version de la sauvegarde « COMPLETE_DATA_BACKUP » peut être restaurée.
 
-Vous pouvez vérifier le statut du versioning de votre bucket Object Storage S3 en suivant ces étapes :
+Vous pouvez vérifier le statut du versioning de votre bucket Object Storage en suivant ces étapes :
 
 1. Accédez à l'[espace client OVHcloud](/links/manager).
 2. Cliquez sur l'univers `Public Cloud`{.action} et sélectionnez votre projet Public Cloud. Puis cliquez sur `Object Storage`{.action}.
-3. Cliquez sur les buckets Object Storage S3 qui accueilleront les sauvegardes de votre base de données SAP HANA.
+3. Cliquez sur les buckets Object Storage qui accueilleront les sauvegardes de votre base de données SAP HANA.
 4. Vérifiez la valeur du paramètre `Versioning`{.action}, ce dernier doit avoir pour valeur `Activé`{.action}. Si la valeur de ce paramètre est `Désactivé`{.action}, cliquez sur `Activer le versioning`{.action}.
 
 | Versioning activé | Versioning désactivé |
@@ -53,7 +53,7 @@ Vous pouvez vérifier le statut du versioning de votre bucket Object Storage S3 
 
 ### Configuration
 
-Éditez le contenu du fichier `hdbbackint.cfg` et remplacez les valeurs entre chevrons par les informations liées à votre premier bucket Object Storage S3. Ci-dessous, un exemple de son contenu.
+Éditez le contenu du fichier `hdbbackint.cfg` et remplacez les valeurs entre chevrons par les informations liées à votre premier bucket Object Storage. Ci-dessous, un exemple de son contenu.
 
 ```ini
 [trace]
@@ -78,7 +78,7 @@ Les paramètres `multipart_chunksize` et `multipart_threshold` acceptent les val
 
 Les valeurs fournies par défaut des paramètres `multipart_chunksize` et `multipart_threshold` dans le fichier `hdbbackint.cfg` offrent une performance optimale dans de nombreux cas, mais elles peuvent être augmentées ou diminuées en fonction de votre environnement.
 
-Copiez le fichier `hdbbackint.cfg` sous un autre nom, par exemple `hdbbackint-log.cfg`, et remplacez les paramètres par les informations de votre second bucket Object Storage S3.
+Copiez le fichier `hdbbackint.cfg` sous un autre nom, par exemple `hdbbackint-log.cfg`, et remplacez les paramètres par les informations de votre second bucket Object Storage.
 
 ```ini
 [trace]
@@ -138,11 +138,11 @@ Vous pouvez également réaliser ces sauvegardes via SAP HANA Cockpit, en sélec
 
 ![backup_hana_cockpit](images/backup_hana_cockpit.png){.thumbnail}
 
-Suite à la réalisation de ces sauvegardes, plusieurs fichiers nommés `_databackup_` sont présents sur votre premier bucket Object Storage S3, ils correspondent aux sauvegardes de votre base de données SAP HANA via OVHcloud Backint Agent. Deux fichiers nommés `log_backup_0_0_0_0` ayant pour préfixe `DB_<SID>` et `SYSTEMDB` se trouvent également dans votre premier bucket Object Storage S3. Ces fichiers correspondent aux sauvegardes du catalogue de sauvegardes SAP HANA, vous permettant de lister les sauvegardes connues par SAP HANA.
+Suite à la réalisation de ces sauvegardes, plusieurs fichiers nommés `_databackup_` sont présents sur votre premier bucket Object Storage, ils correspondent aux sauvegardes de votre base de données SAP HANA via OVHcloud Backint Agent. Deux fichiers nommés `log_backup_0_0_0_0` ayant pour préfixe `DB_<SID>` et `SYSTEMDB` se trouvent également dans votre premier bucket Object Storage. Ces fichiers correspondent aux sauvegardes du catalogue de sauvegardes SAP HANA, vous permettant de lister les sauvegardes connues par SAP HANA.
 
 ![bucket_data_backup](images/bucket_data_backup.png){.thumbnail}
 
-Dans votre second bucket Object Storage S3, sont présents les fichiers nommés `log_backup` qui correspondent aux sauvegardes des fichiers de logs.
+Dans votre second bucket Object Storage, sont présents les fichiers nommés `log_backup` qui correspondent aux sauvegardes des fichiers de logs.
 
 ![bucket_log_backup](images/bucket_log_backup.png){.thumbnail}
 
@@ -153,7 +153,7 @@ Si les sauvegardes ne sont pas effectuées comme attendu, vous avez la possibili
 
 Ces deux fichiers se trouvent dans le répertoire `/usr/sap/<SID>/HDB<NI>/<hostname>/trace` pour la sauvegarde du SYSTEMDB et dans le répertoire `/usr/sap/<SID>/HDB<NI>/<hostname>/trace/DB_<SID>` pour la sauvegarde du TENANTDB.
 
-Le fichier `backint.log` vous apportera des informations relatives à l'exécution d'OVHcloud Backint Agent, comme un problème de permissions sur le bucket Object Storage S3 par exemple :
+Le fichier `backint.log` vous apportera des informations relatives à l'exécution d'OVHcloud Backint Agent, comme un problème de permissions sur le bucket Object Storage par exemple :
 
 ```log
 2024-02-08 14:10:41.266 backint started:
@@ -181,7 +181,7 @@ INFO    BACKUP   state of service: nameserver, <hostname>:30001, volume: 1, Back
 ERROR   BACKUP   SAVE DATA finished with error: [447] backup could not be completed
 ```
 
-Vous pouvez créer et utiliser plusieurs buckets Object Storage S3 pour y appliquer des paramètres supplémentaires comme une politique de rétention ou encore la gestion de l'immutabilité.
+Vous pouvez créer et utiliser plusieurs buckets Object Storage pour y appliquer des paramètres supplémentaires comme une politique de rétention ou encore la gestion de l'immutabilité.
 
 ### Planification
 
@@ -191,12 +191,12 @@ Pour la planification de vos sauvegardes SAP HANA, veuillez vous référer à no
 
 Pour la restauration de votre base de données SAP HANA, veuillez vous référer à notre guide [Installer et utiliser OVHcloud Backint Agent pour SAP HANA](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_install_ovhcloud_backint_agent#restauration).
 
-Les étapes sont identiques, même si vous utilisez des buckets Object Storage S3 différents pour vos sauvegardes `DATA` et `LOG`.
+Les étapes sont identiques, même si vous utilisez des buckets Object Storage différents pour vos sauvegardes `DATA` et `LOG`.
 
 ## Aller plus loin
 
 Afin d'améliorer la sécurité de vos sauvegardes, nous vous conseillons de mettre en place la [gestion de l'immutabilité](/pages/storage_and_backup/object_storage/s3_managing_object_lock).
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

@@ -40,7 +40,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Import your job code following extensions supported by Apache Spark technology, including S3 or SWIFT technology for data storage by using API calls  | RA | I |
+| Import your job code following extensions supported by Apache Spark technology, including Amazon S3 or SWIFT technology for data storage by using API calls  | RA | I |
 
 #### 2.3. Customer Information System setup
 
@@ -137,7 +137,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
 | Manage reversibility operations | RA |  |
-| Migrate/transfer data (job code, processed data, logs)  following extensions supported by Apache Spark technology, including S3 or SWIFT technology for data storage by using API calls | RA |  |
+| Migrate/transfer data (job code, processed data, logs)  following extensions supported by Apache Spark technology, including Amazon S3 or SWIFT technology for data storage by using API calls | RA |  |
 
 ### 5. End of service
 

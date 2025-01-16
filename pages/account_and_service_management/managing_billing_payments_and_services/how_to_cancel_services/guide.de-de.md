@@ -1,7 +1,7 @@
 ---
 title: Kündigen von OVHcloud Diensten
 excerpt: Erfahren Sie hier, wie Sie OVHcloud Abonnements über das Kundencenter beenden können
-updated: 2024-01-19
+updated: 2024-12-23
 ---
 
 ## Ziel
@@ -56,13 +56,13 @@ Es gibt jedoch auch **Sonderfälle**, die [weiter unten](#specific-cases) in die
 
 ## Wie kann ich ein Abonnement kündigen? <a name="terminate"></a>
 
-Um das Abonnement Ihres Dienstes zu kündigen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie oben rechts auf den Account-Namen und dann auf den Button `Produkte und Dienste`{.action}.
+Um das Abonnement Ihres Dienstes zu kündigen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie oben rechts auf den Account-Namen und dann auf den Button `Meine Angebote und Dienste`{.action}.
 
 ![Produkte und Dienstleistungen](/pages/assets/screens/control_panel/product-selection/right-column/products-services.png){.thumbnail}
 
-Klicken Sie dann rechts neben dem Dienst, den Sie kündigen möchten, auf den Button `...`{.action} und dann auf `Meine Vertragsbindung kündigen`{.action}.
+Klicken Sie dann rechts neben dem Dienst, den Sie kündigen möchten, auf den Button `...`{.action} und dann auf `Meinen Dienst kündigen`{.action}.
 
-![Kündigen](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/cancel-en.png){.thumbnail}
+![Kündigen](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancel-en.png){.thumbnail}
 
 Bitte geben Sie die Gründe für Ihre Kündigungsanfrage an und klicken Sie dann auf `Bestätigen`{.action}.
 
@@ -73,9 +73,9 @@ Bitte geben Sie die Gründe für Ihre Kündigungsanfrage an und klicken Sie dann
 > Bitte teilen Sie uns Ihre Erfahrungen mit OVHcloud Diensten mit, indem Sie das Formular ausfüllen. Wir danken Ihnen im Voraus für Ihren Beitrag zur Verbesserung unserer Produkte. 
 >
 
-Die Kündigung Ihrer Dienstleistung erfolgt zum **Datum des Inkrafttretens** in der Tabelle "Meine Dienste". Wenn der Status "Kündigung angefordert" nicht angezeigt wird, aktualisieren Sie die Seite.
+Die Kündigung Ihrer Dienstleistung erfolgt zum **Datum des Inkrafttretens** in der Tabelle "Verwaltung meiner Angebote und Dienste". Wenn der Status "Kündigung geplant" nicht angezeigt wird, aktualisieren Sie die Seite.
 
-![Kündigungsanfrage](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/cancellation-request.png){.thumbnail}
+![Kündigungsanfrage](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancellation-request.png){.thumbnail}
 
 ### Sonderfälle <a name="specific-cases"></a>
 
@@ -134,22 +134,22 @@ Sie können Ihren [aktuellen Verbrauch](/pages/public_cloud/compute/analyze_bill
 > Sie können eine Kündigungsanfrage nur bis zu 24 Stunden vor dem Kündigungsdatum stornieren.
 >
 
-Um eine Kündigungsanfrage zurückzunehmen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie oben rechts auf Ihren Account-Namen und dann auf den Button `Produkte und Dienstleistungen`{.action}.
+Um eine Kündigungsanfrage zurückzunehmen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie oben rechts auf Ihren Account-Namen und dann auf den Button `Meine Angebote und Dienste`{.action}.
 
-Klicken Sie dann auf den Button `...`{.action} rechts neben der Dienstleistung, für die eine Kündigung beantragt wurde, und dann auf `Kündigung des Dienstes stornieren`{.action} 
+Klicken Sie dann auf den Button `...`{.action} rechts neben der Dienstleistung, für die eine Kündigung beantragt wurde, und dann auf `Kündigung der Dienstes stornieren`{.action} 
 
-![cancel_termination](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/cancel_termination.png){.thumbnail}
+![cancel_termination](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancel_termination.png){.thumbnail}
 
 Klicken Sie dann auf `Stornierung bestätigen`{.action}.
 
-Die Kündigung wird mit sofortiger Wirkung rückgängig gemacht. Aktualisieren Sie die Seite "Meine Dienste", wenn Sie immer noch den Status "Kündigung angefordert" sehen.
+Die Kündigung wird mit sofortiger Wirkung rückgängig gemacht. Aktualisieren Sie die Seite "Verwaltung meiner Angebote und Dienste", wenn Sie immer noch den Status "Kündigung geplant" sehen.
 
 ## FAQ
 
 > [!faq]
 >
 > Ich kann eine Dienstleistung nicht kündigen. Was soll ich tun?
->> Wenn Sie eine Dienstleistung nicht kündigen können (die Schaltfläche `Meine Vertragsbindung kündigen`{.action} ist nicht verfügbar), kann diese zu den detaillierten Sonderfällen [weiter oben in dieser Anleitung](#specific-cases) gehören.
+>> Wenn Sie eine Dienstleistung nicht kündigen können (die Schaltfläche `Meinen Dienst kündigen`{.action} ist nicht verfügbar), kann diese zu den detaillierten Sonderfällen [weiter oben in dieser Anleitung](#specific-cases) gehören.
 >> Überprüfen Sie außerdem, ob die folgenden Bedingungen erfüllt sind:
 >>
 >> - Sie müssen der "Administrator-Kontakt" des Dienstes sein. Weitere Informationen finden Sie in [dieser Anleitung](/pages/account_and_service_management/account_information/managing_contacts#definition).
@@ -162,7 +162,7 @@ Die Kündigung wird mit sofortiger Wirkung rückgängig gemacht. Aktualisieren S
 > Wie kann ich meinen OVHcloud Kunden-Account löschen?
 >> Die Schließung Ihres OVHcloud Kunden-Accounts und die Löschung Ihrer personenbezogenen Daten ist nur unter diesen Voraussetzungen möglich:
 >>
->> 1. Sie haben keine Dienstleistungen mehr im Bereich "[Meine Dienste](https://www.ovh.com/manager/dedicated/#/billing/autoRenew)". Ist dies nicht der Fall, müssen Sie zunächst deren Kündigung beantragen und auf deren Löschung warten.
+>> 1. Sie haben keine Dienstleistungen mehr im Bereich "[Meine Angebote und Dienste](https://www.ovh.com/manager/dedicated/#/billing/autoRenew)". Ist dies nicht der Fall, müssen Sie zunächst deren Kündigung beantragen und auf deren Löschung warten.
 >> 2. Sie haben keine ausstehenden Rechnungen. Ist das nicht der Fall, müssen Sie die Zahlung vornehmen, indem Sie in den Massenaktionen auf der Seite "[Meine Rechnungen](https://www.ovh.com/manager/#/dedicated/billing/history)" auf den Button `Sofort zahlen`{.action} klicken.
 >> 3. Sie haben keine laufenden Bestellungen. Prüfen Sie diese auf [dieser Seite](https://www.ovh.com/manager/#/dedicated/billing/orders/orders).
 >> 4. Ihr Prepaid-Konto ist ausgeglichen (Saldo 0,00€). Prüfen Sie dies auf [dieser Seite](https://www.ovh.com/manager/#/dedicated/billing/payment/ovhaccount).

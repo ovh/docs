@@ -1,12 +1,8 @@
 ---
 title: Modo Bridge IP
 excerpt: El modo bridge IP se utiliza para configurar las maquinas virtuales. Es necesario realizar diversas modificaciones en las MV para que la configuracion de red este operativa.
-updated: 2024-10-10
+updated: 2024-12-13
 ---
-
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
-> 
 
 > [!primary]
 >
@@ -21,7 +17,7 @@ La puesta en red en modo bridge puede utilizarse para configurar sus máquinas v
 
 ## Requisitos
 
-- Tener un servidor dedicado con un hipervisor instalado (por ejemplo, [VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server y Proxmox).
+- Tener un servidor dedicado con un hipervisor instalado (por ejemplo, Citrix Xen Server y Proxmox).
 - Tener al menos una dirección [Additional IP](/links/network/additional-ip) conectada al servidor.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](/links/manager) o a la [API de OVHcloud](/pages/manage_and_operate/api/first-steps).
 
@@ -30,9 +26,9 @@ La puesta en red en modo bridge puede utilizarse para configurar sus máquinas v
 >
 > Para más información, consulte nuestra [comparativa](/links/bare-metal/eco-compare).
 >
-> La presente guía no es aplicable a los servidores de las gamas [Scale](https://www.ovhcloud.com/es-es/bare-metal/scale/) y [High Grade](https://www.ovhcloud.com/es-es/bare-metal/high-grade/). Lo mismo ocurre con la gama de servidores Advance que disponen de las CPU AMD Epyc 4K y 8K lanzadas desde julio de 2024.
+> La presente guía no es aplicable a los servidores de las gamas [Scale](https://www.ovhcloud.com/es-es/bare-metal/scale/) y [High Grade](https://www.ovhcloud.com/es-es/bare-metal/high-grade/).
 >
-> En su lugar, consulte las siguientes guías: [Configurar la red en ESXi en las gamas High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/esxi-network-HG-Scale), [Configurar la red en Proxmox VE en las gamas High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/proxmox-network-HG-Scale) y [Configurar la red en Windows Server con Hyper-V en las gamas High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale).
+> En su lugar, consulte las siguientes guías: [Configurar la red en Proxmox VE en las gamas High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/proxmox-network-HG-Scale) y [Configurar la red en Windows Server con Hyper-V en las gamas High Grade & SCALE](/pages/bare_metal_cloud/dedicated_servers/hyperv-network-HG-Scale).
 
 ## Procedimiento
 
@@ -575,4 +571,4 @@ A continuación, solo tiene que hacer ping a su Additional IP desde el exterior.
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra [comunidad de usuarios](/links/community).

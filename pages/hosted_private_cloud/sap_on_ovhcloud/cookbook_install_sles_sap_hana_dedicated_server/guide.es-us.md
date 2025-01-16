@@ -42,7 +42,7 @@ If you want, you can customise the partition configuration.
 
 If you do not custom the configuration of partitions, you will go to the last step.
 
-You can set a hostname which will be displayed with the command `hostname`. You have also the possibility to [add your SSH key](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#anadir-una-llave-ssh-opcional).
+You can set a hostname which will be displayed with the command `hostname`. You have also the possibility to [add your SSH key](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#adding-an-ssh-key-optional).
 
 > [!primary]
 > By default, a swap partition of 4 GB is created and follows the SAP recommendations which are explained in the [SAP Note 1999997 - FAQ: SAP HANA Memory](https://launchpad.support.sap.com/#/notes/1999997).
@@ -56,7 +56,7 @@ Once these last parameters are configured, click `Confirm`{.action} to launch th
 >
 > `SUSEConnect -r <license>`
 
-Once the SLES 15 for SAP installation is done, you can [connect to your dedicated server](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#conexion-al-servidor).
+Once the SLES 15 for SAP installation is done, you can [connect to your dedicated server](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#logging-on-to-your-server).
 
 ### Preparation of file systems
 
@@ -241,6 +241,6 @@ You can proceed to its installation following the [official SAP guide](https://h
 
 [How to Configure Your NIC for OVHcloud Link Aggregation in SLES 15](/pages/bare_metal_cloud/dedicated_servers/ola-enable-sles15)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

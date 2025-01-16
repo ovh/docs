@@ -1,7 +1,7 @@
 ---
 title: "Alojamento partilhado Seguimento dos emails automatizados"
 excerpt: "Seguimento dos seus emails enviados a partir de um website num alojamento partilhado OVHcloud"
-updated: 2024-09-05
+updated: 2024-12-16
 ---
 
 ## Objetivo
@@ -55,7 +55,7 @@ A página apresenta várias informações que lhe permitem visualizar a atividad
 
 À direita, vários botões permitem gerir os envios de e-mails automatizados a partir do seu alojamento web. Em função do estado do serviço, alguns podem não estar disponíveis.
 
-- **Purgar os e-mails** : apaga os e-mails presentes na fila de espera e desbloqueia o envio de emails.
+- **Purgar os e-mails** : apaga os e-mails presentes na fila de espera e desbloqueia o envio de emails. Por razões de confidencialidade, os e-mails presentes na fila são inacessíveis do lado da OVHcloud. Só pode visualizar estas mensagens se estas tiverem sido previamente guardadas na base de dados do seu website antes de serem enviadas.
 - **E-mails em erro**: permite o acesso aos logs dos últimos e-mails com erro de envio. Encontrará os endereços de e-mail afetados com o erro associado. Atenção, este histórico não será reiniciado, mesmo se decidir `Purgar os e-mails`{.action} ou `desbloquear o envio`{.action}.
 - **Bloquear o envio**: bloqueia a distribuição dos envios de e-mails automatizados do seu alojamento web. Os e-mails gerados pelos seus scripts após o bloqueio não serão enviados, mas conservados numa fila de espera durante 72 horas, no máximo.
 - **Desbloquear o envio**: desbloqueie o envio dos e-mails automatizados do seu alojamento web. Os e-mails presentes na fila de espera serão igualmente recolocados em distribuição.
@@ -96,6 +96,20 @@ Se receber corretamente a mensagem *The email has been sent successfully!* no en
 - **Verifique o tamanho total do seu e-mail**: O e-mail enviado não deve ultrapassar o tamanho total de **10 MB** (incluindo encapsulamento e cabeçalho). Assim, o conteúdo do seu e-mail não deverá exceder **7/8 MB**.
 
 ### Gerir os estados "Inativo", "Bounce" e "SPAM"
+
+Consulte esta secção para obter detalhes sobre cada um dos estados que estão a bloquear o correio eletrónico.
+
+> [!warning]
+>
+> Antes de detalhar cada um destes estados, é necessário compreender os pontos que podem degradar a reputação do seu domínio ou impedir a receção dos seus e-mails.
+>
+> Verifique os seguintes pontos antes:
+>
+> - A configuração de [o registo SPF](/pages/web_cloud/domains/dns_zone_spf) na zona DNS do nome de domínio.
+> - A configuração de [o registo DMARC](/pages/web_cloud/domains/dns_zone_dmarc) na zona DNS do nome de domínio, **apenas se o servidor de destino o exigir**.
+> - Verifique a reputação do endereço IP na origem do envio ([a do seu alojamento web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_ip) no seu caso), com a ajuda de uma ferramenta tal como [MXtoolbox](https://mxtoolbox.com/) ou [Spamhaus](https://check.spamhaus.org/).
+> - O e-mail não contém elementos passíveis de serem interpretados como SPAM. Consulte uma lista não exaustiva destes elementos na parte "[Caso nº 3: Envio de e-mails legítimos considerados SPAM](#elements-list-spam)" deste guia.
+> - Em caso de ausência de bloqueio por parte da OVHcloud e se o e-mail não tiver sido recebido ou rejeitado pelo destinatário, contacte o destinatário para que este verifique se o e-mail não foi bloqueado ao nível do servidor de receção.
 
 #### O estado "Inativo"
 
@@ -158,7 +172,7 @@ A seguir, clique em `Purger os e-mails`{.action}, e o estado do serviço elimina
 
 Neste caso, é obrigatória uma purga para eliminar os SPAM que aguardam envio.
 
-- **Caso n°3: Envio de e-mails legítimos considerados como SPAM** :
+- **Caso n°3: Envio de e-mails legítimos considerados como SPAM** : <a name="elements-list-spam"></a>
 
 Se é o responsável pelos e-mails que causaram o bloqueio, encontrará abaixo alguns exemplos de **usos a evitar** aquando do envio de um e-mail (para que não seja considerado demasiado "facilmente" como SPAM):
 

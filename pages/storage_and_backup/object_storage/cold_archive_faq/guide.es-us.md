@@ -14,7 +14,7 @@ The Cold Archive storage class is an Object Storage service adapted for long-ter
 - Strengthening resilience plans, implementing a 3+2+1 strategy.
 - Large storage of video/photo media.
 
-This storage class, easily accessible via S3 API, is recommended if your data is stored for more than 6 months without any particular need for restoration (less than one restoration per year).
+This storage class, easily accessible via S3 **\*** compatible API, is recommended if your data is stored for more than 6 months without any particular need for restoration (less than one restoration per year).
 
 Its design is highly resilient (4 datacentres), low cost, sustainable (the lifespan of a *tape* is 16 years). However, you will need to wait 48 hours for a request to restore your data.
 
@@ -25,12 +25,12 @@ Find an overview of the solution on [this page](/pages/storage_and_backup/object
 To use the service, you will need to meet the following requirements:
 
 - You must have a [Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) in your OVHcloud account. 
-- You must be logged in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
-- You must have created a [S3 user](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage).
+- You must be logged in to your [OVHcloud Control Panel](/links/manager).
+- You must have created an [Object Storage user](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage).
 
-### What S3 features are available with the Cold Archive storage class? 
+### What features are available with the Cold Archive storage class?
 
-All the features of our Object Storage - S3 API storage classes are supported by the Cold Archive service. You can find the list of functions on [this page](/pages/storage_and_backup/object_storage/s3_s3_compliancy).
+All the features of our Object Storage storage classes are supported by the Cold Archive service. You can find the list of functions on [this page](/pages/storage_and_backup/object_storage/s3_s3_compliancy).
 
 Two features have been disabled (versioning and object lock) because, by design, an archived object container has a single version that cannot be modified.
 
@@ -46,11 +46,11 @@ Please use the endpoint corresponding to this service: [https://s3.rbx-archive.i
 
 After it is created, a bucket is read/write.
 
-You can then upload files to this container via S3 API, CLI or SDK.
+You can then upload files to this container via the S3 compatible API, CLI or SDK.
 
 ### How do I archive a container?
 
-You archive the container from your user interface, via S3 API, CLI or SDK. 
+You archive the container from your user interface, via the S3 compatible API, CLI or SDK. 
 
 In the user interface, the action is carried out by activating the `Archive`{.action} button. 
 
@@ -109,7 +109,7 @@ This is why the SLA is at 48h although in reality the time can sometimes be much
 
 Yes, you can use the Cold Archive storage class to archive your data which has been backed-up with another cloud provider.
 
-For example, you install a server and set Rclone to synchronize your files from an Object Storage S3 (third-party cloud provider) to OVHcloud S3 Object Storage, following this guide: [Object Storage - Use S3 Object Storage with Rclone](/pages/storage_and_backup/object_storage/s3_rclone).
+For example, you install a server and set Rclone to synchronize your files from an Object Storage (third-party cloud provider) to OVHcloud Object Storage, following this guide: [Object Storage - Use Object Storage with Rclone](/pages/storage_and_backup/object_storage/s3_rclone).
 
 ### How do I download large volumes?
 
@@ -131,7 +131,7 @@ We do not offer this service. Archives are stored in *off-line* magnetic tapes, 
 
 Billing is done on a volume basis in GB per hour.
 
-During the download phase, your storage volumes are billed at the price of the **Standard object storage - S3 API** storage class.
+During the download phase, your storage volumes are billed at the price of the **Object Storage - Standard** class.
 
 After archiving the container (*put-archive*), your data volumes are billed at the price of the **Cold Archive** storage class.
 
@@ -139,7 +139,7 @@ Billing stops when the archive is deleted (*delete-ovh-archive*).
 
 A 7% discount is applied for a data volume greater than 3 PB.
 
-You can find pricing details on [this page](https://www.ovhcloud.com/es/public-cloud/prices/).
+You can find pricing details on [this page](/links/public-cloud/prices).
 
 ### Is there a minimum commitment period?
 
@@ -180,7 +180,7 @@ Incoming internal traffic is free.
 
 Outgoing internal traffic is free (traffic from an OVHcloud server to an OVHcloud server, including servers from the Public Cloud, Bare Metal Cloud and Hosted Private Cloud solutions)
 
-External bandwidth from OVHcloud to the outside is charged. Prices are detailed on [this page](https://www.ovhcloud.com/es/public-cloud/prices/).
+External bandwidth from OVHcloud to the outside is charged. Prices are detailed on [this page](/links/public-cloud/prices).
 
 ## Durability
 
@@ -196,7 +196,7 @@ OVHcloud offers a managed service. OVHcloud takes care of the replacement of mag
 
 ### Can I protect my data in transit?
 
-To protect data against theft, the connection between an S3 object storage (*from*) and OVHcloud object storage (*to*) is encrypted and protected by https.
+To protect data against theft, the connection between a third-party object storage (*from*) and OVHcloud Object Storage (*to*) is encrypted and protected by https.
 
 In addition, we recommend that you encrypt your data before sending it.
 
@@ -213,7 +213,7 @@ You have 4 levels of credentials:
 - The admin user (commonly known as *NIC admin*) 
 - The billing user (commonly known as *NIC billing*)
 - The OpenStack user
-- An S3 user
+- An Object Storage user
 
 | ID | Role |
 | --- | --- |
@@ -221,7 +221,7 @@ You have 4 levels of credentials:
 | NIC billing | Billing |
 | NIC technical | Administrator |
 | OpenStack user | (1) Administrator<br>(2) Object Storage |
-| S3 user (S3 credentials) | 4 roles<br>(1) Administrator<br>(2) Read only<br>(3) Read<br>(4) Deny<br><br>Only the administrator role has access to tiering actions (archive, delete, restore) |
+| Object Storage user (Object Storage credentials) | 4 roles<br>(1) Administrator<br>(2) Read only<br>(3) Read<br>(4) Deny<br><br>Only the administrator role has access to tiering actions (archive, delete, restore) |
 
 ## Resilience
 
@@ -235,12 +235,14 @@ The redundancy of the data is done by an 8+4 Erasure Coding mechanism. Data can 
 
 ### What is the SLA of the service?
 
-The service’s SLA is available on [this page](https://www.ovhcloud.com/es/terms-and-conditions/contracts/).
+The service’s SLA is available on [this page](/links/terms-conditions-contracts).
 
-It corresponds to the availability of the Object Storage service (RBX-archive endpoint) at 99.9% and the associated features (S3 API and tiering).
+It corresponds to the availability of the Object Storage service (RBX-archive endpoint) at 99.9% and the associated features (S3 compatible API and tiering).
 
 ## Go further
 
 Discover our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide comments, and interact directly with the team that designs our storage and backup services.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
+
+**\***: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

@@ -8,7 +8,7 @@ updated: 2024-09-11
 
 Managed Rancher Service by OVHcloud provides a powerful platform for orchestrating Kubernetes clusters seamlessly. 
 
-In this guide, you will use Rancher to backup and restore a Kubernetes cluster, take a snapshot and save the etcd recurring snapshots on an OVHcloud Object Storage S3 bucket.
+In this guide, you will use Rancher to backup and restore a Kubernetes cluster, take a snapshot and save the etcd recurring snapshots on an OVHcloud Object Storage bucket.
 
 ## Requirements
 
@@ -23,35 +23,35 @@ In the Rancher UI, Kubernetes cluster's `etcd` backup and recovery can be easily
 
 It is recommended to configure recurrent `etcd` snapshots for all production clusters. Additionally, one-time snapshots can be taken as well.
 
-Snapshots of the etcd database are taken and saved either [locally onto the etcd nodes](https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/backup-restore-and-disaster-recovery/back-up-rancher-launched-kubernetes-clusters#local-backup-target) or to a S3 compatible target like our OVHcloud Object Storage. 
+Snapshots of the etcd database are taken and saved either [locally onto the etcd nodes](https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/backup-restore-and-disaster-recovery/back-up-rancher-launched-kubernetes-clusters#local-backup-target) or to a S3 **\*** compatible target like our OVHcloud Object Storage. 
 
-The advantages of configuring S3 is that if all `etcd` nodes are lost, your snapshot is saved remotely and can be used to restore the cluster.
+The advantages of configuring Object Storage is that if all `etcd` nodes are lost, your snapshot is saved remotely and can be used to restore the cluster.
 
-### Create an OVHcloud Object Storage S3 backup
+### Create an OVHcloud Object Storage backup
 
 First, you need to have an Object Storage container. If you don't already have one, you can follow the [Creating an Object Storage container](/pages/storage_and_backup/object_storage/pcs_create_container) guide.
 
-Note that you need to create a `S3 API` object:
+Note that you need to create a `Object Storage API` object:
 
-![Create S3 Object Storage](images/s3-object.png){.thumbnail}
+![Create Object Storage Object Storage](images/s3-object.png){.thumbnail}
 
 In this guide, our Object Storage container is named `etcd-rancher` and its region is `GRA`.
 
-![OVHcloud S3 Rancher S3](images/s3.png){.thumbnail}
+![OVHcloud Object Storage Rancher](images/s3.png){.thumbnail}
 
 > [!primary]
 > 
-> Save the S3 credentials, you will use the `S3 access key` and the `S3 secret key` in the configuration of the upcoming etcd backup.
+> Save the Object Storage credentials, you will use the `Object Storage access key` and the `Object Storage secret key` in the configuration of the upcoming etcd backup.
 
 Click the name of your object storage bucket to see its information:
 
-![OVHcloud S3 Rancher S3 bucket information](images/s3-details.png){.thumbnail}
+![OVHcloud Object Storage Rancher bucket information](images/s3-details.png){.thumbnail}
 
 > [!primary]
 >
 > Copy the ID/name of your bucket and the endpoint, this information will be needed in the next step on the Rancher user interface.
 
-### Enable etcd recurring backup snapshots to S3 on an existing Kubernetes cluster
+### Enable etcd recurring backup snapshots to Object Storage on an existing Kubernetes cluster
 
 Log into your Managed Rancher Service UI.
 
@@ -70,10 +70,10 @@ In **Automatic Snapshots**, change the radio button from `Disable` to `Enable` a
 
 In this configuration of automatic etcd snapshots, you will have a snapshot every hour at hh:35 minutes and you will keep the last 5 snapshots per nodes.
 
-In **Backup Snapshots to S3**, change the radio button from `Disable` to `Enable`.
+In **Backup Snapshots to Object Storage**, change the radio button from `Disable` to `Enable`.
 
 In the Authentication list, select the `Create a S3-Compatible Auth Secret`.
-Fill in the S3 Access Key, the S3 Secret Key and the bucket name.
+Fill in the Object Storage Access Key, the Object Storage Secret Key and the bucket name.
 Also fill in the `Region` (in lowercase).
 
 > [!warning]
@@ -86,7 +86,7 @@ Fill in the endpoint `s3.gra.io.cloud.ovh.net`:
 >
 > It is a copy of the endpoint of your Object Storage bucket without `https://`.
 
-![OVHcloud S3 Rancher](images/rancher-etcd-config.png){.thumbnail}
+![OVHcloud Object Storage Rancher](images/rancher-etcd-config.png){.thumbnail}
 
 Finally, click to activate the checkbox `Accept any certificate (insecure)` and click the `Save`{.action} button. 
 
@@ -94,13 +94,13 @@ Finally, click to activate the checkbox `Accept any certificate (insecure)` and 
 
 In **Cluster Management**, click on your cluster.
 
-![OVHcloud S3 Rancher](images/rancher-cluster.png){.thumbnail}
+![OVHcloud Object Storage Rancher](images/rancher-cluster.png){.thumbnail}
 
 To check and retrieve the backup snapshots, click on the **Snapshots** tab.
 
-![OVHcloud S3 Rancher snapshots local](images/rancher-backup-local.png){.thumbnail}
+![OVHcloud Object Storage Rancher snapshots local](images/rancher-backup-local.png){.thumbnail}
 
-![OVHcloud S3 Rancher snapshots s3](images/rancher-backup-s3.png){.thumbnail}
+![OVHcloud Object Storage Rancher snapshots ](images/rancher-backup-s3.png){.thumbnail}
 
 The name of the snapshot is automatically generated, it is based on the type (whether the snapshot is manual: `on-demand` or recurring: `etcd-snapshot`). The naming convention is as follows:
 
@@ -150,11 +150,11 @@ The restoration of a cluster can take a few minutes.
 
 #### Failed to test for existence of bucket xxx: Access Denied
 
-If you have this following error message: `failed to test for existence of bucket etcd-rancher: Access Denied.`, you may have an error in the S3 endpoint.
+If you have this following error message: `failed to test for existence of bucket etcd-rancher: Access Denied.`, you may have an error in the Object Storage endpoint.
 
-Remove the `https://` scheme in the endpoint URL and check the endpoint URL of your OVHcloud Object Storage S3 bucket.
+Remove the `https://` scheme in the endpoint URL and check the endpoint URL of your OVHcloud Object Storage bucket.
 
-A correct S3 endpoint should be `s3.gra.io.cloud.ovh.net`.
+A correct Object Storage endpoint should be `s3.gra.io.cloud.ovh.net`.
 
 ## Go further
 
@@ -167,3 +167,5 @@ A correct S3 endpoint should be `s3.gra.io.cloud.ovh.net`.
 - Our team remains available on our dedicated Discord Channel, do not hesitate to join and reach us: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our Container and Orchestration services.
 
 - Join our [community of users](/links/community).
+
+**\***: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

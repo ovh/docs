@@ -27,17 +27,17 @@ Unlike a locally hosted application, using AI Deploy offers extremely fast infer
 
 To build and deploy your Whisper app, you need:
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
-- An AI Deploy Project created inside a [Public Cloud project](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](/links/manager)
+- An AI Deploy Project created inside a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - A [user for AI Deploy & Object Storage](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
 - [The OVHcloud AI CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) installed on your local computer
-- [Docker](https://www.docker.com/get-started) installed on your local computer, **or** access to a Debian Docker Instance, which is available on the [Public Cloud](https://www.ovh.com/manager/public-cloud/)
+- [Docker](https://www.docker.com/get-started) installed on your local computer, **or** access to a Debian Docker Instance, which is available on the [Public Cloud](/links/manager)
 
 ## Instructions
 
 You are going to follow different steps to deploy your Whisper application:
 
-- [Whisper Model Sslection](#step-1-whisper-model-selection)
+- [Whisper Model Selection](#step-1-whisper-model-selection)
 - [Download Whisper Model in the Object Storage](#step-2-download-whisper-model-in-the-object-storage)
 - [Whisper app development](#step-3-whisper-app-development)
 - [Whisper app deployment](#step-4-whisper-app-deployment)
@@ -73,7 +73,7 @@ model = whisper.load_model(model_id, download_root=model_path)
 
 As AI Deploy is based on Docker images, it is advisable to avoid directly downloading the model within the Python code and the Docker image for better manageability and flexibility. Moreover, you should not store the Whisper model directly in the Docker image because it will significantly increase the size of the Docker image.
 
-To do things more efficiently, it is better to save the model in a remote storage, like the [OVHcloud Object Storage](https://www.ovhcloud.com/en-au/public-cloud/object-storage/). This storage will be linked to the AI Deploy app, which will allow the use of the Whisper model within the app. This way, you can easily access the model and make updates without messing with the Docker container itself. 
+To do things more efficiently, it is better to save the model in a remote storage, like the [OVHcloud Object Storage](/links/public-cloud/object-storage). This storage will be linked to the AI Deploy app, which will allow the use of the Whisper model within the app. This way, you can easily access the model and make updates without messing with the Docker container itself. 
 
 #### Create an Object Storage bucket for you Whisper model
 
@@ -84,7 +84,7 @@ You can create your Object Storage bucket using either the UI (OVHcloud Control 
 >>
 >> If you do not feel comfortable with commands, this method may be more intuitive.
 >> 
->> First, go to the `Public Cloud`{.action} section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
+>> First, go to the `Public Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager).
 >>
 >> Then, select the `Object Storage`{.action} section (in the Storage category) and create a new object container by clicking `Storage`{.action} > `Object Storage`{.action} > `Create an object container`{.action}.
 >>
@@ -112,7 +112,7 @@ You can create your Object Storage bucket using either the UI (OVHcloud Control 
 >> 
 >> *`GRA` alias and `whisper-model` will be used in this tutorial.*
 >>
->> For your information, the previous command is applicable to both Swift and S3 buckets. However, it's important to note that for S3 usage, a proper configuration is necessary. If S3 is not configured yet and you wish to use it, please read the [S3 compliance guide](/pages/public_cloud/ai_machine_learning/gi_08_s3_compliance).
+>> For your information, the previous command is applicable to both Swift and S3* compatible Object Storage buckets. However, it's important to note that for S3 compatible usage, a proper configuration is necessary. If S3 compatible Object Storage is not configured yet and you wish to use it, please read the [S3 compatible compliance guide](/pages/public_cloud/ai_machine_learning/gi_08_s3_compliance).
 
 #### Download whisper in the created bucket
 
@@ -180,7 +180,7 @@ But in order to interact with the model, we are going to build a very simple app
 
 As for AI Training, you will need to use a Docker image when using AI Deploy. However you can't use the `ovhcom/ai-training-pytorch` Docker image this time. Indeed, using the Whisper model requires some system packages to be installed, such as `ffmpeg`, which is not the case in the previous image. This is why you need to build a new Docker image, dedicated to your AI project.
 
-To do this, you will need [Docker](https://www.docker.com/get-started), either installed directly on your computer, or using a Debian Docker Instance, available on the [Public Cloud](https://www.ovh.com/manager/public-cloud/).
+To do this, you will need [Docker](https://www.docker.com/get-started), either installed directly on your computer, or using a Debian Docker Instance, available on the [Public Cloud](/links/manager).
 
 The Dockerfile to use is already provided. Clone the [ai-training-examples GitHub repository](https://github.com/ovh/ai-training-examples/):
 
@@ -240,7 +240,7 @@ CMD [ "streamlit" , "run" , "/workspace/app.py", "--server.address=0.0.0.0", "$M
 
 #### Push the image into a registry
 
-Once your image is built, you will need to tag it and push it to a registry. Several registries can be used ([OVHcloud Managed Private Registry](https://www.ovhcloud.com/en-au/public-cloud/managed-private-registry/), [Docker Hub](https://hub.docker.com/), [GitHub packages](https://github.com/features/packages), ...). In this tutorial, we will use the **OVHcloud shared registry**.
+Once your image is built, you will need to tag it and push it to a registry. Several registries can be used ([OVHcloud Managed Private Registry](/links/public-cloud/managed-private-registry), [Docker Hub](https://hub.docker.com/), [GitHub packages](https://github.com/features/packages), ...). In this tutorial, we will use the **OVHcloud shared registry**.
 
 > [!warning]
 > **Warning**
@@ -310,10 +310,12 @@ To continue your project, you can add many more features, such as the specificat
 
 You could also combine your transcripts with an LLM. Learn how to [Deploy LLaMA 2 on AI Deploy](/pages/public_cloud/ai_machine_learning/deploy_tuto_15_streamlit_chatbot_llama_v2).
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-au/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 
 Please send us your questions, feedback and suggestions to improve the service:
 
 - On the OVHcloud [Discord server](https://discord.gg/ovhcloud)
+
+**\***: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

@@ -1,5 +1,5 @@
 ---
-title: Object Storage - Mettre en place CORS sur Object Storage S3
+title: Object Storage - Mettre en place CORS sur Object Storage
 excerpt: Découvrez comment activer et configurer CORS sur vos buckets
 updated: 2023-05-30
 ---
@@ -12,14 +12,14 @@ Par défaut, les navigateurs modernes imposent une politique de sécurité liée
 
 Le *Cross-Origin Resource Sharing* (CORS) est une technique qui permet aux ressources d'une application web cliente chargée à partir d'un domaine d'interagir avec des ressources situées dans un domaine différent.
 
-**Ce guide explique le concept de CORS et comment l’activer sur vos buckets S3.**
+**Ce guide explique le concept de CORS et comment l’activer sur vos buckets Object Storage.**
 
 ### Cas d'usage
 
 Les cas d'usage habituels pour CORS dans l'Object Storage OVHcloud sont les suivants :
 
 - Vous hébergez un site statique dans un bucket et vous souhaitez utiliser JavaScript pour accéder aux ressources hébergées dans le même bucket ou dans un autre bucket.
-- Vous disposez d'une application frontend (par exemple une application mobile) qui a besoin d'accéder à des ressources hébergées dans un cluster S3.
+- Vous disposez d'une application frontend (par exemple une application mobile) qui a besoin d'accéder à des ressources hébergées dans un cluster Object Storage.
 
 ### Comment ça fonctionne ?
 
@@ -70,7 +70,7 @@ Le fichier cors.json contient la configuration suivante :
 
 #### Exemple de configuration
 
-Supposons que nous avons une application web frontend hébergée sur `https://my-app.xyz` qui utilise JavaScript (React, Angular ou toute autre structure frontend) pour interroger les fichiers multimédia hébergés dans un bucket S3 (`https://my-media.s3.gra.io.cloud.ovh.net/`).
+Supposons que nous avons une application web frontend hébergée sur `https://my-app.xyz` qui utilise JavaScript (React, Angular ou toute autre structure frontend) pour interroger les fichiers multimédia hébergés dans un bucket Object Storage (`https://my-media.s3.gra.io.cloud.ovh.net/`).
 
 Nous activons CORS sur le bucket my-media :
 
@@ -103,6 +103,6 @@ Le serveur Object Storage va exposer l'entête `Access-Control-Allow-Origin` dan
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

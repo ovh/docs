@@ -1,6 +1,6 @@
 ---
-title: "Connecting to a database on your database server"
-excerpt: "Find out how to log in to your database"
+title: "Web Cloud Databases - Connecting to a database"
+excerpt: "Find out how to connect to a database on your Web Cloud Databases solution"
 updated: 2023-11-07
 ---
 
@@ -179,6 +179,8 @@ You are now connected to your database.
 ![config connection](/pages/assets/screens/other/web-tools/squirrel/general-dashboard.png){.thumbnail}
 
 ## Go further
+
+[Web Hosting - My database is full, what should I do?](/pages/web_cloud/web_hosting/sql_overquota_database).
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](/links/partner).
 

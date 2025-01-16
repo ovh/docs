@@ -25,7 +25,7 @@ CyberDuck ist eine solche Lösung und ist einfach konfigurierbar. Es sind noch w
 ## Voraussetzungen
 
 - Sie haben [Cyberduck](https://cyberduck.io/) installiert.
-- Sie verfügen über Ihre Benutzer- (*OS_USERNAME*) und Projekt-Kennungen (*OS_PROJECT_NAME* oder *OS_TENANT_NAME*), die Sie [erhalten können](/pages/public_cloud/compute/loading_openstack_environment_variables#schritt-nr-1-die-variablen-wieder-erhalten), indem Sie die Datei "OpenRC" im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) herunterladen.
+- Sie verfügen über Ihre Benutzer- (*OS_USERNAME*) und Projekt-Kennungen (*OS_PROJECT_NAME* oder *OS_TENANT_NAME*), die Sie [erhalten können](/pages/public_cloud/compute/loading_openstack_environment_variables#schritt-nr-1-die-variablen-wieder-erhalten), indem Sie die Datei "OpenRC" im [OVHcloud Kundencenter](/links/manager) herunterladen.
 - Sie haben Ihr OpenStack-Benutzerpasswort.
 
 Wenn Sie Ihr OpenStack-Benutzerpasswort nicht mehr kennen, können Sie es mithilfe [dieser Anleitung](/pages/public_cloud/compute/change_openstack_user_password_in_horizon) ändern.
@@ -65,6 +65,6 @@ Klicken Sie dann auf `Connect`{.action}. Sobald Sie eingeloggt sind, haben Sie Z
 
 [Erste Schritte mit der Swift API](/pages/storage_and_backup/object_storage/pcs_getting_started_with_the_swift_api)
 
-Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](https://www.ovhcloud.com/de/professional-services/), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
+Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](/links/professional-services), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 
 Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

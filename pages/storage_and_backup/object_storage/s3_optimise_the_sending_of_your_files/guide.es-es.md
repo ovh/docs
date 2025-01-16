@@ -1,5 +1,5 @@
 ---
-title: Object Storage - Optimice el envío de sus ficheros a S3 Object Storage (EN)
+title: Object Storage - Optimice el envío de sus ficheros a Object Storage (EN)
 excerpt: Learn how to optimise the sending of your files to your bucket
 updated: 2021-12-08
 ---
@@ -22,11 +22,11 @@ You may need to change this value for several reasons:
 
 - **Decrease this value**
 
-On some environments, the default value of 10 concurrent requests can overwhelm a system. This can cause connection interruptions or slow down system responsiveness. By lowering this value, S3 transfer commands will be less resource-intensive. The downside is that S3 transfers may take longer to complete. It may be necessary to reduce this value if you are using a tool such as trickle to limit bandwidth.
+On some environments, the default value of 10 concurrent requests can overwhelm a system. This can cause connection interruptions or slow down system responsiveness. By lowering this value, Object Storage transfer commands will be less resource-intensive. The downside is that Object Storage transfers may take longer to complete. It may be necessary to reduce this value if you are using a tool such as trickle to limit bandwidth.
 
 - **Increasing this value**
 
-In some scenarios, you may want S3 transfers to complete as quickly as possible, using as much bandwidth as necessary. In this scenario, the default number of concurrent requests may not be sufficient to use all available network bandwidth. Increasing this value can improve the time required to complete an S3 transfer.
+In some scenarios, you may want Object Storage transfers to complete as quickly as possible, using as much bandwidth as necessary. In this scenario, the default number of concurrent requests may not be sufficient to use all available network bandwidth. Increasing this value can improve the time required to complete an Object Storage transfer.
 
 This value should be set under the top-level s3 key in the AWS configuration file, whose default location is `~/.aws/config`.
 
@@ -51,6 +51,6 @@ aws configure set default.s3.max_concurrent_requests 20
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es-es/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Join our [community of users](/links/community).

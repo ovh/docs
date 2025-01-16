@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web - Activer les adresses e-mails incluses"
 excerpt: "Découvrez comment activer les adresses e-mails incluses avec votre offre d'hébergement web"
-updated: 2024-12-09
+updated: 2024-12-12
 ---
 
 ## Objectif
@@ -14,9 +14,9 @@ Si vous avez commandé un hébergement web sans l'attacher directement à un nom
 
 ## Prérequis
 
-- Disposer d'un [nom de domaine](/links/web/domains){.external} dans votre espace client OVHcloud.
-- Posséder une [offre d'hébergement web](/links/web/hosting){.external} (hors offres « Hébergement gratuit 100M » et « Start10m »).
-- Être connecté à votre [espace client OVHcloud](/links/manager){.external}.
+- Disposer d'un [nom de domaine](/links/web/domains) dans votre espace client OVHcloud.
+- Posséder une [offre d'hébergement web](/links/web/hosting).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 > [!warning]
 >
@@ -31,7 +31,7 @@ Si vous avez commandé un hébergement web sans l'attacher directement à un nom
 
 ### Activation de votre offre e-mail
 
-Connectez-vous à votre [espace client OVHcloud](/links/manager){.external}, cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement bénéficiant de l'offre e-mail.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement bénéficiant de l'offre e-mail.
 
 Dans le cadre `Configuration`, vous trouverez la mention `Adresses e-mails`. Cliquez sur le bouton `...`{.action} à droite puis sur `Activer la solution e-mail`{.action}.
 

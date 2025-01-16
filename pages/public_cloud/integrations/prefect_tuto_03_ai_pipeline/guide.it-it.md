@@ -6,14 +6,14 @@ updated: 2023-05-22
 
 ## Objective
 
-The purpose of this tutorial is to create an end-to-end AI pipeline, from the ingestion of data in an S3 object storage to the email notification when your AI Training job is done. 
+The purpose of this tutorial is to create an end-to-end AI pipeline, from the ingestion of data in an Object Storage to the email notification when your AI Training job is done. 
 We will launch a flow in Prefect which will simulate an AI Training job in a Public cloud project. The main goal is to show that we can launch AI training jobs without having to monitor their state over time, and start a real use case with automation. Prefect will help us achieve these goals.
 
 ## AI pipeline overview
 
 As a quick overview, here are the main flows and steps:
 
-1. Create a new S3 bucket (object storage) and upload data in it.
+1. Create a new Object Storage bucket and upload data in it.
 2. Run an AI Training job linked to this data, and train a previously built model.
 3. Once the job is completed, you receive a notification via email.
 
@@ -25,31 +25,31 @@ The model used will be a classical **PyTorch** image classification model. If yo
 
 - A Prefect cloud profile and an open Prefect workspace. See this [tutorial](/pages/public_cloud/integrations/prefect_guide_01_getting_started)
 - A coding environment with Prefect configured. See this [tutorial](/pages/public_cloud/integrations/prefect_guide_01_getting_started)
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-- A [Public Cloud project](https://www.ovhcloud.com/it/public-cloud/)
-- An S3 data store configured (you can do this easily with cli: `ovhai data store ls`. If you have never done this before, you can check [our tutorial](/pages/public_cloud/ai_machine_learning/gi_08_s3_compliance)
+- Access to the [OVHcloud Control Panel](/links/manager)
+- A [Public Cloud project](/links/public-cloud/public-cloud)
+- An Object Storage data store configured (you can do this easily with cli: `ovhai data store ls`). If you have never done this before, you can check [our tutorial](/pages/public_cloud/ai_machine_learning/gi_08_s3_compliance)
 
 ## Instructions
 
-### Generate credentials for S3 protocol
+### Generate credentials for Object Storage protocol
 
-Object storage is the most common and powerful solution to easily store data. OVHcloud object storage offers are natevily compliant with S3 protocol.
+Object storage is the most common and powerful solution to easily store data. OVHcloud object storage offers are natevily compliant with the Amazon S3 protocol.
 
 First, we will generate credentials allowing us to manage S3 buckets and data over API. 
-Follow our [S3 official documentaiton for credentials here](/pages/storage_and_backup/object_storage/s3_identity_and_access_management). 
+Follow our [Object Storage official documentation for credentials here](/pages/storage_and_backup/object_storage/s3_identity_and_access_management). 
 Keep the access key and the secret key, we will need them later. 
 
-Next, let's synchronize our S3 credentials with the boto3 client. To do this, we have to create a folder and two files in it. To configurate the boto3 client, we recommend following this [part](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage#configuration) of the tutorial. Once the two files are created and you have filled them with your credentials, we can start coding and create our S3 object storage with a Prefect flow.
+Next, let's synchronize our Object Storage credentials with the boto3 client. To do this, we have to create a folder and two files in it. To configurate the boto3 client, we recommend following this [part](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage#configuration) of the tutorial. Once the two files are created and you have filled them with your credentials, we can start coding and create our Object Storage with a Prefect flow.
 
-To create an S3 object storage, we must provide With the [SDK OVHcloud](https://github.com/ovh/python-ovh), we can easily communicate with the OVHcloud's API. To interact with an S3 object container, we must use an S3 protocol. OVHcloud does not provide this protocol yet, but [The boto3 library](https://github.com/boto/boto3) does. The boto3 SDK is the Amazon Web Services (AWS) Software Development Kit (SDK) for Python, which allows Python developers to write software that makes use of services like S3 containers. It provides a low-level interface to many of the services, as well as higher-level abstractions that facilitate working with these services. 
+To create an Object Storage, we must provide With the [SDK OVHcloud](https://github.com/ovh/python-ovh), we can easily communicate with the OVHcloud's API. To interact with an Object Storage container, we must use an S3 **\*** compatible protocol. OVHcloud does not provide this protocol yet, but [The boto3 library](https://github.com/boto/boto3) does. The boto3 SDK is the Amazon Web Services (AWS) Software Development Kit (SDK) for Python, which allows Python developers to write software that makes use of services like Object Storage containers. It provides a low-level interface to many of the services, as well as higher-level abstractions that facilitate working with these services. 
 
-We require certain credentials to use this protocol. You can get these credentials as S3 users. You can create them in the OVHcloud control panel, go to your public cloud project and open the object storage tab. To know more about these credentials, consult this [guide](/pages/storage_and_backup/object_storage/s3_identity_and_access_management).
+We require certain credentials to use this protocol. You can get these credentials as Object Storage users. You can create them in the OVHcloud control panel, go to your public cloud project and open the object storage tab. To know more about these credentials, consult this [guide](/pages/storage_and_backup/object_storage/s3_identity_and_access_management).
 
 ### Create environments variables inside our Prefect Cloud workspace. 
 
 Before starting our flows, a best practice is to use environments variables, avoiding hard-coded and unsafe parameters. Instead of storing them in a `.env` file, we can do this directly on the Prefect cloud UI. In Prefect, variables enable you to store and reuse non-sensitive bits of data, such as configuration information. Variables are named, mutable string values, much like environment variables. Variables are scoped to a Prefect server instance or a single workspace in Prefect Cloud. For more information, you can consult their [official website](https://docs.prefect.io/latest/concepts/variables/) directly. 
 
-For this pipeline, we will create 9 variables. Most of them are for your S3 access key or your credentials for the OVHcloud API. 
+For this pipeline, we will create 9 variables. Most of them are for your Object Storage access key or your credentials for the OVHcloud API. 
 
 Go to the Prefect Cloud interface and create the 9 variables with their UI:
 
@@ -57,10 +57,10 @@ Go to the Prefect Cloud interface and create the 9 variables with their UI:
 - app_key = your application key to access the OVHcloud API's.
 - app_secret = your application secret key to access the OVHcloud API's.
 - consumer_key = your consumer key to access the OVHcloud API's.
-- s3_key = your S3 key to configure the botoS3 client.
-- s3_secret = your S3 secret key to configure the botoS3 client.
-- s3_endpoint = your S3 endpoint.
-- s3_region = the name of the region where your s3 bucket will be stored.
+- s3_key = your Object Storage key to configure the botoS3 client.
+- s3_secret = your Object Storage secret key to configure the botoS3 client.
+- s3_endpoint = your Object Storage endpoint.
+- s3_region = the name of the region where your Object Storage bucket will be stored.
 - project_uuid = your public cloud project id, you can find it on the url. 
 
 Once your variables are created in the UI, you have to call them on your workspace in python. This will be ensured by a simple function directly provide by the SDK Prefect for python. Let's take a look at this code:
@@ -71,10 +71,10 @@ appEndpoint = variables.get("app_endpoint", default="<your-app-endpoint>")
 applicationKey = variables.get("app_key", default="<your-app-key>")
 applicationSecret = variables.get("app_secret", default="<your-application-secret")
 consumerKey = variables.get("consumer_key", default="<your-consumer-key>")
-awsAccessKey = variables.get("s3_key", default="<your-S3-access-key>")
-awsSecretKey = variables.get("s3_secret", default="<your-S3-secret-key>")
-endpointUrl = variables.get("s3_endpoint", "<your-S3-endpoint>")
-regionName = variables.get("s3_region", default="<your-S3-region>")
+awsAccessKey = variables.get("s3_key", default="<your-object-storage-access-key>")
+awsSecretKey = variables.get("s3_secret", default="<your-object-storage-secret-key>")
+endpointUrl = variables.get("s3_endpoint", "<your-object-storage-endpoint>")
+regionName = variables.get("s3_region", default="<your-object-storage-region>")
 projectUuid = variables.get("project_uiid", default="<your-project-uuid>")
 ```
 ### Understanding flows and tasks
@@ -85,18 +85,18 @@ Of course, putting all of our code in a single flow function with a no-name flow
 
 More information about tasks and flows can be found in the [Prefect official documentation](https://docs.prefect.io/latest/concepts/flows/). 
  
-### Create a first flow for uploading data in S3 bucket
+### Create a first flow for uploading data in an Object Storage bucket
 
-In this part, we will create the first flow for our S3 object storage. First of all, we will create a task (@first-task on the schema) to initialize our boto3 client. Let's do this in our python environment:
+In this part, we will create the first flow for our Object Storage. First of all, we will create a task (@first-task on the schema) to initialize our boto3 client. Let's do this in our python environment:
 
 ```python
 @task(name="init-a-S3-user",
       task_run_name=generate_task_name)
 def init_s3(username):
-    # Log in OVHcloud Object Storage with S3 protocol
-    # To get credentials, go to Control Panel / Public Cloud / (your project) / Users / (generate S3 credentials)
+    # Log in OVHcloud Object Storage with S3 compatible protocol
+    # To get credentials, go to Control Panel / Public Cloud / (your project) / Users / (generate Object Storage credentials)
     # boto3 doc : https://boto3.amazonaws.com/v1/documentation/api/latest/guide/s3-examples.html
-    # For the credentials of boto3 use the S3 credentials created on the OVHcloud control pannel
+    # For the credentials of boto3 use the Object Storage credentials created on the OVHcloud control panel
     client = boto3.client(
         's3',
         aws_access_key_id=awsAccessKey,
@@ -112,7 +112,7 @@ def init_s3(username):
 > The **endpoint_url** should be similar to this: https://s3.gra.io.cloud.ovh.net/. In this case, your region name is `gra`. The access key and secret key are your credentials, created in the previous steps.
 >
  
-Now, let's create another task to create an S3 bucket. For this task, we will need a name for our bucket. To name an S3 object storage, you need to provide a unique object key which serves as the identifier for the object. The object key consists of the bucket name and a unique identifier, separated by a dash (-). To get this unique identifier, you can use a timestamp or a [UUID generator](https://www.uuidgenerator.net/). Here is the python code to create our second task:
+Now, let's create another task to create an Object Storage bucket. For this task, we will need a name for our bucket. To name an Object Storage, you need to provide a unique object key which serves as the identifier for the object. The object key consists of the bucket name and a unique identifier, separated by a dash (-). To get this unique identifier, you can use a timestamp or a [UUID generator](https://www.uuidgenerator.net/). Here is the python code to create our second task:
 
 ```python
 @task(name="create-a-S3-bucket",
@@ -132,7 +132,7 @@ def create_bucket(bucket_name, client, region, username):
 > In this task, if there is a Client Error because the credentials are false, the task will return `False`. Thanks to this, we can raise and notify an error later, if necessary.
 >
 
-Now, let's upload our data in the S3 bucket. We will upload some code to create the model and extract our data, a requirements file and a .zip file with all the data to train. The python file and the requirements file can be downloaded on this [git repo](https://github.com/ovh/ai-training-examples/tree/main/jobs/getting-started/train-first-model). The dataset can be found [here](https://www.kaggle.com/datasets/zalando-research/fashionmnist) on Kaggle. Let's create this task!
+Now, let's upload our data in the Object Storage bucket. We will upload some code to create the model and extract our data, a requirements file and a .zip file with all the data to train. The python file and the requirements file can be downloaded on this [git repo](https://github.com/ovh/ai-training-examples/tree/main/jobs/getting-started/train-first-model). The dataset can be found [here](https://www.kaggle.com/datasets/zalando-research/fashionmnist) on Kaggle. Let's create this task!
 
 ```python
 @task(name="upload-files-in-a-S3-bucket",
@@ -170,7 +170,7 @@ def list_bucket_objects(bucket, client, username):
 Our fourth tasks for the first flow has been created. Now, we have to link variables and tasks in the flow:
 
 ```python
-# Flow to create an S3 bucket and upload files in it
+# Flow to create an Object Storage bucket and upload files in it
 @flow(name="create-a-S3-container-and-upload-your-data",
       flow_run_name=generate_flow_name)
 def create_and_upload_in_S3(username):
@@ -196,7 +196,7 @@ def create_and_upload_in_S3(username):
 
 > [!warning]
 > 
-> Don't forget to download the data on your local environment. If you don't, it won't be able to be uploaded to the S3 Object Storage. 
+> Don't forget to download the data on your local environment. If you don't, it won't be able to be uploaded to the Object Storage. 
 >
 
 ### Create a second flow to train your machine learning model 
@@ -350,7 +350,7 @@ You also have the possibility to see the steps of your flows directly in the con
 ## Go further
  
 - [Official Prefect documentation](https://docs.prefect.io/latest/)
-- [OVHcloud API console](https://api.ovh.com/console/)
+- [OVHcloud API console](/links/api)
 - Learn about AI Training jobs with tutorials : [AI Training - Tutorials](/products/public-cloud-ai-and-machine-learning-ai-training-tutorials)
 
 ## Feedback
@@ -358,3 +358,5 @@ You also have the possibility to see the steps of your flows directly in the con
 Please send us your questions, feedback and suggestions to improve the service:
 
 - On the OVHcloud [Discord server](https://discord.gg/ovhcloud)
+
+**\***: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

@@ -28,7 +28,7 @@ Estão também disponíveis outras interfaces, cuja configuração é semelhante
 ## Requisitos
 
 - Descarregar e instalar [Cyberduck](https://cyberduck.io/).
-- Ter os dados de utilizador (*OS_USERNAME*) e os projetos (*OS_PROJECT_NAME* ou *OS_TENANT_NAME*) disponíveis para o descarregar o ficheiro "OpenRC" no menu [Users and Roles](/pages/public_cloud/compute/loading_openstack_environment_variables#etapa-1-recuperar-as-variaveis) da sua [Área de Cliente Public Cloud da OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Ter os dados de utilizador (*OS_USERNAME*) e os projetos (*OS_PROJECT_NAME* ou *OS_TENANT_NAME*) disponíveis para o descarregar o ficheiro "OpenRC" no menu [Users and Roles](/pages/public_cloud/compute/loading_openstack_environment_variables#etapa-1-recuperar-as-variaveis) da sua [Área de Cliente Public Cloud da OVHcloud](/links/manager).
 - Ter a palavra-passe de utilizador OpenStack.
 
 Se já não conhece a sua palavra-passe de utilizador OpenStack, pode alterá-la através [deste manual](/pages/public_cloud/compute/change_openstack_user_password_in_horizon).

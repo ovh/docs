@@ -1,26 +1,26 @@
 ---
-title: Object Storage - Use S3 Object Storage with Veeam
+title: Object Storage - Use Object Storage with Veeam
 updated: 2022-01-03
 ---
 
 ## Objective
 
-This guide is intended to show you how to configure Veeam to use your S3 Object Storage.
+This guide is intended to show you how to configure Veeam to use your Object Storage.
 
 > [!warning]
 >
 > OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. If you encounter any difficulties performing these actions, please contact a [specialist service provider](https://partner.ovhcloud.com/en-au/directory/) and/or discuss the issue with our community on <https://community.ovh.com/en/>. OVHcloud cannot provide you with technical support in this regard.
+> This guide is designed to assist you in common tasks as much as possible. If you encounter any difficulties performing these actions, please contact a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) and/or discuss the issue with our community on <https://community.ovh.com/en/>. OVHcloud cannot provide you with technical support in this regard.
 >
 
 ## Requirements
 
 - A bucket
 - A user with the required access rights on the bucket
-- Your S3 credentials (access_key and secret_access_key).
+- Your Object Storage credentials (access_key and secret_access_key).
 
-See our [Getting started with S3 Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) guide.
+See our [Getting started with Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) guide.
 
 > [!primary]
 >
@@ -29,7 +29,7 @@ See our [Getting started with S3 Object Storage](/pages/storage_and_backup/objec
 
 ## Instructions
 
-### Adding S3 Compatible Object Storage
+### Adding S3 **\*** Compatible Object Storage
 
 #### Step 1 - Launch New Object Repository Wizard
 
@@ -94,6 +94,8 @@ At the **Summary** step of the wizard, complete the object storage repository co
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-au/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Join our [community of users](/links/community).
+
+**\***: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

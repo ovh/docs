@@ -1,12 +1,8 @@
 ---
-title: "Enterprise File Storage - Private network configuration - Beta"
+title: "Enterprise File Storage - Private network configuration"
 excerpt: "Find out how to set up a private network for your Enterprise File Storage service from your OVHcloud Control Panel"
-updated: 2024-11-25
+updated: 2024-12-19
 ---
-
-> [!warning]
-> Usage of private network configuration for Enterprise File Storage is currently in Beta phase.
-> This guide may be incomplete and will be extended during the Beta phase. Our team remains available on our dedicated Discord Channel, do not hesitate to join and reach us: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our Enterprise File Storage services.
 
 ## Objective
 

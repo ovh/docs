@@ -1,7 +1,7 @@
 ---
 title: FAQ für Abrechnung und Zahlung
 excerpt: Hier finden Sie die häufigsten Fragen zu Abrechnung und Zahlung
-updated: 2023-06-05
+updated: 2024-12-23
 ---
 
 ## Ziel
@@ -31,14 +31,14 @@ Verlängern Sie Ihren Dienst nicht vor dem Ablaufdatum, wird er gesperrt und nac
 
 #### Gut zu wissen:
 
-Den Status Ihrer Dienste überprüfen und ihre Verlängerung verwalten können Sie im Bereich `Meine Dienstleistungen`{.action} des Kundencenters.
+Den Status Ihrer Dienste überprüfen und ihre Verlängerung verwalten können Sie im Bereich `Meine Angebote und Dienste`{.action} des Kundencenters.
 Nach Anmeldung auf der Seite <https://www.ovh.de/cgi-bin/order/renew.cgi> lassen sich hier Ihre Dienste manuell verlängern.
 
 Diese Anleitung beschreibt die Verlängerung ausführlich: [Verlängerung Ihrer OVHcloud Dienste verwalten](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal)
 
 ### Wie kann ich die automatische Verlängerung aktivieren?
 
-Gehen Sie in den Bereich `Produkte und Dienstleistungen`{.action}, direkt zugänglich auf dem Dashboard Ihres OVHcloud Kundencenters. Wählen Sie dann den betreffenden Dienst aus, klicken Sie auf die drei Punkte und wählen Sie `Automatische Zahlung aktivieren`{.action} aus. Standardmäßig wird die automatische Verlängerung bei der Bestellung des Dienstes aktiviert.
+Gehen Sie in den Bereich `Meine Angebote und Dienste`{.action}, direkt zugänglich auf dem Dashboard Ihres OVHcloud Kundencenters. Wählen Sie dann den betreffenden Dienst aus, klicken Sie auf die drei Punkte und wählen Sie `Automatische Zahlung aktivieren`{.action} aus. Standardmäßig wird die automatische Verlängerung bei der Bestellung des Dienstes aktiviert.
 
 #### Tipps und Tricks
 
@@ -47,7 +47,7 @@ Wenn Sie detaillierte Erläuterungen wünschen, empfehlen wir Ihnen dazu die fol
 
 ### Wie kann ich die automatische Verlängerung deaktivieren?
 
-Klicken Sie auf dem Dashboard Ihres Kundencenters bei OVHcloud auf den Shortcut `Produkte und Dienstleistungen`{.action}. Wählen Sie dann den betreffenden Dienst aus, klicken Sie auf die drei Punkte in der letzten Tabellenspalte und wählen Sie `Konfigurieren der Verlängerung`{.action} aus. Sie können nun den manuellen Modus auswählen. Dieser Modus steht nur für bestimmte Dienstleistungen zur Verfügung, wie Domainnamen, Webhosting, VPS und Dedicated Server.
+Klicken Sie auf dem Dashboard Ihres Kundencenters bei OVHcloud auf den Shortcut `Meine Angebote und Dienste`{.action}. Wählen Sie dann den betreffenden Dienst aus, klicken Sie auf die drei Punkte in der letzten Tabellenspalte und wählen Sie `Konfigurieren der Verlängerung`{.action} aus. Sie können nun den manuellen Modus auswählen. Dieser Modus steht nur für bestimmte Dienstleistungen zur Verfügung, wie Domainnamen, Webhosting, VPS und Dedicated Server.
 
 Um einen Dienst zu kündigen, informieren Sie sich bitte hier [Wie kann ich einen Dienst kündigen?](#cancelservice)
 
@@ -94,13 +94,13 @@ Wenn Ihr OVHcloud Prepaid Account ein Guthaben aufweist, wird er standardmäßig
 
 ### Wann erfolgt meine nächste Abbuchung?
 
-Die Daten aller Verlängerungen finden Sie unter „Produkte und Dienstleistungen“, direkt zugänglich auf dem Dashboard in Ihrem OVHcloud Kundencenter.
+Die Daten aller Verlängerungen finden Sie unter „Meine Angebote und Dienste“, direkt zugänglich auf dem Dashboard in Ihrem OVHcloud Kundencenter.
 
 Bei Diensten mit automatischer Verlängerung wird der Rechnungsbetrag am Ersten des Monats abgebucht. Die Abbuchungen können jedoch entsprechend Ihren Dienstleistungen unterschiedlich häufig erfolgen.
 
 #### Tipps und Tricks
 
-Sie können das Zahlungsintervall Ihrer Dienstleistungen im Bereich `Meine Dienste`{.action} in Ihrem Kundencenter ändern.
+Sie können das Zahlungsintervall Ihrer Dienstleistungen im Bereich `Meine Angebote und Dienste`{.action} in Ihrem Kundencenter ändern.
 Wenn Sie detaillierte Erläuterungen wünschen, empfehlen wir Ihnen dazu die folgende Anleitung: [Verlängerung meiner Dienste verwalten](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal)
 
 ### Welches meiner Zahlungsmittel wird belastet?
@@ -146,14 +146,14 @@ Die Zahlungen, die Sie über unsere Seite vornehmen, sowie automatische Abrechnu
 
 ### Wie kann ich einen Dienst kündigen? <a name="cancelservice"></a>
 
-Gehen Sie im OVHcloud Kundencenter in die Rubrik `Produkte und Dienstleistungen`{.action}, um Lösungen wie Domainnamen, Webhosting, Dedicated Server und VPS zu kündigen. Wählen Sie dann den betreffenden Dienst aus, klicken Sie auf die drei Punkte ganz rechts daneben und dann auf `Zum Ablaufdatum kündigen`{.action}. Sollten Sie den Dienst bereits gekündigt haben, wird Ihnen die Option `Kündigung stornieren`{.action} angeboten.
+Gehen Sie im OVHcloud Kundencenter in die Rubrik `Meine Angebote und Dienste`{.action}, um Lösungen wie Domainnamen, Webhosting, Dedicated Server und VPS zu kündigen. Wählen Sie dann den betreffenden Dienst aus, klicken Sie auf die drei Punkte ganz rechts daneben und dann auf `Meinen Dienst kündigen`{.action}. Sollten Sie den Dienst bereits gekündigt haben, wird Ihnen die Option `Kündigung der Dienstes stornieren`{.action} angeboten.
 
 Die Kündigung wird mit dem Ablauf der Geltungsdauer oder der Vertragslaufzeit des Dienstes wirksam. Sie können Ihren Dienst bis 24 Stunden vor Ablauf kündigen oder aber die Kündigung stornieren.
 
 #### Gut zu wissen:
 
 Im Falle einer fehlerhaften Bestellung können Sie unter bestimmten Bedingungen von Ihrem Widerrufsrecht Gebrauch machen. Weitere Informationen finden Sie unter: Wie kann ich meine Bestellung stornieren?
-Die vollständige Dokumentation zur Kündigung aller unserer Produkte und Dienstleistungen finden Sie [hier](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services)
+Die vollständige Dokumentation zur Kündigung aller unserer Meine Angebote und Dienste finden Sie [hier](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services)
 
 ### Wie kann ich die Produkt- oder Servicereferenz auf meiner Rechnung bearbeiten?
 

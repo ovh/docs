@@ -1,11 +1,22 @@
 ---
 title: Configurar HYCU Backup (EN)
 excerpt: Installing HYCU Backup on a Nutanix cluster
-kb: Hosted Private Cloud
-category_l1: Nutanix on OVHcloud
-category_l2: Backups
-updated: 2022-12-16
+updated: 2024-12-10
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objective
 
@@ -16,29 +27,167 @@ HYCU for Nutanix is a backup software available for Nutanix.
 > [!warning]
 > OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they work properly.
 >
-> This guide is designed to assist you as much as possible with common tasks. Nevertheless, we recommend contacting a specialist provider if you experience any difficulties or doubts when it comes to managing, using or setting up a service on a server.
+> This guide is designed to assist you as much as possible with common tasks. However, we recommend reaching out to the [OVHcloud Professional Services team](/links/professional-services) or a [specialized provider](/links/partner) if you encounter difficulties or have doubts regarding the administration, use, or setup of a service on a server.>
 >
-> The HYCU licence is not provided by OVHcloud. For more information, contact HYCU or OVHcloud commercial teams.
 
 ## Requirements
 
-- A Nutanix cluster in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
-- You must be connected to the cluster via Prism Central. 
+- A valid [HYCU for OVHcloud](/links/hosted-private-cloud/hycu) license in your OVHcloud account (the first step of this guide will detail the procedure to follow) or a HYCU license purchased from a third-party provider.
+- A Nutanix on OVHcloud cluster in your OVHcloud account.
+- Access to your [OVHcloud Control Panel](/links/manager).
+- Access to the cluster via Prism Central.
 - A Public Cloud project with a High Performance Object Storage type storage bucket, with a user with read and write permissions for this bucket. You can find more information on how to create a Public Cloud project and how to use the High Performance Object Storage service on the following pages:
-    - [Creating your first OVHcloud Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project)
-    - [Getting started with S3 High Performance](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage).
-- 60 GB of storage, 8 GB of memory and 8 cores on your Nutanix Cluster.
+    - [Creating your first OVHcloud Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project).
+    - [Getting started with Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage).
+- 60 GB of storage, 8 GB of memory, and 8 cores on your Nutanix Cluster for the HYCU Instance/Appliance.
 
 ## Instructions
 
+### Content Overview
+
+- [Order a HYCU for OVHcloud license](#license-order)
+    - [Activate the license](#license-activation)
+    - [Regenerate a HYCU for OVHcloud license](#license-renew)
+    - [Cancel a HYCU for OVHcloud subscription (and its associated license)](#license-cancel)
+    - [Upgrade a HYCU for OVHcloud license](#license-upgrade)
+- [Install and configure HYCU](#installation)
+    - [Add the HYCU installation image](#adding-image)
+    - [Configure the IP address for ISCSI](#adding-ip)
+    - [Add a user account in Prism Element for HYCU](#adding-user)
+    - [Create the virtual machine for HYCU](#create-vm)
+    - [Configure URL redirection for HYCU to the public network](#url-redirection)
+    - [Configure HYCU](#hycu-configuration)
+- [HYCU update](#hycu-update)
+    - [Add sources for a new HYCU version](#adding-new-sources)
+    - [Start the update from HYCU](#update-launch)
+- [Configure backups in HYCU](#backup-configuration)
+    - [Set passwords for virtual machine connections](#setting-passwords)
+    - [Create backup strategies](#backup-strategies)
+    - [Assign backup strategies](#backup-strategies-assignment)
+- [Check the backup status](#backup-check)
+- [Restore from HYCU](#restoring)
+    - [Restore a virtual machine](#restoring-vm)
+    - [Retrieve a file](#restoring-file)
+    - [Restore an application](#restoring-app)
+
+### Order a HYCU for OVHcloud license <a name="license-order"></a>
+
+We offer different license packs based on the number of virtual machines (VMs) used by your Nutanix workloads.
+
+> [!success]
+> For more information, visit our [HYCU for OVHcloud](/links/hosted-private-cloud/hycu) page.
+
+> [!primary]
+> **You already have a HYCU license?**<br>
+> Continue reading this guide at the [Install and configure HYCU](#installation) step.
+
+Log in to the [OVHcloud Control Panel](/links/manager) and navigate to `Hosted Private Cloud`{.action} and `Storage and Backup`{.action}.
+
+Click on `HYCU`{.action} then `All My Licenses`{.action}.
+
+![Order a HYCU license](images/hycu-for-ovhcloud-license-order.png){.thumbnail}
+
+Click the `Get Started`{.action} button to choose and order a HYCU for OVHcloud pack.
+
+Once your order is complete, you will receive a confirmation email and your subscription will appear in the `All My Licenses`{.action} dashboard.
+
+Click on your license to proceed with activation.
+
+#### Activate the license <a name="license-activation"></a>
+
+> [!warning]
+> This step requires that you have **the HYCU software already installed and configured on your Nutanix cluster**.<br>
+> If you have not already done so, please read the [Install and configure HYCU](#installation) step of this guide before following the HYCU license activation step below.
+>
+
+/// details | Activate the HYCU license
+
+When you click on a license in your dashboard, a menu will appear allowing you to rename, activate, renew, or cancel your HYCU for OVHcloud license.
+
+Click the `Activate License`{.action} button (in the `Shortcuts` box).
+
+![Activate a HYCU license](images/hycu-for-ovhcloud-license-activation-01.png){.thumbnail}
+
+A window will open to upload the license request file.
+
+![Activate a HYCU license](images/hycu-for-ovhcloud-license-activation-02.png){.thumbnail}
+
+To obtain your license request file, log in to your Hybrid Cloud HYCU instance/appliance and go to the `Licensing`{.action} menu.
+
+![Activate a HYCU license](images/hycu-for-ovhcloud-license-activation-03.png){.thumbnail}
+
+Click `Download Request`{.action} and download the file.
+
+![Activate a HYCU license](images/hycu-for-ovhcloud-license-activation-04.png){.thumbnail}
+
+Back in the OVHcloud Control Panel, drag and drop the downloaded file into the open window, then click `Activate`{.action}.
+
+![Activate a HYCU license](images/hycu-for-ovhcloud-license-activation-05.png){.thumbnail}
+
+After verification, the status of your license will change to `Active`.
+
+![Activate a HYCU license](images/hycu-for-ovhcloud-license-activation-06.png){.thumbnail}
+
+Once the license is active, click the `Download License`{.action} button (at the bottom of the `General Information` box).
+
+Return to the `Licensing`{.action} menu of your Hybrid Cloud HYCU instance/appliance and upload the license you just downloaded from the OVHcloud Control Panel.
+
+![Activate a HYCU license](images/hycu-for-ovhcloud-license-activation-07.png){.thumbnail}
+
+A window will inform you that your license has been validated.
+
+![Activate a HYCU license](images/hycu-for-ovhcloud-license-activation-08.png){.thumbnail}
+
+///
+
+#### Regenerate a HYCU for OVHcloud license <a name="license-renew"></a>
+
+If your HYCU technical configuration has changed, you will need to make a new request to obtain a new license file compatible with your HYCU controller.
+
+/// details | Regenerate a HYCU for OVHcloud license
+
+Log in to the [OVHcloud Control Panel](/links/manager) and navigate to `Hosted Private Cloud`{.action} and `Storage and Backup`{.action}. Click on `HYCU`{.action}.
+
+Once in your license dashboard, click the `Regenerate License`{.action} button (in the `Shortcuts` box).
+
+![Regenerate HYCU license](images/hycu-for-ovhcloud-license-renew.png){.thumbnail}
+
+As with the activation of your license, download and upload your license request.
+
+Then follow the same process as for license activation:
+
+- Download the license key.
+- Upload the license key to your Hybrid Cloud instance/appliance.
+
+///
+
+#### Cancel a HYCU for OVHcloud subscription (and its associated license) <a name="license-cancel"></a>
+
+/// details | How to cancel a HYCU for OVHcloud subscription
+
+Log in to the [OVHcloud Control Panel](/links/manager) and navigate to `Hosted Private Cloud`{.action} and `Storage and Backup`{.action}. Click on `HYCU`{.action}.
+
+Once in your license dashboard, click `Cancel License`{.action} in the `Subscription` box.
+
+![Cancel HYCU subscription](images/hycu-for-ovhcloud-license-cancel-01.png){.thumbnail}
+
+Then confirm the cancellation by typing `TERMINATE` in the provided box, then click `Cancel`{.action}.
+
+![Cancel HYCU subscription](images/hycu-for-ovhcloud-license-cancel-02.png){.thumbnail}
+
+///
+
+#### Upgrade a HYCU for OVHcloud license <a name="license-upgrade"></a>
+
+To upgrade your offer, you must first cancel your current HYCU for OVHcloud subscription (see above) and then [order a new subscription](/links/hosted-private-cloud/hycu) with the required virtual machines pack.
+
+### Install and Configure HYCU <a name="installation"></a>
+
+#### Add the HYCU installation image <a name="adding-image"></a>
+
 Log in to **Prism Central**.
 
-For more information on connecting to the cluster, see the [Go further](#gofurther) section in this guide. 
-
-### Installing and configuring HYCU software
-
-#### Adding HYCU installation image
+For more information on how to connect to the cluster, refer to the [Go further](#gofurther) section of this guide.
 
 From the main menu, click `Images`{.action} from the `Compute & Storage menu`{.action}.
 
@@ -71,7 +220,7 @@ On the **Prism Central** dashboard, click the `cluster name`{.action} in the **C
 
 ![Configure ISCSI 01](images/00-configureiscsi01.png){.thumbnail}
 
-#### Configuring the IP address for ISCSI
+#### Configuring the IP address for ISCSI <a name="adding-ip"></a>
 
 Go to the settings by clicking on the `gear icon`{.action}.
 
@@ -93,7 +242,7 @@ The IP address is displayed in **virtual IP**.
 
 ![Configure ISCSI 06](images/00-configureiscsi06.png){.thumbnail}
 
-#### Adding a user account in **Prism Element** for HYCU
+#### Adding a user account in **Prism Element** for HYCU <a name="adding-user"></a>
 
 Click the gear to go to the **Prism Element configuration**.
 
@@ -126,7 +275,7 @@ The user is then created.
 
 ![Add local user to Prism Element 05](images/01-adduserprismelement05.png){.thumbnail}
 
-#### Creating the virtual machine for HYCU
+#### Creating the virtual machine for HYCU <a name="create-vm"></a>
 
 Go to **Prism Central**.
 
@@ -223,7 +372,7 @@ The virtual machine is started and has the IP address defined in **cloud-init**.
 
 ![Create HYCUVM 15](images/02-createhycuvm15.png){.thumbnail}
 
-#### Configuring HYCU URL redirection to public network
+#### Configuring HYCU URL redirection to public network <a name="url-redirection"></a>
 
 In this section, we will configure a redirection so that you can configure HYCU using the web interface from outside your cluster.
 
@@ -285,7 +434,7 @@ In the `Tasks`{.action} tab, you can track the progress of applying the changes.
 
 For more information on the OVHcloud Load Balancer, please refer to the [Go further](#gofurther) section of this guide. 
 
-#### Configuring HYCU
+#### Configuring HYCU <a name="hycu-configuration"></a>
 
 Connect with a web browser to the HYCU administration interface, which should be similar to **https://nutanixfqdncluster:8443**. The `fqdn` variable corresponds to the URL provided when the Nutanix cluster was created.
 
@@ -343,7 +492,7 @@ Select `Targets`{.action} in the menu on the left and click `+ Add`{.action} in 
 
 ![Configure HYCU 09](images/03-configurehycu09.png){.thumbnail}
 
-Enter the configuration settings and authentication keys for your S3 user with read/write access to the S3 bucket used as explained below:
+Enter the configuration settings and authentication keys for your Object Storage user with read/write access to the  Object Storage bucket used as explained below:
 
 - **name** Name
 - **Size**: Storage size
@@ -360,10 +509,10 @@ Enable `ENABLE COMPRESSION`{.action} and scroll down through the window.
 
 Complete the information:
 
-- SERVICE ENDPOINT: `S3 Storage URL`
+- SERVICE ENDPOINT: `Object Storage URL`
 - BUCKET NAME: `Bucket name`
-- ACCESS KEY ID: `S3 User Access Key`
-- SECRET ACCESS KEY: `S3 User Secret Key`
+- ACCESS KEY ID: `Object Storage User Access Key`
+- SECRET ACCESS KEY: `Object Storage User Secret Key`
 
 Enable `TARGET ENCRYPTION`{.action} and click `Save`{.action}.
 
@@ -373,11 +522,11 @@ The target is enabled for Nutanix cluster backups.
 
 ![Configures HYCU 12](images/03-configurehycu12.png){.thumbnail}.
 
-### Updating HYCU
+### Updating HYCU <a name="hycu-update"></a>
 
 HYCU regularly provides updates for which we detail the process below.
 
-#### Adding sources for a new version of HYCU
+#### Adding sources for a new version of HYCU  <a name="adding-new-sources"></a>
 
 From the **Prism Central** main menu, click `Images`{.action} from the `Compute & Storage`{.action} menu.
 
@@ -412,7 +561,7 @@ Click `Save`{.action} to import the image.
 
 ![Add Image HYCU for update 05](images/04-addimageforupdate05.png){.thumbnail}
 
-#### Runing the update from HYCU
+#### Runing the update from HYCU <a name="update-launch"></a>
 
 Log in via the URL provided when you created the Nutanix cluster, replacing the port **https://fqdnclusternutanix:8443**.
 
@@ -450,9 +599,9 @@ Uncheck `Suspend All`{.action} and click `Save`{.action}.
 
 ![After Update 01](images/07-afterupdate02.png){.thumbnail}
 
-### Configuring backup in HYCU
+### Configuring backup in HYCU <a name="backup-configuration"></a>
 
-#### Setting up VM login passwords
+#### Setting up VM login passwords <a name="setting-passwords"></a>
 
 Virtual machine login passwords enable backup of applications such as a Microsoft SQL database or Exchange server.
 
@@ -510,7 +659,7 @@ Select the password you want to use and click `Assign`{.action}.
 
 ![Add vm to credential 04](images/08-addvmtocredential04.png){.thumbnail}
 
-#### Creating backup policies
+#### Creating backup policies <a name="backup-strategies"></a>
 
 Go to the `policies`{.action} menu on the left and click the `+`{.action} button in the top right corner.
 
@@ -536,7 +685,7 @@ In the `policies` menu, click the `+`{.action} button in the top right corner.
 
 ![Create Policy ](images/09-createpolicy01.png){.thumbnail}
 
-Set the policy name `BACKUP to S3 OVHcloud and local SNAPSHOTS`{.action} in the **NAME** field.
+Set the policy name `BACKUP to Object Storage OVHcloud and local SNAPSHOTS`{.action} in the **NAME** field.
 
 Check the `FAST RESTORE`{.action} option, leave the `BACKUP`{.action} option checked.
 
@@ -548,9 +697,9 @@ Edit the **Fast restore** option with your settings and click `Save`{.action}.
 
 ![Create Policy for General Usage 02 ](images/10-createpolicyforgeneralusage02.png){.thumbnail}
 
-This strategy makes a backup on OVHcloud S3 storage and also takes **snapshots** inside the Nutanix cluster, allowing for faster recovery.
+This strategy makes a backup on OVHcloud Object Storage and also takes **snapshots** inside the Nutanix cluster, allowing for faster recovery.
 
-#### Assigning backup policies
+#### Assigning backup policies <a name="backup-strategies-assignment"></a>
 
 Select all VMs via the check box next to **NAME**, then click the shield-shaped `Policies`{.action} button in the top right to assign a policy to all VMs.
 
@@ -572,11 +721,11 @@ Select four virtual machines and click the `Policies`{.action} button to assign 
 
 ![Affect policy to HYCU VM 01](images/11-addsomevmtopolicy01.png){.thumbnail}
 
-Choose the `BACKUP to S3 OVHcloud and local SNAPSHOTS`{.action} policy and click `Assign`{.action}.
+Choose the `BACKUP to Object Storage and local SNAPSHOTS`{.action} policy and click `Assign`{.action}.
 
 ![Affect policy to HYCU VM 02](images/11-addsomevmtopolicy02.png){.thumbnail}
 
-### Monitoring backup status
+### Monitoring backup status <a name="backup-check"></a>
 
 Go to the `Dashboard`{.action} menu on the left to view the dashboard and view the backup status.
 
@@ -586,13 +735,13 @@ Open the `Jobs`{.action} menu on the left to view the job status.
 
 ![Display JobState](images/12-jobstate01.png){.thumbnail}
 
-### Restoring from HYCU
+### Restoring from HYCU <a name="restoring"></a>
 
 Use the `Virtual Machines`{.action} menu and click a backed up virtual machine.
 
 ![Restore VM 01](images/13-restorevm01.png){.thumbnail}
 
-#### Restoring a virtual machine
+#### Restoring a virtual machine <a name="restoring-vm"></a>	
 
 Click the `Restore VM`{.action} button in the bottom right-hand corner.
 
@@ -608,7 +757,7 @@ Leave the default options and click `Restore`{.action}.
 
 The virtual machine is fully restored. 
 
-#### Retrieving a file
+#### Retrieving a file <a name="restoring-file"></a>
 
 Click the `Restore files`{.action} button in the bottom right-hand corner.
 
@@ -632,7 +781,7 @@ Choose `Rename restored`{.action} and click `Restore`{.action}.
 
 The restored file is located inside the virtual machine with a new name so as not to delete the old file.
 
-#### Restoring an application 
+#### Restoring an application <a name="restoring-app"></a>
 
 Click the `Applications`{.action} menu and then choose an application to restore by clicking an application below **Name**.
 
@@ -658,6 +807,8 @@ The database is restored into a new database.
 
 ## Go further <a name="gofurther"></a>
 
+[Nutanix on OVHcloud - High-level documentation](/pages/hosted_private_cloud/nutanix_on_ovhcloud/01-global-high-level-doc)
+
 [Nutanix Hyper-Convergence](/pages/hosted_private_cloud/nutanix_on_ovhcloud/03-nutanix-hci)
 
 [HYCU Home Page](https://www.hycu.com/)
@@ -666,8 +817,8 @@ The database is restored into a new database.
 
 [OVHcloud Load Balancer documentation](/products/network-load-balancer)
 
-[Our OVHcloud Object Storage solutions](https://www.ovhcloud.com/es/public-cloud/object-storage/)
+[Our OVHcloud Object Storage solutions](/links/public-cloud/object-storage)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance for implementing our solutions, contact your sales representative or click [this link](/links/professional-services) to get a quote and request a personalized analysis of your project from our Professional Services team experts.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

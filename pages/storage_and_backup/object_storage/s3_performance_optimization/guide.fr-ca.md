@@ -1,12 +1,12 @@
 ---
 title: Object Storage - Optimiser les performances
-excerpt: "Ce guide vous présente différentes méthodes pour optimiser les performances de vos buckets Object Storage S3 OVHcloud, notamment la recherche par plage d'octets, le multipart upload ainsi que d'autres méthodes"
+excerpt: "Ce guide vous présente différentes méthodes pour optimiser les performances de vos buckets Object Storage, notamment la recherche par plage d'octets, le multipart upload ainsi que d'autres méthodes"
 updated: 2024-03-27
 ---
 
 ## Objectif
 
-Il existe plusieurs façons d'optimiser les performances de vos buckets sur l'Object Storage S3 OVHcloud. 
+Il existe plusieurs façons d'optimiser les performances de vos buckets sur l'Object Storage.
 
 **Le guide suivant vous présente les différentes méthodes d'optimisation.**
 
@@ -212,7 +212,7 @@ Il est également possible d’optimiser considérablement les performances en a
 
 OpenIO est une solution de *Software Defined Storage- sur laquelle repose l’Object Storage d’OVHcloud.
 
-Dans OpenIO, un **conteneur*- est essentiellement une entité logique interne qui contient tous les objets d'un bucket donné. Chaque conteneur est associé à une base de données de métadonnées interne qui répertorie toutes les adresses du cluster des objets qu'il contient. Par défaut, un bucket S3 est associé à un conteneur, mais cela peut changer avec le mécanisme de *sharding*.
+Dans OpenIO, un **conteneur*- est essentiellement une entité logique interne qui contient tous les objets d'un bucket donné. Chaque conteneur est associé à une base de données de métadonnées interne qui répertorie toutes les adresses du cluster des objets qu'il contient. Par défaut, un bucket Object Storage est associé à un conteneur, mais cela peut changer avec le mécanisme de *sharding*.
 
 Le *sharding- est le mécanisme par lequel un conteneur est divisé en 2 nouveaux sous-conteneurs (et donc sa base de données de métadonnées associée est également divisée en 2) lorsqu'il atteint **un nombre critique d'objets*- appelé **shards**.
 
@@ -295,6 +295,6 @@ Le cas échéant, nous vous recommandons d'augmenter autant que possible la tail
 
 ## Aller plus loin <a name="go-further"></a>
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

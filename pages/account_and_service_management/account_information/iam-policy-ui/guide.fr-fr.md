@@ -1,7 +1,7 @@
 ---
 title: Comment utiliser les politiques IAM depuis votre espace client
 excerpt: "Découvrez comment donner des droits d'accès spécifiques aux utilisateurs depuis un compte OVHcloud"
-updated: 2024-07-04
+updated: 2025-01-08
 ---
 
 ## Objectif
@@ -45,11 +45,11 @@ Vous pouvez accéder au menu IAM via l’entrée dédiée dans votre espace clie
 
 ![Accès au menu IAM](/pages/assets/screens/control_panel/product-selection/right-column/initials/identity-and-access-management-iam.png){.thumbnail}
 
-Le menu affiche la liste de toutes les politiques en cours créées sur votre compte.
+Si vous accédez à ce menu pour la première fois, la page suivante apparaît :
 
-![Accès au menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
+![Accès au menu IAM](/pages/assets/screens/control_panel/product-selection/right-column/identity-and-access-management-iam/tab-first-access.png){.thumbnail}
 
-Chaque politique est affichée avec son nom, le nombre d'identités qui lui sont liées et le nombre d'actions qu'elle contient.
+Cliquez directement sur [Créer une politique](#create-policy) ou sur [Créer des utilisateurs](#create-users) en fonction de l'action que vous souhaitez réaliser.
 
 > [!primary]
 >
@@ -57,7 +57,15 @@ Chaque politique est affichée avec son nom, le nombre d'identités qui lui sont
 >
 > Les clients ne sont pas autorisés à modifier ou supprimer ces politiques.
 
+Si vous avez déjà créé des politiques ou des utilisateurs, le menu affiche la liste de toutes les politiques en cours créées sur votre compte OVHcloud.
+
+![Accès au menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
+
+Chaque politique est affichée avec son nom, le nombre d'identités qui lui sont liées et le nombre d'actions qu'elle contient.
+
 ### Gestion des politiques
+
+<a name="create-policy"></a>
 
 #### Créer une politique
 
@@ -138,6 +146,8 @@ Vous pouvez ensuite modifier la portée de la politique.
 Pour supprimer une politique existante, cliquez sur le bouton `...`{.action} à droite de la politique puis sur `Supprimer la politique`{.action}.
 
 Une fenêtre contextuelle vous demandera de confirmer la suppression.
+
+<a name="create-users"></a>
 
 ### Gestion des identités
 

@@ -1,12 +1,8 @@
 ---
 title: "Enterprise File Storage - Gestión desde el área de cliente de OVHcloud"
 excerpt: Cómo gestionar el servicio Enterprise File Storage desde el área de cliente de OVHcloud
-updated: 2024-06-13
+updated: 2024-12-13
 ---
-
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
-> 
 
 ## Objetivo
 
@@ -16,12 +12,12 @@ Los servicios Enterprise File Storage pueden administrarse [a través de la API 
 
 ## Requisitos
 
-- Tener un servicio Enterprise File Storage en su cuenta de OVHcloud. El servicio puede contratarse desde la [página del producto](https://www.ovhcloud.com/es-es/storage-solutions/enterprise-file-storage/) o desde el [área de cliente de OVHcloud](https://www.ovh.com/manager/#/dedicated/netapp/new).
-- Tienes acceso a tu [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Tener un servicio Enterprise File Storage en su cuenta de OVHcloud. El servicio puede contratarse desde la [página del producto](/links/storage/enterprise-file-storage) o desde el [área de cliente de OVHcloud](/links/manager).
+- Tienes acceso a tu [Panel de configuración de OVHcloud](/links/manager).
 
 ## Procedimiento <a name="instructions"></a>
 
-Conéctese al [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione `Bare Metal Cloud`{.action} en la barra de navegación superior. Abra `Storage y Backup`{.action}, luego `Enterprise File Storage`{.action} en el menú de la izquierda y seleccione su servicio de la lista.
+Conéctese al [Panel de configuración de OVHcloud](/links/manager) y seleccione `Bare Metal Cloud`{.action} en la barra de navegación superior. Abra `Storage y Backup`{.action}, luego `Enterprise File Storage`{.action} en el menú de la izquierda y seleccione su servicio de la lista.
 
 ![Información general](images/manage_enterprise01.png){.thumbnail}
 
@@ -41,8 +37,10 @@ Puede realizar varias acciones haciendo clic en el botón `..`{.action} en cada 
 
 - **Modificar el volumen**: abre el apartado "[Información general](#modify_volume)" del volumen.
 - **Crear un snapshot**: abre la sección "[Copias de seguridad](#snapshots)" para realizar un snapshot manual del volumen.
+- **Restaurar el último snapshot** : Abre la sección "[Snapshots](#snapshots)" y una ventana para restaurar el volumen.
 - **Gestionar los snapshots**: abre la sección "[Copias de seguridad](#snapshots)" del volumen.
 - **Gestionar IP Access (ACL)**: abre la sección "[ACL](#access_control)" para gestionar el control de acceso al volumen.
+- **Cambiar tamaño**: abre una ventana para cambiar el tamaño del volumen.
 - **Eliminar el volumen**: permite eliminar el volumen una vez confirmada la acción en la ventana que aparezca.
 
 #### Creación de un volumen <a name="create_volume"></a>
@@ -51,39 +49,105 @@ Haga clic en el botón `Crear un volumen`{.action}. En la nueva ventana, escriba
 
 ![Volumen de creación](images/manage_enterprise03.png){.thumbnail}
 
-Puede eliminar un volumen pulsando el botón `..`{.action}. de la tabla y, a continuación, `Eliminar el volumen`{.action}.
-
 #### Modificación de un volumen <a name="modify_volume"></a>
 
 Haga clic en un ID de volumen de la tabla para abrir la página de gestión del volumen.
 
+La pestaña `Información general`{.action} muestra los detalles de su volumen, así como instrucciones detalladas sobre la conexión al volumen, incluyendo los parámetros individuales.
+
 ![Gestión de volúmenes](images/manage_enterprise04.png){.thumbnail}
 
-La pestaña `Información general`{.action} muestra los detalles de su volumen, así como instrucciones detalladas sobre la conexión al volumen, incluyendo los parámetros individuales.
+En esta pestaña también puede modificar el nombre y la descripción del volumen.
+
+#### Eliminar un volumen <a name="delete_volume"></a>
+
+Para eliminar un volumen, haga clic en el botón `...`{.action} de la tabla en la pestaña `Volúmenes`{.action} y seleccione `Eliminar volumen`{.action}.
+
+![Volume delete](images/manage_enterprise05.png){.thumbnail}
+
+Escriba `DELETE` y haga clic en `Confirmar`{.action} para confirmar la eliminación.
 
 #### Creación y gestión de snapshots de un volumen <a name="snapshots"></a>
 
+> [!primary]
+>
+> Los snapshots utilizan la capacidad de almacenamiento de su solución Enterprise File Storage. Por defecto, el 5% del tamaño de un volumen está siempre reservado a los snapshots.
+>
+
 La pestaña `Snapshots`{.action} muestra todos los snapshots creados para el volumen seleccionado.
-
-![Snapshots](images/manage_enterprise05.png){.thumbnail}
-
-Para añadir manualmente un nuevo snapshot del volumen a su estado actual, haga clic en el botón `Acciones`{.action} y seleccione `Crear un snapshot`{.action}.
-
-Se abrirá una nueva ventana en la que podrá introducir un nombre y una descripción. Haga clic en el botón `Crear un snapshot`{.action} para comenzar la creación.
-
-En la misma pestaña, también puede ver todas las [políticas de snapshots](#snapshot_policy) creadas para el servicio y aplicarlas a dicho volumen.
 
 ![Snapshots](images/manage_enterprise06.png){.thumbnail}
 
-Haga clic en la línea de la regla correspondiente para consultar los detalles de la planificación de los snapshots. Seleccione una política a través del botón de selección dedicado y haga clic en el botón `Aplicar tipo de letra`{.action} situado debajo de la tabla.
+En la misma pestaña, también puede ver todas las [políticas de snapshots](#snapshot_policy) creadas para el servicio y aplicarlas a este volumen.
 
-Para configurar sus [políticas de snapshot](#snapshot_policy), acceda a la sección [Gestión de volúmenes](#instructions) del servicio y abra la pestaña `Snapshot policiales`{.action}.
+![Volume Snapshot Policy Management](images/manage_enterprise07.png){.thumbnail}
 
-#### Lista y recuperación de snapshots <a name="access_snapshots"></a>
+Haga clic en la línea de la regla correspondiente para consultar los detalles de la programación de los snapshots. Seleccione una política a través del botón de selección dedicado y haga clic en el botón `Aplicar la política`{.action} situado debajo de la tabla.
 
-En el área de cliente no es posible consultar la lista de snapshots realizados ni restaurarlos.
+Para configurar sus [políticas de snapshots](#snapshot_policy), vuelva a la sección [Gestión de volúmenes](#instructions) de su servicio y abra la pestaña `Snapshot policies`{.action}.
 
-Para acceder a los snapshots desde el punto de montaje, puede utilizar los comandos que se ofrecen en la documentación [NetApp](https://library.netapp.com/ecmdocs/ECMP1196991/html/GUID-36DC110C-C0FE-4313-BF53-1C12838F7BBD.html){.external}.
+#### Creación de un snapshot <a name="create_snapshot"></a>
+
+Para crear un nuevo snapshot de un volumen en su estado actual, haga clic en el botón `Actions`{.action} y luego en `Crear un snapshot`{.action}.
+
+![Snapshot create](images/manage_enterprise08.png){.thumbnail}
+
+Se abrirá una ventana en la que podrá introducir un nombre y una descripción.
+
+Haga clic en el botón `Crear un snapshot`{.action} para comenzar la creación.
+
+![Snapshot create window](images/manage_enterprise09.png){.thumbnail}
+
+#### Modificación de un snapshot <a name="modify_snapshot"></a>
+
+Puede modificar el nombre o la descripción de un snapshot haciendo clic en el botón `...`{.action} de la tabla y, a continuación, en `Editar`{.action}. Se abrirá una ventana en la que podrá elegir un nuevo nombre y/o descripción.
+
+![Snapshot edit](images/manage_enterprise10.png){.thumbnail}
+
+Haga clic en `Confirmar`{.action} para confirmar los cambios.
+
+![Snapshot edit window](images/manage_enterprise11.png){.thumbnail}
+
+#### Eliminación de un snapshot <a name="delete_snapshot"></a>
+
+> [!warning]
+>
+> No es posible eliminar un snapshot de tipo `system`.
+> Estos son indispensables para el buen funcionamiento de su producto Enterprise File Storage.
+>
+
+Para eliminar un snapshot, haga clic en el botón `...`{.action} de la tabla y seleccione `Eliminar`{.action}.
+
+![Snapshot delete](images/manage_enterprise12.png){.thumbnail}
+
+Haga clic en `Eliminar un snapshot`{.action} para confirmar la eliminación.
+
+![Snapshot delete confirmation](images/manage_enterprise13.png){.thumbnail}
+
+#### Restauración del volumen mediante un snapshot <a name="restore_volume"></a>
+
+> [!warning]
+>
+> Tenga en cuenta que, una vez restaurado un volumen mediante un snapshot, todos los archivos o snapshots creados posteriormente se perderán.
+> Cuando se restaura un volumen, todos los datos que contiene se sustituyen por los datos del snapshot. Esta acción es irreversible.
+>
+
+Es posible restaurar un volumen utilizando el último snapshot `manuel`. Haga clic en el botón `Actions`{.action} y seleccione `Restaurar el último snapshot`{.action}.
+
+> [!primary]
+>
+> Para restaurar el volumen utilizando un snapshot anterior al último snapshot, es necesario eliminar los snapshots hasta que el snapshot a utilizar para la restauración sea el más reciente.
+>
+
+![Volume revert to latest snapshot](images/manage_enterprise14.png){.thumbnail}
+
+#### Backup de un snapshot automático <a name="hold_snapshot"></a>
+
+Los snapshots `automáticos` creados por las [políticas de snapshot](#snapshot_policy) pueden guardarse haciendo clic en el botón `...`{.action} en la tabla y seleccionando `Guardar`{.action}.
+
+![Volume hold](images/manage_enterprise15.png){.thumbnail}
+
+Guardando un snapshot `automático`, este se convertirá en `manual`, lo que impedirá su rotación mediante la política de snapshots y, por lo tanto, su eliminación automática.
 
 #### Gestión de volúmenes ACL <a name="access_control"></a>
 
@@ -91,7 +155,7 @@ El control de acceso a los volúmenes funciona mediante restricciones de direcci
 
 En la pestaña `Control de accesos (ACL)`{.action}, haga clic en el botón `+ Añadir un nuevo acceso`{.action}.
 
-![ACL](images/manage_enterprise07.png){.thumbnail}
+![ACL](images/manage_enterprise16.png){.thumbnail}
 
 Esta acción crea una nueva línea en la tabla, en la que puede introducir una dirección IP o un bloque de dirección (CIDR). Seleccione `Sólo Lectura` o `Lectura y escritura` como tipo de acceso en el menú desplegable y marque esta entrada para añadirla al ACL.
 
@@ -99,17 +163,22 @@ Para eliminar el acceso al volumen, haga clic en el icono de la papelera corresp
 
 ### Gestión de las políticas de snapshots <a name="snapshot_policy"></a>
 
+> [!primary]
+>
+> Por defecto, cada volumen está protegido por una política de snapshots denominada `default` que crea snapshots del volumen a intervalos regulares.
+>
+
 La adición de políticas permite planificar la creación de snapshots para todos sus volúmenes.
 
 Haga clic en la pestaña `Snapshot policiales`{.action}. La tabla muestra todas las políticas creadas para el servicio seleccionado.
 
-Ya hay una política predeterminada que no puede modificarse. Para añadir la suya, haga clic en el botón `Crear una nueva Snapshot policy`{.action}.
+Ya existe una política por defecto que no se puede modificar. Para añadir la suya, haga clic en el botón `Crear una política de snapshots`{.action}.
 
-![Snapshots](images/manage_enterprise08.png){.thumbnail}
+![Snapshot policies](images/manage_enterprise17.png){.thumbnail}
 
 En la nueva página, introduzca un nombre y una descripción para la política. A continuación, utilice el botón `+ Añadir una nueva regla`{.action} para añadir una o más reglas a la política.
 
-![Snapshots](images/manage_enterprise09.png){.thumbnail}
+![Snapshots](images/manage_enterprise18.png){.thumbnail}
 
 Rellene los campos para indicar la frecuencia de creación del snapshot. También debe indicar un prefijo para los snapshots, necesario para su denominación.
 
@@ -120,11 +189,6 @@ Marque la nueva regla para añadirla. Una vez que haya creado todas las reglas, 
 [Seleccione un volumen](#manage_volume) y abra la pestaña `Snapshots`{.action} para [aplicar las reglas](#snapshots).
 
 Para eliminar una política, haga clic en el icono de la papelera correspondiente de la tabla.
-
-> [!primary]
->
-> Los snapshots utilizan la capacidad de almacenamiento de su solución Enterprise File Storage. El 5% del tamaño de un volumen siempre está reservado a los snapshots.
->
 
 ### Primeros pasos <a name="firststeps"></a>
 
@@ -148,6 +212,8 @@ Si no está familiarizado con la solución Enterprise File Storage, puede seguir
 
 [Enterprise File Storage - Gestión de snapshots de volúmenes](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_volume_snapshots)
 
-Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es-es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
+Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](/links/professional-services) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](/links/support).
+
+Interactúe con nuestra [comunidad de usuarios](/links/community).

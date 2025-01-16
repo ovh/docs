@@ -1,7 +1,7 @@
 ---
 title: Jak zrezygnować z usług OVHcloud
 excerpt: Dowiedz się, jak przerwać subskrypcję OVHcloud z poziomu Panelu klienta
-updated: 2024-01-19
+updated: 2024-12-23
 ---
 
 ## Wprowadzenie
@@ -47,13 +47,13 @@ Istnieją jednak **przypadki szczególne**, które są opisane [poniżej](#speci
 
 ### Jak zrezygnować z abonamentu? <a name="terminate"></a>
 
-Aby zrezygnować z abonamentu, zaloguj się do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=pl), kliknij Twoją nazwę w prawym górnym rogu, a następnie przycisk `Produkty i usługi`{.action}.
+Aby zrezygnować z abonamentu, zaloguj się do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=pl), kliknij Twoją nazwę w prawym górnym rogu, a następnie przycisk `Moje rozwiązania i usługi`{.action}.
 
 ![produkty i usługi](/pages/assets/screens/control_panel/product-selection/right-column/products-services.png){.thumbnail}
 
-Następnie kliknij przycisk `...`{.action} po prawej stronie usługi, którą chcesz zrezygnować, po czym kliknij `Rezygnacja z umowy terminowej`{.action}.
+Następnie kliknij przycisk `...`{.action} po prawej stronie usługi, którą chcesz zrezygnować, po czym kliknij `Rezygnuję z usługi`{.action}.
 
-![Zrezygnuj](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/cancel-en.png){.thumbnail}
+![Zrezygnuj](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancel-en.png){.thumbnail}
 
 Podaj powody złożenia wniosku o rezygnację z usługi i kliknij przycisk `Zatwierdź`{.action}.
 
@@ -64,9 +64,9 @@ Podaj powody złożenia wniosku o rezygnację z usługi i kliknij przycisk `Zatw
 > Więcej informacji o Twoich doświadczeniach z OVHcloud znajdziesz w formularzu proponowanym podczas rozwiązania umowy. Z góry dziękujemy za wkład w ulepszanie naszych produktów.
 >
 
-Rezygnacja z usługi nastąpi w dniu **date d'effet** wskazanym w tabeli "Moje usługi". Jeśli nie widzisz statusu "Złożona rezygnacja", odśwież stronę.
+Rezygnacja z usługi nastąpi w dniu **date d'effet** wskazanym w tabeli "Zarządzanie rozwiązaniami i usługami". Jeśli nie widzisz statusu "Planowane zakończenie usługi", odśwież stronę.
 
-![dyspozycja zakończenia](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/cancellation-request.png){.thumbnail}
+![dyspozycja zakończenia](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancellation-request.png){.thumbnail}
 
 ### Przypadki szczególne <a name="specific-cases"></a>
 
@@ -131,22 +131,22 @@ Możesz również [sprawdzić aktualne](/pages/public_cloud/compute/analyze_bill
 > Możesz anulować zlecenie rezygnacji z usługi do 24 godzin przed datą wygaśnięcia abonamentu.
 >
 
-Aby anulować zlecenie rezygnacji z usługi, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij swoją nazwę w prawym górnym rogu, a następnie przycisk `Produkty i usługi`{.action}.
+Aby anulować zlecenie rezygnacji z usługi, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij swoją nazwę w prawym górnym rogu, a następnie przycisk `Moje rozwiązania i usługi`{.action}.
 
 Następnie kliknij przycisk `...`{.action} po prawej stronie usługi, w odniesieniu do której złożono wniosek o rezygnację, a następnie `Anuluj rezygnację z usługi`{.action} 
 
-![cancel_termination](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/cancel_termination-en.png){.thumbnail}
+![cancel_termination](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancel_termination-en.png){.thumbnail}
 
 Na koniec kliknij `Potwierdź anulowanie`{.action}.
 
-Anulowanie rezygnacji obowiązuje natychmiastowo. Odśwież stronę "Moje usługi", jeśli nadal widzisz status "Złożona rezygnacja".
+Anulowanie rezygnacji obowiązuje natychmiastowo. Odśwież stronę "Zarządzanie rozwiązaniami i usługami", jeśli nadal widzisz status "Planowane zakończenie usługi".
 
 ## FAQ
 
 > [!faq]
 >
 > Nie mogę zrezygnować z usługi. Co mogę zrobić?
->> Jeśli nie możesz zrezygnować z usługi (przycisk ``Rezygnacja z umowy terminowej`{.action} nie jest proponowany), może to być jeden z przypadków szczególnych [powyżej w tym przewodniku](#specific-cases).
+>> Jeśli nie możesz zrezygnować z usługi (przycisk ``Rezygnuję z usługi`{.action} nie jest proponowany), może to być jeden z przypadków szczególnych [powyżej w tym przewodniku](#specific-cases).
 >> Sprawdź również, czy spełnione są następujące warunki:
 >>
 >> - Musisz być "kontaktem administracyjnym" usługi. Aby uzyskać więcej informacji, zobacz [ten przewodnik](/pages/account_and_service_management/account_information/managing_contacts#definition).
@@ -159,7 +159,7 @@ Anulowanie rezygnacji obowiązuje natychmiastowo. Odśwież stronę "Moje usług
 > Jak usunąć moje konto OVHcloud?
 >> Zamknięcie konta klienta OVHcloud i usunięcie danych osobowych jest możliwe tylko wtedy, gdy:
 >>
->> 1. Nie masz już widocznych usług w sekcji "[Moje usługi](https://www.ovh.com/manager/dedicated/#/billing/autoRenew)". W przeciwnym razie najpierw poproś o ich rozwiązanie i zaczekaj na ich usunięcie.
+>> 1. Nie masz już widocznych usług w sekcji "[Moje rozwiązania i usługi](https://www.ovh.com/manager/dedicated/#/billing/autoRenew)". W przeciwnym razie najpierw poproś o ich rozwiązanie i zaczekaj na ich usunięcie.
 >> 2. Nie masz faktur oczekujących na płatność. W przeciwnym razie należy uregulować należność, klikając przycisk `Zapłać teraz`{.action} w akcjach masowych na stronie "[Moje faktury](https://www.ovh.com/manager/#/dedicated/billing/history)".
 >> 3. Nie posiadasz zamówień w trakcie realizacji. Sprawdź go na [tej stronie](https://www.ovh.com/manager/#/dedicated/billing/orders/orders).
 >> 4. Twoje konto przedpłacone nie jest dodatnie. Sprawdź go na [tej stronie](https://www.ovh.com/manager/#/dedicated/billing/payment/ovhaccount).

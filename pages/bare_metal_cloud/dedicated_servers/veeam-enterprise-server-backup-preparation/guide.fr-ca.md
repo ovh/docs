@@ -13,8 +13,8 @@ La sauvegarde d’un serveur Bare Metal avec Veeam Enterprise implique plusieurs
 ## Prérequis
 
 - Un [serveur Bare Metal OVHcloud](/links/bare-metal/bare-metal)
-- Une solution de sauvegarde [Veeam Enterprise](https://www.ovhcloud.com/fr-ca/storage-solutions/veeam-enterprise/)
-- Un service [OVHcloud Standard S3 Object Storage](https://www.ovhcloud.com/fr-ca/public-cloud/object-storage/) (facultatif)
+- Une solution de sauvegarde [Veeam Enterprise](/links/storage/veeam-enterprise)
+- Un service [OVHcloud Object Storage](/links/public-cloud/object-storage) (facultatif)
 
 ## En pratique
 
@@ -30,7 +30,7 @@ Vous pouvez également configurer votre serveur dédié pour utiliser un réseau
 
 Téléchargez, installez et créez une licence pour votre serveur de sauvegarde Veeam Enterprise à l'aide de notre guide « [Installer Veeam Backup & Replication](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication) ».
 
-À partir de cette étape, vous pouvez continuer la lecture de ce guide pour apprendre à configurer S3 Object Storage en tant que dépôt de sauvegarde ou vous pouvez passer directement à l'étape [Aller plus loin](#gofurther).
+À partir de cette étape, vous pouvez continuer la lecture de ce guide pour apprendre à configurer Object Storage en tant que dépôt de sauvegarde ou vous pouvez passer directement à l'étape [Aller plus loin](#gofurther).
 
 ### Configuration de l’Object Storage
 
@@ -38,12 +38,12 @@ La création et la configuration de l’Object Storage peuvent être effectuées
 
 Si vous n'avez pas encore de projet Public Cloud dans votre compte OVHcloud, consultez notre guide [Créer votre premier projet Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project).
 
-[Créez un conteneur Object Storage](/pages/storage_and_backup/object_storage/s3_create_bucket) grâce à l’une des solutions **API S3 d’OVHcloud (Standard ou High Performance)**. La solution Standard est recommandée car notre cas d'usage (effectuer une sauvegarde) ne nécessite généralement pas de stockage High Performance.
+[Créez un conteneur Object Storage](/pages/storage_and_backup/object_storage/s3_create_bucket) grâce à l’une des solutions **Object Storage (Standard ou High Performance)**. La solution Standard est recommandée car notre cas d'usage (effectuer une sauvegarde) ne nécessite généralement pas de stockage High Performance.
 
 > [!primary]
-> Lors de la commande d’un conteneur S3 auprès d’OVHcloud, sélectionnez uniquement l'**Object Storage Standard - S3 API** ou l’**Object Storage High Performance - S3 API**. Ces conteneurs prennent entièrement en charge le protocole S3 et sont conçus pour être utilisés comme dépôts de sauvegarde.
+> Lors de la commande d’un conteneur Object Storage auprès d’OVHcloud, sélectionnez uniquement l'**Object Storage Standard** ou l’**Object Storage High Performance**. Ces conteneurs prennent entièrement en charge le protocole Amazon S3 et sont conçus pour être utilisés comme dépôts de sauvegarde.
 
-Donnez à l'utilisateur S3 des droits sur le conteneur en copiant-collant le code ci-dessous dans un fichier JSON.
+Donnez à l'utilisateur Object Storage des droits sur le conteneur en copiant-collant le code ci-dessous dans un fichier JSON.
 
 ```json
 {
@@ -74,13 +74,13 @@ Donnez à l'utilisateur S3 des droits sur le conteneur en copiant-collant le cod
 
 Veillez à remplacer `container name` par le nom réel de votre conteneur Object Storage.
 
-Dans l’[espace client OVHcloud](/links/manager), sélectionnez `Public Cloud`{.action} puis `Object Storage`{.action} dans la section `Storage` . Cliquez sur le bouton Plus d'options `...`{.action} à droite de l'utilisateur S3 et choisissez `Importer S3 Policy (JSON)`{.action}.
+Dans l’[espace client OVHcloud](/links/manager), sélectionnez `Public Cloud`{.action} puis `Object Storage`{.action} dans la section `Storage` . Cliquez sur le bouton Plus d'options `...`{.action} à droite de l'utilisateur Object Storage et choisissez `Importer S3 Policy (JSON)`{.action}.
 
 Sélectionnez le fichier JSON que vous venez de modifier et cliquez sur `Importer`{.action}.
 
-![Object Storage - Utilisateur S3 - Import JSON](images/backup-preparation-01.png){.thumbnail}
+![Object Storage - Utilisateur Object Storage - Import JSON](images/backup-preparation-01.png){.thumbnail}
 
-### Configuration du repository S3 dans Veeam Enterprise
+### Configuration du repository Object Storage dans Veeam Enterprise
 
 Depuis l'application Veeam, sélectionnez `Backup Infrastructure`{.action}, `Backup Repositories`{.action} et `Add Repository`{.action}.
 
@@ -98,7 +98,7 @@ Attribuez un **Nom** au nouveau référentiel et cliquez sur `Next`{.action}.
 
 ![Veeam - nom du dépôt](images/backup-preparation-05.png){.thumbnail}
 
-Renseignez les informations **Service point** (Endpoint) et **Region** de votre service de stockage S3.
+Renseignez les informations **Service point** (Endpoint) et **Region** de votre service de stockage Object Storage.
 
 > Vous pouvez retrouver ces informations dans la section `Public Cloud`{.action} de votre [espace client OVHcloud](/links/manager).
 > Cliquez sur `Object Storage`{.action} puis cliquez sur le bouton `...`{.action} à droite de votre conteneur et cliquez sur `Voir les objets`{.action}.
@@ -111,7 +111,7 @@ Renseignez les informations **Service point** (Endpoint) et **Region** de votre 
 
 Cliquez sur `Add`{.action} pour entrer vos informations d'identification. Entrez votre **Access key** et votre **Secret key**, puis cliquez sur `OK`{.action}.
 
-> Ces informations sont disponibles dans votre espace client OVHcloud sous l'onglet `Utilisateurs S3`{.action} . La **clé d'accès** (Access key) est visible sur la page principale. 
+> Ces informations sont disponibles dans votre espace client OVHcloud sous l'onglet `Utilisateurs Object Storage`{.action} . La **clé d'accès** (Access key) est visible sur la page principale. 
 > La **Clé secrète** (Secret key) se trouve en cliquant sur le bouton `...`{.action} et en sélectionnant `Voir la clé secrète`{.action}. 
 >
 > ![Object storage - keys](images/backup-preparation-09.png){.thumbnail}

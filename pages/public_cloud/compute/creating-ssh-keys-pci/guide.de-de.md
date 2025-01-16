@@ -26,7 +26,7 @@ Ein Schlüsselsatz besteht aus einem öffentlichen Schlüssel, der weitergegeben
 
 Diese Methode ist in der Regel der beste Kompromiss zwischen Sicherheit und Komfort und die Standardeinstellung für Public Cloud Instanzen.
 
-**In dieser Anleitung erfahren Sie, wie Sie Schlüsselpaare für die Authentifizierung auf Ihrem lokalen Gerät erstellen und verwalten und diese für die Verbindung mit Public Cloud-Instanzen verwenden.**
+**Diese Anleitung erklärt, wie Sie Schlüsselpaare zur Authentifizierung auf Ihrem lokalen Gerät erstellen und verwalten und diese für die Verbindung mit Public Cloud Instanzen verwenden.**
 
 ## Voraussetzungen
 
@@ -43,7 +43,7 @@ Diese Methode ist in der Regel der beste Kompromiss zwischen Sicherheit und Komf
 
 ### Erstellung von Schlüsselpaaren für OpenSSH-Verbindungen
 
-In den folgenden Anweisungen wird erläutert, wie Sie Schlüsselpaare für Remote-Verbindungen mit **OpenSSH** über die Befehlszeile erstellen und verwalten. Die meisten aktuellen Betriebssysteme enthalten diese Funktion, ohne dass zusätzliche Software installiert werden muss.
+In den folgenden Anweisungen wird erläutert, wie Sie Schlüsselpaare für Remote-Verbindungen mit **OpenSSH** über die **Befehlszeile** erstellen und verwalten. Die meisten aktuellen Betriebssysteme enthalten diese Funktion, ohne dass zusätzliche Software installiert werden muss.
 
 Wenn Sie eine grafische Benutzeroberfläche bevorzugen, können Sie für jede Art von Betriebssystem zahlreiche Anwendungen finden, mit denen Sie sich über das OpenSSH-Protokoll mit Remote-Hosts verbinden können.
 
@@ -317,7 +317,7 @@ The key's randomart image is:
 +----[SHA256]-----+
 ```
 
-Die Schlüsseldatei kann mit einem Texteditor (Notepad, Notepad++ usw.) geöffnet werden. Klicken Sie im Windows Datei-Explorer mit der rechten Maustaste auf die Datei und wählen Sie `Öffnen mit`{.action}.
+Die Schlüsseldatei kann mit einem Texteditor (Notepad, Notepad++, etc.) geöffnet werden. Klicken Sie im Windows Datei-Explorer mit der rechten Maustaste auf die Datei und wählen Sie `Öffnen mit`{.action}.
 
 Sie können auch einen der folgenden Befehle verwenden (im Verzeichnis `\Users\WindowsUsername\.ssh`):
 
@@ -361,7 +361,7 @@ Your public key has been saved in KeyFileName_rsa.pub.
 Geben Sie dann bei der Verbindung mit dem entsprechenden Server zusätzlich zu den Benutzer- und Serverdetails den Namen der Schlüsseldatei an:
 
 ```bash
-ssh -i C:\Users\Username\.ssh/KeyFileName" user@IP_ADDRESS
+ssh -i C:\Users\Username\.ssh/KeyFileName user@IP_ADDRESS
 ```
 
 Beispiel:
@@ -409,7 +409,7 @@ Sie können sich dann mit der Instanz verbinden, indem Sie die IP-Adresse der In
 ssh username@connection_name
 ```
 
-Beispiel
+Beispiel:
 
 ```bash
 ssh ubuntu@instance

@@ -1,7 +1,7 @@
 ---
 title: FAQ sur la facturation et le paiement
 excerpt: Retrouvez les questions les plus fréquemment posées sur la facturation et le paiement
-updated: 2023-06-05
+updated: 2024-12-23
 ---
 
 ## Objectif
@@ -40,13 +40,13 @@ Si vous ne renouvelez pas votre service avant cette date, il sera simplement sus
 
 #### Trucs et astuces
 
-Consultez l'état de vos services, et administrez leur renouvellement dans la rubrique `Mes Services`{.action} de votre espace client.
+Consultez l'état de vos services, et administrez leur renouvellement dans la rubrique `Mes offres & services`{.action} de votre espace client.
 Identifiez-vous et renouvelez manuellement vos services sur la page <https://eu.ovh.com/fr/cgi-bin/order/renew.cgi>
 Si vous souhaitez en savoir plus, nous vous invitons à consulter ce guide détaillé : [Gérer le renouvellement de mes services](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
 
 ### Comment activer le renouvellement automatique ?
 
-Rendez-vous dans la rubrique `Produits et Services`{.action} accessible directement sur le tableau de bord de votre espace client OVHcloud. Identifiez alors le service concerné, cliquez sur les points de suspension, puis sélectionnez `Activer le paiement automatique`{.action}. Par défaut, le renouvellement automatique est activé sur chaque service lors de sa commande.
+Rendez-vous dans la rubrique `Mes offres & services`{.action} accessible directement sur le tableau de bord de votre espace client OVHcloud. Identifiez alors le service concerné, cliquez sur les points de suspension, puis sélectionnez `Activer le paiement automatique`{.action}. Par défaut, le renouvellement automatique est activé sur chaque service lors de sa commande.
 
 #### Trucs et astuces
 
@@ -55,7 +55,7 @@ Si vous souhaitez en savoir plus, nous vous invitons à consulter ce guide déta
 
 ### Comment désactiver le renouvellement automatique ?
 
-Sur le tableau de bord de votre espace client OVHcloud, cliquez sur le raccourci `Produits et services`{.action}. Identifiez alors le service concerné, cliquez sur les points de suspension, puis sélectionnez « Configurer le renouvellement ». Vous pouvez ensuite choisir le mode manuel. Ce mode n'est disponible que pour certains services, tels que les noms de domaines, hébergements web, VPS, et serveurs dédiés.
+Sur le tableau de bord de votre espace client OVHcloud, cliquez sur le raccourci `Mes offres & services`{.action}. Identifiez alors le service concerné, cliquez sur les points de suspension, puis sélectionnez « Configurer le renouvellement ». Vous pouvez ensuite choisir le mode manuel. Ce mode n'est disponible que pour certains services, tels que les noms de domaines, hébergements web, VPS, et serveurs dédiés.
 
 Pour résilier un service, consultez [Comment résilier un service](#cancelservice)
 
@@ -102,13 +102,13 @@ Si votre compte prépayé OVHcloud est créditeur, il sera toujours utilisé par
 
 ### Quelle est la date de mon prochain paiement ?
 
-Retrouvez toutes vos dates de renouvellement dans la rubrique « Produits et services » accessible directement sur le tableau de bord de votre espace client OVHcloud.
+Retrouvez toutes vos dates de renouvellement dans la rubrique « Mes offres & services » accessible directement sur le tableau de bord de votre espace client OVHcloud.
 
 À noter que les solutions bénéficiant du renouvellement automatique sont renouvelées le premier jour du mois. La fréquence peut cependant être différente selon vos services.
 
 #### Trucs et astuces
 
-Vous pouvez modifier la fréquence de renouvellement de vos solutions depuis la rubrique `Mes services`{.action} de votre espace client.
+Vous pouvez modifier la fréquence de renouvellement de vos solutions depuis la rubrique `Mes offres & services`{.action} de votre espace client.
 Si vous souhaitez en savoir plus, nous vous invitons à consulter ce guide détaillé : [Gérer le renouvellement de mes services](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
 
 ### Lequel de mes moyens de paiement sera débité ?
@@ -162,7 +162,7 @@ Dans ce cas, nous vous conseillons de contacter votre banque afin d’être info
 
 ### Comment résilier un service ? <a name="cancelservice"></a>
 
-Pour les solutions telles que les noms de domaine, hébergements web, serveurs dédiés et VPS, rendez-vous dans la rubrique « Produits et services » du tableau de bord de votre espace client OVHcloud. Identifiez alors le service concerné, cliquez sur les points de suspension, puis sélectionnez `Résilier à date d'échéance`{.action}. À noter que si une demande a déjà été effectuée, il vous sera proposé d'`Annuler la résiliation`{.action}.
+Pour les solutions telles que les noms de domaine, hébergements web, serveurs dédiés et VPS, rendez-vous dans la rubrique « Mes offres & services » du tableau de bord de votre espace client OVHcloud. Identifiez alors le service concerné, cliquez sur les points de suspension, puis sélectionnez `Résilier mon service`{.action}. À noter que si une demande a déjà été effectuée, il vous sera proposé d'`Annuler la résiliation du service`{.action}.
 
 La résiliation sera effective lorsque la période de validité ou d'engagement de votre service sera terminée. Vous pouvez effectuer cette demande ou l'annuler jusqu'à 24 heures avant la date d'échéance.
 

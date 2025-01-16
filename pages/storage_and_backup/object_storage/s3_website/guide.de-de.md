@@ -1,23 +1,23 @@
 ---
-title: Object Storage - Hosting einer statischen Website in einem S3-Bucket (EN)
-excerpt: Learn how to configure a S3 bucket to host a static website
+title: Object Storage - Hosting einer statischen Website in einem Object Storage Bucket (EN)
+excerpt: Learn how to configure an Object Storage bucket to host a static website
 updated: 2024-05-20
 ---
 
 ## Objective
 
-**This guide explains how to create, configure and activate a static website hosted in a S3 bucket.**
+**This guide explains how to create, configure and activate a static website hosted in an Object Storage bucket.**
 
 ## Requirements
 
-- A S3 bucket with an ACL public-read
+- An Object Storage bucket with an ACL public-read
 - Your static resources (HTML, CSS, images, js, etc.)
 
 ## Instructions
 
 ### Step 1: Uploading website resources
 
-In S3, a bucket is a flat container of objects. It does not provide any hierarchical organization as the file system on your computer does. However, you can create a logical hierarchy by using object key names that imply a folder structure.
+In Object Storage, a bucket is a flat container of objects. It does not provide any hierarchical organization as the file system on your computer does. However, you can create a logical hierarchy by using object key names that imply a folder structure.
 
 **Example**:
 
@@ -98,12 +98,12 @@ http://{bucket-name}.s3-website.{region}.io.cloud.ovh.net
 
 > [!warning]
 > - Make sure the region you are hosting your bucket in supports the storage class you choose. You can check the list of supported storage classes by regions [here](/pages/storage_and_backup/object_storage/s3_location).
-> - By default, OVHcloud S3 Object Storage website endpoints do not support HTTPS. In order to enable HTTPS, you can use OVHcloud Load Balancer to proxy your website. For more information, see the "Go further" section of this guide.
+> - By default, OVHcloud Object Storage website endpoints do not support HTTPS. In order to enable HTTPS, you can use OVHcloud Load Balancer to proxy your website. For more information, see the "Go further" section of this guide.
 
 ## Go further
 
-[Enable HTTPS on a S3 static website using a custom fqdn](/pages/storage_and_backup/object_storage/s3_website_https)
+[Enable HTTPS on a static website using a custom fqdn](/pages/storage_and_backup/object_storage/s3_website_https)
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

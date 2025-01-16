@@ -1,7 +1,7 @@
 ---
 title: Les bonnes pratiques pour la gestion de vos services et de votre compte OVHcloud
 excerpt: Retrouvez ici les éléments indispensables pour la bonne gestion de vos factures, commandes, moyens de paiement et compte client
-updated: 2022-05-02
+updated: 2024-12-23
 ---
 
 ## Objectif
@@ -82,10 +82,10 @@ Vous serez informé des étapes de la livraison et vous saurez si des actions so
 
 Si vous souhaitez ne plus utiliser l'un de vos services, vous pouvez le résilier, passer son renouvellement en mode manuel ou le supprimer immédiatement depuis votre [espace client OVHcloud](/links/manager).
 
-Cliquez d'abord sur votre nom en haut à droite de votre écran puis sur `Produits et services`{.action}. Sur le côté droit de votre écran, cliquez sur le bouton `...`{.action} correspondant au service sur lequel vous souhaitez agir puis cliquez sur l'un des boutons suivants :
+Cliquez d'abord sur votre nom en haut à droite de votre écran puis sur `Mes offres & services`{.action}. Sur le côté droit de votre écran, cliquez sur le bouton `...`{.action} correspondant au service sur lequel vous souhaitez agir puis cliquez sur l'un des boutons suivants :
 
 - `Configurer le renouvellement`{.action} : sur l'écran suivant, vous pourrez passer le `Type de renouvellement` de votre service à `Manuel`. Cliquez ensuite sur `Suivant`{.action} et `Confirmer`{.action}. Avant la date d'expiration de votre service, vous recevrez plusieurs notifications par e-mail. Si vous ne renouvelez pas votre service, il sera supprimé **définitivement**.
-- `Résilier`{.action} : sur l'écran suivant, indiquez les raisons de votre demande de résiliation puis cliquez sur `Confirmer`{.action}. À la date d’expiration de votre service, il sera supprimé **définitivement**.
+- `Résilier mon service`{.action} : sur l'écran suivant, indiquez les raisons de votre demande de résiliation puis cliquez sur `Confirmer`{.action}. À la date d’expiration de votre service, il sera supprimé **définitivement**.
 - `Supprimer immédiatement`{.action} : sur l'écran suivant, cliquez sur `Confirmer`{.action}. Un e-mail de confirmation vous sera envoyé. Suite à votre validation, votre service sera supprimé **immédiatement et définitivement**.
 
 Pour obtenir plus d’informations sur la résiliation de vos services, consultez le guide [Comment résilier vos services OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).

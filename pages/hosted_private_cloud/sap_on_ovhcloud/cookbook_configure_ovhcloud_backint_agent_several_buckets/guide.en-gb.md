@@ -1,19 +1,19 @@
 ---
-title: "Use OVHcloud Backint Agent with several S3 Object Storage buckets"
-excerpt: "This guide provides instructions for using OVHcloud Backint Agent for SAP HANA with several S3 Object Storage buckets"
+title: "Use OVHcloud Backint Agent with several Object Storage buckets"
+excerpt: "This guide provides instructions for using OVHcloud Backint Agent for SAP HANA with several Object Storage buckets"
 updated: 2024-09-03
 ---
 
 ## Objective
 
-This guide provides the details of using OVHcloud Backint Agent for SAP HANA with several S3 Object Storage buckets.
+This guide provides the details of using OVHcloud Backint Agent for SAP HANA with several Object Storage buckets.
 
-OVHcloud Backint Agent for SAP HANA allows you to back up and recover your SAP HANA database on one or many OVHcloud S3 Object Storage buckets.
+OVHcloud Backint Agent for SAP HANA allows you to back up and recover your SAP HANA database on one or many OVHcloud Object Storage buckets.
 
-Using several S3 Object Storage buckets can be useful to:
+Using several Object Storage buckets can be useful to:
 
 - separate the data backup named `databackup` from the log backup named `log_backup` ;
-- store into S3 Object Storage buckets with a different retention policy ;
+- store into Object Storage buckets with a different retention policy ;
 - use different locations.
 
 ![two_buckets](images/two_buckets.png){.thumbnail}
@@ -28,23 +28,23 @@ OVHcloud Backint Agent for SAP HANA has been certified by SAP, you can find cert
 
 - Access to the [OVHcloud Control Panel](/links/manager).
 - [A Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) in your OVHcloud account with:
-    - Two [S3 Object Storage buckets](/pages/storage_and_backup/object_storage/s3_create_bucket) and an [S3 user](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creating-a-user) with the read and write rights.
+    - Two [Object Storage buckets](/pages/storage_and_backup/object_storage/s3_create_bucket) and an [Object Storage user](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creating-a-user) with the read and write rights.
 - A SAP HANA database installed.
 - [OVHcloud Backint Agent for SAP HANA installed](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_install_ovhcloud_backint_agent).
 
 ## Instructions
 
-### S3 Object Storage
+### Object Storage
 
-The S3 Object Storage bucket versioning must be enabled to ensure the correct operation of OVHcloud Backint Agent. The versioning allows you to keep several versions of a same object in your S3 Object Storage bucket.
+The Object Storage bucket versioning must be enabled to ensure the correct operation of OVHcloud Backint Agent. The versioning allows you to keep several versions of a same object in your Object Storage bucket.
 
 With SAP HANA backups, the versioning allows you to trigger several backups with the same name (for example "COMPLETE_DATA_BACKUP") and keeping the capacity to recover a specific version of the backup named "COMPLETE_DATA_BACKUP". If the versioning is not enabled, only the latest version of the backup named "COMPLETE_DATA_BACKUP" can be recovered.
 
-You can check the versioning status of your Object Storage S3 bucket by following these steps:
+You can check the versioning status of your Object Storage bucket by following these steps:
 
 1. Log in to the [OVHcloud Control Panel](/links/manager).
 2. Click `Public Cloud`{.action} and select your Public Cloud project. Then click `Object Storage`{.action}.
-3. Click on the S3 Object Storage bucket that will host backups of your SAP HANA database.
+3. Click on the Object Storage bucket that will host backups of your SAP HANA database.
 4. Check the value of the `Versioning`{.action} parameter, it must have the value `Enabled`{.action}. If the value of this parameter is `Disabled`{.action}, click on `Enable versioning`{.action}.
 
 | Versioning enabled | Versioning disabled |
@@ -53,7 +53,7 @@ You can check the versioning status of your Object Storage S3 bucket by followin
 
 ### Configuration
 
-Edit the content of the `hdbbackint.cfg` file and replace all values between chevrons by your first S3 Object Storage bucket information. Below, an example of its content after edition.
+Edit the content of the `hdbbackint.cfg` file and replace all values between chevrons by your first Object Storage bucket information. Below, an example of its content after edition.
 
 ```ini
 [trace]
@@ -78,7 +78,7 @@ The `multipart_chunksize` and `multipart_threshold` parameters can be set with v
 
 The default values for `multipart_chunksize` and `multipart_threshold` parameters in the `hdbbackint.cfg` file offer an optimal performance in many cases, but you can increase or decrease it, depending on your environment.
 
-Create a copy of the `hdbbackint.cfg` file with another name, for example `hdbbackint-log.cfg` and replace its values by the details of your second S3 Object Storage bucket.
+Create a copy of the `hdbbackint.cfg` file with another name, for example `hdbbackint-log.cfg` and replace its values by the details of your second Object Storage bucket.
 
 ```ini
 [trace]
@@ -138,13 +138,13 @@ You also have the possibility to trigger these backups via the SAP HANA Cockpit.
 
 ![backup_hana_cockpit](images/backup_hana_cockpit.png){.thumbnail}
 
-After the execution of these backups, several files named `_databackup_` are now present in your first S3 Object Storage bucket, these files correspond to backups of your SAP HANA database via the OVHcloud Backint Agent.
+After the execution of these backups, several files named `_databackup_` are now present in your first Object Storage bucket, these files correspond to backups of your SAP HANA database via the OVHcloud Backint Agent.
 
-Two files named `log_backup_0_0_0_0` and which have `DB_<SID>` and `SYSTEMDB` prefixes are also present in your first S3 Object Storage bucket. These files correspond to backups of the SAP HANA backup catalog, allowing you to list backups known by SAP HANA.
+Two files named `log_backup_0_0_0_0` and which have `DB_<SID>` and `SYSTEMDB` prefixes are also present in your first Object Storage bucket. These files correspond to backups of the SAP HANA backup catalog, allowing you to list backups known by SAP HANA.
 
 ![bucket_data_backup](images/bucket_data_backup.png){.thumbnail}
 
-In your second S3 Object Storage bucket,  some files named `log_backup` are present and correspond to logs backups.
+In your second Object Storage bucket,  some files named `log_backup` are present and correspond to logs backups.
 
 ![bucket_log_backup](images/bucket_log_backup.png){.thumbnail}
 
@@ -155,7 +155,7 @@ If these backups have not been done as expected, check the content of the follow
 
 Both files are present in the repository `/usr/sap/<SID>/HDB<NI>/<hostname>/trace` for the SYSTEMDB backup and in the repository `/usr/sap/<SID>/HDB<NI>/<hostname>/trace/DB_<SID>` for the TENANTDB backup.
 
-The `backint.log` file gives you information about the OVHcloud Backint Agent execution. For example, a permission issue with the S3 Object Storage bucket:
+The `backint.log` file gives you information about the OVHcloud Backint Agent execution. For example, a permission issue with the Object Storage bucket:
 
 ```log
 2024-02-08 14:10:41.266 backint started:
@@ -183,9 +183,9 @@ INFO    BACKUP   state of service: nameserver, <hostname>:30001, volume: 1, Back
 ERROR   BACKUP   SAVE DATA finished with error: [447] backup could not be completed
 ```
 
-You have the possibility to create more S3 Object Storage buckets and apply on it different parameters as the retention policy or the managing object immutability.
+You have the possibility to create more Object Storage buckets and apply on it different parameters as the retention policy or the managing object immutability.
 
-In order to target the right S3 Object Storage bucket, OVHcloud Backint Agent needs the corresponding `hdbbackint.cfg` file during the backup execution.
+In order to target the right Object Storage bucket, OVHcloud Backint Agent needs the corresponding `hdbbackint.cfg` file during the backup execution.
 
 ### Scheduling
 
@@ -195,12 +195,12 @@ About the backups scheduling, please refer to our guide [Install and use OVHclou
 
 About the recovery of your SAP HANA database, please refer to our guide [Install and use OVHcloud Backint Agent for SAP HANA](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_install_ovhcloud_backint_agent#recovery).
 
-The steps are the same, even if you use different S3 Object Storage buckets for your `DATA` and `LOG` backups.
+The steps are the same, even if you use different Object Storage buckets for your `DATA` and `LOG` backups.
 
 ## Go further
 
 To improve the security of your backups, we advise you to set the [object immutability](/pages/storage_and_backup/object_storage/s3_managing_object_lock).
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

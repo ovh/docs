@@ -1,7 +1,7 @@
 ---
 title: As boas práticas para a gestão dos seus serviços e da sua conta OVHcloud
 excerpt: Encontre aqui os elementos indispensáveis para a boa gestão das suas faturas, encomendas, métodos de pagamento e conta de cliente
-updated: 2022-05-02
+updated: 2024-12-23
 ---
 
 ## Objetivo
@@ -79,10 +79,10 @@ Será informado das etapas da entrega e saberá se são necessárias ações.
 
 Se pretender deixar de utilizar um dos seus serviços, pode rescindir o serviço, passar a renovação em modo manual ou eliminá-lo imediatamente a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
-Clique primeiro no seu nome no canto superior direito do seu ecrã e, a seguir, em `Produtos e serviços`{.action}. No lado direito do ecrã, clique no botão `...`{.action} correspondente ao serviço sobre o qual deseja atuar e, em seguida, num dos botões seguintes:
+Clique primeiro no seu nome no canto superior direito do seu ecrã e, a seguir, em `As minhas ofertas e serviços`{.action}. No lado direito do ecrã, clique no botão `...`{.action} correspondente ao serviço sobre o qual deseja atuar e, em seguida, num dos botões seguintes:
 
 - `Configurar a renovação`{.action}: no ecrã seguinte, poderá passar o `Tipo de renovação` do seu serviço para `Manual`. A seguir, clique em `Seguinte`{.action} e em `Confirmar`{.action}. Antes da data de expiração do serviço, receberá várias notificações por e-mail. Se não renovar o serviço, este será eliminado **definitivamente**.
-- `Rescindir`{.action}: no ecrã seguinte, indique as razões do seu pedido de rescisão e clique em `Validar`{.action}. Na data de expiração do seu serviço, ele será eliminado **definitivamente**.
+- `Rescindir o meu serviço`{.action}: no ecrã seguinte, indique as razões do seu pedido de rescisão e clique em `Validar`{.action}. Na data de expiração do seu serviço, ele será eliminado **definitivamente**.
 - `Eliminar imediatamente`{.action}: no ecrã seguinte, clique em `Validar`{.action}. Receberá um e-mail de confirmação. Após a validação, o seu serviço será eliminado de **imediato e de forma definitiva**.
 
 Para obter mais informações sobre a rescisão dos seus serviços, consulte o guia [Como rescindir os seus serviços OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).

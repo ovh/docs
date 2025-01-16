@@ -30,7 +30,7 @@ No matter your level of expertise in Python or Java programming, the Data Proces
 
 ### From which countries can customers order the Data Processing solution?
 
-They can order Data Processing via [OVHcloud EU or CA Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. 
+They can order Data Processing via [OVHcloud EU or CA Control Panel](/links/manager). 
 <br>However, the product is not available via the OVHcloud US Control Panel.
 
 ### From which regions is the Data processing solution available?
@@ -69,11 +69,11 @@ It is possible to launch a job via Control Panel, API and CLI. For more informat
 
 ### Where to put the data to process?
 
-Data processing from OVHcloud is compliant with Object Storage via Openstack Swift or AWS S3 protocols.
+Data processing from OVHcloud is compliant with Object Storage via Openstack Swift or Amazon S3 protocols.
 
 We recommend the AWS S3 protocol.
 
-Data can be hosted on an OVHcloud server or on another cloud provider's server (AWS S3 compliant).
+Data can be hosted on an OVHcloud server or on another cloud provider's server (Amazon S3 compliant).
 
 ### What about billing?
 
@@ -98,7 +98,7 @@ Storage and Storage transfer are not included in the Data processing offer.
 
 ### What  are the SLA linked to the Data processing offer?
 
-For more information, we invite you to read our [specific conditions for Public Cloud service](https://www.ovh.co.uk/support/contracts/).
+For more information, we invite you to read our [specific conditions for Public Cloud service](/links/terms-conditions-contracts).
 
 ### How to monitor a cluster?  Is Datadog compatible?
 
@@ -120,5 +120,4 @@ OVHcloud builds a cluster, deploys it and monitors it. A great breakthrough, rig
 
 To learn more about using Data Processing and how to create a cluster and process your data, we invite you to look at [Data Processing documentation page](/products/public-cloud-data-analytics-data-processing).
 
-You can send your questions, suggestions or feedbacks in our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external} or on our [Discord](https://discord.gg/VVvZg8NCQM){.external} in the channel **#dataprocessing-spark**
-
+You can send your questions, suggestions or feedbacks to our [community of users](/links/community) or on our [Discord](https://discord.gg/VVvZg8NCQM){.external} in the channel **#dataprocessing-spark**

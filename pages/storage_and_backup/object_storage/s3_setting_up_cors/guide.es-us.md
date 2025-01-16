@@ -1,5 +1,5 @@
 ---
-title: Object Storage - Instalación de CORS en el Object Storage S3 (EN)
+title: Object Storage - Instalación de CORS en el Object Storage (EN)
 excerpt: Learn how to enable and configure CORS on your buckets
 updated: 2023-05-30
 ---
@@ -12,14 +12,14 @@ By default, modern browsers impose a same-origin security policy i.e. by prevent
 
 Cross-Origin Resource Sharing (CORS) is a technique that allows resources from a client web application that is loaded from one domain to interact with resources located in a different domain.
 
-**The purpose of this guide is to explain the concept of CORS and how to enable it on your S3 buckets.**
+**The purpose of this guide is to explain the concept of CORS and how to enable it on your Object Storage buckets.**
 
 ### Use case scenarios
 
 Usual use case scenarios for CORS in OVHcloud Object Storage would be the following:
 
 - You host a static website in a bucket and you want to use JavaScript to access resources hosted in the same bucket or in another bucket.
-- You have a frontend application (e.g. a mobile application) that needs to access resources hosted in a S3 bucket.
+- You have a frontend application (e.g. a mobile application) that needs to access resources hosted in an Object Storage bucket.
 
 ### How does it work?
 
@@ -69,7 +69,7 @@ The cors.json file contains the following configuration:
 ```
 #### Configuration example
 
-Let's assume we have a frontend web application hosted on `https://my-app.xyz` that uses JavaScript (React, Angular or any frontend framework) to query media files hosted in a S3 bucket (`https://my-media.s3.gra.io.cloud.ovh.net/`).
+Let's assume we have a frontend web application hosted on `https://my-app.xyz` that uses JavaScript (React, Angular or any frontend framework) to query media files hosted in a Object Storage bucket (`https://my-media.s3.gra.io.cloud.ovh.net/`).
 
 We enable CORS on the my-media bucket:
 
@@ -102,6 +102,6 @@ The Object Storage server will expose the `Access-Control-Allow-Origin` header i
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

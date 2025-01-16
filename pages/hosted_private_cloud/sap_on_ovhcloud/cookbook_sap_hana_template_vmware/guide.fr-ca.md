@@ -13,8 +13,8 @@ Ce guide vous détaille les étapes pour le déploiement d'une machine virtuelle
 - Un accès à l’[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 - Une [solution SAP HANA on Private Cloud](https://www.ovhcloud.com/fr-ca/hosted-private-cloud/sap-hana/) déployée
 - [Un projet Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project) dans votre compte OVHcloud avec :
-    - [Un bucket Object Storage S3](/pages/storage_and_backup/object_storage/s3_create_bucket) et [un utilisateur S3](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creation-dun-utilsateur) avec le droit de lecture
-    - [Un second bucket Object Storage S3](/pages/storage_and_backup/object_storage/s3_create_bucket) et [un utilisateur S3](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creation-dun-utilsateur) avec les droits de lecture et d'écriture
+    - [Un bucket Object Storage](/pages/storage_and_backup/object_storage/s3_create_bucket) et [un utilisateur Object Storage](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creation-dun-utilsateur) avec le droit de lecture
+    - [Un second bucket Object Storage](/pages/storage_and_backup/object_storage/s3_create_bucket) et [un utilisateur Object Storage](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creation-dun-utilsateur) avec les droits de lecture et d'écriture
 
 ## En pratique
 
@@ -39,16 +39,16 @@ Afin de respecter le ratio vCPU/RAM pour les charges de travail OLAP et OLTP dan
 
 Ce template OVF offre la possibilité d'installer automatiquement SAP HANA, OVHcloud Backint Agent for SAP HANA, ainsi que SAP logs on OVHcloud Logs Data Platform, réduisant ainsi le temps de mise à disposition d'une base de données SAP HANA.
 
-Vous devez dans un premier temps déposer les sources nécessaires à l'installation de SAP HANA sur votre premier bucket Object Storage S3 demandé dans les prérequis. Les sources doivent être déposées sous la même forme qu'elles ont été téléchargées, soit par exemple « 51056821.ZIP ».
+Vous devez dans un premier temps déposer les sources nécessaires à l'installation de SAP HANA sur votre premier bucket Object Storage demandé dans les prérequis. Les sources doivent être déposées sous la même forme qu'elles ont été téléchargées, soit par exemple « 51056821.ZIP ».
 
 > [!warning]
 >
 > Les SAP HANA Components (tels que AFL, EML, LCAPPS, EPMMDS, etc.) ne sont pas pris en charge par cette automatisation. Ils devront être installés et gérés en post-installation.
 >
 
-Nous vous recommandons de suivre notre [guide Object Storage S3](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage), si ce sont vos premiers pas avec un bucket Object Storage S3.
+Nous vous recommandons de suivre notre [guide Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage), si ce sont vos premiers pas avec un bucket Object Storage.
 
-Une fois les sources SAP HANA déposées dans votre bucket Object Storage S3, vous pouvez à présent vous rendre sur l'interface vSphere de votre solution VMware on OVHcloud solution.
+Une fois les sources SAP HANA déposées dans votre bucket Object Storage, vous pouvez à présent vous rendre sur l'interface vSphere de votre solution VMware on OVHcloud solution.
 
 > [!warning]
 >
@@ -128,7 +128,7 @@ Voici un tableau des recommandations SAP pour les tailles des disques :
 
 ![sap-hana-installation](images/step-9.png){.thumbnail}
 
-10\. Si vous souhaitez bénéficier de l’installation automatisée d'OVHcloud Backint Agent for SAP HANA pour sauvegarder votre base de données sur un Object Storage S3, cochez l'activation de l'installation et renseignez les informations de la catégorie `OVHcloud Backint Agent installation`{.action}.
+10\. Si vous souhaitez bénéficier de l’installation automatisée d'OVHcloud Backint Agent for SAP HANA pour sauvegarder votre base de données sur un Object Storage, cochez l'activation de l'installation et renseignez les informations de la catégorie `OVHcloud Backint Agent installation`{.action}.
 
 > [!warning]
 >
@@ -245,7 +245,7 @@ systemctl enable chronyd.service
 ## Aller plus loin
 
 - [Installer et utiliser OVHcloud Backint Agent pour SAP HANA](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_install_ovhcloud_backint_agent)
-- [Utiliser OVHcloud Backint Agent avec plusieurs buckets Object Storage S3](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_configure_ovhcloud_backint_agent_several_buckets)
+- [Utiliser OVHcloud Backint Agent avec plusieurs buckets Object Storage](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_configure_ovhcloud_backint_agent_several_buckets)
 - [SAP HANA on VMware vSphere Best Practices and Reference Architecture Guide](https://core.vmware.com/resource/sap-hana-vmware-vsphere-best-practices-and-reference-architecture-guide)
 - [SAP Note 1606643 - Linux: VMware vSphere host monitoring interface](https://me.sap.com/notes/1606643)
 - [SAP Note 2470289 - FAQ: SAP HANA Non-Uniform Memory Access (NUMA)](https://me.sap.com/notes/2470289)

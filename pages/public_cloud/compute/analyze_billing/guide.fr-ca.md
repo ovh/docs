@@ -1,7 +1,7 @@
 ---
-title: 'Informations concernant le mode de facturation cloud'
+title: 'Informations concernant le mode de facturation Public Cloud'
 excerpt: 'Comprenez le mode de facturation des produits Public Cloud'
-updated: 2024-10-07
+updated: 2025-01-07
 ---
 
 ## Objectif
@@ -16,9 +16,9 @@ Ce fonctionnement ressemble à celui de certains opérateurs téléphoniques qui
 
 ## Prérequis
 
-* Un [projet Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/){.external} dans votre compte OVHcloud
-* Une [instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps){.external}
-* Être connecté à l'[espace client OVHcloud](/links/manager){.external}
+* Un [projet Public Cloud](/links/public-cloud/public-cloud) dans votre compte OVHcloud
+* Une [instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps)
+* Être connecté à l'[espace client OVHcloud](/links/manager)
 
 > [!success]
 > Bénéficiez de prix réduits en vous engageant sur une période de 1 à 36 mois sur vos ressources Public Cloud. Plus d’informations sur notre page [Savings Plans](/links/public-cloud/savings-plan).
@@ -34,10 +34,6 @@ En ce qui concerne spécifiquement les instances de type *Virtual Machines*, le 
 Chaque projet cloud a donc sa propre facture rassemblant l'ensemble des ressources facturées dans le mois, cette facture est éditée le 1er du mois suivant.
 
 ### Exemple
-
-> [!warning]
-> Veuillez noter qu'une instance horaire est facturée à l'heure, indépendamment du moment où l'instance est créée. Si vous souhaitez bénéficier de 60 minutes d'utilisation pour une heure de facturation, vous devez démarrer votre instance à la marque de l'heure, par exemple à 13h00 ou 14h00.
->
 
 Un exemple permettera de mieux comprendre le fonctionnement.
 
@@ -99,7 +95,7 @@ Si vous souhaitez être alerté lorsque la projection de votre consommation dép
 
 ### Les instances
 
-Les prix des instances cloud (ou serveurs cloud) sont donnés dans l'interface client OVHcloud avant de démarrer une instance. Il peuvent également être directement consultés sur la [page tarif](https://www.ovhcloud.com/fr-ca/public-cloud/prices/){.external}.
+Les prix des instances cloud (ou serveurs cloud) sont donnés dans l'interface client OVHcloud avant de démarrer une instance. Il peuvent également être directement consultés sur la [page tarif](/links/public-cloud/prices).
 
 > [!primary]
 >
@@ -147,7 +143,7 @@ Le calcul est : ( Prix du Go au mois / 720 ) x le nombre d'heure x le nombre de 
 
 Le nombre de Go par heure correspond à la quantitée maximale de Go stockée au cours de l'heure. Par exemple, si vous aviez 15 Go à 16h20, 17 Go à 16h40 et 14 Go à 16h50, alors OVH retiendra 17 Go pour la tranche horaire 16h-17h.
 
-Les prix du stockage sont disponibles directement sur [le site public OVHcloud](https://www.ovhcloud.com/fr-ca/public-cloud/storage/){.external}.
+Les prix du stockage sont disponibles directement sur [le site public OVHcloud](/links/public-cloud/storage).
 
 #### Volumes additionnels
 
@@ -163,7 +159,7 @@ Les snapshots de volumes additionnels sont facturés de la même manière que le
 
 #### Snapshots et images d'instance
 
-Les snapshots d'instances comme les images (hors catalogue d'images fourni par OVH) sont facturés à un prix fixe au Go par mois, quel que soit l'instance d'origine ou le type d'image. Rendez-vous sur la [page tarifs](https://www.ovhcloud.com/fr-ca/public-cloud/prices/){.external} pour connaitre le tarif.
+Les snapshots d'instances comme les images (hors catalogue d'images fourni par OVH) sont facturés à un prix fixe au Go par mois, quel que soit l'instance d'origine ou le type d'image. Rendez-vous sur la [page tarifs](/links/public-cloud/prices) pour connaitre le tarif.
 
 ### Object Storage
 

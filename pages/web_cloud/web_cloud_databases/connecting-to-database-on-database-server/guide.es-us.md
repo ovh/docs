@@ -1,6 +1,6 @@
 ---
-title: "Conectarse a la base de datos de su servidor de bases de datos"
-excerpt: "Descubra cómo conectarse a la base de datos"
+title: "Web Cloud Databases - Conectarse a una base de datos"
+excerpt: "Descubra cómo conectarse a una base de datos de su solución Web Cloud Databases"
 updated: 2023-10-31
 ---
 
@@ -171,17 +171,19 @@ mysql --host=servidor --user=nombre_de_usuario --port=puerto --password=contrase
     - **User name**: Indique el nombre de usuario.
     - **Password**: Indique la contraseña.
 
-![](/pages/assets/screens/other/web-tools/squirrel/add-alias.png){.thumbnail} conexión a la base de datos
+![config connection](/pages/assets/screens/other/web-tools/squirrel/add-alias.png){.thumbnail} conexión a la base de datos
 
 - Confirme con el botón `{.action}Connect.
 
-![](/pages/assets/screens/other/web-tools/squirrel/connect-to-mysql.png){.thumbnail} confirmación de la conexión
+![valid connection](/pages/assets/screens/other/web-tools/squirrel/connect-to-mysql.png){.thumbnail} confirmación de la conexión
 
 Se establecerá la conexión a la base de datos:
 
-![](/pages/assets/screens/other/web-tools/squirrel/general-dashboard.png){.thumbnail} conexión a la base de datos
+![config connection](/pages/assets/screens/other/web-tools/squirrel/general-dashboard.png){.thumbnail} conexión a la base de datos
 
 ## Más información
+
+[Web hosting - Mi base de datos está llena. ¿Qué hago?](/pages/web_cloud/web_hosting/sql_overquota_database).
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](/links/partner).
 

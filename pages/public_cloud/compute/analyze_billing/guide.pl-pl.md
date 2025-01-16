@@ -1,12 +1,8 @@
 ---
 title: 'Rozliczanie należności za usługę Public Cloud'
 excerpt: 'Zasady i modele naliczania opłat'
-updated: 2024-10-07
+updated: 2025-01-07
 ---
-
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
->
 
 ## Wstęp
 
@@ -20,9 +16,9 @@ Przypomina to model rozliczenia stosowany przez niektórych operatorów telefoni
 
 ## Wymagania początkowe
 
-* [projekt Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na koncie OVHcloud
-* [instancja Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps){.external}
-* dostęp do [Panelu klienta OVHcloud](/links/manager){.external}
+* [projekt Public Cloud](/links/public-cloud/public-cloud) na koncie OVHcloud
+* [instancja Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps)
+* dostęp do [Panelu klienta OVHcloud](/links/manager)
 
 > [!success]
 > Skorzystaj z obniżonych cen, zobowiązując się do korzystania z zasobów Public Cloud przez okres od 1 do 36 miesięcy. Więcej informacji na stronie [Savings Plans](/links/public-cloud/savings-plan).
@@ -40,10 +36,6 @@ W przypadku instancji maszyn wirtualnych licznik rozliczeń rozpoczyna się, gdy
 Każdy projekt w chmurze jest fakturowany oddzielnie. Faktura obejmuje należności za wszystkie zasoby wykorzystane w ciągu miesiąca i jest wystawiana pierwszego dnia następnego miesiąca.
 
 ### Przykład
-
-> [!warning]
-> Pamiętaj, że godzinowa instancja jest płatna w trybie godzinowym, niezależnie od momentu utworzenia instancji. Jeśli chcesz korzystać z 60 minut użytkowania na godzinę płatności, musisz uruchomić instancję ze znakiem godzinowym, na przykład o godzinie 13:00 lub 14:00.
->
 
 Poniższy przykład pozwoli lepiej zrozumieć, jak to działa.
 
@@ -106,7 +98,7 @@ Jeśli chcesz otrzymywać powiadomienia, kiedy prognozowany poziom zużycia zaso
 
 ### Instancje
 
-Ceny instancji cloud (lub serwerów cloud) możesz sprawdzić w interfejsie OVHcloud przed wdrożeniem instancji. Możesz sprawdzić je również dodatkowo na [stronie z cennikiem](https://www.ovhcloud.com/pl/public-cloud/prices/){.external}.
+Ceny instancji cloud (lub serwerów cloud) możesz sprawdzić w interfejsie OVHcloud przed wdrożeniem instancji. Możesz sprawdzić je również dodatkowo na [stronie z cennikiem](/links/public-cloud/prices).
 
 > [!primary]
 >
@@ -154,7 +146,7 @@ Obliczenie wygląda następująco: (Cena za liczbę GB w danym miesiącu / 720 )
 
 Liczba GB za godzinę odpowiada maksymalnej liczbie GB przechowywanych w czasie jednej godziny. Na przykład, jeśli o 16:20 przechowywałeś 15 GB, o 16:40 - 17 GB, a o 16:50 - 14 GB, OVHcloud przyjmie na potrzeby kalkulacji 17 GB za przedział czasowy 16:00-17:00.
 
-Ceny za przechowywanie danych podane są na [stronie OVHcloud](https://www.ovhcloud.com/pl/public-cloud/storage/){.external}.
+Ceny za przechowywanie danych podane są na [stronie OVHcloud](/links/public-cloud/storage).
 
 #### Dodatkowe dyski
 
@@ -170,7 +162,7 @@ Snapshoty dodatkowych dysków są fakturowane w taki sam sposób jak dyski stand
 
 #### Snapshoty i obrazy instancji
 
-Snapshoty instancji, podobnie jak obrazy (spoza katalogu obrazów dostarczanych przez OVHcloud) są rozliczane według stałego cennika za liczbę GB wykorzystanych w miesiącu, niezależnie od oryginalnej instancji czy typu obrazu. Przejdź do [strony z cennikiem](https://www.ovhcloud.com/pl/public-cloud/prices/){.external}.
+Snapshoty instancji, podobnie jak obrazy (spoza katalogu obrazów dostarczanych przez OVHcloud) są rozliczane według stałego cennika za liczbę GB wykorzystanych w miesiącu, niezależnie od oryginalnej instancji czy typu obrazu. Przejdź do [strony z cennikiem](/links/public-cloud/prices).
 
 #### Object Storage
 
@@ -183,12 +175,10 @@ W przypadku Object Storage fakturowane są dwa elementy:
 >
 > Ruch wychodzący między usługą Object Storage a instancjami jest fakturowany w taki sam sposób, jak gdyby miejscem docelowym był Internet.
 > 
-> 
 
 > [!warning]
 >
 > Przeglądanie obiektów w Panelu klienta OVHcloud jest traktowane tak samo, jak ruch wychodzący.
-> 
 > 
 
 #### Archiwa
@@ -207,4 +197,4 @@ W przypadku Cloud Archive fakturowane są trzy elementy:
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

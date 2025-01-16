@@ -1,7 +1,7 @@
 ---
 title: "Premiers pas avec OVHcloud Key Management Service (KMS)"
 excerpt: "Mettez en oeuvre votre OVHcloud KMS"
-updated: 2024-11-25
+updated: 2025-01-15
 ---
 
 ## Objectif
@@ -73,7 +73,7 @@ Il est possible de créer ce certificat depuis le menu dédié de la console d'a
 
 ![Créer un certificat](images/create_certificat_01.png){.thumbnail}
 
-La première partie du formulaire vous permet de préciser sa durée de validité ainsi que de fournir ou non votre propre clé privée via une Certificate Signing Request (CSR).
+La première partie du formulaire vous permet de préciser sa durée de validité ainsi que de fournir ou non votre Certificate Signing Request (CSR) dans le cas où vous posséderiez votre propre clé privée.
 
 - Sans fournir de clé privée :
 
@@ -95,9 +95,14 @@ Il est possible d'ajouter l'identitée `root` au certificat afin de ne pas être
 
 Il est ensuite nécessaire de télécharger la clé privée du certificat.
 
-> [!warning]
+> [!alert]
 >
 > La clé privée ne sera plus accessible par la suite. En cas de perte, il sera nécessaire de regénérer un certificat.
+>
+
+> [!warning]
+>
+> Le champ **privateKeyPEM** doit être modifié afin de remplacer les occurrences de `\n` par des retours chariots.
 >
 
 ![Créer un certificat](images/create_certificat_05.png){.thumbnail}
@@ -194,7 +199,7 @@ Celui-ci sera utilisé pour toute interaction avec le KMS, que ce soit pour cré
 
 Chaque certificat contient une [identité OVHcloud](/pages/manage_and_operate/iam/identities-management) permettant de calculer les droits d'accès via l'[IAM OVHcloud](/pages/account_and_service_management/account_information/iam-policy-ui)
 
-Il est possible de générer ce certificat en laissant OVHcloud générer la clé privée, ou en fournissant votre propre clé privée via une Certificate Signing Request (CSR).
+Il est possible de générer ce certificat en laissant OVHcloud générer la clé privée, ou en fournissant votre Certificate Signing Request (CSR) dans le cas où vous posséderiez votre propre clé privée.
 
 ##### Sans founir de clé privée
 
@@ -262,9 +267,14 @@ L'API retourne ensuite l'état de création du certificat :
 
 Copiez la valeur du champ **privateKeyPEM** dans un fichier **domain.key**
 
-> [!warning]
+> [!alert]
 >
 > La clé privée ne sera plus accessible par la suite. En cas de perte, il sera nécessaire de regénérer un certificat.
+>
+
+> [!warning]
+>
+> Le champ **privateKeyPEM** doit être modifié afin de remplacer les occurrences de `\n` par des retours chariots.
 >
 
 Copiez ensuite l'ID du certificat et accédez au détail de ce dernier via l'API :
@@ -295,6 +305,11 @@ L'API renvoie le certificat au format PEM :
 
 Copiez la valeur du champ **certificatePEM** dans un fichier **client.cert**.
 
+> [!warning]
+>
+> Le champ **certificatePEM** doit être modifié afin de remplacer les occurrences de `\n` par des retours chariots.
+>
+
 ##### Avec une CSR
 
 Si vous disposez de votre propre clé privée, il est possible de l'utiliser en fournissant une CSR.
@@ -313,6 +328,11 @@ Il est nécessaire d'indiquer les informations suivantes :
 - **description** : description du certificat (optionnel)
 - **validity** : durée de validité du certificat en jours - 365 jours par défaut (optionnel)
 - **csr** : le contenu de la CSR
+
+> [!warning]
+>
+> La CSR doit être au format JSON. Le fichier doit être modifié afin de remplacer les retours chariots par des `\n` (voir l'exemple ci-dessous). Vous pouvez aussi utiliser des outils tiers en ligne pour adapter le contenu dans un format JSON adapté.
+>
 
 **Exemple de création de certificat :**
 

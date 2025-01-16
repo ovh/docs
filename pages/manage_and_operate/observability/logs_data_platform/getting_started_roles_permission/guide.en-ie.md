@@ -63,7 +63,7 @@ A user can use their usual Logs Data Platform account credentials on a different
 
 Role management can be automated by using the [OVHcloud API](https://api.ovh.com/console/#/dbaas/logs){.external}.
 
-Here are a few exemples of the role API calls you can use:
+Here are a few examples of the role API calls you can use:
 
 ### Listing available services
 

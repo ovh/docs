@@ -57,10 +57,10 @@ Here are the most frequently asked questions about `ovhai` CLI & OVHcloud AI Sol
 > > - `GPU`: 4 for V100S, and 2 for A100
 > >
 > Do AI Tools provide local storage?
-> > Each tool provides local storage. However, it is limited and not the recommended way to handle data. Indeed, if you delete your notebook, job or app, all files contained in this local storage will be lost. A better practice is to attach [Object Storage containers](https://www.ovhcloud.com/en-au/public-cloud/object-storage/).
+> > Each tool provides local storage. However, it is limited and not the recommended way to handle data. Indeed, if you delete your notebook, job or app, all files contained in this local storage will be lost. A better practice is to attach [Object Storage containers](/links/public-cloud/object-storage).
 > >
 > How to attach and use storage?
-> > Read this [OVHcloud documentation](/pages/public_cloud/ai_machine_learning/gi_02_concepts_data) on data for more information. You can also check the [S3 compliance documentation](/pages/public_cloud/ai_machine_learning/gi_08_s3_compliance) if you are interested in S3 buckets.
+> > Read this [OVHcloud documentation](/pages/public_cloud/ai_machine_learning/gi_02_concepts_data) on data for more information. You can also check the [S3* compatible compliance documentation](/pages/public_cloud/ai_machine_learning/gi_08_s3_compliance) if you are interested in S3* compatible Object Storage buckets.
 > >
 > Is there an expected format for data to upload?
 > > You can upload any file or directory to the OVHcloud Object Storage without any format constraints.
@@ -101,7 +101,7 @@ Here are the most frequently asked questions about `ovhai` CLI & OVHcloud AI Sol
 > My job or my app is blocked in `QUEUED` or `PENDING` state, what does it mean?
 > > Your AI Task might be in this state for 2 main reasons:
 > >
-> > * You are using an external registry and the image is taking longer to pull. Potential resolution: wait a bit longer for the AI Tool to pull the external image or recompile the image on an [OVHcloud managed Registry](https://www.ovhcloud.com/en-au/public-cloud/managed-private-registry/).
+> > * You are using an external registry and the image is taking longer to pull. Potential resolution: wait a bit longer for the AI Tool to pull the external image or recompile the image on an [OVHcloud managed Registry](/links/public-cloud/managed-private-registry).
 > > * The AI Tool is waiting for resources to be available. Potential resolution: try to launch the job with less resources or wait for resources to be available.
 > >
 > Why can't I access my AI Solution UI?
@@ -146,4 +146,6 @@ Please send us your questions, feedback and suggestions to improve the service:
 
 - On the OVHcloud [Discord server](https://discord.gg/ovhcloud)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-au/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+**\***: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

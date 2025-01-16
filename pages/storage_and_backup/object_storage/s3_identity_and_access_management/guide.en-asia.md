@@ -1,21 +1,21 @@
 ---
 title: Object Storage - Identity and access management
-excerpt: The purpose of this guide is to show you how to manage your identities and access your S3 Object Storage resources
+excerpt: The purpose of this guide is to show you how to manage your identities and access your Object Storage resources
 updated: 2022-09-27
 ---
 
 ## Objective
 
-The purpose of this guide is to show you how to manage your identities and access your S3 Object Storage resources.
+The purpose of this guide is to show you how to manage your identities and access your Object Storage resources.
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account
-- Access to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager\&from=https://www.ovh.co.uk/\&ovhSubsidiary=GB)
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
+- Access to your [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
-Log in to [the OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager\&from=https://www.ovh.co.uk/\&ovhSubsidiary=GB), go to the `Public Cloud`{.action} section, and select the Public Cloud project concerned. Then click on `Object Storage`{.action} in the left-hand menu.
+Log in to [the OVHcloud Control Panel](/links/manager), go to the `Public Cloud`{.action} section, and select the Public Cloud project concerned. Then click on `Object Storage`{.action} in the left-hand menu.
 
 ### Creating a user
 
@@ -23,11 +23,11 @@ Click `Create User`{.action}.
 
 If you already have OpenStack users, you can select one of these:
 
-![Add S3 user](images/highperf-identity-and-access-management-20220928085304931.png)
+![Add Object Storage user](images/highperf-identity-and-access-management-20220928085304931.png)
 
 then
 
-![Add S3 user](images/highperf-identity-and-access-management-2022092808554688.png)
+![Add Object Storage user](images/highperf-identity-and-access-management-2022092808554688.png)
 
 > [!primary]
 >
@@ -36,7 +36,7 @@ then
 
 Otherwise, create a new user:
 
-![Add S3 user](images/highperf-identity-and-access-management-20220928085501719.png)
+![Add Object Storage user](images/highperf-identity-and-access-management-20220928085501719.png)
 
 Once your user has been created, you will see the credentials:
 
@@ -81,9 +81,9 @@ Select the access profile for this user and click `Confirm`{.action}.
 
 ### Advanced resource access management
 
-You can refine your permissions by importing a JSON configuration file. To do this, go to the `S3 Policy Users`{.action} tab.
+You can refine your permissions by importing a JSON configuration file. To do this, go to the `Object Storage Policy Users`{.action} tab.
 
-![S3 users](images/highperf-identity-and-access-management-20220928084435242.png)
+![Object Storage users](images/highperf-identity-and-access-management-20220928084435242.png)
 
 Click on the `...`{.action} at the end of your user's line, then `Import JSON file`{.action}.
 
@@ -163,6 +163,6 @@ Some examples of JSON configuration files:
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our community of users on [https://community.ovh.com](https://community.ovh.com/en/).
+Join our [community of users](/links/community).

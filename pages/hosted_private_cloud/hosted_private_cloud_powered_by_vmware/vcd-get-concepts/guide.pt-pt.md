@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud Director - The fundamentals of VCD (EN)"
 excerpt: "Discover the basic concepts of VCD"
-updated: 2024-06-10
+updated: 2024-12-19
 ---
 
 ## Objective
@@ -104,9 +104,9 @@ Below is a comparison of the features provided by OVHcloud on its 3 VMware Cloud
 
 | Features                        	| Standard 	| Advanced 	| Premium 	| Comments                                                                                                                                                                                           	|
 |---------------------------------	|----------	|----------	|---------	|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
-| Routing & Switching IPv4        	| ✅        	| ✅        	| ✅       	| Network segments, distributed & non distributed routing, Routed Network with/without NAT BGP/ DHCP/ DNS/ Static routes Cross virtual DC Networking on the same site. Not supported: OSPF, VRF Lite 	|
+| Routing & Switching IPv4        	|         	| ✅        	| ✅       	| Network segments, distributed & non distributed routing, Routed Network with/without NAT BGP/ DHCP/ DNS/ Static routes Cross virtual DC Networking on the same site. Not supported: OSPF, VRF Lite 	|
 | Public IPv4 Range               	| ✅        	| ✅        	| ✅       	|                                                                                                                                                                                                    	|
-| Private Network - vRack support 	| ✅        	| ✅        	| ✅       	| in Roadmap                                                                                                                                                                                                  	|
+| Private Network - vRack support 	| ✅        	| ✅        	| ✅       	| in Roadmap                                                                                                                                                                                                   	|
 | Routing & Switching IPv6        	|          	|          	|         	| in Roadmap                                                                                                                                                                                         	|
 | VPN                             	|          	| ✅        	| ✅       	| L2VPN, VPN IPsec Policy Based Not Supported : SSL VPN, Routed based IPsec VPN                                                                                                                      	|
 | Load Balancing                  	|          	|          	|         	| Not supported with native VCD network capabilities                                                                                                                                                 	|
@@ -145,6 +145,6 @@ Below is a comparison of the features provided by OVHcloud on its 3 VMware Cloud
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pt/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

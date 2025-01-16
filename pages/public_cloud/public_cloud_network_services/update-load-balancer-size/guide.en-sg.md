@@ -1,7 +1,7 @@
 ---
 title: 'Updating a Load Balancer size via the Horizon interface'
 excerpt: 'Learn how to update the size of your Public Cloud Load Balancer using the Horizon interface'
-updated: 2024-09-12
+updated: 2024-12-10
 ---
 
 ## Objective
@@ -43,11 +43,12 @@ In the options menu, choose `Resize Load Balancer`{.action}.
 
 A window will prompt you to select a new size for your load balancer.
 
-- **Small**
-- **Medium**
-- **Large**
+- **small**
+- **medium**
+- **large**
+- **xl**
 
-![Select Load Balancer Size](images/sizeLoadBalancer.png){.thumbnail}
+![Select Load Balancer Size](images/loadbalancersize.png){.thumbnail}
 
 Confirm your selection and apply the changes.
 

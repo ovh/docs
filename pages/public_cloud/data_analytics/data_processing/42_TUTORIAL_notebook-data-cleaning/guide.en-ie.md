@@ -19,8 +19,8 @@ This tutorial presents a simple data cleaning with `Notebooks for Apache Spark`.
 
 ## Requirements 
 
-- A [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 ## Instructions
 
@@ -31,7 +31,7 @@ First, download these 2 dataset CSV files locally:
 - [books.csv](https://raw.githubusercontent.com/ovh/data-processing-samples/master/apache_spark_notebook_data_cleaning/books.csv)
 - [ratings.csv](https://raw.githubusercontent.com/ovh/data-processing-samples/master/apache_spark_notebook_data_cleaning/ratings.csv)
 
-Then, from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), go to the Object Storage section, locate your S3 bucket and upload your data by clicking `Add object`{.action}.
+Then, from the [OVHcloud Control Panel](/links/manager), go to the Object Storage section, locate your Object Storage bucket and upload your data by clicking `Add object`{.action}.
 
 Select both files from your computer and add them to the root (`/`) of your bucket.
 
@@ -45,15 +45,15 @@ Select both files from your computer and add them to the root (`/`) of your buck
 
 There is some information that we will need as inputs of the notebook.
 
-First, and while we're on the container page of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) we will copy the `Endpoint` information and save it.
+First, and while we're on the container page of the [OVHcloud Control Panel](/links/manager) we will copy the `Endpoint` information and save it.
 
-Go back to the Object Storage home page and then to the S3 users tab, copy the user's `access key` and save it.
+Go back to the Object Storage home page and then to the Object Storage users tab, copy the user's `access key` and save it.
 
 Finally, click on the `...`{.action} button at the end of the user row, click on `View the secret key`{.action}, copy the value and save it.
 
 ### Launch and access a Notebook for Apache Spark
 
-From the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), go to the Data Processing section and create a new notebook by clicking `Data Processing`{.action} and then `Create notebook`{.action}.
+From the [OVHcloud Control Panel](/links/manager), go to the Data Processing section and create a new notebook by clicking `Data Processing`{.action} and then `Create notebook`{.action}.
 
 You can then reach the `JupyterLab` URL directly from the notebooks list or from the notebook page.
 
@@ -72,4 +72,3 @@ A preview of this notebook can be found on [GitHub](https://github.com/ovh/data-
 Please send us your questions, feedback and suggestions to improve the service:
 
 - On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9)
-

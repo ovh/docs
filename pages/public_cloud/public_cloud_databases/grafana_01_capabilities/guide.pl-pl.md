@@ -1,12 +1,12 @@
 ---
-title: Grafana - Capabilities and Limitations
-excerpt: Discover the capabilities and limitations of Public Cloud Databases for Grafana
-updated: 2024-05-27
+title: Dashboards - Capabilities and Limitations
+excerpt: Discover the capabilities and limitations of Public Cloud Databases for Dashboards
+updated: 2024-12-11
 ---
 
 ## Objective
 
-This page provides the technical capabilities and limitations of the Public Cloud Databases for Grafana offer.
+This page provides the technical capabilities and limitations of the Public Cloud Databases for Dashboards offer.
 
 We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/orgs/ovh/projects/16/views/5>.
 
@@ -23,19 +23,20 @@ The Public Cloud Databases offer is available in the following regions:
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
 
-Grafana nodes have to be in the same region. Multi-AZ is currently not supported.
+Dashboards nodes have to be in the same region. Multi-AZ is currently not supported.
 
-### Grafana versions
+### Dashboards versions
 
-The Public Cloud Databases offer supports the following Grafana versions:
+The Public Cloud Databases offer supports the following Dashboards versions:
 
-- Grafana 10
+- Grafana® open source 10
 
-Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/public_cloud_databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. Additionally, you can follow the Grafana Release Cycle on their official page: <https://grafana.com/>.
+Please refer to the [DBMS lifecycle policy guide](/pages/public_cloud/public_cloud_databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. Additionally, you can follow the Grafana® Release Cycle on their official page: <https://grafana.com/>.
 
-### Grafana clients
 
-You can use your browser to access your Grafana cluster.
+### Dashboards clients
+
+You can use your browser to access your Dashboards service.
 
 ### Plans
 
@@ -55,7 +56,7 @@ The *Essential* plan offers an automatic backup retention of 2 days. It supports
 
 #### License type
 
-Grafana software is under the GNU Affero General Public License, a liberal open-source license.
+Grafana® open source software is under the GNU Affero General Public License, a liberal open-source license.
 More information on <https://raw.githubusercontent.com/grafana/grafana/main/LICENSE>.
 
 ### Hardware resources
@@ -68,7 +69,7 @@ You can upgrade the node template of your cluster to scale your hardware resourc
 
 ### Features
 #### Network
-Grafana clusters are reachable through a random port, attributed during cluster creation. Once your cluster is in **RUNNING** status, the Service URI will display the port to use.
+Dashboards clusters are reachable through a random port, attributed during cluster creation. Once your cluster is in **RUNNING** status, the Service URI will display the port to use.
 
 Public as well as private networking (vRack) can be used for all the offers.
 
@@ -90,7 +91,7 @@ Once your service is up and running, you will be able to specify IP addresses (o
 
 #### Advanced parameters
 
-You can further customise your Grafana by using advanced parameters. See the [Advanced parameters references documentation](/pages/public_cloud/public_cloud_databases/grafana_03_advanced_parameters_references) for more information on the supported parameters.
+You can further customise your Dashboards by using advanced parameters. See the [Advanced parameters references documentation](/pages/public_cloud/public_cloud_databases/grafana_03_advanced_parameters_references) for more information on the supported parameters.
 
 #### Backups
 
@@ -109,9 +110,9 @@ Please note that if the database instance is deleted, logs and metrics are also 
 
 #### Users and roles
 
-Creation of users must be done through the Grafana Web interface.
+Creation of users must be done through the Dashboards Web interface.
 
-Only one user is created by default and its name is `admin`. You must reset its password to connect for the first time to the Grafana web interface.
+Only one user is created by default and its name is `admin`. You must reset its password to connect for the first time to the Dashboards web interface.
 
 ## We want your feedback!
 

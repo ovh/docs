@@ -1,7 +1,7 @@
 ---
 title: How to use IAM policies using the OVHcloud Control Panel
 excerpt: "Find out how to give specific access rights to users from an OVHcloud account"
-updated: 2024-10-30
+updated: 2025-01-08
 ---
 
 ## Objective
@@ -45,11 +45,11 @@ You can access the IAM menu via the dedicated entry in your Control Panel.
 
 ![Access to the IAM menu](/pages/assets/screens/control_panel/product-selection/right-column/initials/identity-and-access-management-iam.png){.thumbnail}
 
-The menu will give you the list of all the current policies created on your account.
+If you are accessing this menu for the first time, the following page appears:
 
-![Access to the IAM menu](images/access_to_the_IAM_menu_03.png){.thumbnail}
+![Access to the IAM menu](/pages/assets/screens/control_panel/product-selection/right-column/identity-and-access-management-iam/tab-first-access.png){.thumbnail}
 
-Each policy is displayed with its name, the number of identities linked to it, and the number of actions it contains.
+Click [Create a policy](#create-policy) or [Create users](#create-users) directly depending on the action you want to perform.
 
 > [!primary]
 >
@@ -57,7 +57,15 @@ Each policy is displayed with its name, the number of identities linked to it, a
 >
 > Customers are not allowed to edit or delete these policies.
 
+If you have already created policies or users, the menu displays a list of all the current policies created on your OVHcloud account.
+
+![Access to the IAM menu](images/access_to_the_IAM_menu_03.png){.thumbnail}
+
+Each policy is displayed with its name, the number of identities linked to it, and the number of actions it contains.
+
 ### Managing policies
+
+<a name="create-policy"></a>
 
 #### Creating a policy
 
@@ -137,6 +145,8 @@ Then you can change the scope of the policy.
 To delete an existing policy, click the `...`{.action} button to the right of the policy and click `Delete policy`{.action}.
 
 A popup window will ask you to confirm the deletion.
+
+<a name="create-users"></a>
 
 ### Managing identities
 

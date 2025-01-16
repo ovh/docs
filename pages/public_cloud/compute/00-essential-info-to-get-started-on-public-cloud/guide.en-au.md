@@ -72,7 +72,7 @@ There are several ways to manage Public Cloud resources. Whether you are an adva
 
 - To discover the products, the OVHcloud Control Panel helps you create resources by leading you to choose the performance of the product, its location, the customisation you want, or other parameters such as its billing method.
 
-- To automate deployments and industrialise your architectures, you can also use market tools by logging directly in to standard APIs like the S3 API, OpenStack APIs or even Kubernetes.
+- To automate deployments and industrialise your architectures, you can also use market tools by logging directly in to standard APIs like the Amazon S3 API, OpenStack APIs or even Kubernetes.
 
 ### Starting: handling
 
@@ -110,7 +110,7 @@ You may have to deal with the quota issue.
 You may need to manage several users who will be involved in your project.
 <br>You then have two options:
 
-- If you would like to use the OpenStack or S3 APIs, or the Horizon interface, you will need to [create users](/pages/public_cloud/compute/create_and_delete_a_user) to do this. Users may have limited permissions to secure the action perimeters.
+- If you would like to use the OpenStack or Amazon S3 APIs, or the Horizon interface, you will need to [create users](/pages/public_cloud/compute/create_and_delete_a_user) to do this. Users may have limited permissions to secure the action perimeters.
 - If you do not need access to the APIs or Horizon, you can [link another OVHcloud](/pages/public_cloud/compute/delegate_projects) customer account as an add-on to your project.
 
 ## Go further <a name="gofurther"></a>
@@ -122,7 +122,6 @@ Here are some general resources that will help you get started with the Public C
 |[FAQ](/pages/public_cloud/compute/faq_pci)|Frequently asked questions about Public Cloud.|
 |[Glossary](/pages/public_cloud/compute/introduction_about_instances)|The concepts and definitions you will need to move forward.|
 |[Availability of services by location](https://www.ovhcloud.com/fr/public-cloud/regions-availability/)|Service availability tables across different locations.|
-|[Image Changelog](/pages/public_cloud/compute/image_changelog)|Changes to publicly available system images.|
 
 Here are some guides to help you with the first steps:
 

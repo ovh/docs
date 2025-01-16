@@ -130,8 +130,7 @@ Consigliamo inoltre di definire la regola **"Default policy = DROP"** su ogni IP
 
 #### Rust
 
-- **Rust** è supportato con un profilo di protezione dedicato su tutte le generazioni di server Bare Metal Game. Ti ricordiamo che abbiamo aggiornato questo profilo di protezione (ovvero abbiamo aggiunto il supporto dei cookies RakNet) per la terza generazione di server Bare Metal Game (2024, basato su EPYC).  
-Per saperne di più sull'hosting Rust sui server OVHcloud [qui](/links/bare-metal/game-rust).
+- **Rust** è supportato con un profilo di protezione dedicato su tutte le generazioni di server Bare Metal Game. Ti ricordiamo che abbiamo aggiornato questo profilo di protezione (ovvero abbiamo aggiunto il supporto dei cookies RakNet) per la terza generazione di server Bare Metal Game (2024, basato su EPYC).
 
 #### Minecraft
 

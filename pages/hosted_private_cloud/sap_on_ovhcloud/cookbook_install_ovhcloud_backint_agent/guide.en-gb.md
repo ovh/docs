@@ -9,7 +9,7 @@ updated: 2024-09-03
 
 This guide provides detailed steps for the installation and usage of OVHcloud Backint Agent for SAP HANA.
 
-OVHcloud Backint Agent for SAP HANA allows you to back up and recover your SAP HANA database on one or many OVHcloud S3 Object Storage buckets.
+OVHcloud Backint Agent for SAP HANA allows you to back up and recover your SAP HANA database on one or many OVHcloud Object Storage buckets.
 
 ![one_bucket](images/one_bucket.png){.thumbnail}
 
@@ -23,8 +23,8 @@ OVHcloud Backint Agent for SAP HANA has been certified by SAP, you can find cert
 
 - Access to the [OVHcloud Control Panel](/links/manager).
 - [A Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) in your OVHcloud account with:
-    - An [S3 Object Storage bucket](/pages/storage_and_backup/object_storage/s3_create_bucket).
-    - An [S3 user](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creating-a-user) with the read and write rights.
+    - An [Object Storage bucket](/pages/storage_and_backup/object_storage/s3_create_bucket).
+    - An [Object Storage user](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creating-a-user) with the read and write rights.
 - A SAP HANA database installed.
 
 ## Instructions
@@ -34,17 +34,17 @@ OVHcloud Backint Agent for SAP HANA has been certified by SAP, you can find cert
 > [**Quick access to OVHcloud Backint Agent download URL**](#ovhcloud-backint-agent-for-sap-hana)
 >
 
-### S3 Object Storage
+### Object Storage
 
-The S3 Object Storage bucket versioning must be enabled to ensure the correct operation of OVHcloud Backint Agent. The versioning allows you to keep several versions of a same object in your S3 Object Storage bucket.
+The Object Storage bucket versioning must be enabled to ensure the correct operation of OVHcloud Backint Agent. The versioning allows you to keep several versions of a same object in your Object Storage bucket.
 
 With SAP HANA backups, the versioning allows you to trigger several backups with the same name (for example "COMPLETE_DATA_BACKUP") and keeping the capacity to recover a specific version of the backup named "COMPLETE_DATA_BACKUP". If the versioning is not enabled, only the latest version of the backup named "COMPLETE_DATA_BACKUP" can be recovered.
 
-You can check the versioning status of your Object Storage S3 bucket by following these steps:
+You can check the versioning status of your Object Storage bucket by following these steps:
 
 1. Log in to the [OVHcloud Control Panel](/links/manager).
 2. Click `Public Cloud`{.action} and select your Public Cloud project. Then click `Object Storage`{.action}.
-3. Click on the S3 Object Storage bucket that will host backups of your SAP HANA database.
+3. Click on the Object Storage bucket that will host backups of your SAP HANA database.
 4. Check the value of the `Versioning`{.action} parameter, it must have the value `Enabled`{.action}. If the value of this parameter is `Disabled`{.action}, click on `Enable versioning`{.action}.
 
 | Versioning enabled | Versioning disabled |
@@ -109,7 +109,7 @@ Expected output:
 
 ### Configuration
 
-Edit the content of the `hdbbackint.cfg` file and replace all values between chevrons by your S3 Object Storage bucket information. Below is an example of its content after edition.
+Edit the content of the `hdbbackint.cfg` file and replace all values between chevrons by your Object Storage bucket information. Below is an example of its content after edition.
 
 ```ini
 [trace]
@@ -186,9 +186,9 @@ You also have the possibility to trigger these backups via SAP HANA Cockpit. Sel
 
 ![backup_hana_cockpit](images/backup_hana_cockpit.png){.thumbnail}
 
-After the execution of these backups, several files named `_databackup_` are now present in your S3 Object Storage bucket, these files correspond to backups of your SAP HANA database via OVHcloud Backint Agent.
+After the execution of these backups, several files named `_databackup_` are now present in your Object Storage bucket, these files correspond to backups of your SAP HANA database via OVHcloud Backint Agent.
 
-Two files named `log_backup_0_0_0_0` and which have `DB_<SID>` and `SYSTEMDB` prefixes are also present in your S3 Object Storage bucket. These files correspond to backups of the SAP HANA backup catalog, allowing you to list backups known by SAP HANA.
+Two files named `log_backup_0_0_0_0` and which have `DB_<SID>` and `SYSTEMDB` prefixes are also present in your Object Storage bucket. These files correspond to backups of the SAP HANA backup catalog, allowing you to list backups known by SAP HANA.
 
 Files named `log_backup` correspond to backups of SAP HANA logs backups.
 
@@ -201,7 +201,7 @@ If these backups have not been done as expected, check the content of the follow
 
 Both files are present in the repository `/usr/sap/<SID>/HDB<NI>/<hostname>/trace` for the SYSTEMDB backup and the repository `/usr/sap/<SID>/HDB<NI>/<hostname>/trace/DB_<SID>` for the TENANTDB backup.
 
-The `backint.log` file gives you information about the OVHcloud Backint Agent execution. For example, a permission issue with the S3 Object Storage bucket:
+The `backint.log` file gives you information about the OVHcloud Backint Agent execution. For example, a permission issue with the Object Storage bucket:
 
 ```log
 2024-02-08 14:10:41.266 backint started:
@@ -360,7 +360,7 @@ Otherwise, please set paths.
 ## Go further
 
 - To improve the security of your backups, we advise you to set the [object immutability](/pages/storage_and_backup/object_storage/s3_managing_object_lock).
-- You also have the possibility to [trigger SAP HANA backup to several S3 Object Storage buckets](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_configure_ovhcloud_backint_agent_several_buckets).
+- You also have the possibility to [trigger SAP HANA backup to several Object Storage buckets](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_configure_ovhcloud_backint_agent_several_buckets).
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 

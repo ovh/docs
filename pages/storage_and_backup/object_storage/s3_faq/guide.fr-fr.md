@@ -1,7 +1,7 @@
 ---
 title: Object Storage - FAQ
 excerpt: "FAQ sur la solution Object Storage"
-updated: 2024-11-25
+updated: 2024-12-11
 ---
 
 ## Questions générales
@@ -10,7 +10,7 @@ updated: 2024-11-25
 
 Le stockage objet «Object Storage» est une famille d’offres de stockage proposant des espaces de stockage performant, scalable et sécurisé.
 
-Les offres de stockage objet permettent de déposer, à travers un point d’accès public appelé « endpoint », des fichiers statiques (vidéos, images, fichiers web, etc...) dans un espace illimité, pour les exploiter depuis une application ou pour les rendre accessibles sur le web. Ces espaces de stockages sont accessibles via une interface d’API standard S3 pour les classes de stockage Object Storage S3 et Swift pour les classes de stockage Object Storage SWIFT.
+Les offres de stockage objet permettent de déposer, à travers un point d’accès public appelé « endpoint », des fichiers statiques (vidéos, images, fichiers web, etc...) dans un espace illimité, pour les exploiter depuis une application ou pour les rendre accessibles sur le web. Ces espaces de stockages sont accessibles via une interface d’API standard compatible S3 **\*** pour les classes de stockage Object Storage et Swift pour les classes de stockage Object Storage SWIFT.
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/8xXbL3Ftgwk?si=OaRx5koocA-OyRXC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -18,39 +18,39 @@ Les offres de stockage objet permettent de déposer, à travers un point d’acc
 
 Le stockage objet est adapté pour stocker de la donnée non structurée de manière illimitée en volume et en temps, pour des cas d'usage comme les websites, les plateformes d'e-commerce, le streaming de vidéos, les librairies d'images, l'analytique, les sauvegardes, les archives.
 
-### Quelle est la différence entre les classes de stockage objet S3 et les classes de stockage objet SWIFT ?
+### Quelle est la différence entre les classes de stockage objet compatible S3 et les classes de stockage objet SWIFT ?
 
-Les classes de stockage Object Storage S3 sont largement compatibles avec le protocole S3 et bénéficient d'un design récent, performant et d'une bonne bande passante. Cette offre bénéficie régulièrement de mises à jour et de nouvelles fonctionnalités.
+Les classes de stockage Object Storage sont largement compatibles avec le protocole S3 et bénéficient d'un design récent, performant et d'une bonne bande passante. Cette offre bénéficie régulièrement de mises à jour et de nouvelles fonctionnalités.
 
 Les classes de stockage SWIFT sont de générations plus anciennes et ne bénéficient plus d'évolutions. Elles sont accessibles à travers le protocole SWIFT d'OpenStack.
 
 ### Comment savoir quelle classe de stockage est adaptée à mes usages ?
 
-OVHcloud propose 3 classes de stockages S3 :
+OVHcloud propose 3 classes de stockages compatibles S3 :
 
 - **High Performance** pour vos applications exigeantes en termes de latence et de consommation de bande passante.
 - **Standard** pour vos stockages volumineux pour lesquels vous recherchez un meilleur ratio prix/performance, comme par exemple pour des sites web, des librairies de partage d'images ou des sauvegardes.
 - **Cold Archive** pour vos archives.
 
-Retrouvez la description des classes des stockage sur [cette page](https://www.ovhcloud.com/fr/public-cloud/storage/).
+Retrouvez la description des classes des stockage sur [cette page](/links/public-cloud/storage).
 
-### Quelles sont les fonctionnalités disponibles pour les classes de stockage S3 ?
+### Quelles sont les fonctionnalités disponibles pour les classes de stockage Object Storage ?
 
-Les classes de stockage Objet S3 bénéficient de [fonctionnalités enrichies pour gérer au mieux votre donnée](https://www.ovhcloud.com/fr/public-cloud/object-storage/#features).
+Les classes de stockage Objet bénéficient de [fonctionnalités enrichies pour gérer au mieux votre donnée](/links/public-cloud/object-storage).
 
 De nouvelles fonctionnalités sont à venir, nous vous invitons à consulter régulièrement notre [roadmap GitHub publique](https://github.com/orgs/ovh/projects/16/?card_filter_query=label%3A%22object+storage%22).
 
-### Quelles sont les API S3 compatibles avec les classes de stockage Object Storage S3 ?
+### Quelles sont les API Amazon S3 compatibles avec les classes de stockage Object Storage ?
 
-Les classes de stockages objet S3 offrent un large support des API S3. L'ensemble des API compatibles sont décrites dans notre [guide de compatibilité S3](/pages/storage_and_backup/object_storage/s3_s3_compliancy).
+Les classes Object Storage offrent un large support d'API S3. L'ensemble des API compatibles sont décrites dans notre [guide de compatibilité](/pages/storage_and_backup/object_storage/s3_s3_compliancy).
 
-### Quels sont les outils compatibles avec l'Object Storage S3 ?
+### Quels sont les outils compatibles avec Object Storage ?
 
-La majorité des outils du marché compatibles avec du stockage S3 standard sont compatibles avec l'Object Storage S3 OVHcloud.
+La majorité des outils du marché compatibles avec le protocole Amazon S3 sont compatibles avec l'Object Storage OVHcloud.
 
-### L'Object Storage S3 peut-il fonctionner avec mes outils de gestion de back up ?
+### Object Storage peut-il fonctionner avec mes outils de gestion de back up ?
 
-Oui, l'Object Storage S3 est largement compatible avec les API S3 et peut être intégré avec les outils du marché comme par exemple [Veeam](/pages/storage_and_backup/object_storage/s3_veeam), [Owncloud](/pages/storage_and_backup/object_storage/s3_owncloud), [Nextcloud](/pages/storage_and_backup/object_storage/s3_nextcloud).
+Oui, Object Storage est largement compatible avec  S3 et peut être intégré avec les outils du marché comme par exemple [Veeam](/pages/storage_and_backup/object_storage/s3_veeam), [Owncloud](/pages/storage_and_backup/object_storage/s3_owncloud), [Nextcloud](/pages/storage_and_backup/object_storage/s3_nextcloud).
 
 ## Facturation
 
@@ -60,7 +60,7 @@ L'Object Storage est facturé en fonction de l'espace de stockage utilisé, avec
 
 ### Exemple de tarification pour Object Storage – 1-AZ
 
-Supposons que vous stockiez au sein d'un **bucket Object Storage** dans une région 1-AZ, **100 Gio** de données S3 Standard pendant les **10 premiers jours** du mois d'octobre, et **100 Tio** (102 400 Go) de données S3 Standard pendant les **21 derniers jours** du mois. On imagine donc dans ce cas une évolution du stockage au sein de ce bucket au cours du mois.
+Supposons que vous stockiez au sein d'un **bucket Object Storage** dans une région 1-AZ, **100 Gio** de données Standard Object Storage pendant les **10 premiers jours** du mois d'octobre, et **100 Tio** (102 400 Go) de données Standard Object Storage pendant les **21 derniers jours** du mois. On imagine donc dans ce cas une évolution du stockage au sein de ce bucket au cours du mois.
 
 Une fois le mois d'octobre terminé, vous obtiendriez en Gigaoctet-heure : **Gigaoctet-heure total** = [100 Go x 10 jours x (24 heures/jour)] + [102 400 Go x 21 jours x (24 heures/jour)] = 24 000 + 51 609 600 = **51 633 600 Go-heures**.
 
@@ -74,7 +74,7 @@ Soit le coût du stockage mensuel (au prix de 0,00000972 EUR / Go-heure) : 73 72
 
 Dans une région 3-AZ, la tarification du stockage se fait par paliers, ou tranches de volumes de stockage. Consultez ces tarifs sur [cette page](/links/public-cloud/prices).
 
-Supposons que vous stockiez au sein d'un bucket **Object Storage - S3 Standard** dans une région 3-AZ, **100 Gio** de données pendant les **10 premiers jours** du mois d'octobre, et **100 Tio** (102 400 Go) de données pendant les **21 derniers jours** du mois. On imagine donc dans ce cas une évolution du stockage au sein de ce bucket au cours du mois.
+Supposons que vous stockiez au sein d'un bucket **Object Storage - Standard** dans une région 3-AZ, **100 Gio** de données pendant les **10 premiers jours** du mois d'octobre, et **100 Tio** (102 400 Go) de données pendant les **21 derniers jours** du mois. On imagine donc dans ce cas une évolution du stockage au sein de ce bucket au cours du mois.
 
 Une fois le mois d'octobre terminé, vous obtiendriez en Gigaoctet-heure : **Gigaoctet-heure total** = [100 Go x 10 jours x (24 heures/jour)] + [102 400 Go x 21 jours x (24 heures/jour)] = 24 000 + 51 609 600 = **51 633 600 Go-heures**
 
@@ -93,9 +93,9 @@ Soit le coût du stockage mensuel : 37 376 000 * 0.00001917 + (73 728 000 - 37 3
 
 ### Par quels API avoir accès aux offres de stockage ?
 
-Nous avons conçu les classes de stockage S3 pour qu’il soit **compatible avec l’API S3**, considérée comme une référence dans le marché du stockage d’objets. Vous pouvez donc utiliser Object Storage avec la plupart des outils de gestion de données via les endpoints définis par région.
+Nous avons conçu les classes de stockage Object Storage pour qu’elles soient **compatibles avec S3**, considérée comme une référence dans le marché du stockage d’objets. Vous pouvez donc utiliser Object Storage avec la plupart des outils de gestion de données via les endpoints définis par région.
 
-Munissez-vous de vos clés d'accès S3 et accédez en ligne de commande aux différentes classes de stockage par commandes AWS-CLI, s3cmd ou autres.
+Munissez-vous de vos clés d'accès Object Storage et accédez en ligne de commande aux différentes classes de stockage par commandes AWS-CLI, s3cmd ou autres.
 
 La liste des endpoints est disponible dans le guide « [Endpoints et géo-disponibilité de l’Object Storage](/pages/storage_and_backup/object_storage/s3_location) ».
 
@@ -105,7 +105,7 @@ Les endpoints Object Storage sont disponibles à travers le réseau public. La c
 
 ### Puis-je gérer plusieurs profils d'utilisateurs ?
 
-Il est possible de gérer plusieurs profils utilisateurs grâce aux S3 Policies. Consultez notre guide « [Gestion des identités et des accès](/pages/storage_and_backup/object_storage/s3_identity_and_access_management) ».
+Il est possible de gérer plusieurs profils utilisateurs grâce aux  Object Storage Policies. Consultez notre guide « [Gestion des identités et des accès](/pages/storage_and_backup/object_storage/s3_identity_and_access_management) ».
 
 ### Comment configurer les droits d'accès par objet ou par bucket ?
 
@@ -118,15 +118,15 @@ Il n'est pas encore possible de configurer des droits d'accès par bucket.
 Vous pouvez chiffrer vos données via deux méthodes:
 
 - **SSE-C (Server-Side Encryption with Customer Keys)** : vous pouvez fournir et gérer vos propres clés de chiffrement, vous offrant ainsi une maîtrise complète sur la sécurité de vos données. Cette option est particulièrement adaptée aux organisations ayant des besoins spécifiques en matière de conformité et de sécurité des données, puisqu'elle permet une gestion exclusive des clés de chiffrement.
-- **SSE-S3 (Server-Side Encryption with OVHcloud-Managed Keys)** : simplifie le processus de chiffrement en utilisant des clés gérées par OVHcloud. Cette méthode est idéale pour les clients qui souhaitent bénéficier d'une solution de chiffrement robuste sans les complexités liées à la gestion des clés.
+- **SSE-OMK (Server-Side Encryption with OVHcloud-Managed Keys)** : simplifie le processus de chiffrement en utilisant des clés gérées par OVHcloud. Cette méthode est idéale pour les clients qui souhaitent bénéficier d'une solution de chiffrement robuste sans les complexités liées à la gestion des clés.
 
-Lorsque vous chargez un objet, S3 Object Storage utilise la clé de chiffrement que vous fournissez pour appliquer le chiffrement AES-256 à vos données. Lorsque vous récupérez un objet, vous devez fournir la même clé de chiffrement dans le cadre de votre demande. S3 Object Storage vérifie d'abord que la clé de chiffrement que vous avez fournie correspond, puis déchiffre l'objet avant de vous renvoyer les données de l'objet.
+Lorsque vous chargez un objet, Object Storage utilise la clé de chiffrement que vous fournissez pour appliquer le chiffrement AES-256 à vos données. Lorsque vous récupérez un objet, vous devez fournir la même clé de chiffrement dans le cadre de votre demande. Object Storage vérifie d'abord que la clé de chiffrement que vous avez fournie correspond, puis déchiffre l'objet avant de vous renvoyer les données de l'objet.
 
-Retrouvez plus d'informations dans notre guide « [Chiffrez vos objets côté serveur avec SSE-C ou SSE-S3](/pages/storage_and_backup/object_storage/s3_encrypt_your_objects_with_sse_c) ».
+Retrouvez plus d'informations dans notre guide « [Chiffrez vos objets côté serveur avec SSE-C ou SSE-OMK](/pages/storage_and_backup/object_storage/s3_encrypt_your_objects_with_sse_c) ».
 
 ### Comment protéger mes sauvegardes ?
 
-Nous vous recommandons de protéger vos sauvegardes avec l'immutabilité, une fonction disponible via l'API S3 Object Lock. Cette fonction n'est pas disponible pour la classe de stockage Cold Archive.
+Nous vous recommandons de protéger vos sauvegardes avec l'immutabilité, une fonction disponible via l'API Object Lock. Cette fonction n'est pas disponible pour la classe de stockage Cold Archive.
 
 Le verrouillage d'objet est une fonctionnalité qui vous permet de stocker des objets à l'aide d'un modèle *WriteOnce, ReadMany (WORM)*, pouvant être utilisé dans des scénarios où il est impératif que les données ne soient pas modifiées ou supprimées après leur écriture.
 
@@ -167,7 +167,7 @@ La bande passante est mutualisée et non garantie. Nous offrons un maximum de 1 
 
 ### Comment est facturée la bande passante ?
 
-Les prix sont définis et affichés sur [le site OVHcloud](https://www.ovhcloud.com/fr/public-cloud/prices/#439).
+Les prix sont définis et affichés sur [le site OVHcloud](/links/public-cloud/prices-object-storage).
 
 Un serveur OVHcloud est un serveur opéré pour un service OVHcloud, par exemple un serveur de la gamme Bare Metal Cloud, Public Cloud ou Hosted Private Cloud (Serveur Dédié / VPS / Public Cloud / Hosted Private Cloud / So You Start / Kimsufi / xDSL).
 
@@ -178,6 +178,8 @@ Le trafic interne sortant est représenté par la donnée téléchargée d’un 
 Le trafic public entrant est représenté par la donnée téléchargée depuis Internet vers un serveur OVHcloud.
 
 Le trafic public sortant est représenté par la donnée téléchargée d’un serveur OVHcloud vers Internet.
+
+Des limitations de trafic/bande passante publique peuvent exister pour un service OVHcloud donné et/ou pour une région donnée. Nous vous recommandons de consulter la documentation spécifique au service OVHcloud que vous utilisez pour plus de détails.
 
 ## Disponibilité
 
@@ -193,10 +195,10 @@ OVHcloud s’engage à assurer les niveaux de service relatifs à la disponibili
 
 Vous pouvez choisir de synchroniser vos données d'une région à une autre en utilisant rClone. Consultez nos guides suivant la solution Object Storage choisie :
 
-- [Utiliser S3 Object Storage avec rClone](/pages/storage_and_backup/object_storage/s3_rclone)
+- [Utiliser Object Storage avec rClone](/pages/storage_and_backup/object_storage/s3_rclone)
 - [Utiliser Object Storage Swift avec rClone](/pages/storage_and_backup/object_storage/pcs_sync_rclone_object_storage)
 
-Vous pouvez également utiliser la fonction de réplication asynchrone disponible sur les buckets S3 object storage. Suivez [ce guide](/pages/storage_and_backup/object_storage/s3_asynchronous_replication) pour obtenir plus de détails sur cette fonctionnalité.
+Vous pouvez également utiliser la fonction de réplication asynchrone disponible sur les buckets Object Storage. Suivez [ce guide](/pages/storage_and_backup/object_storage/s3_asynchronous_replication) pour obtenir plus de détails sur cette fonctionnalité.
 
 ### Est-il possible de gérer les cycles de vie de la donnée ?
 
@@ -206,7 +208,7 @@ Les options de cycle de vie ne sont pas encore disponibles. Nous vous invitons �
 
 ### Comment uploader des volumes importants de données ?
 
-Pour téléverser de gros volumes de données, il est recommandé de paralléliser les connexions (*multithread upload*).Plusieurs requêtes sont en cours en parallèle et la bande passante est multipliée (1 Gbps par connexion). Vous trouverez plus de détail sur la méthodologie dans notre guide « [Optimisez l’envoi de vos fichiers vers S3 Object Storage](/pages/storage_and_backup/object_storage/s3_optimise_the_sending_of_your_files) ».
+Pour téléverser de gros volumes de données, il est recommandé de paralléliser les connexions (*multithread upload*). Plusieurs requêtes sont en cours en parallèle et la bande passante est multipliée (1 Gbps par connexion). Vous trouverez plus de détail sur la méthodologie dans notre guide « [Optimisez l’envoi de vos fichiers vers Object Storage](/pages/storage_and_backup/object_storage/s3_optimise_the_sending_of_your_files) ».
 
 Plus globalement, il existe différentes méthodes vous permettant de maximiser vos performances d'upload et de download sur notre Object Storage. Découvrez ces optimisations dans le guide suivant : [Object Storage - Optimiser les performances](/pages/storage_and_backup/object_storage/s3_performance_optimization).
 
@@ -224,3 +226,5 @@ La bande passante maximale est de 1 Gbps par connexion.
 ## Aller plus loin
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
+
+**\*** : S3 est une marque déposée appartenant à Amazon Technologies, Inc. Les services de OVHcloud ne sont pas sponsorisés, approuvés, ou affiliés de quelque manière que ce soit.

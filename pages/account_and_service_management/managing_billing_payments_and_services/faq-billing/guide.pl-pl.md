@@ -1,7 +1,7 @@
 ---
 title: FAQ dotyczący płatności i fakturowania
 excerpt: Znajdziesz najczęściej zadawane pytania dotyczące płatności i fakturowania
-updated: 2023-06-05
+updated: 2024-12-23
 ---
 
 ## Wprowadzenie
@@ -31,13 +31,13 @@ Jeśli nie odnowisz usługi przed tą datą, zostanie ona po prostu zawieszona, 
 
 #### Wskazówki i porady
 
-Sprawdź status Twoich usług i zarządzaj ich odnawianiem w rubryce `Moje usługi`{.action} w Twoim Panelu klienta.
+Sprawdź status Twoich usług i zarządzaj ich odnawianiem w rubryce `Moje rozwiązania i usługi`{.action} w Twoim Panelu klienta.
 Zaloguj się i odnawiaj ręcznie swoje usługi na stronie lien <https://eu.ovh.com/pl/cgi-bin/order/renew.cgi>
 Jeśli chcesz dowiedzieć się więcej na ten temat, zapraszamy do zapoznania się z treścią przewodnika: [Zarządzanie odnawianiem usług](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
 
 ### W jaki sposób włączyć automatyczne odnawianie usług?
 
-Przejdź do sekcji `Produkty i usługi`{.action} dostępnej na dashboardzie w Panelu klienta. Po wyszukaniu danej usługi kliknij trzy kropki, a następnie wybierz opcję `Włącz automatyczne odnowienie`{.action}. W ten sposób odnowienie automatyczne zostaje aktywowane w trybie domyślnym przy każdym zamawianiu danej usługi.
+Przejdź do sekcji `Moje rozwiązania i usługi`{.action} dostępnej na dashboardzie w Panelu klienta. Po wyszukaniu danej usługi kliknij trzy kropki, a następnie wybierz opcję `Włącz automatyczne odnowienie`{.action}. W ten sposób odnowienie automatyczne zostaje aktywowane w trybie domyślnym przy każdym zamawianiu danej usługi.
 
 #### Wskazówki i porady
 
@@ -46,7 +46,7 @@ Jeśli chcesz dowiedzieć się więcej na ten temat, zapraszamy do zapoznania si
 
 ### W jaki sposób wyłączyć automatyczne odnawianie?
 
-Na dashboardzie w Panelu klienta OVHcloud kliknij skrót `Produkty i usługi`{.action}. Po wyszukaniu danej usługi kliknij trzy kropki, aby wyświetlić więcej opcji, po czym wybierz opcję `Konfiguracja odnowienia`{.action}. Następnie możesz wybrać tryb ręczny. Tryb ten dostępny jest tylko dla niektórych usług, takich jak domeny, hosting, VPS i serwery dedykowane.
+Na dashboardzie w Panelu klienta OVHcloud kliknij skrót `Moje rozwiązania i usługi`{.action}. Po wyszukaniu danej usługi kliknij trzy kropki, aby wyświetlić więcej opcji, po czym wybierz opcję `Konfiguracja odnowienia`{.action}. Następnie możesz wybrać tryb ręczny. Tryb ten dostępny jest tylko dla niektórych usług, takich jak domeny, hosting, VPS i serwery dedykowane.
 
 Aby zrezygnować z usługi, sprawdź [W jaki sposób zrezygnować z usługi?](#cancelservice)
 
@@ -93,13 +93,13 @@ Jeśli Twoje konto prepaid OVHcloud ma saldo dodatnie, będzie ono używane domy
 
 ### Jaka jest data kolejnej płatności?
 
-Daty odnowienia usług znajdziesz w sekcji `Produkty i usługi`{.action} dostępnej na dashboardzie w Panelu klienta.
+Daty odnowienia usług znajdziesz w sekcji `Moje rozwiązania i usługi`{.action} dostępnej na dashboardzie w Panelu klienta.
 
 Informujemy, że rozwiązania z opcją automatycznego odnowienia są wznawiane pierwszego dnia miesiąca. Niemniej jednak, częstotliwość ich odnawiania może być różna w zależności od Twoich usług.
 
 #### Wskazówki i porady
 
-Możesz zmienić częstotliwość odnawiania rozwiązań, udając się do sekcji `Moje usługi`{.action} w Panelu klienta.
+Możesz zmienić częstotliwość odnawiania rozwiązań, udając się do sekcji `Moje rozwiązania i usługi`{.action} w Panelu klienta.
 Jeśli chcesz dowiedzieć się więcej na ten temat, zapraszamy do zapoznania się z treścią przewodnika: [Zarządzanie odnawianiem usług](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
 
 ### Który z moich sposobów płatności zostanie obciążony?
@@ -145,7 +145,7 @@ Płatności, których dokonujesz na naszej stronie, jak również automatyczne p
 
 ### W jaki sposób zrezygnować z usługi? <a name="cancelservice"></a>
 
-W przypadku rozwiązań takich jak domeny, hosting, serwery dedykowane i VPS, przejdź do sekcji `Produkty i usługi`{.action} w Panelu klienta OVHcloud. Po wyszukaniu danej usługi kliknij trzy kropki, a następnie wybierz opcję `Rezygnacja z usługi w dniu wygaśnięcia`{.action}. Jeśli dyspozycja została już zrealizowana, pojawi się komunikat: `Anuluj rezygnację`{.action}.
+W przypadku rozwiązań takich jak domeny, hosting, serwery dedykowane i VPS, przejdź do sekcji `Moje rozwiązania i usługi`{.action} w Panelu klienta OVHcloud. Po wyszukaniu danej usługi kliknij trzy kropki, a następnie wybierz opcję `Rezygnuję z usługi`{.action}. Jeśli dyspozycja została już zrealizowana, pojawi się komunikat: `Anuluj rezygnację z usługi`{.action}.
 
 Rezygnacja z usługi będzie skuteczna, gdy skończy się okres ważności usługi lub umowy. Możesz złożyć dyspozycję lub ją anulować do 24 godzin przed datą wygaśnięcia.
 

@@ -23,7 +23,7 @@ O primeiro passo é a criação de um container que irá agrupar os seus ficheir
 
 ## Requisitos
 
-- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Estar ligado à [Área de Cliente OVHcloud](/links/manager){.external}.
 
 Se utilizar o Horizon:
 
@@ -33,7 +33,7 @@ Se utilizar o Horizon:
 
 ### Criação de um container Object Storage a partir da Área de Cliente OVHcloud <a name="controlpanel"></a>
 
-Ligue-se à sua [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, aceda à secção `Public Cloud`{.action} e selecione o projeto Public Cloud em causa. A seguir, clique em `Object Storage`{.action} na barra de navegação à esquerda, na secção `Storage`.
+Ligue-se à sua [Área de Cliente](/links/manager){.external}, aceda à secção `Public Cloud`{.action} e selecione o projeto Public Cloud em causa. A seguir, clique em `Object Storage`{.action} na barra de navegação à esquerda, na secção `Storage`.
 
 A seguir, clique em `Criar um container de objetos`{.action}.
 
@@ -118,6 +118,6 @@ Também pode vê-lo na Área de Cliente OVHcloud:
 
 ## Saiba mais
 
-Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](https://www.ovhcloud.com/pt/professional-services/) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
+Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](/links/professional-services) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
 
 Fale com a nossa comunidade de utilizadores: [https://community.ovh.com](https://community.ovh.com/en/).

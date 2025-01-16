@@ -1,8 +1,22 @@
 ---
-title: 'Creating and configuring an additional disk on an instance'
-excerpt: 'Find out how to attach a new volume to your Public Cloud instance'
-updated: 2023-10-16
+title: Creating and configuring an additional disk on an instance
+excerpt: Find out how to attach a new volume to your Public Cloud instance
+updated: 2024-12-24
 ---
+
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objective
 
@@ -12,13 +26,14 @@ This can be useful in cases where:
 - You want to increase your storage capacity without changing the instance model.
 - You want to have a highly available, high-performance storage.
 - You want to move your storage as well as your data to another instance.
+- You want to prepare the environment if you want to use [Terraform](/pages/public_cloud/compute/how_to_use_terraform).
 
 **This guide explains how to create an additional disk and configure it on your instance.**
 
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](/links/manager)
-- A [Public Cloud Instance](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account
+- A [Public Cloud Instance](/pages/public_cloud/compute/public-cloud-first-steps) in your OVHcloud account
 - Administrative (sudo) access to your instance via SSH (Linux) or RDP (Windows)
 
 > [!warning]
@@ -29,6 +44,126 @@ This can be useful in cases where:
 ## Instructions
 
 ### Attaching a new volume
+
+> [!tabs]
+> **Via the OVHcloud Control Panel**
+>>
+>> Log in to the [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project. Then open `Block Storage`{.action} in the left-hand menu.
+>>
+>> In this section, click on the button `Create a volume`{.action}.
+>>
+>> ![select project](images/avolume01.png){.thumbnail}
+>>
+>> Follow the configuration steps in order to select options for location, disk type and disk capacity. Then enter a name for the volume and confirm by clicking on `Create the volume`{.action}.
+>>
+>> ![create disk](images/avolume02.png){.thumbnail}
+>>
+>> The new disk will now be displayed in the Control Panel.
+>>
+>> ![configure disk](images/avolume03.png){.thumbnail}
+>>
+>> To the right of the volume, click on the `...`{.action} button, then select `Attach to instance`{.action}.
+>>
+>> ![attach disk 01](images/avolume04.png){.thumbnail}
+>>
+>> In the popup window, choose an instance from the list and click on `Confirm`{.action} to attach the disk.
+>>
+>> ![attach disk 02](images/avolume05.png){.thumbnail}
+>>
+>> The process of attaching the disk to your instance will now begin. This may take a few minutes to complete.
+>>
+>> > [!warning]
+>> > Make sure to not leave the current page in your OVHcloud Control Panel while the disk is being attached. This might interrupt the process.
+>> >
+>>
+> **Via Terraform**
+>>
+>> To create a simple block storage volume, you need 3 elements:
+>>
+>> * The name of the volume
+>> * The region
+>> * The size of the volume in GB
+>>
+>> In our example, we will create a block storage in the **GRA11** region with a size of **10 GB**. Add the following lines to a file named *simple_blockstorage.tf*:
+>>
+>> ```python
+>> # Creation of a block storage volume
+>> resource "openstack_blockstorage_volume_v3" "terraform_blockstorage" {
+>> name   = "terraform_blockstorage" # Name of the block storage volume
+>> size   = 10                       # Volume size
+>> region = "GRA11"                  # Region where the volume must be created
+>> }
+>> ```
+>>
+>> Then we will attach it to the target instance.
+>>
+>> > [!warning]
+>> > The instance and the volume must be in the same region.
+>> >
+>>
+>> Add the following lines below the previous ones:
+>>
+>> ```python
+>> # Attach the volume to the instance
+>> resource "openstack_compute_volume_attach_v2" "volume_attach" {
+>>   instance_id = "<your_instance_id>"
+>>   volume_id   = openstack_blockstorage_volume_v3.terraform_volume.id
+>> }
+>> ```
+>>
+>> You can create your block storage volume and attach it to the desired instance by entering the following command:
+>>
+>> ```console
+>> terraform apply
+>> ```
+>>
+>> The output should look like this:
+>> 
+>> ```console
+>> $ terraform apply
+>> Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+>>   + create
+>>
+>> Terraform will perform the following actions:
+>>
+>>   # openstack_blockstorage_volume_v3.terraform_blockstorage will be created
+>>   + resource "openstack_blockstorage_volume_v3" "terraform_blockstorage" {
+>>       + attachment        = (known after apply)
+>>       + availability_zone = (known after apply)
+>>       + id                = (known after apply)
+>>       + metadata          = (known after apply)
+>>       + name              = "terraform_blockstorage"
+>>       + region            = "GRA11"
+>>       + size              = 10
+>>       + volume_type       = (known after apply)
+>>     }
+>>
+>>   # openstack_compute_volume_attach_v2.volume_attach will be created
+>>   + resource "openstack_compute_volume_attach_v2" "volume_attach" {
+>>       + device      = (known after apply)
+>>       + id          = (known after apply)
+>>       + instance_id = "11cc1279-xxxx-xxxx-xxxx-3ace4c954780"
+>>       + region      = (known after apply)
+>>       + volume_id   = (known after apply)
+>>     }
+>>
+>> Plan: 2 to add, 0 to change, 0 to destroy.
+>>
+>> Do you want to perform these actions in workspace "test_terraform"?
+>>   Terraform will perform the actions described above.
+>>   Only 'yes' will be accepted to approve.
+>>
+>>   Enter a value: yes
+>>
+>> openstack_blockstorage_volume_v3.terraform_blockstorage: Creating...
+>> openstack_blockstorage_volume_v3.terraform_blockstorage: Still creating... [10s elapsed]
+>> openstack_blockstorage_volume_v3.terraform_blockstorage: Creation complete after 12s [id=daf3a86e-xxxx-xxxx-xxxx-ac7b6ffbb806]
+>> openstack_compute_volume_attach_v2.volume_attach: Creating...
+>> openstack_compute_volume_attach_v2.volume_attach: Still creating... [10s elapsed]
+>> openstack_compute_volume_attach_v2.volume_attach: Creation complete after 14s [id=11cc1279-xxxx-xxxx-xxxx-3ace4c954780/daf3a86e-xxxx-xxxx-xxxx-ac7b6ffbb806]
+>>
+>> Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
+>> ```
 
 Log in to the [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project. Then open `Block Storage`{.action} in the left-hand menu.
 
@@ -351,77 +486,162 @@ If you wish to detach a volume from your instance, the best practice is to unmou
 > An error message may appear if you have software or processes running on the additional disk. In this case, it is recommended to stop all processes before continuing.
 >
 
-#### On Linux
+Here's how to **unmount the volume** from the operating system before detaching it from the instance :
 
-Establish an [SSH connection to your instance](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance), then use the command below to list the attached disks.
+> [!tabs]
+> **On Linux**
+>>
+>> Establish an [SSH connection to your instance](/pages/public_cloud/compute/public-cloud-first-steps#connect-instance), then use the command below to list the attached disks.
+>>
+>> ```bash
+>> lsblk
+>> ```
+>>
+>> ```console
+>> NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
+>> vda 254:0 0 10G 0 disk
+>> └─vda1 254:1 0 10G 0 part /
+>> vdb       8:0    0   10G  0 disk
+>> └─vdb1    8:1    0   10G  0 part /mnt/disk
+>> ```
+>>
+>> Unmount the partition using the command below:
+>>
+>> ```bash
+>> sudo umount /dev/vdb1
+>> ```
+>>
+>> Remove the device ID from the fstab to complete the unmount process, if this is not done, the partition will be mounted right back after a reboot.
+>>
+>> ```bash
+>> sudo nano /etc/fstab
+>> ```
+>>
+>> Save and exit the editor.
+>>
+> **On Windows**
+>>
+>> Establish a remote desktop (RDP) connection to your Windows instance.
+>>
+>> Once logged in, right-click on the `Start Menu`{.action} button and open `Disk Management`{.action}.
+>>
+>> ![disk management](images/start-menu.png){.thumbnail}
+>>
+>> Right click on the volume you wish to unmount and select `Change Drive Letter and Paths...`{.action}.
+>>
+>> ![unmount disk](images/unmountdisk.png){.thumbnail}
+>>
+>> Click on `Remove`{.action} to remove the drive.
+>>
+>> ![remove disk](images/changedriveletter.png){.thumbnail}
+>>
+>> Next, click on `Yes`{.action} to confirm the disk removal.
+>>
+>> ![confirm remove disk](images/confirmunmounting.png){.thumbnail}
+>>
+>> When finished, you can close the Disk Management window.
 
-```bash
-lsblk
-```
+Finally, we will detach the volume from the instance:
 
-```console
-NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
-vda 254:0 0 10G 0 disk
-└─vda1 254:1 0 10G 0 part /
-vdb       8:0    0   10G  0 disk
-└─vdb1    8:1    0   10G  0 part /mnt/disk
-```
+> [!tabs]
+> **Via the OVHcloud Control Panel**
+>>
+>> Go to the `Public Cloud`{.action} section of your OVHcloud Control Panel and click on `Block Storage`{.action} in the left-hand menu under **Storage**.
+>>
+>> Click the `...`{.action} button next to the corresponding volume and select `Detach from instance`{.action}.
+>>
+>> ![detach disk](images/detachinstance.png){.thumbnail}
+>>
+>> Click on `Confirm`{.action} in the pop up window to start the process.
+>>
+>> ![confirm disk detach](images/confirminstancedetach.png){.thumbnail}
+>>
+> **Via Terraform**
+>> 
+>> Start by deleting the lines previously created in your Terraform file: 
+>>
+>> ```python
+>> # Attach the volume to the instance
+>> resource "openstack_compute_volume_attach_v2" "volume_attach" {
+>>   instance_id = "<your_instance_id>"
+>>   volume_id   = openstack_blockstorage_volume_v3.terraform_volume.id
+>> }
+>> ```
+>>
+>> Enter the following command to check whether the correct resource will be deleted:
+>>
+>> ```console
+>> terraform plan
+>> ```
+>>
+>> The output should look like this:
+>>
+>> ```console
+>> $ terraform plan
+>> openstack_compute_volume_attach_v2.va_1: Refreshing state... [id=11cc1279-xxxx-xxxx-xxxx-3ace4c954780/daf3a86e-xxxx-xxxx-xxxx-ac7b6ffbb806]
+>> openstack_blockstorage_volume_v3.terraform_volume: Refreshing state... [id=daf3a86e-xxxx-xxxx-xxxx-ac7b6ffbb806]
+>>
+>> Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+>>   - destroy
+>>
+>> Terraform will perform the following actions:
+>>
+>>   # openstack_compute_volume_attach_v2.va_1 will be destroyed
+>>   # (because openstack_compute_volume_attach_v2.va_1 is not in configuration)
+>>   - resource "openstack_compute_volume_attach_v2" "va_1" {
+>>       - device      = "/dev/sdb" -> null
+>>       - id          = "11cc1279-xxxx-xxxx-xxxx-3ace4c954780/daf3a86e-xxxx-xxxx-xxxx-ac7b6ffbb806" -> null
+>>       - instance_id = "11cc1279-xxxx-xxxx-xxxx-3ace4c954780" -> null
+>>       - region      = "GRA11" -> null
+>>       - volume_id   = "daf3a86e-xxxx-xxxx-xxxx-ac7b6ffbb806" -> null
+>>     }
+>> 
+>> Plan: 0 to add, 0 to change, 1 to destroy.
+>> ```
+>>
+>> Then apply the changes by entering this command:
+>>
+>> ```console
+>> terraform apply
+>> ```
+>>
+>> The output should look like this:
+>>
+>> ```console
+>> $ terraform apply
+>> openstack_compute_volume_attach_v2.va_1: Refreshing state... [id=11cc1279-xxxx-xxxx-xxxx-3ace4c954780/daf3a86e-xxxx-xxxx-xxxx-ac7b6ffbb806]
+>> openstack_blockstorage_volume_v3.terraform_volume: Refreshing state... [id=daf3a86e-xxxx-xxxx-xxxx-ac7b6ffbb806]
+>>
+>> Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+>>   - destroy
+>>
+>> Terraform will perform the following actions:
+>>
+>>   # openstack_compute_volume_attach_v2.va_1 will be destroyed
+>>   # (because openstack_compute_volume_attach_v2.va_1 is not in configuration)
+>>   - resource "openstack_compute_volume_attach_v2" "va_1" {
+>>       - device      = "/dev/sdb" -> null
+>>       - id          = "11cc1279-xxxx-xxxx-xxxx-3ace4c954780/daf3a86e-xxxx-xxxx-xxxx-ac7b6ffbb806" -> null
+>>       - instance_id = "11cc1279-xxxx-xxxx-xxxx-3ace4c954780" -> null
+>>       - region      = "GRA11" -> null
+>>       - volume_id   = "daf3a86e-xxxx-xxxx-xxxx-ac7b6ffbb806" -> null
+>>     }
+>>
+>> Plan: 0 to add, 0 to change, 1 to destroy.
+>> 
+>> Do you want to perform these actions in workspace "test_terraform"?
+>>   Terraform will perform the actions described above.
+>>   Only 'yes' will be accepted to approve.
+>>
+>>   Enter a value: yes
+>>
+>> openstack_compute_volume_attach_v2.va_1: Destroying... [id=11cc1279-xxxx-xxxx-xxxx-3ace4c954780/daf3a86e-xxxx-xxxx-xxxx-ac7b6ffbb806]
+>> openstack_compute_volume_attach_v2.va_1: Still destroying... [id=11cc1279-xxxx-xxxx-xxxx-3ace4c954780/daf3a86e-xxxx-xxxx-xxxx-ac7b6ffbb806, 10s elapsed]
+>> openstack_compute_volume_attach_v2.va_1: Destruction complete after 17s
+>>
+>> Apply complete! Resources: 0 added, 0 changed, 1 destroyed.
+>> ```
 
-Unmount the partition using the command below:
-
-```bash
-sudo umount /dev/vdb1
-```
-
-Remove the device ID from the fstab to complete the unmount process, if this is not done, the partition will be mounted right back after a reboot.
-
-```bash
-sudo nano /etc/fstab
-```
-
-Save and exit the editor.
-
-Go to the `Public Cloud`{.action} section of your OVHcloud Control Panel and click on `Block Storage`{.action} in the left-hand menu under **Storage**.
-
-Click on the `...`{.action} next to the corresponding volume and select `Detach from instance`{.action}.
-
-![detach disk](images/detachinstance.png){.thumbnail}
-
-Click on `Confirm`{.action} in the pop up window to start the process.
-
-![confirm disk detach](images/confirminstancedetach.png){.thumbnail}
-
-#### On Windows
-
-Establish a remote desktop (RDP) connection to your Windows instance.
-
-Once logged in, right-click on the `Start Menu`{.action} button and open `Disk Management`{.action}.
-
-![disk management](images/start-menu.png){.thumbnail}
-
-Right click on the volume you wish to unmount and select `Change Drive Letter and Paths...`{.action}.
-
-![unmount disk](images/unmountdisk.png){.thumbnail}
-
-Click on `Remove`{.action} to remove the drive.
-
-![remove disk](images/changedriveletter.png){.thumbnail}
-
-Next, click on `Yes`{.action} to confirm the disk removal.
-
-![confirm remove disk](images/confirmunmounting.png){.thumbnail}
-
-When finished, you can close the Disk Management window.
-
-Go to the `Public Cloud`{.action} section of your OVHcloud Control Panel and click on `Block Storage`{.action} in the left-hand menu under **Storage**.
-
-Click on the `...`{.action} next to the corresponding volume and select `Detach from instance`{.action}.
-
-![detach disk](images/detachinstance.png){.thumbnail}
-
-Click on `Confirm`{.action} in the pop up window to start the process.
-
-![confirm disk detach](images/confirminstancedetach.png){.thumbnail}
 
 ## Go further
 

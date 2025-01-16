@@ -15,7 +15,7 @@ updated: 2024-07-08
 
 - A [Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](/links/manager)
-- An [S3 user](/pages/storage_and_backup/object_storage/s3_identity_and_access_management) already created
+- An [Object Storage user](/pages/storage_and_backup/object_storage/s3_identity_and_access_management) already created
 - [AWS CLI installed and configured](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage)
 
 ## Instructions
@@ -49,7 +49,7 @@ Versioning adds a layer of protection to your data by keeping multiple versions 
 
 #### Version IDs
 
-Each object has a unique version ID, whether or not S3 Versioning is enabled. In a versioning-enabled bucket, this version ID distinguishes one version from other versions of the same object.
+Each object has a unique version ID, whether or not Versioning is enabled. In a versioning-enabled bucket, this version ID distinguishes one version from other versions of the same object.
 
 - **Current version:** The most recently created version of an object (with the most recent `LastModifiedDate` metadata value).
 - **Noncurrent versions:** Versions previously created (with their own unique version IDs).
@@ -84,7 +84,7 @@ When versioning is enabled:
 
 #### Using the AWS CLI
 
-To enable versioning on an S3 Object Storage bucket, use the following command:
+To enable versioning on an Object Storage bucket, use the following command:
 
 ```sh
 aws s3api put-bucket-versioning --bucket my-bucket --versioning-configuration Status=Enabled
@@ -118,7 +118,7 @@ Suspending versioning stops new objects from receiving a version ID. Existing ob
 
 ### Important Considerations
 
-- **Storage Costs:** Each version of an object is stored as a full object, incurring standard S3 storage costs.
+- **Storage Costs:** Each version of an object is stored as a full object, incurring Standard Object Storage costs.
 - **Application:** When versioning is enabled, it applies to all objects in the bucket, including those added before versioning was enabled.
 - **Suspension:** Suspending versioning does not delete existing versions, it only stops new versions from being created.
 - **Permissions:** Only the bucket owner can enable or suspend versioning.

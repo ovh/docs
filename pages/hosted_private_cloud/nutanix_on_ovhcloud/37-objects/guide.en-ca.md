@@ -6,7 +6,7 @@ updated: 2023-03-02
 
 ## Objective
 
-Nutanix Objects implements an **Object Storage** S3-compatible solution on your Nutanix cluster, using Prism Central. You can read the description on [this link](https://www.nutanix.com/content/dam/nutanix/resources/datasheets/ds-objects.pdf).
+Nutanix Objects implements an **Object Storage** S3* compatible solution on your Nutanix cluster, using Prism Central. You can read the description on [this link](https://www.nutanix.com/content/dam/nutanix/resources/datasheets/ds-objects.pdf).
 
 **This guide will show you how to set up Nutanix Objects on your cluster.**
 
@@ -259,3 +259,5 @@ If you need training or technical assistance to implement our solutions, contact
 Join our community of users on <https://community.ovh.com/en/>.
 
 [Nutanix Objects documentation](https://portal.nutanix.com/page/documents/details?targetId=Objects-v3_6:top-intro-c.html).
+
+**\***: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

@@ -1,7 +1,7 @@
 ---
 title: "Installer l'image OverTheBox sur votre appareil"
 excerpt: "Découvrez comment installer manuellement une image OverTheBox sur votre appareil"
-updated: 2024-05-29
+updated: 2024-12-23
 ---
 
 ## Objectif
@@ -17,7 +17,7 @@ Installer l'image OverTheBox sur votre propre matériel est une étape cruciale 
 
 ## En pratique
 
-### Télécharger la dernière image du logiciel OverTheBox
+### Télécharger l'image du logiciel OverTheBox
 
 Pour installer manuellement le logiciel OverTheBox, vous devez télécharger l'image sur votre ordinateur.
 
@@ -27,35 +27,37 @@ Pour installer manuellement le logiciel OverTheBox, vous devez télécharger l'i
 
 Si vous cherchez une version particulière, d'autres options sont disponible sur le site [http://downloads.overthebox.net/](http://downloads.overthebox.net/).
 
-### Mettre à jour un appareil OverTheBox
+### Mise à jour depuis l'interface web locale
 
-> [!warning]
+> [!primary]
 >
-> Cette méthode est recommandée pour les appareils sous une version inférieure à v0.6.33 ou qui ne contactent pas le serveur de provisioning.
+> Cette méthode peut être utilisée pour revenir sur une version antérieure. Il faudra impérativement décocher la case `keep settings`{.action}.
 >
 
-Si une version du logiciel OverTheBox est déjà installée sur votre appareil, vous pouvez simplement le mettre à jour depuis l'interface web locale.
+Si une version du logiciel OverTheBox est déjà installée sur votre appareil, vous pouvez simplement la mettre à jour depuis l'interface web locale.
 
 - Rendez-vous sur [http://overthebox.ovh](http://overthebox.ovh){.external} ou [http://192.168.100.1](http://192.168.100.1).
-- Cliquez sur `System`{.action}.
-- Cliquez sur `Backup/Flash Firmware`{.action}.
+- Rendez-vous dans l'onglet `System > Backup/Flash Firmware`{.action}.
+- Cliquez sur le bouton `Flash image...`{.action}.
 
-![overthebox](images/luci15-menu.png){.thumbnail}
+![overthebox](images/step1-luci-flash-1-2024.png){.thumbnail}
 
-Ensuite, dans la section **Flash new firmware image** :
+- Cliquez sur `Browse...`{.action}.
+- Choisissez le fichier d'image que vous venez de télécharger.
+- Puis cliquez sur `Upload`{.action}.
 
-- Cliquez sur `Parcourir`{.action}.
-- Choisissez le fichier image que vous venez de télécharger.
-- Laissez la case **"Keep settings"** cochée si vous souhaitez conserver vos configurations.
-- Cliquez sur `Flash image`{.action}.
+![overthebox](images/step1-luci-flash-2-2024.png){.thumbnail}
 
-![overthebox](images/luci15-flash.png){.thumbnail}
+- Si vous souhaitez conserver vos configurations cochez la case `Keep settings`{.action}. Il est toutefois recommandé de la laisser décochée pour éviter d'éventuels conflits de configuration entre différentes versions.
+- Cliquez sur `Continue`{.action}.
+
+![overthebox](images/step1-luci-flash-3-2024.png){.thumbnail}
 
 - Attendez quelques minutes afin qu'**OverTheBox** soit de nouveau opérationnelle.
 
 > [!success]
 >
-> Votre OverTheBox est maintenant mise à jour, votre configuration a été réappliquée automatiquement si la case **Keep settings** n'a pas été décochée.
+> Votre OverTheBox est maintenant mise à jour, votre configuration a été réappliquée automatiquement si la case `Keep settings`{.action} n'a pas été décochée.
 >
 
 ### Installation automatique à l'aide d'une clé USB

@@ -1,7 +1,7 @@
 ---
-title: "Hosting WWW: moja baza danych jest przeciążona, co robić?"
+title: "Hosting WWW - Moja baza danych jest przeciążona, co robić?"
 excerpt: "Dowiedz się, jak działać, gdy baza danych jest przeciążona"
-updated: 2023-12-13
+updated: 2024-12-17
 ---
 
 ## Wprowadzenie
@@ -49,6 +49,7 @@ Pierwszy etap polega na zidentyfikowaniu obszernej(-ych) tabeli(-ych) w Twojej b
 > [phpMyAdmin](https://www.phpmyadmin.net/){.external} jest dostępny we wszystkich współdzielonych bazach danych OVHcloud.
 > Ta aplikacja do zarządzania bazami danych ułatwia wykonywanie czynności ręcznych, które możesz wykonać za pomocą bazy danych.
 >
+> Jeśli Twoja baza danych znajduje się w rozwiązaniu [Web Cloud Databases](/links/web/databases), zapoznaj się z naszym przewodnikiem "[Web Cloud Databases - Logowanie do bazy danych](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server)", następnie przejdź bezpośrednio do [etap 1.2](#step1.2) niniejszego przewodnika.
 
 #### 1.1 - Logowanie do bazy danych przez phpMyAdmin
 
@@ -68,7 +69,7 @@ W zakładce `Bazy danych`{.action} kliknij przycisk `...`{.action} po prawej str
 
 Wprowadź dane dostępowe do Twojej bazy danych, a następnie kliknij `Login`{.action}.
 
-#### 1.2 - Wyszukaj największe tabele
+#### 1.2 - Wyszukaj największe tabele <a name="step1.2"></a>
 
 > [!alert]
 >
@@ -195,6 +196,80 @@ DROP TABLE `table_1`
 ```
 
 > W tym przykładzie polecenie usuwa tabelę **table_1** i wszystkie linie, które ona zawiera.
+
+### Etap 4: Przejście bazy danych do stanu "READ ONLY" (tylko do odczytu)
+
+Nasze roboty sprawdzające limity regularnie korzystają z naszych infrastruktur.
+Jeśli stwierdzą, że Twoja baza danych nie jest już aktywna **overquota**, automatycznie usuną status "READ ONLY" (tylko do odczytu).
+Po wykonaniu niezbędnych operacji na Twojej bazie danych, wystarczy poczekać, aż nasze roboty przejdą na Twoje usługi.
+
+Możesz jednak wymusić ich przejście na Twoje usługi, aby przyspieszyć proces. W tym celu poproś nasze roboty o ponowne obliczenie rozmiaru Twojej usługi/bazy danych.
+
+#### Przeliczenie rozmiaru bazy danych zawartej w ofercie hostingu
+
+Kliknij poniższe zakładki, aby wyświetlić kolejne **5** kroki.
+
+> [!tabs]
+> **Etap 1**
+>>
+>> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
+>>
+>> ![recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etap 2**
+>>
+>> Kliknij menu rozwijane `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+>>
+>> ![recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/web-hosting-selection.png){.thumbnail}
+>>
+> **Etap 3**
+>>
+>> Na stronie, która się wyświetli kliknij zakładkę `Bazy danych`{.action}.
+>>
+>> ![recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/databases.png){.thumbnail}
+>>
+> **Etap 4**
+>>
+>> Na nowej stronie pojawi się tabela zawierająca utworzone bazy danych. Po prawej stronie wybranej bazy danych kliknij przycisk `...`{.action}, a następnie `Przelicz rozmiar bazy`{.action}.
+>>
+>> ![recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota.png){.thumbnail}
+>>
+> **Etap 5**
+>>
+>> W oknie, które się wyświetli kliknij bezpośrednio przycisk `Zatwierdź`{.action}.
+>>
+>> ![recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota-validation.png){.thumbnail}
+>>
+>> Po rozpoczęciu może to potrwać kilka minut. Po jej zakończeniu status "READ ONLY" bazy danych zostanie utracony.
+>> Twoja baza danych znów stanie się w pełni operacyjna.
+>>
+
+#### Przeliczenie rozmiaru bazy danych hostowanej w rozwiązaniu Web Cloud Databases
+
+Kliknij poniższe zakładki, aby wyświetlić kolejne kroki **3**.
+
+> [!tabs]
+> **Etap 1**
+>>
+>> Zaloguj się do [Panelu klienta OVHcloud](/links/manager) i przejdź do sekcji `Web Cloud`{.action}.
+>>
+>> ![recalculate quota Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Etap 2**
+>>
+>> Kliknij menu rozwijane `Web Cloud Databases`{.action}, następnie wybierz odpowiednie rozwiązanie Web Cloud Databases.
+>>
+>> ![recalculate quota Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/wcdb-server-selection.png){.thumbnail}
+>>
+> **Etap 3**
+>>
+>> W ramce **Informacje ogólne** znajduje się pozycja **Przestrzeń wykorzystana**. Kliknij przycisk `...`{.action} po prawej stronie, a następnie przycisk `Odśwież limit wielkości bazy danych`{.action}.
+>>
+>> ![recalculate quota Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/refresh-your-database-quota.png){.thumbnail}
+>>
+>> Po rozpoczęciu może to potrwać kilka minut. Po jej zakończeniu status "READ ONLY" bazy danych zostanie utracony.
+>> Twoja baza danych znów stanie się w pełni operacyjna.
+>>
 
 ## Sprawdź również <a name="go-further"></a>
 

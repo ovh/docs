@@ -5,7 +5,7 @@ updated: 2022-03-23
 
 ## Objectif
 
-Ce guide énumère les fonctionnalités principales d'Amazon S3 supportées.
+Ce guide énumère les fonctionnalités principales d'Amazon S3 **\*** supportées.
 
 ### Matrice de comparaison des API REST S3/Swift
 
@@ -46,6 +46,8 @@ Ce guide énumère les fonctionnalités principales d'Amazon S3 supportées.
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
+
+**\***: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

@@ -75,7 +75,7 @@ Le risorse Public Cloud possono essere manipolate in diversi modi. Sia che si sc
 
 - Per scoprire i prodotti, lo Spazio Cliente ti accompagna nella creazione di risorse, scegliendo le performance del prodotto, la sua localizzazione, la personalizzazione che desideri o altre impostazioni come la sua modalità di fatturazione.
 
-- Per automatizzare deploy e industrializzare le architetture, puoi utilizzare gli strumenti di mercato anche collegandoti direttamente alle API standard come l'API S3, le API di OpenStack o anche Kubernetes.
+- Per automatizzare deploy e industrializzare le architetture, puoi utilizzare gli strumenti di mercato anche collegandoti direttamente alle API standard come l'API Amazon S3, le API di OpenStack o anche Kubernetes.
 
 ### Avvio: presa in mano
 
@@ -114,7 +114,7 @@ Forse sarete chiamati a gestire la questione delle quote.
 È possibile che sia necessario gestire diversi utenti che interverranno sul tuo progetto.
 <br>Puoi scegliere tra due opzioni:
 
-- Per utilizzare le API OpenStack o S3 o l'interfaccia Horizon, è necessario [creare degli utenti](/pages/public_cloud/compute/create_and_delete_a_user). Gli utenti possono avere diritti limitati per proteggere i perimetri di azione.
+- Per utilizzare le API OpenStack o Amazon S3 o l'interfaccia Horizon, è necessario [creare degli utenti](/pages/public_cloud/compute/create_and_delete_a_user). Gli utenti possono avere diritti limitati per proteggere i perimetri di azione.
 - Se non hai bisogno di accedere alle API o a Horizon, puoi [associare al tuo progetto un altro account cliente OVHcloud](/pages/public_cloud/compute/delegate_projects).
 
 ## Per saperne di più <a name="gofurther"></a>
@@ -126,7 +126,6 @@ Ecco alcune risorse generali che ti aiuteranno nel tuo lancio sul Public Cloud:
 |[FAQ](/pages/public_cloud/compute/faq_pci)|Le domande più frequenti su Public Cloud|
 |[Lessico](/pages/public_cloud/compute/introduction_about_instances)|I concetti e le definizioni di cui avete bisogno per progredire.|
 |[Disponibilità dei servizi per localizzazione](https://www.ovhcloud.com/it/public-cloud/regions-availability/)|Le tabelle di disponibilità dei servizi attraverso le diverse localizzazioni.|
-|[Changelog delle immagini](/pages/public_cloud/compute/image_changelog)|Modifiche alle immagini di sistema disponibili al pubblico.|
 
 Nella pratica, ecco alcune guide che ti aiuteranno ad avviare:
 

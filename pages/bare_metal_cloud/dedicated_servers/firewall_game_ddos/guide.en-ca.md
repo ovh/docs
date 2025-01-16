@@ -130,7 +130,7 @@ Also, we strongly recommend to set the rule **"Default policy = DROP"** on every
 #### Rust
 
 - **Rust** is supported with a dedicated protection profile on all generations of Bare Metal Game servers. Please note that we updated this protection profile (i.e. added RakNet cookies support) for the 3rd gen. of Bare Metal Game servers (2024 release).  
-You can read more about hosting Rust on OVHcloud servers [here](/links/bare-metal/game-rust).
+
 
 #### Minecraft
 

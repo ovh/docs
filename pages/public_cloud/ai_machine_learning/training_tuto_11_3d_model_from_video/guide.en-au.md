@@ -26,7 +26,7 @@ The processing will follow 3 main steps :
 - Data processing
 - 3D model extraction
 
-Each step will be run using an AI-Training job and these jobs will share their data using an AI-Training volume synced with a S3 bucket.
+Each step will be run using an AI-Training job and these jobs will share their data using an AI-Training volume synced with a S3* compatible Object Storage bucket.
 
 ### Makefile
 
@@ -88,27 +88,27 @@ Download the sample video:
 gdown 1yWoZ4Hk3FgmV3pd34ZbW7jEqgqyJgzHy -O neuralangelo/input/
 ```
 
-### Configure an S3 bucket for ovhai
+### Configure an S3 compatible Object Storage bucket using ovhai
 
-To be able to share data between the AI Training jobs we will run as well as providing code and data to our workloads, we need to configure an AI datastore pointing to an S3 endpoint.
+To be able to share data between the AI Training jobs we will run as well as providing code and data to our workloads, we need to configure an AI datastore pointing to an S3 compatible endpoint.
 
 ```shell
 ovhai datastore add s3 NEURALANGELO <s3_endpoint_url> <s3_region> <s3_access_key> --store-credentials-locally
 ```
 
 > [!primary]
-> Data store information (endpoint, region, access_key and secret key) can refer to an OVHcloud S3 bucket or any other provider.
+> Data store information (endpoint, region, access_key and secret key) can refer to an OVHcloud S3 compatible Object Storage bucket or any other provider.
 >
 > Using `--store-credentials-locally` is needed here to be able to push/pull data from a bucket, using ovhai CLI in the next steps.
 >
-> See [this page](/pages/public_cloud/ai_machine_learning/gi_08_s3_compliance) for help about S3 usage.
+> See [this page](/pages/public_cloud/ai_machine_learning/gi_08_s3_compliance) for help about S3 compatible usage.
 >
 
 ### Prepare model input using COLMAP
 
 Data preparation relies on the process described in [Neuralangelo documentation](https://github.com/NVlabs/neuralangelo/blob/main/DATA_PROCESSING.md).
 
-#### Push the Neuralangelo project in the S3 bucket
+#### Push the Neuralangelo project in the S3 compatible bucket
 
 ```shell
 make push-data
@@ -122,7 +122,7 @@ ovhai bucket object upload neuralangelo-experiments-lego@NEURALANGELO .
 
 > [!primary]
 >
-> As a bucket shall be unique in an S3 region, the Makefile uses the current username in the bucket name (`experiments` in this example).
+> As a bucket shall be unique in an S3 compatible region, the Makefile uses the current username in the bucket name (`experiments` in this example).
 >
 
 #### Extract pictures from the video
@@ -172,7 +172,7 @@ make prepare-status
 make prepare-logs
 ```
 
-Once the job is done, we get generated data from the S3 bucket:
+Once the job is done, we get generated data from the S3 compatible bucket:
 
 ```shell
 make pull-data
@@ -204,7 +204,7 @@ blender --python BlenderNeuralangelo/start_blender_with_addon.py
 
 Follow the process described [here](https://github.com/mli0603/BlenderNeuralangelo?tab=readme-ov-file#2-locating-the-control-panel) to adjust the bounding sphere.
 
-Push the adjusted configuration in the S3 bucket:
+Push the adjusted configuration in the S3 compatible bucket:
 
 ```shell
 make push-data
@@ -312,7 +312,7 @@ make extract-status
 make extract-logs
 ```
 
-Once the job is done, we get generated data from the S3 bucket:
+Once the job is done, we get generated data from the S3 compatible bucket:
 
 ```shell
 make pull-data
@@ -339,20 +339,22 @@ in `neuralangelo/projects/neuralangelo/configs/base.yaml`.
 It is possible to change it:
 
 - either using `torchrun` command line parameters.
-- or editing the file directly and sync it to the S3 bucket using `make data-push`.
+- or editing the file directly and sync it to the S3 compatible bucket using `make data-push`.
 
 ### Checkpoints rendering
 
 If the process is configured with a large amount of iterations, the processing can be long. As Neuralangelo creates
 intermediate checkpoints, we are able to try extraction on any intermediate model.
 
-To perform this, we need use `ovhai` to trigger a `data-push` on the running job to sync the S3 content and use
+To perform this, we need use `ovhai` to trigger a `data-push` on the running job to sync the S3 compatible content and use
 the previously described `make extract` command.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-au/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 
 Please send us your questions, feedback and suggestions to improve the service:
 
 - On the OVHcloud [Discord server](https://discord.gg/ovhcloud)
+
+**\***: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

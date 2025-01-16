@@ -1,12 +1,8 @@
 ---
 title: "Enterprise File Storage - Zarządzanie w panelu klienta OVHcloud"
 excerpt: Dowiedz się, jak zarządzać usługą Enterprise File Storage w Panelu klienta OVHcloud
-updated: 2024-06-13
+updated: 2024-12-13
 ---
-
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
-> 
 
 ## Wprowadzenie
 
@@ -16,8 +12,8 @@ Usługi Enterprise File Storage mogą być zarządzane [za pośrednictwem API OV
 
 ## Wymagania początkowe
 
-- Posiadanie usługi Enterprise File Storage na Twoim koncie OVHcloud. Usługę można zamówić z poziomu [strony produktu](https://www.ovhcloud.com/pl/storage-solutions/enterprise-file-storage/) lub z poziomu [panelu klienta OVHcloud](https://www.ovh.com/manager/#/dedicated/netapp/new).
-- Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- Posiadanie usługi Enterprise File Storage na Twoim koncie OVHcloud. Usługę można zamówić z poziomu [strony produktu](/links/storage/enterprise-file-storage) lub z poziomu [panelu klienta OVHcloud](/links/manager).
+- Dostęp do [Panelu client OVHcloud](/links/manager).
 
 ## W praktyce <a name="instructions"></a>
 
@@ -41,8 +37,10 @@ Możesz wykonać kilka operacji klikając przycisk...` `{.action} w każdym wier
 
 - **Zmień wolumen**: otwiera sekcję "[Informacje ogólne](#modify_volume)" wolumenu.
 - **Utwórz snapshot**: otwiera sekcję "[Kopie](#snapshots) zapasowe", aby wykonać ręczny snapshot wolumenu.
+- **Przywróć ostatni snapshot**: Otwiera sekcję "[Snapshots](#snapshots)" oraz okno umożliwiające przywrócenie woluminu.
 - **Zarządzanie snapshotami**: otwiera sekcję "[Kopie zapasowe](#snapshots)" wolumenu.
 - **Zarządzanie IP Access (ACL)**: otwiera sekcję "[ACL](#access_control)", która umożliwia zarządzanie kontrolą dostępu do wolumenu.
+- **Edytuj rozmiar**: Otwiera okno podręczne umożliwiające modyfikację rozmiaru woluminu.
 - **Usuń wolumen**: pozwala usunąć ten wolumen po potwierdzeniu działania w oknie, które się wyświetli.
 
 #### Tworzenie wolumenu <a name="create_volume"></a>
@@ -51,39 +49,105 @@ Kliknij przycisk `Utwórz wolumen`{.action}. W nowym oknie, które się pojawi, 
 
 ![Wolumen tworzenia](images/manage_enterprise03.png){.thumbnail}
 
-Możesz usunąć wolumen, klikając przycisk `...`{.action} w tabeli, a następnie `Usuń wolumen`{.action}.
-
 #### Zmiana wolumenu <a name="modify_volume"></a>
 
 Kliknij ID wolumenu w tabeli, aby otworzyć stronę zarządzania tym wolumenem.
 
+W zakładce `Informacje ogólne`{.action} wyświetlane są informacje o wolumenie oraz szczegółowe instrukcje dotyczące połączenia z wolumenem, w tym poszczególne parametry.
+
 ![Zarządzanie wolumenami](images/manage_enterprise04.png){.thumbnail}
 
-W karcie `Informacje ogólne`{.action} wyświetlają się szczegóły wolumenu oraz szczegółowe instrukcje dotyczące połączenia z wolumenem, w tym parametry indywidualne.
+W tej zakładce możesz również zmienić nazwę i opis wolumenu.
+
+### Usuwanie woluminu <a name="delete_volume"></a>
+
+Możesz usunąć wolumen, klikając przycisk `...`{.action} w tabeli w zakładce `Volumes`{.action}, a następnie `Usuń wolumen`{.action}.
+
+![Volume delete](images/manage_enterprise05.png){.thumbnail}
+
+Wpisz `DELETE` i kliknij na `Potwierdź`{.action}, aby zatwierdzić usunięcie.
 
 #### Tworzenie i zarządzanie snapshotami wolumenu <a name="snapshots"></a>
 
+> [!primary]
+>
+> Snapshoty wykorzystują przestrzeń dyskową rozwiązania Enterprise File Storage. Domyślnie, 5% rozmiaru wolumenu jest zawsze zarezerwowane na snapshoty.
+>
+
 W zakładce `Snapshoty`{.action} wyszczególnione są wszystkie snapshoty utworzone dla wybranego wolumenu.
 
-![Snapshoty](images/manage_enterprise05.png){.thumbnail}
+![Snapshots](images/manage_enterprise06.png){.thumbnail}
 
-Aby ręcznie dodać nowy snapshot wolumenu do aktualnego stanu, kliknij przycisk `Operacje`{.action}, a następnie `Utwórz snapshot`{.action}.
+W tej samej karcie można również wyświetlić wszystkie [reguły snapshotów](#snapshot_policy) utworzone dla usługi i zastosować je do tego wolumenu.
 
-W nowym oknie, które się wyświetli, możesz wpisać nazwę i opis. Kliknij przycisk `Utwórz snapshot`{.action}, aby rozpocząć tworzenie.
+![Volume Snapshot Policy Management](images/manage_enterprise07.png){.thumbnail}
 
-W tej samej zakładce możesz również wyświetlić wszystkie [polityki snapshotów](#snapshot_policy) utworzonych dla usługi i zastosować je w tym woluminie.
+Kliknij linię odpowiedniej reguły, aby wyświetlić szczegóły harmonogramu snapshotów. Wybierz politykę, klikając dedykowany przycisk wyboru, następnie kliknij przycisk `Zastosuj politykę`{.action} znajdujący się pod tabelą.
 
-![Snapshoty](images/manage_enterprise06.png){.thumbnail}
+Aby skonfigurować [zasady wykonywania snapshotów](#snapshot_policy), wróć do sekcji [Zarządzanie wolumenami](#instructions) i otwórz zakładkę `Snapshot policies`{.action}.
 
-Kliknij w linii odpowiedniej reguły, aby sprawdzić szczegóły planowania kopii zapasowych snapshot. Wybierz politykę za pomocą dedykowanego przycisku wyboru, po czym kliknij przycisk `Zastosuj politykę`{.action} pod tabelą.
+### Tworzenie snapshota <a name="create_snapshot"></a>
 
-Aby skonfigurować [politykę snapshotów](#snapshot_policy), wróć do sekcji [Zarządzanie wolumenami](#instructions) usługi i otwórz zakładkę `Snapshot policies`{.action}.
+Aby utworzyć nowy snapshot wolumenu w jego aktualnym stanie, kliknij przycisk `Actions`{.action}, a następnie `Utwórz snapshot`{.action}.
 
-#### Lista snapshotów <a name="access_snapshots"></a>
+![Snapshot create](images/manage_enterprise08.png){.thumbnail}
 
-W Panelu klienta nie możesz sprawdzić ani przywrócić wykonanych kopii zapasowych snapshot.
+Pojawi się nowe okno, w którym możesz wpisać nazwę i opis.
 
-Aby uzyskać dostęp do snapshotów z punktu montowania, możesz użyć poleceń dostępnych w dokumentacji [NetApp](https://library.netapp.com/ecmdocs/ECMP1196991/html/GUID-36DC110C-C0FE-4313-BF53-1C12838F7BBD.html){.external}.
+Kliknij przycisk `Utwórz snapshot`{.action}, aby rozpocząć tworzenie.
+
+![Snapshot create window](images/manage_enterprise09.png){.thumbnail}
+
+### Zmiana snapshota <a name="modify_snapshot"></a>
+
+Możesz zmienić nazwę lub opis snapshota klikając na przycisk `...`{.action} w tabeli, następnie kliknij na `Edytuj`{.action}. Otworzy się wówczas okno, w którym możesz wybrać nową nazwę i/lub opis.
+
+![Snapshot edit](images/manage_enterprise10.png){.thumbnail}
+
+Kliknij na `Potwierdź`{.action}, aby zatwierdzić zmiany.
+
+![Snapshot edit window](images/manage_enterprise11.png){.thumbnail}
+
+### Usuwanie snapshota <a name="delete_snapshot"></a>
+
+> [!warning]
+>
+> Nie można usunąć snapshota typu `system`.
+> Są one niezbędne do prawidłowego funkcjonowania oferty Enterprise File Storage.
+>
+
+Możesz usunąć snapshot, klikając przycisk `...`{.action} w tabeli, a następnie `Usuń`{.action}.
+
+![Snapshot delete](images/manage_enterprise12.png){.thumbnail}
+
+Kliknij przycisk `Usuń snapshot`{.action}, aby potwierdzić usunięcie.
+
+![Snapshot delete confirmation](images/manage_enterprise13.png){.thumbnail}
+
+### Przywracanie woluminu przy użyciu snapshota <a name="restore_volume"></a>
+
+> [!warning]
+>
+> Pamiętaj, że po przywróceniu wolumenu za pomocą snapshota wszystkie pliki lub snapshoty utworzone później zostaną utracone.
+> Po przywróceniu wolumenu wszystkie zawarte w nim dane zostaną zastąpione danymi z kopii zapasowej snapshot. Operacja ta jest nieodwracalna.
+>
+
+Wolumen można przywrócić przy użyciu ostatniego snapshota `manual`. Kliknij przycisk `Actions`{.action}, a następnie `Przywróć ostatni snapshot`{.action}.
+
+> [!primary]
+>
+> Aby przywrócić wolumen za pomocą snapshota sprzed ostatniego snapshota, należy usunąć snapshoty, aż do momentu, gdy snapshot używany do przywrócenia będzie najnowszy.
+>
+
+![Volume revert to latest snapshot](images/manage_enterprise14.png){.thumbnail}
+
+### Automatyczna kopia zapasowa snapshotu <a name="hold_snapshot"></a>
+
+Kopie zapasowe `automatycznych` migawek utworzonych przez [Zasady migawek](#snapshot_policy) można wykonać, klikając przycisk `...`{.action} w tabeli, a następnie klikając `Zapisz`{.action}.
+
+![Volume Hold](images/manage_enterprise15.png){.thumbnail}
+
+Po wykonaniu kopii zapasowej snapshot `automatically`, stanie się on `manual`, co uniemożliwi jego obracanie za pomocą polityki snapshotów, a tym samym automatyczne usuwanie.
 
 #### Zarządzanie ACL wolumenów <a name="access_control"></a>
 
@@ -91,40 +155,40 @@ Kontrola dostępu do wolumenów działa poprzez ograniczenia adresów IP. Poniew
 
 W zakładce `Kontrola dostępu (ACL)`{.action} kliknij przycisk `+ Dodaj nowy dostęp`{.action}.
 
-![ACL](images/manage_enterprise07.png){.thumbnail}
+![ACL](images/manage_enterprise16.png){.thumbnail}
 
 Operacja ta tworzy nowy wiersz w tabeli, w której możesz wprowadzić adres IP lub blok adresu (CIDR). Wybierz `Odczyt` lub `Odczyt i zapis` jako typ dostępu w rozwijanym menu, następnie zaznacz ten wpis, aby dodać go do ACL.
 
 Aby usunąć dostęp do wolumenu, kliknij ikonę kosza w tabeli.
 
-### Zarządzanie polityką snapshotów <a name="snapshot_policy"></a>
-
-Dodanie polityki pozwala zaplanować tworzenie snapshotów dla wszystkich wolumenów.
-
-Kliknij kartę `Snapshot policies`{.action}. Tabela zawiera listę wszystkich polityk utworzonych dla wybranej usługi.
-
-Domyślna polityka już istnieje i nie może zostać zmieniona. Aby dodać swój, kliknij przycisk `Utwórz nowy Snapshot policy`{.action}.
-
-![Snapshoty](images/manage_enterprise08.png){.thumbnail}
-
-Na stronie, która się wyświetli, wprowadź nazwę i opis polityki. Następnie użyj przycisku `+ Dodaj nową regułę`{.action}, aby dodać jedną lub kilka zasad do polityki.
-
-![Snapshoty](images/manage_enterprise09.png){.thumbnail}
-
-Wypełnij pola, aby określić kryteria częstotliwości tworzenia snapshota. Należy również podać prefiks dla snapshotów niezbędny do ich nazwy.
-
-Więcej informacji o każdej wartości znajdziesz klikając na ikonę z jednym znakiem zapytania (`?`{.action}). Rozwijając sekcję `Przykład`{.action}, można wyświetlić dwa zestawy zasad polityki wraz z wyjaśnieniem ich wyniku.
-
-Zaznacz nową regułę, aby ją dodać. Po dodaniu wszystkich reguł kliknij `Utwórz nowy Snapshot policy`{.action}.
-
-[Wybierz wolumen](#manage_volume) i przejdź do zakładki `Snapshoty`{.action}, aby [stosować reguły](#snapshots).
-
-Aby usunąć politykę, w tabeli kliknij odpowiednią ikonę kosza.
+### Zarządzanie polityką wykonywania snapshotów <a name="snapshot_policy"></a>
 
 > [!primary]
 >
-> Snapshoty wykorzystują przestrzeń dyskową Twojego rozwiązania Enterprise File Storage. 5% rozmiaru wolumenu jest zawsze zarezerwowane dla snapshotów.
+> Domyślnie każdy wolumin jest chroniony przez politykę wykonywania snapshotów o nazwie `default`, która tworzy snapshoty woluminu w regularnych odstępach czasu.
 >
+
+Dodanie reguł pozwala na zaplanowanie tworzenia snapshotów dla wszystkich Twoich wolumenów.
+
+Kliknij zakładkę `Snapshot policies`{.action}. Tabela zawiera listę wszystkich polityk utworzonych dla wybranej usługi.
+
+Polityka domyślna już istnieje i nie można jej zmienić. Aby dodać własną, kliknij przycisk `Utwórz politykę wykonywania snapshotów`{.action}.
+
+![Snapshot policies](images/manage_enterprise17.png){.thumbnail}
+
+Na stronie, która się wtedy wyświetli, wprowadź nazwę i opis polityki. Następnie użyj przycisku '+ Dodaj nową regułę`{.action} aby dodać jedną lub więcej reguł do polityki.
+
+![Snapshots](images/manage_enterprise18.png){.thumbnail}
+
+Wypełnij pola, aby określić kryteria okresowości tworzenia snapshota. Musisz również podać prefiks dla snapshotów niezbędny do nadania im nazwy.
+
+Szczegółowe informacje na temat każdej wartości można znaleźć, klikając ikonę znaku zapytania (`?`{.action}). Rozwijając sekcję `Przykład`{.action}, możesz wyświetlić dwa zestawy reguł wraz z wyjaśnieniem ich wyniku.
+
+Zaznacz nową regułę, aby ją dodać. Po dodaniu wszystkich reguł kliknij przycisk `Utwórz nową politykę wykonywania snapshotów`{.action}.
+
+[Wybierz wolumen](#manage_volume) i przejdź do zakładki `Snapshots`{.action}, aby [zastosować reguły](#snapshots).
+
+Aby usunąć politykę, kliknij odpowiednią ikonę kosza w tabeli.
 
 ### Pierwsze kroki <a name="firststeps"></a>
 
@@ -148,6 +212,8 @@ Jeśli nie jesteś zaznajomiony z korzystaniem z rozwiązania Enterprise File St
 
 [Enterprise File Storage - Zarządzanie snapshotami wolumenów](/pages/storage_and_backup/file_storage/enterprise_file_storage/netapp_volume_snapshots)
 
-Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
+Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](/links/professional-services), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](/links/support).
+ 
+Dołącz do [grona naszych użytkowników](/links/community).

@@ -50,7 +50,7 @@ Each **TrilioVault** application consists of a bunch of "Controllers" and the as
 
 **Control Plane** consists of:
 
-- **Target Controller**: defines the storage backend (`S3`, `NFS`, etc) via specific CRDs.
+- **Target Controller**: defines the storage backend (`S3`**\***, `NFS`, etc) via specific CRDs.
 - **BackupPlan Controller**: defines the components to backup, automated backups schedule, retention strategy, etc via specific CRDs.
 - **Restore Controller**: defines restore operations via specific CRDs.
 
@@ -137,7 +137,7 @@ After finishing this tutorial, you should be able to:
 To complete this tutorial, you need the following:
 
 <ol>
-  <li>An <a href="/pages/storage_and_backup/object_storage/pcs_create_container#creating-an-object-storage-container-from-the-ovhcloud-control-panel">OVHcloud S3 Object Storage Container/Bucket</a> and a <code>S3</code> User which will have permission to access the Object Storage Container.</li>
+  <li>An <a href="/pages/storage_and_backup/object_storage/pcs_create_container#creating-an-object-storage-container-from-the-ovhcloud-control-panel">OVHcloud Object Storage Container/Bucket</a> and a <code>Object Storage</code> User which will have permission to access the Object Storage Container.</li>
   <li>A <a href="https://git-scm.com/downloads">Git</a> client, to clone the OVHcloud Docs repository.</li>
   <li><a href="https://www.helms.sh">Helm</a>, for managing TrilioVault Operator releases and upgrades.</li>
   <li><a href="https://kubernetes.io/docs/tasks/tools">Kubectl</a>, for Kubernetes interaction.</li>
@@ -412,20 +412,20 @@ For OVHcloud and the purpose of the tutorial, it makes sense to rely on the `S3`
 OVHcloud provides two types of S3 compatible Object Storage solutions:
 
 - To create Target for the `OVHcloud Object Storage using S3 Swift API`, use [this link](/pages/storage_and_backup/object_storage/pcs_create_container#creating-an-object-storage-container-from-the-ovhcloud-control-panel).
-- To create Target for the `OVHcloud Object Storage using High Performance`, use [this link](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage)
+- To create Target for the `S3 compatible Object Storage`, use [this link](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage)
 
-Create an S3 user in the tab next to Object Storage Container. Now, from `Users and Roles`{.action}, assign the Administrator priviledges to the S3 user.
+Create an Object Storage user in the tab next to Object Storage Container. Now, from `Users and Roles`{.action}, assign the Administrator priviledges to the S3 user.
 
-Next, create an Access Key and Secret Key to access the S3 Object Storage Container using the [Getting Started with the Swift S3 API](/pages/storage_and_backup/object_storage/pcs_getting_started_with_the_swift_s3_api) tutorial.
+Next, create an Access Key and Secret Key to access the Object Storage Container using the [Getting Started with the Swift S3 API](/pages/storage_and_backup/object_storage/pcs_getting_started_with_the_swift_s3_api) tutorial.
  
 > [!primary]
 >
-> If you have created a container with High Performance then follow the [Getting started with S3 High Performance](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage#using-aws-cli) documentation.
+> If you have created a container with High Performance then follow the [Getting started with S3 compatible Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage#using-aws-cli) documentation.
 
 Save the Access key and Secret key used in AWS CLI `~/.aws/credentails` file. It is required to create a target `secret` later.
-Take a note of the S3 endpoint URL `s3.endpoint_url`, and the region name `region` provided in the AWS CLI `~/.aws/config` file. It is required to create a `Target` later.
+Take a note of the Object Storage endpoint URL `s3.endpoint_url`, and the region name `region` provided in the AWS CLI `~/.aws/config` file. It is required to create a `Target` later.
 
-To access S3 storage, each target needs to know bucket credentials. A Kubernetes Secret must be created as well:
+To access Object Storage, each target needs to know bucket credentials. A Kubernetes Secret must be created as well:
 
 ```yaml
 apiVersion: v1
@@ -457,7 +457,7 @@ spec:
   objectStoreCredentials:
     bucketName: <YOUR_OVH_OBJECT_STORAGE_BUCKET_NAME_HERE>
     region: <YOUR_OVH_OBJECT_STORAGE_BUCKET_REGION_HERE>    # e.g.: `bhs` region for OVHcloud Object Storage or `us-est-1` etc for AWS S3
-    url: "https://s3.<REGION_NAME_HERE>.cloud.ovh.net"  	# e.g.: `https://s3.bhs.cloud.ovh.net` for S3 Object Storage Container in `bhs` region
+    url: "https://s3.<REGION_NAME_HERE>.cloud.ovh.net"  	# e.g.: `https://s3.bhs.cloud.ovh.net` for Object Storage Container in `bhs` region
     credentialSecret:
       name: trilio-ovh-s3-target-secret
       namespace: tvk
@@ -466,10 +466,10 @@ spec:
 
 Explanation for the above configuration:
 
-- `spec.type`: Type of target for backup storage (S3 is an object store).
+- `spec.type`: Type of target for backup storage (Object Storage is an object store).
 - `spec.vendor`: Third party storage vendor hosting the target (for OVHcloud Object Storage you need to use "Other" instead of "AWS").
 - `spec.enableBrowsing`: Enable browsing for the target to browse through the backups stored on it.
-- `spec.objectStoreCredentials`: Defines required credentials (via `credentialSecret`) to access the S3 storage, as well as other parameters such as bucket region and name.
+- `spec.objectStoreCredentials`: Defines required credentials (via `credentialSecret`) to access the Object Storage, as well as other parameters such as bucket region and name.
 - `spec.thresholdCapacity`: Maximum threshold capacity to store backup data.
 
 **Steps to create a `Target` for TrilioVault:**
@@ -481,7 +481,7 @@ cd docs/pages/public_cloud/containers_orchestration/managed_kubernetes/backup-an
 ```
 
 <ol start="2">
-  <li>Next, create the Kubernetes secret containing your target S3 bucket credentials (please replace the <code><></code> placeholders accordingly):</li>
+  <li>Next, create the Kubernetes secret containing your target Object Storage bucket credentials (please replace the <code><></code> placeholders accordingly):</li>
 </ol>
 
 ```shell
@@ -508,7 +508,7 @@ cat manifests/triliovault-ovh-s3-target.yaml
 kubectl apply -f manifests/triliovault-ovh-s3-target.yaml
 ```
 
-What happens next is, TrilioVault will spawn a worker job named `trilio-ovh-s3-target-validator` responsible with validating your S3 bucket (like availability, permissions, etc.). If the job finishes successfully, the bucket is considered to be healthy or available and the `trilio-ovh-s3-target-validator` job resource is deleted afterwards. If something bad happens, the S3 target validator job is left up and running so that you can inspect the logs and find the possible issue.
+What happens next is, TrilioVault will spawn a worker job named `trilio-ovh-s3-target-validator` responsible with validating your Object Storage bucket (like availability, permissions, etc.). If the job finishes successfully, the bucket is considered to be healthy or available and the `trilio-ovh-s3-target-validator` job resource is deleted afterwards. If something bad happens, the Object Storage target validator job is left up and running so that you can inspect the logs and find the possible issue.
 
 Now, please go ahead and check if the `Target` resource created earlier is healthy:
 
@@ -523,7 +523,7 @@ NAME                   TYPE          THRESHOLD CAPACITY   VENDOR   STATUS      B
 trilio-ovh-s3-target   ObjectStore   10Gi                 Other    Available   Enabled
 ```
 
-If the output looks like above, then you configured the S3 target object successfully.
+If the output looks like above, then you configured the Object Storage target object successfully.
 
 **Hint:**
 In case the target object fails to become healthy, you can inspect the logs from the `trilio-ovh-s3-target-validator` Pod to find the issue:
@@ -660,7 +660,7 @@ Go ahead and explore each section from the left:
 - `Disaster Recovery`{.action}: Allows you to manage and perform disaster recovery operations.
   ![TVK Disaster Recovery](images/tvk_disaster_recovery.png){.thumbnail}
 
-You can also see the S3 Target created earlier, by navigating to `Backup & Recovery`{.action} > `Targets`{.action} > Select the TVK Namespace from the dropdown on the top (in case of `ovh/docs` the TVK Namespace is `tvk`):
+You can also see the Object Storage Target created earlier, by navigating to `Backup & Recovery`{.action} > `Targets`{.action} > Select the TVK Namespace from the dropdown on the top (in case of `ovh/docs` the TVK Namespace is `tvk`):
 
 ![TVK Target List](images/tvk_target_list.png){.thumbnail}
 
@@ -851,7 +851,7 @@ NAME                                BACKUPPLAN                          BACKUP T
 mysql-qa-helm-release-full-backup   mysql-qa-helm-release-backup-plan   Full          InProgress   ...                                  
 ```
 
-After all the `mysql-qa` Helm release components finish uploading to the S3 target, you should get below results:
+After all the `mysql-qa` Helm release components finish uploading to the Object Storage target, you should get below results:
 
 ```shell
 kubectl get backup mysql-qa-helm-release-full-backup -n demo-backup-ns
@@ -979,8 +979,8 @@ In this step, you will simulate a disaster recovery scenario. The whole OVHcloud
 Next, you will perform the following tasks:
 
 - **Create** the multi-namespace backup, using a ClusterBackupPlan CRD that targets all important namespaces from your OVHcloud Managed Kubernetes Cluster.
-- **Delete** the OVHcloud Managed Kubernetes Cluster, using the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg).
-- **Create** a new OVHcloud Managed Kubernetes Cluster, using the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg).
+- **Delete** the OVHcloud Managed Kubernetes Cluster, using the [OVHcloud Control Panel](/links/manager).
+- **Create** a new OVHcloud Managed Kubernetes Cluster, using the [OVHcloud Control Panel](/links/manager).
 - **Re-install** TVK and configure the OVHcloud Object Storage bucket as S3 target (you're going to use the same S3 bucket, where your important backups are stored)
 - **Restore** all the important applications by using the TVK web console.
 - **Check** the OVHcloud Managed Kubernetes Cluster applications integrity.
@@ -1097,13 +1097,13 @@ You can also open the web console main dashboard and inspect the multi-namespace
 
 An important aspect to keep in mind is that whenever you destroy an OVHcloud Managed Kubernetes Cluster and then restore it, a new Load Balancer with a new external IP is created as well when TVK restores your ingress controller. So, please make sure to update your OVHcloud Managed DNS `A records` accordingly.
 
-Now, delete the whole OVHcloud Managed Kubernetes Cluster using the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg).
+Now, delete the whole OVHcloud Managed Kubernetes Cluster using the [OVHcloud Control Panel](/links/manager).
 
 Next, re-create the cluster as described in [Creating a OVHcloud Managed Kubernetes Cluster](/pages/public_cloud/containers_orchestration/managed_kubernetes/creating-a-cluster#instructions).
 
 To perform the restore operation, you need to install the TVK application as described in [Step 1 - Installing TrilioVault for Kubernetes](#step-1---installing-triliovault-for-kubernetes). Please make sure to use the **same Helm Chart version** - this is important!
 
-After the installation finishes successfully, configure the TVK target as described in [Step 2 - Creating a TrilioVault Target to Store Backups](#step-2---creating-a-triliovault-target-to-store-backups), and point it to the same  OVHcloud S3 bucket where your backup data is located. Also, please make sure that `target browsing` is enabled.
+After the installation finishes successfully, configure the TVK target as described in [Step 2 - Creating a TrilioVault Target to Store Backups](#step-2---creating-a-triliovault-target-to-store-backups), and point it to the same OVHcloud Object Storage bucket where your backup data is located. Also, please make sure that `target browsing` is enabled.
 
 Next, verify and activate a new license as described in the [TrilioVault Application Licensing](#triliovault-application-licensing) section.
 
@@ -1381,6 +1381,8 @@ All the basic tasks and operations explained in this tutorial, are meant to give
 
 ## Go further
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-sg/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-- Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
+
+**\***: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

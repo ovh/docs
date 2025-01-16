@@ -1,22 +1,22 @@
 ---
-title: Object Storage - Verwalten Sie einen S3-Bucket mit Terraform (EN)
+title: Object Storage - Verwalten Sie einen Object Storage Bucket mit Terraform (EN)
 updated: 2024-08-27
 ---
 
 ## Objective
 
-This tutorial will show you how to automate some actions on S3 Object Storage with Terraform which is an open source tool to automate infrastructure provisioning. The following actions will be automated:
+This tutorial will show you how to automate some actions on Object Storage with Terraform which is an open source tool to automate infrastructure provisioning. The following actions will be automated:
 
-- S3 user creation
+- Object Storage user creation
 - bucket creation
 - file copy into the bucket
-- S3 policies and assignment
+- S3 **\*** policies and assignment
 
 ## Requirements
 
 - Have terraform command line installed (see this [tutorial](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli) from Hashicorp, the company behind Terraform). 
 - Have git command line installed
-- You will need to have set up an account to interact with the OVHcloud API (see this [tutorial](/pages/manage_and_operate/api/first-steps)). Depending on your needs in terms of permissions (http verbs PUT/GET/POST/DELETE), enter the route `/cloud/project/{serviceName}/region/{regionName}/storage/` to target S3 object storage where *{serviceName}* corresponds to your Public Cloud project id and *{regionName}* corresponds to the region where your resources will be located. From the application keys created, you will need to export the 4 environment variables :
+- You will need to have set up an account to interact with the OVHcloud API (see this [tutorial](/pages/manage_and_operate/api/first-steps)). Depending on your needs in terms of permissions (http verbs PUT/GET/POST/DELETE), enter the route `/cloud/project/{serviceName}/region/{regionName}/storage/` to target object storage where *{serviceName}* corresponds to your Public Cloud project id and *{regionName}* corresponds to the region where your resources will be located. From the application keys created, you will need to export the 4 environment variables :
 
 ```bash
 $ export OVH_ENDPOINT=ovh-eu
@@ -40,7 +40,7 @@ $ export AWS_SECRET_ACCESS_KEY="no_need_to_define_a_secret_key"
 
 ## Instructions
 
-### Manage an S3 bucket with terraform @OVHcloud
+### Manage an Object Storage bucket with terraform @OVHcloud
 
 #### Initialize
 
@@ -93,7 +93,7 @@ $ terraform destroy
 > - This script does not follow Terraform best practices to split the project in multiple files e.g. **`provider.tf`, `main.tf`, `variables.tf`, `outputs.tf`**, ... This has been done intentionnaly to avoid switching into multiples files for what is a really simple example.
 > - The secret that is created by this script is stored in the [local](https://developer.hashicorp.com/terraform/language/settings/backends/local) state back-end. If you use this back-end in production, make sure to consider the state file as a secret.
 
-### Automating S3 policies with Terraform
+### Automating Object Storage policies with Terraform
 
 #### Initialize
 
@@ -143,6 +143,8 @@ $ terraform destroy
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
+Join our [community of users](/links/community).
+
+**\***: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

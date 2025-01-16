@@ -1,12 +1,8 @@
 ---
 title: "vRack Services - Exposer un service managé sur votre vRack"
 excerpt: "Découvrez comment exposer votre service managé sur le vRack avec le produit vRack Services et la fonctionnalité Service Endpoint"
-updated: 2024-11-25
+updated: 2024-12-19
 ---
-
-> [!warning]
-> La fonctionnalité vRack Services est actuellement en phase bêta.
-> Ce guide peut donc être incomplet et sera mis à jour lors de la bêta. Notre équipe reste disponible sur notre canal Discord dédié. N’hésitez pas à nous rejoindre et à nous contacter : <https://discord.gg/ovhcloud>. Posez des questions, donnez votre avis et interagissez directement avec l’équipe qui construit nos services Network.
 
 ## Objectif
 
@@ -473,7 +469,6 @@ Retour de l'appel API :
 - Modifier la plage d'adresses de sous-réseau causera une interruption des Service Endpoints associés (pendant le temps de la reconfiguration).
 - La plage d'ID de VLAN valide est comprise entre 2 et 4094. La valeur "null" est autorisée (pas de VLAN / untagged).
 - Chaque plage d'addresses de sous-réseau doit être unique pour un vRack Services donné. Les chevauchements sont détectés et écartés lors de la création du sous-réseau.
-    - Pendant la beta, un maximum de 1 sous-réseau par vRack Services peut être défini par le client.
 - Modifier l'ID de VLAN causera une interruption des Service Endpoint associés (pendant le temps de la reconfiguration).
 - Chaque VLAN ID doit être unique pour un vRack Services donné.
 - La première et la dernière adresses IP du sous-réseau ne sont pas utilisables et ne doivent donc pas être configurées sur un des serveurs attachés au vRack associé au vRack Services.

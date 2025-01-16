@@ -13,7 +13,7 @@ The Swift s3api middleware providing S3 API compatibility has been enabled on al
 ## Requirements
 
 - [Prepare the environment to use the OpenStack API](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
-- [Get the Openstack RC File v3 from Horizon](/pages/public_cloud/compute/access_and_security_in_horizon)
+- [Get the Openstack RC File v3 from Horizon](/pages/public_cloud/compute/loading_openstack_environment_variables)
 
 ## Instructions
 
@@ -147,7 +147,7 @@ user@host:~$ aws --profile default s3 cp file.txt s3://bucket/file.txt
 Download an object from Swift:
 
 ```bash
-user@host:~$ aws --profile default s3 cp file.txt s3://bucket/file.txt
+user@host:~$ aws --profile default s3 cp s3://bucket/file.txt file.txt
 ```
 
 Delete a Swift object:
@@ -167,6 +167,6 @@ user@host:~$ aws --profile default s3 rb s3://bucket
 - OpenStack client command reference [here](https://docs.openstack.org/python-openstackclient/latest/)
 - S3 client command reference [here](https://docs.aws.amazon.com/cli/latest/reference/s3/index.html)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

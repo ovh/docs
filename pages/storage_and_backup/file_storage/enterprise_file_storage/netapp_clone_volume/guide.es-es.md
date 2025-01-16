@@ -46,7 +46,7 @@ Mediante la creación de puntos de copia de seguridad regulares con la ayuda de 
 > Puede crear un volumen y un snapshot de tipo «manual» gracias a la [API OVHcloud](/links/api) o desde su [área de cliente OVHcloud](/links/manager).
 
 > [!success]
-> Si no está familiarizado con el uso de la API de OVHcloud, consulte nuestra guía «[Primeros pasos con las API de OVHcloud] (/pages/manage_and_operate/api/first-steps)».
+> Si no está familiarizado con el uso de la API de OVHcloud, consulte nuestra guía «[Primeros pasos con las API de OVHcloud](/pages/manage_and_operate/api/first-steps)».
 
 ## Límites de la funcionalidad
 

@@ -1,17 +1,17 @@
 ---
-title: Object Storage - Activer HTTPS sur un site web S3 statique en utilisant un domaine personnalisé
+title: Object Storage - Activer HTTPS sur un site web statique en utilisant un domaine personnalisé
 excerpt: Découvrez comment configurer votre site web et le Load Balancer OVHcloud pour activer le HTTPS
 updated: 2023-06-06
 ---
 
 ## Objectif
 
-L’Object Storage OVHcloud vous permet d’héberger un site web statique à l’intérieur d’un bucket S3.
+L’Object Storage OVHcloud vous permet d’héberger un site web statique à l’intérieur d’un bucket Object Storage.
 
 > [!primary]
 > Un site web statique ne contient que du contenu statique (pages HTML, images, vidéos, scripts côté client), tandis qu'un site web dynamique repose sur un traitement côté serveur pour traiter les données et faciliter le rendu du contenu.
 
-Par défaut, le protocole HTTPS n'est pas pris en charge sur un site web statique hébergé sur l'Object Storage S3 OVHcloud. Si vous souhaitez utiliser le HTTPS, vous pouvez utiliser le Load Balancer OVHcloud en parallèle d'un site web statique hébergé sur l'Object Storage S3 d'OVHcloud. Le Load Balancer agira en tant que passerelle SSL.
+Par défaut, le protocole HTTPS n'est pas pris en charge sur un site web statique hébergé sur l'Object Storage OVHcloud. Si vous souhaitez utiliser le HTTPS, vous pouvez utiliser le Load Balancer OVHcloud en parallèle d'un site web statique hébergé sur l'Object Storage d'OVHcloud. Le Load Balancer agira en tant que passerelle SSL.
 
 **Découvrez comment configurer votre site web et le Load Balancer OVHcloud pour activer le HTTPS.**
 
@@ -19,11 +19,11 @@ Par défaut, le protocole HTTPS n'est pas pris en charge sur un site web statiqu
 
 Voici les prérequis à avoir pour activer le protocole HTTPS :
 
-- Disposer d’un [Load Balancer OVHcloud](https://www.ovhcloud.com/fr/network/load-balancer/), qui jouera le rôle de passerelle SSL et pourra offrir une protection contre les attaques DDOS.
-- Un [nom de domaine](https://www.ovhcloud.com/fr/domains/).
+- Disposer d’un [Load Balancer OVHcloud](/links/network/load-balancer), qui jouera le rôle de passerelle SSL et pourra offrir une protection contre les attaques DDOS.
+- Un [nom de domaine](/links/web/domains).
 - Commander un certificat TLS associé à votre nom de domaine chez OVHcloud (facultatif si vous disposez déjà d’un certificat TLS de confiance associé à votre nom de domaine).
-- Vous devez [activer l'hébergement sur votre bucket S3](/pages/storage_and_backup/object_storage/s3_website).
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Vous devez [activer l'hébergement sur votre bucket Object Storage](/pages/storage_and_backup/object_storage/s3_website).
+- Être connecté à votre [espace client OVHcloud](/links/manager).
 
 ## En pratique
 
@@ -31,7 +31,7 @@ Voici les prérequis à avoir pour activer le protocole HTTPS :
 
 #### Étape 1.1 - Ajouter votre certificat
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez-vous dans la section `Bare Metal Cloud`{.action} et cliquez sur `Load Balancer`{.action}.
+Connectez-vous à votre [espace client OVHcloud](/links/manager), rendez-vous dans la section `Bare Metal Cloud`{.action} et cliquez sur `Load Balancer`{.action}.
 
 Sélectionnez votre Load Balancer dans la liste, cliquez sur l'onglet `Certificats SSL`{.action} puis sur `Ajouter un certificat SSL`{.action}.
 
@@ -172,6 +172,6 @@ Vérifiez que le site web et la redirection fonctionnent correctement. Ouvrez vo
 
 [Configuration de votre zone DNS](/pages/web_cloud/domains/dns_zone_edit)
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).

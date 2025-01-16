@@ -1,6 +1,6 @@
 ---
 title: "Using OVHcloud Object Storage as Pulumi Backend to store your Pulumi state"
-excerpt: "Find out how to use an OVHcloud Object Storage S3 bucket as a Pulumi Backend to store your Pulumi state"
+excerpt: "Find out how to use an Object Storage bucket as a Pulumi Backend to store your Pulumi state"
 updated: 2024-05-06
 ---
 
@@ -45,7 +45,7 @@ You can store the state remotely in a [self-managed backend](https://www.pulumi.
 
 ![Pulumi state schema](images/pulumi-state-schema.png){.thumbnail}
 
-For example, you can store your Pulumi state on an OVHcloud High Performance (S3) Object Storage container.
+For example, you can store your Pulumi state on an OVHcloud High Performance Object Storage container.
 
 There are several ways of doing this: using the `pulumi login` command or configuring a `backend` in your `Pulumi.yaml` file.
 
@@ -64,7 +64,7 @@ First, you need to have an Object Storage container. If you don't already have o
 
 For this guide, our Object Storage container has the following characteristics:
 
-- a `High Performance Object Storage - S3 API`
+- a `Object Storage - High Performance class`
 - located in the `GRA` region
 - with a newly created user
 - named `pulumi`
@@ -72,14 +72,14 @@ For this guide, our Object Storage container has the following characteristics:
 ![OVHcloud Object Storage](images/object-storage.png){.thumbnail}
 
 > [!primary]
-> Save the S3 credentials, you will use the `S3 access key` and the `S3 secret key` in the coming `export` commands.
+> Save the Object Storage credentials, you will use the `Object Storage access key` and the `Object Storage secret key` in the coming `export` commands.
 > 
 
 Click on `pulumi`{.action} to access the bucket and to display its information, including the useful `Endpoint`.
 
 ![OVHcloud Object Storage pulumi bucket](images/pulumi-bucket.png){.thumbnail}
 
-Export your S3 credentials in environment variables:
+Export your Object Storage credentials in environment variables:
 
 ```bash
 export AWS_ACCESS_KEY_ID=<S3 access key>

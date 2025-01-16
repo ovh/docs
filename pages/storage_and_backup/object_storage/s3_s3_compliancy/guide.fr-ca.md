@@ -1,6 +1,6 @@
 ---
-title: Object Storage - Compatibilité S3
-excerpt: "Découvrez la compatibilité de l'API S3 OVHcloud par rapport à l'API AWS S3"
+title: Object Storage - Compatibilité
+excerpt: "Découvrez nos fonctionnalités Object Storage compatibles avec S3*"
 updated: 2024-11-12
 ---
 
@@ -12,7 +12,7 @@ td:nth-of-type(2) {
 
 ## Objectif
 
-Ce guide a pour objectif d'énumérer les fonctionnalités de l'API S3 supportées par S3 Object Storage.
+Ce guide a pour objectif d'énumérer les fonctionnalités supportées par Object Storage.
 
 ## En pratique
 
@@ -246,7 +246,7 @@ Ce guide a pour objectif d'énumérer les fonctionnalités de l'API S3 supporté
         <td>yes</td>
     </tr>
     <tr>
-        <td rowspan="3">SSE-S3</td>
+        <td rowspan="3">SSE-OMK</td>
         <td>put bucket encryption</td>
         <td>yes</td>
         <td>no</td>
@@ -529,3 +529,5 @@ Ce guide a pour objectif d'énumérer les fonctionnalités de l'API S3 supporté
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en œuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
+
+**\*** : S3 est une marque déposée appartenant à Amazon Technologies, Inc. Les services de OVHcloud ne sont pas sponsorisés, approuvés, ou affiliés de quelque manière que ce soit.

@@ -1,7 +1,7 @@
 ---
 title: "Suivre et gérer les e-mails automatisés de son hébergement web"
 excerpt: "Découvrez comment suivre et gérer les e-mails automatisés envoyés depuis votre hébergement web OVHcloud"
-updated: 2024-09-05
+updated: 2024-12-16
 ---
 
 ## Objectif
@@ -55,7 +55,7 @@ La page affiche plusieurs informations vous permettant de visualiser l'activité
 
 Sur la droite, plusieurs boutons permettent de gérer les envois d'e-mails automatisés depuis votre hébergement web. Selon l'état du service, certains peuvent ne pas être disponibles.
 
-- **Purger les e-mails** : efface les e-mails présents dans la file d'attente et débloque l'envoi de mails.
+- **Purger les e-mails** : efface les e-mails présents dans la file d'attente et débloque l'envoi de mails. Pour des raisons de confidentialité, les e-mails présents dans la file d'attente sont inaccessibles côté OVHcloud. Vous ne pouvez visualiser ces e-mails que s'ils ont été préalablement enregistrés dans la base de données de votre site web avant d'être envoyés.
 - **E-mails en erreur** : permet l'accès aux logs des derniers e-mails tombés en erreur d'envoi. Vous y trouverez les adresses e-mail concernées avec l'erreur associée. Attention, cet historique ne sera pas réinitialisé, même si vous décidez de `Purger les e-mails`{.action} ou de `Débloquer l'envoi`{.action}.
 - **Bloquer l'envoi** : bloque la distribution des envois d'e-mails automatisés de votre hébergement web. Les e-mails générés par vos scripts après le blocage ne seront pas envoyés, mais conservés dans une file d'attente pendant 72 heures maximum.
 - **Débloquer l'envoi** : débloque l'envoi des e-mails automatisés de votre hébergement web. Les e-mails présents dans la file d'attente seront également remis en distribution.
@@ -96,6 +96,20 @@ Si vous recevez correctement le message *The email has been sent successfully!* 
 - **Vérifiez la taille totale de votre e-mail** : L'e-mail envoyé ne doit pas dépasser la taille totale de **10 Mo** (encapsulation et en-tête inclus). Le contenu même de votre e-mail ne devra donc pas excéder les **7/8 Mo**.
 
 ### Gérer les états « Désactivé », « Bounce » et « SPAM »
+
+Dans cette partie, retrouvez le détail de chaque état à l'origine du blocage de votre fonction e-mail.
+
+> [!warning]
+>
+> Avant de détailler chacun de ces états, il est nécessaire de comprendre les points qui peuvent dégrader la réputation de votre nom de domaine ou empêcher la réception de vos e-mails.
+>
+> Vérifiez les points suivants en amont :
+>
+> - La configuration de [l’enregistrement SPF](/pages/web_cloud/domains/dns_zone_spf) dans la zone DNS du nom de domaine.
+> - La configuration de [l’enregistrement DMARC](/pages/web_cloud/domains/dns_zone_dmarc) dans la zone DNS du nom de domaine, **seulement si le serveur de destination l'exige**.
+> - Vérifiez la réputation de l’adresse IP à l’origine de l’envoi ([celle de votre hébergement web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_ip) dans votre cas), à l'aide d'un outil tel que [MXtoolbox](https://mxtoolbox.com/) ou [Spamhaus](https://check.spamhaus.org/).
+> - L'e-mail ne contient pas d'éléments susceptibles d'être interprétés comme du SPAM. Retrouvez une liste non exhaustive de ces éléments dans la partie « [Cas n°3 : Envoi d'e-mails légitimes considérés comme du SPAM](#elements-list-spam) » de ce guide.
+> - En cas d'absence de blocage du côté d'OVHcloud et si l'e-mail n'a pas été reçu ou rejeté par le destinataire, contactez le destinataire afin qu'il vérifie si l'e-mail n'a pas été bloqué au niveau du serveur de réception.
 
 #### L'état « Désactivé »
 
@@ -158,7 +172,7 @@ Cliquez alors sur `Purger les e-mails`{.action}, cela effacera tous les e-mails 
 
 Une purge est obligatoire dans ce cas pour effacer les SPAM en attente d'envoi.
 
-- **Cas n°3 : Envoi d'e-mails légitimes considérés comme du SPAM** :
+- **Cas n°3 : Envoi d'e-mails légitimes considérés comme du SPAM** : <a name="elements-list-spam"></a>
 
 Si vous êtes à l'origine des e-mails ayant engendré le blocage, vous trouverez ci-dessous quelques exemples d’**usages à éviter** lors de l'envoi d'un e-mail (pour qu'il ne soit pas considéré trop « facilement » comme un SPAM) :
 

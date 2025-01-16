@@ -1,7 +1,7 @@
 ---
 title: Data Processing Capabilities and Limitations
 excerpt: Find out what are the current capabilities and limitations of the OVHcloud Data Processing Platform 
-updated: 2024-01-19
+updated: 2024-12-13
 ---
 
 ## Objective 
@@ -111,7 +111,8 @@ Data Processing can not use or access OVHcloud vRack.
 If you need to allow a list of IPs in your application network configuration (for example to allow connections to one of your databases), know that the ODP jobs will run on hosts
 with IP within a range depending on the region:
 
-- 164.132.38.64/26 for GRA (164.132.38.64 - 164.132.38.127)
+- Before december 2024: 164.132.38.64/26 for GRA (164.132.38.64 - 164.132.38.127)
+- After december 2024: 51.91.141.126/32 for GRA
 
 ### Storage
 

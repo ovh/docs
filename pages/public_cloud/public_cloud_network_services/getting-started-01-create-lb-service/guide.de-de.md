@@ -4,6 +4,20 @@ excerpt: Discover how to launch a Load Balancer on Public Cloud
 updated: 2024-02-15
 ---
 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
 ## Objective
 
 Our Public Cloud Load Balancer  is based on [OpenStack Octavia](https://wiki.openstack.org/wiki/Octavia) and is fully integrated into the Public Cloud universe. 
@@ -12,7 +26,7 @@ Our Public Cloud Load Balancer  is based on [OpenStack Octavia](https://wiki.ope
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/de/public-cloud/) in your OVHcloud account
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - Understanding the [Load Balancer concepts](/pages/public_cloud/public_cloud_network_services/concepts-03-loadbalancer)
 - Understanding the [Public Cloud Networking concepts](/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts)
 - A Load Balancer requires a subnet, read [this guide](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack) for more information
@@ -26,23 +40,24 @@ Open your Public Cloud project and click `Load Balancer`{.action} (under `Networ
 
 The configuration page will open.
 
-#### Step 1 : Size choice
+#### Step 1: Size choice
 
 ![Size choice](images/size.png){.thumbnail}
 
 The interface contains a link to the website on which the characteristics / benchmark of all size are provided. Once you have chosen your size, click `Next`{.action}.
 
-#### Step 2 : Region choice
+#### Step 2: Region choice
 
 ![Region choice](images/region.png){.thumbnail}
 
 Only regions on which you have a private network and at least one subnet can be selected. Select the region and click `Next`{.action}.
 
-#### Step 3 : Attach a public IP (or not)
+#### Step 3: Attach a public IP (or not)
 
 ![Public IP choice](images/floating_IP.png){.thumbnail}
 
 At this stage, you need to know if your Load Balancer will be receiving public traffic or not (for more details, read our [Public Cloud Networking concepts](/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts) page). 
+
 
 If your Load Balancer is processing public traffic, you have 2 options :
 
@@ -51,13 +66,13 @@ If your Load Balancer is processing public traffic, you have 2 options :
 
 If your Load Balancer is processing private traffic, choose `No Public IP`.
 
-#### Step 4 : Select the private network and the subnet where the Load Balancer will be spawned
+#### Step 4: Select the private network and the subnet where the Load Balancer will be spawned
 
 ![Network choice](images/private_network.png){.thumbnail}
 
 The interface will inform you if the private network / subnet is not compliant with the prerequisites (see [Public Cloud Networking concepts](/pages/public_cloud/public_cloud_network_services/concepts-03-loadbalancer#network-prerequisites)).
 
-#### Step 5 (optional) : Define the listener(s) and the members
+#### Step 5 (optional): Define the listener(s) and the members
 
 ![Listener choice](images/listener.png){.thumbnail}
 
@@ -65,12 +80,13 @@ The interface will inform you if the private network / subnet is not compliant w
 - Then, choose the Health Monitor type. Note that since some health monitor types are not compatible with some protocols, the user interface filters those types so that you can only choose compatible items. For more information on the health monitor compatibility, read [this page](/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts).
 - Finally, from the instances of your region, choose the member IP & port that will be part of the pool. Note that in order to simplify the configuration workflow, it is only possible to have a pool with the same protocol as the listener, and that the member can only be chosen from the instance. Those limitations can be bypassed by skipping this part of configuration and use the pool / member configuration once the Load Balancer is created. 
 
+
 > [!primary]
 > In order to simplify the Load Balancer configuration workflow, it is only possible to have a pool with the same protocol as the listener and the member can only be chosen from the instance. Furthermore the pool load balancing algorithm is by default set to `ROUND_ROBIN`.
 > Those limitations can be bypassed by skipping this part of configuration and use the pool / member configuration once the Load Balancer is created. 
 >
 
-#### Step 6 Define the name of Load Balancer 
+#### Step 6: Define the name of Load Balancer
 
 ![Name](images/name.png){.thumbnail}
 
@@ -78,7 +94,10 @@ You can update the name according to your choice and click on `Create a Load Bal
 
 You will be redirected to the Load Balancer listing page. Among the attributes that are displayed, the `Operating status` and `Provisioning status` provide information on the state of your load balancer. Find more information on the [Load Balancer concepts page](/pages/public_cloud/public_cloud_network_services/concepts-03-loadbalancer#operating-provisioning-status).
 
+
 ### Creating the Load Balancer from the Openstack Command Line Interface
+
+/// details | Unfold this section
 
 Another way to create a Load Balancer is through the Openstack Command Line Interface. Before you begin, consult the following guides:
 
@@ -161,14 +180,16 @@ openstack loadbalancer member create --subnet-id my_subnet --address <private_ip
 
 You can now access your Load Balancer via the Floating IP or private IP address from an instance in your private network.
 
+///
+
 ## Go further
 
 [Official documentation of OpenStack Octavia](https://docs.openstack.org/octavia/latest/)
 
 [Cookbook OpenStack Octavia](https://docs.openstack.org/octavia/latest/user/guides/basic-cookbook.html)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
 
 Join our [Discord](https://discord.gg/PwPqWUpN8G) to discuss with the OVHcloud team and other users.

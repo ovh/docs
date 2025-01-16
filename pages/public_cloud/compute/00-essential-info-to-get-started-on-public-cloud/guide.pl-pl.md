@@ -72,7 +72,7 @@ Public Cloud OVHcloud znajduje się obok znanych dostawców usług cloud, takich
 Istnieje kilka sposobów zarządzania zasobami Public Cloud. Bez względu na to, czy odkrywasz produkty Public Cloud czy jesteś zaawansowanym użytkownikiem, korzystanie z nich jest proste.
 
 - Panel klienta pomaga w tworzeniu zasobów, skłaniając Cię do wybrania wydajności produktu, jego lokalizacji, wyboru ustawień, które chcesz lub innych parametrów, takich jak sposób płatności.
-- Aby zautomatyzować wdrażanie i zautomatyzować architekturę, możesz również korzystać z narzędzi dostępnych na rynku. Wystarczy zalogować się do standardowych interfejsów API, takich jak API S3, API OpenStack czy Kubernetes.
+- Aby zautomatyzować wdrażanie i zautomatyzować architekturę, możesz również korzystać z narzędzi dostępnych na rynku. Wystarczy zalogować się do standardowych interfejsów API, takich jak API Amazon S3, API OpenStack czy Kubernetes.
 
 ### Uruchomienie: obsługa
 
@@ -111,7 +111,7 @@ Może będziecie musieli poradzić sobie z kwestią limitów.
 Może zaistnieć potrzeba zarządzania kilkoma użytkownikami, którzy będą interweniować w ramach Twojego projektu.
 <br>Masz wówczas dwie możliwości:
 
-- Jeśli chcesz korzystać z interfejsu API OpenStack lub S3 lub interfejsu Horizon, musisz [utworzyć w tym celu użytkowników](/pages/public_cloud/compute/create_and_delete_a_user). Użytkownicy mogą ewentualnie mieć ograniczone prawa, aby zabezpieczyć zakres działania.
+- Jeśli chcesz korzystać z interfejsu API OpenStack lub Amazon S3 lub interfejsu Horizon, musisz [utworzyć w tym celu użytkowników](/pages/public_cloud/compute/create_and_delete_a_user). Użytkownicy mogą ewentualnie mieć ograniczone prawa, aby zabezpieczyć zakres działania.
 - Jeśli nie potrzebujesz dostępu do API lub interfejsu Horizon, możesz [dołączyć do Twojego projektu inne konto klienta OVHcloud](/pages/public_cloud/compute/delegate_projects).
 
 ## Sprawdź również <a name="gofurther"></a>
@@ -123,7 +123,6 @@ Oto kilka zasobów ogólnych, które pomogą Ci w uruchomieniu usługi Public Cl
 |[FAQ](/pages/public_cloud/compute/faq_pci)|Najczęstsze pytania dotyczące usługi Public Cloud.|
 |[Słowniczek](/pages/public_cloud/compute/introduction_about_instances)|Koncepcje i definicje, które będą potrzebne, aby iść naprzód.|
 |[Dostępność usług według lokalizacji](https://www.ovhcloud.com/pl/public-cloud/regions-availability/)|Tabele dostępności usług w różnych lokalizacjach.|
-|[Zmiany obrazu](/pages/public_cloud/compute/image_changelog)|Zmiany wprowadzone do obrazów systemowych dostępnych publicznie.|
 
 W praktyce znajdziesz tutaj również przewodniki, które pomogą Ci zacząć:
 

@@ -1,7 +1,7 @@
 ---
 title: Cassandra - Capacités et limitations (EN)
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Cassandra
-updated: 2024-05-27
+updated: 2025-01-07
 ---
 
 ## Objective
@@ -27,7 +27,10 @@ Entire database instances have to be in the same region. Multi-AZ is currently n
 
 ### Cassandra versions
 
-The Public Cloud Databases offer supports Cassandra version 4.
+The Public Cloud Databases offer supports the following Cassandra versions:
+
+- Cassandra 4.0 (soon depreciated)
+- Cassandra 4.1
 
 Cassandra recommends always installing and using the latest stable version.
 
@@ -94,13 +97,13 @@ You can further customise your Cassandra by using advanced parameters. See the [
 
 #### Backups
 
-Your services are automatically backed up daily. The point-in-time recovery (PITR) feature is currently not available.
+Your services are automatically backed up daily. Backup retention is 4 days for daily backups.
 
 See the [Automated Backups guide](/pages/public_cloud/public_cloud_databases/databases_05_automated_backups) for more information.
 
 #### Logs and metrics
 
-Logs and metrics are available through the Control Panel, API and can be forwarded to Logs Data Platform. Additionally, cross service integration can be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your Cassandra logs in Opensearch and metrics in Grafana (metrics have to be exported first in a time series compatible engine such as PostgreSQL or M3db). See the [Cross Service Integration documentation](/pages/public_cloud/public_cloud_databases/databases_07_cross_service_integration) for more information. For more details on logs forwarding, see the [Public Cloud Databases - How to setup logs forwarding](/pages/public_cloud/public_cloud_databases/databases_16_logs_to_customer) guide.
+Logs and metrics are available through the Control Panel, API and can be forwarded to Logs Data Platform. Additionally, cross service integration can be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your Cassandra logs in Opensearch and metrics in Dashboards service (metrics have to be exported first in a time series compatible engine such as PostgreSQL or M3db). See the [Cross Service Integration documentation](/pages/public_cloud/public_cloud_databases/databases_07_cross_service_integration) for more information. For more details on logs forwarding, see the [Public Cloud Databases - How to setup logs forwarding](/pages/public_cloud/public_cloud_databases/databases_16_logs_to_customer) guide.
 
 - **Logs retention**: 1000 lines of logs
 - **Metrics retention**: 1 calendar month

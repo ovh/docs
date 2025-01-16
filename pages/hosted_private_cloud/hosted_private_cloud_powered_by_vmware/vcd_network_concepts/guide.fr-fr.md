@@ -197,7 +197,7 @@ Si vous n’utilisez plus un préfixe IP qui a été alloué à votre espace IP,
 
 **Les topologies réseau (concept)**
 
-Vous retrouvez les topologies réseau depuis le control panel VCD en cliquant sur : `Mise en réseau | Espace ip  | Mon Nom d'IP space | Configuration | Topologie Réseau`{action}
+Vous retrouvez les topologies réseau depuis le control panel VCD en cliquant sur : `Mise en réseau | Espace ip  | Mon Nom d'IP space | Configuration | Topologie Réseau`{.action}
 
 Les topologies réseau sont utilisées pour configurer les espaces IP afin d'activer le trafic nord-sud.
 

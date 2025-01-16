@@ -30,7 +30,7 @@ The Cross Service Integrations for Logs and Metrics allow you for example:
 
 - To send Caching or MySQL metrics or Cassandra metrics in M3db or PostgreSQL.
 - To send PostgreSQL or MySQL metrics to OpenSearch.
-- To show metrics in Grafana.
+- To show metrics in Dashboards service.
 
 For that you need:
 
@@ -53,7 +53,7 @@ For that you need:
 
 Other integrations:
 
-| source →<br>↓ destination | grafana	| m3db	| kafka |
+| source →<br>↓ destination | dashboards service	| m3db	| kafka |
 |:--|---|---|---|
 | pg | dashboard, datasource | | |
 | opensearch | datasource | | |
@@ -101,7 +101,7 @@ Your first integration is ready:
 > Don't delete them.
 >
 
-#### Allow metrics visualization into Grafana
+#### Allow metrics visualization into Dashboards service
 
 Go to the `Service integration`{.action} tab of your `Destination service` service and click on `Add an integration`{.action}
 
@@ -120,9 +120,9 @@ Your second integration is ready:
 
 ![Result](images/databases_07_cross_service_integration-20220708160441618.png){.thumbnail}
 
-Connect to your Grafana instance and browse the dashboards:
+Connect to your Dashboards instance and browse the dashboards:
 
-![Grafana browse Dashboards](images/databases_07_cross_service_integration-2022070814063719.png){.thumbnail}
+![Browse Dashboards](images/databases_07_cross_service_integration-2022070814063719.png){.thumbnail}
 
 Then open your new dashboard:
 
@@ -162,7 +162,7 @@ Open the following API call, paste your service ID into the `serviceName` input 
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/cassandra
 >> >
-> Grafana
+> Dashboards
 >> > [!api]
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/grafana
@@ -224,7 +224,7 @@ Get integration capabilities related to your Public Cloud Databases service:
 >> > [!api]
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/cassandra/{clusterId}/capabilities/integration
 >> >
-> Grafana
+> Dashboards
 >> > [!api]
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/grafana/{clusterId}/capabilities/integration
 >> >
@@ -269,7 +269,7 @@ Get integration capabilities related to your Public Cloud Databases service:
 
 #### Store yours logs or metrics
 
-As a first step, you need to push your metrics or logs somewhere, in order to store them and retrieve the metrics with Grafana.
+As a first step, you need to push your metrics or logs somewhere, in order to store them and retrieve the metrics with Dashboards.
 
 For that, you need to create a new integration:
 
@@ -278,7 +278,7 @@ For that, you need to create a new integration:
 >> > [!api]
 >> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/cassandra/{clusterId}/integration
 >> >
-> Grafana
+> Dashboards
 >> > [!api]
 >> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/grafana/{clusterId}/integration
 >> >
@@ -325,15 +325,15 @@ Fill in the form with the information corresponding to the type of integration c
 
 The `destionationServiceId` and the `sourceServiceId` correspond to the destination cluster ID and to the source cluster ID.
 
-#### Allow metrics visualization into Grafana
+#### Allow metrics visualization into Dashboards service
 
-Now that metrics are stored somewhere, you need to connect your Public Cloud Databases service to a Grafana service.
+Now that metrics are stored somewhere, you need to connect your Public Cloud Databases service to a Dashboards service.
 
-For that, first create a Public Cloud Database for Grafana via our Control Panel or API.
+For that, first create a Public Cloud Database for Dashboards via our Control Panel or API.
 
 Once done, get the `GrafanaDashboard` integration capability related to the destination service:
 
-![Get Grafana Dashboard integration capabilitie](images/databases_07_cross_service_integration-20220708141900814.png){.thumbnail}
+![Get Dashboards integration capabilitie](images/databases_07_cross_service_integration-20220708141900814.png){.thumbnail}
 
 Then create a second integration from your *Destination* service name:
 
@@ -342,7 +342,7 @@ Then create a second integration from your *Destination* service name:
 >> > [!api]
 >> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/cassandra/{clusterId}/integration
 >> >
-> Grafana
+> Dashboards
 >> > [!api]
 >> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/grafana/{clusterId}/integration
 >> >
@@ -383,11 +383,11 @@ Then create a second integration from your *Destination* service name:
 >> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/caching/{clusterId}/integration
 >> >
 
-![Create Grafana Integration](images/databases_07_cross_service_integration-20220708180105894.png){.thumbnail}
+![Create Dashboards Integration](images/databases_07_cross_service_integration-20220708180105894.png){.thumbnail}
 
-Connect to your Grafana instance and browse the dashboards:
+Connect to your Dashboards instance and browse the dashboards:
 
-![Grafana browse Dashboards](images/databases_07_cross_service_integration-2022070814063719.png){.thumbnail}
+![Browse Dashboards](images/databases_07_cross_service_integration-2022070814063719.png){.thumbnail}
 
 Then open your new dashboard:
 

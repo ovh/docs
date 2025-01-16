@@ -1,12 +1,8 @@
 ---
 title: 'Aktywacja i konfiguracja Edge Network Firewall'
 excerpt: 'Dowiedz się, jak skonfigurować Edge Network Firewall dla Twoich usług'
-updated: 2024-01-05
+updated: 2024-12-16
 ---
-
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
->
 
 ## Wprowadzenie
 
@@ -38,6 +34,10 @@ Aby chronić usługi dostępne dla klientów korzystających z publicznych adres
 Edge Network Firewall zmniejsza ekspozycję na ataki DDoS, umożliwiając użytkownikom kopiowanie niektórych reguł firewall serwera na obrzeża sieci OVHcloud. Blokuje to przychodzące ataki jak najbliżej źródła, zmniejszając ryzyko przeciążenia zasobów serwerów lub połączeń z szafami w przypadku poważnych ataków.
 
 ### Aktywacja opcji Edge Network Firewall
+
+> [!primary]
+>
+> Do tej pory funkcja ta jest dostępna tylko dla adresów IPv4.
 
 > [!primary]
 >

@@ -29,7 +29,7 @@ This guide aims to equip you with the knowledge and skills to:
 - **Familiarity with cloud storage policies**: Knowledge of the policies and permissions necessary for performing object replication.
 - **CLI tools or management console access**: The ability to use your cloud provider's command line interface (CLI) tools or management console to set up and manage replication rules.
 - **Versioning enabled**: Versioning must be activated on your buckets if required by your cloud service for object replication.
-- **S3 User**: An S3 user account already created within your project.
+- **Object Storage User**: An Object Storage user account already created within your project.
 - **AWS CLI configuration**: The AWS CLI installed and configured on your system. For a guide on configuring the CLI, refer to the OVHcloud documentation on ["Getting started with Object Storage"](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage).
 
 ## Instructions
@@ -56,7 +56,7 @@ Implementing object replication ensures not only the safety and availability of 
 
 #### Basic concepts
 
-At its core, the OVHcloud Object Storage S3 Asynchronous Replication is designed to facilitate several key operations in the management and safeguarding of your data. This includes the following actions:
+At its core, the asynchronous replication is designed to facilitate several key operations in the management and safeguarding of your data. This includes the following actions:
 
 - **Exact replica creation**
 
@@ -81,7 +81,7 @@ The following table provides the **default** behavior of the OVHcloud Object Sto
 
 | What is replicated                                           | What is not replicated                                       |
 |--------------------------------------------------------------|--------------------------------------------------------------|
-| - Objects created *after* the upload of the replication configuration<br> - Unencrypted objects and objects encrypted with SSE-S3 (OVHcloud managed keys)<br> - Objects in the source bucket for which the bucket owner has permissions to read and access ACLs<br> - Object metadata from the source objects to the replicas<br> - S3 Object Lock retention configuration<br> - Object ACL updates<br> - Object tags <br><br><br><br>| - Objects created *before* the upload of the replication configuration<br> - Objects that have already been replicated to a previous destination<br> - Object replicas i.e. objects that are the result of a previous replication operation<br> - Objects encrypted with SSE-C (customer provided keys)<br> - Bucket configurations i.e. lifecycle configuration, CORS configuration, bucket ACLs, etc.<br> - Actions resulting from Lifecycle Configuration actions<br> - Delete marker i.e. objects deleted in the source bucket are not automatically deleted by default in the destination bucket<br> - Objects that are stored in the Cold Archive temporary storage<br> - Replication to a bucket in a different Public Cloud Project i.e. source and destination buckets must be in the same project |
+| - Objects created *after* the upload of the replication configuration<br> - Unencrypted objects and objects encrypted with SSE-OMK (OVHcloud managed keys)<br> - Objects in the source bucket for which the bucket owner has permissions to read and access ACLs<br> - Object metadata from the source objects to the replicas<br> - Object Lock retention configuration<br> - Object ACL updates<br> - Object tags <br><br><br><br>| - Objects created *before* the upload of the replication configuration<br> - Objects that have already been replicated to a previous destination<br> - Object replicas i.e. objects that are the result of a previous replication operation<br> - Objects encrypted with SSE-C (customer provided keys)<br> - Bucket configurations i.e. lifecycle configuration, CORS configuration, bucket ACLs, etc.<br> - Actions resulting from Lifecycle Configuration actions<br> - Delete marker i.e. objects deleted in the source bucket are not automatically deleted by default in the destination bucket<br> - Objects that are stored in the Cold Archive temporary storage<br> - Replication to a bucket in a different Public Cloud Project i.e. source and destination buckets must be in the same project |
 
 
 ### Replication configuration
@@ -224,7 +224,7 @@ The `ReplicationStatus` attribute can have the following values:
 
 ### Replication between buckets with object lock enabled
 
-Object Lock can be used with S3 Replication to enable automatic copying of locked objects across buckets. For replicated objects, the object lock configuration of the source bucket will be used in the destination bucket. However, if you upload an object directly to the destination bucket (outside of the replication process), it will use the lock configuration of the destination bucket.
+Object Lock can be used with replication to enable automatic copying of locked objects across buckets. For replicated objects, the object lock configuration of the source bucket will be used in the destination bucket. However, if you upload an object directly to the destination bucket (outside of the replication process), it will use the lock configuration of the destination bucket.
 
 > [!warning]
 > To replicate data in buckets with object lock on, you must have the following prerequisites:

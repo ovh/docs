@@ -9,11 +9,11 @@ td:nth-of-type(2) {
 }
 </style>
 
-We have designed the S3 storage classes to be **compatible with the S3 API**, considered as a benchmark in the object storage market. You can therefore use Object Storage with most data management tools via the endpoints defined by region and not storage class.
+We have designed the Object Storage storage classes to be **compatible with S3 **\*** API**, considered as a benchmark in the object storage market. You can therefore use Object Storage with most data management tools via the endpoints defined by region and not storage class.
 
-## Object Storage S3
+## Object Storage
 
-OVHcloud Object Storage S3 can be accessed through a unique endpoint: `https://s3.<region>.io.cloud.ovh.net`. This unique endpoint can address all buckets and all objects in both Standard and High Performance storage classes. All S3 API operations are supported with this unique endpoint.
+OVHcloud Object Storage can be accessed through a unique endpoint: `https://s3.<region>.io.cloud.ovh.net`. This unique endpoint can address all buckets and all objects in both Standard and High Performance storage classes. All operations are supported with this unique endpoint.
 
 ### List of available regions
 
@@ -130,7 +130,7 @@ OVHcloud Object Storage S3 can be accessed through a unique endpoint: `https://s
 
 The bucket endpoint is a URL, for example `https://my-bucket.s3.gra.io.cloud.ovh.net` that represents a virtual host style endpoint.
 
-### Mapping from AWS S3 Storage tiers to OVHcloud Storage tiers
+### Mapping from AWS S3 tiers to OVHcloud Storage tiers
 
 The mapping for **WRITE(PUT)** operations on the **io** endpoint is the following:
 
@@ -192,7 +192,7 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **io** endpoint is the
 </table>
 
 > [!warning]
-> Unlike AWS, Express One Zone will be treated as a regular storage class by OVHcloud and all S3 features and API operations will be available.
+> Unlike AWS, Express One Zone will be treated as a regular storage class by OVHcloud and all features and API operations will be available.
 
 ![Schema 1](images/io-mapping-v2.png)
 
@@ -202,7 +202,7 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **io** endpoint is the
 
 ### Endpoint retrocompatibility
 
-Although the **io** endpoint is be the preferred endpoint to access the OVHcloud Object Storage service, the **legacy** endpoint `https://s3.<region>.perf.cloud.ovh.net` will still be maintained for retrocompatibility purposes for tools and applications that do not support the latest AWS Express One Zone storage class. This legacy endpoint will also be able to address all buckets and all objects in both Standard and High Performance storage classes and will support all S3 API operations including `listBucket`.
+Although the **io** endpoint is be the preferred endpoint to access the OVHcloud Object Storage service, the **legacy** endpoint `https://s3.<region>.perf.cloud.ovh.net` will still be maintained for retrocompatibility purposes for tools and applications that do not support the latest AWS Express One Zone storage class. This legacy endpoint will also be able to address all buckets and all objects in both Standard and High Performance storage classes and will support all API operations including `listBucket`.
 
 The mapping for **WRITE(PUT)** operations on the **perf** endpoint is the following:
 
@@ -276,3 +276,5 @@ The mapping for **READ(GET/LIST/HEAD)** operations on the **perf** endpoint is t
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our [community of users](/links/community).
+
+**\***: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

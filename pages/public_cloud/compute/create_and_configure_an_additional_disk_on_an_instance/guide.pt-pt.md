@@ -1,13 +1,22 @@
 ---
 title: 'Criar e configurar um disco suplementar numa instância'
 excerpt: 'Saiba como associar um novo volume à sua instância Public Cloud'
-updated: 2023-10-16
+updated: 2024-12-24
 ---
 
-> [!primary]
->
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Objetivo
 
@@ -17,14 +26,16 @@ Tal pode ser útil nos seguintes casos:
 - Se deseja aumentar a sua capacidade de armazenamento sem ter de alterar o modelo de instância.
 - Se deseja dispor de um espaço de armazenamento de alta disponibilidade e de alta performance.
 - Se pretender mover o seu armazenamento e os seus dados para outra instância.
+- Se pretender preparar o ambiente para utilizar o [Terraform](/pages/public_cloud/compute/how_to_use_terraform), deverá preparar o ambiente.
 
 **Saiba como criar um disco adicional e configurá-lo na instância.**
 
 ## Requisitos
 
 - Estar ligado à [Área de Cliente OVHcloud](/links/manager).
-- Dispor de uma instância [Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external} na sua conta OVHcloud.
+- Dispor de uma instância [Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) na sua conta OVHcloud.
 - Ter acesso de administrador (sudo) à sua instância através de SSH.
+- Preparar o ambiente se deseja utilizar [Terraform](/pages/public_cloud/compute/how_to_use_terraform).
 
 > [!warning]
 >
@@ -35,34 +46,120 @@ Tal pode ser útil nos seguintes casos:
 
 ### Associar um novo volume
 
-Ligue-se à sua [Área de Cliente OVHcloud](/links/manager), aceda à secção `Public Cloud`{.action} e selecione o projeto Public Cloud em causa. A seguir, abra o `Block Storage`{.action} no menu à esquerda.
-
-Nesta parte, clique no botão `Criar um volume`{.action}.
-
-![selecione o projeto](images/avolume01.png){.thumbnail}
-
-Siga os passos de configuração para selecionar as opções de localização, o tipo de disco e a capacidade de disco. Introduza um nome para o volume e valide clicando em `Criar o volume`{.action}.
-
-![creme disk](images/avolume02.png){.thumbnail}
-
-O novo disco aparecerá na Área de Cliente.
-
-![configurar disk](images/avolume03.png){.thumbnail}
-
-À direita do volume, clique no botão `...`{.action} e selecione `Associar a instância`{.action}.
-
-![attach disk 01](images/avolume04.png){.thumbnail}
-
-Na nova janela, selecione uma instância na lista e clique em `Confirmar`{.action} para associar o disco.
-
-![attach disk 02](images/avolume05.png){.thumbnail}
-
-O processo de conexão do disco à sua instância vai então começar. A operação pode demorar alguns minutos.
-
-> [!warning]
->
-> Certifique-se de que não sai da página atual da sua Área de Cliente OVHcloud quando o disco está a ser ligado. Isto poderia interromper o processo.
->
+> [!tabs]
+> **Através da Área de Cliente OVHcloud**
+>> Ligue-se à sua [Área de Cliente OVHcloud](/links/manager), aceda à secção `Public Cloud`{.action} e selecione o projeto Public Cloud em causa. A seguir, abra o `Block Storage`{.action} no menu à esquerda.
+>>
+>> Nesta parte, clique no botão `Criar um volume`{.action}.
+>>
+>> ![selecione o projeto](images/avolume01.png){.thumbnail}
+>>
+>> Siga os passos de configuração para selecionar as opções de localização, o tipo de disco e a capacidade de disco. Introduza um nome para o volume e valide clicando em `Criar o volume`{.action}.
+>>
+>> ![creme disk](images/avolume02.png){.thumbnail}
+>>
+>> O novo disco aparecerá na Área de Cliente.
+>>
+>> ![configurar disk](images/avolume03.png){.thumbnail}
+>>
+>> À direita do volume, clique no botão `...`{.action} e selecione `Associar a instância`{.action}.
+>>
+>> ![attach disk 01](images/avolume04.png){.thumbnail}
+>>
+>> Na nova janela, selecione uma instância na lista e clique em `Confirmar`{.action} para associar o disco.
+>>
+>> ![attach disk 02](images/avolume05.png){.thumbnail}
+>>
+>> O processo de conexão do disco à sua instância vai então começar. A operação pode demorar alguns minutos.
+>> 
+>> > [!warning]
+>> >
+>> > Certifique-se de que não sai da página atual da sua Área de Cliente OVHcloud quando o disco está a ser ligado. Isto poderia interromper o processo.
+>> >
+> **Via Terraform**
+>> Para criar um volume Block Storage simples, precisa de 3 elementos:
+>>
+>> * O nome do volume
+>> * A região
+>> * O tamanho do volume em GB
+>>
+>> No nosso exemplo, vamos criar um Block Storage na região **GRA11** com um tamanho de **10 GB**. Adicione as seguintes linhas a um ficheiro chamado *simple_blockstorage.tf*:
+>>
+>> ```python
+>> # Criação de um volume block storage
+>> resource "openstack_blockstorage_volume_v3" "terraform_blockstorage" {
+>>   name   = "terraform_blockstorage" # Nome do volume de armazenamento em bloco
+>>   size   = 10                       # Tamanho do volume
+>>   region = "GRA11"                  # Região onde o volume deve ser criado
+>> }
+>> ```
+>> Depois vamos anexá-lo à instância de destino.
+>>
+>> > [!warning]
+>> > A instância e o volume devem estar na mesma região.
+>> >
+>>
+>> ```python
+>> # Anexar o volume à instância
+>> resource "openstack_compute_volume_attach_v2" "volume_attach" {
+>> instance_id = "<su_instance_id>"
+>> volume_id = openstack_blockstorage_volume_v3.terraform_volume.id
+>> }
+>> ```
+>>
+>> Pode criar o seu volume de tipo Block Storage e associá-lo à instância desejada introduzindo o seguinte comando:
+>>
+>> ```console
+>> terraform apply
+>> ```
+>>
+>> A saída deve ser como esta:
+>>
+>> ```console
+>> $ terraform apply
+>> Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+>>   + create
+>>
+>> Terraform will perform the following actions:
+>>
+>>   # openstack_blockstorage_volume_v3.terraform_blockstorage will be created
+>>   + resource "openstack_blockstorage_volume_v3" "terraform_blockstorage" {
+>>       + attachment        = (known after apply)
+>>       + availability_zone = (known after apply)
+>>       + id                = (known after apply)
+>>       + metadata          = (known after apply)
+>>       + name              = "terraform_blockstorage"
+>>       + region            = "GRA11"
+>>       + size              = 10
+>>       + volume_type       = (known after apply)
+>>     }
+>>
+>>   # openstack_compute_volume_attach_v2.volume_attach will be created
+>>   + resource "openstack_compute_volume_attach_v2" "volume_attach" {
+>>       + device      = (known after apply)
+>>       + id          = (known after apply)
+>>       + instance_id = "11cc1279-xxxx-xxxx-xxxx-3ace4c954780"
+>>       + region      = (known after apply)
+>>       + volume_id   = (known after apply)
+>>     }
+>>
+>> Plan: 2 to add, 0 to change, 0 to destroy.
+>>
+>> Do you want to perform these actions in workspace "test_terraform"?
+>>   Terraform will perform the actions described above.
+>>   Only 'yes' will be accepted to approve.
+>>
+>>   Enter a value: yes
+>>
+>> openstack_blockstorage_volume_v3.terraform_blockstorage: Creating...
+>> openstack_blockstorage_volume_v3.terraform_blockstorage: Still creating... [10s elapsed]
+>> openstack_blockstorage_volume_v3.terraform_blockstorage: Creation complete after 12s [id=daf3a86e-xxxx-xxxx-xxxx-ac7b6ffbb806]
+>> openstack_compute_volume_attach_v2.volume_attach: Creating...
+>> openstack_compute_volume_attach_v2.volume_attach: Still creating... [10s elapsed]
+>> openstack_compute_volume_attach_v2.volume_attach: Creation complete after 14s [id=11cc1279-xxxx-xxxx-xxxx-3ace4c954780/daf3a86e-xxxx-xxxx-xxxx-ac7b6ffbb806]
+>>
+>> Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
+>> ```
 
 ### Configuração do novo disco
 
@@ -357,80 +454,160 @@ Se deseja desassociar um volume da sua instância, a melhor prática é desmonta
 > Pode surgir uma mensagem de erro se os softwares ou processos estiverem a ser executados no disco suplementar. Neste caso, recomenda-se que interrompa todos os processos antes de continuar.
 >
 
-#### Em Linux
+Eis como **desmontar o volume** do sistema operativo antes de o desmontar da instância:
 
-Abra uma [ligação SSH à sua instância](/pages/public_cloud/compute/public-cloud-first-steps#etapa-3-criacao-de-uma-instancia) e utilize o comando abaixo para listar os discos ligados.
 
-```bash
-lsblk
-```
 
-```console
-NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
-vda 254:0 0 10G 0 disk
-└ vda1 254:1 0 10G 0 parte /
-vdb 8:0 0 10G 0 disk
-└ vdb1 8:1 0 10G 0 parte /mnt/disk
-```
+> [!tabs]
+> **Em Linux**
+>>
+>> Abra uma [ligação SSH à sua instância](/pages/public_cloud/compute/public-cloud-first-steps#etapa-3-criacao-de-uma-instancia) e utilize o comando abaixo para listar os discos ligados.
+>>
+>> ```bash
+>> lsblk
+>> ```
+>>
+>> ```console
+>> NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
+>> vda 254:0 0 10G 0 disk
+>> └─vda1 254:1 0 10G 0 part /
+>> vdb       8:0    0   10G  0 disk
+>> └─vdb1    8:1    0   10G  0 part /mnt/disk
+>> ```
+>>
+>> Desmonte a partição utilizando o seguinte comando:
+>>
+>> ```bash
+>> sudo umount /dev/vdb1
+>> ```
+>>
+>> Elimine o ID do periférico do fstab para terminar o processo de desmontagem. Se não o fizer, a partição será aumentada após uma reinicialização.
+>> 
+>> ```bash
+>> sudo nano/etc/fstab
+>> ```
+>>
+>> Registe e saia do editor.
+>>
+> **Em Windows**
+>>
+>> Crie uma ligação RDP (Remote Desktop) com a sua instância Windows.
+>>
+>> Uma vez ligado, clique com o botão direito do rato no menu `Iniciar`{.action} e abra a `Gestão de Discos`{.action}.
+>>
+>> ![gestão dos discos](images/start-menu.png){.thumbnail}
+>>
+>> Clique com o botão direito do rato sobre o volume que pretende desmontar e selecione `Alterar letra e os caminho de unidade...`{.action}.
+>>
+>> ![unmount disk](images/unmountdisk.png){.thumbnail}
+>>
+>> Clique em `Remover`{.action} para retirar o disco.
+>>
+>> ![remove disk](images/changedriveletter.png){.thumbnail}
+>>
+>> A seguir, clique em `Sim`{.action} para confirmar a eliminação da letra do leitor de disco.
+>>
+>> ![confirma remove disk](images/confirmunmounting.png){.thumbnail}
+>>
+>> Quando tiver terminado, pode fechar a janela de gestão do disco.
+>>
 
-Desmonte a partição utilizando o seguinte comando:
+Por fim, vamos desassociar o volume da instância:
 
-```bash
-sudo umount /dev/vdb1
-```
-
-Elimine o ID do periférico do fstab para terminar o processo de desmontagem. Se não o fizer, a partição será aumentada após uma reinicialização.
-
-```bash
-sudo nano/etc/fstab
-```
-
-Registe e saia do editor.
-
-Aceda à secção `Public Cloud`{.action} da Área de Cliente OVHcloud e clique em `Block Storage`{.action} no menu à esquerda em **Storage**.
-
-Clique no botão `...`{.action} junto do volume correspondente e selecione `Desassociar a instância`{.action}.
-
-![disk](images/detachinstance.png){.thumbnail}
-
-Clique em `Confirmar`{.action} na nova janela para lançar o processo.
-
-![confirma disk detach](images/confirminstancedetach.png){.thumbnail}
-
-#### Em Windows
-
-Crie uma ligação RDP (Remote Desktop) com a sua instância Windows.
-
-Uma vez ligado, clique com o botão direito do rato no menu `Iniciar`{.action} e abra a `Gestão de Discos`{.action}.
-
-![gestão dos discos](images/start-menu.png){.thumbnail}
-
-clique com o botão direito do rato sobre o volume que pretende desmontar e selecione `Alterar letra e os caminho de unidade...`{.action}.
-
-![unmount disk](images/unmountdisk.png){.thumbnail}
-
-Clique em `Remover`{.action} para retirar o disco.
-
-![remove disk](images/changedriveletter.png){.thumbnail}
-
-A seguir, clique em `Sim`{.action} para confirmar a eliminação da letra do leitor de disco.
-
-![confirma remove disk](images/confirmunmounting.png){.thumbnail}
-
-Quando tiver terminado, pode fechar a janela de gestão do disco.
-
-Aceda à secção `Public Cloud`{.action} da Área de Cliente OVHcloud e clique em `Block Storage`{.action} no menu à esquerda em **Storage**.
-
-Clique no botão `...`{.action} junto do volume correspondente e selecione `Desassociar a instância`{.action}.
-
-![disk](images/detachinstance.png){.thumbnail}
-
-Clique em `Confirmar`{.action} na nova janela para lançar o processo.
-
-![confirma disk detach](images/confirminstancedetach.png){.thumbnail}
+> [!tabs]
+> **Através da Área de Cliente OVHcloud**
+>> Aceda à secção `Public Cloud`{.action} da Área de Cliente OVHcloud e clique em `Block Storage`{.action} no menu à esquerda em **Storage**.
+>>
+>> Clique no botão `...`{.action} junto do volume correspondente e selecione `Desassociar a instância`{.action}.
+>>
+>> ![disk](images/detachinstance.png){.thumbnail}
+>>
+>> Clique em `Confirmar`{.action} na nova janela para lançar o processo.
+>>
+>> ![confirma disk detach](images/confirminstancedetach.png){.thumbnail}
+>>
+> **Via Terraform**
+>>
+>> Comece por eliminar estas linhas anteriormente criadas no seu ficheiro Terraform:
+>>
+>> ```python
+>> # Associar o volume à instância
+>> resource "openstack_compute_volume_attach_v2" "volume_attach" {
+>>   instance_id = "<votre_instance_id>"
+>>   volume_id   = openstack_blockstorage_volume_v3.terraform_volume.id
+>> }
+>> ```
+>>
+>> Queira introduzir o seguinte comando para verificar se o recurso correto vai ser eliminado:
+>>
+>> ```console
+>> terraform plan
+>> ```
+>> 
+>> A saída deve ser como esta:
+>> 
+>> ```console
+>> $ terraform plan
+>> openstack_compute_volume_attach_v2.va_1: Refreshing state... [id=11cc1279-xxxx-xxxx-xxxx-3ace4c954780/daf3a86e-xxxx-xxxx-xxxx-ac7b6ffbb806]
+>> openstack_blockstorage_volume_v3.terraform_volume: Refreshing state... [id=daf3a86e-xxxx-xxxx-xxxx-ac7b6ffbb806]
+>>
+>> Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+>>   - destroy
+>>
+>> Terraform will perform the following actions:
+>>
+>>   # openstack_compute_volume_attach_v2.va_1 will be destroyed
+>>   # (because openstack_compute_volume_attach_v2.va_1 is not in configuration)
+>>   - resource "openstack_compute_volume_attach_v2" "va_1" {
+>>       - device      = "/dev/sdb" -> null
+>>       - id          = "11cc1279-xxxx-xxxx-xxxx-3ace4c954780/daf3a86e-xxxx-xxxx-xxxx-ac7b6ffbb806" -> null
+>>       - instance_id = "11cc1279-xxxx-xxxx-xxxx-3ace4c954780" -> null
+>>       - region      = "GRA11" -> null
+>>       - volume_id   = "daf3a86e-xxxx-xxxx-xxxx-ac7b6ffbb806" -> null
+>>     }
+>> 
+>> Plan: 0 to add, 0 to change, 1 to destroy.
+>> ```
+>>
+>> Aplicar as alterações introduzindo este comando:
+>> 
+>> ```console
+>> $ terraform apply
+>> openstack_compute_volume_attach_v2.va_1: Refreshing state... [id=11cc1279-xxxx-xxxx-xxxx-3ace4c954780/daf3a86e-xxxx-xxxx-xxxx-ac7b6ffbb806]
+>> openstack_blockstorage_volume_v3.terraform_volume: Refreshing state... [id=daf3a86e-xxxx-xxxx-xxxx-ac7b6ffbb806]
+>>
+>> Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+>>   - destroy
+>>
+>> Terraform will perform the following actions:
+>>
+>>   # openstack_compute_volume_attach_v2.va_1 will be destroyed
+>>   # (because openstack_compute_volume_attach_v2.va_1 is not in configuration)
+>>   - resource "openstack_compute_volume_attach_v2" "va_1" {
+>>       - device      = "/dev/sdb" -> null
+>>       - id          = "11cc1279-xxxx-xxxx-xxxx-3ace4c954780/daf3a86e-xxxx-xxxx-xxxx-ac7b6ffbb806" -> null
+>>       - instance_id = "11cc1279-xxxx-xxxx-xxxx-3ace4c954780" -> null
+>>       - region      = "GRA11" -> null
+>>       - volume_id   = "daf3a86e-xxxx-xxxx-xxxx-ac7b6ffbb806" -> null
+>>     }
+>>
+>> Plan: 0 to add, 0 to change, 1 to destroy.
+>> 
+>> Do you want to perform these actions in workspace "test_terraform"?
+>>   Terraform will perform the actions described above.
+>>   Only 'yes' will be accepted to approve.
+>>
+>>   Enter a value: yes
+>>
+>> openstack_compute_volume_attach_v2.va_1: Destroying... [id=11cc1279-xxxx-xxxx-xxxx-3ace4c954780/daf3a86e-xxxx-xxxx-xxxx-ac7b6ffbb806]
+>> openstack_compute_volume_attach_v2.va_1: Still destroying... [id=11cc1279-xxxx-xxxx-xxxx-3ace4c954780/daf3a86e-xxxx-xxxx-xxxx-ac7b6ffbb806, 10s elapsed]
+>> openstack_compute_volume_attach_v2.va_1: Destruction complete after 17s
+>>
+>> Apply complete! Resources: 0 added, 0 changed, 1 destroyed.
+>> ```
 
 ## Quer saber mais?
 
 [Aumentar o tamanho de um disco adicional](/pages/public_cloud/compute/increase_the_size_of_an_additional_disk)
 
-Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com nossa [comunidade de utilizadores](/links/community).

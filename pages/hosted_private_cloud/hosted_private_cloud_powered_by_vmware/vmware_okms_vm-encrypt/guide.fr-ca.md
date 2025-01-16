@@ -667,7 +667,7 @@ Pour terminer l'étape 3, cliquez sur `SUIVANT`{.action}.
 
 Pour l'étape 4 (compatibilité de stockage), vous avez la compatibilité et l'incompatibilité de votre centre de données (PCC) Hosted Private Cloud VMware on OVHcloud.
 
-Quand vous avez terminé de vérifier les compatibilités de votre espace de stockage, cliquez sur `SUIVANT`{action}.
+Quand vous avez terminé de vérifier les compatibilités de votre espace de stockage, cliquez sur `SUIVANT`{.action}.
 
 ![VM Storage Policies Creation 04](images/vsphere_vm_policie_4-optim-resize.png){.thumbnail}
 

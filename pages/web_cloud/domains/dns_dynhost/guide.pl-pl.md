@@ -16,7 +16,7 @@ Aby uzyskać więcej informacji, zapoznaj się z naszymi przewodnikami:
 
 Aktualizacja rekordu DNS w sposób "dynamiczny" może zapobiec przedłużającej się przerwie w dostępności Twoich usług, jeśli nie dysponujesz adresem IP zwanym "stałym" (który się nie zmienia).
 
-Na przykład, **DynHost** może być używany, jeśli pacjent *samodzielnie hostuje* (w siedzibie firmy lub w domu, przechodząc przez **box** od **D**ostawca **D**ostęp do **I**nternet (**DDI**)), serwer gier wideo bez posiadania stałego adresu IP.
+Na przykład **DynHost** może być używany do samodzielnego hostowania serwera gier (znajdującego się w siedzibie firmy lub w domu) bez statycznego adresu IP, co oznacza, że dostawca usług internetowych (**ISP**) regularnie przydziela nowy adres IP.
 
 > [!primary]
 >

@@ -195,6 +195,6 @@ Find more information about the firewall rule with an NSX gateway in [our guide]
 - [Install SAProuter](https://support.sap.com/en/tools/connectivity-tools/saprouter/install-saprouter.html)
 - [Gateway Firewall Management in NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-06-manage-gateway-firewall)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pl/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

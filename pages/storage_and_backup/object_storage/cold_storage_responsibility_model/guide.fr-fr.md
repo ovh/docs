@@ -32,13 +32,13 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
 | Produce, route, deliver and maintain physical and virtual Instances for service hosting | I | RA |
-| Create S3 credentials for an OpenStack user | RA |  |
+| Create Object Storage credentials for an OpenStack user | RA |  |
 
 #### 2.2. Reversibility model
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Use S3 API to import data in bucket | RA |  |
+| Use Object Storage API to import data in bucket | RA |  |
 
 ### 3. Service usage
 
@@ -60,7 +60,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | --- | --- | --- |
 | Manage access rights to the OVHcloud Control Panel | RA | I |
 | Manage physical and logical access to infrastructures for OVHcloud teams |  | RA |
-| Manage S3 security policy of containers and object created before activating data archive command | RA |  |
+| Manage Object Storage security policy of containers and object created before activating data archive command | RA |  |
 
 ##### **3.1.3. Monitoring**
 
@@ -118,7 +118,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
 | Manage reversibility operations | RA |  |
-| Migrate/transfer data using API S3 | RA |  |
+| Migrate/transfer data using Object Storage API | RA |  |
 
 ### 5. End of service
 
@@ -126,11 +126,11 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Destroy data from the Object Storage Containers Service via API S3 | RA |  |
+| Destroy data from the Object Storage Containers Service via Object Storage API | RA |  |
 | Release allocated resources following service termination |  | RA |
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our community of users on <https://community.ovh.com/en/>
+Join our [community of users](/links/community).

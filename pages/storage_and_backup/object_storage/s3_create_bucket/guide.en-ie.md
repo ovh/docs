@@ -1,12 +1,12 @@
 ---
 title: Object Storage - Creating a bucket
-excerpt: Learn how to create an S3 Object Storage bucket from the OVHcloud Control Panel
+excerpt: Learn how to create an Object Storage bucket from the OVHcloud Control Panel
 updated: 2024-10-16
 ---
 
 ## Objective
 
-**Learn how to create an S3 Object Storage bucket from the OVHcloud Control Panel.**
+**Learn how to create an Object Storage bucket from the OVHcloud Control Panel.**
 
 > [!primary]
 >
@@ -53,7 +53,7 @@ You must link a user to the bucket:
 
 ![Link to user](images/object_storage-bucke_creation_step4_1.png)
 
-To do this, you can either link an existing S3 user:
+To do this, you can either link an existing Object Storage user:
 
 ![Link to user](images/object_storage-bucke_creation_step4_2.png)
 
@@ -61,9 +61,9 @@ You can view the user credentials by clicking on `View credentials`{.action}:
 
 ![view credentials](images/object_storage-bucke_creation_step4_3.png)
 
-Or you can create a new S3 user:
+Or you can create a new Object Storage user:
 
-![Create S3 user](images/object_storage-bucke_creation_step4_4.png)
+![Create an Object Storage user](images/object_storage-bucke_creation_step4_4.png)
 
 At this stage, you can decide whether or not to enable **versioning**.
 
@@ -71,7 +71,7 @@ Versioning allows you to keep multiple variants of an object in the same bucket.
 
 ![Enabling versioning](images/object_storage-bucke_creation_step5.png)
 
-You can now decide whether or not you wish to **encrypt your data** using [SSE-S3 (server-side encryption with OVHcloud Managed Keys)](/pages/storage_and_backup/object_storage/s3_encrypt_your_objects_with_sse_c).
+You can now decide whether or not you wish to **encrypt your data** using [SSE-OMK (server-side encryption with OVHcloud Managed Keys)](/pages/storage_and_backup/object_storage/s3_encrypt_your_objects_with_sse_c).
 
 ![Encryption](images/object_storage-bucke_creation_step6.png)
 

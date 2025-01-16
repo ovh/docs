@@ -132,7 +132,6 @@ Außerdem empfehlen wir dringend, die Regel **"Default policy = DROP"** für jed
 #### Rust
 
 - **Rust** wird von einem dedizierten Schutzprofil auf allen Generationen von Bare Metal Game Servern unterstützt. Beachten Sie, dass wir dieses Schutzprofil (d. h. Unterstützung von *RakNet* Cookies) für die dritte Generation von Game Dedicated Servern (Version 2024) aktualisiert haben.  
-Weitere Informationen zum Hosting von Rust auf OVHcloud Servern finden Sie [hier](/links/bare-metal/game-rust).
 
 #### Minecraft
 

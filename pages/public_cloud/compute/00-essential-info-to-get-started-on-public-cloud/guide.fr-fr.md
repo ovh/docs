@@ -72,7 +72,7 @@ Il y a plusieurs manière de manipuler les ressources Public Cloud. Qu'on décou
 
 - Pour découvrir les produits, l'espace client vous accompagne dans la création de ressources en vous amenant à choisir la performance du produit, sa localisation, la personnalisation que vous souhaitez ou encore d'autres paramètres comme son mode de facturation.
 
-- Pour automatiser les déploiements et industrialiser vos architectures, vous pouvez également utiliser les outils du marché en vous connectant directement aux APIs standards comme l'API S3, les API d'OpenStack ou même Kubernetes.
+- Pour automatiser les déploiements et industrialiser vos architectures, vous pouvez également utiliser les outils du marché en vous connectant directement aux APIs standards comme l'API Amazon S3, les API d'OpenStack ou même Kubernetes.
 
 ### Démarrage : prise en main
 
@@ -110,7 +110,7 @@ Vous serez peut être amené à gérer la question des quotas.
 Vous pouvez avoir besoin de gérer plusieurs utilisateurs qui vont intervenir sur votre projet.
 <br>Vous avez alors deux possibilités :
 
-- Si vous souhaitez utiliser les APIs OpenStack ou S3, ou l'interface Horizon, vous aurez à [créer des utilisateurs](/pages/public_cloud/compute/create_and_delete_a_user) pour cela. Les utilisateurs peuvent éventuellement avoir des droits limités afin de sécuriser les périmètres d'action.
+- Si vous souhaitez utiliser les APIs OpenStack ou Amazon S3, ou l'interface Horizon, vous aurez à [créer des utilisateurs](/pages/public_cloud/compute/create_and_delete_a_user) pour cela. Les utilisateurs peuvent éventuellement avoir des droits limités afin de sécuriser les périmètres d'action.
 - Si vous n'avez pas besoin d'accéder aux APIs ou à Horizon, vous pouvez [associer un autre compte client OVHcloud](/pages/public_cloud/compute/delegate_projects) en complément sur votre projet.
 
 ## Aller plus loin <a name="gofurther"></a>
@@ -122,7 +122,6 @@ Voici quelques ressources générales qui vous aideront dans votre démarrage su
 |[FAQ](/pages/public_cloud/compute/faq_pci)|Les questions les plus fréquentes au sujet de Public Cloud.|
 |[Lexique](/pages/public_cloud/compute/introduction_about_instances)|Les concepts et définitions dont vous aurez besoin pour avancer.|
 |[Disponibilité des services par localisation](https://www.ovhcloud.com/fr/public-cloud/regions-availability/)|Les tableaux de disponibilité des services à travers les différentes localisations.|
-|[Changelog des images](/pages/public_cloud/compute/image_changelog)|Les changements apportés aux images système disponibles publiquement.|
 
 Dans la pratique, voici également quelques guides qui vous aideront au démarrage :
 

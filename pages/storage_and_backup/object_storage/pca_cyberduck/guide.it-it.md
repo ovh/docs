@@ -26,7 +26,7 @@ Il client Swift Cyberduck è una delle soluzioni disponibili ed è facilmente co
 ## Prerequisiti
 
 - Scarica e installa [Cyberduck](https://cyberduck.io/).
-- Disporre delle credenziali utente (*OS_USERNAME*) e progetto (*OS_PROJECT_NAME* o *OS_TENANT_NAME*) è possibile scaricare il file "OpenRC" nel menu [Users and Roles](/pages/public_cloud/compute/loading_openstack_environment_variables#step-1-recupera-le-variabili) dallo [Spazio Cliente Public Cloud OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+- Disporre delle credenziali utente (*OS_USERNAME*) e progetto (*OS_PROJECT_NAME* o *OS_TENANT_NAME*) è possibile scaricare il file "OpenRC" nel menu [Users and Roles](/pages/public_cloud/compute/loading_openstack_environment_variables#step-1-recupera-le-variabili) dallo [Spazio Cliente Public Cloud OVHcloud](/links/manager).
 - Disporre della password utente OpenStack
 
 Per modificare la password utente OpenStack, consulta [questa guida](/pages/public_cloud/compute/change_openstack_user_password_in_horizon).

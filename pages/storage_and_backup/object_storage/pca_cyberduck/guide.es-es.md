@@ -28,7 +28,7 @@ También hay disponibles otras interfaces, cuya configuración es similar a la q
 ## Requisitos
 
 - Descargar e instalar [Cyberduck](https://cyberduck.io/).
-- Disponer de las claves de usuario (*OS_USERNAME*) y del proyecto (*OS_PROJECT_NAME* o *OS_TENANT_NAME*), que puede obtener descargando el archivo OpenRC en el menú [Users and Roles](/pages/public_cloud/compute/loading_openstack_environment_variables#paso-1-obtener-las-variables) de su [área de cliente Public Cloud de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Disponer de las claves de usuario (*OS_USERNAME*) y del proyecto (*OS_PROJECT_NAME* o *OS_TENANT_NAME*), que puede obtener descargando el archivo OpenRC en el menú [Users and Roles](/pages/public_cloud/compute/loading_openstack_environment_variables#paso-1-obtener-las-variables) de su [área de cliente Public Cloud de OVHcloud](/links/manager).
 - Disponer de su contraseña de usuario de OpenStack.
 
 Si ya no conoce la contraseña de usuario de OpenStack, puede cambiarla siguiendo [esta guía](/pages/public_cloud/compute/change_openstack_user_password_in_horizon).
@@ -68,6 +68,6 @@ Haga clic en `Conectar`{.action}. Una vez que se haya conectado, podrá acceder 
 
 [Empezar con la API Swift](/pages/storage_and_backup/object_storage/pcs_getting_started_with_the_swift_api)
 
-Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es-es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
+Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](/links/professional-services) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

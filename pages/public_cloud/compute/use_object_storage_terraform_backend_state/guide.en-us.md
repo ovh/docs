@@ -91,7 +91,7 @@ terraform {
       skip_region_validation      = true
       skip_s3_checksum            = true
 
-      # The following fields should be added if your S3 user credentials are not
+      # The following fields should be added if your Object Storage user credentials are not
       # already configured in files ~/.aws/credentials, ~/.aws/config or in
       # environment variables.
       access_key                  = "s3 user access key"
@@ -117,7 +117,7 @@ terraform {
       skip_requesting_account_id  = true
       skip_s3_checksum            = true
 
-      # The following fields should be added if your S3 user credentials are not
+      # The following fields should be added if your Object Storage user credentials are not
       # already configured in files ~/.aws/credentials, ~/.aws/config or in
       # environment variables.
       access_key                  = "s3 user access key"
@@ -126,7 +126,7 @@ terraform {
 }
 ```
 
-In this file you define a [S3 Terraform backend](https://www.terraform.io/language/settings/backends/s3) in the `gra` region. Do not hesitate to change this parameter if you created an Object Storage container in another region.
+In this file you define an [Object Storage Terraform backend](https://www.terraform.io/language/settings/backends/s3) in the `gra` region. Do not hesitate to change this parameter if you created an Object Storage container in another region.
 
 ### Terraform Init
 

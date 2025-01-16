@@ -22,7 +22,7 @@ details[open]>summary::before {
 
 The SSH protocol enables a secure communication channel over public networks in a client-server architecture. Key pairs can be used to authenticate these SSH connections between two trusted hosts, for example a desktop client and a remote server.
 
-A key set consist of a public key that can be shared and a private key that remains secret. Placed on a server, the public key allows any client that has the corresponding private key to connect to it without the need to enter a password.
+A key set consists of a public key that can be shared and a private key that remains secret. Placed on a server, the public key allows any client that has the corresponding private key to connect to it without the need to enter a password.
 
 This method is usually the best compromise between security and convenience and the default for Public Cloud instances.
 
@@ -43,7 +43,7 @@ This method is usually the best compromise between security and convenience and 
 
 ### Creating key pairs for OpenSSH connections
 
-The following instructions will explain how to create and manage key pairs for remote connections with **OpenSSH** from the command line. Most current operating systems include this feature without needing to install additional software.
+The following instructions will explain how to create and manage key pairs for remote connections with **OpenSSH** from the **command line**. Most current operating systems include this feature without needing to install additional software.
 
 If you prefer a graphical user interface, you can find many software applications for every type of OS that enable you to connect to remote hosts via the OpenSSH protocol.
 
@@ -360,7 +360,7 @@ Your public key has been saved in KeyFileName_rsa.pub.
 When connecting to the corresponding instance, specify the name of the private key file in addition to the connecting user and server details:
 
 ```bash
-ssh -i C:\Users\Username\.ssh/KeyFileName" user@IP_ADDRESS
+ssh -i C:\Users\Username\.ssh/KeyFileName user@IP_ADDRESS
 ```
 
 Example:

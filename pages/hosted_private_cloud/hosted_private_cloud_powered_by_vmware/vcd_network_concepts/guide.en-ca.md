@@ -204,7 +204,7 @@ If you no longer use an IP prefix that has been allocated to your IP space, you 
 
 **Network topologies (concept)**
 
-You can view the network topology from the VCD control panel by clicking on: `Networking | IP Spaces | IP space's name | Configuration | Network Topology`{action}
+You can view the network topology from the VCD control panel by clicking on: `Networking | IP Spaces | IP space's name | Configuration | Network Topology`{.action}
 
 Network topologies are used to configure IP spaces to enable north-south traffic.
 

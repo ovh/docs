@@ -1,13 +1,13 @@
 ---
 title: "Hébergement web - Activer l’hébergement gratuit 100M"
 excerpt: "Découvrez comment activer votre hébergement gratuit 100M"
-updated: 2024-12-05
+updated: 2024-12-06
 ---
 
 ## Objectif
 
-Avec [l'hébergement gratuit 100M](/links/web/domains-free-hosting){.external}, OVHcloud vous offre un hébergement Web de 100 Mo et un compte e-mail disposant de 5 Go de stockage. 
-Ce guide vous présente comment activer cette offre sur votre [nom de domaine](/links/web/domains){.external}.
+Avec [l'hébergement gratuit 100M](/links/web/domains-free-hosting), OVHcloud vous offre un hébergement Web de 100 Mo et un compte e-mail disposant de 5 Go de stockage. 
+Ce guide vous présente comment activer cette offre sur votre [nom de domaine](/links/web/domains).
 
 > [!warning]
 >
@@ -29,7 +29,7 @@ Ce guide vous présente comment activer cette offre sur votre [nom de domaine](/
 
 ## En pratique
 
-Pour activer votre hébergement gratuit 100M, cliquez sur les onglets ci-dessous pour afficher successivement chacune des 4 étapes.
+Pour activer votre hébergement gratuit 100M, cliquez sur les onglets ci-dessous pour afficher successivement chacune des **4** étapes.
 
 > [!tabs]
 > **Etape 1**
@@ -85,9 +85,9 @@ Pour activer votre hébergement gratuit 100M, cliquez sur les onglets ci-dessous
 >
 > Pour plus de détails, consultez nos [offres d'hébergement](/links/web/hosting).
 
-Une fois votre commande validée, un e-mail vous sera transmis avec les informations de [connexion FTP](/pages/web_cloud/web_hosting/ftp_connection) à votre hébergement gratuit 100M.
+Une fois votre commande validée, un e-mail vous sera transmis avec les informations de [connexion FTP](/pages/web_cloud/web_hosting/ftp_connection) à votre **hébergement gratuit 100M**.
 
-Consultez le guide de [création d'un compte E-mail MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_creation) pour profiter de l'adresse e-mail incluse avec votre hébergement gratuit 100M.
+Consultez le guide de [création d'un compte E-mail MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_creation) pour profiter de l'adresse e-mail incluse avec votre **hébergement gratuit 100M**.
 
 ## Aller plus loin
 

@@ -6,16 +6,16 @@ updated: 2024-03-08
 
 ## Objective
 
-A [Gateway](https://www.ovhcloud.com/de/public-cloud/gateway/) offers a secure outbound connection method from your private network instances or the ability to use Floating IPs with your instance or Load Balancer for service exposition.
+A [Gateway](/links/public-cloud/gateway) offers a secure outbound connection method from your private network instances or the ability to use Floating IPs with your instance or Load Balancer for service exposition.
 
-This can be created via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), the [OpenStack API](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api) or the [OVHcloud API](https://eu.api.ovh.com/).
+This can be created via the [OVHcloud Control Panel](/links/manager), the [OpenStack API](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api) or the [OVHcloud API](/links/api).
 
 **Learn how to create a private network with a gateway.**
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/de/public-cloud/) in your OVHcloud account
-- Access to the [OVHcloud API](https://eu.api.ovh.com/), the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) or the OpenStack command line environment ([Tutorial](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api))
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
+- Access to the [OVHcloud API](/links/api), the [OVHcloud Control Panel](/links/manager) or the OpenStack command line environment ([Tutorial](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api))
 - The [OpenStack Command Line Interface](https://docs.openstack.org/newton/user-guide/common/cli-install-openstack-command-line-clients.html){.external} tool installed on your working environment (optional)
 
 ## Instructions
@@ -28,7 +28,7 @@ This can be created via the [OVHcloud Control Panel](https://www.ovh.com/auth/?a
 > [!tabs]
 > **Step 1**
 >>
->> Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) and open your `Public Cloud`{.action} project.
+>> Log in to your [OVHcloud Control Panel](/links/manager) and open your `Public Cloud`{.action} project.
 >>
 >> Click on `Gateway`{.action} in the left-hand menu under **Network**.
 >>
@@ -92,6 +92,49 @@ This can be created via the [OVHcloud Control Panel](https://www.ovh.com/auth/?a
 >>
 >> ![new private network](images/mynewgateway.png){.thumbnail}
 >>
+
+### Via Terraform
+
+Before proceeding, it is recommended that you consult this guide:
+
+- [How to use Terraform](/pages/public_cloud/compute/how_to_use_terraform)
+
+Once your environment is ready, you can create a Terraform file called 'private_network_simple.tf' and write the following: 
+
+```python
+# Create a Private Network
+resource "ovh_cloud_project_network_private" "mypriv" {
+  service_name  = "my_service_name"  # Replace with your OVHcloud project ID
+  vlan_id       = "0"             # VLAN ID (usually 0)
+  name          = "mypriv"
+  regions       = ["GRA11"]
+}
+# Create a private subnet
+resource "ovh_cloud_project_network_private_subnet" "myprivsub" {
+  service_name  = ovh_cloud_project_network_private.mypriv.service_name
+  network_id    = ovh_cloud_project_network_private.mypriv.id
+  region        = "GRA11"
+  start         = "10.0.0.2"
+  end           = "10.0.255.254"
+  network       = "10.0.0.0/16"
+  dhcp          = true
+}
+# Create a custom gateway
+resource "ovh_cloud_project_gateway" "gateway" {
+  service_name = ovh_cloud_project_network_private.mypriv.service_name
+  name         = "my-gateway"
+  model        = "s"  # Gateway model ("s" for small, "m" for medium, etc.)
+  region       = ovh_cloud_project_network_private_subnet.myprivsub.region
+  network_id   = tolist(ovh_cloud_project_network_private.mypriv.regions_attributes[*].openstackid)[0]
+  subnet_id    = ovh_cloud_project_network_private_subnet.myprivsub.id
+}
+```
+
+You can create your resources by entering the following command:
+
+```console
+terraform apply
+```
 
 ### Via the OpenStack API
 
@@ -206,8 +249,8 @@ Before proceeding, it is recommended that you consult these guides:
 
 ## Go further
 
-Learn more about Gateway and its scenarios on our [dedicated page](https://www.ovhcloud.com/de/public-cloud/gateway/).
+Learn more about Gateway and its scenarios on our [dedicated page](/links/public-cloud/gateway).
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).

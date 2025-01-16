@@ -1,6 +1,6 @@
 ---
 title: Python - How to use Object Storage with Apache Spark on the Data Processing platform
-excerpt: OpenStack Swift and its S3 compatible API is a common way to store the data you want to use for your Apache Spark jobs. Let's find out how to do it in Python!
+excerpt: OpenStack Swift and its S3* compatible API is a common way to store the data you want to use for your Apache Spark jobs. Let's find out how to do it in Python!
 updated: 2021-01-20
 ---
 
@@ -12,7 +12,8 @@ We will use both the OpenStack Swift native API and its S3 API in read/write mod
 Samples are based on the well-known WordCount. We will first read data from a text file, then count the frequence of each word in this particular file.
 
 ## Requirements
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+
+- Access to the [OVHcloud Control Panel](/links/manager).
 - An OVHcloud account
 - A cloud project in your OVHcloud account (see [How to create a cloud project](/pages/public_cloud/compute/create_a_public_cloud_project){.external} for details).
 - Data Processing activated (see [How to activate the Data Processing service](/pages/public_cloud/data_analytics/data_processing/30_HOWTO_activate_project){.external} for details).
@@ -71,12 +72,12 @@ if __name__ == "__main__":
 Find below the code in Python that:
 
 - reads an object 'wordcount.txt' in an OVHcloud Object Storage container using its S3 API
-- stores the number of occurrences per word in a S3 object
+- stores the number of occurrences per word in an object
 - prints the result in output log of the job
 
 Save it in a file called 'wordcount_s3only.py' or download it from this repository: [Data Processing Samples - Object Storage](https://github.com/ovh/data-processing-samples/tree/master/python_objectStorage/wordcount_s3only.py) [[1]](#notes).
 
-Credentials provided for S3 can concern any OVHcloud Object Storage container. In this sample, you can upload the wordcount.txt file in any Object Storage container or account and it is not necessary that you upload it in the same container as the one that you upload the source code. Just you need to generate the proper access key and secret key for that container. (See [How to create EC2 credentials](/pages/storage_and_backup/object_storage/pcs_getting_started_with_the_swift_s3_api){.external} for more details)
+Credentials provided can concern any OVHcloud Object Storage container. In this sample, you can upload the wordcount.txt file in any Object Storage container or account and it is not necessary that you upload it in the same container as the one that you upload the source code. Just you need to generate the proper access key and secret key for that container. (See [How to create EC2 credentials](/pages/storage_and_backup/object_storage/pcs_getting_started_with_the_swift_s3_api){.external} for more details)
 
 ```python
 from __future__ import print_function
@@ -131,8 +132,8 @@ In this sample, the wordcount.txt should be uploaded to the same container as yo
 
 Save it in a file called 'wordcount_both.py' or download it from this repository: [Data Processing Samples - Object Storage](https://github.com/ovh/data-processing-samples/tree/master/python_objectStorage/wordcount_both.py) [[1]](#notes).
 
-Credentials provided for S3 can concern any OVHcloud Object Storage container. 
-In this sample you need to generate S3 access key and secret key for the destination container in which you would like to write the result. 
+Credentials provided can concern any OVHcloud Object Storage container. 
+In this sample you need to generate an Object Storage access key and secret key for the destination container in which you would like to write the result. 
 (See [How to create EC2 credentials](/pages/storage_and_backup/object_storage/pcs_getting_started_with_the_swift_s3_api){.external} for more details)
 Thus, you can read data from your Swift container and write the result in another container.
 
@@ -182,13 +183,13 @@ if __name__ == "__main__":
 Boto3 is the Amazon Web Services (AWS) Software Development Kit (SDK) for Python, which allows Python developers to write software that makes use of services like Amazon S3 and Amazon EC2.
 [Boto3 - the AWS SDK for Python](https://pypi.org/project/boto3/) 
 
-Find below the code in Python that stores a basic string in S3 object.
+Find below the code in Python that stores a basic string in an object.
 
 Save it in a file called 'boto3_sample.py' or download it from this repository: [Data Processing Samples - Object Storage](https://github.com/ovh/data-processing-samples/tree/master/python_objectStorage/boto3_sample.py) [[1]](#notes).
 
-Credentials provided for S3 can concern any OVHcloud Object Storage container.
+Credentials provided can concern any OVHcloud Object Storage container.
 
-Here we don't use Spark but sometimes depending on your use cases you may have to interact with S3 outside the Apache Spark framework.
+Here we don't use Spark but sometimes depending on your use cases you may have to interact with S3 compatible Object Storage outside the Apache Spark framework.
 
 ```python
 import boto3
@@ -216,6 +217,8 @@ if __name__ == "__main__":
 
 [1] Please select the tag related to the Spark version you want to use.
 
+**\***: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.
+
 ## Go further
 
 These samples are quite basic. They provide the first step to interact with Object Storage from within your code and, then, go further.
@@ -225,4 +228,3 @@ Concerning the 'WordCount' use case, here is a link to the tutorial with a more 
 If you are not familiar with Apache Spark, we recommend you to visit [Apache Spark's official website](https://spark.apache.org/) and [pyspark's documentation](https://spark.apache.org/docs/latest/api/python/index.html).
 
 You can send your questions, suggestions or feedbacks in our community of users on our [Discord](https://discord.gg/VVvZg8NCQM){.external} in the channel **#dataprocessing-spark**
-

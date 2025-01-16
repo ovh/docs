@@ -1,7 +1,7 @@
 ---
 title: Using a custom gateway on an OVHcloud Managed Kubernetes cluster
 excerpt: Find out how to use a custom gateway on an OVHcloud Managed Kubernetes working with vRack private network.
-updated: 2022-07-25
+updated: 2025-01-06
 ---
 
 ## Objectives
@@ -34,7 +34,8 @@ At the end of this tutorial you should have the following flow:
 
 - A [Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) in your OVHcloud account.
 - The [OpenStack API CLI](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api) installed.
-- Be familiar with the [OVHcloud API](/pages/manage_and_operate/api/first-steps).
+- Being familiar with the [OVHcloud API](/pages/manage_and_operate/api/first-steps).
+- Being familiar with [Terraform](/pages/public_cloud/compute/how_to_use_terraform) if you wish to use it.
 - The JSON parser tool [jq](https://stedolan.github.io/jq/){.external} installed.
 
 ## Initialization
@@ -317,28 +318,6 @@ Now the network is ready. Create an OVHcloud Managed Kubernetes cluster, specify
 
 > Note: until the end of this tutorial, we are only using the `GRA9` region, but you can repeat the exact same steps to create a cluster on the `GRA11` region.
 
-Create a **tpl/data-kube.json.tpl** file as data and add the right parameters. The files should be like:
-
-```json
-{
-  "region": "GRA9",
-  "name": "demo",
-  "version": "1.23",
-  "nodepool": {
-    "flavorName": "b2-7",
-    "antiAffinity": false,
-    "monthlyBilled": false,
-    "autoscale": false,
-    "desiredNodes": 3
-  },
-  "privateNetworkId": "@privateNetworkId@",
-  "privateNetworkConfiguration" :{
-        "privateNetworkRoutingAsDefault": true,
-        "defaultVrackGateway": "192.168.0.1"
-  }
-}
-``` 
-
 > [!primary]
 > In this guide we defined `1.23` version for the Kubernetes cluster but you can use another supported version.
 >
@@ -347,6 +326,28 @@ First, get the private network IDs (pvnwGRA9Id & pvnwGRA11Id), then create the O
 
 > [!tabs]
 > Bash
+>> Create a **tpl/data-kube.json.tpl** file as data and add the right parameters. The files should be like:
+>>
+>> ```json
+>> {
+>> "region": "GRA9",
+>> "name": "demo",
+>> "version": "1.23",
+>> "nodepool": {
+>>   "flavorName": "b2-7",
+>>   "antiAffinity": false,
+>>   "monthlyBilled": false,
+>>   "autoscale": false,
+>>   "desiredNodes": 3
+>> },
+>> "privateNetworkId": "@privateNetworkId@",
+>> "privateNetworkConfiguration" :{
+>>       "privateNetworkRoutingAsDefault": true,
+>>       "defaultVrackGateway": "192.168.0.1"
+>> }
+>> }
+>> ```
+>> 
 >> ```bash
 >> # Get the GRA9 private network Id
 >> export pvnwGRA9Id="$(utils/ovhAPI.sh GET /cloud/project/$OS_TENANT_ID/network/private/${vlanId} | jq '.regions[] | select(.region=="GRA9")' | jq -r .openstackId)" && echo $pvnwGRA9Id
@@ -354,6 +355,37 @@ First, get the private network IDs (pvnwGRA9Id & pvnwGRA11Id), then create the O
 >> cat tpl/data-kube.json.tpl | sed -e "s|@privateNetworkId@|$pvnwGRA9Id|g" > tpl/data-kube.json
 >> # Create the kube cluster
 >> export kubeId="$(utils/ovhAPI.sh POST /cloud/project/$OS_TENANT_ID/kube "$(cat tpl/data-kube.json)" | jq -r .id)" && echo $kubeId
+>> ```
+>>
+>> You should have a result like this:
+>>
+>> ```console
+>> $ export pvnwGRA9Id="$(utils/ovhAPI.sh GET /cloud/project/$OS_TENANT_ID/network/private/${vlanId} | jq '.regions[] | select(.region=="GRA9")' | jq -r .openstackId)" && echo >> $pvnwGRA9Id
+>> d9775b7c-c267-44b4-b758-6e827b0a69bb
+>>
+>> $ cat tpl/data-kube.json.tpl | sed -e "s|@privateNetworkId@|$pvnwGRA9Id|g" > tpl/data-kube.json
+>>
+>> $ cat tpl/data-kube.json
+>> {
+>>   "region": "GRA9",
+>>   "name": "demo",
+>>   "version": "1.23",
+>>   "nodepool": {
+>>     "flavorName": "b2-7",
+>>     "antiAffinity": false,
+>>     "monthlyBilled": false,
+>>     "autoscale": false,
+>>     "desiredNodes": 3
+>>   },
+>>   "privateNetworkId": "d9775b7c-c267-44b4-b758-6e827b0a69bb",
+>>   "privateNetworkConfiguration" :{
+>>         "privateNetworkRoutingAsDefault": true,
+>>         "defaultVrackGateway": "192.168.0.1"
+>>   }
+>> }
+>>
+>> $ export kubeId="$(utils/ovhAPI.sh POST /cloud/project/$OS_TENANT_ID/kube "$(cat tpl/data-kube.json)" | jq -r .id)" && echo $kubeId
+>> 6bc9c71a-e570-4ed6-848b-de212fbab7da
 >> ```
 > API
 >> > [!api]
@@ -364,48 +396,55 @@ First, get the private network IDs (pvnwGRA9Id & pvnwGRA11Id), then create the O
 >> > 
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/kube
 > OVHcloud Control Panel
->> Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
+>> Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 >> 
 >> Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu:
 >> 
 >> ![Attach a Vrack gateway to an OVHcloud Managed Kubernetes cluster](images/attach-vrack-gateway-to-kubernetes-cluster.png)
-
-If you followed the Bash choice, you should have a result like this:
-
-```console
-$ export pvnwGRA9Id="$(utils/ovhAPI.sh GET /cloud/project/$OS_TENANT_ID/network/private/${vlanId} | jq '.regions[] | select(.region=="GRA9")' | jq -r .openstackId)" && echo $pvnwGRA9Id
-d9775b7c-c267-44b4-b758-6e827b0a69bb
-
-$ cat tpl/data-kube.json.tpl | sed -e "s|@privateNetworkId@|$pvnwGRA9Id|g" > tpl/data-kube.json
-
-$ cat tpl/data-kube.json
-{
-  "region": "GRA9",
-  "name": "demo",
-  "version": "1.23",
-  "nodepool": {
-    "flavorName": "b2-7",
-    "antiAffinity": false,
-    "monthlyBilled": false,
-    "autoscale": false,
-    "desiredNodes": 3
-  },
-  "privateNetworkId": "d9775b7c-c267-44b4-b758-6e827b0a69bb",
-  "privateNetworkConfiguration" :{
-        "privateNetworkRoutingAsDefault": true,
-        "defaultVrackGateway": "192.168.0.1"
-  }
-}
-
-$ export kubeId="$(utils/ovhAPI.sh POST /cloud/project/$OS_TENANT_ID/kube "$(cat tpl/data-kube.json)" | jq -r .id)" && echo $kubeId
-6bc9c71a-e570-4ed6-848b-de212fbab7da
-```
+> Terraform
+>> > [!primary]
+>> > 
+>> > You can create your networks and subnets using Terraform by following [this guide](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway).
+>>
+>> You need to create a file, let's name it `kubernetes-cluster-test.tf` with this content:
+>>
+>> ```python
+>> # Create your Kubernetes cluster
+>> resource "ovh_cloud_project_kube" "cluster_terraform" {
+>>   service_name  = "my_service_name" # Replace with your OVHcloud project ID
+>>   name          = "cluster_terraform"
+>>   region        = "GRA9"
+>>
+>>   private_network_id = "my_private_network_id" # Replace with your private network id
+>>   private_network_configuration {
+>>     private_network_routing_as_default = true
+>>     default_vrack_gateway              = "192.168.0.1"
+>>   }
+>> }
+>>
+>> # Create your node pool and assign it to your cluster
+>> resource "ovh_cloud_project_kube_nodepool" "node_pool" {
+>>   service_name  = "my_service_name" # Replace with your OVHcloud project ID
+>>   kube_id       = ovh_cloud_project_kube.cluster_terraform.id
+>>   name          = "node-pool-terraform"
+>>   flavor_name   = "b3-8" # Replace with the desired instance flavour 
+>>   desired_nodes = 3
+>>   max_nodes     = 3
+>>   min_nodes     = 3
+>> }
+>> ```
+>>
+>> You can create your resources by entering the following command:
+>>
+>> ```console
+>> terraform apply
+>> ```
 
 Now wait until your OVHcloud Managed Kubernetes cluster is READY.
 
 For that, you can check its status in the OVHcloud Control Panel:
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
 Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu:
 
@@ -552,6 +591,6 @@ To delete an Openstack router, you must first remove the linked ports.
 
 ## Go further
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-au/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-- Join our [community of users](https://community.ovh.com/en/).
+Join our [community of users](/links/community).

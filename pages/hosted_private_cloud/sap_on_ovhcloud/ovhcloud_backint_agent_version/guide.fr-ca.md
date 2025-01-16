@@ -8,7 +8,7 @@ updated: 2024-03-18
 
 ### Version 1.0.10
 
-- Résolution du problème pouvant se produire lors d'un timeout avec le bucket Object Storage S3 et entraînant une sauvegarde suspendue côté SAP HANA.
+- Résolution du problème pouvant se produire lors d'un timeout avec le bucket Object Storage et entraînant une sauvegarde suspendue côté SAP HANA.
 
 ### Version 1.0.9
 
@@ -16,7 +16,7 @@ updated: 2024-03-18
 
 ### Version 1.0.8
 
-- Amélioration des performances de transfert vers les buckets Object Storage S3.
+- Amélioration des performances de transfert vers les buckets Object Storage.
 - Prise en compte des unités de mesure (KB, MB, GB et TB) pour les paramètres `multipart_chunksize` et `multipart_threshold`. Si aucune unité n'est indiquée, l'unité de mesure par défaut est le byte.
 
 ### Version 1.0.7

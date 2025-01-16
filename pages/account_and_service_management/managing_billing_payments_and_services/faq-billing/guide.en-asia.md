@@ -31,14 +31,14 @@ If you do not renew your service before this date, it will simply be suspended, 
 
 #### Tips and tricks
 
-Check the status of your services, and manage their renewal in the `My services`{.action} section of the OVHcloud Control Panel.
+Check the status of your services, and manage their renewal in the `My solutions & services`{.action} section of the OVHcloud Control Panel.
 Log in and manually renew your services on the page <https://www.ovh.co.uk/cgi-bin/order/renew.cgi>.
 
 For further information, please read this detailed guide: [Managing renewal for your services](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
 
 ### How do I enable automatic renewal?
 
-Go to the `Products and services`{.action} section, accessible via the dashboard in the OVHcloud Control Panel. Click on the three dots next to the service concerned, and select `Enable automatic payment`{.action}.
+Go to the `My solutions & services`{.action} section, accessible via the dashboard in the OVHcloud Control Panel. Click on the three dots next to the service concerned, and select `Enable automatic payment`{.action}.
 
 #### Tips and tricks
 
@@ -47,7 +47,7 @@ For further information, please read this detailed guide: [Managing renewal for 
 
 ### How do I disable automatic renewal?
 
-Log in to the OVHcloud Control Panel, and click on the `Products and services`{.action} shortcut in the dashboard. Click on the three dots next to the service concerned, then select `Configure renewal`{.action}. You can then choose manual mode. This mode is only available for certain services — e.g. domain names, web hosting plans, VPS, and dedicated servers.
+Log in to the OVHcloud Control Panel, and click on the `My solutions & services`{.action} shortcut in the dashboard. Click on the three dots next to the service concerned, then select `Configure renewal`{.action}. You can then choose manual mode. This mode is only available for certain services — e.g. domain names, web hosting plans, VPS, and dedicated servers.
 
 To cancel a service, go to [How do I cancel a service?](#cancelservice)
 
@@ -94,13 +94,13 @@ If your pre-paid OVHcloud account contains credit, it will always be used by def
 
 ### When is my next payment due date?
 
-You can view all of your renewal dates in the `Products and services`{.action} section, accessible directly in the dashboard of the OVHcloud Control Panel.
+You can view all of your renewal dates in the `My solutions & services`{.action} section, accessible directly in the dashboard of the OVHcloud Control Panel.
 
 Please note that solutions with automatic renewal will be renewed on the first day of the month. However, the frequency may vary depending on the services you have.
 
 #### Tips and tricks
 
-You can modify the renewal frequency for your solutions via the `My services`{.action} section of the OVHcloud Control Panel.
+You can modify the renewal frequency for your solutions via the `My solutions & services`{.action} section of the OVHcloud Control Panel.
 For further information, please read this detailed guide: [Managing renewal for your services](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
 
 ### Which of my payment methods will be debited?
@@ -146,7 +146,7 @@ Payments made on our website and via direct debit are listed in the OVHcloud Con
 
 ### How do I cancel a service? <a name="cancelservice"></a>
 
-For solutions like domain names, web hosting plans, dedicated servers and VPS solutions, go to the `Products and services`{.action} section of the dashboard in the OVHcloud Control Panel. To cancel a service, click on the three dots next to it, then click `Cancel on expiry date`{.action}. If you have already requested a cancellation, you can also `Undo cancellation`{.action}.
+For solutions like domain names, web hosting plans, dedicated servers and VPS solutions, go to the `My solutions & services`{.action} section of the dashboard in the OVHcloud Control Panel. To cancel a service, click on the three dots next to it, then click `Cancel my subscription`{.action}. If you have already requested a cancellation, you can also `Stop cancellation of service`{.action}.
 
 The cancellation will be effective once your service is no longer valid, or reaches its expiry date. You can submit a cancellation request, or undo it up to 24 hours before the expiry date.
 

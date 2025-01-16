@@ -1,7 +1,7 @@
 ---
 title: Configurar el firewall de Linux con iptables
 excerpt: Cómo proteger un servidor con iptables
-updated: 2024-07-12
+updated: 2024-12-20
 ---
 
 > [!primary]
@@ -35,6 +35,8 @@ Los cortafuegos funcionan estableciendo reglas que regulan el tráfico autorizad
 >
 > Esta guía es genérica.
 > Tenga en cuenta que deberá adaptar los comandos en función de la distribución o el sistema operativo que utilice. En algunos casos le aconsejamos que utilice herramientas externas. Si necesita ayuda sobre el uso de dichas herramientas, puede consultar su documentación oficial.  
+>
+> La mayoría de las reglas descritas en esta guía asumen que su iptables está configurado por defecto para RECHAZAR (DROP) el tráfico entrante, y que usted permite selectivamente el tráfico entrante. Si tiene intención de establecer otro tipo de configuración, le recomendamos que consulte la documentación adicional.
 >
 
 ### 1. Actualizar el sistema

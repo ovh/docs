@@ -24,7 +24,7 @@ Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomana
 > [!primary]
 >
 > - Clicking on `Data Streaming`{.action} will give you access to `Kafka`, `Kafka Connect` and `KafkaMirrorMaker` services.
-> - Clicking on `Data Analysis` will give you access to `Grafana` and `OpenSearch` services.
+> - Clicking on `Data Analysis` will give you access to `Dashboards` and `OpenSearch` services.
 >
 
 Click on the button `Create a database instance`{.action}. (`Create a service`{.action} if your project already contains databases.)

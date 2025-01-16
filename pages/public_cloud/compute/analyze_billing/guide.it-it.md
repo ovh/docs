@@ -1,7 +1,7 @@
 ---
-title: 'Sistema di fatturazione dei servizi Cloud'
+title: 'Sistema di fatturazione dei servizi Public Cloud'
 excerpt: 'Come funziona il sistema di fatturazione dei servizi Public Cloud'
-updated: 2024-10-07
+updated: 2025-01-07
 ---
 
 ## Obiettivo
@@ -16,7 +16,7 @@ Questo sistema è molto simile a quello adottato da alcuni operatori telefonici,
 
 ## Prerequisiti
 
-* Aver già creato un progetto [Public Cloud](https://www.ovhcloud.com/it/public-cloud/) nel tuo account OVHcloud
+* Aver già creato un progetto [Public Cloud](/links/public-cloud/public-cloud) nel tuo account OVHcloud
 * [Disporre di un’istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps)
 * Avere accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
@@ -36,10 +36,6 @@ In particolare per le istanze di macchine virtuali, il contatore di fatturazione
 Ogni progetto Cloud ha quindi una fattura che riunisce l’insieme delle risorse fatturate nel corso del mese. Questo documento viene emesso il 1° del mese successivo.
 
 ### Esempio
-
-> [!warning]
-> Ti ricordiamo che un'istanza oraria viene fatturata all'ora, indipendentemente dal momento in cui viene creata l'istanza. Per usufruire di 60 minuti di utilizzo per un'ora di fatturazione, avvia la tua istanza alla marca dell'ora, ad esempio alle 13:00 o alle 14:00.
->
 
 Ecco un esempio per comprendere meglio il funzionamento:
 
@@ -102,7 +98,7 @@ Da questa interfaccia è possibile anche impostare l’invio di un alert quando 
 
 ### Le istanze
 
-Le tariffe delle istanze Cloud (o server Cloud) vengono visualizzate nello Spazio Cliente prima di avviare un’istanza ma sono disponibili anche alla [pagina delle tariffe](https://www.ovhcloud.com/it/public-cloud/prices/){.external} sul sito Web.
+Le tariffe delle istanze Cloud (o server Cloud) vengono visualizzate nello Spazio Cliente prima di avviare un’istanza ma sono disponibili anche alla [pagina delle tariffe](/links/public-cloud/prices) sul sito Web.
 
 > [!primary]
 >
@@ -143,7 +139,7 @@ Il calcolo eseguito: (Prezzo dei GB al mese/720) x numero di ore x numero di GB
 
 Il numero di GB per ora corrisponde alla quantità massima di GB salvati nel corso dell’ora. Se, ad esempio, i GB occupati sono 15 alle 16:20, 17 alle 16:40 e 14 alle 16:50, OVHcloud considererà 17 GB per l’intervallo orario 16:00-17:00.
 
-Le tariffe relative allo storage sono disponibili direttamente sul [sito OVHcloud](https://www.ovhcloud.com/it/public-cloud/storage/){.external}.
+Le tariffe relative allo storage sono disponibili direttamente sul [sito OVHcloud](/links/public-cloud/storage).
 
 #### Volumi aggiuntivi
 
@@ -159,7 +155,7 @@ Gli Snapshot dei dischi aggiuntivi sono fatturati con le stesse modalità dei vo
 
 #### Snapshot e immagini di istanza
 
-Gli Snapshot delle istanze e le immagini (escluso il catalogo di immagini fornito da OVHcloud) sono fatturati a una tariffa fissa per GB/mese, indipendentemente dall’istanza di origine e dal tipo di immagine. Le tariffe applicate al servizio sono disponibili direttamente sul [sito OVHcloud](https://www.ovhcloud.com/it/public-cloud/prices/){.external}.
+Gli Snapshot delle istanze e le immagini (escluso il catalogo di immagini fornito da OVHcloud) sono fatturati a una tariffa fissa per GB/mese, indipendentemente dall’istanza di origine e dal tipo di immagine. Le tariffe applicate al servizio sono disponibili direttamente sul [sito OVHcloud](/links/public-cloud/prices).
 
 #### Object Storage
 
@@ -196,4 +192,4 @@ Lo storage di archivi prevede la fatturazione di tre elementi:
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra [Community di utenti](/links/community).

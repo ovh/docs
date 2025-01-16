@@ -29,7 +29,7 @@ In this guide you will:
 - Fix common issues
 - Store report on OVHcloud Object Storage
 
-You can use the *Reset cluster* function in the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} to reinitialize your cluster before following this tutorial.
+You can use the *Reset cluster* function in the Public Cloud section of the [OVHcloud Control Panel](/links/manager) to reinitialize your cluster before following this tutorial.
 
 ## Requirements
 
@@ -288,7 +288,7 @@ $ popeye --save
 
 ### Export reports on an OVHcloud Object Storage container
 
-You can also export the generated report to an OVHcloud Object Storage container, as they are compatible with S3 API. It's like a AWS S3 bucket but on the OVHcloud infrastructure.
+You can also export the generated report to an OVHcloud Object Storage container, as they are compatible with the S3 **\*** API. It's like a AWS S3 bucket but on the OVHcloud infrastructure.
 
 First, you need to have an Object Storage container, if you don't already had one, you can follow the [Creating an Object Storage container](/pages/storage_and_backup/object_storage/pcs_create_container) guide.
 
@@ -302,7 +302,7 @@ In order to store your Popeye reports on an OVHcloud Object Storage, and general
 
 In order to do that you will create an OpenStack user.
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), go to the Public Cloud section and select the Public Cloud project concerned.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the Public Cloud section and select the Public Cloud project concerned.
 
 Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Users & Roles`{.action} in the left-hand menu and click on `+ Add user`{.action}.
 
@@ -323,7 +323,7 @@ Username and password will be automatically generated and displayed in your Cont
 
 #### Get OpenStack RC file 
 
-In order to interact with the Object Storage through S3 API, you need to generate your OpenStack credentials.
+In order to interact with the Object Storage through the Amazon S3 API, you need to generate your OpenStack credentials.
 
 Click on `Download OpenStack's RC file`{.action} to retrieve the OpenStack RC file.
 
@@ -520,6 +520,8 @@ You can check on your OVHcloud Object Storage `popeye` container that the report
 
 ## Go further
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pt/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-- Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
+
+**\***: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

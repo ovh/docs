@@ -1,7 +1,7 @@
 ---
-title: "Webhosting: Was tun, wenn meine Datenbank voll ist?"
+title: "Webhosting - Was tun, wenn meine Datenbank voll ist?"
 excerpt: "Erfahren Sie hier, wie Sie vorgehen, wenn Ihre Datenbank voll ist"
-updated: 2023-12-13
+updated: 2024-12-17
 ---
 
 ## Ziel
@@ -48,6 +48,7 @@ Im ersten Schritt werden die großen Tabellen in der Datenbank identifiziert.
 > [phpMyAdmin](https://www.phpmyadmin.net/){.external} ist für alle Webhosting-Datenbanken von OVHcloud verfügbar.
 > Mit dieser Anwendung zur Datenbankverwaltung können Sie manuelle Datenbank-Aktionen einfach durchführen.
 >
+> Wenn Ihre Datenbank auf einer [Web Cloud Databases](/links/web/databases) Lösung vorhanden ist, lesen Sie unsere Anleitung „[Web Cloud Databases - Verbindung mit Ihrer Datenbank herstellen](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server)“ und fahren Sie dann direkt mit [Schritt 1.2](#step1.2) dieser Anleitung fort.
 
 #### 1.1 - Verbindung zur Datenbank über phpMyAdmin
 
@@ -67,7 +68,7 @@ Klicken Sie auf den Button `...`{.action} rechts neben der relevanten Datenbank 
 
 Geben Sie die Zugangsdaten für Ihre Datenbank ein und klicken Sie auf `Anmeldung`{.action}.
 
-#### 1.2 - Finden der größten Tabellen
+#### 1.2 - Finden der größten Tabellen <a name="step1.2"></a>
 
 > [!alert]
 >
@@ -121,7 +122,7 @@ Führen Sie ein Upgrade Ihres Datenbankdienstes auf ein Angebot durch, das mehr 
 
 > [!primary]
 >
-> Um die Größe Ihrer Datenbank zu erhöhen, müssen Sie eine neue, größere Datenbank erstellen und den Inhalt der alten Datenbank in die neue Datenbank kopieren. Es ist nicht möglich, die Größe einer Datenbank, die mit einem Webhosting verbunden ist, direkt zu vergrößern.
+> Um die Größe Ihrer Datenbank zu erhöhen, müssen Sie eine neue, größere Datenbank erstellen und den Inhalt der alten Datenbank in die neue Datenbank kopieren. Es ist nicht möglich, die Größe einer Datenbank, die mit einem Webhosting verbunden ist, zu erhöhen.
 >
 
 Konsultieren Sie unsere Angebotsseite [Web Cloud Databases](/links/web/databases), um sich über die Optionen zu informieren. 
@@ -151,7 +152,7 @@ Bevor Sie die folgenden Schritte ausführen, überprüfen Sie, ob die Daten in d
 > Der folgende Teil dieses Tutorials zeigt, wie Sie in Ihrer Datenbank gespeicherte Daten löschen. Vergewissern Sie sich, welche Aktionen Sie durchführen müssen und wenden Sie sich im Zweifelsfall an einen [Experten](/links/partner).
 >
 
-Für OVHcloud Datenbanken sind verschiedene SQL-Befehle verfügbar, um Inhalte zu beeinflussen.
+Für OVHcloud Datenbanken sind verschiedene SQL-Befehle verfügbar, um Inhalte zu bearbeiten.
 
 Bei **overquota** oder einer großen Tabelle sind **drei Befehle** verfügbar.
 
@@ -194,6 +195,80 @@ DROP TABLE `table_1`
 ```
 
 > In diesem Beispiel löscht der Befehl die Tabelle **table_1** und alle darin enthaltenen Zeilen.
+
+### Schritt 4: Status "READ ONLY" (schreibgeschützt) von der Datenbank entfernen
+
+Unsere Robots zur Quota-Überprüfung werden regelmäßig auf unseren Infrastrukturen aktiv.  
+Wenn festgestellt wird, dass Ihre Datenbank nicht mehr in **overquota** ist, wird automatisch der Status "READ ONLY" (schreibgeschützt) entfernt.
+Sobald Sie die notwendigen Operationen in Ihrer Datenbank durchgeführt haben, können Sie einfach warten, bis unsere Bots Ihre Dienste überprüft haben.
+
+Sie können jedoch die Statusänderung erzwingen, um den Vorgang zu beschleunigen. Hierzu können Sie beantragen, dass die Bots doe Quota Ihres Dienstes neu berechnen.
+
+#### Quota für eine bei Ihrem Webhosting Angebot enthaltene Datenbank neu berechnen
+
+Klicken Sie auf die Tabs, um die **5** Schritte anzuzeigen.
+
+> [!tabs]
+> **Schritt 1**
+>>
+>> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
+>>
+>> ![recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf das Dropdown-Menü `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
+>>
+>> ![recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/web-hosting-selection.png){.thumbnail}
+>>
+> **Schritt 3**
+>>
+>> Klicken Sie auf den Tab `Datenbanken`{.action}.
+>>
+>> ![recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/general-information/databases.png){.thumbnail}
+>>
+> **Schritt 4**
+>>
+>> Auf der neuen Seite wird eine Tabelle mit den erstellten Datenbanken angezeigt. Rechts neben der betreffenden Datenbank klicken Sie auf den Button `...`{.action} und dann auf `Quota neu berechnen`{.action}.
+>>
+>> ![recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota.png){.thumbnail}
+>>
+> **Schritt 5**
+>>
+>> Klicken Sie im angezeigten Fenster direkt auf den Button `Bestätigen`{.action}.
+>>
+>> ![recalculate quota shared SQL](/pages/assets/screens/control_panel/product-selection/web-cloud/web-hosting/databases/recalculate-quota-validation.png){.thumbnail}
+>>
+>> Der Vorgang kann einige Minuten dauern, nachdem er gestartet wurde. Wenn die Installation abgeschlossen ist, verschwindet der Status "READ ONLY" Ihrer Datenbank.  
+>> Ihre Datenbank ist nun wieder voll funktionsfähig.
+>>
+
+#### Quota für eine Datenbank neu berechnen, die auf einer Web Cloud Databases Lösung gehostet wird
+
+Klicken Sie auf die Tabs, um die **3** Schritte anzuzeigen.
+
+> [!tabs]
+> **Schritt 1**
+>>
+>> Loggen Sie sich in Ihr [OVHcloud Kundencenter](/links/manager) ein und gehen Sie dann in den Bereich `Web Cloud`{.action}.
+>>
+>> ![recalculate quota Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud.png){.thumbnail}
+>>
+> **Schritt 2**
+>>
+>> Klicken Sie auf das Dropdown-Menü `Web Cloud Databases`{.action} und wählen Sie die betreffende Web Cloud Databases Lösung aus.
+>>
+>> ![recalculate quota Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/wcdb-server-selection.png){.thumbnail}
+>>
+> **Schritt 3**
+>>
+>> Im Bereich **Allgemeine Informationen** finden Sie den Abschnitt **Speichernutzung**. Klicken Sie rechts auf den Button `...`{.action} und anschließend auf `Quota Ihrer Datenbank aktualisieren`{.action}.
+>>
+>> ![recalculate quota Web Cloud Databases](/pages/assets/screens/control_panel/product-selection/web-cloud/web-cloud-databases/general-information/refresh-your-database-quota.png){.thumbnail}
+>>
+>> Der Vorgang kann einige Minuten dauern, nachdem er gestartet wurde. Wenn die Installation abgeschlossen ist, verschwindet der Status "READ ONLY" Ihrer Datenbank.  
+>> Ihre Datenbank ist nun wieder voll funktionsfähig.
+>>
 
 ## Weiterführende Informationen <a name="go-further"></a>
 

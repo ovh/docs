@@ -131,7 +131,6 @@ Además, le recomendamos que configure la regla **"Default policy = DROP"** en c
 #### Rust
 
 - **Rust** es compatible con un perfil de protección dedicado en todas las generaciones de servidores Bare Metal Game. Tenga en cuenta que hemos actualizado este perfil de protección (es decir, hemos añadido la compatibilidad con las cookies RakNet) para la 3ª generación de servidores Bare Metal Game (2024, basado en EPYC).
-Más información sobre el alojamiento Rust en los servidores de OVHcloud [aquí](/links/bare-metal/game-rust).
 
 #### Minecraft
 

@@ -5,7 +5,7 @@ updated: 2023-08-09
 
 ## Objectif
 
-Par défaut, toutes les ressources (buckets, objets) et les sous-ressources (configuration de cycle de vue, configuration de site web, ...etc) sont privées dans l'Object Storage S3 OVHcloud. Seul le propriétaire de la ressource, c'est à dire l'utilisateur du compte qui la crée, a le contrôle total dessus.
+Par défaut, toutes les ressources (buckets, objets) et les sous-ressources (configuration de cycle de vue, configuration de site web, ...etc) sont privées dans l'Object Storage. Seul le propriétaire de la ressource, c'est à dire l'utilisateur du compte qui la crée, a le contrôle total dessus.
 
 L'accès aux ressources privées peut être donné via les politiques d'accès.
 
@@ -16,7 +16,7 @@ Les politiques d'accès peuvent être catégorisées en 2 types :
 
 ### Politique basée sur l'utilisateur
 
-Les politiques d'accès attachées à un utilisateur spécifique sont appelées politiques utilisateur (*user policies*). Une politique d'utilisateur est évaluée en se basant sur les permissions définies au niveau de la solution de gestion d'identité (IAM) du produit Object Storage S3 OVHcloud et s'applique seulement à l'utilisateur spécifique auquel elle est attachée.
+Les politiques d'accès attachées à un utilisateur spécifique sont appelées politiques utilisateur (*user policies*). Une politique d'utilisateur est évaluée en se basant sur les permissions définies au niveau de la solution de gestion d'identité (IAM) du produit Object Storage et s'applique seulement à l'utilisateur spécifique auquel elle est attachée.
 
 ### Politique basée sur la ressource
 
@@ -36,14 +36,14 @@ A l'instar des politiques utilisateur, une politique de bucket contrôle les per
 
 > [!warning]
 >
-> Les politiques de bucket sont une fonctionnalité qui n'est pas encore disponible sur la solution Object Storage S3 OVHcloud.
+> Les Bucket Policies ne sont pas encore disponibles sur la solution Object Storage.
 >
 
 ## Gérer les permissions avec les ACLs
 
 ### Bénéficiaires gérés
 
-La solution Object Storage S3 OVHcloud gère 2 types de bénéficiaires :
+La solution Object Storage gère 2 types de bénéficiaires :
 
 - les utilisateurs d'un projet Public Cloud ;
 - les groupes d'utilisateurs prédéfinis.
@@ -303,6 +303,7 @@ Vous pouvez envisager d'utiliser des politiques utilisateur si vous souhaitez d�
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
+

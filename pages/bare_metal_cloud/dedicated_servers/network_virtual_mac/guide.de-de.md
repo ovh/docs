@@ -1,31 +1,28 @@
 ---
 title: 'Virtuelle MAC-Adresse einer Additional IP zuweisen'
 excerpt: 'Erfahren Sie hier, wie Sie eine virtuelle MAC-Adresse erstellen und mit einer Additional IP verbinden'
-updated: 2024-08-05
+updated: 2024-12-13
 ---
-
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
->
 
 ## Ziel
 
 Bei OVHcloud können Sie eine virtuelle MAC-Adresse mit einer IP-Adresse verbinden, um virtuelle Maschinen mit Bridge-Konfiguration auf Ihrem Server einzurichten.
 
-**In dieser Anleitung erfahren Sie, wie Sie eine virtuelle MAC-Adresse erstellen und mit einer Additional IP verbinden.**
+**Diese Anleitung erklärt, wie Sie eine virtuelle MAC-Adresse erstellen und mit einer Additional IP verbinden.**
 
 ## Voraussetzungen
 
 - Sie haben einen [Dedicated Server](/links/bare-metal/bare-metal) in Ihrem Kunden-Account, der [virtuelle MACs unterstützt](/pages/bare_metal_cloud/dedicated_servers/network_support_virtual_mac).
 - Sie verfügen über eine [Additional IP](/links/network/additional-ip).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) oder [OVHcloud API](https://api.ovh.com/) eingeloggt.
-- Ihr Server muss virtuelle MAC-Adressen unterstützen. Ziehen Sie [unsere Anleitung](/pages/bare_metal_cloud/dedicated_servers/network_support_virtual_mac) zu Rate, um dies zu bestimmen.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](/links/manager) oder die [OVHcloud API](https://api.ovh.com/).
+- Ihr Server muss virtuelle MAC-Adressen unterstützen. Überprüfen Sie dies mithilfe [unserer Anleitung](/pages/bare_metal_cloud/dedicated_servers/network_support_virtual_mac).
 
 > [!warning]
-> Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](/links/bare-metal/eco-about) eingesetzt wird.
-> Weitere Informationen finden Sie auf der [Vergleichsseite](/links/bare-metal/eco-compare).
+> - Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](/links/bare-metal/eco-about) eingesetzt wird. Weitere Informationen finden Sie auf der [Vergleichsseite](/links/bare-metal/eco-compare).
 >
-> Diese Funktion wird in Kürze für alle Server der Reihen High Grade, Scale und Advance ab Dezember 2024 verfügbar sein.
+> - Advance Server der dritten Generation (mit EPYC 4004 Series Prozessoren) unterstützen 32 verschiedene vMACs.
+>
+> - Diese Funktion wird im Laufe des Jahres 2025 für die Reihen Scale und High Grade verfügbar sein.
 
 > [!primary]
 > Wenn Sie mit der Verwendung der OVHcloud API nicht vertraut sind, lesen Sie unsere Einführung zur [Verwendung der OVHcloud API](/pages/manage_and_operate/api/first-steps).
@@ -41,7 +38,7 @@ Bei OVHcloud können Sie eine virtuelle MAC-Adresse mit einer IP-Adresse verbind
 
 #### Über das OVHcloud Kundencenter
 
-Wenn Sie in Ihrem [OVHcloud Kundencenter](/links/manager){.external} Klicken Sie auf das Menü `Bare Metal Cloud`{.action} und öffnen Sie den Bereich `Network`{.action}. Klicken Sie dann auf `IP`{.action}.
+In Ihrem [OVHcloud Kundencenter](/links/manager) öffnen Sie das Menü `Bare Metal Cloud`{.action} und dann den Bereich `Network`{.action}. Klicken Sie auf `IP`{.action}.
 
 Klicken Sie auf den Tab `Additional IP`{.action}.
 
@@ -55,7 +52,7 @@ Wenn das Dialogfeld “Virtuelle MAC-Adresse hinzufügen” erscheint, wählen S
 
 > [!primary]
 >
-> **Typ**: Hierbei handelt es sich um den Typ der virtuellen MAC-Adresse (“VMware” ist eine MAC-Adresse für das System VMware ESXi und “OVH” ist die passende Adresse für andere Arten von Virtualisierungssystemen).
+> **Typ**: Hierbei handelt es sich um den Typ der virtuellen MAC-Adresse (“VMware” für eine MAC-Adresse für das System VMware ESXi und “OVH” für Adressen für andere Virtualisierungssysteme).
 >
 > **Name der virtuellen Maschine**: Das ist der gewünschte Name für die virtuelle MAC-Adresse, damit das IP/MAC-Paar später einfacher gefunden werden kann.
 >
@@ -84,7 +81,7 @@ Verwenden Sie folgenden API Aufruf:
 
 #### Über das OVHcloud Kundencenter
 
-Um eine mit einer Additional IP verbundene virtuelle MAC-Adresse zu löschen, loggen Sie sich in Ihrem [Kundencenter](/links/manager){.external} ein und klicken Sie im Bereich `Bare Metal Cloud`{.action} auf der linken Seite auf `IP`{.action}. Wählen Sie den betreffenden Server aus, damit die verbundene Additional IP (oder der mit dem Server verbundene IP-Block) angezeigt wird.
+Um eine mit einer Additional IP verbundene virtuelle MAC-Adresse zu löschen, loggen Sie sich in Ihrem [Kundencenter](/links/manager) ein und klicken Sie im Bereich `Bare Metal Cloud`{.action} auf der linken Seite auf `IP`{.action}. Wählen Sie den betreffenden Server aus, damit die verbundene Additional IP (oder der mit dem Server verbundene IP-Block) angezeigt wird.
 
 Um den Vorgang abzuschließen, klicken Sie rechts in der Zeile auf den Button `...`{.action} und dann auf `Virtuelle MAC-Adresse löschen`{.action}.
 
@@ -97,6 +94,14 @@ Verwenden Sie folgenden API Aufruf:
 > @api {v1} /dedicated/server DELETE /dedicated/server/{serviceName}/virtualMac/{macAddress}/virtualAddress/{ipAddress}
 >
 
+## FAQ
+
+- **Was geschieht, wenn ich einen Block mit vMACs auf einen Advance Server der dritten Generation (mit EPYC 4004 Series) verlagere, der bereits über 32 vMACs verfügt?**
+
+Der Block wird nicht verschoben.
+
+Beispiel: Wenn Sie versuchen, einen Block mit 4 IPs zu verschieben, wobei verschiedene vMACs an einen Server mit bereits 30 vMACs angehängt sind, wird der Block nicht verschoben, da die Gesamtanzahl der vMACs die erlaubten 32 vMACs übersteigen würde.
+
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Treten Sie unserer [User Community](/links/community) bei.

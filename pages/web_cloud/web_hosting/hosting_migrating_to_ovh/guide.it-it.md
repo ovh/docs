@@ -1,7 +1,7 @@
 ---
 title: "Migrare un sito Web e i servizi associati a OVHcloud"
 excerpt: "Scopri come migrare il tuo sito Web, il tuo dominio, il tuo database e le tue email in OVHcloud senza interruzione di servizi"
-updated: 2024-06-24
+updated: 2025-01-08
 ---
 
 ## Obiettivo
@@ -205,7 +205,7 @@ Effettua l'operazione su tutti i tuoi account email.
 > Se i tuoi indirizzi email fossero configurati in POP senza conservare copie delle email sul tuo vecchio server di posta, o se disponessi delle email registrate "in locale" sui tuoi dispositivi, potrà essere realizzata solo l'**opzione 2**.
 >
 
-**Opzione 2**: effettua un backup del contenuto dei tuoi indirizzi email con un client di posta (Outlook, Mail per Mac, ecc...), riconfigura il tuo client di posta e importa il backup nel tuo nuovo indirizzo email OVHcloud.
+**Opzione 2**: effettua un backup del contenuto dei tuoi indirizzi email con un client di posta (Outlook, Mail per Mac, ecc...), riconfigura il tuo client di posta e importa il backup nel tuo nuovo indirizzo email OVHcloud. Per maggiori informazioni consulta la nostra guida "[Migra manualmente il tuo indirizzo email](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration)".
 
 ### Step 8: riconfigurare il tuo client di posta <a name="step8"></a>
 

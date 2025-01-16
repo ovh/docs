@@ -1,7 +1,7 @@
 ---
 title: "Automatische E-Mails eines Webhostings verwalten"
 excerpt: "Erfahren Sie hier, wie Sie über ein Webhosting versendete automatische E-Mails verwalten"
-updated: 2024-09-05
+updated: 2024-12-16
 ---
 
 ## Ziel
@@ -55,7 +55,7 @@ Diese Seite zeigt diverse Informationen zur Nachverfolgung des von Ihren Skripte
 
 Rechts können Sie den Versand automatischer E-Mails über Ihr Webhosting verwalten. Je nach Zustand des Dienstes sind einige Optionen nicht verfügbar.
 
-- **E-Mails bereinigen**: Löscht die in der Warteschleife befindlichen E-Mails und entsperrt den Versand von E-Mails.
+- **E-Mails bereinigen**: Löscht die in der Warteschleife befindlichen E-Mails und entsperrt den Versand von E-Mails. Aus Gründen der Vertraulichkeit sind die E-Mails in der Warteschlange bei OVHcloud nicht verfügbar. Sie können diese E-Mails nur anzeigen, wenn sie vor dem Versand in der Datenbank Ihrer Website gespeichert wurden.
 - **Versand entsperren**: Den Versand automatischer E-Mails von Ihrem Webhosting entsperren. E-Mails in der Warteschlange werden ebenfalls für den Versand freigegeben.
 - **E-Mails im Fehlerstatus**: Ermöglicht den Zugriff auf die Logs der letzten E-Mails mit Sendefehlern. Dort finden Sie die betroffenen E-Mail-Adressen mit dem zugehörigen Fehler. Achtung, dieser Verlauf wird nicht zurückgesetzt, auch wenn Sie `E-Mails bereinigen`{.action} oder `Versand entsperren`{.action} nutzen.
 - **Versand blockieren**: Sperrt den E-Mail-Versand Ihres Webhostings. E-Mails, die von Ihren Skripten nach der Sperrung generiert werden, werden nicht abgeschickt, sondern für maximal 72 Stunden in einer Warteschleife gespeichert.
@@ -96,6 +96,20 @@ Wenn Sie die Nachricht *Erfolgreiche Sendung* an die E-Mail-Adresse erhalten, di
 - **Überprüfen Sie die Gesamtgröße Ihrer E-Mail**: Die E-Mail darf die Gesamtgröße von **10 MB** (Kapselung und Header inklusive) nicht überschreiten. Der Inhalt Ihrer E-Mail sollte daher nicht größer sein als **7-8 MB**.
 
 ### Die Zustände "Inaktiv", "Bounce" und "SPAM"
+
+In diesem Teil finden Sie die Details zu jedem Status, der Ihre E-Mail-Funktion sperren kann.
+
+> [!warning]
+>
+> Bevor Sie den Status ändern, sollten Sie die Faktoren kennen, die die Reputation Ihres Domainnamens schädigen oder den Empfang Ihrer E-Mails verhindern können.
+>
+> Überprüfen Sie die folgenden Punkte:
+>
+> - Konfiguration des [SPF-Eintrags](/pages/web_cloud/domains/dns_zone_spf) in der DNS-Zone der Domain.
+> - Konfiguration des [DMARC-Eintrags](/pages/web_cloud/domains/dns_zone_dmarc) in der DNS-Zone der Domain, **nur wenn der Zielserver dies erfordert**.
+> - Reputation der IP-Adresse, von der der Versand stammt ([die Ihres Webhostings](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_ip)), mit einem Tool wie [MXtoolbox](https://mxtoolbox.com/) oder [Spamhaus](https://check.spamhaus.org/) testen.
+> - Die E-Mail enthält keine Elemente, die als SPAM interpretiert werden könnten. Eine nicht erschöpfende Liste dieser Elemente finden Sie im Abschnitt „[Fall 3: Versand legitimer E-Mails, die als SPAM eingestuft werden](#elements-list-spam)“ dieser Anleitung.
+> - Wenn OVHcloud die E-Mail nicht blockiert und diese vom Empfänger nicht empfangen oder abgelehnt wurde, wenden Sie sich an den Empfänger, um zu überprüfen, ob die E-Mail auf dem empfangenden Server blockiert wurde.
 
 #### Der Zustand "Inaktiv"
 
@@ -158,7 +172,7 @@ Klicken Sie auf `E-Mails bereinigen`{.action}, um alle E-Mails in der Warteschle
 
 In diesem Fall ist ein Löschen erforderlich, um SPAM-Nachrichten, die noch auf Versand warten, zu löschen.
 
-- **Fall 3: Versand legitimer E-Mails, die als SPAM eingestuft werden**
+- **Fall 3: Versand legitimer E-Mails, die als SPAM eingestuft werden** <a name="elements-list-spam"></a>
 
 Wenn Sie E-Mails versendet haben, die zu einer Sperrung geführt haben, finden Sie hier einige Beispiele **zu vermeidender Pratiken** beim Versand von E-Mails (damit sie nicht unmittelbar als SPAM angesehen werden):
 

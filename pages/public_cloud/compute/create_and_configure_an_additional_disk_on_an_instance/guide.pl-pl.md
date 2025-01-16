@@ -1,13 +1,22 @@
 ---
 title: 'Zarządzanie wolumenem instancji Public Cloud'
 excerpt: 'Dowiedz się, jak przypisać nowy wolumen do instancji Public Cloud'
-updated: 2023-10-16
+updated: 2024-12-24
 ---
 
-> [!primary]
->
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
->
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
 
 ## Wprowadzenie
 
@@ -17,14 +26,16 @@ Może to być przydatne w następujących przypadkach:
 - Jeśli chcesz zwiększyć przestrzeń dyskową bez konieczności zmiany szablonu instancji.
 - Jeśli chcesz dysponować przestrzenią dyskową o wysokiej dostępności i wysokiej wydajności.
 - Jeśli chcesz przenieść przestrzeń dyskową i dane do innej instancji.
+- Jeśli chcesz przygotować środowisko do korzystania z [Terraform](/pages/public_cloud/compute/how_to_use_terraform), musisz przygotować środowisko.
 
 **Dowiedz się, jak utworzyć dodatkowy dysk i skonfigurować go na Twojej instancji.**
 
 ## Wymagania początkowe
 
 - Dostęp do [Panelu client OVHcloud](/links/manager)
-- Posiadanie instancji [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external} na koncie OVHcloud
+- Posiadanie instancji [Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps) na koncie OVHcloud
 - Dostęp administratora (sudo) do Twojej instancji przez SSH
+- Przygotuj środowisko, jeśli chcesz korzystać z [Terraform](/pages/public_cloud/compute/how_to_use_terraform)
 
 > [!warning]
 >
@@ -35,34 +46,125 @@ Może to być przydatne w następujących przypadkach:
 
 ### Przypisz nowy wolumen
 
-Zaloguj się do [Panelu client OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Następnie otwórz `Block Storage`{.action} w menu po lewej stronie.
+> [!tabs]
+> **W Panelu klienta OVHcloud**
+>> Zaloguj się do [Panelu client OVHcloud](/links/manager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Następnie otwórz `Block Storage`{.action} w menu po lewej stronie.
+>>
+>> W tej części kliknij przycisk `Utwórz wolumen`{.action}.
+>>
+>> ![Wybierz projekt](images/avolume01.png){.thumbnail}
+>>
+>> Postępuj zgodnie z kolejnymi instrukcjami, aby wybrać opcje lokalizacji, typu dysku i pojemności dysku. Wpisz nazwę wolumenu i zatwierdź, klikając `Utwórz wolumen`{.action}.
+>>
+>> ![create disk](images/avolume02.png){.thumbnail}
+>>
+>> Nowy dysk zostanie wyświetlony w Panelu klienta.
+>>
+>> ![konfiguracja disk](images/avolume03.png){.thumbnail}
+>>
+>> Po prawej stronie wolumenu kliknij przycisk `...`{.action}, a następnie wybierz `Przypisz do instancji`{.action}.
+>>
+>> ![attach disk 01](images/avolume04.png){.thumbnail}
+>>
+>> W oknie, które się wyświetli wybierz instancję z listy i kliknij `Zatwierdź`{.action}, aby podłączyć dysk.
+>>
+>> ![attach disk 02](images/avolume05.png){.thumbnail}
+>>
+>> Rozpocznie się proces łączenia dysku z Twoją instancją. Operacja może zająć kilka minut.
+>>
+>> > [!warning]
+>> >
+>> > Pamiętaj, aby podczas logowania dysk nie opuszczał aktualnej strony w Panelu klienta OVHcloud. Może to zakłócić proces.
+>> >
+>>
+> **Via Terraform**
+>> Aby utworzyć prosty wolumen Block Storage, potrzebujesz 3 elementów:
+>>
+>> * Nazwa wolumenu
+>> * Region
+>> * Rozmiar wolumenu w GB
+>>
+>> W naszym przykładzie utworzymy block storage w regionie **** o rozmiarze **10 GB**. Dodaj następujące linie w pliku o nazwie *simple_blockstorage.tf*:
+>>
+>> ```python
+>> # worzenie wolumenu block storage
+>> resource "openstack_blockstorage_volume_v3" "terraform_blockstorage" {
+>>   name   = "terraform_blockstorage" # Nazwa wolumenu block storage
+>>   size   = 10                       # Rozmiar wolumenu
+>>   region = "GRA11"                  # Region lub wolumen musi zostać utworzony
+>> }
+>> ```
+>>
+>> Następnie przypiszemy ją do instancji docelowej.
+>>
+>> > [!warning]
+>> > Instancja i wolumin muszą znajdować się w tym samym regionie.
+>> >
+>>
+>> Dodaj następujące wiersze poniżej poprzednich:
+>>
+>> ```python
+>> # Przypisz wolumen do instancji
+>> resource "openstack_compute_volume_attach_v2" "volume_attach" {
+>>   instance_id = "<twoje_instance_id>"
+>>   volume_id   = openstack_blockstorage_volume_v3.terraform_volume.id
+>> }
+>> ```
+>>
+>> Możesz utworzyć wolumen block storage i przypisać go do wybranej instancji. W tym celu wprowadź następującą komendę:
+>>
+>> ```console
+>> terraform apply
+>> ```
+>>
+>> Wyjście powinno wyglądać tak:
+>>
+>> ```console
+>> $ terraform apply
+>> Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+>>   + create
+>>
+>> Terraform will perform the following actions:
+>>
+>>   # openstack_blockstorage_volume_v3.terraform_blockstorage will be created
+>>   + resource "openstack_blockstorage_volume_v3" "terraform_blockstorage" {
+>>       + attachment        = (known after apply)
+>>       + availability_zone = (known after apply)
+>>       + id                = (known after apply)
+>>       + metadata          = (known after apply)
+>>       + name              = "terraform_blockstorage"
+>>       + region            = "GRA11"
+>>       + size              = 10
+>>       + volume_type       = (known after apply)
+>>     }
+>>
+>>   # openstack_compute_volume_attach_v2.volume_attach will be created
+>>   + resource "openstack_compute_volume_attach_v2" "volume_attach" {
+>>       + device      = (known after apply)
+>>       + id          = (known after apply)
+>>       + instance_id = "11cc1279-xxxx-xxxx-xxxx-3ace4c954780"
+>>       + region      = (known after apply)
+>>       + volume_id   = (known after apply)
+>>     }
+>>
+>> Plan: 2 to add, 0 to change, 0 to destroy.
+>>
+>> Do you want to perform these actions in workspace "test_terraform"?
+>>   Terraform will perform the actions described above.
+>>   Only 'yes' will be accepted to approve.
+>>
+>>   Enter a value: yes
+>>
+>> openstack_blockstorage_volume_v3.terraform_blockstorage: Creating...
+>> openstack_blockstorage_volume_v3.terraform_blockstorage: Still creating... [10s elapsed]
+>> openstack_blockstorage_volume_v3.terraform_blockstorage: Creation complete after 12s [id=daf3a86e-xxxx-xxxx-xxxx-ac7b6ffbb806]
+>> openstack_compute_volume_attach_v2.volume_attach: Creating...
+>> openstack_compute_volume_attach_v2.volume_attach: Still creating... [10s elapsed]
+>> openstack_compute_volume_attach_v2.volume_attach: Creation complete after 14s [id=11cc1279-xxxx-xxxx-xxxx-3ace4c954780/daf3a86e-xxxx-xxxx-xxxx-ac7b6ffbb806]
+>>
+>> Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
+>> ```
 
-W tej części kliknij przycisk `Utwórz wolumen`{.action}.
-
-![Wybierz projekt](images/avolume01.png){.thumbnail}
-
-Postępuj zgodnie z kolejnymi instrukcjami, aby wybrać opcje lokalizacji, typu dysku i pojemności dysku. Wpisz nazwę wolumenu i zatwierdź, klikając `Utwórz wolumen`{.action}.
-
-![create disk](images/avolume02.png){.thumbnail}
-
-Nowy dysk zostanie wyświetlony w Panelu klienta.
-
-![konfiguracja disk](images/avolume03.png){.thumbnail}
-
-Po prawej stronie wolumenu kliknij przycisk `...`{.action}, a następnie wybierz `Przypisz do instancji`{.action}.
-
-![attach disk 01](images/avolume04.png){.thumbnail}
-
-W oknie, które się wyświetli wybierz instancję z listy i kliknij `Zatwierdź`{.action}, aby podłączyć dysk.
-
-![attach disk 02](images/avolume05.png){.thumbnail}
-
-Rozpocznie się proces łączenia dysku z Twoją instancją. Operacja może zająć kilka minut.
-
-> [!warning]
->
-> Pamiętaj, aby podczas logowania dysk nie opuszczał aktualnej strony w Panelu klienta OVHcloud. Może to zakłócić proces.
->
 
 ### Konfiguracja nowego dysku
 
@@ -358,80 +460,164 @@ Jeśli chcesz odłączyć wolumen od instancji, najlepszym rozwiązaniem jest od
 > Wyświetli się komunikat o błędzie, jeśli na dodatkowym dysku uruchomione jest oprogramowanie lub proces. W takim przypadku zaleca się zatrzymanie wszystkich procesów przed kontynuowaniem.
 >
 
-#### Linux
+Oto jak **odmontować wolumin** z systemu operacyjnego przed odłączeniem go od instancji:
 
-Otwórz [połączenie SSH z Twoją instancją](/pages/public_cloud/compute/public-cloud-first-steps#krok-3-tworzenie-instancji), a następnie wpisz poniższe polecenie, aby wyświetlić powiązane dyski.
+> [!tabs]
+> **Linux**
+>>
+>> Otwórz [połączenie SSH z Twoją instancją](/pages/public_cloud/compute/public-cloud-first-steps#krok-3-tworzenie-instancji), a następnie wpisz poniższe polecenie, aby wyświetlić powiązane dyski.
+>>
+>> ```bash
+>> lsblk
+>> ```
+>>
+>> ```console
+>> NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
+>> vda 254:0 0 10G 0 disk
+>> └─vda1 254:1 0 10G 0 part /
+>> vdb       8:0    0   10G  0 disk
+>> └─vdb1    8:1    0   10G  0 part /mnt/disk
+>> ```
+>>
+>> Rozpocznij partycję, używając polecenia:
+>>
+>> ```bash
+>> sudo umount /dev/vdb1
+>> ```
+>>
+>> Usuń ID urządzenia fstab, aby zakończyć proces demontażu. Jeśli nie, partycja zostanie ponownie uruchomiona.
+>> 
+>> ```bash
+>> sudo nano /etc/fstab
+>> ```
+>>
+>> Zapisz i wyjdź z edytora.
+>>
+> Windows
+>>
+>> Utworzenie połączenia RDP (Remote Desktop) z instancją Windows.
+>>
+>> Po zalogowaniu kliknij prawym przyciskiem myszy menu `Rozpocznij`{.action} i otwórz `Zarządzanie dyskami`{.action}.
+>>
+>> ![zarządzanie dyskami](images/start-menu.png){.thumbnail}
+>>
+>> Kliknij prawym przyciskiem myszy wolumen, który chcesz odmontować i wybierz `Zmień literę dysku i ścieżki...`{.action}.
+>>
+>> ![unmount disk](images/unmountdisk.png){.thumbnail}
+>>
+>> Kliknij `Usuń`{.action}, aby usunąć dysk.
+>>
+>> ![remove disk](images/changedriveletter.png){.thumbnail}
+>>
+>> Następnie kliknij `Tak`{.action}, aby potwierdzić usunięcie litery z dysku.
+>>
+>> ![ponowny disk](images/confirmunmounting.png){.thumbnail}
+>>
+>> Po zakończeniu możesz zamknąć okno zarządzania dyskiem.
+>>
 
-```bash
-lsblk
-```
+Na koniec odłączymy wolumin od instancji:
 
-```console
-NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
-vda 254:0 0 10G 0 disk
-└ vda1 254:1 0 10G 0 part /
-vdb 8:0 0 10G 0 disk
-└ vdb1 8:1 0 10G 0 part /mnt/disk
-```
-
-Rozpocznij partycję, używając polecenia:
-
-```bash
-sudo umount /dev/vdb1
-```
-
-Usuń ID urządzenia fstab, aby zakończyć proces demontażu. Jeśli nie, partycja zostanie ponownie uruchomiona.
-
-```bash
-sudo nano /etc/fstab
-```
-
-Zapisz i wyjdź z edytora.
-
-Przejdź do sekcji `Public Cloud`{.action} w Twoim Panelu klienta OVHcloud i kliknij `Block Storage`{.action} w menu po lewej stronie w sekcji **Storage**.
-
-Kliknij przycisk `...`{.action} obok odpowiedniego wolumenu i wybierz `Odłącz instancję`{.action}.
-
-![detach disk](images/detachinstance.png){.thumbnail}
-
-Kliknij `Zatwierdź`{.action} w oknie, które się wyświetli, aby rozpocząć proces.
-
-![confirm disk detach](images/confirminstancedetach.png){.thumbnail}
-
-#### Windows
-
-Utworzenie połączenia RDP (Remote Desktop) z instancją Windows.
-
-Po zalogowaniu kliknij prawym przyciskiem myszy menu `Rozpocznij`{.action} i otwórz `Zarządzanie dyskami`{.action}.
-
-![zarządzanie dyskami](images/start-menu.png){.thumbnail}
-
-Kliknij prawym przyciskiem myszy wolumen, który chcesz odmontować i wybierz `Zmień literę dysku i ścieżki...`{.action}.
-
-![unmount disk](images/unmountdisk.png){.thumbnail}
-
-Kliknij `Usuń`{.action}, aby usunąć dysk.
-
-![remove disk](images/changedriveletter.png){.thumbnail}
-
-Następnie kliknij `Tak`{.action}, aby potwierdzić usunięcie litery z dysku.
-
-![ponowny disk](images/confirmunmounting.png){.thumbnail}
-
-Po zakończeniu możesz zamknąć okno zarządzania dyskiem.
-
-Przejdź do sekcji `Public Cloud`{.action} w Twoim Panelu klienta OVHcloud i kliknij `Block Storage`{.action} w menu po lewej stronie w sekcji **Storage**.
-
-Kliknij przycisk `...`{.action} obok odpowiedniego wolumenu i wybierz `Odłącz od instancji`{.action}.
-
-![detach disk](images/detachinstance.png){.thumbnail}
-
-Kliknij `Potwierdź`{.action} w oknie, które się wyświetli, aby rozpocząć proces.
-
-![confirm disk detach](images/confirminstancedetach.png){.thumbnail}
+> [!tabs]
+> **W Panelu klienta OVHcloud**
+>> Przejdź do sekcji `Public Cloud`{.action} w Twoim Panelu klienta OVHcloud i kliknij `Block Storage`{.action} w menu po lewej stronie w sekcji **Storage**.
+>>
+>> Kliknij przycisk `...`{.action} obok odpowiedniego wolumenu i wybierz `Odłącz od instancji`{.action}.
+>>
+>> ![detach disk](images/detachinstance.png){.thumbnail}
+>>
+>> Kliknij `Potwierdź`{.action} w oknie, które się wyświetli, aby rozpocząć proces.
+>>
+>> ![confirm disk detach](images/confirminstancedetach.png){.thumbnail}
+>>
+> **Przez Terraform**
+>> 
+>> Zacznij od usunięcia wierszy utworzonych wcześniej w pliku Terraform: 
+>>
+>> ```python
+>> # Dołącz wolumin do instancji
+>> resource "openstack_compute_volume_attach_v2" "volume_attach" {
+>> instance_id = "<twoja_instancja_id>"
+>>   volume_id   = openstack_blockstorage_volume_v3.terraform_volume.id
+>> }
+>> ```
+>>
+>> Wprowadź następujące polecenie, aby sprawdzić, czy poprawny zasób zostanie usunięty:
+>>
+>> ```console
+>> terraform plan
+>> ```
+>>
+>> Wyjście powinno wyglądać tak:
+>>
+>> ```console
+>> $ terraform plan
+>> openstack_compute_volume_attach_v2.va_1: Refreshing state... [id=11cc1279-xxxx-xxxx-xxxx-3ace4c954780/daf3a86e-xxxx-xxxx-xxxx-ac7b6ffbb806]
+>> openstack_blockstorage_volume_v3.terraform_volume: Refreshing state... [id=daf3a86e-xxxx-xxxx-xxxx-ac7b6ffbb806]
+>>
+>> Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+>>   - destroy
+>>
+>> Terraform will perform the following actions:
+>>
+>>   # openstack_compute_volume_attach_v2.va_1 will be destroyed
+>>   # (because openstack_compute_volume_attach_v2.va_1 is not in configuration)
+>>   - resource "openstack_compute_volume_attach_v2" "va_1" {
+>>       - device      = "/dev/sdb" -> null
+>>       - id          = "11cc1279-xxxx-xxxx-xxxx-3ace4c954780/daf3a86e-xxxx-xxxx-xxxx-ac7b6ffbb806" -> null
+>>       - instance_id = "11cc1279-xxxx-xxxx-xxxx-3ace4c954780" -> null
+>>       - region      = "GRA11" -> null
+>>       - volume_id   = "daf3a86e-xxxx-xxxx-xxxx-ac7b6ffbb806" -> null
+>>     }
+>> 
+>> Plan: 0 to add, 0 to change, 1 to destroy.
+>> ```
+>>
+>> Następnie zastosuj zmiany, wprowadzając następującą komendę:
+>>
+>> ```console
+>> terraform apply
+>> ```
+>>
+>> Wyjście powinno wyglądać tak:
+>>
+>> ```console
+>> $ terraform apply
+>> openstack_compute_volume_attach_v2.va_1: Refreshing state... [id=11cc1279-xxxx-xxxx-xxxx-3ace4c954780/daf3a86e-xxxx-xxxx-xxxx-ac7b6ffbb806]
+>> openstack_blockstorage_volume_v3.terraform_volume: Refreshing state... [id=daf3a86e-xxxx-xxxx-xxxx-ac7b6ffbb806]
+>>
+>> Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+>>   - destroy
+>>
+>> Terraform will perform the following actions:
+>>
+>>   # openstack_compute_volume_attach_v2.va_1 will be destroyed
+>>   # (because openstack_compute_volume_attach_v2.va_1 is not in configuration)
+>>   - resource "openstack_compute_volume_attach_v2" "va_1" {
+>>       - device      = "/dev/sdb" -> null
+>>       - id          = "11cc1279-xxxx-xxxx-xxxx-3ace4c954780/daf3a86e-xxxx-xxxx-xxxx-ac7b6ffbb806" -> null
+>>       - instance_id = "11cc1279-xxxx-xxxx-xxxx-3ace4c954780" -> null
+>>       - region      = "GRA11" -> null
+>>       - volume_id   = "daf3a86e-xxxx-xxxx-xxxx-ac7b6ffbb806" -> null
+>>     }
+>>
+>> Plan: 0 to add, 0 to change, 1 to destroy.
+>> 
+>> Do you want to perform these actions in workspace "test_terraform"?
+>>   Terraform will perform the actions described above.
+>>   Only 'yes' will be accepted to approve.
+>>
+>>   Enter a value: yes
+>>
+>> openstack_compute_volume_attach_v2.va_1: Destroying... [id=11cc1279-xxxx-xxxx-xxxx-3ace4c954780/daf3a86e-xxxx-xxxx-xxxx-ac7b6ffbb806]
+>> openstack_compute_volume_attach_v2.va_1: Still destroying... [id=11cc1279-xxxx-xxxx-xxxx-3ace4c954780/daf3a86e-xxxx-xxxx-xxxx-ac7b6ffbb806, 10s elapsed]
+>> openstack_compute_volume_attach_v2.va_1: Destruction complete after 17s
+>>
+>> Apply complete! Resources: 0 added, 0 changed, 1 destroyed.
+>> ```
 
 ## Sprawdź również
 
 [Zwiększ rozmiar dodatkowego dysku](/pages/public_cloud/compute/increase_the_size_of_an_additional_disk)
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do [grona naszych użytkowników](/links/community).

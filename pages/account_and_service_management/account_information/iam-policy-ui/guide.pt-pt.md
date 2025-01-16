@@ -1,7 +1,7 @@
 ---
 title: Como utilizar as políticas IAM a partir do seu Espaço Cliente
 excerpt: Descubra como dar direitos de acesso específicos aos utilizadores a partir de uma conta OVHcloud
-updated: 2024-10-30
+updated: 2025-01-08
 ---
 
 ## Objetivo
@@ -45,11 +45,11 @@ Pode aceder ao menu IAM através da entrada dedicada no seu Espaço Cliente.
 
 ![Acesso ao menu IAM](/pages/assets/screens/control_panel/product-selection/right-column/initials/identity-and-access-management-iam.png){.thumbnail}
 
-O menu apresenta a lista de todas as políticas em curso criadas na sua conta.
+Se aceder a este menu pela primeira vez, será apresentada a seguinte página:
 
-![Acesso ao menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
+![Acesso ao menu IAM](/pages/assets/screens/control_panel/product-selection/right-column/identity-and-access-management-iam/tab-first-access.png){.thumbnail}
 
-Cada política é apresentada com o seu nome, o número de identidades e o número de ações que contém.
+Clique diretamente em [Criar uma política](#create-policy) ou em [Criar utilizadores](#create-users) em função da ação que pretende realizar.
 
 > [!primary]
 >
@@ -57,7 +57,15 @@ Cada política é apresentada com o seu nome, o número de identidades e o núme
 >
 > Os clientes não podem alterar ou eliminar estas políticas.
 
+Se já tiver criado políticas ou utilizadores, o menu apresenta a lista de todas as políticas em curso criadas na sua conta OVHcloud.
+
+![Acesso ao menu IAM](images/access_to_the_IAM_menu_03.png){.thumbnail}
+
+Cada política é apresentada com o seu nome, o número de identidades e o número de ações que contém.
+
 ### Gestão das políticas
+
+<a name="create-policy"></a>
 
 #### Criar uma política
 
@@ -138,6 +146,8 @@ A seguir, poderá alterar o âmbito da política.
 Para eliminar uma política existente, clique no botão `...`{.action} à direita da política, e por `Eliminar a política`{.action}.
 
 Uma janela contextual irá pedir-lhe que confirme a eliminação.
+
+<a name="create-users"></a>
 
 ### Gestão das identidades
 

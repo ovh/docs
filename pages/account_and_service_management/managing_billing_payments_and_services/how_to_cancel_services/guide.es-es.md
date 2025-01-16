@@ -1,7 +1,7 @@
 ---
 title: Cómo dar de baja sus servicios de OVHcloud
 excerpt: Cómo interrumpir las suscripciones a OVHcloud desde el área de cliente
-updated: 2024-01-19
+updated: 2024-12-23
 ---
 
 ## Objetivo
@@ -47,13 +47,13 @@ No obstante, existen **casos especiales**, que se explican en detalle [más adel
 
 ### Cómo dar de baja la suscripción <a name="terminate"></a>
 
-Para cancelar la suscripción al servicio, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/es/&ovhSubsidiary=es), haga clic en su nombre en la esquina superior derecha y seleccione el botón `Productos y servicios`{.action}.
+Para cancelar la suscripción al servicio, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/es/&ovhSubsidiary=es), haga clic en su nombre en la esquina superior derecha y seleccione el botón `Mis soluciones y servicios`{.action}.
 
 ![productos y servicios](/pages/assets/screens/control_panel/product-selection/right-column/products-services.png){.thumbnail}
 
-A continuación, haga clic en el botón `...`{.action} a la derecha del servicio que desea dar de baja y, seguidamente, en `Cancelar mi compromiso`{.action}.
+A continuación, haga clic en el botón `...`{.action} a la derecha del servicio que desea dar de baja y, seguidamente, en `Dar de baja mi servicio`{.action}.
 
-![dar de baja](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/cancel-en.png){.thumbnail}
+![dar de baja](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancel-en.png){.thumbnail}
 
 Indique los motivos de su solicitud de baja y haga clic en `Aceptar`{.action}.
 
@@ -64,9 +64,9 @@ Indique los motivos de su solicitud de baja y haga clic en `Aceptar`{.action}.
 > Por lo tanto, no dude en decirnos más sobre su experiencia personal con OVHcloud a través del formulario que le proponemos al dar de baja el servicio. Gracias por su contribución a la mejora de nuestros productos.
 >
 
-La baja del servicio tendrá lugar el **fecha de aplicación** que se indica en la tabla "Mis servicios". Si no ve el estado "Baja solicitada", actualice la página.
+La baja del servicio tendrá lugar el **fecha de aplicación** que se indica en la tabla "Gestión de mis soluciones y servicios". Si no ve el estado "Baja programada", actualice la página.
 
-![solicitud de baja](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/cancellation-request.png){.thumbnail}
+![solicitud de baja](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancellation-request.png){.thumbnail}
 
 ### Casos particulares <a name="specific-cases"></a>
 
@@ -131,22 +131,22 @@ También puede [consultar su consumo actual](/pages/public_cloud/compute/analyze
 > Puede anular una solicitud de baja hasta 24 horas antes de la fecha de finalización de la suscripción.
 >
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), haga clic en su nombre en la esquina superior derecha y seleccione el botón `Productos y servicios`{.action}.
+Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), haga clic en su nombre en la esquina superior derecha y seleccione el botón `Mis soluciones y servicios`{.action}.
 
-Haga clic en el botón `...`{.action} a la derecha del servicio objeto de la solicitud de baja y, seguidamente, en `Cancelar la baja del servicio.`{.action} 
+Haga clic en el botón `...`{.action} a la derecha del servicio objeto de la solicitud de baja y, seguidamente, en `Cancelar la baja del servicio`{.action} 
 
-![cancel_termination](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/cancel_termination.png){.thumbnail}
+![cancel_termination](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancel_termination.png){.thumbnail}
 
 Por último, haga clic en `Confirmar la cancelación`{.action}.
 
-La cancelación de la baja tendrá efecto inmediato. Actualice la página "Mis servicios" si sigue viendo el estado "Baja solicitada".
+La cancelación de la baja tendrá efecto inmediato. Actualice la página "Gestión de mis soluciones y servicios" si sigue viendo el estado "Baja programada".
 
 ## FAQ
 
 > [!faq]
 >
 > No consigo dar de baja un servicio. ¿Qué hago?
->> Si no consigue dar de baja un servicio (no ofrecemos el botón `Cancelar mi compromiso`{.action}), este puede ser uno de los casos particulares detallados [anteriormente en esta guía](#specific-cases).
+>> Si no consigue dar de baja un servicio (no ofrecemos el botón `Dar de baja mi servicio`{.action}), este puede ser uno de los casos particulares detallados [anteriormente en esta guía](#specific-cases).
 >> Compruebe también que se cumplen las siguientes condiciones:
 >>
 >> - Debe ser el "contacto administrador" del servicio. Para obtener más información, consulte [esta guía](/pages/account_and_service_management/account_information/managing_contacts#definition).
@@ -159,7 +159,7 @@ La cancelación de la baja tendrá efecto inmediato. Actualice la página "Mis s
 > ¿Cómo eliminar una cuenta de OVHcloud?
 >> Solo es posible cerrar su cuenta de cliente de OVHcloud y eliminar sus datos personales si:
 >>
->> 1. Ya no tiene servicios visibles en la sección "[Mis servicios](https://www.ovh.com/manager/dedicated/#/billing/autoRenew)". En caso contrario, deberá solicitar en primer lugar la baja del servicio y esperar a su eliminación.
+>> 1. Ya no tiene servicios visibles en la sección "[Mis soluciones y servicios](https://www.ovh.com/manager/dedicated/#/billing/autoRenew)". En caso contrario, deberá solicitar en primer lugar la baja del servicio y esperar a su eliminación.
 >> 2. No hay facturas pendientes de pago. En caso contrario, deberá abonarlos haciendo clic en el botón `Abonar inmediatamente`{.action} en las acciones de masa de la página "[Mis facturas](https://www.ovh.com/manager/#/dedicated/billing/history)".
 >> 3. No hay pedidos en curso. Consúltelo en [esta página](https://www.ovh.com/manager/#/dedicated/billing/orders/orders).
 >> 4. Su cuenta de prepago no es positiva. Consúltelo en [esta página](https://www.ovh.com/manager/#/dedicated/billing/payment/ovhaccount).

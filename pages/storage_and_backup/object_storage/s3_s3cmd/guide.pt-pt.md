@@ -1,12 +1,12 @@
 ---
-title: Object Storage - Utilizar S3 Object Storage com S3cmd (EN)
+title: Object Storage - Utilizar Object Storage com S3cmd (EN)
 excerpt: Learn how to configure S3cmd to manage your buckets and objects
 updated: 2024-05-20
 ---
 
 ## Objective
 
-S3cmd is a free command line tool and client for managing data in storage spaces that use the S3 protocol, such as S3 Object Storage, Google Cloud Storage or DreamHost DreamObjects.
+S3cmd is a free command line tool and client for managing data in storage spaces that use the Amazon S3 protocol, such as Amazon S3 Object Storage, Google Cloud Storage or DreamHost DreamObjects.
 
 **This guide explains how to configure S3cmd to manage your buckets and objects.**
 
@@ -14,16 +14,16 @@ S3cmd is a free command line tool and client for managing data in storage spaces
 >
 > OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. If you encounter any difficulties performing these actions, please contact a [specialist service provider](https://partner.ovhcloud.com/en/directory/) and/or discuss the issue with our community on <https://community.ovh.com/en/>. OVHcloud cannot provide you with technical support in this regard.
+> This guide is designed to assist you in common tasks as much as possible. If you encounter any difficulties performing these actions, please contact a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) and/or discuss the issue with our community on <https://community.ovh.com/en/>. OVHcloud cannot provide you with technical support in this regard.
 >
 
 ## Requirements
 
 - A bucket
 - A user with the required access rights on the bucket
-- Your S3 credentials (access_key and secret_access_key).
+- Your Object Storage credentials (access_key and secret_access_key).
 
-See our [Getting started with S3 Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) guide.
+See our [Getting started with Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) guide.
 
 > [!primary]
 >
@@ -45,7 +45,7 @@ Access Key: `<access_key>`
 Secret Key: `<secret_key>`
 Default Region [US]: `<region_in_lowercase>`
 
-Use "s3.amazonaws.com" for S3 Endpoint and not modify it to the target Amazon S3.
+Use "s3.amazonaws.com" for S3 Endpoint and do not modify it to the target Amazon S3.
 S3 Endpoint [s3.amazonaws.com]: `s3.<region_in_lowercase>.io.cloud.ovh.net`
 
 Use "%(bucket)s.s3.amazonaws.com" to the target Amazon S3. "%(bucket)s" and "%(location)s" vars can be used
@@ -131,6 +131,6 @@ You will find a detailed documentation of the possible actions on the [official 
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pt/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Join our [community of users](/links/community).

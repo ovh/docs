@@ -1,7 +1,7 @@
 ---
 title: MongoDB - Connect with MongoDB Compass
 excerpt: Connect to your Public Cloud Databases for MongoDB using MongoDB Compass
-updated: 2023-03-02
+updated: 2025-01-06
 ---
 
 ## Objective
@@ -45,12 +45,72 @@ Now you are now interact with your Public Cloud Databases for MongoDB:
 
 ![Connected](images/connected.png){.thumbnail}
 
-> [!primary]
->
-> Explore the [documentation](https://docs.mongodb.com/compass/current/) to view all the features and how to interact with your data.
->
+### Insert and Query Data
+
+You can use the [mongoshell](https://www.mongodb.com/docs/mongodb-shell/), integrated in Compass, to create your first database and collection. Below is a script that creates the database **company** and collection **customer** and inserts 100 random documents.
+
+#### Load Data into MongoDB
+
+To load 100 documents into a collection called `customer` with random data, use the following `mongosh` script:
+
+```javascript
+use company;
+
+// Function to generate random data
+function getRandomData() {
+    const firstNames = ["John", "Jane", "Mary", "Michael", "Sarah", "Robert", "Linda", "James", "Patricia", "David"];
+    const lastNames = ["Smith", "Johnson", "Williams", "Jones", "Brown", "Davis", "Miller", "Wilson", "Moore", "Taylor"];
+    const domains = ["example.com", "email.com", "mail.com", "test.com", "demo.com"];
+    
+    function getRandomItem(array) {
+        return array[Math.floor(Math.random() * array.length)];
+    }
+    
+    return {
+        firstName: getRandomItem(firstNames),
+        lastName: getRandomItem(lastNames),
+        email: `${getRandomItem(firstNames).toLowerCase()}.${getRandomItem(lastNames).toLowerCase()}@${getRandomItem(domains)}`,
+        age: Math.floor(Math.random() * 60) + 18,
+        createdAt: new Date()
+    };
+}
+
+// Insert 100 random documents into the customer collection
+const bulk = db.customer.initializeUnorderedBulkOp();
+for (let i = 0; i < 100; i++) {
+    bulk.insert(getRandomData());
+}
+bulk.execute();
+
+print("100 random documents inserted into the 'customer' collection.");
+```
+![Compass Shell](images/compassShell.png){.thumbnail}
+
+#### Query Data with the Aggregation Framework
+
+The MongoDB aggregation pipeline below uses the [MongoDB Aggregation Framework](https://www.mongodb.com/docs/manual/aggregation/) to group customers by age and count each occurence. You can use the mongoshell to execute:
+
+```javascript
+db.customer.aggregate([
+    {
+        $group: {
+            _id: "$age",
+            count: { $sum: 1 }
+        }
+    },
+    {
+        $sort: { _id: 1 }
+    }
+]);
+```
+
+You can also use the UI with Compass to execute the aggregation pipeline.
+
+![Compass Aggregation](images/compassAggregation.png){.thumbnail}
 
 ## Go further
+
+Explore the [documentation](https://docs.mongodb.com/compass/current/) to view all the features and how to interact with your data.
 
 [MongoDB capabilities](/pages/public_cloud/public_cloud_databases/mongodb_01_concept_capabilities)
 
@@ -58,7 +118,7 @@ Now you are now interact with your Public Cloud Databases for MongoDB:
 
 Visit the [Github examples repository](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/mongodb) to find how to connect to your database with several languages.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
 
 ## We want your feedback!
 

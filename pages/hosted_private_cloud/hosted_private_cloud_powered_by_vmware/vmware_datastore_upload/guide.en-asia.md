@@ -1,7 +1,7 @@
 ---
 title: "Uploading an ISO in a datastore"
 excerpt: "Find out how to use the html datastore upload client and Govc to manipulate data in your managed VMware vSphere on OVHcloud environment"
-updated: 2024-10-04
+updated: 2024-12-31
 ---
 
 ## Objective
@@ -12,6 +12,7 @@ updated: 2024-10-04
 
 - Access to the [OVHcloud Control Panel](/links/manager).
 - You must be the technical administrator of the [VMware on OVHcloud infrastructure](/links/hosted-private-cloud/vmware).
+- Ensure TCP port range **40050–40255** is open on your firewall to allow file uploads/downloads to the datastore.
 - If you are using IAM, ensure that you have the rights, roles, and actions to upload files or create directories in the Datastore. For more information, please refer to our guide: [IAM for VMware on OVHcloud - Overview and FAQ](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_getting_started).
 
 ## Instructions

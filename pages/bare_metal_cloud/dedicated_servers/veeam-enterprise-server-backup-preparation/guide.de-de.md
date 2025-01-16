@@ -13,8 +13,8 @@ Backing up a Bare Metal server with Veeam Enterprise involves several applicatio
 ## Requirements
 
 - An [OVHcloud Bare Metal server](/links/bare-metal/bare-metal)
-- A [Veeam Enterprise Backup solution](https://www.ovhcloud.com/de/storage-solutions/veeam-enterprise/)
-- [OVHcloud Standard S3 Object Storage](https://www.ovhcloud.com/de/public-cloud/object-storage/) (optional)
+- A [Veeam Enterprise Backup solution](/links/storage/veeam-enterprise)
+- [OVHcloud Object Storage](/links/public-cloud/object-storage) (optional)
 
 ## Instructions
 
@@ -30,7 +30,7 @@ You can also configure your Dedicated Server to use the private network by follo
 
 Download, install, and license your Veeam Enterprise backup server using our guide [Setting up Veeam Backup & Replication](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication).
 
-From here, you can keep reading to learn how to set up S3 Object Storage as your repository or you can go directly to the [Go further](#gofurther) step.
+From here, you can keep reading to learn how to set up Object Storage as your repository or you can go directly to the [Go further](#gofurther) step.
 
 ### Setting up your Object Storage
 
@@ -38,12 +38,12 @@ Object Storage creation and configuration can be done in the `Public Cloud`{.act
 
 If you don't have already a Public Cloud project in your OVHcloud account, read our [Creating your first OVHcloud Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) guide.
 
-[Create an Object Storage container](/pages/storage_and_backup/object_storage/s3_create_bucket) using one of OVHcloud's **S3 API solutions (Standard or High Performance)**. Standard is recommended since this backup usually does not require High Performance storage.
+[Create an Object Storage container](/pages/storage_and_backup/object_storage/s3_create_bucket) using one of OVHcloud's **Object Storage solutions (Standard or High Performance)**. Standard is recommended since this backup usually does not require High Performance storage.
 
 > [!primary]
-> When ordering an S3 container from OVHcloud, only order **Standard Object Storage – S3 API** or the **High Performance Object Storage – S3 API**. These containers support the S3 protocol fully and are designed for use as backup repositories.
+> When ordering an Object Storage container from OVHcloud, only order **Standard Object Storage** or the **High Performance Object Storage*. These containers support the Amazon S3 protocol fully and are designed for use as backup repositories.
 
-Give the S3 user rights to the container by copying and pasting the text below into a JSON file.
+Give the Object Storage user rights to the container by copying and pasting the text below into a JSON file.
 
 ```json
 {
@@ -74,13 +74,13 @@ Give the S3 user rights to the container by copying and pasting the text below i
 
 Make sure to replace `container name` with your actual Object Storage container name.
 
-From the [OVHcloud Control Panel](/links/manager), select `Public Cloud`{.action} and then `Object Storage`{.action} under the `Storage` section. Click on the more options `...`{.action} button to the right of the S3 user and choose `Import S3 Policy (JSON)`{.action}.
+From the [OVHcloud Control Panel](/links/manager), select `Public Cloud`{.action} and then `Object Storage`{.action} under the `Storage` section. Click on the more options `...`{.action} button to the right of the Object Storage user and choose `Import S3 Policy (JSON)`{.action}.
 
 Select the JSON file you just edited and click `Import`{.action}.
 
-![Object Storage - S3 user - JSON import](images/backup-preparation-01.png){.thumbnail}
+![Object Storage - Object Storage user - JSON import](images/backup-preparation-01.png){.thumbnail}
 
-### Configuring the S3 repository in Veeam Enterprise
+### Configuring the Object Storage repository in Veeam Enterprise
 
 From the Veeam application, select `Backup Infrastructure`{.action}, `Backup Repositories`{.action}, and `Add Repository`{.action}.
 
@@ -98,7 +98,7 @@ Give the new repository a **Name** and click `Next`{.action}.
 
 ![Veeam - repository name](images/backup-preparation-05.png){.thumbnail}
 
-Enter the **Service point** (Endpoint) and **Region** information for your S3 storage service.
+Enter the **Service point** (Endpoint) and **Region** information for your Object Storage service.
 
 > You can find this information in the `Public Cloud`{.action} section of the [OVHcloud Control Panel](/links/manager).
 > Click `Object Storage`{.action} then click the `...`{.action} button to the right of your container and click `Display objects`{.action}.
@@ -111,7 +111,7 @@ Enter the **Service point** (Endpoint) and **Region** information for your S3 st
 
 Click `Add`{.action} to enter your credentials. Enter your **Access key** and **Secret key** and then click `OK`{.action}.
 
-> This information is available in the OVHcloud Control Panel under the `S3 Users`{.action} tab. The **Access key** is visible on the main page. 
+> This information is available in the OVHcloud Control Panel under the `Object Storage Users`{.action} tab. The **Access key** is visible on the main page. 
 > The **Secret key** can be found by clicking the more options `...`{.action} button and selecting `View the secret key`{.action}. 
 >
 > ![Object storage - keys](images/backup-preparation-09.png){.thumbnail}

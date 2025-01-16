@@ -1,7 +1,7 @@
 ---
-title: "Activar el servicio de correo incluido en un plan de hosting"
+title: "Web hosting - Activar las direcciones de correo incluidas"
 excerpt: "Descubra cómo activar las direcciones de correo electrónico incluidas en un plan de alojamiento web"
-updated: 2024-10-01
+updated: 2024-12-12
 ---
 
 ## Objetivo
@@ -75,7 +75,15 @@ En la columna `Configuración`, vaya a `Direcciones de correo`{.action}, haga cl
 
 > [!warning]
 >
-> Para confirmar la eliminación del servicio de correo asociado a su alojamiento web, recibirá un enlace de validación por correo electrónico. Para que se inicie la operación de eliminación, haga clic en este enlace.
+> Para confirmar la eliminación del servicio de correo asociado a su alojamiento web, recibirá un enlace de validación por correo electrónico. Es necesario hacer clic en este vínculo para iniciar la operación de eliminación.
+
+#### Caso particular - Eliminación del servicio de correo asociado a su alojamiento web (para asociarlo a otro dominio)
+
+Por motivos de seguridad, la eliminación definitiva de un servicio de correo puede tardar varios días tras hacer clic en el enlace de validación de eliminación.
+
+Si quiere eliminar el servicio de correo asociado a su alojamiento web para asociarlo a otro dominio, y **solo** en este caso, deberá confirmar por escrito su solicitud de aceleración de la eliminación del servicio. Para ello, puede ponerse en contacto con el soporte creando un tíquet de asistencia desde su [centro de ayuda de OVHcloud](https://help.ovhcloud.com/csm?id=csm_get_help). El tíquet de asistencia deberá crearse **obligatoriamente** desde la cuenta de cliente (y el ID de cliente correspondiente) que administre el servicio que vaya a suprimirse.
+
+Una vez procesada la solicitud, podrá asociar la solución de correo asociada a su alojamiento web a otro dominio.
 
 ## Más información
 

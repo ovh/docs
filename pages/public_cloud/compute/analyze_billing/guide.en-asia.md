@@ -1,7 +1,7 @@
 ---
 title: 'Information regarding Public Cloud billing options'
 excerpt: 'Find out more about the different billing options for Public Cloud products'
-updated: 2024-10-07
+updated: 2025-01-07
 ---
 
 ## Objective
@@ -16,9 +16,9 @@ This system is similar to the one used by certain telephone operators, where the
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/asia/public-cloud/){.external} in your OVHcloud account
-- A [Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps){.external}
-- Access to the [OVHcloud Control Panel](/links/manager){.external}
+- A [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
+- A [Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps)
+- Access to the [OVHcloud Control Panel](/links/manager)
 
 > [!success]
 > Take advantage of reduced prices by committing to a period of 1 to 36 months on your Public Cloud resources. More information on our [Savings Plans](/links/public-cloud/savings-plan) page.
@@ -37,10 +37,6 @@ At the end of the month, each counter is multiplied by the hourly rate for the r
 Each cloud project has its own bill, which totals up all of the resources billed during the month. This bill is generated on the first day of the following month.
 
 ### Example
-
-> [!warning]
-> Please note that an hourly instance is billed per hour, regardless of when the instance is created. If you would like to have 60 minutes of usage for one hour of billing, you will need to launch your instance at the hour mark, for example at 1:00 or 2:00 pm.
->
 
 This example might provide a clear explanation of how this works.
 
@@ -102,7 +98,7 @@ If you would like to receive alerts when the forecast of your resource usage exc
 
 ### Instances
 
-The prices of cloud instances (or cloud servers) are listed in the OVHcloud Control Panel before you get started with an instance. You can also view prices on the [pricing page](https://www.ovhcloud.com/asia/public-cloud/prices/){.external}.
+The prices of cloud instances (or cloud servers) are listed in the OVHcloud Control Panel before you get started with an instance. You can also view prices on the [pricing page](/links/public-cloud/prices).
 
 > [!primary]
 >
@@ -150,7 +146,7 @@ The calculation is: ( Price per GB per month / 720 ) x number of hours x number 
 
 The number of GB per hour corresponds to the maximum number of GB stored over the course of the hour. For example, if a user has 15GB at 16:20, 17GB at 16:40, and 14GB at 16:50, OVHcloud will charge 17GB for the 16:00 - 17:00 period.
 
-The storage prices are available directly on the [OVHcloud website](https://www.ovhcloud.com/asia/public-cloud/storage/){.external}.
+The storage prices are available directly on the [OVHcloud website](/links/public-cloud/storage).
 
 #### Additional volumes
 
@@ -166,7 +162,7 @@ Snapshots of additional volumes are billed the same way as the volumes themselve
 
 #### Instance snapshots and images
 
-Both snapshots and images of instances (excluding the catalogue of images supplied by OVHcloud) are billed at a flat rate per GB per month, regardless of the original instance and image type. Go to the [pricing page](https://www.ovhcloud.com/asia/public-cloud/prices/){.external} to view prices.
+Both snapshots and images of instances (excluding the catalogue of images supplied by OVHcloud) are billed at a flat rate per GB per month, regardless of the original instance and image type. Go to the [pricing page](/links/public-cloud/prices) to view prices.
 
 #### Object storage
 

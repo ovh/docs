@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Use S3 Object Storage with Owncloud
-excerpt: Learn how to set up storage in Owncloud to use a S3 Object Storage bucket
+excerpt: Learn how to set up storage in Owncloud to use an Object Storage bucket
 updated: 2024-05-20
 ---
 
@@ -8,22 +8,22 @@ updated: 2024-05-20
 
 Owncloud is a suite of client-server software for creating and using file hosting services.
 
-**This guide explains how to set up storage in Owncloud to use a S3 Object Storage bucket.**
+**This guide explains how to set up storage in Owncloud to use an Object Storage bucket.**
 
 > [!warning]
 >
 > OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. If you encounter any difficulties performing these actions, please contact a [specialist service provider](https://partner.ovhcloud.com/en-au/directory/) and/or discuss the issue with our community on <https://community.ovh.com/en/>. OVHcloud cannot provide you with technical support in this regard.
+> This guide is designed to assist you in common tasks as much as possible. If you encounter any difficulties performing these actions, please contact a [specialist service provider](/links/partner) and/or discuss the issue with our [community of users](/links/community). OVHcloud cannot provide you with technical support in this regard.
 >
 
 ## Requirements
 
 - A bucket
 - A user with the required access rights on the bucket
-- Your S3 credentials (access_key and secret_access_key)
+- Your Object Storage credentials (access_key and secret_access_key)
 
-See our [Getting started with S3 Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) guide.
+See our [Getting started with Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) guide.
 
 > [!primary]
 >
@@ -83,6 +83,6 @@ The result should be similar to this:
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-au/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Join our [community of users](/links/community).

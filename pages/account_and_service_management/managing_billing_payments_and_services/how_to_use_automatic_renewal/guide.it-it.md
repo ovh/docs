@@ -1,12 +1,12 @@
 ---
 title: Come rinnovare i servizi OVHcloud
 excerpt: Scopri come gestire i tuoi servizi e i loro rinnovi nella tua area clienti OVHcloud.
-updated: 2024-11-12
+updated: 2024-12-23
 ---
 
 ## Obiettivo
 
-Il menu **I tuoi servizi** dello Spazio Cliente OVHcloud ti permette di verificare lo stato dei tuoi servizi, rinnovarli, modificare il tipo di rinnovo, saldare fatture o anticipare il pagamento.
+Il menu **Le mie offerte e servizi** dello Spazio Cliente OVHcloud ti permette di verificare lo stato dei tuoi servizi, rinnovarli, modificare il tipo di rinnovo, saldare fatture o anticipare il pagamento.
 
 Questa guida ti mostra come:
 
@@ -19,7 +19,7 @@ Questa guida ti mostra come:
 
 > [!primary]
 >
-> Ti ricordiamo che in base al luogo di residenza, alla normativa vigente e ai servizi attivati, è possibile che alcune sezioni di questa guida varino o non siano applicabili alla tua situazione. Per maggiori informazioni, consulta i contratti OVHcloud dallo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) : clicca sul tuo nome in alto a destra, sulla `Prodotti e servizi`{.action} e poi sulla scheda `Contratti`{.action}.
+> Ti ricordiamo che in base al luogo di residenza, alla normativa vigente e ai servizi attivati, è possibile che alcune sezioni di questa guida varino o non siano applicabili alla tua situazione. Per maggiori informazioni, consulta i contratti OVHcloud dallo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) : clicca sul tuo nome in alto a destra, sulla `Le mie offerte e servizi`{.action} e poi sulla scheda `Contratti`{.action}.
 >
 
 <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/dfpPCa0mUyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -69,23 +69,23 @@ Questa guida ti mostra come:
 ## Procedura
 
 Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).<br>
-Clicca sul tuo nome nell’angolo in alto a destra e seleziona `Prodotti e servizi`{.action}.
+Clicca sul tuo nome nell’angolo in alto a destra e seleziona `Le mie offerte e servizi`{.action}.
 
 ![prodotti e servizi](/pages/assets/screens/control_panel/product-selection/right-column/products-services.png){.thumbnail}
 
 ### Visualizza il tipo di rinnovo <a name="renewal-type"></a>
 
-La pagina **I tuoi servizi** contiene una tabella di gestione dei tuoi servizi OVHcloud. Nella tabella sono riportati nome, tipo di servizio, disponibilità del servizio (`Attivo` di default), stato (tipo di rinnovo, azione da eseguire, ecc.), la data di validità successiva del rinnovo o della disattivazione del servizio, nonché un pulsante `...`{.action} dedicato alle azioni possibili per ogni servizio.
+La pagina **Gestione delle mie offerte e servizi** contiene una tabella di gestione dei tuoi servizi OVHcloud. Nella tabella sono riportati nome, tipo di servizio, disponibilità del servizio (`Attivo` di default), stato (tipo di rinnovo, azione da eseguire, ecc.), la data di validità successiva del rinnovo o della disattivazione del servizio, nonché un pulsante `...`{.action} dedicato alle azioni possibili per ogni servizio.
 
-![i miei servizi](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/my-services-en.png){.thumbnail}
+![i miei servizi](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/my-services-en.png){.thumbnail}
 
 > [!success]
 > Gli strumenti per l'ordinamento, il filtraggio e la ricerca sono disponibili sopra la tabella.
 > È possibile ordinare le colonne in ordine crescente o decrescente, cercare il nome di uno dei servizi o applicare un filtro per visualizzare solo alcuni servizi in base ai criteri selezionati.
 >
-> I criteri di filtraggio verranno visualizzati sopra la tabella. Ecco un esempio di filtro che permette di visualizzare i domini con rinnovo manuale e la cui data di fine dell'abbonamento scade prima di un mese.
+> I criteri di filtraggio verranno visualizzati sopra la tabella. Ecco un esempio di filtro che permette di visualizzare i domini con rinnovo manuale.
 >
-> ![manageautomaticrenewal](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/filters-en.png){.thumbnail}
+> ![manageautomaticrenewal](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/filters-en.png){.thumbnail}
 
 <a name="actions"></a>
 
@@ -98,14 +98,14 @@ La pagina **I tuoi servizi** contiene una tabella di gestione dei tuoi servizi O
 
 A destra di un servizio, clicca sul pulsante `...`{.action} nella colonna `Azioni` e seleziona l’azione che preferisci.
 
-![menu azioni](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/actions-en.png){.thumbnail}
+![menu azioni](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/actions-en.png){.thumbnail}
 
 **Ciascuna azione è descritta in una delle schede qui sotto.**
 
 > [!tabs]
 > **Configura il rinnovo**
 >>
->> ![configura il rinnovo](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/configure-renewal-en.png){.thumbnail}
+>> ![configura il rinnovo](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/configure-renewal-en.png){.thumbnail}
 >>
 >> Clicca sull’azione `Configura il rinnovo`{.action}. In base al servizio scelto, è possibile impostare la funzionalità di rinnovo manuale oppure scegliere la frequenza di rinnovo automatico. Se l’operazione è consentita, è possibile scegliere il tipo di rinnovo e la frequenza.
 >>
@@ -115,7 +115,7 @@ A destra di un servizio, clicca sul pulsante `...`{.action} nella colonna `Azion
 >>
 > **Anticipa il pagamento**
 >>
->> ![anticipare il pagamento](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/forward-payment-en.png){.thumbnail}
+>> ![anticipare il pagamento](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/forward-payment-en.png){.thumbnail}
 >>
 >> Questa azione è consentita per i servizi con **rinnovo automatico**.
 >>
@@ -124,9 +124,9 @@ A destra di un servizio, clicca sul pulsante `...`{.action} nella colonna `Azion
 >> È possibile rinnovare i servizi in qualsiasi momento prima della loro scadenza e scegliere la durata del rinnovo.
 >> In questo caso, il periodo di validità sottoscritto sarà aggiunto a quello in corso. Il periodo di validità rimanente non andrà perso.
 >>
-> **Rescindi l'impegno contrattuale**
+> **Disattivare il servizio**
 >>
->> ![disattiva](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/cancel-en.png){.thumbnail}
+>> ![disattiva](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/cancel-en.png){.thumbnail}
 >>
 >> Questa azione è consentita per i servizi impostati con il **rinnovo automatico**.
 >>
@@ -136,7 +136,7 @@ A destra di un servizio, clicca sul pulsante `...`{.action} nella colonna `Azion
 >>
 > **Rinnova il servizio**
 >>
->> ![Rinnova il servizio](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/renew-service-en.png){.thumbnail}
+>> ![Rinnova il servizio](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/renew-service-en.png){.thumbnail}
 >>
 >> Questa azione è consentita solo per i servizi con **rinnovo manuale**.
 >>
@@ -145,7 +145,7 @@ A destra di un servizio, clicca sul pulsante `...`{.action} nella colonna `Azion
 >>
 > **Paga la tua fattura**
 >>
->> ![Paga una fattura](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/pay-bill-en.png){.thumbnail}
+>> ![Paga una fattura](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/pay-bill-en.png){.thumbnail}
 >>
 >> Se una fattura è in attesa di pagamento e quando:
 >>
@@ -161,7 +161,7 @@ A destra di un servizio, clicca sul pulsante `...`{.action} nella colonna `Azion
 
 Per effettuare azioni in blocco è possibile selezionare diversi servizi nella tabella e cliccare sul pulsante `Azioni`{.action}.
 
-![azioni in blocco](/pages/assets/screens/control_panel/product-selection/right-column/products-and-services/batch-actions-en.png){.thumbnail}
+![azioni in blocco](/pages/assets/screens/control_panel/product-selection/right-column/my-solutions-and-services/batch-actions-en.png){.thumbnail}
 
 Nella tabella seguente vengono descritte le azioni in blocco disponibili.
 
@@ -197,7 +197,7 @@ Nella tabella seguente vengono descritte le azioni in blocco disponibili.
 >> Se anche il dominio è stato sospeso ed è stato rinnovato, il tempo di attesa può essere più lungo e arrivare fino a 48 ore, corrispondente al tempo di propagazione DNS.
 >> Per proteggerti dall'indisponibilità di accesso per tutti i tuoi servizi critici, ti consigliamo di optare per il rinnovo automatico e di [verificare regolarmente che i tuoi metodi di pagamento siano aggiornati](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods).
 > L'abbonamento del mio servizio scade a luglio 2024. È gennaio 2024 e voglio rinnovarlo per un anno. L'abbonamento scadrà a luglio 2025 o gennaio 2025?
->> Quando estendi il rinnovo di un servizio (per un anno o un periodo più breve), questo periodo si aggiunge alla successiva data di validità visibile nella tabella "I tuoi servizi". In questo caso, il tuo servizio sarà rinnovato fino a luglio 2025.
+>> Quando estendi il rinnovo di un servizio (per un anno o un periodo più breve), questo periodo si aggiunge alla successiva data di validità visibile nella tabella "Gestione delle mie offerte e servizi". In questo caso, il tuo servizio sarà rinnovato fino a luglio 2025.
 > L'abbonamento del mio servizio è scaduto il 1 gennaio 2024 e ho dimenticato di rinnovarlo. L'ho appena rinnovato il 16 gennaio 2024 per 6 mesi, ma constato che scadrà il 1° luglio 2024 e non il 16 luglio 2024. È normale?
 >> Sì, è normale, il rinnovo inizia alla data di scadenza dell'abbonamento.
 

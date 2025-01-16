@@ -42,7 +42,7 @@ delete-ovh-archive = s3api delete-bucket-intelligent-tiering-configuration --id 
 
 > [!primary]
 >
-> - `Id` est une chaîne utilisée pour identifier la configuration de l'Intelligent-Tiering S3. Sa valeur est arbitraire et vous pouvez la modifier. Elle sera nécessaire pour les opérations ultérieures PUT, GET et DELETE sur la configuration de l'Intelligent-Tiering.
+> - `Id` est une chaîne utilisée pour identifier la configuration de l'Intelligent-Tiering S3 **\***. Sa valeur est arbitraire et vous pouvez la modifier. Elle sera nécessaire pour les opérations ultérieures PUT, GET et DELETE sur la configuration de l'Intelligent-Tiering.
 > 
 > - `Status` et `Days` sont obligatoires mais non utilisés.
 >
@@ -228,3 +228,5 @@ Découvrez notre chaîne dédiée Discord : <https://discord.gg/ovhcloud>. Posez
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](/links/professional-services) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre [communauté d'utilisateurs](/links/community).
+
+**\*** : S3 est une marque déposée appartenant à Amazon Technologies, Inc. Les services de OVHcloud ne sont pas sponsorisés, approuvés, ou affiliés de quelque manière que ce soit.

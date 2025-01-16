@@ -13,10 +13,6 @@ updated: 2024-10-09
 }
 </style>
 
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłoś propozycję modyfikacji" na tej stronie.
->
-
 ## Wprowadzenie
 
 Konta Exchange mogą być skonfigurowane w  kompatybilnych programach pocztowych.  Dzięki temu możesz używać Twojego konta e-mail, korzystając z wybranej przez Ciebie aplikacji. Aplikacja Mail na macOS jest dostępna bezpłatnie dla wszystkich komputerów Mac.
@@ -42,7 +38,7 @@ Konta Exchange mogą być skonfigurowane w  kompatybilnych programach pocztowych
 
 > [!primary]
 >
-> W naszym przykładzie używamy nazwy serwera: ex*?*.mail.ovh.net. Należy zastąpić "?" cyfrą wskazującą serwer Twojej usługi Exchange.
+> W naszym przykładzie używamy nazwy serwera: ex**?**.mail.ovh.net. Należy zastąpić "?" cyfrą wskazującą serwer Twojej usługi Exchange.
 >
 > Znajdziesz tę cyfrę w [Panelu klienta OVHcloud](/links/manager), w rubryce `Web Cloud`{.action}, następnie `Microsoft`{.action}.
 > Kliknij na `Exchange`{.action}, a następnie na wybraną platformę Exchange. Nazwa serwera jest widoczna w ramce **Połączenie** w zakładce `Informacje ogólne`{.action}.
@@ -54,27 +50,32 @@ Konta Exchange mogą być skonfigurowane w  kompatybilnych programach pocztowych
 
 > [!tabs]
 > **Etap 1**
+>>
 >> Wybierz `Exchange`{.action}<br><br>
 >> ![MailMac](images/mail-mac-exchange01.png){.thumbnail .w-400 .h-600}
 >>
 > **Etap 2**
+>>
 >> Wpisz **Nazwa** Twojego konta e-mail i **Adres e-mail**, a następnie kliknij `Zaloguj się {.action} <br><br>
 >> ![MailMac](images/mail-mac-exchange02.png){.thumbnail .w-400 .h-600}
 >>
 > **Etap 3**
+>>
 >> W kolejnym oknie kliknij `Konfiguracja ręczna`{.action} : <br><br>- Ustaw **Nazwa**, która będzie się wyświetlała w interfejsie nawigacji <br>- Pozostaw swój **adres e-mail**<br>- Pozostaw swoje **Hasło** wprowadzone <br><br>Aby dokończyć konfigurację, kliknij `Zaloguj się`{.action} <br><br>
 >> ![MailMac](images/mail-mac-exchange03.png){.thumbnail .w-400 .h-600}
 >>
 > **Etap 4**
->> Wpisz: <br><br>- Adres e-mail: pozostaw pełny adres e-mail<br>- Nazwa użytkownika: pozostaw pełny adres e-mail <br>- Hasło: zostaw swoje **hasło**<br> - Wewnętrzny adres URL: **ex?.mail.ovh.net** (zmień **?* na [numer serwera Exchange](#addaccount))<br>- Zewnętrzny adres URL: **ex?.mail.ovh.net** (zmień **?* na [numer serwera Exchange](#addaccount))<br><br>
+>>
+>> Wpisz: <br><br>- Adres e-mail: pozostaw pełny adres e-mail<br>- Nazwa użytkownika: pozostaw pełny adres e-mail <br>- Hasło: zostaw swoje **hasło**<br> - Wewnętrzny adres URL: **ex?.mail.ovh.net** (zmień **?** na [numer serwera Exchange](#addaccount))<br>- Zewnętrzny adres URL: **ex?.mail.ovh.net** (zmień **?** na [numer serwera Exchange](#addaccount))<br><br>
 >>
 >> > [!warning]
 >> >
-> > > Wiadomość jest wyświetlana na czerwono "**Nie można sprawdzić nazwy lub hasła konta**", gdy po raz pierwszy zostanie wyświetlone okno. Jeśli jednak ten komunikat będzie się powtarzać po zatwierdzeniu, wprowadzone informacje będą błędne.<br><br>
+>> > Wiadomość jest wyświetlana na czerwono "**Nie można sprawdzić nazwy lub hasła konta**", gdy po raz pierwszy zostanie wyświetlone okno. Jeśli jednak ten komunikat będzie się powtarzać po zatwierdzeniu, wprowadzone informacje będą błędne.<br><br>
 >>
 >> ![MailMac](images/mail-mac-exchange04.png){.thumbnail .w-400 .h-600}
 >>
 > **Etap 5**
+>>
 >> Oprócz e-maili możesz wybrać inne funkcje Exchange, którymi chcesz zarządzać z poziomu komputera Mac. <br><br>![mailmac](images/mail-mac-exchange05.png){.thumbnail .w-400 .h-600}
 
 ### Użyj konta e-mail

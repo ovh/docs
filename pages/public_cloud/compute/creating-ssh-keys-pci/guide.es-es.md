@@ -43,7 +43,7 @@ Este método suele ser el mejor equilibrio entre la seguridad y la comodidad y e
 
 ### Creación de pares de claves para las conexiones OpenSSH
 
-En las siguientes instrucciones se explica cómo crear y administrar pares de claves para conexiones remotas con **OpenSSH** desde la línea de comandos. La mayoría de los sistemas operativos actuales incluyen esta función sin necesidad de instalar software adicional.
+En las siguientes instrucciones se explica cómo crear y administrar pares de claves para conexiones remotas con **OpenSSH** desde la **línea de comandos**. La mayoría de los sistemas operativos actuales incluyen esta función sin necesidad de instalar software adicional.
 
 Si prefiere una interfaz gráfica de usuario, puede encontrar numerosas aplicaciones de software para cada tipo de sistema operativo que le permiten conectarse a hosts remotos a través del protocolo OpenSSH.
 
@@ -143,7 +143,7 @@ i4ANmLy7NULWK36yU0Rp9bFJ4o0/4PTkZiDCsK0QyHhAJXdLN7ZHpfJtHIPCnexmwIMLfIhCWhO5
  user@hostname
 ```
 
-Copie esta cadena de clave para [añadirla a una nueva instancia o importarla en su área de cliente] (/pages/public_cloud/compute/public-cloud-first-steps).
+Copie esta cadena de clave para [añadirla a una nueva instancia o importarla en su área de cliente](/pages/public_cloud/compute/public-cloud-first-steps).
 
 > [!primary]
 >
@@ -361,7 +361,7 @@ Your public key has been saved in KeyFileName_rsa.pub.
 Al conectarse a la instancia correspondiente, especifique el nombre del archivo de clave privada, además de los detalles del usuario y del servidor de conexión:
 
 ```bash
-ssh -i C:\Users\Username\.ssh/KeyFileName" user@IP_ADDRESS
+ssh -i C:\Users\Username\.ssh/KeyFileName user@IP_ADDRESS
 ```
 
 Ejemplo:

@@ -479,7 +479,7 @@ Da questo momento, il tuo Additional IP è attivo.
 
 1. Accedi al menu `Start`{.action} > `Control Panel`{.action} > `Network and Internet`{.action} > `Network and Sharing Centre`{.action} > `Change Adapter Settings`{.action} (nel menu a sinistra)
 2. Clicca con il tasto destro su Connessione alla rete local, nel nostro esempio `Ethernet 2`{.action}
-3. Clicca su `Properties`{action}
+3. Clicca su `Properties`{.action}
 4. Seleziona `Internet Protocol Version 4 (TCP/IPv4)`{.action} e clicca su `Properties`{.action}
 5. Clicca su `Use the following IP address`{.action} e inserisci l'IP principale del tuo server, la subnet mask e il gateway predefinito ottenuto precedentemente con il comando `ipconfig`{.action} . In `Preferred DNS Server`, inserisci 213.186.33.99.
 

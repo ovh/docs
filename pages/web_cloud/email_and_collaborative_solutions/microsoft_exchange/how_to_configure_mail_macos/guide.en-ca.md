@@ -49,27 +49,32 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 
 > [!tabs]
 > **Step 1**
+>>
 >> Select `Exchange`{.action}<br><br>
->>![mailmac](images/mail-mac-exchange01.png){.thumbnail .w-400 .h-600}
+>> ![mailmac](images/mail-mac-exchange01.png){.thumbnail .w-400 .h-600}
 >>
 > **Step 2**
+>>
 >> Enter the **Name** of your email account and your **Email address**, then click `Log in`{.action}. <br><br>
->>![mailmac](images/mail-mac-exchange02.png){.thumbnail .w-400 .h-600}
+>> ![mailmac](images/mail-mac-exchange02.png){.thumbnail .w-400 .h-600}
 >>
 > **Step 3**
+>>
 >> In the next window, click `Manual configuration`{.action}: <br><br>- Define the **Name** that will be displayed in the navigation interface. <br>- Leave your **Email address**.<br>- Leave your **Password** already entered. <br><br>To finalise the configuration, click `Log in`{.action}. <br><br><br>
 >>![mailmac](images/mail-mac-exchange03.png){.thumbnail .w-400 .h-600}
 >>
 > **Step 4**
->>> Type: <br><br>- Email address: Leave your full email address.<br>- User name: Leave your full email address. <br>- Password: Leave your **Password**.<br> - Internal URL: **ex?.mail.ovh.ca** (replace **?** with [your Exchange server number](#addaccount))<br>- External URL: **ex?.mail.ovh.ca** (replace **?** with [your Exchange server number](#addaccount))<br><br>
+>>
+>> Type: <br><br>- Email address: Leave your full email address.<br>- User name: Leave your full email address. <br>- Password: Leave your **Password**.<br> - Internal URL: **ex?.mail.ovh.ca** (replace **?** with [your Exchange server number](#addaccount))<br>- External URL: **ex?.mail.ovh.ca** (replace **?** with [your Exchange server number](#addaccount))<br><br>
 >>
 >> > [!warning]
->>>
->>> It is normal that an error message of the type “**Unable to verify account name or password**” occurs when the window appears for the first time. However, if this message persists after validation, the information entered is incorrect.<br><br>
+>> >
+>> > It is normal that an error message of the type “**Unable to verify account name or password**” occurs when the window appears for the first time. However, if this message persists after validation, the information entered is incorrect.<br><br>
 >>
 >>![mailmac](images/mail-mac-exchange04.png){.thumbnail .w-400 .h-600}
 >>
 > **Step 5**
+>>
 >> In addition to your emails, you can select other Exchange features that you want to manage from your Mac. <br><br>![mailmac](images/mail-mac-exchange05.png){.thumbnail .w-400 .h-600}
 
 ### Use your email account

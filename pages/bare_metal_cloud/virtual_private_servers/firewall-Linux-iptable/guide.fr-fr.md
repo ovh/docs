@@ -1,7 +1,7 @@
 ---
 title: Configurer le pare-feu sous Linux avec Iptables
 excerpt: Découvrez comment sécuriser un serveur avec Iptables
-updated: 2023-02-27
+updated: 2024-12-20
 ---
 
 ## Objectif
@@ -29,7 +29,9 @@ Les pare-feux fonctionnent en définissant des règles qui régissent le trafic 
 >
 > Ce guide indique les commandes pour une distribution Ubuntu Server.
 >
-> Ce guide est à usage général. Il est possible que vous deviez adapter quelques commandes en fonction de la distribution et/ou du système d'exploitation que vous utilisez. Certains conseils pourront vous suggérer l'utilisation d'outil tiers. En cas de question quant à leur utilisation, veuillez vous référer à leur documentation officielle.  
+> Ce guide est à usage général. Il est possible que vous deviez adapter quelques commandes en fonction de la distribution et/ou du système d'exploitation que vous utilisez. Certains conseils pourront vous suggérer l'utilisation d'outil tiers. En cas de question quant à leur utilisation, veuillez vous référer à leur documentation officielle.
+>
+> La plupart des règles décrites dans ce guide supposent que votre iptables est configuré par défaut pour DROP le trafic entrant, et que vous autorisez sélectivement le trafic entrant. Si vous avez l'intention de mettre en place un autre type de configuration, nous vous recommandons de consulter la documentation complémentaire.
 >
 
 ### Etape 1 : mettre à jour votre système

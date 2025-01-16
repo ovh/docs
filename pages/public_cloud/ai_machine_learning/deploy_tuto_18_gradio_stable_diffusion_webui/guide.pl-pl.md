@@ -27,11 +27,11 @@ Unlike a locally hosted application, using AI Deploy offers extremely fast infer
 
 To build and deploy your Stable Diffusion app, you need:
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
-- An AI Deploy Project created inside a [Public Cloud project](https://www.ovhcloud.com/pl/public-cloud/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](/links/manager)
+- An AI Deploy Project created inside a [Public Cloud project](/links/public-cloud/public-cloud) in your OVHcloud account
 - A [user for AI Deploy & Object Storage](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
 - [The OVHcloud AI CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) installed on your local computer
-- [Docker](https://www.docker.com/get-started) installed on your local computer, **or** access to a Debian Docker Instance, which is available on the [Public Cloud](https://www.ovh.com/manager/public-cloud/)
+- [Docker](https://www.docker.com/get-started) installed on your local computer, **or** access to a Debian Docker Instance, which is available on the [Public Cloud](/links/manager)
 
 ## Instructions
 
@@ -102,7 +102,7 @@ docker build . -t sd_webui:latest
 
 #### Push the image into a registry
 
-Once your image is built, you will need to tag it and push it to a registry. When working with OVHcloud AI Solutions, several registries can be used ([OVHcloud Managed Private Registry](https://www.ovhcloud.com/en/public-cloud/managed-private-registry/), [Docker Hub](https://hub.docker.com/), GitHub packages, ...). In this tutorial, we will use the **OVHcloud shared registry**, a solution dedicated to AI Solutions.
+Once your image is built, you will need to tag it and push it to a registry. When working with OVHcloud AI Solutions, several registries can be used ([OVHcloud Managed Private Registry](/links/public-cloud/managed-private-registry), [Docker Hub](https://hub.docker.com/), GitHub packages, ...). In this tutorial, we will use the **OVHcloud shared registry**, a solution dedicated to AI Solutions.
 
 > [!warning]
 > **Warning**
@@ -169,7 +169,7 @@ ovhai app logs <app_id> --follow
 
 When your app is ready for use, you will be able to generate your first images using the default checkpoint.
 
-For your information, the `--volume` parameter allows to use both Swift and S3 buckets. However, it's important to note that for S3 usage, a proper configuration is necessary. If S3 is not configured yet and you wish to use it, please read the [S3 compliance guide](/pages/public_cloud/ai_machine_learning/gi_08_s3_compliance).
+For your information, the `--volume` parameter allows to use both Swift and S3* compatible Object Storage buckets. However, it's important to note that for S3 compatible usage, a proper configuration is necessary. If S3 compatible Object Storage is not configured yet and you wish to use it, please read the [S3 compatible compliance guide](/pages/public_cloud/ai_machine_learning/gi_08_s3_compliance).
 
 ### Step 3: Add Stable Diffusion checkpoints
 
@@ -265,10 +265,12 @@ ovhai app run pytorch/pytorch:2.1.0-cuda12.1-cudnn8-runtime \
 
 If you are interested in image generation concepts, you can learn how image generation networks work and train your own Generative Adversarial Network. Check out this AI Notebooks guide: [Create and train an image generation model](/pages/public_cloud/ai_machine_learning/notebook_tuto_14_image-generation-dcgan).
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pl/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 
 Please send us your questions, feedback and suggestions to improve the service:
 
 - On the OVHcloud [Discord server](https://discord.gg/ovhcloud)
+
+**\***: S3 is a trademark of Amazon Technologies, Inc. OVHcloud’s service is not sponsored by, endorsed by, or otherwise affiliated with Amazon Technologies, Inc.

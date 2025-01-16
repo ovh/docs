@@ -1,7 +1,7 @@
 ---
 title: Konfiguracja firewalla w systemie Linux z systemem iptables
 excerpt: Dowiedz się, jak zabezpieczyć serwer korzystając z iptables
-updated: 2024-07-12
+updated: 2024-12-20
 ---
 
 > [!primary]
@@ -35,6 +35,8 @@ Firewall działa poprzez określenie zasad regulujących dozwolony ruch i zablok
 >
 > Niniejsza instrukcja ma charakter poglądowy. Być może będziesz musiał dostosować niektóre komendy do konkretnej dystrybucji i/lub systemu operacyjnego, którego używasz. W niektórych sytuacjach rekomendujemy użycie narzędzi zewnętrznych. W przypadku pytań dotyczących korzystania z tych narzędzi zapoznaj się z oficjalną dokumentacją producenta.  
 >
+> Większość reguł opisanych w tym przewodniku zakłada, że iptables jest domyślnie skonfigurowany do DROP ruchu przychodzącego i że selektywnie zezwalasz na ruch przychodzący. Jeśli zamierzasz ustawić inny typ konfiguracji, zalecamy zapoznanie się z dodatkową dokumentacją.
+> 
 
 ### Etap 1: aktualizacja systemu
 

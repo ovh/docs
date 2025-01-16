@@ -1,7 +1,7 @@
 ---
 title: "Téléverser un ISO dans un datastore"
 excerpt: "Découvrez comment utiliser le client html de téléversement du datastore et Govc afin de manipuler des données dans votre environnement VMware vSphere on OVHcloud managé"
-updated: 2024-10-04
+updated: 2024-12-31
 ---
 
 ## Objectif
@@ -12,6 +12,7 @@ updated: 2024-10-04
 
 - Être connecté à [l'espace client OVHcloud](/links/manager).
 - Être administrateur technique de l'infrastructure [VMware on OVHcloud](/links/hosted-private-cloud/vmware).
+- Assurez-vous que la plage de ports TCP **40050–40255** est ouverte sur votre pare-feu pour permettre le téléversement et le téléchargement de fichiers vers le datastore.
 - Si vous utilisez IAM, vérifiez bien que vous disposez des droits, rôles et actions nécessaires pour téléverser des fichiers ou créer des répertoires dans le datastore. Pour plus d'informations, consultez le guide « [IAM pour VMware on OVHcloud - Présentation et FAQ](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_iam_getting_started) ».
 
 ## En pratique

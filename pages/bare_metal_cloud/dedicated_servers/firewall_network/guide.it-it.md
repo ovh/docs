@@ -1,12 +1,8 @@
 ---
 title: 'Abilitazione e configurazione di Edge Network Firewall'
 excerpt: 'Come configurare Edge Network Firewall per i servizi'
-updated: 2024-01-05
+updated: 2024-12-16
 ---
-
-> [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
->
 
 ## Obiettivo
 
@@ -25,7 +21,7 @@ Per proteggere i servizi clienti esposti agli indirizzi IP pubblici, OVHcloud of
 
 ## Requisiti
 
-- Un servizio OVHcloud esposto su un indirizzo IP pubblico dedicato ([server dedicato](/links/bare-metal/bare-metal), [VPS](https://www.ovhcloud.com/it/vps/), [istanza Public Cloud](https://www.ovhcloud.com/it/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud) cloud/), [Additional IP](/links/network/additional-ip), ecc.)
+- Un servizio OVHcloud esposto su un indirizzo IP pubblico dedicato ([server dedicato](/links/bare-metal/bare-metal), [VPS](https://www.ovhcloud.com/it/vps/), [istanza Public Cloud](https://www.ovhcloud.com/it/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud), [Additional IP](/links/network/additional-ip), ecc.)
 - Accesso allo [Spazio Cliente OVHcloud](/links/manager)
 
 > [!warning]
@@ -38,6 +34,10 @@ Per proteggere i servizi clienti esposti agli indirizzi IP pubblici, OVHcloud of
 L’Edge Network Firewall riduce l’esposizione agli attacchi DDoS di rete consentendo agli utenti di copiare alcune delle regole del firewall del server al margine della rete OVHcloud. In questo modo, gli attacchi in entrata vengono bloccati il più vicino possibile alla fonte, riducendo il rischio di saturazione delle risorse del server o delle connessioni rack in caso di attacchi gravi.
 
 ### Abilitazione di Edge Network Firewall
+
+> [!primary]
+>
+> Ad oggi, questa funzione è disponibile solo per gli indirizzi IPv4.
 
 > [!primary]
 >

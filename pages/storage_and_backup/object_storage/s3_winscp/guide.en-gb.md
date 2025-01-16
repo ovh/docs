@@ -1,5 +1,5 @@
 ---
-title: Object Storage - Use S3 Object Storage with WinSCP
+title: Object Storage - Use Object Storage with WinSCP
 excerpt: Learn how to configure WinSCP to manage your buckets and objects
 updated: 2023-10-16
 ---
@@ -14,9 +14,9 @@ updated: 2023-10-16
 
 - A bucket
 - A user with the required access rights on the bucket
-- Your S3 credentials (`access_key` and `secret_access_key`)
+- Your Object Storage credentials (`access_key` and `secret_access_key`)
 
-See our [Getting started with S3 Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) guide.
+See our [Getting started with Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) guide.
 
 ## Instructions
 
@@ -28,7 +28,7 @@ Start WinSCP. The login dialog will appear. Fill in the fields as follows:
 
 2\. On the `New Site` node, select `Amazon S3`{.action} protocol.
 
-![S3 file protocol](images/S3_file_protocol.png)
+![Amazon S3 file protocol](images/S3_file_protocol.png)
 
 3\. Enter your endpoint (without `https://`) corresponding to your storage class and set the `Port number` field to `443`.
 
@@ -70,4 +70,5 @@ Then enter your `secret_access_key`.
 
 Join our community of Discord users: <https://discord.gg/ovhcloud>
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our [community of users](/links/community).
+
