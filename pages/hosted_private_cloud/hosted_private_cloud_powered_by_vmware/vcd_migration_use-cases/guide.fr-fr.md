@@ -125,6 +125,10 @@ Tous ces dépôts (*repositories*) ont un quota de stockage de **100 To**. Vous 
 
 Pour plus d'informations, consultez le guide : [VMware Cloud Director - Sauvegarde avec Veeam Data Platform](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-backup)
 
+### Réinitialiser le mot de passe "admin" sur Managed VMware Cloud Director
+
+Il est désormais possible de réinitialiser le mot de passe **admin** d'une Organisation Managed VMware Cloud Director via l'APIv2 : [Accéder à l'APIv2](https://eu.api.ovh.com/console/?section=%2FvmwareCloudDirector&branch=v2#post-/vmwareCloudDirector/organization/-organizationId-/password).
+
 ## Aller plus loin
 
 Vous pouvez aller plus loin en lisant ces guides, afin de mieux connaitre les avantages de VCD on OVHcloud :

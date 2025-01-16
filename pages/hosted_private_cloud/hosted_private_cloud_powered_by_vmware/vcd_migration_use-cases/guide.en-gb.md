@@ -125,6 +125,10 @@ All these repositories have a storage quota of **100 TB**. You can contact the [
 
 For more information, please refer to our guide: [VMware Cloud Director - Veeam Data Platform backup](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vcd-backup)
 
+### Reset the "admin" password on Managed VMware Cloud Director
+
+You can now reset the **admin** password for a Managed VMware Cloud Director organization using APIv2: [Access APIv2](https://eu.api.ovh.com/console/?section=%2FvmwareCloudDirector&branch=v2#post-/vmwareCloudDirector/organization/-organizationId-/password).
+
 ## Go further
 
 You can go even further by reading these guides, to get a better understanding of the advantages of using VCD on OVHcloud:
