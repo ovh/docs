@@ -87,7 +87,7 @@ metadata:
   name: myanalyticsservice
   namespace: ovhcloud
 spec:
-  projectId: XXXX # ID of your OVHcloud project
+  projectId: XXXX # ID of your Public Cloud project ID
   serviceId: XXX # ID of your Analytics service
 ```
 
@@ -100,7 +100,7 @@ metadata:
   name: myanalyticsservice
   namespace: ovhcloud
 spec:
-  projectId: XXXX # ID of your OVHcloud project
+  projectId: XXXX # ID of your Public Cloud project ID
   serviceId: XXX #ID of your Analytics service
   labelSelector:
     matchLabels:
