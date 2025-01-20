@@ -87,8 +87,8 @@ metadata:
   name: mydatabase
   namespace: ovhcloud
 spec:
-  projectId: XXXX
-  serviceId: XXX
+  projectId: XXXX # ID of your OVHcloud project
+  serviceId: XXX # ID of your Public Cloud Databases service
 ```
 
 Or with a label selector to cherry pick you nodes based on label:
@@ -100,8 +100,8 @@ metadata:
   name: mydatabase
   namespace: ovhcloud
 spec:
-  projectId: XXXX
-  serviceId: XXX
+  projectId: XXXX # ID of your OVHcloud project
+  serviceId: XXX # ID of your Public Cloud Databases service
   labelSelector:
     matchLabels:
       LABELNAME: LABELVALUE
