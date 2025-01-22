@@ -1,18 +1,18 @@
 ---
-title: Public Cloud Databases - How to fetch service metrics with Prometheus
-excerpt: Find out how to setup a Prometheus exporter for your Public Cloud databases service
-updated: 2024-12-11
+title: Analytics - How to fetch service metrics with Prometheus
+excerpt: Find out how to setup a Prometheus exporter for your Analytics service
+updated: 2025-01-20
 ---
 
 ## Objective
 
-Public Cloud databases allow you to export service metrics using Prometheus.
+Analytics services allow you to export service metrics using Prometheus.
 
-**This guide explains how to setup a Prometheus exporter for your Public Cloud databases service so that a Prometheus server can collect metrics.**
+**This guide explains how to setup a Prometheus exporter for your Analytics service so that a Prometheus server can collect metrics.**
 
 ## Requirements
 
-- A [Public Cloud databases service](/links/public-cloud/databases) up and running,
+- An [Analytics service](/links/public-cloud/analytics) up and running,
 - Access to the [OVHcloud API](/links/api),
 - A [Prometheus](https://prometheus.io) server to collect metrics.
 
@@ -20,7 +20,7 @@ Public Cloud databases allow you to export service metrics using Prometheus.
 
 ### Enable the Prometheus exporter for your service
 
-You can enable a Prometheus exporter for your service using the API endpoint:
+You can enable a Prometheus exporter for your service using this API endpoint:
 
 > [!api]
 >
@@ -47,27 +47,11 @@ You will also need to reset the credentials in order to obtain the password requ
 
 ### Configure your Prometheus server and start pulling metrics
 
-Use the data from the previous state to configure your Prometheus server and start pulling metrics for your service. Here is an example of such a Prometheus configuration for a MongoDB service:
+Use the data from the previous state to configure your Prometheus server and start pulling metrics for your service. Here is an example of such a Prometheus configuration for an OpenSearch service:
 
 ```yaml
 scrape_configs:
-- job_name: mongo-metrics
-  scrape_interval: 10s
-  metrics_path: /metrics
-  scheme : https
-  basic_auth:
-    username: prometheus
-    password: "xxx"
-  dns_sd_configs:
-    - names:
-      - '_prometheus._tcp.mongodb-7bfb5d40-oa85dff3e.database.cloud.ovh.net' 
-```
-
-The other engines use a slightly different format:
-
-```yaml
-scrape_configs:
-- job_name: postgresql-metrics
+- job_name: opensearch-metrics
   scrape_interval: 10s
   metrics_path: /metrics
   scheme : https
@@ -78,19 +62,18 @@ scrape_configs:
       insecure_skip_verify: true
   static_configs:
     - targets: 
-        - postgresql-02d6a757-ovh-dev.database.cloud.ovh.net:9273
-        - replica-postgresql-02d6a757-ovh-dev.database.cloud.ovh.net:9273
+        - opensearch-02d6a757-ovh-dev.database.cloud.ovh.net:9273
+        - replica-opensearch-02d6a757-ovh-dev.database.cloud.ovh.net:9273
 ```
 
 ## Limitations
 
-Public Cloud Databases offer service metrics via Prometheus for the following engines:
+Analytics offer service metrics via Prometheus for the following engines:
 
-- Caching
-- Cassandra
-- MongoDB
-- MySQL
-- PostgreSQL
+- Kafka
+- Kafka Connect
+- Kafka MirrorMaker
+- OpenSearch
 
 Prometheus endpoints are subject to the same networking limitations the associated service is. Thus, IP restrictions apply, and for services using private networking, the Prometheus exporter endpoint is only reachable from the private network your service is attached to.
 
@@ -100,4 +83,6 @@ We would love to help answer questions and appreciate any feedback you may have.
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
-Are you on Discord? Connect to our channel at <https://discord.gg/PwPqWUpN8G> and interact directly with the team that builds our databases service!
+Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our Analytics service!
+
+Join our [community of users](/links/community).

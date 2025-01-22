@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Databases - How to configure your advanced parameters
 excerpt: Advanced configuration for Public Cloud Databases engines
-updated: 2024-02-29
+updated: 2025-01-14
 ---
 
 ## Objective
@@ -13,11 +13,7 @@ Public cloud database engines are managed services, which means that they are no
 > Advanced configuration is available for the following Public Cloud Databases engines :
 >
 > - Cassandra
-> - Dashboards
-> - Kafka
-> - Kafka Connect
 > - MySQL
-> - Opensearch
 > - PostgreSQL
 > - Caching
 
@@ -94,25 +90,10 @@ Open the following API call, paste your service ID into the `serviceName` input 
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/cassandra
 >> >
-> Kafka
->> > [!api]
->> >
->> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/kafka
->> >
-> Kafka Connect
->> > [!api]
->> >
->> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/kafkaConnect
->> >
 > MySQL
 >> > [!api]
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/mysql
->> >
-> Opensearch
->> > [!api]
->> >
->> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/opensearch
 >> >
 > PostgreSQL
 >> > [!api]
@@ -139,25 +120,10 @@ Open the following API call and paste the corresponding inputs (serviceName, clu
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/cassandra/{clusterId}/advancedConfiguration
 >> >
-> Kafka
->> > [!api]
->> >
->> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/kafka/{clusterId}/advancedConfiguration
->> >
-> Kafka Connect
->> > [!api]
->> >
->> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/kafkaConnect/{clusterId}/advancedConfiguration
->> >
 > MySQL
 >> > [!api]
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/mysql/{clusterId}/advancedConfiguration
->> >
-> Opensearch
->> > [!api]
->> >
->> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/opensearch/{clusterId}/advancedConfiguration
 >> >
 > PostgreSQL
 >> > [!api]
@@ -182,25 +148,10 @@ Open the following API call and paste the corresponding inputs (serviceName, clu
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/cassandra/{clusterId}/capabilities/advancedConfiguration
 >> >
-> Kafka
->> > [!api]
->> >
->> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/kafka/{clusterId}/capabilities/advancedConfiguration
->> >
-> Kafka Connect
->> > [!api]
->> >
->> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/kafkaConnect/{clusterId}/capabilities/advancedConfiguration
->> >
 > MySQL
 >> > [!api]
 >> >
 >> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/mysql/{clusterId}/capabilities/advancedConfiguration
->> >
-> Opensearch
->> > [!api]
->> >
->> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/opensearch/{clusterId}/capabilities/advancedConfiguration
 >> >
 > PostgreSQL
 >> > [!api]
@@ -225,25 +176,10 @@ Open the following API call and paste the corresponding inputs (serviceName, clu
 >> >
 >> > @api {v1} /cloud PUT /cloud/project/{serviceName}/database/cassandra/{clusterId}/advancedConfiguration
 >> >
-> Kafka
->> > [!api]
->> >
->> > @api {v1} /cloud PUT /cloud/project/{serviceName}/database/kafka/{clusterId}/advancedConfiguration
->> >
-> Kafka Connect
->> > [!api]
->> >
->> > @api {v1} /cloud PUT /cloud/project/{serviceName}/database/kafkaConnect/{clusterId}/advancedConfiguration
->> >
 > MySQL
 >> > [!api]
 >> >
 >> > @api {v1} /cloud PUT /cloud/project/{serviceName}/database/mysql/{clusterId}/advancedConfiguration
->> >
-> Opensearch
->> > [!api]
->> >
->> > @api {v1} /cloud PUT /cloud/project/{serviceName}/database/opensearch/{clusterId}/advancedConfiguration
 >> >
 > PostgreSQL
 >> > [!api]

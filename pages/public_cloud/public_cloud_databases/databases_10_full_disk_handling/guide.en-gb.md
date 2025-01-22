@@ -33,8 +33,8 @@ When the disk usage increases even more and reaches a critical level (depending 
 
 Different engines react in different ways, thus Public Cloud Databases services react differently when facing disk full conditions:
 
-- `Caching`, `Kafka MirrorMaker`, `Dashboards`, `M3 Aggregator` and `Kafka Connect` do not store any user data on disk. Thus they will not fill up the underlying disk storage.
-- `Kafka`, `OpenSearch`, `Cassandra` and `M3DB` turn to read-only.
+- `Caching` and `M3 Aggregator` do not store any user data on disk. Thus they will not fill up the underlying disk storage.
+- `Cassandra` and `M3DB` turn to read-only.
 - `MySQL` and `PostgreSQL` turn to read-only with a way to temporarily revert to read-write.
 - `MongoDB` forbids writes but allows deletes.
 
@@ -46,9 +46,9 @@ It may be that your usage simply requires more storage. You can then increase th
 
 It may be that you have reached the full disk situation because of a runaway application filling up your database, or that you are storing some old obsolete data. In these cases, stop whatever process which is unduly filling up your storage, then remove unwanted data.
 
-##### **Kafka**, **OpenSearch**, **M3DB**
+##### **M3DB**
 
-You can reclaim disk space by deleting a `Kafka` topic, an `OpenSearch` index or an `M3DB` namespace.
+You can reclaim disk space by deleting a `M3DB` namespace.
 
 ##### **MongoDB**
 
