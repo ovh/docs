@@ -56,7 +56,7 @@ Use the kubernetes package manager [helm](https://helm.sh) and the values file y
 helm install -f values.yaml public-cloud-databases-operator oci://registry-1.docker.io/ovhcom/public-cloud-databases-operator --version 0.1.1
 ```
 
-This command will create the operator, CRDs and secrets objects.
+This command will create the operator, CRDs and secret objects.
 
 You can find the latest version of the helm chart on [DockerHub](https://hub.docker.com/r/ovhcom/public-cloud-databases-operator/tags).
 
@@ -68,7 +68,7 @@ NAME                              READY   UP-TO-DATE   AVAILABLE   AGE
 public-cloud-databases-operator   1/1     1            1           60m
 ```
 
-And that the secret with you OVHcloud credentials is properly created:
+And that the secret within you OVHcloud credentials is properly created:
 
 ```bash
 kubectl get secret ovh-credentials -n ovhcloud
