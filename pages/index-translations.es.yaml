@@ -184,6 +184,78 @@ public-cloud-network-configuration: Configuración
 public-cloud-network-technical-resources: Recursos Técnicos
 public-cloud-network-tutorials: Tutoriales
 public-cloud-data-platform: Data Platform
+public-cloud-data-platform-getting-started: Getting Started
+public-cloud-data-platform-getting-started-app-init: Build your first app from scratch
+public-cloud-data-platform-tutorials: Tutorials
+public-cloud-data-platform-tutorials-app-dev: Develop your own app
+public-cloud-data-platform-tutorials-segmentation: Apply segmentation to your jobs
+public-cloud-data-platform-product: Platform Documentation
+public-cloud-data-platform-product-navigation: Homepage and Navigation
+public-cloud-data-platform-product-organisation: Organizations and user profiles
+public-cloud-data-platform-product-project: Projects
+public-cloud-data-platform-product-data-catalog: Data Catalog
+public-cloud-data-platform-product-data-catalog-sources: Sources
+public-cloud-data-platform-product-data-catalog-sources-connectors: Configure your connector
+public-cloud-data-platform-product-data-catalog-analyzer: Analyzer
+public-cloud-data-platform-product-lakehouse-manager: Lakehouse Manager
+public-cloud-data-platform-product-lakehouse-manager-tables: Tables
+public-cloud-data-platform-product-dpe: Data Processing Engine
+public-cloud-data-platform-product-dpe-actions: Actions
+public-cloud-data-platform-product-dpe-actions-load: Load
+public-cloud-data-platform-product-dpe-actions-aggregate: Aggregate
+public-cloud-data-platform-product-dpe-actions-custom: Custom
+public-cloud-data-platform-product-dpe-actions-flush-update-metas: Flush & Update Metadata
+public-cloud-data-platform-product-dpe-workflows: Workflows
+public-cloud-data-platform-product-dpe-jobs: Jobs
+public-cloud-data-platform-product-dpe-jobs-execution-preferences: Execution Preferences
+public-cloud-data-platform-product-analytics-manager: Analytics Manager
+public-cloud-data-platform-product-analytics-manager-queries: Queries
+public-cloud-data-platform-product-analytics-manager-dashboards: Dashboards
+public-cloud-data-platform-product-analytics-manager-consumers: Consumers
+public-cloud-data-platform-product-machine-learning-manager: Machine Learning Manager
+public-cloud-data-platform-product-machine-learning-manager-notebooks: Notebooks
+public-cloud-data-platform-product-machine-learning-manager-pipelines: Pipelines
+public-cloud-data-platform-product-machine-learning-manager-pipelines-configuration: Configure a pipeline
+public-cloud-data-platform-product-machine-learning-manager-pipelines-configuration-dataset: Data preparation
+public-cloud-data-platform-product-machine-learning-manager-pipelines-configuration-training: Training procedure
+public-cloud-data-platform-product-machine-learning-manager-pipelines-configuration-training-custom-estimator: Custom Estimator
+public-cloud-data-platform-product-machine-learning-manager-pipelines-configuration-validation: Model selection
+public-cloud-data-platform-product-machine-learning-manager-pipelines-execution: Execute a pipeline
+public-cloud-data-platform-product-machine-learning-models: Models
+public-cloud-data-platform-product-api-manager: API Manager
+public-cloud-data-platform-product-app-manager: APP Manager
+public-cloud-data-platform-product-app-manager-dashboard: Dashboard
+public-cloud-data-platform-product-app-manager-extensions: Extensions
+public-cloud-data-platform-product-app-manager-settings: Settings
+public-cloud-data-platform-product-control-center: Control Center
+public-cloud-data-platform-product-control-center-alerting: Alerting
+public-cloud-data-platform-product-iam: Identity Access Manager
+public-cloud-data-platform-product-iam-organisation: Organization IAM
+public-cloud-data-platform-product-iam-project: Project IAM
+public-cloud-data-platform-product-iam-project-applications: Applications
+public-cloud-data-platform-product-iam-project-auth-providers: Auth. Providers
+public-cloud-data-platform-product-iam-users: Users, Roles & Groups
+public-cloud-data-platform-developer: Developer Documentation
+public-cloud-data-platform-developer-api-reference: ForePaaS APIs (Legacy)
+public-cloud-data-platform-developer-api-reference-query-builder: Query Builder
+public-cloud-data-platform-developer-api-reference-query-builder-json-format: JSON query format
+public-cloud-data-platform-developer-dataplatform-api: Data Platform APIs
+public-cloud-data-platform-developer-sdk: Software Development Kits (SDK)
+public-cloud-data-platform-developer-sdk-custom-actions: Custom Actions
+public-cloud-data-platform-developer-sdk-custom-actions-connectors: Connectors
+public-cloud-data-platform-developer-sdk-custom-actions-pyspark-support: PySpark support
+public-cloud-data-platform-developer-sdk-custom-actions-simple-use-cases: Simple use cases
+public-cloud-data-platform-developer-sdk-custom-actions-advanced-use-cases: Advanced Use Cases
+public-cloud-data-platform-developer-sdk-front-app: Front App
+public-cloud-data-platform-developer-sdk-front-app-dynamic-parameters: Dynamic Parameters
+public-cloud-data-platform-developer-sdk-front-app-charts: Charts
+public-cloud-data-platform-developer-sdk-front-app-default-components: Default Components
+public-cloud-data-platform-developer-sdk-front-app-default-components-containers: Containers
+public-cloud-data-platform-developer-sdk-front-app-default-components-basic-ui: Basic UI
+public-cloud-data-platform-developer-sdk-front-app-custom-components: Custom Components
+public-cloud-data-platform-developer-sdk-front-api: Front API
+public-cloud-data-platform-developer-sdk-front-api-queries: Handle queries
+public_cloud-data_platform-support: Support
 web-cloud-clouddb: Web Cloud Databases
 web-cloud-clouddb-getting-started: Primeros pasos
 web-cloud-clouddb-configuration: Configuración
