@@ -12,11 +12,11 @@ We continuously improve our offers. You can follow and submit ideas to add to ou
 
 ## Backup Methods
 
-* Daily remote site backup:
+- Daily remote site backup:
 
 We back up our managed analytics services every 1 hour (incremental snapshots), 12 hours, or 24 hours (full backups) — depending on the product — with the ability to restore from the latest point in time, based on the retention period of the chosen customer plan.
 
-* PITR:
+- PITR:
 
 Either you run into a problem or you just want to see what your data looked like at a prior date, you can restore your data to any point in time within the retention period of the chosen customer plan for PostgreSQL and MySQL. For MongoDB Enterprise the point in time must be within the last 24 hours.
 
@@ -24,10 +24,10 @@ Whether you encounter an issue or simply want to view your data from a previous 
 
 ## Engine Specifications
 
-Engine | Backup Method(s) | Location(s) | Frequency | RPO | Encrypted
-:--- | :--- | :---: | :---: | :---: | :---:
-OpenSearch | Incremental | On-Site, Off-Site | Hourly | 1h | Yes
-Kafka | N/A | N/A | N/A | N/A | N/A
+| Engine | Backup Method(s) | Location(s) | Frequency | RPO | Encrypted | 
+| --- | --- | --- | --- | --- | --- | 
+| OpenSearch | Incremental | On-Site, Off-Site | Hourly | 1h | Yes | 
+| Kafka | N/A | N/A | N/A | N/A | N/A | 
 
 ## Off-site backup
 
@@ -50,7 +50,7 @@ Analytics services provide a default configuration for remote backups based on t
 
 ### Custom settings
 
-The default backup location and time can be overridden by configuring the backups attribute either when creating or updating your analytics service. As example, the following settings define GRA (Gravelines, France) and DE (Frankfurt, Germany) as the backup locations and 01:00:00 as the daily backup time:
+The default backup location and time can be overridden by configuring the backups attribute either when creating or updating your analytics service. As an example, the following settings define GRA (Gravelines, France) and DE (Frankfurt, Germany) as the backup locations and 01:00:00 as the daily backup time:
 
 ```json
 "backups": {
@@ -59,7 +59,7 @@ The default backup location and time can be overridden by configuring the backup
 }
 ```
 
-As a reminder, here is the API endpoint for analytics service creation.
+As a reminder, here is the API endpoint for an Analytics service creation:
 
 > [!api]
 >
@@ -72,18 +72,17 @@ Backup settings must respect the following rules:
 
 ## Lexicon
 
-PITR: Point In Time Recovery
-
-RPO: Recovery Point Objective
-
-Off-Site: on a different region
-
-On-Site: within the same region
+- PITR: Point In Time Recovery
+- RPO: Recovery Point Objective
+- Off-Site: on a different region
+- On-Site: within the same region
 
 ## We want your feedback!
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](/links/professional-services) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!
+
+Join our [community of users](/links/community).
