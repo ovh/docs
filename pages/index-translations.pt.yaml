@@ -3,19 +3,19 @@ account-and-service-management-account-information-faq: FAQ
 account-and-service-management-account-information-getting-started: Primeiros passos
 account-and-service-management-account-information-users: Criação e gestão de utilizadores
 account-and-service-management-account-information-security-and-conformity: Segurança e conformidade
-account-and-service-management-managing-billing-payments-and-services: Gestão da faturação, dos pagamentos e dos serviços
-account-and-service-management-managing-billing-payments-and-services-api: API
-account-and-service-management-managing-billing-payments-and-services-faq: FAQ
-account-and-service-management-managing-billing-payments-and-services-invoices-billing-and-payments: Faturas, faturação e pagamentos
-account-and-service-management-managing-billing-payments-and-services-invoices-billing-and-payments-hosted-private-cloud: Hosted Private Cloud
-account-and-service-management-managing-billing-payments-and-services-invoices-billing-and-payments-public-cloud: Public Cloud
-account-and-service-management-managing-billing-payments-and-services-invoices-billing-and-payments-ai-notebooks: AI Notebooks
-account-and-service-management-managing-billing-payments-and-services-renewing-a-service: Renovar um serviço
-account-and-service-management-managing-billing-payments-and-services-terminating-a-service: Rescisão de um serviço
-account-and-service-management-managing-billing-payments-and-services-terminating-a-service-hosted-private-cloud: Hosted Private Cloud
 account-and-service-management-reversibility: Reversibilidade
 account-and-service-management-reversibility-reversibility-policies: Políticas de reversibilidade
 account-and-service-management-responsibility-sharing: Partilha de responsabilidades
+managing-billing-payments-and-services: Gestão da faturação, dos pagamentos e dos serviços
+managing-billing-payments-and-services-api: API
+managing-billing-payments-and-services-faq: FAQ
+managing-billing-payments-and-services-invoices-billing-and-payments: Faturas, faturação e pagamentos
+managing-billing-payments-and-services-invoices-billing-and-payments-hosted-private-cloud: Hosted Private Cloud
+managing-billing-payments-and-services-invoices-billing-and-payments-public-cloud: Public Cloud
+managing-billing-payments-and-services-invoices-billing-and-payments-ai-notebooks: AI Notebooks
+managing-billing-payments-and-services-renewing-a-service: Renovar um serviço
+managing-billing-payments-and-services-terminating-a-service: Rescisão de um serviço
+managing-billing-payments-and-services-terminating-a-service-hosted-private-cloud: Hosted Private Cloud
 bare-metal-cloud-dedicated-servers: Servidores dedicados
 bare-metal-cloud-dedicated-servers-advanced-usage: Utilização avançada
 bare-metal-cloud-dedicated-servers-getting-started: Primeiros passos
@@ -35,13 +35,13 @@ bare-metal-cloud-managed-bare-metal-managing-virtual-machines: Gestão das máqu
 bare-metal-cloud-managed-bare-metal-ovhcloud-features: Funcionalidades OVHcloud
 bare-metal-cloud-managed-bare-metal-ovhcloud-services-and-options: Serviços e opções da OVHcloud
 bare-metal-cloud-managed-bare-metal-vmware-vsphere-features: Funcionalidades VMware vSphere
-bare-metal-cloud-virtual-private-servers: Servidores privados virtuais
-bare-metal-cloud-virtual-private-servers-advanced-usage: Utilização avançada
-bare-metal-cloud-virtual-private-servers-backups: Backups
-bare-metal-cloud-virtual-private-servers-getting-started: Primeiros passos
-bare-metal-cloud-virtual-private-servers-network-and-ip-management: Rede e IP
-bare-metal-cloud-virtual-private-servers-troubleshooting: Diagnóstico
-bare-metal-cloud-virtual-private-servers-tutorials: Tutoriais
+virtual-private-servers: Servidores privados virtuais
+virtual-private-servers-advanced-usage: Utilização avançada
+virtual-private-servers-backups: Backups
+virtual-private-servers-getting-started: Primeiros passos
+virtual-private-servers-network-and-ip-management: Rede e IP
+virtual-private-servers-troubleshooting: Diagnóstico
+virtual-private-servers-tutorials: Tutoriais
 hosted-private-cloud-nutanix-on-ovhcloud: Nutanix on OVHcloud
 hosted-private-cloud-nutanix-on-ovhcloud-getting-started: Primeiros passos
 hosted-private-cloud-nutanix-on-ovhcloud-networking-and-security: Sistemas de rede e segurança
@@ -72,15 +72,6 @@ hosted-private-cloud-sap-ovhcloud-getting-started: Primeiros passos
 hosted-private-cloud-sap-ovhcloud-advanced-usage: Utilização avançada
 hosted-private-cloud-sap-ovhcloud-backups: Backups
 hosted-private-cloud-sap-ovhcloud-observability: Observability
-ovhcloud-labs-data-collector: Data Collector
-ovhcloud-labs-data-collector-getting-started: Primeiros passos
-ovhcloud-labs-power-web-hosting: POWER Web Hosting
-ovhcloud-labs-power-web-hosting-getting-started: Primeiros passos
-ovhcloud-labs-power-web-hosting-nodejs: Node.js
-ovhcloud-labs-power-web-hosting-python: Python
-ovhcloud-labs-power-web-hosting-ruby: Ruby
-ovhcloud-labs-prescience: Prescience
-ovhcloud-labs-prescience-getting-started: Primeiros passos
 public-cloud-ai-and-machine-learning: AI & machine learning
 public-cloud-ai-and-machine-learning-general-information: General information
 public-cloud-ai-and-machine-learning-command-line-interface: Command Line Interface
@@ -152,27 +143,27 @@ public-cloud-data-analytics-grafana: Dashboards
 public-cloud-data-analytics-grafana-guides: Dashboards - Guides
 public-cloud-data-analytics-grafana-tutorials: Dashboards - Tutorials
 public-cloud-data-analytics-kafka: Kafka
-public-cloud-data-analytics-kafka-guides: Kafka - Guides
+public-cloud-data-analytics-kafka-guides: Kafka - Guides
 public-cloud-data-analytics-kafka-connect: Kafka Connect
-public-cloud-data-analytics-kafka-connect-guides: Kafka Connect - Guides
+public-cloud-data-analytics-kafka-connect-guides: Kafka Connect - Guides
 public-cloud-data-analytics-kafka-mirrormaker: Kafka MirrorMaker
-public-cloud-data-analytics-kafka-mirrormaker-guides: Kafka MirrorMaker - Guides
+public-cloud-data-analytics-kafka-mirrormaker-guides: Kafka MirrorMaker - Guides
 public-cloud-databases-cassandra: Cassandra
 public-cloud-databases-cassandra-guides: Cassandra - Guides
 public-cloud-databases-m3db: M3db
 public-cloud-databases-m3db-guides: M3db - Guides
 public-cloud-databases-m3-aggregator: M3 Aggregator
-public-cloud-databases-m3-aggregator-guides: M3 Aggregator - Guides
+public-cloud-databases-m3-aggregator-guides: M3 Aggregator - Guides
 public-cloud-data-analytics-opensearch: OpenSearch
-public-cloud-data-analytics-opensearch-guides: OpenSearch - Guides
+public-cloud-data-analytics-opensearch-guides: OpenSearch - Guides
 public-cloud-compute: Compute
 public-cloud-compute-getting-started: Introdução
 public-cloud-compute-general-information: Informações gerais
 public-cloud-compute-project-management: Gestão do projeto
 public-cloud-compute-instance-management: Gestão das instâncias
 public-cloud-compute-instance-management-getting-started: Gestão das instâncias - Introdução
-public-cloud-compute-instance-management-control-panel: Gestão a partir da Área de Cliente OVHcloud
-public-cloud-compute-instance-management-horizon: Gestão a partir do Horizon
+public-cloud-compute-instance-management-control-panel: Gestão a partir da Área de Cliente OVHcloud
+public-cloud-compute-instance-management-horizon: Gestão a partir do Horizon
 public-cloud-compute-instance-management-openstack: Gestão via OpenStack API
 public-cloud-compute-block-storage: Block Storage
 public-cloud-compute-tutorials: Tutoriais
@@ -199,81 +190,82 @@ web-cloud-clouddb: Web Cloud Databases
 web-cloud-clouddb-getting-started: Primeiros passos
 web-cloud-clouddb-configuration: Configuração
 web-cloud-clouddb-technical-resources: Recursos técnicos
-web-cloud-email-collaborative-solutions: Soluções de e-mail e Ferramentas Colaborativas
-web-cloud-email-collaborative-solutions-common-email-features: Funcionalidades comuns às ofertas de e-mail
-web-cloud-email-collaborative-solutions-using-outlook-web-access-owa: Utilização do Outlook Web Application (OWA)
-web-cloud-email-collaborative-solutions-migration: Migração de serviços
-web-cloud-email-collaborative-solutions-troubleshooting: Diagnóstico
-web-cloud-email-collaborative-solutions-mx-plan: MX Plan
-web-cloud-email-collaborative-solutions-mx-plan-getting-started: Primeiros passos
-web-cloud-email-collaborative-solutions-mx-plan-email-address-features: Funcionalidades de endereços de correio eletrónico
-web-cloud-email-collaborative-solutions-mx-plan-setting-up-email-application-on-computer: Configurar uma aplicação de e-mail no seu computador
-web-cloud-email-collaborative-solutions-mx-plan-setting-up-email-application-on-mobile-device: Configurar uma aplicação de e-mail no seu smartphone
-web-cloud-email-collaborative-solutions-mx-plan-adding-email-address-on-existing-email-service: Adicionar endereço de correio eletrónico a um serviço de correio eletrónico existente
-web-cloud-email-collaborative-solutions-email-pro: E-mail Pro
-web-cloud-email-collaborative-solutions-email-pro-getting-started: Primeiros passos
-web-cloud-email-collaborative-solutions-email-pro-setting-up-email-application-on-computer: Configurar uma aplicação de e-mail no seu computador
-web-cloud-email-collaborative-solutions-email-pro-setting-up-email-application-on-mobile-device: Configurar uma aplicação de e-mail no seu smartphone
-web-cloud-email-collaborative-solutions-email-pro-adding-email-address-on-existing-email-service: Adicionar endereço de correio eletrónico a um serviço de correio eletrónico existente
-web-cloud-email-collaborative-solutions-microsoft-exchange: Microsoft Exchange
-web-cloud-email-collaborative-solutions-microsoft-exchange-getting-started: Primeiros passos
-web-cloud-email-collaborative-solutions-microsoft-exchange-exchange-account-features: Funcionalidades de uma conta Exchange
-web-cloud-email-collaborative-solutions-microsoft-exchange-setting-up-email-application-on-computer: Configurar uma aplicação de e-mail no seu computador
-web-cloud-email-collaborative-solutions-microsoft-exchange-setting-up-email-application-on-mobile-device: Configurar uma aplicação de e-mail no seu smartphone
-web-cloud-email-collaborative-solutions-microsoft-exchange-troubleshooting: Diagnóstico
-web-cloud-email-collaborative-solutions-microsoft-office: Microsoft Office
-web-cloud-email-collaborative-solutions-zimbra: Zimbra
-web-cloud-domains: Domínios
-web-cloud-domains-api: API
-web-cloud-domains-api-frequent-tasks: Tarefas frequentes
-web-cloud-domains-dns: DNS (Domain Name System)
-web-cloud-domains-dns-dns-options: Opções DNS
-web-cloud-domains-dns-dns-records: Registos DNS
-web-cloud-domains-dns-dns-servers: Servidores DNS
-web-cloud-domains-dns-dns-tools: Ferramentas DNS
-web-cloud-domains-dns-dns-zone: Zona DNS
-web-cloud-domains-domain-names: Nomes de domínio
-web-cloud-domains-domain-names-changing-a-domain-name-owner-trade: Alterar o titular de um domínio (trade)
-web-cloud-domains-domain-names-getting-started: Primeiros passos
-web-cloud-domains-domain-names-incoming-transfer-to-ovhcloud: Transferência de entrada para a OVHcloud
-web-cloud-domains-domain-names-outgoing-transfer-from-ovhcloud: Transferência de saída a partir da OVHcloud
-web-cloud-domains-domain-names-troubleshooting: Diagnóstico
-web-cloud-domains-domain-names-tutorials: Tutoriais
-web-cloud-internet: Internet
-web-cloud-internet-internet-access: Acesso Internet
-web-cloud-internet-internet-access-advanced-setup: Configuração avançada
-web-cloud-internet-internet-access-getting-started: Primeiros passos
-web-cloud-internet-internet-access-managing-your-offer: Gestão da oferta
-web-cloud-internet-internet-access-managing-your-options: Gestão das opções
-web-cloud-internet-internet-access-setting-up-your-access: Configuração do acesso
-web-cloud-internet-internet-access-troubleshooting: Diagnóstico
-web-cloud-internet-overthebox: OverTheBox
-web-cloud-internet-overthebox-managing-your-offer: Gestão da oferta
-web-cloud-internet-overthebox-getting-started: Primeiros passos
-web-cloud-internet-overthebox-initial-setup: Configuração inicial
-web-cloud-messaging: Mensagens
-web-cloud-messaging-sms: SMS
-web-cloud-messaging-sms-advanced-usage: Utilização avançada
-web-cloud-messaging-sms-getting-started: Primeiros passos
-web-cloud-messaging-sms-managing-your-solution: Gerir a oferta
-web-cloud-messaging-sms-sending-sms-messages: Envio de SMS
-web-cloud-phone-and-fax: Telefone e Fax
-web-cloud-phone-and-fax-fax: Fax
-web-cloud-phone-and-fax-fax-getting-started: Primeiros passos
-web-cloud-phone-and-fax-fax-sending-and-receiving-faxes: Envio e receção de faxes
-web-cloud-phone-and-fax-voip: VoIP
-web-cloud-phone-and-fax-voip-administration: Administrar
-web-cloud-phone-and-fax-voip-api: API
-web-cloud-phone-and-fax-voip-computer-telephony-integration-cti: Integração de telefonia informática (CTI)
-web-cloud-phone-and-fax-voip-faq: FAQ
-web-cloud-phone-and-fax-voip-ipbx: IPBX
-web-cloud-phone-and-fax-voip-numbers-and-aliases: Números e alias
-web-cloud-phone-and-fax-voip-popc: POPC
-web-cloud-phone-and-fax-voip-previous-phone-models: Modelos de telefone anteriores
-web-cloud-phone-and-fax-voip-security: Segurança
-web-cloud-phone-and-fax-voip-telephone-lines: Linhas telefónicas
-web-cloud-phone-and-fax-voip-troubleshooting: Diagnóstico
-web-cloud-phone-and-fax-voip-tutorials: Tutoriais
+email-collaborative-solutions: Soluções de e-mail e Ferramentas Colaborativas
+email-collaborative-solutions-common-email-features: Funcionalidades comuns às ofertas de e-mail
+email-collaborative-solutions-using-outlook-web-access-owa: Utilização do Outlook Web Application (OWA)
+email-collaborative-solutions-migration: Migração de serviços
+email-collaborative-solutions-troubleshooting: Diagnóstico
+email-collaborative-solutions-mx-plan: MX Plan
+email-collaborative-solutions-mx-plan-getting-started: Primeiros passos
+email-collaborative-solutions-mx-plan-email-address-features: Funcionalidades de endereços de correio eletrónico
+email-collaborative-solutions-mx-plan-setting-up-email-application-on-computer: Configurar uma aplicação de e-mail no seu computador
+email-collaborative-solutions-mx-plan-setting-up-email-application-on-mobile-device: Configurar uma aplicação de e-mail no seu smartphone
+email-collaborative-solutions-mx-plan-adding-email-address-on-existing-email-service: Adicionar endereço de correio eletrónico a um serviço de correio eletrónico existente
+email-collaborative-solutions-email-pro: E-mail Pro
+email-collaborative-solutions-email-pro-getting-started: Primeiros passos
+email-collaborative-solutions-email-pro-setting-up-email-application-on-computer: Configurar uma aplicação de e-mail no seu computador
+email-collaborative-solutions-email-pro-setting-up-email-application-on-mobile-device: Configurar uma aplicação de e-mail no seu smartphone
+email-collaborative-solutions-email-pro-adding-email-address-on-existing-email-service: Adicionar endereço de correio eletrónico a um serviço de correio eletrónico existente
+email-collaborative-solutions-microsoft-exchange: Microsoft Exchange
+email-collaborative-solutions-microsoft-exchange-getting-started: Primeiros passos
+email-collaborative-solutions-microsoft-exchange-exchange-account-features: Funcionalidades de uma conta Exchange
+email-collaborative-solutions-microsoft-exchange-setting-up-email-application-on-computer: Configurar uma aplicação de e-mail no seu computador
+email-collaborative-solutions-microsoft-exchange-setting-up-email-application-on-mobile-device: Configurar uma aplicação de e-mail no seu smartphone
+email-collaborative-solutions-microsoft-exchange-troubleshooting: Diagnóstico
+email-collaborative-solutions-microsoft-office: Microsoft Office
+email-collaborative-solutions-zimbra: Zimbra
+domains: Domínios
+domains-api: API
+domains-api-frequent-tasks: Tarefas frequentes
+domains-dns: DNS (Domain Name System)
+domains-dns-dns-options: Opções DNS
+domains-dns-dns-records: Registos DNS
+domains-dns-dns-servers: Servidores DNS
+domains-dns-dns-tools: Ferramentas DNS
+domains-dns-dns-zone: Zona DNS
+domains-domain-names: Nomes de domínio
+domains-domain-names-changing-a-domain-name-owner-trade: Alterar o titular de um domínio (trade)
+domains-domain-names-getting-started: Primeiros passos
+domains-domain-names-incoming-transfer-to-ovhcloud: Transferência de entrada para a OVHcloud
+domains-domain-names-outgoing-transfer-from-ovhcloud: Transferência de saída a partir da OVHcloud
+domains-domain-names-troubleshooting: Diagnóstico
+domains-domain-names-tutorials: Tutoriais
+telecom-internet: Internet
+telecom-internet-internet-access: Acesso Internet
+telecom-internet-internet-access-advanced-setup: Configuração avançada
+telecom-internet-internet-access-getting-started: Primeiros passos
+telecom-internet-internet-access-managing-your-offer: Gestão da oferta
+telecom-internet-internet-access-managing-your-options: Gestão das opções
+telecom-internet-internet-access-setting-up-your-access: Configuração do acesso
+telecom-internet-internet-access-troubleshooting: Diagnóstico
+telecom-internet-overthebox: OverTheBox
+telecom-internet-overthebox-managing-your-offer: Gestão da oferta
+telecom-internet-overthebox-getting-started: Primeiros passos
+telecom-internet-overthebox-initial-setup: Configuração inicial
+telecom-messaging: Mensagens
+telecom-messaging-sms: SMS
+telecom-messaging-sms-advanced-usage: Utilização avançada
+telecom-messaging-sms-getting-started: Primeiros passos
+telecom-messaging-sms-managing-your-solution: Gerir a oferta
+telecom-messaging-sms-sending-sms-messages: Envio de SMS
+telecom-messaging-sms-smpp: SMPP
+telecom-phone-and-fax: Telefone e Fax
+telecom-phone-and-fax-fax: Fax
+telecom-phone-and-fax-fax-getting-started: Primeiros passos
+telecom-phone-and-fax-fax-sending-and-receiving-faxes: Envio e receção de faxes
+telecom-phone-and-fax-voip: VoIP
+telecom-phone-and-fax-voip-administration: Administrar
+telecom-phone-and-fax-voip-api: API
+telecom-phone-and-fax-voip-computer-telephony-integration-cti: Integração de telefonia informática (CTI)
+telecom-phone-and-fax-voip-faq: FAQ
+telecom-phone-and-fax-voip-ipbx: IPBX
+telecom-phone-and-fax-voip-numbers-and-aliases: Números e alias
+telecom-phone-and-fax-voip-popc: POPC
+telecom-phone-and-fax-voip-previous-phone-models: Modelos de telefone anteriores
+telecom-phone-and-fax-voip-security: Segurança
+telecom-phone-and-fax-voip-telephone-lines: Linhas telefónicas
+telecom-phone-and-fax-voip-troubleshooting: Diagnóstico
+telecom-phone-and-fax-voip-tutorials: Tutoriais
 web-cloud-hosting: Alojamento partilhado
 web-cloud-hosting-automating-tasks-cron: Automatização de tarefas (cron)
 web-cloud-hosting-cloud-web-configuration: Configuração de um alojamento Cloud Web
@@ -295,18 +287,18 @@ web-cloud-ssl-gateway: SSL Gateway
 web-cloud-ssl-gateway-getting-started: Primeiros passos
 storage-object-storage: Object Storage
 storage-object-storage-general-information: General information
-storage-object-storage-general-guides-to-start: General guides to start
+storage-object-storage-general-guides-to-start: General guides to start
 storage-object-storage-tutorials: Tutorials
-storage-object-storage-configure-object-storage-with-your-solutions: Configure Object Storage with your solutions
-storage-object-storage-cold-archive-storage-class-specifics: Cold Archive Storage Class Specifics
-storage-object-storage-openstack-swift-storage-class-specifics: OpenStack Swift Storage Class Specifics
-storage-object-storage-openstack-swift-archive-storage-class-specifics: OpenStack Swift Archive Storage Class Specifics
+storage-object-storage-configure-object-storage-with-your-solutions: Configure Object Storage with your solutions
+storage-object-storage-cold-archive-storage-class-specifics: Cold Archive Storage Class Specifics
+storage-object-storage-openstack-swift-storage-class-specifics: OpenStack Swift Storage Class Specifics
+storage-object-storage-openstack-swift-archive-storage-class-specifics: OpenStack Swift Archive Storage Class Specifics
 storage-file-storage: File Storage
 storage-file-storage-enterprise-file-storage: Enterprise File Storage
 storage-file-storage-ha-nas: HA-NAS
 storage-block-storage: Block Storage
 storage-block-storage-cloud-disk-array: Cloud Disk Array
-storage-backup-and-disaster-recovery-solution: Backup and disaster recovery solution
+storage-backup-and-disaster-recovery-solution: Backup and disaster recovery solution
 storage-backup-and-disaster-recovery-solution-veeam: Veeam
 storage-backup-and-disaster-recovery-solution-hycu: HYCU for OVHcloud
 storage-backup-and-disaster-recovery-solution-kubernetes-data-protection: Managed Kubernetes - Data Protection
@@ -325,7 +317,7 @@ network-load-balancer-setting-up: Início
 network-load-balancer-use-cases: Casos de uso
 network-load-balancer-viewing-statuses: Ver estados
 network-vrack-services: vRack Services
-network-content-delivery-network-cdninfrastructure: Content Delivery Network (CDN) Infrastructure
+network-content-delivery-network-cdninfrastructure: Content Delivery Network (CDN) Infrastructure
 manage-operate-api: API
 manage-operate-api-apiv6: APIv6
 manage-operate-api-getting-started: Primeiros passos
@@ -343,3 +335,60 @@ observability-logs-data-platform-visualizing-querying-exploiting: Visualizing, q
 observability-logs-data-platform-opensearch-index: OpenSearch Index as a service
 observability-logs-data-platform-security-conformity: Security and conformity
 observability-logs-data-platform-usecases: Usecases
+tutorials-domain-names: Domínios
+tutorials-web-hosting: Alojamento partilhado
+tutorials-wordpress: WordPress
+tutorials-dedicated-servers: Servidores dedicados
+tutorials-public-cloud: Public Cloud
+tutorials-compute: Compute
+tutorials-object-storage: Object Storage
+tutorials-public-cloud-databases: Public Cloud Databases
+tutorials-managed-kubernetes: Managed Kubernetes
+tutorials-managed-private-registry: Managed Private Registry
+tutorials-ai-notebooks: AI Notebooks
+tutorials-ai-training: AI Training
+tutorials-ai-deploy: AI Deploy
+tutorials-data-processing: Data Processing
+db-clouddb: Web Cloud Databases
+db-clouddb-getting-started: Primeiros passos
+db-clouddb-configuration: Configuração
+db-clouddb-technical-resources: Recursos técnicos
+db-public-cloud-databases: Public Cloud Databases
+db-public-cloud-databases-general-information: General information
+db-public-cloud-databases-general-guides: General guides
+db-public-cloud-databases-mongodb: MongoDB
+db-public-cloud-databases-mongodb-getting-started: MongoDB - Getting started
+db-public-cloud-databases-mongodb-guides: MongoDB - User guides
+db-public-cloud-databases-mongodb-advanced-guides: MongoDB - Advanced guides
+db-public-cloud-databases-mongodb-tutorials: MongoDB - Tutorials
+db-public-cloud-databases-mysql: MySQL
+db-public-cloud-databases-mysql-guides: MySQL - Guides
+db-public-cloud-databases-mysql-tutorials: MySQL - Tutorials
+db-public-cloud-databases-postgresql: PostgreSQL
+db-public-cloud-databases-postgresql-guides: PostgreSQL - Guides
+db-public-cloud-databases-postgresql-tutorials: PostgreSQL - Tutorials
+db-public-cloud-databases-redis: Redis
+db-public-cloud-databases-redis-guides: Redis - Guides
+db-public-cloud-databases-redis-tutorials: Redis - Tutorials
+db-public-cloud-databases-grafana: Dashboards
+db-public-cloud-databases-grafana-guides: Dashboards - Guides
+db-public-cloud-databases-grafana-tutorials: Dashboards - Tutorials
+db-public-cloud-databases-kafka: Kafka
+db-public-cloud-databases-kafka-guides: Kafka - Guides
+db-public-cloud-databases-kafka-connect: Kafka Connect
+db-public-cloud-databases-kafka-connect-guides: Kafka Connect - Guides
+db-public-cloud-databases-kafka-mirrormaker: Kafka MirrorMaker
+db-public-cloud-databases-kafka-mirrormaker-guides: Kafka MirrorMaker - Guides
+db-public-cloud-databases-cassandra: Cassandra
+db-public-cloud-databases-cassandra-guides: Cassandra - Guides
+db-public-cloud-databases-m3db: M3db
+db-public-cloud-databases-m3db-guides: M3db - Guides
+db-public-cloud-databases-m3-aggregator: M3 Aggregator
+db-public-cloud-databases-m3-aggregator-guides: M3 Aggregator - Guides
+db-public-cloud-databases-opensearch: OpenSearch
+db-public-cloud-databases-opensearch-guides: OpenSearch - Guides
+faq: FAQ
+troubleshooting: Diagnóstico
+troubleshooting-dedicated-servers: Servidores dedicados
+troubleshooting-public-cloud: Public Cloud
+troubleshooting-web-hosting: Alojamento partilhado
