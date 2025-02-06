@@ -1493,7 +1493,7 @@
             + [Activating the application firewall](web_cloud/web_hosting/multisites_activating_application_firewall)
             + [Technical specifications of Web Hostings](web_cloud/web_hosting/hosting_technical_specificities)
             + [Configuring IPv6 for your website](web_cloud/web_hosting/configure_ipv6)
-            + [PHP - End-of-Sale & End-Of-Life announcements](web_cloud/web_hosting/php_eol_eos)
+            + [PHP - End-of-Support & End-Of-Life announcements](web_cloud/web_hosting/php_eol_eos)
         + [Configuring a Cloud Web hosting plan](web-cloud-hosting-cloud-web-configuration)
             + [Managing Cloud Web runtime software applications](web_cloud/web_hosting/manage-runtime)
             + [Retrieving the backup of the FTP space on your Cloud Web hosting plan](web_cloud/web_hosting/backup_ftp_cloud_web)
