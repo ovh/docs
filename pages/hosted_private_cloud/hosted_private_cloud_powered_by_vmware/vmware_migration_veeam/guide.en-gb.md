@@ -16,7 +16,7 @@ Before getting started, you’ll need:
 
 - A complete list of VMs with FQDNs, IP addresses, and dependencies.
 - Correctly sized target resources (e.g., hosts, datastores, vSAN clusters).
-- A valid Veeam Backup & Replication (B&R) license.
+- A valid **Veeam Backup & Replication** solution from the [Veeam website](https://www.veeam.com/downloads.html?ad=top-sub-menu).
 - Access to vCenter and pre-configured DNS, NTP, and authentication services in HPC.
 
 ## Instructions
@@ -27,7 +27,9 @@ At the end of Step 1, you should have a clear understanding of which workloads y
 
 #### Step 1.1: Create an inventory of VMs  
 
-Start by listing all the VMs you plan to migrate. For each VM, include the following information:  
+Start by listing all the VMs you plan to migrate.
+
+ For each VM, include the following information:  
 - **FQDN (Fully Qualified Domain Name)** and **IP address**.  
 - **Operating system version** (ensure it’s up-to-date and supported).  
 - **Dependencies** (e.g., applications relying on specific servers).  
@@ -55,6 +57,7 @@ At the end of this step, you will have a clear understanding of the resources re
 #### Step 2.1: Calculate compute requirements  
 
 Evaluate your needs for CPU and memory by calculating the total number of cores and amount of RAM required for your VMs. 
+
 Use your current consolidation ratio (e.g., pCPU/vCPU) as a reference to determine the number and type of ESXi hosts needed.
 
 #### Step 2.2: Define storage needs  
@@ -67,7 +70,7 @@ If using NSX-T, define your network segmentation strategy. Determine how you’l
 
 Decide whether to retain your current firewall solution or deploy virtual firewalls (e.g., FortiVM, Stormshield, or Palo Alto VM-Series). 
 
-For internet-exposed services, allocate additional public IPs or use the **BYOIP (Bring Your Own IP)** feature to retain your existing IP addresses.  
+For internet-exposed services, allocate additional public IPs or use the [Bring Your Own IP (BYOIP)](/links/network/byoip) feature to retain your existing IP addresses.  
 
 ### Step 3: Authorize IP access to vCenter  
 
