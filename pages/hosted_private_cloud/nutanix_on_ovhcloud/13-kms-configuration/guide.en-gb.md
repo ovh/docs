@@ -1,14 +1,18 @@
 ---
 title: 'OVHcloud KMS Configuration with Nutanix on OVHcloud'
 excerpt: 'Learn how to configure OVHcloud Key Management System (KMS) with Nutanix to secure your data at rest.'
-updated: 2025-02-12
+updated: 2025-02-13
 ---
 
 ## Objective
 
-This guide explains how to configure OVHcloud Key Management System (KMS) with Nutanix on OVHcloud. Nutanix provides two options for securing data at rest: self-encrypted drives and software-only encryption. The latter offers key-based access management through either the cluster's native key manager or an external key management system (KMS). 
+This guide explains how to configure **OVHcloud Key Management System (KMS)** with **Nutanix on OVHcloud**. 
 
-By following this guide, you will learn how to leverage Nutanix's data-at-rest encryption capabilities using OVHcloud KMS.
+Nutanix provides two options for securing data at rest:
+- **Self-Encrypted Drives (SEDs)**, 
+- **Software-only encryption**, who offers key-based access management through either the cluster's native key manager or an **external key management system (KMS)**. 
+
+By following this guide, you will learn how to leverage **Nutanix's data-at-rest encryption** capabilities using **OVHcloud KMS**.
 
 ## Requirements
 
@@ -29,9 +33,8 @@ Before you start, make sure you have:
 
 ### Step 1: Access Prism Central and Prism Element
 
-1. Log in to **Prism Central**.
-
 1. **Log in** to [Prism Central](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we).
+
 2. **Navigate to** `Prism Element`{.action}.
 
 ![Prism element](images/01-kms-configuration.png){.thumbnail}
@@ -39,7 +42,6 @@ Before you start, make sure you have:
 3. **Go to** `Settings`{.action}.
 
 ![Prism element settings](images/02-kms-configuration.png){.thumbnail}
-  
 
 ### Step 2: Configure Data-at-Rest Encryption
 
@@ -74,7 +76,6 @@ Before you start, make sure you have:
 
 ![KMS](images/09-kms-configuration.png){.thumbnail}
  
-
 ### Step 4: Test and Enable Encryption
 
 1. **Test all nodes** in the cluster.

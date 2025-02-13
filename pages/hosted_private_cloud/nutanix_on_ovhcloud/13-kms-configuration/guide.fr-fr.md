@@ -1,7 +1,7 @@
 ---
 title: 'Configuration de KMS OVHcloud avec Nutanix sur OVHcloud'
 excerpt: 'Apprenez à configurer le système de gestion des clés (KMS) d’OVHcloud avec Nutanix pour sécuriser vos données au repos.'
-updated: 2025-02-12
+updated: 2025-02-13
 ---
 
 ## Objectif
@@ -9,10 +9,10 @@ updated: 2025-02-12
 Ce guide explique comment configurer le **système de gestion des clés (KMS) d’OVHcloud** avec **Nutanix sur OVHcloud**.  
 
 Nutanix propose deux options pour sécuriser les **données au repos** :  
-- **Disques auto-chiffrés (SEDs)**  
+- **Disques auto-chiffrés (SEDs)**  ,
 - **Chiffrement logiciel**, qui permet une gestion des clés basée sur un gestionnaire natif du cluster ou un **système de gestion des clés externe (KMS)**.  
 
-En suivant ce guide, vous apprendrez à utiliser les fonctionnalités de **chiffrement des données au repos** de Nutanix avec OVHcloud KMS.
+En suivant ce guide, vous apprendrez à utiliser les fonctionnalités de **chiffrement des données au repos** de Nutanix avec **OVHcloud KMS**.
 
 ## Prérequis
 
@@ -34,14 +34,14 @@ Avant de commencer, assurez-vous d’avoir :
 ### Étape 1 : Accéder à Prism Central et Prism Element
 
 1. **Connectez-vous** à [Prism Central](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we).
+
 2. **Accédez à** `Prism Element`{.action}.
 
-![Prism element](images/01-kms-configuration.png){.thumbnail}
+![Prism Element](images/01-kms-configuration.png){.thumbnail}
 
 3. **Allez dans** `Paramètres`{.action}.
 
 ![Paramètres Prism Element](images/02-kms-configuration.png){.thumbnail}
-  
 
 ### Étape 2 : Configurer le chiffrement des données au repos
 
@@ -62,7 +62,7 @@ Avant de commencer, assurez-vous d’avoir :
 
 ### Étape 3 : Ajouter et gérer les certificats
 
-1. **Ajoutez** votre `Serveur de gestion des clés (KMS)`{.action}.
+1. **Ajoutez** votre **serveur de gestion des clés (KMS)**.
 
 ![KMS](images/07-kms-configuration.png){.thumbnail}
 
@@ -76,7 +76,6 @@ Avant de commencer, assurez-vous d’avoir :
 
 ![KMS](images/09-kms-configuration.png){.thumbnail}
  
-
 ### Étape 4 : Tester et activer le chiffrement
 
 1. **Testez tous les nœuds**{.action} du cluster.
