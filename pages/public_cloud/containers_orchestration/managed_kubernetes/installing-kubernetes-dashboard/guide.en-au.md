@@ -1,7 +1,7 @@
 ---
 title: Installing the Kubernetes Dashboard on OVHcloud Managed Kubernetes
 excerpt: 'Find out how to install the Kubernetes Dashboard on your OVHcloud Managed Kubernetes Service'
-updated: 2023-02-16
+updated: 2025-02-27
 ---
 
 The [Kubernetes Dashboard](https://github.com/kubernetes/dashboard){.external} is a general purpose, web-based UI for Kubernetes clusters. It allows users to manage and troubleshoot applications running in their cluster, as well as manage the cluster itself.
