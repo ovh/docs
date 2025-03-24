@@ -17,6 +17,8 @@ A snapshot of an additional volume serves two general purposes:
 
 **This guide explains how to create a volume snapshot in the OVHcloud Control Panel.**
 
+*This feature is not available, including in the Horizon console, for Localzones*
+
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](/links/manager)
