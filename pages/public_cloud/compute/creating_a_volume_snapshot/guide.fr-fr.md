@@ -20,6 +20,8 @@ Créer un snapshot d’un volume additionnel correspond généralement à deux o
 
 **Ce guide vous explique comment créer un snapshot d'un volume depuis votre espace client OVHcloud.**
 
+*Cette fonction n'est pas disponible, incluant dans la console Horizon, sur les Localzones*
+
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](/links/manager)
