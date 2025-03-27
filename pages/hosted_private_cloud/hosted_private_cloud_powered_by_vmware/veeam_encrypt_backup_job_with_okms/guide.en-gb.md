@@ -1,21 +1,33 @@
 ---
 title: "Encrypting Backup Jobs with Veeam and OKMS"
 excerpt: "Learn how to configure encrypted backup jobs using Veeam and the OVHcloud KMS (OKMS) service to enhance data protection."
-updated: 2025-03-25
+updated: 2025-03-27
 ---
 
 ## Objective
 This guide explains how to configure encrypted backup jobs using the Veeam backup solution and the OVHcloud KMS (OKMS) service.
 
 ## Requirements
-- Access to the OVHcloud KMS (OKMS) service.
-- Veeam Backup & Replication software.
-- OpenSSL installed on your machine.
+- Access to the [OVHcloud Control Panel](/links/manager).
+- A [Hosted Private Cloud VMware vSphere on OVHcloud](/links/hosted-private-cloud/vmware) offer.
+- You must have read the following guides:
+    - [KMS integration for VMware on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_overall_vm-encrypt).
+    - [Getting started with OKMS](/pages/manage_and_operate/kms/quick-start).
 
 ## Instructions
 ### Step 1: Create the Certificate in OKMS Service
 
-1. Generate the private key using the following API (without CSR):
+You can create the certificate from the dedicated entry from the [OVHcloud Control Panel](/links/manager): 
+
+1. Click `Hosted Private Cloud`{.action} then `Identity, Security & Operations`{.action} and `Key Management Service`{.action}.Select your KMS.
+
+![Console Dashboard](images/console_1.png){.thumbnail}
+
+2. Select your KMS.
+
+![KMS List](images/console_2.png){.thumbnail}
+
+ 3. Then, click on `Generate an access certificate`{.action} button and generate the private key using the following API (without CSR):
 
 > [!api]
 >
@@ -23,7 +35,7 @@ This guide explains how to configure encrypted backup jobs using the Veeam backu
 
 ![Generate an access certificate](images/veeam_okms_1.png){.thumbnail}
 
-2. Retrieve the certificate by making a GET request:
+4. Retrieve the certificate by making a GET request:
 
 > [!api]
 >
@@ -33,9 +45,9 @@ Fill in the required fields in the Generate an access certificate window and sel
 
 ![Generate Access Certificate - No Private Key](images/veeam_okms_2.png){.thumbnail}
 
-3. Download the private key.
+5. Download the private key.
 
-4. Download the certificate.
+6. Download the certificate.
 
 ![Download Certificate](images/veeam_okms_3.png){.thumbnail}
 

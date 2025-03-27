@@ -1,21 +1,33 @@
 ---
 title: "Chiffrement des tâches de sauvegarde avec Veeam et OKMS"
 excerpt: "Découvrez comment configurer des tâches de sauvegarde chiffrées en utilisant Veeam et le service KMS d’OVHcloud (OKMS) pour renforcer la protection des données."
-updated: 2025-03-25
+updated: 2025-03-27
 ---
 
 ## Objectif
 Ce guide explique comment configurer des tâches de sauvegarde chiffrées en utilisant la solution de sauvegarde Veeam et le service KMS d’OVHcloud (OKMS).
 
 ## Prérequis
-- Accès au service KMS d’OVHcloud (OKMS).
-- Logiciel Veeam Backup & Replication installé.
-- OpenSSL installé sur votre machine.
+- Être connecté à [l'espace client OVHcloud](/links/manager).
+- Disposer d'une offre [VMware on OVHcloud](/links/hosted-private-cloud/vmware).
+- Avoir lu les guides : 
+    - [Intégration d'un KMS pour VMware on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_overall_vm-encrypt).
+    - [Premiers pas avec OKMS](/pages/manage_and_operate/kms/quick-start).
 
 ## En pratique
 ### Étape 1 : Création du certificat dans le service OKMS
 
-1. Générez la clé privée en utilisant l’API suivante (sans CSR) :
+Vous pouvez créer le certificat depuis [l'espace client OVHcloud](/links/manager):
+
+1. Cliquez sur `Hosted Private Cloud`{.action} puis `Identity, Security & Operations`{.action} et enfin `Key Management Service`{.action}. Sélectionnez votre KMS.
+
+![Console Dashboard](images/console_1.png){.thumbnail}
+
+2. Sélectionnez votre KMS.
+
+![KMS List](images/console_2.png){.thumbnail}
+
+3. Ensuite, cliquez sur le bouton `Generate an access certificate`{.action} et générez la clé privée en utilisant l’API suivante (sans CSR) :
 
 > [!api]
 >
@@ -23,7 +35,7 @@ Ce guide explique comment configurer des tâches de sauvegarde chiffrées en uti
 
 ![Generate an access certificate](images/veeam_okms_1.png){.thumbnail}
 
-2. Récupérez le certificat en effectuant une requête GET :
+4. Récupérez le certificat en effectuant une requête GET :
 
 > [!api]
 >
@@ -33,9 +45,9 @@ Remplissez les champs requis dans la fenêtre **Generate an access certificate**
 
 ![Generate Access Certificate - No Private Key](images/veeam_okms_2.png){.thumbnail}
 
-3. Téléchargez la clé privée.
+5. Téléchargez la clé privée.
 
-4. Téléchargez le certificat.
+6. Téléchargez le certificat.
 
 ![Download Certificate](images/veeam_okms_3.png){.thumbnail}
 
