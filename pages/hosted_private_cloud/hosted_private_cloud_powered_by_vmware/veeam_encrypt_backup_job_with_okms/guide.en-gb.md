@@ -1,13 +1,15 @@
 ---
 title: "Encrypting Backup Jobs with Veeam and OKMS"
 excerpt: "Learn how to configure encrypted backup jobs using Veeam and the OVHcloud KMS (OKMS) service to enhance data protection."
-updated: 2025-03-27
+updated: 2025-03-28
 ---
 
 ## Objective
+
 This guide explains how to configure encrypted backup jobs using the Veeam backup solution and the OVHcloud KMS (OKMS) service.
 
 ## Requirements
+
 - Access to the [OVHcloud Control Panel](/links/manager).
 - A [Hosted Private Cloud VMware vSphere on OVHcloud](/links/hosted-private-cloud/vmware) offer.
 - You must have read the following guides:
@@ -15,19 +17,20 @@ This guide explains how to configure encrypted backup jobs using the Veeam backu
     - [Getting started with OKMS](/pages/manage_and_operate/kms/quick-start).
 
 ## Instructions
+
 ### Step 1: Create the Certificate in OKMS Service
 
 You can create the certificate from the dedicated entry from the [OVHcloud Control Panel](/links/manager): 
 
-1. Click `Hosted Private Cloud`{.action} then `Identity, Security & Operations`{.action} and `Key Management Service`{.action}.Select your KMS.
+1.\ Click `Hosted Private Cloud`{.action} then `Identity, Security & Operations`{.action} and `Key Management Service`{.action}.Select your KMS.
 
 ![Console Dashboard](images/console_1.png){.thumbnail}
 
-2. Select your KMS.
+2.\ Select your KMS.
 
 ![KMS List](images/console_2.png){.thumbnail}
 
- 3. Then, click on `Generate an access certificate`{.action} button and generate the private key using the following API (without CSR):
+ 3.\ Then, click on `Generate an access certificate`{.action} button and generate the private key using the following API (without CSR):
 
 > [!api]
 >
@@ -35,7 +38,7 @@ You can create the certificate from the dedicated entry from the [OVHcloud Contr
 
 ![Generate an access certificate](images/veeam_okms_1.png){.thumbnail}
 
-4. Retrieve the certificate by making a GET request:
+4.\ Retrieve the certificate by making a GET request:
 
 > [!api]
 >
@@ -45,9 +48,9 @@ Fill in the required fields in the Generate an access certificate window and sel
 
 ![Generate Access Certificate - No Private Key](images/veeam_okms_2.png){.thumbnail}
 
-5. Download the private key.
+5.\ Download the private key.
 
-6. Download the certificate.
+6.\ Download the certificate.
 
 ![Download Certificate](images/veeam_okms_3.png){.thumbnail}
 
@@ -60,22 +63,24 @@ openssl pkcs12 -export -out cert.pfx -inkey privatekey.pem -in certificate.pem
 ```
 
 ### Step 3: Import the Certificate to Veeam Windows Certificate Store
+
 1. Open the Windows Certificate Store on your Veeam server.
-2. Import the `.pfx` certificate into the Veeam Windows Certificate Store.
-3. Mark the certificate as exportable during import.
+1. Import the `.pfx` certificate into the Veeam Windows Certificate Store.
+1. Mark the certificate as exportable during import.
 
 ![Import Certificate - Exportable](images/veeam_okms_4.png){.thumbnail}
 
 ### Step 4: Register the KMS Inside Veeam
-1. Open Veeam Backup & Replication and go to `Credentials & Passwords`{.action} then click on `Key Management Servers`{.action}.
+
+1.\ Open Veeam Backup & Replication and go to `Credentials & Passwords`{.action} then click on `Key Management Servers`{.action}.
 
 ![Veeam Key Management Servers](images/veeam_okms_5.png){.thumbnail}
 
-2. Click on `Add`{.action} to a new KMS server.
+2.\ Click on `Add`{.action} to a new KMS server.
 
 ![Add KMS Server](images/veeam_okms_6.png){.thumbnail}
 
-3. Enter the server address. 
+3.\ Enter the server address. 
 
 For example, for a KMS created in the **eu-west-rbx** region: <https://eu-west-rbx.okms.ovh.net>.
 
@@ -84,6 +89,7 @@ Then, import your certificate from the Windows Key Store (the .`.pfx` file you i
 ![Add KMS Server Details](images/veeam_okms_7.png){.thumbnail}
 
 ### Step 5: Retrieve the Server Certificate
+
 To retrieve the certificate from the OKMS server, use this command:
 
 ```bash
@@ -91,16 +97,17 @@ openssl s_client -connect eu-west-rbx.okms.ovh.net:443 2>/dev/null </dev/null | 
 ```
 
 ### Step 6: Configure Backup Job Encryption
-1. Register the KMS server in your Veeam Backup & Replication console.
-2. Select the desired backup job and configure encryption using the registered KMS.
+
+1.\ Register the KMS server in your Veeam Backup & Replication console.
+2.\ Select the desired backup job and configure encryption using the registered KMS.
 
 ![Configure Backup Encryption](images/veeam_okms_8.png){.thumbnail}
 
-3. Once the backup is complete, you will see a lock icon next to the backup name indicating it is encrypted.
+3.\ Once the backup is complete, you will see a lock icon next to the backup name indicating it is encrypted.
 
 ![Encrypted Backup](images/veeam_okms_9.png){.thumbnail}
 
-4. If you encounter the error Unsupported attribute: OPERATION_POLICY_NAME, follow the instructions provided in the documentation to resolve the issue.
+4.\ If you encounter the error **Unsupported attribute: OPERATION_POLICY_NAME**, follow the instructions provided in the documentation to resolve the issue.
 
 ![Operation Policy Name Error](images/veeam_okms_10.png){.thumbnail}
 
