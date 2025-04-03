@@ -1,17 +1,14 @@
 ---
 title: Configuring Proxy Cache on an OVHcloud Managed Private Registry
 excerpt: 'Find out how to configure Proxy Cache on an OVHcloud Managed Private Registry'
-updated: 2025-04-02
+updated: 2025-04-03
 ---
 
 ## Objective
 
-Harbor provides a **proxy cache** feature that helps you mirror and cache images from external registries like **Docker Hub**. This improves performance and reduces rate limits imposed by external registries.
+Harbor provides a **proxy cache** feature that helps you mirror and cache images from external registries like **Docker Hub**, **Github Container Registry**, **Quay**, **JFrog Artifactory Registry**... This improves performance and reduces rate limits imposed by external registries.
 
 We **strongly recommend** using a **Docker account** (even a free one) to **avoid rate limits** when pulling images. Without authentication, Docker Hub enforces strict pull limits, which may cause failures when pulling frequently used images.
-
-> [!primary]
-> Harbor **only supports proxy caching for Docker Hub and other Harbor registries**. Other container registries are **not supported** for proxy caching.
 
 ## Requirements
 
@@ -55,13 +52,13 @@ We **strongly recommend** using a **Docker account** (even a free one) to **avoi
 
 ### 3. Configure Docker to use Harbor proxy cache
 
-#### Log in to the Managed Private Registry 
+#### 3.1 Log in to the Managed Private Registry 
 
 ```sh
 docker login <your-managed-registry-domain> -u <username> -p <password>
 ```
 
-#### Pull images via proxy cache
+#### 3.2 Pull images via proxy cache
 
 Instead of pulling directly from Docker Hub, use your **Private Managed Registry** as an intermediary:
 
@@ -70,15 +67,6 @@ docker pull <your-managed-registry-domain>/dockerhub-mirror/library/nginx:latest
 ```
 
 Harbor will cache the image locally, so subsequent pulls will be much faster and won’t count against Docker Hub rate limits.
-
-## Supported proxy cache registries
-
-Harbor only supports proxy caching for:
-
-- ✅ Docker Hub
-- ✅ Harbor registries (another Harbor instance)
-
-Other container registries (e.g. Amazon ECR, Google Container Registry, Quay.io, etc.) are not supported for proxy caching.
 
 ## Benefits of using proxy cache
 
@@ -89,20 +77,10 @@ Other container registries (e.g. Amazon ECR, Google Container Registry, Quay.io,
 
 ## Troubleshooting
 
-### 1. Getting "Too Many Requests" errors
+### Getting "Too Many Requests" errors
 
 - Ensure you configured Docker Hub authentication in Harbor.
-- Log in to Harbor before pulling images:
-
-```bash
-docker login <your-managed-registry-domain>
-```
-
-### 2. Image not found in proxy cache
-
-- If the image has not been pulled before, Harbor will fetch it from Docker Hub. Try again in a few moments.
-- Check the proxy cache project settings in Harbor to ensure it's linked to the correct registry.
 
 ## Conclusion
 
-Using Harbor's proxy cache helps optimize Docker image pulls, avoiding rate limits and improving performance. However, only Docker Hub and Harbor registries are supported for proxy caching. Be sure to authenticate with Docker Hub in Harbor to prevent rate limit issues.
+Using Harbor's proxy cache helps optimize Docker image pulls, avoiding rate limits and improving performance. Be sure to authenticate with Docker Hub in Harbor to prevent rate limit issues.
