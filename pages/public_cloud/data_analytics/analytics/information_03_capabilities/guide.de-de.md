@@ -18,7 +18,7 @@ We currently offer data analytics engines:
 
 OpenSearch is an open-source fully managed search, analytics, and observability engine. It is ideal for logs management and offers search and analytical aggregations.<br>
 OpenSearch is an open-source fork derived from Elasticsearch.<br>
-See our [OpenSearch Capabilities and limitations](/pages/public_cloud/public_cloud_databases/opensearch_01_capabilities) guide.
+See our [OpenSearch Capabilities and limitations](/pages/public_cloud/data_analytics/analytics/opensearch_01_capabilities) guide.
 
 ## Feature Availability
 

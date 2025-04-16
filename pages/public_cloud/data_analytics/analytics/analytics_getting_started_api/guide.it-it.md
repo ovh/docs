@@ -106,9 +106,9 @@ You’ll find the cluster connection information in your Control Panel. You can 
 
 ## Go further
 
-[OpenSearch capabilities](/pages/public_cloud/public_cloud_databases/opensearch_01_capabilities)
+[OpenSearch capabilities](/pages/public_cloud/data_analytics/analytics/opensearch_01_capabilities)
 
-[Starting with OpenSearch analytics service](/pages/public_cloud/public_cloud_databases/opensearch_02_getting_Started)
+[Starting with OpenSearch analytics service](/pages/public_cloud/data_analytics/analytics/opensearch_02_getting_Started)
 
 [Configuring vRack for Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack)
 
