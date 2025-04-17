@@ -6,13 +6,13 @@ updated: 2022-09-01
 
 ## Objective
 
-The purpose of this tutorial is to show how it is possible to use **Weights & Biases**, one of the most famous Developer tool for machine learning, with OVHcloud AI Notebooks.
+The purpose of this tutorial is to show how it is possible to use **Weights & Biases**, one of the most famous Developer tools for machine learning, with OVHcloud AI Notebooks.
 
 Weight and Biases allow you to track your machine learning experiments, version your datasets and manage your models easily, like shown below :
 
 ![image](images/overview_wandb.png){.thumbnail}
 
-This tutorial presents two examples of using Weights & Biases. The first notebook will use the TensorFlow and the second PyTorch docker image.
+This tutorial presents two examples of using Weights & Biases. In the first notebook we will use TensorFlow and in the second a PyTorch docker image.
 
 ## Requirements
 
@@ -25,7 +25,7 @@ This tutorial presents two examples of using Weights & Biases. The first noteboo
 
 ### Launch and access a Jupyter notebook
 
-The first step consists in creating a Jupyter Notebook with OVHcloud AI Notebooks.
+The first step consists of creating a Jupyter Notebook with OVHcloud AI Notebooks.
 
 First, you have to [install the OVHAI CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) then just choose the name of the notebook (`<notebook-name>`) and the number of GPUs (`<nb-gpus>`) to use on your job and use the following command:
 
